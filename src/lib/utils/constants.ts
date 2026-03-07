@@ -48,9 +48,9 @@ export const PROFESSIONS: {
 ];
 
 export const TIER_LIMITS = {
-  free: { questionsPerDay: 50, aiTokens: 0, pdfUploads: 0 },
-  pro: { questionsPerDay: Infinity, aiTokens: 1000, pdfUploads: 10 },
-  max: { questionsPerDay: Infinity, aiTokens: Infinity, pdfUploads: Infinity },
+  free: { questionsPerDay: 50, aiTokens: 0, savedConfigs: 0 },
+  pro: { questionsPerDay: Infinity, aiTokens: 1000, savedConfigs: 10 },
+  max: { questionsPerDay: Infinity, aiTokens: Infinity, savedConfigs: Infinity },
 } as const;
 
 export const TIER_PRICES = {

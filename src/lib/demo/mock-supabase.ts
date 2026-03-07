@@ -104,7 +104,7 @@ class MockQueryBuilder {
 
   single() {
     this.isSingle = true;
-    return this.resolve();
+    return this;
   }
 
   insert(data: unknown) {

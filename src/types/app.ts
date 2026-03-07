@@ -108,11 +108,31 @@ export interface UserResponse {
   created_at: string;
 }
 
+export interface BankConfigItem {
+  bankId: string;
+  bankTitle: string;
+  questionCount: number;
+}
+
+export interface ReviewSessionConfig {
+  id: string;
+  user_id: string;
+  name: string;
+  bank_configs: BankConfigItem[];
+  session_type: SessionType;
+  total_questions: number;
+  is_saved: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface TestSession {
   id: string;
   user_id: string;
   bank_id: string | null;
   exam_domain_id: string | null;
+  config_id: string | null;
+  session_config: BankConfigItem[] | null;
   session_type: SessionType;
   total_questions: number;
   correct_answers: number;
@@ -176,9 +196,9 @@ export interface DailyUserStats {
 
 export interface QuizConfig {
   mode: SessionType;
-  bankId?: string;
-  domainId?: string;
-  questionCount: number;
+  bankConfigs: BankConfigItem[];
+  totalQuestions: number;
   difficultyMode: DifficultyMode;
   timedMinutes?: number;
+  configId?: string;
 }

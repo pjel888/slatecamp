@@ -156,11 +156,11 @@ export const DEMO_QUESTIONS = [
 ];
 
 export const DEMO_TEST_SESSIONS = [
-  { id: "sess-1", user_id: uid, bank_id: "bank-1", exam_domain_id: "dom-1", session_type: "practice", total_questions: 20, correct_answers: 16, total_time_ms: 840000, score_percentage: 80, difficulty_mode: "mixed", completed_at: daysAgo(1), created_at: daysAgo(1) },
-  { id: "sess-2", user_id: uid, bank_id: "bank-3", exam_domain_id: "dom-4", session_type: "timed_test", total_questions: 30, correct_answers: 24, total_time_ms: 1620000, score_percentage: 80, difficulty_mode: "mixed", completed_at: daysAgo(3), created_at: daysAgo(3) },
-  { id: "sess-3", user_id: uid, bank_id: "bank-2", exam_domain_id: "dom-2", session_type: "practice", total_questions: 15, correct_answers: 10, total_time_ms: 720000, score_percentage: 66.7, difficulty_mode: "mixed", completed_at: daysAgo(5), created_at: daysAgo(5) },
-  { id: "sess-4", user_id: uid, bank_id: "bank-1", exam_domain_id: "dom-1", session_type: "review", total_questions: 10, correct_answers: 9, total_time_ms: 360000, score_percentage: 90, difficulty_mode: "mixed", completed_at: daysAgo(7), created_at: daysAgo(7) },
-  { id: "sess-5", user_id: uid, bank_id: "bank-3", exam_domain_id: "dom-4", session_type: "practice", total_questions: 25, correct_answers: 22, total_time_ms: 1200000, score_percentage: 88, difficulty_mode: "mixed", completed_at: daysAgo(10), created_at: daysAgo(10) },
+  { id: "sess-1", user_id: uid, bank_id: "bank-1", exam_domain_id: "dom-1", config_id: null, session_config: [{ bankId: "bank-1", bankTitle: "ALE Structural Engineering", questionCount: 20 }], session_type: "practice", total_questions: 20, correct_answers: 16, total_time_ms: 840000, score_percentage: 80, difficulty_mode: "mixed", completed_at: daysAgo(1), created_at: daysAgo(1) },
+  { id: "sess-2", user_id: uid, bank_id: "bank-3", exam_domain_id: "dom-4", config_id: null, session_config: [{ bankId: "bank-3", bankTitle: "History of Architecture", questionCount: 30 }], session_type: "timed_test", total_questions: 30, correct_answers: 24, total_time_ms: 1620000, score_percentage: 80, difficulty_mode: "mixed", completed_at: daysAgo(3), created_at: daysAgo(3) },
+  { id: "sess-3", user_id: uid, bank_id: null, exam_domain_id: null, config_id: "rconfig-1", session_config: [{ bankId: "bank-1", bankTitle: "ALE Structural Engineering", questionCount: 10 }, { bankId: "bank-2", bankTitle: "Building Materials & Methods", questionCount: 10 }, { bankId: "bank-3", bankTitle: "History of Architecture", questionCount: 5 }], session_type: "practice", total_questions: 25, correct_answers: 18, total_time_ms: 1500000, score_percentage: 72, difficulty_mode: "mixed", completed_at: daysAgo(5), created_at: daysAgo(5) },
+  { id: "sess-4", user_id: uid, bank_id: "bank-1", exam_domain_id: "dom-1", config_id: null, session_config: [{ bankId: "bank-1", bankTitle: "ALE Structural Engineering", questionCount: 10 }], session_type: "review", total_questions: 10, correct_answers: 9, total_time_ms: 360000, score_percentage: 90, difficulty_mode: "mixed", completed_at: daysAgo(7), created_at: daysAgo(7) },
+  { id: "sess-5", user_id: uid, bank_id: "bank-3", exam_domain_id: "dom-4", config_id: null, session_config: [{ bankId: "bank-3", bankTitle: "History of Architecture", questionCount: 25 }], session_type: "practice", total_questions: 25, correct_answers: 22, total_time_ms: 1200000, score_percentage: 88, difficulty_mode: "mixed", completed_at: daysAgo(10), created_at: daysAgo(10) },
 ];
 
 export const DEMO_SRS_QUEUE = [
@@ -212,10 +212,35 @@ export const DEMO_DAILY_STATS = [
   makeDailyStats(14, 48, 41, 2880000),
 ];
 
-export const DEMO_DOCUMENTS = [
-  { id: "doc-1", user_id: uid, filename: "ALE-Structural-Systems-Review.pdf", file_path: `${uid}/structural-review.pdf`, file_size_bytes: 4200000, page_count: 42, status: "ready", profession: "architecture", exam_domain_id: "dom-1", created_at: daysAgo(20) },
-  { id: "doc-2", user_id: uid, filename: "Building-Materials-Notes.pdf", file_path: `${uid}/materials-notes.pdf`, file_size_bytes: 2800000, page_count: 28, status: "ready", profession: "architecture", exam_domain_id: "dom-2", created_at: daysAgo(15) },
-  { id: "doc-3", user_id: uid, filename: "Philippine-Building-Code-Summary.pdf", file_path: `${uid}/pbc-summary.pdf`, file_size_bytes: 5600000, page_count: 56, status: "processing", profession: "architecture", exam_domain_id: "dom-5", created_at: daysAgo(1) },
+export const DEMO_REVIEW_CONFIGS = [
+  {
+    id: "rconfig-1",
+    user_id: uid,
+    name: "Full ALE Review",
+    bank_configs: [
+      { bankId: "bank-1", bankTitle: "ALE Structural Engineering", questionCount: 10 },
+      { bankId: "bank-2", bankTitle: "Building Materials & Methods", questionCount: 10 },
+      { bankId: "bank-3", bankTitle: "History of Architecture", questionCount: 5 },
+    ],
+    session_type: "practice",
+    total_questions: 25,
+    is_saved: true,
+    created_at: daysAgo(5),
+    updated_at: daysAgo(1),
+  },
+  {
+    id: "rconfig-2",
+    user_id: uid,
+    name: "Structural Focus — Timed",
+    bank_configs: [
+      { bankId: "bank-1", bankTitle: "ALE Structural Engineering", questionCount: 20 },
+    ],
+    session_type: "timed_test",
+    total_questions: 20,
+    is_saved: true,
+    created_at: daysAgo(3),
+    updated_at: daysAgo(3),
+  },
 ];
 
 export const DEMO_USER_RESPONSES = [
@@ -240,7 +265,7 @@ export function getDemoDataForTable(table: string): unknown[] {
     case "srs_queue": return DEMO_SRS_QUEUE;
     case "domain_mastery": return DEMO_DOMAIN_MASTERY;
     case "daily_user_stats": return DEMO_DAILY_STATS;
-    case "documents": return DEMO_DOCUMENTS;
+    case "review_session_configs": return DEMO_REVIEW_CONFIGS;
     case "user_responses": return DEMO_USER_RESPONSES;
     case "marketplace_purchases": return DEMO_MARKETPLACE_PURCHASES;
     default: return [];
