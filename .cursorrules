@@ -1,0 +1,28 @@
+PROJECT: Cerebro — AI-Adaptive Board Exam Prep Platform
+STACK: Next.js 16 (App Router, Turbopack), TypeScript strict, Supabase, Tailwind CSS 4, shadcn/ui
+DESIGN: Rams Standard — Braun-inspired minimal aesthetic. Achromatic palette (warm whites, greys, charcoal) with functional amber/green/red accents. No gradients, no shadows heavier than 0 1px 3px rgba(26,26,26,0.06). Transitions at 150ms ease.
+
+PAYMENTS: PayRex (primary, PH — GCash/Maya/Card/QR Ph) + Stripe (international fallback). Use lib/payments/provider.ts abstraction.
+
+ADMIN: Users with is_admin=true on profiles table get Max-tier access by default. Admin can spoof tiers via Developer Settings (/dashboard/settings/developer). Use getAdminAwareProfile() and hasTierAccess() for all tier checks.
+
+RULES:
+1. Server Components by default. Only add 'use client' when useState/useEffect/event handlers are needed.
+2. Server Actions for all database mutations. Never expose Supabase writes client-side.
+3. Use @supabase/ssr for auth. NEVER use localStorage for auth state.
+4. No useEffect for data fetching. Use RSC async or the use() hook.
+5. RLS is enabled on ALL tables. Check policies before adding features.
+6. TypeScript strict mode. No 'any'. Use Supabase-generated types.
+7. Tailwind only for styling. No inline styles. No CSS modules.
+8. shadcn/ui for base components. Customize colors via CSS variables.
+9. Lucide icons only. Stroke 1.5px, 20px default size.
+10. Mobile-first responsive design. Touch targets min 44px.
+11. For tier gates: always use getAdminAwareProfile() + hasTierAccess(), never raw profile.tier checks.
+
+DATABASE: See PRD.md Section 6 + migration 002 for is_admin and payrex columns.
+
+DEMO MODE: When NEXT_PUBLIC_SUPABASE_URL is empty, app runs in demo mode with mock data. See lib/demo/ for mock Supabase client and data. Dashboard routes are at /dashboard/* (not a route group).
+
+QUIZ UI: Single column, max-width 720px, centered. Full-screen immersive. Optimistic UI for answers.
+
+ROUTING: Dashboard pages are under src/app/dashboard/ (real route segment, not a route group). Auth pages are under src/app/(auth)/ (route group). Never pass React component functions from Server Components to Client Components — pass string identifiers and resolve on the client side.
