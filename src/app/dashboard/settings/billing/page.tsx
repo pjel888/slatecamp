@@ -18,7 +18,7 @@ const PLAN_FEATURES = {
   pro: [
     "Unlimited questions",
     "AI Spaced Repetition (SM-2)",
-    "AI PDF Ingestion (10 docs/mo)",
+    "Custom Question Banks",
     "3D Interactivity",
     "Detailed analytics",
     "Marketplace access",
@@ -31,7 +31,7 @@ const PLAN_FEATURES = {
     "Voice Prep Mode",
     "IRT Adaptive Quizzes",
     "Unlimited AI tokens",
-    "Unlimited PDF uploads",
+    "Saved Review Configurations",
   ],
 };
 

@@ -5,21 +5,25 @@ import { calculateNextReview, getQuality, getNextReviewDate } from "@/lib/srs/sm
 
 export async function createQuizSession(config: {
   userId: string;
-  bankId: string | null;
-  domainId: string | null;
+  bankConfigs: { bankId: string; bankTitle: string; questionCount: number }[];
   mode: string;
-  questionCount: number;
+  totalQuestions: number;
+  configId?: string;
 }) {
   const supabase = await createClient();
+
+  const primaryBankId = config.bankConfigs.length === 1 ? config.bankConfigs[0].bankId : null;
 
   const { data } = await supabase
     .from("test_sessions")
     .insert({
       user_id: config.userId,
-      bank_id: config.bankId,
-      exam_domain_id: config.domainId,
+      bank_id: primaryBankId,
+      exam_domain_id: null,
+      config_id: config.configId ?? null,
+      session_config: config.bankConfigs,
       session_type: config.mode,
-      total_questions: config.questionCount,
+      total_questions: config.totalQuestions,
       correct_answers: 0,
       total_time_ms: 0,
       score_percentage: null,
@@ -30,6 +34,36 @@ export async function createQuizSession(config: {
     .single();
 
   return data as { id: string } | null;
+}
+
+export async function saveReviewConfig(config: {
+  userId: string;
+  name: string;
+  bankConfigs: { bankId: string; bankTitle: string; questionCount: number }[];
+  mode: string;
+  totalQuestions: number;
+}) {
+  const supabase = await createClient();
+
+  const { data } = await supabase
+    .from("review_session_configs")
+    .insert({
+      user_id: config.userId,
+      name: config.name,
+      bank_configs: config.bankConfigs,
+      session_type: config.mode,
+      total_questions: config.totalQuestions,
+      is_saved: true,
+    })
+    .select("id, name")
+    .single();
+
+  return data as { id: string; name: string } | null;
+}
+
+export async function deleteReviewConfig(configId: string) {
+  const supabase = await createClient();
+  await supabase.from("review_session_configs").delete().eq("id", configId);
 }
 
 export async function createCustomBank(config: {

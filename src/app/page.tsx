@@ -79,8 +79,8 @@ export default function LandingPage() {
               },
               {
                 icon: BookOpen,
-                title: "PDF Ingestion",
-                desc: "Upload your notes. Cerebro generates quiz questions from them.",
+                title: "Question Bank Library",
+                desc: "Browse official and community question banks, or create your own.",
               },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="space-y-3">

@@ -85,18 +85,28 @@ export default async function QuizPage() {
     .order("is_official", { ascending: false })
     .order("title");
 
-  const { data: domains } = await supabase
-    .from("exam_domains")
-    .select("id, name, slug")
-    .eq("profession", profile.profession ?? "architecture")
-    .order("sort_order");
+  const { data: savedConfigs } = await supabase
+    .from("review_session_configs")
+    .select("*")
+    .eq("user_id", profile.id)
+    .eq("is_saved", true)
+    .order("updated_at", { ascending: false })
+    .limit(10);
+
+  const { data: recentSessions } = await supabase
+    .from("test_sessions")
+    .select("id, session_type, total_questions, correct_answers, score_percentage, session_config, completed_at, created_at")
+    .eq("user_id", profile.id)
+    .not("completed_at", "is", null)
+    .order("completed_at", { ascending: false })
+    .limit(5);
 
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-semibold text-foreground">Start a Quiz</h1>
+        <h1 className="text-2xl font-semibold text-foreground">Review Sessions</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Choose your quiz mode, select question banks, and configure your session.
+          Build a custom review session from your question banks, or use a saved configuration.
         </p>
       </div>
 
@@ -112,8 +122,27 @@ export default async function QuizPage() {
             is_official: (b.is_official as boolean) ?? false,
           }))
         }
-        domains={domains ?? []}
         quizModes={QUIZ_MODES}
+        savedConfigs={
+          (savedConfigs ?? []).map((c: Record<string, unknown>) => ({
+            id: c.id as string,
+            name: c.name as string,
+            bank_configs: c.bank_configs as { bankId: string; bankTitle: string; questionCount: number }[],
+            session_type: c.session_type as string,
+            total_questions: c.total_questions as number,
+          }))
+        }
+        recentSessions={
+          (recentSessions ?? []).map((s: Record<string, unknown>) => ({
+            id: s.id as string,
+            session_type: s.session_type as string,
+            total_questions: s.total_questions as number,
+            correct_answers: s.correct_answers as number,
+            score_percentage: s.score_percentage as number | null,
+            session_config: s.session_config as { bankId: string; bankTitle: string; questionCount: number }[] | null,
+            completed_at: s.completed_at as string,
+          }))
+        }
       />
     </div>
   );

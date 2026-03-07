@@ -10,7 +10,7 @@ import {
   Flame,
   CalendarDays,
   ArrowRight,
-  Upload,
+  BarChart3,
   Box,
   Clock,
   Target,
@@ -167,7 +167,7 @@ export default async function DashboardPage() {
         {[
           { href: "/dashboard/review", label: "Start Review", icon: Brain },
           { href: "/dashboard/quiz", label: "Practice Quiz", icon: Clock },
-          { href: "/dashboard/library/upload", label: "Upload PDF", icon: Upload },
+          { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
           { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },
         ].map(({ href, label, icon: Icon }) => (
           <Link key={href} href={href}>

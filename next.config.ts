@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "50mb",
     },
   },
-  serverExternalPackages: ["pdf-parse", "payrex-node"],
+  serverExternalPackages: ["payrex-node"],
   turbopack: {
     root: __dirname,
   },

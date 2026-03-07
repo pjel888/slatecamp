@@ -18,7 +18,7 @@ export function DemoShell() {
           className="flex items-center gap-2.5 rounded-full border border-border/60 bg-background/80 px-4 py-2 shadow-lg backdrop-blur-xl transition-all hover:shadow-xl"
         >
           <span className="flex h-5 items-center rounded-full bg-purple-100 px-2 text-[10px] font-semibold uppercase tracking-wider text-purple-600">
-            Demo
+            Dev Mode
           </span>
           <span className="text-xs font-medium text-foreground">
             Go to Dashboard
@@ -28,7 +28,7 @@ export function DemoShell() {
       </div>
 
       <DevToolbar
-        mode="demo"
+        mode="dev"
         currentTier="max"
         effectiveTier="max"
         flags={{

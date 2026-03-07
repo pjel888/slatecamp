@@ -47,7 +47,7 @@ export default async function DashboardLayout({
       </div>
       {showDevTools && flags && (
         <DevToolbar
-          mode={isDemo ? "demo" : "live"}
+          mode={isDemo ? "dev" : "live"}
           currentTier={currentTier}
           effectiveTier={effectiveTier}
           flags={flags}

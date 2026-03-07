@@ -13,27 +13,26 @@ import {
   Box,
   Brain,
   RefreshCcw,
+  Wifi,
+  WifiOff,
 } from "lucide-react";
 import type { UserTier } from "@/types/app";
 import type { FeatureFlags } from "@/lib/admin/feature-flags";
 
 interface DevToolbarProps {
-  mode: "demo" | "live";
+  mode: "dev" | "live";
   currentTier: UserTier;
   effectiveTier: UserTier;
   flags: FeatureFlags;
 }
 
-const TIER_COLORS: Record<UserTier, string> = {
-  free: "bg-zinc-500",
-  pro: "bg-blue-500",
-  max: "bg-amber-500",
-};
+type EnvironmentMode = "dev" | "free" | "pro" | "max";
 
-const TIER_LABELS: Record<UserTier, string> = {
-  free: "Free",
-  pro: "Pro",
-  max: "Max",
+const ENV_CONFIG: Record<EnvironmentMode, { label: string; color: string; desc: string }> = {
+  dev:  { label: "Dev",  color: "bg-purple-500", desc: "No external services — mock data only" },
+  free: { label: "Free", color: "bg-zinc-500",   desc: "Live services — Free tier experience" },
+  pro:  { label: "Pro",  color: "bg-blue-500",   desc: "Live services — Pro tier experience" },
+  max:  { label: "Max",  color: "bg-amber-500",  desc: "Live services — Max tier experience" },
 };
 
 export function DevToolbar({
@@ -48,6 +47,12 @@ export function DevToolbar({
   const [flags, setFlags] = useState(initialFlags);
   const [saving, setSaving] = useState(false);
   const router = useRouter();
+
+  const isDevMode = mode === "dev";
+
+  const currentEnv: EnvironmentMode = isDevMode
+    ? "dev"
+    : (flags.spoofedTier ?? currentTier) as EnvironmentMode;
 
   useEffect(() => {
     setEffectiveTier(initialEffective);
@@ -71,11 +76,14 @@ export function DevToolbar({
     [router]
   );
 
-  function switchTier(tier: UserTier | "auto") {
-    const spoofedTier = tier === "auto" ? null : tier;
+  function switchEnv(env: EnvironmentMode) {
+    if (isDevMode && env !== "dev") return;
+    if (env === "dev") return;
+
+    const spoofedTier = env as UserTier;
     const next: FeatureFlags = { ...flags, spoofedTier };
     setFlags(next);
-    setEffectiveTier(tier === "auto" ? "max" : tier);
+    setEffectiveTier(spoofedTier);
     persist(next);
   }
 
@@ -89,11 +97,11 @@ export function DevToolbar({
     await fetch("/api/admin/flags", { method: "DELETE" });
     setFlags({
       spoofedTier: null,
-      bypass3dGate: mode === "demo",
-      bypassAiGate: mode === "demo",
-      bypassSrsGate: mode === "demo",
+      bypass3dGate: isDevMode,
+      bypassAiGate: isDevMode,
+      bypassSrsGate: isDevMode,
     });
-    setEffectiveTier(mode === "demo" ? "max" : currentTier);
+    setEffectiveTier(isDevMode ? "max" : currentTier);
     router.refresh();
   }
 
@@ -109,6 +117,8 @@ export function DevToolbar({
     );
   }
 
+  const envConfig = ENV_CONFIG[currentEnv];
+
   return (
     <div className="fixed bottom-4 right-4 z-9999 select-none">
       {/* Collapsed pill */}
@@ -118,17 +128,15 @@ export function DevToolbar({
           className="flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl"
         >
           <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
+          {isDevMode ? (
+            <WifiOff className="h-3 w-3 text-purple-500" />
+          ) : (
+            <Wifi className="h-3 w-3 text-emerald-500" />
+          )}
           <span
-            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${
-              mode === "demo" ? "bg-purple-500" : "bg-emerald-500"
-            }`}
+            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${envConfig.color}`}
           >
-            {mode}
-          </span>
-          <span
-            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${TIER_COLORS[effectiveTier]}`}
-          >
-            {TIER_LABELS[effectiveTier]}
+            {envConfig.label}
           </span>
           <ChevronUp className="h-3 w-3 text-muted-foreground" />
         </button>
@@ -142,7 +150,7 @@ export function DevToolbar({
             <div className="flex items-center gap-2">
               <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
               <span className="text-xs font-semibold text-foreground">
-                Dev Toolbar
+                Developer Panel
               </span>
               {saving && (
                 <span className="text-[10px] text-muted-foreground animate-pulse">
@@ -171,58 +179,49 @@ export function DevToolbar({
             </div>
           </div>
 
-          {/* Mode indicator */}
-          <div className="border-b border-border px-3 py-2">
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                Mode
-              </span>
-              <span
-                className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${
-                  mode === "demo" ? "bg-purple-500" : "bg-emerald-500"
-                }`}
-              >
-                {mode === "demo" ? "Demo (No Services)" : "Live (Services Connected)"}
-              </span>
-            </div>
-            <p className="mt-1 text-[10px] text-muted-foreground">
-              {mode === "demo"
-                ? "Running with mock data. Set NEXT_PUBLIC_SUPABASE_URL to switch to live."
-                : "Connected to real services. DB tier: " + currentTier + "."}
-            </p>
-          </div>
-
-          {/* Tier switcher */}
+          {/* Environment switcher */}
           <div className="border-b border-border px-3 py-2.5">
             <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-              Effective Tier
+              Environment
             </span>
-            <div className="mt-1.5 flex gap-1">
-              {(["free", "pro", "max"] as UserTier[]).map((tier) => (
-                <button
-                  key={tier}
-                  onClick={() => switchTier(tier)}
-                  className={`flex-1 rounded-md px-2 py-1 text-[11px] font-semibold capitalize transition-all ${
-                    effectiveTier === tier && flags.spoofedTier === tier
-                      ? `${TIER_COLORS[tier]} text-white shadow-sm`
-                      : "bg-muted text-muted-foreground hover:bg-muted/80"
-                  }`}
-                >
-                  {tier}
-                </button>
-              ))}
-              <button
-                onClick={() => switchTier("auto")}
-                className={`flex-1 rounded-md px-2 py-1 text-[11px] font-semibold transition-all ${
-                  !flags.spoofedTier
-                    ? "bg-foreground text-background shadow-sm"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                }`}
-                title="Admin default (Max access)"
-              >
-                Auto
-              </button>
+            <div className="mt-1.5 grid grid-cols-4 gap-1">
+              {(["dev", "free", "pro", "max"] as EnvironmentMode[]).map((env) => {
+                const cfg = ENV_CONFIG[env];
+                const isActive = currentEnv === env;
+                const isDisabled = (isDevMode && env !== "dev") || (!isDevMode && env === "dev");
+
+                return (
+                  <button
+                    key={env}
+                    onClick={() => switchEnv(env)}
+                    disabled={isDisabled}
+                    className={`rounded-lg px-2 py-1.5 text-[11px] font-semibold transition-all ${
+                      isActive
+                        ? `${cfg.color} text-white shadow-sm`
+                        : isDisabled
+                          ? "bg-muted/50 text-muted-foreground/30 cursor-not-allowed"
+                          : "bg-muted text-muted-foreground hover:bg-muted/80"
+                    }`}
+                    title={cfg.desc}
+                  >
+                    {cfg.label}
+                  </button>
+                );
+              })}
             </div>
+            <p className="mt-1.5 text-[10px] text-muted-foreground">
+              {isDevMode ? (
+                <span className="flex items-center gap-1">
+                  <WifiOff className="h-2.5 w-2.5" />
+                  No external services — all data is mocked
+                </span>
+              ) : (
+                <span className="flex items-center gap-1">
+                  <Wifi className="h-2.5 w-2.5" />
+                  Connected — viewing as {envConfig.label} tier
+                </span>
+              )}
+            </p>
           </div>
 
           {/* Feature gates */}
@@ -269,7 +268,7 @@ export function DevToolbar({
               className="flex items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground"
             >
               Full settings
-              <ExternalLink className="h-3 w-3" />
+              <ExternalLink className="h-3.5 w-3.5" />
             </a>
           </div>
         </div>
