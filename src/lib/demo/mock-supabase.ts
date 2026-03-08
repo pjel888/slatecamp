@@ -49,7 +49,9 @@ function matchesFilters(row: Row, filters: Filter[]): boolean {
     switch (op) {
       case "eq": return fieldVal === val;
       case "neq": return fieldVal !== val;
+      case "lt": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal < val : Number(fieldVal) < Number(val);
       case "lte": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal <= val : Number(fieldVal) <= Number(val);
+      case "gt": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal > val : Number(fieldVal) > Number(val);
       case "gte": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal >= val : Number(fieldVal) >= Number(val);
       case "is": return val === null ? fieldVal == null : fieldVal === val;
       case "not.is": return val === null ? fieldVal != null : fieldVal !== val;
@@ -89,7 +91,9 @@ class MockQueryBuilder {
 
   eq(col: string, val: unknown) { this.filters.push({ col, op: "eq", val }); return this; }
   neq(col: string, val: unknown) { this.filters.push({ col, op: "neq", val }); return this; }
+  lt(col: string, val: unknown) { this.filters.push({ col, op: "lt", val }); return this; }
   lte(col: string, val: unknown) { this.filters.push({ col, op: "lte", val }); return this; }
+  gt(col: string, val: unknown) { this.filters.push({ col, op: "gt", val }); return this; }
   gte(col: string, val: unknown) { this.filters.push({ col, op: "gte", val }); return this; }
   not(col: string, op: string, val: unknown) { this.filters.push({ col, op: `not.${op}`, val }); return this; }
   or(filter: string) { this.orFilter = filter; return this; }
@@ -133,6 +137,11 @@ class MockQueryBuilder {
   private resolve(): { data: unknown; error: null; count?: number } {
     // --- Mutations ---
     if (this.mutationType === "insert") {
+      if (Array.isArray(this.mutationData)) {
+        const newRows = (this.mutationData as Row[]).map((raw) => addRow(this.table, raw));
+        if (this.isSingle) return { data: newRows[0] ?? null, error: null };
+        return { data: newRows, error: null };
+      }
       const raw = this.mutationData as Row;
       const newRow = addRow(this.table, raw);
       if (this.isSingle) return { data: newRow, error: null };
@@ -164,6 +173,29 @@ class MockQueryBuilder {
 
     // --- Reads ---
     let rows = getRows(this.table).slice();
+
+    // Handle join syntax like "*, board_exams(*)" or "*, questions(*)"
+    const joinMatches = this.selectFields.matchAll(/(\w+)\(\*?\)/g);
+    const joinTables: string[] = [];
+    for (const match of joinMatches) {
+      joinTables.push(match[1]);
+    }
+    if (joinTables.length > 0) {
+      rows = rows.map((row) => {
+        const enriched = { ...row };
+        for (const joinTable of joinTables) {
+          if (enriched[joinTable] !== undefined) continue;
+          const fk = `${joinTable.replace(/s$/, "")}_id` as string;
+          const fkVal = row[fk];
+          if (fkVal) {
+            const joinRows = getRows(joinTable);
+            const match = joinRows.find((jr) => jr["id"] === fkVal);
+            if (match) enriched[joinTable] = match;
+          }
+        }
+        return enriched;
+      });
+    }
 
     if (this.orFilter) {
       const parts = this.orFilter.split(",");

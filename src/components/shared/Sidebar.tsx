@@ -18,6 +18,7 @@ import {
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
+import { ExamProfileSwitcher } from "./ExamProfileSwitcher";
 import {
   Tooltip,
   TooltipTrigger,
@@ -71,12 +72,14 @@ export function Sidebar({ isAdmin }: SidebarProps) {
       {/* Header */}
       <div className="flex h-14 items-center justify-between border-b border-border/40 px-4">
         {!collapsed && (
-          <Link
-            href="/dashboard"
-            className="text-lg font-semibold tracking-tight text-foreground"
-          >
-            Cerebro
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/dashboard"
+              className="text-lg font-semibold tracking-tight text-foreground"
+            >
+              Cerebro
+            </Link>
+          </div>
         )}
         <button
           onClick={toggleCollapse}
@@ -92,6 +95,13 @@ export function Sidebar({ isAdmin }: SidebarProps) {
           )}
         </button>
       </div>
+
+      {/* Exam Profile Switcher */}
+      {!collapsed && (
+        <div className="border-b border-border/40 px-2 py-2">
+          <ExamProfileSwitcher />
+        </div>
+      )}
 
       {/* Nav */}
       <nav className="flex-1 space-y-1 px-2 py-4">

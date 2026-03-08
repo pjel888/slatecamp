@@ -1,28 +1,80 @@
-PROJECT: Cerebro — AI-Adaptive Board Exam Prep Platform
-STACK: Next.js 16 (App Router, Turbopack), TypeScript strict, Supabase, Tailwind CSS 4, shadcn/ui
-DESIGN: Rams Standard — Braun-inspired minimal aesthetic. Achromatic palette (warm whites, greys, charcoal) with functional amber/green/red accents. No gradients, no shadows heavier than 0 1px 3px rgba(26,26,26,0.06). Transitions at 150ms ease.
+# Project Cerebro — Cursor Rules
+# The second brain for board exam takers.
+# Architecture students first. Multi-profession by design.
 
-PAYMENTS: PayRex (primary, PH — GCash/Maya/Card/QR Ph) + Stripe (international fallback). Use lib/payments/provider.ts abstraction.
+## Stack (Do Not Suggest Alternatives)
+- Next.js 15 (App Router) — NOT Pages Router
+- TypeScript strict mode — NO `any` types
+- Supabase (PostgreSQL + Auth + Storage + Edge Functions)
+- `@supabase/ssr` for auth — NEVER localStorage
+- Tailwind CSS 4 + shadcn/ui
+- React Three Fiber + @react-three/drei for 3D
+- Lucide React for icons (stroke 1.5px, 20px default)
+- Stripe for payments
+- PostHog for analytics
+- Resend for email
 
-ADMIN: Users with is_admin=true on profiles table get Max-tier access by default. Admin can spoof tiers via Developer Settings (/dashboard/settings/developer). Use getAdminAwareProfile() and hasTierAccess() for all tier checks.
+## Architecture Rules
+1. Server Components by default. Only add `'use client'` for useState, useEffect, event handlers, browser APIs.
+2. Server Actions (`'use server'`) for ALL database mutations. Never expose Supabase writes client-side.
+3. No `useEffect` for data fetching. Use RSC async functions or `use()` hook.
+4. RLS is enabled on ALL tables. Check DATABASE_SCHEMA.sql before adding features.
+5. TypeScript strict mode. Use Supabase-generated types from `types/supabase.ts`.
+6. Mobile-first responsive. Touch targets minimum 44px. Bottom nav on mobile.
+7. `useOptimistic` for quiz answer submissions. Sub-100ms perceived latency.
 
-RULES:
-1. Server Components by default. Only add 'use client' when useState/useEffect/event handlers are needed.
-2. Server Actions for all database mutations. Never expose Supabase writes client-side.
-3. Use @supabase/ssr for auth. NEVER use localStorage for auth state.
-4. No useEffect for data fetching. Use RSC async or the use() hook.
-5. RLS is enabled on ALL tables. Check policies before adding features.
-6. TypeScript strict mode. No 'any'. Use Supabase-generated types.
-7. Tailwind only for styling. No inline styles. No CSS modules.
-8. shadcn/ui for base components. Customize colors via CSS variables.
-9. Lucide icons only. Stroke 1.5px, 20px default size.
-10. Mobile-first responsive design. Touch targets min 44px.
-11. For tier gates: always use getAdminAwareProfile() + hasTierAccess(), never raw profile.tier checks.
+## Database
+- The SINGLE source of truth is `DATABASE_SCHEMA.sql` at the project root.
+- Do NOT create columns, tables, or types not defined there.
+- Every table has RLS. Verify policies before shipping any feature.
+- Exam Profiles scope EVERYTHING: sessions, analytics, SRS, 3D.
 
-DATABASE: See PRD.md Section 6 + migration 002 for is_admin and payrex columns.
+## Design System — "Rams Standard" (Dieter Rams / Braun inspired)
+- Philosophy: "Less, but better." UI disappears so content breathes.
+- Colors: Achromatic foundation (warm whites #F5F3F0, greys, charcoal #372E3D) with functional accents.
+  - `--amber: #ED8008` → Primary CTA, progress, active states
+  - `--green: #4A7C59` → Correct answer, success
+  - `--red: #BF1B1B` → Incorrect answer, error
+  - `--blue: #6B8FA3` → Info, links, secondary actions
+  - `--gold: #BF7C2A` → Achievements, streaks
+- NO gradients. NO heavy shadows (max: `0 1px 3px rgba(26,26,26,0.06)`).
+- Transitions: All interactive elements `transition: all 150ms ease`. Mechanical, precise.
+- Buttons: Solid fill for primary. Ghost/outline for secondary.
+- Cards: White bg, 1px border #E8E4DF, border-radius 8px.
+- Loading: Skeleton screens. NEVER spinners.
+- Empty states: One line muted text + CTA button. No sad-face illustrations.
 
-DEMO MODE: When NEXT_PUBLIC_SUPABASE_URL is empty, app runs in demo mode with mock data. See lib/demo/ for mock Supabase client and data. Dashboard routes are at /dashboard/* (not a route group).
+## The Three Modes
+1. **Review Mode** — Doomscroll study. No analytics shown to user. Rich post-answer content.
+2. **Sessions Mode** — Tracked, analytics-driven. Pre-built subject sessions OR custom compiled.
+3. **3D Library** — Visual learning. Interactive models with callouts → quizzes.
 
-QUIZ UI: Single column, max-width 720px, centered. Full-screen immersive. Optimistic UI for answers.
+## Quiz UI (THE MOST IMPORTANT SCREEN)
+- Single column, `max-width: 720px`, centered
+- Full-screen immersive on mobile — NOTHING else on screen
+- Answer choices: full-width cards, min height 48px, 12px gap
+- After answering: explanation + references + fun facts + related topics + 3D link
+- For Sessions: show "Seen Nx, correct Yx (Z%)" per question (Pro/Max)
+- Keyboard: 1-4 for answers, Enter for next. Swipe right on mobile.
 
-ROUTING: Dashboard pages are under src/app/dashboard/ (real route segment, not a route group). Auth pages are under src/app/(auth)/ (route group). Never pass React component functions from Server Components to Client Components — pass string identifiers and resolve on the client side.
+## Question Schema
+Every question has rich learning content: explanation, explanation_image_url, references (array with title/url/page/type), fun_facts (array), mnemonics, related_topic_ids, image_urls. See DATABASE_SCHEMA.sql `questions` table.
+
+## Import Paths
+- UI components: `@/components/ui/`
+- Feature components: `@/components/{feature}/` (quiz, analytics, 3d, dashboard)
+- Shared: `@/components/shared/`
+- Lib: `@/lib/{module}/` (supabase, ai, srs, stripe, utils)
+- Hooks: `@/hooks/`
+- Types: `@/types/`
+
+## Anti-patterns (NEVER DO THESE)
+- Never use localStorage for auth state
+- Never use useEffect for data fetching
+- Never hardcode hex colors — always use CSS variables
+- Never use `any` type — fix the actual type issue
+- Never create tables/columns not in DATABASE_SCHEMA.sql
+- Never show analytics data in Review Mode
+- Never use spinner loading states — use skeletons
+- Never use bouncy/spring animations — keep it Braun-mechanical
+- Never use `console.log` in production — use proper error handling
