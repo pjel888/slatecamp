@@ -3,6 +3,7 @@ import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SettingsForm } from "./settings-form";
+import { EmailPreferencesForm } from "./email-preferences-form";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
@@ -82,6 +83,24 @@ export default async function SettingsPage() {
               </Link>
             </div>
           )}
+        </CardContent>
+      </Card>
+
+      {/* Email preferences */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">Email</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Control when we send you emails. You can unsubscribe from any email via the link in the message.
+          </p>
+        </CardHeader>
+        <CardContent>
+          <EmailPreferencesForm
+            finalStretchDaily={
+              (profile as { email_preferences?: { final_stretch_daily?: boolean } }).email_preferences
+                ?.final_stretch_daily ?? true
+            }
+          />
         </CardContent>
       </Card>
 
