@@ -1,12 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Clock, Lock, Target, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Brain, Clock, Lock, Sparkles, Target, Zap } from "lucide-react";
 import {
   QuizModeInfoPopover,
   type QuizModeInfo,
 } from "@/components/quiz/quiz-mode-info-popover";
+import { useTier } from "@/lib/context/tier-context";
+import type { UserTier } from "@/types/app";
 
 const QUIZ_MODES: QuizModeInfo[] = [
   {
@@ -70,7 +74,15 @@ const ICON_MAP: Record<string, React.ElementType> = {
   target: Target,
 };
 
+const UPGRADE_LABEL: Record<UserTier, string> = {
+  free: "",
+  pro: "Upgrade to Pro",
+  max: "Upgrade to Max",
+};
+
 export function QuizModeCards() {
+  const { hasAccess } = useTier();
+
   return (
     <section>
       <div className="mb-3 flex items-center gap-1.5">
@@ -84,12 +96,22 @@ export function QuizModeCards() {
       <div className="grid gap-3 sm:grid-cols-2">
         {QUIZ_MODES.map((mode) => {
           const Icon = ICON_MAP[mode.iconName] ?? Brain;
+          const locked = !hasAccess(mode.tier as UserTier);
+
           return (
             <Card
               key={mode.label}
-              className="relative flex items-start gap-4 rounded-2xl border-2 p-4 transition-all"
+              className={`relative flex items-start gap-4 rounded-2xl border-2 p-4 transition-all ${
+                locked ? "opacity-60" : ""
+              }`}
             >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-muted-foreground">
+              <div
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${
+                  locked
+                    ? "bg-muted text-muted-foreground/50"
+                    : "bg-secondary text-muted-foreground"
+                }`}
+              >
                 <Icon className="h-5 w-5" strokeWidth={1.5} />
               </div>
               <CardContent className="min-w-0 flex-1 p-0">
@@ -100,7 +122,12 @@ export function QuizModeCards() {
                         {mode.label}
                       </span>
                       {mode.tier !== "free" && (
-                        <Badge variant="secondary" className="text-[10px] uppercase">
+                        <Badge
+                          variant="secondary"
+                          className={`text-[10px] uppercase ${
+                            locked ? "bg-muted text-muted-foreground" : ""
+                          }`}
+                        >
                           {mode.tier}
                         </Badge>
                       )}
@@ -111,10 +138,22 @@ export function QuizModeCards() {
                   </div>
                   <QuizModeInfoPopover mode={mode} />
                 </div>
-                {mode.tier !== "free" && (
-                  <div className="mt-2 flex items-center gap-1 text-[10px] text-muted-foreground">
-                    <Lock className="h-3 w-3" />
-                    Requires {mode.tier.toUpperCase()} plan
+                {locked && (
+                  <div className="mt-2 flex items-center gap-2">
+                    <Lock className="h-3 w-3 text-muted-foreground" />
+                    <span className="text-[10px] text-muted-foreground">
+                      Requires {mode.tier.toUpperCase()} plan
+                    </span>
+                    <Link href="/dashboard/settings/billing" className="ml-auto">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="h-6 gap-1 text-[10px] px-2"
+                      >
+                        <Sparkles className="h-2.5 w-2.5" strokeWidth={1.5} />
+                        {UPGRADE_LABEL[mode.tier as UserTier]}
+                      </Button>
+                    </Link>
                   </div>
                 )}
               </CardContent>

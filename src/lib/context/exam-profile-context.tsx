@@ -3,11 +3,12 @@
 import { createContext, useContext, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
-import type { ExamProfile, Subject } from "@/types/app";
+import type { BoardExam, ExamProfile, Subject } from "@/types/app";
 
 interface ExamProfileContextValue {
   activeProfile: ExamProfile | null;
   profiles: ExamProfile[];
+  boardExams: BoardExam[];
   subjects: Subject[];
   switchProfile: (profileId: string) => Promise<void>;
   refreshProfiles: () => Promise<void>;
@@ -16,6 +17,7 @@ interface ExamProfileContextValue {
 const ExamProfileContext = createContext<ExamProfileContextValue>({
   activeProfile: null,
   profiles: [],
+  boardExams: [],
   subjects: [],
   switchProfile: async () => {},
   refreshProfiles: async () => {},
@@ -29,6 +31,7 @@ interface ExamProfileProviderProps {
   children: React.ReactNode;
   initialProfile: ExamProfile | null;
   initialProfiles: ExamProfile[];
+  initialBoardExams?: BoardExam[];
   initialSubjects: Subject[];
 }
 
@@ -36,10 +39,12 @@ export function ExamProfileProvider({
   children,
   initialProfile,
   initialProfiles,
+  initialBoardExams = [],
   initialSubjects,
 }: ExamProfileProviderProps) {
   const [activeProfile, setActiveProfile] = useState<ExamProfile | null>(initialProfile);
   const [profiles, setProfiles] = useState<ExamProfile[]>(initialProfiles);
+  const [boardExams, setBoardExams] = useState<BoardExam[]>(initialBoardExams);
   const [subjects, setSubjects] = useState<Subject[]>(initialSubjects);
   const router = useRouter();
 
@@ -84,7 +89,7 @@ export function ExamProfileProvider({
   }, [refreshProfiles, router]);
 
   return (
-    <ExamProfileContext.Provider value={{ activeProfile, profiles, subjects, switchProfile, refreshProfiles }}>
+    <ExamProfileContext.Provider value={{ activeProfile, profiles, boardExams, subjects, switchProfile, refreshProfiles }}>
       {children}
     </ExamProfileContext.Provider>
   );

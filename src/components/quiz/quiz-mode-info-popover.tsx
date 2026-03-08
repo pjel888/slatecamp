@@ -33,13 +33,14 @@ export function QuizModeInfoPopover({ mode }: QuizModeInfoPopoverProps) {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button
-          type="button"
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-muted-foreground/50 transition-colors hover:bg-secondary hover:text-muted-foreground"
+        <span
+          role="button"
+          tabIndex={0}
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-muted-foreground/50 transition-colors hover:bg-secondary hover:text-muted-foreground cursor-pointer"
           aria-label={`Learn more about ${mode.label}`}
         >
           <Info className="h-3.5 w-3.5" strokeWidth={1.5} />
-        </button>
+        </span>
       </PopoverTrigger>
       <PopoverContent
         side="bottom"

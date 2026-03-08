@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { cookies } from "next/headers";
 import { isDemoMode } from "@/lib/demo/config";
+import { isAdminByEmail } from "@/lib/admin/is-admin";
 
 const COOKIE_NAME = "cerebro_dev_flags";
 
@@ -20,11 +21,12 @@ export async function POST(request: Request) {
 
     const { data: profile } = await supabase
       .from("profiles")
-      .select("is_admin")
+      .select("id")
       .eq("id", user.id)
       .single();
 
-    if (!profile?.is_admin) {
+    const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
+    if (!profile || !isAdmin) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
   }

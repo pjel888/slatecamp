@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,6 +20,7 @@ import {
   getDiagnosticQuestions,
   submitDiagnostic,
   skipDiagnosticAndComplete,
+  skipOnboardingEntirely,
 } from "@/lib/actions/onboarding";
 import type { BoardExam, Question, Choice } from "@/types/app";
 
@@ -60,6 +61,14 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
     examProfileId: string;
   } | null>(null);
 
+  // When only one exam (Architecture/ALE), auto-select and go to date step
+  useEffect(() => {
+    if (boardExams.length === 1) {
+      setSelectedExam(boardExams[0] ?? null);
+      setStep("date");
+    }
+  }, [boardExams]);
+
   const handleExamSelect = (exam: BoardExam) => {
     if (exam.has_content) setSelectedExam(exam);
   };
@@ -69,8 +78,15 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
     setLoadingDiagnostic(true);
     startTransition(async () => {
       const questions = await getDiagnosticQuestions(selectedExam.id, 10);
-      setDiagnosticQuestions(questions);
       setLoadingDiagnostic(false);
+      if (questions.length === 0) {
+        // No questions available — skip diagnostic, just create profile
+        await skipDiagnosticAndComplete(userId, selectedExam.id, targetDate || null);
+        router.push("/dashboard");
+        router.refresh();
+        return;
+      }
+      setDiagnosticQuestions(questions);
       setStep("diagnostic");
     });
   };
@@ -116,6 +132,14 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
     });
   };
 
+  const handleSkipOnboarding = () => {
+    startTransition(async () => {
+      await skipOnboardingEntirely(userId);
+      router.push("/dashboard");
+      router.refresh();
+    });
+  };
+
   const handleGoToDashboard = () => {
     router.push("/dashboard");
     router.refresh();
@@ -150,42 +174,58 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
               Choose the board exam you&apos;re preparing for
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-3">
-            {boardExams.map((exam) => {
-              const Icon = EXAM_ICONS[exam.icon_name ?? ""] ?? Building2;
-              const isSelected = selectedExam?.id === exam.id;
-              const isAvailable = exam.has_content;
+          {boardExams.length > 0 ? (
+            <div className="grid grid-cols-2 gap-3">
+              {boardExams.map((exam) => {
+                const Icon = EXAM_ICONS[exam.icon_name ?? ""] ?? Building2;
+                const isSelected = selectedExam?.id === exam.id;
+                const isAvailable = exam.has_content;
 
-              return (
-                <button
-                  key={exam.id}
-                  type="button"
-                  onClick={() => handleExamSelect(exam)}
-                  disabled={!isAvailable}
-                  className={`relative flex flex-col items-center gap-3 rounded-xl border p-5 transition-all duration-150 min-h-[100px] ${
-                    isSelected
-                      ? "border-primary bg-primary/5"
-                      : isAvailable
-                        ? "border-border hover:border-muted-foreground"
-                        : "border-border opacity-50 cursor-not-allowed"
-                  }`}
-                >
-                  {!isAvailable && (
-                    <div className="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5">
-                      <Lock className="h-2.5 w-2.5 text-muted-foreground" strokeWidth={1.5} />
-                      <span className="text-[9px] font-medium text-muted-foreground">Soon</span>
+                return (
+                  <button
+                    key={exam.id}
+                    type="button"
+                    onClick={() => handleExamSelect(exam)}
+                    disabled={!isAvailable}
+                    className={`relative flex flex-col items-center gap-3 rounded-xl border p-5 transition-all duration-150 min-h-[100px] ${
+                      isSelected
+                        ? "border-primary bg-primary/5"
+                        : isAvailable
+                          ? "border-border hover:border-muted-foreground"
+                          : "border-border opacity-50 cursor-not-allowed"
+                    }`}
+                  >
+                    {!isAvailable && (
+                      <div className="absolute right-2 top-2 flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5">
+                        <Lock className="h-2.5 w-2.5 text-muted-foreground" strokeWidth={1.5} />
+                        <span className="text-[9px] font-medium text-muted-foreground">Soon</span>
+                      </div>
+                    )}
+                    <Icon className="h-8 w-8" strokeWidth={1.5} />
+                    <div className="text-center">
+                      <span className="text-sm font-medium">{exam.short_name}</span>
+                      <p className="mt-0.5 text-[11px] text-muted-foreground">{exam.country}</p>
                     </div>
-                  )}
-                  <Icon className="h-8 w-8" strokeWidth={1.5} />
-                  <div className="text-center">
-                    <span className="text-sm font-medium">{exam.short_name}</span>
-                    <p className="mt-0.5 text-[11px] text-muted-foreground">{exam.country}</p>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-          <div className="flex justify-end">
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="py-8 text-center">
+              <p className="text-sm text-muted-foreground">
+                No board exams available yet. You can skip for now and set this up later.
+              </p>
+            </div>
+          )}
+          <div className="flex items-center justify-between">
+            <button
+              type="button"
+              onClick={handleSkipOnboarding}
+              disabled={isPending}
+              className="text-xs text-muted-foreground underline"
+            >
+              {isPending ? "Skipping..." : "Skip for now"}
+            </button>
             <Button
               onClick={() => setStep("date")}
               disabled={!selectedExam}
@@ -226,7 +266,7 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
           >
             I don&apos;t know yet
           </button>
-          <div className="flex justify-between">
+          <div className="flex items-center justify-between">
             <Button variant="ghost" onClick={() => setStep("exam")}>
               <ArrowLeft className="mr-2 h-4 w-4" /> Back
             </Button>
@@ -239,6 +279,14 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
+          <button
+            type="button"
+            onClick={handleSkipOnboarding}
+            disabled={isPending}
+            className="block w-full text-center text-xs text-muted-foreground underline"
+          >
+            {isPending ? "Skipping..." : "Skip for now"}
+          </button>
         </div>
       )}
 
@@ -346,7 +394,7 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
             disabled={isPending}
             className="block w-full text-center text-xs text-muted-foreground underline"
           >
-            Skip diagnostic →
+            Skip diagnostic
           </button>
         </div>
       )}

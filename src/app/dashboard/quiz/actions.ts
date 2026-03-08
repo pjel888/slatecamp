@@ -1,7 +1,15 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
-import type { NewSessionType, SessionConfig } from "@/types/app";
+import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
+import { isAdminByEmail } from "@/lib/admin/is-admin";
+import type { NewSessionType, SessionConfig, UserTier } from "@/types/app";
+
+// Session types that require a minimum tier
+const SESSION_TIER_REQUIREMENTS: Partial<Record<NewSessionType, UserTier>> = {
+  srs_review: "pro",
+  ai_adaptive: "max",
+};
 
 export async function createSession(params: {
   examProfileId: string;
@@ -15,6 +23,27 @@ export async function createSession(params: {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { error: "Not authenticated", sessionId: null };
+
+  // --- Tier validation ---
+  const requiredTier = SESSION_TIER_REQUIREMENTS[params.sessionType];
+  if (requiredTier) {
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("tier")
+      .eq("id", user.id)
+      .single();
+
+    const flags = await getFeatureFlags();
+    const userTier = (profile?.tier ?? "free") as UserTier;
+    const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
+
+    if (!hasTierAccess(requiredTier, userTier, isAdmin, flags)) {
+      return {
+        error: `${params.sessionType.replace("_", " ")} requires a ${requiredTier.charAt(0).toUpperCase() + requiredTier.slice(1)} plan`,
+        sessionId: null,
+      };
+    }
+  }
 
   // Gather questions based on config
   const questionIds: string[] = [];

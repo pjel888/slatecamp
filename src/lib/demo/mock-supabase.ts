@@ -76,6 +76,7 @@ class MockQueryBuilder {
   private orderAsc = true;
   private limitCount: number | null = null;
   private isSingle = false;
+  private isMaybeSingle = false;
   private mutationType: "insert" | "update" | "upsert" | "delete" | null = null;
   private mutationData: unknown = null;
 
@@ -110,6 +111,11 @@ class MockQueryBuilder {
 
   single() {
     this.isSingle = true;
+    return this;
+  }
+
+  maybeSingle() {
+    this.isMaybeSingle = true;
     return this;
   }
 
@@ -232,7 +238,7 @@ class MockQueryBuilder {
 
     if (this.limitCount !== null) rows = rows.slice(0, this.limitCount);
 
-    if (this.isSingle) {
+    if (this.isSingle || this.isMaybeSingle) {
       return { data: rows[0] ?? null, error: null };
     }
 

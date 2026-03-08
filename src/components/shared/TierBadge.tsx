@@ -1,11 +1,10 @@
 "use client";
 
-import { Sparkles, Zap, Crown, FlaskConical } from "lucide-react";
-
-export type DisplayTier = "free" | "pro" | "max" | "dev";
+import { Sparkles, Zap, Crown } from "lucide-react";
+import type { UserTier } from "@/types/app";
 
 const TIER_CONFIG: Record<
-  DisplayTier,
+  UserTier,
   { label: string; icon: React.ElementType; className: string }
 > = {
   free: {
@@ -26,16 +25,15 @@ const TIER_CONFIG: Record<
     className:
       "bg-color-result-gold/10 text-color-result-gold border-color-result-gold/30",
   },
-  dev: {
-    label: "Dev",
-    icon: FlaskConical,
-    className:
-      "bg-color-signal-amber/10 text-color-signal-amber border-color-signal-amber/30",
-  },
 };
+
+/** @deprecated Use `UserTier` with `devMode` prop instead. */
+export type DisplayTier = UserTier | "dev";
 
 interface TierBadgeProps {
   tier: DisplayTier;
+  /** When true, appends an asterisk to indicate dev/simulated mode. */
+  devMode?: boolean;
   size?: "sm" | "default";
   showIcon?: boolean;
   className?: string;
@@ -43,11 +41,16 @@ interface TierBadgeProps {
 
 export function TierBadge({
   tier,
+  devMode = false,
   size = "default",
   showIcon = true,
   className,
 }: TierBadgeProps) {
-  const config = TIER_CONFIG[tier];
+  // If legacy "dev" value is passed, treat as "max" in dev mode
+  const resolvedTier: UserTier = tier === "dev" ? "max" : tier;
+  const isDevMode = devMode || tier === "dev";
+
+  const config = TIER_CONFIG[resolvedTier];
   const Icon = config.icon;
   const isSm = size === "sm";
 
@@ -59,6 +62,7 @@ export function TierBadge({
     >
       {showIcon && <Icon className={isSm ? "h-3 w-3" : "h-3.5 w-3.5"} strokeWidth={1.5} />}
       {config.label}
+      {isDevMode && "*"}
     </span>
   );
 }

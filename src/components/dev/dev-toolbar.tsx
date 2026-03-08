@@ -17,41 +17,40 @@ import {
 } from "lucide-react";
 import type { UserTier } from "@/types/app";
 import type { FeatureFlags } from "@/lib/admin/feature-flags";
+import type { DevConnectionState } from "@/lib/dev/dev-mode";
 
 interface DevToolbarProps {
-  mode: "dev" | "live";
+  connectionState: DevConnectionState;
   currentTier: UserTier;
   effectiveTier: UserTier;
   flags: FeatureFlags;
 }
 
-type EnvironmentMode = "dev" | "free" | "pro" | "max";
+const TIER_CONFIG: Record<UserTier, { label: string; color: string }> = {
+  free: { label: "Free", color: "bg-zinc-500" },
+  pro:  { label: "Pro",  color: "bg-blue-500" },
+  max:  { label: "Max",  color: "bg-amber-500" },
+};
 
-const ENV_CONFIG: Record<EnvironmentMode, { label: string; color: string; desc: string }> = {
-  dev:  { label: "Dev",  color: "bg-purple-500", desc: "No external services — mock data only" },
-  free: { label: "Free", color: "bg-zinc-500",   desc: "Live services — Free tier experience" },
-  pro:  { label: "Pro",  color: "bg-blue-500",   desc: "Live services — Pro tier experience" },
-  max:  { label: "Max",  color: "bg-amber-500",  desc: "Live services — Max tier experience" },
+const CONN_CONFIG: Record<DevConnectionState, { label: string; color: string; icon: typeof Wifi }> = {
+  local:     { label: "Local",     color: "text-purple-500", icon: WifiOff },
+  connected: { label: "Connected", color: "text-emerald-500", icon: Wifi },
 };
 
 export function DevToolbar({
-  mode,
+  connectionState,
   currentTier,
   effectiveTier: initialEffective,
   flags: initialFlags,
 }: DevToolbarProps) {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const [_effectiveTier, setEffectiveTier] = useState(initialEffective);
+  const [effectiveTier, setEffectiveTier] = useState(initialEffective);
   const [flags, setFlags] = useState(initialFlags);
   const [saving, setSaving] = useState(false);
   const router = useRouter();
 
-  const isDevMode = mode === "dev";
-
-  const currentEnv: EnvironmentMode = isDevMode
-    ? "dev"
-    : (flags.spoofedTier ?? currentTier) as EnvironmentMode;
+  const isLocal = connectionState === "local";
 
   useEffect(() => {
     setEffectiveTier(initialEffective);
@@ -75,14 +74,14 @@ export function DevToolbar({
     [router]
   );
 
-  function switchEnv(env: EnvironmentMode) {
-    if (isDevMode && env !== "dev") return;
-    if (env === "dev") return;
-
-    const spoofedTier = env as UserTier;
-    const next: FeatureFlags = { ...flags, spoofedTier };
+  function switchTier(tier: UserTier) {
+    const next: FeatureFlags = {
+      ...flags,
+      simulatedTier: tier,
+      spoofedTier: tier, // backward compat
+    };
     setFlags(next);
-    setEffectiveTier(spoofedTier);
+    setEffectiveTier(tier);
     persist(next);
   }
 
@@ -95,12 +94,12 @@ export function DevToolbar({
   async function resetAll() {
     await fetch("/api/admin/flags", { method: "DELETE" });
     setFlags({
-      spoofedTier: null,
-      bypass3dGate: isDevMode,
-      bypassAiGate: isDevMode,
-      bypassSrsGate: isDevMode,
+      simulatedTier: null,
+      bypass3dGate: isLocal,
+      bypassAiGate: isLocal,
+      bypassSrsGate: isLocal,
     });
-    setEffectiveTier(isDevMode ? "max" : currentTier);
+    setEffectiveTier(isLocal ? "max" : currentTier);
     router.refresh();
   }
 
@@ -116,7 +115,9 @@ export function DevToolbar({
     );
   }
 
-  const envConfig = ENV_CONFIG[currentEnv];
+  const tierConfig = TIER_CONFIG[effectiveTier];
+  const connConfig = CONN_CONFIG[connectionState];
+  const ConnIcon = connConfig.icon;
 
   return (
     <div className="fixed bottom-4 right-4 z-9999 select-none">
@@ -127,15 +128,11 @@ export function DevToolbar({
           className="flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl"
         >
           <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
-          {isDevMode ? (
-            <WifiOff className="h-3 w-3 text-purple-500" />
-          ) : (
-            <Wifi className="h-3 w-3 text-emerald-500" />
-          )}
+          <ConnIcon className={`h-3 w-3 ${connConfig.color}`} />
           <span
-            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${envConfig.color}`}
+            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${tierConfig.color}`}
           >
-            {envConfig.label}
+            {tierConfig.label}
           </span>
           <ChevronUp className="h-3 w-3 text-muted-foreground" />
         </button>
@@ -149,7 +146,7 @@ export function DevToolbar({
             <div className="flex items-center gap-2">
               <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
               <span className="text-xs font-semibold text-foreground">
-                Developer Panel
+                Developer Mode
               </span>
               {saving && (
                 <span className="text-[10px] text-muted-foreground animate-pulse">
@@ -178,30 +175,40 @@ export function DevToolbar({
             </div>
           </div>
 
-          {/* Environment switcher */}
+          {/* Connection State (read-only) */}
           <div className="border-b border-border px-3 py-2.5">
             <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-              Environment
+              Connection
             </span>
-            <div className="mt-1.5 grid grid-cols-4 gap-1">
-              {(["dev", "free", "pro", "max"] as EnvironmentMode[]).map((env) => {
-                const cfg = ENV_CONFIG[env];
-                const isActive = currentEnv === env;
-                const isDisabled = (isDevMode && env !== "dev") || (!isDevMode && env === "dev");
+            <p className="mt-1 flex items-center gap-1.5 text-[11px]">
+              <ConnIcon className={`h-3 w-3 ${connConfig.color}`} />
+              <span className="font-medium">{connConfig.label}</span>
+              <span className="text-muted-foreground">
+                — {isLocal ? "mock data" : "live Supabase"}
+              </span>
+            </p>
+          </div>
+
+          {/* Tier Switcher */}
+          <div className="border-b border-border px-3 py-2.5">
+            <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+              Tier
+            </span>
+            <div className="mt-1.5 grid grid-cols-3 gap-1">
+              {(["free", "pro", "max"] as UserTier[]).map((tier) => {
+                const cfg = TIER_CONFIG[tier];
+                const isActive = effectiveTier === tier;
 
                 return (
                   <button
-                    key={env}
-                    onClick={() => switchEnv(env)}
-                    disabled={isDisabled}
+                    key={tier}
+                    onClick={() => switchTier(tier)}
                     className={`rounded-lg px-2 py-1.5 text-[11px] font-semibold transition-all ${
                       isActive
                         ? `${cfg.color} text-white shadow-sm`
-                        : isDisabled
-                          ? "bg-muted/50 text-muted-foreground/30 cursor-not-allowed"
-                          : "bg-muted text-muted-foreground hover:bg-muted/80"
+                        : "bg-muted text-muted-foreground hover:bg-muted/80"
                     }`}
-                    title={cfg.desc}
+                    title={`Simulate ${cfg.label} tier`}
                   >
                     {cfg.label}
                   </button>
@@ -209,17 +216,9 @@ export function DevToolbar({
               })}
             </div>
             <p className="mt-1.5 text-[10px] text-muted-foreground">
-              {isDevMode ? (
-                <span className="flex items-center gap-1">
-                  <WifiOff className="h-2.5 w-2.5" />
-                  No external services — all data is mocked
-                </span>
-              ) : (
-                <span className="flex items-center gap-1">
-                  <Wifi className="h-2.5 w-2.5" />
-                  Connected — viewing as {envConfig.label} tier
-                </span>
-              )}
+              {flags.simulatedTier
+                ? `Simulating ${effectiveTier} (DB: ${currentTier})`
+                : `Using ${isLocal ? "default (max)" : `DB tier (${currentTier})`}`}
             </p>
           </div>
 

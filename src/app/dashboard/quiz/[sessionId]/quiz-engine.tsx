@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useActiveSession } from "@/lib/context/active-session-context";
 import { submitAnswer, completeSession, markQuestionPresented } from "../actions";
 import { getQuestionSocialProof } from "@/lib/actions/social-proof";
 import { AnswerResultStrip } from "@/components/quiz/answer-result-strip";
@@ -36,6 +37,13 @@ interface QuizEngineProps {
 
 export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
   const router = useRouter();
+  const { setActiveSession } = useActiveSession();
+
+  useEffect(() => {
+    setActiveSession("quiz");
+    return () => setActiveSession(null);
+  }, [setActiveSession]);
+
   const [showIntro, setShowIntro] = useState(true);
   const [currentIdx, setCurrentIdx] = useState(() => {
     const firstUnanswered = sessionQuestions.findIndex((sq) => !sq.answered_at);

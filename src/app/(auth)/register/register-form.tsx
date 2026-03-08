@@ -13,6 +13,7 @@ export function RegisterForm() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent) {
@@ -36,18 +37,30 @@ export function RegisterForm() {
       return;
     }
 
-    router.push("/onboarding");
+    router.push("/dashboard");
     router.refresh();
   }
 
   async function handleGoogleSignUp() {
+    setError(null);
+    setGoogleLoading(true);
     const supabase = createClient();
-    await supabase.auth.signInWithOAuth({
+    const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
+    if (oauthError) {
+      setError(oauthError.message);
+      setGoogleLoading(false);
+      return;
+    }
+    if (data?.url) {
+      window.location.href = data.url;
+      return;
+    }
+    setGoogleLoading(false);
   }
 
   return (
@@ -114,8 +127,9 @@ export function RegisterForm() {
         variant="outline"
         className="w-full"
         onClick={handleGoogleSignUp}
+        disabled={googleLoading}
       >
-        Continue with Google
+        {googleLoading ? "Redirecting to Google…" : "Continue with Google"}
       </Button>
     </form>
   );

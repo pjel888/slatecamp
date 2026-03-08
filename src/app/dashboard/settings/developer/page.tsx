@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
-import { getFeatureFlags } from "@/lib/admin/feature-flags";
+import { getFeatureFlags, getConnectionState } from "@/lib/admin/feature-flags";
 import { DevPanel } from "./dev-panel";
 
 export const metadata = { title: "Developer Settings" };
@@ -13,6 +13,7 @@ export default async function DeveloperSettingsPage() {
   }
 
   const flags = await getFeatureFlags();
+  const connectionState = getConnectionState();
 
   return (
     <div className="space-y-8">
@@ -21,14 +22,15 @@ export default async function DeveloperSettingsPage() {
           Developer Settings
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Admin-only panel. Override feature flags and spoof subscription tiers
-          for testing.
+          Admin-only panel. Simulate any combination of subscription tier and
+          database connection state.
         </p>
       </div>
 
       <DevPanel
         currentTier={profile.tier}
         effectiveTier={profile.effectiveTier}
+        connectionState={connectionState}
         flags={flags}
       />
     </div>

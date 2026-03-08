@@ -56,11 +56,11 @@ export default async function SettingsPage() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="text-base">Subscription</CardTitle>
-            <Badge className="capitalize">{profile.tier}</Badge>
+            <Badge className="capitalize">{profile.effectiveTier}</Badge>
           </div>
         </CardHeader>
         <CardContent>
-          {profile.tier === "free" ? (
+          {profile.effectiveTier === "free" ? (
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">
                 Upgrade to Pro for unlimited questions, SRS, and AI features.
@@ -74,7 +74,7 @@ export default async function SettingsPage() {
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">
                 You&apos;re on the{" "}
-                <strong className="capitalize">{profile.tier}</strong> plan.
+                <strong className="capitalize">{profile.effectiveTier}</strong> plan.
               </p>
               <Link href="/dashboard/settings/billing">
                 <Button variant="outline" size="sm">

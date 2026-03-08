@@ -28,11 +28,11 @@ export function DemoShell() {
       </div>
 
       <DevToolbar
-        mode="dev"
+        connectionState="local"
         currentTier="max"
         effectiveTier="max"
         flags={{
-          spoofedTier: null,
+          simulatedTier: null,
           bypass3dGate: true,
           bypassAiGate: true,
           bypassSrsGate: true,

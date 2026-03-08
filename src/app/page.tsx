@@ -1,8 +1,15 @@
 import Link from "next/link";
+import { createClient } from "@/lib/supabase/server";
 import { Button } from "@/components/ui/button";
 import { Brain, Zap, BarChart3, BookOpen } from "lucide-react";
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  const isLoggedIn = !!user;
+
   return (
     <div className="min-h-screen bg-background">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-xl">
@@ -14,16 +21,26 @@ export default function LandingPage() {
             Cerebro
           </Link>
           <div className="flex items-center gap-2">
-            <Link href="/login">
-              <Button variant="ghost" size="sm" className="text-[13px]">
-                Log in
-              </Button>
-            </Link>
-            <Link href="/register">
-              <Button size="sm" className="text-[13px]">
-                Get Started
-              </Button>
-            </Link>
+            {isLoggedIn ? (
+              <Link href="/dashboard">
+                <Button size="sm" className="text-[13px]">
+                  Go to dashboard
+                </Button>
+              </Link>
+            ) : (
+              <>
+                <Link href="/login">
+                  <Button variant="ghost" size="sm" className="text-[13px]">
+                    Log in
+                  </Button>
+                </Link>
+                <Link href="/register">
+                  <Button size="sm" className="text-[13px]">
+                    Get Started
+                  </Button>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </header>
@@ -42,20 +59,30 @@ export default function LandingPage() {
             re-reading — start actively recalling.
           </p>
           <div className="mt-10 flex items-center justify-center gap-3">
-            <Link href="/register">
-              <Button size="lg" className="h-11 rounded-full px-7 text-[15px]">
-                Start Reviewing — Free
-              </Button>
-            </Link>
-            <Link href="/login">
-              <Button
-                variant="outline"
-                size="lg"
-                className="h-11 rounded-full px-7 text-[15px]"
-              >
-                I have an account
-              </Button>
-            </Link>
+            {isLoggedIn ? (
+              <Link href="/dashboard">
+                <Button size="lg" className="h-11 rounded-full px-7 text-[15px]">
+                  Go to dashboard
+                </Button>
+              </Link>
+            ) : (
+              <>
+                <Link href="/register">
+                  <Button size="lg" className="h-11 rounded-full px-7 text-[15px]">
+                    Start Reviewing — Free
+                  </Button>
+                </Link>
+                <Link href="/login">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="h-11 rounded-full px-7 text-[15px]"
+                  >
+                    I have an account
+                  </Button>
+                </Link>
+              </>
+            )}
           </div>
         </section>
 
@@ -106,11 +133,16 @@ export default function LandingPage() {
             Ready to pass your board exam?
           </h2>
           <p className="mt-3 text-[15px] text-muted-foreground">
-            Free to start. No credit card required.
+            {isLoggedIn
+              ? "Head to your dashboard to continue studying."
+              : "Free to start. No credit card required."}
           </p>
-          <Link href="/register" className="mt-8 inline-block">
+          <Link
+            href={isLoggedIn ? "/dashboard" : "/register"}
+            className="mt-8 inline-block"
+          >
             <Button size="lg" className="h-11 rounded-full px-7 text-[15px]">
-              Create Free Account
+              {isLoggedIn ? "Go to dashboard" : "Create Free Account"}
             </Button>
           </Link>
         </section>

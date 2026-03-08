@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { isAdminByEmail } from "@/lib/admin/is-admin";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, MessageSquare, BarChart3, TrendingUp, Shield } from "lucide-react";
@@ -13,11 +14,12 @@ export default async function AdminPage() {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("is_admin")
+    .select("id")
     .eq("id", user.id)
     .single();
 
-  if (!profile?.is_admin) redirect("/dashboard");
+  const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
+  if (!profile || !isAdmin) redirect("/dashboard");
 
   // Total users
   const { count: totalUsers } = await supabase

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, BookOpen, ClipboardList, X } from "lucide-react";
 import { useBreadcrumb } from "@/lib/context/breadcrumb-context";
-import { getQuizReviewMode } from "@/lib/utils/quiz-review-mode";
+import { useActiveSession } from "@/lib/context/active-session-context";
 import {
   Dialog,
   DialogContent,
@@ -54,7 +54,7 @@ export function DashboardHeader() {
   const pathname = usePathname();
   const router = useRouter();
   const { breadcrumbs: customCrumbs } = useBreadcrumb() ?? {};
-  const mode = getQuizReviewMode(pathname);
+  const { activeSession: mode } = useActiveSession();
   const inQuizMode = mode !== null;
   const crumbs = inQuizMode ? null : (customCrumbs ?? getBreadcrumbs(pathname));
   const showBack = !inQuizMode && crumbs && crumbs.length > 1;
@@ -62,7 +62,11 @@ export function DashboardHeader() {
 
   function handleConfirmExit() {
     setExitDialogOpen(false);
-    router.push("/dashboard");
+    if (mode === "review") {
+      router.push("/dashboard/review?exited=1");
+    } else {
+      router.push("/dashboard");
+    }
   }
 
   return (

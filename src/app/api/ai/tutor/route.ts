@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { getAIProvider } from "@/lib/ai/provider";
 import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
+import { isAdminByEmail } from "@/lib/admin/is-admin";
 import { isDemoMode } from "@/lib/demo/config";
 
 const DEMO_RESPONSES = [
@@ -31,12 +32,12 @@ export async function POST(request: Request) {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("tier, profession, exam_target, ai_tokens_used, ai_tokens_limit, is_admin")
+    .select("tier, ai_tokens_used, ai_tokens_limit")
     .eq("id", user.id)
     .single();
 
   const flags = await getFeatureFlags();
-  const isAdmin = profile?.is_admin === true;
+  const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
   const canAccessTutor =
     flags.bypassAiGate ||
     hasTierAccess("max", profile?.tier ?? "free", isAdmin, flags);
@@ -51,13 +52,13 @@ export async function POST(request: Request) {
   const { messages } = await request.json();
   const ai = getAIProvider();
 
-  const systemPrompt = `You are a Socratic tutor for ${profile?.profession ?? "architecture"} board exam preparation. The student is studying for ${profile?.exam_target ?? "their board exam"}.
+  const systemPrompt = `You are a Socratic tutor for architecture board exam preparation. The student is studying for their board exam.
 
 RULES:
 1. NEVER give the answer directly.
 2. Ask ONE guiding question at a time.
 3. Build on what the student already knows.
-4. Use analogies relevant to ${profile?.profession ?? "architecture"}.
+4. Use analogies relevant to architecture.
 5. If the student is stuck after 3 exchanges, provide a hint, not the answer.
 6. Keep responses concise (2-3 sentences max).
 7. Celebrate when they arrive at the correct understanding.`;

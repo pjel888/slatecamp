@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,7 +13,16 @@ export function LoginForm() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const err = searchParams.get("error");
+    if (err === "auth_callback_failed") {
+      setError("Sign-in failed. Please try again or use email and password.");
+    }
+  }, [searchParams]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,13 +46,25 @@ export function LoginForm() {
   }
 
   async function handleGoogleLogin() {
+    setError(null);
+    setGoogleLoading(true);
     const supabase = createClient();
-    await supabase.auth.signInWithOAuth({
+    const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
       },
     });
+    if (oauthError) {
+      setError(oauthError.message);
+      setGoogleLoading(false);
+      return;
+    }
+    if (data?.url) {
+      window.location.href = data.url;
+      return;
+    }
+    setGoogleLoading(false);
   }
 
   return (
@@ -103,8 +124,9 @@ export function LoginForm() {
         variant="outline"
         className="w-full"
         onClick={handleGoogleLogin}
+        disabled={googleLoading}
       >
-        Continue with Google
+        {googleLoading ? "Redirecting to Google…" : "Continue with Google"}
       </Button>
     </form>
   );

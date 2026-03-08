@@ -288,9 +288,22 @@ Go to `/dashboard` to use the app.
 ### 3. Connect real services
 
 - Set Supabase (and optionally AI, payments) env vars in `.env.local`.
-- Apply migrations (e.g. run `DATABASE_SCHEMA.sql` or push `supabase/migrations/` with Supabase CLI).
+- **Apply schema and seed:** follow **[supabase/SUPABASE_SETUP.md](supabase/SUPABASE_SETUP.md)** (apply migrations or `DATABASE_SCHEMA.sql`, then run `supabase/seed.sql` in the same project as in `.env.local`).
 - Ensure extensions: `uuid-ossp`, `vector`.
 - Make yourself admin: `UPDATE profiles SET is_admin = TRUE WHERE email = 'your@email.com';`
+
+#### Google Sign-In
+
+To enable **Continue with Google** on login and register:
+
+1. **Supabase Dashboard** → your project → **Authentication** → **Providers** → enable **Google**.
+2. **Google Cloud Console** → [APIs & Services → Credentials](https://console.cloud.google.com/apis/credentials) → create an **OAuth 2.0 Client ID** (Web application). Add:
+   - **Authorized JavaScript origins:** `http://localhost:3000` (dev), and your production origin (e.g. `https://yourapp.com`).
+   - **Authorized redirect URIs:** the callback URL shown on the Supabase Google provider page (e.g. `https://<project-ref>.supabase.co/auth/v1/callback`). For local Supabase: `http://127.0.0.1:54321/auth/v1/callback`.
+3. Copy the **Client ID** and **Client Secret** into the Supabase Google provider fields and save.
+4. In Supabase **Authentication** → **URL Configuration**, add your app URLs to **Redirect URLs** (e.g. `http://localhost:3000/auth/callback`, `https://yourapp.com/auth/callback`).
+
+If the provider is not enabled or credentials are missing, users will see an error such as *"Unsupported provider: provider is not enabled"* when clicking Continue with Google. See [Supabase: Login with Google](https://supabase.com/docs/guides/auth/social-login/auth-google) for details.
 
 ---
 
