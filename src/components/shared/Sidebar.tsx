@@ -129,7 +129,7 @@ export function Sidebar({ isAdmin }: SidebarProps) {
           if (collapsed) {
             return (
               <Tooltip key={href}>
-                <TooltipTrigger render={link} />
+                <TooltipTrigger render={<span className="block">{link}</span>} />
                 <TooltipContent side="right" sideOffset={8}>
                   {label}
                 </TooltipContent>
@@ -147,16 +147,18 @@ export function Sidebar({ isAdmin }: SidebarProps) {
               <Tooltip>
                 <TooltipTrigger
                   render={
-                    <Link
-                      href="/dashboard/settings/developer"
-                      className={`flex items-center justify-center rounded-xl py-2 text-[13px] transition-all ${
-                        pathname === "/dashboard/settings/developer"
-                          ? "bg-[var(--color-signal-amber)]/10 font-medium text-[var(--color-signal-amber)]"
-                          : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
-                      }`}
-                    >
-                      <Shield className="h-[18px] w-[18px]" strokeWidth={1.5} />
-                    </Link>
+                    <span className="block">
+                      <Link
+                        href="/dashboard/settings/developer"
+                        className={`flex items-center justify-center rounded-xl py-2 text-[13px] transition-all ${
+                          pathname === "/dashboard/settings/developer"
+                            ? "bg-[var(--color-signal-amber)]/10 font-medium text-[var(--color-signal-amber)]"
+                            : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
+                        }`}
+                      >
+                        <Shield className="h-[18px] w-[18px]" strokeWidth={1.5} />
+                      </Link>
+                    </span>
                   }
                 />
                 <TooltipContent side="right" sideOffset={8}>
@@ -197,12 +199,15 @@ export function Sidebar({ isAdmin }: SidebarProps) {
             <Tooltip>
               <TooltipTrigger
                 render={
-                  <button
-                    onClick={handleLogout}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-all hover:bg-secondary hover:text-foreground"
-                  >
-                    <LogOut className="h-4 w-4" strokeWidth={1.5} />
-                  </button>
+                  <span className="block">
+                    <button
+                      type="button"
+                      onClick={handleLogout}
+                      className="flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-all hover:bg-secondary hover:text-foreground"
+                    >
+                      <LogOut className="h-4 w-4" strokeWidth={1.5} />
+                    </button>
+                  </span>
                 }
               />
               <TooltipContent side="right" sideOffset={8}>

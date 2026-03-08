@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Plus, Play, Clock, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { QuickStartForm } from "./quick-start-form";
+import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import type { ExamProfile, Subject, ReviewSession } from "@/types/app";
 
 export const metadata = { title: "Quiz — Cerebro" };
@@ -85,9 +86,12 @@ export default async function QuizPage({
 
       {/* Subject Quick Start */}
       <section>
-        <h2 className="mb-3 text-sm font-medium text-muted-foreground uppercase tracking-wider">
-          Subject Quick Start
-        </h2>
+        <div className="mb-3 flex items-center gap-1.5">
+          <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+            Subject Quick Start
+          </h2>
+          <InfoTooltip content="Start a short quiz for one subject. Pick the number of questions and go." />
+        </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {((subjects ?? []) as Subject[]).map((subject) => {
             return (
@@ -122,9 +126,12 @@ export default async function QuizPage({
       {(recentSessions ?? []).length > 0 && (
         <section>
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Recent Sessions
-            </h2>
+            <div className="flex items-center gap-1.5">
+              <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+                Recent Sessions
+              </h2>
+              <InfoTooltip content="Resume an in-progress session or review results for completed ones." />
+            </div>
             <Link href="/dashboard/sessions" className="text-xs text-[var(--accent-blue)] hover:underline">
               View all
             </Link>
