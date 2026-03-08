@@ -19,10 +19,9 @@ import {
   BookOpen,
   Zap,
   Crown,
-  FlaskConical,
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
-import { getQuizReviewMode } from '@/lib/utils/quiz-review-mode'
+import { useActiveSession } from '@/lib/context/active-session-context'
 import { ThemeToggle } from './ThemeToggle'
 import { ExamProfileSwitcher } from './ExamProfileSwitcher'
 import {
@@ -32,7 +31,7 @@ import {
 } from '@/components/ui/tooltip'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
-import { TierBadge, type DisplayTier } from '@/components/shared/TierBadge'
+import { TierBadge } from '@/components/shared/TierBadge'
 import {
   Dialog,
   DialogContent,
@@ -66,9 +65,9 @@ function getInitials(name: string, email?: string): string {
 
 interface SidebarProps {
   isAdmin?: boolean
+  isDevMode?: boolean
   userDisplay?: { name: string; avatarUrl: string | null }
-  /** Display tier (free, pro, max, or "dev" for dev mode). */
-  tier?: UserTier | 'dev'
+  tier?: UserTier
 }
 
 function getInitialCollapsed(): boolean {
@@ -82,16 +81,15 @@ const SIDEBAR_CONTENT_PX = 'px-4'
 const SIDEBAR_ICON_BOX = 'flex h-5 w-5 shrink-0 items-center justify-center'
 const SIDEBAR_ICON_SIZE = 'h-5 w-5'
 
-export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
+export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free' }: SidebarProps) {
   const pathname = usePathname()
   const router = useRouter()
+  const { activeSession: mode } = useActiveSession()
   const [collapsed, setCollapsed] = useState(getInitialCollapsed)
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false)
   const [leaveTarget, setLeaveTarget] = useState<string>('/dashboard')
-  const mode = getQuizReviewMode(pathname)
   const displayName = userDisplay?.name ?? 'User'
   const initials = getInitials(displayName)
-  const displayTier = tier as DisplayTier
 
   function handleNavClick(
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -106,7 +104,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false)
-    router.push(leaveTarget)
+    router.push(mode === 'review' ? '/dashboard/review?exited=1' : leaveTarget)
   }
 
   function toggleCollapse() {
@@ -245,21 +243,10 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
             ) : (
               <div
                 className='flex justify-start py-2'
-                title={
-                  displayTier === 'dev'
-                    ? 'Dev'
-                    : displayTier === 'pro'
-                      ? 'Pro'
-                      : 'Max'
-                }
+                title={`${tier.charAt(0).toUpperCase() + tier.slice(1)}${isDevMode ? '*' : ''}`}
               >
                 <div className={SIDEBAR_ICON_BOX}>
-                  {displayTier === 'dev' ? (
-                    <FlaskConical
-                      className={`${SIDEBAR_ICON_SIZE} text-color-signal-amber`}
-                      strokeWidth={1.5}
-                    />
-                  ) : displayTier === 'pro' ? (
+                  {tier === 'pro' ? (
                     <Zap
                       className={`${SIDEBAR_ICON_SIZE} text-color-signal-blue`}
                       strokeWidth={1.5}
@@ -282,12 +269,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
                       className={`${SIDEBAR_ICON_SIZE} text-color-signal-amber`}
                       strokeWidth={1.5}
                     />
-                  ) : displayTier === 'dev' ? (
-                    <FlaskConical
-                      className={`${SIDEBAR_ICON_SIZE} text-color-signal-amber`}
-                      strokeWidth={1.5}
-                    />
-                  ) : displayTier === 'pro' ? (
+                  ) : tier === 'pro' ? (
                     <Zap
                       className={`${SIDEBAR_ICON_SIZE} text-color-signal-blue`}
                       strokeWidth={1.5}
@@ -299,7 +281,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
                     />
                   )}
                 </div>
-                <TierBadge tier={displayTier} size='sm' />
+                <TierBadge tier={tier} devMode={isDevMode} size='sm' />
               </div>
               {tier === 'free' && (
                 <Link
@@ -338,7 +320,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
               <Link
                 key={href}
                 href={href}
-                className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all ${
+                className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all truncate ${
                   collapsed ? 'justify-start' : ''
                 } ${
                   isActive
@@ -408,7 +390,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = 'free' }: SidebarProps) {
               ) : (
                 <Link
                   href='/dashboard/settings/developer'
-                  className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all ${
+                  className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all truncate ${
                     pathname === '/dashboard/settings/developer'
                       ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
                       : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'

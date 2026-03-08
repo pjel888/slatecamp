@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Plus, Play, ChevronRight } from "lucide-react";
@@ -7,9 +8,11 @@ import Link from "next/link";
 import { QuickStartForm } from "./quick-start-form";
 import { QuizModeCards } from "./quiz-mode-cards";
 import { InfoTooltip } from "@/components/shared/InfoTooltip";
+import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject } from "@/types/app";
 
 export const metadata = { title: "Quiz — Cerebro" };
+export const dynamic = "force-dynamic";
 
 export default async function QuizPage({
   searchParams,
@@ -21,16 +24,48 @@ export default async function QuizPage({
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
-  const { data: examProfile } = await supabase
+  await ensureProfileAndExamProfile(
+    user.id,
+    user.email,
+    user.user_metadata?.full_name ?? user.user_metadata?.name ?? ""
+  );
+
+  let examProfilesRaw = await supabase
     .from("exam_profiles")
     .select("*, board_exams(*)")
     .eq("user_id", user.id)
-    .eq("is_active", true)
-    .single();
+    .order("created_at", { ascending: true });
 
-  if (!examProfile) redirect("/onboarding");
+  let allProfiles = (examProfilesRaw.data ?? []) as ExamProfile[];
+  let examProfile: ExamProfile | null =
+    allProfiles.find((p) => p.is_active) ?? allProfiles[0] ?? null;
 
-  const ep = examProfile as ExamProfile;
+  if (allProfiles.length === 0) {
+    examProfilesRaw = await supabase
+      .from("exam_profiles")
+      .select("*, board_exams(*)")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: true });
+    allProfiles = (examProfilesRaw.data ?? []) as ExamProfile[];
+    examProfile = allProfiles[0] ?? null;
+  }
+
+  if (examProfile && !examProfile.is_active && allProfiles.length > 0) {
+    await supabase.from("exam_profiles").update({ is_active: false }).eq("user_id", user.id);
+    await supabase.from("exam_profiles").update({ is_active: true }).eq("id", allProfiles[0].id);
+    examProfile = { ...allProfiles[0], is_active: true };
+  }
+
+  if (!examProfile) {
+    return (
+      <NoExamProfilePrompt
+        title="Quiz"
+        description="Run your project's supabase/seed.sql in the Supabase SQL Editor (same project as in .env.local). That adds the ALE board exam and sample data. Then refresh this page."
+      />
+    );
+  }
+
+  const ep = examProfile;
 
   const { data: subjects } = await supabase
     .from("subjects")

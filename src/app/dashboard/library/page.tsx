@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
 import { SetBreadcrumbs } from "@/components/shared/SetBreadcrumbs";
+import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject } from "@/types/app";
 
 export const metadata = { title: "Library" };
@@ -22,7 +23,14 @@ export default async function LibraryPage() {
     .eq("is_active", true)
     .single();
 
-  if (!examProfile) redirect("/onboarding");
+  if (!examProfile) {
+    return (
+      <NoExamProfilePrompt
+        title="Library"
+        description="Browse questions by subject and question bank. Choose an exam to get started."
+      />
+    );
+  }
 
   const ep = examProfile as ExamProfile;
 
@@ -44,7 +52,7 @@ export default async function LibraryPage() {
           </p>
         </div>
         <p className="text-sm text-muted-foreground">
-          No subjects for your exam yet. Complete onboarding or check back later.
+          No subjects for your exam yet. Check back later.
         </p>
       </div>
     );

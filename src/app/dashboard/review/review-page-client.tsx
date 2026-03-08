@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, Shuffle, ClipboardList } from "lucide-react";
@@ -25,6 +26,8 @@ export function ReviewPageClient({
   masteries,
   questionCounts,
 }: ReviewPageClientProps) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [skipDisclaimer, setSkipDisclaimer] = useState(false);
   const [view, setView] = useState<View>("grid");
   const [selectedSubjectId, setSelectedSubjectId] = useState<string | null>(null);
@@ -37,6 +40,15 @@ export function ReviewPageClient({
       // ignore
     }
   }, []);
+
+  // When header/sidebar "Exit" sends ?exited=1, return to subject grid and clear URL
+  useEffect(() => {
+    if (searchParams.get("exited") === "1") {
+      setView("grid");
+      setSelectedSubjectId(null);
+      router.replace("/dashboard/review", { scroll: true });
+    }
+  }, [searchParams, router]);
 
   function startReview(subjectId: string | null) {
     setSelectedSubjectId(subjectId);

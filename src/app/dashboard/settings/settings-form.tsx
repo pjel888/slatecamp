@@ -23,7 +23,7 @@ interface Props {
 export function SettingsForm({ profile }: Props) {
   const [fullName, setFullName] = useState(profile.full_name ?? "");
   const [profession, setProfession] = useState<Profession>(
-    profile.profession as Profession
+    (profile.profession as Profession) ?? "architecture"
   );
   const [examTarget, setExamTarget] = useState(profile.exam_target ?? "");
   const [targetDate, setTargetDate] = useState(
@@ -44,9 +44,6 @@ export function SettingsForm({ profile }: Props) {
       .from("profiles")
       .update({
         full_name: fullName,
-        profession,
-        exam_target: examTarget,
-        target_exam_date: targetDate || null,
         preferred_theme: theme,
         updated_at: new Date().toISOString(),
       })

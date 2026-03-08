@@ -10,7 +10,7 @@ import {
   Library,
   Settings,
 } from "lucide-react";
-import { getQuizReviewMode } from "@/lib/utils/quiz-review-mode";
+import { useActiveSession } from "@/lib/context/active-session-context";
 import {
   Dialog,
   DialogContent,
@@ -31,9 +31,9 @@ const NAV_ITEMS = [
 export function BottomNav() {
   const pathname = usePathname();
   const router = useRouter();
+  const { activeSession: mode } = useActiveSession();
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
   const [leaveTarget, setLeaveTarget] = useState<string>("/dashboard");
-  const mode = getQuizReviewMode(pathname);
 
   function handleNavClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
     if (mode && href !== pathname) {
@@ -45,7 +45,7 @@ export function BottomNav() {
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false);
-    router.push(leaveTarget);
+    router.push(mode === "review" ? "/dashboard/review?exited=1" : leaveTarget);
   }
 
   return (

@@ -175,8 +175,8 @@ CREATE TABLE public.questions (
     explanation TEXT,                               -- WHY this is the answer (markdown)
     explanation_image_url TEXT,                     -- Diagram or photo for explanation
     
-    -- References (array of reference objects)
-    references JSONB DEFAULT '[]',
+    -- References (array of reference objects; "references" is a reserved word in SQL)
+    "references" JSONB DEFAULT '[]',
     -- Structure: [
     --   {"title": "National Building Code Sec 701", "url": null, "page": "42", "type": "code"},
     --   {"title": "Ching, Architecture: Form Space & Order", "url": null, "page": "156", "type": "book"}

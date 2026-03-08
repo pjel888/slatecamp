@@ -1,26 +1,11 @@
 -- =============================================================
 -- SEED DATA — Project Cerebro
+-- Matches DATABASE_SCHEMA.sql (no exam_domains; board_exams, subjects, topics, question_banks, questions)
+-- Run this in Supabase SQL Editor after the schema is applied.
 -- =============================================================
 
 -- =============================================================
--- 1. LEGACY: Exam Domains (kept for backward compatibility)
--- =============================================================
-INSERT INTO exam_domains (profession, name, slug, description, sort_order, icon_name) VALUES
-('architecture', 'History of Architecture', 'history-of-architecture', 'Architectural history from ancient civilizations to contemporary movements', 1, 'landmark'),
-('architecture', 'Theory of Architecture', 'theory-of-architecture', 'Design theory, principles, and architectural criticism', 2, 'lightbulb'),
-('architecture', 'Architectural Design', 'architectural-design', 'Design process, space planning, programming, and design development', 3, 'pencil-ruler'),
-('architecture', 'Building Technology', 'building-technology', 'Construction materials, methods, systems, and detailing', 4, 'brick-wall'),
-('architecture', 'Structural Engineering', 'structural-engineering', 'Structural analysis, design of steel, concrete, and timber', 5, 'hard-hat'),
-('architecture', 'Building Utilities', 'building-utilities', 'Mechanical, electrical, plumbing, fire protection, and acoustics', 6, 'plug'),
-('architecture', 'Professional Practice', 'professional-practice', 'Contracts, ethics, project management, and business of architecture', 7, 'briefcase'),
-('architecture', 'Architectural Laws', 'architectural-laws', 'BP 344, PD 1096, RA 9266, NBC, and other relevant legislation', 8, 'scale'),
-('architecture', 'Site Planning', 'site-planning', 'Site analysis, grading, landscape, environmental design', 9, 'map'),
-('architecture', 'Tropical Design', 'tropical-design', 'Climate-responsive design for tropical conditions, passive cooling, natural ventilation', 10, 'sun')
-ON CONFLICT DO NOTHING;
-
-
--- =============================================================
--- 2. BOARD EXAMS
+-- 1. BOARD EXAMS
 -- =============================================================
 INSERT INTO board_exams (id, profession, name, short_name, country, description, total_subjects, passing_score_percentage, icon_name, is_active, has_content, sort_order) VALUES
 ('be000000-0000-0000-0000-000000000001', 'Architecture', 'Architecture Licensure Exam', 'ALE', 'PH', 'The Philippine Architecture Licensure Examination administered by the Professional Regulation Commission (PRC). Covers 10 subjects spanning history, design, technology, structures, utilities, laws, and professional practice.', 10, 70.0, 'building-2', true, true, 1),
@@ -33,7 +18,7 @@ ON CONFLICT (id) DO NOTHING;
 
 
 -- =============================================================
--- 3. SUBJECTS (ALE — 10 subjects)
+-- 2. SUBJECTS (ALE — 10 subjects)
 -- =============================================================
 INSERT INTO subjects (id, board_exam_id, name, short_name, slug, description, exam_weight_percentage, icon_name, color, has_3d_workspace, sort_order) VALUES
 ('5b000000-0000-0000-0000-000000000001', 'be000000-0000-0000-0000-000000000001', 'History of Architecture', 'History', 'history-of-architecture', 'Architectural history from ancient civilizations to contemporary movements, including Philippine architecture.', 10.0, 'landmark', '#8B7355', false, 1),
@@ -50,7 +35,7 @@ ON CONFLICT (id) DO NOTHING;
 
 
 -- =============================================================
--- 4. TOPICS (3-7 per ALE subject)
+-- 3. TOPICS (3-7 per ALE subject)
 -- =============================================================
 
 -- History of Architecture
@@ -148,14 +133,13 @@ ON CONFLICT (subject_id, slug) DO NOTHING;
 
 
 -- =============================================================
--- 5. QUESTION BANK (with board_exam_id)
+-- 4. QUESTION BANK (board_exam_id only; no profession column)
 -- =============================================================
-INSERT INTO question_banks (id, title, description, profession, board_exam_id, is_official, status, question_count)
+INSERT INTO question_banks (id, title, description, board_exam_id, is_official, status, question_count)
 VALUES (
     'a0000000-0000-0000-0000-000000000001',
     'ALE Architecture Fundamentals',
     'Official starter pack covering core architecture board exam topics.',
-    'architecture',
     'be000000-0000-0000-0000-000000000001',
     true,
     'published',
@@ -166,17 +150,16 @@ VALUES (
 
 
 -- =============================================================
--- 6. SAMPLE QUESTIONS (with subject_id + rich content)
+-- 5. SAMPLE QUESTIONS (subject_id + topic_id; no exam_domain_id)
 -- =============================================================
 INSERT INTO questions (
-    bank_id, exam_domain_id, subject_id, topic_id,
+    bank_id, subject_id, topic_id,
     question_type, prompt, choices, correct_answer,
     explanation, is_official, difficulty, tags,
     fun_facts, "references"
 ) VALUES
 (
     'a0000000-0000-0000-0000-000000000001',
-    (SELECT id FROM exam_domains WHERE slug = 'history-of-architecture'),
     '5b000000-0000-0000-0000-000000000001',
     (SELECT id FROM topics WHERE slug = 'classical-architecture' AND subject_id = '5b000000-0000-0000-0000-000000000001'),
     'mcq',
@@ -192,7 +175,6 @@ INSERT INTO questions (
 ),
 (
     'a0000000-0000-0000-0000-000000000001',
-    (SELECT id FROM exam_domains WHERE slug = 'history-of-architecture'),
     '5b000000-0000-0000-0000-000000000001',
     (SELECT id FROM topics WHERE slug = 'classical-architecture' AND subject_id = '5b000000-0000-0000-0000-000000000001'),
     'mcq',
@@ -208,7 +190,6 @@ INSERT INTO questions (
 ),
 (
     'a0000000-0000-0000-0000-000000000001',
-    (SELECT id FROM exam_domains WHERE slug = 'building-technology'),
     '5b000000-0000-0000-0000-000000000004',
     (SELECT id FROM topics WHERE slug = 'construction-methods' AND subject_id = '5b000000-0000-0000-0000-000000000004'),
     'mcq',
@@ -224,7 +205,6 @@ INSERT INTO questions (
 ),
 (
     'a0000000-0000-0000-0000-000000000001',
-    (SELECT id FROM exam_domains WHERE slug = 'structural-engineering'),
     '5b000000-0000-0000-0000-000000000005',
     (SELECT id FROM topics WHERE slug = 'structural-analysis' AND subject_id = '5b000000-0000-0000-0000-000000000005'),
     'mcq',
@@ -240,8 +220,7 @@ INSERT INTO questions (
 ),
 (
     'a0000000-0000-0000-0000-000000000001',
-    (SELECT id FROM exam_domains WHERE slug = 'professional-practice'),
-    '5b000000-0000-0000-0000-000000000007',
+    '5b000000-0000-0000-0000-000000000008',
     (SELECT id FROM topics WHERE slug = 'ra-9266-architecture-act' AND subject_id = '5b000000-0000-0000-0000-000000000008'),
     'mcq',
     'Under RA 9266 (Architecture Act of 2004), what is the minimum CPD units required for license renewal?',

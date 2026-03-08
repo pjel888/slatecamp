@@ -3,6 +3,45 @@
 import { createClient } from '@/lib/supabase/server';
 import type { Question } from '@/types/app';
 
+/**
+ * Ensures a profile row exists for the given user.
+ * Supabase has no handle_new_user trigger, so we upsert on first access.
+ */
+export async function ensureProfile(userId: string, email?: string, fullName?: string) {
+  const supabase = await createClient();
+
+  const { data: existing } = await supabase
+    .from('profiles')
+    .select('id')
+    .eq('id', userId)
+    .single();
+
+  if (existing) return;
+
+  await supabase.from('profiles').insert({
+    id: userId,
+    email: email ?? '',
+    full_name: fullName ?? null,
+  });
+}
+
+/**
+ * Marks onboarding as complete (on exam_profiles; profiles table has no onboarding_completed).
+ * Used when a user wants to skip the entire onboarding flow.
+ */
+export async function skipOnboardingEntirely(userId: string) {
+  const supabase = await createClient();
+
+  await supabase
+    .from('exam_profiles')
+    .update({
+      onboarding_completed: true,
+      onboarding_step: 'onboarding_completed',
+      updated_at: new Date().toISOString(),
+    })
+    .eq('user_id', userId);
+}
+
 export async function getDiagnosticQuestions(
   boardExamId: string,
   count: number = 10
@@ -267,13 +306,16 @@ export async function skipDiagnosticAndComplete(
     .update({ is_active: false })
     .eq('user_id', userId);
 
-  // Create exam profile
-  const { data: examProfile } = await supabase
+  // Normalize target_exam_date: DATE column expects YYYY-MM-DD or null
+  const targetDate =
+    examDate && examDate.trim() ? examDate.trim().slice(0, 10) : null;
+
+  const { data: examProfile, error: insertError } = await supabase
     .from('exam_profiles')
     .insert({
       user_id: userId,
       board_exam_id: boardExamId,
-      target_exam_date: examDate || null,
+      target_exam_date: targetDate,
       is_active: true,
       onboarding_completed: true,
       onboarding_step: 'onboarding_completed',
@@ -281,7 +323,14 @@ export async function skipDiagnosticAndComplete(
     .select('id')
     .single();
 
-  if (!examProfile) throw new Error('Failed to create exam profile');
+  if (insertError) {
+    throw new Error(
+      insertError.message ?? 'Failed to create exam profile'
+    );
+  }
+  if (!examProfile) {
+    throw new Error('Failed to create exam profile');
+  }
 
   await supabase
     .from('profiles')

@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ReviewPageClient } from "./review-page-client";
+import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject, SubjectMastery } from "@/types/app";
 
 export const metadata = { title: "Review — Cerebro" };
@@ -17,7 +18,14 @@ export default async function ReviewPage() {
     .eq("is_active", true)
     .single();
 
-  if (!examProfile) redirect("/onboarding");
+  if (!examProfile) {
+    return (
+      <NoExamProfilePrompt
+        title="Review"
+        description="Doomscroll through practice questions. Choose an exam to get started."
+      />
+    );
+  }
 
   const ep = examProfile as ExamProfile;
 

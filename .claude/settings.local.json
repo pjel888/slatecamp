@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc --noEmit)",
+      "Bash(npm run build)",
+      "Bash(xargs grep -l \"getAdminAwareProfile\")",
+      "Bash(npm run typecheck)",
+      "Bash(npm run type-check)",
+      "WebFetch(domain:supabase.com)"
+    ]
+  }
+}

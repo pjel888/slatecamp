@@ -1,4 +1,6 @@
 import { DEMO_USER } from "./config";
+import type { UserTier } from "@/types/app";
+import { TIER_CAPABILITIES } from "@/lib/dev/dev-mode";
 
 const uid = DEMO_USER.id;
 const now = new Date().toISOString();
@@ -15,29 +17,39 @@ function daysFromNow(n: number): string {
   return d.toISOString();
 }
 
-export const DEMO_PROFILE = {
-  id: uid,
-  email: DEMO_USER.email,
-  full_name: "Philip Lewis",
-  avatar_url: null,
-  tier: "max" as const,
-  profession: "architecture",
-  exam_target: "ALE 2026",
-  target_exam_date: "2026-09-15",
-  stripe_customer_id: null,
-  payrex_customer_id: null,
-  stripe_subscription_id: null,
-  ai_tokens_used: 247,
-  ai_tokens_limit: 999999,
-  daily_streak: 14,
-  longest_streak: 21,
-  last_active_at: now,
-  preferred_theme: "system",
-  onboarding_completed: true,
-  is_admin: true,
-  created_at: "2026-01-15T08:00:00Z",
-  updated_at: now,
-};
+/**
+ * Build a demo profile for the given tier. Adjusts ai_tokens_limit based
+ * on the tier capabilities so local-mode Free/Pro feel realistic.
+ */
+export function getDemoProfile(tier: UserTier = "max") {
+  const caps = TIER_CAPABILITIES[tier];
+  return {
+    id: uid,
+    email: DEMO_USER.email,
+    full_name: "Philip Lewis",
+    avatar_url: null,
+    tier,
+    profession: "architecture" as const,
+    exam_target: "ALE 2026",
+    target_exam_date: "2026-09-15",
+    stripe_customer_id: null,
+    payrex_customer_id: null,
+    stripe_subscription_id: null,
+    ai_tokens_used: 247,
+    ai_tokens_limit: caps.aiTokens === Infinity ? 999999 : caps.aiTokens,
+    daily_streak: 14,
+    longest_streak: 21,
+    last_active_at: now,
+    preferred_theme: "system",
+    onboarding_completed: true,
+    is_admin: true,
+    created_at: "2026-01-15T08:00:00Z",
+    updated_at: now,
+  };
+}
+
+/** Default demo profile — max tier for backward compat */
+export const DEMO_PROFILE = getDemoProfile("max");
 
 export const DEMO_EXAM_DOMAINS = [
   { id: "dom-1", profession: "architecture", name: "Structural Systems", slug: "structural-systems", description: "Trusses, beams, foundations", parent_domain_id: null, sort_order: 1, icon_name: null, created_at: "2026-01-01T00:00:00Z" },
@@ -327,9 +339,9 @@ function enrichQuestions() {
   });
 }
 
-export function getDemoDataForTable(table: string): unknown[] {
+export function getDemoDataForTable(table: string, tier?: UserTier): unknown[] {
   switch (table) {
-    case "profiles": return [DEMO_PROFILE];
+    case "profiles": return [tier ? getDemoProfile(tier) : DEMO_PROFILE];
     case "board_exams": return DEMO_BOARD_EXAMS;
     case "exam_profiles": return DEMO_EXAM_PROFILES;
     case "subjects": return DEMO_SUBJECTS;

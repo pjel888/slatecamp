@@ -307,9 +307,7 @@ export interface QuestionBank {
   creator_id: string | null;
   title: string;
   description: string | null;
-  profession: string;
   board_exam_id: string | null;
-  exam_domain_id: string | null;
   is_official: boolean;
   is_marketplace: boolean;
   price_cents: number;
@@ -322,6 +320,10 @@ export interface QuestionBank {
   tags: string[];
   created_at: string;
   updated_at: string;
+  /** Present only when joined or in demo; schema has no profession on question_banks */
+  profession?: string;
+  /** Deprecated; schema uses board_exam_id only */
+  exam_domain_id?: string | null;
 }
 
 export interface UserResponse {

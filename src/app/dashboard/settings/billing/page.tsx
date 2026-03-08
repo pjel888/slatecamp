@@ -46,7 +46,7 @@ export default async function BillingPage() {
   const profile = await getAdminAwareProfile();
   if (!profile) redirect("/login");
 
-  const currentTier = profile.tier;
+  const currentTier = profile.effectiveTier;
 
   return (
     <div className="space-y-8">

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import Image from 'next/image'
+import { useActiveSession } from '@/lib/context/active-session-context'
 import { fetchReviewQuestions, logReviewInteraction } from './actions'
 import { AnswerResultStrip } from '@/components/quiz/answer-result-strip'
 import { ConfidenceTap } from '@/components/quiz/ConfidenceTap'
@@ -33,6 +34,13 @@ export function ReviewFeed({
   initialSubjectId,
   initialQuestions,
 }: ReviewFeedProps) {
+  const { setActiveSession } = useActiveSession()
+
+  useEffect(() => {
+    setActiveSession('review')
+    return () => setActiveSession(null)
+  }, [setActiveSession])
+
   const [questions, setQuestions] = useState<Question[]>(
     initialQuestions as Question[],
   )
