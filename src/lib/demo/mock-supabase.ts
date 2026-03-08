@@ -49,6 +49,7 @@ function matchesFilters(row: Row, filters: Filter[]): boolean {
     switch (op) {
       case "eq": return fieldVal === val;
       case "neq": return fieldVal !== val;
+      case "in": return Array.isArray(val) && val.includes(fieldVal);
       case "lt": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal < val : Number(fieldVal) < Number(val);
       case "lte": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal <= val : Number(fieldVal) <= Number(val);
       case "gt": return typeof fieldVal === "string" && typeof val === "string" ? fieldVal > val : Number(fieldVal) > Number(val);
@@ -91,6 +92,7 @@ class MockQueryBuilder {
 
   eq(col: string, val: unknown) { this.filters.push({ col, op: "eq", val }); return this; }
   neq(col: string, val: unknown) { this.filters.push({ col, op: "neq", val }); return this; }
+  in(col: string, val: unknown) { this.filters.push({ col, op: "in", val }); return this; }
   lt(col: string, val: unknown) { this.filters.push({ col, op: "lt", val }); return this; }
   lte(col: string, val: unknown) { this.filters.push({ col, op: "lte", val }); return this; }
   gt(col: string, val: unknown) { this.filters.push({ col, op: "gt", val }); return this; }

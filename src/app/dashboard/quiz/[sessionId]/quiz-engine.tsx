@@ -5,8 +5,19 @@ import { useRouter } from "next/navigation";
 import { submitAnswer, completeSession, markQuestionPresented } from "../actions";
 import { AnswerResultStrip } from "@/components/quiz/answer-result-strip";
 import { Button } from "@/components/ui/button";
-import { Check, X, ChevronRight } from "lucide-react";
+import { Check, X, ChevronRight, ClipboardList, Play } from "lucide-react";
 import type { ReviewSession, SessionQuestion, Question, Choice } from "@/types/app";
+
+const SESSION_TYPE_LABELS: Record<string, string> = {
+  subject_quick: "Quick Start",
+  custom_compiled: "Custom Session",
+  srs_review: "SRS Review",
+  ai_adaptive: "AI Adaptive",
+  retake: "Retake",
+  topic_drill: "Topic Drill",
+  "3d_model_quiz": "3D Quiz",
+  weak_areas: "Weak Areas",
+};
 
 /** Compare selected choice IDs to question correct_answer (single id or comma-separated). */
 function isSelectionCorrect(selectedIds: string[], correctAnswer: string): boolean {
@@ -23,6 +34,7 @@ interface QuizEngineProps {
 
 export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
   const router = useRouter();
+  const [showIntro, setShowIntro] = useState(true);
   const [currentIdx, setCurrentIdx] = useState(() => {
     const firstUnanswered = sessionQuestions.findIndex((sq) => !sq.answered_at);
     return firstUnanswered >= 0 ? firstUnanswered : 0;
@@ -135,6 +147,46 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
     questionStartRef.current = Date.now();
   }
 
+  if (showIntro) {
+    const sessionLabel = session.name ?? SESSION_TYPE_LABELS[session.session_type] ?? "Quiz";
+    const subjectCount = session.config?.subjects?.length ?? 0;
+    return (
+      <div className="mx-auto flex max-w-[520px] flex-col items-center rounded-2xl border border-border bg-card p-8 shadow-sm">
+        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-[var(--amber)]/10 text-[var(--amber)]">
+          <ClipboardList className="h-12 w-12" strokeWidth={1.5} />
+        </div>
+        <h1 className="mt-6 text-xl font-semibold text-foreground">Good luck in taking this exam!</h1>
+        <p className="mt-2 text-center text-sm text-muted-foreground">
+          You’re about to start your session. Here’s a quick recap.
+        </p>
+        <div className="mt-6 w-full space-y-3 rounded-xl border border-border/60 bg-muted/20 px-4 py-4">
+          <div className="flex justify-between text-sm">
+            <span className="text-muted-foreground">Session</span>
+            <span className="font-medium text-foreground">{sessionLabel}</span>
+          </div>
+          <div className="flex justify-between text-sm">
+            <span className="text-muted-foreground">Questions</span>
+            <span className="font-medium text-foreground">{sessionQuestions.length}</span>
+          </div>
+          {subjectCount > 0 && (
+            <div className="flex justify-between text-sm">
+              <span className="text-muted-foreground">Subjects</span>
+              <span className="font-medium text-foreground">{subjectCount}</span>
+            </div>
+          )}
+        </div>
+        <Button
+          size="lg"
+          className="mt-8 h-12 gap-2 px-8 text-base"
+          onClick={() => setShowIntro(false)}
+        >
+          <Play className="h-5 w-5" strokeWidth={1.5} />
+          Start test
+        </Button>
+      </div>
+    );
+  }
+
   if (!sq || !question) {
     return (
       <div className="flex h-[60vh] items-center justify-center">
@@ -240,30 +292,32 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
 
         </div>
 
-        {/* Fixed action bar — same position every time, no layout shift */}
+        {/* Fixed action bar — both buttons visible; Check disabled when no selection or after answer; Next disabled until after Check */}
         <div className="shrink-0 border-t border-border bg-card px-6 py-4">
-          {!isAnswered ? (
-            <>
-              <Button
-                onClick={handleCheckAnswer}
-                disabled={!canCheckAnswer || isSubmitting}
-                className="h-12 w-full gap-2 text-base font-medium"
-              >
-                <Check className="h-5 w-5" strokeWidth={2} />
-                {isSubmitting ? "Checking…" : "Check Answer"}
-              </Button>
-              {selectedChoiceIds.length > 0 && (
-                <p className="mt-2 text-center text-xs text-muted-foreground">
-                  {isMultiSelect ? "You can select multiple options." : "Tap an option to change your answer."}
-                </p>
-              )}
-            </>
-          ) : (
-            <Button onClick={handleNext} className="h-12 w-full gap-2 text-base font-medium">
-              {currentIdx + 1 >= totalQuestions ? "View Results" : "Next Question"}
-              <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
-            </Button>
+          {selectedChoiceIds.length > 0 && !isAnswered && (
+            <p className="mb-2 text-center text-xs text-muted-foreground">
+              {isMultiSelect ? "You can select multiple options." : "Tap an option to change your answer."}
+            </p>
           )}
+          <div className="flex justify-end gap-2">
+            <Button
+              onClick={handleCheckAnswer}
+              disabled={!canCheckAnswer || isSubmitting || isAnswered}
+              className="h-11 gap-2 text-sm font-medium"
+              variant="outline"
+            >
+              <Check className="h-4 w-4" strokeWidth={2} />
+              {isSubmitting ? "Checking…" : "Check Answer"}
+            </Button>
+            <Button
+              onClick={handleNext}
+              disabled={!isAnswered}
+              className="h-11 gap-2 text-sm font-medium"
+            >
+              {currentIdx + 1 >= totalQuestions ? "View Results" : "Next Question"}
+              <ChevronRight className="h-4 w-4" strokeWidth={1.5} />
+            </Button>
+          </div>
         </div>
       </div>
 

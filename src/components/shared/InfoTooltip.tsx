@@ -1,41 +1,38 @@
 "use client";
 
-import { HelpCircle } from "lucide-react";
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import { StandardInfoPopover } from "./StandardInfoPopover";
 
 interface InfoTooltipProps {
-  /** Tooltip content (plain text or JSX). */
+  /** Tooltip content (plain text or JSX). Uses same card UI as SRS/Quiz mode info. */
   content: React.ReactNode;
+  /** Optional title. */
+  title?: string;
   /** Optional side. Default top. */
   side?: "top" | "right" | "bottom" | "left";
-  /** Optional class for the icon button. */
+  /** Optional align. */
+  align?: "start" | "center" | "end";
+  /** Optional class for the trigger icon. */
   className?: string;
 }
 
 /**
- * Question mark icon that shows an interactive tooltip on hover.
- * Use next to card titles and labels (e.g. Exam Countdown, Current Streak).
+ * Question mark icon that opens the standard info popover (SRS-style card).
+ * Use next to card titles and labels for consistent UX across dashboard, analytics, quiz, library.
  */
-export function InfoTooltip({ content, side = "top", className }: InfoTooltipProps) {
+export function InfoTooltip({
+  content,
+  title,
+  side = "top",
+  align = "center",
+  className,
+}: InfoTooltipProps) {
   return (
-    <Tooltip>
-      <TooltipTrigger
-        render={
-          <button
-            type="button"
-            aria-label="More info"
-            className={
-              className ??
-              "inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            }
-          >
-            <HelpCircle className="h-4 w-4" strokeWidth={1.5} />
-          </button>
-        }
-      />
-      <TooltipContent side={side} sideOffset={6} className="max-w-[260px]">
-        {content}
-      </TooltipContent>
-    </Tooltip>
+    <StandardInfoPopover
+      content={content}
+      title={title}
+      side={side}
+      align={align}
+      className={className}
+    />
   );
 }
