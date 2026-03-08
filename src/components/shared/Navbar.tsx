@@ -21,11 +21,15 @@ import {
   LogOut,
   Menu,
   Shield,
+  ClipboardList,
+  BookOpen,
 } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/quiz", label: "Quiz", icon: Brain },
+  { href: "/dashboard/sessions", label: "Sessions", icon: ClipboardList },
+  { href: "/dashboard/review", label: "Review", icon: BookOpen },
   { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/dashboard/library", label: "Library", icon: Library },
   { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },

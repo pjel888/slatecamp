@@ -2,12 +2,12 @@ import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Plus, Play, Clock, ChevronRight } from "lucide-react";
+import { Plus, Play, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { QuickStartForm } from "./quick-start-form";
+import { QuizModeCards } from "./quiz-mode-cards";
 import { InfoTooltip } from "@/components/shared/InfoTooltip";
-import type { ExamProfile, Subject, ReviewSession } from "@/types/app";
+import type { ExamProfile, Subject } from "@/types/app";
 
 export const metadata = { title: "Quiz — Cerebro" };
 
@@ -37,14 +37,6 @@ export default async function QuizPage({
     .select("*")
     .eq("board_exam_id", ep.board_exam_id)
     .order("sort_order");
-
-  const { data: recentSessions } = await supabase
-    .from("review_sessions")
-    .select("*")
-    .eq("user_id", user.id)
-    .eq("exam_profile_id", ep.id)
-    .order("created_at", { ascending: false })
-    .limit(5);
 
   // If quick start mode with a subject
   if (params.quick === "true" && params.subject) {
@@ -84,6 +76,9 @@ export default async function QuizPage({
         </Link>
       </div>
 
+      {/* Quiz Mode — SRS Review and others with rich info popovers */}
+      <QuizModeCards />
+
       {/* Subject Quick Start */}
       <section>
         <div className="mb-3 flex items-center gap-1.5">
@@ -121,55 +116,6 @@ export default async function QuizPage({
           })}
         </div>
       </section>
-
-      {/* Recent Sessions */}
-      {(recentSessions ?? []).length > 0 && (
-        <section>
-          <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                Recent Sessions
-              </h2>
-              <InfoTooltip content="Resume an in-progress session or review results for completed ones." />
-            </div>
-            <Link href="/dashboard/sessions" className="text-xs text-[var(--accent-blue)] hover:underline">
-              View all
-            </Link>
-          </div>
-          <div className="space-y-2">
-            {(recentSessions as ReviewSession[]).map((s) => (
-              <Card key={s.id} className="transition-shadow hover:shadow-md">
-                <CardContent className="flex items-center justify-between p-4">
-                  <div className="space-y-0.5">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-medium text-foreground">
-                        {s.name ?? s.session_type.replace(/_/g, " ")}
-                      </span>
-                      <Badge variant="secondary" className="text-xs capitalize">
-                        {s.status}
-                      </Badge>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <span>{new Date(s.created_at).toLocaleDateString()}</span>
-                      <span>{s.total_questions} Qs</span>
-                    </div>
-                  </div>
-                  {s.score_percentage != null && (
-                    <span className="text-lg font-semibold font-mono text-foreground">
-                      {Math.round(s.score_percentage)}%
-                    </span>
-                  )}
-                  <Link href={s.status === "completed" ? `/dashboard/quiz/${s.id}/summary` : `/dashboard/quiz/${s.id}`}>
-                    <Button variant="outline" size="sm">
-                      {s.status === "completed" ? "Review" : "Resume"}
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      )}
     </div>
   );
 }

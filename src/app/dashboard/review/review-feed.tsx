@@ -17,7 +17,8 @@ function isSelectionCorrect(selectedIds: string[], correctAnswer: string): boole
 interface ReviewFeedProps {
   examProfileId: string;
   subjects: Subject[];
-  initialSubjectId: string | null;
+  /** Subject to filter by, or null/undefined for random from all subjects. */
+  initialSubjectId?: string | null;
   initialQuestions: Question[];
 }
 
@@ -33,7 +34,7 @@ export function ReviewFeed({
   const [selectedChoiceIds, setSelectedChoiceIds] = useState<string[]>([]);
   /** After "Check Answer", we store result for this question. */
   const [answeredResult, setAnsweredResult] = useState<{ correct: boolean } | null>(null);
-  const [subjectFilter, setSubjectFilter] = useState<string | null>(initialSubjectId);
+  const [subjectFilter, setSubjectFilter] = useState<string | null>(initialSubjectId ?? null);
   const [cursor, setCursor] = useState<string | null>(
     initialQuestions.length > 0
       ? initialQuestions[initialQuestions.length - 1].created_at
@@ -41,6 +42,22 @@ export function ReviewFeed({
   );
   const [loadingMore, setLoadingMore] = useState(false);
   const questionStartTime = useRef(Date.now());
+  const hasFetchedInitial = useRef(false);
+
+  // When mounted with no initial questions (e.g. from review landing flow), fetch first page
+  useEffect(() => {
+    if (hasFetchedInitial.current || !examProfileId) return;
+    if (questions.length > 0) return;
+    hasFetchedInitial.current = true;
+    fetchReviewQuestions({
+      examProfileId,
+      subjectId: initialSubjectId ?? undefined,
+      limit: 10,
+    }).then((r) => {
+      setQuestions((r.questions ?? []) as Question[]);
+      setCursor(r.nextCursor);
+    });
+  }, [examProfileId, initialSubjectId]);
 
   const currentQuestion = questions[currentIndex] as Question | undefined;
   const isAnswered = answeredResult !== null;

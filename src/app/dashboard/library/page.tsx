@@ -1,11 +1,10 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { ShoppingBag, Star } from "lucide-react";
-import type { QuestionBank } from "@/types/app";
+import { BookOpen } from "lucide-react";
+import { SetBreadcrumbs } from "@/components/shared/SetBreadcrumbs";
+import type { ExamProfile, Subject } from "@/types/app";
 
 export const metadata = { title: "Library" };
 
@@ -16,74 +15,90 @@ export default async function LibraryPage() {
   } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
-  const { data: myBanks } = await supabase
-    .from("question_banks")
-    .select("*")
-    .or(`creator_id.eq.${user.id},is_official.eq.true`)
-    .order("updated_at", { ascending: false });
+  const { data: examProfile } = await supabase
+    .from("exam_profiles")
+    .select("id, board_exam_id")
+    .eq("user_id", user.id)
+    .eq("is_active", true)
+    .single();
 
-  return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between">
+  if (!examProfile) redirect("/onboarding");
+
+  const ep = examProfile as ExamProfile;
+
+  const { data: subjects } = await supabase
+    .from("subjects")
+    .select("*")
+    .eq("board_exam_id", ep.board_exam_id)
+    .order("sort_order");
+
+  const subjectList = (subjects ?? []) as Subject[];
+
+  if (subjectList.length === 0) {
+    return (
+      <div className="space-y-8">
         <div>
           <h1 className="text-2xl font-semibold text-foreground">Library</h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            Your question banks and marketplace.
+            Browse questions by subject and question bank.
           </p>
         </div>
-        <Link href="/dashboard/library/marketplace">
-          <Button variant="outline" size="sm">
-            <ShoppingBag className="mr-2 h-4 w-4" />
-            Marketplace
-          </Button>
-        </Link>
+        <p className="text-sm text-muted-foreground">
+          No subjects for your exam yet. Complete onboarding or check back later.
+        </p>
+      </div>
+    );
+  }
+
+  const { data: countRows } = await supabase
+    .from("questions")
+    .select("subject_id")
+    .in("subject_id", subjectList.map((s) => s.id))
+    .eq("status", "published");
+
+  const countBySubject = new Map<string, number>();
+  for (const row of countRows ?? []) {
+    const sid = (row as { subject_id: string }).subject_id;
+    countBySubject.set(sid, (countBySubject.get(sid) ?? 0) + 1);
+  }
+
+  return (
+    <div className="space-y-8">
+      <SetBreadcrumbs items={[{ href: "/dashboard/library", label: "Library" }]} />
+      <div>
+        <h1 className="text-2xl font-semibold text-foreground">Library</h1>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Browse questions by subject and question bank.
+        </p>
       </div>
 
-      {/* Question Banks */}
-      <div>
-        <h2 className="mb-4 text-base font-medium text-foreground">
-          Question Banks
-        </h2>
-        {(myBanks as QuestionBank[] | null)?.length ? (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {(myBanks as QuestionBank[]).map((bank) => (
-              <Card key={bank.id} className="transition-all hover:shadow-md">
-                <CardHeader className="pb-3">
-                  <div className="flex items-start justify-between">
-                    <CardTitle className="text-sm font-medium">
-                      {bank.title}
-                    </CardTitle>
-                    {bank.is_official && (
-                      <Badge variant="secondary" className="text-[10px]">
-                        Official
-                      </Badge>
-                    )}
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {subjectList.map((subject) => {
+          const color = subject.color ?? "#86868B";
+          const qCount = countBySubject.get(subject.id) ?? 0;
+          return (
+            <Link key={subject.id} href={`/dashboard/library/subject/${subject.id}`}>
+              <Card className="h-full transition-shadow hover:shadow-md">
+                <CardContent className="flex items-center gap-4 p-4">
+                  <div
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl"
+                    style={{ backgroundColor: `${color}15` }}
+                  >
+                    <BookOpen className="h-6 w-6" style={{ color }} strokeWidth={1.5} />
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="line-clamp-2 text-xs text-muted-foreground">
-                    {bank.description ?? "No description"}
-                  </p>
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">
-                      {bank.question_count} questions
-                    </span>
-                    {bank.average_rating > 0 && (
-                      <span className="flex items-center gap-1 text-xs text-[var(--color-result-gold)]">
-                        <Star className="h-3 w-3 fill-current" />
-                        {bank.average_rating.toFixed(1)}
-                      </span>
-                    )}
+                  <div className="min-w-0 flex-1">
+                    <p className="font-medium text-foreground">
+                      {subject.short_name ?? subject.name}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {qCount} question{qCount !== 1 ? "s" : ""}
+                    </p>
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        ) : (
-          <p className="text-sm text-muted-foreground">
-            No question banks yet. Browse the marketplace to get started.
-          </p>
-        )}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

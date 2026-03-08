@@ -1,16 +1,11 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { ReviewFeed } from "./review-feed";
-import type { ExamProfile, Subject } from "@/types/app";
+import { ReviewPageClient } from "./review-page-client";
+import type { ExamProfile, Subject, SubjectMastery } from "@/types/app";
 
-export const metadata = { title: "Review Mode — Cerebro" };
+export const metadata = { title: "Review — Cerebro" };
 
-export default async function ReviewPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ subject?: string }>;
-}) {
-  const params = await searchParams;
+export default async function ReviewPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login");
@@ -24,25 +19,37 @@ export default async function ReviewPage({
 
   if (!examProfile) redirect("/onboarding");
 
+  const ep = examProfile as ExamProfile;
+
   const { data: subjects } = await supabase
     .from("subjects")
     .select("*")
-    .eq("board_exam_id", (examProfile as ExamProfile).board_exam_id)
+    .eq("board_exam_id", ep.board_exam_id)
     .order("sort_order");
 
-  const { data: initialQuestions } = await supabase
-    .from("questions")
+  const { data: mast } = await supabase
+    .from("subject_mastery")
     .select("*")
-    .eq("status", "published")
-    .order("created_at", { ascending: false })
-    .limit(5);
+    .eq("user_id", user.id)
+    .eq("exam_profile_id", ep.id);
+  const masteries = (mast ?? []) as SubjectMastery[];
+
+  const questionCounts: Record<string, number> = {};
+  for (const s of (subjects ?? []) as Subject[]) {
+    const { count } = await supabase
+      .from("questions")
+      .select("id", { count: "exact", head: true })
+      .eq("subject_id", s.id)
+      .eq("status", "published");
+    questionCounts[s.id] = count ?? 0;
+  }
 
   return (
-    <ReviewFeed
-      examProfileId={(examProfile as ExamProfile).id}
+    <ReviewPageClient
+      examProfileId={ep.id}
       subjects={(subjects ?? []) as Subject[]}
-      initialSubjectId={params.subject ?? null}
-      initialQuestions={initialQuestions ?? []}
+      masteries={masteries}
+      questionCounts={questionCounts}
     />
   );
 }

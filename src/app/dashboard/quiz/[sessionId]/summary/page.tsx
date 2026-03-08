@@ -3,9 +3,17 @@ import { redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, X, Clock, RotateCcw, ArrowLeft, ChevronRight } from "lucide-react";
+import { Check, X, Clock, ArrowLeft, ChevronRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
-import type { ReviewSession, SessionQuestion, Question } from "@/types/app";
+import type { ReviewSession, SessionQuestion, Question, Choice } from "@/types/app";
+
+/** Normalize stored choice id (e.g. "a" or "Q11-A") to lowercase for matching. */
+function normalizeChoiceIds(value: string | null | undefined): Set<string> {
+  if (!value?.trim()) return new Set();
+  return new Set(
+    value.split(",").map((s) => s.trim().replace(/^.*-/, "").toLowerCase())
+  );
+}
 
 export const metadata = { title: "Session Summary — Cerebro" };
 
@@ -37,7 +45,6 @@ export default async function SessionSummaryPage({
     .order("question_number");
 
   const sqs = (sessionQuestions ?? []) as SessionQuestion[];
-  const wrongAnswers = sqs.filter((sq) => sq.is_correct === false);
 
   const totalTimeMinutes = Math.round((s.total_time_ms ?? 0) / 60000);
   const avgTimeSeconds = s.avg_response_time_ms ? Math.round(s.avg_response_time_ms / 1000) : 0;
@@ -114,27 +121,96 @@ export default async function SessionSummaryPage({
         </Card>
       )}
 
-      {/* Wrong Answers */}
-      {wrongAnswers.length > 0 && (
+      {/* Question Review — always show all questions so the user can review their answers */}
+      {sqs.length > 0 && (
         <Card>
           <CardHeader>
-            <CardTitle className="text-sm">Questions to Review ({wrongAnswers.length})</CardTitle>
+            <CardTitle className="text-sm">Question Review ({sqs.length})</CardTitle>
+            <p className="text-xs text-muted-foreground">
+              Review each question, the options, and your answer.
+            </p>
           </CardHeader>
           <CardContent>
-            <div className="space-y-3">
-              {wrongAnswers.slice(0, 10).map((sq) => {
+            <div className="space-y-6">
+              {sqs.map((sq, index) => {
                 const q = sq.questions as Question | undefined;
+                const choices = (q?.choices as Choice[] | null) ?? [];
+                const selectedIds = normalizeChoiceIds(sq.selected_answer);
+                const correctIds = normalizeChoiceIds(q?.correct_answer);
+                const isCorrect = sq.is_correct === true;
                 return (
-                  <div key={sq.id} className="rounded-lg border border-border p-3">
-                    <p className="text-sm text-foreground line-clamp-2">{q?.prompt}</p>
-                    <div className="mt-2 flex gap-2">
-                      <Badge variant="destructive" className="text-xs">
-                        Your: {sq.selected_answer?.toUpperCase()}
-                      </Badge>
-                      <Badge className="text-xs bg-[var(--success)] text-white">
-                        Correct: {q?.correct_answer?.toUpperCase()}
-                      </Badge>
+                  <div
+                    key={sq.id}
+                    className={`rounded-lg border p-4 ${
+                      isCorrect ? "border-border" : "border-[var(--color-signal-red)]/40"
+                    }`}
+                  >
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="text-xs font-mono text-muted-foreground">
+                        Question {index + 1}
+                      </span>
+                      {isCorrect ? (
+                        <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-[var(--color-signal-green)]">
+                          <CheckCircle2 className="h-3 w-3" strokeWidth={1.5} />
+                          Correct
+                        </span>
+                      ) : (
+                        <Badge variant="destructive" className="text-[10px]">
+                          Incorrect
+                        </Badge>
+                      )}
                     </div>
+                    <p className="text-sm font-medium text-foreground">{q?.prompt}</p>
+                    <p className="mt-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                      Options
+                    </p>
+                    <ul className="mt-2 space-y-2">
+                      {choices.map((choice) => {
+                        const choiceIdLower = choice.id.toLowerCase();
+                        const isUser = selectedIds.has(choiceIdLower);
+                        const isCorrectChoice = correctIds.has(choiceIdLower);
+                        return (
+                          <li
+                            key={choice.id}
+                            className={`flex items-start gap-2 rounded-lg border px-3 py-2.5 ${
+                              isCorrectChoice
+                                ? "border-[var(--color-signal-green)] bg-[var(--color-signal-green)]/5"
+                                : isUser
+                                  ? "border-[var(--color-signal-red)] bg-[var(--color-signal-red)]/5"
+                                  : "border-border/60 bg-muted/20"
+                            }`}
+                          >
+                            <span className="mt-0.5 shrink-0 text-xs font-mono text-muted-foreground">
+                              {choice.id.toUpperCase()}.
+                            </span>
+                            <span className="min-w-0 flex-1 text-sm text-foreground">
+                              {choice.text}
+                            </span>
+                            <div className="flex shrink-0 flex-wrap items-center gap-1">
+                              {isUser && (
+                                <Badge variant="destructive" className="text-[10px]">
+                                  Your answer
+                                </Badge>
+                              )}
+                              {isCorrectChoice && (
+                                <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-[var(--color-signal-green)]">
+                                  <CheckCircle2 className="h-3 w-3" strokeWidth={1.5} />
+                                  Correct
+                                </span>
+                              )}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    {q?.explanation && (
+                      <div className="mt-3 rounded-lg border border-border/60 bg-muted/20 px-3 py-2">
+                        <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                          Explanation
+                        </p>
+                        <p className="mt-1 text-sm text-foreground">{q.explanation}</p>
+                      </div>
+                    )}
                   </div>
                 );
               })}

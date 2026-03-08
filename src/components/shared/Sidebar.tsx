@@ -14,6 +14,10 @@ import {
   Shield,
   PanelLeftClose,
   PanelLeftOpen,
+  Sparkles,
+  User,
+  ClipboardList,
+  BookOpen,
 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
@@ -24,24 +28,46 @@ import {
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { TierBadge, type DisplayTier } from "@/components/shared/TierBadge";
+import type { UserTier } from "@/types/app";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/quiz", label: "Quiz", icon: Brain },
+  { href: "/dashboard/sessions", label: "Sessions", icon: ClipboardList },
+  { href: "/dashboard/review", label: "Review", icon: BookOpen },
   { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/dashboard/library", label: "Library", icon: Library },
   { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ];
 
-interface SidebarProps {
-  isAdmin?: boolean;
+function getInitials(name: string, email?: string): string {
+  if (name?.trim()) {
+    const parts = name.trim().split(/\s+/);
+    if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    return name.slice(0, 2).toUpperCase();
+  }
+  if (email) return email.slice(0, 2).toUpperCase();
+  return "U";
 }
 
-export function Sidebar({ isAdmin }: SidebarProps) {
+interface SidebarProps {
+  isAdmin?: boolean;
+  userDisplay?: { name: string; avatarUrl: string | null };
+  /** Display tier (free, pro, max, or "dev" for dev mode). */
+  tier?: UserTier | "dev";
+}
+
+export function Sidebar({ isAdmin, userDisplay, tier = "free" }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
+  const displayName = userDisplay?.name ?? "User";
+  const initials = getInitials(displayName);
+  const displayTier = tier as DisplayTier;
 
   useEffect(() => {
     const stored = localStorage.getItem("cerebro_sidebar_collapsed");
@@ -95,6 +121,81 @@ export function Sidebar({ isAdmin }: SidebarProps) {
           )}
         </button>
       </div>
+
+      {/* User profile — below logo */}
+      <div className="border-b border-border/40 px-2 py-3">
+        {collapsed ? (
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link
+                href="/dashboard/settings"
+                className="flex justify-center"
+                aria-label="Settings"
+              >
+                <Avatar className="size-9">
+                  {userDisplay?.avatarUrl ? (
+                    <AvatarImage src={userDisplay.avatarUrl} alt="" />
+                  ) : null}
+                  <AvatarFallback>{initials}</AvatarFallback>
+                </Avatar>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent side="right" sideOffset={8}>
+              {displayName}
+            </TooltipContent>
+          </Tooltip>
+        ) : (
+          <div className="flex items-center gap-3 rounded-xl px-3 py-2">
+            <Link href="/dashboard/settings" className="shrink-0 rounded-full ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+              <Avatar className="size-9">
+                {userDisplay?.avatarUrl ? (
+                  <AvatarImage src={userDisplay.avatarUrl} alt="" />
+                ) : null}
+                <AvatarFallback>{initials}</AvatarFallback>
+              </Avatar>
+            </Link>
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-sm font-medium text-foreground">{displayName}</p>
+              <Link
+                href="/dashboard/settings"
+                className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
+              >
+                <User className="h-3.5 w-3.5" strokeWidth={1.5} />
+                Settings
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Plan indicator + upgrade CTA */}
+      {!collapsed && (
+        <div className="border-b border-border/40 px-2 py-2">
+          <div className="flex items-center justify-between gap-2 rounded-xl border border-border/40 bg-muted/20 px-3 py-2">
+            <TierBadge tier={displayTier} size="sm" />
+            {tier === "free" && (
+              <Link href="/dashboard/settings/billing">
+                <Button variant="outline" size="sm" className="h-7 gap-1 text-[11px] px-2">
+                  <Sparkles className="h-3 w-3" strokeWidth={1.5} />
+                  Upgrade
+                </Button>
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
+      {collapsed && tier === "free" && (
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link href="/dashboard/settings/billing" className="flex justify-center py-2" aria-label="Upgrade to Pro">
+              <Sparkles className="h-4 w-4 text-[var(--color-signal-amber)]" strokeWidth={1.5} />
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent side="right" sideOffset={8}>
+            Upgrade to Pro
+          </TooltipContent>
+        </Tooltip>
+      )}
 
       {/* Exam Profile Switcher */}
       {!collapsed && (
