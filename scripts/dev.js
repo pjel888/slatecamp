@@ -6,7 +6,9 @@
  */
 /* eslint-disable @typescript-eslint/no-require-imports -- Node script, no ESM in package */
 const { spawn } = require("child_process");
+const path = require("path");
 const isWindows = process.platform === "win32";
+const nextCli = path.join(__dirname, "..", "node_modules", "next", "dist", "bin", "next");
 const args = ["dev", ...(isWindows ? ["--webpack"] : ["--turbopack"])];
-const child = spawn("next", args, { stdio: "inherit", shell: true });
+const child = spawn(process.execPath, [nextCli, ...args], { stdio: "inherit" });
 child.on("exit", (code) => process.exit(code ?? 0));
