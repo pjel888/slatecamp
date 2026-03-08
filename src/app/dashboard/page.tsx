@@ -3,10 +3,8 @@ import { redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Skeleton } from "@/components/ui/skeleton";
 import { daysUntil, getGreeting } from "@/lib/utils/helpers";
 import {
-  Brain,
   Flame,
   CalendarDays,
   ArrowRight,
@@ -15,9 +13,13 @@ import {
   Clock,
   Target,
   TrendingUp,
+  Play,
+  BookOpen,
+  Plus,
 } from "lucide-react";
 import Link from "next/link";
-import type { DailyUserStats, TestSession, DomainMastery } from "@/types/app";
+import { SubjectCardsGrid } from "./subject-cards-grid";
+import type { DailyUserStats, TestSession, ExamProfile, Subject, SubjectMastery } from "@/types/app";
 
 export const metadata = { title: "Dashboard" };
 
@@ -34,23 +36,54 @@ export default async function DashboardPage() {
     .eq("id", user.id)
     .single();
 
-  const { count: srsCount } = await supabase
-    .from("srs_queue")
-    .select("id", { count: "exact", head: true })
+  // Get active exam profile
+  const { data: activeExamProfile } = await supabase
+    .from("exam_profiles")
+    .select("*, board_exams(*)")
     .eq("user_id", user.id)
-    .lte("next_review_at", new Date().toISOString());
+    .eq("is_active", true)
+    .single();
+
+  const examProfile = activeExamProfile as ExamProfile | null;
+
+  // Get subjects for active profile
+  let subjects: Subject[] = [];
+  let masteries: SubjectMastery[] = [];
+  if (examProfile) {
+    const { data: subs } = await supabase
+      .from("subjects")
+      .select("*")
+      .eq("board_exam_id", examProfile.board_exam_id)
+      .order("sort_order");
+    subjects = (subs ?? []) as Subject[];
+
+    const { data: mast } = await supabase
+      .from("subject_mastery")
+      .select("*")
+      .eq("user_id", user.id)
+      .eq("exam_profile_id", examProfile.id);
+    masteries = (mast ?? []) as SubjectMastery[];
+  }
+
+  // Get question counts per subject
+  const questionCounts: Record<string, number> = {};
+  if (subjects.length > 0) {
+    for (const s of subjects) {
+      const { count } = await supabase
+        .from("questions")
+        .select("id", { count: "exact", head: true })
+        .eq("subject_id", s.id)
+        .eq("status", "published");
+      questionCounts[s.id] = count ?? 0;
+    }
+  }
 
   const { data: recentSessions } = await supabase
-    .from("test_sessions")
+    .from("review_sessions")
     .select("*")
     .eq("user_id", user.id)
     .order("created_at", { ascending: false })
-    .limit(3);
-
-  const { data: domainMasteries } = await supabase
-    .from("domain_mastery")
-    .select("*, exam_domains(name)")
-    .eq("user_id", user.id);
+    .limit(5);
 
   const { data: todayStats } = await supabase
     .from("daily_user_stats")
@@ -59,10 +92,12 @@ export default async function DashboardPage() {
     .eq("date", new Date().toISOString().split("T")[0])
     .single();
 
-  const reviewsDue = srsCount ?? 0;
-  const examDaysLeft = profile?.target_exam_date
-    ? daysUntil(profile.target_exam_date)
+  const examDaysLeft = examProfile?.target_exam_date
+    ? daysUntil(examProfile.target_exam_date)
     : null;
+
+  const streak = examProfile?.daily_streak ?? profile?.daily_streak ?? 0;
+  const longestStreak = examProfile?.longest_streak ?? profile?.longest_streak ?? 0;
 
   return (
     <div className="space-y-8">
@@ -72,35 +107,14 @@ export default async function DashboardPage() {
           {getGreeting()}, {profile?.full_name?.split(" ")[0] ?? "there"}
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          {profile?.exam_target
-            ? `Reviewing for ${profile.exam_target}`
+          {examProfile?.board_exams
+            ? `Reviewing for ${examProfile.board_exams.short_name}`
             : "Ready to study?"}
         </p>
       </div>
 
-      {/* Top row widgets */}
+      {/* Stats Row */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {/* Today's Mission */}
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Reviews Due
-            </CardTitle>
-            <Brain className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-semibold font-mono text-foreground">
-              {reviewsDue}
-            </div>
-            <Link href="/dashboard/review">
-              <Button size="sm" className="mt-3 w-full">
-                Start Review <ArrowRight className="ml-2 h-3 w-3" />
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
-
-        {/* Exam Countdown */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -118,7 +132,6 @@ export default async function DashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Streak */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -126,8 +139,8 @@ export default async function DashboardPage() {
             </CardTitle>
             <Flame
               className={`h-4 w-4 ${
-                (profile?.daily_streak ?? 0) > 0
-                  ? "text-[var(--color-signal-amber)]"
+                streak > 0
+                  ? "text-[var(--warning)]"
                   : "text-muted-foreground"
               }`}
               strokeWidth={1.5}
@@ -135,15 +148,14 @@ export default async function DashboardPage() {
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-semibold font-mono text-foreground">
-              {profile?.daily_streak ?? 0}
+              {streak}
             </div>
             <p className="mt-1 text-xs text-muted-foreground">
-              Longest: {profile?.longest_streak ?? 0} days
+              Longest: {longestStreak} days
             </p>
           </CardContent>
         </Card>
 
-        {/* Today's Progress */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -160,27 +172,70 @@ export default async function DashboardPage() {
             </p>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium text-muted-foreground">
+              Study Time
+            </CardTitle>
+            <Clock className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-semibold font-mono text-foreground">
+              {Math.round(((todayStats as DailyUserStats | null)?.total_study_time_ms ?? 0) / 60000)}m
+            </div>
+            <p className="mt-1 text-xs text-muted-foreground">
+              today
+            </p>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Quick Actions */}
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {[
-          { href: "/dashboard/review", label: "Start Review", icon: Brain },
-          { href: "/dashboard/quiz", label: "Practice Quiz", icon: Clock },
-          { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
-          { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },
-        ].map(({ href, label, icon: Icon }) => (
-          <Link key={href} href={href}>
-            <Button
-              variant="outline"
-              className="h-12 w-full justify-start gap-3 text-sm"
-            >
-              <Icon className="h-4 w-4" strokeWidth={1.5} />
-              {label}
-            </Button>
-          </Link>
-        ))}
+        <Link href="/dashboard/review">
+          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
+            <BookOpen className="h-4 w-4" strokeWidth={1.5} />
+            Review Mode
+          </Button>
+        </Link>
+        <Link href="/dashboard/sessions/new">
+          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
+            <Plus className="h-4 w-4" strokeWidth={1.5} />
+            New Session
+          </Button>
+        </Link>
+        <Link href="/dashboard/analytics">
+          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
+            <BarChart3 className="h-4 w-4" strokeWidth={1.5} />
+            Analytics
+          </Button>
+        </Link>
+        <Link href="/dashboard/3d-lab">
+          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
+            <Box className="h-4 w-4" strokeWidth={1.5} />
+            3D Lab
+          </Button>
+        </Link>
       </div>
+
+      {/* Subject Cards */}
+      {subjects.length > 0 && (
+        <section>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-lg font-semibold text-foreground">Subjects</h2>
+            <Badge variant="secondary" className="text-xs">
+              {subjects.length} subjects
+            </Badge>
+          </div>
+          <SubjectCardsGrid
+            subjects={subjects}
+            masteries={masteries}
+            questionCounts={questionCounts}
+            examProfileId={examProfile?.id ?? ""}
+          />
+        </section>
+      )}
 
       {/* Recent Sessions */}
       <Card>
@@ -193,12 +248,12 @@ export default async function DashboardPage() {
               {(recentSessions as TestSession[]).map((session) => (
                 <div
                   key={session.id}
-                  className="flex items-center justify-between rounded-md border border-border p-3"
+                  className="flex items-center justify-between rounded-lg border border-border p-3"
                 >
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
                       <Badge variant="secondary" className="text-xs capitalize">
-                        {session.session_type.replace("_", " ")}
+                        {session.session_type.replace(/_/g, " ")}
                       </Badge>
                       <span className="text-xs text-muted-foreground">
                         {new Date(session.created_at).toLocaleDateString()}
@@ -215,7 +270,7 @@ export default async function DashboardPage() {
                         : "—"}
                     </div>
                     <TrendingUp
-                      className="ml-auto h-3 w-3 text-[var(--color-signal-green)]"
+                      className="ml-auto h-3 w-3 text-[var(--success)]"
                       strokeWidth={1.5}
                     />
                   </div>

@@ -57,15 +57,62 @@ export const DEMO_QUESTION_BANKS = [
   { id: "bank-5", creator_id: "user-other", title: "Site Planning & Utilities", description: "Comprehensive site planning prep for ALE", profession: "architecture", exam_domain_id: "dom-6", is_official: false, is_marketplace: true, price_cents: 19900, currency: "PHP", status: "published", question_count: 75, average_rating: 4.3, total_ratings: 41, total_purchases: 87, tags: ["site planning", "utilities"], created_at: "2026-02-10T00:00:00Z", updated_at: daysAgo(7) },
 ];
 
+// ── New Schema: Board Exams ──────────────────────────────────────
+export const DEMO_BOARD_EXAMS = [
+  { id: "be-ale", profession: "Architecture", specialization: null, name: "Architecture Licensure Exam", short_name: "ALE", country: "PH", description: "Philippine Architecture Licensure Examination", total_subjects: 10, passing_score_percentage: 70.0, icon_name: "building-2", is_active: true, has_content: true, sort_order: 1, created_at: "2026-01-01T00:00:00Z" },
+  { id: "be-are", profession: "Architecture", specialization: null, name: "Architect Registration Exam", short_name: "ARE 5.0", country: "US", description: "US Architect Registration Exam", total_subjects: 6, passing_score_percentage: 70.0, icon_name: "building-2", is_active: true, has_content: false, sort_order: 2, created_at: "2026-01-01T00:00:00Z" },
+];
+
+// ── New Schema: Exam Profiles ───────────────────────────────────
+export const DEMO_EXAM_PROFILES = [
+  { id: "ep-1", user_id: uid, board_exam_id: "be-ale", target_exam_date: "2026-09-15", study_hours_per_day: 3, is_active: true, onboarding_completed: true, daily_streak: 14, longest_streak: 21, last_active_at: now, created_at: "2026-01-15T08:00:00Z", updated_at: now,
+    board_exams: { id: "be-ale", profession: "Architecture", specialization: null, name: "Architecture Licensure Exam", short_name: "ALE", country: "PH", description: "Philippine Architecture Licensure Examination", total_subjects: 10, passing_score_percentage: 70.0, icon_name: "building-2", is_active: true, has_content: true, sort_order: 1, created_at: "2026-01-01T00:00:00Z" },
+  },
+];
+
+// ── New Schema: Subjects (mapped from old exam_domains) ─────────
+export const DEMO_SUBJECTS = [
+  { id: "sub-1", board_exam_id: "be-ale", name: "History of Architecture", short_name: "History", slug: "history-of-architecture", description: "Architectural history from ancient civilizations to contemporary movements", exam_weight_percentage: 10, estimated_question_count: null, color: "#8B7355", icon_name: "landmark", has_3d_workspace: false, sort_order: 1, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-2", board_exam_id: "be-ale", name: "Design and Planning", short_name: "Design", slug: "design-and-planning", description: "Architectural design principles, space planning, and programming", exam_weight_percentage: 12, estimated_question_count: null, color: "#4A7C59", icon_name: "palette", has_3d_workspace: false, sort_order: 2, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-3", board_exam_id: "be-ale", name: "Building Technology", short_name: "BuildTech", slug: "building-technology", description: "Construction materials, methods, and building systems", exam_weight_percentage: 12, estimated_question_count: null, color: "#6B8FA3", icon_name: "hard-hat", has_3d_workspace: true, sort_order: 3, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-4", board_exam_id: "be-ale", name: "Structural Engineering", short_name: "Structures", slug: "structural-engineering", description: "Structural systems, analysis, and design", exam_weight_percentage: 12, estimated_question_count: null, color: "#BF1B1B", icon_name: "triangle", has_3d_workspace: true, sort_order: 4, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-5", board_exam_id: "be-ale", name: "Utilities", short_name: "Utilities", slug: "utilities", description: "Plumbing, HVAC, electrical, and fire protection systems", exam_weight_percentage: 10, estimated_question_count: null, color: "#ED8008", icon_name: "zap", has_3d_workspace: true, sort_order: 5, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-6", board_exam_id: "be-ale", name: "Laws and Codes", short_name: "Laws", slug: "laws-and-codes", description: "Building codes, laws, and professional practice", exam_weight_percentage: 10, estimated_question_count: null, color: "#BF7C2A", icon_name: "scale", has_3d_workspace: false, sort_order: 6, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-7", board_exam_id: "be-ale", name: "Site Planning", short_name: "Site", slug: "site-planning", description: "Zoning, setbacks, grading, and landscape architecture", exam_weight_percentage: 8, estimated_question_count: null, color: "#4A7C59", icon_name: "map", has_3d_workspace: false, sort_order: 7, created_at: "2026-01-01T00:00:00Z" },
+  { id: "sub-8", board_exam_id: "be-ale", name: "Professional Practice", short_name: "Practice", slug: "professional-practice", description: "Contracts, project management, ethics, and professional regulation", exam_weight_percentage: 8, estimated_question_count: null, color: "#86868B", icon_name: "briefcase", has_3d_workspace: false, sort_order: 8, created_at: "2026-01-01T00:00:00Z" },
+];
+
+// ── New Schema: Subject Mastery ─────────────────────────────────
+export const DEMO_SUBJECT_MASTERY = [
+  { id: "sm-1", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-1", total_attempted: 110, total_correct: 97, mastery_score: 88, theta: 1.8, avg_response_time_ms: 12000, last_practiced_at: daysAgo(3), updated_at: daysAgo(3) },
+  { id: "sm-2", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-3", total_attempted: 60, total_correct: 39, mastery_score: 65, theta: 0.4, avg_response_time_ms: 18000, last_practiced_at: daysAgo(5), updated_at: daysAgo(5) },
+  { id: "sm-3", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-4", total_attempted: 85, total_correct: 68, mastery_score: 80, theta: 1.2, avg_response_time_ms: 15000, last_practiced_at: daysAgo(1), updated_at: daysAgo(1) },
+  { id: "sm-4", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-5", total_attempted: 40, total_correct: 30, mastery_score: 75, theta: 0.8, avg_response_time_ms: 14000, last_practiced_at: daysAgo(8), updated_at: daysAgo(8) },
+  { id: "sm-5", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-6", total_attempted: 55, total_correct: 38, mastery_score: 69, theta: 0.5, avg_response_time_ms: 20000, last_practiced_at: daysAgo(12), updated_at: daysAgo(12) },
+  { id: "sm-6", user_id: uid, exam_profile_id: "ep-1", subject_id: "sub-7", total_attempted: 30, total_correct: 24, mastery_score: 80, theta: 1.1, avg_response_time_ms: 16000, last_practiced_at: daysAgo(15), updated_at: daysAgo(15) },
+];
+
+// ── New Schema: Review Sessions ─────────────────────────────────
+export const DEMO_REVIEW_SESSIONS = [
+  { id: "rs-1", user_id: uid, exam_profile_id: "ep-1", session_type: "subject_quick", template_id: null, retake_of_session_id: null, source_subject_id: "sub-4", source_topic_id: null, source_3d_model_id: null, config: { subjects: [{ subject_id: "sub-4", question_count: 10 }], shuffle_questions: true, show_immediate_feedback: true }, name: "Structures Quick Start", total_questions: 4, questions_answered: 4, questions_correct: 3, questions_incorrect: 1, questions_skipped: 0, score_percentage: 75, total_time_ms: 360000, avg_response_time_ms: 90000, subject_scores: [], status: "completed", started_at: daysAgo(1), paused_at: null, completed_at: daysAgo(1), created_at: daysAgo(1) },
+  { id: "rs-2", user_id: uid, exam_profile_id: "ep-1", session_type: "custom_compiled", template_id: null, retake_of_session_id: null, source_subject_id: null, source_topic_id: null, source_3d_model_id: null, config: { subjects: [{ subject_id: "sub-1", question_count: 5 }, { subject_id: "sub-4", question_count: 5 }], shuffle_questions: true, show_immediate_feedback: true }, name: "History + Structures Mix", total_questions: 4, questions_answered: 4, questions_correct: 3, questions_incorrect: 1, questions_skipped: 0, score_percentage: 75, total_time_ms: 480000, avg_response_time_ms: 120000, subject_scores: [], status: "completed", started_at: daysAgo(3), paused_at: null, completed_at: daysAgo(3), created_at: daysAgo(3) },
+];
+
+// ── New Schema: Study Time Logs ─────────────────────────────────
+export const DEMO_STUDY_TIME_LOGS = [
+  { id: "stl-1", user_id: uid, exam_profile_id: "ep-1", mode: "session", session_id: "rs-1", started_at: daysAgo(1), ended_at: daysAgo(1), duration_ms: 360000, created_at: daysAgo(1) },
+  { id: "stl-2", user_id: uid, exam_profile_id: "ep-1", mode: "review", session_id: null, started_at: daysAgo(0), ended_at: null, duration_ms: 1200000, created_at: daysAgo(0) },
+];
+
 function makeChoice(id: string, text: string, isCorrect: boolean) {
   return { id, text, is_correct: isCorrect };
 }
 
-const Q_BASE = { creator_id: null, question_type: "mcq" as const, is_multi_select: false, media_url: null as string | null, explanation_references: null, has_3d_component: false, three_d_model_ref: null, image_urls: [] as string[], status: "published" as const, created_at: "2026-01-10T00:00:00Z" };
+const Q_BASE = { creator_id: null, question_type: "mcq" as const, is_multi_select: false, is_official: true, media_url: null as string | null, prompt_image_url: null as string | null, explanation_image_url: null as string | null, explanation_references: null, references: [] as { title: string; page?: string; type: string }[], fun_facts: [] as string[], mnemonics: null as string | null, related_topic_ids: [] as string[], has_3d_component: false, three_d_model_id: null as string | null, three_d_model_ref: null as string | null, model_callout_id: null as string | null, image_urls: [] as string[], global_times_answered: 0, global_times_correct: 0, global_accuracy_percentage: 0, global_avg_response_time_ms: 0, status: "published" as const, created_at: "2026-01-10T00:00:00Z" };
 
 export const DEMO_QUESTIONS = [
-  // ── Bank 1: Structural Systems (dom-1) ──────────────────────────
-  { ...Q_BASE, id: "q-1", bank_id: "bank-1", exam_domain_id: "dom-1", sort_order: 1, updated_at: daysAgo(1), difficulty: "medium", difficulty_rating: 0.55, discrimination_rating: 0.7, tags: ["truss", "structural"], times_answered: 340, times_correct: 221,
+  // ── Bank 1: Structural Systems (dom-1) → sub-4 ─────────────────
+  { ...Q_BASE, id: "q-1", bank_id: "bank-1", exam_domain_id: "dom-1", subject_id: "sub-4", topic_id: null, sort_order: 1, updated_at: daysAgo(1), difficulty: "medium", difficulty_rating: 0.55, discrimination_rating: 0.7, tags: ["truss", "structural"], global_times_answered: 340, global_times_correct: 221, references: [{ title: "Structural Analysis", page: "142", type: "book" }], fun_facts: ["Warren trusses were patented in 1848 by James Warren and Willoughby Theobald Monzani."],
     prompt: "Which type of truss is characterized by diagonal members that alternate in direction, creating a zigzag pattern?",
     choices: [makeChoice("q1-a", "Pratt Truss", false), makeChoice("q1-b", "Warren Truss", true), makeChoice("q1-c", "Howe Truss", false), makeChoice("q1-d", "Fink Truss", false)],
     correct_answer: "q1-b", explanation: "A Warren Truss uses equilateral triangles formed by diagonal members alternating in direction. Unlike Pratt and Howe trusses, it has no vertical members (in its pure form)." },
@@ -255,13 +302,48 @@ export const DEMO_MARKETPLACE_PURCHASES = [
   { bank_id: "bank-4", buyer_id: uid },
 ];
 
+const DOMAIN_TO_SUBJECT: Record<string, string> = {
+  "dom-1": "sub-4", // Structural Systems → Structural Engineering
+  "dom-2": "sub-3", // Building Envelope → Building Technology
+  "dom-3": "sub-5", // MEP Systems → Utilities
+  "dom-4": "sub-1", // Design History → History of Architecture
+  "dom-5": "sub-6", // Building Codes → Laws and Codes
+  "dom-6": "sub-7", // Site Planning → Site Planning
+};
+
+function enrichQuestions() {
+  return DEMO_QUESTIONS.map((q) => {
+    const rec = q as Record<string, unknown>;
+    return {
+      ...q,
+      subject_id: (rec.subject_id as string) ?? DOMAIN_TO_SUBJECT[(rec.exam_domain_id as string) ?? ""] ?? null,
+      topic_id: (rec.topic_id as string | null) ?? null,
+      references: (rec.references as unknown[]) ?? [],
+      fun_facts: (rec.fun_facts as string[]) ?? [],
+      mnemonics: (rec.mnemonics as string | null) ?? null,
+      related_topic_ids: (rec.related_topic_ids as string[]) ?? [],
+      global_times_answered: (rec.global_times_answered as number) ?? (rec.times_answered as number) ?? 0,
+      global_times_correct: (rec.global_times_correct as number) ?? (rec.times_correct as number) ?? 0,
+    };
+  });
+}
+
 export function getDemoDataForTable(table: string): unknown[] {
   switch (table) {
     case "profiles": return [DEMO_PROFILE];
+    case "board_exams": return DEMO_BOARD_EXAMS;
+    case "exam_profiles": return DEMO_EXAM_PROFILES;
+    case "subjects": return DEMO_SUBJECTS;
+    case "subject_mastery": return DEMO_SUBJECT_MASTERY;
     case "exam_domains": return DEMO_EXAM_DOMAINS;
     case "question_banks": return DEMO_QUESTION_BANKS;
-    case "questions": return DEMO_QUESTIONS;
+    case "questions": return enrichQuestions();
     case "test_sessions": return DEMO_TEST_SESSIONS;
+    case "review_sessions": return DEMO_REVIEW_SESSIONS;
+    case "session_questions": return [];
+    case "session_templates": return [];
+    case "review_mode_interactions": return [];
+    case "study_time_logs": return DEMO_STUDY_TIME_LOGS;
     case "srs_queue": return DEMO_SRS_QUEUE;
     case "domain_mastery": return DEMO_DOMAIN_MASTERY;
     case "daily_user_stats": return DEMO_DAILY_STATS;

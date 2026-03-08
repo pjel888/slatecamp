@@ -1,149 +1,168 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
-import { QuizSetupForm } from "./quiz-setup-form";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Plus, Play, Clock, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { QuickStartForm } from "./quick-start-form";
+import type { ExamProfile, Subject, ReviewSession } from "@/types/app";
 
-export const metadata = { title: "Quiz" };
+export const metadata = { title: "Quiz — Cerebro" };
 
-const QUIZ_MODES = [
-  {
-    id: "practice",
-    label: "Practice",
-    desc: "Untimed, immediate feedback with explanations.",
-    iconName: "brain" as const,
-    tier: "free" as const,
-    details: {
-      howItWorks: [
-        "Answer at your own pace — no timer",
-        "See instant feedback after confirming each answer",
-        "Full explanations and references provided",
-        "Great for learning new material",
-      ],
-      bestFor: "Building foundational knowledge",
-    },
-  },
-  {
-    id: "timed_test",
-    label: "Timed Test",
-    desc: "Simulate real exam conditions with a timer.",
-    iconName: "clock" as const,
-    tier: "free" as const,
-    details: {
-      howItWorks: [
-        "Set a time limit that mirrors the real exam",
-        "No feedback until the session is complete",
-        "Results and analytics shown after submission",
-        "Tracks your time-per-question performance",
-      ],
-      bestFor: "Exam simulation and time management practice",
-    },
-  },
-  {
-    id: "review",
-    label: "SRS Review",
-    desc: "Questions from your spaced repetition queue.",
-    iconName: "zap" as const,
-    tier: "pro" as const,
-    details: {
-      howItWorks: [
-        "Uses SM-2 spaced repetition algorithm",
-        "Surfaces questions you're about to forget",
-        "Intervals adapt based on your performance",
-        "Optimizes long-term retention efficiently",
-      ],
-      bestFor: "Maximizing memory retention before exams",
-    },
-  },
-  {
-    id: "ai_adaptive",
-    label: "AI Adaptive",
-    desc: "IRT-driven difficulty targeting P(correct) ≈ 0.75.",
-    iconName: "target" as const,
-    tier: "max" as const,
-    details: {
-      howItWorks: [
-        "Uses Item Response Theory (IRT) psychometric model",
-        "Adapts question difficulty to your ability level (θ)",
-        "Targets the zone of proximal development",
-        "Provides the most efficient learning path",
-      ],
-      bestFor: "Advanced learners preparing for mastery",
-    },
-  },
-];
-
-export default async function QuizPage() {
-  const profile = await getAdminAwareProfile();
-  if (!profile) redirect("/login");
-
+export default async function QuizPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ subject?: string; quick?: string }>;
+}) {
+  const params = await searchParams;
   const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/login");
 
-  const { data: banks } = await supabase
-    .from("question_banks")
-    .select("id, title, question_count, status, is_official, description")
-    .eq("status", "published")
-    .order("is_official", { ascending: false })
-    .order("title");
+  const { data: examProfile } = await supabase
+    .from("exam_profiles")
+    .select("*, board_exams(*)")
+    .eq("user_id", user.id)
+    .eq("is_active", true)
+    .single();
 
-  const { data: savedConfigs } = await supabase
-    .from("review_session_configs")
+  if (!examProfile) redirect("/onboarding");
+
+  const ep = examProfile as ExamProfile;
+
+  const { data: subjects } = await supabase
+    .from("subjects")
     .select("*")
-    .eq("user_id", profile.id)
-    .eq("is_saved", true)
-    .order("updated_at", { ascending: false })
-    .limit(10);
+    .eq("board_exam_id", ep.board_exam_id)
+    .order("sort_order");
 
   const { data: recentSessions } = await supabase
-    .from("test_sessions")
-    .select("id, session_type, total_questions, correct_answers, score_percentage, session_config, completed_at, created_at")
-    .eq("user_id", profile.id)
-    .not("completed_at", "is", null)
-    .order("completed_at", { ascending: false })
+    .from("review_sessions")
+    .select("*")
+    .eq("user_id", user.id)
+    .eq("exam_profile_id", ep.id)
+    .order("created_at", { ascending: false })
     .limit(5);
+
+  // If quick start mode with a subject
+  if (params.quick === "true" && params.subject) {
+    return (
+      <div className="mx-auto max-w-[600px] space-y-6">
+        <div>
+          <h1 className="text-2xl font-semibold text-foreground">Quick Start</h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Choose your settings and jump right in
+          </p>
+        </div>
+        <QuickStartForm
+          examProfileId={ep.id}
+          subjectId={params.subject}
+          subjectName={
+            ((subjects ?? []) as Subject[]).find((s) => s.id === params.subject)?.name ?? "Subject"
+          }
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-semibold text-foreground">Review Sessions</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Build a custom review session from your question banks, or use a saved configuration.
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-semibold text-foreground">Quiz</h1>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Start a session or build a custom quiz
+          </p>
+        </div>
+        <Link href="/dashboard/sessions/new">
+          <Button className="gap-2">
+            <Plus className="h-4 w-4" strokeWidth={1.5} />
+            Custom Session
+          </Button>
+        </Link>
       </div>
 
-      <QuizSetupForm
-        userId={profile.id}
-        userTier={profile.effectiveTier}
-        banks={
-          (banks ?? []).map((b: Record<string, unknown>) => ({
-            id: b.id as string,
-            title: b.title as string,
-            description: (b.description as string | null) ?? null,
-            question_count: b.question_count as number,
-            is_official: (b.is_official as boolean) ?? false,
-          }))
-        }
-        quizModes={QUIZ_MODES}
-        savedConfigs={
-          (savedConfigs ?? []).map((c: Record<string, unknown>) => ({
-            id: c.id as string,
-            name: c.name as string,
-            bank_configs: c.bank_configs as { bankId: string; bankTitle: string; questionCount: number }[],
-            session_type: c.session_type as string,
-            total_questions: c.total_questions as number,
-          }))
-        }
-        recentSessions={
-          (recentSessions ?? []).map((s: Record<string, unknown>) => ({
-            id: s.id as string,
-            session_type: s.session_type as string,
-            total_questions: s.total_questions as number,
-            correct_answers: s.correct_answers as number,
-            score_percentage: s.score_percentage as number | null,
-            session_config: s.session_config as { bankId: string; bankTitle: string; questionCount: number }[] | null,
-            completed_at: s.completed_at as string,
-          }))
-        }
-      />
+      {/* Subject Quick Start */}
+      <section>
+        <h2 className="mb-3 text-sm font-medium text-muted-foreground uppercase tracking-wider">
+          Subject Quick Start
+        </h2>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {((subjects ?? []) as Subject[]).map((subject) => {
+            return (
+              <Link key={subject.id} href={`/dashboard/quiz?subject=${subject.id}&quick=true`}>
+                <Card className="transition-shadow hover:shadow-md">
+                  <CardContent className="flex items-center gap-3 p-4">
+                    <div
+                      className="flex h-10 w-10 items-center justify-center rounded-xl"
+                      style={{ backgroundColor: `${subject.color ?? "#86868B"}15` }}
+                    >
+                      <Play
+                        className="h-4 w-4"
+                        style={{ color: subject.color ?? "#86868B" }}
+                        strokeWidth={1.5}
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-sm font-medium text-foreground">
+                        {subject.short_name ?? subject.name}
+                      </p>
+                    </div>
+                    <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
+                  </CardContent>
+                </Card>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Recent Sessions */}
+      {(recentSessions ?? []).length > 0 && (
+        <section>
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+              Recent Sessions
+            </h2>
+            <Link href="/dashboard/sessions" className="text-xs text-[var(--accent-blue)] hover:underline">
+              View all
+            </Link>
+          </div>
+          <div className="space-y-2">
+            {(recentSessions as ReviewSession[]).map((s) => (
+              <Card key={s.id} className="transition-shadow hover:shadow-md">
+                <CardContent className="flex items-center justify-between p-4">
+                  <div className="space-y-0.5">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-foreground">
+                        {s.name ?? s.session_type.replace(/_/g, " ")}
+                      </span>
+                      <Badge variant="secondary" className="text-xs capitalize">
+                        {s.status}
+                      </Badge>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <span>{new Date(s.created_at).toLocaleDateString()}</span>
+                      <span>{s.total_questions} Qs</span>
+                    </div>
+                  </div>
+                  {s.score_percentage != null && (
+                    <span className="text-lg font-semibold font-mono text-foreground">
+                      {Math.round(s.score_percentage)}%
+                    </span>
+                  )}
+                  <Link href={s.status === "completed" ? `/dashboard/quiz/${s.id}/summary` : `/dashboard/quiz/${s.id}`}>
+                    <Button variant="outline" size="sm">
+                      {s.status === "completed" ? "Review" : "Resume"}
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

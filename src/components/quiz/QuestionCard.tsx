@@ -76,7 +76,7 @@ export function QuestionCard({
             index={index}
             isSelected={selectedAnswers.includes(choice.id)}
             isConfirmed={isConfirmed}
-            isMultiSelect={question.is_multi_select}
+            isMultiSelect={question.is_multi_select ?? false}
             correctAnswer={question.correct_answer}
             onSelect={onSelectAnswer}
           />

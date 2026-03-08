@@ -5,7 +5,9 @@ import { Sidebar } from "@/components/shared/Sidebar";
 import { Navbar } from "@/components/shared/Navbar";
 import { BottomNav } from "@/components/shared/BottomNav";
 import { DevToolbar } from "@/components/dev/dev-toolbar";
+import { ExamProfileProvider } from "@/lib/context/exam-profile-context";
 import type { UserTier } from "@/types/app";
+import type { ExamProfile, Subject } from "@/types/app";
 
 export default async function DashboardLayout({
   children,
@@ -35,24 +37,50 @@ export default async function DashboardLayout({
     ? getEffectiveTier(currentTier, true, flags)
     : currentTier;
 
+  // Load exam profiles for the context provider
+  const { data: examProfiles } = await supabase
+    .from("exam_profiles")
+    .select("*, board_exams(*)")
+    .eq("user_id", user.id)
+    .order("created_at", { ascending: true });
+
+  const allProfiles = (examProfiles ?? []) as ExamProfile[];
+  const activeProfile = allProfiles.find((p) => p.is_active) ?? allProfiles[0] ?? null;
+
+  let subjects: Subject[] = [];
+  if (activeProfile) {
+    const { data: subs } = await supabase
+      .from("subjects")
+      .select("*")
+      .eq("board_exam_id", activeProfile.board_exam_id)
+      .order("sort_order");
+    subjects = (subs ?? []) as Subject[];
+  }
+
   return (
-    <div className="flex h-screen">
-      <Sidebar isAdmin={isAdmin} />
-      <div className="flex flex-1 flex-col overflow-hidden">
-        <Navbar isAdmin={isAdmin} />
-        <main className="flex-1 overflow-y-auto pb-20 lg:pb-0">
-          <div className="mx-auto max-w-[1200px] p-4 lg:p-8">{children}</div>
-        </main>
-        <BottomNav />
+    <ExamProfileProvider
+      initialProfile={activeProfile}
+      initialProfiles={allProfiles}
+      initialSubjects={subjects}
+    >
+      <div className="flex h-screen">
+        <Sidebar isAdmin={isAdmin} />
+        <div className="flex flex-1 flex-col overflow-hidden">
+          <Navbar isAdmin={isAdmin} />
+          <main className="flex-1 overflow-y-auto pb-20 lg:pb-0">
+            <div className="mx-auto max-w-[1200px] p-4 lg:p-8">{children}</div>
+          </main>
+          <BottomNav />
+        </div>
+        {showDevTools && flags && (
+          <DevToolbar
+            mode={isDemo ? "dev" : "live"}
+            currentTier={currentTier}
+            effectiveTier={effectiveTier}
+            flags={flags}
+          />
+        )}
       </div>
-      {showDevTools && flags && (
-        <DevToolbar
-          mode={isDemo ? "dev" : "live"}
-          currentTier={currentTier}
-          effectiveTier={effectiveTier}
-          flags={flags}
-        />
-      )}
-    </div>
+    </ExamProfileProvider>
   );
 }

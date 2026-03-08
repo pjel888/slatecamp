@@ -1,11 +1,16 @@
 export type UserTier = "free" | "pro" | "max";
-export type QuestionType = "mcq" | "true_false" | "identification" | "essay" | "matching" | "sequence";
+export type QuestionType = "mcq" | "true_false" | "identification" | "essay" | "matching" | "sequence" | "sequencing";
 export type DifficultyLevel = "easy" | "medium" | "hard" | "expert";
 export type ContentStatus = "draft" | "published" | "archived" | "flagged";
 export type Profession = "architecture" | "medicine" | "law" | "engineering";
-export type SessionType = "practice" | "timed_test" | "review" | "ai_adaptive";
-export type DifficultyMode = "easy" | "medium" | "hard" | "mixed" | "adaptive";
+export type NewSessionType = "subject_quick" | "custom_compiled" | "srs_review" | "ai_adaptive" | "retake" | "topic_drill" | "3d_model_quiz" | "weak_areas";
+export type SessionStatus = "in_progress" | "completed" | "abandoned" | "paused";
+export type ReferenceType = "book" | "code" | "standard" | "article" | "video" | "website";
+export type DifficultyMode = "easy" | "medium" | "hard" | "expert" | "mixed" | "adaptive";
 export type Theme = "light" | "dark" | "system";
+
+// Legacy types kept for backward compatibility
+export type SessionType = "practice" | "timed_test" | "review" | "ai_adaptive";
 
 export interface Profile {
   id: string;
@@ -25,10 +30,266 @@ export interface Profile {
   last_active_at: string;
   preferred_theme: Theme;
   onboarding_completed: boolean;
+  is_admin?: boolean;
   created_at: string;
   updated_at: string;
 }
 
+export interface BoardExam {
+  id: string;
+  profession: string;
+  specialization: string | null;
+  name: string;
+  short_name: string;
+  country: string;
+  description: string | null;
+  total_subjects: number | null;
+  passing_score_percentage: number | null;
+  icon_name: string | null;
+  is_active: boolean;
+  has_content: boolean;
+  sort_order: number;
+  created_at: string;
+}
+
+export interface ExamProfile {
+  id: string;
+  user_id: string;
+  board_exam_id: string;
+  target_exam_date: string | null;
+  study_hours_per_day: number;
+  is_active: boolean;
+  onboarding_completed: boolean;
+  daily_streak: number;
+  longest_streak: number;
+  last_active_at: string | null;
+  created_at: string;
+  updated_at: string;
+  board_exams?: BoardExam;
+}
+
+export interface Subject {
+  id: string;
+  board_exam_id: string;
+  name: string;
+  short_name: string | null;
+  slug: string;
+  description: string | null;
+  exam_weight_percentage: number;
+  estimated_question_count: number | null;
+  color: string | null;
+  icon_name: string | null;
+  has_3d_workspace: boolean;
+  sort_order: number;
+  created_at: string;
+}
+
+export interface Topic {
+  id: string;
+  subject_id: string;
+  name: string;
+  slug: string;
+  description: string | null;
+  parent_topic_id: string | null;
+  sort_order: number;
+  created_at: string;
+}
+
+export interface QuestionReference {
+  title: string;
+  url?: string | null;
+  page?: string | null;
+  type: ReferenceType;
+}
+
+export interface Choice {
+  id: string;
+  text: string;
+  image_url?: string | null;
+  is_correct: boolean;
+}
+
+export interface Question {
+  id: string;
+  bank_id: string | null;
+  subject_id: string | null;
+  topic_id: string | null;
+  creator_id: string | null;
+  is_official: boolean;
+  question_type: QuestionType;
+  prompt: string;
+  prompt_image_url: string | null;
+  choices: Choice[];
+  correct_answer: string;
+  explanation: string | null;
+  explanation_image_url: string | null;
+  references: QuestionReference[];
+  fun_facts: string[];
+  mnemonics: string | null;
+  related_topic_ids: string[];
+  difficulty: DifficultyLevel;
+  difficulty_rating: number;
+  discrimination_rating: number;
+  has_3d_component: boolean;
+  three_d_model_id: string | null;
+  model_callout_id: string | null;
+  image_urls: string[];
+  global_times_answered: number;
+  global_times_correct: number;
+  global_accuracy_percentage: number;
+  global_avg_response_time_ms: number;
+  tags: string[];
+  status: ContentStatus;
+  sort_order: number;
+  created_at: string;
+  updated_at: string;
+  // Legacy fields (may exist on old records)
+  exam_domain_id?: string | null;
+  is_multi_select?: boolean;
+  media_url?: string | null;
+}
+
+export interface ReviewSession {
+  id: string;
+  user_id: string;
+  exam_profile_id: string;
+  session_type: NewSessionType;
+  template_id: string | null;
+  retake_of_session_id: string | null;
+  source_subject_id: string | null;
+  source_topic_id: string | null;
+  source_3d_model_id: string | null;
+  config: SessionConfig;
+  name: string | null;
+  total_questions: number;
+  questions_answered: number;
+  questions_correct: number;
+  questions_incorrect: number;
+  questions_skipped: number;
+  score_percentage: number | null;
+  total_time_ms: number;
+  avg_response_time_ms: number | null;
+  subject_scores: SubjectScore[];
+  status: SessionStatus;
+  started_at: string;
+  paused_at: string | null;
+  completed_at: string | null;
+  created_at: string;
+}
+
+export interface SubjectScore {
+  subject_id: string;
+  subject_name: string;
+  total: number;
+  correct: number;
+  percentage: number;
+  avg_time_ms: number;
+}
+
+export interface SessionConfig {
+  subjects?: { subject_id: string; question_count: number; difficulty?: string }[];
+  specific_question_ids?: string[];
+  timer_mode?: "none" | "per_question" | "total";
+  timer_seconds?: number | null;
+  shuffle_questions?: boolean;
+  shuffle_choices?: boolean;
+  show_immediate_feedback?: boolean;
+}
+
+export interface SessionQuestion {
+  id: string;
+  session_id: string;
+  question_id: string;
+  question_number: number;
+  subject_id: string | null;
+  topic_id: string | null;
+  selected_answer: string | null;
+  is_correct: boolean | null;
+  response_time_ms: number | null;
+  confidence_level: number | null;
+  presented_at: string | null;
+  answered_at: string | null;
+  is_bookmarked: boolean;
+  is_skipped: boolean;
+  created_at: string;
+  questions?: Question;
+}
+
+export interface SessionTemplate {
+  id: string;
+  user_id: string;
+  exam_profile_id: string;
+  name: string;
+  description: string | null;
+  config: SessionConfig;
+  total_questions: number;
+  is_shared: boolean;
+  times_used: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface QuestionUserPerformance {
+  question_id: string;
+  user_id: string;
+  exam_profile_id: string;
+  subject_id: string | null;
+  topic_id: string | null;
+  times_seen: number;
+  times_correct: number;
+  times_incorrect: number;
+  times_skipped: number;
+  accuracy_percentage: number | null;
+  avg_response_time_ms: number | null;
+  fastest_response_ms: number | null;
+  last_attempt_correct: boolean | null;
+  last_attempted_at: string | null;
+}
+
+export interface SubjectMastery {
+  id: string;
+  user_id: string;
+  exam_profile_id: string;
+  subject_id: string;
+  total_attempted: number;
+  total_correct: number;
+  mastery_score: number;
+  theta: number;
+  avg_response_time_ms: number;
+  last_practiced_at: string | null;
+  updated_at: string;
+}
+
+export interface DailyUserStats {
+  id: string;
+  user_id: string;
+  exam_profile_id?: string;
+  date: string;
+  questions_attempted: number;
+  questions_correct: number;
+  total_study_time_ms: number;
+  review_mode_time_ms?: number;
+  session_mode_time_ms?: number;
+  three_d_time_ms?: number;
+  sessions_completed?: number;
+  subjects_studied: string[];
+  streak_maintained: boolean;
+  created_at: string;
+}
+
+export interface StudyTimeLog {
+  id: string;
+  user_id: string;
+  exam_profile_id: string;
+  mode: "review" | "session" | "3d_library" | "tutor";
+  session_id: string | null;
+  started_at: string;
+  ended_at: string | null;
+  duration_ms: number | null;
+  created_at: string;
+}
+
+// Legacy types kept for backward compat
 export interface ExamDomain {
   id: string;
   profession: string;
@@ -47,6 +308,7 @@ export interface QuestionBank {
   title: string;
   description: string | null;
   profession: string;
+  board_exam_id: string | null;
   exam_domain_id: string | null;
   is_official: boolean;
   is_marketplace: boolean;
@@ -58,40 +320,6 @@ export interface QuestionBank {
   total_ratings: number;
   total_purchases: number;
   tags: string[];
-  created_at: string;
-  updated_at: string;
-}
-
-export interface Choice {
-  id: string;
-  text: string;
-  is_correct: boolean;
-}
-
-export interface Question {
-  id: string;
-  bank_id: string;
-  exam_domain_id: string | null;
-  creator_id: string | null;
-  question_type: QuestionType;
-  prompt: string;
-  choices: Choice[] | null;
-  correct_answer: string;
-  is_multi_select: boolean;
-  media_url: string | null;
-  explanation: string | null;
-  explanation_references: string[] | null;
-  difficulty: DifficultyLevel;
-  difficulty_rating: number;
-  discrimination_rating: number;
-  has_3d_component: boolean;
-  three_d_model_ref: string | null;
-  image_urls: string[];
-  tags: string[];
-  times_answered: number;
-  times_correct: number;
-  status: ContentStatus;
-  sort_order: number;
   created_at: string;
   updated_at: string;
 }
@@ -147,6 +375,7 @@ export interface SrsQueueItem {
   id: string;
   user_id: string;
   question_id: string;
+  exam_profile_id?: string;
   next_review_at: string;
   interval_days: number;
   ease_factor: number;
@@ -160,6 +389,7 @@ export interface SrsQueueItem {
 export interface Document {
   id: string;
   user_id: string;
+  exam_profile_id?: string;
   filename: string;
   file_path: string;
   file_size_bytes: number | null;
@@ -180,18 +410,6 @@ export interface DomainMastery {
   theta: number;
   last_practiced_at: string | null;
   updated_at: string;
-}
-
-export interface DailyUserStats {
-  id: string;
-  user_id: string;
-  date: string;
-  questions_attempted: number;
-  questions_correct: number;
-  total_study_time_ms: number;
-  domains_studied: string[];
-  streak_maintained: boolean;
-  created_at: string;
 }
 
 export interface QuizConfig {
