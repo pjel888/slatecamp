@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -40,7 +40,12 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
   const [selectedExam, setSelectedExam] = useState<BoardExam | null>(null);
   const [targetDate, setTargetDate] = useState("");
   const [loading, setLoading] = useState(false);
+  const [nowMs, setNowMs] = useState<number | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    setNowMs(Date.now());
+  }, []);
 
   async function handleComplete() {
     if (!selectedExam) return;
@@ -83,7 +88,7 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
           <div
             key={s}
             className={`h-1.5 w-8 rounded-full transition-all ${
-              i <= step ? "bg-[var(--accent-blue)]" : "bg-border"
+              i <= step ? "bg-accent-blue" : "bg-border"
             }`}
           />
         ))}
@@ -128,7 +133,7 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
                   disabled={!isAvailable}
                   className={`relative flex flex-col items-center gap-3 rounded-xl border p-5 transition-all ${
                     isSelected
-                      ? "border-[var(--accent-blue)] bg-[var(--quiz-selected-bg)]"
+                      ? "border-accent-blue bg-quiz-selected-bg"
                       : isAvailable
                         ? "border-border hover:border-muted-foreground"
                         : "border-border opacity-50"
@@ -200,17 +205,17 @@ export function OnboardingWizard({ userId, boardExams = [] }: OnboardingWizardPr
       {/* Step 3: Complete */}
       {step === 3 && (
         <div className="space-y-6 text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[var(--success)]/10">
-            <Check className="h-8 w-8 text-[var(--success)]" />
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-success/10">
+            <Check className="h-8 w-8 text-success" />
           </div>
           <h2 className="text-xl font-semibold text-foreground">
             You&apos;re all set!
           </h2>
           <p className="text-muted-foreground">
             Your {selectedExam?.name} review starts now.
-            {targetDate &&
+            {targetDate && nowMs != null &&
               ` Your exam is in ${Math.ceil(
-                (new Date(targetDate).getTime() - Date.now()) /
+                (new Date(targetDate).getTime() - nowMs) /
                   (1000 * 60 * 60 * 24)
               )} days.`}
           </p>

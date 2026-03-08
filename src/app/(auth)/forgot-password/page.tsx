@@ -67,7 +67,7 @@ export default function ForgotPasswordPage() {
             </div>
 
             {error && (
-              <p className="text-sm text-[var(--color-signal-red)]">{error}</p>
+              <p className="text-sm text-color-signal-red">{error}</p>
             )}
 
             <Button type="submit" className="w-full" disabled={loading}>
@@ -79,7 +79,7 @@ export default function ForgotPasswordPage() {
         <p className="text-center text-sm text-muted-foreground">
           <Link
             href="/login"
-            className="font-medium text-foreground underline underline-offset-4 hover:text-[var(--color-signal-amber)]"
+            className="font-medium text-foreground underline underline-offset-4 hover:text-color-signal-amber"
           >
             Back to login
           </Link>

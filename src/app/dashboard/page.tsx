@@ -145,7 +145,7 @@ export default async function DashboardPage() {
             <Flame
               className={`h-4 w-4 ${
                 streak > 0
-                  ? "text-[var(--warning)]"
+                  ? "text-warning"
                   : "text-muted-foreground"
               }`}
               strokeWidth={1.5}
@@ -287,7 +287,7 @@ export default async function DashboardPage() {
                         : "—"}
                     </div>
                     <TrendingUp
-                      className="ml-auto h-3 w-3 text-[var(--success)]"
+                      className="ml-auto h-3 w-3 text-success"
                       strokeWidth={1.5}
                     />
                   </div>

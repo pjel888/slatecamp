@@ -25,10 +25,10 @@ export default async function SettingsPage() {
 
       {/* Admin Banner */}
       {profile.isAdmin && (
-        <Card className="border-[var(--color-signal-amber)]/30 bg-[var(--color-signal-amber)]/5">
+        <Card className="border-color-signal-amber/30 bg-color-signal-amber/5">
           <CardContent className="flex items-center justify-between pt-6">
             <div className="flex items-center gap-3">
-              <Shield className="h-5 w-5 text-[var(--color-signal-amber)]" strokeWidth={1.5} />
+              <Shield className="h-5 w-5 text-color-signal-amber" strokeWidth={1.5} />
               <div>
                 <p className="text-sm font-medium text-foreground">
                   Admin Account

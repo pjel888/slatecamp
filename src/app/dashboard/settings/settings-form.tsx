@@ -140,7 +140,7 @@ export function SettingsForm({ profile }: Props) {
           {saving ? "Saving..." : "Save Changes"}
         </Button>
         {saved && (
-          <span className="text-sm text-[var(--color-signal-green)]">
+          <span className="text-sm text-color-signal-green">
             Saved!
           </span>
         )}

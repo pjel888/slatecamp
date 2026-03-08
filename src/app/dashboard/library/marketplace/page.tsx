@@ -50,7 +50,7 @@ export default async function MarketplacePage() {
                       {bank.title}
                     </CardTitle>
                     {bank.average_rating > 0 && (
-                      <span className="flex items-center gap-1 text-xs text-[var(--color-result-gold)]">
+                      <span className="flex items-center gap-1 text-xs text-color-result-gold">
                         <Star className="h-3 w-3 fill-current" />
                         {bank.average_rating.toFixed(1)}
                       </span>

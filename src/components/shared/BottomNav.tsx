@@ -33,7 +33,7 @@ export function BottomNav() {
               href={href}
               className={`flex flex-1 flex-col items-center gap-1 py-3 text-[10px] transition-all ${
                 isActive
-                  ? "text-[var(--color-signal-amber)]"
+                  ? "text-color-signal-amber"
                   : "text-muted-foreground"
               }`}
             >

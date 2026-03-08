@@ -25,7 +25,7 @@ export default function RegisterPage() {
           Already have an account?{" "}
           <Link
             href="/login"
-            className="font-medium text-foreground underline underline-offset-4 hover:text-[var(--color-signal-amber)]"
+            className="font-medium text-foreground underline underline-offset-4 hover:text-color-signal-amber"
           >
             Log in
           </Link>

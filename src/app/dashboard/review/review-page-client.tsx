@@ -115,7 +115,7 @@ export function ReviewPageClient({
   if (view === "intro") {
     return (
       <div className="mx-auto flex max-w-[520px] flex-col items-center rounded-2xl border border-border bg-card p-8 shadow-sm">
-        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-[var(--amber)]/10 text-[var(--amber)]">
+        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-amber/10 text-amber">
           <ClipboardList className="h-12 w-12" strokeWidth={1.5} />
         </div>
         <h1 className="mt-6 text-xl font-semibold text-foreground">Good luck in your review!</h1>

@@ -2,7 +2,6 @@ import { DEMO_USER } from "./config";
 
 const uid = DEMO_USER.id;
 const now = new Date().toISOString();
-const today = now.split("T")[0];
 
 function daysAgo(n: number): string {
   const d = new Date();

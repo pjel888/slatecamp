@@ -57,7 +57,7 @@ export function QuickStartForm({ examProfileId, subjectId, subjectName }: QuickS
             onClick={() => setCount(c)}
             className={`flex-1 rounded-xl border py-3 text-center text-sm font-mono font-semibold transition-all ${
               count === c
-                ? "border-[var(--accent-blue)] bg-[var(--quiz-selected-bg)] text-[var(--accent-blue)]"
+                ? "border-accent-blue bg-quiz-selected-bg text-accent-blue"
                 : "border-border text-muted-foreground hover:border-muted-foreground"
             }`}
           >

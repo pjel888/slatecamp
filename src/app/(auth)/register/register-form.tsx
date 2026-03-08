@@ -93,7 +93,7 @@ export function RegisterForm() {
       </div>
 
       {error && (
-        <p className="text-sm text-[var(--color-signal-red)]">{error}</p>
+        <p className="text-sm text-color-signal-red">{error}</p>
       )}
 
       <Button type="submit" className="w-full" disabled={loading}>

@@ -132,13 +132,13 @@ export default async function LibraryBankPage({ params }: Props) {
                           key={choice.id}
                           className={`flex items-center gap-3 rounded-lg border px-3 py-2.5 ${
                             isCorrect
-                              ? "border-[var(--color-signal-green)] bg-[var(--color-signal-green)]/5"
+                              ? "border-color-signal-green bg-color-signal-green/5"
                               : "border-border/60 bg-muted/20"
                           }`}
                         >
                           {isCorrect && (
                             <CheckCircle2
-                              className="h-4 w-4 shrink-0 text-[var(--color-signal-green)]"
+                              className="h-4 w-4 shrink-0 text-color-signal-green"
                               strokeWidth={1.5}
                             />
                           )}
@@ -148,7 +148,7 @@ export default async function LibraryBankPage({ params }: Props) {
                             {choice.text}
                           </span>
                           {isCorrect && (
-                            <span className="ml-auto shrink-0 text-[10px] font-medium text-[var(--color-signal-green)]">
+                            <span className="ml-auto shrink-0 text-[10px] font-medium text-color-signal-green">
                               Correct
                             </span>
                           )}

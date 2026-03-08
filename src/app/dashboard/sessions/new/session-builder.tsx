@@ -15,7 +15,6 @@ import {
   Minus,
   Plus,
   Play,
-  Save,
 } from "lucide-react";
 import type { Subject, DifficultyMode } from "@/types/app";
 
@@ -118,9 +117,9 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
             onClick={() => i <= step && setStep(i)}
             className={`flex-1 rounded-full py-1.5 text-center text-xs font-medium transition-all ${
               i === step
-                ? "bg-[var(--accent-blue)] text-white"
+                ? "bg-accent-blue text-white"
                 : i < step
-                  ? "bg-[var(--accent-blue)]/10 text-[var(--accent-blue)]"
+                  ? "bg-accent-blue/10 text-accent-blue"
                   : "bg-secondary text-muted-foreground"
             }`}
           >
@@ -160,7 +159,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
                 <Card
                   key={subject.id}
                   className={`overflow-hidden transition-all ${
-                    isSelected ? "ring-1 ring-[var(--accent-blue)]" : ""
+                    isSelected ? "ring-1 ring-accent-blue" : ""
                   }`}
                 >
                   <div className="flex items-center justify-between p-4">
@@ -171,7 +170,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
                       <div
                         className={`flex h-5 w-5 items-center justify-center rounded border transition-all ${
                           isSelected
-                            ? "border-[var(--accent-blue)] bg-[var(--accent-blue)]"
+                            ? "border-accent-blue bg-accent-blue"
                             : "border-border"
                         }`}
                       >
@@ -238,7 +237,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
                   onClick={() => setDifficulty(d.value)}
                   className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all ${
                     difficulty === d.value
-                      ? "bg-[var(--accent-blue)] text-white"
+                      ? "bg-accent-blue text-white"
                       : "bg-secondary text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -257,7 +256,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
                   onClick={() => setTimerMode(mode)}
                   className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all ${
                     timerMode === mode
-                      ? "bg-[var(--accent-blue)] text-white"
+                      ? "bg-accent-blue text-white"
                       : "bg-secondary text-muted-foreground hover:text-foreground"
                   }`}
                 >
@@ -289,7 +288,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
             <button
               onClick={() => setShuffle(!shuffle)}
               className={`h-6 w-11 rounded-full transition-all ${
-                shuffle ? "bg-[var(--accent-blue)]" : "bg-border"
+                shuffle ? "bg-accent-blue" : "bg-border"
               }`}
             >
               <div className={`h-5 w-5 rounded-full bg-white shadow-sm transition-transform ${
@@ -303,7 +302,7 @@ export function SessionBuilder({ examProfileId, subjects }: SessionBuilderProps)
             <button
               onClick={() => setShowFeedback(!showFeedback)}
               className={`h-6 w-11 rounded-full transition-all ${
-                showFeedback ? "bg-[var(--accent-blue)]" : "bg-border"
+                showFeedback ? "bg-accent-blue" : "bg-border"
               }`}
             >
               <div className={`h-5 w-5 rounded-full bg-white shadow-sm transition-transform ${

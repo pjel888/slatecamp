@@ -49,7 +49,7 @@ export function QuizModeInfoPopover({ mode }: QuizModeInfoPopoverProps) {
       >
         <div className="space-y-3 p-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--amber)]/10 text-[var(--amber)]">
+            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber/10 text-amber">
               <Icon className="h-4 w-4" strokeWidth={1.5} />
             </div>
             <div className="min-w-0">
@@ -71,7 +71,7 @@ export function QuizModeInfoPopover({ mode }: QuizModeInfoPopoverProps) {
                   key={i}
                   className="flex items-start gap-2 text-[12px] leading-relaxed text-foreground/90"
                 >
-                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[var(--amber)]" />
+                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-amber" />
                   {step}
                 </li>
               ))}
@@ -79,7 +79,7 @@ export function QuizModeInfoPopover({ mode }: QuizModeInfoPopoverProps) {
           </div>
           <div className="rounded-lg border border-border/60 bg-muted/20 px-3 py-2">
             <p className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
-              <Ribbon className="h-3.5 w-3.5 shrink-0 text-[var(--amber)]" strokeWidth={1.5} />
+              <Ribbon className="h-3.5 w-3.5 shrink-0 text-amber" strokeWidth={1.5} />
               <span>
                 <strong className="text-foreground">Best for:</strong> {mode.bestFor}
               </span>

@@ -1,25 +1,29 @@
-"use client";
+'use client'
 
-import { useState, useCallback, useRef, useEffect } from "react";
-import { fetchReviewQuestions, logReviewInteraction } from "./actions";
-import { AnswerResultStrip } from "@/components/quiz/answer-result-strip";
-import { Button } from "@/components/ui/button";
-import { ChevronUp, Check, X } from "lucide-react";
-import type { Question, Subject, Choice } from "@/types/app";
+import { useState, useCallback, useRef, useEffect } from 'react'
+import Image from 'next/image'
+import { fetchReviewQuestions, logReviewInteraction } from './actions'
+import { AnswerResultStrip } from '@/components/quiz/answer-result-strip'
+import { Button } from '@/components/ui/button'
+import { Check, X, ChevronRight } from 'lucide-react'
+import type { Question, Subject, Choice } from '@/types/app'
 
-function isSelectionCorrect(selectedIds: string[], correctAnswer: string): boolean {
-  const correctSet = new Set(correctAnswer.split(",").map((s) => s.trim()));
-  const selectedSet = new Set(selectedIds);
-  if (correctSet.size !== selectedSet.size) return false;
-  return [...correctSet].every((id) => selectedSet.has(id));
+function isSelectionCorrect(
+  selectedIds: string[],
+  correctAnswer: string,
+): boolean {
+  const correctSet = new Set(correctAnswer.split(',').map((s) => s.trim()))
+  const selectedSet = new Set(selectedIds)
+  if (correctSet.size !== selectedSet.size) return false
+  return [...correctSet].every((id) => selectedSet.has(id))
 }
 
 interface ReviewFeedProps {
-  examProfileId: string;
-  subjects: Subject[];
+  examProfileId: string
+  subjects: Subject[]
   /** Subject to filter by, or null/undefined for random from all subjects. */
-  initialSubjectId?: string | null;
-  initialQuestions: Question[];
+  initialSubjectId?: string | null
+  initialQuestions: Question[]
 }
 
 export function ReviewFeed({
@@ -28,141 +32,158 @@ export function ReviewFeed({
   initialSubjectId,
   initialQuestions,
 }: ReviewFeedProps) {
-  const [questions, setQuestions] = useState<Question[]>(initialQuestions as Question[]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [questions, setQuestions] = useState<Question[]>(
+    initialQuestions as Question[],
+  )
+  const [currentIndex, setCurrentIndex] = useState(0)
   /** Current selection before "Check Answer". */
-  const [selectedChoiceIds, setSelectedChoiceIds] = useState<string[]>([]);
+  const [selectedChoiceIds, setSelectedChoiceIds] = useState<string[]>([])
   /** After "Check Answer", we store result for this question. */
-  const [answeredResult, setAnsweredResult] = useState<{ correct: boolean } | null>(null);
-  const [subjectFilter, setSubjectFilter] = useState<string | null>(initialSubjectId ?? null);
+  const [answeredResult, setAnsweredResult] = useState<{
+    correct: boolean
+  } | null>(null)
+  const [subjectFilter, setSubjectFilter] = useState<string | null>(
+    initialSubjectId ?? null,
+  )
   const [cursor, setCursor] = useState<string | null>(
     initialQuestions.length > 0
       ? initialQuestions[initialQuestions.length - 1].created_at
-      : null
-  );
-  const [loadingMore, setLoadingMore] = useState(false);
-  const questionStartTime = useRef(Date.now());
-  const hasFetchedInitial = useRef(false);
+      : null,
+  )
+  const [loadingMore, setLoadingMore] = useState(false)
+  const questionStartTime = useRef(0)
+  const hasFetchedInitial = useRef(false)
+
+  useEffect(() => {
+    questionStartTime.current = Date.now()
+  }, [currentIndex])
 
   // When mounted with no initial questions (e.g. from review landing flow), fetch first page
   useEffect(() => {
-    if (hasFetchedInitial.current || !examProfileId) return;
-    if (questions.length > 0) return;
-    hasFetchedInitial.current = true;
+    if (hasFetchedInitial.current || !examProfileId) return
+    if (questions.length > 0) return
+    hasFetchedInitial.current = true
     fetchReviewQuestions({
       examProfileId,
       subjectId: initialSubjectId ?? undefined,
       limit: 10,
     }).then((r) => {
-      setQuestions((r.questions ?? []) as Question[]);
-      setCursor(r.nextCursor);
-    });
-  }, [examProfileId, initialSubjectId]);
+      setQuestions((r.questions ?? []) as Question[])
+      setCursor(r.nextCursor)
+    })
+  }, [examProfileId, initialSubjectId, questions.length])
 
-  const currentQuestion = questions[currentIndex] as Question | undefined;
-  const isAnswered = answeredResult !== null;
-  const choices = (currentQuestion?.choices ?? []) as Choice[];
-  const isMultiSelect = currentQuestion?.is_multi_select ?? false;
-  const correctChoiceIds = (currentQuestion?.correct_answer ?? "").split(",").map((s) => s.trim());
-  const correctChoices = choices.filter((c) => correctChoiceIds.includes(c.id));
-  const correctChoiceText = correctChoices.map((c) => c.text).join(", ");
-  const canCheckAnswer = selectedChoiceIds.length > 0 && !isAnswered;
+  const currentQuestion = questions[currentIndex] as Question | undefined
+  const isAnswered = answeredResult !== null
+  const choices = (currentQuestion?.choices ?? []) as Choice[]
+  const isMultiSelect = currentQuestion?.is_multi_select ?? false
+  const correctChoiceIds = (currentQuestion?.correct_answer ?? '')
+    .split(',')
+    .map((s) => s.trim())
+  const correctChoices = choices.filter((c) => correctChoiceIds.includes(c.id))
+  const correctChoiceText = correctChoices.map((c) => c.text).join(', ')
+  const canCheckAnswer = selectedChoiceIds.length > 0 && !isAnswered
 
   const loadMore = useCallback(async () => {
-    if (loadingMore || !cursor) return;
-    setLoadingMore(true);
+    if (loadingMore || !cursor) return
+    setLoadingMore(true)
     const result = await fetchReviewQuestions({
       examProfileId,
       subjectId: subjectFilter ?? undefined,
       cursor,
       limit: 10,
-    });
-    setQuestions((prev) => [...prev, ...(result.questions as Question[])]);
-    setCursor(result.nextCursor);
-    setLoadingMore(false);
-  }, [examProfileId, subjectFilter, cursor, loadingMore]);
+    })
+    setQuestions((prev) => [...prev, ...(result.questions as Question[])])
+    setCursor(result.nextCursor)
+    setLoadingMore(false)
+  }, [examProfileId, subjectFilter, cursor, loadingMore])
 
   useEffect(() => {
     if (currentIndex >= questions.length - 3) {
-      loadMore();
+      loadMore()
     }
-  }, [currentIndex, questions.length, loadMore]);
+  }, [currentIndex, questions.length, loadMore])
 
   useEffect(() => {
-    setSelectedChoiceIds([]);
-    setAnsweredResult(null);
-  }, [currentIndex]);
+    setSelectedChoiceIds([])
+    setAnsweredResult(null)
+  }, [currentIndex])
 
   const toggleChoice = useCallback(
     (choiceId: string) => {
-      if (isAnswered || !currentQuestion) return;
+      if (isAnswered || !currentQuestion) return
       setSelectedChoiceIds((prev) => {
         if (isMultiSelect) {
-          return prev.includes(choiceId) ? prev.filter((id) => id !== choiceId) : [...prev, choiceId];
+          return prev.includes(choiceId)
+            ? prev.filter((id) => id !== choiceId)
+            : [...prev, choiceId]
         }
-        return prev[0] === choiceId ? [] : [choiceId];
-      });
+        return prev[0] === choiceId ? [] : [choiceId]
+      })
     },
-    [isAnswered, currentQuestion, isMultiSelect]
-  );
+    [isAnswered, currentQuestion, isMultiSelect],
+  )
 
   async function handleCheckAnswer() {
-    if (!currentQuestion || !canCheckAnswer) return;
-    const correct = isSelectionCorrect(selectedChoiceIds, currentQuestion.correct_answer ?? "");
-    const timeMs = Date.now() - questionStartTime.current;
+    if (!currentQuestion || !canCheckAnswer) return
+    const correct = isSelectionCorrect(
+      selectedChoiceIds,
+      currentQuestion.correct_answer ?? '',
+    )
+    const timeMs = Date.now() - questionStartTime.current
 
-    setAnsweredResult({ correct });
+    setAnsweredResult({ correct })
 
     logReviewInteraction({
       examProfileId,
       questionId: currentQuestion.id,
       initialTapCorrect: correct,
       timeOnQuestionMs: timeMs,
-    });
+    })
   }
 
   function handleNext() {
-    setAnsweredResult(null);
-    setSelectedChoiceIds([]);
-    setCurrentIndex((prev) => prev + 1);
-    questionStartTime.current = Date.now();
+    setAnsweredResult(null)
+    setSelectedChoiceIds([])
+    setCurrentIndex((prev) => prev + 1)
+    questionStartTime.current = Date.now()
   }
 
   async function handleSubjectChange(subjectId: string | null) {
-    setSubjectFilter(subjectId);
-    setCurrentIndex(0);
-    setSelectedChoiceIds([]);
-    setAnsweredResult(null);
-    setCursor(null);
+    setSubjectFilter(subjectId)
+    setCurrentIndex(0)
+    setSelectedChoiceIds([])
+    setAnsweredResult(null)
+    setCursor(null)
 
     const result = await fetchReviewQuestions({
       examProfileId,
       subjectId: subjectId ?? undefined,
       limit: 10,
-    });
-    setQuestions(result.questions as Question[]);
-    setCursor(result.nextCursor);
-    questionStartTime.current = Date.now();
+    })
+    setQuestions(result.questions as Question[])
+    setCursor(result.nextCursor)
+    questionStartTime.current = Date.now()
   }
 
   if (!currentQuestion) {
     return (
-      <div className="flex h-[60vh] items-center justify-center">
-        <p className="text-muted-foreground">No questions available yet.</p>
+      <div className='flex h-[60vh] items-center justify-center'>
+        <p className='text-muted-foreground'>No questions available yet.</p>
       </div>
-    );
+    )
   }
 
   return (
-    <div className="mx-auto max-w-[720px]">
+    <div className='mx-auto max-w-[720px]'>
       {/* Subject Filter */}
-      <div className="mb-6 flex gap-2 overflow-x-auto pb-2 scrollbar-none">
+      <div className='mb-6 flex gap-2 overflow-x-auto pb-2 scrollbar-none'>
         <button
           onClick={() => handleSubjectChange(null)}
           className={`shrink-0 rounded-full px-4 py-1.5 text-xs font-medium transition-all ${
             !subjectFilter
-              ? "bg-[var(--accent-blue)] text-white"
-              : "bg-secondary text-muted-foreground hover:text-foreground"
+              ? 'bg-accent-blue text-white'
+              : 'bg-secondary text-muted-foreground hover:text-foreground'
           }`}
         >
           All Subjects
@@ -173,8 +194,8 @@ export function ReviewFeed({
             onClick={() => handleSubjectChange(s.id)}
             className={`shrink-0 rounded-full px-4 py-1.5 text-xs font-medium transition-all ${
               subjectFilter === s.id
-                ? "bg-[var(--accent-blue)] text-white"
-                : "bg-secondary text-muted-foreground hover:text-foreground"
+                ? 'bg-accent-blue text-white'
+                : 'bg-secondary text-muted-foreground hover:text-foreground'
             }`}
           >
             {s.short_name ?? s.name}
@@ -183,26 +204,28 @@ export function ReviewFeed({
       </div>
 
       {/* Question card: fixed structure so layout doesn't shift */}
-      <div className="flex min-h-[520px] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+      <div className='flex min-h-[520px] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm'>
         {/* Scrollable body */}
-        <div className="min-h-0 flex-1 overflow-y-auto p-6">
+        <div className='min-h-0 flex-1 overflow-y-auto p-6'>
           {/* Prompt — min height for stability */}
-          <div className="min-h-[3.5rem]">
-            <p className="text-base font-medium leading-relaxed text-foreground">
+          <div className='min-h-14'>
+            <p className='text-base font-medium leading-relaxed text-foreground'>
               {currentQuestion.prompt}
             </p>
           </div>
 
           {/* Fixed-height image slot */}
-          <div className="mt-4 flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted/30">
+          <div className='relative mt-4 flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted/30'>
             {currentQuestion.prompt_image_url ? (
-              <img
+              <Image
                 src={currentQuestion.prompt_image_url}
-                alt="Question illustration"
-                className="h-full w-full object-contain"
+                alt='Question illustration'
+                fill
+                className='object-contain'
+                sizes='(max-width: 768px) 100vw, 720px'
               />
             ) : (
-              <span className="text-xs text-muted-foreground/50">No image</span>
+              <span className='text-xs text-muted-foreground/50'>No image</span>
             )}
           </div>
 
@@ -211,78 +234,91 @@ export function ReviewFeed({
             correct={!!answeredResult?.correct}
             correctChoiceText={correctChoiceText}
             question={currentQuestion}
-            threeDLabel="See in 3D"
+            threeDLabel='See in 3D'
           />
 
           {/* Choices — fixed min height */}
-          <div className="mt-6 min-h-[248px] space-y-3">
+          <div className='mt-6 min-h-[248px] space-y-3'>
             {choices.map((choice, i) => {
-              const isSelected = selectedChoiceIds.includes(choice.id);
-              const isCorrectChoice = choice.is_correct;
-              let stateClass = "border-border bg-card hover:border-muted-foreground transition-all duration-150";
+              const isSelected = selectedChoiceIds.includes(choice.id)
+              const isCorrectChoice = choice.is_correct
+              let stateClass =
+                'border-border bg-card hover:border-muted-foreground transition-all duration-150'
 
               if (isAnswered) {
                 if (isCorrectChoice) {
-                  stateClass = "border-[var(--quiz-correct-border)] bg-[var(--quiz-correct-bg)]";
+                  stateClass = 'border-quiz-correct-border bg-quiz-correct-bg'
                 } else if (isSelected && !isCorrectChoice) {
-                  stateClass = "border-[var(--quiz-wrong-border)] bg-[var(--quiz-wrong-bg)]";
+                  stateClass = 'border-quiz-wrong-border bg-quiz-wrong-bg'
                 } else {
-                  stateClass = "border-border bg-card opacity-50";
+                  stateClass = 'border-border bg-card opacity-50'
                 }
               } else if (isSelected) {
-                stateClass = "border-[var(--accent-blue)] bg-[var(--quiz-selected-bg)]";
+                stateClass = 'border-accent-blue bg-quiz-selected-bg'
               }
 
               return (
                 <button
                   key={choice.id}
-                  type="button"
+                  type='button'
                   onClick={() => toggleChoice(choice.id)}
                   disabled={isAnswered}
                   className={`flex min-h-[56px] w-full items-center gap-3 rounded-xl border px-4 py-3 text-left ${stateClass}`}
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-current/20 text-xs font-semibold text-muted-foreground">
+                  <span className='flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-current/20 text-xs font-semibold text-muted-foreground'>
                     {String.fromCharCode(65 + i)}
                   </span>
-                  <span className="min-w-0 flex-1 text-sm text-foreground line-clamp-2">{choice.text}</span>
+                  <span className='min-w-0 flex-1 text-sm text-foreground line-clamp-2'>
+                    {choice.text}
+                  </span>
                   {isAnswered && isCorrectChoice && (
-                    <Check className="h-5 w-5 shrink-0 text-[var(--success)]" strokeWidth={2} />
+                    <Check
+                      className='h-5 w-5 shrink-0 text-success'
+                      strokeWidth={2}
+                    />
                   )}
                   {isAnswered && isSelected && !isCorrectChoice && (
-                    <X className="h-5 w-5 shrink-0 text-[var(--danger)]" strokeWidth={2} />
+                    <X
+                      className='h-5 w-5 shrink-0 text-danger'
+                      strokeWidth={2}
+                    />
                   )}
                 </button>
-              );
+              )
             })}
           </div>
-
         </div>
 
-        {/* Fixed action bar — same position every time */}
-        <div className="shrink-0 border-t border-border bg-card px-6 py-4">
-          {!isAnswered ? (
-            <>
-              <Button
-                onClick={handleCheckAnswer}
-                disabled={!canCheckAnswer}
-                className="h-12 w-full gap-2 text-base font-medium"
-              >
-                <Check className="h-5 w-5" strokeWidth={2} />
-                Check Answer
-              </Button>
-              {selectedChoiceIds.length > 0 && (
-                <p className="mt-2 text-center text-xs text-muted-foreground">
-                  {isMultiSelect ? "You can select multiple options." : "Tap an option to change your answer."}
-                </p>
-              )}
-            </>
-          ) : (
-            <Button onClick={handleNext} className="h-12 w-full gap-2 text-base font-medium">
-              Next Question <ChevronUp className="h-5 w-5" strokeWidth={1.5} />
+        {/* Fixed action bar — both buttons always visible, enabled/disabled by state */}
+        <div className='shrink-0 border-t border-border bg-card px-6 py-4'>
+          <div className='flex gap-3'>
+            <Button
+              onClick={handleCheckAnswer}
+              disabled={!canCheckAnswer}
+              className='h-12 flex-1 gap-2 text-base font-medium bg-blue-500'
+            >
+              <Check className='h-5 w-5' strokeWidth={2} />
+              Check Answer
             </Button>
+            <Button
+              onClick={handleNext}
+              disabled={!isAnswered}
+              variant='default'
+              className='h-12 flex-1 gap-2 text-base font-medium'
+            >
+              Next Question{' '}
+              <ChevronRight className='h-5 w-5' strokeWidth={1.5} />
+            </Button>
+          </div>
+          {selectedChoiceIds.length > 0 && !isAnswered && (
+            <p className='mt-2 text-center text-xs text-muted-foreground'>
+              {isMultiSelect
+                ? 'You can select multiple options.'
+                : 'Tap an option to change your answer.'}
+            </p>
           )}
         </div>
       </div>
     </div>
-  );
+  )
 }

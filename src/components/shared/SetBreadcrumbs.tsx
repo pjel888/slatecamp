@@ -7,10 +7,10 @@ import { useBreadcrumb } from "@/lib/context/breadcrumb-context";
 type Props = { items: BreadcrumbItem[] };
 
 export function SetBreadcrumbs({ items }: Props) {
-  const { setBreadcrumbs } = useBreadcrumb();
+  const ctx = useBreadcrumb();
   useEffect(() => {
-    setBreadcrumbs(items);
-    return () => setBreadcrumbs(null);
-  }, [items, setBreadcrumbs]);
+    ctx?.setBreadcrumbs(items);
+    return () => ctx?.setBreadcrumbs(null);
+  }, [items, ctx]);
   return null;
 }

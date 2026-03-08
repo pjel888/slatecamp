@@ -71,10 +71,10 @@ export function DevPanel({ currentTier, effectiveTier, flags }: Props) {
   return (
     <div className="space-y-6">
       {/* Status Overview */}
-      <Card className="border-[var(--color-signal-amber)]/30 bg-[var(--color-signal-amber)]/5">
+      <Card className="border-color-signal-amber/30 bg-color-signal-amber/5">
         <CardContent className="flex items-start gap-4 pt-6">
           <Shield
-            className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-signal-amber)]"
+            className="mt-0.5 h-5 w-5 shrink-0 text-color-signal-amber"
             strokeWidth={1.5}
           />
           <div className="space-y-2">

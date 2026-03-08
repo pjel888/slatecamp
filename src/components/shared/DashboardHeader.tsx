@@ -1,9 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronLeft, ChevronRight, BookOpen, ClipboardList } from "lucide-react";
+import { ChevronLeft, ChevronRight, BookOpen, ClipboardList, X } from "lucide-react";
 import { useBreadcrumb } from "@/lib/context/breadcrumb-context";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 /** Path segment to display label; last segment is current page. */
 const SEGMENT_LABELS: Record<string, string> = {
@@ -40,10 +49,16 @@ function getBreadcrumbs(pathname: string): { href: string; label: string }[] {
   return crumbs;
 }
 
+/** Show "Quiz mode" / "Review mode" when in an active session or on the review feed. */
 function getMode(pathname: string): "review" | "quiz" | null {
+  // Review page is the doomscroll feed — show "Review mode" when on it.
   if (pathname.startsWith("/dashboard/review")) return "review";
-  if (pathname.startsWith("/dashboard/quiz")) return "quiz";
-  return null;
+  // Quiz: show "Quiz mode" when inside a session (/dashboard/quiz/[sessionId] or .../summary).
+  if (!pathname.startsWith("/dashboard/quiz")) return null;
+  const segments = pathname.split("/").filter(Boolean);
+  if (segments.length < 3) return null; // /dashboard/quiz landing
+  if (segments[2] === "new") return null; // session builder, not active quiz
+  return "quiz";
 }
 
 export function DashboardHeader() {
@@ -54,55 +69,107 @@ export function DashboardHeader() {
   const inQuizMode = mode !== null;
   const crumbs = inQuizMode ? null : (customCrumbs ?? getBreadcrumbs(pathname));
   const showBack = !inQuizMode && crumbs && crumbs.length > 1;
+  const [exitDialogOpen, setExitDialogOpen] = useState(false);
+
+  function handleConfirmExit() {
+    setExitDialogOpen(false);
+    router.push("/dashboard");
+  }
 
   return (
-    <header className="sticky top-0 z-40 flex h-12 shrink-0 items-center gap-3 border-b border-border/40 bg-background/95 px-4 backdrop-blur-sm">
-      {showBack && (
-        <button
-          type="button"
-          onClick={() => router.back()}
-          className="flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
-          aria-label="Go back"
-        >
-          <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
-        </button>
-      )}
+    <>
+      <header className="sticky top-0 z-40 flex h-12 shrink-0 items-center gap-3 border-b border-border/40 bg-background/95 px-4 backdrop-blur-sm">
+        {showBack && (
+          <button
+            type="button"
+            onClick={() => router.back()}
+            className="flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+            aria-label="Go back"
+          >
+            <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
+          </button>
+        )}
+        {mode && (
+          <div className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border/60 bg-muted/30 px-2.5 py-1">
+            {mode === "review" ? (
+              <BookOpen className="h-3.5 w-3.5 text-muted-foreground" strokeWidth={1.5} />
+            ) : (
+              <ClipboardList className="h-3.5 w-3.5 text-muted-foreground" strokeWidth={1.5} />
+            )}
+            <span className="text-xs font-medium text-foreground">
+              {mode === "review" ? "Review mode" : "Quiz mode"}
+            </span>
+          </div>
+        )}
+        {crumbs && crumbs.length > 0 && (
+          <nav aria-label="Breadcrumb" className="flex min-w-0 flex-1 items-center gap-1 text-sm">
+            {crumbs.map((crumb, i) => {
+              const isLast = i === crumbs.length - 1;
+              return (
+                <span key={crumb.href} className="flex items-center gap-1">
+                  {i > 0 && (
+                    <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground/60" strokeWidth={1.5} />
+                  )}
+                  {isLast ? (
+                    <span className="truncate font-medium text-foreground">{crumb.label}</span>
+                  ) : (
+                    <Link
+                      href={crumb.href}
+                      className="truncate text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {crumb.label}
+                    </Link>
+                  )}
+                </span>
+              );
+            })}
+          </nav>
+        )}
+        {mode && (
+          <>
+            <div className="min-w-0 flex-1" aria-hidden="true" />
+            <button
+              type="button"
+              onClick={() => setExitDialogOpen(true)}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-danger text-white transition-all duration-150 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-danger focus-visible:ring-offset-2"
+              aria-label={mode === "review" ? "Exit Review" : "Exit Quiz"}
+              title={mode === "review" ? "Exit Review" : "Exit Quiz"}
+            >
+              <X className="h-4 w-4" strokeWidth={2.5} />
+            </button>
+          </>
+        )}
+      </header>
+
       {mode && (
-        <div className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border/60 bg-muted/30 px-2.5 py-1">
-          {mode === "review" ? (
-            <BookOpen className="h-3.5 w-3.5 text-muted-foreground" strokeWidth={1.5} />
-          ) : (
-            <ClipboardList className="h-3.5 w-3.5 text-muted-foreground" strokeWidth={1.5} />
-          )}
-          <span className="text-xs font-medium text-foreground">
-            {mode === "review" ? "Review mode" : "Quiz mode"}
-          </span>
-        </div>
+        <Dialog open={exitDialogOpen} onOpenChange={setExitDialogOpen}>
+          <DialogContent
+            showCloseButton={false}
+            className="sm:max-w-[380px]"
+          >
+            <DialogTitle>Are you sure you want to exit?</DialogTitle>
+            <DialogDescription>
+              Your progress in this {mode === "review" ? "review" : "quiz"} will not be saved. You can come back anytime.
+            </DialogDescription>
+            <DialogFooter className="mt-4 gap-2 border-t border-border bg-muted/30 p-4 sm:flex-row">
+              <Button
+                variant="outline"
+                onClick={() => setExitDialogOpen(false)}
+                className="flex-1 sm:flex-initial"
+              >
+                No, stay
+              </Button>
+              <Button
+                variant="destructive"
+                onClick={handleConfirmExit}
+                className="flex-1 sm:flex-initial"
+              >
+                Yes, exit
+              </Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       )}
-      {crumbs && crumbs.length > 0 && (
-        <nav aria-label="Breadcrumb" className="flex min-w-0 flex-1 items-center gap-1 text-sm">
-          {crumbs.map((crumb, i) => {
-            const isLast = i === crumbs.length - 1;
-            return (
-              <span key={crumb.href} className="flex items-center gap-1">
-                {i > 0 && (
-                  <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground/60" strokeWidth={1.5} />
-                )}
-                {isLast ? (
-                  <span className="truncate font-medium text-foreground">{crumb.label}</span>
-                ) : (
-                  <Link
-                    href={crumb.href}
-                    className="truncate text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {crumb.label}
-                  </Link>
-                )}
-              </span>
-            );
-          })}
-        </nav>
-      )}
-    </header>
+    </>
   );
 }

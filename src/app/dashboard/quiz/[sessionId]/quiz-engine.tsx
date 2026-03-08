@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { submitAnswer, completeSession, markQuestionPresented } from "../actions";
 import { AnswerResultStrip } from "@/components/quiz/answer-result-strip";
@@ -51,11 +52,11 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
     }
     return map;
   });
-  const questionStartRef = useRef(Date.now());
+  const questionStartRef = useRef(0);
 
   const sq = sessionQuestions[currentIdx];
   const question = sq?.questions as Question | undefined;
-  const choices = (question?.choices ?? []) as Choice[];
+  const choices = useMemo(() => (question?.choices ?? []) as Choice[], [question?.choices]);
   const isMultiSelect = question?.is_multi_select ?? false;
   const answered = sq ? answeredMap[sq.id] : undefined;
   const isAnswered = !!answered;
@@ -63,6 +64,10 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
   const totalQuestions = sessionQuestions.length;
   const progress = Object.keys(answeredMap).length;
   const canCheckAnswer = selectedChoiceIds.length > 0 && !isAnswered;
+
+  useEffect(() => {
+    questionStartRef.current = Date.now();
+  }, [currentIdx]);
 
   useEffect(() => {
     if (sq && !sq.presented_at) {
@@ -88,6 +93,37 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
     [isAnswered, question, isMultiSelect]
   );
 
+  const handleCheckAnswer = useCallback(async () => {
+    if (!sq || !question || !canCheckAnswer || isSubmitting) return;
+    setIsSubmitting(true);
+    const answerString = selectedChoiceIds.slice().sort().join(",");
+    const correct = isSelectionCorrect(selectedChoiceIds, question.correct_answer ?? "");
+    const responseTime = Date.now() - questionStartRef.current;
+
+    setAnsweredMap((prev) => ({ ...prev, [sq.id]: { answer: answerString, correct } }));
+
+    await submitAnswer({
+      sessionQuestionId: sq.id,
+      sessionId: session.id,
+      selectedAnswer: answerString,
+      isCorrect: correct,
+      responseTimeMs: responseTime,
+    });
+
+    setIsSubmitting(false);
+  }, [sq, question, canCheckAnswer, isSubmitting, selectedChoiceIds, session.id]);
+
+  const handleNext = useCallback(async () => {
+    if (currentIdx + 1 >= totalQuestions) {
+      await completeSession(session.id);
+      router.push(`/dashboard/quiz/${session.id}/summary`);
+      return;
+    }
+    setSelectedChoiceIds([]);
+    setCurrentIdx((prev) => prev + 1);
+    questionStartRef.current = Date.now();
+  }, [currentIdx, totalQuestions, session.id, router]);
+
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (!question) return;
@@ -108,7 +144,7 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
         handleCheckAnswer();
       }
     },
-    [question, isAnswered, choices, canCheckAnswer, toggleChoice]
+    [question, isAnswered, choices, canCheckAnswer, toggleChoice, handleNext, handleCheckAnswer, router]
   );
 
   useEffect(() => {
@@ -116,43 +152,12 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
-  async function handleCheckAnswer() {
-    if (!sq || !question || !canCheckAnswer || isSubmitting) return;
-    setIsSubmitting(true);
-    const answerString = selectedChoiceIds.slice().sort().join(",");
-    const correct = isSelectionCorrect(selectedChoiceIds, question.correct_answer ?? "");
-    const responseTime = Date.now() - questionStartRef.current;
-
-    setAnsweredMap((prev) => ({ ...prev, [sq.id]: { answer: answerString, correct } }));
-
-    await submitAnswer({
-      sessionQuestionId: sq.id,
-      sessionId: session.id,
-      selectedAnswer: answerString,
-      isCorrect: correct,
-      responseTimeMs: responseTime,
-    });
-
-    setIsSubmitting(false);
-  }
-
-  async function handleNext() {
-    if (currentIdx + 1 >= totalQuestions) {
-      await completeSession(session.id);
-      router.push(`/dashboard/quiz/${session.id}/summary`);
-      return;
-    }
-    setSelectedChoiceIds([]);
-    setCurrentIdx((prev) => prev + 1);
-    questionStartRef.current = Date.now();
-  }
-
   if (showIntro) {
     const sessionLabel = session.name ?? SESSION_TYPE_LABELS[session.session_type] ?? "Quiz";
     const subjectCount = session.config?.subjects?.length ?? 0;
     return (
       <div className="mx-auto flex max-w-[520px] flex-col items-center rounded-2xl border border-border bg-card p-8 shadow-sm">
-        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-[var(--amber)]/10 text-[var(--amber)]">
+        <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-amber/10 text-amber">
           <ClipboardList className="h-12 w-12" strokeWidth={1.5} />
         </div>
         <h1 className="mt-6 text-xl font-semibold text-foreground">Good luck in taking this exam!</h1>
@@ -210,7 +215,7 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
         </div>
         <div className="mt-1.5 h-1 w-full rounded-full bg-secondary">
           <div
-            className="h-1 rounded-full bg-[var(--accent-blue)] transition-all duration-300"
+            className="h-1 rounded-full bg-accent-blue transition-all duration-300"
             style={{ width: `${(progress / totalQuestions) * 100}%` }}
           />
         </div>
@@ -221,19 +226,21 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
         {/* Scrollable body: prompt + image slot + choices + feedback */}
         <div className="min-h-0 flex-1 overflow-y-auto p-6">
           {/* Prompt — min height so short questions don't collapse */}
-          <div className="min-h-[3.5rem]">
+          <div className="min-h-14">
             <p className="text-base font-medium leading-relaxed text-foreground">
               {question.prompt}
             </p>
           </div>
 
           {/* Fixed-height image slot: always same space, image or placeholder */}
-          <div className="mt-4 flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted/30">
+          <div className="relative mt-4 flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted/30">
             {question.prompt_image_url ? (
-              <img
+              <Image
                 src={question.prompt_image_url}
                 alt="Question illustration"
-                className="h-full w-full object-contain"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 720px"
               />
             ) : (
               <span className="text-xs text-muted-foreground/50">No image</span>
@@ -257,14 +264,14 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
 
               if (isAnswered && showFeedback) {
                 if (isCorrectChoice) {
-                  stateClass = "border-[var(--quiz-correct-border)] bg-[var(--quiz-correct-bg)]";
+                  stateClass = "border-quiz-correct-border bg-quiz-correct-bg";
                 } else if (isSelected && !isCorrectChoice) {
-                  stateClass = "border-[var(--quiz-wrong-border)] bg-[var(--quiz-wrong-bg)]";
+                  stateClass = "border-quiz-wrong-border bg-quiz-wrong-bg";
                 } else {
                   stateClass = "border-border bg-card opacity-50";
                 }
               } else if (isSelected) {
-                stateClass = "border-[var(--accent-blue)] bg-[var(--quiz-selected-bg)]";
+                stateClass = "border-accent-blue bg-quiz-selected-bg";
               }
 
               return (
@@ -280,10 +287,10 @@ export function QuizEngine({ session, sessionQuestions }: QuizEngineProps) {
                   </span>
                   <span className="min-w-0 flex-1 text-sm text-foreground line-clamp-2">{choice.text}</span>
                   {isAnswered && showFeedback && isCorrectChoice && (
-                    <Check className="h-5 w-5 shrink-0 text-[var(--success)]" strokeWidth={2} />
+                    <Check className="h-5 w-5 shrink-0 text-success" strokeWidth={2} />
                   )}
                   {isAnswered && showFeedback && isSelected && !isCorrectChoice && (
-                    <X className="h-5 w-5 shrink-0 text-[var(--danger)]" strokeWidth={2} />
+                    <X className="h-5 w-5 shrink-0 text-danger" strokeWidth={2} />
                   )}
                 </button>
               );

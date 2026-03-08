@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -61,18 +61,18 @@ interface SidebarProps {
   tier?: UserTier | "dev";
 }
 
+function getInitialCollapsed(): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem("cerebro_sidebar_collapsed") === "true";
+}
+
 export function Sidebar({ isAdmin, userDisplay, tier = "free" }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(getInitialCollapsed);
   const displayName = userDisplay?.name ?? "User";
   const initials = getInitials(displayName);
   const displayTier = tier as DisplayTier;
-
-  useEffect(() => {
-    const stored = localStorage.getItem("cerebro_sidebar_collapsed");
-    if (stored === "true") setCollapsed(true);
-  }, []);
 
   function toggleCollapse() {
     setCollapsed((prev) => {
@@ -188,7 +188,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = "free" }: SidebarProps) {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link href="/dashboard/settings/billing" className="flex justify-center py-2" aria-label="Upgrade to Pro">
-              <Sparkles className="h-4 w-4 text-[var(--color-signal-amber)]" strokeWidth={1.5} />
+              <Sparkles className="h-4 w-4 text-color-signal-amber" strokeWidth={1.5} />
             </Link>
           </TooltipTrigger>
           <TooltipContent side="right" sideOffset={8}>
@@ -253,7 +253,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = "free" }: SidebarProps) {
                         href="/dashboard/settings/developer"
                         className={`flex items-center justify-center rounded-xl py-2 text-[13px] transition-all ${
                           pathname === "/dashboard/settings/developer"
-                            ? "bg-[var(--color-signal-amber)]/10 font-medium text-[var(--color-signal-amber)]"
+                            ? "bg-color-signal-amber/10 font-medium text-color-signal-amber"
                             : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
                         }`}
                       >
@@ -271,7 +271,7 @@ export function Sidebar({ isAdmin, userDisplay, tier = "free" }: SidebarProps) {
                 href="/dashboard/settings/developer"
                 className={`flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] transition-all ${
                   pathname === "/dashboard/settings/developer"
-                    ? "bg-[var(--color-signal-amber)]/10 font-medium text-[var(--color-signal-amber)]"
+                    ? "bg-color-signal-amber/10 font-medium text-color-signal-amber"
                     : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
                 }`}
               >
