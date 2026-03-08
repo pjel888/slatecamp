@@ -24,6 +24,7 @@ export function SubjectCardsGrid({
         const mastery = masteries.find((m) => m.subject_id === subject.id);
         const qCount = questionCounts[subject.id] ?? 0;
         const masteryPct = mastery ? Math.round(mastery.mastery_score) : null;
+        const pct = masteryPct ?? 0;
 
         return (
           <Card
@@ -62,19 +63,21 @@ export function SubjectCardsGrid({
                 )}
               </div>
 
-              {mastery && (
-                <div className="mt-3">
-                  <div className="h-1.5 w-full rounded-full bg-secondary">
-                    <div
-                      className="h-1.5 rounded-full transition-all"
-                      style={{
-                        width: `${Math.min(mastery.mastery_score, 100)}%`,
-                        backgroundColor: subject.color ?? "var(--accent-blue)",
-                      }}
-                    />
-                  </div>
+              <div className="mt-3">
+                <div className="mb-1 flex justify-between text-[10px] text-muted-foreground">
+                  <span>0%</span>
+                  <span>100%</span>
                 </div>
-              )}
+                <div className="h-1.5 w-full rounded-full bg-secondary">
+                  <div
+                    className="h-1.5 rounded-full transition-all"
+                    style={{
+                      width: `${Math.min(pct, 100)}%`,
+                      backgroundColor: subject.color ?? "var(--accent-blue)",
+                    }}
+                  />
+                </div>
+              </div>
 
               <div className="mt-4 flex gap-2">
                 <Link href={`/dashboard/review?subject=${subject.id}`} className="flex-1">

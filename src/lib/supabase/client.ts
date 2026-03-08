@@ -1,10 +1,10 @@
 "use client";
 
 import { createBrowserClient } from "@supabase/ssr";
+import { createMockSupabaseClient } from "@/lib/demo/mock-supabase";
 
 export function createClient() {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    const { createMockSupabaseClient } = require("@/lib/demo/mock-supabase");
     return createMockSupabaseClient() as ReturnType<typeof createBrowserClient>;
   }
 

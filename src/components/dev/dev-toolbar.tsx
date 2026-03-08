@@ -9,7 +9,6 @@ import {
   X,
   ExternalLink,
   Zap,
-  Shield,
   Box,
   Brain,
   RefreshCcw,
@@ -43,7 +42,7 @@ export function DevToolbar({
 }: DevToolbarProps) {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
-  const [effectiveTier, setEffectiveTier] = useState(initialEffective);
+  const [_effectiveTier, setEffectiveTier] = useState(initialEffective);
   const [flags, setFlags] = useState(initialFlags);
   const [saving, setSaving] = useState(false);
   const router = useRouter();

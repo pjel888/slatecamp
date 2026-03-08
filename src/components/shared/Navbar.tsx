@@ -98,7 +98,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
                     href="/dashboard/settings/developer"
                     className={`flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] transition-all ${
                       pathname === "/dashboard/settings/developer"
-                        ? "bg-[var(--color-signal-amber)]/10 font-medium text-[var(--color-signal-amber)]"
+                        ? "bg-color-signal-amber/10 font-medium text-color-signal-amber"
                         : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
                     }`}
                   >

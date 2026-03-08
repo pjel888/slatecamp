@@ -1,12 +1,11 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { BarChart3, TrendingUp, Clock, Target } from "lucide-react";
 import { DomainRadar } from "@/components/analytics/DomainRadar";
 import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import { StreakCalendar } from "@/components/analytics/StreakCalendar";
-import type { ExamProfile, ReviewSession, SubjectMastery, DailyUserStats, Subject } from "@/types/app";
+import type { ExamProfile, SubjectMastery, DailyUserStats, Subject } from "@/types/app";
 
 export const metadata = { title: "Analytics — Cerebro" };
 
@@ -105,8 +104,8 @@ export default async function AnalyticsPage() {
           <CardContent className="p-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-blue)]/10">
-                  <Target className="h-5 w-5 text-[var(--accent-blue)]" strokeWidth={1.5} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-blue/10">
+                  <Target className="h-5 w-5 text-accent-blue" strokeWidth={1.5} />
                 </div>
                 <div>
                   <p className="text-2xl font-semibold font-mono text-foreground">{totalQuestionsAnswered}</p>
@@ -121,8 +120,8 @@ export default async function AnalyticsPage() {
           <CardContent className="p-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--success)]/10">
-                  <TrendingUp className="h-5 w-5 text-[var(--success)]" strokeWidth={1.5} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success/10">
+                  <TrendingUp className="h-5 w-5 text-success" strokeWidth={1.5} />
                 </div>
                 <div>
                   <p className="text-2xl font-semibold font-mono text-foreground">{overallAccuracy}%</p>
@@ -137,8 +136,8 @@ export default async function AnalyticsPage() {
           <CardContent className="p-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--warning)]/10">
-                  <BarChart3 className="h-5 w-5 text-[var(--warning)]" strokeWidth={1.5} />
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-warning/10">
+                  <BarChart3 className="h-5 w-5 text-warning" strokeWidth={1.5} />
                 </div>
                 <div>
                   <p className="text-2xl font-semibold font-mono text-foreground">{(recentSessions ?? []).length}</p>

@@ -30,10 +30,10 @@ export function StreakCalendar({ stats }: Props) {
   function getIntensity(count: number): string {
     if (count === 0) return "bg-secondary";
     const ratio = count / maxCount;
-    if (ratio < 0.25) return "bg-[var(--color-signal-green)]/20";
-    if (ratio < 0.5) return "bg-[var(--color-signal-green)]/40";
-    if (ratio < 0.75) return "bg-[var(--color-signal-green)]/60";
-    return "bg-[var(--color-signal-green)]";
+    if (ratio < 0.25) return "bg-color-signal-green/20";
+    if (ratio < 0.5) return "bg-color-signal-green/40";
+    if (ratio < 0.75) return "bg-color-signal-green/60";
+    return "bg-color-signal-green";
   }
 
   return (
@@ -55,10 +55,10 @@ export function StreakCalendar({ stats }: Props) {
         <span>Less</span>
         <div className="flex gap-1">
           <div className="h-3 w-3 rounded-sm bg-secondary" />
-          <div className="h-3 w-3 rounded-sm bg-[var(--color-signal-green)]/20" />
-          <div className="h-3 w-3 rounded-sm bg-[var(--color-signal-green)]/40" />
-          <div className="h-3 w-3 rounded-sm bg-[var(--color-signal-green)]/60" />
-          <div className="h-3 w-3 rounded-sm bg-[var(--color-signal-green)]" />
+          <div className="h-3 w-3 rounded-sm bg-color-signal-green/20" />
+          <div className="h-3 w-3 rounded-sm bg-color-signal-green/40" />
+          <div className="h-3 w-3 rounded-sm bg-color-signal-green/60" />
+          <div className="h-3 w-3 rounded-sm bg-color-signal-green" />
         </div>
         <span>More</span>
       </div>

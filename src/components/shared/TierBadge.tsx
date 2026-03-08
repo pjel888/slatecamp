@@ -18,19 +18,19 @@ const TIER_CONFIG: Record<
     label: "Pro",
     icon: Zap,
     className:
-      "bg-[var(--color-signal-blue)]/10 text-[var(--color-signal-blue)] border-[var(--color-signal-blue)]/30",
+      "bg-color-signal-blue/10 text-color-signal-blue border-color-signal-blue/30",
   },
   max: {
     label: "Max",
     icon: Crown,
     className:
-      "bg-[var(--color-result-gold)]/10 text-[var(--color-result-gold)] border-[var(--color-result-gold)]/30",
+      "bg-color-result-gold/10 text-color-result-gold border-color-result-gold/30",
   },
   dev: {
     label: "Dev",
     icon: FlaskConical,
     className:
-      "bg-[var(--color-signal-amber)]/10 text-[var(--color-signal-amber)] border-[var(--color-signal-amber)]/30",
+      "bg-color-signal-amber/10 text-color-signal-amber border-color-signal-amber/30",
   },
 };
 

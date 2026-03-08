@@ -54,7 +54,7 @@ export default async function SessionSummaryPage({
     <div className="mx-auto max-w-[720px] space-y-6">
       {/* Score */}
       <div className="text-center">
-        <div className="inline-flex h-28 w-28 items-center justify-center rounded-full border-4 border-[var(--accent-blue)]">
+        <div className="inline-flex h-28 w-28 items-center justify-center rounded-full border-4 border-accent-blue">
           <span className="text-4xl font-bold font-mono text-foreground">
             {Math.round(scorePct)}%
           </span>
@@ -71,14 +71,14 @@ export default async function SessionSummaryPage({
       <div className="grid grid-cols-3 gap-3">
         <Card>
           <CardContent className="p-4 text-center">
-            <Check className="mx-auto h-5 w-5 text-[var(--success)]" strokeWidth={1.5} />
+            <Check className="mx-auto h-5 w-5 text-success" strokeWidth={1.5} />
             <p className="mt-1 text-2xl font-semibold font-mono text-foreground">{s.questions_correct}</p>
             <p className="text-xs text-muted-foreground">Correct</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4 text-center">
-            <X className="mx-auto h-5 w-5 text-[var(--danger)]" strokeWidth={1.5} />
+            <X className="mx-auto h-5 w-5 text-danger" strokeWidth={1.5} />
             <p className="mt-1 text-2xl font-semibold font-mono text-foreground">{s.questions_incorrect}</p>
             <p className="text-xs text-muted-foreground">Wrong</p>
           </CardContent>
@@ -142,7 +142,7 @@ export default async function SessionSummaryPage({
                   <div
                     key={sq.id}
                     className={`rounded-lg border p-4 ${
-                      isCorrect ? "border-border" : "border-[var(--color-signal-red)]/40"
+                      isCorrect ? "border-border" : "border-color-signal-red/40"
                     }`}
                   >
                     <div className="mb-2 flex items-center gap-2">
@@ -150,7 +150,7 @@ export default async function SessionSummaryPage({
                         Question {index + 1}
                       </span>
                       {isCorrect ? (
-                        <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-[var(--color-signal-green)]">
+                        <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-color-signal-green">
                           <CheckCircle2 className="h-3 w-3" strokeWidth={1.5} />
                           Correct
                         </span>
@@ -174,9 +174,9 @@ export default async function SessionSummaryPage({
                             key={choice.id}
                             className={`flex items-start gap-2 rounded-lg border px-3 py-2.5 ${
                               isCorrectChoice
-                                ? "border-[var(--color-signal-green)] bg-[var(--color-signal-green)]/5"
+                                ? "border-color-signal-green bg-color-signal-green/5"
                                 : isUser
-                                  ? "border-[var(--color-signal-red)] bg-[var(--color-signal-red)]/5"
+                                  ? "border-color-signal-red bg-color-signal-red/5"
                                   : "border-border/60 bg-muted/20"
                             }`}
                           >
@@ -193,7 +193,7 @@ export default async function SessionSummaryPage({
                                 </Badge>
                               )}
                               {isCorrectChoice && (
-                                <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-[var(--color-signal-green)]">
+                                <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-color-signal-green">
                                   <CheckCircle2 className="h-3 w-3" strokeWidth={1.5} />
                                   Correct
                                 </span>

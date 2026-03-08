@@ -58,7 +58,7 @@ export function QuestionCard({
       {/* Question prompt */}
       <div>
         {question.is_multi_select && (
-          <span className="mb-2 inline-flex items-center rounded-lg bg-[var(--color-signal-blue)]/10 px-2 py-0.5 text-[11px] font-medium text-[var(--color-signal-blue)]">
+          <span className="mb-2 inline-flex items-center rounded-lg bg-color-signal-blue/10 px-2 py-0.5 text-[11px] font-medium text-color-signal-blue">
             Select all that apply
           </span>
         )}

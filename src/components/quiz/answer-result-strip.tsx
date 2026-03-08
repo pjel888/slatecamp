@@ -61,9 +61,9 @@ export function AnswerResultStrip({
         <>
           <div className="flex min-w-0 flex-1 items-center gap-2">
             {correct ? (
-              <Check className="h-5 w-5 shrink-0 text-[var(--success)]" strokeWidth={2} />
+              <Check className="h-5 w-5 shrink-0 text-success" strokeWidth={2} />
             ) : (
-              <X className="h-5 w-5 shrink-0 text-[var(--danger)]" strokeWidth={2} />
+              <X className="h-5 w-5 shrink-0 text-danger" strokeWidth={2} />
             )}
             <span className="truncate text-sm font-medium text-foreground">
               {correct ? "Correct." : "Incorrect."} Correct: {correctChoiceText}
@@ -124,8 +124,8 @@ export function AnswerResultStrip({
                     </div>
                   )}
                   {question.mnemonics && (
-                    <div className="rounded-lg border border-[var(--warning)]/20 bg-[var(--warning)]/5 p-3">
-                      <p className="text-xs font-medium text-[var(--warning)]">Mnemonic</p>
+                    <div className="rounded-lg border border-warning/20 bg-warning/5 p-3">
+                      <p className="text-xs font-medium text-warning">Mnemonic</p>
                       <p className="mt-1 text-sm text-foreground">{question.mnemonics}</p>
                     </div>
                   )}

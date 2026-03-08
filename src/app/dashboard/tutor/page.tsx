@@ -88,7 +88,7 @@ export default function TutorPage() {
             <Card
               className={`max-w-[80%] px-4 py-3 ${
                 msg.role === "user"
-                  ? "bg-[var(--color-signal-amber)] text-white"
+                  ? "bg-color-signal-amber text-white"
                   : "bg-card"
               }`}
             >

@@ -45,13 +45,13 @@ export function SessionSummary({ result, answers, questions }: Props) {
       {/* Celebration for high scores */}
       {isGreat && (
         <div className="flex justify-center animate-in zoom-in-50 duration-500">
-          <div className="flex items-center gap-2 rounded-full bg-[var(--color-signal-amber)]/10 px-4 py-2">
+          <div className="flex items-center gap-2 rounded-full bg-color-signal-amber/10 px-4 py-2">
             {isPerfect ? (
-              <PartyPopper className="h-5 w-5 text-[var(--color-signal-amber)]" />
+              <PartyPopper className="h-5 w-5 text-color-signal-amber" />
             ) : (
-              <Sparkles className="h-5 w-5 text-[var(--color-signal-amber)]" />
+              <Sparkles className="h-5 w-5 text-color-signal-amber" />
             )}
-            <span className="text-sm font-semibold text-[var(--color-signal-amber)]">
+            <span className="text-sm font-semibold text-color-signal-amber">
               {isPerfect ? "Perfect Score!" : "Excellent Work!"}
             </span>
           </div>
@@ -72,10 +72,10 @@ export function SessionSummary({ result, answers, questions }: Props) {
         <div
           className={`flex h-40 w-40 flex-col items-center justify-center rounded-full border-4 transition-all duration-1000 ${
             isGreat
-              ? "border-[var(--color-signal-green)] shadow-lg shadow-[var(--color-signal-green)]/10"
+              ? "border-color-signal-green shadow-lg shadow-color-signal-green/10"
               : result.scorePercentage >= 50
-                ? "border-[var(--color-signal-amber)]"
-                : "border-[var(--color-signal-red)]"
+                ? "border-color-signal-amber"
+                : "border-color-signal-red"
           }`}
         >
           <span className="text-4xl font-semibold tabular-nums text-foreground">
@@ -91,7 +91,7 @@ export function SessionSummary({ result, answers, questions }: Props) {
       <div className="grid grid-cols-3 gap-4">
         <Card className="animate-in fade-in-0 slide-in-from-bottom-3 duration-500" style={{ animationDelay: "200ms" }}>
           <CardContent className="flex flex-col items-center py-4">
-            <Trophy className="h-5 w-5 text-[var(--color-signal-amber)]" strokeWidth={1.5} />
+            <Trophy className="h-5 w-5 text-color-signal-amber" strokeWidth={1.5} />
             <span className="mt-2 text-2xl font-semibold tabular-nums">
               <AnimatedNumber value={result.correct} duration={800} />
             </span>
@@ -100,7 +100,7 @@ export function SessionSummary({ result, answers, questions }: Props) {
         </Card>
         <Card className="animate-in fade-in-0 slide-in-from-bottom-3 duration-500" style={{ animationDelay: "350ms" }}>
           <CardContent className="flex flex-col items-center py-4">
-            <Clock className="h-5 w-5 text-[var(--color-signal-blue)]" strokeWidth={1.5} />
+            <Clock className="h-5 w-5 text-color-signal-blue" strokeWidth={1.5} />
             <span className="mt-2 text-2xl font-semibold tabular-nums">
               {formatDuration(result.totalTime)}
             </span>
@@ -109,7 +109,7 @@ export function SessionSummary({ result, answers, questions }: Props) {
         </Card>
         <Card className="animate-in fade-in-0 slide-in-from-bottom-3 duration-500" style={{ animationDelay: "500ms" }}>
           <CardContent className="flex flex-col items-center py-4">
-            <Target className="h-5 w-5 text-[var(--color-signal-green)]" strokeWidth={1.5} />
+            <Target className="h-5 w-5 text-color-signal-green" strokeWidth={1.5} />
             <span className="mt-2 text-2xl font-semibold tabular-nums">
               {formatDuration(avgTime)}
             </span>
@@ -130,14 +130,14 @@ export function SessionSummary({ result, answers, questions }: Props) {
               key={q.id}
               className={`flex items-center gap-3 rounded-xl border p-3 transition-all ${
                 answer?.correct
-                  ? "border-[var(--color-signal-green)]/20 bg-[var(--color-signal-green)]/5"
-                  : "border-[var(--color-signal-red)]/20 bg-[var(--color-signal-red)]/5"
+                  ? "border-color-signal-green/20 bg-color-signal-green/5"
+                  : "border-color-signal-red/20 bg-color-signal-red/5"
               }`}
             >
               {answer?.correct ? (
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-[var(--color-signal-green)]" />
+                <CheckCircle2 className="h-5 w-5 shrink-0 text-color-signal-green" />
               ) : (
-                <XCircle className="h-5 w-5 shrink-0 text-[var(--color-signal-red)]" />
+                <XCircle className="h-5 w-5 shrink-0 text-color-signal-red" />
               )}
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-secondary text-[11px] font-medium text-muted-foreground">
                 {i + 1}
@@ -146,7 +146,7 @@ export function SessionSummary({ result, answers, questions }: Props) {
                 {q.prompt}
               </span>
               {q.is_multi_select && (
-                <span className="ml-auto shrink-0 rounded bg-[var(--color-signal-blue)]/10 px-1.5 py-0.5 text-[10px] text-[var(--color-signal-blue)]">
+                <span className="ml-auto shrink-0 rounded bg-color-signal-blue/10 px-1.5 py-0.5 text-[10px] text-color-signal-blue">
                   Multi
                 </span>
               )}

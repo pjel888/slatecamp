@@ -1,9 +1,9 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Clock, RotateCcw, ChevronRight } from "lucide-react";
+import { Plus, Clock, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import type { ReviewSession, ExamProfile } from "@/types/app";

@@ -1,45 +1,99 @@
 # Project Cerebro
 
-AI-Adaptive Board Exam Prep Platform — a cognitive-first test prep system that measures what you know, identifies what you don't, adapts in real-time, and provides an AI-powered study partner.
+**The second brain for board exam takers.** A cognitive-first test prep platform that adapts to you: active recall, spaced repetition, and AI-powered study tools for board exam success.
 
-Built for board exam takers across professions (architecture, medicine, law, engineering), starting with the Philippine Architecture Licensure Exam (ALE).
+Built for board exam takers across professions (architecture first, then medicine, law, engineering), starting with the Philippine Architecture Licensure Exam (ALE).
 
 ---
 
-## Architecture Overview
+## What Cerebro Does
 
-### Stack
+- **Review Mode** — Casual “doomscroll” study: one question per screen, infinite scroll, rich explanations and references after each answer. No scores or timers; lightweight tracking only.
+- **Sessions Mode** — Tracked, analytics-driven quizzes: subject quick-start, custom session builder (subjects + counts + difficulty/timer), and session types (SRS Review, retake, topic drill, 3D quiz, weak areas). Full quiz engine with progress, optional timer, and session summary.
+- **3D Library** — Visual learning with interactive models and callouts linked to quizzes (schema and routes in place; React Three Fiber integration planned).
+- **Analytics** — Subject mastery (e.g. radar chart), study time, streaks, daily stats, and per-session breakdowns.
+- **Tiers** — Free, Pro, and Max with feature gating (SRS, 3D, AI tutor, PDF ingestion). Payments via Stripe and Payrex (Philippines).
 
-| Layer | Technology | Version |
-|---|---|---|
-| Framework | [Next.js](https://nextjs.org) (App Router) | 16.1.6 |
-| Bundler | [Turbopack](https://turbo.build/pack) (Rust-based, built into Next.js) | — |
-| Language | TypeScript (strict mode) | 5.9 |
-| Database | [Supabase](https://supabase.com) (PostgreSQL + pgvector + RLS) | — |
-| Auth | Supabase Auth (email/password, Google OAuth, cookie sessions via `@supabase/ssr`) | — |
-| Styling | [Tailwind CSS](https://tailwindcss.com) v4 + [shadcn/ui](https://ui.shadcn.com) | 4.2 |
-| UI Components | shadcn/ui (Base Nova style, Rams Standard custom theme) | 4.0 |
-| Payments | [PayRex](https://payrex.com) (primary — GCash, Maya, Card, QR Ph) + [Stripe](https://stripe.com) (international fallback) | — |
-| AI | OpenAI (GPT-4o, text-embedding-3-small) / Anthropic Claude (configurable) | — |
-| SRS Engine | SM-2 algorithm + Item Response Theory (IRT) | — |
-| Charts | [Recharts](https://recharts.org) | 3.8 |
-| Email | [Resend](https://resend.com) | — |
-| PDF Processing | pdf-parse | — |
-| Analytics | [PostHog](https://posthog.com) | — |
-| Deployment | [Vercel](https://vercel.com) | — |
+Everything is scoped by **Exam Profile**: a user can have multiple exams (e.g. ALE, another board); the active profile drives dashboard, quiz, review, and analytics.
 
-### Design System — "Rams Standard"
+---
 
-Braun-inspired minimal aesthetic. Achromatic palette (warm whites, greys, charcoal) with functional accent colors (amber for CTAs, green for correct, red for errors, blue for informational). No gradients. Transitions at 150ms ease. Mobile-first with 44px minimum touch targets.
+## Tech Stack
 
-### Architecture Principles
+| Layer | Technology |
+|-------|------------|
+| Framework | [Next.js](https://nextjs.org) 16 (App Router) |
+| Language | TypeScript (strict mode, no `any`) |
+| Database | [Supabase](https://supabase.com) (PostgreSQL, Auth, Storage, Edge Functions) |
+| Auth | Supabase Auth via `@supabase/ssr` (cookie-based; never localStorage) |
+| Styling | [Tailwind CSS](https://tailwindcss.com) v4 + [shadcn/ui](https://ui.shadcn.com) (Base UI primitives) |
+| Icons | [Lucide React](https://lucide-react.dev) (1.5px stroke, 20px default) |
+| Charts | [Recharts](https://recharts.org) |
+| Content | react-markdown, remark-gfm, remark-math, rehype-katex, KaTeX |
+| Payments | [Stripe](https://stripe.com) + [Payrex](https://payrex.com) (Philippines: GCash, Maya, Card, QR Ph) |
+| AI | OpenAI / Anthropic (configurable); embeddings for RAG |
+| SRS | SM-2 + Item Response Theory (IRT) in `src/lib/srs/` |
+| PDF | pdf-parse |
+| Email / Analytics | Resend, PostHog (planned) |
+| 3D | React Three Fiber + @react-three/drei (planned; schema and routes exist) |
 
-- **Server Components First** — `'use client'` only for interactivity (`useState`, `useEffect`, event handlers)
-- **Server Actions for Mutations** — all database writes through Server Actions, never client-side Supabase writes
-- **Cookie-based Auth** — `@supabase/ssr`, no localStorage for auth state
-- **RLS on Everything** — every Supabase table has Row Level Security policies
-- **Type Safety End-to-End** — Supabase-generated types flow DB → Server → Client
-- **Admin Tier Override** — `getAdminAwareProfile()` + `hasTierAccess()` for all tier checks
+---
+
+## Architecture
+
+### Principles
+
+- **Server Components by default** — Use `'use client'` only for interactivity: `useState`, `useEffect`, event handlers, or browser APIs.
+- **Server Actions for all mutations** — Every database write goes through a Server Action (`'use server'`). No direct client-side Supabase writes.
+- **No `useEffect` for data fetching** — Data is loaded in RSC async functions or via the `use()` hook.
+- **RLS on every table** — Row Level Security is enabled on all Supabase tables. See `DATABASE_SCHEMA.sql` before adding features.
+- **Single source of truth for the database** — `DATABASE_SCHEMA.sql` at the project root defines the full schema. Do not add columns or tables that are not defined there.
+- **Type safety** — Supabase-generated types in `types/supabase.ts`; app types in `types/app.ts`. No `any`.
+- **Mobile-first** — Touch targets at least 44px; bottom nav on mobile; quiz/review UIs full-width on small screens.
+
+### State Management
+
+Cerebro does **not** use a global state library (no Redux, Zustand, etc.). State is handled as follows:
+
+1. **Server state**  
+   Data is fetched in Server Components or Server Actions and passed as props. The dashboard layout loads the current user, profile, exam profiles, subjects, and feature flags on the server and passes them into providers or children.
+
+2. **Exam profile context** (`src/lib/context/exam-profile-context.tsx`)  
+   - **Purpose:** Holds the active exam profile, list of all profiles, and subjects for the active exam.  
+   - **Provided by:** Dashboard layout (wraps all dashboard content).  
+   - **Values:** `activeProfile`, `profiles`, `subjects`, `switchProfile(profileId)`, `refreshProfiles()`.  
+   - **Usage:** Sidebar exam switcher, dashboard stats, quiz/review subject lists, and any feature that needs “current exam” or “subjects for this exam.”  
+   - **Persistence:** Switching profile updates `exam_profiles.is_active` in Supabase and then refreshes server data; the context is rehydrated from layout props after navigation.
+
+3. **Breadcrumb context** (`src/lib/context/breadcrumb-context.tsx`)  
+   - **Purpose:** Lets individual pages set custom breadcrumb items for the dashboard header.  
+   - **Values:** `breadcrumbs`, `setBreadcrumbs(items)`.  
+   - **Usage:** Pages like Library, Library bank/subject, and Session Builder call `SetBreadcrumbs` with an array of `{ href, label }`. When in Quiz or Review “mode,” the header shows “Quiz mode” / “Review mode” and ignores custom breadcrumbs.
+
+4. **Theme**  
+   Handled by `next-themes` in `ThemeProvider` (light / dark / system). No app-specific theme state beyond that.
+
+5. **Feature flags (admin / demo)**  
+   Stored in a **cookie** (`cerebro_dev_flags`). Read in the dashboard layout via `getFeatureFlags()` and used with `getEffectiveTier()` and `hasTierAccess()`. Used for tier spoofing and bypassing 3D/AI/SRS gates; never written to the database.
+
+6. **Local UI state**  
+   Quiz engine, review feed, session builder, modals, and forms use React `useState` / `useReducer` / `useCallback` / `useMemo` in their own components. Optimistic updates for quiz answers are done with `useOptimistic` where applicable for sub-100ms perceived latency.
+
+There is no shared client-side cache layer (e.g. React Query); refetches are triggered by `router.refresh()` or by calling context methods like `refreshProfiles()` after mutations.
+
+---
+
+## Design System — “Rams Standard”
+
+Braun/Dieter Rams–inspired minimal UI: “Less, but better.”
+
+- **Colors:** Achromatic base (warm whites, greys, charcoal) with functional accents: amber (CTAs, progress), green (correct/success), red (errors), blue (info), gold (achievements). All via CSS variables in `src/app/globals.css`; no hardcoded hex in components.
+- **No gradients or heavy shadows** (max shadow: `0 1px 3px rgba(26,26,26,0.06)`).
+- **Transitions:** 150ms ease on interactive elements.
+- **Buttons:** Solid primary; ghost/outline secondary.
+- **Cards:** White background, 1px border, 8px radius.
+- **Loading:** Skeleton screens only; no spinners.
+- **Empty states:** One line of muted text plus a CTA; no illustration-heavy empty states.
 
 ---
 
@@ -47,137 +101,160 @@ Braun-inspired minimal aesthetic. Achromatic palette (warm whites, greys, charco
 
 ```
 project-cerebro/
-├── middleware.ts                 # Next.js auth middleware (Supabase session refresh)
-├── next.config.ts               # Next.js + Turbopack configuration
-├── postcss.config.mjs           # PostCSS with Tailwind CSS v4
-├── components.json              # shadcn/ui configuration
+├── DATABASE_SCHEMA.sql          # Single source of truth for DB schema (do not add columns elsewhere)
 ├── .cursorrules                 # AI coding assistant rules
-├── .env.local                   # Environment variables (not committed)
+├── middleware.ts                # Supabase session refresh (auth)
+├── next.config.ts               # Next.js config (images, serverExternalPackages, turbopack)
+├── scripts/
+│   └── dev.js                   # Dev launcher: Turbopack on non-Windows, Webpack on Windows (avoids Turbopack CSS bug)
 │
 ├── supabase/
-│   └── migrations/              # SQL migrations
-│       ├── 001_initial_schema.sql
-│       └── 002_admin_and_payrex.sql
-│
-├── public/                      # Static assets
+│   └── migrations/              # SQL migrations (apply in order 001 → 012)
 │
 └── src/
-    ├── app/                     # Next.js App Router
-    │   ├── layout.tsx           # Root layout (fonts, providers, metadata)
-    │   ├── page.tsx             # Landing page
-    │   ├── globals.css          # Tailwind + CSS variables (Rams Standard theme)
+    ├── app/
+    │   ├── layout.tsx           # Root: fonts, ThemeProvider, TooltipProvider, DemoShell (if demo)
+    │   ├── page.tsx             # Landing
+    │   ├── globals.css          # Tailwind + Rams Standard CSS variables
     │   │
-    │   ├── (auth)/              # Auth route group (unprotected)
-    │   │   ├── login/           # Email/password + Google OAuth login
-    │   │   ├── register/        # Registration flow
-    │   │   ├── forgot-password/ # Password reset
-    │   │   └── onboarding/      # Post-registration wizard (profession, exam target)
+    │   ├── (auth)/              # Auth route group
+    │   │   ├── login/
+    │   │   ├── register/
+    │   │   ├── forgot-password/
+    │   │   └── onboarding/      # Exam selection → target date → study hours → plan
     │   │
-    │   ├── dashboard/           # Protected dashboard routes (/dashboard/*)
-    │   │   ├── layout.tsx       # Dashboard shell (sidebar + navbar)
-    │   │   ├── page.tsx         # Dashboard home (stats overview, streak, SRS due)
-    │   │   ├── quiz/            # Quiz engine
-    │   │   │   ├── page.tsx     # Quiz setup (bank, domain, difficulty selection)
-    │   │   │   └── [sessionId]/ # Active quiz session
-    │   │   ├── review/          # Spaced repetition review queue
-    │   │   ├── library/         # Question banks
-    │   │   │   ├── upload/      # PDF upload + AI question generation
-    │   │   │   └── marketplace/ # Community question bank marketplace
-    │   │   ├── 3d-lab/          # 3D interactivity module (Pro+ tier)
-    │   │   ├── tutor/           # Socratic AI tutor (Max tier)
-    │   │   ├── analytics/       # Performance charts, domain radar, streaks
-    │   │   └── settings/        # Profile, billing, developer tools
-    │   │       ├── billing/     # Subscription management + PayRex/Stripe checkout
-    │   │       └── developer/   # Admin-only feature flag panel
+    │   ├── auth/callback/       # Supabase OAuth callback
     │   │
-    │   ├── api/                 # API routes
-    │   │   ├── ai/              # AI endpoints (tutor, embed, generate-questions)
-    │   │   ├── payments/        # Checkout session creation
-    │   │   ├── pdf/             # PDF processing pipeline
-    │   │   ├── webhooks/        # Payment webhooks (PayRex + Stripe)
-    │   │   └── admin/           # Admin feature flag management
+    │   ├── dashboard/
+    │   │   ├── layout.tsx       # Shell: Sidebar, Navbar, DashboardHeader, BreadcrumbProvider, ExamProfileProvider, BottomNav, DevToolbar
+    │   │   ├── page.tsx         # Dashboard home (subject cards, stats, recent sessions, quick actions)
+    │   │   ├── quiz/
+    │   │   │   ├── page.tsx     # Quiz landing (mode cards, quick start, subject grid)
+    │   │   │   ├── quick-start-form.tsx
+    │   │   │   └── [sessionId]/
+    │   │   │       ├── page.tsx       # Quiz engine
+    │   │   │       └── summary/page.tsx
+    │   │   ├── review/
+    │   │   │   ├── page.tsx     # Review (doomscroll) — loads ReviewFeed
+    │   │   │   └── review-feed.tsx
+    │   │   ├── sessions/
+    │   │   │   ├── page.tsx     # Sessions list
+    │   │   │   └── new/        # Session builder + templates
+    │   │   ├── analytics/page.tsx
+    │   │   ├── library/
+    │   │   │   ├── page.tsx
+    │   │   │   ├── bank/[bankId]/
+    │   │   │   ├── subject/[subjectId]/
+    │   │   │   └── marketplace/
+    │   │   ├── 3d-lab/page.tsx
+    │   │   ├── tutor/page.tsx
+    │   │   ├── settings/
+    │   │   │   ├── page.tsx
+    │   │   │   ├── billing/
+    │   │   │   └── developer/   # Admin feature-flag panel
+    │   │   └── admin/page.tsx   # Admin dashboard
     │   │
-    │   └── auth/
-    │       └── callback/        # Supabase OAuth callback handler
+    │   └── api/
+    │       ├── ai/              # tutor, embed, generate-questions
+    │       ├── payments/checkout/
+    │       ├── webhooks/        # stripe, payrex
+    │       └── admin/flags/
     │
     ├── components/
-    │   ├── ui/                  # shadcn/ui primitives (button, card, dialog, etc.)
-    │   ├── quiz/                # Quiz-specific (QuestionCard, ChoiceButton, Timer, etc.)
-    │   ├── analytics/           # Charts (PerformanceChart, DomainRadar, StreakCalendar)
-    │   └── shared/              # Layout (Sidebar, Navbar, BottomNav, ThemeToggle)
+    │   ├── ui/                  # shadcn primitives (button, card, dialog, sheet, input, etc.)
+    │   ├── quiz/                # AnswerResultStrip, ChoiceButton, QuizProgress, SessionSummary, FeedbackPanel, QuizTimer, etc.
+    │   ├── analytics/           # DomainRadar, StreakCalendar, PerformanceChart
+    │   ├── shared/              # Sidebar, Navbar, DashboardHeader, BottomNav, ExamProfileSwitcher, SetBreadcrumbs, ThemeToggle
+    │   └── dev/                 # DemoShell, DevToolbar
     │
     ├── lib/
-    │   ├── supabase/            # Supabase clients (server, client, admin, middleware)
+    │   ├── supabase/            # server, client, middleware, admin
+    │   ├── context/             # breadcrumb-context, exam-profile-context
+    │   ├── admin/               # feature-flags, get-admin-profile (getEffectiveTier, hasTierAccess)
+    │   ├── ai/                  # prompts, provider
+    │   ├── srs/                 # sm2, irt
+    │   ├── payments/            # provider abstraction (Payrex/Stripe)
+    │   ├── payrex/               # Payrex config
+    │   ├── stripe/              # Stripe config
+    │   ├── tracking/            # study-time
     │   ├── demo/                # Demo mode: config, mock data, mock Supabase client
-    │   ├── ai/                  # AI provider abstraction + system prompts
-    │   ├── srs/                 # SM-2 algorithm + IRT implementation
-    │   ├── payments/            # Payment provider abstraction (PayRex/Stripe)
-    │   ├── payrex/              # PayRex client + plan config
-    │   ├── stripe/              # Stripe client config
-    │   ├── admin/               # Feature flags + admin-aware profile logic
-    │   └── utils/               # Constants, helpers
+    │   └── utils/
     │
     └── types/
-        ├── app.ts               # App-specific types (Profile, Question, Session, etc.)
-        └── payrex-node.d.ts     # PayRex SDK type declarations
+        ├── app.ts               # Profile, ExamProfile, Subject, Question, Session, etc.
+        └── supabase.ts          # Generated from Supabase (when used)
 ```
+
+**Import paths:** `@/components/ui/`, `@/components/{feature}/`, `@/components/shared/`, `@/lib/`, `@/hooks/`, `@/types/`.
+
+---
+
+## Database
+
+The **single source of truth** is `DATABASE_SCHEMA.sql` at the project root. It describes the full schema (extensions, enums, tables, RLS, materialized views, functions). Do not create tables or columns that are not defined there.
+
+**Migrations** in `supabase/migrations/` are applied in order (001 through 012). They align with the canonical schema; when in doubt, refer to `DATABASE_SCHEMA.sql`.
+
+**Main areas:**
+
+- **User & auth:** `profiles` (extends Supabase auth), `board_exams`, `exam_profiles`, `subjects`, `topics`
+- **Content:** `question_banks`, `questions` (rich: choices JSONB, explanation, references, fun_facts, mnemonics, 3D refs)
+- **Review mode:** `review_mode_interactions`
+- **Sessions:** `session_templates`, `review_sessions`, `session_questions`
+- **SRS:** `srs_queue`
+- **3D:** `three_d_models`, `model_callouts`
+- **AI / docs:** `documents`, `document_chunks` (vector), `ai_conversations`
+- **Commerce:** `marketplace_purchases`, `bank_ratings`
+- **Analytics:** `study_time_logs`, `daily_user_stats`, `subject_mastery`, materialized view `question_user_performance`
+
+**RLS:** Every table has Row Level Security. All tier and access checks in the app assume RLS is in place.
 
 ---
 
 ## Prerequisites
 
-- **Node.js** >= 18.17 (LTS recommended)
-- **npm** >= 9 (included with Node.js)
-- **(Optional)** A Supabase project, AI API keys, payment keys — all optional thanks to Demo Mode
+- **Node.js** ≥ 18.17 (LTS recommended)
+- **npm** or **bun** (package manager)
+- **(Optional)** Supabase project and API keys — the app can run in **Demo Mode** without them
 
 ---
 
 ## Environment Variables
 
-Copy the template and fill in your keys:
-
-```bash
-cp .env.local.example .env.local
-```
-
-Or create `.env.local` manually with these variables:
+Create `.env.local` (or copy from `.env.local.example` if present). Example:
 
 ```env
-# ─── Supabase ───────────────────────────────────────────
+# Supabase
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
-# ─── AI ─────────────────────────────────────────────────
+# AI
 OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...          # optional, for Claude provider
-AI_PROVIDER=openai                     # "openai" or "anthropic"
+ANTHROPIC_API_KEY=sk-ant-...     # optional
+AI_PROVIDER=openai               # openai | anthropic
 
-# ─── Payments ───────────────────────────────────────────
-PAYMENT_PROVIDER=payrex                # "payrex" (default) or "stripe"
-
-# PayRex (Philippines — GCash, Maya, Card, QR Ph)
+# Payments
+PAYMENT_PROVIDER=payrex          # payrex | stripe
 PAYREX_SECRET_KEY=
 PAYREX_WEBHOOK_SECRET=
 NEXT_PUBLIC_PAYREX_PUBLIC_KEY=
-
-# Stripe (international fallback)
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 STRIPE_PRO_PRICE_ID=
 STRIPE_MAX_PRICE_ID=
 
-# ─── Email ──────────────────────────────────────────────
+# Email / Analytics (optional)
 RESEND_API_KEY=
-
-# ─── Analytics ──────────────────────────────────────────
 NEXT_PUBLIC_POSTHOG_KEY=
 NEXT_PUBLIC_POSTHOG_HOST=
 
-# ─── App ────────────────────────────────────────────────
+# App
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
+
+If `NEXT_PUBLIC_SUPABASE_URL` is unset, the app runs in **Demo Mode** (see below).
 
 ---
 
@@ -187,375 +264,92 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 ```bash
 npm install
+# or
+bun install
 ```
 
-### 2. Start in Demo Mode (no external services needed)
+### 2. Run in Demo Mode (no backend required)
 
 ```bash
 npm run dev
+# or
+bun dev
 ```
 
-That's it. Open [http://localhost:3000](http://localhost:3000). The app detects that `NEXT_PUBLIC_SUPABASE_URL` is empty and automatically runs in **Demo Mode**:
+Open [http://localhost:3000](http://localhost:3000). With no Supabase URL set, the app runs in **Demo Mode**:
 
-- Auth is bypassed — you're auto-logged in as an admin user (Philip Lewis, Max tier)
-- All pages display realistic mock data (profile stats, question banks, quiz sessions, analytics)
-- The AI Tutor returns pre-written Socratic responses
-- Payment checkout simulates success
-- All feature gates are unlocked (3D Lab, SRS, AI Tutor)
-- Developer Settings panel is accessible with full flag controls
+- Auth is bypassed; you are treated as an admin user (e.g. Max tier).
+- Data comes from mock Supabase in `src/lib/demo/`.
+- Feature gates (3D, AI, SRS) are effectively unlocked.
+- Dev Toolbar is available for tier and flag overrides.
 
-Navigate to `/dashboard` to see the app in action.
+Go to `/dashboard` to use the app.
 
-### 3. (Optional) Connect Real Services
+### 3. Connect real services
 
-When you're ready to connect real services, fill in the values in `.env.local`:
-
-**Minimum for real auth + database:**
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `SUPABASE_SERVICE_ROLE_KEY`
-
-Then run the database migrations:
-
-```bash
-# Option A: Supabase CLI
-supabase db push
-
-# Option B: Paste into Supabase SQL Editor
-# 1. Run supabase/migrations/001_initial_schema.sql
-# 2. Run supabase/migrations/002_admin_and_payrex.sql
-```
-
-Enable required extensions:
-
-```sql
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-CREATE EXTENSION IF NOT EXISTS "vector";
-```
+- Set Supabase (and optionally AI, payments) env vars in `.env.local`.
+- Apply migrations (e.g. run `DATABASE_SCHEMA.sql` or push `supabase/migrations/` with Supabase CLI).
+- Ensure extensions: `uuid-ossp`, `vector`.
+- Make yourself admin: `UPDATE profiles SET is_admin = TRUE WHERE email = 'your@email.com';`
 
 ---
 
-## Available Scripts
+## Scripts
 
 | Command | Description |
-|---|---|
-| `npm run dev` | Start dev server with Turbopack (fast HMR) |
-| `npm run build` | Create production build |
-| `npm run start` | Start production server (requires `build` first) |
-| `npm run lint` | Run ESLint on all files |
-| `npm run lint:fix` | Run ESLint with auto-fix |
-| `npm run type-check` | Run TypeScript compiler check (no emit) |
+|---------|-------------|
+| `npm run dev` | Dev server (uses `scripts/dev.js`: Webpack on Windows, Turbopack elsewhere) |
+| `npm run dev:turbo` | Force Turbopack |
+| `npm run dev:webpack` | Force Webpack |
+| `npm run build` | Production build |
+| `npm run start` | Production server (after `build`) |
+| `npm run lint` | ESLint |
+| `npm run lint:fix` | ESLint with auto-fix |
+| `npm run type-check` | `tsc --noEmit` |
 
 ---
 
-## Running Modes
+## Admin & Feature Flags
 
-### Development Mode
+Users with `profiles.is_admin = TRUE` can use:
 
-```bash
-npm run dev
-```
+- **Developer Settings** at `/dashboard/settings/developer` — tier spoofing (Free/Pro/Max) and toggles for 3D, AI, and SRS gates.
+- **Dev Toolbar** (bottom-right on dashboard) — same overrides in a compact panel.
 
-- Turbopack-powered dev server at `http://localhost:3000`
-- Hot Module Replacement (HMR) — changes reflect instantly
-- Reads `.env.local` automatically
-- Full error overlay with source maps
-- TypeScript errors shown in terminal and browser
-
-### Production Mode
-
-```bash
-# 1. Build the optimized production bundle
-npm run build
-
-# 2. Start the production server
-npm run start
-```
-
-- Turbopack-compiled production build
-- Static pages pre-rendered, dynamic pages server-rendered on demand
-- Server at `http://localhost:3000` by default (or set `PORT` env var)
-
-### Production Preview (local)
-
-To test the production build locally before deploying:
-
-```bash
-npm run build && npm run start
-```
-
-### Type Checking
-
-```bash
-npm run type-check
-```
-
-Runs the TypeScript compiler in `--noEmit` mode to verify all types are correct without producing output files. Useful for CI or pre-commit checks.
-
-### Linting
-
-```bash
-# Check for issues
-npm run lint
-
-# Auto-fix what's possible
-npm run lint:fix
-```
-
-Uses ESLint 9 with the Next.js recommended config (core-web-vitals + TypeScript rules).
+Flags are stored in a **cookie** (`cerebro_dev_flags`). They are read in the dashboard layout by `getFeatureFlags()` and combined with `getEffectiveTier(actualTier, isAdmin, flags)` and `hasTierAccess()`. Admins without a spoofed tier get Max access by default. No flags are written to the database.
 
 ---
 
-## Database Migrations
+## Quiz & Review UX
 
-Migrations are in `supabase/migrations/` and should be applied in order:
-
-| Migration | Description |
-|---|---|
-| `001_initial_schema.sql` | Full schema — profiles, question_banks, questions, user_responses, test_sessions, srs_queue, documents, document_chunks, exam_domains, domain_mastery, daily_user_stats, marketplace_purchases. All with RLS policies. |
-| `002_admin_and_payrex.sql` | Adds `is_admin` flag and `payrex_customer_id` to profiles, `payment_provider` to marketplace_purchases. |
-
-### Applying migrations
-
-```bash
-# With Supabase CLI linked to your project
-supabase link --project-ref your-project-ref
-supabase db push
-
-# Or manually via SQL Editor in Supabase Dashboard
-```
-
-### Making yourself an admin
-
-After creating your account, run this in the Supabase SQL Editor:
-
-```sql
-UPDATE profiles SET is_admin = TRUE WHERE email = 'your@email.com';
-```
-
-This gives you access to the Developer Settings panel at `/dashboard/settings/developer` where you can spoof tier levels and bypass feature gates for testing.
+- **Quiz:** Single column, max-width 720px; full-width choice cards (min 48px height, 12px gap). After answering: explanation, references, fun facts, related topics, 3D link. Keyboard: 1–4 for options, Enter for next, Esc to exit. Header shows “Quiz mode” and an exit (X) button with confirmation; exit redirects to dashboard.
+- **Review:** One question per screen, infinite scroll; subject filter; Check Answer + Next Question (both visible; enabled/disabled by state). Header shows “Review mode” and the same exit (X) with confirmation.
+- **Breadcrumbs:** On quiz/review landing pages the header shows the page name (“Quiz”, “Review”). When inside a quiz session or on the review feed it shows “Quiz mode” / “Review mode” instead of path-based breadcrumbs.
 
 ---
 
-## Payment Configuration
+## Deploying (e.g. Vercel)
 
-The app uses a provider abstraction layer (`src/lib/payments/provider.ts`) that switches between PayRex and Stripe based on the `PAYMENT_PROVIDER` env var.
-
-### PayRex (default — Philippines)
-
-PayRex supports GCash, Maya, Card, and QR Ph payments. Set up:
-
-1. Create a PayRex account at [payrex.com](https://payrex.com)
-2. Get your API keys from the PayRex dashboard
-3. Set up a webhook endpoint pointing to `https://your-domain.com/api/webhooks/payrex`
-4. Fill in `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, and `NEXT_PUBLIC_PAYREX_PUBLIC_KEY`
-
-### Stripe (international fallback)
-
-For non-PH users or if PayRex is unavailable:
-
-1. Create Stripe products/prices for Pro (₱499/mo) and Max (₱999/mo)
-2. Set `PAYMENT_PROVIDER=stripe` in `.env.local`
-3. Configure webhook at `https://your-domain.com/api/webhooks/stripe`
-4. Fill in all `STRIPE_*` env vars
-
-### Subscription Tiers
-
-| Tier | Price | Features |
-|---|---|---|
-| Free | ₱0 | 50 questions/day, basic analytics |
-| Pro | ₱499/mo | Unlimited questions, 3D Lab, SRS, AI PDF ingestion (10 docs/mo), detailed analytics |
-| Max | ₱999/mo | Everything in Pro + Socratic AI Tutor, predictive modeling, unlimited PDF ingestion |
-
----
-
-## Admin & Developer Tools
-
-### Feature Flag System
-
-Admin users (`is_admin = TRUE` in profiles) have access to a Developer Settings panel at `/dashboard/settings/developer`. This allows:
-
-- **Tier Spoofing** — temporarily act as Free, Pro, or Max user
-- **Gate Bypassing** — skip 3D Lab, AI, or SRS tier gates individually
-- **Session-only** — stored in cookies, never modifies database records
-
-Feature flags are checked via `getAdminAwareProfile()` and `hasTierAccess()` from `src/lib/admin/`. All tier-gated pages use these functions.
-
-### Admin Override Logic
-
-- Admins default to Max-tier access
-- Can downgrade their effective tier via Developer Settings to test lower-tier experiences
-- The sidebar and navbar show a "Dev Settings" link for admin users
-
----
-
-## Deploying to Vercel
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Or link and deploy to production
-vercel --prod
-```
-
-### Required Vercel environment variables
-
-Add all variables from `.env.local` to your Vercel project settings (Settings > Environment Variables). Make sure to set:
-
-- All `NEXT_PUBLIC_*` variables for both Preview and Production environments
-- All server-side keys (`SUPABASE_SERVICE_ROLE_KEY`, `PAYREX_SECRET_KEY`, etc.) for Production only
-- `NEXT_PUBLIC_APP_URL` to your production domain
-
-### Webhook URLs
-
-After deploying, update your webhook endpoints:
-
-- **PayRex**: `https://your-domain.com/api/webhooks/payrex`
-- **Stripe**: `https://your-domain.com/api/webhooks/stripe`
-
----
-
-## Development Modes
-
-The app supports two developer-facing modes. Both include a **floating Dev Toolbar** in the bottom-right corner of every dashboard page for instant tier switching and feature gate control.
-
-### Mode 1: Demo Mode (No Services)
-
-Run the entire app without Supabase, AI, payments, or any external service. Activates automatically when `NEXT_PUBLIC_SUPABASE_URL` is empty.
-
-```bash
-# Just install and run — no .env.local configuration needed
-npm install
-npm run dev
-```
-
-| Layer | Demo Behavior |
-|---|---|
-| **Auth** | Middleware passes all requests through. `supabase.auth.getUser()` returns a demo user. |
-| **Database** | A mock Supabase client (`src/lib/demo/mock-supabase.ts`) intercepts all `.from().select()` chains and returns data from `src/lib/demo/data.ts`. |
-| **AI Tutor** | The `/api/ai/tutor` endpoint returns pre-written Socratic responses that cycle through a set of realistic architecture exam discussions. |
-| **AI Embeddings** | Returns random 1536-dimensional vectors. |
-| **Question Generation** | Returns demo structural engineering questions. |
-| **Payments** | Checkout redirects to the billing page with `?success=true`. |
-| **PDF Processing** | Returns success immediately. |
-| **Feature Flags** | All gates (3D Lab, AI, SRS) are bypassed. Admin is `true`. |
-
-**Demo user profile:**
-
-| Field | Value |
-|---|---|
-| Name | Philip Lewis |
-| Email | philip@cerebro.dev |
-| Tier | Max (admin override) |
-| Profession | Architecture |
-| Exam Target | ALE 2026 |
-| Streak | 14 days |
-
-**Mock data included:**
-
-- 5 question banks (3 official, 2 marketplace)
-- 5 architecture questions with full explanations
-- 5 test sessions with scores and timing
-- 6 exam domains with mastery scores
-- 15 days of daily study stats
-- 3 uploaded documents (2 ready, 1 processing)
-- SRS queue with 3 items (2 due, 1 future)
-
-### Mode 2: Dev Mode with Real Services
-
-Connect to real Supabase, AI, and payment services while retaining full control over which tier you're experiencing. Requires a Supabase project and (optionally) API keys.
-
-```bash
-# 1. Fill in .env.local with at minimum:
-#    NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY
-#
-# 2. Run migrations (see Database Migrations section)
-#
-# 3. Make yourself an admin:
-#    UPDATE profiles SET is_admin = TRUE WHERE email = 'your@email.com';
-#
-# 4. Start the dev server
-npm run dev
-```
-
-Once your profile has `is_admin = TRUE`, the Dev Toolbar appears and you can:
-
-- Switch your effective tier to **Free**, **Pro**, or **Max** instantly
-- Toggle individual feature gates (3D Lab, AI, SRS) on or off
-- Test the exact UX a user on any plan would see — without changing your database record
-- Access the full Developer Settings page at `/dashboard/settings/developer`
-
-### The Dev Toolbar
-
-A floating widget in the bottom-right corner of every dashboard page. Visible when in Demo Mode (always) or Live Mode (admin users only).
-
-**Collapsed state:** Shows a small pill with the current mode (DEMO/LIVE) and effective tier. Click to expand.
-
-**Expanded state:**
-- **Mode indicator** — Purple "DEMO" badge or green "LIVE" badge with connection status
-- **Tier switcher** — One-click buttons to switch between Free / Pro / Max / Auto (admin default)
-- **Feature gates** — Toggle 3D Lab, AI Features, and SRS Review on or off individually
-- **Reset** — Clears all overrides back to defaults
-- **Link** — Opens the full Developer Settings page
-
-All changes take effect immediately (page refreshes automatically). Flags are stored in a session cookie and never modify your database.
-
-**Hide the toolbar:** Click the X button to hide it. A small wrench icon remains in the corner to bring it back.
-
-### Switching between modes
-
-| To switch to... | Do this |
-|---|---|
-| Demo Mode | Clear `NEXT_PUBLIC_SUPABASE_URL` in `.env.local` (or leave it empty), restart dev server |
-| Live Dev Mode | Fill in `NEXT_PUBLIC_SUPABASE_URL` + keys in `.env.local`, restart dev server, set `is_admin = TRUE` on your profile |
-
----
-
-## Key Technical Decisions
-
-| Decision | Reasoning |
-|---|---|
-| **Next.js 16 + Turbopack** (not Vite) | The app relies heavily on Server Components, Server Actions, and middleware — all Next.js-specific features that Vite doesn't support. Turbopack provides Vite-equivalent (or faster) dev speeds as a Rust-based bundler integrated into Next.js. |
-| **Tailwind CSS v4** (CSS-based config) | No `tailwind.config.ts` — Tailwind v4 uses CSS-based configuration via `@theme` directives in `globals.css`. |
-| **shadcn/ui v4** (Base Nova style) | Copy-paste component library — components live in `src/components/ui/` and are fully customizable. Uses `@base-ui/react` primitives under the hood. |
-| **PayRex over Stripe as default** | Primary market is Philippines; PayRex natively supports GCash, Maya, and QR Ph. Stripe is retained as an international fallback. |
-| **Cookie-based feature flags** | Admin tier spoofing uses cookies (not database) so testing doesn't affect actual user records. |
-| **SM-2 + IRT** | SM-2 handles basic spaced repetition scheduling. IRT (Item Response Theory) provides adaptive difficulty for Max-tier users. |
+- Set all required env vars in the host (including `NEXT_PUBLIC_APP_URL` for production).
+- Configure webhooks: Stripe `.../api/webhooks/stripe`, Payrex `.../api/webhooks/payrex`.
 
 ---
 
 ## Troubleshooting
 
-### "Module not found" for `payrex-node` or `pdf-parse`
+- **`payrex-node` or `pdf-parse` not found** — They are in `serverExternalPackages` in `next.config.ts`. Ensure they are installed (`npm install`).
+- **Supabase errors** — Verify `NEXT_PUBLIC_SUPABASE_URL` and keys in `.env.local`. Service role key must stay server-side only.
+- **TypeScript / build errors** — Run `npm run type-check`. After dependency updates, try `rm -rf node_modules .next && npm install && npm run build`.
 
-These packages are listed in `serverExternalPackages` in `next.config.ts` to prevent bundling issues. If you still see errors:
+---
 
-```bash
-npm install payrex-node pdf-parse
-```
+## Key Conventions (from .cursorrules)
 
-### Supabase connection errors
-
-Verify your `.env.local` has valid Supabase URL and keys. The anon key is safe to expose client-side; the service role key must stay server-side only.
-
-### Turbopack lockfile warning
-
-If you see "detected multiple lockfiles", the `turbopack.root` is already configured in `next.config.ts` to suppress this. Delete any stale lockfiles in parent directories if the warning persists.
-
-### TypeScript errors after updating dependencies
-
-```bash
-npm run type-check
-```
-
-If types are mismatched after an update, try:
-
-```bash
-rm -rf node_modules .next
-npm install
-npm run build
-```
+- No `localStorage` for auth.
+- No `useEffect` for data fetching.
+- No hardcoded hex colors; use CSS variables.
+- No tables/columns outside `DATABASE_SCHEMA.sql`.
+- No analytics shown in Review Mode.
+- No spinner loading; use skeletons.
+- No bouncy/spring animations; 150ms ease only.
+- No `console.log` in production code; use proper error handling.

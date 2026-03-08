@@ -85,7 +85,7 @@ export default async function BillingPage() {
               key={tier}
               className={
                 isCurrentPlan
-                  ? "border-[var(--color-signal-amber)] ring-1 ring-[var(--color-signal-amber)]"
+                  ? "border-color-signal-amber ring-1 ring-color-signal-amber"
                   : ""
               }
             >
@@ -108,7 +108,7 @@ export default async function BillingPage() {
                       key={feature}
                       className="flex items-start gap-2 text-sm text-muted-foreground"
                     >
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-signal-green)]" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-color-signal-green" />
                       {feature}
                     </li>
                   ))}

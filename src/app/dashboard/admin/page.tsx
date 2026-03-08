@@ -2,7 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, MessageSquare, BarChart3, Clock, TrendingUp, Shield } from "lucide-react";
+import { Users, MessageSquare, BarChart3, TrendingUp, Shield } from "lucide-react";
 
 export const metadata = { title: "Admin — Cerebro" };
 
@@ -75,7 +75,7 @@ export default async function AdminPage() {
   return (
     <div className="space-y-8">
       <div className="flex items-center gap-3">
-        <Shield className="h-6 w-6 text-[var(--accent-blue)]" strokeWidth={1.5} />
+        <Shield className="h-6 w-6 text-accent-blue" strokeWidth={1.5} />
         <div>
           <h1 className="text-2xl font-semibold text-foreground">Admin Dashboard</h1>
           <p className="text-sm text-muted-foreground">Platform analytics and overview</p>
@@ -87,8 +87,8 @@ export default async function AdminPage() {
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-blue)]/10">
-                <Users className="h-5 w-5 text-[var(--accent-blue)]" strokeWidth={1.5} />
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-blue/10">
+                <Users className="h-5 w-5 text-accent-blue" strokeWidth={1.5} />
               </div>
               <div>
                 <p className="text-2xl font-semibold font-mono text-foreground">{totalUsers ?? 0}</p>
@@ -100,8 +100,8 @@ export default async function AdminPage() {
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--success)]/10">
-                <MessageSquare className="h-5 w-5 text-[var(--success)]" strokeWidth={1.5} />
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success/10">
+                <MessageSquare className="h-5 w-5 text-success" strokeWidth={1.5} />
               </div>
               <div>
                 <p className="text-2xl font-semibold font-mono text-foreground">{totalAnswered ?? 0}</p>
@@ -113,8 +113,8 @@ export default async function AdminPage() {
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--warning)]/10">
-                <BarChart3 className="h-5 w-5 text-[var(--warning)]" strokeWidth={1.5} />
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-warning/10">
+                <BarChart3 className="h-5 w-5 text-warning" strokeWidth={1.5} />
               </div>
               <div>
                 <p className="text-2xl font-semibold font-mono text-foreground">{totalSessions ?? 0}</p>

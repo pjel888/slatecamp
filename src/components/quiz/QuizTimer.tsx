@@ -35,7 +35,7 @@ export function QuizTimer({ minutes, onExpire }: Props) {
   return (
     <span
       className={`font-mono text-sm tabular-nums ${
-        isWarning ? "text-[var(--color-signal-red)]" : "text-muted-foreground"
+        isWarning ? "text-color-signal-red" : "text-muted-foreground"
       }`}
     >
       {mins}:{secs.toString().padStart(2, "0")}

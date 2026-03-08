@@ -1,5 +1,5 @@
 import { DEMO_USER } from "./config";
-import { getDemoDataForTable, DEMO_PROFILE } from "./data";
+import { getDemoDataForTable } from "./data";
 
 type Row = Record<string, unknown>;
 type Filter = { col: string; op: string; val: unknown };

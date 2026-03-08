@@ -33,7 +33,7 @@ export default function LandingPage() {
           <h1 className="mx-auto max-w-2xl text-[44px] font-semibold leading-[1.08] tracking-tight text-foreground sm:text-[56px]">
             Your AI study partner
             <br />
-            <span className="text-[var(--color-signal-amber)]">
+            <span className="text-color-signal-amber">
               that never sleeps.
             </span>
           </h1>

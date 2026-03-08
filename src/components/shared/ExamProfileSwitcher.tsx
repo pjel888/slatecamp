@@ -23,8 +23,8 @@ export function ExamProfileSwitcher() {
         onClick={() => setOpen(!open)}
         className="flex items-center gap-2 rounded-lg px-3 py-2 text-left transition-all hover:bg-secondary"
       >
-        <div className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--accent-blue)]/10">
-          <GraduationCap className="h-4 w-4 text-[var(--accent-blue)]" strokeWidth={1.5} />
+        <div className="flex h-7 w-7 items-center justify-center rounded-md bg-accent-blue/10">
+          <GraduationCap className="h-4 w-4 text-accent-blue" strokeWidth={1.5} />
         </div>
         <div className="min-w-0">
           <p className="truncate text-xs font-medium text-foreground">
@@ -68,15 +68,15 @@ export function ExamProfileSwitcher() {
                   }}
                   className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-all ${
                     isActive
-                      ? "bg-[var(--accent-blue)]/5"
+                      ? "bg-accent-blue/5"
                       : "hover:bg-secondary"
                   }`}
                 >
                   <div className={`flex h-8 w-8 items-center justify-center rounded-lg ${
-                    isActive ? "bg-[var(--accent-blue)]/10" : "bg-secondary"
+                    isActive ? "bg-accent-blue/10" : "bg-secondary"
                   }`}>
                     <GraduationCap
-                      className={`h-4 w-4 ${isActive ? "text-[var(--accent-blue)]" : "text-muted-foreground"}`}
+                      className={`h-4 w-4 ${isActive ? "text-accent-blue" : "text-muted-foreground"}`}
                       strokeWidth={1.5}
                     />
                   </div>
@@ -89,7 +89,7 @@ export function ExamProfileSwitcher() {
                     </p>
                   </div>
                   {isActive && (
-                    <Check className="h-4 w-4 shrink-0 text-[var(--accent-blue)]" strokeWidth={1.5} />
+                    <Check className="h-4 w-4 shrink-0 text-accent-blue" strokeWidth={1.5} />
                   )}
                 </button>
               );
