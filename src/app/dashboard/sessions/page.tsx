@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Plus, Clock, RotateCcw, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import type { ReviewSession, ExamProfile } from "@/types/app";
 
 export const metadata = { title: "Sessions — Cerebro" };
@@ -39,7 +40,10 @@ export default async function SessionsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-semibold text-foreground">Sessions</h1>
+          <div className="flex items-center gap-1.5">
+            <h1 className="text-2xl font-semibold text-foreground">Sessions</h1>
+            <InfoTooltip content="All your quiz sessions. Resume in-progress or open summaries for completed sessions." side="right" />
+          </div>
           <p className="mt-1 text-sm text-muted-foreground">
             Your quiz history and session management
           </p>

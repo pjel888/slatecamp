@@ -7,18 +7,17 @@ import { daysUntil, getGreeting } from "@/lib/utils/helpers";
 import {
   Flame,
   CalendarDays,
-  ArrowRight,
   BarChart3,
   Box,
   Clock,
   Target,
   TrendingUp,
-  Play,
   BookOpen,
   Plus,
 } from "lucide-react";
 import Link from "next/link";
 import { SubjectCardsGrid } from "./subject-cards-grid";
+import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import type { DailyUserStats, TestSession, ExamProfile, Subject, SubjectMastery } from "@/types/app";
 
 export const metadata = { title: "Dashboard" };
@@ -117,9 +116,12 @@ export default async function DashboardPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Exam Countdown
-            </CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm font-medium text-muted-foreground">
+                Exam Countdown
+              </CardTitle>
+              <InfoTooltip content="Days left until your target exam date. Set or change it in onboarding or settings." />
+            </div>
             <CalendarDays className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
           </CardHeader>
           <CardContent>
@@ -134,9 +136,12 @@ export default async function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Current Streak
-            </CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm font-medium text-muted-foreground">
+                Current Streak
+              </CardTitle>
+              <InfoTooltip content="Consecutive days you’ve studied. Study at least one day to keep your streak." />
+            </div>
             <Flame
               className={`h-4 w-4 ${
                 streak > 0
@@ -158,9 +163,12 @@ export default async function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Today
-            </CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm font-medium text-muted-foreground">
+                Today
+              </CardTitle>
+              <InfoTooltip content="Number of questions you’ve answered today (tracked sessions and review)." />
+            </div>
             <Target className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
           </CardHeader>
           <CardContent>
@@ -175,9 +183,12 @@ export default async function DashboardPage() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">
-              Study Time
-            </CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm font-medium text-muted-foreground">
+                Study Time
+              </CardTitle>
+              <InfoTooltip content="Total time spent studying today (sessions, review mode, and 3D lab)." />
+            </div>
             <Clock className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
           </CardHeader>
           <CardContent>
@@ -223,7 +234,10 @@ export default async function DashboardPage() {
       {subjects.length > 0 && (
         <section>
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-foreground">Subjects</h2>
+            <div className="flex items-center gap-1.5">
+              <h2 className="text-lg font-semibold text-foreground">Subjects</h2>
+              <InfoTooltip content="Subjects for your exam. Tap Review for endless practice or Quick Start for a timed quiz on that subject." />
+            </div>
             <Badge variant="secondary" className="text-xs">
               {subjects.length} subjects
             </Badge>
@@ -240,7 +254,10 @@ export default async function DashboardPage() {
       {/* Recent Sessions */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">Recent Sessions</CardTitle>
+          <div className="flex items-center gap-1.5">
+            <CardTitle className="text-base">Recent Sessions</CardTitle>
+            <InfoTooltip content="Your latest quiz sessions. Resume in-progress or review results for completed ones." />
+          </div>
         </CardHeader>
         <CardContent>
           {(recentSessions as TestSession[] | null)?.length ? (

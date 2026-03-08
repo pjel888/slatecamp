@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, TrendingUp, Clock, Target } from "lucide-react";
 import { DomainRadar } from "@/components/analytics/DomainRadar";
+import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import { StreakCalendar } from "@/components/analytics/StreakCalendar";
 import type { ExamProfile, ReviewSession, SubjectMastery, DailyUserStats, Subject } from "@/types/app";
 
@@ -102,55 +103,67 @@ export default async function AnalyticsPage() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardContent className="p-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-blue)]/10">
-                <Target className="h-5 w-5 text-[var(--accent-blue)]" strokeWidth={1.5} />
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-blue)]/10">
+                  <Target className="h-5 w-5 text-[var(--accent-blue)]" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold font-mono text-foreground">{totalQuestionsAnswered}</p>
+                  <p className="text-xs text-muted-foreground">Total Questions</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-semibold font-mono text-foreground">{totalQuestionsAnswered}</p>
-                <p className="text-xs text-muted-foreground">Total Questions</p>
-              </div>
+              <InfoTooltip content="Total questions answered in tracked quiz sessions (all time)." />
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--success)]/10">
-                <TrendingUp className="h-5 w-5 text-[var(--success)]" strokeWidth={1.5} />
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--success)]/10">
+                  <TrendingUp className="h-5 w-5 text-[var(--success)]" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold font-mono text-foreground">{overallAccuracy}%</p>
+                  <p className="text-xs text-muted-foreground">Overall Accuracy</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-semibold font-mono text-foreground">{overallAccuracy}%</p>
-                <p className="text-xs text-muted-foreground">Overall Accuracy</p>
-              </div>
+              <InfoTooltip content="Percentage of correct answers across all subjects in tracked sessions." />
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--warning)]/10">
-                <BarChart3 className="h-5 w-5 text-[var(--warning)]" strokeWidth={1.5} />
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--warning)]/10">
+                  <BarChart3 className="h-5 w-5 text-[var(--warning)]" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold font-mono text-foreground">{(recentSessions ?? []).length}</p>
+                  <p className="text-xs text-muted-foreground">Sessions Completed</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-semibold font-mono text-foreground">{(recentSessions ?? []).length}</p>
-                <p className="text-xs text-muted-foreground">Sessions Completed</p>
-              </div>
+              <InfoTooltip content="Number of quiz sessions you’ve completed (last 30 shown in charts)." />
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-secondary">
-                <Clock className="h-5 w-5 text-muted-foreground" strokeWidth={1.5} />
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-secondary">
+                  <Clock className="h-5 w-5 text-muted-foreground" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold font-mono text-foreground">
+                    {Math.round(totalStudyTimeMs / 3600000)}h
+                  </p>
+                  <p className="text-xs text-muted-foreground">Study Time Today</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl font-semibold font-mono text-foreground">
-                  {Math.round(totalStudyTimeMs / 3600000)}h
-                </p>
-                <p className="text-xs text-muted-foreground">Study Time Today</p>
-              </div>
+              <InfoTooltip content="Time spent in sessions, review mode, and 3D lab today." />
             </div>
           </CardContent>
         </Card>
@@ -160,7 +173,10 @@ export default async function AnalyticsPage() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle className="text-sm">Subject Mastery</CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm">Subject Mastery</CardTitle>
+              <InfoTooltip content="Your estimated mastery per subject based on correct answers in tracked sessions." />
+            </div>
           </CardHeader>
           <CardContent>
             {radarData.length > 0 ? (
@@ -177,7 +193,10 @@ export default async function AnalyticsPage() {
       {/* Streak Calendar */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-sm">Activity</CardTitle>
+          <div className="flex items-center gap-1.5">
+            <CardTitle className="text-sm">Activity</CardTitle>
+            <InfoTooltip content="Days you studied recently. Shaded cells show activity; streaks help keep you consistent." />
+          </div>
         </CardHeader>
         <CardContent>
           <StreakCalendar stats={(dailyStats ?? []) as DailyUserStats[]} />
@@ -188,7 +207,10 @@ export default async function AnalyticsPage() {
       {masteries.length > 0 && (
         <Card>
           <CardHeader>
-            <CardTitle className="text-sm">Subject Breakdown</CardTitle>
+            <div className="flex items-center gap-1.5">
+              <CardTitle className="text-sm">Subject Breakdown</CardTitle>
+              <InfoTooltip content="Accuracy and questions attempted per subject. Focus on lower scores to improve." />
+            </div>
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
