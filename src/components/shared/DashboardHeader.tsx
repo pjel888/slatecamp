@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight, BookOpen, ClipboardList, X } from "lucide-react";
 import { useBreadcrumb } from "@/lib/context/breadcrumb-context";
+import { getQuizReviewMode } from "@/lib/utils/quiz-review-mode";
 import {
   Dialog,
   DialogContent,
@@ -49,23 +50,11 @@ function getBreadcrumbs(pathname: string): { href: string; label: string }[] {
   return crumbs;
 }
 
-/** Show "Quiz mode" / "Review mode" when in an active session or on the review feed. */
-function getMode(pathname: string): "review" | "quiz" | null {
-  // Review page is the doomscroll feed — show "Review mode" when on it.
-  if (pathname.startsWith("/dashboard/review")) return "review";
-  // Quiz: show "Quiz mode" when inside a session (/dashboard/quiz/[sessionId] or .../summary).
-  if (!pathname.startsWith("/dashboard/quiz")) return null;
-  const segments = pathname.split("/").filter(Boolean);
-  if (segments.length < 3) return null; // /dashboard/quiz landing
-  if (segments[2] === "new") return null; // session builder, not active quiz
-  return "quiz";
-}
-
 export function DashboardHeader() {
   const pathname = usePathname();
   const router = useRouter();
   const { breadcrumbs: customCrumbs } = useBreadcrumb() ?? {};
-  const mode = getMode(pathname);
+  const mode = getQuizReviewMode(pathname);
   const inQuizMode = mode !== null;
   const crumbs = inQuizMode ? null : (customCrumbs ?? getBreadcrumbs(pathname));
   const showBack = !inQuizMode && crumbs && crumbs.length > 1;

@@ -420,3 +420,76 @@ export interface QuizConfig {
   timedMinutes?: number;
   configId?: string;
 }
+
+// =============================================
+// PRD Feature Types
+// =============================================
+
+// F-01: Readiness Score
+export interface ReadinessScoreData {
+  score: number;
+  previousScore: number | null;
+  subScores: {
+    accuracy: number;
+    coverage: number;
+    srsHealth: number;
+    recency: number;
+    weakArea: number;
+  };
+  label: string;
+  color: string;
+}
+
+export type ReadinessLevel = 'needs_work' | 'building_momentum' | 'getting_there' | 'strong' | 'exam_ready';
+
+export interface ReadinessScoreSnapshot {
+  id: string;
+  exam_profile_id: string;
+  score: number;
+  sub_scores: Record<string, number>;
+  computed_at: string;
+  source: 'session_complete' | 'diagnostic' | 'daily_cron' | 'manual';
+}
+
+// F-02: Daily Mission
+export type MissionType = 'srs_review' | 'weak_area_drill' | 'exploration' | 'quick_session';
+
+export interface DailyMissionData {
+  type: MissionType;
+  label: string;
+  subjectName?: string;
+  questionCount: number;
+  estimatedMinutes: number;
+  sessionConfig: SessionConfig;
+  completedToday: boolean;
+}
+
+// F-03: Onboarding
+export type OnboardingStep = 'exam_selected' | 'date_set' | 'diagnostic_complete' | 'onboarding_completed';
+
+// F-05: Session Insights
+export interface SessionInsightData {
+  insight: string;
+  type: 'improvement' | 'top_performance' | 'streak' | 'coverage' | 'first_session';
+}
+
+// F-08: Social Proof
+export interface QuestionSocialProof {
+  weeklyAttempts: number;
+  weeklyAccuracy: number;
+}
+
+// F-09: Final Stretch
+export type FinalStretchPhase = 'final_approach' | 'countdown' | 'final_week' | 'exam_eve' | null;
+
+export interface FinalStretchData {
+  isActive: boolean;
+  phase: FinalStretchPhase;
+  daysRemaining: number | null;
+  weakSubjects: Array<{
+    subjectId: string;
+    subjectName: string;
+    accuracy: number;
+    suggestedCount: number;
+  }>;
+}

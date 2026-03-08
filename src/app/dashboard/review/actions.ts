@@ -46,6 +46,8 @@ export async function logReviewInteraction(params: {
   questionId: string;
   initialTapCorrect: boolean | null;
   timeOnQuestionMs: number;
+  /** F-06: true = "I know this", false = "Not sure" */
+  selfAssessedKnown?: boolean | null;
 }) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
@@ -57,5 +59,6 @@ export async function logReviewInteraction(params: {
     question_id: params.questionId,
     initial_tap_correct: params.initialTapCorrect,
     time_on_question_ms: params.timeOnQuestionMs,
+    self_assessed_known: params.selfAssessedKnown ?? null,
   });
 }

@@ -673,7 +673,180 @@ CREATE POLICY "Own banks update" ON question_banks FOR UPDATE USING (auth.uid() 
 
 
 -- =============================================================
--- 14. INDEXES
+-- 14. PRD FEATURE ADDITIONS
+-- =============================================================
+
+-- F-01/F-03/F-09: New columns on exam_profiles
+ALTER TABLE exam_profiles
+  ADD COLUMN IF NOT EXISTS onboarding_step TEXT
+    DEFAULT 'exam_selected'
+    CHECK (onboarding_step IN ('exam_selected', 'date_set', 'diagnostic_complete', 'onboarding_completed')),
+  ADD COLUMN IF NOT EXISTS final_stretch_upsell_shown BOOLEAN DEFAULT FALSE,
+  ADD COLUMN IF NOT EXISTS initial_readiness_score INTEGER;
+
+-- F-06: New column on review_mode_interactions
+ALTER TABLE review_mode_interactions
+  ADD COLUMN IF NOT EXISTS self_assessed_known BOOLEAN;
+
+-- F-09: Email preferences on profiles
+ALTER TABLE profiles
+  ADD COLUMN IF NOT EXISTS email_preferences JSONB DEFAULT '{"final_stretch_daily": true}'::jsonb;
+
+-- F-01: Readiness score snapshot cache
+CREATE TABLE IF NOT EXISTS readiness_score_snapshots (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  exam_profile_id UUID NOT NULL REFERENCES exam_profiles(id) ON DELETE CASCADE,
+  score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
+  sub_scores JSONB NOT NULL,
+  computed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  source TEXT NOT NULL DEFAULT 'session_complete'
+    CHECK (source IN ('session_complete', 'diagnostic', 'daily_cron', 'manual'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_profile_time
+  ON readiness_score_snapshots(exam_profile_id, computed_at DESC);
+
+ALTER TABLE readiness_score_snapshots ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own readiness snapshots"
+  ON readiness_score_snapshots FOR SELECT
+  USING (
+    exam_profile_id IN (
+      SELECT id FROM exam_profiles WHERE user_id = auth.uid()
+    )
+  );
+
+CREATE POLICY "Users can insert own readiness snapshots"
+  ON readiness_score_snapshots FOR INSERT
+  WITH CHECK (
+    exam_profile_id IN (
+      SELECT id FROM exam_profiles WHERE user_id = auth.uid()
+    )
+  );
+
+-- F-01: Compute readiness score function
+CREATE OR REPLACE FUNCTION compute_readiness_score(p_exam_profile_id UUID)
+RETURNS TABLE(
+  score INTEGER,
+  accuracy_score NUMERIC,
+  coverage_score NUMERIC,
+  srs_health_score NUMERIC,
+  recency_score NUMERIC,
+  weak_area_score NUMERIC
+)
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+  v_accuracy NUMERIC := 0;
+  v_coverage NUMERIC := 0;
+  v_srs_health NUMERIC := 50;
+  v_recency NUMERIC := 0;
+  v_weak_area NUMERIC := 100;
+  v_total_questions BIGINT;
+  v_answered_questions BIGINT;
+  v_total_correct BIGINT;
+  v_total_answered BIGINT;
+  v_days_since_last NUMERIC;
+  v_board_exam_id UUID;
+  v_user_id UUID;
+  v_weak_count NUMERIC := 0;
+  v_total_subjects NUMERIC := 0;
+  v_srs_total BIGINT;
+  v_srs_not_overdue BIGINT;
+BEGIN
+  -- Get context
+  SELECT ep.board_exam_id, ep.user_id INTO v_board_exam_id, v_user_id
+  FROM exam_profiles ep WHERE ep.id = p_exam_profile_id;
+
+  -- Accuracy: rolling 30-day
+  SELECT COALESCE(SUM(CASE WHEN sq.is_correct THEN 1 ELSE 0 END), 0),
+         COALESCE(COUNT(*) FILTER (WHERE sq.is_correct IS NOT NULL), 0)
+  INTO v_total_correct, v_total_answered
+  FROM session_questions sq
+  JOIN review_sessions rs ON sq.session_id = rs.id
+  WHERE rs.exam_profile_id = p_exam_profile_id
+    AND sq.answered_at >= NOW() - INTERVAL '30 days';
+
+  IF v_total_answered > 0 THEN
+    v_accuracy := (v_total_correct::NUMERIC / v_total_answered) * 100;
+  END IF;
+
+  -- Coverage
+  SELECT COUNT(DISTINCT id) INTO v_total_questions
+  FROM questions WHERE subject_id IN (
+    SELECT id FROM subjects WHERE board_exam_id = v_board_exam_id
+  ) AND status = 'published';
+
+  SELECT COUNT(DISTINCT sq.question_id) INTO v_answered_questions
+  FROM session_questions sq
+  JOIN review_sessions rs ON sq.session_id = rs.id
+  WHERE rs.exam_profile_id = p_exam_profile_id
+    AND sq.is_correct IS NOT NULL;
+
+  IF v_total_questions > 0 THEN
+    v_coverage := (v_answered_questions::NUMERIC / v_total_questions) * 100;
+  END IF;
+
+  -- SRS Health
+  SELECT COUNT(*) INTO v_srs_total FROM srs_queue WHERE exam_profile_id = p_exam_profile_id;
+  IF v_srs_total > 0 THEN
+    SELECT COUNT(*) INTO v_srs_not_overdue FROM srs_queue
+    WHERE exam_profile_id = p_exam_profile_id AND next_review_at >= NOW();
+    v_srs_health := (v_srs_not_overdue::NUMERIC / v_srs_total) * 100;
+  END IF;
+
+  -- Recency
+  SELECT EXTRACT(EPOCH FROM (NOW() - MAX(rs.completed_at))) / 86400
+  INTO v_days_since_last
+  FROM review_sessions rs
+  WHERE rs.exam_profile_id = p_exam_profile_id AND rs.status = 'completed';
+
+  IF v_days_since_last IS NULL THEN
+    v_recency := 0;
+  ELSIF v_days_since_last < 1 THEN
+    v_recency := 100;
+  ELSIF v_days_since_last < 2 THEN
+    v_recency := 80;
+  ELSIF v_days_since_last < 4 THEN
+    v_recency := 60;
+  ELSIF v_days_since_last < 8 THEN
+    v_recency := 40;
+  ELSIF v_days_since_last < 15 THEN
+    v_recency := 20;
+  ELSE
+    v_recency := 0;
+  END IF;
+
+  -- Weak Area Score
+  SELECT COUNT(*), COUNT(*) FILTER (WHERE sm.mastery_score < 60)
+  INTO v_total_subjects, v_weak_count
+  FROM subject_mastery sm
+  WHERE sm.exam_profile_id = p_exam_profile_id AND sm.total_attempted > 0;
+
+  IF v_total_subjects > 0 THEN
+    v_weak_area := 100 - ((v_weak_count / v_total_subjects) * 100);
+  END IF;
+
+  RETURN QUERY SELECT
+    ROUND(
+      v_accuracy * 0.30 +
+      v_coverage * 0.25 +
+      v_srs_health * 0.20 +
+      v_recency * 0.15 +
+      v_weak_area * 0.10
+    )::INTEGER AS score,
+    ROUND(v_accuracy, 1) AS accuracy_score,
+    ROUND(v_coverage, 1) AS coverage_score,
+    ROUND(v_srs_health, 1) AS srs_health_score,
+    ROUND(v_recency, 1) AS recency_score,
+    ROUND(v_weak_area, 1) AS weak_area_score;
+END;
+$$;
+
+
+-- =============================================================
+-- 15. INDEXES
 -- =============================================================
 
 CREATE INDEX idx_exam_profiles_user ON exam_profiles(user_id);

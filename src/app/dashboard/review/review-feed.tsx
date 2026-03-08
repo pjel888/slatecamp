@@ -4,8 +4,9 @@ import { useState, useCallback, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { fetchReviewQuestions, logReviewInteraction } from './actions'
 import { AnswerResultStrip } from '@/components/quiz/answer-result-strip'
+import { ConfidenceTap } from '@/components/quiz/ConfidenceTap'
 import { Button } from '@/components/ui/button'
-import { Check, X, ChevronRight } from 'lucide-react'
+import { ChevronUp, Check, X, Circle, CircleDot, Square, CheckSquare } from 'lucide-react'
 import type { Question, Subject, Choice } from '@/types/app'
 
 function isSelectionCorrect(
@@ -38,10 +39,14 @@ export function ReviewFeed({
   const [currentIndex, setCurrentIndex] = useState(0)
   /** Current selection before "Check Answer". */
   const [selectedChoiceIds, setSelectedChoiceIds] = useState<string[]>([])
-  /** After "Check Answer", we store result for this question. */
+  /** After confidence tap, we store result for this question. */
   const [answeredResult, setAnsweredResult] = useState<{
     correct: boolean
   } | null>(null)
+  /** F-06: true = "I know this", false = "Not sure" */
+  const [selfAssessedKnown, setSelfAssessedKnown] = useState<boolean | null>(
+    null,
+  )
   const [subjectFilter, setSubjectFilter] = useState<string | null>(
     initialSubjectId ?? null,
   )
@@ -83,6 +88,13 @@ export function ReviewFeed({
   const correctChoices = choices.filter((c) => correctChoiceIds.includes(c.id))
   const correctChoiceText = correctChoices.map((c) => c.text).join(', ')
   const canCheckAnswer = selectedChoiceIds.length > 0 && !isAnswered
+  const correctForDisplay =
+    selectedChoiceIds.length > 0
+      ? isSelectionCorrect(
+          selectedChoiceIds,
+          currentQuestion?.correct_answer ?? '',
+        )
+      : false
 
   const loadMore = useCallback(async () => {
     if (loadingMore || !cursor) return
@@ -107,6 +119,7 @@ export function ReviewFeed({
   useEffect(() => {
     setSelectedChoiceIds([])
     setAnsweredResult(null)
+    setSelfAssessedKnown(null)
   }, [currentIndex])
 
   const toggleChoice = useCallback(
@@ -124,27 +137,25 @@ export function ReviewFeed({
     [isAnswered, currentQuestion, isMultiSelect],
   )
 
-  async function handleCheckAnswer() {
-    if (!currentQuestion || !canCheckAnswer) return
-    const correct = isSelectionCorrect(
-      selectedChoiceIds,
-      currentQuestion.correct_answer ?? '',
-    )
+  /** F-06: Confidence tap — log self assessment then reveal answer. */
+  async function handleConfidenceTap(known: boolean) {
+    if (!currentQuestion || isAnswered) return
     const timeMs = Date.now() - questionStartTime.current
-
-    setAnsweredResult({ correct })
-
+    setSelfAssessedKnown(known)
+    setAnsweredResult({ correct: correctForDisplay })
     logReviewInteraction({
       examProfileId,
       questionId: currentQuestion.id,
-      initialTapCorrect: correct,
+      initialTapCorrect: correctForDisplay,
       timeOnQuestionMs: timeMs,
+      selfAssessedKnown: known,
     })
   }
 
   function handleNext() {
     setAnsweredResult(null)
     setSelectedChoiceIds([])
+    setSelfAssessedKnown(null)
     setCurrentIndex((prev) => prev + 1)
     questionStartTime.current = Date.now()
   }
@@ -214,8 +225,8 @@ export function ReviewFeed({
             </p>
           </div>
 
-          {/* Fixed-height image slot */}
-          <div className='relative mt-4 flex h-52 w-full shrink-0 items-center justify-center overflow-hidden rounded-xl bg-muted/30'>
+          {/* Image slot — 1920×1080 landscape (16:9) */}
+          <div className='relative mt-4 flex w-full shrink-0 aspect-video items-center justify-center overflow-hidden rounded-xl bg-muted/30'>
             {currentQuestion.prompt_image_url ? (
               <Image
                 src={currentQuestion.prompt_image_url}
@@ -235,6 +246,9 @@ export function ReviewFeed({
             correctChoiceText={correctChoiceText}
             question={currentQuestion}
             threeDLabel='See in 3D'
+            showTrickyOne={
+              selfAssessedKnown === true && answeredResult?.correct === false
+            }
           />
 
           {/* Choices — fixed min height */}
@@ -263,8 +277,21 @@ export function ReviewFeed({
                   type='button'
                   onClick={() => toggleChoice(choice.id)}
                   disabled={isAnswered}
+                  role={isMultiSelect ? 'checkbox' : 'radio'}
+                  aria-checked={isSelected}
                   className={`flex min-h-[56px] w-full items-center gap-3 rounded-xl border px-4 py-3 text-left ${stateClass}`}
                 >
+                  {isMultiSelect ? (
+                    isSelected ? (
+                      <CheckSquare className='h-5 w-5 shrink-0 text-accent-blue' strokeWidth={2} aria-hidden />
+                    ) : (
+                      <Square className='h-5 w-5 shrink-0 text-muted-foreground' strokeWidth={2} aria-hidden />
+                    )
+                  ) : isSelected ? (
+                    <CircleDot className='h-5 w-5 shrink-0 text-accent-blue' strokeWidth={2} aria-hidden />
+                  ) : (
+                    <Circle className='h-5 w-5 shrink-0 text-muted-foreground' strokeWidth={2} aria-hidden />
+                  )}
                   <span className='flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-current/20 text-xs font-semibold text-muted-foreground'>
                     {String.fromCharCode(65 + i)}
                   </span>
@@ -289,33 +316,26 @@ export function ReviewFeed({
           </div>
         </div>
 
-        {/* Fixed action bar — both buttons always visible, enabled/disabled by state */}
+        {/* Fixed action bar — F-06: ConfidenceTap when not answered, Next when answered */}
         <div className='shrink-0 border-t border-border bg-card px-6 py-4'>
-          <div className='flex gap-3'>
-            <Button
-              onClick={handleCheckAnswer}
-              disabled={!canCheckAnswer}
-              className='h-12 flex-1 gap-2 text-base font-medium bg-blue-500'
-            >
-              <Check className='h-5 w-5' strokeWidth={2} />
-              Check Answer
-            </Button>
+          {!isAnswered ? (
+            <>
+              <ConfidenceTap onTap={handleConfidenceTap} />
+              {selectedChoiceIds.length > 0 && (
+                <p className='mt-2 text-center text-xs text-muted-foreground'>
+                  {isMultiSelect
+                    ? 'You can select multiple options.'
+                    : 'Tap an option to change your answer.'}
+                </p>
+              )}
+            </>
+          ) : (
             <Button
               onClick={handleNext}
-              disabled={!isAnswered}
-              variant='default'
-              className='h-12 flex-1 gap-2 text-base font-medium'
+              className='h-12 w-full gap-2 text-base font-medium'
             >
-              Next Question{' '}
-              <ChevronRight className='h-5 w-5' strokeWidth={1.5} />
+              Next Question <ChevronUp className='h-5 w-5' strokeWidth={1.5} />
             </Button>
-          </div>
-          {selectedChoiceIds.length > 0 && !isAnswered && (
-            <p className='mt-2 text-center text-xs text-muted-foreground'>
-              {isMultiSelect
-                ? 'You can select multiple options.'
-                : 'Tap an option to change your answer.'}
-            </p>
           )}
         </div>
       </div>

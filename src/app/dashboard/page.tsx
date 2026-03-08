@@ -7,18 +7,27 @@ import { daysUntil, getGreeting } from "@/lib/utils/helpers";
 import {
   Flame,
   CalendarDays,
-  BarChart3,
-  Box,
-  Clock,
-  Target,
-  TrendingUp,
   BookOpen,
   Plus,
+  TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
 import { SubjectCardsGrid } from "./subject-cards-grid";
-import { InfoTooltip } from "@/components/shared/InfoTooltip";
-import type { DailyUserStats, TestSession, ExamProfile, Subject, SubjectMastery } from "@/types/app";
+import { ReadinessGauge } from "@/components/shared/ReadinessGauge";
+import { DailyMission } from "@/components/dashboard/DailyMission";
+import { getReadinessScore } from "@/lib/actions/readiness";
+import { getDailyMission } from "@/lib/actions/daily-mission";
+import { getSubjectDailyStudiersBatch } from "@/lib/actions/social-proof";
+import {
+  getFinalStretchState,
+  getWeakSubjectsForFinalStretch,
+} from "@/lib/actions/final-stretch";
+import { FinalStretchBanner } from "@/components/dashboard/FinalStretchBanner";
+import { WhatToFocusOn } from "@/components/dashboard/WhatToFocusOn";
+import { FinalStretchUpsellModal } from "@/components/modals/FinalStretchUpsellModal";
+import { SRSWidget } from "@/components/dashboard/SRSWidget";
+import { getSRSDashboardData } from "@/lib/actions/srs-dashboard";
+import type { DailyUserStats, ReviewSession, ExamProfile, Subject, SubjectMastery, UserTier } from "@/types/app";
 
 export const metadata = { title: "Dashboard" };
 
@@ -34,6 +43,8 @@ export default async function DashboardPage() {
     .select("*")
     .eq("id", user.id)
     .single();
+
+  const tier = (profile?.tier ?? "free") as UserTier;
 
   // Get active exam profile
   const { data: activeExamProfile } = await supabase
@@ -77,33 +88,56 @@ export default async function DashboardPage() {
     }
   }
 
+  // Get readiness score, daily mission, and social proof (daily studiers per subject) in parallel
+  const [readinessData, missionData, dailyStudiers] = await Promise.all([
+    examProfile ? getReadinessScore(examProfile.id) : null,
+    examProfile ? getDailyMission(examProfile.id) : null,
+    subjects.length > 0 ? getSubjectDailyStudiersBatch(subjects.map((s) => s.id)) : Promise.resolve({}),
+  ]);
+
   const { data: recentSessions } = await supabase
     .from("review_sessions")
     .select("*")
     .eq("user_id", user.id)
     .order("created_at", { ascending: false })
-    .limit(5);
-
-  const { data: todayStats } = await supabase
-    .from("daily_user_stats")
-    .select("*")
-    .eq("user_id", user.id)
-    .eq("date", new Date().toISOString().split("T")[0])
-    .single();
+    .limit(3);
 
   const examDaysLeft = examProfile?.target_exam_date
     ? daysUntil(examProfile.target_exam_date)
     : null;
 
-  const streak = examProfile?.daily_streak ?? profile?.daily_streak ?? 0;
-  const longestStreak = examProfile?.longest_streak ?? profile?.longest_streak ?? 0;
+  const streak = examProfile?.daily_streak ?? 0;
+
+  // SRS dashboard data (due count, avg retention, next review) for Pro/Max
+  const srsDashboardData =
+    examProfile && tier !== "free"
+      ? await getSRSDashboardData(examProfile.id)
+      : null;
+
+  // Final Stretch (0–30 days to exam)
+  const finalStretch = examProfile
+    ? await getFinalStretchState(
+        {
+          target_exam_date: examProfile.target_exam_date,
+          final_stretch_upsell_shown: (examProfile as { final_stretch_upsell_shown?: boolean }).final_stretch_upsell_shown,
+        },
+        tier
+      )
+    : { active: false, daysLeft: null, phase: null, showUpsellModal: false };
+  const weakSubjects =
+    finalStretch.active && examProfile
+      ? await getWeakSubjectsForFinalStretch(examProfile.id)
+      : [];
+  const examShortName = examProfile?.board_exams?.short_name ?? "ALE";
 
   return (
     <div className="space-y-8">
-      {/* Greeting */}
+      {/* Greeting — Final Stretch: show T-N days */}
       <div>
         <h1 className="text-2xl font-semibold text-foreground">
-          {getGreeting()}, {profile?.full_name?.split(" ")[0] ?? "there"}
+          {finalStretch.active && finalStretch.daysLeft != null
+            ? `T-${finalStretch.daysLeft} days to your ${examShortName}`
+            : `${getGreeting()}, ${profile?.full_name?.split(" ")[0] ?? "there"}`}
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           {examProfile?.board_exams
@@ -112,195 +146,219 @@ export default async function DashboardPage() {
         </p>
       </div>
 
-      {/* Stats Row */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <div className="flex items-center gap-1.5">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
-                Exam Countdown
-              </CardTitle>
-              <InfoTooltip content="Days left until your target exam date. Set or change it in onboarding or settings." />
-            </div>
-            <CalendarDays className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-semibold font-mono text-foreground">
-              {examDaysLeft !== null ? `${examDaysLeft}d` : "—"}
-            </div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              {examDaysLeft !== null ? "days remaining" : "Set your exam date"}
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <div className="flex items-center gap-1.5">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
-                Current Streak
-              </CardTitle>
-              <InfoTooltip content="Consecutive days you’ve studied. Study at least one day to keep your streak." />
-            </div>
-            <Flame
-              className={`h-4 w-4 ${
-                streak > 0
-                  ? "text-warning"
-                  : "text-muted-foreground"
-              }`}
-              strokeWidth={1.5}
-            />
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-semibold font-mono text-foreground">
-              {streak}
-            </div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              Longest: {longestStreak} days
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <div className="flex items-center gap-1.5">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
-                Today
-              </CardTitle>
-              <InfoTooltip content="Number of questions you’ve answered today (tracked sessions and review)." />
-            </div>
-            <Target className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-semibold font-mono text-foreground">
-              {(todayStats as DailyUserStats | null)?.questions_attempted ?? 0}
-            </div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              questions answered
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <div className="flex items-center gap-1.5">
-              <CardTitle className="text-sm font-medium text-muted-foreground">
-                Study Time
-              </CardTitle>
-              <InfoTooltip content="Total time spent studying today (sessions, review mode, and 3D lab)." />
-            </div>
-            <Clock className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
-          </CardHeader>
-          <CardContent>
-            <div className="text-3xl font-semibold font-mono text-foreground">
-              {Math.round(((todayStats as DailyUserStats | null)?.total_study_time_ms ?? 0) / 60000)}m
-            </div>
-            <p className="mt-1 text-xs text-muted-foreground">
-              today
-            </p>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Quick Actions */}
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <Link href="/dashboard/review">
-          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
-            <BookOpen className="h-4 w-4" strokeWidth={1.5} />
-            Review Mode
-          </Button>
-        </Link>
-        <Link href="/dashboard/sessions/new">
-          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
-            <Plus className="h-4 w-4" strokeWidth={1.5} />
-            New Session
-          </Button>
-        </Link>
-        <Link href="/dashboard/analytics">
-          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
-            <BarChart3 className="h-4 w-4" strokeWidth={1.5} />
-            Analytics
-          </Button>
-        </Link>
-        <Link href="/dashboard/3d-lab">
-          <Button variant="outline" className="h-12 w-full justify-start gap-3 text-sm">
-            <Box className="h-4 w-4" strokeWidth={1.5} />
-            3D Lab
-          </Button>
-        </Link>
-      </div>
-
-      {/* Subject Cards */}
-      {subjects.length > 0 && (
-        <section>
-          <div className="mb-4 flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <h2 className="text-lg font-semibold text-foreground">Subjects</h2>
-              <InfoTooltip content="Subjects for your exam. Tap Review for endless practice or Quick Start for a timed quiz on that subject." />
-            </div>
-            <Badge variant="secondary" className="text-xs">
-              {subjects.length} subjects
-            </Badge>
-          </div>
-          <SubjectCardsGrid
-            subjects={subjects}
-            masteries={masteries}
-            questionCounts={questionCounts}
-            examProfileId={examProfile?.id ?? ""}
-          />
-        </section>
+      {/* Final Stretch Banner + Upsell Modal */}
+      {finalStretch.active && finalStretch.daysLeft != null && finalStretch.phase && (
+        <FinalStretchBanner
+          daysLeft={finalStretch.daysLeft}
+          phase={finalStretch.phase}
+          examName={examShortName}
+        />
+      )}
+      {finalStretch.showUpsellModal && examProfile && finalStretch.daysLeft != null && (
+        <FinalStretchUpsellModal
+          show
+          examProfileId={examProfile.id}
+          daysLeft={finalStretch.daysLeft}
+          examName={examShortName}
+        />
       )}
 
-      {/* Recent Sessions */}
-      <Card>
-        <CardHeader>
-          <div className="flex items-center gap-1.5">
-            <CardTitle className="text-base">Recent Sessions</CardTitle>
-            <InfoTooltip content="Your latest quiz sessions. Resume in-progress or review results for completed ones." />
+      {/* ============================================ */}
+      {/* PRIMARY ZONE — Readiness + Daily Mission     */}
+      {/* ============================================ */}
+      {examProfile && (
+        <div className="grid gap-4 lg:grid-cols-[auto_1fr]">
+          {/* Readiness Gauge */}
+          <div className="flex items-center justify-center rounded-xl border border-border bg-card p-6">
+            <ReadinessGauge
+              score={readinessData?.score ?? 0}
+              previousScore={readinessData?.previousScore}
+              size="lg"
+              showLabel
+              animateOnMount
+            />
           </div>
-        </CardHeader>
-        <CardContent>
-          {(recentSessions as TestSession[] | null)?.length ? (
-            <div className="space-y-3">
-              {(recentSessions as TestSession[]).map((session) => (
-                <div
-                  key={session.id}
-                  className="flex items-center justify-between rounded-lg border border-border p-3"
-                >
-                  <div className="space-y-1">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary" className="text-xs capitalize">
-                        {session.session_type.replace(/_/g, " ")}
-                      </Badge>
-                      <span className="text-xs text-muted-foreground">
-                        {new Date(session.created_at).toLocaleDateString()}
-                      </span>
-                    </div>
-                    <p className="text-sm text-foreground">
-                      {session.correct_answers}/{session.total_questions} correct
-                    </p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-lg font-semibold font-mono text-foreground">
-                      {session.score_percentage != null
-                        ? `${Math.round(session.score_percentage)}%`
-                        : "—"}
-                    </div>
-                    <TrendingUp
-                      className="ml-auto h-3 w-3 text-success"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="text-sm text-muted-foreground">
-              No sessions yet. Start a quiz to see your progress here.
-            </p>
+
+          {/* Daily Mission */}
+          {missionData && (
+            <DailyMission
+              mission={missionData}
+              examProfileId={examProfile.id}
+            />
           )}
-        </CardContent>
-      </Card>
+        </div>
+      )}
+
+      {/* ============================================ */}
+      {/* SECONDARY ZONE — Subjects + Sidebar widgets  */}
+      {/* ============================================ */}
+      <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+        {/* Left: Subject Cards */}
+        <div>
+          {subjects.length > 0 ? (
+            <section>
+              <div className="mb-4 flex items-center justify-between">
+                <h2 className="text-lg font-semibold text-foreground">Subjects</h2>
+                <Badge variant="secondary" className="text-xs">
+                  {subjects.length} subjects
+                </Badge>
+              </div>
+              <SubjectCardsGrid
+                subjects={subjects}
+                masteries={masteries}
+                questionCounts={questionCounts}
+                examProfileId={examProfile?.id ?? ""}
+                tier={tier}
+                dailyStudiers={dailyStudiers}
+              />
+            </section>
+          ) : (
+            <Card>
+              <CardContent className="flex flex-col items-center justify-center py-12 text-center">
+                <BookOpen className="h-6 w-6 text-muted-foreground mb-2" strokeWidth={1.5} />
+                <p className="text-sm text-muted-foreground">
+                  Start your first session to unlock insights.
+                </p>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+
+        {/* Right: Sidebar widgets (desktop only) */}
+        <div className="hidden space-y-4 lg:block">
+          {/* What to focus on (Final Stretch) */}
+          {finalStretch.active && weakSubjects.length > 0 && examProfile && (
+            <WhatToFocusOn
+              weakSubjects={weakSubjects}
+              examProfileId={examProfile.id}
+            />
+          )}
+          {/* SRS Widget (with retention when Pro/Max) */}
+          {tier !== "free" && srsDashboardData ? (
+            <SRSWidget data={srsDashboardData} />
+          ) : tier === "free" ? (
+            <Card className="opacity-75">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium text-muted-foreground">
+                  SRS Review
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Spaced repetition is available on Pro. <Link href="/dashboard/settings/billing" className="text-primary underline">Upgrade →</Link>
+                </p>
+              </CardContent>
+            </Card>
+          ) : null}
+
+          {/* Exam Countdown */}
+          {examDaysLeft !== null && (
+            <Card>
+              <CardHeader className="pb-2 flex flex-row items-center justify-between">
+                <CardTitle className="text-sm font-medium text-muted-foreground">
+                  Exam Countdown
+                </CardTitle>
+                <CalendarDays className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent>
+                <p className="text-3xl font-semibold font-mono text-foreground">
+                  {examDaysLeft}d
+                </p>
+                <p className="mt-1 text-xs text-muted-foreground">days remaining</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Streak */}
+          <Card>
+            <CardHeader className="pb-2 flex flex-row items-center justify-between">
+              <CardTitle className="text-sm font-medium text-muted-foreground">
+                Streak
+              </CardTitle>
+              <Flame
+                className={`h-4 w-4 ${streak > 0 ? "text-warning" : "text-muted-foreground"}`}
+                strokeWidth={1.5}
+              />
+            </CardHeader>
+            <CardContent>
+              {streak > 0 ? (
+                <>
+                  <p className="text-3xl font-semibold font-mono text-foreground">{streak}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    day{streak !== 1 ? "s" : ""} in a row
+                  </p>
+                </>
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  Answer questions today to start your streak.
+                </p>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* ============================================ */}
+      {/* TERTIARY ZONE — Recent sessions + Quick Actions */}
+      {/* ============================================ */}
+      <div className="space-y-4">
+        {/* Recent Sessions (last 3, compact) */}
+        {(recentSessions as ReviewSession[] | null)?.length ? (
+          <Card>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-base">Recent Sessions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {(recentSessions as ReviewSession[]).map((session) => (
+                  <div
+                    key={session.id}
+                    className="flex items-center justify-between rounded-lg border border-border p-3"
+                  >
+                    <div className="space-y-0.5">
+                      <div className="flex items-center gap-2">
+                        <Badge variant="secondary" className="text-[10px] capitalize">
+                          {session.session_type.replace(/_/g, " ")}
+                        </Badge>
+                        <span className="text-[10px] text-muted-foreground">
+                          {new Date(session.created_at).toLocaleDateString()}
+                        </span>
+                      </div>
+                      <p className="text-xs text-foreground">
+                        {session.questions_correct}/{session.total_questions} correct
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-lg font-semibold font-mono text-foreground">
+                        {session.score_percentage != null
+                          ? `${Math.round(session.score_percentage)}%`
+                          : "—"}
+                      </div>
+                      <TrendingUp className="ml-auto h-3 w-3 text-success" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ) : null}
+
+        {/* Quick Actions — ghost/outline buttons, not primary */}
+        <div className="flex gap-3">
+          <Link href="/dashboard/sessions/new" className="flex-1">
+            <Button variant="outline" className="h-11 w-full text-sm gap-2">
+              <Plus className="h-4 w-4" strokeWidth={1.5} />
+              New Session
+            </Button>
+          </Link>
+          <Link href="/dashboard/library" className="flex-1">
+            <Button variant="outline" className="h-11 w-full text-sm gap-2">
+              <BookOpen className="h-4 w-4" strokeWidth={1.5} />
+              Browse Library
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
