@@ -15,9 +15,13 @@ import {
   Wifi,
   WifiOff,
 } from "lucide-react";
+import { useDraggableFloatingPosition } from "@/lib/hooks/useDraggableFloatingPosition";
 import type { UserTier } from "@/types/app";
 import type { FeatureFlags } from "@/lib/admin/feature-flags";
 import type { DevConnectionState } from "@/lib/dev/dev-mode";
+
+const DEFAULT_RIGHT = 16;
+const DEFAULT_BOTTOM = 16;
 
 interface DevToolbarProps {
   connectionState: DevConnectionState;
@@ -103,29 +107,45 @@ export function DevToolbar({
     router.refresh();
   }
 
+  const tierConfig = TIER_CONFIG[effectiveTier];
+  const connConfig = CONN_CONFIG[connectionState];
+  const ConnIcon = connConfig.icon;
+  const { style: floatStyle, onPointerDown: onDrag, didDragRef } = useDraggableFloatingPosition(
+    "dev-toolbar",
+    DEFAULT_RIGHT,
+    DEFAULT_BOTTOM
+  );
+
   if (hidden) {
     return (
       <button
+        type="button"
         onClick={() => setHidden(false)}
-        className="fixed bottom-4 right-4 z-9999 flex h-8 w-8 items-center justify-center rounded-full border border-border bg-background/95 shadow-lg backdrop-blur-sm transition-colors hover:bg-muted"
-        title="Show dev toolbar"
+        style={floatStyle}
+        onPointerDown={onDrag}
+        className="z-9999 flex h-8 w-8 cursor-grab active:cursor-grabbing items-center justify-center rounded-full border border-border bg-background/95 shadow-lg backdrop-blur-sm transition-colors hover:bg-muted select-none"
+        title="Show dev toolbar (drag to move)"
       >
         <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
       </button>
     );
   }
 
-  const tierConfig = TIER_CONFIG[effectiveTier];
-  const connConfig = CONN_CONFIG[connectionState];
-  const ConnIcon = connConfig.icon;
-
   return (
-    <div className="fixed bottom-4 right-4 z-9999 select-none">
+    <div style={floatStyle} className="z-9999 select-none">
       {/* Collapsed pill */}
       {!open && (
         <button
-          onClick={() => setOpen(true)}
-          className="flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl"
+          type="button"
+          onClick={() => {
+            if (didDragRef.current) {
+              didDragRef.current = false;
+              return;
+            }
+            setOpen(true);
+          }}
+          onPointerDown={onDrag}
+          className="cursor-grab active:cursor-grabbing flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl"
         >
           <Wrench className="h-3.5 w-3.5 text-muted-foreground" />
           <ConnIcon className={`h-3 w-3 ${connConfig.color}`} />
@@ -140,7 +160,7 @@ export function DevToolbar({
 
       {/* Expanded panel */}
       {open && (
-        <div className="w-72 overflow-hidden rounded-xl border border-border bg-background/95 shadow-2xl backdrop-blur-sm">
+        <div className="absolute bottom-full right-0 mb-2 w-72 overflow-hidden rounded-xl border border-border bg-background/95 shadow-2xl backdrop-blur-sm">
           {/* Header */}
           <div className="flex items-center justify-between border-b border-border px-3 py-2">
             <div className="flex items-center gap-2">
