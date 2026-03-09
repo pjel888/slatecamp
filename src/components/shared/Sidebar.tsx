@@ -1,28 +1,23 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard,
-  Brain,
   BarChart3,
-  Library,
   Box,
   Settings,
-  LogOut,
   Shield,
   PanelLeftClose,
   PanelLeftOpen,
   Sparkles,
-  ClipboardList,
-  BookOpen,
   FileText,
   Zap,
   Crown,
   Globe,
+  FlaskConical,
 } from 'lucide-react'
-import { createClient } from '@/lib/supabase/client'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ThemeToggle } from './ThemeToggle'
 import { ExamProfileSwitcher } from './ExamProfileSwitcher'
@@ -45,13 +40,10 @@ import type { UserTier } from '@/types/app'
 
 const NAV_ITEMS = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/dashboard/quiz', label: 'Quiz', icon: Brain },
-  { href: '/dashboard/sessions', label: 'Sessions', icon: ClipboardList },
-  { href: '/dashboard/review', label: 'Review', icon: BookOpen },
+  { href: '/dashboard/testing', label: 'Testing', icon: FlaskConical },
   { href: '/dashboard/analytics', label: 'Analytics', icon: BarChart3 },
   { href: '/dashboard/wiki', label: 'Wiki', icon: Globe },
   { href: '/dashboard/notes', label: 'Notes', icon: FileText },
-  { href: '/dashboard/library', label: 'Library', icon: Library },
   { href: '/dashboard/3d-lab', label: '3D Lab', icon: Box },
   { href: '/dashboard/settings', label: 'Settings', icon: Settings },
 ]
@@ -74,11 +66,6 @@ interface SidebarProps {
   tier?: UserTier
 }
 
-function getInitialCollapsed(): boolean {
-  if (typeof window === 'undefined') return false
-  return localStorage.getItem('cerebro_sidebar_collapsed') === 'true'
-}
-
 /** Single padding for the entire sidebar content column so icons are in the exact same position expanded/collapsed. */
 const SIDEBAR_CONTENT_PX = 'px-4'
 /** Fixed icon column: same size and position for tier, exam, nav in both states. */
@@ -89,11 +76,22 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
   const pathname = usePathname()
   const router = useRouter()
   const { activeSession: mode } = useActiveSession()
-  const [collapsed, setCollapsed] = useState(getInitialCollapsed)
+  const [collapsed, setCollapsed] = useState(false)
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false)
   const [leaveTarget, setLeaveTarget] = useState<string>('/dashboard')
   const displayName = userDisplay?.name ?? 'User'
   const initials = getInitials(displayName)
+
+  // Read persisted collapsed state on the client after initial hydration to avoid SSR/client mismatch.
+  useEffect(() => {
+    try {
+      const stored = window.localStorage.getItem('cerebro_sidebar_collapsed')
+      if (stored === 'true') setCollapsed(true)
+      if (stored === 'false') setCollapsed(false)
+    } catch {
+      // Ignore read errors (e.g. disabled storage)
+    }
+  }, [])
 
   function handleNavClick(
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -108,7 +106,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false)
-    router.push(mode === 'review' ? '/dashboard/review?exited=1' : leaveTarget)
+    router.push(mode === 'review' ? '/dashboard/testing?tab=review&exited=1' : leaveTarget)
   }
 
   function toggleCollapse() {
@@ -117,13 +115,6 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
       localStorage.setItem('cerebro_sidebar_collapsed', String(next))
       return next
     })
-  }
-
-  async function handleLogout() {
-    const supabase = createClient()
-    await supabase.auth.signOut()
-    router.push('/login')
-    router.refresh()
   }
 
   return (
@@ -416,40 +407,9 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
         {/* Footer */}
         <div className='border-t border-border/40 py-2'>
           <div
-            className={`flex items-center gap-1 ${collapsed ? 'justify-start py-2' : 'justify-between py-2'}`}
+            className={`flex items-center gap-1 ${collapsed ? 'justify-start py-2' : 'justify-end py-2'}`}
           >
             <ThemeToggle />
-            {collapsed ? (
-              <Tooltip>
-                <TooltipTrigger
-                  render={
-                    <span className='block'>
-                      <button
-                        type='button'
-                        onClick={handleLogout}
-                        className='flex h-8 w-8 items-center justify-center rounded-lg text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
-                      >
-                        <LogOut
-                          className={SIDEBAR_ICON_SIZE}
-                          strokeWidth={1.5}
-                        />
-                      </button>
-                    </span>
-                  }
-                />
-                <TooltipContent side='right' sideOffset={8}>
-                  Log out
-                </TooltipContent>
-              </Tooltip>
-            ) : (
-              <button
-                onClick={handleLogout}
-                className='flex items-center gap-2 rounded-md px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground'
-              >
-                <LogOut className={SIDEBAR_ICON_SIZE} strokeWidth={1.5} />
-                Log out
-              </button>
-            )}
           </div>
         </div>
       </div>

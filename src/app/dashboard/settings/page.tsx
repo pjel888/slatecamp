@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SettingsForm } from "./settings-form";
 import { EmailPreferencesForm } from "./email-preferences-form";
+import { LogoutCard } from "./logout-card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
@@ -113,6 +114,9 @@ export default async function SettingsPage() {
           <SettingsForm profile={profile as unknown as Profile} />
         </CardContent>
       </Card>
+
+      {/* Account / Log out */}
+      <LogoutCard />
     </div>
   );
 }
