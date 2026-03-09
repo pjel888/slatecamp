@@ -484,6 +484,58 @@ export interface QuestionSocialProof {
 // F-09: Final Stretch
 export type FinalStretchPhase = 'final_approach' | 'countdown' | 'final_week' | 'exam_eve' | null;
 
+// =============================================
+// Wiki / Resources Types
+// =============================================
+
+export interface WikiCategory {
+  id: string;
+  parent_id: string | null;
+  name: string;
+  slug: string;
+  description: string | null;
+  order_index: number;
+  created_at: string;
+  updated_at: string;
+  children?: WikiCategory[];
+}
+
+export interface WikiPage {
+  id: string;
+  category_id: string;
+  title: string;
+  slug: string;
+  markdown_content: string;
+  tags: string[];
+  is_free: boolean;
+  is_deprecated: boolean;
+  deprecated_by: string | null;
+  deprecated_note: string | null;
+  order_index: number;
+  created_at: string;
+  updated_at: string;
+  wiki_categories?: WikiCategory;
+}
+
+export interface WikiPageLink {
+  id: string;
+  source_page_id: string;
+  target_page_id: string;
+  created_at: string;
+}
+
+export interface WikiSearchResult {
+  id: string;
+  title: string;
+  slug: string;
+  category_id: string;
+  tags: string[];
+  is_deprecated: boolean;
+  is_free: boolean;
+  headline: string;
+  rank: number;
+}
+
 export interface FinalStretchData {
   isActive: boolean;
   phase: FinalStretchPhase;

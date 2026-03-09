@@ -6,7 +6,8 @@
       "Bash(xargs grep -l \"getAdminAwareProfile\")",
       "Bash(npm run typecheck)",
       "Bash(npm run type-check)",
-      "WebFetch(domain:supabase.com)"
+      "WebFetch(domain:supabase.com)",
+      "Bash(npx tsc --noEmit --pretty)"
     ]
   }
 }
