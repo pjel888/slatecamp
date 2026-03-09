@@ -986,3 +986,23 @@ ALTER TABLE public.wiki_page_links ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "wiki_categories_public_read" ON public.wiki_categories FOR SELECT USING (true);
 CREATE POLICY "wiki_pages_public_read" ON public.wiki_pages FOR SELECT USING (true);
 CREATE POLICY "wiki_page_links_public_read" ON public.wiki_page_links FOR SELECT USING (true);
+
+-- =============================================================
+-- 11. NOTES (flat, Tiptap JSONB)
+-- =============================================================
+CREATE TABLE public.notes (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES public.profiles(id) ON DELETE CASCADE,
+    title TEXT NOT NULL DEFAULT 'Untitled Note',
+    content JSONB NOT NULL DEFAULT '{}',
+    is_pinned BOOLEAN NOT NULL DEFAULT false,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+CREATE INDEX idx_notes_user_id ON public.notes(user_id);
+CREATE INDEX idx_notes_updated_at ON public.notes(updated_at DESC);
+ALTER TABLE public.notes ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "notes_select_own" ON public.notes FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "notes_insert_own" ON public.notes FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "notes_update_own" ON public.notes FOR UPDATE USING (auth.uid() = user_id);
+CREATE POLICY "notes_delete_own" ON public.notes FOR DELETE USING (auth.uid() = user_id);

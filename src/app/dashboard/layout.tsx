@@ -123,7 +123,7 @@ export default async function DashboardLayout({
             <BottomNav />
           </BreadcrumbProvider>
         </div>
-        {showDevTools && flags && (
+        {showDevTools && flags != null && (
           <DevToolbar
             connectionState={getConnectionState()}
             currentTier={currentTier}

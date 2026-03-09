@@ -536,6 +536,25 @@ export interface WikiSearchResult {
   rank: number;
 }
 
+// Notes — flat, Tiptap JSONB
+export interface Note {
+  id: string;
+  user_id: string;
+  title: string;
+  content: Record<string, unknown>;
+  is_pinned: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface NoteStub {
+  id: string;
+  title: string;
+  updated_at: string;
+  is_pinned: boolean;
+  snippet?: string;
+}
+
 export interface FinalStretchData {
   isActive: boolean;
   phase: FinalStretchPhase;

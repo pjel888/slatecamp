@@ -70,6 +70,21 @@ export async function getWikiPageBySlug(
 }
 
 /**
+ * Fetch a single wiki page by id (full content, for dev edit).
+ */
+export async function getWikiPageById(id: string): Promise<WikiPage | null> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("wiki_pages")
+    .select("*")
+    .eq("id", id)
+    .single();
+
+  if (error || !data) return null;
+  return data as WikiPage;
+}
+
+/**
  * Fetch backlinks: pages that link TO this page.
  */
 export async function getWikiBacklinks(
