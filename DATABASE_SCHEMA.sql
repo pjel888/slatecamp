@@ -869,3 +869,120 @@ CREATE INDEX idx_study_time_user ON study_time_logs(user_id, exam_profile_id);
 CREATE INDEX idx_daily_stats_user_date ON daily_user_stats(user_id, exam_profile_id, date);
 CREATE INDEX idx_subject_mastery_user ON subject_mastery(user_id, exam_profile_id);
 CREATE INDEX idx_3d_models_subject ON three_d_models(subject_id);
+
+
+-- =============================================================
+-- 10. WIKI / RESOURCES SYSTEM
+-- Subject-based taxonomy: root categories = architectural subjects
+-- Hierarchical categories, atomic pages, bi-directional linking, FTS
+-- =============================================================
+
+-- Wiki Categories — adjacency-list tree (roots = subjects like Building Laws, Structural, etc.)
+CREATE TABLE public.wiki_categories (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    parent_id UUID REFERENCES public.wiki_categories(id) ON DELETE SET NULL,
+    name TEXT NOT NULL,
+    slug TEXT NOT NULL UNIQUE,
+    description TEXT,
+    order_index INT DEFAULT 0,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Wiki Pages — atomic notes with markdown, tags, deprecation, FTS
+CREATE TABLE public.wiki_pages (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    category_id UUID NOT NULL REFERENCES public.wiki_categories(id) ON DELETE CASCADE,
+    title TEXT NOT NULL,
+    slug TEXT NOT NULL UNIQUE,
+    markdown_content TEXT NOT NULL DEFAULT '',
+    tags TEXT[] DEFAULT '{}',
+    is_free BOOLEAN DEFAULT true,
+    is_deprecated BOOLEAN DEFAULT false,
+    deprecated_by UUID REFERENCES public.wiki_pages(id) ON DELETE SET NULL,
+    deprecated_note TEXT,
+    order_index INT DEFAULT 0,
+    fts_vector TSVECTOR,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Wiki Page Links — bi-directional graph edges (source -> target)
+CREATE TABLE public.wiki_page_links (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    source_page_id UUID NOT NULL REFERENCES public.wiki_pages(id) ON DELETE CASCADE,
+    target_page_id UUID NOT NULL REFERENCES public.wiki_pages(id) ON DELETE CASCADE,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(source_page_id, target_page_id),
+    CHECK (source_page_id <> target_page_id)
+);
+
+-- FTS trigger: weights title=A, tags=B, content=C
+CREATE OR REPLACE FUNCTION wiki_pages_fts_trigger()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.fts_vector :=
+        setweight(to_tsvector('english', COALESCE(NEW.title, '')), 'A') ||
+        setweight(to_tsvector('english', COALESCE(array_to_string(NEW.tags, ' '), '')), 'B') ||
+        setweight(to_tsvector('english', COALESCE(NEW.markdown_content, '')), 'C');
+    NEW.updated_at := NOW();
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_wiki_pages_fts
+    BEFORE INSERT OR UPDATE OF title, tags, markdown_content
+    ON public.wiki_pages
+    FOR EACH ROW
+    EXECUTE FUNCTION wiki_pages_fts_trigger();
+
+-- Search RPC — weighted full-text search with headline
+CREATE OR REPLACE FUNCTION search_wiki(search_term TEXT, max_results INT DEFAULT 20)
+RETURNS TABLE (
+    id UUID,
+    title TEXT,
+    slug TEXT,
+    category_id UUID,
+    tags TEXT[],
+    is_deprecated BOOLEAN,
+    is_free BOOLEAN,
+    headline TEXT,
+    rank REAL
+) AS $$
+DECLARE
+    tsquery_val TSQUERY;
+BEGIN
+    tsquery_val := websearch_to_tsquery('english', search_term);
+    RETURN QUERY
+    SELECT
+        wp.id, wp.title, wp.slug, wp.category_id, wp.tags,
+        wp.is_deprecated, wp.is_free,
+        ts_headline('english', wp.markdown_content, tsquery_val,
+            'StartSel=<mark>, StopSel=</mark>, MaxWords=60, MinWords=20') AS headline,
+        ts_rank_cd(wp.fts_vector, tsquery_val) AS rank
+    FROM public.wiki_pages wp
+    WHERE wp.fts_vector @@ tsquery_val
+    ORDER BY rank DESC
+    LIMIT max_results;
+END;
+$$ LANGUAGE plpgsql STABLE;
+
+-- Wiki indexes
+CREATE INDEX idx_wiki_categories_parent ON wiki_categories(parent_id);
+CREATE INDEX idx_wiki_categories_slug ON wiki_categories(slug);
+CREATE INDEX idx_wiki_pages_category ON wiki_pages(category_id);
+CREATE INDEX idx_wiki_pages_slug ON wiki_pages(slug);
+CREATE INDEX idx_wiki_pages_fts ON wiki_pages USING GIN(fts_vector);
+CREATE INDEX idx_wiki_pages_tags ON wiki_pages USING GIN(tags);
+CREATE INDEX idx_wiki_pages_deprecated ON wiki_pages(is_deprecated) WHERE is_deprecated = true;
+CREATE INDEX idx_wiki_links_source ON wiki_page_links(source_page_id);
+CREATE INDEX idx_wiki_links_target ON wiki_page_links(target_page_id);
+
+-- Wiki RLS — public read
+ALTER TABLE public.wiki_categories ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.wiki_pages ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.wiki_page_links ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "wiki_categories_public_read" ON public.wiki_categories FOR SELECT USING (true);
+CREATE POLICY "wiki_pages_public_read" ON public.wiki_pages FOR SELECT USING (true);
+CREATE POLICY "wiki_page_links_public_read" ON public.wiki_page_links FOR SELECT USING (true);

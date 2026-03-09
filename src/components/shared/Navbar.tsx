@@ -23,6 +23,7 @@ import {
   Shield,
   ClipboardList,
   BookOpen,
+  Globe,
 } from "lucide-react";
 
 const NAV_ITEMS = [
@@ -31,6 +32,7 @@ const NAV_ITEMS = [
   { href: "/dashboard/sessions", label: "Sessions", icon: ClipboardList },
   { href: "/dashboard/review", label: "Review", icon: BookOpen },
   { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
+  { href: "/dashboard/wiki", label: "Wiki", icon: Globe },
   { href: "/dashboard/library", label: "Library", icon: Library },
   { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
