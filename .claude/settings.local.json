@@ -7,7 +7,8 @@
       "Bash(npm run typecheck)",
       "Bash(npm run type-check)",
       "WebFetch(domain:supabase.com)",
-      "Bash(npx tsc --noEmit --pretty)"
+      "Bash(npx tsc --noEmit --pretty)",
+      "Bash(npx next lint --file src/components/testing/quiz-tab.tsx --file src/components/testing/sessions-tab.tsx --file src/components/testing/review-tab.tsx --file src/components/testing/library-tab.tsx --file src/components/testing/testing-tabs.tsx --file src/app/dashboard/testing/page.tsx)"
     ]
   }
 }

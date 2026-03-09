@@ -8,8 +8,7 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { usePathname, useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase/client";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
 import {
   LayoutDashboard,
@@ -18,7 +17,6 @@ import {
   Library,
   Box,
   Settings,
-  LogOut,
   Menu,
   Shield,
   ClipboardList,
@@ -44,14 +42,6 @@ interface NavbarProps {
 
 export function Navbar({ isAdmin }: NavbarProps) {
   const pathname = usePathname();
-  const router = useRouter();
-
-  async function handleLogout() {
-    const supabase = createClient();
-    await supabase.auth.signOut();
-    router.push("/login");
-    router.refresh();
-  }
 
   return (
     <header className="flex h-12 items-center justify-between border-b border-border/40 bg-background/80 px-4 backdrop-blur-xl lg:hidden">
@@ -110,15 +100,6 @@ export function Navbar({ isAdmin }: NavbarProps) {
                 </>
               )}
             </nav>
-            <div className="border-t border-border p-3">
-              <button
-                onClick={handleLogout}
-                className="flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground"
-              >
-                <LogOut className="h-5 w-5" strokeWidth={1.5} />
-                Log out
-              </button>
-            </div>
           </SheetContent>
         </Sheet>
       </div>

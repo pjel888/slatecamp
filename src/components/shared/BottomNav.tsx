@@ -5,9 +5,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
-  Brain,
+  FlaskConical,
   BarChart3,
-  Library,
   Settings,
 } from "lucide-react";
 import { useActiveSession } from "@/lib/context/active-session-context";
@@ -22,9 +21,8 @@ import { Button } from "@/components/ui/button";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard },
-  { href: "/dashboard/quiz", label: "Quiz", icon: Brain },
+  { href: "/dashboard/testing", label: "Testing", icon: FlaskConical },
   { href: "/dashboard/analytics", label: "Stats", icon: BarChart3 },
-  { href: "/dashboard/library", label: "Library", icon: Library },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ];
 
@@ -45,7 +43,7 @@ export function BottomNav() {
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false);
-    router.push(mode === "review" ? "/dashboard/review?exited=1" : leaveTarget);
+    router.push(mode === "review" ? "/dashboard/testing?tab=review&exited=1" : leaveTarget);
   }
 
   return (
