@@ -14,6 +14,7 @@ import {
   Square,
 } from 'lucide-react'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/constants/routes'
 import { generateSessionInsight } from '@/lib/actions/session-insights'
 import { getReadinessScore } from '@/lib/actions/readiness'
 import { ShareSection } from './share-section'
@@ -49,7 +50,7 @@ export default async function SessionSummaryPage({
   const {
     data: { user },
   } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user) redirect(ROUTES.LOGIN)
 
   const { data: session } = await supabase
     .from('review_sessions')
@@ -58,7 +59,7 @@ export default async function SessionSummaryPage({
     .eq('user_id', user.id)
     .single()
 
-  if (!session) redirect('/dashboard')
+  if (!session) redirect(ROUTES.DASHBOARD)
 
   const s = session as ReviewSession
 
@@ -393,13 +394,13 @@ export default async function SessionSummaryPage({
 
       {/* Actions */}
       <div className='flex flex-col gap-3 sm:flex-row'>
-        <Link href='/dashboard' className='flex-1'>
+        <Link href={ROUTES.DASHBOARD} className='flex-1'>
           <Button variant='outline' className='w-full gap-2'>
             <ArrowLeft className='h-4 w-4' strokeWidth={1.5} />
             Dashboard
           </Button>
         </Link>
-        <Link href='/dashboard/sessions' className='flex-1'>
+        <Link href={ROUTES.SESSIONS} className='flex-1'>
           <Button variant='outline' className='w-full gap-2'>
             Sessions
             <ChevronRight className='h-4 w-4' strokeWidth={1.5} />

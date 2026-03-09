@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, BookOpen, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import type { Subject, SubjectMastery, UserTier } from "@/types/app";
 
 const SOCIAL_PROOF_MIN = 5;
@@ -45,11 +46,11 @@ export function SubjectCardsGrid({
                 <div className="relative">
                   <div
                     className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg"
-                    style={{ backgroundColor: `${subject.color ?? "#86868B"}15` }}
+                    style={{ backgroundColor: `${subject.color ?? FALLBACK_SUBJECT_COLOR}15` }}
                   >
                   <BookOpen
                     className="h-4 w-4"
-                    style={{ color: subject.color ?? "#86868B" }}
+                    style={{ color: subject.color ?? FALLBACK_SUBJECT_COLOR }}
                     strokeWidth={1.5}
                   />
                   </div>

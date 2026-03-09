@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
+import { ROUTES } from "@/lib/constants/routes";
 import { getFeatureFlags, getConnectionState } from "@/lib/admin/feature-flags";
 import { DevPanel } from "./dev-panel";
 
@@ -9,7 +10,7 @@ export default async function DeveloperSettingsPage() {
   const profile = await getAdminAwareProfile();
 
   if (!profile || !profile.isAdmin) {
-    redirect("/dashboard/settings");
+    redirect(ROUTES.SETTINGS);
   }
 
   const flags = await getFeatureFlags();

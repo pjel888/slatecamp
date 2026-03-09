@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect, notFound } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
@@ -25,7 +26,7 @@ export default async function LibraryBankPage({ params }: Props) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: bank } = await supabase
     .from("question_banks")
@@ -70,11 +71,11 @@ export default async function LibraryBankPage({ params }: Props) {
   >[];
 
   const breadcrumbItems = [
-    { href: "/dashboard/library", label: "Library" },
+    { href: ROUTES.LIBRARY, label: "Library" },
     ...(subjectId && subjectName
-      ? [{ href: `/dashboard/library/subject/${subjectId}`, label: subjectName }]
+      ? [{ href: ROUTES.LIBRARY_SUBJECT(subjectId), label: subjectName }]
       : []),
-    { href: `/dashboard/library/bank/${bankId}`, label: b.title },
+    { href: ROUTES.LIBRARY_BANK(bankId), label: b.title },
   ];
 
   return (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { getReadinessColor, getReadinessLabel, READINESS_DELTA_POSITIVE, READINESS_DELTA_NEGATIVE } from '@/lib/constants/readiness';
 
 interface ReadinessGaugeProps {
   score: number;
@@ -21,22 +22,6 @@ const FONT_SIZE_MAP = {
   md: 36,
   lg: 48,
 } as const;
-
-function getScoreColor(score: number): string {
-  if (score >= 90) return '#22C55E';
-  if (score >= 75) return '#22C55E';
-  if (score >= 60) return '#84CC16';
-  if (score >= 40) return '#F59E0B';
-  return '#EF4444';
-}
-
-function getScoreLabel(score: number): string {
-  if (score >= 90) return 'Exam Ready';
-  if (score >= 75) return 'Strong';
-  if (score >= 60) return 'Getting There';
-  if (score >= 40) return 'Building Momentum';
-  return 'Needs Work';
-}
 
 export function ReadinessGauge({
   score,
@@ -114,8 +99,8 @@ export function ReadinessGauge({
     ? `M ${arcStartX} ${arcStartY} A ${radius} ${radius} 0 ${largeArcScore} 1 ${scoreEndX} ${scoreEndY}`
     : '';
 
-  const color = getScoreColor(animatedScore);
-  const label = getScoreLabel(score);
+  const color = getReadinessColor(animatedScore);
+  const label = getReadinessLabel(score);
   const fontSize = FONT_SIZE_MAP[size];
 
   const delta = previousScore != null ? score - previousScore : null;
@@ -200,10 +185,9 @@ export function ReadinessGauge({
       {/* Delta badge */}
       {showDelta && delta != null && (
         <div
-          className="absolute top-1 right-1 rounded-full px-1.5 py-0.5 text-xs font-semibold"
+          className="absolute top-1 right-1 rounded-full px-1.5 py-0.5 text-xs font-semibold bg-muted/80"
           style={{
-            backgroundColor: delta > 0 ? 'rgba(34, 197, 94, 0.15)' : 'rgba(239, 68, 68, 0.15)',
-            color: delta > 0 ? '#22C55E' : '#EF4444',
+            color: delta > 0 ? READINESS_DELTA_POSITIVE : READINESS_DELTA_NEGATIVE,
             fontSize: size === 'sm' ? '9px' : '11px',
           }}
         >

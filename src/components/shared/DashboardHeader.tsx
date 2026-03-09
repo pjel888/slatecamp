@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { ChevronLeft, ChevronRight, BookOpen, ClipboardList, X } from "lucide-react";
 import { useBreadcrumb } from "@/lib/context/breadcrumb-context";
 import { useActiveSession } from "@/lib/context/active-session-context";
@@ -63,9 +64,9 @@ export function DashboardHeader() {
   function handleConfirmExit() {
     setExitDialogOpen(false);
     if (mode === "review") {
-      router.push("/dashboard/review?exited=1");
+      router.push(ROUTES.REVIEW_EXITED);
     } else {
-      router.push("/dashboard");
+      router.push(ROUTES.DASHBOARD);
     }
   }
 

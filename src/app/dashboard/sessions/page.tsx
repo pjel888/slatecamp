@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -13,7 +14,7 @@ export const metadata = { title: "Sessions — Cerebro" };
 export default async function SessionsPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: examProfile } = await supabase
     .from("exam_profiles")

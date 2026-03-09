@@ -1,5 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
+import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,7 +24,7 @@ export default async function QuizPage({
   const params = await searchParams;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   await ensureProfileAndExamProfile(
     user.id,
@@ -103,7 +105,7 @@ export default async function QuizPage({
             Start a session or build a custom quiz
           </p>
         </div>
-        <Link href="/dashboard/sessions/new">
+        <Link href={ROUTES.SESSIONS_NEW}>
           <Button className="gap-2">
             <Plus className="h-4 w-4" strokeWidth={1.5} />
             Custom Session
@@ -125,16 +127,16 @@ export default async function QuizPage({
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {((subjects ?? []) as Subject[]).map((subject) => {
             return (
-              <Link key={subject.id} href={`/dashboard/quiz?subject=${subject.id}&quick=true`}>
+              <Link key={subject.id} href={`${ROUTES.QUIZ}?subject=${subject.id}&quick=true`}>
                 <Card className="transition-shadow hover:shadow-md">
                   <CardContent className="flex items-center gap-3 p-4">
                     <div
                       className="flex h-10 w-10 items-center justify-center rounded-xl"
-                      style={{ backgroundColor: `${subject.color ?? "#86868B"}15` }}
+                      style={{ backgroundColor: `${subject.color ?? FALLBACK_SUBJECT_COLOR}15`, color: subject.color ?? FALLBACK_SUBJECT_COLOR }}
                     >
                       <Play
                         className="h-4 w-4"
-                        style={{ color: subject.color ?? "#86868B" }}
+                        style={{ color: subject.color ?? FALLBACK_SUBJECT_COLOR }}
                         strokeWidth={1.5}
                       />
                     </div>

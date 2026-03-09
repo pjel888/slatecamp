@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { SessionBuilder } from "./session-builder";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject } from "@/types/app";
@@ -9,7 +10,7 @@ export const metadata = { title: "New Session — Cerebro" };
 export default async function NewSessionPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: examProfile } = await supabase
     .from("exam_profiles")

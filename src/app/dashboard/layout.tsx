@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { ROUTES } from "@/lib/constants/routes";
 import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { getFeatureFlags, getEffectiveTier, getConnectionState } from "@/lib/admin/feature-flags";
 import { isAdminByEmail } from "@/lib/admin/is-admin";
@@ -28,7 +29,7 @@ export default async function DashboardLayout({
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   await ensureProfileAndExamProfile(
     user.id,

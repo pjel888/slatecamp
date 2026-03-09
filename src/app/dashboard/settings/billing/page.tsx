@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
+import { ROUTES } from "@/lib/constants/routes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
@@ -44,7 +45,7 @@ const PAYMENT_METHODS = [
 
 export default async function BillingPage() {
   const profile = await getAdminAwareProfile();
-  if (!profile) redirect("/login");
+  if (!profile) redirect(ROUTES.LOGIN);
 
   const currentTier = profile.effectiveTier;
 

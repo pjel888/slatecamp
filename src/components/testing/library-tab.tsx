@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen } from "lucide-react";
 import type { Subject } from "@/types/app";
@@ -27,7 +28,7 @@ export function LibraryTab({ subjects, questionCounts }: LibraryTabProps) {
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {subjects.map((subject) => {
-          const color = subject.color ?? "#86868B";
+          const color = subject.color ?? FALLBACK_SUBJECT_COLOR;
           const qCount = questionCounts[subject.id] ?? 0;
           return (
             <Link key={subject.id} href={`/dashboard/library/subject/${subject.id}`}>

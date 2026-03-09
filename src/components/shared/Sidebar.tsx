@@ -37,15 +37,16 @@ import {
   DialogFooter,
 } from '@/components/ui/dialog'
 import type { UserTier } from '@/types/app'
+import { ROUTES } from '@/lib/constants/routes'
 
 const NAV_ITEMS = [
-  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/dashboard/testing', label: 'Testing', icon: FlaskConical },
-  { href: '/dashboard/analytics', label: 'Analytics', icon: BarChart3 },
-  { href: '/dashboard/wiki', label: 'Wiki', icon: Globe },
-  { href: '/dashboard/notes', label: 'Notes', icon: FileText },
-  { href: '/dashboard/3d-lab', label: '3D Lab', icon: Box },
-  { href: '/dashboard/settings', label: 'Settings', icon: Settings },
+  { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: LayoutDashboard },
+  { href: ROUTES.TESTING, label: 'Testing', icon: FlaskConical },
+  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: BarChart3 },
+  { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
+  { href: ROUTES.NOTES, label: 'Notes', icon: FileText },
+  { href: ROUTES.THREE_D_LAB, label: '3D Lab', icon: Box },
+  { href: ROUTES.SETTINGS, label: 'Settings', icon: Settings },
 ]
 
 function getInitials(name: string, email?: string): string {
@@ -78,7 +79,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
   const { activeSession: mode } = useActiveSession()
   const [collapsed, setCollapsed] = useState(false)
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false)
-  const [leaveTarget, setLeaveTarget] = useState<string>('/dashboard')
+  const [leaveTarget, setLeaveTarget] = useState<string>(ROUTES.DASHBOARD)
   const displayName = userDisplay?.name ?? 'User'
   const initials = getInitials(displayName)
 
@@ -106,7 +107,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false)
-    router.push(mode === 'review' ? '/dashboard/testing?tab=review&exited=1' : leaveTarget)
+    router.push(mode === 'review' ? `${ROUTES.TESTING}?tab=review&exited=1` : leaveTarget)
   }
 
   function toggleCollapse() {
@@ -130,7 +131,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
         {!collapsed && (
           <div className='flex items-center gap-2'>
             <Link
-              href='/dashboard'
+              href={ROUTES.DASHBOARD}
               className='text-lg font-semibold tracking-tight text-foreground'
               onClick={(e) => handleNavClick(e, '/dashboard')}
             >
@@ -161,10 +162,10 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href='/dashboard/settings'
+                  href={ROUTES.SETTINGS}
                   className='inline-flex shrink-0 items-center justify-start py-2'
                   aria-label='Settings'
-                  onClick={(e) => handleNavClick(e, '/dashboard/settings')}
+                  onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
                 >
                   <Avatar className='size-9'>
                     {userDisplay?.avatarUrl ? (
@@ -181,9 +182,9 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
           ) : (
             <div className='flex items-center gap-3 rounded-xl py-2'>
               <Link
-                href='/dashboard/settings'
+                href={ROUTES.SETTINGS}
                 className='shrink-0 rounded-full ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring'
-                onClick={(e) => handleNavClick(e, '/dashboard/settings')}
+                onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <Avatar className='size-9'>
                   {userDisplay?.avatarUrl ? (
@@ -197,9 +198,9 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                   {displayName}
                 </p>
                 {/* <Link
-                  href='/dashboard/settings'
+                  href={ROUTES.SETTINGS}
                   className='flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground'
-                  onClick={(e) => handleNavClick(e, '/dashboard/settings')}
+                  onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
                 >
                   <User className='h-3.5 w-3.5' strokeWidth={1.5} />
                   Settings
@@ -216,11 +217,11 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Link
-                    href='/dashboard/settings/billing'
+                    href={ROUTES.SETTINGS_BILLING}
                     className='flex items-center justify-start py-2'
                     aria-label='Upgrade to Pro'
                     onClick={(e) =>
-                      handleNavClick(e, '/dashboard/settings/billing')
+                      handleNavClick(e, ROUTES.SETTINGS_BILLING)
                     }
                   >
                     <div className={SIDEBAR_ICON_BOX}>
@@ -280,9 +281,9 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               </div>
               {tier === 'free' && (
                 <Link
-                  href='/dashboard/settings/billing'
+                  href={ROUTES.SETTINGS_BILLING}
                   onClick={(e) =>
-                    handleNavClick(e, '/dashboard/settings/billing')
+                    handleNavClick(e, ROUTES.SETTINGS_BILLING)
                   }
                 >
                   <Button
@@ -356,16 +357,16 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                     render={
                       <span className='block'>
                         <Link
-                          href='/dashboard/settings/developer'
+                          href={ROUTES.SETTINGS_DEVELOPER}
                           className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all ${
                             collapsed ? 'justify-start' : ''
                           } ${
-                            pathname === '/dashboard/settings/developer'
+                            pathname === ROUTES.SETTINGS_DEVELOPER
                               ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
                               : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                           }`}
                           onClick={(e) =>
-                            handleNavClick(e, '/dashboard/settings/developer')
+                            handleNavClick(e, ROUTES.SETTINGS_DEVELOPER)
                           }
                         >
                           <div className={SIDEBAR_ICON_BOX}>
@@ -384,14 +385,14 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                 </Tooltip>
               ) : (
                 <Link
-                  href='/dashboard/settings/developer'
+                  href={ROUTES.SETTINGS_DEVELOPER}
                   className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all truncate ${
-                    pathname === '/dashboard/settings/developer'
+                    pathname === ROUTES.SETTINGS_DEVELOPER
                       ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
                       : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                   }`}
                   onClick={(e) =>
-                    handleNavClick(e, '/dashboard/settings/developer')
+                    handleNavClick(e, ROUTES.SETTINGS_DEVELOPER)
                   }
                 >
                   <div className={SIDEBAR_ICON_BOX}>

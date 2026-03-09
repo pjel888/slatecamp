@@ -2,6 +2,7 @@
 
 import { createClient } from '@/lib/supabase/server';
 import { redirect } from 'next/navigation';
+import { ROUTES } from '@/lib/constants/routes';
 import type { DailyMissionData, SessionConfig, UserTier } from '@/types/app';
 
 function getDefaultMission(): DailyMissionData {
@@ -214,7 +215,7 @@ export async function startDailyMission(
 ): Promise<{ sessionId: string }> {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect('/login');
+  if (!user) redirect(ROUTES.LOGIN);
 
   // Gather question IDs
   const questionIds: string[] = [];

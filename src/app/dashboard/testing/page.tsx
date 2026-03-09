@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import { TestingTabs } from "@/components/testing/testing-tabs";
@@ -18,7 +19,7 @@ export default async function TestingPage({
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   await ensureProfileAndExamProfile(
     user.id,

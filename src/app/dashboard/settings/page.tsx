@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,7 +15,7 @@ export const metadata = { title: "Settings" };
 
 export default async function SettingsPage() {
   const profile = await getAdminAwareProfile();
-  if (!profile) redirect("/login");
+  if (!profile) redirect(ROUTES.LOGIN);
 
   return (
     <div className="space-y-8">

@@ -1,30 +1,15 @@
 'use server';
 
 import { createClient } from '@/lib/supabase/server';
+import { getReadinessLabel, getReadinessColor } from '@/lib/constants/readiness';
 import type { ReadinessScoreData, UserTier } from '@/types/app';
-
-function getReadinessLabel(score: number): string {
-  if (score >= 90) return 'Exam Ready';
-  if (score >= 75) return 'Strong';
-  if (score >= 60) return 'Getting There';
-  if (score >= 40) return 'Building Momentum';
-  return 'Needs Work';
-}
-
-function getReadinessColor(score: number): string {
-  if (score >= 90) return '#22C55E';
-  if (score >= 75) return '#22C55E';
-  if (score >= 60) return '#84CC16';
-  if (score >= 40) return '#F59E0B';
-  return '#EF4444';
-}
 
 const EMPTY_RESULT: ReadinessScoreData = {
   score: 0,
   previousScore: null,
   subScores: { accuracy: 0, coverage: 0, srsHealth: 50, recency: 0, weakArea: 100 },
   label: 'Needs Work',
-  color: '#EF4444',
+  color: 'var(--color-signal-red)',
 };
 
 export async function getReadinessScore(
