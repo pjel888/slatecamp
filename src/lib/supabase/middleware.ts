@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
 
 /**
  * Refreshes the Supabase auth session and protects routes.
@@ -30,8 +31,7 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const publicPaths = ["/", "/login", "/register", "/forgot-password"];
-  const isPublicPath = publicPaths.some(
+  const isPublicPath = PUBLIC_PATHS.some(
     (path) => request.nextUrl.pathname === path
   );
   const isAuthCallback = request.nextUrl.pathname.startsWith("/auth/callback");
@@ -39,13 +39,13 @@ export async function updateSession(request: NextRequest) {
 
   if (!user && !isPublicPath && !isAuthCallback && !isApiRoute) {
     const url = request.nextUrl.clone();
-    url.pathname = "/login";
+    url.pathname = ROUTES.LOGIN;
     return NextResponse.redirect(url);
   }
 
-  if (user && (request.nextUrl.pathname === "/login" || request.nextUrl.pathname === "/register")) {
+  if (user && (request.nextUrl.pathname === ROUTES.LOGIN || request.nextUrl.pathname === ROUTES.REGISTER)) {
     const url = request.nextUrl.clone();
-    url.pathname = "/dashboard";
+    url.pathname = ROUTES.DASHBOARD;
     return NextResponse.redirect(url);
   }
 

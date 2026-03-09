@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect, notFound } from "next/navigation";
+import { ROUTES, FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { BookOpen, ChevronRight } from "lucide-react";
@@ -27,7 +28,7 @@ export default async function LibrarySubjectPage({ params }: Props) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: subject } = await supabase
     .from("subjects")
@@ -69,7 +70,7 @@ export default async function LibrarySubjectPage({ params }: Props) {
     .map((b) => ({ bank: b, count: bankToCount.get(b.id) ?? 0 }))
     .sort((a, b) => b.count - a.count);
 
-  const color = sub.color ?? "#86868B";
+  const color = sub.color ?? FALLBACK_SUBJECT_COLOR;
   const subjectName = sub.short_name ?? sub.name;
 
   return (

@@ -23,17 +23,18 @@ import {
   BookOpen,
   Globe,
 } from "lucide-react";
+import { ROUTES } from "@/lib/constants/routes";
 
 const NAV_ITEMS = [
-  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/dashboard/quiz", label: "Quiz", icon: Brain },
-  { href: "/dashboard/sessions", label: "Sessions", icon: ClipboardList },
-  { href: "/dashboard/review", label: "Review", icon: BookOpen },
-  { href: "/dashboard/analytics", label: "Analytics", icon: BarChart3 },
-  { href: "/dashboard/wiki", label: "Wiki", icon: Globe },
-  { href: "/dashboard/library", label: "Library", icon: Library },
-  { href: "/dashboard/3d-lab", label: "3D Lab", icon: Box },
-  { href: "/dashboard/settings", label: "Settings", icon: Settings },
+  { href: ROUTES.DASHBOARD, label: "Dashboard", icon: LayoutDashboard },
+  { href: ROUTES.QUIZ, label: "Quiz", icon: Brain },
+  { href: ROUTES.SESSIONS, label: "Sessions", icon: ClipboardList },
+  { href: ROUTES.REVIEW, label: "Review", icon: BookOpen },
+  { href: ROUTES.ANALYTICS, label: "Analytics", icon: BarChart3 },
+  { href: ROUTES.WIKI, label: "Wiki", icon: Globe },
+  { href: ROUTES.LIBRARY, label: "Library", icon: Library },
+  { href: ROUTES.THREE_D_LAB, label: "3D Lab", icon: Box },
+  { href: ROUTES.SETTINGS, label: "Settings", icon: Settings },
 ];
 
 interface NavbarProps {
@@ -46,7 +47,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
   return (
     <header className="flex h-12 items-center justify-between border-b border-border/40 bg-background/80 px-4 backdrop-blur-xl lg:hidden">
       <Link
-        href="/dashboard"
+        href={ROUTES.DASHBOARD}
         className="text-lg font-semibold tracking-tight text-foreground"
       >
         Cerebro
@@ -66,7 +67,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
               {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
                 const isActive =
                   pathname === href ||
-                  (href !== "/dashboard" && pathname.startsWith(href));
+                  (href !== ROUTES.DASHBOARD && pathname.startsWith(href));
                 return (
                   <Link
                     key={href}
@@ -87,9 +88,9 @@ export function Navbar({ isAdmin }: NavbarProps) {
                 <>
                   <div className="my-2 border-t border-border" />
                   <Link
-                    href="/dashboard/settings/developer"
+                    href={ROUTES.SETTINGS_DEVELOPER}
                     className={`flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] transition-all ${
-                      pathname === "/dashboard/settings/developer"
+                      pathname === ROUTES.SETTINGS_DEVELOPER
                         ? "bg-color-signal-amber/10 font-medium text-color-signal-amber"
                         : "text-muted-foreground hover:bg-secondary/60 hover:text-foreground"
                     }`}

@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { isAdminByEmail } from "@/lib/admin/is-admin";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,7 +11,7 @@ export const metadata = { title: "Admin — Cerebro" };
 export default async function AdminPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: profile } = await supabase
     .from("profiles")
@@ -19,7 +20,7 @@ export default async function AdminPage() {
     .single();
 
   const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
-  if (!profile || !isAdmin) redirect("/dashboard");
+  if (!profile || !isAdmin) redirect(ROUTES.DASHBOARD);
 
   // Total users
   const { count: totalUsers } = await supabase

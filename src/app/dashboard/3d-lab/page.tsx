@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { Button } from "@/components/ui/button";
@@ -44,7 +45,7 @@ const CATEGORIES = [
 
 export default async function ThreeDLabPage() {
   const profile = await getAdminAwareProfile();
-  if (!profile) redirect("/login");
+  if (!profile) redirect(ROUTES.LOGIN);
 
   const flags = await getFeatureFlags();
   const hasAccess =
@@ -62,7 +63,7 @@ export default async function ThreeDLabPage() {
           Explore building components, structural systems, and design concepts
           in three dimensions. Available for Pro and Max subscribers.
         </p>
-        <Link href="/dashboard/settings/billing" className="mt-6">
+        <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
           <Button>Upgrade to Pro</Button>
         </Link>
       </div>

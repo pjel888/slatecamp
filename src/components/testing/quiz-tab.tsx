@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus, Play, ChevronRight, ArrowLeft } from "lucide-react";
@@ -85,11 +86,11 @@ export function QuizTab({ examProfileId, subjects, initialQuickSubjectId }: Quiz
                 <CardContent className="flex items-center gap-3 p-4">
                   <div
                     className="flex h-10 w-10 items-center justify-center rounded-xl"
-                    style={{ backgroundColor: `${subject.color ?? "#86868B"}15` }}
+                    style={{ backgroundColor: `${subject.color ?? FALLBACK_SUBJECT_COLOR}15` }}
                   >
                     <Play
                       className="h-4 w-4"
-                      style={{ color: subject.color ?? "#86868B" }}
+                      style={{ color: subject.color ?? FALLBACK_SUBJECT_COLOR }}
                       strokeWidth={1.5}
                     />
                   </div>

@@ -114,7 +114,7 @@ export function WikiRichEditor({
       <div
         className={cn(
           'flex shrink-0 flex-wrap items-center gap-0.5 border-b border-border/60 px-2 py-1.5',
-          'bg-[#f2f2f2] dark:bg-zinc-800/90'
+          'bg-muted dark:bg-zinc-800/90'
         )}
       >
         <nav className="flex flex-wrap items-center gap-0.5" aria-label="Formatting">

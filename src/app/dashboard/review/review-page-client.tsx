@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
+import { ROUTES, FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, Shuffle, ClipboardList } from "lucide-react";
@@ -46,7 +47,7 @@ export function ReviewPageClient({
     if (searchParams.get("exited") === "1") {
       setView("grid");
       setSelectedSubjectId(null);
-      router.replace("/dashboard/review", { scroll: true });
+      router.replace(ROUTES.REVIEW, { scroll: true });
     }
   }, [searchParams, router]);
 
@@ -173,7 +174,7 @@ export function ReviewPageClient({
           const mastery = masteries.find((m) => m.subject_id === subject.id);
           const qCount = questionCounts[subject.id] ?? 0;
           const masteryPct = mastery ? Math.round(mastery.mastery_score) : null;
-          const color = subject.color ?? "#86868B";
+          const color = subject.color ?? FALLBACK_SUBJECT_COLOR;
 
           return (
             <Card
@@ -234,7 +235,7 @@ export function ReviewPageClient({
                     <BookOpen className="mr-1.5 h-3 w-3" strokeWidth={1.5} />
                     Review
                   </Button>
-                  <Link href={`/dashboard/quiz?subject=${subject.id}&quick=true`} className="flex-1">
+                  <Link href={`${ROUTES.QUIZ}?subject=${subject.id}&quick=true`} className="flex-1">
                     <Button size="sm" className="w-full text-xs">
                       <Play className="mr-1.5 h-3 w-3" strokeWidth={1.5} />
                       Quick Start

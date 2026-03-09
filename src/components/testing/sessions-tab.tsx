@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ROUTES } from "@/lib/constants/routes";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -18,7 +19,7 @@ export function SessionsTab({ sessions }: SessionsTabProps) {
         <p className="text-sm text-muted-foreground">
           Your quiz history and session management
         </p>
-        <Link href="/dashboard/sessions/new">
+        <Link href={ROUTES.SESSIONS_NEW}>
           <Button className="gap-2">
             <Plus className="h-4 w-4" strokeWidth={1.5} />
             New Session
@@ -32,7 +33,7 @@ export function SessionsTab({ sessions }: SessionsTabProps) {
             <p className="text-sm text-muted-foreground">
               No sessions yet. Create your first session to start tracking your progress.
             </p>
-            <Link href="/dashboard/sessions/new">
+            <Link href={ROUTES.SESSIONS_NEW}>
               <Button className="mt-4 gap-2">
                 <Plus className="h-4 w-4" strokeWidth={1.5} />
                 Create Session

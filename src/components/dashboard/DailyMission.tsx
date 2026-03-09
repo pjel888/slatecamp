@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle2, ArrowRight, Zap, Target, Compass, RotateCcw } from 'lucide-react';
 import { startDailyMission } from '@/lib/actions/daily-mission';
+import { ROUTES } from '@/lib/constants/routes';
 import { useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
 import type { DailyMissionData } from '@/types/app';
@@ -39,7 +40,7 @@ export function DailyMission({ mission, examProfileId }: DailyMissionProps) {
     startTransition(async () => {
       try {
         const result = await startDailyMission(examProfileId, mission.sessionConfig);
-        router.push(`/dashboard/quiz/${result.sessionId}`);
+        router.push(ROUTES.QUIZ_SESSION(result.sessionId));
       } catch {
         setError('Failed to start mission. Please try again.');
       }

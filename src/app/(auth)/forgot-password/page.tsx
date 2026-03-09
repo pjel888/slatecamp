@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import { ROUTES } from "@/lib/constants/routes";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -39,7 +40,7 @@ export default function ForgotPasswordPage() {
       <div className="w-full max-w-sm space-y-8">
         <div className="text-center">
           <Link
-            href="/"
+            href={ROUTES.HOME}
             className="text-2xl font-semibold tracking-tight text-foreground"
           >
             Cerebro
@@ -78,7 +79,7 @@ export default function ForgotPasswordPage() {
 
         <p className="text-center text-sm text-muted-foreground">
           <Link
-            href="/login"
+            href={ROUTES.LOGIN}
             className="font-medium text-foreground underline underline-offset-4 hover:text-color-signal-amber"
           >
             Back to login

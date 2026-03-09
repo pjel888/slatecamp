@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, TrendingUp, Clock, Target } from "lucide-react";
 import { DomainRadar } from "@/components/analytics/DomainRadar";
@@ -12,7 +13,7 @@ export const metadata = { title: "Analytics — Cerebro" };
 export default async function AnalyticsPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: examProfile } = await supabase
     .from("exam_profiles")

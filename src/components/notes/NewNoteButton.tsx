@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { Plus } from 'lucide-react'
+import { ROUTES } from '@/lib/constants/routes'
 import { createNote } from '@/lib/actions/notes'
 
 interface NewNoteButtonProps {
@@ -15,7 +16,7 @@ export function NewNoteButton({ className, children }: NewNoteButtonProps) {
   async function handleClick() {
     const result = await createNote()
     if ('error' in result) return
-    router.push(`/dashboard/notes/${result.id}`)
+    router.push(ROUTES.NOTE(result.id))
   }
 
   return (

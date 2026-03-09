@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, Shuffle, ClipboardList } from "lucide-react";
@@ -170,7 +171,7 @@ export function ReviewTab({
           const mastery = masteries.find((m) => m.subject_id === subject.id);
           const qCount = questionCounts[subject.id] ?? 0;
           const masteryPct = mastery ? Math.round(mastery.mastery_score) : null;
-          const color = subject.color ?? "#86868B";
+          const color = subject.color ?? FALLBACK_SUBJECT_COLOR;
 
           return (
             <Card

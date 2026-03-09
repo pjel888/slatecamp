@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Search, FileText } from 'lucide-react'
+import { ROUTES } from '@/lib/constants/routes'
 import { getWikiCategoryTree, searchWiki } from '@/lib/actions/wiki'
 import { createClient } from '@/lib/supabase/server'
 import { WikiSearchBar } from '@/components/wiki/WikiSearchBar'
@@ -71,7 +72,7 @@ export default async function WikiHomePage({ searchParams }: WikiHomeProps) {
               {searchResults.map((result) => (
                 <Link
                   key={result.id}
-                  href={`/dashboard/wiki/${result.slug}`}
+                  href={ROUTES.WIKI_PAGE(result.slug)}
                   className="block rounded-lg border border-border/40 p-4 transition-colors hover:bg-secondary/40"
                 >
                   <h3 className="text-sm font-medium text-foreground mb-1">

@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES, FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
@@ -14,7 +15,7 @@ export default async function LibraryPage() {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: examProfile } = await supabase
     .from("exam_profiles")
@@ -82,7 +83,7 @@ export default async function LibraryPage() {
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {subjectList.map((subject) => {
-          const color = subject.color ?? "#86868B";
+          const color = subject.color ?? FALLBACK_SUBJECT_COLOR;
           const qCount = countBySubject.get(subject.id) ?? 0;
           return (
             <Link key={subject.id} href={`/dashboard/library/subject/${subject.id}`}>

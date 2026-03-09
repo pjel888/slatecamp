@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/constants/routes";
 import { QuizEngine } from "./quiz-engine";
 import type { SessionQuestion, ReviewSession } from "@/types/app";
 
@@ -13,7 +14,7 @@ export default async function QuizSessionPage({
   const { sessionId } = await params;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login");
+  if (!user) redirect(ROUTES.LOGIN);
 
   const { data: session } = await supabase
     .from("review_sessions")
@@ -22,10 +23,10 @@ export default async function QuizSessionPage({
     .eq("user_id", user.id)
     .single();
 
-  if (!session) redirect("/dashboard");
+  if (!session) redirect(ROUTES.DASHBOARD);
 
   if ((session as ReviewSession).status === "completed") {
-    redirect(`/dashboard/quiz/${sessionId}/summary`);
+    redirect(ROUTES.QUIZ_SESSION_SUMMARY(sessionId));
   }
 
   const { data: sessionQuestions } = await supabase

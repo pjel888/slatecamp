@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
+import { ROUTES } from "@/lib/constants/routes";
 import { LogOut } from "lucide-react";
 
 export function LogoutCard() {
@@ -12,7 +13,7 @@ export function LogoutCard() {
   async function handleLogout() {
     const supabase = createClient();
     await supabase.auth.signOut();
-    router.push("/login");
+    router.push(ROUTES.LOGIN);
     router.refresh();
   }
 

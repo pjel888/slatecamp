@@ -8,7 +8,12 @@
       "Bash(npm run type-check)",
       "WebFetch(domain:supabase.com)",
       "Bash(npx tsc --noEmit --pretty)",
-      "Bash(npx next lint --file src/components/testing/quiz-tab.tsx --file src/components/testing/sessions-tab.tsx --file src/components/testing/review-tab.tsx --file src/components/testing/library-tab.tsx --file src/components/testing/testing-tabs.tsx --file src/app/dashboard/testing/page.tsx)"
+      "Bash(npx next lint --file src/components/testing/quiz-tab.tsx --file src/components/testing/sessions-tab.tsx --file src/components/testing/review-tab.tsx --file src/components/testing/library-tab.tsx --file src/components/testing/testing-tabs.tsx --file src/app/dashboard/testing/page.tsx)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(source ~/.nvm/nvm.sh)",
+      "Bash(nvm ls)",
+      "Bash(lsof -ti :3000)",
+      "Bash(kill -9 9984 39742 49747)"
     ]
   }
 }
