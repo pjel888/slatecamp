@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { SettingsForm } from "./settings-form";
 import { EmailPreferencesForm } from "./email-preferences-form";
 import { LogoutCard } from "./logout-card";
+import { ExamProfileSwitcher } from "@/components/shared/ExamProfileSwitcher";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Shield } from "lucide-react";
@@ -85,6 +86,19 @@ export default async function SettingsPage() {
               </Link>
             </div>
           )}
+        </CardContent>
+      </Card>
+
+      {/* Exam Profile */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="text-base">Exam Profile</CardTitle>
+          <p className="text-xs text-muted-foreground">
+            Switch between your board exam profiles.
+          </p>
+        </CardHeader>
+        <CardContent>
+          <ExamProfileSwitcher />
         </CardContent>
       </Card>
 

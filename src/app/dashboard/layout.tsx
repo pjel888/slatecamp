@@ -119,7 +119,7 @@ export default async function DashboardLayout({
             <Navbar isAdmin={isAdmin} />
             <DashboardHeader />
             <main className="flex-1 overflow-y-auto pb-20 lg:pb-0">
-              <div className="mx-auto max-w-[1200px] p-4 lg:p-8">{children}</div>
+              <div className="h-full p-4 lg:p-8">{children}</div>
             </main>
             <BottomNav />
           </BreadcrumbProvider>

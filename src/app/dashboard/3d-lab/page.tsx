@@ -3,47 +3,82 @@ import { ROUTES } from "@/lib/constants/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Lock } from "lucide-react";
+import {
+  ThreeDLabClient,
+  type TreeNode,
+  type ModelId,
+} from "@/components/3d/Workspace";
 
 export const metadata = { title: "3D Lab" };
 
-const CATEGORIES = [
+const MOCK_TREE: TreeNode[] = [
   {
-    name: "Structural Systems",
-    desc: "Truss types, beam connections, foundation types",
-    icon: "🏗️",
+    id: "history",
+    label: "History of Architecture",
+    children: [
+      {
+        id: "greek",
+        label: "Greek",
+        children: [
+          {
+            id: "parthenon",
+            label: "Parthenon",
+            modelId: "greek-parthenon",
+          },
+        ],
+      },
+      {
+        id: "roman",
+        label: "Roman",
+        children: [
+          {
+            id: "pantheon",
+            label: "Pantheon",
+            modelId: "roman-pantheon",
+          },
+        ],
+      },
+    ],
   },
   {
-    name: "Building Envelope",
-    desc: "Wall sections, curtain walls, waterproofing",
-    icon: "🧱",
-  },
-  {
-    name: "MEP Systems",
-    desc: "Plumbing, HVAC, electrical distribution",
-    icon: "⚡",
-  },
-  {
-    name: "Architectural Details",
-    desc: "Doors, windows, stairs, railings",
-    icon: "🚪",
-  },
-  {
-    name: "Site Planning",
-    desc: "Contour grading, setbacks, solar analysis",
-    icon: "🗺️",
-  },
-  {
-    name: "Design History",
-    desc: "Parthenon orders, Gothic vaults, Bauhaus",
-    icon: "🏛️",
+    id: "elements",
+    label: "Building Elements",
+    children: [
+      {
+        id: "columns",
+        label: "Columns",
+        children: [
+          {
+            id: "corinthian-capital",
+            label: "Corinthian Capital",
+            modelId: "corinthian-capital",
+          },
+        ],
+      },
+    ],
   },
 ];
 
-export default async function ThreeDLabPage() {
+function getDefaultModelId(tree: TreeNode[]): ModelId {
+  for (const node of tree) {
+    if (node.modelId) return node.modelId;
+    if (node.children) {
+      const child = getDefaultModelId(node.children);
+      if (child) return child;
+    }
+  }
+  return "greek-parthenon";
+}
+
+type PageSearchParams = { model?: string };
+
+export default async function ThreeDLabPage({
+  searchParams,
+}: {
+  searchParams: Promise<PageSearchParams>;
+}) {
   const profile = await getAdminAwareProfile();
   if (!profile) redirect(ROUTES.LOGIN);
 
@@ -70,36 +105,17 @@ export default async function ThreeDLabPage() {
     );
   }
 
-  return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-semibold text-foreground">3D Lab</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Interact with 3D building components and architectural models.
-        </p>
-      </div>
+  const params = await searchParams;
+  const modelFromUrl = params.model as ModelId | undefined;
+  const initialModelId = modelFromUrl ?? getDefaultModelId(MOCK_TREE);
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {CATEGORIES.map((cat) => (
-          <Card
-            key={cat.name}
-            className="cursor-pointer transition-all hover:shadow-md"
-          >
-            <CardHeader className="pb-3">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">{cat.icon}</span>
-                <CardTitle className="text-sm">{cat.name}</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-xs text-muted-foreground">{cat.desc}</p>
-              <Badge variant="secondary" className="mt-3 text-[10px]">
-                Coming Soon
-              </Badge>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+  return (
+    <div className="h-full">
+      <ThreeDLabClient
+        tree={MOCK_TREE}
+        initialModelId={initialModelId}
+        basePath={ROUTES.THREE_D_LAB}
+      />
     </div>
   );
 }
