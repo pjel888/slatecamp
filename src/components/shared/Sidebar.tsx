@@ -20,7 +20,6 @@ import {
 } from 'lucide-react'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ThemeToggle } from './ThemeToggle'
-import { ExamProfileSwitcher } from './ExamProfileSwitcher'
 import {
   Tooltip,
   TooltipTrigger,
@@ -298,11 +297,6 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               )}
             </div>
           )}
-        </div>
-
-        {/* Exam Profile Switcher */}
-        <div className='border-b border-border/40 p-2 '>
-          <ExamProfileSwitcher collapsed={collapsed} />
         </div>
 
         {/* Nav */}
