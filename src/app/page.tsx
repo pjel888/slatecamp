@@ -101,6 +101,10 @@ function Pill({
 
 /* ── Page ── */
 
+function LandingMarketingNav() {
+  return <MarketingNav activeRoute='/' logoScrollsToTop />
+}
+
 export default async function LandingPage() {
   let isLoggedIn = false
   try {
@@ -117,17 +121,46 @@ export default async function LandingPage() {
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Start Reviewing — Free'
 
   return (
-    <div className='min-h-screen bg-[#F5F4F0]'>
+    <div id='top' className='min-h-screen bg-[#F5F4F0]'>
       {/* ────────────────────── NAVIGATION ────────────────────── */}
-      <MarketingNav activeRoute='/' />
+      <LandingMarketingNav />
 
       <main>
         {/* ────────────────────── HERO ────────────────────── */}
         <section
           aria-label='Hero'
-          className='px-6 pt-32 pb-16 sm:pt-40 sm:pb-20'
+          className='relative overflow-hidden px-6 pt-32 pb-16 sm:pt-40 sm:pb-20'
         >
-          <div className='mx-auto max-w-[1200px]'>
+          {/* ── Ambient Background Layer ── */}
+          <div
+            className='pointer-events-none absolute inset-0'
+            aria-hidden='true'
+          >
+            {/* Gradient mesh — achromatic base with faint amber glow */}
+            <div
+              className='absolute inset-0'
+              style={{
+                background: [
+                  'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(237,128,8,0.12), transparent)',
+                  'radial-gradient(ellipse 60% 80% at 20% 80%, rgba(29,29,31,0.05), transparent)',
+                  'radial-gradient(ellipse 50% 60% at 85% 30%, rgba(134,134,139,0.06), transparent)',
+                ].join(', '),
+              }}
+            />
+            {/* Film grain noise — tiled PNG for editorial paper texture */}
+            <div
+              className='absolute inset-0 opacity-[0.25]'
+              style={{
+                backgroundImage: 'url(/noise.png)',
+                backgroundRepeat: 'repeat',
+                backgroundSize: '128px 128px',
+                mixBlendMode: 'overlay',
+              }}
+            />
+          </div>
+
+          {/* ── Content Layer ── */}
+          <div className='relative z-10 mx-auto max-w-[1200px]'>
             <div className='landing-reveal flex items-center gap-3'>
               <Starburst className='h-5 w-5 text-[#ED8008]' />
               <span className='text-[12px] font-medium uppercase tracking-[0.15em] text-[#86868B]'>
@@ -135,7 +168,7 @@ export default async function LandingPage() {
               </span>
             </div>
 
-            <h1 className='landing-reveal landing-delay-1 mt-8 max-w-3xl text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.05] tracking-tight text-[#1D1D1F]'>
+            <h1 className='landing-reveal landing-delay-1 mt-8 max-w-3xl text-balance text-[clamp(2.5rem,6vw,4.5rem)] font-semibold leading-[1.05] tracking-tight text-[#1D1D1F]'>
               Stop re-reading.
               <br />
               <span className={`${serif.className} font-normal italic`}>
@@ -143,7 +176,7 @@ export default async function LandingPage() {
               </span>
             </h1>
 
-            <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-[17px] leading-relaxed text-[#6E6E73]'>
+            <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-balance text-[17px] leading-relaxed text-[#6E6E73]'>
               AI-adaptive test prep that adjusts to your ability in real-time.
               Spaced repetition, active recall, and deep analytics — built for
               architecture board exam success.
@@ -173,7 +206,7 @@ export default async function LandingPage() {
         </section>
 
         {/* ────────────────────── SOCIAL PROOF ────────────────────── */}
-        <section aria-label='Social proof' className='px-6 pb-6'>
+        <section aria-label='Social proof' className='px-6 py-6'>
           <div className='mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-6 gap-y-2 text-[12px] text-[#AEAEB2]'>
             <span className='flex items-center gap-1.5'>
               <span

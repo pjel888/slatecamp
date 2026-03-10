@@ -4,6 +4,7 @@ import { siteConfig } from '@/lib/constants/site'
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { DemoShell } from '@/components/dev/demo-shell'
+import { NavigationProgress } from '@/components/shared/NavigationProgress'
 import './globals.css'
 
 const geistSans = Geist({
@@ -51,6 +52,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         <ThemeProvider>
+          <NavigationProgress />
           <TooltipProvider>
             {children}
             {isDemo && <DemoShell />}

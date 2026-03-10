@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { TransitionLink } from "@/components/shared/TransitionLink";
 import {
   LayoutDashboard,
   FlaskConical,
@@ -54,7 +55,7 @@ export function BottomNav() {
             const isActive =
               pathname === href || (href !== "/dashboard" && pathname.startsWith(href));
             return (
-              <Link
+              <TransitionLink
                 key={href}
                 href={href}
                 className={`flex flex-1 flex-col items-center gap-1 py-3 text-[10px] transition-all ${
@@ -62,11 +63,11 @@ export function BottomNav() {
                     ? "text-color-signal-amber"
                     : "text-muted-foreground"
                 }`}
-                onClick={(e) => handleNavClick(e, href)}
+                onBeforeNavigate={(e) => handleNavClick(e, href)}
               >
                 <Icon className="h-5 w-5" strokeWidth={1.5} />
                 {label}
-              </Link>
+              </TransitionLink>
             );
           })}
         </div>

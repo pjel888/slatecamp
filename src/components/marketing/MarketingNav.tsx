@@ -11,8 +11,10 @@ const NAV_LINKS = [
 
 export async function MarketingNav({
   activeRoute = "/",
+  logoScrollsToTop = false,
 }: {
   activeRoute?: string;
+  logoScrollsToTop?: boolean;
 }) {
   let isLoggedIn = false;
   try {
@@ -33,12 +35,21 @@ export async function MarketingNav({
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#1D1D1F]/[0.06] bg-[#F5F4F0]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-[1200px] items-center justify-between px-6">
-        <Link
-          href="/"
-          className="text-[15px] font-semibold tracking-tight text-[#1D1D1F]"
-        >
-          {siteConfig.name}
-        </Link>
+        {logoScrollsToTop ? (
+          <a
+            href="#top"
+            className="text-[15px] font-semibold tracking-tight text-[#1D1D1F]"
+          >
+            {siteConfig.name}
+          </a>
+        ) : (
+          <Link
+            href="/"
+            className="text-[15px] font-semibold tracking-tight text-[#1D1D1F]"
+          >
+            {siteConfig.name}
+          </Link>
+        )}
 
         <nav className="hidden items-center gap-1 text-[13px] text-[#6E6E73] sm:flex">
           {activeRoute === "/" ? (
