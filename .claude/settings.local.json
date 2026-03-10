@@ -28,7 +28,11 @@
       "Bash(npx next build)",
       "Bash(npx tsc --noEmit src/app/page.tsx src/components/marketing/MarketingNav.tsx src/components/marketing/MarketingFooter.tsx src/lib/constants/site.ts)",
       "Bash(taskkill //F //IM node.exe)",
-      "Bash(find tasks:*)"
+      "Bash(find tasks:*)",
+      "Bash(timeout /t 2 /nobreak)",
+      "Bash(node -e \":*)",
+      "Bash(npm install nextjs-toploader)",
+      "Bash(npm install nextjs-toploader --legacy-peer-deps)"
     ]
   }
 }

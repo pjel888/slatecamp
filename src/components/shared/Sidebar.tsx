@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { TransitionLink } from '@/components/shared/TransitionLink'
 import {
   LayoutDashboard,
   BarChart3,
@@ -308,7 +309,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               (href !== '/dashboard' && pathname.startsWith(href))
 
             const link = (
-              <Link
+              <TransitionLink
                 key={href}
                 href={href}
                 className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all truncate ${
@@ -318,13 +319,13 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                     ? 'bg-secondary font-medium text-foreground'
                     : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                 }`}
-                onClick={(e) => handleNavClick(e, href)}
+                onBeforeNavigate={(e) => handleNavClick(e, href)}
               >
                 <div className={SIDEBAR_ICON_BOX}>
                   <Icon className={SIDEBAR_ICON_SIZE} strokeWidth={1.5} />
                 </div>
                 {!collapsed && label}
-              </Link>
+              </TransitionLink>
             )
 
             if (collapsed) {
@@ -351,7 +352,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                   <TooltipTrigger
                     render={
                       <span className='block'>
-                        <Link
+                        <TransitionLink
                           href={ROUTES.SETTINGS_DEVELOPER}
                           className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all ${
                             collapsed ? 'justify-start' : ''
@@ -360,7 +361,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                               ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
                               : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                           }`}
-                          onClick={(e) =>
+                          onBeforeNavigate={(e) =>
                             handleNavClick(e, ROUTES.SETTINGS_DEVELOPER)
                           }
                         >
@@ -370,7 +371,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                               strokeWidth={1.5}
                             />
                           </div>
-                        </Link>
+                        </TransitionLink>
                       </span>
                     }
                   />
@@ -379,14 +380,14 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                   </TooltipContent>
                 </Tooltip>
               ) : (
-                <Link
+                <TransitionLink
                   href={ROUTES.SETTINGS_DEVELOPER}
                   className={`flex items-center gap-3 rounded-xl p-2 text-[13px] transition-all truncate ${
                     pathname === ROUTES.SETTINGS_DEVELOPER
                       ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
                       : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                   }`}
-                  onClick={(e) =>
+                  onBeforeNavigate={(e) =>
                     handleNavClick(e, ROUTES.SETTINGS_DEVELOPER)
                   }
                 >
@@ -394,7 +395,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                     <Shield className={SIDEBAR_ICON_SIZE} strokeWidth={1.5} />
                   </div>
                   Dev Settings
-                </Link>
+                </TransitionLink>
               )}
             </>
           )}

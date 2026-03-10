@@ -277,6 +277,23 @@
   }
 }
 
+/* ── Navigation feedback: tactile press + pending dim ── */
+
+/* Tactile press on interactive elements — instant physical click feel */
+a:not([aria-disabled]):active,
+button:not(:disabled):active,
+[role="button"]:not([aria-disabled]):active {
+  transform: scale(0.98);
+  transition: transform 75ms ease-out;
+}
+
+/* Pending link dim — applied via data-pending from TransitionLink */
+a[data-pending] {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 150ms ease-in-out;
+}
+
 /* Micro-animations */
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
