@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
+import { PendingButton } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle2, ArrowRight, Zap, Target, Compass, RotateCcw } from 'lucide-react';
 import { startDailyMission } from '@/lib/actions/daily-mission';
@@ -59,15 +59,16 @@ export function DailyMission({ mission, examProfileId }: DailyMissionProps) {
             <p className="mt-1 text-sm font-semibold text-foreground">
               Mission complete! You answered {mission.questionCount} questions.
             </p>
-            <Button
+            <PendingButton
               variant="outline"
               size="sm"
               className="mt-3 text-xs"
               onClick={handleStartMission}
-              disabled={isPending}
+              pending={isPending}
+              pendingLabel="Loading..."
             >
               Keep going <ArrowRight className="ml-1 h-3 w-3" />
-            </Button>
+            </PendingButton>
           </div>
         </div>
       </div>
@@ -99,22 +100,14 @@ export function DailyMission({ mission, examProfileId }: DailyMissionProps) {
           <p className="text-xs text-destructive">{error}</p>
         )}
 
-        <Button
+        <PendingButton
           className="w-full h-11 text-sm font-semibold"
           onClick={handleStartMission}
-          disabled={isPending}
+          pending={isPending}
+          pendingLabel="Starting..."
         >
-          {isPending ? (
-            <span className="flex items-center gap-2">
-              <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
-              Starting...
-            </span>
-          ) : (
-            <>
-              Start Mission <ArrowRight className="ml-1.5 h-4 w-4" />
-            </>
-          )}
-        </Button>
+          Start Mission <ArrowRight className="ml-1.5 h-4 w-4" />
+        </PendingButton>
       </div>
     </div>
   );

@@ -1,10 +1,38 @@
+import { createClient } from "@/lib/supabase/server";
+
 /**
- * Admin check: schema does not have profiles.is_admin.
- * Use ADMIN_EMAILS (comma-separated) in .env.local to grant admin (e.g. "you@example.com,other@example.com").
- * In demo mode, mock profile may still include is_admin; combine with profile?.is_admin when available.
+ * Check if the current user is an admin by querying the profiles table.
+ * Uses the is_admin column on the profile record.
  */
-export function isAdminByEmail(email: string | undefined): boolean {
+export async function isAdmin(): Promise<boolean> {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) return false;
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("is_admin")
+    .eq("id", user.id)
+    .single();
+
+  return profile?.is_admin === true;
+}
+
+/**
+ * Check if a specific email belongs to an admin.
+ * Also queries the profiles table to verify is_admin status.
+ * @deprecated Prefer using isAdmin() which uses the current session
+ */
+export async function isAdminByEmail(email: string | undefined): Promise<boolean> {
   if (!email) return false;
-  const list = process.env.ADMIN_EMAILS?.split(",").map((e) => e.trim()).filter(Boolean) ?? [];
-  return list.includes(email);
+
+  const supabase = await createClient();
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("is_admin")
+    .eq("email", email)
+    .single();
+
+  return profile?.is_admin === true;
 }

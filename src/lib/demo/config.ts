@@ -1,5 +1,25 @@
+/**
+ * Demo mode configuration.
+ * Demo mode is ONLY enabled when NEXT_PUBLIC_ENABLE_DEMO_MODE is explicitly set to "true".
+ * In production, missing Supabase credentials will throw an error.
+ */
 export function isDemoMode(): boolean {
-  return !process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const demoModeEnabled = process.env.NEXT_PUBLIC_ENABLE_DEMO_MODE === "true";
+  const hasSupabaseUrl = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
+
+  if (demoModeEnabled) {
+    return true;
+  }
+
+  // In production, throw error if Supabase is not configured
+  if (!hasSupabaseUrl && process.env.NODE_ENV === "production") {
+    throw new Error(
+      "Missing Supabase configuration: NEXT_PUBLIC_SUPABASE_URL is required in production. " +
+      "If you intend to run in demo mode, set NEXT_PUBLIC_ENABLE_DEMO_MODE=true"
+    );
+  }
+
+  return false;
 }
 
 export const DEMO_USER = {

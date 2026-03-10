@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { RegisterForm } from "./register-form";
+import { siteConfig } from "@/lib/constants/site";
 
 export const metadata = { title: "Create Account" };
 
@@ -12,7 +13,7 @@ export default function RegisterPage() {
             href="/"
             className="text-xl font-semibold tracking-tight text-foreground"
           >
-            Cerebro
+            {siteConfig.name}
           </Link>
           <p className="mt-2 text-[13px] text-muted-foreground">
             Create your account and start reviewing.

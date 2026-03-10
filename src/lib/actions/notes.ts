@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
+import { createNoteSchema, updateNoteSchema, deleteNoteSchema } from '@/lib/validations'
 import type { Note, NoteStub } from '@/types/app'
 
 function snippetFromContent(content: Record<string, unknown>, maxLen = 80): string {
@@ -43,6 +44,12 @@ export async function getNotesList(): Promise<NoteStub[]> {
 }
 
 export async function getNote(id: string): Promise<Note | null> {
+  // Validate UUID format
+  const parseResult = deleteNoteSchema.safeParse({ id })
+  if (!parseResult.success) {
+    return null
+  }
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return null
@@ -50,7 +57,7 @@ export async function getNote(id: string): Promise<Note | null> {
   const { data, error } = await supabase
     .from('notes')
     .select('*')
-    .eq('id', id)
+    .eq('id', parseResult.data.id)
     .eq('user_id', user.id)
     .single()
 
@@ -59,7 +66,17 @@ export async function getNote(id: string): Promise<Note | null> {
 }
 
 /** Create a new note and return its id. Caller should redirect to /dashboard/notes/[id]. */
-export async function createNote(): Promise<{ id: string } | { error: string }> {
+export async function createNote(
+  input?: { title?: string; content?: Record<string, unknown>; subject_id?: string }
+): Promise<{ id: string } | { error: string }> {
+  // Validate input if provided
+  if (input) {
+    const parseResult = createNoteSchema.safeParse(input)
+    if (!parseResult.success) {
+      return { error: parseResult.error.errors[0]?.message || 'Invalid input' }
+    }
+  }
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return { error: 'Unauthorized' }
@@ -68,8 +85,9 @@ export async function createNote(): Promise<{ id: string } | { error: string }> 
     .from('notes')
     .insert({
       user_id: user.id,
-      title: 'Untitled Note',
-      content: {},
+      title: input?.title ?? 'Untitled Note',
+      content: input?.content ?? {},
+      subject_id: input?.subject_id,
     })
     .select('id')
     .single()
@@ -87,19 +105,27 @@ export async function updateNote(
     is_pinned?: boolean
   }
 ): Promise<{ error?: string }> {
+  // Validate input
+  const parseResult = updateNoteSchema.safeParse({ id, ...updates })
+  if (!parseResult.success) {
+    return { error: parseResult.error.errors[0]?.message || 'Invalid input' }
+  }
+
+  const { id: validId, title, content, is_pinned } = parseResult.data
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return { error: 'Unauthorized' }
 
   const payload: Record<string, unknown> = { updated_at: new Date().toISOString() }
-  if (updates.title !== undefined) payload.title = updates.title
-  if (updates.content !== undefined) payload.content = updates.content
-  if (updates.is_pinned !== undefined) payload.is_pinned = updates.is_pinned
+  if (title !== undefined) payload.title = title
+  if (content !== undefined) payload.content = content
+  if (is_pinned !== undefined) payload.is_pinned = is_pinned
 
   const { error } = await supabase
     .from('notes')
     .update(payload)
-    .eq('id', id)
+    .eq('id', validId)
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }
@@ -108,6 +134,14 @@ export async function updateNote(
 }
 
 export async function deleteNote(id: string): Promise<{ error?: string }> {
+  // Validate input
+  const parseResult = deleteNoteSchema.safeParse({ id })
+  if (!parseResult.success) {
+    return { error: 'Invalid note ID format' }
+  }
+
+  const { id: validId } = parseResult.data
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return { error: 'Unauthorized' }
@@ -115,7 +149,7 @@ export async function deleteNote(id: string): Promise<{ error?: string }> {
   const { error } = await supabase
     .from('notes')
     .delete()
-    .eq('id', id)
+    .eq('id', validId)
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }

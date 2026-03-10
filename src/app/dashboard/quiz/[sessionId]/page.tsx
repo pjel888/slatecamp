@@ -1,10 +1,11 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { QuizEngine } from "./quiz-engine";
 import type { SessionQuestion, ReviewSession } from "@/types/app";
 
-export const metadata = { title: "Quiz — Cerebro" };
+export const metadata = { title: `Quiz — ${siteConfig.name}` };
 
 export default async function QuizSessionPage({
   params,

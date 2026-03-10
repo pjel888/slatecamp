@@ -1,11 +1,12 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { ReviewPageClient } from "./review-page-client";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject, SubjectMastery } from "@/types/app";
 
-export const metadata = { title: "Review — Cerebro" };
+export const metadata = { title: `Review — ${siteConfig.name}` };
 
 export default async function ReviewPage() {
   const supabase = await createClient();

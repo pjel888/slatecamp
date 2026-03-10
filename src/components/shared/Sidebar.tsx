@@ -37,6 +37,7 @@ import {
 } from '@/components/ui/dialog'
 import type { UserTier } from '@/types/app'
 import { ROUTES } from '@/lib/constants/routes'
+import { siteConfig } from '@/lib/constants/site'
 
 const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: LayoutDashboard },
@@ -134,7 +135,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               className='text-lg font-semibold tracking-tight text-foreground'
               onClick={(e) => handleNavClick(e, '/dashboard')}
             >
-              Cerebro
+              {siteConfig.name}
             </Link>
           </div>
         )}

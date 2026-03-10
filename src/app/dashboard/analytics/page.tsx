@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, TrendingUp, Clock, Target } from "lucide-react";
 import { DomainRadar } from "@/components/analytics/DomainRadar";
@@ -8,7 +9,7 @@ import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import { StreakCalendar } from "@/components/analytics/StreakCalendar";
 import type { ExamProfile, SubjectMastery, DailyUserStats, Subject } from "@/types/app";
 
-export const metadata = { title: "Analytics — Cerebro" };
+export const metadata = { title: `Analytics — ${siteConfig.name}` };
 
 export default async function AnalyticsPage() {
   const supabase = await createClient();

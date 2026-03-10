@@ -1,9 +1,13 @@
 "use client"
 
+import { useFormStatus } from "react-dom"
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
+
+const PENDING_CLASSES =
+  "cursor-not-allowed opacity-70 transition-[opacity] duration-150 ease-in-out"
 
 const buttonVariants = cva(
   "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
@@ -58,4 +62,58 @@ function Button({
   )
 }
 
-export { Button, buttonVariants }
+interface PendingButtonProps
+  extends ButtonPrimitive.Props,
+    VariantProps<typeof buttonVariants> {
+  pending?: boolean
+  pendingLabel?: React.ReactNode
+}
+
+function PendingButton({
+  className,
+  variant = "default",
+  size = "default",
+  pending = false,
+  pendingLabel,
+  children,
+  disabled,
+  ...props
+}: PendingButtonProps) {
+  return (
+    <Button
+      variant={variant}
+      size={size}
+      className={cn(pending && PENDING_CLASSES, className)}
+      disabled={pending || disabled}
+      aria-busy={pending ? true : undefined}
+      {...props}
+    >
+      {pending && pendingLabel !== undefined ? pendingLabel : children}
+    </Button>
+  )
+}
+
+function SubmitButton({
+  className,
+  variant = "default",
+  size = "default",
+  pendingLabel = "Saving...",
+  children,
+  ...props
+}: Omit<PendingButtonProps, "pending">) {
+  const { pending } = useFormStatus()
+  return (
+    <PendingButton
+      variant={variant}
+      size={size}
+      className={className}
+      pending={pending}
+      pendingLabel={pendingLabel}
+      {...props}
+    >
+      {children}
+    </PendingButton>
+  )
+}
+
+export { Button, buttonVariants, PendingButton, SubmitButton }

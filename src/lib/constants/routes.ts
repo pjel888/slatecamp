@@ -5,6 +5,9 @@
 
 export const ROUTES = {
   HOME: "/",
+  PRICING: "/pricing",
+  ABOUT: "/about",
+  CONTACT: "/contact",
   LOGIN: "/login",
   REGISTER: "/register",
   FORGOT_PASSWORD: "/forgot-password",
@@ -36,6 +39,9 @@ export const ROUTES = {
 /** Paths that do not require authentication (middleware). */
 export const PUBLIC_PATHS: string[] = [
   ROUTES.HOME,
+  ROUTES.PRICING,
+  ROUTES.ABOUT,
+  ROUTES.CONTACT,
   ROUTES.LOGIN,
   ROUTES.REGISTER,
   ROUTES.FORGOT_PASSWORD,

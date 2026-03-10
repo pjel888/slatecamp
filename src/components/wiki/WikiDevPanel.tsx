@@ -25,6 +25,7 @@ import {
   getWikiPageForEdit,
   type WikiPageStub,
 } from '@/lib/actions/wiki-pages'
+import { PendingButton } from '@/components/ui/button'
 import { WikiRichEditor } from '@/components/wiki/WikiRichEditor'
 import type { WikiCategory } from '@/types/app'
 
@@ -491,15 +492,16 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
                   className="w-20 rounded border border-border bg-background px-2 py-1 text-[13px]"
                 />
               </div>
-              <button
+              <PendingButton
                 type="button"
                 onClick={handleCreate}
-                disabled={isPending}
-                className="flex items-center gap-1.5 rounded-lg bg-(--color-signal-blue) px-3 py-2 text-xs font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+                pending={isPending}
+                pendingLabel="Adding..."
+                className="flex items-center gap-1.5 rounded-lg bg-(--color-signal-blue) px-3 py-2 text-xs font-medium text-white transition-opacity hover:opacity-90"
               >
                 <Plus className="h-3.5 w-3.5" strokeWidth={1.5} />
                 Add subcategory
-              </button>
+              </PendingButton>
             </div>
 
             {/* Children list: edit / delete */}
@@ -549,14 +551,15 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
                               }
                               className="w-16 rounded border border-border bg-background px-2 py-1 text-[13px]"
                             />
-                            <button
+                            <PendingButton
                               type="button"
                               onClick={handleUpdate}
-                              disabled={isPending}
+                              pending={isPending}
+                              pendingLabel="Saving..."
                               className="rounded bg-(--color-signal-blue) px-2 py-1 text-[11px] font-medium text-white"
                             >
                               Save
-                            </button>
+                            </PendingButton>
                             <button
                               type="button"
                               onClick={cancelEdit}
@@ -585,15 +588,16 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
                             >
                               <Pencil className="h-3.5 w-3.5" strokeWidth={1.5} />
                             </button>
-                            <button
+                            <PendingButton
                               type="button"
                               onClick={() => handleDelete(cat.id)}
-                              disabled={isPending}
+                              pending={isPending}
+                              pendingLabel="..."
                               className="rounded p-1.5 text-muted-foreground transition-colors hover:bg-color-signal-red/10 hover:text-color-signal-red"
                               title="Delete"
                             >
                               <Trash2 className="h-3.5 w-3.5" strokeWidth={1.5} />
-                            </button>
+                            </PendingButton>
                           </div>
                         </div>
                       )}
@@ -692,23 +696,25 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
                   />
                 </div>
                 <div className="flex gap-2">
-                  <button
+                  <PendingButton
                     type="button"
                     onClick={handleSavePage}
-                    disabled={isPending}
-                    className="rounded-lg bg-(--color-signal-blue) px-3 py-2 text-[12px] font-medium text-white disabled:opacity-50"
+                    pending={isPending}
+                    pendingLabel={pageFormMode === 'add' ? 'Creating...' : 'Saving...'}
+                    className="rounded-lg bg-(--color-signal-blue) px-3 py-2 text-[12px] font-medium text-white"
                   >
                     {pageFormMode === 'add' ? 'Create page' : 'Save'}
-                  </button>
+                  </PendingButton>
                   {pageFormMode === 'edit' && editPageId && (
-                    <button
+                    <PendingButton
                       type="button"
                       onClick={() => handleDeletePage(editPageId)}
-                      disabled={isPending}
+                      pending={isPending}
+                      pendingLabel="Deleting..."
                       className="rounded-lg border border-color-signal-red/40 px-3 py-2 text-[12px] text-color-signal-red hover:bg-color-signal-red/10"
                     >
                       Delete
-                    </button>
+                    </PendingButton>
                   )}
                   <button
                     type="button"
@@ -746,14 +752,16 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
                         />
                         Bi-directional
                       </label>
-                      <button
+                      <PendingButton
                         type="button"
                         onClick={handleAddLink}
-                        disabled={!linkTargetId || isPending}
-                        className="rounded bg-secondary px-2 py-1 text-[11px] disabled:opacity-50"
+                        disabled={!linkTargetId}
+                        pending={isPending}
+                        pendingLabel="Adding..."
+                        className="rounded bg-secondary px-2 py-1 text-[11px]"
                       >
                         Add
-                      </button>
+                      </PendingButton>
                     </div>
                     <div className="space-y-1.5">
                       {editPageData.forwardLinks.length > 0 && (

@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -9,7 +10,7 @@ import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import { SessionList } from "./session-list";
 import type { ReviewSession, ExamProfile } from "@/types/app";
 
-export const metadata = { title: "Sessions — Cerebro" };
+export const metadata = { title: `Sessions — ${siteConfig.name}` };
 
 export default async function SessionsPage() {
   const supabase = await createClient();

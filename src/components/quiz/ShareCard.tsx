@@ -1,5 +1,7 @@
 "use client";
 
+import { siteConfig } from "@/lib/constants/site";
+
 /**
  * ShareCard — Rendered off-screen at 1080×1920 portrait for html2canvas capture.
  * Light theme, amber accent. Used for "Share as Image" on session summary.
@@ -37,7 +39,7 @@ export function ShareCard({
       {/* Top row: wordmark + exam name */}
       <div className="flex justify-between items-center mb-6">
         <span className="text-xl font-semibold text-foreground">
-          Cerebro
+          {siteConfig.name}
         </span>
         <span className="text-lg text-muted-foreground">{examProfileName}</span>
       </div>

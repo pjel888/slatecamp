@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import { siteConfig } from '@/lib/constants/site'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -38,7 +39,7 @@ function choiceSuffix(choiceId: string): string {
   return choiceId.replace(/^.*-/, '').toLowerCase() || choiceId.toLowerCase()
 }
 
-export const metadata = { title: 'Session Summary — Cerebro' }
+export const metadata = { title: `Session Summary — ${siteConfig.name}` }
 
 export default async function SessionSummaryPage({
   params,

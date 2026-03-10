@@ -1,7 +1,16 @@
 # CLAUDE.md — Project Cerebro
 
 ## What is this project?
-Cerebro is an AI-adaptive board exam prep platform. Architecture students first, multi-profession by design. Think "second brain for board exam takers." Three learning modes: Review (doomscroll), Sessions (tracked quizzes), and 3D Library (visual learning).
+Cerebro is an AI-powered learning platform for **architecture students and architecture board exam takers**. A "second brain" that combines knowledge management, active learning, and performance analytics.
+
+**Current Focus:** Architecture (ALE, ARE exams). Multi-profession expansion planned.
+
+## Core Features
+1. **Wiki** — Central knowledge base with hierarchical categories, full-text search, and bi-directional linking
+2. **Testing** — Quizzing and testing with comprehensive analytics (Sessions mode with tracking, Review mode for stress-free practice)
+3. **3D Learning** — Interactive 3D models for visual learning of architectural concepts
+4. **Note Taking** — Rich-text notes with AI study agent integration
+5. **Analytics** — Performance tracking, subject mastery, readiness scoring, study time logs
 
 ## Build & Run
 ```bash
@@ -13,7 +22,7 @@ npx supabase gen types typescript --project-id $PROJECT_ID > types/supabase.ts  
 ```
 
 ## Tech Stack
-- Next.js 15 (App Router), TypeScript strict, Supabase, Tailwind CSS 4, shadcn/ui
+- Next.js 16 (App Router), TypeScript strict, Supabase, Tailwind CSS 4, shadcn/ui
 - React Three Fiber for 3D, Stripe for payments, PostHog for analytics
 - Auth: `@supabase/ssr` with cookie-based sessions. NEVER localStorage.
 
@@ -22,7 +31,6 @@ npx supabase gen types typescript --project-id $PROJECT_ID > types/supabase.ts  
 - Server Actions for ALL mutations. No client-side Supabase writes.
 - RLS enabled on every table. Check policies before shipping.
 - Everything scoped by `exam_profile_id` (user's active board exam context).
-- Three modes: Review Mode (no user-facing analytics), Sessions Mode (full tracking), 3D Library.
 - Questions have rich content: explanation, references[], fun_facts[], mnemonics, image_urls.
 
 ## Database
@@ -32,16 +40,16 @@ npx supabase gen types typescript --project-id $PROJECT_ID > types/supabase.ts  
 
 ## Design
 - "Rams Standard" — Braun/Dieter Rams inspired. Achromatic + functional accents.
-- Primary CTA: `#ED8008` (amber). Correct: `#4A7C59`. Incorrect: `#BF1B1B`.
+- Primary CTA: `#ED8008` (amber). Correct: `#34C759`. Incorrect: `#FF3B30`.
 - No gradients, no heavy shadows, no bouncy animations. 150ms transitions.
 - Quiz UI is THE most important screen. 720px max-width, immersive, mobile-first.
 
 ## File Structure
 ```
 src/app/(auth)/          # Login, register, onboarding
-src/app/(dashboard)/     # Protected routes (dashboard, quiz, analytics, 3d-lab, settings)
+src/app/dashboard/       # Protected routes (wiki, testing, 3d-lab, notes, analytics, settings)
 src/components/ui/       # shadcn primitives
-src/components/{feature}/ # quiz, analytics, 3d, dashboard, shared
+src/components/{feature}/ # wiki, quiz, analytics, 3d, notes, dashboard, shared
 src/lib/supabase/        # client.ts, server.ts, admin.ts, middleware.ts
 src/lib/ai/              # provider.ts, embeddings.ts, rag.ts, prompts.ts
 src/lib/srs/             # sm2.ts, irt.ts

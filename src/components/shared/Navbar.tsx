@@ -24,6 +24,7 @@ import {
   Globe,
 } from "lucide-react";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 
 const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: "Dashboard", icon: LayoutDashboard },
@@ -50,7 +51,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
         href={ROUTES.DASHBOARD}
         className="text-lg font-semibold tracking-tight text-foreground"
       >
-        Cerebro
+        {siteConfig.name}
       </Link>
 
       <div className="flex items-center gap-2">

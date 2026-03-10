@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LoginForm } from "./login-form";
+import { siteConfig } from "@/lib/constants/site";
 
 export const metadata = { title: "Log In" };
 
@@ -12,7 +13,7 @@ export default function LoginPage() {
             href="/"
             className="text-xl font-semibold tracking-tight text-foreground"
           >
-            Cerebro
+            {siteConfig.name}
           </Link>
           <p className="mt-2 text-[13px] text-muted-foreground">
             Welcome back. Log in to continue your review.
