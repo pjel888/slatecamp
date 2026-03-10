@@ -99,16 +99,12 @@ export function SessionList({ sessions }: SessionListProps) {
                   </Link>
                 )}
                 <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <PendingButton
-                      variant="ghost"
-                      size="icon"
-                      className="size-8 shrink-0"
-                      pending={isPending}
-                      aria-label="Session actions"
-                    >
-                      <MoreVertical className="h-4 w-4" strokeWidth={1.5} />
-                    </PendingButton>
+                  <DropdownMenuTrigger
+                    disabled={isPending}
+                    aria-label="Session actions"
+                    className="size-8 shrink-0 inline-flex items-center justify-center rounded-lg border border-transparent text-muted-foreground hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 disabled:opacity-50 disabled:pointer-events-none"
+                  >
+                    <MoreVertical className="h-4 w-4" strokeWidth={1.5} />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     {canClose && (
