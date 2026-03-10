@@ -49,5 +49,11 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  if (request.nextUrl.pathname === "/onboarding") {
+    const url = request.nextUrl.clone();
+    url.pathname = ROUTES.DASHBOARD;
+    return NextResponse.redirect(url);
+  }
+
   return response;
 }

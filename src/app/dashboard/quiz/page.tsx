@@ -1,7 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
-import { FALLBACK_SUBJECT_COLOR } from "@/lib/constants";
+import { FALLBACK_SUBJECT_COLOR, siteConfig } from "@/lib/constants";
 import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,7 +13,7 @@ import { InfoTooltip } from "@/components/shared/InfoTooltip";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject } from "@/types/app";
 
-export const metadata = { title: "Quiz — Cerebro" };
+export const metadata = { title: `Quiz — ${siteConfig.name}` };
 export const dynamic = "force-dynamic";
 
 export default async function QuizPage({

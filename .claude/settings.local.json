@@ -13,7 +13,22 @@
       "Bash(source ~/.nvm/nvm.sh)",
       "Bash(nvm ls)",
       "Bash(lsof -ti :3000)",
-      "Bash(kill -9 9984 39742 49747)"
+      "Bash(kill -9 9984 39742 49747)",
+      "Bash(npx next --version)",
+      "Bash(node --version)",
+      "Bash(where npx)",
+      "Bash(rm -rf .next/dev/lock)",
+      "Bash(netstat -ano)",
+      "Bash(npx next dev -p 3001)",
+      "Bash(taskkill //F //PID 7688)",
+      "Bash(bash -c 'export PATH=$HOME/.nvm/versions/node/v25.8.0/bin:$PATH && which node && node --version && which next 2>/dev/null; npm run dev -- --help 2>&1 | head -5')",
+      "Bash(tasklist //FI \"PID eq 36128\")",
+      "Skill(gsd:map-codebase)",
+      "Bash(npx next build --no-lint)",
+      "Bash(npx next build)",
+      "Bash(npx tsc --noEmit src/app/page.tsx src/components/marketing/MarketingNav.tsx src/components/marketing/MarketingFooter.tsx src/lib/constants/site.ts)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(find tasks:*)"
     ]
   }
 }

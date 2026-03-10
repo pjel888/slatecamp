@@ -1,11 +1,12 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { SessionBuilder } from "./session-builder";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import type { ExamProfile, Subject } from "@/types/app";
 
-export const metadata = { title: "New Session — Cerebro" };
+export const metadata = { title: `New Session — ${siteConfig.name}` };
 
 export default async function NewSessionPage() {
   const supabase = await createClient();

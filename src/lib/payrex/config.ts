@@ -1,4 +1,5 @@
 import type PayRex from "payrex-node";
+import { siteConfig } from "@/lib/constants/site";
 
 let _payrex: ReturnType<typeof PayRex> | null = null;
 
@@ -18,11 +19,11 @@ export const PAYREX_PLANS = {
   pro: {
     amount: 49900,
     currency: "PHP" as const,
-    description: "Cerebro Pro — Monthly Subscription",
+    description: `${siteConfig.name} Pro — Monthly Subscription`,
   },
   max: {
     amount: 99900,
     currency: "PHP" as const,
-    description: "Cerebro Max — Monthly Subscription",
+    description: `${siteConfig.name} Max — Monthly Subscription`,
   },
 } as const;

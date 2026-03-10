@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Search, FileText } from 'lucide-react'
+import DOMPurify from 'isomorphic-dompurify'
 import { ROUTES } from '@/lib/constants/routes'
 import { getWikiCategoryTree, searchWiki } from '@/lib/actions/wiki'
 import { createClient } from '@/lib/supabase/server'
@@ -83,7 +84,12 @@ export default async function WikiHomePage({ searchParams }: WikiHomeProps) {
                   </h3>
                   <p
                     className="text-xs text-muted-foreground line-clamp-2 [&_mark]:bg-color-signal-amber/20 [&_mark]:text-foreground [&_mark]:rounded-sm [&_mark]:px-0.5"
-                    dangerouslySetInnerHTML={{ __html: result.headline }}
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(result.headline, {
+                        ALLOWED_TAGS: ['mark'],
+                        ALLOWED_ATTR: [],
+                      }),
+                    }}
                   />
                   {result.tags.length > 0 && (
                     <div className="flex flex-wrap gap-1 mt-2">

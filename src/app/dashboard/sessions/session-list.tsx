@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button, PendingButton } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   DropdownMenu,
@@ -99,12 +99,16 @@ export function SessionList({ sessions }: SessionListProps) {
                   </Link>
                 )}
                 <DropdownMenu>
-                  <DropdownMenuTrigger
-                    className={buttonVariants({ variant: "ghost", size: "icon", className: "size-8 shrink-0" })}
-                    aria-label="Session actions"
-                    disabled={isPending}
-                  >
-                    <MoreVertical className="h-4 w-4" strokeWidth={1.5} />
+                  <DropdownMenuTrigger asChild>
+                    <PendingButton
+                      variant="ghost"
+                      size="icon"
+                      className="size-8 shrink-0"
+                      pending={isPending}
+                      aria-label="Session actions"
+                    >
+                      <MoreVertical className="h-4 w-4" strokeWidth={1.5} />
+                    </PendingButton>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     {canClose && (

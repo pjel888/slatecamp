@@ -1,12 +1,13 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { ensureProfileAndExamProfile } from "@/lib/supabase/bootstrap";
 import { NoExamProfilePrompt } from "@/components/shared/NoExamProfilePrompt";
 import { TestingTabs } from "@/components/testing/testing-tabs";
 import type { ExamProfile, Subject, ReviewSession, SubjectMastery } from "@/types/app";
 
-export const metadata = { title: "Testing — Cerebro" };
+export const metadata = { title: `Testing — ${siteConfig.name}` };
 export const dynamic = "force-dynamic";
 
 export default async function TestingPage({

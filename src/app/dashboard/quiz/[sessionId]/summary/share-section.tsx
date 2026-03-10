@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Share2, Loader2 } from "lucide-react";
+import { siteConfig } from "@/lib/constants/site";
 import { ShareCard } from "@/components/quiz/ShareCard";
 import type { SubjectScore } from "@/types/app";
 
@@ -45,13 +46,13 @@ export function ShareSection({
         }
         const file = new File(
           [blob],
-          `cerebro-result-${new Date().toISOString().slice(0, 10)}.png`,
+          `${siteConfig.name.toLowerCase()}-result-${new Date().toISOString().slice(0, 10)}.png`,
           { type: "image/png" }
         );
         if (typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [file] })) {
           await navigator.share({
             files: [file],
-            title: "My Cerebro session result",
+            title: `My ${siteConfig.name} session result`,
           });
         } else {
           const url = URL.createObjectURL(blob);

@@ -30,7 +30,6 @@ const SEGMENT_LABELS: Record<string, string> = {
   summary: "Summary",
   billing: "Billing",
   developer: "Dev Settings",
-  onboarding: "Onboarding",
   marketplace: "Marketplace",
 };
 

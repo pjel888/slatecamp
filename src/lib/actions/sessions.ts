@@ -2,10 +2,19 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { sessionIdSchema } from "@/lib/validations";
 
 export type SessionActionResult = { error?: string };
 
 export async function closeSession(sessionId: string): Promise<SessionActionResult> {
+  // Validate input
+  const parseResult = sessionIdSchema.safeParse({ sessionId });
+  if (!parseResult.success) {
+    return { error: "Invalid session ID format" };
+  }
+
+  const { sessionId: validSessionId } = parseResult.data;
+
   const supabase = await createClient();
   const {
     data: { user },
@@ -15,7 +24,7 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
   const { data: session } = await supabase
     .from("review_sessions")
     .select("id, status")
-    .eq("id", sessionId)
+    .eq("id", validSessionId)
     .eq("user_id", user.id)
     .single();
 
@@ -30,7 +39,7 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
       status: "abandoned",
       completed_at: new Date().toISOString(),
     })
-    .eq("id", sessionId)
+    .eq("id", validSessionId)
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
@@ -40,6 +49,14 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
 }
 
 export async function deleteSession(sessionId: string): Promise<SessionActionResult> {
+  // Validate input
+  const parseResult = sessionIdSchema.safeParse({ sessionId });
+  if (!parseResult.success) {
+    return { error: "Invalid session ID format" };
+  }
+
+  const { sessionId: validSessionId } = parseResult.data;
+
   const supabase = await createClient();
   const {
     data: { user },
@@ -49,7 +66,7 @@ export async function deleteSession(sessionId: string): Promise<SessionActionRes
   const { data: session } = await supabase
     .from("review_sessions")
     .select("id")
-    .eq("id", sessionId)
+    .eq("id", validSessionId)
     .eq("user_id", user.id)
     .single();
 
@@ -58,7 +75,7 @@ export async function deleteSession(sessionId: string): Promise<SessionActionRes
   const { error } = await supabase
     .from("review_sessions")
     .delete()
-    .eq("id", sessionId)
+    .eq("id", validSessionId)
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };

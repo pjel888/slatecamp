@@ -1,12 +1,13 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { isAdminByEmail } from "@/lib/admin/is-admin";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, MessageSquare, BarChart3, TrendingUp, Shield } from "lucide-react";
 
-export const metadata = { title: "Admin — Cerebro" };
+export const metadata = { title: `Admin — ${siteConfig.name}` };
 
 export default async function AdminPage() {
   const supabase = await createClient();

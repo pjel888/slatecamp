@@ -267,6 +267,7 @@
   }
   html {
     @apply font-sans scroll-smooth;
+    scrollbar-gutter: stable;
   }
 }
 
@@ -326,3 +327,24 @@
 .landing-delay-4 { animation-delay: 320ms; }
 .landing-delay-5 { animation-delay: 400ms; }
 .landing-delay-6 { animation-delay: 480ms; }
+
+/* Landing page — infinite marquee */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  will-change: transform;
+  animation: marquee-scroll 35s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-play-state: paused;
+  }
+}

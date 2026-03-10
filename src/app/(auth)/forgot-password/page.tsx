@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { ROUTES } from "@/lib/constants/routes";
+import { siteConfig } from "@/lib/constants/site";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -43,7 +44,7 @@ export default function ForgotPasswordPage() {
             href={ROUTES.HOME}
             className="text-2xl font-semibold tracking-tight text-foreground"
           >
-            Cerebro
+            {siteConfig.name}
           </Link>
           <p className="mt-2 text-sm text-muted-foreground">
             {sent
