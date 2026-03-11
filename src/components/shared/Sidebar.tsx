@@ -43,11 +43,11 @@ import { siteConfig } from '@/lib/constants/site'
 
 const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: LayoutDashboard },
-  { href: ROUTES.TESTING, label: 'Testing', icon: Brain },
-  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: BarChart3 },
   { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
   { href: ROUTES.NOTES, label: 'Notes', icon: FileText },
+  { href: ROUTES.TESTING, label: 'Testing', icon: Brain },
   { href: ROUTES.THREE_D_LAB, label: '3D Lab', icon: Box },
+  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: BarChart3 },
   { href: ROUTES.SETTINGS, label: 'Settings', icon: Settings },
 ]
 
