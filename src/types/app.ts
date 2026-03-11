@@ -536,6 +536,11 @@ export interface WikiSearchResult {
   rank: number;
 }
 
+/** Returned by searchWikiPaginated — includes total_count from the RPC window function */
+export interface WikiSearchPaginatedResult extends WikiSearchResult {
+  total_count: number
+}
+
 // Notes — flat, Tiptap JSONB
 export interface Note {
   id: string;
