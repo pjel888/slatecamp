@@ -967,6 +967,69 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql STABLE;
 
+-- Paginated, subject-filtered full-text wiki search
+CREATE OR REPLACE FUNCTION search_wiki_paginated(
+  search_term TEXT,
+  subject_slug TEXT DEFAULT NULL,
+  page_offset INT DEFAULT 0,
+  page_limit INT DEFAULT 10
+)
+RETURNS TABLE (
+  id UUID,
+  title TEXT,
+  slug TEXT,
+  headline TEXT,
+  tags TEXT[],
+  category_id UUID,
+  is_deprecated BOOLEAN,
+  is_free BOOLEAN,
+  rank REAL,
+  total_count BIGINT
+)
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+DECLARE
+  tsq TSQUERY;
+BEGIN
+  tsq := websearch_to_tsquery('english', search_term);
+
+  RETURN QUERY
+  WITH matched AS (
+    SELECT
+      wp.id,
+      wp.title,
+      wp.slug,
+      ts_headline(
+        'english',
+        wp.markdown_content,
+        tsq,
+        'MaxWords=20,MinWords=10,StartSel=<mark>,StopSel=</mark>'
+      ) AS headline,
+      wp.tags,
+      wp.category_id,
+      wp.is_deprecated,
+      wp.is_free,
+      ts_rank(wp.search_vector, tsq) AS rank
+    FROM wiki_pages wp
+    JOIN wiki_categories wc ON wc.id = wp.category_id
+    LEFT JOIN wiki_categories root_cat ON (
+      CASE WHEN wc.parent_id IS NULL THEN wc.id ELSE wc.parent_id END = root_cat.id
+    )
+    WHERE
+      wp.search_vector @@ tsq
+      AND (subject_slug IS NULL OR root_cat.slug = subject_slug)
+    ORDER BY rank DESC
+  )
+  SELECT
+    m.*,
+    COUNT(*) OVER () AS total_count
+  FROM matched m
+  LIMIT page_limit
+  OFFSET page_offset;
+END;
+$$;
+
 -- Wiki indexes
 CREATE INDEX idx_wiki_categories_parent ON wiki_categories(parent_id);
 CREATE INDEX idx_wiki_categories_slug ON wiki_categories(slug);
