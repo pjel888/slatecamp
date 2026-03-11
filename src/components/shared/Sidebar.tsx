@@ -18,6 +18,7 @@ import {
   Crown,
   Globe,
   FlaskConical,
+  Brain,
 } from 'lucide-react'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ThemeToggle } from './ThemeToggle'
@@ -42,7 +43,7 @@ import { siteConfig } from '@/lib/constants/site'
 
 const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: LayoutDashboard },
-  { href: ROUTES.TESTING, label: 'Testing', icon: FlaskConical },
+  { href: ROUTES.TESTING, label: 'Testing', icon: Brain },
   { href: ROUTES.ANALYTICS, label: 'Analytics', icon: BarChart3 },
   { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
   { href: ROUTES.NOTES, label: 'Notes', icon: FileText },
@@ -74,7 +75,12 @@ const SIDEBAR_CONTENT_PX = 'px-4'
 const SIDEBAR_ICON_BOX = 'flex h-5 w-5 shrink-0 items-center justify-center'
 const SIDEBAR_ICON_SIZE = 'h-5 w-5'
 
-export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free' }: SidebarProps) {
+export function Sidebar({
+  isAdmin,
+  isDevMode = false,
+  userDisplay,
+  tier = 'free',
+}: SidebarProps) {
   const pathname = usePathname()
   const router = useRouter()
   const { activeSession: mode } = useActiveSession()
@@ -108,7 +114,9 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
 
   function handleConfirmLeave() {
     setLeaveDialogOpen(false)
-    router.push(mode === 'review' ? `${ROUTES.TESTING}?tab=review&exited=1` : leaveTarget)
+    router.push(
+      mode === 'review' ? `${ROUTES.TESTING}?tab=review&exited=1` : leaveTarget,
+    )
   }
 
   function toggleCollapse() {
@@ -221,9 +229,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
                     href={ROUTES.SETTINGS_BILLING}
                     className='flex items-center justify-start py-2'
                     aria-label='Upgrade to Pro'
-                    onClick={(e) =>
-                      handleNavClick(e, ROUTES.SETTINGS_BILLING)
-                    }
+                    onClick={(e) => handleNavClick(e, ROUTES.SETTINGS_BILLING)}
                   >
                     <div className={SIDEBAR_ICON_BOX}>
                       <Sparkles
@@ -283,9 +289,7 @@ export function Sidebar({ isAdmin, isDevMode = false, userDisplay, tier = 'free'
               {tier === 'free' && (
                 <Link
                   href={ROUTES.SETTINGS_BILLING}
-                  onClick={(e) =>
-                    handleNavClick(e, ROUTES.SETTINGS_BILLING)
-                  }
+                  onClick={(e) => handleNavClick(e, ROUTES.SETTINGS_BILLING)}
                 >
                   <Button
                     variant='outline'
