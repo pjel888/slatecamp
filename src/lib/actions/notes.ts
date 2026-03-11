@@ -1,7 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import { createNoteSchema, updateNoteSchema, deleteNoteSchema } from '@/lib/validations'
 import type { Note, NoteStub } from '@/types/app'
 
@@ -23,7 +23,7 @@ function snippetFromContent(content: Record<string, unknown>, maxLen = 80): stri
 /** List all notes for the current user, ordered by updated_at (pinned first). */
 export async function getNotesList(): Promise<NoteStub[]> {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return []
 
   const { data, error } = await supabase
@@ -51,7 +51,7 @@ export async function getNote(id: string): Promise<Note | null> {
   }
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return null
 
   const { data, error } = await supabase
@@ -78,7 +78,7 @@ export async function createNote(
   }
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
 
   const { data, error } = await supabase
@@ -114,7 +114,7 @@ export async function updateNote(
   const { id: validId, title, content, is_pinned } = parseResult.data
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
 
   const payload: Record<string, unknown> = { updated_at: new Date().toISOString() }
@@ -143,7 +143,7 @@ export async function deleteNote(id: string): Promise<{ error?: string }> {
   const { id: validId } = parseResult.data
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
 
   const { error } = await supabase

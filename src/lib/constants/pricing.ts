@@ -6,6 +6,7 @@ export interface PricingTier {
   subtitle: string
   targetAudience: string
   price: string
+  originalPrice?: string
   priceSubtext?: string
   hook: string
   features: string[]
@@ -45,8 +46,9 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     tierName: 'Standard — Pro',
     subtitle: 'The "ALE Season Pass"',
     targetAudience: 'Active Board Exam Reviewees',
-    price: '₱2,999',
-    priceSubtext: '/ 6-months',
+    price: '₱800',
+    originalPrice: '₱1200',
+    priceSubtext: '/ month, billed biannually',
     hook: 'Everything you need to pass the ALE.',
     features: [
       '100% Ad-Free',
@@ -64,8 +66,9 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     tierName: 'Standard — Max',
     subtitle: 'The "Practitioner Bundle"',
     targetAudience: 'Licensed Architects & Alumni',
-    price: '₱4,999',
-    priceSubtext: '/ year',
+    price: '₱1200',
+    originalPrice: '₱1800',
+    priceSubtext: '/ month, billed biannually',
     hook: 'Your pocket reference for professional practice.',
     features: [
       'Everything in Pro',
@@ -86,9 +89,10 @@ export const EDUCATIONAL_TIERS: PricingTier[] = [
     tierName: 'Educational — Pro',
     subtitle: 'The "Cohort License"',
     targetAudience: 'Universities & review center cohorts',
-    price: '₱1,500',
+    price: '₱1,440',
+    originalPrice: '₱1,800',
     priceSubtext: '/ seat / cycle (Min. 50 seats)',
-    hook: 'Upgrade your cohort\'s passing rate.',
+    hook: "Upgrade your cohort's passing rate.",
     features: [
       'Full Standard-Pro access for all enrolled students',
       'Instructor Dashboard — view aggregate batch weak points to adjust live lectures',

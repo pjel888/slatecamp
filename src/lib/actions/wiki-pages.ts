@@ -1,14 +1,14 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { isAdminByEmail } from '@/lib/admin/is-admin'
 import type { WikiPage } from '@/types/app'
 
 async function requireAdmin() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) throw new Error('Unauthorized')
   if (!isAdminByEmail(user.email ?? undefined)) throw new Error('Forbidden')
 }

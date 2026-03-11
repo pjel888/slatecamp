@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 import { sessionIdSchema } from "@/lib/validations";
 
 export type SessionActionResult = { error?: string };
@@ -18,7 +18,7 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
   const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getUser();
   if (!user) return { error: "Not authenticated" };
 
   const { data: session } = await supabase
@@ -60,7 +60,7 @@ export async function deleteSession(sessionId: string): Promise<SessionActionRes
   const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getUser();
   if (!user) return { error: "Not authenticated" };
 
   const { data: session } = await supabase

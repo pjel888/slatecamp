@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     .single();
 
   const flags = await getFeatureFlags();
-  const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || isAdminByEmail(user.email ?? undefined);
+  const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || await isAdminByEmail(user.email ?? undefined);
   const canAccessTutor =
     flags.bypassAiGate ||
     hasTierAccess("max", profile?.tier ?? "free", isAdmin, flags);

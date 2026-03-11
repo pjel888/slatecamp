@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
+import { cache } from "react";
 import { isDemoMode } from "@/lib/demo/config";
 import { createMockSupabaseClient } from "@/lib/demo/mock-supabase";
 
@@ -32,3 +33,8 @@ export async function createClient() {
     }
   );
 }
+
+export const getUser = cache(async () => {
+  const supabase = await createClient();
+  return supabase.auth.getUser();
+});

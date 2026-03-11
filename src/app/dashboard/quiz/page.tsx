@@ -1,4 +1,4 @@
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
 import { FALLBACK_SUBJECT_COLOR, siteConfig } from "@/lib/constants";
@@ -23,7 +23,7 @@ export default async function QuizPage({
 }) {
   const params = await searchParams;
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { user } } = await getUser();
   if (!user) redirect(ROUTES.LOGIN);
 
   await ensureProfileAndExamProfile(

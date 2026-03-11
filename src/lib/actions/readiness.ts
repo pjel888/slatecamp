@@ -1,6 +1,6 @@
 'use server';
 
-import { createClient } from '@/lib/supabase/server';
+import { createClient, getUser } from '@/lib/supabase/server';
 import { getReadinessLabel, getReadinessColor } from '@/lib/constants/readiness';
 import type { ReadinessScoreData, UserTier } from '@/types/app';
 
@@ -16,7 +16,7 @@ export async function getReadinessScore(
   examProfileId: string
 ): Promise<ReadinessScoreData> {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { user } } = await getUser();
   if (!user) return EMPTY_RESULT;
 
   // Get user tier

@@ -4,7 +4,6 @@ import { getWikiCategoryTree, getRecentlyUpdatedPages } from '@/lib/actions/wiki
 import { WIKI_SUBJECT_ICONS, DEFAULT_WIKI_ICON } from '@/components/wiki/wiki-icons'
 import { RecentlyUpdatedStrip } from '@/components/wiki/RecentlyUpdatedStrip'
 import { SponsoredCard } from '@/components/wiki/SponsoredCard'
-import { WikiCommandPalette } from '@/components/wiki/WikiCommandPalette'
 import { pickAd, AD_SLOTS } from '@/lib/constants/ads'
 import { ROUTES } from '@/lib/constants/routes'
 import type { WikiCategory } from '@/types/app'
@@ -53,15 +52,14 @@ export default async function WikiHubPage() {
 
   return (
     <div className="max-w-[1100px] mx-auto px-4 py-6 lg:py-8">
-      {/* Header + Search */}
+      {/* Header */}
       <div className="mb-8">
         <h1 className="text-xl font-semibold text-foreground tracking-tight mb-1">
           Resources Wiki
         </h1>
-        <p className="text-sm text-muted-foreground mb-4">
+        <p className="text-sm text-muted-foreground">
           Browse reference notes by architectural subject.
         </p>
-        <WikiCommandPalette />
       </div>
 
       {/* Subject Grid */}

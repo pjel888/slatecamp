@@ -1,5 +1,8 @@
+'use server'
+
 import { createClient } from "@/lib/supabase/server";
 import type { WikiCategory, WikiPage, WikiSearchResult, WikiSearchPaginatedResult } from "@/types/app";
+import { findAdjacentPages, type PageStub } from "@/lib/utils/wiki";
 
 /**
  * Fetch the full category tree, building parent→children relationships.
@@ -186,24 +189,6 @@ export async function searchWiki(
   return data as WikiSearchResult[];
 }
 
-// ---------------------------------------------------------------------------
-// Exported pure helper (no Supabase dependency — safe to test in isolation)
-// ---------------------------------------------------------------------------
-
-type PageStub = Pick<WikiPage, 'id' | 'title' | 'slug' | 'is_deprecated'> & { order_index: number }
-
-export function findAdjacentPages(
-  pages: PageStub[],
-  currentId: string
-): { prev: PageStub | null; next: PageStub | null } {
-  const sorted = [...pages].sort((a, b) => a.order_index - b.order_index)
-  const idx = sorted.findIndex((p) => p.id === currentId)
-  if (idx === -1) return { prev: null, next: null }
-  return {
-    prev: idx > 0 ? sorted[idx - 1] : null,
-    next: idx < sorted.length - 1 ? sorted[idx + 1] : null,
-  }
-}
 
 // ---------------------------------------------------------------------------
 // New server actions
@@ -214,6 +199,12 @@ export function findAdjacentPages(
  * and pages grouped by category ID.
  * Returns null if the slug resolves to a sub-category (parent_id IS NOT NULL).
  */
+function collectCategoryIds(cat: WikiCategory): string[] {
+  const ids = [cat.id]
+  for (const child of cat.children ?? []) ids.push(...collectCategoryIds(child))
+  return ids
+}
+
 export async function getWikiSubjectBySlug(slug: string): Promise<{
   subject: WikiCategory
   pagesByCategory: Record<string, PageStub[]>
@@ -221,6 +212,7 @@ export async function getWikiSubjectBySlug(slug: string): Promise<{
 } | null> {
   const supabase = await createClient()
 
+  // Fetch the subject row
   const { data: subjectData, error: subjectError } = await supabase
     .from('wiki_categories')
     .select('*')
@@ -230,17 +222,26 @@ export async function getWikiSubjectBySlug(slug: string): Promise<{
 
   if (subjectError || !subjectData) return null
 
-  const subject = subjectData as WikiCategory
-
-  const { data: children } = await supabase
+  // Fetch ALL categories and build the full subtree from this subject down
+  const { data: allCats } = await supabase
     .from('wiki_categories')
     .select('*')
-    .eq('parent_id', subject.id)
     .order('order_index', { ascending: true })
 
-  subject.children = (children ?? []) as WikiCategory[]
+  const map = new Map<string, WikiCategory>()
+  for (const cat of (allCats ?? []) as WikiCategory[]) {
+    map.set(cat.id, { ...cat, children: [] })
+  }
+  for (const cat of (allCats ?? []) as WikiCategory[]) {
+    if (cat.parent_id && map.has(cat.parent_id)) {
+      map.get(cat.parent_id)!.children!.push(map.get(cat.id)!)
+    }
+  }
 
-  const categoryIds = [subject.id, ...subject.children.map((c) => c.id)]
+  const subject = map.get(subjectData.id)
+  if (!subject) return null
+
+  const categoryIds = collectCategoryIds(subject)
 
   const { data: pages } = await supabase
     .from('wiki_pages')
