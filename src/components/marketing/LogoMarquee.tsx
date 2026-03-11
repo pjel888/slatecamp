@@ -46,7 +46,7 @@ const PARTNERS = [
   }, // Academic serif, classic weight
 ]
 
-export function LogoMarquee() {
+export function LogoMarquee({ dark = false }: { dark?: boolean } = {}) {
   /*
    * Each "half" of the track needs to be wider than the widest viewport
    * (~1920px) so there's never a visible gap. Repeating 3x per half
@@ -58,13 +58,17 @@ export function LogoMarquee() {
   return (
     <section
       aria-label='Trusted by leading architecture brands'
-      className='marquee-container overflow-hidden border-y border-[#1D1D1F]/[0.06] py-6'
+      className={`marquee-container overflow-hidden border-y py-6 ${
+        dark ? 'border-white/[0.06]' : 'border-[#1D1D1F]/[0.06]'
+      }`}
     >
       <div className='marquee-track flex items-center'>
         {logos.map((partner, i) => (
           <span
             key={`${partner.name}-${i}`}
-            className={`shrink-0 px-10 text-[#1D1D1F] opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className}`}
+            className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${
+              dark ? 'text-white' : 'text-[#1D1D1F]'
+            } ${partner.className}`}
           >
             {partner.name}
           </span>

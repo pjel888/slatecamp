@@ -364,4 +364,18 @@ a[data-pending] {
   .marquee-track {
     animation-play-state: paused;
   }
+  .landing-orb {
+    animation: none;
+  }
+}
+
+/* Landing page — subtle gradient orb drift */
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(2%, -1%) scale(1.02); }
+  66% { transform: translate(-1%, 1.5%) scale(0.98); }
+}
+
+.landing-orb {
+  animation: orb-drift 20s ease-in-out infinite;
 }

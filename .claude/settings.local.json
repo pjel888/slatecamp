@@ -47,7 +47,9 @@
       "Bash(ls \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src/components/ui/\"\ngrep -r \"isAdmin\\\\|is_admin\\\\|isAdminBy\" \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src\" --include=\"*.ts\" --include=\"*.tsx\" -l 2>/dev/null | head -10)",
       "Bash(grep -r \"isAdmin\\\\|is_admin\\\\|adminEmail\\\\|ADMIN\" \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src\" --include=\"*.ts\" --include=\"*.tsx\" -l 2>/dev/null | head -10)",
       "Bash(cd \"/c/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul\" && npm run test 2>&1 | tail -10)",
-      "Bash(find \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro/src\" -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) | xargs grep -l \"getUser\\\\|getSession\" | head -20)"
+      "Bash(find \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro/src\" -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) | xargs grep -l \"getUser\\\\|getSession\" | head -20)",
+      "Bash(npx tsc --noEmit src/app/page.tsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3099/)"
     ]
   }
 }

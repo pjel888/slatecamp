@@ -53,28 +53,36 @@ function StarRating({ count }: { count: number }) {
   );
 }
 
-export function TestimonialShowcase() {
+export function TestimonialShowcase({ dark = false }: { dark?: boolean } = {}) {
   return (
     <div className="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-3">
       {TESTIMONIALS.map((testimonial) => (
         <article
           key={testimonial.name}
-          className="flex flex-col justify-between rounded-2xl border border-[#1D1D1F]/[0.06] bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5"
-          style={{ boxShadow: "0 1px 3px rgba(0,0,0,0.04)" }}
+          className={`flex flex-col justify-between rounded-2xl border p-7 transition-transform duration-150 hover:-translate-y-0.5 ${
+            dark
+              ? 'border-white/[0.06] bg-white/[0.03]'
+              : 'border-[#1D1D1F]/[0.06] bg-white'
+          }`}
+          style={dark ? undefined : { boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
         >
           <div>
             <StarRating count={testimonial.rating} />
             <blockquote
-              className={`${serif.className} mt-5 text-[17px] italic leading-relaxed text-[#1D1D1F]`}
+              className={`${serif.className} mt-5 text-[17px] italic leading-relaxed ${
+                dark ? 'text-white/90' : 'text-[#1D1D1F]'
+              }`}
             >
               &ldquo;{testimonial.quote}&rdquo;
             </blockquote>
           </div>
-          <div className="mt-6 border-t border-[#1D1D1F]/[0.06] pt-5">
-            <p className="text-[14px] font-semibold text-[#1D1D1F]">
+          <div className={`mt-6 border-t pt-5 ${
+            dark ? 'border-white/[0.06]' : 'border-[#1D1D1F]/[0.06]'
+          }`}>
+            <p className={`text-[14px] font-semibold ${dark ? 'text-white' : 'text-[#1D1D1F]'}`}>
               {testimonial.name}
             </p>
-            <p className="mt-0.5 text-[12px] text-[#86868B]">
+            <p className={`mt-0.5 text-[12px] ${dark ? 'text-white/40' : 'text-[#86868B]'}`}>
               {testimonial.title}
             </p>
           </div>

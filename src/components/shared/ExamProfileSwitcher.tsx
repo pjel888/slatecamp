@@ -92,54 +92,55 @@ export function ExamProfileSwitcher({
                 className='flex w-full items-center gap-3 rounded-lg px-2 py-2 text-sm text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
               >
                 <GraduationCap className='h-4 w-4' strokeWidth={1.5} />
-                Go to dashboard
+                Go to Dashboard
               </Link>
             ) : (
-            profiles.map((profile) => {
-              const exam = profile.board_exams
-              const isActive = activeProfile != null && profile.id === activeProfile.id
-              const days = profile.target_exam_date
-                ? daysUntil(profile.target_exam_date)
-                : null
+              profiles.map((profile) => {
+                const exam = profile.board_exams
+                const isActive =
+                  activeProfile != null && profile.id === activeProfile.id
+                const days = profile.target_exam_date
+                  ? daysUntil(profile.target_exam_date)
+                  : null
 
-              return (
-                <button
-                  key={profile.id}
-                  onClick={async () => {
-                    if (!isActive) await switchProfile(profile.id)
-                    setOpen(false)
-                  }}
-                  className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-all ${
-                    isActive ? 'bg-accent-blue/5' : 'hover:bg-secondary'
-                  }`}
-                >
-                  <div
-                    className={`flex h-8 w-8 items-center justify-center rounded-lg ${
-                      isActive ? 'bg-accent-blue/10' : 'bg-secondary'
+                return (
+                  <button
+                    key={profile.id}
+                    onClick={async () => {
+                      if (!isActive) await switchProfile(profile.id)
+                      setOpen(false)
+                    }}
+                    className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-all ${
+                      isActive ? 'bg-accent-blue/5' : 'hover:bg-secondary'
                     }`}
                   >
-                    <GraduationCap
-                      className={`h-4 w-4 ${isActive ? 'text-accent-blue' : 'text-muted-foreground'}`}
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                  <div className='min-w-0 flex-1'>
-                    <p className='truncate text-sm font-medium text-foreground'>
-                      {exam?.name ?? 'Exam'}
-                    </p>
-                    <p className='text-xs text-muted-foreground'>
-                      {days !== null ? `${days} days left` : 'No target date'}
-                    </p>
-                  </div>
-                  {isActive && (
-                    <Check
-                      className='h-4 w-4 shrink-0 text-accent-blue'
-                      strokeWidth={1.5}
-                    />
-                  )}
-                </button>
-              )
-            })
+                    <div
+                      className={`flex h-8 w-8 items-center justify-center rounded-lg ${
+                        isActive ? 'bg-accent-blue/10' : 'bg-secondary'
+                      }`}
+                    >
+                      <GraduationCap
+                        className={`h-4 w-4 ${isActive ? 'text-accent-blue' : 'text-muted-foreground'}`}
+                        strokeWidth={1.5}
+                      />
+                    </div>
+                    <div className='min-w-0 flex-1'>
+                      <p className='truncate text-sm font-medium text-foreground'>
+                        {exam?.name ?? 'Exam'}
+                      </p>
+                      <p className='text-xs text-muted-foreground'>
+                        {days !== null ? `${days} days left` : 'No target date'}
+                      </p>
+                    </div>
+                    {isActive && (
+                      <Check
+                        className='h-4 w-4 shrink-0 text-accent-blue'
+                        strokeWidth={1.5}
+                      />
+                    )}
+                  </button>
+                )
+              })
             )}
 
             <div className='mt-1 border-t border-border pt-1'>
