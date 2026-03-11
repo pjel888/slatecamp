@@ -21,7 +21,9 @@ export async function MarketingNav({
   const isDark = variant === 'dark'
   let isLoggedIn = false
   try {
-    const { data: { user } } = await getUser()
+    const {
+      data: { user },
+    } = await getUser()
     isLoggedIn = !!user
   } catch {
     isLoggedIn = false
@@ -30,8 +32,12 @@ export async function MarketingNav({
   const linkClass = (href: string) =>
     `transition-colors duration-150 ${
       activeRoute === href
-        ? isDark ? 'text-white' : 'text-[#1D1D1F]'
-        : isDark ? 'text-white/50 hover:text-white' : 'text-[#6E6E73] hover:text-[#1D1D1F]'
+        ? isDark
+          ? 'text-white'
+          : 'text-[#1D1D1F]'
+        : isDark
+          ? 'text-white/50 hover:text-white'
+          : 'text-[#6E6E73] hover:text-[#1D1D1F]'
     }`
 
   const navLinkHover = isDark
@@ -39,12 +45,14 @@ export async function MarketingNav({
     : 'rounded-md px-3 py-3 transition-colors duration-150 hover:text-[#1D1D1F]'
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl ${
-      isDark
-        ? 'border-white/[0.06] bg-[#0F172A]/80'
-        : 'border-charcoal/6 bg-[#F5F4F0]/80'
-    }`}>
-      <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between px-6'>
+    <header
+      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl ${
+        isDark
+          ? 'border-white/[0.06] bg-[#0F172A]/80'
+          : 'border-charcoal/6 bg-[#F5F4F0]/80'
+      }`}
+    >
+      <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between '>
         {logoScrollsToTop ? (
           <a
             href='#top'
@@ -61,16 +69,26 @@ export async function MarketingNav({
           </Link>
         )}
 
-        <nav className={`hidden items-center gap-1 text-[13px] sm:flex ${isDark ? 'text-white/50' : 'text-graphite'}`}>
+        <nav
+          className={`hidden items-center gap-1 text-[13px] sm:flex ${isDark ? 'text-white/50' : 'text-graphite'}`}
+        >
           {activeRoute === '/' ? (
             <>
-              <a href='#features' className={navLinkHover}>Features</a>
-              <a href='#how-it-works' className={navLinkHover}>How it works</a>
+              <a href='#features' className={navLinkHover}>
+                Features
+              </a>
+              <a href='#how-it-works' className={navLinkHover}>
+                How it works
+              </a>
             </>
           ) : (
             <>
-              <Link href='/#features' className={navLinkHover}>Features</Link>
-              <Link href='/#how-it-works' className={navLinkHover}>How it works</Link>
+              <Link href='/#features' className={navLinkHover}>
+                Features
+              </Link>
+              <Link href='/#how-it-works' className={navLinkHover}>
+                How it works
+              </Link>
             </>
           )}
           {NAV_LINKS.map(({ href, label }) => (
@@ -99,7 +117,9 @@ export async function MarketingNav({
               <Link
                 href={ROUTES.LOGIN}
                 className={`hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block ${
-                  isDark ? 'text-white/50 hover:text-white' : 'text-graphite hover:text-charcoal'
+                  isDark
+                    ? 'text-white/50 hover:text-white'
+                    : 'text-graphite hover:text-charcoal'
                 }`}
               >
                 Log in

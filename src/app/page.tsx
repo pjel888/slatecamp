@@ -418,11 +418,11 @@ export default async function LandingPage() {
                 <div className='landing-reveal flex items-center gap-3'>
                   <Starburst className='h-4 w-4 text-[#ED8008]' />
                   <span className='font-mono text-[11px] tracking-[0.25em] uppercase text-[#ED8008]'>
-                    Architecture Board Exam Prep
+                    From first year to board exam
                   </span>
                 </div>
 
-                <h1 className='landing-reveal landing-delay-1 mt-2 text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[0.92] tracking-[-0.03em] text-[#1D1D1F]'>
+                <h1 className='landing-reveal landing-delay-1 mt-6 text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[0.92] tracking-[-0.03em] text-[#1D1D1F]'>
                   Know you&apos;ll
                   <br />
                   pass
