@@ -604,7 +604,7 @@ BEGIN
     ORDER BY dc.embedding <=> query_embedding
     LIMIT match_count;
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql SET search_path = public;
 
 
 -- =============================================================
@@ -736,6 +736,7 @@ RETURNS TABLE(
 )
 LANGUAGE plpgsql
 SECURITY DEFINER
+SET search_path = public
 AS $$
 DECLARE
   v_accuracy NUMERIC := 0;
@@ -918,7 +919,7 @@ CREATE TABLE public.wiki_page_links (
 );
 
 -- FTS trigger: weights title=A, tags=B, content=C
-CREATE OR REPLACE FUNCTION wiki_pages_fts_trigger()
+CREATE OR REPLACE FUNCTION public.wiki_pages_fts_trigger()
 RETURNS TRIGGER AS $$
 BEGIN
     NEW.fts_vector :=
@@ -928,7 +929,7 @@ BEGIN
     NEW.updated_at := NOW();
     RETURN NEW;
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql SET search_path = '';
 
 CREATE TRIGGER trg_wiki_pages_fts
     BEFORE INSERT OR UPDATE OF title, tags, markdown_content
@@ -965,7 +966,7 @@ BEGIN
     ORDER BY rank DESC
     LIMIT max_results;
 END;
-$$ LANGUAGE plpgsql STABLE;
+$$ LANGUAGE plpgsql STABLE SET search_path = public;
 
 -- Paginated, subject-filtered full-text wiki search
 CREATE OR REPLACE FUNCTION search_wiki_paginated(
@@ -1010,10 +1011,10 @@ BEGIN
       wp.category_id,
       wp.is_deprecated,
       wp.is_free,
-      ts_rank(wp.search_vector, tsq) AS rank
-    FROM wiki_pages wp
-    JOIN wiki_categories wc ON wc.id = wp.category_id
-    LEFT JOIN wiki_categories root_cat ON (
+      ts_rank(wp.fts_vector, tsq) AS rank
+    FROM public.wiki_pages wp
+    JOIN public.wiki_categories wc ON wc.id = wp.category_id
+    LEFT JOIN public.wiki_categories root_cat ON (
       CASE WHEN wc.parent_id IS NULL THEN wc.id ELSE wc.parent_id END = root_cat.id
     )
     WHERE
@@ -1028,7 +1029,7 @@ BEGIN
   LIMIT page_limit
   OFFSET page_offset;
 END;
-$$;
+$$ SET search_path = public;
 
 -- Wiki indexes
 CREATE INDEX idx_wiki_categories_parent ON wiki_categories(parent_id);

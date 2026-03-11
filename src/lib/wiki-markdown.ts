@@ -1,6 +1,47 @@
 import { marked } from 'marked'
 import TurndownService from 'turndown'
 
+// --- Table of contents (server-safe) ---
+
+export interface TocHeading {
+  id: string
+  text: string
+  level: 2 | 3
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+}
+
+/**
+ * Extracts h2 and h3 headings from markdown source (## / ### lines).
+ * Safe to call from server components.
+ */
+export function extractHeadings(markdown: string): TocHeading[] {
+  const lines = markdown.split('\n')
+  const headings: TocHeading[] = []
+
+  for (const line of lines) {
+    const h2 = line.match(/^## (.+)$/)
+    const h3 = line.match(/^### (.+)$/)
+    if (h2) {
+      const text = h2[1].trim()
+      headings.push({ id: slugify(text), text, level: 2 })
+    } else if (h3) {
+      const text = h3[1].trim()
+      headings.push({ id: slugify(text), text, level: 3 })
+    }
+  }
+
+  return headings
+}
+
+// --- Markdown ↔ HTML (Tiptap) ---
+
 /** Convert markdown to HTML for Tiptap. */
 export async function markdownToHtml(md: string): Promise<string> {
   if (!md?.trim()) return '<p></p>'

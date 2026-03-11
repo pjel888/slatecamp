@@ -5,7 +5,6 @@ import { createClient } from '@/lib/supabase/server'
 import { getWikiSubjectBySlug, getWikiPagesBySubject } from '@/lib/actions/wiki'
 import { WIKI_SUBJECT_ICONS, DEFAULT_WIKI_ICON } from '@/components/wiki/wiki-icons'
 import { SponsoredCard } from '@/components/wiki/SponsoredCard'
-import { WikiCommandPalette } from '@/components/wiki/WikiCommandPalette'
 import { ROUTES } from '@/lib/constants/routes'
 import { pickAd, AD_SLOTS } from '@/lib/constants/ads'
 import type { WikiCategory } from '@/types/app'
@@ -13,6 +12,107 @@ import type { WikiCategory } from '@/types/app'
 interface Props {
   params: Promise<{ slug: string }>
   searchParams: Promise<{ page?: string }>
+}
+
+type PageStub = { id: string; title: string; slug: string; is_deprecated: boolean }
+
+// Recursive category section — renders a category and all its nested children
+function CategorySection({
+  category,
+  pagesByCategory,
+  depth = 0,
+}: {
+  category: WikiCategory
+  pagesByCategory: Record<string, PageStub[]>
+  depth?: number
+}) {
+  const directPages = pagesByCategory[category.id] ?? []
+  const subcategories = category.children ?? []
+  const hasContent = directPages.length > 0 || subcategories.length > 0
+
+  if (!hasContent) return null
+
+  const previewPages = directPages.slice(0, 4)
+  const remaining = directPages.length - previewPages.length
+
+  if (depth === 0) {
+    // Top-level category: full card
+    return (
+      <div className="rounded-lg border border-border/40 p-4">
+        <h3 className="text-sm font-medium text-foreground mb-1">{category.name}</h3>
+        {category.description && (
+          <p className="text-xs text-muted-foreground mb-2">{category.description}</p>
+        )}
+
+        {/* Direct pages in this category */}
+        {previewPages.length > 0 && (
+          <div className="space-y-1.5 mb-3">
+            {previewPages.map((page) => (
+              <Link
+                key={page.id}
+                href={ROUTES.WIKI_PAGE(page.slug)}
+                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <FileText className="h-3 w-3 shrink-0" strokeWidth={1.5} />
+                <span className="truncate">{page.title}</span>
+              </Link>
+            ))}
+            {remaining > 0 && (
+              <p className="text-xs text-muted-foreground pl-5">+ {remaining} more</p>
+            )}
+          </div>
+        )}
+
+        {/* Subcategories */}
+        {subcategories.length > 0 && (
+          <div className="space-y-3 mt-2">
+            {subcategories.map((sub) => (
+              <CategorySection
+                key={sub.id}
+                category={sub}
+                pagesByCategory={pagesByCategory}
+                depth={1}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  // Nested subcategory: indented section without a card border
+  return (
+    <div className="pl-1">
+      <p className="text-xs font-medium text-muted-foreground mb-1.5 flex items-center gap-1">
+        <ChevronRight className="h-3 w-3 shrink-0" strokeWidth={1.5} />
+        {category.name}
+      </p>
+      <div className="pl-4 space-y-1.5">
+        {previewPages.map((page) => (
+          <Link
+            key={page.id}
+            href={ROUTES.WIKI_PAGE(page.slug)}
+            className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <FileText className="h-3 w-3 shrink-0" strokeWidth={1.5} />
+            <span className="truncate">{page.title}</span>
+          </Link>
+        ))}
+        {remaining > 0 && (
+          <p className="text-xs text-muted-foreground pl-5">+ {remaining} more</p>
+        )}
+        {/* Deeper nesting */}
+        {subcategories.map((sub) => (
+          <CategorySection
+            key={sub.id}
+            category={sub}
+            pagesByCategory={pagesByCategory}
+            depth={depth + 1}
+          />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default async function SubjectLandingPage({ params, searchParams }: Props) {
@@ -39,11 +139,6 @@ export default async function SubjectLandingPage({ params, searchParams }: Props
 
   const Icon = WIKI_SUBJECT_ICONS[subject.slug] ?? DEFAULT_WIKI_ICON
   const categories: WikiCategory[] = subject.children ?? []
-
-  // Build category grid with ad at last position
-  type GridItem = { type: 'category'; category: WikiCategory } | { type: 'ad' }
-  const gridItems: GridItem[] = categories.map((cat) => ({ type: 'category', category: cat }))
-  if (ad) gridItems.push({ type: 'ad' })
 
   return (
     <div className="max-w-[900px] mx-auto px-4 py-6 lg:py-8">
@@ -78,51 +173,21 @@ export default async function SubjectLandingPage({ params, searchParams }: Props
         </div>
       </div>
 
-      {/* Subject-scoped search */}
-      <div className="mb-8">
-        <WikiCommandPalette />
-      </div>
-
-      {/* Category Cards Grid */}
-      {gridItems.length > 0 && (
+      {/* Category Cards Grid — now renders full nested tree */}
+      {categories.length > 0 && (
         <section className="mb-8">
           <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
             Categories
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
-            {gridItems.map((item, i) => {
-              if (item.type === 'ad') {
-                return <SponsoredCard key="ad" ad={ad!} variant="category" />
-              }
-              const { category } = item
-              const catPages = pagesByCategory[category.id] ?? []
-              const previewPages = catPages.slice(0, 3)
-              const remaining = catPages.length - previewPages.length
-
-              return (
-                <div key={category.id} className="rounded-lg border border-border/40 p-4">
-                  <h3 className="text-sm font-medium text-foreground mb-1">{category.name}</h3>
-                  <p className="text-xs text-muted-foreground mb-3">
-                    {catPages.length} {catPages.length === 1 ? 'page' : 'pages'}
-                  </p>
-                  <div className="space-y-1.5">
-                    {previewPages.map((page) => (
-                      <Link
-                        key={page.id}
-                        href={ROUTES.WIKI_PAGE(page.slug)}
-                        className="flex items-center gap-2 text-xs text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <FileText className="h-3 w-3 shrink-0" strokeWidth={1.5} />
-                        <span className="truncate">{page.title}</span>
-                      </Link>
-                    ))}
-                    {remaining > 0 && (
-                      <p className="text-xs text-muted-foreground">+ {remaining} more</p>
-                    )}
-                  </div>
-                </div>
-              )
-            })}
+            {categories.map((cat) => (
+              <CategorySection
+                key={cat.id}
+                category={cat}
+                pagesByCategory={pagesByCategory}
+              />
+            ))}
+            {ad && <SponsoredCard key="ad" ad={ad} variant="category" />}
           </div>
         </section>
       )}

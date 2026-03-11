@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 
 export type FinalStretchPhase = "final_approach" | "countdown" | "final_week" | "exam_eve";
 
@@ -79,7 +79,7 @@ export async function getWeakSubjectsForFinalStretch(
 
 export async function markFinalStretchUpsellShown(examProfileId: string): Promise<void> {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { user } } = await getUser();
   if (!user) return;
   await supabase
     .from("exam_profiles")

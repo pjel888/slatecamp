@@ -1,12 +1,12 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 
 export async function updateEmailPreferences(prefs: {
   final_stretch_daily?: boolean;
 }): Promise<void> {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { data: { user } } = await getUser();
   if (!user) return;
   const { data: existing } = await supabase
     .from("profiles")

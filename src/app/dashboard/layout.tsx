@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { ensureProfileAndExamProfile } from '@/lib/supabase/bootstrap'
 import {
@@ -32,7 +32,7 @@ export default async function DashboardLayout({
   const supabase = await createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await getUser()
 
   if (!user) redirect(ROUTES.LOGIN)
 

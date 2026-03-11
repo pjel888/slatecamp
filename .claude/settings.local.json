@@ -32,7 +32,22 @@
       "Bash(timeout /t 2 /nobreak)",
       "Bash(node -e \":*)",
       "Bash(npm install nextjs-toploader)",
-      "Bash(npm install nextjs-toploader --legacy-peer-deps)"
+      "Bash(npm install nextjs-toploader --legacy-peer-deps)",
+      "Bash(cd \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro\" && npx npm-check-updates --format group 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro\" && npm update 2>&1)",
+      "Bash(npm info:*)",
+      "Bash(grep -r \"from '@react-three/drei'\" \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro\\\\src\" 2>&1)",
+      "Read(//c/Users/Philip Lewis/.claude/**)",
+      "Bash(claude plugins:*)",
+      "Bash(cat ~/.claude/plugins/installed_plugins.json | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(list\\(d['plugins'].keys\\(\\)\\)\\)\")",
+      "Bash(cd \"/c/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul\" && npm install 2>&1 | tail -3)",
+      "Bash(cd \"/c/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul\" && npm install --legacy-peer-deps 2>&1 | tail -3)",
+      "Bash(cd \"/c/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul\" && rm -f \"src/app/dashboard/wiki/page.tsx\" && rm -rf \"src/app/dashboard/wiki/[slug]\" && echo \"deleted\")",
+      "Bash(ls \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src/components/ui/\" | grep -i command\nls \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src/lib/admin/\" 2>/dev/null || echo \"No admin dir\"\nfind \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src\" -name \"is-admin*\" 2>/dev/null || echo \"No is-admin file\")",
+      "Bash(ls \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src/components/ui/\"\ngrep -r \"isAdmin\\\\|is_admin\\\\|isAdminBy\" \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src\" --include=\"*.ts\" --include=\"*.tsx\" -l 2>/dev/null | head -10)",
+      "Bash(grep -r \"isAdmin\\\\|is_admin\\\\|adminEmail\\\\|ADMIN\" \"C:/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul/src\" --include=\"*.ts\" --include=\"*.tsx\" -l 2>/dev/null | head -10)",
+      "Bash(cd \"/c/Users/Philip Lewis/Desktop/project-cerebro/.worktrees/wiki-ux-overhaul\" && npm run test 2>&1 | tail -10)",
+      "Bash(find \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro/src\" -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) | xargs grep -l \"getUser\\\\|getSession\" | head -20)"
     ]
   }
 }

@@ -27,6 +27,9 @@ export function PricingCard({ tier }: { tier: PricingTier }) {
 
       {/* Price */}
       <div className="mt-5">
+        {tier.originalPrice && (
+          <s className="block text-[13px] text-[#AEAEB2]">{tier.originalPrice}</s>
+        )}
         <span className="text-[40px] font-semibold leading-none tracking-tight text-[#1D1D1F]">
           {tier.price}
         </span>
