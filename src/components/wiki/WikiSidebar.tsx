@@ -9,7 +9,6 @@ import type { WikiCategory, WikiPage } from '@/types/app'
 
 interface WikiSidebarProps {
   tree: WikiCategory[]
-  /** Pages grouped by category ID — only includes id, title, slug, is_deprecated */
   pagesByCategory: Record<string, Pick<WikiPage, 'id' | 'title' | 'slug' | 'is_deprecated'>[]>
 }
 
@@ -18,27 +17,30 @@ function CategoryNode({
   pagesByCategory,
   pathname,
   depth = 0,
+  activeRootId,
 }: {
   category: WikiCategory
   pagesByCategory: WikiSidebarProps['pagesByCategory']
   pathname: string
   depth?: number
+  activeRootId?: string
 }) {
-  const [expanded, setExpanded] = useState(depth === 0)
+  // Auto-expand only the subject that contains the active page; collapse all others
+  const defaultExpanded = depth === 0 ? category.id === activeRootId : false
+  const [expanded, setExpanded] = useState(defaultExpanded)
   const pages = pagesByCategory[category.id] ?? []
   const hasChildren = (category.children?.length ?? 0) > 0 || pages.length > 0
   const isRoot = depth === 0
 
-  // Root subjects get a mapped icon; nested categories get the folder icon
   const SubjectIcon = isRoot
     ? (WIKI_SUBJECT_ICONS[category.slug] ?? DEFAULT_WIKI_ICON)
     : FolderOpen
 
-  // Count pages in this category + its direct children for root-level badge
   const totalPages = isRoot
-    ? pages.length + (category.children ?? []).reduce(
+    ? pages.length +
+      (category.children ?? []).reduce(
         (sum, child) => sum + (pagesByCategory[child.id]?.length ?? 0),
-        0,
+        0
       )
     : 0
 
@@ -62,15 +64,12 @@ function CategoryNode({
         <SubjectIcon className="h-3.5 w-3.5 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <span className="truncate flex-1">{category.name}</span>
         {isRoot && totalPages > 0 && (
-          <span className="text-[10px] text-muted-foreground tabular-nums">
-            {totalPages}
-          </span>
+          <span className="text-[10px] text-muted-foreground tabular-nums">{totalPages}</span>
         )}
       </button>
 
       {expanded && (
         <div>
-          {/* Child categories */}
           {category.children?.map((child) => (
             <CategoryNode
               key={child.id}
@@ -78,10 +77,9 @@ function CategoryNode({
               pagesByCategory={pagesByCategory}
               pathname={pathname}
               depth={depth + 1}
+              activeRootId={activeRootId}
             />
           ))}
-
-          {/* Pages in this category */}
           {pages.map((page) => {
             const href = `/dashboard/wiki/${page.slug}`
             const isActive = pathname === href
@@ -97,7 +95,10 @@ function CategoryNode({
                 style={{ paddingLeft: `${20 + (depth + 1) * 12}px` }}
               >
                 {page.is_deprecated ? (
-                  <AlertTriangle className="h-3.5 w-3.5 shrink-0 text-color-signal-amber" strokeWidth={1.5} />
+                  <AlertTriangle
+                    className="h-3.5 w-3.5 shrink-0 text-color-signal-amber"
+                    strokeWidth={1.5}
+                  />
                 ) : (
                   <FileText className="h-3.5 w-3.5 shrink-0" strokeWidth={1.5} />
                 )}
@@ -114,6 +115,15 @@ function CategoryNode({
 export function WikiSidebar({ tree, pagesByCategory }: WikiSidebarProps) {
   const pathname = usePathname()
 
+  // Determine which root subject contains the active page
+  const activeRootId = tree.find((root) => {
+    const rootPageSlugs = (pagesByCategory[root.id] ?? []).map((p) => `/dashboard/wiki/${p.slug}`)
+    if (rootPageSlugs.includes(pathname)) return true
+    return (root.children ?? []).some((child) =>
+      (pagesByCategory[child.id] ?? []).some((p) => `/dashboard/wiki/${p.slug}` === pathname)
+    )
+  })?.id
+
   return (
     <aside className="hidden lg:block w-[280px] shrink-0 border-r border-border/40 overflow-y-auto">
       <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border/40 px-4 py-3">
@@ -126,6 +136,7 @@ export function WikiSidebar({ tree, pagesByCategory }: WikiSidebarProps) {
             category={root}
             pagesByCategory={pagesByCategory}
             pathname={pathname}
+            activeRootId={activeRootId}
           />
         ))}
       </nav>
