@@ -25,6 +25,9 @@ export const ROUTES = {
   ANALYTICS: "/dashboard/analytics",
   WIKI: "/dashboard/wiki",
   WIKI_PAGE: (slug: string) => `/dashboard/wiki/${slug}`,
+  WIKI_SUBJECT: (slug: string) => `/dashboard/wiki/subject/${slug}`,
+  WIKI_SEARCH: (q: string, subject?: string) =>
+    `/dashboard/wiki/search?q=${encodeURIComponent(q)}${subject ? `&subject=${subject}` : ''}`,
   NOTES: "/dashboard/notes",
   NOTE: (noteId: string) => `/dashboard/notes/${noteId}`,
   LIBRARY: "/dashboard/library",
