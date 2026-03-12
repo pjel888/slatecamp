@@ -15,7 +15,7 @@ export function HeroHeadline() {
     if (!knowRef.current || !winRef.current || !youllRef.current) return
     const knowAnnotation = annotate(knowRef.current, {
       type: 'highlight',
-      color: '#ED8008',
+      color: '#1f3055',
       strokeWidth: 2,
       animationDuration: 400,
     })

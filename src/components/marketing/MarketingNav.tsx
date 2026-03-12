@@ -127,7 +127,7 @@ export async function MarketingNav({
               <Link
                 href={ROUTES.REGISTER}
                 className={`rounded-full px-5 py-3 text-[13px] font-medium transition-opacity duration-150 hover:opacity-90 ${
-                  isDark ? 'bg-[#ED8008] text-white' : 'bg-charcoal text-white'
+                  isDark ? 'bg-[#1f3055] text-white' : 'bg-charcoal text-white'
                 }`}
               >
                 Get Started
