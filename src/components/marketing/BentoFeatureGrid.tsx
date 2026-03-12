@@ -4,6 +4,7 @@ import {
   Pill,
   CircleArrow,
 } from '@/components/marketing/LandingPrimitives'
+import { SLATECAMP_SAGE, SLATECAMP_INK, SLATECAMP_PAPER, SLATECAMP_AMBER, SLATECAMP_BORDER, hexToRgba } from '@/lib/constants'
 
 const serif = Instrument_Serif({
   weight: '400',
@@ -15,53 +16,37 @@ const serif = Instrument_Serif({
 /* ── Quiz answer mockup ── */
 
 const QuizMockup = () => (
-  <div className='space-y-2' aria-hidden='true'>
-    <div className='rounded-lg border border-[#1D1D1F]/[0.08] bg-white/40 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='h-3.5 w-3.5 shrink-0 rounded-full border border-[#1D1D1F]/20' />
-        <div className='h-2 w-3/4 rounded-full bg-[#1D1D1F]/10' />
+  <div className="space-y-2" aria-hidden="true">
+    <div className="rounded-lg border px-4 py-2.5" style={{ borderColor: hexToRgba(SLATECAMP_INK.main, 0.08), backgroundColor: 'rgba(255,255,255,0.4)' }}>
+      <div className="flex items-center gap-3">
+        <div className="h-3.5 w-3.5 shrink-0 rounded-full border" style={{ borderColor: hexToRgba(SLATECAMP_INK.main, 0.2) }} />
+        <div className="h-2 w-3/4 rounded-full" style={{ backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.1) }} />
       </div>
     </div>
-    <div className='rounded-lg border border-[#34C759]/30 bg-[#34C759]/10 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-[#34C759]'>
-          <svg
-            className='h-2 w-2 text-white'
-            viewBox='0 0 20 20'
-            fill='currentColor'
-          >
-            <path
-              fillRule='evenodd'
-              d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-              clipRule='evenodd'
-            />
+    <div className="rounded-lg border px-4 py-2.5" style={{ borderColor: hexToRgba(SLATECAMP_SAGE.DEFAULT, 0.3), backgroundColor: hexToRgba(SLATECAMP_SAGE.DEFAULT, 0.1) }}>
+      <div className="flex items-center gap-3">
+        <div className="flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: SLATECAMP_SAGE.DEFAULT }}>
+          <svg className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor" style={{ color: SLATECAMP_PAPER.snow }}>
+            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
           </svg>
         </div>
-        <div className='h-2 w-2/3 rounded-full bg-[#34C759]/20' />
+        <div className="h-2 w-2/3 rounded-full" style={{ backgroundColor: hexToRgba(SLATECAMP_SAGE.DEFAULT, 0.2) }} />
       </div>
     </div>
-    <div className='rounded-lg border border-[#1D1D1F]/[0.08] bg-white/40 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='h-3.5 w-3.5 shrink-0 rounded-full border border-[#1D1D1F]/20' />
-        <div className='h-2 w-5/6 rounded-full bg-[#1D1D1F]/10' />
+    <div className="rounded-lg border px-4 py-2.5" style={{ borderColor: hexToRgba(SLATECAMP_INK.main, 0.08), backgroundColor: 'rgba(255,255,255,0.4)' }}>
+      <div className="flex items-center gap-3">
+        <div className="h-3.5 w-3.5 shrink-0 rounded-full border" style={{ borderColor: hexToRgba(SLATECAMP_INK.main, 0.2) }} />
+        <div className="h-2 w-5/6 rounded-full" style={{ backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.1) }} />
       </div>
     </div>
-    <div className='rounded-lg border border-[#FF3B30]/30 bg-[#FF3B30]/10 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-[#FF3B30]'>
-          <svg
-            className='h-2 w-2 text-white'
-            viewBox='0 0 20 20'
-            fill='currentColor'
-          >
-            <path
-              fillRule='evenodd'
-              d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-              clipRule='evenodd'
-            />
+    <div className="rounded-lg border px-4 py-2.5" style={{ borderColor: hexToRgba(SLATECAMP_INK.main, 0.3), backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.1) }}>
+      <div className="flex items-center gap-3">
+        <div className="flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full" style={{ backgroundColor: SLATECAMP_INK.main }}>
+          <svg className="h-2 w-2" viewBox="0 0 20 20" fill="currentColor" style={{ color: SLATECAMP_PAPER.snow }}>
+            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>
         </div>
-        <div className='h-2 w-1/2 rounded-full bg-[#FF3B30]/20' />
+        <div className="h-2 w-1/2 rounded-full" style={{ backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.2) }} />
       </div>
     </div>
   </div>
@@ -70,28 +55,23 @@ const QuizMockup = () => (
 /* ── Subject mastery bars ── */
 
 const SUBJECTS = [
-  { name: 'Structural Design', pct: 85, color: '#34C759' },
-  { name: 'Building Technology', pct: 62, color: '#1f3055' },
-  { name: 'Architectural Theory', pct: 41, color: '#FF3B30' },
-  { name: 'History of Arch.', pct: 73, color: '#1f3055' },
-  { name: 'Utilities (MEPFS)', pct: 88, color: '#34C759' },
+  { name: 'Structural Design', pct: 85, color: SLATECAMP_SAGE.DEFAULT },
+  { name: 'Building Technology', pct: 62, color: SLATECAMP_INK.main },
+  { name: 'Architectural Theory', pct: 41, color: SLATECAMP_INK.main },
+  { name: 'History of Arch.', pct: 73, color: SLATECAMP_INK.main },
+  { name: 'Utilities (MEPFS)', pct: 88, color: SLATECAMP_SAGE.DEFAULT },
 ] as const
 
 const MasteryBars = () => (
-  <div className='space-y-3' aria-hidden='true'>
+  <div className="space-y-3" aria-hidden="true">
     {SUBJECTS.map((s) => (
       <div key={s.name}>
-        <div className='mb-1 flex items-center justify-between'>
-          <span className='text-[11px] text-white/40'>{s.name}</span>
-          <span className='font-mono text-[11px] text-white/60'>
-            {s.pct}%
-          </span>
+        <div className="mb-1 flex items-center justify-between">
+          <span className="text-[11px]" style={{ color: 'rgba(255,255,255,0.4)' }}>{s.name}</span>
+          <span className="font-mono text-[11px]" style={{ color: 'rgba(255,255,255,0.6)' }}>{s.pct}%</span>
         </div>
-        <div className='h-1.5 w-full overflow-hidden rounded-full bg-white/[0.06]'>
-          <div
-            className='h-full rounded-full'
-            style={{ width: `${s.pct}%`, backgroundColor: s.color }}
-          />
+        <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}>
+          <div className="h-full rounded-full" style={{ width: `${s.pct}%`, backgroundColor: s.color }} />
         </div>
       </div>
     ))}
@@ -127,7 +107,7 @@ const ReadinessRingSvg = ({
       cy='50'
       r={RING_R}
       fill='none'
-      stroke='#1f3055'
+      stroke={SLATECAMP_INK.main}
       strokeWidth='5'
       strokeDasharray={RING_C}
       strokeDashoffset={RING_OFFSET}
@@ -162,10 +142,10 @@ const ReadinessRingSvg = ({
 /* ── Heatmap cell colors ── */
 
 const HEATMAP_COLORS = [
-  '#34C759', '#34C759', '#1f3055', '#FF3B30', '#34C759', '#64748B',
-  '#1f3055', '#34C759', '#34C759', '#1f3055', '#FF3B30', '#34C759',
-  '#64748B', '#FF3B30', '#1f3055', '#34C759', '#34C759', '#1f3055',
-  '#34C759', '#1f3055', '#64748B', '#FF3B30', '#1f3055', '#34C759',
+  SLATECAMP_SAGE.DEFAULT, SLATECAMP_SAGE.DEFAULT, SLATECAMP_INK.main, SLATECAMP_INK.main, SLATECAMP_SAGE.DEFAULT, SLATECAMP_INK.muted,
+  SLATECAMP_INK.main, SLATECAMP_SAGE.DEFAULT, SLATECAMP_SAGE.DEFAULT, SLATECAMP_INK.main, SLATECAMP_INK.main, SLATECAMP_SAGE.DEFAULT,
+  SLATECAMP_INK.muted, SLATECAMP_INK.main, SLATECAMP_INK.main, SLATECAMP_SAGE.DEFAULT, SLATECAMP_SAGE.DEFAULT, SLATECAMP_INK.main,
+  SLATECAMP_SAGE.DEFAULT, SLATECAMP_INK.main, SLATECAMP_INK.muted, SLATECAMP_INK.main, SLATECAMP_INK.main, SLATECAMP_SAGE.DEFAULT,
 ] as const
 
 /* ── Main Export ── */
@@ -184,22 +164,18 @@ export const BentoFeatureGrid = () => (
       {/* Top row: 3 cols, side cards span 2 rows */}
       <div className='grid grid-cols-1 gap-3 md:grid-cols-3 md:grid-rows-2'>
         {/* REVIEW MODE */}
-        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-2xl bg-[#1D1D1F] p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className="landing-reveal landing-delay-1 flex flex-col justify-between rounded-2xl p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]" style={{ backgroundColor: SLATECAMP_INK.main }}>
           <div>
-            <div className='flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/25'>
-                [ Review Mode ]
-              </span>
-              <Starburst className='h-4 w-4 text-[#1f3055]' />
+            <div className="flex items-center justify-between">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>[ Review Mode ]</span>
+              <span style={{ color: SLATECAMP_AMBER.DEFAULT }}><Starburst className="h-4 w-4" /></span>
             </div>
-            <h3 className='mt-12 text-[26px] font-semibold leading-tight tracking-tight text-white'>
+            <h3 className="mt-12 text-[26px] font-semibold leading-tight tracking-tight" style={{ color: SLATECAMP_PAPER.snow }}>
               Doomscroll Your Way
               <br />
               to Mastery
             </h3>
-            <p
-              className={`${serif.className} mt-2 text-[16px] italic leading-snug text-white/40`}
-            >
+            <p className={`${serif.className} mt-2 text-[16px] italic leading-snug`} style={{ color: 'rgba(255,255,255,0.4)' }}>
               Zero-pressure active recall. No timer. No analytics. Just you and
               the material.
             </p>
@@ -218,15 +194,13 @@ export const BentoFeatureGrid = () => (
 
         {/* STAT: 84% fail rate */}
         <div
-          className='landing-reveal landing-delay-2 flex flex-col justify-between rounded-2xl border border-[#1D1D1F]/[0.06] bg-white p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'
-          style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
+          className="landing-reveal landing-delay-2 flex flex-col justify-between rounded-2xl border p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1"
+          style={{ borderColor: SLATECAMP_BORDER.DEFAULT, backgroundColor: SLATECAMP_PAPER.snow, boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
         >
-          <Starburst className='h-4 w-4 text-[#1f3055]' />
-          <div className='mt-8'>
-            <span className='text-[72px] font-extrabold leading-none tracking-tighter text-[#1D1D1F]'>
-              84%
-            </span>
-            <p className='mt-3 max-w-[220px] text-[13px] leading-relaxed text-[#86868B]'>
+          <span style={{ color: SLATECAMP_AMBER.DEFAULT }}><Starburst className="h-4 w-4" /></span>
+          <div className="mt-8">
+            <span className="text-[72px] font-extrabold leading-none tracking-tighter" style={{ color: SLATECAMP_INK.main }}>84%</span>
+            <p className="mt-3 max-w-[220px] text-[13px] leading-relaxed" style={{ color: SLATECAMP_INK.subtle }}>
               of architecture examinees don&apos;t pass — but data-driven study
               can increase pass rates by 30%.
             </p>
@@ -234,22 +208,18 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* ANALYTICS */}
-        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-[#1f1f1d] p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className="landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]" style={{ backgroundColor: SLATECAMP_INK.main }}>
           <div>
-            <div className='flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/25'>
-                [ Analytics ]
-              </span>
-              <CircleArrow variant='dark' />
+            <div className="flex items-center justify-between">
+              <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>[ Analytics ]</span>
+              <CircleArrow variant="dark" />
             </div>
-            <h3 className='mt-12 text-[26px] font-semibold leading-tight tracking-tight text-white'>
+            <h3 className="mt-12 text-[26px] font-semibold leading-tight tracking-tight" style={{ color: SLATECAMP_PAPER.snow }}>
               Your Readiness,
               <br />
               Quantified
             </h3>
-            <p
-              className={`${serif.className} mt-2 text-[16px] italic leading-snug text-white/40`}
-            >
+            <p className={`${serif.className} mt-2 text-[16px] italic leading-snug`} style={{ color: 'rgba(255,255,255,0.4)' }}>
               Taxonomy heatmap shows exactly where you stand. Every node. Every
               weakness. No hiding.
             </p>
@@ -278,12 +248,10 @@ export const BentoFeatureGrid = () => (
 
         {/* QUOTE */}
         <div
-          className='landing-reveal landing-delay-4 flex flex-col justify-between rounded-2xl border border-[#1D1D1F]/[0.06] bg-white p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'
-          style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
+          className="landing-reveal landing-delay-4 flex flex-col justify-between rounded-2xl border p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2"
+          style={{ borderColor: SLATECAMP_BORDER.DEFAULT, backgroundColor: SLATECAMP_PAPER.snow, boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}
         >
-          <p
-            className={`${serif.className} text-[19px] italic leading-snug text-[#1D1D1F]`}
-          >
+          <p className={`${serif.className} text-[19px] italic leading-snug`} style={{ color: SLATECAMP_INK.main }}>
             &ldquo;Trust the camp, put in the reps, and we will eliminate the{' '}
             <span className='relative inline-block'>
               doubt.
@@ -305,7 +273,7 @@ export const BentoFeatureGrid = () => (
                   cy='20'
                   rx='47'
                   ry='17'
-                  stroke='#1f3055'
+                  stroke={SLATECAMP_INK.main}
                   strokeWidth='2'
                 />
               </svg>
@@ -321,22 +289,18 @@ export const BentoFeatureGrid = () => (
       {/* Bottom row: 3 equal columns */}
       <div className='mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3'>
         {/* 3D LAB */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-[#1f3055] p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
-          <div className='flex items-center justify-between'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight'>
-              3D Lab
-            </h3>
-            <Starburst className='h-5 w-5 text-white/50' />
+        <div className="landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl p-7 transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110" style={{ backgroundColor: SLATECAMP_INK.main, color: SLATECAMP_PAPER.snow }}>
+          <div className="flex items-center justify-between">
+            <h3 className="text-[22px] font-semibold leading-tight tracking-tight">3D Lab</h3>
+            <span style={{ color: 'rgba(255,255,255,0.5)' }}><Starburst className="h-5 w-5" /></span>
           </div>
-          <div className='mt-14'>
-            <p
-              className={`${serif.className} text-[17px] italic leading-snug text-white/80`}
-            >
+          <div className="mt-14">
+            <p className={`${serif.className} text-[17px] italic leading-snug`} style={{ color: 'rgba(255,255,255,0.8)' }}>
               Visual learning,
               <br />
               built different.
             </p>
-            <p className='mt-3 text-[12px] leading-relaxed text-white/50'>
+            <p className="mt-3 text-[12px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)' }}>
               WebGL-powered models. Parametric sandbox. Drag Floor Area Ratio —
               model responds in real time.
             </p>
@@ -348,20 +312,18 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* SESSIONS MODE */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-[#1D1D1F] p-7 transition-all duration-150 hover:-translate-y-0.5'>
-          <div className='flex items-center justify-between'>
-            <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/25'>
-              [ Sessions ]
-            </span>
-            <CircleArrow variant='dark' />
+        <div className="landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl p-7 transition-all duration-150 hover:-translate-y-0.5" style={{ backgroundColor: SLATECAMP_INK.main }}>
+          <div className="flex items-center justify-between">
+            <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>[ Sessions ]</span>
+            <CircleArrow variant="dark" />
           </div>
-          <div className='mt-10'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight text-white'>
+          <div className="mt-10">
+            <h3 className="text-[22px] font-semibold leading-tight tracking-tight" style={{ color: SLATECAMP_PAPER.snow }}>
               Every Answer
               <br />
               Tracked
             </h3>
-            <p className='mt-3 text-[13px] leading-relaxed text-white/35'>
+            <p className="mt-3 text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.35)' }}>
               Timed quizzes with full analytics. Track performance across
               domains. Watch your readiness score climb.
             </p>
@@ -373,17 +335,15 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI-ADAPTIVE */}
-        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-2xl bg-[#1D1D1F] p-7 transition-all duration-150 hover:-translate-y-0.5'>
-          <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/25'>
-            [ Bounded Intelligence ]
-          </span>
-          <div className='mt-10'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight text-white'>
+        <div className="landing-reveal landing-delay-6 flex flex-col justify-between rounded-2xl p-7 transition-all duration-150 hover:-translate-y-0.5" style={{ backgroundColor: SLATECAMP_INK.main }}>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: 'rgba(255,255,255,0.25)' }}>[ Bounded Intelligence ]</span>
+          <div className="mt-10">
+            <h3 className="text-[22px] font-semibold leading-tight tracking-tight" style={{ color: SLATECAMP_PAPER.snow }}>
               AI That Cites
               <br />
               Its Sources
             </h3>
-            <p className='mt-3 text-[13px] leading-relaxed text-white/35'>
+            <p className="mt-3 text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.35)' }}>
               Tethered to our verified database. Temperature 0.0. Every response
               links to its exact source. If it&apos;s not in the database, it
               says so.
@@ -396,16 +356,12 @@ export const BentoFeatureGrid = () => (
       </div>
 
       {/* Full-width analytics showcase */}
-      <div className='landing-reveal mt-3 rounded-2xl bg-[#1D1D1F] p-8'>
-        <div className='grid grid-cols-1 items-center gap-8 md:grid-cols-2'>
+      <div className="landing-reveal mt-3 rounded-2xl p-8" style={{ backgroundColor: SLATECAMP_INK.main }}>
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div>
-            <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-[#1f3055]'>
-              The Engine
-            </span>
-            <h3 className='mt-4 text-[28px] font-semibold leading-tight tracking-tight text-white'>
-              AI-Adaptive Learning
-            </h3>
-            <p className='mt-3 max-w-md text-[14px] leading-relaxed text-white/40'>
+            <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: SLATECAMP_AMBER.DEFAULT }}>The Engine</span>
+            <h3 className="mt-4 text-[28px] font-semibold leading-tight tracking-tight" style={{ color: SLATECAMP_PAPER.snow }}>AI-Adaptive Learning</h3>
+            <p className="mt-3 max-w-md text-[14px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.4)' }}>
               Item Response Theory adjusts question difficulty to your exact
               ability level. Spaced repetition schedules reviews at the
               mathematically optimal interval. Every question is the right
@@ -417,11 +373,9 @@ export const BentoFeatureGrid = () => (
               <Pill variant='dark'>Lucky Guess Detector</Pill>
             </div>
           </div>
-          <div className='rounded-xl border border-white/[0.06] bg-white/[0.02] p-6'>
-            <div className='mb-4 flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.15em] uppercase text-white/30'>
-                Subject Mastery
-              </span>
+          <div className="rounded-xl border p-6" style={{ borderColor: 'rgba(255,255,255,0.06)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+            <div className="mb-4 flex items-center justify-between">
+              <span className="font-mono text-[10px] tracking-[0.15em] uppercase" style={{ color: 'rgba(255,255,255,0.3)' }}>Subject Mastery</span>
               <ReadinessRingSvg size='h-16 w-16' />
             </div>
             <MasteryBars />

@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
+import { SLATECAMP_INK, SLATECAMP_BORDER, SLATECAMP_AMBER, hexToRgba } from '@/lib/constants'
 
 /* ── Noise texture overlay ── */
 
@@ -18,13 +19,12 @@ export const NoiseOverlay = ({ opacity = 0.03 }: { opacity?: number }) => (
 
 export const DottedGridOverlay = () => (
   <div
-    className='pointer-events-none absolute inset-0'
+    className="pointer-events-none absolute inset-0"
     style={{
-      backgroundImage:
-        'radial-gradient(circle at center, rgba(29,29,31,0.07) 1px, transparent 1px)',
+      backgroundImage: `radial-gradient(circle at center, ${hexToRgba(SLATECAMP_INK.main, 0.07)} 1px, transparent 1px)`,
       backgroundSize: '24px 24px',
     }}
-    aria-hidden='true'
+    aria-hidden="true"
   />
 )
 
@@ -49,19 +49,18 @@ export const Pill = ({
 }: {
   children: React.ReactNode
   variant?: 'light' | 'dark'
-}) => {
-  const cls =
-    variant === 'dark'
-      ? 'border-white/10 text-white/50'
-      : 'border-[#1D1D1F]/10 text-[#1D1D1F]/50'
-  return (
-    <span
-      className={`inline-block rounded-full border px-3 py-1 text-[11px] font-medium tracking-wide uppercase ${cls}`}
-    >
-      {children}
-    </span>
-  )
-}
+}) => (
+  <span
+    className="inline-block rounded-full border px-3 py-1 text-[11px] font-medium tracking-wide uppercase"
+    style={
+      variant === 'dark'
+        ? { borderColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.5)' }
+        : { borderColor: hexToRgba(SLATECAMP_INK.main, 0.1), color: hexToRgba(SLATECAMP_INK.main, 0.5) }
+    }
+  >
+    {children}
+  </span>
+)
 
 /* ── Readiness score dial (hero conversion card) ── */
 
@@ -90,7 +89,7 @@ export const ReadinessDial = ({
             cy={44}
             r={radius}
             fill='none'
-            stroke='var(--color-ash)'
+            stroke={SLATECAMP_BORDER.DEFAULT}
             strokeWidth={6}
           />
           <circle
@@ -98,7 +97,7 @@ export const ReadinessDial = ({
             cy={44}
             r={radius}
             fill='none'
-            stroke='var(--color-signal-amber)'
+            stroke={SLATECAMP_AMBER.DEFAULT}
             strokeWidth={6}
             strokeLinecap='round'
             strokeDasharray={circumference}
@@ -106,11 +105,11 @@ export const ReadinessDial = ({
             className='transition-[stroke-dashoffset] duration-500'
           />
         </svg>
-        <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold text-charcoal'>
+        <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold' style={{ color: SLATECAMP_INK.main }}>
           {value}%
         </span>
       </div>
-      <span className='mt-1 text-[11px] font-medium text-graphite'>
+      <span className='mt-1 text-[11px] font-medium' style={{ color: SLATECAMP_INK.muted }}>
         {label}
       </span>
     </div>
@@ -119,21 +118,16 @@ export const ReadinessDial = ({
 
 /* ── Arrow circle button ── */
 
-export const CircleArrow = ({
-  variant = 'dark',
-}: {
-  variant?: 'light' | 'dark'
-}) => {
-  const cls =
-    variant === 'dark'
-      ? 'border-white/10 text-white/40 hover:bg-white/5 hover:text-white/70'
-      : 'border-[#1D1D1F]/10 text-[#1D1D1F]/40 hover:bg-[#1D1D1F]/5 hover:text-[#1D1D1F]/70'
-  return (
-    <span
-      className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors duration-150 ${cls}`}
-      aria-hidden='true'
-    >
-      <ArrowUpRight size={14} strokeWidth={1.5} />
-    </span>
-  )
-}
+export const CircleArrow = ({ variant = 'dark' }: { variant?: 'light' | 'dark' }) => (
+  <span
+    className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors duration-150 hover:opacity-100"
+    style={
+      variant === 'dark'
+        ? { borderColor: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.4)' }
+        : { borderColor: hexToRgba(SLATECAMP_INK.main, 0.1), color: hexToRgba(SLATECAMP_INK.main, 0.4) }
+    }
+    aria-hidden="true"
+  >
+    <ArrowUpRight size={14} strokeWidth={1.5} />
+  </span>
+)

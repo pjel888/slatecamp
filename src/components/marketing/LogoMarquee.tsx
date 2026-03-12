@@ -1,3 +1,5 @@
+import { SLATECAMP_INK, SLATECAMP_BORDER } from '@/lib/constants'
+
 const PARTNERS = [
   // --- Original Suppliers & Firms ---
   { name: 'BOYSEN', className: 'tracking-[0.25em] text-[13px] font-bold' },
@@ -46,29 +48,21 @@ const PARTNERS = [
   }, // Academic serif, classic weight
 ]
 
-export function LogoMarquee({ dark = false }: { dark?: boolean } = {}) {
-  /*
-   * Each "half" of the track needs to be wider than the widest viewport
-   * (~1920px) so there's never a visible gap. Repeating 3x per half
-   * gives ~3600px of content. The -50% animation shifts exactly one half.
-   */
+export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
   const half = [...PARTNERS, ...PARTNERS, ...PARTNERS]
   const logos = [...half, ...half]
-
   return (
     <section
-      aria-label='Trusted by leading architecture brands'
-      className={`marquee-container overflow-hidden border-y py-2 ${
-        dark ? 'border-white/[0.06]' : 'border-[#1D1D1F]/[0.06]'
-      }`}
+      aria-label="Trusted by leading architecture brands"
+      className="marquee-container overflow-hidden border-y py-2"
+      style={{ borderColor: dark ? 'rgba(255,255,255,0.06)' : SLATECAMP_BORDER.DEFAULT }}
     >
-      <div className='marquee-track flex items-center'>
+      <div className="marquee-track flex items-center">
         {logos.map((partner, i) => (
           <span
             key={`${partner.name}-${i}`}
-            className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${
-              dark ? 'text-white' : 'text-[#1D1D1F]'
-            } ${partner.className}`}
+            className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className}`}
+            style={{ color: dark ? '#fff' : SLATECAMP_INK.main }}
           >
             {partner.name}
           </span>

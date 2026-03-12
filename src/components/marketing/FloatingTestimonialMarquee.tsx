@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
+import { SLATECAMP_PAPER, SLATECAMP_AMBER, SLATECAMP_INK, hexToRgba } from '@/lib/constants'
 
 /* ── Testimonial Data ── */
 
@@ -227,16 +228,17 @@ function generateParticles(): ParticleConfig[] {
 /* ── Stars (micro-sized) ── */
 function MicroStars() {
   return (
-    <div className='flex gap-px'>
+    <div className="flex gap-px">
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className='h-1.5 w-1.5 text-amber-400/70'
-          viewBox='0 0 20 20'
-          fill='currentColor'
-          aria-hidden='true'
+          className="h-1.5 w-1.5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          style={{ color: hexToRgba(SLATECAMP_AMBER.DEFAULT, 0.7) }}
         >
-          <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ))}
     </div>
@@ -294,26 +296,34 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
           opacity: { duration: 0.15 },
           default: { duration: 2, delay: Math.abs(config.delay) * 0.1 },
         }}
-        className='h-20 w-64 cursor-grab select-none overflow-hidden rounded-xl border border-white/30 bg-white/50 px-3 py-2.5 shadow-sm backdrop-blur-md'
-        style={{ touchAction: 'none' }}
+        className="h-20 w-64 cursor-grab select-none overflow-hidden rounded-xl border px-3 py-2.5 shadow-sm backdrop-blur-md"
+        style={{
+          touchAction: 'none',
+          borderColor: 'rgba(255,255,255,0.3)',
+          backgroundColor: 'rgba(255,255,255,0.5)',
+        }}
       >
-        <div className='flex h-full items-start gap-2'>
-          {/* Tiny avatar */}
-          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-amber-50 to-orange-100 text-[8px] font-bold text-amber-600/80'>
+        <div className="flex h-full items-start gap-2">
+          <div
+            className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[8px] font-bold"
+            style={{
+              background: `linear-gradient(to bottom right, ${SLATECAMP_PAPER.warm}, ${hexToRgba(SLATECAMP_AMBER.DEFAULT, 0.2)})`,
+              color: hexToRgba(SLATECAMP_AMBER.DEFAULT, 0.8),
+            }}
+          >
             {config.testimonial.avatar}
           </div>
-          {/* Content */}
-          <div className='min-w-0 flex-1'>
-            <div className='flex items-center gap-1.5'>
-              <span className='text-[10px] font-semibold leading-none text-slate-700/80'>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[10px] font-semibold leading-none" style={{ color: hexToRgba(SLATECAMP_INK.main, 0.8) }}>
                 {config.testimonial.name}
               </span>
               <MicroStars />
             </div>
-            <p className='text-[8px] leading-none text-slate-400'>
+            <p className="text-[8px] leading-none" style={{ color: SLATECAMP_INK.subtle }}>
               {config.testimonial.profession}
             </p>
-            <p className='mt-1 line-clamp-2 text-[9px] leading-snug text-slate-500/70'>
+            <p className="mt-1 line-clamp-2 text-[9px] leading-snug" style={{ color: hexToRgba(SLATECAMP_INK.muted, 0.7) }}>
               {config.testimonial.text}
             </p>
           </div>
