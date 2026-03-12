@@ -612,7 +612,7 @@ export default async function LandingPage() {
                 </div>
 
                 {/* Card 1: Conversion hook (front center on desktop) */}
-                <div className='order-1 z-20 w-full max-w-[300px] rounded-xl border border-charcoal/10 bg-white p-6 shadow-2xl md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2'>
+                <div className='order-1 z-20 w-full max-w-[300px] rounded-xl border border-charcoal/10 bg-white p-6 shadow-2xl md:absolute md:left-1/2 md:top-[calc(50%+20px)] md:-translate-x-1/2 md:-translate-y-1/2'>
                   <h3 className='text-lg font-bold tracking-tight text-charcoal'>
                     Are you actually ready?
                   </h3>

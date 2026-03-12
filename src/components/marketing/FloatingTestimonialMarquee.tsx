@@ -172,7 +172,7 @@ function generateParticles(): ParticleConfig[] {
   const spawnPoints: [number, number][] = [
     [3, 12], // top-left, behind headline
     [72, 8], // top-right area
-    [15, 55], // mid-left, behind CTA
+    [0, 55], // mid-left, behind CTA
     [85, 45], // right side
     [45, 15], // center-top gap
     [60, 65], // center-right low
