@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { createClient } from '@/lib/supabase/server'
+import { hasAuthCookie } from '@/lib/supabase/server'
 import { HeroSection } from '@/components/marketing/HeroSection'
 import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
@@ -54,16 +54,8 @@ export const metadata: Metadata = {
 }
 
 export default async function LandingPage() {
-  let isLoggedIn = false
-  try {
-    const supabase = await createClient()
-    const {
-      data: { user },
-    } = await supabase.auth.getUser()
-    isLoggedIn = !!user
-  } catch {
-    isLoggedIn = false
-  }
+  const hasSessionCookie = await hasAuthCookie()
+  const isLoggedIn = hasSessionCookie
 
   const ctaHref = isLoggedIn ? ROUTES.DASHBOARD : ROUTES.REGISTER
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Join the Camp — Free'
@@ -102,10 +94,9 @@ export default async function LandingPage() {
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>
-              <Starburst
-                className='h-4 w-4'
-                style={{ color: SLATECAMP_AMBER.DEFAULT }}
-              />
+              <span style={{ color: SLATECAMP_AMBER.DEFAULT }}>
+                <Starburst className='h-4 w-4' />
+              </span>
               <h2
                 id='testimonials-heading'
                 className='font-mono text-[11px] tracking-[0.2em] uppercase'
