@@ -11,7 +11,14 @@ import { PhilosophySection } from '@/components/marketing/PhilosophySection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 import { SocialProofBar } from '@/components/marketing/SocialProofBar'
 import { Starburst } from '@/components/marketing/LandingPrimitives'
-import { ROUTES, siteConfig } from '@/lib/constants'
+import {
+  ROUTES,
+  siteConfig,
+  SLATECAMP_PAPER,
+  SLATECAMP_BORDER,
+  SLATECAMP_AMBER,
+  SLATECAMP_INK,
+} from '@/lib/constants'
 
 /* ── SEO Metadata ── */
 
@@ -62,7 +69,11 @@ export default async function LandingPage() {
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Join the Camp — Free'
 
   return (
-    <div id='top' className='min-h-screen bg-[#F5F4F0]'>
+    <div
+      id='top'
+      className='min-h-screen'
+      style={{ backgroundColor: SLATECAMP_PAPER.DEFAULT }}
+    >
       {/* ────────────────────── NAVIGATION ────────────────────── */}
       <MarketingNav activeRoute='/' logoScrollsToTop />
 
@@ -86,14 +97,19 @@ export default async function LandingPage() {
         {/* ────────────────────── TESTIMONIALS ────────────────────── */}
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t border-[#1D1D1F]/[0.06] px-6 py-24'
+          className='border-t px-6 py-24'
+          style={{ borderColor: SLATECAMP_BORDER.DEFAULT }}
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>
-              <Starburst className='h-4 w-4 text-[#1f3055]' />
+              <Starburst
+                className='h-4 w-4'
+                style={{ color: SLATECAMP_AMBER.DEFAULT }}
+              />
               <h2
                 id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#86868B]'
+                className='font-mono text-[11px] tracking-[0.2em] uppercase'
+                style={{ color: SLATECAMP_INK.subtle }}
               >
                 What Students Say
               </h2>
