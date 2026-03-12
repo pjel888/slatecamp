@@ -58,7 +58,7 @@ export function LogoMarquee({ dark = false }: { dark?: boolean } = {}) {
   return (
     <section
       aria-label='Trusted by leading architecture brands'
-      className={`marquee-container overflow-hidden border-y py-6 ${
+      className={`marquee-container overflow-hidden border-y py-2 ${
         dark ? 'border-white/[0.06]' : 'border-[#1D1D1F]/[0.06]'
       }`}
     >

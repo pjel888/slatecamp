@@ -3,10 +3,12 @@ import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { Instrument_Serif } from 'next/font/google'
 import { ArrowUpRight, ChevronDown } from 'lucide-react'
+import { HeroHeadline } from '@/components/marketing/HeroHeadline'
 import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
 import { LogoMarquee } from '@/components/marketing/LogoMarquee'
 import { TestimonialShowcase } from '@/components/marketing/TestimonialShowcase'
+import { FloatingTestimonialMarquee } from '@/components/marketing/FloatingTestimonialMarquee'
 import { ROUTES, siteConfig } from '@/lib/constants'
 
 const serif = Instrument_Serif({
@@ -65,6 +67,68 @@ function NoiseOverlay({ opacity = 0.03 }: { opacity?: number }) {
       }}
       aria-hidden='true'
     />
+  )
+}
+
+/** Subtle dotted grid overlay for hero/backgrounds */
+function DottedGridOverlay() {
+  return (
+    <div
+      className='pointer-events-none absolute inset-0'
+      style={{
+        backgroundImage:
+          'radial-gradient(circle at center, rgba(29,29,31,0.07) 1px, transparent 1px)',
+        backgroundSize: '24px 24px',
+      }}
+      aria-hidden='true'
+    />
+  )
+}
+
+/** Readiness score dial for hero conversion card */
+function ReadinessDial({ value, label }: { value: number; label: string }) {
+  const radius = 36
+  const circumference = 2 * Math.PI * radius
+  const strokeDashoffset = circumference - (value / 100) * circumference
+  return (
+    <div className='flex flex-col items-center'>
+      <div className='relative h-[88px] w-[88px]'>
+        <svg
+          className='-rotate-90'
+          width={88}
+          height={88}
+          viewBox='0 0 88 88'
+          aria-hidden='true'
+        >
+          <circle
+            cx={44}
+            cy={44}
+            r={radius}
+            fill='none'
+            stroke='var(--color-ash)'
+            strokeWidth={6}
+          />
+          <circle
+            cx={44}
+            cy={44}
+            r={radius}
+            fill='none'
+            stroke='var(--color-signal-amber)'
+            strokeWidth={6}
+            strokeLinecap='round'
+            strokeDasharray={circumference}
+            strokeDashoffset={strokeDashoffset}
+            className='transition-[stroke-dashoffset] duration-500'
+          />
+        </svg>
+        <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold text-charcoal'>
+          {value}%
+        </span>
+      </div>
+      <span className='mt-1 text-[11px] font-medium text-graphite'>
+        {label}
+      </span>
+    </div>
   )
 }
 
@@ -311,10 +375,10 @@ function CircleArrow({ variant = 'dark' }: { variant?: 'light' | 'dark' }) {
 /** Dashboard mockup peeking from bottom of hero — scroll cue */
 function DashboardPeek() {
   return (
-    <div className='relative mx-auto w-full max-w-[900px] pt-6'>
+    <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
       <div
         className='relative overflow-hidden rounded-t-2xl border border-b-0 border-[#1D1D1F]/[0.08] bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'
-        style={{ height: '120px' }}
+        style={{ height: '140px' }}
       >
         {/* Fake window chrome */}
         <div className='flex items-center gap-1.5 border-b border-[#1D1D1F]/[0.06] bg-[#FAFAF9] px-4 py-2.5'>
@@ -385,7 +449,7 @@ export default async function LandingPage() {
   }
 
   const ctaHref = isLoggedIn ? ROUTES.DASHBOARD : ROUTES.REGISTER
-  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Enter the Camp — Free'
+  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Join the Camp — Free'
 
   return (
     <div id='top' className='min-h-screen bg-[#F5F4F0]'>
@@ -396,114 +460,181 @@ export default async function LandingPage() {
         {/* ────────────────────── HERO ────────────────────── */}
         <section
           aria-label='Hero'
-          className='relative flex flex-col overflow-hidden px-6 pb-0 pt-24 md:pt-26'
+          className='relative flex flex-col overflow-hidden px-6 pb-0 pt-18 md:pt-20'
         >
           {/* Subtle warm gradient orb */}
           <div
-            className='landing-orb pointer-events-none absolute right-[-10%] top-[-15%] h-[50vh] w-[50vh] rounded-full md:h-[45vw] md:w-[45vw]'
+            className='landing-orb pointer-events-none absolute right-[-10%] top-[-15%] h-[50vh] w-[50vh] rounded-full md:h-[45vw] md:w-[45vw] '
             style={{
               background:
-                'radial-gradient(circle at 40% 45%, rgba(237,128,8,0.12) 0%, rgba(237,128,8,0.04) 35%, transparent 60%)',
-              filter: 'blur(80px)',
+                'radial-gradient(circle at 100% -20%, rgba(237,128,8,0.9) 0%, rgba(237,128,8,0.5) 35%, transparent 85%)',
+              filter: 'blur(30px)',
             }}
             aria-hidden='true'
           />
-          <NoiseOverlay opacity={0.02} />
+          <DottedGridOverlay />
+          <NoiseOverlay opacity={0.04} />
+
+          {/* Floating testimonial cloud — organic particles behind hero content */}
+          <FloatingTestimonialMarquee />
 
           {/* Hero Content */}
-          <div className='relative z-10 mx-auto w-full max-w-[1200px] '>
-            <div className='grid grid-cols-1 items-end gap-8 md:grid-cols-12'>
+          <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
+            <div className='relative grid grid-cols-1 items-start gap-8 md:grid-cols-12 h-[350px]'>
               {/* Left: Giant headline */}
-              <div className='md:col-span-7'>
+              <div className='md:col-span-7  h-full flex flex-col justify-start'>
                 <div className='landing-reveal flex items-center gap-3'>
                   <Starburst className='h-4 w-4 text-[#ED8008]' />
-                  <span className='font-mono text-[11px] tracking-[0.25em] uppercase text-[#ED8008]'>
+                  <span className='font-mono text-[12px] tracking-[0.25em] font-bold uppercase text-[#ED8008]'>
                     From first year to board exam
                   </span>
                 </div>
 
-                <h1 className='landing-reveal landing-delay-1 mt-6 text-[clamp(3rem,8vw,6.5rem)] font-bold leading-[0.92] tracking-[-0.03em] text-[#1D1D1F]'>
-                  Know you&apos;ll
-                  <br />
-                  pass
-                  {/* <span className='relative inline-block'>
-                    pass
-                    <svg
-                      className='pointer-events-none absolute'
-                      style={{
-                        left: '-6px',
-                        top: '-3px',
-                        width: 'calc(100% + 48px)',
-                        height: 'calc(100% + 8px)',
-                      }}
-                      viewBox='0 0 100 40'
-                      preserveAspectRatio='none'
-                      fill='none'
-                      aria-hidden='true'
-                    >
-                      <path
-                        d='M6 22 C 18 5, 82 3, 94 18 C 96 22, 92 32, 50 35 C 20 34, 8 30, 6 24 Z'
-                        stroke='#ED8008'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        fill='none'
-                        transform='rotate(-3 50 20)'
-                      />
-                    </svg>
-                  </span> */}
-                  <span className='text-[#ED8008]'>.</span>
-                </h1>
+                <HeroHeadline />
 
-                <div>
-                  {/* Replace exam anxiety with data-driven certainty. Stop relying
-                  on scattered PDFs and blind memorization. SlateCamp is the
-                  unified staging ground that maps your syllabus, tests your
-                  weaknesses, and exposes your blind spots before test day. */}
-                  <p className='landing-reveal landing-delay-2 mt-6 max-w-lg  text-sm leading-relaxed text-[#6E6E73]'>
-                    Most reviewees walk into the exam hoping they studied the
-                    right things. <br />{' '}
-                  </p>
-                  <p className='text-md font-bold'>
-                    SlateCamp users walk in knowing.
-                  </p>
+                <div className='flex flex-col h-full justify-between  mb-4'>
+                  <div>
+                    <p className='landing-reveal landing-delay-2 mt-6 max-w-lg  text-sm leading-relaxed text-[#6E6E73]'>
+                      Most reviewees walk into the exam hoping they studied the
+                      right things. <br />{' '}
+                    </p>
+                    <p className='text-md font-bold'>
+                      SlateCamp users walk in knowing.
+                    </p>
+                  </div>
+
+                  <div className='landing-reveal landing-delay-4 mt-8 flex flex-col items-start justify-start gap-3   '>
+                    <Link
+                      href={ctaHref}
+                      className='rounded-full bg-[#ED8008] px-7 py-3 text-[15px] font-medium text-white transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED8008] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F4F0]'
+                    >
+                      {ctaLabel}
+                    </Link>
+                    <p className='landing-reveal landing-delay-5  flex justify-start font-semibold text-[12px] text-[#755841]'>
+                      Free forever to start &middot; No credit card required
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Right: Description + CTA */}
-              <div className='md:col-span-5 md:pb-2'>
-                {/* <p
-                  className={`landing-reveal landing-delay-3 ${serif.className} max-w-sm text-[19px] italic leading-relaxed text-[#6E6E73]`}
+              {/* Right: Stacked Cards */}
+              <div
+                id='hero-right'
+                className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:min-h-[380px] md:flex-row md:items-stretch md:justify-center md:gap-0 md:col-span-5'
+              >
+                {/* Card 2: Roadmap (back left on desktop) */}
+                <div
+                  className='order-2 w-full max-w-[280px] rounded-xl border border-charcoal/10 bg-white p-5 shadow-2xl transition-all duration-300 md:absolute md:left-2 md:top-2 md:order-none md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2'
+                  aria-hidden='true'
                 >
-                  Stop re-reading. Start remembering. AI-adaptive test prep that
-                  adjusts to your ability in real-time.
-                </p> */}
-
-                <div className='landing-reveal landing-delay-4 mt-8 flex flex-wrap items-center gap-3'>
-                  <Link
-                    href={ctaHref}
-                    className='rounded-full bg-[#ED8008] px-7 py-3 text-[15px] font-medium text-white transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED8008] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F4F0]'
-                  >
-                    {ctaLabel}
-                  </Link>
-                  {!isLoggedIn && (
-                    <Link
-                      href={ROUTES.LOGIN}
-                      className='rounded-full border border-[#1D1D1F]/12 px-7 py-3 text-[15px] font-medium text-[#6E6E73] transition-colors duration-150 hover:bg-[#1D1D1F]/5 hover:text-[#1D1D1F] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D1D1F]/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F4F0]'
-                    >
-                      I have an account
-                    </Link>
-                  )}
+                  <p className='mb-3 text-[11px] font-semibold uppercase tracking-wider text-graphite'>
+                    Supported exams
+                  </p>
+                  <ul className='space-y-2.5'>
+                    <li className='flex items-center justify-between gap-2'>
+                      <span className='text-sm font-medium text-charcoal'>
+                        Architecture (ALE)
+                      </span>
+                      <span className='inline-flex items-center gap-1 rounded-full bg-signal-green/15 px-2 py-0.5 text-[10px] font-semibold text-signal-green'>
+                        <span
+                          className='h-1.5 w-1.5 rounded-full bg-signal-green'
+                          aria-hidden
+                        />
+                        Live
+                      </span>
+                    </li>
+                    <li className='flex items-center justify-between gap-2'>
+                      <span className='text-sm text-graphite'>
+                        Interior Design
+                      </span>
+                      <span className='text-[10px] text-slate'>
+                        In development
+                      </span>
+                    </li>
+                    <li className='flex items-center justify-between gap-2'>
+                      <span className='text-sm text-graphite'>
+                        Civil Engineering
+                      </span>
+                      <span className='text-[10px] text-slate'>Waitlist</span>
+                    </li>
+                    <li className='flex items-center justify-between gap-2'>
+                      <span className='text-sm text-graphite'>
+                        Nursing (PNLE)
+                      </span>
+                      <span className='text-[10px] text-slate'>Upcoming</span>
+                    </li>
+                  </ul>
                 </div>
 
-                <p className='landing-reveal landing-delay-5 mt-5 text-[12px] text-[#AEAEB2]'>
-                  Free forever to start &middot; No credit card required
-                </p>
+                {/* Card 3: Question mockup (back right on desktop) */}
+                <div
+                  className='order-3 w-full max-w-[280px] rounded-xl border border-charcoal/10 bg-white p-5 shadow-2xl transition-all duration-300 md:absolute md:right-2 md:top-2 md:order-none md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-2'
+                  aria-hidden='true'
+                >
+                  <span className='mb-2 inline-block rounded bg-charcoal/8 px-2 py-0.5 text-[10px] font-medium text-charcoal'>
+                    Building Technology
+                  </span>
+                  <p className='mb-3 text-[12px] leading-snug text-charcoal'>
+                    What is the minimum required distance of a septic tank from
+                    a water distribution line under PD 1096?
+                  </p>
+                  <div className='space-y-1.5'>
+                    {[
+                      { label: '1.5 m', state: 'incorrect' as const },
+                      { label: '3.0 m', state: 'correct' as const },
+                      { label: '2.0 m', state: 'neutral' as const },
+                      { label: '4.5 m', state: 'neutral' as const },
+                    ].map((opt) => (
+                      <div
+                        key={opt.label}
+                        className={`flex items-center gap-2 rounded-md border px-2.5 py-1.5 text-[11px] ${
+                          opt.state === 'correct'
+                            ? 'border-signal-green/40 bg-signal-green/10 text-charcoal'
+                            : opt.state === 'incorrect'
+                              ? 'border-signal-red/30 bg-signal-red/5 text-charcoal'
+                              : 'border-charcoal/10 bg-transparent text-charcoal'
+                        }`}
+                      >
+                        <span
+                          className={`h-2 w-2 shrink-0 rounded-full ${
+                            opt.state === 'correct'
+                              ? 'bg-signal-green'
+                              : opt.state === 'incorrect'
+                                ? 'bg-signal-red'
+                                : 'bg-charcoal/30'
+                          }`}
+                          aria-hidden
+                        />
+                        {opt.label}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Card 1: Conversion hook (front center on desktop) */}
+                <div className='order-1 z-20 w-full max-w-[300px] rounded-xl border border-charcoal/10 bg-white p-6 shadow-2xl md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2'>
+                  <h3 className='text-lg font-bold tracking-tight text-charcoal'>
+                    Are you actually ready?
+                  </h3>
+                  <p className='mt-2 text-[13px] leading-snug text-graphite'>
+                    The board exam is unforgiving. Stop guessing and see exactly
+                    where you stand today.
+                  </p>
+                  <div className='mt-4 flex flex-col items-center gap-2'>
+                    <ReadinessDial value={64} label='Needs Work' />
+                    <Link
+                      href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
+                      className='mt-2 w-full rounded-full bg-signal-amber px-5 py-2.5 text-center text-[14px] font-semibold text-white transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal-amber focus-visible:ring-offset-2'
+                    >
+                      Get Your Score
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Stats Bar */}
-            <div className='landing-reveal landing-delay-6 mt-6 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#1D1D1F]/[0.06] pt-3'>
+            <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#1D1D1F]/[0.06] pt-3'>
               {[
                 '2,400+ verified questions',
                 'Built for ALE & ARE',
@@ -633,7 +764,7 @@ export default async function LandingPage() {
               </div>
 
               {/* ANALYTICS — dark product window with heatmap + ring */}
-              <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-[#1D1D1F] p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+              <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-[#1f1f1d] p-7 transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
                 <div>
                   <div className='flex items-center justify-between'>
                     <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/25'>
@@ -1069,7 +1200,7 @@ export default async function LandingPage() {
                 href={ctaHref}
                 className='mt-10 inline-flex rounded-full bg-[#ED8008] px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED8008] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1D1D1F]'
               >
-                {isLoggedIn ? 'Go to Dashboard' : 'Enter the Camp — Free'}
+                {ctaLabel}
               </Link>
             </div>
           </div>

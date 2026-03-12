@@ -1,23 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "*.supabase.co",
+        protocol: 'https',
+        hostname: '*.supabase.co',
       },
     ],
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: "50mb",
+      bodySizeLimit: '50mb',
     },
   },
-  serverExternalPackages: ["payrex-node"],
+  serverExternalPackages: ['payrex-node'],
   turbopack: {
     root: __dirname,
   },
-};
+  allowedDevOrigins: ['http://localhost:3000'],
+}
 
-export default nextConfig;
+export default nextConfig
