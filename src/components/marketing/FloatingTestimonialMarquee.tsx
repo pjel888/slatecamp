@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 /* ── Testimonial Data ── */
 
@@ -170,15 +170,15 @@ function generateParticles(): ParticleConfig[] {
   // Hand-tuned positions to avoid clustering and stay clear of key UI zones
   // Each position is [x%, y%] across the hero section
   const spawnPoints: [number, number][] = [
-    [3, 12], // top-left, behind headline
+    [45, 12], // top-left, behind headline
     [72, 8], // top-right area
     [0, 55], // mid-left, behind CTA
     [85, 45], // right side
-    [45, 15], // center-top gap
-    [60, 65], // center-right low
-    [25, 35], // left of center
+    [45, 50], // center-top gap
+    [80, 65], // center-right low
+    [25, 40], // left of center
     [90, 25], // far right
-    [5, 72], // lower-left corner
+    [60, 80], // mid-center
     // [20, 80], // lower-left, slightly right
     // [38, 75], // lower center-left
   ]
@@ -326,7 +326,12 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
 /* ── Main Export ── */
 
 export function FloatingTestimonialMarquee() {
+  const [mounted, setMounted] = useState(false)
   const particles = useMemo(() => generateParticles(), [])
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   return (
     <div
@@ -334,11 +339,12 @@ export function FloatingTestimonialMarquee() {
       aria-label='Student testimonials'
       role='region'
     >
-      {particles.map((p) => (
-        <div key={p.testimonial.id} className='pointer-events-auto'>
-          <FloatingParticle config={p} />
-        </div>
-      ))}
+      {mounted &&
+        particles.map((p) => (
+          <div key={p.testimonial.id} className='pointer-events-auto'>
+            <FloatingParticle config={p} />
+          </div>
+        ))}
     </div>
   )
 }
