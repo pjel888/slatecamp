@@ -13,7 +13,7 @@ Before writing a single component, understand what SlateCamp is at its core.
 
 **The one-line promise:** *Trust the camp, put in the reps, and we will eliminate the doubt.*
 
-**The tagline:** *Know you'll pass.*
+**The tagline:** *Know you'll win.*
 
 ### 0.1 Brand Archetype
 
@@ -307,5 +307,5 @@ We do not build for the pitch deck. We do not build for design awards. We build 
 
 ---
 
-*SlateCamp — Know you'll pass.*
+*SlateCamp — Know you'll win.*
 *v4.0 · Unified Engine Model · Internal Reference*
