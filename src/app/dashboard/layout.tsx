@@ -20,6 +20,7 @@ import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import type { UserTier } from '@/types/app'
 import type { BoardExam, ExamProfile, Subject } from '@/types/app'
 import { cn } from '@/lib/utils'
+import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export const dynamic = 'force-dynamic'
 
@@ -127,7 +128,7 @@ export default async function DashboardLayout({
                 <Navbar isAdmin={isAdmin} />
                 <DashboardHeader />
                 <main className='flex-1 overflow-y-auto pb-20 lg:pb-0'>
-                  <div className={cn('h-full ', 'p-4 lg:p-8')}>{children}</div>
+                  <SharedPageLayout> {children}</SharedPageLayout>
                 </main>
                 <BottomNav />
               </BreadcrumbProvider>

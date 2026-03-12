@@ -12,7 +12,7 @@ import {
 } from '@/lib/constants/colors'
 
 const H1_CLASS =
-  'landing-reveal landing-delay-1 mt-2 text-[clamp(3rem,8vw,5.4rem)] text-md font-bold leading-[0.92] tracking-[-0.03em]'
+  'landing-reveal landing-delay-1  text-[clamp(3rem,8vw,5.4rem)] text-md font-bold leading-[0.92] tracking-[-0.03em]'
 
 export const HeroHeadline = () => {
   const knowRef = useRef<HTMLSpanElement>(null)

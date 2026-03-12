@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
-import { siteConfig } from '@/lib/constants/site'
 import {
   SLATECAMP_COBALT,
   SLATECAMP_INK,
   SLATECAMP_PAPER,
   hexToRgba,
 } from '@/lib/constants'
+import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
 
 const NAV_LINKS = [
   { href: ROUTES.PRICING, label: 'Pricing' },
@@ -15,7 +14,7 @@ const NAV_LINKS = [
   { href: ROUTES.CONTACT, label: 'Contact' },
 ] as const
 
-export const MarketingNav = async ({
+export const MarketingNav = ({
   activeRoute = '/',
   logoScrollsToTop = false,
   variant = 'light',
@@ -25,15 +24,6 @@ export const MarketingNav = async ({
   variant?: 'light' | 'dark'
 }) => {
   const isDark = variant === 'dark'
-  let isLoggedIn = false
-  try {
-    const {
-      data: { user },
-    } = await getUser()
-    isLoggedIn = !!user
-  } catch {
-    isLoggedIn = false
-  }
 
   const linkStyle = (href: string) =>
     activeRoute === href
@@ -57,20 +47,12 @@ export const MarketingNav = async ({
     >
       <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
         {logoScrollsToTop ? (
-          <a
-            href='#top'
-            className='text-[15px]  tracking-tight font-bold'
-            style={{ color: isDark ? '#fff' : SLATECAMP_COBALT.steelBlue }}
-          >
-            {siteConfig.name}
+          <a href='#top' className='inline-flex items-center'>
+            <SlateCampLogo size='md' variant={isDark ? 'inverted' : 'default'} />
           </a>
         ) : (
-          <Link
-            href='/'
-            className='text-[15px] font-semibold tracking-tight'
-            style={{ color: isDark ? '#fff' : SLATECAMP_INK.main }}
-          >
-            {siteConfig.name}
+          <Link href='/' className='inline-flex items-center'>
+            <SlateCampLogo size='md' variant={isDark ? 'inverted' : 'default'} />
           </Link>
         )}
 
@@ -128,37 +110,22 @@ export const MarketingNav = async ({
         </nav>
 
         <div className='flex items-center gap-2'>
-          {isLoggedIn ? (
-            <Link
-              href={ROUTES.DASHBOARD}
-              className='rounded-full px-5 py-3 text-[13px] font-medium transition-opacity duration-150 hover:opacity-90'
-              style={{
-                backgroundColor: isDark ? '#fff' : SLATECAMP_INK.main,
-                color: isDark ? SLATECAMP_INK.main : '#fff',
-              }}
-            >
-              Dashboard
-            </Link>
-          ) : (
-            <>
-              <Link
-                href={ROUTES.LOGIN}
-                className='hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block hover:opacity-100'
-                style={{
-                  color: isDark ? 'rgba(255,255,255,0.5)' : SLATECAMP_INK.muted,
-                }}
-              >
-                Log in
-              </Link>
-              <Link
-                href={ROUTES.REGISTER}
-                className='rounded-full px-5 py-3 text-[13px] font-medium transition-opacity duration-150 hover:opacity-90'
-                style={{ backgroundColor: SLATECAMP_INK.main, color: '#fff' }}
-              >
-                Get Started
-              </Link>
-            </>
-          )}
+          <Link
+            href={ROUTES.LOGIN}
+            className='hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block hover:opacity-100'
+            style={{
+              color: isDark ? 'rgba(255,255,255,0.5)' : SLATECAMP_INK.muted,
+            }}
+          >
+            Log in
+          </Link>
+          <Link
+            href={ROUTES.REGISTER}
+            className='rounded-full px-5 py-3 text-[13px] font-medium transition-opacity duration-150 hover:opacity-90'
+            style={{ backgroundColor: SLATECAMP_INK.main, color: '#fff' }}
+          >
+            Get Started
+          </Link>
         </div>
       </div>
     </header>
