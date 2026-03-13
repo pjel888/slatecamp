@@ -74,25 +74,23 @@ export function BottomNav() {
 
   return (
     <>
-      {/* Floating Navigation Bar - Visible on all screen sizes */}
+      {/* Floating Navigation Bar - ALWAYS VISIBLE ON ALL SCREEN SIZES */}
       <nav
         className={cn(
-          'fixed left-1/2 -translate-x-1/2 z-[100]',
-          'flex items-center justify-center gap-1.5',
-          'px-4 py-3',
-          'bg-slatecamp-paper-snow dark:bg-slatecamp-ink-slate-black',
+          'fixed left-1/2 -translate-x-1/2 z-[9999]',
+          'flex items-center justify-center gap-2',
+          'px-5 py-3',
+          'bg-white dark:bg-slatecamp-ink-slate-black',
           'backdrop-blur-xl backdrop-saturate-150',
-          'border border-slatecamp-border dark:border-slatecamp-border',
+          'border-2 border-slatecamp-border dark:border-slatecamp-border',
           'rounded-2xl',
-          'shadow-[0_1px_3px_rgba(26,26,26,0.06),0_8px_24px_rgba(0,0,0,0.08)]',
-          'dark:shadow-[0_1px_3px_rgba(0,0,0,0.3),0_8px_24px_rgba(0,0,0,0.4)]',
+          'shadow-[0_4px_12px_rgba(0,0,0,0.15),0_2px_4px_rgba(0,0,0,0.1)]',
+          'dark:shadow-[0_4px_12px_rgba(0,0,0,0.5),0_2px_4px_rgba(0,0,0,0.3)]',
           'transition-all duration-150 ease',
         )}
         style={{
-          // Position with safe-area inset for mobile devices (iOS home indicator, etc.)
-          bottom: 'max(1rem, calc(1rem + env(safe-area-inset-bottom)))',
-          // Ensure it doesn't overflow on small screens and is properly centered
-          maxWidth: 'min(calc(100vw - 2rem), 600px)',
+          bottom: '1.5rem',
+          maxWidth: 'min(calc(100vw - 3rem), 650px)',
         }}
       >
         {PLACEHOLDER_ITEMS.map(({ id, label, icon: Icon }) => {
@@ -138,11 +136,11 @@ export function BottomNav() {
                     strokeWidth={isActive ? 2 : 1.5}
                   />
 
-                  {/* Label */}
+                  {/* Label - Always visible */}
                   <span
                     className={cn(
                       'text-[10px] font-medium mt-0.5 leading-tight',
-                      'hidden sm:block',
+                      'block',
                       'transition-opacity duration-150',
                       isActive
                         ? 'opacity-100'
@@ -191,11 +189,11 @@ export function BottomNav() {
                 strokeWidth={isActive ? 2 : 1.5}
               />
 
-              {/* Label (hidden on very small screens, shown on larger mobile) */}
+              {/* Label - Always visible on all screen sizes */}
               <span
                 className={cn(
                   'text-[10px] font-medium mt-0.5 leading-tight',
-                  'hidden sm:block',
+                  'block',
                   'transition-opacity duration-150',
                   isActive ? 'opacity-100' : 'opacity-70 group-hover:opacity-100',
                 )}
