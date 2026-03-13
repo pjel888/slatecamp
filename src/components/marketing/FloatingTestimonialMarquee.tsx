@@ -44,11 +44,12 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 5,
-    name: 'Nico T.',
-    profession: 'Architecture Graduate',
-    text: 'Confidence from data, not hope.',
-    avatar: 'NT',
+    name: 'Lizette Pedroso.',
+    profession: 'Architect',
+    text: 'Everything verified, everything in one place.',
+    avatar: 'LP',
   },
+
   {
     id: 6,
     name: 'Justin Rencer Wee Eng',
@@ -72,17 +73,10 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 9,
-    name: 'Lizette Pedroso.',
-    profession: 'Architect',
-    text: 'Everything verified, everything in one place.',
-    avatar: 'LP',
-  },
-  {
-    id: 10,
-    name: 'Justin A.',
-    profession: 'CE Board Aspirant',
-    text: 'Worth every peso if the CE track is like the ALE module.',
-    avatar: 'JA',
+    name: 'Nico T.',
+    profession: 'Architecture Graduate',
+    text: 'Confidence from data, not hope.',
+    avatar: 'NT',
   },
   {
     id: 11,
@@ -172,11 +166,11 @@ function generateParticles(): ParticleConfig[] {
   const spawnPoints: [number, number][] = [
     [45, 12], // top-left, behind headline
     [72, 8], // top-right area
-    [0, 55], // mid-left, behind CTA
+    [0, 45], // mid-left, behind CTA
     [85, 45], // right side
-    [45, 50], // center-top gap
+    [20, 60], // center-top gap
     [80, 65], // center-right low
-    [25, 40], // left of center
+    [25, 10], // left of center
     [90, 25], // far right
     [60, 80], // mid-center
     // [20, 80], // lower-left, slightly right

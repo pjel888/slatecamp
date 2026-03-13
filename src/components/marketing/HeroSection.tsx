@@ -12,6 +12,7 @@ import {
 } from '@/components/marketing/LandingPrimitives'
 import { ROUTES } from '@/lib/constants'
 import { cn } from '@/lib/utils'
+import { ChevronRight } from 'lucide-react'
 
 /* ── Dashboard Mockup Peek ── */
 
@@ -411,40 +412,42 @@ export const HeroSection = ({
     <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
       <div className='relative grid h-[600px] grid-cols-1 items-start gap-8 md:grid-cols-12 md:items-center'>
         {/* Left: Giant headline */}
-        <div className='md:col-span-7 h-full flex flex-col justify-start'>
-          <div className='landing-reveal mb-4 flex items-center gap-3'>
-            <div
-              className='flex flex-col gap-1 text-blue-500'
-              aria-label='Board exam preparation'
-            >
-              <div className='flex flex-row items-center gap-2'>
-                <Starburst className='h-4 w-4' />
-                <span className='font-mono text-[11px] tracking-[0.25em] font-bold uppercase'>
-                  Board exam prep
-                </span>
+        <div className='md:col-span-7 h-full flex flex-col justify-start '>
+          <div className='mt-26'>
+            <div className='landing-reveal flex items-center gap-3'>
+              <div
+                className='flex flex-col gap-1 text-blue-500'
+                aria-label='Board exam preparation platform.'
+              >
+                <div className='flex flex-row items-center gap-2'>
+                  <Starburst className='h-4 w-4' />
+                  <span className='font-mono text-[11px] tracking-[0.25em] font-bold uppercase'>
+                    Board exam preparation platform.{' '}
+                  </span>
+                </div>
               </div>
             </div>
+
+            <HeroHeadline />
           </div>
 
-          <HeroHeadline />
-
-          <div className='mb-4 flex h-full flex-col justify-between'>
+          <div className='mb-4 flex h-full flex-col justify-start'>
             <div>
-              <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-zinc-600'>
+              <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-zinc-700 font-medium'>
                 Study with precision. Pass with confidence.
               </p>
             </div>
 
-            <div className='landing-reveal landing-delay-4 mt-8 flex flex-row items-center justify-end gap-3'>
-              <p className='landing-reveal landing-delay-5 flex justify-start text-[12px] font-semibold text-zinc-500'>
-                Free forever to start &middot; No credit card required
-              </p>
+            <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
-                className='rounded-full bg-blue-600 px-7 py-3 text-[15px] font-medium text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
+                className='inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-blue-600 px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
               >
-                Start your diagnostic — free.
+                Prove you&apos;re ready <ChevronRight />
               </Link>
+              <p className='landing-reveal landing-delay-5 flex justify-start text-[10px] font-semibold text-zinc-500'>
+                Free forever to start &middot; No credit card required
+              </p>
             </div>
           </div>
 
