@@ -74,27 +74,25 @@ export function BottomNav() {
 
   return (
     <>
-      {/* Floating Navigation Bar */}
+      {/* Floating Navigation Bar - Visible on all screen sizes */}
       <nav
         className={cn(
           'fixed left-1/2 -translate-x-1/2 z-[100]',
           'flex items-center justify-center gap-1.5',
-          'px-3 py-2.5',
-          'bg-slatecamp-paper-snow/95 dark:bg-slatecamp-ink-slate-black/95',
+          'px-4 py-3',
+          'bg-slatecamp-paper-snow dark:bg-slatecamp-ink-slate-black',
           'backdrop-blur-xl backdrop-saturate-150',
-          'border border-slatecamp-border/60 dark:border-slatecamp-border/40',
+          'border border-slatecamp-border dark:border-slatecamp-border',
           'rounded-2xl',
           'shadow-[0_1px_3px_rgba(26,26,26,0.06),0_8px_24px_rgba(0,0,0,0.08)]',
           'dark:shadow-[0_1px_3px_rgba(0,0,0,0.3),0_8px_24px_rgba(0,0,0,0.4)]',
           'transition-all duration-150 ease',
-          // Temporarily visible on all screens for testing
-          // 'lg:hidden', // Uncomment to hide on desktop
         )}
         style={{
           // Position with safe-area inset for mobile devices (iOS home indicator, etc.)
-          bottom: 'calc(1rem + env(safe-area-inset-bottom))',
+          bottom: 'max(1rem, calc(1rem + env(safe-area-inset-bottom)))',
           // Ensure it doesn't overflow on small screens and is properly centered
-          maxWidth: 'calc(100vw - 2rem)',
+          maxWidth: 'min(calc(100vw - 2rem), 600px)',
         }}
       >
         {PLACEHOLDER_ITEMS.map(({ id, label, icon: Icon }) => {
