@@ -13,7 +13,13 @@ export const HeroHeadline = () => {
   const taglineRef = useRef<HTMLParagraphElement>(null)
 
   useEffect(() => {
-    if (!knowRef.current || !winRef.current || !youllRef.current) return
+    if (
+      !knowRef.current ||
+      !winRef.current ||
+      !youllRef.current ||
+      !taglineRef.current
+    )
+      return
 
     const winAnnotation = annotate(winRef.current, {
       type: 'circle',
