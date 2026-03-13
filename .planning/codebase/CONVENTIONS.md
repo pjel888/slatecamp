@@ -42,14 +42,18 @@ This document outlines the coding standards, naming conventions, and architectur
 - **Server Actions**: Use `'use server'` for ALL database mutations. Never expose Supabase writes client-side.
 - **Optimization**: Use `useOptimistic` for high-frequency interactions (e.g., quiz answers).
 
-### Styling — "Rams Standard" (Dieter Rams / Braun inspired)
-- **Philosophy**: "Less, but better." Minimalist, functional, unobtrusive.
-- **Palette**: Achromatic foundation (`zinc`) with functional accents:
-  - `amber-600`: Primary CTA, active states, progress.
-  - `green-600`: Correct answer, success.
-  - `red-600`: Incorrect answer, error.
-  - `blue-600`: Info, links, secondary actions.
-- **Constraints**: No gradients, no heavy shadows, no bouncy/spring animations (keep it mechanical).
+### Styling — Apple HIG (Human Interface Guidelines)
+- **Philosophy**: Clarity, Deference, and Depth. Focused on the content, with a premium, platform-native feel.
+- **Visuals**: 
+  - **Clarity**: High-legibility typography (SF Pro inspired Inter), generous whitespace, and purposeful color usage.
+  - **Deference**: UI should recede to highlight user content (Wiki, Notes, 3D models).
+  - **Depth**: Subtle layers, translucency (where appropriate), and logical hierarchies to help users navigate complexity.
+- **Palette**: `zinc` foundation with semantic Apple-inspired accents:
+  - `blue-600`: System Blue (Primary, links, active)
+  - `green-600`: System Green (Success, mastery)
+  - `amber-600`: System Orange/Yellow (Warning, developing)
+  - `red-600`: System Red (Error, critical gaps)
+- **Constraints**: Use system fonts, appropriate corner radii (8px-12px), and smooth, purposeful animations (Framer Motion). Avoid "mechanical" rigidity; favor fluid, organic interactions.
 
 ### Clean Code (SRP, DRY, KISS, YAGNI)
 - **Guard Clauses**: Use early returns to keep code flat (max 2 levels of nesting).
