@@ -1,63 +1,37 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
-import { TransitionLink } from '@/components/shared/TransitionLink'
 import {
-  LayoutDashboard,
-  Globe,
-  Brain,
-  FileText,
-  BarChart3,
+  MessageSquare,
+  Sparkles,
+  Zap,
+  BookOpen,
+  HelpCircle,
 } from 'lucide-react'
-import { useActiveSession } from '@/lib/context/active-session-context'
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { ComponentType, SVGProps } from 'react'
 
-interface NavItem {
-  href: string
+interface PlaceholderItem {
+  id: string
   label: string
   icon: ComponentType<SVGProps<SVGSVGElement>>
 }
 
-// Core navigation items for the floating bar (curated for quick access)
-const NAV_ITEMS: NavItem[] = [
-  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/dashboard/wiki', label: 'Wiki', icon: Globe },
-  { href: '/dashboard/testing', label: 'Testing', icon: Brain },
-  { href: '/dashboard/notes', label: 'Notes', icon: FileText },
-  { href: '/dashboard/analytics', label: 'Analytics', icon: BarChart3 },
+// Placeholder items for future features (AI chat, etc.)
+const PLACEHOLDER_ITEMS: PlaceholderItem[] = [
+  { id: 'ai-chat', label: 'AI Chat', icon: MessageSquare },
+  { id: 'assistant', label: 'Assistant', icon: Sparkles },
+  { id: 'quick-actions', label: 'Quick', icon: Zap },
+  { id: 'reference', label: 'Reference', icon: BookOpen },
+  { id: 'help', label: 'Help', icon: HelpCircle },
 ]
 
 export function BottomNav() {
-  const pathname = usePathname()
-  const router = useRouter()
-  const { activeSession: mode } = useActiveSession()
-  const [leaveDialogOpen, setLeaveDialogOpen] = useState(false)
-  const [leaveTarget, setLeaveTarget] = useState<string>('/dashboard')
+  const [activeId, setActiveId] = useState<string | null>(null)
 
-  function handleNavClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
-    if (mode && href !== pathname) {
-      e.preventDefault()
-      setLeaveTarget(href)
-      setLeaveDialogOpen(true)
-    }
-  }
-
-  function handleConfirmLeave() {
-    setLeaveDialogOpen(false)
-    router.push(
-      mode === 'review' ? '/dashboard/testing?tab=review&exited=1' : leaveTarget,
-    )
+  function handleItemClick(id: string) {
+    // Placeholder: will be implemented later
+    setActiveId(id === activeId ? null : id)
   }
 
   return (
@@ -85,15 +59,13 @@ export function BottomNav() {
           maxWidth: 'calc(100vw - 2rem)',
         }}
       >
-        {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-          const isActive =
-            pathname === href ||
-            (href !== '/dashboard' && pathname.startsWith(href))
+        {PLACEHOLDER_ITEMS.map(({ id, label, icon: Icon }) => {
+          const isActive = activeId === id
 
           return (
-            <TransitionLink
-              key={href}
-              href={href}
+            <button
+              key={id}
+              onClick={() => handleItemClick(id)}
               className={cn(
                 'relative flex flex-col items-center justify-center',
                 'min-w-[52px] h-12 rounded-xl',
@@ -108,8 +80,8 @@ export function BottomNav() {
                 !isActive &&
                   'hover:bg-slatecamp-paper-cool dark:hover:bg-slatecamp-ink-mauve-charcoal/30 hover:text-slatecamp-ink-main dark:hover:text-slatecamp-paper-snow',
               )}
-              onBeforeNavigate={(e) => handleNavClick(e, href)}
               aria-label={label}
+              type='button'
             >
               {/* Active indicator dot */}
               {isActive && (
@@ -136,44 +108,10 @@ export function BottomNav() {
               >
                 {label}
               </span>
-            </TransitionLink>
+            </button>
           )
         })}
       </nav>
-
-      {/* Leave Session Dialog */}
-      {mode && (
-        <Dialog open={leaveDialogOpen} onOpenChange={setLeaveDialogOpen}>
-          <DialogContent
-            showCloseButton={false}
-            className='sm:max-w-[380px] bg-slatecamp-paper border-slatecamp-border'
-          >
-            <DialogTitle className='text-slatecamp-ink-main'>
-              Are you sure you want to exit?
-            </DialogTitle>
-            <DialogDescription className='text-slatecamp-ink-muted'>
-              Your progress in this {mode === 'review' ? 'review' : 'quiz'} will
-              not be saved. You can come back anytime.
-            </DialogDescription>
-            <DialogFooter className='mt-4 gap-2 border-t border-slatecamp-border bg-slatecamp-paper-cool p-4 sm:flex-row'>
-              <Button
-                variant='outline'
-                onClick={() => setLeaveDialogOpen(false)}
-                className='flex-1 sm:flex-initial border-slatecamp-border text-slatecamp-ink-main hover:bg-slatecamp-paper'
-              >
-                No, stay
-              </Button>
-              <Button
-                variant='destructive'
-                onClick={handleConfirmLeave}
-                className='flex-1 sm:flex-initial bg-slatecamp-crimson-bright-red hover:bg-slatecamp-crimson-deep-red text-white'
-              >
-                Yes, exit
-              </Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
-      )}
     </>
   )
 }
