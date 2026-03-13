@@ -39,7 +39,9 @@ export async function POST(request: Request) {
 
       // Determine tier from metadata or price
       const tier: UserTier =
-        (session.metadata?.tier as UserTier) ?? "pro";
+        (session.metadata?.tier as UserTier) ?? "camp";
+
+      const tokenLimit = tier === "institutional" ? 999999 : tier === "insurance" ? 10000 : 1000;
 
       const { error } = await supabase
         .from("profiles")
@@ -47,7 +49,7 @@ export async function POST(request: Request) {
           tier,
           stripe_customer_id: customerId,
           stripe_subscription_id: subscriptionId,
-          ai_tokens_limit: tier === "max" ? 999999 : 1000,
+          ai_tokens_limit: tokenLimit,
           updated_at: new Date().toISOString(),
         })
         .eq("email", session.customer_email!);

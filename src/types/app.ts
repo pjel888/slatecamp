@@ -1,15 +1,105 @@
-export type UserTier = "free" | "pro" | "max";
+export type UserTier = "free" | "camp" | "insurance" | "institutional";
 export type QuestionType = "mcq" | "true_false" | "identification" | "essay" | "matching" | "sequence" | "sequencing";
 export type DifficultyLevel = "easy" | "medium" | "hard" | "expert";
 export type ContentStatus = "draft" | "published" | "archived" | "flagged";
 export type Profession = "architecture" | "medicine" | "law" | "engineering";
 export type NewSessionType = "subject_quick" | "custom_compiled" | "srs_review" | "ai_adaptive" | "retake" | "topic_drill" | "3d_model_quiz" | "weak_areas";
-export type SessionStatus = "in_progress" | "completed" | "abandoned" | "paused";
+export type SessionStatus = "in_progress" | "completed" | "abandoned";
 export type ReferenceType = "book" | "code" | "standard" | "article" | "video" | "website";
 export type DifficultyMode = "easy" | "medium" | "hard" | "expert" | "mixed" | "adaptive";
 export type Theme = "light" | "dark" | "system";
+export type TestMode = "camp" | "storm";
 
-// Legacy types kept for backward compatibility
+// New Core Types (v1.0 Master Schema)
+export interface Discipline {
+  discipline_id: string;
+  name: string;
+  acronym: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface TaxonomyNode {
+  node_id: string;
+  discipline_id: string;
+  parent_id: string | null;
+  level: number;
+  name: string;
+  subject_area: string;
+  is_leaf: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface Choice {
+  id: string
+  text: string
+  is_correct: boolean
+}
+
+export interface Question {
+  question_id: string;
+  topic_id: string;
+  subject_id?: string;
+  text: string;
+  options: Choice[] | any; 
+  correct_answer?: string; // Support for both styles
+  rationale: string | null;
+  difficulty: number;
+  prompt_image_url?: string | null;
+  created_at: string;
+  updated_at?: string;
+}
+
+export interface WikiArticle {
+  article_id: string;
+  slug: string;
+  title: string;
+  content: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface UserSubscription {
+  subscription_id: string;
+  user_id: string;
+  tier: UserTier;
+  status: "active" | "canceled" | "past_due" | "trialing";
+  stripe_customer_id: string | null;
+  stripe_subscription_id: string | null;
+  payrex_reference: string | null;
+  current_period_end: string | null;
+  cancel_at_period_end: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface UserGlobalStats {
+  user_id: string;
+  current_discipline_id: string | null;
+  global_readiness_score: number;
+  current_streak_days: number;
+  longest_streak_days: number;
+  last_study_date: string | null;
+  updated_at: string;
+}
+
+export interface QuizSession {
+  session_id: string;
+  user_id: string;
+  test_mode: TestMode;
+  status: SessionStatus;
+  question_ids: string[];
+  subject_ids?: string[];
+  source_article_id?: string | null;
+  current_question_index: number;
+  started_at: string;
+  completed_at: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+// Legacy types kept for backward compatibility where needed
 export type SessionType = "practice" | "timed_test" | "review" | "ai_adaptive";
 
 export interface Profile {
@@ -102,53 +192,7 @@ export interface QuestionReference {
   type: ReferenceType;
 }
 
-export interface Choice {
-  id: string;
-  text: string;
-  image_url?: string | null;
-  is_correct: boolean;
-}
-
-export interface Question {
-  id: string;
-  bank_id: string | null;
-  subject_id: string | null;
-  topic_id: string | null;
-  creator_id: string | null;
-  is_official: boolean;
-  question_type: QuestionType;
-  prompt: string;
-  prompt_image_url: string | null;
-  choices: Choice[];
-  correct_answer: string;
-  explanation: string | null;
-  explanation_image_url: string | null;
-  references: QuestionReference[];
-  fun_facts: string[];
-  mnemonics: string | null;
-  related_topic_ids: string[];
-  difficulty: DifficultyLevel;
-  difficulty_rating: number;
-  discrimination_rating: number;
-  has_3d_component: boolean;
-  three_d_model_id: string | null;
-  model_callout_id: string | null;
-  image_urls: string[];
-  global_times_answered: number;
-  global_times_correct: number;
-  global_accuracy_percentage: number;
-  global_avg_response_time_ms: number;
-  tags: string[];
-  status: ContentStatus;
-  sort_order: number;
-  created_at: string;
-  updated_at: string;
-  // Legacy fields (may exist on old records)
-  exam_domain_id?: string | null;
-  is_multi_select?: boolean;
-  media_url?: string | null;
-}
-
+// Review types
 export interface ReviewSession {
   id: string;
   user_id: string;

@@ -40,11 +40,11 @@ export async function POST(request: Request) {
   const isAdmin = (profile as { is_admin?: boolean } | null)?.is_admin === true || await isAdminByEmail(user.email ?? undefined);
   const canAccessTutor =
     flags.bypassAiGate ||
-    hasTierAccess("max", profile?.tier ?? "free", isAdmin, flags);
+    hasTierAccess("insurance", profile?.tier ?? "free", isAdmin, flags);
 
   if (!canAccessTutor) {
     return NextResponse.json(
-      { error: "Socratic Tutor requires Max plan" },
+      { error: "Socratic Tutor requires Insurance plan" },
       { status: 403 }
     );
   }

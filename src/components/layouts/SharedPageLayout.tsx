@@ -3,8 +3,8 @@ import { DottedGridOverlay } from '../marketing/LandingPrimitives'
 
 const SharedPageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='relative flex flex-col h-full overflow-scroll bg-zinc-50 p-2 '>
-      <div className='z-10'> {children}</div>
+    <div className='relative flex h-full flex-col overflow-hidden p-2'>
+      <div className='relative z-10 h-full'>{children}</div>
       <DottedGridOverlay />
     </div>
   )

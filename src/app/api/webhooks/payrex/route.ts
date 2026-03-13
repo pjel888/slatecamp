@@ -37,9 +37,11 @@ export async function POST(request: Request) {
 
     const tier = metadata.tier ?? tierFromAmount(amountCents);
 
+    const tokenLimit = tier === "institutional" ? 999999 : tier === "insurance" ? 10000 : tier === "camp" ? 1000 : 0;
+
     const updateData = {
       tier,
-      ai_tokens_limit: tier === "max" ? 999999 : tier === "pro" ? 1000 : 0,
+      ai_tokens_limit: tokenLimit,
       updated_at: new Date().toISOString(),
     };
 

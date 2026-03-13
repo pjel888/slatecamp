@@ -29,8 +29,8 @@ export function DemoShell() {
 
       <DevToolbar
         connectionState='local'
-        currentTier='max'
-        effectiveTier='max'
+        currentTier='institutional'
+        effectiveTier='institutional'
         flags={{
           simulatedTier: null,
           bypass3dGate: true,

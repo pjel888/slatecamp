@@ -5,7 +5,7 @@ export type PaymentProvider = "stripe" | "payrex";
 export interface CreateCheckoutParams {
   userId: string;
   email: string;
-  tier: "pro" | "max";
+  tier: "camp" | "insurance" | "institutional";
   successUrl: string;
   cancelUrl: string;
 }
@@ -81,7 +81,8 @@ async function createPayRexCheckout(
 }
 
 export function tierFromAmount(amountCents: number): UserTier {
-  if (amountCents >= 99900) return "max";
-  if (amountCents >= 49900) return "pro";
+  if (amountCents >= 499900) return "institutional";
+  if (amountCents >= 149900) return "insurance";
+  if (amountCents >= 49900) return "camp";
   return "free";
 }

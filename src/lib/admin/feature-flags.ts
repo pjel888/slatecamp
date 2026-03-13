@@ -71,7 +71,7 @@ export function toDevConfig(flags: FeatureFlags): DevModeConfig {
 
 /**
  * Returns the effective tier for the user.
- * Priority: simulatedTier > admin default (max) > local default (max) > DB tier
+ * Priority: simulatedTier > admin default (institutional) > local default (institutional) > DB tier
  */
 export function getEffectiveTier(
   actualTier: UserTier,

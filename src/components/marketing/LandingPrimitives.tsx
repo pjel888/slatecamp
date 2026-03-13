@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+import { AlertTriangle, ArrowUpRight } from 'lucide-react'
 
 /* ── Noise texture overlay ── */
 
@@ -67,9 +67,13 @@ export const Pill = ({
 export const ReadinessDial = ({
   value,
   label,
+  showWarning = true,
+  tone = 'warning',
 }: {
   value: number
   label: string
+  showWarning?: boolean
+  tone?: 'warning' | 'success'
 }) => {
   const radius = 36
   const circumference = 2 * Math.PI * radius
@@ -97,17 +101,26 @@ export const ReadinessDial = ({
             cy={44}
             r={radius}
             fill='none'
-            stroke='#2563EB' // blue-600
+            stroke={tone === 'success' ? '#16A34A' : '#EA580C'} // green-600 or orange-600
             strokeWidth={6}
             strokeLinecap='round'
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
-            className='transition-[stroke-dashoffset] duration-500'
+            className={
+              tone === 'success'
+                ? 'transition-[stroke-dashoffset] duration-500 '
+                : 'transition-[stroke-dashoffset] duration-500 '
+            }
           />
         </svg>
         <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold text-zinc-900'>
           {value}%
         </span>
+        {showWarning && (
+          <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
+            <AlertTriangle className='h-3 w-3' aria-hidden='true' />
+          </div>
+        )}
       </div>
       <span className='mt-1 text-[11px] font-medium text-zinc-600'>
         {label}

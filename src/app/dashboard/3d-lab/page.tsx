@@ -85,7 +85,7 @@ export default async function ThreeDLabPage({
   const flags = await getFeatureFlags();
   const hasAccess =
     flags.bypass3dGate ||
-    hasTierAccess("pro", profile.tier, profile.isAdmin, flags);
+    hasTierAccess("camp", profile.tier, profile.isAdmin, flags);
 
   if (!hasAccess) {
     return (
@@ -96,10 +96,10 @@ export default async function ThreeDLabPage({
         </h1>
         <p className="mt-2 max-w-md text-sm text-muted-foreground">
           Explore building components, structural systems, and design concepts
-          in three dimensions. Available for Pro and Max subscribers.
+          in three dimensions. Available for Camp, Insurance, and Institutional subscribers.
         </p>
         <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
-          <Button>Upgrade to Pro</Button>
+          <Button>Upgrade to Camp</Button>
         </Link>
       </div>
     );

@@ -21,7 +21,7 @@ function daysFromNow(n: number): string {
  * Build a demo profile for the given tier. Adjusts ai_tokens_limit based
  * on the tier capabilities so local-mode Free/Pro feel realistic.
  */
-export function getDemoProfile(tier: UserTier = 'max') {
+export function getDemoProfile(tier: UserTier = 'institutional') {
   const caps = TIER_CAPABILITIES[tier]
   return {
     id: uid,
@@ -48,8 +48,8 @@ export function getDemoProfile(tier: UserTier = 'max') {
   }
 }
 
-/** Default demo profile — max tier for backward compat */
-export const DEMO_PROFILE = getDemoProfile('max')
+/** Default demo profile — institutional tier for backward compat */
+export const DEMO_PROFILE = getDemoProfile('institutional')
 
 export const DEMO_EXAM_DOMAINS = [
   {

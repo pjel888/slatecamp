@@ -60,7 +60,7 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     aiAdaptiveAccess: false,
     customBanksAccess: false,
   },
-  pro: {
+  camp: {
     questionsPerDay: Infinity,
     aiTokens: 1000,
     savedConfigs: 10,
@@ -70,7 +70,17 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     aiAdaptiveAccess: false,
     customBanksAccess: true,
   },
-  max: {
+  insurance: {
+    questionsPerDay: Infinity,
+    aiTokens: 10000,
+    savedConfigs: 100,
+    srsAccess: true,
+    threeDLabAccess: true,
+    aiTutorAccess: true,
+    aiAdaptiveAccess: true,
+    customBanksAccess: true,
+  },
+  institutional: {
     questionsPerDay: Infinity,
     aiTokens: Infinity,
     savedConfigs: Infinity,
@@ -124,7 +134,7 @@ export const CONNECTION_BEHAVIORS: Record<DevConnectionState, ConnectionBehavior
 // Tier Rank (for comparison)
 // ---------------------------------------------------------------------------
 
-const TIER_RANK: Record<UserTier, number> = { free: 0, pro: 1, max: 2 };
+const TIER_RANK: Record<UserTier, number> = { free: 0, camp: 1, insurance: 2, institutional: 3 };
 
 // ---------------------------------------------------------------------------
 // Resolution Functions
@@ -142,8 +152,8 @@ export function getConnectionState(): DevConnectionState {
  *
  * Priority:
  * 1. If devConfig.simulatedTier is set → use it (regardless of connection state)
- * 2. If admin with no simulation → "max"
- * 3. If local mode with no simulation → "max" (full access for local dev)
+ * 2. If admin with no simulation → "institutional"
+ * 3. If local mode with no simulation → "institutional" (full access for local dev)
  * 4. Otherwise → actual DB tier
  */
 export function resolveEffectiveTier(
@@ -155,11 +165,11 @@ export function resolveEffectiveTier(
   // Explicit simulation always wins
   if (devConfig.simulatedTier) return devConfig.simulatedTier;
 
-  // Admin defaults to max
-  if (isAdmin) return "max";
+  // Admin defaults to institutional
+  if (isAdmin) return "institutional";
 
-  // Local mode defaults to max (so devs get full access unless they simulate)
-  if (connectionState === "local") return "max";
+  // Local mode defaults to institutional (so devs get full access unless they simulate)
+  if (connectionState === "local") return "institutional";
 
   // Normal connected user — use DB tier
   return dbTier;
@@ -204,7 +214,7 @@ export function resolveCapabilities(
 
 /**
  * Build a summary label for the current dev mode state.
- * e.g. "Local / Free", "Connected / Pro", "Connected / Max (admin)"
+ * e.g. "Local / Free", "Connected / Camp", "Connected / Institutional (admin)"
  */
 export function getDevModeLabel(
   connectionState: DevConnectionState,

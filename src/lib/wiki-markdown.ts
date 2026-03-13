@@ -1,7 +1,5 @@
 import { marked } from 'marked'
-// Turndown lacks bundled TypeScript types in this setup
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const TurndownService = require('turndown') as any
+import TurndownService from 'turndown'
 
 // --- Table of contents (server-safe) ---
 
@@ -53,7 +51,9 @@ export async function markdownToHtml(md: string): Promise<string> {
   return html && typeof html === 'string' ? html : '<p></p>'
 }
 
-const turndown = new TurndownService({
+// Initialize turndown with a fallback for CJS/ESM compatibility
+const TurndownConstructor = (TurndownService as any).default || TurndownService;
+const turndown = new TurndownConstructor({
   headingStyle: 'atx',
   codeBlockStyle: 'fenced',
   bulletListMarker: '-',

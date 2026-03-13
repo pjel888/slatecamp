@@ -2,6 +2,8 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
+@plugin "@tailwindcss/typography";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -338,7 +340,7 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans scroll-smooth;
+    @apply font-sans;
     scrollbar-gutter: stable;
   }
 }
@@ -502,4 +504,21 @@ a[data-pending] {
 
 .landing-orb {
   animation: orb-drift 20s ease-in-out infinite;
+}
+
+/* Wiki Heading Highlight */
+@keyframes highlight-pulse {
+  0% {
+    background-color: rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.1);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.highlight-fade {
+  animation: highlight-pulse 3s ease-out forwards;
+  border-radius: 4px;
 }

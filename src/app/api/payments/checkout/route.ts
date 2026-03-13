@@ -24,8 +24,8 @@ export async function POST(request: Request) {
 
   const { tier } = await request.json();
 
-  if (tier !== "pro" && tier !== "max") {
-    return NextResponse.json({ error: "Invalid tier" }, { status: 400 });
+  if (tier === "free") {
+    return NextResponse.json({ error: "Cannot checkout for free tier" }, { status: 400 });
   }
 
   const origin = request.headers.get("origin") ?? process.env.NEXT_PUBLIC_APP_URL ?? "";

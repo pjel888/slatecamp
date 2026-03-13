@@ -51,6 +51,7 @@ interface SidebarProps {
   isDevMode?: boolean
   userDisplay?: { name: string; avatarUrl: string | null }
   tier?: UserTier
+  currentDiscipline?: string
 }
 
 /** * ARCHITECTURE FIX: The Strict Bounding Box
@@ -150,6 +151,7 @@ export const Sidebar = ({
   isDevMode = false,
   userDisplay,
   tier = 'free',
+  currentDiscipline,
 }: SidebarProps) => {
   const pathname = usePathname()
   const router = useRouter()
@@ -201,6 +203,7 @@ export const Sidebar = ({
         'hidden lg:flex lg:flex-col border-r border-zinc-200 transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
         collapsed ? 'w-[72px]' : 'w-[260px]',
         'bg-zinc-100',
+        'z-10',
       )}
     >
       {/* 1. Logo Area (Stays perfectly static at the top) */}
@@ -296,9 +299,12 @@ export const Sidebar = ({
                   className={cn(ICON_SIZE, 'text-amber-600')}
                   strokeWidth={1.5}
                 />
-              ) : tier === 'pro' ? (
+              ) : tier === 'camp' || tier === 'insurance' ? (
                 <Zap
-                  className={cn(ICON_SIZE, 'text-blue-600')}
+                  className={cn(
+                    ICON_SIZE,
+                    tier === 'camp' ? 'text-blue-600' : 'text-indigo-600',
+                  )}
                   strokeWidth={1.5}
                 />
               ) : (

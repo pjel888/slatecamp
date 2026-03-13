@@ -12,8 +12,9 @@ import type { UserTier } from "@/types/app";
 
 const UPGRADE_LABEL: Record<UserTier, string> = {
   free: "Sign Up",
-  pro: "Upgrade to Pro",
-  max: "Upgrade to Max",
+  camp: "Upgrade to Camp",
+  insurance: "Upgrade to Insurance",
+  institutional: "Upgrade to Institutional",
 };
 
 // ---------------------------------------------------------------------------
@@ -114,8 +115,8 @@ interface TierLockedBadgeProps {
 }
 
 /**
- * Renders a small "PRO" / "MAX" badge + lock icon when the user doesn't
- * have access. Renders nothing if they do.
+ * Renders a small "CAMP" / "INSURANCE" / "INSTITUTIONAL" badge + lock icon
+ * when the user doesn't have access. Renders nothing if they do.
  */
 export function TierLockedBadge({ requiredTier, className }: TierLockedBadgeProps) {
   const { hasAccess } = useTier();

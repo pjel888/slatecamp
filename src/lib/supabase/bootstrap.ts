@@ -2,56 +2,60 @@
 
 import { createAdminClient } from "@/lib/supabase/admin";
 
-const ALE_BOARD_EXAM_ID = "be000000-0000-0000-0000-000000000001";
-
 /**
- * Uses service role to guarantee profile + ALE exam profile exist for the user.
- * Call this when the user is authenticated (you have their userId); RLS is bypassed so bootstrap always succeeds if the DB allows it.
+ * Bootstraps a user by ensuring they have necessary records in the new schema:
+ * 1. user_subscriptions (tier: 'free')
+ * 2. user_global_stats
+ * 
+ * Call this when the user is authenticated.
  */
-export async function ensureProfileAndExamProfile(
-  userId: string,
-  email?: string,
-  fullName?: string
+export async function bootstrapUser(
+  userId: string
 ): Promise<void> {
   const admin = createAdminClient();
 
-  const { data: existingProfile } = await admin
-    .from("profiles")
-    .select("id")
-    .eq("id", userId)
+  // 1. Ensure user_subscriptions exists
+  const { data: existingSub, error: subFetchError } = await admin
+    .from("user_subscriptions")
+    .select("subscription_id")
+    .eq("user_id", userId)
     .maybeSingle();
 
-  if (!existingProfile) {
-    const { error: insertProfileError } = await admin.from("profiles").insert({
-      id: userId,
-      email: email ?? "",
-      full_name: fullName ?? null,
-    });
-    if (insertProfileError) return;
+  if (subFetchError) {
+    console.error("Error fetching user subscription:", subFetchError);
   }
 
-  const { data: existingExamProfiles } = await admin
-    .from("exam_profiles")
-    .select("id")
-    .eq("user_id", userId);
+  if (!existingSub && !subFetchError) {
+    const { error: subInsertError } = await admin.from("user_subscriptions").insert({
+      user_id: userId,
+      tier: 'free',
+      status: 'active',
+    });
+    if (subInsertError) {
+      console.error("Error inserting default subscription:", subInsertError);
+    }
+  }
 
-  if (existingExamProfiles?.length) return;
-
-  const { data: aleRow } = await admin
-    .from("board_exams")
-    .select("id")
-    .eq("id", ALE_BOARD_EXAM_ID)
+  // 2. Ensure user_global_stats exists
+  const { data: existingStats, error: statsFetchError } = await admin
+    .from("user_global_stats")
+    .select("user_id")
+    .eq("user_id", userId)
     .maybeSingle();
 
-  if (!aleRow?.id) return;
+  if (statsFetchError) {
+    console.error("Error fetching user stats:", statsFetchError);
+  }
 
-  const { error: insertExamProfileError } = await admin.from("exam_profiles").insert({
-    user_id: userId,
-    board_exam_id: aleRow.id,
-    target_exam_date: null,
-    is_active: true,
-    onboarding_completed: true,
-    onboarding_step: "onboarding_completed",
-  });
-  if (insertExamProfileError) return;
+  if (!existingStats && !statsFetchError) {
+    // Note: streak columns removed to match active schema
+    const { error: statsInsertError } = await admin.from("user_global_stats").insert({
+      user_id: userId,
+      current_discipline_id: null,
+      global_readiness_score: 0.0,
+    });
+    if (statsInsertError) {
+      console.error("Error inserting default stats:", statsInsertError);
+    }
+  }
 }

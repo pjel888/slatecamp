@@ -3,7 +3,7 @@
 ## 1. OPERATING CONTEXT & IDENTITY
 
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams.
-- **Aesthetic:** Apple HIG × Dieter Rams. Functional, minimalist, unobtrusive.
+- **Aesthetic:** Apple HIG (Human Interface Guidelines). Clean, intuitive, premium, and platform-native. Focused on clarity, deference, and depth.
 - **Voice:** The "Respected Mentor" — authoritative, honest, utilitarian. No toxic positivity. No catastrophizing.
 
 ## 2. STRICT EXECUTION PROTOCOL

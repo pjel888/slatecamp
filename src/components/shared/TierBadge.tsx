@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, Zap, Crown } from "lucide-react";
+import { Sparkles, Zap, Crown, Shield } from "lucide-react";
 import type { UserTier } from "@/types/app";
 
 const TIER_CONFIG: Record<
@@ -10,20 +10,22 @@ const TIER_CONFIG: Record<
   free: {
     label: "Free",
     icon: Sparkles,
-    className:
-      "bg-muted/60 text-muted-foreground border-border/60",
+    className: "bg-zinc-100 text-zinc-500 border-zinc-200",
   },
-  pro: {
-    label: "Pro",
+  camp: {
+    label: "Camp",
     icon: Zap,
-    className:
-      "bg-color-signal-blue/10 text-color-signal-blue border-color-signal-blue/30",
+    className: "bg-blue-50 text-blue-600 border-blue-100",
   },
-  max: {
-    label: "Max",
+  insurance: {
+    label: "Insurance",
+    icon: Shield,
+    className: "bg-emerald-50 text-emerald-600 border-emerald-100",
+  },
+  institutional: {
+    label: "Institutional",
     icon: Crown,
-    className:
-      "bg-color-result-gold/10 text-color-result-gold border-color-result-gold/30",
+    className: "bg-amber-50 text-amber-600 border-amber-100",
   },
 };
 
@@ -46,8 +48,8 @@ export function TierBadge({
   showIcon = true,
   className,
 }: TierBadgeProps) {
-  // If legacy "dev" value is passed, treat as "max" in dev mode
-  const resolvedTier: UserTier = tier === "dev" ? "max" : tier;
+  // If legacy "dev" value is passed, treat as "institutional" in dev mode
+  const resolvedTier: UserTier = tier === "dev" ? "institutional" : tier;
   const isDevMode = devMode || tier === "dev";
 
   const config = TIER_CONFIG[resolvedTier];

@@ -13,16 +13,22 @@ export function getStripe(): Stripe {
 }
 
 export const STRIPE_PLANS = {
-  pro: {
-    priceId: process.env.STRIPE_PRO_PRICE_ID ?? "",
-    name: "Pro",
+  camp: {
+    priceId: process.env.STRIPE_CAMP_PRICE_ID ?? "",
+    name: "Camp",
     amount: 499,
     currency: "php",
   },
-  max: {
-    priceId: process.env.STRIPE_MAX_PRICE_ID ?? "",
-    name: "Max",
-    amount: 999,
+  insurance: {
+    priceId: process.env.STRIPE_INSURANCE_PRICE_ID ?? "",
+    name: "Insurance",
+    amount: 1499,
+    currency: "php",
+  },
+  institutional: {
+    priceId: process.env.STRIPE_INSTITUTIONAL_PRICE_ID ?? "",
+    name: "Institutional",
+    amount: 4999,
     currency: "php",
   },
 } as const;

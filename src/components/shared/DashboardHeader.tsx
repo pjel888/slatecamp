@@ -19,9 +19,11 @@ export const DashboardHeader = () => {
         'border-b border-slatecamp-border ',
         'h-16',
         'flex flex-row',
+        'z-20',
+        'bg-slate-50',
       )}
     >
-      <div className='w-full flex max-w-[1200px] items-center justify-between gap-3'>
+      <div className='w-full flex max-w-full items-center justify-between gap-3'>
         <div className='flex flex-col'>
           <p className='pl-2 text-xl font-semibold tracking-tight text-slatecamp-ink-subtle'>
             {title}

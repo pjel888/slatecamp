@@ -33,7 +33,7 @@ export const MarketingNav = ({
     )
 
   const headerClass = cn(
-    'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl',
+    'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
       ? 'border-white/10 bg-zinc-900/80 text-white'
       : 'border-zinc-200 bg-white/80 text-zinc-900',
@@ -44,11 +44,17 @@ export const MarketingNav = ({
       <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
         {logoScrollsToTop ? (
           <a href='#top' className='inline-flex items-center'>
-            <SlateCampLogo size='md' variant={isDark ? 'inverted' : 'default'} />
+            <SlateCampLogo
+              size='md'
+              variant={isDark ? 'inverted' : 'default'}
+            />
           </a>
         ) : (
           <Link href='/' className='inline-flex items-center'>
-            <SlateCampLogo size='md' variant={isDark ? 'inverted' : 'default'} />
+            <SlateCampLogo
+              size='md'
+              variant={isDark ? 'inverted' : 'default'}
+            />
           </Link>
         )}
 

@@ -50,8 +50,8 @@ export async function getDailyMission(
   const phTime = new Date(now.getTime() + 8 * 60 * 60 * 1000);
   const todayPH = phTime.toISOString().split('T')[0];
 
-  // Priority 1: SRS Review (Pro/Max only)
-  if (tier === 'pro' || tier === 'max') {
+  // Priority 1: SRS Review (Paid tiers only)
+  if (tier !== 'free') {
     const { count: srsDueCount } = await supabase
       .from('srs_queue')
       .select('id', { count: 'exact', head: true })
@@ -110,7 +110,7 @@ export async function getDailyMission(
     .eq('exam_profile_id', examProfileId)
     .gte('created_at', weekAgo);
 
-  // Priority 2: Weak Area Drill (Pro/Max only per tier gating)
+  // Priority 2: Weak Area Drill (Paid tiers only per tier gating)
   const weakSubjects = masteryList
     .filter((m) => m.mastery_score < 55 && m.total_attempted > 10)
     .sort((a, b) => a.mastery_score - b.mastery_score);

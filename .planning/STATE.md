@@ -5,14 +5,14 @@
 
 ---
 
-## 📍 Current Phase: 0 — Initialization
+## 📍 Current Phase: 1 — Foundations (The Core Loop)
 
-- [x] Codebase mapped (`.planning/codebase/`).
-- [x] Schema extracted (`DATABASE_SCHEMA.sql`).
-- [x] Project identity defined (`PROJECT.md`, `CLAUDE.md`).
-- [x] Workflow config set (`config.json`).
-- [ ] Requirements scoped (`REQUIREMENTS.md`).
-- [ ] Roadmap structured (`ROADMAP.md`).
+- [x] Syllabus Infrastructure: Database setup, disciplines, and taxonomy hierarchy.
+- [x] The Wiki CMS: Markdown article renderer, sticky ToC, and Omnibar search.
+- [x] Camp Mode Quizzing: Basic question rendering, feedback, and rationales.
+- [x] Auth & Onboarding: Supabase Auth + profile setup for specific licensure exams.
+- [x] Aesthetic: Basic Apple HIG layout (Sidebar + Main Column).
+- [ ] Storm Mode (Phase 2).
 
 ## 🧱 Known Issues & Tech Debt
 

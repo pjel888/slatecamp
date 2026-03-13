@@ -32,8 +32,9 @@ interface DevToolbarProps {
 
 const TIER_CONFIG: Record<UserTier, { label: string; color: string }> = {
   free: { label: "Free", color: "bg-zinc-500" },
-  pro:  { label: "Pro",  color: "bg-blue-500" },
-  max:  { label: "Max",  color: "bg-amber-500" },
+  camp: { label: "Camp", color: "bg-blue-500" },
+  insurance: { label: "Insurance", color: "bg-indigo-500" },
+  institutional: { label: "Institutional", color: "bg-amber-500" },
 };
 
 const CONN_CONFIG: Record<DevConnectionState, { label: string; color: string; icon: typeof Wifi }> = {
@@ -103,7 +104,7 @@ export function DevToolbar({
       bypassAiGate: isLocal,
       bypassSrsGate: isLocal,
     });
-    setEffectiveTier(isLocal ? "max" : currentTier);
+    setEffectiveTier(isLocal ? "institutional" : currentTier);
     router.refresh();
   }
 
@@ -214,8 +215,8 @@ export function DevToolbar({
             <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
               Tier
             </span>
-            <div className="mt-1.5 grid grid-cols-3 gap-1">
-              {(["free", "pro", "max"] as UserTier[]).map((tier) => {
+            <div className="mt-1.5 grid grid-cols-2 gap-1">
+              {(["free", "camp", "insurance", "institutional"] as UserTier[]).map((tier) => {
                 const cfg = TIER_CONFIG[tier];
                 const isActive = effectiveTier === tier;
 

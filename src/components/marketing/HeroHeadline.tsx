@@ -42,11 +42,8 @@ export const HeroHeadline = () => {
   return (
     <h1 className={H1_CLASS}>
       <span ref={youllRef}>
-        <span ref={knowRef}>
-          {' '}
-          Know you&apos;ll
-          <span ref={winRef}> win. </span>
-        </span>
+        <span ref={knowRef}> Know you&apos;re </span>
+        <span ref={winRef}>ready.</span>
       </span>
     </h1>
   )

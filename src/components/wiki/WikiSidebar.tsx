@@ -1,145 +1,190 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ChevronRight, FileText, FolderOpen, AlertTriangle } from 'lucide-react'
-import { WIKI_SUBJECT_ICONS, DEFAULT_WIKI_ICON } from './wiki-icons'
-import type { WikiCategory, WikiPage } from '@/types/app'
+import { ChevronDown, ChevronRight, FileText, Book } from 'lucide-react'
+import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
+import type { TaxonomyNode } from '@/lib/actions/taxonomy'
+import { cn } from '@/lib/utils'
 
 interface WikiSidebarProps {
-  tree: WikiCategory[]
-  pagesByCategory: Record<string, Pick<WikiPage, 'id' | 'title' | 'slug' | 'is_deprecated'>[]>
+  disciplineId: string
+  disciplineName: string
 }
 
-function CategoryNode({
-  category,
-  pagesByCategory,
-  pathname,
-  depth = 0,
-  activeRootId,
-}: {
-  category: WikiCategory
-  pagesByCategory: WikiSidebarProps['pagesByCategory']
-  pathname: string
-  depth?: number
-  activeRootId?: string
-}) {
-  // Auto-expand only the subject that contains the active page; collapse all others
-  const defaultExpanded = depth === 0 ? category.id === activeRootId : false
-  const [expanded, setExpanded] = useState(defaultExpanded)
-  const pages = pagesByCategory[category.id] ?? []
-  const hasChildren = (category.children?.length ?? 0) > 0 || pages.length > 0
-  const isRoot = depth === 0
-
-  const SubjectIcon = isRoot
-    ? (WIKI_SUBJECT_ICONS[category.slug] ?? DEFAULT_WIKI_ICON)
-    : FolderOpen
-
-  const totalPages = isRoot
-    ? pages.length +
-      (category.children ?? []).reduce(
-        (sum, child) => sum + (pagesByCategory[child.id]?.length ?? 0),
-        0
-      )
-    : 0
-
-  return (
-    <div>
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className={`flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left text-[13px] transition-colors hover:bg-secondary/60 ${
-          isRoot ? 'font-medium text-foreground' : 'text-muted-foreground'
-        }`}
-        style={{ paddingLeft: `${8 + depth * 12}px` }}
-      >
-        {hasChildren ? (
-          <ChevronRight
-            className={`h-3.5 w-3.5 shrink-0 transition-transform ${expanded ? 'rotate-90' : ''}`}
-            strokeWidth={1.5}
-          />
-        ) : (
-          <span className="w-3.5 shrink-0" />
-        )}
-        <SubjectIcon className="h-3.5 w-3.5 shrink-0 text-muted-foreground" strokeWidth={1.5} />
-        <span className="truncate flex-1">{category.name}</span>
-        {isRoot && totalPages > 0 && (
-          <span className="text-[10px] text-muted-foreground tabular-nums">{totalPages}</span>
-        )}
-      </button>
-
-      {expanded && (
-        <div>
-          {category.children?.map((child) => (
-            <CategoryNode
-              key={child.id}
-              category={child}
-              pagesByCategory={pagesByCategory}
-              pathname={pathname}
-              depth={depth + 1}
-              activeRootId={activeRootId}
-            />
-          ))}
-          {pages.map((page) => {
-            const href = `/dashboard/wiki/${page.slug}`
-            const isActive = pathname === href
-            return (
-              <Link
-                key={page.id}
-                href={href}
-                className={`flex items-center gap-2 rounded-lg px-2 py-1.5 text-[13px] transition-colors ${
-                  isActive
-                    ? 'bg-secondary font-medium text-foreground'
-                    : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
-                } ${page.is_deprecated ? 'opacity-60' : ''}`}
-                style={{ paddingLeft: `${20 + (depth + 1) * 12}px` }}
-              >
-                {page.is_deprecated ? (
-                  <AlertTriangle
-                    className="h-3.5 w-3.5 shrink-0 text-color-signal-amber"
-                    strokeWidth={1.5}
-                  />
-                ) : (
-                  <FileText className="h-3.5 w-3.5 shrink-0" strokeWidth={1.5} />
-                )}
-                <span className="truncate">{page.title}</span>
-              </Link>
-            )
-          })}
-        </div>
-      )}
-    </div>
-  )
-}
-
-export function WikiSidebar({ tree, pagesByCategory }: WikiSidebarProps) {
+export function WikiSidebar({
+  disciplineId,
+  disciplineName,
+}: WikiSidebarProps) {
   const pathname = usePathname()
+  const [nodes, setNodes] = useState<TaxonomyNode[]>([])
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+  const [loading, setLoading] = useState(true)
 
-  // Determine which root subject contains the active page
-  const activeRootId = tree.find((root) => {
-    const rootPageSlugs = (pagesByCategory[root.id] ?? []).map((p) => `/dashboard/wiki/${p.slug}`)
-    if (rootPageSlugs.includes(pathname)) return true
-    return (root.children ?? []).some((child) =>
-      (pagesByCategory[child.id] ?? []).some((p) => `/dashboard/wiki/${p.slug}` === pathname)
-    )
-  })?.id
+  useEffect(() => {
+    if (disciplineId) {
+      setLoading(true)
+      getTaxonomyTree(disciplineId).then((data) => {
+        setNodes(data)
+        // Auto-expand nodes that contain the active slug
+        const activeNode = data.find((n) => n.slug && pathname.includes(n.slug))
+        if (activeNode?.parent_id) {
+          setExpanded((prev) => ({ ...prev, [activeNode.parent_id!]: true }))
+        }
+        setLoading(false)
+      })
+    }
+  }, [disciplineId, pathname])
 
+  const toggle = (id: string) => {
+    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  const rootNodes = nodes.filter((n) => n.level === 1)
+  console.log('rootNodes', rootNodes)
   return (
-    <aside className="hidden lg:block w-[280px] shrink-0 border-r border-border/40 overflow-y-auto">
-      <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border/40 px-4 py-3">
-        <h2 className="text-sm font-semibold text-foreground tracking-tight">Subjects</h2>
+    <aside className='w-64 shrink-0 border-r border-zinc-200 bg-zinc-50/50 h-full overflow-y-auto rounded-tl-xl'>
+      <div className='p-2'>
+        <div className='flex items-center gap-2 mb-6'>
+          <div className='bg-blue-600 rounded-md p-1'>
+            <Book className='h-4 w-4 text-white' />
+          </div>
+          <h2 className='text-sm font-semibold text-zinc-900 truncate'>
+            {disciplineName}
+          </h2>
+        </div>
+
+        <nav className='space-y-1'>
+          <div className='text-[10px] font-bold text-zinc-400 uppercase tracking-[0.1em] mb-3'>
+            Taxonomy
+          </div>
+
+          {loading ? (
+            <div className='space-y-3 pt-2'>
+              <div className='h-3 w-3/4 bg-zinc-200 animate-pulse rounded' />
+              <div className='h-3 w-1/2 bg-zinc-200 animate-pulse rounded' />
+              <div className='h-3 w-2/3 bg-zinc-200 animate-pulse rounded' />
+            </div>
+          ) : (
+            <div className='space-y-1'>
+              {rootNodes.map((node) => {
+                const children = nodes.filter(
+                  (n) => n.parent_id === node.node_id,
+                )
+
+                const hasActiveChild = children.some(
+                  (child) => child.slug && pathname.includes(child.slug),
+                )
+
+                const hasActiveArticle =
+                  node.articles?.some((article) =>
+                    pathname.includes(article.slug || ''),
+                  ) ?? false
+
+                const isActiveBranch = hasActiveChild || hasActiveArticle
+                const isExpanded = expanded[node.node_id]
+
+                return (
+                  <div key={node.node_id} className='space-y-0.5'>
+                    <button
+                      onClick={() => toggle(node.node_id)}
+                      className={cn(
+                        'w-full flex items-center justify-between py-1.5 px-2 text-[13px] font-medium rounded-md transition-all group',
+                        isActiveBranch
+                          ? 'text-blue-700'
+                          : 'text-zinc-700 hover:bg-white hover:shadow-sm',
+                      )}
+                    >
+                      <div className='flex items-center gap-2 min-w-0'>
+                        {isExpanded ? (
+                          <ChevronDown
+                            className={cn(
+                              'h-3.5 w-3.5',
+                              isActiveBranch ? 'text-blue-500' : 'text-zinc-400',
+                            )}
+                          />
+                        ) : (
+                          <ChevronRight
+                            className={cn(
+                              'h-3.5 w-3.5',
+                              isActiveBranch ? 'text-blue-500' : 'text-zinc-400',
+                            )}
+                          />
+                        )}
+                        <span className='truncate'>{node.name}</span>
+                      </div>
+                    </button>
+
+                    {isExpanded && (
+                      <div
+                        className={cn(
+                          'ml-3.5 pl-3 border-l mt-0.5 mb-1 space-y-0.5',
+                          isActiveBranch
+                            ? 'border-blue-300'
+                            : 'border-zinc-200/60',
+                        )}
+                      >
+                        {children.map((child) => (
+                          <Link
+                            key={child.node_id}
+                            href={`/dashboard/wiki/${child.slug ?? ''}`}
+                            className={cn(
+                              'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-md transition-all',
+                              child.slug && pathname.includes(child.slug)
+                                ? 'bg-blue-50 text-blue-700 font-medium'
+                                : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
+                            )}
+                          >
+                            <FileText
+                              className={cn(
+                                'h-3 w-3 shrink-0',
+                                child.slug && pathname.includes(child.slug)
+                                  ? 'text-blue-500'
+                                  : 'text-zinc-300',
+                              )}
+                            />
+                            <span className='truncate'>{child.name}</span>
+                          </Link>
+                        ))}
+
+                        {node.articles && node.articles.length > 0 && (
+                          <div className='pt-1 space-y-0.5'>
+                            {node.articles.map((article) => (
+                              <Link
+                                key={article.article_id}
+                                href={`/dashboard/wiki/${article.slug}`}
+                                className={cn(
+                                  'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-md transition-all',
+                                  pathname.includes(article.slug || '')
+                                    ? 'bg-blue-50 text-blue-700 font-medium'
+                                    : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
+                                )}
+                              >
+                                <FileText
+                                  className={cn(
+                                    'h-3 w-3 shrink-0',
+                                    pathname.includes(article.slug || '')
+                                      ? 'text-blue-500'
+                                      : 'text-zinc-300',
+                                  )}
+                                />
+                                <span className='truncate'>
+                                  {article.title}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          )}
+        </nav>
       </div>
-      <nav className="p-2 space-y-0.5">
-        {tree.map((root) => (
-          <CategoryNode
-            key={root.id}
-            category={root}
-            pagesByCategory={pagesByCategory}
-            pathname={pathname}
-            activeRootId={activeRootId}
-          />
-        ))}
-      </nav>
     </aside>
   )
 }

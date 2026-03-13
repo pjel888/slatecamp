@@ -49,11 +49,13 @@ export const PROFESSIONS: {
 
 export const TIER_LIMITS = {
   free: { questionsPerDay: 50, aiTokens: 0, savedConfigs: 0 },
-  pro: { questionsPerDay: Infinity, aiTokens: 1000, savedConfigs: 10 },
-  max: { questionsPerDay: Infinity, aiTokens: Infinity, savedConfigs: Infinity },
+  camp: { questionsPerDay: Infinity, aiTokens: 1000, savedConfigs: 10 },
+  insurance: { questionsPerDay: Infinity, aiTokens: 10000, savedConfigs: 100 },
+  institutional: { questionsPerDay: Infinity, aiTokens: Infinity, savedConfigs: Infinity },
 } as const;
 
 export const TIER_PRICES = {
-  pro: { amount: 499, currency: "PHP", label: "₱499/mo" },
-  max: { amount: 999, currency: "PHP", label: "₱999/mo" },
+  camp: { amount: 499, currency: "PHP", label: "₱499/mo" },
+  insurance: { amount: 999, currency: "PHP", label: "₱999/mo" },
+  institutional: { amount: 1499, currency: "PHP", label: "₱1499/mo" },
 } as const;
