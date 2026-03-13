@@ -77,18 +77,18 @@ export function BottomNav() {
       {/* Floating Navigation Bar */}
       <nav
         className={cn(
-          'fixed left-1/2 -translate-x-1/2 z-40',
+          'fixed left-1/2 -translate-x-1/2 z-[100]',
           'flex items-center justify-center gap-1.5',
           'px-3 py-2.5',
-          'bg-slatecamp-paper-snow/90 dark:bg-slatecamp-ink-slate-black/90',
+          'bg-slatecamp-paper-snow/95 dark:bg-slatecamp-ink-slate-black/95',
           'backdrop-blur-xl backdrop-saturate-150',
-          'border border-slatecamp-border/50 dark:border-slatecamp-border/30',
+          'border border-slatecamp-border/60 dark:border-slatecamp-border/40',
           'rounded-2xl',
           'shadow-[0_1px_3px_rgba(26,26,26,0.06),0_8px_24px_rgba(0,0,0,0.08)]',
           'dark:shadow-[0_1px_3px_rgba(0,0,0,0.3),0_8px_24px_rgba(0,0,0,0.4)]',
           'transition-all duration-150 ease',
-          // Responsive: hide on large screens where sidebar is visible
-          'lg:hidden',
+          // Temporarily visible on all screens for testing
+          // 'lg:hidden', // Uncomment to hide on desktop
         )}
         style={{
           // Position with safe-area inset for mobile devices (iOS home indicator, etc.)
