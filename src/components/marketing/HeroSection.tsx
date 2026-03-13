@@ -419,7 +419,7 @@ export const HeroSection = ({
                 className='flex flex-col gap-1 text-blue-500'
                 aria-label='Board exam preparation platform.'
               >
-                <div className='flex flex-row items-center gap-2'>
+                <div className='flex flex-row items-center gap-2 mb-4'>
                   <Starburst className='h-4 w-4' />
                   <span className='font-mono text-[11px] tracking-[0.25em] font-bold uppercase'>
                     Board exam preparation platform.{' '}
@@ -431,13 +431,7 @@ export const HeroSection = ({
             <HeroHeadline />
           </div>
 
-          <div className='mb-4 flex h-full flex-col justify-start'>
-            <div>
-              <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-zinc-700 font-medium'>
-                Study with precision. Pass with confidence.
-              </p>
-            </div>
-
+          <div className=' flex h-full flex-col justify-start pt-8'>
             <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
