@@ -32,34 +32,24 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     icon: Globe,
   },
   {
-    path: '/dashboard/notes',
-    title: 'Notes',
-    icon: FileText,
-  },
-  {
     path: '/dashboard/testing',
     title: 'Testing',
     icon: Brain,
   },
   {
-    path: '/dashboard/analytics',
-    title: 'Analytics',
-    icon: BarChart3,
+    path: '/dashboard/notes',
+    title: 'Notes',
+    icon: FileText,
   },
-  // {
-  //   path: '/dashboard/sessions',
-  //   title: 'Sessions',
-  //   icon: Box,
-  // },
-  // {
-  //   path: '/dashboard/review',
-  //   title: 'Review Mode',
-  //   icon: Globe,
-  // },
   {
     path: '/dashboard/3d-lab',
     title: '3D Lab',
     icon: Box,
+  },
+  {
+    path: '/dashboard/analytics',
+    title: 'Analytics',
+    icon: BarChart3,
   },
   {
     path: '/dashboard/settings',

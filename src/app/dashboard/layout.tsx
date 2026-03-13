@@ -128,7 +128,7 @@ export default async function DashboardLayout({
                 <Navbar isAdmin={isAdmin} />
                 <DashboardHeader />
                 <main className='flex-1 overflow-y-auto pb-20 lg:pb-0'>
-                  <SharedPageLayout> {children}</SharedPageLayout>
+                  {children}
                 </main>
                 <BottomNav />
               </BreadcrumbProvider>
