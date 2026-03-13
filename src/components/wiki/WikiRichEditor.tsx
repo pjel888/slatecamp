@@ -49,7 +49,6 @@ export function WikiRichEditor({
 }: WikiRichEditorProps) {
   const [, setToolbarUpdate] = useState(0)
   const onChangeRef = useRef(onChange)
-  onChangeRef.current = onChange
   const lastEmittedMarkdown = useRef<string | null>(null)
 
   const editor = useEditor({
@@ -79,6 +78,10 @@ export function WikiRichEditor({
       onChangeRef.current(md)
     },
   })
+
+  useEffect(() => {
+    onChangeRef.current = onChange
+  }, [onChange])
 
   // Initial content and external value sync: when value prop differs from what we last emitted, load it
   useEffect(() => {

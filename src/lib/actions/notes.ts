@@ -34,7 +34,7 @@ export async function getNotesList(): Promise<NoteStub[]> {
     .order('updated_at', { ascending: false })
 
   if (error) return []
-  return (data ?? []).map((row) => ({
+  return (data ?? []).map((row: { id: string; title: string; updated_at: string; is_pinned: boolean; content?: unknown }) => ({
     id: row.id,
     title: row.title,
     updated_at: row.updated_at,
@@ -73,7 +73,7 @@ export async function createNote(
   if (input) {
     const parseResult = createNoteSchema.safeParse(input)
     if (!parseResult.success) {
-      return { error: parseResult.error.errors[0]?.message || 'Invalid input' }
+      return { error: parseResult.error.issues[0]?.message || 'Invalid input' }
     }
   }
 
@@ -108,7 +108,7 @@ export async function updateNote(
   // Validate input
   const parseResult = updateNoteSchema.safeParse({ id, ...updates })
   if (!parseResult.success) {
-    return { error: parseResult.error.errors[0]?.message || 'Invalid input' }
+    return { error: parseResult.error.issues[0]?.message || 'Invalid input' }
   }
 
   const { id: validId, title, content, is_pinned } = parseResult.data

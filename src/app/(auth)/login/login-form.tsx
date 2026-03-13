@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 
-export function LoginForm() {
+export function LoginFormInner() {
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
   const searchParams = useSearchParams();
@@ -58,5 +58,13 @@ export function LoginForm() {
         access your account and don&apos;t post without your permission.
       </p>
     </div>
+  );
+}
+
+export function LoginForm() {
+  return (
+    <Suspense fallback={null}>
+      <LoginFormInner />
+    </Suspense>
   );
 }

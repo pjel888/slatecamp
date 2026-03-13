@@ -429,51 +429,20 @@ import {
   DottedGridOverlay,
   ReadinessDial,
 } from '@/components/marketing/LandingPrimitives'
-import {
-  ROUTES,
-  SLATECAMP_SAGE,
-  SLATECAMP_INK,
-  SLATECAMP_PAPER,
-  SLATECAMP_BORDER,
-  SLATECAMP_AMBER,
-  hexToRgba,
-} from '@/lib/constants'
-import { cn, suggestCanonicalClasses } from '@/lib/utils'
+import { ROUTES } from '@/lib/constants'
+import { cn } from '@/lib/utils'
 
 /* ── Dashboard Mockup Peek ── */
 
-// Pre-calculated color tokens for cleaner component
-const DASHBOARD_COLORS = {
-  windowChromeBg: SLATECAMP_PAPER.cool,
-  windowChromeBorder: SLATECAMP_BORDER.DEFAULT,
-  windowChromeIcons: SLATECAMP_INK.main,
-}
-
 const DashboardPeek = () => (
   <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
-    <div
-      className='relative overflow-hidden rounded-t-2xl border border-b-0 shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'
-      style={{
-        height: '140px',
-        borderColor: SLATECAMP_BORDER.DEFAULT,
-        backgroundColor: SLATECAMP_PAPER.snow,
-      }}
-    >
+    <div className='relative h-[140px] overflow-hidden rounded-t-2xl border border-b-0 border-zinc-200 bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
       {/* Fake window chrome */}
-      <div
-        className='flex items-center gap-1.5 border-b px-4 py-2.5'
-        style={{
-          borderColor: DASHBOARD_COLORS.windowChromeBorder,
-          backgroundColor: DASHBOARD_COLORS.windowChromeBg,
-        }}
-      >
-        <div className='h-2.5 w-2.5 rounded-full bg-[#FF5F57]' />
-        <div className='h-2.5 w-2.5 rounded-full bg-[#FEBC2E]' />
-        <div className='h-2.5 w-2.5 rounded-full bg-[#28C840]' />
-        <span
-          className='ml-3 text-[10px] text-slatecamp-ink-subtle'
-          style={{ color: hexToRgba(DASHBOARD_COLORS.windowChromeIcons, 0.3) }}
-        >
+      <div className='flex items-center gap-1.5 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5'>
+        <div className='h-2.5 w-2.5 rounded-full bg-red-400' />
+        <div className='h-2.5 w-2.5 rounded-full bg-amber-400' />
+        <div className='h-2.5 w-2.5 rounded-full bg-green-500' />
+        <span className='ml-3 text-[10px] text-zinc-500'>
           SlateCamp Dashboard
         </span>
       </div>
@@ -481,89 +450,32 @@ const DashboardPeek = () => (
       <div className='flex gap-4 px-5 py-3'>
         {/* Sidebar */}
         <div className='hidden w-[140px] shrink-0 space-y-2 sm:block'>
-          <div
-            className='h-2 w-20 rounded'
-            style={{
-              backgroundColor: hexToRgba(
-                DASHBOARD_COLORS.windowChromeIcons,
-                0.06,
-              ),
-            }}
-          />
-          <div
-            className='h-2 w-16 rounded'
-            style={{
-              backgroundColor: hexToRgba(
-                DASHBOARD_COLORS.windowChromeIcons,
-                0.2,
-              ),
-            }}
-          />
-          <div
-            className='h-2 w-24 rounded'
-            style={{
-              backgroundColor: hexToRgba(
-                DASHBOARD_COLORS.windowChromeIcons,
-                0.06,
-              ),
-            }}
-          />
-          <div
-            className='h-2 w-20 rounded'
-            style={{
-              backgroundColor: hexToRgba(
-                DASHBOARD_COLORS.windowChromeIcons,
-                0.06,
-              ),
-            }}
-          />
+          <div className='h-2 w-20 rounded bg-zinc-200' />
+          <div className='h-2 w-16 rounded bg-zinc-300' />
+          <div className='h-2 w-24 rounded bg-zinc-200' />
+          <div className='h-2 w-20 rounded bg-zinc-200' />
         </div>
         {/* Main Content */}
         <div className='flex-1 space-y-2'>
           <div className='flex gap-3'>
-            <div
-              className='h-14 w-14 shrink-0 rounded-xl'
-              style={{
-                backgroundColor: hexToRgba(
-                  DASHBOARD_COLORS.windowChromeIcons,
-                  0.1,
-                ),
-              }}
-            />
+            <div className='h-14 w-14 shrink-0 rounded-xl bg-zinc-200' />
             <div className='flex-1 space-y-1.5 pt-1'>
-              <div
-                className='h-2.5 w-32 rounded'
-                style={{
-                  backgroundColor: hexToRgba(
-                    DASHBOARD_COLORS.windowChromeIcons,
-                    0.08,
-                  ),
-                }}
-              />
-              <div
-                className='h-2 w-48 rounded'
-                style={{
-                  backgroundColor: hexToRgba(
-                    DASHBOARD_COLORS.windowChromeIcons,
-                    0.04,
-                  ),
-                }}
-              />
+              <div className='h-2.5 w-32 rounded bg-zinc-300' />
+              <div className='h-2 w-48 rounded bg-zinc-200' />
             </div>
           </div>
           <div className='flex gap-2'>
             {[
-              SLATECAMP_SAGE.DEFAULT,
-              SLATECAMP_INK.main,
-              SLATECAMP_INK.main,
-              SLATECAMP_SAGE.DEFAULT,
-              SLATECAMP_SAGE.DEFAULT,
-              SLATECAMP_INK.main,
-            ].map((c, i) => (
+              'bg-green-500',
+              'bg-blue-600',
+              'bg-blue-600',
+              'bg-green-500',
+              'bg-green-500',
+              'bg-blue-600',
+            ].map((colorClass, i) => (
               <div
                 key={i}
-                className='h-6 w-6 shrink-0 rounded-full'
-                style={{ backgroundColor: c, opacity: 0.2 }}
+                className={`h-6 w-6 shrink-0 rounded-full opacity-20 ${colorClass}`}
                 role='img'
                 aria-label={`Mockup element ${i + 1}`}
               />
@@ -572,12 +484,7 @@ const DashboardPeek = () => (
         </div>
       </div>
       {/* Gradient fade at the bottom */}
-      <div
-        className='pointer-events-none absolute inset-x-0 bottom-0 h-12'
-        style={{
-          background: `linear-gradient(to top, ${SLATECAMP_PAPER.snow}, transparent)`,
-        }}
-      />
+      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white to-transparent' />
     </div>
   </div>
 )
@@ -588,22 +495,22 @@ const SUPPORTED_EXAMS = [
   {
     name: 'Architecture (ALE)',
     status: 'Live',
-    statusColor: SLATECAMP_SAGE.DEFAULT,
+    tone: 'live' as const,
   },
   {
     name: 'Interior Design',
     status: 'In development',
-    statusColor: SLATECAMP_INK.subtle,
+    tone: 'upcoming' as const,
   },
   {
     name: 'Civil Engineering',
     status: 'Waitlist',
-    statusColor: SLATECAMP_INK.subtle,
+    tone: 'upcoming' as const,
   },
   {
     name: 'Nursing (PNLE)',
     status: 'Upcoming',
-    statusColor: SLATECAMP_INK.subtle,
+    tone: 'upcoming' as const,
   },
 ] as const
 
@@ -631,10 +538,10 @@ const STATS = [
 // Card 1: Supported Exams (Back Left)
 const ExamsSupportedCard = () => (
   <div
-    className='order-2 w-full max-w-[280px] rounded-xl border border-slatecamp-ink-main/10 bg-slatecamp-paper-cool p-5 shadow-[0_10px_30px_rgba(29,29,31,0.06)] transition-all duration-300 md:absolute md:left-4 md:top-4 md:order-none md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+    className='order-2 w-full max-w-[280px] rounded-xl border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:left-4 md:top-4 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
     aria-hidden='true'
   >
-    <p className='mb-3 text-[11px] font-semibold uppercase tracking-wider text-slatecamp-ink-subtle'>
+    <p className='mb-3 text-[11px] font-semibold uppercase tracking-wider text-zinc-500'>
       Supported exams
     </p>
     <ul className='space-y-2.5'>
@@ -643,31 +550,18 @@ const ExamsSupportedCard = () => (
           <span
             className={cn(
               'text-sm font-medium',
-              exam.status === 'Live'
-                ? 'text-slatecamp-ink-main'
-                : 'text-slatecamp-ink-muted',
+              exam.tone === 'live' ? 'text-zinc-900' : 'text-zinc-600',
             )}
           >
             {exam.name}
           </span>
-          {exam.status === 'Live' ? (
-            <span
-              className='inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold'
-              style={{
-                backgroundColor: hexToRgba(exam.statusColor, 0.15),
-                color: exam.statusColor,
-              }}
-            >
-              <span
-                className='h-1.5 w-1.5 rounded-full'
-                style={{ backgroundColor: exam.statusColor }}
-              />
+          {exam.tone === 'live' ? (
+            <span className='inline-flex items-center gap-1 rounded-full bg-green-50 px-2 py-0.5 text-[10px] font-semibold text-green-700'>
+              <span className='h-1.5 w-1.5 rounded-full bg-green-600' />
               Live
             </span>
           ) : (
-            <span className='text-[10px] text-slatecamp-ink-subtle'>
-              {exam.status}
-            </span>
+            <span className='text-[10px] text-zinc-500'>{exam.status}</span>
           )}
         </li>
       ))}
@@ -679,48 +573,39 @@ const ExamsSupportedCard = () => (
 const MockQuestionCard = () => {
   return (
     <div
-      className='order-3 w-full max-w-[280px] rounded-xl border border-slatecamp-ink-main/10 bg-slatecamp-paper-cool p-5 shadow-[0_10px_30px_rgba(29,29,31,0.06)] transition-all duration-300 md:absolute md:right-4 md:top-4 md:order-none md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+      className='order-3 w-full max-w-[280px] rounded-xl border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
-      <span
-        className='mb-2 inline-block rounded px-2 py-0.5 text-[10px] font-medium'
-        style={{
-          backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.08),
-          color: SLATECAMP_INK.main,
-        }}
-      >
+      <span className='mb-2 inline-block rounded bg-zinc-100 px-2 py-0.5 text-[10px] font-medium text-zinc-900'>
         {MOCK_QUESTION.topic}
       </span>
-      <p className='mb-3 text-[12px] leading-snug text-slatecamp-ink-main'>
+      <p className='mb-3 text-[12px] leading-snug text-zinc-900'>
         {MOCK_QUESTION.question}
       </p>
       <div className='space-y-1.5'>
         {MOCK_QUESTION.options.map((opt) => {
           const isCorrect = opt.state === 'correct'
           const isIncorrect = opt.state === 'incorrect'
-          const neutralStyle = {
-            borderColor: hexToRgba(SLATECAMP_INK.main, 0.1),
-          }
 
           return (
             <div
               key={opt.label}
               className={cn(
-                'flex items-center gap-2 rounded-md border px-2.5 py-1.5 text-[11px] text-slatecamp-ink-main transition-colors',
-                isCorrect && 'border-green-400 bg-green-50/10 text-green-800',
-                isIncorrect && 'border-red-400 bg-red-50/10 text-red-800',
-                !isCorrect && !isIncorrect && 'hover:bg-slatecamp-ink-main/5',
+                'flex items-center gap-2 rounded-md border px-2.5 py-1.5 text-[11px] transition-colors',
+                isCorrect && 'border-green-400 bg-green-50 text-green-800',
+                isIncorrect && 'border-red-400 bg-red-50 text-red-800',
+                !isCorrect &&
+                  !isIncorrect &&
+                  'border-zinc-200 bg-white text-zinc-800 hover:bg-zinc-50',
               )}
             >
               <span
-                className='h-2 w-2 shrink-0 rounded-full'
-                style={{
-                  backgroundColor: isCorrect
-                    ? SLATECAMP_SAGE.DEFAULT
-                    : isIncorrect
-                      ? SLATECAMP_INK.main
-                      : hexToRgba(SLATECAMP_INK.main, 0.3),
-                }}
+                className={cn(
+                  'h-2 w-2 shrink-0 rounded-full',
+                  isCorrect && 'bg-green-600',
+                  isIncorrect && 'bg-red-600',
+                  !isCorrect && !isIncorrect && 'bg-zinc-400',
+                )}
                 aria-hidden='true'
               />
               {opt.label}
@@ -734,11 +619,11 @@ const MockQuestionCard = () => {
 
 // Card 3: Conversion Hook (Front Center)
 const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
-  <div className='h-[400px] order-1 z-20 w-full max-w-[300px] rounded-xl border border-slatecamp-ink-main/10 bg-slatecamp-paper-snow p-6 shadow-[0_20px_50px_rgba(29,29,31,0.08)] transition-transform duration-300 hover:scale-[1.01] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:p-8'>
-    <h3 className='text-lg font-bold tracking-tight text-slatecamp-ink-main'>
+  <div className='h-[400px] order-1 z-20 w-full max-w-[300px] rounded-xl border border-zinc-200 bg-white p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] transition-transform duration-150 hover:scale-[1.01] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:p-8'>
+    <h3 className='text-lg font-bold tracking-tight text-zinc-900'>
       Are you actually ready?
     </h3>
-    <p className='mt-3 text-[13px] leading-snug text-slatecamp-ink-muted'>
+    <p className='mt-3 text-[13px] leading-snug text-zinc-600'>
       The board exam is unforgiving. Stop guessing and see exactly where you
       stand today.
     </p>
@@ -746,11 +631,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
       <ReadinessDial value={64} label='Needs Work' />
       <Link
         href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
-        className='mt-2 w-full rounded-full px-5 py-2.5 text-center text-[14px] font-semibold transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2'
-        style={{
-          backgroundColor: SLATECAMP_AMBER.DEFAULT,
-          color: SLATECAMP_PAPER.snow,
-        }}
+        className='mt-2 w-full rounded-full bg-blue-600 px-5 py-2.5 text-center text-[14px] font-semibold text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
         aria-label='Get Your Score'
       >
         Get Your Score
@@ -803,9 +684,9 @@ export const HeroSection = ({
       <div className='relative grid h-[600px] grid-cols-1 items-start gap-8 md:grid-cols-12 md:items-center'>
         {/* Left: Giant headline */}
         <div className='md:col-span-7 h-full flex flex-col justify-start'>
-          <div className='landing-reveal flex items-center gap-3 mb-4'>
+          <div className='landing-reveal mb-4 flex items-center gap-3'>
             <div
-              className='flex flex-row items-center gap-2 text-slatecamp-amber'
+              className='flex flex-row items-center gap-2 text-blue-500'
               role='img'
               aria-label='Featured badge'
             >
@@ -818,28 +699,24 @@ export const HeroSection = ({
 
           <HeroHeadline />
 
-          <div className='flex flex-col h-full justify-between mb-4'>
+          <div className='mb-4 flex h-full flex-col justify-between'>
             <div>
-              <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-slatecamp-ink-muted'>
+              <p className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-zinc-600'>
                 Most reviewees walk into the exam hoping they studied the right
                 things. <br />{' '}
               </p>
-              <p className='text-md font-bold text-slatecamp-ink-main'>
+              <p className='text-md font-bold text-zinc-900'>
                 SlateCamp users walk in knowing.
               </p>
             </div>
 
             <div className='landing-reveal landing-delay-4 mt-8 flex flex-row items-center justify-end gap-3'>
-              <p className='landing-reveal landing-delay-5 flex justify-start font-semibold text-[12px] text-slatecamp-ink-subtle'>
+              <p className='landing-reveal landing-delay-5 flex justify-start text-[12px] font-semibold text-zinc-500'>
                 Free forever to start &middot; No credit card required
               </p>
               <Link
                 href={ctaHref}
-                className='rounded-full px-7 py-3 text-[15px] font-medium transition-all duration-150 hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2'
-                style={{
-                  backgroundColor: SLATECAMP_AMBER.burntRedOrange,
-                  color: SLATECAMP_PAPER.snow,
-                }}
+                className='rounded-full bg-blue-600 px-7 py-3 text-[15px] font-medium text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
               >
                 {ctaLabel}
               </Link>
@@ -847,19 +724,14 @@ export const HeroSection = ({
           </div>
 
           {/* Stats Bar */}
-          <div
-            className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t pt-3'
-            style={{ borderColor: SLATECAMP_BORDER.DEFAULT }}
-          >
+          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-zinc-200 pt-3'>
             {STATS.map((stat) => (
               <span
                 key={stat}
-                className='flex items-center gap-2 text-[12px]'
-                style={{ color: SLATECAMP_INK.faint }}
+                className='flex items-center gap-2 text-[12px] text-zinc-400'
               >
                 <span
-                  className='h-1 w-1 rounded-full'
-                  style={{ backgroundColor: SLATECAMP_INK.main }}
+                  className='h-1 w-1 rounded-full bg-zinc-900'
                   aria-hidden='true'
                 />
                 {stat}

@@ -1,12 +1,7 @@
 import Link from 'next/link'
 import { ROUTES } from '@/lib/constants/routes'
-import {
-  SLATECAMP_COBALT,
-  SLATECAMP_INK,
-  SLATECAMP_PAPER,
-  hexToRgba,
-} from '@/lib/constants'
 import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
+import { cn } from '@/lib/utils'
 
 const NAV_LINKS = [
   { href: ROUTES.PRICING, label: 'Pricing' },
@@ -25,26 +20,27 @@ export const MarketingNav = ({
 }) => {
   const isDark = variant === 'dark'
 
-  const linkStyle = (href: string) =>
-    activeRoute === href
-      ? { color: isDark ? '#fff' : SLATECAMP_INK.main }
-      : { color: isDark ? 'rgba(255,255,255,0.5)' : SLATECAMP_INK.muted }
+  const linkClass = (href: string) =>
+    cn(
+      'rounded-md px-3 py-3 transition-colors duration-150',
+      activeRoute === href
+        ? isDark
+          ? 'text-white'
+          : 'text-zinc-900'
+        : isDark
+          ? 'text-white/60 hover:text-white'
+          : 'text-zinc-500 hover:text-zinc-800',
+    )
 
-  const headerStyle = isDark
-    ? {
-        borderColor: 'rgba(255,255,255,0.06)',
-        backgroundColor: hexToRgba(SLATECAMP_INK.main, 0.8),
-      }
-    : {
-        borderColor: hexToRgba(SLATECAMP_INK.main, 0.06),
-        backgroundColor: hexToRgba(SLATECAMP_PAPER.DEFAULT, 0.8),
-      }
+  const headerClass = cn(
+    'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl',
+    isDark
+      ? 'border-white/10 bg-zinc-900/80 text-white'
+      : 'border-zinc-200 bg-white/80 text-zinc-900',
+  )
 
   return (
-    <header
-      className='fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl'
-      style={headerStyle}
-    >
+    <header className={headerClass}>
       <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
         {logoScrollsToTop ? (
           <a href='#top' className='inline-flex items-center'>
@@ -57,53 +53,32 @@ export const MarketingNav = ({
         )}
 
         <nav
-          className='hidden items-center gap-1 text-[13px] sm:flex'
-          style={{
-            color: isDark ? 'rgba(255,255,255,0.5)' : SLATECAMP_INK.muted,
-          }}
+          className={cn(
+            'hidden items-center gap-1 text-[13px] sm:flex',
+            isDark ? 'text-white/60' : 'text-zinc-500',
+          )}
         >
           {activeRoute === '/' ? (
             <>
-              <a
-                href='#features'
-                className='rounded-md px-3 py-3 transition-colors duration-150 hover:opacity-100'
-                style={linkStyle('/')}
-              >
+              <a href='#features' className={linkClass('/')}>
                 Features
               </a>
-              <a
-                href='#how-it-works'
-                className='rounded-md px-3 py-3 transition-colors duration-150 hover:opacity-100'
-                style={linkStyle('/')}
-              >
+              <a href='#how-it-works' className={linkClass('/')}>
                 How it works
               </a>
             </>
           ) : (
             <>
-              <Link
-                href='/#features'
-                className='rounded-md px-3 py-3 transition-colors duration-150 hover:opacity-100'
-                style={linkStyle('/')}
-              >
+              <Link href='/#features' className={linkClass('/')}>
                 Features
               </Link>
-              <Link
-                href='/#how-it-works'
-                className='rounded-md px-3 py-3 transition-colors duration-150 hover:opacity-100'
-                style={linkStyle('/')}
-              >
+              <Link href='/#how-it-works' className={linkClass('/')}>
                 How it works
               </Link>
             </>
           )}
           {NAV_LINKS.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className='rounded-md px-3 py-3 transition-colors duration-150'
-              style={linkStyle(href)}
-            >
+            <Link key={href} href={href} className={linkClass(href)}>
               {label}
             </Link>
           ))}
@@ -112,17 +87,23 @@ export const MarketingNav = ({
         <div className='flex items-center gap-2'>
           <Link
             href={ROUTES.LOGIN}
-            className='hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block hover:opacity-100'
-            style={{
-              color: isDark ? 'rgba(255,255,255,0.5)' : SLATECAMP_INK.muted,
-            }}
+            className={cn(
+              'hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block',
+              isDark
+                ? 'text-white/60 hover:text-white'
+                : 'text-zinc-500 hover:text-zinc-800',
+            )}
           >
             Log in
           </Link>
           <Link
             href={ROUTES.REGISTER}
-            className='rounded-full px-5 py-3 text-[13px] font-medium transition-opacity duration-150 hover:opacity-90'
-            style={{ backgroundColor: SLATECAMP_INK.main, color: '#fff' }}
+            className={cn(
+              'rounded-full px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
+              isDark
+                ? 'bg-blue-600 hover:bg-blue-700'
+                : 'bg-blue-600 hover:bg-blue-700',
+            )}
           >
             Get Started
           </Link>

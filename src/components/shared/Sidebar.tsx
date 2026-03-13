@@ -62,7 +62,7 @@ const ICON_SIZE = 'h-[18px] w-[18px]'
 /** * Premium Collapsed Logomark
  */
 const Logomark = () => (
-  <div className='flex h-8 w-8 items-center justify-center rounded-sm bg-slatecamp-ink-main text-slatecamp-paper shadow-sm'>
+  <div className='flex h-8 w-8 items-center justify-center rounded-sm bg-zinc-900 text-zinc-50 shadow-sm'>
     <span className='font-serif font-bold text-lg leading-none mt-0.5'>S</span>
   </div>
 )
@@ -86,11 +86,11 @@ const SidebarItem = ({
 }: SidebarItemProps) => {
   // We NEVER change to justify-center. Mathematical padding keeps the icon static.
   const baseClasses =
-    'relative flex items-center gap-3 px-2 py-1.5 text-[13px] rounded-sm transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
+    'relative flex items-center gap-3 px-2 py-1.5 text-[12px] rounded-sm transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
 
   const stateClasses = isActive
-    ? 'bg-slatecamp-paper-cool text-slatecamp-ink-main font-medium shadow-sm'
-    : 'text-slatecamp-ink-muted hover:bg-slatecamp-border-light hover:text-slatecamp-ink-main'
+    ? ' text-blue-600 font-medium bg-blue-100'
+    : 'text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900'
 
   const link = (
     <TransitionLink
@@ -100,13 +100,16 @@ const SidebarItem = ({
     >
       {/* Dieter Rams Active Indicator */}
       {isActive && (
-        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-[18px] bg-slatecamp-amber rounded-r-full' />
+        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[4px] h-[16px] bg-blue-600 rounded-r-full' />
       )}
 
       <div className={ICON_BOX}>
         {Icon ? (
           <Icon
-            className={cn(ICON_SIZE, isActive ? 'text-slatecamp-amber' : '')}
+            className={cn(
+              ICON_SIZE,
+              isActive ? 'text-blue-600' : 'text-zinc-500',
+            )}
             strokeWidth={isActive ? 2 : 1.75}
           />
         ) : null}
@@ -131,7 +134,7 @@ const SidebarItem = ({
         <TooltipContent
           side='right'
           sideOffset={12}
-          className='bg-slatecamp-ink-main text-slatecamp-paper font-medium text-xs'
+          className='bg-zinc-900 text-zinc-50 font-medium text-xs'
         >
           {label}
         </TooltipContent>
@@ -195,16 +198,15 @@ export const Sidebar = ({
   return (
     <aside
       className={cn(
-        'hidden lg:flex lg:flex-col border-r border-slatecamp-border  transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
+        'hidden lg:flex lg:flex-col border-r border-zinc-200 transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
         collapsed ? 'w-[72px]' : 'w-[260px]',
-        'bg-stone-100',
-        // 'bg-slatecamp-paper-snow',
+        'bg-zinc-100',
       )}
     >
       {/* 1. Logo Area (Stays perfectly static at the top) */}
       <div
         className={cn(
-          'flex h-16 items-center border-b border-slatecamp-border shrink-0 transition-all duration-300',
+          'flex h-16 items-center border-b border-zinc-200 shrink-0 transition-all duration-300',
           collapsed ? 'justify-center' : 'justify-start px-5',
         )}
       >
@@ -220,13 +222,13 @@ export const Sidebar = ({
       {/* 2. Minimize/Expand Toggle (Below Logo, Above Profile) */}
       <div
         className={cn(
-          'flex items-center border-b border-slatecamp-border shrink-0 py-1.5 transition-all duration-300',
+          'flex items-center border-b border-zinc-200 shrink-0 py-1.5 transition-all duration-300',
           collapsed ? 'justify-center' : 'justify-end px-3',
         )}
       >
         <button
           onClick={toggleCollapse}
-          className='flex h-8 w-8 items-center justify-center rounded-sm text-slatecamp-ink-muted transition-colors hover:bg-slatecamp-paper-cool hover:text-slatecamp-ink-main outline-none'
+          className='flex h-8 w-8 items-center justify-center rounded-sm text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-900 outline-none'
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
@@ -240,23 +242,23 @@ export const Sidebar = ({
       {/* 3. Main Content Area */}
       <div className='flex flex-1 flex-col px-3 overflow-y-auto overflow-x-hidden pb-4'>
         {/* User Profile Area */}
-        <div className='border-b border-slatecamp-border py-3'>
+        <div className='border-b border-zinc-200 py-3'>
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
                 href={ROUTES.SETTINGS}
-                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-sm transition-colors hover:bg-slatecamp-border-light outline-none'
+                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-sm transition-colors hover:bg-zinc-200 outline-none'
                 onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <div className={ICON_BOX}>
-                  <Avatar className='h-7 w-7 border border-slatecamp-border shadow-sm'>
+                  <Avatar className='h-7 w-7 border border-zinc-200 shadow-sm'>
                     {userDisplay?.avatarUrl ? (
                       <AvatarImage
                         src={userDisplay.avatarUrl}
                         alt={displayName}
                       />
                     ) : null}
-                    <AvatarFallback className='bg-slatecamp-paper-cool text-xs font-medium text-slatecamp-ink-main'>
+                    <AvatarFallback className='bg-zinc-200 text-xs font-medium text-zinc-900'>
                       {initials}
                     </AvatarFallback>
                   </Avatar>
@@ -267,7 +269,7 @@ export const Sidebar = ({
                     collapsed ? 'opacity-0' : 'opacity-100',
                   )}
                 >
-                  <p className='truncate text-[13px] font-medium text-slatecamp-ink-main'>
+                  <p className='truncate text-[13px] font-medium text-zinc-900'>
                     {displayName}
                   </p>
                 </div>
@@ -286,22 +288,22 @@ export const Sidebar = ({
         </div>
 
         {/* Tier & Plan Area */}
-        <div className='border-b border-slatecamp-border py-3'>
+        <div className='border-b border-zinc-200 py-3'>
           <div className='flex items-center justify-start gap-3 px-2'>
             <div className={ICON_BOX}>
               {tier === 'free' ? (
                 <Sparkles
-                  className={cn(ICON_SIZE, 'text-slatecamp-amber')}
+                  className={cn(ICON_SIZE, 'text-amber-600')}
                   strokeWidth={1.5}
                 />
               ) : tier === 'pro' ? (
                 <Zap
-                  className={cn(ICON_SIZE, 'text-slatecamp-cobalt-steel-blue')}
+                  className={cn(ICON_SIZE, 'text-blue-600')}
                   strokeWidth={1.5}
                 />
               ) : (
                 <Crown
-                  className={cn(ICON_SIZE, 'text-slatecamp-amber-gold')}
+                  className={cn(ICON_SIZE, 'text-amber-500')}
                   strokeWidth={1.5}
                 />
               )}
@@ -323,7 +325,7 @@ export const Sidebar = ({
                   <Button
                     variant='outline'
                     size='sm'
-                    className='h-6 px-2 text-[10px] font-medium border-slatecamp-border text-slatecamp-ink-main hover:bg-slatecamp-amber hover:text-white hover:border-slatecamp-amber transition-colors'
+                    className='h-6 px-2 text-[10px] font-medium border-zinc-200 text-zinc-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-colors'
                   >
                     Upgrade
                   </Button>
@@ -354,7 +356,7 @@ export const Sidebar = ({
 
           {isAdmin && (
             <>
-              <div className='my-3 border-t border-slatecamp-border' />
+              <div className='my-3 border-t border-zinc-200' />
               <SidebarItem
                 href={ROUTES.SETTINGS_DEVELOPER}
                 label='Dev Settings'
@@ -371,7 +373,7 @@ export const Sidebar = ({
       </div>
 
       {/* 4. Footer Area (Theme Toggle) */}
-      <div className='border-t border-slatecamp-border p-3'>
+      <div className='border-t border-zinc-200 p-3'>
         <div
           className={cn(
             'flex transition-all duration-300',
@@ -387,27 +389,27 @@ export const Sidebar = ({
         <Dialog open={leaveDialogOpen} onOpenChange={setLeaveDialogOpen}>
           <DialogContent
             showCloseButton={false}
-            className='sm:max-w-[380px] bg-slatecamp-paper border-slatecamp-border'
+            className='sm:max-w-[380px] bg-white border-zinc-200'
           >
-            <DialogTitle className='text-slatecamp-ink-main'>
+            <DialogTitle className='text-zinc-900'>
               Are you sure you want to exit?
             </DialogTitle>
-            <DialogDescription className='text-slatecamp-ink-muted'>
+            <DialogDescription className='text-zinc-600'>
               Your progress in this {mode === 'review' ? 'review' : 'quiz'} will
               not be saved. You can come back anytime.
             </DialogDescription>
-            <DialogFooter className='mt-4 gap-2 border-t border-slatecamp-border bg-slatecamp-paper-cool p-4 sm:flex-row'>
+            <DialogFooter className='mt-4 gap-2 border-t border-zinc-200 bg-zinc-100 p-4 sm:flex-row'>
               <Button
                 variant='outline'
                 onClick={() => setLeaveDialogOpen(false)}
-                className='flex-1 sm:flex-initial border-slatecamp-border text-slatecamp-ink-main hover:bg-slatecamp-paper'
+                className='flex-1 sm:flex-initial border-zinc-200 text-zinc-900 hover:bg-white'
               >
                 No, stay
               </Button>
               <Button
                 variant='destructive'
                 onClick={handleConfirmLeave}
-                className='flex-1 sm:flex-initial bg-slatecamp-crimson-bright-red hover:bg-slatecamp-crimson-deep-red text-white'
+                className='flex-1 sm:flex-initial bg-red-600 hover:bg-red-700 text-white'
               >
                 Yes, exit
               </Button>

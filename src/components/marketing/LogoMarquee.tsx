@@ -1,5 +1,3 @@
-import { SLATECAMP_INK, SLATECAMP_BORDER } from '@/lib/constants'
-
 const PARTNERS = [
   // --- Original Suppliers & Firms ---
   { name: 'BOYSEN', className: 'tracking-[0.25em] text-[13px] font-bold' },
@@ -54,15 +52,20 @@ export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
   return (
     <section
       aria-label="Trusted by leading architecture brands"
-      className="marquee-container overflow-hidden border-y py-2"
-      style={{ borderColor: dark ? 'rgba(255,255,255,0.06)' : SLATECAMP_BORDER.DEFAULT }}
+      className={
+        'marquee-container overflow-hidden border-y py-2 ' +
+        (dark ? 'border-white/10' : 'border-zinc-200')
+      }
     >
       <div className="marquee-track flex items-center">
         {logos.map((partner, i) => (
           <span
             key={`${partner.name}-${i}`}
             className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className}`}
-            style={{ color: dark ? '#fff' : SLATECAMP_INK.main }}
+            style={{ color: dark ? '#fff' : undefined }}
+            className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className} ${
+              dark ? 'text-white' : 'text-zinc-900'
+            }`}
           >
             {partner.name}
           </span>

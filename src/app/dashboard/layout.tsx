@@ -2,16 +2,11 @@ import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { ensureProfileAndExamProfile } from '@/lib/supabase/bootstrap'
-import {
-  getFeatureFlags,
-  getEffectiveTier,
-  getConnectionState,
-} from '@/lib/admin/feature-flags'
-import { isAdminByEmail } from '@/lib/admin/is-admin'
+import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
 import { Sidebar } from '@/components/shared/Sidebar'
 import { Navbar } from '@/components/shared/Navbar'
 import { DashboardHeader } from '@/components/shared/DashboardHeader'
-import { BottomNav } from '@/components/shared/BottomNav'
+import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
 import { ExamProfileProvider } from '@/lib/context/exam-profile-context'
@@ -19,9 +14,6 @@ import { TierProvider } from '@/lib/context/tier-context'
 import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import type { UserTier } from '@/types/app'
 import type { BoardExam, ExamProfile, Subject } from '@/types/app'
-import { cn } from '@/lib/utils'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
-
 export const dynamic = 'force-dynamic'
 
 export default async function DashboardLayout({
@@ -50,8 +42,7 @@ export default async function DashboardLayout({
     .single()
 
   const isAdmin =
-    (profile as { is_admin?: boolean } | null)?.is_admin === true ||
-    isAdminByEmail(user.email ?? undefined)
+    (profile as { is_admin?: boolean } | null)?.is_admin === true
   const currentTier = (profile?.tier ?? 'free') as UserTier
   const showDevTools = isDemo || isAdmin
 
@@ -127,15 +118,13 @@ export default async function DashboardLayout({
               <BreadcrumbProvider>
                 <Navbar isAdmin={isAdmin} />
                 <DashboardHeader />
-                <main className='flex-1 overflow-y-auto pb-20 lg:pb-0'>
-                  <SharedPageLayout> {children}</SharedPageLayout>
-                </main>
-                <BottomNav />
+                <main className='flex-1 overflow-y-auto'>{children}</main>
+                <QuickActionsBar />
               </BreadcrumbProvider>
             </div>
             {showDevTools && flags != null && (
               <DevToolbar
-                connectionState={getConnectionState()}
+                connectionState="local"
                 currentTier={currentTier}
                 effectiveTier={effectiveTier}
                 flags={flags}

@@ -1,5 +1,7 @@
 import { marked } from 'marked'
-import TurndownService from 'turndown'
+// Turndown lacks bundled TypeScript types in this setup
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const TurndownService = require('turndown') as any
 
 // --- Table of contents (server-safe) ---
 
@@ -59,7 +61,7 @@ const turndown = new TurndownService({
 turndown.keep(['hr'])
 turndown.addRule('strikethrough', {
   filter: ['del', 's', 'strike'],
-  replacement: (content) => `~~${content}~~`,
+  replacement: (content: string) => `~~${content}~~`,
 })
 
 /** Convert HTML from Tiptap back to markdown. */

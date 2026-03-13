@@ -22,10 +22,10 @@ interface TaxonomyHeatmapProps {
 }
 
 const stateClassMap: Record<NodeState, string> = {
-  mastered: 'bg-slatecamp-sage',
-  familiar: 'bg-slatecamp-amber',
-  danger: 'bg-slatecamp-crimson-deep-red',
-  unexplored: 'bg-slatecamp-stone-mid-grey-1',
+  mastered: 'bg-green-600',
+  familiar: 'bg-amber-600',
+  danger: 'bg-red-600',
+  unexplored: 'bg-zinc-400',
 }
 
 export const TaxonomyHeatmap = ({
@@ -33,13 +33,13 @@ export const TaxonomyHeatmap = ({
   onNodeSelect,
 }: TaxonomyHeatmapProps) => {
   return (
-    <Card className='border-slatecamp-border bg-slatecamp-paper-snow shadow-none'>
+    <Card className='border-zinc-200 bg-white shadow-none'>
       <CardHeader className='flex flex-row items-start justify-between gap-4 pb-2'>
         <div>
-          <CardTitle className='text-sm font-medium tracking-tight text-slatecamp-ink-muted'>
+          <CardTitle className='text-sm font-medium tracking-tight text-zinc-600'>
             Global Taxonomy Heatmap
           </CardTitle>
-          <p className='mt-1 text-xs text-slatecamp-ink-subtle'>
+          <p className='mt-1 text-xs text-zinc-500'>
             Master syllabus coverage, by subject and topic.
           </p>
         </div>
@@ -48,10 +48,10 @@ export const TaxonomyHeatmap = ({
         {clusters.map((cluster) => (
           <div
             key={cluster.id}
-            className='space-y-2 rounded-xl bg-slatecamp-paper-cool/40 p-3'
+            className='space-y-2 rounded-xl bg-zinc-50 p-3'
           >
             <div className='flex items-baseline justify-between gap-2'>
-              <p className='text-xs font-medium tracking-tight text-slatecamp-ink-main'>
+              <p className='text-xs font-medium tracking-tight text-zinc-900'>
                 {cluster.title}
               </p>
             </div>
@@ -65,14 +65,14 @@ export const TaxonomyHeatmap = ({
                   className={cn(
                     'group flex items-center justify-between gap-3 rounded-lg px-2 py-1.5 text-left text-xs',
                     'outline-none ring-0 transition-colors',
-                    'hover:bg-slatecamp-paper-cool focus-visible:bg-slatecamp-paper-cool',
+                    'hover:bg-zinc-100 focus-visible:bg-zinc-100',
                   )}
                 >
-                  <span className='truncate text-slatecamp-ink-main'>
+                  <span className='truncate text-zinc-900'>
                     {node.label}
                   </span>
                   <span className='flex min-w-[96px] items-center gap-2'>
-                    <span className='relative block h-1.5 w-full overflow-hidden rounded-full bg-slatecamp-stone-mid-grey-2/30'>
+                    <span className='relative block h-1.5 w-full overflow-hidden rounded-full bg-zinc-200'>
                       <span
                         className={cn(
                           'absolute inset-y-0 left-0 rounded-full transition-all',
@@ -83,7 +83,7 @@ export const TaxonomyHeatmap = ({
                         }}
                       />
                     </span>
-                    <span className='w-[34px] text-right text-[11px] text-slatecamp-ink-subtle'>
+                    <span className='w-[34px] text-right text-[11px] text-zinc-500'>
                       {Math.round(node.progress)}%
                     </span>
                   </span>
@@ -93,21 +93,21 @@ export const TaxonomyHeatmap = ({
           </div>
         ))}
 
-        <div className='mt-1 flex flex-wrap items-center gap-3 border-t border-slatecamp-border-light pt-3 text-[11px] text-slatecamp-ink-subtle'>
+        <div className='mt-1 flex flex-wrap items-center gap-3 border-t border-zinc-200 pt-3 text-[11px] text-zinc-500'>
           <div className='flex items-center gap-1.5'>
-            <span className='h-2 w-2 rounded-full bg-slatecamp-sage' />
+            <span className='h-2 w-2 rounded-full bg-green-600' />
             <span>Mastered</span>
           </div>
           <div className='flex items-center gap-1.5'>
-            <span className='h-2 w-2 rounded-full bg-slatecamp-amber' />
+            <span className='h-2 w-2 rounded-full bg-amber-600' />
             <span>Familiar</span>
           </div>
           <div className='flex items-center gap-1.5'>
-            <span className='h-2 w-2 rounded-full bg-slatecamp-crimson-deep-red' />
+            <span className='h-2 w-2 rounded-full bg-red-600' />
             <span>Critical</span>
           </div>
           <div className='flex items-center gap-1.5'>
-            <span className='h-2 w-2 rounded-full bg-slatecamp-stone-mid-grey-1' />
+            <span className='h-2 w-2 rounded-full bg-zinc-400' />
             <span>Unexplored</span>
           </div>
         </div>

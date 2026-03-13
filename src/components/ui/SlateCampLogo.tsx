@@ -25,19 +25,18 @@ export const SlateCampLogo = ({
   const sizeClass = SIZE_CLASSES[size]
 
   const isDefault = variant === 'default'
-  const isMonochrome = variant === 'monochrome'
   const isInverted = variant === 'inverted'
 
   const slateClass = cn(
-    isInverted ? 'text-slatecamp-paper' : 'text-slatecamp-ink-main'
+    isInverted ? 'text-slatecamp-paper' : 'text-slatecamp-ink-main',
   )
 
   const campClass = cn(
     isDefault || isInverted
       ? isInverted
-        ? 'text-slatecamp-paper'
-        : 'text-slatecamp-amber'
-      : 'text-slatecamp-ink-main'
+        ? 'text-zinc-100'
+        : 'text-blue-700'
+      : 'text-slatecamp-ink-main',
   )
 
   return (
@@ -45,7 +44,7 @@ export const SlateCampLogo = ({
       className={cn(
         'inline-flex items-baseline gap-[2px] font-semibold tracking-tight leading-none',
         sizeClass,
-        className
+        className,
       )}
     >
       <span className={slateClass}>Slate</span>
@@ -53,4 +52,3 @@ export const SlateCampLogo = ({
     </span>
   )
 }
-

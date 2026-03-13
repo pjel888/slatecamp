@@ -37,7 +37,7 @@ export function ActionTransitionButton({
   const router = useRouter()
 
   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
-    onClick?.(e)
+    onClick?.(e as any)
     if (e.defaultPrevented) return
 
     startTransition(async () => {

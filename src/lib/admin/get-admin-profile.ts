@@ -45,7 +45,7 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
 
   if (!profile) return null;
 
-  const isAdmin = (profile as { is_admin?: boolean }).is_admin === true || isAdminByEmail(user.email ?? undefined);
+  const isAdmin = (profile as { is_admin?: boolean }).is_admin === true;
   const flags = await getFeatureFlags();
   const connectionState = getConnectionState();
   const effectiveTier = getEffectiveTier(

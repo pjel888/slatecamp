@@ -4,18 +4,6 @@
  */
 export const FALLBACK_SUBJECT_COLOR = "#86868B";
 
-export {
-  SLATECAMP_PAPER,
-  SLATECAMP_INK,
-  SLATECAMP_AMBER,
-  SLATECAMP_SAGE,
-  SLATECAMP_BORDER,
-  SLATECAMP_COBALT,
-  SLATECAMP_COLORS,
-  hexToRgba,
-  type SlateCampColorKey,
-} from "./colors";
-
 export { ROUTES, PUBLIC_PATHS } from "./routes";
 export { siteConfig } from "./site";
 export {

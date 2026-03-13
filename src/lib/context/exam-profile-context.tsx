@@ -44,7 +44,7 @@ export function ExamProfileProvider({
 }: ExamProfileProviderProps) {
   const [activeProfile, setActiveProfile] = useState<ExamProfile | null>(initialProfile);
   const [profiles, setProfiles] = useState<ExamProfile[]>(initialProfiles);
-  const [boardExams, setBoardExams] = useState<BoardExam[]>(initialBoardExams);
+  const [boardExams] = useState<BoardExam[]>(initialBoardExams);
   const [subjects, setSubjects] = useState<Subject[]>(initialSubjects);
   const router = useRouter();
 

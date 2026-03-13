@@ -60,7 +60,6 @@ export async function getDiagnosticQuestions(
   if (subjectIds.length === 0) return [];
 
   const diagnosticQuestions: Question[] = [];
-  const questionsPerSubject = Math.ceil(count / subjectIds.length);
 
   for (const subjectId of subjectIds) {
     // Get 1 medium question

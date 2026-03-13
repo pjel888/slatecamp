@@ -229,7 +229,11 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
       try {
         const data = await getWikiPageForEdit(stub.id)
         if (!data.page) return
-        setEditPageData(data)
+        setEditPageData({
+          page: data.page!,
+          backlinks: data.backlinks,
+          forwardLinks: data.forwardLinks,
+        })
         setPageCategoryId(data.page.category_id)
         setPageTitle(data.page.title)
         setPageSlug(data.page.slug)
@@ -311,7 +315,13 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
         if (addLinkBidirectional) await createWikiPageLink(linkTargetId, editPageId)
         setLinkTargetId('')
         const data = await getWikiPageForEdit(editPageId)
-        if (data.page) setEditPageData(data)
+        if (data.page) {
+          setEditPageData({
+            page: data.page!,
+            backlinks: data.backlinks,
+            forwardLinks: data.forwardLinks,
+          })
+        }
         router.refresh()
       } catch (e) {
         setError(e instanceof Error ? e.message : 'Add link failed')
@@ -326,7 +336,13 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
         await deleteWikiPageLink(sourceId, targetId)
         if (editPageId) {
           const data = await getWikiPageForEdit(editPageId)
-          if (data.page) setEditPageData(data)
+          if (data.page) {
+            setEditPageData({
+              page: data.page!,
+              backlinks: data.backlinks,
+              forwardLinks: data.forwardLinks,
+            })
+          }
         }
         router.refresh()
       } catch (e) {
@@ -344,7 +360,6 @@ export function WikiDevPanel({ tree, allPagesStubs, isDevMode }: WikiDevPanelPro
     },
     {} as Record<string, WikiPageStub[]>
   )
-  const categoryNameById = new Map(flatCategories.map((c) => [c.id, c.name]))
 
   if (!isDevMode) return null
 

@@ -1,11 +1,9 @@
 import type { Config } from 'tailwindcss'
-import { SLATECAMP_COLORS } from './src/lib/constants/colors'
 
 /**
  * Tailwind v4 uses CSS-first config (@theme in globals.css).
- * This file extends theme so the same palette is available when using @config.
- * SlateCamp semantic utilities (e.g. bg-slatecamp-paper, text-slatecamp-ink-main)
- * are defined in src/app/globals.css @theme and in src/lib/constants/colors.ts.
+ * Semantic colors (surfaces, ink, accents) are defined via CSS variables
+ * in src/app/globals.css and consumed through Tailwind utilities.
  */
 const config: Config = {
   content: [
@@ -14,11 +12,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        ...SLATECAMP_COLORS,
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }

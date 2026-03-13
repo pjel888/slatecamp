@@ -1,11 +1,10 @@
-"use server";
+'use server'
 
-import { cookies } from "next/headers";
-import { isDemoMode, DEMO_USER } from "@/lib/demo/config";
-import { createClient } from "@/lib/supabase/server";
-import { isAdmin } from "@/lib/admin/is-admin";
+import { cookies } from 'next/headers'
+import { isDemoMode } from '@/lib/demo/config'
+import { isAdmin } from '@/lib/admin/is-admin'
 
-const COOKIE_NAME = "cerebro_dev_flags";
+const COOKIE_NAME = 'cerebro_dev_flags'
 
 /**
  * Get feature flags for the current user.

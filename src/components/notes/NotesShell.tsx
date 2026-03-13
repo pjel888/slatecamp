@@ -41,7 +41,7 @@ export function NotesShell({ tree }: NotesShellProps) {
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const loadNotes = useCallback(async () => {
-    const list = await getNotesList(subjectId)
+    const list = await getNotesList()
     setNotes(list)
   }, [subjectId])
 
@@ -282,12 +282,6 @@ export function NotesShell({ tree }: NotesShellProps) {
                 />
                 {saving && (
                   <span className="text-[11px] text-muted-foreground">Saving…</span>
-                )}
-                {currentNote.linked_wiki_page_id && (
-                  <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
-                    <Link2 className="h-3 w-3" strokeWidth={1.5} />
-                    Linked
-                  </span>
                 )}
               </div>
               <div className="mb-4 flex flex-wrap items-center gap-2">

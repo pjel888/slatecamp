@@ -6,14 +6,14 @@ const uuidSchema = z.string().uuid("Invalid ID format");
 // Note validation schemas
 export const createNoteSchema = z.object({
   title: z.string().min(1, "Title is required").max(200, "Title too long").optional(),
-  content: z.record(z.unknown()).optional(),
+  content: z.record(z.string(), z.unknown()).optional(),
   subject_id: uuidSchema.optional(),
 });
 
 export const updateNoteSchema = z.object({
   id: uuidSchema,
   title: z.string().min(1, "Title is required").max(200, "Title too long").optional(),
-  content: z.record(z.unknown()).optional(),
+  content: z.record(z.string(), z.unknown()).optional(),
   is_pinned: z.boolean().optional(),
 });
 
@@ -81,7 +81,7 @@ export const checkoutSchema = z.object({
 });
 
 // Feature flags validation
-export const featureFlagsSchema = z.record(z.boolean());
+export const featureFlagsSchema = z.record(z.string(), z.boolean());
 
 // Type exports
 export type CreateNoteInput = z.infer<typeof createNoteSchema>;

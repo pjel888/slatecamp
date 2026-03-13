@@ -41,17 +41,17 @@ export const PacingEnduranceGauge = ({
         : 'Your pace is stable. The goal now is to extend your endurance window.'
 
   return (
-    <Card className='border-slatecamp-border bg-slatecamp-paper-snow shadow-none'>
+    <Card className='border-zinc-200 bg-white shadow-none'>
       <CardHeader className='pb-2'>
-        <CardTitle className='text-sm font-medium tracking-tight text-slatecamp-ink-muted'>
+        <CardTitle className='text-sm font-medium tracking-tight text-zinc-600'>
           Pacing &amp; Endurance
         </CardTitle>
-        <p className='mt-1 text-xs text-slatecamp-ink-subtle'>
+        <p className='mt-1 text-xs text-zinc-500'>
           Average time per item and how long you can hold exam-level focus.
         </p>
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
-        <div className='h-32 w-full rounded-xl bg-slatecamp-paper-cool/60 px-3 py-2'>
+        <div className='h-32 w-full rounded-xl bg-zinc-50 px-3 py-2'>
           <ResponsiveContainer width='100%' height='100%'>
             <AreaChart data={MOCK_SERIES} margin={{ top: 4, right: 4, left: 0, bottom: 0 }}>
               <defs>
@@ -100,26 +100,26 @@ export const PacingEnduranceGauge = ({
 
         <div className='grid grid-cols-2 gap-3 text-xs'>
           <div className='space-y-0.5'>
-            <p className='text-slatecamp-ink-muted'>Current pace</p>
-            <p className='text-sm font-medium tracking-tight text-slatecamp-ink-main'>
+            <p className='text-zinc-600'>Current pace</p>
+            <p className='text-sm font-medium tracking-tight text-zinc-900'>
               {Math.round(averageSecondsPerItem)}s / item
             </p>
-            <p className='text-[11px] text-slatecamp-ink-subtle'>
+            <p className='text-[11px] text-zinc-500'>
               Target: {Math.round(targetSecondsPerItem)}s per item.
             </p>
           </div>
           <div className='space-y-0.5'>
-            <p className='text-slatecamp-ink-muted'>Endurance window</p>
-            <p className='text-sm font-medium tracking-tight text-slatecamp-ink-main'>
+            <p className='text-zinc-600'>Endurance window</p>
+            <p className='text-sm font-medium tracking-tight text-zinc-900'>
               {Math.round(enduranceMinutes)} min
             </p>
-            <p className='text-[11px] text-slatecamp-ink-subtle'>
+            <p className='text-[11px] text-zinc-500'>
               Time you can sustain exam pace before accuracy slips.
             </p>
           </div>
         </div>
 
-        <p className='text-[11px] leading-snug text-slatecamp-ink-subtle'>
+        <p className='text-[11px] leading-snug text-zinc-500'>
           {trendCopy}
         </p>
       </CardContent>

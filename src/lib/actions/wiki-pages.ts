@@ -7,7 +7,6 @@ import { isAdminByEmail } from '@/lib/admin/is-admin'
 import type { WikiPage } from '@/types/app'
 
 async function requireAdmin() {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) throw new Error('Unauthorized')
   if (!isAdminByEmail(user.email ?? undefined)) throw new Error('Forbidden')

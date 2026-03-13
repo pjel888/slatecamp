@@ -8,7 +8,7 @@ import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
  * setAll writes only to the response so refreshed tokens reach the browser.
  */
 export async function updateSession(request: NextRequest) {
-  let response = NextResponse.next({ request });
+  const response = NextResponse.next({ request });
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

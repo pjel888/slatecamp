@@ -51,7 +51,7 @@ export function TierBadge({
   const isDevMode = devMode || tier === "dev";
 
   const config = TIER_CONFIG[resolvedTier];
-  const Icon = config.icon;
+  const IconComponent = config.icon as React.ComponentType<any>;
   const isSm = size === "sm";
 
   return (
@@ -60,7 +60,12 @@ export function TierBadge({
         isSm ? "px-2 py-0.5 text-[10px]" : "px-2.5 py-1 text-[11px]"
       } ${className ?? ""}`}
     >
-      {showIcon && <Icon className={isSm ? "h-3 w-3" : "h-3.5 w-3.5"} strokeWidth={1.5} />}
+      {showIcon && (
+        <IconComponent
+          className={isSm ? "h-3 w-3" : "h-3.5 w-3.5"}
+          strokeWidth={1.5}
+        />
+      )}
       {config.label}
       {isDevMode && "*"}
     </span>

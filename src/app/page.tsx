@@ -11,14 +11,7 @@ import { PhilosophySection } from '@/components/marketing/PhilosophySection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 import { SocialProofBar } from '@/components/marketing/SocialProofBar'
 import { Starburst } from '@/components/marketing/LandingPrimitives'
-import {
-  ROUTES,
-  siteConfig,
-  SLATECAMP_PAPER,
-  SLATECAMP_BORDER,
-  SLATECAMP_AMBER,
-  SLATECAMP_INK,
-} from '@/lib/constants'
+import { ROUTES, siteConfig } from '@/lib/constants'
 
 /* ── SEO Metadata ── */
 
@@ -63,8 +56,7 @@ export default async function LandingPage() {
   return (
     <div
       id='top'
-      className='min-h-screen'
-      style={{ backgroundColor: SLATECAMP_PAPER.DEFAULT }}
+      className='min-h-screen bg-zinc-100'
     >
       {/* ────────────────────── NAVIGATION ────────────────────── */}
       <MarketingNav activeRoute='/' logoScrollsToTop />
@@ -89,18 +81,16 @@ export default async function LandingPage() {
         {/* ────────────────────── TESTIMONIALS ────────────────────── */}
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t px-6 py-24'
-          style={{ borderColor: SLATECAMP_BORDER.DEFAULT }}
+          className='border-t border-zinc-200 px-6 py-24'
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>
-              <span style={{ color: SLATECAMP_AMBER.DEFAULT }}>
+              <span className='text-amber-600'>
                 <Starburst className='h-4 w-4' />
               </span>
               <h2
                 id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase'
-                style={{ color: SLATECAMP_INK.subtle }}
+                className='font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500'
               >
                 What Students Say
               </h2>

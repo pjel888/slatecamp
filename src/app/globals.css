@@ -206,13 +206,14 @@
   --text-tertiary: #86868b;
   --text-quaternary: #aeaeb2;
 
-  /* Apple HIG — Functional accents */
-  --accent-blue: #007aff;
-  --accent-hover: #0056cc;
-  --success: #34c759;
-  --danger: #ff3b30;
-  --warning: #ff9500;
-  --info: #5ac8fa;
+  /* Functional accents — aligned to Tailwind palette
+     blue-600/700, green-600, red-600, amber-600, sky-500 */
+  --accent-blue: #2563eb; /* blue-600 */
+  --accent-hover: #1d4ed8; /* blue-700 */
+  --success: #16a34a; /* green-600 */
+  --danger: #dc2626; /* red-600 */
+  --warning: #d97706; /* amber-600 */
+  --info: #0ea5e9; /* sky-500 */
 
   /* Apple HIG — Surfaces */
   --card-bg: #ffffff;
@@ -235,15 +236,16 @@
   --transition-normal: 300ms ease-in-out;
   --transition-slow: 500ms ease-in-out;
 
-  /* Readiness Score colors */
-  --readiness-danger: #ef4444;
-  --readiness-warning: #f59e0b;
-  --readiness-good: #84cc16;
-  --readiness-strong: #22c55e;
+  /* Readiness Score colors — Tailwind semantic mapping
+     danger: red-600, warning: amber-600, good/strong: green 500/600 */
+  --readiness-danger: #dc2626; /* red-600 */
+  --readiness-warning: #d97706; /* amber-600 */
+  --readiness-good: #22c55e; /* green-500 */
+  --readiness-strong: #16a34a; /* green-600 */
 
   /* Final Stretch mode */
-  --final-stretch-accent: #ef4444;
-  --final-stretch-bg: #fff5f5;
+  --final-stretch-accent: #dc2626; /* red-600 */
+  --final-stretch-bg: #fef2f2; /* red-50 */
 
   /* Confidence tap */
   --confidence-know: #f0fdf4;
