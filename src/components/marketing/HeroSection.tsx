@@ -285,7 +285,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       </div>
 
       <h3 className='text-base font-semibold tracking-tight text-zinc-900'>
-        Are you actually ready?
+        {isHovered ? 'Know that you will!' : "Are you sure you'll pass?"}
       </h3>
 
       {/* Shared space for intro vs “this is what…” */}
