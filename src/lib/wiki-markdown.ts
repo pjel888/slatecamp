@@ -26,14 +26,12 @@ export function extractHeadings(markdown: string): TocHeading[] {
   const headings: TocHeading[] = []
 
   for (const line of lines) {
-    const h2 = line.match(/^## (.+)$/)
-    const h3 = line.match(/^### (.+)$/)
-    if (h2) {
-      const text = h2[1].trim()
-      headings.push({ id: slugify(text), text, level: 2 })
-    } else if (h3) {
-      const text = h3[1].trim()
-      headings.push({ id: slugify(text), text, level: 3 })
+    const match = line.match(/^(#{2,3})\s*(.+)$/)
+    if (match) {
+      const hashes = match[1]
+      const text = match[2].trim()
+      const level = hashes.length === 2 ? 2 : 3
+      headings.push({ id: slugify(text), text, level })
     }
   }
 

@@ -19,7 +19,8 @@ export function WikiArticle({ article }: WikiArticleProps) {
   // Frontend fix: Replace literal \n sequences with actual newlines
   const processedContent = article.content.replace(/\\n/g, '\n')
   const headings = extractHeadings(processedContent)
-
+  console.log('wiki headings', headings)
+  console.log('processedContent', processedContent)
   return (
     <div className='flex flex-col lg:flex-row w-full h-full overflow-hidden'>
       {/* Main Content (Scrolling Area) */}

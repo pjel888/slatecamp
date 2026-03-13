@@ -77,21 +77,49 @@ const SUPPORTED_EXAMS = [
     name: 'Architecture (ALE)',
     status: 'Live',
     tone: 'live' as const,
+    category: 'architecture' as const,
   },
   {
     name: 'Interior Design',
     status: 'In development',
     tone: 'upcoming' as const,
+    category: 'architecture' as const,
   },
   {
     name: 'Civil Engineering',
     status: 'Waitlist',
     tone: 'upcoming' as const,
+    category: 'engineering' as const,
+  },
+  {
+    name: 'Chemical Engineering',
+    status: 'Upcoming',
+    tone: 'upcoming' as const,
+    category: 'engineering' as const,
+  },
+  {
+    name: 'Electrical Engineering',
+    status: 'Upcoming',
+    tone: 'upcoming' as const,
+    category: 'engineering' as const,
   },
   {
     name: 'Nursing (PNLE)',
     status: 'Upcoming',
     tone: 'upcoming' as const,
+    category: 'health' as const,
+  },
+  {
+    name: 'Certified Public Accountant (CPALE)',
+    status: 'Upcoming',
+    tone: 'upcoming' as const,
+    category: 'business' as const,
+  },
+  {
+    name: 'Licensure Exam for Teachers (LET)',
+    status: 'Upcoming',
+    tone: 'upcoming' as const,
+    category: 'education' as const,
   },
 ] as const
 
@@ -119,33 +147,68 @@ const STATS = [
 // Card 1: Supported Exams (Back Left)
 const ExamsSupportedCard = () => (
   <div
-    className='order-2 w-full max-w-[280px] rounded-xl border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:left-4 md:top-4 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+    className='order-1 w-full max-w-[280px] rounded-xl bg-linear-to-b from-white/95 to-zinc-50/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-zinc-200/90 transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
     aria-hidden='true'
   >
-    <p className='mb-3 text-[11px] font-semibold uppercase tracking-wider text-zinc-500'>
+    <p className='mb-2.5 text-[10px] font-extrabold uppercase tracking-[0.22em] text-zinc-500'>
       Supported exams
     </p>
-    <ul className='space-y-2.5'>
-      {SUPPORTED_EXAMS.map((exam) => (
-        <li key={exam.name} className='flex items-center justify-between gap-2'>
-          <span
+    <ul className='space-y-1.75'>
+      {SUPPORTED_EXAMS.slice(0, 6).map((exam) => {
+        const isLive = exam.tone === 'live'
+        const dotColor = isLive
+          ? 'bg-emerald-600'
+          : exam.category === 'engineering'
+            ? 'bg-blue-600'
+            : exam.category === 'health'
+              ? 'bg-emerald-600'
+              : exam.category === 'business'
+                ? 'bg-amber-600'
+                : exam.category === 'education'
+                  ? 'bg-violet-600'
+                  : 'bg-zinc-500'
+
+        return (
+          <li
+            key={exam.name}
             className={cn(
-              'text-sm font-medium',
-              exam.tone === 'live' ? 'text-zinc-900' : 'text-zinc-600',
+              'flex items-center justify-between gap-2 rounded-md px-1.5 py-1',
+              isLive
+                ? 'bg-emerald-50 hover:bg-emerald-100/80'
+                : 'hover:bg-zinc-100/70',
             )}
           >
-            {exam.name}
-          </span>
-          {exam.tone === 'live' ? (
-            <span className='inline-flex items-center gap-1 rounded-full bg-green-50 px-2 py-0.5 text-[10px] font-semibold text-green-700'>
-              <span className='h-1.5 w-1.5 rounded-full bg-green-600' />
-              Live
-            </span>
-          ) : (
-            <span className='text-[10px] text-zinc-500'>{exam.status}</span>
-          )}
+            <div className='flex min-w-0 items-center gap-2'>
+              <span
+                className={cn('h-1.5 w-1.5 shrink-0 rounded-full', dotColor)}
+              />
+              <span
+                className={cn(
+                  'truncate text-[13px] font-medium leading-tight',
+                  isLive ? 'text-emerald-800' : 'text-zinc-700',
+                )}
+              >
+                {exam.name}
+              </span>
+            </div>
+            {exam.tone === 'live' ? (
+              <span className='inline-flex shrink-0 items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+                <span className='h-1.5 w-1.5 rounded-full bg-emerald-600' />
+                Live
+              </span>
+            ) : (
+              <span className='shrink-0 text-[10px] font-medium text-zinc-500'>
+                {exam.status}
+              </span>
+            )}
+          </li>
+        )
+      })}
+      {SUPPORTED_EXAMS.length > 6 ? (
+        <li className='mt-1 flex items-center justify-end text-[10px] font-medium text-zinc-500'>
+          +{SUPPORTED_EXAMS.length - 6} more exams
         </li>
-      ))}
+      ) : null}
     </ul>
   </div>
 )
@@ -211,7 +274,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 
   return (
     <div
-      className='order-1 z-20 w-full max-w-[320px] rounded-2xl border border-zinc-200 bg-zinc-50/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:[transform:translate(-50%,-50%)] md:hover:[transform:translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
+      className='order-2 z-20 w-full max-w-[320px] rounded-2xl border border-zinc-200 bg-zinc-50/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -239,7 +302,12 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           tone={isHovered ? 'success' : 'warning'}
         />
         <div className='space-y-1 text-[11px]'>
-          <p className={cn('font-medium', isHovered ? 'text-emerald-700' : 'text-zinc-900')}>
+          <p
+            className={cn(
+              'font-medium',
+              isHovered ? 'text-emerald-700' : 'text-zinc-900',
+            )}
+          >
             Overall readiness: {isHovered ? '98%' : '42%'}
           </p>
           {/* Shared space for “Most reviewees…” vs “Same exam…” */}
@@ -255,7 +323,11 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
         {SUBJECT_READINESS.map(({ label, value, improved }) => {
           const score = isHovered ? improved : value
           const barClass =
-            score < 50 ? 'bg-red-600' : score < 70 ? 'bg-amber-600' : 'bg-emerald-500'
+            score < 50
+              ? 'bg-red-600'
+              : score < 70
+                ? 'bg-amber-600'
+                : 'bg-emerald-500'
 
           return (
             <div key={label} className='space-y-1'>
@@ -272,7 +344,10 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
               </div>
               <div className='h-1.5 w-full rounded-full bg-zinc-100'>
                 <div
-                  className={cn('h-1.5 rounded-full transition-[width] duration-200', barClass)}
+                  className={cn(
+                    'h-1.5 rounded-full transition-[width] duration-200',
+                    barClass,
+                  )}
                   style={{ width: `${score}%` }}
                 />
               </div>
@@ -298,7 +373,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
   <div
     id='hero-right'
-    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:min-h-[380px] md:flex-row md:items-stretch md:justify-center md:gap-0 md:col-span-5'
+    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px] md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
     <ExamsSupportedCard />
     <MockQuestionCard />
@@ -310,11 +385,9 @@ const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
 
 export const HeroSection = ({
   ctaHref,
-  ctaLabel,
   isLoggedIn,
 }: {
   ctaHref: string
-  ctaLabel: string
   isLoggedIn: boolean
 }) => (
   <section

@@ -47,7 +47,7 @@ export function WikiSidebar({
     <aside className='w-64 shrink-0 border-r border-zinc-200 bg-zinc-50/50 h-full overflow-y-auto rounded-tl-xl'>
       <div className='p-2'>
         <div className='flex items-center gap-2 mb-6'>
-          <div className='bg-blue-600 rounded-md p-1'>
+          <div className='bg-blue-600 rounded-sm p-1'>
             <Book className='h-4 w-4 text-white' />
           </div>
           <h2 className='text-sm font-semibold text-zinc-900 truncate'>
@@ -90,7 +90,7 @@ export function WikiSidebar({
                     <button
                       onClick={() => toggle(node.node_id)}
                       className={cn(
-                        'w-full flex items-center justify-between py-1.5 px-2 text-[13px] font-medium rounded-md transition-all group',
+                        'w-full flex items-center justify-between py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group',
                         isActiveBranch
                           ? 'text-blue-700'
                           : 'text-zinc-700 hover:bg-white hover:shadow-sm',
@@ -101,14 +101,18 @@ export function WikiSidebar({
                           <ChevronDown
                             className={cn(
                               'h-3.5 w-3.5',
-                              isActiveBranch ? 'text-blue-500' : 'text-zinc-400',
+                              isActiveBranch
+                                ? 'text-blue-500'
+                                : 'text-zinc-400',
                             )}
                           />
                         ) : (
                           <ChevronRight
                             className={cn(
                               'h-3.5 w-3.5',
-                              isActiveBranch ? 'text-blue-500' : 'text-zinc-400',
+                              isActiveBranch
+                                ? 'text-blue-500'
+                                : 'text-zinc-400',
                             )}
                           />
                         )}
@@ -130,7 +134,7 @@ export function WikiSidebar({
                             key={child.node_id}
                             href={`/dashboard/wiki/${child.slug ?? ''}`}
                             className={cn(
-                              'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-md transition-all',
+                              'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all',
                               child.slug && pathname.includes(child.slug)
                                 ? 'bg-blue-50 text-blue-700 font-medium'
                                 : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
@@ -155,7 +159,7 @@ export function WikiSidebar({
                                 key={article.article_id}
                                 href={`/dashboard/wiki/${article.slug}`}
                                 className={cn(
-                                  'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-md transition-all',
+                                  'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all',
                                   pathname.includes(article.slug || '')
                                     ? 'bg-blue-50 text-blue-700 font-medium'
                                     : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
