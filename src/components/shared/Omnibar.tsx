@@ -296,7 +296,7 @@ function Item({
       onMouseEnter={() => onHover(item)}
       className='flex items-center gap-3 px-3 py-3 rounded-xl cursor-pointer aria-selected:bg-zinc-100 transition-all group mb-1 outline-none'
     >
-      <div className='bg-zinc-100 p-2.5 rounded-lg group-aria-selected:bg-white group-aria-selected:shadow-sm transition-all flex items-center justify-center'>
+      <div className='bg-zinc-100 p-2.5 rounded-sm group-aria-selected:bg-white group-aria-selected:shadow-sm transition-all flex items-center justify-center'>
         <FileText className='h-5 w-5 text-zinc-500' />
       </div>
       <div className='flex flex-col min-w-0'>

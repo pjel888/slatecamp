@@ -14,7 +14,7 @@ export default function NotesLoading() {
           <Skeleton className='h-7 w-20' />
           <Skeleton className='mt-2 h-4 w-56' />
         </div>
-        <Skeleton className='h-8 w-28 rounded-lg' />
+        <Skeleton className='h-8 w-28 rounded-sm' />
       </div>
 
       {/* Note cards grid */}

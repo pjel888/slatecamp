@@ -26,9 +26,9 @@ export function WikiMarkdownEditor({
 
   return (
     <div className={className}>
-      <div className="mb-1.5 flex gap-1 border-b border-border/40 pb-1.5">
+      <div className='mb-1.5 flex gap-1 border-b border-border/40 pb-1.5'>
         <button
-          type="button"
+          type='button'
           onClick={() => setMode('edit')}
           className={`rounded px-2 py-1 text-[11px] font-medium transition-colors ${
             mode === 'edit'
@@ -39,7 +39,7 @@ export function WikiMarkdownEditor({
           Edit
         </button>
         <button
-          type="button"
+          type='button'
           onClick={() => setMode('preview')}
           className={`rounded px-2 py-1 text-[11px] font-medium transition-colors ${
             mode === 'preview'
@@ -55,19 +55,19 @@ export function WikiMarkdownEditor({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded-lg border border-border bg-background px-3 py-2 font-mono text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+          className='w-full rounded-sm border border-border bg-background px-3 py-2 font-mono text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring'
           style={{ minHeight }}
           spellCheck={false}
         />
       ) : (
         <div
-          className={`rounded-lg border border-border bg-muted/30 px-3 py-2 overflow-y-auto ${proseClasses}`}
+          className={`rounded-sm border border-border bg-muted/30 px-3 py-2 overflow-y-auto ${proseClasses}`}
           style={{ minHeight }}
         >
           {value.trim() ? (
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{value}</ReactMarkdown>
           ) : (
-            <p className="text-muted-foreground text-[13px]">{placeholder}</p>
+            <p className='text-muted-foreground text-[13px]'>{placeholder}</p>
           )}
         </div>
       )}

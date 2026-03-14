@@ -86,7 +86,11 @@ export function WikiRichEditor({
   // Initial content and external value sync: when value prop differs from what we last emitted, load it
   useEffect(() => {
     if (!editor) return
-    if (lastEmittedMarkdown.current !== null && value === lastEmittedMarkdown.current) return
+    if (
+      lastEmittedMarkdown.current !== null &&
+      value === lastEmittedMarkdown.current
+    )
+      return
     lastEmittedMarkdown.current = value
     markdownToHtml(value).then((html) => {
       editor.commands.setContent(html, { emitUpdate: false })
@@ -113,161 +117,195 @@ export function WikiRichEditor({
   if (!editor) return null
 
   return (
-    <div className={cn('flex flex-col rounded-lg border border-border bg-background', className)}>
+    <div
+      className={cn(
+        'flex flex-col rounded-sm border border-border bg-background',
+        className,
+      )}
+    >
       <div
         className={cn(
           'flex shrink-0 flex-wrap items-center gap-0.5 border-b border-border/60 px-2 py-1.5',
-          'bg-muted dark:bg-zinc-800/90'
+          'bg-muted dark:bg-zinc-800/90',
         )}
       >
-        <nav className="flex flex-wrap items-center gap-0.5" aria-label="Formatting">
+        <nav
+          className='flex flex-wrap items-center gap-0.5'
+          aria-label='Formatting'
+        >
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleBold().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('bold') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('bold')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Bold"
+            title='Bold'
           >
-            <Bold className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Bold className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleItalic().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('italic') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('italic')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Italic"
+            title='Italic'
           >
-            <Italic className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Italic className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleUnderline().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('underline') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('underline')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Underline"
+            title='Underline'
           >
-            <UnderlineIcon className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <UnderlineIcon className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleHighlight().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('highlight') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('highlight')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Highlight"
+            title='Highlight'
           >
-            <Highlighter className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Highlighter className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
-          <span className="mx-0.5 w-px self-stretch bg-border" aria-hidden />
+          <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleBulletList().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('bulletList') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('bulletList')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Bullet list"
+            title='Bullet list'
           >
-            <List className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <List className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleOrderedList().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('orderedList') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('orderedList')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Numbered list"
+            title='Numbered list'
           >
-            <ListOrdered className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <ListOrdered className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().toggleTaskList().run()}
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('taskList') ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('taskList')
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Todo list"
+            title='Todo list'
           >
-            <ListTodo className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <ListTodo className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
-          <span className="mx-0.5 w-px self-stretch bg-border" aria-hidden />
+          <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <button
-            type="button"
-            onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()}
+            type='button'
+            onClick={() =>
+              editor.chain().focus().toggleHeading({ level: 1 }).run()
+            }
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('heading', { level: 1 }) ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('heading', { level: 1 })
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Heading 1"
+            title='Heading 1'
           >
-            <Heading1 className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Heading1 className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
-            onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()}
+            type='button'
+            onClick={() =>
+              editor.chain().focus().toggleHeading({ level: 2 }).run()
+            }
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('heading', { level: 2 }) ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('heading', { level: 2 })
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Heading 2"
+            title='Heading 2'
           >
-            <Heading2 className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Heading2 className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
-            onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
+            type='button'
+            onClick={() =>
+              editor.chain().focus().toggleHeading({ level: 3 }).run()
+            }
             className={cn(
               'rounded p-1.5 transition-colors',
-              editor.isActive('heading', { level: 3 }) ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
+              editor.isActive('heading', { level: 3 })
+                ? 'bg-secondary text-foreground'
+                : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground',
             )}
-            title="Heading 3"
+            title='Heading 3'
           >
-            <Heading3 className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Heading3 className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
           <button
-            type="button"
+            type='button'
             onClick={() => editor.chain().focus().setHorizontalRule().run()}
-            className="rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"
-            title="Horizontal line"
+            className='rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground'
+            title='Horizontal line'
           >
-            <Minus className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <Minus className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
-          <span className="mx-0.5 w-px self-stretch bg-border" aria-hidden />
+          <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <select
-            title="Text size"
+            title='Text size'
             value={editor.getAttributes('textStyle').fontSize ?? ''}
             onChange={(e) => {
               const v = e.target.value
               if (v) editor.chain().focus().setFontSize(v).run()
               else editor.chain().focus().unsetFontSize().run()
             }}
-            className="h-7 rounded border-0 bg-transparent px-1.5 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-border"
+            className='h-7 rounded border-0 bg-transparent px-1.5 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-border'
           >
-            <option value="">Size</option>
-            <option value="12px">Small</option>
-            <option value="16px">Normal</option>
-            <option value="20px">Large</option>
+            <option value=''>Size</option>
+            <option value='12px'>Small</option>
+            <option value='16px'>Normal</option>
+            <option value='20px'>Large</option>
           </select>
           <button
-            type="button"
+            type='button'
             onClick={setImage}
-            className="rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground"
-            title="Insert image"
+            className='rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground'
+            title='Insert image'
           >
-            <ImagePlus className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <ImagePlus className='h-3.5 w-3.5' strokeWidth={1.5} />
           </button>
         </nav>
       </div>
-      <div className="min-h-[180px] flex-1 px-3 py-2" style={{ minHeight }}>
+      <div className='min-h-[180px] flex-1 px-3 py-2' style={{ minHeight }}>
         <EditorContent editor={editor} />
       </div>
     </div>

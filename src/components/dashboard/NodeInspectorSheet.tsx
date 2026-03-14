@@ -48,7 +48,7 @@ export const NodeInspectorSheet = ({
               <p className='text-xs font-medium text-slatecamp-ink-muted'>
                 Accuracy over time
               </p>
-              <div className='h-24 w-full rounded-lg bg-slatecamp-paper-cool/70 px-3 py-2'>
+              <div className='h-24 w-full rounded-sm bg-slatecamp-paper-cool/70 px-3 py-2'>
                 {/* Placeholder sparkline — replace with real time-series later */}
                 <div className='h-full w-full'>
                   <svg
@@ -88,4 +88,3 @@ export const NodeInspectorSheet = ({
     </Sheet>
   )
 }
-

@@ -15,13 +15,13 @@ The comprehensive engineering handbook for **Project Cerebro** (`project-cerebro
 
 ### Prerequisites
 
-| **Tool** | **Version** | **Install** |
-| --- | --- | --- |
-| **Bun** (primary) | ≥ 1.x (latest stable) | `curl -fsSL https://bun.sh/install | bash` |
-| pnpm (secondary) | ≥ 9.x | `corepack enable && corepack prepare pnpm@latest --activate` |
-| Node.js | ≥ 20 LTS | Required by Next.js runtime even when using Bun |
-| Git | ≥ 2.40 | Version control |
-| VS Code | Latest | Recommended IDE with extensions listed below |
+| **Tool**          | **Version**           | **Install**                                                  |
+| ----------------- | --------------------- | ------------------------------------------------------------ | ----- |
+| **Bun** (primary) | ≥ 1.x (latest stable) | `curl -fsSL https://bun.sh/install                           | bash` |
+| pnpm (secondary)  | ≥ 9.x                 | `corepack enable && corepack prepare pnpm@latest --activate` |
+| Node.js           | ≥ 20 LTS              | Required by Next.js runtime even when using Bun              |
+| Git               | ≥ 2.40                | Version control                                              |
+| VS Code           | Latest                | Recommended IDE with extensions listed below                 |
 
 ### Recommended VS Code Extensions
 
@@ -65,25 +65,25 @@ bun dev
 
 ### Why Bun First
 
-| **Metric** | **Bun** | **pnpm** | **npm** |
-| --- | --- | --- | --- |
-| Install speed | ⚡ Fastest (native, no Node overhead) | Fast (content-addressable store) | Slowest |
-| Lockfile | `bun.lockb` (binary, fast parse) | `pnpm-lock.yaml` | `package-lock.json` |
-| Disk usage | Low | Lowest (symlinked store) | Highest (flat node_modules) |
-| Native TS | Yes — runs `.ts` files directly | No | No |
-| Test runner | Built-in (`bun test`) | Needs external | Needs external |
+| **Metric**    | **Bun**                               | **pnpm**                         | **npm**                     |
+| ------------- | ------------------------------------- | -------------------------------- | --------------------------- |
+| Install speed | ⚡ Fastest (native, no Node overhead) | Fast (content-addressable store) | Slowest                     |
+| Lockfile      | `bun.lockb` (binary, fast parse)      | `pnpm-lock.yaml`                 | `package-lock.json`         |
+| Disk usage    | Low                                   | Lowest (symlinked store)         | Highest (flat node_modules) |
+| Native TS     | Yes — runs `.ts` files directly       | No                               | No                          |
+| Test runner   | Built-in (`bun test`)                 | Needs external                   | Needs external              |
 
 ### Command Cheat Sheet
 
-| **Action** | **Bun (primary)** | **pnpm** | **npm** |
-| --- | --- | --- | --- |
-| Install all deps | `bun install` | `pnpm install` | `npm install` |
-| Add a dependency | `bun add <pkg>` | `pnpm add <pkg>` | `npm install <pkg>` |
-| Add a dev dep | `bun add -d <pkg>` | `pnpm add -D <pkg>` | `npm install -D <pkg>` |
-| Remove a dep | `bun remove <pkg>` | `pnpm remove <pkg>` | `npm uninstall <pkg>` |
-| Run a script | `bun run <script>` | `pnpm <script>` | `npm run <script>` |
-| Run a TS file | `bun run file.ts` | `npx tsx file.ts` | `npx tsx file.ts` |
-| Update deps | `bun update` | `pnpm update` | `npm update` |
+| **Action**       | **Bun (primary)**  | **pnpm**            | **npm**                |
+| ---------------- | ------------------ | ------------------- | ---------------------- |
+| Install all deps | `bun install`      | `pnpm install`      | `npm install`          |
+| Add a dependency | `bun add <pkg>`    | `pnpm add <pkg>`    | `npm install <pkg>`    |
+| Add a dev dep    | `bun add -d <pkg>` | `pnpm add -D <pkg>` | `npm install -D <pkg>` |
+| Remove a dep     | `bun remove <pkg>` | `pnpm remove <pkg>` | `npm uninstall <pkg>`  |
+| Run a script     | `bun run <script>` | `pnpm <script>`     | `npm run <script>`     |
+| Run a TS file    | `bun run file.ts`  | `npx tsx file.ts`   | `npx tsx file.ts`      |
+| Update deps      | `bun update`       | `pnpm update`       | `npm update`           |
 
 ### Rules
 
@@ -162,100 +162,82 @@ NODE_ENV=development
 ## 📦 Full Dependency Map
 
 - **Core Framework**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `next` | 16.1.6 | App Router, SSG/ISR, Server Components, Turbopack |
-    | `react` / `react-dom` | ^19.2.4 | UI runtime (React 19 with concurrent features) |
-    | `typescript` | ^5.9.3 | Type safety across entire codebase |
+  | **Package**           | **Version** | **Role**                                          |
+  | --------------------- | ----------- | ------------------------------------------------- |
+  | `next`                | 16.1.6      | App Router, SSG/ISR, Server Components, Turbopack |
+  | `react` / `react-dom` | ^19.2.4     | UI runtime (React 19 with concurrent features)    |
+  | `typescript`          | ^5.9.3      | Type safety across entire codebase                |
 - **Backend & Auth**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `@supabase/supabase-js` | ^2.98.0 | Database, auth, storage, realtime, pgvector |
-    | `@supabase/ssr` | ^0.9.0 | Server-side auth for Next.js middleware + Server Components |
-    | `zod` | ^4.3.6 | Runtime schema validation for API inputs, forms, env vars |
+  | **Package**             | **Version** | **Role**                                                    |
+  | ----------------------- | ----------- | ----------------------------------------------------------- |
+  | `@supabase/supabase-js` | ^2.98.0     | Database, auth, storage, realtime, pgvector                 |
+  | `@supabase/ssr`         | ^0.9.0      | Server-side auth for Next.js middleware + Server Components |
+  | `zod`                   | ^4.3.6      | Runtime schema validation for API inputs, forms, env vars   |
 - **Payments**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `stripe` | ^20.4.1 | Server-side Stripe SDK (subscriptions, webhooks) |
-    | `@stripe/stripe-js` | ^8.9.0 | Client-side Stripe Elements (checkout UI) |
-    | `payrex-node` | ^1.7.3 | Philippine local payments (GCash, Maya, bank transfers) |
+  | **Package**         | **Version** | **Role**                                                |
+  | ------------------- | ----------- | ------------------------------------------------------- |
+  | `stripe`            | ^20.4.1     | Server-side Stripe SDK (subscriptions, webhooks)        |
+  | `@stripe/stripe-js` | ^8.9.0      | Client-side Stripe Elements (checkout UI)               |
+  | `payrex-node`       | ^1.7.3      | Philippine local payments (GCash, Maya, bank transfers) |
 - **Rich Text Editor (TipTap)**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `@tiptap/react` | ^3.20.1 | React bindings for TipTap editor |
-    | `@tiptap/starter-kit` | ^3.20.1 | Core editor functionality (bold, italic, lists, code, etc.) |
-    | `@tiptap/pm` | ^3.20.1 | ProseMirror core dependency |
-    | `@tiptap/suggestion` | ^3.20.1 | Slash commands and mention suggestions |
-    | `@tiptap/extension-*` | ^3.20.1 | Bubble menu, highlight, horizontal rule, image, placeholder, task items/lists, text style, underline |
+  | **Package**           | **Version** | **Role**                                                                                             |
+  | --------------------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+  | `@tiptap/react`       | ^3.20.1     | React bindings for TipTap editor                                                                     |
+  | `@tiptap/starter-kit` | ^3.20.1     | Core editor functionality (bold, italic, lists, code, etc.)                                          |
+  | `@tiptap/pm`          | ^3.20.1     | ProseMirror core dependency                                                                          |
+  | `@tiptap/suggestion`  | ^3.20.1     | Slash commands and mention suggestions                                                               |
+  | `@tiptap/extension-*` | ^3.20.1     | Bubble menu, highlight, horizontal rule, image, placeholder, task items/lists, text style, underline |
 - **3D Engine**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `three` | ^0.183.2 | Core 3D rendering engine |
-    | `@react-three/fiber` | ^9.5.0 | React reconciler for Three.js |
-    | `@react-three/drei` | ^10.7.7 | Helper components (controls, loaders, effects) |
-    | `three-stdlib` | ^2.36.1 | Standard Three.js utilities |
-    | `camera-controls` | ^3.1.2 | Smooth, constrained camera orbit/pan/zoom |
-    | `@shadergradient/react` | ^2.4.20 | Animated shader gradient backgrounds |
+  | **Package**             | **Version** | **Role**                                       |
+  | ----------------------- | ----------- | ---------------------------------------------- |
+  | `three`                 | ^0.183.2    | Core 3D rendering engine                       |
+  | `@react-three/fiber`    | ^9.5.0      | React reconciler for Three.js                  |
+  | `@react-three/drei`     | ^10.7.7     | Helper components (controls, loaders, effects) |
+  | `three-stdlib`          | ^2.36.1     | Standard Three.js utilities                    |
+  | `camera-controls`       | ^3.1.2      | Smooth, constrained camera orbit/pan/zoom      |
+  | `@shadergradient/react` | ^2.4.20     | Animated shader gradient backgrounds           |
 - **UI & Styling**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `tailwindcss` | ^4.2.1 | Utility-first CSS framework (v4) |
-    | `shadcn` | ^4.0.0 | Copy-paste component library built on Radix + Tailwind |
-    | `@base-ui/react` | ^1.2.0 | Unstyled, accessible base components |
-    | `class-variance-authority` | ^0.7.1 | Component variant management (CVA) |
-    | `clsx` | ^2.1.1 | Conditional className composition |
-    | `tailwind-merge` | ^3.5.0 | Intelligent Tailwind class merging (deduplication) |
-    | `lucide-react` | ^0.577.0 | Icon system |
-    | `framer-motion` | ^12.35.2 | Animation library (page transitions, feedback, onboarding) |
-    | `tw-animate-css` | ^1.4.0 | Tailwind animation CSS utilities |
-    | `next-themes` | ^0.4.6 | Dark/light mode with system preference detection |
-    | `nextjs-toploader` | ^3.9.17 | Route change progress bar |
-    | `rough-notation` | ^0.5.1 | Hand-drawn-style annotation highlights |
+  | **Package**                | **Version** | **Role**                                                   |
+  | -------------------------- | ----------- | ---------------------------------------------------------- |
+  | `tailwindcss`              | ^4.2.1      | Utility-first CSS framework (v4)                           |
+  | `shadcn`                   | ^4.0.0      | Copy-paste component library built on Radix + Tailwind     |
+  | `@base-ui/react`           | ^1.2.0      | Unstyled, accessible base components                       |
+  | `class-variance-authority` | ^0.7.1      | Component variant management (CVA)                         |
+  | `clsx`                     | ^2.1.1      | Conditional className composition                          |
+  | `tailwind-merge`           | ^3.5.0      | Intelligent Tailwind class merging (deduplication)         |
+  | `lucide-react`             | ^0.577.0    | Icon system                                                |
+  | `framer-motion`            | ^12.35.2    | Animation library (page transitions, feedback, onboarding) |
+  | `tw-animate-css`           | ^1.4.0      | Tailwind animation CSS utilities                           |
+  | `next-themes`              | ^0.4.6      | Dark/light mode with system preference detection           |
+  | `nextjs-toploader`         | ^3.9.17     | Route change progress bar                                  |
+  | `rough-notation`           | ^0.5.1      | Hand-drawn-style annotation highlights                     |
 - **Content & Markdown**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `react-markdown` | ^10.1.0 | Markdown → React rendering for Wiki articles |
-    | `marked` | ^17.0.4 | Markdown parsing (server-side) |
-    | `remark-gfm` | ^4.0.1 | GitHub Flavored Markdown (tables, strikethrough, etc.) |
-    | `remark-math` | ^6.0.0 | Math notation in Markdown |
-    | `rehype-katex` | ^7.0.1 | KaTeX rendering for math equations |
-    | `katex` | ^0.16.37 | Math typesetting engine |
-    | `turndown` | ^7.2.2 | HTML → Markdown conversion |
-    | `isomorphic-dompurify` | ^3.1.0 | HTML sanitization (XSS prevention) |
-    | `pdf-parse` | ^2.4.5 | PDF text extraction (content ingestion) |
+  | **Package**            | **Version** | **Role**                                               |
+  | ---------------------- | ----------- | ------------------------------------------------------ |
+  | `react-markdown`       | ^10.1.0     | Markdown → React rendering for Wiki articles           |
+  | `marked`               | ^17.0.4     | Markdown parsing (server-side)                         |
+  | `remark-gfm`           | ^4.0.1      | GitHub Flavored Markdown (tables, strikethrough, etc.) |
+  | `remark-math`          | ^6.0.0      | Math notation in Markdown                              |
+  | `rehype-katex`         | ^7.0.1      | KaTeX rendering for math equations                     |
+  | `katex`                | ^0.16.37    | Math typesetting engine                                |
+  | `turndown`             | ^7.2.2      | HTML → Markdown conversion                             |
+  | `isomorphic-dompurify` | ^3.1.0      | HTML sanitization (XSS prevention)                     |
+  | `pdf-parse`            | ^2.4.5      | PDF text extraction (content ingestion)                |
 - **Data & Utilities**
-    
-    
-    | **Package** | **Version** | **Role** |
-    | --- | --- | --- |
-    | `recharts` | ^3.8.0 | Analytics dashboard charts (heatmap, line, bar) |
-    | `cmdk` | ^1.1.1 | Command palette (Cmd+K Omnibar search) |
-    | `date-fns` | ^4.1.0 | Date formatting and manipulation |
-    | `html2canvas` | ^1.4.1 | Screenshot capture (3D Lab snapshots to Notes) |
-    | `react-day-picker` | ^9.14.0 | Calendar / date picker UI |
+  | **Package**        | **Version** | **Role**                                        |
+  | ------------------ | ----------- | ----------------------------------------------- |
+  | `recharts`         | ^3.8.0      | Analytics dashboard charts (heatmap, line, bar) |
+  | `cmdk`             | ^1.1.1      | Command palette (Cmd+K Omnibar search)          |
+  | `date-fns`         | ^4.1.0      | Date formatting and manipulation                |
+  | `html2canvas`      | ^1.4.1      | Screenshot capture (3D Lab snapshots to Notes)  |
+  | `react-day-picker` | ^9.14.0     | Calendar / date picker UI                       |
 - **Dev Tooling**
-    
-    
-    | **Tool** | **Version** | **Purpose** |
-    | --- | --- | --- |
-    | `eslint`  • `eslint-config-next` | ^9.39.4 / 16.1.6 | Linting with Next.js-specific rules |
-    | `typescript` | ^5.9.3 | Strict type checking (`tsc --noEmit`) |
-    | `@tailwindcss/postcss` | ^4.2.1 | Tailwind CSS PostCSS plugin |
-    | Type definitions | various | `@types/node`, `@types/react`, `@types/react-dom`, `@types/three`, `@types/dompurify` |
+  | **Tool**                        | **Version**      | **Purpose**                                                                           |
+  | ------------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+  | `eslint` • `eslint-config-next` | ^9.39.4 / 16.1.6 | Linting with Next.js-specific rules                                                   |
+  | `typescript`                    | ^5.9.3           | Strict type checking (`tsc --noEmit`)                                                 |
+  | `@tailwindcss/postcss`          | ^4.2.1           | Tailwind CSS PostCSS plugin                                                           |
+  | Type definitions                | various          | `@types/node`, `@types/react`, `@types/react-dom`, `@types/three`, `@types/dompurify` |
 
 ---
 
@@ -276,14 +258,14 @@ main (protected — always deployable)
 
 ### Branch Naming Convention
 
-| **Prefix** | **Use When** | **Example** |
-| --- | --- | --- |
-| `feat/` | New feature or enhancement | `feat/blindspot-protocol-queue` |
-| `fix/` | Bug fix | `fix/quiz-autosave-race-condition` |
-| `chore/` | Maintenance, refactoring, dep updates | `chore/upgrade-supabase-sdk` |
-| `docs/` | Documentation only | `docs/api-route-readme` |
-| `hotfix/` | Critical production fix | `hotfix/stripe-webhook-crash` |
-| `test/` | Adding or updating tests | `test/readiness-score-unit` |
+| **Prefix** | **Use When**                          | **Example**                        |
+| ---------- | ------------------------------------- | ---------------------------------- |
+| `feat/`    | New feature or enhancement            | `feat/blindspot-protocol-queue`    |
+| `fix/`     | Bug fix                               | `fix/quiz-autosave-race-condition` |
+| `chore/`   | Maintenance, refactoring, dep updates | `chore/upgrade-supabase-sdk`       |
+| `docs/`    | Documentation only                    | `docs/api-route-readme`            |
+| `hotfix/`  | Critical production fix               | `hotfix/stripe-webhook-crash`      |
+| `test/`    | Adding or updating tests              | `test/readiness-score-unit`        |
 
 ### Commit Message Convention (Conventional Commits)
 
@@ -298,17 +280,17 @@ Every commit message follows the **Conventional Commits** specification:
 
 **Types:**
 
-| **Type** | **When** |  |
-| --- | --- | --- |
-| `feat` | A new feature (triggers minor version bump) |  |
-| `fix` | A bug fix (triggers patch version bump) |  |
-| `refactor` | Code change that neither fixes a bug nor adds a feature |  |
-| `style` | Formatting, missing semicolons, whitespace (no logic change) |  |
-| `docs` | Documentation only changes |  |
-| `test` | Adding or correcting tests |  |
-| `chore` | Build process, dependency updates, configs |  |
-| `perf` | A code change that improves performance |  |
-| `ci` | CI/CD configuration changes |  |
+| **Type**   | **When**                                                     |     |
+| ---------- | ------------------------------------------------------------ | --- |
+| `feat`     | A new feature (triggers minor version bump)                  |     |
+| `fix`      | A bug fix (triggers patch version bump)                      |     |
+| `refactor` | Code change that neither fixes a bug nor adds a feature      |     |
+| `style`    | Formatting, missing semicolons, whitespace (no logic change) |     |
+| `docs`     | Documentation only changes                                   |     |
+| `test`     | Adding or correcting tests                                   |     |
+| `chore`    | Build process, dependency updates, configs                   |     |
+| `perf`     | A code change that improves performance                      |     |
+| `ci`       | CI/CD configuration changes                                  |     |
 
 **Examples:**
 
@@ -379,7 +361,6 @@ git log --oneline --graph --all
 ## 📝 Coding Standards & Conventions
 
 > These standards are enforced across the entire codebase. See [04 — Architecture](https://www.notion.so/04-Architecture-ebc6df169c364ee68f074cbe406858b5?pvs=21) for the full reference.
-> 
 
 ### Component Format (Arrow Functions)
 
@@ -395,9 +376,9 @@ interface CardProps {
 
 const Card = ({ title, description }: CardProps) => {
   return (
-    <div className="rounded-md border p-4">
-      <h3 className="text-lg font-bold">{title}</h3>
-      {description && <p className="text-sm text-muted">{description}</p>}
+    <div className='rounded-sm border p-4'>
+      <h3 className='text-lg font-bold'>{title}</h3>
+      {description && <p className='text-sm text-muted'>{description}</p>}
     </div>
   )
 }
@@ -427,10 +408,10 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
   return (
     <button
       className={cn(
-        'rounded-md px-4 py-2 font-medium transition-colors',
+        'rounded-sm px-4 py-2 font-medium transition-colors',
         variant === 'primary' && 'bg-blue-600 text-white hover:bg-blue-700',
         variant === 'ghost' && 'bg-transparent hover:bg-zinc-100',
-        className
+        className,
       )}
       {...props}
     />
@@ -478,16 +459,16 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
 
 ### Naming Conventions
 
-| **Entity** | **Convention** | **Example** |
-| --- | --- | --- |
-| Components | PascalCase | `HeatmapNode.tsx` |
-| Hooks | camelCase with `use` prefix | `useReadinessScore.ts` |
-| Utilities | camelCase | `formatDate.ts` |
-| Constants | SCREAMING_SNAKE_CASE | `MAX_QUIZ_ITEMS` |
-| Types/Interfaces | PascalCase | `QuizSession`, `HeatmapNodeProps` |
-| API routes | kebab-case | `/api/quiz-sessions` |
-| CSS tokens | kebab-case with `--` prefix | `--surface-primary` |
-| Env vars | SCREAMING_SNAKE_CASE | `NEXT_PUBLIC_SUPABASE_URL` |
+| **Entity**       | **Convention**              | **Example**                       |
+| ---------------- | --------------------------- | --------------------------------- |
+| Components       | PascalCase                  | `HeatmapNode.tsx`                 |
+| Hooks            | camelCase with `use` prefix | `useReadinessScore.ts`            |
+| Utilities        | camelCase                   | `formatDate.ts`                   |
+| Constants        | SCREAMING_SNAKE_CASE        | `MAX_QUIZ_ITEMS`                  |
+| Types/Interfaces | PascalCase                  | `QuizSession`, `HeatmapNodeProps` |
+| API routes       | kebab-case                  | `/api/quiz-sessions`              |
+| CSS tokens       | kebab-case with `--` prefix | `--surface-primary`               |
+| Env vars         | SCREAMING_SNAKE_CASE        | `NEXT_PUBLIC_SUPABASE_URL`        |
 
 ### Barrel Exports
 
@@ -533,25 +514,25 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
 
 ### Targets
 
-| **Metric** | **Target** | **Why** |
-| --- | --- | --- |
-| Largest Contentful Paint (LCP) | < 1.5s | Users perceive the page as "fast" |
-| First Input Delay (FID) | < 50ms | Interactions feel instant |
-| Cumulative Layout Shift (CLS) | < 0.05 | Nothing jumps around on load |
-| Time to Interactive (TTI) | < 2s | Quiz engine must be usable immediately |
+| **Metric**                     | **Target** | **Why**                                |
+| ------------------------------ | ---------- | -------------------------------------- |
+| Largest Contentful Paint (LCP) | < 1.5s     | Users perceive the page as "fast"      |
+| First Input Delay (FID)        | < 50ms     | Interactions feel instant              |
+| Cumulative Layout Shift (CLS)  | < 0.05     | Nothing jumps around on load           |
+| Time to Interactive (TTI)      | < 2s       | Quiz engine must be usable immediately |
 
 ### Performance Checklist
 
-- [ ]  **Dynamic imports** — `next/dynamic` for heavy components (3D Lab, Recharts, TipTap editor)
-- [ ]  **Tree-shaking** — import only what you need: `import { format } from 'date-fns'` not `import * as dateFns`
-- [ ]  **Image optimization** — always use `next/image` with `width`, `height`, and `priority` for above-the-fold images
-- [ ]  **Font optimization** — use `next/font` for self-hosted Inter and JetBrains Mono (no layout shift)
-- [ ]  **Optimistic UI** — "Save to Notes" reacts instantly; DB writes happen async in background
-- [ ]  **Debounce inputs** — search (300ms), resize (150ms), scroll handlers (100ms)
-- [ ]  **No unnecessary state libraries** — `useState` and `useContext` cover 90% of cases. Only reach for Zustand if you have genuinely complex cross-component state
-- [ ]  **Bundle analysis** — run `ANALYZE=true bun run build` periodically to check for bloat
-- [ ]  **Avoid layout thrashing** — batch DOM reads before writes; prefer CSS transforms over position changes
-- [ ]  **Prefetch critical routes** — use `<Link prefetch>` for dashboard and quiz routes
+- [ ] **Dynamic imports** — `next/dynamic` for heavy components (3D Lab, Recharts, TipTap editor)
+- [ ] **Tree-shaking** — import only what you need: `import { format } from 'date-fns'` not `import * as dateFns`
+- [ ] **Image optimization** — always use `next/image` with `width`, `height`, and `priority` for above-the-fold images
+- [ ] **Font optimization** — use `next/font` for self-hosted Inter and JetBrains Mono (no layout shift)
+- [ ] **Optimistic UI** — "Save to Notes" reacts instantly; DB writes happen async in background
+- [ ] **Debounce inputs** — search (300ms), resize (150ms), scroll handlers (100ms)
+- [ ] **No unnecessary state libraries** — `useState` and `useContext` cover 90% of cases. Only reach for Zustand if you have genuinely complex cross-component state
+- [ ] **Bundle analysis** — run `ANALYZE=true bun run build` periodically to check for bloat
+- [ ] **Avoid layout thrashing** — batch DOM reads before writes; prefer CSS transforms over position changes
+- [ ] **Prefetch critical routes** — use `<Link prefetch>` for dashboard and quiz routes
 
 ---
 
@@ -559,12 +540,12 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
 
 ### Test Pyramid
 
-| **Layer** | **Tool** | **What to Test** | **Coverage Target** |
-| --- | --- | --- | --- |
-| Unit | Bun test runner | Utility functions, hooks, Zod schemas, score calculations | High (80%+) |
-| Component | React Testing Library | UI components render correctly, props work, accessibility | Medium |
-| Integration | Bun test + Supabase local | API routes, Server Actions, database queries | Medium |
-| E2E | Playwright | Critical user flows (signup → quiz → score → notes) | Key paths only |
+| **Layer**   | **Tool**                  | **What to Test**                                          | **Coverage Target** |
+| ----------- | ------------------------- | --------------------------------------------------------- | ------------------- |
+| Unit        | Bun test runner           | Utility functions, hooks, Zod schemas, score calculations | High (80%+)         |
+| Component   | React Testing Library     | UI components render correctly, props work, accessibility | Medium              |
+| Integration | Bun test + Supabase local | API routes, Server Actions, database queries              | Medium              |
+| E2E         | Playwright                | Critical user flows (signup → quiz → score → notes)       | Key paths only      |
 
 ### What to Test (and What Not To)
 
@@ -610,14 +591,14 @@ Every push and PR triggers the following pipeline:
 
 ### Pipeline Stages
 
-| **Stage** | **Command** | **Blocks Deploy?** |
-| --- | --- | --- |
-| Lint | `bun run lint` | Yes |
-| Type Check | `bun run type-check` | Yes |
-| Unit Tests | `bun test` | Yes |
-| Build | `bun run build` | Yes |
-| Preview Deploy | Vercel preview (per PR) | No (informational) |
-| Production Deploy | Vercel production (on merge to main) | — |
+| **Stage**         | **Command**                          | **Blocks Deploy?** |
+| ----------------- | ------------------------------------ | ------------------ |
+| Lint              | `bun run lint`                       | Yes                |
+| Type Check        | `bun run type-check`                 | Yes                |
+| Unit Tests        | `bun test`                           | Yes                |
+| Build             | `bun run build`                      | Yes                |
+| Preview Deploy    | Vercel preview (per PR)              | No (informational) |
+| Production Deploy | Vercel production (on merge to main) | —                  |
 
 ### Deployment
 
@@ -703,17 +684,17 @@ project-cerebro/
 
 Before every PR, confirm:
 
-- [ ]  `bun run lint` passes with zero warnings
-- [ ]  `bun run type-check` passes with zero errors
-- [ ]  `bun test` passes all tests
-- [ ]  `bun run build` completes successfully
-- [ ]  No `console.log` left in committed code (use a linter rule)
-- [ ]  No `any` types introduced
-- [ ]  No hardcoded secrets or API keys
-- [ ]  New components follow arrow function format with explicit prop interfaces
-- [ ]  Tailwind used for all styling (no inline styles, no CSS modules)
-- [ ]  `cn()` used for conditional classes
-- [ ]  Server Components by default; `'use client'` only at the leaf
-- [ ]  Heavy imports are dynamically loaded (`next/dynamic` or `React.lazy`)
-- [ ]  Commit messages follow Conventional Commits
-- [ ]  PR description explains *what* and *why*
+- [ ] `bun run lint` passes with zero warnings
+- [ ] `bun run type-check` passes with zero errors
+- [ ] `bun test` passes all tests
+- [ ] `bun run build` completes successfully
+- [ ] No `console.log` left in committed code (use a linter rule)
+- [ ] No `any` types introduced
+- [ ] No hardcoded secrets or API keys
+- [ ] New components follow arrow function format with explicit prop interfaces
+- [ ] Tailwind used for all styling (no inline styles, no CSS modules)
+- [ ] `cn()` used for conditional classes
+- [ ] Server Components by default; `'use client'` only at the leaf
+- [ ] Heavy imports are dynamically loaded (`next/dynamic` or `React.lazy`)
+- [ ] Commit messages follow Conventional Commits
+- [ ] PR description explains _what_ and _why_

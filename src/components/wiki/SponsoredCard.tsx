@@ -16,27 +16,31 @@ export function SponsoredCard({ ad, variant }: SponsoredCardProps) {
 
   return (
     <div
-      className={`rounded-lg border border-border/40 bg-secondary/20 flex flex-col ${
+      className={`rounded-sm border border-border/40 bg-secondary/20 flex flex-col ${
         isRail ? 'p-3' : 'p-4'
       }`}
     >
-      <span className="text-[10px] text-muted-foreground/60 uppercase tracking-wide mb-2">
+      <span className='text-[10px] text-muted-foreground/60 uppercase tracking-wide mb-2'>
         {ad.label}
       </span>
 
-      <p className={`font-medium text-foreground leading-snug mb-1 ${isRail ? 'text-xs' : 'text-sm'}`}>
+      <p
+        className={`font-medium text-foreground leading-snug mb-1 ${isRail ? 'text-xs' : 'text-sm'}`}
+      >
         {ad.headline}
       </p>
 
-      <p className={`text-muted-foreground flex-1 mb-3 ${isRail ? 'text-[11px]' : 'text-xs'}`}>
+      <p
+        className={`text-muted-foreground flex-1 mb-3 ${isRail ? 'text-[11px]' : 'text-xs'}`}
+      >
         {ad.body}
       </p>
 
       <Link
         href={ad.ctaUrl}
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-        className={`inline-flex items-center justify-center rounded-md border border-border/60 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground ${
+        target='_blank'
+        rel='noopener noreferrer sponsored'
+        className={`inline-flex items-center justify-center rounded-sm border border-border/60 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground ${
           isRail ? 'text-[11px] px-2 py-1' : 'text-xs px-3 py-1.5'
         }`}
       >

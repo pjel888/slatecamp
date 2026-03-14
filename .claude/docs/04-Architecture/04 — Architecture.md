@@ -34,15 +34,15 @@ SlateCamp uses **Supabase** as the unified backend:
 
 ### Core Database Tables
 
-| **Table** | **Purpose** | **Key Columns** |
-| --- | --- | --- |
-| `taxonomy_tree` | Master Syllabus hierarchy | `node_id`, `parent_id`, `level` (1-3), `name`, `subject_area` |
-| `wiki_articles` | SME-authored content | `article_id`, `topic_id` (FK), `title`, `content` (MD), `author_id`, `last_updated` |
-| `questions` | Quiz question bank | `question_id`, `topic_id` (FK), `subject_id` (FK), `text` (MD), `options` (JSON), `rationale` (MD), `difficulty` |
-| `user_interactions` | Atomic telemetry log | `interaction_id`, `user_id`, `session_id`, `question_id`, `selected_option`, `is_correct`, `time_spent_ms`, `test_mode` |
-| `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `mastery_weight` (EMA), `avg_time_ms` |
-| `user_notes` | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array) |
-| `wiki_embeddings` | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id` |
+| **Table**           | **Purpose**               | **Key Columns**                                                                                                         |
+| ------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `taxonomy_tree`     | Master Syllabus hierarchy | `node_id`, `parent_id`, `level` (1-3), `name`, `subject_area`                                                           |
+| `wiki_articles`     | SME-authored content      | `article_id`, `topic_id` (FK), `title`, `content` (MD), `author_id`, `last_updated`                                     |
+| `questions`         | Quiz question bank        | `question_id`, `topic_id` (FK), `subject_id` (FK), `text` (MD), `options` (JSON), `rationale` (MD), `difficulty`        |
+| `user_interactions` | Atomic telemetry log      | `interaction_id`, `user_id`, `session_id`, `question_id`, `selected_option`, `is_correct`, `time_spent_ms`, `test_mode` |
+| `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `mastery_weight` (EMA), `avg_time_ms`                         |
+| `user_notes`        | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array)                                  |
+| `wiki_embeddings`   | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id`                                       |
 
 ---
 
@@ -128,22 +128,22 @@ slatecamp/
 
 The app uses a **two-zone pattern:** public marketing routes at the top level, and all authenticated product features nested under `/dashboard/`.
 
-| **Route** | **Zone** | **Maps to Feature** |
-| --- | --- | --- |
-| `/` | Public | Landing page / hero ("Know you'll win") |
-| `/about` | Public | Marketing: About SlateCamp |
-| `/contact` | Public | Marketing: Contact / support |
-| `/pricing` | Public | Marketing: Pricing tiers (Free → Camp → Insurance) |
-| `(auth)/` | Public | Login, signup, onboarding flow |
-| `/auth` | Public | Supabase auth callbacks (OAuth, magic links) |
-| `/api` | Server | Stripe/PayRex webhooks, Edge Functions |
-| **`/dashboard`** | **Auth'd** | **Dashboard home — overview & Readiness Score** |
-| `/dashboard/wiki` | Auth'd | Feature 1: Taxonomy-Mapped Wiki |
-| `/dashboard/testing` | Auth'd | Feature 2: Quizzing Engine (Camp + Storm Mode) |
-| `/dashboard/notes` | Auth'd | Feature 3: Personal Notes & Workspace |
-| `/dashboard/3d-lab` | Auth'd | Feature 4: Interactive 3D Lab |
-| `/dashboard/analytics` | Auth'd | Feature 6: Heatmap & Performance Analytics |
-| `/dashboard/settings` | Auth'd | User settings & account management |
+| **Route**              | **Zone**   | **Maps to Feature**                                |
+| ---------------------- | ---------- | -------------------------------------------------- |
+| `/`                    | Public     | Landing page / hero ("Know you'll win")            |
+| `/about`               | Public     | Marketing: About SlateCamp                         |
+| `/contact`             | Public     | Marketing: Contact / support                       |
+| `/pricing`             | Public     | Marketing: Pricing tiers (Free → Camp → Insurance) |
+| `(auth)/`              | Public     | Login, signup, onboarding flow                     |
+| `/auth`                | Public     | Supabase auth callbacks (OAuth, magic links)       |
+| `/api`                 | Server     | Stripe/PayRex webhooks, Edge Functions             |
+| **`/dashboard`**       | **Auth'd** | **Dashboard home — overview & Readiness Score**    |
+| `/dashboard/wiki`      | Auth'd     | Feature 1: Taxonomy-Mapped Wiki                    |
+| `/dashboard/testing`   | Auth'd     | Feature 2: Quizzing Engine (Camp + Storm Mode)     |
+| `/dashboard/notes`     | Auth'd     | Feature 3: Personal Notes & Workspace              |
+| `/dashboard/3d-lab`    | Auth'd     | Feature 4: Interactive 3D Lab                      |
+| `/dashboard/analytics` | Auth'd     | Feature 6: Heatmap & Performance Analytics         |
+| `/dashboard/settings`  | Auth'd     | User settings & account management                 |
 
 The `dashboard/layout.tsx` acts as the **authenticated app shell** — it wraps all product features with the sidebar navigation, auth gate, and shared loading state (`loading.tsx`).
 
@@ -151,18 +151,18 @@ The `dashboard/layout.tsx` acts as the **authenticated app shell** — it wraps 
 
 Components are organized by **feature domain**, not by type. Each folder is self-contained:
 
-| **Directory** | **Feature** | **Key Components** |
-| --- | --- | --- |
-| `components/3d/` | 3D Lab (Feature 4) | R3F canvas, parametric sandbox, camera controls, model viewers |
-| `components/auth/` | Authentication | Login forms, signup flows, onboarding quiz |
-| `components/dashboard/` | Analytics (Feature 6) | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge |
-| `components/dev/` | Developer Tools | Debug panels, test utilities, dev-only UI |
-| `components/layouts/` | App Shell | Sidebar nav, header, footer, responsive wrappers |
-| `components/marketing/` | Marketing Pages | Hero section, feature grids, CTA blocks, testimonials |
-| `components/notes/` | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder |
-| `components/shared/` | Shared Utilities | Modals, tooltips, loaders, error boundaries, toast notifications |
-| `components/ui/` | Design System | shadcn/ui primitives (Button, Input, Dialog, Card, etc.) |
-| `components/wiki/` | Wiki (Feature 1) | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar |
+| **Directory**           | **Feature**                 | **Key Components**                                               |
+| ----------------------- | --------------------------- | ---------------------------------------------------------------- |
+| `components/3d/`        | 3D Lab (Feature 4)          | R3F canvas, parametric sandbox, camera controls, model viewers   |
+| `components/auth/`      | Authentication              | Login forms, signup flows, onboarding quiz                       |
+| `components/dashboard/` | Analytics (Feature 6)       | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge  |
+| `components/dev/`       | Developer Tools             | Debug panels, test utilities, dev-only UI                        |
+| `components/layouts/`   | App Shell                   | Sidebar nav, header, footer, responsive wrappers                 |
+| `components/marketing/` | Marketing Pages             | Hero section, feature grids, CTA blocks, testimonials            |
+| `components/notes/`     | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder               |
+| `components/shared/`    | Shared Utilities            | Modals, tooltips, loaders, error boundaries, toast notifications |
+| `components/ui/`        | Design System               | shadcn/ui primitives (Button, Input, Dialog, Card, etc.)         |
+| `components/wiki/`      | Wiki (Feature 1)            | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar     |
 
 ### State Management
 
@@ -191,9 +191,7 @@ All React components **must** use arrow function syntax with default exports. Th
 import React from 'react'
 
 const Card = () => {
-  return (
-    <div>Card</div>
-  )
+  return <div>Card</div>
 }
 
 export default Card
@@ -219,10 +217,12 @@ interface QuizCardProps {
 
 const QuizCard = ({ question, options, onSelect }: QuizCardProps) => {
   return (
-    <div className={cn('rounded-lg border p-6', 'bg-slate-900')}>
+    <div className={cn('rounded-sm border p-6', 'bg-slate-900')}>
       <h3>{question}</h3>
       {options.map((opt, i) => (
-        <button key={i} onClick={() => onSelect(i)}>{opt}</button>
+        <button key={i} onClick={() => onSelect(i)}>
+          {opt}
+        </button>
       ))}
     </div>
   )
@@ -245,10 +245,11 @@ const Button = ({ variant, className }: ButtonProps) => {
   return (
     <button
       className={cn(
-        'rounded-md px-4 py-2 font-medium transition-colors',
-        variant === 'primary' && 'bg-emerald-500 text-white hover:bg-emerald-600',
+        'rounded-sm px-4 py-2 font-medium transition-colors',
+        variant === 'primary' &&
+          'bg-emerald-500 text-white hover:bg-emerald-600',
         variant === 'ghost' && 'bg-transparent text-slate-400 hover:text-white',
-        className
+        className,
       )}
     />
   )
@@ -314,19 +315,21 @@ Push `'use client'` **down** to the smallest interactive leaf component:
 ```tsx
 // ❌ BAD — entire page is a client component
 'use client'
-const WikiPage = () => { /* ... */ }
+const WikiPage = () => {
+  /* ... */
+}
 
 // ✅ GOOD — page is a Server Component, only the interactive parts are client
 // app/dashboard/wiki/page.tsx (Server Component)
-import WikiArticle from '@/components/wiki/wiki-article'      // Server
-import WikiHighlightToolbar from '@/components/wiki/highlight-toolbar'  // Client
+import WikiArticle from '@/components/wiki/wiki-article' // Server
+import WikiHighlightToolbar from '@/components/wiki/highlight-toolbar' // Client
 
 const WikiPage = async () => {
-  const article = await getArticle()  // Server-side data fetch
+  const article = await getArticle() // Server-side data fetch
   return (
     <>
       <WikiArticle content={article} />
-      <WikiHighlightToolbar />           {/* 'use client' inside */}
+      <WikiHighlightToolbar /> {/* 'use client' inside */}
     </>
   )
 }
@@ -353,12 +356,12 @@ const WikiPage = async () => {
 
 ### Core Web Vitals Targets
 
-| **Metric** | **Target** | **How** |
-| --- | --- | --- |
-| **LCP** (Largest Contentful Paint) | <1.5s | Server Components, SSG/ISR for Wiki, minimal client JS |
-| **FID** (First Input Delay) | <50ms | Small client bundles, code splitting, no main-thread blocking |
-| **CLS** (Cumulative Layout Shift) | <0.05 | Explicit dimensions on images/3D canvas, font `display: swap` |
-| **TTI** (Time to Interactive) | <2s | Minimal client-side hydration, progressive enhancement |
+| **Metric**                         | **Target** | **How**                                                       |
+| ---------------------------------- | ---------- | ------------------------------------------------------------- |
+| **LCP** (Largest Contentful Paint) | <1.5s      | Server Components, SSG/ISR for Wiki, minimal client JS        |
+| **FID** (First Input Delay)        | <50ms      | Small client bundles, code splitting, no main-thread blocking |
+| **CLS** (Cumulative Layout Shift)  | <0.05      | Explicit dimensions on images/3D canvas, font `display: swap` |
+| **TTI** (Time to Interactive)      | <2s        | Minimal client-side hydration, progressive enhancement        |
 
 ### Performance Rules
 
@@ -402,10 +405,10 @@ const WikiPage = async () => {
 
 Dual payment processing for international + Philippine local coverage:
 
-| **Provider** | **Package** | **Use Case** |
-| --- | --- | --- |
-| Stripe | `stripe ^20.4.1`  • `@stripe/stripe-js ^8.9.0` | International cards, subscription management, webhook processing |
-| PayRex | `payrex-node ^1.7.3` | GCash, Maya, Philippine bank transfers, local payment methods |
+| **Provider** | **Package**                                   | **Use Case**                                                     |
+| ------------ | --------------------------------------------- | ---------------------------------------------------------------- |
+| Stripe       | `stripe ^20.4.1` • `@stripe/stripe-js ^8.9.0` | International cards, subscription management, webhook processing |
+| PayRex       | `payrex-node ^1.7.3`                          | GCash, Maya, Philippine bank transfers, local payment methods    |
 
 ---
 
@@ -454,7 +457,6 @@ Unified Educational OS — PostgreSQL Schema v1.0 MASTER (Supabase)
 **Status:** v1.0 MASTER · **Engine:** PostgreSQL 15+ (Supabase) · **Requires:** `pgvector` extension
 
 > The complete, production-ready schema for SlateCamp. Core Engine (Disciplines → Taxonomy → Content → Quizzing → Analytics) plus Extensions (Subscriptions, Notes Workspace, Feedback & SME Pipeline). Integrates horizontal scaling, EMA scoring, IRT weighting, Zero-Data-Loss persistence, and pgvector RAG.
-> 
 
 ---
 
@@ -467,7 +469,7 @@ Think of this schema as a massive, highly secure digital university. We just add
 
 </aside>
 
-### 1. The Cashier's Office (`user_subscriptions`) — *New in v1.0*
+### 1. The Cashier's Office (`user_subscriptions`) — _New in v1.0_
 
 Before a student walks into any building, they pass through the cashier. This table knows whether they're on the Free tier (limited access), the Camp monthly plan, the Insurance 6-month bundle, or an Institutional license. It connects to Stripe and PayRex so payments are handled by webhooks — the app never touches credit card data directly.
 
@@ -484,9 +486,9 @@ Inside your specific building, there is a massive set of filing cabinets. Before
 - **Questions:** This is where we store the test items. We don't just store the question and the answer; we store a "difficulty rating" so the system knows if a student answered a genuinely hard question or just an easy one.
 - **Wiki & Embeddings:** We store the textbook articles here. But we also chop those articles into mathematical pieces (embeddings). When a student asks the AI a question, it only searches these exact mathematical pieces. This is how we guarantee the AI won't hallucinate or lie.
 
-### 5. The Student Notebook (`user_notes`) — *New in v1.0*
+### 5. The Student Notebook (`user_notes`) — _New in v1.0_
 
-Students can capture notes from anywhere in the app — Wiki, Quiz, or 3D Lab — without leaving their screen. Each note is a block-based document (TipTap JSON) linked back to the taxonomy topics it came from. The system even tracks whether a student *revisits* their notes, so it can nudge them if they're capturing but never reviewing.
+Students can capture notes from anywhere in the app — Wiki, Quiz, or 3D Lab — without leaving their screen. Each note is a block-based document (TipTap JSON) linked back to the taxonomy topics it came from. The system even tracks whether a student _revisits_ their notes, so it can nudge them if they're capturing but never reviewing.
 
 ### 6. The Magical Desk (`quiz_sessions`)
 
@@ -494,7 +496,7 @@ When a student starts a mock exam, the system assigns them a "Session." Think of
 
 ### 7. The Security Camera (`user_interactions`)
 
-Most quiz apps only remember the final score. This table is a security camera that records *every single click*. It logs what option they chose, whether they flagged it for review, and exactly how many milliseconds they spent looking at it. If a student answers a highly complex math question correctly in 2 seconds, this table flags it as a **"Lucky Guess"** so they don't get fake credit.
+Most quiz apps only remember the final score. This table is a security camera that records _every single click_. It logs what option they chose, whether they flagged it for review, and exactly how many milliseconds they spent looking at it. If a student answers a highly complex math question correctly in 2 seconds, this table flags it as a **"Lucky Guess"** so they don't get fake credit.
 
 ### 8. The Report Card (`user_node_mastery` & `user_global_stats`)
 
@@ -504,7 +506,7 @@ If the app had to review the "Security Camera" (millions of clicks) every time a
 - **The Pressure Gap:** It keeps a separate score for how the student performs in casual practice versus how they perform under a strict, timed exam.
 - **The Dashboard Hero:** It tracks which building they are in (e.g., Architecture) and instantly loads their overall readiness score and study streaks so the app feels lightning-fast.
 
-### 9. The Quality Control Department (`feedback_submissions`, `feedback_votes`, `sme_review_queue`) — *New in v1.0*
+### 9. The Quality Control Department (`feedback_submissions`, `feedback_votes`, `sme_review_queue`) — _New in v1.0_
 
 This is the platform's immune system. When a student spots a wrong answer, flags an AI hallucination, or reports a bug, it enters a structured feedback pipeline. Other students can upvote the report. Critical issues (hallucinations, content errors) are automatically routed to a dedicated **SME Review Queue** where Subject Matter Experts can verify, approve, or reject the fix. This closes the loop between user feedback and content quality.
 
@@ -516,22 +518,22 @@ This is strict database security. It guarantees that Student A can never, under 
 
 ## 🏗️ Schema Overview
 
-| **#** | **Table** | **Role** | **Scale Profile** |
-| --- | --- | --- | --- |
-| 1 | `user_subscriptions` | **NEW** — Paywall & Business Engine (Stripe/PayRex webhooks, tier gating) | One row per user |
-| 2 | `disciplines` | Horizontal Scaling Layer: one row per licensure exam vertical | Tens of rows (one per exam type) |
-| 3 | `taxonomy_tree` | Master Syllabus — up to 6 levels, scoped per discipline, `is_leaf` terminal nodes | Hundreds of rows per discipline |
-| 4A | `questions` | SME-Authored Question Bank with IRT difficulty parameters | Thousands (grows with content) |
-| 4B | `wiki_articles` | Authoritative knowledge base articles feeding the UI and the AI Tutor | Thousands (grows with content) |
-| 4C | `wiki_embeddings` | pgvector chunks for the Zero-Hallucination RAG pipeline | Tens of thousands (multiple chunks per article) |
-| 5 | `user_notes` | **NEW** — Personal Workspace (TipTap JSON blocks, taxonomy-linked, revisit tracking) | Tens of thousands (grows with users) |
-| 6 | `user_global_stats` | O(1) cache for Dashboard hero metrics with `current_discipline_id` | One row per user |
-| 7 | `quiz_sessions` | State Manager with `question_ids[]` and `current_question_index` for crash recovery | Tens of thousands (grows with users) |
-| 8 | `user_interactions` | Atomic Telemetry Log with `is_flagged` and `is_lucky_guess` columns | **Millions of rows** (hot path, write-heavy) |
-| 9 | `user_node_mastery` | Aggregation Layer with `pressure_mastery_weight` for the Storm Mode Pressure Gap | Tens of thousands (one row per user×topic) |
-| 10A | `feedback_submissions` | **NEW** — User feedback pipeline (bugs, hallucination flags, feature requests) | Thousands (grows with engagement) |
-| 10B | `feedback_votes` | **NEW** — Upvoting system for feedback prioritization | Tens of thousands |
-| 10C | `sme_review_queue` | **NEW** — Dedicated SME review queue for content accuracy issues | Hundreds (triaged from feedback) |
+| **#** | **Table**              | **Role**                                                                             | **Scale Profile**                               |
+| ----- | ---------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| 1     | `user_subscriptions`   | **NEW** — Paywall & Business Engine (Stripe/PayRex webhooks, tier gating)            | One row per user                                |
+| 2     | `disciplines`          | Horizontal Scaling Layer: one row per licensure exam vertical                        | Tens of rows (one per exam type)                |
+| 3     | `taxonomy_tree`        | Master Syllabus — up to 6 levels, scoped per discipline, `is_leaf` terminal nodes    | Hundreds of rows per discipline                 |
+| 4A    | `questions`            | SME-Authored Question Bank with IRT difficulty parameters                            | Thousands (grows with content)                  |
+| 4B    | `wiki_articles`        | Authoritative knowledge base articles feeding the UI and the AI Tutor                | Thousands (grows with content)                  |
+| 4C    | `wiki_embeddings`      | pgvector chunks for the Zero-Hallucination RAG pipeline                              | Tens of thousands (multiple chunks per article) |
+| 5     | `user_notes`           | **NEW** — Personal Workspace (TipTap JSON blocks, taxonomy-linked, revisit tracking) | Tens of thousands (grows with users)            |
+| 6     | `user_global_stats`    | O(1) cache for Dashboard hero metrics with `current_discipline_id`                   | One row per user                                |
+| 7     | `quiz_sessions`        | State Manager with `question_ids[]` and `current_question_index` for crash recovery  | Tens of thousands (grows with users)            |
+| 8     | `user_interactions`    | Atomic Telemetry Log with `is_flagged` and `is_lucky_guess` columns                  | **Millions of rows** (hot path, write-heavy)    |
+| 9     | `user_node_mastery`    | Aggregation Layer with `pressure_mastery_weight` for the Storm Mode Pressure Gap     | Tens of thousands (one row per user×topic)      |
+| 10A   | `feedback_submissions` | **NEW** — User feedback pipeline (bugs, hallucination flags, feature requests)       | Thousands (grows with engagement)               |
+| 10B   | `feedback_votes`       | **NEW** — Upvoting system for feedback prioritization                                | Tens of thousands                               |
+| 10C   | `sme_review_queue`     | **NEW** — Dedicated SME review queue for content accuracy issues                     | Hundreds (triaged from feedback)                |
 
 ---
 

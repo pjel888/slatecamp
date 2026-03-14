@@ -10,7 +10,7 @@ No,Category,Guideline,Description,Do,Don't,Code Good,Code Bad,Severity,Docs URL
 9,Layout,Responsive padding,Adjust padding for different screen sizes,px-4 md:px-6 lg:px-8,Same padding all sizes,px-4 sm:px-6 lg:px-8,px-8 (same all sizes),Medium,
 10,Layout,Grid gaps,Use consistent gap utilities for spacing,gap-4 gap-6 gap-8,Margins on individual items,grid gap-6,grid with mb-4 on each item,Medium,https://tailwindcss.com/docs/gap
 11,Layout,Flexbox alignment,Use flex utilities for alignment,items-center justify-between,Multiple nested wrappers,flex items-center justify-between,Nested divs for alignment,Low,
-12,Images,Aspect ratio,Maintain consistent image aspect ratios,aspect-video aspect-square,No aspect ratio on containers,aspect-video rounded-lg,No aspect control,Medium,https://tailwindcss.com/docs/aspect-ratio
+12,Images,Aspect ratio,Maintain consistent image aspect ratios,aspect-video aspect-square,No aspect ratio on containers,aspect-video rounded-sm,No aspect control,Medium,https://tailwindcss.com/docs/aspect-ratio
 13,Images,Object fit,Control image scaling within containers,object-cover object-contain,Stretched distorted images,object-cover w-full h-full,No object-fit,Medium,https://tailwindcss.com/docs/object-fit
 14,Images,Lazy loading,Defer loading of off-screen images,loading='lazy' on images,All images eager load,<img loading='lazy'>,<img> without lazy,High,
 15,Images,Responsive images,Serve appropriate image sizes,srcset and sizes attributes,Same large image all devices,srcset with multiple sizes,4000px image everywhere,High,
@@ -35,7 +35,7 @@ No,Category,Guideline,Description,Do,Don't,Code Good,Code Bad,Severity,Docs URL
 34,Buttons,Touch targets,Minimum 44px touch target on mobile,min-h-[44px] on mobile,Small buttons on mobile,min-h-[44px] min-w-[44px],h-8 w-8 on mobile,High,
 35,Buttons,Loading states,Show loading feedback,disabled + spinner icon,Clickable during loading,<Button disabled><Spinner/></Button>,Button without loading state,High,
 36,Buttons,Icon buttons,Accessible icon-only buttons,aria-label on icon buttons,Icon button without label,<button aria-label='Close'><XIcon/></button>,<button><XIcon/></button>,High,
-37,Cards,Card structure,Consistent card styling,rounded-lg shadow-md p-6,Inconsistent card styles,rounded-2xl shadow-lg p-6,Mixed card styling,Low,
+37,Cards,Card structure,Consistent card styling,rounded-sm shadow-md p-6,Inconsistent card styles,rounded-2xl shadow-lg p-6,Mixed card styling,Low,
 38,Cards,Card hover states,Interactive cards should have hover feedback,hover:shadow-lg transition-shadow,No hover on clickable cards,hover:shadow-xl transition-shadow,Static cards that are clickable,Medium,
 39,Cards,Card spacing,Consistent internal card spacing,space-y-4 for card content,Inconsistent internal spacing,space-y-4 or p-6,Mixed mb-2 mb-4 mb-6,Low,
 40,Accessibility,Screen reader text,Provide context for screen readers,sr-only for hidden labels,Missing context for icons,<span class='sr-only'>Close menu</span>,No label for icon button,High,https://tailwindcss.com/docs/screen-readers

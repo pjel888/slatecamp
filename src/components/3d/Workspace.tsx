@@ -376,7 +376,7 @@ function TreeNodeItem({
       <button
         type='button'
         onClick={() => onSelectModel(node.modelId as ModelId)}
-        className={`flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left text-xs transition-colors ${
+        className={`flex w-full items-center justify-between rounded-sm px-2 py-1.5 text-left text-xs transition-colors ${
           isActive
             ? 'bg-secondary text-foreground'
             : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
@@ -392,7 +392,7 @@ function TreeNodeItem({
       <button
         type='button'
         onClick={() => onToggle(node.id)}
-        className='flex w-full items-center justify-between rounded-md px-2 py-1.5 text-left text-xs text-muted-foreground transition-colors hover:bg-secondary/40 hover:text-foreground'
+        className='flex w-full items-center justify-between rounded-sm px-2 py-1.5 text-left text-xs text-muted-foreground transition-colors hover:bg-secondary/40 hover:text-foreground'
       >
         <span className='truncate font-medium'>{node.label}</span>
         <span className='ml-2 text-[10px] text-muted-foreground'>
@@ -469,7 +469,7 @@ function ActiveCalloutPanel({ callout, onClose }: ActiveCalloutPanelProps) {
                       key={option}
                       type='button'
                       onClick={() => setSelectedIndex(index)}
-                      className={`flex w-full items-center justify-between rounded-md px-2.5 py-1.5 text-left text-xs transition-all duration-150 ${
+                      className={`flex w-full items-center justify-between rounded-sm px-2.5 py-1.5 text-left text-xs transition-all duration-150 ${
                         isSelected
                           ? 'bg-secondary text-foreground'
                           : 'bg-muted text-muted-foreground hover:bg-secondary/60 hover:text-foreground'

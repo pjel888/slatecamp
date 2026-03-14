@@ -204,23 +204,47 @@ export function QuizRenderer({
                 className={cn(
                   'flex items-center gap-4 p-4 rounded-xl border text-left transition-all duration-200 group min-h-[60px]',
                   // BEFORE checking
-                  !isChecked && !isSelected && 'bg-white border-zinc-200 hover:border-zinc-400 hover:bg-zinc-50/30',
-                  !isChecked && isSelected && 'bg-zinc-900 border-zinc-900 text-white shadow-md',
-                  
+                  !isChecked &&
+                    !isSelected &&
+                    'bg-white border-zinc-200 hover:border-zinc-400 hover:bg-zinc-50/30',
+                  !isChecked &&
+                    isSelected &&
+                    'bg-zinc-900 border-zinc-900 text-white shadow-md',
+
                   // AFTER checking
-                  isChecked && isCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500 font-semibold',
-                  isChecked && isSelected && !isCorrect && 'bg-red-50 border-red-500 text-red-900 ring-1 ring-red-500',
-                  isChecked && !isCorrect && !isSelected && 'bg-white border-zinc-100 opacity-40 grayscale-[50%]'
+                  isChecked &&
+                    isCorrect &&
+                    'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500 font-semibold',
+                  isChecked &&
+                    isSelected &&
+                    !isCorrect &&
+                    'bg-red-50 border-red-500 text-red-900 ring-1 ring-red-500',
+                  isChecked &&
+                    !isCorrect &&
+                    !isSelected &&
+                    'bg-white border-zinc-100 opacity-40 grayscale-[50%]',
                 )}
               >
                 <div
                   className={cn(
-                    'w-6 h-6 shrink-0 rounded-lg flex items-center justify-center text-[10px] font-bold border transition-colors',
-                    !isChecked && !isSelected && 'bg-zinc-50 border-zinc-100 text-zinc-400',
-                    !isChecked && isSelected && 'bg-white/10 border-white/20 text-white',
-                    isChecked && isCorrect && 'bg-emerald-500 border-emerald-400 text-white',
-                    isChecked && isSelected && !isCorrect && 'bg-red-500 border-red-400 text-white',
-                    isChecked && !isSelected && !isCorrect && 'bg-zinc-50 border-zinc-100 text-zinc-300',
+                    'w-6 h-6 shrink-0 rounded-sm flex items-center justify-center text-[10px] font-bold border transition-colors',
+                    !isChecked &&
+                      !isSelected &&
+                      'bg-zinc-50 border-zinc-100 text-zinc-400',
+                    !isChecked &&
+                      isSelected &&
+                      'bg-white/10 border-white/20 text-white',
+                    isChecked &&
+                      isCorrect &&
+                      'bg-emerald-500 border-emerald-400 text-white',
+                    isChecked &&
+                      isSelected &&
+                      !isCorrect &&
+                      'bg-red-500 border-red-400 text-white',
+                    isChecked &&
+                      !isSelected &&
+                      !isCorrect &&
+                      'bg-zinc-50 border-zinc-100 text-zinc-300',
                   )}
                 >
                   {option.id.toUpperCase()}

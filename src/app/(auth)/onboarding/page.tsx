@@ -23,7 +23,7 @@ export default async function OnboardingPage() {
     'use server'
     const disciplineId = formData.get('disciplineId') as string
     console.log('[Onboarding] Selecting discipline:', disciplineId)
-    
+
     const supabase = await createClient()
     const {
       data: { user },
@@ -52,44 +52,48 @@ export default async function OnboardingPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 p-6 text-zinc-900 font-sans">
-      <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-zinc-200">
-        <div className="text-center">
-          <h1 className="text-2xl font-semibold tracking-tight">Welcome to SlateCamp</h1>
-          <p className="mt-2 text-sm text-zinc-500">
+    <div className='flex min-h-screen flex-col items-center justify-center bg-zinc-50 p-6 text-zinc-900 font-sans'>
+      <div className='w-full max-w-md space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-zinc-200'>
+        <div className='text-center'>
+          <h1 className='text-2xl font-semibold tracking-tight'>
+            Welcome to SlateCamp
+          </h1>
+          <p className='mt-2 text-sm text-zinc-500'>
             Choose your discipline to get started.
           </p>
         </div>
 
-        <form action={selectDiscipline} className="mt-8 space-y-4">
-          <div className="space-y-2">
+        <form action={selectDiscipline} className='mt-8 space-y-4'>
+          <div className='space-y-2'>
             {disciplines?.map((discipline) => (
               <label
                 key={discipline.discipline_id}
-                className="flex items-center justify-between p-4 rounded-xl border border-zinc-200 hover:border-blue-500 hover:bg-blue-50/50 cursor-pointer transition-all group"
+                className='flex items-center justify-between p-4 rounded-xl border border-zinc-200 hover:border-blue-500 hover:bg-blue-50/50 cursor-pointer transition-all group'
               >
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-100 text-zinc-900 group-hover:bg-blue-100 group-hover:text-blue-600 transition-colors">
-                    <span className="text-xs font-bold">{discipline.acronym}</span>
+                <div className='flex items-center gap-3'>
+                  <div className='flex h-10 w-10 items-center justify-center rounded-sm bg-zinc-100 text-zinc-900 group-hover:bg-blue-100 group-hover:text-blue-600 transition-colors'>
+                    <span className='text-xs font-bold'>
+                      {discipline.acronym}
+                    </span>
                   </div>
                   <div>
-                    <p className="text-sm font-medium">{discipline.name}</p>
+                    <p className='text-sm font-medium'>{discipline.name}</p>
                   </div>
                 </div>
                 <input
-                  type="radio"
-                  name="disciplineId"
+                  type='radio'
+                  name='disciplineId'
                   value={discipline.discipline_id}
                   required
-                  className="h-4 w-4 border-zinc-300 text-blue-600 focus:ring-blue-600"
+                  className='h-4 w-4 border-zinc-300 text-blue-600 focus:ring-blue-600'
                 />
               </label>
             ))}
           </div>
 
           <button
-            type="submit"
-            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500 transition-colors"
+            type='submit'
+            className='w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-semibold text-white bg-zinc-900 hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500 transition-colors'
           >
             Start Studying
           </button>

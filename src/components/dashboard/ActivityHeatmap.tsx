@@ -39,9 +39,11 @@ const HEADER_GAP = 3
 const HEADER_H = MONTH_ROW_H + HEADER_GAP // 16 px
 
 const MOCK_START = new Date('2026-01-01T12:00:00')
-const MOCK_SIGNUP = new Date('2026-03-01T12:00:00')
+const MOCK_SIGNUP = new Date('2026-01-18T12:00:00')
 const MOCK_SIGNUP_YEAR = 2026
 const CURRENT_YEAR = new Date().getFullYear()
+// Mock exam: 3-day board exam in late June 2026
+const MOCK_EXAM_DATES: string[] = ['2026-06-26', '2026-06-27', '2026-06-28']
 
 // ─── Derived layout (from measured container width) ───────────────────────────
 //
@@ -168,6 +170,8 @@ function buildBlocks(start: Date): {
 
 function generateMock(start: Date, signup: Date): ActivityDay[] {
   const iso0 = signupISOStr(signup)
+  // Last exam date — activity drops off after this
+  const lastExamDate = MOCK_EXAM_DATES[MOCK_EXAM_DATES.length - 1] ?? ''
   let y = start.getFullYear()
   let m = start.getMonth()
   const result: ActivityDay[] = []
@@ -180,7 +184,17 @@ function generateMock(start: Date, signup: Date): ActivityDay[] {
         result.push({ date: iso, count: 0 })
         continue
       }
+
       const r = Math.random()
+
+      // ── Post-exam: sparse activity ────────────────────────────────────────
+      // Adjust 0.90 to control density: 0.70 = moderate, 0.98 = almost nothing
+      if (iso > lastExamDate) {
+        result.push({ date: iso, count: r < 0.9 ? 0 : 1 })
+        continue
+      }
+
+      // ── Normal activity before/during exam period ─────────────────────────
       result.push({
         date: iso,
         count:
@@ -212,6 +226,12 @@ interface ActivityHeatmapProps {
   /** Last selectable year. Defaults to current year. */
   endYear?: number
   accountCreatedAt?: Date
+  /**
+   * ISO date strings (YYYY-MM-DD) for exam days.
+   * These cells render in orange-red regardless of activity level.
+   * Can span multiple days (e.g. a 3-day board exam).
+   */
+  examDates?: string[]
 }
 
 export function ActivityHeatmap({
@@ -219,10 +239,17 @@ export function ActivityHeatmap({
   signupYear,
   endYear,
   accountCreatedAt,
+  examDates,
 }: ActivityHeatmapProps) {
   const signup = accountCreatedAt ?? MOCK_SIGNUP
   const firstYear = signupYear ?? MOCK_SIGNUP_YEAR
   const lastYear = endYear ?? Math.max(CURRENT_YEAR, firstYear)
+
+  // Set of exam date strings for O(1) lookup
+  const examSet = useMemo(
+    () => new Set(examDates ?? MOCK_EXAM_DATES),
+    [examDates],
+  )
 
   // Available years for the dropdown
   const years = useMemo(
@@ -293,7 +320,7 @@ export function ActivityHeatmap({
               value={selectedYear}
               onChange={(e) => setSelectedYear(Number(e.target.value))}
               className={cn(
-                'appearance-none cursor-pointer rounded-md border border-zinc-200',
+                'appearance-none cursor-pointer rounded-sm border border-zinc-200',
                 'bg-white pl-3 pr-7 py-1 text-xs font-medium text-zinc-700',
                 'hover:border-zinc-300 focus:outline-none focus:ring-2 focus:ring-blue-200',
                 'transition-colors',
@@ -305,7 +332,6 @@ export function ActivityHeatmap({
                 </option>
               ))}
             </select>
-            {/* Chevron icon */}
             <svg
               className='pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-zinc-400'
               width='10'
@@ -415,31 +441,37 @@ export function ActivityHeatmap({
                     }
 
                     const iso = dateISO(b.year, b.month, day)
+                    const isExamDay = examSet.has(iso)
                     const beforeSignup = iso < iso0
                     const count = beforeSignup ? 0 : (actMap.get(iso) ?? 0)
                     const level = toLevel(count)
                     const isSignup = iso === iso0
 
-                    const tipText = beforeSignup
-                      ? `${formatTooltip(iso)} · Before signup`
-                      : `${formatTooltip(iso)} · ${
-                          count === 0
-                            ? 'No activity'
-                            : `${count} ${count === 1 ? 'activity' : 'activities'}`
-                        }${isSignup ? ' · Account created' : ''}`
+                    const tipText = isExamDay
+                      ? `${formatTooltip(iso)} · Exam day`
+                      : beforeSignup
+                        ? `${formatTooltip(iso)} · Before signup`
+                        : `${formatTooltip(iso)} · ${
+                            count === 0
+                              ? 'No activity'
+                              : `${count} ${count === 1 ? 'activity' : 'activities'}`
+                          }${isSignup ? ' · Account created' : ''}`
 
                     return (
                       <Tooltip key={s}>
                         <TooltipTrigger asChild>
                           <div
-                            title={tipText}
+                            // title={tipText}
                             className={cn(
                               'rounded-[2px] cursor-default transition-opacity hover:opacity-70',
-                              beforeSignup
-                                ? 'bg-zinc-100 dark:bg-zinc-800'
-                                : LEVEL_BG[level],
+                              isExamDay
+                                ? 'bg-red-400 ring-1 ring-red-600 ring-offset-[1px]'
+                                : beforeSignup
+                                  ? 'bg-zinc-100 dark:bg-zinc-800'
+                                  : LEVEL_BG[level],
                               isSignup &&
-                                '!bg-green-500 ring-2 ring-green-700 ring-offset-1',
+                                !isExamDay &&
+                                '!bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10',
                             )}
                           />
                         </TooltipTrigger>
@@ -467,6 +499,16 @@ export function ActivityHeatmap({
               ))}
               <span className='text-[10px] text-zinc-400 select-none'>
                 More
+              </span>
+              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+                ·
+              </span>
+              <div
+                className='rounded-[2px] bg-red-400 ring-1 ring-red-600 ring-offset-[1px] z-10'
+                style={{ width: layout.cell, height: layout.cell }}
+              />
+              <span className='text-[10px] text-zinc-400 select-none'>
+                Exam day
               </span>
             </div>
           </>

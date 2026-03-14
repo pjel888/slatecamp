@@ -31,11 +31,11 @@ export function ExamProfileSwitcher({
   const button = (
     <button
       onClick={() => setOpen(!open)}
-      className={`flex items-center rounded-lg py-2 text-left transition-all hover:bg-secondary ${
+      className={`flex items-center rounded-sm py-2 text-left transition-all hover:bg-secondary ${
         collapsed ? 'justify-start gap-0' : 'gap-2'
       }`}
     >
-      <div className='flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-accent-blue/10'>
+      <div className='flex h-5 w-5 shrink-0 items-center justify-center rounded-sm bg-accent-blue/10'>
         <GraduationCap className='h-5 w-5 text-accent-blue' strokeWidth={1.5} />
       </div>
       {!collapsed && (
@@ -89,7 +89,7 @@ export function ExamProfileSwitcher({
               <Link
                 href='/dashboard'
                 onClick={() => setOpen(false)}
-                className='flex w-full items-center gap-3 rounded-lg px-2 py-2 text-sm text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
+                className='flex w-full items-center gap-3 rounded-sm px-2 py-2 text-sm text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
               >
                 <GraduationCap className='h-4 w-4' strokeWidth={1.5} />
                 Go to Dashboard
@@ -110,12 +110,12 @@ export function ExamProfileSwitcher({
                       if (!isActive) await switchProfile(profile.id)
                       setOpen(false)
                     }}
-                    className={`flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-all ${
+                    className={`flex w-full items-center gap-3 rounded-sm px-2 py-2 text-left transition-all ${
                       isActive ? 'bg-accent-blue/5' : 'hover:bg-secondary'
                     }`}
                   >
                     <div
-                      className={`flex h-8 w-8 items-center justify-center rounded-lg ${
+                      className={`flex h-8 w-8 items-center justify-center rounded-sm ${
                         isActive ? 'bg-accent-blue/10' : 'bg-secondary'
                       }`}
                     >
@@ -147,7 +147,7 @@ export function ExamProfileSwitcher({
               <Link
                 href='/dashboard'
                 onClick={() => setOpen(false)}
-                className='flex w-full items-center gap-3 rounded-lg px-2 py-2 text-sm text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
+                className='flex w-full items-center gap-3 rounded-sm px-2 py-2 text-sm text-muted-foreground transition-all hover:bg-secondary hover:text-foreground'
               >
                 <Plus className='h-4 w-4' strokeWidth={1.5} />
                 Dashboard

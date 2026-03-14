@@ -179,7 +179,7 @@ const ExamsSupportedCard = () => (
           <li
             key={exam.name}
             className={cn(
-              'flex items-center justify-between gap-2 rounded-md px-1.5 py-1',
+              'flex items-center justify-between gap-2 rounded-sm px-1.5 py-1',
               isLive
                 ? 'bg-emerald-50 hover:bg-emerald-100/80'
                 : 'hover:bg-zinc-100/70',
@@ -242,7 +242,7 @@ const MockQuestionCard = () => {
             <div
               key={opt.label}
               className={cn(
-                'flex items-center gap-2 rounded-md border px-2.5 py-1.5 text-[11px] transition-colors',
+                'flex items-center gap-2 rounded-sm border px-2.5 py-1.5 text-[11px] transition-colors',
                 isCorrect && 'border-green-400 bg-green-50 text-green-800',
                 isIncorrect && 'border-red-400 bg-red-50 text-red-800',
                 !isCorrect &&

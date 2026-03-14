@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "url": "https://mcp.supabase.com/mcp?project_ref=hrpdwqurngnyajuhbkdg",
+      "type": "http"
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    }
+  }
+}

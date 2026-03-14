@@ -24,7 +24,7 @@ export async function MarketingNav({
 
   const linkClass = (href: string) =>
     cn(
-      'rounded-md px-3 py-3 transition-colors duration-150',
+      'rounded-sm px-3 py-3 transition-colors duration-150',
       activeRoute === href
         ? isDark
           ? 'text-white'
@@ -44,25 +44,24 @@ export async function MarketingNav({
   return (
     <header className={headerClass}>
       <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
-  <div className='flex items-center gap-2'>
-  {logoScrollsToTop ? (
-          <a href='#top' className='inline-flex items-center'>
-            <SlateCampLogo
-              size='md'
-              variant={isDark ? 'inverted' : 'default'}
-            />
-          </a>
-        ) : (
-          <Link href='/' className='inline-flex items-center'>
-            <SlateCampLogo
-              size='md'
-              variant={isDark ? 'inverted' : 'default'}
-            />
-            
-          </Link>
-        )}
-        🇵🇭
-  </div>
+        <div className='flex items-center gap-2'>
+          {logoScrollsToTop ? (
+            <a href='#top' className='inline-flex items-center'>
+              <SlateCampLogo
+                size='md'
+                variant={isDark ? 'inverted' : 'default'}
+              />
+            </a>
+          ) : (
+            <Link href='/' className='inline-flex items-center'>
+              <SlateCampLogo
+                size='md'
+                variant={isDark ? 'inverted' : 'default'}
+              />
+            </Link>
+          )}
+          🇵🇭
+        </div>
 
         <nav
           className={cn(

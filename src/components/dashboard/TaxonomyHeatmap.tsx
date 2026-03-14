@@ -46,10 +46,7 @@ export const TaxonomyHeatmap = ({
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
         {clusters.map((cluster) => (
-          <div
-            key={cluster.id}
-            className='space-y-2 rounded-xl bg-zinc-50 p-3'
-          >
+          <div key={cluster.id} className='space-y-2 rounded-xl bg-zinc-50 p-3'>
             <div className='flex items-baseline justify-between gap-2'>
               <p className='text-xs font-medium tracking-tight text-zinc-900'>
                 {cluster.title}
@@ -63,14 +60,12 @@ export const TaxonomyHeatmap = ({
                   type='button'
                   onClick={onNodeSelect ? () => onNodeSelect(node) : undefined}
                   className={cn(
-                    'group flex items-center justify-between gap-3 rounded-lg px-2 py-1.5 text-left text-xs',
+                    'group flex items-center justify-between gap-3 rounded-sm px-2 py-1.5 text-left text-xs',
                     'outline-none ring-0 transition-colors',
                     'hover:bg-zinc-100 focus-visible:bg-zinc-100',
                   )}
                 >
-                  <span className='truncate text-zinc-900'>
-                    {node.label}
-                  </span>
+                  <span className='truncate text-zinc-900'>{node.label}</span>
                   <span className='flex min-w-[96px] items-center gap-2'>
                     <span className='relative block h-1.5 w-full overflow-hidden rounded-full bg-zinc-200'>
                       <span
@@ -115,4 +110,3 @@ export const TaxonomyHeatmap = ({
     </Card>
   )
 }
-
