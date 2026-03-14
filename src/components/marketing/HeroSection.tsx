@@ -285,7 +285,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       </div>
 
       <h3 className='text-base font-semibold tracking-tight text-zinc-900'>
-        {isHovered ? 'Know that you will!' : "Are you sure you'll pass?"}
+        {isHovered ? 'Start improving today!' : "Are you sure you'll pass?"}
       </h3>
 
       {/* Shared space for intro vs “this is what…” */}
@@ -419,7 +419,7 @@ export const HeroSection = ({
                 className='flex flex-col gap-1 text-blue-500'
                 aria-label='Board exam preparation platform.'
               >
-                <div className='flex flex-row items-center gap-2 mb-4'>
+                <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-4 w-4' />
                   <span className='font-mono text-[11px] tracking-[0.25em] font-bold uppercase'>
                     Board exam preparation platform.{' '}

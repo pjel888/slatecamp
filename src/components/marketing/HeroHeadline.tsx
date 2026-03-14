@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import { annotate } from 'rough-notation'
 
 const H1_CLASS =
-  'landing-reveal landing-delay-1 text-[clamp(3rem,8vw,5rem)]  font-bold leading-[0.92] tracking-[-0.03em] text-zinc-900'
+  'landing-reveal landing-delay-1 text-[clamp(3rem,8vw,5.8rem)]  font-bold leading-[0.92] tracking-[-0.03em] text-zinc-900'
 
 export const HeroHeadline = () => {
   const knowRef = useRef<HTMLSpanElement>(null)
@@ -37,7 +37,7 @@ export const HeroHeadline = () => {
 
     const taglineAnnotation = annotate(taglineRef.current, {
       type: 'highlight',
-      color: '#2563eb',
+      color: 'oklch(92.9% 0.013 255.508)',
       strokeWidth: 2,
       animationDuration: 400,
     })
@@ -59,16 +59,16 @@ export const HeroHeadline = () => {
     <>
       <h1 className={H1_CLASS}>
         <span ref={youllRef}>
-          <span ref={knowRef}> Know you&apos;re </span>
-          <span ref={winRef}>ready.</span>
+          <span ref={knowRef}> Know you&apos;ll </span>
+          <span ref={winRef}>win.</span>
         </span>
       </h1>
       <div className='pt-2'>
         <p
           ref={taglineRef}
-          className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-white font-medium w-fit px-2'
+          className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-blue-500 font-medium w-fit px-2'
         >
-          Study with precision. Win with confidence.
+          Study with precision. Test with confidence.
         </p>
       </div>
     </>

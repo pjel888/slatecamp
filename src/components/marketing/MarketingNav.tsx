@@ -42,7 +42,8 @@ export const MarketingNav = ({
   return (
     <header className={headerClass}>
       <div className='mx-auto flex h-14 max-w-[1200px] items-center justify-between'>
-        {logoScrollsToTop ? (
+  <div className='flex items-center gap-2'>
+  {logoScrollsToTop ? (
           <a href='#top' className='inline-flex items-center'>
             <SlateCampLogo
               size='md'
@@ -55,8 +56,11 @@ export const MarketingNav = ({
               size='md'
               variant={isDark ? 'inverted' : 'default'}
             />
+            
           </Link>
         )}
+        🇵🇭
+  </div>
 
         <nav
           className={cn(
