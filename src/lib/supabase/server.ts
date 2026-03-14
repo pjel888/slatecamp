@@ -57,7 +57,15 @@ export const getUserIfPresent = cache(async () => {
   }
 
   const supabase = await createClient()
-  return supabase.auth.getUser()
+  const result = await supabase.auth.getUser()
+  if (result.data.user) return result
+
+  const { data: { session } } = await supabase.auth.getSession()
+  if (session?.user) {
+    return { data: { user: session.user }, error: null }
+  }
+
+  return result
 })
 
 export const getUser = cache(async () => {

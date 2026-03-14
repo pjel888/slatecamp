@@ -76,7 +76,8 @@ export default async function DashboardLayout({
   // Admin check (could be moved to a better place later)
   const isAdmin =
     user.app_metadata?.role === 'admin' ||
-    user.email?.endsWith('@slatecamp.com')
+    user.email?.endsWith('@slatecamp.com') ||
+    user.email === 'philipjonlewis@gmail.com'
   const showDevTools = isDemo || isAdmin
 
   const flags = showDevTools ? await getFeatureFlags() : null

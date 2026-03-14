@@ -1,8 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 
 /**
- * Check if the current user is an admin by querying the profiles table.
- * Uses the is_admin column on the profile record.
+ * Check if the current user is an admin by checking auth metadata or email domain.
  */
 export async function isAdmin(): Promise<boolean> {
   const supabase = await createClient();
@@ -10,29 +9,19 @@ export async function isAdmin(): Promise<boolean> {
 
   if (!user) return false;
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("is_admin")
-    .eq("id", user.id)
-    .single();
-
-  return profile?.is_admin === true;
+  const adminEmails = ['philipjonlewis@gmail.com'];
+  return (
+    user.app_metadata?.role === 'admin' || 
+    user.email?.endsWith('@slatecamp.com') === true ||
+    (user.email && adminEmails.includes(user.email))
+  );
 }
 
 /**
  * Check if a specific email belongs to an admin.
- * Also queries the profiles table to verify is_admin status.
- * @deprecated Prefer using isAdmin() which uses the current session
  */
 export async function isAdminByEmail(email: string | undefined): Promise<boolean> {
   if (!email) return false;
-
-  const supabase = await createClient();
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("is_admin")
-    .eq("email", email)
-    .single();
-
-  return profile?.is_admin === true;
+  const adminEmails = ['philipjonlewis@gmail.com'];
+  return email.endsWith('@slatecamp.com') || adminEmails.includes(email);
 }

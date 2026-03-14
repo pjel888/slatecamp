@@ -10,6 +10,13 @@ import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
 export async function updateSession(request: NextRequest) {
   const response = NextResponse.next({ request });
 
+  const isPublicPath = PUBLIC_PATHS.some(
+    (path) => request.nextUrl.pathname === path
+  );
+  if (isPublicPath) {
+    return response;
+  }
+
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -27,26 +34,30 @@ export async function updateSession(request: NextRequest) {
     }
   );
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data: { session } } = await supabase.auth.getSession();
+  const user = session?.user ?? null;
 
-  const isPublicPath = PUBLIC_PATHS.some(
-    (path) => request.nextUrl.pathname === path
-  );
   const isAuthCallback = request.nextUrl.pathname.startsWith("/auth/callback");
   const isApiRoute = request.nextUrl.pathname.startsWith("/api");
 
-  if (!user && !isPublicPath && !isAuthCallback && !isApiRoute) {
+  const redirectWithCookies = (url: URL) => {
+    const res = NextResponse.redirect(url);
+    response.cookies.getAll().forEach((c) =>
+      res.cookies.set(c.name, c.value, { path: c.path ?? "/" })
+    );
+    return res;
+  };
+
+  if (!user && !isAuthCallback && !isApiRoute) {
     const url = request.nextUrl.clone();
     url.pathname = ROUTES.LOGIN;
-    return NextResponse.redirect(url);
+    return redirectWithCookies(url);
   }
 
   if (user && (request.nextUrl.pathname === ROUTES.LOGIN || request.nextUrl.pathname === ROUTES.REGISTER)) {
     const url = request.nextUrl.clone();
     url.pathname = ROUTES.DASHBOARD;
-    return NextResponse.redirect(url);
+    return redirectWithCookies(url);
   }
 
   return response;

@@ -1,28 +1,52 @@
-'use client'
-
-import React from 'react'
+import React, { Suspense } from 'react'
 import Link from 'next/link'
 import { Brain } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
+import { MDXRemote } from 'next-mdx-remote/rsc'
 import { WikiTableOfContents } from './WikiTableOfContents'
 import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import { format } from 'date-fns'
+import { WikiHighlighter } from './WikiHighlighter'
 
 interface WikiArticleProps {
   article: WikiArticleType
 }
 
-export function WikiArticle({ article }: WikiArticleProps) {
+// Custom components for MDX to maintain existing heading ID logic
+const components = {
+  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+    const id = props.children
+      ?.toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+    return <h2 id={id} {...props} />
+  },
+  h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
+    const id = props.children
+      ?.toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+    return <h3 id={id} {...props} />
+  },
+}
+
+export async function WikiArticle({ article }: WikiArticleProps) {
   // Frontend fix: Replace literal \n sequences with actual newlines
   const processedContent = article.content.replace(/\\n/g, '\n')
   const headings = extractHeadings(processedContent)
-  console.log('wiki headings', headings)
-  console.log('processedContent', processedContent)
+
   return (
     <div className='flex flex-col lg:flex-row w-full h-full overflow-hidden'>
+      {/* Client-side logic for highlighting search terms */}
+      <Suspense fallback={null}>
+        <WikiHighlighter />
+      </Suspense>
+
       {/* Main Content (Scrolling Area) */}
       <article className='flex-1 min-w-0 overflow-y-auto p-4'>
         <header className='mb-8'>
@@ -61,31 +85,9 @@ export function WikiArticle({ article }: WikiArticleProps) {
           prose-blockquote:border-l-4 prose-blockquote:border-blue-600/20 prose-blockquote:bg-zinc-50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded-r-lg
         '
         >
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            components={{
-              h2: ({ node, ...props }) => {
-                const id = props.children
-                  ?.toString()
-                  .toLowerCase()
-                  .replace(/[^a-z0-9\s-]/g, '')
-                  .trim()
-                  .replace(/\s+/g, '-')
-                return <h2 id={id} {...props} />
-              },
-              h3: ({ node, ...props }) => {
-                const id = props.children
-                  ?.toString()
-                  .toLowerCase()
-                  .replace(/[^a-z0-9\s-]/g, '')
-                  .trim()
-                  .replace(/\s+/g, '-')
-                return <h3 id={id} {...props} />
-              },
-            }}
-          >
-            {processedContent}
-          </ReactMarkdown>
+          <Suspense fallback={<div className="animate-pulse bg-zinc-100 h-64 w-full rounded-xl" />}>
+            <MDXRemote source={processedContent} components={components} />
+          </Suspense>
         </div>
       </article>
 

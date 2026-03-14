@@ -5,13 +5,14 @@
 
 ---
 
-## 📍 Current Phase: 1 — Foundations (The Core Loop)
+## 📍 Current Phase: 1 — Foundations (The Core Loop) [COMPLETED]
 
 - [x] Syllabus Infrastructure: Database setup, disciplines, and taxonomy hierarchy.
-- [x] The Wiki CMS: Markdown article renderer, sticky ToC, and Omnibar search.
-- [x] Camp Mode Quizzing: Basic question rendering, feedback, and rationales.
-- [x] Auth & Onboarding: Supabase Auth + profile setup for specific licensure exams.
-- [x] Aesthetic: Basic Apple HIG layout (Sidebar + Main Column).
+- [x] The Wiki CMS: MDX article renderer, sticky ToC, internal sidebar, and highlight-fade.
+- [x] Camp Mode Quizzing: Professional high-density renderer, visual feedback, and rationales.
+- [x] Auth & Onboarding: Fixed redirect loops, validated discipline selection, and stats initialization.
+- [x] Aesthetic: Premium Apple HIG layout (Triple-column scrolling).
+- [x] Omnibar: Global discovery with Sidebar Peek and horizontal recents.
 - [ ] Storm Mode (Phase 2).
 
 ## 🧱 Known Issues & Tech Debt

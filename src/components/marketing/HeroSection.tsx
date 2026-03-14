@@ -106,9 +106,15 @@ const SUPPORTED_EXAMS = [
   },
   {
     name: 'Nursing (PNLE)',
-    status: 'Upcoming',
+    status: 'In development',
     tone: 'upcoming' as const,
     category: 'health' as const,
+  },
+  {
+    name: 'Master Plumber',
+    status: 'Upcoming',
+    tone: 'upcoming' as const,
+    category: 'engineering' as const,
   },
   {
     name: 'Certified Public Accountant (CPALE)',
@@ -363,7 +369,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           className='ml-auto inline-flex items-center gap-1 rounded-full border border-zinc-200 bg-white/80 px-3 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >
-          {isHovered ? 'See how SlateCamp gets you here' : 'Start now'}
+          Start Now
           <span aria-hidden='true'>→</span>
         </Link>
       </div>

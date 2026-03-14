@@ -37,19 +37,31 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
 
   if (!user) return null;
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("*")
-    .eq("id", user.id)
-    .single();
+  // Fetch new data structures in parallel
+  const [subResult, statsResult] = await Promise.all([
+    supabase
+      .from("user_subscriptions")
+      .select("tier")
+      .eq("user_id", user.id)
+      .maybeSingle(),
+    supabase
+      .from("user_global_stats")
+      .select("*, disciplines(name)")
+      .eq("user_id", user.id)
+      .maybeSingle()
+  ]);
 
-  if (!profile) return null;
+  const subscription = subResult.data;
+  const stats = statsResult.data;
 
-  const isAdmin = (profile as { is_admin?: boolean }).is_admin === true;
+  // Even if stats/sub are missing, we can provide a base profile if user exists
+  const currentTier = (subscription?.tier ?? "free") as UserTier;
+  const isAdmin = user.app_metadata?.role === 'admin' || user.email?.endsWith('@slatecamp.com');
+  
   const flags = await getFeatureFlags();
   const connectionState = getConnectionState();
   const effectiveTier = getEffectiveTier(
-    profile.tier as UserTier,
+    currentTier,
     isAdmin,
     flags
   );
@@ -58,11 +70,22 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
     (flags.simulatedTier ?? flags.spoofedTier ?? null) !== null;
 
   return {
-    ...profile,
-    tier: profile.tier as UserTier,
+    id: user.id,
+    email: user.email!,
+    full_name: user.user_metadata?.full_name ?? user.email,
+    tier: currentTier,
     effectiveTier,
     isAdmin,
     connectionState,
     isTierSimulated,
+    profession: (stats?.disciplines as any)?.name ?? "Architecture",
+    exam_target: null,
+    target_exam_date: null,
+    daily_streak: (stats as any)?.current_streak_days ?? 0,
+    longest_streak: (stats as any)?.longest_streak_days ?? 0,
+    onboarding_completed: !!stats?.current_discipline_id,
+    preferred_theme: "system",
+    ai_tokens_used: 0,
+    ai_tokens_limit: 1000, // Default limit
   } as AdminAwareProfile;
 }
