@@ -11,11 +11,13 @@ import { cn } from '@/lib/utils'
 interface WikiSidebarProps {
   disciplineId: string
   disciplineName: string
+  collapsed?: boolean
 }
 
 export function WikiSidebar({
   disciplineId,
   disciplineName,
+  collapsed,
 }: WikiSidebarProps) {
   const pathname = usePathname()
   const [nodes, setNodes] = useState<TaxonomyNode[]>([])
@@ -42,7 +44,7 @@ export function WikiSidebar({
   }
 
   const rootNodes = nodes.filter((n) => n.level === 1)
-  console.log('rootNodes', rootNodes)
+
   return (
     <aside className='w-64 shrink-0 border-r border-zinc-200 bg-zinc-50/50 h-full overflow-y-auto rounded-tl-xl'>
       <div className='p-2'>

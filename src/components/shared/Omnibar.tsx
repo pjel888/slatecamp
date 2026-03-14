@@ -85,7 +85,9 @@ export function Omnibar({
     localStorage.setItem('slatecamp_search_history', JSON.stringify(newHistory))
 
     setOpen(false)
-    const highlightParam = query ? `?highlight=${encodeURIComponent(query)}` : ''
+    const highlightParam = query
+      ? `?highlight=${encodeURIComponent(query)}`
+      : ''
     router.push(`/dashboard/wiki/${item.slug}${highlightParam}`)
   }
 

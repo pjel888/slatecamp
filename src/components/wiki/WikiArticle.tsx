@@ -8,6 +8,7 @@ import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import { format } from 'date-fns'
 import { WikiHighlighter } from './WikiHighlighter'
+import PHBuildingSetbacks from '../interactive-illustrations/2D/SetbackIllustration'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -32,6 +33,9 @@ const components = {
       .trim()
       .replace(/\s+/g, '-')
     return <h3 id={id} {...props} />
+  },
+  PHBuildingSetbacks: (props: React.HTMLAttributes<HTMLDivElement>) => {
+    return <PHBuildingSetbacks {...props} />
   },
 }
 
@@ -85,7 +89,11 @@ export async function WikiArticle({ article }: WikiArticleProps) {
           prose-blockquote:border-l-4 prose-blockquote:border-blue-600/20 prose-blockquote:bg-zinc-50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded-r-lg
         '
         >
-          <Suspense fallback={<div className="animate-pulse bg-zinc-100 h-64 w-full rounded-xl" />}>
+          <Suspense
+            fallback={
+              <div className='animate-pulse bg-zinc-100 h-64 w-full rounded-xl' />
+            }
+          >
             <MDXRemote source={processedContent} components={components} />
           </Suspense>
         </div>

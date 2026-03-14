@@ -1,6 +1,7 @@
 import { ReadinessScore } from '@/components/dashboard/ReadinessScore'
 import { ActionQueues } from '@/components/dashboard/ActionQueues'
 import { PredictiveRemediationCTA } from '@/components/dashboard/PredictiveRemediationCTA'
+import { ActivityHeatmap } from '@/components/dashboard/ActivityHeatmap'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 const DashboardPage = async () => {
@@ -15,9 +16,8 @@ const DashboardPage = async () => {
 
   return (
     <SharedPageLayout>
-      <div className='w-full h-[256px] bg-white mb-2'>
-        {/* <GradientImage /> */}
-        <p>Image</p>
+      <div className='w-full max-h-[256px] bg-white mb-2' id='github-grid'>
+        <ActivityHeatmap />
       </div>
       <div className='flex h-full  gap-2 flex-row'>
         {/* Left column — macro mastery + taxonomy */}
@@ -37,6 +37,8 @@ const DashboardPage = async () => {
           </div>
         </div>
       </div>
+
+      {/* <PHBuildingSetbacks /> */}
     </SharedPageLayout>
   )
 }

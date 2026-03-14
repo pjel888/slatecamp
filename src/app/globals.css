@@ -351,6 +351,30 @@
   }
 }
 
+/* Activity heatmap — custom horizontal scrollbar (thin, rounded, blue states) */
+.activity-heatmap-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(191 219 254) transparent;
+}
+.activity-heatmap-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.activity-heatmap-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+.activity-heatmap-scroll::-webkit-scrollbar-thumb {
+  background: rgb(191 219 254);
+  border-radius: 3px;
+  transition: background 0.15s ease;
+}
+.activity-heatmap-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgb(147 197 253);
+}
+.activity-heatmap-scroll::-webkit-scrollbar-thumb:active {
+  background: rgb(59 130 246);
+}
+
 /* ── Navigation feedback: tactile press + pending dim ── */
 
 /* Tactile press on interactive elements — instant physical click feel */
