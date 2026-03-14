@@ -34,15 +34,32 @@ SlateCamp uses **Supabase** as the unified backend:
 
 ### Core Database Tables
 
-| **Table**           | **Purpose**               | **Key Columns**                                                                                                         |
-| ------------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `taxonomy_tree`     | Master Syllabus hierarchy | `node_id`, `parent_id`, `level` (1-3), `name`, `subject_area`                                                           |
-| `wiki_articles`     | SME-authored content      | `article_id`, `topic_id` (FK), `title`, `content` (MD), `author_id`, `last_updated`                                     |
-| `questions`         | Quiz question bank        | `question_id`, `topic_id` (FK), `subject_id` (FK), `text` (MD), `options` (JSON), `rationale` (MD), `difficulty`        |
-| `user_interactions` | Atomic telemetry log      | `interaction_id`, `user_id`, `session_id`, `question_id`, `selected_option`, `is_correct`, `time_spent_ms`, `test_mode` |
-| `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `mastery_weight` (EMA), `avg_time_ms`                         |
-| `user_notes`        | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array)                                  |
-| `wiki_embeddings`   | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id`                                       |
+| **Table** | **Purpose** | **Key Columns** |
+| --- | --- | --- |
+| `taxonomy_tree` | Master Syllabus hierarchy | `node_id`, `parent_id`, `level` (1-3), `name`, `subject_area` |
+| `wiki_articles` | SME-authored content | `article_id`, `topic_id` (FK), `title`, `content` (MD), `author_id`, `last_updated` |
+| `questions` | Quiz question bank | `question_id`, `topic_id` (FK), `subject_id` (FK), `text` (MD), `options` (JSONB), `rationale` (MD), `difficulty`, `difficulty_rating` (IRT b), `discrimination_rating` (IRT a) |
+| `user_interactions` | Atomic telemetry log | `interaction_id`, `user_id`, `session_id`, `question_id`, `selected_option`, `is_correct`, `time_spent_ms` |
+| `quiz_sessions` | Testing session state | `session_id`, `user_id`, `test_mode`, `status`, `config` (JSONB), `question_ids` (UUID[]), `current_question_index` |
+| `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `current_mastery_weight` (EMA), `avg_time_ms`, `last_encountered` |
+| `user_notes` | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array) |
+| `wiki_embeddings` | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id` |
+
+---
+
+## 🧪 Testing & Quizzing Engine
+
+### IRT 2-Parameter Logistic Model
+The system uses Item Response Theory (IRT) to calculate user ability ($\theta$) and select optimal questions.
+- **Probability of Correct Answer:** $P(\text{correct} | \theta, a, b) = \frac{1}{1 + e^{-a(\theta - b)}}$
+- **$a$ (Discrimination):** How well the question distinguishes between high and low ability students.
+- **$b$ (Difficulty):** The ability level at which a student has a 50% chance of getting the answer correct.
+
+### EMA-Weighted Mastery
+Topic-level mastery is calculated using an Exponential Moving Average (EMA) to prioritize recent performance over historical data.
+- **Formula:** $M_{new} = (S \times \alpha) + (M_{old} \times (1 - \alpha))$
+- **$\alpha$ (Smoothing Factor):** 0.2
+- **$S$ (Score):** 1.0 for correct, 0.0 for incorrect.
 
 ---
 
@@ -128,22 +145,22 @@ slatecamp/
 
 The app uses a **two-zone pattern:** public marketing routes at the top level, and all authenticated product features nested under `/dashboard/`.
 
-| **Route**              | **Zone**   | **Maps to Feature**                                |
-| ---------------------- | ---------- | -------------------------------------------------- |
-| `/`                    | Public     | Landing page / hero ("Know you'll win")            |
-| `/about`               | Public     | Marketing: About SlateCamp                         |
-| `/contact`             | Public     | Marketing: Contact / support                       |
-| `/pricing`             | Public     | Marketing: Pricing tiers (Free → Camp → Insurance) |
-| `(auth)/`              | Public     | Login, signup, onboarding flow                     |
-| `/auth`                | Public     | Supabase auth callbacks (OAuth, magic links)       |
-| `/api`                 | Server     | Stripe/PayRex webhooks, Edge Functions             |
-| **`/dashboard`**       | **Auth'd** | **Dashboard home — overview & Readiness Score**    |
-| `/dashboard/wiki`      | Auth'd     | Feature 1: Taxonomy-Mapped Wiki                    |
-| `/dashboard/testing`   | Auth'd     | Feature 2: Quizzing Engine (Camp + Storm Mode)     |
-| `/dashboard/notes`     | Auth'd     | Feature 3: Personal Notes & Workspace              |
-| `/dashboard/3d-lab`    | Auth'd     | Feature 4: Interactive 3D Lab                      |
-| `/dashboard/analytics` | Auth'd     | Feature 6: Heatmap & Performance Analytics         |
-| `/dashboard/settings`  | Auth'd     | User settings & account management                 |
+| **Route** | **Zone** | **Maps to Feature** |
+| --- | --- | --- |
+| `/` | Public | Landing page / hero ("Know you'll win") |
+| `/about` | Public | Marketing: About SlateCamp |
+| `/contact` | Public | Marketing: Contact / support |
+| `/pricing` | Public | Marketing: Pricing tiers (Free → Camp → Insurance) |
+| `(auth)/` | Public | Login, signup, onboarding flow |
+| `/auth` | Public | Supabase auth callbacks (OAuth, magic links) |
+| `/api` | Server | Stripe/PayRex webhooks, Edge Functions |
+| **`/dashboard`** | **Auth'd** | **Dashboard home — overview & Readiness Score** |
+| `/dashboard/wiki` | Auth'd | Feature 1: Taxonomy-Mapped Wiki |
+| `/dashboard/testing` | Auth'd | Feature 2: Quizzing Engine (Camp + Storm Mode) |
+| `/dashboard/notes` | Auth'd | Feature 3: Personal Notes & Workspace |
+| `/dashboard/3d-lab` | Auth'd | Feature 4: Interactive 3D Lab |
+| `/dashboard/analytics` | Auth'd | Feature 6: Heatmap & Performance Analytics |
+| `/dashboard/settings` | Auth'd | User settings & account management |
 
 The `dashboard/layout.tsx` acts as the **authenticated app shell** — it wraps all product features with the sidebar navigation, auth gate, and shared loading state (`loading.tsx`).
 
@@ -151,18 +168,18 @@ The `dashboard/layout.tsx` acts as the **authenticated app shell** — it wraps 
 
 Components are organized by **feature domain**, not by type. Each folder is self-contained:
 
-| **Directory**           | **Feature**                 | **Key Components**                                               |
-| ----------------------- | --------------------------- | ---------------------------------------------------------------- |
-| `components/3d/`        | 3D Lab (Feature 4)          | R3F canvas, parametric sandbox, camera controls, model viewers   |
-| `components/auth/`      | Authentication              | Login forms, signup flows, onboarding quiz                       |
-| `components/dashboard/` | Analytics (Feature 6)       | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge  |
-| `components/dev/`       | Developer Tools             | Debug panels, test utilities, dev-only UI                        |
-| `components/layouts/`   | App Shell                   | Sidebar nav, header, footer, responsive wrappers                 |
-| `components/marketing/` | Marketing Pages             | Hero section, feature grids, CTA blocks, testimonials            |
-| `components/notes/`     | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder               |
-| `components/shared/`    | Shared Utilities            | Modals, tooltips, loaders, error boundaries, toast notifications |
-| `components/ui/`        | Design System               | shadcn/ui primitives (Button, Input, Dialog, Card, etc.)         |
-| `components/wiki/`      | Wiki (Feature 1)            | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar     |
+| **Directory** | **Feature** | **Key Components** |
+| --- | --- | --- |
+| `components/3d/` | 3D Lab (Feature 4) | R3F canvas, parametric sandbox, camera controls, model viewers |
+| `components/auth/` | Authentication | Login forms, signup flows, onboarding quiz |
+| `components/dashboard/` | Analytics (Feature 6) | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge |
+| `components/dev/` | Developer Tools | Debug panels, test utilities, dev-only UI |
+| `components/layouts/` | App Shell | Sidebar nav, header, footer, responsive wrappers |
+| `components/marketing/` | Marketing Pages | Hero section, feature grids, CTA blocks, testimonials |
+| `components/notes/` | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder |
+| `components/shared/` | Shared Utilities | Modals, tooltips, loaders, error boundaries, toast notifications |
+| `components/ui/` | Design System | shadcn/ui primitives (Button, Input, Dialog, Card, etc.) |
+| `components/wiki/` | Wiki (Feature 1) | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar |
 
 ### State Management
 
@@ -191,7 +208,9 @@ All React components **must** use arrow function syntax with default exports. Th
 import React from 'react'
 
 const Card = () => {
-  return <div>Card</div>
+  return (
+    <div>Card</div>
+  )
 }
 
 export default Card
@@ -217,12 +236,10 @@ interface QuizCardProps {
 
 const QuizCard = ({ question, options, onSelect }: QuizCardProps) => {
   return (
-    <div className={cn('rounded-sm border p-6', 'bg-slate-900')}>
+    <div className={cn('rounded-lg border p-6', 'bg-slate-900')}>
       <h3>{question}</h3>
       {options.map((opt, i) => (
-        <button key={i} onClick={() => onSelect(i)}>
-          {opt}
-        </button>
+        <button key={i} onClick={() => onSelect(i)}>{opt}</button>
       ))}
     </div>
   )
@@ -245,11 +262,10 @@ const Button = ({ variant, className }: ButtonProps) => {
   return (
     <button
       className={cn(
-        'rounded-sm px-4 py-2 font-medium transition-colors',
-        variant === 'primary' &&
-          'bg-emerald-500 text-white hover:bg-emerald-600',
+        'rounded-md px-4 py-2 font-medium transition-colors',
+        variant === 'primary' && 'bg-emerald-500 text-white hover:bg-emerald-600',
         variant === 'ghost' && 'bg-transparent text-slate-400 hover:text-white',
-        className,
+        className
       )}
     />
   )
@@ -315,21 +331,19 @@ Push `'use client'` **down** to the smallest interactive leaf component:
 ```tsx
 // ❌ BAD — entire page is a client component
 'use client'
-const WikiPage = () => {
-  /* ... */
-}
+const WikiPage = () => { /* ... */ }
 
 // ✅ GOOD — page is a Server Component, only the interactive parts are client
 // app/dashboard/wiki/page.tsx (Server Component)
-import WikiArticle from '@/components/wiki/wiki-article' // Server
-import WikiHighlightToolbar from '@/components/wiki/highlight-toolbar' // Client
+import WikiArticle from '@/components/wiki/wiki-article'      // Server
+import WikiHighlightToolbar from '@/components/wiki/highlight-toolbar'  // Client
 
 const WikiPage = async () => {
-  const article = await getArticle() // Server-side data fetch
+  const article = await getArticle()  // Server-side data fetch
   return (
     <>
       <WikiArticle content={article} />
-      <WikiHighlightToolbar /> {/* 'use client' inside */}
+      <WikiHighlightToolbar />           {/* 'use client' inside */}
     </>
   )
 }
@@ -356,12 +370,12 @@ const WikiPage = async () => {
 
 ### Core Web Vitals Targets
 
-| **Metric**                         | **Target** | **How**                                                       |
-| ---------------------------------- | ---------- | ------------------------------------------------------------- |
-| **LCP** (Largest Contentful Paint) | <1.5s      | Server Components, SSG/ISR for Wiki, minimal client JS        |
-| **FID** (First Input Delay)        | <50ms      | Small client bundles, code splitting, no main-thread blocking |
-| **CLS** (Cumulative Layout Shift)  | <0.05      | Explicit dimensions on images/3D canvas, font `display: swap` |
-| **TTI** (Time to Interactive)      | <2s        | Minimal client-side hydration, progressive enhancement        |
+| **Metric** | **Target** | **How** |
+| --- | --- | --- |
+| **LCP** (Largest Contentful Paint) | <1.5s | Server Components, SSG/ISR for Wiki, minimal client JS |
+| **FID** (First Input Delay) | <50ms | Small client bundles, code splitting, no main-thread blocking |
+| **CLS** (Cumulative Layout Shift) | <0.05 | Explicit dimensions on images/3D canvas, font `display: swap` |
+| **TTI** (Time to Interactive) | <2s | Minimal client-side hydration, progressive enhancement |
 
 ### Performance Rules
 
@@ -405,10 +419,10 @@ const WikiPage = async () => {
 
 Dual payment processing for international + Philippine local coverage:
 
-| **Provider** | **Package**                                   | **Use Case**                                                     |
-| ------------ | --------------------------------------------- | ---------------------------------------------------------------- |
-| Stripe       | `stripe ^20.4.1` • `@stripe/stripe-js ^8.9.0` | International cards, subscription management, webhook processing |
-| PayRex       | `payrex-node ^1.7.3`                          | GCash, Maya, Philippine bank transfers, local payment methods    |
+| **Provider** | **Package** | **Use Case** |
+| --- | --- | --- |
+| Stripe | `stripe ^20.4.1`  • `@stripe/stripe-js ^8.9.0` | International cards, subscription management, webhook processing |
+| PayRex | `payrex-node ^1.7.3` | GCash, Maya, Philippine bank transfers, local payment methods |
 
 ---
 
@@ -452,11 +466,171 @@ graph LR
 
 ---
 
+## 🔒 Proprietary IP Layer — Architecture of the Moat
+
+> Full IP documentation, patent strategy, and AIPO filing roadmap: [SlateCamp USP & Patentable IP](https://www.notion.so/SlateCamp-USP-Patentable-IP-fe9118a0440e42c5b7ea8346c461e843?pvs=21)
+> 
+
+Every proprietary mechanic in SlateCamp has a direct technical implementation in the architecture. This section maps each protectable IP asset to its database columns, algorithms, and system behavior.
+
+### 1. Readiness Score™ — Composite Predictive Algorithm
+
+**Tables:** `user_interactions`, `user_node_mastery`, `user_global_stats`
+
+The Readiness Score is a three-layer composite — not a simple percentage:
+
+| **Layer** | **Algorithm** | **DB Column** | **IP Status** |
+| --- | --- | --- | --- |
+| **EMA Scoring** | Exponential Moving Average — weights recent performance heavier than historical. Decay rate is proprietary. | `user_node_mastery.mastery_weight` (EMA float, updates per interaction) | Trade Secret |
+| **IRT Weighting** | Item Response Theory — correct answers on hard questions earn more mastery credit than easy ones. Difficulty is the b-parameter. | `questions.difficulty` (0.0–1.0 NUMERIC) | Trade Secret |
+| **Lucky Guess Detector™** | Time-difficulty correlation — flags suspiciously fast correct answers on hard questions. Withholds full mastery credit and silently re-queues topic. | `user_interactions.time_spent_ms` × `questions.difficulty` → computed at application layer | **Patent — P0 Priority** |
+
+**Composite formula (application layer):**
+
+```
+Readiness Score = weighted_avg(
+  per_node EMA mastery_weight,
+  adjusted by IRT difficulty delta,
+  with Lucky Guess penalty coefficients applied pre-aggregation
+)
+```
+
+The final score maps to `user_global_stats.global_readiness_score` (0.0–100.0).
+
+---
+
+### 2. Blindspot Protocol™ — Nightly Automated Weakness Targeting
+
+**Tables:** `user_node_mastery`, `taxonomy_tree`, `quiz_sessions`
+
+**Pipeline:**
+
+1. **Nightly scan** — reads all `user_node_mastery` rows where `mastery_weight < 0.50` (🔴 Red) or `total_attempts = 0` (⬜ White)
+2. **Queue generation** — selects 10–15 questions from the weakest 3 `topic_id` nodes, weighted toward conceptual items (`questions.difficulty > 0.6`)
+3. **Session creation** — inserts a new `quiz_sessions` row with `test_mode = 'camp'` and pre-populated `question_ids[]` and `subject_ids[]`
+4. **Post-completion reclassification** — after session completion, EMA mastery weights are recalculated. Nodes crossing the Amber threshold (`mastery_weight ≥ 0.60`) update immediately
+5. **Spaced recurrence** — nodes that return to Red re-enter the queue. Recurrence interval governed by EMA decay rate
+
+**IP status:** Patent (software method) + Trademark — **P0 Priority**
+
+---
+
+### 3. Endurance Cycle™ — Progressive Cognitive Stamina Training
+
+**Tables:** `quiz_sessions`, `user_interactions`, `user_global_stats`
+
+**Pipeline:**
+
+1. **Baseline calibration** — first-week sessions analyzed for natural session length and accuracy decay curve (accuracy in 10-item blocks via `user_interactions` groupings)
+2. **Weekly extension** — Endurance Session generated at 110–115% of current reliable performance window
+3. **Accuracy-over-duration tracking** — post-session only; `time_spent_ms` per interaction block aggregated for the decay curve
+4. **Plateau detection** — if endurance window stalls across 2+ weeks, system surfaces degrading taxonomy nodes back into Blindspot Protocol
+
+**Key derived metric:** `accuracy_decay_curve` — computed from `user_interactions.is_correct` bucketed by `interaction_timestamp` sequence within a session.
+
+**IP status:** Patent (software method) + Trademark — **P0 Priority**
+
+---
+
+### 4. Proof Simulation™ — Competence-Gated Readiness Validation
+
+**Tables:** `quiz_sessions`, `user_interactions`, `user_node_mastery`, `user_global_stats`
+
+**Unlock criteria (enforced at application layer):**
+
+- `≥70%` of taxonomy leaf nodes at `mastery_weight ≥ 0.60` (Amber or above)
+- Endurance window covers `≥80%` of exam-day item count
+
+**Session behavior:**
+
+- `quiz_sessions.test_mode = 'mock'` — no pause, no mid-session feedback
+- Full exam item count + taxonomy distribution mirroring actual ALE format
+- Results withheld from UI for **24 hours** post-submission (enforced at API layer)
+
+**Recalibration:**
+
+- Post-simulation `user_interactions` feed into a **pressure-tested Readiness Score component** — reconciles daily `mastery_weight` data against simulation performance
+- `user_global_stats.global_readiness_score` updated with the pressure-weighted composite
+
+**IP status:** Patent (software method) + Trademark — **P0 Priority**
+
+---
+
+### 5. Zero-Hallucination AI Tutor — Double-Pass Auditor LLM
+
+**Tables:** `wiki_articles`, `wiki_embeddings`, `wiki_article_taxonomy`
+
+Already documented in the AI Pipeline Architecture section above. The **patentable element** is the two-LLM verification pipeline:
+
+```
+User Query
+  → pgvector semantic search (wiki_embeddings)
+  → Top-K chunks retrieved
+  → Primary LLM (temp=0.0) synthesizes answer from chunks only
+  → Auditor LLM validates: no hallucinated numbers, dates, building codes, or legal citations
+      → PASS: response + mandatory Citation Badge delivered
+      → FAIL: retry loop (max 2 iterations) → graceful fallback if unresolved
+```
+
+**The "I Don't Know" Protocol** — hard constraint in system prompt: if answer not found in vector DB, AI redirects to subject node. Never fabricates.
+
+**IP status:** Patent (software method) + Trade Secret — **P0 Priority**
+
+---
+
+### 6. Parametric 3D Sandbox — "Learning by Breaking"
+
+**Route:** `/dashboard/3d-lab` | **Components:** `components/3d/`
+
+**Tech:** React Three Fiber + Three.js + Drei + `@shadergradient/react`
+
+**Patentable elements:**
+
+- **Procedural geometry from code** — building models generated mathematically from `BoxGeometry`/`ExtrudeGeometry` using zoning parameters as inputs. No static 3D files. The math IS the model.
+- **Code-violation red feedback** — when slider parameters exceed Philippine building code limits, geometry turns red + inline legal citation surfaces from the Wiki
+- **Contextual hotspots** — glowing structural elements link directly to the exact `wiki_articles` entry covering the relevant code
+- **In-canvas spatial quizzing** — quiz answers graded by physical 3D geometry adjustment, not MCQ
+
+**IP status:** Design Patent + Trade Secret — **P1 Priority**
+
+---
+
+### 7. Master Syllabus Taxonomy — The Structural Backbone
+
+**Table:** `taxonomy_tree` + `wiki_article_taxonomy`
+
+The raw PRC syllabus is public. SlateCamp's taxonomy is not:
+
+- Hierarchical (Subject → Module → Topic → `topic_id`) with difficulty weights and prerequisite chains
+- Machine-readable with `slug`-based URL addressing
+- Enforced **"No Orphan Pages" rule** — CMS blocks publishing any Wiki article, quiz question, or 3D model without a `topic_id` assignment
+- Multi-discipline via `disciplines` table — adding a new exam is a data-entry exercise, not a code change
+
+**IP status:** Copyright (compiled work) + Trade Secret — **P1 Priority**
+
+---
+
+### IP Protection Summary
+
+| **IP Asset** | **Primary DB Surface** | **Protection** | **Filing Priority** |
+| --- | --- | --- | --- |
+| Readiness Score™ (EMA + IRT) | `user_node_mastery.mastery_weight`, `questions.difficulty` | Patent + Trade Secret | 🔴 P0 |
+| Lucky Guess Detector™ | `user_interactions.time_spent_ms` × `questions.difficulty` | Patent | 🔴 P0 |
+| Double-Pass Auditor LLM | `wiki_embeddings` pipeline | Patent + Trade Secret | 🔴 P0 |
+| Blindspot Protocol™ | `user_node_mastery`, `quiz_sessions` | Patent + Trademark | 🔴 P0 |
+| Endurance Cycle™ | `user_interactions` (accuracy decay) | Patent + Trademark | 🔴 P0 |
+| Proof Simulation™ | `quiz_sessions` (mode=mock), `user_global_stats` | Patent + Trademark | 🔴 P0 |
+| Parametric 3D Sandbox | `components/3d/` (R3F procedural geometry) | Design Patent + Trade Secret | 🟡 P1 |
+| Master Syllabus Taxonomy | `taxonomy_tree`, `wiki_article_taxonomy` | Copyright + Trade Secret | 🟡 P1 |
+
+---
+
 Unified Educational OS — PostgreSQL Schema v1.0 MASTER (Supabase)
 
 **Status:** v1.0 MASTER · **Engine:** PostgreSQL 15+ (Supabase) · **Requires:** `pgvector` extension
 
-> The complete, production-ready schema for SlateCamp. Core Engine (Disciplines → Taxonomy → Content → Quizzing → Analytics) plus Extensions (Subscriptions, Notes Workspace, Feedback & SME Pipeline). Integrates horizontal scaling, EMA scoring, IRT weighting, Zero-Data-Loss persistence, and pgvector RAG.
+> The complete, production-ready schema for SlateCamp. Core Engine (Disciplines → Taxonomy → Content → Quizzing → Analytics) plus Extensions (Notes Workspace, Feedback System, Subscriptions). Integrates horizontal scaling, EMA scoring, IRT weighting, Zero-Data-Loss persistence, and pgvector RAG.
+> 
 
 ---
 
@@ -465,11 +639,11 @@ Unified Educational OS — PostgreSQL Schema v1.0 MASTER (Supabase)
 <aside>
 💡
 
-Think of this schema as a massive, highly secure digital university. We just added the master blueprint that allows you to expand the campus infinitely — plus the business office, the student notebook, and the quality control department.
+Think of this schema as a massive, highly secure digital university. We just added the master blueprint that allows you to expand the campus infinitely — plus the business office and the student notebook.
 
 </aside>
 
-### 1. The Cashier's Office (`user_subscriptions`) — _New in v1.0_
+### 1. The Cashier's Office (`user_subscriptions`)
 
 Before a student walks into any building, they pass through the cashier. This table knows whether they're on the Free tier (limited access), the Camp monthly plan, the Insurance 6-month bundle, or an Institutional license. It connects to Stripe and PayRex so payments are handled by webhooks — the app never touches credit card data directly.
 
@@ -479,61 +653,52 @@ The front doors to different buildings on a university campus. Architecture, Law
 
 ### 3. The Filing Cabinets (`taxonomy_tree`)
 
-Inside your specific building, there is a massive set of filing cabinets. Before we store a single question, we build the folders. Everything is strictly filed up to 6 levels deep (to handle complex professions like Law and Medicine). The `is_leaf` flag tells the UI exactly where the content lives.
+Inside your specific building, there is a massive set of filing cabinets. Before we store a single question, we build the folders. Everything is strictly filed up to 6 levels deep (to handle complex professions like Law and Medicine). The `is_leaf` flag tells the UI exactly where the content lives. Each node now has a unique `slug` for clean, human-readable URLs.
 
-### 4. The Library & The AI Brain (`questions`, `wiki_articles`, `wiki_embeddings`)
+### 4. The Library & The AI Brain (`questions`, `wiki_articles`, `wiki_article_taxonomy`, `wiki_embeddings`)
 
-- **Questions:** This is where we store the test items. We don't just store the question and the answer; we store a "difficulty rating" so the system knows if a student answered a genuinely hard question or just an easy one.
-- **Wiki & Embeddings:** We store the textbook articles here. But we also chop those articles into mathematical pieces (embeddings). When a student asks the AI a question, it only searches these exact mathematical pieces. This is how we guarantee the AI won't hallucinate or lie.
+- **Questions:** Stores the test items with a difficulty rating, rationale, and now supports **landscape prompt images** (`prompt_image_url`) and a `correct_answer` field for legacy support.
+- **Wiki Articles:** Now identified by a unique `slug` instead of a direct `topic_id` FK — making them URL-addressable and decoupled from taxonomy.
+- **Wiki ↔ Taxonomy Junction:** The new `wiki_article_taxonomy` table enables **many-to-many** relationships between articles and taxonomy nodes, with an `is_primary` flag to identify the canonical mapping.
+- **Embeddings:** Vectorized chunks of Wiki articles for the Zero-Hallucination RAG pipeline.
 
-### 5. The Student Notebook (`user_notes`) — _New in v1.0_
+### 5. The Student Notebook (`user_notes`)
 
-Students can capture notes from anywhere in the app — Wiki, Quiz, or 3D Lab — without leaving their screen. Each note is a block-based document (TipTap JSON) linked back to the taxonomy topics it came from. The system even tracks whether a student _revisits_ their notes, so it can nudge them if they're capturing but never reviewing.
+Students can capture notes from anywhere in the app — Wiki, Quiz, or 3D Lab — without leaving their screen. Each note is a block-based document (TipTap JSON) linked back to the taxonomy topics it came from. The system even tracks whether a student *revisits* their notes, so it can nudge them if they're capturing but never reviewing.
 
-### 6. The Magical Desk (`quiz_sessions`)
+### 6. The Report Card (`user_global_stats`)
 
-When a student starts a mock exam, the system assigns them a "Session." Think of this as a magical desk. It remembers exactly which 200 questions were handed to the student. If the student's laptop dies or their Wi-Fi drops, the desk holds their exact place so they never lose their data.
+A one-row-per-user cache that eliminates expensive cross-table aggregations on every dashboard load. Tracks which discipline the user is actively studying, their overall readiness score, and streak gamification metrics.
 
-### 7. The Security Camera (`user_interactions`)
+### 7. The Magical Desk (`quiz_sessions`)
 
-Most quiz apps only remember the final score. This table is a security camera that records _every single click_. It logs what option they chose, whether they flagged it for review, and exactly how many milliseconds they spent looking at it. If a student answers a highly complex math question correctly in 2 seconds, this table flags it as a **"Lucky Guess"** so they don't get fake credit.
+When a student starts a mock exam, the system assigns them a "Session." It remembers exactly which questions were handed out, the current position, the test mode (`camp`, `storm`, `chill`, or `mock`), and now tracks `subject_ids` for custom session filters plus a `source_article_id` for wiki-triggered quizzes. If the student's laptop dies or Wi-Fi drops, the desk holds their exact place.
 
-### 8. The Report Card (`user_node_mastery` & `user_global_stats`)
+### 8. The Security Camera (`user_interactions`)
 
-If the app had to review the "Security Camera" (millions of clicks) every time a student opened their dashboard, the app would crash. Instead, we have a pre-calculated Report Card that updates quietly in the background.
+Records every single click — what option they chose, whether they got it right, and how many milliseconds they spent. Now includes a **unique constraint** per user/session/question to enable upsert logic (update-on-conflict instead of duplicate rows).
 
-- **Recency Bias:** If a student bombed a topic in January but aced it in March, the system weighs the March score heavier.
-- **The Pressure Gap:** It keeps a separate score for how the student performs in casual practice versus how they perform under a strict, timed exam.
-- **The Dashboard Hero:** It tracks which building they are in (e.g., Architecture) and instantly loads their overall readiness score and study streaks so the app feels lightning-fast.
+### 9. The Bouncers (Row-Level Security & Grants)
 
-### 9. The Quality Control Department (`feedback_submissions`, `feedback_votes`, `sme_review_queue`) — _New in v1.0_
-
-This is the platform's immune system. When a student spots a wrong answer, flags an AI hallucination, or reports a bug, it enters a structured feedback pipeline. Other students can upvote the report. Critical issues (hallucinations, content errors) are automatically routed to a dedicated **SME Review Queue** where Subject Matter Experts can verify, approve, or reject the fix. This closes the loop between user feedback and content quality.
-
-### 10. The Bouncers (Row-Level Security — RLS)
-
-This is strict database security. It guarantees that Student A can never, under any circumstances, see Student B's test scores or personal data. Even if a hacker tried to trick the app, the database itself acts as a bouncer and rejects the request. Subscription data is read-only for users (only webhooks can write). The SME queue is locked down to admin/SME roles by default.
+Strict database security with a cleaner architecture: content tables are readable by **authenticated users only** (not public/anon), the `service_role` bypasses RLS for backend operations, and ownership policies use `FOR ALL` for cleaner CRUD on user-owned tables.
 
 ---
 
 ## 🏗️ Schema Overview
 
-| **#** | **Table**              | **Role**                                                                             | **Scale Profile**                               |
-| ----- | ---------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------- |
-| 1     | `user_subscriptions`   | **NEW** — Paywall & Business Engine (Stripe/PayRex webhooks, tier gating)            | One row per user                                |
-| 2     | `disciplines`          | Horizontal Scaling Layer: one row per licensure exam vertical                        | Tens of rows (one per exam type)                |
-| 3     | `taxonomy_tree`        | Master Syllabus — up to 6 levels, scoped per discipline, `is_leaf` terminal nodes    | Hundreds of rows per discipline                 |
-| 4A    | `questions`            | SME-Authored Question Bank with IRT difficulty parameters                            | Thousands (grows with content)                  |
-| 4B    | `wiki_articles`        | Authoritative knowledge base articles feeding the UI and the AI Tutor                | Thousands (grows with content)                  |
-| 4C    | `wiki_embeddings`      | pgvector chunks for the Zero-Hallucination RAG pipeline                              | Tens of thousands (multiple chunks per article) |
-| 5     | `user_notes`           | **NEW** — Personal Workspace (TipTap JSON blocks, taxonomy-linked, revisit tracking) | Tens of thousands (grows with users)            |
-| 6     | `user_global_stats`    | O(1) cache for Dashboard hero metrics with `current_discipline_id`                   | One row per user                                |
-| 7     | `quiz_sessions`        | State Manager with `question_ids[]` and `current_question_index` for crash recovery  | Tens of thousands (grows with users)            |
-| 8     | `user_interactions`    | Atomic Telemetry Log with `is_flagged` and `is_lucky_guess` columns                  | **Millions of rows** (hot path, write-heavy)    |
-| 9     | `user_node_mastery`    | Aggregation Layer with `pressure_mastery_weight` for the Storm Mode Pressure Gap     | Tens of thousands (one row per user×topic)      |
-| 10A   | `feedback_submissions` | **NEW** — User feedback pipeline (bugs, hallucination flags, feature requests)       | Thousands (grows with engagement)               |
-| 10B   | `feedback_votes`       | **NEW** — Upvoting system for feedback prioritization                                | Tens of thousands                               |
-| 10C   | `sme_review_queue`     | **NEW** — Dedicated SME review queue for content accuracy issues                     | Hundreds (triaged from feedback)                |
+| **#** | **Table** | **Role** | **Scale Profile** |
+| --- | --- | --- | --- |
+| 1 | `user_subscriptions` | Paywall & Business Engine (Stripe/PayRex webhooks, tier gating) | One row per user |
+| 2 | `disciplines` | Horizontal Scaling Layer: one row per licensure exam vertical | Tens of rows (one per exam type) |
+| 3 | `taxonomy_tree` | Master Syllabus — up to 6 levels, `is_leaf` terminal nodes, unique `slug` for URLs | Hundreds of rows per discipline |
+| 4A | `questions` | SME-Authored Question Bank with IRT difficulty, prompt images, and `correct_answer` | Thousands (grows with content) |
+| 4B | `wiki_articles` | Authoritative knowledge base — now slug-based, decoupled from taxonomy via junction | Thousands (grows with content) |
+| 4C | `wiki_article_taxonomy` | **NEW** — Many-to-many junction mapping articles to taxonomy nodes with `is_primary` | Thousands (multiple mappings per article) |
+| 4D | `wiki_embeddings` | pgvector chunks for the Zero-Hallucination RAG pipeline | Tens of thousands (multiple chunks per article) |
+| 5 | `user_notes` | Personal Workspace (TipTap JSON blocks, taxonomy-linked, revisit tracking) | Tens of thousands (grows with users) |
+| 6 | `user_global_stats` | O(1) cache for Dashboard hero metrics with `current_discipline_id` | One row per user |
+| 7 | `quiz_sessions` | State Manager with `question_ids[]`, `subject_ids[]`, `source_article_id`, 4 test modes | Tens of thousands (grows with users) |
+| 8 | `user_interactions` | Atomic Telemetry Log with upsert-friendly unique constraint per user/session/question | **Millions of rows** (hot path, write-heavy) |
 
 ---
 
@@ -558,7 +723,7 @@ This is strict database security. It guarantees that Student A can never, under 
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- Quizzing Enums
-CREATE TYPE test_mode AS ENUM ('camp', 'storm');
+CREATE TYPE test_mode AS ENUM ('camp', 'storm', 'chill', 'mock');
 CREATE TYPE session_status AS ENUM ('in_progress', 'completed', 'abandoned');
 
 -- Subscription Enums
@@ -640,6 +805,7 @@ CREATE TABLE taxonomy_tree (
     level         SMALLINT NOT NULL CHECK (level >= 1 AND level <= 6),
     name          TEXT NOT NULL,
     subject_area  TEXT NOT NULL,
+    slug          TEXT UNIQUE,
     is_leaf       BOOLEAN NOT NULL DEFAULT false,
     created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -662,20 +828,22 @@ CREATE TRIGGER trg_taxonomy_tree_updated_at
 
 -- 4A. QUESTIONS (SME-Authored Quizzing Bank)
 CREATE TABLE questions (
-    question_id   UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    topic_id      UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
-    subject_id    UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
-    text          TEXT NOT NULL,
-    options       JSONB NOT NULL DEFAULT '[]'::jsonb,
-    rationale     TEXT,
-    difficulty    NUMERIC(3,2) NOT NULL DEFAULT 0.50
-                  CHECK (difficulty >= 0.0 AND difficulty <= 1.0),
-    created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    question_id      UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    topic_id         UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
+    subject_id       UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
+    text             TEXT NOT NULL,
+    options          JSONB NOT NULL DEFAULT '[]'::jsonb, -- e.g. [{"id": "a", "text": "...", "is_correct": true}]
+    correct_answer   TEXT,                               -- Optional: ID of the correct option for legacy support
+    rationale        TEXT,
+    prompt_image_url TEXT,                               -- Layout requirements: 1920x1080 landscape
+    difficulty       NUMERIC(3,2) NOT NULL DEFAULT 0.50
+                     CHECK (difficulty >= 0.0 AND difficulty <= 1.0),
+    created_at       TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at       TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 COMMENT ON TABLE questions IS
-    'SME-authored question bank. difficulty = IRT b-parameter for weighted scoring.';
+    'SME-authored question bank. Supports landscape prompt images and integrated rationales.';
 
 CREATE INDEX idx_questions_topic ON questions(topic_id);
 CREATE INDEX idx_questions_subject ON questions(subject_id);
@@ -688,7 +856,7 @@ CREATE TRIGGER trg_questions_updated_at
 -- 4B. WIKI_ARTICLES (SME-Authored Knowledge Base)
 CREATE TABLE wiki_articles (
     article_id    UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    topic_id      UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
+    slug          TEXT NOT NULL UNIQUE,
     title         TEXT NOT NULL,
     content       TEXT NOT NULL,
     created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -698,11 +866,27 @@ CREATE TABLE wiki_articles (
 COMMENT ON TABLE wiki_articles IS
     'The definitive source of truth. Authoritative content that feeds the UI and the AI.';
 
+CREATE INDEX idx_wiki_slug ON wiki_articles(slug);
+
 CREATE TRIGGER trg_wiki_articles_updated_at
     BEFORE UPDATE ON wiki_articles
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
--- 4C. WIKI_EMBEDDINGS (AI Contextual Tutor RAG Store)
+-- 4C. WIKI_ARTICLE_TAXONOMY (Many-to-Many Mapping)
+CREATE TABLE wiki_article_taxonomy (
+    article_id UUID NOT NULL REFERENCES wiki_articles(article_id) ON DELETE CASCADE,
+    node_id    UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE CASCADE,
+    is_primary BOOLEAN NOT NULL DEFAULT false,
+    PRIMARY KEY (article_id, node_id)
+);
+
+COMMENT ON TABLE wiki_article_taxonomy IS
+    'Maps Wiki articles to taxonomy nodes. Supports many-to-many relationships.';
+
+CREATE INDEX idx_wiki_tax_article ON wiki_article_taxonomy(article_id);
+CREATE INDEX idx_wiki_tax_node ON wiki_article_taxonomy(node_id);
+
+-- 4D. WIKI_EMBEDDINGS (AI Contextual Tutor RAG Store)
 CREATE TABLE wiki_embeddings (
     embedding_id  UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     article_id    UUID NOT NULL REFERENCES wiki_articles(article_id) ON DELETE CASCADE,
@@ -771,6 +955,8 @@ CREATE TABLE quiz_sessions (
     test_mode              test_mode NOT NULL DEFAULT 'camp',
     status                 session_status NOT NULL DEFAULT 'in_progress',
     question_ids           UUID[] NOT NULL DEFAULT '{}',
+    subject_ids            UUID[] NOT NULL DEFAULT '{}', -- Tracks custom session filter
+    source_article_id      UUID REFERENCES public.wiki_articles(article_id) ON DELETE SET NULL,
     current_question_index INTEGER NOT NULL DEFAULT 0,
     started_at             TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     completed_at           TIMESTAMPTZ,
@@ -779,7 +965,7 @@ CREATE TABLE quiz_sessions (
 );
 
 COMMENT ON TABLE quiz_sessions IS
-    'Session state manager. question_ids and current_question_index guarantee exact resume state after crashes.';
+    'Session state manager. question_ids and current_question_index guarantee exact resume state.';
 
 CREATE INDEX idx_sessions_user ON quiz_sessions(user_id);
 CREATE INDEX idx_sessions_status ON quiz_sessions(status) WHERE status = 'in_progress';
@@ -796,19 +982,19 @@ CREATE TABLE user_interactions (
     user_id              UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     session_id           UUID NOT NULL REFERENCES quiz_sessions(session_id) ON DELETE CASCADE,
     question_id          UUID NOT NULL REFERENCES questions(question_id) ON DELETE RESTRICT,
-    topic_id             UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
+    topic_id             UUID REFERENCES taxonomy_tree(node_id) ON DELETE SET NULL,
     selected_option_id   TEXT,              -- NULL allowed for timeout/skipped items
     is_correct           BOOLEAN NOT NULL,
-    is_flagged           BOOLEAN NOT NULL DEFAULT FALSE,
-    is_lucky_guess       BOOLEAN NOT NULL DEFAULT FALSE,
-    time_spent_ms        INTEGER NOT NULL CHECK (time_spent_ms >= 0),
+    time_spent_ms        INTEGER DEFAULT 0 CHECK (time_spent_ms >= 0),
     interaction_timestamp TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     created_at           TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at           TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    updated_at           TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+    CONSTRAINT uq_user_session_question UNIQUE (user_id, session_id, question_id)
 );
 
 COMMENT ON TABLE user_interactions IS
-    'Atomic telemetry log. is_lucky_guess flags < P10 answer times. is_flagged saves UI state.';
+    'Atomic telemetry log. time_spent_ms tracks performance. uq constraint enables upsert logic.';
 
 CREATE INDEX idx_interactions_user_topic ON user_interactions(user_id, topic_id);
 CREATE INDEX idx_interactions_user_session ON user_interactions(user_id, session_id);
@@ -820,117 +1006,7 @@ CREATE TRIGGER trg_user_interactions_updated_at
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
 -- ────────────────────────────────────────────────────────────
--- 9. USER_NODE_MASTERY (The Aggregation Layer)
--- ────────────────────────────────────────────────────────────
-CREATE TABLE user_node_mastery (
-    mastery_id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id                 UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
-    topic_id                UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
-    total_attempts          INTEGER NOT NULL DEFAULT 0 CHECK (total_attempts >= 0),
-    total_correct           INTEGER NOT NULL DEFAULT 0 CHECK (total_correct >= 0),
-    current_mastery_weight  DOUBLE PRECISION NOT NULL DEFAULT 0.0
-                            CHECK (current_mastery_weight >= 0.0 AND current_mastery_weight <= 1.0),
-    pressure_mastery_weight DOUBLE PRECISION
-                            CHECK (pressure_mastery_weight >= 0.0 AND pressure_mastery_weight <= 1.0),
-    avg_time_ms             INTEGER NOT NULL DEFAULT 0 CHECK (avg_time_ms >= 0),
-    last_encountered        TIMESTAMPTZ,
-    created_at              TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at              TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-
-    CONSTRAINT uq_user_topic UNIQUE (user_id, topic_id)
-);
-
-COMMENT ON TABLE user_node_mastery IS
-    'Pre-computed EMA scores. pressure_mastery_weight tracks Storm Mode delta (The Pressure Gap).';
-
-CREATE INDEX idx_mastery_user ON user_node_mastery(user_id);
-CREATE INDEX idx_mastery_user_topic ON user_node_mastery(user_id, topic_id);
-CREATE INDEX idx_mastery_last_encountered
-    ON user_node_mastery(user_id, last_encountered ASC NULLS FIRST);
-
-CREATE TRIGGER trg_user_node_mastery_updated_at
-    BEFORE UPDATE ON user_node_mastery
-    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
-
--- ────────────────────────────────────────────────────────────
--- 10. FEEDBACK & IMMUNE SYSTEM (The SME Pipeline)
--- ────────────────────────────────────────────────────────────
-
--- 10A. FEEDBACK SUBMISSIONS
-CREATE TABLE feedback_submissions (
-    feedback_id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id               UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
-    channel               feedback_channel NOT NULL,
-    feature_area          feedback_feature_area NOT NULL,
-    taxonomy_node_id      UUID REFERENCES taxonomy_tree(node_id) ON DELETE SET NULL,
-    priority              feedback_priority,
-    status                feedback_status NOT NULL DEFAULT 'new',
-    mood_rating           SMALLINT CHECK (mood_rating BETWEEN 1 AND 3),
-    body_text             TEXT NOT NULL,
-    screenshot_url        TEXT,
-    metadata              JSONB NOT NULL DEFAULT '{}'::jsonb,
-    source_interaction_id UUID REFERENCES user_interactions(interaction_id) ON DELETE SET NULL,
-    source_article_id     UUID REFERENCES wiki_articles(article_id) ON DELETE SET NULL,
-    resolved_at           TIMESTAMPTZ,
-    resolved_by           UUID REFERENCES auth.users(id) ON DELETE SET NULL,
-    resolution_note       TEXT,
-    user_notified         BOOLEAN NOT NULL DEFAULT false,
-    created_at            TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at            TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-COMMENT ON TABLE feedback_submissions IS
-    'Captures all user feedback: bug reports, AI hallucinations, content flags.';
-
-CREATE INDEX idx_feedback_status ON feedback_submissions(status);
-CREATE INDEX idx_feedback_feature ON feedback_submissions(feature_area);
-
-CREATE TRIGGER trg_feedback_submissions_updated_at
-    BEFORE UPDATE ON feedback_submissions
-    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
-
--- 10B. FEEDBACK VOTES
-CREATE TABLE feedback_votes (
-    vote_id               UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    feedback_id           UUID NOT NULL REFERENCES feedback_submissions(feedback_id) ON DELETE CASCADE,
-    user_id               UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
-    created_at            TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    CONSTRAINT uq_feedback_vote UNIQUE (feedback_id, user_id)
-);
-
-COMMENT ON TABLE feedback_votes IS
-    'Upvoting system for feature requests and feedback.';
-
--- 10C. SME REVIEW QUEUE
-CREATE TABLE sme_review_queue (
-    review_id             UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    feedback_id           UUID REFERENCES feedback_submissions(feedback_id) ON DELETE SET NULL,
-    type                  sme_review_type NOT NULL,
-    article_id            UUID REFERENCES wiki_articles(article_id) ON DELETE SET NULL,
-    question_id           UUID REFERENCES questions(question_id) ON DELETE SET NULL,
-    topic_id              UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE RESTRICT,
-    priority              feedback_priority NOT NULL,
-    status                sme_review_status NOT NULL DEFAULT 'pending',
-    assigned_sme_id       UUID REFERENCES auth.users(id) ON DELETE SET NULL,
-    ai_interaction_log    JSONB,
-    sme_verdict           TEXT,
-    created_at            TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    resolved_at           TIMESTAMPTZ,
-    updated_at            TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
-COMMENT ON TABLE sme_review_queue IS
-    'Dedicated queue for content accuracy issues that require Subject Matter Expert review.';
-
-CREATE INDEX idx_sme_queue_status ON sme_review_queue(status);
-CREATE INDEX idx_sme_queue_topic ON sme_review_queue(topic_id);
-
-CREATE TRIGGER trg_sme_review_queue_updated_at
-    BEFORE UPDATE ON sme_review_queue
-    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
-
--- ────────────────────────────────────────────────────────────
--- 11. ROW-LEVEL SECURITY (RLS) POLICIES
+-- 9. ROW-LEVEL SECURITY (RLS) POLICIES
 -- ────────────────────────────────────────────────────────────
 
 -- Enable RLS everywhere
@@ -939,77 +1015,49 @@ ALTER TABLE disciplines ENABLE ROW LEVEL SECURITY;
 ALTER TABLE taxonomy_tree ENABLE ROW LEVEL SECURITY;
 ALTER TABLE questions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE wiki_articles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE wiki_article_taxonomy ENABLE ROW LEVEL SECURITY;
 ALTER TABLE wiki_embeddings ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_notes ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_global_stats ENABLE ROW LEVEL SECURITY;
 ALTER TABLE quiz_sessions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_interactions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE user_node_mastery ENABLE ROW LEVEL SECURITY;
-ALTER TABLE feedback_submissions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE feedback_votes ENABLE ROW LEVEL SECURITY;
-ALTER TABLE sme_review_queue ENABLE ROW LEVEL SECURITY;
 
--- 11A. Content & Structs (Public Read, Admin Write via Dashboard)
-CREATE POLICY "public_read_disciplines" ON disciplines FOR SELECT USING (true);
-CREATE POLICY "public_read_taxonomy" ON taxonomy_tree FOR SELECT USING (true);
-CREATE POLICY "public_read_questions" ON questions FOR SELECT USING (true);
-CREATE POLICY "public_read_wiki" ON wiki_articles FOR SELECT USING (true);
-CREATE POLICY "public_read_embeddings" ON wiki_embeddings FOR SELECT USING (true);
+-- 9A. Content & Structs (Authenticated Read)
+CREATE POLICY "authenticated_read_disciplines" ON disciplines
+    FOR SELECT TO authenticated USING (true);
+CREATE POLICY "authenticated_read_taxonomy" ON taxonomy_tree
+    FOR SELECT TO authenticated USING (true);
+CREATE POLICY "authenticated_read_questions" ON questions
+    FOR SELECT TO authenticated USING (true);
+CREATE POLICY "authenticated_read_wiki" ON wiki_articles
+    FOR SELECT TO authenticated USING (true);
+CREATE POLICY "authenticated_read_wiki_taxonomy" ON wiki_article_taxonomy
+    FOR SELECT TO authenticated USING (true);
 
--- 11B. Subscriptions (Users Read, Service Role Writes via Webhook)
-CREATE POLICY "subs_select_own" ON user_subscriptions FOR SELECT
-    USING (auth.uid() = user_id);
+-- 9B. Grants (Bypass RLS for Service Role)
+GRANT ALL ON ALL TABLES IN SCHEMA public TO service_role;
+GRANT SELECT ON public.disciplines TO authenticated;
+GRANT SELECT ON public.taxonomy_tree TO authenticated;
+GRANT SELECT ON public.wiki_articles TO authenticated;
+GRANT SELECT ON public.wiki_article_taxonomy TO authenticated;
+GRANT SELECT ON public.questions TO authenticated;
+GRANT ALL ON public.user_subscriptions TO authenticated;
+GRANT ALL ON public.user_global_stats TO authenticated;
+GRANT ALL ON public.quiz_sessions TO authenticated;
+GRANT ALL ON public.user_interactions TO authenticated;
 
--- 11C. Notes & Workspace (Strict Ownership)
-CREATE POLICY "notes_select_own" ON user_notes FOR SELECT USING (auth.uid() = user_id);
-CREATE POLICY "notes_insert_own" ON user_notes FOR INSERT WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "notes_update_own" ON user_notes FOR UPDATE USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "notes_delete_own" ON user_notes FOR DELETE USING (auth.uid() = user_id);
-
--- 11D. Global Hero Stats (Own User Only)
-CREATE POLICY "stats_select_own" ON user_global_stats FOR SELECT
-    USING (auth.uid() = user_id);
-CREATE POLICY "stats_insert_own" ON user_global_stats FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "stats_update_own" ON user_global_stats FOR UPDATE
+-- 9C. Ownership Policies (User Access)
+CREATE POLICY "manage_own_subs" ON user_subscriptions
+    FOR SELECT TO authenticated USING (auth.uid() = user_id);
+CREATE POLICY "manage_own_stats" ON user_global_stats
+    FOR ALL TO authenticated
     USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
-
--- 11E. Quiz Sessions (Strict Ownership)
-CREATE POLICY "sessions_select_own" ON quiz_sessions FOR SELECT
-    USING (auth.uid() = user_id);
-CREATE POLICY "sessions_insert_own" ON quiz_sessions FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "sessions_update_own" ON quiz_sessions FOR UPDATE
+CREATE POLICY "manage_own_sessions" ON quiz_sessions
+    FOR ALL TO authenticated
     USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
-
--- 11F. User Interactions (Immutable Log, Own User Only)
-CREATE POLICY "interactions_select_own" ON user_interactions FOR SELECT
-    USING (auth.uid() = user_id);
-CREATE POLICY "interactions_insert_own" ON user_interactions FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-
--- 11G. User Node Mastery (Strict Ownership)
-CREATE POLICY "mastery_select_own" ON user_node_mastery FOR SELECT
-    USING (auth.uid() = user_id);
-CREATE POLICY "mastery_insert_own" ON user_node_mastery FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "mastery_update_own" ON user_node_mastery FOR UPDATE
+CREATE POLICY "manage_own_interactions" ON user_interactions
+    FOR ALL TO authenticated
     USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
-
--- 11H. Feedback Pipeline (Users Read/Write Own, SMEs/Admins handle queue)
-CREATE POLICY "feedback_select_own" ON feedback_submissions FOR SELECT
-    USING (auth.uid() = user_id);
-CREATE POLICY "feedback_insert_own" ON feedback_submissions FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-
-CREATE POLICY "votes_select_all" ON feedback_votes FOR SELECT USING (true);
-CREATE POLICY "votes_insert_own" ON feedback_votes FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
-CREATE POLICY "votes_delete_own" ON feedback_votes FOR DELETE
-    USING (auth.uid() = user_id);
-
--- (sme_review_queue is typically protected for SME roles only;
---  omitting public policies ensures default deny for anons/standard users)
 
 -- ============================================================
 -- THE SLATECAMP MASTER SCHEMA IS COMPLETE.
@@ -1022,51 +1070,59 @@ CREATE POLICY "votes_delete_own" ON feedback_votes FOR DELETE
 
 ### Subscriptions & Tier Gating
 
-The `user_subscriptions` table is the **business engine**. The `tier` enum maps directly to the pricing page: `free` → limited access (20 questions/day, 5 3D models), `camp` → full quizzing + analytics, `insurance` → everything including AI Tutor and Storm Mode, `institutional` → B2B university licenses. The frontend checks `tier` + `status` on every gated action. Stripe/PayRex webhooks update this table via `service_role` — users can only read their own row.
+The `user_subscriptions` table is the **business engine**. The `tier` enum maps directly to the pricing page: `free` → limited access, `camp` → full quizzing + analytics, `insurance` → everything including AI Tutor and Storm Mode, `institutional` → B2B university licenses. Stripe/PayRex webhooks update this table via `service_role` — users can only read their own row.
 
 ### Horizontal Scaling — The `disciplines` Table
 
-The `disciplines` table is the **Phase 3 unlock**. It decouples the entire schema from any single exam type. Every taxonomy node, question, and wiki article traces back through `taxonomy_tree.discipline_id` to a specific discipline. Adding a new exam (Nursing, Law, CPA) is a **data-entry exercise**, not a code change.
+The `disciplines` table decouples the entire schema from any single exam type. Every taxonomy node traces back through `taxonomy_tree.discipline_id` to a specific discipline. Adding a new exam (Nursing, Law, CPA) is a **data-entry exercise**, not a code change.
 
-### EMA (Exponential Moving Average) — Recency Bias
+### Slug-Based Addressing
 
-The `current_mastery_weight` in `user_node_mastery` is recalculated after every session:
+Both `taxonomy_tree` and `wiki_articles` now carry unique `slug` columns. This enables clean, human-readable URLs (e.g., `/wiki/fire-egress-codes`) and decouples routing from internal UUIDs. The wiki slug is `NOT NULL UNIQUE`; the taxonomy slug is `UNIQUE` but nullable (optional for non-leaf nodes).
 
-$$EMA_{new} = alpha times score_{latest} + (1 - alpha) times EMA_{previous}$$
+### Many-to-Many Wiki ↔ Taxonomy
 
-Where $\alpha$ (smoothing factor) is tunable. A higher $\alpha$ makes the score more reactive to recent sessions. This ensures the Readiness Score reflects **who the user is today**.
+The old direct `topic_id` FK on `wiki_articles` has been replaced by the `wiki_article_taxonomy` junction table. This means:
 
-### The Pressure Gap — Storm vs. Camp Mastery
+- A single article can map to **multiple** taxonomy nodes (e.g., a fire safety article relevant to both Architecture and Nursing)
+- The `is_primary` flag identifies the canonical node for breadcrumbs and SEO
+- Deleting a taxonomy node cascades cleanly without orphaning articles
 
-The `pressure_mastery_weight` column stores a **separate EMA calculated only from Storm Mode sessions**. The delta between `current_mastery_weight` (Camp) and `pressure_mastery_weight` (Storm) reveals the **Pressure Gap** — how much performance degrades under exam conditions.
+### Four Test Modes
+
+The `test_mode` enum has expanded from 2 to 4 modes:
+
+- **`camp`** — standard practice with immediate feedback
+- **`storm`** — timed, no-feedback mock board exam (The Pressure Gap)
+- **`chill`** — relaxed, untimed review mode
+- **`mock`** — full-length simulated exam
+
+### Session Context — `subject_ids` and `source_article_id`
+
+`quiz_sessions` now tracks:
+
+- **`subject_ids`** — which taxonomy subjects the user filtered to when generating the session, enabling "play it again" and analytics by filter
+- **`source_article_id`** — if the quiz was triggered from a wiki article, this FK links back to it for the "Test Yourself" feature
+
+### Upsert-Friendly Interactions
+
+The `user_interactions` table now carries a `CONSTRAINT uq_user_session_question UNIQUE (user_id, session_id, question_id)`. This enables **upsert logic** (`INSERT ... ON CONFLICT DO UPDATE`) — when a student revisits a question within the same session, the row updates in place rather than creating duplicates. The `is_flagged` and `is_lucky_guess` columns have been removed in favor of computing these signals at the application layer.
 
 ### IRT (Item Response Theory) — Difficulty Weighting
 
-The `difficulty` column on `questions` (0.0–1.0) is the IRT **b-parameter**. Harder questions contribute more to the Readiness Score. This prevents score inflation from grinding easy questions.
-
-### Lucky Guess Detection — First-Class Column
-
-`is_lucky_guess` on `user_interactions` is computed and persisted at write time. Correct answers submitted faster than the P10 historical threshold receive **partial mastery credit** (0.3× instead of 1.0×) in the EMA calculation.
+The `difficulty` column on `questions` (0.0–1.0) is the IRT **b-parameter**. Harder questions contribute more to the Readiness Score. The new `prompt_image_url` supports questions with visual prompts (floor plans, diagrams, photos) at 1920×1080 landscape resolution.
 
 ### Notes & Smart Resurfacing
 
-The `user_notes` table stores TipTap JSON blocks with `associated_topics` linking back to taxonomy. The `viewed_at` timestamp powers **Smart Resurfacing** — the engine flags saved notes when a user struggles on related quiz topics. Notes with `viewed_at = NULL` (captured but never revisited) trigger nudge notifications.
-
-### The Feedback Immune System
-
-The feedback pipeline is a three-table system:
-
-1. **`feedback_submissions`** — captures structured reports from 12 channels (in-app widget, post-quiz, hallucination flags, NPS surveys, Discord, etc.) with links to the exact interaction or article that triggered it
-2. **`feedback_votes`** — community upvoting with a unique constraint per user per feedback item, enabling data-driven prioritization
-3. **`sme_review_queue`** — critical content issues (hallucinations, outdated codes, question quality) are triaged here for SME review with a full audit trail (`ai_interaction_log`, `sme_verdict`, `assigned_sme_id`)
-
-### Blindspot Protocol — Spaced Repetition
-
-`last_encountered` on `user_node_mastery` drives the Spaced Repetition scheduler. Topics with `NULL` or `> 14 days stale` are over-indexed in quiz generation.
+The `user_notes` table stores TipTap JSON blocks with `associated_topics` linking back to taxonomy. The `viewed_at` timestamp powers **Smart Resurfacing** — notes with `viewed_at = NULL` (captured but never revisited) trigger nudge notifications.
 
 ### Zero-Hallucination RAG — The Wiki + Embeddings Pipeline
 
 The `wiki_articles` → `wiki_embeddings` pipeline powers the AI Contextual Tutor via a closed-loop vector corpus — no internet, no pre-training data. Every AI response carries a citation badge traceable through `embedding → article → topic`.
+
+### RLS Architecture — Authenticated, Not Public
+
+The RLS model has been tightened: content tables use `TO authenticated` policies instead of blanket `USING (true)` — meaning **anonymous/unauthenticated requests are denied by default**. Explicit `GRANT` statements give the `service_role` full bypass for backend operations (webhooks, Edge Functions). User-owned tables use consolidated `FOR ALL` policies instead of separate SELECT/INSERT/UPDATE policies.
 
 ---
 
@@ -1079,9 +1135,6 @@ erDiagram
     auth_users ||--o{ user_notes : "user_id"
     auth_users ||--o{ quiz_sessions : "user_id"
     auth_users ||--o{ user_interactions : "user_id"
-    auth_users ||--o{ user_node_mastery : "user_id"
-    auth_users ||--o{ feedback_submissions : "user_id"
-    auth_users ||--o{ feedback_votes : "user_id"
 
     disciplines ||--o{ taxonomy_tree : "discipline_id"
     disciplines ||--o{ user_global_stats : "current_discipline_id"
@@ -1089,25 +1142,16 @@ erDiagram
     taxonomy_tree ||--o{ taxonomy_tree : "parent_id (self-ref)"
     taxonomy_tree ||--o{ questions : "topic_id"
     taxonomy_tree ||--o{ questions : "subject_id"
-    taxonomy_tree ||--o{ wiki_articles : "topic_id"
+    taxonomy_tree ||--o{ wiki_article_taxonomy : "node_id"
     taxonomy_tree ||--o{ wiki_embeddings : "topic_id"
     taxonomy_tree ||--o{ user_interactions : "topic_id"
-    taxonomy_tree ||--o{ user_node_mastery : "topic_id"
-    taxonomy_tree ||--o{ feedback_submissions : "taxonomy_node_id"
-    taxonomy_tree ||--o{ sme_review_queue : "topic_id"
 
+    wiki_articles ||--o{ wiki_article_taxonomy : "article_id"
     wiki_articles ||--o{ wiki_embeddings : "article_id"
-    wiki_articles ||--o{ feedback_submissions : "source_article_id"
-    wiki_articles ||--o{ sme_review_queue : "article_id"
+    wiki_articles ||--o{ quiz_sessions : "source_article_id"
 
     quiz_sessions ||--o{ user_interactions : "session_id"
     questions ||--o{ user_interactions : "question_id"
-    questions ||--o{ sme_review_queue : "question_id"
-
-    user_interactions ||--o{ feedback_submissions : "source_interaction_id"
-
-    feedback_submissions ||--o{ feedback_votes : "feedback_id"
-    feedback_submissions ||--o{ sme_review_queue : "feedback_id"
 
     user_subscriptions {
         UUID subscription_id PK
@@ -1134,6 +1178,7 @@ erDiagram
         SMALLINT level
         TEXT name
         TEXT subject_area
+        TEXT slug
         BOOLEAN is_leaf
     }
 
@@ -1143,15 +1188,23 @@ erDiagram
         UUID subject_id FK
         TEXT text
         JSONB options
+        TEXT correct_answer
         TEXT rationale
+        TEXT prompt_image_url
         NUMERIC difficulty
     }
 
     wiki_articles {
         UUID article_id PK
-        UUID topic_id FK
+        TEXT slug
         TEXT title
         TEXT content
+    }
+
+    wiki_article_taxonomy {
+        UUID article_id PK_FK
+        UUID node_id PK_FK
+        BOOLEAN is_primary
     }
 
     wiki_embeddings {
@@ -1186,6 +1239,8 @@ erDiagram
         ENUM test_mode
         ENUM status
         UUID_ARRAY question_ids
+        UUID_ARRAY subject_ids
+        UUID source_article_id FK
         INT current_question_index
         TIMESTAMPTZ started_at
         TIMESTAMPTZ completed_at
@@ -1199,56 +1254,7 @@ erDiagram
         UUID topic_id FK
         TEXT selected_option_id
         BOOLEAN is_correct
-        BOOLEAN is_flagged
-        BOOLEAN is_lucky_guess
         INTEGER time_spent_ms
         TIMESTAMPTZ interaction_timestamp
-    }
-
-    user_node_mastery {
-        UUID mastery_id PK
-        UUID user_id FK
-        UUID topic_id FK
-        INTEGER total_attempts
-        INTEGER total_correct
-        FLOAT current_mastery_weight
-        FLOAT pressure_mastery_weight
-        INTEGER avg_time_ms
-        TIMESTAMPTZ last_encountered
-    }
-
-    feedback_submissions {
-        UUID feedback_id PK
-        UUID user_id FK
-        ENUM channel
-        ENUM feature_area
-        UUID taxonomy_node_id FK
-        ENUM priority
-        ENUM status
-        SMALLINT mood_rating
-        TEXT body_text
-        JSONB metadata
-        UUID source_interaction_id FK
-        UUID source_article_id FK
-    }
-
-    feedback_votes {
-        UUID vote_id PK
-        UUID feedback_id FK
-        UUID user_id FK
-    }
-
-    sme_review_queue {
-        UUID review_id PK
-        UUID feedback_id FK
-        ENUM type
-        UUID article_id FK
-        UUID question_id FK
-        UUID topic_id FK
-        ENUM priority
-        ENUM status
-        UUID assigned_sme_id FK
-        JSONB ai_interaction_log
-        TEXT sme_verdict
     }
 ```

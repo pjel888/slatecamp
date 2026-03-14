@@ -18,8 +18,10 @@ Before generating any code or architecture, you MUST execute the following seque
 ## 3. ABSOLUTE CONSTRAINTS (THE "NEVER" LIST)
 
 - **NEVER Implement Generic Gamification:** Absolutely zero confetti, badges, virtual currency, or empty streaks. Progression is mapped ONLY to the Readiness Score, Taxonomy Heatmap, or Pacing Gauge.
-- **NEVER Allow AI Hallucination:** The AI Contextual Tutor operates at Temperature 0.0. It MUST include mandatory citation badges linking to exact Wiki paragraphs.
+- **NEVER Allow AI Hallucination:** The AI Contextual Tutor operates at Temperature 0.0. It MUST include mandatory citation badges linking to exact Wiki paragraphs. Use structured rationales from questions (Misconception vs. Principle) to tailor AI responses.
 - **NEVER Compromise State:** All testing environments must have state persistence, auto-saving every 10 seconds.
+- **STRICT Testing Modes:** Adhere to pedagogical rules for Camp, Storm, Chill, and Blindspot modes as defined in the Testing & Quizzing PRD.
+- **IRT Mandate:** All mastery calculations MUST use the Item Response Theory (IRT) 2-parameter logistic model (theta, discrimination, difficulty).
 
 ## 4. TECH STACK & INFRASTRUCTURE
 

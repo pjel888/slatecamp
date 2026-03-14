@@ -63,7 +63,7 @@ const ICON_SIZE = 'h-[18px] w-[18px]'
 /** * Premium Collapsed Logomark
  */
 const Logomark = () => (
-  <div className='flex h-8 w-8 items-center justify-center rounded-sm bg-zinc-900 text-zinc-50 shadow-sm'>
+  <div className='flex h-8 w-8 items-center justify-center rounded-sm bg-blue-500 text-zinc-50 shadow-sm'>
     <span className='font-serif font-bold text-lg leading-none mt-0.5'>S</span>
   </div>
 )
@@ -135,7 +135,7 @@ const SidebarItem = ({
         <TooltipContent
           side='right'
           sideOffset={12}
-          className='bg-zinc-900 text-zinc-50 font-medium text-xs'
+          className='bg-blue-500 text-zinc-50 font-medium text-xs'
         >
           {label}
         </TooltipContent>

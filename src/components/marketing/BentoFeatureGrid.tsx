@@ -44,7 +44,7 @@ const QuizMockup = () => (
     </div>
     <div className='rounded-sm border border-zinc-300 bg-zinc-100 px-4 py-2.5'>
       <div className='flex items-center gap-3'>
-        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-white'>
+        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-gray-600 text-white'>
           <svg className='h-2 w-2' viewBox='0 0 20 20' fill='currentColor'>
             <path
               fillRule='evenodd'
@@ -80,7 +80,7 @@ const MasteryBars = () => (
         <div className='h-1.5 w-full overflow-hidden rounded-full bg-white/10'>
           <div
             className={`h-full rounded-full ${
-              s.tone === 'good' ? 'bg-green-400' : 'bg-blue-400'
+              s.tone === 'good' ? 'bg-green-400' : 'bg-slate-400'
             }`}
             style={{ width: `${s.pct}%` }}
           />
@@ -188,7 +188,7 @@ export const BentoFeatureGrid = () => (
       {/* Top row: 3 cols, side cards span 2 rows */}
       <div className='grid grid-cols-1 gap-3 md:grid-cols-3 md:grid-rows-2'>
         {/* REVIEW MODE */}
-        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-2xl bg-zinc-900 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div>
             <div className='flex items-center justify-between'>
               <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
@@ -239,7 +239,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* ANALYTICS */}
-        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-zinc-900 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div>
             <div className='flex items-center justify-between'>
               <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
@@ -322,7 +322,7 @@ export const BentoFeatureGrid = () => (
       {/* Bottom row: 3 equal columns */}
       <div className='mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3'>
         {/* 3D LAB */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-zinc-900 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
+        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
           <div className='flex items-center justify-between'>
             <h3 className='text-[22px] font-semibold leading-tight tracking-tight'>
               3D Lab
@@ -351,7 +351,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* SESSIONS MODE */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-zinc-900 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
           <div className='flex items-center justify-between'>
             <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
               [ Sessions ]
@@ -376,7 +376,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI-ADAPTIVE */}
-        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-2xl bg-zinc-900 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
           <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
             [ Bounded Intelligence ]
           </span>
@@ -399,7 +399,7 @@ export const BentoFeatureGrid = () => (
       </div>
 
       {/* Full-width analytics showcase */}
-      <div className='landing-reveal mt-3 rounded-2xl bg-zinc-900 p-8 text-white'>
+      <div className='landing-reveal mt-3 rounded-2xl bg-gray-600 p-8 text-white'>
         <div className='grid grid-cols-1 items-center gap-8 md:grid-cols-2'>
           <div>
             <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-amber-500'>

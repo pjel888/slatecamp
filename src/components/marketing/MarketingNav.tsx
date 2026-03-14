@@ -37,7 +37,7 @@ export async function MarketingNav({
   const headerClass = cn(
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
-      ? 'border-white/10 bg-zinc-900/80 text-white'
+      ? 'border-white/10 bg-blue-500/80 text-white'
       : 'border-zinc-200 bg-white/80 text-zinc-900',
   )
 

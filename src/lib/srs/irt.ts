@@ -18,7 +18,7 @@ export function selectNextQuestion(
   answeredIds: Set<string>
 ): Question | null {
   const candidates = availableQuestions.filter(
-    (q) => !answeredIds.has(q.id)
+    (q) => !answeredIds.has(q.question_id)
   );
 
   if (candidates.length === 0) return null;
@@ -27,11 +27,11 @@ export function selectNextQuestion(
   candidates.sort(
     (a, b) =>
       Math.abs(
-        a.difficulty_rating -
+        (a.difficulty_rating || 0.5) -
           (userTheta - Math.log(3) / (a.discrimination_rating || 1))
       ) -
       Math.abs(
-        b.difficulty_rating -
+        (b.difficulty_rating || 0.5) -
           (userTheta - Math.log(3) / (b.discrimination_rating || 1))
       )
   );
@@ -44,7 +44,8 @@ export function updateTheta(
   question: Question,
   isCorrect: boolean
 ): number {
-  const { difficulty_rating: b, discrimination_rating: a } = question;
+  const b = question.difficulty_rating || 0.5;
+  const a = question.discrimination_rating || 1;
   const p = probabilityCorrect(currentTheta, a, b);
 
   const information = a * a * p * (1 - p);

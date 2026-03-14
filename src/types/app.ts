@@ -8,7 +8,7 @@ export type SessionStatus = "in_progress" | "completed" | "abandoned";
 export type ReferenceType = "book" | "code" | "standard" | "article" | "video" | "website";
 export type DifficultyMode = "easy" | "medium" | "hard" | "expert" | "mixed" | "adaptive";
 export type Theme = "light" | "dark" | "system";
-export type TestMode = "camp" | "storm";
+export type TestMode = "camp" | "storm" | "chill" | "custom" | "blindspot" | "proof_sim" | "endurance";
 
 // New Core Types (v1.0 Master Schema)
 export interface Discipline {
@@ -32,9 +32,10 @@ export interface TaxonomyNode {
 }
 
 export interface Choice {
-  id: string
-  text: string
-  is_correct: boolean
+  id: string;
+  text: string;
+  is_correct: boolean;
+  rationale?: string | null; // PRD Section 3, Step 7: SME-written rationale per option
 }
 
 export interface Question {
@@ -42,13 +43,25 @@ export interface Question {
   topic_id: string;
   subject_id?: string;
   text: string;
-  options: Choice[] | any; 
-  correct_answer?: string; // Support for both styles
-  rationale: string | null;
-  difficulty: number;
+  options: Choice[]; 
+  correct_answer?: string;
+  rationale: string | null; // General rationale
+  difficulty: number; // 0.0 to 1.0
+  difficulty_rating?: number; // IRT field
+  discrimination_rating?: number; // IRT field
   prompt_image_url?: string | null;
   created_at: string;
   updated_at?: string;
+}
+
+export interface UserNodeMastery {
+  user_id: string;
+  topic_id: string;
+  total_attempts: number;
+  total_correct: number;
+  current_mastery_weight: number; // EMA float
+  avg_time_ms: number;
+  last_encountered: string;
 }
 
 export interface WikiArticle {
@@ -87,8 +100,10 @@ export interface UserGlobalStats {
 export interface QuizSession {
   session_id: string;
   user_id: string;
+  discipline_id: string;
   test_mode: TestMode;
   status: SessionStatus;
+  config?: any; // Session configuration (timer, feedback settings, etc.)
   question_ids: string[];
   subject_ids?: string[];
   source_article_id?: string | null;

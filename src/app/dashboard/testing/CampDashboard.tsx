@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { TestingHub } from '@/components/dashboard/TestingHub'
 import { QuizRenderer } from '@/components/dashboard/QuizRenderer'
-import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions } from '@/lib/actions/quiz'
+import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore } from '@/lib/actions/quiz'
 import type { QuizSession, Question, TaxonomyNode, TestMode } from '@/types/app'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -27,8 +27,13 @@ export function CampDashboard({
   const [view, setView] = useState<'hub' | 'quiz'>('hub')
   const [loading, setLoading] = useState(false)
   const [instantFeedback, setInstantFeedback] = useState(true)
+  const [readinessScore, setReadinessScore] = useState(0)
   const router = useRouter()
   const searchParams = useSearchParams()
+
+  useEffect(() => {
+    getUserReadinessScore().then(setReadinessScore)
+  }, [])
 
   // Handle article-driven sessions
   useEffect(() => {
@@ -117,6 +122,7 @@ export function CampDashboard({
         subjects={subjects}
         onStartSession={handleStartSession}
         onResumeSession={handleResumeSession}
+        readinessScore={readinessScore}
       />
     )
   }
@@ -128,7 +134,6 @@ export function CampDashboard({
           session={session} 
           questions={questions} 
           initialInteractions={interactions} 
-          // We can pass instantFeedback prop if we update Renderer
         />
       )}
     </div>

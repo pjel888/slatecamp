@@ -9,7 +9,7 @@
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- Quizzing Enums
-CREATE TYPE test_mode AS ENUM ('camp', 'storm', 'chill', 'mock');
+CREATE TYPE test_mode AS ENUM ('camp', 'storm', 'chill', 'custom', 'blindspot', 'proof_sim', 'endurance');
 CREATE TYPE session_status AS ENUM ('in_progress', 'completed', 'abandoned');
 
 -- Subscription Enums
@@ -73,6 +73,8 @@ CREATE TABLE questions (
     options       JSONB NOT NULL DEFAULT '[]'::jsonb,
     rationale     TEXT,
     difficulty    NUMERIC NOT NULL DEFAULT 0.50,
+    difficulty_rating     NUMERIC, -- IRT parameter (b)
+    discrimination_rating NUMERIC, -- IRT parameter (a)
     created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -93,11 +95,25 @@ CREATE TABLE user_global_stats (
     updated_at             TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- MIGRATION: 2026-03-14: Adding advanced testing analytics
+CREATE TABLE user_node_mastery (
+    user_id                UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    topic_id               UUID NOT NULL REFERENCES taxonomy_tree(node_id) ON DELETE CASCADE,
+    total_attempts         INTEGER NOT NULL DEFAULT 0,
+    total_correct          INTEGER NOT NULL DEFAULT 0,
+    current_mastery_weight DOUBLE PRECISION NOT NULL DEFAULT 0.0, -- EMA-weighted mastery
+    avg_time_ms            INTEGER NOT NULL DEFAULT 0,
+    last_encountered       TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (user_id, topic_id)
+);
+
 CREATE TABLE quiz_sessions (
     session_id             UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id                UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    discipline_id          UUID REFERENCES disciplines(discipline_id) ON DELETE SET NULL,
     test_mode              test_mode NOT NULL DEFAULT 'camp',
     status                 session_status NOT NULL DEFAULT 'in_progress',
+    config                 JSONB NOT NULL DEFAULT '{}'::jsonb, -- Store timer, feedback settings
     question_ids           UUID[] NOT NULL DEFAULT '{}',
     subject_ids            UUID[] NOT NULL DEFAULT '{}',
     current_question_index INTEGER NOT NULL DEFAULT 0,
@@ -133,6 +149,7 @@ ALTER TABLE user_subscriptions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_global_stats ENABLE ROW LEVEL SECURITY;
 ALTER TABLE quiz_sessions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_interactions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE user_node_mastery ENABLE ROW LEVEL SECURITY;
 
 CREATE POLICY "authenticated_read_disciplines" ON disciplines FOR SELECT TO authenticated USING (true);
 CREATE POLICY "authenticated_read_taxonomy" ON taxonomy_tree FOR SELECT TO authenticated USING (true);
@@ -144,6 +161,7 @@ CREATE POLICY "manage_own_subs" ON user_subscriptions FOR SELECT TO authenticate
 CREATE POLICY "manage_own_stats" ON user_global_stats FOR ALL TO authenticated USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 CREATE POLICY "manage_own_sessions" ON quiz_sessions FOR ALL TO authenticated USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 CREATE POLICY "manage_own_interactions" ON user_interactions FOR ALL TO authenticated USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "manage_own_mastery" ON user_node_mastery FOR ALL TO authenticated USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
 
 -- ────────────────────────────────────────────────────────────
 -- 10. GRANTS
@@ -156,5 +174,6 @@ GRANT SELECT ON public.wiki_article_taxonomy TO authenticated;
 GRANT SELECT ON public.questions TO authenticated;
 GRANT ALL ON public.user_subscriptions TO authenticated;
 GRANT ALL ON public.user_global_stats TO authenticated;
+GRANT ALL ON public.user_node_mastery TO authenticated;
 GRANT ALL ON public.quiz_sessions TO authenticated;
 GRANT ALL ON public.user_interactions TO authenticated;

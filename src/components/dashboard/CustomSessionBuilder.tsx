@@ -56,7 +56,7 @@ export function CustomSessionBuilder({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className='sm:max-w-[500px] bg-white border-zinc-200 shadow-2xl rounded-2xl p-0 overflow-hidden'>
-        <div className='h-1.5 bg-zinc-900 w-full' />
+        <div className='h-1.5 bg-blue-500 w-full' />
 
         <DialogHeader className='px-8 pt-8 pb-4'>
           <div className='flex items-center gap-3 mb-2'>
@@ -97,7 +97,7 @@ export function CustomSessionBuilder({
                   onClick={() => toggleSubject(subject.node_id)}
                   className={`flex items-center justify-between p-3 rounded-xl border transition-all text-left group ${
                     selectedSubjects.includes(subject.node_id)
-                      ? 'border-zinc-900 bg-zinc-900 text-white'
+                      ? 'border-zinc-900 bg-blue-500 text-white'
                       : 'border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300'
                   }`}
                 >
@@ -136,7 +136,7 @@ export function CustomSessionBuilder({
                   />
                   <Label
                     htmlFor={`q-${val}`}
-                    className='flex flex-col items-center justify-center rounded-xl border border-zinc-200 bg-white p-3 peer-data-[state=checked]:border-zinc-900 peer-data-[state=checked]:bg-zinc-900 peer-data-[state=checked]:text-white hover:border-zinc-300 cursor-pointer transition-all'
+                    className='flex flex-col items-center justify-center rounded-xl border border-zinc-200 bg-white p-3 peer-data-[state=checked]:border-zinc-900 peer-data-[state=checked]:bg-blue-500 peer-data-[state=checked]:text-white hover:border-zinc-300 cursor-pointer transition-all'
                   >
                     <span className='text-sm font-bold'>{val}</span>
                   </Label>
@@ -166,7 +166,7 @@ export function CustomSessionBuilder({
           <Button
             onClick={handleStart}
             disabled={selectedSubjects.length === 0}
-            className='w-full h-12 text-base font-bold bg-zinc-900 hover:bg-zinc-800 text-white rounded-xl shadow-lg shadow-zinc-200'
+            className='w-full h-12 text-base font-bold bg-blue-500 hover:bg-zinc-800 text-white rounded-xl shadow-lg shadow-zinc-200'
           >
             Generate Session
           </Button>
