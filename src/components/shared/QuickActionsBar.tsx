@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { MessageSquare, StickyNote, Search } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
+import { NotesSidebar } from '../notes/NotesSidebar'
 
 const QUICK_ACTIONS = [
   {
@@ -32,6 +33,12 @@ const QUICK_ACTIONS = [
  */
 export function QuickActionsBar() {
   const [omnibarOpen, setOmnibarOpen] = useState(false)
+  const [notesOpen, setNotesOpen] = useState(false)
+
+  const handleAction = (id: string) => {
+    if (id === 'search') setOmnibarOpen(true)
+    if (id === 'quick-note') setNotesOpen(true)
+  }
 
   return (
     <>
@@ -49,7 +56,7 @@ export function QuickActionsBar() {
             <button
               key={id}
               type='button'
-              onClick={id === 'search' ? () => setOmnibarOpen(true) : undefined}
+              onClick={() => handleAction(id)}
               aria-label={ariaLabel}
               title={label}
               className={cn(
@@ -71,6 +78,7 @@ export function QuickActionsBar() {
       </aside>
 
       <Omnibar open={omnibarOpen} setOpen={setOmnibarOpen} />
+      <NotesSidebar open={notesOpen} onOpenChange={setNotesOpen} />
     </>
   )
 }

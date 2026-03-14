@@ -1,21 +1,32 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
+import { isDemoMode, DEMO_USER } from "@/lib/demo/config";
 
 /**
  * Refreshes the Supabase auth session and protects routes.
- * Cookie handling follows @supabase/ssr: getAll from request (read-only),
- * setAll writes only to the response so refreshed tokens reach the browser.
  */
 export async function updateSession(request: NextRequest) {
   const response = NextResponse.next({ request });
+  const pathname = request.nextUrl.pathname;
 
-  const isPublicPath = PUBLIC_PATHS.some(
-    (path) => request.nextUrl.pathname === path
-  );
-  if (isPublicPath) {
+  // Handle Demo Mode
+  if (isDemoMode()) {
+    const isLoginPage = pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER;
+    if (isLoginPage) {
+      console.log("[Middleware] Demo Mode: Redirecting login/register to dashboard");
+      const url = request.nextUrl.clone();
+      url.pathname = ROUTES.DASHBOARD;
+      return NextResponse.redirect(url);
+    }
     return response;
   }
+
+  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path);
+  const isAuthCallback = pathname.startsWith("/auth/callback");
+  const isApiRoute = pathname.startsWith("/api");
+
+  console.log("[Middleware] Path:", pathname, "isPublic:", isPublicPath, "isAuthCallback:", isAuthCallback);
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -34,11 +45,14 @@ export async function updateSession(request: NextRequest) {
     }
   );
 
-  const { data: { session } } = await supabase.auth.getSession();
+  const { data: { session }, error } = await supabase.auth.getSession();
   const user = session?.user ?? null;
 
-  const isAuthCallback = request.nextUrl.pathname.startsWith("/auth/callback");
-  const isApiRoute = request.nextUrl.pathname.startsWith("/api");
+  if (error) {
+    console.error("[Middleware] getSession error:", error.message);
+  }
+
+  console.log("[Middleware] User ID:", user?.id ?? "none");
 
   const redirectWithCookies = (url: URL) => {
     const res = NextResponse.redirect(url);
@@ -48,13 +62,15 @@ export async function updateSession(request: NextRequest) {
     return res;
   };
 
-  if (!user && !isAuthCallback && !isApiRoute) {
+  if (!user && !isPublicPath && !isAuthCallback && !isApiRoute) {
+    console.log("[Middleware] No user on protected path, redirecting to login");
     const url = request.nextUrl.clone();
     url.pathname = ROUTES.LOGIN;
     return redirectWithCookies(url);
   }
 
-  if (user && (request.nextUrl.pathname === ROUTES.LOGIN || request.nextUrl.pathname === ROUTES.REGISTER)) {
+  if (user && (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER)) {
+    console.log("[Middleware] User exists on login/register, redirecting to dashboard");
     const url = request.nextUrl.clone();
     url.pathname = ROUTES.DASHBOARD;
     return redirectWithCookies(url);

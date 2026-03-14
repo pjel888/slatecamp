@@ -1,91 +1,61 @@
 import { PacingEnduranceGauge } from '@/components/dashboard/PacingEnduranceGauge'
 import { PersonalWorkspaceLink } from '@/components/dashboard/PersonalWorkspaceLink'
-import {
-  HeatmapCluster,
-  TaxonomyHeatmap,
-} from '@/components/dashboard/TaxonomyHeatmap'
+import { TaxonomyHeatmap } from '@/components/dashboard/TaxonomyHeatmap'
+import { ReadinessScore } from '@/components/dashboard/ReadinessScore'
+import { getAnalyticsSummary, getTaxonomyHeatmap } from '@/lib/actions/analytics'
+import { getUserGlobalStats } from '@/lib/actions/user-stats'
+import { Activity } from 'lucide-react'
 
-const AnalyticsPage = () => {
-  // TODO: Replace mocked values with real analytics wiring (EMA, IRT, pacing, taxonomy, queues).
+export default async function AnalyticsPage() {
+  const [summary, stats] = await Promise.all([
+    getAnalyticsSummary(),
+    getUserGlobalStats()
+  ])
 
-  const pacingMock = {
-    averageSecondsPerItem: 92,
-    targetSecondsPerItem: 75,
-    enduranceMinutes: 78,
-    trend: 'improving' as const,
-  }
+  const heatmap = stats?.current_discipline_id 
+    ? await getTaxonomyHeatmap(stats.current_discipline_id)
+    : []
 
-  const taxonomyMock: HeatmapCluster[] = [
-    {
-      id: 'structural',
-      title: 'Structural Design',
-      nodes: [
-        {
-          id: 'steel',
-          label: 'Steel Design Basics',
-          state: 'familiar',
-          progress: 72,
-        },
-        {
-          id: 'rc',
-          label: 'Reinforced Concrete',
-          state: 'mastered',
-          progress: 88,
-        },
-        {
-          id: 'loads',
-          label: 'Load Path & Framing',
-          state: 'danger',
-          progress: 41,
-        },
-      ],
-    },
-    {
-      id: 'prof-practice',
-      title: 'Professional Practice',
-      nodes: [
-        {
-          id: 'contracts',
-          label: 'Contracts & Deliverables',
-          state: 'familiar',
-          progress: 64,
-        },
-        {
-          id: 'ethics',
-          label: 'Ethics & Liability',
-          state: 'unexplored',
-          progress: 0,
-        },
-      ],
-    },
-  ]
+  if (!summary) return null
 
   return (
-    <div>
-      <div className='w-full h-[256px] bg-red-50 mb-2'>
-        <p>Image</p>
-      </div>
-      <div className='flex h-full flex-col gap-4 lg:flex-row lg:gap-6'>
-        {/* Left column — macro mastery + taxonomy */}
-        <div className='flex flex-1 flex-col gap-4'>
-          {' '}
-          <TaxonomyHeatmap clusters={taxonomyMock} />
+    <div className="space-y-8 animate-in fade-in duration-500">
+      <header className="flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-bold text-zinc-900 tracking-tight">Analytics Dashboard</h1>
+          <p className="text-zinc-500 mt-1">Real-time prediction and mastery mapping.</p>
+        </div>
+        <div className="flex items-center gap-2 px-4 py-2 bg-zinc-50 border border-zinc-100 rounded-2xl">
+          <Activity className="h-4 w-4 text-amber-500 animate-pulse" />
+          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Live Prediction Active</span>
+        </div>
+      </header>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        {/* Readiness Arc */}
+        <div className="lg:col-span-4">
+          <ReadinessScore 
+            score={summary.readinessScore}
+            previousScore={summary.readinessTrend[summary.readinessTrend.length - 2]?.score || null}
+          />
         </div>
 
-        {/* Right column — pacing, endurance, personal workspace */}
-        <div className='flex flex-1 flex-col gap-4'>
+        {/* Pacing & Performance */}
+        <div className="lg:col-span-8 flex flex-col gap-6">
           <PacingEnduranceGauge
-            averageSecondsPerItem={pacingMock.averageSecondsPerItem}
-            targetSecondsPerItem={pacingMock.targetSecondsPerItem}
-            enduranceMinutes={pacingMock.enduranceMinutes}
-            trend={pacingMock.trend}
+            averageSecondsPerItem={summary.averageSecondsPerItem}
+            targetSecondsPerItem={summary.targetSecondsPerItem}
+            enduranceMinutes={summary.enduranceMinutes}
+            trend={summary.trend}
           />
-
           <PersonalWorkspaceLink />
         </div>
+      </div>
+
+      {/* Taxonomy Heatmap */}
+      <div className="w-full">
+        <TaxonomyHeatmap clusters={heatmap} />
       </div>
     </div>
   )
 }
-
-export default AnalyticsPage

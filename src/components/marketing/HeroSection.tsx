@@ -392,9 +392,11 @@ const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
 
 export const HeroSection = ({
   ctaHref,
+  ctaLabel,
   isLoggedIn,
 }: {
   ctaHref: string
+  ctaLabel: string
   isLoggedIn: boolean
 }) => (
   <section
@@ -443,7 +445,7 @@ export const HeroSection = ({
                 href={ctaHref}
                 className='inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-blue-600 px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
               >
-                Prove you&apos;re ready <ChevronRight />
+                {ctaLabel} <ChevronRight />
               </Link>
               <p className='landing-reveal landing-delay-5 flex justify-start text-[10px] font-semibold text-zinc-500'>
                 Free forever to start &middot; No credit card required

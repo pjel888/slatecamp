@@ -2,7 +2,6 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { createNoteSchema, updateNoteSchema, deleteNoteSchema } from '@/lib/validations'
 import type { Note, NoteStub } from '@/types/app'
 
 function snippetFromContent(content: Record<string, unknown>, maxLen = 80): string {
@@ -20,22 +19,28 @@ function snippetFromContent(content: Record<string, unknown>, maxLen = 80): stri
   }
 }
 
-/** List all notes for the current user, ordered by updated_at (pinned first). */
-export async function getNotesList(): Promise<NoteStub[]> {
+/** List all notes for the current user. */
+export async function getNotesList(folderId?: string): Promise<NoteStub[]> {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return []
 
-  const { data, error } = await supabase
+  let query = supabase
     .from('notes')
-    .select('id, title, content, updated_at, is_pinned')
+    .select('note_id, title, content, updated_at, is_pinned')
     .eq('user_id', user.id)
+
+  if (folderId) {
+    query = query.eq('folder_id', folderId)
+  }
+
+  const { data, error } = await query
     .order('is_pinned', { ascending: false })
     .order('updated_at', { ascending: false })
 
   if (error) return []
-  return (data ?? []).map((row: { id: string; title: string; updated_at: string; is_pinned: boolean; content?: unknown }) => ({
-    id: row.id,
+  return (data ?? []).map((row: any) => ({
+    id: row.note_id,
     title: row.title,
     updated_at: row.updated_at,
     is_pinned: row.is_pinned,
@@ -43,13 +48,23 @@ export async function getNotesList(): Promise<NoteStub[]> {
   })) as NoteStub[]
 }
 
-export async function getNote(id: string): Promise<Note | null> {
-  // Validate UUID format
-  const parseResult = deleteNoteSchema.safeParse({ id })
-  if (!parseResult.success) {
-    return null
-  }
+/** List all folders for the current user. */
+export async function getNoteFolders() {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
 
+  const { data, error } = await supabase
+    .from('note_folders')
+    .select('*')
+    .eq('user_id', user.id)
+    .order('name', { ascending: true })
+
+  if (error) return []
+  return data
+}
+
+export async function getNote(id: string): Promise<Note | null> {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return null
@@ -57,26 +72,20 @@ export async function getNote(id: string): Promise<Note | null> {
   const { data, error } = await supabase
     .from('notes')
     .select('*')
-    .eq('id', parseResult.data.id)
+    .eq('note_id', id)
     .eq('user_id', user.id)
     .single()
 
   if (error || !data) return null
-  return data as Note
+  
+  // Map note_id to id for UI compatibility
+  const { note_id, ...rest } = data
+  return { id: note_id, ...rest } as unknown as Note
 }
 
-/** Create a new note and return its id. Caller should redirect to /dashboard/notes/[id]. */
 export async function createNote(
-  input?: { title?: string; content?: Record<string, unknown>; subject_id?: string }
+  input?: { title?: string; content?: Record<string, unknown>; folder_id?: string; topic_id?: string; source_url?: string }
 ): Promise<{ id: string } | { error: string }> {
-  // Validate input if provided
-  if (input) {
-    const parseResult = createNoteSchema.safeParse(input)
-    if (!parseResult.success) {
-      return { error: parseResult.error.issues[0]?.message || 'Invalid input' }
-    }
-  }
-
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
@@ -86,15 +95,33 @@ export async function createNote(
     .insert({
       user_id: user.id,
       title: input?.title ?? 'Untitled Note',
-      content: input?.content ?? {},
-      subject_id: input?.subject_id,
+      content: input?.content || { type: 'doc', content: [] },
+      folder_id: input?.folder_id,
+      topic_id: input?.topic_id,
+      source_url: input?.source_url
     })
-    .select('id')
+    .select('note_id')
     .single()
 
   if (error) return { error: error.message }
   revalidatePath('/dashboard/notes')
-  return { id: data.id }
+  return { id: data.note_id }
+}
+
+export async function createNoteFolder(name: string) {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return { error: 'Unauthorized' }
+
+  const { data, error } = await supabase
+    .from('note_folders')
+    .insert({ user_id: user.id, name })
+    .select()
+    .single()
+
+  if (error) return { error: error.message }
+  revalidatePath('/dashboard/notes')
+  return data
 }
 
 export async function updateNote(
@@ -103,29 +130,17 @@ export async function updateNote(
     title?: string
     content?: Record<string, unknown>
     is_pinned?: boolean
+    folder_id?: string
   }
 ): Promise<{ error?: string }> {
-  // Validate input
-  const parseResult = updateNoteSchema.safeParse({ id, ...updates })
-  if (!parseResult.success) {
-    return { error: parseResult.error.issues[0]?.message || 'Invalid input' }
-  }
-
-  const { id: validId, title, content, is_pinned } = parseResult.data
-
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
 
-  const payload: Record<string, unknown> = { updated_at: new Date().toISOString() }
-  if (title !== undefined) payload.title = title
-  if (content !== undefined) payload.content = content
-  if (is_pinned !== undefined) payload.is_pinned = is_pinned
-
   const { error } = await supabase
     .from('notes')
-    .update(payload)
-    .eq('id', validId)
+    .update({ ...updates, updated_at: new Date().toISOString() })
+    .eq('note_id', id)
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }
@@ -134,14 +149,6 @@ export async function updateNote(
 }
 
 export async function deleteNote(id: string): Promise<{ error?: string }> {
-  // Validate input
-  const parseResult = deleteNoteSchema.safeParse({ id })
-  if (!parseResult.success) {
-    return { error: 'Invalid note ID format' }
-  }
-
-  const { id: validId } = parseResult.data
-
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthorized' }
@@ -149,7 +156,7 @@ export async function deleteNote(id: string): Promise<{ error?: string }> {
   const { error } = await supabase
     .from('notes')
     .delete()
-    .eq('id', validId)
+    .eq('note_id', id)
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }

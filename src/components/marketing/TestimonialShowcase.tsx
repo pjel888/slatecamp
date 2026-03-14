@@ -68,8 +68,6 @@ export const TestimonialShowcase = ({
         <div>
           <StarRating count={testimonial.rating} />
           <blockquote
-            className={`${serif.className} mt-5 text-[17px] italic leading-relaxed`}
-            style={{ color: dark ? 'rgba(255,255,255,0.9)' : undefined }}
             className={`${serif.className} mt-5 text-[17px] italic leading-relaxed ${
               dark ? 'text-white/90' : 'text-zinc-900'
             }`}

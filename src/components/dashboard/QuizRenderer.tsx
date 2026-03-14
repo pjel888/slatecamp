@@ -13,9 +13,23 @@ import {
   Timer,
   ExternalLink,
   Plus,
-  MessageSquare
+  MessageSquare,
+  X,
+  XCircle,
+  AlertTriangle
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
 import { saveInteraction, updateQuizSession } from '@/lib/actions/quiz'
@@ -24,14 +38,19 @@ interface QuizRendererProps {
   session: QuizSession
   questions: Question[]
   initialInteractions: any[]
+  onExit: () => void
 }
 
 export function QuizRenderer({
   session,
   questions,
   initialInteractions,
+  onExit
 }: QuizRendererProps) {
   const mode = session.test_mode
+  // Decisions Step 1: Storm Mode Strictness
+  const strictMode = mode === 'storm' || mode === 'proof_sim'
+  
   const [currentIndex, setCurrentIndex] = useState(session.current_question_index || 0)
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     const initialAnswers: Record<string, string> = {}
@@ -41,14 +60,12 @@ export function QuizRenderer({
     return initialAnswers
   })
   
-  // PRD Section 3, Step 3: Arsenal - Strike-through tool
   const [struckOptions, setStruckOptions] = useState<Record<string, Set<string>>>(() => {
     const initial: Record<string, Set<string>> = {}
     questions.forEach(q => initial[q.question_id] = new Set())
     return initial
   })
 
-  // PRD Section 3, Step 3: Arsenal - Flag for Review
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(() => {
     const initialFlags = new Set<string>()
     initialInteractions.forEach(i => {
@@ -60,7 +77,8 @@ export function QuizRenderer({
   const [checkedQuestions, setCheckedQuestions] = useState<Set<string>>(() => {
     const initialChecked = new Set<string>()
     initialInteractions.forEach((i) => {
-      if (i.selected_option_id && (mode === 'camp' || mode === 'chill' || mode === 'blindspot')) {
+      // In strict mode, we don't show feedback immediately
+      if (!strictMode && i.selected_option_id && (mode === 'camp' || mode === 'chill' || mode === 'blindspot')) {
         initialChecked.add(i.question_id)
       }
     })
@@ -68,8 +86,9 @@ export function QuizRenderer({
   })
 
   const [isSaving, setIsSaving] = useState(false)
-  const [countdown, setCountdown] = useState<number | null>(null) // For Storm Mode
-  const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0) // PRD Step 8: intentional friction
+  const [countdown, setCountdown] = useState<number | null>(null)
+  const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0)
+  const [isAutoSubmitting, setIsAutoSubmitting] = useState(false)
   
   const lastSavedRef = useRef<string>(JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) }))
   const startTimeRef = useRef<number>(Date.now())
@@ -77,24 +96,51 @@ export function QuizRenderer({
   const currentQuestion = questions[currentIndex]
   const options = (currentQuestion?.options as unknown as Choice[]) || []
 
-  // PRD Section 5: Storm Mode Timer
+  // Step 2: Auto-submit on focus loss (Strict Mode)
   useEffect(() => {
-    if (mode === 'storm') {
-      const totalSeconds = questions.length * 120 // 2 mins per question average
+    if (!strictMode || session.status === 'completed') return
+
+    const handleFocusLoss = async () => {
+      if (document.visibilityState === 'hidden' || !document.hasFocus()) {
+        setIsAutoSubmitting(true)
+        try {
+          await updateQuizSession(session.session_id, {
+            status: 'completed',
+            completed_at: new Date().toISOString()
+          })
+          // Force refresh or exit to show "cold score"
+          onExit()
+        } catch (error) {
+          console.error('Auto-submit failed:', error)
+        }
+      }
+    }
+
+    window.addEventListener('blur', handleFocusLoss)
+    document.addEventListener('visibilitychange', handleFocusLoss)
+    
+    return () => {
+      window.removeEventListener('blur', handleFocusLoss)
+      document.removeEventListener('visibilitychange', handleFocusLoss)
+    }
+  }, [strictMode, session.session_id, session.status, onExit])
+
+  useEffect(() => {
+    if (strictMode) {
+      const totalSeconds = questions.length * 120
       setCountdown(totalSeconds)
       const timer = setInterval(() => {
         setCountdown(prev => (prev !== null && prev > 0 ? prev - 1 : 0))
       }, 1000)
       return () => clearInterval(timer)
     }
-  }, [mode, questions.length])
+  }, [strictMode, questions.length])
 
-  // PRD Section 3, Step 8: Dwell Time for Camp Mode
   useEffect(() => {
     let timer: any
-    if (checkedQuestions.has(currentQuestion?.question_id) && (mode === 'camp' || mode === 'blindspot')) {
-      const isCorrect = answers[currentQuestion.question_id] === (options.find(o => o.is_correct)?.id || currentQuestion.correct_answer)
-      const dwellTime = isCorrect ? 3 : 5 // PRD says 3s for correct, 5s for incorrect
+    if (!strictMode && checkedQuestions.has(currentQuestion?.question_id) && (mode === 'camp' || mode === 'blindspot')) {
+      const isCorrect = answers[currentQuestion.question_id] === options.find(o => o.is_correct)?.id
+      const dwellTime = isCorrect ? 3 : 5
       setDwellTimeRemaining(dwellTime)
       timer = setInterval(() => {
         setDwellTimeRemaining(prev => {
@@ -107,9 +153,8 @@ export function QuizRenderer({
       }, 1000)
     }
     return () => clearInterval(timer)
-  }, [currentIndex, checkedQuestions, mode])
+  }, [currentIndex, checkedQuestions, mode, strictMode])
 
-  // Auto-save every 10 seconds
   useEffect(() => {
     const interval = setInterval(async () => {
       const currentState = JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) })
@@ -139,7 +184,6 @@ export function QuizRenderer({
           selected_option_id: currentAnswer || null,
           is_correct: selectedOption?.is_correct ?? false,
           time_spent_ms: Date.now() - startTimeRef.current,
-          // Note: added is_flagged to saveInteraction in background logic
         } as any)
       }
       lastSavedRef.current = JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) })
@@ -151,24 +195,20 @@ export function QuizRenderer({
   }, [session.session_id, currentIndex, answers, currentQuestion, options, flaggedQuestions])
 
   const handleChoiceSelect = (choiceId: string) => {
-    if (checkedQuestions.has(currentQuestion.question_id)) return
+    if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
     
-    // Chill Mode: PRD Section 4, Step 3 & Section 8, Scenario B: instant reveal on first tap
     if (mode === 'chill') {
       setAnswers(prev => ({ ...prev, [currentQuestion.question_id]: choiceId }))
       setCheckedQuestions(prev => new Set(prev).add(currentQuestion.question_id))
       handleSave()
       return
     }
-
-    // PRD Section 3, Step 4: Neutral highlight before confirm
     setAnswers((prev) => ({ ...prev, [currentQuestion.question_id]: choiceId }))
   }
 
   const toggleStrikethrough = (choiceId: string, e: React.MouseEvent) => {
     e.stopPropagation()
-    if (checkedQuestions.has(currentQuestion.question_id)) return
-    
+    if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
     setStruckOptions(prev => {
       const currentSet = prev[currentQuestion.question_id] || new Set()
       const next = new Set(currentSet)
@@ -188,6 +228,12 @@ export function QuizRenderer({
   }
 
   const handleCheckAnswer = () => {
+    if (strictMode) {
+      // In Storm mode, "Submit Answer" just saves and moves to next or stays recorded
+      handleSave()
+      handleNext()
+      return
+    }
     setCheckedQuestions((prev) => {
       const next = new Set(prev)
       next.add(currentQuestion.question_id)
@@ -201,6 +247,24 @@ export function QuizRenderer({
       setCurrentIndex((prev) => prev + 1)
       startTimeRef.current = Date.now()
       setDwellTimeRemaining(0)
+    } else if (strictMode) {
+      // Final question in Storm mode
+      handleFinalSubmit()
+    }
+  }
+
+  const handleFinalSubmit = async () => {
+    setIsSaving(true)
+    try {
+      await updateQuizSession(session.session_id, {
+        status: 'completed',
+        completed_at: new Date().toISOString()
+      })
+      onExit()
+    } catch (error) {
+      console.error('Final submit failed:', error)
+    } finally {
+      setIsSaving(false)
     }
   }
 
@@ -212,15 +276,17 @@ export function QuizRenderer({
     }
   }
 
-  const isChecked = checkedQuestions.has(currentQuestion.question_id)
+  if (!currentQuestion) {
+    return (
+      <div className='flex min-h-screen items-center justify-center px-6'>
+        <p className='text-zinc-500'>No questions in this session.</p>
+      </div>
+    )
+  }
+
+  const isChecked = !strictMode && checkedQuestions.has(currentQuestion.question_id)
   const selectedAnswer = answers[currentQuestion.question_id]
   const isFlagged = flaggedQuestions.has(currentQuestion.question_id)
-
-  const isCorrectChoice = (option: any) => {
-    if (option.is_correct === true || option.isCorrect === true) return true
-    if (currentQuestion.correct_answer === option.id) return true
-    return false
-  }
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -228,15 +294,29 @@ export function QuizRenderer({
     return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
-  // PRD Section 8 rules
-  const showWrongVisual = mode !== 'chill' && mode !== 'storm' && mode !== 'proof_sim'
-  const isStormOrProof = mode === 'storm' || mode === 'proof_sim'
+  // Decisions Step 1: Pacing Alert inline with timer
+  const isAheadOfPace = useMemo(() => {
+    const elapsed = (questions.length * 120) - (countdown || 0)
+    const expected = (currentIndex + 1) * 120
+    return elapsed < expected
+  }, [countdown, currentIndex, questions.length])
 
   return (
     <div className={cn(
       'flex flex-col min-h-screen max-w-5xl mx-auto px-6 py-8 gap-6 transition-colors duration-500',
-      isStormOrProof ? 'bg-zinc-50/50' : 'bg-white'
+      strictMode ? 'bg-zinc-50/50' : 'bg-white'
     )}>
+      {/* Auto-submit overlay */}
+      {isAutoSubmitting && (
+        <div className="fixed inset-0 z-50 bg-white/80 backdrop-blur-sm flex items-center justify-center">
+          <div className="bg-white p-8 rounded-3xl shadow-2xl border border-zinc-200 text-center space-y-4">
+            <AlertTriangle className="h-12 w-12 text-red-600 mx-auto animate-pulse" />
+            <h2 className="text-2xl font-bold text-zinc-900">Integrity Violation</h2>
+            <p className="text-zinc-500 max-w-xs">Focus lost during Storm Mode. Session is being automatically submitted.</p>
+          </div>
+        </div>
+      )}
+
       {/* 1. Top Bar - Mode & Progress */}
       <div className='space-y-4'>
         <div className='flex justify-between items-center'>
@@ -244,7 +324,7 @@ export function QuizRenderer({
              <div className={cn(
                'px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-widest',
                mode === 'camp' && 'bg-teal-100 text-teal-700',
-               isStormOrProof && 'bg-red-100 text-red-700',
+               strictMode && 'bg-red-100 text-red-700',
                mode === 'chill' && 'bg-blue-100 text-blue-700',
                mode === 'blindspot' && 'bg-amber-100 text-amber-700',
              )}>
@@ -256,20 +336,47 @@ export function QuizRenderer({
           </div>
           
           <div className='flex items-center gap-4'>
-            {(isStormOrProof) && countdown !== null && (
+            {(strictMode) && countdown !== null && (
               <div className={cn(
-                'flex items-center gap-2 font-mono font-bold text-sm',
-                countdown < 300 ? 'text-red-500 animate-pulse' : 'text-zinc-600'
+                'flex flex-col items-end gap-0.5'
               )}>
-                <Timer className='h-4 w-4' />
-                {formatTime(countdown)}
+                <div className={cn(
+                  'flex items-center gap-2 font-mono font-bold text-sm',
+                  countdown < 300 ? 'text-red-500 animate-pulse' : 'text-zinc-600'
+                )}>
+                  <Timer className='h-4 w-4' />
+                  {formatTime(countdown)}
+                </div>
+                {/* Decisions Step 1: Inline Pacing Alert */}
+                <span className={cn(
+                  'text-[8px] font-black uppercase tracking-tighter px-1 rounded',
+                  isAheadOfPace ? 'text-emerald-600 bg-emerald-50' : 'text-amber-600 bg-amber-50'
+                )}>
+                  {isAheadOfPace ? 'Ahead of Pace' : 'Behind Pace'}
+                </span>
               </div>
             )}
-            {isSaving && (
-              <span className='text-[9px] font-bold text-zinc-300 uppercase tracking-widest animate-pulse'>
-                Syncing...
-              </span>
-            )}
+            
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="ghost" size="sm" className="h-8 text-zinc-400 hover:text-red-600 font-bold text-[10px] uppercase tracking-widest">
+                  <X className="h-3 w-3 mr-1" />
+                  Exit Exam
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Exit exam?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Your progress in this session will be lost. Are you sure you want to exit?
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Keep going</AlertDialogCancel>
+                  <AlertDialogAction onClick={onExit} className="bg-red-600 hover:bg-red-700">Exit exam</AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
           </div>
         </div>
         
@@ -277,7 +384,7 @@ export function QuizRenderer({
           <motion.div
             className={cn(
               'h-full transition-colors',
-              mode === 'camp' ? 'bg-teal-500' : isStormOrProof ? 'bg-red-500' : 'bg-blue-500'
+              mode === 'camp' ? 'bg-teal-500' : strictMode ? 'bg-red-500' : 'bg-blue-500'
             )}
             initial={{ width: 0 }}
             animate={{
@@ -289,22 +396,22 @@ export function QuizRenderer({
 
       {/* 2. Main Question Card */}
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-start'>
-        
-        {/* Left Content Area (8 cols) */}
         <div className='lg:col-span-8 space-y-6'>
-          {/* Question Text */}
           <div className='bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm'>
             <h2 className='text-xl md:text-2xl font-semibold text-zinc-900 leading-[1.4] tracking-tight mb-8'>
               {currentQuestion.text}
             </h2>
 
-            {/* Options Grid */}
             <div className='flex flex-col gap-3'>
               {options.map((option, idx) => {
                 const isSelected = selectedAnswer === option.id
-                const isCorrect = isCorrectChoice(option)
+                const isCorrect = option.is_correct === true
                 const isStruck = struckOptions[currentQuestion.question_id]?.has(option.id)
                 const letter = String.fromCharCode(65 + idx)
+
+                // If checked, we highlight (Non-strict modes only)
+                const showCorrect = isChecked && isCorrect
+                const showWrong = isChecked && isSelected && !isCorrect
 
                 return (
                   <button
@@ -313,29 +420,17 @@ export function QuizRenderer({
                     onClick={() => handleChoiceSelect(option.id)}
                     className={cn(
                       'flex items-center gap-4 p-5 rounded-xl border text-left transition-all duration-200 group min-h-[64px] relative overflow-hidden',
-                      // NORMAL state
                       !isChecked && !isSelected && 'bg-white border-zinc-200 hover:border-zinc-400 hover:shadow-md',
-                      // SELECTED state (pre-check)
                       !isChecked && isSelected && 'bg-zinc-900 border-zinc-900 text-white shadow-lg',
-                      // STRETCHED state
                       !isChecked && isStruck && 'opacity-40 grayscale-[80%]',
 
-                      // CHECKED states (PRD Section 8)
-                      // Chill: Soft reveal, no red
-                      isChecked && mode === 'chill' && isCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500',
-                      isChecked && mode === 'chill' && isSelected && !isCorrect && 'bg-zinc-50 border-zinc-300 text-zinc-500',
+                      // Styling states (Feedback suppressed in strictMode)
+                      showCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500 font-semibold',
+                      showWrong && 'bg-red-50 border-red-500 text-red-900 ring-1 ring-red-500',
                       
-                      // Camp/Blindspot: Full Misconception Confrontation
-                      isChecked && mode !== 'chill' && !isStormOrProof && isCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500 font-semibold',
-                      isChecked && mode !== 'chill' && !isStormOrProof && isSelected && !isCorrect && 'bg-red-50 border-red-500 text-red-900 ring-1 ring-red-500',
-                      
-                      // Storm/Proof: Only show recorded state
-                      isChecked && isStormOrProof && isSelected && 'bg-zinc-900 border-zinc-900 text-white shadow-lg',
-                      
-                      isChecked && !isStormOrProof && !isCorrect && !isSelected && 'bg-white border-zinc-100 opacity-40 grayscale-[50%]',
+                      isChecked && !isCorrect && !isSelected && 'bg-white border-zinc-100 opacity-40 grayscale-[50%]',
                     )}
                   >
-                    {/* Strikethrough line */}
                     {isStruck && !isChecked && (
                       <div className='absolute inset-0 flex items-center px-4 pointer-events-none'>
                         <div className='w-full h-[2px] bg-zinc-400/50' />
@@ -347,10 +442,8 @@ export function QuizRenderer({
                       !isChecked && !isSelected && 'bg-zinc-50 border-zinc-200 text-zinc-400',
                       !isChecked && isSelected && 'bg-white/20 border-white/20 text-white',
                       
-                      // Feedback colors (PRD Section 8)
-                      isChecked && !isStormOrProof && isCorrect && 'bg-emerald-500 border-emerald-400 text-white',
-                      isChecked && showWrongVisual && isSelected && !isCorrect && 'bg-red-500 border-red-400 text-white',
-                      isChecked && isStormOrProof && isSelected && 'bg-white/20 border-white/20 text-white',
+                      showCorrect && 'bg-emerald-500 border-emerald-400 text-white',
+                      showWrong && 'bg-red-500 border-red-400 text-white',
                     )}>
                       {letter}
                     </div>
@@ -359,18 +452,19 @@ export function QuizRenderer({
                       {option.text}
                     </span>
 
-                    {/* Arsenal: Strikethrough Tool (Step 3) */}
                     {!isChecked && (
-                      <button 
+                      <span
+                        role='button'
+                        tabIndex={0}
                         onClick={(e) => toggleStrikethrough(option.id, e)}
                         className='p-2 rounded-lg hover:bg-zinc-100 text-zinc-300 hover:text-zinc-600 transition-colors'
                       >
                         <Delete className='h-4 w-4' />
-                      </button>
+                      </span>
                     )}
 
-                    {isChecked && !isStormOrProof && isCorrect && <Check className='h-5 w-5 text-emerald-600' strokeWidth={3} />}
-                    {isChecked && showWrongVisual && isSelected && !isCorrect && <AlertCircle className='h-5 w-5 text-red-600' strokeWidth={3} />}
+                    {showCorrect && <Check className='h-5 w-5 text-emerald-600' strokeWidth={3} />}
+                    {showWrong && <XCircle className='h-5 w-5 text-red-600' strokeWidth={3} />}
                   </button>
                 )
               })}
@@ -378,9 +472,7 @@ export function QuizRenderer({
           </div>
         </div>
 
-        {/* Right Sidebar / Arsenal (4 cols) */}
         <div className='lg:col-span-4 space-y-6'>
-          {/* Arsenal Card */}
           <div className='bg-zinc-900 rounded-2xl p-6 text-white shadow-xl shadow-zinc-200/50 space-y-6'>
              <div className='flex items-center justify-between'>
                 <h3 className='text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500'>The Arsenal</h3>
@@ -408,7 +500,6 @@ export function QuizRenderer({
                 </Button>
              </div>
 
-             {/* Mode Action Button */}
              <div className='pt-4 border-t border-white/10'>
                 {mode !== 'chill' && !isChecked ? (
                   <Button
@@ -416,7 +507,7 @@ export function QuizRenderer({
                     disabled={!selectedAnswer}
                     className='w-full h-14 bg-white text-zinc-900 hover:bg-zinc-100 font-black rounded-xl text-sm shadow-lg'
                   >
-                    Submit Answer
+                    {strictMode ? 'Record & Next' : 'Submit Answer'}
                   </Button>
                 ) : (
                   <Button
@@ -442,9 +533,8 @@ export function QuizRenderer({
              </div>
           </div>
 
-          {/* Feedback Section (Mode-aware) */}
           <AnimatePresence>
-            {isChecked && !isStormOrProof && (
+            {isChecked && (
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -467,7 +557,6 @@ export function QuizRenderer({
                         'text-sm leading-relaxed font-medium',
                         mode === 'chill' ? 'text-zinc-600' : 'text-zinc-700'
                       )}>
-                        {/* Scenario A: Wrong in Camp - Misconception Confrontation */}
                         {mode !== 'chill' && selectedAnswer !== options.find(o => o.is_correct)?.id && options.find(o => o.id === selectedAnswer)?.rationale && (
                            <span className='block mb-3 pb-3 border-b border-zinc-200 italic text-zinc-500'>
                              <span className='font-bold text-red-500 uppercase text-[9px] mr-2'>Common Misconception:</span>
@@ -475,7 +564,6 @@ export function QuizRenderer({
                            </span>
                         )}
                         
-                        {/* Scenario B: Wrong in Chill - Gentle tone */}
                         {mode === 'chill' && selectedAnswer !== options.find(o => o.is_correct)?.id && (
                           <span className='italic block mb-2'>"Not quite — this one trips people up. The key thing to remember is..."</span>
                         )}
@@ -507,7 +595,6 @@ export function QuizRenderer({
         </div>
       </div>
 
-      {/* Navigator & Back */}
       <div className='mt-auto pt-8 flex items-center justify-between'>
         <Button
           variant='ghost'

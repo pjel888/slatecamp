@@ -12,10 +12,9 @@ const _g = globalThis as unknown as { __cerebro_demo_store?: Map<string, Row[]> 
 const _store: Map<string, Row[]> = (_g.__cerebro_demo_store ??= new Map());
 
 function getRows(table: string): Row[] {
-  if (!_store.has(table)) {
-    _store.set(table, [...(getDemoDataForTable(table) as Row[])]);
-  }
-  return _store.get(table)!;
+  // Always return fresh data from data.ts instead of caching in globalThis.
+  // This allows changes to data.ts to take effect immediately.
+  return [...(getDemoDataForTable(table) as Row[])];
 }
 
 function addRow(table: string, row: Row): Row {
@@ -272,6 +271,7 @@ class MockStorageBucket {
 
 export function createMockSupabaseClient() {
   return {
+    isMockClient: true,
     auth: {
       getUser: () => Promise.resolve({
         data: { user: { ...DEMO_USER } as unknown },

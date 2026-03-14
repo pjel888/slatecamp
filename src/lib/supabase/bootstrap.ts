@@ -1,17 +1,17 @@
 "use server";
 
 import { createAdminClient } from "@/lib/supabase/admin";
+import { isDemoMode } from "@/lib/demo/config";
 
 /**
- * Bootstraps a user by ensuring they have necessary records in the new schema:
- * 1. user_subscriptions (tier: 'free')
- * 2. user_global_stats
- * 
- * Call this when the user is authenticated.
+ * Bootstraps a user by ensuring they have necessary records in the new schema.
+ * No-op in demo mode.
  */
 export async function bootstrapUser(
   userId: string
 ): Promise<void> {
+  if (isDemoMode()) return;
+
   const admin = createAdminClient();
 
   // 1. Ensure user_subscriptions exists

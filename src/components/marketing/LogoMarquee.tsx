@@ -61,8 +61,6 @@ export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
         {logos.map((partner, i) => (
           <span
             key={`${partner.name}-${i}`}
-            className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className}`}
-            style={{ color: dark ? '#fff' : undefined }}
             className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className} ${
               dark ? 'text-white' : 'text-zinc-900'
             }`}

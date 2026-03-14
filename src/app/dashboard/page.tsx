@@ -23,8 +23,8 @@ const DashboardPage = async () => {
         {/* Left column — macro mastery + taxonomy */}
         <div className='flex flex-1 flex-col gap-2'>
           <ReadinessScore
-            value={readinessMock.value}
-            trend={readinessMock.trend}
+            score={readinessMock.value}
+            previousScore={62} // Mocking a previous score to maintain the 'up' trend
           />
         </div>
 

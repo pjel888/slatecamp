@@ -276,20 +276,19 @@ export const Sidebar = ({
                     {displayName}
                   </p>
                 </div>
-              </Link>
-            </TooltipTrigger>
-            {collapsed && (
-              <TooltipContent
+                </Link>
+                </TooltipTrigger>
+                {collapsed && (
+                <TooltipContent
                 side='right'
                 sideOffset={12}
                 className='bg-slatecamp-ink-main text-slatecamp-paper font-medium text-xs'
-              >
+                >
                 {displayName} (Settings)
-              </TooltipContent>
-            )}
-          </Tooltip>
-        </div>
-
+                </TooltipContent>
+                )}
+                </Tooltip>
+                </div>
         {/* Tier & Plan Area */}
         <div className='border-b border-zinc-200 py-3'>
           <div className='flex items-center justify-start gap-3 px-2'>

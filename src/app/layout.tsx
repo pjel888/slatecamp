@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { DemoShell } from '@/components/dev/demo-shell'
 import { NavigationProgress } from '@/components/shared/NavigationProgress'
+import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
 const geistSans = Geist({
@@ -57,6 +58,7 @@ export default function RootLayout({
             {children}
             {isDemo && <DemoShell />}
           </TooltipProvider>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import * as React from 'react'
 import type { TocHeading } from '@/lib/wiki-markdown'
 
 interface WikiTableOfContentsProps {
@@ -8,11 +8,11 @@ interface WikiTableOfContentsProps {
 }
 
 export function WikiTableOfContents({ headings }: WikiTableOfContentsProps) {
-  const [activeId, setActiveId] = useState<string | null>(null)
-  const observerRef = useRef<IntersectionObserver | null>(null)
-  const suppressObserverRef = useRef(false)
+  const [activeId, setActiveId] = React.useState<string | null>(null)
+  const observerRef = React.useRef<IntersectionObserver | null>(null)
+  const suppressObserverRef = React.useRef(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     observerRef.current = new IntersectionObserver(
       (entries) => {
         if (suppressObserverRef.current) return

@@ -4,6 +4,8 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 
+import { Discipline } from '@/types/app'
+
 export default async function OnboardingPage() {
   const supabase = await createClient()
   const {
@@ -65,7 +67,7 @@ export default async function OnboardingPage() {
 
         <form action={selectDiscipline} className='mt-8 space-y-4'>
           <div className='space-y-2'>
-            {disciplines?.map((discipline) => (
+            {disciplines?.map((discipline: Discipline) => (
               <label
                 key={discipline.discipline_id}
                 className='flex items-center justify-between p-4 rounded-xl border border-zinc-200 hover:border-blue-500 hover:bg-blue-50/50 cursor-pointer transition-all group'

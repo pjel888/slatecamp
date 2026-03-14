@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { hasAuthCookie } from '@/lib/supabase/server'
 import { HeroSection } from '@/components/marketing/HeroSection'
 import { MarketingNav } from '@/components/marketing/MarketingNav'
@@ -14,6 +15,8 @@ import { Starburst } from '@/components/marketing/LandingPrimitives'
 import { ROUTES, siteConfig } from '@/lib/constants'
 
 /* ── SEO Metadata ── */
+
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} — AI-Adaptive Architecture Board Exam Prep`,
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function LandingPage() {
+async function LandingPageContent() {
   const hasSessionCookie = await hasAuthCookie()
   const isLoggedIn = hasSessionCookie
 
@@ -109,5 +112,58 @@ export default async function LandingPage() {
       {/* ────────────────────── FOOTER ────────────────────── */}
       <MarketingFooter />
     </div>
+  )
+}
+
+function LandingPageFallback() {
+  return (
+    <div id='top' className='min-h-screen bg-zinc-100'>
+      <MarketingNav activeRoute='/' logoScrollsToTop />
+      <main>
+        <HeroSection
+          ctaHref={ROUTES.REGISTER}
+          ctaLabel='Join the Camp — Free'
+          isLoggedIn={false}
+        />
+        <SocialProofBar />
+        <LogoMarquee />
+        <BentoFeatureGrid />
+        <HowItWorksSection />
+        <PhilosophySection />
+        <section
+          aria-labelledby='testimonials-heading'
+          className='border-t border-zinc-200 px-6 py-24'
+        >
+          <div className='mx-auto max-w-[1200px]'>
+            <div className='flex items-center gap-3'>
+              <span className='text-amber-600'>
+                <Starburst className='h-4 w-4' />
+              </span>
+              <h2
+                id='testimonials-heading'
+                className='font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500'
+              >
+                What Students Say
+              </h2>
+            </div>
+            <TestimonialShowcase />
+          </div>
+        </section>
+        <FinalCtaSection
+          ctaHref={ROUTES.REGISTER}
+          ctaLabel='Join the Camp — Free'
+          isLoggedIn={false}
+        />
+      </main>
+      <MarketingFooter />
+    </div>
+  )
+}
+
+export default function LandingPage() {
+  return (
+    <Suspense fallback={<LandingPageFallback />}>
+      <LandingPageContent />
+    </Suspense>
   )
 }

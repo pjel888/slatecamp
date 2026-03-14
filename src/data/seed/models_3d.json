@@ -1,0 +1,16 @@
+[
+  {
+    "model_id": "99999999-9999-4999-a999-999999999999",
+    "name": "The Parthenon",
+    "slug": "greek-parthenon",
+    "url": "https://pub-8cfdf823528b4754a757d00162e85e3b.r2.dev/parthenon.glb",
+    "thumbnail": null,
+    "parameters": [
+      { "name": "column_count", "label": "Column Count", "min_value": 6, "max_value": 12, "default_val": 8, "step": 1 },
+      { "name": "stylobate_width", "label": "Base Width", "min_value": 20, "max_value": 40, "default_val": 30.9, "step": 0.1, "unit": "m" }
+    ],
+    "hotspots": [
+      { "title": "Entablature", "description": "The upper part of a classical order.", "position": [0, 5, 0], "node_id": "33333333-3333-4333-a333-333333333333" }
+    ]
+  }
+]

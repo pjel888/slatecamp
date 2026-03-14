@@ -2,9 +2,10 @@
 
 import { createBrowserClient } from "@supabase/ssr";
 import { createMockSupabaseClient } from "@/lib/demo/mock-supabase";
+import { isDemoMode } from "@/lib/demo/config";
 
 export function createClient() {
-  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+  if (isDemoMode()) {
     return createMockSupabaseClient() as ReturnType<typeof createBrowserClient>;
   }
 

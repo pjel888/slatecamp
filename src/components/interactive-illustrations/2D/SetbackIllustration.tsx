@@ -19,7 +19,13 @@ const RT = 52,
 const LT = RT + RH
 const LH = 310
 
-function SetbackSVG({ config }) {
+interface SetbackConfig {
+  label: string
+  rrow: string
+  front: number
+}
+
+function SetbackSVG({ config }: { config: SetbackConfig }) {
   const fp = config.front * SC
   const sp = SIDE * SC
   const rp = REAR * SC
@@ -456,7 +462,7 @@ export default function PHBuildingSetbacks() {
   const fp = config.front * SC
   const bh = LH - fp - REAR * SC
 
-  const styles = {
+  const styles: Record<string, any> = {
     wrapper: {
       fontFamily: 'system-ui, -apple-system, sans-serif',
       maxWidth: 720,
@@ -485,7 +491,7 @@ export default function PHBuildingSetbacks() {
       flexWrap: 'wrap',
       marginBottom: '1.25rem',
     },
-    btn: (active) => ({
+    btn: (active: boolean) => ({
       padding: '7px 13px',
       fontSize: 13,
       borderRadius: 8,

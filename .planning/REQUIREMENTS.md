@@ -1,56 +1,38 @@
-# REQUIREMENTS: SlateCamp (The Big Six)
+# REQUIREMENTS: SlateCamp (The Core System)
 
 ## 🏗️ 1. SlateCamp Wiki (CMS & Source of Truth)
-
 - **Markdown Powered:** SME content stored as Markdown (`wiki_articles`).
-- **Omnibar Search:** Global Cmd+K search via `cmdk` package.
-- **Wayfinding:** Sticky ToC with scroll-tracking highlight.
-- **Zero-Switching:** Peek-View hover for internal references.
-- **Aesthetic:** Apple HIG — clean typography, generous whitespace, high legibility.
+- **Taxonomy Mapped:** Every article linked to a specific syllabus node.
+- **Sticky Navigation:** Auto-generated Table of Contents for long-form codes.
 
-## 🧠 2. Adaptive Quiz Engine (Diagnostics)
+## 🧠 2. Advanced Quizzing (Adaptive Engine)
+- **Camp Mode:** Learning-first with instant feedback and rationales.
+- **Storm Mode:** Strict timed simulation with focus-loss auto-submit.
+- **Algorithmically Driven:** IRT (difficulty) + EMA (mastery) + Spaced Repetition.
 
-- **Dual Modes:** 
-  - `Camp Mode`: Instant feedback, rationales, untimed.
-  - `Storm Mode`: Strict timer, no feedback until submit, no tab-switching.
-- **IRT Weighting:** Difficulty parameters (b-parameter) for weighted scoring.
-- **State Persistence:** 10-second auto-save to `quiz_sessions`.
-- **Offline Resilience:** JSON payload delivered upfront for low-connectivity environments.
-- **Lucky Guess Detection:** Flagging correct answers with <P10 response times.
+## 📐 3. The 3D Lab (Spatial Learning)
+- **R3F Engine:** Parametric building code visualization.
+- **X-Ray / Layer Stripping:** Visualise structural connections and MEP routing.
+- **Data-Backed Assets:** 3D models stored with metadata mapping to syllabus nodes.
 
-## 📝 3. Personal Notes (The Synthesis Ledger)
+## 📈 4. Analytics & Readiness
+- **Readiness Score™:** predictive percentage based on EMA performance.
+- **Taxonomy Heatmap:** Visual mastery mapping across all subjects.
+- **Pacing Metrics:** Tracking speed vs. board exam standard pace.
 
-- **Block Editor:** TipTap integration (`@tiptap/react`).
-- **Source Badges:** "Send to Camp" from Wiki/Quiz; automatic taxonomy inheritance.
-- **Split-Pane View:** Dynamic sidebar for note-taking alongside content.
-- **Resurfacing:** flagging unreviewed notes (`viewed_at = NULL`).
+## 📝 5. Notes & Synthesis
+- **Personal Workspace:** TipTap-powered knowledge ledger.
+- **Capture Logic:** One-tap "Save to Notes" from Wiki or Quizzes.
+- **Deep Linking:** Automatic back-links from notes to the source reference.
 
-## 📐 4. Interactive 3D Lab (Spatial Engine)
+## 🛠️ 6. The Control Room (Admin Ops)
+- **Role-Based Access:** Restricted dashboard for SMEs and Admins.
+- **Content CRUD:** visual managers for Questions, Wiki Articles, and 3D Assets.
+- **Bulk Operations:** CSV/JSON import/export for rapid question bank updates.
+- **Audit Traceability:** History of all content changes by admin users.
 
-- **Parametric Sandbox:** R3F (`@react-three/fiber`) parametric modelers.
-- **Zoning Engine:** Slider-driven feedback on lot setbacks and building codes.
-- **X-Ray / Cutaway:** Layer-stripping via slider for structural visualization.
-- **Performance:** Draco-compressed GLB assets; 60 FPS target.
-
-## 🤖 5. AI Contextual Tutor (Zero-Hallucination RAG)
-
-- **Closed-Loop RAG:** Embedding corpus restricted strictly to SlateCamp Wiki.
-- **Citation Badges:** Every response MUST link to a Wiki paragraph.
-- **Strict Temperature:** LLM set to 0.0 for maximum literalness.
-- **Double-Pass Audit:** Auditor LLM check for halluncinated numbers/dates.
-
-## 📊 6. Analytics Dashboard (Readiness Score)
-
-- **Taxonomy Heatmap:** Color-coded status (🟢 >85%, 🟡 60-84%, 🔴 <59%).
-- **Readiness Score:** EMA (Exponential Moving Average) based global readiness.
-- **Pressure Gap:** Analytics on Camp vs. Storm mode delta.
-- **Node Inspector:** Time-series tracking for individual syllabus nodes.
-
----
-
-## 🔐 Technical Requirements
-
-- **Supabase Backend:** PostgreSQL, Auth, RLS, Storage, pgvector.
-- **Performance:** <1.5s LCP on 3G/4G connections.
-- **Multi-Tenant Isolation:** RLS policies on ALL user-specific tables.
-- **Universal Scale:** Horizontal scaling via the `disciplines` table.
+## 🚀 7. Infrastructure & Scale
+- **Database-Feature Contract:** Every feature must ship with schema and seed data.
+- **Supabase Stack:** Auth, RLS, Storage, pgvector (AI RAG).
+- **Dual Payments:** Stripe + PayRex (Philippine-local gateways).
+- **Automated Lifecycle:** CLI-driven re-seeds and environment parity.

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { TestingHub } from '@/components/dashboard/TestingHub'
 import { QuizRenderer } from '@/components/dashboard/QuizRenderer'
+import { ModeIntroScreen } from '@/components/dashboard/ModeIntroScreen'
 import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore } from '@/lib/actions/quiz'
 import type { QuizSession, Question, TaxonomyNode, TestMode } from '@/types/app'
 import { useRouter, useSearchParams } from 'next/navigation'
@@ -14,6 +15,8 @@ interface CampDashboardProps {
   allQuestionIds: string[]
 }
 
+type ViewState = 'hub' | 'intro' | 'quiz'
+
 export function CampDashboard({ 
   initialSession, 
   disciplineId, 
@@ -24,10 +27,19 @@ export function CampDashboard({
   const [session, setSession] = useState<QuizSession | null>(initialSession)
   const [questions, setQuestions] = useState<Question[]>([])
   const [interactions, setInteractions] = useState<any[]>([])
-  const [view, setView] = useState<'hub' | 'quiz'>('hub')
+  const [view, setView] = useState<ViewState>('hub')
   const [loading, setLoading] = useState(false)
   const [instantFeedback, setInstantFeedback] = useState(true)
   const [readinessScore, setReadinessScore] = useState(0)
+  
+  // Bug 3: Store config during orientation
+  const [pendingConfig, setPendingConfig] = useState<{
+    mode: string,
+    count: number,
+    subjectIds?: string[],
+    instantFeedback?: boolean
+  } | null>(null)
+
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -43,40 +55,47 @@ export function CampDashboard({
     }
   }, [searchParams])
 
-  const handleStartSession = async (config: { 
+  // Bug 3: Interstitial Intro Logic
+  const handleStartSession = (config: { 
     mode: string, 
     subjectIds?: string[], 
     count?: number, 
     instantFeedback?: boolean 
   }) => {
+    setPendingConfig({
+      mode: config.mode,
+      count: config.count || (config.mode === 'proof_sim' ? 100 : 10),
+      subjectIds: config.subjectIds,
+      instantFeedback: config.instantFeedback
+    })
+    setView('intro')
+  }
+
+  const confirmStartSession = async () => {
+    if (!pendingConfig) return
+    
     setLoading(true)
     try {
-      // If there's an existing session, delete it first to start fresh
       if (session) {
         await deleteQuizSession(session.session_id)
       }
 
-      // 1. Filter and pick questions
-      // For now, we'll just shuffle all and take 'count' (default 5 for Camp)
-      const count = config.count || 5
       const shuffled = [...allQuestionIds].sort(() => 0.5 - Math.random())
-      const selectedIds = shuffled.slice(0, count)
+      const selectedIds = shuffled.slice(0, pendingConfig.count)
 
-      // 2. Create the session
       const newSession = await createQuizSession({
         discipline_id: disciplineId,
-        test_mode: config.mode as TestMode,
+        test_mode: pendingConfig.mode as TestMode,
         question_ids: selectedIds,
-        subject_ids: config.subjectIds
+        subject_ids: pendingConfig.subjectIds
       })
 
-      // 3. Prepare data
       const [qData, iData] = await Promise.all([
         getSessionQuestions(newSession.question_ids),
         getSessionInteractions(newSession.session_id)
       ])
 
-      setInstantFeedback(config.instantFeedback !== false)
+      setInstantFeedback(pendingConfig.instantFeedback !== false)
       setSession(newSession)
       setQuestions(qData)
       setInteractions(iData)
@@ -85,6 +104,7 @@ export function CampDashboard({
       console.error('Failed to start session:', error)
     } finally {
       setLoading(false)
+      setPendingConfig(null)
     }
   }
 
@@ -104,6 +124,14 @@ export function CampDashboard({
     } finally {
       setLoading(false)
     }
+  }
+
+  // Bug 1: Exit handler passed to QuizRenderer
+  const handleExitQuiz = () => {
+    setView('hub')
+    setSession(null)
+    setQuestions([])
+    setInteractions([])
   }
 
   if (loading) {
@@ -127,13 +155,25 @@ export function CampDashboard({
     )
   }
 
+  if (view === 'intro' && pendingConfig) {
+    return (
+      <ModeIntroScreen 
+        mode={pendingConfig.mode as TestMode}
+        questionCount={pendingConfig.count}
+        onStart={confirmStartSession}
+        onBack={() => setView('hub')}
+      />
+    )
+  }
+
   return (
     <div className="w-full h-full bg-zinc-50 overflow-y-auto">
       {session && (
         <QuizRenderer 
           session={session} 
           questions={questions} 
-          initialInteractions={interactions} 
+          initialInteractions={interactions}
+          onExit={handleExitQuiz}
         />
       )}
     </div>

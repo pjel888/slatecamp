@@ -6,80 +6,70 @@ import { sessionIdSchema } from "@/lib/validations";
 
 export type SessionActionResult = { error?: string };
 
+/**
+ * Closes a session by marking it abandoned.
+ * Refactored for Phase 3 schema (quiz_sessions).
+ */
 export async function closeSession(sessionId: string): Promise<SessionActionResult> {
-  // Validate input
   const parseResult = sessionIdSchema.safeParse({ sessionId });
   if (!parseResult.success) {
     return { error: "Invalid session ID format" };
   }
 
   const { sessionId: validSessionId } = parseResult.data;
-
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await getUser();
+  const { data: { user } } = await getUser();
   if (!user) return { error: "Not authenticated" };
 
   const { data: session } = await supabase
-    .from("review_sessions")
-    .select("id, status")
-    .eq("id", validSessionId)
+    .from("quiz_sessions")
+    .select("session_id, status")
+    .eq("session_id", validSessionId)
     .eq("user_id", user.id)
     .single();
 
   if (!session) return { error: "Session not found" };
-  if (session.status !== "in_progress" && session.status !== "paused") {
+  if (session.status !== "in_progress") {
     return { error: "Session is not in progress" };
   }
 
   const { error } = await supabase
-    .from("review_sessions")
+    .from("quiz_sessions")
     .update({
       status: "abandoned",
-      completed_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
     })
-    .eq("id", validSessionId)
+    .eq("session_id", validSessionId)
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath("/dashboard/sessions");
+  revalidatePath("/dashboard/testing");
   revalidatePath("/dashboard");
   return {};
 }
 
+/**
+ * Deletes a quiz session.
+ */
 export async function deleteSession(sessionId: string): Promise<SessionActionResult> {
-  // Validate input
   const parseResult = sessionIdSchema.safeParse({ sessionId });
   if (!parseResult.success) {
     return { error: "Invalid session ID format" };
   }
 
   const { sessionId: validSessionId } = parseResult.data;
-
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await getUser();
+  const { data: { user } } = await getUser();
   if (!user) return { error: "Not authenticated" };
 
-  const { data: session } = await supabase
-    .from("review_sessions")
-    .select("id")
-    .eq("id", validSessionId)
-    .eq("user_id", user.id)
-    .single();
-
-  if (!session) return { error: "Session not found" };
-
   const { error } = await supabase
-    .from("review_sessions")
+    .from("quiz_sessions")
     .delete()
-    .eq("id", validSessionId)
+    .eq("session_id", validSessionId)
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath("/dashboard/sessions");
+  revalidatePath("/dashboard/testing");
   revalidatePath("/dashboard");
   return {};
 }

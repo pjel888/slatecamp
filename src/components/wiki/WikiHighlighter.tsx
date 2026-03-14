@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import * as React from 'react'
 import { useSearchParams } from 'next/navigation'
 
 /**
@@ -11,7 +11,7 @@ export function WikiHighlighter() {
   const searchParams = useSearchParams()
   const highlight = searchParams.get('highlight')
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!highlight) return
 
     // Small delay to ensure MDX content is fully rendered in the DOM

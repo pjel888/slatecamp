@@ -1,0 +1,402 @@
+[
+  {
+    "question_id": "q1-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "Which of the following is the primary advantage of a post-tensioned concrete slab over a conventionally reinforced slab?",
+    "options": [
+      { "id": "a", "text": "Lower material cost", "is_correct": false, "rationale": "Post-tensioning often uses higher-grade steel which can be more expensive per unit." },
+      { "id": "b", "text": "Faster curing time", "is_correct": false, "rationale": "Curing time is primarily dependent on the concrete mix design, not the reinforcement method." },
+      { "id": "c", "text": "Reduced slab thickness and longer spans", "is_correct": true, "rationale": "Correct. Post-tensioning compresses the slab, allowing it to support higher loads with less depth." },
+      { "id": "d", "text": "No need for formwork", "is_correct": false, "rationale": "Formwork is still required for post-tensioned slabs." }
+    ],
+    "rationale": "Post-tensioning allows for significantly thinner slabs and longer clear spans by actively compressing the concrete to counteract tensile stresses.",
+    "difficulty": 0.6,
+    "difficulty_rating": 0.5,
+    "discrimination_rating": 1.2,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q2-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "Under RA 9266, what is the minimum number of years of diversified experience required before taking the licensure exam?",
+    "options": [
+      { "id": "a", "text": "1 year", "is_correct": false, "rationale": "One year is insufficient under the current law." },
+      { "id": "b", "text": "2 years", "is_correct": true, "rationale": "Correct. Section 13(c) requires a 2-year diversified experience period." },
+      { "id": "c", "text": "3 years", "is_correct": false, "rationale": "While more is better, the legal minimum is 2 years." },
+      { "id": "d", "text": "5 years", "is_correct": false, "rationale": "5 years is not the requirement for the ALE." }
+    ],
+    "rationale": "RA 9266 (The Architecture Act of 2004) specifies a minimum of two years of diversified architectural experience.",
+    "difficulty": 0.3,
+    "difficulty_rating": -0.5,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q3-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "In vertical transportation, what is the function of a 'governor' in an elevator system?",
+    "options": [
+      { "id": "a", "text": "To control the speed of the motor", "is_correct": false, "rationale": "The motor drive/inverter controls speed; the governor is a safety device." },
+      { "id": "b", "text": "To trigger the safety brakes if speed is exceeded", "is_correct": true, "rationale": "Correct. It is a mechanical speed-sensing device that trips the safeties." },
+      { "id": "c", "text": "To level the car with the floor", "is_correct": false, "rationale": "Leveling is handled by sensors and the controller." },
+      { "id": "d", "text": "To open the doors automatically", "is_correct": false, "rationale": "The door operator handles door movement." }
+    ],
+    "rationale": "An elevator governor is a safety mechanism that stops the elevator if it travels too fast by triggering the mechanical safeties on the car.",
+    "difficulty": 0.7,
+    "difficulty_rating": 0.8,
+    "discrimination_rating": 1.5,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q4-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "What is the 'Cul-de-sac' in urban planning primarily used for?",
+    "options": [
+      { "id": "a", "text": "Increasing through-traffic speed", "is_correct": false, "rationale": "Cul-de-sacs specifically prevent through-traffic." },
+      { "id": "b", "text": "Creating a dead-end street with a turnaround", "is_correct": true, "rationale": "Correct. It's a street closed at one end with a circular area for turning." },
+      { "id": "c", "text": "Connecting two major highways", "is_correct": false, "rationale": "That would be a connector or interchange." },
+      { "id": "d", "text": "Mixed-use zoning development", "is_correct": false, "rationale": "Zoning refers to land use, not street geometry." }
+    ],
+    "rationale": "A cul-de-sac is a street with only one inlet/outlet, designed to limit traffic and provide a safe turnaround area.",
+    "difficulty": 0.2,
+    "difficulty_rating": -1.0,
+    "discrimination_rating": 0.8,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q5-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "Which of the following is a key characteristic of a 'floating foundation' (mat foundation)?",
+    "options": [
+      { "id": "a", "text": "It literal floats on water", "is_correct": false, "rationale": "Foundations are anchored in soil, not floating on water." },
+      { "id": "b", "text": "It distributes the building load over the entire building area", "is_correct": true, "rationale": "Correct. A mat foundation acts as a single large slab distributing load to reduce differential settlement." },
+      { "id": "c", "text": "It is only used for temporary structures", "is_correct": false, "rationale": "Mat foundations are common in permanent high-rise construction." },
+      { "id": "d", "text": "It uses wooden piles exclusively", "is_correct": false, "rationale": "Mat foundations are typically reinforced concrete." }
+    ],
+    "rationale": "Mat or floating foundations are used when the soil bearing capacity is low, distributing weight over a broad area to prevent uneven settling.",
+    "difficulty": 0.5,
+    "difficulty_rating": 0.0,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q6-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "According to RA 9266, which entity has the power to revoke an Architect's Certificate of Registration?",
+    "options": [
+      { "id": "a", "text": "The United Architects of the Philippines (UAP)", "is_correct": false, "rationale": "UAP is the IAPOA (Professional Org), but the Board/PRC has the regulatory power." },
+      { "id": "b", "text": "The Professional Regulatory Board of Architecture (PRB-Arch)", "is_correct": true, "rationale": "Correct. The Board, under the PRC, handles administrative and quasi-judicial functions." },
+      { "id": "c", "text": "The Department of Public Works and Highways (DPWH)", "is_correct": false, "rationale": "DPWH handles building permits and public works, not professional registration." },
+      { "id": "d", "text": "The Office of the Building Official (OBO)", "is_correct": false, "rationale": "OBO handles local building code enforcement." }
+    ],
+    "rationale": "Professional regulation, including license revocation, is the domain of the PRB-Arch and the Professional Regulation Commission (PRC).",
+    "difficulty": 0.4,
+    "difficulty_rating": -0.2,
+    "discrimination_rating": 1.1,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q7-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "What is the primary function of a stirrup in a reinforced concrete beam?",
+    "options": [
+      { "id": "a", "text": "To increase tensile strength of the bottom chord", "is_correct": false, "rationale": "Longitudinal bottom bars handle the primary tension." },
+      { "id": "b", "text": "To resist shear and diagonal tension", "is_correct": true, "rationale": "Correct. Stirrups provide vertical reinforcement to prevent shear failure." },
+      { "id": "c", "text": "To reduce the amount of concrete needed", "is_correct": false, "rationale": "Reinforcement does not reduce the bulk concrete volume requirement." },
+      { "id": "d", "text": "To provide aesthetic detail to the formwork", "is_correct": false, "rationale": "Stirrups are internal structural elements." }
+    ],
+    "rationale": "Stirrups are U-shaped loops of steel that encase the longitudinal bars, primarily resisting the shear forces that would otherwise cause diagonal cracking.",
+    "difficulty": 0.6,
+    "difficulty_rating": 0.4,
+    "discrimination_rating": 1.3,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q8-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "What does 'FAR' stand for in urban planning and zoning?",
+    "options": [
+      { "id": "a", "text": "Fire Access Requirement", "is_correct": false, "rationale": "While important, this is not what FAR refers to in bulk zoning." },
+      { "id": "b", "text": "Floor Area Ratio", "is_correct": true, "rationale": "Correct. It is the ratio of a building's total floor area to the size of the piece of land upon which it is built." },
+      { "id": "c", "text": "Foundational Anchorage Rate", "is_correct": false, "rationale": "This is not a standard planning term." },
+      { "id": "d", "text": "Frontage Access Route", "is_correct": false, "rationale": "Refers to street access, not floor area density." }
+    ],
+    "rationale": "Floor Area Ratio (FAR) is a density control tool that limits the total gross floor area allowed on a lot relative to the lot area.",
+    "difficulty": 0.3,
+    "difficulty_rating": -0.6,
+    "discrimination_rating": 0.9,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q9-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "Which property of a building material is measured by its 'R-value'?",
+    "options": [
+      { "id": "a", "text": "Reflectivity of light", "is_correct": false, "rationale": "Albedo measures light reflectivity." },
+      { "id": "b", "text": "Thermal resistance", "is_correct": true, "rationale": "Correct. R-value measures how well a material resists the conduction of heat." },
+      { "id": "c", "text": "Resilience to impact", "is_correct": false, "rationale": "Toughness or hardness measures impact resilience." },
+      { "id": "d", "text": "Radiation safety", "is_correct": false, "rationale": "Radiation protection is measured by half-value layers or sieverts." }
+    ],
+    "rationale": "Higher R-values indicate better insulating properties of a material, reducing heat transfer through building envelopes.",
+    "difficulty": 0.4,
+    "difficulty_rating": -0.3,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q10-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "What is the Architect's Basic Fee for a typical residential building under SPP 202?",
+    "options": [
+      { "id": "a", "text": "5%", "is_correct": false, "rationale": "Standard fees for residential design are typically higher than 5%." },
+      { "id": "b", "text": "10%", "is_correct": true, "rationale": "Correct. Residential projects (Group 1) generally command a 10% basic fee." },
+      { "id": "c", "text": "15%", "is_correct": false, "rationale": "15% is usually reserved for interior design or high-complexity custom work." },
+      { "id": "d", "text": "20%", "is_correct": false, "rationale": "20% is significantly above standard recommended basic fees." }
+    ],
+    "rationale": "The Standards of Professional Practice provide guidelines for fees based on project complexity, with residential work often starting at 10%.",
+    "difficulty": 0.5,
+    "difficulty_rating": 0.1,
+    "discrimination_rating": 1.2,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q11-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "In seismic design, what is 'liquefaction'?",
+    "options": [
+      { "id": "a", "text": "The process of making concrete more fluid", "is_correct": false, "rationale": "This describes workability, not a seismic hazard." },
+      { "id": "b", "text": "Loss of soil strength during earthquake shaking in saturated soils", "is_correct": true, "rationale": "Correct. Saturated soil behaves like a liquid when shaken, causing foundation failure." },
+      { "id": "c", "text": "The melting of steel under extreme friction", "is_correct": false, "rationale": "Steel does not melt during earthquakes." },
+      { "id": "d", "text": "A method for waterproofing basement walls", "is_correct": false, "rationale": "Liquefaction is a structural threat, not a solution." }
+    ],
+    "rationale": "Liquefaction occurs when loose, saturated silts or sands lose their bearing capacity during seismic events, behaving like a viscous liquid.",
+    "difficulty": 0.8,
+    "difficulty_rating": 1.2,
+    "discrimination_rating": 1.5,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q12-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "The 'Garden City' concept was initiated by which urban planner?",
+    "options": [
+      { "id": "a", "text": "Le Corbusier", "is_correct": false, "rationale": "Le Corbusier promoted the Radiant City (Ville Radieuse)." },
+      { "id": "b", "text": "Ebenezer Howard", "is_correct": true, "rationale": "Correct. Howard's 1898 book proposed self-contained communities surrounded by greenbelts." },
+      { "id": "c", "text": "Daniel Burnham", "is_correct": false, "rationale": "Burnham led the City Beautiful movement." },
+      { "id": "d", "text": "Frank Lloyd Wright", "is_correct": false, "rationale": "Wright proposed Broadacre City." }
+    ],
+    "rationale": "Ebenezer Howard's Garden City aimed to combine the best of town and country living, creating structured, green-focused developments.",
+    "difficulty": 0.6,
+    "difficulty_rating": 0.4,
+    "discrimination_rating": 1.1,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q13-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "What is 'efflorescence' in masonry construction?",
+    "options": [
+      { "id": "a", "text": "A decorative carving technique", "is_correct": false, "rationale": "Efflorescence is a chemical/physical defect, not art." },
+      { "id": "b", "text": "White powdery deposits of salts on the surface of brick or concrete", "is_correct": true, "rationale": "Correct. It is caused by water-soluble salts migrating to the surface." },
+      { "id": "c", "text": "The process of hardening mortar", "is_correct": false, "rationale": "Hardening is hydration or carbonation." },
+      { "id": "d", "text": "A type of transparent glaze used on roof tiles", "is_correct": false, "rationale": "Efflorescence is an unwanted deposit, not a finish." }
+    ],
+    "rationale": "Efflorescence occurs when moisture carries soluble salts from within the masonry to the exterior, where the water evaporates and leaves the salt behind.",
+    "difficulty": 0.4,
+    "difficulty_rating": -0.2,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q14-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "What is the maximum period of imprisonment for a person practicing architecture without a license in the Philippines?",
+    "options": [
+      { "id": "a", "text": "6 months", "is_correct": false, "rationale": "RA 9266 imposes much harsher penalties." },
+      { "id": "b", "text": "1 year", "is_correct": false, "rationale": "The law specifies a range that goes beyond one year." },
+      { "id": "c", "text": "6 years", "is_correct": true, "rationale": "Correct. Section 29 of RA 9266 specifies penalties including imprisonment from 6 months to 6 years." },
+      { "id": "d", "text": "Life imprisonment", "is_correct": false, "rationale": "Illegal practice is a serious offense but does not carry a life sentence." }
+    ],
+    "rationale": "Under the Architecture Act of 2004, the penal provisions for illegal practice are strict, ranging from fines to up to six years in prison.",
+    "difficulty": 0.7,
+    "difficulty_rating": 0.9,
+    "discrimination_rating": 1.4,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q15-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "Which structural member is primarily designed to resist lateral loads like wind or seismic forces?",
+    "options": [
+      { "id": "a", "text": "Joist", "is_correct": false, "rationale": "Joists primarily handle vertical floor loads." },
+      { "id": "b", "text": "Shear wall", "is_correct": true, "rationale": "Correct. Shear walls provide lateral stiffness to resist horizontal forces." },
+      { "id": "c", "text": "Purlin", "is_correct": false, "rationale": "Purlins support roof cladding." },
+      { "id": "d", "text": "Lintel", "is_correct": false, "rationale": "Lintels support loads over openings like doors or windows." }
+    ],
+    "rationale": "Shear walls are structural systems specifically engineered to counteract the effects of lateral loads acting on a structure.",
+    "difficulty": 0.3,
+    "difficulty_rating": -0.5,
+    "discrimination_rating": 0.8,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q16-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "What is 'Urban Sprawl'?",
+    "options": [
+      { "id": "a", "text": "Highly dense vertical city growth", "is_correct": false, "rationale": "Vertical growth is the opposite of sprawl (compactness)." },
+      { "id": "b", "text": "Uncontrolled expansion of urban areas into low-density rural land", "is_correct": true, "rationale": "Correct. Sprawl is characterized by automobile dependency and low-density development." },
+      { "id": "c", "text": "Strategic renewal of historic districts", "is_correct": false, "rationale": "This is urban regeneration or gentrification." },
+      { "id": "d", "text": "A type of public transport network", "is_correct": false, "rationale": "Sprawl refers to land-use patterns, not transport tech." }
+    ],
+    "rationale": "Urban sprawl often results from poor planning, leading to inefficient land use and increased infrastructure costs.",
+    "difficulty": 0.4,
+    "difficulty_rating": -0.3,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q17-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "Which type of glass is designed to crumble into small pebbles when broken to avoid sharp shards?",
+    "options": [
+      { "id": "a", "text": "Plate glass", "is_correct": false, "rationale": "Plate glass breaks into dangerous sharp shards." },
+      { "id": "b", "text": "Tempered glass", "is_correct": true, "rationale": "Correct. Controlled thermal treatment creates internal stresses that cause it to shatter safely." },
+      { "id": "c", "text": "Laminated glass", "is_correct": false, "rationale": "Laminated glass stays bonded to a plastic interlayer when broken." },
+      { "id": "d", "text": "Wired glass", "is_correct": false, "rationale": "Wired glass holds broken pieces together for fire protection." }
+    ],
+    "rationale": "Tempered glass is a type of safety glass used in doors and windows where human impact is a risk.",
+    "difficulty": 0.3,
+    "difficulty_rating": -0.7,
+    "discrimination_rating": 0.9,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q18-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "Under SPP Document 201, what is 'Pre-Design Services'?",
+    "options": [
+      { "id": "a", "text": "The preparation of final blueprints", "is_correct": false, "rationale": "Blueprints are part of the Design Phase, not Pre-Design." },
+      { "id": "b", "text": "Feasibility studies, site selection, and programming", "is_correct": true, "rationale": "Correct. These are activities that occur before the actual design begins." },
+      { "id": "c", "text": "Hiring the contractor", "is_correct": false, "rationale": "This is part of the Bidding or Construction Phase." },
+      { "id": "d", "text": "Interior fit-out design", "is_correct": false, "rationale": "This is a specialized architectural service." }
+    ],
+    "rationale": "Pre-Design services establish the project's parameters, viability, and site potential before architectural design starts.",
+    "difficulty": 0.5,
+    "difficulty_rating": 0.0,
+    "discrimination_rating": 1.1,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q19-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "What is the 'Modulus of Elasticity'?",
+    "options": [
+      { "id": "a", "text": "The weight of a material per cubic meter", "is_correct": false, "rationale": "That is density or unit weight." },
+      { "id": "b", "text": "A measure of a material's stiffness or resistance to elastic deformation", "is_correct": true, "rationale": "Correct. It is the ratio of stress to strain in the elastic range." },
+      { "id": "c", "text": "The temperature at which a material melts", "is_correct": false, "rationale": "That is the melting point." },
+      { "id": "d", "text": "The ability of a material to conduct electricity", "is_correct": false, "rationale": "That is electrical conductivity." }
+    ],
+    "rationale": "The Modulus of Elasticity (Young's Modulus) defines how much a structural material will deflect under a specific load.",
+    "difficulty": 0.9,
+    "difficulty_rating": 1.5,
+    "discrimination_rating": 1.8,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q20-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "What is a 'Cul-de-sac'?",
+    "options": [
+      { "id": "a", "text": "A high-speed highway", "is_correct": false, "rationale": "Cul-de-sacs are low-speed local streets." },
+      { "id": "b", "text": "A dead-end street with a circular turnaround at the end", "is_correct": true, "rationale": "Correct. Designed to limit through-traffic in residential areas." },
+      { "id": "c", "text": "A type of public plaza", "is_correct": false, "rationale": "A cul-de-sac is a street type, not a plaza." },
+      { "id": "d", "text": "A multi-level parking structure", "is_correct": false, "rationale": "This has no relation to the term." }
+    ],
+    "rationale": "Cul-de-sacs are used in planning to increase privacy and safety in residential neighborhoods by eliminating through-traffic.",
+    "difficulty": 0.2,
+    "difficulty_rating": -1.2,
+    "discrimination_rating": 0.7,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q21-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "In acoustics, what is 'reverberation time'?",
+    "options": [
+      { "id": "a", "text": "The time it takes for sound to travel 1 kilometer", "is_correct": false, "rationale": "Refers to sound speed, not reverberation." },
+      { "id": "b", "text": "The time required for sound to decay by 60 decibels after the source stops", "is_correct": true, "rationale": "Correct. Known as RT60, it measures how long sound 'lingers' in a space." },
+      { "id": "c", "text": "The volume of a sound source", "is_correct": false, "rationale": "Measured in decibels (SPL)." },
+      { "id": "d", "text": "The pitch of a sound wave", "is_correct": false, "rationale": "Measured in frequency (Hertz)." }
+    ],
+    "rationale": "RT60 is a critical metric in architectural acoustics for designing concert halls, theaters, and classrooms.",
+    "difficulty": 0.7,
+    "difficulty_rating": 0.8,
+    "discrimination_rating": 1.4,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q22-uuid",
+    "topic_id": "topic-pro-practice-uuid",
+    "text": "Under RA 9266, how long is the term of office for a member of the PRB-Arch?",
+    "options": [
+      { "id": "a", "text": "1 year", "is_correct": false, "rationale": "Standard regulatory board terms are usually longer." },
+      { "id": "b", "text": "3 years", "is_correct": true, "rationale": "Correct. Section 8 specifies a term of three years, with possible reappointment for one more term." },
+      { "id": "c", "text": "5 years", "is_correct": false, "rationale": "5 years is not the standard term for this board." },
+      { "id": "d", "text": "Indefinite", "is_correct": false, "rationale": "Terms are strictly limited by law." }
+    ],
+    "rationale": "Fixed terms for board members ensure rotation and prevent entrenched administrative control.",
+    "difficulty": 0.6,
+    "difficulty_rating": 0.5,
+    "discrimination_rating": 1.2,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q23-uuid",
+    "topic_id": "topic-structural-uuid",
+    "text": "What is the primary difference between a 'dead load' and a 'live load'?",
+    "options": [
+      { "id": "a", "text": "Dead loads are heavier than live loads", "is_correct": false, "rationale": "Weight depends on specific items, not the load type classification." },
+      { "id": "b", "text": "Dead loads are permanent weights of the structure; live loads are temporary or moving", "is_correct": true, "rationale": "Correct. Structural self-weight is dead; occupants and furniture are live." },
+      { "id": "c", "text": "Live loads only apply to people", "is_correct": false, "rationale": "Live loads include furniture, equipment, and movable partitions." },
+      { "id": "d", "text": "Dead loads are only horizontal forces", "is_correct": false, "rationale": "Dead loads are gravity-driven vertical forces." }
+    ],
+    "rationale": "Accurate load calculation is fundamental to structural engineering, distinguishing between constant and transient weights.",
+    "difficulty": 0.3,
+    "difficulty_rating": -0.8,
+    "discrimination_rating": 0.9,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q24-uuid",
+    "topic_id": "topic-planning-uuid",
+    "text": "What is 'zoning' in urban planning?",
+    "options": [
+      { "id": "a", "text": "The design of individual building facades", "is_correct": false, "rationale": "Facades are architectural details, not urban zoning." },
+      { "id": "b", "text": "Legally binding rules that control land use and development density", "is_correct": true, "rationale": "Correct. Zoning divides land into areas for specific uses like residential, commercial, or industrial." },
+      { "id": "c", "text": "The process of painting street signs", "is_correct": false, "rationale": "No relation to the term." },
+      { "id": "d", "text": "A method for planting trees in parks", "is_correct": false, "rationale": "That is landscaping or arboriculture." }
+    ],
+    "rationale": "Zoning ordinances are the primary tool used by local governments to implement comprehensive land-use plans.",
+    "difficulty": 0.2,
+    "difficulty_rating": -1.1,
+    "discrimination_rating": 0.8,
+    "created_at": "2026-03-14T12:00:00Z"
+  },
+  {
+    "question_id": "q25-uuid",
+    "topic_id": "topic-build-tech-uuid",
+    "text": "Which of the following is a primary ingredient in 'Portland Cement'?",
+    "options": [
+      { "id": "a", "text": "Wood pulp", "is_correct": false, "rationale": "Wood pulp is for paper, not cement." },
+      { "id": "b", "text": "Limestone", "is_correct": true, "rationale": "Correct. Calcined limestone (calcium carbonate) is the core ingredient." },
+      { "id": "c", "text": "Plastic resin", "is_correct": false, "rationale": "Cement is a mineral-based hydraulic binder." },
+      { "id": "d", "text": "Aluminum shavings", "is_correct": false, "rationale": "Aluminum is not a standard ingredient in cement clinker." }
+    ],
+    "rationale": "Portland cement is manufactured by heating limestone and clay to high temperatures to form clinker, which is then ground with gypsum.",
+    "difficulty": 0.4,
+    "difficulty_rating": -0.4,
+    "discrimination_rating": 1.0,
+    "created_at": "2026-03-14T12:00:00Z"
+  }
+]

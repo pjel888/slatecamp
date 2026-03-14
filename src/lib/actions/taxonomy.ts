@@ -33,7 +33,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
   }
 
   // Fetch articles mapped to these nodes
-  const nodeIds = nodes.map(n => n.node_id)
+  const nodeIds = nodes.map((n: any) => n.node_id)
   const { data: articleMappings, error: mappingError } = await supabase
     .from('wiki_article_taxonomy')
     .select('node_id, wiki_articles(article_id, slug, title)')
@@ -55,7 +55,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
   const roots: TaxonomyNode[] = []
 
   // Index all nodes
-  nodes.forEach(node => {
+  nodes.forEach((node: any) => {
     map.set(node.node_id, { 
       ...node, 
       children: [], 
@@ -64,7 +64,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
   })
 
   // Build tree
-  nodes.forEach(node => {
+  nodes.forEach((node: any) => {
     const current = map.get(node.node_id)!
     if (node.parent_id && map.has(node.parent_id)) {
       map.get(node.parent_id)!.children!.push(current)

@@ -1,11 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
-type ReadinessTrend = 'up' | 'down' | 'flat'
-
 interface ReadinessScoreProps {
-  value: number
-  trend: ReadinessTrend
+  score: number
+  previousScore: number | null
 }
 
 const getReadinessColorClass = (value: number): string => {
@@ -14,8 +12,12 @@ const getReadinessColorClass = (value: number): string => {
   return 'text-green-600'
 }
 
-export const ReadinessScore = ({ value, trend }: ReadinessScoreProps) => {
-  const clamped = Math.max(0, Math.min(100, Math.round(value)))
+export const ReadinessScore = ({ score, previousScore }: ReadinessScoreProps) => {
+  const clamped = Math.max(0, Math.min(100, Math.round(score)))
+  
+  const trend = !previousScore || score === previousScore 
+    ? 'flat' 
+    : score > previousScore ? 'up' : 'down'
 
   const trendLabel =
     trend === 'up' ? 'Improving' : trend === 'down' ? 'Softening' : 'Stable'
@@ -77,4 +79,3 @@ export const ReadinessScore = ({ value, trend }: ReadinessScoreProps) => {
     </Card>
   )
 }
-

@@ -1,0 +1,48 @@
+[
+  {
+    "node_id": "7890c1e0-aa8b-4da4-bee3-c6ecd797d7e1",
+    "type": "discipline",
+    "name": "Architecture Licensure Exam",
+    "acronym": "ALE"
+  },
+  {
+    "node_id": "11111111-1111-4111-a111-111111111111",
+    "discipline_id": "7890c1e0-aa8b-4da4-bee3-c6ecd797d7e1",
+    "parent_id": null,
+    "level": 1,
+    "name": "Structural Design",
+    "subject_area": "Area 1",
+    "slug": "structural-design",
+    "is_leaf": false
+  },
+  {
+    "node_id": "22222222-2222-4222-a222-222222222222",
+    "discipline_id": "7890c1e0-aa8b-4da4-bee3-c6ecd797d7e1",
+    "parent_id": null,
+    "level": 1,
+    "name": "Building Technology",
+    "subject_area": "Area 2",
+    "slug": "building-technology",
+    "is_leaf": false
+  },
+  {
+    "node_id": "33333333-3333-4333-a333-333333333333",
+    "discipline_id": "7890c1e0-aa8b-4da4-bee3-c6ecd797d7e1",
+    "parent_id": "11111111-1111-4111-a111-111111111111",
+    "level": 2,
+    "name": "Steel Design",
+    "subject_area": "Area 1",
+    "slug": "steel-design",
+    "is_leaf": true
+  },
+  {
+    "node_id": "44444444-4444-4444-a444-444444444444",
+    "discipline_id": "7890c1e0-aa8b-4da4-bee3-c6ecd797d7e1",
+    "parent_id": "22222222-2222-4222-a222-222222222222",
+    "level": 2,
+    "name": "Foundations",
+    "subject_area": "Area 2",
+    "slug": "foundations",
+    "is_leaf": true
+  }
+]

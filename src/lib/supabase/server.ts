@@ -6,7 +6,6 @@ import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
 
 export async function createClient() {
   if (isDemoMode()) {
-    await cookies()
     return createMockSupabaseClient() as unknown as ReturnType<
       typeof createServerClient
     >
@@ -42,11 +41,23 @@ export async function hasAuthCookie() {
 
   return all.some((cookie) => {
     const name = cookie.name.toLowerCase()
-    return name.startsWith('sb-') || name.startsWith('supabase-')
+    // Look specifically for the auth token, ignoring meta cookies like code-verifier
+    return (
+      (name.startsWith('sb-') && name.endsWith('-auth-token')) ||
+      name.startsWith('supabase-auth-token')
+    )
   })
 }
 
 export const getUserIfPresent = cache(async () => {
+  if (isDemoMode()) {
+    const { DEMO_USER } = await import('@/lib/demo/config')
+    return {
+      data: { user: DEMO_USER as any },
+      error: null,
+    }
+  }
+
   const hasCookie = await hasAuthCookie()
 
   if (!hasCookie) {

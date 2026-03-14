@@ -10,7 +10,7 @@ import {
 } from 'recharts'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
-type PacingTrend = 'improving' | 'declining' | 'steady'
+type PacingTrend = 'improving' | 'declining' | 'steady' | 'stable'
 
 interface PacingEnduranceGaugeProps {
   averageSecondsPerItem: number

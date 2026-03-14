@@ -37,48 +37,32 @@ export async function POST(request: Request) {
       const customerId = session.customer as string;
       const subscriptionId = session.subscription as string;
 
-      // Determine tier from metadata or price
       const tier: UserTier =
         (session.metadata?.tier as UserTier) ?? "camp";
 
-      const tokenLimit = tier === "institutional" ? 999999 : tier === "insurance" ? 10000 : 1000;
-
       const { error } = await supabase
-        .from("profiles")
+        .from("user_subscriptions")
         .update({
           tier,
           stripe_customer_id: customerId,
           stripe_subscription_id: subscriptionId,
-          ai_tokens_limit: tokenLimit,
+          status: 'active',
           updated_at: new Date().toISOString(),
         })
-        .eq("email", session.customer_email!);
+        .eq("user_id", session.metadata?.userId || ""); // Rely on metadata for accuracy
 
-      if (error) console.error("Profile update error:", error);
-      break;
-    }
-
-    case "customer.subscription.updated": {
-      const subscription = event.data.object as Stripe.Subscription;
-      const status = subscription.status;
-
-      if (status === "active") {
-        await supabase
-          .from("profiles")
-          .update({ updated_at: new Date().toISOString() })
-          .eq("stripe_subscription_id", subscription.id);
-      }
+      if (error) console.error("Subscription update error:", error);
       break;
     }
 
     case "customer.subscription.deleted": {
       const subscription = event.data.object as Stripe.Subscription;
       await supabase
-        .from("profiles")
+        .from("user_subscriptions")
         .update({
           tier: "free" as UserTier,
           stripe_subscription_id: null,
-          ai_tokens_limit: 0,
+          status: 'canceled',
           updated_at: new Date().toISOString(),
         })
         .eq("stripe_subscription_id", subscription.id);

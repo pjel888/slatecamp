@@ -12,14 +12,13 @@ export async function getQuestionSocialProof(
   const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
 
   const { data: attempts } = await supabase
-    .from('session_questions')
+    .from('user_interactions')
     .select('is_correct')
     .eq('question_id', questionId)
-    .not('is_correct', 'is', null)
-    .gte('answered_at', weekAgo);
+    .gte('interaction_timestamp', weekAgo);
 
   const total = (attempts ?? []).length;
-  const correct = (attempts ?? []).filter((a: { is_correct: boolean | null }) => a.is_correct === true).length;
+  const correct = (attempts ?? []).filter((a: { is_correct: boolean }) => a.is_correct === true).length;
 
   return {
     weeklyAttempts: total,
@@ -27,38 +26,30 @@ export async function getQuestionSocialProof(
   };
 }
 
-export async function getSubjectDailyStudiers(
-  subjectId: string
+export async function getTopicDailyStudiers(
+  topicId: string
 ): Promise<number> {
   const supabase = await createClient();
   const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
-  const { data: sqRows } = await supabase
-    .from('session_questions')
-    .select('session_id')
-    .eq('subject_id', subjectId)
-    .gte('answered_at', oneDayAgo);
-
-  const sessionIds = [...new Set((sqRows ?? []).map((r: { session_id: string }) => r.session_id))];
-  if (sessionIds.length === 0) return 0;
-
-  const { data: sessions } = await supabase
-    .from('review_sessions')
+  const { data: users } = await supabase
+    .from('user_interactions')
     .select('user_id')
-    .in('id', sessionIds);
+    .eq('topic_id', topicId)
+    .gte('interaction_timestamp', oneDayAgo);
 
-  const uniqueUsers = new Set((sessions ?? []).map((s: { user_id: string }) => s.user_id));
+  const uniqueUsers = new Set((users ?? []).map((u: { user_id: string }) => u.user_id));
   return uniqueUsers.size;
 }
 
-/** Batch version for dashboard subject cards. Returns subjectId -> count. */
-export async function getSubjectDailyStudiersBatch(
-  subjectIds: string[]
+/** Batch version for dashboard subject cards. Returns topicId -> count. */
+export async function getTopicDailyStudiersBatch(
+  topicIds: string[]
 ): Promise<Record<string, number>> {
-  if (subjectIds.length === 0) return {};
+  if (topicIds.length === 0) return {};
   const results = await Promise.all(
-    subjectIds.map(async (id) => {
-      const count = await getSubjectDailyStudiers(id);
+    topicIds.map(async (id) => {
+      const count = await getTopicDailyStudiers(id);
       return { id, count };
     })
   );

@@ -30,7 +30,7 @@ export async function getSessionQuestions(questionIds: string[]) {
   if (error) throw error
   
   // Sort questions to match the order in questionIds
-  const questionMap = new Map(questions.map(q => [q.question_id, q]))
+  const questionMap = new Map(questions.map((q: any) => [q.question_id, q]))
   return questionIds.map(id => questionMap.get(id)).filter(Boolean) as Question[]
 }
 
@@ -91,8 +91,8 @@ export async function deleteQuizSession(sessionId: string) {
 
 /**
  * Updates or creates a user_node_mastery record based on interaction.
- * Uses EMA (Exponential Moving Average) for mastery weight.
- * PRD Section 8 & 9 Implementation: Lucky Guess Detector™ and Mode-Aware Weighting.
+ * Also triggers global readiness recalculation and daily snapshots.
+ * Decision: Phase 2 Decisions Step 2.
  */
 async function recordMastery(
   user_id: string, 
@@ -104,7 +104,7 @@ async function recordMastery(
 ) {
   const supabase = await createClient()
   
-  // 1. Get current mastery
+  // 1. Get current node mastery
   const { data: current } = await supabase
     .from('user_node_mastery')
     .select('*')
@@ -113,24 +113,16 @@ async function recordMastery(
     .single()
 
   let alpha = 0.2 // Base EMA smoothing factor
-  
-  // PRD Section 7B, Step 5: Proof Simulation impact is 3x heavier
   if (test_mode === 'proof_sim') alpha = 0.6 
-  // PRD Section 11: Storm mode is 2x, Chill is 0.5x
   else if (test_mode === 'storm') alpha = 0.4
   else if (test_mode === 'chill') alpha = 0.1
   else if (test_mode === 'blindspot') alpha = 0.3
 
-  // PRD Section 8: Lucky Guess Detector™
-  // Thresholds based on difficulty (0.0 to 1.0)
-  // Low threshold: if they answer faster than 3s + (diff * 5s)
   const speedThreshold = 3000 + (question_difficulty * 5000)
   let score = is_correct ? 1.0 : 0.0
   
   if (is_correct && time_spent_ms < speedThreshold) {
-    // Lucky Guess: Don't award full credit, reduce impact by half
     score = 0.5 
-    // Internally we would flag for re-test ≥ 48h later
   }
   
   let new_weight = score
@@ -145,7 +137,8 @@ async function recordMastery(
     new_avg_time = (time_spent_ms * alpha) + (current.avg_time_ms * (1 - alpha))
   }
 
-  const { error } = await supabase
+  // 2. Persist node mastery
+  await supabase
     .from('user_node_mastery')
     .upsert({
       user_id,
@@ -157,7 +150,59 @@ async function recordMastery(
       last_encountered: new Date().toISOString()
     })
 
-  if (error) console.error('Error recording mastery:', error)
+  // 3. Recalculate Global Readiness (average of all nodes)
+  const { data: allNodesData } = await supabase
+    .from('user_node_mastery')
+    .select('current_mastery_weight')
+    .eq('user_id', user_id)
+
+  const allNodes = (allNodesData || []) as Array<{ current_mastery_weight: number }>
+
+  if (allNodes.length > 0) {
+    const sum = allNodes.reduce((acc, node) => acc + node.current_mastery_weight, 0)
+    const globalScore = (sum / allNodes.length) * 100
+
+    await supabase
+      .from('user_global_stats')
+      .update({ global_readiness_score: globalScore, updated_at: new Date().toISOString() })
+      .eq('user_id', user_id)
+
+    // 4. Daily Snapshotting (Phase 2 Decisions Step 2)
+    const today = new Date().toISOString().split('T')[0]
+    const { data: existingSnapshot } = await supabase
+      .from('readiness_score_snapshots')
+      .select('snapshot_id')
+      .eq('user_id', user_id)
+      .gte('computed_at', `${today}T00:00:00Z`)
+      .lt('computed_at', `${today}T23:59:59Z`)
+      .maybeSingle()
+
+    if (!existingSnapshot) {
+      await supabase
+        .from('readiness_score_snapshots')
+        .insert({
+          user_id,
+          score: globalScore,
+          computed_at: new Date().toISOString()
+        })
+
+      // 5. Snapshot Pruning (Retain only 90)
+      const { data: snapshots } = await supabase
+        .from('readiness_score_snapshots')
+        .select('snapshot_id')
+        .eq('user_id', user_id)
+        .order('computed_at', { ascending: false })
+        .offset(90)
+
+      if (snapshots && snapshots.length > 0) {
+        const idsToDelete = snapshots.map((s: any) => s.snapshot_id)
+        await supabase
+          .from('readiness_score_snapshots')
+          .delete()
+          .in('snapshot_id', idsToDelete)
+      }
+    }
+  }
 }
 
 export async function saveInteraction(interaction: {
@@ -172,21 +217,18 @@ export async function saveInteraction(interaction: {
   const { data: { user } } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
-  // Fetch session mode for recordMastery
   const { data: session } = await supabase
     .from('quiz_sessions')
     .select('test_mode')
     .eq('session_id', interaction.session_id)
     .single()
 
-  // Fetch question difficulty
   const { data: question } = await supabase
     .from('questions')
     .select('difficulty')
     .eq('question_id', interaction.question_id)
     .single()
 
-  // 1. Save interaction
   const { error } = await supabase
     .from('user_interactions')
     .upsert({
@@ -198,14 +240,11 @@ export async function saveInteraction(interaction: {
       onConflict: 'user_id,session_id,question_id'
     })
 
-  if (error) {
-    console.error('Save interaction error:', error)
-    throw error
-  }
+  if (error) throw error
 
-  // 2. Record mastery (async)
   if (interaction.topic_id && session) {
-    recordMastery(
+    // Fire and forget (or await if strict real-time is needed)
+    await recordMastery(
       user.id, 
       interaction.topic_id, 
       interaction.is_correct, 
@@ -250,7 +289,7 @@ export async function createQuizSession(params: {
 }
 
 /**
- * PRD Section 5, Step 10: 24-Hour Review Lock (Proof Simulation™ protocol)
+ * PRD Section 5, Step 10: 24-Hour Review Lock
  */
 export async function getReviewLockStatus(sessionId: string) {
   const supabase = await createClient()
@@ -264,7 +303,6 @@ export async function getReviewLockStatus(sessionId: string) {
   if (error || !session) return { isLocked: false }
   if (session.status !== 'completed' || !session.completed_at) return { isLocked: false }
 
-  // Only lock for Storm (Full) and Proof Simulation
   if (session.test_mode !== 'storm' && session.test_mode !== 'proof_sim') {
     return { isLocked: false }
   }

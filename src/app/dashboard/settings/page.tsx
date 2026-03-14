@@ -3,6 +3,7 @@ import { ROUTES } from '@/lib/constants/routes'
 import { getAdminAwareProfile } from '@/lib/admin/get-admin-profile'
 
 import { LogoutCard } from './logout-card'
+import { DisciplineCard } from './discipline-card'
 
 export const metadata = { title: 'Settings' }
 
@@ -11,7 +12,10 @@ export default async function SettingsPage() {
   if (!profile) redirect(ROUTES.LOGIN)
 
   return (
-    <div className='space-y-8'>
+    <div className='max-w-2xl mx-auto space-y-8'>
+      {/* License / Discipline */}
+      <DisciplineCard />
+
       {/* Account / Log out */}
       <LogoutCard />
     </div>

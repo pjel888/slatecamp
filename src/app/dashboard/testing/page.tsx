@@ -43,7 +43,7 @@ export default async function TestingPage() {
     .eq('level', 1)
     .order('name')
 
-  const questionIds = allQuestions?.map(q => q.question_id) || []
+  const questionIds = (allQuestions as any[])?.map((q: { question_id: string }) => q.question_id) || []
   const disciplineName = (stats as any).disciplines?.name || 'Architecture'
 
   return (

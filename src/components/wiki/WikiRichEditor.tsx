@@ -10,8 +10,7 @@ import Image from '@tiptap/extension-image'
 import TaskList from '@tiptap/extension-task-list'
 import TaskItem from '@tiptap/extension-task-item'
 import HorizontalRule from '@tiptap/extension-horizontal-rule'
-import { TextStyle } from '@tiptap/extension-text-style/text-style'
-import { FontSize } from '@tiptap/extension-text-style/font-size'
+import { TextStyle, FontSize } from '@tiptap/extension-text-style'
 import {
   Bold,
   Italic,

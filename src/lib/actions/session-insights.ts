@@ -3,8 +3,7 @@
 import { createClient, getUser } from '@/lib/supabase/server';
 
 export async function generateSessionInsight(
-  sessionId: string,
-  examProfileId: string
+  sessionId: string
 ): Promise<string> {
   const supabase = await createClient();
   const { data: { user } } = await getUser();
@@ -12,27 +11,27 @@ export async function generateSessionInsight(
 
   // Get session data
   const { data: session } = await supabase
-    .from('review_sessions')
-    .select('score_percentage, questions_correct, total_questions, session_type, source_subject_id')
-    .eq('id', sessionId)
-    .single();
+    .from('quiz_sessions')
+    .select('status, test_mode')
+    .eq('session_id', sessionId)
+    .maybeSingle();
 
   if (!session) return 'Every question makes you stronger.';
 
-  // Get streak
-  const { data: profile } = await supabase
-    .from('exam_profiles')
-    .select('daily_streak')
-    .eq('id', examProfileId)
-    .single();
+  // Get streak from global stats
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('current_streak_days, global_readiness_score')
+    .eq('user_id', user.id)
+    .maybeSingle();
 
-  const streak = (profile?.daily_streak as number) ?? 0;
+  const streak = stats?.current_streak_days ?? 0;
 
   // Check if first session
   const { count: sessionCount } = await supabase
-    .from('review_sessions')
-    .select('id', { count: 'exact', head: true })
-    .eq('exam_profile_id', examProfileId)
+    .from('quiz_sessions')
+    .select('session_id', { count: 'exact', head: true })
+    .eq('user_id', user.id)
     .eq('status', 'completed');
 
   if ((sessionCount ?? 0) <= 1) {
@@ -44,62 +43,29 @@ export async function generateSessionInsight(
     return `Day ${streak} streak — consistency is your superpower.`;
   }
 
-  // Coverage milestone
-  const { data: subjectIds } = await supabase
-    .from('subjects')
-    .select('id')
-    .eq('board_exam_id', (await supabase
-      .from('exam_profiles')
-      .select('board_exam_id')
-      .eq('id', examProfileId)
-      .single()).data?.board_exam_id as string);
+  // Coverage milestone heuristic
+  const { count: interactionCount } = await supabase
+    .from('user_interactions')
+    .select('interaction_id', { count: 'exact', head: true })
+    .eq('user_id', user.id);
 
-  const sIds = (subjectIds ?? []).map((s: { id: string }) => s.id);
-
-  if (sIds.length > 0) {
-    const { data: answered } = await supabase
-      .from('session_questions')
-      .select('question_id, session_id')
-      .not('is_correct', 'is', null);
-
-    // Get sessions for this profile
-    const { data: profileSessions } = await supabase
-      .from('review_sessions')
-      .select('id')
-      .eq('exam_profile_id', examProfileId);
-
-    const profileSessionIds = new Set((profileSessions ?? []).map((s: { id: string }) => s.id));
-    const uniqueQs = new Set(
-      (answered ?? [])
-        .filter((a: { session_id: string }) => profileSessionIds.has(a.session_id))
-        .map((a: { question_id: string }) => a.question_id)
-    );
-
-    const count = uniqueQs.size;
-    if (count > 0 && count % 50 === 0) {
-      return `You've now answered ${count} unique questions. Keep going.`;
-    }
+  if (interactionCount && interactionCount > 0 && interactionCount % 50 === 0) {
+    return `You've now answered ${interactionCount} questions. Keep going.`;
   }
 
-  // Subject improvement
-  if (session.source_subject_id) {
-    const { data: subjectInfo } = await supabase
-      .from('subjects')
-      .select('name, short_name')
-      .eq('id', session.source_subject_id)
-      .single();
+  // Score based insight if session is completed
+  const { data: interactionResults } = await supabase
+    .from('user_interactions')
+    .select('is_correct')
+    .eq('session_id', sessionId);
 
-    const subjectName = (subjectInfo?.short_name ?? subjectInfo?.name ?? 'this subject') as string;
-    const score = (session.score_percentage as number) ?? 0;
+  if (interactionResults && interactionResults.length > 0) {
+    const correct = interactionResults.filter((i: any) => i.is_correct).length;
+    const accuracy = (correct / interactionResults.length) * 100;
 
-    if (score >= 80) {
-      return `Your accuracy in ${subjectName} is looking strong. Keep it up!`;
-    }
+    if (accuracy >= 80) return 'Excellent performance. You\'re building real momentum.';
+    if (accuracy >= 60) return 'Solid session. Focus on the questions you missed to level up.';
   }
 
-  // Default based on score
-  const score = (session.score_percentage as number) ?? 0;
-  if (score >= 80) return 'Excellent performance. You\'re building real momentum.';
-  if (score >= 60) return 'Solid session. Focus on the questions you missed to level up.';
   return 'Every session builds knowledge. Review the questions you missed.';
 }

@@ -1,28 +1,33 @@
 # STATE: SlateCamp (Project Memory)
 
-**Current Status:** Initialization phase. Codebase mapped, schema extracted, and project identity established.
-**Next Milestone:** Finalize requirements and roadmap (Phase 1).
+**Current Status:** Spatial & Data Infrastructure phase complete. 3D Lab operational and seed pipeline automated.
+**Next Milestone:** Admin & Content Operations (Phase 4).
 
 ---
 
-## 📍 Current Phase: 1 — Foundations (The Core Loop) [COMPLETED]
+## 📍 Current Phase: 3 — Spatial & Data Infrastructure (The 3D Layer) [COMPLETED]
 
-- [x] Syllabus Infrastructure: Database setup, disciplines, and taxonomy hierarchy.
-- [x] The Wiki CMS: MDX article renderer, sticky ToC, internal sidebar, and highlight-fade.
-- [x] Camp Mode Quizzing: Professional high-density renderer, visual feedback, and rationales.
-- [x] Auth & Onboarding: Fixed redirect loops, validated discipline selection, and stats initialization.
-- [x] Aesthetic: Premium Apple HIG layout (Triple-column scrolling).
-- [x] Omnibar: Global discovery with Sidebar Peek and horizontal recents.
-- [ ] Storm Mode (Phase 2).
+- [x] **The 3D Lab:** Parametric R3F sandbox with X-Ray layer stripping.
+- [x] **Data Foundations:** Live master `schema.sql` mirror and updated `supabase.ts` types.
+- [x] **Seed Pipeline:** Automated `npm run db:seed` using versioned JSON fixtures.
+- [x] **Architecture Cleanup:** Removed all legacy table references (`profiles`, `exam_profiles`) from server actions.
+
+## 📍 Previous Phases
+
+### Phase 2: Diagnostics & Synthesis [COMPLETED]
+- [x] Storm Mode: timed exams and focus-loss detection.
+- [x] Readiness Score: Real-time EMA calculation and daily snapshots.
+- [x] Analytics Dashboard: Live taxonomy heatmap.
+
+### Phase 1: Foundations [COMPLETED]
+- [x] Core Loop: Syllabus → Wiki → Quiz loop established.
 
 ## 🧱 Known Issues & Tech Debt
 
-- **Missing Documentation:** Need specific requirements for the 3D Lab and AI Tutor RAG pipeline.
-- **Testing Gap:** Zero automated tests in the current codebase (from `CONCERNS.md`).
-- **Architectural Risk:** Need to verify the dual-payment (Stripe + PayRex) logic on the server.
+- **Math Heaviness:** Global readiness average calculation in `recordMastery` is O(N) where N is taxonomy nodes. Acceptable for v1 ALE.
+- **Admin Manual:** Content still requires JSON fixture updates + `db:seed`. Phase 4 "Control Room" will fix this.
 
 ## 🏁 Critical Paths
 
-1.  **Syllabus Taxonomy:** Finalizing the master syllabus tree (Architecture focus).
-2.  **State Persistence:** Implementing the 10-second auto-save logic for the quiz engine.
-3.  **Readiness Score:** Designing the EMA (Exponential Moving Average) scoring engine.
+1.  **Admin Auth:** implementing role-based middleware for Phase 4 gating.
+2.  **Rich Text CRUD:** mapping TipTap JSON persistence to the Wiki article manager.

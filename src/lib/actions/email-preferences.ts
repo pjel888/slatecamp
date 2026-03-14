@@ -2,23 +2,34 @@
 
 import { createClient, getUser } from "@/lib/supabase/server";
 
-export async function updateEmailPreferences(prefs: {
-  final_stretch_daily?: boolean;
-}): Promise<void> {
+export async function getUserEmailPreferences() {
   const supabase = await createClient();
   const { data: { user } } = await getUser();
-  if (!user) return;
-  const { data: existing } = await supabase
-    .from("profiles")
-    .select("email_preferences")
-    .eq("id", user.id)
+  if (!user) return { email_notifications_enabled: true, marketing_emails_enabled: false };
+
+  const { data, error } = await supabase
+    .from("user_subscriptions")
+    .select("email_notifications_enabled, marketing_emails_enabled")
+    .eq("user_id", user.id)
     .single();
-  const current = (existing?.email_preferences as Record<string, boolean> | null) ?? {};
-  await supabase
-    .from("profiles")
-    .update({
-      email_preferences: { ...current, ...prefs },
-      updated_at: new Date().toISOString(),
-    })
-    .eq("id", user.id);
+
+  if (error || !data) return { email_notifications_enabled: true, marketing_emails_enabled: false };
+  return data;
+}
+
+export async function updateEmailPreferences(preferences: {
+  email_notifications_enabled?: boolean;
+  marketing_emails_enabled?: boolean;
+}) {
+  const supabase = await createClient();
+  const { data: { user } } = await getUser();
+  if (!user) return { error: "Not authenticated" };
+
+  const { error } = await supabase
+    .from("user_subscriptions")
+    .update(preferences)
+    .eq("user_id", user.id);
+
+  if (error) return { error: error.message };
+  return { success: true };
 }

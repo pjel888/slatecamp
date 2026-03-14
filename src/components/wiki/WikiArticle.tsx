@@ -40,8 +40,11 @@ const components = {
 }
 
 export async function WikiArticle({ article }: WikiArticleProps) {
+  if (!article) return null
+
   // Frontend fix: Replace literal \n sequences with actual newlines
-  const processedContent = article.content.replace(/\\n/g, '\n')
+  const content = article.content || ''
+  const processedContent = content.replace(/\\n/g, '\n')
   const headings = extractHeadings(processedContent)
 
   return (
@@ -52,7 +55,7 @@ export async function WikiArticle({ article }: WikiArticleProps) {
       </Suspense>
 
       {/* Main Content (Scrolling Area) */}
-      <article className='flex-1 min-w-0 overflow-y-auto p-4'>
+      <article className='flex-1 min-w-0 overflow-y-auto p-4 border-l border-zinc-50'>
         <header className='mb-8'>
           <div className='flex items-center gap-2 text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider'>
             <span>Wiki Article</span>
@@ -94,7 +97,11 @@ export async function WikiArticle({ article }: WikiArticleProps) {
               <div className='animate-pulse bg-zinc-100 h-64 w-full rounded-xl' />
             }
           >
-            <MDXRemote source={processedContent} components={components} />
+            {processedContent ? (
+              <MDXRemote source={processedContent} components={components} />
+            ) : (
+              <p className="text-muted-foreground italic">This article has no content yet.</p>
+            )}
           </Suspense>
         </div>
       </article>

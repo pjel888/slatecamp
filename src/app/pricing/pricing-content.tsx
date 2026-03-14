@@ -27,15 +27,11 @@ export const PricingContent = () => {
     <div className="mx-auto max-w-[1200px]">
       <div className="text-center">
         <h1
-          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight"
-          style={{ color: undefined }}
           className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight text-zinc-900"
         >
           Simple, transparent pricing
         </h1>
         <p
-          className={`${serif.className} mx-auto mt-4 max-w-md text-[20px] italic leading-snug`}
-          style={{ color: undefined }}
           className={`${serif.className} mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-zinc-600`}
         >
           Choose the plan that fits your goals.
@@ -46,8 +42,6 @@ export const PricingContent = () => {
         <div className="flex justify-center">
           <TabsList
             variant="line"
-            className="h-auto gap-6 border-b pb-px"
-            style={{ borderColor: undefined }}
             className="h-auto gap-6 border-b border-zinc-200 pb-px"
           >
             {TABS.map(({ value, label }) => (

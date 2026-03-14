@@ -19,17 +19,31 @@ function getPhase(daysLeft: number): FinalStretchPhase {
   return "final_approach";
 }
 
+/**
+ * Calculates Final Stretch state from user_global_stats.
+ */
 export async function getFinalStretchState(
-  examProfile: { target_exam_date: string | null; final_stretch_upsell_shown?: boolean } | null,
   tier: string
 ): Promise<FinalStretchState> {
-  if (!examProfile?.target_exam_date) {
+  const supabase = await createClient();
+  const { data: { user } } = await getUser();
+  if (!user) return { active: false, daysLeft: null, phase: null, showUpsellModal: false };
+
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('target_exam_date, final_stretch_upsell_shown')
+    .eq('user_id', user.id)
+    .maybeSingle();
+
+  if (!stats?.target_exam_date) {
     return { active: false, daysLeft: null, phase: null, showUpsellModal: false };
   }
-  const target = new Date(examProfile.target_exam_date);
+
+  const target = new Date(stats.target_exam_date);
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   target.setHours(0, 0, 0, 0);
+  
   const diffMs = target.getTime() - today.getTime();
   const daysLeft = Math.max(0, Math.ceil(diffMs / (24 * 60 * 60 * 1000)));
 
@@ -38,52 +52,45 @@ export async function getFinalStretchState(
   }
 
   const phase = getPhase(daysLeft);
-  const showUpsellModal =
-    tier === "free" && !examProfile.final_stretch_upsell_shown;
+  const showUpsellModal = tier === "free" && !stats.final_stretch_upsell_shown;
 
   return { active: true, daysLeft, phase, showUpsellModal };
 }
 
-export async function getWeakSubjectsForFinalStretch(
-  examProfileId: string,
+/**
+ * Identifies weak taxonomy nodes for final focus.
+ */
+export async function getWeakNodesForFinalStretch(
   limit = 3
-): Promise<{ subject_id: string; subject_name: string; percentage: number; suggestedCount: number }[]> {
+): Promise<{ node_id: string; node_name: string; percentage: number; suggestedCount: number }[]> {
   const supabase = await createClient();
+  const { data: { user } } = await getUser();
+  if (!user) return [];
+
   const { data: masteries } = await supabase
-    .from("subject_mastery")
-    .select("subject_id, mastery_score")
-    .eq("exam_profile_id", examProfileId)
-    .lt("mastery_score", 75)
-    .order("mastery_score", { ascending: true })
+    .from("user_node_mastery")
+    .select("topic_id, current_mastery_weight, taxonomy_tree(name)")
+    .eq("user_id", user.id)
+    .lt("current_mastery_weight", 0.75)
+    .order("current_mastery_weight", { ascending: true })
     .limit(limit);
 
   if (!masteries?.length) return [];
-  const subjectIds = masteries.map((m: { subject_id: string }) => m.subject_id);
-  const { data: subjects } = await supabase
-    .from("subjects")
-    .select("id, name, short_name")
-    .in("id", subjectIds);
-  const subjectMap = new Map(
-    (subjects ?? []).map((s: { id: string; short_name?: string; name: string }) => [
-      s.id,
-      s.short_name ?? s.name,
-    ])
-  );
-  return masteries.map((m: { subject_id: string; mastery_score: number | null }) => ({
-    subject_id: m.subject_id,
-    subject_name: subjectMap.get(m.subject_id) ?? "Subject",
-    percentage: Number(m.mastery_score ?? 0),
+
+  return masteries.map((m: any) => ({
+    node_id: m.topic_id,
+    node_name: m.taxonomy_tree?.name ?? "Topic",
+    percentage: Math.round(m.current_mastery_weight * 100),
     suggestedCount: 15,
   }));
 }
 
-export async function markFinalStretchUpsellShown(examProfileId: string): Promise<void> {
+export async function markFinalStretchUpsellShown(): Promise<void> {
   const supabase = await createClient();
   const { data: { user } } = await getUser();
   if (!user) return;
   await supabase
-    .from("exam_profiles")
+    .from("user_global_stats")
     .update({ final_stretch_upsell_shown: true })
-    .eq("id", examProfileId)
     .eq("user_id", user.id);
 }

@@ -113,7 +113,7 @@ export async function MarketingNav({
               <Link
                 href={ROUTES.LOGIN}
                 className={cn(
-                  'hidden rounded-full px-4 py-3 text-[13px] transition-colors duration-150 sm:block',
+                  'rounded-full px-4 py-3 text-[13px] transition-colors duration-150',
                   isDark
                     ? 'text-white/60 hover:text-white'
                     : 'text-zinc-500 hover:text-zinc-800',

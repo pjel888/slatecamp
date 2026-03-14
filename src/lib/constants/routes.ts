@@ -48,4 +48,5 @@ export const PUBLIC_PATHS: string[] = [
   ROUTES.LOGIN,
   ROUTES.REGISTER,
   ROUTES.FORGOT_PASSWORD,
+  "/auth/callback",
 ];

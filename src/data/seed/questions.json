@@ -1,0 +1,32 @@
+[
+  {
+    "question_id": "a1111111-1111-4111-a111-111111111111",
+    "topic_id": "33333333-3333-4333-a333-333333333333",
+    "text": "Which of the following is the primary advantage of a post-tensioned concrete slab over a conventionally reinforced slab?",
+    "options": [
+      { "id": "a", "text": "Lower material cost", "is_correct": false, "rationale": "Post-tensioning often uses higher-grade steel." },
+      { "id": "b", "text": "Faster curing time", "is_correct": false, "rationale": "Curing time is mix-dependent." },
+      { "id": "c", "text": "Reduced slab thickness and longer spans", "is_correct": true, "rationale": "Compression allows for efficiency." },
+      { "id": "d", "text": "No need for formwork", "is_correct": false, "rationale": "Formwork is still required." }
+    ],
+    "rationale": "Post-tensioning allows for thinner slabs and longer spans by compressing the concrete.",
+    "difficulty": 0.6,
+    "difficulty_rating": 0.5,
+    "discrimination_rating": 1.2
+  },
+  {
+    "question_id": "a5555555-5555-4555-a555-555555555555",
+    "topic_id": "44444444-4444-4444-a444-444444444444",
+    "text": "Which of the following is a key characteristic of a 'floating foundation' (mat foundation)?",
+    "options": [
+      { "id": "a", "text": "It literal floats on water", "is_correct": false, "rationale": "Foundations are anchored in soil." },
+      { "id": "b", "text": "It distributes the building load over the entire building area", "is_correct": true, "rationale": "Correct. Reduces differential settlement." },
+      { "id": "c", "text": "It is only used for temporary structures", "is_correct": false, "rationale": "Common in permanent high-rises." },
+      { "id": "d", "text": "It uses wooden piles exclusively", "is_correct": false, "rationale": "Typically reinforced concrete." }
+    ],
+    "rationale": "Mat foundations distribute weight over a broad area to prevent uneven settling.",
+    "difficulty": 0.5,
+    "difficulty_rating": 0.0,
+    "discrimination_rating": 1.0
+  }
+]

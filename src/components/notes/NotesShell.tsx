@@ -70,7 +70,7 @@ export function NotesShell({ tree }: NotesShellProps) {
 
   const handleCreateNote = useCallback(async () => {
     if (!subjectId) return
-    const result = await createNote({ subject_id: subjectId })
+    const result = await createNote({ topic_id: subjectId })
     if ('error' in result) return
     router.refresh()
     await loadNotes()
@@ -192,7 +192,7 @@ export function NotesShell({ tree }: NotesShellProps) {
     : notes
 
   return (
-    <div className='flex w-full flex-1 overflow-hidden bg-muted/30'>
+    <div className='flex w-full flex-1 overflow-hidden bg-muted/30 h-full'>
       {/* Column 1: Subjects */}
       <aside className='flex w-[220px] shrink-0 flex-col border-r border-border bg-card'>
         <div className='border-b border-border px-3 py-3'>
@@ -252,10 +252,17 @@ export function NotesShell({ tree }: NotesShellProps) {
           ) : (
             filteredNotes.map((note) => (
               <li key={note.id}>
-                <button
-                  type='button'
+                <div
+                  role='button'
+                  tabIndex={0}
                   onClick={() => openNote(note.id)}
-                  className={`flex w-full items-start gap-2 rounded-sm px-3 py-2.5 text-left transition-colors ${
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      openNote(note.id)
+                    }
+                  }}
+                  className={`flex w-full items-start gap-2 rounded-sm px-3 py-2.5 text-left transition-colors cursor-pointer ${
                     currentNote?.id === note.id
                       ? 'bg-secondary'
                       : 'hover:bg-secondary/60'
@@ -298,7 +305,7 @@ export function NotesShell({ tree }: NotesShellProps) {
                       <Trash2 className='h-3.5 w-3.5' strokeWidth={1.5} />
                     </button>
                   </div>
-                </button>
+                </div>
               </li>
             ))
           )}
