@@ -193,28 +193,6 @@ export function NotesShell({ tree }: NotesShellProps) {
 
   return (
     <div className='flex w-full flex-1 overflow-hidden bg-muted/30 h-full'>
-      {/* Column 1: Subjects */}
-      <aside className='flex w-[220px] shrink-0 flex-col border-r border-border bg-card'>
-        <div className='border-b border-border px-3 py-3'>
-          <h2 className='text-sm font-semibold text-foreground tracking-tight'>
-            Subjects
-          </h2>
-          <p className='text-[11px] text-muted-foreground mt-0.5'>
-            Wiki categories
-          </p>
-        </div>
-        <nav className='flex-1 overflow-y-auto p-2'>
-          {tree.map((cat) => (
-            <SubjectRow
-              key={cat.id}
-              category={cat}
-              subjectId={subjectId}
-              onSelect={setSubjectId}
-            />
-          ))}
-        </nav>
-      </aside>
-
       {/* Column 2: Notes list */}
       <aside className='flex w-[280px] shrink-0 flex-col border-r border-border bg-card'>
         <div className='border-b border-border p-3'>
