@@ -13,7 +13,8 @@ export async function getWikiArticleBySlug(slug: string): Promise<WikiArticle | 
     .from("wiki_articles")
     .select("*")
     .eq("slug", slug)
-    .single();
+    .limit(1)
+    .maybeSingle();
 
   if (error) {
     console.error(`[getWikiArticleBySlug] Error fetching article for slug "${slug}":`, error.message)

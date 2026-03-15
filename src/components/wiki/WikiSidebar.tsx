@@ -29,11 +29,27 @@ export function WikiSidebar({
       getTaxonomyTree(disciplineId).then((data) => {
         console.log('[WikiSidebar] Tree data received. Count:', data.length)
         setNodes(data)
+        
         // Auto-expand nodes that contain the active slug
-        const activeNode = data.find((n) => n.slug && pathname.includes(n.slug))
-        if (activeNode?.parent_id) {
-          setExpanded((prev) => ({ ...prev, [activeNode.parent_id!]: true }))
+        const newExpanded = { ...expanded }
+        const expandParents = (nodeId: string) => {
+           const node = data.find(n => n.node_id === nodeId)
+           if (node) {
+              newExpanded[node.node_id] = true
+              if (node.parent_id) expandParents(node.parent_id)
+           }
         }
+        
+        const activeNodes = data.filter((n) => n.slug && pathname.includes(n.slug))
+        const activeArticles = data.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
+        
+        activeNodes.forEach(n => expandParents(n.node_id))
+        activeArticles.forEach(a => {
+           const parentNode = data.find(n => n.articles?.some(art => art.article_id === a.article_id))
+           if (parentNode) expandParents(parentNode.node_id)
+        })
+        
+        setExpanded((prev) => ({ ...prev, ...newExpanded }))
         setLoading(false)
       })
     }
@@ -48,7 +64,7 @@ export function WikiSidebar({
 
   if (!disciplineId) {
     return (
-      <aside className='w-64 shrink-0 border-r border-zinc-200 bg-zinc-50/50 h-full overflow-y-auto rounded-tl-xl'>
+      <aside className='w-full h-full bg-background overflow-y-auto'>
         <div className='p-6 text-center space-y-4 h-full flex flex-col items-center justify-center'>
           <div className='bg-zinc-100 p-3 rounded-2xl inline-block'>
             <Book className='h-6 w-6 text-zinc-400' />
@@ -86,21 +102,28 @@ export function WikiSidebar({
     // If it's a leaf node with NO articles, hide it (unless it's Level 1)
     if (!isCategory && !hasArticles) return null
 
+    const checkIsActive = (n: TaxonomyNode): boolean => {
+      if (n.slug && pathname.includes(n.slug)) return true
+      if (n.articles?.some(a => a.slug && pathname.includes(a.slug))) return true
+      const childNodes = nodes.filter(child => child.parent_id === n.node_id)
+      return childNodes.some(child => checkIsActive(child))
+    }
+
+    const isActive = checkIsActive(node)
     const isExpanded = expanded[node.node_id]
-    const isActive = node.slug && pathname.includes(node.slug)
 
     return (
-      <div key={node.node_id} className='space-y-0.5'>
+      <div key={node.node_id} className='space-y-0.5 min-w-0'>
         {isCategory ? (
           /* CATEGORY: Toggle and Navigation */
           <div className={cn(
-            'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group',
+            'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group min-w-0',
             isActive ? 'bg-blue-50/50' : 'hover:bg-zinc-100',
             isChild && 'pl-2'
           )}>
             <button
               onClick={() => toggle(node.node_id)}
-              className="p-1 hover:bg-zinc-200 rounded text-zinc-400"
+              className="p-1 hover:bg-zinc-200 rounded text-zinc-400 shrink-0"
             >
               {isExpanded ? (
                 <ChevronDown className='h-3.5 w-3.5' />
@@ -111,7 +134,7 @@ export function WikiSidebar({
             <Link 
               href={`/dashboard/wiki/${node.slug ?? ''}`}
               className={cn(
-                'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate',
+                'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate min-w-0',
                 isActive ? 'text-blue-700' : 'text-zinc-700'
               )}
             >
@@ -124,7 +147,7 @@ export function WikiSidebar({
           <Link
             href={`/dashboard/wiki/${node.slug ?? ''}`}
             className={cn(
-              'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group',
+              'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group min-w-0',
               isActive
                 ? 'text-blue-700 bg-blue-50'
                 : 'text-zinc-600 hover:text-zinc-900 hover:bg-white',
@@ -142,33 +165,34 @@ export function WikiSidebar({
         )}
 
         {isExpanded && isCategory && (
-          <div className='ml-3.5 pl-3 border-l border-zinc-200/60 mt-0.5 mb-1 space-y-0.5'>
+          <div className='ml-3.5 pl-3 border-l border-zinc-200/60 mt-0.5 mb-1 space-y-0.5 min-w-0'>
             {/* Render sub-nodes */}
             {children.map((child) => renderNode(child, true))}
 
             {/* Render direct articles mapped to this category node */}
-            {nodeArticles.map((art) => (
-              <Link
-                key={art.article_id}
-                href={`/dashboard/wiki/${art.slug}`}
-                className={cn(
-                  'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all',
-                  pathname.includes(art.slug || '')
-                    ? 'bg-blue-50 text-blue-700 font-medium'
-                    : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
-                )}
-              >
-                <FileText
+            {nodeArticles.map((art) => {
+              const isArtActive = pathname.includes(art.slug || '')
+              return (
+                <Link
+                  key={art.article_id}
+                  href={`/dashboard/wiki/${art.slug}`}
                   className={cn(
-                    'h-3 w-3 shrink-0',
-                    pathname.includes(art.slug || '')
-                      ? 'text-blue-500'
-                      : 'text-zinc-300',
+                    'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all min-w-0',
+                    isArtActive
+                      ? 'bg-blue-50 text-blue-700 font-medium'
+                      : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
                   )}
-                />
-                <span className='truncate'>{art.title}</span>
-              </Link>
-            ))}
+                >
+                  <FileText
+                    className={cn(
+                      'h-3 w-3 shrink-0',
+                      isArtActive ? 'text-blue-500' : 'text-zinc-300',
+                    )}
+                  />
+                  <span className='truncate'>{art.title}</span>
+                </Link>
+              )
+            })}
           </div>
         )}
       </div>
@@ -176,7 +200,7 @@ export function WikiSidebar({
   }
 
   return (
-    <aside className='w-64 shrink-0 border-r border-zinc-200 bg-zinc-50/50 h-full overflow-y-auto rounded-tl-xl'>
+    <aside className='w-full h-full bg-background overflow-y-auto'>
       <div className='p-2'>
         <div className='flex items-center gap-2 mb-6 p-2'>
           <div className='bg-blue-600 rounded-sm p-1'>
