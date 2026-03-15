@@ -65,7 +65,6 @@ export async function updateQuizSession(
   updates: {
     current_question_index?: number
     status?: SessionStatus
-    completed_at?: string | null
   },
 ) {
   const supabase = await createClient()
@@ -260,7 +259,6 @@ export async function saveInteraction(interaction: {
     {
       ...interaction,
       user_id: user.id,
-      suspected_guess,
       interaction_timestamp: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     },

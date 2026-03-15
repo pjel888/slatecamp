@@ -21,15 +21,15 @@ export function TestingHub({ initialSession, subjects, onStartSession, onResumeS
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Today's Recommendation Banner (PRD Section 1) */}
-      <div className="mb-12 p-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-lg shadow-blue-200/50">
-        <div className="bg-white/95 backdrop-blur-sm p-6 rounded-[14px] flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="mb-12 p-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-sm shadow-lg shadow-blue-200/50">
+        <div className="bg-white/95 backdrop-blur-sm p-6 rounded-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5 text-center md:text-left">
-            <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center shrink-0 border border-blue-100">
+            <div className="w-14 h-14 rounded-sm bg-blue-50 flex items-center justify-center shrink-0 border border-blue-100">
               <Sparkles className="h-7 w-7 text-blue-600" />
             </div>
             <div>
               <h2 className="text-xl font-bold text-zinc-900 tracking-tight">Today's Recommendation</h2>
-              <p className="text-zinc-500 mt-1 max-w-xl">
+              <p className="text-zinc-500 mt-1 max-w-xl text-sm">
                 Your last session was 3 days ago. Your Structural Design node dropped to 48%. 
                 We recommend a <span className="font-bold text-blue-600">Camp Mode</span> session targeting that topic today.
               </p>
@@ -37,7 +37,7 @@ export function TestingHub({ initialSession, subjects, onStartSession, onResumeS
           </div>
           <button 
             onClick={() => onStartSession({ mode: 'camp', count: 10 })}
-            className="w-full md:w-auto px-8 py-4 bg-zinc-900 text-white rounded-xl font-bold text-sm hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
+            className="w-full md:w-auto px-8 py-4 bg-blue-600 text-white rounded-sm font-bold text-sm hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
           >
             Start Recommended Session
             <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -46,8 +46,8 @@ export function TestingHub({ initialSession, subjects, onStartSession, onResumeS
       </div>
 
       <header className="mb-12">
-        <h1 className="text-3xl font-bold text-zinc-900 tracking-tight">Testing Hub</h1>
-        <p className="text-zinc-500 mt-2">Select a mode to sharpen your architectural knowledge.</p>
+        <h1 className="text-2xl font-bold text-zinc-900 tracking-tight">Testing Hub</h1>
+        <p className="text-zinc-500 mt-2 text-sm">Select a mode to sharpen your architectural knowledge.</p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -125,9 +125,9 @@ export function TestingHub({ initialSession, subjects, onStartSession, onResumeS
         {/* Custom Session - Purple (PRD) */}
         <div 
           onClick={() => setIsBuilderOpen(true)}
-          className="group relative bg-white border border-zinc-200 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:border-zinc-300 cursor-pointer flex flex-col h-full"
+          className="group relative bg-white border border-zinc-200 rounded-sm p-6 transition-all duration-300 hover:shadow-xl hover:border-zinc-300 cursor-pointer flex flex-col h-full"
         >
-          <div className="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+          <div className="w-12 h-12 rounded-sm bg-purple-500 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
             <Settings2 className="h-6 w-6 text-white" />
           </div>
           <div className="flex-1">
@@ -135,7 +135,7 @@ export function TestingHub({ initialSession, subjects, onStartSession, onResumeS
             <p className="text-sm text-zinc-500 leading-relaxed mb-6">"Your rules" - Targeted topic drilling with custom timers and feedback rules.</p>
           </div>
           <div className="mt-auto">
-            <div className="w-full py-2 bg-zinc-50 rounded-xl text-zinc-900 text-sm font-bold flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
+            <div className="w-full py-2 bg-zinc-50 rounded-sm text-zinc-900 text-sm font-bold flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
               Configure Session
             </div>
           </div>

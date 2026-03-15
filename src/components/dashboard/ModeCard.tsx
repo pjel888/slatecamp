@@ -31,14 +31,14 @@ export function ModeCard({
   return (
     <div
       className={cn(
-        'group relative bg-white border border-zinc-200 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:border-zinc-300 flex flex-col h-full',
+        'group relative bg-white border border-zinc-200 rounded-sm p-6 transition-all duration-300 hover:shadow-xl hover:border-zinc-300 flex flex-col h-full',
         disabled && 'opacity-60 grayscale pointer-events-none',
       )}
     >
       {/* Icon Header */}
       <div
         className={cn(
-          'w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110',
+          'w-12 h-12 rounded-sm flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110',
           accentColor,
         )}
       >
@@ -58,10 +58,10 @@ export function ModeCard({
         <Button
           onClick={onPrimaryAction}
           className={cn(
-            'w-full font-semibold shadow-sm transition-all',
+            'w-full font-semibold shadow-sm transition-all rounded-sm',
             hasActiveSession
               ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
-              : 'bg-blue-500 text-white hover:bg-zinc-800',
+              : 'bg-blue-600 text-white hover:bg-blue-700',
           )}
         >
           {hasActiveSession ? (
@@ -77,7 +77,7 @@ export function ModeCard({
           <Button
             variant='outline'
             onClick={onSecondaryAction}
-            className='w-full border-blue-200 text-blue-600 hover:bg-blue-50 font-semibold'
+            className='w-full border-blue-200 text-blue-600 hover:bg-blue-50 font-semibold rounded-sm'
           >
             <Play className='mr-2 h-4 w-4 fill-current' /> Resume Session
           </Button>
@@ -86,7 +86,7 @@ export function ModeCard({
 
       {/* Status Badge */}
       {hasActiveSession && (
-        <div className='absolute top-4 right-4 bg-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full'>
+        <div className='absolute top-4 right-4 bg-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm'>
           In Progress
         </div>
       )}

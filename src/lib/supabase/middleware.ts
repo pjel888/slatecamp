@@ -62,7 +62,12 @@ export async function updateSession(request: NextRequest) {
   }
 
   // Logged-in user on public login pages
-  if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin') {
+  if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER) {
+    return redirectWithCookies(ROUTES.DASHBOARD);
+  }
+
+  // Logged-in user on admin portal
+  if (pathname === '/admin') {
     const isAdmin = await canReviewContent();
     return redirectWithCookies(isAdmin ? '/admin/dashboard' : ROUTES.DASHBOARD);
   }

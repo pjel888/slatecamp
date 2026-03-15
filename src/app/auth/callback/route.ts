@@ -21,9 +21,9 @@ export async function GET(request: Request) {
       
       let redirectPath = next;
       
-      // If admin and no specific path, or specifically coming from /admin login
-      if (isUserAdmin && (next === '/dashboard' || next === '/admin/dashboard')) {
-        redirectPath = "/admin/dashboard";
+      // Only redirect to admin dashboard if specifically requested
+      if (isUserAdmin && next.startsWith('/admin')) {
+        redirectPath = next;
       } else if (!isUserAdmin && redirectPath.startsWith('/admin')) {
         redirectPath = "/dashboard";
       }

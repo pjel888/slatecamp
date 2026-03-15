@@ -7,7 +7,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Info,
-  AlertCircle,
   Flag,
   Delete,
   Timer,
@@ -16,7 +15,7 @@ import {
   MessageSquare,
   X,
   XCircle,
-  AlertTriangle
+  AlertTriangle,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
@@ -29,10 +28,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from '@/components/ui/alert-dialog'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
 import { saveInteraction, updateQuizSession } from '@/lib/actions/quiz'
+import { ResultsSummary } from './ResultsSummary'
 
 interface QuizRendererProps {
   session: QuizSession
@@ -45,13 +45,17 @@ export function QuizRenderer({
   session,
   questions,
   initialInteractions,
-  onExit
+  onExit,
 }: QuizRendererProps) {
   const mode = session.test_mode
-  // Decisions Step 1: Storm Mode Strictness
   const strictMode = mode === 'storm' || mode === 'proof_sim'
-  
-  const [currentIndex, setCurrentIndex] = useState(session.current_question_index || 0)
+
+  const [currentIndex, setCurrentIndex] = useState(
+    session.current_question_index || 0,
+  )
+  const [isCompleted, setIsCompleted] = useState(false)
+  const [isRationaleVisible, setIsRationaleVisible] = useState(false)
+
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     const initialAnswers: Record<string, string> = {}
     initialInteractions.forEach((i) => {
@@ -59,16 +63,18 @@ export function QuizRenderer({
     })
     return initialAnswers
   })
-  
-  const [struckOptions, setStruckOptions] = useState<Record<string, Set<string>>>(() => {
+
+  const [struckOptions, setStruckOptions] = useState<
+    Record<string, Set<string>>
+  >(() => {
     const initial: Record<string, Set<string>> = {}
-    questions.forEach(q => initial[q.question_id] = new Set())
+    questions.forEach((q) => (initial[q.question_id] = new Set()))
     return initial
   })
 
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(() => {
     const initialFlags = new Set<string>()
-    initialInteractions.forEach(i => {
+    initialInteractions.forEach((i) => {
       if (i.is_flagged) initialFlags.add(i.question_id)
     })
     return initialFlags
@@ -77,8 +83,11 @@ export function QuizRenderer({
   const [checkedQuestions, setCheckedQuestions] = useState<Set<string>>(() => {
     const initialChecked = new Set<string>()
     initialInteractions.forEach((i) => {
-      // In strict mode, we don't show feedback immediately
-      if (!strictMode && i.selected_option_id && (mode === 'camp' || mode === 'chill' || mode === 'blindspot')) {
+      if (
+        !strictMode &&
+        i.selected_option_id &&
+        (mode === 'camp' || mode === 'chill' || mode === 'blindspot')
+      ) {
         initialChecked.add(i.question_id)
       }
     })
@@ -89,63 +98,65 @@ export function QuizRenderer({
   const [countdown, setCountdown] = useState<number | null>(null)
   const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0)
   const [isAutoSubmitting, setIsAutoSubmitting] = useState(false)
-  
-  const lastSavedRef = useRef<string>(JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) }))
+
+  const lastSavedRef = useRef<string>(
+    JSON.stringify({
+      answers,
+      currentIndex,
+      flaggedQuestions: Array.from(flaggedQuestions),
+    }),
+  )
   const startTimeRef = useRef<number>(Date.now())
 
   const currentQuestion = questions[currentIndex]
   const options = (currentQuestion?.options as unknown as Choice[]) || []
+  const correctOptionId =
+    currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
 
-  // Step 2: Auto-submit on focus loss (Strict Mode)
   useEffect(() => {
     if (!strictMode || session.status === 'completed') return
-
     const handleFocusLoss = async () => {
       if (document.visibilityState === 'hidden' || !document.hasFocus()) {
         setIsAutoSubmitting(true)
         try {
-          await updateQuizSession(session.session_id, {
-            status: 'completed',
-            completed_at: new Date().toISOString()
-          })
-          // Force refresh or exit to show "cold score"
-          onExit()
+          await updateQuizSession(session.session_id, { status: 'completed' })
+          setIsCompleted(true)
         } catch (error) {
           console.error('Auto-submit failed:', error)
         }
       }
     }
-
     window.addEventListener('blur', handleFocusLoss)
     document.addEventListener('visibilitychange', handleFocusLoss)
-    
     return () => {
       window.removeEventListener('blur', handleFocusLoss)
       document.removeEventListener('visibilitychange', handleFocusLoss)
     }
-  }, [strictMode, session.session_id, session.status, onExit])
+  }, [strictMode, session.session_id, session.status])
 
   useEffect(() => {
     if (strictMode) {
       const totalSeconds = questions.length * 120
       setCountdown(totalSeconds)
       const timer = setInterval(() => {
-        setCountdown(prev => (prev !== null && prev > 0 ? prev - 1 : 0))
+        setCountdown((prev) => (prev !== null && prev > 0 ? prev - 1 : 0))
       }, 1000)
       return () => clearInterval(timer)
     }
   }, [strictMode, questions.length])
 
-  const correctOptionId = currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
-
   useEffect(() => {
     let timer: any
-    if (!strictMode && checkedQuestions.has(currentQuestion?.question_id) && (mode === 'camp' || mode === 'blindspot')) {
+    if (
+      !strictMode &&
+      checkedQuestions.has(currentQuestion?.question_id) &&
+      (mode === 'camp' || mode === 'blindspot')
+    ) {
       const isCorrect = answers[currentQuestion.question_id] === correctOptionId
       const dwellTime = isCorrect ? 3 : 5
       setDwellTimeRemaining(dwellTime)
       timer = setInterval(() => {
-        setDwellTimeRemaining(prev => {
+        setDwellTimeRemaining((prev) => {
           if (prev <= 1) {
             clearInterval(timer)
             return 0
@@ -155,17 +166,15 @@ export function QuizRenderer({
       }, 1000)
     }
     return () => clearInterval(timer)
-  }, [currentIndex, checkedQuestions, mode, strictMode, answers, currentQuestion?.question_id, correctOptionId])
-
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      const currentState = JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) })
-      if (currentState !== lastSavedRef.current) {
-        await handleSave()
-      }
-    }, 10000)
-    return () => clearInterval(interval)
-  }, [answers, currentIndex, flaggedQuestions])
+  }, [
+    currentIndex,
+    checkedQuestions,
+    mode,
+    strictMode,
+    answers,
+    currentQuestion?.question_id,
+    correctOptionId,
+  ])
 
   const handleSave = useCallback(async () => {
     setIsSaving(true)
@@ -173,34 +182,48 @@ export function QuizRenderer({
       await updateQuizSession(session.session_id, {
         current_question_index: currentIndex,
       })
-
       const currentAnswer = answers[currentQuestion.question_id]
       const isFlagged = flaggedQuestions.has(currentQuestion.question_id)
-      
       if (currentAnswer || isFlagged) {
         await saveInteraction({
           session_id: session.session_id,
           question_id: currentQuestion.question_id,
           topic_id: currentQuestion.topic_id,
           selected_option_id: currentAnswer || null,
-          is_correct: (currentAnswer || null) === (currentQuestion.correct_option_id ?? currentQuestion.correct_answer),
+          is_correct: (currentAnswer || null) === correctOptionId,
           time_spent_ms: Date.now() - startTimeRef.current,
         } as any)
       }
-      lastSavedRef.current = JSON.stringify({ answers, currentIndex, flaggedQuestions: Array.from(flaggedQuestions) })
+      lastSavedRef.current = JSON.stringify({
+        answers,
+        currentIndex,
+        flaggedQuestions: Array.from(flaggedQuestions),
+      })
     } catch (error) {
       console.error('Failed to auto-save:', error)
     } finally {
       setIsSaving(false)
     }
-  }, [session.session_id, currentIndex, answers, currentQuestion, flaggedQuestions])
+  }, [
+    session.session_id,
+    currentIndex,
+    answers,
+    currentQuestion,
+    flaggedQuestions,
+    correctOptionId,
+  ])
 
   const handleChoiceSelect = (choiceId: string) => {
     if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
-    
     if (mode === 'chill') {
-      setAnswers(prev => ({ ...prev, [currentQuestion.question_id]: choiceId }))
-      setCheckedQuestions(prev => new Set(prev).add(currentQuestion.question_id))
+      setAnswers((prev) => ({
+        ...prev,
+        [currentQuestion.question_id]: choiceId,
+      }))
+      setCheckedQuestions((prev) =>
+        new Set(prev).add(currentQuestion.question_id),
+      )
+      setIsRationaleVisible(true)
       handleSave()
       return
     }
@@ -210,7 +233,7 @@ export function QuizRenderer({
   const toggleStrikethrough = (choiceId: string, e: React.MouseEvent) => {
     e.stopPropagation()
     if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
-    setStruckOptions(prev => {
+    setStruckOptions((prev) => {
       const currentSet = prev[currentQuestion.question_id] || new Set()
       const next = new Set(currentSet)
       if (next.has(choiceId)) next.delete(choiceId)
@@ -220,9 +243,10 @@ export function QuizRenderer({
   }
 
   const toggleFlag = () => {
-    setFlaggedQuestions(prev => {
+    setFlaggedQuestions((prev) => {
       const next = new Set(prev)
-      if (next.has(currentQuestion.question_id)) next.delete(currentQuestion.question_id)
+      if (next.has(currentQuestion.question_id))
+        next.delete(currentQuestion.question_id)
       else next.add(currentQuestion.question_id)
       return next
     })
@@ -230,26 +254,24 @@ export function QuizRenderer({
 
   const handleCheckAnswer = () => {
     if (strictMode) {
-      // In Storm mode, "Submit Answer" just saves and moves to next or stays recorded
       handleSave()
       handleNext()
       return
     }
-    setCheckedQuestions((prev) => {
-      const next = new Set(prev)
-      next.add(currentQuestion.question_id)
-      return next
-    })
+    setCheckedQuestions((prev) =>
+      new Set(prev).add(currentQuestion.question_id),
+    )
+    setIsRationaleVisible(true)
     handleSave()
   }
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1)
+      setIsRationaleVisible(false)
       startTimeRef.current = Date.now()
       setDwellTimeRemaining(0)
     } else if (strictMode) {
-      // Final question in Storm mode
       handleFinalSubmit()
     }
   }
@@ -257,11 +279,8 @@ export function QuizRenderer({
   const handleFinalSubmit = async () => {
     setIsSaving(true)
     try {
-      await updateQuizSession(session.session_id, {
-        status: 'completed',
-        completed_at: new Date().toISOString()
-      })
-      onExit()
+      await updateQuizSession(session.session_id, { status: 'completed' })
+      setIsCompleted(true)
     } catch (error) {
       console.error('Final submit failed:', error)
     } finally {
@@ -272,22 +291,16 @@ export function QuizRenderer({
   const handleBack = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1)
+      setIsRationaleVisible(false)
       startTimeRef.current = Date.now()
       setDwellTimeRemaining(0)
     }
   }
 
-  if (!currentQuestion) {
-    return (
-      <div className='flex min-h-screen items-center justify-center px-6'>
-        <p className='text-zinc-500'>No questions in this session.</p>
-      </div>
-    )
-  }
-
-  const isChecked = !strictMode && checkedQuestions.has(currentQuestion.question_id)
-  const selectedAnswer = answers[currentQuestion.question_id]
-  const isFlagged = flaggedQuestions.has(currentQuestion.question_id)
+  const isChecked =
+    !strictMode && checkedQuestions.has(currentQuestion?.question_id)
+  const selectedAnswer = answers[currentQuestion?.question_id]
+  const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -295,97 +308,171 @@ export function QuizRenderer({
     return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
-  // Decisions Step 1: Pacing Alert inline with timer
   const isAheadOfPace = useMemo(() => {
-    const elapsed = (questions.length * 120) - (countdown || 0)
+    const elapsed = questions.length * 120 - (countdown || 0)
     const expected = (currentIndex + 1) * 120
     return elapsed < expected
   }, [countdown, currentIndex, questions.length])
 
+  if (isCompleted) {
+    return (
+      <ResultsSummary
+        questions={questions}
+        answers={answers}
+        testMode={mode}
+        onExit={onExit}
+        onRestart={onExit}
+      />
+    )
+  }
+
+  if (!currentQuestion) return null
+
   return (
-    <div className={cn(
-      'flex flex-col min-h-screen max-w-5xl mx-auto px-6 py-8 gap-6 transition-colors duration-500',
-      strictMode ? 'bg-zinc-50/50' : 'bg-white'
-    )}>
-      {/* Auto-submit overlay */}
+    <div
+      className={cn(
+        'flex flex-col h-full max-w-6xl mx-auto px-6 overflow-hidden transition-colors duration-500',
+        strictMode ? 'bg-zinc-50/50' : 'bg-white',
+      )}
+    >
       {isAutoSubmitting && (
-        <div className="fixed inset-0 z-50 bg-white/80 backdrop-blur-sm flex items-center justify-center">
-          <div className="bg-white p-8 rounded-3xl shadow-2xl border border-zinc-200 text-center space-y-4">
-            <AlertTriangle className="h-12 w-12 text-red-600 mx-auto animate-pulse" />
-            <h2 className="text-2xl font-bold text-zinc-900">Integrity Violation</h2>
-            <p className="text-zinc-500 max-w-xs">Focus lost during Storm Mode. Session is being automatically submitted.</p>
+        <div className='fixed inset-0 z-[100] bg-white/80 backdrop-blur-sm flex items-center justify-center'>
+          <div className='bg-white p-8 rounded-sm shadow-2xl border border-zinc-200 text-center space-y-4'>
+            <AlertTriangle className='h-12 w-12 text-red-600 mx-auto animate-pulse' />
+            <h2 className='text-xl font-bold text-zinc-900'>
+              Integrity Violation
+            </h2>
+            <p className='text-zinc-500 text-sm max-w-xs'>
+              Focus lost during Storm Mode. Session is being automatically
+              submitted.
+            </p>
           </div>
         </div>
       )}
 
-      {/* 1. Top Bar - Mode & Progress */}
-      <div className='space-y-4'>
-        <div className='flex justify-between items-center'>
-          <div className='flex items-center gap-3'>
-             <div className={cn(
-               'px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-widest',
-               mode === 'camp' && 'bg-teal-100 text-teal-700',
-               strictMode && 'bg-red-100 text-red-700',
-               mode === 'chill' && 'bg-blue-100 text-blue-700',
-               mode === 'blindspot' && 'bg-amber-100 text-amber-700',
-             )}>
-               {mode === 'proof_sim' ? 'Proof Simulation™' : `${mode} mode`}
-             </div>
-             <span className='text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400'>
-               {currentQuestion.subject_id || 'Architecture'} • Question {currentIndex + 1} of {questions.length}
-             </span>
+      {/* 1. HEADER */}
+      <header className='pt-6 shrink-0 space-y-4'>
+        <div className='flex justify-between items-end'>
+          <div className='space-y-1.5'>
+            <div className='flex items-center gap-2'>
+              <span className='text-[11px] font-bold uppercase tracking-widest text-zinc-900'>
+                Question {currentIndex + 1} of {questions.length}
+              </span>
+              <div
+                className={cn(
+                  'px-2 py-0.5 rounded-sm text-[9px] font-bold uppercase tracking-widest',
+                  mode === 'camp' && 'bg-blue-600 text-white',
+                  strictMode && 'bg-red-600 text-white',
+                  mode === 'chill' && 'bg-blue-100 text-blue-700',
+                  mode === 'blindspot' && 'bg-amber-100 text-amber-700',
+                )}
+              >
+                {mode === 'proof_sim'
+                  ? 'Proof Simulation™'
+                  : mode === 'camp'
+                    ? 'Camp Mode — Learning'
+                    : mode === 'storm'
+                      ? `Storm Mode: ${currentQuestion.subject_id || 'Exam'}`
+                      : mode === 'chill'
+                        ? 'Chill Mode'
+                        : mode === 'blindspot'
+                          ? 'Blindspot Mode'
+                          : `${mode} mode`}
+              </div>
+            </div>
           </div>
-          
+
           <div className='flex items-center gap-4'>
-            {(strictMode) && countdown !== null && (
-              <div className={cn(
-                'flex flex-col items-end gap-0.5'
-              )}>
-                <div className={cn(
-                  'flex items-center gap-2 font-mono font-bold text-sm',
-                  countdown < 300 ? 'text-red-500 animate-pulse' : 'text-zinc-600'
-                )}>
-                  <Timer className='h-4 w-4' />
+            {strictMode && countdown !== null && (
+              <div className='flex items-center gap-3 bg-zinc-100 px-3 py-1.5 rounded-sm border border-zinc-200'>
+                <div
+                  className={cn(
+                    'flex items-center gap-2 font-mono font-bold text-xs',
+                    countdown < 300
+                      ? 'text-red-500 animate-pulse'
+                      : 'text-zinc-600',
+                  )}
+                >
+                  <Timer className='h-3.5 w-3.5' />
                   {formatTime(countdown)}
                 </div>
-                {/* Decisions Step 1: Inline Pacing Alert */}
-                <span className={cn(
-                  'text-[8px] font-black uppercase tracking-tighter px-1 rounded',
-                  isAheadOfPace ? 'text-emerald-600 bg-emerald-50' : 'text-amber-600 bg-amber-50'
-                )}>
-                  {isAheadOfPace ? 'Ahead of Pace' : 'Behind Pace'}
+                <span
+                  className={cn(
+                    'text-[8px] font-black uppercase tracking-tighter px-1 rounded-sm',
+                    isAheadOfPace
+                      ? 'text-emerald-600 bg-emerald-50'
+                      : 'text-amber-600 bg-amber-50',
+                  )}
+                >
+                  {isAheadOfPace ? 'Ahead' : 'Behind'}
                 </span>
               </div>
             )}
-            
-            <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <Button variant="ghost" size="sm" className="h-8 text-zinc-400 hover:text-red-600 font-bold text-[10px] uppercase tracking-widest">
-                  <X className="h-3 w-3 mr-1" />
-                  Exit Exam
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Exit exam?</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    Your progress in this session will be lost. Are you sure you want to exit?
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Keep going</AlertDialogCancel>
-                  <AlertDialogAction onClick={onExit} className="bg-red-600 hover:bg-red-700">Exit exam</AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
+
+            <div className='flex items-center gap-1'>
+              <Button
+                onClick={toggleFlag}
+                variant='ghost'
+                size='sm'
+                className={cn(
+                  'h-8 rounded-sm text-[9px] font-bold uppercase tracking-widest',
+                  isFlagged
+                    ? 'text-amber-600 bg-amber-50'
+                    : 'text-zinc-400 hover:bg-zinc-50',
+                )}
+              >
+                <Flag
+                  className={cn('h-3.5 w-3.5', isFlagged && 'fill-current')}
+                />{' '}
+                Flag
+              </Button>
+              <Button
+                variant='ghost'
+                size='sm'
+                className='h-8 rounded-sm text-[9px] font-bold uppercase tracking-widest text-zinc-400 hover:bg-zinc-50'
+              >
+                <MessageSquare className='h-3.5 w-3.5' /> AI
+              </Button>
+              <div className='w-px h-4 bg-zinc-200 mx-1' />
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button
+                    variant='ghost'
+                    size='sm'
+                    className='h-8 w-8 text-zinc-400 hover:text-red-600 rounded-sm'
+                  >
+                    <X className='h-4 w-4' />
+                  </Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent className='rounded-sm'>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Exit session?</AlertDialogTitle>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel className='rounded-sm'>
+                      Cancel
+                    </AlertDialogCancel>
+                    <AlertDialogAction
+                      onClick={onExit}
+                      className='bg-red-600 hover:bg-red-700 rounded-sm'
+                    >
+                      Exit
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </div>
           </div>
         </div>
-        
-        <div className='h-1.5 w-full bg-zinc-100 rounded-full overflow-hidden border border-zinc-200/30'>
+        <div className='h-1.5 w-full bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200/30'>
           <motion.div
             className={cn(
               'h-full transition-colors',
-              mode === 'camp' ? 'bg-teal-500' : strictMode ? 'bg-red-500' : 'bg-blue-500'
+              mode === 'camp'
+                ? 'bg-blue-600'
+                : strictMode
+                  ? 'bg-red-600'
+                  : 'bg-blue-500',
             )}
             initial={{ width: 0 }}
             animate={{
@@ -393,232 +480,218 @@ export function QuizRenderer({
             }}
           />
         </div>
-      </div>
+      </header>
 
-      {/* 2. Main Question Card */}
-      <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 items-start'>
-        <div className='lg:col-span-8 space-y-6'>
-          <div className='bg-white border border-zinc-200 rounded-2xl p-8 shadow-sm'>
-            <h2 className='text-xl md:text-2xl font-semibold text-zinc-900 leading-[1.4] tracking-tight mb-8'>
+      {/* 2. MAIN CONTENT - No scrolling body */}
+      <main className='flex flex-col  py-2'>
+        {/* HERO IMAGE */}
+        <div className='shrink-0 max-h-[30vh] h-[200px] mb-2 w-full bg-zinc-100 border border-zinc-200 rounded-sm flex flex-col items-center justify-center text-zinc-400 relative overflow-hidden group mx-auto'>
+          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
+          <Info className='h-8 w-8 opacity-20 mb-2' />
+          <span className='text-[10px] font-bold uppercase tracking-[0.3em] opacity-40'>
+            Reference Material (16:9)
+          </span>
+        </div>
+
+        {/* ACTION BAR - Right Aligned above content */}
+        <div className='shrink-0 flex justify-end mb-2'>
+          {isChecked && !isRationaleVisible && (
+            <Button
+              variant='outline'
+              onClick={() => setIsRationaleVisible(true)}
+              className='h-12 border-blue-200 text-blue-600 hover:bg-blue-50 rounded-sm text-[10px] font-bold uppercase tracking-widest'
+            >
+              Show Rationale
+            </Button>
+          )}
+          {mode !== 'chill' && !isChecked ? (
+            <Button
+              onClick={handleCheckAnswer}
+              disabled={!selectedAnswer || isSaving}
+              className='w-full md:w-64 h-12 bg-blue-600 text-white hover:bg-blue-700 font-black rounded-sm text-xs shadow-xl shadow-blue-200/50 uppercase tracking-[0.2em]'
+            >
+              {isSaving
+                ? 'Processing...'
+                : strictMode
+                  ? 'Confirm & Record'
+                  : 'Check Answer'}
+            </Button>
+          ) : (
+            <Button
+              onClick={handleNext}
+              disabled={dwellTimeRemaining > 0}
+              className={cn(
+                'w-full md:w-64 h-12 font-black rounded-sm text-xs transition-all uppercase tracking-[0.2em] shadow-lg',
+                dwellTimeRemaining > 0
+                  ? 'bg-zinc-100 text-zinc-400 cursor-wait'
+                  : 'bg-blue-600 text-white hover:bg-blue-700',
+              )}
+            >
+              {dwellTimeRemaining > 0
+                ? `Reviewing (${dwellTimeRemaining}s)`
+                : currentIndex === questions.length - 1
+                  ? 'Finish Session'
+                  : 'Next Question'}
+            </Button>
+          )}
+        </div>
+
+        {/* QUESTION & OPTIONS GRID - Flexible priority with internal scrolling */}
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 h-[300px] '>
+          {/* QUESTION - Internal Scroll */}
+          <div className='bg-zinc-50/50 p-6 rounded-sm border border-zinc-100 overflow-y-auto scrollbar-hide'>
+            <h2 className='text-md md:text-md font-medium text-zinc-900 leading-relaxed tracking-tight'>
               {currentQuestion.text}
             </h2>
-
-            <div className='flex flex-col gap-3'>
-              {options.map((option, idx) => {
-                const isSelected = selectedAnswer === option.id
-                const isCorrect = option.id === (currentQuestion.correct_option_id ?? currentQuestion.correct_answer)
-                const isStruck = struckOptions[currentQuestion.question_id]?.has(option.id)
-                const letter = String.fromCharCode(65 + idx)
-
-                // If checked, we highlight (Non-strict modes only)
-                const showCorrect = isChecked && isCorrect
-                const showWrong = isChecked && isSelected && !isCorrect
-
-                return (
-                  <button
-                    key={option.id}
-                    disabled={isChecked}
-                    onClick={() => handleChoiceSelect(option.id)}
-                    className={cn(
-                      'flex items-center gap-4 p-5 rounded-xl border text-left transition-all duration-200 group min-h-[64px] relative overflow-hidden',
-                      !isChecked && !isSelected && 'bg-white border-zinc-200 hover:border-zinc-400 hover:shadow-md',
-                      !isChecked && isSelected && 'bg-zinc-900 border-zinc-900 text-white shadow-lg',
-                      !isChecked && isStruck && 'opacity-40 grayscale-[80%]',
-
-                      // Styling states (Feedback suppressed in strictMode)
-                      showCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-900 ring-1 ring-emerald-500 font-semibold',
-                      showWrong && 'bg-red-50 border-red-500 text-red-900 ring-1 ring-red-500',
-                      
-                      isChecked && !isCorrect && !isSelected && 'bg-white border-zinc-100 opacity-40 grayscale-[50%]',
-                    )}
-                  >
-                    {isStruck && !isChecked && (
-                      <div className='absolute inset-0 flex items-center px-4 pointer-events-none'>
-                        <div className='w-full h-[2px] bg-zinc-400/50' />
-                      </div>
-                    )}
-
-                    <div className={cn(
-                      'w-7 h-7 shrink-0 rounded flex items-center justify-center text-[10px] font-black border transition-colors',
-                      !isChecked && !isSelected && 'bg-zinc-50 border-zinc-200 text-zinc-400',
-                      !isChecked && isSelected && 'bg-white/20 border-white/20 text-white',
-                      
-                      showCorrect && 'bg-emerald-500 border-emerald-400 text-white',
-                      showWrong && 'bg-red-500 border-red-400 text-white',
-                    )}>
-                      {letter}
-                    </div>
-
-                    <span className='text-[14px] font-medium leading-snug flex-1'>
-                      {option.text}
-                    </span>
-
-                    {!isChecked && (
-                      <span
-                        role='button'
-                        tabIndex={0}
-                        onClick={(e) => toggleStrikethrough(option.id, e)}
-                        className='p-2 rounded-lg hover:bg-zinc-100 text-zinc-300 hover:text-zinc-600 transition-colors'
-                      >
-                        <Delete className='h-4 w-4' />
-                      </span>
-                    )}
-
-                    {showCorrect && <Check className='h-5 w-5 text-emerald-600' strokeWidth={3} />}
-                    {showWrong && <XCircle className='h-5 w-5 text-red-600' strokeWidth={3} />}
-                  </button>
-                )
-              })}
-            </div>
           </div>
-        </div>
 
-        <div className='lg:col-span-4 space-y-6'>
-          <div className='bg-zinc-900 rounded-2xl p-6 text-white shadow-xl shadow-zinc-200/50 space-y-6'>
-             <div className='flex items-center justify-between'>
-                <h3 className='text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500'>The Arsenal</h3>
-                <div className='w-2 h-2 rounded-full bg-emerald-500 animate-pulse' />
-             </div>
+          {/* OPTIONS - Internal Scroll */}
+          <div className='flex flex-col gap-2.5 overflow-y-auto scrollbar-hide h-full '>
+            {options.map((option, idx) => {
+              const isSelected = selectedAnswer === option.id
+              const isCorrect = option.id === correctOptionId
+              const letter = String.fromCharCode(65 + idx)
+              const showCorrect = isChecked && isCorrect
+              const showWrong = isChecked && isSelected && !isCorrect
 
-             <div className='grid grid-cols-2 gap-3'>
-                <Button 
-                  onClick={toggleFlag}
-                  variant='secondary' 
+              return (
+                <button
+                  key={option.id}
+                  disabled={isChecked}
+                  onClick={() => handleChoiceSelect(option.id)}
                   className={cn(
-                    'h-14 rounded-xl flex flex-col items-center justify-center gap-1 transition-all',
-                    isFlagged ? 'bg-amber-500 text-white' : 'bg-white/5 hover:bg-white/10 text-zinc-400'
+                    'flex h-fit items-center gap-4 p-4 rounded-sm border text-left transition-all duration-200 relative overflow-hidden shrink-0 flex-1',
+                    !isChecked &&
+                      !isSelected &&
+                      'bg-white border-zinc-200 hover:border-blue-300 hover:bg-blue-50/10',
+                    !isChecked &&
+                      isSelected &&
+                      'bg-blue-600 border-blue-600 text-white shadow-md',
+                    showCorrect &&
+                      'bg-emerald-50 border-emerald-500 text-emerald-900  ring-emerald-500 font-semibold',
+                    showWrong &&
+                      'bg-red-50 border-red-500 text-red-900  ring-red-500',
+                    isChecked &&
+                      !isCorrect &&
+                      !isSelected &&
+                      'bg-white border-zinc-100 opacity-40',
                   )}
                 >
-                  <Flag className={cn('h-5 w-5', isFlagged && 'fill-current')} />
-                  <span className='text-[9px] font-bold uppercase tracking-widest'>Flag Review</span>
-                </Button>
-                <Button 
-                  variant='secondary' 
-                  className='h-14 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-400 flex flex-col items-center justify-center gap-1'
-                >
-                  <MessageSquare className='h-5 w-5' />
-                  <span className='text-[9px] font-bold uppercase tracking-widest'>Ask AI</span>
-                </Button>
-             </div>
-
-             <div className='pt-4 border-t border-white/10'>
-                {mode !== 'chill' && !isChecked ? (
-                  <Button
-                    onClick={handleCheckAnswer}
-                    disabled={!selectedAnswer}
-                    className='w-full h-14 bg-white text-zinc-900 hover:bg-zinc-100 font-black rounded-xl text-sm shadow-lg'
-                  >
-                    {strictMode ? 'Record & Next' : 'Submit Answer'}
-                  </Button>
-                ) : (
-                  <Button
-                    onClick={handleNext}
-                    disabled={dwellTimeRemaining > 0 || (currentIndex === questions.length - 1 && mode !== 'chill')}
+                  <div
                     className={cn(
-                      'w-full h-14 font-black rounded-xl text-sm transition-all flex items-center justify-center gap-2',
-                      dwellTimeRemaining > 0 
-                        ? 'bg-zinc-800 text-zinc-500 cursor-wait'
-                        : 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-500/20 shadow-xl'
+                      'w-6 h-6 shrink-0 rounded-sm flex items-center justify-center text-[10px] font-black border transition-colors',
+                      !isChecked &&
+                        !isSelected &&
+                        'bg-zinc-50 border-zinc-200 text-zinc-400',
+                      !isChecked &&
+                        isSelected &&
+                        'bg-white/20 border-white/20 text-white',
+                      showCorrect &&
+                        'bg-emerald-500 border-emerald-400 text-white',
+                      showWrong && 'bg-red-500 border-red-400 text-white',
                     )}
                   >
-                    {dwellTimeRemaining > 0 ? (
-                      `Reviewing (${dwellTimeRemaining}s)`
-                    ) : (
-                      <>
-                        {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
-                        <ChevronRight className='h-4 w-4' />
-                      </>
-                    )}
-                  </Button>
-                )}
-             </div>
+                    {letter}
+                  </div>
+                  <span className='text-[13px] font-medium flex-1'>
+                    {option.text}
+                  </span>
+                  {showCorrect && (
+                    <Check
+                      className='h-4 w-4 text-emerald-600'
+                      strokeWidth={3}
+                    />
+                  )}
+                  {showWrong && (
+                    <XCircle className='h-4 w-4 text-red-600' strokeWidth={3} />
+                  )}
+                </button>
+              )
+            })}
           </div>
-
-          <AnimatePresence>
-            {isChecked && (
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className='bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm space-y-6'
-              >
-                <div className='space-y-4'>
-                  <div className='flex items-center gap-2 text-blue-600'>
-                    <Info className='h-4 w-4' />
-                    <h4 className='text-[10px] font-black uppercase tracking-widest'>
-                      {mode === 'chill' ? 'Gentle Reorientation' : 'SME Rationale'}
-                    </h4>
-                  </div>
-                  
-                  <div className='space-y-4'>
-                    <div className={cn(
-                      'p-4 rounded-xl border',
-                      mode === 'chill' ? 'bg-blue-50/30 border-blue-100' : 'bg-zinc-50 border-zinc-100'
-                    )}>
-                      <p className={cn(
-                        'text-sm leading-relaxed font-medium',
-                        mode === 'chill' ? 'text-zinc-600' : 'text-zinc-700'
-                      )}>
-                        {mode !== 'chill' && selectedAnswer !== (currentQuestion.correct_option_id ?? currentQuestion.correct_answer) && options.find(o => o.id === selectedAnswer)?.rationale && (
-                           <span className='block mb-3 pb-3 border-b border-zinc-200 italic text-zinc-500'>
-                             <span className='font-bold text-red-500 uppercase text-[9px] mr-2'>Common Misconception:</span>
-                             {options.find(o => o.id === selectedAnswer)?.rationale}
-                           </span>
-                        )}
-                        
-                        {mode === 'chill' && selectedAnswer !== (currentQuestion.correct_option_id ?? currentQuestion.correct_answer) && (
-                          <span className='italic block mb-2'>"Not quite — this one trips people up. The key thing to remember is..."</span>
-                        )}
-                        
-                        {currentQuestion.rationale}
-                      </p>
-                    </div>
-
-                    {mode !== 'chill' && (
-                      <>
-                        <Button variant='ghost' className='w-full justify-between h-auto py-3 px-4 rounded-xl bg-blue-50/50 text-blue-700 hover:bg-blue-100 hover:text-blue-800 border border-blue-100 group'>
-                          <span className='text-[10px] font-black uppercase tracking-widest flex items-center gap-2'>
-                             <ExternalLink className='h-3 w-3' /> Teleport to Wiki
-                          </span>
-                          <ChevronRight className='h-3 w-3 group-hover:translate-x-1 transition-transform' />
-                        </Button>
-                        
-                        <Button variant='outline' className='w-full justify-start h-auto py-3 px-4 rounded-xl border-zinc-200 text-zinc-600 hover:bg-zinc-50 gap-3'>
-                           <Plus className='h-4 w-4' />
-                           <span className='text-[10px] font-black uppercase tracking-widest'>Add to Cheat Sheet</span>
-                        </Button>
-                      </>
-                    )}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
-      </div>
+      </main>
 
-      <div className='mt-auto pt-8 flex items-center justify-between'>
+      {/* 3. SLIDE-UP EXPLANATION DRAWER */}
+      <AnimatePresence>
+        {isChecked && isRationaleVisible && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            className='shrink-0 bg-blue-50/50 border-t border-blue-100 shadow-[0_-15px_40px_-15px_rgba(0,0,0,0.05)] overflow-hidden'
+          >
+            <div className='max-w-6xl mx-auto px-10 py-6 space-y-3 max-h-[35vh] overflow-y-auto'>
+              <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2 text-blue-600'>
+                  <Info className='h-4 w-4' />
+                  <h4 className='text-[10px] font-black uppercase tracking-widest'>
+                    Rationale & Educational Context
+                  </h4>
+                </div>
+                <Button
+                  variant='ghost'
+                  size='sm'
+                  onClick={() => setIsRationaleVisible(false)}
+                  className='h-6 w-6 p-0 rounded-full hover:bg-blue-100 text-blue-400'
+                >
+                  <X className='h-3.5 w-3.5' />
+                </Button>
+              </div>
+              <div className='text-[13px] leading-relaxed text-zinc-700 italic pr-4'>
+                {currentQuestion.rationale}
+              </div>
+              <div className='flex gap-2 pt-1'>
+                <Button
+                  variant='ghost'
+                  className='h-7 px-3 rounded-sm bg-white text-blue-700 hover:bg-blue-100 text-[9px] font-black uppercase tracking-widest border border-blue-100 gap-2'
+                >
+                  <ExternalLink className='h-3 w-3' /> Wiki Reference
+                </Button>
+                <Button
+                  variant='ghost'
+                  className='h-7 px-3 rounded-sm bg-white border border-zinc-200 text-zinc-600 hover:bg-zinc-50 text-[9px] font-black uppercase tracking-widest gap-2'
+                >
+                  <Plus className='h-3 w-3' /> Add to Notes
+                </Button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* 4. FOOTER NAVIGATION */}
+      <footer className='py-6 shrink-0 border-t border-zinc-100 flex items-center justify-between bg-white mt-auto'>
         <Button
           variant='ghost'
           onClick={handleBack}
           disabled={currentIndex === 0}
-          className='text-zinc-400 hover:text-zinc-900 h-10 px-4 rounded-xl text-[10px] font-black uppercase tracking-[0.2em]'
+          className='text-zinc-400 hover:text-zinc-900 h-10 px-4 rounded-sm text-[10px] font-black uppercase tracking-[0.2em]'
         >
-          <ChevronLeft className='mr-2 h-4 w-4' /> Previous
+          <ChevronLeft className='mr-2 h-4 w-4' /> Previous Question
         </Button>
 
-        <div className='flex gap-1.5'>
-          {questions.map((_, i) => (
-             <div 
-               key={i} 
-               className={cn(
-                 'w-1.5 h-1.5 rounded-full transition-all',
-                 i === currentIndex ? 'bg-zinc-900 w-4' : 
-                 checkedQuestions.has(questions[i].question_id) ? 'bg-zinc-300' : 'bg-zinc-100'
-               )}
-             />
-          ))}
+        <div className='flex items-center gap-3'>
+          {currentIndex === questions.length - 1 ? (
+            <Button
+              onClick={handleFinalSubmit}
+              disabled={isSaving || (mode !== 'chill' && !isChecked)}
+              className='bg-zinc-900 text-white hover:bg-black h-10 px-6 rounded-sm text-[10px] font-black uppercase tracking-widest shadow-lg'
+            >
+              Finish Session
+            </Button>
+          ) : (
+            <Button
+              onClick={handleNext}
+              disabled={dwellTimeRemaining > 0}
+              className=' bg-blue-600 text-white hover:bg-blue-700 h-10 px-4 rounded-sm text-[10px] font-black uppercase tracking-[0.2em]'
+            >
+              Next Question <ChevronRight className='ml-2 h-4 w-4' />
+            </Button>
+          )}
         </div>
-      </div>
+      </footer>
     </div>
   )
 }
