@@ -1,12 +1,19 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import type { QuizSession, Question, TestMode, SessionStatus } from '@/types/app'
+import type {
+  QuizSession,
+  Question,
+  TestMode,
+  SessionStatus,
+} from '@/types/app'
 import { revalidatePath } from 'next/cache'
 
 export async function getQuizSession(sessionId: string) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { data: session, error } = await supabase
@@ -28,15 +35,19 @@ export async function getSessionQuestions(questionIds: string[]) {
     .in('question_id', questionIds)
 
   if (error) throw error
-  
+
   // Sort questions to match the order in questionIds
   const questionMap = new Map(questions.map((q: any) => [q.question_id, q]))
-  return questionIds.map(id => questionMap.get(id)).filter(Boolean) as Question[]
+  return questionIds
+    .map((id) => questionMap.get(id))
+    .filter(Boolean) as Question[]
 }
 
 export async function getSessionInteractions(sessionId: string) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { data: interactions, error } = await supabase
@@ -50,22 +61,24 @@ export async function getSessionInteractions(sessionId: string) {
 }
 
 export async function updateQuizSession(
-  sessionId: string, 
-  updates: { 
-    current_question_index?: number;
-    status?: SessionStatus;
-    completed_at?: string | null;
-  }
+  sessionId: string,
+  updates: {
+    current_question_index?: number
+    status?: SessionStatus
+    completed_at?: string | null
+  },
 ) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { error } = await supabase
     .from('quiz_sessions')
     .update({
       ...updates,
-      updated_at: new Date().toISOString()
+      updated_at: new Date().toISOString(),
     })
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
@@ -76,7 +89,9 @@ export async function updateQuizSession(
 
 export async function deleteQuizSession(sessionId: string) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { error } = await supabase
@@ -95,15 +110,15 @@ export async function deleteQuizSession(sessionId: string) {
  * Decision: Phase 2 Decisions Step 2.
  */
 async function recordMastery(
-  user_id: string, 
-  topic_id: string, 
-  is_correct: boolean, 
+  user_id: string,
+  topic_id: string,
+  is_correct: boolean,
   time_spent_ms: number,
   test_mode: TestMode,
-  question_difficulty: number = 0.5
+  question_difficulty: number = 0.5,
 ) {
   const supabase = await createClient()
-  
+
   // 1. Get current node mastery
   const { data: current } = await supabase
     .from('user_node_mastery')
@@ -113,42 +128,40 @@ async function recordMastery(
     .single()
 
   let alpha = 0.2 // Base EMA smoothing factor
-  if (test_mode === 'proof_sim') alpha = 0.6 
+  if (test_mode === 'proof_sim') alpha = 0.6
   else if (test_mode === 'storm') alpha = 0.4
   else if (test_mode === 'chill') alpha = 0.1
   else if (test_mode === 'blindspot') alpha = 0.3
 
-  const speedThreshold = 3000 + (question_difficulty * 5000)
+  const speedThreshold = 3000 + question_difficulty * 5000
   let score = is_correct ? 1.0 : 0.0
-  
+
   if (is_correct && time_spent_ms < speedThreshold) {
-    score = 0.5 
+    score = 0.5
   }
-  
+
   let new_weight = score
   let total_attempts = 1
   let total_correct = is_correct ? 1 : 0
   let new_avg_time = time_spent_ms
 
   if (current) {
-    new_weight = (score * alpha) + (current.current_mastery_weight * (1 - alpha))
+    new_weight = score * alpha + current.current_mastery_weight * (1 - alpha)
     total_attempts = current.total_attempts + 1
     total_correct = current.total_correct + (is_correct ? 1 : 0)
-    new_avg_time = (time_spent_ms * alpha) + (current.avg_time_ms * (1 - alpha))
+    new_avg_time = time_spent_ms * alpha + current.avg_time_ms * (1 - alpha)
   }
 
   // 2. Persist node mastery
-  await supabase
-    .from('user_node_mastery')
-    .upsert({
-      user_id,
-      topic_id,
-      total_attempts,
-      total_correct,
-      current_mastery_weight: new_weight,
-      avg_time_ms: Math.round(new_avg_time),
-      last_encountered: new Date().toISOString()
-    })
+  await supabase.from('user_node_mastery').upsert({
+    user_id,
+    topic_id,
+    total_attempts,
+    total_correct,
+    current_mastery_weight: new_weight,
+    avg_time_ms: Math.round(new_avg_time),
+    last_encountered: new Date().toISOString(),
+  })
 
   // 3. Recalculate Global Readiness (average of all nodes)
   const { data: allNodesData } = await supabase
@@ -156,15 +169,23 @@ async function recordMastery(
     .select('current_mastery_weight')
     .eq('user_id', user_id)
 
-  const allNodes = (allNodesData || []) as Array<{ current_mastery_weight: number }>
+  const allNodes = (allNodesData || []) as Array<{
+    current_mastery_weight: number
+  }>
 
   if (allNodes.length > 0) {
-    const sum = allNodes.reduce((acc, node) => acc + node.current_mastery_weight, 0)
+    const sum = allNodes.reduce(
+      (acc, node) => acc + node.current_mastery_weight,
+      0,
+    )
     const globalScore = (sum / allNodes.length) * 100
 
     await supabase
       .from('user_global_stats')
-      .update({ global_readiness_score: globalScore, updated_at: new Date().toISOString() })
+      .update({
+        global_readiness_score: globalScore,
+        updated_at: new Date().toISOString(),
+      })
       .eq('user_id', user_id)
 
     // 4. Daily Snapshotting (Phase 2 Decisions Step 2)
@@ -178,13 +199,11 @@ async function recordMastery(
       .maybeSingle()
 
     if (!existingSnapshot) {
-      await supabase
-        .from('readiness_score_snapshots')
-        .insert({
-          user_id,
-          score: globalScore,
-          computed_at: new Date().toISOString()
-        })
+      await supabase.from('readiness_score_snapshots').insert({
+        user_id,
+        score: globalScore,
+        computed_at: new Date().toISOString(),
+      })
 
       // 5. Snapshot Pruning (Retain only 90)
       const { data: snapshots } = await supabase
@@ -192,7 +211,7 @@ async function recordMastery(
         .select('snapshot_id')
         .eq('user_id', user_id)
         .order('computed_at', { ascending: false })
-        .offset(90)
+      // .offset(90)
 
       if (snapshots && snapshots.length > 0) {
         const idsToDelete = snapshots.map((s: any) => s.snapshot_id)
@@ -206,15 +225,17 @@ async function recordMastery(
 }
 
 export async function saveInteraction(interaction: {
-  session_id: string;
-  question_id: string;
-  topic_id: string;
-  selected_option_id: string | null;
-  is_correct: boolean;
-  time_spent_ms: number;
+  session_id: string
+  question_id: string
+  topic_id: string
+  selected_option_id: string | null
+  is_correct: boolean
+  time_spent_ms: number
 }) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { data: session } = await supabase
@@ -229,28 +250,29 @@ export async function saveInteraction(interaction: {
     .eq('question_id', interaction.question_id)
     .single()
 
-  const { error } = await supabase
-    .from('user_interactions')
-    .upsert({
+  const { error } = await supabase.from('user_interactions').upsert(
+    {
       ...interaction,
       user_id: user.id,
       interaction_timestamp: new Date().toISOString(),
-      updated_at: new Date().toISOString()
-    }, {
-      onConflict: 'user_id,session_id,question_id'
-    })
+      updated_at: new Date().toISOString(),
+    },
+    {
+      onConflict: 'user_id,session_id,question_id',
+    },
+  )
 
   if (error) throw error
 
   if (interaction.topic_id && session) {
     // Fire and forget (or await if strict real-time is needed)
     await recordMastery(
-      user.id, 
-      interaction.topic_id, 
-      interaction.is_correct, 
-      interaction.time_spent_ms, 
+      user.id,
+      interaction.topic_id,
+      interaction.is_correct,
+      interaction.time_spent_ms,
       session.test_mode,
-      question?.difficulty || 0.5
+      question?.difficulty || 0.5,
     )
   }
 
@@ -258,14 +280,16 @@ export async function saveInteraction(interaction: {
 }
 
 export async function createQuizSession(params: {
-  discipline_id: string;
-  test_mode: TestMode;
-  question_ids: string[];
-  subject_ids?: string[];
-  config?: any;
+  discipline_id: string
+  test_mode: TestMode
+  question_ids: string[]
+  subject_ids?: string[]
+  config?: any
 }) {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
   const { data: session, error } = await supabase
@@ -279,7 +303,7 @@ export async function createQuizSession(params: {
       subject_ids: params.subject_ids || [],
       status: 'in_progress',
       current_question_index: 0,
-      started_at: new Date().toISOString()
+      started_at: new Date().toISOString(),
     })
     .select()
     .single()
@@ -293,7 +317,7 @@ export async function createQuizSession(params: {
  */
 export async function getReviewLockStatus(sessionId: string) {
   const supabase = await createClient()
-  
+
   const { data: session, error } = await supabase
     .from('quiz_sessions')
     .select('test_mode, completed_at, status')
@@ -301,7 +325,8 @@ export async function getReviewLockStatus(sessionId: string) {
     .single()
 
   if (error || !session) return { isLocked: false }
-  if (session.status !== 'completed' || !session.completed_at) return { isLocked: false }
+  if (session.status !== 'completed' || !session.completed_at)
+    return { isLocked: false }
 
   if (session.test_mode !== 'storm' && session.test_mode !== 'proof_sim') {
     return { isLocked: false }
@@ -312,10 +337,10 @@ export async function getReviewLockStatus(sessionId: string) {
   const hoursSinceCompletion = (now - completedAt) / (1000 * 60 * 60)
 
   if (hoursSinceCompletion < 24) {
-    return { 
-      isLocked: true, 
-      unlocksAt: new Date(completedAt + (24 * 60 * 60 * 1000)).toISOString(),
-      remainingHours: Math.ceil(24 - hoursSinceCompletion)
+    return {
+      isLocked: true,
+      unlocksAt: new Date(completedAt + 24 * 60 * 60 * 1000).toISOString(),
+      remainingHours: Math.ceil(24 - hoursSinceCompletion),
     }
   }
 
@@ -324,7 +349,9 @@ export async function getReviewLockStatus(sessionId: string) {
 
 export async function getUserReadinessScore() {
   const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const {
+    data: { user },
+  } = await getUser()
   if (!user) return 0
 
   const { data, error } = await supabase

@@ -43,7 +43,8 @@ export interface Question {
   topic_id: string;
   subject_id?: string;
   text: string;
-  options: Choice[]; 
+  options: Choice[];
+  correct_option_id: string;
   correct_answer?: string;
   rationale: string | null; // General rationale
   difficulty: number; // 0.0 to 1.0

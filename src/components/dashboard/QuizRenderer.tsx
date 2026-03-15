@@ -136,10 +136,12 @@ export function QuizRenderer({
     }
   }, [strictMode, questions.length])
 
+  const correctOptionId = currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
+
   useEffect(() => {
     let timer: any
     if (!strictMode && checkedQuestions.has(currentQuestion?.question_id) && (mode === 'camp' || mode === 'blindspot')) {
-      const isCorrect = answers[currentQuestion.question_id] === options.find(o => o.is_correct)?.id
+      const isCorrect = answers[currentQuestion.question_id] === correctOptionId
       const dwellTime = isCorrect ? 3 : 5
       setDwellTimeRemaining(dwellTime)
       timer = setInterval(() => {
@@ -153,7 +155,7 @@ export function QuizRenderer({
       }, 1000)
     }
     return () => clearInterval(timer)
-  }, [currentIndex, checkedQuestions, mode, strictMode])
+  }, [currentIndex, checkedQuestions, mode, strictMode, answers, currentQuestion?.question_id, correctOptionId])
 
   useEffect(() => {
     const interval = setInterval(async () => {
@@ -176,13 +178,12 @@ export function QuizRenderer({
       const isFlagged = flaggedQuestions.has(currentQuestion.question_id)
       
       if (currentAnswer || isFlagged) {
-        const selectedOption = options.find((o) => o.id === currentAnswer)
         await saveInteraction({
           session_id: session.session_id,
           question_id: currentQuestion.question_id,
           topic_id: currentQuestion.topic_id,
           selected_option_id: currentAnswer || null,
-          is_correct: selectedOption?.is_correct ?? false,
+          is_correct: (currentAnswer || null) === (currentQuestion.correct_option_id ?? currentQuestion.correct_answer),
           time_spent_ms: Date.now() - startTimeRef.current,
         } as any)
       }
@@ -192,7 +193,7 @@ export function QuizRenderer({
     } finally {
       setIsSaving(false)
     }
-  }, [session.session_id, currentIndex, answers, currentQuestion, options, flaggedQuestions])
+  }, [session.session_id, currentIndex, answers, currentQuestion, flaggedQuestions])
 
   const handleChoiceSelect = (choiceId: string) => {
     if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
@@ -405,7 +406,7 @@ export function QuizRenderer({
             <div className='flex flex-col gap-3'>
               {options.map((option, idx) => {
                 const isSelected = selectedAnswer === option.id
-                const isCorrect = option.is_correct === true
+                const isCorrect = option.id === (currentQuestion.correct_option_id ?? currentQuestion.correct_answer)
                 const isStruck = struckOptions[currentQuestion.question_id]?.has(option.id)
                 const letter = String.fromCharCode(65 + idx)
 
@@ -557,14 +558,14 @@ export function QuizRenderer({
                         'text-sm leading-relaxed font-medium',
                         mode === 'chill' ? 'text-zinc-600' : 'text-zinc-700'
                       )}>
-                        {mode !== 'chill' && selectedAnswer !== options.find(o => o.is_correct)?.id && options.find(o => o.id === selectedAnswer)?.rationale && (
+                        {mode !== 'chill' && selectedAnswer !== (currentQuestion.correct_option_id ?? currentQuestion.correct_answer) && options.find(o => o.id === selectedAnswer)?.rationale && (
                            <span className='block mb-3 pb-3 border-b border-zinc-200 italic text-zinc-500'>
                              <span className='font-bold text-red-500 uppercase text-[9px] mr-2'>Common Misconception:</span>
                              {options.find(o => o.id === selectedAnswer)?.rationale}
                            </span>
                         )}
                         
-                        {mode === 'chill' && selectedAnswer !== options.find(o => o.is_correct)?.id && (
+                        {mode === 'chill' && selectedAnswer !== (currentQuestion.correct_option_id ?? currentQuestion.correct_answer) && (
                           <span className='italic block mb-2'>"Not quite — this one trips people up. The key thing to remember is..."</span>
                         )}
                         

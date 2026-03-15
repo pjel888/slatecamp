@@ -38,7 +38,13 @@ CREATE TYPE public.subscription_tier AS ENUM (
 CREATE TYPE public.test_mode AS ENUM (
     'camp',
     'timed',
-    'practice'
+    'practice',
+    'storm',
+    'chill',
+    'custom',
+    'blindspot',
+    'proof_sim',
+    'endurance'
 );
 
 CREATE OR REPLACE FUNCTION public.update_updated_at_column()
@@ -93,11 +99,13 @@ CREATE TABLE public.notes (
     updated_at timestamp with time zone DEFAULT now() NOT NULL
 );
 
+-- FIXED TABLE: Added correct_option_id
 CREATE TABLE public.questions (
     question_id uuid DEFAULT gen_random_uuid() NOT NULL,
     topic_id uuid NOT NULL,
     text text NOT NULL,
     options jsonb DEFAULT '[]'::jsonb NOT NULL,
+    correct_option_id text NOT NULL, -- The specific fix
     rationale text,
     difficulty numeric DEFAULT 0.50,
     difficulty_rating numeric,
@@ -363,23 +371,42 @@ GRANT ALL ON ALL TABLES IN SCHEMA public TO postgres, anon, authenticated, servi
 GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO postgres, anon, authenticated, service_role;
 GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO postgres, anon, authenticated, service_role;
 
--- RLS
-ALTER TABLE user_global_stats ENABLE ROW LEVEL SECURITY;
-ALTER TABLE disciplines ENABLE ROW LEVEL SECURITY;
+-- Row Level Security
+ALTER TABLE public.user_global_stats ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.disciplines ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.notes ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.note_folders ENABLE ROW LEVEL SECURITY;
 
 -- Policies
-CREATE POLICY "Users can read own stats" ON user_global_stats
-    FOR SELECT
-    USING (auth.uid() = user_id);
 
-CREATE POLICY "Users can update own stats" ON user_global_stats
-    FOR UPDATE
-    USING (auth.uid() = user_id);
+CREATE POLICY "Users can read own stats"
+ON public.user_global_stats -- Added public.
+FOR SELECT
+USING (auth.uid() = user_id);
 
-CREATE POLICY "Users can insert own stats" ON user_global_stats
-    FOR INSERT
-    WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own stats"
+ON public.user_global_stats -- Added public.
+FOR UPDATE
+USING (auth.uid() = user_id);
 
-CREATE POLICY "Anyone can read disciplines" ON disciplines
-    FOR SELECT
-    USING (true);
+CREATE POLICY "Users can insert own stats"
+ON public.user_global_stats -- Added public.
+FOR INSERT
+WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Anyone can read disciplines"
+ON public.disciplines -- Added public.
+FOR SELECT
+USING (true);
+
+CREATE POLICY "Users can manage own notes"
+ON public.notes -- Added public.
+FOR ALL
+USING (auth.uid() = user_id)
+WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can manage own folders"
+ON public.note_folders -- Added public.
+FOR ALL
+USING (auth.uid() = user_id)
+WITH CHECK (auth.uid() = user_id);
