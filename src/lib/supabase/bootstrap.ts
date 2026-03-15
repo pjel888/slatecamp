@@ -13,49 +13,48 @@ export async function bootstrapUser(
   if (isDemoMode()) return;
 
   const admin = createAdminClient();
+  const ARCHITECTURE_ID = 'a0000000-0000-0000-0000-000000000001';
 
-  // 1. Ensure user_subscriptions exists
-  const { data: existingSub, error: subFetchError } = await admin
-    .from("user_subscriptions")
-    .select("subscription_id")
-    .eq("user_id", userId)
+  // 1. Get default discipline (Architecture)
+  let disciplineId = ARCHITECTURE_ID;
+  
+  const { data: discipline, error: discError } = await admin
+    .from("disciplines")
+    .select("discipline_id")
+    .eq("name", "Architecture")
     .maybeSingle();
 
-  if (subFetchError) {
-    console.error("Error fetching user subscription:", subFetchError);
+  if (discipline?.discipline_id) {
+    disciplineId = discipline.discipline_id;
+  } else {
+    console.warn("Default discipline 'Architecture' not found via query, using fallback ID.", discError || "No data");
   }
 
-  if (!existingSub && !subFetchError) {
-    const { error: subInsertError } = await admin.from("user_subscriptions").insert({
+  // 2. Upsert user_subscriptions
+  const { error: subError } = await admin
+    .from("user_subscriptions")
+    .upsert({
       user_id: userId,
       tier: 'free',
       status: 'active',
-    });
-    if (subInsertError) {
-      console.error("Error inserting default subscription:", subInsertError);
-    }
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' }); // Force update to ensure consistency
+
+  if (subError) {
+    console.error("Error upserting subscription:", JSON.stringify(subError, null, 2));
   }
 
-  // 2. Ensure user_global_stats exists
-  const { data: existingStats, error: statsFetchError } = await admin
+  // 3. Upsert user_global_stats with default discipline
+  const { error: statsError } = await admin
     .from("user_global_stats")
-    .select("user_id")
-    .eq("user_id", userId)
-    .maybeSingle();
-
-  if (statsFetchError) {
-    console.error("Error fetching user stats:", statsFetchError);
-  }
-
-  if (!existingStats && !statsFetchError) {
-    // Note: streak columns removed to match active schema
-    const { error: statsInsertError } = await admin.from("user_global_stats").insert({
+    .upsert({
       user_id: userId,
-      current_discipline_id: null,
+      current_discipline_id: disciplineId,
       global_readiness_score: 0.0,
-    });
-    if (statsInsertError) {
-      console.error("Error inserting default stats:", statsInsertError);
-    }
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' }); // Force update to fix null discipline
+
+  if (statsError) {
+    console.error("Error upserting stats:", JSON.stringify(statsError, null, 2));
   }
 }
