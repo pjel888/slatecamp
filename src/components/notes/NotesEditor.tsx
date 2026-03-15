@@ -81,7 +81,7 @@ export function NotesEditor({
     editable,
     editorProps: {
       attributes: {
-        class: 'prose prose-sm prose-neutral dark:prose-invert max-w-none focus:outline-none min-h-[280px] px-1 leading-relaxed [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-0.5 [&_p]:my-3 [&_hr]:my-4 [&_hr]:border-border',
+        class: 'prose prose-sm prose-neutral dark:prose-invert max-w-none focus:outline-none min-h-[280px] px-1 font-sans leading-relaxed [&_ul]:list-disc [&_ol]:list-decimal [&_li]:my-0.5 [&_p]:my-3 [&_hr]:my-4 [&_hr]:border-border',
       },
       handleKeyDown: (view, event) => {
         if (event.key === '/') {
@@ -149,7 +149,7 @@ export function NotesEditor({
   if (!editor) return null
 
   return (
-    <div className={cn('flex flex-col', className)}>
+    <div className={cn('flex flex-col font-sans', className)}>
       {/* Toolbar in top strip: shade between sidebar and note content */}
       <div
         className={cn(

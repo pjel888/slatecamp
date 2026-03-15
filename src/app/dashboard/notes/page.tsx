@@ -1,37 +1,36 @@
-import React from 'react'
+import { createClient, getUser } from '@/lib/supabase/server'
+import { revalidatePath } from 'next/cache'
+import { type Note } from '@/lib/actions/notes-actions'
 import { NotesShell } from '@/components/notes/NotesShell'
-import { getTaxonomyTree, type TaxonomyNode } from '@/lib/actions/taxonomy'
-import { getUserGlobalStats } from '@/lib/actions/user-stats'
-import { redirect } from 'next/navigation'
-import type { WikiCategory } from '@/types/app'
-
-function mapTaxonomyToWikiCategory(nodes: TaxonomyNode[]): WikiCategory[] {
-  return nodes.map(node => ({
-    id: node.node_id,
-    parent_id: node.parent_id,
-    name: node.name,
-    slug: node.slug || '',
-    description: null,
-    order_index: 0,
-    created_at: '',
-    updated_at: '',
-    children: node.children ? mapTaxonomyToWikiCategory(node.children) : []
-  }))
-}
-
 export default async function NotesPage() {
-  const stats = await getUserGlobalStats()
-  
-  if (!stats?.current_discipline_id) {
-    redirect('/onboarding')
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await getUser()
+
+  if (!user) {
+    // Redirect to login if user is not authenticated
+    // This should ideally be handled by middleware or root layout,
+    // but as a safeguard, we redirect here.
+    return null
   }
 
-  const tree = await getTaxonomyTree(stats.current_discipline_id)
-  const wikiTree = mapTaxonomyToWikiCategory(tree)
+  const { data: notes, error } = await supabase
+    .from('notes')
+    .select('*')
+    .eq('user_id', user.id)
+    .order('updated_at', { ascending: false })
+
+  if (error) {
+    console.error('Error fetching notes in server component:', error)
+    // Render an error state or empty state if fetching fails
+    return <div>Error loading notes. Please try again later.</div>
+  }
 
   return (
-    <div className="h-full w-full overflow-hidden">
-      <NotesShell tree={wikiTree} />
+    <div className='h-full w-full overflow-hidden'>
+      {/* NotesShell is the client component orchestrating the notes UI */}
+      <NotesShell initialNotes={notes} />
     </div>
   )
 }
