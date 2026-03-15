@@ -43,7 +43,7 @@ export async function hasAuthCookie() {
     const name = cookie.name.toLowerCase()
     // Look specifically for the auth token, ignoring meta cookies like code-verifier
     return (
-      (name.startsWith('sb-') && name.endsWith('-auth-token')) ||
+      (name.startsWith('sb-') && name.includes('-auth-token')) ||
       name.startsWith('supabase-auth-token')
     )
   })

@@ -92,30 +92,33 @@ export function WikiSidebar({
     return (
       <div key={node.node_id} className='space-y-0.5'>
         {isCategory ? (
-          /* CATEGORY: Toggles only, no navigation */
-          <button
-            onClick={() => toggle(node.node_id)}
-            className={cn(
-              'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group',
-              isActive
-                ? 'text-blue-700 bg-blue-50/50'
-                : 'text-zinc-700 hover:bg-white hover:shadow-sm',
-              isChild && 'pl-2',
-            )}
-          >
-            {isExpanded ? (
-              <ChevronDown className='h-3.5 w-3.5 text-zinc-400' />
-            ) : (
-              <ChevronRight className='h-3.5 w-3.5 text-zinc-400' />
-            )}
-            <Folder
-              className={cn(
-                'h-3.5 w-3.5 shrink-0',
-                isActive ? 'text-blue-500' : 'text-zinc-400',
+          /* CATEGORY: Toggle and Navigation */
+          <div className={cn(
+            'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group',
+            isActive ? 'bg-blue-50/50' : 'hover:bg-zinc-100',
+            isChild && 'pl-2'
+          )}>
+            <button
+              onClick={() => toggle(node.node_id)}
+              className="p-1 hover:bg-zinc-200 rounded text-zinc-400"
+            >
+              {isExpanded ? (
+                <ChevronDown className='h-3.5 w-3.5' />
+              ) : (
+                <ChevronRight className='h-3.5 w-3.5' />
               )}
-            />
-            <span className='truncate'>{node.name}</span>
-          </button>
+            </button>
+            <Link 
+              href={`/dashboard/wiki/${node.slug ?? ''}`}
+              className={cn(
+                'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate',
+                isActive ? 'text-blue-700' : 'text-zinc-700'
+              )}
+            >
+              <Folder className={cn('h-3.5 w-3.5 shrink-0', isActive ? 'text-blue-500' : 'text-zinc-400')} />
+              <span className='truncate'>{node.name}</span>
+            </Link>
+          </div>
         ) : (
           /* ARTICLE: Navigates to content */
           <Link

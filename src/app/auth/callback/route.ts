@@ -16,18 +16,7 @@ export async function GET(request: Request) {
     const supabase = await createClient();
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      const response = NextResponse.redirect(`${origin}${next}`);
-      
-      // Transfer cookies from the cookie store to the redirect response
-      const cookieStore = await cookies();
-      cookieStore.getAll().forEach((cookie) => {
-        response.cookies.set(cookie.name, cookie.value, {
-          path: "/",
-          ...cookie, // Include other options like httpOnly, secure, etc.
-        });
-      });
-
-      return response;
+      return NextResponse.redirect(`${origin}${next}`);
     }
   }
 
