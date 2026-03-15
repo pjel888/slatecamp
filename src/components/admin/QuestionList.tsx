@@ -108,10 +108,11 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
         <div className="flex items-center gap-4 p-3 rounded-md bg-muted">
           <span className="text-sm">{selectedQuestions.length} selected</span>
           <button
-            onClick={() => {/* TODO: Bulk delete */}}
-            className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700"
+            onClick={handleDeleteSelected}
+            disabled={isPending}
+            className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700 disabled:opacity-50"
           >
-            <Trash2 className="h-4 w-4" />
+            {isPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Trash2 className="h-4 w-4" />}
             Delete Selected
           </button>
         </div>

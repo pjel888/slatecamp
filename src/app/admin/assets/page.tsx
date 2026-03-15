@@ -7,7 +7,7 @@ async function getAssets() {
   
   const { data, error } = await supabase
     .from('models_3d')
-    .select('id, name, slug, url, thumbnail, status, metadata, created_at')
+    .select('id:model_id, name, slug, url, thumbnail, created_at')
     .order('created_at', { ascending: false })
     .limit(50)
 

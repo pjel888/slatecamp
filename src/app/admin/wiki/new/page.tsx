@@ -1,9 +1,5 @@
-import { AdminWikiEditor } from '@/components/admin/AdminWikiEditor'
+import { WikiEditor } from '@/components/admin/WikiEditor'
 
 export default function NewWikiArticlePage() {
-  return (
-    <div className="h-[calc(100vh-8rem)]">
-      <AdminWikiEditor />
-    </div>
-  )
+  return <WikiEditor />
 }

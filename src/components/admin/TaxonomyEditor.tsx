@@ -51,7 +51,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
     const { error } = await supabase
       .from('taxonomy_tree')
       .update({ name: editingName.trim() })
-      .eq('id', editingId)
+      .eq('node_id', editingId)
 
     if (!error) {
       setNodes(prev => prev.map(n => 
@@ -76,7 +76,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
         is_leaf: true,
         parent_id: parentId,
       })
-      .select()
+      .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
       .single()
 
     if (!error && data) {
@@ -93,7 +93,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
     const { error } = await supabase
       .from('taxonomy_tree')
       .delete()
-      .eq('id', id)
+      .eq('node_id', id)
 
     if (!error) {
       setNodes(prev => prev.filter(n => n.id !== id))
@@ -102,21 +102,22 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
 
   const renderNode = (node: TaxonomyNode, level: number = 0) => {
     const isExpanded = expandedIds.has(node.id)
-    const hasChildren = node.level < 3
     const isEditing = editingId === node.id
+    const children = nodes.filter(n => n.parent_id === node.id)
+    const hasChildren = children.length > 0 || node.level < 3
 
     return (
-      <div key={node.id}>
+      <div key={node.id} className="min-w-0">
         <div 
           className={cn(
-            "flex items-center gap-2 py-2 px-3 hover:bg-muted/50 rounded-md",
-            level > 0 && "ml-6"
+            "flex items-center gap-2 py-1.5 px-3 hover:bg-muted/50 rounded-md group",
+            level > 0 && "ml-6 border-l border-border/50"
           )}
         >
-          {hasChildren && (
+          {hasChildren ? (
             <button
               onClick={() => toggleExpand(node.id)}
-              className="p-0.5 hover:bg-muted rounded"
+              className="p-0.5 hover:bg-muted rounded shrink-0"
             >
               {isExpanded ? (
                 <ChevronDown className="h-4 w-4" />
@@ -124,8 +125,9 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                 <ChevronRight className="h-4 w-4" />
               )}
             </button>
+          ) : (
+            <span className="w-5 shrink-0" />
           )}
-          {level === 0 && <span className="w-5" />}
           
           {isEditing ? (
             <div className="flex-1 flex items-center gap-2">
@@ -139,81 +141,105 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
               />
               <button
                 onClick={saveEdit}
-                className="text-green-600 hover:text-green-700"
+                className="text-xs font-medium text-green-600 hover:text-green-700"
               >
                 Save
               </button>
               <button
                 onClick={() => setEditingId(null)}
-                className="text-muted-foreground hover:text-foreground"
+                className="p-1 hover:bg-muted rounded text-muted-foreground"
               >
-                <X className="h-4 w-4" />
+                <X className="h-3 w-3" />
               </button>
             </div>
           ) : (
             <>
-              <span className="flex-1 text-sm font-medium">
+              <span className="flex-1 text-sm font-medium truncate">
                 {node.name}
               </span>
-              <span className="text-xs text-muted-foreground mr-2">
-                Level {node.level}
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-1.5 py-0.5 rounded shrink-0">
+                L{node.level}
               </span>
-              <button
-                onClick={() => startEdit(node)}
-                className="p-1 hover:bg-muted rounded opacity-0 group-hover:opacity-100"
-              >
-                <Edit2 className="h-3 w-3" />
-              </button>
-              <button
-                onClick={() => deleteNode(node.id)}
-                className="p-1 hover:bg-muted rounded text-red-600 opacity-0 group-hover:opacity-100"
-              >
-                <Trash2 className="h-3 w-3" />
-              </button>
-              <button
-                onClick={() => setParentIdForNew(node.id)}
-                className="p-1 hover:bg-muted rounded opacity-0 group-hover:opacity-100"
-              >
-                <Plus className="h-3 w-3" />
-              </button>
+              <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <button
+                  onClick={() => startEdit(node)}
+                  className="p-1 hover:bg-muted rounded text-muted-foreground"
+                  title="Edit Name"
+                >
+                  <Edit2 className="h-3.5 w-3.5" />
+                </button>
+                {node.level < 3 && (
+                  <button
+                    onClick={() => setParentIdForNew(node.id)}
+                    className="p-1 hover:bg-muted rounded text-blue-600"
+                    title="Add Child"
+                  >
+                    <Plus className="h-3.5 w-3.5" />
+                  </button>
+                )}
+                <button
+                  onClick={() => deleteNode(node.id)}
+                  className="p-1 hover:bg-muted rounded text-red-600"
+                  title="Delete Node"
+                >
+                  <Trash2 className="h-3.5 w-3.5" />
+                </button>
+              </div>
             </>
           )}
         </div>
         
-        {/* Add child node inline */}
-        {parentIdForNew === node.id && (
-          <div className="ml-12 py-2">
-            <input
-              type="text"
-              placeholder="Enter topic name..."
-              onKeyDown={async (e) => {
-                if (e.key === 'Enter' && e.currentTarget.value.trim()) {
-                  const supabase = createClient()
-                  const { data } = await supabase
-                    .from('taxonomy_tree')
-                    .insert({
-                      discipline_id: disciplineId,
-                      name: e.currentTarget.value.trim(),
-                      level: node.level + 1,
-                      subject_area: 'Topic',
-                      is_leaf: true,
-                      parent_id: node.id,
-                    })
-                    .select()
-                    .single()
-                  
-                  if (data) {
-                    setNodes(prev => [...prev, data])
-                  }
-                  setParentIdForNew(null)
-                }
-                if (e.key === 'Escape') {
-                  setParentIdForNew(null)
-                }
-              }}
-              className="px-2 py-1 text-sm rounded border border-input bg-background w-64"
-              autoFocus
-            />
+        {/* Render children recursively */}
+        {isExpanded && (
+          <div className="space-y-0.5">
+            {children.map(child => renderNode(child, level + 1))}
+            
+            {/* Inline add for this specific parent */}
+            {parentIdForNew === node.id && (
+              <div className={cn("py-2", level >= 0 && "ml-12")}>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    placeholder="Enter child name..."
+                    onKeyDown={async (e) => {
+                      if (e.key === 'Enter' && e.currentTarget.value.trim()) {
+                        const name = e.currentTarget.value.trim()
+                        const supabase = createClient()
+                        const { data, error } = await supabase
+                          .from('taxonomy_tree')
+                          .insert({
+                            discipline_id: disciplineId,
+                            name,
+                            level: node.level + 1,
+                            subject_area: node.level === 1 ? 'Module' : 'Topic',
+                            is_leaf: node.level + 1 === 3,
+                            parent_id: node.id,
+                          })
+                          .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
+                          .single()
+                        
+                        if (!error && data) {
+                          setNodes(prev => [...prev, data])
+                          setExpandedIds(prev => new Set(prev).add(node.id))
+                        }
+                        setParentIdForNew(null)
+                      }
+                      if (e.key === 'Escape') {
+                        setParentIdForNew(null)
+                      }
+                    }}
+                    className="flex-1 px-2 py-1 text-sm rounded border border-input bg-background max-w-[200px]"
+                    autoFocus
+                  />
+                  <button 
+                    onClick={() => setParentIdForNew(null)}
+                    className="text-xs text-muted-foreground hover:text-foreground"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -241,9 +267,9 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
         ) : (
           <div className="p-4">
             {nodes
-              .filter(n => !n.parent_id)
+              .filter(n => !n.parent_id && n.id)
               .map(node => (
-                <div key={node.id} className="group">
+                <div key={node.id || node.name} className="group">
                   {renderNode(node)}
                 </div>
               ))}

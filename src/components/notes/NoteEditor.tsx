@@ -1,10 +1,11 @@
 'use client'
 
-import { useEditor, EditorContent, BubbleMenu } from '@tiptap/react'
+import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Placeholder from '@tiptap/extension-placeholder'
 import Typography from '@tiptap/extension-typography'
-import BubbleMenuExtension from '@tiptap/extension-bubble-menu'
+// BubbleMenu is not available in @tiptap/react v3 - using alternative approach
+// import BubbleMenuExtension from '@tiptap/extension-bubble-menu'
 import { useEffect, useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
 import { Bold, Italic, Strikethrough, List, ListOrdered } from 'lucide-react'
@@ -30,7 +31,6 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
         placeholder: 'Start typing...',
         emptyEditorClass: 'is-editor-empty before:content-[attr(data-placeholder)] before:text-zinc-400 before:float-left before:pointer-events-none',
       }),
-      BubbleMenuExtension,
     ],
     content: note.content,
     editorProps: {
@@ -80,14 +80,9 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
         {isSaving ? 'Saving...' : 'Saved'}
       </div>
 
-      {/* Bubble Menu for formatting */}
-      {editor && (
-        <BubbleMenu 
-          editor={editor} 
-          tippyOptions={{ duration: 100 }}
-          className="flex items-center gap-1 rounded-lg border border-zinc-200 bg-white p-1 shadow-lg shadow-black/5"
-        >
-          <button
+      {/* Toolbar for formatting */}
+      <div className="flex items-center gap-1 border-b border-zinc-200 px-4 py-2">
+        <button
             onClick={() => editor.chain().focus().toggleBold().run()}
             className={cn(
               "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
@@ -133,8 +128,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           >
             <ListOrdered className="h-4 w-4" />
           </button>
-        </BubbleMenu>
-      )}
+        </div>
 
       {/* Main Editor Area */}
       <div className="flex-1 overflow-y-auto">

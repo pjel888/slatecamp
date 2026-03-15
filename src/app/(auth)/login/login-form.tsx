@@ -21,10 +21,15 @@ export function LoginFormInner() {
     setError(null);
     setGoogleLoading(true);
     const supabase = createClient();
+    
+    const next = searchParams.get("next") || "/dashboard";
+    const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
+    callbackUrl.searchParams.set("next", next);
+
     const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: callbackUrl.toString(),
       },
     });
     if (oauthError) {

@@ -1,49 +1,37 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
-import { isDemoMode, DEMO_USER } from "@/lib/demo/config";
+import { isDemoMode } from "@/lib/demo/config";
 import { canReviewContent } from "@/lib/admin/roles";
 
-// Admin routes that require admin role
-const ADMIN_PATHS = ['/admin'];
-
-function isAdminPath(pathname: string): boolean {
-  return ADMIN_PATHS.some(path => pathname.startsWith(path));
-}
-
-/**
- * Refreshes the Supabase auth session and protects routes.
- */
 export async function updateSession(request: NextRequest) {
   const response = NextResponse.next({ request });
   const pathname = request.nextUrl.pathname;
 
-  // Handle Demo Mode
+  // 1. STATIC & API BYPASS
+  if (pathname.includes('.') || pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith('/auth/callback')) {
+    return response;
+  }
+
+  // 2. PUBLIC PATHS
+  // Note: /admin is the login page and must be public
+  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin';
+  
+  // 3. DEMO MODE
   if (isDemoMode()) {
-    const isLoginPage = pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER;
-    if (isLoginPage) {
-      console.log("[Middleware] Demo Mode: Redirecting login/register to dashboard");
-      const url = request.nextUrl.clone();
-      url.pathname = ROUTES.DASHBOARD;
-      return NextResponse.redirect(url);
+    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin') {
+      return NextResponse.redirect(new URL(ROUTES.DASHBOARD, request.url));
     }
     return response;
   }
 
-  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path);
-  const isAuthCallback = pathname.startsWith("/auth/callback");
-  const isApiRoute = pathname.startsWith("/api");
-
-  console.log("[Middleware] Path:", pathname, "isPublic:", isPublicPath, "isAuthCallback:", isAuthCallback);
-
+  // 4. SUPABASE INITIALIZATION
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
-        getAll() {
-          return request.cookies.getAll();
-        },
+        getAll() { return request.cookies.getAll(); },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value, options }) =>
             response.cookies.set(name, value, options)
@@ -53,55 +41,36 @@ export async function updateSession(request: NextRequest) {
     }
   );
 
-  const { data: { session }, error } = await supabase.auth.getSession();
+  const { data: { session } } = await supabase.auth.getSession();
   const user = session?.user ?? null;
 
-  if (error) {
-    console.error("[Middleware] getSession error:", error.message);
-  }
-
-  console.log("[Middleware] User ID:", user?.id ?? "none");
-
-  const redirectWithCookies = (url: URL) => {
-    const res = NextResponse.redirect(url);
-    response.cookies.getAll().forEach((c) =>
-      res.cookies.set(c.name, c.value, { path: c.path ?? "/" })
-    );
+  const redirectWithCookies = (path: string) => {
+    const res = NextResponse.redirect(new URL(path, request.url));
+    response.cookies.getAll().forEach((c) => res.cookies.set(c.name, c.value));
     return res;
   };
 
-  if (!user && !isPublicPath && !isAuthCallback && !isApiRoute) {
-    console.log("[Middleware] No user on protected path, redirecting to login");
-    const url = request.nextUrl.clone();
-    url.pathname = ROUTES.LOGIN;
-    return redirectWithCookies(url);
+  // 5. PROTECTION LOGIC
+  if (!user) {
+    if (isPublicPath) return response;
+    
+    // Redirect unauthenticated /admin/* to /admin, others to /login
+    const target = pathname.startsWith('/admin/') ? '/admin' : ROUTES.LOGIN;
+    const url = new URL(target, request.url);
+    if (pathname !== target) url.searchParams.set('next', pathname);
+    return redirectWithCookies(url.pathname + url.search);
   }
 
-  if (user && (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER)) {
-    console.log("[Middleware] User exists on login/register, redirecting to dashboard");
-    const url = request.nextUrl.clone();
-    url.pathname = ROUTES.DASHBOARD;
-    return redirectWithCookies(url);
+  // Logged-in user on public login pages
+  if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin') {
+    const isAdmin = await canReviewContent();
+    return redirectWithCookies(isAdmin ? '/admin/dashboard' : ROUTES.DASHBOARD);
   }
 
-  // Admin route protection
-  if (user && isAdminPath(pathname)) {
-    console.log("[Middleware] Admin path detected, checking role...");
-    try {
-      const isAdmin = await canReviewContent();
-      if (!isAdmin) {
-        console.log("[Middleware] User is not admin, redirecting to dashboard");
-        const url = request.nextUrl.clone();
-        url.pathname = ROUTES.DASHBOARD;
-        return redirectWithCookies(url);
-      }
-    } catch (error) {
-      console.error("[Middleware] Error checking admin role:", error);
-      // On error, redirect to dashboard for safety
-      const url = request.nextUrl.clone();
-      url.pathname = ROUTES.DASHBOARD;
-      return redirectWithCookies(url);
-    }
+  // Admin path protection
+  if (pathname.startsWith('/admin/')) {
+    const isAdmin = await canReviewContent();
+    if (!isAdmin) return redirectWithCookies(ROUTES.DASHBOARD);
   }
 
   return response;

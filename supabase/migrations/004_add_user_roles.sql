@@ -78,6 +78,13 @@ CREATE POLICY "Admins can manage taxonomy_tree"
     USING (public.has_admin_role())
     WITH CHECK (public.has_admin_role());
 
+-- Add SELECT policy for everyone
+DROP POLICY IF EXISTS "Users can read taxonomy tree" ON public.taxonomy_tree;
+CREATE POLICY "Users can read taxonomy tree"
+    ON public.taxonomy_tree
+    FOR SELECT
+    USING (true);
+
 -- RLS policy for models_3d table - admins only
 DROP POLICY IF EXISTS "Admins can manage models_3d" ON public.models_3d;
 CREATE POLICY "Admins can manage models_3d"

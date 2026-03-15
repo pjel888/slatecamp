@@ -10,7 +10,7 @@ export const QuestionCSVSchema = z.object({
   option_d: z.string().min(1, 'Option D is required'),
   option_e: z.string().optional(),
   correct_answer: z.enum(['a', 'b', 'c', 'd', 'e'], {
-    errorMap: () => ({ message: 'Correct answer must be a, b, c, d, or e' })
+    message: 'Correct answer must be a, b, c, d, or e'
   }),
   rationale: z.string().optional(),
   difficulty: z.number().min(1).max(5, 'Difficulty must be between 1 and 5'),
@@ -66,7 +66,7 @@ export function csvToDbFormat(csv: QuestionCSV) {
     topic_id: csv.taxonomy_node_id,
     text: csv.question_text,
     options,
-    correct_option_id: correctIndex,
+    correct_option_id: String(correctIndex),
     rationale: csv.rationale || null,
     difficulty: csv.difficulty,
   }
@@ -86,7 +86,7 @@ export function jsonToDbFormat(json: QuestionJSON) {
     topic_id: json.taxonomy_node_id,
     text: json.question_text,
     options: json.options,
-    correct_option_id: correctIndex,
+    correct_option_id: String(correctIndex),
     rationale: json.rationale || null,
     difficulty: json.difficulty,
   }

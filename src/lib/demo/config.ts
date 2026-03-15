@@ -17,11 +17,7 @@ export function isDemoMode(): boolean {
   const hasKey = !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const hasServiceKey = !!process.env.SUPABASE_SERVICE_ROLE_KEY;
   
-  if (hasUrl && hasKey && hasServiceKey) {
-    return false;
-  }
-
-  return true;
+  return false;
 }
 
 export const DEMO_USER = {

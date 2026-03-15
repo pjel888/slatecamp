@@ -43,6 +43,7 @@ DECLARE
   audit_row audit_logs%ROWTYPE;
   changed_fields TEXT[] := NULL;
   current_user_id UUID;
+  target_data jsonb;
 BEGIN
   -- Get current user
   current_user_id := auth.uid();
@@ -55,17 +56,25 @@ BEGIN
     RETURN NEW;
   END IF;
   
+  target_data := CASE WHEN TG_OP = 'DELETE' THEN to_jsonb(OLD) ELSE to_jsonb(NEW) END;
+  
+  -- Polymorphic ID extraction
+  audit_row.record_id := COALESCE(
+    target_data->>'question_id', 
+    target_data->>'article_id', 
+    target_data->>'model_id', 
+    target_data->>'id'
+  )::uuid;
+  
   audit_row.actor_id := current_user_id;
   audit_row.table_name := TG_TABLE_NAME;
   audit_row.created_at := NOW();
   
   IF TG_OP = 'INSERT' THEN
     audit_row.event_type := 'CREATE';
-    audit_row.record_id := NEW.id;
     audit_row.content_snapshot := to_jsonb(NEW);
   ELSIF TG_OP = 'UPDATE' THEN
     audit_row.event_type := 'UPDATE';
-    audit_row.record_id := NEW.id;
     audit_row.content_snapshot := jsonb_build_object(
       'old', to_jsonb(OLD),
       'new', to_jsonb(NEW)
@@ -82,7 +91,6 @@ BEGIN
     END IF;
   ELSIF TG_OP = 'DELETE' THEN
     audit_row.event_type := 'DELETE';
-    audit_row.record_id := OLD.id;
     audit_row.content_snapshot := to_jsonb(OLD);
   END IF;
   

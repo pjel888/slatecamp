@@ -89,6 +89,33 @@ export function getDemoDataForTable(table: string, tier?: UserTier): unknown[] {
       return DEMO_NOTE_FOLDERS
     case 'notes':
       return DEMO_NOTES
+    case 'user_roles':
+      return [{ user_id: uid, role: 'super_admin', created_at: now }]
+    case 'questions':
+      return [
+        { 
+          question_id: 'q-1', 
+          text: 'What is the primary material used in reinforced concrete?', 
+          topic_id: 'ale-uuid', 
+          difficulty: 2, 
+          options: ['Steel', 'Wood', 'Plastic', 'Glass'], 
+          correct_option_id: 'Steel',
+          created_at: now 
+        }
+      ]
+    case 'models_3d':
+      return [
+        {
+          model_id: 'm-1',
+          name: 'Colosseum',
+          slug: 'colosseum',
+          url: '/models/colosseum.glb',
+          thumbnail: '/models/colosseum.png',
+          status: 'published',
+          metadata: {},
+          created_at: now
+        }
+      ]
     default:
       return []
   }

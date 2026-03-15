@@ -3,15 +3,15 @@ import { TaxonomyEditor } from '@/components/admin/TaxonomyEditor'
 
 async function getTaxonomyNodes() {
   const supabase = await createClient()
-  
+
   const { data, error } = await supabase
     .from('taxonomy_tree')
-    .select('*')
+    .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
     .order('level', { ascending: true })
     .order('name', { ascending: true })
 
   if (error) {
-    console.error('Error fetching taxonomy:', error)
+    console.error('Error fetching taxonomy nodes:', error)
     return []
   }
 

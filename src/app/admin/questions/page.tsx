@@ -6,7 +6,7 @@ async function getQuestions() {
   
   const { data, error } = await supabase
     .from('questions')
-    .select('id, text, topic_id, difficulty, options, created_at')
+    .select('id:question_id, text, topic_id, difficulty, options, created_at')
     .order('created_at', { ascending: false })
     .limit(100)
 
@@ -15,7 +15,11 @@ async function getQuestions() {
     return []
   }
 
-  return data || []
+  // Ensure options is always an array to prevent {} errors in rendering
+  return (data || []).map(q => ({
+    ...q,
+    options: Array.isArray(q.options) ? q.options : []
+  }))
 }
 
 export default async function AdminQuestionsPage() {

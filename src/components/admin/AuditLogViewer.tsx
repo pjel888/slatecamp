@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Search, Download, ChevronDown, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { getAuditLogs, type AuditLog } from '@/lib/audit/audit-queries'
+import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
 
 export function AuditLogViewer() {
   const [logs, setLogs] = useState<AuditLog[]>([])
@@ -21,7 +21,7 @@ export function AuditLogViewer() {
   const loadLogs = async () => {
     setLoading(true)
     try {
-      const data = await getAuditLogs({
+      const data = await getAuditLogsAction({
         tableName: tableFilter || undefined,
         eventType: eventFilter || undefined,
         limit: 100,

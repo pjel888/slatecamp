@@ -6,7 +6,7 @@ async function getArticles() {
   
   const { data, error } = await supabase
     .from('wiki_articles')
-    .select('id, title, status, discipline_id, created_at, updated_at')
+    .select('id:article_id, title, created_at, updated_at')
     .order('updated_at', { ascending: false })
     .limit(100)
 

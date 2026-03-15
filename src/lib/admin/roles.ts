@@ -23,7 +23,7 @@ export async function getUserRole(): Promise<UserRole | null> {
   if (dbRole) return dbRole.role as UserRole;
 
   // Fallback to legacy email-based admin
-  const adminEmails = ['philipjonlewis@gmail.com'];
+  const adminEmails = ['philipjonlewis@gmail.com', 'philip@cerebro.dev'];
   if (user.email && adminEmails.includes(user.email)) {
     return 'super_admin';
   }

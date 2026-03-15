@@ -116,6 +116,7 @@ async function recordMastery(
   time_spent_ms: number,
   test_mode: TestMode,
   question_difficulty: number = 0.5,
+  suspected_guess: boolean = false,
 ) {
   const supabase = await createClient()
 
@@ -133,11 +134,10 @@ async function recordMastery(
   else if (test_mode === 'chill') alpha = 0.1
   else if (test_mode === 'blindspot') alpha = 0.3
 
-  const speedThreshold = 3000 + question_difficulty * 5000
+  // Score logic: suspected guesses receive zero mastery bump (nullified)
   let score = is_correct ? 1.0 : 0.0
-
-  if (is_correct && time_spent_ms < speedThreshold) {
-    score = 0.5
+  if (suspected_guess) {
+    score = 0.0
   }
 
   let new_weight = score
@@ -146,6 +146,8 @@ async function recordMastery(
   let new_avg_time = time_spent_ms
 
   if (current) {
+    // If it was a suspected guess, we don't improve the mastery weight
+    // but we still update attempts and avg_time for data accuracy
     new_weight = score * alpha + current.current_mastery_weight * (1 - alpha)
     total_attempts = current.total_attempts + 1
     total_correct = current.total_correct + (is_correct ? 1 : 0)
@@ -250,10 +252,15 @@ export async function saveInteraction(interaction: {
     .eq('question_id', interaction.question_id)
     .single()
 
+  const difficulty = question?.difficulty || 0.5
+  const speedThreshold = 3000 + (difficulty * 5000)
+  const suspected_guess = interaction.is_correct && interaction.time_spent_ms < speedThreshold
+
   const { error } = await supabase.from('user_interactions').upsert(
     {
       ...interaction,
       user_id: user.id,
+      suspected_guess,
       interaction_timestamp: new Date().toISOString(),
       updated_at: new Date().toISOString(),
     },
@@ -272,7 +279,8 @@ export async function saveInteraction(interaction: {
       interaction.is_correct,
       interaction.time_spent_ms,
       session.test_mode,
-      question?.difficulty || 0.5,
+      difficulty,
+      suspected_guess,
     )
   }
 

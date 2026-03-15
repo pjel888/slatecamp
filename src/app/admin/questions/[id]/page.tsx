@@ -11,15 +11,19 @@ async function getQuestion(id: string) {
   
   const { data, error } = await supabase
     .from('questions')
-    .select('id, text, topic_id, options, correct_option_id, rationale, difficulty')
-    .eq('id', id)
+    .select('id:question_id, text, topic_id, options, correct_option_id, rationale, difficulty')
+    .eq('question_id', id)
     .single()
 
   if (error || !data) {
     return null
   }
 
-  return data
+  // Parse correct_option_id back to number for editor
+  return {
+    ...data,
+    correct_option_id: parseInt(data.correct_option_id as string) || 0
+  }
 }
 
 export default async function EditQuestionPage({ params }: PageProps) {

@@ -6,9 +6,11 @@ import { cn } from '@/lib/utils'
 import { 
   parseCSV, 
   parseJSON, 
-  importQuestions, 
+  getQuestionsFromCSV,
+  getQuestionsFromJSON,
   type ImportError 
 } from '@/lib/import/question-importer'
+import { importQuestionsToDb } from '@/lib/import/import-actions'
 import { type QuestionCSV, type QuestionJSON } from '@/lib/import/question-schema'
 
 type ImportFormat = 'csv' | 'json'
@@ -58,43 +60,11 @@ export function QuestionImporter() {
         : await parseJSON(file)
       
       // Store questions for import
-      const fileReader = new FileReader()
-      fileReader.onload = async (e) => {
-        try {
-          const content = e.target?.result as string
-          if (format === 'csv') {
-            // Re-parse to get actual question objects
-            const { default: Papa } = await import('papaparse')
-            const parsed = Papa.parse(content, { header: true, skipEmptyLines: true })
-            const q: QuestionCSV[] = []
-            parsed.data.forEach((row: unknown) => {
-              const r = row as Record<string, unknown>
-              q.push({
-                taxonomy_node_id: String(r.taxonomy_node_id),
-                question_text: String(r.question_text),
-                option_a: String(r.option_a),
-                option_b: String(r.option_b),
-                option_c: String(r.option_c),
-                option_d: String(r.option_d),
-                option_e: r.option_e ? String(r.option_e) : undefined,
-                correct_answer: String(r.correct_answer).toLowerCase() as 'a' | 'b' | 'c' | 'd' | 'e',
-                rationale: r.rationale ? String(r.rationale) : undefined,
-                difficulty: Number(r.difficulty) || 1,
-              })
-            })
-            setQuestions(q)
-          } else {
-            const data = JSON.parse(content)
-            const qList = data.questions || [data]
-            setQuestions(qList)
-          }
-        } catch {}
-      }
-      
-      if (format === 'csv') {
-        fileReader.readAsText(file)
-      } else {
-        fileReader.readAsText(file)
+      if (parseResult.success) {
+        const q = format === 'csv' 
+          ? await getQuestionsFromCSV(file)
+          : await getQuestionsFromJSON(file)
+        setQuestions(q)
       }
       
       setResult(parseResult)
@@ -115,7 +85,7 @@ export function QuestionImporter() {
     setIsImporting(true)
     
     try {
-      const importResult = await importQuestions(questions)
+      const importResult = await importQuestionsToDb(questions)
       setResult(prev => prev ? {
         ...prev,
         imported: importResult.success,

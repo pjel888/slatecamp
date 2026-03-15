@@ -44,7 +44,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
         text: text.trim(),
         topic_id: topicId.trim(),
         options: options.map(o => o.trim()),
-        correct_option_id: correctAnswer,
+        correct_option_id: String(correctAnswer), // Ensure text format
         rationale: rationale.trim() || null,
         difficulty,
       }
@@ -54,7 +54,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
         ({ error } = await supabase
           .from('questions')
           .update(data)
-          .eq('id', question.id))
+          .eq('question_id', question.id))
       } else {
         ({ error } = await supabase
           .from('questions')
@@ -82,7 +82,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
       const { error } = await supabase
         .from('questions')
         .delete()
-        .eq('id', question.id)
+        .eq('question_id', question.id)
 
       if (error) throw error
 
