@@ -1,20 +1,14 @@
-import { createClient } from "@/lib/supabase/server";
+// Re-export from roles.ts for backward compatibility
+// The old email-based logic is now handled internally by roles.ts
+export { isAdmin, isSuperAdmin, canManageContent, canReviewContent, getUserRole, type UserRole } from './roles';
 
 /**
  * Check if the current user is an admin by checking auth metadata or email domain.
+ * @deprecated Use getUserRole() from ./roles for more detailed role checking
  */
-export async function isAdmin(): Promise<boolean> {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-
-  if (!user) return false;
-
-  const adminEmails = ['philipjonlewis@gmail.com'];
-  return (
-    user.app_metadata?.role === 'admin' || 
-    user.email?.endsWith('@slatecamp.com') === true ||
-    (user.email && adminEmails.includes(user.email))
-  );
+export async function isAdminLegacy(): Promise<boolean> {
+  const { isAdmin } = await import('./roles');
+  return isAdmin();
 }
 
 /**

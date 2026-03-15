@@ -2,6 +2,14 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
 import { isDemoMode, DEMO_USER } from "@/lib/demo/config";
+import { canReviewContent } from "@/lib/admin/roles";
+
+// Admin routes that require admin role
+const ADMIN_PATHS = ['/admin'];
+
+function isAdminPath(pathname: string): boolean {
+  return ADMIN_PATHS.some(path => pathname.startsWith(path));
+}
 
 /**
  * Refreshes the Supabase auth session and protects routes.
@@ -74,6 +82,26 @@ export async function updateSession(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = ROUTES.DASHBOARD;
     return redirectWithCookies(url);
+  }
+
+  // Admin route protection
+  if (user && isAdminPath(pathname)) {
+    console.log("[Middleware] Admin path detected, checking role...");
+    try {
+      const isAdmin = await canReviewContent();
+      if (!isAdmin) {
+        console.log("[Middleware] User is not admin, redirecting to dashboard");
+        const url = request.nextUrl.clone();
+        url.pathname = ROUTES.DASHBOARD;
+        return redirectWithCookies(url);
+      }
+    } catch (error) {
+      console.error("[Middleware] Error checking admin role:", error);
+      // On error, redirect to dashboard for safety
+      const url = request.nextUrl.clone();
+      url.pathname = ROUTES.DASHBOARD;
+      return redirectWithCookies(url);
+    }
   }
 
   return response;

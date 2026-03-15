@@ -54,6 +54,14 @@ A five-phase execution plan for the SlateCamp platform.
 - [ ] **Audit Log:** Every admin content action (create, update, delete, publish) is logged with timestamp, actor, and diff — full traceability.
 - [ ] **SME Review Queue:** Workflow for Subject Matter Experts to flag, review, and approve content before it goes live to students.
 
+**Plans:** 5 plans
+
+- [ ] 04-01-PLAN.md — Admin Foundation (user_roles, RLS, middleware)
+- [ ] 04-02-PLAN.md — Question Manager (CRUD, bulk import)
+- [ ] 04-03-PLAN.md — Wiki Content Manager (TipTap editor)
+- [ ] 04-04-PLAN.md — Asset & Taxonomy Managers
+- [ ] 04-05-PLAN.md — Audit & SME Workflow
+
 ---
 
 ## 🚀 Phase 5: Commercial & Scale (Growth)
