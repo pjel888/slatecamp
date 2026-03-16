@@ -8,9 +8,10 @@ import { NotesEditor } from '@/components/notes/NotesEditor'
 
 interface NotesShellProps {
   initialNotes: Note[]
+  initialOpenNoteId?: string | null
 }
 
-export function NotesShell({ initialNotes }: NotesShellProps) {
+export function NotesShell({ initialNotes, initialOpenNoteId }: NotesShellProps) {
   const [notes, setNotes] = useState<Note[]>(initialNotes)
   const [currentNote, setCurrentNote] = useState<Note | null>(null)
   const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -53,6 +54,12 @@ export function NotesShell({ initialNotes }: NotesShellProps) {
   useEffect(() => {
     fetchNotes()
   }, [fetchNotes])
+
+  useEffect(() => {
+    if (initialOpenNoteId) {
+      handleSelectNote(initialOpenNoteId)
+    }
+  }, [initialOpenNoteId, handleSelectNote])
 
   const handleCreate = async () => {
     const tempId = `temp-${Date.now()}`

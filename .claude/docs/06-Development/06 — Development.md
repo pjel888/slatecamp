@@ -1,6 +1,6 @@
 # 06 — Development
 
-The comprehensive engineering handbook for **Project Cerebro** (`project-cerebro v0.1.0`). Covers environment setup, package management, coding standards, Git workflow, CI/CD, and industry best practices.
+The comprehensive engineering handbook for **SlateCamp** (`project-cerebro v0.1.0`). Covers environment setup, package management, coding standards, Git workflow, CI/CD, and industry best practices.
 
 <aside>
 🏕️
@@ -162,82 +162,82 @@ NODE_ENV=development
 ## 📦 Full Dependency Map
 
 - **Core Framework**
-  | **Package**           | **Version** | **Role**                                          |
+  | **Package** | **Version** | **Role** |
   | --------------------- | ----------- | ------------------------------------------------- |
-  | `next`                | 16.1.6      | App Router, SSG/ISR, Server Components, Turbopack |
-  | `react` / `react-dom` | ^19.2.4     | UI runtime (React 19 with concurrent features)    |
-  | `typescript`          | ^5.9.3      | Type safety across entire codebase                |
+  | `next` | 16.1.6 | App Router, SSG/ISR, Server Components, Turbopack |
+  | `react` / `react-dom` | ^19.2.4 | UI runtime (React 19 with concurrent features) |
+  | `typescript` | ^5.9.3 | Type safety across entire codebase |
 - **Backend & Auth**
-  | **Package**             | **Version** | **Role**                                                    |
+  | **Package** | **Version** | **Role** |
   | ----------------------- | ----------- | ----------------------------------------------------------- |
-  | `@supabase/supabase-js` | ^2.98.0     | Database, auth, storage, realtime, pgvector                 |
-  | `@supabase/ssr`         | ^0.9.0      | Server-side auth for Next.js middleware + Server Components |
-  | `zod`                   | ^4.3.6      | Runtime schema validation for API inputs, forms, env vars   |
+  | `@supabase/supabase-js` | ^2.98.0 | Database, auth, storage, realtime, pgvector |
+  | `@supabase/ssr` | ^0.9.0 | Server-side auth for Next.js middleware + Server Components |
+  | `zod` | ^4.3.6 | Runtime schema validation for API inputs, forms, env vars |
 - **Payments**
-  | **Package**         | **Version** | **Role**                                                |
+  | **Package** | **Version** | **Role** |
   | ------------------- | ----------- | ------------------------------------------------------- |
-  | `stripe`            | ^20.4.1     | Server-side Stripe SDK (subscriptions, webhooks)        |
-  | `@stripe/stripe-js` | ^8.9.0      | Client-side Stripe Elements (checkout UI)               |
-  | `payrex-node`       | ^1.7.3      | Philippine local payments (GCash, Maya, bank transfers) |
+  | `stripe` | ^20.4.1 | Server-side Stripe SDK (subscriptions, webhooks) |
+  | `@stripe/stripe-js` | ^8.9.0 | Client-side Stripe Elements (checkout UI) |
+  | `payrex-node` | ^1.7.3 | Philippine local payments (GCash, Maya, bank transfers) |
 - **Rich Text Editor (TipTap)**
-  | **Package**           | **Version** | **Role**                                                                                             |
+  | **Package** | **Version** | **Role** |
   | --------------------- | ----------- | ---------------------------------------------------------------------------------------------------- |
-  | `@tiptap/react`       | ^3.20.1     | React bindings for TipTap editor                                                                     |
-  | `@tiptap/starter-kit` | ^3.20.1     | Core editor functionality (bold, italic, lists, code, etc.)                                          |
-  | `@tiptap/pm`          | ^3.20.1     | ProseMirror core dependency                                                                          |
-  | `@tiptap/suggestion`  | ^3.20.1     | Slash commands and mention suggestions                                                               |
-  | `@tiptap/extension-*` | ^3.20.1     | Bubble menu, highlight, horizontal rule, image, placeholder, task items/lists, text style, underline |
+  | `@tiptap/react` | ^3.20.1 | React bindings for TipTap editor |
+  | `@tiptap/starter-kit` | ^3.20.1 | Core editor functionality (bold, italic, lists, code, etc.) |
+  | `@tiptap/pm` | ^3.20.1 | ProseMirror core dependency |
+  | `@tiptap/suggestion` | ^3.20.1 | Slash commands and mention suggestions |
+  | `@tiptap/extension-*` | ^3.20.1 | Bubble menu, highlight, horizontal rule, image, placeholder, task items/lists, text style, underline |
 - **3D Engine**
-  | **Package**             | **Version** | **Role**                                       |
+  | **Package** | **Version** | **Role** |
   | ----------------------- | ----------- | ---------------------------------------------- |
-  | `three`                 | ^0.183.2    | Core 3D rendering engine                       |
-  | `@react-three/fiber`    | ^9.5.0      | React reconciler for Three.js                  |
-  | `@react-three/drei`     | ^10.7.7     | Helper components (controls, loaders, effects) |
-  | `three-stdlib`          | ^2.36.1     | Standard Three.js utilities                    |
-  | `camera-controls`       | ^3.1.2      | Smooth, constrained camera orbit/pan/zoom      |
-  | `@shadergradient/react` | ^2.4.20     | Animated shader gradient backgrounds           |
+  | `three` | ^0.183.2 | Core 3D rendering engine |
+  | `@react-three/fiber` | ^9.5.0 | React reconciler for Three.js |
+  | `@react-three/drei` | ^10.7.7 | Helper components (controls, loaders, effects) |
+  | `three-stdlib` | ^2.36.1 | Standard Three.js utilities |
+  | `camera-controls` | ^3.1.2 | Smooth, constrained camera orbit/pan/zoom |
+  | `@shadergradient/react` | ^2.4.20 | Animated shader gradient backgrounds |
 - **UI & Styling**
-  | **Package**                | **Version** | **Role**                                                   |
+  | **Package** | **Version** | **Role** |
   | -------------------------- | ----------- | ---------------------------------------------------------- |
-  | `tailwindcss`              | ^4.2.1      | Utility-first CSS framework (v4)                           |
-  | `shadcn`                   | ^4.0.0      | Copy-paste component library built on Radix + Tailwind     |
-  | `@base-ui/react`           | ^1.2.0      | Unstyled, accessible base components                       |
-  | `class-variance-authority` | ^0.7.1      | Component variant management (CVA)                         |
-  | `clsx`                     | ^2.1.1      | Conditional className composition                          |
-  | `tailwind-merge`           | ^3.5.0      | Intelligent Tailwind class merging (deduplication)         |
-  | `lucide-react`             | ^0.577.0    | Icon system                                                |
-  | `framer-motion`            | ^12.35.2    | Animation library (page transitions, feedback, onboarding) |
-  | `tw-animate-css`           | ^1.4.0      | Tailwind animation CSS utilities                           |
-  | `next-themes`              | ^0.4.6      | Dark/light mode with system preference detection           |
-  | `nextjs-toploader`         | ^3.9.17     | Route change progress bar                                  |
-  | `rough-notation`           | ^0.5.1      | Hand-drawn-style annotation highlights                     |
+  | `tailwindcss` | ^4.2.1 | Utility-first CSS framework (v4) |
+  | `shadcn` | ^4.0.0 | Copy-paste component library built on Radix + Tailwind |
+  | `@base-ui/react` | ^1.2.0 | Unstyled, accessible base components |
+  | `class-variance-authority` | ^0.7.1 | Component variant management (CVA) |
+  | `clsx` | ^2.1.1 | Conditional className composition |
+  | `tailwind-merge` | ^3.5.0 | Intelligent Tailwind class merging (deduplication) |
+  | `lucide-react` | ^0.577.0 | Icon system |
+  | `framer-motion` | ^12.35.2 | Animation library (page transitions, feedback, onboarding) |
+  | `tw-animate-css` | ^1.4.0 | Tailwind animation CSS utilities |
+  | `next-themes` | ^0.4.6 | Dark/light mode with system preference detection |
+  | `nextjs-toploader` | ^3.9.17 | Route change progress bar |
+  | `rough-notation` | ^0.5.1 | Hand-drawn-style annotation highlights |
 - **Content & Markdown**
-  | **Package**            | **Version** | **Role**                                               |
+  | **Package** | **Version** | **Role** |
   | ---------------------- | ----------- | ------------------------------------------------------ |
-  | `react-markdown`       | ^10.1.0     | Markdown → React rendering for Wiki articles           |
-  | `marked`               | ^17.0.4     | Markdown parsing (server-side)                         |
-  | `remark-gfm`           | ^4.0.1      | GitHub Flavored Markdown (tables, strikethrough, etc.) |
-  | `remark-math`          | ^6.0.0      | Math notation in Markdown                              |
-  | `rehype-katex`         | ^7.0.1      | KaTeX rendering for math equations                     |
-  | `katex`                | ^0.16.37    | Math typesetting engine                                |
-  | `turndown`             | ^7.2.2      | HTML → Markdown conversion                             |
-  | `isomorphic-dompurify` | ^3.1.0      | HTML sanitization (XSS prevention)                     |
-  | `pdf-parse`            | ^2.4.5      | PDF text extraction (content ingestion)                |
+  | `react-markdown` | ^10.1.0 | Markdown → React rendering for Wiki articles |
+  | `marked` | ^17.0.4 | Markdown parsing (server-side) |
+  | `remark-gfm` | ^4.0.1 | GitHub Flavored Markdown (tables, strikethrough, etc.) |
+  | `remark-math` | ^6.0.0 | Math notation in Markdown |
+  | `rehype-katex` | ^7.0.1 | KaTeX rendering for math equations |
+  | `katex` | ^0.16.37 | Math typesetting engine |
+  | `turndown` | ^7.2.2 | HTML → Markdown conversion |
+  | `isomorphic-dompurify` | ^3.1.0 | HTML sanitization (XSS prevention) |
+  | `pdf-parse` | ^2.4.5 | PDF text extraction (content ingestion) |
 - **Data & Utilities**
-  | **Package**        | **Version** | **Role**                                        |
+  | **Package** | **Version** | **Role** |
   | ------------------ | ----------- | ----------------------------------------------- |
-  | `recharts`         | ^3.8.0      | Analytics dashboard charts (heatmap, line, bar) |
-  | `cmdk`             | ^1.1.1      | Command palette (Cmd+K Omnibar search)          |
-  | `date-fns`         | ^4.1.0      | Date formatting and manipulation                |
-  | `html2canvas`      | ^1.4.1      | Screenshot capture (3D Lab snapshots to Notes)  |
-  | `react-day-picker` | ^9.14.0     | Calendar / date picker UI                       |
+  | `recharts` | ^3.8.0 | Analytics dashboard charts (heatmap, line, bar) |
+  | `cmdk` | ^1.1.1 | Command palette (Cmd+K Omnibar search) |
+  | `date-fns` | ^4.1.0 | Date formatting and manipulation |
+  | `html2canvas` | ^1.4.1 | Screenshot capture (3D Lab snapshots to Notes) |
+  | `react-day-picker` | ^9.14.0 | Calendar / date picker UI |
 - **Dev Tooling**
-  | **Tool**                        | **Version**      | **Purpose**                                                                           |
+  | **Tool** | **Version** | **Purpose** |
   | ------------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
-  | `eslint` • `eslint-config-next` | ^9.39.4 / 16.1.6 | Linting with Next.js-specific rules                                                   |
-  | `typescript`                    | ^5.9.3           | Strict type checking (`tsc --noEmit`)                                                 |
-  | `@tailwindcss/postcss`          | ^4.2.1           | Tailwind CSS PostCSS plugin                                                           |
-  | Type definitions                | various          | `@types/node`, `@types/react`, `@types/react-dom`, `@types/three`, `@types/dompurify` |
+  | `eslint` • `eslint-config-next` | ^9.39.4 / 16.1.6 | Linting with Next.js-specific rules |
+  | `typescript` | ^5.9.3 | Strict type checking (`tsc --noEmit`) |
+  | `@tailwindcss/postcss` | ^4.2.1 | Tailwind CSS PostCSS plugin |
+  | Type definitions | various | `@types/node`, `@types/react`, `@types/react-dom`, `@types/three`, `@types/dompurify` |
 
 ---
 

@@ -2,10 +2,13 @@ import { ReadinessScore } from '@/components/dashboard/ReadinessScore'
 import { ActionQueues } from '@/components/dashboard/ActionQueues'
 import { PredictiveRemediationCTA } from '@/components/dashboard/PredictiveRemediationCTA'
 import { ActivityHeatmap } from '@/components/dashboard/ActivityHeatmap'
+import { SubjectRadarChart } from '@/components/dashboard/SubjectRadarChart'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { getSubjectMasteryData } from '@/lib/actions/mastery'
 
 const DashboardPage = async () => {
   // TODO: Replace mocked values with real analytics wiring (EMA, IRT, pacing, taxonomy, queues).
+  const masteryData = await getSubjectMasteryData()
 
   const readinessMock = {
     value: 68,
@@ -26,6 +29,7 @@ const DashboardPage = async () => {
             score={readinessMock.value}
             previousScore={62} // Mocking a previous score to maintain the 'up' trend
           />
+          <SubjectRadarChart data={masteryData} />
         </div>
 
         {/* Right column — pacing, endurance, personal workspace */}

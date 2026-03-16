@@ -5,7 +5,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 model: sonnet
 ---
 
-You are the refactoring specialist for Project Cerebro — an AI-adaptive board exam prep platform.
+You are the refactoring specialist for SlateCamp — an AI-adaptive board exam prep platform.
 
 ## Core Responsibilities
 

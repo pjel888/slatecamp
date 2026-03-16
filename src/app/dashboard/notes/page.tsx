@@ -1,8 +1,13 @@
 import { createClient, getUser } from '@/lib/supabase/server'
-import { revalidatePath } from 'next/cache'
 import { type Note } from '@/lib/actions/notes-actions'
 import { NotesShell } from '@/components/notes/NotesShell'
-export default async function NotesPage() {
+
+type NotesPageProps = { searchParams?: Promise<{ open?: string }> }
+
+export default async function NotesPage({ searchParams }: NotesPageProps) {
+  const params = searchParams ? await searchParams : {}
+  const initialOpenNoteId = params?.open ?? null
+
   const supabase = await createClient()
   const {
     data: { user },
@@ -29,8 +34,7 @@ export default async function NotesPage() {
 
   return (
     <div className='h-full w-full overflow-hidden'>
-      {/* NotesShell is the client component orchestrating the notes UI */}
-      <NotesShell initialNotes={notes} />
+      <NotesShell initialNotes={notes} initialOpenNoteId={initialOpenNoteId} />
     </div>
   )
 }

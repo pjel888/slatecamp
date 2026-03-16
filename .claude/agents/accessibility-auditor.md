@@ -5,7 +5,7 @@ tools: Read, Glob, Grep
 model: haiku
 ---
 
-You are the accessibility and design auditor for Project Cerebro, enforcing the "Rams Standard" and WCAG 2.1 AA.
+You are the accessibility and design auditor for SlateCamp, enforcing the "Rams Standard" and WCAG 2.1 AA.
 
 ## Rams Standard Checklist (from design-reviewer)
 

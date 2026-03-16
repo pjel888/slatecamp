@@ -170,6 +170,7 @@ function buildBlocks(start: Date): {
 
 function generateMock(start: Date, signup: Date): ActivityDay[] {
   const iso0 = signupISOStr(signup)
+  const todayISO = signupISOStr(new Date())
   // Last exam date — activity drops off after this
   const lastExamDate = MOCK_EXAM_DATES[MOCK_EXAM_DATES.length - 1] ?? ''
   let y = start.getFullYear()
@@ -181,6 +182,10 @@ function generateMock(start: Date, signup: Date): ActivityDay[] {
     for (let d = 1; d <= dim; d++) {
       const iso = dateISO(y, m, d)
       if (iso < iso0) {
+        result.push({ date: iso, count: 0 })
+        continue
+      }
+      if (iso > todayISO) {
         result.push({ date: iso, count: 0 })
         continue
       }
@@ -299,6 +304,7 @@ export function ActivityHeatmap({
   }, [days])
 
   const { blocks, yearSpans } = useMemo(() => buildBlocks(start), [start])
+  const todayISO = signupISOStr(new Date())
 
   return (
     <div className='flex w-full min-w-0 flex-col p-3 pb-2'>
@@ -442,20 +448,23 @@ export function ActivityHeatmap({
 
                     const iso = dateISO(b.year, b.month, day)
                     const isExamDay = examSet.has(iso)
+                    const isToday = iso === todayISO
                     const beforeSignup = iso < iso0
                     const count = beforeSignup ? 0 : (actMap.get(iso) ?? 0)
                     const level = toLevel(count)
                     const isSignup = iso === iso0
 
-                    const tipText = isExamDay
-                      ? `${formatTooltip(iso)} · Exam day`
-                      : beforeSignup
-                        ? `${formatTooltip(iso)} · Before signup`
-                        : `${formatTooltip(iso)} · ${
-                            count === 0
-                              ? 'No activity'
-                              : `${count} ${count === 1 ? 'activity' : 'activities'}`
-                          }${isSignup ? ' · Account created' : ''}`
+                    const tipText =
+                      (isExamDay
+                        ? `${formatTooltip(iso)} · Exam day`
+                        : beforeSignup
+                          ? `${formatTooltip(iso)} · Before signup`
+                          : `${formatTooltip(iso)} · ${
+                              count === 0
+                                ? 'No activity'
+                                : `${count} ${count === 1 ? 'activity' : 'activities'}`
+                            }${isSignup ? ' · Account created' : ''}`) +
+                      (isToday ? ' · Today' : '')
 
                     return (
                       <Tooltip key={s}>
@@ -472,6 +481,8 @@ export function ActivityHeatmap({
                               isSignup &&
                                 !isExamDay &&
                                 '!bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10',
+                              isToday &&
+                                'ring-2 ring-amber-500 ring-offset-[1px] z-10',
                             )}
                           />
                         </TooltipTrigger>
@@ -509,6 +520,26 @@ export function ActivityHeatmap({
               />
               <span className='text-[10px] text-zinc-400 select-none'>
                 Exam day
+              </span>
+              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+                ·
+              </span>
+              <div
+                className='rounded-[2px] bg-zinc-100 dark:bg-zinc-800 ring-2 ring-amber-500 ring-offset-[1px] z-10'
+                style={{ width: layout.cell, height: layout.cell }}
+              />
+              <span className='text-[10px] text-zinc-400 select-none'>
+                Today
+              </span>
+              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+                ·
+              </span>
+              <div
+                className='rounded-[2px] bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10'
+                style={{ width: layout.cell, height: layout.cell }}
+              />
+              <span className='text-[10px] text-zinc-400 select-none'>
+                Sign up day
               </span>
             </div>
           </>

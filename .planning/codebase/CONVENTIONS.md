@@ -1,6 +1,6 @@
 # SlateCamp Coding Conventions
 
-This document outlines the coding standards, naming conventions, and architectural patterns established for the **SlateCamp** (Project Cerebro) codebase.
+This document outlines the coding standards, naming conventions, and architectural patterns established for the **SlateCamp** (SlateCamp) codebase.
 
 ---
 
@@ -19,6 +19,7 @@ This document outlines the coding standards, naming conventions, and architectur
 ## 📏 Naming Conventions
 
 ### Files & Directories
+
 - **Components**: PascalCase (e.g., `ActionQueues.tsx`, `ReadinessScore.tsx`)
 - **App Routes**: kebab-case (e.g., `src/app/dashboard/3d-lab/`)
 - **Lib/Hooks/Types**: kebab-case (e.g., `src/lib/utils/`, `src/hooks/use-local-storage.ts`, `src/types/app.ts`)
@@ -26,6 +27,7 @@ This document outlines the coding standards, naming conventions, and architectur
 - **E2E Specs**: `<feature-name>.spec.ts` (in `src/e2e/`)
 
 ### Code
+
 - **Variables**: camelCase, reveal intent (e.g., `userCount`, `currentQuestionIndex`)
 - **Functions**: camelCase, verb + noun (e.g., `getUserById()`, `calculateScore()`)
 - **Booleans**: Question form (e.g., `isActive`, `hasPermission`, `canEdit`)
@@ -37,14 +39,16 @@ This document outlines the coding standards, naming conventions, and architectur
 ## 🎨 Architecture & Patterns
 
 ### Next.js App Router
+
 - **Server Components by default**: Only add `'use client'` for components requiring interactivity (`useState`, `useEffect`, etc.).
 - **Data Fetching**: Prefer Server Components with `async/await` for initial data. No `useEffect` for data fetching.
 - **Server Actions**: Use `'use server'` for ALL database mutations. Never expose Supabase writes client-side.
 - **Optimization**: Use `useOptimistic` for high-frequency interactions (e.g., quiz answers).
 
 ### Styling — Apple HIG (Human Interface Guidelines)
+
 - **Philosophy**: Clarity, Deference, and Depth. Focused on the content, with a premium, platform-native feel.
-- **Visuals**: 
+- **Visuals**:
   - **Clarity**: High-legibility typography (SF Pro inspired Inter), generous whitespace, and purposeful color usage.
   - **Deference**: UI should recede to highlight user content (Wiki, Notes, 3D models).
   - **Depth**: Subtle layers, translucency (where appropriate), and logical hierarchies to help users navigate complexity.
@@ -56,6 +60,7 @@ This document outlines the coding standards, naming conventions, and architectur
 - **Constraints**: Use system fonts, appropriate corner radii (8px-12px), and smooth, purposeful animations (Framer Motion). Avoid "mechanical" rigidity; favor fluid, organic interactions.
 
 ### Clean Code (SRP, DRY, KISS, YAGNI)
+
 - **Guard Clauses**: Use early returns to keep code flat (max 2 levels of nesting).
 - **Function Size**: Small functions (max 20 lines, ideally 5-10).
 - **Colocation**: Keep related code close.
@@ -64,6 +69,7 @@ This document outlines the coding standards, naming conventions, and architectur
 ---
 
 ## 💾 Database & Security
+
 - **Single Source of Truth**: `DATABASE_SCHEMA.sql` at root.
 - **RLS (Row-Level Security)**: Enabled on ALL tables. Check policies before shipping features.
 - **Zero-Data-Loss**: Mandatory auto-save (every 10 seconds) for high-stakes sessions.
@@ -71,6 +77,7 @@ This document outlines the coding standards, naming conventions, and architectur
 ---
 
 ## ❌ Anti-Patterns
+
 - Never use `any` type — fix the actual type issue.
 - Never use `localStorage` for auth state (use `@supabase/ssr`).
 - Never show analytics in Review Mode.

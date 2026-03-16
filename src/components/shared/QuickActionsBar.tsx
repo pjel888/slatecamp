@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { MessageSquare, StickyNote, Search, GripVertical } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
-import { NotesSidebar } from '../notes/NotesSidebar'
+import { QuickNotePopup } from '../notes/QuickNotePopup'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 
 const QUICK_ACTIONS = [
@@ -96,7 +96,7 @@ export function QuickActionsBar() {
       </aside>
 
       <Omnibar open={omnibarOpen} setOpen={setOmnibarOpen} />
-      <NotesSidebar open={notesOpen} onOpenChange={setNotesOpen} />
+      <QuickNotePopup open={notesOpen} onOpenChange={setNotesOpen} />
     </>
   )
 }
