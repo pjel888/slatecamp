@@ -63,7 +63,7 @@ const ICON_SIZE = 'h-[18px] w-[18px]'
 /** * Premium Collapsed Logomark
  */
 const Logomark = () => (
-  <div className='flex h-8 w-8 items-center justify-center rounded-sm bg-blue-500 text-zinc-50 shadow-sm'>
+  <div className='flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-white shadow-sm'>
     <span className='font-serif font-bold text-lg leading-none mt-0.5'>S</span>
   </div>
 )
@@ -87,11 +87,11 @@ const SidebarItem = ({
 }: SidebarItemProps) => {
   // We NEVER change to justify-center. Mathematical padding keeps the icon static.
   const baseClasses =
-    'relative flex items-center gap-3 px-2 py-1.5 text-[12px] rounded-sm transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
+    'relative flex items-center gap-3 px-2 py-1.5 text-sm rounded-md transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
 
   const stateClasses = isActive
-    ? ' text-blue-600 font-medium bg-blue-100'
-    : 'text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900'
+    ? 'text-blue-600 font-semibold bg-blue-50'
+    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
 
   const link = (
     <TransitionLink
@@ -109,7 +109,7 @@ const SidebarItem = ({
           <Icon
             className={cn(
               ICON_SIZE,
-              isActive ? 'text-blue-600' : 'text-zinc-500',
+              isActive ? 'text-blue-600' : 'text-gray-500',
             )}
             strokeWidth={isActive ? 2 : 1.75}
           />
@@ -200,16 +200,16 @@ export const Sidebar = ({
   return (
     <aside
       className={cn(
-        'hidden lg:flex lg:flex-col border-r border-zinc-200 transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
+        'hidden lg:flex lg:flex-col border-r border-border transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
         collapsed ? 'w-[72px]' : 'w-[260px]',
-        'bg-zinc-100',
+        'bg-white',
         'z-10',
       )}
     >
       {/* 1. Logo Area (Stays perfectly static at the top) */}
       <div
         className={cn(
-          'flex h-16 items-center border-b border-zinc-200 shrink-0 transition-all duration-300',
+          'flex h-16 items-center border-b border-border shrink-0 transition-all duration-300',
           collapsed ? 'justify-center' : 'justify-start px-5',
         )}
       >
@@ -225,13 +225,13 @@ export const Sidebar = ({
       {/* 2. Minimize/Expand Toggle (Below Logo, Above Profile) */}
       <div
         className={cn(
-          'flex items-center border-b border-zinc-200 shrink-0 py-1.5 transition-all duration-300',
+          'flex items-center border-b border-border shrink-0 py-1.5 transition-all duration-300',
           collapsed ? 'justify-center' : 'justify-end px-3',
         )}
       >
         <button
           onClick={toggleCollapse}
-          className='flex h-8 w-8 items-center justify-center rounded-sm text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-900 outline-none'
+          className='flex h-8 w-8 items-center justify-center rounded-md text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 outline-none'
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
@@ -245,23 +245,23 @@ export const Sidebar = ({
       {/* 3. Main Content Area */}
       <div className='flex flex-1 flex-col px-3 overflow-y-auto overflow-x-hidden pb-4'>
         {/* User Profile Area */}
-        <div className='border-b border-zinc-200 py-3'>
+        <div className='border-b border-border py-3'>
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
                 href={ROUTES.SETTINGS}
-                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-sm transition-colors hover:bg-zinc-200 outline-none'
+                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-gray-100 outline-none'
                 onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <div className={ICON_BOX}>
-                  <Avatar className='h-7 w-7 border border-zinc-200 shadow-sm'>
+                  <Avatar className='h-7 w-7 border border-border shadow-sm'>
                     {userDisplay?.avatarUrl ? (
                       <AvatarImage
                         src={userDisplay.avatarUrl}
                         alt={displayName}
                       />
                     ) : null}
-                    <AvatarFallback className='bg-zinc-200 text-xs font-medium text-zinc-900'>
+                    <AvatarFallback className='bg-gray-100 text-xs font-medium text-gray-900'>
                       {initials}
                     </AvatarFallback>
                   </Avatar>
@@ -290,7 +290,7 @@ export const Sidebar = ({
                 </Tooltip>
                 </div>
         {/* Tier & Plan Area */}
-        <div className='border-b border-zinc-200 py-3'>
+        <div className='border-b border-border py-3'>
           <div className='flex items-center justify-start gap-3 px-2'>
             <div className={ICON_BOX}>
               {tier === 'free' ? (
@@ -330,7 +330,7 @@ export const Sidebar = ({
                   <Button
                     variant='outline'
                     size='sm'
-                    className='h-6 px-2 text-[10px] font-medium border-zinc-200 text-zinc-900 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-colors'
+                    className='h-6 px-2 text-xs font-medium border-border text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-colors'
                   >
                     Upgrade
                   </Button>
@@ -361,7 +361,7 @@ export const Sidebar = ({
 
           {isAdmin && (
             <>
-              <div className='my-3 border-t border-zinc-200' />
+              <div className='my-3 border-t border-border' />
               <SidebarItem
                 href={ROUTES.SETTINGS_DEVELOPER}
                 label='Dev Settings'
@@ -378,7 +378,7 @@ export const Sidebar = ({
       </div>
 
       {/* 4. Footer Area (Theme Toggle) */}
-      <div className='border-t border-zinc-200 p-3'>
+      <div className='border-t border-border p-3'>
         <div
           className={cn(
             'flex transition-all duration-300',
@@ -394,7 +394,7 @@ export const Sidebar = ({
         <Dialog open={leaveDialogOpen} onOpenChange={setLeaveDialogOpen}>
           <DialogContent
             showCloseButton={false}
-            className='sm:max-w-[380px] bg-white border-zinc-200'
+            className='sm:max-w-[380px] bg-white border-border'
           >
             <DialogTitle className='text-zinc-900'>
               Are you sure you want to exit?
@@ -403,11 +403,11 @@ export const Sidebar = ({
               Your progress in this {mode === 'review' ? 'review' : 'quiz'} will
               not be saved. You can come back anytime.
             </DialogDescription>
-            <DialogFooter className='mt-4 gap-2 border-t border-zinc-200 bg-zinc-100 p-4 sm:flex-row'>
+            <DialogFooter className='mt-4 gap-2 border-t border-border bg-gray-50 p-4 sm:flex-row'>
               <Button
                 variant='outline'
                 onClick={() => setLeaveDialogOpen(false)}
-                className='flex-1 sm:flex-initial border-zinc-200 text-zinc-900 hover:bg-white'
+                className='flex-1 sm:flex-initial border-border text-gray-900 hover:bg-white'
               >
                 No, stay
               </Button>

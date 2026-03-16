@@ -10,6 +10,7 @@ import { DashboardHeader } from '@/components/shared/DashboardHeader'
 import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
+import { NoteContextProvider } from '@/lib/context/note-context'
 import { TierProvider } from '@/lib/context/tier-context'
 import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import { DisciplineProvider } from '@/lib/context/discipline-context'
@@ -83,7 +84,8 @@ async function DashboardLayoutContent({
         initialDisciplines={allDisciplines as Discipline[] ?? []}
       >
         <ActiveSessionProvider>
-          <div className='flex h-screen bg-zinc-50 text-zinc-900 font-sans selection:bg-zinc-200'>
+          <NoteContextProvider>
+          <div className='flex h-screen bg-[#f6f8fa] text-gray-900 font-sans selection:bg-gray-200'>
             <Sidebar
               isAdmin={isAdmin}
               isDevMode={showDevTools}
@@ -96,7 +98,7 @@ async function DashboardLayoutContent({
                 userStats?.disciplines?.name ?? 'No Discipline Selected'
               }
             />
-            <div className='flex flex-1 flex-col overflow-hidden border-l border-zinc-200'>
+            <div className='flex flex-1 flex-col overflow-hidden border-l border-border'>
               <BreadcrumbProvider>
                 <Navbar isAdmin={isAdmin} />
                 <div>
@@ -117,6 +119,7 @@ async function DashboardLayoutContent({
               />
             )}
           </div>
+          </NoteContextProvider>
         </ActiveSessionProvider>
       </DisciplineProvider>
     </TierProvider>
