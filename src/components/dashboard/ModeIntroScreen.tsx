@@ -24,6 +24,7 @@ interface ModeIntroScreenProps {
   questionCount: number
   onStart: () => void
   onBack: () => void
+  config?: any
 }
 
 export function ModeIntroScreen({
@@ -31,20 +32,24 @@ export function ModeIntroScreen({
   questionCount,
   onStart,
   onBack,
+  config,
 }: ModeIntroScreenProps) {
+  const isSubjectMode = config?.isSubjectMode
+
   const modeConfigs = {
     camp: {
-      title: 'Camp Mode',
-      icon: Brain,
-      color: 'text-teal-600',
-      bgColor: 'bg-teal-50',
-      description:
-        "Focus on learning and building foundations. You'll get instant feedback and detailed rationales for every answer.",
+      title: isSubjectMode ? 'Subject Mode' : 'Camp Mode',
+      icon: isSubjectMode ? Target : Brain,
+      color: isSubjectMode ? 'text-blue-600' : 'text-teal-600',
+      bgColor: isSubjectMode ? 'bg-blue-50' : 'bg-teal-50',
+      description: isSubjectMode 
+        ? "Targeted drilling for a specific syllabus area. You'll get instant feedback and SME rationales."
+        : "Focus on learning and building foundations. You'll get instant feedback and detailed rationales for every answer.",
       specs: [
         { label: 'Immediate Feedback', value: 'Enabled', icon: BookOpen },
         { label: 'Detailed Rationales', value: 'SME Authored', icon: Target },
         { label: 'Time Limit', value: 'None', icon: Timer },
-        { label: 'Goal', value: 'Conceptual Mastery', icon: Trophy },
+        { label: 'Goal', value: 'Subject Mastery', icon: Trophy },
       ],
     },
     storm: {
@@ -92,9 +97,9 @@ export function ModeIntroScreen({
   }
 
   // Fallback for modes not explicitly detailed (custom, blindspot, endurance)
-  const config =
+  const modeConfig =
     modeConfigs[mode as keyof typeof modeConfigs] || modeConfigs.camp
-  const Icon = config.icon
+  const Icon = modeConfig.icon
 
   return (
     <div className='max-w-3xl mx-auto px-6 py-12 flex flex-col min-h-[calc(100vh-12rem)] justify-center'>
@@ -112,24 +117,24 @@ export function ModeIntroScreen({
           <div
             className={cn(
               'w-20 h-20 rounded-sm flex items-center justify-center border shadow-sm',
-              config.bgColor,
-              config.color.replace('text-', 'border-').replace('600', '200'),
+              modeConfig.bgColor,
+              modeConfig.color.replace('text-', 'border-').replace('600', '200'),
             )}
           >
             <Icon className='h-10 w-10' />
           </div>
           <div>
-            <h1 className='text-4xl font-bold text-zinc-900 tracking-tight'>
-              {config.title}
+            <h1 className='text-xl font-semibold text-zinc-900 tracking-tight'>
+              {modeConfig.title}
             </h1>
-            <p className='text-zinc-500 mt-2 text-lg max-w-xl leading-relaxed'>
-              {config.description}
+            <p className='text-zinc-500 mt-2 text-sm max-w-xl leading-relaxed'>
+              {modeConfig.description}
             </p>
           </div>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-          {config.specs.map((spec, i) => {
+          {modeConfig.specs.map((spec, i) => {
             const SpecIcon = spec.icon
             return (
               <div
@@ -155,7 +160,7 @@ export function ModeIntroScreen({
         <div className='pt-8 flex flex-col gap-4'>
           <Button
             onClick={onStart}
-            className='w-full h-16 bg-zinc-900 text-white rounded-sm font-black text-lg hover:bg-zinc-800 transition-all flex items-center justify-center gap-3 shadow-xl shadow-zinc-200'
+            className='w-full h-12 bg-zinc-900 text-white rounded-md font-semibold text-sm hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2'
           >
             Start Session
             <ChevronRight className='h-5 w-5' />

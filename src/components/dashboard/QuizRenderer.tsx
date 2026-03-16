@@ -1,38 +1,28 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import {
-  Check,
-  ChevronLeft,
-  ChevronRight,
-  Info,
-  Flag,
-  Delete,
-  Timer,
-  ExternalLink,
-  Plus,
-  MessageSquare,
-  X,
-  XCircle,
-  AlertTriangle,
-} from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'
+import { AlertTriangle } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
 import { saveInteraction, updateQuizSession } from '@/lib/actions/quiz'
 import { ResultsSummary } from './ResultsSummary'
+import { useNoteContext } from '@/lib/context/note-context'
+import { useRouter } from 'next/navigation'
+
+import {
+  QuizOverlay,
+  QuizHeader,
+  QuestionStem,
+  OptionButton,
+  FooterNavigator,
+  TimerBar,
+  RationaleDrawer,
+  ConfirmSubmitSheet,
+  AITutorDrawer,
+} from '@/components/quiz'
+import type { OptionState, QuestionDotState } from '@/components/quiz'
+
+// ─── Types ──────────────────────────────────────────────────────────────────
 
 interface QuizRendererProps {
   session: QuizSession
@@ -40,6 +30,36 @@ interface QuizRendererProps {
   initialInteractions: any[]
   onExit: () => void
 }
+
+type SaveStatus = 'idle' | 'saving' | 'saved' | 'error' | 'offline'
+
+// ─── LocalStorage helpers ────────────────────────────────────────────────────
+
+const LS_KEY = (sessionId: string) => `slatecamp_quiz_${sessionId}`
+
+function persistToLS(sessionId: string, state: {
+  answers: Record<string, string>
+  flags: string[]
+  strikes: Record<string, string[]>
+  currentIndex: number
+}) {
+  try {
+    localStorage.setItem(LS_KEY(sessionId), JSON.stringify({ ...state, ts: Date.now() }))
+  } catch { /* quota exceeded — silently skip */ }
+}
+
+function restoreFromLS(sessionId: string) {
+  try {
+    const raw = localStorage.getItem(LS_KEY(sessionId))
+    return raw ? JSON.parse(raw) : null
+  } catch { return null }
+}
+
+function clearLS(sessionId: string) {
+  try { localStorage.removeItem(LS_KEY(sessionId)) } catch { /* ignore */ }
+}
+
+// ─── Component ───────────────────────────────────────────────────────────────
 
 export function QuizRenderer({
   session,
@@ -49,70 +69,192 @@ export function QuizRenderer({
 }: QuizRendererProps) {
   const mode = session.test_mode
   const strictMode = mode === 'storm' || mode === 'proof_sim'
+  const router = useRouter()
 
-  const [currentIndex, setCurrentIndex] = useState(
-    session.current_question_index || 0,
-  )
+  // ── Core state ────────────────────────────────────────────────────────────
+  const [currentIndex, setCurrentIndex] = useState(() => session.current_question_index || 0)
   const [isCompleted, setIsCompleted] = useState(false)
   const [isRationaleVisible, setIsRationaleVisible] = useState(false)
+  const [isAIOpen, setIsAIOpen] = useState(false)
+  const [isSubmitSheetOpen, setIsSubmitSheetOpen] = useState(false)
+  const [isSaving, setIsSaving] = useState(false)
+  const [saveStatus, setSaveStatus] = useState<SaveStatus>('idle')
+  const [isAutoSubmitting, setIsAutoSubmitting] = useState(false)
+  const [isOnline, setIsOnline] = useState(true)
 
+  // ── Quiz state — restored from LS on mount ───────────────────────────────
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
-    const initialAnswers: Record<string, string> = {}
-    initialInteractions.forEach((i) => {
-      initialAnswers[i.question_id] = i.selected_option_id
-    })
-    return initialAnswers
-  })
+    const ls = restoreFromLS(session.session_id)
+    if (ls) return ls.answers
 
-  const [struckOptions, setStruckOptions] = useState<
-    Record<string, Set<string>>
-  >(() => {
-    const initial: Record<string, Set<string>> = {}
-    questions.forEach((q) => (initial[q.question_id] = new Set()))
-    return initial
+    const init: Record<string, string> = {}
+    initialInteractions.forEach((i) => {
+      if (i.selected_option_id) init[i.question_id] = i.selected_option_id
+    })
+    return init
   })
 
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(() => {
-    const initialFlags = new Set<string>()
-    initialInteractions.forEach((i) => {
-      if (i.is_flagged) initialFlags.add(i.question_id)
-    })
-    return initialFlags
+    const ls = restoreFromLS(session.session_id)
+    if (ls) return new Set<string>(ls.flags)
+
+    const init = new Set<string>()
+    initialInteractions.forEach((i) => { if (i.is_flagged) init.add(i.question_id) })
+    return init
+  })
+
+  const [struckOptions, setStruckOptions] = useState<Record<string, Set<string>>>(() => {
+    const ls = restoreFromLS(session.session_id)
+    if (ls) {
+      const restored: Record<string, Set<string>> = {}
+      Object.entries(ls.strikes || {}).forEach(([qId, arr]) => {
+        restored[qId] = new Set(arr as string[])
+      })
+      return restored
+    }
+    const init: Record<string, Set<string>> = {}
+    questions.forEach((q) => { init[q.question_id] = new Set() })
+    return init
   })
 
   const [checkedQuestions, setCheckedQuestions] = useState<Set<string>>(() => {
-    const initialChecked = new Set<string>()
+    const init = new Set<string>()
     initialInteractions.forEach((i) => {
-      if (
-        !strictMode &&
-        i.selected_option_id &&
-        (mode === 'camp' || mode === 'chill' || mode === 'blindspot')
-      ) {
-        initialChecked.add(i.question_id)
+      if (!strictMode && i.selected_option_id && (mode === 'camp' || mode === 'chill' || mode === 'blindspot')) {
+        init.add(i.question_id)
       }
     })
-    return initialChecked
+    return init
   })
 
-  const [isSaving, setIsSaving] = useState(false)
-  const [countdown, setCountdown] = useState<number | null>(null)
-  const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0)
-  const [isAutoSubmitting, setIsAutoSubmitting] = useState(false)
+  // answer change tracking for telemetry
+  const answerChangesRef = useRef<Record<string, number>>({})
 
-  const lastSavedRef = useRef<string>(
-    JSON.stringify({
-      answers,
-      currentIndex,
-      flaggedQuestions: Array.from(flaggedQuestions),
-    }),
-  )
+  // ── Timer ─────────────────────────────────────────────────────────────────
+  const [countdown, setCountdown] = useState<number | null>(() => {
+    if (!strictMode) return null
+    return questions.length * 120
+  })
+  const totalTimerSeconds = questions.length * 120
+
+  useEffect(() => {
+    if (!strictMode) return
+    const timer = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev === null || prev <= 0) {
+          clearInterval(timer)
+          handleFinalSubmit()
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+    return () => clearInterval(timer)
+  }, [strictMode]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Dwell time ───────────────────────────────────────────────────────────
+  const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0)
+  const dwellTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  const startDwell = useCallback((isCorrect: boolean) => {
+    if (dwellTimerRef.current) clearInterval(dwellTimerRef.current)
+    const duration = isCorrect ? 3 : 5
+    setDwellTimeRemaining(duration)
+    dwellTimerRef.current = setInterval(() => {
+      setDwellTimeRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(dwellTimerRef.current!)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+  }, [])
+
+  // ── Timing per question ───────────────────────────────────────────────────
   const startTimeRef = useRef<number>(Date.now())
 
+  // ── Note context ──────────────────────────────────────────────────────────
+  const { setAnchor, clearAnchor } = useNoteContext()
   const currentQuestion = questions[currentIndex]
   const options = (currentQuestion?.options as unknown as Choice[]) || []
-  const correctOptionId =
-    currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
+  const correctOptionId = currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
 
+  useEffect(() => {
+    if (!currentQuestion) return
+    setAnchor({
+      question_id: currentQuestion.question_id,
+      question_text: currentQuestion.text,
+      topic_id: currentQuestion.topic_id,
+      session_id: session.session_id,
+      source_url: '/dashboard/testing',
+    })
+    return () => clearAnchor()
+  }, [currentQuestion?.question_id, session.session_id, setAnchor, clearAnchor])
+
+  // ── Online/offline ────────────────────────────────────────────────────────
+  useEffect(() => {
+    const onOnline = () => setIsOnline(true)
+    const onOffline = () => { setIsOnline(false); setSaveStatus('offline') }
+    window.addEventListener('online', onOnline)
+    window.addEventListener('offline', onOffline)
+    return () => {
+      window.removeEventListener('online', onOnline)
+      window.removeEventListener('offline', onOffline)
+    }
+  }, [])
+
+  // ── beforeunload: sync LS write ───────────────────────────────────────────
+  useEffect(() => {
+    const onUnload = () => {
+      persistToLS(session.session_id, {
+        answers,
+        flags: Array.from(flaggedQuestions),
+        strikes: Object.fromEntries(
+          Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)])
+        ),
+        currentIndex,
+      })
+    }
+    window.addEventListener('beforeunload', onUnload)
+    return () => window.removeEventListener('beforeunload', onUnload)
+  }, [session.session_id, answers, flaggedQuestions, struckOptions, currentIndex])
+
+  // ── 10-second auto-save (CLAUDE.md mandate) ───────────────────────────────
+  const saveQueueRef = useRef<(() => Promise<void>)[]>([])
+
+  const flushSaveQueue = useCallback(async () => {
+    while (saveQueueRef.current.length > 0) {
+      const fn = saveQueueRef.current.shift()
+      if (fn) await fn()
+    }
+  }, [])
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      if (!currentQuestion) return
+
+      // Always persist to LS synchronously
+      persistToLS(session.session_id, {
+        answers,
+        flags: Array.from(flaggedQuestions),
+        strikes: Object.fromEntries(
+          Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)])
+        ),
+        currentIndex,
+      })
+
+      // Debounce DB write
+      if (isOnline) {
+        try {
+          await updateQuizSession(session.session_id, { current_question_index: currentIndex })
+        } catch { /* will retry next interval */ }
+      }
+    }, 10_000)
+    return () => clearInterval(interval)
+  }, [session.session_id, answers, flaggedQuestions, struckOptions, currentIndex, currentQuestion, isOnline])
+
+  // ── Focus loss in strict mode ─────────────────────────────────────────────
   useEffect(() => {
     if (!strictMode || session.status === 'completed') return
     const handleFocusLoss = async () => {
@@ -120,9 +262,11 @@ export function QuizRenderer({
         setIsAutoSubmitting(true)
         try {
           await updateQuizSession(session.session_id, { status: 'completed' })
-          setIsCompleted(true)
         } catch (error) {
           console.error('Auto-submit failed:', error)
+        } finally {
+          clearLS(session.session_id)
+          setIsCompleted(true)
         }
       }
     }
@@ -134,185 +278,206 @@ export function QuizRenderer({
     }
   }, [strictMode, session.session_id, session.status])
 
+  // ── Keyboard shortcuts: A/B/C/D to select options ─────────────────────────
   useEffect(() => {
-    if (strictMode) {
-      const totalSeconds = questions.length * 120
-      setCountdown(totalSeconds)
-      const timer = setInterval(() => {
-        setCountdown((prev) => (prev !== null && prev > 0 ? prev - 1 : 0))
-      }, 1000)
-      return () => clearInterval(timer)
-    }
-  }, [strictMode, questions.length])
+    const onKey = (e: KeyboardEvent) => {
+      if (isCompleted || isSubmitSheetOpen) return
+      const isChecked = checkedQuestions.has(currentQuestion?.question_id)
+      if (isChecked) return
 
-  useEffect(() => {
-    let timer: any
-    if (
-      !strictMode &&
-      checkedQuestions.has(currentQuestion?.question_id) &&
-      (mode === 'camp' || mode === 'blindspot')
-    ) {
-      const isCorrect = answers[currentQuestion.question_id] === correctOptionId
-      const dwellTime = isCorrect ? 3 : 5
-      setDwellTimeRemaining(dwellTime)
-      timer = setInterval(() => {
-        setDwellTimeRemaining((prev) => {
-          if (prev <= 1) {
-            clearInterval(timer)
-            return 0
-          }
-          return prev - 1
-        })
-      }, 1000)
-    }
-    return () => clearInterval(timer)
-  }, [
-    currentIndex,
-    checkedQuestions,
-    mode,
-    strictMode,
-    answers,
-    currentQuestion?.question_id,
-    correctOptionId,
-  ])
-
-  const handleSave = useCallback(async () => {
-    setIsSaving(true)
-    try {
-      await updateQuizSession(session.session_id, {
-        current_question_index: currentIndex,
-      })
-      const currentAnswer = answers[currentQuestion.question_id]
-      const isFlagged = flaggedQuestions.has(currentQuestion.question_id)
-      if (currentAnswer || isFlagged) {
-        await saveInteraction({
-          session_id: session.session_id,
-          question_id: currentQuestion.question_id,
-          topic_id: currentQuestion.topic_id,
-          selected_option_id: currentAnswer || null,
-          is_correct: (currentAnswer || null) === correctOptionId,
-          time_spent_ms: Date.now() - startTimeRef.current,
-        } as any)
+      const idx = ['a', 'b', 'c', 'd', 'e'].indexOf(e.key.toLowerCase())
+      if (idx !== -1 && options[idx]) {
+        handleChoiceSelect(options[idx].id)
       }
-      lastSavedRef.current = JSON.stringify({
-        answers,
-        currentIndex,
-        flaggedQuestions: Array.from(flaggedQuestions),
-      })
-    } catch (error) {
-      console.error('Failed to auto-save:', error)
-    } finally {
-      setIsSaving(false)
     }
-  }, [
-    session.session_id,
-    currentIndex,
-    answers,
-    currentQuestion,
-    flaggedQuestions,
-    correctOptionId,
-  ])
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [currentQuestion, options, checkedQuestions, isCompleted, isSubmitSheetOpen]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Save interaction to DB ─────────────────────────────────────────────────
+  const persistInteraction = useCallback(async (qId: string, optionId: string | null, isFlagged: boolean, eliminatedCount: number) => {
+    if (!isOnline) return
+    const q = questions.find((q) => q.question_id === qId)
+    if (!q) return
+
+    setSaveStatus('saving')
+    try {
+      await saveInteraction({
+        session_id: session.session_id,
+        question_id: qId,
+        topic_id: q.topic_id,
+        selected_option_id: optionId,
+        is_correct: (optionId || null) === (q.correct_option_id ?? q.correct_answer),
+        time_spent_ms: Date.now() - startTimeRef.current,
+        is_flagged: isFlagged,
+        answer_changes: answerChangesRef.current[qId] || 0,
+        options_eliminated: eliminatedCount,
+      })
+      setSaveStatus('saved')
+    } catch (err) {
+      console.error('saveInteraction failed:', err)
+      setSaveStatus('error')
+    }
+  }, [session.session_id, questions, isOnline])
+
+  // ── Handlers ──────────────────────────────────────────────────────────────
 
   const handleChoiceSelect = (choiceId: string) => {
-    if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
-    if (mode === 'chill') {
-      setAnswers((prev) => ({
-        ...prev,
-        [currentQuestion.question_id]: choiceId,
-      }))
-      setCheckedQuestions((prev) =>
-        new Set(prev).add(currentQuestion.question_id),
-      )
-      setIsRationaleVisible(true)
-      handleSave()
-      return
+    const qId = currentQuestion.question_id
+    if (!strictMode && checkedQuestions.has(qId)) return
+
+    // Track answer changes for telemetry
+    if (answers[qId] && answers[qId] !== choiceId) {
+      answerChangesRef.current[qId] = (answerChangesRef.current[qId] || 0) + 1
     }
-    setAnswers((prev) => ({ ...prev, [currentQuestion.question_id]: choiceId }))
+
+    const next = { ...answers, [qId]: choiceId }
+    setAnswers(next)
+
+    // Persist to LS immediately
+    persistToLS(session.session_id, {
+      answers: next,
+      flags: Array.from(flaggedQuestions),
+      strikes: Object.fromEntries(Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)])),
+      currentIndex,
+    })
+
+    // Chill mode: auto-reveal
+    if (mode === 'chill') {
+      setCheckedQuestions((prev) => new Set(prev).add(qId))
+      setIsRationaleVisible(true)
+      persistInteraction(qId, choiceId, flaggedQuestions.has(qId), struckOptions[qId]?.size || 0)
+    }
   }
 
-  const toggleStrikethrough = (choiceId: string, e: React.MouseEvent) => {
+  const toggleStrikethrough = (choiceId: string, e: React.MouseEvent | React.KeyboardEvent) => {
     e.stopPropagation()
-    if (!strictMode && checkedQuestions.has(currentQuestion.question_id)) return
+    const qId = currentQuestion.question_id
+    if (!strictMode && checkedQuestions.has(qId)) return
+
     setStruckOptions((prev) => {
-      const currentSet = prev[currentQuestion.question_id] || new Set()
+      const currentSet = prev[qId] || new Set()
       const next = new Set(currentSet)
       if (next.has(choiceId)) next.delete(choiceId)
       else next.add(choiceId)
-      return { ...prev, [currentQuestion.question_id]: next }
+      return { ...prev, [qId]: next }
     })
   }
 
   const toggleFlag = () => {
+    const qId = currentQuestion.question_id
     setFlaggedQuestions((prev) => {
       const next = new Set(prev)
-      if (next.has(currentQuestion.question_id))
-        next.delete(currentQuestion.question_id)
-      else next.add(currentQuestion.question_id)
+      if (next.has(qId)) next.delete(qId)
+      else next.add(qId)
       return next
     })
   }
 
   const handleCheckAnswer = () => {
+    const qId = currentQuestion.question_id
+    const answer = answers[qId]
+
     if (strictMode) {
-      handleSave()
+      persistInteraction(qId, answer || null, flaggedQuestions.has(qId), struckOptions[qId]?.size || 0)
       handleNext()
       return
     }
-    setCheckedQuestions((prev) =>
-      new Set(prev).add(currentQuestion.question_id),
-    )
+
+    setCheckedQuestions((prev) => new Set(prev).add(qId))
     setIsRationaleVisible(true)
-    handleSave()
+    persistInteraction(qId, answer || null, flaggedQuestions.has(qId), struckOptions[qId]?.size || 0)
+
+    const isCorrect = answer === correctOptionId
+    if (mode === 'camp' || mode === 'blindspot') {
+      startDwell(isCorrect)
+    }
   }
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1)
       setIsRationaleVisible(false)
-      startTimeRef.current = Date.now()
+      setIsAIOpen(false)
       setDwellTimeRemaining(0)
+      startTimeRef.current = Date.now()
     } else if (strictMode) {
       handleFinalSubmit()
     }
+  }, [currentIndex, questions.length, strictMode]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleBack = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prev) => prev - 1)
+      setIsRationaleVisible(false)
+      setIsAIOpen(false)
+      setDwellTimeRemaining(0)
+      startTimeRef.current = Date.now()
+    }
+  }
+
+  const handleJump = (idx: number) => {
+    if (strictMode) return
+    setCurrentIndex(idx)
+    setIsRationaleVisible(false)
+    setIsAIOpen(false)
+    setDwellTimeRemaining(0)
+    startTimeRef.current = Date.now()
   }
 
   const handleFinalSubmit = async () => {
     setIsSaving(true)
     try {
       await updateQuizSession(session.session_id, { status: 'completed' })
-      setIsCompleted(true)
     } catch (error) {
-      console.error('Final submit failed:', error)
+      console.error('Final submit DB update failed:', error)
+      // Don't block the user — still show results even if DB write fails
     } finally {
+      clearLS(session.session_id)
       setIsSaving(false)
+      setIsSubmitSheetOpen(false)
+      setIsCompleted(true)
     }
   }
 
-  const handleBack = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prev) => prev - 1)
-      setIsRationaleVisible(false)
-      startTimeRef.current = Date.now()
-      setDwellTimeRemaining(0)
-    }
-  }
+  // ── Derived values ────────────────────────────────────────────────────────
 
-  const isChecked =
-    !strictMode && checkedQuestions.has(currentQuestion?.question_id)
+  const isChecked = !strictMode && checkedQuestions.has(currentQuestion?.question_id)
   const selectedAnswer = answers[currentQuestion?.question_id]
   const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)
 
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = seconds % 60
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
-
   const isAheadOfPace = useMemo(() => {
-    const elapsed = questions.length * 120 - (countdown || 0)
+    if (countdown === null) return true
+    const elapsed = totalTimerSeconds - countdown
     const expected = (currentIndex + 1) * 120
     return elapsed < expected
-  }, [countdown, currentIndex, questions.length])
+  }, [countdown, currentIndex, totalTimerSeconds])
+
+  const dots = useMemo(() => questions.map((q, idx) => {
+    let state: QuestionDotState = 'unanswered'
+    if (idx === currentIndex) state = 'current'
+    else if (flaggedQuestions.has(q.question_id)) state = 'flagged'
+    else if (answers[q.question_id]) state = 'answered'
+    return { index: idx, state }
+  }), [questions, currentIndex, answers, flaggedQuestions])
+
+  const getOptionState = (option: Choice): OptionState => {
+    const isSelected = selectedAnswer === option.id
+    const isCorrect = option.id === correctOptionId
+    const isStruck = struckOptions[currentQuestion?.question_id]?.has(option.id)
+
+    if (!isChecked) {
+      if (isSelected) return 'selected' // selection beats strikethrough
+      if (isStruck) return 'struck'
+      return 'default'
+    }
+    // Post-check states
+    if (isCorrect) return 'correct'
+    if (isSelected && !isCorrect) return 'wrong'
+    return 'faded'
+  }
+
+  // ── Render ────────────────────────────────────────────────────────────────
 
   if (isCompleted) {
     return (
@@ -328,391 +493,198 @@ export function QuizRenderer({
 
   if (!currentQuestion) return null
 
+  const answeredCount = Object.keys(answers).length
+  const unansweredCount = questions.length - answeredCount
+  const flaggedCount = flaggedQuestions.size
+
   return (
-    <div
-      className={cn(
-        'flex flex-col h-full max-w-6xl mx-auto px-6 overflow-hidden transition-colors duration-500',
-        strictMode ? 'bg-zinc-50/50' : 'bg-white',
-      )}
-    >
+    <QuizOverlay>
+      {/* Integrity violation overlay (strict mode focus loss) */}
       {isAutoSubmitting && (
-        <div className='fixed inset-0 z-[100] bg-white/80 backdrop-blur-sm flex items-center justify-center'>
-          <div className='bg-white p-8 rounded-sm shadow-2xl border border-zinc-200 text-center space-y-4'>
-            <AlertTriangle className='h-12 w-12 text-red-600 mx-auto animate-pulse' />
-            <h2 className='text-xl font-bold text-zinc-900'>
-              Integrity Violation
-            </h2>
-            <p className='text-zinc-500 text-sm max-w-xs'>
-              Focus lost during Storm Mode. Session is being automatically
-              submitted.
-            </p>
+        <div className="absolute inset-0 z-[100] bg-white/90 backdrop-blur-sm flex items-center justify-center">
+          <div className="bg-white p-6 rounded-md shadow-lg border border-zinc-200 text-center space-y-3 max-w-xs">
+            <AlertTriangle className="h-10 w-10 text-zinc-700 mx-auto" />
+            <h2 className="text-lg font-bold text-zinc-900">Session Submitted</h2>
+            <p className="text-zinc-500 text-sm">Focus was lost during a strict-mode session. Your answers have been recorded.</p>
           </div>
         </div>
       )}
 
-      {/* 1. HEADER */}
-      <header className='pt-6 shrink-0 space-y-4'>
-        <div className='flex justify-between items-end'>
-          <div className='space-y-1.5'>
-            <div className='flex items-center gap-2'>
-              <span className='text-[11px] font-bold uppercase tracking-widest text-zinc-900'>
-                Question {currentIndex + 1} of {questions.length}
-              </span>
-              <div
-                className={cn(
-                  'px-2 py-0.5 rounded-sm text-[9px] font-bold uppercase tracking-widest',
-                  mode === 'camp' && 'bg-blue-600 text-white',
-                  strictMode && 'bg-red-600 text-white',
-                  mode === 'chill' && 'bg-blue-100 text-blue-700',
-                  mode === 'blindspot' && 'bg-amber-100 text-amber-700',
-                )}
-              >
-                {mode === 'proof_sim'
-                  ? 'Proof Simulation™'
-                  : mode === 'camp'
-                    ? 'Camp Mode — Learning'
-                    : mode === 'storm'
-                      ? `Storm Mode: ${currentQuestion.subject_id || 'Exam'}`
-                      : mode === 'chill'
-                        ? 'Chill Mode'
-                        : mode === 'blindspot'
-                          ? 'Blindspot Mode'
-                          : `${mode} mode`}
-              </div>
-            </div>
-          </div>
+      {/* Header */}
+      <QuizHeader
+        mode={mode}
+        currentIndex={currentIndex}
+        totalQuestions={questions.length}
+        isFlagged={isFlagged}
+        saveStatus={saveStatus}
+        isSubjectMode={session.config?.isSubjectMode}
+        isTargeted={session.config?.topic_ids?.length > 0}
+        onFlag={toggleFlag}
+        onAI={() => setIsAIOpen((prev) => !prev)}
+        onExit={() => {
+          if (strictMode) {
+            handleFinalSubmit()
+          } else {
+            setIsSubmitSheetOpen(true)
+          }
+        }}
+      />
 
-          <div className='flex items-center gap-4'>
-            {strictMode && countdown !== null && (
-              <div className='flex items-center gap-3 bg-zinc-100 px-3 py-1.5 rounded-sm border border-zinc-200'>
-                <div
-                  className={cn(
-                    'flex items-center gap-2 font-mono font-bold text-xs',
-                    countdown < 300
-                      ? 'text-red-500 animate-pulse'
-                      : 'text-zinc-600',
-                  )}
-                >
-                  <Timer className='h-3.5 w-3.5' />
-                  {formatTime(countdown)}
-                </div>
-                <span
-                  className={cn(
-                    'text-[8px] font-black uppercase tracking-tighter px-1 rounded-sm',
-                    isAheadOfPace
-                      ? 'text-emerald-600 bg-emerald-50'
-                      : 'text-amber-600 bg-amber-50',
-                  )}
-                >
-                  {isAheadOfPace ? 'Ahead' : 'Behind'}
-                </span>
-              </div>
-            )}
-
-            <div className='flex items-center gap-1'>
-              <Button
-                onClick={toggleFlag}
-                variant='ghost'
-                size='sm'
-                className={cn(
-                  'h-8 rounded-sm text-[9px] font-bold uppercase tracking-widest',
-                  isFlagged
-                    ? 'text-amber-600 bg-amber-50'
-                    : 'text-zinc-400 hover:bg-zinc-50',
-                )}
-              >
-                <Flag
-                  className={cn('h-3.5 w-3.5', isFlagged && 'fill-current')}
-                />{' '}
-                Flag
-              </Button>
-              <Button
-                variant='ghost'
-                size='sm'
-                className='h-8 rounded-sm text-[9px] font-bold uppercase tracking-widest text-zinc-400 hover:bg-zinc-50'
-              >
-                <MessageSquare className='h-3.5 w-3.5' /> AI
-              </Button>
-              <div className='w-px h-4 bg-zinc-200 mx-1' />
-              <AlertDialog>
-                <AlertDialogTrigger asChild>
-                  <Button
-                    variant='ghost'
-                    size='sm'
-                    className='h-8 w-8 text-zinc-400 hover:text-red-600 rounded-sm'
-                  >
-                    <X className='h-4 w-4' />
-                  </Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent className='rounded-sm'>
-                  <AlertDialogHeader>
-                    <AlertDialogTitle>Exit session?</AlertDialogTitle>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <AlertDialogCancel className='rounded-sm'>
-                      Cancel
-                    </AlertDialogCancel>
-                    <AlertDialogAction
-                      onClick={onExit}
-                      className='bg-red-600 hover:bg-red-700 rounded-sm'
-                    >
-                      Exit
-                    </AlertDialogAction>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
-            </div>
-          </div>
-        </div>
-        <div className='h-1.5 w-full bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200/30'>
-          <motion.div
-            className={cn(
-              'h-full transition-colors',
-              mode === 'camp'
-                ? 'bg-blue-600'
-                : strictMode
-                  ? 'bg-red-600'
-                  : 'bg-blue-500',
-            )}
-            initial={{ width: 0 }}
-            animate={{
-              width: `${((currentIndex + 1) / questions.length) * 100}%`,
-            }}
+      {/* Timer bar — strict mode only, sits below header */}
+      {strictMode && countdown !== null && (
+        <div className="shrink-0 px-5 py-2 border-b border-zinc-100 bg-[#FAFAF9] flex justify-center">
+          <TimerBar
+            totalSeconds={totalTimerSeconds}
+            remainingSeconds={countdown}
+            isAheadOfPace={isAheadOfPace}
           />
         </div>
-      </header>
+      )}
 
-      {/* 2. MAIN CONTENT - No scrolling body */}
-      <main className='flex flex-col  py-2'>
-        {/* HERO IMAGE */}
-        <div className='shrink-0 max-h-[30vh] h-[200px] mb-2 w-full bg-zinc-100 border border-zinc-200 rounded-sm flex flex-col items-center justify-center text-zinc-400 relative overflow-hidden group mx-auto'>
-          <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.03] pointer-events-none" />
-          <Info className='h-8 w-8 opacity-20 mb-2' />
-          <span className='text-[10px] font-bold uppercase tracking-[0.3em] opacity-40'>
-            Reference Material (16:9)
-          </span>
-        </div>
+      {/* Main scrollable body */}
+      <main className="flex-1 overflow-y-auto">
+        <div className="max-w-[740px] mx-auto px-5 py-8 space-y-6">
+          {/* Question stem */}
+          <QuestionStem
+            text={currentQuestion.text}
+            imageUrl={currentQuestion.prompt_image_url}
+          />
 
-        {/* ACTION BAR - Right Aligned above content */}
-        <div className='shrink-0 flex justify-end mb-2'>
-          {isChecked && !isRationaleVisible && (
-            <Button
-              variant='outline'
-              onClick={() => setIsRationaleVisible(true)}
-              className='h-12 border-blue-200 text-blue-600 hover:bg-blue-50 rounded-sm text-[10px] font-bold uppercase tracking-widest'
-            >
-              Show Rationale
-            </Button>
-          )}
-          {mode !== 'chill' && !isChecked ? (
-            <Button
-              onClick={handleCheckAnswer}
-              disabled={!selectedAnswer || isSaving}
-              className='w-full md:w-64 h-12 bg-blue-600 text-white hover:bg-blue-700 font-black rounded-sm text-xs shadow-xl shadow-blue-200/50 uppercase tracking-[0.2em]'
-            >
-              {isSaving
-                ? 'Processing...'
-                : strictMode
-                  ? 'Confirm & Record'
-                  : 'Check Answer'}
-            </Button>
-          ) : (
-            <Button
-              onClick={handleNext}
-              disabled={dwellTimeRemaining > 0}
-              className={cn(
-                'w-full md:w-64 h-12 font-black rounded-sm text-xs transition-all uppercase tracking-[0.2em] shadow-lg',
-                dwellTimeRemaining > 0
-                  ? 'bg-zinc-100 text-zinc-400 cursor-wait'
-                  : 'bg-blue-600 text-white hover:bg-blue-700',
-              )}
-            >
-              {dwellTimeRemaining > 0
-                ? `Reviewing (${dwellTimeRemaining}s)`
-                : currentIndex === questions.length - 1
-                  ? 'Finish Session'
-                  : 'Next Question'}
-            </Button>
-          )}
-        </div>
-
-        {/* QUESTION & OPTIONS GRID - Flexible priority with internal scrolling */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8 h-[300px] '>
-          {/* QUESTION - Internal Scroll */}
-          <div className='bg-zinc-50/50 p-6 rounded-sm border border-zinc-100 overflow-y-auto scrollbar-hide'>
-            <h2 className='text-md md:text-md font-medium text-zinc-900 leading-relaxed tracking-tight'>
-              {currentQuestion.text}
-            </h2>
+          {/* Options */}
+          <div className="space-y-2.5" role="group" aria-label="Answer options">
+            {options.map((option, idx) => (
+              <OptionButton
+                key={option.id}
+                letter={String.fromCharCode(65 + idx)}
+                text={option.text}
+                state={getOptionState(option)}
+                isChecked={isChecked}
+                onSelect={() => handleChoiceSelect(option.id)}
+                onStrike={(e) => toggleStrikethrough(option.id, e)}
+              />
+            ))}
           </div>
 
-          {/* OPTIONS - Internal Scroll */}
-          <div className='flex flex-col gap-2.5 overflow-y-auto scrollbar-hide h-full '>
-            {options.map((option, idx) => {
-              const isSelected = selectedAnswer === option.id
-              const isCorrect = option.id === correctOptionId
-              const isStruck =
-                struckOptions[currentQuestion.question_id]?.has(option.id)
-              const letter = String.fromCharCode(65 + idx)
-              const showCorrect = isChecked && isCorrect
-              const showWrong = isChecked && isSelected && !isCorrect
+          {/* Primary action */}
+          <div className={cn(
+            'flex items-center gap-3',
+            (isChecked && !isRationaleVisible) ? 'justify-between' : 'justify-end'
+          )}>
+            {isChecked && !isRationaleVisible && (
+              <button
+                onClick={() => setIsRationaleVisible(true)}
+                className="h-11 px-5 rounded-sm border border-blue-200 text-blue-600 hover:bg-blue-50 text-[10px] font-black uppercase tracking-widest transition-colors"
+              >
+                Show Rationale
+              </button>
+            )}
 
-              return (
+            {mode !== 'chill' && !isChecked ? (
+              // Check answer CTA
+              <button
+                onClick={handleCheckAnswer}
+                disabled={!selectedAnswer || isSaving}
+                className={cn(
+                  'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
+                  selectedAnswer && !isSaving
+                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200'
+                    : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
+                )}
+              >
+                {isSaving ? 'Saving…' : strictMode ? 'Confirm & Next' : 'Check Answer'}
+              </button>
+            ) : (
+              // Next CTA with dwell ring
+              <div className="relative">
                 <button
-                  key={option.id}
-                  disabled={isChecked}
-                  onClick={() => handleChoiceSelect(option.id)}
+                  onClick={currentIndex === questions.length - 1
+                    ? () => setIsSubmitSheetOpen(true)
+                    : handleNext
+                  }
                   className={cn(
-                    'flex h-fit items-center gap-4 p-4 rounded-sm border text-left transition-all duration-200 relative overflow-hidden shrink-0 flex-1',
-                    !isChecked &&
-                      !isSelected &&
-                      'bg-white border-zinc-200 hover:border-blue-300 hover:bg-blue-50/10',
-                    !isChecked &&
-                      isSelected &&
-                      'bg-blue-600 border-blue-600 text-white shadow-md',
-                    !isChecked && isStruck && 'opacity-40 grayscale-[80%]',
-                    showCorrect &&
-                      'bg-emerald-50 border-emerald-500 text-emerald-900  ring-emerald-500 font-semibold',
-                    showWrong &&
-                      'bg-red-50 border-red-500 text-red-900  ring-red-500',
-                    isChecked &&
-                      !isCorrect &&
-                      !isSelected &&
-                      'bg-white border-zinc-100 opacity-40',
+                    'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
+                    'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200',
+                    mode === 'chill' && 'bg-blue-600 text-white',
                   )}
                 >
-                  {isStruck && !isChecked && (
-                    <div className='absolute inset-0 flex items-center px-4 pointer-events-none'>
-                      <div className='w-full h-[2px] bg-zinc-400/50' />
-                    </div>
-                  )}
-                  <div
-                    className={cn(
-                      'w-6 h-6 shrink-0 rounded-sm flex items-center justify-center text-[10px] font-black border transition-colors',
-                      !isChecked &&
-                        !isSelected &&
-                        'bg-zinc-50 border-zinc-200 text-zinc-400',
-                      !isChecked &&
-                        isSelected &&
-                        'bg-white/20 border-white/20 text-white',
-                      showCorrect &&
-                        'bg-emerald-500 border-emerald-400 text-white',
-                      showWrong && 'bg-red-500 border-red-400 text-white',
-                    )}
-                  >
-                    {letter}
-                  </div>
-                  <span className='text-[13px] font-medium flex-1'>
-                    {option.text}
-                  </span>
-                  {!isChecked && (
-                    <span
-                      role='button'
-                      tabIndex={0}
-                      onClick={(e) => toggleStrikethrough(option.id, e)}
-                      className='p-2 rounded-sm hover:bg-zinc-100 text-zinc-300 hover:text-zinc-600 transition-colors shrink-0'
-                      aria-label={
-                        isStruck ? 'Restore option' : 'Cross out option'
-                      }
-                    >
-                      <Delete className='h-4 w-4' />
-                    </span>
-                  )}
-                  {showCorrect && (
-                    <Check
-                      className='h-4 w-4 text-emerald-600'
-                      strokeWidth={3}
-                    />
-                  )}
-                  {showWrong && (
-                    <XCircle className='h-4 w-4 text-red-600' strokeWidth={3} />
-                  )}
+                  {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
                 </button>
-              )
-            })}
+                {/* Dwell ring — decorative suggestion, not a lock */}
+                {dwellTimeRemaining > 0 && (
+                  <div
+                    className="absolute -inset-1 rounded-sm pointer-events-none"
+                    aria-hidden
+                    title={`${dwellTimeRemaining}s — take a moment to review`}
+                  >
+                    <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
+                      <rect
+                        x="1" y="1" width="98" height="98"
+                        rx="3"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-blue-200"
+                        strokeDasharray="392"
+                        strokeDashoffset="0"
+                      />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </main>
 
-      {/* 3. SLIDE-UP EXPLANATION DRAWER */}
-      <AnimatePresence>
-        {isChecked && isRationaleVisible && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className='shrink-0 bg-blue-50/50 border-t border-blue-100 shadow-[0_-15px_40px_-15px_rgba(0,0,0,0.05)] overflow-hidden'
-          >
-            <div className='max-w-6xl mx-auto px-10 py-6 space-y-3 max-h-[35vh] overflow-y-auto'>
-              <div className='flex items-center justify-between'>
-                <div className='flex items-center gap-2 text-blue-600'>
-                  <Info className='h-4 w-4' />
-                  <h4 className='text-[10px] font-black uppercase tracking-widest'>
-                    Rationale & Educational Context
-                  </h4>
-                </div>
-                <Button
-                  variant='ghost'
-                  size='sm'
-                  onClick={() => setIsRationaleVisible(false)}
-                  className='h-6 w-6 p-0 rounded-full hover:bg-blue-100 text-blue-400'
-                >
-                  <X className='h-3.5 w-3.5' />
-                </Button>
-              </div>
-              <div className='text-[13px] leading-relaxed text-zinc-700 italic pr-4'>
-                {currentQuestion.rationale}
-              </div>
-              <div className='flex gap-2 pt-1'>
-                <Button
-                  variant='ghost'
-                  className='h-7 px-3 rounded-sm bg-white text-blue-700 hover:bg-blue-100 text-[9px] font-black uppercase tracking-widest border border-blue-100 gap-2'
-                >
-                  <ExternalLink className='h-3 w-3' /> Wiki Reference
-                </Button>
-                <Button
-                  variant='ghost'
-                  className='h-7 px-3 rounded-sm bg-white border border-zinc-200 text-zinc-600 hover:bg-zinc-50 text-[9px] font-black uppercase tracking-widest gap-2'
-                >
-                  <Plus className='h-3 w-3' /> Add to Notes
-                </Button>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Rationale drawer */}
+      <RationaleDrawer
+        rationale={currentQuestion.rationale}
+        isVisible={isRationaleVisible}
+        isCorrect={selectedAnswer === correctOptionId}
+        onClose={() => setIsRationaleVisible(false)}
+        onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
+        onAddNote={() => { /* note drawer — future */ }}
+      />
 
-      {/* 4. FOOTER NAVIGATION */}
-      <footer className='py-6 shrink-0 border-t border-zinc-100 flex items-center justify-between bg-white mt-auto'>
-        <Button
-          variant='ghost'
-          onClick={handleBack}
-          disabled={currentIndex === 0}
-          className='text-zinc-400 hover:text-zinc-900 h-10 px-4 rounded-sm text-[10px] font-black uppercase tracking-[0.2em]'
-        >
-          <ChevronLeft className='mr-2 h-4 w-4' /> Previous Question
-        </Button>
+      {/* AI Tutor drawer */}
+      <AITutorDrawer
+        question={currentQuestion}
+        selectedOptionId={selectedAnswer}
+        options={options}
+        isVisible={isAIOpen}
+        onClose={() => setIsAIOpen(false)}
+      />
 
-        <div className='flex items-center gap-3'>
-          {currentIndex === questions.length - 1 ? (
-            <Button
-              onClick={handleFinalSubmit}
-              disabled={isSaving || (mode !== 'chill' && !isChecked)}
-              className='bg-zinc-900 text-white hover:bg-black h-10 px-6 rounded-sm text-[10px] font-black uppercase tracking-widest shadow-lg'
-            >
-              Finish Session
-            </Button>
-          ) : (
-            <Button
-              onClick={handleNext}
-              disabled={dwellTimeRemaining > 0}
-              className=' bg-blue-600 text-white hover:bg-blue-700 h-10 px-4 rounded-sm text-[10px] font-black uppercase tracking-[0.2em]'
-            >
-              Next Question <ChevronRight className='ml-2 h-4 w-4' />
-            </Button>
-          )}
-        </div>
-      </footer>
-    </div>
+      {/* Footer navigator */}
+      <FooterNavigator
+        dots={dots}
+        currentIndex={currentIndex}
+        canGoBack={currentIndex > 0}
+        canGoForward={
+          mode === 'chill'
+            ? true
+            : isChecked  // strict mode: footer Next disabled — must use primary CTA
+        }
+        strictMode={strictMode}
+        onPrev={handleBack}
+        onNext={currentIndex === questions.length - 1
+          ? () => setIsSubmitSheetOpen(true)
+          : handleNext
+        }
+        onJump={handleJump}
+      />
+
+      {/* Submit confirmation sheet */}
+      <ConfirmSubmitSheet
+        isOpen={isSubmitSheetOpen}
+        answeredCount={answeredCount}
+        unansweredCount={unansweredCount}
+        flaggedCount={flaggedCount}
+        totalCount={questions.length}
+        isSaving={isSaving}
+        onConfirm={handleFinalSubmit}
+        onCancel={() => setIsSubmitSheetOpen(false)}
+        onExit={() => { setIsSubmitSheetOpen(false); onExit() }}
+      />
+    </QuizOverlay>
   )
 }

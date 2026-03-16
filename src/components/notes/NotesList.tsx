@@ -1,134 +1,174 @@
 'use client'
 
-import { Plus, Search, Trash2 } from 'lucide-react'
-import { type Note } from '@/lib/actions/notes-actions'
+import { useState } from 'react'
+import { Plus, Search, Trash2, Pin, BookOpen, HelpCircle, LayoutTemplate, AlertCircle } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 import { cn } from '@/lib/utils'
+import type { NoteStub, NoteType } from '@/types/app'
+
+const TYPE_BADGE: Partial<Record<NoteType, { label: string; icon: React.ComponentType<{ className?: string }> }>> = {
+  cornell:      { label: 'Cornell', icon: LayoutTemplate },
+  gap_analysis: { label: 'Gap',     icon: AlertCircle },
+}
 
 interface NotesListProps {
-  notes: Note[]
+  notes: NoteStub[]
   selectedId: string | null
   onSelect: (id: string) => void
   onCreate: () => void
   onDelete: (id: string) => void
+  onPin: (id: string, pinned: boolean) => void
   searchQuery: string
-  onSearchChange: (query: string) => void
+  onSearchChange: (q: string) => void
 }
 
 export function NotesList({
-  notes,
-  selectedId,
-  onSelect,
-  onCreate,
-  onDelete,
-  searchQuery,
-  onSearchChange,
+  notes, selectedId, onSelect, onCreate, onDelete, onPin,
+  searchQuery, onSearchChange,
 }: NotesListProps) {
-  // Filter notes based on search query
-  const filteredNotes = notes.filter((note) => {
-    const query = searchQuery.toLowerCase()
-    const title = (note.title || 'New Note').toLowerCase()
-    const contentText = JSON.stringify(note.content).toLowerCase()
-    return title.includes(query) || contentText.includes(query)
+  const query = searchQuery.toLowerCase()
+  const filtered = notes.filter((n) => {
+    if (!query) return true
+    return (
+      n.title.toLowerCase().includes(query) ||
+      n.snippet?.toLowerCase().includes(query) ||
+      n.tags?.some((t) => t.toLowerCase().includes(query))
+    )
   })
 
-  // Helper to extract preview text from TipTap JSON
-  const getPreview = (content: any) => {
-    if (!content || !content.content) return 'No additional text'
-    try {
-      const text = content.content
-        .map((block: any) => 
-          block.content?.map((span: any) => span.text).join('') || ''
-        )
-        .join(' ')
-      return text.slice(0, 60) || 'No additional text'
-    } catch (e) {
-      return 'No additional text'
-    }
-  }
-
   return (
-    <div className="flex h-full w-[260px] flex-col border-r border-border bg-[#FAF9F7]">
+    <div className="flex h-full w-[268px] shrink-0 flex-col border-r border-border bg-white">
       {/* Header */}
-      <div className="flex flex-col gap-3 p-4">
+      <div className="flex shrink-0 flex-col gap-2.5 border-b border-border px-3 py-3">
         <div className="flex items-center justify-between">
-          <span className="text-sm font-semibold text-zinc-900">Notes</span>
+          <span className="text-[13px] font-semibold text-zinc-800">Notes</span>
           <button
             onClick={onCreate}
-            className="rounded p-1 text-zinc-500 hover:bg-black/5 hover:text-zinc-900 transition-colors"
-            title="New Note"
+            className="rounded-md p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-800 transition-colors"
+            title="New note"
           >
-            <Plus className="h-5 w-5" />
+            <Plus className="h-4 w-4" />
           </button>
         </div>
         <div className="relative">
-          <Search className="absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-zinc-400" />
+          <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-zinc-400 pointer-events-none" />
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search…"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="w-full rounded-md border-none bg-zinc-200/50 py-1.5 pl-8 pr-3 text-xs text-zinc-900 placeholder:text-zinc-500 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-200"
+            className="w-full rounded-md bg-zinc-100 py-1.5 pl-8 pr-3 text-xs text-zinc-800 placeholder:text-zinc-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-zinc-300"
           />
         </div>
       </div>
 
       {/* List */}
-      <div className="flex-1 overflow-y-auto px-2 pb-2">
-        {filteredNotes.length === 0 ? (
-          <div className="py-8 text-center text-xs text-zinc-400">
+      <ul className="flex-1 overflow-y-auto py-1">
+        {filtered.length === 0 ? (
+          <li className="py-10 text-center text-xs text-zinc-400">
             {searchQuery ? 'No matching notes' : 'No notes yet'}
-          </div>
+          </li>
         ) : (
-          <ul className="space-y-0.5">
-            {filteredNotes.map((note) => {
-              const isSelected = selectedId === note.note_id
-              return (
-                <li key={note.note_id} className="group relative">
-                  <button
-                    onClick={() => onSelect(note.note_id)}
-                    className={cn(
-                      "flex w-full flex-col items-start gap-1 rounded-lg px-4 py-3 text-left transition-colors",
-                      isSelected ? "bg-[#FFF3B0]" : "hover:bg-black/5"
+          filtered.map((note) => {
+            const isSelected = selectedId === note.id
+            const badge = note.note_type ? TYPE_BADGE[note.note_type] : null
+
+            return (
+              <li key={note.id} className="group relative">
+                <button
+                  onClick={() => onSelect(note.id)}
+                  className={cn(
+                    'flex w-full flex-col items-start gap-1.5 rounded-md mx-1 px-3 py-3 text-left transition-colors',
+                    isSelected ? 'bg-zinc-900 text-white' : 'hover:bg-zinc-50',
+                  )}
+                  style={{ width: 'calc(100% - 8px)' }}
+                >
+                  {/* Title row */}
+                  <div className="flex w-full items-center gap-1.5">
+                    {/* Color dot */}
+                    {note.color && (
+                      <span
+                        className="h-2 w-2 shrink-0 rounded-full ring-1 ring-white"
+                        style={{ backgroundColor: note.color }}
+                      />
                     )}
-                  >
                     <span className={cn(
-                      "w-full truncate text-[13px] font-bold leading-tight",
-                      isSelected ? "text-zinc-900" : "text-zinc-900"
+                      'flex-1 truncate text-[13px] font-semibold leading-snug',
+                      isSelected ? 'text-white' : 'text-zinc-900',
                     )}>
-                      {note.title || 'New Note'}
+                      {note.title || 'Untitled Note'}
                     </span>
-                    <div className="flex w-full items-center gap-2">
-                      <span className="shrink-0 text-[11px] text-zinc-500">
-                        {formatDistanceToNow(new Date(note.updated_at), { addSuffix: false })
-                          .replace('about ', '')
-                          .replace('less than a minute', 'now')}
-                      </span>
-                      <span className="block flex-1 truncate text-[12px] text-zinc-400">
-                        {getPreview(note.content)}
-                      </span>
-                    </div>
-                  </button>
-                  
-                  {/* Delete Action - Visible on Hover/Selected */}
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      onDelete(note.note_id)
-                    }}
-                    className={cn(
-                      "absolute right-2 top-2 hidden rounded p-1 text-zinc-400 hover:bg-red-100 hover:text-red-600",
-                      "group-hover:block"
+                    {note.is_pinned && (
+                      <Pin className={cn('h-3 w-3 shrink-0', isSelected ? 'text-zinc-300' : 'text-blue-500')} />
                     )}
+                  </div>
+
+                  {/* Snippet */}
+                  {note.snippet && (
+                    <span className={cn(
+                      'line-clamp-2 text-[11px] leading-relaxed',
+                      isSelected ? 'text-zinc-300' : 'text-zinc-400',
+                    )}>
+                      {note.snippet}
+                    </span>
+                  )}
+
+                  {/* Meta row */}
+                  <div className="flex w-full items-center gap-2">
+                    <span className={cn('text-[10px]', isSelected ? 'text-zinc-400' : 'text-zinc-400')}>
+                      {formatDistanceToNow(new Date(note.updated_at), { addSuffix: false })
+                        .replace('about ', '')
+                        .replace('less than a minute', 'now')}
+                    </span>
+                    {badge && (
+                      <span className={cn(
+                        'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[9px] font-semibold',
+                        isSelected
+                          ? 'bg-white/20 text-white'
+                          : 'bg-zinc-100 text-zinc-500',
+                      )}>
+                        <badge.icon className="h-2.5 w-2.5" />
+                        {badge.label}
+                      </span>
+                    )}
+                    {note.article_id && (
+                      <span className={cn('text-[10px]', isSelected ? 'text-blue-300' : 'text-blue-500')} title="From Wiki">
+                        <BookOpen className="h-3 w-3" />
+                      </span>
+                    )}
+                    {note.question_id && (
+                      <span className={cn('text-[10px]', isSelected ? 'text-amber-300' : 'text-amber-500')} title="From Quiz">
+                        <HelpCircle className="h-3 w-3" />
+                      </span>
+                    )}
+                  </div>
+                </button>
+
+                {/* Hover actions */}
+                <div className={cn(
+                  'absolute right-3 top-2.5 hidden items-center gap-0.5 group-hover:flex',
+                  isSelected && 'hidden',
+                )}>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
+                    className="rounded p-1 text-zinc-300 hover:bg-zinc-100 hover:text-blue-500 transition-colors"
+                    title={note.is_pinned ? 'Unpin' : 'Pin'}
+                  >
+                    <Pin className="h-3.5 w-3.5" />
+                  </button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); onDelete(note.id) }}
+                    className="rounded p-1 text-zinc-300 hover:bg-red-50 hover:text-red-500 transition-colors"
+                    title="Delete"
                   >
                     <Trash2 className="h-3.5 w-3.5" />
                   </button>
-                </li>
-              )
-            })}
-          </ul>
+                </div>
+              </li>
+            )
+          })
         )}
-      </div>
+      </ul>
     </div>
   )
 }

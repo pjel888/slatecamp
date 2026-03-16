@@ -5,13 +5,14 @@ import { calculateEnvelope, type NBCPInputs, type NBCPComputed } from '../_utils
 
 // ─── Default inputs ────────────────────────────────────────────────────────────
 const DEFAULT_INPUTS: NBCPInputs = {
-  lotWidth:    20,
-  lotDepth:    30,
-  zoningClass: ZoningClass.R2_MAX,
-  lotType:     LotType.INSIDE,
-  rrowWidth:   12,
-  floorHeight: 3.0,
-  firewalls:   { front: false, rear: false, left: false, right: false },
+  lotWidth:      20,
+  lotDepth:      30,
+  zoningClass:   ZoningClass.R2_MAX,
+  lotType:       LotType.INSIDE,
+  rrowWidth:     12,
+  floorHeight:   3.0,
+  firewalls:     { front: false, rear: false, left: false, right: false },
+  floorsOverride: 0,  // 0 = use code-computed max
 }
 
 // ─── Presets ──────────────────────────────────────────────────────────────────

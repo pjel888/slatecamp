@@ -92,8 +92,15 @@ CREATE TABLE public.notes (
     user_id uuid NOT NULL,
     folder_id uuid,
     topic_id uuid,
+    question_id uuid,
+    session_id uuid,
+    article_id uuid,
     title text DEFAULT 'Untitled Note'::text NOT NULL,
     content jsonb DEFAULT '[]'::jsonb NOT NULL,
+    note_type text DEFAULT 'standard'::text NOT NULL,
+    is_pinned boolean DEFAULT false NOT NULL,
+    tags text[] DEFAULT '{}',
+    color text,
     source_url text,
     created_at timestamp with time zone DEFAULT now() NOT NULL,
     updated_at timestamp with time zone DEFAULT now() NOT NULL
@@ -304,6 +311,15 @@ ALTER TABLE ONLY public.notes
 
 ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_topic_id_fkey FOREIGN KEY (topic_id) REFERENCES public.taxonomy_tree(node_id);
+
+ALTER TABLE ONLY public.notes
+    ADD CONSTRAINT notes_question_id_fkey FOREIGN KEY (question_id) REFERENCES public.questions(question_id) ON DELETE SET NULL;
+
+ALTER TABLE ONLY public.notes
+    ADD CONSTRAINT notes_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.quiz_sessions(session_id) ON DELETE SET NULL;
+
+ALTER TABLE ONLY public.notes
+    ADD CONSTRAINT notes_article_id_fkey FOREIGN KEY (article_id) REFERENCES public.wiki_articles(article_id) ON DELETE SET NULL;
 
 ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id);

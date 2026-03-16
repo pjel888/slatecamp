@@ -52,7 +52,18 @@ export function ResultsSummary({
     })
 
     const score = Math.round((correct / total) * 100)
-    return { total, correct, score, subjectStats }
+
+    const masteryLabel =
+      score >= 75 ? 'Mastered' :
+      score >= 50 ? 'Developing' :
+      'Needs Work'
+
+    const masteryColor =
+      score >= 75 ? 'text-emerald-600' :
+      score >= 50 ? 'text-amber-600' :
+      'text-red-600'
+
+    return { total, correct, score, subjectStats, masteryLabel, masteryColor }
   }, [questions, answers])
 
   return (
@@ -65,7 +76,7 @@ export function ResultsSummary({
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-sm bg-blue-50 text-blue-600 mb-6 border border-blue-100">
           <Trophy className="h-10 w-10" />
         </div>
-        <h1 className="text-3xl font-bold text-zinc-900 tracking-tight">Session Complete</h1>
+        <h1 className="text-xl font-semibold text-zinc-900 tracking-tight">Session Complete</h1>
         <p className="text-zinc-500 mt-2">Here's how you performed in your {testMode} session.</p>
       </motion.div>
 
@@ -75,7 +86,7 @@ export function ResultsSummary({
             <Target className="h-4 w-4" />
             <span className="text-[10px] font-black uppercase tracking-widest">Accuracy</span>
           </div>
-          <div className="text-4xl font-black text-zinc-900">{stats.score}%</div>
+          <div className="text-3xl font-black text-zinc-900">{stats.score}%</div>
           <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             {stats.correct} / {stats.total} Correct
           </div>
@@ -86,7 +97,7 @@ export function ResultsSummary({
             <Clock className="h-4 w-4" />
             <span className="text-[10px] font-black uppercase tracking-widest">Status</span>
           </div>
-          <div className="text-xl font-black text-zinc-900 uppercase">Mastered</div>
+          <div className={`text-xl font-black uppercase ${stats.masteryColor}`}>{stats.masteryLabel}</div>
           <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             IRT Adjusted
           </div>
@@ -97,9 +108,9 @@ export function ResultsSummary({
             <BarChart3 className="h-4 w-4" />
             <span className="text-[10px] font-black uppercase tracking-widest">Readiness</span>
           </div>
-          <div className="text-xl font-black text-emerald-600 uppercase">Increased</div>
+          <div className="text-xl font-black text-emerald-600 uppercase">Updated</div>
           <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
-            +1.4% EMA Boost
+            EMA Recalculated
           </div>
         </div>
       </div>
@@ -156,7 +167,7 @@ export function ResultsSummary({
         </Button>
         <Button 
           onClick={onRestart}
-          className="h-14 rounded-sm bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase tracking-widest text-[10px] gap-2 shadow-lg shadow-blue-200/50"
+          className="h-14 rounded-sm bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase tracking-widest text-[10px] gap-2"
         >
           <RotateCcw className="h-4 w-4" />
           Start New Session

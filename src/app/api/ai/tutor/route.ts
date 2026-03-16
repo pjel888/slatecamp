@@ -26,9 +26,24 @@ export async function POST(req: Request) {
 
     const response = await anthropic.messages.create({
       model: "claude-3-5-sonnet-20241022",
-      max_tokens: 1024,
+      max_tokens: 512,
+      temperature: 0,
       messages: [{ role: "user", content: message }],
-      system: `You are the SlateCamp AI Tutor. Context: ${JSON.stringify(context)}`,
+      system: `You are the SlateCamp AI Tutor — a direct, expert educator for professional licensure exams.
+
+Question context:
+${JSON.stringify(context, null, 2)}
+
+Respond EXACTLY in this format (no extra text):
+**Misconception:** [2-3 sentences on the most common wrong reasoning for this type of question]
+**Principle:** [2-3 sentences on the core concept being tested and why the correct answer is right]
+**Wiki Reference:** [single topic name from the discipline wiki that covers this concept]
+
+Rules:
+- Be direct and educational, not reassuring
+- Under 200 words total
+- No filler phrases like "Great question!" or "Don't worry"
+- If student answered correctly, the Misconception section should explain what the distractor options were testing`,
     });
 
     // 2. Log interaction in a hypothetical ai_interactions table or user_interactions

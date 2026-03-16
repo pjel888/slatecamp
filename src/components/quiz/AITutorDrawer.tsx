@@ -1,0 +1,186 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { X, BrainCircuit, Loader2, AlertCircle } from 'lucide-react'
+import { cn } from '@/lib/utils'
+import type { Question, Choice } from '@/types/app'
+
+interface AITutorDrawerProps {
+  question: Question
+  selectedOptionId: string | undefined
+  options: Choice[]
+  isVisible: boolean
+  onClose: () => void
+}
+
+interface TutorResponse {
+  misconception: string
+  principle: string
+  wikiHint: string
+}
+
+function parseTutorResponse(text: string): TutorResponse {
+  const get = (label: string) => {
+    const re = new RegExp(`\\*\\*${label}:\\*\\*\\s*([\\s\\S]*?)(?=\\n\\*\\*|$)`, 'i')
+    return text.match(re)?.[1]?.trim() || ''
+  }
+  return {
+    misconception: get('Misconception') || text,
+    principle: get('Principle'),
+    wikiHint: get('Wiki Reference'),
+  }
+}
+
+export function AITutorDrawer({
+  question,
+  selectedOptionId,
+  options,
+  isVisible,
+  onClose,
+}: AITutorDrawerProps) {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [response, setResponse] = useState<TutorResponse | null>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const fetchedForRef = useRef<string | null>(null)
+
+  useEffect(() => {
+    if (!isVisible) return
+    // Don't refetch if we already have a response for this question
+    if (fetchedForRef.current === question.question_id && response) return
+
+    const correctOption = options.find(
+      (o) => o.id === (question.correct_option_id ?? question.correct_answer)
+    )
+    const selectedOption = options.find((o) => o.id === selectedOptionId)
+
+    setLoading(true)
+    setError(null)
+    fetchedForRef.current = question.question_id
+
+    fetch('/api/ai/tutor', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'Explain this question using the required format.',
+        context: {
+          question: question.text,
+          correct_answer: correctOption?.text ?? 'Unknown',
+          student_answer: selectedOption?.text ?? 'No answer selected',
+          rationale: question.rationale,
+          topic_id: question.topic_id,
+        },
+      }),
+    })
+      .then(async (res) => {
+        if (!res.ok) throw new Error('Tutor unavailable')
+        const data = await res.json()
+        const text = data.reply?.text ?? data.reply ?? ''
+        setResponse(parseTutorResponse(text))
+      })
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false))
+  }, [isVisible, question.question_id]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Reset when question changes
+  useEffect(() => {
+    setResponse(null)
+    setError(null)
+    fetchedForRef.current = null
+  }, [question.question_id])
+
+  // Focus close button when drawer opens
+  useEffect(() => {
+    if (isVisible) {
+      const t = setTimeout(() => closeRef.current?.focus(), 350)
+      return () => clearTimeout(t)
+    }
+  }, [isVisible])
+
+  return (
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: 'auto', opacity: 1 }}
+          exit={{ height: 0, opacity: 0 }}
+          transition={{ type: 'spring', damping: 28, stiffness: 220 }}
+          className="shrink-0 overflow-hidden border-t border-zinc-100"
+          role="region"
+          aria-label="AI Tutor explanation"
+          aria-live="polite"
+        >
+          <div className="bg-zinc-50 border-b border-zinc-200">
+            <div className="max-w-[900px] mx-auto px-5 py-5 space-y-4">
+              {/* Header */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-zinc-700">
+                  <BrainCircuit className="h-4 w-4" aria-hidden />
+                  <span className="text-[10px] font-black uppercase tracking-widest">AI Tutor</span>
+                </div>
+                <button
+                  ref={closeRef}
+                  onClick={onClose}
+                  aria-label="Close AI tutor"
+                  className="h-6 w-6 flex items-center justify-center rounded-full text-zinc-300 hover:text-zinc-600 hover:bg-zinc-200 transition-colors"
+                >
+                  <X className="h-3.5 w-3.5" aria-hidden />
+                </button>
+              </div>
+
+              {/* Body */}
+              {loading && (
+                <div className="flex items-center gap-2 text-zinc-400 py-2">
+                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
+                  <span className="text-[11px] font-medium">Analyzing question…</span>
+                </div>
+              )}
+
+              {error && (
+                <div className="flex items-center gap-2 text-red-500 py-2">
+                  <AlertCircle className="h-4 w-4" aria-hidden />
+                  <span className="text-[11px] font-medium">{error}</span>
+                </div>
+              )}
+
+              {response && !loading && (
+                <div className="space-y-3">
+                  {response.misconception && (
+                    <div className="space-y-1">
+                      <p className="text-[9px] font-black uppercase tracking-widest text-amber-600">
+                        Misconception
+                      </p>
+                      <p className="text-[13px] text-zinc-600 leading-[1.65] max-w-[65ch]">
+                        {response.misconception}
+                      </p>
+                    </div>
+                  )}
+
+                  {response.principle && (
+                    <div className="space-y-1">
+                      <p className="text-[9px] font-black uppercase tracking-widest text-blue-600">
+                        Principle
+                      </p>
+                      <p className="text-[13px] text-zinc-700 leading-[1.65] max-w-[65ch]">
+                        {response.principle}
+                      </p>
+                    </div>
+                  )}
+
+                  {response.wikiHint && (
+                    <div className="pt-1">
+                      <span className="inline-flex items-center gap-1.5 h-6 px-2.5 rounded-sm bg-blue-50 border border-blue-100 text-blue-700 text-[9px] font-black uppercase tracking-widest">
+                        {response.wikiHint}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}

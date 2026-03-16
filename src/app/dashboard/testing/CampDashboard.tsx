@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { TestingHub } from '@/components/dashboard/TestingHub'
 import { QuizRenderer } from '@/components/dashboard/QuizRenderer'
 import { ModeIntroScreen } from '@/components/dashboard/ModeIntroScreen'
-import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore } from '@/lib/actions/quiz'
+import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore, getQuestionsByTopic, getMostDecayedNode } from '@/lib/actions/quiz'
 import type { QuizSession, Question, TaxonomyNode, TestMode } from '@/types/app'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -31,13 +31,16 @@ export function CampDashboard({
   const [loading, setLoading] = useState(false)
   const [instantFeedback, setInstantFeedback] = useState(true)
   const [readinessScore, setReadinessScore] = useState(0)
+  const [decayedNode, setDecayedNode] = useState<{ nodeId: string; nodeName: string; masteryScore: number } | null>(null)
   
   // Bug 3: Store config during orientation
   const [pendingConfig, setPendingConfig] = useState<{
     mode: string,
     count: number,
     subjectIds?: string[],
-    instantFeedback?: boolean
+    topicIds?: string[],
+    instantFeedback?: boolean,
+    config?: any
   } | null>(null)
 
   const router = useRouter()
@@ -45,13 +48,23 @@ export function CampDashboard({
 
   useEffect(() => {
     getUserReadinessScore().then(setReadinessScore)
-  }, [])
+    getMostDecayedNode(disciplineId).then(setDecayedNode)
+  }, [disciplineId])
 
-  // Handle article-driven sessions
+  // Handle article-driven or targeted sessions
   useEffect(() => {
     const articleId = searchParams.get('articleId')
-    if (articleId && !loading && view === 'hub') {
-      handleStartSession({ mode: 'camp', count: 5 })
+    const topicId = searchParams.get('topicId')
+    const subjectId = searchParams.get('subjectId')
+
+    if ((articleId || topicId || subjectId) && !loading && view === 'hub') {
+      handleStartSession({ 
+        mode: 'camp', 
+        count: 5,
+        topicIds: topicId ? [topicId] : undefined,
+        subjectIds: subjectId ? [subjectId] : undefined,
+        config: { isSubjectMode: true }
+      })
     }
   }, [searchParams])
 
@@ -59,14 +72,18 @@ export function CampDashboard({
   const handleStartSession = (config: { 
     mode: string, 
     subjectIds?: string[], 
+    topicIds?: string[],
     count?: number, 
-    instantFeedback?: boolean 
+    instantFeedback?: boolean,
+    config?: any
   }) => {
     setPendingConfig({
       mode: config.mode,
       count: config.count || (config.mode === 'proof_sim' ? 100 : 10),
       subjectIds: config.subjectIds,
-      instantFeedback: config.instantFeedback
+      topicIds: config.topicIds,
+      instantFeedback: config.instantFeedback,
+      config: config.config
     })
     setView('intro')
   }
@@ -80,14 +97,29 @@ export function CampDashboard({
         await deleteQuizSession(session.session_id)
       }
 
-      const shuffled = [...allQuestionIds].sort(() => 0.5 - Math.random())
-      const selectedIds = shuffled.slice(0, pendingConfig.count)
+      let selectedIds: string[] = []
+      
+      // If we have targeted topics/subjects, fetch specific questions
+      if (pendingConfig.topicIds?.length || pendingConfig.subjectIds?.length) {
+        const targetId = pendingConfig.topicIds?.[0] || pendingConfig.subjectIds?.[0]
+        if (targetId) {
+          selectedIds = await getQuestionsByTopic(targetId, pendingConfig.count)
+        }
+      } 
+      
+      // Fallback to general shuffle if no targeted questions found or provided
+      if (selectedIds.length === 0) {
+        const shuffled = [...allQuestionIds].sort(() => 0.5 - Math.random())
+        selectedIds = shuffled.slice(0, pendingConfig.count)
+      }
 
       const newSession = await createQuizSession({
         discipline_id: disciplineId,
         test_mode: pendingConfig.mode as TestMode,
         question_ids: selectedIds,
-        subject_ids: pendingConfig.subjectIds
+        subject_ids: pendingConfig.subjectIds,
+        topic_ids: pendingConfig.topicIds,
+        config: pendingConfig.config
       })
 
       const [qData, iData] = await Promise.all([
@@ -145,12 +177,14 @@ export function CampDashboard({
 
   if (view === 'hub') {
     return (
-      <TestingHub 
+      <TestingHub
         initialSession={session}
+        disciplineId={disciplineId}
         subjects={subjects}
         onStartSession={handleStartSession}
         onResumeSession={handleResumeSession}
         readinessScore={readinessScore}
+        decayedNode={decayedNode}
       />
     )
   }
@@ -160,6 +194,7 @@ export function CampDashboard({
       <ModeIntroScreen 
         mode={pendingConfig.mode as TestMode}
         questionCount={pendingConfig.count}
+        config={pendingConfig.config}
         onStart={confirmStartSession}
         onBack={() => setView('hub')}
       />

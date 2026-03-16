@@ -31,7 +31,7 @@ export function ModeCard({
   return (
     <div
       className={cn(
-        'group relative bg-white border border-zinc-200 rounded-sm p-6 transition-all duration-300 hover:shadow-xl hover:border-zinc-300 flex flex-col h-full',
+        'group relative bg-white border border-zinc-200 rounded-sm p-6 transition-all duration-150 hover:shadow-sm hover:border-zinc-300 flex flex-col h-full',
         disabled && 'opacity-60 grayscale pointer-events-none',
       )}
     >

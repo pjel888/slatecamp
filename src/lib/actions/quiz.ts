@@ -73,16 +73,31 @@ export async function updateQuizSession(
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
+  const fullPayload = {
+    ...updates,
+    ...(updates.status === 'completed' ? { completed_at: new Date().toISOString() } : {}),
+    updated_at: new Date().toISOString(),
+  }
+
   const { error } = await supabase
     .from('quiz_sessions')
-    .update({
-      ...updates,
-      updated_at: new Date().toISOString(),
-    })
+    .update(fullPayload)
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
 
-  if (error) throw error
+  if (error) {
+    // completed_at column may not exist yet (pre-migration). Retry without it.
+    if (updates.status === 'completed') {
+      const { error: fallbackError } = await supabase
+        .from('quiz_sessions')
+        .update({ ...updates, updated_at: new Date().toISOString() })
+        .eq('session_id', sessionId)
+        .eq('user_id', user.id)
+      if (fallbackError) throw fallbackError
+      return { success: true }
+    }
+    throw error
+  }
   return { success: true }
 }
 
@@ -206,16 +221,16 @@ async function recordMastery(
         computed_at: new Date().toISOString(),
       })
 
-      // 5. Snapshot Pruning (Retain only 90)
-      const { data: snapshots } = await supabase
+      // 5. Snapshot Pruning (Retain only 90 most recent)
+      const { data: overflow } = await supabase
         .from('readiness_score_snapshots')
         .select('snapshot_id')
         .eq('user_id', user_id)
         .order('computed_at', { ascending: false })
-      // .offset(90)
+        .offset(90) // skip the 90 we want to keep — only return the excess
 
-      if (snapshots && snapshots.length > 0) {
-        const idsToDelete = snapshots.map((s: any) => s.snapshot_id)
+      if (overflow && overflow.length > 0) {
+        const idsToDelete = overflow.map((s: any) => s.snapshot_id)
         await supabase
           .from('readiness_score_snapshots')
           .delete()
@@ -232,6 +247,9 @@ export async function saveInteraction(interaction: {
   selected_option_id: string | null
   is_correct: boolean
   time_spent_ms: number
+  is_flagged?: boolean
+  answer_changes?: number
+  options_eliminated?: number
 }) {
   const supabase = await createClient()
   const {
@@ -257,7 +275,15 @@ export async function saveInteraction(interaction: {
 
   const { error } = await supabase.from('user_interactions').upsert(
     {
-      ...interaction,
+      session_id: interaction.session_id,
+      question_id: interaction.question_id,
+      topic_id: interaction.topic_id,
+      selected_option_id: interaction.selected_option_id,
+      is_correct: interaction.is_correct,
+      time_spent_ms: interaction.time_spent_ms,
+      is_flagged: interaction.is_flagged ?? false,
+      answer_changes: interaction.answer_changes ?? 0,
+      options_eliminated: interaction.options_eliminated ?? 0,
       user_id: user.id,
       interaction_timestamp: new Date().toISOString(),
       updated_at: new Date().toISOString(),
@@ -267,7 +293,25 @@ export async function saveInteraction(interaction: {
     },
   )
 
-  if (error) throw error
+  if (error) {
+    // Telemetry columns (is_flagged, answer_changes, options_eliminated) may not exist yet.
+    // Retry with base columns only so the core interaction is never lost.
+    const { error: fallbackError } = await supabase.from('user_interactions').upsert(
+      {
+        session_id: interaction.session_id,
+        question_id: interaction.question_id,
+        topic_id: interaction.topic_id,
+        selected_option_id: interaction.selected_option_id,
+        is_correct: interaction.is_correct,
+        time_spent_ms: interaction.time_spent_ms,
+        user_id: user.id,
+        interaction_timestamp: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: 'user_id,session_id,question_id' },
+    )
+    if (fallbackError) throw fallbackError
+  }
 
   if (interaction.topic_id && session) {
     // Fire and forget (or await if strict real-time is needed)
@@ -285,11 +329,51 @@ export async function saveInteraction(interaction: {
   return { success: true }
 }
 
+export async function getQuestionsByTopic(nodeId: string, limit: number = 20) {
+  const supabase = await createClient()
+
+  // 1. Get all descendant leaf nodes using a recursive search
+  // We fetch the whole tree for the discipline and filter in JS for simplicity, 
+  // or use a targeted query if we know the depth.
+  const { data: allNodes } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, parent_id, is_leaf')
+
+  if (!allNodes) return []
+
+  const leafIds: string[] = []
+  const findLeafs = (id: string) => {
+    const node = allNodes.find(n => n.node_id === id)
+    if (!node) return
+    if (node.is_leaf) {
+      leafIds.push(id)
+    } else {
+      const children = allNodes.filter(n => n.parent_id === id)
+      children.forEach(child => findLeafs(child.node_id))
+    }
+  }
+
+  findLeafs(nodeId)
+
+  if (leafIds.length === 0) return []
+
+  // 2. Fetch random questions from these leaf nodes
+  const { data: questions, error } = await supabase
+    .from('questions')
+    .select('question_id')
+    .in('topic_id', leafIds)
+    .limit(limit)
+
+  if (error) throw error
+  return (questions || []).map(q => q.question_id)
+}
+
 export async function createQuizSession(params: {
   discipline_id: string
   test_mode: TestMode
   question_ids: string[]
   subject_ids?: string[]
+  topic_ids?: string[]
   config?: any
 }) {
   const supabase = await createClient()
@@ -304,7 +388,10 @@ export async function createQuizSession(params: {
       user_id: user.id,
       discipline_id: params.discipline_id,
       test_mode: params.test_mode,
-      config: params.config || {},
+      config: {
+        ...params.config,
+        topic_ids: params.topic_ids || []
+      },
       question_ids: params.question_ids,
       subject_ids: params.subject_ids || [],
       status: 'in_progress',
@@ -368,4 +455,43 @@ export async function getUserReadinessScore() {
 
   if (error || !data) return 0
   return data.global_readiness_score
+}
+
+export async function getMostDecayedNode(disciplineId: string) {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await getUser()
+  if (!user) return null
+
+  // 1. Get all leaf node IDs + names for this discipline
+  const { data: leafNodes } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name')
+    .eq('discipline_id', disciplineId)
+    .eq('is_leaf', true)
+
+  if (!leafNodes?.length) return null
+
+  const leafIds = leafNodes.map((n: { node_id: string }) => n.node_id)
+  const leafMap = new Map(leafNodes.map((n: { node_id: string; name: string }) => [n.node_id, n.name]))
+
+  // 2. Find the weakest encountered node
+  const { data: weakest } = await supabase
+    .from('user_node_mastery')
+    .select('topic_id, current_mastery_weight, total_attempts')
+    .eq('user_id', user.id)
+    .in('topic_id', leafIds)
+    .gt('total_attempts', 0)
+    .order('current_mastery_weight', { ascending: true })
+    .limit(1)
+    .maybeSingle()
+
+  if (!weakest) return null
+
+  return {
+    nodeId: weakest.topic_id as string,
+    nodeName: (leafMap.get(weakest.topic_id) ?? 'Unknown Topic') as string,
+    masteryScore: Math.round((weakest.current_mastery_weight as number) * 100),
+  }
 }

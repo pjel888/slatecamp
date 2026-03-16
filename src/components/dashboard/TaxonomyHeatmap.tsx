@@ -46,7 +46,7 @@ export const TaxonomyHeatmap = ({
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
         {clusters.map((cluster) => (
-          <div key={cluster.id} className='space-y-2 rounded-xl bg-zinc-50 p-3'>
+          <div key={cluster.id} className='space-y-2 rounded-md bg-zinc-50 p-3'>
             <div className='flex items-baseline justify-between gap-2'>
               <p className='text-xs font-medium tracking-tight text-zinc-900'>
                 {cluster.title}

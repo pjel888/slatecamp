@@ -135,7 +135,7 @@ const SidebarItem = ({
         <TooltipContent
           side='right'
           sideOffset={12}
-          className='bg-blue-500 text-zinc-50 font-medium text-xs'
+          className='bg-zinc-950 text-zinc-50 font-medium text-xs'
         >
           {label}
         </TooltipContent>

@@ -26,9 +26,14 @@ export interface TaxonomyNode {
   level: number;
   name: string;
   subject_area: string;
+  slug?: string | null;
   is_leaf: boolean;
   created_at: string;
   updated_at: string;
+  children?: TaxonomyNode[];
+  /** Joined from user_node_mastery — present when fetched with mastery data */
+  mastery?: number;
+  last_encountered?: string | null;
 }
 
 export interface Choice {
@@ -601,13 +606,24 @@ export interface WikiSearchPaginatedResult extends WikiSearchResult {
   total_count: number
 }
 
-// Notes — flat, Tiptap JSONB
+// Notes — contextually anchored, Tiptap JSONB
+export type NoteType = 'standard' | 'quick_capture' | 'cornell' | 'gap_analysis';
+
 export interface Note {
   id: string;
   user_id: string;
+  folder_id?: string | null;
+  topic_id?: string | null;
+  question_id?: string | null;
+  session_id?: string | null;
+  article_id?: string | null;
   title: string;
   content: Record<string, unknown>;
+  note_type: NoteType;
   is_pinned: boolean;
+  tags: string[];
+  color?: string | null;
+  source_url?: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -617,6 +633,12 @@ export interface NoteStub {
   title: string;
   updated_at: string;
   is_pinned: boolean;
+  note_type: NoteType;
+  topic_id?: string | null;
+  question_id?: string | null;
+  article_id?: string | null;
+  tags: string[];
+  color?: string | null;
   snippet?: string;
 }
 

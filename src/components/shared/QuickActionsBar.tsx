@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { MessageSquare, StickyNote, Search, GripVertical, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
-import { QuickNotePopup } from '../notes/QuickNotePopup'
+import { QuickCaptureDrawer } from '../notes/QuickCaptureDrawer'
+import { useNoteContext } from '@/lib/context/note-context'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 
 const QUICK_ACTIONS = [
@@ -28,46 +29,34 @@ const QUICK_ACTIONS = [
   },
 ] as const
 
-/**
- * Small floating bar for quick actions (AI chat, quick notes, etc.).
- * Icons only by default; each item expands on hover to show the label.
- */
 const DEFAULT_RIGHT = 'center'
 const DEFAULT_BOTTOM = 32
 
 export function QuickActionsBar() {
   const [omnibarOpen, setOmnibarOpen] = useState(false)
-  const [notesOpen, setNotesOpen] = useState(false)
+  const { openDrawer } = useNoteContext()
   const { style: floatStyle, onPointerDown: onDrag, resetPosition } =
-    useDraggableFloatingPosition(
-      'quick-actions-bar',
-      DEFAULT_RIGHT,
-      DEFAULT_BOTTOM,
-    )
+    useDraggableFloatingPosition('quick-actions-bar', DEFAULT_RIGHT, DEFAULT_BOTTOM)
 
   const handleAction = (id: string) => {
     if (id === 'search') setOmnibarOpen(true)
-    if (id === 'quick-note') setNotesOpen(true)
+    if (id === 'quick-note') openDrawer()
   }
 
   return (
     <>
-      <aside
-        className='z-50 flex items-center'
-        style={floatStyle}
-        aria-label='Quick actions'
-      >
+      <aside className="z-50 flex items-center" style={floatStyle} aria-label="Quick actions">
         <div
           className={cn(
             'flex items-center gap-0 rounded-sm border border-border/60 pl-0.5 pr-1 py-1',
             'bg-background/20 shadow-[0_0px_8px_rgba(0,0,0,0.12)] backdrop-blur-[10px]',
           )}
         >
-          <div className='flex items-center gap-1.5'>
+          <div className="flex items-center gap-1.5">
             {QUICK_ACTIONS.map(({ id, label, icon: Icon, ariaLabel }) => (
               <button
                 key={id}
-                type='button'
+                type="button"
                 onClick={() => handleAction(id)}
                 aria-label={ariaLabel}
                 title={label}
@@ -78,42 +67,41 @@ export function QuickActionsBar() {
                   'ease-[cubic-bezier(0.175,0.885,0.32,1.275)]',
                 )}
               >
-                <span className='flex shrink-0 items-center pl-4'>
-                  <Icon className='h-5 w-5' strokeWidth={1.5} />
+                <span className="flex shrink-0 items-center pl-4">
+                  <Icon className="h-5 w-5" strokeWidth={1.5} />
                 </span>
-                <span className='whitespace-nowrap pr-4 text-[13px] font-medium opacity-0 transition-opacity duration-200 group-hover:opacity-100'>
+                <span className="whitespace-nowrap pr-4 text-[13px] font-medium opacity-0 transition-opacity duration-200 group-hover:opacity-100">
                   {label}
                 </span>
               </button>
             ))}
           </div>
 
-          <div className='flex flex-col border-l border-border/40'>
+          <div className="flex flex-col border-l border-border/40">
             <div
-              role='button'
+              role="button"
               tabIndex={0}
               onPointerDown={onDrag}
-              className='flex h-[26px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
-              aria-label='Drag to move'
+              className="flex h-[26px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none"
+              aria-label="Drag to move"
             >
-              <GripVertical className='h-3.5 w-3.5' strokeWidth={2} />
+              <GripVertical className="h-3.5 w-3.5" strokeWidth={2} />
             </div>
             <button
-              type='button'
+              type="button"
               onClick={resetPosition}
-              className='flex h-[26px] w-8 shrink-0 items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors'
-              aria-label='Reset position'
-              title='Reset position'
+              className="flex h-[26px] w-8 shrink-0 items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors"
+              aria-label="Reset position"
+              title="Reset position"
             >
-              <RotateCcw className='h-3 w-3' strokeWidth={2} />
+              <RotateCcw className="h-3 w-3" strokeWidth={2} />
             </button>
           </div>
-
         </div>
       </aside>
 
       <Omnibar open={omnibarOpen} setOpen={setOmnibarOpen} />
-      <QuickNotePopup open={notesOpen} onOpenChange={setNotesOpen} />
+      <QuickCaptureDrawer />
     </>
   )
 }

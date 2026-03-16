@@ -51,7 +51,7 @@ export const PacingEnduranceGauge = ({
         </p>
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
-        <div className='h-32 w-full rounded-xl bg-zinc-50 px-3 py-2'>
+        <div className='h-32 w-full rounded-md bg-zinc-50 px-3 py-2'>
           <ResponsiveContainer width='100%' height='100%'>
             <AreaChart data={MOCK_SERIES} margin={{ top: 4, right: 4, left: 0, bottom: 0 }}>
               <defs>

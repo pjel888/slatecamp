@@ -50,7 +50,28 @@
       "Bash(find \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\project-cerebro/src\" -type f \\\\\\( -name \"*.ts\" -o -name \"*.tsx\" \\\\\\) | xargs grep -l \"getUser\\\\|getSession\" | head -20)",
       "Bash(npx tsc --noEmit src/app/page.tsx)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3099/)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(claude mcp:*)",
+      "Bash(cd:*)",
+      "mcp__supabase__list_projects",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(bun run:*)",
+      "Bash(find:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git worktree:*)",
+      "Bash(bun test:*)",
+      "Bash(git add:*)",
+      "Bash(ls:*)",
+      "Bash(npx tsc:*)",
+      "Skill(gsd:pause-work)",
+      "Skill(gsd:resume-work)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
 }

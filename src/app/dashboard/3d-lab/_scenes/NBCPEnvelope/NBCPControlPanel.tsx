@@ -46,7 +46,7 @@ function SliderRow({ label, value, min, max, step, unit, decimals = 0, onChange 
       </div>
       <Slider
         value={[value]} min={min} max={max} step={step}
-        onValueChange={([v]) => onChange(v!)}
+        onValueChange={(v) => { const val = Array.isArray(v) ? v[0] : v; if (typeof val === 'number') onChange(val) }}
         className="cursor-pointer"
       />
     </div>
@@ -165,15 +165,37 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
           onChange={v => setInputs({ zoningClass: v as ZoningClass })} />
       </Section>
 
-      {/* Building (floor height — design assumption) */}
+      {/* Building */}
       <Section title="Building">
         <div className="text-[10px] text-zinc-400 italic mb-1">
-          Design assumption, not a code requirement
+          Floor height is a design assumption, not a code requirement
         </div>
         <SliderRow label="Floor Height" value={inputs.floorHeight} min={2.7} max={4.0} step={0.1} unit="m" decimals={1}
           onChange={v => setInputs({ floorHeight: v })} />
         <div className="text-[10px] font-mono text-zinc-500 bg-zinc-50 rounded px-2 py-1">
           {bhlDisplay}
+        </div>
+        <div className="pt-1 border-t border-border">
+          <div className="text-[10px] text-zinc-400 italic mb-1">
+            Floors override — drag above BHL to show violation
+          </div>
+          <SliderRow
+            label="Floors"
+            value={inputs.floorsOverride > 0 ? inputs.floorsOverride : computed.effectiveStoreys}
+            min={1}
+            max={computed.bhl_effective * 3}
+            step={1}
+            unit="F"
+            onChange={v => setInputs({ floorsOverride: v === computed.effectiveStoreys ? 0 : v })}
+          />
+          {inputs.floorsOverride > 0 && (
+            <button
+              onClick={() => setInputs({ floorsOverride: 0 })}
+              className="text-[10px] text-blue-600 hover:underline mt-0.5"
+            >
+              Reset to code max ({computed.effectiveStoreys}F)
+            </button>
+          )}
         </div>
       </Section>
 

@@ -2,6 +2,83 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { HeatmapCluster, HeatmapNode, NodeState } from '@/components/dashboard/TaxonomyHeatmap'
+import { PACING_TARGET_MS, PASSING_ACCURACY, getSubjectColor } from '@/lib/constants/analytics'
+
+// ── Analytics data interfaces ────────────────────────────────────────────────
+
+export interface ReadinessTrajectoryPoint {
+  date: string
+  score: number
+  target: number
+}
+
+export interface PacingQuadrantPoint {
+  subject: string
+  avgTimeMs: number
+  accuracy: number
+  questionCount: number
+  color: string
+}
+
+export interface StaminaBucket {
+  bucket: string
+  accuracy: number
+  sampleSize: number
+}
+
+export interface PacingInsightItem {
+  subject: string
+  avgTimeMs: number
+  targetTimeMs: number
+  ratio: number
+  accuracy: number
+}
+
+export interface MemoryHealthItem {
+  topic: string
+  topicId: string
+  lastEncountered: string
+  daysSince: number
+  estimatedRetention: number
+  status: 'strong' | 'review' | 'fading' | 'critical'
+  totalAttempts: number
+}
+
+export interface AnalyticsSummaryMetrics {
+  totalQuestions: number
+  avgAccuracy: number
+  avgPacingMs: number
+  streak: number
+  daysUntilExam: number | null
+  totalSessions: number
+}
+
+// ── Shared helpers ───────────────────────────────────────────────────────────
+
+type TaxNode = { node_id: string; parent_id: string | null; level: number; name: string }
+
+function buildLevel1Resolver(nodeMap: Map<string, TaxNode>) {
+  return function getLevel1Ancestor(topicId: string): { id: string; name: string } | null {
+    let current = nodeMap.get(topicId)
+    if (!current) return null
+    while (current && current.level > 1 && current.parent_id) {
+      current = nodeMap.get(current.parent_id)
+    }
+    if (current?.level === 1) return { id: current.node_id, name: current.name }
+    return null
+  }
+}
+
+async function fetchTaxonomyNodeMap(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  disciplineId: string,
+): Promise<Map<string, TaxNode>> {
+  const { data } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, parent_id, level, name')
+    .eq('discipline_id', disciplineId)
+  return new Map((data || []).map((n: TaxNode) => [n.node_id, n]))
+}
 
 /**
  * Returns the state label based on mastery weight (0.0 - 1.0).
@@ -136,4 +213,272 @@ export async function getAnalyticsSummary() {
     enduranceMinutes: 240, // ALE Standard
     trend: 'stable' as const
   }
+}
+
+// ── New analytics functions ──────────────────────────────────────────────────
+
+export async function getReadinessTrajectory(): Promise<ReadinessTrajectoryPoint[]> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const { data } = await supabase
+    .from('readiness_score_snapshots')
+    .select('score, computed_at')
+    .eq('user_id', user.id)
+    .order('computed_at', { ascending: true })
+    .limit(30)
+
+  if (!data?.length) return []
+
+  return data.map((s: any) => ({
+    date: new Date(s.computed_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+    score: Math.round(s.score),
+    target: PASSING_ACCURACY,
+  }))
+}
+
+export async function getPacingQuadrantData(): Promise<PacingQuadrantPoint[]> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const { data: interactions } = await supabase
+    .from('user_interactions')
+    .select('topic_id, is_correct, time_spent_ms')
+    .eq('user_id', user.id)
+    .gt('time_spent_ms', 0)
+
+  if (!interactions?.length) return []
+
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('current_discipline_id')
+    .eq('user_id', user.id)
+    .single()
+
+  if (!stats?.current_discipline_id) return []
+
+  const nodeMap = await fetchTaxonomyNodeMap(supabase, stats.current_discipline_id)
+  const getLevel1Ancestor = buildLevel1Resolver(nodeMap)
+
+  const subjectMap = new Map<string, { name: string; totalMs: number; correct: number; total: number }>()
+
+  for (const i of interactions as any[]) {
+    if (!i.topic_id) continue
+    const timeMs = Math.min(i.time_spent_ms, 300_000)
+    const ancestor = getLevel1Ancestor(i.topic_id)
+    if (!ancestor) continue
+    const s = subjectMap.get(ancestor.id) ?? { name: ancestor.name, totalMs: 0, correct: 0, total: 0 }
+    s.totalMs += timeMs
+    s.correct += i.is_correct ? 1 : 0
+    s.total += 1
+    subjectMap.set(ancestor.id, s)
+  }
+
+  return Array.from(subjectMap.values())
+    .filter(s => s.total >= 1)
+    .map(s => ({
+      subject: s.name,
+      avgTimeMs: Math.round(s.totalMs / s.total),
+      accuracy: Math.round((s.correct / s.total) * 100),
+      questionCount: s.total,
+      color: getSubjectColor(s.name),
+    }))
+}
+
+export async function getStaminaCurveData(): Promise<StaminaBucket[]> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const [sessionsRes, interactionsRes] = await Promise.all([
+    supabase
+      .from('quiz_sessions')
+      .select('session_id, question_ids')
+      .eq('user_id', user.id)
+      .eq('status', 'completed'),
+    supabase
+      .from('user_interactions')
+      .select('session_id, question_id, is_correct')
+      .eq('user_id', user.id),
+  ])
+
+  const sessions = (sessionsRes.data || []) as Array<{ session_id: string; question_ids: string[] }>
+  const interactions = (interactionsRes.data || []) as any[]
+  if (!sessions.length || !interactions.length) return []
+
+  const sessionMap = new Map(sessions.map(s => [s.session_id, s.question_ids]))
+  const buckets = new Map<number, { correct: number; total: number }>()
+
+  for (const i of interactions) {
+    const questionIds = sessionMap.get(i.session_id)
+    if (!questionIds) continue
+    const position = questionIds.indexOf(i.question_id) + 1
+    if (position <= 0) continue
+    const idx = Math.ceil(position / 5)
+    const b = buckets.get(idx) ?? { correct: 0, total: 0 }
+    b.correct += i.is_correct ? 1 : 0
+    b.total += 1
+    buckets.set(idx, b)
+  }
+
+  const maxIdx = Math.max(...Array.from(buckets.keys()), 0)
+  const result: StaminaBucket[] = []
+  for (let i = 1; i <= maxIdx; i++) {
+    const b = buckets.get(i)
+    if (!b || b.total < 1) continue
+    result.push({
+      bucket: `${(i - 1) * 5 + 1}–${i * 5}`,
+      accuracy: Math.round((b.correct / b.total) * 100),
+      sampleSize: b.total,
+    })
+  }
+  return result
+}
+
+export async function getPacingInsights(): Promise<PacingInsightItem[]> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const [interactionsRes, statsRes] = await Promise.all([
+    supabase
+      .from('user_interactions')
+      .select('topic_id, is_correct, time_spent_ms')
+      .eq('user_id', user.id)
+      .gt('time_spent_ms', 0),
+    supabase
+      .from('user_global_stats')
+      .select('current_discipline_id')
+      .eq('user_id', user.id)
+      .single(),
+  ])
+
+  const interactions = (interactionsRes.data || []) as any[]
+  if (!interactions.length || !statsRes.data?.current_discipline_id) return []
+
+  const nodeMap = await fetchTaxonomyNodeMap(supabase, statsRes.data.current_discipline_id)
+  const getLevel1Ancestor = buildLevel1Resolver(nodeMap)
+
+  const subjectMap = new Map<string, { name: string; totalMs: number; correct: number; total: number }>()
+
+  for (const i of interactions) {
+    if (!i.topic_id) continue
+    const timeMs = Math.min(i.time_spent_ms, 300_000)
+    const ancestor = getLevel1Ancestor(i.topic_id)
+    if (!ancestor) continue
+    const s = subjectMap.get(ancestor.id) ?? { name: ancestor.name, totalMs: 0, correct: 0, total: 0 }
+    s.totalMs += timeMs
+    s.correct += i.is_correct ? 1 : 0
+    s.total += 1
+    subjectMap.set(ancestor.id, s)
+  }
+
+  return Array.from(subjectMap.values())
+    .filter(s => s.total >= 2)
+    .map(s => ({
+      subject: s.name,
+      avgTimeMs: Math.round(s.totalMs / s.total),
+      targetTimeMs: PACING_TARGET_MS,
+      ratio: parseFloat((s.totalMs / s.total / PACING_TARGET_MS).toFixed(2)),
+      accuracy: Math.round((s.correct / s.total) * 100),
+    }))
+    .sort((a, b) => b.ratio - a.ratio)
+    .slice(0, 3)
+}
+
+export async function getMemoryHealthData(): Promise<MemoryHealthItem[]> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const { data: mastery } = await supabase
+    .from('user_node_mastery')
+    .select('topic_id, last_encountered, total_attempts')
+    .eq('user_id', user.id)
+    .gt('total_attempts', 0)
+    .order('last_encountered', { ascending: true })
+    .limit(20)
+
+  if (!mastery?.length) return []
+
+  const topicIds = mastery.map((m: any) => m.topic_id)
+  const { data: topics } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name')
+    .in('node_id', topicIds)
+
+  const topicNameMap = new Map((topics || []).map((t: any) => [t.node_id, t.name]))
+  const now = Date.now()
+
+  return mastery.map((m: any) => {
+    const daysSince = Math.floor((now - new Date(m.last_encountered).getTime()) / 86_400_000)
+    const estimatedRetention = Math.round(100 * Math.exp(-daysSince / 14))
+    const status: MemoryHealthItem['status'] =
+      estimatedRetention >= 80 ? 'strong' :
+      estimatedRetention >= 60 ? 'review' :
+      estimatedRetention >= 40 ? 'fading' : 'critical'
+    return {
+      topic: topicNameMap.get(m.topic_id) as string ?? 'Unknown Topic',
+      topicId: m.topic_id as string,
+      lastEncountered: m.last_encountered as string,
+      daysSince,
+      estimatedRetention,
+      status,
+      totalAttempts: m.total_attempts as number,
+    }
+  })
+}
+
+export async function getAnalyticsSummaryMetrics(): Promise<AnalyticsSummaryMetrics> {
+  const empty: AnalyticsSummaryMetrics = {
+    totalQuestions: 0, avgAccuracy: 0, avgPacingMs: 0,
+    streak: 0, daysUntilExam: null, totalSessions: 0,
+  }
+
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return empty
+
+  const [interactionsRes, sessionsRes, statsRes] = await Promise.all([
+    supabase.from('user_interactions').select('is_correct, time_spent_ms').eq('user_id', user.id),
+    supabase
+      .from('quiz_sessions')
+      .select('completed_at')
+      .eq('user_id', user.id)
+      .eq('status', 'completed')
+      .order('completed_at', { ascending: false }),
+    supabase.from('user_global_stats').select('target_exam_date').eq('user_id', user.id).single(),
+  ])
+
+  const interactions = (interactionsRes.data || []) as any[]
+  const sessions = (sessionsRes.data || []) as any[]
+
+  const totalQuestions = interactions.length
+  const correct = interactions.filter(i => i.is_correct).length
+  const avgAccuracy = totalQuestions > 0 ? Math.round((correct / totalQuestions) * 100) : 0
+
+  const validTimes = interactions.filter(i => i.time_spent_ms > 0 && i.time_spent_ms < 300_000)
+  const avgPacingMs = validTimes.length > 0
+    ? Math.round(validTimes.reduce((acc, i) => acc + i.time_spent_ms, 0) / validTimes.length)
+    : 0
+
+  const completedDates = new Set(
+    sessions.filter((s: any) => s.completed_at).map((s: any) => s.completed_at.split('T')[0])
+  )
+  let streak = 0
+  const cursor = new Date()
+  while (completedDates.has(cursor.toISOString().split('T')[0])) {
+    streak++
+    cursor.setDate(cursor.getDate() - 1)
+  }
+
+  let daysUntilExam: number | null = null
+  if (statsRes.data?.target_exam_date) {
+    const diff = new Date(statsRes.data.target_exam_date).getTime() - Date.now()
+    if (diff > 0) daysUntilExam = Math.ceil(diff / 86_400_000)
+  }
+
+  return { totalQuestions, avgAccuracy, avgPacingMs, streak, daysUntilExam, totalSessions: sessions.length }
 }

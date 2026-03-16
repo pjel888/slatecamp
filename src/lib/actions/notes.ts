@@ -84,7 +84,19 @@ export async function getNote(id: string): Promise<Note | null> {
 }
 
 export async function createNote(
-  input?: { title?: string; content?: Record<string, unknown>; folder_id?: string; topic_id?: string; source_url?: string }
+  input?: {
+    title?: string
+    content?: Record<string, unknown>
+    folder_id?: string
+    topic_id?: string
+    question_id?: string
+    article_id?: string
+    session_id?: string
+    source_url?: string
+    note_type?: string
+    tags?: string[]
+    color?: string
+  }
 ): Promise<{ id: string } | { error: string }> {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
@@ -96,9 +108,15 @@ export async function createNote(
       user_id: user.id,
       title: input?.title ?? 'Untitled Note',
       content: input?.content || { type: 'doc', content: [] },
-      folder_id: input?.folder_id,
-      topic_id: input?.topic_id,
-      source_url: input?.source_url
+      folder_id: input?.folder_id ?? null,
+      topic_id: input?.topic_id ?? null,
+      question_id: input?.question_id ?? null,
+      article_id: input?.article_id ?? null,
+      session_id: input?.session_id ?? null,
+      source_url: input?.source_url ?? null,
+      note_type: input?.note_type ?? 'standard',
+      tags: input?.tags ?? [],
+      color: input?.color ?? null,
     })
     .select('note_id')
     .single()
@@ -130,7 +148,11 @@ export async function updateNote(
     title?: string
     content?: Record<string, unknown>
     is_pinned?: boolean
-    folder_id?: string
+    folder_id?: string | null
+    topic_id?: string | null
+    tags?: string[]
+    color?: string | null
+    note_type?: string
   }
 ): Promise<{ error?: string }> {
   const supabase = await createClient()

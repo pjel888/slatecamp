@@ -7,7 +7,6 @@ import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useNBCPStore } from '../../_stores/nbcpStore'
 import { useNBCPInvalidateOnChange } from '../../_hooks/useNBCPInvalidateOnChange'
-import { ViolationIndicator } from '../../_components/ViolationIndicator'
 import { LotType } from '../../_constants/nbcp'
 
 // ─── Scale ────────────────────────────────────────────────────────────────────
@@ -51,7 +50,7 @@ export function NBCPScene() {
     const target = {
       w: Math.max(0.001, toU(computed.buildableWidth)),
       d: Math.max(0.001, toU(computed.buildableDepth)),
-      h: Math.max(0.001, toU(computed.effectiveHeight)),
+      h: Math.max(0.001, toU(computed.displayHeight)),
     }
 
     const LERP_FACTOR = 0.12  // ~400ms to settle at 60fps
@@ -69,11 +68,9 @@ export function NBCPScene() {
       buildingRef.current.position.y = LOT_Y * 2 + nh / 2
     }
 
-    // Building color
+    // Building color: blue = compliant, red = BHL violated
     if (buildingMatRef.current) {
-      const { violations, bhl_source } = computed
-      const hasViolation = violations.length > 0
-      const color = hasViolation ? '#dc2626' : bhl_source === 'rrow' ? '#d97706' : '#2563eb'
+      const color = computed.violations.length > 0 ? '#dc2626' : '#2563eb'
       buildingMatRef.current.color.set(color)
     }
 
@@ -84,7 +81,8 @@ export function NBCPScene() {
   const { computed, inputs } = useNBCPStore()
   const {
     tla, bhl_effective, bhl_meters, bhl_source,
-    ambf, setbacks, effectiveStoreys, effectiveHeight,
+    ambf, setbacks,
+    displayStoreys, displayHeight,
     flar, violations,
   } = computed
 
@@ -101,11 +99,22 @@ export function NBCPScene() {
   const rightSbWidth = toU(setbacks.right)
 
   // BHL line color
-  const bhlLineColor = violations.length > 0 ? '#dc2626' : bhl_source === 'rrow' ? '#d97706' : '#16a34a'
+  const bhlLineColor = violations.length > 0 ? '#dc2626' : '#16a34a'
 
   // RROW plane(s)
   const rrowWu = toU(inputs.rrowWidth)
   const showRearRrow = inputs.lotType === LotType.THROUGH
+
+  // Neighboring lots/buildings — depends on lot type
+  // INSIDE: neighbors left + right
+  // CORNER: neighbor right only (left = secondary road)
+  // THROUGH: neighbors left + right (like inside, roads front + rear)
+  // END: neighbor left only (right = secondary road)
+  const neighborH = toU(Math.max(bhl_meters * 0.7, inputs.floorHeight * 2))
+  const showLeftNeighbor  = inputs.lotType === LotType.INSIDE || inputs.lotType === LotType.THROUGH || inputs.lotType === LotType.END
+  const showRightNeighbor = inputs.lotType === LotType.INSIDE || inputs.lotType === LotType.THROUGH || inputs.lotType === LotType.CORNER
+  const showLeftRrow      = inputs.lotType === LotType.CORNER
+  const showRightRrow     = inputs.lotType === LotType.END
 
   return (
     <group>
@@ -127,6 +136,52 @@ export function NBCPScene() {
           <planeGeometry args={[lotWu + rrowWu, rrowWu]} />
           <meshStandardMaterial color="#d1d5db" />
         </mesh>
+      )}
+
+      {/* Secondary RROW — left side (Corner lot) */}
+      {showLeftRrow && (
+        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-(lotWu / 2 + rrowWu / 2), 0, 0]}>
+          <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
+          <meshStandardMaterial color="#d1d5db" />
+        </mesh>
+      )}
+
+      {/* Secondary RROW — right side (End lot) */}
+      {showRightRrow && (
+        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[(lotWu / 2 + rrowWu / 2), 0, 0]}>
+          <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
+          <meshStandardMaterial color="#d1d5db" />
+        </mesh>
+      )}
+
+      {/* ── Neighboring lots ────────────────────────────────────────────── */}
+      {showLeftNeighbor && (
+        <group position={[-lotWu, 0, 0]}>
+          {/* lot plate */}
+          <mesh rotation={[-Math.PI / 2, 0, 0]}>
+            <planeGeometry args={[lotWu, lotDu]} />
+            <meshStandardMaterial color="#f3f4f6" />
+          </mesh>
+          {/* building */}
+          <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
+            <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
+            <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
+          </mesh>
+        </group>
+      )}
+      {showRightNeighbor && (
+        <group position={[lotWu, 0, 0]}>
+          {/* lot plate */}
+          <mesh rotation={[-Math.PI / 2, 0, 0]}>
+            <planeGeometry args={[lotWu, lotDu]} />
+            <meshStandardMaterial color="#f3f4f6" />
+          </mesh>
+          {/* building */}
+          <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
+            <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
+            <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
+          </mesh>
+        </group>
       )}
 
       {/* ── Lot plate ──────────────────────────────────────────────────── */}
@@ -196,6 +251,20 @@ export function NBCPScene() {
           </div>
         </Html>
       )}
+      {leftSbWidth > 0 && (
+        <Html position={[-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+            Left: {setbacks.left.toFixed(1)}m
+          </div>
+        </Html>
+      )}
+      {rightSbWidth > 0 && (
+        <Html position={[(lotWu / 2 - rightSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+            Right: {setbacks.right.toFixed(1)}m
+          </div>
+        </Html>
+      )}
 
       {/* ── Building envelope ───────────────────────────────────────────── */}
       {/* Unit cube — scaled by useFrame via animRef */}
@@ -212,7 +281,7 @@ export function NBCPScene() {
       </mesh>
 
       {/* Floor plate lines */}
-      {Array.from({ length: effectiveStoreys - 1 }, (_, i) => {
+      {Array.from({ length: displayStoreys - 1 }, (_, i) => {
         const floorY = LOT_Y * 2 + toU((i + 1) * inputs.floorHeight)
         const bw = toU(computed.buildableWidth)
         const bd = toU(computed.buildableDepth)
@@ -227,19 +296,19 @@ export function NBCPScene() {
       {/* ── 3D-anchored labels ──────────────────────────────────────────── */}
       {/* Height label — right face */}
       <Html
-        position={[toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(effectiveHeight) / 2, 0]}
+        position={[toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(displayHeight) / 2, 0]}
         distanceFactor={df} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap">
           <span className="text-[9px] font-bold text-zinc-700">
-            {effectiveHeight.toFixed(1)}m · {effectiveStoreys}F
+            {displayHeight.toFixed(1)}m · {displayStoreys}F
           </span>
         </div>
       </Html>
 
       {/* AMBF label — top face */}
       <Html
-        position={[0, LOT_Y * 2 + toU(effectiveHeight) + 0.06, 0]}
+        position={[0, LOT_Y * 2 + toU(displayHeight) + 0.06, 0]}
         distanceFactor={df} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap text-center">
@@ -270,21 +339,7 @@ export function NBCPScene() {
         </div>
       </Html>
 
-      {/* ── Violation annotations ───────────────────────────────────────── */}
-      {violations.map((v, i) => (
-        <ViolationIndicator
-          key={i}
-          position={[
-            0,
-            LOT_Y * 2 + toU(effectiveHeight) + 0.25 + i * 0.18,
-            0,
-          ]}
-          message={v.message}
-          codeRef={v.codeCitation}
-          visible
-          distanceFactor={df}
-        />
-      ))}
+      {/* Violations shown in telemetry panel — building turns red as spatial cue */}
     </group>
   )
 }

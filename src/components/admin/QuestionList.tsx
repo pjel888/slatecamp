@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useTransition } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
-import { FileQuestion, Plus, Search, Filter, Trash2, Edit, Eye } from 'lucide-react'
+import { FileQuestion, Plus, Search, Filter, Trash2, Edit, Eye, Loader2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface Question {
@@ -40,6 +40,16 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [difficultyFilter, setDifficultyFilter] = useState<number | null>(null)
   const [selectedQuestions, setSelectedQuestions] = useState<string[]>([])
+  const [isPending, startTransition] = useTransition()
+
+  const handleDeleteSelected = () => {
+    startTransition(async () => {
+      const supabase = createClient()
+      await supabase.from('questions').delete().in('question_id', selectedQuestions)
+      setQuestions((prev) => prev.filter((q) => !selectedQuestions.includes(q.id)))
+      setSelectedQuestions([])
+    })
+  }
 
   const filteredQuestions = questions.filter(q => {
     const matchesSearch = q.text.toLowerCase().includes(searchQuery.toLowerCase())

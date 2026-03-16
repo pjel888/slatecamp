@@ -15,12 +15,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { LabViewport } from '@/app/dashboard/3d-lab/_components/LabViewport'
 
-const NBCPEnvelope = dynamic(
-  () => import('@/app/dashboard/3d-lab/_scenes/NBCPEnvelope'),
-  { ssr: false },
-)
-
-const PARAMETRIC_SCENES = new Set(['nbcp-envelope'])
 
 /* ── Types ── */
 
@@ -332,23 +326,41 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
               <div className="space-y-1">
                 {group.children?.map(item => (
                   <div key={item.id} className="space-y-1">
-                    <p className="text-[11px] font-bold text-zinc-500 px-2 py-1">{item.label}</p>
-                    {item.children?.map(leaf => (
+                    {item.modelId ? (
                       <Link
-                        key={leaf.id}
-                        href={`${basePath}?model=${leaf.modelId}`}
-                        onClick={() => setSelectedModelId(leaf.modelId!)}
+                        href={`${basePath}?model=${item.modelId}`}
+                        onClick={() => setSelectedModelId(item.modelId!)}
                         className={cn(
                           "w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all",
-                          selectedModelId === leaf.modelId 
-                            ? "bg-blue-50 text-blue-700 shadow-sm" 
+                          selectedModelId === item.modelId
+                            ? "bg-blue-50 text-blue-700 shadow-sm"
                             : "text-zinc-600 hover:bg-zinc-50"
                         )}
                       >
-                        {leaf.label}
-                        {selectedModelId === leaf.modelId && <ChevronRight className="h-3 w-3" />}
+                        {item.label}
+                        {selectedModelId === item.modelId && <ChevronRight className="h-3 w-3" />}
                       </Link>
-                    ))}
+                    ) : (
+                      <>
+                        <p className="text-[11px] font-bold text-zinc-500 px-2 py-1">{item.label}</p>
+                        {item.children?.map(leaf => (
+                          <Link
+                            key={leaf.id}
+                            href={`${basePath}?model=${leaf.modelId}`}
+                            onClick={() => setSelectedModelId(leaf.modelId!)}
+                            className={cn(
+                              "w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all",
+                              selectedModelId === leaf.modelId
+                                ? "bg-blue-50 text-blue-700 shadow-sm"
+                                : "text-zinc-600 hover:bg-zinc-50"
+                            )}
+                          >
+                            {leaf.label}
+                            {selectedModelId === leaf.modelId && <ChevronRight className="h-3 w-3" />}
+                          </Link>
+                        ))}
+                      </>
+                    )}
                   </div>
                 ))}
               </div>
@@ -357,21 +369,16 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
         </nav>
       </aside>
 
-      {/* Main Viewport — routes to parametric/anatomy/gltf based on modelId */}
+      {/* Main Viewport — all routing delegated to LabViewport */}
       <main className="flex-1 bg-zinc-50 p-6 flex flex-col min-w-0 overflow-hidden">
         <div className="flex-1 min-h-0">
-          {PARAMETRIC_SCENES.has(selectedModelId) ? (
-            selectedModelId === 'nbcp-envelope' ? (
-              <NBCPEnvelope />
-            ) : null
-          ) : (
-            <Workspace
-              model={modelData}
-              parameters={[]}
-              hotspots={[]}
-              userTier="camp" // Hardcoded for now
-            />
-          )}
+          <LabViewport
+            modelId={selectedModelId}
+            model={modelData}
+            parameters={[]}
+            hotspots={[]}
+            userTier="camp"
+          />
         </div>
       </main>
     </div>

@@ -8,10 +8,13 @@ import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import { format } from 'date-fns'
 import { WikiHighlighter } from './WikiHighlighter'
+import { WikiNoteAnchor } from './WikiNoteAnchor'
 import PHBuildingSetbacks from '../interactive-illustrations/2D/SetbackIllustration'
 
 interface WikiArticleProps {
   article: WikiArticleType
+  nodeId?: string
+  nodeName?: string
 }
 
 // Custom components for MDX to maintain existing heading ID logic
@@ -39,7 +42,7 @@ const components = {
   },
 }
 
-export async function WikiArticle({ article }: WikiArticleProps) {
+export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProps) {
   if (!article) return null
 
   // Frontend fix: Replace literal \n sequences with actual newlines
@@ -49,6 +52,15 @@ export async function WikiArticle({ article }: WikiArticleProps) {
 
   return (
     <div className='flex flex-col lg:flex-row w-full h-full overflow-hidden'>
+      {/* Sets NoteContext so QuickCapture knows which article is open */}
+      <WikiNoteAnchor
+        article_id={article.article_id}
+        article_title={article.title}
+        topic_id={nodeId}
+        topic_name={nodeName}
+        source_url={`/dashboard/wiki/${article.slug}`}
+      />
+
       {/* Client-side logic for highlighting search terms */}
       <Suspense fallback={null}>
         <WikiHighlighter />
@@ -68,12 +80,12 @@ export async function WikiArticle({ article }: WikiArticleProps) {
             <h1 className='text-4xl font-bold tracking-tight text-foreground'>
               {article.title}
             </h1>
-            <Link href={`/dashboard/testing?articleId=${article.article_id}`}>
+            <Link href={nodeId ? `/dashboard/testing?topicId=${nodeId}` : `/dashboard/testing?articleId=${article.article_id}`}>
               <Button
                 size='sm'
                 className='bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full px-6 shadow-lg shadow-blue-100 transition-all active:scale-95'
               >
-                <Brain className='mr-2 h-4 w-4' /> Practice this Topic
+                <Brain className='mr-2 h-4 w-4' /> Practice this {nodeName ? 'Topic' : 'Article'}
               </Button>
             </Link>
           </div>

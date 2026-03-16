@@ -30,6 +30,7 @@ export interface NBCPInputs {
   rrowWidth: number     // meters, 6–40
   floorHeight: number   // meters per storey, 2.7–4.0 (design assumption)
   firewalls: FirewallInputs
+  floorsOverride: number  // 0 = use code-computed max; >0 = user-set (may exceed BHL to show violation)
 }
 
 export interface Violation {
@@ -56,16 +57,15 @@ export interface NBCPComputed {
   bhl_meters: number       // bhl_effective × floorHeight
   bhl_source: 'zoning' | 'rrow'
 
-  // Step 3 — Setbacks
+  // Step 3 — Setbacks (base table values only, no incremental)
   setbacks: PerSideSetbacks
-  incrementalSetback: number  // 0.30 × min(bhl_effective - 2, 12), ≥ 0
 
   // Step 4 — AMBF
   buildableWidth: number
   buildableDepth: number
   ambf_by_setbacks: number
   ambf_by_pso: number
-  ambf: number             // min(by_setbacks, by_pso) — post-PSO
+  ambf: number             // min(by_setbacks, by_pso)
 
   // Step 5 — TOSL
   tosl: number
@@ -80,28 +80,25 @@ export interface NBCPComputed {
   conversionFactor: number
   maxTGFA: number          // maxGFA × conversionFactor
 
-  // Step 7 — AMVB (valid because ambf is already post-PSO from Step 4)
+  // Step 7 — AMVB
   amvb: number             // ambf × bhl_meters
 
-  // Step 8 — Effective storeys (FLAR-BHL crosscheck)
+  // Step 8 — Code-allowed storeys (FLAR–BHL crosscheck)
   effectiveStoreys: number // min(bhl_effective, floor(maxGFA / ambf)), clamped ≥ 1
   effectiveHeight: number  // effectiveStoreys × floorHeight
 
-  // Step 9 — Violations
+  // Display storeys — either code max or user override (may exceed BHL)
+  displayStoreys: number
+  displayHeight: number
+
+  // Step 9 — Violations (only true code violations)
   violations: Violation[]
 }
 
 // ─── Calculator ───────────────────────────────────────────────────────────────
 
-/**
- * Pure function implementing the sequential development control calculation
- * from the 2004 Revised IRR of PD 1096 (Rules VII & VIII).
- *
- * Never throws. Invalid inputs produce violations[], not exceptions.
- * All section references are to the 2004 Revised IRR unless otherwise noted.
- */
 export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
-  const { lotWidth, lotDepth, zoningClass, lotType, rrowWidth, floorHeight, firewalls } = inputs
+  const { lotWidth, lotDepth, zoningClass, lotType, rrowWidth, floorHeight, firewalls, floorsOverride } = inputs
 
   const zoning = ZONING_TABLE[zoningClass]
   const violations: Violation[] = []
@@ -115,11 +112,8 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
   const bhl_effective = Math.min(bhl_zoning, bhl_rrow)
   const bhl_meters    = bhl_effective * floorHeight
   const bhl_source: 'zoning' | 'rrow' = bhl_rrow < bhl_zoning ? 'rrow' : 'zoning'
-  // Note: use strict < (not <=). When RROW and zoning BHL are equal, neither is
-  // more restrictive — source = 'zoning' avoids spurious amber building color.
 
-  // ── Step 3: Setbacks (IRR Rule VIII Tables VIII.2 & VIII.3 + §804.6) ─────
-  // Sanitize firewalls: disallowed sides forced to false
+  // ── Step 3: Setbacks — base table values only (no incremental §804.6) ────
   const allowed = new Set<FirewallSide>(FIREWALL_ALLOWED[zoningClass])
   const cleanFirewalls: FirewallInputs = {
     front: firewalls.front && allowed.has('front'),
@@ -128,28 +122,17 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
     right: firewalls.right && allowed.has('right'),
   }
 
-  // Base setbacks from table (before incremental)
   const base = getBaseSetbacks(zoningClass, rrowWidth, bhl_effective)
 
-  // Incremental setback: 0.30m per storey above 2nd, capped at storey 14
-  // IRR Rule VIII §804.6
-  const incrementalStoreys   = Math.min(Math.max(bhl_effective - 2, 0), 12)
-  const incrementalSetback   = incrementalStoreys * 0.30
-
   // Per-side setbacks accounting for lot type and firewalls
-  // Lot type rules:
   //   CORNER:  left side (secondary road) uses front setback
   //   THROUGH: rear also uses front setback (RROW on both sides)
-  //   END:     right side (secondary road-end, canonical) uses front setback
-  const frontSb = base.front + incrementalSetback
-  const sideSb  = base.side  + incrementalSetback
-  const rearSb  = base.rear  + incrementalSetback
-
+  //   END:     right side uses front setback
   const rawSetbacks: PerSideSetbacks = {
-    front: frontSb,
-    rear:  (lotType === LotType.THROUGH)           ? frontSb : rearSb,
-    left:  (lotType === LotType.CORNER)            ? frontSb : sideSb,
-    right: (lotType === LotType.END)               ? frontSb : sideSb,
+    front: base.front,
+    rear:  lotType === LotType.THROUGH ? base.front : base.rear,
+    left:  lotType === LotType.CORNER  ? base.front : base.side,
+    right: lotType === LotType.END     ? base.front : base.side,
   }
 
   const setbacks: PerSideSetbacks = {
@@ -159,16 +142,13 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
     right: cleanFirewalls.right ? 0 : rawSetbacks.right,
   }
 
-  // ── Step 4: AMBF (IRR Rule VIII §802-803 + Rule VII Guidelines) ──────────
+  // ── Step 4: AMBF (IRR Rule VIII §802-803) ────────────────────────────────
   const buildableWidth   = Math.max(0, lotWidth  - setbacks.left  - setbacks.right)
   const buildableDepth   = Math.max(0, lotDepth  - setbacks.front - setbacks.rear)
   const ambf_by_setbacks = buildableWidth * buildableDepth
 
-  // PSO: CORNER gets pso_corner; all other lot types use pso_inside
   const pso = lotType === LotType.CORNER ? zoning.pso_corner : zoning.pso_inside
   const ambf_by_pso = tla * pso
-
-  // Most stringent rule governs (IRR Rule VII Guidelines — sequential DC application)
   const ambf = Math.min(ambf_by_setbacks, ambf_by_pso)
 
   if (ambf <= 0) {
@@ -179,46 +159,43 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
     })
   }
 
-  // ── Step 5: TOSL (IRR Rule VIII §804 + Guidelines §4) ────────────────────
+  // ── Step 5: TOSL ──────────────────────────────────────────────────────────
   const tosl     = tla - ambf
   const tosl_pct = tla > 0 ? tosl / tla : 0
 
-  // ── Step 6: GFA / FLAR (IRR Rule VII Guidelines Table VII.G.1) ───────────
+  // ── Step 6: GFA / FLAR ───────────────────────────────────────────────────
   const flar             = zoning.flar
   const maxGFA           = tla * flar
   const conversionFactor = zoning.isResidential ? GFA_CONVERSION.residential : GFA_CONVERSION.nonResidential
   const maxTGFA          = maxGFA * conversionFactor
 
-  // ── Step 7: AMVB (IRR Rule VII Guidelines — AMVB procedure) ─────────────
-  // Valid because ambf is post-PSO (Step 4 already applied the most-stringent rule)
+  // ── Step 7: AMVB ──────────────────────────────────────────────────────────
   const amvb = ambf * bhl_meters
 
-  // ── Step 8: Effective storeys — FLAR–BHL crosscheck ─────────────────────
-  // IRR Rule VII Guidelines (sequential DC application)
+  // ── Step 8: Effective storeys — FLAR–BHL crosscheck ──────────────────────
   let flarLimitedStoreys = ambf > 0 ? Math.floor(maxGFA / ambf) : 0
-
-  if (flarLimitedStoreys < 1) {
-    violations.push({
-      field: 'flar',
-      message: 'FLAR too restrictive: max GFA smaller than single-floor footprint',
-      codeCitation: 'IRR Rule VII Guidelines Table VII.G.1',
-    })
-    flarLimitedStoreys = 1  // clamp so 3D scene always renders ≥1 storey
-  } else if (flarLimitedStoreys < bhl_effective) {
-    violations.push({
-      field: 'flar',
-      message: `FLAR limits building to ${flarLimitedStoreys} storeys (BHL allows ${bhl_effective})`,
-      codeCitation: 'IRR Rule VII Guidelines Table VII.G.1',
-    })
-  }
+  if (flarLimitedStoreys < 1) flarLimitedStoreys = 1
 
   const effectiveStoreys = Math.min(bhl_effective, flarLimitedStoreys)
   const effectiveHeight  = effectiveStoreys * floorHeight
 
+  // ── Display storeys — user override allows exceeding BHL to show violation ─
+  const displayStoreys = floorsOverride > 0 ? floorsOverride : effectiveStoreys
+  const displayHeight  = displayStoreys * floorHeight
+
+  // Violations driven by the display (override) value
+  if (displayStoreys > bhl_effective) {
+    violations.push({
+      field: 'bhl',
+      message: `Height ${displayHeight.toFixed(1)}m (${displayStoreys}F) exceeds BHL ${bhl_meters.toFixed(1)}m (${bhl_effective}F)`,
+      codeCitation: 'IRR Rule VII §707 + Table VII.2',
+    })
+  }
+
   return {
     tla,
     bhl_zoning, bhl_rrow, bhl_effective, bhl_meters, bhl_source,
-    setbacks, incrementalSetback,
+    setbacks,
     buildableWidth, buildableDepth,
     ambf_by_setbacks, ambf_by_pso, ambf,
     tosl, tosl_pct,
@@ -226,6 +203,7 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed {
     flar, maxGFA, conversionFactor, maxTGFA,
     amvb,
     effectiveStoreys, effectiveHeight,
+    displayStoreys, displayHeight,
     violations,
   }
 }
