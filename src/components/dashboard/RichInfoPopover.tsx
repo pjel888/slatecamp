@@ -21,9 +21,9 @@ export const RichInfoPopover = ({ title, description, mediaUrl }: RichInfoPopove
           <HelpCircle className="w-3.5 h-3.5 text-zinc-300 group-hover:text-zinc-500 transition-colors" />
         </span>
       </PopoverTrigger>
-      <PopoverContent side="top" align="end" className="w-72 p-0 rounded-sm border-zinc-200 shadow-xl overflow-hidden">
+      <PopoverContent side="top" align="end" className="w-72 p-0 rounded-md border-border shadow-lg overflow-hidden">
         {mediaUrl && (
-          <div className="w-full h-32 bg-zinc-100 flex items-center justify-center border-b border-zinc-100">
+          <div className="w-full h-32 bg-muted flex items-center justify-center border-b border-border">
             {/* Placeholder for GIF/Video */}
             <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Media Placeholder</span>
           </div>
