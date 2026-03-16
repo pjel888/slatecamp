@@ -41,13 +41,13 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;  /* 6px — GitHub Primer default */
+  --radius-lg: 0.5rem;    /* 8px — large containers */
+  --radius-xl: 0.75rem;   /* 12px — modals/overlays */
+  --radius-2xl: 1rem;     /* 16px */
+  --radius-3xl: 1.25rem;  /* 20px */
+  --radius-4xl: 1.5rem;   /* 24px */
 
   /* Cerebro Design Tokens — Apple-inspired palette */
   --color-snow: #ffffff;
@@ -170,15 +170,15 @@
   --primary-foreground: #ffffff;
   --secondary: #f5f5f7;
   --secondary-foreground: #1d1d1f;
-  --muted: #f5f5f7;
+  --muted: #f6f8fa;
   --muted-foreground: #86868b;
   --accent: #f5f5f7;
   --accent-foreground: #1d1d1f;
   --destructive: #ff3b30;
-  --border: #e5e5ea;
-  --input: #e5e5ea;
+  --border: #d0d7de;
+  --input: #d0d7de;
   --ring: #1f3055;
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 
   --chart-1: #1f3055;
   --chart-2: #34c759;
@@ -219,7 +219,7 @@
 
   /* Apple HIG — Surfaces */
   --card-bg: #ffffff;
-  --card-border-color: rgba(0, 0, 0, 0.04);
+  --card-border-color: #d0d7de;
   --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
   --card-shadow-hover:
     0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
