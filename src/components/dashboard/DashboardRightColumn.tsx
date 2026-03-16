@@ -159,7 +159,7 @@ export const MetricSmall = ({
   const copy = COPY_MAP[iconName as keyof typeof COPY_MAP]
 
   return (
-    <Card className='rounded-sm border-zinc-200 bg-white shadow-none p-2 relative'>
+    <Card className='border-border bg-white p-2 relative'>
       <RichInfoPopover title={copy.title} description={copy.desc} />
       <div className='flex items-center gap-2'>
         <div
@@ -210,7 +210,7 @@ export const ActionTall = ({
   const copy = COPY_MAP[iconName as keyof typeof COPY_MAP]
 
   return (
-    <Card className='rounded-sm border-zinc-200 bg-white shadow-none p-2 flex flex-col justify-between hover:border-blue-200 hover:bg-blue-50/20 transition-all cursor-pointer group flex-1 relative'>
+    <Card className='border-border bg-white p-2 flex flex-col justify-between hover:border-blue-200 hover:bg-blue-50/20 transition-all cursor-pointer group flex-1 relative'>
       <RichInfoPopover title={copy.title} description={copy.desc} />
       <div>
         <div className='p-1.5 rounded-sm bg-zinc-50 group-hover:bg-blue-50 w-fit'>
@@ -247,7 +247,7 @@ export const UnifiedReadinessCard = ({
         : 'down'
 
   return (
-    <Card className='rounded-sm border-zinc-200 bg-white shadow-none overflow-hidden flex flex-col p-2 relative'>
+    <Card className='border-border bg-white overflow-hidden flex flex-col p-2 relative'>
       <RichInfoPopover
         title='Readiness Score Calculation'
         description='A composite metric combining EMA and IRT. Recent performance is weighted heavier.'
@@ -394,7 +394,7 @@ export const UnifiedReadinessCard = ({
 }
 
 export const PredictiveRemediationCard = () => (
-  <Card className='rounded-sm border-blue-100 bg-blue-50 shadow-none p-2 text-blue-900 relative overflow-hidden group flex flex-col justify-center h-full'>
+  <Card className='border-blue-100 bg-blue-50 shadow-none p-2 text-blue-900 relative overflow-hidden group flex flex-col justify-center h-full'>
     <RichInfoPopover
       title='Targeted Intervention'
       description='System scan isolating your lowest-performing node for correction.'
@@ -426,7 +426,7 @@ export const PredictiveRemediationCard = () => (
 )
 
 export const DailyCrucibleCard = () => (
-  <Card className='rounded-sm border-zinc-200 bg-white shadow-none p-2 h-[128px] flex flex-col gap-2 relative'>
+  <Card className='border-border bg-white p-2 h-[128px] flex flex-col gap-2 relative'>
     <RichInfoPopover
       title='Daily Crucible'
       description='Single high-difficulty item drawn from your weakest topic.'
@@ -449,7 +449,7 @@ export const DailyCrucibleCard = () => (
 )
 
 export const PacingLeaksCard = () => (
-  <Card className='rounded-sm border-zinc-200 bg-white shadow-none p-2 relative h-[128px]'>
+  <Card className='border-border bg-white p-2 relative h-[128px]'>
     <RichInfoPopover
       title='Latency Analytics'
       description='Tracks average time spent per question against the exam standard.'
@@ -468,7 +468,7 @@ export const PacingLeaksCard = () => (
 )
 
 export const PinnedRecentActivity = () => (
-  <Card className='rounded-sm border-zinc-200 bg-white shadow-none flex-1 flex flex-col overflow-hidden h-full p-2 relative'>
+  <Card className='border-border bg-white flex-1 flex flex-col overflow-hidden h-full p-2 relative'>
     <RichInfoPopover
       title='System Engagement'
       description='Chronological record of system interactions.'
