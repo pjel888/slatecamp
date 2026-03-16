@@ -1,6 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useState, Suspense, Component, type ReactNode } from 'react'
+import dynamic from 'next/dynamic'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Html, Float, ContactShadows, Environment } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
@@ -12,6 +13,13 @@ import { X, Info, Layers, Lock, Loader2, ChevronRight, Box } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+
+const NBCPEnvelope = dynamic(
+  () => import('@/app/dashboard/3d-lab/_scenes/NBCPEnvelope'),
+  { ssr: false },
+)
+
+const PARAMETRIC_SCENES = new Set(['nbcp-envelope'])
 
 /* ── Types ── */
 
@@ -351,12 +359,18 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
       {/* Main Viewport */}
       <main className="flex-1 bg-zinc-50 p-6 flex flex-col min-w-0 overflow-hidden">
         <div className="flex-1 min-h-0">
-          <Workspace 
-            model={modelData} 
-            parameters={[]} 
-            hotspots={[]} 
-            userTier="camp" // Hardcoded for now
-          />
+          {PARAMETRIC_SCENES.has(selectedModelId) ? (
+            selectedModelId === 'nbcp-envelope' ? (
+              <NBCPEnvelope />
+            ) : null
+          ) : (
+            <Workspace
+              model={modelData}
+              parameters={[]}
+              hotspots={[]}
+              userTier="camp" // Hardcoded for now
+            />
+          )}
         </div>
       </main>
     </div>

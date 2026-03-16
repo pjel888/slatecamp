@@ -59,6 +59,17 @@ const MOCK_TREE: TreeNode[] = [
       },
     ],
   },
+  {
+    id: "zoning",
+    label: "Zoning & Regulations",
+    children: [
+      {
+        id: "nbcp-envelope",
+        label: "NBCP Envelope Generator \u2746",
+        modelId: "nbcp-envelope",
+      },
+    ],
+  },
 ];
 
 function getDefaultModelId(tree: TreeNode[]): ModelId {
