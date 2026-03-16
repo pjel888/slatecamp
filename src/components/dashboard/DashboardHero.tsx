@@ -28,7 +28,7 @@ export const DashboardHero = ({
       {/* Content */}
       <div className='absolute bottom-6 left-6 z-20'>
         <h1 className='text-white text-xl md:text-2xl font-medium tracking-tight drop-shadow-sm'>
-          Hello, {userName}. <br /> Are you ready to work today?
+          Hello, {userName}. <br /> Are you ready to win today?
         </h1>
       </div>
     </div>
