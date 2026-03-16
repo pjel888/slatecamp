@@ -39,7 +39,11 @@ export function QuickActionsBar() {
   const [omnibarOpen, setOmnibarOpen] = useState(false)
   const [notesOpen, setNotesOpen] = useState(false)
   const { style: floatStyle, onPointerDown: onDrag } =
-    useDraggableFloatingPosition('quick-actions-bar', DEFAULT_RIGHT, DEFAULT_BOTTOM)
+    useDraggableFloatingPosition(
+      'quick-actions-bar',
+      DEFAULT_RIGHT,
+      DEFAULT_BOTTOM,
+    )
 
   const handleAction = (id: string) => {
     if (id === 'search') setOmnibarOpen(true)
@@ -59,15 +63,6 @@ export function QuickActionsBar() {
             'bg-background/20 shadow-[0_0px_8px_rgba(0,0,0,0.12)] backdrop-blur-[10px]',
           )}
         >
-          <div
-            role='button'
-            tabIndex={0}
-            onPointerDown={onDrag}
-            className='flex h-[52px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
-            aria-label='Drag to move'
-          >
-            <GripVertical className='h-4 w-4' strokeWidth={2} />
-          </div>
           <div className='flex items-center gap-1.5'>
             {QUICK_ACTIONS.map(({ id, label, icon: Icon, ariaLabel }) => (
               <button
@@ -91,6 +86,16 @@ export function QuickActionsBar() {
                 </span>
               </button>
             ))}
+          </div>
+
+          <div
+            role='button'
+            tabIndex={0}
+            onPointerDown={onDrag}
+            className='flex h-[52px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
+            aria-label='Drag to move'
+          >
+            <GripVertical className='h-4 w-4' strokeWidth={2} />
           </div>
         </div>
       </aside>

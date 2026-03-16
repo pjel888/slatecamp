@@ -11,6 +11,7 @@ import {
 } from 'recharts'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import type { SubjectMastery } from '@/lib/actions/mastery'
+import { RichInfoPopover } from './RichInfoPopover'
 
 interface SubjectRadarChartProps {
   data: SubjectMastery[]
@@ -51,17 +52,15 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const outerColor = getScoreColor(maxScore)
 
   return (
-    <Card className='border-zinc-200 bg-white shadow-none'>
-      <CardHeader className='pb-2'>
-        <CardTitle className='text-sm font-medium tracking-tight text-zinc-600'>
+    <Card className='border-zinc-200 bg-white shadow-none p-2 flex flex-col h-full relative'>
+      <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus. The perimeter represents complete mastery." />
+      <CardHeader className='p-2 pt-1'>
+        <CardTitle className='text-[10px] font-bold tracking-wider text-zinc-500 uppercase'>
           Subject Mastery Profile
         </CardTitle>
-        <p className='text-xs text-zinc-500'>
-          Radial distribution of domain readiness.
-        </p>
       </CardHeader>
-      <CardContent className='pt-0'>
-        <div className='h-[320px] w-full'>
+      <CardContent className='p-0 flex-1 flex flex-col justify-center'>
+        <div className='h-[240px] w-full'>
           <ResponsiveContainer width='100%' height='100%'>
             <RadarChart cx='50%' cy='50%' outerRadius='80%' data={chartData}>
               <defs>
@@ -74,7 +73,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
               <PolarGrid stroke='#e4e4e7' strokeWidth={1} />
               <PolarAngleAxis
                 dataKey='subject'
-                tick={{ fill: '#71717a', fontSize: 10, fontWeight: 500 }}
+                tick={{ fill: '#71717a', fontSize: 9, fontWeight: 500 }}
               />
               <PolarRadiusAxis
                 angle={30}
@@ -87,29 +86,29 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
                 name='Mastery'
                 dataKey='score'
                 stroke={outerColor}
-                strokeWidth={2}
+                strokeWidth={1.5}
                 fill="url(#radarGradient)"
                 fillOpacity={0.5}
-                dot={{ r: 3, fill: '#ffffff', stroke: outerColor, strokeWidth: 2 }}
-                activeDot={{ r: 5, fill: '#ffffff', stroke: '#1d1d1f', strokeWidth: 2 }}
+                dot={{ r: 2, fill: '#ffffff', stroke: outerColor, strokeWidth: 1.5 }}
+                activeDot={{ r: 4, fill: '#ffffff', stroke: '#1d1d1f', strokeWidth: 1.5 }}
                 animationDuration={1500}
               />
             </RadarChart>
           </ResponsiveContainer>
         </div>
         
-        <div className='mt-2 grid grid-cols-2 gap-2 border-t border-zinc-100 pt-3'>
+        <div className='mt-1 grid grid-cols-2 gap-1 border-t border-zinc-50 pt-2 px-2'>
           {chartData.map((item) => (
-            <div key={item.subject} className='flex items-center justify-between gap-2 px-1'>
-              <span className='truncate text-[10px] font-medium text-zinc-500 uppercase tracking-wider'>
+            <div key={item.subject} className='flex items-center justify-between gap-1.5'>
+              <span className='truncate text-[9px] font-medium text-zinc-500 uppercase tracking-tight'>
                 {item.subject}
               </span>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1">
                 <div 
-                  className="h-1.5 w-1.5 rounded-full" 
+                  className="h-1 w-1 rounded-full" 
                   style={{ backgroundColor: getScoreColor(item.score) }} 
                 />
-                <span className='text-[11px] font-semibold text-zinc-900'>
+                <span className='text-[10px] font-bold text-zinc-900'>
                   {item.score}%
                 </span>
               </div>
