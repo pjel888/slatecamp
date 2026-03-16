@@ -326,7 +326,7 @@ export function ActivityHeatmap({
               value={selectedYear}
               onChange={(e) => setSelectedYear(Number(e.target.value))}
               className={cn(
-                'appearance-none cursor-pointer rounded-sm border border-zinc-200',
+                'appearance-none cursor-pointer rounded-md border border-border',
                 'bg-white pl-3 pr-7 py-1 text-xs font-medium text-zinc-700',
                 'hover:border-zinc-300 focus:outline-none focus:ring-2 focus:ring-blue-200',
                 'transition-colors',
@@ -376,7 +376,7 @@ export function ActivityHeatmap({
               {blocks.map((b) => (
                 <span
                   key={b.blockIndex}
-                  className='absolute text-[10px] leading-none text-zinc-500 select-none whitespace-nowrap'
+                  className='absolute text-xs leading-none text-zinc-500 select-none whitespace-nowrap'
                   style={{
                     top: 0,
                     left: b.blockIndex * layout.slot,
@@ -498,7 +498,7 @@ export function ActivityHeatmap({
 
             {/* ── Legend ────────────────────────────────────────────────── */}
             <div className='mt-2 flex items-center justify-end gap-1.5'>
-              <span className='text-[10px] text-zinc-400 select-none'>
+              <span className='text-xs text-zinc-400 select-none'>
                 Less
               </span>
               {([0, 1, 2, 3, 4] as Level[]).map((lvl) => (
@@ -508,37 +508,37 @@ export function ActivityHeatmap({
                   style={{ width: layout.cell, height: layout.cell }}
                 />
               ))}
-              <span className='text-[10px] text-zinc-400 select-none'>
+              <span className='text-xs text-zinc-400 select-none'>
                 More
               </span>
-              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-zinc-300 select-none'>
                 ·
               </span>
               <div
                 className='rounded-[2px] bg-red-400 ring-1 ring-red-600 ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-[10px] text-zinc-400 select-none'>
+              <span className='text-xs text-zinc-400 select-none'>
                 Exam day
               </span>
-              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-zinc-300 select-none'>
                 ·
               </span>
               <div
                 className='rounded-[2px] bg-zinc-100 dark:bg-zinc-800 ring-2 ring-amber-500 ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-[10px] text-zinc-400 select-none'>
+              <span className='text-xs text-zinc-400 select-none'>
                 Today
               </span>
-              <span className='ml-2 text-[10px] text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-zinc-300 select-none'>
                 ·
               </span>
               <div
                 className='rounded-[2px] bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-[10px] text-zinc-400 select-none'>
+              <span className='text-xs text-zinc-400 select-none'>
                 Sign up day
               </span>
             </div>

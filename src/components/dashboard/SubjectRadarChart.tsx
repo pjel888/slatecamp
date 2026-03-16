@@ -26,12 +26,12 @@ const getScoreColor = (score: number) => {
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="rounded-lg border border-zinc-200 bg-white p-2 shadow-xl ring-1 ring-black/5">
-        <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">
+      <div className="rounded-md border border-border bg-white p-2 shadow-lg">
+        <p className="text-xs font-bold uppercase tracking-wider text-zinc-500">
           {payload[0].payload.subject}
         </p>
         <p className="text-sm font-semibold text-zinc-900">
-          {payload[0].value}% <span className="text-[10px] font-medium text-zinc-400">Mastery</span>
+          {payload[0].value}% <span className="text-xs font-medium text-zinc-400">Mastery</span>
         </p>
       </div>
     )
@@ -40,11 +40,26 @@ const CustomTooltip = ({ active, payload }: any) => {
 }
 
 export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
-  const chartData = data.length > 0 ? data : [
-    { subject: 'Syllabus', score: 0, fullMark: 100 },
-    { subject: 'Foundations', score: 0, fullMark: 100 },
-    { subject: 'Application', score: 0, fullMark: 100 },
-  ]
+  if (data.length === 0) {
+    return (
+      <Card className='border-border bg-white p-2 flex flex-col h-full relative min-h-[280px]'>
+        <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus." />
+        <CardHeader className='p-2 pt-1'>
+          <CardTitle className='text-[11px] font-bold tracking-wider text-zinc-500 uppercase'>
+            Subject Mastery Profile
+          </CardTitle>
+        </CardHeader>
+        <CardContent className='p-0 flex-1 flex flex-col items-center justify-center gap-2 text-center px-4'>
+          <p className='text-sm font-medium text-zinc-500'>
+            Complete quizzes across subjects to build your mastery profile.
+          </p>
+          <p className='text-xs text-zinc-400'>Your radar will appear here after your first session.</p>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  const chartData = data
 
   const maxScore = Math.max(...chartData.map(d => d.score), 1)
   const innerColor = getScoreColor(0)
@@ -52,10 +67,10 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const outerColor = getScoreColor(maxScore)
 
   return (
-    <Card className='border-zinc-200 bg-white shadow-none p-2 flex flex-col h-full relative'>
+    <Card className='border-border bg-white p-2 flex flex-col h-full relative'>
       <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus. The perimeter represents complete mastery." />
       <CardHeader className='p-2 pt-1'>
-        <CardTitle className='text-[10px] font-bold tracking-wider text-zinc-500 uppercase'>
+        <CardTitle className='text-[11px] font-bold tracking-wider text-zinc-500 uppercase'>
           Subject Mastery Profile
         </CardTitle>
       </CardHeader>
@@ -70,10 +85,10 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
                   <stop offset="100%" stopColor={outerColor} stopOpacity={0.8} />
                 </radialGradient>
               </defs>
-              <PolarGrid stroke='#e4e4e7' strokeWidth={1} />
+              <PolarGrid stroke='#f4f4f5' strokeWidth={1} />
               <PolarAngleAxis
                 dataKey='subject'
-                tick={{ fill: '#71717a', fontSize: 9, fontWeight: 500 }}
+                tick={{ fill: '#656d76', fontSize: 11, fontWeight: 500 }}
               />
               <PolarRadiusAxis
                 angle={30}
@@ -97,10 +112,10 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
           </ResponsiveContainer>
         </div>
         
-        <div className='mt-1 grid grid-cols-2 gap-1 border-t border-zinc-50 pt-2 px-2'>
+        <div className='mt-1 grid grid-cols-2 gap-1 border-t border-border/40 pt-2 px-2'>
           {chartData.map((item) => (
             <div key={item.subject} className='flex items-center justify-between gap-1.5'>
-              <span className='truncate text-[9px] font-medium text-zinc-500 uppercase tracking-tight'>
+              <span className='truncate text-[11px] font-medium text-zinc-500 uppercase tracking-tight'>
                 {item.subject}
               </span>
               <div className="flex items-center gap-1">
@@ -108,7 +123,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
                   className="h-1 w-1 rounded-full" 
                   style={{ backgroundColor: getScoreColor(item.score) }} 
                 />
-                <span className='text-[10px] font-bold text-zinc-900'>
+                <span className='text-xs font-bold text-zinc-900'>
                   {item.score}%
                 </span>
               </div>
