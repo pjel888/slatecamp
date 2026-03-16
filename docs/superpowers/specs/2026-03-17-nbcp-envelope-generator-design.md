@@ -29,10 +29,13 @@ An interactive 3D simulator that lets architecture students manipulate zoning cl
 
 ```
 src/app/dashboard/3d-lab/
-├── _constants/
+├── _constants/                  # NEW directory
 │   └── nbcp.ts                  # All PD 1096 lookup tables (NEW)
-├── _utils/
+├── _utils/                      # NEW directory
 │   └── nbcpCalculator.ts        # Pure fn: calculateEnvelope(inputs) → computed (NEW)
+├── _hooks/
+│   ├── useInvalidateOnChange.ts # Existing — UNCHANGED (wired to labStore)
+│   └── useNBCPInvalidateOnChange.ts  # NEW — mirrors above but wired to nbcpStore
 ├── _stores/
 │   ├── labStore.ts              # Existing — UNCHANGED
 │   └── nbcpStore.ts             # Thin Zustand store for NBCP inputs + R3F bridge (NEW)
@@ -46,6 +49,8 @@ src/app/dashboard/3d-lab/
 ```
 
 **Integration touches (minimal, non-breaking):**
+- `_constants/` — **new directory** (does not exist yet); create `src/app/dashboard/3d-lab/_constants/`
+- `_utils/` — **new directory** (does not exist yet); create `src/app/dashboard/3d-lab/_utils/`
 - `LabViewport.tsx`: add `'nbcp-envelope'` to `PARAMETRIC_SCENES`, add dynamic import
 - `page.tsx`: add leaf node `{ id: 'nbcp-envelope', label: 'NBCP Envelope Generator ✦', modelId: 'nbcp-envelope' }` under the existing `zoning` branch in `MOCK_TREE`
 
@@ -63,7 +68,7 @@ src/app/dashboard/3d-lab/
 | 4 | `ambf = min(ambf_setbacks, ambf_pso)` — most stringent wins | IRR Rule VIII §802–803 + Rule VII Guidelines |
 | 5 | `tosl = tla − ambf` | IRR Rule VIII §804 + Guidelines §4 |
 | 6 | `maxGFA = tla × flar` | IRR Rule VII Guidelines Table VII.G.1 |
-| 7 | `amvb = ambf × bhl_meters` | IRR Rule VII Guidelines (AMVB procedure) |
+| 7 | `amvb = ambf × bhl_meters` — valid because AMBF from Step 4 is already post-PSO | IRR Rule VII Guidelines (AMVB procedure) |
 | 8 | Crosscheck: `actualGFA` vs `maxGFA` | IRR Rule VII Guidelines (sequential DC application) |
 | 9 | Collect `Violation[]` | Programmatic — no section |
 
@@ -79,8 +84,8 @@ enum LotType { INSIDE, CORNER, THROUGH, END }
 const ZONING_TABLE: Record<ZoningClass, {
   flar: number           // mid-range value used for simulation
   bhl_storeys: number
-  pso_inside: number     // 0.0–1.0
-  pso_corner: number
+  pso_inside: number     // 0.0–1.0; also used for THROUGH lots (no corner bonus)
+  pso_corner: number     // used for CORNER lots only; END lots use pso_inside
   label: string
 }>
 
@@ -108,11 +113,12 @@ export function calculateEnvelope(inputs: NBCPInputs): NBCPComputed
 - Returns ~20 scalar values + `violations: Violation[]` + `setbacks: { front, rear, left, right }`
 
 **Lot type adjustments:**
-- **Corner**: PSO uses `pso_corner`; two perpendicular sides use RROW front setback
-- **Through**: Both front AND rear use RROW front setback (two road frontages); PSO uses `pso_inside` (no corner bonus)
-- **End**: One side (perpendicular to road end) uses RROW front setback; opposite uses standard side setback
+- **Corner**: PSO uses `pso_corner`; two perpendicular sides (front + one side) use RROW front setback
+- **Through**: Both front AND rear use RROW front setback (two road frontages); PSO uses `pso_inside` (Through lots classified differently under Rule VIII — no corner bonus despite two road frontages)
+- **End**: Canonical orientation — road runs along the depth axis; the road-end face = right side of lot. Setbacks: front (RROW front setback), rear (standard rear setback), left (standard side setback), right (RROW front setback — secondary front, functions as front yard per IRR Rule VIII). PSO uses `pso_inside`.
 
 **FLAR–BHL interaction:** When `maxGFA < ambf × bhl_storeys`, effective storey count is reduced to `floor(maxGFA / ambf)`. Telemetry shows `"FLAR limits to N storeys"` — teaches students that FLAR and BHL are competing constraints.
+- **Zero-storey guard:** If `floor(maxGFA / ambf) < 1` (i.e., `maxGFA < ambf`), clamp effective storeys to 1 and add violation: `"FLAR too restrictive: max GFA smaller than single-floor footprint"`. A zero-height building is not renderable.
 
 ### `_stores/nbcpStore.ts`
 
@@ -121,6 +127,8 @@ Thin Zustand store:
 - Derived `computed: NBCPComputed` via `calculateEnvelope()` — recomputed on every input change
 - `invalidateFn` R3F bridge (same pattern as `labStore.ts`)
 - Firewall inputs sanitized before calculation — disallowed sides forced to `false`
+
+**R3F invalidate bridge:** A new hook `_hooks/useNBCPInvalidateOnChange.ts` is created — mirrors `useInvalidateOnChange.ts` exactly but imports `useNBCPStore` instead of `useLabStore`. The existing hook is NOT modified. `NBCPScene.tsx` calls this hook inside the Canvas so the NBCP store's `invalidateFn` is registered independently of the FAR Calculator.
 
 ---
 
@@ -201,13 +209,20 @@ Numbers: `font-mono tabular-nums`
 
 ### Lerp Animation
 
+`frameloop="demand"` means `useFrame` only fires when `invalidate()` is called — a single call produces one frame, not continuous animation. To drive a multi-frame lerp under demand mode, `useFrame` must call `invalidate()` itself at the end of each frame while the lerp is still in progress:
+
 ```ts
+const { invalidate } = useThree()
+
 useFrame(() => {
-  const { buildableWidth, buildableDepth, bhl_meters } = useNBCPStore.getState().computed
-  // lerp ref.current dimensions toward target
-  // call invalidate() while lerp is in progress
+  const target = useNBCPStore.getState().computed
+  // lerp ref.current scale toward target values
+  const settled = lerpRefs(ref, target, 0.12)  // 0.12 = lerp factor (~400ms to settle)
+  if (!settled) invalidate()  // schedule next frame until animation completes
 })
 ```
+
+This self-scheduling pattern produces smooth animation under `frameloop="demand"` without converting to `frameloop="always"`. The lerp stops calling `invalidate()` once dimensions are within 0.001 of target (settled), returning the canvas to idle.
 
 ### 3D-Anchored Labels (Spatial Contiguity via `<Html distanceFactor={clamp(lotArea)}>`)
 
@@ -234,8 +249,9 @@ useFrame(() => {
 | Firewall on disallowed side | Sanitized to `false` before calculation |
 | RROW BHL < zoning BHL | `bhl_source: 'rrow'`; amber building; `BHL Source: RROW-limited` in telemetry |
 | FLAR limits storeys | Effective storey count = `floor(maxGFA / ambf)`; telemetry: `"FLAR limits to N storeys"` |
+| FLAR produces zero storeys | `maxGFA < ambf`: clamp to 1 storey; violation: `"FLAR too restrictive: max GFA smaller than single-floor footprint"` |
 | Through lot | Front + rear both use RROW front setback; PSO uses `pso_inside` |
-| End lot | One perpendicular side uses RROW front setback; opposite uses standard side setback |
+| End lot | Front + right use RROW front setback (secondary front); rear + left use standard setbacks; PSO uses `pso_inside` |
 | Very large lots (>10,000 sqm) | Camera `maxDistance` auto-scales; `distanceFactor` clamped to `[6, 12]` |
 
 ---
@@ -255,10 +271,13 @@ useFrame(() => {
 ## Success Criteria
 
 - Every NBCP constant cites its exact IRR Rule/Section/Table
-- `calculateEnvelope()` passes hand-calculated verification for: R-3 inside lot 4000sqm RROW=15m; R-1 corner lot 300sqm RROW=8m; R-2 with firewall on one side
+- `calculateEnvelope()` passes hand-calculated verification for:
+  - R-3 inside lot, `lotWidth=50m lotDepth=80m` (4000sqm), RROW=15m, no firewalls
+  - R-1 corner lot, `lotWidth=15m lotDepth=20m` (300sqm), RROW=8m
+  - R-2 Max inside lot with firewall on rear + left sides, RROW=10m
 - All 4 lot types produce correct setback modifications
 - All violation types trigger with correct IRR citations at the spatial point of violation
-- Lerp transitions run smoothly at 60fps desktop
-- Mobile: panels collapse to bottom drawers, canvas takes full screen
-- `distanceFactor` labels readable at both 5m and 200m lot widths
-- RROW=8m correctly maps to BHL=5 storeys (>= lower bound lookup)
+- Lerp self-scheduling pattern: canvas idles between user interactions; no continuous rendering
+- Mobile: **deferred to v2** — desktop-only for initial release; responsive panels (overflow-y-auto) handle tablet landscape
+- `distanceFactor` labels readable at both 5m and 200m lot widths (clamped [6, 12])
+- RROW=8m correctly maps to BHL=5 storeys (>= lower bound lookup verified)
