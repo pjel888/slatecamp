@@ -111,7 +111,8 @@ export function DevToolbar({
     router.refresh()
   }
 
-  const tierConfig = TIER_CONFIG[effectiveTier]
+  // Guard against DB subscription_tier values not in TIER_CONFIG (e.g. 'pro', 'enterprise')
+  const tierConfig = TIER_CONFIG[effectiveTier] ?? TIER_CONFIG.free
   const connConfig = CONN_CONFIG[connectionState]
   const ConnIcon = connConfig.icon
   const {

@@ -52,7 +52,8 @@ export function TierBadge({
   const resolvedTier: UserTier = tier === 'dev' ? 'institutional' : tier
   const isDevMode = devMode || tier === 'dev'
 
-  const config = TIER_CONFIG[resolvedTier]
+  // Guard against undefined tier or DB values not in TIER_CONFIG (e.g. subscription_tier 'pro'/'enterprise')
+  const config = TIER_CONFIG[resolvedTier] ?? TIER_CONFIG.free
   const IconComponent = config.icon as React.ComponentType<any>
   const isSm = size === 'sm'
 

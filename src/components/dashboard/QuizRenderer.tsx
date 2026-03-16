@@ -550,6 +550,8 @@ export function QuizRenderer({
             {options.map((option, idx) => {
               const isSelected = selectedAnswer === option.id
               const isCorrect = option.id === correctOptionId
+              const isStruck =
+                struckOptions[currentQuestion.question_id]?.has(option.id)
               const letter = String.fromCharCode(65 + idx)
               const showCorrect = isChecked && isCorrect
               const showWrong = isChecked && isSelected && !isCorrect
@@ -567,6 +569,7 @@ export function QuizRenderer({
                     !isChecked &&
                       isSelected &&
                       'bg-blue-600 border-blue-600 text-white shadow-md',
+                    !isChecked && isStruck && 'opacity-40 grayscale-[80%]',
                     showCorrect &&
                       'bg-emerald-50 border-emerald-500 text-emerald-900  ring-emerald-500 font-semibold',
                     showWrong &&
@@ -577,6 +580,11 @@ export function QuizRenderer({
                       'bg-white border-zinc-100 opacity-40',
                   )}
                 >
+                  {isStruck && !isChecked && (
+                    <div className='absolute inset-0 flex items-center px-4 pointer-events-none'>
+                      <div className='w-full h-[2px] bg-zinc-400/50' />
+                    </div>
+                  )}
                   <div
                     className={cn(
                       'w-6 h-6 shrink-0 rounded-sm flex items-center justify-center text-[10px] font-black border transition-colors',
@@ -596,6 +604,19 @@ export function QuizRenderer({
                   <span className='text-[13px] font-medium flex-1'>
                     {option.text}
                   </span>
+                  {!isChecked && (
+                    <span
+                      role='button'
+                      tabIndex={0}
+                      onClick={(e) => toggleStrikethrough(option.id, e)}
+                      className='p-2 rounded-sm hover:bg-zinc-100 text-zinc-300 hover:text-zinc-600 transition-colors shrink-0'
+                      aria-label={
+                        isStruck ? 'Restore option' : 'Cross out option'
+                      }
+                    >
+                      <Delete className='h-4 w-4' />
+                    </span>
+                  )}
                   {showCorrect && (
                     <Check
                       className='h-4 w-4 text-emerald-600'
