@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageSquare, StickyNote, Search, GripVertical } from 'lucide-react'
+import { MessageSquare, StickyNote, Search, GripVertical, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
 import { QuickNotePopup } from '../notes/QuickNotePopup'
@@ -32,13 +32,13 @@ const QUICK_ACTIONS = [
  * Small floating bar for quick actions (AI chat, quick notes, etc.).
  * Icons only by default; each item expands on hover to show the label.
  */
-const DEFAULT_RIGHT = 620
+const DEFAULT_RIGHT = 'center'
 const DEFAULT_BOTTOM = 32
 
 export function QuickActionsBar() {
   const [omnibarOpen, setOmnibarOpen] = useState(false)
   const [notesOpen, setNotesOpen] = useState(false)
-  const { style: floatStyle, onPointerDown: onDrag } =
+  const { style: floatStyle, onPointerDown: onDrag, resetPosition } =
     useDraggableFloatingPosition(
       'quick-actions-bar',
       DEFAULT_RIGHT,
@@ -88,18 +88,27 @@ export function QuickActionsBar() {
             ))}
           </div>
 
-          <div className='flex flex-col bg-red-500'>
+          <div className='flex flex-col border-l border-border/40'>
             <div
               role='button'
               tabIndex={0}
               onPointerDown={onDrag}
-              className='flex h-[52px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
+              className='flex h-[26px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
               aria-label='Drag to move'
             >
-              <GripVertical className='h-4 w-4' strokeWidth={2} />
+              <GripVertical className='h-3.5 w-3.5' strokeWidth={2} />
             </div>
-            {/* Add the reset location of the quick actions bar here */}
+            <button
+              type='button'
+              onClick={resetPosition}
+              className='flex h-[26px] w-8 shrink-0 items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors'
+              aria-label='Reset position'
+              title='Reset position'
+            >
+              <RotateCcw className='h-3 w-3' strokeWidth={2} />
+            </button>
           </div>
+
         </div>
       </aside>
 

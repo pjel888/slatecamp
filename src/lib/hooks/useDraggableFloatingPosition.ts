@@ -35,20 +35,22 @@ function savePosition(id: string, pos: FloatingPosition) {
 
 /**
  * Draggable floating position for dev pills. Persists to localStorage.
- * Default positions should be chosen so multiple pills don't overlap (e.g. right: 16 and right: 220).
+ * Supports 'center' as a defaultRight value.
  */
 export function useDraggableFloatingPosition(
   id: string,
-  defaultRight: number,
+  defaultRight: number | 'center',
   defaultBottom: number
 ) {
+  const numericDefaultRight = defaultRight === 'center' ? -1 : defaultRight
+
   const [position, setPosition] = useState<FloatingPosition>(() =>
-    loadPosition(id, defaultRight, defaultBottom)
+    loadPosition(id, numericDefaultRight, defaultBottom)
   )
 
   useEffect(() => {
-    setPosition(loadPosition(id, defaultRight, defaultBottom))
-  }, [id, defaultRight, defaultBottom])
+    setPosition(loadPosition(id, numericDefaultRight, defaultBottom))
+  }, [id, numericDefaultRight, defaultBottom])
 
   const didDragRef = useRef(false)
 
@@ -56,9 +58,16 @@ export function useDraggableFloatingPosition(
     (e: React.PointerEvent) => {
       if (e.button !== 0) return
       didDragRef.current = false
+      
+      // Calculate current pixels if centered
+      let startRight = position.right
+      if (startRight === -1) {
+        const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+        startRight = window.innerWidth - rect.right
+      }
+
       const startX = e.clientX
       const startY = e.clientY
-      const startRight = position.right
       const startBottom = position.bottom
       let didMove = false
       ;(e.target as HTMLElement).setPointerCapture?.(e.pointerId)
@@ -92,12 +101,23 @@ export function useDraggableFloatingPosition(
     [id, position.right, position.bottom]
   )
 
+  const resetPosition = useCallback(() => {
+    const defaultPos = { right: numericDefaultRight, bottom: defaultBottom }
+    setPosition(defaultPos)
+    try {
+      localStorage.removeItem(STORAGE_PREFIX + id)
+    } catch {
+      // ignore
+    }
+  }, [id, numericDefaultRight, defaultBottom])
+
   const style: React.CSSProperties = {
     position: 'fixed',
-    right: position.right,
+    right: position.right === -1 ? '50%' : position.right,
     bottom: position.bottom,
+    transform: position.right === -1 ? 'translateX(50%)' : 'none',
     zIndex: 9999,
   }
 
-  return { style, onPointerDown, didDragRef }
+  return { style, onPointerDown, didDragRef, resetPosition }
 }
