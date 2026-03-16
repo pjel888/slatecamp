@@ -64,7 +64,7 @@ export function WikiSidebar({
 
   if (!disciplineId) {
     return (
-      <aside className='w-full h-full bg-background overflow-y-auto'>
+      <aside className='wiki-sidebar-scroll w-full h-full bg-background overflow-y-auto'>
         <div className='p-6 text-center space-y-4 h-full flex flex-col items-center justify-center'>
           <div className='bg-zinc-100 p-3 rounded-2xl inline-block'>
             <Book className='h-6 w-6 text-zinc-400' />
@@ -165,7 +165,12 @@ export function WikiSidebar({
         )}
 
         {isExpanded && isCategory && (
-          <div className='ml-3.5 pl-3 border-l border-zinc-200/60 mt-0.5 mb-1 space-y-0.5 min-w-0'>
+          <div
+            className={cn(
+              'ml-3.5 pl-3 border-l mt-0.5 mb-1 space-y-0.5 min-w-0',
+              isActive ? 'border-blue-200' : 'border-zinc-200/60',
+            )}
+          >
             {/* Render sub-nodes */}
             {children.map((child) => renderNode(child, true))}
 
@@ -200,7 +205,7 @@ export function WikiSidebar({
   }
 
   return (
-    <aside className='w-full h-full bg-background overflow-y-auto'>
+    <aside className='wiki-sidebar-scroll w-full h-full bg-background overflow-y-auto'>
       <div className='p-2'>
         <div className='flex items-center gap-2 mb-6 p-2'>
           <div className='bg-blue-600 rounded-sm p-1'>
