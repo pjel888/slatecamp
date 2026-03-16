@@ -15,9 +15,37 @@ export const metadata = { title: "3D Lab" };
 
 const MOCK_TREE: TreeNode[] = [
   {
+    id: "practice",
+    label: "Architectural Practice",
+    children: [
+      {
+        id: "zoning",
+        label: "Zoning & Building Codes",
+        children: [
+          {
+            id: "far-calculator",
+            label: "FAR & BHL Calculator ✦",
+            modelId: "far-calculator",
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "history",
     label: "History of Architecture",
     children: [
+      {
+        id: "classical-orders",
+        label: "Classical Orders",
+        children: [
+          {
+            id: "classical-orders-scene",
+            label: "Column Anatomy Inspector ✦",
+            modelId: "classical-orders",
+          },
+        ],
+      },
       {
         id: "greek",
         label: "Greek",
@@ -80,7 +108,7 @@ function getDefaultModelId(tree: TreeNode[]): ModelId {
       if (child) return child;
     }
   }
-  return "greek-parthenon";
+  return "far-calculator";
 }
 
 type PageSearchParams = { model?: string };

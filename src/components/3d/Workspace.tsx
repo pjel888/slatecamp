@@ -13,6 +13,7 @@ import { X, Info, Layers, Lock, Loader2, ChevronRight, Box } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
+import { LabViewport } from '@/app/dashboard/3d-lab/_components/LabViewport'
 
 const NBCPEnvelope = dynamic(
   () => import('@/app/dashboard/3d-lab/_scenes/NBCPEnvelope'),
@@ -356,7 +357,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
         </nav>
       </aside>
 
-      {/* Main Viewport */}
+      {/* Main Viewport — routes to parametric/anatomy/gltf based on modelId */}
       <main className="flex-1 bg-zinc-50 p-6 flex flex-col min-w-0 overflow-hidden">
         <div className="flex-1 min-h-0">
           {PARAMETRIC_SCENES.has(selectedModelId) ? (
