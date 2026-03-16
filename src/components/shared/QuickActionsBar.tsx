@@ -88,14 +88,17 @@ export function QuickActionsBar() {
             ))}
           </div>
 
-          <div
-            role='button'
-            tabIndex={0}
-            onPointerDown={onDrag}
-            className='flex h-[52px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
-            aria-label='Drag to move'
-          >
-            <GripVertical className='h-4 w-4' strokeWidth={2} />
+          <div className='flex flex-col bg-red-500'>
+            <div
+              role='button'
+              tabIndex={0}
+              onPointerDown={onDrag}
+              className='flex h-[52px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none'
+              aria-label='Drag to move'
+            >
+              <GripVertical className='h-4 w-4' strokeWidth={2} />
+            </div>
+            {/* Add the reset location of the quick actions bar here */}
           </div>
         </div>
       </aside>
