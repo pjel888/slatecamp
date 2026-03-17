@@ -119,7 +119,7 @@ export function ConfirmSubmitSheet({
                     ref={confirmRef}
                     onClick={onConfirm}
                     disabled={isSaving}
-                    className="w-full h-10 rounded-md bg-zinc-900 text-white font-semibold text-sm hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-10 rounded-md bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSaving ? 'Submitting...' : `Submit — ${answeredCount} of ${totalCount} Answered`}
                   </button>

@@ -166,7 +166,7 @@ export function CustomSessionBuilder({
           <Button
             onClick={handleStart}
             disabled={selectedSubjects.length === 0}
-            className='w-full h-12 text-base font-bold bg-blue-500 hover:bg-zinc-800 text-white rounded-md'
+            className='w-full h-12 text-base font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-md'
           >
             Generate Session
           </Button>

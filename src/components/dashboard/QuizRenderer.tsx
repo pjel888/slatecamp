@@ -130,6 +130,9 @@ export function QuizRenderer({
   // answer change tracking for telemetry
   const answerChangesRef = useRef<Record<string, number>>({})
 
+  // Ref for programmatic scroll reset on question change (split-screen left column)
+  const stemScrollRef = useRef<HTMLDivElement>(null)
+
   // ── Timer ─────────────────────────────────────────────────────────────────
   const [countdown, setCountdown] = useState<number | null>(() => {
     if (!strictMode) return null
@@ -191,6 +194,11 @@ export function QuizRenderer({
     })
     return () => clearAnchor()
   }, [currentQuestion?.question_id, session.session_id, setAnchor, clearAnchor])
+
+  // ── Scroll left column to top on question change ──────────────────────────
+  useEffect(() => {
+    stemScrollRef.current?.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
+  }, [currentIndex])
 
   // ── Online/offline ────────────────────────────────────────────────────────
   useEffect(() => {
@@ -477,6 +485,123 @@ export function QuizRenderer({
     return 'faded'
   }
 
+  // ── Render helpers (shared between desktop right column & mobile inline) ──
+
+  const renderOptions = () => (
+    <div className="space-y-2.5" role="group" aria-label="Answer options">
+      {options.map((option, idx) => (
+        <OptionButton
+          key={option.id}
+          letter={String.fromCharCode(65 + idx)}
+          text={option.text}
+          state={getOptionState(option)}
+          isChecked={isChecked}
+          onSelect={() => handleChoiceSelect(option.id)}
+          onStrike={(e) => toggleStrikethrough(option.id, e)}
+        />
+      ))}
+    </div>
+  )
+
+  const renderActionButtons = () => (
+    <div className={cn(
+      'flex items-center gap-3',
+      (isChecked && !isRationaleVisible) ? 'justify-between' : 'justify-end'
+    )}>
+      {isChecked && !isRationaleVisible && (
+        <button
+          onClick={() => setIsRationaleVisible(true)}
+          className="h-11 px-5 rounded-sm border border-blue-200 text-blue-600 hover:bg-blue-50 text-[10px] font-black uppercase tracking-widest transition-colors"
+        >
+          Show Rationale
+        </button>
+      )}
+
+      {mode !== 'chill' && !isChecked ? (
+        <button
+          onClick={handleCheckAnswer}
+          disabled={!selectedAnswer || isSaving}
+          className={cn(
+            'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
+            selectedAnswer && !isSaving
+              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200'
+              : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
+          )}
+        >
+          {isSaving ? 'Saving…' : strictMode ? 'Confirm & Next' : 'Check Answer'}
+        </button>
+      ) : (
+        <div className="relative">
+          <button
+            onClick={currentIndex === questions.length - 1
+              ? () => setIsSubmitSheetOpen(true)
+              : handleNext
+            }
+            className="h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200"
+          >
+            {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
+          </button>
+          {dwellTimeRemaining > 0 && (
+            <div
+              className="absolute -inset-1 rounded-sm pointer-events-none"
+              aria-hidden
+              title={`${dwellTimeRemaining}s — take a moment to review`}
+            >
+              <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
+                <rect
+                  x="1" y="1" width="98" height="98" rx="3"
+                  stroke="currentColor" strokeWidth="2"
+                  className="text-blue-200"
+                  strokeDasharray="392" strokeDashoffset="0"
+                />
+              </svg>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
+
+  const renderDrawers = () => (
+    <>
+      <RationaleDrawer
+        rationale={currentQuestion.rationale}
+        isVisible={isRationaleVisible}
+        isCorrect={selectedAnswer === correctOptionId}
+        onClose={() => setIsRationaleVisible(false)}
+        onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
+        onAddNote={() => { /* note drawer — future */ }}
+      />
+      <AITutorDrawer
+        question={currentQuestion}
+        selectedOptionId={selectedAnswer}
+        options={options}
+        isVisible={isAIOpen}
+        onClose={() => setIsAIOpen(false)}
+      />
+    </>
+  )
+
+  const renderFooterNav = () => (
+    <FooterNavigator
+      dots={dots}
+      currentIndex={currentIndex}
+      canGoBack={currentIndex > 0}
+      canGoForward={
+        mode === 'chill'
+          ? true
+          : isChecked
+      }
+      strictMode={strictMode}
+      onPrev={handleBack}
+      onNext={currentIndex === questions.length - 1
+        ? () => setIsSubmitSheetOpen(true)
+        : handleNext
+      }
+      onJump={handleJump}
+    />
+  )
+
   // ── Render ────────────────────────────────────────────────────────────────
 
   if (isCompleted) {
@@ -541,137 +666,55 @@ export function QuizRenderer({
         </div>
       )}
 
-      {/* Main scrollable body */}
-      <main className="flex-1 overflow-y-auto">
-        <div className="max-w-[740px] mx-auto px-5 py-8 space-y-6">
-          {/* Question stem */}
-          <QuestionStem
-            text={currentQuestion.text}
-            imageUrl={currentQuestion.prompt_image_url}
-          />
+      {/* ═══ SPLIT-SCREEN CONTENT AREA ═══
+           Desktop (≥1024px): 2-column grid — stem left, options right
+           Mobile  (<1024px): single column — stem + options scroll, nav fixed bottom
+      */}
+      <div className="flex-1 min-h-0 flex flex-col lg:grid lg:grid-cols-2">
 
-          {/* Options */}
-          <div className="space-y-2.5" role="group" aria-label="Answer options">
-            {options.map((option, idx) => (
-              <OptionButton
-                key={option.id}
-                letter={String.fromCharCode(65 + idx)}
-                text={option.text}
-                state={getOptionState(option)}
-                isChecked={isChecked}
-                onSelect={() => handleChoiceSelect(option.id)}
-                onStrike={(e) => toggleStrikethrough(option.id, e)}
+        {/* ─── LEFT COLUMN: Scrollable stem ─── */}
+        <div
+          ref={stemScrollRef}
+          className="flex-1 lg:flex-none overflow-y-auto lg:border-r border-zinc-200"
+        >
+          <div className="max-w-[640px] mx-auto px-5 py-6 space-y-6">
+            {/* Question stem — subtle fade on question change */}
+            <div key={currentIndex} className="animate-in fade-in duration-100">
+              <QuestionStem
+                text={currentQuestion.text}
+                imageUrl={currentQuestion.prompt_image_url}
               />
-            ))}
-          </div>
+            </div>
 
-          {/* Primary action */}
-          <div className={cn(
-            'flex items-center gap-3',
-            (isChecked && !isRationaleVisible) ? 'justify-between' : 'justify-end'
-          )}>
-            {isChecked && !isRationaleVisible && (
-              <button
-                onClick={() => setIsRationaleVisible(true)}
-                className="h-11 px-5 rounded-sm border border-blue-200 text-blue-600 hover:bg-blue-50 text-[10px] font-black uppercase tracking-widest transition-colors"
-              >
-                Show Rationale
-              </button>
-            )}
-
-            {mode !== 'chill' && !isChecked ? (
-              // Check answer CTA
-              <button
-                onClick={handleCheckAnswer}
-                disabled={!selectedAnswer || isSaving}
-                className={cn(
-                  'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
-                  selectedAnswer && !isSaving
-                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200'
-                    : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
-                )}
-              >
-                {isSaving ? 'Saving…' : strictMode ? 'Confirm & Next' : 'Check Answer'}
-              </button>
-            ) : (
-              // Next CTA with dwell ring
-              <div className="relative">
-                <button
-                  onClick={currentIndex === questions.length - 1
-                    ? () => setIsSubmitSheetOpen(true)
-                    : handleNext
-                  }
-                  className={cn(
-                    'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
-                    'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200',
-                    mode === 'chill' && 'bg-blue-600 text-white',
-                  )}
-                >
-                  {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
-                </button>
-                {/* Dwell ring — decorative suggestion, not a lock */}
-                {dwellTimeRemaining > 0 && (
-                  <div
-                    className="absolute -inset-1 rounded-sm pointer-events-none"
-                    aria-hidden
-                    title={`${dwellTimeRemaining}s — take a moment to review`}
-                  >
-                    <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
-                      <rect
-                        x="1" y="1" width="98" height="98"
-                        rx="3"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        className="text-blue-200"
-                        strokeDasharray="392"
-                        strokeDashoffset="0"
-                      />
-                    </svg>
-                  </div>
-                )}
-              </div>
-            )}
+            {/* Mobile only: options, actions, drawers inline below stem */}
+            <div className="lg:hidden space-y-6">
+              {renderOptions()}
+              {renderActionButtons()}
+              {renderDrawers()}
+            </div>
           </div>
         </div>
-      </main>
 
-      {/* Rationale drawer */}
-      <RationaleDrawer
-        rationale={currentQuestion.rationale}
-        isVisible={isRationaleVisible}
-        isCorrect={selectedAnswer === correctOptionId}
-        onClose={() => setIsRationaleVisible(false)}
-        onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
-        onAddNote={() => { /* note drawer — future */ }}
-      />
+        {/* ─── RIGHT COLUMN: Stationary options + drawers + nav (desktop) ─── */}
+        <div className="hidden lg:flex flex-col">
+          {/* Options + action + drawers — scrollable if needed */}
+          <div className="flex-1 overflow-y-auto px-6 pt-6 pb-3 space-y-6">
+            {renderOptions()}
+            {renderActionButtons()}
+            {renderDrawers()}
+          </div>
 
-      {/* AI Tutor drawer */}
-      <AITutorDrawer
-        question={currentQuestion}
-        selectedOptionId={selectedAnswer}
-        options={options}
-        isVisible={isAIOpen}
-        onClose={() => setIsAIOpen(false)}
-      />
+          {/* Question navigator — docked at bottom of right column */}
+          <div className="shrink-0">
+            {renderFooterNav()}
+          </div>
+        </div>
+      </div>
 
-      {/* Footer navigator */}
-      <FooterNavigator
-        dots={dots}
-        currentIndex={currentIndex}
-        canGoBack={currentIndex > 0}
-        canGoForward={
-          mode === 'chill'
-            ? true
-            : isChecked  // strict mode: footer Next disabled — must use primary CTA
-        }
-        strictMode={strictMode}
-        onPrev={handleBack}
-        onNext={currentIndex === questions.length - 1
-          ? () => setIsSubmitSheetOpen(true)
-          : handleNext
-        }
-        onJump={handleJump}
-      />
+      {/* Mobile only: fixed bottom navigation bar */}
+      <div className="lg:hidden">
+        {renderFooterNav()}
+      </div>
 
       {/* Submit confirmation sheet */}
       <ConfirmSubmitSheet

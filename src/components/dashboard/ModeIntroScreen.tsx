@@ -160,7 +160,7 @@ export function ModeIntroScreen({
         <div className='pt-8 flex flex-col gap-4'>
           <Button
             onClick={onStart}
-            className='w-full h-12 bg-zinc-900 text-white rounded-md font-semibold text-sm hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2'
+            className='w-full h-12 bg-blue-600 text-white rounded-md font-semibold text-sm hover:bg-blue-700 transition-colors flex items-center justify-center gap-2'
           >
             Start Session
             <ChevronRight className='h-5 w-5' />

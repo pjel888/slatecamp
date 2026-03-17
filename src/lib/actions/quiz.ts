@@ -227,7 +227,7 @@ async function recordMastery(
         .select('snapshot_id')
         .eq('user_id', user_id)
         .order('computed_at', { ascending: false })
-        .offset(90) // skip the 90 we want to keep — only return the excess
+        .range(90, 999) // skip the 90 we want to keep — only return the excess
 
       if (overflow && overflow.length > 0) {
         const idsToDelete = overflow.map((s: any) => s.snapshot_id)

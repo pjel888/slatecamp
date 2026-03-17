@@ -234,7 +234,7 @@ export function SubjectDrillSelector({
                   }
                 }}
                 disabled={!selectedNodeId}
-                className='w-full h-10 text-sm font-semibold bg-blue-600 hover:bg-zinc-900 text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
+                className='w-full h-10 text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
               >
                 Launch Drill
                 <Zap className="h-4 w-4 fill-current group-hover:scale-110 transition-transform" />
