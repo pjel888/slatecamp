@@ -40,8 +40,8 @@ export function ModeIntroScreen({
     camp: {
       title: isSubjectMode ? 'Subject Mode' : 'Camp Mode',
       icon: isSubjectMode ? Target : Brain,
-      color: isSubjectMode ? 'text-blue-600' : 'text-teal-600',
-      bgColor: isSubjectMode ? 'bg-blue-50' : 'bg-teal-50',
+      color: isSubjectMode ? 'text-blue-600' : 'text-blue-600',
+      bgColor: isSubjectMode ? 'bg-blue-50' : 'bg-blue-50',
       description: isSubjectMode 
         ? "Targeted drilling for a specific syllabus area. You'll get instant feedback and SME rationales."
         : "Focus on learning and building foundations. You'll get instant feedback and detailed rationales for every answer.",

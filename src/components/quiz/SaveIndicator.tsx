@@ -32,7 +32,7 @@ export function SaveIndicator({ status }: SaveIndicatorProps) {
       className={cn(
         'flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest transition-opacity duration-300',
         status === 'saving' && 'text-zinc-400',
-        status === 'saved' && 'text-emerald-600',
+        status === 'saved' && 'text-green-600',
         status === 'error' && 'text-red-500',
         status === 'offline' && 'text-amber-600',
       )}

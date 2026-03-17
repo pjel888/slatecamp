@@ -64,7 +64,7 @@ export function OptionButton({
 
         // Post-check: correct answer
         state === 'correct' && [
-          'bg-emerald-50 border-emerald-400 text-emerald-900',
+          'bg-green-50 border-green-400 text-green-900',
           'cursor-default',
         ],
 
@@ -99,7 +99,7 @@ export function OptionButton({
           state === 'default'  && 'bg-zinc-50 border-zinc-200 text-zinc-400',
           state === 'selected' && 'bg-white/20 border-white/30 text-white',
           state === 'struck'   && 'bg-zinc-50 border-zinc-200 text-zinc-300',
-          state === 'correct'  && 'bg-emerald-500 border-emerald-400 text-white',
+          state === 'correct'  && 'bg-green-500 border-green-400 text-white',
           state === 'wrong'    && 'bg-red-500 border-red-400 text-white',
           state === 'faded'    && 'bg-zinc-50 border-zinc-100 text-zinc-200',
         )}
@@ -142,7 +142,7 @@ export function OptionButton({
       )}
 
       {state === 'correct' && (
-        <Check className="shrink-0 h-4 w-4 text-emerald-600" strokeWidth={3} aria-hidden />
+        <Check className="shrink-0 h-4 w-4 text-green-600" strokeWidth={3} aria-hidden />
       )}
       {state === 'wrong' && (
         <XCircle className="shrink-0 h-4 w-4 text-red-500" strokeWidth={3} aria-hidden />

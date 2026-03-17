@@ -2,12 +2,11 @@
 
 import React, { useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { 
-  Trophy, 
-  Target, 
-  Clock, 
-  ArrowRight, 
-  RotateCcw, 
+import {
+  Target,
+  Clock,
+  ArrowRight,
+  RotateCcw,
   LayoutDashboard,
   CheckCircle2,
   XCircle,
@@ -59,7 +58,7 @@ export function ResultsSummary({
       'Needs Work'
 
     const masteryColor =
-      score >= 75 ? 'text-emerald-600' :
+      score >= 75 ? 'text-green-600' :
       score >= 50 ? 'text-amber-600' :
       'text-red-600'
 
@@ -73,11 +72,11 @@ export function ResultsSummary({
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12"
       >
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-sm bg-blue-50 text-blue-600 mb-6 border border-blue-100">
-          <Trophy className="h-10 w-10" />
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-sm bg-blue-50 text-blue-600 mb-6 border border-blue-100">
+          <Target className="h-8 w-8" />
         </div>
         <h1 className="text-xl font-semibold text-zinc-900 tracking-tight">Session Complete</h1>
-        <p className="text-zinc-500 mt-2">Here's how you performed in your {testMode} session.</p>
+        <p className="text-zinc-500 mt-2">Here is how you performed in your {testMode} session.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -86,7 +85,7 @@ export function ResultsSummary({
             <Target className="h-4 w-4" />
             <span className="text-[10px] font-black uppercase tracking-widest">Accuracy</span>
           </div>
-          <div className="text-3xl font-black text-zinc-900">{stats.score}%</div>
+          <div className="text-xl font-black text-zinc-900">{stats.score}%</div>
           <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             {stats.correct} / {stats.total} Correct
           </div>
@@ -108,7 +107,7 @@ export function ResultsSummary({
             <BarChart3 className="h-4 w-4" />
             <span className="text-[10px] font-black uppercase tracking-widest">Readiness</span>
           </div>
-          <div className="text-xl font-black text-emerald-600 uppercase">Updated</div>
+          <div className="text-xl font-black text-green-600 uppercase">Updated</div>
           <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             EMA Recalculated
           </div>
@@ -125,7 +124,7 @@ export function ResultsSummary({
                 <div className="flex items-center gap-4">
                   <div className={cn(
                     "w-10 h-10 rounded-sm flex items-center justify-center border",
-                    percentage >= 75 ? "bg-emerald-50 border-emerald-100 text-emerald-600" :
+                    percentage >= 75 ? "bg-green-50 border-green-100 text-green-600" :
                     percentage >= 50 ? "bg-amber-50 border-amber-100 text-amber-600" :
                     "bg-red-50 border-red-100 text-red-600"
                   )}>
@@ -141,7 +140,7 @@ export function ResultsSummary({
                     <div 
                       className={cn(
                         "h-full",
-                        percentage >= 75 ? "bg-emerald-500" :
+                        percentage >= 75 ? "bg-green-500" :
                         percentage >= 50 ? "bg-amber-500" :
                         "bg-red-500"
                       )} 

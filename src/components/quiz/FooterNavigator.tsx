@@ -40,10 +40,10 @@ export function FooterNavigator({
           disabled={!canGoBack}
           aria-label="Previous question"
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-sm text-[10px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-md text-[10px] font-black uppercase tracking-widest transition-colors',
             canGoBack
-              ? 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100'
-              : 'text-zinc-200 cursor-not-allowed',
+              ? 'border border-gray-200 text-gray-600 hover:bg-gray-50'
+              : 'border border-gray-100 text-zinc-200 cursor-not-allowed',
           )}
         >
           <ChevronLeft className="h-4 w-4" aria-hidden />
@@ -89,10 +89,10 @@ export function FooterNavigator({
           disabled={!canGoForward}
           aria-label="Next question"
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-sm text-[10px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-md text-[10px] font-black uppercase tracking-widest transition-colors',
             canGoForward
-              ? 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100'
-              : 'text-zinc-200 cursor-not-allowed',
+              ? 'bg-blue-600 hover:bg-blue-700 text-white'
+              : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',
           )}
         >
           <span className="hidden sm:inline">Next</span>

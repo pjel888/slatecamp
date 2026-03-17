@@ -90,10 +90,10 @@ export function ConfirmSubmitSheet({
               <div className="px-6 py-5 space-y-5">
                 {/* Stats grid */}
                 <div className="grid grid-cols-3 gap-2">
-                  <div className="flex flex-col items-center p-3 rounded-md bg-emerald-50 border border-emerald-100">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500 mb-1.5" aria-hidden />
-                    <span className="text-xl font-black text-emerald-700 leading-none">{answeredCount}</span>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-emerald-600/70 mt-1">Answered</span>
+                  <div className="flex flex-col items-center p-3 rounded-md bg-green-50 border border-green-100">
+                    <CheckCircle2 className="h-4 w-4 text-green-500 mb-1.5" aria-hidden />
+                    <span className="text-xl font-black text-green-700 leading-none">{answeredCount}</span>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-green-600/70 mt-1">Answered</span>
                   </div>
                   <div className="flex flex-col items-center p-3 rounded-md bg-zinc-50 border border-zinc-100">
                     <Circle className="h-4 w-4 text-zinc-300 mb-1.5" aria-hidden />

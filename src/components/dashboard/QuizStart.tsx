@@ -21,7 +21,7 @@ export function QuizStart({ hasExistingSession, onStart, onResume, disciplineNam
           <div className="mx-auto bg-blue-50 w-14 h-14 rounded-md flex items-center justify-center mb-4">
             <Brain className="h-8 w-8 text-blue-600" />
           </div>
-          <CardTitle className="text-2xl font-bold text-zinc-900">Camp Mode</CardTitle>
+          <CardTitle className="text-xl font-bold text-zinc-900">Camp Mode</CardTitle>
           <CardDescription className="text-zinc-500 mt-2">
             Low-stakes diagnostic for {disciplineName}
           </CardDescription>
@@ -66,7 +66,7 @@ export function QuizStart({ hasExistingSession, onStart, onResume, disciplineNam
         <CardFooter className="flex flex-col gap-3 p-8 pt-4">
           {hasExistingSession ? (
             <>
-              <Button onClick={onResume} className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+              <Button onClick={onResume} className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
                 <Play className="mr-2 h-5 w-5 fill-current" /> Resume Session
               </Button>
               <Button onClick={onStart} variant="ghost" className="w-full text-zinc-500 hover:text-zinc-900">
@@ -74,7 +74,7 @@ export function QuizStart({ hasExistingSession, onStart, onResume, disciplineNam
               </Button>
             </>
           ) : (
-            <Button onClick={onStart} className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-md">
+            <Button onClick={onStart} className="w-full h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-sm">
               <Play className="mr-2 h-5 w-5 fill-current" /> Start Camp Session
             </Button>
           )}

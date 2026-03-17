@@ -524,7 +524,7 @@ export function QuizRenderer({
           className={cn(
             'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
             selectedAnswer && !isSaving
-              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200'
+              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm'
               : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
           )}
         >
@@ -537,7 +537,7 @@ export function QuizRenderer({
               ? () => setIsSubmitSheetOpen(true)
               : handleNext
             }
-            className="h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200"
+            className="h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-blue-600 text-white hover:bg-blue-700 shadow-sm"
           >
             {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
           </button>

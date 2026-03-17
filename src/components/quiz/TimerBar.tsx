@@ -42,7 +42,7 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
       <span
         className={cn(
           'text-[9px] font-black uppercase tracking-wider hidden sm:block',
-          isAheadOfPace ? 'text-emerald-600' : 'text-zinc-400',
+          isAheadOfPace ? 'text-green-600' : 'text-zinc-400',
         )}
       >
         {isAheadOfPace ? 'On pace' : 'Pace'}

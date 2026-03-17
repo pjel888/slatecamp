@@ -16,13 +16,13 @@ const MODE_LABELS: Record<TestMode, string> = {
 }
 
 const MODE_STYLES: Record<TestMode, string> = {
-  camp: 'bg-teal-50 text-teal-700 border-teal-200',
-  chill: 'bg-blue-50 text-blue-700 border-blue-200',
+  camp: 'bg-blue-50 text-blue-700 border-blue-200',
+  chill: 'bg-zinc-100 text-zinc-700 border-zinc-200',
   storm: 'bg-zinc-900 text-white border-zinc-900',
   proof_sim: 'bg-zinc-900 text-white border-zinc-900',
   blindspot: 'bg-amber-50 text-amber-700 border-amber-200',
-  custom: 'bg-purple-50 text-purple-700 border-purple-200',
-  endurance: 'bg-orange-50 text-orange-700 border-orange-200',
+  custom: 'bg-zinc-100 text-zinc-700 border-zinc-200',
+  endurance: 'bg-zinc-100 text-zinc-700 border-zinc-200',
 }
 
 interface QuizHeaderProps {
@@ -68,7 +68,7 @@ export function QuizHeader({
             {label}
           </span>
           {isTargeted && (
-            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[9px] font-black uppercase tracking-widest bg-purple-50 text-purple-700 border-purple-200">
+            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[9px] font-black uppercase tracking-widest bg-blue-50 text-blue-700 border-blue-200">
               Targeted
             </span>
           )}
@@ -113,7 +113,7 @@ export function QuizHeader({
           <button
             onClick={onExit}
             aria-label="Exit quiz session"
-            className="h-8 w-8 flex items-center justify-center rounded-sm text-zinc-400 hover:text-red-600 hover:bg-red-50 transition-colors"
+            className="h-8 w-8 flex items-center justify-center rounded-sm text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
           >
             <X className="h-4 w-4" />
           </button>
@@ -125,7 +125,7 @@ export function QuizHeader({
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',
-            isStrict ? 'bg-zinc-700' : 'bg-blue-500',
+            isStrict ? 'bg-zinc-700' : 'bg-blue-600',
           )}
           style={{ width: `${progress}%` }}
         />
