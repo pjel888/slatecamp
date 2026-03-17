@@ -43,7 +43,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
                   'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold uppercase',
                   trend === 'up' && 'bg-green-50 text-green-700',
                   trend === 'down' && 'bg-red-50 text-red-700',
-                  trend === 'flat' && 'bg-[#F0F5FA]',
+                  trend === 'flat' && 'bg-[#EEF2FC]',
                 )}
                 style={trend === 'flat' ? { color: '#4A5568' } : undefined}
               >
@@ -75,9 +75,9 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
                 <YAxis hide domain={[0, 100]} />
                 <Tooltip contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }} />
                 <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
-                <Area name="Readiness" type="monotone" dataKey="score" stroke="#3B6B9C" strokeWidth={1.5}
-                  fillOpacity={0.08} fill="#3B6B9C"
-                  dot={{ r: 2, fill: '#3B6B9C', stroke: '#fff', strokeWidth: 1 }} />
+                <Area name="Readiness" type="monotone" dataKey="score" stroke="#1B3FC4" strokeWidth={1.5}
+                  fillOpacity={0.08} fill="#1B3FC4"
+                  dot={{ r: 2, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1 }} />
               </ComposedChart>
             </ResponsiveContainer>
           </div>

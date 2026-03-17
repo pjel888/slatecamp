@@ -41,7 +41,7 @@ const PATHS: PathDef[] = [
     id: 'high-water-mark',
     label: 'Mean High-Water Mark',
     points: [[0, 10], [36, 10]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
   },
   {
@@ -67,7 +67,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'High-Water Mark Datum Point',
     type: 'custom',
     position: [2, 10],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     description: 'Mean high-water mark: baseline for 20m setback measurement',
     codeCitation: 'PD 1067 / DENR DAO',
   },
@@ -76,7 +76,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'High-Water Mark Datum',
     type: 'custom',
     position: [34, 10],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     codeCitation: 'PD 1067',
   },
   {

@@ -1,0 +1,157 @@
+import { Starburst } from '@/components/marketing/LandingPrimitives'
+
+const COMPARISON_ROWS: readonly {
+  dimension: string
+  traditional: string
+  slatecamp: string
+  highlight?: boolean
+}[] = [
+  {
+    dimension: 'Cost',
+    traditional: '₱15,000 – ₱30,000',
+    slatecamp: 'Free forever · Premium from ₱299/month',
+  },
+  {
+    dimension: 'Schedule',
+    traditional: 'Fixed classroom hours',
+    slatecamp: 'Study on your schedule, on any device',
+  },
+  {
+    dimension: 'Performance feedback',
+    traditional: 'General scores on mock exams',
+    slatecamp: 'Live Readiness Score by subject, updated every session',
+  },
+  {
+    dimension: 'Content',
+    traditional: 'Textbooks, lectures, handouts',
+    slatecamp: 'Verified questions, 3D Lab, code-cited explanations',
+  },
+  {
+    dimension: 'Personalization',
+    traditional: 'Same syllabus for every student',
+    slatecamp: 'Adapts to your specific weak areas',
+  },
+  {
+    dimension: 'Availability',
+    traditional: 'Metro Manila-heavy',
+    slatecamp: 'Anywhere. Including your commute.',
+  },
+  {
+    dimension: 'Readiness signal',
+    traditional: '"Keep studying."',
+    slatecamp: '"You\'re at 74%. Here\'s exactly what to fix."',
+    highlight: true,
+  },
+] as const
+
+export const ComparisonSection = () => (
+  <section
+    aria-labelledby='comparison-heading'
+    className='border-t border-[#E8E4DC] px-6 py-24'
+  >
+    <div className='mx-auto max-w-[1200px]'>
+      <div className='flex items-center gap-3'>
+        <Starburst className='h-4 w-4 text-[#F5A623]' />
+        <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'>
+          Two ways to prepare
+        </span>
+      </div>
+
+      <h2
+        id='comparison-heading'
+        className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-[#18181B]'
+      >
+        The old way. The better way.
+      </h2>
+
+      <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-[#6B6B6B]'>
+        Traditional review centers work. But there&apos;s one thing they
+        can&apos;t tell you that SlateCamp can: exactly where your gaps are,
+        right now, before exam day.
+      </p>
+
+      {/* Table — desktop */}
+      <div className='mt-10 hidden overflow-hidden rounded-md border border-[#E8E4DC] md:block'>
+        {/* Header row */}
+        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] bg-[#FFFDF7]'>
+          <div className='px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]' />
+          <div className='border-l border-[#E8E4DC] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
+            Traditional Review Center
+          </div>
+          <div className='border-l border-[#E8E4DC] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-[#1B3FC4]'>
+            SlateCamp
+          </div>
+        </div>
+        {/* Data rows */}
+        {COMPARISON_ROWS.map((row) => (
+          <div
+            key={row.dimension}
+            className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] last:border-0 ${
+              row.highlight ? 'bg-[#FFFDF7]' : ''
+            }`}
+          >
+            <div className='px-5 py-3.5 text-[13px] font-medium text-[#18181B]'>
+              {row.dimension}
+            </div>
+            <div className='border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
+              {row.traditional}
+            </div>
+            <div
+              className={`border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] ${
+                row.highlight
+                  ? 'font-medium text-[#1B3FC4]'
+                  : 'text-[#555]'
+              }`}
+            >
+              {row.slatecamp}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile: stacked cards */}
+      <div className='mt-6 space-y-3 md:hidden'>
+        {COMPARISON_ROWS.map((row) => (
+          <div
+            key={row.dimension}
+            className='rounded-md border border-[#E8E4DC] p-4'
+          >
+            <p className='text-[11px] font-semibold uppercase tracking-wide text-[#9CA3AF]'>
+              {row.dimension}
+            </p>
+            <div className='mt-2 flex gap-4'>
+              <div className='flex-1'>
+                <p className='text-[11px] font-medium text-[#9CA3AF]'>
+                  Traditional
+                </p>
+                <p className='mt-0.5 text-[12px] text-[#6B6B6B]'>
+                  {row.traditional}
+                </p>
+              </div>
+              <div className='flex-1'>
+                <p className='text-[11px] font-medium text-[#1B3FC4]'>
+                  SlateCamp
+                </p>
+                <p
+                  className={`mt-0.5 text-[12px] ${
+                    row.highlight
+                      ? 'font-medium text-[#1B3FC4]'
+                      : 'text-[#18181B]'
+                  }`}
+                >
+                  {row.slatecamp}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p className='mt-6 text-[13px] text-[#9CA3AF]'>
+        SlateCamp isn&apos;t against review centers — many students use both.
+        But if you want to know whether you&apos;re ready before exam day,
+        SlateCamp is the only way to find out.
+      </p>
+    </div>
+  </section>
+)

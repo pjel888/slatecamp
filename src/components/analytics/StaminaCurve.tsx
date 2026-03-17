@@ -60,8 +60,8 @@ export function StaminaCurve({ data }: Props) {
                   contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}
                 />
                 <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
-                <Line type="monotone" dataKey="accuracy" stroke="#3B6B9C" strokeWidth={1.5}
-                  dot={{ r: 3, fill: '#3B6B9C', stroke: '#fff', strokeWidth: 1.5 }}
+                <Line type="monotone" dataKey="accuracy" stroke="#1B3FC4" strokeWidth={1.5}
+                  dot={{ r: 3, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1.5 }}
                   activeDot={{ r: 4 }} animationDuration={1200} />
               </LineChart>
             </ResponsiveContainer>

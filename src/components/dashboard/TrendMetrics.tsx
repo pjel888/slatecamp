@@ -28,7 +28,7 @@ export const TrendMetrics = () => {
                 <Line 
                   type="monotone" 
                   dataKey="val" 
-                  stroke="#3B6B9C" 
+                  stroke="#1B3FC4" 
                   strokeWidth={2} 
                   dot={false} 
                   isAnimationActive={false}

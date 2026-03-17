@@ -162,7 +162,7 @@ function geometry(
   const offsetZ = ((front - rear) / 2) * s
 
   const isOverHeight = floors > bhl
-  const buildingColor = isOverHeight ? '#D64545' : '#3B6B9C'
+  const buildingColor = isOverHeight ? '#D64545' : '#1B3FC4'
 
   const instructions: GeometryInstruction[] = []
 
@@ -240,7 +240,7 @@ function geometry(
       type: 'box',
       position: [offsetX, y, -offsetZ],
       args: [bw, 0.003, bd],
-      color: '#2F5A85',
+      color: '#1535A8',
       opacity: 0.4,
       transparent: true,
     })

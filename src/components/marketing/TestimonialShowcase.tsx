@@ -1,16 +1,9 @@
-import { Instrument_Serif } from 'next/font/google'
-
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
-
+// PLACEHOLDER — replace with real testimonials before launch
+// Target archetypes: (1) first-time passer, (2) visual learner, (3) retaker who watched Readiness Score climb
 const TESTIMONIALS = [
   {
     quote:
-      'Cerebro\u2019s 3D Library completely changed how I understand Building Tech. It\u2019s like having a site visit in my pocket.',
+      'SlateCamp\u2019s 3D Lab completely changed how I understand Building Tech. It\u2019s like having a site visit in my pocket.',
     name: 'Maria S.',
     title: '4th Year Architecture Student',
     rating: 5,
@@ -62,14 +55,14 @@ export const TestimonialShowcase = ({
           'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
           (dark
             ? 'border-white/10 bg-primary/40 text-white'
-            : 'border-zinc-200 bg-white shadow-sm')
+            : 'border-[#E8E4DC] bg-[#FFFDF7]')
         }
       >
         <div>
           <StarRating count={testimonial.rating} />
           <blockquote
-            className={`${serif.className} mt-5 text-[17px] italic leading-relaxed ${
-              dark ? 'text-white/90' : 'text-zinc-900'
+            className={`font-[family-name:var(--font-syne)] mt-5 text-[17px] italic leading-relaxed ${
+              dark ? 'text-white/90' : 'text-[#18181B]'
             }`}
           >
             &ldquo;{testimonial.quote}&rdquo;
@@ -78,20 +71,20 @@ export const TestimonialShowcase = ({
         <div
           className={
             'mt-6 border-t pt-5 ' +
-            (dark ? 'border-white/10' : 'border-zinc-200')
+            (dark ? 'border-white/10' : 'border-[#E8E4DC]')
           }
         >
           <p
             className={
               'text-[14px] font-semibold ' +
-              (dark ? 'text-white' : 'text-zinc-900')
+              (dark ? 'text-white' : 'text-[#18181B]')
             }
           >
             {testimonial.name}
           </p>
           <p
             className={
-              'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-zinc-500')
+              'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-[#6B6B6B]')
             }
           >
             {testimonial.title}

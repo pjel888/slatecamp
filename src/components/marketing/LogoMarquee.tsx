@@ -51,10 +51,10 @@ export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
   const logos = [...half, ...half]
   return (
     <section
-      aria-label="Trusted by leading architecture brands"
+      aria-label="Students from these institutions are in the camp"
       className={
         'marquee-container overflow-hidden border-y py-2 ' +
-        (dark ? 'border-white/10' : 'border-zinc-200')
+        (dark ? 'border-white/10' : 'border-[#E8E4DC]')
       }
     >
       <div className="marquee-track flex items-center">
@@ -62,7 +62,7 @@ export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
           <span
             key={`${partner.name}-${i}`}
             className={`shrink-0 px-10 opacity-25 transition-opacity duration-150 hover:opacity-80 select-none ${partner.className} ${
-              dark ? 'text-white' : 'text-zinc-900'
+              dark ? 'text-white' : 'text-[#18181B]'
             }`}
           >
             {partner.name}

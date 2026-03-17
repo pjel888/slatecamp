@@ -3,7 +3,7 @@ export const PACING_TARGET_MS = 120_000 // 2 min = ALE exam standard
 export const PASSING_ACCURACY = 75 // percent
 
 export const SUBJECT_COLORS: Record<string, string> = {
-  'Architectural Design and Site Planning': '#3B6B9C',
+  'Architectural Design and Site Planning': '#1B3FC4',
   'Architectural Practice':                '#7c3aed',
   'Building Materials and Construction':   '#059669',
   'Building Utilities':                    '#0891b2',

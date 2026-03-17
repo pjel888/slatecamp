@@ -55,7 +55,7 @@ const PATHS: PathDef[] = [
     id: 'path-zone-a-stair',
     label: 'Zone A: Direct Stair Egress',
     points: [[9, 16], [4.5, 16], [4.5, 25.5]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 2,
   },
 ]
@@ -105,7 +105,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'Stairwell Exit A',
     type: 'stair',
     position: [4.5, 25.5],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     codeCitation: 'RA 9514',
   },
   {
@@ -113,7 +113,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'EXIT A',
     type: 'exit',
     position: [4.5, 28],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     codeCitation: 'RA 9514',
   },
   {

@@ -168,13 +168,13 @@ function Fixture({
         <>
           <mesh position={[x, 0.005, z]}>
             <cylinderGeometry args={[0.1, 0.1, 0.01, 16]} />
-            <meshStandardMaterial color={color || '#3B6B9C'} />
+            <meshStandardMaterial color={color || '#1B3FC4'} />
           </mesh>
           {coverageRadius && (
             <mesh position={[x, 0.002, z]} rotation={[-Math.PI / 2, 0, 0]}>
               <ringGeometry args={[coverageRadius - 0.05, coverageRadius, 32]} />
               <meshStandardMaterial
-                color={color || '#3B6B9C'}
+                color={color || '#1B3FC4'}
                 opacity={0.15}
                 transparent
               />

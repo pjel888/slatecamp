@@ -17,7 +17,7 @@ export const hotWaterSystemConfig: CutawaySectionConfig = {
       description: 'Cold water supply from building main to water heater inlet. Shutoff valve at inlet for heater isolation.',
       codeCitation: 'NPCP §608',
       depth: 0,
-      geometry: { id: 'geo-cold', type: 'cylinder', args: [0.012, 0.012, 1.5, 12], position: [-0.8, 1.5, 0], color: '#3B6B9C' },
+      geometry: { id: 'geo-cold', type: 'cylinder', args: [0.012, 0.012, 1.5, 12], position: [-0.8, 1.5, 0], color: '#1B3FC4' },
     },
     {
       id: 'water-heater-tank',

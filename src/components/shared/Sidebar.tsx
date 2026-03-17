@@ -91,8 +91,8 @@ const SidebarItem = ({
     'relative flex items-center gap-3 px-2 py-1.5 text-sm rounded-md transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
 
   const stateClasses = isActive
-    ? 'text-primary font-semibold bg-[#F0F5FA]'
-    : 'text-[#4A5568] hover:bg-[#F0F5FA]/50 hover:text-primary'
+    ? 'text-primary font-semibold bg-[#EEF2FC]'
+    : 'text-[#4A5568] hover:bg-[#EEF2FC]/50 hover:text-primary'
 
   const link = (
     <TransitionLink
@@ -233,7 +233,7 @@ export const Sidebar = ({
       >
         <button
           onClick={toggleCollapse}
-          className='flex h-8 w-8 items-center justify-center rounded-md text-[#4A5568] transition-colors hover:bg-[#F0F5FA]/50 hover:text-primary outline-none'
+          className='flex h-8 w-8 items-center justify-center rounded-md text-[#4A5568] transition-colors hover:bg-[#EEF2FC]/50 hover:text-primary outline-none'
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
@@ -252,7 +252,7 @@ export const Sidebar = ({
             <TooltipTrigger asChild>
               <Link
                 href={ROUTES.SETTINGS}
-                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-[#F0F5FA]/50 outline-none'
+                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-[#EEF2FC]/50 outline-none'
                 onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <div className={ICON_BOX}>
@@ -263,7 +263,7 @@ export const Sidebar = ({
                         alt={displayName}
                       />
                     ) : null}
-                    <AvatarFallback className='bg-[#F0F5FA] text-xs font-medium text-[#1A2332]'>
+                    <AvatarFallback className='bg-[#EEF2FC] text-xs font-medium text-[#1A2332]'>
                       {initials}
                     </AvatarFallback>
                   </Avatar>

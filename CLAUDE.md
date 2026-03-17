@@ -39,9 +39,9 @@ Before generating any code or architecture, you MUST execute the following seque
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| Slate Blue | `#3B6B9C` | Primary actions, nav, links, active states |
-| Slate Blue 50 | `#F0F5FA` | Active backgrounds, tints, hover states |
-| Slate Blue 700 | `#2F5A85` | Hover/pressed states |
+| Camp Cobalt | `#1B3FC4` | Primary actions, nav, links, active states |
+| Camp Cobalt 50 | `#EEF2FC` | Active backgrounds, tints, hover states |
+| Camp Cobalt 700 | `#1535A8` | Hover/pressed states |
 | Camp Orange | `#E8853A` | Progress celebration, warm CTAs (use sparingly) |
 | Emerald | `#2D9F6F` | Success, mastery, correct answers |
 | Emerald 50 | `#EDFAF4` | Success backgrounds |

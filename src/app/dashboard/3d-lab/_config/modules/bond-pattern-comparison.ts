@@ -39,15 +39,15 @@ export const bondPatternComparisonConfig: ExplodedAssemblyConfig = {
       explodeOffset: [-1.2, -0.12, 0],
     },
     // ── STACK BOND (x = -0.3) ────────────────────────────────────────────────
-    brick('stk-c1-b1', -0.5, 0.045, 0, false, '#3B6B9C'),
-    brick('stk-c1-b2', -0.1, 0.045, 0, false, '#3B6B9C'),
-    brick('stk-c2-b1', -0.5, 0.14, 0, false, '#2F5A85'),
-    brick('stk-c2-b2', -0.1, 0.14, 0, false, '#2F5A85'),
+    brick('stk-c1-b1', -0.5, 0.045, 0, false, '#1B3FC4'),
+    brick('stk-c1-b2', -0.1, 0.045, 0, false, '#1B3FC4'),
+    brick('stk-c2-b1', -0.5, 0.14, 0, false, '#1535A8'),
+    brick('stk-c2-b2', -0.1, 0.14, 0, false, '#1535A8'),
     {
       id: 'stk-label',
       label: 'Stack Bond Pattern',
       description: 'Vertical joints aligned in every course — no offset. Weakest bond; requires horizontal joint reinforcement. Used for decorative effect only.',
-      geometry: { id: 'stk-label-geo', type: 'box', position: [-0.3, -0.12, 0], args: [0.55, 0.04, 0.2], color: '#2F5A85' },
+      geometry: { id: 'stk-label-geo', type: 'box', position: [-0.3, -0.12, 0], args: [0.55, 0.04, 0.2], color: '#1535A8' },
       explodeOffset: [-0.3, -0.12, 0],
     },
     // ── FLEMISH BOND (x = 0.6) ───────────────────────────────────────────────

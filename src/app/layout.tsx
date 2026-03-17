@@ -1,8 +1,23 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Syne, DM_Mono } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
 import { siteConfig } from '@/lib/constants/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const syne = Syne({
+  subsets: ['latin'],
+  weight: ['400', '700', '800'],
+  display: 'swap',
+  variable: '--font-syne',
+})
+const dmMono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-dm-mono',
+})
+
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { DemoShell } from '@/components/dev/demo-shell'
@@ -43,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans antialiased`}
+        className={`${inter.variable} ${syne.variable} ${dmMono.variable} ${GeistSans.variable} font-sans antialiased`}
       >
         <ThemeProvider>
           <NoiseFilter />

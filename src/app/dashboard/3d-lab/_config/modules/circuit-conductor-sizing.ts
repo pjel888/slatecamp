@@ -52,7 +52,7 @@ export const circuitConductorSizingConfig: CutawaySectionConfig = {
       description: '3.5mm² THHN copper — rated 20A ampacity. Required for 20A branch circuits. Larger cross-section than 15A for higher current capacity.',
       codeCitation: 'PEC Table 3.10.020',
       depth: 0.65,
-      geometry: { id: 'geo-wire20', type: 'cylinder', args: [0.003, 0.003, 2.0, 6], position: [0, 1.5, 0.012], color: '#3B6B9C' },
+      geometry: { id: 'geo-wire20', type: 'cylinder', args: [0.003, 0.003, 2.0, 6], position: [0, 1.5, 0.012], color: '#1B3FC4' },
     },
     {
       id: 'conduit-30a',

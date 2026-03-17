@@ -33,7 +33,7 @@ export const splitAcCutawayConfig: CutawaySectionConfig = {
       material: 'Copper 3/8" Insulated',
       description: 'Liquid refrigerant line (smaller diameter, high pressure) from condenser to evaporator.',
       depth: 0.5,
-      geometry: { id: 'geo-liquid', type: 'cylinder', args: [0.009, 0.009, 1.5, 12], position: [0, 1.8, 0.05], rotation: [0, 0, Math.PI / 2], color: '#3B6B9C' },
+      geometry: { id: 'geo-liquid', type: 'cylinder', args: [0.009, 0.009, 1.5, 12], position: [0, 1.8, 0.05], rotation: [0, 0, Math.PI / 2], color: '#1B3FC4' },
     },
     {
       id: 'refrigerant-suction',

@@ -87,7 +87,7 @@ const PATHS: PathDef[] = [
       [12.5, 16],
       [24, 16],
     ],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
   },
 ]

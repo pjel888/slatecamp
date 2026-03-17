@@ -80,7 +80,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'Commercial Anchor (C-2)',
     type: 'custom',
     position: [21, 19],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     description: 'Community-scale commercial development',
     codeCitation: 'HLURB Zoning Ordinance',
   },

@@ -32,7 +32,7 @@ const PATHS: PathDef[] = [
     id: 'main-supply',
     label: 'Main Sprinkler Supply Line',
     points: [[10, 0], [10, 28]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
   },
   {
@@ -53,19 +53,19 @@ const PATHS: PathDef[] = [
 
 const FIXTURES: FixtureDef[] = [
   // Office sprinklers (light hazard, ~4.5m grid)
-  { id: 'sp-1', label: 'Sprinkler', type: 'sprinkler', position: [3, 3], color: '#3B6B9C', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
-  { id: 'sp-2', label: 'Sprinkler', type: 'sprinkler', position: [8, 3], color: '#3B6B9C', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
-  { id: 'sp-3', label: 'Sprinkler', type: 'sprinkler', position: [13, 3], color: '#3B6B9C', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
-  { id: 'sp-4', label: 'Sprinkler', type: 'sprinkler', position: [18, 3], color: '#3B6B9C', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
-  { id: 'sp-5', label: 'Sprinkler', type: 'sprinkler', position: [3, 7], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-6', label: 'Sprinkler', type: 'sprinkler', position: [8, 7], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-7', label: 'Sprinkler', type: 'sprinkler', position: [13, 7], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-8', label: 'Sprinkler', type: 'sprinkler', position: [18, 7], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-9', label: 'Sprinkler', type: 'sprinkler', position: [3, 11], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-10', label: 'Sprinkler', type: 'sprinkler', position: [13, 11], color: '#3B6B9C', codeCitation: 'RA 9514' },
+  { id: 'sp-1', label: 'Sprinkler', type: 'sprinkler', position: [3, 3], color: '#1B3FC4', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
+  { id: 'sp-2', label: 'Sprinkler', type: 'sprinkler', position: [8, 3], color: '#1B3FC4', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
+  { id: 'sp-3', label: 'Sprinkler', type: 'sprinkler', position: [13, 3], color: '#1B3FC4', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
+  { id: 'sp-4', label: 'Sprinkler', type: 'sprinkler', position: [18, 3], color: '#1B3FC4', description: 'Coverage: 21 sqm', codeCitation: 'RA 9514' },
+  { id: 'sp-5', label: 'Sprinkler', type: 'sprinkler', position: [3, 7], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-6', label: 'Sprinkler', type: 'sprinkler', position: [8, 7], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-7', label: 'Sprinkler', type: 'sprinkler', position: [13, 7], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-8', label: 'Sprinkler', type: 'sprinkler', position: [18, 7], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-9', label: 'Sprinkler', type: 'sprinkler', position: [3, 11], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-10', label: 'Sprinkler', type: 'sprinkler', position: [13, 11], color: '#1B3FC4', codeCitation: 'RA 9514' },
   // Meeting room sprinklers
-  { id: 'sp-11', label: 'Sprinkler', type: 'sprinkler', position: [4.5, 16.5], color: '#3B6B9C', codeCitation: 'RA 9514' },
-  { id: 'sp-12', label: 'Sprinkler', type: 'sprinkler', position: [15, 16.5], color: '#3B6B9C', codeCitation: 'RA 9514' },
+  { id: 'sp-11', label: 'Sprinkler', type: 'sprinkler', position: [4.5, 16.5], color: '#1B3FC4', codeCitation: 'RA 9514' },
+  { id: 'sp-12', label: 'Sprinkler', type: 'sprinkler', position: [15, 16.5], color: '#1B3FC4', codeCitation: 'RA 9514' },
   // Storage (ordinary hazard)
   { id: 'sp-13', label: 'Sprinkler (Ordinary)', type: 'sprinkler', position: [4, 25.5], color: '#D64545', description: 'Coverage: 12 sqm', codeCitation: 'RA 9514' },
   { id: 'exit-main', label: 'EXIT', type: 'exit', position: [10, 23], color: '#2D9F6F', codeCitation: 'RA 9514' },

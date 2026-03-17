@@ -50,7 +50,7 @@ export const waterMeterAssemblyConfig: ExplodedAssemblyConfig = {
       label: 'Meter Body (Nutating Disc)',
       description: 'Water meter body — nutating disc or multi-jet positive displacement type for residential. Registers total volume consumed. Tamper-evident seal.',
       codeCitation: 'NPCP Section 601 / AWWA C700',
-      geometry: { id: 'wma-meter-body-geo', type: 'box', position: [0.07, 0, 0], args: [0.18, 0.1, 0.1], color: '#2F5A85' },
+      geometry: { id: 'wma-meter-body-geo', type: 'box', position: [0.07, 0, 0], args: [0.18, 0.1, 0.1], color: '#1535A8' },
       explodeOffset: [0.1, 0.3, 0],
     },
     {

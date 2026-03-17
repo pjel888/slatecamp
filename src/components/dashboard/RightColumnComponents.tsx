@@ -85,7 +85,7 @@ export const ActivityLogFeedCard = () => (
       <div className='max-h-[220px] overflow-y-auto wiki-sidebar-scroll'>
         {MOCK_ACTIVITY_FEED.map((item, idx) => (
           <div key={item.id} className={cn('p-4 flex gap-3', idx !== MOCK_ACTIVITY_FEED.length - 1 && 'border-b border-[#D4DAE3]')}>
-            <div className='mt-0.5 rounded bg-[#F0F5FA] p-1.5 h-fit'>
+            <div className='mt-0.5 rounded bg-[#EEF2FC] p-1.5 h-fit'>
               <SCIcon icon={item.icon} size='xs' color='#8896A7' />
             </div>
             <div className='flex flex-col gap-0.5'>
@@ -130,10 +130,10 @@ export const DetailedWeeklyReadinessTrendCard = () => (
           <Line
             type="monotone"
             dataKey="score"
-            stroke="#3B6B9C"
+            stroke="#1B3FC4"
             strokeWidth={2.5}
-            dot={{ r: 3, fill: '#3B6B9C', strokeWidth: 0 }}
-            activeDot={{ r: 5, fill: '#3B6B9C' }}
+            dot={{ r: 3, fill: '#1B3FC4', strokeWidth: 0 }}
+            activeDot={{ r: 5, fill: '#1B3FC4' }}
             label={{ position: 'top', fontSize: 9, fill: '#4A5568', offset: 8 }}
           />
         </LineChart>
@@ -166,7 +166,7 @@ export const PacingAndDomainBreakdownCard = () => (
             </div>
             <div className='h-1 w-full rounded-full overflow-hidden' style={{ backgroundColor: '#D4DAE3' }}>
               <div
-                className={cn('h-full rounded-full transition-all', domain.acc > 75 ? 'bg-[#2D9F6F]' : 'bg-[#3B6B9C]')}
+                className={cn('h-full rounded-full transition-all', domain.acc > 75 ? 'bg-[#2D9F6F]' : 'bg-[#1B3FC4]')}
                 style={{ width: `${domain.acc}%` }}
               />
             </div>
@@ -195,7 +195,7 @@ export const LeaderboardSnippetCard = () => (
         </thead>
         <tbody>
           {MOCK_LEADERBOARD.map((item) => (
-            <tr key={item.name} className={cn('border-b border-[#D4DAE3] last:border-0', item.isUser && 'bg-[#F0F5FA]/50')}>
+            <tr key={item.name} className={cn('border-b border-[#D4DAE3] last:border-0', item.isUser && 'bg-[#EEF2FC]/50')}>
               <td className='px-4 py-2.5 text-[11px] font-bold' style={{ color: '#4A5568' }}>#{item.rank}</td>
               <td className='px-4 py-2.5 text-[11px] font-semibold' style={{ color: '#1A2332' }}>{item.name}</td>
               <td className='px-4 py-2.5 text-[11px] font-bold text-right' style={{ color: '#1A2332' }}>{item.score.toFixed(1)}</td>
@@ -203,7 +203,7 @@ export const LeaderboardSnippetCard = () => (
           ))}
         </tbody>
       </table>
-      <div className='p-3 text-center' style={{ backgroundColor: '#F0F5FA' }}>
+      <div className='p-3 text-center' style={{ backgroundColor: '#EEF2FC' }}>
         <p className='text-[11px] font-medium uppercase tracking-wider' style={{ color: '#8896A7' }}>Showing your position among 1,452 candidates</p>
       </div>
     </CardContent>

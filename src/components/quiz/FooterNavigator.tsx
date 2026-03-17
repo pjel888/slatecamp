@@ -16,7 +16,7 @@ interface FooterNavigatorProps {
   currentIndex: number
   canGoBack: boolean
   canGoForward: boolean
-  strictMode: boolean           // disables dot jump navigation
+  strictMode: boolean // disables dot jump navigation
   onPrev: () => void
   onNext: () => void
   onJump: (index: number) => void
@@ -33,13 +33,13 @@ export function FooterNavigator({
   onJump,
 }: FooterNavigatorProps) {
   return (
-    <footer className="shrink-0 border-t border-zinc-100 bg-[#FAFAF9]">
-      <div className="max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
+    <footer className='shrink-0 border-t border-zinc-100 bg-[#FAFAF9]'>
+      <div className='max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4'>
         {/* Previous */}
         <button
           onClick={onPrev}
           disabled={!canGoBack}
-          aria-label="Previous question"
+          aria-label='Previous question'
           className={cn(
             'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoBack
@@ -47,14 +47,14 @@ export function FooterNavigator({
               : 'border border-gray-100 text-zinc-200 cursor-not-allowed',
           )}
         >
-          <SCIcon icon={CaretLeft} size="sm" />
-          <span className="hidden sm:inline">Previous</span>
+          <SCIcon icon={CaretLeft} size='sm' />
+          <span className='hidden sm:inline'>Previous</span>
         </button>
 
         {/* Dot navigator */}
         <nav
-          aria-label="Question navigator"
-          className="flex items-center gap-1.5 overflow-x-auto max-w-[60vw] py-1 scrollbar-hide"
+          aria-label='Question navigator'
+          className='flex items-center gap-1.5 overflow-x-auto max-w-[60vw] py-1 scrollbar-hide'
         >
           {dots.map((dot) => (
             <button
@@ -66,7 +66,9 @@ export function FooterNavigator({
               className={cn(
                 'shrink-0 rounded-full transition-all duration-150 outline-none',
                 'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
-                !strictMode && dot.state !== 'current' && 'cursor-pointer hover:scale-125',
+                !strictMode &&
+                  dot.state !== 'current' &&
+                  'cursor-pointer hover:scale-125',
                 strictMode && 'cursor-default',
 
                 // Sizing
@@ -75,10 +77,10 @@ export function FooterNavigator({
                   : 'w-2.5 h-2.5',
 
                 // Colors
-                dot.state === 'current'   && 'bg-primary',
-                dot.state === 'answered'  && 'bg-[#5B8BB8]',
-                dot.state === 'flagged'   && 'bg-amber-400',
-                dot.state === 'unanswered'&& 'bg-zinc-200',
+                dot.state === 'current' && 'bg-primary',
+                dot.state === 'answered' && 'bg-[#5B7FE0]',
+                dot.state === 'flagged' && 'bg-amber-400',
+                dot.state === 'unanswered' && 'bg-zinc-200',
               )}
             />
           ))}
@@ -88,16 +90,16 @@ export function FooterNavigator({
         <button
           onClick={onNext}
           disabled={!canGoForward}
-          aria-label="Next question"
+          aria-label='Next question'
           className={cn(
             'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoForward
-              ? 'bg-primary hover:bg-[#2F5A85] text-white'
+              ? 'bg-primary hover:bg-[#1535A8] text-white'
               : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',
           )}
         >
-          <span className="hidden sm:inline">Next</span>
-          <SCIcon icon={CaretRight} size="sm" />
+          <span className='hidden sm:inline'>Next</span>
+          <SCIcon icon={CaretRight} size='sm' />
         </button>
       </div>
     </footer>

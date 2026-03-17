@@ -133,7 +133,7 @@ export function NotesList({
                       </span>
                     )}
                     {note.article_id && (
-                      <span className={cn('text-[11px]', isSelected ? 'text-[#5B8BB8]' : 'text-primary')} title="From Wiki">
+                      <span className={cn('text-[11px]', isSelected ? 'text-[#5B7FE0]' : 'text-primary')} title="From Wiki">
                         <SCIcon icon={BookOpen} size="xs" />
                       </span>
                     )}

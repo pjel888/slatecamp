@@ -1,0 +1,338 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .root { background: #F2F0EB; padding: 20px; font-family: 'Syne', sans-serif; }
+
+  /* ── NOISE MIXIN via SVG filter ── */
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    opacity: 0.055;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  .noise-heavy::after { opacity: 0.09; }
+  .noise-light::after { opacity: 0.035; }
+
+  .card {
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+  }
+  .card:hover { transform: translateY(-2px); }
+
+  /* ── CARD COLORS ── */
+  .c-black  { background: #111111; color: #fff; }
+  .c-cobalt { background: #1B3FC4; color: #fff; }
+  .c-red    { background: #E63329; color: #fff; }
+  .c-green  { background: #1B7A3C; color: #fff; }
+  .c-amber  { background: #F5A623; color: #111; }
+  .c-cream  { background: #FFFDF7; color: #111; border: 1px solid #E8E4DC; }
+
+  /* ── GRID LAYOUT ── */
+  .grid-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .span2 { grid-row: span 2; }
+
+  /* ── TYPOGRAPHY ── */
+  .mono { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .white-muted  { color: rgba(255,255,255,0.45); }
+  .black-muted  { color: rgba(0,0,0,0.4); }
+  .headline { font-size: clamp(18px,2.2vw,26px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-top: 28px; }
+  .body { font-size: 13px; line-height: 1.6; margin-top: 8px; }
+
+  /* ── QUIZ MOCKUP ── */
+  .quiz { margin-top: 20px; display: flex; flex-direction: column; gap: 5px; }
+  .q-opt { border-radius: 5px; padding: 7px 11px; display: flex; align-items: center; gap: 8px; font-size: 11px; }
+  .q-neu { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.6); }
+  .q-ok  { background: rgba(34,197,94,0.18); border: 1px solid rgba(34,197,94,0.45); color: #86efac; }
+  .q-no  { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.25); }
+  .dot   { width:11px;height:11px;border-radius:50%;border:1.5px solid currentColor;opacity:.7;flex-shrink:0; }
+  .dot-g { background:#22c55e;border-color:#22c55e;opacity:1; }
+  .bar   { height:7px;border-radius:4px;background:currentColor;opacity:.3; }
+
+  /* ── READINESS RING ── */
+  .ring-row { display:flex;align-items:center;gap:16px;margin-top:20px; }
+
+  /* ── HEATMAP ── */
+  .hm { display:grid;grid-template-columns:repeat(6,1fr);gap:4px;margin-top:6px; }
+  .hm-c { aspect-ratio:1;border-radius:3px; }
+
+  /* ── MASTERY BARS ── */
+  .mb-row { margin-bottom:7px; }
+  .mb-lbl { display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,0.4);margin-bottom:3px; }
+  .mb-track { height:4px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden; }
+  .mb-fill  { height:100%;border-radius:3px;background:#e2e2e6; }
+  .mb-hi    { background:#4ade80; }
+
+  /* ── PILLS ── */
+  .pills { display:flex;gap:5px;flex-wrap:wrap;margin-top:12px; }
+  .pill  { font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;padding:3px 9px;border-radius:999px; }
+  .pill-w { border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.55); }
+  .pill-d { border:1px solid rgba(0,0,0,0.15);color:rgba(0,0,0,0.45); }
+
+  /* ── ARROW CIRCLE ── */
+  .arr { width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px; }
+  .arr-w { border:1.5px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.55); }
+  .arr-d { border:1.5px solid rgba(0,0,0,0.2);color:rgba(0,0,0,0.4); }
+
+  .star { color:#F5A623;font-size:15px;line-height:1; }
+  .row-end { display:flex;justify-content:flex-end;margin-top:10px; }
+
+  /* STAT number */
+  .stat-num { font-size:72px;font-weight:800;line-height:.9;letter-spacing:-.05em;color:#E63329;margin-top:28px; }
+  .stat-src  { font-family:'DM Mono',monospace;font-size:9px;color:#aaa;margin-top:8px; }
+
+  /* ENGINE CARD */
+  .engine-inner { display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center; }
+  .engine-panel { background:rgba(255,255,255,0.09);border-radius:8px;padding:18px; }
+
+  /* QUOTE */
+  .q-text { font-size:clamp(15px,1.8vw,19px);font-style:italic;font-weight:700;line-height:1.3;margin-top:14px; }
+  .underline-white { text-decoration:underline;text-decoration-color:rgba(255,255,255,0.4);text-underline-offset:3px; }
+
+  /* SESSIONS amber card — dark text */
+  .sessions-hl { font-size:22px;font-weight:800;color:#111;line-height:1.1;margin-top:28px; }
+
+  /* SECTION LABEL */
+  .section-lbl {
+    font-family:'DM Mono',monospace;
+    font-size:10px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:#888;
+    margin: 28px 0 10px;
+  }
+
+  /* ── DESIGN SYSTEM SWATCHES ── */
+  .swatch-grid { display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:8px; }
+  .swatch { border-radius:8px;padding:14px 10px 10px; position:relative; overflow:hidden; }
+  .swatch::after {
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size:180px 180px;opacity:.07;pointer-events:none;mix-blend-mode:overlay;
+  }
+  .sw-name { font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase; }
+  .sw-hex  { font-family:'DM Mono',monospace;font-size:8px;margin-top:3px;opacity:.6; }
+
+</style>
+
+<div class="root">
+
+  <!-- SECTION: BENTO CARDS -->
+  <div class="section-lbl">↳ Bento Feature Grid — with noise</div>
+
+  <div class="grid-main">
+
+    <!-- REVIEW MODE — Black + noise -->
+    <div class="card c-black noise span2">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="mono white-muted">[ Review Mode ]</span>
+        <span class="star">✦</span>
+      </div>
+      <div class="headline">Active Recall,<br>Zero Pressure</div>
+      <p class="body" style="color:rgba(255,255,255,0.5);max-width:340px">No timer. No analytics. Just you and the material — until it sticks.</p>
+      <div class="quiz">
+        <div class="q-opt q-neu"><div class="dot"></div><div class="bar" style="width:72%"></div></div>
+        <div class="q-opt q-ok"><div class="dot dot-g"></div><div class="bar" style="width:55%;background:#22c55e;opacity:.7"></div></div>
+        <div class="q-opt q-neu"><div class="dot"></div><div class="bar" style="width:80%"></div></div>
+        <div class="q-opt q-no"><div class="dot"></div><div class="bar" style="width:44%"></div></div>
+      </div>
+      <div class="pills" style="margin-top:16px">
+        <span class="pill pill-w">Active Recall</span>
+        <span class="pill pill-w">Stress-Free</span>
+      </div>
+      <div class="row-end"><div class="arr arr-w">→</div></div>
+    </div>
+
+    <!-- ANALYTICS — Cobalt + heavy noise -->
+    <div class="card c-cobalt noise-heavy span2" style="grid-column:3">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="mono white-muted">[ Analytics ]</span>
+        <div class="arr arr-w">→</div>
+      </div>
+      <div class="headline">Your Readiness,<br>Quantified</div>
+      <p class="body" style="color:rgba(255,255,255,0.55)">Taxonomy heatmap. Every node. Every gap. No hiding.</p>
+      <div class="ring-row">
+        <svg viewBox="0 0 100 100" width="82" height="82" style="flex-shrink:0">
+          <circle cx="50" cy="50" r="36" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+          <circle cx="50" cy="50" r="36" fill="none" stroke="#E2E2E6" stroke-width="5"
+            stroke-dasharray="226.2" stroke-dashoffset="50.8"
+            stroke-linecap="round" transform="rotate(-90 50 50)"/>
+          <text x="50" y="47" text-anchor="middle" fill="white" font-size="22" font-weight="700" font-family="Syne,sans-serif">78</text>
+          <text x="50" y="62" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="6.5" letter-spacing="0.15em" font-family="DM Mono,monospace">READINESS</text>
+        </svg>
+        <div style="flex:1">
+          <div class="hm">
+            <div class="hm-c" style="background:#4ade80;opacity:.8"></div><div class="hm-c" style="background:#4ade80;opacity:.8"></div>
+            <div class="hm-c" style="background:#e2e2e6;opacity:.4"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#4ade80;opacity:.8"></div><div class="hm-c" style="background:#6b7280;opacity:.35"></div>
+            <div class="hm-c" style="background:#e2e2e6;opacity:.4"></div><div class="hm-c" style="background:#4ade80;opacity:.8"></div>
+            <div class="hm-c" style="background:#4ade80;opacity:.8"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#e2e2e6;opacity:.4"></div><div class="hm-c" style="background:#4ade80;opacity:.8"></div>
+            <div class="hm-c" style="background:#6b7280;opacity:.35"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#e2e2e6;opacity:.4"></div><div class="hm-c" style="background:#4ade80;opacity:.8"></div>
+            <div class="hm-c" style="background:#4ade80;opacity:.8"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#4ade80;opacity:.8"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#6b7280;opacity:.35"></div><div class="hm-c" style="background:#e2e2e6;opacity:.4"></div>
+            <div class="hm-c" style="background:#e2e2e6;opacity:.4"></div><div class="hm-c" style="background:#4ade80;opacity:.8"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pills"><span class="pill pill-w">IRT-Calibrated</span><span class="pill pill-w">EMA-Weighted</span></div>
+    </div>
+
+    <!-- STAT — Cream, no noise (clean contrast) -->
+    <div class="card c-cream" style="grid-column:2;grid-row:2">
+      <span class="star">✦</span>
+      <div class="stat-num">1 in 3</div>
+      <p style="font-size:13px;color:#555;margin-top:10px;max-width:200px;line-height:1.5">ALE examinees don't pass in a given sitting. Most didn't know they were at risk.</p>
+      <p class="stat-src">Source: PRC official results, 2024–2025</p>
+    </div>
+
+    <!-- QUOTE — Red + noise -->
+    <div class="card c-red noise" style="grid-column:2;grid-row:3">
+      <span class="mono white-muted">SlateCamp</span>
+      <p class="q-text">&ldquo;Trust the camp, put in the reps, and we will eliminate the <span class="underline-white">doubt.</span>&rdquo;</p>
+      <div class="row-end"><div class="arr arr-w">→</div></div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <div class="grid-bottom">
+    <!-- 3D LAB — Green + noise -->
+    <div class="card c-green noise">
+      <div style="display:flex;justify-content:space-between"><div class="headline" style="margin-top:0;font-size:22px">3D Lab</div><span class="star">✦</span></div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;margin-top:28px;line-height:1.4">Visual learning,<br>built different.</p>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.5">WebGL-powered models. Drag FAR — model responds in real time.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px">
+        <span class="pill pill-w">3D Models</span>
+        <div class="arr arr-w">→</div>
+      </div>
+    </div>
+
+    <!-- SESSIONS — Amber + light noise -->
+    <div class="card c-amber noise-light">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span class="mono black-muted">[ Sessions ]</span>
+        <div class="arr arr-d">→</div>
+      </div>
+      <div class="sessions-hl">Every Answer<br>Tracked</div>
+      <p style="font-size:12px;color:rgba(0,0,0,0.5);margin-top:8px;line-height:1.5">Timed quizzes, full analytics. Watch your readiness climb.</p>
+      <div class="pills"><span class="pill pill-d">Camp Mode</span><span class="pill pill-d">Storm Mode</span></div>
+    </div>
+
+    <!-- AI — Black + heavy noise -->
+    <div class="card c-black noise-heavy">
+      <span class="mono white-muted">[ Bounded Intelligence ]</span>
+      <div class="headline">AI That Cites<br>Its Sources</div>
+      <p class="body" style="color:rgba(255,255,255,0.5)">Tethered to our verified database. Temperature 0.0. Every response links to its exact source.</p>
+      <div class="pills"><span class="pill pill-w">Zero-Hallucination</span></div>
+    </div>
+  </div>
+
+  <!-- ENGINE — Cobalt + noise, full width -->
+  <div class="card c-cobalt noise" style="margin-top:10px">
+    <div class="engine-inner">
+      <div>
+        <span class="mono" style="color:#F5A623">The Engine</span>
+        <div class="headline" style="font-size:28px">AI-Adaptive<br>Learning</div>
+        <p class="body" style="color:rgba(255,255,255,0.6);max-width:380px">Item Response Theory adjusts question difficulty to your exact ability level. Spaced repetition at the mathematically optimal interval.</p>
+        <div class="pills"><span class="pill pill-w">IRT Engine</span><span class="pill pill-w">SM-2 Algorithm</span><span class="pill pill-w">Lucky Guess Detector</span></div>
+      </div>
+      <div class="engine-panel">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <span class="mono white-muted">Subject Mastery</span>
+          <svg viewBox="0 0 100 100" width="50" height="50">
+            <circle cx="50" cy="50" r="36" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+            <circle cx="50" cy="50" r="36" fill="none" stroke="#E2E2E6" stroke-width="5"
+              stroke-dasharray="226.2" stroke-dashoffset="50.8"
+              stroke-linecap="round" transform="rotate(-90 50 50)"/>
+            <text x="50" y="47" text-anchor="middle" fill="white" font-size="21" font-weight="700" font-family="Syne,sans-serif">78</text>
+            <text x="50" y="62" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="6" letter-spacing="0.12em" font-family="DM Mono,monospace">READY</text>
+          </svg>
+        </div>
+        <div class="mb-row"><div class="mb-lbl"><span>Structural Design</span><span>85%</span></div><div class="mb-track"><div class="mb-fill mb-hi" style="width:85%"></div></div></div>
+        <div class="mb-row"><div class="mb-lbl"><span>Building Technology</span><span>62%</span></div><div class="mb-track"><div class="mb-fill" style="width:62%"></div></div></div>
+        <div class="mb-row"><div class="mb-lbl"><span>Architectural Theory</span><span>41%</span></div><div class="mb-track"><div class="mb-fill" style="width:41%;background:#fbbf24"></div></div></div>
+        <div class="mb-row"><div class="mb-lbl"><span>History of Architecture</span><span>73%</span></div><div class="mb-track"><div class="mb-fill" style="width:73%"></div></div></div>
+        <div class="mb-row"><div class="mb-lbl"><span>Utilities (MEPFS)</span><span>88%</span></div><div class="mb-track"><div class="mb-fill mb-hi" style="width:88%"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- DESIGN SYSTEM SWATCHES                                   -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <div class="section-lbl" style="margin-top:36px">↳ Design System — Color Palette</div>
+
+  <div class="swatch-grid">
+    <div class="swatch" style="background:#111111"><p class="sw-name" style="color:#fff">Camp Black</p><p class="sw-hex" style="color:#fff">#111111</p></div>
+    <div class="swatch" style="background:#1B3FC4"><p class="sw-name" style="color:#fff">Camp Cobalt</p><p class="sw-hex" style="color:#fff">#1B3FC4</p></div>
+    <div class="swatch" style="background:#E63329"><p class="sw-name" style="color:#fff">Camp Red</p><p class="sw-hex" style="color:#fff">#E63329</p></div>
+    <div class="swatch" style="background:#1B7A3C"><p class="sw-name" style="color:#fff">Camp Green</p><p class="sw-hex" style="color:#fff">#1B7A3C</p></div>
+    <div class="swatch" style="background:#F5A623"><p class="sw-name" style="color:#111">Camp Amber</p><p class="sw-hex" style="color:#111">#F5A623</p></div>
+    <div class="swatch" style="background:#FFFDF7;border:1px solid #E8E4DC"><p class="sw-name" style="color:#111">Camp Cream</p><p class="sw-hex" style="color:#111">#FFFDF7</p></div>
+  </div>
+
+  <div style="margin-top:8px">
+    <div class="swatch-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="swatch" style="background:#F2F0EB;border:1px solid #E0DDD5"><p class="sw-name" style="color:#111">Page Background</p><p class="sw-hex" style="color:#111">#F2F0EB — warm off-white, never pure white</p></div>
+      <div class="swatch" style="background:#3B6B9C"><p class="sw-name" style="color:#fff">Primary / Brand Blue</p><p class="sw-hex" style="color:#fff">#3B6B9C — CTAs, links, interactive</p></div>
+      <div class="swatch" style="background:#18181B"><p class="sw-name" style="color:#fff">Ink / Dark Text</p><p class="sw-hex" style="color:#fff">#18181B — headings on light backgrounds</p></div>
+    </div>
+  </div>
+
+  <!-- NOISE LEVELS -->
+  <div class="section-lbl">↳ Noise Texture — Three Intensities</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+    <div class="card c-cobalt noise-light" style="min-height:80px">
+      <span class="mono white-muted">noise-light · 3.5% opacity</span>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px">Amber cards, cream cards. Barely-there warmth.</p>
+    </div>
+    <div class="card c-cobalt noise" style="min-height:80px">
+      <span class="mono white-muted">noise · 5.5% opacity</span>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px">Black and Red cards. Standard richness.</p>
+    </div>
+    <div class="card c-cobalt noise-heavy" style="min-height:80px">
+      <span class="mono white-muted">noise-heavy · 9% opacity</span>
+      <p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px">Cobalt and Green cards. Maximum depth.</p>
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY SCALE -->
+  <div class="section-lbl">↳ Type System</div>
+  <div class="card c-cream" style="padding:28px 32px">
+    <p style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:.2em;color:#999;text-transform:uppercase;font-weight:400;margin-bottom:20px">Display: Syne 800 · Body: Syne 400 · Labels: DM Mono</p>
+    <p style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;letter-spacing:-.03em;line-height:1;color:#111">Stop studying blind.</p>
+    <p style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.1;color:#111;margin-top:10px">Section headline lives here.</p>
+    <p style="font-family:'Syne',sans-serif;font-size:15px;font-weight:400;color:#555;line-height:1.7;margin-top:10px;max-width:520px">Body text is Syne 400. Comfortable reading size, generous line height. Never Inter, never Roboto, never system-ui on display surfaces.</p>
+    <div style="display:flex;gap:24px;margin-top:16px;align-items:baseline">
+      <span style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#999">[ MONO LABELS ]</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;color:#3B6B9C;letter-spacing:.05em">version 2.0.1</span>
+      <span style="font-family:'DM Mono',monospace;font-size:11px;color:#E63329">⚠ critical</span>
+    </div>
+  </div>
+
+</div>

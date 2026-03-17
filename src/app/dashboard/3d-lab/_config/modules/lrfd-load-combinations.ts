@@ -62,8 +62,8 @@ export const lrfdLoadCombinationsConfig: AnimatedSequenceConfig = {
         { id: 'd-arrow', type: 'cone', args: [0.08, 0.22, 8], position: [-0.7, 3.62, 0], rotation: [Math.PI, 0, 0], color: '#71717a', label: '1.2D' },
         { id: 'd-shaft', type: 'box', args: [0.03, 0.28, 0.03], position: [-0.7, 3.88, 0], color: '#71717a' },
         // Live load (blue, largest arrows)
-        { id: 'l1-arrow', type: 'cone', args: [0.12, 0.38, 8], position: [0, 3.7, 0], rotation: [Math.PI, 0, 0], color: '#3B6B9C', label: '1.6L' },
-        { id: 'l1-shaft', type: 'box', args: [0.05, 0.45, 0.05], position: [0, 4.08, 0], color: '#3B6B9C' },
+        { id: 'l1-arrow', type: 'cone', args: [0.12, 0.38, 8], position: [0, 3.7, 0], rotation: [Math.PI, 0, 0], color: '#1B3FC4', label: '1.6L' },
+        { id: 'l1-shaft', type: 'box', args: [0.05, 0.45, 0.05], position: [0, 4.08, 0], color: '#1B3FC4' },
         // Roof live (green, small)
         { id: 'lr-arrow', type: 'cone', args: [0.07, 0.18, 8], position: [0.7, 3.6, 0], rotation: [Math.PI, 0, 0], color: '#2D9F6F', label: '0.5Lr' },
         { id: 'lr-shaft', type: 'box', args: [0.03, 0.22, 0.03], position: [0.7, 3.82, 0], color: '#2D9F6F' },

@@ -134,11 +134,11 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         { id: 'frame-right', type: 'box', args: [0.05, 2.2, 0.22], position: [0.475, 1.1, 0], color: '#57534e' },
         { id: 'frame-top', type: 'box', args: [1.0, 0.05, 0.22], position: [0, 2.125, 0], color: '#57534e' },
         // Clear width measurement line
-        { id: 'clear-width-line', type: 'box', args: [0.86, 0.008, 0.008], position: [0.02, 0.5, 0.15], color: '#3B6B9C', label: '860mm clear width' },
+        { id: 'clear-width-line', type: 'box', args: [0.86, 0.008, 0.008], position: [0.02, 0.5, 0.15], color: '#1B3FC4', label: '860mm clear width' },
         // Left marker
-        { id: 'cw-left', type: 'box', args: [0.008, 0.15, 0.008], position: [-0.41, 0.5, 0.15], color: '#3B6B9C' },
+        { id: 'cw-left', type: 'box', args: [0.008, 0.15, 0.008], position: [-0.41, 0.5, 0.15], color: '#1B3FC4' },
         // Right marker
-        { id: 'cw-right', type: 'box', args: [0.008, 0.15, 0.008], position: [0.45, 0.5, 0.15], color: '#3B6B9C' },
+        { id: 'cw-right', type: 'box', args: [0.008, 0.15, 0.008], position: [0.45, 0.5, 0.15], color: '#1B3FC4' },
         // EXIT sign
         { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
       ],

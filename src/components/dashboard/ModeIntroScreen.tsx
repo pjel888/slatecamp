@@ -42,10 +42,10 @@ export function ModeIntroScreen({
       title: isSubjectMode ? 'Subject Mode' : 'Camp Mode',
       icon: isSubjectMode ? Target : Brain,
       color: isSubjectMode ? 'text-primary' : 'text-primary',
-      bgColor: isSubjectMode ? 'bg-[#F0F5FA]' : 'bg-[#F0F5FA]',
+      bgColor: isSubjectMode ? 'bg-[#EEF2FC]' : 'bg-[#EEF2FC]',
       description: isSubjectMode
-        ? "Focused practice on a specific syllabus area. Every answer comes with instant feedback and expert rationales to deepen your understanding."
-        : "Build solid foundations at your own pace. Every answer comes with instant feedback and clear rationales so you always know the why.",
+        ? 'Focused practice on a specific syllabus area. Every answer comes with instant feedback and expert rationales to deepen your understanding.'
+        : 'Build solid foundations at your own pace. Every answer comes with instant feedback and clear rationales so you always know the why.',
       specs: [
         { label: 'Immediate Feedback', value: 'Enabled', icon: BookOpen },
         { label: 'Detailed Rationales', value: 'SME Authored', icon: Target },
@@ -71,7 +71,7 @@ export function ModeIntroScreen({
       title: 'Chill Mode',
       icon: Coffee,
       color: 'text-primary',
-      bgColor: 'bg-[#F0F5FA]',
+      bgColor: 'bg-[#EEF2FC]',
       description:
         'Relaxed reading and passive review. Reveal answers with a single tap — no scores, no pressure, just learning.',
       specs: [
@@ -119,7 +119,9 @@ export function ModeIntroScreen({
             className={cn(
               'w-20 h-20 rounded-sm flex items-center justify-center border shadow-sm',
               modeConfig.bgColor,
-              modeConfig.color.replace('text-', 'border-').replace('600', '200'),
+              modeConfig.color
+                .replace('text-', 'border-')
+                .replace('600', '200'),
             )}
           >
             <SCIcon icon={Icon} size='xl' />
@@ -161,7 +163,7 @@ export function ModeIntroScreen({
         <div className='pt-8 flex flex-col gap-4'>
           <Button
             onClick={onStart}
-            className='w-full h-12 bg-primary text-white rounded-md font-semibold text-sm hover:bg-[#2F5A85] transition-colors flex items-center justify-center gap-2'
+            className='w-full h-12 bg-primary text-white rounded-md font-semibold text-sm hover:bg-[#1535A8] transition-colors flex items-center justify-center gap-2'
           >
             Begin Session
             <SCIcon icon={CaretRight} size='md' />

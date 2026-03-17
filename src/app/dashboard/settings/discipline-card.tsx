@@ -25,7 +25,7 @@ export function DisciplineCard() {
     <Card className='border-zinc-200 shadow-sm overflow-hidden'>
       <CardHeader className='bg-zinc-50/50 border-b border-zinc-100'>
         <div className='flex items-center gap-3'>
-          <div className='bg-[#F0F5FA] p-2 rounded-md'>
+          <div className='bg-[#EEF2FC] p-2 rounded-md'>
             <SCIcon icon={GraduationCap} size="md" className='text-primary' />
           </div>
           <div>
@@ -48,7 +48,7 @@ export function DisciplineCard() {
                 disabled={isSwitching}
                 className={cn(
                   'w-full flex items-center justify-between p-4 text-left transition-all hover:bg-zinc-50 disabled:opacity-50',
-                  isActive && 'bg-[#F0F5FA]/30'
+                  isActive && 'bg-[#EEF2FC]/30'
                 )}
               >
                 <div className='flex items-center gap-4'>

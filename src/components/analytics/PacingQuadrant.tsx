@@ -128,7 +128,7 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
                 <Tooltip content={<CustomTooltip />} />
                 {/* Quadrant backgrounds */}
                 <ReferenceArea x1={0} x2={targetTimeMs} y1={passingAccuracy} y2={100} fill="#2D9F6F" fillOpacity={0.03} />
-                <ReferenceArea x1={targetTimeMs} x2={maxSec * 1000} y1={passingAccuracy} y2={100} fill="#3B6B9C" fillOpacity={0.03} />
+                <ReferenceArea x1={targetTimeMs} x2={maxSec * 1000} y1={passingAccuracy} y2={100} fill="#1B3FC4" fillOpacity={0.03} />
                 <ReferenceArea x1={0} x2={targetTimeMs} y1={0} y2={passingAccuracy} fill="#D4951A" fillOpacity={0.04} />
                 <ReferenceArea x1={targetTimeMs} x2={maxSec * 1000} y1={0} y2={passingAccuracy} fill="#ef4444" fillOpacity={0.03} />
                 {/* Reference lines */}

@@ -14,7 +14,7 @@ export const PredictiveRemediationCTA = () => {
             the biggest difference — built just for you.
           </p>
         </div>
-        <Button className='mt-1 h-9 rounded-sm bg-primary px-4 text-xs font-medium text-white shadow-sm hover:bg-[#2F5A85]'>
+        <Button className='mt-1 h-9 rounded-sm bg-primary px-4 text-xs font-medium text-white shadow-sm hover:bg-[#1535A8]'>
           Start 30-Question Session
         </Button>
       </CardContent>

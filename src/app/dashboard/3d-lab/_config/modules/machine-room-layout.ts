@@ -42,7 +42,7 @@ const PATHS: PathDef[] = [
     id: 'chilled-water',
     label: 'Chilled Water Supply/Return',
     points: [[5.5, 9], [11, 9], [22, 9], [23, 9]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 2,
   },
   {
@@ -94,7 +94,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [26, 3],
     size: [2, 2],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     description: 'CHWP — 0.6m clearance all around',
     codeCitation: 'PMEC',
   },
@@ -104,7 +104,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [29, 3],
     size: [2, 2],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     codeCitation: 'PMEC',
   },
   {

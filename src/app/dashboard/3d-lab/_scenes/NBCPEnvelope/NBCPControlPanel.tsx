@@ -143,7 +143,7 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
           <button
             key={preset.label}
             onClick={() => applyPreset(preset)}
-            className="text-[11px] font-medium text-primary border border-primary/30 rounded px-1.5 py-0.5 hover:bg-[#F0F5FA] transition-colors"
+            className="text-[11px] font-medium text-primary border border-primary/30 rounded px-1.5 py-0.5 hover:bg-[#EEF2FC] transition-colors"
           >
             {preset.label}
           </button>

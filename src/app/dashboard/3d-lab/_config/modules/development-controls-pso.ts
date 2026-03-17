@@ -151,7 +151,7 @@ function geometry(
 
   const offsetZ = ((ctrl.setbackFront - ctrl.setbackRear) / 2) * s
 
-  const buildColor = overBHL || overFAR ? '#D64545' : '#3B6B9C'
+  const buildColor = overBHL || overFAR ? '#D64545' : '#1B3FC4'
 
   const instructions: GeometryInstruction[] = []
 
@@ -223,7 +223,7 @@ function geometry(
       type: 'box',
       position: [0, i * floorH * s + 0.01, -offsetZ],
       args: [bw, 0.003, bd],
-      color: '#2F5A85',
+      color: '#1535A8',
       opacity: 0.5,
       transparent: true,
     })

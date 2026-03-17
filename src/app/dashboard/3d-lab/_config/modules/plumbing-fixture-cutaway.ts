@@ -86,7 +86,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'box',
         args: [SLAB_WIDTH, 0.02, SLAB_DEPTH],
         position: [0, 0.61, 0],
-        color: '#3B6B9C',
+        color: '#1B3FC4',
       },
     },
     // 5. Floor tile

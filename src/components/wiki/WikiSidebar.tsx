@@ -79,7 +79,7 @@ export function WikiSidebar({
             </p>
           </div>
           <Link href='/dashboard/settings'>
-            <button className='text-[11px] font-bold text-primary hover:text-[#2F5A85] uppercase tracking-wider mt-2 cursor-pointer'>
+            <button className='text-[11px] font-bold text-primary hover:text-[#1535A8] uppercase tracking-wider mt-2 cursor-pointer'>
               Go to Settings
             </button>
           </Link>
@@ -121,7 +121,7 @@ export function WikiSidebar({
           /* CATEGORY: Toggle and Navigation */
           <div className={cn(
             'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group min-w-0',
-            isActive ? 'bg-[#F0F5FA]/50' : 'hover:bg-zinc-100',
+            isActive ? 'bg-[#EEF2FC]/50' : 'hover:bg-zinc-100',
             isChild && 'pl-2'
           )}>
             <button
@@ -138,7 +138,7 @@ export function WikiSidebar({
               href={`/dashboard/wiki/${node.slug ?? ''}`}
               className={cn(
                 'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate min-w-0',
-                isActive ? 'text-[#2F5A85]' : 'text-zinc-700'
+                isActive ? 'text-[#1535A8]' : 'text-zinc-700'
               )}
             >
               <SCIcon icon={Folder} size="xs" className={cn('shrink-0', isActive ? 'text-primary' : 'text-zinc-400')} />
@@ -152,7 +152,7 @@ export function WikiSidebar({
             className={cn(
               'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group min-w-0',
               isActive
-                ? 'text-[#2F5A85] bg-[#F0F5FA]'
+                ? 'text-[#1535A8] bg-[#EEF2FC]'
                 : 'text-zinc-600 hover:text-zinc-900 hover:bg-white',
               isChild && 'ml-3.5',
             )}
@@ -187,7 +187,7 @@ export function WikiSidebar({
                   className={cn(
                     'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all min-w-0',
                     isArtActive
-                      ? 'bg-[#F0F5FA] text-[#2F5A85] font-medium'
+                      ? 'bg-[#EEF2FC] text-[#1535A8] font-medium'
                       : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
                   )}
                 >

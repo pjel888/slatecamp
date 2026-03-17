@@ -1,0 +1,103 @@
+import {
+  FeatureSectionLayout,
+  FeatureCheckItem,
+  SectionEyebrow,
+  FeaturePill,
+} from '@/components/marketing/FeatureSectionLayout'
+
+/* ── Wiki mockup ── */
+
+const WikiMockup = () => (
+  <div className='overflow-hidden rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7]'>
+    {/* Header */}
+    <div className='flex items-center gap-2.5 border-b border-[#E8E4DC] px-4 py-3'>
+      <div className='h-2 w-2 rounded-full bg-[#1B7A3C]' />
+      <span className='text-[13px] font-bold text-[#111]'>
+        Building Technology — Firewall Requirements
+      </span>
+    </div>
+
+    {/* Table of contents */}
+    <div className='border-b border-[#E8E4DC] bg-[#F2F0EB] px-4 py-3'>
+      <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-[#888]'>On this page</div>
+      {['Definition & Purpose', 'Height Requirements', 'Construction Standards', 'Common Exam Questions'].map(
+        (item) => (
+          <div
+            key={item}
+            className='mb-1 border-l-2 border-[#1B7A3C] pl-2 text-[11px] text-[#1B7A3C]'
+          >
+            {item}
+          </div>
+        ),
+      )}
+    </div>
+
+    {/* Article body */}
+    <div className='px-4 py-4'>
+      <h3 className='mb-2 text-[14px] font-bold text-[#111]'>Height Requirements</h3>
+      <p className='mb-3 text-[11px] leading-relaxed text-[#6B6B6B]'>
+        A firewall must extend at least 0.50m above the highest point of the roof it protects.
+        For buildings with combustible roofs, the firewall must project at least 0.60m above
+        the roofline on both sides.
+      </p>
+      <div className='mb-3 rounded-[6px] bg-[#111] px-3 py-2 font-mono text-[11px] text-[#4ade80]'>
+        PD 1096 § 1207 — Firewall Construction
+      </div>
+      <div className='flex flex-wrap items-center gap-1.5'>
+        <FeaturePill variant='green'>PD 1096</FeaturePill>
+        <FeaturePill variant='cobalt'>Building Technology</FeaturePill>
+        <span className='text-[11px] text-[#1B3FC4] underline'>12 related questions →</span>
+      </div>
+    </div>
+  </div>
+)
+
+/* ── Wiki Section ── */
+
+export const WikiSection = () => (
+  <FeatureSectionLayout flip>
+    {/* Copy — right (visually right due to flip) */}
+    <div>
+      <SectionEyebrow label='Wiki' />
+
+      <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+        Every code provision, every principle.
+        <br />
+        Organized like an encyclopedia.
+        <br />
+        Cited like a reference.
+      </h2>
+
+      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
+        No more hunting through PDFs. The SlateCamp Wiki maps every ALE
+        topic to its source — PD 1096, RA 9266, NBCP, and more — with
+        your personal notes workspace alongside.
+      </p>
+
+      {/* Feature chips */}
+      <div className='mt-5 flex flex-wrap gap-2'>
+        <FeaturePill variant='green'>All ALE subjects covered</FeaturePill>
+        <FeaturePill variant='green'>Linked to questions</FeaturePill>
+        <FeaturePill variant='green'>Personal notes workspace</FeaturePill>
+        <FeaturePill variant='green'>PD 1096 · RA 9266 · NBCP</FeaturePill>
+      </div>
+
+      {/* Check items */}
+      <div className='mt-8 space-y-5'>
+        <FeatureCheckItem
+          title='Linked directly to quiz questions'
+          description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
+          accentColor='#1B7A3C'
+        />
+        <FeatureCheckItem
+          title='Your notes, your workspace'
+          description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
+          accentColor='#1B7A3C'
+        />
+      </div>
+    </div>
+
+    {/* Mockup — left (visually left due to flip) */}
+    <WikiMockup />
+  </FeatureSectionLayout>
+)

@@ -35,7 +35,7 @@ export const SlateCampLogo = ({
     isDefault || isInverted
       ? isInverted
         ? 'text-zinc-100'
-        : 'text-[#2F5A85]'
+        : 'text-[#1535A8]'
       : 'text-text-primary',
   )
 

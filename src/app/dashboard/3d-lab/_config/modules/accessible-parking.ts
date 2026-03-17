@@ -32,7 +32,7 @@ const PATHS: PathDef[] = [
     id: 'accessible-route',
     label: 'Accessible Route to Entry',
     points: [[2, 5], [2, 17.5], [10, 17.5], [10, 20]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
     animated: true,
   },

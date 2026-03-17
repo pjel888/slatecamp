@@ -43,7 +43,7 @@ export const standpipeClassesConfig: CutawaySectionConfig = {
       description: 'Class II standpipe: 40mm (1½") outlets for trained occupant use. Includes hose, nozzle, and cabinet.',
       codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
       depth: 0.5,
-      geometry: { id: 'geo-c2', type: 'cylinder', args: [0.02, 0.02, 4.0, 12], position: [0, 2.15, 0], color: '#3B6B9C' },
+      geometry: { id: 'geo-c2', type: 'cylinder', args: [0.02, 0.02, 4.0, 12], position: [0, 2.15, 0], color: '#1B3FC4' },
     },
     {
       id: 'class2-cabinet',
@@ -52,7 +52,7 @@ export const standpipeClassesConfig: CutawaySectionConfig = {
       description: 'Class II hose cabinet with 1½" hose, nozzle, and shutoff valve. For occupant first aid firefighting.',
       codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
       depth: 0.6,
-      geometry: { id: 'geo-c2cab', type: 'box', args: [0.6, 0.5, 0.15], position: [0.3, 1.3, 0], color: '#2F5A85' },
+      geometry: { id: 'geo-c2cab', type: 'box', args: [0.6, 0.5, 0.15], position: [0.3, 1.3, 0], color: '#1535A8' },
     },
     {
       id: 'class3-riser',

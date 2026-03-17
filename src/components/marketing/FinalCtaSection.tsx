@@ -1,13 +1,4 @@
 import Link from 'next/link'
-import { Instrument_Serif } from 'next/font/google'
-import { NoiseOverlay } from '@/components/marketing/LandingPrimitives'
-
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 export const FinalCtaSection = ({
   ctaHref,
@@ -19,22 +10,19 @@ export const FinalCtaSection = ({
   isLoggedIn: boolean
 }) => (
   <section aria-label='Get started' className='px-6 pb-24'>
-    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-lg bg-[#3B6B9C] px-8 py-20 text-center text-white'>
-      <NoiseOverlay opacity={0.02} />
+    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-[10px] bg-[#111111] px-8 py-20 text-center text-white noise'>
       <div className='relative z-10'>
-        <h2 className='text-[clamp(1.75rem,3.5vw,2.5rem)] font-semibold tracking-tight text-zinc-50'>
-          Ready to pass your board exam?
+        <h2 className='font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3.5vw,2.5rem)] font-extrabold tracking-tight text-white'>
+          The exam doesn&apos;t wait for you to feel ready.
         </h2>
-        <p
-          className={`${serif.className} mt-3 text-[17px] italic text-zinc-300`}
-        >
+        <p className='mx-auto mt-3 max-w-lg text-[15px] italic leading-relaxed text-white/55'>
           {isLoggedIn
-            ? 'Head to your dashboard to continue studying.'
-            : 'One platform. Everything verified. No doubt.'}
+            ? 'Your Readiness Score is waiting. Keep building toward it.'
+            : 'SlateCamp shows you exactly where you stand, what to fix, and when you\u2019re genuinely ready. Start free \u2014 no card needed.'}
         </p>
         <Link
           href={ctaHref}
-          className='mt-10 inline-flex rounded-sm bg-primary px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:bg-[#2F5A85] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+          className='mt-10 inline-flex rounded-sm bg-[#1B3FC4] px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2'
         >
           {ctaLabel}
         </Link>

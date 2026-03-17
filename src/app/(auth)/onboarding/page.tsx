@@ -70,16 +70,18 @@ export default async function OnboardingPage() {
             {disciplines?.map((discipline: Discipline) => (
               <label
                 key={discipline.discipline_id}
-                className='flex items-center justify-between rounded-md border border-zinc-200 p-4 transition-colors hover:border-primary hover:bg-[#F0F5FA]/50 cursor-pointer group'
+                className='flex items-center justify-between rounded-md border border-zinc-200 p-4 transition-colors hover:border-primary hover:bg-[#EEF2FC]/50 cursor-pointer group'
               >
                 <div className='flex items-center gap-3'>
-                  <div className='flex h-10 w-10 items-center justify-center rounded-md bg-zinc-100 text-zinc-900 transition-colors group-hover:bg-[#F0F5FA] group-hover:text-primary'>
+                  <div className='flex h-10 w-10 items-center justify-center rounded-md bg-zinc-100 text-zinc-900 transition-colors group-hover:bg-[#EEF2FC] group-hover:text-primary'>
                     <span className='text-xs font-bold'>
                       {discipline.acronym}
                     </span>
                   </div>
                   <div>
-                    <p className='text-sm font-medium text-zinc-900'>{discipline.name}</p>
+                    <p className='text-sm font-medium text-zinc-900'>
+                      {discipline.name}
+                    </p>
                   </div>
                 </div>
                 <input
@@ -95,7 +97,7 @@ export default async function OnboardingPage() {
 
           <button
             type='submit'
-            className='flex w-full justify-center rounded-md bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#2F5A85] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2'
+            className='flex w-full justify-center rounded-md bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#1535A8] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2'
           >
             Continue
           </button>

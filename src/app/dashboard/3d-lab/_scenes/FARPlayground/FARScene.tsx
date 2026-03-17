@@ -76,7 +76,7 @@ export function FARScene() {
       buildingRef.current.position.y = LOT_Y * 2 + nh / 2
     }
     if (buildingMatRef.current) {
-      buildingMatRef.current.color.set(s.isViolation ? '#D64545' : '#3B6B9C')
+      buildingMatRef.current.color.set(s.isViolation ? '#D64545' : '#1B3FC4')
     }
 
     if (!wSettled || !hSettled) invalidate()
@@ -165,7 +165,7 @@ export function FARScene() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#3B6B9C"
+          color="#1B3FC4"
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -180,7 +180,7 @@ export function FARScene() {
         return (
           <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
             <boxGeometry args={[bw, 0.005, bw]} />
-            <meshStandardMaterial color="#2F5A85" transparent opacity={0.4} />
+            <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
           </mesh>
         )
       })}

@@ -80,7 +80,7 @@ A prompt-engineered anti-hallucination pipeline (`src/lib/ai/prompts.ts`) that f
 
 ## 5. UX/UI Design System: "The Cerebro Standard"
 
-The design system is **Campfire** — warm, inviting, and research-backed. Clean and functional with subtle warmth, Inter typeface, and a muted earth-tone palette anchored by Slate Blue (#3B6B9C).
+The design system is **Campfire** — warm, inviting, and research-backed. Clean and functional with subtle warmth, Inter typeface, and a muted earth-tone palette anchored by Camp Cobalt (#1B3FC4).
 
 - **Color Palette:** Apple-inspired neutrals (`Snow`, `Bone`, `Ash`, `Graphite`, `Charcoal`) with functional signal colors (`Signal Amber`, `Signal Green`, `Signal Red`).
 - **Typography:** Strict sans-serif hierarchy using CSS variables for `--text-primary` through `--text-quaternary`.

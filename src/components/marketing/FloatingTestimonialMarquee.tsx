@@ -294,7 +294,7 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
         }}
       >
         <div className='flex h-full items-start gap-2'>
-          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[11px] font-bold text-[#2F5A85]'>
+          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[11px] font-bold text-[#1535A8]'>
             {config.testimonial.avatar}
           </div>
           <div className='min-w-0 flex-1'>

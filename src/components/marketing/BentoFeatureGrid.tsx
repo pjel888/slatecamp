@@ -1,60 +1,28 @@
-import { Instrument_Serif } from 'next/font/google'
 import {
   Starburst,
   Pill,
   CircleArrow,
 } from '@/components/marketing/LandingPrimitives'
 
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
-
-/* ── Quiz answer mockup ── */
+/* ── Quiz answer mockup (simplified bar style) ── */
 
 const QuizMockup = () => (
-  <div className='space-y-2' aria-hidden='true'>
-    <div className='rounded-sm border border-zinc-200 bg-white/60 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='h-3.5 w-3.5 shrink-0 rounded-full border border-zinc-300' />
-        <div className='h-2 w-3/4 rounded-full bg-zinc-200' />
-      </div>
+  <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
+    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.07] px-3 py-[7px]'>
+      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
+      <div className='h-[7px] w-[72%] rounded-full bg-current opacity-30' />
     </div>
-    <div className='rounded-sm border border-green-300 bg-green-50 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-green-600 text-white'>
-          <svg className='h-2 w-2' viewBox='0 0 20 20' fill='currentColor'>
-            <path
-              fillRule='evenodd'
-              d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-              clipRule='evenodd'
-            />
-          </svg>
-        </div>
-        <div className='h-2 w-2/3 rounded-full bg-green-200' />
-      </div>
+    <div className='flex items-center gap-2 rounded-[5px] border border-green-500/45 bg-green-500/[0.18] px-3 py-[7px]'>
+      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-green-500 bg-green-500' />
+      <div className='h-[7px] w-[55%] rounded-full bg-green-500 opacity-70' />
     </div>
-    <div className='rounded-sm border border-zinc-200 bg-white/60 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='h-3.5 w-3.5 shrink-0 rounded-full border border-zinc-300' />
-        <div className='h-2 w-5/6 rounded-full bg-zinc-200' />
-      </div>
+    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.07] px-3 py-[7px]'>
+      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
+      <div className='h-[7px] w-[80%] rounded-full bg-current opacity-30' />
     </div>
-    <div className='rounded-sm border border-zinc-300 bg-zinc-100 px-4 py-2.5'>
-      <div className='flex items-center gap-3'>
-        <div className='flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-gray-600 text-white'>
-          <svg className='h-2 w-2' viewBox='0 0 20 20' fill='currentColor'>
-            <path
-              fillRule='evenodd'
-              d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-              clipRule='evenodd'
-            />
-          </svg>
-        </div>
-        <div className='h-2 w-1/2 rounded-full bg-zinc-300' />
-      </div>
+    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.04] px-3 py-[7px]'>
+      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
+      <div className='h-[7px] w-[44%] rounded-full bg-current opacity-30' />
     </div>
   </div>
 )
@@ -64,23 +32,27 @@ const QuizMockup = () => (
 const SUBJECTS = [
   { name: 'Structural Design', pct: 85, tone: 'good' as const },
   { name: 'Building Technology', pct: 62, tone: 'neutral' as const },
-  { name: 'Architectural Theory', pct: 41, tone: 'neutral' as const },
-  { name: 'History of Arch.', pct: 73, tone: 'neutral' as const },
+  { name: 'Architectural Theory', pct: 41, tone: 'warn' as const },
+  { name: 'History of Architecture', pct: 73, tone: 'neutral' as const },
   { name: 'Utilities (MEPFS)', pct: 88, tone: 'good' as const },
 ] as const
 
 const MasteryBars = () => (
-  <div className='space-y-3' aria-hidden='true'>
+  <div className='space-y-[7px]' aria-hidden='true'>
     {SUBJECTS.map((s) => (
       <div key={s.name}>
-        <div className='mb-1 flex items-center justify-between'>
-          <span className='text-[11px] text-white/40'>{s.name}</span>
-          <span className='font-mono text-[11px] text-white/70'>{s.pct}%</span>
+        <div className='mb-[3px] flex items-center justify-between font-[family-name:var(--font-dm-mono)] text-[9px] text-white/40'>
+          <span>{s.name}</span>
+          <span>{s.pct}%</span>
         </div>
-        <div className='h-1.5 w-full overflow-hidden rounded-full bg-white/10'>
+        <div className='h-1 w-full overflow-hidden rounded-[3px] bg-white/10'>
           <div
-            className={`h-full rounded-full ${
-              s.tone === 'good' ? 'bg-green-400' : 'bg-slate-400'
+            className={`h-full rounded-[3px] ${
+              s.tone === 'good'
+                ? 'bg-green-400'
+                : s.tone === 'warn'
+                  ? 'bg-amber-400'
+                  : 'bg-[#e2e2e6]'
             }`}
             style={{ width: `${s.pct}%` }}
           />
@@ -90,87 +62,52 @@ const MasteryBars = () => (
   </div>
 )
 
-/* ── Inline readiness ring (used in Analytics & Engine cards) ── */
+/* ── Inline readiness ring SVG ── */
 
 const RING_R = 36
 const RING_C = 2 * Math.PI * RING_R
 const RING_OFFSET = RING_C - (78 / 100) * RING_C
 
-const ReadinessRingSvg = ({ size = 'h-24 w-24' }: { size?: string }) => (
-  <svg viewBox='0 0 100 100' className={size} aria-hidden='true'>
+const ReadinessRingSvg = ({ size = 82 }: { size?: number }) => (
+  <svg viewBox='0 0 100 100' width={size} height={size} className='shrink-0' aria-hidden='true'>
     <circle
-      cx='50'
-      cy='50'
-      r={RING_R}
-      fill='none'
-      stroke='rgba(255,255,255,0.06)'
-      strokeWidth='5'
+      cx='50' cy='50' r={RING_R}
+      fill='none' stroke='rgba(255,255,255,0.1)' strokeWidth='5'
     />
     <circle
-      cx='50'
-      cy='50'
-      r={RING_R}
-      fill='none'
-      stroke='#E4E4E7'
-      strokeWidth='5'
-      strokeDasharray={RING_C}
-      strokeDashoffset={RING_OFFSET}
-      strokeLinecap='round'
-      transform='rotate(-90 50 50)'
+      cx='50' cy='50' r={RING_R}
+      fill='none' stroke='#E2E2E6' strokeWidth='5'
+      strokeDasharray={RING_C} strokeDashoffset={RING_OFFSET}
+      strokeLinecap='round' transform='rotate(-90 50 50)'
     />
-    <text
-      x='50'
-      y='47'
-      textAnchor='middle'
-      fill='white'
-      fontSize='22'
-      fontWeight='700'
-      fontFamily='system-ui, sans-serif'
-    >
+    <text x='50' y='47' textAnchor='middle' fill='white' fontSize='22' fontWeight='700'
+      style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
       78
     </text>
-    <text
-      x='50'
-      y='62'
-      textAnchor='middle'
-      fill='rgba(255,255,255,0.3)'
-      fontSize='7'
+    <text x='50' y='62' textAnchor='middle' fill='rgba(255,255,255,0.3)' fontSize='6.5'
       letterSpacing='0.15em'
-      fontFamily='system-ui, sans-serif'
-    >
+      style={{ fontFamily: 'var(--font-dm-mono, DM Mono, monospace)' }}>
       READINESS
     </text>
   </svg>
 )
 
-/* ── Heatmap cell colors ── */
+/* ── Heatmap cells ── */
 
-const HEATMAP_COLORS = [
-  'bg-green-500',
-  'bg-green-500',
-  'bg-primary',
-  'bg-primary',
-  'bg-green-500',
-  'bg-zinc-500',
-  'bg-primary',
-  'bg-green-500',
-  'bg-green-500',
-  'bg-primary',
-  'bg-primary',
-  'bg-green-500',
-  'bg-zinc-500',
-  'bg-primary',
-  'bg-primary',
-  'bg-green-500',
-  'bg-green-500',
-  'bg-primary',
-  'bg-green-500',
-  'bg-primary',
-  'bg-zinc-500',
-  'bg-primary',
-  'bg-primary',
-  'bg-green-500',
-] as const
+const HEATMAP: { color: string; opacity: number }[] = [
+  { color: '#4ade80', opacity: 0.8 }, { color: '#4ade80', opacity: 0.8 },
+  { color: '#e2e2e6', opacity: 0.4 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#4ade80', opacity: 0.8 }, { color: '#6b7280', opacity: 0.35 },
+  { color: '#e2e2e6', opacity: 0.4 }, { color: '#4ade80', opacity: 0.8 },
+  { color: '#4ade80', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#e2e2e6', opacity: 0.4 }, { color: '#4ade80', opacity: 0.8 },
+  { color: '#6b7280', opacity: 0.35 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#e2e2e6', opacity: 0.4 }, { color: '#4ade80', opacity: 0.8 },
+  { color: '#4ade80', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#4ade80', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#6b7280', opacity: 0.35 }, { color: '#e2e2e6', opacity: 0.4 },
+  { color: '#e2e2e6', opacity: 0.4 }, { color: '#4ade80', opacity: 0.8 },
+]
 
 /* ── Main Export ── */
 
@@ -185,247 +122,222 @@ export const BentoFeatureGrid = () => (
         Features
       </h2>
 
-      {/* Top row: 3 cols, side cards span 2 rows */}
-      <div className='grid grid-cols-1 gap-3 md:grid-cols-3 md:grid-rows-2'>
-        {/* REVIEW MODE */}
-        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
-          <div>
-            <div className='flex items-center justify-between'>
-              <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
-                [ Review Mode ]
-              </span>
-              <span className='text-amber-500'>
-                <Starburst className='h-4 w-4' />
-              </span>
+      {/* ── Top grid: 3 cols, side cards span 2 rows ── */}
+      <div className='grid grid-cols-1 gap-[10px] md:grid-cols-3 md:grid-rows-2'>
+
+        {/* REVIEW MODE — Camp Black + noise */}
+        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-[10px] bg-[#111111] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+          <div className='relative z-10 flex h-full flex-col justify-between'>
+            <div>
+              <div className='flex items-center justify-between'>
+                <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
+                  [ Review Mode ]
+                </span>
+                <Starburst className='h-4 w-4 text-[#F5A623]' />
+              </div>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
+                Active Recall,
+                <br />
+                Zero Pressure
+              </h3>
+              <p className='mt-2 max-w-[340px] text-[13px] leading-relaxed text-white/50'>
+                No timer. No analytics. Just you and the material — until it sticks.
+              </p>
+              <QuizMockup />
             </div>
-            <h3 className='mt-12 text-[26px] font-semibold leading-tight tracking-tight text-white'>
-              Doomscroll Your Way
-              <br />
-              to Mastery
-            </h3>
-            <p
-              className={`${serif.className} mt-2 text-[16px] italic leading-snug text-white/60`}
-            >
-              Zero-pressure active recall. No timer. No analytics. Just you and
-              the material.
-            </p>
-          </div>
-          <div className='mt-6'>
-            <QuizMockup />
-            <div className='mt-6 flex items-end justify-between'>
-              <div className='flex gap-2'>
+            <div className='mt-4'>
+              <div className='flex gap-[5px]'>
                 <Pill variant='dark'>Active Recall</Pill>
                 <Pill variant='dark'>Stress-Free</Pill>
               </div>
-              <CircleArrow variant='dark' />
-            </div>
-          </div>
-        </div>
-
-        {/* STAT: 84% fail rate */}
-        <div className='landing-reveal landing-delay-2 flex flex-col justify-between rounded-md border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
-          <span className='text-amber-600'>
-            <Starburst className='h-4 w-4' />
-          </span>
-          <div className='mt-8'>
-            <span className='text-[72px] font-extrabold leading-none tracking-tighter text-zinc-900'>
-              84%
-            </span>
-            <p className='mt-3 max-w-[220px] text-[13px] leading-relaxed text-zinc-600'>
-              of architecture examinees don&apos;t pass — but data-driven study
-              can increase pass rates by 30%.
-            </p>
-          </div>
-        </div>
-
-        {/* ANALYTICS */}
-        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
-          <div>
-            <div className='flex items-center justify-between'>
-              <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
-                [ Analytics ]
-              </span>
-              <CircleArrow variant='dark' />
-            </div>
-            <h3 className='mt-12 text-[26px] font-semibold leading-tight tracking-tight text-white'>
-              Your Readiness,
-              <br />
-              Quantified
-            </h3>
-            <p
-              className={`${serif.className} mt-2 text-[16px] italic leading-snug text-white/60`}
-            >
-              Taxonomy heatmap shows exactly where you stand. Every node. Every
-              area to revisit. No hiding.
-            </p>
-          </div>
-          <div className='mt-6'>
-            <div className='flex items-center gap-5'>
-              <ReadinessRingSvg />
-              <div className='flex-1'>
-                <div className='grid grid-cols-6 gap-1.5' aria-hidden='true'>
-                  {HEATMAP_COLORS.map((colorClass, i) => (
-                    <div
-                      key={i}
-                      className={`aspect-square rounded-[3px] opacity-70 ${colorClass}`}
-                    />
-                  ))}
-                </div>
+              <div className='mt-3 flex justify-end'>
+                <CircleArrow variant='dark' />
               </div>
             </div>
-            <div className='mt-4 flex gap-2'>
-              <Pill variant='dark'>IRT-Calibrated</Pill>
-              <Pill variant='dark'>EMA-Weighted</Pill>
+          </div>
+        </div>
+
+        {/* STAT: 1 in 3 — Camp Cream (no noise) */}
+        <div className='landing-reveal landing-delay-2 rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
+          <Starburst className='h-4 w-4 text-[#F5A623]' />
+          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-[#E63329]'>
+            1 in 3
+          </div>
+          <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-[#555]'>
+            ALE examinees don&apos;t pass in a given sitting. Most didn&apos;t know
+            they were at risk.
+          </p>
+          <p className='mt-2 font-[family-name:var(--font-dm-mono)] text-[9px] text-[#aaa]'>
+            Source: PRC official results, 2024–2025
+          </p>
+        </div>
+
+        {/* ANALYTICS — Camp Cobalt + heavy noise */}
+        <div className='landing-reveal landing-delay-3 relative overflow-hidden rounded-[10px] bg-[#1B3FC4] p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+          <div className='relative z-10 flex h-full flex-col justify-between'>
+            <div>
+              <div className='flex items-center justify-between'>
+                <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
+                  [ Analytics ]
+                </span>
+                <CircleArrow variant='dark' />
+              </div>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
+                Your Readiness,
+                <br />
+                Quantified
+              </h3>
+              <p className='mt-2 text-[13px] leading-relaxed text-white/55'>
+                Taxonomy heatmap. Every node. Every gap. No hiding.
+              </p>
+            </div>
+            <div className='mt-5'>
+              <div className='flex items-center gap-4'>
+                <ReadinessRingSvg />
+                <div className='flex-1'>
+                  <div className='grid grid-cols-6 gap-1' aria-hidden='true'>
+                    {HEATMAP.map((cell, i) => (
+                      <div
+                        key={i}
+                        className='aspect-square rounded-[3px]'
+                        style={{ background: cell.color, opacity: cell.opacity }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className='mt-3 flex gap-[5px]'>
+                <Pill variant='dark'>IRT-Calibrated</Pill>
+                <Pill variant='dark'>EMA-Weighted</Pill>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* QUOTE */}
-        <div className='landing-reveal landing-delay-4 flex flex-col justify-between rounded-md border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
-          <p
-            className={`${serif.className} text-[19px] italic leading-snug text-zinc-900`}
-          >
-            &ldquo;Trust the camp, put in the reps, and we will eliminate the{' '}
-            <span className='relative inline-block'>
-              doubt.
-              <svg
-                className='pointer-events-none absolute'
-                style={{
-                  left: '-6px',
-                  top: '-3px',
-                  width: 'calc(100% + 12px)',
-                  height: 'calc(100% + 6px)',
-                }}
-                viewBox='0 0 100 40'
-                preserveAspectRatio='none'
-                fill='none'
-                aria-hidden='true'
-              >
-                <ellipse
-                  cx='50'
-                  cy='20'
-                  rx='47'
-                  ry='17'
-                  stroke='#18181B'
-                  strokeWidth='2'
-                />
-              </svg>
-            </span>
-            &rdquo;
-          </p>
-          <div className='mt-6 flex justify-end'>
-            <CircleArrow variant='light' />
+        {/* QUOTE — Camp Red + noise */}
+        <div className='landing-reveal landing-delay-4 relative overflow-hidden rounded-[10px] bg-[#E63329] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
+          <div className='relative z-10 flex h-full flex-col justify-between'>
+            <div>
+              <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/45'>
+                SlateCamp
+              </span>
+              <p className='mt-3.5 font-[family-name:var(--font-syne)] text-[clamp(15px,1.8vw,19px)] font-bold italic leading-[1.3] text-white'>
+                &ldquo;Trust the camp, put in the reps, and we will eliminate the{' '}
+                <span className='underline decoration-white/40 underline-offset-[3px]'>
+                  doubt.
+                </span>
+                &rdquo;
+              </p>
+            </div>
+            <div className='mt-3 flex justify-end'>
+              <CircleArrow variant='dark' />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom row: 3 equal columns */}
-      <div className='mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3'>
-        {/* 3D LAB */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
-          <div className='flex items-center justify-between'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight'>
-              3D Lab
-            </h3>
-            <span className='text-white/60'>
-              <Starburst className='h-5 w-5' />
-            </span>
-          </div>
-          <div className='mt-14'>
-            <p
-              className={`${serif.className} text-[17px] italic leading-snug text-white/80`}
-            >
+      {/* ── Bottom row: 3 equal columns ── */}
+      <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
+
+        {/* 3D LAB — Camp Green + noise */}
+        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-[10px] bg-[#1B7A3C] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
+          <div className='relative z-10'>
+            <div className='flex items-center justify-between'>
+              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight'>
+                3D Lab
+              </h3>
+              <Starburst className='h-4 w-4 text-[#F5A623]' />
+            </div>
+            <p className='mt-7 text-[13px] italic leading-[1.4] text-white/60'>
               Visual learning,
               <br />
               built different.
             </p>
-            <p className='mt-3 text-[12px] leading-relaxed text-white/60'>
-              WebGL-powered models. Parametric sandbox. Drag Floor Area Ratio —
-              model responds in real time.
+            <p className='mt-2 text-[12px] leading-[1.5] text-white/50'>
+              WebGL-powered models. Drag FAR — model responds in real time.
             </p>
-            <div className='mt-4 flex items-center justify-between'>
+            <div className='mt-3.5 flex items-center justify-between'>
               <Pill variant='dark'>3D Models</Pill>
               <CircleArrow variant='dark' />
             </div>
           </div>
         </div>
 
-        {/* SESSIONS MODE */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
-          <div className='flex items-center justify-between'>
-            <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
-              [ Sessions ]
-            </span>
-            <CircleArrow variant='dark' />
-          </div>
-          <div className='mt-10'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight text-white'>
+        {/* SESSIONS — Camp Amber + light noise */}
+        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-[10px] bg-[#F5A623] p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5'>
+          <div className='relative z-10'>
+            <div className='flex items-center justify-between'>
+              <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-black/40'>
+                [ Sessions ]
+              </span>
+              <CircleArrow variant='amber' />
+            </div>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-[1.1] text-[#111]'>
               Every Answer
               <br />
               Tracked
             </h3>
-            <p className='mt-3 text-[13px] leading-relaxed text-white/60'>
-              Timed quizzes with full analytics. Track performance across
-              domains. Watch your readiness score climb.
+            <p className='mt-2 text-[12px] leading-[1.5] text-black/50'>
+              Timed quizzes, full analytics. Watch your readiness climb.
             </p>
-            <div className='mt-4 flex gap-2'>
-              <Pill variant='dark'>Camp Mode</Pill>
-              <Pill variant='dark'>Storm Mode</Pill>
+            <div className='mt-3 flex gap-[5px]'>
+              <Pill variant='amber'>Camp Mode</Pill>
+              <Pill variant='amber'>Storm Mode</Pill>
             </div>
           </div>
         </div>
 
-        {/* AI-ADAPTIVE */}
-        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
-          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
-            [ Bounded Intelligence ]
-          </span>
-          <div className='mt-10'>
-            <h3 className='text-[22px] font-semibold leading-tight tracking-tight text-white'>
+        {/* AI — Camp Black + heavy noise */}
+        <div className='landing-reveal landing-delay-6 relative overflow-hidden rounded-[10px] bg-[#111111] p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5'>
+          <div className='relative z-10'>
+            <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
+              [ Bounded Intelligence ]
+            </span>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
               AI That Cites
               <br />
               Its Sources
             </h3>
-            <p className='mt-3 text-[13px] leading-relaxed text-white/60'>
+            <p className='mt-2 text-[13px] leading-relaxed text-white/50'>
               Tethered to our verified database. Temperature 0.0. Every response
-              links to its exact source. If it&apos;s not in the database, it
-              says so.
+              links to its exact source.
             </p>
-            <div className='mt-4 flex gap-2'>
+            <div className='mt-3 flex gap-[5px]'>
               <Pill variant='dark'>Zero-Hallucination</Pill>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Full-width analytics showcase */}
-      <div className='landing-reveal mt-3 rounded-md bg-gray-600 p-8 text-white'>
-        <div className='grid grid-cols-1 items-center gap-8 md:grid-cols-2'>
+      {/* ── Full-width Engine card — Camp Cobalt + noise ── */}
+      <div className='landing-reveal mt-[10px] relative overflow-hidden rounded-[10px] bg-[#1B3FC4] p-7 text-white noise md:p-8'>
+        <div className='relative z-10 grid grid-cols-1 items-center gap-7 md:grid-cols-2'>
           <div>
-            <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-amber-500'>
+            <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-[#F5A623]'>
               The Engine
             </span>
-            <h3 className='mt-4 text-[28px] font-semibold leading-tight tracking-tight text-white'>
-              AI-Adaptive Learning
+            <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight tracking-tight text-white'>
+              AI-Adaptive
+              <br />
+              Learning
             </h3>
-            <p className='mt-3 max-w-md text-[14px] leading-relaxed text-white/60'>
+            <p className='mt-3 max-w-[380px] text-[13px] leading-relaxed text-white/60'>
               Item Response Theory adjusts question difficulty to your exact
-              ability level. Spaced repetition schedules reviews at the
-              mathematically optimal interval. Every question is the right
-              question.
+              ability level. Spaced repetition at the mathematically optimal
+              interval.
             </p>
-            <div className='mt-6 flex gap-2'>
+            <div className='mt-4 flex flex-wrap gap-[5px]'>
               <Pill variant='dark'>IRT Engine</Pill>
               <Pill variant='dark'>SM-2 Algorithm</Pill>
               <Pill variant='dark'>Lucky Guess Detector</Pill>
             </div>
           </div>
-          <div className='rounded-md border border-white/10 bg-white/5 p-6'>
-            <div className='mb-4 flex items-center justify-between'>
-              <span className='font-mono text-[11px] tracking-[0.15em] uppercase text-white/50'>
+          <div className='rounded-lg bg-white/[0.09] p-[18px]'>
+            <div className='mb-3.5 flex items-center justify-between'>
+              <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.15em] uppercase text-white/40'>
                 Subject Mastery
               </span>
-              <ReadinessRingSvg size='h-16 w-16' />
+              <ReadinessRingSvg size={50} />
             </div>
             <MasteryBars />
           </div>

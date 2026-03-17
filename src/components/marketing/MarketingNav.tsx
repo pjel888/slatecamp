@@ -28,17 +28,17 @@ export async function MarketingNav({
       activeRoute === href
         ? isDark
           ? 'text-white'
-          : 'text-zinc-900'
+          : 'text-[#18181B]'
         : isDark
           ? 'text-white/60 hover:text-white'
-          : 'text-zinc-500 hover:text-zinc-800',
+          : 'text-[#6B6B6B] hover:text-[#18181B]',
     )
 
   const headerClass = cn(
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
       ? 'border-white/10 bg-primary/80 text-white'
-      : 'border-zinc-200 bg-white/80 text-zinc-900',
+      : 'border-[#E8E4DC] bg-[#FFFDF7]/90 text-zinc-900',
   )
 
   return (
@@ -66,7 +66,7 @@ export async function MarketingNav({
         <nav
           className={cn(
             'hidden items-center gap-1 text-[13px] sm:flex',
-            isDark ? 'text-white/60' : 'text-zinc-500',
+            isDark ? 'text-white/60' : 'text-[#6B6B6B]',
           )}
         >
           {activeRoute === '/' ? (
@@ -102,8 +102,8 @@ export async function MarketingNav({
               className={cn(
                 'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                 isDark
-                  ? 'bg-primary hover:bg-[#2F5A85]'
-                  : 'bg-primary hover:bg-[#2F5A85]',
+                  ? 'bg-primary hover:bg-[#1535A8]'
+                  : 'bg-primary hover:bg-[#1535A8]',
               )}
             >
               Go to dashboard
@@ -116,7 +116,7 @@ export async function MarketingNav({
                   'rounded-sm px-4 py-3 text-[13px] transition-colors duration-150',
                   isDark
                     ? 'text-white/60 hover:text-white'
-                    : 'text-zinc-500 hover:text-zinc-800',
+                    : 'text-[#6B6B6B] hover:text-[#18181B]',
                 )}
               >
                 Log in
@@ -126,11 +126,11 @@ export async function MarketingNav({
                 className={cn(
                   'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                   isDark
-                    ? 'bg-primary hover:bg-[#2F5A85]'
-                    : 'bg-primary hover:bg-[#2F5A85]',
+                    ? 'bg-primary hover:bg-[#1535A8]'
+                    : 'bg-primary hover:bg-[#1535A8]',
                 )}
               >
-                Get Started
+                Join Free →
               </Link>
             </>
           )}

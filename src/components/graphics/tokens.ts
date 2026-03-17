@@ -7,9 +7,9 @@
 
 // ── Core palette (static values for SVG/Canvas contexts) ──
 export const palette = {
-  slateBlue: '#3B6B9C',
-  slateBlue50: '#F0F5FA',
-  slateBlue700: '#2F5A85',
+  slateBlue: '#1B3FC4',
+  slateBlue50: '#EEF2FC',
+  slateBlue700: '#1535A8',
   campOrange: '#E8853A',
   campOrangeHover: '#D4751A',
   emerald: '#2D9F6F',
@@ -30,7 +30,7 @@ export const palette = {
 
 // ── CSS custom property references (for use in JSX style props) ──
 export const cssVars = {
-  primary: 'var(--gc-primary, #3B6B9C)',
+  primary: 'var(--gc-primary, #1B3FC4)',
   accent: 'var(--gc-accent, #E8853A)',
   success: 'var(--gc-success, #2D9F6F)',
   danger: 'var(--gc-danger, #D64545)',

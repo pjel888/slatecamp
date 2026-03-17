@@ -40,7 +40,7 @@ const PATHS: PathDef[] = [
     id: 'path-office-b-to-exit',
     label: 'Office B → Exit B (Travel Distance)',
     points: [[19, 5], [19, 21], [22.5, 21], [22.5, 25.5]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
     animated: true,
   },

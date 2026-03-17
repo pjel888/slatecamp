@@ -34,7 +34,7 @@ export default async function AdminDashboardPage() {
 
       <div className="grid gap-6 md:grid-cols-3">
         {[
-          { label: "Questions", value: stats.questions, href: "/admin/questions", icon: Question, color: "text-primary", bg: "bg-[#F0F5FA]" },
+          { label: "Questions", value: stats.questions, href: "/admin/questions", icon: Question, color: "text-primary", bg: "bg-[#EEF2FC]" },
           { label: "Wiki Articles", value: stats.wiki, href: "/admin/wiki", icon: FileText, color: "text-green-600", bg: "bg-green-50" },
           { label: "3D Assets", value: stats.assets, href: "/admin/assets", icon: Cube, color: "text-zinc-600", bg: "bg-zinc-50" },
         ].map((c) => (

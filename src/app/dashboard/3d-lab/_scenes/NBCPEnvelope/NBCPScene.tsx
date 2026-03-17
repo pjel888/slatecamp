@@ -70,7 +70,7 @@ export function NBCPScene() {
 
     // Building color: blue = compliant, red = BHL violated
     if (buildingMatRef.current) {
-      const color = computed.violations.length > 0 ? '#D64545' : '#3B6B9C'
+      const color = computed.violations.length > 0 ? '#D64545' : '#1B3FC4'
       buildingMatRef.current.color.set(color)
     }
 
@@ -272,7 +272,7 @@ export function NBCPScene() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#3B6B9C"
+          color="#1B3FC4"
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -288,7 +288,7 @@ export function NBCPScene() {
         return (
           <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
             <boxGeometry args={[bw, 0.005, bd]} />
-            <meshStandardMaterial color="#2F5A85" transparent opacity={0.4} />
+            <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
           </mesh>
         )
       })}

@@ -36,7 +36,7 @@ const PATHS: PathDef[] = [
     id: 'pedestrian-path',
     label: 'Pedestrian Walkway',
     points: [[1, 0], [1, 26]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 2,
   },
 ]

@@ -36,7 +36,7 @@ const PATHS: PathDef[] = [
     id: 'supply-main',
     label: 'Main Supply Duct',
     points: [[4.5, 22], [4.5, 19], [4.5, 0]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 4,
   },
   {

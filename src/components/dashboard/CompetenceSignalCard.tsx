@@ -28,7 +28,7 @@ export function CompetenceSignalCard({
       value: totalAnswered > 0 ? formatCount(totalAnswered) : '—',
       label: 'Questions answered',
       color: 'text-primary',
-      bg: 'bg-[#F0F5FA]',
+      bg: 'bg-[#EEF2FC]',
     },
     {
       icon: TrendUp,

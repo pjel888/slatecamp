@@ -255,7 +255,7 @@ function generateSprinklers(): FixtureDef[] {
         label: '',
         type: 'sprinkler',
         position: [x, z],
-        color: '#3B6B9C',
+        color: '#1B3FC4',
       })
     }
   }

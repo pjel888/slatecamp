@@ -41,7 +41,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const scumH = tD * 0.1
   const liquidH = tD - sludgeH - scumH
   inst.push({ id: 'sludge', type: 'box', position: [0, sludgeH / 2, 0], args: [tL - wallT, sludgeH, tW - wallT], color: '#78350f', opacity: 0.9, transparent: true, label: 'Sludge' })
-  inst.push({ id: 'liquid', type: 'box', position: [0, sludgeH + liquidH / 2, 0], args: [tL - wallT, liquidH, tW - wallT], color: '#2F5A85', opacity: 0.35, transparent: true, label: 'Effluent' })
+  inst.push({ id: 'liquid', type: 'box', position: [0, sludgeH + liquidH / 2, 0], args: [tL - wallT, liquidH, tW - wallT], color: '#1535A8', opacity: 0.35, transparent: true, label: 'Effluent' })
   inst.push({ id: 'scum', type: 'box', position: [0, sludgeH + liquidH + scumH / 2, 0], args: [tL - wallT, scumH, tW - wallT], color: '#4d7c0f', opacity: 0.6, transparent: true, label: 'Scum' })
 
   // Baffle / divider

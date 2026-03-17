@@ -50,7 +50,7 @@ export const roofTrussHoweConfig: ExplodedAssemblyConfig = {
       id: 'howe-vert-centre',
       label: 'Central Tension Hanger',
       description: 'Tallest vertical tension hanger at centre. Carries load from ridge panel point down to bottom chord centre.',
-      geometry: { id: 'howe-vert-centre-geo', type: 'box', position: [0, 0.22, 0], args: [0.04, 0.42, 0.04], color: '#2F5A85' },
+      geometry: { id: 'howe-vert-centre-geo', type: 'box', position: [0, 0.22, 0], args: [0.04, 0.42, 0.04], color: '#1535A8' },
       explodeOffset: yOff(0.5),
     },
     {

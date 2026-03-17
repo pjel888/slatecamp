@@ -69,7 +69,8 @@ export function CustomSessionBuilder({
             </DialogTitle>
           </div>
           <DialogDescription className='text-zinc-500'>
-            Choose the topics, question count, and feedback style that fit what you need today.
+            Choose the topics, question count, and feedback style that fit what
+            you need today.
           </DialogDescription>
         </DialogHeader>
 
@@ -83,7 +84,7 @@ export function CustomSessionBuilder({
               <Button
                 variant='ghost'
                 size='sm'
-                className='h-7 text-[11px] font-semibold text-primary hover:text-[#2F5A85] hover:bg-[#F0F5FA]'
+                className='h-7 text-[11px] font-semibold text-primary hover:text-[#1535A8] hover:bg-[#EEF2FC]'
                 onClick={() =>
                   setSelectedSubjects(subjects.map((s) => s.node_id))
                 }
@@ -105,15 +106,24 @@ export function CustomSessionBuilder({
                   <div className='flex items-center gap-3'>
                     <SCIcon
                       icon={BookOpen}
-                      size="sm"
-                      className={selectedSubjects.includes(subject.node_id) ? 'text-zinc-400' : 'text-zinc-300'}
+                      size='sm'
+                      className={
+                        selectedSubjects.includes(subject.node_id)
+                          ? 'text-zinc-400'
+                          : 'text-zinc-300'
+                      }
                     />
                     <span className='text-[13px] font-medium truncate'>
                       {subject.name}
                     </span>
                   </div>
                   {selectedSubjects.includes(subject.node_id) && (
-                    <SCIcon icon={CheckCircle} size='sm' weight='fill' className='text-white' />
+                    <SCIcon
+                      icon={CheckCircle}
+                      size='sm'
+                      weight='fill'
+                      className='text-white'
+                    />
                   )}
                 </button>
               ))}
@@ -169,7 +179,7 @@ export function CustomSessionBuilder({
           <Button
             onClick={handleStart}
             disabled={selectedSubjects.length === 0}
-            className='w-full h-12 text-base font-bold bg-primary hover:bg-[#2F5A85] text-white rounded-md'
+            className='w-full h-12 text-base font-bold bg-primary hover:bg-[#1535A8] text-white rounded-md'
           >
             Start Session
           </Button>

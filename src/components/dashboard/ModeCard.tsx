@@ -1,7 +1,11 @@
 'use client'
 
 import React from 'react'
-import { type Icon as PhosphorIcon, Play, ArrowCounterClockwise } from '@phosphor-icons/react'
+import {
+  type Icon as PhosphorIcon,
+  Play,
+  ArrowCounterClockwise,
+} from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -43,7 +47,7 @@ export function ModeCard({
           accentColor,
         )}
       >
-        <SCIcon icon={Icon} size="lg" className='text-white' />
+        <SCIcon icon={Icon} size='lg' className='text-white' />
       </div>
 
       {/* Content */}
@@ -62,12 +66,13 @@ export function ModeCard({
             'w-full font-semibold shadow-sm transition-all rounded-md',
             hasActiveSession
               ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
-              : 'bg-primary text-white hover:bg-[#2F5A85]',
+              : 'bg-primary text-white hover:bg-[#1535A8]',
           )}
         >
           {hasActiveSession ? (
             <>
-              <SCIcon icon={ArrowCounterClockwise} size='sm' className='mr-2' /> Start Fresh
+              <SCIcon icon={ArrowCounterClockwise} size='sm' className='mr-2' />{' '}
+              Start Fresh
             </>
           ) : (
             primaryActionLabel
@@ -78,9 +83,10 @@ export function ModeCard({
           <Button
             variant='outline'
             onClick={onSecondaryAction}
-            className='w-full border-primary/20 text-primary hover:bg-[#F0F5FA] font-semibold rounded-md'
+            className='w-full border-primary/20 text-primary hover:bg-[#EEF2FC] font-semibold rounded-md'
           >
-            <SCIcon icon={Play} size='sm' weight='fill' className='mr-2' /> Resume Session
+            <SCIcon icon={Play} size='sm' weight='fill' className='mr-2' />{' '}
+            Resume Session
           </Button>
         )}
       </div>

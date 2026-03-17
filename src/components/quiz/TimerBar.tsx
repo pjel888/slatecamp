@@ -22,7 +22,7 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
         <div
           className={cn(
             'h-full rounded-sm transition-all duration-300 ease-linear',
-            isFinal ? 'bg-amber-500' : 'bg-[#3B6B9C]',
+            isFinal ? 'bg-amber-500' : 'bg-[#1B3FC4]',
           )}
           style={{ width: `${pct}%` }}
         />

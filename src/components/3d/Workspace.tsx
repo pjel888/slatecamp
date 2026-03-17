@@ -334,7 +334,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                         className={cn(
                           "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",
                           selectedModelId === item.modelId
-                            ? "bg-[#F0F5FA] text-[#2F5A85] shadow-sm"
+                            ? "bg-[#EEF2FC] text-[#1535A8] shadow-sm"
                             : "text-zinc-600 hover:bg-zinc-50"
                         )}
                       >
@@ -352,7 +352,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                             className={cn(
                               "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",
                               selectedModelId === leaf.modelId
-                                ? "bg-[#F0F5FA] text-[#2F5A85] shadow-sm"
+                                ? "bg-[#EEF2FC] text-[#1535A8] shadow-sm"
                                 : "text-zinc-600 hover:bg-zinc-50"
                             )}
                           >

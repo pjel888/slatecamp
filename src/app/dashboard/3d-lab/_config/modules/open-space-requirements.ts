@@ -53,7 +53,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const bz = lDs / 2 - frontSBs - bDs / 2
   const buildingH = 2.7 * scale * 3
   inst.push({ id: 'building', type: 'box', position: [0, buildingH / 2, -bz], args: [bWs, buildingH, bDs], color: violated ? '#fca5a5' : '#3b82f6', opacity: 0.8, transparent: true })
-  inst.push({ id: 'building-top', type: 'box', position: [0, buildingH, -bz], args: [bWs, 0.05, bDs], color: violated ? '#D64545' : '#2F5A85' })
+  inst.push({ id: 'building-top', type: 'box', position: [0, buildingH, -bz], args: [bWs, 0.05, bDs], color: violated ? '#D64545' : '#1535A8' })
 
   // Open space (lot minus building)
   inst.push({ id: 'open-space', type: 'box', position: [0, 0.005, 0], args: [lWs, 0.01, lDs], color: '#2D9F6F', opacity: 0.15, transparent: true })

@@ -82,6 +82,21 @@
   --color-emerald-50: var(--emerald-50);
   --color-surface-focused: var(--surface-focused);
   --color-border-warm: var(--border-warm);
+
+  /* Camp Standard — Bold Color Tokens */
+  --color-camp-black:  #111111;
+  --color-camp-cobalt: #1B3FC4;
+  --color-camp-red:    #E63329;
+  --color-camp-green:  #1B7A3C;
+  --color-camp-amber:  #F5A623;
+  --color-camp-cream:  #FFFDF7;
+  --color-page-bg:     #F2F0EB;
+  --color-ink:         #18181B;
+  --color-border-design: #E8E4DC;
+
+  /* Camp Standard — Font families */
+  --font-display: 'Syne', sans-serif;
+  --font-dm-mono: 'DM Mono', monospace;
 }
 
 :root {
@@ -91,7 +106,7 @@
   --card-foreground: #1A2332;
   --popover: #ffffff;
   --popover-foreground: #1A2332;
-  --primary: #3B6B9C;           /* Slate Blue */
+  --primary: #1B3FC4;           /* Camp Cobalt */
   --primary-foreground: #ffffff;
   --secondary: #F8F7F5;         /* Surface Light */
   --secondary-foreground: #1A2332;
@@ -102,10 +117,10 @@
   --destructive: #D64545;       /* Warm Red */
   --border: #D4DAE3;            /* Border Default */
   --input: #D4DAE3;
-  --ring: #3B6B9C;              /* Slate Blue */
+  --ring: #1B3FC4;              /* Camp Cobalt */
   --radius: 0.5rem;             /* 8px — card radius */
 
-  --chart-1: #3B6B9C;           /* Slate Blue */
+  --chart-1: #1B3FC4;           /* Camp Cobalt */
   --chart-2: #2D9F6F;           /* Emerald */
   --chart-3: #E8853A;           /* Camp Orange */
   --chart-4: #D4951A;           /* Amber */
@@ -113,17 +128,17 @@
 
   --sidebar: #ffffff;
   --sidebar-foreground: #1A2332;
-  --sidebar-primary: #3B6B9C;
+  --sidebar-primary: #1B3FC4;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #F0F5FA;    /* Slate Blue 50 */
+  --sidebar-accent: #EEF2FC;    /* Camp Cobalt 50 */
   --sidebar-accent-foreground: #1A2332;
   --sidebar-border: #D4DAE3;
-  --sidebar-ring: #3B6B9C;
+  --sidebar-ring: #1B3FC4;
 
   /* Campfire — Neutral palette */
   --bg-primary: #F8F7F5;
   --bg-secondary: #F8F7F5;
-  --bg-tertiary: #F0F5FA;
+  --bg-tertiary: #EEF2FC;
   --border-strong: #D4DAE3;
   --border-light: #D4DAE3;
 
@@ -134,8 +149,8 @@
   --text-quaternary: #8896A7;
 
   /* Campfire — Functional accents */
-  --accent-blue: #3B6B9C;
-  --accent-hover: #2F5A85;
+  --accent-blue: #1B3FC4;
+  --accent-hover: #1535A8;
   --success: #2D9F6F;
   --danger: #D64545;
   --warning: #D4951A;
@@ -146,7 +161,7 @@
   --camp-orange-hover: #D4751A;
   --emerald: #2D9F6F;
   --emerald-50: #EDFAF4;
-  --slate-blue-50: #F0F5FA;
+  --slate-blue-50: #EEF2FC;
   --surface-focused: #F5F7FA;    /* Testing interface bg */
   --border-warm: rgba(232, 133, 58, 0.15);
 
@@ -162,8 +177,8 @@
   --quiz-correct-border: #2D9F6F;
   --quiz-wrong-bg: #FDF0F0;
   --quiz-wrong-border: #D64545;
-  --quiz-selected-bg: #F0F5FA;
-  --quiz-selected-border: #3B6B9C;
+  --quiz-selected-bg: #EEF2FC;
+  --quiz-selected-border: #1B3FC4;
 
   /* Campfire — Transitions (max 300ms) */
   --transition-fast: 100ms ease-out;
@@ -183,6 +198,19 @@
   /* Confidence tap */
   --confidence-know: #EDFAF4;
   --confidence-unsure: #FEF8ED;
+
+  /* Camp Standard — Bold Color System */
+  --camp-black:  #111111;
+  --camp-cobalt: #1B3FC4;
+  --camp-red:    #E63329;
+  --camp-green:  #1B7A3C;
+  --camp-amber:  #F5A623;
+  --camp-cream:  #FFFDF7;
+  --page-bg:     #F2F0EB;
+  --ink:         #18181B;
+  --border-design: #E8E4DC;
+  --text-2:      #6B6B6B;
+  --text-3:      #9CA3AF;
 }
 
 .dark {
@@ -192,7 +220,7 @@
   --card-foreground: #E8ECF1;
   --popover: #1C2433;
   --popover-foreground: #E8ECF1;
-  --primary: #5B8BB8;  /* Slate Blue lightened */
+  --primary: #5B7FE0;  /* Camp Cobalt lightened */
   --primary-foreground: #ffffff;
   --secondary: #1C2433;
   --secondary-foreground: #E8ECF1;
@@ -203,9 +231,9 @@
   --destructive: #E85C5C;
   --border: #2A3444;
   --input: #2A3444;
-  --ring: #5B8BB8;
+  --ring: #5B7FE0;
 
-  --chart-1: #5B8BB8;
+  --chart-1: #5B7FE0;
   --chart-2: #4DBF8F;
   --chart-3: #F0A060;
   --chart-4: #E8B040;
@@ -213,12 +241,12 @@
 
   --sidebar: #1C2433;
   --sidebar-foreground: #E8ECF1;
-  --sidebar-primary: #5B8BB8;
+  --sidebar-primary: #5B7FE0;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #2A3444;
   --sidebar-accent-foreground: #E8ECF1;
   --sidebar-border: #2A3444;
-  --sidebar-ring: #5B8BB8;
+  --sidebar-ring: #5B7FE0;
 
   /* Campfire — Dark mode overrides */
   --bg-primary: #141B24;
@@ -230,8 +258,8 @@
   --text-secondary: #8896A7;
   --text-tertiary: #6C7A8A;
   --text-quaternary: #4A5568;
-  --accent-blue: #5B8BB8;
-  --accent-hover: #7BA5CC;
+  --accent-blue: #5B7FE0;
+  --accent-hover: #7B9AEA;
   --success: #4DBF8F;
   --danger: #E85C5C;
   --warning: #E8B040;
@@ -242,7 +270,7 @@
   --camp-orange-hover: #E89040;
   --emerald: #4DBF8F;
   --emerald-50: rgba(45, 159, 111, 0.15);
-  --slate-blue-50: rgba(59, 107, 156, 0.15);
+  --slate-blue-50: rgba(27, 63, 196, 0.15);
   --surface-focused: #1C2433;
   --border-warm: rgba(232, 133, 58, 0.2);
 
@@ -254,8 +282,8 @@
   --quiz-correct-border: #4DBF8F;
   --quiz-wrong-bg: rgba(214, 69, 69, 0.15);
   --quiz-wrong-border: #E85C5C;
-  --quiz-selected-bg: rgba(59, 107, 156, 0.15);
-  --quiz-selected-border: #5B8BB8;
+  --quiz-selected-bg: rgba(27, 63, 196, 0.15);
+  --quiz-selected-border: #5B7FE0;
 
   /* Readiness Score colors (dark) */
   --readiness-danger: #E85C5C;
@@ -294,6 +322,24 @@
   }
 }
 
+/* ── Camp Standard — Noise texture utilities ── */
+.noise::after,
+.noise-light::after,
+.noise-heavy::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.noise-light::after { opacity: 0.035; }
+.noise::after       { opacity: 0.055; }
+.noise-heavy::after { opacity: 0.09;  }
+
 /* Activity heatmap — custom horizontal scrollbar (Slate Blue tints) */
 .activity-heatmap-scroll {
   scrollbar-width: thin;
@@ -312,10 +358,10 @@
   transition: background 0.15s ease;
 }
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:hover {
-  background: #7BA5CC;
+  background: #7B9AEA;
 }
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:active {
-  background: #3B6B9C;
+  background: #1B3FC4;
 }
 
 /* Wiki sidebar — minimal thin vertical scrollbar */
@@ -478,12 +524,12 @@ a[data-pending] {
 /* Wiki Heading Highlight */
 @keyframes highlight-pulse {
   0% {
-    background-color: rgba(59, 107, 156, 0.1);
-    box-shadow: 0 0 0 8px rgba(59, 107, 156, 0.1);
+    background-color: rgba(27, 63, 196, 0.1);
+    box-shadow: 0 0 0 8px rgba(27, 63, 196, 0.1);
   }
   100% {
     background-color: transparent;
-    box-shadow: 0 0 0 0 rgba(59, 107, 156, 0);
+    box-shadow: 0 0 0 0 rgba(27, 63, 196, 0);
   }
 }
 

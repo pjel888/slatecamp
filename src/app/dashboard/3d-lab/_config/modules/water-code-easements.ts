@@ -40,7 +40,7 @@ const PATHS: PathDef[] = [
     id: 'river-centerline',
     label: 'River Centerline',
     points: [[17, 0], [17, 40]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 4,
   },
   {

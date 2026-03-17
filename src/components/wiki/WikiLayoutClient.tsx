@@ -93,12 +93,12 @@ export function WikiLayoutClient({ disciplineId, disciplineName, children }: Wik
         ].join(' ')}
       >
         {/* Visual line */}
-        <div className='absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-zinc-200 group-hover:w-[3px] group-hover:bg-[#5B8BB8] transition-all duration-150' />
+        <div className='absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-zinc-200 group-hover:w-[3px] group-hover:bg-[#5B7FE0] transition-all duration-150' />
         {/* Grip dots — 2×3 grid centered on the handle */}
         {!isCollapsed && (
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none'>
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className='w-[3px] h-[3px] rounded-full bg-zinc-300 group-hover:bg-[#5B8BB8] transition-colors duration-150' />
+              <div key={i} className='w-[3px] h-[3px] rounded-full bg-zinc-300 group-hover:bg-[#5B7FE0] transition-colors duration-150' />
             ))}
           </div>
         )}

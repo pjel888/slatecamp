@@ -69,7 +69,7 @@ export const HotspotAnnotation = memo(function HotspotAnnotation({
             {hotspot.wikiSlug && (
               <a
                 href={`/dashboard/wiki/${hotspot.wikiSlug}`}
-                className="inline-flex items-center gap-1 text-[11px] font-bold text-primary hover:text-[#2F5A85] uppercase tracking-wide"
+                className="inline-flex items-center gap-1 text-[11px] font-bold text-primary hover:text-[#1535A8] uppercase tracking-wide"
               >
                 Wiki Article
                 <SCIcon icon={ArrowSquareOut} size="xs" />

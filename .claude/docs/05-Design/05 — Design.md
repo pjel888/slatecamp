@@ -54,7 +54,7 @@ Every visual decision prioritizes **clarity over decoration**, **function over f
 
 | **Role** | **Token** | **Hex** | **Tailwind** | **Usage** |
 | --- | --- | --- | --- | --- |
-| **Primary** | `--primary` | `#3B6B9C` | Slate Blue | Primary actions, nav, links |
+| **Primary** | `--primary` | `#1B3FC4` | Camp Cobalt | Primary actions, nav, links |
 | Primary Hover | `--braun-orange-hover` | `#1D4ED8` | blue-700 | Button hover, link hover |
 | Primary Light | `--braun-orange-light` | `#EFF6FF` | blue-50 | Mentor callout background, active nav tint |
 | Primary Tint | `--braun-orange-tint` | `rgba(37,99,235,0.08)` | — | Hover tint on nav, subtle highlight |

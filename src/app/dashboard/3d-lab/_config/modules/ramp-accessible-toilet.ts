@@ -131,7 +131,7 @@ function geometry(
 
   const rampColor = gradientBad || widthBad ? '#D64545' : '#d1d5db'
   const hr1Color = hr1Bad ? '#D64545' : '#3b82f6'
-  const hr2Color = hr2Bad ? '#D64545' : '#3B6B9C'
+  const hr2Color = hr2Bad ? '#D64545' : '#1B3FC4'
 
   const instructions: GeometryInstruction[] = []
   const slabThickness = 0.05

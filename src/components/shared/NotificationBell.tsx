@@ -106,7 +106,7 @@ export function NotificationBell() {
                     key={notification.id}
                     className={cn(
                       "border-b px-4 py-3 hover:bg-muted cursor-pointer",
-                      !notification.read && "bg-[#F0F5FA] dark:bg-[#141B24]"
+                      !notification.read && "bg-[#EEF2FC] dark:bg-[#141B24]"
                     )}
                     onClick={() => markAsRead(notification.id)}
                   >
@@ -134,7 +134,7 @@ export function NotificationBell() {
                         </p>
                       </div>
                       {!notification.read && (
-                        <div className="h-2 w-2 rounded-full bg-[#3B6B9C] mt-2" />
+                        <div className="h-2 w-2 rounded-full bg-[#1B3FC4] mt-2" />
                       )}
                     </div>
                   </div>

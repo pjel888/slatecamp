@@ -20,26 +20,26 @@ export function WikiArticleHeader({
   practiceLabel,
 }: WikiArticleHeaderProps) {
   return (
-    <header className="mb-8">
-      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider">
+    <header className='mb-8'>
+      <div className='flex items-center gap-2 text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider'>
         <span>Wiki Article</span>
         <span>&bull;</span>
         <span>Updated {format(new Date(updatedAt), 'MMM d, yyyy')}</span>
       </div>
-      <div className="flex items-center justify-between mb-4">
-        <h1 className="text-xl font-bold tracking-tight text-foreground">
+      <div className='flex items-center justify-between mb-4'>
+        <h1 className='text-xl font-bold tracking-tight text-foreground'>
           {title}
         </h1>
         <Link href={practiceHref}>
           <Button
-            size="sm"
-            className="bg-primary hover:bg-[#2F5A85] text-white font-bold rounded-sm px-6 shadow-sm transition-all active:scale-95"
+            size='sm'
+            className='bg-primary hover:bg-[#1535A8] text-white font-bold rounded-sm px-6 shadow-sm transition-all active:scale-95'
           >
-            <SCIcon icon={Brain} size="sm" className="mr-2" /> {practiceLabel}
+            <SCIcon icon={Brain} size='sm' className='mr-2' /> {practiceLabel}
           </Button>
         </Link>
       </div>
-      <div className="h-px w-full bg-zinc-200" />
+      <div className='h-px w-full bg-zinc-200' />
     </header>
   )
 }

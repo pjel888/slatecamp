@@ -46,7 +46,7 @@ function LegendOverlay() {
     { color: 'bg-green-500', label: 'Compliant path' },
     { color: 'bg-red-500', label: 'Travel distance exceeded' },
     { color: 'bg-green-600', label: 'Exit' },
-    { color: 'bg-[#3B6B9C]', label: 'Sprinkler head' },
+    { color: 'bg-[#1B3FC4]', label: 'Sprinkler head' },
     { color: 'bg-red-400/60', label: 'Dead-end violation zone' },
   ]
 

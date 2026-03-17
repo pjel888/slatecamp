@@ -34,7 +34,7 @@ const PATHS: PathDef[] = [
     id: 'normal-power',
     label: 'Normal Power Supply',
     points: [[27, 9], [27, 5], [22, 5]],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     width: 3,
   },
   {
@@ -83,7 +83,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'Main Distribution Board',
     type: 'custom',
     position: [27, 4.5],
-    color: '#3B6B9C',
+    color: '#1B3FC4',
     description: 'MDB with bus bar; feeds all normal + emergency panels',
     codeCitation: 'PEC',
   },

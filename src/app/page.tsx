@@ -8,9 +8,13 @@ import { LogoMarquee } from '@/components/marketing/LogoMarquee'
 import { TestimonialShowcase } from '@/components/marketing/TestimonialShowcase'
 import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
 import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
-import { PhilosophySection } from '@/components/marketing/PhilosophySection'
+import { ComparisonSection } from '@/components/marketing/ComparisonSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 import { SocialProofBar } from '@/components/marketing/SocialProofBar'
+import { QuestionsSection } from '@/components/marketing/QuestionsSection'
+import { ThreeDLabSection } from '@/components/marketing/ThreeDLabSection'
+import { AnalyticsSection } from '@/components/marketing/AnalyticsSection'
+import { WikiSection } from '@/components/marketing/WikiSection'
 import { Starburst } from '@/components/marketing/LandingPrimitives'
 import { ROUTES, siteConfig } from '@/lib/constants'
 
@@ -19,29 +23,33 @@ import { ROUTES, siteConfig } from '@/lib/constants'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — AI-Adaptive Architecture Board Exam Prep`,
+  title: `${siteConfig.name} — Know Your ALE Readiness Before Exam Day`,
   description:
-    'Stop re-reading. Start remembering. AI-adaptive test prep with spaced repetition, active recall, 2,400+ practice questions, and real-time analytics — built for ALE and ARE success.',
+    'The only ALE prep platform with a Readiness Score, 3D building code viewer, 2,400+ verified questions, and a complete PD 1096 wiki — built for the Philippine Architecture Licensure Exam.',
   openGraph: {
-    title: `${siteConfig.name} — Pass the Architecture Board Exam`,
+    title: `${siteConfig.name} — The ALE Readiness Intelligence Platform`,
     description:
-      'AI-adaptive test prep with spaced repetition, active recall, and deep analytics built for architecture board exam success.',
+      'The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you\'re genuinely ready — before exam day.',
     type: 'website',
     siteName: siteConfig.name,
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} — AI-Adaptive Architecture Board Exam Prep`,
+    title: `${siteConfig.name} — Stop Studying Blind. Know Your Score.`,
     description:
-      'Stop re-reading. Start remembering. AI-powered test prep built for ALE and ARE success.',
+      'The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you\'re genuinely ready — before exam day.',
   },
   keywords: [
     'architecture board exam prep',
     'ALE exam prep',
     'ARE exam prep',
-    'architecture exam reviewer',
-    'spaced repetition',
-    'active recall',
+    'architecture exam reviewer Philippines',
+    'ALE readiness score',
+    'architecture quiz app Philippines',
+    'ALE 3D building code viewer',
+    'PD 1096 reviewer',
+    'architecture wiki Philippines',
+    'spaced repetition architecture exam',
     'SlateCamp',
   ],
   alternates: {
@@ -59,7 +67,7 @@ async function LandingPageContent() {
   return (
     <div
       id='top'
-      className='min-h-screen bg-zinc-100'
+      className='min-h-screen bg-[#F2F0EB]'
     >
       {/* ────────────────────── NAVIGATION ────────────────────── */}
       <MarketingNav activeRoute='/' logoScrollsToTop />
@@ -77,23 +85,29 @@ async function LandingPageContent() {
 
         <BentoFeatureGrid />
 
+        {/* ── Feature Sections ── */}
+        <QuestionsSection />
+        <ThreeDLabSection />
+        <AnalyticsSection />
+        <WikiSection />
+
         <HowItWorksSection />
 
-        <PhilosophySection />
+        <ComparisonSection />
 
         {/* ────────────────────── TESTIMONIALS ────────────────────── */}
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t border-zinc-200 px-6 py-24'
+          className='border-t border-[#E8E4DC] px-6 py-24'
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>
-              <span className='text-amber-600'>
+              <span className='text-[#F5A623]'>
                 <Starburst className='h-4 w-4' />
               </span>
               <h2
                 id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500'
+                className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'
               >
                 What Students Say
               </h2>
@@ -117,7 +131,7 @@ async function LandingPageContent() {
 
 function LandingPageFallback() {
   return (
-    <div id='top' className='min-h-screen bg-zinc-100'>
+    <div id='top' className='min-h-screen bg-[#F2F0EB]'>
       <MarketingNav activeRoute='/' logoScrollsToTop />
       <main>
         <HeroSection
@@ -129,19 +143,19 @@ function LandingPageFallback() {
         <LogoMarquee />
         <BentoFeatureGrid />
         <HowItWorksSection />
-        <PhilosophySection />
+        <ComparisonSection />
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t border-zinc-200 px-6 py-24'
+          className='border-t border-[#E8E4DC] px-6 py-24'
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>
-              <span className='text-amber-600'>
+              <span className='text-[#F5A623]'>
                 <Starburst className='h-4 w-4' />
               </span>
               <h2
                 id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500'
+                className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'
               >
                 What Students Say
               </h2>

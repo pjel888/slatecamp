@@ -16,7 +16,7 @@ const TIER_CONFIG: Record<
   camp: {
     label: 'Camp',
     icon: Lightning,
-    className: 'bg-[#F0F5FA] text-primary border-primary/20',
+    className: 'bg-[#EEF2FC] text-primary border-primary/20',
   },
   insurance: {
     label: 'Insurance',

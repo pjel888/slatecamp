@@ -54,7 +54,7 @@ export function TemplatePicker({ value, onChange, disableGap }: TemplatePickerPr
             className={cn(
               'flex flex-1 flex-col items-center gap-1 rounded-md border px-2 py-2 text-center transition-all duration-150',
               active
-                ? 'border-primary bg-[#F0F5FA] text-[#2F5A85]'
+                ? 'border-primary bg-[#EEF2FC] text-[#1535A8]'
                 : 'border-zinc-200 bg-white text-zinc-400 hover:border-zinc-300 hover:bg-zinc-50 hover:text-zinc-600',
               disabled && 'cursor-not-allowed opacity-35',
             )}

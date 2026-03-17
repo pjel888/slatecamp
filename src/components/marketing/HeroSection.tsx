@@ -19,13 +19,13 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 
 const DashboardPeek = () => (
   <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
-    <div className='relative h-[140px] overflow-hidden rounded-t-md border border-b-0 border-zinc-200 bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
+    <div className='relative h-[140px] overflow-hidden rounded-t-[10px] border border-b-0 border-[#E8E4DC] bg-[#FFFDF7] shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
       {/* Fake window chrome */}
-      <div className='flex items-center gap-1.5 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5'>
-        <div className='h-2.5 w-2.5 rounded-full bg-red-400' />
-        <div className='h-2.5 w-2.5 rounded-full bg-amber-400' />
-        <div className='h-2.5 w-2.5 rounded-full bg-green-500' />
-        <span className='ml-3 text-[11px] text-zinc-500'>
+      <div className='flex items-center gap-1.5 border-b border-[#E8E4DC] bg-[#F2F0EB] px-4 py-2.5'>
+        <div className='h-2.5 w-2.5 rounded-full bg-[#E63329]' />
+        <div className='h-2.5 w-2.5 rounded-full bg-[#F5A623]' />
+        <div className='h-2.5 w-2.5 rounded-full bg-[#1B7A3C]' />
+        <span className='ml-3 font-[family-name:var(--font-dm-mono)] text-[11px] text-[#6B6B6B]'>
           SlateCamp Dashboard
         </span>
       </div>
@@ -33,28 +33,28 @@ const DashboardPeek = () => (
       <div className='flex gap-4 px-5 py-3'>
         {/* Sidebar */}
         <div className='hidden w-[140px] shrink-0 space-y-2 sm:block'>
-          <div className='h-2 w-20 rounded bg-zinc-200' />
-          <div className='h-2 w-16 rounded bg-zinc-300' />
-          <div className='h-2 w-24 rounded bg-zinc-200' />
-          <div className='h-2 w-20 rounded bg-zinc-200' />
+          <div className='h-2 w-20 rounded bg-[#E8E4DC]' />
+          <div className='h-2 w-16 rounded bg-[#E8E4DC]' />
+          <div className='h-2 w-24 rounded bg-[#E8E4DC]' />
+          <div className='h-2 w-20 rounded bg-[#E8E4DC]' />
         </div>
         {/* Main Content */}
         <div className='flex-1 space-y-2'>
           <div className='flex gap-3'>
-            <div className='h-14 w-14 shrink-0 rounded-md bg-zinc-200' />
+            <div className='h-14 w-14 shrink-0 rounded-[10px] bg-[#E8E4DC]' />
             <div className='flex-1 space-y-1.5 pt-1'>
-              <div className='h-2.5 w-32 rounded bg-zinc-300' />
-              <div className='h-2 w-48 rounded bg-zinc-200' />
+              <div className='h-2.5 w-32 rounded bg-[#E8E4DC]' />
+              <div className='h-2 w-48 rounded bg-[#E8E4DC]' />
             </div>
           </div>
           <div className='flex gap-2'>
             {[
-              'bg-green-500',
-              'bg-primary',
-              'bg-primary',
-              'bg-green-500',
-              'bg-green-500',
-              'bg-primary',
+              'bg-[#1B7A3C]',
+              'bg-[#1B3FC4]',
+              'bg-[#1B3FC4]',
+              'bg-[#1B7A3C]',
+              'bg-[#1B7A3C]',
+              'bg-[#1B3FC4]',
             ].map((colorClass, i) => (
               <div
                 key={i}
@@ -67,7 +67,7 @@ const DashboardPeek = () => (
         </div>
       </div>
       {/* Gradient fade at the bottom */}
-      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-linear-to-t from-white to-transparent' />
+      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-linear-to-t from-[#FFFDF7] to-transparent' />
     </div>
   </div>
 )
@@ -144,10 +144,10 @@ const MOCK_QUESTION = {
 }
 
 const STATS = [
-  '2,400+ verified questions',
-  'Built for ALE & ARE',
-  'Spaced repetition engine',
-  'Real-time analytics',
+  '500+ students in the camp',
+  '2,400+ verified ALE questions',
+  'Real-time Readiness Score',
+  'Free to start — no card needed',
 ] as const
 
 /* ── Hero Cards Components ── */
@@ -155,10 +155,10 @@ const STATS = [
 // Card 1: Supported Exams (Back Left)
 const ExamsSupportedCard = () => (
   <div
-    className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-white/95 to-zinc-50/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-zinc-200/90 transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+    className='order-1 w-full max-w-[280px] rounded-[10px] bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
     aria-hidden='true'
   >
-    <p className='mb-2.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-zinc-500'>
+    <p className='mb-2.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
       Supported exams
     </p>
     <ul className='space-y-1.75'>
@@ -174,7 +174,7 @@ const ExamsSupportedCard = () => (
                 ? 'bg-amber-600'
                 : exam.category === 'education'
                   ? 'bg-violet-600'
-                  : 'bg-zinc-500'
+                  : 'bg-[#FFFDF7]0'
 
         return (
           <li
@@ -183,7 +183,7 @@ const ExamsSupportedCard = () => (
               'flex items-center justify-between gap-2 rounded-sm px-1.5 py-1',
               isLive
                 ? 'bg-emerald-50 hover:bg-emerald-100/80'
-                : 'hover:bg-zinc-100/70',
+                : 'hover:bg-[#F2F0EB]/70',
             )}
           >
             <div className='flex min-w-0 items-center gap-2'>
@@ -193,7 +193,7 @@ const ExamsSupportedCard = () => (
               <span
                 className={cn(
                   'truncate text-[13px] font-medium leading-tight',
-                  isLive ? 'text-emerald-800' : 'text-zinc-700',
+                  isLive ? 'text-emerald-800' : 'text-[#555]',
                 )}
               >
                 {exam.name}
@@ -205,7 +205,7 @@ const ExamsSupportedCard = () => (
                 Live
               </span>
             ) : (
-              <span className='shrink-0 text-[11px] font-medium text-zinc-500'>
+              <span className='shrink-0 text-[11px] font-medium text-[#6B6B6B]'>
                 {exam.status}
               </span>
             )}
@@ -213,7 +213,7 @@ const ExamsSupportedCard = () => (
         )
       })}
       {SUPPORTED_EXAMS.length > 6 ? (
-        <li className='mt-1 flex items-center justify-end text-[11px] font-medium text-zinc-500'>
+        <li className='mt-1 flex items-center justify-end text-[11px] font-medium text-[#6B6B6B]'>
           +{SUPPORTED_EXAMS.length - 6} more exams
         </li>
       ) : null}
@@ -225,13 +225,13 @@ const ExamsSupportedCard = () => (
 const MockQuestionCard = () => {
   return (
     <div
-      className='order-3 w-full max-w-[280px] rounded-md border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+      className='order-3 w-full max-w-[280px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
-      <span className='mb-2 inline-block rounded bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-900'>
+      <span className='mb-2 inline-block rounded bg-[#F2F0EB] px-2 py-0.5 text-[11px] font-medium text-[#18181B]'>
         {MOCK_QUESTION.topic}
       </span>
-      <p className='mb-3 text-[12px] leading-snug text-zinc-900'>
+      <p className='mb-3 text-[12px] leading-snug text-[#18181B]'>
         {MOCK_QUESTION.question}
       </p>
       <div className='space-y-1.5'>
@@ -248,7 +248,7 @@ const MockQuestionCard = () => {
                 isIncorrect && 'border-red-400 bg-red-50 text-red-800',
                 !isCorrect &&
                   !isIncorrect &&
-                  'border-zinc-200 bg-white text-zinc-800 hover:bg-zinc-50',
+                  'border-[#E8E4DC] bg-white text-zinc-800 hover:bg-[#FFFDF7]',
               )}
             >
               <span
@@ -282,30 +282,30 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 
   return (
     <div
-      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-zinc-200 bg-zinc-50/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
+      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='mb-2 inline-flex items-center gap-1 rounded-full bg-zinc-100 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-zinc-500'>
+      <div className='mb-2 inline-flex items-center gap-1 rounded-full bg-[#F2F0EB] px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-[#6B6B6B]'>
         <span className='h-1.5 w-1.5 rounded-full bg-amber-500' />
         Readiness snapshot
       </div>
 
-      <h3 className='text-base font-semibold tracking-tight text-zinc-900'>
+      <h3 className='text-base font-semibold tracking-tight text-[#18181B]'>
         {isHovered ? "This is what's possible" : "Are you sure you'll pass?"}
       </h3>
 
       {/* Shared space for intro vs “this is what…” */}
-      <p className='mt-2 text-[12px] leading-snug text-zinc-600'>
+      <p className='mt-2 text-[12px] leading-snug text-[#6B6B6B]'>
         {isHovered
           ? 'This is what your score can look like once SlateCamp is driving your review.'
-          : 'A quick look at how your recent practice sessions are performing by subject.'}
+          : 'Most students walk into the ALE not knowing where their gaps are. This is where you find out.'}
       </p>
 
       <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-zinc-100'>
         <ReadinessDial
           value={isHovered ? 98 : 42}
-          label={isHovered ? 'Exam-ready' : 'At risk'}
+          label={isHovered ? 'Exam-ready' : 'At risk — typical starting score'}
           showWarning={!isHovered}
           tone={isHovered ? 'success' : 'warning'}
         />
@@ -313,13 +313,13 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           <p
             className={cn(
               'font-medium',
-              isHovered ? 'text-emerald-700' : 'text-zinc-900',
+              isHovered ? 'text-emerald-700' : 'text-[#18181B]',
             )}
           >
             Overall readiness: {isHovered ? '98%' : '42%'}
           </p>
           {/* Shared space for “Most reviewees…” vs “Same exam…” */}
-          <p className='text-zinc-600'>
+          <p className='text-[#6B6B6B]'>
             {isHovered
               ? 'Same exam. Very different odds when you train with intent.'
               : 'Most reviewees sit here right before they realise where the gaps are.'}
@@ -340,17 +340,17 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           return (
             <div key={label} className='space-y-1'>
               <div className='flex items-center justify-between text-[11px]'>
-                <span className='truncate text-zinc-700'>{label}</span>
+                <span className='truncate text-[#555]'>{label}</span>
                 <span
                   className={cn(
                     'font-medium',
-                    isHovered ? 'text-emerald-700' : 'text-zinc-900',
+                    isHovered ? 'text-emerald-700' : 'text-[#18181B]',
                   )}
                 >
                   {score}%
                 </span>
               </div>
-              <div className='h-1.5 w-full rounded-full bg-zinc-100'>
+              <div className='h-1.5 w-full rounded-full bg-[#F2F0EB]'>
                 <div
                   className={cn(
                     'h-1.5 rounded-full transition-[width] duration-200',
@@ -364,10 +364,10 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
         })}
       </div>
 
-      <div className='mt-3 flex items-center justify-between text-[11px] text-zinc-500'>
+      <div className='mt-3 flex items-center justify-between text-[11px] text-[#6B6B6B]'>
         <Link
           href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
-          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-zinc-200 bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-[#F0F5FA] hover:text-[#2F5A85] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
+          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-[#E8E4DC] bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-[#EEF2FC] hover:text-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >
           Start Now
@@ -381,7 +381,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
   <div
     id='hero-right'
-    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px] md:flex-row md:items-stretch md:justify-center md:gap-0'
+    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px] md:-mt-[50px] md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
     <ExamsSupportedCard />
     <MockQuestionCard />
@@ -430,8 +430,8 @@ export const HeroSection = ({
               >
                 <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-4 w-4' />
-                  <span className='font-mono text-[11px] tracking-[0.25em] font-bold uppercase'>
-                    Board exam preparation platform.{' '}
+                  <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-[#1B3FC4]'>
+                    Board exam preparation platform.
                   </span>
                 </div>
               </div>
@@ -444,25 +444,25 @@ export const HeroSection = ({
             <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-primary px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#2F5A85] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
+                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-[#1B3FC4] px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2'
               >
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
-              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-zinc-500'>
+              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-[#6B6B6B]'>
                 Free forever to start &middot; No credit card required
               </p>
             </div>
           </div>
 
           {/* Stats Bar */}
-          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-zinc-200 pt-3'>
+          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#E8E4DC] pt-3'>
             {STATS.map((stat) => (
               <span
                 key={stat}
-                className='flex items-center gap-2 text-[12px] text-zinc-400'
+                className='flex items-center gap-2 text-[12px] text-[#9CA3AF]'
               >
                 <span
-                  className='h-1 w-1 rounded-full bg-[#3B6B9C]'
+                  className='h-1 w-1 rounded-full bg-[#1B3FC4]'
                   aria-hidden='true'
                 />
                 {stat}

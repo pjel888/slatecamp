@@ -22,14 +22,14 @@ export const HowItWorksSection = () => (
   <section
     id="how-it-works"
     aria-labelledby="how-it-works-heading"
-    className="relative border-t border-zinc-200 px-6 py-24"
+    className="relative border-t border-[#E8E4DC] px-6 py-24"
   >
     <div className="relative z-10 mx-auto max-w-[1200px]">
       <div className="flex items-center gap-3">
         <Starburst className="h-4 w-4 text-[--camp-orange]" />
         <h2
           id="how-it-works-heading"
-          className="font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500"
+          className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]"
         >
           How It Works
         </h2>
@@ -39,15 +39,15 @@ export const HowItWorksSection = () => (
         {STEPS.map(({ num, title, desc }) => (
           <div key={num}>
             <span
-              className="font-mono text-[56px] font-bold leading-none tracking-tighter text-zinc-100"
+              className="font-mono text-[56px] font-bold leading-none tracking-tighter text-[#E8E4DC]"
               aria-hidden="true"
             >
               {num}
             </span>
-            <h3 className="mt-4 text-[20px] font-semibold tracking-tight text-zinc-900">
+            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold tracking-tight text-[#18181B]">
               {title}
             </h3>
-            <p className="mt-3 text-[14px] leading-relaxed text-zinc-600">
+            <p className="mt-3 text-[14px] leading-relaxed text-[#6B6B6B]">
               {desc}
             </p>
           </div>

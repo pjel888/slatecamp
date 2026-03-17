@@ -1,4 +1,8 @@
-import { getWikiArticleBySlug, getWikiArticleByTaxonomySlug, getActiveTaxonomyNode } from '@/lib/actions/wiki-actions'
+import {
+  getWikiArticleBySlug,
+  getWikiArticleByTaxonomySlug,
+  getActiveTaxonomyNode,
+} from '@/lib/actions/wiki-actions'
 import { WikiArticle } from '@/components/wiki/WikiArticle'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
@@ -13,7 +17,7 @@ interface PageProps {
 
 export default async function WikiArticlePage({ params }: PageProps) {
   const { slug } = await params
-  
+
   // 1. Try direct article slug
   let article = await getWikiArticleBySlug(slug)
 
@@ -37,23 +41,25 @@ export default async function WikiArticlePage({ params }: PageProps) {
 
     if (nodeData) {
       return (
-        <div className="h-full w-full flex items-center justify-center">
-          <div className="text-center p-12 bg-white rounded-md border border-zinc-100 shadow-sm max-w-lg">
+        <div className='h-full w-full flex items-center justify-center'>
+          <div className='text-center p-12 bg-white rounded-md border border-zinc-100 shadow-sm max-w-lg'>
             {/* ... icon ... */}
-            <h1 className="text-xl font-bold text-zinc-900 mb-3">{nodeData.name}</h1>
-            <p className="text-zinc-500 mb-8 leading-relaxed">
-              We're currently drafting the authoritative content for this topic. 
+            <h1 className='text-xl font-bold text-zinc-900 mb-3'>
+              {nodeData.name}
+            </h1>
+            <p className='text-zinc-500 mb-8 leading-relaxed'>
+              We're currently drafting the authoritative content for this topic.
               Check back soon for comprehensive coverage of {nodeData.name}.
             </p>
-            <div className="flex justify-center mb-8">
+            <div className='flex justify-center mb-8'>
               <Link href={`/dashboard/testing?topicId=${nodeData.node_id}`}>
-                <Button className="bg-primary hover:bg-[#2F5A85] text-white font-bold rounded-sm px-8">
+                <Button className='bg-primary hover:bg-[#1535A8] text-white font-bold rounded-sm px-8'>
                   Practice this Topic anyway
                 </Button>
               </Link>
             </div>
-            <div className="h-px w-full bg-zinc-100 mb-8" />
-            <p className="text-sm text-zinc-400 italic">
+            <div className='h-px w-full bg-zinc-100 mb-8' />
+            <p className='text-sm text-zinc-400 italic'>
               Knowledge ID: {nodeData.node_id}
             </p>
           </div>
@@ -67,8 +73,12 @@ export default async function WikiArticlePage({ params }: PageProps) {
   }
 
   return (
-    <div className="h-full w-full">
-      <WikiArticle article={article} nodeId={node?.node_id} nodeName={node?.name} />
+    <div className='h-full w-full'>
+      <WikiArticle
+        article={article}
+        nodeId={node?.node_id}
+        nodeName={node?.name}
+      />
     </div>
   )
 }

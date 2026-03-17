@@ -28,7 +28,7 @@ const DIVISIONS: Array<{ div: number; label: string; color: string }> = [
   { div: 28, label: 'Electronic Safety', color: '#f97316' },
   { div: 31, label: 'Earthwork', color: '#78350f' },
   { div: 32, label: 'Exterior Improvements', color: '#4d7c0f' },
-  { div: 33, label: 'Utilities', color: '#2F5A85' },
+  { div: 33, label: 'Utilities', color: '#1535A8' },
 ]
 
 const parameters: ParameterDef[] = [

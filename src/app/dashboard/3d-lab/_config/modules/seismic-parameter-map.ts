@@ -251,7 +251,7 @@ function geometry(
       type: 'box',
       position: [0, i * floorH + 0.01, 0],
       args: [bw, 0.003, bd],
-      color: '#2F5A85',
+      color: '#1535A8',
       opacity: 0.5,
       transparent: true,
     })

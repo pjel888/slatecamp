@@ -1,5 +1,5 @@
 'use client'
-import { Warning, ArrowSquareOut } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 /* ── Noise texture overlay ── */
@@ -50,14 +50,16 @@ export const Pill = ({
   variant = 'dark',
 }: {
   children: React.ReactNode
-  variant?: 'light' | 'dark'
+  variant?: 'light' | 'dark' | 'amber'
 }) => (
   <span
     className={
-      'inline-block rounded-full border px-3 py-1 text-[11px] font-medium tracking-wide uppercase ' +
+      'inline-block rounded-full border font-[family-name:var(--font-dm-mono)] text-[9px] tracking-[0.1em] px-[9px] py-[3px] ' +
       (variant === 'dark'
-        ? 'border-white/10 text-white/60'
-        : 'border-zinc-300 text-zinc-600')
+        ? 'border-white/20 text-white/55'
+        : variant === 'amber'
+          ? 'border-black/15 text-black/45'
+          : 'border-[#E8E4DC] text-[#6B6B6B]')
     }
   >
     {children}
@@ -136,17 +138,19 @@ export const ReadinessDial = ({
 export const CircleArrow = ({
   variant = 'dark',
 }: {
-  variant?: 'light' | 'dark'
+  variant?: 'light' | 'dark' | 'amber'
 }) => (
   <span
     className={
-      'inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors duration-150 hover:opacity-100 ' +
+      'inline-flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-full border text-[13px] transition-colors duration-150 ' +
       (variant === 'dark'
-        ? 'border-white/10 text-white/60'
-        : 'border-zinc-300 text-zinc-500')
+        ? 'border-white/25 text-white/55'
+        : variant === 'amber'
+          ? 'border-black/20 text-black/40'
+          : 'border-[#E8E4DC] text-[#6B6B6B]')
     }
     aria-hidden='true'
   >
-    <SCIcon icon={ArrowSquareOut} size='xs' />
+    →
   </span>
 )

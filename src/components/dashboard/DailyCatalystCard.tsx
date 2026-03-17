@@ -11,19 +11,19 @@ const CATALYST_CONFIG = {
     icon: ArrowCounterClockwise,
     label: 'Pick up where you left off',
     accent: 'bg-primary',
-    iconBg: 'bg-[#3B6B9C]',
+    iconBg: 'bg-[#1B3FC4]',
   },
   drill: {
     icon: Lightning,
     label: 'Focused practice session',
     accent: 'bg-primary',
-    iconBg: 'bg-[#3B6B9C]',
+    iconBg: 'bg-[#1B3FC4]',
   },
   warmup: {
     icon: Play,
     label: 'Suggested for today',
     accent: 'bg-primary',
-    iconBg: 'bg-[#3B6B9C]',
+    iconBg: 'bg-[#1B3FC4]',
   },
 } as const
 
@@ -39,7 +39,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
     : null
 
   return (
-    <div className='bg-primary rounded-md border border-[#2F5A85] p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
+    <div className='bg-primary rounded-md border border-[#1535A8] p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
       {/* Header */}
       <div className='flex items-start gap-3 relative z-10'>
         <div className='p-2 rounded-md bg-primary/50 shrink-0 mt-0.5'>
@@ -70,7 +70,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
               {progressPercent}% complete
             </span>
           </div>
-          <div className='h-1.5 bg-[#F0F5FA] rounded-full overflow-hidden'>
+          <div className='h-1.5 bg-[#EEF2FC] rounded-full overflow-hidden'>
             <div
               className='h-full bg-white/80 rounded-full transition-all duration-300'
               style={{ width: `${progressPercent}%` }}
@@ -100,7 +100,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
           className={cn(
             'flex items-center gap-2 bg-white text-primary font-bold text-sm',
             'px-4 py-2 rounded-md',
-            'hover:bg-[#F0F5FA] transition-colors duration-150',
+            'hover:bg-[#EEF2FC] transition-colors duration-150',
             'group-hover:shadow-md',
           )}
         >
