@@ -77,7 +77,7 @@ export const PacingEnduranceGauge = ({
               <Tooltip
                 cursor={{ stroke: 'var(--color-ink-faint)', strokeWidth: 1 }}
                 contentStyle={{
-                  borderRadius: 8,
+                  borderRadius: 6,
                   borderColor: 'var(--color-border)',
                   backgroundColor: 'var(--color-paper)',
                   boxShadow: '0 1px 3px rgba(26,26,26,0.06)',

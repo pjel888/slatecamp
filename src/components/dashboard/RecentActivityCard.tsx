@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FileText, CheckSquare, ArrowRight } from 'lucide-react'
+import { Card } from '@/components/ui/card'
 import type { RecentActivity } from '@/lib/actions/dashboard'
 
 interface RecentActivityCardProps {
@@ -14,28 +15,28 @@ const ACTIVITY_ICONS = {
 export function RecentActivityCard({ activities }: RecentActivityCardProps) {
   if (activities.length === 0) {
     return (
-      <div className='bg-white rounded-md border border-border p-4 flex flex-col justify-between h-full'>
+      <Card className='p-4 flex flex-col justify-between h-full'>
         <div>
-          <p className='text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3'>
+          <p className='text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-3'>
             Recent Activity
           </p>
-          <p className='text-sm text-zinc-500 leading-relaxed'>
+          <p className='text-sm text-gray-700 leading-relaxed'>
             Your recent sessions and notes will appear here.
           </p>
         </div>
         <Link
           href='/dashboard/testing'
-          className='text-[11px] font-bold text-blue-600 hover:text-blue-700 uppercase tracking-widest flex items-center gap-1 mt-4 transition-colors'
+          className='text-xs font-semibold text-blue-600 hover:text-blue-700 uppercase tracking-widest flex items-center gap-1 mt-4 transition-colors'
         >
           Start first session <ArrowRight className='h-3 w-3' />
         </Link>
-      </div>
+      </Card>
     )
   }
 
   return (
-    <div className='bg-white rounded-md border border-border p-4 flex flex-col h-full'>
-      <p className='text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3 shrink-0'>
+    <Card className='p-4 flex flex-col h-full'>
+      <p className='text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-3 shrink-0'>
         Recent Activity
       </p>
 
@@ -67,11 +68,11 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
 
       <Link
         href='/dashboard/analytics'
-        className='text-xs font-bold text-zinc-400 hover:text-zinc-600 uppercase tracking-widest flex items-center gap-1 mt-3 pt-3 border-t border-zinc-100 transition-colors shrink-0'
+        className='text-xs font-semibold text-zinc-400 hover:text-zinc-600 uppercase tracking-widest flex items-center gap-1 mt-3 pt-3 border-t border-zinc-100 transition-colors shrink-0'
       >
         View all activity <ArrowRight className='h-2.5 w-2.5' />
       </Link>
-    </div>
+    </Card>
   )
 }
 

@@ -18,15 +18,15 @@ interface SubjectRadarChartProps {
 }
 
 const getScoreColor = (score: number) => {
-  if (score >= 80) return '#10b981' // Emerald
-  if (score >= 50) return '#f97316' // Orange
-  return '#ef4444' // Red
+  if (score >= 80) return '#16a34a' // green-600 mastery
+  if (score >= 50) return '#f59e0b' // amber-500 warning
+  return '#ef4444' // red-500 error
 }
 
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="rounded-md border border-border bg-white p-2 shadow-lg">
+      <div className="rounded-md border border-[#d0d7de] bg-white p-2 shadow-lg">
         <p className="text-xs font-bold uppercase tracking-wider text-zinc-500">
           {payload[0].payload.subject}
         </p>
@@ -61,10 +61,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
 
   const chartData = data
 
-  const maxScore = Math.max(...chartData.map(d => d.score), 1)
-  const innerColor = getScoreColor(0)
-  const midColor = getScoreColor(maxScore / 2)
-  const outerColor = getScoreColor(maxScore)
+  const _maxScore = Math.max(...chartData.map(d => d.score), 1)
 
   return (
     <Card className='border-border bg-white p-2 flex flex-col h-full relative'>
@@ -78,17 +75,10 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
         <div className='h-[240px] w-full'>
           <ResponsiveContainer width='100%' height='100%'>
             <RadarChart cx='50%' cy='50%' outerRadius='80%' data={chartData}>
-              <defs>
-                <radialGradient id="radarGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                  <stop offset="0%" stopColor={innerColor} stopOpacity={0.9} />
-                  <stop offset="50%" stopColor={midColor} stopOpacity={0.7} />
-                  <stop offset="100%" stopColor={outerColor} stopOpacity={0.8} />
-                </radialGradient>
-              </defs>
               <PolarGrid stroke='#f4f4f5' strokeWidth={1} />
               <PolarAngleAxis
                 dataKey='subject'
-                tick={{ fill: '#656d76', fontSize: 11, fontWeight: 500 }}
+                tick={{ fill: '#6b7280', fontSize: 11, fontWeight: 500 }}
               />
               <PolarRadiusAxis
                 angle={30}
@@ -100,11 +90,11 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
               <Radar
                 name='Mastery'
                 dataKey='score'
-                stroke={outerColor}
+                stroke='#2563eb'
                 strokeWidth={1.5}
-                fill="url(#radarGradient)"
-                fillOpacity={0.5}
-                dot={{ r: 2, fill: '#ffffff', stroke: outerColor, strokeWidth: 1.5 }}
+                fill='#2563eb'
+                fillOpacity={0.15}
+                dot={{ r: 2, fill: '#ffffff', stroke: '#2563eb', strokeWidth: 1.5 }}
                 activeDot={{ r: 4, fill: '#ffffff', stroke: '#1d1d1f', strokeWidth: 1.5 }}
                 animationDuration={1500}
               />

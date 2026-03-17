@@ -37,15 +37,6 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
 
   return (
     <div className='bg-blue-600 rounded-md border border-blue-700 p-5 flex flex-col gap-4 relative overflow-hidden group'>
-      {/* Subtle background texture */}
-      <div
-        className='absolute inset-0 opacity-[0.06] pointer-events-none'
-        style={{
-          backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-          backgroundSize: '20px 20px',
-        }}
-      />
-
       {/* Header */}
       <div className='flex items-start gap-3 relative z-10'>
         <div className='p-2 rounded-md bg-blue-500/50 shrink-0 mt-0.5'>

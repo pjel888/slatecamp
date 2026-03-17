@@ -37,21 +37,12 @@ export const DashboardHero = ({
         <div className='absolute inset-0 bg-linear-to-t from-zinc-950/70 via-zinc-950/10 to-transparent' />
       </div>
 
-      {/* Subtle Grid Overlay */}
-      <div
-        className='absolute inset-0 opacity-[0.04] z-10 pointer-events-none'
-        style={{
-          backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-        }}
-      />
-
       {/* Content */}
       <div className='absolute bottom-0 left-0 right-0 z-20 p-5 pb-6'>
         <p className='text-zinc-400 text-xs font-medium mb-1 tracking-wide'>
           {greeting}
         </p>
-        <h1 className='text-white text-xl md:text-2xl font-semibold tracking-tight leading-snug drop-shadow-sm'>
+        <h1 className='text-white text-xl font-semibold tracking-tight leading-snug'>
           {userName.charAt(0).toUpperCase() + userName.slice(1)}.
         </h1>
         <p className='text-zinc-300/70 text-sm mt-1 leading-snug max-w-lg'>

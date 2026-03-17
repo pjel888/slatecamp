@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Brain, Coffee, Zap, Settings2, Target, Sparkles, ArrowRight, ShieldCheck, Activity } from 'lucide-react'
+import { Brain, Coffee, Zap, Settings2, Target, ArrowRight, ShieldCheck, Activity } from 'lucide-react'
 import { ModeCard } from './ModeCard'
 import { CustomSessionBuilder } from './CustomSessionBuilder'
 import { SubjectDrillSelector } from './SubjectDrillSelector'
@@ -26,14 +26,14 @@ export function TestingHub({ initialSession, disciplineId, subjects, onStartSess
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Today's Recommendation Banner */}
       {decayedNode ? (
-        <div className="mb-16 p-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-sm shadow-lg shadow-blue-200/50">
-          <div className="bg-white/95 backdrop-blur-sm p-6 rounded-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mb-16 p-6 bg-white border border-blue-200 rounded-md">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-5 text-center md:text-left">
-              <div className="w-14 h-14 rounded-sm bg-blue-50 flex items-center justify-center shrink-0 border border-blue-100">
-                <Sparkles className="h-7 w-7 text-blue-600" />
+              <div className="w-14 h-14 rounded-md bg-blue-50 flex items-center justify-center shrink-0 border border-blue-100">
+                <Target className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-zinc-900 tracking-tight">Today's Recommendation</h2>
+                <h2 className="text-xl font-semibold text-zinc-900 tracking-tight">Today&apos;s Recommendation</h2>
                 <p className="text-zinc-500 mt-1 max-w-xl text-sm leading-relaxed">
                   Your{' '}
                   <span className="text-zinc-900 font-bold underline decoration-blue-500/30">
@@ -59,8 +59,8 @@ export function TestingHub({ initialSession, disciplineId, subjects, onStartSess
           </div>
         </div>
       ) : (
-        <div className="mb-16 p-6 bg-zinc-50 border border-zinc-200 rounded-sm flex items-center gap-4">
-          <Sparkles className="h-5 w-5 text-zinc-300 shrink-0" />
+        <div className="mb-16 p-6 bg-zinc-50 border border-zinc-200 rounded-md flex items-center gap-4">
+          <Target className="h-5 w-5 text-zinc-300 shrink-0" />
           <p className="text-sm text-zinc-400">
             Complete a few sessions to unlock personalized recommendations.
           </p>
@@ -79,7 +79,7 @@ export function TestingHub({ initialSession, disciplineId, subjects, onStartSess
               title="Camp Mode"
               description='"Learn as you go" - First pass on new topics, building foundations with instant SME rationales.'
               icon={Brain}
-              accentColor="bg-teal-500"
+              accentColor="bg-blue-600"
               primaryActionLabel="Start Camp"
               onPrimaryAction={() => onStartSession({ mode: 'camp' })}
               onSecondaryAction={initialSession?.test_mode === 'camp' ? onResumeSession : undefined}
@@ -125,17 +125,17 @@ export function TestingHub({ initialSession, disciplineId, subjects, onStartSess
             />
             <div 
               onClick={() => setIsBuilderOpen(true)}
-              className="group relative bg-white border border-zinc-200 rounded-sm p-6 transition-all duration-150 hover:shadow-sm hover:border-zinc-300 cursor-pointer flex flex-col h-full"
+              className="group relative bg-white border border-zinc-200 rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-zinc-300 cursor-pointer flex flex-col h-full"
             >
-              <div className="w-12 h-12 rounded-sm bg-purple-500 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
+              <div className="w-12 h-12 rounded-md bg-zinc-700 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
                 <Settings2 className="h-6 w-6 text-white" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-zinc-900 mb-2">Custom Session</h3>
+                <h3 className="text-sm font-semibold text-zinc-900 mb-2">Custom Session</h3>
                 <p className="text-sm text-zinc-500 leading-relaxed mb-6">"Your rules" - Bespoke drilling with custom timers, counts, and feedback settings.</p>
               </div>
               <div className="mt-auto">
-                <div className="w-full py-2 bg-zinc-50 rounded-sm text-zinc-900 text-sm font-bold flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
+                <div className="w-full py-2 bg-zinc-50 rounded-md text-zinc-900 text-sm font-bold flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
                   Configure Session
                 </div>
               </div>
@@ -175,7 +175,7 @@ export function TestingHub({ initialSession, disciplineId, subjects, onStartSess
               title="Endurance Cycle™"
               description="Cognitive stamina training - Progressive session lengths to build focus for 4+ hour exams."
               icon={Activity}
-              accentColor="bg-orange-600"
+              accentColor="bg-amber-500"
               primaryActionLabel="Start Training"
               onPrimaryAction={() => onStartSession({ mode: 'endurance', count: 20 })}
             />

@@ -5,6 +5,7 @@ import { RecentActivityCard } from '@/components/dashboard/RecentActivityCard'
 import { CompetenceSignalCard } from '@/components/dashboard/CompetenceSignalCard'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import { HeatmapSection, HeatmapSectionSkeleton } from '@/components/dashboard/HeatmapSection'
+import { Card } from '@/components/ui/card'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { getDashboardData } from '@/lib/actions/dashboard'
 
@@ -41,7 +42,7 @@ export default async function DashboardPage() {
         />
 
         {/* 4. Consistency Layer */}
-        <div className='w-full bg-white relative border border-border rounded-md p-2'>
+        <Card className='w-full relative p-2'>
           <RichInfoPopover
             title='Study Journey'
             description='Your activity over time. Each cell is one day — darker blue means more sessions completed.'
@@ -49,7 +50,7 @@ export default async function DashboardPage() {
           <Suspense fallback={<HeatmapSectionSkeleton />}>
             <HeatmapSection />
           </Suspense>
-        </div>
+        </Card>
       </div>
     </SharedPageLayout>
   )

@@ -1,7 +1,7 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { Calendar, Flame, Timer, TrendingUp } from 'lucide-react'
+import { Calendar, Timer, TrendingUp } from 'lucide-react'
 import { LineChart, Line, ResponsiveContainer, YAxis } from 'recharts'
 
 const SPARK_DATA = [
@@ -12,13 +12,13 @@ export const TrendMetrics = () => {
   return (
     <div className='grid grid-cols-2 gap-2'>
       <MetricCard icon={<Calendar className='h-3 w-3 text-zinc-400' />} label="Exam Goal" val="42" unit="Days Left" />
-      <MetricCard icon={<Flame className='h-3 w-3 text-orange-500' />} label="Daily Streak" val="12" unit="Days" />
+      <MetricCard icon={<Calendar className='h-3 w-3 text-zinc-400' />} label="Sessions This Week" val="8" unit="Completed" />
       <MetricCard icon={<Timer className='h-3 w-3 text-zinc-400' />} label="Pacing" val="1.4" unit="Min/Q" />
       
       <Card className='border-zinc-200 bg-white shadow-none p-3 flex flex-col justify-between h-[68px]'>
         <div className='flex flex-col gap-0.5'>
           <span className='text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1'>
-            <TrendingUp className='h-3 w-3 text-green-600' /> Weekly Trend
+            <TrendingUp className='h-3 w-3 text-blue-600' /> Weekly Trend
           </span>
           <div className='h-8 w-full -mt-1'>
             <ResponsiveContainer width="100%" height="100%">
@@ -27,7 +27,7 @@ export const TrendMetrics = () => {
                 <Line 
                   type="monotone" 
                   dataKey="val" 
-                  stroke="#10b981" 
+                  stroke="#2563eb" 
                   strokeWidth={2} 
                   dot={false} 
                   isAnimationActive={false}
