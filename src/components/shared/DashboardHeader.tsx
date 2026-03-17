@@ -13,7 +13,7 @@ export const DashboardHeader = () => {
   }, [pathname])
 
   return (
-    <header className='flex items-center border-b border-border bg-white px-6 py-3'>
+    <header className='flex items-center border-b border-border bg-white h-16'>
       <h1 className='text-xl font-semibold text-gray-900 tracking-tight'>
         {title}
       </h1>

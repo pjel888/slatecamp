@@ -37,6 +37,13 @@ export const ROUTES = {
   THREE_D_LAB: "/dashboard/3d-lab",
   TESTING: "/dashboard/testing",
   ADMIN: "/dashboard/admin",
+  DEVELOPER: "/dashboard/developer",
+  DEVELOPER_CONSOLE: "/dashboard/developer/console",
+  DEVELOPER_TEST_DATA: "/dashboard/developer/test-data",
+  DEVELOPER_DOCS: "/dashboard/developer/docs",
+  DEVELOPER_DB: "/dashboard/developer/db",
+  DEVELOPER_LOGS: "/dashboard/developer/logs",
+  DEVELOPER_DESIGN_SYSTEM: "/dashboard/developer/design-system",
 } as const;
 
 /** Paths that do not require authentication (middleware). */

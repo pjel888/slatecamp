@@ -14,8 +14,10 @@ import {
   RefreshCcw,
   Wifi,
   WifiOff,
+  Terminal,
 } from 'lucide-react'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
+import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'
 import type { FeatureFlags } from '@/lib/admin/feature-flags'
 import type { DevConnectionState } from '@/lib/dev/dev-mode'
@@ -111,6 +113,9 @@ export function DevToolbar({
     router.refresh()
   }
 
+  const isImpersonating = useDevStore((s) => s.isImpersonating)
+  const activePresetId = useDevStore((s) => s.activePresetId)
+
   // Guard against DB subscription_tier values not in TIER_CONFIG (e.g. 'pro', 'enterprise')
   const tierConfig = TIER_CONFIG[effectiveTier] ?? TIER_CONFIG.free
   const connConfig = CONN_CONFIG[connectionState]
@@ -159,6 +164,11 @@ export function DevToolbar({
           >
             {tierConfig.label}
           </span>
+          {isImpersonating && activePresetId && (
+            <span className='inline-flex items-center rounded-full bg-amber-500/20 px-1.5 py-0.5 text-[9px] font-semibold text-amber-500'>
+              {activePresetId.replace(/_/g, ' ')}
+            </span>
+          )}
           <ChevronUp className='h-3 w-3 text-muted-foreground' />
         </button>
       )}
@@ -297,10 +307,11 @@ export function DevToolbar({
               Reset
             </button>
             <a
-              href='/dashboard/settings/developer'
+              href='/dashboard/developer'
               className='flex items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground'
             >
-              Full settings
+              <Terminal className='h-3 w-3' />
+              Dev Console
               <ExternalLink className='h-3.5 w-3.5' />
             </a>
           </div>

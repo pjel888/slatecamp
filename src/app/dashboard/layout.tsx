@@ -8,6 +8,7 @@ import { Sidebar } from '@/components/shared/Sidebar'
 import { Navbar } from '@/components/shared/Navbar'
 import { DashboardHeader } from '@/components/shared/DashboardHeader'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
+import { DevKeyboardProvider } from '@/components/dev/dev-keyboard-provider'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
 import { NoteContextProvider } from '@/lib/context/note-context'
 import { TierProvider } from '@/lib/context/tier-context'
@@ -109,12 +110,24 @@ async function DashboardLayoutContent({
               </BreadcrumbProvider>
             </div>
             {showDevTools && flags != null && (
-              <DevToolbar
-                connectionState={isDemo ? 'local' : 'connected'}
-                currentTier={currentTier}
-                effectiveTier={effectiveTier}
-                flags={flags}
-              />
+              <>
+                <DevToolbar
+                  connectionState={isDemo ? 'local' : 'connected'}
+                  currentTier={currentTier}
+                  effectiveTier={effectiveTier}
+                  flags={flags}
+                />
+                <DevKeyboardProvider
+                  systemInfo={{
+                    env: process.env.NODE_ENV ?? 'development',
+                    nextVersion: '15',
+                    userId: user.id,
+                    userEmail: user.email ?? '',
+                    userRole: user.app_metadata?.role ?? 'user',
+                    connectionState: isDemo ? 'local' : 'connected',
+                  }}
+                />
+              </>
             )}
           </div>
           </NoteContextProvider>

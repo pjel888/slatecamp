@@ -1,38 +1,14 @@
 // src/app/dashboard/3d-lab/_templates/AnimatedSequenceScene.tsx
-import { useRef, useMemo } from 'react'
+import { useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
+import { GeometryElement } from '../_components/GeometryMesh'
 import type { AnimatedSequenceConfig, GeometryInstruction } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 import type { Mesh, MeshStandardMaterial } from 'three'
 import { MathUtils } from 'three'
-
-// ─── Geometry Renderer ──────────────────────────────────────────────────────
-
-function GeometryElement({ inst }: { inst: GeometryInstruction }) {
-  const geometryEl = useMemo(() => {
-    switch (inst.type) {
-      case 'box':
-        return <boxGeometry args={inst.args as [number, number, number]} />
-      case 'cylinder':
-        return <cylinderGeometry args={inst.args as [number, number, number, number]} />
-      case 'ring':
-        return <ringGeometry args={inst.args as [number, number, number]} />
-      case 'sphere':
-        return <sphereGeometry args={inst.args as [number, number, number]} />
-      case 'cone':
-        return <coneGeometry args={inst.args as [number, number, number]} />
-      case 'plane':
-        return <planeGeometry args={inst.args as [number, number]} />
-      default:
-        return <boxGeometry args={[0.1, 0.1, 0.1]} />
-    }
-  }, [inst.type, inst.args])
-
-  return geometryEl
-}
 
 // ─── Fading Geometry Mesh ───────────────────────────────────────────────────
 
@@ -44,6 +20,7 @@ interface FadingMeshProps {
 
 function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
   const meshRef = useRef<Mesh>(null)
+  const matRef = useRef<MeshStandardMaterial>(null)
   const opacityRef = useRef(isCurrent ? 0 : (inst.opacity ?? 1))
   const targetOpacity = inst.opacity ?? 1
   const { invalidate } = useThree()
@@ -52,10 +29,9 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
   const fadeSpeed = fadeDurationMs > 0 ? 1000 / fadeDurationMs : 10
 
   useFrame((_, delta) => {
-    if (!meshRef.current) return
+    if (!meshRef.current || !matRef.current) return
 
-    const mat = meshRef.current.material as MeshStandardMaterial
-    if (!mat) return
+    const mat = matRef.current
 
     if (isCurrent) {
       // Fade in towards target
@@ -94,6 +70,7 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
     >
       <GeometryElement inst={inst} />
       <meshStandardMaterial
+        ref={matRef}
         color={inst.color}
         opacity={isCurrent ? 0 : targetOpacity}
         transparent

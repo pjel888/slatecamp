@@ -36,7 +36,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
     : null
 
   return (
-    <div className='bg-blue-600 rounded-md border border-blue-700 p-5 flex flex-col gap-4 relative overflow-hidden group'>
+    <div className='bg-blue-600 rounded-md border border-blue-700 p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
       {/* Header */}
       <div className='flex items-start gap-3 relative z-10'>
         <div className='p-2 rounded-md bg-blue-500/50 shrink-0 mt-0.5'>
@@ -60,7 +60,8 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
         <div className='relative z-10'>
           <div className='flex items-center justify-between mb-1.5'>
             <span className='text-xs font-medium text-blue-200'>
-              Question {catalyst.progress!.current} of {catalyst.progress!.total}
+              Question {catalyst.progress!.current} of{' '}
+              {catalyst.progress!.total}
             </span>
             <span className='text-xs font-bold text-blue-100'>
               {progressPercent}% complete
@@ -78,7 +79,13 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
       {/* Footer */}
       <div className='flex items-center justify-between relative z-10'>
         <div className='flex items-center gap-1.5 bg-blue-500/40 text-blue-100 text-xs font-medium px-2.5 py-1 rounded-full'>
-          <svg className='h-3 w-3' fill='none' viewBox='0 0 24 24' stroke='currentColor' strokeWidth={2}>
+          <svg
+            className='h-3 w-3'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            strokeWidth={2}
+          >
             <circle cx='12' cy='12' r='10' />
             <polyline points='12 6 12 12 16 14' />
           </svg>

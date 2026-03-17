@@ -4,45 +4,10 @@ import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
+import { GeometryElement } from '../_components/GeometryMesh'
 import type { CutawaySectionConfig, GeometryInstruction } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
-
-// ─── Geometry Renderer ──────────────────────────────────────────────────────
-
-function InstructionMesh({ inst }: { inst: GeometryInstruction }) {
-  const geometryEl = useMemo(() => {
-    switch (inst.type) {
-      case 'box':
-        return <boxGeometry args={inst.args as [number, number, number]} />
-      case 'cylinder':
-        return <cylinderGeometry args={inst.args as [number, number, number, number]} />
-      case 'plane':
-        return <planeGeometry args={inst.args as [number, number]} />
-      case 'sphere':
-        return <sphereGeometry args={inst.args as [number, number, number]} />
-      case 'cone':
-        return <coneGeometry args={inst.args as [number, number, number]} />
-      default:
-        return <boxGeometry args={[0.1, 0.1, 0.1]} />
-    }
-  }, [inst.type, inst.args])
-
-  return (
-    <mesh
-      position={inst.position}
-      rotation={inst.rotation ?? [0, 0, 0]}
-      scale={inst.scale ?? [1, 1, 1]}
-    >
-      {geometryEl}
-      <meshStandardMaterial
-        color={inst.color}
-        opacity={inst.opacity ?? 1}
-        transparent={inst.transparent ?? (inst.opacity !== undefined && inst.opacity < 1)}
-      />
-    </mesh>
-  )
-}
 
 // ─── Cut Plane Indicator ────────────────────────────────────────────────────
 
@@ -108,19 +73,6 @@ function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
     }
   })
 
-  const geoEl = useMemo(() => {
-    switch (geometry.type) {
-      case 'box':
-        return <boxGeometry args={geometry.args as [number, number, number]} />
-      case 'cylinder':
-        return <cylinderGeometry args={geometry.args as [number, number, number, number]} />
-      case 'plane':
-        return <planeGeometry args={geometry.args as [number, number]} />
-      default:
-        return <boxGeometry args={geometry.args as [number, number, number]} />
-    }
-  }, [geometry.type, geometry.args])
-
   return (
     <group ref={groupRef}>
       <mesh
@@ -128,7 +80,7 @@ function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
         rotation={geometry.rotation ?? [0, 0, 0]}
         scale={geometry.scale ?? [1, 1, 1]}
       >
-        {geoEl}
+        <GeometryElement inst={geometry} />
         <meshStandardMaterial
           ref={matRef}
           color={geometry.color}
@@ -148,6 +100,9 @@ interface CutawaySectionSceneProps {
   useStore: UseBoundStore<StoreApi<ModuleStoreState>>
 }
 
+/** Fade zone width — layers within this distance of the cut start fading */
+const FADE_ZONE = 0.08
+
 export function CutawaySectionScene({ config, useStore }: CutawaySectionSceneProps) {
   useModuleInvalidate(useStore)
 
@@ -155,9 +110,6 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
   const activeAnnotation = useStore((s) => s.activeAnnotation)
   const cutPosition = typeof params.cutPosition === 'number' ? params.cutPosition : 1
   const cutAxis = config.cutAxis ?? 'y'
-
-  // Fade zone width — layers within this distance of the cut start fading
-  const fadeZone = 0.08
 
   const layersWithOpacity = useMemo(() => {
     return config.layers.map((layer) => {
@@ -169,10 +121,10 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
         return { layer, opacity: 0 }
       }
       // Partial fade
-      const t = Math.max(0, Math.min(1, (cutPosition - layer.depth) / fadeZone))
+      const t = Math.max(0, Math.min(1, (cutPosition - layer.depth) / FADE_ZONE))
       return { layer, opacity: t }
     })
-  }, [config.layers, cutPosition, fadeZone])
+  }, [config.layers, cutPosition])
 
   return (
     <group scale={config.scale ?? 1}>

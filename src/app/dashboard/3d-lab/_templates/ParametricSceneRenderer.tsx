@@ -3,53 +3,10 @@ import { useMemo } from 'react'
 import { Html } from '@react-three/drei'
 import { AlertTriangle } from 'lucide-react'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
-import type { ParametricSceneConfig, GeometryInstruction } from '../_types/templates'
+import { InstructionMesh } from '../_components/GeometryMesh'
+import type { ParametricSceneConfig } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
-
-// ─── Geometry Renderers ─────────────────────────────────────────────────────
-
-function InstructionMesh({ inst }: { inst: GeometryInstruction }) {
-  const geometryEl = useMemo(() => {
-    switch (inst.type) {
-      case 'box':
-        return <boxGeometry args={inst.args as [number, number, number]} />
-      case 'cylinder':
-        return (
-          <cylinderGeometry
-            args={inst.args as [number, number, number, number]}
-          />
-        )
-      case 'plane':
-        return <planeGeometry args={inst.args as [number, number]} />
-      case 'ring':
-        return (
-          <ringGeometry args={inst.args as [number, number, number]}/>
-        )
-      case 'sphere':
-        return <sphereGeometry args={inst.args as [number, number, number]} />
-      case 'cone':
-        return <coneGeometry args={inst.args as [number, number, number]} />
-      default:
-        return <boxGeometry args={[0.1, 0.1, 0.1]} />
-    }
-  }, [inst.type, inst.args])
-
-  return (
-    <mesh
-      position={inst.position}
-      rotation={inst.rotation ?? [0, 0, 0]}
-      scale={inst.scale ?? [1, 1, 1]}
-    >
-      {geometryEl}
-      <meshStandardMaterial
-        color={inst.color}
-        opacity={inst.opacity ?? 1}
-        transparent={inst.transparent ?? false}
-      />
-    </mesh>
-  )
-}
 
 // ─── Main Renderer ──────────────────────────────────────────────────────────
 

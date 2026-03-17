@@ -642,6 +642,45 @@ export interface NoteStub {
   snippet?: string;
 }
 
+// =============================================
+// Multi-Tenant / Organization Types
+// =============================================
+
+export type UserType = 'regular' | 'educational' | 'corporate'
+
+export type OrgMemberRole = 'owner' | 'admin' | 'instructor' | 'member'
+
+export interface Organization {
+  org_id: string
+  name: string
+  slug: string
+  type: UserType
+  logo_url: string | null
+  max_seats: number
+  created_at: string
+  updated_at: string
+}
+
+export interface OrganizationMember {
+  id: string
+  org_id: string
+  user_id: string
+  role: OrgMemberRole
+  joined_at: string
+}
+
+export interface FeatureFlagRecord {
+  id: string
+  key: string
+  description: string | null
+  enabled: boolean
+  target_tier: string[]
+  target_roles: string[]
+  created_by: string | null
+  created_at: string
+  updated_at: string
+}
+
 export interface FinalStretchData {
   isActive: boolean;
   phase: FinalStretchPhase;

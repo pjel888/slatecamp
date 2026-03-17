@@ -3,36 +3,12 @@ import { useRef, useState, useCallback, useMemo } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
-import type { ExplodedAssemblyConfig, AssemblyPart, GeometryInstruction } from '../_types/templates'
+import { GeometryElement } from '../_components/GeometryMesh'
+import type { ExplodedAssemblyConfig, AssemblyPart } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
-import type { Mesh, Group } from 'three'
+import type { Group } from 'three'
 import { MathUtils } from 'three'
-
-// ─── Geometry Renderer ──────────────────────────────────────────────────────
-
-function GeometryElement({ inst }: { inst: GeometryInstruction }) {
-  const geometryEl = useMemo(() => {
-    switch (inst.type) {
-      case 'box':
-        return <boxGeometry args={inst.args as [number, number, number]} />
-      case 'cylinder':
-        return <cylinderGeometry args={inst.args as [number, number, number, number]} />
-      case 'ring':
-        return <ringGeometry args={inst.args as [number, number, number]} />
-      case 'sphere':
-        return <sphereGeometry args={inst.args as [number, number, number]} />
-      case 'cone':
-        return <coneGeometry args={inst.args as [number, number, number]} />
-      case 'plane':
-        return <planeGeometry args={inst.args as [number, number]} />
-      default:
-        return <boxGeometry args={[0.1, 0.1, 0.1]} />
-    }
-  }, [inst.type, inst.args])
-
-  return geometryEl
-}
 
 // ─── Single Assembly Part ───────────────────────────────────────────────────
 
@@ -217,20 +193,21 @@ export function ExplodedAssemblyScene({
     [activePartId, setActiveAnnotation],
   )
 
-  // Group parts by their id prefix for comparison mode (always computed to obey rules of hooks)
+  // Group parts for comparison mode using the explicit `group` field on each part.
+  // Falls back to ID prefix parsing only if no group is set (legacy safety).
   const orderGroups = useMemo(() => {
     if (!config.comparisonMode) return []
     const groups = new Map<string, { parts: AssemblyPart[]; label: string }>()
     for (const part of config.parts) {
-      // Extract order name from id: "tuscan-base" -> "tuscan"
-      const dashIdx = part.id.indexOf('-')
-      const orderKey = dashIdx > 0 ? part.id.slice(0, dashIdx) : part.id
-      if (!groups.has(orderKey)) {
-        // Capitalize first letter for label
-        const label = orderKey.charAt(0).toUpperCase() + orderKey.slice(1)
-        groups.set(orderKey, { parts: [], label })
+      const groupKey = part.group ?? (() => {
+        const dashIdx = part.id.indexOf('-')
+        return dashIdx > 0 ? part.id.slice(0, dashIdx) : part.id
+      })()
+      if (!groups.has(groupKey)) {
+        const label = groupKey.charAt(0).toUpperCase() + groupKey.slice(1)
+        groups.set(groupKey, { parts: [], label })
       }
-      groups.get(orderKey)!.parts.push(part)
+      groups.get(groupKey)!.parts.push(part)
     }
     return Array.from(groups.values())
   }, [config.comparisonMode, config.parts])

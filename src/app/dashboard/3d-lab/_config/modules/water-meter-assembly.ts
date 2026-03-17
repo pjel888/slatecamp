@@ -1,0 +1,95 @@
+// src/app/dashboard/3d-lab/_config/modules/water-meter-assembly.ts
+// Water Meter Assembly — NPCP Plumbing
+import type { ExplodedAssemblyConfig } from '../../_types/templates'
+
+export const waterMeterAssemblyConfig: ExplodedAssemblyConfig = {
+  id: 'water-meter-assembly',
+  title: 'Water Meter Assembly',
+  description: 'Exploded assembly of a residential water service entry showing: main shutoff, strainer, meter body with register, meter couplings, check valve, and house-side shutoff valve.',
+  subject: 'npcp',
+  parts: [
+    {
+      id: 'wma-service-pipe',
+      label: 'Service Pipe (25mm dia)',
+      description: 'Water service lateral from main to property line. Typically 20–25mm HDPE or copper for residential.',
+      codeCitation: 'NPCP Section 601',
+      geometry: { id: 'wma-service-pipe-geo', type: 'cylinder', position: [-0.7, 0, 0], rotation: [0, 0, 1.5708], args: [0.025, 0.025, 0.4, 8], color: '#3b82f6' },
+      explodeOffset: [-0.9, 0, 0],
+    },
+    {
+      id: 'wma-curb-stop',
+      label: 'Curb Stop (Corp Cock)',
+      description: 'Key-operated curb stop at property line (curb box). Operated by utility only. First isolation point on service.',
+      codeCitation: 'NPCP Section 601.2',
+      geometry: { id: 'wma-curb-stop-geo', type: 'cylinder', position: [-0.45, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#71717a' },
+      explodeOffset: [-0.6, 0, 0],
+    },
+    {
+      id: 'wma-inlet-shutoff',
+      label: 'Inlet Ball Valve (Meter Isolation)',
+      description: 'Gate or ball valve immediately upstream of meter. Allows meter removal without shutting curb stop.',
+      geometry: { id: 'wma-inlet-shutoff-geo', type: 'cylinder', position: [-0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#64748b' },
+      explodeOffset: [-0.4, 0, 0],
+    },
+    {
+      id: 'wma-strainer',
+      label: 'Y-Strainer',
+      description: 'Y-strainer with stainless screen protects meter from debris. Required by most water utilities upstream of meter.',
+      geometry: { id: 'wma-strainer-geo', type: 'cylinder', position: [-0.18, 0, 0], rotation: [0, 0, 1.5708], args: [0.05, 0.05, 0.08, 8], color: '#a1a1aa' },
+      explodeOffset: [-0.2, 0.2, 0],
+    },
+    {
+      id: 'wma-inlet-coupling',
+      label: 'Inlet Meter Coupling',
+      description: 'Swivel or compression coupling connecting strainer to meter inlet. Allows meter removal for replacement without cutting pipe.',
+      geometry: { id: 'wma-inlet-coupling-geo', type: 'cylinder', position: [-0.06, 0, 0], rotation: [0, 0, 1.5708], args: [0.045, 0.045, 0.06, 10], color: '#94a3b8' },
+      explodeOffset: [-0.1, 0, 0],
+    },
+    {
+      id: 'wma-meter-body',
+      label: 'Meter Body (Nutating Disc)',
+      description: 'Water meter body — nutating disc or multi-jet positive displacement type for residential. Registers total volume consumed. Tamper-evident seal.',
+      codeCitation: 'NPCP Section 601 / AWWA C700',
+      geometry: { id: 'wma-meter-body-geo', type: 'box', position: [0.07, 0, 0], args: [0.18, 0.1, 0.1], color: '#1d4ed8' },
+      explodeOffset: [0.1, 0.3, 0],
+    },
+    {
+      id: 'wma-register',
+      label: 'Register / Display',
+      description: 'Odometer-style register displaying cubic meter consumption. Some modern meters have AMR (automated meter reading) transmitters.',
+      geometry: { id: 'wma-register-geo', type: 'box', position: [0.07, 0.06, 0], args: [0.1, 0.03, 0.08], color: '#e4e4e7' },
+      explodeOffset: [0.1, 0.5, 0],
+    },
+    {
+      id: 'wma-outlet-coupling',
+      label: 'Outlet Meter Coupling',
+      description: 'Outlet swivel coupling connecting meter to check valve / house piping.',
+      geometry: { id: 'wma-outlet-coupling-geo', type: 'cylinder', position: [0.19, 0, 0], rotation: [0, 0, 1.5708], args: [0.045, 0.045, 0.06, 10], color: '#94a3b8' },
+      explodeOffset: [0.25, 0, 0],
+    },
+    {
+      id: 'wma-check-valve',
+      label: 'Check Valve (Meter Backflow)',
+      description: 'Single check valve immediately downstream of meter. Prevents meter reversal and hot water back-flow from thermal expansion. Required by NPCP.',
+      codeCitation: 'NPCP Section 602',
+      geometry: { id: 'wma-check-valve-geo', type: 'cylinder', position: [0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#16a34a' },
+      explodeOffset: [0.35, 0, 0],
+    },
+    {
+      id: 'wma-outlet-shutoff',
+      label: 'House-Side Ball Valve',
+      description: 'Ball valve on house side — allows full building water shutoff by occupant for repairs without utility involvement.',
+      geometry: { id: 'wma-outlet-shutoff-geo', type: 'cylinder', position: [0.45, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#64748b' },
+      explodeOffset: [0.55, 0, 0],
+    },
+    {
+      id: 'wma-expansion-tank',
+      label: 'Thermal Expansion Tank',
+      description: 'Small diaphragm tank connected to cold supply downstream of check valve. Absorbs pressure rise from water heater thermal expansion — required with check valve installation.',
+      codeCitation: 'NPCP Section 608',
+      geometry: { id: 'wma-expansion-tank-geo', type: 'sphere', position: [0.45, 0.18, 0], args: [0.06, 8, 8], color: '#f97316' },
+      explodeOffset: [0.5, 0.4, 0],
+    },
+  ],
+  camera: { position: [0, 1.5, 2.5], fov: 50 },
+}
