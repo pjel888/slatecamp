@@ -32,7 +32,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
             </CardTitle>
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
-                'text-4xl font-bold tracking-tighter',
+                'text-xl font-bold tracking-tighter font-mono tabular-nums',
                 clamped < 50 ? 'text-red-600' : clamped < 75 ? 'text-amber-600' : 'text-green-600'
               )}>
                 {clamped}%
@@ -66,19 +66,13 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
           <div className="h-[120px]">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={data} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
-                <defs>
-                  <linearGradient id="trajGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#2563eb" stopOpacity={0.15} />
-                    <stop offset="95%" stopColor="#2563eb" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f4f4f5" />
-                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fontSize: 11, fill: '#656d76' }} />
+                <CartesianGrid stroke="#f4f4f5" strokeDasharray="3 3" />
+                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: '#6b7280', fontSize: 11 }} />
                 <YAxis hide domain={[0, 100]} />
-                <Tooltip contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', fontSize: '11px' }} />
+                <Tooltip contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }} />
                 <ReferenceLine y={75} stroke="#10b981" strokeDasharray="4 4" strokeWidth={1} />
                 <Area name="Readiness" type="monotone" dataKey="score" stroke="#2563eb" strokeWidth={1.5}
-                  fillOpacity={1} fill="url(#trajGrad)"
+                  fillOpacity={0.08} fill="#2563eb"
                   dot={{ r: 2, fill: '#2563eb', stroke: '#fff', strokeWidth: 1 }} />
               </ComposedChart>
             </ResponsiveContainer>

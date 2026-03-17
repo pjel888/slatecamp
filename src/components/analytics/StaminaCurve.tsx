@@ -51,13 +51,13 @@ export function StaminaCurve({ data }: Props) {
           <div className="h-[200px]">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f4f4f5" />
-                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fontSize: 11, fill: '#656d76' }} />
+                <CartesianGrid stroke="#f4f4f5" strokeDasharray="3 3" />
+                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fill: '#6b7280', fontSize: 11 }} />
                 <YAxis domain={[0, 100]} tickFormatter={v => `${v}%`} axisLine={false} tickLine={false}
-                  tick={{ fontSize: 11, fill: '#656d76' }} ticks={[0, 50, 75, 100]} />
+                  tick={{ fill: '#6b7280', fontSize: 11 }} ticks={[0, 50, 75, 100]} />
                 <Tooltip
                   formatter={(v: any, _: any, props: any) => [`${v}% (${props.payload.sampleSize}Q)`, 'Accuracy']}
-                  contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', fontSize: '11px' }}
+                  contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }}
                 />
                 <ReferenceLine y={75} stroke="#10b981" strokeDasharray="4 4" strokeWidth={1} />
                 <Line type="monotone" dataKey="accuracy" stroke="#2563eb" strokeWidth={1.5}

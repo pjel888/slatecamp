@@ -9,7 +9,7 @@ interface Props { data: MemoryHealthItem[] }
 const STATUS_STYLES: Record<MemoryHealthItem['status'], string> = {
   strong:       'bg-green-50 text-green-700 border-green-100',
   review:       'bg-amber-50 text-amber-700 border-amber-100',
-  fading:       'bg-orange-50 text-orange-700 border-orange-100',
+  fading:       'bg-amber-50 text-amber-700 border-amber-100',
   critical:     'bg-red-50 text-red-700 border-red-100',
 }
 

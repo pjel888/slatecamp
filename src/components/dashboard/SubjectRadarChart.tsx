@@ -18,15 +18,15 @@ interface SubjectRadarChartProps {
 }
 
 const getScoreColor = (score: number) => {
-  if (score >= 80) return '#16a34a' // green-600 mastery
-  if (score >= 50) return '#f59e0b' // amber-500 warning
-  return '#ef4444' // red-500 error
+  if (score >= 80) return '#16a34a' // green-600
+  if (score >= 50) return '#d97706' // amber-600
+  return '#dc2626' // red-600
 }
 
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="rounded-md border border-[#d0d7de] bg-white p-2 shadow-lg">
+      <div className="rounded-md bg-white p-2" style={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }}>
         <p className="text-xs font-bold uppercase tracking-wider text-zinc-500">
           {payload[0].payload.subject}
         </p>
@@ -61,7 +61,8 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
 
   const chartData = data
 
-  const _maxScore = Math.max(...chartData.map(d => d.score), 1)
+  const maxScore = Math.max(...chartData.map(d => d.score), 1)
+  const outerColor = getScoreColor(maxScore)
 
   return (
     <Card className='border-border bg-white p-2 flex flex-col h-full relative'>
@@ -75,6 +76,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
         <div className='h-[240px] w-full'>
           <ResponsiveContainer width='100%' height='100%'>
             <RadarChart cx='50%' cy='50%' outerRadius='80%' data={chartData}>
+              {/* No gradient fills — Rams standard */}
               <PolarGrid stroke='#f4f4f5' strokeWidth={1} />
               <PolarAngleAxis
                 dataKey='subject'
@@ -90,11 +92,11 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
               <Radar
                 name='Mastery'
                 dataKey='score'
-                stroke='#2563eb'
+                stroke={outerColor}
                 strokeWidth={1.5}
-                fill='#2563eb'
-                fillOpacity={0.15}
-                dot={{ r: 2, fill: '#ffffff', stroke: '#2563eb', strokeWidth: 1.5 }}
+                fill={outerColor}
+                fillOpacity={0.12}
+                dot={{ r: 2, fill: '#ffffff', stroke: outerColor, strokeWidth: 1.5 }}
                 activeDot={{ r: 4, fill: '#ffffff', stroke: '#1d1d1f', strokeWidth: 1.5 }}
                 animationDuration={1500}
               />

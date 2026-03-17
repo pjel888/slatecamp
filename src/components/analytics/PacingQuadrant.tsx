@@ -28,7 +28,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   const d = payload[0].payload as PacingQuadrantPoint
   const secs = Math.round(d.avgTimeMs / 1000)
   return (
-    <div className="rounded-md border border-border bg-white p-2 shadow-lg text-xs">
+    <div className="rounded-md border border-border bg-white p-2 text-xs" style={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }}>
       <p className="font-bold text-zinc-900 mb-1">{d.subject}</p>
       <p className="text-zinc-500">{secs}s avg · {d.accuracy}% accuracy · {d.questionCount}Q</p>
     </div>
@@ -114,15 +114,15 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
                   tickFormatter={v => `${Math.round(v / 1000)}s`}
                   domain={[0, maxSec * 1000]}
                   axisLine={false} tickLine={false}
-                  tick={{ fontSize: 11, fill: '#656d76' }}
-                  label={{ value: 'Avg Seconds / Question', position: 'insideBottom', offset: -18, fontSize: 11, fill: '#656d76' }}
+                  tick={{ fill: '#6b7280', fontSize: 11 }}
+                  label={{ value: 'Avg Seconds / Question', position: 'insideBottom', offset: -18, fontSize: 11, fill: '#6b7280' }}
                 />
                 <YAxis
                   type="number" dataKey="accuracy"
                   domain={[0, 100]}
                   tickFormatter={v => `${v}%`}
                   axisLine={false} tickLine={false}
-                  tick={{ fontSize: 11, fill: '#656d76' }}
+                  tick={{ fill: '#6b7280', fontSize: 11 }}
                   width={32}
                 />
                 <Tooltip content={<CustomTooltip />} />
