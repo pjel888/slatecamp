@@ -1,6 +1,6 @@
 // src/app/dashboard/3d-lab/_templates/CutawaySectionScene.tsx
 import { useMemo, useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
@@ -91,6 +91,7 @@ interface LayerMeshProps {
 function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
   const matRef = useRef<THREE.MeshStandardMaterial>(null)
   const groupRef = useRef<THREE.Group>(null)
+  const { invalidate } = useThree()
 
   useFrame(() => {
     if (matRef.current) {
@@ -99,6 +100,7 @@ function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
       if (Math.abs(next - current) > 0.001) {
         matRef.current.opacity = next
         matRef.current.needsUpdate = true
+        invalidate()
       }
     }
     if (groupRef.current) {

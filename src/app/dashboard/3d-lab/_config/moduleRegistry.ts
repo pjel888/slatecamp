@@ -102,7 +102,7 @@ export const MODULE_REGISTRY: ModuleRegistryEntry[] = [
     subject: 'nscp',
     codeRef: 'NSCP Chapter 2',
     priority: 8,
-    status: 'ready',
+    status: 'planned',
     description: 'Interactive seismic zone map with base shear parameter visualization.',
   },
   {

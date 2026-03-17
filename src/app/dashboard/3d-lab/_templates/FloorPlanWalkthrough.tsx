@@ -126,6 +126,7 @@ export default function FloorPlanWalkthrough({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const useStore = useMemo(() => createModuleStore(defaults), [config.id])
 
+  const params = useStore((s) => s.params)
   const cameraPos = config.camera?.position ?? [0, 15, 8]
   const cameraFov = config.camera?.fov ?? 45
 
@@ -133,64 +134,25 @@ export default function FloorPlanWalkthrough({
   const computePathCompliance = useMemo(() => {
     return (
       path: { id: string; points: Array<[number, number]> },
-      params: Record<string, number | boolean | string>
+      pathParams: Record<string, number | boolean | string>
     ) => {
-      const occupancy = String(params.occupancyType ?? 'Assembly/Business')
-      const sprinklered = Boolean(params.sprinklered ?? true)
+      const occupancy = String(pathParams.occupancyType ?? 'Assembly/Business')
+      const sprinklered = Boolean(pathParams.sprinklered ?? true)
       const maxDist = getMaxTravelDistance(occupancy, sprinklered)
       const actual = pathLength(path.points)
       return { actualDistance: actual, maxDistance: maxDist }
     }
   }, [])
 
-  // Dead-end zone bounds (static dead-end corridor spur area)
-  const DeadEndZoneComputer = useMemo(() => {
-    return function useDeadEndZones() {
-      const params = useStore((s) => s.params)
-      const occupancy = String(params.occupancyType ?? 'Assembly/Business')
-      const deadEndLimit = DEAD_END_LIMITS[occupancy] ?? 15
-
-      // The dead-end corridor spur is 8m long; if it exceeds the limit, highlight it
-      if (8 > deadEndLimit) {
-        // Dead-end spur location from config: typically at the end of the corridor
-        // We return the bounds of the dead-end spur area
-        return [[22, 8.5, 8, 3] as [number, number, number, number]]
-      }
-      return []
+  // Dead-end zone bounds — 8m spur exceeds limit for some occupancy types
+  const deadEndZones = useMemo(() => {
+    const occupancy = String(params.occupancyType ?? 'Assembly/Business')
+    const deadEndLimit = DEAD_END_LIMITS[occupancy] ?? 15
+    if (8 > deadEndLimit) {
+      return [[22, 8.5, 8, 3] as [number, number, number, number]]
     }
-  }, [useStore])
-
-  // We need a wrapper that uses the hook
-  return <FloorPlanWalkthroughInner
-    config={config}
-    useStore={useStore}
-    cameraPos={cameraPos}
-    cameraFov={cameraFov}
-    computePathCompliance={computePathCompliance}
-    DeadEndZoneComputer={DeadEndZoneComputer}
-  />
-}
-
-// Inner component that can use hooks from the store
-function FloorPlanWalkthroughInner({
-  config,
-  useStore,
-  cameraPos,
-  cameraFov,
-  computePathCompliance,
-  DeadEndZoneComputer,
-}: {
-  config: FloorPlanConfig
-  useStore: ReturnType<typeof createModuleStore>
-  cameraPos: [number, number, number]
-  cameraFov: number
-  computePathCompliance: (
-    path: { id: string; points: Array<[number, number]> },
-    params: Record<string, number | boolean | string>
-  ) => { actualDistance: number; maxDistance: number }
-  DeadEndZoneComputer: () => Array<[number, number, number, number]>
-}) {
-  const deadEndZones = DeadEndZoneComputer()
+    return [] as Array<[number, number, number, number]>
+  }, [params.occupancyType])
 
   return (
     <div className="relative h-full w-full">
@@ -227,3 +189,4 @@ function FloorPlanWalkthroughInner({
     </div>
   )
 }
+
