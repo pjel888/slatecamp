@@ -2,7 +2,8 @@
 
 import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Loader2 } from 'lucide-react'
+import { CircleNotch } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -62,7 +63,7 @@ export function ActionTransitionButton({
           {/* Invisible children preserve button dimensions — zero CLS */}
           <span className='opacity-0'>{children}</span>
           <span className='absolute inset-0 flex items-center justify-center'>
-            <Loader2 className='h-4 w-4 animate-spin' />
+            <SCIcon icon={CircleNotch} size='sm' className='animate-spin' />
           </span>
         </>
       ) : (

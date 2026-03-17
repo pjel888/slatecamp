@@ -2,16 +2,18 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { ChevronDown, ChevronRight, Search, Box, Layers, Map, Scissors, Play } from 'lucide-react'
+import { CaretDown, CaretRight, MagnifyingGlass, Cube, Stack, MapTrifold, Scissors, Play } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import { MODULE_REGISTRY, SUBJECT_AREAS } from '../_config/moduleRegistry'
 import type { ModuleRegistryEntry, TemplateType } from '../_types/templates'
 
 // ─── Template Badges ────────────────────────────────────────────────────────
 
-const TEMPLATE_META: Record<TemplateType, { label: string; icon: typeof Box; className: string }> = {
-  parametric: { label: 'Parametric', icon: Box, className: 'bg-blue-500/10 text-blue-600' },
-  exploded:   { label: 'Exploded', icon: Layers, className: 'bg-purple-500/10 text-purple-600' },
-  floorplan:  { label: 'Floor Plan', icon: Map, className: 'bg-emerald-500/10 text-emerald-600' },
+const TEMPLATE_META: Record<TemplateType, { label: string; icon: PhosphorIcon; className: string }> = {
+  parametric: { label: 'Parametric', icon: Cube, className: 'bg-primary/10 text-primary' },
+  exploded:   { label: 'Exploded', icon: Stack, className: 'bg-purple-500/10 text-purple-600' },
+  floorplan:  { label: 'Floor Plan', icon: MapTrifold, className: 'bg-emerald-500/10 text-emerald-600' },
   cutaway:    { label: 'Cutaway', icon: Scissors, className: 'bg-amber-500/10 text-amber-600' },
   animated:   { label: 'Animated', icon: Play, className: 'bg-rose-500/10 text-rose-600' },
 }
@@ -22,8 +24,6 @@ function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; basePat
   const isBuilt = module.status === 'built' || module.status === 'ready'
   const isPriority = (module.priority ?? Infinity) <= 10
   const tmpl = TEMPLATE_META[module.templateType]
-  const Icon = tmpl.icon
-
   const card = (
     <div
       className={[
@@ -31,33 +31,33 @@ function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; basePat
         isBuilt
           ? 'cursor-pointer border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700'
           : 'cursor-default border-zinc-100 bg-zinc-50/50 opacity-60 dark:border-zinc-800/50 dark:bg-zinc-900/50',
-        isPriority && isBuilt ? 'ring-1 ring-blue-600/30' : '',
+        isPriority && isBuilt ? 'ring-1 ring-primary/30' : '',
       ].join(' ')}
     >
       {/* Template badge */}
       <div className="mb-2 flex items-center gap-2">
-        <span className={`inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 text-[10px] font-medium ${tmpl.className}`}>
-          <Icon className="h-3 w-3" />
+        <span className={`inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 text-[11px] font-medium ${tmpl.className}`}>
+          <SCIcon icon={tmpl.icon} size="xs" />
           {tmpl.label}
         </span>
         {isBuilt ? (
-          <span className="rounded-md bg-green-500/10 px-1.5 py-0.5 text-[10px] font-medium text-green-600">
+          <span className="rounded-md bg-green-500/10 px-1.5 py-0.5 text-[11px] font-medium text-green-600">
             Available
           </span>
         ) : (
-          <span className="rounded-md bg-zinc-500/10 px-1.5 py-0.5 text-[10px] font-medium text-zinc-500">
+          <span className="rounded-md bg-zinc-500/10 px-1.5 py-0.5 text-[11px] font-medium text-zinc-500">
             Coming Soon
           </span>
         )}
         {isPriority && (
-          <span className="rounded-md bg-blue-500/10 px-1.5 py-0.5 text-[10px] font-medium text-blue-600">
+          <span className="rounded-md bg-primary/10 px-1.5 py-0.5 text-[11px] font-medium text-primary">
             P{module.priority}
           </span>
         )}
       </div>
 
       {/* Title */}
-      <h3 className="text-sm font-medium text-foreground group-hover:text-blue-600 transition-colors">
+      <h3 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
         {module.title}
       </h3>
 
@@ -70,7 +70,7 @@ function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; basePat
 
       {/* Code reference */}
       {module.codeRef && (
-        <p className="mt-2 text-[10px] font-mono text-muted-foreground/70">
+        <p className="mt-2 text-[11px] font-mono text-muted-foreground/70">
           {module.codeRef}
         </p>
       )}
@@ -111,12 +111,12 @@ function SubjectSection({
         className="flex w-full items-center gap-2 py-2 text-left"
       >
         {open ? (
-          <ChevronDown className="h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={CaretDown} size="sm" className="text-muted-foreground" />
         ) : (
-          <ChevronRight className="h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={CaretRight} size="sm" className="text-muted-foreground" />
         )}
         <span className="text-sm font-semibold text-foreground">{label}</span>
-        <span className="text-[10px] text-muted-foreground">
+        <span className="text-[11px] text-muted-foreground">
           {builtCount}/{modules.length} available
         </span>
       </button>
@@ -185,13 +185,13 @@ export function ModuleGallery({ basePath }: ModuleGalleryProps) {
 
       {/* Search */}
       <div className="relative mb-6">
-        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+        <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
         <input
           type="text"
           placeholder="Search modules by name, code reference, or template type…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full rounded-lg border border-zinc-200 bg-white py-2 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 dark:border-zinc-800 dark:bg-zinc-900"
+          className="w-full rounded-lg border border-zinc-200 bg-white py-2 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary dark:border-zinc-800 dark:bg-zinc-900"
         />
       </div>
 

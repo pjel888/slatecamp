@@ -104,7 +104,7 @@ export const airChangesPerHourConfig: AnimatedSequenceConfig = {
         { id: 'ret-left', type: 'box', args: [0.3, 0.2, 0.06], position: [-1.95, 0.1, 0], color: '#64748b', label: 'Return' },
         { id: 'ret-right', type: 'box', args: [0.3, 0.2, 0.06], position: [1.95, 0.1, 0], color: '#64748b' },
         // High ACH indicator
-        { id: 'ach-bar', type: 'box', args: [0.9, 0.12, 0.1], position: [1.3, 2.5, 0], color: '#dc2626', label: '15–25 ACH' },
+        { id: 'ach-bar', type: 'box', args: [0.9, 0.12, 0.1], position: [1.3, 2.5, 0], color: '#D64545', label: '15–25 ACH' },
       ],
     },
 
@@ -126,8 +126,8 @@ export const airChangesPerHourConfig: AnimatedSequenceConfig = {
         { id: 'bar-kitchen', type: 'box', args: [0.6, 2.0, 0.5], position: [0, 1.03, 0], color: '#f97316', label: 'Kitchen: 10 ACH' },
         { id: 'kitchen-label', type: 'sphere', args: [0.1, 8, 8], position: [0, 2.1, 0], color: '#f97316' },
         // OR bar
-        { id: 'bar-or', type: 'box', args: [0.6, 3.5, 0.5], position: [1.8, 1.78, 0], color: '#dc2626', label: 'OR: 15–25 ACH' },
-        { id: 'or-label', type: 'sphere', args: [0.1, 8, 8], position: [1.8, 3.6, 0], color: '#dc2626' },
+        { id: 'bar-or', type: 'box', args: [0.6, 3.5, 0.5], position: [1.8, 1.78, 0], color: '#D64545', label: 'OR: 15–25 ACH' },
+        { id: 'or-label', type: 'sphere', args: [0.1, 8, 8], position: [1.8, 3.6, 0], color: '#D64545' },
         // ACH axis line
         { id: 'axis', type: 'box', args: [5.0, 0.03, 0.03], position: [0, 0.08, 0], color: '#71717a' },
         // Axis markers

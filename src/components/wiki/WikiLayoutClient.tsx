@@ -1,7 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import { PanelLeft, PanelLeftClose } from 'lucide-react'
+import { SidebarSimple } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { WikiSidebar } from '@/components/wiki/WikiSidebar'
 
 const COLLAPSE_KEY = 'wiki_sidebar_collapsed'
@@ -92,12 +93,12 @@ export function WikiLayoutClient({ disciplineId, disciplineName, children }: Wik
         ].join(' ')}
       >
         {/* Visual line */}
-        <div className='absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-zinc-200 group-hover:w-[3px] group-hover:bg-blue-400 transition-all duration-150' />
+        <div className='absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-zinc-200 group-hover:w-[3px] group-hover:bg-[#5B8BB8] transition-all duration-150' />
         {/* Grip dots — 2×3 grid centered on the handle */}
         {!isCollapsed && (
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none'>
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className='w-[3px] h-[3px] rounded-full bg-zinc-300 group-hover:bg-blue-400 transition-colors duration-150' />
+              <div key={i} className='w-[3px] h-[3px] rounded-full bg-zinc-300 group-hover:bg-[#5B8BB8] transition-colors duration-150' />
             ))}
           </div>
         )}
@@ -111,7 +112,7 @@ export function WikiLayoutClient({ disciplineId, disciplineName, children }: Wik
         aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         className='shrink-0 border-r border-zinc-200 bg-zinc-50/50 px-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 transition-colors z-10'
       >
-        {isCollapsed ? <PanelLeft className='h-4 w-4' /> : <PanelLeftClose className='h-4 w-4' />}
+        {isCollapsed ? <SCIcon icon={SidebarSimple} size="sm" /> : <SCIcon icon={SidebarSimple} size="sm" />}
       </button>
 
       {/* Article content */}

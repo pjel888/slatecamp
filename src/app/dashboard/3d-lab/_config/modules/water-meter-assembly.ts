@@ -50,7 +50,7 @@ export const waterMeterAssemblyConfig: ExplodedAssemblyConfig = {
       label: 'Meter Body (Nutating Disc)',
       description: 'Water meter body — nutating disc or multi-jet positive displacement type for residential. Registers total volume consumed. Tamper-evident seal.',
       codeCitation: 'NPCP Section 601 / AWWA C700',
-      geometry: { id: 'wma-meter-body-geo', type: 'box', position: [0.07, 0, 0], args: [0.18, 0.1, 0.1], color: '#1d4ed8' },
+      geometry: { id: 'wma-meter-body-geo', type: 'box', position: [0.07, 0, 0], args: [0.18, 0.1, 0.1], color: '#2F5A85' },
       explodeOffset: [0.1, 0.3, 0],
     },
     {
@@ -72,7 +72,7 @@ export const waterMeterAssemblyConfig: ExplodedAssemblyConfig = {
       label: 'Check Valve (Meter Backflow)',
       description: 'Single check valve immediately downstream of meter. Prevents meter reversal and hot water back-flow from thermal expansion. Required by NPCP.',
       codeCitation: 'NPCP Section 602',
-      geometry: { id: 'wma-check-valve-geo', type: 'cylinder', position: [0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#16a34a' },
+      geometry: { id: 'wma-check-valve-geo', type: 'cylinder', position: [0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.04, 0.04, 0.08, 8], color: '#2D9F6F' },
       explodeOffset: [0.35, 0, 0],
     },
     {

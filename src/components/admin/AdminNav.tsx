@@ -3,24 +3,25 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { 
-  LayoutDashboard, 
-  FileQuestion, 
-  FileText, 
-  Box, 
-  Network, 
-  ClipboardList,
-  Shield
-} from 'lucide-react'
+import {
+  SquaresFour,
+  FileText,
+  Cube,
+  TreeStructure,
+  ClipboardText,
+  ShieldCheck,
+  Question
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 const ADMIN_NAV_ITEMS = [
-  { href: '/admin/dashboard', label: 'Dashboard', icon: LayoutDashboard, exact: true },
-  { href: '/admin/questions', label: 'Questions', icon: FileQuestion },
+  { href: '/admin/dashboard', label: 'Dashboard', icon: SquaresFour, exact: true },
+  { href: '/admin/questions', label: 'Questions', icon: Question },
   { href: '/admin/wiki', label: 'Wiki', icon: FileText },
-  { href: '/admin/assets', label: '3D Assets', icon: Box },
-  { href: '/admin/taxonomy', label: 'Taxonomy', icon: Network },
-  { href: '/admin/audit', label: 'Audit Log', icon: Shield },
-  { href: '/admin/reviews', label: 'Reviews', icon: ClipboardList },
+  { href: '/admin/assets', label: '3D Assets', icon: Cube },
+  { href: '/admin/taxonomy', label: 'Taxonomy', icon: TreeStructure },
+  { href: '/admin/audit', label: 'Audit Log', icon: ShieldCheck },
+  { href: '/admin/reviews', label: 'Reviews', icon: ClipboardText },
 ]
 
 export function AdminNav() {
@@ -40,11 +41,11 @@ export function AdminNav() {
             className={cn(
               "flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors",
               isActive 
-                ? "bg-blue-600/10 text-blue-600 font-medium border border-blue-600/20"
+                ? "bg-primary/10 text-primary font-medium border border-primary/20"
                 : "text-muted-foreground hover:text-foreground hover:bg-muted"
             )}
           >
-            <item.icon className="h-4 w-4" />
+            <SCIcon icon={item.icon} size="sm" />
             {item.label}
           </Link>
         )

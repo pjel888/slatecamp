@@ -3,7 +3,8 @@
 import { memo, type ReactNode, Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, ContactShadows } from '@react-three/drei'
-import { Loader2 } from 'lucide-react'
+import { CircleNotch } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useInvalidateOnChange } from '../_hooks/useInvalidateOnChange'
 
 interface CanvasWrapperProps {
@@ -48,8 +49,8 @@ export const CanvasWrapper = memo(function CanvasWrapper({
       {!canvasReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-zinc-50/50 z-10">
           <div className="flex flex-col items-center gap-3">
-            <Loader2 className="h-6 w-6 animate-spin text-zinc-300" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400">
+            <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-zinc-300" />
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">
               Loading Scene...
             </span>
           </div>

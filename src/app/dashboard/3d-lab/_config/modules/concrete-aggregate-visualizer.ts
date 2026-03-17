@@ -34,7 +34,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Ingredient bars
   inst.push({ id: 'cement-bar', type: 'box', position: [-2.5, cH / 2, 0], args: [0.7, cH, 0.7], color: '#d4d4d8', label: `Cement: ${c}` })
-  inst.push({ id: 'sand-bar', type: 'box', position: [-0.8, sH / 2, 0], args: [0.7, sH, 0.7], color: '#f59e0b', label: `Sand: ${s}` })
+  inst.push({ id: 'sand-bar', type: 'box', position: [-0.8, sH / 2, 0], args: [0.7, sH, 0.7], color: '#D4951A', label: `Sand: ${s}` })
   inst.push({ id: 'gravel-bar', type: 'box', position: [0.9, gH / 2, 0], args: [0.7, gH, 0.7], color: '#78716c', label: `Gravel: ${g}` })
   inst.push({ id: 'water-bar', type: 'cylinder', position: [2.5, wH / 2, 0], args: [0.3, 0.3, wH, 12], color: '#3b82f6', opacity: 0.7, transparent: true, label: `W/C: ${wc.toFixed(2)}` })
 
@@ -57,7 +57,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Approximate: higher cement ratio + lower w/c = higher strength
   const strengthNorm = (1 / total) * (1 / wc) * 2
   const strengthH = Math.min(strengthNorm, 1.5)
-  inst.push({ id: 'strength', type: 'box', position: [mixX + 0.8, strengthH / 2, 0], args: [0.2, strengthH, 0.3], color: strengthH > 1.0 ? '#16a34a' : strengthH > 0.6 ? '#f97316' : '#dc2626', label: `≈${(strengthNorm * 1750 + 1500).toFixed(0)} psi` })
+  inst.push({ id: 'strength', type: 'box', position: [mixX + 0.8, strengthH / 2, 0], args: [0.2, strengthH, 0.3], color: strengthH > 1.0 ? '#2D9F6F' : strengthH > 0.6 ? '#f97316' : '#D64545', label: `≈${(strengthNorm * 1750 + 1500).toFixed(0)} psi` })
 
   return inst
 }

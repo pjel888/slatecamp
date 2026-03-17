@@ -29,7 +29,7 @@ export const roofTrussWarrenConfig: ExplodedAssemblyConfig = {
       id: 'war-diag-1',
       label: 'Diagonal 1 (Compression)',
       description: 'First diagonal — sloping up-left to down-right, in COMPRESSION under gravity. Warren alternates compression and tension diagonals.',
-      geometry: { id: 'war-diag-1-geo', type: 'box', position: [-0.45, 0.11, 0], rotation: [0, 0, 0.73], args: [0.05, 0.44, 0.05], color: '#dc2626' },
+      geometry: { id: 'war-diag-1-geo', type: 'box', position: [-0.45, 0.11, 0], rotation: [0, 0, 0.73], args: [0.05, 0.44, 0.05], color: '#D64545' },
       explodeOffset: [-0.55, 0.1, 0],
     },
     {
@@ -43,7 +43,7 @@ export const roofTrussWarrenConfig: ExplodedAssemblyConfig = {
       id: 'war-diag-3',
       label: 'Diagonal 3 (Compression)',
       description: 'Third diagonal — compression, same orientation as diagonal 1.',
-      geometry: { id: 'war-diag-3-geo', type: 'box', position: [0.15, 0.11, 0], rotation: [0, 0, 0.73], args: [0.05, 0.44, 0.05], color: '#dc2626' },
+      geometry: { id: 'war-diag-3-geo', type: 'box', position: [0.15, 0.11, 0], rotation: [0, 0, 0.73], args: [0.05, 0.44, 0.05], color: '#D64545' },
       explodeOffset: [0.1, 0.1, 0],
     },
     {
@@ -71,7 +71,7 @@ export const roofTrussWarrenConfig: ExplodedAssemblyConfig = {
       id: 'war-end-panel',
       label: 'End Panel (Compression Diagonal)',
       description: 'End diagonal from top chord bearing to first bottom chord panel point — always in compression.',
-      geometry: { id: 'war-end-panel-geo', type: 'box', position: [-0.55, 0.06, 0], rotation: [0, 0, 1.05], args: [0.05, 0.26, 0.05], color: '#dc2626' },
+      geometry: { id: 'war-end-panel-geo', type: 'box', position: [-0.55, 0.06, 0], rotation: [0, 0, 1.05], args: [0.05, 0.26, 0.05], color: '#D64545' },
       explodeOffset: [-0.7, 0, 0],
     },
   ],

@@ -1,4 +1,7 @@
-import { Shield, Target, Timer } from 'lucide-react'
+'use client'
+
+import { ShieldCheck, Target, Timer } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -13,9 +16,9 @@ export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
       <Card className='border-zinc-200 bg-white shadow-none'>
         <CardHeader className='flex flex-row items-start justify-between gap-2 pb-1.5'>
           <CardTitle className='text-xs font-medium tracking-tight text-zinc-900'>
-            Blindspot Protocol
+            Focus Review
           </CardTitle>
-          <Target className='h-4 w-4 text-zinc-500' strokeWidth={1.5} />
+          <SCIcon icon={Target} size='sm' className='text-zinc-500' />
         </CardHeader>
         <CardContent className='space-y-2 pt-0.5'>
           <p className='text-[11px] leading-snug text-zinc-500'>
@@ -29,7 +32,7 @@ export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
             size='sm'
             className='mt-1 h-7 px-2 text-[11px] font-medium text-zinc-900'
           >
-            Start blindspot quiz
+            Start focus review
           </Button>
         </CardContent>
       </Card>
@@ -37,9 +40,9 @@ export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
       <Card className='border-zinc-200 bg-white shadow-none'>
         <CardHeader className='flex flex-row items-start justify-between gap-2 pb-1.5'>
           <CardTitle className='text-xs font-medium tracking-tight text-zinc-900'>
-            Endurance Cycle
+            Extended Practice
           </CardTitle>
-          <Timer className='h-4 w-4 text-zinc-500' strokeWidth={1.5} />
+          <SCIcon icon={Timer} size='sm' className='text-zinc-500' />
         </CardHeader>
         <CardContent className='space-y-2 pt-0.5'>
           <p className='text-[11px] leading-snug text-zinc-500'>
@@ -66,9 +69,9 @@ export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
       >
         <CardHeader className='flex flex-row items-start justify-between gap-2 pb-1.5'>
           <CardTitle className='text-xs font-medium tracking-tight text-zinc-900'>
-            Proof Simulation
+            Full Exam Simulation
           </CardTitle>
-          <Shield className='h-4 w-4 text-zinc-500' strokeWidth={1.5} />
+          <SCIcon icon={ShieldCheck} size='sm' className='text-zinc-500' />
         </CardHeader>
         <CardContent className='space-y-2 pt-0.5'>
           <p className='text-[11px] leading-snug text-zinc-500'>

@@ -56,12 +56,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     for (let a = 0; a < arrowCount; a++) {
       const az = -(gDs / 2) + (a + 1) * gDs / (arrowCount + 1)
       inst.push({ id: `flow-${a}`, type: 'cone', position: [-gWs / 2 + 0.3, gH * 0.5, az], rotation: [0, -Math.PI / 2, 0], args: [0.1, 0.3, 8], color: '#3b82f6', opacity: 0.7, transparent: true })
-      inst.push({ id: `flow-out-${a}`, type: 'cone', position: [gWs / 2 - 0.1, gH * 0.5, az], rotation: [0, -Math.PI / 2, 0], args: [0.1, 0.3, 8], color: '#dc2626', opacity: 0.7, transparent: true })
+      inst.push({ id: `flow-out-${a}`, type: 'cone', position: [gWs / 2 - 0.1, gH * 0.5, az], rotation: [0, -Math.PI / 2, 0], args: [0.1, 0.3, 8], color: '#D64545', opacity: 0.7, transparent: true })
     }
   }
 
   // Min ventilation area indicator
-  inst.push({ id: 'min-vent-indicator', type: 'box', position: [-(gWs / 2 + 0.5), gH * 0.5, 0], args: [0.3, Math.min(minVentA / gD / scale, gH * 0.4), gDs], color: violated ? '#dc2626' : '#16a34a', opacity: 0.4, transparent: true, label: 'Min 5%' })
+  inst.push({ id: 'min-vent-indicator', type: 'box', position: [-(gWs / 2 + 0.5), gH * 0.5, 0], args: [0.3, Math.min(minVentA / gD / scale, gH * 0.4), gDs], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.4, transparent: true, label: 'Min 5%' })
 
   return inst
 }

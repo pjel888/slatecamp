@@ -10,7 +10,7 @@ const VEHICLE_SPECS: Record<string, { w: number; l: number; color: string; label
   'car':      { w: 2.50, l: 5.00, color: '#3b82f6', label: 'Standard Car (2.50×5.00m)' },
   'parallel': { w: 2.15, l: 6.00, color: '#6366f1', label: 'Parallel Car (2.15×6.00m)' },
   'truck':    { w: 3.60, l: 12.0, color: '#f97316', label: 'Truck/Bus (3.60×12.00m)' },
-  'pwd':      { w: 3.70, l: 5.00, color: '#16a34a', label: 'PWD Van (3.70×5.00m)' },
+  'pwd':      { w: 3.70, l: 5.00, color: '#2D9F6F', label: 'PWD Van (3.70×5.00m)' },
 }
 
 const parameters: ParameterDef[] = [
@@ -58,7 +58,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Min size indicator
-  inst.push({ id: 'min-indicator', type: 'box', position: [-(totalW / 2) - 0.5, 0.01, (showAisle ? aisleW / 2 : 0)], args: [0.05, 0.01, spec.l], color: violated ? '#dc2626' : '#16a34a', label: `Min L: ${spec.l}m` })
+  inst.push({ id: 'min-indicator', type: 'box', position: [-(totalW / 2) - 0.5, 0.01, (showAisle ? aisleW / 2 : 0)], args: [0.05, 0.01, spec.l], color: violated ? '#D64545' : '#2D9F6F', label: `Min L: ${spec.l}m` })
 
   return inst
 }

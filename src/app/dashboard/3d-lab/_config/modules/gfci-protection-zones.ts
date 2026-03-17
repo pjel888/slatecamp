@@ -35,7 +35,7 @@ const PATHS: PathDef[] = [
     id: 'gfci-circuit',
     label: 'GFCI-Protected Circuit',
     points: [[6, 0], [6, 9], [16.5, 9], [19.5, 9], [19.5, 19], [6, 19], [6, 30]],
-    color: '#dc2626',
+    color: '#D64545',
     width: 2,
   },
   {
@@ -49,24 +49,24 @@ const PATHS: PathDef[] = [
 
 const FIXTURES: FixtureDef[] = [
   // Kitchen GFCI outlets
-  { id: 'gfci-k1', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [2, 4.5], color: '#dc2626', description: 'GFCI — kitchen counter within 1.8m of sink', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'gfci-k2', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [6, 4.5], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'gfci-k3', label: 'GFCI Outlet (Sink)', type: 'custom', position: [10, 4.5], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-k1', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [2, 4.5], color: '#D64545', description: 'GFCI — kitchen counter within 1.8m of sink', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-k2', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [6, 4.5], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-k3', label: 'GFCI Outlet (Sink)', type: 'custom', position: [10, 4.5], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
   // Living room standard
   { id: 'std-l1', label: 'Standard Outlet (Living)', type: 'custom', position: [16, 4.5], color: '#6b7280', description: 'Standard outlet — not near water source', codeCitation: 'PEC' },
   { id: 'std-l2', label: 'Standard Outlet (Living)', type: 'custom', position: [22, 4.5], color: '#6b7280', codeCitation: 'PEC' },
   // Master bath GFCI
-  { id: 'gfci-b1', label: 'GFCI Outlet (Master Bath)', type: 'custom', position: [16.5, 14.5], color: '#dc2626', description: 'GFCI — bathroom outlet within 1.8m of sink/tub', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-b1', label: 'GFCI Outlet (Master Bath)', type: 'custom', position: [16.5, 14.5], color: '#D64545', description: 'GFCI — bathroom outlet within 1.8m of sink/tub', codeCitation: 'PEC Rule 3.15.3' },
   // Bedroom standard
   { id: 'std-bed1', label: 'Standard Outlet (Bedroom)', type: 'custom', position: [6, 14.5], color: '#6b7280', codeCitation: 'PEC' },
   { id: 'std-bed2', label: 'Standard Outlet (Bedroom 2)', type: 'custom', position: [24, 14.5], color: '#6b7280', codeCitation: 'PEC' },
   // Garage GFCI
-  { id: 'gfci-g1', label: 'GFCI Outlet (Garage)', type: 'custom', position: [4, 26], color: '#dc2626', description: 'GFCI required throughout garage', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'gfci-g2', label: 'GFCI Outlet (Garage)', type: 'custom', position: [9, 26], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-g1', label: 'GFCI Outlet (Garage)', type: 'custom', position: [4, 26], color: '#D64545', description: 'GFCI required throughout garage', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-g2', label: 'GFCI Outlet (Garage)', type: 'custom', position: [9, 26], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
   // Laundry GFCI
-  { id: 'gfci-l1', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [16.5, 26], color: '#dc2626', description: 'GFCI required — laundry / wet area', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'gfci-l2', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [22, 26], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [13.5, 22], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'gfci-l1', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [16.5, 26], color: '#D64545', description: 'GFCI required — laundry / wet area', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'gfci-l2', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [22, 26], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [13.5, 22], color: '#2D9F6F', codeCitation: 'RA 9514' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

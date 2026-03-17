@@ -26,7 +26,7 @@ export const ventPipeRoutingConfig: CutawaySectionConfig = {
       description: 'Individual vent for lavatory (32mm drain) — vent must be ≥ half drain diameter: 32mm drain → 16mm min vent (use 25mm standard).',
       codeCitation: 'NPCP §906.2 — vent ≥ ½ drain dia.',
       depth: 0.2,
-      geometry: { id: 'geo-indv', type: 'cylinder', args: [0.016, 0.016, 1.0, 8], position: [0.5, 2.5, 0], color: '#16a34a' },
+      geometry: { id: 'geo-indv', type: 'cylinder', args: [0.016, 0.016, 1.0, 8], position: [0.5, 2.5, 0], color: '#2D9F6F' },
     },
     {
       id: 'branch-drain-vent',
@@ -34,7 +34,7 @@ export const ventPipeRoutingConfig: CutawaySectionConfig = {
       material: 'PVC 75mm',
       description: 'Branch drain — 75mm at 2% slope. Vent must be ≥38mm (half of 75mm).',
       depth: 0.35,
-      geometry: { id: 'geo-bd', type: 'cylinder', args: [0.0375, 0.0375, 1.5, 12], position: [0, 1.5, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#dc2626' },
+      geometry: { id: 'geo-bd', type: 'cylinder', args: [0.0375, 0.0375, 1.5, 12], position: [0, 1.5, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#D64545' },
     },
     {
       id: 'vent-stack',
@@ -43,7 +43,7 @@ export const ventPipeRoutingConfig: CutawaySectionConfig = {
       description: 'Vent stack serving full drainage system — 50mm diameter (≥ half of 100mm stack). Runs vertically separate from or alongside soil stack.',
       codeCitation: 'NPCP §906.3 — Vent stack sizing',
       depth: 0.5,
-      geometry: { id: 'geo-vs', type: 'cylinder', args: [0.025, 0.025, 4.5, 8], position: [0, 2.25, 0], color: '#16a34a' },
+      geometry: { id: 'geo-vs', type: 'cylinder', args: [0.025, 0.025, 4.5, 8], position: [0, 2.25, 0], color: '#2D9F6F' },
     },
     {
       id: 'roof-penetration',
@@ -61,7 +61,7 @@ export const ventPipeRoutingConfig: CutawaySectionConfig = {
       description: 'Vent terminates minimum 150mm above roof surface. Install insect screen if required. Must be 3m from any window, door, or air intake opening.',
       codeCitation: 'NPCP §908 — 150mm min above roof',
       depth: 0.8,
-      geometry: { id: 'geo-rterm', type: 'cylinder', args: [0.025, 0.025, 0.2, 8], position: [0, 4.8, 0], color: '#16a34a' },
+      geometry: { id: 'geo-rterm', type: 'cylinder', args: [0.025, 0.025, 0.2, 8], position: [0, 4.8, 0], color: '#2D9F6F' },
     },
     {
       id: 'roof-slab',

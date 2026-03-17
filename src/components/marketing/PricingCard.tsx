@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 import { Instrument_Serif } from 'next/font/google'
-import { Check, X } from 'lucide-react'
+import { CheckCircle, XCircle } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { PricingTier } from '@/lib/constants/pricing'
 
 const serif = Instrument_Serif({
@@ -12,9 +15,9 @@ const serif = Instrument_Serif({
 
 export const PricingCard = ({ tier }: { tier: PricingTier }) => (
   <div
-    className={`flex flex-col rounded-2xl border p-7 transition-transform duration-150 hover:-translate-y-0.5 ${
+    className={`flex flex-col rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ${
       tier.highlighted
-        ? 'border-blue-600 ring-1 ring-blue-600 shadow-[0_0_0_1px_rgba(37,99,235,0.8)]'
+        ? 'border-primary ring-1 ring-primary shadow-[0_0_0_1px_rgba(37,99,235,0.8)]'
         : 'border-zinc-200'
     } bg-white`}
   >
@@ -51,9 +54,10 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
           key={feature}
           className='flex items-start gap-2.5 text-[13px] leading-relaxed text-zinc-900'
         >
-          <Check
-            className='mt-0.5 h-4 w-4 shrink-0 text-green-600'
-            strokeWidth={1.5}
+          <SCIcon
+            icon={CheckCircle}
+            size='sm'
+            className='mt-0.5 shrink-0 text-green-600'
           />
           {feature}
         </li>
@@ -67,9 +71,10 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
             key={limit}
             className='flex items-start gap-2.5 text-[13px] leading-relaxed text-zinc-500'
           >
-            <X
-              className='mt-0.5 h-4 w-4 shrink-0 text-zinc-600'
-              strokeWidth={1.5}
+            <SCIcon
+              icon={XCircle}
+              size='sm'
+              className='mt-0.5 shrink-0 text-zinc-600'
             />
             {limit}
           </li>
@@ -79,10 +84,10 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
 
     <Link
       href={tier.ctaHref}
-      className={`mt-7 block w-full rounded-full px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
+      className={`mt-7 block w-full rounded-sm px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
         tier.highlighted
-          ? 'bg-blue-600 hover:bg-blue-700'
-          : 'bg-blue-500 hover:bg-zinc-800'
+          ? 'bg-primary hover:bg-[#2F5A85]'
+          : 'bg-[#3B6B9C] hover:bg-zinc-800'
       }`}
     >
       {tier.ctaLabel}

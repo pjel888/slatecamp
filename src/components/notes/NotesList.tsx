@@ -1,14 +1,15 @@
 'use client'
 
 import { useState } from 'react'
-import { Plus, Search, Trash2, Pin, BookOpen, HelpCircle, LayoutTemplate, AlertCircle } from 'lucide-react'
+import { Plus, MagnifyingGlass, Trash, PushPin, BookOpen, Question, SquaresFour, Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { formatDistanceToNow } from 'date-fns'
 import { cn } from '@/lib/utils'
 import type { NoteStub, NoteType } from '@/types/app'
 
 const TYPE_BADGE: Partial<Record<NoteType, { label: string; icon: React.ComponentType<{ className?: string }> }>> = {
-  cornell:      { label: 'Cornell', icon: LayoutTemplate },
-  gap_analysis: { label: 'Gap',     icon: AlertCircle },
+  cornell:      { label: 'Cornell', icon: SquaresFour },
+  gap_analysis: { label: 'Gap',     icon: Warning },
 }
 
 interface NotesListProps {
@@ -47,11 +48,11 @@ export function NotesList({
             className="rounded-md p-1 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-800 transition-colors"
             title="New note"
           >
-            <Plus className="h-4 w-4" />
+            <SCIcon icon={Plus} size="sm" />
           </button>
         </div>
         <div className="relative">
-          <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-zinc-400 pointer-events-none" />
+          <SCIcon icon={MagnifyingGlass} size="xs" className="absolute left-2.5 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
           <input
             type="text"
             placeholder="Search…"
@@ -99,7 +100,7 @@ export function NotesList({
                       {note.title || 'Untitled Note'}
                     </span>
                     {note.is_pinned && (
-                      <Pin className={cn('h-3 w-3 shrink-0', isSelected ? 'text-zinc-300' : 'text-blue-500')} />
+                      <SCIcon icon={PushPin} size="xs" className={cn('shrink-0', isSelected ? 'text-zinc-300' : 'text-primary')} />
                     )}
                   </div>
 
@@ -115,14 +116,14 @@ export function NotesList({
 
                   {/* Meta row */}
                   <div className="flex w-full items-center gap-2">
-                    <span className={cn('text-[10px]', isSelected ? 'text-zinc-400' : 'text-zinc-400')}>
+                    <span className={cn('text-[11px]', isSelected ? 'text-zinc-400' : 'text-zinc-400')}>
                       {formatDistanceToNow(new Date(note.updated_at), { addSuffix: false })
                         .replace('about ', '')
                         .replace('less than a minute', 'now')}
                     </span>
                     {badge && (
                       <span className={cn(
-                        'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[9px] font-semibold',
+                        'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[11px] font-semibold',
                         isSelected
                           ? 'bg-white/20 text-white'
                           : 'bg-zinc-100 text-zinc-500',
@@ -132,13 +133,13 @@ export function NotesList({
                       </span>
                     )}
                     {note.article_id && (
-                      <span className={cn('text-[10px]', isSelected ? 'text-blue-300' : 'text-blue-500')} title="From Wiki">
-                        <BookOpen className="h-3 w-3" />
+                      <span className={cn('text-[11px]', isSelected ? 'text-[#5B8BB8]' : 'text-primary')} title="From Wiki">
+                        <SCIcon icon={BookOpen} size="xs" />
                       </span>
                     )}
                     {note.question_id && (
-                      <span className={cn('text-[10px]', isSelected ? 'text-amber-300' : 'text-amber-500')} title="From Quiz">
-                        <HelpCircle className="h-3 w-3" />
+                      <span className={cn('text-[11px]', isSelected ? 'text-amber-300' : 'text-amber-500')} title="From Quiz">
+                        <SCIcon icon={Question} size="xs" />
                       </span>
                     )}
                   </div>
@@ -151,17 +152,17 @@ export function NotesList({
                 )}>
                   <button
                     onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
-                    className="rounded p-1 text-zinc-300 hover:bg-zinc-100 hover:text-blue-500 transition-colors"
+                    className="rounded p-1 text-zinc-300 hover:bg-zinc-100 hover:text-primary transition-colors"
                     title={note.is_pinned ? 'Unpin' : 'Pin'}
                   >
-                    <Pin className="h-3.5 w-3.5" />
+                    <SCIcon icon={PushPin} size="xs" />
                   </button>
                   <button
                     onClick={(e) => { e.stopPropagation(); onDelete(note.id) }}
                     className="rounded p-1 text-zinc-300 hover:bg-red-50 hover:text-red-500 transition-colors"
                     title="Delete"
                   >
-                    <Trash2 className="h-3.5 w-3.5" />
+                    <SCIcon icon={Trash} size="xs" />
                   </button>
                 </div>
               </li>

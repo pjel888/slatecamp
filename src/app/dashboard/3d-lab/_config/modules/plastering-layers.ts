@@ -64,7 +64,7 @@ export const plasteringLayersConfig: CutawaySectionConfig = {
       material: 'Reference Dimension',
       description: 'Total plaster thickness per side: 12–16mm (scratch + float + finish). Both sides: 24–32mm total addition to wall thickness.',
       depth: 0.9,
-      geometry: { id: 'geo-dim', type: 'box', args: [0.012, 3.0, 0.005], position: [0.081, 1.5, 0.505], color: '#dc2626' },
+      geometry: { id: 'geo-dim', type: 'box', args: [0.012, 3.0, 0.005], position: [0.081, 1.5, 0.505], color: '#D64545' },
     },
   ],
   annotations: [

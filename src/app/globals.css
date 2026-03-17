@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import '../components/graphics/gradients.css';
+@import '../components/graphics/patterns.css';
 
 @plugin "@tailwindcss/typography";
 
@@ -9,7 +11,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'SF Mono', 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
 
   --color-sidebar-ring: var(--sidebar-ring);
@@ -41,26 +43,12 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: 0.25rem;   /* 4px */
-  --radius-md: 0.375rem;  /* 6px — GitHub Primer default */
-  --radius-lg: 0.5rem;    /* 8px — large containers */
-  --radius-xl: 0.75rem;   /* 12px — modals/overlays */
+  --radius-sm: 0.375rem;   /* 6px — buttons/inputs */
+  --radius-md: 0.5rem;     /* 8px — cards */
+  --radius-lg: 0.75rem;    /* 12px — modals */
+  --radius-xl: 0.75rem;    /* cap at 12px — no larger */
 
-  /* Cerebro Design Tokens — Apple-inspired palette */
-  --color-snow: #ffffff;
-  --color-bone: #f5f5f7;
-  --color-ash: #e5e5ea;
-  --color-slate: #86868b;
-  --color-graphite: #6e6e73;
-  --color-charcoal: #1d1d1f;
-  --color-ink: #000000;
-  --color-signal-amber: #f59e0b;
-  --color-signal-green: #34c759;
-  --color-signal-red: #ff3b30;
-  --color-signal-blue: #007aff;
-  --color-result-gold: #ff9f0a;
-
-  /* Apple HIG — Functional colors (Tailwind utilities) */
+  /* Campfire — Functional accents (Tailwind utilities) */
   --color-accent-blue: var(--accent-blue);
   --color-accent-blue-hover: var(--accent-hover);
   --color-success: var(--success);
@@ -68,18 +56,18 @@
   --color-warning: var(--warning);
   --color-info: var(--info);
 
-  /* Apple HIG — Surface colors */
+  /* Campfire — Surface colors */
   --color-surface: var(--bg-primary);
   --color-surface-secondary: var(--bg-secondary);
   --color-surface-tertiary: var(--bg-tertiary);
 
-  /* Apple HIG — Text hierarchy */
+  /* Campfire — Text hierarchy */
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
   --color-text-quaternary: var(--text-quaternary);
 
-  /* Apple HIG — Quiz states */
+  /* Campfire — Quiz states */
   --color-quiz-correct-bg: var(--quiz-correct-bg);
   --color-quiz-correct-border: var(--quiz-correct-border);
   --color-quiz-wrong-bg: var(--quiz-wrong-bg);
@@ -87,191 +75,201 @@
   --color-quiz-selected-bg: var(--quiz-selected-bg);
   --color-quiz-selected-border: var(--quiz-selected-border);
 
-  /* SlateCamp brand — Apple HIG × Dieter Rams (core tokens only) */
-  --color-slatecamp-paper: #f5f4f0;
-  --color-slatecamp-paper-cool: #f5f5f7;
-  --color-slatecamp-paper-snow: #ffffff;
-  --color-slatecamp-ink-main: #1d1d1f;
-  --color-slatecamp-ink-muted: #6e6e73;
-  --color-slatecamp-ink-subtle: #86868b;
-  --color-slatecamp-amber: #ed8008;
-  --color-slatecamp-sage: #34c759;
-  --color-slatecamp-border: #e5e5ea;
-  --color-slatecamp-border-strong: #d2d2d7;
-  --color-slatecamp-border-light: rgba(29, 29, 31, 0.08);
+  /* Campfire — NEW semantic tokens for Tailwind */
+  --color-camp-orange: var(--camp-orange);
+  --color-emerald: var(--emerald);
+  --color-slate-blue-50: var(--slate-blue-50);
+  --color-emerald-50: var(--emerald-50);
+  --color-surface-focused: var(--surface-focused);
+  --color-border-warm: var(--border-warm);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #1d1d1f;
-  --card: #ffffff;
-  --card-foreground: #1d1d1f;
+  --background: #F8F7F5;       /* Surface Light (warm white) */
+  --foreground: #1A2332;        /* Ink Primary */
+  --card: #ffffff;              /* Surface Card (unchanged) */
+  --card-foreground: #1A2332;
   --popover: #ffffff;
-  --popover-foreground: #1d1d1f;
-  --primary: #2563eb;
+  --popover-foreground: #1A2332;
+  --primary: #3B6B9C;           /* Slate Blue */
   --primary-foreground: #ffffff;
-  --secondary: #f5f5f7;
-  --secondary-foreground: #1d1d1f;
-  --muted: #f6f8fa;
-  --muted-foreground: #86868b;
-  --accent: #f5f5f7;
-  --accent-foreground: #1d1d1f;
-  --destructive: #ff3b30;
-  --border: #d0d7de;
-  --input: #d0d7de;
-  --ring: #2563eb;
-  --radius: 0.5rem;
+  --secondary: #F8F7F5;         /* Surface Light */
+  --secondary-foreground: #1A2332;
+  --muted: #F8F7F5;             /* Surface Light */
+  --muted-foreground: #8896A7;  /* Ink Tertiary */
+  --accent: #F8F7F5;
+  --accent-foreground: #1A2332;
+  --destructive: #D64545;       /* Warm Red */
+  --border: #D4DAE3;            /* Border Default */
+  --input: #D4DAE3;
+  --ring: #3B6B9C;              /* Slate Blue */
+  --radius: 0.5rem;             /* 8px — card radius */
 
-  --chart-1: #2563eb;
-  --chart-2: #34c759;
-  --chart-3: #007aff;
-  --chart-4: #ff9f0a;
-  --chart-5: #ff3b30;
+  --chart-1: #3B6B9C;           /* Slate Blue */
+  --chart-2: #2D9F6F;           /* Emerald */
+  --chart-3: #E8853A;           /* Camp Orange */
+  --chart-4: #D4951A;           /* Amber */
+  --chart-5: #D64545;           /* Warm Red */
 
-  --sidebar: #fbfbfd;
-  --sidebar-foreground: #1d1d1f;
-  --sidebar-primary: #2563eb;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1A2332;
+  --sidebar-primary: #3B6B9C;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f5f5f7;
-  --sidebar-accent-foreground: #1d1d1f;
-  --sidebar-border: #f0f0f2;
-  --sidebar-ring: #2563eb;
+  --sidebar-accent: #F0F5FA;    /* Slate Blue 50 */
+  --sidebar-accent-foreground: #1A2332;
+  --sidebar-border: #D4DAE3;
+  --sidebar-ring: #3B6B9C;
 
-  /* Apple HIG — Neutral palette */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f5f5f7;
-  --bg-tertiary: #e8e8ed;
-  --border-strong: #d2d2d7;
-  --border-light: #e5e5ea;
+  /* Campfire — Neutral palette */
+  --bg-primary: #F8F7F5;
+  --bg-secondary: #F8F7F5;
+  --bg-tertiary: #F0F5FA;
+  --border-strong: #D4DAE3;
+  --border-light: #D4DAE3;
 
-  /* Apple HIG — Text hierarchy */
-  --text-primary: #1d1d1f;
-  --text-secondary: #6e6e73;
-  --text-tertiary: #86868b;
-  --text-quaternary: #aeaeb2;
+  /* Campfire — Text hierarchy */
+  --text-primary: #1A2332;
+  --text-secondary: #4A5568;
+  --text-tertiary: #8896A7;
+  --text-quaternary: #8896A7;
 
-  /* Functional accents — aligned to Tailwind palette
-     blue-600/700, green-600, red-600, amber-600, sky-500 */
-  --accent-blue: #2563eb; /* blue-600 */
-  --accent-hover: #1d4ed8; /* blue-700 */
-  --success: #16a34a; /* green-600 */
-  --danger: #dc2626; /* red-600 */
-  --warning: #d97706; /* amber-600 */
-  --info: #0ea5e9; /* sky-500 */
+  /* Campfire — Functional accents */
+  --accent-blue: #3B6B9C;
+  --accent-hover: #2F5A85;
+  --success: #2D9F6F;
+  --danger: #D64545;
+  --warning: #D4951A;
+  --info: #3B82C8;
 
-  /* Apple HIG — Surfaces */
+  /* Campfire — NEW tokens */
+  --camp-orange: #E8853A;
+  --camp-orange-hover: #D4751A;
+  --emerald: #2D9F6F;
+  --emerald-50: #EDFAF4;
+  --slate-blue-50: #F0F5FA;
+  --surface-focused: #F5F7FA;    /* Testing interface bg */
+  --border-warm: rgba(232, 133, 58, 0.15);
+
+  /* Campfire — Card surfaces */
   --card-bg: #ffffff;
-  --card-border-color: #d0d7de;
-  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-  --card-shadow-hover:
-    0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-  --card-radius: 6px;
+  --card-border-color: #D4DAE3;
+  --card-shadow: none;
+  --card-shadow-hover: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --card-radius: 8px;            /* rounded-md for cards */
 
-  /* Apple HIG — Quiz-specific */
-  --quiz-correct-bg: #e8f8ed;
-  --quiz-correct-border: #34c759;
-  --quiz-wrong-bg: #ffeae9;
-  --quiz-wrong-border: #ff3b30;
-  --quiz-selected-bg: #e8f0fe;
-  --quiz-selected-border: #007aff;
+  /* Campfire — Quiz states */
+  --quiz-correct-bg: #EDFAF4;
+  --quiz-correct-border: #2D9F6F;
+  --quiz-wrong-bg: #FDF0F0;
+  --quiz-wrong-border: #D64545;
+  --quiz-selected-bg: #F0F5FA;
+  --quiz-selected-border: #3B6B9C;
 
-  /* Apple HIG — Transitions */
-  --transition-fast: 200ms ease-in-out;
-  --transition-normal: 300ms ease-in-out;
-  --transition-slow: 500ms ease-in-out;
+  /* Campfire — Transitions (max 300ms) */
+  --transition-fast: 100ms ease-out;
+  --transition-normal: 150ms ease-out;
+  --transition-slow: 200ms ease-out;
 
-  /* Readiness Score colors — Tailwind semantic mapping
-     danger: red-600, warning: amber-600, good/strong: green 500/600 */
-  --readiness-danger: #dc2626; /* red-600 */
-  --readiness-warning: #d97706; /* amber-600 */
-  --readiness-good: #22c55e; /* green-500 */
-  --readiness-strong: #16a34a; /* green-600 */
+  /* Campfire — Readiness Score */
+  --readiness-danger: #D64545;
+  --readiness-warning: #D4951A;
+  --readiness-good: #2D9F6F;
+  --readiness-strong: #2D9F6F;
 
   /* Final Stretch mode */
-  --final-stretch-accent: #dc2626; /* red-600 */
-  --final-stretch-bg: #fef2f2; /* red-50 */
+  --final-stretch-accent: #D64545;
+  --final-stretch-bg: #FDF0F0;
 
   /* Confidence tap */
-  --confidence-know: #f0fdf4;
-  --confidence-unsure: #fffbeb;
+  --confidence-know: #EDFAF4;
+  --confidence-unsure: #FEF8ED;
 }
 
 .dark {
-  --background: #000000;
-  --foreground: #f5f5f7;
-  --card: #1c1c1e;
-  --card-foreground: #f5f5f7;
-  --popover: #1c1c1e;
-  --popover-foreground: #f5f5f7;
-  --primary: #3b82f6;
+  --background: #141B24;
+  --foreground: #E8ECF1;
+  --card: #1C2433;
+  --card-foreground: #E8ECF1;
+  --popover: #1C2433;
+  --popover-foreground: #E8ECF1;
+  --primary: #5B8BB8;  /* Slate Blue lightened */
   --primary-foreground: #ffffff;
-  --secondary: #2c2c2e;
-  --secondary-foreground: #f5f5f7;
-  --muted: #2c2c2e;
-  --muted-foreground: #98989d;
-  --accent: #2c2c2e;
-  --accent-foreground: #f5f5f7;
-  --destructive: #ff453a;
-  --border: #38383a;
-  --input: #38383a;
-  --ring: #3b82f6;
+  --secondary: #1C2433;
+  --secondary-foreground: #E8ECF1;
+  --muted: #1C2433;
+  --muted-foreground: #8896A7;
+  --accent: #1C2433;
+  --accent-foreground: #E8ECF1;
+  --destructive: #E85C5C;
+  --border: #2A3444;
+  --input: #2A3444;
+  --ring: #5B8BB8;
 
-  --chart-1: #3b82f6;
-  --chart-2: #30d158;
-  --chart-3: #0a84ff;
-  --chart-4: #ff9f0a;
-  --chart-5: #ff453a;
+  --chart-1: #5B8BB8;
+  --chart-2: #4DBF8F;
+  --chart-3: #F0A060;
+  --chart-4: #E8B040;
+  --chart-5: #E85C5C;
 
-  --sidebar: #1c1c1e;
-  --sidebar-foreground: #f5f5f7;
-  --sidebar-primary: #3b82f6;
+  --sidebar: #1C2433;
+  --sidebar-foreground: #E8ECF1;
+  --sidebar-primary: #5B8BB8;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #2c2c2e;
-  --sidebar-accent-foreground: #f5f5f7;
-  --sidebar-border: #38383a;
-  --sidebar-ring: #3b82f6;
+  --sidebar-accent: #2A3444;
+  --sidebar-accent-foreground: #E8ECF1;
+  --sidebar-border: #2A3444;
+  --sidebar-ring: #5B8BB8;
 
-  /* Apple HIG — Dark mode overrides */
-  --bg-primary: #000000;
-  --bg-secondary: #1c1c1e;
-  --bg-tertiary: #2c2c2e;
-  --border-strong: #48484a;
-  --border-light: #38383a;
-  --text-primary: #f5f5f7;
-  --text-secondary: #98989d;
-  --text-tertiary: #6c6c70;
-  --text-quaternary: #48484a;
-  --accent-blue: #0a84ff;
-  --accent-hover: #409cff;
-  --success: #30d158;
-  --danger: #ff453a;
-  --warning: #ff9f0a;
-  --info: #64d2ff;
-  --card-bg: #1c1c1e;
-  --card-border-color: rgba(255, 255, 255, 0.08);
+  /* Campfire — Dark mode overrides */
+  --bg-primary: #141B24;
+  --bg-secondary: #1C2433;
+  --bg-tertiary: #2A3444;
+  --border-strong: #3A4A5A;
+  --border-light: #2A3444;
+  --text-primary: #E8ECF1;
+  --text-secondary: #8896A7;
+  --text-tertiary: #6C7A8A;
+  --text-quaternary: #4A5568;
+  --accent-blue: #5B8BB8;
+  --accent-hover: #7BA5CC;
+  --success: #4DBF8F;
+  --danger: #E85C5C;
+  --warning: #E8B040;
+  --info: #5BA0E0;
+
+  /* Campfire — NEW tokens (dark) */
+  --camp-orange: #F0A060;
+  --camp-orange-hover: #E89040;
+  --emerald: #4DBF8F;
+  --emerald-50: rgba(45, 159, 111, 0.15);
+  --slate-blue-50: rgba(59, 107, 156, 0.15);
+  --surface-focused: #1C2433;
+  --border-warm: rgba(232, 133, 58, 0.2);
+
+  --card-bg: #1C2433;
+  --card-border-color: #2A3444;
   --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15);
-  --card-shadow-hover:
-    0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
-  --quiz-correct-bg: rgba(48, 209, 88, 0.15);
-  --quiz-correct-border: #30d158;
-  --quiz-wrong-bg: rgba(255, 69, 58, 0.15);
-  --quiz-wrong-border: #ff453a;
-  --quiz-selected-bg: rgba(10, 132, 255, 0.15);
-  --quiz-selected-border: #0a84ff;
+  --card-shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --quiz-correct-bg: rgba(45, 159, 111, 0.15);
+  --quiz-correct-border: #4DBF8F;
+  --quiz-wrong-bg: rgba(214, 69, 69, 0.15);
+  --quiz-wrong-border: #E85C5C;
+  --quiz-selected-bg: rgba(59, 107, 156, 0.15);
+  --quiz-selected-border: #5B8BB8;
 
   /* Readiness Score colors (dark) */
-  --readiness-danger: #ef4444;
-  --readiness-warning: #f59e0b;
-  --readiness-good: #84cc16;
-  --readiness-strong: #22c55e;
+  --readiness-danger: #E85C5C;
+  --readiness-warning: #E8B040;
+  --readiness-good: #4DBF8F;
+  --readiness-strong: #4DBF8F;
 
   /* Final Stretch mode (dark) */
-  --final-stretch-accent: #ef4444;
-  --final-stretch-bg: rgba(239, 68, 68, 0.1);
+  --final-stretch-accent: #E85C5C;
+  --final-stretch-bg: rgba(214, 69, 69, 0.1);
 
   /* Confidence tap (dark) */
-  --confidence-know: rgba(34, 197, 94, 0.1);
-  --confidence-unsure: rgba(245, 158, 11, 0.1);
+  --confidence-know: rgba(45, 159, 111, 0.1);
+  --confidence-unsure: rgba(212, 149, 26, 0.1);
 }
 
 @layer base {
@@ -296,10 +294,10 @@
   }
 }
 
-/* Activity heatmap — custom horizontal scrollbar (thin, rounded, blue states) */
+/* Activity heatmap — custom horizontal scrollbar (Slate Blue tints) */
 .activity-heatmap-scroll {
   scrollbar-width: thin;
-  scrollbar-color: rgb(191 219 254) transparent;
+  scrollbar-color: #B0C4DE transparent;
 }
 .activity-heatmap-scroll::-webkit-scrollbar {
   height: 6px;
@@ -309,21 +307,21 @@
   border-radius: 3px;
 }
 .activity-heatmap-scroll::-webkit-scrollbar-thumb {
-  background: rgb(191 219 254);
+  background: #B0C4DE;
   border-radius: 3px;
   transition: background 0.15s ease;
 }
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgb(147 197 253);
+  background: #7BA5CC;
 }
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:active {
-  background: rgb(59 130 246);
+  background: #3B6B9C;
 }
 
 /* Wiki sidebar — minimal thin vertical scrollbar */
 .wiki-sidebar-scroll {
   scrollbar-width: thin;
-  scrollbar-color: rgb(212 212 216) transparent;
+  scrollbar-color: #D4DAE3 transparent;
 }
 .wiki-sidebar-scroll::-webkit-scrollbar {
   width: 5px;
@@ -332,12 +330,12 @@
   background: transparent;
 }
 .wiki-sidebar-scroll::-webkit-scrollbar-thumb {
-  background: rgb(212 212 216);
+  background: #D4DAE3;
   border-radius: 3px;
   transition: background 0.15s ease;
 }
 .wiki-sidebar-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgb(161 161 170);
+  background: #8896A7;
 }
 
 /* ── Navigation feedback: tactile press + pending dim ── */
@@ -384,11 +382,11 @@ a[data-pending] {
 @keyframes pulse-glow {
   0%,
   100% {
-    box-shadow: 0 0 0 0 var(--color-signal-green, #34c759);
+    box-shadow: 0 0 0 0 #2D9F6F;
   }
   50% {
     box-shadow: 0 0 16px 4px
-      color-mix(in srgb, var(--color-signal-green, #34c759) 25%, transparent);
+      color-mix(in srgb, #2D9F6F 25%, transparent);
   }
 }
 .pulse-glow {
@@ -480,12 +478,12 @@ a[data-pending] {
 /* Wiki Heading Highlight */
 @keyframes highlight-pulse {
   0% {
-    background-color: rgba(37, 99, 235, 0.1);
-    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.1);
+    background-color: rgba(59, 107, 156, 0.1);
+    box-shadow: 0 0 0 8px rgba(59, 107, 156, 0.1);
   }
   100% {
     background-color: transparent;
-    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+    box-shadow: 0 0 0 0 rgba(59, 107, 156, 0);
   }
 }
 

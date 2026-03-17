@@ -3,8 +3,8 @@
 ## 1. OPERATING CONTEXT & IDENTITY
 
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams.
-- **Aesthetic:** Apple HIG (Human Interface Guidelines). Clean, intuitive, premium, and platform-native. Focused on clarity, deference, and depth.
-- **Voice:** The "Respected Mentor" — authoritative, honest, utilitarian. No toxic positivity. No catastrophizing.
+- **Aesthetic:** Campfire — warm, inviting, research-backed, commercially viable. Clean and functional with subtle warmth.
+- **Voice:** The "Confident Companion" — warm, supportive, growth-framed. No toxic positivity. No catastrophizing. No militaristic or adversarial language.
 
 ## 2. STRICT EXECUTION PROTOCOL
 
@@ -25,9 +25,95 @@ Before generating any code or architecture, you MUST execute the following seque
 
 ## 4. TECH STACK & INFRASTRUCTURE
 
-- **Core Framework:** Next.js (App Router), React, Tailwind CSS.
+- **Core Framework:** Next.js (App Router), React, Tailwind CSS 4.
 - **State Management:** Zustand or React Context.
+- **UI Primitives:** shadcn/ui (Base UI / @base-ui/react).
 - **Spatial Computing:** React Three Fiber (R3F) and Three.js (Target: 60 FPS).
 - **Backend:** Supabase (PostgreSQL).
 - **Package Management:** Bun.
-- **Styling Palette:** Tailwind `zinc` (surfaces/ink), `blue-600` (primary), `green-600` (mastery), `amber-600` (developing), `red-600` (critical gaps).
+- **Font:** Inter (loaded via next/font/google).
+
+## 5. CAMPFIRE DESIGN SYSTEM
+
+### Color Palette
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Slate Blue | `#3B6B9C` | Primary actions, nav, links, active states |
+| Slate Blue 50 | `#F0F5FA` | Active backgrounds, tints, hover states |
+| Slate Blue 700 | `#2F5A85` | Hover/pressed states |
+| Camp Orange | `#E8853A` | Progress celebration, warm CTAs (use sparingly) |
+| Emerald | `#2D9F6F` | Success, mastery, correct answers |
+| Emerald 50 | `#EDFAF4` | Success backgrounds |
+| Warm Red | `#D64545` | Error, critical — always with context, never alone |
+| Warm Red 50 | `#FDF0F0` | Error backgrounds |
+| Amber | `#D4951A` | Warning, developing skill |
+| Amber 50 | `#FEF8ED` | Warning backgrounds |
+| Info Blue | `#3B82C8` | Informational callouts |
+| Surface Light | `#F8F7F5` | Page background (warm white) |
+| Surface Card | `#FFFFFF` | Card backgrounds |
+| Surface Focused | `#F5F7FA` | Testing interface background (cool) |
+| Ink Primary | `#1A2332` | Main text |
+| Ink Secondary | `#4A5568` | Supporting text |
+| Ink Tertiary | `#8896A7` | Muted text, placeholders |
+| Border Default | `#D4DAE3` | Borders, dividers |
+
+### Typography
+
+- **Font family:** Inter, system fallbacks
+- **Minimum text size:** 11px (`text-[11px]`). NEVER use `text-[8px]`, `text-[9px]`, or `text-[10px]`.
+- **Monospace:** ONLY on code snippets, data values, and the Readiness Score number. NEVER on labels, categories, or metadata.
+
+### Shadows
+
+| Context | Rule |
+|---------|------|
+| Cards at rest | `shadow-none` |
+| Cards on hover | `shadow-sm` |
+| Dropdowns | `shadow-md` |
+| Modals/dialogs | `shadow-lg` |
+| FORBIDDEN | `shadow-xl`, `shadow-2xl` on non-modal elements |
+
+### Border Radii
+
+| Element | Rule |
+|---------|------|
+| Cards | `rounded-md` (8px) |
+| Buttons, inputs | `rounded-sm` (6px) |
+| Modals | `rounded-lg` (12px) |
+| FORBIDDEN | `rounded-xl`, `rounded-2xl`, `rounded-3xl` on standard elements |
+
+### Transitions
+
+- **Maximum duration:** 300ms. NEVER use `duration-500`, `duration-700`, `duration-1000`.
+- **Default:** `duration-150 ease-out`.
+- **FORBIDDEN easing:** `bounce`, `spring` (except framer-motion structural animations).
+- **Respect:** `prefers-reduced-motion: reduce` — all decorative animations must be suppressible.
+
+### Engagement Policy (Three-Part Test)
+
+Before adding any engagement feature, it must pass ALL three:
+1. **Does it directly improve learning outcomes?** (not just engagement metrics)
+2. **Would a serious professional find it respectful?** (not patronizing)
+3. **Does it map to a real pedagogical concept?** (spaced repetition, interleaving, etc.)
+
+## 6. VOICE GUIDE
+
+### Words We Use / Don't Use
+
+| Don't Use | Use Instead |
+|-----------|-------------|
+| Blindspot Protocol | Focus Review |
+| Endurance Cycle | Extended Practice |
+| Proof Simulation | Full Exam Simulation |
+| drill / grind | practice / review / session |
+| weakness / gap | area to revisit / developing skill |
+| dominate / conquer | master / cover / strengthen |
+| behind / overdue | ready for review |
+
+### Tone Rules
+
+- **Growth-framed:** "42 topics covered" not "58 remaining"
+- **Specific CTAs:** "Start 10-Question Review" not "Begin Assessment"
+- **Welcoming empty states:** Never accusatory ("You haven't done anything yet")
+- **Time-aware greetings:** Warm, contextual ("Good evening — ready for a quick session?")

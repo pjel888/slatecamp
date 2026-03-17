@@ -51,11 +51,11 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'roof', type: 'box', position: [0, bHs + 0.05, 0], args: [bW + 0.2, 0.1, bD + 0.2], color: '#52525b' })
 
   // Height limit plane
-  inst.push({ id: 'limit-plane', type: 'box', position: [0, limitS, 0], args: [bW + 1.5, 0.02, bD + 1.5], color: violated ? '#dc2626' : '#16a34a', opacity: 0.5, transparent: true, label: `${limit}m limit` })
+  inst.push({ id: 'limit-plane', type: 'box', position: [0, limitS, 0], args: [bW + 1.5, 0.02, bD + 1.5], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.5, transparent: true, label: `${limit}m limit` })
 
   // Height measurement arrow
-  inst.push({ id: 'height-arrow', type: 'box', position: [-(bW / 2 + 0.3), bHs / 2, 0], args: [0.03, bHs, 0.03], color: violated ? '#dc2626' : '#3b82f6', label: `${bH}m` })
-  inst.push({ id: 'arrow-top', type: 'cone', position: [-(bW / 2 + 0.3), bHs + 0.1, 0], args: [0.08, 0.2, 6], color: violated ? '#dc2626' : '#3b82f6' })
+  inst.push({ id: 'height-arrow', type: 'box', position: [-(bW / 2 + 0.3), bHs / 2, 0], args: [0.03, bHs, 0.03], color: violated ? '#D64545' : '#3b82f6', label: `${bH}m` })
+  inst.push({ id: 'arrow-top', type: 'cone', position: [-(bW / 2 + 0.3), bHs + 0.1, 0], args: [0.08, 0.2, 6], color: violated ? '#D64545' : '#3b82f6' })
 
   // Neighbouring buildings for context
   inst.push({ id: 'neighbor-1', type: 'box', position: [bW + 1.5, limitS * 0.4, 0], args: [1.2, limitS * 0.8, bD * 0.8], color: '#71717a', opacity: 0.5, transparent: true })

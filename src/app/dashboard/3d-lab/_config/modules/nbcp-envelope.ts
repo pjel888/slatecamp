@@ -162,7 +162,7 @@ function geometry(
   const offsetZ = ((front - rear) / 2) * s
 
   const isOverHeight = floors > bhl
-  const buildingColor = isOverHeight ? '#dc2626' : '#2563eb'
+  const buildingColor = isOverHeight ? '#D64545' : '#3B6B9C'
 
   const instructions: GeometryInstruction[] = []
 
@@ -240,7 +240,7 @@ function geometry(
       type: 'box',
       position: [offsetX, y, -offsetZ],
       args: [bw, 0.003, bd],
-      color: '#1d4ed8',
+      color: '#2F5A85',
       opacity: 0.4,
       transparent: true,
     })
@@ -252,7 +252,7 @@ function geometry(
     type: 'box',
     position: [0, bhlH + 0.01, 0],
     args: [lw * 1.2, 0.004, 0.004],
-    color: isOverHeight ? '#dc2626' : '#16a34a',
+    color: isOverHeight ? '#D64545' : '#2D9F6F',
   })
 
   // 6. Firewall indicator (if enabled)

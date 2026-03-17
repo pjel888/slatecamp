@@ -33,7 +33,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'wall-right', type: 'box', position: [(cW / 2 + wallT / 2), wallH / 2, 0], args: [wallT, wallH, cL], color: '#d4d4d8', opacity: 0.15, transparent: true })
 
   // Min width plane
-  inst.push({ id: 'min-width-plane', type: 'box', position: [0, 0.01, 0], args: [minW, 0.005, cL], color: violated ? '#dc2626' : '#16a34a', opacity: 0.25, transparent: true, label: `Min: ${(minW * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'min-width-plane', type: 'box', position: [0, 0.01, 0], args: [minW, 0.005, cL], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.25, transparent: true, label: `Min: ${(minW * 1000).toFixed(0)}mm` })
 
   // Wheelchair users
   const wcColors = ['#6366f1', '#3b82f6']
@@ -62,7 +62,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Dimension markers
   inst.push({ id: 'dim-left', type: 'box', position: [-(cW / 2) - 0.3, wallH / 2, 0], args: [0.02, wallH, 0.02], color: '#3b82f6' })
   inst.push({ id: 'dim-right', type: 'box', position: [(cW / 2) + 0.3, wallH / 2, 0], args: [0.02, wallH, 0.02], color: '#3b82f6' })
-  inst.push({ id: 'dim-line', type: 'box', position: [0, wallH + 0.2, 0], args: [cW, 0.02, 0.02], color: violated ? '#dc2626' : '#3b82f6', label: `${(cW * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'dim-line', type: 'box', position: [0, wallH + 0.2, 0], args: [cW, 0.02, 0.02], color: violated ? '#D64545' : '#3b82f6', label: `${(cW * 1000).toFixed(0)}mm` })
 
   return inst
 }

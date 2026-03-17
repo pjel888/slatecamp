@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { StickyNote, Loader2, Check } from 'lucide-react'
+import { Note, CircleNotch, CheckCircle } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { createNote } from '@/lib/actions/notes'
 import { useToast } from '@/lib/hooks/use-toast'
@@ -75,11 +76,11 @@ export function WikiNoteAction({ articleId, title, slug }: WikiNoteActionProps) 
       )}
     >
       {isCreating ? (
-        <Loader2 className="h-3 w-3 animate-spin" />
+        <SCIcon icon={CircleNotch} size="xs" className="animate-spin" />
       ) : isSaved ? (
-        <Check className="h-3 w-3" />
+        <SCIcon icon={CheckCircle} size="xs" />
       ) : (
-        <StickyNote className="h-3 w-3" />
+        <SCIcon icon={Note} size="xs" />
       )}
       {isSaved ? 'Saved to Notes' : 'Save to Notes'}
     </Button>

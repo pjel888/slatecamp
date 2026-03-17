@@ -22,11 +22,11 @@ function DevBadgeInner() {
 
   return (
     <div className="fixed top-2 left-2 z-50 flex items-center gap-1.5 rounded-full border border-border bg-background/90 px-2 py-0.5 shadow-sm backdrop-blur-sm">
-      <span className="text-[9px] font-mono text-muted-foreground truncate max-w-[200px]">
+      <span className="text-[11px] font-mono text-muted-foreground truncate max-w-[200px]">
         {pathname}
       </span>
       {overrideCount > 0 && (
-        <span className="inline-flex h-3.5 min-w-[14px] items-center justify-center rounded-full bg-amber-500 px-1 text-[8px] font-bold text-white">
+        <span className="inline-flex h-3.5 min-w-[14px] items-center justify-center rounded-full bg-amber-500 px-1 text-[11px] font-bold text-white">
           {overrideCount}
         </span>
       )}

@@ -2,7 +2,8 @@
 
 import { memo } from 'react'
 import { Html } from '@react-three/drei'
-import { X, ExternalLink } from 'lucide-react'
+import { X, ArrowSquareOut } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 export interface HotspotDef {
@@ -59,19 +60,19 @@ export const HotspotAnnotation = memo(function HotspotAnnotation({
                 onClick={onDeactivate}
                 className="shrink-0 rounded-sm p-0.5 hover:bg-zinc-100 transition-colors"
               >
-                <X className="h-3 w-3 text-zinc-400" />
+                <SCIcon icon={X} size="xs" className="text-zinc-400" />
               </button>
             </div>
-            <p className="text-[10px] text-zinc-500 leading-relaxed mb-2">
+            <p className="text-[11px] text-zinc-500 leading-relaxed mb-2">
               {hotspot.description}
             </p>
             {hotspot.wikiSlug && (
               <a
                 href={`/dashboard/wiki/${hotspot.wikiSlug}`}
-                className="inline-flex items-center gap-1 text-[10px] font-bold text-blue-600 hover:text-blue-700 uppercase tracking-wide"
+                className="inline-flex items-center gap-1 text-[11px] font-bold text-primary hover:text-[#2F5A85] uppercase tracking-wide"
               >
                 Wiki Article
-                <ExternalLink className="h-2.5 w-2.5" />
+                <SCIcon icon={ArrowSquareOut} size="xs" />
               </a>
             )}
             {/* Caret pointer downward */}
@@ -85,7 +86,7 @@ export const HotspotAnnotation = memo(function HotspotAnnotation({
               'w-4 h-4 rounded-full -translate-x-1/2 -translate-y-1/2',
               'border-2 border-white shadow-md',
               'hover:scale-125 transition-transform duration-150 cursor-pointer',
-              isQuizMode ? 'bg-amber-500' : 'bg-blue-600'
+              isQuizMode ? 'bg-amber-500' : 'bg-primary'
             )}
             title={isQuizMode ? 'Click to answer' : hotspot.title}
           />

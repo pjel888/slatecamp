@@ -52,17 +52,17 @@ export const constructionSequenceConfig: AnimatedSequenceConfig = {
       duration: 800,
       geometry: [
         // Rebar in X direction
-        { id: 'rb-x1', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, -0.6], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'rb-x2', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, -0.3], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'rb-x3', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'rb-x4', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0.3], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'rb-x5', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0.6], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
+        { id: 'rb-x1', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, -0.6], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'rb-x2', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, -0.3], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'rb-x3', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'rb-x4', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0.3], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'rb-x5', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.0, 0.6], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
         // Rebar in Z direction
-        { id: 'rb-z1', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [-0.6, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'rb-z2', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [-0.3, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'rb-z3', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'rb-z4', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0.3, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'rb-z5', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0.6, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
+        { id: 'rb-z1', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [-0.6, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'rb-z2', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [-0.3, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'rb-z3', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'rb-z4', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0.3, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'rb-z5', type: 'cylinder', args: [0.015, 0.015, 1.8, 8], position: [0.6, 0.02, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
       ],
     },
 
@@ -105,10 +105,10 @@ export const constructionSequenceConfig: AnimatedSequenceConfig = {
       duration: 800,
       geometry: [
         // 4 starter bars at column position (center)
-        { id: 'starter-1', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [-0.08, 0.9, -0.08], color: '#dc2626' },
-        { id: 'starter-2', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [0.08, 0.9, -0.08], color: '#dc2626' },
-        { id: 'starter-3', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [-0.08, 0.9, 0.08], color: '#dc2626' },
-        { id: 'starter-4', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [0.08, 0.9, 0.08], color: '#dc2626' },
+        { id: 'starter-1', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [-0.08, 0.9, -0.08], color: '#D64545' },
+        { id: 'starter-2', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [0.08, 0.9, -0.08], color: '#D64545' },
+        { id: 'starter-3', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [-0.08, 0.9, 0.08], color: '#D64545' },
+        { id: 'starter-4', type: 'cylinder', args: [0.015, 0.015, 0.8, 8], position: [0.08, 0.9, 0.08], color: '#D64545' },
       ],
     },
 
@@ -121,20 +121,20 @@ export const constructionSequenceConfig: AnimatedSequenceConfig = {
       duration: 800,
       geometry: [
         // Extended vertical bars
-        { id: 'col-bar-1', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [-0.08, 1.8, -0.08], color: '#dc2626' },
-        { id: 'col-bar-2', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [0.08, 1.8, -0.08], color: '#dc2626' },
-        { id: 'col-bar-3', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [-0.08, 1.8, 0.08], color: '#dc2626' },
-        { id: 'col-bar-4', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [0.08, 1.8, 0.08], color: '#dc2626' },
+        { id: 'col-bar-1', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [-0.08, 1.8, -0.08], color: '#D64545' },
+        { id: 'col-bar-2', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [0.08, 1.8, -0.08], color: '#D64545' },
+        { id: 'col-bar-3', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [-0.08, 1.8, 0.08], color: '#D64545' },
+        { id: 'col-bar-4', type: 'cylinder', args: [0.015, 0.015, 2.0, 8], position: [0.08, 1.8, 0.08], color: '#D64545' },
         // Lateral ties (rings at intervals)
-        { id: 'tie-1', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.0, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-2', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.2, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-3', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.4, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-4', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.6, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-5', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.8, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-6', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.0, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-7', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.2, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-8', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.4, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'tie-9', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.6, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
+        { id: 'tie-1', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.0, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-2', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.2, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-3', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.4, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-4', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.6, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-5', type: 'ring', args: [0.09, 0.12, 16], position: [0, 1.8, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-6', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.0, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-7', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.2, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-8', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.4, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'tie-9', type: 'ring', args: [0.09, 0.12, 16], position: [0, 2.6, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
       ],
     },
 
@@ -183,13 +183,13 @@ export const constructionSequenceConfig: AnimatedSequenceConfig = {
       duration: 1000,
       geometry: [
         // Bottom bars — short span (X direction, lower layer)
-        { id: 'slab-bx1', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, -0.5], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'slab-bx2', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, 0], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
-        { id: 'slab-bx3', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, 0.5], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
+        { id: 'slab-bx1', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, -0.5], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'slab-bx2', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, 0], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
+        { id: 'slab-bx3', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.92, 0.5], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
         // Bottom bars — long span (Z direction, upper layer)
-        { id: 'slab-bz1', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [-0.5, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'slab-bz2', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
-        { id: 'slab-bz3', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0.5, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#dc2626' },
+        { id: 'slab-bz1', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [-0.5, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'slab-bz2', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
+        { id: 'slab-bz3', type: 'cylinder', args: [0.012, 0.012, 1.6, 8], position: [0.5, 2.95, 0], rotation: [Math.PI / 2, 0, 0], color: '#D64545' },
         // Bar chairs (small supports)
         { id: 'chair-1', type: 'box', args: [0.03, 0.03, 0.03], position: [-0.5, 2.91, -0.5], color: '#737373' },
         { id: 'chair-2', type: 'box', args: [0.03, 0.03, 0.03], position: [0.5, 2.91, -0.5], color: '#737373' },

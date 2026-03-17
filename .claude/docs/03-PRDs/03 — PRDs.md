@@ -85,6 +85,13 @@ Before any step-by-step, these four principles govern every decision in the test
 
 **2. Feedback Timing is Pedagogy.** When a student gets feedback is not a UX preference — it is an educational choice with real cognitive consequences. Camp Mode (immediate) and Storm Mode (delayed) are not just cosmetically different; they train different cognitive skills. This distinction must be airtight in implementation.
 
+> **Campfire Rebrand Note:** The following IP names have different student-facing labels in the UI:
+> - Blindspot Protocol™ → "Focus Review" in student UI
+> - Endurance Cycle™ → "Extended Practice" in student UI
+> - Proof Simulation™ → "Full Exam Simulation" in student UI
+> - "drill" → "practice" / "session" in student UI
+> Internal docs retain the IP/trademark names for legal purposes.
+
 **3. No Question Exists in Isolation.** Every question answered feeds the Readiness Score™, the Taxonomy Heatmap™, the Lucky Guess Detector™, and the Blindspot Protocol™. The quiz is never just a quiz — it is the data collection engine for the entire platform's intelligence. Every `question_id`, `time_spent_ms`, and `is_correct` field is a signal.
 
 **4. The Student's Confidence Must Be Calibrated, Not Just Built.** Overconfidence is as dangerous as under-preparation. The Lucky Guess Detector™ exists precisely because feeling ready is not the same as being ready. Every feature decision must serve accurate self-assessment, not just feel-good metrics.

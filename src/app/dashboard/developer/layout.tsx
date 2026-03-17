@@ -6,17 +6,18 @@ import {
   Terminal,
   Database,
   FileText,
-  TestTube2,
-  ScrollText,
+  TestTube,
+  Scroll,
   Palette,
-} from 'lucide-react'
+} from '@phosphor-icons/react/dist/ssr'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 const NAV_ITEMS = [
   { href: ROUTES.DEVELOPER_CONSOLE, label: 'Console', icon: Terminal },
-  { href: ROUTES.DEVELOPER_TEST_DATA, label: 'Test Data', icon: TestTube2 },
+  { href: ROUTES.DEVELOPER_TEST_DATA, label: 'Test Data', icon: TestTube },
   { href: ROUTES.DEVELOPER_DOCS, label: 'Docs', icon: FileText },
   { href: ROUTES.DEVELOPER_DB, label: 'Database', icon: Database },
-  { href: ROUTES.DEVELOPER_LOGS, label: 'Logs', icon: ScrollText },
+  { href: ROUTES.DEVELOPER_LOGS, label: 'Logs', icon: Scroll },
   { href: ROUTES.DEVELOPER_DESIGN_SYSTEM, label: 'Design System', icon: Palette },
 ]
 
@@ -55,7 +56,7 @@ export default async function DeveloperLayout({
                 href={href}
                 className="flex items-center gap-2 rounded-md px-2.5 py-1.5 text-[12px] font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               >
-                <Icon className="h-3.5 w-3.5" />
+                <SCIcon icon={Icon} size="xs" />
                 {label}
               </Link>
             </li>

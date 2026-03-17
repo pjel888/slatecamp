@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Search, Download, ChevronDown, ChevronRight } from 'lucide-react'
+import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
 
@@ -43,7 +44,7 @@ export function AuditLogViewer() {
 
   const eventColors: Record<string, string> = {
     CREATE: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-    UPDATE: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
+    UPDATE: 'bg-[#F0F5FA] text-[#2F5A85] dark:bg-[#1C2433] dark:text-[#5B8BB8]',
     DELETE: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
     PUBLISH: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
   }
@@ -53,7 +54,7 @@ export function AuditLogViewer() {
       {/* Filters */}
       <div className="flex gap-4">
         <div className="flex-1 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search by table or record ID..."
@@ -120,9 +121,9 @@ export function AuditLogViewer() {
                   >
                     <td className="px-4 py-3">
                       {expandedId === log.id ? (
-                        <ChevronDown className="h-4 w-4" />
+                        <SCIcon icon={CaretDown} size="sm" />
                       ) : (
-                        <ChevronRight className="h-4 w-4" />
+                        <SCIcon icon={CaretRight} size="sm" />
                       )}
                     </td>
                     <td className="px-4 py-3 text-sm">

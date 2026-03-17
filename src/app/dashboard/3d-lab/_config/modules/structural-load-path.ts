@@ -146,13 +146,13 @@ export const structuralLoadPathConfig: AnimatedSequenceConfig = {
       duration: 1000,
       geometry: [
         // Highlighted arrows from column bases to footings
-        { id: 'xfer-cf-l', type: 'cone', args: [0.1, 0.3, 8], position: [-2, 0.25, 0], color: '#f59e0b' },
-        { id: 'xfer-cf-c', type: 'cone', args: [0.12, 0.3, 8], position: [0, 0.25, 0], color: '#f59e0b' },
-        { id: 'xfer-cf-r', type: 'cone', args: [0.1, 0.3, 8], position: [2, 0.25, 0], color: '#f59e0b' },
+        { id: 'xfer-cf-l', type: 'cone', args: [0.1, 0.3, 8], position: [-2, 0.25, 0], color: '#D4951A' },
+        { id: 'xfer-cf-c', type: 'cone', args: [0.12, 0.3, 8], position: [0, 0.25, 0], color: '#D4951A' },
+        { id: 'xfer-cf-r', type: 'cone', args: [0.1, 0.3, 8], position: [2, 0.25, 0], color: '#D4951A' },
         // Cumulative load labels
-        { id: 'load-l', type: 'sphere', args: [0.05, 8, 8], position: [-2, 0.5, 0.3], color: '#f59e0b', label: 'P = \u03A3 loads' },
-        { id: 'load-c', type: 'sphere', args: [0.05, 8, 8], position: [0, 0.5, 0.3], color: '#f59e0b', label: 'P = \u03A3 loads (max)' },
-        { id: 'load-r', type: 'sphere', args: [0.05, 8, 8], position: [2, 0.5, 0.3], color: '#f59e0b', label: 'P = \u03A3 loads' },
+        { id: 'load-l', type: 'sphere', args: [0.05, 8, 8], position: [-2, 0.5, 0.3], color: '#D4951A', label: 'P = \u03A3 loads' },
+        { id: 'load-c', type: 'sphere', args: [0.05, 8, 8], position: [0, 0.5, 0.3], color: '#D4951A', label: 'P = \u03A3 loads (max)' },
+        { id: 'load-r', type: 'sphere', args: [0.05, 8, 8], position: [2, 0.5, 0.3], color: '#D4951A', label: 'P = \u03A3 loads' },
       ],
     },
 

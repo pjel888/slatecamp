@@ -6,14 +6,15 @@ import {
   Target,
   Clock,
   ArrowRight,
-  RotateCcw,
-  LayoutDashboard,
-  CheckCircle2,
+  ArrowCounterClockwise,
+  SquaresFour,
+  CheckCircle,
   XCircle,
-  BarChart3,
-  Search,
+  ChartBar,
+  MagnifyingGlass,
   BookOpen
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
@@ -24,14 +25,16 @@ interface ResultsSummaryProps {
   onExit: () => void
   onRestart: () => void
   testMode: string
+  onStartFocusedReview?: (topicIds: string[]) => void
 }
 
-export function ResultsSummary({ 
-  questions, 
-  answers, 
-  onExit, 
+export function ResultsSummary({
+  questions,
+  answers,
+  onExit,
   onRestart,
-  testMode
+  testMode,
+  onStartFocusedReview,
 }: ResultsSummaryProps) {
   const stats = useMemo(() => {
     const total = questions.length
@@ -55,14 +58,32 @@ export function ResultsSummary({
     const masteryLabel =
       score >= 75 ? 'Mastered' :
       score >= 50 ? 'Developing' :
-      'Needs Work'
+      'Keep Practicing'
 
     const masteryColor =
-      score >= 75 ? 'text-green-600' :
-      score >= 50 ? 'text-amber-600' :
-      'text-red-600'
+      score >= 75 ? 'text-[#2D9F6F]' :
+      score >= 50 ? 'text-[#D4951A]' :
+      'text-[#D64545]'
 
-    return { total, correct, score, subjectStats, masteryLabel, masteryColor }
+    // Find weakest subject
+    const subjectEntries = Object.entries(subjectStats)
+    const weakestSubject = subjectEntries.length > 0
+      ? subjectEntries.reduce((worst, [name, data]) => {
+          const pct = data.total > 0 ? data.correct / data.total : 1
+          const worstPct = worst.data.total > 0 ? worst.data.correct / worst.data.total : 1
+          return pct < worstPct ? { name, data } : worst
+        }, { name: subjectEntries[0][0], data: subjectEntries[0][1] })
+      : null
+
+    // Collect topic IDs for the weakest subject's wrong answers
+    const weakestTopicIds = weakestSubject
+      ? questions
+          .filter(q => (q.subject_id || 'General') === weakestSubject.name && answers[q.question_id] !== (q.correct_option_id ?? q.correct_answer))
+          .map(q => q.topic_id)
+          .filter((id, i, arr) => arr.indexOf(id) === i)
+      : []
+
+    return { total, correct, score, subjectStats, masteryLabel, masteryColor, weakestSubject, weakestTopicIds }
   }, [questions, answers])
 
   return (
@@ -72,50 +93,50 @@ export function ResultsSummary({
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-12"
       >
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-sm bg-blue-50 text-blue-600 mb-6 border border-blue-100">
-          <Target className="h-8 w-8" />
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-sm bg-[#F0F5FA] text-primary mb-6 border border-primary/10">
+          <SCIcon icon={Target} size="xl" />
         </div>
         <h1 className="text-xl font-semibold text-zinc-900 tracking-tight">Session Complete</h1>
-        <p className="text-zinc-500 mt-2">Here is how you performed in your {testMode} session.</p>
+        <p className="text-zinc-500 mt-2">Here&apos;s a look at what you covered in your {testMode} session.</p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div className="bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center">
           <div className="text-zinc-400 mb-2 flex items-center gap-2">
-            <Target className="h-4 w-4" />
-            <span className="text-[10px] font-black uppercase tracking-widest">Accuracy</span>
+            <SCIcon icon={Target} size="sm" />
+            <span className="text-[11px] font-black uppercase tracking-widest">Accuracy</span>
           </div>
           <div className="text-xl font-black text-zinc-900">{stats.score}%</div>
-          <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
+          <div className="text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             {stats.correct} / {stats.total} Correct
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center">
           <div className="text-zinc-400 mb-2 flex items-center gap-2">
-            <Clock className="h-4 w-4" />
-            <span className="text-[10px] font-black uppercase tracking-widest">Status</span>
+            <SCIcon icon={Clock} size="sm" />
+            <span className="text-[11px] font-black uppercase tracking-widest">Status</span>
           </div>
           <div className={`text-xl font-black uppercase ${stats.masteryColor}`}>{stats.masteryLabel}</div>
-          <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
+          <div className="text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             IRT Adjusted
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center">
           <div className="text-zinc-400 mb-2 flex items-center gap-2">
-            <BarChart3 className="h-4 w-4" />
-            <span className="text-[10px] font-black uppercase tracking-widest">Readiness</span>
+            <SCIcon icon={ChartBar} size="sm" />
+            <span className="text-[11px] font-black uppercase tracking-widest">Readiness</span>
           </div>
-          <div className="text-xl font-black text-green-600 uppercase">Updated</div>
-          <div className="text-[10px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
+          <div className="text-xl font-black text-[#2D9F6F] uppercase">Updated</div>
+          <div className="text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold">
             EMA Recalculated
           </div>
         </div>
       </div>
 
       <div className="space-y-6">
-        <h2 className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400 mb-4">Subject Breakdown</h2>
+        <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 mb-4">Subject Breakdown</h2>
         <div className="grid grid-cols-1 gap-4">
           {Object.entries(stats.subjectStats).map(([subject, s], idx) => {
             const percentage = Math.round((s.correct / s.total) * 100)
@@ -124,27 +145,27 @@ export function ResultsSummary({
                 <div className="flex items-center gap-4">
                   <div className={cn(
                     "w-10 h-10 rounded-sm flex items-center justify-center border",
-                    percentage >= 75 ? "bg-green-50 border-green-100 text-green-600" :
-                    percentage >= 50 ? "bg-amber-50 border-amber-100 text-amber-600" :
-                    "bg-red-50 border-red-100 text-red-600"
+                    percentage >= 75 ? "bg-[#EDFAF4] border-[#2D9F6F]/20 text-[#2D9F6F]" :
+                    percentage >= 50 ? "bg-[#FEF8ED] border-[#D4951A]/20 text-[#D4951A]" :
+                    "bg-[#FDF0F0] border-[#D64545]/20 text-[#D64545]"
                   )}>
-                    <BookOpen className="h-5 w-5" />
+                    <SCIcon icon={BookOpen} size="md" />
                   </div>
                   <div>
                     <h4 className="text-sm font-bold text-zinc-900">{subject}</h4>
-                    <p className="text-[10px] text-zinc-400 uppercase tracking-widest font-bold">{s.correct}/{s.total} Correct</p>
+                    <p className="text-[11px] text-zinc-400 uppercase tracking-widest font-bold">{s.correct}/{s.total} Correct</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
                   <div className="w-32 h-2 bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200/30 hidden sm:block">
-                    <div 
+                    <div
                       className={cn(
-                        "h-full",
-                        percentage >= 75 ? "bg-green-500" :
-                        percentage >= 50 ? "bg-amber-500" :
-                        "bg-red-500"
-                      )} 
-                      style={{ width: `${percentage}%` }} 
+                        "h-full transition-all duration-200 ease-out",
+                        percentage >= 75 ? "bg-[#2D9F6F]" :
+                        percentage >= 50 ? "bg-[#D4951A]" :
+                        "bg-[#D64545]"
+                      )}
+                      style={{ width: `${percentage}%` }}
                     />
                   </div>
                   <span className="text-sm font-black text-zinc-900 w-10 text-right">{percentage}%</span>
@@ -155,20 +176,48 @@ export function ResultsSummary({
         </div>
       </div>
 
+      {stats.weakestSubject && Math.round((stats.weakestSubject.data.correct / stats.weakestSubject.data.total) * 100) < 75 && (
+        <div className="mt-8 p-5 bg-[#F0F5FA] border border-[#3B6B9C]/20 rounded-md">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-md bg-white border border-[#3B6B9C]/10 flex items-center justify-center shrink-0">
+                <SCIcon icon={Target} size="md" className="text-primary" />
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-[#1A2332]">Area to Revisit</h3>
+                <p className="text-sm text-[#4A5568] mt-0.5">
+                  <span className="font-bold text-[#1A2332]">{stats.weakestSubject.name}</span> had the lowest accuracy at{' '}
+                  {Math.round((stats.weakestSubject.data.correct / stats.weakestSubject.data.total) * 100)}%. A focused session could strengthen this area.
+                </p>
+              </div>
+            </div>
+            {onStartFocusedReview && stats.weakestTopicIds.length > 0 && (
+              <button
+                onClick={() => onStartFocusedReview(stats.weakestTopicIds)}
+                className="w-full sm:w-auto px-5 py-2.5 bg-[#E8853A] text-white rounded-sm font-semibold text-sm hover:brightness-90 transition-all flex items-center justify-center gap-2 group whitespace-nowrap"
+              >
+                Start Focused Review
+                <SCIcon icon={ArrowRight} size="sm" className="group-hover:translate-x-0.5 transition-transform" />
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       <div className="mt-12 pt-12 border-t border-zinc-200 grid grid-cols-1 md:grid-cols-2 gap-4">
         <Button 
           onClick={onExit}
           variant="outline"
-          className="h-14 rounded-sm border-zinc-200 text-zinc-600 hover:bg-zinc-50 font-bold uppercase tracking-widest text-[10px] gap-2"
+          className="h-14 rounded-sm border-zinc-200 text-zinc-600 hover:bg-zinc-50 font-bold uppercase tracking-widest text-[11px] gap-2"
         >
-          <LayoutDashboard className="h-4 w-4" />
+          <SCIcon icon={SquaresFour} size="sm" />
           Back to Dashboard
         </Button>
         <Button 
           onClick={onRestart}
-          className="h-14 rounded-sm bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase tracking-widest text-[10px] gap-2"
+          className="h-14 rounded-sm bg-primary hover:bg-[#2F5A85] text-white font-bold uppercase tracking-widest text-[11px] gap-2"
         >
-          <RotateCcw className="h-4 w-4" />
+          <SCIcon icon={ArrowCounterClockwise} size="sm" />
           Start New Session
         </Button>
       </div>

@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useCallback } from 'react'
-import { X } from 'lucide-react'
+import { X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useDevStore } from '@/stores/dev-store'
 import { ImpersonationPanel } from './impersonation-panel'
 import { FeatureFlagBoard } from './feature-flag-board'
@@ -47,7 +48,7 @@ export function DevOverlay({ systemInfo, dbFlags }: DevOverlayProps) {
       />
 
       {/* Panel */}
-      <div className="relative z-10 w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-2xl border border-border bg-background shadow-2xl mx-4">
+      <div className="relative z-10 w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-lg border border-border bg-background shadow-lg mx-4">
         {/* Header */}
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-background/95 backdrop-blur-sm px-6 py-4">
           <div>
@@ -68,7 +69,7 @@ export function DevOverlay({ systemInfo, dbFlags }: DevOverlayProps) {
               onClick={handleClose}
               className="rounded-md p-1.5 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
-              <X className="h-4 w-4" />
+              <SCIcon icon={X} size="sm" />
             </button>
           </div>
         </div>

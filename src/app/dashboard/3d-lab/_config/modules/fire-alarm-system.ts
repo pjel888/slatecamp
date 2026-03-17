@@ -34,7 +34,7 @@ const PATHS: PathDef[] = [
     id: 'alarm-loop',
     label: 'Alarm Circuit Loop',
     points: [[3, 17], [3, 0], [32, 0], [32, 17]],
-    color: '#dc2626',
+    color: '#D64545',
     width: 2,
   },
   {
@@ -53,22 +53,22 @@ const FIXTURES: FixtureDef[] = [
     label: 'Fire Alarm Control Panel (FACP)',
     type: 'custom',
     position: [3, 14],
-    color: '#dc2626',
+    color: '#D64545',
     description: 'FACP at main lobby / entry; visible from building entrance',
     codeCitation: 'RA 9514 IRR Rule 10',
   },
   // Manual pull stations (at exits)
-  { id: 'pull-a', label: 'Pull Station — Exit A', type: 'custom', position: [2.5, 17], color: '#dc2626', description: 'At every exit; max 61m between stations', codeCitation: 'RA 9514' },
-  { id: 'pull-b', label: 'Pull Station — Exit B', type: 'custom', position: [30.5, 17], color: '#dc2626', description: 'Pull station at secondary exit', codeCitation: 'RA 9514' },
-  { id: 'pull-lobby', label: 'Pull Station — Lobby', type: 'custom', position: [16.5, 17], color: '#dc2626', codeCitation: 'RA 9514' },
+  { id: 'pull-a', label: 'Pull Station — Exit A', type: 'custom', position: [2.5, 17], color: '#D64545', description: 'At every exit; max 61m between stations', codeCitation: 'RA 9514' },
+  { id: 'pull-b', label: 'Pull Station — Exit B', type: 'custom', position: [30.5, 17], color: '#D64545', description: 'Pull station at secondary exit', codeCitation: 'RA 9514' },
+  { id: 'pull-lobby', label: 'Pull Station — Lobby', type: 'custom', position: [16.5, 17], color: '#D64545', codeCitation: 'RA 9514' },
   // Horn/strobe devices
-  { id: 'hs-1', label: 'Horn / Strobe', type: 'custom', position: [8, 5], color: '#f59e0b', description: 'Audio/visual device; min 65 dB(A) in office', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'hs-2', label: 'Horn / Strobe', type: 'custom', position: [25, 5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'hs-3', label: 'Horn / Strobe', type: 'custom', position: [16.5, 14], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'hs-4', label: 'Horn / Strobe — Corridor', type: 'custom', position: [16.5, 18.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'hs-1', label: 'Horn / Strobe', type: 'custom', position: [8, 5], color: '#D4951A', description: 'Audio/visual device; min 65 dB(A) in office', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'hs-2', label: 'Horn / Strobe', type: 'custom', position: [25, 5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'hs-3', label: 'Horn / Strobe', type: 'custom', position: [16.5, 14], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'hs-4', label: 'Horn / Strobe — Corridor', type: 'custom', position: [16.5, 18.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
   // Exits
-  { id: 'exit-a', label: 'EXIT A', type: 'exit', position: [2.5, 25.5], color: '#16a34a', codeCitation: 'RA 9514' },
-  { id: 'exit-b', label: 'EXIT B', type: 'exit', position: [30.5, 25.5], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'exit-a', label: 'EXIT A', type: 'exit', position: [2.5, 25.5], color: '#2D9F6F', codeCitation: 'RA 9514' },
+  { id: 'exit-b', label: 'EXIT B', type: 'exit', position: [30.5, 25.5], color: '#2D9F6F', codeCitation: 'RA 9514' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

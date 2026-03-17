@@ -39,7 +39,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
       inst.push({ id: `slab-${u}-${s}`, type: 'box', position: [ux, s * stH, 0], args: [unitW - 0.03, 0.03, 6 * scale - 0.03], color: '#71717a' })
     }
     // Roof
-    inst.push({ id: `roof-${u}`, type: 'cone', position: [ux, storeys * stH + 0.2, 0], rotation: [0, Math.PI / 4, 0], args: [unitW * 0.8, 0.4, 4], color: '#dc2626' })
+    inst.push({ id: `roof-${u}`, type: 'cone', position: [ux, storeys * stH + 0.2, 0], rotation: [0, Math.PI / 4, 0], args: [unitW * 0.8, 0.4, 4], color: '#D64545' })
   }
 
   // Space program visualization (ground floor)
@@ -47,7 +47,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     const firstUnit = -(totalW / 2) + unitW / 2
     const spaces: Array<{ label: string; w: number; c: string }> = [
       { label: 'Living', w: 0.35, c: '#3b82f6' },
-      { label: 'Dining', w: 0.2, c: '#16a34a' },
+      { label: 'Dining', w: 0.2, c: '#2D9F6F' },
       { label: 'Kitchen', w: 0.15, c: '#f97316' },
       { label: 'Toilet', w: 0.1, c: '#0891b2' },
     ]

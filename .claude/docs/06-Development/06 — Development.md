@@ -409,7 +409,7 @@ const Button = ({ variant, className, ...props }: ButtonProps) => {
     <button
       className={cn(
         'rounded-sm px-4 py-2 font-medium transition-colors',
-        variant === 'primary' && 'bg-blue-600 text-white hover:bg-blue-700',
+        variant === 'primary' && 'bg-primary text-white hover:brightness-90',
         variant === 'ghost' && 'bg-transparent hover:bg-zinc-100',
         className,
       )}

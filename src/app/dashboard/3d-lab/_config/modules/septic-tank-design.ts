@@ -41,19 +41,19 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const scumH = tD * 0.1
   const liquidH = tD - sludgeH - scumH
   inst.push({ id: 'sludge', type: 'box', position: [0, sludgeH / 2, 0], args: [tL - wallT, sludgeH, tW - wallT], color: '#78350f', opacity: 0.9, transparent: true, label: 'Sludge' })
-  inst.push({ id: 'liquid', type: 'box', position: [0, sludgeH + liquidH / 2, 0], args: [tL - wallT, liquidH, tW - wallT], color: '#1d4ed8', opacity: 0.35, transparent: true, label: 'Effluent' })
+  inst.push({ id: 'liquid', type: 'box', position: [0, sludgeH + liquidH / 2, 0], args: [tL - wallT, liquidH, tW - wallT], color: '#2F5A85', opacity: 0.35, transparent: true, label: 'Effluent' })
   inst.push({ id: 'scum', type: 'box', position: [0, sludgeH + liquidH + scumH / 2, 0], args: [tL - wallT, scumH, tW - wallT], color: '#4d7c0f', opacity: 0.6, transparent: true, label: 'Scum' })
 
   // Baffle / divider
   inst.push({ id: 'baffle', type: 'box', position: [-tL / 6, tD / 2 - 0.05, 0], args: [wallT, tD * 0.8, tW - wallT], color: '#a1a1aa' })
 
   // Inlet/outlet pipes
-  inst.push({ id: 'inlet-pipe', type: 'cylinder', position: [tL / 2 + 0.3, tD * 0.75, 0], rotation: [0, 0, Math.PI / 2], args: [0.05, 0.05, 0.5, 8], color: '#dc2626', label: 'Inlet' })
-  inst.push({ id: 'outlet-pipe', type: 'cylinder', position: [-(tL / 2 + 0.3), tD * 0.65, 0], rotation: [0, 0, Math.PI / 2], args: [0.04, 0.04, 0.5, 8], color: '#16a34a', label: 'Outlet' })
+  inst.push({ id: 'inlet-pipe', type: 'cylinder', position: [tL / 2 + 0.3, tD * 0.75, 0], rotation: [0, 0, Math.PI / 2], args: [0.05, 0.05, 0.5, 8], color: '#D64545', label: 'Inlet' })
+  inst.push({ id: 'outlet-pipe', type: 'cylinder', position: [-(tL / 2 + 0.3), tD * 0.65, 0], rotation: [0, 0, Math.PI / 2], args: [0.04, 0.04, 0.5, 8], color: '#2D9F6F', label: 'Outlet' })
 
   // Volume indicator
   const volScale = actualVol / reqVol
-  inst.push({ id: 'vol-bar', type: 'box', position: [tL / 2 + 0.8, volScale * tD / 2, 0], args: [0.2, volScale * tD, 0.2], color: violated ? '#dc2626' : '#16a34a', label: `${actualVol.toFixed(2)} m³` })
+  inst.push({ id: 'vol-bar', type: 'box', position: [tL / 2 + 0.8, volScale * tD / 2, 0], args: [0.2, volScale * tD, 0.2], color: violated ? '#D64545' : '#2D9F6F', label: `${actualVol.toFixed(2)} m³` })
   inst.push({ id: 'req-line', type: 'box', position: [tL / 2 + 0.8, reqVol / actualVol * volScale * tD, 0], args: [0.3, 0.02, 0.1], color: '#f97316', label: `Min: ${reqVol} m³` })
 
   // Cover slab

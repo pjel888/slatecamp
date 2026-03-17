@@ -21,8 +21,8 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
       <div className="w-24 h-1.5 bg-zinc-200 rounded-sm overflow-hidden" role="timer" aria-label={`${timeLabel} remaining`}>
         <div
           className={cn(
-            'h-full rounded-sm transition-all duration-1000 ease-linear',
-            isFinal ? 'bg-amber-500' : 'bg-blue-500',
+            'h-full rounded-sm transition-all duration-300 ease-linear',
+            isFinal ? 'bg-amber-500' : 'bg-[#3B6B9C]',
           )}
           style={{ width: `${pct}%` }}
         />
@@ -41,7 +41,7 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
       {/* Pace indicator — subtle, not alarming */}
       <span
         className={cn(
-          'text-[9px] font-black uppercase tracking-wider hidden sm:block',
+          'text-[11px] font-black uppercase tracking-wider hidden sm:block',
           isAheadOfPace ? 'text-green-600' : 'text-zinc-400',
         )}
       >

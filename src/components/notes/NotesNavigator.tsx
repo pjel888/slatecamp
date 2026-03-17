@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { FileText, Folder, BookOpen, HelpCircle, Pin, Plus, ChevronRight } from 'lucide-react'
+import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createNoteFolder } from '@/lib/actions/notes'
 
@@ -52,11 +53,11 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       {/* All notes */}
       <div className="px-2">
         <button onClick={() => onFilterChange({ type: 'all' })} className={navBtn(is({ type: 'all' }))}>
-          <FileText className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={FileText} size="sm" className="shrink-0" />
           All Notes
         </button>
         <button onClick={() => onFilterChange({ type: 'pinned' })} className={navBtn(is({ type: 'pinned' }))}>
-          <Pin className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={PushPin} size="sm" className="shrink-0" />
           Pinned
         </button>
       </div>
@@ -64,13 +65,13 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       {/* Folders */}
       <div className="mt-4 px-2">
         <div className="mb-1 flex items-center justify-between px-1">
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400">Folders</span>
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400">Folders</span>
           <button
             onClick={() => setAddingFolder(true)}
             className="rounded p-0.5 text-zinc-400 hover:text-zinc-700 transition-colors"
             title="New folder"
           >
-            <Plus className="h-3.5 w-3.5" />
+            <SCIcon icon={Plus} size="xs" />
           </button>
         </div>
         {folders.map((f) => {
@@ -81,9 +82,9 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
               onClick={() => onFilterChange({ type: 'folder', id: f.folder_id, name: f.name })}
               className={navBtn(active)}
             >
-              <Folder className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+              <SCIcon icon={Folder} size="sm" className="shrink-0" />
               <span className="flex-1 truncate">{f.name}</span>
-              {active && <ChevronRight className="h-3 w-3 shrink-0 opacity-60" />}
+              {active && <SCIcon icon={CaretRight} size="xs" className="shrink-0 opacity-60" />}
             </button>
           )
         })}
@@ -98,12 +99,12 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
               onChange={(e) => setNewFolderName(e.target.value)}
               onKeyDown={(e) => e.key === 'Escape' && setAddingFolder(false)}
               placeholder="Folder name…"
-              className="flex-1 rounded border border-zinc-200 bg-white px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="flex-1 rounded border border-zinc-200 bg-white px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-primary"
             />
             <button
               type="submit"
               disabled={creating || !newFolderName.trim()}
-              className="rounded-md bg-blue-600 px-2 py-1 text-[11px] text-white disabled:opacity-40"
+              className="rounded-md bg-primary px-2 py-1 text-[11px] text-white disabled:opacity-40"
             >
               {creating ? '…' : 'Add'}
             </button>
@@ -113,13 +114,13 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
 
       {/* By Source */}
       <div className="mt-4 px-2">
-        <p className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400">By Source</p>
+        <p className="mb-1 px-1 text-[11px] font-semibold uppercase tracking-wider text-zinc-400">By Source</p>
         <button onClick={() => onFilterChange({ type: 'source', source: 'wiki' })} className={navBtn(is({ type: 'source', source: 'wiki' }))}>
-          <BookOpen className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={BookOpen} size="sm" className="shrink-0" />
           From Wiki
         </button>
         <button onClick={() => onFilterChange({ type: 'source', source: 'quiz' })} className={navBtn(is({ type: 'source', source: 'quiz' }))}>
-          <HelpCircle className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={Question} size="sm" className="shrink-0" />
           From Quizzes
         </button>
       </div>

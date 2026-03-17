@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Search } from 'lucide-react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import {
   CommandDialog,
   CommandEmpty,
@@ -72,9 +73,9 @@ export function WikiCommandPalette() {
         onClick={() => setOpen(true)}
         className='flex w-full items-center gap-3 rounded-sm border border-border/40 bg-secondary/30 px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-secondary/60 hover:border-border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring'
       >
-        <Search className='h-4 w-4 shrink-0' strokeWidth={1.5} />
+        <SCIcon icon={MagnifyingGlass} size="sm" className='shrink-0' />
         <span className='flex-1 text-left'>Search wiki...</span>
-        <kbd className='hidden sm:inline-flex items-center gap-0.5 rounded border border-border/60 bg-background px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground'>
+        <kbd className='hidden sm:inline-flex items-center gap-0.5 rounded border border-border/60 bg-background px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground'>
           <span>⌘</span>K
         </kbd>
       </button>
@@ -103,7 +104,7 @@ export function WikiCommandPalette() {
                       {result.title}
                     </span>
                     <span
-                      className='text-xs text-muted-foreground line-clamp-1 [&_mark]:bg-color-signal-amber/20 [&_mark]:text-foreground'
+                      className='text-xs text-muted-foreground line-clamp-1 [&_mark]:bg-warning/20 [&_mark]:text-foreground'
                       dangerouslySetInnerHTML={{ __html: result.headline }}
                     />
                   </div>
@@ -115,10 +116,7 @@ export function WikiCommandPalette() {
           {query.length >= 2 && (
             <CommandGroup>
               <CommandItem onSelect={handleViewAll} value='__view_all__'>
-                <Search
-                  className='h-3.5 w-3.5 mr-2 text-muted-foreground'
-                  strokeWidth={1.5}
-                />
+                <SCIcon icon={MagnifyingGlass} size="xs" className='mr-2 text-muted-foreground' />
                 <span className='text-sm text-muted-foreground'>
                   View all results for &ldquo;{query}&rdquo;
                 </span>

@@ -1,5 +1,6 @@
 'use client'
-import { Timer, AlertCircle } from 'lucide-react'
+import { Timer, Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import { cn } from '@/lib/utils'
@@ -13,7 +14,7 @@ export function PacingInsights({ data }: Props) {
       <RichInfoPopover title="Latency Analytics" description="Subjects where your average response time significantly exceeds the 2-minute exam standard." />
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider text-zinc-500 uppercase flex items-center gap-1">
-          <Timer className="h-2.5 w-2.5 text-amber-500" /> Pacing Leaks
+          <SCIcon icon={Timer} size="xs" className="text-amber-500" /> Pacing Leaks
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
@@ -50,7 +51,7 @@ export function PacingInsights({ data }: Props) {
             })}
             {data[0]?.ratio > 1.5 && (
               <div className="flex items-start gap-1.5 bg-amber-50 rounded-md px-2 py-1.5 mt-1">
-                <AlertCircle className="h-3 w-3 text-amber-600 mt-0.5 shrink-0" />
+                <SCIcon icon={Warning} size="xs" className="text-amber-600 mt-0.5 shrink-0" />
                 <p className="text-[11px] text-amber-700 leading-snug">
                   Extra time here isn&apos;t improving accuracy. Try flagging and moving on.
                 </p>

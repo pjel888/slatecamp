@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { useDiscipline } from '@/lib/context/discipline-context'
-import { ChevronDown, Check, GraduationCap } from 'lucide-react'
+import { CaretDown, CheckCircle, GraduationCap } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import {
   Tooltip,
   TooltipTrigger,
@@ -29,7 +30,7 @@ export function DisciplineSwitcher({
       }`}
     >
       <div className='flex h-5 w-5 shrink-0 items-center justify-center rounded-sm bg-accent-blue/10'>
-        <GraduationCap className='h-5 w-5 text-accent-blue' strokeWidth={1.5} />
+        <SCIcon icon={GraduationCap} size='md' className='text-accent-blue' />
       </div>
       {!collapsed && (
         <>
@@ -38,9 +39,10 @@ export function DisciplineSwitcher({
               {label}
             </p>
           </div>
-          <ChevronDown
-            className={`h-3 w-3 shrink-0 text-muted-foreground transition-transform ${open ? 'rotate-180' : ''}`}
-            strokeWidth={1.5}
+          <SCIcon
+            icon={CaretDown}
+            size='xs'
+            className={`shrink-0 text-muted-foreground transition-transform ${open ? 'rotate-180' : ''}`}
           />
         </>
       )}
@@ -65,9 +67,9 @@ export function DisciplineSwitcher({
       {open && (
         <>
           <div className='fixed inset-0 z-40' onClick={() => setOpen(false)} />
-          <div className='absolute left-0 top-full z-50 mt-1 w-64 rounded-xl border border-border bg-popover p-1 shadow-lg'>
+          <div className='absolute left-0 top-full z-50 mt-1 w-64 rounded-lg border border-border bg-popover p-1 shadow-lg'>
             <div className='px-2 py-1.5'>
-              <p className='text-[10px] font-black uppercase tracking-wider text-muted-foreground'>
+              <p className='text-[11px] font-black uppercase tracking-wider text-muted-foreground'>
                 Active Discipline
               </p>
             </div>
@@ -91,23 +93,25 @@ export function DisciplineSwitcher({
                       isActive ? 'bg-accent-blue/10' : 'bg-secondary'
                     }`}
                   >
-                    <GraduationCap
-                      className={`h-4 w-4 ${isActive ? 'text-accent-blue' : 'text-muted-foreground'}`}
-                      strokeWidth={1.5}
+                    <SCIcon
+                      icon={GraduationCap}
+                      size='sm'
+                      className={isActive ? 'text-accent-blue' : 'text-muted-foreground'}
                     />
                   </div>
                   <div className='min-w-0 flex-1'>
                     <p className='truncate text-sm font-bold text-foreground'>
                       {discipline.name}
                     </p>
-                    <p className='text-[10px] text-muted-foreground uppercase font-black'>
+                    <p className='text-[11px] text-muted-foreground uppercase font-black'>
                       {discipline.acronym}
                     </p>
                   </div>
                   {isActive && (
-                    <Check
-                      className='h-4 w-4 shrink-0 text-accent-blue'
-                      strokeWidth={1.5}
+                    <SCIcon
+                      icon={CheckCircle}
+                      size='sm'
+                      className='shrink-0 text-accent-blue'
                     />
                   )}
                 </button>

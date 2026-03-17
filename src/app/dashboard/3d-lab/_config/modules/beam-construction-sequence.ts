@@ -92,13 +92,13 @@ export const beamConstructionSequenceConfig: AnimatedSequenceConfig = {
         { id: 'form-left', type: 'box', args: [3.2, 0.55, 0.018], position: [0, 2.88, -0.23], color: '#fbbf24', opacity: 0.7, transparent: true },
         { id: 'form-right', type: 'box', args: [3.2, 0.55, 0.018], position: [0, 2.88, 0.23], color: '#fbbf24', opacity: 0.7, transparent: true },
         // Bar chairs
-        { id: 'chair-1', type: 'box', args: [0.04, 0.025, 0.04], position: [-1.0, 2.63, 0], color: '#16a34a', label: 'Bar chair 25mm cover' },
-        { id: 'chair-2', type: 'box', args: [0.04, 0.025, 0.04], position: [0, 2.63, 0], color: '#16a34a' },
-        { id: 'chair-3', type: 'box', args: [0.04, 0.025, 0.04], position: [1.0, 2.63, 0], color: '#16a34a' },
+        { id: 'chair-1', type: 'box', args: [0.04, 0.025, 0.04], position: [-1.0, 2.63, 0], color: '#2D9F6F', label: 'Bar chair 25mm cover' },
+        { id: 'chair-2', type: 'box', args: [0.04, 0.025, 0.04], position: [0, 2.63, 0], color: '#2D9F6F' },
+        { id: 'chair-3', type: 'box', args: [0.04, 0.025, 0.04], position: [1.0, 2.63, 0], color: '#2D9F6F' },
         // Bottom tension bars (3 bars)
-        { id: 'bot-bar-1', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, -0.12], color: '#dc2626', label: 'Bottom tension bars' },
-        { id: 'bot-bar-2', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, 0], color: '#dc2626' },
-        { id: 'bot-bar-3', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, 0.12], color: '#dc2626' },
+        { id: 'bot-bar-1', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, -0.12], color: '#D64545', label: 'Bottom tension bars' },
+        { id: 'bot-bar-2', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, 0], color: '#D64545' },
+        { id: 'bot-bar-3', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 2.66, 0.12], color: '#D64545' },
         // Stirrups — closer near ends (3 positions)
         { id: 'stir-end1', type: 'ring', args: [0.18, 0.2, 4, 1, 0, Math.PI * 2], position: [-1.4, 2.87, 0], rotation: [Math.PI / 2, Math.PI / 4, 0], color: '#f97316', label: 'Stirrups (close @supports)' },
         { id: 'stir-end2', type: 'ring', args: [0.18, 0.2, 4, 1, 0, Math.PI * 2], position: [-1.1, 2.87, 0], rotation: [Math.PI / 2, Math.PI / 4, 0], color: '#f97316' },
@@ -120,8 +120,8 @@ export const beamConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Finished beam (concrete)
         { id: 'beam', type: 'box', args: [3.2, 0.5, 0.44], position: [0, 2.87, 0], color: '#94a3b8', label: 'Finished beam' },
         // Top rebar visible (pre-pour step)
-        { id: 'top-bar-1', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, -0.15], color: '#dc2626', label: 'Top compression bars' },
-        { id: 'top-bar-2', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, 0.15], color: '#dc2626' },
+        { id: 'top-bar-1', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, -0.15], color: '#D64545', label: 'Top compression bars' },
+        { id: 'top-bar-2', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, 0.15], color: '#D64545' },
         // Hanger bars (2 corners)
         { id: 'hanger-1', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, -0.16], color: '#ef4444', opacity: 0.7, transparent: true },
         { id: 'hanger-2', type: 'box', args: [3.1, 0.025, 0.025], position: [0, 3.08, 0.16], color: '#ef4444', opacity: 0.7, transparent: true },

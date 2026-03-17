@@ -29,7 +29,7 @@ export const foundationTypesConfig: ExplodedAssemblyConfig = {
       id: 'ft-iso-rebar',
       label: 'Footing Rebar Mat',
       description: 'Two-way rebar mat in isolated footing resisting bending and punching shear. Critical zone: within 1.5×depth from column face.',
-      geometry: { id: 'ft-iso-rebar-geo', type: 'box', position: [-1.8, -0.06, 0], args: [0.46, 0.02, 0.46], color: '#dc2626', opacity: 0.6, transparent: true },
+      geometry: { id: 'ft-iso-rebar-geo', type: 'box', position: [-1.8, -0.06, 0], args: [0.46, 0.02, 0.46], color: '#D64545', opacity: 0.6, transparent: true },
       explodeOffset: [-1.8, 0, 0],
     },
     // ── COMBINED FOOTING (second) ────────────────────────────────────────────
@@ -75,7 +75,7 @@ export const foundationTypesConfig: ExplodedAssemblyConfig = {
       id: 'ft-strip-rebar',
       label: 'Strip Footing Longitudinal Bars',
       description: 'Longitudinal bars spanning weak zones; transverse bars resist bending. Minimum 2 top + 2 bottom bars.',
-      geometry: { id: 'ft-strip-rebar-geo', type: 'box', position: [0, -0.06, 0], args: [0.02, 0.02, 0.78], color: '#dc2626', opacity: 0.7, transparent: true },
+      geometry: { id: 'ft-strip-rebar-geo', type: 'box', position: [0, -0.06, 0], args: [0.02, 0.02, 0.78], color: '#D64545', opacity: 0.7, transparent: true },
       explodeOffset: [0, 0, 0],
     },
     // ── MAT / RAFT (fourth) ───────────────────────────────────────────────────

@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Lock, Sparkles } from "lucide-react";
+import { Lock, Sparkle } from "@phosphor-icons/react";
+import { SCIcon } from "@/components/graphics/icons/Icon";
 import { Button } from "@/components/ui/button";
 import { useTier } from "@/lib/context/tier-context";
 import type { UserTier } from "@/types/app";
@@ -64,7 +65,7 @@ export function TierGate({
   if (variant === "replace") {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center">
-        <Lock className="h-10 w-10 text-muted-foreground" strokeWidth={1.5} />
+        <SCIcon icon={Lock} size="xl" className="text-muted-foreground" />
         {featureLabel && (
           <h3 className="mt-3 text-base font-semibold text-foreground">
             {featureLabel}
@@ -75,7 +76,7 @@ export function TierGate({
         </p>
         <Link href="/dashboard/settings/billing" className="mt-4">
           <Button size="sm" className="gap-1.5">
-            <Sparkles className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <SCIcon icon={Sparkle} size="xs" />
             {label}
           </Button>
         </Link>
@@ -90,13 +91,13 @@ export function TierGate({
         {children}
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <Lock className="h-6 w-6 text-muted-foreground" strokeWidth={1.5} />
+        <SCIcon icon={Lock} size="lg" className="text-muted-foreground" />
         <p className="mt-1.5 text-xs font-medium text-muted-foreground">
           Requires {tierLabel}
         </p>
         <Link href="/dashboard/settings/billing" className="mt-2 pointer-events-auto">
           <Button size="sm" variant="outline" className="h-7 gap-1 text-[11px]">
-            <Sparkles className="h-3 w-3" strokeWidth={1.5} />
+            <SCIcon icon={Sparkle} size="xs" />
             {label}
           </Button>
         </Link>
@@ -125,9 +126,9 @@ export function TierLockedBadge({ requiredTier, className }: TierLockedBadgeProp
 
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded bg-muted px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground ${className ?? ""}`}
+      className={`inline-flex items-center gap-1 rounded bg-muted px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground ${className ?? ""}`}
     >
-      <Lock className="h-2.5 w-2.5" />
+      <SCIcon icon={Lock} size="xs" />
       {requiredTier.toUpperCase()}
     </span>
   );

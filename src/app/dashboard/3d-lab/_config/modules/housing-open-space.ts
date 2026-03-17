@@ -9,8 +9,8 @@ const HOUSING_STANDARDS: Record<string, { minLot: number; minFloor: number; open
   'PD957-single':    { minLot: 120, minFloor: 42, openSpace: 30, label: 'PD 957 — Single Detached', color: '#3b82f6' },
   'PD957-row':       { minLot: 60,  minFloor: 42, openSpace: 20, label: 'PD 957 — Rowhouse', color: '#6366f1' },
   'BP220-socialize': { minLot: 64,  minFloor: 22, openSpace: 15, label: 'BP 220 — Socialized', color: '#f97316' },
-  'BP220-row':       { minLot: 28,  minFloor: 22, openSpace: 10, label: 'BP 220 — Socialized Rowhouse', color: '#dc2626' },
-  'PD957-condo':     { minLot: 0,   minFloor: 18, openSpace: 35, label: 'PD 957 — Condominium', color: '#16a34a' },
+  'BP220-row':       { minLot: 28,  minFloor: 22, openSpace: 10, label: 'BP 220 — Socialized Rowhouse', color: '#D64545' },
+  'PD957-condo':     { minLot: 0,   minFloor: 18, openSpace: 35, label: 'PD 957 — Condominium', color: '#2D9F6F' },
 }
 
 const parameters: ParameterDef[] = [
@@ -49,10 +49,10 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Lot boundary
   const lotColor = violatesLot ? '#fca5a5' : '#d4d4d8'
   inst.push({ id: 'lot-floor', type: 'box', position: [0, -0.02, 0], args: [lWs, 0.04, lDs], color: '#4d7c0f', opacity: 0.25, transparent: true, label: `Lot: ${lotArea.toFixed(0)} sqm` })
-  inst.push({ id: 'lot-left', type: 'box', position: [-lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#dc2626' : '#71717a' })
-  inst.push({ id: 'lot-right', type: 'box', position: [lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#dc2626' : '#71717a' })
-  inst.push({ id: 'lot-back', type: 'box', position: [0, 0.04, -lDs / 2], args: [lWs, 0.08, 0.04], color: violatesLot ? '#dc2626' : '#71717a' })
-  inst.push({ id: 'lot-front', type: 'box', position: [0, 0.04, lDs / 2], args: [lWs, 0.08, 0.04], color: '#dc2626', label: 'Street' })
+  inst.push({ id: 'lot-left', type: 'box', position: [-lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#D64545' : '#71717a' })
+  inst.push({ id: 'lot-right', type: 'box', position: [lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#D64545' : '#71717a' })
+  inst.push({ id: 'lot-back', type: 'box', position: [0, 0.04, -lDs / 2], args: [lWs, 0.08, 0.04], color: violatesLot ? '#D64545' : '#71717a' })
+  inst.push({ id: 'lot-front', type: 'box', position: [0, 0.04, lDs / 2], args: [lWs, 0.08, 0.04], color: '#D64545', label: 'Street' })
 
   // Setback zones
   inst.push({ id: 'setback-front', type: 'box', position: [0, 0.01, lDs / 2 - frontSB / 2], args: [lWs, 0.02, frontSB], color: '#f97316', opacity: 0.25, transparent: true, label: `${(1.5).toFixed(1)}m SB` })
@@ -64,17 +64,17 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     inst.push({ id: `floor-slab-${s}`, type: 'box', position: [0, s * stH, buildingZ], args: [bA + 0.03, 0.03, bDs + 0.03], color: '#71717a' })
   }
   // Roof
-  inst.push({ id: 'roof', type: 'cone', position: [0, storeys * stH + 0.15, buildingZ], rotation: [0, Math.PI / 4, 0], args: [Math.min(bA, bDs) * 0.8, 0.3, 4], color: '#dc2626' })
+  inst.push({ id: 'roof', type: 'cone', position: [0, storeys * stH + 0.15, buildingZ], rotation: [0, Math.PI / 4, 0], args: [Math.min(bA, bDs) * 0.8, 0.3, 4], color: '#D64545' })
 
   // Open space indicator
   const openA = lotArea - floorA
-  const openColor = violatesOpen ? '#fca5a5' : '#16a34a'
+  const openColor = violatesOpen ? '#fca5a5' : '#2D9F6F'
   const openS = Math.sqrt(openA) * scale
   inst.push({ id: 'open-space', type: 'box', position: [0, 0.005, lDs / 2 - frontSB - openS / 2], args: [Math.min(openS, lWs * 0.8), 0.01, Math.min(openS, lDs * 0.4)], color: openColor, opacity: 0.4, transparent: true, label: `Open: ${openA.toFixed(0)} sqm` })
 
   // Standards comparison bars
-  inst.push({ id: 'lot-req-bar', type: 'box', position: [lWs / 2 + 0.5, std.minLot * 0.003, 0], args: [0.2, std.minLot * 0.006, 0.2], color: violatesLot ? '#dc2626' : '#16a34a', label: `Min Lot: ${std.minLot} sqm` })
-  inst.push({ id: 'floor-req-bar', type: 'box', position: [lWs / 2 + 0.9, std.minFloor * 0.005, 0], args: [0.2, std.minFloor * 0.01, 0.2], color: violatesFloor ? '#dc2626' : '#3b82f6', label: `Min FA: ${std.minFloor} sqm` })
+  inst.push({ id: 'lot-req-bar', type: 'box', position: [lWs / 2 + 0.5, std.minLot * 0.003, 0], args: [0.2, std.minLot * 0.006, 0.2], color: violatesLot ? '#D64545' : '#2D9F6F', label: `Min Lot: ${std.minLot} sqm` })
+  inst.push({ id: 'floor-req-bar', type: 'box', position: [lWs / 2 + 0.9, std.minFloor * 0.005, 0], args: [0.2, std.minFloor * 0.01, 0.2], color: violatesFloor ? '#D64545' : '#3b82f6', label: `Min FA: ${std.minFloor} sqm` })
 
   return inst
 }

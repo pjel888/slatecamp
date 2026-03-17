@@ -1,7 +1,10 @@
+'use client'
+
 // src/app/dashboard/3d-lab/_templates/FloorPlanScene.tsx
 import { useMemo } from 'react'
 import { Line, Html } from '@react-three/drei'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
 import type { FloorPlanConfig } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
@@ -59,7 +62,7 @@ function RoomPlane({
         <Html position={[cx, 0.02, cz]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[8px] font-bold text-zinc-600 whitespace-nowrap"
+            className="text-[11px] font-bold text-zinc-600 whitespace-nowrap"
           >
             {label}
           </div>
@@ -96,7 +99,7 @@ function PathLine({
     maxDistance !== undefined &&
     actualDistance > maxDistance
 
-  const lineColor = isViolation ? '#dc2626' : color
+  const lineColor = isViolation ? '#D64545' : color
 
   const mid = midpoint(points)
 
@@ -111,7 +114,7 @@ function PathLine({
         <Html position={[mid[0], 0.05, mid[1]]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className={`text-[9px] font-bold whitespace-nowrap px-1 py-0.5 rounded ${
+            className={`text-[11px] font-bold whitespace-nowrap px-1 py-0.5 rounded ${
               isViolation
                 ? 'bg-red-100 text-red-700 border border-red-300'
                 : 'bg-green-100 text-green-700 border border-green-300'
@@ -125,7 +128,7 @@ function PathLine({
         <Html position={[mid[0], 0.05, mid[1]]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[8px] font-medium text-zinc-500 whitespace-nowrap"
+            className="text-[11px] font-medium text-zinc-500 whitespace-nowrap"
           >
             {label}
           </div>
@@ -157,7 +160,7 @@ function Fixture({
       {type === 'exit' && (
         <mesh position={[x, 0.025, z]}>
           <boxGeometry args={[0.5, 0.05, 0.3]} />
-          <meshStandardMaterial color={color || '#16a34a'} />
+          <meshStandardMaterial color={color || '#2D9F6F'} />
         </mesh>
       )}
 
@@ -165,13 +168,13 @@ function Fixture({
         <>
           <mesh position={[x, 0.005, z]}>
             <cylinderGeometry args={[0.1, 0.1, 0.01, 16]} />
-            <meshStandardMaterial color={color || '#2563eb'} />
+            <meshStandardMaterial color={color || '#3B6B9C'} />
           </mesh>
           {coverageRadius && (
             <mesh position={[x, 0.002, z]} rotation={[-Math.PI / 2, 0, 0]}>
               <ringGeometry args={[coverageRadius - 0.05, coverageRadius, 32]} />
               <meshStandardMaterial
-                color={color || '#2563eb'}
+                color={color || '#3B6B9C'}
                 opacity={0.15}
                 transparent
               />
@@ -191,7 +194,7 @@ function Fixture({
         <Html position={[x, 0.1, z]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[7px] font-bold text-zinc-500 whitespace-nowrap"
+            className="text-[11px] font-bold text-zinc-500 whitespace-nowrap"
           >
             {label}
           </div>
@@ -215,7 +218,7 @@ function DeadEndZone({
   return (
     <mesh position={[cx, 0.003, cz]} rotation={[-Math.PI / 2, 0, 0]}>
       <planeGeometry args={[w, d]} />
-      <meshStandardMaterial color="#dc2626" opacity={0.25} transparent />
+      <meshStandardMaterial color="#D64545" opacity={0.25} transparent />
     </mesh>
   )
 }
@@ -345,13 +348,13 @@ export function FloorPlanScene({
               style={{ pointerEvents: 'none' }}
               className="flex items-start gap-1 bg-red-50 border border-red-300 rounded px-1.5 py-1 shadow-sm whitespace-nowrap -translate-x-1/2"
             >
-              <AlertTriangle className="h-3 w-3 text-red-600 shrink-0 mt-px" />
+              <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-px" />
               <div>
-                <div className="text-[9px] font-bold text-red-700">
+                <div className="text-[11px] font-bold text-red-700">
                   {v.message}
                 </div>
                 {v.codeCitation && (
-                  <div className="text-[8px] text-red-500">
+                  <div className="text-[11px] text-red-500">
                     {v.codeCitation}
                   </div>
                 )}
@@ -370,11 +373,11 @@ export function FloorPlanScene({
               style={{ pointerEvents: 'none' }}
               className="bg-white/90 backdrop-blur-sm border border-zinc-200 rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
             >
-              <div className="text-[9px] font-bold text-zinc-700">
+              <div className="text-[11px] font-bold text-zinc-700">
                 {a.label}
               </div>
               {a.codeCitation && (
-                <div className="text-[8px] text-zinc-400">
+                <div className="text-[11px] text-zinc-400">
                   {a.codeCitation}
                 </div>
               )}

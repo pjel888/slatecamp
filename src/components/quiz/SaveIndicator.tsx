@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Check, Wifi, WifiOff, Loader2 } from 'lucide-react'
+import { CheckCircle, WifiHigh, WifiSlash, CircleNotch } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 type SaveStatus = 'idle' | 'saving' | 'saved' | 'error' | 'offline'
@@ -30,7 +31,7 @@ export function SaveIndicator({ status }: SaveIndicatorProps) {
   return (
     <div
       className={cn(
-        'flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest transition-opacity duration-300',
+        'flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest transition-opacity duration-300',
         status === 'saving' && 'text-zinc-400',
         status === 'saved' && 'text-green-600',
         status === 'error' && 'text-red-500',
@@ -40,18 +41,18 @@ export function SaveIndicator({ status }: SaveIndicatorProps) {
       aria-label={
         status === 'saving' ? 'Saving...' :
         status === 'saved' ? 'Saved' :
-        status === 'error' ? 'Save failed' :
+        status === 'error' ? 'Could not save — will retry' :
         'Offline — will sync when reconnected'
       }
     >
-      {status === 'saving' && <Loader2 className="h-3 w-3 animate-spin" />}
-      {status === 'saved' && <Check className="h-3 w-3" />}
-      {status === 'error' && <WifiOff className="h-3 w-3" />}
-      {status === 'offline' && <WifiOff className="h-3 w-3" />}
+      {status === 'saving' && <SCIcon icon={CircleNotch} size="xs" className="animate-spin" />}
+      {status === 'saved' && <SCIcon icon={CheckCircle} size="xs" />}
+      {status === 'error' && <SCIcon icon={WifiSlash} size="xs" />}
+      {status === 'offline' && <SCIcon icon={WifiSlash} size="xs" />}
       <span>
         {status === 'saving' && 'Saving'}
         {status === 'saved' && 'Saved'}
-        {status === 'error' && 'Save failed'}
+        {status === 'error' && 'Retrying save'}
         {status === 'offline' && 'Offline'}
       </span>
     </div>

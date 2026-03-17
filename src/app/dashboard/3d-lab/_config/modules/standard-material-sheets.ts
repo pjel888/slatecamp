@@ -56,7 +56,7 @@ export const standardMaterialSheetsConfig: ExplodedAssemblyConfig = {
       id: 'sms-ply-label',
       label: 'Plywood Sheet Label',
       description: 'All plywood sheets: 1220mm × 2440mm nominal. Actual size may be 1200×2400mm. Philippine standard is PS 1 (Softwood) and PNS 196 (Hardwood).',
-      geometry: { id: 'sms-ply-label-geo', type: 'box', position: [-0.6, -0.02, 0], args: [0.5, 0.01, 0.26], color: '#d97706' },
+      geometry: { id: 'sms-ply-label-geo', type: 'box', position: [-0.6, -0.02, 0], args: [0.5, 0.01, 0.26], color: '#D4951A' },
       explodeOffset: [-0.6, -0.1, 0],
     },
     // ── GYPSUM BOARD STACK (right) ───────────────────────────────────────────
@@ -87,7 +87,7 @@ export const standardMaterialSheetsConfig: ExplodedAssemblyConfig = {
       id: 'sms-gyp-moisture',
       label: 'Moisture-Resistant Gypsum (MR)',
       description: 'Green board (MR) 12.5mm — moisture-resistant face for wet areas. 1220×2440mm. Silicone-treated core and paper.',
-      geometry: { id: 'sms-gyp-moisture-geo', type: 'box', position: [0.6, 0.0125, 0.28], args: [0.488, 0.0125, 0.244], color: '#16a34a', opacity: 0.8, transparent: true },
+      geometry: { id: 'sms-gyp-moisture-geo', type: 'box', position: [0.6, 0.0125, 0.28], args: [0.488, 0.0125, 0.244], color: '#2D9F6F', opacity: 0.8, transparent: true },
       explodeOffset: [0.6, 0.45, 0.3],
     },
     {

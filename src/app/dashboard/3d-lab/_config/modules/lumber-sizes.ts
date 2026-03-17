@@ -46,14 +46,14 @@ export const lumberSizesConfig: ExplodedAssemblyConfig = {
       id: 'ls-2x8',
       label: '2×8 (50×200mm nominal)',
       description: '2×8″ nominal (50×200mm). Heavy rafters, ridge beams, floor joists for longer spans.',
-      geometry: { id: 'ls-2x8-geo', type: 'box', position: [-0.2, 0, 0], args: [0.05, 0.2, 0.24], color: '#d97706' },
+      geometry: { id: 'ls-2x8-geo', type: 'box', position: [-0.2, 0, 0], args: [0.05, 0.2, 0.24], color: '#D4951A' },
       explodeOffset: [-0.2, 0, 0],
     },
     {
       id: 'ls-2x10',
       label: '2×10 (50×250mm nominal)',
       description: '2×10″ nominal (50×250mm). Long-span floor joists and roof rafters.',
-      geometry: { id: 'ls-2x10-geo', type: 'box', position: [0.1, 0, 0], args: [0.05, 0.25, 0.24], color: '#f59e0b' },
+      geometry: { id: 'ls-2x10-geo', type: 'box', position: [0.1, 0, 0], args: [0.05, 0.25, 0.24], color: '#D4951A' },
       explodeOffset: [0.1, 0, 0],
     },
     {

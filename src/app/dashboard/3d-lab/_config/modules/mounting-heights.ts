@@ -35,27 +35,27 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const outletCount = Math.floor(rW / 1.8) + 1
   for (let o = 0; o < outletCount; o++) {
     const ox = -(rW / 2) + o * (rW / (outletCount - 1 || 1))
-    inst.push({ id: `outlet-${o}`, type: 'box', position: [ox, outH, -1 - wallT], args: [0.08, 0.08, 0.02], color: outViolated ? '#dc2626' : '#f59e0b' })
+    inst.push({ id: `outlet-${o}`, type: 'box', position: [ox, outH, -1 - wallT], args: [0.08, 0.08, 0.02], color: outViolated ? '#D64545' : '#D4951A' })
     // Spacing indicator
     if (showSpacing && o < outletCount - 1) {
       const nextX = -(rW / 2) + (o + 1) * (rW / (outletCount - 1 || 1))
       const midX = (ox + nextX) / 2
       const spacingDist = nextX - ox
-      inst.push({ id: `spacing-${o}`, type: 'box', position: [midX, outH, -0.85], args: [spacingDist, 0.01, 0.01], color: spacingDist <= 1.8 ? '#16a34a' : '#dc2626', label: `${(spacingDist).toFixed(1)}m` })
+      inst.push({ id: `spacing-${o}`, type: 'box', position: [midX, outH, -0.85], args: [spacingDist, 0.01, 0.01], color: spacingDist <= 1.8 ? '#2D9F6F' : '#D64545', label: `${(spacingDist).toFixed(1)}m` })
     }
   }
   // Outlet height line
-  inst.push({ id: 'outlet-h-line', type: 'box', position: [-(rW / 2) - 0.3, outH / 2, -1], args: [0.02, outH, 0.02], color: outViolated ? '#dc2626' : '#3b82f6', label: `${(outH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'outlet-h-line', type: 'box', position: [-(rW / 2) - 0.3, outH / 2, -1], args: [0.02, outH, 0.02], color: outViolated ? '#D64545' : '#3b82f6', label: `${(outH * 1000).toFixed(0)}mm` })
 
   // Switches
-  inst.push({ id: 'switch-1', type: 'box', position: [-(rW / 2) + 0.2, swH, -1 - wallT], args: [0.08, 0.1, 0.02], color: swViolated ? '#dc2626' : '#3b82f6' })
-  inst.push({ id: 'switch-2', type: 'box', position: [-(rW / 2) + 0.35, swH, -1 - wallT], args: [0.08, 0.1, 0.02], color: swViolated ? '#dc2626' : '#3b82f6' })
-  inst.push({ id: 'switch-h-line', type: 'box', position: [-(rW / 2) - 0.6, swH / 2, -1], args: [0.02, swH, 0.02], color: swViolated ? '#dc2626' : '#3b82f6', label: `${(swH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'switch-1', type: 'box', position: [-(rW / 2) + 0.2, swH, -1 - wallT], args: [0.08, 0.1, 0.02], color: swViolated ? '#D64545' : '#3b82f6' })
+  inst.push({ id: 'switch-2', type: 'box', position: [-(rW / 2) + 0.35, swH, -1 - wallT], args: [0.08, 0.1, 0.02], color: swViolated ? '#D64545' : '#3b82f6' })
+  inst.push({ id: 'switch-h-line', type: 'box', position: [-(rW / 2) - 0.6, swH / 2, -1], args: [0.02, swH, 0.02], color: swViolated ? '#D64545' : '#3b82f6', label: `${(swH * 1000).toFixed(0)}mm` })
 
   // Panel board
   inst.push({ id: 'panel-box', type: 'box', position: [rW / 2 - 0.25, (panH - 0.4) / 2, -1 - wallT], args: [0.35, panH - 0.4, 0.06], color: '#52525b' })
-  inst.push({ id: 'panel-handle', type: 'box', position: [rW / 2 - 0.25, panH, -1 - wallT - 0.01], args: [0.15, 0.04, 0.01], color: panViolated ? '#dc2626' : '#16a34a', label: `Handle: ${(panH * 1000).toFixed(0)}mm` })
-  inst.push({ id: 'panel-h-line', type: 'box', position: [rW / 2 + 0.3, panH / 2, -1], args: [0.02, panH, 0.02], color: panViolated ? '#dc2626' : '#3b82f6', label: `${(panH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'panel-handle', type: 'box', position: [rW / 2 - 0.25, panH, -1 - wallT - 0.01], args: [0.15, 0.04, 0.01], color: panViolated ? '#D64545' : '#2D9F6F', label: `Handle: ${(panH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'panel-h-line', type: 'box', position: [rW / 2 + 0.3, panH / 2, -1], args: [0.02, panH, 0.02], color: panViolated ? '#D64545' : '#3b82f6', label: `${(panH * 1000).toFixed(0)}mm` })
 
   // Person for scale
   inst.push({ id: 'person', type: 'cylinder', position: [0, 0.85, 0], args: [0.2, 0.2, 1.7, 8], color: '#6366f1', opacity: 0.4, transparent: true })

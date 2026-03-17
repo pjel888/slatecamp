@@ -47,12 +47,12 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
   const missions: DailyMission[] = [
     {
       id: 'daily-drill',
-      title: 'Daily Drill',
+      title: 'Daily Practice',
       description: 'Complete one Camp Mode session to maintain your streak.',
       isCompleted: quizCompleted,
       rewardType: 'readiness',
       rewardValue: 2,
-      actionLabel: 'Start Drill',
+      actionLabel: 'Start Practice',
       actionHref: '/dashboard/testing?mode=camp',
     },
     {

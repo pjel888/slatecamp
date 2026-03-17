@@ -2,7 +2,8 @@
 
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Search } from 'lucide-react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Input } from '@/components/ui/input'
 
 export function WikiSearchBar() {
@@ -21,13 +22,13 @@ export function WikiSearchBar() {
 
   return (
     <form onSubmit={handleSubmit} className="relative">
-      <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
+      <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
       <Input
         type="search"
         placeholder="Search wiki..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="pl-9 h-9 text-[13px] focus-visible:ring-2 focus-visible:ring-blue-500/30 focus-visible:ring-offset-2"
+        className="pl-9 h-9 text-[13px] focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2"
         disabled={isPending}
       />
     </form>

@@ -45,7 +45,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     rebarPositions.push([-inner.x + t * 2 * inner.x, inner.z])
   }
   rebarPositions.slice(0, nBars).forEach(([rx, rz], i) => {
-    inst.push({ id: `rebar-${i}`, type: 'cylinder', position: [rx, cH / 2, rz], args: [dBar / 2, dBar / 2, cH - 0.05, 8], color: '#dc2626' })
+    inst.push({ id: `rebar-${i}`, type: 'cylinder', position: [rx, cH / 2, rz], args: [dBar / 2, dBar / 2, cH - 0.05, 8], color: '#D64545' })
   })
 
   // Ties (stirrups every 200mm)
@@ -59,7 +59,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Axial load arrow (scale with load)
   const arrowH = Math.min(0.3 + axial / 5000, 1.0)
-  inst.push({ id: 'axial-arrow', type: 'cone', position: [0, cH + 0.3 + arrowH, 0], rotation: [Math.PI, 0, 0], args: [0.1, arrowH, 8], color: '#dc2626' })
+  inst.push({ id: 'axial-arrow', type: 'cone', position: [0, cH + 0.3 + arrowH, 0], rotation: [Math.PI, 0, 0], args: [0.1, arrowH, 8], color: '#D64545' })
 
   // Cover dimension indicator
   inst.push({ id: 'cover-indicator', type: 'box', position: [cW / 2 - cover / 2, cH * 0.75, 0], args: [cover, 0.02, cD * 0.8], color: '#3b82f6', opacity: 0.5, transparent: true, label: '40mm cover' })

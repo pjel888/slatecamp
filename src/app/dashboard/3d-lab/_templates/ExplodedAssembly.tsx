@@ -3,7 +3,8 @@
 // src/app/dashboard/3d-lab/_templates/ExplodedAssembly.tsx
 import { useMemo, useCallback } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X } from 'lucide-react'
+import { X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { createModuleStore } from '../_stores/createModuleStore'
 import { ExplodedAssemblyScene } from './ExplodedAssemblyScene'
@@ -65,10 +66,10 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 w-full max-w-xs px-4">
         <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
+            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
               Explode
             </span>
-            <span className="text-[10px] font-bold text-zinc-600 tabular-nums">
+            <span className="text-[11px] font-bold text-zinc-600 tabular-nums">
               {Math.round(explode * 100)}%
             </span>
           </div>
@@ -79,7 +80,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             step={0.01}
             value={explode}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-blue-600"
+            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[#3B6B9C]"
           />
         </div>
       </div>
@@ -98,7 +99,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
+                  <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
                     Part
                   </span>
                   <h3 className="text-sm font-bold text-zinc-900 leading-snug">
@@ -109,7 +110,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
                   onClick={handleClosePanel}
                   className="shrink-0 rounded-sm p-1 hover:bg-zinc-100 transition-colors"
                 >
-                  <X className="h-3.5 w-3.5 text-zinc-400" />
+                  <SCIcon icon={X} size="xs" className="text-zinc-400" />
                 </button>
               </div>
 
@@ -120,14 +121,14 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
               )}
 
               {activePart.codeCitation && (
-                <div className="text-[10px] text-zinc-400 mb-2">
+                <div className="text-[11px] text-zinc-400 mb-2">
                   {activePart.codeCitation}
                 </div>
               )}
 
               {/* Material & Geometry info */}
               <div className="flex flex-wrap gap-1.5">
-                <span className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[9px] font-bold text-zinc-600 uppercase tracking-wide">
+                <span className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[11px] font-bold text-zinc-600 uppercase tracking-wide">
                   {activePart.geometry.type}
                 </span>
               </div>

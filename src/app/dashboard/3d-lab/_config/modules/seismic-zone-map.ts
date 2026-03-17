@@ -31,13 +31,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Ocean base
   inst.push({ id: 'ocean', type: 'box', position: [0, -0.1, 0], args: [6, 0.2, 8], color: '#0ea5e9', opacity: 0.3, transparent: true })
   // Ground
-  inst.push({ id: 'ground', type: 'box', position: [0, -0.05, 0], args: [6, 0.05, 8], color: '#16a34a', opacity: 0.2, transparent: true })
+  inst.push({ id: 'ground', type: 'box', position: [0, -0.05, 0], args: [6, 0.05, 8], color: '#2D9F6F', opacity: 0.2, transparent: true })
 
   // Island regions
   REGIONS.forEach((region, i) => {
     const zone4 = region.zone === 4
     const isHighlighted = highlight === 'All' || (highlight === 'Zone 4' && zone4) || (highlight === 'Zone 2' && !zone4)
-    const color = zone4 ? '#dc2626' : '#f97316'
+    const color = zone4 ? '#D64545' : '#f97316'
     const h = zone4 ? 0.4 : 0.2
     inst.push({ id: `region-${i}`, type: 'box', position: [region.x, h / 2, region.z], args: [region.size[0], h, region.size[1]], color, opacity: isHighlighted ? 0.85 : 0.3, transparent: !isHighlighted, label: region.name })
     // Zone label
@@ -51,12 +51,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     // Marikina Fault
     inst.push({ id: 'marikina-fault', type: 'box', position: [0.1, 0.25, 0.8], rotation: [0, 0.15, 0], args: [0.04, 0.3, 1.8], color: '#7c3aed', opacity: 0.7, transparent: true })
     // Philippine Fault System (Luzon-Visayas-Mindanao)
-    inst.push({ id: 'pfs', type: 'box', position: [0.8, 0.25, 1.0], rotation: [0, -0.15, 0], args: [0.06, 0.4, 6.0], color: '#dc2626', opacity: 0.5, transparent: true, label: 'Philippine Fault' })
+    inst.push({ id: 'pfs', type: 'box', position: [0.8, 0.25, 1.0], rotation: [0, -0.15, 0], args: [0.06, 0.4, 6.0], color: '#D64545', opacity: 0.5, transparent: true, label: 'Philippine Fault' })
   }
 
   // Z-Factor comparison bars
   if (showZ) {
-    inst.push({ id: 'z4-bar', type: 'box', position: [2.5, 0.6, -1.5], args: [0.4, 1.2, 0.4], color: '#dc2626', label: 'Z=0.40' })
+    inst.push({ id: 'z4-bar', type: 'box', position: [2.5, 0.6, -1.5], args: [0.4, 1.2, 0.4], color: '#D64545', label: 'Z=0.40' })
     inst.push({ id: 'z2-bar', type: 'box', position: [2.5, 0.3, -0.5], args: [0.4, 0.6, 0.4], color: '#f97316', label: 'Z=0.20' })
     inst.push({ id: 'z-base', type: 'box', position: [2.5, 0, -1.0], args: [0.5, 0.05, 1.2], color: '#52525b' })
   }

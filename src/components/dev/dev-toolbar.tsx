@@ -4,18 +4,20 @@ import { useState, useCallback, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import {
   Wrench,
-  ChevronDown,
-  ChevronUp,
+  CaretDown,
+  CaretUp,
   X,
-  ExternalLink,
-  Zap,
-  Box,
+  ArrowSquareOut,
+  Lightning,
+  Cube,
   Brain,
-  RefreshCcw,
-  Wifi,
-  WifiOff,
+  ArrowClockwise,
+  WifiHigh,
+  WifiSlash,
   Terminal,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'
@@ -41,10 +43,10 @@ const TIER_CONFIG: Record<UserTier, { label: string; color: string }> = {
 
 const CONN_CONFIG: Record<
   DevConnectionState,
-  { label: string; color: string; icon: typeof Wifi }
+  { label: string; color: string; icon: PhosphorIcon }
 > = {
-  local: { label: 'Local', color: 'text-purple-500', icon: WifiOff },
-  connected: { label: 'Connected', color: 'text-emerald-500', icon: Wifi },
+  local: { label: 'Local', color: 'text-purple-500', icon: WifiSlash },
+  connected: { label: 'Connected', color: 'text-emerald-500', icon: WifiHigh },
 }
 
 export function DevToolbar({
@@ -136,7 +138,7 @@ export function DevToolbar({
         className='z-9999 flex h-8 w-8 cursor-grab active:cursor-grabbing items-center justify-center rounded-full border border-border bg-background/95 shadow-lg backdrop-blur-sm transition-colors hover:bg-muted select-none'
         title='Show dev toolbar (drag to move)'
       >
-        <Wrench className='h-3.5 w-3.5 text-muted-foreground' />
+        <SCIcon icon={Wrench} size="xs" className='text-muted-foreground' />
       </button>
     )
   }
@@ -157,34 +159,34 @@ export function DevToolbar({
           onPointerDown={onDrag}
           className='cursor-grab active:cursor-grabbing flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl'
         >
-          <Wrench className='h-3.5 w-3.5 text-muted-foreground' />
-          <ConnIcon className={`h-3 w-3 ${connConfig.color}`} />
+          <SCIcon icon={Wrench} size="xs" className='text-muted-foreground' />
+          <SCIcon icon={ConnIcon} size="xs" className={connConfig.color} />
           <span
-            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none tracking-wider text-white ${tierConfig.color}`}
+            className={`inline-flex items-center rounded-full px-1.5 py-0.5 text-[11px] font-bold uppercase leading-none tracking-wider text-white ${tierConfig.color}`}
           >
             {tierConfig.label}
           </span>
           {isImpersonating && activePresetId && (
-            <span className='inline-flex items-center rounded-full bg-amber-500/20 px-1.5 py-0.5 text-[9px] font-semibold text-amber-500'>
+            <span className='inline-flex items-center rounded-full bg-amber-500/20 px-1.5 py-0.5 text-[11px] font-semibold text-amber-500'>
               {activePresetId.replace(/_/g, ' ')}
             </span>
           )}
-          <ChevronUp className='h-3 w-3 text-muted-foreground' />
+          <SCIcon icon={CaretUp} size="xs" className='text-muted-foreground' />
         </button>
       )}
 
       {/* Expanded panel */}
       {open && (
-        <div className='absolute bottom-full right-0 mb-2 w-72 overflow-hidden rounded-xl border border-border bg-background/95 shadow-2xl backdrop-blur-sm'>
+        <div className='absolute bottom-full right-0 mb-2 w-72 overflow-hidden rounded-lg border border-border bg-background/95 shadow-lg backdrop-blur-sm'>
           {/* Header */}
           <div className='flex items-center justify-between border-b border-border px-3 py-2'>
             <div className='flex items-center gap-2'>
-              <Wrench className='h-3.5 w-3.5 text-muted-foreground' />
+              <SCIcon icon={Wrench} size="xs" className='text-muted-foreground' />
               <span className='text-xs font-semibold text-foreground'>
                 Developer Mode
               </span>
               {saving && (
-                <span className='text-[10px] text-muted-foreground animate-pulse'>
+                <span className='text-[11px] text-muted-foreground animate-pulse'>
                   saving...
                 </span>
               )}
@@ -195,7 +197,7 @@ export function DevToolbar({
                 className='rounded p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground'
                 title='Collapse'
               >
-                <ChevronDown className='h-3.5 w-3.5' />
+                <SCIcon icon={CaretDown} size="xs" />
               </button>
               <button
                 onClick={() => {
@@ -205,18 +207,18 @@ export function DevToolbar({
                 className='rounded p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground'
                 title='Hide toolbar'
               >
-                <X className='h-3.5 w-3.5' />
+                <SCIcon icon={X} size="xs" />
               </button>
             </div>
           </div>
 
           {/* Connection State (read-only) */}
           <div className='border-b border-border px-3 py-2.5'>
-            <span className='text-[10px] font-medium uppercase tracking-wider text-muted-foreground'>
+            <span className='text-[11px] font-medium uppercase tracking-wider text-muted-foreground'>
               Connection
             </span>
             <p className='mt-1 flex items-center gap-1.5 text-[11px]'>
-              <ConnIcon className={`h-3 w-3 ${connConfig.color}`} />
+              <SCIcon icon={ConnIcon} size="xs" className={connConfig.color} />
               <span className='font-medium'>{connConfig.label}</span>
               <span className='text-muted-foreground'>
                 — {isLocal ? 'mock data' : 'live Supabase'}
@@ -226,7 +228,7 @@ export function DevToolbar({
 
           {/* Tier Switcher */}
           <div className='border-b border-border px-3 py-2.5'>
-            <span className='text-[10px] font-medium uppercase tracking-wider text-muted-foreground'>
+            <span className='text-[11px] font-medium uppercase tracking-wider text-muted-foreground'>
               Tier
             </span>
             <div className='mt-1.5 grid grid-cols-2 gap-1'>
@@ -252,7 +254,7 @@ export function DevToolbar({
                 )
               })}
             </div>
-            <p className='mt-1.5 text-[10px] text-muted-foreground'>
+            <p className='mt-1.5 text-[11px] text-muted-foreground'>
               {flags.simulatedTier
                 ? `Simulating ${effectiveTier} (DB: ${currentTier})`
                 : `Using ${isLocal ? 'default (max)' : `DB tier (${currentTier})`}`}
@@ -261,12 +263,12 @@ export function DevToolbar({
 
           {/* Feature gates */}
           <div className='border-b border-border px-3 py-2.5'>
-            <span className='text-[10px] font-medium uppercase tracking-wider text-muted-foreground'>
+            <span className='text-[11px] font-medium uppercase tracking-wider text-muted-foreground'>
               Feature Gates
             </span>
             <div className='mt-1.5 flex flex-col gap-1.5'>
               {[
-                { key: 'bypass3dGate' as const, label: '3D Lab', icon: Box },
+                { key: 'bypass3dGate' as const, label: '3D Lab', icon: Cube },
                 {
                   key: 'bypassAiGate' as const,
                   label: 'AI Features',
@@ -275,16 +277,16 @@ export function DevToolbar({
                 {
                   key: 'bypassSrsGate' as const,
                   label: 'SRS Review',
-                  icon: Zap,
+                  icon: Lightning,
                 },
-              ].map(({ key, label, icon: Icon }) => (
+              ].map(({ key, label, icon: GateIcon }) => (
                 <button
                   key={key}
                   onClick={() => toggleGate(key)}
                   className='flex items-center justify-between rounded-sm px-2 py-1 transition-colors hover:bg-muted'
                 >
                   <span className='flex items-center gap-1.5 text-[11px] text-foreground'>
-                    <Icon className='h-3 w-3 text-muted-foreground' />
+                    <SCIcon icon={GateIcon} size="xs" className='text-muted-foreground' />
                     {label}
                   </span>
                   <span
@@ -301,18 +303,18 @@ export function DevToolbar({
           <div className='flex items-center justify-between px-3 py-2'>
             <button
               onClick={resetAll}
-              className='flex items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground'
+              className='flex items-center gap-1 text-[11px] text-muted-foreground transition-colors hover:text-foreground'
             >
-              <RefreshCcw className='h-3 w-3' />
+              <SCIcon icon={ArrowClockwise} size="xs" />
               Reset
             </button>
             <a
               href='/dashboard/developer'
-              className='flex items-center gap-1 text-[10px] text-muted-foreground transition-colors hover:text-foreground'
+              className='flex items-center gap-1 text-[11px] text-muted-foreground transition-colors hover:text-foreground'
             >
-              <Terminal className='h-3 w-3' />
+              <SCIcon icon={Terminal} size="xs" />
               Dev Console
-              <ExternalLink className='h-3.5 w-3.5' />
+              <SCIcon icon={ArrowSquareOut} size="xs" />
             </a>
           </div>
         </div>

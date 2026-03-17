@@ -32,37 +32,37 @@ const PATHS: PathDef[] = [
     id: 'detection-loop-1',
     label: 'Detection Circuit Loop 1',
     points: [[1, 1], [21, 1], [21, 13], [1, 13], [1, 1]],
-    color: '#f59e0b',
+    color: '#D4951A',
     width: 2,
   },
   {
     id: 'detection-loop-2',
     label: 'Detection Circuit Loop 2',
     points: [[1, 15], [1, 28], [21, 28], [21, 15]],
-    color: '#d97706',
+    color: '#D4951A',
     width: 2,
   },
 ]
 
 const FIXTURES: FixtureDef[] = [
   // Open office smoke detectors (9.1m grid)
-  { id: 'sd-1', label: 'Smoke Detector', type: 'custom', position: [3.5, 3.5], color: '#f59e0b', description: 'Coverage: 84 sqm max', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-2', label: 'Smoke Detector', type: 'custom', position: [11, 3.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-3', label: 'Smoke Detector', type: 'custom', position: [18.5, 3.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-4', label: 'Smoke Detector', type: 'custom', position: [3.5, 10.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-5', label: 'Smoke Detector', type: 'custom', position: [11, 10.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-6', label: 'Smoke Detector', type: 'custom', position: [18.5, 10.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-1', label: 'Smoke Detector', type: 'custom', position: [3.5, 3.5], color: '#D4951A', description: 'Coverage: 84 sqm max', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-2', label: 'Smoke Detector', type: 'custom', position: [11, 3.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-3', label: 'Smoke Detector', type: 'custom', position: [18.5, 3.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-4', label: 'Smoke Detector', type: 'custom', position: [3.5, 10.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-5', label: 'Smoke Detector', type: 'custom', position: [11, 10.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-6', label: 'Smoke Detector', type: 'custom', position: [18.5, 10.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
   // Conference rooms
-  { id: 'sd-7', label: 'Smoke Detector', type: 'custom', position: [5, 18], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-8', label: 'Smoke Detector', type: 'custom', position: [16.5, 18], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-7', label: 'Smoke Detector', type: 'custom', position: [5, 18], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-8', label: 'Smoke Detector', type: 'custom', position: [16.5, 18], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
   // Corridor
-  { id: 'sd-9', label: 'Smoke Detector', type: 'custom', position: [6, 22.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'sd-10', label: 'Smoke Detector', type: 'custom', position: [16, 22.5], color: '#f59e0b', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-9', label: 'Smoke Detector', type: 'custom', position: [6, 22.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'sd-10', label: 'Smoke Detector', type: 'custom', position: [16, 22.5], color: '#D4951A', codeCitation: 'RA 9514 / NFPA 72' },
   // Kitchen — heat detector (not smoke due to cooking fumes)
-  { id: 'hd-1', label: 'Heat Detector (Kitchen)', type: 'custom', position: [4, 26], color: '#dc2626', description: 'Heat detector (not smoke) in kitchen areas', codeCitation: 'RA 9514 / NFPA 72' },
+  { id: 'hd-1', label: 'Heat Detector (Kitchen)', type: 'custom', position: [4, 26], color: '#D64545', description: 'Heat detector (not smoke) in kitchen areas', codeCitation: 'RA 9514 / NFPA 72' },
   // Server room — very early warning
   { id: 'vsd-1', label: 'VESDA / Early Warning (Server)', type: 'custom', position: [15.5, 26], color: '#7c3aed', description: 'Very Early Smoke Detection Apparatus', codeCitation: 'RA 9514 / NFPA 72' },
-  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [11, 21], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [11, 21], color: '#2D9F6F', codeCitation: 'RA 9514' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

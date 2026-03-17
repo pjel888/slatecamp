@@ -151,7 +151,7 @@ function geometry(
 
   const offsetZ = ((ctrl.setbackFront - ctrl.setbackRear) / 2) * s
 
-  const buildColor = overBHL || overFAR ? '#dc2626' : '#2563eb'
+  const buildColor = overBHL || overFAR ? '#D64545' : '#3B6B9C'
 
   const instructions: GeometryInstruction[] = []
 
@@ -223,7 +223,7 @@ function geometry(
       type: 'box',
       position: [0, i * floorH * s + 0.01, -offsetZ],
       args: [bw, 0.003, bd],
-      color: '#1d4ed8',
+      color: '#2F5A85',
       opacity: 0.5,
       transparent: true,
     })
@@ -236,7 +236,7 @@ function geometry(
     type: 'box',
     position: [0, bhlH + 0.01, 0],
     args: [lw * 1.15, 0.004, 0.004],
-    color: overBHL ? '#dc2626' : '#16a34a',
+    color: overBHL ? '#D64545' : '#2D9F6F',
   })
 
   // 6. Max FAR ghost volume (if building exceeds it)
@@ -248,7 +248,7 @@ function geometry(
       type: 'box',
       position: [0, maxH / 2 + 0.01, -offsetZ],
       args: [bw + 0.01, maxH, bd + 0.01],
-      color: '#16a34a',
+      color: '#2D9F6F',
       opacity: 0.15,
       transparent: true,
     })

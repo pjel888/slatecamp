@@ -1,6 +1,7 @@
 'use client'
 
-import { FileText, LayoutTemplate, AlertCircle } from 'lucide-react'
+import { FileText, SquaresFour, Warning, type Icon as PhosphorIcon } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { NoteType } from '@/types/app'
 
@@ -8,7 +9,7 @@ const TEMPLATES: {
   id: NoteType
   label: string
   title: string
-  icon: React.ComponentType<{ className?: string }>
+  icon: PhosphorIcon
 }[] = [
   {
     id: 'quick_capture',
@@ -20,13 +21,13 @@ const TEMPLATES: {
     id: 'cornell',
     label: 'Cornell',
     title: 'Cues · Notes · Summary',
-    icon: LayoutTemplate,
+    icon: SquaresFour,
   },
   {
     id: 'gap_analysis',
     label: 'Gap',
     title: 'Why I was wrong — available on quiz questions',
-    icon: AlertCircle,
+    icon: Warning,
   },
 ]
 
@@ -53,13 +54,13 @@ export function TemplatePicker({ value, onChange, disableGap }: TemplatePickerPr
             className={cn(
               'flex flex-1 flex-col items-center gap-1 rounded-md border px-2 py-2 text-center transition-all duration-150',
               active
-                ? 'border-blue-600 bg-blue-50 text-blue-700'
+                ? 'border-primary bg-[#F0F5FA] text-[#2F5A85]'
                 : 'border-zinc-200 bg-white text-zinc-400 hover:border-zinc-300 hover:bg-zinc-50 hover:text-zinc-600',
               disabled && 'cursor-not-allowed opacity-35',
             )}
           >
-            <Icon className="h-3.5 w-3.5" />
-            <span className="text-[10px] font-semibold leading-none">{label}</span>
+            <SCIcon icon={Icon} size="xs" />
+            <span className="text-[11px] font-semibold leading-none">{label}</span>
           </button>
         )
       })}

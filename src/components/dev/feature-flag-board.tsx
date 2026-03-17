@@ -43,7 +43,7 @@ export function FeatureFlagBoard({ dbFlags }: FeatureFlagBoardProps) {
         <button
           type="button"
           onClick={clearFeatureOverrides}
-          className="text-[10px] text-muted-foreground hover:text-foreground transition-colors"
+          className="text-[11px] text-muted-foreground hover:text-foreground transition-colors"
         >
           Clear overrides
         </button>
@@ -52,7 +52,7 @@ export function FeatureFlagBoard({ dbFlags }: FeatureFlagBoardProps) {
       <div className="space-y-4">
         {grouped.map(({ category, label, flags }) => (
           <div key={category}>
-            <span className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+            <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
               {label}
             </span>
             <div className="mt-1.5 space-y-1">
@@ -69,7 +69,7 @@ export function FeatureFlagBoard({ dbFlags }: FeatureFlagBoardProps) {
                       <span className="text-[11px] font-medium text-foreground">
                         {def.description}
                       </span>
-                      <span className={`text-[9px] ${SOURCE_COLORS[source]}`}>
+                      <span className={`text-[11px] ${SOURCE_COLORS[source]}`}>
                         {source}
                       </span>
                     </div>

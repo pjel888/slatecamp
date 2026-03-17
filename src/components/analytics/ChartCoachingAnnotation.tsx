@@ -1,5 +1,6 @@
 'use client'
-import { Lightbulb } from 'lucide-react'
+import { Lightbulb } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 }
 
 const STYLES = {
-  insight: 'bg-blue-50 text-blue-700',
+  insight: 'bg-[#F0F5FA] text-[#2F5A85]',
   warning: 'bg-amber-50 text-amber-700',
   success: 'bg-green-50 text-green-700',
 }
@@ -16,7 +17,7 @@ const STYLES = {
 export function ChartCoachingAnnotation({ text, variant = 'insight' }: Props) {
   return (
     <div className={cn('flex items-start gap-1.5 rounded-md px-2 py-1.5 mt-1', STYLES[variant])}>
-      <Lightbulb className="h-3 w-3 mt-0.5 shrink-0" />
+      <SCIcon icon={Lightbulb} size="xs" className="mt-0.5 shrink-0" />
       <p className="text-xs leading-snug">{text}</p>
     </div>
   )

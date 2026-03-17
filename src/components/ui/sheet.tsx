@@ -5,7 +5,8 @@ import { Dialog as SheetPrimitive } from "@base-ui/react/dialog"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { XIcon } from "lucide-react"
+import { X } from "@phosphor-icons/react"
+import { SCIcon } from "@/components/graphics/icons/Icon"
 
 function Sheet({ ...props }: SheetPrimitive.Root.Props) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />
@@ -70,8 +71,7 @@ function SheetContent({
               />
             }
           >
-            <XIcon
-            />
+            <SCIcon icon={X} size="sm" ariaLabel="Close" />
             <span className="sr-only">Close</span>
           </SheetPrimitive.Close>
         )}

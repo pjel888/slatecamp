@@ -70,7 +70,7 @@ export function NBCPScene() {
 
     // Building color: blue = compliant, red = BHL violated
     if (buildingMatRef.current) {
-      const color = computed.violations.length > 0 ? '#dc2626' : '#2563eb'
+      const color = computed.violations.length > 0 ? '#D64545' : '#3B6B9C'
       buildingMatRef.current.color.set(color)
     }
 
@@ -99,7 +99,7 @@ export function NBCPScene() {
   const rightSbWidth = toU(setbacks.right)
 
   // BHL line color
-  const bhlLineColor = violations.length > 0 ? '#dc2626' : '#16a34a'
+  const bhlLineColor = violations.length > 0 ? '#D64545' : '#2D9F6F'
 
   // RROW plane(s)
   const rrowWu = toU(inputs.rrowWidth)
@@ -125,7 +125,7 @@ export function NBCPScene() {
         <meshStandardMaterial color="#d1d5db" />
       </mesh>
       <Html position={[0, 0, lotDu / 2 + rrowWu / 2]} distanceFactor={df} occlude={false}>
-        <div style={{ pointerEvents: 'none' }} className="bg-white/90 border border-zinc-200 rounded px-1.5 py-0.5 text-[9px] font-bold text-zinc-500 whitespace-nowrap -translate-x-1/2">
+        <div style={{ pointerEvents: 'none' }} className="bg-white/90 border border-zinc-200 rounded px-1.5 py-0.5 text-[11px] font-bold text-zinc-500 whitespace-nowrap -translate-x-1/2">
           RROW: {inputs.rrowWidth.toFixed(1)}m
         </div>
       </Html>
@@ -239,28 +239,28 @@ export function NBCPScene() {
       {/* Setback labels */}
       {frontSbDepth > 0 && (
         <Html position={[0, LOT_Y, lotDu / 2 - frontSbDepth / 2]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Front: {setbacks.front.toFixed(1)}m
           </div>
         </Html>
       )}
       {rearSbDepth > 0 && (
         <Html position={[0, LOT_Y, -(lotDu / 2 - rearSbDepth / 2)]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Rear: {setbacks.rear.toFixed(1)}m
           </div>
         </Html>
       )}
       {leftSbWidth > 0 && (
         <Html position={[-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Left: {setbacks.left.toFixed(1)}m
           </div>
         </Html>
       )}
       {rightSbWidth > 0 && (
         <Html position={[(lotWu / 2 - rightSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Right: {setbacks.right.toFixed(1)}m
           </div>
         </Html>
@@ -272,7 +272,7 @@ export function NBCPScene() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#2563eb"
+          color="#3B6B9C"
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -288,7 +288,7 @@ export function NBCPScene() {
         return (
           <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
             <boxGeometry args={[bw, 0.005, bd]} />
-            <meshStandardMaterial color="#1d4ed8" transparent opacity={0.4} />
+            <meshStandardMaterial color="#2F5A85" transparent opacity={0.4} />
           </mesh>
         )
       })}
@@ -300,7 +300,7 @@ export function NBCPScene() {
         distanceFactor={df} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap">
-          <span className="text-[9px] font-bold text-zinc-700">
+          <span className="text-[11px] font-bold text-zinc-700">
             {displayHeight.toFixed(1)}m · {displayStoreys}F
           </span>
         </div>
@@ -312,8 +312,8 @@ export function NBCPScene() {
         distanceFactor={df} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap text-center">
-          <div className="text-[9px] font-bold text-zinc-700">AMBF: {ambf.toFixed(0)} sqm</div>
-          <div className="text-[9px] text-zinc-500">FLAR {flar.toFixed(2)}x</div>
+          <div className="text-[11px] font-bold text-zinc-700">AMBF: {ambf.toFixed(0)} sqm</div>
+          <div className="text-[11px] text-zinc-500">FLAR {flar.toFixed(2)}x</div>
         </div>
       </Html>
 
@@ -330,7 +330,7 @@ export function NBCPScene() {
           violations.length > 0 ? 'bg-red-50 border-red-200' :
           bhl_source === 'rrow' ? 'bg-amber-50 border-amber-200' : 'bg-slate-50 border-slate-200'
         }`}>
-          <span className={`text-[9px] font-bold ${
+          <span className={`text-[11px] font-bold ${
             violations.length > 0 ? 'text-red-700' :
             bhl_source === 'rrow' ? 'text-amber-700' : 'text-slate-500'
           }`}>

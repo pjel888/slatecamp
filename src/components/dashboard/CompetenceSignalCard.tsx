@@ -1,4 +1,7 @@
-import { BookOpen, Target, TrendingUp } from 'lucide-react'
+'use client'
+
+import { BookOpen, Target, TrendUp } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card } from '@/components/ui/card'
 
 interface CompetenceSignalCardProps {
@@ -24,11 +27,11 @@ export function CompetenceSignalCard({
       icon: BookOpen,
       value: totalAnswered > 0 ? formatCount(totalAnswered) : '—',
       label: 'Questions answered',
-      color: 'text-blue-600',
-      bg: 'bg-blue-50',
+      color: 'text-primary',
+      bg: 'bg-[#F0F5FA]',
     },
     {
-      icon: TrendingUp,
+      icon: TrendUp,
       value: readinessScore > 0 ? `${readinessScore}%` : '—',
       label: 'Readiness score',
       color: 'text-zinc-700',
@@ -44,7 +47,7 @@ export function CompetenceSignalCard({
           className='p-3 flex items-center gap-2.5'
         >
           <div className={`p-1.5 rounded-md ${bg} shrink-0`}>
-            <Icon className={`h-3.5 w-3.5 ${color}`} />
+            <SCIcon icon={Icon} size='xs' className={color} />
           </div>
           <div className='min-w-0'>
             <p className={`text-base font-mono tabular-nums font-bold leading-none ${color}`}>{value}</p>

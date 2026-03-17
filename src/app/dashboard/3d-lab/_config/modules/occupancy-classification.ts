@@ -9,8 +9,8 @@ const OCCUPANCY_DATA: Record<string, { color: string; fireRating: string; egress
   'A': { color: '#3b82f6', fireRating: 'Type I (4hr)', egress: 2, label: 'Residential' },
   'B': { color: '#6366f1', fireRating: 'Type II (2hr)', egress: 2, label: 'Residential Hotel' },
   'C': { color: '#f97316', fireRating: 'Type II (2hr)', egress: 2, label: 'Education' },
-  'D': { color: '#dc2626', fireRating: 'Type I (4hr)', egress: 3, label: 'Institutional' },
-  'E': { color: '#16a34a', fireRating: 'Type II (2hr)', egress: 2, label: 'Business/Mercantile' },
+  'D': { color: '#D64545', fireRating: 'Type I (4hr)', egress: 3, label: 'Institutional' },
+  'E': { color: '#2D9F6F', fireRating: 'Type II (2hr)', egress: 2, label: 'Business/Mercantile' },
   'F': { color: '#ca8a04', fireRating: 'Type I (4hr)', egress: 2, label: 'Industrial' },
   'G': { color: '#7c3aed', fireRating: 'Type I (4hr)', egress: 2, label: 'Storage/Hazardous' },
   'H': { color: '#0891b2', fireRating: 'Type II (2hr)', egress: 2, label: 'Assembly' },
@@ -60,7 +60,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     const egressCount = data.egress
     const positions: [number, number, number][] = [[-side / 2 - 0.5, 0.5, -side / 2 - 0.5], [side / 2 + 0.5, 0.5, -side / 2 - 0.5]]
     for (let e = 0; e < egressCount && e < positions.length; e++) {
-      inst.push({ id: `egress-${e}`, type: 'box', position: positions[e], args: [0.9, storeys * stH, 0.9], color: '#16a34a', opacity: 0.6, transparent: true, label: `Exit ${e + 1}` })
+      inst.push({ id: `egress-${e}`, type: 'box', position: positions[e], args: [0.9, storeys * stH, 0.9], color: '#2D9F6F', opacity: 0.6, transparent: true, label: `Exit ${e + 1}` })
     }
   }
 

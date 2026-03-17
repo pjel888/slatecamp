@@ -83,7 +83,7 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
             style={{ pointerEvents: 'none' }}
             className="px-1.5 py-0.5 bg-white/90 backdrop-blur-sm border border-zinc-200 rounded shadow-sm whitespace-nowrap"
           >
-            <span className="text-[9px] font-bold text-zinc-700">
+            <span className="text-[11px] font-bold text-zinc-700">
               {inst.label}
             </span>
           </div>

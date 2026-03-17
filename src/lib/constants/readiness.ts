@@ -15,19 +15,17 @@ export function getReadinessLabel(score: number): string {
   if (score >= READINESS_THRESHOLDS.STRONG) return "Strong";
   if (score >= READINESS_THRESHOLDS.GETTING_THERE) return "Getting There";
   if (score >= READINESS_THRESHOLDS.BUILDING_MOMENTUM) return "Building Momentum";
-  return "Needs Work";
+  return "Keep Practicing";
 }
 
-/** Returns a CSS variable for the readiness arc/color (Rams Standard). */
+/** Returns a CSS variable for the readiness arc/color (Campfire: ≥70 success, ≥40 warning, <40 danger). */
 export function getReadinessColor(score: number): string {
-  if (score >= READINESS_THRESHOLDS.EXAM_READY) return "var(--color-signal-green)";
-  if (score >= READINESS_THRESHOLDS.STRONG) return "var(--color-signal-green)";
-  if (score >= READINESS_THRESHOLDS.GETTING_THERE) return "var(--color-signal-green)";
-  if (score >= READINESS_THRESHOLDS.BUILDING_MOMENTUM) return "var(--color-signal-amber)";
-  return "var(--color-signal-red)";
+  if (score >= 70) return "var(--success)";
+  if (score >= 40) return "var(--warning)";
+  return "var(--danger)";
 }
 
 /** CSS variable for delta increase (e.g. "+3"). */
-export const READINESS_DELTA_POSITIVE = "var(--color-signal-green)";
+export const READINESS_DELTA_POSITIVE = "var(--success)";
 /** CSS variable for delta decrease. */
-export const READINESS_DELTA_NEGATIVE = "var(--color-signal-red)";
+export const READINESS_DELTA_NEGATIVE = "var(--danger)";

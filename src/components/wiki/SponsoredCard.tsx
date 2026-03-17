@@ -20,7 +20,7 @@ export function SponsoredCard({ ad, variant }: SponsoredCardProps) {
         isRail ? 'p-3' : 'p-4'
       }`}
     >
-      <span className='text-[10px] text-muted-foreground/60 uppercase tracking-wide mb-2'>
+      <span className='text-[11px] text-muted-foreground/60 uppercase tracking-wide mb-2'>
         {ad.label}
       </span>
 

@@ -2,7 +2,8 @@
 'use client'
 
 import { memo, useState } from 'react'
-import { ChevronDown, ChevronRight, RotateCcw } from 'lucide-react'
+import { CaretDown, CaretRight, ArrowCounterClockwise } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { cn } from '@/lib/utils'
@@ -24,8 +25,8 @@ function Section({ title, children, defaultOpen = true }: {
         onClick={() => setOpen(o => !o)}
         className="flex items-center gap-1 w-full text-left mb-2"
       >
-        {open ? <ChevronDown className="h-3 w-3 text-zinc-400" /> : <ChevronRight className="h-3 w-3 text-zinc-400" />}
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">{title}</span>
+        {open ? <SCIcon icon={CaretDown} size="xs" className="text-zinc-400" /> : <SCIcon icon={CaretRight} size="xs" className="text-zinc-400" />}
+        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">{title}</span>
       </button>
       {open && <div className="space-y-3">{children}</div>}
     </div>
@@ -64,7 +65,7 @@ function SelectRow({ label, value, options, onChange }: {
       <select
         value={value}
         onChange={e => onChange(e.target.value)}
-        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 min-w-0"
+        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary min-w-0"
       >
         {options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
       </select>
@@ -87,7 +88,7 @@ function ToggleRow({ label, value, disabled, tooltip, onChange }: {
         className={cn(
           'w-8 h-4 rounded-full transition-colors relative',
           disabled ? 'opacity-40 cursor-not-allowed bg-zinc-200' :
-            value ? 'bg-blue-600 cursor-pointer' : 'bg-zinc-200 cursor-pointer'
+            value ? 'bg-primary cursor-pointer' : 'bg-zinc-200 cursor-pointer'
         )}
       >
         <span className={cn(
@@ -132,7 +133,7 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
           NBCP Parameters
         </span>
         <Button variant="ghost" size="icon" className="h-6 w-6 rounded-sm hover:bg-zinc-100" onClick={reset}>
-          <RotateCcw className="h-3 w-3 text-zinc-400" />
+          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
         </Button>
       </div>
 
@@ -142,7 +143,7 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
           <button
             key={preset.label}
             onClick={() => applyPreset(preset)}
-            className="text-[10px] font-medium text-blue-600 border border-blue-200 rounded px-1.5 py-0.5 hover:bg-blue-50 transition-colors"
+            className="text-[11px] font-medium text-primary border border-primary/30 rounded px-1.5 py-0.5 hover:bg-[#F0F5FA] transition-colors"
           >
             {preset.label}
           </button>
@@ -167,16 +168,16 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
 
       {/* Building */}
       <Section title="Building">
-        <div className="text-[10px] text-zinc-400 italic mb-1">
+        <div className="text-[11px] text-zinc-400 italic mb-1">
           Floor height is a design assumption, not a code requirement
         </div>
         <SliderRow label="Floor Height" value={inputs.floorHeight} min={2.7} max={4.0} step={0.1} unit="m" decimals={1}
           onChange={v => setInputs({ floorHeight: v })} />
-        <div className="text-[10px] font-mono text-zinc-500 bg-zinc-50 rounded px-2 py-1">
+        <div className="text-[11px] font-mono text-zinc-500 bg-zinc-50 rounded px-2 py-1">
           {bhlDisplay}
         </div>
         <div className="pt-1 border-t border-border">
-          <div className="text-[10px] text-zinc-400 italic mb-1">
+          <div className="text-[11px] text-zinc-400 italic mb-1">
             Floors override — drag above BHL to show violation
           </div>
           <SliderRow
@@ -191,7 +192,7 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
           {inputs.floorsOverride > 0 && (
             <button
               onClick={() => setInputs({ floorsOverride: 0 })}
-              className="text-[10px] text-blue-600 hover:underline mt-0.5"
+              className="text-[11px] text-primary hover:underline mt-0.5"
             >
               Reset to code max ({computed.effectiveStoreys}F)
             </button>

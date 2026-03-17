@@ -156,7 +156,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       'a challenging topic'
     catalyst = {
       type: 'drill',
-      title: `Drill: ${topicName}`,
+      title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,
       href: `/dashboard/testing?mode=camp`,
@@ -235,7 +235,7 @@ function formatModeName(mode: string): string {
     practice: 'Practice Quiz',
     custom: 'Custom Quiz',
     blindspot: 'Blindspot Quiz',
-    proof_sim: 'Proof Simulation',
+    proof_sim: 'Full Exam Simulation',
     endurance: 'Endurance Quiz',
   }
   return map[mode] ?? 'Quiz'

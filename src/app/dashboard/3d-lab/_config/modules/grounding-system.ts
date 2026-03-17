@@ -76,7 +76,7 @@ export const groundingSystemConfig: CutawaySectionConfig = {
       description: 'Main bonding jumper connecting neutral bar to equipment ground bar — only at service panel.',
       codeCitation: 'PEC Rule 2.50.040',
       depth: 1.1,
-      geometry: { id: 'geo-mbj', type: 'box', args: [0.06, 0.01, 0.01], position: [1.1, 1.4, 0], color: '#16a34a' },
+      geometry: { id: 'geo-mbj', type: 'box', args: [0.06, 0.01, 0.01], position: [1.1, 1.4, 0], color: '#2D9F6F' },
     },
   ],
   annotations: [

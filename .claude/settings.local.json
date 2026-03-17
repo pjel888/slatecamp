@@ -68,7 +68,12 @@
       "Bash(npx tsc:*)",
       "Skill(gsd:pause-work)",
       "Skill(gsd:resume-work)",
-      "mcp__supabase__apply_migration"
+      "mcp__supabase__apply_migration",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(echo \"=== $f ===\")",
+      "Read(//d/SlateCamp/slate-camp/**)",
+      "Bash(done)"
     ]
   },
   "enableAllProjectMcpServers": true,

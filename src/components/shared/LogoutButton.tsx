@@ -3,7 +3,8 @@
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
-import { LogOut } from 'lucide-react'
+import { SignOut } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 export function LogoutButton() {
   const router = useRouter()
@@ -34,7 +35,7 @@ export function LogoutButton() {
       onClick={handleClick}
       className="w-full sm:w-auto"
     >
-      <LogOut className="mr-2 h-4 w-4" />
+      <SCIcon icon={SignOut} size="sm" className="mr-2" />
       Log out
     </Button>
   )

@@ -33,7 +33,7 @@ export const trapSealDepthConfig: CutawaySectionConfig = {
       description: 'Crown weir — highest point of water in the trap outlet. Water level held at crown establishes the effective seal depth.',
       codeCitation: 'NPCP §1002.3',
       depth: 0.3,
-      geometry: { id: 'geo-crown', type: 'sphere', args: [0.04, 8, 8], position: [0.2, 0.85, 0], color: '#2563eb' },
+      geometry: { id: 'geo-crown', type: 'sphere', args: [0.04, 8, 8], position: [0.2, 0.85, 0], color: '#3B6B9C' },
     },
     {
       id: 'water-seal',
@@ -68,7 +68,7 @@ export const trapSealDepthConfig: CutawaySectionConfig = {
       description: 'Vent connected above trap crown weir — prevents positive or negative pressure fluctuations that would siphon or push water out of seal.',
       codeCitation: 'NPCP §906.1',
       depth: 0.95,
-      geometry: { id: 'geo-vent', type: 'cylinder', args: [0.0125, 0.0125, 0.6, 8], position: [0.2, 1.3, 0], color: '#16a34a' },
+      geometry: { id: 'geo-vent', type: 'cylinder', args: [0.0125, 0.0125, 0.6, 8], position: [0.2, 1.3, 0], color: '#2D9F6F' },
     },
   ],
   annotations: [

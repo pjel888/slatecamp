@@ -1,7 +1,8 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { FileText, BookOpen, HelpCircle, Tag } from 'lucide-react'
+import { FileText } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getNotesList, getNoteFolders, getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
@@ -176,7 +177,7 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
           </div>
         ) : (
           <div className="flex h-full flex-col items-center justify-center gap-3 text-zinc-200">
-            <FileText className="h-16 w-16" strokeWidth={0.75} />
+            <SCIcon icon={FileText} size="2xl" />
             <p className="text-sm font-medium text-zinc-400">Select a note or create one</p>
           </div>
         )}

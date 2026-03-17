@@ -1,17 +1,18 @@
 'use client'
 
-import { useState, useEffect, type ComponentType, type SVGProps } from 'react'
+import { useState, useEffect } from 'react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { TransitionLink } from '@/components/shared/TransitionLink'
 import {
-  Shield,
-  PanelLeftClose,
-  PanelLeftOpen,
-  Sparkles,
-  Zap,
+  ShieldCheck,
+  SidebarSimple,
+  Sparkle,
+  Lightning,
   Crown,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ThemeToggle } from './ThemeToggle'
 import {
@@ -63,7 +64,7 @@ const ICON_SIZE = 'h-[18px] w-[18px]'
 /** * Premium Collapsed Logomark
  */
 const Logomark = () => (
-  <div className='flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-white shadow-sm'>
+  <div className='flex h-8 w-8 items-center justify-center rounded-md bg-primary text-white shadow-sm'>
     <span className='font-serif font-bold text-lg leading-none mt-0.5'>S</span>
   </div>
 )
@@ -71,7 +72,7 @@ const Logomark = () => (
 interface SidebarItemProps {
   href: string
   label: string
-  icon?: ComponentType<SVGProps<SVGSVGElement>>
+  icon?: PhosphorIcon
   isActive: boolean
   collapsed: boolean
   onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>) => void
@@ -90,8 +91,8 @@ const SidebarItem = ({
     'relative flex items-center gap-3 px-2 py-1.5 text-sm rounded-md transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
 
   const stateClasses = isActive
-    ? 'text-blue-600 font-semibold bg-blue-50'
-    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+    ? 'text-primary font-semibold bg-[#F0F5FA]'
+    : 'text-[#4A5568] hover:bg-[#F0F5FA]/50 hover:text-primary'
 
   const link = (
     <TransitionLink
@@ -101,17 +102,18 @@ const SidebarItem = ({
     >
       {/* Dieter Rams Active Indicator */}
       {isActive && (
-        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[4px] h-[16px] bg-blue-600 rounded-r-full' />
+        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[4px] h-[16px] bg-primary rounded-r-full' />
       )}
 
       <div className={ICON_BOX}>
         {Icon ? (
-          <Icon
+          <SCIcon
+            icon={Icon}
+            size='sm'
+            weight={isActive ? 'bold' : 'regular'}
             className={cn(
-              ICON_SIZE,
-              isActive ? 'text-blue-600' : 'text-gray-500',
+              isActive ? 'text-primary' : 'text-[#4A5568]',
             )}
-            strokeWidth={isActive ? 2 : 1.75}
           />
         ) : null}
       </div>
@@ -135,7 +137,7 @@ const SidebarItem = ({
         <TooltipContent
           side='right'
           sideOffset={12}
-          className='bg-zinc-950 text-zinc-50 font-medium text-xs'
+          className='bg-[#1A2332] text-white font-medium text-xs'
         >
           {label}
         </TooltipContent>
@@ -231,13 +233,13 @@ export const Sidebar = ({
       >
         <button
           onClick={toggleCollapse}
-          className='flex h-8 w-8 items-center justify-center rounded-md text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 outline-none'
+          className='flex h-8 w-8 items-center justify-center rounded-md text-[#4A5568] transition-colors hover:bg-[#F0F5FA]/50 hover:text-primary outline-none'
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
-            <PanelLeftOpen className='h-[18px] w-[18px]' strokeWidth={1.5} />
+            <SCIcon icon={SidebarSimple} size='sm' className='scale-x-[-1]' />
           ) : (
-            <PanelLeftClose className='h-[18px] w-[18px]' strokeWidth={1.5} />
+            <SCIcon icon={SidebarSimple} size='sm' />
           )}
         </button>
       </div>
@@ -250,7 +252,7 @@ export const Sidebar = ({
             <TooltipTrigger asChild>
               <Link
                 href={ROUTES.SETTINGS}
-                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-gray-100 outline-none'
+                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-[#F0F5FA]/50 outline-none'
                 onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <div className={ICON_BOX}>
@@ -261,7 +263,7 @@ export const Sidebar = ({
                         alt={displayName}
                       />
                     ) : null}
-                    <AvatarFallback className='bg-gray-100 text-xs font-medium text-gray-900'>
+                    <AvatarFallback className='bg-[#F0F5FA] text-xs font-medium text-[#1A2332]'>
                       {initials}
                     </AvatarFallback>
                   </Avatar>
@@ -272,7 +274,7 @@ export const Sidebar = ({
                     collapsed ? 'opacity-0' : 'opacity-100',
                   )}
                 >
-                  <p className='truncate text-[13px] font-medium text-zinc-900'>
+                  <p className='truncate text-[13px] font-medium text-[#1A2332]'>
                     {displayName}
                   </p>
                 </div>
@@ -282,7 +284,7 @@ export const Sidebar = ({
                 <TooltipContent
                 side='right'
                 sideOffset={12}
-                className='bg-slatecamp-ink-main text-slatecamp-paper font-medium text-xs'
+                className='bg-primary text-white font-medium text-xs'
                 >
                 {displayName} (Settings)
                 </TooltipContent>
@@ -294,23 +296,11 @@ export const Sidebar = ({
           <div className='flex items-center justify-start gap-3 px-2'>
             <div className={ICON_BOX}>
               {tier === 'free' ? (
-                <Sparkles
-                  className={cn(ICON_SIZE, 'text-amber-600')}
-                  strokeWidth={1.5}
-                />
+                <SCIcon icon={Sparkle} size='sm' className='text-[#D4951A]' />
               ) : tier === 'camp' || tier === 'insurance' ? (
-                <Zap
-                  className={cn(
-                    ICON_SIZE,
-                    tier === 'camp' ? 'text-blue-600' : 'text-blue-600',
-                  )}
-                  strokeWidth={1.5}
-                />
+                <SCIcon icon={Lightning} size='sm' className='text-primary' />
               ) : (
-                <Crown
-                  className={cn(ICON_SIZE, 'text-amber-500')}
-                  strokeWidth={1.5}
-                />
+                <SCIcon icon={Crown} size='sm' className='text-[#D4951A]' />
               )}
             </div>
 
@@ -330,7 +320,7 @@ export const Sidebar = ({
                   <Button
                     variant='outline'
                     size='sm'
-                    className='h-6 px-2 text-xs font-medium border-border text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-colors'
+                    className='h-6 px-2 text-xs font-medium border-border text-[#4A5568] hover:bg-primary hover:text-white hover:border-primary transition-colors'
                   >
                     Upgrade
                   </Button>
@@ -365,7 +355,7 @@ export const Sidebar = ({
               <SidebarItem
                 href={ROUTES.SETTINGS_DEVELOPER}
                 label='Dev Settings'
-                icon={Shield}
+                icon={ShieldCheck}
                 isActive={pathname === ROUTES.SETTINGS_DEVELOPER}
                 collapsed={collapsed}
                 onBeforeNavigate={(e) =>
@@ -396,25 +386,25 @@ export const Sidebar = ({
             showCloseButton={false}
             className='sm:max-w-[380px] bg-white border-border'
           >
-            <DialogTitle className='text-zinc-900'>
+            <DialogTitle className='text-[#1A2332]'>
               Are you sure you want to exit?
             </DialogTitle>
-            <DialogDescription className='text-zinc-600'>
+            <DialogDescription className='text-[#4A5568]'>
               Your progress in this {mode === 'review' ? 'review' : 'quiz'} will
               not be saved. You can come back anytime.
             </DialogDescription>
-            <DialogFooter className='mt-4 gap-2 border-t border-border bg-gray-50 p-4 sm:flex-row'>
+            <DialogFooter className='mt-4 gap-2 border-t border-border bg-[#F8F7F5] p-4 sm:flex-row'>
               <Button
                 variant='outline'
                 onClick={() => setLeaveDialogOpen(false)}
-                className='flex-1 sm:flex-initial border-border text-gray-900 hover:bg-white'
+                className='flex-1 sm:flex-initial border-border text-[#1A2332] hover:bg-white'
               >
                 No, stay
               </Button>
               <Button
                 variant='destructive'
                 onClick={handleConfirmLeave}
-                className='flex-1 sm:flex-initial bg-red-600 hover:bg-red-700 text-white'
+                className='flex-1 sm:flex-initial bg-[#D64545] hover:bg-[#D64545]/90 text-white'
               >
                 Yes, exit
               </Button>

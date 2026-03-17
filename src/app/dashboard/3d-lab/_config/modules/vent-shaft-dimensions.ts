@@ -44,16 +44,16 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Min area plane
-  inst.push({ id: 'min-area-indicator', type: 'box', position: [0, 0.02, 0], args: [Math.sqrt(minArea), 0.01, Math.sqrt(minArea)], color: areaOk ? '#16a34a' : '#dc2626', opacity: 0.4, transparent: true, label: `Min: ${minArea.toFixed(2)} m²` })
+  inst.push({ id: 'min-area-indicator', type: 'box', position: [0, 0.02, 0], args: [Math.sqrt(minArea), 0.01, Math.sqrt(minArea)], color: areaOk ? '#2D9F6F' : '#D64545', opacity: 0.4, transparent: true, label: `Min: ${minArea.toFixed(2)} m²` })
 
   // Floor intersections (vent openings)
   for (let s = 0; s < storeys; s++) {
     const fy = s * stH
-    inst.push({ id: `vent-opening-${s}`, type: 'box', position: [0, fy + stH / 2, sD / 2 + wallT / 2], args: [Math.min(sW * 0.6, 0.5), stH * 0.3, 0.02], color: '#16a34a', opacity: 0.7, transparent: true })
+    inst.push({ id: `vent-opening-${s}`, type: 'box', position: [0, fy + stH / 2, sD / 2 + wallT / 2], args: [Math.min(sW * 0.6, 0.5), stH * 0.3, 0.02], color: '#2D9F6F', opacity: 0.7, transparent: true })
   }
 
   // Dimension markers
-  inst.push({ id: 'dim-width', type: 'box', position: [0, -0.2, 0], args: [sW, 0.02, 0.02], color: dimOk ? '#16a34a' : '#dc2626', label: `W: ${(sW * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'dim-width', type: 'box', position: [0, -0.2, 0], args: [sW, 0.02, 0.02], color: dimOk ? '#2D9F6F' : '#D64545', label: `W: ${(sW * 1000).toFixed(0)}mm` })
 
   return inst
 }

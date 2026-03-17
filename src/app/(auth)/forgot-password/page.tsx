@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AlertCircle } from "lucide-react";
+import { Warning } from "@phosphor-icons/react";
+import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
 import { ROUTES } from "@/lib/constants/routes";
 import { siteConfig } from "@/lib/constants/site";
@@ -70,13 +71,13 @@ export default function ForgotPasswordPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   autoComplete="email"
-                  className="focus-visible:ring-2 focus-visible:ring-blue-500/30 focus-visible:ring-offset-2"
+                  className="focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2"
                 />
               </div>
 
               {error && (
                 <div className="flex items-start gap-2 text-sm text-red-600" role="alert">
-                  <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                  <SCIcon icon={Warning} size="sm" className="mt-0.5 shrink-0" />
                   <span>{error}</span>
                 </div>
               )}
@@ -91,7 +92,7 @@ export default function ForgotPasswordPage() {
         <p className="text-center text-sm text-zinc-500">
           <Link
             href={ROUTES.LOGIN}
-            className="font-medium text-zinc-900 underline underline-offset-4 hover:text-blue-600"
+            className="font-medium text-zinc-900 underline underline-offset-4 hover:text-primary"
           >
             Back to login
           </Link>

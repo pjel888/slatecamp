@@ -2,7 +2,8 @@
 
 // src/app/dashboard/3d-lab/_templates/AnimatedSequence.tsx
 import { useMemo, useCallback, useEffect, useRef } from 'react'
-import { Play, Pause, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Play, Pause, CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { createModuleStore } from '../_stores/createModuleStore'
 import { AnimatedSequenceScene } from './AnimatedSequenceScene'
@@ -102,11 +103,11 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
         <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2.5">
           {/* Step label */}
           <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
+            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
               Step {currentStep + 1} / {config.steps.length}
             </span>
             {step && (
-              <span className="text-[10px] font-bold text-zinc-600 truncate ml-2">
+              <span className="text-[11px] font-bold text-zinc-600 truncate ml-2">
                 {step.label}
               </span>
             )}
@@ -120,7 +121,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
             step={1}
             value={currentStep}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-blue-600 mb-2"
+            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[#3B6B9C] mb-2"
           />
 
           {/* Controls */}
@@ -130,16 +131,16 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
               disabled={currentStep === 0}
               className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             >
-              <ChevronLeft className="h-4 w-4 text-zinc-600" />
+              <SCIcon icon={CaretLeft} size="sm" className="text-zinc-600" />
             </button>
             <button
               onClick={handlePlayPause}
               className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors"
             >
               {isPlaying ? (
-                <Pause className="h-4 w-4 text-zinc-600" />
+                <SCIcon icon={Pause} size="sm" className="text-zinc-600" />
               ) : (
-                <Play className="h-4 w-4 text-zinc-600" />
+                <SCIcon icon={Play} size="sm" className="text-zinc-600" />
               )}
             </button>
             <button
@@ -147,7 +148,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
               disabled={currentStep >= maxStep}
               className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             >
-              <ChevronRight className="h-4 w-4 text-zinc-600" />
+              <SCIcon icon={CaretRight} size="sm" className="text-zinc-600" />
             </button>
           </div>
         </div>
@@ -157,7 +158,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
       {step && (
         <div className="absolute top-4 right-4 z-10 w-64">
           <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
+            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
               Step {currentStep + 1}
             </span>
             <h3 className="text-sm font-bold text-zinc-900 leading-snug mb-1">
@@ -169,7 +170,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
               </p>
             )}
             {step.codeCitation && (
-              <div className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[9px] font-bold text-zinc-500 uppercase tracking-wide">
+              <div className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[11px] font-bold text-zinc-500 uppercase tracking-wide">
                 {step.codeCitation}
               </div>
             )}

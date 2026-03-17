@@ -17,7 +17,7 @@ export const PersonalWorkspaceLink = () => {
         </div>
         <Link
           href={ROUTES.NOTES}
-          className='text-xs font-medium tracking-tight text-blue-600 underline-offset-2 hover:underline'
+          className='text-xs font-medium tracking-tight text-primary underline-offset-2 hover:underline'
         >
           Open workspace
         </Link>

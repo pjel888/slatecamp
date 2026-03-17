@@ -23,7 +23,7 @@ export const SocialProofBar = () => (
         <Starburst className="h-4 w-4 text-amber-600" />
         <h2
           id="how-it-works-heading"
-          className="font-mono text-[8px] tracking-[0.2em] uppercase text-zinc-500"
+          className="font-mono text-[11px] tracking-[0.2em] uppercase text-zinc-500"
         >
           TRUSTED BY STUDENTS AND PROFESSIONALS AT:
         </h2>

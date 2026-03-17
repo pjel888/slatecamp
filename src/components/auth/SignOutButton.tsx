@@ -1,7 +1,8 @@
 'use client'
 
 import { createClient } from '@/lib/supabase/client'
-import { LogOut } from 'lucide-react'
+import { SignOut } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 export function SignOutButton({ className }: { className?: string }) {
@@ -19,7 +20,7 @@ export function SignOutButton({ className }: { className?: string }) {
         className
       )}
     >
-      <LogOut className="h-4 w-4" />
+      <SCIcon icon={SignOut} size="sm" />
       <span>Sign Out</span>
     </button>
   )

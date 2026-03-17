@@ -1,4 +1,6 @@
-import { AlertTriangle, ArrowUpRight } from 'lucide-react'
+'use client'
+import { Warning, ArrowSquareOut } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 /* ── Noise texture overlay ── */
 
@@ -108,8 +110,8 @@ export const ReadinessDial = ({
             strokeDashoffset={strokeDashoffset}
             className={
               tone === 'success'
-                ? 'transition-[stroke-dashoffset] duration-500 '
-                : 'transition-[stroke-dashoffset] duration-500 '
+                ? 'transition-[stroke-dashoffset] duration-300 '
+                : 'transition-[stroke-dashoffset] duration-300 '
             }
           />
         </svg>
@@ -118,7 +120,7 @@ export const ReadinessDial = ({
         </span>
         {showWarning && (
           <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
-            <AlertTriangle className='h-3 w-3' aria-hidden='true' />
+            <SCIcon icon={Warning} size='xs' />
           </div>
         )}
       </div>
@@ -145,6 +147,6 @@ export const CircleArrow = ({
     }
     aria-hidden='true'
   >
-    <ArrowUpRight size={14} strokeWidth={1.5} />
+    <SCIcon icon={ArrowSquareOut} size='xs' />
   </span>
 )

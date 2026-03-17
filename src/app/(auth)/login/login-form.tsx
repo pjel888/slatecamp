@@ -2,7 +2,8 @@
 
 import { Suspense, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { AlertCircle } from "lucide-react";
+import { Warning } from "@phosphor-icons/react";
+import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 
@@ -55,12 +56,12 @@ export function LoginFormInner() {
 
       {error && (
         <div className="flex items-start gap-2 text-sm text-red-600" role="alert">
-          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+          <SCIcon icon={Warning} size="sm" className="mt-0.5 shrink-0" />
           <span>{error}</span>
         </div>
       )}
 
-      <p className="text-center text-[12px] text-color-graphite">
+      <p className="text-center text-[12px] text-text-secondary">
         By signing in, you agree to use your Google account. We only use it to
         access your account and don&apos;t post without your permission.
       </p>

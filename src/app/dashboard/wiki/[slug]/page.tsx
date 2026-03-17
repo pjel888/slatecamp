@@ -47,7 +47,7 @@ export default async function WikiArticlePage({ params }: PageProps) {
             </p>
             <div className="flex justify-center mb-8">
               <Link href={`/dashboard/testing?topicId=${nodeData.node_id}`}>
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full px-8">
+                <Button className="bg-primary hover:bg-[#2F5A85] text-white font-bold rounded-sm px-8">
                   Practice this Topic anyway
                 </Button>
               </Link>

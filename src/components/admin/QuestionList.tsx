@@ -3,7 +3,8 @@
 import { useState, useTransition } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
-import { FileQuestion, Plus, Search, Filter, Trash2, Edit, Eye, Loader2 } from 'lucide-react'
+import { Question, Plus, MagnifyingGlass, Funnel, Trash, PencilSimple, Eye, CircleNotch } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface Question {
@@ -78,7 +79,7 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
       {/* Search and Filters */}
       <div className="flex gap-4">
         <div className="flex-1 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search questions..."
@@ -101,14 +102,14 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
           href="/admin/questions/new"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          <Plus className="h-4 w-4" />
+          <SCIcon icon={Plus} size="sm" />
           Add Question
         </Link>
         <Link
           href="/admin/questions/import"
           className="flex items-center gap-2 px-4 py-2 rounded-md border border-input hover:bg-muted"
         >
-          <FileQuestion className="h-4 w-4" />
+          <SCIcon icon={Question} size="sm" />
           Import
         </Link>
       </div>
@@ -122,7 +123,7 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
             disabled={isPending}
             className="flex items-center gap-1 text-sm text-red-600 hover:text-red-700 disabled:opacity-50"
           >
-            {isPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Trash2 className="h-4 w-4" />}
+            {isPending ? <SCIcon icon={CircleNotch} size="sm" className="animate-spin" /> : <SCIcon icon={Trash} size="sm" />}
             Delete Selected
           </button>
         </div>
@@ -185,7 +186,7 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
                         href={`/admin/questions/${question.id}`}
                         className="p-1 hover:bg-muted rounded"
                       >
-                        <Edit className="h-4 w-4" />
+                        <SCIcon icon={PencilSimple} size="sm" />
                       </Link>
                     </div>
                   </td>

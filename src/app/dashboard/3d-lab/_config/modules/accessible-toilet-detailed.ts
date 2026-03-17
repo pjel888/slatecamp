@@ -62,7 +62,7 @@ export const accessibleToiletDetailedConfig: CutawaySectionConfig = {
       description: 'Emergency call button or pull cord — mounted 400–600mm AFF so occupant can reach from floor if fallen.',
       codeCitation: 'BP 344 §706.5 — 400-600mm AFF',
       depth: 0.75,
-      geometry: { id: 'geo-ecall', type: 'sphere', args: [0.04, 8, 8], position: [0.85, 0.5, 0.7], color: '#dc2626' },
+      geometry: { id: 'geo-ecall', type: 'sphere', args: [0.04, 8, 8], position: [0.85, 0.5, 0.7], color: '#D64545' },
     },
     {
       id: 'door-swing',

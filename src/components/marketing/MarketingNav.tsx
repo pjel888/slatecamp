@@ -37,7 +37,7 @@ export async function MarketingNav({
   const headerClass = cn(
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
-      ? 'border-white/10 bg-blue-500/80 text-white'
+      ? 'border-white/10 bg-primary/80 text-white'
       : 'border-zinc-200 bg-white/80 text-zinc-900',
   )
 
@@ -100,10 +100,10 @@ export async function MarketingNav({
             <Link
               href={ROUTES.DASHBOARD}
               className={cn(
-                'rounded-full px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
+                'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                 isDark
-                  ? 'bg-blue-600 hover:bg-blue-700'
-                  : 'bg-blue-600 hover:bg-blue-700',
+                  ? 'bg-primary hover:bg-[#2F5A85]'
+                  : 'bg-primary hover:bg-[#2F5A85]',
               )}
             >
               Go to dashboard
@@ -113,7 +113,7 @@ export async function MarketingNav({
               <Link
                 href={ROUTES.LOGIN}
                 className={cn(
-                  'rounded-full px-4 py-3 text-[13px] transition-colors duration-150',
+                  'rounded-sm px-4 py-3 text-[13px] transition-colors duration-150',
                   isDark
                     ? 'text-white/60 hover:text-white'
                     : 'text-zinc-500 hover:text-zinc-800',
@@ -124,10 +124,10 @@ export async function MarketingNav({
               <Link
                 href={ROUTES.REGISTER}
                 className={cn(
-                  'rounded-full px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
+                  'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                   isDark
-                    ? 'bg-blue-600 hover:bg-blue-700'
-                    : 'bg-blue-600 hover:bg-blue-700',
+                    ? 'bg-primary hover:bg-[#2F5A85]'
+                    : 'bg-primary hover:bg-[#2F5A85]',
                 )}
               >
                 Get Started

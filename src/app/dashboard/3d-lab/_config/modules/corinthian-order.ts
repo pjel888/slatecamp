@@ -28,7 +28,7 @@ export const corinthianOrderConfig: ExplodedAssemblyConfig = {
       id: 'cor-acanthus-lower',
       label: 'Acanthus Leaves — Lower Row',
       description: 'First row of 8 large acanthus leaves at base of capital. Based on the leaf of Acanthus spinosus. Legend: Callimachus invented capital inspired by basket on tomb.',
-      geometry: { id: 'cor-acanthus-lower-geo', type: 'cylinder', position: [0, 1.5, 0], args: [0.14, 0.11, 0.12, 16], color: '#16a34a' },
+      geometry: { id: 'cor-acanthus-lower-geo', type: 'cylinder', position: [0, 1.5, 0], args: [0.14, 0.11, 0.12, 16], color: '#2D9F6F' },
       explodeOffset: yOff(0.9),
     },
     {

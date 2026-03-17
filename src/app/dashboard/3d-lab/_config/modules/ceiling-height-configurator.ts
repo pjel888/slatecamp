@@ -181,7 +181,7 @@ function geometry(
       type: 'box',
       position: [0, baseY + minH, 0],
       args: [rW, 0.005, rD],
-      color: violated ? '#dc2626' : '#16a34a',
+      color: violated ? '#D64545' : '#2D9F6F',
       opacity: 0.25,
       transparent: true,
     })
@@ -206,7 +206,7 @@ function geometry(
         type: 'box',
         position: [rW / 4, baseY + mezzH + 0.1 + (cH - mezzH - 0.1) / 2, 0],
         args: [0.005, cH - mezzH - 0.1, 0.005],
-        color: mezzViolated ? '#dc2626' : '#16a34a',
+        color: mezzViolated ? '#D64545' : '#2D9F6F',
       })
     }
   }

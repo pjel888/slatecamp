@@ -9,7 +9,8 @@ import type { Group } from 'three'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
-import { X, Info, Layers, Lock, Loader2, ChevronRight, Box } from 'lucide-react'
+import { X, Info, Stack, Lock, CircleNotch, CaretRight, Cube } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
@@ -149,7 +150,7 @@ function HotspotMarkers({ hotspots, onSelect }: { hotspots: SpatialHotspot[], on
             <meshStandardMaterial color="#3D5A9C" emissive="#3D5A9C" emissiveIntensity={2} />
             <Html distanceFactor={10}>
               <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md border border-zinc-200 shadow-sm whitespace-nowrap pointer-events-none">
-                <span className="text-[10px] font-bold uppercase tracking-tight text-zinc-900">{h.title}</span>
+                <span className="text-[11px] font-bold uppercase tracking-tight text-zinc-900">{h.title}</span>
               </div>
             </Html>
           </mesh>
@@ -175,9 +176,9 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
 
   if (isLocked) {
     return (
-      <div className="h-full w-full rounded-2xl border border-dashed border-zinc-200 bg-zinc-50 flex flex-col items-center justify-center p-12 text-center space-y-6">
-        <div className="w-20 h-20 rounded-3xl bg-white shadow-sm flex items-center justify-center border border-zinc-100">
-          <Lock className="h-10 w-10 text-zinc-300" />
+      <div className="h-full w-full rounded-md border border-dashed border-zinc-200 bg-zinc-50 flex flex-col items-center justify-center p-12 text-center space-y-6">
+        <div className="w-20 h-20 rounded-lg bg-white shadow-sm flex items-center justify-center border border-zinc-100">
+          <SCIcon icon={Lock} size="xl" className="text-zinc-300" />
         </div>
         <div className="max-w-xs space-y-2">
           <h3 className="text-xl font-bold text-zinc-900">3D Lab is Gated</h3>
@@ -185,7 +186,7 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
             Parametric spatial learning and X-Ray visualization are available exclusively for **Camp** and **Institutional** tiers.
           </p>
         </div>
-        <Button className="bg-zinc-900 text-white hover:bg-zinc-800 rounded-xl px-8 font-bold">
+        <Button className="bg-zinc-900 text-white hover:bg-zinc-800 rounded-sm px-8 font-bold">
           Upgrade to Experience Spatial
         </Button>
       </div>
@@ -195,7 +196,7 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
   return (
     <div className="h-full w-full relative group">
       {/* 3D Canvas */}
-      <div className="h-full w-full rounded-2xl border border-zinc-100 bg-[#FBFBFA] overflow-hidden shadow-inner">
+      <div className="h-full w-full rounded-md border border-zinc-100 bg-[#FBFBFA] overflow-hidden shadow-inner">
         <Canvas shadows camera={{ position: [5, 5, 5], fov: 35 }}>
           <SceneErrorBoundary fallback={<SimpleBox xRayOpacity={xRayOpacity} />}>
             <Suspense fallback={null}>
@@ -215,13 +216,13 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
 
       {/* X-Ray Controls (Bottom Center) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 w-full max-w-xs">
-        <div className="bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl p-4 space-y-3">
+        <div className="bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-md p-4 space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 flex items-center gap-2">
-              <Layers className="h-3 w-3" />
+            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 flex items-center gap-2">
+              <SCIcon icon={Stack} size="xs" />
               X-Ray Visibility
             </span>
-            <span className="text-[10px] font-bold text-zinc-900">{Math.round((xRayOpacity ?? 1) * 100)}%</span>
+            <span className="text-[11px] font-bold text-zinc-900">{Math.round((xRayOpacity ?? 1) * 100)}%</span>
           </div>
           <Slider 
             value={[(xRayOpacity ?? 1) * 100]} 
@@ -249,14 +250,14 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
             exit={{ opacity: 0, x: 20 }}
             className="absolute top-6 right-6 z-20 w-80"
           >
-            <Card className="rounded-2xl shadow-2xl border-zinc-100/50 bg-white/95 backdrop-blur-sm">
+            <Card className="rounded-lg shadow-lg border-zinc-100/50 bg-white/95 backdrop-blur-sm">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle className="text-sm font-bold flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                   {activeHotspot.title}
                 </CardTitle>
-                <Button variant="ghost" size="icon" onClick={() => setActiveHotspot(null)} className="h-8 w-8 rounded-full hover:bg-zinc-100">
-                  <X className="h-4 w-4" />
+                <Button variant="ghost" size="icon" onClick={() => setActiveHotspot(null)} className="h-8 w-8 rounded-sm hover:bg-zinc-100">
+                  <SCIcon icon={X} size="sm" />
                 </Button>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -264,10 +265,10 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
                   {activeHotspot.description}
                 </p>
                 <div className="pt-4 border-t border-zinc-50 flex gap-2">
-                   <Button variant="outline" size="sm" className="w-full text-[10px] font-bold uppercase tracking-widest h-9 rounded-xl">
+                   <Button variant="outline" size="sm" className="w-full text-[11px] font-bold uppercase tracking-widest h-9 rounded-sm">
                      Add to Notes
                    </Button>
-                   <Button variant="secondary" size="sm" className="w-full text-[10px] font-bold uppercase tracking-widest h-9 rounded-xl">
+                   <Button variant="secondary" size="sm" className="w-full text-[11px] font-bold uppercase tracking-widest h-9 rounded-sm">
                      Wiki Detail
                    </Button>
                 </div>
@@ -281,8 +282,8 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
       <Suspense fallback={
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-zinc-50/50 backdrop-blur-xs">
           <div className="flex flex-col items-center gap-3">
-            <Loader2 className="h-8 w-8 animate-spin text-zinc-300" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400">Rendering Scene...</span>
+            <SCIcon icon={CircleNotch} size="xl" className="animate-spin text-zinc-300" />
+            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">Rendering Scene...</span>
           </div>
         </div>
       } />
@@ -315,14 +316,14 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
       <aside className="w-72 border-r border-zinc-200 bg-white flex flex-col overflow-y-auto">
         <div className="p-6 border-b border-zinc-100">
           <h2 className="text-lg font-bold text-zinc-900 tracking-tight flex items-center gap-2">
-            <Box className="h-5 w-5 text-blue-600" />
+            <SCIcon icon={Cube} size="md" className="text-primary" />
             3D Assets
           </h2>
         </div>
         <nav className="p-4 space-y-6">
           {tree.map(group => (
             <div key={group.id} className="space-y-2">
-              <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-400 px-2">{group.label}</h3>
+              <h3 className="text-[11px] font-black uppercase tracking-widest text-zinc-400 px-2">{group.label}</h3>
               <div className="space-y-1">
                 {group.children?.map(item => (
                   <div key={item.id} className="space-y-1">
@@ -331,14 +332,14 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                         href={`${basePath}?model=${item.modelId}`}
                         onClick={() => setSelectedModelId(item.modelId!)}
                         className={cn(
-                          "w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all",
+                          "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",
                           selectedModelId === item.modelId
-                            ? "bg-blue-50 text-blue-700 shadow-sm"
+                            ? "bg-[#F0F5FA] text-[#2F5A85] shadow-sm"
                             : "text-zinc-600 hover:bg-zinc-50"
                         )}
                       >
                         {item.label}
-                        {selectedModelId === item.modelId && <ChevronRight className="h-3 w-3" />}
+                        {selectedModelId === item.modelId && <SCIcon icon={CaretRight} size="xs" />}
                       </Link>
                     ) : (
                       <>
@@ -349,14 +350,14 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                             href={`${basePath}?model=${leaf.modelId}`}
                             onClick={() => setSelectedModelId(leaf.modelId!)}
                             className={cn(
-                              "w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all",
+                              "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",
                               selectedModelId === leaf.modelId
-                                ? "bg-blue-50 text-blue-700 shadow-sm"
+                                ? "bg-[#F0F5FA] text-[#2F5A85] shadow-sm"
                                 : "text-zinc-600 hover:bg-zinc-50"
                             )}
                           >
                             {leaf.label}
-                            {selectedModelId === leaf.modelId && <ChevronRight className="h-3 w-3" />}
+                            {selectedModelId === leaf.modelId && <SCIcon icon={CaretRight} size="xs" />}
                           </Link>
                         ))}
                       </>

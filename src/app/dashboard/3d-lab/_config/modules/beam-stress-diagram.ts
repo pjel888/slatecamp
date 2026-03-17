@@ -37,12 +37,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const coverY = -(bD / 2) + 0.05
   const barSpacing = bW / 4
   for (let i = -1; i <= 1; i++) {
-    inst.push({ id: `rebar-bot-${i}`, type: 'cylinder', position: [0, coverY, i * barSpacing], rotation: [0, 0, Math.PI / 2], args: [0.016, 0.016, span - 0.1, 8], color: '#dc2626' })
+    inst.push({ id: `rebar-bot-${i}`, type: 'cylinder', position: [0, coverY, i * barSpacing], rotation: [0, 0, Math.PI / 2], args: [0.016, 0.016, span - 0.1, 8], color: '#D64545' })
   }
   // Top rebar (2 bars)
   const topY = bD / 2 - 0.05
   for (let i = -1; i <= 1; i += 2) {
-    inst.push({ id: `rebar-top-${i}`, type: 'cylinder', position: [0, topY, i * barSpacing], rotation: [0, 0, Math.PI / 2], args: [0.012, 0.012, span - 0.1, 8], color: '#dc2626' })
+    inst.push({ id: `rebar-top-${i}`, type: 'cylinder', position: [0, topY, i * barSpacing], rotation: [0, 0, Math.PI / 2], args: [0.012, 0.012, span - 0.1, 8], color: '#D64545' })
   }
 
   // Load arrows
@@ -54,15 +54,15 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
       inst.push({ id: `load-${i}`, type: 'cone', position: [ax, bD / 2 + arrowH, 0], rotation: [Math.PI, 0, 0], args: [0.08, arrowH, 6], color: '#f97316', opacity: 0.9, transparent: true })
     }
   } else {
-    inst.push({ id: 'point-load', type: 'cone', position: [0, bD / 2 + 0.5, 0], rotation: [Math.PI, 0, 0], args: [0.15, 0.5, 8], color: '#dc2626' })
+    inst.push({ id: 'point-load', type: 'cone', position: [0, bD / 2 + 0.5, 0], rotation: [Math.PI, 0, 0], args: [0.15, 0.5, 8], color: '#D64545' })
   }
 
   // Stress block cross-section at midspan
   if (showStress) {
     const compH = bD * 0.35
-    inst.push({ id: 'stress-comp', type: 'box', position: [span * 0.35, bD / 2 - compH / 2, bW * 0.6], args: [0.05, compH, bW * 0.9], color: '#dc2626', opacity: 0.5, transparent: true, label: 'Compression' })
+    inst.push({ id: 'stress-comp', type: 'box', position: [span * 0.35, bD / 2 - compH / 2, bW * 0.6], args: [0.05, compH, bW * 0.9], color: '#D64545', opacity: 0.5, transparent: true, label: 'Compression' })
     inst.push({ id: 'stress-tension', type: 'box', position: [span * 0.35, -(bD / 2 - 0.1), bW * 0.6], args: [0.05, bD * 0.2, bW * 0.9], color: '#3b82f6', opacity: 0.5, transparent: true, label: 'Tension' })
-    inst.push({ id: 'neutral-axis', type: 'box', position: [0, bD * 0.15, 0], args: [span, 0.01, bW + 0.1], color: '#16a34a', opacity: 0.6, transparent: true, label: 'NA' })
+    inst.push({ id: 'neutral-axis', type: 'box', position: [0, bD * 0.15, 0], args: [span, 0.01, bW + 0.1], color: '#2D9F6F', opacity: 0.6, transparent: true, label: 'NA' })
   }
 
   return inst

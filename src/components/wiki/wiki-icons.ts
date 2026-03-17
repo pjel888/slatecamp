@@ -1,25 +1,25 @@
 /**
- * Maps wiki root-category slugs to Lucide icon names.
+ * Maps wiki root-category slugs to Phosphor icon components.
  * Used by WikiSidebar and WikiHomePage to render subject-specific icons.
  */
 import {
-  Landmark,
+  Bank,
   Lightbulb,
   Briefcase,
-  Scale,
+  Scales,
   Hammer,
   Plug,
   Triangle,
   PencilRuler,
   BookOpen,
-  type LucideIcon,
-} from 'lucide-react'
+  type Icon as PhosphorIcon,
+} from '@phosphor-icons/react'
 
-export const WIKI_SUBJECT_ICONS: Record<string, LucideIcon> = {
-  'history-of-architecture': Landmark,
+export const WIKI_SUBJECT_ICONS: Record<string, PhosphorIcon> = {
+  'history-of-architecture': Bank,
   'theory-of-architecture': Lightbulb,
   'professional-practice': Briefcase,
-  'building-laws': Scale,
+  'building-laws': Scales,
   'building-materials-construction': Hammer,
   'building-utilities': Plug,
   'structural-conceptualization': Triangle,
@@ -27,4 +27,4 @@ export const WIKI_SUBJECT_ICONS: Record<string, LucideIcon> = {
 }
 
 /** Fallback for any category without a mapped icon */
-export const DEFAULT_WIKI_ICON: LucideIcon = BookOpen
+export const DEFAULT_WIKI_ICON: PhosphorIcon = BookOpen

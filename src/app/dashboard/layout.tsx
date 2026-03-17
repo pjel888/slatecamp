@@ -15,6 +15,7 @@ import { TierProvider } from '@/lib/context/tier-context'
 import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import { DisciplineProvider } from '@/lib/context/discipline-context'
 import { DashboardPageSkeleton } from '@/components/shared/DashboardPageSkeleton'
+import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import type {
   UserTier,
   UserGlobalStats,
@@ -130,6 +131,7 @@ async function DashboardLayoutContent({
               </>
             )}
           </div>
+          <QuickActionsBar />
           </NoteContextProvider>
         </ActiveSessionProvider>
       </DisciplineProvider>

@@ -47,17 +47,17 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'handrail-left', type: 'cylinder', position: [-(cW / 2 - 0.04), 0.9, 0], rotation: [Math.PI / 2, 0, 0], args: [0.019, 0.019, cD - 0.15, 8], color: '#71717a' })
 
   // Control panel
-  const ctrlColor = ctrlViolated ? '#dc2626' : '#3b82f6'
+  const ctrlColor = ctrlViolated ? '#D64545' : '#3b82f6'
   inst.push({ id: 'ctrl-panel', type: 'box', position: [(cW / 2 - 0.05), ctrlH, 0], args: [0.02, 0.35, 0.25], color: ctrlColor })
   // Buttons
   for (let b = 0; b < 5; b++) {
-    inst.push({ id: `btn-${b}`, type: 'sphere', position: [cW / 2 - 0.04, 0.9 + b * 0.06, 0.05], args: [0.012, 6, 6], color: '#f59e0b' })
+    inst.push({ id: `btn-${b}`, type: 'sphere', position: [cW / 2 - 0.04, 0.9 + b * 0.06, 0.05], args: [0.012, 6, 6], color: '#D4951A' })
   }
   // Braille panel
-  inst.push({ id: 'braille', type: 'box', position: [cW / 2 - 0.04, 1.1, -0.06], args: [0.01, 0.08, 0.15], color: '#f59e0b', label: 'Braille' })
+  inst.push({ id: 'braille', type: 'box', position: [cW / 2 - 0.04, 1.1, -0.06], args: [0.01, 0.08, 0.15], color: '#D4951A', label: 'Braille' })
 
   // Control height limits
-  inst.push({ id: 'ctrl-min', type: 'box', position: [cW / 2 + 0.2, 0.9, 0], args: [0.3, 0.01, 0.01], color: '#16a34a', label: '900mm' })
+  inst.push({ id: 'ctrl-min', type: 'box', position: [cW / 2 + 0.2, 0.9, 0], args: [0.3, 0.01, 0.01], color: '#2D9F6F', label: '900mm' })
   inst.push({ id: 'ctrl-max', type: 'box', position: [cW / 2 + 0.2, 1.2, 0], args: [0.3, 0.01, 0.01], color: '#f97316', label: '1200mm' })
   inst.push({ id: 'ctrl-band', type: 'box', position: [cW / 2 + 0.2, 1.05, 0], args: [0.02, 0.3, 0.01], color: '#3b82f6', opacity: 0.4, transparent: true })
 
@@ -67,11 +67,11 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Wheelchair turning circle
-  inst.push({ id: 'wc-circle', type: 'cylinder', position: [0, 0.01, 0], args: [0.75, 0.75, 0.005, 32], color: widthViolated || depthViolated ? '#dc2626' : '#f97316', opacity: 0.3, transparent: true })
+  inst.push({ id: 'wc-circle', type: 'cylinder', position: [0, 0.01, 0], args: [0.75, 0.75, 0.005, 32], color: widthViolated || depthViolated ? '#D64545' : '#f97316', opacity: 0.3, transparent: true })
 
   // Dimension indicators
-  inst.push({ id: 'dim-width', type: 'box', position: [0, -0.1, 0], args: [cW, 0.01, 0.01], color: widthViolated ? '#dc2626' : '#16a34a', label: `W: ${(cW * 1000).toFixed(0)}mm` })
-  inst.push({ id: 'dim-depth', type: 'box', position: [0, -0.1, 0], args: [0.01, 0.01, cD], color: depthViolated ? '#dc2626' : '#16a34a', label: `D: ${(cD * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'dim-width', type: 'box', position: [0, -0.1, 0], args: [cW, 0.01, 0.01], color: widthViolated ? '#D64545' : '#2D9F6F', label: `W: ${(cW * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'dim-depth', type: 'box', position: [0, -0.1, 0], args: [0.01, 0.01, cD], color: depthViolated ? '#D64545' : '#2D9F6F', label: `D: ${(cD * 1000).toFixed(0)}mm` })
 
   return inst
 }

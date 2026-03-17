@@ -5,7 +5,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { HelpCircle } from "lucide-react";
+import { Question } from "@phosphor-icons/react";
+import { SCIcon } from "@/components/graphics/icons/Icon";
 
 /**
  * Standard info popover matching the SRS Review / Quiz mode tooltip design.
@@ -13,7 +14,7 @@ import { HelpCircle } from "lucide-react";
  * Trigger: question mark icon. Content: rounded card with border and shadow.
  */
 export const STANDARD_INFO_POPOVER_CONTENT_CLASS =
-  "w-80 rounded-xl border border-border bg-card p-4 shadow-lg text-sm text-foreground";
+  "w-80 rounded-lg border border-border bg-card p-4 shadow-lg text-sm text-foreground";
 
 interface StandardInfoPopoverProps {
   /** Content (plain text or JSX). */
@@ -41,7 +42,7 @@ export function StandardInfoPopover({
         }
         aria-label="More info"
       >
-        <HelpCircle className="h-4 w-4" strokeWidth={1.5} />
+        <SCIcon icon={Question} size="sm" />
       </PopoverTrigger>
       <PopoverContent
         side={side}

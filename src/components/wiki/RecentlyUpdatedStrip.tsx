@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
-import { Clock } from 'lucide-react'
+import { Clock } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import type { WikiPage } from '@/types/app'
 
@@ -13,7 +16,7 @@ export function RecentlyUpdatedStrip({ pages }: RecentlyUpdatedStripProps) {
   return (
     <div className="mt-8">
       <div className="flex items-center gap-2 mb-3">
-        <Clock className="h-3.5 w-3.5 text-muted-foreground" strokeWidth={1.5} />
+        <SCIcon icon={Clock} size="xs" className="text-muted-foreground" />
         <h2 className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
           Recently Updated
         </h2>

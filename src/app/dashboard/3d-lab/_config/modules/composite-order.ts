@@ -28,7 +28,7 @@ export const compositeOrderConfig: ExplodedAssemblyConfig = {
       id: 'comp-acanthus-lower',
       label: 'Acanthus Leaves — Lower Row',
       description: 'First row of 8 acanthus leaves at capital base — identical to Corinthian lower row.',
-      geometry: { id: 'comp-acanthus-lower-geo', type: 'cylinder', position: [0, 1.5, 0], args: [0.14, 0.11, 0.12, 16], color: '#16a34a' },
+      geometry: { id: 'comp-acanthus-lower-geo', type: 'cylinder', position: [0, 1.5, 0], args: [0.14, 0.11, 0.12, 16], color: '#2D9F6F' },
       explodeOffset: yOff(0.9),
     },
     {

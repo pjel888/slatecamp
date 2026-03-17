@@ -4,7 +4,8 @@ import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Lock } from "lucide-react";
+import { Lock } from "@phosphor-icons/react/dist/ssr";
+import { SCIcon } from "@/components/graphics/icons/Icon";
 import { ModuleGallery } from "./_components/ModuleGallery";
 import { ModuleViewer } from "./_components/ModuleViewer";
 
@@ -28,7 +29,7 @@ export default async function ThreeDLabPage({
   if (!hasAccess) {
     return (
       <div className="flex flex-col items-center justify-center py-24 text-center">
-        <Lock className="h-12 w-12 text-muted-foreground" strokeWidth={1.5} />
+        <SCIcon icon={Lock} size="2xl" className="text-muted-foreground" />
         <h1 className="mt-4 text-xl font-semibold text-foreground">
           3D Interactive Lab
         </h1>

@@ -26,7 +26,7 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     targetAudience: '1st to 4th-year architecture students',
     price: '₱0',
     priceSubtext: 'Ad-Supported',
-    hook: 'Build the habit before the grind.',
+    hook: 'Build the habit before exam day.',
     features: [
       'Unlimited access to the Wiki',
       'Camp Mode (basic feedback quizzing)',

@@ -24,7 +24,7 @@ export const waterSupplyRiserConfig: CutawaySectionConfig = {
       material: 'PVC/DI Pipe',
       description: 'Municipal water main supplying the building service connection.',
       depth: 0.1,
-      geometry: { id: 'geo-main', type: 'cylinder', args: [0.05, 0.05, 3.0, 16], position: [0, 0.25, 0], rotation: [0, 0, Math.PI / 2], color: '#2563eb' },
+      geometry: { id: 'geo-main', type: 'cylinder', args: [0.05, 0.05, 3.0, 16], position: [0, 0.25, 0], rotation: [0, 0, Math.PI / 2], color: '#3B6B9C' },
     },
     {
       id: 'water-meter',
@@ -50,7 +50,7 @@ export const waterSupplyRiserConfig: CutawaySectionConfig = {
       description: 'Cold water service entry pipe with main shutoff valve at entry point.',
       codeCitation: 'NPCP §604.1',
       depth: 0.6,
-      geometry: { id: 'geo-entry', type: 'cylinder', args: [0.0125, 0.0125, 0.8, 12], position: [-1, 0.5, 0], color: '#2563eb' },
+      geometry: { id: 'geo-entry', type: 'cylinder', args: [0.0125, 0.0125, 0.8, 12], position: [-1, 0.5, 0], color: '#3B6B9C' },
     },
     {
       id: 'cold-riser',
@@ -59,7 +59,7 @@ export const waterSupplyRiserConfig: CutawaySectionConfig = {
       description: 'Vertical cold water riser supplying upper floors. Sized for flow and pressure drop.',
       codeCitation: 'NPCP §604',
       depth: 0.8,
-      geometry: { id: 'geo-criser', type: 'cylinder', args: [0.0125, 0.0125, 3.2, 12], position: [-0.8, 2.25, 0], color: '#2563eb' },
+      geometry: { id: 'geo-criser', type: 'cylinder', args: [0.0125, 0.0125, 3.2, 12], position: [-0.8, 2.25, 0], color: '#3B6B9C' },
     },
     {
       id: 'hot-riser',
@@ -68,7 +68,7 @@ export const waterSupplyRiserConfig: CutawaySectionConfig = {
       description: 'Hot water riser from water heater supplying upper floor fixtures.',
       codeCitation: 'NPCP §608',
       depth: 0.9,
-      geometry: { id: 'geo-hriser', type: 'cylinder', args: [0.01, 0.01, 2.5, 12], position: [-0.5, 2.1, 0], color: '#dc2626' },
+      geometry: { id: 'geo-hriser', type: 'cylinder', args: [0.01, 0.01, 2.5, 12], position: [-0.5, 2.1, 0], color: '#D64545' },
     },
     {
       id: 'branch-line',

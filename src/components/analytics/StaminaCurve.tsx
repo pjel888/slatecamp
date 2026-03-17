@@ -36,14 +36,14 @@ export function StaminaCurve({ data }: Props) {
     <Card className="border-border bg-white p-2 relative h-full">
       <RichInfoPopover title="Cognitive Stamina" description="Accuracy by question position. A declining curve indicates cognitive fatigue in longer sessions." />
       <CardHeader className="p-2 pt-1">
-        <CardTitle className="text-[11px] font-bold tracking-wider text-zinc-500 uppercase">
+        <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>
           Cognitive Stamina
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
           <div className="h-[160px] flex items-center justify-center">
-            <p className="text-xs text-zinc-400 text-center leading-snug max-w-[180px]">
+            <p className="text-xs text-center leading-snug max-w-[180px]" style={{ color: '#8896A7' }}>
               Complete sessions with 10+ questions to see your stamina curve.
             </p>
           </div>
@@ -51,17 +51,17 @@ export function StaminaCurve({ data }: Props) {
           <div className="h-[200px]">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid stroke="#f4f4f5" strokeDasharray="3 3" />
-                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fill: '#6b7280', fontSize: 11 }} />
+                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fill: '#4A5568', fontSize: 11 }} />
                 <YAxis domain={[0, 100]} tickFormatter={v => `${v}%`} axisLine={false} tickLine={false}
-                  tick={{ fill: '#6b7280', fontSize: 11 }} ticks={[0, 50, 75, 100]} />
+                  tick={{ fill: '#4A5568', fontSize: 11 }} ticks={[0, 50, 75, 100]} />
                 <Tooltip
                   formatter={(v: any, _: any, props: any) => [`${v}% (${props.payload.sampleSize}Q)`, 'Accuracy']}
-                  contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }}
+                  contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}
                 />
-                <ReferenceLine y={75} stroke="#10b981" strokeDasharray="4 4" strokeWidth={1} />
-                <Line type="monotone" dataKey="accuracy" stroke="#2563eb" strokeWidth={1.5}
-                  dot={{ r: 3, fill: '#2563eb', stroke: '#fff', strokeWidth: 1.5 }}
+                <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
+                <Line type="monotone" dataKey="accuracy" stroke="#3B6B9C" strokeWidth={1.5}
+                  dot={{ r: 3, fill: '#3B6B9C', stroke: '#fff', strokeWidth: 1.5 }}
                   activeDot={{ r: 4 }} animationDuration={1200} />
               </LineChart>
             </ResponsiveContainer>

@@ -1,6 +1,6 @@
 /**
  * Subject fallback color when subject.color is null. Hex so it can be used in
- * inline styles (e.g. tint: `${color}15`). Matches design token --color-slate.
+ * inline styles (e.g. tint: `${color}15`). Matches design token --text-tertiary.
  */
 export const FALLBACK_SUBJECT_COLOR = "#86868B";
 

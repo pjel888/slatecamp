@@ -4,7 +4,8 @@ import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Placeholder from '@tiptap/extension-placeholder'
 import { useCallback, useEffect, useState } from 'react'
-import { Save, Loader2, ArrowLeft } from 'lucide-react'
+import { FloppyDisk, CircleNotch, ArrowLeft } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { createArticle, updateArticle } from '@/lib/wiki/wiki-actions'
@@ -105,7 +106,7 @@ export function AdminWikiEditor({
             href="/admin/wiki"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <SCIcon icon={ArrowLeft} size="sm" />
           </Link>
           <div className="flex items-center gap-3">
             {lastSaved && (
@@ -121,14 +122,14 @@ export function AdminWikiEditor({
               disabled={isSaving}
               className={cn(
                 "flex items-center gap-2 rounded-md px-3 py-1.5 text-sm",
-                "bg-blue-600 text-white hover:bg-blue-700",
+                "bg-primary text-white hover:bg-[#2F5A85]",
                 "disabled:opacity-50"
               )}
             >
               {isSaving ? (
-                <Loader2 className="h-4 w-4 animate-spin" />
+                <SCIcon icon={CircleNotch} size="sm" className="animate-spin" />
               ) : (
-                <Save className="h-4 w-4" />
+                <SCIcon icon={FloppyDisk} size="sm" />
               )}
               {isSaving ? 'Saving...' : 'Save'}
             </button>

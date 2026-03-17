@@ -56,6 +56,9 @@ export interface Question {
   difficulty_rating?: number; // IRT field
   discrimination_rating?: number; // IRT field
   prompt_image_url?: string | null;
+  explanation?: string | null;
+  code_citation?: string | null;
+  model_id?: string | null;
   created_at: string;
   updated_at?: string;
 }

@@ -62,18 +62,18 @@ export const slabConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Formply (18mm)
         { id: 'formply', type: 'box', args: [3.5, 0.018, 2.8], position: [0, 2.94, 0], color: '#fbbf24', label: 'Formply 18mm' },
         // Bar chairs (grid pattern)
-        { id: 'chair-00', type: 'box', args: [0.04, 0.022, 0.04], position: [-1.0, 2.961, -0.8], color: '#16a34a', label: 'Bar chair (25mm cover)' },
-        { id: 'chair-01', type: 'box', args: [0.04, 0.022, 0.04], position: [0, 2.961, -0.8], color: '#16a34a' },
-        { id: 'chair-02', type: 'box', args: [0.04, 0.022, 0.04], position: [1.0, 2.961, -0.8], color: '#16a34a' },
-        { id: 'chair-10', type: 'box', args: [0.04, 0.022, 0.04], position: [-1.0, 2.961, 0], color: '#16a34a' },
-        { id: 'chair-11', type: 'box', args: [0.04, 0.022, 0.04], position: [0, 2.961, 0], color: '#16a34a' },
-        { id: 'chair-12', type: 'box', args: [0.04, 0.022, 0.04], position: [1.0, 2.961, 0.8], color: '#16a34a' },
+        { id: 'chair-00', type: 'box', args: [0.04, 0.022, 0.04], position: [-1.0, 2.961, -0.8], color: '#2D9F6F', label: 'Bar chair (25mm cover)' },
+        { id: 'chair-01', type: 'box', args: [0.04, 0.022, 0.04], position: [0, 2.961, -0.8], color: '#2D9F6F' },
+        { id: 'chair-02', type: 'box', args: [0.04, 0.022, 0.04], position: [1.0, 2.961, -0.8], color: '#2D9F6F' },
+        { id: 'chair-10', type: 'box', args: [0.04, 0.022, 0.04], position: [-1.0, 2.961, 0], color: '#2D9F6F' },
+        { id: 'chair-11', type: 'box', args: [0.04, 0.022, 0.04], position: [0, 2.961, 0], color: '#2D9F6F' },
+        { id: 'chair-12', type: 'box', args: [0.04, 0.022, 0.04], position: [1.0, 2.961, 0.8], color: '#2D9F6F' },
         // Bottom short-span bars (Z direction — below)
-        { id: 'bs-1', type: 'box', args: [0.02, 0.02, 2.7], position: [-1.0, 2.985, 0], color: '#dc2626', label: 'Short-span bars (lower)' },
-        { id: 'bs-2', type: 'box', args: [0.02, 0.02, 2.7], position: [-0.5, 2.985, 0], color: '#dc2626' },
-        { id: 'bs-3', type: 'box', args: [0.02, 0.02, 2.7], position: [0, 2.985, 0], color: '#dc2626' },
-        { id: 'bs-4', type: 'box', args: [0.02, 0.02, 2.7], position: [0.5, 2.985, 0], color: '#dc2626' },
-        { id: 'bs-5', type: 'box', args: [0.02, 0.02, 2.7], position: [1.0, 2.985, 0], color: '#dc2626' },
+        { id: 'bs-1', type: 'box', args: [0.02, 0.02, 2.7], position: [-1.0, 2.985, 0], color: '#D64545', label: 'Short-span bars (lower)' },
+        { id: 'bs-2', type: 'box', args: [0.02, 0.02, 2.7], position: [-0.5, 2.985, 0], color: '#D64545' },
+        { id: 'bs-3', type: 'box', args: [0.02, 0.02, 2.7], position: [0, 2.985, 0], color: '#D64545' },
+        { id: 'bs-4', type: 'box', args: [0.02, 0.02, 2.7], position: [0.5, 2.985, 0], color: '#D64545' },
+        { id: 'bs-5', type: 'box', args: [0.02, 0.02, 2.7], position: [1.0, 2.985, 0], color: '#D64545' },
         // Bottom long-span bars (X direction — above)
         { id: 'bl-1', type: 'box', args: [3.4, 0.02, 0.02], position: [0, 3.007, -0.8], color: '#ef4444', label: 'Long-span bars (upper)' },
         { id: 'bl-2', type: 'box', args: [3.4, 0.02, 0.02], position: [0, 3.007, 0], color: '#ef4444' },
@@ -93,7 +93,7 @@ export const slabConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Formply
         { id: 'formply', type: 'box', args: [3.5, 0.018, 2.8], position: [0, 2.94, 0], color: '#fbbf24', opacity: 0.7, transparent: true },
         // Bottom rebar (context)
-        { id: 'bot-rebar', type: 'box', args: [3.4, 0.02, 2.7], position: [0, 2.995, 0], color: '#dc2626', opacity: 0.3, transparent: true, label: 'Bottom rebar' },
+        { id: 'bot-rebar', type: 'box', args: [3.4, 0.02, 2.7], position: [0, 2.995, 0], color: '#D64545', opacity: 0.3, transparent: true, label: 'Bottom rebar' },
         // MEP conduit sleeves (PVC)
         { id: 'sleeve-1', type: 'cylinder', args: [0.04, 0.04, 0.16, 8], position: [-0.5, 3.04, 0.3], color: '#f97316', label: 'PVC conduit sleeve' },
         { id: 'sleeve-2', type: 'cylinder', args: [0.04, 0.04, 0.16, 8], position: [0, 3.04, -0.3], color: '#f97316' },

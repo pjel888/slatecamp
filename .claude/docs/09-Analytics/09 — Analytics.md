@@ -83,7 +83,7 @@ Where:
 
 **What this means for the student:**
 
-- Grinding easy questions to inflate your score does not work. The math sees through it.
+- Repeating easy questions to inflate your score does not work. The math sees through it.
 - Tackling harder questions — even if you get some wrong — builds a more credible mastery profile
 - The Readiness Score reflects *depth of understanding*, not breadth of activity
 
@@ -148,6 +148,13 @@ The Node Inspector answers the question a student asks when they see a red block
 ## Intervention Mechanics — What the Data Does
 
 A heatmap that shows red nodes but offers no path forward is a diagnostic without a prescription. SlateCamp's analytics engine does not merely identify weakness. It systematically eliminates it.
+
+> **Campfire Rebrand Note:** The following IP names have different student-facing labels in the UI:
+> - Blindspot Protocol™ → "Focus Review" in student UI
+> - Endurance Cycle™ → "Extended Practice" in student UI
+> - Proof Simulation™ → "Full Exam Simulation" in student UI
+> - "drill" → "practice" / "session" in student UI
+> Internal docs retain the IP/trademark names for legal purposes.
 
 ### The Blindspot Protocol
 

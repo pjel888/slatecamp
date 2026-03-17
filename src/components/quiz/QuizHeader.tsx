@@ -1,6 +1,7 @@
 'use client'
 
-import { Flag, MessageSquare, X } from 'lucide-react'
+import { Flag, ChatCircle, X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { TestMode } from '@/types/app'
 import { SaveIndicator } from './SaveIndicator'
@@ -16,13 +17,13 @@ const MODE_LABELS: Record<TestMode, string> = {
 }
 
 const MODE_STYLES: Record<TestMode, string> = {
-  camp: 'bg-blue-50 text-blue-700 border-blue-200',
-  chill: 'bg-zinc-100 text-zinc-700 border-zinc-200',
-  storm: 'bg-zinc-900 text-white border-zinc-900',
-  proof_sim: 'bg-zinc-900 text-white border-zinc-900',
-  blindspot: 'bg-amber-50 text-amber-700 border-amber-200',
-  custom: 'bg-zinc-100 text-zinc-700 border-zinc-200',
-  endurance: 'bg-zinc-100 text-zinc-700 border-zinc-200',
+  camp: 'bg-[#F0F5FA] text-[#2F5A85] border-[#2F5A85]/20',
+  chill: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
+  storm: 'bg-[#1A2332] text-white border-[#1A2332]',
+  proof_sim: 'bg-[#1A2332] text-white border-[#1A2332]',
+  blindspot: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
+  custom: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
+  endurance: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
 }
 
 interface QuizHeaderProps {
@@ -52,27 +53,27 @@ export function QuizHeader({
 }: QuizHeaderProps) {
   const progress = ((currentIndex + 1) / totalQuestions) * 100
   const isStrict = mode === 'storm' || mode === 'proof_sim'
-  const label = isSubjectMode ? 'Subject Drill' : MODE_LABELS[mode]
+  const label = isSubjectMode ? 'Subject Practice' : MODE_LABELS[mode]
 
   return (
-    <header className="shrink-0 border-b border-zinc-100 bg-[#FAFAF9]">
+    <header className="shrink-0 border-b border-[#D4DAE3] bg-[#F5F7FA]">
       <div className="max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
         {/* Left: mode + counter */}
         <div className="flex items-center gap-3 min-w-0">
           <span
             className={cn(
-              'shrink-0 px-2 py-0.5 rounded-sm border text-[9px] font-black uppercase tracking-widest',
+              'shrink-0 px-2 py-0.5 rounded-sm border text-[11px] font-black uppercase tracking-widest',
               MODE_STYLES[mode],
             )}
           >
             {label}
           </span>
           {isTargeted && (
-            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[9px] font-black uppercase tracking-widest bg-blue-50 text-blue-700 border-blue-200">
+            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[11px] font-black uppercase tracking-widest bg-[#F0F5FA] text-[#2F5A85] border-[#2F5A85]/20">
               Targeted
             </span>
           )}
-          <span className="text-[11px] font-bold text-zinc-400 tracking-wide whitespace-nowrap">
+          <span className="text-[11px] font-bold text-[#8896A7] tracking-wide whitespace-nowrap">
             {currentIndex + 1} / {totalQuestions}
           </span>
         </div>
@@ -89,43 +90,43 @@ export function QuizHeader({
             aria-label={isFlagged ? 'Remove flag' : 'Flag for review'}
             aria-pressed={isFlagged}
             className={cn(
-              'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[9px] font-black uppercase tracking-widest transition-colors',
+              'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               isFlagged
-                ? 'bg-amber-50 text-amber-600 border border-amber-200'
-                : 'text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600',
+                ? 'bg-[#FEF8ED] text-[#D4951A] border border-[#D4951A]/20'
+                : 'text-[#8896A7] hover:bg-[#F0F5FA] hover:text-[#4A5568]',
             )}
           >
-            <Flag className={cn('h-3.5 w-3.5', isFlagged && 'fill-current')} />
+            <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
             <span className="hidden sm:inline">Flag</span>
           </button>
 
           <button
             onClick={onAI}
             aria-label="Open AI tutor"
-            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[9px] font-black uppercase tracking-widest text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600 transition-colors"
+            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-[#8896A7] hover:bg-[#F0F5FA] hover:text-[#4A5568] transition-colors"
           >
-            <MessageSquare className="h-3.5 w-3.5" />
+            <SCIcon icon={ChatCircle} size="xs" />
             <span className="hidden sm:inline">AI</span>
           </button>
 
-          <div className="w-px h-4 bg-zinc-200 mx-1" aria-hidden />
+          <div className="w-px h-4 bg-[#D4DAE3] mx-1" aria-hidden />
 
           <button
             onClick={onExit}
             aria-label="Exit quiz session"
-            className="h-8 w-8 flex items-center justify-center rounded-sm text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
+            className="h-8 w-8 flex items-center justify-center rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F0F5FA] transition-colors"
           >
-            <X className="h-4 w-4" />
+            <SCIcon icon={X} size="sm" />
           </button>
         </div>
       </div>
 
       {/* Progress bar */}
-      <div className="h-[3px] w-full bg-zinc-100" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions}>
+      <div className="h-[3px] w-full bg-[#F0F5FA]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions}>
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',
-            isStrict ? 'bg-zinc-700' : 'bg-blue-600',
+            isStrict ? 'bg-[#1A2332]' : 'bg-primary',
           )}
           style={{ width: `${progress}%` }}
         />

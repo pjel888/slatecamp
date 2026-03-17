@@ -46,12 +46,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Floor landing markers
   for (let s = 0; s < storeys; s++) {
     const ly = s * 3.0
-    inst.push({ id: `landing-${s}`, type: 'box', position: [0, ly - 0.02, shaftD / 2 + 0.3], args: [shaftW, 0.04, 0.6], color: s === 0 ? '#16a34a' : '#71717a' })
+    inst.push({ id: `landing-${s}`, type: 'box', position: [0, ly - 0.02, shaftD / 2 + 0.3], args: [shaftW, 0.04, 0.6], color: s === 0 ? '#2D9F6F' : '#71717a' })
   }
 
   // Controls panel
   if (showCtrl) {
-    inst.push({ id: 'ctrl-low', type: 'box', position: [cW / 2 - 0.08, 0.9, 0], args: [0.05, 0.05, 0.3], color: '#16a34a', label: '900mm' })
+    inst.push({ id: 'ctrl-low', type: 'box', position: [cW / 2 - 0.08, 0.9, 0], args: [0.05, 0.05, 0.3], color: '#2D9F6F', label: '900mm' })
     inst.push({ id: 'ctrl-high', type: 'box', position: [cW / 2 - 0.08, 1.2, 0], args: [0.05, 0.05, 0.3], color: '#f97316', label: '1200mm' })
     inst.push({ id: 'ctrl-band', type: 'box', position: [cW / 2 - 0.08, 1.05, 0], args: [0.04, 0.3, 0.25], color: '#3b82f6', opacity: 0.4, transparent: true })
   }

@@ -4,7 +4,8 @@ import { useState, useEffect, useMemo } from 'react'
 import dynamic from 'next/dynamic'
 import type { Model3D, ModelParameter, SpatialHotspot } from '@/components/3d/Workspace'
 import { Workspace } from '@/components/3d/Workspace'
-import { Loader2 } from 'lucide-react'
+import { CircleNotch } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import type {
   ParametricSceneConfig,
   ExplodedAssemblyConfig,
@@ -335,7 +336,7 @@ const MODULE_CONFIGS: Record<string, ModuleConfigEntry> = {
 function LoadingSpinner() {
   return (
     <div className="flex h-full items-center justify-center">
-      <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+      <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-muted-foreground" />
       <span className="ml-2 text-[11px] text-muted-foreground">Loading module…</span>
     </div>
   )

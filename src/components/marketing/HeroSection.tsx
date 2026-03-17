@@ -12,19 +12,20 @@ import {
 } from '@/components/marketing/LandingPrimitives'
 import { ROUTES } from '@/lib/constants'
 import { cn } from '@/lib/utils'
-import { ChevronRight } from 'lucide-react'
+import { CaretRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 /* ── Dashboard Mockup Peek ── */
 
 const DashboardPeek = () => (
   <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
-    <div className='relative h-[140px] overflow-hidden rounded-t-2xl border border-b-0 border-zinc-200 bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
+    <div className='relative h-[140px] overflow-hidden rounded-t-md border border-b-0 border-zinc-200 bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
       {/* Fake window chrome */}
       <div className='flex items-center gap-1.5 border-b border-zinc-200 bg-zinc-100 px-4 py-2.5'>
         <div className='h-2.5 w-2.5 rounded-full bg-red-400' />
         <div className='h-2.5 w-2.5 rounded-full bg-amber-400' />
         <div className='h-2.5 w-2.5 rounded-full bg-green-500' />
-        <span className='ml-3 text-[10px] text-zinc-500'>
+        <span className='ml-3 text-[11px] text-zinc-500'>
           SlateCamp Dashboard
         </span>
       </div>
@@ -40,7 +41,7 @@ const DashboardPeek = () => (
         {/* Main Content */}
         <div className='flex-1 space-y-2'>
           <div className='flex gap-3'>
-            <div className='h-14 w-14 shrink-0 rounded-xl bg-zinc-200' />
+            <div className='h-14 w-14 shrink-0 rounded-md bg-zinc-200' />
             <div className='flex-1 space-y-1.5 pt-1'>
               <div className='h-2.5 w-32 rounded bg-zinc-300' />
               <div className='h-2 w-48 rounded bg-zinc-200' />
@@ -49,11 +50,11 @@ const DashboardPeek = () => (
           <div className='flex gap-2'>
             {[
               'bg-green-500',
-              'bg-blue-600',
-              'bg-blue-600',
+              'bg-primary',
+              'bg-primary',
               'bg-green-500',
               'bg-green-500',
-              'bg-blue-600',
+              'bg-primary',
             ].map((colorClass, i) => (
               <div
                 key={i}
@@ -154,10 +155,10 @@ const STATS = [
 // Card 1: Supported Exams (Back Left)
 const ExamsSupportedCard = () => (
   <div
-    className='order-1 w-full max-w-[280px] rounded-xl bg-linear-to-b from-white/95 to-zinc-50/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-zinc-200/90 transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+    className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-white/95 to-zinc-50/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-zinc-200/90 transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
     aria-hidden='true'
   >
-    <p className='mb-2.5 text-[10px] font-extrabold uppercase tracking-[0.22em] text-zinc-500'>
+    <p className='mb-2.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-zinc-500'>
       Supported exams
     </p>
     <ul className='space-y-1.75'>
@@ -166,7 +167,7 @@ const ExamsSupportedCard = () => (
         const dotColor = isLive
           ? 'bg-emerald-600'
           : exam.category === 'engineering'
-            ? 'bg-blue-600'
+            ? 'bg-primary'
             : exam.category === 'health'
               ? 'bg-emerald-600'
               : exam.category === 'business'
@@ -199,12 +200,12 @@ const ExamsSupportedCard = () => (
               </span>
             </div>
             {exam.tone === 'live' ? (
-              <span className='inline-flex shrink-0 items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700'>
+              <span className='inline-flex shrink-0 items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700'>
                 <span className='h-1.5 w-1.5 rounded-full bg-emerald-600' />
                 Live
               </span>
             ) : (
-              <span className='shrink-0 text-[10px] font-medium text-zinc-500'>
+              <span className='shrink-0 text-[11px] font-medium text-zinc-500'>
                 {exam.status}
               </span>
             )}
@@ -212,7 +213,7 @@ const ExamsSupportedCard = () => (
         )
       })}
       {SUPPORTED_EXAMS.length > 6 ? (
-        <li className='mt-1 flex items-center justify-end text-[10px] font-medium text-zinc-500'>
+        <li className='mt-1 flex items-center justify-end text-[11px] font-medium text-zinc-500'>
           +{SUPPORTED_EXAMS.length - 6} more exams
         </li>
       ) : null}
@@ -224,10 +225,10 @@ const ExamsSupportedCard = () => (
 const MockQuestionCard = () => {
   return (
     <div
-      className='order-3 w-full max-w-[280px] rounded-xl border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+      className='order-3 w-full max-w-[280px] rounded-md border border-zinc-200 bg-zinc-50 p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
-      <span className='mb-2 inline-block rounded bg-zinc-100 px-2 py-0.5 text-[10px] font-medium text-zinc-900'>
+      <span className='mb-2 inline-block rounded bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-zinc-900'>
         {MOCK_QUESTION.topic}
       </span>
       <p className='mb-3 text-[12px] leading-snug text-zinc-900'>
@@ -281,11 +282,11 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 
   return (
     <div
-      className='order-2 z-20 w-full max-w-[320px] rounded-2xl border border-zinc-200 bg-zinc-50/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
+      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-zinc-200 bg-zinc-50/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='mb-2 inline-flex items-center gap-1 rounded-full bg-zinc-100 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.18em] text-zinc-500'>
+      <div className='mb-2 inline-flex items-center gap-1 rounded-full bg-zinc-100 px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-zinc-500'>
         <span className='h-1.5 w-1.5 rounded-full bg-amber-500' />
         Readiness snapshot
       </div>
@@ -301,7 +302,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           : 'A quick look at how your recent practice sessions are performing by subject.'}
       </p>
 
-      <div className='mt-3 flex items-center gap-3 rounded-xl bg-white/80 p-3 ring-1 ring-zinc-100'>
+      <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-zinc-100'>
         <ReadinessDial
           value={isHovered ? 98 : 42}
           label={isHovered ? 'Exam-ready' : 'At risk'}
@@ -366,7 +367,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       <div className='mt-3 flex items-center justify-between text-[11px] text-zinc-500'>
         <Link
           href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
-          className='ml-auto inline-flex items-center gap-1 rounded-full border border-zinc-200 bg-white/80 px-3 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 text-2xs'
+          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-zinc-200 bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-[#F0F5FA] hover:text-[#2F5A85] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >
           Start Now
@@ -424,7 +425,7 @@ export const HeroSection = ({
           <div className='mt-26'>
             <div className='landing-reveal flex items-center gap-3'>
               <div
-                className='flex flex-col gap-1 text-blue-500'
+                className='flex flex-col gap-1 text-primary'
                 aria-label='Board exam preparation platform.'
               >
                 <div className='flex flex-row items-center gap-2 '>
@@ -443,11 +444,11 @@ export const HeroSection = ({
             <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-blue-600 px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2'
+                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-primary px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#2F5A85] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2'
               >
-                {ctaLabel} <ChevronRight />
+                {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
-              <p className='landing-reveal landing-delay-5 flex justify-start text-[10px] font-semibold text-zinc-500'>
+              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-zinc-500'>
                 Free forever to start &middot; No credit card required
               </p>
             </div>
@@ -461,7 +462,7 @@ export const HeroSection = ({
                 className='flex items-center gap-2 text-[12px] text-zinc-400'
               >
                 <span
-                  className='h-1 w-1 rounded-full bg-blue-500'
+                  className='h-1 w-1 rounded-full bg-[#3B6B9C]'
                   aria-hidden='true'
                 />
                 {stat}

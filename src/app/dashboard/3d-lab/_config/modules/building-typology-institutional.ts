@@ -32,7 +32,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
       { label: 'Corridor', size: 20 * scale, color: '#a1a1aa' },
     ],
     clinic: [
-      { label: 'Waiting', size: 30 * scale, color: '#16a34a' },
+      { label: 'Waiting', size: 30 * scale, color: '#2D9F6F' },
       { label: 'Consultation', size: 20 * scale, color: '#3b82f6' },
       { label: 'Exam Room', size: 16 * scale, color: '#6366f1' },
       { label: 'Lab', size: 14 * scale, color: '#f97316' },
@@ -40,15 +40,15 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
       { label: 'Utility', size: 8 * scale, color: '#52525b' },
     ],
     hospital: [
-      { label: 'OPD', size: 80 * scale, color: '#16a34a' },
+      { label: 'OPD', size: 80 * scale, color: '#2D9F6F' },
       { label: 'Ward', size: 100 * scale, color: '#3b82f6' },
-      { label: 'OR/ICU', size: 60 * scale, color: '#dc2626' },
+      { label: 'OR/ICU', size: 60 * scale, color: '#D64545' },
       { label: 'Nursing', size: 30 * scale, color: '#6366f1' },
       { label: 'Utility', size: 30 * scale, color: '#52525b' },
     ],
     library: [
-      { label: 'Reading', size: 80 * scale, color: '#f59e0b' },
-      { label: 'Stacks', size: 60 * scale, color: '#d97706' },
+      { label: 'Reading', size: 80 * scale, color: '#D4951A' },
+      { label: 'Stacks', size: 60 * scale, color: '#D4951A' },
       { label: 'Reference', size: 30 * scale, color: '#92400e' },
       { label: 'Admin', size: 20 * scale, color: '#6366f1' },
       { label: 'Toilet', size: 10 * scale, color: '#0891b2' },
@@ -89,7 +89,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Flag pole / identifier
   inst.push({ id: 'flag-pole', type: 'cylinder', position: [-(totalW / 2) - 0.3, floors * stH / 2, 0], args: [0.02, 0.02, floors * stH, 6], color: '#52525b' })
-  inst.push({ id: 'flag', type: 'box', position: [-(totalW / 2) - 0.15, floors * stH - 0.05, 0], args: [0.2, 0.12, 0.02], color: '#dc2626' })
+  inst.push({ id: 'flag', type: 'box', position: [-(totalW / 2) - 0.15, floors * stH - 0.05, 0], args: [0.2, 0.12, 0.02], color: '#D64545' })
 
   return inst
 }

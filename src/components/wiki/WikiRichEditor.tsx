@@ -12,19 +12,20 @@ import TaskItem from '@tiptap/extension-task-item'
 import HorizontalRule from '@tiptap/extension-horizontal-rule'
 import { TextStyle, FontSize } from '@tiptap/extension-text-style'
 import {
-  Bold,
-  Italic,
-  Underline as UnderlineIcon,
-  Highlighter,
-  List,
-  ListOrdered,
-  ListTodo,
-  Heading1,
-  Heading2,
-  Heading3,
-  ImagePlus,
+  TextB,
+  TextItalic,
+  TextUnderline,
+  HighlighterCircle,
+  List as ListIcon,
+  ListNumbers,
+  ListChecks,
+  TextH,
+  TextHTwo,
+  TextHThree,
+  ImageSquare,
   Minus,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { markdownToHtml, htmlToMarkdown } from '@/lib/wiki-markdown'
 import { cn } from '@/lib/utils'
 
@@ -143,7 +144,7 @@ export function WikiRichEditor({
             )}
             title='Bold'
           >
-            <Bold className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextB} size="xs" />
           </button>
           <button
             type='button'
@@ -156,7 +157,7 @@ export function WikiRichEditor({
             )}
             title='Italic'
           >
-            <Italic className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextItalic} size="xs" />
           </button>
           <button
             type='button'
@@ -169,7 +170,7 @@ export function WikiRichEditor({
             )}
             title='Underline'
           >
-            <UnderlineIcon className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextUnderline} size="xs" />
           </button>
           <button
             type='button'
@@ -182,7 +183,7 @@ export function WikiRichEditor({
             )}
             title='Highlight'
           >
-            <Highlighter className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={HighlighterCircle} size="xs" />
           </button>
           <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <button
@@ -196,7 +197,7 @@ export function WikiRichEditor({
             )}
             title='Bullet list'
           >
-            <List className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={ListIcon} size="xs" />
           </button>
           <button
             type='button'
@@ -209,7 +210,7 @@ export function WikiRichEditor({
             )}
             title='Numbered list'
           >
-            <ListOrdered className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={ListNumbers} size="xs" />
           </button>
           <button
             type='button'
@@ -222,7 +223,7 @@ export function WikiRichEditor({
             )}
             title='Todo list'
           >
-            <ListTodo className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={ListChecks} size="xs" />
           </button>
           <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <button
@@ -238,7 +239,7 @@ export function WikiRichEditor({
             )}
             title='Heading 1'
           >
-            <Heading1 className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextH} size="xs" />
           </button>
           <button
             type='button'
@@ -253,7 +254,7 @@ export function WikiRichEditor({
             )}
             title='Heading 2'
           >
-            <Heading2 className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextHTwo} size="xs" />
           </button>
           <button
             type='button'
@@ -268,7 +269,7 @@ export function WikiRichEditor({
             )}
             title='Heading 3'
           >
-            <Heading3 className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={TextHThree} size="xs" />
           </button>
           <button
             type='button'
@@ -276,7 +277,7 @@ export function WikiRichEditor({
             className='rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground'
             title='Horizontal line'
           >
-            <Minus className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={Minus} size="xs" />
           </button>
           <span className='mx-0.5 w-px self-stretch bg-border' aria-hidden />
           <select
@@ -300,7 +301,7 @@ export function WikiRichEditor({
             className='rounded p-1.5 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground'
             title='Insert image'
           >
-            <ImagePlus className='h-3.5 w-3.5' strokeWidth={1.5} />
+            <SCIcon icon={ImageSquare} size="xs" />
           </button>
         </nav>
       </div>

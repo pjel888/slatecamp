@@ -1,6 +1,7 @@
 'use client'
 
-import { Check, XCircle, Delete } from 'lucide-react'
+import { CheckCircle, XCircle, Backspace } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 export type OptionState =
@@ -40,8 +41,8 @@ export function OptionButton({
       className={cn(
         // Base — 44px min height per WCAG, flex layout
         'relative flex items-center gap-4 w-full min-h-[52px] p-4 rounded-sm border text-left',
-        'transition-all duration-150 outline-none',
-        'focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1',
+        'transition-all duration-150 outline-none motion-reduce:transition-none',
+        'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
 
         // Default
         state === 'default' && [
@@ -52,8 +53,8 @@ export function OptionButton({
 
         // Selected (pre-check)
         state === 'selected' && [
-          'bg-blue-600 border-blue-600 text-white',
-          'cursor-pointer shadow-sm',
+          'bg-primary border-primary text-white',
+          'cursor-pointer shadow-sm scale-[1.01]',
         ],
 
         // Struck through (pre-check)
@@ -64,14 +65,14 @@ export function OptionButton({
 
         // Post-check: correct answer
         state === 'correct' && [
-          'bg-green-50 border-green-400 text-green-900',
-          'cursor-default',
+          'bg-[#EDFAF4] border-[#2D9F6F] text-[#1A2332]',
+          'cursor-default ring-2 ring-[#2D9F6F]/30 shadow-[0_0_12px_rgba(45,159,111,0.15)]',
         ],
 
         // Post-check: selected + wrong
         state === 'wrong' && [
-          'bg-red-50 border-red-400 text-red-900',
-          'cursor-default',
+          'bg-[#FDF0F0] border-[#D64545]/50 text-[#1A2332]',
+          'cursor-default opacity-80',
         ],
 
         // Post-check: not selected, not correct
@@ -95,12 +96,12 @@ export function OptionButton({
       <div
         aria-hidden
         className={cn(
-          'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[10px] font-black border transition-colors',
+          'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[11px] font-black border transition-colors',
           state === 'default'  && 'bg-zinc-50 border-zinc-200 text-zinc-400',
           state === 'selected' && 'bg-white/20 border-white/30 text-white',
           state === 'struck'   && 'bg-zinc-50 border-zinc-200 text-zinc-300',
-          state === 'correct'  && 'bg-green-500 border-green-400 text-white',
-          state === 'wrong'    && 'bg-red-500 border-red-400 text-white',
+          state === 'correct'  && 'bg-[#2D9F6F] border-[#2D9F6F] text-white',
+          state === 'wrong'    && 'bg-[#D64545] border-[#D64545] text-white',
           state === 'faded'    && 'bg-zinc-50 border-zinc-100 text-zinc-200',
         )}
       >
@@ -125,7 +126,7 @@ export function OptionButton({
               : 'text-zinc-300 hover:text-zinc-500 hover:bg-zinc-100',
           )}
         >
-          <Delete className="h-4 w-4" aria-hidden />
+          <SCIcon icon={Backspace} size="sm" />
         </span>
       )}
       {!isChecked && state === 'struck' && (
@@ -137,15 +138,15 @@ export function OptionButton({
           aria-label="Restore this option"
           className="shrink-0 p-1.5 rounded-sm text-zinc-300 hover:text-zinc-500 hover:bg-zinc-100 transition-colors"
         >
-          <Delete className="h-4 w-4" aria-hidden />
+          <SCIcon icon={Backspace} size="sm" />
         </span>
       )}
 
       {state === 'correct' && (
-        <Check className="shrink-0 h-4 w-4 text-green-600" strokeWidth={3} aria-hidden />
+        <SCIcon icon={CheckCircle} size="sm" className="shrink-0 text-[#2D9F6F]" />
       )}
       {state === 'wrong' && (
-        <XCircle className="shrink-0 h-4 w-4 text-red-500" strokeWidth={3} aria-hidden />
+        <SCIcon icon={XCircle} size="sm" className="shrink-0 text-[#D64545]" />
       )}
     </button>
   )

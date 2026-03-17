@@ -1,26 +1,29 @@
+'use client'
+
 import Link from 'next/link'
-import { ArrowRight, Play, Zap, RotateCcw } from 'lucide-react'
+import { ArrowRight, Play, Lightning, ArrowCounterClockwise } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { DailyCatalyst } from '@/lib/actions/dashboard'
 
 const CATALYST_CONFIG = {
   resume: {
-    icon: RotateCcw,
-    label: 'Resume where you left off',
-    accent: 'bg-blue-600',
-    iconBg: 'bg-blue-500',
+    icon: ArrowCounterClockwise,
+    label: 'Pick up where you left off',
+    accent: 'bg-primary',
+    iconBg: 'bg-[#3B6B9C]',
   },
   drill: {
-    icon: Zap,
-    label: 'Targeted drill',
-    accent: 'bg-blue-600',
-    iconBg: 'bg-blue-500',
+    icon: Lightning,
+    label: 'Focused practice session',
+    accent: 'bg-primary',
+    iconBg: 'bg-[#3B6B9C]',
   },
   warmup: {
     icon: Play,
-    label: 'Recommended for you',
-    accent: 'bg-blue-600',
-    iconBg: 'bg-blue-500',
+    label: 'Suggested for today',
+    accent: 'bg-primary',
+    iconBg: 'bg-[#3B6B9C]',
   },
 } as const
 
@@ -36,20 +39,20 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
     : null
 
   return (
-    <div className='bg-blue-600 rounded-md border border-blue-700 p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
+    <div className='bg-primary rounded-md border border-[#2F5A85] p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
       {/* Header */}
       <div className='flex items-start gap-3 relative z-10'>
-        <div className='p-2 rounded-md bg-blue-500/50 shrink-0 mt-0.5'>
-          <Icon className='h-4 w-4 text-white' />
+        <div className='p-2 rounded-md bg-primary/50 shrink-0 mt-0.5'>
+          <SCIcon icon={Icon} size='sm' className='text-white' />
         </div>
         <div className='flex-1 min-w-0'>
-          <p className='text-blue-200 text-xs font-bold uppercase tracking-widest leading-none mb-1.5'>
+          <p className='text-primary/20 text-xs font-bold uppercase tracking-widest leading-none mb-1.5'>
             {config.label}
           </p>
           <h2 className='text-white text-lg font-semibold leading-tight tracking-tight'>
             {catalyst.title}
           </h2>
-          <p className='text-blue-100/80 text-sm mt-1.5 leading-relaxed'>
+          <p className='text-primary/80 text-sm mt-1.5 leading-relaxed'>
             {catalyst.subtitle}
           </p>
         </div>
@@ -59,15 +62,15 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
       {progressPercent !== null && (
         <div className='relative z-10'>
           <div className='flex items-center justify-between mb-1.5'>
-            <span className='text-xs font-medium text-blue-200'>
+            <span className='text-xs font-medium text-primary/20'>
               Question {catalyst.progress!.current} of{' '}
               {catalyst.progress!.total}
             </span>
-            <span className='text-xs font-bold text-blue-100'>
+            <span className='text-xs font-bold text-primary/10'>
               {progressPercent}% complete
             </span>
           </div>
-          <div className='h-1.5 bg-blue-500/40 rounded-full overflow-hidden'>
+          <div className='h-1.5 bg-[#F0F5FA] rounded-full overflow-hidden'>
             <div
               className='h-full bg-white/80 rounded-full transition-all duration-300'
               style={{ width: `${progressPercent}%` }}
@@ -78,7 +81,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
 
       {/* Footer */}
       <div className='flex items-center justify-between relative z-10'>
-        <div className='flex items-center gap-1.5 bg-blue-500/40 text-blue-100 text-xs font-medium px-2.5 py-1 rounded-full'>
+        <div className='flex items-center gap-1.5 bg-primary/40 text-primary/10 text-xs font-medium px-2.5 py-1 rounded-full'>
           <svg
             className='h-3 w-3'
             fill='none'
@@ -95,14 +98,14 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
         <Link
           href={catalyst.href}
           className={cn(
-            'flex items-center gap-2 bg-white text-blue-600 font-bold text-sm',
+            'flex items-center gap-2 bg-white text-primary font-bold text-sm',
             'px-4 py-2 rounded-md',
-            'hover:bg-blue-50 transition-colors duration-150',
+            'hover:bg-[#F0F5FA] transition-colors duration-150',
             'group-hover:shadow-md',
           )}
         >
           {catalyst.type === 'resume' ? 'Continue' : 'Start'}
-          <ArrowRight className='h-4 w-4 transition-transform duration-150 group-hover:translate-x-0.5' />
+          <SCIcon icon={ArrowRight} size='sm' className='transition-transform duration-150 group-hover:translate-x-0.5' />
         </Link>
       </div>
     </div>
@@ -111,18 +114,18 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
 
 export function DailyCatalystCardSkeleton() {
   return (
-    <div className='bg-blue-600/20 rounded-md border border-blue-200 p-5 flex flex-col gap-4 animate-pulse'>
+    <div className='bg-primary/20 rounded-md border border-primary/20 p-5 flex flex-col gap-4 animate-pulse'>
       <div className='flex items-start gap-3'>
-        <div className='w-8 h-8 bg-blue-200/50 rounded-md shrink-0' />
+        <div className='w-8 h-8 bg-primary/50 rounded-md shrink-0' />
         <div className='flex-1 space-y-2'>
-          <div className='h-2 bg-blue-200/50 rounded w-24' />
-          <div className='h-5 bg-blue-200/50 rounded w-48' />
-          <div className='h-3 bg-blue-200/30 rounded w-full' />
+          <div className='h-2 bg-primary/50 rounded w-24' />
+          <div className='h-5 bg-primary/50 rounded w-48' />
+          <div className='h-3 bg-primary/30 rounded w-full' />
         </div>
       </div>
       <div className='flex justify-between items-center'>
-        <div className='h-6 bg-blue-200/40 rounded-full w-16' />
-        <div className='h-9 bg-blue-200/50 rounded-md w-24' />
+        <div className='h-6 bg-primary/40 rounded-full w-16' />
+        <div className='h-9 bg-primary/50 rounded-md w-24' />
       </div>
     </div>
   )

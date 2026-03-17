@@ -43,8 +43,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const inst: GeometryInstruction[] = []
 
   // Lot boundary
-  inst.push({ id: 'lot', type: 'box', position: [0, 0.01, 0], args: [lWs, 0.02, lDs], color: '#16a34a', opacity: 0.2, transparent: true, label: `Lot: ${(lW * lD).toFixed(0)} m²` })
-  inst.push({ id: 'lot-frame-front', type: 'box', position: [0, 0.05, lDs / 2], args: [lWs, 0.06, 0.05], color: '#dc2626', label: 'Street' })
+  inst.push({ id: 'lot', type: 'box', position: [0, 0.01, 0], args: [lWs, 0.02, lDs], color: '#2D9F6F', opacity: 0.2, transparent: true, label: `Lot: ${(lW * lD).toFixed(0)} m²` })
+  inst.push({ id: 'lot-frame-front', type: 'box', position: [0, 0.05, lDs / 2], args: [lWs, 0.06, 0.05], color: '#D64545', label: 'Street' })
   inst.push({ id: 'lot-frame-left', type: 'box', position: [-lWs / 2, 0.05, 0], args: [0.05, 0.06, lDs], color: '#71717a' })
   inst.push({ id: 'lot-frame-right', type: 'box', position: [lWs / 2, 0.05, 0], args: [0.05, 0.06, lDs], color: '#71717a' })
   inst.push({ id: 'lot-frame-back', type: 'box', position: [0, 0.05, -lDs / 2], args: [lWs, 0.06, 0.05], color: '#71717a' })
@@ -53,13 +53,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const bz = lDs / 2 - frontSBs - bDs / 2
   const buildingH = 2.7 * scale * 3
   inst.push({ id: 'building', type: 'box', position: [0, buildingH / 2, -bz], args: [bWs, buildingH, bDs], color: violated ? '#fca5a5' : '#3b82f6', opacity: 0.8, transparent: true })
-  inst.push({ id: 'building-top', type: 'box', position: [0, buildingH, -bz], args: [bWs, 0.05, bDs], color: violated ? '#dc2626' : '#1d4ed8' })
+  inst.push({ id: 'building-top', type: 'box', position: [0, buildingH, -bz], args: [bWs, 0.05, bDs], color: violated ? '#D64545' : '#2F5A85' })
 
   // Open space (lot minus building)
-  inst.push({ id: 'open-space', type: 'box', position: [0, 0.005, 0], args: [lWs, 0.01, lDs], color: '#16a34a', opacity: 0.15, transparent: true })
+  inst.push({ id: 'open-space', type: 'box', position: [0, 0.005, 0], args: [lWs, 0.01, lDs], color: '#2D9F6F', opacity: 0.15, transparent: true })
 
   // Front setback band
-  inst.push({ id: 'front-setback', type: 'box', position: [0, 0.02, lDs / 2 - frontSBs / 2], args: [lWs, 0.04, frontSBs], color: frontViolated ? '#dc2626' : '#f97316', opacity: 0.4, transparent: true, label: `${frontSB}m` })
+  inst.push({ id: 'front-setback', type: 'box', position: [0, 0.02, lDs / 2 - frontSBs / 2], args: [lWs, 0.04, frontSBs], color: frontViolated ? '#D64545' : '#f97316', opacity: 0.4, transparent: true, label: `${frontSB}m` })
 
   // Max TOS indicator
   const maxCovW = Math.sqrt(maxTOS * lW * lD * (lW / lD)) * scale

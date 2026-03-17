@@ -1,16 +1,17 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { 
-  Plus, 
-  FolderPlus, 
-  ChevronRight, 
-  Search, 
-  StickyNote, 
+import {
+  Plus,
+  FolderPlus,
+  CaretRight,
+  MagnifyingGlass,
+  Note,
   Folder,
-  Loader2,
+  CircleNotch,
   Tag
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import {
   Sheet,
   SheetContent,
@@ -84,22 +85,22 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
             <SheetTitle className="text-xl font-semibold tracking-tight">Workspace Notes</SheetTitle>
             <div className="flex items-center gap-2">
                <Button variant="ghost" size="icon" className="h-8 w-8 rounded-md">
-                 <FolderPlus className="h-4 w-4 text-zinc-400" />
+                 <SCIcon icon={FolderPlus} size="sm" className="text-zinc-400" />
                </Button>
                <Button
                  size="sm"
                  onClick={handleAddNote}
                  disabled={isCreating}
-                 className="h-8 bg-blue-600 text-white hover:bg-blue-700 rounded-md px-3 text-xs font-bold"
+                 className="h-8 bg-primary text-white hover:bg-[#2F5A85] rounded-md px-3 text-xs font-bold"
                >
-                 {isCreating ? <Loader2 className="h-3 w-3 animate-spin" /> : <Plus className="h-3 w-3 mr-1.5" />}
+                 {isCreating ? <SCIcon icon={CircleNotch} size="xs" className="animate-spin" /> : <SCIcon icon={Plus} size="xs" className="mr-1.5" />}
                  New Note
                </Button>
             </div>
           </div>
           
           <div className="mt-4 relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400" />
+            <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" />
             <Input 
               placeholder="Search your knowledge..." 
               value={search}
@@ -112,13 +113,13 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
         <div className="flex-1 overflow-y-auto">
           {loading ? (
             <div className="flex flex-col items-center justify-center py-20 gap-3">
-              <Loader2 className="h-6 w-6 animate-spin text-zinc-300" />
+              <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-zinc-300" />
               <p className="text-xs font-medium text-zinc-400 uppercase tracking-widest">Indexing...</p>
             </div>
           ) : notes.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-20 px-12 text-center space-y-4">
                <div className="w-16 h-16 rounded-md bg-zinc-50 flex items-center justify-center border border-zinc-100">
-                 <StickyNote className="h-8 w-8 text-zinc-200" />
+                 <SCIcon icon={Note} size="xl" className="text-zinc-200" />
                </div>
                <div>
                  <p className="font-bold text-zinc-900">No notes found</p>
@@ -130,12 +131,12 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
               {/* Folders Section */}
               {folders.length > 0 && (
                 <div className="p-2">
-                  <p className="px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-400">Folders</p>
+                  <p className="px-4 py-2 text-[11px] font-black uppercase tracking-widest text-zinc-400">Folders</p>
                   {folders.map(folder => (
                     <button key={folder.folder_id} className="w-full flex items-center gap-3 px-4 py-2 hover:bg-zinc-50 rounded-md transition-colors group">
-                      <Folder className="h-4 w-4 text-amber-500/60" />
+                      <SCIcon icon={Folder} size="sm" className="text-amber-500/60" />
                       <span className="text-sm font-medium text-zinc-700">{folder.name}</span>
-                      <ChevronRight className="h-3 w-3 ml-auto opacity-0 group-hover:opacity-100 text-zinc-300 transition-opacity" />
+                      <SCIcon icon={CaretRight} size="xs" className="ml-auto opacity-0 group-hover:opacity-100 text-zinc-300 transition-opacity" />
                     </button>
                   ))}
                 </div>
@@ -143,7 +144,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
 
               {/* Notes List */}
               <div className="p-2">
-                <p className="px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-400">Recent Notes</p>
+                <p className="px-4 py-2 text-[11px] font-black uppercase tracking-widest text-zinc-400">Recent Notes</p>
                 {filteredNotes.map(note => (
                   <Link 
                     key={note.id}
@@ -152,10 +153,10 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
                     className="flex flex-col gap-1 px-4 py-4 hover:bg-zinc-50 rounded-md transition-colors group"
                   >
                     <div className="flex items-center justify-between">
-                      <h4 className="text-sm font-bold text-zinc-900 group-hover:text-blue-600 transition-colors line-clamp-1">
+                      <h4 className="text-sm font-bold text-zinc-900 group-hover:text-primary transition-colors line-clamp-1">
                         {note.title}
                       </h4>
-                      <span className="text-[10px] font-medium text-zinc-400">
+                      <span className="text-[11px] font-medium text-zinc-400">
                         {format(new Date(note.updated_at), 'MMM d')}
                       </span>
                     </div>
@@ -165,8 +166,8 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
                       </p>
                     )}
                     <div className="flex items-center gap-2 mt-1">
-                       <Tag className="h-3 w-3 text-zinc-300" />
-                       <span className="text-[9px] font-bold uppercase tracking-tighter text-zinc-400">Architecture</span>
+                       <SCIcon icon={Tag} size="xs" className="text-zinc-300" />
+                       <span className="text-[11px] font-bold uppercase tracking-tighter text-zinc-400">Architecture</span>
                     </div>
                   </Link>
                 ))}

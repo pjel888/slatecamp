@@ -3,7 +3,8 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import { Save, X, Trash2, ArrowLeft } from 'lucide-react'
+import { FloppyDisk, XCircle, Trash, ArrowLeft } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
@@ -106,7 +107,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
           href="/admin/questions"
           className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
         >
-          <ArrowLeft className="h-4 w-4" />
+          <SCIcon icon={ArrowLeft} size="sm" />
           Back to Questions
         </Link>
         {question?.id && (
@@ -115,7 +116,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
             disabled={isDeleting}
             className="flex items-center gap-2 text-red-600 hover:text-red-700"
           >
-            <Trash2 className="h-4 w-4" />
+            <SCIcon icon={Trash} size="sm" />
             {isDeleting ? 'Deleting...' : 'Delete'}
           </button>
         )}
@@ -216,7 +217,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
           href="/admin/questions"
           className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-input hover:bg-muted"
         >
-          <X className="h-4 w-4" />
+          <SCIcon icon={XCircle} size="sm" />
           Cancel
         </Link>
         <button
@@ -224,7 +225,7 @@ export function QuestionEditor({ question }: QuestionEditorProps) {
           disabled={isSaving}
           className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
         >
-          <Save className="h-4 w-4" />
+          <SCIcon icon={FloppyDisk} size="sm" />
           {isSaving ? 'Saving...' : question?.id ? 'Update Question' : 'Create Question'}
         </button>
       </div>

@@ -6,7 +6,7 @@ function num(v: number | string | boolean): number { return typeof v === 'number
 function str(v: number | string | boolean): string { return String(v) }
 
 const SYSTEMS: Record<string, { R: number; color: string; label: string; desc: string }> = {
-  'SMRF':     { R: 8.5, color: '#16a34a', label: 'Special MRF', desc: 'RC Special Moment-Resisting Frame' },
+  'SMRF':     { R: 8.5, color: '#2D9F6F', label: 'Special MRF', desc: 'RC Special Moment-Resisting Frame' },
   'OMRF':     { R: 3.5, color: '#f97316', label: 'Ordinary MRF', desc: 'RC Ordinary Moment-Resisting Frame' },
   'SW':       { R: 5.5, color: '#3b82f6', label: 'Shear Wall', desc: 'RC Bearing Wall with Shear Walls' },
   'BW':       { R: 4.5, color: '#6366f1', label: 'Bearing Wall', desc: 'RC Bearing Wall System' },
@@ -62,7 +62,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     inst.push({ id: `r-bar-${label}`, type: 'box', position: [xOff, totalH + rBarH / 2, 0], args: [0.3, rBarH, 0.3], color: data.color, label: `R=${data.R}` })
     // Seismic force (inversely proportional to R)
     const forceScale = Z / data.R * 2
-    inst.push({ id: `seismic-${label}`, type: 'cone', position: [xOff - bW / 2 - forceScale - 0.1, totalH * 0.7, 0], rotation: [0, Math.PI / 2, 0], args: [0.1, forceScale, 6], color: '#dc2626', opacity: 0.7, transparent: true, label: `V∝${(Z / data.R).toFixed(3)}W` })
+    inst.push({ id: `seismic-${label}`, type: 'cone', position: [xOff - bW / 2 - forceScale - 0.1, totalH * 0.7, 0], rotation: [0, Math.PI / 2, 0], args: [0.1, forceScale, 6], color: '#D64545', opacity: 0.7, transparent: true, label: `V∝${(Z / data.R).toFixed(3)}W` })
   })
 
   // Comparison line

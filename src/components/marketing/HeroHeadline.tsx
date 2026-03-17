@@ -23,14 +23,14 @@ export const HeroHeadline = () => {
 
     const winAnnotation = annotate(winRef.current, {
       type: 'circle',
-      color: '#2563eb',
+      color: '#3B6B9C',
       strokeWidth: 2,
       animationDuration: 400,
     })
 
     const youllAnnotation = annotate(youllRef.current, {
       type: 'underline',
-      color: '#2563eb',
+      color: '#3B6B9C',
       strokeWidth: 2,
       animationDuration: 400,
     })
@@ -66,7 +66,7 @@ export const HeroHeadline = () => {
       <div className='pt-2'>
         <p
           ref={taglineRef}
-          className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-blue-500 font-medium w-fit px-2'
+          className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
         >
           Study with precision. Test with confidence.
         </p>

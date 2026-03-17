@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, BrainCircuit, Loader2, AlertCircle } from 'lucide-react'
+import { X, Brain, CircleNotch, Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
 
@@ -74,7 +75,7 @@ export function AITutorDrawer({
       }),
     })
       .then(async (res) => {
-        if (!res.ok) throw new Error('Tutor unavailable')
+        if (!res.ok) throw new Error('The AI tutor is momentarily unavailable — try again in a moment.')
         const data = await res.json()
         const text = data.reply?.text ?? data.reply ?? ''
         setResponse(parseTutorResponse(text))
@@ -116,8 +117,8 @@ export function AITutorDrawer({
               {/* Header */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-zinc-700">
-                  <BrainCircuit className="h-4 w-4" aria-hidden />
-                  <span className="text-[10px] font-black uppercase tracking-widest">AI Tutor</span>
+                  <SCIcon icon={Brain} size="sm" />
+                  <span className="text-[11px] font-black uppercase tracking-widest">AI Tutor</span>
                 </div>
                 <button
                   ref={closeRef}
@@ -125,21 +126,21 @@ export function AITutorDrawer({
                   aria-label="Close AI tutor"
                   className="h-6 w-6 flex items-center justify-center rounded-full text-zinc-300 hover:text-zinc-600 hover:bg-zinc-200 transition-colors"
                 >
-                  <X className="h-3.5 w-3.5" aria-hidden />
+                  <SCIcon icon={X} size="xs" />
                 </button>
               </div>
 
               {/* Body */}
               {loading && (
                 <div className="flex items-center gap-2 text-zinc-400 py-2">
-                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
-                  <span className="text-[11px] font-medium">Analyzing question…</span>
+                  <SCIcon icon={CircleNotch} size="sm" className="animate-spin" />
+                  <span className="text-[11px] font-medium">Preparing your explanation…</span>
                 </div>
               )}
 
               {error && (
                 <div className="flex items-center gap-2 text-red-500 py-2">
-                  <AlertCircle className="h-4 w-4" aria-hidden />
+                  <SCIcon icon={Warning} size="sm" />
                   <span className="text-[11px] font-medium">{error}</span>
                 </div>
               )}
@@ -148,7 +149,7 @@ export function AITutorDrawer({
                 <div className="space-y-3">
                   {response.misconception && (
                     <div className="space-y-1">
-                      <p className="text-[9px] font-black uppercase tracking-widest text-amber-600">
+                      <p className="text-[11px] font-black uppercase tracking-widest text-amber-600">
                         Misconception
                       </p>
                       <p className="text-[13px] text-zinc-600 leading-[1.65] max-w-[65ch]">
@@ -159,7 +160,7 @@ export function AITutorDrawer({
 
                   {response.principle && (
                     <div className="space-y-1">
-                      <p className="text-[9px] font-black uppercase tracking-widest text-blue-600">
+                      <p className="text-[11px] font-black uppercase tracking-widest text-primary">
                         Principle
                       </p>
                       <p className="text-[13px] text-zinc-700 leading-[1.65] max-w-[65ch]">
@@ -170,7 +171,7 @@ export function AITutorDrawer({
 
                   {response.wikiHint && (
                     <div className="pt-1">
-                      <span className="inline-flex items-center gap-1.5 h-6 px-2.5 rounded-sm bg-blue-50 border border-blue-100 text-blue-700 text-[9px] font-black uppercase tracking-widest">
+                      <span className="inline-flex items-center gap-1.5 h-6 px-2.5 rounded-sm bg-[#F0F5FA] border border-primary/20 text-[#2F5A85] text-[11px] font-black uppercase tracking-widest">
                         {response.wikiHint}
                       </span>
                     </div>

@@ -70,10 +70,10 @@ export default async function OnboardingPage() {
             {disciplines?.map((discipline: Discipline) => (
               <label
                 key={discipline.discipline_id}
-                className='flex items-center justify-between rounded-md border border-zinc-200 p-4 transition-colors hover:border-blue-600 hover:bg-blue-50/50 cursor-pointer group'
+                className='flex items-center justify-between rounded-md border border-zinc-200 p-4 transition-colors hover:border-primary hover:bg-[#F0F5FA]/50 cursor-pointer group'
               >
                 <div className='flex items-center gap-3'>
-                  <div className='flex h-10 w-10 items-center justify-center rounded-md bg-zinc-100 text-zinc-900 transition-colors group-hover:bg-blue-100 group-hover:text-blue-600'>
+                  <div className='flex h-10 w-10 items-center justify-center rounded-md bg-zinc-100 text-zinc-900 transition-colors group-hover:bg-[#F0F5FA] group-hover:text-primary'>
                     <span className='text-xs font-bold'>
                       {discipline.acronym}
                     </span>
@@ -87,7 +87,7 @@ export default async function OnboardingPage() {
                   name='disciplineId'
                   value={discipline.discipline_id}
                   required
-                  className='h-4 w-4 border-zinc-300 text-blue-600 focus:ring-2 focus:ring-blue-500/30 focus:ring-offset-2'
+                  className='h-4 w-4 border-zinc-300 text-primary focus:ring-2 focus:ring-primary/30 focus:ring-offset-2'
                 />
               </label>
             ))}
@@ -95,7 +95,7 @@ export default async function OnboardingPage() {
 
           <button
             type='submit'
-            className='flex w-full justify-center rounded-md bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:ring-offset-2'
+            className='flex w-full justify-center rounded-md bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#2F5A85] focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2'
           >
             Continue
           </button>

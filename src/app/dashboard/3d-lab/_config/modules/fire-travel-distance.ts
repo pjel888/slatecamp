@@ -179,7 +179,7 @@ const PATHS: PathDef[] = [
       [21, 10],    // Into corridor
       [1, 10],     // Walk corridor west
     ],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
   },
   // Path B: From assembly room to east exit — ~18m (short, compliant)
@@ -191,7 +191,7 @@ const PATHS: PathDef[] = [
       [27, 10],    // Into corridor
       [29, 10],    // East exit
     ],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
   },
   // Path C: From dead-end spur to nearest exit — ~45m (right at boundary)
@@ -204,7 +204,7 @@ const PATHS: PathDef[] = [
       [22, 10],    // Main corridor
       [1, 10],     // West exit
     ],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
   },
   // Path D: From south office 6 to east exit — ~24m (compliant)
@@ -216,7 +216,7 @@ const PATHS: PathDef[] = [
       [9, 10],     // Into corridor
       [29, 10],    // East exit
     ],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
   },
 ]
@@ -229,7 +229,7 @@ const EXITS: FixtureDef[] = [
     label: 'EXIT',
     type: 'exit',
     position: [0, 10],
-    color: '#16a34a',
+    color: '#2D9F6F',
     description: 'West exit door',
     codeCitation: 'RA 9514 IRR Rule 10',
   },
@@ -238,7 +238,7 @@ const EXITS: FixtureDef[] = [
     label: 'EXIT',
     type: 'exit',
     position: [30, 10],
-    color: '#16a34a',
+    color: '#2D9F6F',
     description: 'East exit door',
     codeCitation: 'RA 9514 IRR Rule 10',
   },
@@ -255,7 +255,7 @@ function generateSprinklers(): FixtureDef[] {
         label: '',
         type: 'sprinkler',
         position: [x, z],
-        color: '#2563eb',
+        color: '#3B6B9C',
       })
     }
   }

@@ -23,14 +23,14 @@ export const contractDocumentHierarchyConfig: ExplodedAssemblyConfig = {
       label: 'General Conditions (AIA A201)',
       description: 'Standard general conditions of the contract for construction. Defines rights, duties, and responsibilities of Owner, Contractor, and Architect.',
       codeCitation: 'UAP Doc. 302 / AIA A201',
-      geometry: { id: 'cdh-general-conditions-geo', type: 'box', position: [0, 0.18, 0], args: [1.0, 0.06, 0.7], color: '#2563eb' },
+      geometry: { id: 'cdh-general-conditions-geo', type: 'box', position: [0, 0.18, 0], args: [1.0, 0.06, 0.7], color: '#3B6B9C' },
       explodeOffset: yOff(0.3),
     },
     {
       id: 'cdh-supplementary',
       label: 'Supplementary Conditions',
       description: 'Project-specific modifications to General Conditions. Addresses local requirements, insurance, and special clauses.',
-      geometry: { id: 'cdh-supplementary-geo', type: 'box', position: [0, 0.3, 0], args: [1.0, 0.06, 0.7], color: '#1d4ed8' },
+      geometry: { id: 'cdh-supplementary-geo', type: 'box', position: [0, 0.3, 0], args: [1.0, 0.06, 0.7], color: '#2F5A85' },
       explodeOffset: yOff(0.6),
     },
     {

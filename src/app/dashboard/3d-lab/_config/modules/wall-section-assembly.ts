@@ -29,7 +29,7 @@ export const wallSectionAssemblyConfig: ExplodedAssemblyConfig = {
       label: 'Vertical Rebar (10mm ø)',
       description: '10mm diameter vertical reinforcing bars at 600mm O.C. embedded in CHB cores and grouted in place.',
       codeCitation: 'NSCP Section 706',
-      geometry: { id: 'wsa-rebar-vert-geo', type: 'cylinder', position: [-0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.008, 0.008, 1.0, 8], color: '#dc2626' },
+      geometry: { id: 'wsa-rebar-vert-geo', type: 'cylinder', position: [-0.3, 0, 0], rotation: [0, 0, 1.5708], args: [0.008, 0.008, 1.0, 8], color: '#D64545' },
       explodeOffset: [0, 0, 0.1],
     },
     {
@@ -37,7 +37,7 @@ export const wallSectionAssemblyConfig: ExplodedAssemblyConfig = {
       label: 'Horizontal Rebar (10mm ø)',
       description: '10mm horizontal tie bars at 600mm vertical spacing for seismic reinforcement of CHB wall.',
       codeCitation: 'NSCP Section 706',
-      geometry: { id: 'wsa-rebar-horiz-geo', type: 'cylinder', position: [0, 0.2, 0], args: [0.008, 0.008, 1.2, 8], color: '#dc2626' },
+      geometry: { id: 'wsa-rebar-horiz-geo', type: 'cylinder', position: [0, 0.2, 0], args: [0.008, 0.008, 1.2, 8], color: '#D64545' },
       explodeOffset: [0, 0, 0.1],
     },
     {

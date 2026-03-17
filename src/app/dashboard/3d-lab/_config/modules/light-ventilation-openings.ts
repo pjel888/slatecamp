@@ -54,7 +54,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'wall-front-left', type: 'box', position: [-(rW / 2) + spacing / 2, cH / 2, rD / 2 + wallT / 2], args: [spacing * 0.4, cH, wallT], color: '#d4d4d8', opacity: 0.25, transparent: true })
   // Required opening area indicator
   const reqA = floorA * 0.10
-  inst.push({ id: 'req-area-plane', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(reqA), 0.005, Math.sqrt(reqA)], color: ratio >= 0.10 ? '#16a34a' : '#dc2626', opacity: 0.25, transparent: true, label: '10% min' })
+  inst.push({ id: 'req-area-plane', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(reqA), 0.005, Math.sqrt(reqA)], color: ratio >= 0.10 ? '#2D9F6F' : '#D64545', opacity: 0.25, transparent: true, label: '10% min' })
 
   return inst
 }

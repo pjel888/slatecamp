@@ -99,7 +99,7 @@ export const pipeSlopeVisualizationConfig: CutawaySectionConfig = {
         args: [0.05, 0.05, 1.2, 16],
         position: [-0.1, 0.85, 0],
         rotation: [0, 0, Math.PI / 2 + 0.01], // 1% slope
-        color: '#dc2626',
+        color: '#D64545',
       },
     },
     // 6. WC fixture connection (76mm trap)
@@ -164,7 +164,7 @@ export const pipeSlopeVisualizationConfig: CutawaySectionConfig = {
         type: 'cylinder',
         args: [0.025, 0.025, 1.8, 16],
         position: [0.8, 1.55, 0],
-        color: '#16a34a',
+        color: '#2D9F6F',
       },
     },
     // 10. Wall (CHB background)

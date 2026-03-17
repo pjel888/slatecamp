@@ -43,7 +43,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'front-wall-r', type: 'box', position: [rW / 4, cH / 2, rD / 2 + wallT / 2], args: [(rW / 2 - iW / 2), cH, wallT], color: '#d4d4d8', opacity: 0.15, transparent: true })
 
   // Outlet opening (back wall, right side)
-  inst.push({ id: 'outlet-opening', type: 'box', position: [rW / 4, wY + 0.2, -(rD / 2 + wallT / 2)], args: [oW, opH, wallT + 0.02], color: '#16a34a', opacity: 0.4, transparent: true, label: 'Outlet' })
+  inst.push({ id: 'outlet-opening', type: 'box', position: [rW / 4, wY + 0.2, -(rD / 2 + wallT / 2)], args: [oW, opH, wallT + 0.02], color: '#2D9F6F', opacity: 0.4, transparent: true, label: 'Outlet' })
 
   // Airflow path arrows
   if (showFlow) {
@@ -56,11 +56,11 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     }
     // Arrow indicators
     inst.push({ id: 'flow-arrow-1', type: 'cone', position: [-rW / 4, 1.2, rD / 4], rotation: [-Math.PI / 2, 0, 0], args: [0.12, 0.3, 8], color: '#3b82f6', opacity: 0.7, transparent: true })
-    inst.push({ id: 'flow-arrow-2', type: 'cone', position: [rW / 4, 1.4, -rD / 4], rotation: [-Math.PI / 2, 0, 0], args: [0.12, 0.3, 8], color: '#16a34a', opacity: 0.7, transparent: true })
+    inst.push({ id: 'flow-arrow-2', type: 'cone', position: [rW / 4, 1.4, -rD / 4], rotation: [-Math.PI / 2, 0, 0], args: [0.12, 0.3, 8], color: '#2D9F6F', opacity: 0.7, transparent: true })
   }
 
   // 10% area indicator
-  inst.push({ id: 'min-area-marker', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(minOpenA), 0.005, Math.sqrt(minOpenA)], color: violated ? '#dc2626' : '#16a34a', opacity: 0.3, transparent: true, label: `Min: ${minOpenA.toFixed(2)} m²` })
+  inst.push({ id: 'min-area-marker', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(minOpenA), 0.005, Math.sqrt(minOpenA)], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.3, transparent: true, label: `Min: ${minOpenA.toFixed(2)} m²` })
 
   return inst
 }

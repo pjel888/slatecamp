@@ -6,11 +6,11 @@ function str(v: number | string | boolean): string { return String(v) }
 function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 
 const CONSTRUCTION_TYPES: Record<string, { rating: number; color: string; material: string }> = {
-  'Type I':   { rating: 4, color: '#16a34a', material: 'RC Frame + RC Walls' },
+  'Type I':   { rating: 4, color: '#2D9F6F', material: 'RC Frame + RC Walls' },
   'Type II':  { rating: 2, color: '#3b82f6', material: 'Protected Steel' },
   'Type III': { rating: 1, color: '#f97316', material: 'Heavy Timber' },
   'Type IV':  { rating: 1, color: '#eab308', material: 'Ordinary Construction' },
-  'Type V':   { rating: 0, color: '#dc2626', material: 'Wood Frame' },
+  'Type V':   { rating: 0, color: '#D64545', material: 'Wood Frame' },
 }
 
 const parameters: ParameterDef[] = [
@@ -60,10 +60,10 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Fire spread visualization
   if (showFire) {
-    inst.push({ id: 'fire-source', type: 'cone', position: [-2.5, 0.5, 0], rotation: [0, 0, 0], args: [0.3, 0.8, 8], color: '#dc2626', opacity: 0.8, transparent: true })
+    inst.push({ id: 'fire-source', type: 'cone', position: [-2.5, 0.5, 0], rotation: [0, 0, 0], args: [0.3, 0.8, 8], color: '#D64545', opacity: 0.8, transparent: true })
     inst.push({ id: 'fire-glow', type: 'sphere', position: [-2.5, 0.3, 0], args: [0.4, 12, 12], color: '#f97316', opacity: 0.4, transparent: true })
     if (spec.rating === 0) {
-      inst.push({ id: 'fire-spread', type: 'box', position: [0, 1.5, 0], args: [4, 3, 0.5], color: '#dc2626', opacity: 0.3, transparent: true })
+      inst.push({ id: 'fire-spread', type: 'box', position: [0, 1.5, 0], args: [4, 3, 0.5], color: '#D64545', opacity: 0.3, transparent: true })
     }
   }
 

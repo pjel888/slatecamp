@@ -1,19 +1,19 @@
-import type { ComponentType, SVGProps } from 'react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import {
-  LayoutDashboard,
-  BarChart3,
-  Box,
-  Settings as SettingsIcon,
+  SquaresFour,
+  ChartBar,
+  Cube,
+  GearSix,
   Globe,
   Brain,
   FileText,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
 
 export interface RouteConfig {
   path: string
   title: string
   sidebarLabel?: string
-  icon?: ComponentType<SVGProps<SVGSVGElement>>
+  icon?: PhosphorIcon
   sidebar?: boolean
 }
 
@@ -24,7 +24,7 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
   {
     path: '/dashboard',
     title: 'Dashboard',
-    icon: LayoutDashboard,
+    icon: SquaresFour,
   },
   {
     path: '/dashboard/wiki',
@@ -44,17 +44,17 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
   {
     path: '/dashboard/3d-lab',
     title: '3D Lab',
-    icon: Box,
+    icon: Cube,
   },
   {
     path: '/dashboard/analytics',
     title: 'Analytics',
-    icon: BarChart3,
+    icon: ChartBar,
   },
   {
     path: '/dashboard/settings',
     title: 'Account Settings',
-    icon: SettingsIcon,
+    icon: GearSix,
   },
 ]
 
@@ -89,7 +89,7 @@ export const getPageTitle = (pathname: string): string => {
 export interface SidebarNavItem {
   href: string
   label: string
-  icon?: ComponentType<SVGProps<SVGSVGElement>>
+  icon?: PhosphorIcon
 }
 
 export const SIDEBAR_NAVIGATION: SidebarNavItem[] = DASHBOARD_ROUTES.filter(

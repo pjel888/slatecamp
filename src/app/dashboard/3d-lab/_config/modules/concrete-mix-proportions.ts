@@ -43,8 +43,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'cement-label', type: 'sphere', position: [-spacing * 1.5, cementH + 0.2, 0], args: [0.12, 8, 8], color: '#71717a' })
 
   const sandH = (mix.sand / total) * maxH * scale
-  inst.push({ id: 'sand-bar', type: 'box', position: [-spacing * 0.5, sandH / 2, 0], args: [barW, sandH, barW], color: '#f59e0b', label: `Sand: ${mix.sand}` })
-  inst.push({ id: 'sand-label', type: 'sphere', position: [-spacing * 0.5, sandH + 0.2, 0], args: [0.12, 8, 8], color: '#d97706' })
+  inst.push({ id: 'sand-bar', type: 'box', position: [-spacing * 0.5, sandH / 2, 0], args: [barW, sandH, barW], color: '#D4951A', label: `Sand: ${mix.sand}` })
+  inst.push({ id: 'sand-label', type: 'sphere', position: [-spacing * 0.5, sandH + 0.2, 0], args: [0.12, 8, 8], color: '#D4951A' })
 
   const gravelH = (mix.gravel / total) * maxH * scale
   inst.push({ id: 'gravel-bar', type: 'box', position: [spacing * 0.5, gravelH / 2, 0], args: [barW, gravelH, barW], color: '#a8a29e', label: `Gravel: ${mix.gravel}` })
@@ -60,7 +60,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Strength indicator
   const strengthNorm = (mix.psi - 2000) / 2000
-  inst.push({ id: 'strength-bar', type: 'box', position: [spacing * 3.5, strengthNorm * 1.5, 0], args: [0.1, strengthNorm * 3 * scale, 0.3], color: strengthNorm > 0.6 ? '#16a34a' : strengthNorm > 0.3 ? '#f97316' : '#dc2626', label: `${mix.psi} psi` })
+  inst.push({ id: 'strength-bar', type: 'box', position: [spacing * 3.5, strengthNorm * 1.5, 0], args: [0.1, strengthNorm * 3 * scale, 0.3], color: strengthNorm > 0.6 ? '#2D9F6F' : strengthNorm > 0.3 ? '#f97316' : '#D64545', label: `${mix.psi} psi` })
 
   return inst
 }

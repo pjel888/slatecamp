@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronRight, ChevronDown, Plus, Edit2, Trash2, X } from 'lucide-react'
+import { CaretRight, CaretDown, Plus, PencilSimple, Trash, XCircle } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
 
@@ -120,9 +121,9 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
               className="p-0.5 hover:bg-muted rounded shrink-0"
             >
               {isExpanded ? (
-                <ChevronDown className="h-4 w-4" />
+                <SCIcon icon={CaretDown} size="sm" />
               ) : (
-                <ChevronRight className="h-4 w-4" />
+                <SCIcon icon={CaretRight} size="sm" />
               )}
             </button>
           ) : (
@@ -149,7 +150,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                 onClick={() => setEditingId(null)}
                 className="p-1 hover:bg-muted rounded text-muted-foreground"
               >
-                <X className="h-3 w-3" />
+                <SCIcon icon={XCircle} size="xs" />
               </button>
             </div>
           ) : (
@@ -157,7 +158,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
               <span className="flex-1 text-sm font-medium truncate">
                 {node.name}
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-1.5 py-0.5 rounded shrink-0">
+              <span className="text-[11px] uppercase tracking-wider text-muted-foreground bg-muted px-1.5 py-0.5 rounded shrink-0">
                 L{node.level}
               </span>
               <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -166,15 +167,15 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                   className="p-1 hover:bg-muted rounded text-muted-foreground"
                   title="Edit Name"
                 >
-                  <Edit2 className="h-3.5 w-3.5" />
+                  <SCIcon icon={PencilSimple} size="xs" />
                 </button>
                 {node.level < 3 && (
                   <button
                     onClick={() => setParentIdForNew(node.id)}
-                    className="p-1 hover:bg-muted rounded text-blue-600"
+                    className="p-1 hover:bg-muted rounded text-primary"
                     title="Add Child"
                   >
-                    <Plus className="h-3.5 w-3.5" />
+                    <SCIcon icon={Plus} size="xs" />
                   </button>
                 )}
                 <button
@@ -182,7 +183,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                   className="p-1 hover:bg-muted rounded text-red-600"
                   title="Delete Node"
                 >
-                  <Trash2 className="h-3.5 w-3.5" />
+                  <SCIcon icon={Trash} size="xs" />
                 </button>
               </div>
             </>
@@ -254,7 +255,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
           onClick={() => addNode(null)}
           className="flex items-center gap-2 px-3 py-1.5 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          <Plus className="h-4 w-4" />
+          <SCIcon icon={Plus} size="sm" />
           Add Subject
         </button>
       </div>

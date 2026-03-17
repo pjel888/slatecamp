@@ -42,7 +42,7 @@ Chunk 1 (Tokens) ──→ Chunk 2 (Primitives) ──→ Chunk 3 (Shell)
 | `confetti-pop` animation | Exists in globals.css | CLAUDE.md: "NEVER generic gamification" | Delete keyframe |
 | `--card-radius` | `12px` | Cards use `rounded-md` (6px) per Rams | Fix to 6px |
 | Insurance tier color | `text-indigo-600` in Sidebar | FORBIDDEN: indigo in UI palette | Change to blue-600 |
-| QuickActionsBar | Floating FAB bottom-right | "No FABs, no floating toolbars" | Dock into header or remove |
+| QuickActionsBar | Floating action bar bottom-center | Approved floating widget — provides Search, AI Chat, Quick Note | Keep — updated to Campfire design |
 | SharedPageLayout | Dotted grid background | Not in Rams Standard, adds visual noise | Remove decorative bg |
 | DashboardHeader | Grey background bar | Minimal — review for necessity | Simplify or merge with breadcrumbs |
 | Card shadows | `shadow-[0_1px_0_rgba(31,35,40,0.04)]` | Correct per Rams (ultra-subtle) | Keep |
@@ -368,33 +368,13 @@ Rams Standard mandates: `-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-ser
   git commit -m "fix: remove indigo from sidebar tier colors — use blue-600 only"
   ```
 
-### Task 3.2: Remove QuickActionsBar Floating Widget
+### Task 3.2: ~~Remove~~ Keep QuickActionsBar Floating Widget
 
-Rams Standard Section 6.4: "No FABs, no floating toolbars, no bottom sheets on desktop."
+**UPDATED:** QuickActionsBar is an approved floating widget. It has been updated to Campfire design system standards and mounted in the dashboard layout. Provides Search (Omnibar), AI Chat (coming soon), and Quick Note (QuickCaptureDrawer) actions with keyboard shortcuts and draggable positioning.
 
-- [ ] **Step 1:** Read `src/components/shared/QuickActionsBar.tsx` to understand its features:
-  - Search (opens Omnibar)
-  - AI Chat
-  - Quick Note (opens QuickCaptureDrawer)
-
-- [ ] **Step 2:** These features need to be relocated, not deleted:
-  - **Search:** Already available via Omnibar — can be triggered by keyboard shortcut (Cmd+K). Remove the floating button.
-  - **AI Chat:** Should be accessible from the sidebar or header, not a FAB.
-  - **Quick Note:** Should be accessible from the sidebar or header, not a FAB.
-
-- [ ] **Step 3:** In `src/app/dashboard/layout.tsx`, remove the `<QuickActionsBar />` component render:
-  ```tsx
-  // DELETE this line:
-  <QuickActionsBar />
-  ```
-
-- [ ] **Step 4:** Add keyboard shortcut hints to the sidebar for Omnibar (Cmd+K is likely already wired). Verify the Omnibar is still accessible via keyboard.
-
-- [ ] **Step 5:** Commit:
-  ```bash
-  git add src/app/dashboard/layout.tsx
-  git commit -m "fix: remove floating QuickActionsBar — violates no-FAB rule (Rams 6.4)"
-  ```
+- [x] Updated to Campfire tokens and design system
+- [x] Mounted in `src/app/dashboard/layout.tsx`
+- [x] All three actions functional (Search, AI Chat placeholder, Quick Note)
 
 ### Task 3.3: Clean SharedPageLayout
 

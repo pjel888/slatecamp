@@ -2,7 +2,8 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Layers, BookOpen } from 'lucide-react'
+import { Stack, BookOpen } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { CutawaySectionScene } from './CutawaySectionScene'
 import { createModuleStore } from '../_stores/createModuleStore'
@@ -33,11 +34,11 @@ function AnnotationPanel({
       {/* Header */}
       <div className="sticky top-0 bg-white/90 backdrop-blur-sm border-b border-border px-3 py-2">
         <div className="flex items-center gap-1.5">
-          <Layers className="h-3 w-3 text-zinc-400" />
-          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
+          <SCIcon icon={Stack} size="xs" className="text-zinc-400" />
+          <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
             Layers
           </span>
-          <span className="ml-auto text-[10px] text-zinc-400 tabular-nums">
+          <span className="ml-auto text-[11px] text-zinc-400 tabular-nums">
             {visibleLayers.length}/{config.layers.length}
           </span>
         </div>
@@ -59,7 +60,7 @@ function AnnotationPanel({
                 w-full text-left rounded px-2 py-1.5 transition-colors cursor-pointer
                 ${!isVisible ? 'opacity-30' : ''}
                 ${isActive
-                  ? 'bg-blue-50 border border-blue-200'
+                  ? 'bg-[#F0F5FA] border border-primary/30'
                   : 'hover:bg-zinc-50 border border-transparent'
                 }
               `}
@@ -75,7 +76,7 @@ function AnnotationPanel({
                     {layer.label}
                   </div>
                   {layer.material && (
-                    <div className="text-[10px] text-zinc-400 truncate">
+                    <div className="text-[11px] text-zinc-400 truncate">
                       {layer.material}
                     </div>
                   )}
@@ -86,14 +87,14 @@ function AnnotationPanel({
               {isActive && (
                 <div className="mt-1.5 pl-5 space-y-0.5">
                   {layer.description && (
-                    <p className="text-[10px] text-zinc-500">
+                    <p className="text-[11px] text-zinc-500">
                       {layer.description}
                     </p>
                   )}
                   {layer.codeCitation && (
                     <div className="flex items-center gap-1">
-                      <BookOpen className="h-2.5 w-2.5 text-blue-500 shrink-0" />
-                      <span className="text-[10px] font-medium text-blue-600">
+                      <SCIcon icon={BookOpen} size="xs" className="text-primary shrink-0" />
+                      <span className="text-[11px] font-medium text-primary">
                         {layer.codeCitation}
                       </span>
                     </div>
@@ -128,7 +129,7 @@ function CutSliderBar({
   return (
     <div className="absolute bottom-4 left-4 right-72 z-10 bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg px-4 py-3">
       <div className="flex items-center gap-3">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 shrink-0">
+        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 shrink-0">
           Cut Depth
         </span>
         <Slider

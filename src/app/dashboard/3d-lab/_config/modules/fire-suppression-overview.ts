@@ -32,7 +32,7 @@ export const fireSuppressionOverviewConfig: CutawaySectionConfig = {
       material: 'Schedule 40 Steel Pipe',
       description: 'Underground fire water supply main from city connection or fire storage tank to building riser.',
       depth: 0.25,
-      geometry: { id: 'geo-fmain', type: 'cylinder', args: [0.05, 0.05, 4.0, 12], position: [0, 0.05, 0], rotation: [0, 0, Math.PI / 2], color: '#dc2626' },
+      geometry: { id: 'geo-fmain', type: 'cylinder', args: [0.05, 0.05, 4.0, 12], position: [0, 0.05, 0], rotation: [0, 0, Math.PI / 2], color: '#D64545' },
     },
     {
       id: 'standpipe-riser',
@@ -41,7 +41,7 @@ export const fireSuppressionOverviewConfig: CutawaySectionConfig = {
       description: 'Vertical standpipe riser serving all floors. Class III combines Class I (2½") and Class II (1½") outlets.',
       codeCitation: 'RA 9514 IRR Rule 10 §10.4',
       depth: 0.4,
-      geometry: { id: 'geo-riser', type: 'cylinder', args: [0.05, 0.05, 9.0, 12], position: [-2.0, 4.65, 0], color: '#dc2626' },
+      geometry: { id: 'geo-riser', type: 'cylinder', args: [0.05, 0.05, 9.0, 12], position: [-2.0, 4.65, 0], color: '#D64545' },
     },
     {
       id: 'sprinkler-branch',
@@ -68,7 +68,7 @@ export const fireSuppressionOverviewConfig: CutawaySectionConfig = {
       description: 'Class II standpipe hose cabinet — 1½" hose for trained occupant use, at each floor landing.',
       codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
       depth: 0.9,
-      geometry: { id: 'geo-hose', type: 'box', args: [0.6, 0.5, 0.15], position: [2.0, 1.5, 0], color: '#dc2626' },
+      geometry: { id: 'geo-hose', type: 'box', args: [0.6, 0.5, 0.15], position: [2.0, 1.5, 0], color: '#D64545' },
     },
   ],
   annotations: [

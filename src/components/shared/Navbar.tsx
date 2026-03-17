@@ -11,31 +11,32 @@ import {
 import { usePathname } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
 import {
-  LayoutDashboard,
+  SquaresFour,
   Brain,
-  BarChart3,
-  Library,
-  Box,
-  Settings,
-  Menu,
-  Shield,
-  ClipboardList,
+  ChartBar,
+  Books,
+  Cube,
+  GearSix,
+  List,
+  ShieldCheck,
+  ClipboardText,
   BookOpen,
   Globe,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import { siteConfig } from '@/lib/constants/site'
 
 const NAV_ITEMS = [
-  { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: LayoutDashboard },
+  { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: SquaresFour },
   { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
   { href: ROUTES.QUIZ, label: 'Quiz', icon: Brain },
-  { href: ROUTES.SESSIONS, label: 'Sessions', icon: ClipboardList },
+  { href: ROUTES.SESSIONS, label: 'Sessions', icon: ClipboardText },
   { href: ROUTES.REVIEW, label: 'Review', icon: BookOpen },
-  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: BarChart3 },
-  { href: ROUTES.LIBRARY, label: 'Library', icon: Library },
-  { href: ROUTES.THREE_D_LAB, label: '3D Lab', icon: Box },
-  { href: ROUTES.SETTINGS, label: 'Settings', icon: Settings },
+  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: ChartBar },
+  { href: ROUTES.LIBRARY, label: 'Library', icon: Books },
+  { href: ROUTES.THREE_D_LAB, label: '3D Lab', icon: Cube },
+  { href: ROUTES.SETTINGS, label: 'Settings', icon: GearSix },
 ]
 
 interface NavbarProps {
@@ -60,7 +61,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
           <SheetTrigger
             render={<Button variant='ghost' size='icon' className='h-9 w-9' />}
           >
-            <Menu className='h-5 w-5' strokeWidth={1.5} />
+            <SCIcon icon={List} size='md' />
           </SheetTrigger>
           <SheetContent side='right' className='w-[280px] p-0'>
             <SheetTitle className='sr-only'>Navigation</SheetTitle>
@@ -73,13 +74,13 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <Link
                     key={href}
                     href={href}
-                    className={`flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] transition-all ${
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${
                       isActive
                         ? 'bg-secondary font-medium text-foreground'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                     }`}
                   >
-                    <Icon className='h-[18px] w-[18px]' strokeWidth={1.5} />
+                    <SCIcon icon={Icon} size='sm' />
                     {label}
                   </Link>
                 )
@@ -90,13 +91,13 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <div className='my-2 border-t border-border' />
                   <Link
                     href={ROUTES.SETTINGS_DEVELOPER}
-                    className={`flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] transition-all ${
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${
                       pathname === ROUTES.SETTINGS_DEVELOPER
-                        ? 'bg-color-signal-amber/10 font-medium text-color-signal-amber'
+                        ? 'bg-warning/10 font-medium text-warning'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                     }`}
                   >
-                    <Shield className='h-[18px] w-[18px]' strokeWidth={1.5} />
+                    <SCIcon icon={ShieldCheck} size='sm' />
                     Dev Settings
                   </Link>
                 </>

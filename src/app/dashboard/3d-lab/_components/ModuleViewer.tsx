@@ -1,7 +1,8 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { LabViewport } from './LabViewport'
 import { getModuleById } from '../_config/moduleRegistry'
 
@@ -26,11 +27,11 @@ export function ModuleViewer({ modelId, basePath }: ModuleViewerProps) {
           href={basePath}
           className="flex items-center gap-1.5 rounded-md bg-white/90 backdrop-blur-sm border border-zinc-200 px-3 py-1.5 shadow-sm hover:bg-white transition-colors"
         >
-          <ArrowLeft className="h-3.5 w-3.5 text-zinc-600" />
+          <SCIcon icon={ArrowLeft} size="xs" className="text-zinc-600" />
           <span className="text-[11px] font-medium text-zinc-600">Library</span>
         </Link>
         {entry?.codeRef && (
-          <span className="rounded-md bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 text-[10px] font-mono text-zinc-500 shadow-sm">
+          <span className="rounded-md bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 text-[11px] font-mono text-zinc-500 shadow-sm">
             {entry.codeRef}
           </span>
         )}

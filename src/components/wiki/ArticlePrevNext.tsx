@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import type { WikiPage } from '@/types/app'
 
@@ -18,7 +21,7 @@ export function ArticlePrevNext({ prev, next }: ArticlePrevNextProps) {
           href={ROUTES.WIKI_PAGE(prev.slug)}
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors max-w-[45%]"
         >
-          <ArrowLeft className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={ArrowLeft} size="sm" className="shrink-0" />
           <span className="truncate">{prev.title}</span>
         </Link>
       ) : (
@@ -30,7 +33,7 @@ export function ArticlePrevNext({ prev, next }: ArticlePrevNextProps) {
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors text-right max-w-[45%]"
         >
           <span className="truncate">{next.title}</span>
-          <ArrowRight className="h-4 w-4 shrink-0" strokeWidth={1.5} />
+          <SCIcon icon={ArrowRight} size="sm" className="shrink-0" />
         </Link>
       ) : (
         <div />

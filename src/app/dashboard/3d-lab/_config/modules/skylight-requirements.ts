@@ -54,7 +54,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Min area indicator
-  inst.push({ id: 'min-area', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(minA), 0.005, Math.sqrt(minA)], color: violated ? '#dc2626' : '#16a34a', opacity: 0.3, transparent: true, label: `Min: ${minA.toFixed(2)} m²` })
+  inst.push({ id: 'min-area', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(minA), 0.005, Math.sqrt(minA)], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.3, transparent: true, label: `Min: ${minA.toFixed(2)} m²` })
 
   return inst
 }

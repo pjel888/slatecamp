@@ -37,12 +37,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const exitSpacing = roomW / (nExits + 1)
   for (let e = 0; e < nExits; e++) {
     const ex = -(roomW / 2) + exitSpacing * (e + 1)
-    const exitColor = violated ? '#dc2626' : '#16a34a'
+    const exitColor = violated ? '#D64545' : '#2D9F6F'
     inst.push({ id: `exit-${e}`, type: 'box', position: [ex, 1.1, roomD / 2 + wallT / 2], args: [eW, 2.2, wallT + 0.05], color: exitColor, opacity: 0.7, transparent: true, label: `Exit ${e + 1}` })
     // Exit sign above
-    inst.push({ id: `exit-sign-${e}`, type: 'box', position: [ex, 2.5, roomD / 2 + 0.1], args: [0.4, 0.15, 0.02], color: '#16a34a', label: 'EXIT' })
+    inst.push({ id: `exit-sign-${e}`, type: 'box', position: [ex, 2.5, roomD / 2 + 0.1], args: [0.4, 0.15, 0.02], color: '#2D9F6F', label: 'EXIT' })
     // Min width indicator
-    inst.push({ id: `min-width-${e}`, type: 'box', position: [ex, 0.02, roomD / 2 + 0.15], args: [minWidthPerExit, 0.01, 0.1], color: violated ? '#dc2626' : '#3b82f6', label: `Min: ${(minWidthPerExit * 1000).toFixed(0)}mm` })
+    inst.push({ id: `min-width-${e}`, type: 'box', position: [ex, 0.02, roomD / 2 + 0.15], args: [minWidthPerExit, 0.01, 0.1], color: violated ? '#D64545' : '#3b82f6', label: `Min: ${(minWidthPerExit * 1000).toFixed(0)}mm` })
 
     // Evacuation flow
     if (showFlow) {

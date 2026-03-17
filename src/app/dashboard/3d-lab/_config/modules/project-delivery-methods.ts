@@ -36,7 +36,7 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         // Phase bar: Design
         { id: 'phase-design', type: 'box', args: [1.8, 0.15, 0.25], position: [-0.6, 1.1, 0], color: '#8b5cf6', opacity: 0.85, transparent: true, label: 'Design Phase' },
         // Phase bar: Bid
-        { id: 'phase-bid', type: 'box', args: [0.6, 0.15, 0.25], position: [0.9, 1.1, 0], color: '#f59e0b', opacity: 0.85, transparent: true, label: 'Bid' },
+        { id: 'phase-bid', type: 'box', args: [0.6, 0.15, 0.25], position: [0.9, 1.1, 0], color: '#D4951A', opacity: 0.85, transparent: true, label: 'Bid' },
         // Phase bar: Construction
         { id: 'phase-construction', type: 'box', args: [1.2, 0.15, 0.25], position: [1.9, 1.1, 0], color: '#64748b', opacity: 0.85, transparent: true, label: 'Construction' },
         // Arrow: Owner → Architect
@@ -64,7 +64,7 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         // Owner block
         { id: 'owner', type: 'box', args: [0.8, 0.5, 0.6], position: [-2.0, 0.25, 0], color: '#3b82f6', label: 'Owner' },
         // Design-Build entity block (larger — combined)
-        { id: 'db-entity', type: 'box', args: [1.0, 0.7, 0.8], position: [0.5, 0.35, 0], color: '#16a34a', label: 'D-B Entity' },
+        { id: 'db-entity', type: 'box', args: [1.0, 0.7, 0.8], position: [0.5, 0.35, 0], color: '#2D9F6F', label: 'D-B Entity' },
         // Single contract arrow
         { id: 'arrow-single', type: 'cone', args: [0.07, 0.22, 8], position: [-1.0, 0.35, 0], rotation: [0, 0, -Math.PI / 2], color: '#3b82f6' },
         // Connector line
@@ -73,9 +73,9 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         { id: 'phase-design', type: 'box', args: [2.0, 0.15, 0.25], position: [-0.5, 1.1, 0.2], color: '#8b5cf6', opacity: 0.85, transparent: true, label: 'Design' },
         { id: 'phase-construction', type: 'box', args: [2.0, 0.15, 0.25], position: [0.5, 1.1, -0.2], color: '#64748b', opacity: 0.85, transparent: true, label: 'Construction' },
         // Overlap highlight
-        { id: 'overlap-zone', type: 'box', args: [0.8, 0.2, 0.55], position: [0.1, 1.1, 0], color: '#f59e0b', opacity: 0.35, transparent: true, label: 'Overlap' },
+        { id: 'overlap-zone', type: 'box', args: [0.8, 0.2, 0.55], position: [0.1, 1.1, 0], color: '#D4951A', opacity: 0.35, transparent: true, label: 'Overlap' },
         // Label: Single Point
-        { id: 'label-single', type: 'sphere', args: [0.08, 8, 8], position: [0.5, 1.0, 0], color: '#16a34a' },
+        { id: 'label-single', type: 'sphere', args: [0.08, 8, 8], position: [0.5, 1.0, 0], color: '#2D9F6F' },
       ],
     },
 
@@ -95,20 +95,20 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         // Architect block
         { id: 'architect', type: 'box', args: [0.7, 0.5, 0.5], position: [0, 0.25, 0.6], color: '#8b5cf6', label: 'Architect' },
         // CM block
-        { id: 'cm', type: 'box', args: [0.7, 0.5, 0.5], position: [0, 0.25, -0.6], color: '#dc2626', label: 'CM' },
+        { id: 'cm', type: 'box', args: [0.7, 0.5, 0.5], position: [0, 0.25, -0.6], color: '#D64545', label: 'CM' },
         // Subcontractors under CM
         { id: 'sub1', type: 'box', args: [0.4, 0.35, 0.35], position: [1.5, 0.175, -0.9], color: '#94a3b8', label: 'Sub 1' },
         { id: 'sub2', type: 'box', args: [0.4, 0.35, 0.35], position: [1.5, 0.175, -0.35], color: '#94a3b8', label: 'Sub 2' },
         // GMP indicator bar
-        { id: 'gmp-bar', type: 'box', args: [1.4, 0.08, 0.15], position: [0.5, 1.3, -0.6], color: '#f59e0b', label: 'GMP' },
+        { id: 'gmp-bar', type: 'box', args: [1.4, 0.08, 0.15], position: [0.5, 1.3, -0.6], color: '#D4951A', label: 'GMP' },
         // Arrow Owner → Architect
         { id: 'arrow-oa', type: 'cone', args: [0.05, 0.15, 8], position: [-1.2, 0.4, 0.4], rotation: [0, 0, -Math.PI / 4], color: '#3b82f6' },
         // Arrow Owner → CM
         { id: 'arrow-ocm', type: 'cone', args: [0.05, 0.15, 8], position: [-1.2, 0.4, -0.4], rotation: [0, 0, Math.PI / 4], color: '#3b82f6' },
         // Arrow CM → Subs
-        { id: 'arrow-cm-sub', type: 'cone', args: [0.05, 0.15, 8], position: [0.85, 0.25, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#dc2626' },
+        { id: 'arrow-cm-sub', type: 'cone', args: [0.05, 0.15, 8], position: [0.85, 0.25, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#D64545' },
         // Phase overlap: CM during design
-        { id: 'phase-cm-design', type: 'box', args: [1.6, 0.1, 0.15], position: [-0.7, 1.0, 0], color: '#dc2626', opacity: 0.6, transparent: true, label: 'CM as Consultant' },
+        { id: 'phase-cm-design', type: 'box', args: [1.6, 0.1, 0.15], position: [-0.7, 1.0, 0], color: '#D64545', opacity: 0.6, transparent: true, label: 'CM as Consultant' },
       ],
     },
 
@@ -130,7 +130,7 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         // Architect
         { id: 'architect', type: 'box', args: [0.7, 0.5, 0.5], position: [-1.2, 0.25, -0.8], color: '#8b5cf6', label: 'Architect' },
         // CM/Contractor
-        { id: 'cm-contractor', type: 'box', args: [0.7, 0.5, 0.5], position: [1.2, 0.25, 0], color: '#16a34a', label: 'CM/GC' },
+        { id: 'cm-contractor', type: 'box', args: [0.7, 0.5, 0.5], position: [1.2, 0.25, 0], color: '#2D9F6F', label: 'CM/GC' },
         // Lines connecting all to center (IPD triparty)
         { id: 'line-owner', type: 'box', args: [1.1, 0.02, 0.02], position: [-0.65, 0.4, 0.6], rotation: [0, -Math.PI / 6, 0], color: '#fbbf24' },
         { id: 'line-arch', type: 'box', args: [1.1, 0.02, 0.02], position: [-0.65, 0.4, -0.6], rotation: [0, Math.PI / 6, 0], color: '#fbbf24' },
@@ -138,8 +138,8 @@ export const projectDeliveryMethodsConfig: AnimatedSequenceConfig = {
         // Fully overlapping phase bars (all phases simultaneous)
         { id: 'phase-pre', type: 'box', args: [0.7, 0.12, 0.18], position: [-1.9, 1.1, 0], color: '#3b82f6', opacity: 0.9, transparent: true },
         { id: 'phase-design', type: 'box', args: [1.2, 0.12, 0.18], position: [-0.9, 1.1, 0], color: '#8b5cf6', opacity: 0.9, transparent: true },
-        { id: 'phase-const', type: 'box', args: [1.2, 0.12, 0.18], position: [0.5, 1.1, 0], color: '#16a34a', opacity: 0.9, transparent: true },
-        { id: 'phase-closeout', type: 'box', args: [0.6, 0.12, 0.18], position: [1.7, 1.1, 0], color: '#f59e0b', opacity: 0.9, transparent: true },
+        { id: 'phase-const', type: 'box', args: [1.2, 0.12, 0.18], position: [0.5, 1.1, 0], color: '#2D9F6F', opacity: 0.9, transparent: true },
+        { id: 'phase-closeout', type: 'box', args: [0.6, 0.12, 0.18], position: [1.7, 1.1, 0], color: '#D4951A', opacity: 0.9, transparent: true },
       ],
     },
   ],

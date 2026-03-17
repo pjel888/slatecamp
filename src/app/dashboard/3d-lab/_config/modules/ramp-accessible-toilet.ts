@@ -129,9 +129,9 @@ function geometry(
   const hr1Bad = num(params.handrailHeight1) !== 700
   const hr2Bad = num(params.handrailHeight2) !== 900
 
-  const rampColor = gradientBad || widthBad ? '#dc2626' : '#d1d5db'
-  const hr1Color = hr1Bad ? '#dc2626' : '#3b82f6'
-  const hr2Color = hr2Bad ? '#dc2626' : '#2563eb'
+  const rampColor = gradientBad || widthBad ? '#D64545' : '#d1d5db'
+  const hr1Color = hr1Bad ? '#D64545' : '#3b82f6'
+  const hr2Color = hr2Bad ? '#D64545' : '#3B6B9C'
 
   const instructions: GeometryInstruction[] = []
   const slabThickness = 0.05

@@ -61,7 +61,7 @@ export const panelBoardLayoutConfig: CutawaySectionConfig = {
       description: 'Equipment grounding conductor (EGC) bar — bonded to neutral at main panel only.',
       codeCitation: 'PEC Rule 2.50.040',
       depth: 0.85,
-      geometry: { id: 'geo-gnd', type: 'box', args: [0.06, 1.0, 0.04], position: [-0.3, 0.85, 0], color: '#16a34a' },
+      geometry: { id: 'geo-gnd', type: 'box', args: [0.06, 1.0, 0.04], position: [-0.3, 0.85, 0], color: '#2D9F6F' },
     },
     {
       id: 'conductors',
@@ -70,7 +70,7 @@ export const panelBoardLayoutConfig: CutawaySectionConfig = {
       description: 'THHN copper conductors: 2.0mm² at 15A, 3.5mm² at 20A, 5.5mm² at 30A circuits.',
       codeCitation: 'PEC Table 3.10.020',
       depth: 1.0,
-      geometry: { id: 'geo-cond', type: 'cylinder', args: [0.003, 0.003, 1.4, 8], position: [0.1, 0.85, 0.05], color: '#dc2626' },
+      geometry: { id: 'geo-cond', type: 'cylinder', args: [0.003, 0.003, 1.4, 8], position: [0.1, 0.85, 0.05], color: '#D64545' },
     },
   ],
   annotations: [

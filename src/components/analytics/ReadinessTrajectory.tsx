@@ -1,5 +1,6 @@
 'use client'
-import { TrendingUp, TrendingDown, Minus, Target } from 'lucide-react'
+import { TrendUp, TrendDown, Minus, Target } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import {
@@ -27,7 +28,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       <CardHeader className="p-2 pt-1">
         <div className="flex items-start justify-between">
           <div>
-            <CardTitle className="text-[11px] font-bold tracking-wider text-zinc-500 uppercase">
+            <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>
               Readiness Trajectory
             </CardTitle>
             <div className="flex items-baseline gap-1.5 mt-0.5">
@@ -37,28 +38,31 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
               )}>
                 {clamped}%
               </span>
-              <div className={cn(
-                'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold uppercase',
-                trend === 'up' && 'bg-green-50 text-green-700',
-                trend === 'down' && 'bg-red-50 text-red-700',
-                trend === 'flat' && 'bg-zinc-50 text-zinc-500',
-              )}>
-                {trend === 'up' && <TrendingUp className="h-2.5 w-2.5" />}
-                {trend === 'down' && <TrendingDown className="h-2.5 w-2.5" />}
-                {trend === 'flat' && <Minus className="h-2.5 w-2.5" />}
+              <div
+                className={cn(
+                  'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold uppercase',
+                  trend === 'up' && 'bg-green-50 text-green-700',
+                  trend === 'down' && 'bg-red-50 text-red-700',
+                  trend === 'flat' && 'bg-[#F0F5FA]',
+                )}
+                style={trend === 'flat' ? { color: '#4A5568' } : undefined}
+              >
+                {trend === 'up' && <SCIcon icon={TrendUp} size='xs' />}
+                {trend === 'down' && <SCIcon icon={TrendDown} size='xs' />}
+                {trend === 'flat' && <SCIcon icon={Minus} size='xs' />}
                 <span>{trend === 'flat' ? 'Stable' : `${trend === 'up' ? '+' : '-'}${delta}%`}</span>
               </div>
             </div>
           </div>
           <div className="flex items-center gap-1 text-[11px] font-bold text-green-600 uppercase tracking-wider">
-            <Target className="h-2.5 w-2.5" /> Target: 75%
+            <SCIcon icon={Target} size='xs' /> Target: 75%
           </div>
         </div>
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
           <div className="h-[120px] flex items-center justify-center">
-            <p className="text-xs text-zinc-400 text-center leading-snug max-w-[200px]">
+            <p className="text-xs text-center leading-snug max-w-[200px]" style={{ color: '#8896A7' }}>
               Complete more quizzes to see your readiness trajectory here.
             </p>
           </div>
@@ -66,14 +70,14 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
           <div className="h-[120px]">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={data} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
-                <CartesianGrid stroke="#f4f4f5" strokeDasharray="3 3" />
-                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: '#6b7280', fontSize: 11 }} />
+                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: '#4A5568', fontSize: 11 }} />
                 <YAxis hide domain={[0, 100]} />
-                <Tooltip contentStyle={{ borderRadius: '6px', border: '1px solid #d0d7de', boxShadow: 'none', fontSize: '12px' }} />
-                <ReferenceLine y={75} stroke="#10b981" strokeDasharray="4 4" strokeWidth={1} />
-                <Area name="Readiness" type="monotone" dataKey="score" stroke="#2563eb" strokeWidth={1.5}
-                  fillOpacity={0.08} fill="#2563eb"
-                  dot={{ r: 2, fill: '#2563eb', stroke: '#fff', strokeWidth: 1 }} />
+                <Tooltip contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }} />
+                <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
+                <Area name="Readiness" type="monotone" dataKey="score" stroke="#3B6B9C" strokeWidth={1.5}
+                  fillOpacity={0.08} fill="#3B6B9C"
+                  dot={{ r: 2, fill: '#3B6B9C', stroke: '#fff', strokeWidth: 1 }} />
               </ComposedChart>
             </ResponsiveContainer>
           </div>

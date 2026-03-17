@@ -9,7 +9,7 @@ function Metric({ label, value, unit, accent }: { label: string; value: string |
     <div className="bg-white p-3 flex flex-col gap-0.5">
       <span className="text-[11px] font-bold text-zinc-400 uppercase tracking-wider leading-none">{label}</span>
       <div className="flex items-baseline gap-1">
-        <span className={cn('text-xl font-bold leading-none', accent ? 'text-blue-600' : 'text-zinc-900')}>
+        <span className={cn('text-xl font-bold leading-none', accent ? 'text-primary' : 'text-zinc-900')}>
           {value}
         </span>
         <span className="text-[11px] font-medium text-zinc-500 uppercase tracking-tight">{unit}</span>

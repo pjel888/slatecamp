@@ -56,8 +56,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Base shear arrow
   const vScale = Math.min(Vfinal / W, 0.5) * 3
-  inst.push({ id: 'base-shear', type: 'box', position: [-(bW / 2 + vScale / 2 + 0.1), 0.02, 0], args: [vScale, 0.15, 0.4], color: '#dc2626', label: `V=${(Vfinal / 1000).toFixed(0)} MN` })
-  inst.push({ id: 'base-arrow', type: 'cone', position: [-(bW / 2 + 0.05), 0.02, 0], rotation: [0, Math.PI / 2, 0], args: [0.12, 0.25, 8], color: '#dc2626' })
+  inst.push({ id: 'base-shear', type: 'box', position: [-(bW / 2 + vScale / 2 + 0.1), 0.02, 0], args: [vScale, 0.15, 0.4], color: '#D64545', label: `V=${(Vfinal / 1000).toFixed(0)} MN` })
+  inst.push({ id: 'base-arrow', type: 'cone', position: [-(bW / 2 + 0.05), 0.02, 0], rotation: [0, Math.PI / 2, 0], args: [0.12, 0.25, 8], color: '#D64545' })
 
   // Distributed story shears (inverted triangle)
   for (let f = 0; f < floors; f++) {

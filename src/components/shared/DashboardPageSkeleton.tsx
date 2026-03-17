@@ -23,7 +23,7 @@ export function DashboardPageSkeleton() {
           <Card key={i} className="overflow-hidden border border-border">
             <CardContent className="p-4">
               <div className="flex items-center gap-3">
-                <Skeleton className="h-10 w-10 shrink-0 rounded-xl" />
+                <Skeleton className="h-10 w-10 shrink-0 rounded-md" />
                 <div className="min-w-0 flex-1 space-y-2">
                   <Skeleton className="h-4 w-full" />
                   <Skeleton className="h-3 w-2/3" />

@@ -3,7 +3,8 @@
 import { memo } from 'react'
 import { Slider } from '@/components/ui/slider'
 import { Button } from '@/components/ui/button'
-import { RotateCcw } from 'lucide-react'
+import { ArrowCounterClockwise } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useLabStore } from '../_stores/labStore'
 import { cn } from '@/lib/utils'
 
@@ -62,7 +63,7 @@ export const ControlPanel = memo(function ControlPanel({
           onClick={resetParametric}
           title="Reset to defaults"
         >
-          <RotateCcw className="h-3 w-3 text-zinc-400" />
+          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
         </Button>
       </div>
 

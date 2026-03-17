@@ -27,7 +27,7 @@ export function SignInWithGoogleButton({
       className={cn(
         'flex min-h-[44px] w-full items-center justify-center gap-3 rounded-md border border-zinc-200 bg-white px-4 text-sm font-medium text-zinc-900 transition-colors duration-150',
         'hover:bg-gray-50 hover:border-zinc-300',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/30 focus-visible:ring-offset-2',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
         'disabled:pointer-events-none disabled:opacity-50',
         className,
       )}

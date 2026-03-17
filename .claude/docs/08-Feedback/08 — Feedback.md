@@ -631,7 +631,7 @@ The floating feedback widget must meet WCAG 2.1 AA standards (consistent with 07
 - **Focus trap:** When widget is open, focus cycles within the widget (same pattern as Cmd+K Omnibar modal).
 - **Color contrast:** Mood rating emojis supplemented with text labels ("Frustrated", "Neutral", "Happy") for screen readers and color-blind users.
 - **Touch targets:** All interactive elements ≥ 44px (per WCAG 2.1 touch target guidelines).
-- **Motion:** Widget slide-in animation ≤ 150ms (per 05-Design Rams Standard).
+- **Motion:** Widget slide-in animation ≤ 150ms (per 05-Design Campfire Standard).
 
 ---
 

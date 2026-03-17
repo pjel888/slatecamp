@@ -25,8 +25,8 @@ export const bondPatternComparisonConfig: ExplodedAssemblyConfig = {
   comparisonMode: true,
   parts: [
     // ── RUNNING BOND (x = -1.2) ──────────────────────────────────────────────
-    brick('run-c1-b1', -1.4, 0.045, 0, false, '#d97706'),
-    brick('run-c1-b2', -1.0, 0.045, 0, false, '#d97706'),
+    brick('run-c1-b1', -1.4, 0.045, 0, false, '#D4951A'),
+    brick('run-c1-b2', -1.0, 0.045, 0, false, '#D4951A'),
     brick('run-c2-b1', -1.6, 0.14, 0, false, '#ca8a04'),
     brick('run-c2-b2', -1.2, 0.14, 0, false, '#ca8a04'),
     brick('run-c2-b3', -0.82, 0.14, 0, false, '#ca8a04'),
@@ -39,21 +39,21 @@ export const bondPatternComparisonConfig: ExplodedAssemblyConfig = {
       explodeOffset: [-1.2, -0.12, 0],
     },
     // ── STACK BOND (x = -0.3) ────────────────────────────────────────────────
-    brick('stk-c1-b1', -0.5, 0.045, 0, false, '#3b82f6'),
-    brick('stk-c1-b2', -0.1, 0.045, 0, false, '#3b82f6'),
-    brick('stk-c2-b1', -0.5, 0.14, 0, false, '#1d4ed8'),
-    brick('stk-c2-b2', -0.1, 0.14, 0, false, '#1d4ed8'),
+    brick('stk-c1-b1', -0.5, 0.045, 0, false, '#3B6B9C'),
+    brick('stk-c1-b2', -0.1, 0.045, 0, false, '#3B6B9C'),
+    brick('stk-c2-b1', -0.5, 0.14, 0, false, '#2F5A85'),
+    brick('stk-c2-b2', -0.1, 0.14, 0, false, '#2F5A85'),
     {
       id: 'stk-label',
       label: 'Stack Bond Pattern',
       description: 'Vertical joints aligned in every course — no offset. Weakest bond; requires horizontal joint reinforcement. Used for decorative effect only.',
-      geometry: { id: 'stk-label-geo', type: 'box', position: [-0.3, -0.12, 0], args: [0.55, 0.04, 0.2], color: '#1e40af' },
+      geometry: { id: 'stk-label-geo', type: 'box', position: [-0.3, -0.12, 0], args: [0.55, 0.04, 0.2], color: '#2F5A85' },
       explodeOffset: [-0.3, -0.12, 0],
     },
     // ── FLEMISH BOND (x = 0.6) ───────────────────────────────────────────────
-    brick('flem-c1-s1', 0.4, 0.045, 0, false, '#16a34a'),
+    brick('flem-c1-s1', 0.4, 0.045, 0, false, '#2D9F6F'),
     { id: 'flem-c1-h1', label: 'Header Brick', description: 'Header brick in Flemish bond alternating with stretcher in each course.', geometry: { id: 'flem-c1-h1-geo', type: 'box', position: [0.625, 0.045, 0], args: [0.19, 0.09, 0.39], color: '#15803d' }, explodeOffset: [0.625, 0.375, 0] },
-    brick('flem-c1-s2', 0.84, 0.045, 0, false, '#16a34a'),
+    brick('flem-c1-s2', 0.84, 0.045, 0, false, '#2D9F6F'),
     { id: 'flem-c2-h1', label: 'Header Brick (Course 2)', description: 'Course 2 of Flemish bond starts with header, offset from course 1.', geometry: { id: 'flem-c2-h1-geo', type: 'box', position: [0.505, 0.14, 0], args: [0.19, 0.09, 0.39], color: '#166534' }, explodeOffset: [0.505, 0.44, 0] },
     brick('flem-c2-s1', 0.72, 0.14, 0, false, '#15803d'),
     {
@@ -64,8 +64,8 @@ export const bondPatternComparisonConfig: ExplodedAssemblyConfig = {
       explodeOffset: [0.62, -0.12, 0],
     },
     // ── ENGLISH BOND (x = 1.6) ───────────────────────────────────────────────
-    brick('eng-c1-b1', 1.4, 0.045, 0, false, '#dc2626'),
-    brick('eng-c1-b2', 1.8, 0.045, 0, false, '#dc2626'),
+    brick('eng-c1-b1', 1.4, 0.045, 0, false, '#D64545'),
+    brick('eng-c1-b2', 1.8, 0.045, 0, false, '#D64545'),
     { id: 'eng-c2-h1', label: 'Header Course', description: 'English bond: all-stretcher course alternates with all-header course. Strongest traditional bond pattern.', geometry: { id: 'eng-c2-h1-geo', type: 'box', position: [1.41, 0.14, 0], args: [0.19, 0.09, 0.39], color: '#b91c1c' }, explodeOffset: [1.41, 0.44, 0] },
     { id: 'eng-c2-h2', label: 'Header Course Brick 2', description: 'Second header in all-header course of English bond.', geometry: { id: 'eng-c2-h2-geo', type: 'box', position: [1.61, 0.14, 0], args: [0.19, 0.09, 0.39], color: '#b91c1c' }, explodeOffset: [1.61, 0.44, 0] },
     { id: 'eng-c2-h3', label: 'Header Course Brick 3', description: 'Third header brick completing the English bond header course.', geometry: { id: 'eng-c2-h3-geo', type: 'box', position: [1.81, 0.14, 0], args: [0.19, 0.09, 0.39], color: '#b91c1c' }, explodeOffset: [1.81, 0.44, 0] },

@@ -7,15 +7,15 @@ export const PredictiveRemediationCTA = () => {
       <CardContent className='flex flex-col  gap-3 py-3 sm:flex-row sm:items-center sm:justify-between'>
         <div className='space-y-1'>
           <p className='text-sm font-medium tracking-tight text-zinc-900'>
-            Predictive remediation
+            Suggested practice session
           </p>
           <p className='max-w-xl text-xs text-zinc-500'>
-            Generate a targeted quiz built from your red and grey nodes only, so
-            every item repairs a real gap.
+            A 30-question session focused on the topics where practice will make
+            the biggest difference — built just for you.
           </p>
         </div>
-        <Button className='mt-1 h-9 rounded-full bg-blue-600 px-4 text-xs font-medium text-white shadow-sm hover:bg-blue-700'>
-          Generate 30-item target quiz
+        <Button className='mt-1 h-9 rounded-sm bg-primary px-4 text-xs font-medium text-white shadow-sm hover:bg-[#2F5A85]'>
+          Start 30-Question Session
         </Button>
       </CardContent>
     </Card>

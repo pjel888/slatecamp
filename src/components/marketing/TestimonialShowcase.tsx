@@ -59,9 +59,9 @@ export const TestimonialShowcase = ({
       <article
         key={testimonial.name}
         className={
-          'flex flex-col justify-between rounded-2xl border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
+          'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
           (dark
-            ? 'border-white/10 bg-blue-500/40 text-white'
+            ? 'border-white/10 bg-primary/40 text-white'
             : 'border-zinc-200 bg-white shadow-sm')
         }
       >

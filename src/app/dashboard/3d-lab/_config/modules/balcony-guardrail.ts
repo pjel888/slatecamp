@@ -22,7 +22,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const minH = level >= 2 ? 1.1 : 0.9
   const heightViolated = grH < minH
   const spacingViolated = bSpace > 0.15
-  const grColor = heightViolated ? '#dc2626' : '#a1a1aa'
+  const grColor = heightViolated ? '#D64545' : '#a1a1aa'
   const slabH = (level - 1) * 3.0
   const inst: GeometryInstruction[] = []
 
@@ -55,7 +55,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'post-right', type: 'box', position: [bW / 2, slabH + grH / 2, bD], args: [0.05, grH, 0.05], color: grColor })
 
   // Min height indicator
-  inst.push({ id: 'min-height-line', type: 'box', position: [bW / 2 + 0.2, slabH + minH, bD], args: [0.3, 0.02, bD * 0.5], color: heightViolated ? '#dc2626' : '#16a34a', label: `Min ${minH}m` })
+  inst.push({ id: 'min-height-line', type: 'box', position: [bW / 2 + 0.2, slabH + minH, bD], args: [0.3, 0.02, bD * 0.5], color: heightViolated ? '#D64545' : '#2D9F6F', label: `Min ${minH}m` })
   // Height measurement
   inst.push({ id: 'height-bar', type: 'box', position: [-(bW / 2) - 0.3, slabH + grH / 2, bD], args: [0.02, grH, 0.02], color: '#3b82f6', label: `${(grH * 1000).toFixed(0)}mm` })
 

@@ -2,7 +2,8 @@
 'use client'
 
 import { useMemo } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { GenericControlPanel } from '../_components/GenericControlPanel'
 import { ParametricSceneRenderer } from './ParametricSceneRenderer'
@@ -29,7 +30,7 @@ function ViolationBar({
 
   return (
     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-red-600 text-white rounded-md px-3 py-1.5 shadow-lg">
-      <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
+      <SCIcon icon={Warning} size="xs" className="shrink-0" />
       <span className="text-[11px] font-bold">
         {activeViolations.length} code violation
         {activeViolations.length !== 1 ? 's' : ''} detected

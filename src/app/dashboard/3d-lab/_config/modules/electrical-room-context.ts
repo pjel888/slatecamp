@@ -41,7 +41,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
       inst.push({ id: `breaker-${p}-${b}`, type: 'box', position: [px - 0.1 + (b % 2) * 0.2, 1.0 + Math.floor(b / 2) * 0.17, -(rD / 2 + wallT / 2 - 0.17)], args: [0.15, 0.12, 0.02], color: b % 2 === 0 ? '#3b82f6' : '#6366f1' })
     }
     // Main breaker
-    inst.push({ id: `main-breaker-${p}`, type: 'box', position: [px, 1.9, -(rD / 2 + wallT / 2 - 0.17)], args: [0.3, 0.12, 0.02], color: '#dc2626', label: 'Main' })
+    inst.push({ id: `main-breaker-${p}`, type: 'box', position: [px, 1.9, -(rD / 2 + wallT / 2 - 0.17)], args: [0.3, 0.12, 0.02], color: '#D64545', label: 'Main' })
   }
 
   // Cable trays / conduits
@@ -60,13 +60,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Grounding system
   if (showGnd) {
     // Ground bus bar
-    inst.push({ id: 'ground-bar', type: 'box', position: [0, 0.15, -(rD / 2 - 0.3)], args: [rW * 0.5, 0.02, 0.04], color: '#16a34a', label: 'Ground Bus' })
+    inst.push({ id: 'ground-bar', type: 'box', position: [0, 0.15, -(rD / 2 - 0.3)], args: [rW * 0.5, 0.02, 0.04], color: '#2D9F6F', label: 'Ground Bus' })
     // Ground rod (below floor)
-    inst.push({ id: 'ground-rod', type: 'cylinder', position: [0, -0.5, -(rD / 2 - 0.3)], args: [0.016, 0.016, 1.0, 8], color: '#16a34a' })
+    inst.push({ id: 'ground-rod', type: 'cylinder', position: [0, -0.5, -(rD / 2 - 0.3)], args: [0.016, 0.016, 1.0, 8], color: '#2D9F6F' })
     // Ground wire to panels
     for (let p = 0; p < nPanels; p++) {
       const px = -(rW / 2) + panelSpacing * (p + 1)
-      inst.push({ id: `gnd-wire-${p}`, type: 'cylinder', position: [px * 0.5, 0.18, -(rD / 2 - 0.15)], rotation: [0, 0, Math.PI / 4], args: [0.005, 0.005, 1.0, 6], color: '#16a34a', opacity: 0.7, transparent: true })
+      inst.push({ id: `gnd-wire-${p}`, type: 'cylinder', position: [px * 0.5, 0.18, -(rD / 2 - 0.15)], rotation: [0, 0, Math.PI / 4], args: [0.005, 0.005, 1.0, 6], color: '#2D9F6F', opacity: 0.7, transparent: true })
     }
   }
 

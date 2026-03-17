@@ -50,7 +50,7 @@ export const roofTrussQueenPostConfig: ExplodedAssemblyConfig = {
       id: 'qp-straining-beam',
       label: 'Straining Beam (Compression)',
       description: 'Horizontal straining beam connecting queen post heads — in COMPRESSION. Key difference from king post: the straining beam replaces the single king post and allows wider clear span.',
-      geometry: { id: 'qp-straining-beam-geo', type: 'box', position: [0, 0.37, 0], args: [0.44, 0.055, 0.05], color: '#d97706' },
+      geometry: { id: 'qp-straining-beam-geo', type: 'box', position: [0, 0.37, 0], args: [0.44, 0.055, 0.05], color: '#D4951A' },
       explodeOffset: yOff(0.5),
     },
     {

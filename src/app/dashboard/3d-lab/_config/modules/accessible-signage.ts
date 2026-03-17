@@ -20,7 +20,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const sH = mm(params.signHeight)
   const sType = str(params.signType)
   const showBraille = Boolean(params.showBraille)
-  const signColors: Record<string, string> = { directional: '#3b82f6', informational: '#16a34a', regulatory: '#dc2626' }
+  const signColors: Record<string, string> = { directional: '#3b82f6', informational: '#2D9F6F', regulatory: '#D64545' }
   const sColor = signColors[sType] ?? '#3b82f6'
   const optimalH = mH >= 1.5 && mH <= 1.7
   const inst: GeometryInstruction[] = []
@@ -56,12 +56,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Optimal height range indicator
-  inst.push({ id: 'opt-min', type: 'box', position: [1.1, 1.5, 0], args: [0.15, 0.01, 0.1], color: '#16a34a', label: '1500mm' })
+  inst.push({ id: 'opt-min', type: 'box', position: [1.1, 1.5, 0], args: [0.15, 0.01, 0.1], color: '#2D9F6F', label: '1500mm' })
   inst.push({ id: 'opt-max', type: 'box', position: [1.1, 1.7, 0], args: [0.15, 0.01, 0.1], color: '#f97316', label: '1700mm' })
   inst.push({ id: 'opt-band', type: 'box', position: [1.1, 1.6, 0], args: [0.02, 0.2, 0.05], color: '#3b82f6', opacity: 0.4, transparent: true })
 
   // Mount height indicator
-  inst.push({ id: 'mount-line', type: 'box', position: [-1.1, mH / 2, 0], args: [0.02, mH, 0.02], color: optimalH ? '#16a34a' : '#f97316', label: `${(mH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'mount-line', type: 'box', position: [-1.1, mH / 2, 0], args: [0.02, mH, 0.02], color: optimalH ? '#2D9F6F' : '#f97316', label: `${(mH * 1000).toFixed(0)}mm` })
 
   // Person for scale
   inst.push({ id: 'person', type: 'cylinder', position: [0.8, 0.85, 0.5], args: [0.2, 0.2, 1.7, 8], color: '#6366f1', opacity: 0.4, transparent: true })

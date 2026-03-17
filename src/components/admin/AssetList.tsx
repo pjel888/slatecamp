@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Box, Plus, Search, Edit, Trash2 } from 'lucide-react'
+import { Cube, Plus, MagnifyingGlass, PencilSimple, Trash } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface Asset {
@@ -52,7 +53,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
       {/* Filters */}
       <div className="flex gap-4">
         <div className="flex-1 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search assets..."
@@ -85,7 +86,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
           href="/admin/assets/new"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          <Plus className="h-4 w-4" />
+          <SCIcon icon={Plus} size="sm" />
           Upload Asset
         </Link>
       </div>
@@ -107,7 +108,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
                 {asset.thumbnail ? (
                   <img src={asset.thumbnail} alt={asset.name} className="w-full h-full object-cover rounded-t-lg" />
                 ) : (
-                  <Box className="h-12 w-12 text-muted-foreground" />
+                  <SCIcon icon={Cube} size="2xl" className="text-muted-foreground" />
                 )}
               </div>
               
@@ -130,7 +131,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
                     href={`/admin/assets/${asset.id}`}
                     className="flex-1 flex items-center justify-center gap-1 px-3 py-1.5 text-sm rounded-md border border-input hover:bg-muted"
                   >
-                    <Edit className="h-3 w-3" />
+                    <SCIcon icon={PencilSimple} size="xs" />
                     Edit
                   </Link>
                 </div>

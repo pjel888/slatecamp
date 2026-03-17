@@ -1,25 +1,26 @@
 'use client'
 
-import { Sparkles, Zap, Crown, Shield } from 'lucide-react'
+import { Sparkle, Lightning, Crown, ShieldCheck, type Icon as PhosphorIcon } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { UserTier } from '@/types/app'
 
 const TIER_CONFIG: Record<
   UserTier,
-  { label: string; icon: React.ElementType; className: string }
+  { label: string; icon: PhosphorIcon; className: string }
 > = {
   free: {
     label: 'Free',
-    icon: Sparkles,
+    icon: Sparkle,
     className: 'bg-zinc-100 text-zinc-500 border-zinc-200',
   },
   camp: {
     label: 'Camp',
-    icon: Zap,
-    className: 'bg-blue-50 text-blue-600 border-blue-100',
+    icon: Lightning,
+    className: 'bg-[#F0F5FA] text-primary border-primary/20',
   },
   insurance: {
     label: 'Insurance',
-    icon: Shield,
+    icon: ShieldCheck,
     className: 'bg-emerald-50 text-emerald-600 border-emerald-100',
   },
   institutional: {
@@ -54,19 +55,19 @@ export function TierBadge({
 
   // Guard against undefined tier or DB values not in TIER_CONFIG (e.g. subscription_tier 'pro'/'enterprise')
   const config = TIER_CONFIG[resolvedTier] ?? TIER_CONFIG.free
-  const IconComponent = config.icon as React.ComponentType<any>
+  const IconComponent = config.icon
   const isSm = size === 'sm'
 
   return (
     <span
       className={`inline-flex items-center gap-1 rounded-sm border font-medium ${config.className} ${
-        isSm ? 'px-2 py-0.5 text-[10px]' : 'px-2.5 py-1 text-[11px]'
+        isSm ? 'px-2 py-0.5 text-[11px]' : 'px-2.5 py-1 text-[11px]'
       } ${className ?? ''}`}
     >
       {showIcon && (
-        <IconComponent
-          className={isSm ? 'h-3 w-3' : 'h-3.5 w-3.5'}
-          strokeWidth={1.5}
+        <SCIcon
+          icon={IconComponent}
+          size='xs'
         />
       )}
       {config.label}

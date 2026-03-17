@@ -45,7 +45,7 @@ export default async function DashboardPage() {
         <Card className='w-full relative p-2'>
           <RichInfoPopover
             title='Study Journey'
-            description='Your activity over time. Each cell is one day — darker blue means more sessions completed.'
+            description='Your progress over time. Each cell is one day — deeper blue means more sessions completed that day.'
           />
           <Suspense fallback={<HeatmapSectionSkeleton />}>
             <HeatmapSection />

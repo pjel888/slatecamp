@@ -1,7 +1,8 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { Plus } from 'lucide-react'
+import { Plus } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import { createNote } from '@/lib/actions/notes'
 
@@ -27,7 +28,7 @@ export function NewNoteButton({ className, children }: NewNoteButtonProps) {
     >
       {children ?? (
         <>
-          <Plus className="h-4 w-4" strokeWidth={1.5} />
+          <SCIcon icon={Plus} size="sm" />
           New Note
         </>
       )}

@@ -39,7 +39,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   })
 
   // Max height line
-  inst.push({ id: 'max-height-plane', type: 'box', position: [0, maxH, 0], args: [cpW + 0.5, 0.02, cpD + 0.5], color: heightViolated ? '#dc2626' : '#16a34a', opacity: 0.5, transparent: true, label: '3.20m max' })
+  inst.push({ id: 'max-height-plane', type: 'box', position: [0, maxH, 0], args: [cpW + 0.5, 0.02, cpD + 0.5], color: heightViolated ? '#D64545' : '#2D9F6F', opacity: 0.5, transparent: true, label: '3.20m max' })
 
   // Solid wall (below 1.50m)
   if (solidH > 0) {
@@ -59,11 +59,11 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   }
 
   // Solid limit marker
-  inst.push({ id: 'solid-limit-plane', type: 'box', position: [-cpW / 2 - 0.5, solidLimit, 0], args: [0.5, 0.02, cpD + 0.5], color: solidViolated ? '#dc2626' : '#f97316', opacity: 0.6, transparent: true, label: '1.50m' })
+  inst.push({ id: 'solid-limit-plane', type: 'box', position: [-cpW / 2 - 0.5, solidLimit, 0], args: [0.5, 0.02, cpD + 0.5], color: solidViolated ? '#D64545' : '#f97316', opacity: 0.6, transparent: true, label: '1.50m' })
 
   // Property line
   if (showPropLine) {
-    inst.push({ id: 'prop-line', type: 'box', position: [-(cpW / 2 + 1.0), 0.01, 0], args: [0.05, 0.02, cpD + 3], color: '#dc2626', label: 'Property Line' })
+    inst.push({ id: 'prop-line', type: 'box', position: [-(cpW / 2 + 1.0), 0.01, 0], args: [0.05, 0.02, cpD + 3], color: '#D64545', label: 'Property Line' })
   }
 
   // Car

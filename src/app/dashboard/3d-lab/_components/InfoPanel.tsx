@@ -2,7 +2,8 @@
 
 import { memo } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X, ExternalLink, Brain } from 'lucide-react'
+import { XCircle, ArrowSquareOut, Brain } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
@@ -38,7 +39,7 @@ export const InfoPanel = memo(function InfoPanel({ content, onClose }: InfoPanel
           <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
             <div className="flex items-start justify-between gap-3 mb-2">
               <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
+                <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
                   Part
                 </span>
                 <h3 className="text-sm font-bold text-zinc-900 leading-snug">
@@ -49,7 +50,7 @@ export const InfoPanel = memo(function InfoPanel({ content, onClose }: InfoPanel
                 onClick={onClose}
                 className="shrink-0 rounded-sm p-1 hover:bg-zinc-100 transition-colors"
               >
-                <X className="h-3.5 w-3.5 text-zinc-400" />
+                <SCIcon icon={XCircle} size="xs" className="text-zinc-400" />
               </button>
             </div>
 
@@ -61,19 +62,19 @@ export const InfoPanel = memo(function InfoPanel({ content, onClose }: InfoPanel
               {content.wikiSlug && (
                 <Link
                   href={`/dashboard/wiki/${content.wikiSlug}`}
-                  className="inline-flex items-center gap-1.5 h-7 px-2.5 text-[10px] font-bold uppercase tracking-wide rounded-sm border border-border bg-white hover:bg-zinc-50 text-zinc-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 h-7 px-2.5 text-[11px] font-bold uppercase tracking-wide rounded-sm border border-border bg-white hover:bg-zinc-50 text-zinc-700 transition-colors"
                 >
-                  <ExternalLink className="h-3 w-3" />
+                  <SCIcon icon={ArrowSquareOut} size="xs" />
                   Read Wiki Article
                 </Link>
               )}
               {content.onQuiz && (
                 <Button
                   size="sm"
-                  className="h-7 text-[10px] font-bold uppercase tracking-wide rounded-sm bg-blue-600 hover:bg-blue-700"
+                  className="h-7 text-[11px] font-bold uppercase tracking-wide rounded-sm bg-primary hover:bg-[#2F5A85]"
                   onClick={content.onQuiz}
                 >
-                  <Brain className="h-3 w-3 mr-1.5" />
+                  <SCIcon icon={Brain} size="xs" className="mr-1.5" />
                   Quiz Mode
                 </Button>
               )}

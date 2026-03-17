@@ -133,9 +133,9 @@ function geometry(
     (occ === '≤50 occupants' && num(params.stairWidth) < 900) ||
     (occ === 'Private (<10)' && num(params.stairWidth) < 750)
 
-  const treadColor = treadViolated || widthViolated ? '#dc2626' : '#e5e7eb'
-  const riserColor = riserViolated ? '#dc2626' : '#d1d5db'
-  const handrailColor = handrailViolated ? '#dc2626' : '#3b82f6'
+  const treadColor = treadViolated || widthViolated ? '#D64545' : '#e5e7eb'
+  const riserColor = riserViolated ? '#D64545' : '#d1d5db'
+  const handrailColor = handrailViolated ? '#D64545' : '#3b82f6'
 
   const treadThickness = 0.03
   const riserThickness = 0.015

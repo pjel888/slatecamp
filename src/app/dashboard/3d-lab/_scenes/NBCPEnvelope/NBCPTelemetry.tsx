@@ -2,7 +2,8 @@
 'use client'
 
 import { memo } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { useNBCPStore } from '../../_stores/nbcpStore'
 
@@ -17,8 +18,8 @@ function Row({ label, desc, value, state = 'normal', sub }: {
     <div className="space-y-0.5">
       <div className="flex items-baseline justify-between gap-2">
         <div>
-          <span className="text-[10px] font-bold text-zinc-700">{label}</span>
-          <div className="text-[9px] text-zinc-400 leading-tight">{desc}</div>
+          <span className="text-[11px] font-bold text-zinc-700">{label}</span>
+          <div className="text-[11px] text-zinc-400 leading-tight">{desc}</div>
         </div>
         <div className="text-right shrink-0">
           <span className={cn(
@@ -30,7 +31,7 @@ function Row({ label, desc, value, state = 'normal', sub }: {
           )}>
             {value}
           </span>
-          {sub && <div className="text-[9px] text-zinc-400">{sub}</div>}
+          {sub && <div className="text-[11px] text-zinc-400">{sub}</div>}
         </div>
       </div>
     </div>
@@ -57,7 +58,7 @@ export const NBCPTelemetry = memo(function NBCPTelemetry() {
     <div className="absolute right-4 top-4 bottom-4 z-10 w-72 overflow-y-auto
       bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-2">
 
-      <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 block mb-2">
+      <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-2">
         Development Controls
       </span>
 
@@ -117,15 +118,15 @@ export const NBCPTelemetry = memo(function NBCPTelemetry() {
 
       {/* Setbacks */}
       <div className="pt-1 border-t border-border space-y-1">
-        <div className="text-[10px] font-bold text-zinc-700">Required Setbacks</div>
-        <div className="text-[9px] text-zinc-400 leading-tight">
+        <div className="text-[11px] font-bold text-zinc-700">Required Setbacks</div>
+        <div className="text-[11px] text-zinc-400 leading-tight">
           Minimum clearance between property line and building face
         </div>
         <div className="grid grid-cols-2 gap-x-3 gap-y-0.5 mt-1">
-          <div className="text-[10px] font-mono text-zinc-700">Front: {fmt(setbacks.front, 1)}m</div>
-          <div className="text-[10px] font-mono text-zinc-700">Rear: {fmt(setbacks.rear, 1)}m</div>
-          <div className="text-[10px] font-mono text-zinc-700">Left: {fmt(setbacks.left, 1)}m</div>
-          <div className="text-[10px] font-mono text-zinc-700">Right: {fmt(setbacks.right, 1)}m</div>
+          <div className="text-[11px] font-mono text-zinc-700">Front: {fmt(setbacks.front, 1)}m</div>
+          <div className="text-[11px] font-mono text-zinc-700">Rear: {fmt(setbacks.rear, 1)}m</div>
+          <div className="text-[11px] font-mono text-zinc-700">Left: {fmt(setbacks.left, 1)}m</div>
+          <div className="text-[11px] font-mono text-zinc-700">Right: {fmt(setbacks.right, 1)}m</div>
         </div>
       </div>
 
@@ -134,10 +135,10 @@ export const NBCPTelemetry = memo(function NBCPTelemetry() {
         <div className="pt-1 border-t border-red-200 space-y-1.5">
           {violations.map((v, i) => (
             <div key={i} className="bg-red-50 border border-red-200 rounded px-2 py-1.5 flex gap-1.5">
-              <AlertTriangle className="h-3 w-3 text-red-600 shrink-0 mt-0.5" />
+              <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-0.5" />
               <div>
-                <p className="text-[10px] font-bold text-red-700">{v.message}</p>
-                <p className="text-[9px] text-red-500 mt-0.5">{v.codeCitation}</p>
+                <p className="text-[11px] font-bold text-red-700">{v.message}</p>
+                <p className="text-[11px] text-red-500 mt-0.5">{v.codeCitation}</p>
               </div>
             </div>
           ))}

@@ -34,7 +34,7 @@ const PATHS: PathDef[] = [
     id: 'egress-path-a',
     label: 'Primary Egress Path — Exit A',
     points: [[7.5, 6], [7.5, 21.75], [3, 21.75], [3, 26]],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
     animated: true,
   },
@@ -42,7 +42,7 @@ const PATHS: PathDef[] = [
     id: 'egress-path-b',
     label: 'Primary Egress Path — Exit B',
     points: [[23.5, 6], [23.5, 21.75], [28, 21.75], [28, 26]],
-    color: '#16a34a',
+    color: '#2D9F6F',
     width: 3,
     animated: true,
   },
@@ -66,8 +66,8 @@ const FIXTURES: FixtureDef[] = [
   { id: 'em-stair-a', label: 'Stair A Emergency Light', type: 'custom', position: [3, 26], color: '#fbbf24', codeCitation: 'RA 9514' },
   { id: 'em-stair-b', label: 'Stair B Emergency Light', type: 'custom', position: [28, 26], color: '#fbbf24', codeCitation: 'RA 9514' },
   // Illuminated exit signs
-  { id: 'exit-sign-a', label: 'EXIT Sign (Illuminated)', type: 'exit', position: [3, 20], color: '#16a34a', description: 'Min 50 lux on face; self-luminous or electrically illuminated', codeCitation: 'RA 9514' },
-  { id: 'exit-sign-b', label: 'EXIT Sign (Illuminated)', type: 'exit', position: [28, 20], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'exit-sign-a', label: 'EXIT Sign (Illuminated)', type: 'exit', position: [3, 20], color: '#2D9F6F', description: 'Min 50 lux on face; self-luminous or electrically illuminated', codeCitation: 'RA 9514' },
+  { id: 'exit-sign-b', label: 'EXIT Sign (Illuminated)', type: 'exit', position: [28, 20], color: '#2D9F6F', codeCitation: 'RA 9514' },
   // Transfer switch
   { id: 'ats', label: 'Automatic Transfer Switch', type: 'custom', position: [15.5, 28.5], color: '#7c3aed', description: 'ATS: transfers to emergency power within 10s', codeCitation: 'PEC' },
 ]

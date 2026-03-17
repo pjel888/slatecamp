@@ -34,7 +34,7 @@ const PATHS: PathDef[] = [
     id: 'wall-circuit-1',
     label: 'Wall Circuit — Living / Dining',
     points: [[0, 5], [14, 5], [14, 0], [14, 10], [25, 10]],
-    color: '#f59e0b',
+    color: '#D4951A',
     width: 2,
   },
   {
@@ -48,26 +48,26 @@ const PATHS: PathDef[] = [
 
 const FIXTURES: FixtureDef[] = [
   // Living room outlets (3.6m max apart)
-  { id: 'out-l1', label: 'Outlet (Living)', type: 'custom', position: [1.8, 5], color: '#f59e0b', description: '3.6m max from adjacent outlet', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-l2', label: 'Outlet (Living)', type: 'custom', position: [5.4, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-l3', label: 'Outlet (Living)', type: 'custom', position: [9.0, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-l4', label: 'Outlet (Living)', type: 'custom', position: [12.6, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-l1', label: 'Outlet (Living)', type: 'custom', position: [1.8, 5], color: '#D4951A', description: '3.6m max from adjacent outlet', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-l2', label: 'Outlet (Living)', type: 'custom', position: [5.4, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-l3', label: 'Outlet (Living)', type: 'custom', position: [9.0, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-l4', label: 'Outlet (Living)', type: 'custom', position: [12.6, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
   // Dining
-  { id: 'out-d1', label: 'Outlet (Dining)', type: 'custom', position: [16.8, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-d2', label: 'Outlet (Dining)', type: 'custom', position: [20.4, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-d3', label: 'Outlet (Dining)', type: 'custom', position: [24.2, 5], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-d1', label: 'Outlet (Dining)', type: 'custom', position: [16.8, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-d2', label: 'Outlet (Dining)', type: 'custom', position: [20.4, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-d3', label: 'Outlet (Dining)', type: 'custom', position: [24.2, 5], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
   // Kitchen GFCI (countertop: ≤600mm from outlet)
-  { id: 'out-k1', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [1.8, 13], color: '#dc2626', description: 'GFCI required; max 600mm on countertop', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'out-k2', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [5.4, 13], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
-  { id: 'out-k3', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [9.0, 13], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'out-k1', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [1.8, 13], color: '#D64545', description: 'GFCI required; max 600mm on countertop', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'out-k2', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [5.4, 13], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'out-k3', label: 'GFCI Outlet (Kitchen Counter)', type: 'custom', position: [9.0, 13], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
   // Bedroom
-  { id: 'out-b1', label: 'Outlet (Bedroom)', type: 'custom', position: [13, 15], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-b2', label: 'Outlet (Bedroom)', type: 'custom', position: [18, 15], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
-  { id: 'out-b3', label: 'Outlet (Bedroom)', type: 'custom', position: [23, 15], color: '#f59e0b', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-b1', label: 'Outlet (Bedroom)', type: 'custom', position: [13, 15], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-b2', label: 'Outlet (Bedroom)', type: 'custom', position: [18, 15], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
+  { id: 'out-b3', label: 'Outlet (Bedroom)', type: 'custom', position: [23, 15], color: '#D4951A', codeCitation: 'PEC Rule 3.15.2' },
   // Bathroom GFCI
-  { id: 'out-bat', label: 'GFCI Outlet (Bathroom)', type: 'custom', position: [3.5, 24.5], color: '#dc2626', description: 'GFCI required within 1.8m of water source', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'out-bat', label: 'GFCI Outlet (Bathroom)', type: 'custom', position: [3.5, 24.5], color: '#D64545', description: 'GFCI required within 1.8m of water source', codeCitation: 'PEC Rule 3.15.3' },
   // Laundry GFCI
-  { id: 'out-lau', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [14, 24.5], color: '#dc2626', codeCitation: 'PEC Rule 3.15.3' },
+  { id: 'out-lau', label: 'GFCI Outlet (Laundry)', type: 'custom', position: [14, 24.5], color: '#D64545', codeCitation: 'PEC Rule 3.15.3' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

@@ -32,7 +32,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Right wall
   inst.push({ id: 'wall-right', type: 'box', position: [(cW / 2 + wallT / 2), wallH / 2, 0], args: [wallT, wallH, cL], color: '#d4d4d8', opacity: 0.2, transparent: true })
   // Min width indicator plane
-  inst.push({ id: 'min-width-plane', type: 'box', position: [0, 0.01, 0], args: [minW, 0.005, cL], color: violated ? '#dc2626' : '#16a34a', opacity: 0.3, transparent: true })
+  inst.push({ id: 'min-width-plane', type: 'box', position: [0, 0.01, 0], args: [minW, 0.005, cL], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.3, transparent: true })
   // Walking figures
   const figColors = ['#6366f1', '#3b82f6']
   for (let i = 0; i < 2; i++) {

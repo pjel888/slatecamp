@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { Upload, FileText, AlertCircle, CheckCircle, Download, X } from 'lucide-react'
+import { UploadSimple, FileText, Warning, CheckCircle, DownloadSimple, XCircle } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { 
   parseCSV, 
@@ -175,14 +176,14 @@ export function QuestionImporter() {
           onClick={downloadCSVTemplate}
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
         >
-          <Download className="h-4 w-4" />
+          <SCIcon icon={DownloadSimple} size="sm" />
           Download CSV Template
         </button>
         <button
           onClick={downloadJSONTemplate}
           className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
         >
-          <Download className="h-4 w-4" />
+          <SCIcon icon={DownloadSimple} size="sm" />
           Download JSON Template
         </button>
       </div>
@@ -200,7 +201,7 @@ export function QuestionImporter() {
       >
         {file ? (
           <div className="flex items-center justify-center gap-3">
-            <FileText className="h-8 w-8 text-primary" />
+            <SCIcon icon={FileText} size="xl" className="text-primary" />
             <div className="text-left">
               <p className="font-medium">{file.name}</p>
               <p className="text-sm text-muted-foreground">
@@ -211,12 +212,12 @@ export function QuestionImporter() {
               onClick={handleClear}
               className="ml-4 p-1 hover:bg-muted rounded"
             >
-              <X className="h-4 w-4" />
+              <SCIcon icon={XCircle} size="sm" />
             </button>
           </div>
         ) : (
           <>
-            <Upload className="h-8 w-8 mx-auto mb-4 text-muted-foreground" />
+            <SCIcon icon={UploadSimple} size="xl" className="mx-auto mb-4 text-muted-foreground" />
             <p className="text-lg font-medium mb-1">
               Drop your {format.toUpperCase()} file here
             </p>
@@ -261,9 +262,9 @@ export function QuestionImporter() {
         )}>
           <div className="flex items-center gap-3 mb-4">
             {result.success && result.validCount > 0 ? (
-              <CheckCircle className="h-5 w-5 text-green-600" />
+              <SCIcon icon={CheckCircle} size="md" className="text-green-600" />
             ) : (
-              <AlertCircle className="h-5 w-5 text-red-600" />
+              <SCIcon icon={Warning} size="md" className="text-red-600" />
             )}
             <div>
               <p className="font-medium">

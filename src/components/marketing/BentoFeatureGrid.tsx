@@ -148,27 +148,27 @@ const ReadinessRingSvg = ({ size = 'h-24 w-24' }: { size?: string }) => (
 const HEATMAP_COLORS = [
   'bg-green-500',
   'bg-green-500',
-  'bg-blue-600',
-  'bg-blue-600',
+  'bg-primary',
+  'bg-primary',
   'bg-green-500',
   'bg-zinc-500',
-  'bg-blue-600',
+  'bg-primary',
   'bg-green-500',
   'bg-green-500',
-  'bg-blue-600',
-  'bg-blue-600',
+  'bg-primary',
+  'bg-primary',
   'bg-green-500',
   'bg-zinc-500',
-  'bg-blue-600',
-  'bg-blue-600',
+  'bg-primary',
+  'bg-primary',
   'bg-green-500',
   'bg-green-500',
-  'bg-blue-600',
+  'bg-primary',
   'bg-green-500',
-  'bg-blue-600',
+  'bg-primary',
   'bg-zinc-500',
-  'bg-blue-600',
-  'bg-blue-600',
+  'bg-primary',
+  'bg-primary',
   'bg-green-500',
 ] as const
 
@@ -188,10 +188,10 @@ export const BentoFeatureGrid = () => (
       {/* Top row: 3 cols, side cards span 2 rows */}
       <div className='grid grid-cols-1 gap-3 md:grid-cols-3 md:grid-rows-2'>
         {/* REVIEW MODE */}
-        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-1 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div>
             <div className='flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
+              <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
                 [ Review Mode ]
               </span>
               <span className='text-amber-500'>
@@ -223,7 +223,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* STAT: 84% fail rate */}
-        <div className='landing-reveal landing-delay-2 flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
+        <div className='landing-reveal landing-delay-2 flex flex-col justify-between rounded-md border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
           <span className='text-amber-600'>
             <Starburst className='h-4 w-4' />
           </span>
@@ -239,10 +239,10 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* ANALYTICS */}
-        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-3 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div>
             <div className='flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
+              <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
                 [ Analytics ]
               </span>
               <CircleArrow variant='dark' />
@@ -256,7 +256,7 @@ export const BentoFeatureGrid = () => (
               className={`${serif.className} mt-2 text-[16px] italic leading-snug text-white/60`}
             >
               Taxonomy heatmap shows exactly where you stand. Every node. Every
-              weakness. No hiding.
+              area to revisit. No hiding.
             </p>
           </div>
           <div className='mt-6'>
@@ -281,7 +281,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* QUOTE */}
-        <div className='landing-reveal landing-delay-4 flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
+        <div className='landing-reveal landing-delay-4 flex flex-col justify-between rounded-md border border-zinc-200 bg-white p-7 shadow-sm transition-all duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
           <p
             className={`${serif.className} text-[19px] italic leading-snug text-zinc-900`}
           >
@@ -322,7 +322,7 @@ export const BentoFeatureGrid = () => (
       {/* Bottom row: 3 equal columns */}
       <div className='mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3'>
         {/* 3D LAB */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
+        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5 hover:brightness-110'>
           <div className='flex items-center justify-between'>
             <h3 className='text-[22px] font-semibold leading-tight tracking-tight'>
               3D Lab
@@ -351,9 +351,9 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* SESSIONS MODE */}
-        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-5 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
           <div className='flex items-center justify-between'>
-            <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
+            <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
               [ Sessions ]
             </span>
             <CircleArrow variant='dark' />
@@ -376,8 +376,8 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI-ADAPTIVE */}
-        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-2xl bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
-          <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-white/40'>
+        <div className='landing-reveal landing-delay-6 flex flex-col justify-between rounded-md bg-gray-600 p-7 text-white transition-all duration-150 hover:-translate-y-0.5'>
+          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-white/40'>
             [ Bounded Intelligence ]
           </span>
           <div className='mt-10'>
@@ -399,10 +399,10 @@ export const BentoFeatureGrid = () => (
       </div>
 
       {/* Full-width analytics showcase */}
-      <div className='landing-reveal mt-3 rounded-2xl bg-gray-600 p-8 text-white'>
+      <div className='landing-reveal mt-3 rounded-md bg-gray-600 p-8 text-white'>
         <div className='grid grid-cols-1 items-center gap-8 md:grid-cols-2'>
           <div>
-            <span className='font-mono text-[10px] tracking-[0.2em] uppercase text-amber-500'>
+            <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-amber-500'>
               The Engine
             </span>
             <h3 className='mt-4 text-[28px] font-semibold leading-tight tracking-tight text-white'>
@@ -420,9 +420,9 @@ export const BentoFeatureGrid = () => (
               <Pill variant='dark'>Lucky Guess Detector</Pill>
             </div>
           </div>
-          <div className='rounded-xl border border-white/10 bg-white/5 p-6'>
+          <div className='rounded-md border border-white/10 bg-white/5 p-6'>
             <div className='mb-4 flex items-center justify-between'>
-              <span className='font-mono text-[10px] tracking-[0.15em] uppercase text-white/50'>
+              <span className='font-mono text-[11px] tracking-[0.15em] uppercase text-white/50'>
                 Subject Mastery
               </span>
               <ReadinessRingSvg size='h-16 w-16' />

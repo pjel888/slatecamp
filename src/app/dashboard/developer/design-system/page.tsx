@@ -13,7 +13,7 @@ export default function DesignSystemPage() {
         <h2 className="text-sm font-semibold text-foreground mb-3">Color Palette</h2>
         <div className="grid grid-cols-5 gap-3">
           {[
-            { name: 'Primary (Blue)', class: 'bg-blue-600', hex: '#2563EB' },
+            { name: 'Primary (Campfire)', class: 'bg-primary', hex: '#3B6B9C' },
             { name: 'Mastery (Green)', class: 'bg-green-600', hex: '#16A34A' },
             { name: 'Developing (Amber)', class: 'bg-amber-600', hex: '#D97706' },
             { name: 'Critical (Red)', class: 'bg-red-600', hex: '#DC2626' },
@@ -22,7 +22,7 @@ export default function DesignSystemPage() {
             <div key={c.name} className="text-center">
               <div className={`h-12 w-full rounded-lg ${c.class}`} />
               <p className="mt-1.5 text-[11px] font-medium text-foreground">{c.name}</p>
-              <p className="text-[10px] font-mono text-muted-foreground">{c.hex}</p>
+              <p className="text-[11px] font-mono text-muted-foreground">{c.hex}</p>
             </div>
           ))}
         </div>
@@ -37,7 +37,7 @@ export default function DesignSystemPage() {
           <p className="text-sm font-semibold text-foreground">Heading SM (14px semibold)</p>
           <p className="text-sm text-foreground">Body (14px regular)</p>
           <p className="text-xs text-muted-foreground">Caption (12px muted)</p>
-          <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">
+          <p className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium">
             Label (10px uppercase)
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function DesignSystemPage() {
       <section>
         <h2 className="text-sm font-semibold text-foreground mb-3">Buttons</h2>
         <div className="flex flex-wrap gap-3">
-          <button className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-colors">
+          <button className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-[#2F5A85] transition-colors">
             Primary
           </button>
           <button className="rounded-md bg-muted px-4 py-2 text-sm font-semibold text-foreground hover:bg-muted/80 transition-colors">
@@ -73,7 +73,7 @@ export default function DesignSystemPage() {
             { label: 'Success', dot: 'bg-emerald-500', bg: 'bg-emerald-500/10 text-emerald-600' },
             { label: 'Warning', dot: 'bg-amber-500', bg: 'bg-amber-500/10 text-amber-600' },
             { label: 'Error', dot: 'bg-red-500', bg: 'bg-red-500/10 text-red-600' },
-            { label: 'Info', dot: 'bg-blue-500', bg: 'bg-blue-500/10 text-blue-600' },
+            { label: 'Info', dot: 'bg-[#3B6B9C]', bg: 'bg-[#3B6B9C]/10 text-primary' },
           ].map((s) => (
             <span
               key={s.label}

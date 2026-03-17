@@ -225,7 +225,7 @@ function MicroStars() {
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className='h-1.5 w-1.5 text-blue-500'
+          className='h-1.5 w-1.5 text-primary'
           viewBox='0 0 20 20'
           fill='currentColor'
           aria-hidden='true'
@@ -288,26 +288,26 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
           opacity: { duration: 0.15 },
           default: { duration: 2, delay: Math.abs(config.delay) * 0.1 },
         }}
-        className='h-20 w-64 cursor-grab select-none overflow-hidden rounded-xl border border-white/40 bg-white/60 px-3 py-2.5 shadow-sm backdrop-blur-md'
+        className='h-20 w-64 cursor-grab select-none overflow-hidden rounded-md border border-white/40 bg-white/60 px-3 py-2.5 shadow-sm backdrop-blur-md'
         style={{
           touchAction: 'none',
         }}
       >
         <div className='flex h-full items-start gap-2'>
-          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[8px] font-bold text-blue-700'>
+          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[11px] font-bold text-[#2F5A85]'>
             {config.testimonial.avatar}
           </div>
           <div className='min-w-0 flex-1'>
             <div className='flex items-center gap-1.5'>
-              <span className='text-[10px] font-semibold leading-none text-zinc-800'>
+              <span className='text-[11px] font-semibold leading-none text-zinc-800'>
                 {config.testimonial.name}
               </span>
               <MicroStars />
             </div>
-            <p className='text-[8px] leading-none text-zinc-500'>
+            <p className='text-[11px] leading-none text-zinc-500'>
               {config.testimonial.profession}
             </p>
-            <p className='mt-1 line-clamp-2 text-[9px] leading-snug text-zinc-600'>
+            <p className='mt-1 line-clamp-2 text-[11px] leading-snug text-zinc-600'>
               {config.testimonial.text}
             </p>
           </div>

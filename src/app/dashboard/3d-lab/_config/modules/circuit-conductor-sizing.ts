@@ -34,7 +34,7 @@ export const circuitConductorSizingConfig: CutawaySectionConfig = {
       description: '2.0mm² THHN copper — rated 15A ampacity. Minimum wire size for 15A branch circuits per PEC. Three conductors: hot, neutral, ground.',
       codeCitation: 'PEC Table 3.10.020',
       depth: 0.35,
-      geometry: { id: 'geo-wire15', type: 'cylinder', args: [0.002, 0.002, 2.0, 6], position: [-0.6, 1.5, 0.01], color: '#dc2626' },
+      geometry: { id: 'geo-wire15', type: 'cylinder', args: [0.002, 0.002, 2.0, 6], position: [-0.6, 1.5, 0.01], color: '#D64545' },
     },
     {
       id: 'conduit-20a',
@@ -52,7 +52,7 @@ export const circuitConductorSizingConfig: CutawaySectionConfig = {
       description: '3.5mm² THHN copper — rated 20A ampacity. Required for 20A branch circuits. Larger cross-section than 15A for higher current capacity.',
       codeCitation: 'PEC Table 3.10.020',
       depth: 0.65,
-      geometry: { id: 'geo-wire20', type: 'cylinder', args: [0.003, 0.003, 2.0, 6], position: [0, 1.5, 0.012], color: '#2563eb' },
+      geometry: { id: 'geo-wire20', type: 'cylinder', args: [0.003, 0.003, 2.0, 6], position: [0, 1.5, 0.012], color: '#3B6B9C' },
     },
     {
       id: 'conduit-30a',
@@ -70,7 +70,7 @@ export const circuitConductorSizingConfig: CutawaySectionConfig = {
       description: '5.5mm² THHN copper — rated 30A ampacity. For dedicated appliance circuits. Larger conduit required for derating compliance.',
       codeCitation: 'PEC Table 3.10.020',
       depth: 0.9,
-      geometry: { id: 'geo-wire30', type: 'cylinder', args: [0.004, 0.004, 2.0, 6], position: [0.6, 1.5, 0.014], color: '#16a34a' },
+      geometry: { id: 'geo-wire30', type: 'cylinder', args: [0.004, 0.004, 2.0, 6], position: [0.6, 1.5, 0.014], color: '#2D9F6F' },
     },
   ],
   annotations: [

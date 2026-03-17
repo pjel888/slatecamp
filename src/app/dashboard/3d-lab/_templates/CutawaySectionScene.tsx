@@ -36,7 +36,7 @@ function CutPlane({
     <mesh position={position} rotation={rotation}>
       <planeGeometry args={[3, 3]} />
       <meshBasicMaterial
-        color="#dc2626"
+        color="#D64545"
         transparent
         opacity={0.15}
         side={THREE.DoubleSide}
@@ -161,21 +161,21 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
               className={`
                 whitespace-nowrap rounded px-1.5 py-0.5 shadow-sm border
                 ${isActive
-                  ? 'bg-blue-50 border-blue-300'
+                  ? 'bg-[#F0F5FA] border-primary/40'
                   : 'bg-white/90 backdrop-blur-sm border-zinc-200'
                 }
               `}
             >
-              <div className="text-[9px] font-bold text-zinc-700">
+              <div className="text-[11px] font-bold text-zinc-700">
                 {layer.label}
               </div>
               {layer.material && (
-                <div className="text-[8px] text-zinc-500">
+                <div className="text-[11px] text-zinc-500">
                   {layer.material}
                 </div>
               )}
               {layer.codeCitation && (
-                <div className="text-[8px] text-blue-600 font-medium">
+                <div className="text-[11px] text-primary font-medium">
                   {layer.codeCitation}
                 </div>
               )}

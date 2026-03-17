@@ -35,12 +35,12 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'landing-bot', type: 'box', position: [0, 0.02, rL / 2 + landD / 2], args: [rW + 0.2, 0.04, landD], color: '#a1a1aa' })
   // Tactile at bottom of ramp
   const botTactZ = rL / 2 + tactD / 2
-  inst.push({ id: 'tactile-bot', type: 'box', position: [0, 0.04, botTactZ], args: [rW, 0.04, tactD], color: tactViolated ? '#fca5a5' : '#f59e0b', label: `${(tactD * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'tactile-bot', type: 'box', position: [0, 0.04, botTactZ], args: [rW, 0.04, tactD], color: tactViolated ? '#fca5a5' : '#D4951A', label: `${(tactD * 1000).toFixed(0)}mm` })
   // Tactile dots on bottom strip
   const dotCols = Math.round(rW / 0.05)
   for (let d = 0; d < Math.min(dotCols, 15); d++) {
     const dx = -(rW / 2) + (d + 0.5) * (rW / Math.min(dotCols, 15))
-    inst.push({ id: `dot-bot-${d}`, type: 'sphere', position: [dx, 0.07, botTactZ], args: [0.012, 6, 6], color: '#d97706' })
+    inst.push({ id: `dot-bot-${d}`, type: 'sphere', position: [dx, 0.07, botTactZ], args: [0.012, 6, 6], color: '#D4951A' })
   }
 
   // Ramp surface
@@ -50,10 +50,10 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'landing-top', type: 'box', position: [0, riseH + 0.02, -(rL / 2 + landD / 2)], args: [rW + 0.2, 0.04, landD], color: '#a1a1aa' })
   // Tactile at top of ramp
   const topTactZ = -(rL / 2 + tactD / 2)
-  inst.push({ id: 'tactile-top', type: 'box', position: [0, riseH + 0.04, topTactZ], args: [rW, 0.04, tactD], color: tactViolated ? '#fca5a5' : '#f59e0b', label: `${(tactD * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'tactile-top', type: 'box', position: [0, riseH + 0.04, topTactZ], args: [rW, 0.04, tactD], color: tactViolated ? '#fca5a5' : '#D4951A', label: `${(tactD * 1000).toFixed(0)}mm` })
   for (let d = 0; d < Math.min(12, 10); d++) {
     const dx = -(rW / 2) + (d + 0.5) * (rW / 10)
-    inst.push({ id: `dot-top-${d}`, type: 'sphere', position: [dx, riseH + 0.07, topTactZ], args: [0.012, 6, 6], color: '#d97706' })
+    inst.push({ id: `dot-top-${d}`, type: 'sphere', position: [dx, riseH + 0.07, topTactZ], args: [0.012, 6, 6], color: '#D4951A' })
   }
 
   // Handrails
@@ -61,7 +61,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'hr-right', type: 'cylinder', position: [(rW / 2 + 0.05), riseH / 2 + 0.9, 0], rotation: [0, 0, -angle], args: [0.019, 0.019, rampLen + 0.3, 8], color: '#52525b' })
 
   // Landing depth indicator
-  inst.push({ id: 'land-dim', type: 'box', position: [rW / 2 + 0.4, 0.04, rL / 2 + landD / 2], args: [0.2, 0.01, landD], color: landViolated ? '#dc2626' : '#3b82f6', label: `${(landD * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'land-dim', type: 'box', position: [rW / 2 + 0.4, 0.04, rL / 2 + landD / 2], args: [0.2, 0.01, landD], color: landViolated ? '#D64545' : '#3b82f6', label: `${(landD * 1000).toFixed(0)}mm` })
 
   return inst
 }

@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Bell, Check, FileQuestion, FileText, Box } from 'lucide-react'
+import { Bell, FileText, Question, Cube } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { createClient } from '@/lib/supabase/client'
 import { canReviewContent } from '@/lib/admin/roles'
 import { cn } from '@/lib/utils'
@@ -76,7 +77,7 @@ export function NotificationBell() {
         onClick={() => setIsOpen(!isOpen)}
         className="relative rounded-full p-2 hover:bg-muted transition-colors"
       >
-        <Bell className="h-5 w-5" />
+        <SCIcon icon={Bell} size="md" />
         {unreadCount > 0 && (
           <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
             {unreadCount > 9 ? '9+' : unreadCount}
@@ -105,18 +106,18 @@ export function NotificationBell() {
                     key={notification.id}
                     className={cn(
                       "border-b px-4 py-3 hover:bg-muted cursor-pointer",
-                      !notification.read && "bg-blue-50 dark:bg-blue-950"
+                      !notification.read && "bg-[#F0F5FA] dark:bg-[#141B24]"
                     )}
                     onClick={() => markAsRead(notification.id)}
                   >
                     <div className="flex items-start gap-3">
                       <div className="p-1.5 rounded bg-muted">
                         {notification.content_type === 'wiki' ? (
-                          <FileText className="h-4 w-4" />
+                          <SCIcon icon={FileText} size="sm" />
                         ) : notification.content_type === 'question' ? (
-                          <FileQuestion className="h-4 w-4" />
+                          <SCIcon icon={Question} size="sm" />
                         ) : (
-                          <Box className="h-4 w-4" />
+                          <SCIcon icon={Cube} size="sm" />
                         )}
                       </div>
                       <div className="flex-1 min-w-0">
@@ -133,7 +134,7 @@ export function NotificationBell() {
                         </p>
                       </div>
                       {!notification.read && (
-                        <div className="h-2 w-2 rounded-full bg-blue-500 mt-2" />
+                        <div className="h-2 w-2 rounded-full bg-[#3B6B9C] mt-2" />
                       )}
                     </div>
                   </div>

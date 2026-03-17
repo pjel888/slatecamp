@@ -103,9 +103,9 @@ export const chbWallConstructionConfig: AnimatedSequenceConfig = {
         { id: 'c3-b2', type: 'box', args: [0.39, 0.195, 0.19], position: [-1.39, 0.658, 0], color: '#94a3b8' },
         { id: 'c3-b3', type: 'box', args: [0.39, 0.195, 0.19], position: [-0.98, 0.658, 0], color: '#94a3b8' },
         // Vertical rebar in cores
-        { id: 'vbar-1', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-1.8, 0.495, 0], color: '#dc2626', label: 'Vertical rebar @600mm' },
-        { id: 'vbar-2', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-1.19, 0.495, 0], color: '#dc2626' },
-        { id: 'vbar-3', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-0.58, 0.495, 0], color: '#dc2626' },
+        { id: 'vbar-1', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-1.8, 0.495, 0], color: '#D64545', label: 'Vertical rebar @600mm' },
+        { id: 'vbar-2', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-1.19, 0.495, 0], color: '#D64545' },
+        { id: 'vbar-3', type: 'cylinder', args: [0.018, 0.018, 0.75, 8], position: [-0.58, 0.495, 0], color: '#D64545' },
       ],
     },
 
@@ -129,8 +129,8 @@ export const chbWallConstructionConfig: AnimatedSequenceConfig = {
         { id: 'grout-4', type: 'cylinder', args: [0.04, 0.04, 1.0, 8], position: [0.6, 0.62, 0], color: '#d4a853' },
         // Lintel beam over window opening
         { id: 'lintel', type: 'box', args: [1.4, 0.2, 0.22], position: [1.2, 1.22, 0], color: '#64748b', label: 'RC Lintel beam' },
-        { id: 'lintel-bar-1', type: 'box', args: [1.35, 0.022, 0.022], position: [1.2, 1.15, -0.06], color: '#dc2626', label: 'T12 lintel bar' },
-        { id: 'lintel-bar-2', type: 'box', args: [1.35, 0.022, 0.022], position: [1.2, 1.15, 0.06], color: '#dc2626' },
+        { id: 'lintel-bar-1', type: 'box', args: [1.35, 0.022, 0.022], position: [1.2, 1.15, -0.06], color: '#D64545', label: 'T12 lintel bar' },
+        { id: 'lintel-bar-2', type: 'box', args: [1.35, 0.022, 0.022], position: [1.2, 1.15, 0.06], color: '#D64545' },
         // Plaster coat (outer face)
         { id: 'plaster-face', type: 'box', args: [3.5, 1.1, 0.02], position: [0, 0.62, 0.12], color: '#f5f5f4', opacity: 0.7, transparent: true, label: 'Cement plaster (20mm)' },
         // Window opening void

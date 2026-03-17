@@ -1,14 +1,15 @@
 'use client'
 
 import React from 'react'
-import { LucideIcon, Play, RotateCcw } from 'lucide-react'
+import { type Icon as PhosphorIcon, Play, ArrowCounterClockwise } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 interface ModeCardProps {
   title: string
   description: string
-  icon: LucideIcon
+  icon: PhosphorIcon
   accentColor: string
   primaryActionLabel: string
   onPrimaryAction: () => void
@@ -42,7 +43,7 @@ export function ModeCard({
           accentColor,
         )}
       >
-        <Icon className='h-6 w-6 text-white' />
+        <SCIcon icon={Icon} size="lg" className='text-white' />
       </div>
 
       {/* Content */}
@@ -61,12 +62,12 @@ export function ModeCard({
             'w-full font-semibold shadow-sm transition-all rounded-md',
             hasActiveSession
               ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
-              : 'bg-blue-600 text-white hover:bg-blue-700',
+              : 'bg-primary text-white hover:bg-[#2F5A85]',
           )}
         >
           {hasActiveSession ? (
             <>
-              <RotateCcw className='mr-2 h-4 w-4' /> Start Fresh
+              <SCIcon icon={ArrowCounterClockwise} size='sm' className='mr-2' /> Start Fresh
             </>
           ) : (
             primaryActionLabel
@@ -77,16 +78,16 @@ export function ModeCard({
           <Button
             variant='outline'
             onClick={onSecondaryAction}
-            className='w-full border-blue-200 text-blue-600 hover:bg-blue-50 font-semibold rounded-md'
+            className='w-full border-primary/20 text-primary hover:bg-[#F0F5FA] font-semibold rounded-md'
           >
-            <Play className='mr-2 h-4 w-4 fill-current' /> Resume Session
+            <SCIcon icon={Play} size='sm' weight='fill' className='mr-2' /> Resume Session
           </Button>
         )}
       </div>
 
       {/* Status Badge */}
       {hasActiveSession && (
-        <div className='absolute top-4 right-4 bg-blue-100 text-blue-600 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md'>
+        <div className='absolute top-4 right-4 bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider px-2 py-1 rounded-md'>
           In Progress
         </div>
       )}

@@ -1,6 +1,7 @@
 'use client'
 
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 export type QuestionDotState = 'unanswered' | 'answered' | 'flagged' | 'current'
@@ -40,13 +41,13 @@ export function FooterNavigator({
           disabled={!canGoBack}
           aria-label="Previous question"
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-md text-[10px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoBack
               ? 'border border-gray-200 text-gray-600 hover:bg-gray-50'
               : 'border border-gray-100 text-zinc-200 cursor-not-allowed',
           )}
         >
-          <ChevronLeft className="h-4 w-4" aria-hidden />
+          <SCIcon icon={CaretLeft} size="sm" />
           <span className="hidden sm:inline">Previous</span>
         </button>
 
@@ -64,18 +65,18 @@ export function FooterNavigator({
               aria-current={dot.state === 'current' ? 'true' : undefined}
               className={cn(
                 'shrink-0 rounded-full transition-all duration-150 outline-none',
-                'focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-1',
+                'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                 !strictMode && dot.state !== 'current' && 'cursor-pointer hover:scale-125',
                 strictMode && 'cursor-default',
 
                 // Sizing
                 dot.state === 'current'
-                  ? 'w-4 h-4 ring-2 ring-blue-500 ring-offset-1'
+                  ? 'w-4 h-4 ring-2 ring-primary ring-offset-1'
                   : 'w-2.5 h-2.5',
 
                 // Colors
-                dot.state === 'current'   && 'bg-blue-600',
-                dot.state === 'answered'  && 'bg-blue-400',
+                dot.state === 'current'   && 'bg-primary',
+                dot.state === 'answered'  && 'bg-[#5B8BB8]',
                 dot.state === 'flagged'   && 'bg-amber-400',
                 dot.state === 'unanswered'&& 'bg-zinc-200',
               )}
@@ -89,14 +90,14 @@ export function FooterNavigator({
           disabled={!canGoForward}
           aria-label="Next question"
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-md text-[10px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoForward
-              ? 'bg-blue-600 hover:bg-blue-700 text-white'
+              ? 'bg-primary hover:bg-[#2F5A85] text-white'
               : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',
           )}
         >
           <span className="hidden sm:inline">Next</span>
-          <ChevronRight className="h-4 w-4" aria-hidden />
+          <SCIcon icon={CaretRight} size="sm" />
         </button>
       </div>
     </footer>

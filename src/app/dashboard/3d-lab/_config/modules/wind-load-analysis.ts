@@ -24,7 +24,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const bWs = bW * scale
   const bDs = bW * 0.7 * scale
   const speedNorm = (ws - 150) / 150
-  const windColor = speedNorm > 0.7 ? '#dc2626' : speedNorm > 0.4 ? '#f97316' : '#3b82f6'
+  const windColor = speedNorm > 0.7 ? '#D64545' : speedNorm > 0.4 ? '#f97316' : '#3b82f6'
   const inst: GeometryInstruction[] = []
 
   // Ground

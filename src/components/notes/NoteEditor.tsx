@@ -8,7 +8,8 @@ import Typography from '@tiptap/extension-typography'
 // import BubbleMenuExtension from '@tiptap/extension-bubble-menu'
 import { useEffect, useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
-import { Bold, Italic, Strikethrough, List, ListOrdered } from 'lucide-react'
+import { TextB, TextItalic, TextStrikethrough, List as ListIcon, ListNumbers } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { type Note } from '@/lib/actions/notes-actions'
 
 interface NoteEditorProps {
@@ -89,7 +90,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
               editor.isActive('bold') && "bg-zinc-100 text-zinc-900"
             )}
           >
-            <Bold className="h-4 w-4" />
+            <SCIcon icon={TextB} size="sm" />
           </button>
           <button
             onClick={() => editor.chain().focus().toggleItalic().run()}
@@ -98,7 +99,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
               editor.isActive('italic') && "bg-zinc-100 text-zinc-900"
             )}
           >
-            <Italic className="h-4 w-4" />
+            <SCIcon icon={TextItalic} size="sm" />
           </button>
           <button
             onClick={() => editor.chain().focus().toggleStrike().run()}
@@ -107,7 +108,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
               editor.isActive('strike') && "bg-zinc-100 text-zinc-900"
             )}
           >
-            <Strikethrough className="h-4 w-4" />
+            <SCIcon icon={TextStrikethrough} size="sm" />
           </button>
           <div className="mx-1 h-4 w-[1px] bg-zinc-200" />
           <button
@@ -117,7 +118,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
               editor.isActive('bulletList') && "bg-zinc-100 text-zinc-900"
             )}
           >
-            <List className="h-4 w-4" />
+            <SCIcon icon={ListIcon} size="sm" />
           </button>
           <button
             onClick={() => editor.chain().focus().toggleOrderedList().run()}
@@ -126,7 +127,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
               editor.isActive('orderedList') && "bg-zinc-100 text-zinc-900"
             )}
           >
-            <ListOrdered className="h-4 w-4" />
+            <SCIcon icon={ListNumbers} size="sm" />
           </button>
         </div>
 

@@ -22,7 +22,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const stairW = 1.2
   const hrViolated = hrH < 0.80 || hrH > 0.90
   const clrViolated = wallClr < 0.038
-  const hrColor = hrViolated ? '#dc2626' : '#16a34a'
+  const hrColor = hrViolated ? '#D64545' : '#2D9F6F'
   const inst: GeometryInstruction[] = []
 
   // Steps
@@ -54,7 +54,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'hr-height-line', type: 'box', position: [tD * 2, nSteps * rH / 4 + hrH / 2, -stairW / 2 - wallClr - 0.1], args: [0.01, hrH, 0.01], color: '#3b82f6' })
 
   // Wall clearance indicator
-  inst.push({ id: 'clearance-indicator', type: 'box', position: [tD * 2, nSteps * rH / 4 + hrH, -stairW / 2 - wallClr / 2 - 0.075], args: [0.01, 0.01, wallClr], color: clrViolated ? '#dc2626' : '#3b82f6', label: `${(wallClr * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'clearance-indicator', type: 'box', position: [tD * 2, nSteps * rH / 4 + hrH, -stairW / 2 - wallClr / 2 - 0.075], args: [0.01, 0.01, wallClr], color: clrViolated ? '#D64545' : '#3b82f6', label: `${(wallClr * 1000).toFixed(0)}mm` })
 
   return inst
 }

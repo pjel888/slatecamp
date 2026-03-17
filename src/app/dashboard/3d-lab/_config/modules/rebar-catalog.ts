@@ -14,14 +14,14 @@ export const rebarCatalogConfig: ExplodedAssemblyConfig = {
       label: '8mm ø (0.395 kg/m)',
       description: 'Smallest standard Philippine rebar. Used for stirrups, ties, slab distribution bars. Unit weight: 0.395 kg/m.',
       codeCitation: 'PNS 49 / ASTM A615',
-      geometry: { id: 'rc-8mm-geo', type: 'cylinder', position: [-1.75, 0, 0], args: [0.04, 0.04, 1.0, 10], color: '#dc2626' },
+      geometry: { id: 'rc-8mm-geo', type: 'cylinder', position: [-1.75, 0, 0], args: [0.04, 0.04, 1.0, 10], color: '#D64545' },
       explodeOffset: [-1.75, 0, 0],
     },
     {
       id: 'rc-10mm',
       label: '10mm ø (0.617 kg/m)',
       description: '10mm — most common residential bar. Slabs, walls, stirrups. 0.617 kg/m.',
-      geometry: { id: 'rc-10mm-geo', type: 'cylinder', position: [-1.45, 0, 0], args: [0.05, 0.05, 1.0, 10], color: '#dc2626' },
+      geometry: { id: 'rc-10mm-geo', type: 'cylinder', position: [-1.45, 0, 0], args: [0.05, 0.05, 1.0, 10], color: '#D64545' },
       explodeOffset: [-1.45, 0, 0],
     },
     {

@@ -59,7 +59,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       material: 'Dimension Reference',
       description: 'Visual indicator of 1.80m minimum clear height below mezzanine.',
       depth: 0.8,
-      geometry: { id: 'geo-diml', type: 'box', args: [0.005, 1.8, 0.005], position: [-1.8, 1.05, 0.35], color: '#dc2626' },
+      geometry: { id: 'geo-diml', type: 'box', args: [0.005, 1.8, 0.005], position: [-1.8, 1.05, 0.35], color: '#D64545' },
     },
     {
       id: 'dimension-upper',
@@ -67,7 +67,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       material: 'Dimension Reference',
       description: 'Visual indicator of 1.80m minimum clear height above mezzanine.',
       depth: 0.9,
-      geometry: { id: 'geo-dimu', type: 'box', args: [0.005, 1.8, 0.005], position: [2.0, 2.96, 0.35], color: '#16a34a' },
+      geometry: { id: 'geo-dimu', type: 'box', args: [0.005, 1.8, 0.005], position: [2.0, 2.96, 0.35], color: '#2D9F6F' },
     },
   ],
   annotations: [

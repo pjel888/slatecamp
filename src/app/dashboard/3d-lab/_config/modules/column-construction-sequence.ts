@@ -34,10 +34,10 @@ export const columnConstructionSequenceConfig: AnimatedSequenceConfig = {
         { id: 'mark-se', type: 'cylinder', args: [0.04, 0.04, 0.3, 8], position: [0.25, 0.72, -0.25], color: '#fbbf24' },
         { id: 'mark-sw', type: 'cylinder', args: [0.04, 0.04, 0.3, 8], position: [-0.25, 0.72, -0.25], color: '#fbbf24' },
         // Starter dowels (4 corners)
-        { id: 'dowel-ne', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [0.2, 1.08, 0.2], color: '#dc2626', label: 'Starter dowels' },
-        { id: 'dowel-nw', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [-0.2, 1.08, 0.2], color: '#dc2626' },
-        { id: 'dowel-se', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [0.2, 1.08, -0.2], color: '#dc2626' },
-        { id: 'dowel-sw', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [-0.2, 1.08, -0.2], color: '#dc2626' },
+        { id: 'dowel-ne', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [0.2, 1.08, 0.2], color: '#D64545', label: 'Starter dowels' },
+        { id: 'dowel-nw', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [-0.2, 1.08, 0.2], color: '#D64545' },
+        { id: 'dowel-se', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [0.2, 1.08, -0.2], color: '#D64545' },
+        { id: 'dowel-sw', type: 'cylinder', args: [0.028, 0.028, 1.0, 8], position: [-0.2, 1.08, -0.2], color: '#D64545' },
         // Chalk line on floor
         { id: 'chalk-x', type: 'box', args: [0.6, 0.005, 0.01], position: [0, 0.47, 0], color: '#ffffff' },
         { id: 'chalk-z', type: 'box', args: [0.01, 0.005, 0.6], position: [0, 0.47, 0], color: '#ffffff' },
@@ -58,10 +58,10 @@ export const columnConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Floor slab
         { id: 'slab', type: 'box', args: [3, 0.12, 3], position: [0, 0.46, 0], color: '#d4d4d8', opacity: 0.6, transparent: true },
         // 4 corner bars (full height)
-        { id: 'bar-ne', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#dc2626' },
-        { id: 'bar-nw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#dc2626' },
-        { id: 'bar-se', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#dc2626' },
-        { id: 'bar-sw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#dc2626' },
+        { id: 'bar-ne', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#D64545' },
+        { id: 'bar-nw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#D64545' },
+        { id: 'bar-se', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#D64545' },
+        { id: 'bar-sw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#D64545' },
         // 4 intermediate bars (mid-face)
         { id: 'bar-n', type: 'cylinder', args: [0.022, 0.022, 2.8, 8], position: [0, 1.86, 0.2], color: '#ef4444' },
         { id: 'bar-s', type: 'cylinder', args: [0.022, 0.022, 2.8, 8], position: [0, 1.86, -0.2], color: '#ef4444' },
@@ -85,10 +85,10 @@ export const columnConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Footing
         { id: 'footing', type: 'box', args: [1.6, 0.4, 1.6], position: [0, 0.2, 0], color: '#94a3b8' },
         // Vertical bars (same as step 2)
-        { id: 'bar-ne', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#dc2626' },
-        { id: 'bar-nw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#dc2626' },
-        { id: 'bar-se', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#dc2626' },
-        { id: 'bar-sw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#dc2626' },
+        { id: 'bar-ne', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#D64545' },
+        { id: 'bar-nw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#D64545' },
+        { id: 'bar-se', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#D64545' },
+        { id: 'bar-sw', type: 'cylinder', args: [0.028, 0.028, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#D64545' },
         // Lateral ties — rectangular loops at spacing
         { id: 'tie-1', type: 'ring', args: [0.3, 0.33, 4, 1, 0, Math.PI * 2], position: [0, 0.9, 0], rotation: [Math.PI / 2, Math.PI / 4, 0], color: '#f97316', label: 'Lateral tie' },
         { id: 'tie-2', type: 'ring', args: [0.3, 0.33, 4, 1, 0, Math.PI * 2], position: [0, 1.4, 0], rotation: [Math.PI / 2, Math.PI / 4, 0], color: '#f97316' },
@@ -111,10 +111,10 @@ export const columnConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Footing
         { id: 'footing', type: 'box', args: [1.6, 0.4, 1.6], position: [0, 0.2, 0], color: '#94a3b8' },
         // Rebar cage (simplified — visible through form)
-        { id: 'bar-ne', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#dc2626', opacity: 0.5, transparent: true },
-        { id: 'bar-nw', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#dc2626', opacity: 0.5, transparent: true },
-        { id: 'bar-se', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#dc2626', opacity: 0.5, transparent: true },
-        { id: 'bar-sw', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#dc2626', opacity: 0.5, transparent: true },
+        { id: 'bar-ne', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [0.2, 1.86, 0.2], color: '#D64545', opacity: 0.5, transparent: true },
+        { id: 'bar-nw', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [-0.2, 1.86, 0.2], color: '#D64545', opacity: 0.5, transparent: true },
+        { id: 'bar-se', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [0.2, 1.86, -0.2], color: '#D64545', opacity: 0.5, transparent: true },
+        { id: 'bar-sw', type: 'cylinder', args: [0.025, 0.025, 2.8, 8], position: [-0.2, 1.86, -0.2], color: '#D64545', opacity: 0.5, transparent: true },
         // Formwork panels (4 sides — plywood yellow)
         { id: 'form-n', type: 'box', args: [0.72, 2.8, 0.018], position: [0, 1.86, 0.37], color: '#fbbf24', label: 'Formwork' },
         { id: 'form-s', type: 'box', args: [0.72, 2.8, 0.018], position: [0, 1.86, -0.37], color: '#fbbf24' },
@@ -143,10 +143,10 @@ export const columnConstructionSequenceConfig: AnimatedSequenceConfig = {
         // Finished column (concrete)
         { id: 'column', type: 'box', args: [0.6, 2.85, 0.6], position: [0, 1.89, 0], color: '#94a3b8', label: 'Finished column' },
         // Rebar visible at column top (lap for next pour)
-        { id: 'bar-ne-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [0.18, 3.57, 0.18], color: '#dc2626', label: 'Lap bars' },
-        { id: 'bar-nw-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [-0.18, 3.57, 0.18], color: '#dc2626' },
-        { id: 'bar-se-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [0.18, 3.57, -0.18], color: '#dc2626' },
-        { id: 'bar-sw-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [-0.18, 3.57, -0.18], color: '#dc2626' },
+        { id: 'bar-ne-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [0.18, 3.57, 0.18], color: '#D64545', label: 'Lap bars' },
+        { id: 'bar-nw-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [-0.18, 3.57, 0.18], color: '#D64545' },
+        { id: 'bar-se-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [0.18, 3.57, -0.18], color: '#D64545' },
+        { id: 'bar-sw-top', type: 'cylinder', args: [0.025, 0.025, 0.5, 8], position: [-0.18, 3.57, -0.18], color: '#D64545' },
         // Vibrator during pour (tool)
         { id: 'vibrator', type: 'cylinder', args: [0.04, 0.04, 0.6, 8], position: [0.05, 2.2, 0.05], color: '#374151', label: 'Immersion vibrator' },
         // Curing indicator (moisture on surface)

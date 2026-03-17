@@ -15,14 +15,14 @@ export const rebarSizesCatalogConfig: ExplodedAssemblyConfig = {
       label: '10mm ø Rebar (0.617 kg/m)',
       description: 'Deformed bar 10mm (Grade 40/60). Most common in residential slabs, walls, and stirrups. Unit weight: 0.617 kg/m.',
       codeCitation: 'NSCP Section 403 / PNS 49',
-      geometry: { id: 'rbs-10mm-geo', type: 'cylinder', position: [-1.05, 0, 0], args: [0.05, 0.05, 1.0, 12], color: '#dc2626' },
+      geometry: { id: 'rbs-10mm-geo', type: 'cylinder', position: [-1.05, 0, 0], args: [0.05, 0.05, 1.0, 12], color: '#D64545' },
       explodeOffset: [-1.05, 0, 0],
     },
     {
       id: 'rbs-12mm',
       label: '12mm ø Rebar (0.888 kg/m)',
       description: 'Deformed bar 12mm. Common in slabs on grade, footings, and light beams. Unit weight: 0.888 kg/m.',
-      geometry: { id: 'rbs-12mm-geo', type: 'cylinder', position: [-0.75, 0, 0], args: [0.06, 0.06, 1.0, 12], color: '#dc2626' },
+      geometry: { id: 'rbs-12mm-geo', type: 'cylinder', position: [-0.75, 0, 0], args: [0.06, 0.06, 1.0, 12], color: '#D64545' },
       explodeOffset: [-0.75, 0, 0],
     },
     {

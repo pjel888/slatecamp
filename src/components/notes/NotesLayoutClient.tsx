@@ -3,7 +3,8 @@
 import { useState, useCallback, useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { Plus, FileText, Trash2 } from 'lucide-react'
+import { Plus, FileText, Trash } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getNotesList, createNote, deleteNote } from '@/lib/actions/notes'
 import type { NoteStub } from '@/types/app'
 
@@ -62,9 +63,9 @@ export function NotesLayoutClient({
           <button
             type='button'
             onClick={handleCreateNote}
-            className='flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90'
+            className='flex w-full items-center justify-center gap-2 rounded-md bg-primary py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90'
           >
-            <Plus className='h-4 w-4' strokeWidth={1.5} />
+            <SCIcon icon={Plus} size="sm" />
             New Note
           </button>
         </div>
@@ -85,9 +86,8 @@ export function NotesLayoutClient({
                         isActive ? 'bg-secondary' : 'hover:bg-secondary/60'
                       }`}
                     >
-                      <FileText
-                        className='mt-0.5 h-4 w-4 shrink-0 text-muted-foreground'
-                        strokeWidth={1.5}
+                      <SCIcon icon={FileText} size="sm"
+                        className='mt-0.5 shrink-0 text-muted-foreground'
                       />
                       <div className='min-w-0 flex-1'>
                         <p className='truncate text-[13px] font-medium text-foreground'>
@@ -98,7 +98,7 @@ export function NotesLayoutClient({
                             {n.snippet}
                           </p>
                         )}
-                        <p className='mt-0.5 text-[10px] text-muted-foreground/80'>
+                        <p className='mt-0.5 text-[11px] text-muted-foreground/80'>
                           {new Date(n.updated_at).toLocaleDateString(
                             undefined,
                             {
@@ -111,10 +111,10 @@ export function NotesLayoutClient({
                       <button
                         type='button'
                         onClick={(e) => handleDeleteNote(e, n.id)}
-                        className='shrink-0 rounded p-1 text-muted-foreground hover:bg-muted hover:text-color-signal-red'
+                        className='shrink-0 rounded p-1 text-muted-foreground hover:bg-muted hover:text-danger'
                         title='Delete'
                       >
-                        <Trash2 className='h-3.5 w-3.5' strokeWidth={1.5} />
+                        <SCIcon icon={Trash} size="xs" />
                       </button>
                     </Link>
                   </li>

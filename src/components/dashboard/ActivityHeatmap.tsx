@@ -106,10 +106,10 @@ function toLevel(n: number): Level {
 
 const LEVEL_BG: Record<Level, string> = {
   0: 'bg-zinc-100 dark:bg-zinc-800',
-  1: 'bg-blue-100',
-  2: 'bg-blue-200',
-  3: 'bg-blue-400',
-  4: 'bg-blue-600',
+  1: 'bg-primary/10',
+  2: 'bg-primary/20',
+  3: 'bg-primary/60',
+  4: 'bg-primary',
 }
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -328,7 +328,7 @@ export function ActivityHeatmap({
               className={cn(
                 'appearance-none cursor-pointer rounded-md border border-border',
                 'bg-white pl-3 pr-7 py-1 text-xs font-medium text-zinc-700',
-                'hover:border-zinc-300 focus:outline-none focus:ring-2 focus:ring-blue-200',
+                'hover:border-zinc-300 focus:outline-none focus:ring-2 focus:ring-primary/30',
                 'transition-colors',
               )}
             >

@@ -44,7 +44,7 @@ function computeStats(questions: { question_id: string; correct_option_id: strin
     if (answers[q.question_id] === q.correct_option_id) correct++
   })
   const score = Math.round((correct / total) * 100)
-  const masteryLabel = score >= 75 ? 'Mastered' : score >= 50 ? 'Developing' : 'Needs Work'
+  const masteryLabel = score >= 75 ? 'Mastered' : score >= 50 ? 'Developing' : 'Keep Practicing'
   const masteryColor = score >= 75 ? 'text-emerald-600' : score >= 50 ? 'text-amber-600' : 'text-red-600'
   return { total, correct, score, masteryLabel, masteryColor }
 }
@@ -159,18 +159,18 @@ describe("computeStats", () => {
     expect(stats.masteryColor).toBe('text-amber-600')
   })
 
-  test("49% score → Needs Work", () => {
+  test("49% score → Keep Practicing", () => {
     // 1/4 = 25%
     const stats = computeStats(questions, { q1: 'a', q2: 'x', q3: 'x', q4: 'x' })
     expect(stats.score).toBe(25)
-    expect(stats.masteryLabel).toBe('Needs Work')
+    expect(stats.masteryLabel).toBe('Keep Practicing')
     expect(stats.masteryColor).toBe('text-red-600')
   })
 
-  test("0% score → Needs Work", () => {
+  test("0% score → Keep Practicing", () => {
     const stats = computeStats(questions, { q1: 'x', q2: 'x', q3: 'x', q4: 'x' })
     expect(stats.score).toBe(0)
-    expect(stats.masteryLabel).toBe('Needs Work')
+    expect(stats.masteryLabel).toBe('Keep Practicing')
   })
 
   test("correct count is accurate", () => {

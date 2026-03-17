@@ -45,13 +45,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'toe-space', type: 'box', position: [-cW / 4, 0.15, 0], args: [cW / 2, 0.3, cD], color: '#e0f2fe', opacity: 0.3, transparent: true })
 
   // Max height indicator
-  inst.push({ id: 'max-height', type: 'box', position: [cW / 2 + 0.3, maxH, 0], args: [0.4, 0.01, cD], color: heightViolated ? '#dc2626' : '#16a34a', label: '860mm max' })
+  inst.push({ id: 'max-height', type: 'box', position: [cW / 2 + 0.3, maxH, 0], args: [0.4, 0.01, cD], color: heightViolated ? '#D64545' : '#2D9F6F', label: '860mm max' })
   // Height bar
-  inst.push({ id: 'height-bar', type: 'box', position: [cW / 2 + 0.4, ctH / 2, 0], args: [0.03, ctH, 0.03], color: heightViolated ? '#dc2626' : '#3b82f6', label: `${(ctH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'height-bar', type: 'box', position: [cW / 2 + 0.4, ctH / 2, 0], args: [0.03, ctH, 0.03], color: heightViolated ? '#D64545' : '#3b82f6', label: `${(ctH * 1000).toFixed(0)}mm` })
 
   // Knee clearance indicators
-  inst.push({ id: 'knee-h-line', type: 'box', position: [-(cW / 2 + 0.3), kH, 0], args: [0.3, 0.01, cD], color: kneeViolated ? '#dc2626' : '#16a34a', label: `${(kH * 1000).toFixed(0)}mm` })
-  inst.push({ id: 'knee-d-line', type: 'box', position: [-cW / 4, kH / 2, cD / 2 + 0.1], args: [0.01, 0.01, kD], color: kneeViolated ? '#dc2626' : '#3b82f6', label: `${(kD * 1000).toFixed(0)}mm deep` })
+  inst.push({ id: 'knee-h-line', type: 'box', position: [-(cW / 2 + 0.3), kH, 0], args: [0.3, 0.01, cD], color: kneeViolated ? '#D64545' : '#2D9F6F', label: `${(kH * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'knee-d-line', type: 'box', position: [-cW / 4, kH / 2, cD / 2 + 0.1], args: [0.01, 0.01, kD], color: kneeViolated ? '#D64545' : '#3b82f6', label: `${(kD * 1000).toFixed(0)}mm deep` })
 
   // Standard counter section (right - non-accessible)
   inst.push({ id: 'std-label', type: 'sphere', position: [cW / 4, ctH + 0.1, 0], args: [0.06, 8, 8], color: '#71717a', label: 'Standard' })

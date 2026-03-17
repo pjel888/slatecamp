@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { FileText, Plus, Search, Edit, Trash2, Eye } from 'lucide-react'
+import { FileText, Plus, MagnifyingGlass, PencilSimple, Trash, Eye } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface WikiArticle {
@@ -31,7 +32,7 @@ const statusColors: Record<string, string> = {
   draft: 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200',
   pending_review: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
   changes_requested: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
-  approved: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
+  approved: 'bg-[#F0F5FA] text-[#2F5A85] dark:bg-[#1C2433] dark:text-[#5B8BB8]',
   published: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
   archived: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
 }
@@ -52,7 +53,7 @@ export function WikiArticleList({ initialArticles }: WikiArticleListProps) {
       {/* Search and Filters */}
       <div className="flex gap-4">
         <div className="flex-1 relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search articles..."
@@ -75,7 +76,7 @@ export function WikiArticleList({ initialArticles }: WikiArticleListProps) {
           href="/admin/wiki/new"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
         >
-          <Plus className="h-4 w-4" />
+          <SCIcon icon={Plus} size="sm" />
           New Article
         </Link>
       </div>
@@ -121,7 +122,7 @@ export function WikiArticleList({ initialArticles }: WikiArticleListProps) {
                         href={`/admin/wiki/${article.id}`}
                         className="p-1 hover:bg-muted rounded"
                       >
-                        <Edit className="h-4 w-4" />
+                        <SCIcon icon={PencilSimple} size="sm" />
                       </Link>
                     </div>
                   </td>

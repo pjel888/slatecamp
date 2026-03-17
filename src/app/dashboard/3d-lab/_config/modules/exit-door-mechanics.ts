@@ -44,9 +44,9 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         { id: 'hinge-mid', type: 'box', args: [0.04, 0.1, 0.03], position: [-0.44, 1.05, 0.02], color: '#374151' },
         { id: 'hinge-bot', type: 'box', args: [0.04, 0.1, 0.03], position: [-0.44, 0.35, 0.02], color: '#374151' },
         // Panic bar (horizontal push bar)
-        { id: 'panic-bar', type: 'box', args: [0.7, 0.04, 0.06], position: [0.05, 1.0, 0.05], color: '#dc2626' },
+        { id: 'panic-bar', type: 'box', args: [0.7, 0.04, 0.06], position: [0.05, 1.0, 0.05], color: '#D64545' },
         // EXIT sign above
-        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#16a34a' },
+        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
         // Clear width indicator
         { id: 'width-line', type: 'box', args: [0.9, 0.005, 0.005], position: [0, 0.01, 0.3], color: '#3b82f6' },
       ],
@@ -78,7 +78,7 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         // Force arrow
         { id: 'force-arrow', type: 'cone', args: [0.06, 0.15, 8], position: [0, 1.0, 0.4], rotation: [Math.PI / 2, 0, 0], color: '#f97316' },
         // EXIT sign
-        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#16a34a' },
+        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
       ],
     },
 
@@ -106,9 +106,9 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         // Swing arc (quarter circle on floor)
         { id: 'swing-arc', type: 'cylinder', args: [0.9, 0.9, 0.005, 32, 1, 0, Math.PI / 2], position: [-0.45, 0.01, 0], rotation: [-Math.PI / 2, 0, 0], color: '#3b82f6', opacity: 0.3, transparent: true },
         // Direction arrow (egress direction)
-        { id: 'egress-arrow', type: 'cone', args: [0.08, 0.2, 8], position: [0, 0.3, 1.0], rotation: [Math.PI / 2, 0, 0], color: '#16a34a', label: 'Egress direction →' },
+        { id: 'egress-arrow', type: 'cone', args: [0.08, 0.2, 8], position: [0, 0.3, 1.0], rotation: [Math.PI / 2, 0, 0], color: '#2D9F6F', label: 'Egress direction →' },
         // EXIT sign
-        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#16a34a' },
+        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
       ],
     },
 
@@ -134,13 +134,13 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         { id: 'frame-right', type: 'box', args: [0.05, 2.2, 0.22], position: [0.475, 1.1, 0], color: '#57534e' },
         { id: 'frame-top', type: 'box', args: [1.0, 0.05, 0.22], position: [0, 2.125, 0], color: '#57534e' },
         // Clear width measurement line
-        { id: 'clear-width-line', type: 'box', args: [0.86, 0.008, 0.008], position: [0.02, 0.5, 0.15], color: '#2563eb', label: '860mm clear width' },
+        { id: 'clear-width-line', type: 'box', args: [0.86, 0.008, 0.008], position: [0.02, 0.5, 0.15], color: '#3B6B9C', label: '860mm clear width' },
         // Left marker
-        { id: 'cw-left', type: 'box', args: [0.008, 0.15, 0.008], position: [-0.41, 0.5, 0.15], color: '#2563eb' },
+        { id: 'cw-left', type: 'box', args: [0.008, 0.15, 0.008], position: [-0.41, 0.5, 0.15], color: '#3B6B9C' },
         // Right marker
-        { id: 'cw-right', type: 'box', args: [0.008, 0.15, 0.008], position: [0.45, 0.5, 0.15], color: '#2563eb' },
+        { id: 'cw-right', type: 'box', args: [0.008, 0.15, 0.008], position: [0.45, 0.5, 0.15], color: '#3B6B9C' },
         // EXIT sign
-        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#16a34a' },
+        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
       ],
     },
 
@@ -172,7 +172,7 @@ export const exitDoorMechanicsConfig: AnimatedSequenceConfig = {
         // Return arrow
         { id: 'return-arrow', type: 'cone', args: [0.06, 0.15, 8], position: [0.2, 1.5, 0.3], rotation: [0, -Math.PI / 4, -Math.PI / 2], color: '#f97316' },
         // EXIT sign
-        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#16a34a' },
+        { id: 'exit-sign', type: 'box', args: [0.3, 0.1, 0.03], position: [0, 2.5, 0], color: '#2D9F6F' },
       ],
     },
   ],

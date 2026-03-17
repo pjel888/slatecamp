@@ -38,7 +38,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'frame-top', type: 'box', position: [0, dH + 0.025, 0], args: [dW + 0.1, 0.05, wT + 0.02], color: '#71717a' })
 
   // Door leaf
-  const doorColor = dType === 'Fire' ? '#dc2626' : '#a1a1aa'
+  const doorColor = dType === 'Fire' ? '#D64545' : '#a1a1aa'
   if (dType === 'Sliding') {
     inst.push({ id: 'door-leaf', type: 'box', position: [dW * 0.25, dH / 2, wT / 2 + 0.02], args: [dW * 0.95, dH - 0.05, 0.04], color: doorColor, opacity: 0.8, transparent: true })
   } else if (dType === 'Double') {
@@ -52,7 +52,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Hardware
   if (showHW) {
-    inst.push({ id: 'handle', type: 'cylinder', position: [dW / 2 - 0.08, 1.0, 0.05], args: [0.015, 0.015, 0.12, 8], color: '#f59e0b' })
+    inst.push({ id: 'handle', type: 'cylinder', position: [dW / 2 - 0.08, 1.0, 0.05], args: [0.015, 0.015, 0.12, 8], color: '#D4951A' })
     inst.push({ id: 'hinge-top', type: 'box', position: [-(dW / 2 + 0.025), dH - 0.2, 0], args: [0.06, 0.1, 0.03], color: '#71717a' })
     inst.push({ id: 'hinge-bot', type: 'box', position: [-(dW / 2 + 0.025), 0.2, 0], args: [0.06, 0.1, 0.03], color: '#71717a' })
   }

@@ -51,7 +51,7 @@ export const drainageSystemCutawayConfig: CutawaySectionConfig = {
       description: '75mm branch drain at 2% slope connecting lavatory and sink to soil stack.',
       codeCitation: 'NPCP §708.1',
       depth: 0.85,
-      geometry: { id: 'geo-branch', type: 'cylinder', args: [0.0375, 0.0375, 1.5, 16], position: [0.25, 1.6, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#dc2626' },
+      geometry: { id: 'geo-branch', type: 'cylinder', args: [0.0375, 0.0375, 1.5, 16], position: [0.25, 1.6, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#D64545' },
     },
     {
       id: 'p-trap',
@@ -69,7 +69,7 @@ export const drainageSystemCutawayConfig: CutawaySectionConfig = {
       description: 'Vent stack ≥½ drain diameter extending through roof to prevent trap siphonage.',
       codeCitation: 'NPCP §906.1',
       depth: 1.15,
-      geometry: { id: 'geo-vent', type: 'cylinder', args: [0.025, 0.025, 2.5, 16], position: [0.5, 2.45, 0], color: '#16a34a' },
+      geometry: { id: 'geo-vent', type: 'cylinder', args: [0.025, 0.025, 2.5, 16], position: [0.5, 2.45, 0], color: '#2D9F6F' },
     },
     {
       id: 'wall-background',

@@ -67,7 +67,7 @@ export const steelConnectionsConfig: ExplodedAssemblyConfig = {
       label: 'CJP Groove Weld',
       description: 'Complete Joint Penetration (CJP) groove weld at beam flange. Full-strength weld — develops 100% of beam flange capacity. Requires weld access holes in web.',
       codeCitation: 'AWS D1.1 / AISC 360 Ch. J',
-      geometry: { id: 'sc-weld-bead-geo', type: 'box', position: [0.06, 0.075, 0], args: [0.04, 0.02, 0.2], color: '#f59e0b' },
+      geometry: { id: 'sc-weld-bead-geo', type: 'box', position: [0.06, 0.075, 0], args: [0.04, 0.02, 0.2], color: '#D4951A' },
       explodeOffset: [0.1, 0.35, 0],
     },
     {

@@ -86,7 +86,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'box',
         args: [SLAB_WIDTH, 0.02, SLAB_DEPTH],
         position: [0, 0.61, 0],
-        color: '#2563eb',
+        color: '#3B6B9C',
       },
     },
     // 5. Floor tile
@@ -117,7 +117,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'cylinder',
         args: [0.038, 0.038, 0.076, 16],
         position: [-0.25, 0.678, 0],
-        color: '#dc2626',
+        color: '#D64545',
       },
     },
     // 7. Soil stack (vertical)
@@ -148,7 +148,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'cylinder',
         args: [0.025, 0.025, 0.05, 16],
         position: [-0.25, 0.845, 0],
-        color: '#16a34a',
+        color: '#2D9F6F',
       },
     },
     // 9. Wall framing (CHB)
@@ -163,7 +163,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'box',
         args: [SLAB_WIDTH, 0.1, 0.1],
         position: [0, 0.92, -SLAB_DEPTH / 2 + 0.05],
-        color: '#f59e0b',
+        color: '#D4951A',
       },
     },
     // 10. Wall tile
@@ -194,7 +194,7 @@ export const plumbingFixtureCutaway: CutawaySectionConfig = {
         type: 'cylinder',
         args: [0.016, 0.016, 0.032, 16],
         position: [0.3, 1.016, 0],
-        color: '#dc2626',
+        color: '#D64545',
       },
     },
     // 12. Supply pipe

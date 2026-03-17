@@ -2,7 +2,8 @@
 'use client'
 
 import { memo, useState, useMemo } from 'react'
-import { ChevronDown, ChevronRight, RotateCcw } from 'lucide-react'
+import { CaretDown, CaretRight, ArrowCounterClockwise } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { cn } from '@/lib/utils'
@@ -29,11 +30,11 @@ function Section({
         className="flex items-center gap-1 w-full text-left mb-2"
       >
         {open ? (
-          <ChevronDown className="h-3 w-3 text-zinc-400" />
+          <SCIcon icon={CaretDown} size="xs" className="text-zinc-400" />
         ) : (
-          <ChevronRight className="h-3 w-3 text-zinc-400" />
+          <SCIcon icon={CaretRight} size="xs" className="text-zinc-400" />
         )}
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
+        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
           {title}
         </span>
       </button>
@@ -97,7 +98,7 @@ function ToggleControl({
         className={cn(
           'w-8 h-4 rounded-full transition-colors relative',
           value
-            ? 'bg-blue-600 cursor-pointer'
+            ? 'bg-primary cursor-pointer'
             : 'bg-zinc-200 cursor-pointer'
         )}
       >
@@ -129,7 +130,7 @@ function DropdownControl({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500 min-w-0"
+        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary min-w-0"
       >
         {param.options?.map((o) => (
           <option key={o.value} value={o.value}>
@@ -234,7 +235,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
           onClick={reset}
           title="Reset to defaults"
         >
-          <RotateCcw className="h-3 w-3 text-zinc-400" />
+          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
         </Button>
       </div>
 
@@ -245,7 +246,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
             <button
               key={preset.label}
               onClick={() => setParams(preset.values)}
-              className="text-[10px] font-medium text-blue-600 border border-blue-200 rounded px-1.5 py-0.5 hover:bg-blue-50 transition-colors"
+              className="text-[11px] font-medium text-primary border border-primary/30 rounded px-1.5 py-0.5 hover:bg-[#F0F5FA] transition-colors"
             >
               {preset.label}
             </button>

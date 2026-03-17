@@ -76,7 +76,7 @@ export function FARScene() {
       buildingRef.current.position.y = LOT_Y * 2 + nh / 2
     }
     if (buildingMatRef.current) {
-      buildingMatRef.current.color.set(s.isViolation ? '#dc2626' : '#2563eb')
+      buildingMatRef.current.color.set(s.isViolation ? '#D64545' : '#3B6B9C')
     }
 
     if (!wSettled || !hSettled) invalidate()
@@ -90,7 +90,7 @@ export function FARScene() {
   const bhlU    = toU(bhl)
   const frontSbU = toU(setbackFront)
   const sideSbU  = toU(setbackSide)
-  const bhlColor = s.isBHLViolation ? '#dc2626' : '#16a34a'
+  const bhlColor = s.isBHLViolation ? '#D64545' : '#2D9F6F'
 
   return (
     <group>
@@ -147,14 +147,14 @@ export function FARScene() {
       {/* Setback labels */}
       {frontSbU > 0 && (
         <Html position={[0, LOT_Y, lotU / 2 - frontSbU / 2]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Front/Rear: {setbackFront.toFixed(1)}m
           </div>
         </Html>
       )}
       {sideSbU > 0 && (
         <Html position={[-(lotU / 2 - sideSbU / 2), LOT_Y, 0]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[9px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
             Side: {setbackSide.toFixed(1)}m
           </div>
         </Html>
@@ -165,7 +165,7 @@ export function FARScene() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#2563eb"
+          color="#3B6B9C"
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -180,7 +180,7 @@ export function FARScene() {
         return (
           <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
             <boxGeometry args={[bw, 0.005, bw]} />
-            <meshStandardMaterial color="#1d4ed8" transparent opacity={0.4} />
+            <meshStandardMaterial color="#2F5A85" transparent opacity={0.4} />
           </mesh>
         )
       })}
@@ -192,7 +192,7 @@ export function FARScene() {
         distanceFactor={8} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap">
-          <span className="text-[9px] font-bold text-zinc-700">
+          <span className="text-[11px] font-bold text-zinc-700">
             {s.buildingHeightM.toFixed(1)}m · {s.floors}F
           </span>
         </div>
@@ -206,11 +206,11 @@ export function FARScene() {
         <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap text-center ${
           s.isFARViolation ? 'bg-red-50 border-red-200' : 'bg-white/90 backdrop-blur-sm border-zinc-200'
         }`}>
-          <div className={`text-[9px] font-bold ${s.isFARViolation ? 'text-red-700' : 'text-zinc-700'}`}>
+          <div className={`text-[11px] font-bold ${s.isFARViolation ? 'text-red-700' : 'text-zinc-700'}`}>
             FAR {far.toFixed(1)}× — {s.maxFloorAreaM2.toFixed(0)} sqm GFA
           </div>
           {s.isFARViolation && (
-            <div className="text-[9px] text-red-500">Exceeds zone max {MAX_ZONE_FAR}×</div>
+            <div className="text-[11px] text-red-500">Exceeds zone max {MAX_ZONE_FAR}×</div>
           )}
         </div>
       </Html>
@@ -227,7 +227,7 @@ export function FARScene() {
         <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap ${
           s.isBHLViolation ? 'bg-red-50 border-red-200' : 'bg-slate-50 border-slate-200'
         }`}>
-          <span className={`text-[9px] font-bold ${s.isBHLViolation ? 'text-red-700' : 'text-slate-500'}`}>
+          <span className={`text-[11px] font-bold ${s.isBHLViolation ? 'text-red-700' : 'text-slate-500'}`}>
             BHL {bhl}m{s.isBHLViolation ? ' ⚠ EXCEEDED' : ' (limit)'}
           </span>
         </div>

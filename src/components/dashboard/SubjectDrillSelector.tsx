@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState, useEffect, useMemo } from 'react'
-import { BookOpen, ChevronRight, ChevronDown, Target, Brain, Zap, AlertTriangle, Clock } from 'lucide-react'
+import { BookOpen, CaretRight, CaretDown, Target, Brain, Lightning, Warning, Clock } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -96,7 +97,7 @@ export function SubjectDrillSelector({
           <div className="w-4 h-4 flex items-center justify-center shrink-0">
             {hasChildren ? (
               <div onClick={(e) => { e.stopPropagation(); toggleExpand(node.node_id); }}>
-                {isExpanded ? <ChevronDown className="h-3 w-3" /> : <ChevronRight className="h-3 w-3" />}
+                {isExpanded ? <SCIcon icon={CaretDown} size="xs" /> : <SCIcon icon={CaretRight} size="xs" />}
               </div>
             ) : (
               <div className="w-1 h-1 rounded-full bg-current opacity-30" />
@@ -109,10 +110,10 @@ export function SubjectDrillSelector({
           <span className="text-[13px] font-medium truncate">{node.name}</span>
           
           <div className="ml-auto flex items-center gap-1.5">
-            {isWeak && <AlertTriangle className="h-3 w-3 text-red-500" />}
-            {isNeglected && <Clock className="h-3 w-3 text-amber-500" />}
+            {isWeak && <SCIcon icon={Warning} size="xs" className="text-red-500" />}
+            {isNeglected && <SCIcon icon={Clock} size="xs" className="text-amber-500" />}
             <span className={cn(
-              "text-[9px] font-bold opacity-60",
+              "text-[11px] font-bold opacity-60",
               isSelected ? "text-white" : "text-zinc-400"
             )}>
               {node.mastery !== undefined ? `${Math.round(node.mastery * 100)}%` : '--'}
@@ -131,17 +132,17 @@ export function SubjectDrillSelector({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className='sm:max-w-[650px] bg-white border-zinc-200 shadow-lg rounded-md p-0 overflow-hidden flex flex-col max-h-[90vh]'>
-        <div className='h-1.5 bg-blue-600 w-full' />
+        <div className='h-1.5 bg-primary w-full' />
 
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Panel: Taxonomy Tree */}
           <div className="w-full md:w-3/5 flex flex-col border-r border-zinc-100">
             <DialogHeader className='px-6 pt-6 pb-4 shrink-0'>
               <DialogTitle className='text-lg font-bold text-zinc-900'>
-                Syllabus Explorer
+                Choose a Topic
               </DialogTitle>
               <DialogDescription className='text-xs text-zinc-500'>
-                Target weak areas to build desirable difficulty.
+                Select the area you want to focus on — your mastery score for each topic is shown to help you decide.
               </DialogDescription>
             </DialogHeader>
 
@@ -149,7 +150,7 @@ export function SubjectDrillSelector({
               {loading ? (
                 <div className="flex flex-col items-center justify-center h-full py-20 space-y-4">
                   <div className="h-6 w-6 border-2 border-zinc-900 border-t-transparent rounded-full animate-spin" />
-                  <span className="text-xs font-medium text-zinc-400">Loading taxonomy...</span>
+                  <span className="text-xs font-medium text-zinc-400">Loading topics...</span>
                 </div>
               ) : (
                 <div className="space-y-0.5">
@@ -165,18 +166,18 @@ export function SubjectDrillSelector({
               {selectedNode ? (
                 <div className="space-y-4 animate-in fade-in slide-in-from-right-2">
                   <div className="p-4 bg-white rounded-sm border border-zinc-200 shadow-sm">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-1">Active Selection</p>
+                    <p className="text-[11px] font-bold uppercase tracking-widest text-primary mb-1">Selected Topic</p>
                     <h4 className="text-sm font-bold text-zinc-900 leading-tight">{selectedNode.name}</h4>
                     
                     <div className="mt-4 grid grid-cols-2 gap-4">
                       <div>
-                        <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400">Mastery</p>
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400">Mastery</p>
                         <p className={cn("text-xs font-bold", getMasteryColor(selectedNode.mastery).replace('bg-', 'text-'))}>
                           {selectedNode.mastery !== undefined ? `${Math.round(selectedNode.mastery * 100)}%` : 'New Topic'}
                         </p>
                       </div>
                       <div>
-                        <p className="text-[9px] font-bold uppercase tracking-widest text-zinc-400">Last Seen</p>
+                        <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400">Last Seen</p>
                         <p className="text-xs font-bold text-zinc-600">
                           {selectedNode.last_encountered ? formatDistanceToNow(new Date(selectedNode.last_encountered)) + ' ago' : 'Never'}
                         </p>
@@ -186,15 +187,15 @@ export function SubjectDrillSelector({
 
                   {selectedNode.mastery !== undefined && selectedNode.mastery > 0.8 && (
                     <div className="p-3 bg-amber-50 border border-amber-100 rounded-sm flex gap-3">
-                      <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0" />
+                      <SCIcon icon={Warning} size="sm" className="text-amber-500 shrink-0" />
                       <p className="text-[11px] text-amber-700 leading-snug">
-                        <span className="font-bold">Illusion of Competence Risk:</span> You already have high mastery here. Consider a harder topic to maintain desirable difficulty.
+                        <span className="font-bold">You&apos;re already strong here.</span> Practicing a topic you know well has less impact. Consider choosing an area where you have more room to grow.
                       </p>
                     </div>
                   )}
 
                   <div className='space-y-3 pt-2'>
-                    <Label className='text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400'>
+                    <Label className='text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400'>
                       Question Count
                     </Label>
                     <div className="flex gap-1 bg-white p-1 rounded-sm border border-zinc-200 shadow-sm">
@@ -218,9 +219,9 @@ export function SubjectDrillSelector({
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center p-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center mb-4">
-                    <Target className="h-6 w-6 text-zinc-300" />
+                    <SCIcon icon={Target} size="lg" className="text-zinc-300" />
                   </div>
-                  <p className="text-sm font-bold text-zinc-400">Select a topic to view pedagogical insights</p>
+                  <p className="text-sm font-bold text-zinc-400">Select a topic to see your progress and set a question count</p>
                 </div>
               )}
             </div>
@@ -234,10 +235,10 @@ export function SubjectDrillSelector({
                   }
                 }}
                 disabled={!selectedNodeId}
-                className='w-full h-10 text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
+                className='w-full h-10 text-sm font-semibold bg-primary hover:bg-[#2F5A85] text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
               >
-                Launch Drill
-                <Zap className="h-4 w-4 fill-current group-hover:scale-110 transition-transform" />
+                Start Practice Session
+                <SCIcon icon={Lightning} size="sm" weight="fill" className="group-hover:scale-110 transition-transform" />
               </Button>
             </div>
           </div>

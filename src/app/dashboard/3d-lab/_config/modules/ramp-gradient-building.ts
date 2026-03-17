@@ -45,14 +45,14 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Max gradient indicator (1:10)
   const maxRise = rL / fireMaxGrad
-  inst.push({ id: 'max-grad-plane', type: 'box', position: [0, maxRise, -(rL / 10)], args: [rW + 0.5, 0.02, rL * 0.02], color: violated ? '#dc2626' : '#16a34a', opacity: 0.6, transparent: true, label: '1:10 max' })
+  inst.push({ id: 'max-grad-plane', type: 'box', position: [0, maxRise, -(rL / 10)], args: [rW + 0.5, 0.02, rL * 0.02], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.6, transparent: true, label: '1:10 max' })
 
   // Vehicle (simplified)
   if (showVeh) {
     const vY = riseH / 4
     const vZ = rL / 4
     inst.push({ id: 'vehicle-body', type: 'box', position: [0, vY + 0.75, vZ], rotation: [angle, 0, 0], args: [1.9, 1.5, 4.5], color: '#3b82f6', opacity: 0.7, transparent: true })
-    inst.push({ id: 'vehicle-roof', type: 'box', position: [0, vY + 1.6, vZ], rotation: [angle, 0, 0], args: [1.7, 0.6, 2.5], color: '#2563eb', opacity: 0.7, transparent: true })
+    inst.push({ id: 'vehicle-roof', type: 'box', position: [0, vY + 1.6, vZ], rotation: [angle, 0, 0], args: [1.7, 0.6, 2.5], color: '#3B6B9C', opacity: 0.7, transparent: true })
   }
 
   return inst

@@ -34,8 +34,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'ground', type: 'box', position: [0, -0.05, 0], args: [10, 0.1, 10], color: '#52525b' })
 
   // Fault line
-  inst.push({ id: 'fault', type: 'box', position: [0, 0, 0], args: [0.15, 0.2, 10], color: '#dc2626', label: `Type ${faultType} Fault` })
-  inst.push({ id: 'fault-label', type: 'sphere', position: [0, 0.5, 0], args: [0.15, 8, 8], color: '#dc2626' })
+  inst.push({ id: 'fault', type: 'box', position: [0, 0, 0], args: [0.15, 0.2, 10], color: '#D64545', label: `Type ${faultType} Fault` })
+  inst.push({ id: 'fault-label', type: 'sphere', position: [0, 0.5, 0], args: [0.15, 8, 8], color: '#D64545' })
 
   // Site location
   const siteX = dist * scale
@@ -49,7 +49,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Distance rings
   if (showRings) {
     const ringDistances = [2, 5, 10, 15]
-    const ringColors = ['#dc2626', '#f97316', '#eab308', '#16a34a']
+    const ringColors = ['#D64545', '#f97316', '#eab308', '#2D9F6F']
     ringDistances.forEach((r, i) => {
       const rs = r * scale
       if (rs < 4.5) {
@@ -60,9 +60,9 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Na/Nv indicator bars
   inst.push({ id: 'na-bar', type: 'box', position: [siteX + 0.5, Na * 0.5, 0], args: [0.2, Na, 0.2], color: '#f97316', label: `Na=${Na.toFixed(1)}` })
-  inst.push({ id: 'nv-bar', type: 'box', position: [siteX + 0.9, Nv * 0.5, 0], args: [0.2, Nv, 0.2], color: '#dc2626', label: `Nv=${Nv.toFixed(1)}` })
+  inst.push({ id: 'nv-bar', type: 'box', position: [siteX + 0.9, Nv * 0.5, 0], args: [0.2, Nv, 0.2], color: '#D64545', label: `Nv=${Nv.toFixed(1)}` })
   // Reference line at 1.0
-  inst.push({ id: 'ref-line', type: 'box', position: [siteX + 0.7, 1.0, 0], args: [0.7, 0.01, 0.3], color: '#16a34a', label: 'N=1.0' })
+  inst.push({ id: 'ref-line', type: 'box', position: [siteX + 0.7, 1.0, 0], args: [0.7, 0.01, 0.3], color: '#2D9F6F', label: 'N=1.0' })
 
   return inst
 }

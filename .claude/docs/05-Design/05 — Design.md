@@ -5,7 +5,7 @@ SlateCamp Design System v6.0 — extracted from the Master Blueprint HTML. **Lig
 <aside>
 📐
 
-**Design Philosophy:** Apple HIG × Dieter Rams (Braun)
+**Design Philosophy:** Campfire — warm, inviting, research-backed, commercially viable
 
 Every visual decision prioritizes **clarity over decoration**, **function over flair**, and **structure over style.** Transitions never exceed 150ms. Color is only used when it carries meaning.
 
@@ -54,7 +54,7 @@ Every visual decision prioritizes **clarity over decoration**, **function over f
 
 | **Role** | **Token** | **Hex** | **Tailwind** | **Usage** |
 | --- | --- | --- | --- | --- |
-| **Primary** | `--braun-orange` | `#2563EB` | blue-600 | CTAs, active states, eyebrow labels, links, primary accent |
+| **Primary** | `--primary` | `#3B6B9C` | Slate Blue | Primary actions, nav, links |
 | Primary Hover | `--braun-orange-hover` | `#1D4ED8` | blue-700 | Button hover, link hover |
 | Primary Light | `--braun-orange-light` | `#EFF6FF` | blue-50 | Mentor callout background, active nav tint |
 | Primary Tint | `--braun-orange-tint` | `rgba(37,99,235,0.08)` | — | Hover tint on nav, subtle highlight |
@@ -142,7 +142,7 @@ Apple-style layered depth system. Always use double-layer shadows for realism.
 
 ## ⚡ Motion & Transitions
 
-**Rams Standard: all UI transitions ≤ 150ms.** No gratuitous animation. Motion serves function only.
+**Campfire Standard: all UI transitions ≤ 300ms, ease-out. No gratuitous animation.**
 
 | **Token** | **Duration** | **Easing** | **Usage** |
 | --- | --- | --- | --- |

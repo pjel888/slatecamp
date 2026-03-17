@@ -50,14 +50,14 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'attic-floor', type: 'box', position: [0, cH + 0.08, 0], args: [span - 0.3, 0.08, 3.5], color: '#a1a1aa' })
 
   // Min height reference
-  inst.push({ id: 'min-height-plane', type: 'box', position: [0, cH + minH, 0], args: [span, 0.005, 3.8], color: violated ? '#dc2626' : '#16a34a', opacity: 0.4, transparent: true, label: `Min ${minH}m` })
+  inst.push({ id: 'min-height-plane', type: 'box', position: [0, cH + minH, 0], args: [span, 0.005, 3.8], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.4, transparent: true, label: `Min ${minH}m` })
 
   // Actual height indicator
-  inst.push({ id: 'height-bar', type: 'box', position: [-(span / 2) - 0.4, cH + atticH / 2, 0], args: [0.03, atticH, 0.03], color: violated ? '#dc2626' : '#3b82f6', label: `${atticH.toFixed(1)}m` })
+  inst.push({ id: 'height-bar', type: 'box', position: [-(span / 2) - 0.4, cH + atticH / 2, 0], args: [0.03, atticH, 0.03], color: violated ? '#D64545' : '#3b82f6', label: `${atticH.toFixed(1)}m` })
 
   // Access hatch
   if (hasHatch) {
-    inst.push({ id: 'hatch', type: 'box', position: [0, cH + 0.15, 0], args: [hatchSize, 0.12, hatchSize], color: hatchViolated ? '#dc2626' : '#f97316', label: `${(hatchSize * 1000).toFixed(0)}mm hatch` })
+    inst.push({ id: 'hatch', type: 'box', position: [0, cH + 0.15, 0], args: [hatchSize, 0.12, hatchSize], color: hatchViolated ? '#D64545' : '#f97316', label: `${(hatchSize * 1000).toFixed(0)}mm hatch` })
     inst.push({ id: 'hatch-frame', type: 'box', position: [0, cH + 0.2, 0], args: [hatchSize + 0.06, 0.04, hatchSize + 0.06], color: '#52525b' })
   }
 

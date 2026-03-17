@@ -4,13 +4,14 @@ import React, { useState, useEffect, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { Command } from 'cmdk'
 import {
-  Search,
+  MagnifyingGlass,
   FileText,
   ArrowRight,
-  Loader2,
+  CircleNotch,
   BookOpen,
   Clock,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -138,7 +139,7 @@ export function Omnibar({
             >
               {/* Header */}
               <div className='flex items-center px-5 border-b border-zinc-100 h-16 gap-4'>
-                <Search className='h-5 w-5 text-zinc-400 shrink-0' />
+                <SCIcon icon={MagnifyingGlass} size='md' className='text-zinc-400 shrink-0' />
                 <Command.Input
                   value={query}
                   onValueChange={setQuery}
@@ -146,11 +147,11 @@ export function Omnibar({
                   className='flex-1 bg-transparent border-none outline-none text-[16px] text-zinc-900 placeholder:text-zinc-400 h-full font-medium'
                 />
                 {isSearching && (
-                  <Loader2 className='h-4 w-4 text-zinc-400 animate-spin' />
+                  <SCIcon icon={CircleNotch} size='sm' className='text-zinc-400 animate-spin' />
                 )}
 
                 <div className='flex items-center gap-4 shrink-0'>
-                  <div className='hidden sm:flex items-center gap-1 px-2 py-1 bg-zinc-50 border border-zinc-200 rounded text-[10px] font-bold text-zinc-400 tracking-tighter uppercase'>
+                  <div className='hidden sm:flex items-center gap-1 px-2 py-1 bg-zinc-50 border border-zinc-200 rounded text-[11px] font-bold text-zinc-400 tracking-tighter uppercase'>
                     ESC
                   </div>
                   <AppleCloseButton onClick={() => setOpen(false)} />
@@ -165,7 +166,7 @@ export function Omnibar({
                     <>
                       {isSearching ? (
                         <div className='flex flex-col items-center justify-center py-20 text-center'>
-                          <Loader2 className='h-6 w-6 text-zinc-300 animate-spin mb-3' />
+                          <SCIcon icon={CircleNotch} size='lg' className='text-zinc-300 animate-spin mb-3' />
                           <p className='text-[11px] font-bold text-zinc-400 uppercase tracking-widest'>
                             Searching Knowledge Base...
                           </p>
@@ -195,10 +196,7 @@ export function Omnibar({
                     </>
                   ) : (
                     <div className='flex flex-col items-center justify-center h-full text-center p-8'>
-                      <Search
-                        className='h-10 w-10 text-zinc-100 mb-4'
-                        strokeWidth={1.5}
-                      />
+                      <SCIcon icon={MagnifyingGlass} size='xl' className='text-zinc-100 mb-4' />
                       <p className='text-zinc-400 text-sm font-medium'>
                         Type to discover syllabus content
                       </p>
@@ -217,8 +215,8 @@ export function Omnibar({
                         exit={{ opacity: 0, x: -10 }}
                         className='space-y-5'
                       >
-                        <div className='flex items-center gap-2 text-blue-600'>
-                          <BookOpen className='h-4 w-4' />
+                        <div className='flex items-center gap-2 text-primary'>
+                          <SCIcon icon={BookOpen} size='sm' />
                           <span className='text-[11px] font-bold uppercase tracking-widest'>
                             Article Preview
                           </span>
@@ -229,14 +227,14 @@ export function Omnibar({
                         <p className='text-[13px] text-zinc-500 leading-relaxed line-clamp-[10]'>
                           {selectedResult.content.replace(/[#*]/g, '')}
                         </p>
-                        <div className='pt-2 flex items-center gap-2 text-blue-600 font-bold text-[11px] uppercase tracking-wider group cursor-pointer'>
+                        <div className='pt-2 flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider group cursor-pointer'>
                           Read full article{' '}
-                          <ArrowRight className='h-3.5 w-3.5 transition-transform group-hover:translate-x-1' />
+                          <SCIcon icon={ArrowRight} size='xs' className='transition-transform group-hover:translate-x-1' />
                         </div>
                       </motion.div>
                     ) : (
                       <div className='flex-1 flex flex-col items-center justify-center text-center opacity-30 grayscale'>
-                        <BookOpen className='h-12 w-12 text-zinc-300 mb-3' />
+                        <SCIcon icon={BookOpen} size='2xl' className='text-zinc-300 mb-3' />
                         <p className='text-[13px] font-medium text-zinc-400'>
                           Select an item
                           <br />
@@ -252,8 +250,8 @@ export function Omnibar({
               {history.length > 0 && (
                 <div className='bg-zinc-50 border-t border-zinc-100 p-4'>
                   <div className='flex items-center gap-2 mb-3 px-2'>
-                    <Clock className='h-3 w-3 text-zinc-400' />
-                    <span className='text-[10px] font-bold text-zinc-400 uppercase tracking-[0.15em]'>
+                    <SCIcon icon={Clock} size='xs' className='text-zinc-400' />
+                    <span className='text-[11px] font-bold text-zinc-400 uppercase tracking-[0.15em]'>
                       Recent Activity
                     </span>
                   </div>
@@ -262,9 +260,9 @@ export function Omnibar({
                       <button
                         key={item.article_id}
                         onClick={() => handleSelect(item)}
-                        className='flex-none flex items-center gap-2 px-3 py-2 bg-white border border-zinc-200 rounded-xl hover:border-zinc-400 hover:shadow-sm transition-all max-w-[200px]'
+                        className='flex-none flex items-center gap-2 px-3 py-2 bg-white border border-zinc-200 rounded-md hover:border-zinc-400 hover:shadow-sm transition-all max-w-[200px]'
                       >
-                        <FileText className='h-3.5 w-3.5 text-zinc-400 shrink-0' />
+                        <SCIcon icon={FileText} size='xs' className='text-zinc-400 shrink-0' />
                         <span className='text-[12px] font-medium text-zinc-700 truncate'>
                           {item.title}
                         </span>
@@ -294,10 +292,10 @@ function Item({
     <Command.Item
       onSelect={() => onSelect(item)}
       onMouseEnter={() => onHover(item)}
-      className='flex items-center gap-3 px-3 py-3 rounded-xl cursor-pointer aria-selected:bg-zinc-100 transition-all group mb-1 outline-none'
+      className='flex items-center gap-3 px-3 py-3 rounded-md cursor-pointer aria-selected:bg-zinc-100 transition-all group mb-1 outline-none'
     >
       <div className='bg-zinc-100 p-2.5 rounded-sm group-aria-selected:bg-white group-aria-selected:shadow-sm transition-all flex items-center justify-center'>
-        <FileText className='h-5 w-5 text-zinc-500' />
+        <SCIcon icon={FileText} size='md' className='text-zinc-500' />
       </div>
       <div className='flex flex-col min-w-0'>
         <span className='text-sm font-semibold text-zinc-900 truncate'>

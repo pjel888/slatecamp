@@ -1,7 +1,8 @@
 'use client'
 
 import { Card } from '@/components/ui/card'
-import { Calendar, Timer, TrendingUp } from 'lucide-react'
+import { CalendarBlank, Timer, TrendUp } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { LineChart, Line, ResponsiveContainer, YAxis } from 'recharts'
 
 const SPARK_DATA = [
@@ -11,14 +12,14 @@ const SPARK_DATA = [
 export const TrendMetrics = () => {
   return (
     <div className='grid grid-cols-2 gap-2'>
-      <MetricCard icon={<Calendar className='h-3 w-3 text-zinc-400' />} label="Exam Goal" val="42" unit="Days Left" />
-      <MetricCard icon={<Calendar className='h-3 w-3 text-zinc-400' />} label="Sessions This Week" val="8" unit="Completed" />
-      <MetricCard icon={<Timer className='h-3 w-3 text-zinc-400' />} label="Pacing" val="1.4" unit="Min/Q" />
+      <MetricCard icon={<SCIcon icon={CalendarBlank} size='xs' color='#8896A7' />} label="Exam Goal" val="42" unit="Days Left" />
+      <MetricCard icon={<SCIcon icon={CalendarBlank} size='xs' color='#8896A7' />} label="Sessions This Week" val="8" unit="Completed" />
+      <MetricCard icon={<SCIcon icon={Timer} size='xs' color='#8896A7' />} label="Pacing" val="1.4" unit="Min/Q" />
       
-      <Card className='border-zinc-200 bg-white shadow-none p-3 flex flex-col justify-between h-[68px]'>
+      <Card className='border-[#D4DAE3] bg-white shadow-none p-3 flex flex-col justify-between h-[68px]'>
         <div className='flex flex-col gap-0.5'>
-          <span className='text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1'>
-            <TrendingUp className='h-3 w-3 text-blue-600' /> Weekly Trend
+          <span className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1' style={{ color: '#8896A7' }}>
+            <SCIcon icon={TrendUp} size='xs' className='text-primary' /> Weekly Trend
           </span>
           <div className='h-8 w-full -mt-1'>
             <ResponsiveContainer width="100%" height="100%">
@@ -27,7 +28,7 @@ export const TrendMetrics = () => {
                 <Line 
                   type="monotone" 
                   dataKey="val" 
-                  stroke="#2563eb" 
+                  stroke="#3B6B9C" 
                   strokeWidth={2} 
                   dot={false} 
                   isAnimationActive={false}
@@ -42,14 +43,14 @@ export const TrendMetrics = () => {
 }
 
 const MetricCard = ({ icon, label, val, unit }: any) => (
-  <Card className='border-zinc-200 bg-white shadow-none p-3 h-[68px]'>
+  <Card className='border-[#D4DAE3] bg-white shadow-none p-3 h-[68px]'>
     <div className='flex flex-col gap-0.5'>
-      <span className='text-[10px] font-bold text-zinc-400 uppercase tracking-wider flex items-center gap-1 leading-none'>
+      <span className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 leading-none' style={{ color: '#8896A7' }}>
         {icon} {label}
       </span>
       <div className='flex items-baseline gap-1 mt-1'>
-        <span className='text-xl font-bold text-zinc-900 leading-none'>{val}</span>
-        <span className='text-[10px] font-medium text-zinc-500 uppercase tracking-tight leading-none'>{unit}</span>
+        <span className='text-xl font-bold leading-none' style={{ color: '#1A2332' }}>{val}</span>
+        <span className='text-[11px] font-medium uppercase tracking-tight leading-none' style={{ color: '#4A5568' }}>{unit}</span>
       </div>
     </div>
   </Card>

@@ -6,11 +6,12 @@ import StarterKit from '@tiptap/starter-kit'
 import Placeholder from '@tiptap/extension-placeholder'
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { 
-  Save, ArrowLeft, Loader2, Bold, Italic, Strikethrough, 
-  List, ListOrdered, Heading1, Heading2, Heading3, 
-  Quote, Undo, Redo, Code, Type 
-} from 'lucide-react'
+import {
+  FloppyDisk, ArrowLeft, CircleNotch, TextB, TextItalic, TextStrikethrough,
+  ListBullets, ListNumbers, TextHOne, TextHTwo, TextHThree,
+  Quotes, ArrowCounterClockwise, ArrowClockwise, Code, TextT
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { updateWikiArticle, createWikiArticle } from '@/lib/actions/admin/wiki'
 import { htmlToMarkdown, markdownToHtml } from '@/lib/wiki-markdown'
 import { cn } from '@/lib/utils'
@@ -59,52 +60,52 @@ const EditorToolbar = ({ editor }: { editor: Editor | null }) => {
     <div className="flex flex-wrap items-center gap-1 p-1 border-b bg-zinc-50/50 dark:bg-zinc-900/50 sticky top-0 z-10 backdrop-blur-sm">
       <div className="flex items-center gap-1 pr-1 border-r border-zinc-200 dark:border-zinc-800">
         <ToolbarButton onClick={() => editor.chain().focus().undo().run()} disabled={!editor.can().undo()} title="Undo">
-          <Undo className="h-4 w-4" />
+          <SCIcon icon={ArrowCounterClockwise} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().redo().run()} disabled={!editor.can().redo()} title="Redo">
-          <Redo className="h-4 w-4" />
+          <SCIcon icon={ArrowClockwise} size="sm" />
         </ToolbarButton>
       </div>
 
       <div className="flex items-center gap-1 px-1 border-r border-zinc-200 dark:border-zinc-800">
         <ToolbarButton onClick={() => editor.chain().focus().toggleBold().run()} isActive={editor.isActive('bold')} title="Bold">
-          <Bold className="h-4 w-4" />
+          <SCIcon icon={TextB} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleItalic().run()} isActive={editor.isActive('italic')} title="Italic">
-          <Italic className="h-4 w-4" />
+          <SCIcon icon={TextItalic} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleStrike().run()} isActive={editor.isActive('strike')} title="Strikethrough">
-          <Strikethrough className="h-4 w-4" />
+          <SCIcon icon={TextStrikethrough} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleCode().run()} isActive={editor.isActive('code')} title="Inline Code">
-          <Code className="h-4 w-4" />
+          <SCIcon icon={Code} size="sm" />
         </ToolbarButton>
       </div>
 
       <div className="flex items-center gap-1 px-1 border-r border-zinc-200 dark:border-zinc-800">
         <ToolbarButton onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} isActive={editor.isActive('heading', { level: 1 })} title="Heading 1">
-          <Heading1 className="h-4 w-4" />
+          <SCIcon icon={TextHOne} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()} isActive={editor.isActive('heading', { level: 2 })} title="Heading 2">
-          <Heading2 className="h-4 w-4" />
+          <SCIcon icon={TextHTwo} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()} isActive={editor.isActive('heading', { level: 3 })} title="Heading 3">
-          <Heading3 className="h-4 w-4" />
+          <SCIcon icon={TextHThree} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().setParagraph().run()} isActive={editor.isActive('paragraph')} title="Paragraph">
-          <Type className="h-4 w-4" />
+          <SCIcon icon={TextT} size="sm" />
         </ToolbarButton>
       </div>
 
       <div className="flex items-center gap-1 pl-1">
         <ToolbarButton onClick={() => editor.chain().focus().toggleBulletList().run()} isActive={editor.isActive('bulletList')} title="Bullet List">
-          <List className="h-4 w-4" />
+          <SCIcon icon={ListBullets} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleOrderedList().run()} isActive={editor.isActive('orderedList')} title="Ordered List">
-          <ListOrdered className="h-4 w-4" />
+          <SCIcon icon={ListNumbers} size="sm" />
         </ToolbarButton>
         <ToolbarButton onClick={() => editor.chain().focus().toggleBlockquote().run()} isActive={editor.isActive('blockquote')} title="Blockquote">
-          <Quote className="h-4 w-4" />
+          <SCIcon icon={Quotes} size="sm" />
         </ToolbarButton>
       </div>
     </div>
@@ -170,15 +171,15 @@ export function WikiEditor({ article }: WikiEditorProps) {
     <div className="max-w-5xl mx-auto space-y-8 pb-20">
       <div className="flex items-center justify-between">
         <Link href="/admin/wiki" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Back to Wiki
+          <SCIcon icon={ArrowLeft} size="sm" /> Back to Wiki
         </Link>
         <div className="flex items-center gap-3">
           <button
             onClick={handleSave}
             disabled={isPending}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors disabled:opacity-50"
+            className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-md text-sm font-medium hover:bg-[#2F5A85] transition-colors disabled:opacity-50"
           >
-            {isPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
+            {isPending ? <SCIcon icon={CircleNotch} size="sm" className="animate-spin" /> : <SCIcon icon={FloppyDisk} size="sm" />}
             {article?.id ? 'Save Changes' : 'Publish Article'}
           </button>
         </div>

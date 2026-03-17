@@ -1,7 +1,10 @@
+'use client'
+
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { ChevronDown, ChevronRight, FileText, Book, Folder } from 'lucide-react'
+import { CaretDown, CaretRight, FileText, BookOpen, Folder } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { cn } from '@/lib/utils'
@@ -67,16 +70,16 @@ export function WikiSidebar({
       <aside className='wiki-sidebar-scroll w-full h-full bg-background overflow-y-auto'>
         <div className='p-6 text-center space-y-4 h-full flex flex-col items-center justify-center'>
           <div className='bg-zinc-100 p-3 rounded-md inline-block'>
-            <Book className='h-6 w-6 text-zinc-400' />
+            <SCIcon icon={BookOpen} size="lg" className='text-zinc-400' />
           </div>
           <div className='space-y-1'>
             <p className='text-xs font-bold text-zinc-900'>No Discipline</p>
-            <p className='text-[10px] text-zinc-500 leading-relaxed'>
+            <p className='text-[11px] text-zinc-500 leading-relaxed'>
               Select your exam type in Settings to view the syllabus.
             </p>
           </div>
           <Link href='/dashboard/settings'>
-            <button className='text-[10px] font-bold text-blue-600 hover:text-blue-700 uppercase tracking-wider mt-2 cursor-pointer'>
+            <button className='text-[11px] font-bold text-primary hover:text-[#2F5A85] uppercase tracking-wider mt-2 cursor-pointer'>
               Go to Settings
             </button>
           </Link>
@@ -118,7 +121,7 @@ export function WikiSidebar({
           /* CATEGORY: Toggle and Navigation */
           <div className={cn(
             'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group min-w-0',
-            isActive ? 'bg-blue-50/50' : 'hover:bg-zinc-100',
+            isActive ? 'bg-[#F0F5FA]/50' : 'hover:bg-zinc-100',
             isChild && 'pl-2'
           )}>
             <button
@@ -126,19 +129,19 @@ export function WikiSidebar({
               className="p-1 hover:bg-zinc-200 rounded text-zinc-400 shrink-0"
             >
               {isExpanded ? (
-                <ChevronDown className='h-3.5 w-3.5' />
+                <SCIcon icon={CaretDown} size="xs" />
               ) : (
-                <ChevronRight className='h-3.5 w-3.5' />
+                <SCIcon icon={CaretRight} size="xs" />
               )}
             </button>
             <Link 
               href={`/dashboard/wiki/${node.slug ?? ''}`}
               className={cn(
                 'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate min-w-0',
-                isActive ? 'text-blue-700' : 'text-zinc-700'
+                isActive ? 'text-[#2F5A85]' : 'text-zinc-700'
               )}
             >
-              <Folder className={cn('h-3.5 w-3.5 shrink-0', isActive ? 'text-blue-500' : 'text-zinc-400')} />
+              <SCIcon icon={Folder} size="xs" className={cn('shrink-0', isActive ? 'text-primary' : 'text-zinc-400')} />
               <span className='truncate'>{node.name}</span>
             </Link>
           </div>
@@ -149,15 +152,15 @@ export function WikiSidebar({
             className={cn(
               'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group min-w-0',
               isActive
-                ? 'text-blue-700 bg-blue-50'
+                ? 'text-[#2F5A85] bg-[#F0F5FA]'
                 : 'text-zinc-600 hover:text-zinc-900 hover:bg-white',
               isChild && 'ml-3.5',
             )}
           >
-            <FileText
+            <SCIcon icon={FileText} size="xs"
               className={cn(
-                'h-3.5 w-3.5 shrink-0',
-                isActive ? 'text-blue-500' : 'text-zinc-300',
+                'shrink-0',
+                isActive ? 'text-primary' : 'text-zinc-300',
               )}
             />
             <span className='truncate'>{node.name}</span>
@@ -168,7 +171,7 @@ export function WikiSidebar({
           <div
             className={cn(
               'ml-3.5 pl-3 border-l mt-0.5 mb-1 space-y-0.5 min-w-0',
-              isActive ? 'border-blue-200' : 'border-zinc-200/60',
+              isActive ? 'border-primary/30' : 'border-zinc-200/60',
             )}
           >
             {/* Render sub-nodes */}
@@ -184,14 +187,14 @@ export function WikiSidebar({
                   className={cn(
                     'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all min-w-0',
                     isArtActive
-                      ? 'bg-blue-50 text-blue-700 font-medium'
+                      ? 'bg-[#F0F5FA] text-[#2F5A85] font-medium'
                       : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
                   )}
                 >
-                  <FileText
+                  <SCIcon icon={FileText} size="xs"
                     className={cn(
-                      'h-3 w-3 shrink-0',
-                      isArtActive ? 'text-blue-500' : 'text-zinc-300',
+                      'shrink-0',
+                      isArtActive ? 'text-primary' : 'text-zinc-300',
                     )}
                   />
                   <span className='truncate'>{art.title}</span>
@@ -208,8 +211,8 @@ export function WikiSidebar({
     <aside className='wiki-sidebar-scroll w-full h-full bg-background overflow-y-auto'>
       <div className='p-2'>
         <div className='flex items-center gap-2 mb-6 p-2'>
-          <div className='bg-blue-600 rounded-sm p-1'>
-            <Book className='h-4 w-4 text-white' />
+          <div className='bg-primary rounded-sm p-1'>
+            <SCIcon icon={BookOpen} size="sm" className='text-white' />
           </div>
           <h2 className='text-sm font-semibold text-zinc-900 truncate'>
             {disciplineName}
@@ -217,7 +220,7 @@ export function WikiSidebar({
         </div>
 
         <nav className='space-y-1'>
-          <div className='text-[10px] font-bold text-zinc-400 uppercase tracking-[0.1em] mb-3 px-2'>
+          <div className='text-[11px] font-bold text-zinc-400 uppercase tracking-[0.1em] mb-3 px-2'>
             Taxonomy
           </div>
 

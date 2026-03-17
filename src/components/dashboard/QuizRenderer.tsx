@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
 import { saveInteraction, updateQuizSession } from '@/lib/actions/quiz'
+import { playCorrectSound, playCompletionSound } from '@/lib/audio/feedbackSounds'
 import { ResultsSummary } from './ResultsSummary'
 import { useNoteContext } from '@/lib/context/note-context'
 import { useRouter } from 'next/navigation'
@@ -353,6 +355,10 @@ export function QuizRenderer({
     // Chill mode: auto-reveal
     if (mode === 'chill') {
       setCheckedQuestions((prev) => new Set(prev).add(qId))
+      const isCorrect = choiceId === correctOptionId
+      if (isCorrect) {
+        playCorrectSound()
+      }
       setIsRationaleVisible(true)
       persistInteraction(qId, choiceId, flaggedQuestions.has(qId), struckOptions[qId]?.size || 0)
     }
@@ -397,6 +403,9 @@ export function QuizRenderer({
     persistInteraction(qId, answer || null, flaggedQuestions.has(qId), struckOptions[qId]?.size || 0)
 
     const isCorrect = answer === correctOptionId
+    if (isCorrect && !strictMode) {
+      playCorrectSound()
+    }
     if (mode === 'camp' || mode === 'blindspot') {
       startDwell(isCorrect)
     }
@@ -444,6 +453,7 @@ export function QuizRenderer({
       clearLS(session.session_id)
       setIsSaving(false)
       setIsSubmitSheetOpen(false)
+      playCompletionSound()
       setIsCompleted(true)
     }
   }
@@ -511,7 +521,7 @@ export function QuizRenderer({
       {isChecked && !isRationaleVisible && (
         <button
           onClick={() => setIsRationaleVisible(true)}
-          className="h-11 px-5 rounded-sm border border-blue-200 text-blue-600 hover:bg-blue-50 text-[10px] font-black uppercase tracking-widest transition-colors"
+          className="h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-[#F0F5FA] text-[11px] font-black uppercase tracking-widest transition-colors"
         >
           Show Rationale
         </button>
@@ -524,7 +534,7 @@ export function QuizRenderer({
           className={cn(
             'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
             selectedAnswer && !isSaving
-              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-sm'
+              ? 'bg-primary text-white hover:bg-[#2F5A85] shadow-sm'
               : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
           )}
         >
@@ -537,7 +547,7 @@ export function QuizRenderer({
               ? () => setIsSubmitSheetOpen(true)
               : handleNext
             }
-            className="h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-blue-600 text-white hover:bg-blue-700 shadow-sm"
+            className="h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-primary text-white hover:bg-[#2F5A85] shadow-sm"
           >
             {currentIndex === questions.length - 1 ? 'Finish Session' : 'Next Question'}
           </button>
@@ -545,13 +555,13 @@ export function QuizRenderer({
             <div
               className="absolute -inset-1 rounded-sm pointer-events-none"
               aria-hidden
-              title={`${dwellTimeRemaining}s — take a moment to review`}
+              title={`${dwellTimeRemaining}s — take a moment to let this sink in`}
             >
               <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
                 <rect
                   x="1" y="1" width="98" height="98" rx="3"
                   stroke="currentColor" strokeWidth="2"
-                  className="text-blue-200"
+                  className="text-primary/20"
                   strokeDasharray="392" strokeDashoffset="0"
                 />
               </svg>
@@ -566,11 +576,20 @@ export function QuizRenderer({
     <>
       <RationaleDrawer
         rationale={currentQuestion.rationale}
+        explanation={currentQuestion.explanation}
+        codeCitation={currentQuestion.code_citation}
+        correctAnswerText={
+          isChecked && correctOptionId
+            ? options.find(o => o.id === correctOptionId)?.text ?? null
+            : null
+        }
+        modelId={currentQuestion.model_id}
         isVisible={isRationaleVisible}
         isCorrect={selectedAnswer === correctOptionId}
         onClose={() => setIsRationaleVisible(false)}
         onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
         onAddNote={() => { /* note drawer — future */ }}
+        on3DLabClick={currentQuestion.model_id ? () => router.push(`/dashboard/3d-lab?model=${currentQuestion.model_id}`) : undefined}
       />
       <AITutorDrawer
         question={currentQuestion}
@@ -612,6 +631,10 @@ export function QuizRenderer({
         testMode={mode}
         onExit={onExit}
         onRestart={onExit}
+        onStartFocusedReview={(topicIds) => {
+          // Exit to dashboard — the TestingHub will handle starting a new session
+          onExit()
+        }}
       />
     )
   }
@@ -628,9 +651,9 @@ export function QuizRenderer({
       {isAutoSubmitting && (
         <div className="absolute inset-0 z-[100] bg-white/90 backdrop-blur-sm flex items-center justify-center">
           <div className="bg-white p-6 rounded-md shadow-lg border border-zinc-200 text-center space-y-3 max-w-xs">
-            <AlertTriangle className="h-10 w-10 text-zinc-700 mx-auto" />
-            <h2 className="text-lg font-bold text-zinc-900">Session Submitted</h2>
-            <p className="text-zinc-500 text-sm">Focus was lost during a strict-mode session. Your answers have been recorded.</p>
+            <SCIcon icon={Warning} size="xl" className="text-zinc-700 mx-auto" />
+            <h2 className="text-lg font-bold text-zinc-900">Session Recorded</h2>
+            <p className="text-zinc-500 text-sm">Your session ended when focus left the window. All your answers have been saved.</p>
           </div>
         </div>
       )}

@@ -54,14 +54,14 @@ export const bahayKuboConfig: ExplodedAssemblyConfig = {
       id: 'bk-wall-front',
       label: 'Woven Bamboo Wall (Kawayan)',
       description: 'Woven bamboo (amakan) wall panel. Allows cross-ventilation through the weave. Can be lifted for more airflow.',
-      geometry: { id: 'bk-wall-front-geo', type: 'box', position: [0, 0.42, -0.34], args: [0.68, 0.6, 0.025], color: '#d97706', opacity: 0.85, transparent: true },
+      geometry: { id: 'bk-wall-front-geo', type: 'box', position: [0, 0.42, -0.34], args: [0.68, 0.6, 0.025], color: '#D4951A', opacity: 0.85, transparent: true },
       explodeOffset: [0, 0.4, -0.6],
     },
     {
       id: 'bk-wall-side',
       label: 'Woven Bamboo Wall (Side)',
       description: 'Side wall panel of woven bamboo. Lightweight and replaceable — reflects the temporality and adaptability of vernacular construction.',
-      geometry: { id: 'bk-wall-side-geo', type: 'box', position: [0.34, 0.42, 0], args: [0.025, 0.6, 0.68], color: '#d97706', opacity: 0.85, transparent: true },
+      geometry: { id: 'bk-wall-side-geo', type: 'box', position: [0.34, 0.42, 0], args: [0.025, 0.6, 0.68], color: '#D4951A', opacity: 0.85, transparent: true },
       explodeOffset: [0.6, 0.4, 0],
     },
     {

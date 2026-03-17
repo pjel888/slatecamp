@@ -1,7 +1,8 @@
 'use client'
 
 import { memo } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { CanvasWrapper } from '../../_components/CanvasWrapper'
 import { ControlPanel, type ControlDef } from '../../_components/ControlPanel'
@@ -68,8 +69,8 @@ function Row({ label, desc, value, state = 'normal', sub }: {
     <div className="space-y-0.5">
       <div className="flex items-baseline justify-between gap-2">
         <div>
-          <span className="text-[10px] font-bold text-zinc-700">{label}</span>
-          <div className="text-[9px] text-zinc-400 leading-tight">{desc}</div>
+          <span className="text-[11px] font-bold text-zinc-700">{label}</span>
+          <div className="text-[11px] text-zinc-400 leading-tight">{desc}</div>
         </div>
         <div className="text-right shrink-0">
           <span className={cn(
@@ -81,7 +82,7 @@ function Row({ label, desc, value, state = 'normal', sub }: {
           )}>
             {value}
           </span>
-          {sub && <div className="text-[9px] text-zinc-400">{sub}</div>}
+          {sub && <div className="text-[11px] text-zinc-400">{sub}</div>}
         </div>
       </div>
     </div>
@@ -112,7 +113,7 @@ const FARTelemetry = memo(function FARTelemetry() {
     <div className="absolute right-4 top-4 bottom-4 z-10 w-64 overflow-y-auto
       bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-2">
 
-      <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400 block mb-2">
+      <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-2">
         FAR Calculator
       </span>
 
@@ -168,8 +169,8 @@ const FARTelemetry = memo(function FARTelemetry() {
         <div className="pt-1 border-t border-red-200 space-y-1.5">
           {violations.map((v, i) => (
             <div key={i} className="bg-red-50 border border-red-200 rounded px-2 py-1.5 flex gap-1.5">
-              <AlertTriangle className="h-3 w-3 text-red-600 shrink-0 mt-0.5" />
-              <p className="text-[10px] font-bold text-red-700">{v}</p>
+              <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-0.5" />
+              <p className="text-[11px] font-bold text-red-700">{v}</p>
             </div>
           ))}
         </div>

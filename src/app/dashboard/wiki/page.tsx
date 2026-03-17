@@ -1,13 +1,16 @@
+'use client'
+
 import React from 'react'
-import { Book, Search, Sparkles, Zap } from 'lucide-react'
+import { BookOpen, MagnifyingGlass, Sparkle, Lightning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 export default function WikiPage() {
   return (
     <div className='flex h-full w-full items-center justify-center p-6'>
       <div className='max-w-2xl w-full text-center space-y-8'>
         {/* Hero Icon */}
-        <div className='mx-auto w-20 h-20 bg-blue-50 rounded-md flex items-center justify-center border border-blue-100 shadow-sm'>
-          <Book className='h-10 w-10 text-blue-600' />
+        <div className='mx-auto w-20 h-20 bg-[#F0F5FA] rounded-md flex items-center justify-center border border-primary/20 shadow-sm'>
+          <SCIcon icon={BookOpen} size="2xl" className='text-primary' />
         </div>
 
         {/* Text Content */}
@@ -25,15 +28,15 @@ export default function WikiPage() {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-left'>
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-amber-50 rounded-md flex items-center justify-center'>
-              <Search className='h-4 w-4 text-amber-600' />
+              <SCIcon icon={MagnifyingGlass} size="sm" className='text-amber-600' />
             </div>
             <h3 className='text-xs font-bold uppercase tracking-wider text-zinc-900'>Syllabus Mapped</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
           </div>
 
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-blue-50 rounded-md flex items-center justify-center'>
-              <Sparkles className='h-4 w-4 text-blue-600' />
+            <div className='w-8 h-8 bg-[#F0F5FA] rounded-md flex items-center justify-center'>
+              <SCIcon icon={Sparkle} size="sm" className='text-primary' />
             </div>
             <h3 className='text-xs font-bold uppercase tracking-wider text-zinc-900'>Interactive</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Complex codes come alive with 2D illustrations and 3D spatial lab models.</p>
@@ -41,7 +44,7 @@ export default function WikiPage() {
 
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-green-50 rounded-md flex items-center justify-center'>
-              <Zap className='h-4 w-4 text-green-600' />
+              <SCIcon icon={Lightning} size="sm" className='text-green-600' />
             </div>
             <h3 className='text-xs font-bold uppercase tracking-wider text-zinc-900'>Smart Search</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Quickly find any provision or term across the entire building code.</p>

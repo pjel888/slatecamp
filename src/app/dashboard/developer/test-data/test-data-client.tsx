@@ -61,7 +61,7 @@ export function TestDataClient() {
             type="button"
             onClick={handleGenerateSessions}
             disabled={sessionStatus === 'loading'}
-            className="mt-3 rounded-md bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+            className="mt-3 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-[#2F5A85] disabled:opacity-50"
           >
             {sessionStatus === 'loading' ? 'Generating...' : 'Generate Sessions'}
           </button>
@@ -76,7 +76,7 @@ export function TestDataClient() {
             type="button"
             onClick={handleGenerateOrg}
             disabled={orgStatus === 'loading'}
-            className="mt-3 rounded-md bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+            className="mt-3 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-[#2F5A85] disabled:opacity-50"
           >
             {orgStatus === 'loading' ? 'Generating...' : 'Generate Org'}
           </button>

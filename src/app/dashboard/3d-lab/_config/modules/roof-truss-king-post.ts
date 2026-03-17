@@ -64,7 +64,7 @@ export const roofTrussKingPostConfig: ExplodedAssemblyConfig = {
       id: 'kp-wall-plate',
       label: 'Wall Plate',
       description: 'Timber wall plate bearing on top of masonry wall, spreading the rafter heel load. Min 100×75mm. Anchored to wall with strap ties.',
-      geometry: { id: 'kp-wall-plate-geo', type: 'box', position: [-0.43, -0.04, 0], args: [0.12, 0.04, 0.06], color: '#d97706' },
+      geometry: { id: 'kp-wall-plate-geo', type: 'box', position: [-0.43, -0.04, 0], args: [0.12, 0.04, 0.06], color: '#D4951A' },
       explodeOffset: [-0.6, -0.1, 0],
     },
     {

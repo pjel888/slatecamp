@@ -3,18 +3,19 @@
 import React from 'react'
 import {
   Brain,
-  Zap,
+  Lightning,
   Coffee,
   Target,
   ShieldCheck,
-  Activity,
-  ChevronRight,
+  Pulse,
+  CaretRight,
   ArrowLeft,
   Timer,
   BookOpen,
   Trophy,
-  AlertCircle,
-} from 'lucide-react'
+  Warning,
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { TestMode } from '@/types/app'
@@ -40,27 +41,27 @@ export function ModeIntroScreen({
     camp: {
       title: isSubjectMode ? 'Subject Mode' : 'Camp Mode',
       icon: isSubjectMode ? Target : Brain,
-      color: isSubjectMode ? 'text-blue-600' : 'text-blue-600',
-      bgColor: isSubjectMode ? 'bg-blue-50' : 'bg-blue-50',
-      description: isSubjectMode 
-        ? "Targeted drilling for a specific syllabus area. You'll get instant feedback and SME rationales."
-        : "Focus on learning and building foundations. You'll get instant feedback and detailed rationales for every answer.",
+      color: isSubjectMode ? 'text-primary' : 'text-primary',
+      bgColor: isSubjectMode ? 'bg-[#F0F5FA]' : 'bg-[#F0F5FA]',
+      description: isSubjectMode
+        ? "Focused practice on a specific syllabus area. Every answer comes with instant feedback and expert rationales to deepen your understanding."
+        : "Build solid foundations at your own pace. Every answer comes with instant feedback and clear rationales so you always know the why.",
       specs: [
         { label: 'Immediate Feedback', value: 'Enabled', icon: BookOpen },
         { label: 'Detailed Rationales', value: 'SME Authored', icon: Target },
         { label: 'Time Limit', value: 'None', icon: Timer },
-        { label: 'Goal', value: 'Subject Mastery', icon: Trophy },
+        { label: 'Goal', value: 'Deep Understanding', icon: Trophy },
       ],
     },
     storm: {
       title: 'Storm Mode',
-      icon: Zap,
+      icon: Lightning,
       color: 'text-red-600',
       bgColor: 'bg-red-50',
       description:
-        'Simulate real exam conditions. High pressure, strict timing, and no feedback until the session is complete.',
+        'Practice under realistic exam conditions. Timed questions with no feedback shown until the session wraps — the closest thing to the real thing.',
       specs: [
-        { label: 'Immediate Feedback', value: 'Disabled', icon: AlertCircle },
+        { label: 'Immediate Feedback', value: 'Held Until End', icon: Warning },
         { label: 'Time Limit', value: '2 min / Question', icon: Timer },
         { label: 'Scoring', value: 'Exam Standard', icon: Target },
         { label: 'Lock Status', value: '24h Review Lock', icon: ShieldCheck },
@@ -69,29 +70,29 @@ export function ModeIntroScreen({
     chill: {
       title: 'Chill Mode',
       icon: Coffee,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-50',
+      color: 'text-primary',
+      bgColor: 'bg-[#F0F5FA]',
       description:
-        'Casual browsing and passive absorption. One-tap reveal with no scoring pressure.',
+        'Relaxed reading and passive review. Reveal answers with a single tap — no scores, no pressure, just learning.',
       specs: [
-        { label: 'One-Tap Reveal', value: 'Active', icon: Zap },
+        { label: 'One-Tap Reveal', value: 'Active', icon: Lightning },
         { label: 'Score Tracking', value: 'Silent', icon: Target },
         { label: 'Tone', value: 'Conversational', icon: BookOpen },
-        { label: 'Endless Feed', value: 'Enabled', icon: Activity },
+        { label: 'Endless Feed', value: 'Enabled', icon: Pulse },
       ],
     },
     proof_sim: {
-      title: 'Proof Simulation™',
+      title: 'Full Exam Simulation',
       icon: ShieldCheck,
       color: 'text-zinc-900',
       bgColor: 'bg-zinc-100',
       description:
-        'The ultimate rehearsal for exam day. 100 questions covering the full syllabus with weighted score impact.',
+        'Your full-length exam rehearsal. 100 questions across the entire syllabus — the best way to measure where you truly stand.',
       specs: [
         { label: 'Format', value: 'Full ALE Structure', icon: Target },
-        { label: 'Difficulty', value: 'Exam Mode', icon: Activity },
+        { label: 'Difficulty', value: 'Exam Standard', icon: Pulse },
         { label: 'Mastery Impact', value: '3x Weighted', icon: Trophy },
-        { label: 'Review', value: 'After 24 Hours', icon: Timer },
+        { label: 'Review', value: 'Available After 24h', icon: Timer },
       ],
     },
   }
@@ -108,11 +109,11 @@ export function ModeIntroScreen({
         onClick={onBack}
         className='w-fit mb-8 -ml-2 text-zinc-500 hover:text-zinc-900 flex items-center gap-2 font-bold text-xs uppercase tracking-widest'
       >
-        <ArrowLeft className='h-4 w-4' />
+        <SCIcon icon={ArrowLeft} size='sm' />
         Back to Hub
       </Button>
 
-      <div className='space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500'>
+      <div className='space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-300'>
         <div className='flex items-center gap-6'>
           <div
             className={cn(
@@ -121,7 +122,7 @@ export function ModeIntroScreen({
               modeConfig.color.replace('text-', 'border-').replace('600', '200'),
             )}
           >
-            <Icon className='h-10 w-10' />
+            <SCIcon icon={Icon} size='xl' />
           </div>
           <div>
             <h1 className='text-xl font-semibold text-zinc-900 tracking-tight'>
@@ -142,10 +143,10 @@ export function ModeIntroScreen({
                 className='flex items-center gap-4 p-4 rounded-sm bg-white border border-zinc-100 shadow-sm'
               >
                 <div className='w-10 h-10 rounded-sm bg-zinc-50 flex items-center justify-center border border-zinc-100'>
-                  <SpecIcon className='h-5 w-5 text-zinc-400' />
+                  <SCIcon icon={SpecIcon} size='md' className='text-zinc-400' />
                 </div>
                 <div>
-                  <p className='text-[10px] font-black uppercase tracking-widest text-zinc-400'>
+                  <p className='text-[11px] font-black uppercase tracking-widest text-zinc-400'>
                     {spec.label}
                   </p>
                   <p className='text-sm font-bold text-zinc-900'>
@@ -160,13 +161,13 @@ export function ModeIntroScreen({
         <div className='pt-8 flex flex-col gap-4'>
           <Button
             onClick={onStart}
-            className='w-full h-12 bg-blue-600 text-white rounded-md font-semibold text-sm hover:bg-blue-700 transition-colors flex items-center justify-center gap-2'
+            className='w-full h-12 bg-primary text-white rounded-md font-semibold text-sm hover:bg-[#2F5A85] transition-colors flex items-center justify-center gap-2'
           >
-            Start Session
-            <ChevronRight className='h-5 w-5' />
+            Begin Session
+            <SCIcon icon={CaretRight} size='md' />
           </Button>
           <div className='flex items-center justify-center gap-2 text-[11px] font-bold uppercase tracking-widest text-zinc-400'>
-            <Timer className='h-3 w-3' />
+            <SCIcon icon={Timer} size='xs' />
             Session will include {questionCount} questions
           </div>
         </div>

@@ -17,7 +17,7 @@ export const hotWaterSystemConfig: CutawaySectionConfig = {
       description: 'Cold water supply from building main to water heater inlet. Shutoff valve at inlet for heater isolation.',
       codeCitation: 'NPCP §608',
       depth: 0,
-      geometry: { id: 'geo-cold', type: 'cylinder', args: [0.012, 0.012, 1.5, 12], position: [-0.8, 1.5, 0], color: '#2563eb' },
+      geometry: { id: 'geo-cold', type: 'cylinder', args: [0.012, 0.012, 1.5, 12], position: [-0.8, 1.5, 0], color: '#3B6B9C' },
     },
     {
       id: 'water-heater-tank',
@@ -35,7 +35,7 @@ export const hotWaterSystemConfig: CutawaySectionConfig = {
       description: 'Temperature-and-pressure relief valve (T&P RV) — opens if tank temperature exceeds 99°C OR pressure exceeds 860 kPa. Mandatory safety device.',
       codeCitation: 'NPCP §608.4 — required relief valve',
       depth: 0.4,
-      geometry: { id: 'geo-tprv', type: 'box', args: [0.06, 0.1, 0.06], position: [0.35, 1.3, 0], color: '#dc2626' },
+      geometry: { id: 'geo-tprv', type: 'box', args: [0.06, 0.1, 0.06], position: [0.35, 1.3, 0], color: '#D64545' },
     },
     {
       id: 'tprv-drainpipe',
@@ -44,7 +44,7 @@ export const hotWaterSystemConfig: CutawaySectionConfig = {
       description: 'Drain pipe from T&P RV — must discharge to safe location (floor drain, exterior, or bucket). Not connected to drain indirectly only.',
       codeCitation: 'NPCP §608.4',
       depth: 0.55,
-      geometry: { id: 'geo-tpdrain', type: 'cylinder', args: [0.01, 0.01, 1.0, 8], position: [0.35, 0.7, 0], color: '#dc2626' },
+      geometry: { id: 'geo-tpdrain', type: 'cylinder', args: [0.01, 0.01, 1.0, 8], position: [0.35, 0.7, 0], color: '#D64545' },
     },
     {
       id: 'hot-supply',
@@ -53,7 +53,7 @@ export const hotWaterSystemConfig: CutawaySectionConfig = {
       description: 'Hot water supply pipe — CPVC rated for 93°C minimum. Must be insulated (25mm min) to reduce heat loss. Serves fixtures and recirculation loop.',
       codeCitation: 'NPCP §608.1',
       depth: 0.7,
-      geometry: { id: 'geo-hot', type: 'cylinder', args: [0.012, 0.012, 2.0, 12], position: [0.8, 2.0, 0], color: '#dc2626' },
+      geometry: { id: 'geo-hot', type: 'cylinder', args: [0.012, 0.012, 2.0, 12], position: [0.8, 2.0, 0], color: '#D64545' },
     },
     {
       id: 'expansion-tank',

@@ -2,7 +2,8 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { GripVertical, X } from 'lucide-react'
+import { DotsSixVertical, X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { createNote } from '@/lib/actions/notes'
 import { ROUTES } from '@/lib/constants/routes'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
@@ -105,7 +106,7 @@ export function QuickNotePopup({ open, onOpenChange }: QuickNotePopupProps) {
           className="flex h-10 w-10 shrink-0 cursor-grab active:cursor-grabbing touch-none items-center justify-center text-zinc-400 hover:text-zinc-600 rounded-sm"
           aria-label="Drag to move"
         >
-          <GripVertical className="h-4 w-4" strokeWidth={2} />
+          <SCIcon icon={DotsSixVertical} size="sm" />
         </span>
         <span className="min-w-0 flex-1 text-sm font-medium text-zinc-900">
           Quick note
@@ -118,7 +119,7 @@ export function QuickNotePopup({ open, onOpenChange }: QuickNotePopupProps) {
           onClick={() => onOpenChange(false)}
           aria-label="Close"
         >
-          <X className="h-4 w-4" strokeWidth={1.5} />
+          <SCIcon icon={X} size="sm" />
         </Button>
       </div>
 
@@ -155,14 +156,14 @@ export function QuickNotePopup({ open, onOpenChange }: QuickNotePopupProps) {
             type="button"
             onClick={handleSave}
             disabled={saving}
-            className="rounded-md bg-blue-600 px-3 py-2 text-xs font-medium text-white hover:bg-blue-700 transition-colors"
+            className="rounded-md bg-primary px-3 py-2 text-xs font-medium text-white hover:bg-[#2F5A85] transition-colors"
           >
             {saving ? 'Saving…' : 'Save to notes'}
           </Button>
           {savedId && (
             <a
               href={`${ROUTES.NOTES}?open=${encodeURIComponent(savedId)}`}
-              className="text-xs font-medium text-blue-600 hover:underline"
+              className="text-xs font-medium text-primary hover:underline"
             >
               Open in Notes
             </a>

@@ -28,8 +28,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const upViolated = upH < 0.865 || upH > 0.9
   const dViolated = diam < 0.03 || diam > 0.04
   const extViolated = ext < 0.3
-  const loColor = loViolated ? '#dc2626' : '#3b82f6'
-  const upColor = upViolated ? '#dc2626' : '#16a34a'
+  const loColor = loViolated ? '#D64545' : '#3b82f6'
+  const upColor = upViolated ? '#D64545' : '#2D9F6F'
   const inst: GeometryInstruction[] = []
 
   // Steps
@@ -64,10 +64,10 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'dim-lower', type: 'box', position: [tD * 2, loH, -stairW / 2 - 0.3], args: [0.02, loH, 0.02], color: loColor, label: `${(loH * 1000).toFixed(0)}mm` })
 
   // Diameter indicator
-  inst.push({ id: 'diam-ring', type: 'ring', position: [tD * 3, nSteps * rH / 2, -stairW / 2 - 0.1], rotation: [0, Math.PI / 2, 0], args: [diam / 2, diam / 2 + 0.01, 12, 1, 0, Math.PI * 2], color: dViolated ? '#dc2626' : '#3b82f6', label: `⌀${(diam * 1000).toFixed(0)}mm` })
+  inst.push({ id: 'diam-ring', type: 'ring', position: [tD * 3, nSteps * rH / 2, -stairW / 2 - 0.1], rotation: [0, Math.PI / 2, 0], args: [diam / 2, diam / 2 + 0.01, 12, 1, 0, Math.PI * 2], color: dViolated ? '#D64545' : '#3b82f6', label: `⌀${(diam * 1000).toFixed(0)}mm` })
 
   // Extension indicator
-  inst.push({ id: 'ext-dim', type: 'box', position: [nSteps * tD + ext / 2, nSteps * rH + upH + 0.1, -stairW / 2 - 0.1], args: [ext, 0.02, 0.02], color: extViolated ? '#dc2626' : '#3b82f6', label: `${(ext * 1000).toFixed(0)}mm ext` })
+  inst.push({ id: 'ext-dim', type: 'box', position: [nSteps * tD + ext / 2, nSteps * rH + upH + 0.1, -stairW / 2 - 0.1], args: [ext, 0.02, 0.02], color: extViolated ? '#D64545' : '#3b82f6', label: `${(ext * 1000).toFixed(0)}mm ext` })
 
   return inst
 }

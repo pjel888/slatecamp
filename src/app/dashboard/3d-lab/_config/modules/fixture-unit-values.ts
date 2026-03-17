@@ -7,7 +7,7 @@ function num(v: number | string | boolean): number { return typeof v === 'number
 const FIXTURES: Array<{ id: string; label: string; dfu: number; trapSize: number; color: string }> = [
   { id: 'wc', label: 'Water Closet', dfu: 4, trapSize: 76, color: '#3b82f6' },
   { id: 'lav', label: 'Lavatory', dfu: 1, trapSize: 32, color: '#0891b2' },
-  { id: 'kitchen', label: 'Kitchen Sink', dfu: 2, trapSize: 38, color: '#16a34a' },
+  { id: 'kitchen', label: 'Kitchen Sink', dfu: 2, trapSize: 38, color: '#2D9F6F' },
   { id: 'shower', label: 'Shower/Bath', dfu: 2, trapSize: 38, color: '#6366f1' },
   { id: 'laundry', label: 'Laundry Sink', dfu: 2, trapSize: 38, color: '#f97316' },
   { id: 'urinal', label: 'Urinal', dfu: 4, trapSize: 51, color: '#7c3aed' },

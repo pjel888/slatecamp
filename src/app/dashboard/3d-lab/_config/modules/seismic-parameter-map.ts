@@ -87,7 +87,7 @@ const SOIL_PROFILES: Record<string, SoilProfile> = {
     description: 'Soils requiring site-specific evaluation: liquefiable, peat, high plasticity clays >8m.',
     Fa: { 'Zone 2': 1.7, 'Zone 4': 1.1 },
     Fv: { 'Zone 2': 2.4, 'Zone 4': 2.0 },
-    color: '#dc2626',
+    color: '#D64545',
     depth: 2.5,
   },
 }
@@ -223,7 +223,7 @@ function geometry(
     type: 'box',
     position: [0, 0, 0],
     args: [3 * s * 20, 0.01, 2 * s * 20],
-    color: '#16a34a',
+    color: '#2D9F6F',
   })
 
   // 2. Building (simplified frame)
@@ -237,7 +237,7 @@ function geometry(
     type: 'box',
     position: [0, bh / 2 + 0.01, 0],
     args: [bw, bh, bd],
-    color: zone === 'Zone 4' ? '#dc2626' : '#f97316',
+    color: zone === 'Zone 4' ? '#D64545' : '#f97316',
     opacity: 0.5,
     transparent: true,
   })
@@ -251,7 +251,7 @@ function geometry(
       type: 'box',
       position: [0, i * floorH + 0.01, 0],
       args: [bw, 0.003, bd],
-      color: '#1d4ed8',
+      color: '#2F5A85',
       opacity: 0.5,
       transparent: true,
     })
@@ -265,7 +265,7 @@ function geometry(
     position: [bw / 2 + 0.15 + arrowScale / 2, bh / 3, 0],
     rotation: [0, 0, -Math.PI / 2],
     args: [0.06, arrowScale, 8],
-    color: '#dc2626',
+    color: '#D64545',
   })
 
   // Lateral force distribution arrows (inverted triangle)

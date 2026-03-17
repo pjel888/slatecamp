@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CheckCircle2, Circle, Flag, X } from 'lucide-react'
+import { CheckCircle, Circle, Flag, X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface ConfirmSubmitSheetProps {
   isOpen: boolean
@@ -83,7 +84,7 @@ export function ConfirmSubmitSheet({
                   aria-label="Cancel"
                   className="h-6 w-6 flex items-center justify-center rounded-md text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 transition-colors"
                 >
-                  <X className="h-3.5 w-3.5" aria-hidden />
+                  <SCIcon icon={X} size="xs" />
                 </button>
               </div>
 
@@ -91,19 +92,19 @@ export function ConfirmSubmitSheet({
                 {/* Stats grid */}
                 <div className="grid grid-cols-3 gap-2">
                   <div className="flex flex-col items-center p-3 rounded-md bg-green-50 border border-green-100">
-                    <CheckCircle2 className="h-4 w-4 text-green-500 mb-1.5" aria-hidden />
+                    <SCIcon icon={CheckCircle} size="sm" className="text-green-500 mb-1.5" />
                     <span className="text-xl font-black text-green-700 leading-none">{answeredCount}</span>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-green-600/70 mt-1">Answered</span>
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-green-600/70 mt-1">Answered</span>
                   </div>
                   <div className="flex flex-col items-center p-3 rounded-md bg-zinc-50 border border-zinc-100">
-                    <Circle className="h-4 w-4 text-zinc-300 mb-1.5" aria-hidden />
+                    <SCIcon icon={Circle} size="sm" className="text-zinc-300 mb-1.5" />
                     <span className="text-xl font-black text-zinc-500 leading-none">{unansweredCount}</span>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-zinc-400 mt-1">Skipped</span>
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 mt-1">Skipped</span>
                   </div>
                   <div className="flex flex-col items-center p-3 rounded-md bg-amber-50 border border-amber-100">
-                    <Flag className="h-4 w-4 text-amber-500 fill-current mb-1.5" aria-hidden />
+                    <SCIcon icon={Flag} size="sm" weight="fill" className="text-amber-500 mb-1.5" />
                     <span className="text-xl font-black text-amber-700 leading-none">{flaggedCount}</span>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-amber-600/70 mt-1">Flagged</span>
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-amber-600/70 mt-1">Flagged</span>
                   </div>
                 </div>
 
@@ -119,7 +120,7 @@ export function ConfirmSubmitSheet({
                     ref={confirmRef}
                     onClick={onConfirm}
                     disabled={isSaving}
-                    className="w-full h-10 rounded-md bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full h-10 rounded-md bg-primary text-white font-semibold text-sm hover:bg-[#2F5A85] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSaving ? 'Submitting...' : `Submit — ${answeredCount} of ${totalCount} Answered`}
                   </button>
@@ -131,7 +132,7 @@ export function ConfirmSubmitSheet({
                   </button>
                   <button
                     onClick={onExit}
-                    className="w-full h-8 text-zinc-400 hover:text-zinc-600 text-[10px] font-semibold uppercase tracking-widest transition-colors"
+                    className="w-full h-8 text-zinc-400 hover:text-zinc-600 text-[11px] font-semibold uppercase tracking-widest transition-colors"
                   >
                     Exit Without Submitting
                   </button>

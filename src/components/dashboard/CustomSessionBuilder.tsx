@@ -1,7 +1,8 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Settings2, BookOpen, Layers, CheckCircle2 } from 'lucide-react'
+import { GearSix, BookOpen, Stack, CheckCircle } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import {
   Dialog,
@@ -56,19 +57,19 @@ export function CustomSessionBuilder({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className='sm:max-w-[500px] bg-white border-zinc-200 shadow-lg rounded-md p-0 overflow-hidden'>
-        <div className='h-1.5 bg-blue-600 w-full' />
+        <div className='h-1.5 bg-primary w-full' />
 
         <DialogHeader className='px-8 pt-8 pb-4'>
           <div className='flex items-center gap-3 mb-2'>
             <div className='bg-zinc-100 p-2 rounded-sm'>
-              <Settings2 className='h-5 w-5 text-zinc-900' />
+              <SCIcon icon={GearSix} size='md' className='text-zinc-900' />
             </div>
             <DialogTitle className='text-xl font-bold text-zinc-900'>
-              Configure Session
+              Build Your Session
             </DialogTitle>
           </div>
           <DialogDescription className='text-zinc-500'>
-            Tailor your study session to your current focus areas.
+            Choose the topics, question count, and feedback style that fit what you need today.
           </DialogDescription>
         </DialogHeader>
 
@@ -77,12 +78,12 @@ export function CustomSessionBuilder({
           <div className='space-y-4'>
             <div className='flex items-center justify-between'>
               <Label className='text-xs font-bold uppercase tracking-widest text-zinc-400'>
-                Select Subjects
+                Topics to Include
               </Label>
               <Button
                 variant='ghost'
                 size='sm'
-                className='h-7 text-[11px] font-semibold text-blue-600 hover:text-blue-700 hover:bg-blue-50'
+                className='h-7 text-[11px] font-semibold text-primary hover:text-[#2F5A85] hover:bg-[#F0F5FA]'
                 onClick={() =>
                   setSelectedSubjects(subjects.map((s) => s.node_id))
                 }
@@ -97,20 +98,22 @@ export function CustomSessionBuilder({
                   onClick={() => toggleSubject(subject.node_id)}
                   className={`flex items-center justify-between p-3 rounded-md border transition-all text-left group ${
                     selectedSubjects.includes(subject.node_id)
-                      ? 'border-zinc-900 bg-blue-600 text-white'
+                      ? 'border-zinc-900 bg-primary text-white'
                       : 'border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300'
                   }`}
                 >
                   <div className='flex items-center gap-3'>
-                    <BookOpen
-                      className={`h-4 w-4 ${selectedSubjects.includes(subject.node_id) ? 'text-zinc-400' : 'text-zinc-300'}`}
+                    <SCIcon
+                      icon={BookOpen}
+                      size="sm"
+                      className={selectedSubjects.includes(subject.node_id) ? 'text-zinc-400' : 'text-zinc-300'}
                     />
                     <span className='text-[13px] font-medium truncate'>
                       {subject.name}
                     </span>
                   </div>
                   {selectedSubjects.includes(subject.node_id) && (
-                    <CheckCircle2 className='h-4 w-4 text-white fill-current' />
+                    <SCIcon icon={CheckCircle} size='sm' weight='fill' className='text-white' />
                   )}
                 </button>
               ))}
@@ -136,7 +139,7 @@ export function CustomSessionBuilder({
                   />
                   <Label
                     htmlFor={`q-${val}`}
-                    className='flex flex-col items-center justify-center rounded-md border border-zinc-200 bg-white p-3 peer-data-[state=checked]:border-zinc-900 peer-data-[state=checked]:bg-blue-600 peer-data-[state=checked]:text-white hover:border-zinc-300 cursor-pointer transition-all'
+                    className='flex flex-col items-center justify-center rounded-md border border-zinc-200 bg-white p-3 peer-data-[state=checked]:border-zinc-900 peer-data-[state=checked]:bg-primary peer-data-[state=checked]:text-white hover:border-zinc-300 cursor-pointer transition-all'
                   >
                     <span className='text-sm font-bold'>{val}</span>
                   </Label>
@@ -166,9 +169,9 @@ export function CustomSessionBuilder({
           <Button
             onClick={handleStart}
             disabled={selectedSubjects.length === 0}
-            className='w-full h-12 text-base font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-md'
+            className='w-full h-12 text-base font-bold bg-primary hover:bg-[#2F5A85] text-white rounded-md'
           >
-            Generate Session
+            Start Session
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -37,13 +37,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   inst.push({ id: 'bld-right', type: 'box', position: [(cW / 2 + 1.5 + wallT / 2), totalH / 2, 0], args: [wallT, totalH, cD + 3.0], color: '#d4d4d8' })
 
   // Court floor
-  inst.push({ id: 'court-floor', type: 'box', position: [0, 0.005, 0], args: [cW, 0.01, cD], color: '#16a34a', opacity: 0.4, transparent: true })
+  inst.push({ id: 'court-floor', type: 'box', position: [0, 0.005, 0], args: [cW, 0.01, cD], color: '#2D9F6F', opacity: 0.4, transparent: true })
   // Court walls (visible interior)
   inst.push({ id: 'court-wall-back', type: 'box', position: [0, totalH / 2, -(cD / 2)], args: [cW, totalH, wallT / 2], color: violated ? '#fca5a5' : '#a1a1aa', opacity: 0.6, transparent: true })
   inst.push({ id: 'court-wall-left', type: 'box', position: [-(cW / 2), totalH / 2, 0], args: [wallT / 2, totalH, cD], color: violated ? '#fca5a5' : '#a1a1aa', opacity: 0.6, transparent: true })
 
   // Min width indicator
-  inst.push({ id: 'min-width-line', type: 'box', position: [0, 0.02, 0], args: [minW, 0.01, cD], color: violated ? '#dc2626' : '#16a34a', opacity: 0.4, transparent: true, label: `Min ${minW.toFixed(1)}m` })
+  inst.push({ id: 'min-width-line', type: 'box', position: [0, 0.02, 0], args: [minW, 0.01, cD], color: violated ? '#D64545' : '#2D9F6F', opacity: 0.4, transparent: true, label: `Min ${minW.toFixed(1)}m` })
 
   // Floor level markers
   for (let s = 0; s < storeys; s++) {

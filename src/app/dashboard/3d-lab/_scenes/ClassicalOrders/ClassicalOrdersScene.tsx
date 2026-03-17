@@ -261,7 +261,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
             style={{ pointerEvents: 'none' }}
             className="px-3 py-2 bg-amber-50 border border-amber-200 rounded-md shadow-sm text-center whitespace-nowrap"
           >
-            <div className="text-[10px] font-black uppercase tracking-widest text-amber-600 mb-0.5">
+            <div className="text-[11px] font-black uppercase tracking-widest text-amber-600 mb-0.5">
               Find it
             </div>
             <div className="text-xs font-bold text-amber-900">

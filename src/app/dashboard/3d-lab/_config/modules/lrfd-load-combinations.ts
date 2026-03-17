@@ -62,11 +62,11 @@ export const lrfdLoadCombinationsConfig: AnimatedSequenceConfig = {
         { id: 'd-arrow', type: 'cone', args: [0.08, 0.22, 8], position: [-0.7, 3.62, 0], rotation: [Math.PI, 0, 0], color: '#71717a', label: '1.2D' },
         { id: 'd-shaft', type: 'box', args: [0.03, 0.28, 0.03], position: [-0.7, 3.88, 0], color: '#71717a' },
         // Live load (blue, largest arrows)
-        { id: 'l1-arrow', type: 'cone', args: [0.12, 0.38, 8], position: [0, 3.7, 0], rotation: [Math.PI, 0, 0], color: '#2563eb', label: '1.6L' },
-        { id: 'l1-shaft', type: 'box', args: [0.05, 0.45, 0.05], position: [0, 4.08, 0], color: '#2563eb' },
+        { id: 'l1-arrow', type: 'cone', args: [0.12, 0.38, 8], position: [0, 3.7, 0], rotation: [Math.PI, 0, 0], color: '#3B6B9C', label: '1.6L' },
+        { id: 'l1-shaft', type: 'box', args: [0.05, 0.45, 0.05], position: [0, 4.08, 0], color: '#3B6B9C' },
         // Roof live (green, small)
-        { id: 'lr-arrow', type: 'cone', args: [0.07, 0.18, 8], position: [0.7, 3.6, 0], rotation: [Math.PI, 0, 0], color: '#16a34a', label: '0.5Lr' },
-        { id: 'lr-shaft', type: 'box', args: [0.03, 0.22, 0.03], position: [0.7, 3.82, 0], color: '#16a34a' },
+        { id: 'lr-arrow', type: 'cone', args: [0.07, 0.18, 8], position: [0.7, 3.6, 0], rotation: [Math.PI, 0, 0], color: '#2D9F6F', label: '0.5Lr' },
+        { id: 'lr-shaft', type: 'box', args: [0.03, 0.22, 0.03], position: [0.7, 3.82, 0], color: '#2D9F6F' },
         // Column reactions
         { id: 'col-comp-l', type: 'cone', args: [0.07, 0.2, 8], position: [-1.0, 0.15, 0], rotation: [Math.PI, 0, 0], color: '#64748b' },
         { id: 'col-comp-r', type: 'cone', args: [0.07, 0.2, 8], position: [1.0, 0.15, 0], rotation: [Math.PI, 0, 0], color: '#64748b' },
@@ -97,7 +97,7 @@ export const lrfdLoadCombinationsConfig: AnimatedSequenceConfig = {
         { id: 'w-arrow2', type: 'cone', args: [0.1, 0.3, 8], position: [-1.3, 1.0, 0], rotation: [0, 0, -Math.PI / 2], color: '#06b6d4' },
         { id: 'w-shaft2', type: 'box', args: [0.4, 0.04, 0.04], position: [-1.8, 1.0, 0], color: '#06b6d4' },
         // Frame deflecting (lateral shift indicator)
-        { id: 'drift-arrow', type: 'cone', args: [0.06, 0.18, 8], position: [0, 3.45, 0], rotation: [0, 0, -Math.PI / 2], color: '#f59e0b', label: 'Drift' },
+        { id: 'drift-arrow', type: 'cone', args: [0.06, 0.18, 8], position: [0, 3.45, 0], rotation: [0, 0, -Math.PI / 2], color: '#D4951A', label: 'Drift' },
       ],
     },
 
@@ -120,15 +120,15 @@ export const lrfdLoadCombinationsConfig: AnimatedSequenceConfig = {
         { id: 'd-arrow', type: 'cone', args: [0.07, 0.2, 8], position: [0.3, 3.62, 0], rotation: [Math.PI, 0, 0], color: '#71717a', label: '1.2D+L' },
         { id: 'd-shaft', type: 'box', args: [0.03, 0.25, 0.03], position: [0.3, 3.85, 0], color: '#71717a' },
         // Seismic arrows — horizontal at each story (red, bidirectional)
-        { id: 'e1-arrow', type: 'cone', args: [0.13, 0.38, 8], position: [-1.3, 3.0, 0], rotation: [0, 0, -Math.PI / 2], color: '#dc2626', label: '1.0E' },
-        { id: 'e1-shaft', type: 'box', args: [0.45, 0.05, 0.05], position: [-1.75, 3.0, 0], color: '#dc2626' },
-        { id: 'e2-arrow', type: 'cone', args: [0.1, 0.28, 8], position: [-1.3, 1.5, 0], rotation: [0, 0, -Math.PI / 2], color: '#dc2626' },
-        { id: 'e2-shaft', type: 'box', args: [0.35, 0.04, 0.04], position: [-1.7, 1.5, 0], color: '#dc2626' },
+        { id: 'e1-arrow', type: 'cone', args: [0.13, 0.38, 8], position: [-1.3, 3.0, 0], rotation: [0, 0, -Math.PI / 2], color: '#D64545', label: '1.0E' },
+        { id: 'e1-shaft', type: 'box', args: [0.45, 0.05, 0.05], position: [-1.75, 3.0, 0], color: '#D64545' },
+        { id: 'e2-arrow', type: 'cone', args: [0.1, 0.28, 8], position: [-1.3, 1.5, 0], rotation: [0, 0, -Math.PI / 2], color: '#D64545' },
+        { id: 'e2-shaft', type: 'box', args: [0.35, 0.04, 0.04], position: [-1.7, 1.5, 0], color: '#D64545' },
         // Vertical seismic component indicator
         { id: 'ev-arrow', type: 'cone', args: [0.07, 0.2, 8], position: [-0.4, 3.62, 0], rotation: [Math.PI, 0, 0], color: '#f97316', label: '±0.2SDS·D' },
         { id: 'ev-shaft', type: 'box', args: [0.03, 0.25, 0.03], position: [-0.4, 3.85, 0], color: '#f97316' },
         // Shear wall indicator
-        { id: 'shear-wall', type: 'box', args: [0.25, 3.0, 0.6], position: [-1.0, 1.5, -0.4], color: '#dc2626', opacity: 0.3, transparent: true, label: 'Shear Wall' },
+        { id: 'shear-wall', type: 'box', args: [0.25, 3.0, 0.6], position: [-1.0, 1.5, -0.4], color: '#D64545', opacity: 0.3, transparent: true, label: 'Shear Wall' },
       ],
     },
 
@@ -159,8 +159,8 @@ export const lrfdLoadCombinationsConfig: AnimatedSequenceConfig = {
         { id: 'wl-arrow', type: 'cone', args: [0.11, 0.32, 8], position: [-1.3, 2.2, 0], rotation: [0, 0, -Math.PI / 2], color: '#06b6d4' },
         { id: 'wl-shaft', type: 'box', args: [0.42, 0.05, 0.05], position: [-1.75, 2.2, 0], color: '#06b6d4' },
         // Tension indicator at leeward column base
-        { id: 'tension', type: 'cone', args: [0.08, 0.22, 8], position: [1.0, -0.2, 0], rotation: [0, 0, 0], color: '#dc2626', label: 'Column tension' },
-        { id: 'tension-shaft', type: 'box', args: [0.03, 0.28, 0.03], position: [1.0, -0.45, 0], color: '#dc2626' },
+        { id: 'tension', type: 'cone', args: [0.08, 0.22, 8], position: [1.0, -0.2, 0], rotation: [0, 0, 0], color: '#D64545', label: 'Column tension' },
+        { id: 'tension-shaft', type: 'box', args: [0.03, 0.28, 0.03], position: [1.0, -0.45, 0], color: '#D64545' },
       ],
     },
   ],

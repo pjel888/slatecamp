@@ -62,7 +62,7 @@ export const soilProfileCutawayConfig: CutawaySectionConfig = {
       description: 'SF: Special soils — peat, highly sensitive clay, liquefiable deposits. Requires site-specific geotechnical investigation. Examples: San Francisco Bay Mud, Manila Bay reclamation.',
       codeCitation: 'NSCP Table 208-2',
       depth: 0.85,
-      geometry: { id: 'geo-sf', type: 'box', args: [1.2, 1.8, 1.0], position: [3.6, 0.9, 0], color: '#dc2626' },
+      geometry: { id: 'geo-sf', type: 'box', args: [1.2, 1.8, 1.0], position: [3.6, 0.9, 0], color: '#D64545' },
     },
     {
       id: 'building-foundation',

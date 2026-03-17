@@ -1,14 +1,16 @@
 'use client'
 
 import { useDevStore, IMPERSONATION_PRESETS, type ImpersonationPreset } from '@/stores/dev-store'
-import { User, Shield, Building2, GraduationCap, Briefcase, Crown } from 'lucide-react'
+import { User, ShieldCheck, Buildings, GraduationCap, Briefcase, Crown } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 
-const PRESET_ICONS: Record<string, typeof User> = {
+const PRESET_ICONS: Record<string, PhosphorIcon> = {
   arch_student: User,
   ust_student: GraduationCap,
   aecom_employee: Briefcase,
-  university_dean: Building2,
-  sme_admin: Shield,
+  university_dean: Buildings,
+  sme_admin: ShieldCheck,
   super_admin: Crown,
 }
 
@@ -16,7 +18,7 @@ function PresetCard({ preset }: { preset: ImpersonationPreset }) {
   const activePresetId = useDevStore((s) => s.activePresetId)
   const impersonateAs = useDevStore((s) => s.impersonateAs)
   const isActive = activePresetId === preset.id
-  const Icon = PRESET_ICONS[preset.id] ?? User
+  const PresetIcon = PRESET_ICONS[preset.id] ?? User
 
   return (
     <button
@@ -29,19 +31,19 @@ function PresetCard({ preset }: { preset: ImpersonationPreset }) {
       }`}
     >
       <div className="flex items-center gap-2">
-        <Icon className={`h-3.5 w-3.5 ${isActive ? 'text-blue-500' : 'text-muted-foreground'}`} />
+        <SCIcon icon={PresetIcon} size="xs" className={isActive ? 'text-blue-500' : 'text-muted-foreground'} />
         <span className={`text-xs font-semibold ${isActive ? 'text-blue-500' : 'text-foreground'}`}>
           {preset.label}
         </span>
       </div>
-      <span className="text-[10px] text-muted-foreground leading-tight">
+      <span className="text-[11px] text-muted-foreground leading-tight">
         {preset.description}
       </span>
       <div className="flex items-center gap-1.5 mt-0.5">
-        <span className="inline-flex rounded-full bg-muted px-1.5 py-0.5 text-[9px] font-medium text-muted-foreground">
+        <span className="inline-flex rounded-full bg-muted px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground">
           {preset.tier}
         </span>
-        <span className="inline-flex rounded-full bg-muted px-1.5 py-0.5 text-[9px] font-medium text-muted-foreground">
+        <span className="inline-flex rounded-full bg-muted px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground">
           {preset.role}
         </span>
       </div>
@@ -63,7 +65,7 @@ export function ImpersonationPanel() {
           <button
             type="button"
             onClick={stopImpersonating}
-            className="rounded-md bg-red-500/10 px-2 py-1 text-[10px] font-semibold text-red-500 transition-colors hover:bg-red-500/20"
+            className="rounded-md bg-red-500/10 px-2 py-1 text-[11px] font-semibold text-red-500 transition-colors hover:bg-red-500/20"
           >
             Stop Impersonating
           </button>

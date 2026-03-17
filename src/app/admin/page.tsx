@@ -51,7 +51,7 @@ export default function AdminLandingPage() {
           {error && <p className="mt-4 text-center text-xs text-red-600">{error}</p>}
         </div>
         
-        <p className="text-center text-[10px] text-zinc-400 uppercase tracking-widest">
+        <p className="text-center text-[11px] text-zinc-400 uppercase tracking-widest">
           Secure Environment
         </p>
       </div>

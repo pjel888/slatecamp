@@ -10,7 +10,7 @@ const ROOM_MINS: Record<string, { area: number; dim: number; label: string; colo
   'habitable':  { area: 6.0, dim: 2.0, label: 'Habitable Room', color: '#3b82f6' },
   'kitchen':    { area: 3.0, dim: 1.5, label: 'Kitchen', color: '#f97316' },
   'bathroom':   { area: 1.2, dim: 0.9, label: 'Bathroom/Toilet', color: '#0891b2' },
-  'laundry':    { area: 1.5, dim: 0.9, label: 'Laundry Room', color: '#16a34a' },
+  'laundry':    { area: 1.5, dim: 0.9, label: 'Laundry Room', color: '#2D9F6F' },
 }
 
 const parameters: ParameterDef[] = [
@@ -48,17 +48,17 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 
   // Min area indicator on floor
   const minSide = Math.sqrt(spec.area)
-  inst.push({ id: 'min-area-floor', type: 'box', position: [-(rW / 2) + minSide / 2, 0.005, -(rD / 2) + minSide / 2], args: [minSide, 0.01, minSide], color: areaOk ? '#16a34a' : '#dc2626', opacity: 0.35, transparent: true, label: `Min ${spec.area}m²` })
+  inst.push({ id: 'min-area-floor', type: 'box', position: [-(rW / 2) + minSide / 2, 0.005, -(rD / 2) + minSide / 2], args: [minSide, 0.01, minSide], color: areaOk ? '#2D9F6F' : '#D64545', opacity: 0.35, transparent: true, label: `Min ${spec.area}m²` })
 
   // Min dimension line
-  inst.push({ id: 'min-dim-line', type: 'box', position: [0, 0.01, -(rD / 2)], args: [spec.dim, 0.01, 0.01], color: dimOk ? '#16a34a' : '#dc2626', label: `Min ${spec.dim}m` })
+  inst.push({ id: 'min-dim-line', type: 'box', position: [0, 0.01, -(rD / 2)], args: [spec.dim, 0.01, 0.01], color: dimOk ? '#2D9F6F' : '#D64545', label: `Min ${spec.dim}m` })
 
   // Room color accent (based on type)
   inst.push({ id: 'room-accent', type: 'box', position: [0, 0.01, 0], args: [rW, 0.005, rD], color: spec.color, opacity: 0.1, transparent: true })
 
   // Area display bar
   const areaH = Math.min(area / 10, cH * 0.8)
-  inst.push({ id: 'area-bar', type: 'box', position: [rW / 2 + 0.6, areaH / 2, 0], args: [0.3, areaH, 0.3], color: areaOk ? '#16a34a' : '#dc2626', label: `${area.toFixed(1)}m²` })
+  inst.push({ id: 'area-bar', type: 'box', position: [rW / 2 + 0.6, areaH / 2, 0], args: [0.3, areaH, 0.3], color: areaOk ? '#2D9F6F' : '#D64545', label: `${area.toFixed(1)}m²` })
   const minBarH = Math.min(spec.area / 10, cH * 0.8)
   inst.push({ id: 'min-bar', type: 'box', position: [rW / 2 + 1.0, minBarH / 2, 0], args: [0.15, minBarH, 0.15], color: '#71717a', opacity: 0.6, transparent: true })
 

@@ -80,7 +80,7 @@ export const formworkAssemblyConfig: ExplodedAssemblyConfig = {
       id: 'fw-sole-plate',
       label: 'Sole Plate (Timber)',
       description: 'Timber sole plate on slab below, distributing prop reaction over a larger area of existing concrete. Min 50×150mm plank. Prevents point loading and slab punching.',
-      geometry: { id: 'fw-sole-plate-geo', type: 'box', position: [0, -0.36, -0.25], args: [0.6, 0.05, 0.15], color: '#d97706' },
+      geometry: { id: 'fw-sole-plate-geo', type: 'box', position: [0, -0.36, -0.25], args: [0.6, 0.05, 0.15], color: '#D4951A' },
       explodeOffset: [0, -0.9, -0.25],
     },
     {

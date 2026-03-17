@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
-import { FileText, CheckSquare, ArrowRight } from 'lucide-react'
+import { FileText, CheckSquare, ArrowRight } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card } from '@/components/ui/card'
 import type { RecentActivity } from '@/lib/actions/dashboard'
 
@@ -21,14 +24,14 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
             Recent Activity
           </p>
           <p className='text-sm text-gray-700 leading-relaxed'>
-            Your recent sessions and notes will appear here.
+            Your sessions and notes will show up here as you go — a record of everything you&apos;ve explored.
           </p>
         </div>
         <Link
           href='/dashboard/testing'
-          className='text-xs font-semibold text-blue-600 hover:text-blue-700 uppercase tracking-widest flex items-center gap-1 mt-4 transition-colors'
+          className='text-xs font-semibold text-primary hover:text-[#2F5A85] uppercase tracking-widest flex items-center gap-1 mt-4 transition-colors'
         >
-          Start first session <ArrowRight className='h-3 w-3' />
+          Start your first session <SCIcon icon={ArrowRight} size='xs' />
         </Link>
       </Card>
     )
@@ -50,7 +53,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
               className='flex items-start gap-2.5 group hover:bg-zinc-50 -mx-1 px-1 py-1 rounded-md transition-colors'
             >
               <div className='p-1.5 bg-zinc-100 rounded-md shrink-0 group-hover:bg-zinc-200 transition-colors mt-0.5'>
-                <Icon className='h-3 w-3 text-zinc-500' />
+                <SCIcon icon={Icon} size='xs' className='text-zinc-500' />
               </div>
               <div className='flex-1 min-w-0'>
                 <p className='text-xs font-semibold text-zinc-900 leading-tight truncate'>
@@ -60,7 +63,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
                   {activity.subtitle}
                 </p>
               </div>
-              <ArrowRight className='h-3 w-3 text-zinc-300 group-hover:text-zinc-500 mt-1 shrink-0 transition-colors' />
+              <SCIcon icon={ArrowRight} size='xs' className='text-zinc-300 group-hover:text-zinc-500 mt-1 shrink-0 transition-colors' />
             </Link>
           )
         })}
@@ -70,7 +73,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
         href='/dashboard/analytics'
         className='text-xs font-semibold text-zinc-400 hover:text-zinc-600 uppercase tracking-widest flex items-center gap-1 mt-3 pt-3 border-t border-zinc-100 transition-colors shrink-0'
       >
-        View all activity <ArrowRight className='h-2.5 w-2.5' />
+        See full history <SCIcon icon={ArrowRight} size='xs' />
       </Link>
     </Card>
   )

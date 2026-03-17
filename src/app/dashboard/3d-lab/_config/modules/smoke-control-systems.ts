@@ -63,7 +63,7 @@ export const smokeControlSystemsConfig: AnimatedSequenceConfig = {
         // Right wall
         { id: 'wall-right', type: 'box', args: [0.15, 2.5, 3], position: [2.0, 1.25, 0], color: '#a1a1aa' },
         // Smoke barrier partition (center)
-        { id: 'barrier', type: 'box', args: [0.12, 2.5, 3], position: [0, 1.25, 0], color: '#dc2626', opacity: 0.8, transparent: true, label: '1-hr Smoke Barrier' },
+        { id: 'barrier', type: 'box', args: [0.12, 2.5, 3], position: [0, 1.25, 0], color: '#D64545', opacity: 0.8, transparent: true, label: '1-hr Smoke Barrier' },
         // Smoke door in barrier
         { id: 'smoke-door', type: 'box', args: [0.12, 2.1, 0.9], position: [0, 1.05, 0], color: '#b91c1c', label: 'Smoke Door' },
         // Fire source (left compartment)
@@ -73,7 +73,7 @@ export const smokeControlSystemsConfig: AnimatedSequenceConfig = {
         // Right side clear
         { id: 'clear-right', type: 'box', args: [1.7, 0.45, 2.5], position: [1.0, 2.2, 0], color: '#bbf7d0', opacity: 0.2, transparent: true, label: 'Protected zone' },
         // Rating label
-        { id: 'rating-marker', type: 'sphere', args: [0.08, 8, 8], position: [0, 2.7, 0], color: '#dc2626' },
+        { id: 'rating-marker', type: 'sphere', args: [0.08, 8, 8], position: [0, 2.7, 0], color: '#D64545' },
       ],
     },
 
@@ -125,10 +125,10 @@ export const smokeControlSystemsConfig: AnimatedSequenceConfig = {
         // Exhaust duct at ceiling
         { id: 'exhaust-duct', type: 'box', args: [0.5, 0.15, 0.5], position: [0, 3.15, 0], color: '#3b82f6', label: 'Exhaust' },
         // Supply duct at floor
-        { id: 'supply-duct', type: 'box', args: [0.5, 0.15, 0.5], position: [-1.5, 0.05, 0], color: '#16a34a', label: 'Supply Air' },
+        { id: 'supply-duct', type: 'box', args: [0.5, 0.15, 0.5], position: [-1.5, 0.05, 0], color: '#2D9F6F', label: 'Supply Air' },
         // Sprinkler heads
-        { id: 'sprinkler-1', type: 'sphere', args: [0.06, 8, 8], position: [-0.8, 2.92, 0], color: '#dc2626' },
-        { id: 'sprinkler-2', type: 'sphere', args: [0.06, 8, 8], position: [0.6, 2.92, 0], color: '#dc2626' },
+        { id: 'sprinkler-1', type: 'sphere', args: [0.06, 8, 8], position: [-0.8, 2.92, 0], color: '#D64545' },
+        { id: 'sprinkler-2', type: 'sphere', args: [0.06, 8, 8], position: [0.6, 2.92, 0], color: '#D64545' },
         // Sprinkler spray
         { id: 'spray-1', type: 'cone', args: [0.25, 0.4, 8], position: [-0.8, 2.65, 0], rotation: [Math.PI, 0, 0], color: '#93c5fd', opacity: 0.6, transparent: true },
         // Fire source

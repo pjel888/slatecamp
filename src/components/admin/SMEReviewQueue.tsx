@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { canReviewContent } from '@/lib/admin/roles'
 import { approveArticle, requestChanges } from '@/lib/wiki/wiki-actions'
-import { Check, X, MessageSquare, FileQuestion, FileText, Box } from 'lucide-react'
+import { CheckCircle, XCircle, ChatCircle, Question, FileText, Cube } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface PendingItem {
@@ -85,9 +86,9 @@ export function SMEReviewQueue() {
   )
 
   const typeIcons = {
-    question: FileQuestion,
+    question: Question,
     wiki: FileText,
-    asset: Box,
+    asset: Cube,
   }
 
   if (loading) {
@@ -128,7 +129,7 @@ export function SMEReviewQueue() {
               >
                 <div className="flex items-start gap-4">
                   <div className="p-2 rounded-md bg-muted">
-                    <Icon className="h-5 w-5" />
+                    <SCIcon icon={Icon} size="md" />
                   </div>
                   
                   <div className="flex-1">
@@ -145,7 +146,7 @@ export function SMEReviewQueue() {
                       disabled={isProcessing}
                       className="flex items-center gap-1 px-3 py-1.5 text-sm rounded-md bg-green-600 text-white hover:bg-green-700 disabled:opacity-50"
                     >
-                      <Check className="h-4 w-4" />
+                      <SCIcon icon={CheckCircle} size="sm" />
                       Approve
                     </button>
                     <button
@@ -156,7 +157,7 @@ export function SMEReviewQueue() {
                       disabled={isProcessing}
                       className="flex items-center gap-1 px-3 py-1.5 text-sm rounded-md border border-input hover:bg-muted disabled:opacity-50"
                     >
-                      <MessageSquare className="h-4 w-4" />
+                      <SCIcon icon={ChatCircle} size="sm" />
                       Request Changes
                     </button>
                   </div>

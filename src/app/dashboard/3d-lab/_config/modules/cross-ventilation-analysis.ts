@@ -36,11 +36,11 @@ export const crossVentilationAnalysisConfig: AnimatedSequenceConfig = {
         { id: 'wind-3', type: 'cone', args: [0.1, 0.3, 8], position: [-2.3, 0.8, -0.5], rotation: [0, 0, -Math.PI / 2], color: '#06b6d4' },
         { id: 'wind-3s', type: 'box', args: [0.45, 0.04, 0.04], position: [-2.75, 0.8, -0.5], color: '#06b6d4' },
         // Positive pressure zone (windward)
-        { id: 'pos-zone', type: 'box', args: [0.15, 1.8, 1.6], position: [-1.35, 1.0, 0], color: '#16a34a', opacity: 0.4, transparent: true, label: '+Cp Windward' },
+        { id: 'pos-zone', type: 'box', args: [0.15, 1.8, 1.6], position: [-1.35, 1.0, 0], color: '#2D9F6F', opacity: 0.4, transparent: true, label: '+Cp Windward' },
         // Negative pressure zone (leeward)
-        { id: 'neg-zone', type: 'box', args: [0.15, 1.8, 1.6], position: [1.35, 1.0, 0], color: '#dc2626', opacity: 0.4, transparent: true, label: '−Cp Leeward' },
+        { id: 'neg-zone', type: 'box', args: [0.15, 1.8, 1.6], position: [1.35, 1.0, 0], color: '#D64545', opacity: 0.4, transparent: true, label: '−Cp Leeward' },
         // Roof suction
-        { id: 'roof-suction', type: 'box', args: [2.5, 0.12, 1.8], position: [0, 2.1, 0], color: '#dc2626', opacity: 0.3, transparent: true, label: 'Roof Suction' },
+        { id: 'roof-suction', type: 'box', args: [2.5, 0.12, 1.8], position: [0, 2.1, 0], color: '#D64545', opacity: 0.3, transparent: true, label: 'Roof Suction' },
       ],
     },
 
@@ -70,7 +70,7 @@ export const crossVentilationAnalysisConfig: AnimatedSequenceConfig = {
         // Stagnant air (no outlet — air piles up)
         { id: 'stagnant', type: 'sphere', args: [0.45, 8, 8], position: [0.5, 1.1, 0], color: '#a3a3a3', opacity: 0.3, transparent: true, label: 'Stagnant' },
         // Positive pressure indicator
-        { id: 'pos', type: 'sphere', args: [0.09, 8, 8], position: [-1.5, 1.1, 0], color: '#16a34a' },
+        { id: 'pos', type: 'sphere', args: [0.09, 8, 8], position: [-1.5, 1.1, 0], color: '#2D9F6F' },
       ],
     },
 
@@ -101,8 +101,8 @@ export const crossVentilationAnalysisConfig: AnimatedSequenceConfig = {
         { id: 'flow-3', type: 'cone', args: [0.07, 0.2, 8], position: [0.7, 0.85, -0.2], rotation: [0, 0, -Math.PI / 2], color: '#06b6d4' },
         { id: 'flow-3s', type: 'box', args: [0.5, 0.03, 0.03], position: [0.4, 0.85, -0.2], color: '#06b6d4' },
         // Pressure zones
-        { id: 'pos-p', type: 'sphere', args: [0.09, 8, 8], position: [-1.5, 1.05, 0], color: '#16a34a' },
-        { id: 'neg-p', type: 'sphere', args: [0.09, 8, 8], position: [1.5, 1.05, 0], color: '#dc2626' },
+        { id: 'pos-p', type: 'sphere', args: [0.09, 8, 8], position: [-1.5, 1.05, 0], color: '#2D9F6F' },
+        { id: 'neg-p', type: 'sphere', args: [0.09, 8, 8], position: [1.5, 1.05, 0], color: '#D64545' },
       ],
     },
 

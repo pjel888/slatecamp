@@ -1,31 +1,42 @@
 'use client'
 
-import { useState } from 'react'
-import { MessageSquare, StickyNote, Search, GripVertical, RotateCcw } from 'lucide-react'
+import { useState, useEffect, useCallback } from 'react'
+import {
+  ChatCircle,
+  NotePencil,
+  MagnifyingGlass,
+  DotsSixVertical,
+  ArrowCounterClockwise,
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
 import { QuickCaptureDrawer } from '../notes/QuickCaptureDrawer'
 import { useNoteContext } from '@/lib/context/note-context'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
+import { toast } from '@/lib/hooks/use-toast'
 
 const QUICK_ACTIONS = [
   {
     id: 'search',
     label: 'Search',
-    icon: Search,
+    icon: MagnifyingGlass,
     ariaLabel: 'Search articles',
+    shortcut: 'K',
   },
   {
     id: 'ai-chat',
-    label: 'AI chat',
-    icon: MessageSquare,
+    label: 'AI Chat',
+    icon: ChatCircle,
     ariaLabel: 'Open AI chat',
+    shortcut: undefined,
   },
   {
     id: 'quick-note',
-    label: 'Quick note',
-    icon: StickyNote,
+    label: 'Quick Note',
+    icon: NotePencil,
     ariaLabel: 'Quick note',
+    shortcut: 'N',
   },
 ] as const
 
@@ -38,21 +49,48 @@ export function QuickActionsBar() {
   const { style: floatStyle, onPointerDown: onDrag, resetPosition } =
     useDraggableFloatingPosition('quick-actions-bar', DEFAULT_RIGHT, DEFAULT_BOTTOM)
 
-  const handleAction = (id: string) => {
-    if (id === 'search') setOmnibarOpen(true)
-    if (id === 'quick-note') openDrawer()
-  }
+  const handleAction = useCallback(
+    (id: string) => {
+      if (id === 'search') setOmnibarOpen(true)
+      if (id === 'quick-note') openDrawer()
+      if (id === 'ai-chat') {
+        toast({
+          title: 'AI Chat coming soon',
+          description: 'The AI tutor will be available here in a future update.',
+        })
+      }
+    },
+    [openDrawer],
+  )
+
+  // Keyboard shortcut: Ctrl/Cmd + Shift + N for quick note
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.shiftKey && e.key.toLowerCase() === 'n') {
+        e.preventDefault()
+        handleAction('quick-note')
+      }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [handleAction])
 
   return (
     <>
-      <aside className="z-50 flex items-center" style={floatStyle} aria-label="Quick actions">
+      <aside
+        className="z-50 flex items-center"
+        style={floatStyle}
+        aria-label="Quick actions"
+      >
         <div
           className={cn(
-            'flex items-center gap-0 rounded-sm border border-border/60 pl-0.5 pr-1 py-1',
-            'bg-background/20 shadow-[0_0px_8px_rgba(0,0,0,0.12)] backdrop-blur-[10px]',
+            'flex items-center gap-0 rounded-sm border border-border/50 pl-0.5 pr-1 py-1',
+            'bg-background/80 shadow-md backdrop-blur-md',
+            'transition-shadow duration-150 ease-out hover:shadow-lg',
           )}
         >
-          <div className="flex items-center gap-1.5">
+          {/* Action buttons */}
+          <div className="flex items-center gap-1">
             {QUICK_ACTIONS.map(({ id, label, icon: Icon, ariaLabel }) => (
               <button
                 key={id}
@@ -61,45 +99,62 @@ export function QuickActionsBar() {
                 aria-label={ariaLabel}
                 title={label}
                 className={cn(
-                  'group flex h-[52px] w-[52px] shrink-0 items-center gap-2 overflow-hidden rounded-sm',
-                  'text-muted-foreground transition-[width] duration-400 hover:bg-muted hover:text-foreground',
-                  'hover:w-[135px]',
-                  'ease-[cubic-bezier(0.175,0.885,0.32,1.275)]',
+                  'group relative flex h-11 w-11 shrink-0 items-center justify-center rounded-sm',
+                  'text-muted-foreground transition-colors duration-150 ease-out',
+                  'hover:bg-slate-blue-50 hover:text-primary',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40',
                 )}
               >
-                <span className="flex shrink-0 items-center pl-4">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
-                </span>
-                <span className="whitespace-nowrap pr-4 text-[13px] font-medium opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                <SCIcon icon={Icon} size="md" />
+
+                {/* Tooltip */}
+                <span
+                  className={cn(
+                    'pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2',
+                    'whitespace-nowrap rounded-sm bg-foreground px-2 py-1',
+                    'text-[11px] font-medium text-white',
+                    'opacity-0 transition-opacity duration-150 group-hover:opacity-100',
+                  )}
+                >
                   {label}
                 </span>
               </button>
             ))}
           </div>
 
-          <div className="flex flex-col border-l border-border/40">
+          {/* Drag handle + reset */}
+          <div className="ml-0.5 flex flex-col border-l border-border/40">
             <div
               role="button"
               tabIndex={0}
               onPointerDown={onDrag}
-              className="flex h-[26px] w-8 shrink-0 cursor-grab active:cursor-grabbing items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors touch-none"
-              aria-label="Drag to move"
+              className={cn(
+                'flex h-[22px] w-7 shrink-0 cursor-grab items-center justify-center',
+                'text-muted-foreground/60 transition-colors duration-150 hover:text-muted-foreground',
+                'active:cursor-grabbing touch-none',
+              )}
+              aria-label="Drag to reposition"
             >
-              <GripVertical className="h-3.5 w-3.5" strokeWidth={2} />
+              <SCIcon icon={DotsSixVertical} size="xs" />
             </div>
             <button
               type="button"
               onClick={resetPosition}
-              className="flex h-[26px] w-8 shrink-0 items-center justify-center text-zinc-400 hover:text-zinc-600 transition-colors"
+              className={cn(
+                'flex h-[22px] w-7 shrink-0 items-center justify-center',
+                'text-muted-foreground/60 transition-colors duration-150 hover:text-muted-foreground',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40',
+              )}
               aria-label="Reset position"
               title="Reset position"
             >
-              <RotateCcw className="h-3 w-3" strokeWidth={2} />
+              <SCIcon icon={ArrowCounterClockwise} size="xs" />
             </button>
           </div>
         </div>
       </aside>
 
+      {/* Portaled dialogs */}
       <Omnibar open={omnibarOpen} setOpen={setOmnibarOpen} />
       <QuickCaptureDrawer />
     </>

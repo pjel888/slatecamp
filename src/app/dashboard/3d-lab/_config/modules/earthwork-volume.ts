@@ -30,9 +30,9 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Fill area (front half)
   inst.push({ id: 'fill-zone', type: 'box', position: [0, fillS / 2, sDs / 4], args: [sWs, fillS, sDs / 2], color: '#b45309', opacity: 0.7, transparent: true, label: `Fill: ${(sW * sD * 0.5 * fill).toFixed(0)} m³` })
   // Cut zone visualization
-  inst.push({ id: 'cut-zone', type: 'box', position: [0, -(cutS / 2), -sDs / 4], args: [sWs, cutS, sDs / 2], color: '#dc2626', opacity: 0.35, transparent: true, label: `Cut: ${(sW * sD * 0.5 * cut).toFixed(0)} m³` })
+  inst.push({ id: 'cut-zone', type: 'box', position: [0, -(cutS / 2), -sDs / 4], args: [sWs, cutS, sDs / 2], color: '#D64545', opacity: 0.35, transparent: true, label: `Cut: ${(sW * sD * 0.5 * cut).toFixed(0)} m³` })
   // Finished grade plane
-  inst.push({ id: 'finished-grade', type: 'box', position: [0, 0.005, 0], args: [sWs, 0.01, sDs], color: '#16a34a', opacity: 0.5, transparent: true, label: 'Finished Grade' })
+  inst.push({ id: 'finished-grade', type: 'box', position: [0, 0.005, 0], args: [sWs, 0.01, sDs], color: '#2D9F6F', opacity: 0.5, transparent: true, label: 'Finished Grade' })
   // Slope batter on cut edge
   const slopeRad = (slope * Math.PI) / 180
   const batterH = cutS
@@ -43,8 +43,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const dumpH = Math.cbrt(dumpVol) * scale
   inst.push({ id: 'dump-pile', type: 'cone', position: [sWs / 2 + 1, dumpH / 2, 0], args: [dumpH * 0.8, dumpH, 8], color: '#78350f', label: 'Spoil' })
   // Equipment (excavator simplified)
-  inst.push({ id: 'excavator-body', type: 'box', position: [-sWs / 2 + 0.5, 0.3, -sDs / 4], args: [0.8, 0.5, 0.5], color: '#f59e0b' })
-  inst.push({ id: 'excavator-arm', type: 'box', position: [-sWs / 2 + 0.2, 0.7, -sDs / 4], rotation: [0, 0, 0.5], args: [0.1, 0.5, 0.1], color: '#d97706' })
+  inst.push({ id: 'excavator-body', type: 'box', position: [-sWs / 2 + 0.5, 0.3, -sDs / 4], args: [0.8, 0.5, 0.5], color: '#D4951A' })
+  inst.push({ id: 'excavator-arm', type: 'box', position: [-sWs / 2 + 0.2, 0.7, -sDs / 4], rotation: [0, 0, 0.5], args: [0.1, 0.5, 0.1], color: '#D4951A' })
 
   return inst
 }

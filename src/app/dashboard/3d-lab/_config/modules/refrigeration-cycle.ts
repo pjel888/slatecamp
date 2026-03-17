@@ -29,16 +29,16 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
         { id: 'compressor', type: 'cylinder', args: [0.35, 0.35, 0.7, 12], position: [-1.5, 0.41, -0.6], color: '#64748b', label: 'Compressor' },
         { id: 'comp-motor', type: 'cylinder', args: [0.2, 0.2, 0.25, 8], position: [-1.5, 0.88, -0.6], color: '#475569' },
         // Condenser (top-right)
-        { id: 'condenser', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, -0.6], color: '#dc2626', label: 'Condenser' },
+        { id: 'condenser', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, -0.6], color: '#D64545', label: 'Condenser' },
         { id: 'cond-fins', type: 'box', args: [0.9, 0.5, 0.08], position: [1.3, 0.37, -0.32], color: '#ef4444', opacity: 0.7, transparent: true },
         // Expansion valve (top-left)
-        { id: 'exp-valve', type: 'sphere', args: [0.18, 12, 12], position: [-1.5, 0.4, 0.7], color: '#f59e0b', label: 'Expansion Valve' },
+        { id: 'exp-valve', type: 'sphere', args: [0.18, 12, 12], position: [-1.5, 0.4, 0.7], color: '#D4951A', label: 'Expansion Valve' },
         // Evaporator (bottom-right)
         { id: 'evaporator', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, 0.7], color: '#3b82f6', label: 'Evaporator' },
         { id: 'evap-fins', type: 'box', args: [0.9, 0.5, 0.08], position: [1.3, 0.37, 0.42], color: '#60a5fa', opacity: 0.7, transparent: true },
         // Connecting pipes (high pressure side — red)
-        { id: 'pipe-hp-1', type: 'box', args: [0.07, 0.07, 1.3], position: [-1.5, 0.7, 0.05], color: '#dc2626' },
-        { id: 'pipe-hp-2', type: 'box', args: [2.8, 0.07, 0.07], position: [0, 0.7, -0.6], color: '#dc2626' },
+        { id: 'pipe-hp-1', type: 'box', args: [0.07, 0.07, 1.3], position: [-1.5, 0.7, 0.05], color: '#D64545' },
+        { id: 'pipe-hp-2', type: 'box', args: [2.8, 0.07, 0.07], position: [0, 0.7, -0.6], color: '#D64545' },
         // Connecting pipes (low pressure side — blue)
         { id: 'pipe-lp-1', type: 'box', args: [2.8, 0.07, 0.07], position: [0, 0.2, 0.7], color: '#3b82f6' },
         { id: 'pipe-lp-2', type: 'box', args: [0.07, 0.07, 1.3], position: [1.3, 0.2, 0.05], color: '#3b82f6' },
@@ -56,8 +56,8 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
       geometry: [
         { id: 'base', type: 'box', args: [5, 0.06, 3], position: [0, 0, 0], color: '#e7e5e4' },
         // Compressor (highlighted)
-        { id: 'compressor', type: 'cylinder', args: [0.4, 0.4, 0.8, 12], position: [-1.5, 0.46, -0.6], color: '#f59e0b', label: 'Compressor ACTIVE' },
-        { id: 'comp-motor', type: 'cylinder', args: [0.22, 0.22, 0.28, 8], position: [-1.5, 0.96, -0.6], color: '#d97706' },
+        { id: 'compressor', type: 'cylinder', args: [0.4, 0.4, 0.8, 12], position: [-1.5, 0.46, -0.6], color: '#D4951A', label: 'Compressor ACTIVE' },
+        { id: 'comp-motor', type: 'cylinder', args: [0.22, 0.22, 0.28, 8], position: [-1.5, 0.96, -0.6], color: '#D4951A' },
         // Other components dimmed
         { id: 'condenser', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, -0.6], color: '#94a3b8', opacity: 0.5, transparent: true, label: 'Condenser' },
         { id: 'exp-valve', type: 'sphere', args: [0.18, 12, 12], position: [-1.5, 0.4, 0.7], color: '#94a3b8', opacity: 0.5, transparent: true, label: 'Exp. Valve' },
@@ -66,8 +66,8 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
         { id: 'suction', type: 'box', args: [0.07, 0.07, 1.3], position: [-1.5, 0.2, 0.1], color: '#3b82f6', label: 'Suction (low P)' },
         { id: 'suc-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [-1.5, 0.2, -0.35], rotation: [Math.PI / 2, 0, 0], color: '#3b82f6' },
         // Discharge pipe (high pressure — red leaving compressor)
-        { id: 'discharge', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.8, -0.6], color: '#dc2626', label: 'Discharge (high P)' },
-        { id: 'disc-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [0.7, 0.8, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#dc2626' },
+        { id: 'discharge', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.8, -0.6], color: '#D64545', label: 'Discharge (high P)' },
+        { id: 'disc-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [0.7, 0.8, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#D64545' },
         // Heat indicator (compression generates heat)
         { id: 'heat-1', type: 'cone', args: [0.06, 0.15, 8], position: [-1.2, 1.2, -0.6], rotation: [0, 0, 0], color: '#f97316' },
         { id: 'heat-2', type: 'cone', args: [0.06, 0.15, 8], position: [-1.5, 1.25, -0.6], rotation: [0, 0, 0], color: '#f97316' },
@@ -85,7 +85,7 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
       geometry: [
         { id: 'base', type: 'box', args: [5, 0.06, 3], position: [0, 0, 0], color: '#e7e5e4' },
         // Condenser (highlighted)
-        { id: 'condenser', type: 'box', args: [1.1, 0.7, 0.65], position: [1.3, 0.42, -0.6], color: '#dc2626', label: 'Condenser ACTIVE' },
+        { id: 'condenser', type: 'box', args: [1.1, 0.7, 0.65], position: [1.3, 0.42, -0.6], color: '#D64545', label: 'Condenser ACTIVE' },
         { id: 'cond-fins', type: 'box', args: [0.95, 0.6, 0.1], position: [1.3, 0.42, -0.32], color: '#fca5a5' },
         // Condenser fan
         { id: 'cond-fan', type: 'cylinder', args: [0.25, 0.25, 0.06, 8], position: [1.3, 0.8, -0.8], color: '#374151' },
@@ -94,15 +94,15 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
         { id: 'exp-valve', type: 'sphere', args: [0.18, 12, 12], position: [-1.5, 0.4, 0.7], color: '#94a3b8', opacity: 0.5, transparent: true },
         { id: 'evaporator', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, 0.7], color: '#94a3b8', opacity: 0.5, transparent: true },
         // Hot vapor entering condenser
-        { id: 'hp-pipe', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.7, -0.6], color: '#dc2626' },
-        { id: 'hp-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [0.7, 0.7, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#dc2626', label: 'Superheated vapor' },
+        { id: 'hp-pipe', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.7, -0.6], color: '#D64545' },
+        { id: 'hp-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [0.7, 0.7, -0.6], rotation: [0, 0, -Math.PI / 2], color: '#D64545', label: 'Superheated vapor' },
         // Heat rejection arrows (outward from condenser)
         { id: 'rej-1', type: 'cone', args: [0.07, 0.2, 8], position: [1.0, 1.1, -0.6], rotation: [0, 0, 0], color: '#f97316' },
         { id: 'rej-2', type: 'cone', args: [0.07, 0.2, 8], position: [1.3, 1.1, -0.6], rotation: [0, 0, 0], color: '#f97316' },
         { id: 'rej-3', type: 'cone', args: [0.07, 0.2, 8], position: [1.6, 1.1, -0.6], rotation: [0, 0, 0], color: '#f97316' },
         // Liquid refrigerant leaving condenser
-        { id: 'liq-pipe', type: 'box', args: [0.07, 0.07, 1.3], position: [1.3, 0.12, 0.05], color: '#f59e0b' },
-        { id: 'liq-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [1.3, 0.12, 0.35], rotation: [-Math.PI / 2, 0, 0], color: '#f59e0b', label: 'Liquid (high P)' },
+        { id: 'liq-pipe', type: 'box', args: [0.07, 0.07, 1.3], position: [1.3, 0.12, 0.05], color: '#D4951A' },
+        { id: 'liq-arrow', type: 'cone', args: [0.09, 0.25, 8], position: [1.3, 0.12, 0.35], rotation: [-Math.PI / 2, 0, 0], color: '#D4951A', label: 'Liquid (high P)' },
       ],
     },
 
@@ -117,7 +117,7 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
       geometry: [
         { id: 'base', type: 'box', args: [5, 0.06, 3], position: [0, 0, 0], color: '#e7e5e4' },
         // Expansion valve (highlighted)
-        { id: 'exp-valve', type: 'sphere', args: [0.22, 12, 12], position: [-1.5, 0.4, 0.7], color: '#f59e0b', label: 'Expansion Valve' },
+        { id: 'exp-valve', type: 'sphere', args: [0.22, 12, 12], position: [-1.5, 0.4, 0.7], color: '#D4951A', label: 'Expansion Valve' },
         // Evaporator (highlighted)
         { id: 'evaporator', type: 'box', args: [1.1, 0.7, 0.65], position: [1.3, 0.42, 0.7], color: '#3b82f6', label: 'Evaporator ACTIVE' },
         { id: 'evap-fins', type: 'box', args: [0.95, 0.6, 0.1], position: [1.3, 0.42, 0.42], color: '#93c5fd' },
@@ -125,8 +125,8 @@ export const refrigerationCycleConfig: AnimatedSequenceConfig = {
         { id: 'compressor', type: 'cylinder', args: [0.35, 0.35, 0.7, 12], position: [-1.5, 0.41, -0.6], color: '#94a3b8', opacity: 0.5, transparent: true },
         { id: 'condenser', type: 'box', args: [1.0, 0.6, 0.6], position: [1.3, 0.37, -0.6], color: '#94a3b8', opacity: 0.5, transparent: true },
         // High-pressure liquid pipe TO expansion valve
-        { id: 'hp-liq', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.12, 0.7], color: '#f59e0b', label: 'Liquid (high P)' },
-        { id: 'hp-arr', type: 'cone', args: [0.08, 0.22, 8], position: [-0.8, 0.12, 0.7], rotation: [0, 0, Math.PI / 2], color: '#f59e0b' },
+        { id: 'hp-liq', type: 'box', args: [2.85, 0.07, 0.07], position: [0, 0.12, 0.7], color: '#D4951A', label: 'Liquid (high P)' },
+        { id: 'hp-arr', type: 'cone', args: [0.08, 0.22, 8], position: [-0.8, 0.12, 0.7], rotation: [0, 0, Math.PI / 2], color: '#D4951A' },
         // Low-pressure vapor pipe TO compressor
         { id: 'lp-vap', type: 'box', args: [0.07, 0.07, 1.3], position: [-1.5, 0.25, 0.05], color: '#3b82f6', label: 'Vapor (low P)' },
         { id: 'lp-arr', type: 'cone', args: [0.08, 0.22, 8], position: [-1.5, 0.25, -0.4], rotation: [Math.PI / 2, 0, 0], color: '#3b82f6' },

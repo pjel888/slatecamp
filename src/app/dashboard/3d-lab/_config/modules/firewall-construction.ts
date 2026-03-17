@@ -58,7 +58,7 @@ export const firewallConstructionConfig: CutawaySectionConfig = {
       material: 'Reference Line',
       description: 'Firewall is built exactly on the property line — wall centerline aligns with property boundary.',
       depth: 1.0,
-      geometry: { id: 'geo-pl', type: 'box', args: [0.005, 5.0, 1.0], position: [0, 1.5, 0], color: '#dc2626' },
+      geometry: { id: 'geo-pl', type: 'box', args: [0.005, 5.0, 1.0], position: [0, 1.5, 0], color: '#D64545' },
     },
   ],
   annotations: [

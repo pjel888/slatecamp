@@ -82,7 +82,7 @@ export const modernismFivePointsConfig: ExplodedAssemblyConfig = {
       id: 'mfp-roof-garden',
       label: 'Roof Garden — Point 5: Toit-Terrasse',
       description: 'Green roof garden replacing the ground area covered by the building. Recovers nature, provides insulation, and creates outdoor living space at elevation.',
-      geometry: { id: 'mfp-roof-garden-geo', type: 'box', position: [0, 1.26, 0], args: [1.0, 0.04, 0.8], color: '#16a34a', opacity: 0.8, transparent: true },
+      geometry: { id: 'mfp-roof-garden-geo', type: 'box', position: [0, 1.26, 0], args: [1.0, 0.04, 0.8], color: '#2D9F6F', opacity: 0.8, transparent: true },
       explodeOffset: yOff(1.0),
     },
     {

@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import { X } from 'lucide-react'
+import { X } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 
 interface AppleCloseButtonProps {
@@ -23,9 +24,10 @@ export function AppleCloseButton({ onClick, className }: AppleCloseButtonProps) 
       )}
       title="Close"
     >
-      <X 
-        className="h-2 w-2 text-[#4C0000] opacity-0 group-hover/close:opacity-100 transition-opacity" 
-        strokeWidth={4} 
+      <X
+        size={8}
+        weight="bold"
+        className="text-[#4C0000] opacity-0 group-hover/close:opacity-100 transition-opacity"
       />
     </button>
   )

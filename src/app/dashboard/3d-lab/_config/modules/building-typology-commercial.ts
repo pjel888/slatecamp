@@ -31,7 +31,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     retail:    [{ label: 'Retail', portion: 0.7, color: '#f97316' }, { label: 'Circ', portion: 0.15, color: '#71717a' }, { label: 'Services', portion: 0.15, color: '#a1a1aa' }],
     mall:      [{ label: 'GLA', portion: 0.65, color: '#f97316' }, { label: 'Atrium', portion: 0.1, color: '#fde68a' }, { label: 'Circ', portion: 0.15, color: '#71717a' }, { label: 'Utility', portion: 0.1, color: '#52525b' }],
     office:    [{ label: 'Net Office', portion: 0.6, color: '#3b82f6' }, { label: 'Lobby', portion: 0.1, color: '#93c5fd' }, { label: 'Circ', portion: 0.2, color: '#71717a' }, { label: 'Core', portion: 0.1, color: '#52525b' }],
-    mixeduse:  [{ label: 'Residential', portion: 0.45, color: '#16a34a' }, { label: 'Retail', portion: 0.3, color: '#f97316' }, { label: 'Office', portion: 0.15, color: '#3b82f6' }, { label: 'Circ', portion: 0.1, color: '#71717a' }],
+    mixeduse:  [{ label: 'Residential', portion: 0.45, color: '#2D9F6F' }, { label: 'Retail', portion: 0.3, color: '#f97316' }, { label: 'Office', portion: 0.15, color: '#3b82f6' }, { label: 'Circ', portion: 0.1, color: '#71717a' }],
   }
   const alloc = allocations[cType] ?? allocations['office']
 

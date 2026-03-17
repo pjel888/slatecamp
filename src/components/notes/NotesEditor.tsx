@@ -12,19 +12,20 @@ import TaskItem from '@tiptap/extension-task-item'
 import HorizontalRule from '@tiptap/extension-horizontal-rule'
 import { TextStyle, FontSize } from '@tiptap/extension-text-style'
 import {
-  Bold,
-  Italic,
-  Underline as UnderlineIcon,
-  Highlighter,
-  List,
-  ListOrdered,
-  ListTodo,
-  Heading1,
-  Heading2,
-  Heading3,
-  ImagePlus,
+  TextB,
+  TextItalic,
+  TextUnderline,
+  HighlighterCircle,
+  List as ListIcon,
+  ListNumbers,
+  ListChecks,
+  TextH,
+  TextHTwo,
+  TextHThree,
+  ImageSquare,
   Minus,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { uploadNoteImage } from '@/lib/notes/uploadImage'
 
@@ -226,13 +227,13 @@ export function NotesEditor({
           onMouseDown={(e) => e.preventDefault()}
         >
           <button type="button" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
-            <Bold className="h-3.5 w-3.5" strokeWidth={2} />
+            <SCIcon icon={TextB} size="xs" />
           </button>
           <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
-            <Italic className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <SCIcon icon={TextItalic} size="xs" />
           </button>
           <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
-            <UnderlineIcon className="h-3.5 w-3.5" strokeWidth={1.5} />
+            <SCIcon icon={TextUnderline} size="xs" />
           </button>
           <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
           {HL_COLOURS.map(({ label, colour }) => (
@@ -264,42 +265,42 @@ export function NotesEditor({
         >
           <nav className="flex flex-wrap items-center gap-0.5" aria-label="Formatting">
             <button type="button" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
-              <Bold className="h-4 w-4" strokeWidth={1.5} />
+              <SCIcon icon={TextB} size="sm" />
             </button>
             <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
-              <Italic className="h-4 w-4" strokeWidth={1.5} />
+              <SCIcon icon={TextItalic} size="sm" />
             </button>
             <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
-              <UnderlineIcon className="h-4 w-4" strokeWidth={1.5} />
+              <SCIcon icon={TextUnderline} size="sm" />
             </button>
             <button type="button" onClick={() => editor.chain().focus().toggleHighlight().run()} className={toolbarBtn(editor.isActive('highlight'))} title="Highlight">
-              <Highlighter className="h-4 w-4" strokeWidth={1.5} />
+              <SCIcon icon={HighlighterCircle} size="sm" />
             </button>
 
             {!compact && (
               <>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
                 <button type="button" onClick={() => editor.chain().focus().toggleBulletList().run()} className={toolbarBtn(editor.isActive('bulletList'))} title="Bullet list">
-                  <List className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={ListIcon} size="sm" />
                 </button>
                 <button type="button" onClick={() => editor.chain().focus().toggleOrderedList().run()} className={toolbarBtn(editor.isActive('orderedList'))} title="Numbered list">
-                  <ListOrdered className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={ListNumbers} size="sm" />
                 </button>
                 <button type="button" onClick={() => editor.chain().focus().toggleTaskList().run()} className={toolbarBtn(editor.isActive('taskList'))} title="Todo list">
-                  <ListTodo className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={ListChecks} size="sm" />
                 </button>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
                 <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 1 }))} title="Heading 1">
-                  <Heading1 className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={TextH} size="sm" />
                 </button>
                 <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 2 }))} title="Heading 2">
-                  <Heading2 className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={TextHTwo} size="sm" />
                 </button>
                 <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 3 }))} title="Heading 3">
-                  <Heading3 className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={TextHThree} size="sm" />
                 </button>
                 <button type="button" onClick={() => editor.chain().focus().setHorizontalRule().run()} className="rounded p-2 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground" title="Horizontal rule">
-                  <Minus className="h-4 w-4" strokeWidth={1.5} />
+                  <SCIcon icon={Minus} size="sm" />
                 </button>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
                 <select
@@ -321,7 +322,7 @@ export function NotesEditor({
             )}
 
             <button type="button" onClick={handleImageButton} className="rounded p-2 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground" title="Insert image">
-              <ImagePlus className="h-4 w-4" strokeWidth={1.5} />
+              <SCIcon icon={ImageSquare} size="sm" />
             </button>
           </nav>
         </div>

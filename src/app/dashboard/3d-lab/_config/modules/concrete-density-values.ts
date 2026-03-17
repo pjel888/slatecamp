@@ -52,9 +52,9 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
     // Single specimen
     const weight = selected.density * size ** 3
     inst.push({ id: 'specimen', type: 'box', position: [0, size / 2, 0], args: [size, size, size], color: selected.color })
-    inst.push({ id: 'specimen-top', type: 'box', position: [0, size + 0.02, 0], args: [size + 0.05, 0.04, size + 0.05], color: '#f59e0b' })
+    inst.push({ id: 'specimen-top', type: 'box', position: [0, size + 0.02, 0], args: [size + 0.05, 0.04, size + 0.05], color: '#D4951A' })
     // Weight arrow
-    inst.push({ id: 'weight-arrow', type: 'cone', position: [0, size + 0.5, 0], rotation: [Math.PI, 0, 0], args: [0.1, 0.4, 8], color: '#dc2626', label: `${weight.toFixed(1)} kN` })
+    inst.push({ id: 'weight-arrow', type: 'cone', position: [0, size + 0.5, 0], rotation: [Math.PI, 0, 0], args: [0.1, 0.4, 8], color: '#D64545', label: `${weight.toFixed(1)} kN` })
     // Density label
     inst.push({ id: 'density-bar', type: 'box', position: [size / 2 + 0.4, selected.density / maxDensity * 1.5, 0], args: [0.1, selected.density / maxDensity * 3, 0.1], color: selected.color, label: `${selected.density} kN/m³` })
   }

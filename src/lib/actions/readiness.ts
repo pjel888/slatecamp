@@ -8,8 +8,8 @@ const EMPTY_RESULT: ReadinessScoreData = {
   score: 0,
   previousScore: null,
   subScores: { accuracy: 0, coverage: 0, srsHealth: 50, recency: 0, weakArea: 100 },
-  label: 'Needs Work',
-  color: 'var(--color-signal-red)',
+  label: 'Keep Practicing',
+  color: 'var(--danger)',
 };
 
 /**

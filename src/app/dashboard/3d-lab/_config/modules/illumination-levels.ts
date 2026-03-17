@@ -38,7 +38,7 @@ const PATHS: PathDef[] = [
     id: 'circuit-a',
     label: 'High-Lux Circuit (Drafting + Office)',
     points: [[7, 0], [7, 10], [22, 10], [22, 0]],
-    color: '#f59e0b',
+    color: '#D4951A',
     width: 2,
   },
   {
@@ -68,8 +68,8 @@ const FIXTURES: FixtureDef[] = [
   { id: 'lum-l1', label: 'Downlight (Lobby)', type: 'custom', position: [21, 15], color: '#fde68a', codeCitation: 'PEC' },
   // Corridor + emergency
   { id: 'lum-cor1', label: 'Corridor Strip Light', type: 'custom', position: [7, 20.5], color: '#e5e7eb', codeCitation: 'PEC' },
-  { id: 'lum-em', label: 'Emergency Light', type: 'custom', position: [21, 20.5], color: '#dc2626', description: 'Min 10.8 lux backup', codeCitation: 'RA 9514' },
-  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [14.5, 19], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'lum-em', label: 'Emergency Light', type: 'custom', position: [21, 20.5], color: '#D64545', description: 'Min 10.8 lux backup', codeCitation: 'RA 9514' },
+  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [14.5, 19], color: '#2D9F6F', codeCitation: 'RA 9514' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { Upload, File, X, Check, Loader2, AlertCircle } from 'lucide-react'
+import { UploadSimple, File, XCircle, CheckCircle, CircleNotch, Warning } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
 
@@ -118,7 +119,7 @@ export function AssetUploader() {
       >
         {file ? (
           <div className="flex items-center justify-center gap-3">
-            <File className="h-8 w-8 text-primary" />
+            <SCIcon icon={File} size="xl" className="text-primary" />
             <div className="text-left">
               <p className="font-medium">{file.name}</p>
               <p className="text-sm text-muted-foreground">
@@ -129,12 +130,12 @@ export function AssetUploader() {
               onClick={() => { setFile(null); setSuccess(false) }}
               className="ml-4 p-1 hover:bg-muted rounded"
             >
-              <X className="h-4 w-4" />
+              <SCIcon icon={XCircle} size="sm" />
             </button>
           </div>
         ) : (
           <>
-            <Upload className="h-8 w-8 mx-auto mb-4 text-muted-foreground" />
+            <SCIcon icon={UploadSimple} size="xl" className="mx-auto mb-4 text-muted-foreground" />
             <p className="text-lg font-medium mb-1">
               Drop your .glb or .gltf file here
             </p>
@@ -219,7 +220,7 @@ export function AssetUploader() {
           {/* Error */}
           {error && (
             <div className="flex items-center gap-2 text-red-600">
-              <AlertCircle className="h-4 w-4" />
+              <SCIcon icon={Warning} size="sm" />
               <p className="text-sm">{error}</p>
             </div>
           )}
@@ -227,7 +228,7 @@ export function AssetUploader() {
           {/* Success */}
           {success && (
             <div className="flex items-center gap-2 text-green-600">
-              <Check className="h-4 w-4" />
+              <SCIcon icon={CheckCircle} size="sm" />
               <p className="text-sm">Asset uploaded successfully!</p>
             </div>
           )}
@@ -240,12 +241,12 @@ export function AssetUploader() {
           >
             {isUploading ? (
               <>
-                <Loader2 className="h-4 w-4 animate-spin" />
+                <SCIcon icon={CircleNotch} size="sm" className="animate-spin" />
                 Uploading...
               </>
             ) : (
               <>
-                <Upload className="h-4 w-4" />
+                <SCIcon icon={UploadSimple} size="sm" />
                 Upload Asset
               </>
             )}

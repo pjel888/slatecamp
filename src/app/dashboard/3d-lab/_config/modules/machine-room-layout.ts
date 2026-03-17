@@ -42,14 +42,14 @@ const PATHS: PathDef[] = [
     id: 'chilled-water',
     label: 'Chilled Water Supply/Return',
     points: [[5.5, 9], [11, 9], [22, 9], [23, 9]],
-    color: '#2563eb',
+    color: '#3B6B9C',
     width: 2,
   },
   {
     id: 'condenser-water',
     label: 'Condenser Water Circuit',
     points: [[5.5, 12], [22, 12]],
-    color: '#dc2626',
+    color: '#D64545',
     width: 2,
   },
 ]
@@ -83,7 +83,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [5.5, 3],
     size: [4, 3],
-    color: '#d97706',
+    color: '#D4951A',
     description: 'AHU with filter, coil, fan section',
     codeCitation: 'PMEC',
   },
@@ -94,7 +94,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [26, 3],
     size: [2, 2],
-    color: '#2563eb',
+    color: '#3B6B9C',
     description: 'CHWP — 0.6m clearance all around',
     codeCitation: 'PMEC',
   },
@@ -104,7 +104,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [29, 3],
     size: [2, 2],
-    color: '#2563eb',
+    color: '#3B6B9C',
     codeCitation: 'PMEC',
   },
   {
@@ -113,7 +113,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'custom',
     position: [26, 7],
     size: [2, 2],
-    color: '#dc2626',
+    color: '#D64545',
     codeCitation: 'PMEC',
   },
   // Expansion tank
@@ -126,8 +126,8 @@ const FIXTURES: FixtureDef[] = [
     codeCitation: 'PMEC',
   },
   // Fire extinguishers
-  { id: 'ext-1', label: 'CO₂ Extinguisher', type: 'extinguisher', position: [0.5, 9], color: '#dc2626', codeCitation: 'RA 9514' },
-  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [11, 22], color: '#16a34a', codeCitation: 'RA 9514' },
+  { id: 'ext-1', label: 'CO₂ Extinguisher', type: 'extinguisher', position: [0.5, 9], color: '#D64545', codeCitation: 'RA 9514' },
+  { id: 'exit-main', label: 'EXIT', type: 'exit', position: [11, 22], color: '#2D9F6F', codeCitation: 'RA 9514' },
 ]
 
 const PARAMETERS: ParameterDef[] = [

@@ -189,7 +189,7 @@ function geometry(
     type: 'box',
     position: [0, 0.005, cL / 4],
     args: [cW, 0.005, 0.005],
-    color: widthViolated ? '#dc2626' : '#16a34a',
+    color: widthViolated ? '#D64545' : '#2D9F6F',
   })
 
   // 5. Minimum width reference lines
@@ -231,7 +231,7 @@ function geometry(
       position: [0, 0.008, 0],
       rotation: [-Math.PI / 2, 0, 0],
       args: [turnRadius - 0.01, turnRadius],
-      color: turnViolated ? '#dc2626' : '#16a34a',
+      color: turnViolated ? '#D64545' : '#2D9F6F',
     })
   }
 
@@ -290,7 +290,7 @@ function geometry(
       type: 'box',
       position: [side * dW / 2, doorFrameH / 2, cL / 2],
       args: [0.05, doorFrameH, 0.05],
-      color: dW < 0.9 ? '#dc2626' : '#374151',
+      color: dW < 0.9 ? '#D64545' : '#374151',
     })
   }
 

@@ -45,7 +45,7 @@ const PATHS: PathDef[] = [
     id: 'property-line',
     label: 'Property Boundary',
     points: [[0, 0], [24, 0], [24, 20], [0, 20], [0, 0]],
-    color: '#f59e0b',
+    color: '#D4951A',
     width: 2,
   },
 ]
@@ -57,7 +57,7 @@ const FIXTURES: FixtureDef[] = [
     type: 'door',
     position: [12, 7],
     size: [1.5, 0.2],
-    color: '#16a34a',
+    color: '#2D9F6F',
     description: 'Main building entrance facing front setback',
     codeCitation: 'PD 1096',
   },
@@ -76,7 +76,7 @@ const FIXTURES: FixtureDef[] = [
     label: 'Rear Exit',
     type: 'exit',
     position: [12, 15],
-    color: '#16a34a',
+    color: '#2D9F6F',
     codeCitation: 'RA 9514',
   },
 ]

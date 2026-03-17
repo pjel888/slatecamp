@@ -499,6 +499,13 @@ The final score maps to `user_global_stats.global_readiness_score` (0.0–100.0)
 
 ---
 
+> **Campfire Rebrand Note:** The following IP names have different student-facing labels in the UI:
+> - Blindspot Protocol™ → "Focus Review" in student UI
+> - Endurance Cycle™ → "Extended Practice" in student UI
+> - Proof Simulation™ → "Full Exam Simulation" in student UI
+> - "drill" → "practice" / "session" in student UI
+> Internal docs retain the IP/trademark names for legal purposes.
+
 ### 2. Blindspot Protocol™ — Nightly Automated Weakness Targeting
 
 **Tables:** `user_node_mastery`, `taxonomy_tree`, `quiz_sessions`

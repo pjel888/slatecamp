@@ -28,15 +28,15 @@ export const SlateCampLogo = ({
   const isInverted = variant === 'inverted'
 
   const slateClass = cn(
-    isInverted ? 'text-slatecamp-paper' : 'text-slatecamp-ink-main',
+    isInverted ? 'text-white' : 'text-text-primary',
   )
 
   const campClass = cn(
     isDefault || isInverted
       ? isInverted
         ? 'text-zinc-100'
-        : 'text-blue-700'
-      : 'text-slatecamp-ink-main',
+        : 'text-[#2F5A85]'
+      : 'text-text-primary',
   )
 
   return (
