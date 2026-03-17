@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { siteConfig } from '@/lib/constants/site'
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
 import { TooltipProvider } from '@/components/ui/tooltip'
@@ -7,16 +6,6 @@ import { DemoShell } from '@/components/dev/demo-shell'
 import { NavigationProgress } from '@/components/shared/NavigationProgress'
 import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
-
-const geistSans = Geist({
-  variable: '--font-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-mono',
-  subsets: ['latin'],
-})
 
 const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
@@ -50,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className='font-sans antialiased'
       >
         <ThemeProvider>
           <NavigationProgress />
