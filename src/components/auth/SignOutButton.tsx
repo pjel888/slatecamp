@@ -15,7 +15,7 @@ export function SignOutButton({ className }: { className?: string }) {
     <button
       onClick={handleSignOut}
       className={cn(
-        "flex items-center gap-2 text-sm text-muted-foreground hover:text-red-600 transition-colors",
+        "flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-900 transition-colors",
         className
       )}
     >

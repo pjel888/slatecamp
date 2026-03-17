@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AlertCircle } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 
@@ -39,9 +40,10 @@ export function RegisterForm() {
       />
 
       {error && (
-        <p className="text-center text-sm text-color-signal-red" role="alert">
-          {error}
-        </p>
+        <div className="flex items-start gap-2 text-sm text-red-600" role="alert">
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+          <span>{error}</span>
+        </div>
       )}
 
       <p className="text-center text-[12px] text-color-graphite">
