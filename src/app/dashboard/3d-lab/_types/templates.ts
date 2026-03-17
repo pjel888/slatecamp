@@ -276,6 +276,8 @@ export interface AnimatedSequenceConfig {
   camera?: CameraConfig
   /** Whether the sequence loops */
   loop?: boolean
+  /** Auto-play interval in milliseconds (default 1500) */
+  autoPlaySpeed?: number
   scale?: number
 }
 
