@@ -302,7 +302,7 @@ export const Sidebar = ({
                 <Zap
                   className={cn(
                     ICON_SIZE,
-                    tier === 'camp' ? 'text-blue-600' : 'text-indigo-600',
+                    tier === 'camp' ? 'text-blue-600' : 'text-blue-600',
                   )}
                   strokeWidth={1.5}
                 />
