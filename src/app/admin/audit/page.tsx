@@ -12,7 +12,7 @@ export default async function AdminAuditPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Audit Log</h1>
+        <h1 className="text-xl font-semibold">Audit Log</h1>
         <p className="text-muted-foreground">View all admin actions and changes (Super Admin only)</p>
       </div>
 

@@ -100,7 +100,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
           filteredAssets.map((asset) => (
             <div
               key={asset.id}
-              className="rounded-lg border border-border bg-card hover:bg-muted/50 transition-colors"
+              className="rounded-md border border-border bg-card hover:bg-muted/50 transition-colors"
             >
               {/* Thumbnail */}
               <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">

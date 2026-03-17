@@ -124,10 +124,10 @@ export function SMEReviewQueue() {
             return (
               <div
                 key={`${item.type}-${item.id}`}
-                className="rounded-lg border border-border bg-card p-4"
+                className="rounded-md border border-border bg-card p-4"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-muted">
+                  <div className="p-2 rounded-md bg-muted">
                     <Icon className="h-5 w-5" />
                   </div>
                   

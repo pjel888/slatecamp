@@ -98,7 +98,7 @@ export function AdminWikiEditor({
   return (
     <div className="flex h-full gap-4">
       {/* Main Editor */}
-      <div className="flex-1 flex flex-col rounded-lg border border-border bg-background">
+      <div className="flex-1 flex flex-col rounded-md border border-border bg-background">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-border px-4 py-3">
           <Link
@@ -153,7 +153,7 @@ export function AdminWikiEditor({
       </div>
 
       {/* Side Panel for Metadata */}
-      <div className="w-72 shrink-0 rounded-lg border border-border bg-background p-4 space-y-6">
+      <div className="w-72 shrink-0 rounded-md border border-border bg-background p-4 space-y-6">
         <div>
           <h3 className="font-semibold mb-4">Article Settings</h3>
           

@@ -27,7 +27,7 @@ export default async function AdminTaxonomyPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Taxonomy Editor</h1>
+        <h1 className="text-xl font-semibold">Taxonomy Editor</h1>
         <p className="text-muted-foreground">Manage the discipline → subject → topic hierarchy</p>
       </div>
 

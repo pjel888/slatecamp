@@ -192,7 +192,7 @@ export function QuestionImporter() {
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
         className={cn(
-          "border-2 border-dashed rounded-lg p-8 text-center transition-colors",
+          "border-2 border-dashed rounded-md p-8 text-center transition-colors",
           file 
             ? "border-primary bg-primary/5" 
             : "border-border hover:border-muted-foreground"
@@ -254,7 +254,7 @@ export function QuestionImporter() {
       {/* Results */}
       {result && (
         <div className={cn(
-          "rounded-lg border p-4",
+          "rounded-md border p-4",
           result.success && result.validCount > 0 
             ? "border-green-200 bg-green-50 dark:border-green-800 dark:bg-green-950"
             : "border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-950"

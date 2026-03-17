@@ -259,7 +259,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
         </button>
       </div>
 
-      <div className="rounded-lg border border-border bg-card">
+      <div className="rounded-md border border-border bg-card">
         {nodes.length === 0 ? (
           <div className="p-8 text-center text-muted-foreground">
             No taxonomy nodes found

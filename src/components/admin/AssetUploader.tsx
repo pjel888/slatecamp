@@ -110,7 +110,7 @@ export function AssetUploader() {
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
         className={cn(
-          "border-2 border-dashed rounded-lg p-8 text-center transition-colors",
+          "border-2 border-dashed rounded-md p-8 text-center transition-colors",
           file 
             ? "border-primary bg-primary/5" 
             : "border-border hover:border-muted-foreground"

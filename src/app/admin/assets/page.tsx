@@ -25,13 +25,13 @@ export default async function AdminAssetsPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">3D Asset Manager</h1>
+        <h1 className="text-xl font-semibold">3D Asset Manager</h1>
         <p className="text-muted-foreground">Upload and manage 3D model files</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1">
-          <div className="rounded-lg border p-6">
+          <div className="rounded-md border p-6">
             <h2 className="text-lg font-semibold mb-4">Upload New Asset</h2>
             <AssetUploader />
           </div>

@@ -38,11 +38,11 @@ export default function AdminLandingPage() {
           <Link href="/" className="text-xl font-bold tracking-tighter text-zinc-900">
             SLATECAMP <span className="text-zinc-400">ADMIN</span>
           </Link>
-          <h1 className="mt-6 text-2xl font-semibold text-zinc-900">Staff Portal</h1>
+          <h1 className="mt-6 text-xl font-semibold text-zinc-900">Staff Portal</h1>
           <p className="mt-2 text-sm text-zinc-500">Authorized personnel only.</p>
         </div>
 
-        <div className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
+        <div className="rounded-md border border-zinc-200 bg-white p-8 shadow-sm">
           <SignInWithGoogleButton
             onClick={handleAdminLogin}
             disabled={loading}

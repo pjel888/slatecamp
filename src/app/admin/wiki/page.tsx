@@ -24,7 +24,7 @@ export default async function AdminWikiPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Wiki Content Manager</h1>
+        <h1 className="text-xl font-semibold">Wiki Content Manager</h1>
         <p className="text-muted-foreground">Manage knowledge base articles</p>
       </div>
 

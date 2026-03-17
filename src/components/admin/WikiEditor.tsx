@@ -176,7 +176,7 @@ export function WikiEditor({ article }: WikiEditorProps) {
           <button
             onClick={handleSave}
             disabled={isPending}
-            className="flex items-center gap-2 px-6 py-2 bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900 rounded-full text-sm font-semibold hover:opacity-90 transition-all disabled:opacity-50 shadow-lg shadow-zinc-200 dark:shadow-none"
+            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors disabled:opacity-50"
           >
             {isPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
             {article?.id ? 'Save Changes' : 'Publish Article'}
@@ -190,12 +190,12 @@ export function WikiEditor({ article }: WikiEditorProps) {
           placeholder="Article Title..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full text-5xl font-extrabold bg-transparent border-none focus:outline-none placeholder:text-zinc-200 dark:placeholder:text-zinc-800 tracking-tight"
+          className="w-full text-xl font-semibold bg-transparent border-none focus:outline-none placeholder:text-zinc-300 dark:placeholder:text-zinc-700 tracking-tight"
         />
         <div className="h-px bg-zinc-100 dark:bg-zinc-800 w-full" />
       </div>
 
-      <div className="border border-zinc-200 dark:border-zinc-800 rounded-2xl bg-card shadow-sm overflow-hidden ring-1 ring-zinc-950/5">
+      <div className="border border-zinc-200 dark:border-zinc-800 rounded-md bg-card overflow-hidden">
         <EditorToolbar editor={editor} />
         <EditorContent editor={editor} />
       </div>

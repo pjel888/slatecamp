@@ -28,7 +28,7 @@ export default async function AdminQuestionsPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Question Bank</h1>
+        <h1 className="text-xl font-semibold">Question Bank</h1>
         <p className="text-muted-foreground">Manage your exam questions</p>
       </div>
 
