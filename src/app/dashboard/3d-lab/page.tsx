@@ -10,10 +10,14 @@ import {
   type TreeNode,
   type ModelId,
 } from "@/components/3d/Workspace";
+import { MODULE_REGISTRY, SUBJECT_AREAS } from "./_config/moduleRegistry";
+import { ModuleGallery } from "./_components/ModuleGallery";
 
 export const metadata = { title: "3D Lab" };
 
-const MOCK_TREE: TreeNode[] = [
+// ─── Legacy Tree (backwards compat for tree sidebar) ───────────────────────
+
+const LEGACY_TREE: TreeNode[] = [
   {
     id: "practice",
     label: "Architectural Practice",
@@ -46,45 +50,6 @@ const MOCK_TREE: TreeNode[] = [
           },
         ],
       },
-      {
-        id: "greek",
-        label: "Greek",
-        children: [
-          {
-            id: "parthenon",
-            label: "Parthenon",
-            modelId: "greek-parthenon",
-          },
-        ],
-      },
-      {
-        id: "roman",
-        label: "Roman",
-        children: [
-          {
-            id: "pantheon",
-            label: "Pantheon",
-            modelId: "roman-pantheon",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "elements",
-    label: "Building Elements",
-    children: [
-      {
-        id: "columns",
-        label: "Columns",
-        children: [
-          {
-            id: "corinthian-capital",
-            label: "Corinthian Capital",
-            modelId: "corinthian-capital",
-          },
-        ],
-      },
     ],
   },
   {
@@ -93,12 +58,48 @@ const MOCK_TREE: TreeNode[] = [
     children: [
       {
         id: "nbcp-envelope",
-        label: "NBCP Envelope Generator \u2746",
+        label: "NBCP Envelope Generator ✦",
         modelId: "nbcp-envelope",
       },
     ],
   },
 ];
+
+/** Build tree nodes from the module registry, merging with legacy entries */
+function buildFullTree(): TreeNode[] {
+  const tree: TreeNode[] = [...LEGACY_TREE];
+
+  // Group new template modules by subject
+  const builtOrReadyModules = MODULE_REGISTRY.filter(
+    (m) =>
+      (m.status === "built" || m.status === "ready") &&
+      // Exclude modules already in legacy tree
+      !["far-calculator", "nbcp-envelope"].includes(m.id) &&
+      m.id !== "classical-orders"
+  );
+
+  const bySubject = new Map<string, TreeNode[]>();
+  for (const m of builtOrReadyModules) {
+    const subjectLabel =
+      SUBJECT_AREAS.find((s) => s.id === m.subject)?.label ?? m.subject;
+    if (!bySubject.has(subjectLabel)) bySubject.set(subjectLabel, []);
+    bySubject.get(subjectLabel)!.push({
+      id: m.id,
+      label: m.title,
+      modelId: m.id,
+    });
+  }
+
+  for (const [subject, children] of bySubject) {
+    tree.push({
+      id: `subject-${subject}`,
+      label: subject,
+      children,
+    });
+  }
+
+  return tree;
+}
 
 function getDefaultModelId(tree: TreeNode[]): ModelId {
   for (const node of tree) {
@@ -146,12 +147,24 @@ export default async function ThreeDLabPage({
 
   const params = await searchParams;
   const modelFromUrl = params.model as ModelId | undefined;
-  const initialModelId = modelFromUrl ?? getDefaultModelId(MOCK_TREE);
+
+  // No model param → show gallery
+  if (!modelFromUrl) {
+    return (
+      <div className="h-full">
+        <ModuleGallery basePath={ROUTES.THREE_D_LAB} />
+      </div>
+    );
+  }
+
+  // Model param present → render 3D viewport with tree nav
+  const fullTree = buildFullTree();
+  const initialModelId = modelFromUrl ?? getDefaultModelId(fullTree);
 
   return (
     <div className="h-full">
       <ThreeDLabClient
-        tree={MOCK_TREE}
+        tree={fullTree}
         initialModelId={initialModelId}
         basePath={ROUTES.THREE_D_LAB}
       />
