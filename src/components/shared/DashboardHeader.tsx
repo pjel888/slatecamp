@@ -2,7 +2,6 @@
 
 import { useMemo } from 'react'
 import { usePathname } from 'next/navigation'
-import { cn } from '@/lib/utils'
 import { getPageTitle } from '@/lib/routes'
 
 export const DashboardHeader = () => {
@@ -14,26 +13,10 @@ export const DashboardHeader = () => {
   }, [pathname])
 
   return (
-    <header
-      className={cn(
-        'border-b border-slatecamp-border ',
-        'h-16',
-        'flex flex-row',
-        'z-20',
-        'bg-slate-50',
-      )}
-    >
-      <div className='w-full flex max-w-full items-center justify-between gap-3'>
-        <div className='flex flex-col'>
-          <p className='pl-2 text-xl font-semibold tracking-tight text-slatecamp-ink-subtle'>
-            {title}
-          </p>
-        </div>
-
-        <div className='flex items-center gap-2'>
-          {/* header actions / profile slot */}
-        </div>
-      </div>
+    <header className='flex items-center border-b border-border bg-white px-6 py-3'>
+      <h1 className='text-xl font-semibold text-gray-900 tracking-tight'>
+        {title}
+      </h1>
     </header>
   )
 }
