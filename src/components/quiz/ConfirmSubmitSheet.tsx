@@ -73,9 +73,9 @@ export function ConfirmSubmitSheet({
             aria-modal='true'
             aria-label='Submit session'
           >
-            <div className='w-full max-w-[420px] bg-white rounded-md border border-zinc-200 shadow-lg'>
+            <div className='w-full max-w-[420px] bg-white rounded-lg border border-border shadow-lg'>
               {/* Header */}
-              <div className='flex items-center justify-between px-6 py-4 border-b border-zinc-100'>
+              <div className='flex items-center justify-between px-6 py-4 border-b border-border'>
                 <h2 className='text-sm font-semibold text-zinc-900 tracking-tight'>
                   Submit Session?
                 </h2>
@@ -146,7 +146,7 @@ export function ConfirmSubmitSheet({
                     ref={confirmRef}
                     onClick={onConfirm}
                     disabled={isSaving}
-                    className='w-full h-10 rounded-md bg-primary text-white font-semibold text-sm hover:bg-[#1535A8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
+                    className='w-full h-10 rounded-sm bg-primary text-white font-semibold text-sm hover:bg-[#1535A8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
                   >
                     {isSaving
                       ? 'Submitting...'
@@ -154,7 +154,7 @@ export function ConfirmSubmitSheet({
                   </button>
                   <button
                     onClick={onCancel}
-                    className='w-full h-9 rounded-md border border-zinc-200 text-zinc-600 font-medium text-sm hover:bg-zinc-50 transition-colors'
+                    className='w-full h-9 rounded-sm border border-border text-[#4A5568] font-medium text-sm hover:bg-[#EEF2FC]/50 transition-colors'
                   >
                     Keep Reviewing
                   </button>

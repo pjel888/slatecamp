@@ -77,13 +77,6 @@ async function PacingInsightsSection() {
 export default function AnalyticsPage() {
   return (
     <div className="flex flex-col gap-2">
-      <header className="mb-2">
-        <h1 className="text-xl font-bold text-zinc-900 tracking-tight">Analytics</h1>
-        <p className="text-xs text-zinc-500 mt-0.5">
-          Understand your studying. Know what to change.
-        </p>
-      </header>
-
       {/* Summary Metrics Bar */}
       <Suspense fallback={<ChartSkeleton height="h-[64px]" />}>
         <SummarySection />

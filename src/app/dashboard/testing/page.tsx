@@ -70,7 +70,7 @@ export default async function TestingPage({ searchParams }: PageProps) {
   const disciplineName = (stats as any).disciplines?.name || 'Architecture'
 
   return (
-    <div className="w-full h-full bg-zinc-50">
+    <div className="w-full h-full bg-[#F8F7F5]">
       <CampDashboard 
         initialSession={existingSession}
         disciplineId={stats.current_discipline_id!}

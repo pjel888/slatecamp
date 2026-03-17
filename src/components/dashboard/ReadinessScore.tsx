@@ -46,7 +46,7 @@ export const ReadinessScore = ({ score, previousScore }: ReadinessScoreProps) =>
         <div className='flex flex-col'>
           <span
             className={cn(
-              'font-extrabold tracking-tight',
+              'font-extrabold tracking-tight tabular-nums',
               'text-5xl sm:text-6xl',
               getReadinessColorClass(clamped),
             )}

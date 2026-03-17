@@ -46,10 +46,10 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
           <SCIcon icon={Icon} size='sm' className='text-white' />
         </div>
         <div className='flex-1 min-w-0'>
-          <p className='text-primary/20 text-xs font-bold uppercase tracking-widest leading-none mb-1.5'>
+          <p className='font-dm-mono text-[11px] font-medium text-white/50 uppercase tracking-[0.2em] leading-none mb-1.5'>
             {config.label}
           </p>
-          <h2 className='text-white text-lg font-semibold leading-tight tracking-tight'>
+          <h2 className='font-display text-white text-xl font-extrabold leading-tight tracking-tight'>
             {catalyst.title}
           </h2>
           <p className='text-primary/80 text-sm mt-1.5 leading-relaxed'>
@@ -99,7 +99,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
           href={catalyst.href}
           className={cn(
             'flex items-center gap-2 bg-white text-primary font-bold text-sm',
-            'px-4 py-2 rounded-md',
+            'px-4 py-2 rounded-sm',
             'hover:bg-[#EEF2FC] transition-colors duration-150',
             'group-hover:shadow-md',
           )}

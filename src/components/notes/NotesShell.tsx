@@ -1,9 +1,10 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { FileText } from '@phosphor-icons/react'
+import { FileText, Notepad } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { getNotesList, getNoteFolders, getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes'
+import { cn } from '@/lib/utils'
+import { getNotesList, getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
 import { NotesEditor } from '@/components/notes/NotesEditor'
@@ -41,6 +42,39 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
   const [pendingContent, setPendingContent] = useState<Record<string, unknown> | null>(null)
   const debounceRef = useRef<NodeJS.Timeout | null>(null)
   const titleInputRef = useRef<HTMLInputElement>(null)
+
+  // Panel collapse states — persisted in localStorage
+  const [navCollapsed, setNavCollapsed] = useState(false)
+  const [listCollapsed, setListCollapsed] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.getItem('notes-nav-collapsed') === 'true') setNavCollapsed(true)
+    if (localStorage.getItem('notes-list-collapsed') === 'true') setListCollapsed(true)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('notes-nav-collapsed', String(navCollapsed))
+  }, [navCollapsed])
+
+  useEffect(() => {
+    localStorage.setItem('notes-list-collapsed', String(listCollapsed))
+  }, [listCollapsed])
+
+  // Keyboard shortcut: Ctrl/Cmd + \ to toggle nav, Ctrl/Cmd + Shift + \ to toggle list
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === '\\') {
+        e.preventDefault()
+        if (e.shiftKey) {
+          setListCollapsed((prev) => !prev)
+        } else {
+          setNavCollapsed((prev) => !prev)
+        }
+      }
+    }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }, [])
 
   // Refresh list when filter changes
   useEffect(() => {
@@ -115,16 +149,18 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
   } : {}
 
   return (
-    <div className="flex h-full w-full overflow-hidden bg-white">
-      {/* Pane 1: Navigator */}
+    <div className="flex h-full w-full overflow-hidden bg-[#F8F7F5]">
+      {/* Pane 1: Navigator (collapsible) */}
       <NotesNavigator
         folders={folders}
         filter={filter}
         onFilterChange={setFilter}
         onFoldersChange={setFolders}
+        collapsed={navCollapsed}
+        onToggle={() => setNavCollapsed((prev) => !prev)}
       />
 
-      {/* Pane 2: Note List */}
+      {/* Pane 2: Note List (collapsible) */}
       <NotesList
         notes={displayed}
         selectedId={selectedId}
@@ -134,6 +170,8 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
         onPin={handlePin}
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
+        collapsed={listCollapsed}
+        onToggle={() => setListCollapsed((prev) => !prev)}
       />
 
       {/* Pane 3: Editor */}
@@ -141,13 +179,13 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
         {currentNote ? (
           <div className="flex h-full flex-col">
             {/* Editor header */}
-            <div className="shrink-0 border-b border-border/50 px-8 pt-6 pb-3">
+            <div className="shrink-0 border-b border-[#D4DAE3]/50 px-8 pt-6 pb-3">
               <div className="mx-auto max-w-3xl">
                 <div className="mb-2 flex items-center justify-between">
                   {/* Context anchors */}
                   <ContextBadge anchor={anchor} />
-                  <span className={cn('text-[11px] text-zinc-400', isSaving && 'animate-pulse')}>
-                    {isSaving ? 'Saving…' : new Date(currentNote.updated_at).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
+                  <span className={cn('text-[11px] text-[#8896A7]', isSaving && 'animate-pulse')}>
+                    {isSaving ? 'Saving...' : new Date(currentNote.updated_at).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
                   </span>
                 </div>
                 <input
@@ -156,7 +194,7 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
                   value={pendingTitle ?? currentNote.title}
                   onChange={(e) => setPendingTitle(e.target.value)}
                   placeholder="Untitled Note"
-                  className="w-full border-none bg-transparent p-0 text-xl font-bold text-zinc-900 placeholder:text-zinc-300 focus:outline-none focus:ring-0"
+                  className="w-full border-none bg-transparent p-0 text-xl font-bold text-[#1A2332] placeholder:text-[#D4DAE3] focus:outline-none focus:ring-0"
                 />
               </div>
             </div>
@@ -168,7 +206,7 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
                   content={currentNote.content}
                   onChange={(c) => setPendingContent(c)}
                   userId={userId}
-                  placeholder="Write… select text to highlight and format"
+                  placeholder="Write... select text to highlight and format"
                   className="min-h-full"
                   toolbarWrapperClassName="sticky top-0 z-10"
                 />
@@ -176,17 +214,17 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
             </div>
           </div>
         ) : (
-          <div className="flex h-full flex-col items-center justify-center gap-3 text-zinc-200">
-            <SCIcon icon={FileText} size="2xl" />
-            <p className="text-sm font-medium text-zinc-400">Select a note or create one</p>
+          <div className="flex h-full flex-col items-center justify-center gap-3 text-center px-8">
+            <SCIcon icon={Notepad} size="2xl" weight="duotone" className="text-primary opacity-20 mb-1" />
+            <p className="text-base font-medium text-[#1A2332]">
+              Your workspace is ready
+            </p>
+            <p className="text-sm text-[#8896A7] mt-0.5 max-w-[280px]">
+              Select a note from the list, or create a new one to start capturing ideas.
+            </p>
           </div>
         )}
       </main>
     </div>
   )
-}
-
-// cn helper inline to avoid extra import
-function cn(...classes: (string | boolean | undefined)[]) {
-  return classes.filter(Boolean).join(' ')
 }

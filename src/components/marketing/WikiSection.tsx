@@ -55,10 +55,10 @@ const WikiMockup = () => (
 /* ── Wiki Section ── */
 
 export const WikiSection = () => (
-  <FeatureSectionLayout flip>
+  <FeatureSectionLayout flip amber>
     {/* Copy — right (visually right due to flip) */}
     <div>
-      <SectionEyebrow label='Wiki' />
+      <SectionEyebrow label='Wiki' amber />
 
       <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
         Every code provision, every principle.
@@ -68,7 +68,7 @@ export const WikiSection = () => (
         Cited like a reference.
       </h2>
 
-      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
+      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-black/60'>
         No more hunting through PDFs. The SlateCamp Wiki maps every ALE
         topic to its source — PD 1096, RA 9266, NBCP, and more — with
         your personal notes workspace alongside.
@@ -76,10 +76,10 @@ export const WikiSection = () => (
 
       {/* Feature chips */}
       <div className='mt-5 flex flex-wrap gap-2'>
-        <FeaturePill variant='green'>All ALE subjects covered</FeaturePill>
-        <FeaturePill variant='green'>Linked to questions</FeaturePill>
-        <FeaturePill variant='green'>Personal notes workspace</FeaturePill>
-        <FeaturePill variant='green'>PD 1096 · RA 9266 · NBCP</FeaturePill>
+        <FeaturePill variant='on-amber'>All ALE subjects covered</FeaturePill>
+        <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
+        <FeaturePill variant='on-amber'>Personal notes workspace</FeaturePill>
+        <FeaturePill variant='on-amber'>PD 1096 · RA 9266 · NBCP</FeaturePill>
       </div>
 
       {/* Check items */}
@@ -87,12 +87,12 @@ export const WikiSection = () => (
         <FeatureCheckItem
           title='Linked directly to quiz questions'
           description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
-          accentColor='#1B7A3C'
+          accentColor='#111111'
         />
         <FeatureCheckItem
           title='Your notes, your workspace'
           description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
-          accentColor='#1B7A3C'
+          accentColor='#111111'
         />
       </div>
     </div>

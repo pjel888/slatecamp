@@ -19,7 +19,7 @@ export function QuizOverlay({ children, className }: QuizOverlayProps) {
   return (
     <div
       className={cn(
-        'fixed inset-0 z-50 flex flex-col bg-[#FAFAF9] overflow-hidden',
+        'fixed inset-0 z-50 flex flex-col bg-[#F5F7FA] overflow-hidden',
         className,
       )}
       role="main"

@@ -2,6 +2,17 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 
+const SUBJECT_AREAS = [
+  'Architectural Design and Site Planning',
+  'Architectural Practice',
+  'Building Materials and Construction',
+  'Building Utilities',
+  'History of Architecture',
+  'Structural Design',
+  'Theory and Principles of Planning',
+  'Theory of Architecture',
+] as const
+
 export type CatalystType = 'resume' | 'drill' | 'warmup'
 
 export interface DailyCatalyst {
@@ -29,6 +40,9 @@ export interface DashboardData {
   recentActivities: RecentActivity[]
   totalAnswered: number
   topicsMastered: number
+  subjectMastery: { name: string; mastery: number }[]
+  studyDaysCount: number
+  previousReadinessScore: number | null
 }
 
 export async function getDashboardData(): Promise<DashboardData> {
@@ -54,6 +68,9 @@ export async function getDashboardData(): Promise<DashboardData> {
     notesResult,
     weakTopicResult,
     globalStatsResult,
+    subjectMasteryResult,
+    studyDaysResult,
+    readinessSnapshotsResult,
   ] = await Promise.allSettled([
     supabase
       .from('quiz_sessions')
@@ -105,6 +122,23 @@ export async function getDashboardData(): Promise<DashboardData> {
       .select('global_readiness_score')
       .eq('user_id', user.id)
       .maybeSingle(),
+
+    supabase
+      .from('user_node_mastery')
+      .select('current_mastery_weight, taxonomy_tree(subject_area)')
+      .eq('user_id', user.id),
+
+    supabase
+      .from('user_interactions')
+      .select('interaction_timestamp')
+      .eq('user_id', user.id),
+
+    supabase
+      .from('readiness_score_snapshots')
+      .select('score')
+      .eq('user_id', user.id)
+      .order('computed_at', { ascending: false })
+      .limit(2),
   ])
 
   const incomplete =
@@ -125,6 +159,50 @@ export async function getDashboardData(): Promise<DashboardData> {
     globalStatsResult.status === 'fulfilled'
       ? globalStatsResult.value.data
       : null
+
+  const masteryData =
+    subjectMasteryResult.status === 'fulfilled' ? subjectMasteryResult.value.data : null
+  const studyDaysData =
+    studyDaysResult.status === 'fulfilled' ? studyDaysResult.value.data : null
+  const snapshotsData =
+    readinessSnapshotsResult.status === 'fulfilled'
+      ? readinessSnapshotsResult.value.data
+      : null
+
+  // Aggregate mastery weights by subject area
+  const masteryBySubject = new Map<string, number[]>()
+  SUBJECT_AREAS.forEach(s => masteryBySubject.set(s, []))
+
+  if (masteryData) {
+    for (const entry of masteryData) {
+      const area = (entry.taxonomy_tree as { subject_area: string } | null)?.subject_area
+      if (area && masteryBySubject.has(area)) {
+        masteryBySubject.get(area)!.push(entry.current_mastery_weight)
+      }
+    }
+  }
+
+  const subjectMastery = SUBJECT_AREAS.map(name => {
+    const weights = masteryBySubject.get(name) ?? []
+    const mastery =
+      weights.length > 0
+        ? Math.round((weights.reduce((a, b) => a + b, 0) / weights.length) * 100)
+        : 0
+    return { name, mastery }
+  })
+
+  // Count distinct calendar days from interaction timestamps
+  const studyDaysCount = studyDaysData
+    ? new Set(
+        studyDaysData.map((row: { interaction_timestamp: string }) =>
+          new Date(row.interaction_timestamp).toISOString().slice(0, 10),
+        ),
+      ).size
+    : 0
+
+  // Second-most-recent snapshot is the "previous" score
+  const previousReadinessScore: number | null =
+    snapshotsData && snapshotsData.length >= 2 ? (snapshotsData[1].score as number) : null
 
   const topicsMastered = mastery
     ? mastery.filter((m: { current_mastery_weight: number }) => m.current_mastery_weight >= 0.6).length
@@ -205,6 +283,9 @@ export async function getDashboardData(): Promise<DashboardData> {
     recentActivities: activities,
     totalAnswered,
     topicsMastered,
+    subjectMastery,
+    studyDaysCount,
+    previousReadinessScore,
   }
 }
 
@@ -223,6 +304,9 @@ function emptyDashboard(userName: string): DashboardData {
     recentActivities: [],
     totalAnswered: 0,
     topicsMastered: 0,
+    subjectMastery: SUBJECT_AREAS.map(name => ({ name, mastery: 0 })),
+    studyDaysCount: 0,
+    previousReadinessScore: null,
   }
 }
 

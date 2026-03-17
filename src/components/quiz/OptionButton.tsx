@@ -39,27 +39,27 @@ export function OptionButton({
       aria-pressed={state === 'selected'}
       aria-label={`Option ${letter}: ${text}${state === 'struck' ? ' (eliminated)' : ''}`}
       className={cn(
-        // Base — 44px min height per WCAG, flex layout
-        'relative flex items-center gap-4 w-full min-h-[52px] p-4 rounded-sm border text-left',
+        // Base — 48px min height per WCAG, flex layout
+        'relative flex items-center gap-4 w-full min-h-[48px] p-4 rounded-md border text-left',
         'transition-all duration-150 outline-none motion-reduce:transition-none',
         'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
 
         // Default
         state === 'default' && [
-          'bg-white border-zinc-200 text-zinc-800',
-          'hover:border-zinc-300 hover:bg-zinc-50',
+          'bg-white border-border text-[#1A2332]',
+          'hover:border-primary/20 hover:bg-[#EEF2FC]/50',
           'cursor-pointer',
         ],
 
-        // Selected (pre-check)
+        // Selected (pre-check) — calm cobalt tint, not full fill
         state === 'selected' && [
-          'bg-primary border-primary text-white',
-          'cursor-pointer shadow-sm scale-[1.01]',
+          'bg-[#EEF2FC] border-primary text-[#1A2332]',
+          'cursor-pointer',
         ],
 
         // Struck through (pre-check)
         state === 'struck' && [
-          'bg-white border-zinc-200 text-zinc-400 opacity-50',
+          'bg-white border-border text-[#8896A7] opacity-50',
           'cursor-pointer hover:opacity-60',
         ],
 
@@ -97,9 +97,9 @@ export function OptionButton({
         aria-hidden
         className={cn(
           'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[11px] font-black border transition-colors',
-          state === 'default'  && 'bg-zinc-50 border-zinc-200 text-zinc-400',
-          state === 'selected' && 'bg-white/20 border-white/30 text-white',
-          state === 'struck'   && 'bg-zinc-50 border-zinc-200 text-zinc-300',
+          state === 'default'  && 'bg-zinc-50 border-border text-[#8896A7]',
+          state === 'selected' && 'bg-primary/10 border-primary/30 text-primary',
+          state === 'struck'   && 'bg-zinc-50 border-border text-[#8896A7]',
           state === 'correct'  && 'bg-[#2D9F6F] border-[#2D9F6F] text-white',
           state === 'wrong'    && 'bg-[#D64545] border-[#D64545] text-white',
           state === 'faded'    && 'bg-zinc-50 border-zinc-100 text-zinc-200',
@@ -122,8 +122,8 @@ export function OptionButton({
           className={cn(
             'shrink-0 p-1.5 rounded-sm transition-colors',
             state === 'selected'
-              ? 'text-white/50 hover:text-white hover:bg-white/10'
-              : 'text-zinc-300 hover:text-zinc-500 hover:bg-zinc-100',
+              ? 'text-primary/40 hover:text-primary hover:bg-primary/10'
+              : 'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#EEF2FC]/50',
           )}
         >
           <SCIcon icon={Backspace} size="sm" />
@@ -136,7 +136,7 @@ export function OptionButton({
           onClick={(e) => { e.stopPropagation(); onStrike(e) }}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); onStrike(e) } }}
           aria-label="Restore this option"
-          className="shrink-0 p-1.5 rounded-sm text-zinc-300 hover:text-zinc-500 hover:bg-zinc-100 transition-colors"
+          className="shrink-0 p-1.5 rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-[#EEF2FC]/50 transition-colors"
         >
           <SCIcon icon={Backspace} size="sm" />
         </span>

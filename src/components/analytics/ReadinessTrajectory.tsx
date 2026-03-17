@@ -28,12 +28,12 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       <CardHeader className="p-2 pt-1">
         <div className="flex items-start justify-between">
           <div>
-            <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>
+            <CardTitle className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">
               Readiness Trajectory
             </CardTitle>
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
-                'text-xl font-bold tracking-tighter font-mono tabular-nums',
+                'text-xl font-extrabold tracking-tight tabular-nums',
                 clamped < 50 ? 'text-red-600' : clamped < 75 ? 'text-amber-600' : 'text-green-600'
               )}>
                 {clamped}%

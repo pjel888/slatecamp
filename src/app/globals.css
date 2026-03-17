@@ -320,6 +320,21 @@
   .text-balance {
     text-wrap: balance;
   }
+  /* Numeric data — always Inter, always tabular */
+  .num {
+    font-family: 'Inter', var(--font-sans, sans-serif) !important;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Global tabular-nums safety net */
+[data-num],
+.tabular-nums,
+time,
+.stat-value,
+.score,
+.percentage {
+  font-variant-numeric: tabular-nums;
 }
 
 /* ── Camp Standard — Noise texture utilities ── */

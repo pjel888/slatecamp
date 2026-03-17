@@ -216,7 +216,7 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
 
       {/* X-Ray Controls (Bottom Center) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 w-full max-w-xs">
-        <div className="bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-md p-4 space-y-3">
+        <div className="bg-white/80 backdrop-blur-md border border-white/20 shadow-md rounded-md p-4 space-y-3">
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 flex items-center gap-2">
               <SCIcon icon={Stack} size="xs" />

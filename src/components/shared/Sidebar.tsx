@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import { TransitionLink } from '@/components/shared/TransitionLink'
 import {
@@ -64,8 +65,15 @@ const ICON_SIZE = 'h-[18px] w-[18px]'
 /** * Premium Collapsed Logomark
  */
 const Logomark = () => (
-  <div className='flex h-8 w-8 items-center justify-center rounded-md bg-primary text-white shadow-sm'>
-    <span className='font-serif font-bold text-lg leading-none mt-0.5'>S</span>
+  <div className='flex h-8 w-8 items-center justify-center rounded-md  text-white shadow-sm overflow-hidden'>
+    <Image
+      src='/SlateCampLogoMark.svg'
+      alt='SlateCamp logomark'
+      width={24}
+      height={24}
+      priority
+      className='h4- w-4'
+    />
   </div>
 )
 
@@ -111,9 +119,7 @@ const SidebarItem = ({
             icon={Icon}
             size='sm'
             weight={isActive ? 'bold' : 'regular'}
-            className={cn(
-              isActive ? 'text-primary' : 'text-[#4A5568]',
-            )}
+            className={cn(isActive ? 'text-primary' : 'text-[#4A5568]')}
           />
         ) : null}
       </div>
@@ -202,9 +208,10 @@ export const Sidebar = ({
   return (
     <aside
       className={cn(
-        'hidden lg:flex lg:flex-col border-r border-border transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
+        'hidden lg:flex lg:flex-col  transition-[width] duration-300 ease-in-out overflow-hidden shrink-0',
         collapsed ? 'w-[72px]' : 'w-[260px]',
         'bg-white',
+        // 'bg-[#1B3FC4]',
         'z-10',
       )}
     >
@@ -278,19 +285,19 @@ export const Sidebar = ({
                     {displayName}
                   </p>
                 </div>
-                </Link>
-                </TooltipTrigger>
-                {collapsed && (
-                <TooltipContent
+              </Link>
+            </TooltipTrigger>
+            {collapsed && (
+              <TooltipContent
                 side='right'
                 sideOffset={12}
                 className='bg-primary text-white font-medium text-xs'
-                >
+              >
                 {displayName} (Settings)
-                </TooltipContent>
-                )}
-                </Tooltip>
-                </div>
+              </TooltipContent>
+            )}
+          </Tooltip>
+        </div>
         {/* Tier & Plan Area */}
         <div className='border-b border-border py-3'>
           <div className='flex items-center justify-start gap-3 px-2'>

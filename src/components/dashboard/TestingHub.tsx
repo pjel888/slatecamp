@@ -55,14 +55,14 @@ export function TestingHub({
     <div className='max-w-6xl mx-auto px-4 py-12'>
       {/* Today's Recommendation Banner */}
       {decayedNode ? (
-        <div className='mb-16 p-6 bg-white border border-primary/20 rounded-md'>
+        <div className='mb-16 p-6 bg-white border border-border rounded-md'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
             <div className='flex items-center gap-5 text-center md:text-left'>
               <div className='w-14 h-14 rounded-md bg-[#EEF2FC] flex items-center justify-center shrink-0 border border-primary/10'>
                 <SCIcon icon={Target} size='lg' className='text-primary' />
               </div>
               <div>
-                <h2 className='text-xl font-semibold text-zinc-900 tracking-tight'>
+                <h2 className='font-display text-lg font-extrabold text-[#1A2332] tracking-tight'>
                   Suggested for Today
                 </h2>
                 <p className='text-zinc-500 mt-1 max-w-xl text-sm leading-relaxed'>
@@ -84,7 +84,7 @@ export function TestingHub({
                   config: { isSubjectMode: true },
                 })
               }
-              className='w-full md:w-auto px-6 py-3 bg-primary text-white rounded-md font-semibold text-sm hover:bg-[#1535A8] transition-colors flex items-center justify-center gap-2 group whitespace-nowrap'
+              className='w-full md:w-auto px-6 py-3 bg-primary text-white rounded-sm font-semibold text-sm hover:bg-[#1535A8] transition-colors flex items-center justify-center gap-2 group whitespace-nowrap'
             >
               Start 10-Question Review
               <SCIcon
@@ -96,7 +96,7 @@ export function TestingHub({
           </div>
         </div>
       ) : (
-        <div className='mb-16 p-6 bg-zinc-50 border border-zinc-200 rounded-md flex items-center gap-4'>
+        <div className='mb-16 p-6 bg-[#F8F7F5] border border-border rounded-md flex items-center gap-4'>
           <SCIcon icon={Target} size='md' className='text-zinc-300 shrink-0' />
           <p className='text-sm text-zinc-400'>
             Finish a few sessions and personalized suggestions will appear here.
@@ -108,7 +108,7 @@ export function TestingHub({
         {/* Zone 1: Learning & Exploration (Low Cognitive Load) */}
         <section>
           <div className='flex items-center gap-3 mb-8'>
-            <h2 className='text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400'>
+            <h2 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]'>
               Zone 01: Foundations
             </h2>
             <div className='h-px flex-1 bg-zinc-100' />
@@ -150,7 +150,7 @@ export function TestingHub({
         {/* Zone 2: Targeted Practice (Medium/High Cognitive Load) */}
         <section>
           <div className='flex items-center gap-3 mb-8'>
-            <h2 className='text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400'>
+            <h2 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]'>
               Zone 02: Deliberate Practice
             </h2>
             <div className='h-px flex-1 bg-zinc-100' />
@@ -180,22 +180,22 @@ export function TestingHub({
             />
             <div
               onClick={() => setIsBuilderOpen(true)}
-              className='group relative bg-white border border-zinc-200 rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-zinc-300 cursor-pointer flex flex-col h-full'
+              className='group relative bg-white border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 cursor-pointer flex flex-col h-full'
             >
               <div className='w-12 h-12 rounded-md bg-zinc-700 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110'>
                 <SCIcon icon={GearSix} size='lg' className='text-white' />
               </div>
               <div className='flex-1'>
-                <h3 className='text-sm font-semibold text-zinc-900 mb-2'>
+                <h3 className='text-sm font-semibold text-[#1A2332] mb-2'>
                   Custom Session
                 </h3>
-                <p className='text-sm text-zinc-500 leading-relaxed mb-6'>
+                <p className='text-sm text-[#4A5568] leading-relaxed mb-6'>
                   Design your own session — choose the topics, question count,
                   and feedback style that fit what you need today.
                 </p>
               </div>
               <div className='mt-auto'>
-                <div className='w-full py-2 bg-zinc-50 rounded-md text-zinc-900 text-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all'>
+                <div className='w-full py-2 bg-zinc-50 rounded-sm text-[#1A2332] text-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all'>
                   Build Session
                 </div>
               </div>
@@ -206,7 +206,7 @@ export function TestingHub({
         {/* Zone 3: High-Stakes Performance (Peak Cognitive Load) */}
         <section>
           <div className='flex items-center gap-3 mb-8'>
-            <h2 className='text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400'>
+            <h2 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]'>
               Zone 03: Exam Readiness
             </h2>
             <div className='h-px flex-1 bg-zinc-100' />

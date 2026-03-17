@@ -23,23 +23,23 @@ export const HeroHeadline = () => {
 
     const winAnnotation = annotate(winRef.current, {
       type: 'circle',
-      color: '#1B3FC4',
-      strokeWidth: 2,
-      animationDuration: 400,
+      color: '#1B7A3C',
+      strokeWidth: 4,
+      animationDuration: 200,
     })
 
     const youllAnnotation = annotate(youllRef.current, {
       type: 'underline',
       color: '#1B3FC4',
-      strokeWidth: 2,
-      animationDuration: 400,
+      strokeWidth: 4,
+      animationDuration: 200,
     })
 
     const taglineAnnotation = annotate(taglineRef.current, {
       type: 'highlight',
       color: 'oklch(92.9% 0.013 255.508)',
       strokeWidth: 2,
-      animationDuration: 400,
+      animationDuration: 200,
     })
 
     const t = setTimeout(() => {
@@ -68,7 +68,8 @@ export const HeroHeadline = () => {
           ref={taglineRef}
           className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
         >
-          Study with precision. Test with confidence.
+          One readiness engine for the ALE — adaptive quizzing, syllabus-mapped
+          content, and a score that never lies.
         </p>
       </div>
     </>

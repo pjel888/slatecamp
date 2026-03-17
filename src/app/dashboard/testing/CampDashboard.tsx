@@ -202,7 +202,7 @@ export function CampDashboard({
   }
 
   return (
-    <div className="w-full h-full bg-zinc-50 overflow-y-auto">
+    <div className="w-full h-full bg-[#F8F7F5] overflow-y-auto">
       {session && (
         <QuizRenderer 
           session={session} 

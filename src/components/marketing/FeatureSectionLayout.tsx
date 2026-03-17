@@ -6,16 +6,20 @@ export const FeatureSectionLayout = ({
   children,
   flip = false,
   dark = false,
+  amber = false,
 }: {
   children: React.ReactNode
   flip?: boolean
   dark?: boolean
+  amber?: boolean
 }) => (
   <section
     className={`border-t px-6 py-24 ${
       dark
         ? 'bg-[#111111] border-white/10'
-        : 'border-[#E8E4DC] bg-[#F2F0EB]'
+        : amber
+          ? 'bg-[#F5A623] border-[#D4851A]/40'
+          : 'border-[#E8E4DC] bg-[#F2F0EB]'
     }`}
   >
     <div
@@ -61,12 +65,20 @@ export const FeatureCheckItem = ({
 
 /* ── Section eyebrow label ── */
 
-export const SectionEyebrow = ({ label, dark = false }: { label: string; dark?: boolean }) => (
+export const SectionEyebrow = ({
+  label,
+  dark = false,
+  amber = false,
+}: {
+  label: string
+  dark?: boolean
+  amber?: boolean
+}) => (
   <div className='mb-5 flex items-center gap-2'>
-    <Starburst className='h-3.5 w-3.5 text-[#F5A623]' />
+    <Starburst className='h-3 w-3 text-[#F5A623]' />
     <span
       className={`font-mono text-[11px] tracking-[.2em] uppercase ${
-        dark ? 'text-white/40' : 'text-zinc-500'
+        dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-zinc-500'
       }`}
     >
       {label}
@@ -81,7 +93,7 @@ export const FeaturePill = ({
   variant = 'cobalt',
 }: {
   children: React.ReactNode
-  variant?: 'cobalt' | 'amber' | 'green' | 'muted-light' | 'muted-dark'
+  variant?: 'cobalt' | 'amber' | 'green' | 'muted-light' | 'muted-dark' | 'on-amber'
 }) => {
   const styles = {
     cobalt: 'border-[#1B3FC4]/25 bg-[#1B3FC4]/8 text-[#1B3FC4]',
@@ -89,6 +101,7 @@ export const FeaturePill = ({
     green: 'border-[#1B7A3C]/25 bg-[#1B7A3C]/8 text-[#1B7A3C]',
     'muted-light': 'border-[#E8E4DC] text-[#6B6B6B]',
     'muted-dark': 'border-white/15 text-white/50',
+    'on-amber': 'border-black/20 bg-black/[0.08] text-[#111]',
   }
 
   return (

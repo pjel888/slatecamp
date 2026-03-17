@@ -144,10 +144,9 @@ const MOCK_QUESTION = {
 }
 
 const STATS = [
-  '500+ students in the camp',
-  '2,400+ verified ALE questions',
+  'Syllabus-mapped to the ALE',
   'Real-time Readiness Score',
-  'Free to start — no card needed',
+  'AI answers cite their sources',
 ] as const
 
 /* ── Hero Cards Components ── */
@@ -158,9 +157,12 @@ const ExamsSupportedCard = () => (
     className='order-1 w-full max-w-[280px] rounded-[10px] bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
     aria-hidden='true'
   >
-    <p className='mb-2.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
-      Supported exams
-    </p>
+    <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2'>
+      <Starburst className='h-3 w-3 text-[#F5A623]' />
+      <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+        Supported exams
+      </span>
+    </div>
     <ul className='space-y-1.75'>
       {SUPPORTED_EXAMS.slice(0, 6).map((exam) => {
         const isLive = exam.tone === 'live'
@@ -228,9 +230,17 @@ const MockQuestionCard = () => {
       className='order-3 w-full max-w-[280px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
-      <span className='mb-2 inline-block rounded bg-[#F2F0EB] px-2 py-0.5 text-[11px] font-medium text-[#18181B]'>
-        {MOCK_QUESTION.topic}
-      </span>
+      <div className='mb-2.5 flex items-center justify-between border-b border-[#E8E4DC] pb-2'>
+        <div className='flex items-center gap-1.5'>
+          <Starburst className='h-3 w-3 text-[#F5A623]' />
+          <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+            Sample Question
+          </span>
+        </div>
+        <span className='rounded bg-[#F2F0EB] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[9px] tracking-[0.1em] uppercase text-[#888]'>
+          {MOCK_QUESTION.topic}
+        </span>
+      </div>
       <p className='mb-3 text-[12px] leading-snug text-[#18181B]'>
         {MOCK_QUESTION.question}
       </p>
@@ -286,9 +296,11 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='mb-2 inline-flex items-center gap-1 rounded-full bg-[#F2F0EB] px-2.5 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-[#6B6B6B]'>
-        <span className='h-1.5 w-1.5 rounded-full bg-amber-500' />
-        Readiness snapshot
+      <div className='mb-3 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2.5'>
+        <Starburst className='h-3 w-3 text-[#F5A623]' />
+        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+          Readiness snapshot
+        </span>
       </div>
 
       <h3 className='text-base font-semibold tracking-tight text-[#18181B]'>
@@ -381,7 +393,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
   <div
     id='hero-right'
-    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px] md:-mt-[50px] md:flex-row md:items-stretch md:justify-center md:gap-0'
+    className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px]  md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
     <ExamsSupportedCard />
     <MockQuestionCard />
@@ -415,7 +427,7 @@ export const HeroSection = ({
     <NoiseOverlay opacity={0.04} />
 
     {/* Floating testimonial cloud */}
-    <FloatingTestimonialMarquee />
+    {/* <FloatingTestimonialMarquee /> */}
 
     {/* Hero Content */}
     <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
@@ -429,7 +441,7 @@ export const HeroSection = ({
                 aria-label='Board exam preparation platform.'
               >
                 <div className='flex flex-row items-center gap-2 '>
-                  <Starburst className='h-4 w-4' />
+                  <Starburst className='h-3 w-3' />
                   <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-[#1B3FC4]'>
                     Board exam preparation platform.
                   </span>
@@ -449,7 +461,7 @@ export const HeroSection = ({
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
               <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-[#6B6B6B]'>
-                Free forever to start &middot; No credit card required
+                Free to start &middot; No credit card required
               </p>
             </div>
           </div>

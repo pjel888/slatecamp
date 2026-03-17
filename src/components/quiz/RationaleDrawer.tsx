@@ -50,7 +50,7 @@ export function RationaleDrawer({
           animate={{ height: 'auto', opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
           transition={{ type: 'spring', damping: 28, stiffness: 220 }}
-          className="shrink-0 overflow-hidden border-t border-zinc-100"
+          className="shrink-0 overflow-hidden border-t border-border"
           role="region"
           aria-label="Answer rationale"
         >
@@ -114,7 +114,7 @@ export function RationaleDrawer({
                 </button>
                 <button
                   onClick={onAddNote}
-                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-zinc-200 text-zinc-600 hover:bg-zinc-50 text-[11px] font-black uppercase tracking-widest transition-colors"
+                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-[#4A5568] hover:bg-[#F8F7F5] text-[11px] font-black uppercase tracking-widest transition-colors"
                 >
                   <SCIcon icon={Plus} size="xs" />
                   Add Note

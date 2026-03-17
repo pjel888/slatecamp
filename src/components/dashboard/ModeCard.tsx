@@ -36,7 +36,7 @@ export function ModeCard({
   return (
     <div
       className={cn(
-        'group relative bg-white border border-zinc-200 rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-zinc-300 flex flex-col h-full',
+        'group relative bg-white border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 flex flex-col h-full',
         disabled && 'opacity-60 grayscale pointer-events-none',
       )}
     >
@@ -52,8 +52,8 @@ export function ModeCard({
 
       {/* Content */}
       <div className='flex-1'>
-        <h3 className='text-sm font-semibold text-zinc-900 mb-2'>{title}</h3>
-        <p className='text-sm text-zinc-500 leading-relaxed mb-6'>
+        <h3 className='text-sm font-semibold text-[#1A2332] mb-2'>{title}</h3>
+        <p className='text-sm text-[#4A5568] leading-relaxed mb-6'>
           {description}
         </p>
       </div>
@@ -63,7 +63,7 @@ export function ModeCard({
         <Button
           onClick={onPrimaryAction}
           className={cn(
-            'w-full font-semibold shadow-sm transition-all rounded-md',
+            'w-full font-semibold transition-all',
             hasActiveSession
               ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
               : 'bg-primary text-white hover:bg-[#1535A8]',
@@ -83,7 +83,7 @@ export function ModeCard({
           <Button
             variant='outline'
             onClick={onSecondaryAction}
-            className='w-full border-primary/20 text-primary hover:bg-[#EEF2FC] font-semibold rounded-md'
+            className='w-full border-primary/20 text-primary hover:bg-[#EEF2FC] font-semibold'
           >
             <SCIcon icon={Play} size='sm' weight='fill' className='mr-2' />{' '}
             Resume Session

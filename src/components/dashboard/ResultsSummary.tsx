@@ -8,10 +8,7 @@ import {
   ArrowRight,
   ArrowCounterClockwise,
   SquaresFour,
-  CheckCircle,
-  XCircle,
   ChartBar,
-  MagnifyingGlass,
   BookOpen,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -25,7 +22,17 @@ interface ResultsSummaryProps {
   onExit: () => void
   onRestart: () => void
   testMode: string
+  sessionDurationMs?: number
+  previousAverageScore?: number
   onStartFocusedReview?: (topicIds: string[]) => void
+}
+
+function formatDuration(ms: number): string {
+  const totalSeconds = Math.floor(ms / 1000)
+  const minutes = Math.floor(totalSeconds / 60)
+  const seconds = totalSeconds % 60
+  if (minutes === 0) return `${seconds}s`
+  return `${minutes}m ${seconds}s`
 }
 
 export function ResultsSummary({
@@ -34,6 +41,8 @@ export function ResultsSummary({
   onExit,
   onRestart,
   testMode,
+  sessionDurationMs,
+  previousAverageScore,
   onStartFocusedReview,
 }: ResultsSummaryProps) {
   const stats = useMemo(() => {
@@ -94,6 +103,9 @@ export function ResultsSummary({
           .filter((id, i, arr) => arr.indexOf(id) === i)
       : []
 
+    const scoreDelta =
+      previousAverageScore !== undefined ? score - previousAverageScore : null
+
     return {
       total,
       correct,
@@ -103,8 +115,14 @@ export function ResultsSummary({
       masteryColor,
       weakestSubject,
       weakestTopicIds,
+      scoreDelta,
     }
-  }, [questions, answers])
+  }, [questions, answers, previousAverageScore])
+
+  const avgTimePerQ =
+    sessionDurationMs && questions.length > 0
+      ? Math.round(sessionDurationMs / questions.length / 1000)
+      : null
 
   return (
     <div className='max-w-4xl mx-auto py-12 px-6'>
@@ -113,78 +131,114 @@ export function ResultsSummary({
         animate={{ opacity: 1, y: 0 }}
         className='text-center mb-12'
       >
-        <div className='inline-flex items-center justify-center w-16 h-16 rounded-sm bg-[#EEF2FC] text-primary mb-6 border border-primary/10'>
+        <div className='inline-flex items-center justify-center w-16 h-16 rounded-md bg-[#EEF2FC] text-primary mb-6 border border-primary/10'>
           <SCIcon icon={Target} size='xl' />
         </div>
-        <h1 className='text-xl font-semibold text-zinc-900 tracking-tight'>
+        <h1 className='text-2xl font-extrabold text-[#1A2332] tracking-tight'>
           Session Complete
         </h1>
-        <p className='text-zinc-500 mt-2'>
+        <p className='text-[#4A5568] mt-2'>
           Here&apos;s a look at what you covered in your {testMode} session.
         </p>
       </motion.div>
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mb-12'>
-        <div className='bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center'>
-          <div className='text-zinc-400 mb-2 flex items-center gap-2'>
+        {/* Score */}
+        <div className='bg-white p-6 rounded-md border border-[#D4DAE3] flex flex-col items-center'>
+          <div className='text-[#8896A7] mb-2 flex items-center gap-2'>
             <SCIcon icon={Target} size='sm' />
             <span className='text-[11px] font-black uppercase tracking-widest'>
               Accuracy
             </span>
           </div>
-          <div className='text-xl font-black text-zinc-900'>{stats.score}%</div>
-          <div className='text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold'>
-            {stats.correct} / {stats.total} Correct
+          <div className='text-3xl font-extrabold text-[#1A2332]'>
+            {stats.score}%
           </div>
+          {stats.scoreDelta !== null ? (
+            <div
+              className={cn(
+                'text-[11px] mt-1 font-bold',
+                stats.scoreDelta > 0
+                  ? 'text-[#2D9F6F]'
+                  : stats.scoreDelta < 0
+                    ? 'text-[#D64545]'
+                    : 'text-[#8896A7]',
+              )}
+            >
+              {stats.scoreDelta > 0 ? '+' : ''}
+              {stats.scoreDelta} pts vs your average
+            </div>
+          ) : (
+            <div className='text-[11px] text-[#8896A7] mt-1 uppercase tracking-widest font-bold'>
+              {stats.correct} / {stats.total} Correct
+            </div>
+          )}
         </div>
 
-        <div className='bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center'>
-          <div className='text-zinc-400 mb-2 flex items-center gap-2'>
+        {/* Mastery */}
+        <div className='bg-white p-6 rounded-md border border-[#D4DAE3] flex flex-col items-center'>
+          <div className='text-[#8896A7] mb-2 flex items-center gap-2'>
             <SCIcon icon={Clock} size='sm' />
             <span className='text-[11px] font-black uppercase tracking-widest'>
               Status
             </span>
           </div>
-          <div className={`text-xl font-black uppercase ${stats.masteryColor}`}>
+          <div className={`text-xl font-extrabold uppercase ${stats.masteryColor}`}>
             {stats.masteryLabel}
           </div>
-          <div className='text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold'>
+          <div className='text-[11px] text-[#8896A7] mt-1 uppercase tracking-widest font-bold'>
             IRT Adjusted
           </div>
         </div>
 
-        <div className='bg-white p-6 rounded-sm border border-zinc-200 shadow-sm flex flex-col items-center'>
-          <div className='text-zinc-400 mb-2 flex items-center gap-2'>
+        {/* Time */}
+        <div className='bg-white p-6 rounded-md border border-[#D4DAE3] flex flex-col items-center'>
+          <div className='text-[#8896A7] mb-2 flex items-center gap-2'>
             <SCIcon icon={ChartBar} size='sm' />
             <span className='text-[11px] font-black uppercase tracking-widest'>
-              Readiness
+              Time
             </span>
           </div>
-          <div className='text-xl font-black text-[#2D9F6F] uppercase'>
-            Updated
-          </div>
-          <div className='text-[11px] text-zinc-400 mt-1 uppercase tracking-widest font-bold'>
-            EMA Recalculated
-          </div>
+          {sessionDurationMs ? (
+            <>
+              <div className='text-xl font-extrabold text-[#1A2332]'>
+                {formatDuration(sessionDurationMs)}
+              </div>
+              {avgTimePerQ !== null && (
+                <div className='text-[11px] text-[#8896A7] mt-1 uppercase tracking-widest font-bold'>
+                  ~{avgTimePerQ}s / question
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              <div className='text-xl font-extrabold text-[#2D9F6F] uppercase'>
+                Updated
+              </div>
+              <div className='text-[11px] text-[#8896A7] mt-1 uppercase tracking-widest font-bold'>
+                EMA Recalculated
+              </div>
+            </>
+          )}
         </div>
       </div>
 
       <div className='space-y-6'>
-        <h2 className='text-[11px] font-black uppercase tracking-[0.3em] text-zinc-400 mb-4'>
+        <h2 className='text-[11px] font-black uppercase tracking-[0.3em] text-[#8896A7] mb-4'>
           Subject Breakdown
         </h2>
         <div className='grid grid-cols-1 gap-4'>
-          {Object.entries(stats.subjectStats).map(([subject, s], idx) => {
+          {Object.entries(stats.subjectStats).map(([subject, s]) => {
             const percentage = Math.round((s.correct / s.total) * 100)
             return (
               <div
                 key={subject}
-                className='bg-white p-5 rounded-sm border border-zinc-200 shadow-sm flex items-center justify-between'
+                className='bg-white p-5 rounded-md border border-[#D4DAE3] flex items-center justify-between'
               >
                 <div className='flex items-center gap-4'>
                   <div
                     className={cn(
-                      'w-10 h-10 rounded-sm flex items-center justify-center border',
+                      'w-10 h-10 rounded-md flex items-center justify-center border',
                       percentage >= 75
                         ? 'bg-[#EDFAF4] border-[#2D9F6F]/20 text-[#2D9F6F]'
                         : percentage >= 50
@@ -195,19 +249,19 @@ export function ResultsSummary({
                     <SCIcon icon={BookOpen} size='md' />
                   </div>
                   <div>
-                    <h4 className='text-sm font-bold text-zinc-900'>
+                    <h4 className='text-sm font-bold text-[#1A2332]'>
                       {subject}
                     </h4>
-                    <p className='text-[11px] text-zinc-400 uppercase tracking-widest font-bold'>
+                    <p className='text-[11px] text-[#8896A7] uppercase tracking-widest font-bold'>
                       {s.correct}/{s.total} Correct
                     </p>
                   </div>
                 </div>
                 <div className='flex items-center gap-6'>
-                  <div className='w-32 h-2 bg-zinc-100 rounded-sm overflow-hidden border border-zinc-200/30 hidden sm:block'>
+                  <div className='w-32 h-1.5 bg-[#F8F7F5] rounded-full overflow-hidden border border-[#D4DAE3]/30 hidden sm:block'>
                     <div
                       className={cn(
-                        'h-full transition-all duration-200 ease-out',
+                        'h-full transition-all duration-200 ease-out rounded-full',
                         percentage >= 75
                           ? 'bg-[#2D9F6F]'
                           : percentage >= 50
@@ -217,7 +271,7 @@ export function ResultsSummary({
                       style={{ width: `${percentage}%` }}
                     />
                   </div>
-                  <span className='text-sm font-black text-zinc-900 w-10 text-right'>
+                  <span className='text-sm font-extrabold text-[#1A2332] w-10 text-right'>
                     {percentage}%
                   </span>
                 </div>
@@ -274,11 +328,11 @@ export function ResultsSummary({
           </div>
         )}
 
-      <div className='mt-12 pt-12 border-t border-zinc-200 grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <div className='mt-12 pt-12 border-t border-[#D4DAE3] grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Button
           onClick={onExit}
           variant='outline'
-          className='h-14 rounded-sm border-zinc-200 text-zinc-600 hover:bg-zinc-50 font-bold uppercase tracking-widest text-[11px] gap-2'
+          className='h-14 rounded-sm border-[#D4DAE3] text-[#4A5568] hover:bg-[#F8F7F5] font-bold uppercase tracking-widest text-[11px] gap-2'
         >
           <SCIcon icon={SquaresFour} size='sm' />
           Back to Dashboard

@@ -51,7 +51,7 @@ export const LogoMarquee = ({ dark = false }: { dark?: boolean } = {}) => {
   const logos = [...half, ...half]
   return (
     <section
-      aria-label="Students from these institutions are in the camp"
+      aria-label="Architecture schools and industry brands"
       className={
         'marquee-container overflow-hidden border-y py-2 ' +
         (dark ? 'border-white/10' : 'border-[#E8E4DC]')

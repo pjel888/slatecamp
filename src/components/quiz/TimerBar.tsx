@@ -16,9 +16,9 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
   const timeLabel = `${mins}:${secs.toString().padStart(2, '0')}`
 
   return (
-    <div className="flex items-center gap-3 bg-zinc-100 border border-zinc-200 rounded-sm px-3 py-1.5">
+    <div className="flex items-center gap-3 bg-[#F5F7FA] border border-border rounded-sm px-3 py-1.5">
       {/* Depletion bar */}
-      <div className="w-24 h-1.5 bg-zinc-200 rounded-sm overflow-hidden" role="timer" aria-label={`${timeLabel} remaining`}>
+      <div className="w-24 h-1.5 bg-[#EEF2FC] rounded-sm overflow-hidden" role="timer" aria-label={`${timeLabel} remaining`}>
         <div
           className={cn(
             'h-full rounded-sm transition-all duration-300 ease-linear',
@@ -31,8 +31,8 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
       {/* Time label */}
       <span
         className={cn(
-          'font-mono font-semibold text-[12px] tabular-nums w-10',
-          isFinal ? 'text-amber-600' : 'text-zinc-500',
+          'font-medium text-[14px] tabular-nums w-10',
+          isFinal ? 'text-[#D4951A]' : 'text-[#4A5568]',
         )}
       >
         {timeLabel}
@@ -42,7 +42,7 @@ export function TimerBar({ totalSeconds, remainingSeconds, isAheadOfPace }: Time
       <span
         className={cn(
           'text-[11px] font-black uppercase tracking-wider hidden sm:block',
-          isAheadOfPace ? 'text-green-600' : 'text-zinc-400',
+          isAheadOfPace ? 'text-[#2D9F6F]' : 'text-[#8896A7]',
         )}
       >
         {isAheadOfPace ? 'On pace' : 'Pace'}

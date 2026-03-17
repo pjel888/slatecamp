@@ -51,7 +51,7 @@ export const ComparisonSection = () => (
   >
     <div className='mx-auto max-w-[1200px]'>
       <div className='flex items-center gap-3'>
-        <Starburst className='h-4 w-4 text-[#F5A623]' />
+        <Starburst className='h-3 w-3 text-[#F5A623]' />
         <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'>
           Two ways to prepare
         </span>

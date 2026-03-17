@@ -56,8 +56,7 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
       )}
 
       <p
-        className="text-[18px] text-zinc-900 leading-[1.65] tracking-tight max-w-[65ch]"
-        style={{ fontWeight: 450 }}
+        className="text-[16px] font-normal text-[#1A2332] leading-[1.7] tracking-tight max-w-[65ch]"
       >
         {text}
       </p>

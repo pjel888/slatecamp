@@ -3,8 +3,73 @@
 import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 
-/* ── Testimonial Data ── */
+/* ── Feature Highlight Data ── */
 
+interface FeatureHighlight {
+  id: number
+  headline: string
+  detail: string
+  tag: string
+}
+
+const FEATURES: FeatureHighlight[] = [
+  {
+    id: 1,
+    headline: 'Readiness Score',
+    detail: 'Real-time. Honest. Powered by IRT — never inflated.',
+    tag: 'Analytics',
+  },
+  {
+    id: 2,
+    headline: 'Syllabus-mapped',
+    detail: 'Every question tied to the exact ALE taxonomy node.',
+    tag: 'Content',
+  },
+  {
+    id: 3,
+    headline: 'AI Tutor',
+    detail: 'Cites its sources. Temperature 0.0. No hallucinations.',
+    tag: 'Bounded Intelligence',
+  },
+  {
+    id: 4,
+    headline: 'Review Mode',
+    detail: 'No timer. No pressure. Pure active recall.',
+    tag: 'Study',
+  },
+  {
+    id: 5,
+    headline: '3D Lab',
+    detail: 'Rotate, cut away, and explore structures spatially.',
+    tag: 'Visual',
+  },
+  {
+    id: 6,
+    headline: 'Camp Mode',
+    detail: 'Timed. Tracked. Every answer analyzed.',
+    tag: 'Sessions',
+  },
+  {
+    id: 7,
+    headline: 'Taxonomy Heatmap',
+    detail: 'See every gap across all ALE subjects at a glance.',
+    tag: 'Analytics',
+  },
+  {
+    id: 8,
+    headline: 'Spaced Repetition',
+    detail: 'SM-2 algorithm resurfaces what you need most.',
+    tag: 'Engine',
+  },
+  {
+    id: 9,
+    headline: 'Wiki Reference',
+    detail: 'Every wrong answer links to the exact source article.',
+    tag: 'Content',
+  },
+]
+
+// Map old shape to new for particle reuse
 interface Testimonial {
   id: number
   name: string
@@ -13,128 +78,13 @@ interface Testimonial {
   avatar: string
 }
 
-const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Marco R.',
-    profession: 'ALE Reviewee',
-    text: 'The Readiness Score told me exactly where I stood.',
-    avatar: 'MR',
-  },
-  {
-    id: 2,
-    name: 'Jessa M.',
-    profession: 'Architecture Student',
-    text: 'One platform replaced five PDFs. Finally, clarity.',
-    avatar: 'JM',
-  },
-  {
-    id: 3,
-    name: 'Paolo D.',
-    profession: 'ALE Passer, 2025',
-    text: 'The heatmap showed my blind spots before the exam did.',
-    avatar: 'PD',
-  },
-  {
-    id: 4,
-    name: 'Jerica Rivera',
-    profession: 'Architect',
-    text: 'Review Mode: no anxiety. Camp Mode: real learning.',
-    avatar: 'AC',
-  },
-  {
-    id: 5,
-    name: 'Lizette Pedroso.',
-    profession: 'Architect',
-    text: 'Everything verified, everything in one place.',
-    avatar: 'LP',
-  },
-
-  {
-    id: 6,
-    name: 'Justin Rencer Wee Eng',
-    profession: 'Architect',
-    text: 'Every wrong answer linked to the exact Wiki article.',
-    avatar: 'KS',
-  },
-  {
-    id: 7,
-    name: 'Denise L.',
-    profession: 'Architecture Student',
-    text: 'Weak topics keep resurfacing until you own them.',
-    avatar: 'DL',
-  },
-  {
-    id: 8,
-    name: 'Lorenzo Cruz',
-    profession: 'Architect',
-    text: 'Passed first attempt. Storm Mode was harder than the real thing.',
-    avatar: 'RG',
-  },
-  {
-    id: 9,
-    name: 'Nico T.',
-    profession: 'Architecture Graduate',
-    text: 'Confidence from data, not hope.',
-    avatar: 'NT',
-  },
-  {
-    id: 11,
-    name: 'Trisha E.',
-    profession: 'ALE Reviewee',
-    text: 'My review center gave content. SlateCamp gave certainty.',
-    avatar: 'TE',
-  },
-  {
-    id: 12,
-    name: 'Carlos B.',
-    profession: 'Architecture Graduate',
-    text: 'The 3D Lab made MEPFS click. Literally rotate and see.',
-    avatar: 'CB',
-  },
-  {
-    id: 13,
-    name: 'Samantha Y.',
-    profession: 'Architecture Student',
-    text: 'I study on the bus, before bed. Always ready.',
-    avatar: 'SY',
-  },
-  {
-    id: 14,
-    name: 'David O.',
-    profession: 'ALE Passer, 2025',
-    text: 'Pacing gauge warned me. Fixed it before exam day.',
-    avatar: 'DO',
-  },
-  {
-    id: 15,
-    name: 'Liza P.',
-    profession: 'Architecture Student',
-    text: 'Like a strict but caring professor at 2 AM.',
-    avatar: 'LP',
-  },
-  {
-    id: 16,
-    name: 'Mark J.',
-    profession: 'ALE Reviewee',
-    text: '78% Readiness. Honest number. Made me study harder.',
-    avatar: 'MJ',
-  },
-  {
-    id: 17,
-    name: 'Aira F.',
-    profession: 'Architecture Graduate',
-    text: 'AI tutor cited every source. No hallucinations.',
-    avatar: 'AF',
-  },
-  {
-    id: 18,
-    name: 'Brent H.',
-    profession: 'ALE Reviewee',
-    text: 'Ten times more organized than a review center.',
-    avatar: 'BH',
-  },
-]
+const TESTIMONIALS: Testimonial[] = FEATURES.map((f) => ({
+  id: f.id,
+  name: f.headline,
+  profession: f.tag,
+  text: f.detail,
+  avatar: f.tag.slice(0, 2).toUpperCase(),
+}))
 
 /* ── Deterministic pseudo-random from seed ── */
 function seededRandom(seed: number) {
@@ -293,21 +243,15 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
           touchAction: 'none',
         }}
       >
-        <div className='flex h-full items-start gap-2'>
-          <div className='flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[11px] font-bold text-[#1535A8]'>
-            {config.testimonial.avatar}
-          </div>
-          <div className='min-w-0 flex-1'>
-            <div className='flex items-center gap-1.5'>
-              <span className='text-[11px] font-semibold leading-none text-zinc-800'>
-                {config.testimonial.name}
-              </span>
-              <MicroStars />
-            </div>
-            <p className='text-[11px] leading-none text-zinc-500'>
-              {config.testimonial.profession}
+        <div className='flex h-full flex-col justify-between'>
+          <span className='inline-block self-start rounded-full bg-[#EEF2FC] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-[#1535A8]'>
+            {config.testimonial.profession}
+          </span>
+          <div>
+            <p className='text-[11px] font-semibold leading-tight text-zinc-800'>
+              {config.testimonial.name}
             </p>
-            <p className='mt-1 line-clamp-2 text-[11px] leading-snug text-zinc-600'>
+            <p className='mt-0.5 line-clamp-2 text-[11px] leading-snug text-zinc-500'>
               {config.testimonial.text}
             </p>
           </div>

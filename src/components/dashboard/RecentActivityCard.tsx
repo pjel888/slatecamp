@@ -20,7 +20,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
     return (
       <Card className='p-4 flex flex-col justify-between h-full'>
         <div>
-          <p className='text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-3'>
+          <p className='font-dm-mono text-[11px] font-medium text-[#6B6B6B] uppercase tracking-[0.2em] mb-3'>
             Recent Activity
           </p>
           <p className='text-sm text-gray-700 leading-relaxed'>
@@ -39,7 +39,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
 
   return (
     <Card className='p-4 flex flex-col h-full'>
-      <p className='text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-3 shrink-0'>
+      <p className='font-dm-mono text-[11px] font-medium text-[#6B6B6B] uppercase tracking-[0.2em] mb-3 shrink-0'>
         Recent Activity
       </p>
 
@@ -50,7 +50,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
             <Link
               key={activity.id}
               href={activity.href}
-              className='flex items-start gap-2.5 group hover:bg-zinc-50 -mx-1 px-1 py-1 rounded-md transition-colors'
+              className='flex items-start gap-2.5 group hover:bg-[#EEF2FC]/40 -mx-1 px-1 py-1 rounded-md transition-colors'
             >
               <div className='p-1.5 bg-zinc-100 rounded-md shrink-0 group-hover:bg-zinc-200 transition-colors mt-0.5'>
                 <SCIcon icon={Icon} size='xs' className='text-zinc-500' />

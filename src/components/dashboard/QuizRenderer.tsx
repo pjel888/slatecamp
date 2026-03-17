@@ -89,12 +89,14 @@ export function QuizRenderer({
   const mode = session.test_mode
   const strictMode = mode === 'storm' || mode === 'proof_sim'
   const router = useRouter()
+  const sessionStartRef = useRef<number>(Date.now())
 
   // ── Core state ────────────────────────────────────────────────────────────
   const [currentIndex, setCurrentIndex] = useState(
     () => session.current_question_index || 0,
   )
   const [isCompleted, setIsCompleted] = useState(false)
+  const [sessionDurationMs, setSessionDurationMs] = useState<number | undefined>()
   const [isRationaleVisible, setIsRationaleVisible] = useState(false)
   const [isAIOpen, setIsAIOpen] = useState(false)
   const [isSubmitSheetOpen, setIsSubmitSheetOpen] = useState(false)
@@ -542,6 +544,7 @@ export function QuizRenderer({
       clearLS(session.session_id)
       setIsSaving(false)
       setIsSubmitSheetOpen(false)
+      setSessionDurationMs(Date.now() - sessionStartRef.current)
       playCompletionSound()
       setIsCompleted(true)
     }
@@ -746,6 +749,7 @@ export function QuizRenderer({
         questions={questions}
         answers={answers}
         testMode={mode}
+        sessionDurationMs={sessionDurationMs}
         onExit={onExit}
         onRestart={onExit}
         onStartFocusedReview={(topicIds) => {
@@ -767,16 +771,16 @@ export function QuizRenderer({
       {/* Integrity violation overlay (strict mode focus loss) */}
       {isAutoSubmitting && (
         <div className='absolute inset-0 z-[100] bg-white/90 backdrop-blur-sm flex items-center justify-center'>
-          <div className='bg-white p-6 rounded-md shadow-lg border border-zinc-200 text-center space-y-3 max-w-xs'>
+          <div className='bg-white p-6 rounded-lg shadow-lg border border-border text-center space-y-3 max-w-xs'>
             <SCIcon
               icon={Warning}
               size='xl'
-              className='text-zinc-700 mx-auto'
+              className='text-[#4A5568] mx-auto'
             />
-            <h2 className='text-lg font-bold text-zinc-900'>
+            <h2 className='text-lg font-bold text-[#1A2332]'>
               Session Recorded
             </h2>
-            <p className='text-zinc-500 text-sm'>
+            <p className='text-[#4A5568] text-sm'>
               Your session ended when focus left the window. All your answers
               have been saved.
             </p>
@@ -806,7 +810,7 @@ export function QuizRenderer({
 
       {/* Timer bar — strict mode only, sits below header */}
       {strictMode && countdown !== null && (
-        <div className='shrink-0 px-5 py-2 border-b border-zinc-100 bg-[#FAFAF9] flex justify-center'>
+        <div className='shrink-0 px-5 py-2 border-b border-border bg-[#F5F7FA] flex justify-center'>
           <TimerBar
             totalSeconds={totalTimerSeconds}
             remainingSeconds={countdown}
@@ -823,7 +827,7 @@ export function QuizRenderer({
         {/* ─── LEFT COLUMN: Scrollable stem ─── */}
         <div
           ref={stemScrollRef}
-          className='flex-1 lg:flex-none overflow-y-auto lg:border-r border-zinc-200'
+          className='flex-1 lg:flex-none overflow-y-auto lg:border-r border-border'
         >
           <div className='max-w-[640px] mx-auto px-5 py-6 space-y-6'>
             {/* Question stem — subtle fade on question change */}

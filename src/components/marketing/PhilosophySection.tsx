@@ -15,7 +15,7 @@ export const PhilosophySection = () => (
     className="border-t border-zinc-200 px-6 py-24"
   >
     <div className="mx-auto max-w-[1200px] text-center">
-      <Starburst className="mx-auto h-6 w-6 text-amber-600" />
+      <Starburst className="mx-auto h-3 w-3 text-amber-600" />
       <blockquote
         className={`${serif.className} mt-8 text-[clamp(2rem,4vw,3.5rem)] italic leading-[1.1] tracking-tight text-zinc-900`}
       >

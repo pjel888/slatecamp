@@ -33,7 +33,7 @@ export function FooterNavigator({
   onJump,
 }: FooterNavigatorProps) {
   return (
-    <footer className='shrink-0 border-t border-zinc-100 bg-[#FAFAF9]'>
+    <footer className='shrink-0 border-t border-border bg-[#F5F7FA]'>
       <div className='max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4'>
         {/* Previous */}
         <button
@@ -41,10 +41,10 @@ export function FooterNavigator({
           disabled={!canGoBack}
           aria-label='Previous question'
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoBack
-              ? 'border border-gray-200 text-gray-600 hover:bg-gray-50'
-              : 'border border-gray-100 text-zinc-200 cursor-not-allowed',
+              ? 'border border-border text-[#4A5568] hover:bg-[#EEF2FC]/50 hover:text-primary'
+              : 'border border-border/50 text-[#8896A7]/40 cursor-not-allowed',
           )}
         >
           <SCIcon icon={CaretLeft} size='sm' />
@@ -92,7 +92,7 @@ export function FooterNavigator({
           disabled={!canGoForward}
           aria-label='Next question'
           className={cn(
-            'flex items-center gap-2 h-9 px-4 rounded-md text-[11px] font-black uppercase tracking-widest transition-colors',
+            'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoForward
               ? 'bg-primary hover:bg-[#1535A8] text-white'
               : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',

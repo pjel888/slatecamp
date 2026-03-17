@@ -6,26 +6,37 @@ import {
 
 /* ── Quiz answer mockup (simplified bar style) ── */
 
-const QuizMockup = () => (
-  <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
-    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.07] px-3 py-[7px]'>
-      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
-      <div className='h-[7px] w-[72%] rounded-full bg-current opacity-30' />
+const QuizMockup = ({ theme = 'dark' }: { theme?: 'dark' | 'amber' }) => {
+  const rowBase = theme === 'amber' ? 'bg-black/[0.10]' : 'bg-white/[0.07]'
+  const rowFaint = theme === 'amber' ? 'bg-black/[0.06]' : 'bg-white/[0.04]'
+  const radio = theme === 'amber' ? 'border-black/40' : 'border-current opacity-70'
+  const bar = theme === 'amber' ? 'bg-black/30' : 'bg-current opacity-30'
+  const correctBorder = theme === 'amber' ? 'border-[#1B7A3C]/70' : 'border-green-500/45'
+  const correctBg = theme === 'amber' ? 'bg-[#1B7A3C]/20' : 'bg-green-500/[0.18]'
+  const correctRadio = theme === 'amber' ? 'border-[#1B7A3C] bg-[#1B7A3C]' : 'border-green-500 bg-green-500'
+  const correctBar = theme === 'amber' ? 'bg-[#1B7A3C] opacity-80' : 'bg-green-500 opacity-70'
+
+  return (
+    <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
+      <div className={`flex items-center gap-2 rounded-[5px] ${rowBase} px-3 py-[7px]`}>
+        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+        <div className={`h-[7px] w-[72%] rounded-full ${bar}`} />
+      </div>
+      <div className={`flex items-center gap-2 rounded-[5px] border ${correctBorder} ${correctBg} px-3 py-[7px]`}>
+        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${correctRadio}`} />
+        <div className={`h-[7px] w-[55%] rounded-full ${correctBar}`} />
+      </div>
+      <div className={`flex items-center gap-2 rounded-[5px] ${rowBase} px-3 py-[7px]`}>
+        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+        <div className={`h-[7px] w-[80%] rounded-full ${bar}`} />
+      </div>
+      <div className={`flex items-center gap-2 rounded-[5px] ${rowFaint} px-3 py-[7px]`}>
+        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+        <div className={`h-[7px] w-[44%] rounded-full ${bar}`} />
+      </div>
     </div>
-    <div className='flex items-center gap-2 rounded-[5px] border border-green-500/45 bg-green-500/[0.18] px-3 py-[7px]'>
-      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-green-500 bg-green-500' />
-      <div className='h-[7px] w-[55%] rounded-full bg-green-500 opacity-70' />
-    </div>
-    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.07] px-3 py-[7px]'>
-      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
-      <div className='h-[7px] w-[80%] rounded-full bg-current opacity-30' />
-    </div>
-    <div className='flex items-center gap-2 rounded-[5px] bg-white/[0.04] px-3 py-[7px]'>
-      <div className='h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] border-current opacity-70' />
-      <div className='h-[7px] w-[44%] rounded-full bg-current opacity-30' />
-    </div>
-  </div>
-)
+  )
+}
 
 /* ── Subject mastery bars ── */
 
@@ -125,33 +136,33 @@ export const BentoFeatureGrid = () => (
       {/* ── Top grid: 3 cols, side cards span 2 rows ── */}
       <div className='grid grid-cols-1 gap-[10px] md:grid-cols-3 md:grid-rows-2'>
 
-        {/* REVIEW MODE — Camp Black + noise */}
-        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-[10px] bg-[#111111] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        {/* REVIEW MODE — Camp Amber + light noise */}
+        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-[10px] bg-[#F5A623] p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <div className='flex items-center justify-between'>
-                <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
+                <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-black/40'>
                   [ Review Mode ]
                 </span>
-                <Starburst className='h-4 w-4 text-[#F5A623]' />
+                <Starburst className='h-3 w-3 text-[#111111]' />
               </div>
-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#111]'>
                 Active Recall,
                 <br />
                 Zero Pressure
               </h3>
-              <p className='mt-2 max-w-[340px] text-[13px] leading-relaxed text-white/50'>
+              <p className='mt-2 max-w-[340px] text-[13px] leading-relaxed text-black/50'>
                 No timer. No analytics. Just you and the material — until it sticks.
               </p>
-              <QuizMockup />
+              <QuizMockup theme='amber' />
             </div>
             <div className='mt-4'>
               <div className='flex gap-[5px]'>
-                <Pill variant='dark'>Active Recall</Pill>
-                <Pill variant='dark'>Stress-Free</Pill>
+                <Pill variant='amber'>Active Recall</Pill>
+                <Pill variant='amber'>Stress-Free</Pill>
               </div>
               <div className='mt-3 flex justify-end'>
-                <CircleArrow variant='dark' />
+                <CircleArrow variant='amber' />
               </div>
             </div>
           </div>
@@ -159,7 +170,7 @@ export const BentoFeatureGrid = () => (
 
         {/* STAT: 1 in 3 — Camp Cream (no noise) */}
         <div className='landing-reveal landing-delay-2 rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
-          <Starburst className='h-4 w-4 text-[#F5A623]' />
+          <Starburst className='h-3 w-3 text-[#F5A623]' />
           <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-[#E63329]'>
             1 in 3
           </div>
@@ -239,71 +250,71 @@ export const BentoFeatureGrid = () => (
       {/* ── Bottom row: 3 equal columns ── */}
       <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
 
-        {/* 3D LAB — Camp Green + noise */}
-        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-[10px] bg-[#1B7A3C] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
+        {/* 3D LAB — Camp Cream (no noise) */}
+        <div className='landing-reveal landing-delay-5 rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
-              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight'>
+              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight text-[#111]'>
                 3D Lab
               </h3>
-              <Starburst className='h-4 w-4 text-[#F5A623]' />
+              <Starburst className='h-3 w-3 text-[#F5A623]' />
             </div>
-            <p className='mt-7 text-[13px] italic leading-[1.4] text-white/60'>
+            <p className='mt-7 text-[13px] italic leading-[1.4] text-[#555]'>
               Visual learning,
               <br />
               built different.
             </p>
-            <p className='mt-2 text-[12px] leading-[1.5] text-white/50'>
+            <p className='mt-2 text-[12px] leading-[1.5] text-[#888]'>
               WebGL-powered models. Drag FAR — model responds in real time.
             </p>
             <div className='mt-3.5 flex items-center justify-between'>
-              <Pill variant='dark'>3D Models</Pill>
-              <CircleArrow variant='dark' />
+              <Pill variant='light'>3D Models</Pill>
+              <CircleArrow variant='light' />
             </div>
           </div>
         </div>
 
-        {/* SESSIONS — Camp Amber + light noise */}
-        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-[10px] bg-[#F5A623] p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5'>
+        {/* SESSIONS — Camp Green + noise */}
+        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-[10px] bg-[#1B7A3C] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
-              <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-black/40'>
+              <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
                 [ Sessions ]
               </span>
-              <CircleArrow variant='amber' />
+              <CircleArrow variant='dark' />
             </div>
-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-[1.1] text-[#111]'>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-[1.1] text-white'>
               Every Answer
               <br />
               Tracked
             </h3>
-            <p className='mt-2 text-[12px] leading-[1.5] text-black/50'>
+            <p className='mt-2 text-[12px] leading-[1.5] text-white/50'>
               Timed quizzes, full analytics. Watch your readiness climb.
             </p>
             <div className='mt-3 flex gap-[5px]'>
-              <Pill variant='amber'>Camp Mode</Pill>
-              <Pill variant='amber'>Storm Mode</Pill>
+              <Pill variant='dark'>Camp Mode</Pill>
+              <Pill variant='dark'>Storm Mode</Pill>
             </div>
           </div>
         </div>
 
-        {/* AI — Camp Black + heavy noise */}
-        <div className='landing-reveal landing-delay-6 relative overflow-hidden rounded-[10px] bg-[#111111] p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5'>
+        {/* AI — Camp Cream (no noise) */}
+        <div className='landing-reveal landing-delay-6 rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
-            <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-white/40'>
+            <span className='font-[family-name:var(--font-dm-mono)] text-[10px] tracking-[0.2em] uppercase text-[#aaa]'>
               [ Bounded Intelligence ]
             </span>
-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#111]'>
               AI That Cites
               <br />
               Its Sources
             </h3>
-            <p className='mt-2 text-[13px] leading-relaxed text-white/50'>
+            <p className='mt-2 text-[13px] leading-relaxed text-[#555]'>
               Tethered to our verified database. Temperature 0.0. Every response
               links to its exact source.
             </p>
             <div className='mt-3 flex gap-[5px]'>
-              <Pill variant='dark'>Zero-Hallucination</Pill>
+              <Pill variant='light'>Zero-Hallucination</Pill>
             </div>
           </div>
         </div>

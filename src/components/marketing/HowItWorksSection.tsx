@@ -26,7 +26,7 @@ export const HowItWorksSection = () => (
   >
     <div className="relative z-10 mx-auto max-w-[1200px]">
       <div className="flex items-center gap-3">
-        <Starburst className="h-4 w-4 text-[--camp-orange]" />
+        <Starburst className="h-3 w-3 text-[--camp-orange]" />
         <h2
           id="how-it-works-heading"
           className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]"
