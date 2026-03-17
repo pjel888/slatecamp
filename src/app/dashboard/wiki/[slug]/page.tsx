@@ -38,9 +38,9 @@ export default async function WikiArticlePage({ params }: PageProps) {
     if (nodeData) {
       return (
         <div className="h-full w-full flex items-center justify-center">
-          <div className="text-center p-12 bg-white rounded-2xl border border-zinc-100 shadow-sm max-w-lg">
+          <div className="text-center p-12 bg-white rounded-md border border-zinc-100 shadow-sm max-w-lg">
             {/* ... icon ... */}
-            <h1 className="text-2xl font-bold text-zinc-900 mb-3">{nodeData.name}</h1>
+            <h1 className="text-xl font-bold text-zinc-900 mb-3">{nodeData.name}</h1>
             <p className="text-zinc-500 mb-8 leading-relaxed">
               We're currently drafting the authoritative content for this topic. 
               Check back soon for comprehensive coverage of {nodeData.name}.

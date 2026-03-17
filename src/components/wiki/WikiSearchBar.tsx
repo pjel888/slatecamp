@@ -27,7 +27,7 @@ export function WikiSearchBar() {
         placeholder="Search wiki..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="pl-9 h-9 text-[13px]"
+        className="pl-9 h-9 text-[13px] focus-visible:ring-2 focus-visible:ring-blue-500/30 focus-visible:ring-offset-2"
         disabled={isPending}
       />
     </form>

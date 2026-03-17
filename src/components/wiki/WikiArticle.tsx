@@ -67,7 +67,7 @@ export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProp
       </Suspense>
 
       {/* Main Content (Scrolling Area) */}
-      <article className='flex-1 min-w-0 overflow-y-auto p-4 border-l border-zinc-50'>
+      <article className='flex-1 min-w-0 overflow-y-auto p-4 border-l border-zinc-200'>
         <header className='mb-8'>
           <div className='flex items-center gap-2 text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider'>
             <span>Wiki Article</span>
@@ -77,36 +77,36 @@ export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProp
             </span>
           </div>
           <div className='flex items-center justify-between mb-4'>
-            <h1 className='text-4xl font-bold tracking-tight text-foreground'>
+            <h1 className='text-xl font-bold tracking-tight text-foreground'>
               {article.title}
             </h1>
             <Link href={nodeId ? `/dashboard/testing?topicId=${nodeId}` : `/dashboard/testing?articleId=${article.article_id}`}>
               <Button
                 size='sm'
-                className='bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full px-6 shadow-lg shadow-blue-100 transition-all active:scale-95'
+                className='bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full px-6 shadow-sm transition-all active:scale-95'
               >
                 <Brain className='mr-2 h-4 w-4' /> Practice this {nodeName ? 'Topic' : 'Article'}
               </Button>
             </Link>
           </div>
-          <div className='h-1 w-20 bg-blue-600/20 rounded-full' />
+          <div className='h-px w-full bg-zinc-200' />
         </header>
 
         <div
-          className='prose prose-zinc dark:prose-invert max-w-none 
+          className='prose prose-zinc dark:prose-invert max-w-[75ch] 
           prose-headings:font-semibold prose-headings:tracking-tight
-          prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-2
-          prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-          prose-p:leading-relaxed prose-p:text-zinc-600
+          prose-h2:text-lg prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-2
+          prose-h3:text-base prose-h3:mt-8 prose-h3:mb-3
+          prose-p:leading-relaxed prose-p:text-zinc-600 prose-p:text-sm
           prose-li:text-zinc-600
           prose-strong:text-zinc-900 prose-strong:font-semibold
           prose-code:bg-zinc-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
-          prose-blockquote:border-l-4 prose-blockquote:border-blue-600/20 prose-blockquote:bg-zinc-50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded-r-lg
+          prose-blockquote:border-l-4 prose-blockquote:border-blue-600/20 prose-blockquote:bg-zinc-50 prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded-r-md
         '
         >
           <Suspense
             fallback={
-              <div className='animate-pulse bg-zinc-100 h-64 w-full rounded-xl' />
+              <div className='animate-pulse bg-zinc-100 h-64 w-full rounded-md' />
             }
           >
             {processedContent ? (

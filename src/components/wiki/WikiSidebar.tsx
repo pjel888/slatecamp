@@ -66,7 +66,7 @@ export function WikiSidebar({
     return (
       <aside className='wiki-sidebar-scroll w-full h-full bg-background overflow-y-auto'>
         <div className='p-6 text-center space-y-4 h-full flex flex-col items-center justify-center'>
-          <div className='bg-zinc-100 p-3 rounded-2xl inline-block'>
+          <div className='bg-zinc-100 p-3 rounded-md inline-block'>
             <Book className='h-6 w-6 text-zinc-400' />
           </div>
           <div className='space-y-1'>
