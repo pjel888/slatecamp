@@ -7,7 +7,6 @@ import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
 import { Sidebar } from '@/components/shared/Sidebar'
 import { Navbar } from '@/components/shared/Navbar'
 import { DashboardHeader } from '@/components/shared/DashboardHeader'
-import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
 import { NoteContextProvider } from '@/lib/context/note-context'
@@ -85,7 +84,7 @@ async function DashboardLayoutContent({
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
-          <div className='flex h-screen bg-[#f6f8fa] text-gray-900 font-sans selection:bg-gray-200'>
+          <div className='flex h-screen bg-muted text-gray-900 font-sans selection:bg-gray-200'>
             <Sidebar
               isAdmin={isAdmin}
               isDevMode={showDevTools}
@@ -107,7 +106,6 @@ async function DashboardLayoutContent({
                 <main className='flex-1 overflow-y-auto '>
                   {children}
                 </main>
-                <QuickActionsBar />
               </BreadcrumbProvider>
             </div>
             {showDevTools && flags != null && (
