@@ -106,8 +106,8 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
           display:   drawerOpen ? 'flex' : 'none',
         }}
         className={cn(
-          'flex-col rounded-xl border border-border bg-background',
-          'shadow-[0_8px_40px_rgba(0,0,0,0.18)] ring-1 ring-black/5',
+          'flex-col rounded-lg border border-border bg-background',
+          'shadow-lg ring-1 ring-black/5',
         )}
       >
         {/* ── Header: drag handle + title + close ── */}
@@ -192,7 +192,7 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
               onClick={handleSave}
               disabled={saving}
               size="sm"
-              className="rounded-md bg-zinc-900 text-xs font-medium text-white hover:bg-zinc-700"
+              className="rounded-md bg-blue-600 text-xs font-medium text-white hover:bg-blue-700"
             >
               {saving ? 'Saving…' : 'Save note'}
             </Button>

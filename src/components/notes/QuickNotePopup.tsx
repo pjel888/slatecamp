@@ -155,7 +155,7 @@ export function QuickNotePopup({ open, onOpenChange }: QuickNotePopupProps) {
             type="button"
             onClick={handleSave}
             disabled={saving}
-            className="rounded-sm bg-zinc-900 px-3 py-2 text-xs font-medium text-white hover:bg-zinc-800 transition-colors"
+            className="rounded-md bg-blue-600 px-3 py-2 text-xs font-medium text-white hover:bg-blue-700 transition-colors"
           >
             {saving ? 'Saving…' : 'Save to notes'}
           </Button>

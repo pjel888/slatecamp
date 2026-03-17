@@ -51,9 +51,9 @@ export function TemplatePicker({ value, onChange, disableGap }: TemplatePickerPr
             onClick={() => !disabled && onChange(id)}
             title={disabled ? 'Requires a quiz question context' : title}
             className={cn(
-              'flex flex-1 flex-col items-center gap-1 rounded-lg border px-2 py-2 text-center transition-all duration-150',
+              'flex flex-1 flex-col items-center gap-1 rounded-md border px-2 py-2 text-center transition-all duration-150',
               active
-                ? 'border-blue-500 bg-blue-50 text-blue-700 shadow-[inset_0_0_0_1px_rgb(59,130,246,0.3)]'
+                ? 'border-blue-600 bg-blue-50 text-blue-700'
                 : 'border-zinc-200 bg-white text-zinc-400 hover:border-zinc-300 hover:bg-zinc-50 hover:text-zinc-600',
               disabled && 'cursor-not-allowed opacity-35',
             )}

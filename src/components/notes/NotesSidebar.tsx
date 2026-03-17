@@ -81,16 +81,16 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
       <SheetContent side="right" className="w-full sm:max-w-md p-0 flex flex-col gap-0 border-l border-zinc-100">
         <SheetHeader className="p-6 border-b border-zinc-100">
           <div className="flex items-center justify-between">
-            <SheetTitle className="text-xl font-bold tracking-tight">Workspace Notes</SheetTitle>
+            <SheetTitle className="text-xl font-semibold tracking-tight">Workspace Notes</SheetTitle>
             <div className="flex items-center gap-2">
-               <Button variant="ghost" size="icon" className="h-8 w-8 rounded-lg">
+               <Button variant="ghost" size="icon" className="h-8 w-8 rounded-md">
                  <FolderPlus className="h-4 w-4 text-zinc-400" />
                </Button>
-               <Button 
-                 size="sm" 
+               <Button
+                 size="sm"
                  onClick={handleAddNote}
                  disabled={isCreating}
-                 className="h-8 bg-zinc-900 text-white hover:bg-zinc-800 rounded-lg px-3 text-xs font-bold"
+                 className="h-8 bg-blue-600 text-white hover:bg-blue-700 rounded-md px-3 text-xs font-bold"
                >
                  {isCreating ? <Loader2 className="h-3 w-3 animate-spin" /> : <Plus className="h-3 w-3 mr-1.5" />}
                  New Note
@@ -104,7 +104,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
               placeholder="Search your knowledge..." 
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="pl-9 bg-zinc-50 border-zinc-100 focus-visible:ring-zinc-200 h-10 rounded-xl" 
+              className="pl-9 bg-zinc-50 border-zinc-100 focus-visible:ring-zinc-200 h-10 rounded-md" 
             />
           </div>
         </SheetHeader>
@@ -117,7 +117,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
             </div>
           ) : notes.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-20 px-12 text-center space-y-4">
-               <div className="w-16 h-16 rounded-3xl bg-zinc-50 flex items-center justify-center border border-zinc-100">
+               <div className="w-16 h-16 rounded-md bg-zinc-50 flex items-center justify-center border border-zinc-100">
                  <StickyNote className="h-8 w-8 text-zinc-200" />
                </div>
                <div>
@@ -132,7 +132,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
                 <div className="p-2">
                   <p className="px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-400">Folders</p>
                   {folders.map(folder => (
-                    <button key={folder.folder_id} className="w-full flex items-center gap-3 px-4 py-2 hover:bg-zinc-50 rounded-lg transition-colors group">
+                    <button key={folder.folder_id} className="w-full flex items-center gap-3 px-4 py-2 hover:bg-zinc-50 rounded-md transition-colors group">
                       <Folder className="h-4 w-4 text-amber-500/60" />
                       <span className="text-sm font-medium text-zinc-700">{folder.name}</span>
                       <ChevronRight className="h-3 w-3 ml-auto opacity-0 group-hover:opacity-100 text-zinc-300 transition-opacity" />
@@ -149,7 +149,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
                     key={note.id}
                     href={`/dashboard/notes/${note.id}`}
                     onClick={() => onOpenChange(false)}
-                    className="flex flex-col gap-1 px-4 py-4 hover:bg-zinc-50 rounded-xl transition-colors group"
+                    className="flex flex-col gap-1 px-4 py-4 hover:bg-zinc-50 rounded-md transition-colors group"
                   >
                     <div className="flex items-center justify-between">
                       <h4 className="text-sm font-bold text-zinc-900 group-hover:text-blue-600 transition-colors line-clamp-1">

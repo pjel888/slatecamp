@@ -62,7 +62,7 @@ export function NotesLayoutClient({
           <button
             type='button'
             onClick={handleCreateNote}
-            className='flex w-full items-center justify-center gap-2 rounded-xl bg-(--color-signal-blue) py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90'
+            className='flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90'
           >
             <Plus className='h-4 w-4' strokeWidth={1.5} />
             New Note

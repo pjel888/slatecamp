@@ -103,7 +103,7 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
             <button
               type="submit"
               disabled={creating || !newFolderName.trim()}
-              className="rounded bg-zinc-900 px-2 py-1 text-[11px] text-white disabled:opacity-40"
+              className="rounded-md bg-blue-600 px-2 py-1 text-[11px] text-white disabled:opacity-40"
             >
               {creating ? '…' : 'Add'}
             </button>

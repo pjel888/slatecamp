@@ -88,7 +88,7 @@ export function NoteEditorPage({ note }: NoteEditorPageProps) {
                 setIsDirty(true)
               }}
               placeholder="Untitled Note"
-              className="w-full bg-transparent text-2xl font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
+              className="w-full bg-transparent text-xl font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
             />
           }
         />

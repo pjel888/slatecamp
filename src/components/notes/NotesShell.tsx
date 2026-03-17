@@ -155,7 +155,7 @@ export function NotesShell({ initialNotes, initialFolders, initialOpenNoteId, us
                   value={pendingTitle ?? currentNote.title}
                   onChange={(e) => setPendingTitle(e.target.value)}
                   placeholder="Untitled Note"
-                  className="w-full border-none bg-transparent p-0 text-2xl font-bold text-zinc-900 placeholder:text-zinc-300 focus:outline-none focus:ring-0"
+                  className="w-full border-none bg-transparent p-0 text-xl font-bold text-zinc-900 placeholder:text-zinc-300 focus:outline-none focus:ring-0"
                 />
               </div>
             </div>

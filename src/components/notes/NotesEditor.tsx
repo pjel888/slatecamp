@@ -221,7 +221,7 @@ export function NotesEditor({
       {/* Selection BubbleMenu — appears on text selection */}
       {bubblePos && (
         <div
-          className="pointer-events-auto absolute z-50 flex items-center gap-0.5 rounded-lg border border-border bg-background px-1.5 py-1 shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
+          className="pointer-events-auto absolute z-50 flex items-center gap-0.5 rounded-lg border border-border bg-background px-1.5 py-1 shadow-md"
           style={{ top: bubblePos.top, left: bubblePos.left }}
           onMouseDown={(e) => e.preventDefault()}
         >
