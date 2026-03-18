@@ -59,8 +59,7 @@ export function NextBestActionCardNew({ action }: NextBestActionCardProps) {
 
   return (
     <Card
-      className="relative overflow-hidden border p-3 bg-white"
-      style={{ borderColor: '#D4DAE3' }}
+      className="relative overflow-hidden p-3 bg-white"
     >
       {/* Left accent bar */}
       <div
@@ -136,7 +135,7 @@ export function NextBestActionCardNew({ action }: NextBestActionCardProps) {
 
 export function NextBestActionCardSkeleton() {
   return (
-    <Card className="relative overflow-hidden border p-3" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="relative overflow-hidden p-3">
       <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-md bg-muted" />
       <div className="flex items-start gap-3 pl-2">
         <Skeleton className="h-5 w-5 rounded shrink-0" />

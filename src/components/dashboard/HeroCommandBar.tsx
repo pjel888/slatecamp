@@ -1,7 +1,11 @@
 'use client'
 
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
 import { getReadinessLabel } from '@/lib/constants/readiness'
 import type { HeroMicroStat } from '@/types/dashboard'
@@ -19,8 +23,13 @@ function ReadinessRing({ score }: { score: number }) {
   const color = score >= 70 ? '#2D9F6F' : score >= 40 ? '#D4951A' : '#D64545'
 
   useEffect(() => {
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReduced) { setDisplay(score); return }
+    const prefersReduced = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches
+    if (prefersReduced) {
+      setDisplay(score)
+      return
+    }
 
     const duration = 1000
     const start = performance.now()
@@ -37,23 +46,31 @@ function ReadinessRing({ score }: { score: number }) {
   }, [score])
 
   return (
-    <div className="relative inline-flex items-center justify-center">
-      <svg width={size} height={size} aria-hidden="true">
+    <div className='relative inline-flex items-center justify-center'>
+      <svg width={size} height={size} aria-hidden='true'>
         <circle
-          cx={size / 2} cy={size / 2} r={radius}
-          fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth={stroke}
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill='none'
+          stroke='rgba(255,255,255,0.15)'
+          strokeWidth={stroke}
         />
         <circle
-          cx={size / 2} cy={size / 2} r={radius}
-          fill="none" stroke={color} strokeWidth={stroke}
-          strokeLinecap="round"
+          cx={size / 2}
+          cy={size / 2}
+          r={radius}
+          fill='none'
+          stroke={color}
+          strokeWidth={stroke}
+          strokeLinecap='round'
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
           style={{ transition: 'stroke-dashoffset 200ms ease-out' }}
         />
       </svg>
-      <span className="absolute text-3xl font-extrabold font-mono text-white tabular-nums">
+      <span className='absolute text-3xl font-extrabold font-mono text-white tabular-nums'>
         {display}
       </span>
     </div>
@@ -95,111 +112,133 @@ export function HeroCommandBar({
   const delta = previousScore != null ? readinessScore - previousScore : null
 
   return (
-    <div className="w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col">
-
+    <div className='w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col'>
       {/* ── Top row: Ring | Greeting+Stats | Heatmap ──────────────── */}
-      <div className="flex items-stretch w-full flex-1">
-
+      <div className='flex items-stretch w-full flex-1'>
         {/* SECTION 1: Readiness Score Ring */}
         <Tooltip>
           <TooltipTrigger asChild>
-            <div className="flex flex-col items-center justify-center gap-1.5 px-6 py-5 cursor-default shrink-0">
-              <div className="flex items-center gap-1">
-                <p className="font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-[0.15em]">
+            <div className='flex flex-col items-center justify-start gap-1.5 px-6 py-4 cursor-default shrink-0'>
+              <div className='flex items-center gap-1'>
+                <p className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-[0.15em]'>
                   Readiness Score
                 </p>
                 <span
-                  className="inline-flex items-center justify-center h-3.5 w-3.5 rounded-full border border-white/30 text-white/40 text-[9px] font-medium cursor-default"
-                  aria-label="What is Readiness Score?"
+                  className='inline-flex items-center justify-center h-3.5 w-3.5 rounded-full border border-white/30 text-white/40 text-[9px] font-medium cursor-default'
+                  aria-label='What is Readiness Score?'
                 >
                   ?
                 </span>
               </div>
               <ReadinessRing score={readinessScore} />
-              <span className="text-white/70 text-[11px] font-medium">{label}</span>
+              <span className='text-white/70 text-[11px] font-medium'>
+                {label}
+              </span>
               {delta != null && Math.abs(delta) >= 1 && (
                 <span
-                  className="text-[11px] font-medium"
-                  style={{ color: delta > 0 ? '#8FE5B0' : 'rgba(255,255,255,0.5)' }}
+                  className='text-[11px] font-medium'
+                  style={{
+                    color: delta > 0 ? '#8FE5B0' : 'rgba(255,255,255,0.5)',
+                  }}
                 >
                   {delta > 0 ? `+${delta}` : delta} since last session
                 </span>
               )}
             </div>
           </TooltipTrigger>
-          <TooltipContent side="bottom">
-            Your Readiness Score is a real-time calculation of how prepared you are for the board exam, based on your quiz accuracy across all ALE topics.
+          <TooltipContent side='bottom'>
+            Your Readiness Score is a real-time calculation of how prepared you
+            are for the board exam, based on your quiz accuracy across all ALE
+            topics.
           </TooltipContent>
         </Tooltip>
 
         {/* Divider 1 */}
-        <div className="w-px bg-white/15 self-stretch my-4" />
+        <div className='w-px bg-white/15 self-stretch my-4' />
 
         {/* SECTION 2: Greeting + Stats */}
-        <div className="flex flex-col justify-center py-4 px-5 min-w-0 shrink-0" style={{ width: 260 }}>
-          <div className="mb-2">
-            <p className="font-dm-mono text-white/50 text-[11px] font-medium uppercase tracking-[0.2em]">
+        <div
+          className='flex flex-col justify-start py-4 px-5 min-w-0 shrink-0'
+          style={{ width: 260 }}
+        >
+          <div className=''>
+            <p className='font-dm-mono text-white/50 text-[11px] font-medium uppercase tracking-[0.2em]'>
               {greeting}
             </p>
-            <h1 className="font-syne text-white text-xl font-extrabold tracking-tight">
+            <h1 className='font-syne text-white text-xl font-extrabold tracking-tight'>
               {userName.charAt(0).toUpperCase() + userName.slice(1)}.
             </h1>
             {daysUntilExam != null && (
-              <p className="font-dm-mono text-white/40 text-[11px] font-medium mt-0.5">
+              <p className='font-dm-mono text-white/40 text-[11px] font-medium mt-0.5'>
                 {daysUntilExam} days until exam
               </p>
             )}
           </div>
-
-          <div className="flex items-center gap-4">
+          <div className='h-px bg-white/15 self-stretch my-4' />
+          <div className='flex items-start justify-start flex-col gap-3  '>
+            <p className='font-dm-mono text-white/40 text-[12px] font-bold uppercase tracking-wider'>
+              Weekly Stats
+            </p>
             {heroStats.map((stat) => (
               <Tooltip key={stat.label}>
                 <TooltipTrigger asChild>
-                  <div className="flex flex-col cursor-default">
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-white text-base font-bold tabular-nums">{stat.value}</span>
+                  <div className='flex flex-col cursor-default'>
+                    <div className='flex items-baseline gap-1.5'>
+                      <span className='text-white text-base font-bold tabular-nums'>
+                        {stat.value}
+                      </span>
+                      <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider'>
+                        {stat.label}
+                      </span>
                       {stat.delta != null && stat.delta !== 0 && (
                         <span
-                          className="text-[11px] font-semibold"
-                          style={{ color: stat.delta > 0 ? '#F5A623' : 'rgba(255,255,255,0.4)' }}
+                          className='text-[11px] font-semibold'
+                          style={{
+                            color:
+                              stat.delta > 0
+                                ? '#F5A623'
+                                : 'rgba(255,255,255,0.4)',
+                          }}
                         >
                           {stat.delta > 0 ? `+${stat.delta}` : stat.delta}
                         </span>
                       )}
                     </div>
-                    <span className="font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider">
-                      {stat.label}
-                    </span>
+                    {stat.description ? (
+                      <span className='text-white/30 text-[11px]'>
+                        {stat.description}
+                      </span>
+                    ) : null}
                   </div>
                 </TooltipTrigger>
-                <TooltipContent side="bottom">{stat.tooltip}</TooltipContent>
+                <TooltipContent side='bottom'>{stat.tooltip}</TooltipContent>
               </Tooltip>
             ))}
           </div>
         </div>
 
         {/* Divider 2 */}
-        {children && <div className="w-px bg-white/15 self-stretch my-4" />}
+        {children && <div className='w-px bg-white/15 self-stretch my-4' />}
 
         {/* SECTION 3: Study Activity Heatmap */}
         {children && (
-          <div className="flex-1 min-w-0 py-3 px-4 overflow-hidden">
+          <div className='flex-1 min-w-0 py-3 px-4 overflow-hidden'>
             {children}
           </div>
         )}
       </div>
 
       {/* ── Bottom row: Syllabus progress bar (full width) ────────── */}
-      <div className="border-t border-white/10">
+      <div className='border-t border-white/10'>
         <Tooltip>
           <TooltipTrigger asChild>
-            <div className="flex items-center gap-3 px-6 py-2.5 cursor-default">
-              <span className="font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider shrink-0">
+            <div className='flex items-center gap-3 px-6 py-2.5 cursor-default'>
+              <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider shrink-0'>
                 ALE Syllabus
               </span>
-              <div className="h-1.5 flex-1 rounded-full overflow-hidden bg-white/10">
+              <div className='h-1.5 flex-1 rounded-full overflow-hidden bg-white/10'>
                 <div
-                  className="h-full rounded-full"
+                  className='h-full rounded-full'
                   style={{
                     width: `${Math.max(syllabusCoveragePercent, 1)}%`,
                     backgroundColor: '#F5A623',
@@ -207,47 +246,47 @@ export function HeroCommandBar({
                   }}
                 />
               </div>
-              <span className="font-dm-mono text-white/60 text-[11px] font-medium tabular-nums shrink-0">
+              <span className='font-dm-mono text-white/60 text-[11px] font-medium tabular-nums shrink-0'>
                 {syllabusCoveragePercent}% explored
               </span>
             </div>
           </TooltipTrigger>
-          <TooltipContent side="bottom">
-            Percentage of the 102 ALE topic areas you&apos;ve attempted at least one question in.
+          <TooltipContent side='bottom'>
+            Percentage of the 102 ALE topic areas you&apos;ve attempted at least
+            one question in.
           </TooltipContent>
         </Tooltip>
       </div>
-
     </div>
   )
 }
 
 export function HeroCommandBarSkeleton() {
   return (
-    <div className="w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col">
-      <div className="flex items-stretch flex-1">
-        <div className="flex flex-col items-center gap-2 px-6 py-5">
-          <Skeleton className="h-3 w-24 bg-white/10" />
-          <Skeleton className="h-[120px] w-[120px] rounded-full bg-white/10" />
-          <Skeleton className="h-3 w-20 bg-white/10" />
+    <div className='w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col'>
+      <div className='flex items-stretch flex-1'>
+        <div className='flex flex-col items-center gap-2 px-6 py-5'>
+          <Skeleton className='h-3 w-24 bg-white/10' />
+          <Skeleton className='h-[120px] w-[120px] rounded-full bg-white/10' />
+          <Skeleton className='h-3 w-20 bg-white/10' />
         </div>
-        <div className="w-px bg-white/15 self-stretch my-4" />
-        <div className="py-4 px-5 space-y-3" style={{ width: 260 }}>
-          <Skeleton className="h-3 w-24 bg-white/10" />
-          <Skeleton className="h-6 w-32 bg-white/10" />
-          <div className="flex gap-4">
-            <Skeleton className="h-7 w-14 bg-white/10" />
-            <Skeleton className="h-7 w-14 bg-white/10" />
-            <Skeleton className="h-7 w-14 bg-white/10" />
+        <div className='w-px bg-white/15 self-stretch my-4' />
+        <div className='py-4 px-5 space-y-3' style={{ width: 260 }}>
+          <Skeleton className='h-3 w-24 bg-white/10' />
+          <Skeleton className='h-6 w-32 bg-white/10' />
+          <div className='flex gap-4'>
+            <Skeleton className='h-7 w-14 bg-white/10' />
+            <Skeleton className='h-7 w-14 bg-white/10' />
+            <Skeleton className='h-7 w-14 bg-white/10' />
           </div>
         </div>
-        <div className="w-px bg-white/15 self-stretch my-4" />
-        <div className="flex-1 p-4">
-          <Skeleton className="h-full w-full bg-white/10 rounded" />
+        <div className='w-px bg-white/15 self-stretch my-4' />
+        <div className='flex-1 p-4'>
+          <Skeleton className='h-full w-full bg-white/10 rounded' />
         </div>
       </div>
-      <div className="border-t border-white/10 px-6 py-2.5">
-        <Skeleton className="h-1.5 w-full bg-white/10 rounded-full" />
+      <div className='border-t border-white/10 px-6 py-2.5'>
+        <Skeleton className='h-1.5 w-full bg-white/10 rounded-full' />
       </div>
     </div>
   )

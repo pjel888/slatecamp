@@ -4,7 +4,7 @@ import { ROUTES } from '@/lib/constants/routes'
 
 export const PersonalWorkspaceLink = () => {
   return (
-    <Card className='border-zinc-200 bg-zinc-50 shadow-none'>
+    <Card className='border-0 bg-zinc-50 shadow-none'>
       <CardContent className='flex flex-col items-start justify-between gap-3 py-3 sm:flex-row sm:items-center'>
         <div className='space-y-1'>
           <p className='text-sm font-medium tracking-tight text-zinc-900'>

@@ -49,7 +49,7 @@ export function ContinueSessionCardNew({ session }: ContinueSessionCardProps) {
       : 0
 
   return (
-    <Card className="border p-3 bg-white h-full" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3 bg-white h-full">
       <p
         className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] mb-2"
         style={{ color: '#8896A7' }}
@@ -102,7 +102,7 @@ export function ContinueSessionCardNew({ session }: ContinueSessionCardProps) {
 
 export function ContinueSessionCardSkeleton() {
   return (
-    <Card className="border p-3 h-full" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3 h-full">
       <Skeleton className="h-3 w-20 mb-2" />
       <Skeleton className="h-4 w-48 mb-2" />
       <Skeleton className="h-1 w-full rounded-full mb-2" />

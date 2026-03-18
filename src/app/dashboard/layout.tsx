@@ -86,7 +86,7 @@ async function DashboardLayoutContent({
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
-          <div className='flex h-screen overflow-hidden bg-muted text-gray-900 font-sans selection:bg-gray-200'>
+          <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200' style={{ backgroundColor: '#FFFDF7' }}>
             <Sidebar
               isAdmin={isAdmin}
               isDevMode={showDevTools}

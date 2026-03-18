@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export const PredictiveRemediationCTA = () => {
   return (
-    <Card className='border-zinc-200 bg-zinc-50 shadow-none'>
+    <Card className='border-0 bg-zinc-50 shadow-none'>
       <CardContent className='flex flex-col  gap-3 py-3 sm:flex-row sm:items-center sm:justify-between'>
         <div className='space-y-1'>
           <p className='text-sm font-medium tracking-tight text-zinc-900'>

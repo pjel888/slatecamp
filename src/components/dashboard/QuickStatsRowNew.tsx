@@ -32,10 +32,9 @@ export function QuickStatsRowNew({
 
   return (
     <Card
-      className="border p-3 bg-white"
-      style={{ borderColor: '#D4DAE3' }}
+      className="p-3 bg-white"
     >
-      <div className="grid grid-cols-3 divide-x" style={{ borderColor: '#D4DAE3' }}>
+      <div className="grid grid-cols-3 divide-x divide-border">
         {stats.map((stat) => (
           <div key={stat.label} className="flex flex-col items-center px-2 py-1">
             <span
@@ -59,8 +58,8 @@ export function QuickStatsRowNew({
 
 export function QuickStatsRowSkeleton() {
   return (
-    <Card className="border p-3" style={{ borderColor: '#D4DAE3' }}>
-      <div className="grid grid-cols-3 divide-x" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3">
+      <div className="grid grid-cols-3 divide-x divide-border">
         {[1, 2, 3].map((i) => (
           <div key={i} className="flex flex-col items-center px-2 py-1 gap-1">
             <Skeleton className="h-6 w-12" />

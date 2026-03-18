@@ -46,7 +46,7 @@ interface RecentActivityFeedProps {
  */
 export function RecentActivityFeedNew({ sessions }: RecentActivityFeedProps) {
   return (
-    <Card className="border p-3 bg-white h-full" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3 bg-white h-full">
       <p
         className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] mb-2"
         style={{ color: '#8896A7' }}
@@ -68,8 +68,7 @@ export function RecentActivityFeedNew({ sessions }: RecentActivityFeedProps) {
             return (
               <div
                 key={session.sessionId}
-                className="flex items-center gap-2.5 py-1 border-b last:border-b-0"
-                style={{ borderColor: '#F2F0EB' }}
+                className="flex items-center gap-2.5 py-1 border-b last:border-b-0 border-page-bg"
               >
                 <div
                   className="shrink-0 rounded p-1"
@@ -104,7 +103,7 @@ export function RecentActivityFeedNew({ sessions }: RecentActivityFeedProps) {
 
 export function RecentActivityFeedSkeleton() {
   return (
-    <Card className="border p-3 h-full" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3 h-full">
       <Skeleton className="h-3 w-24 mb-2" />
       {[1, 2, 3, 4].map((i) => (
         <div key={i} className="flex items-center gap-2.5 py-1.5">

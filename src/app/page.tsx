@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} — The ALE Readiness Intelligence Platform`,
     description:
-      'The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you\'re genuinely ready — before exam day.',
+      "The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you're genuinely ready — before exam day.",
     type: 'website',
     siteName: siteConfig.name,
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${siteConfig.name} — Stop Studying Blind. Know Your Score.`,
     description:
-      'The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you\'re genuinely ready — before exam day.',
+      "The only ALE prep platform with a real-time Readiness Score. Know exactly where you stand, what to fix, and when you're genuinely ready — before exam day.",
   },
   keywords: [
     'architecture board exam prep',
@@ -65,10 +65,7 @@ async function LandingPageContent() {
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Join the Camp — Free'
 
   return (
-    <div
-      id='top'
-      className='min-h-screen bg-[#F2F0EB]'
-    >
+    <div id='top' className='min-h-screen bg-page-bg'>
       {/* ────────────────────── NAVIGATION ────────────────────── */}
       <MarketingNav activeRoute='/' logoScrollsToTop />
 

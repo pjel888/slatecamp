@@ -94,6 +94,14 @@
   --color-ink:         #18181B;
   --color-border-design: #E8E4DC;
 
+  /* Camp Standard — Dashboard card colors */
+  --color-card-article:        #eca83b;
+  --color-card-article-border: #d4922e;
+  --color-card-notes:          #45885c;
+  --color-card-notes-border:   #3a7450;
+  --color-card-lab:            #428894;
+  --color-card-lab-border:     #377380;
+
   /* Camp Standard — Font families */
   --font-display: 'Syne', sans-serif;
   --font-dm-mono: 'DM Mono', monospace;
@@ -202,6 +210,7 @@
   /* Camp Standard — Bold Color System */
   --camp-black:  #111111;
   --camp-cobalt: #1B3FC4;
+  --camp-cobalt-light: #2A5BD7;
   --camp-red:    #E63329;
   --camp-green:  #1B7A3C;
   --camp-amber:  #F5A623;
@@ -268,6 +277,8 @@
   /* Campfire — NEW tokens (dark) */
   --camp-orange: #F0A060;
   --camp-orange-hover: #E89040;
+  --camp-cobalt: #5B7FE0;
+  --camp-cobalt-light: #7B9AEA;
   --emerald: #4DBF8F;
   --emerald-50: rgba(45, 159, 111, 0.15);
   --slate-blue-50: rgba(27, 63, 196, 0.15);

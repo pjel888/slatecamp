@@ -160,7 +160,7 @@ export const MetricSmall = ({
   const copy = COPY_MAP[iconName as keyof typeof COPY_MAP]
 
   return (
-    <Card className='border-border bg-white p-2 relative'>
+    <Card className='border-0 bg-white p-2 relative'>
       <RichInfoPopover title={copy.title} description={copy.desc} />
       <div className='flex items-center gap-2'>
         <div
@@ -222,7 +222,7 @@ export const ActionTall = ({
   const copy = COPY_MAP[iconName as keyof typeof COPY_MAP]
 
   return (
-    <Card className='border-border bg-white p-2 flex flex-col justify-between hover:border-primary/20 hover:bg-[#EEF2FC]/20 transition-all cursor-pointer group flex-1 relative'>
+    <Card className='border-0 bg-white p-2 flex flex-col justify-between hover:bg-[#EEF2FC]/20 transition-all cursor-pointer group flex-1 relative'>
       <RichInfoPopover title={copy.title} description={copy.desc} />
       <div>
         <div className='p-1.5 rounded-sm bg-[#EEF2FC] group-hover:bg-[#E3ECF5] w-fit'>
@@ -272,7 +272,7 @@ export const UnifiedReadinessCard = ({
         : 'down'
 
   return (
-    <Card className='border-border bg-white overflow-hidden flex flex-col p-2 relative'>
+    <Card className='border-0 bg-white overflow-hidden flex flex-col p-2 relative'>
       <RichInfoPopover
         title='Your Readiness Score'
         description='A composite score combining recent performance trends and question difficulty. The more you practice, the more accurate this becomes.'
@@ -464,7 +464,7 @@ export const PredictiveRemediationCard = () => (
 )
 
 export const DailyCrucibleCard = () => (
-  <Card className='border-border bg-white p-2 h-[128px] flex flex-col gap-2 relative'>
+  <Card className='border-0 bg-white p-2 h-[128px] flex flex-col gap-2 relative'>
     <RichInfoPopover
       title='Daily Challenge'
       description='One carefully chosen question from a topic that will stretch your thinking today.'
@@ -494,7 +494,7 @@ export const DailyCrucibleCard = () => (
 )
 
 export const PacingLeaksCard = () => (
-  <Card className='border-border bg-white p-2 relative h-[128px]'>
+  <Card className='border-0 bg-white p-2 relative h-[128px]'>
     <RichInfoPopover
       title='Pacing Insights'
       description='Shows your average time per question compared to the exam target — helpful for knowing when to move on.'
@@ -523,7 +523,7 @@ export const PacingLeaksCard = () => (
 )
 
 export const PinnedRecentActivity = () => (
-  <Card className='border-border bg-white flex-1 flex flex-col overflow-hidden h-full p-2 relative'>
+  <Card className='border-0 bg-white flex-1 flex flex-col overflow-hidden h-full p-2 relative'>
     <RichInfoPopover
       title='Recent Activity'
       description='A record of your recent sessions, notes, and wiki reads.'

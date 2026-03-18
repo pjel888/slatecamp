@@ -8,6 +8,8 @@
 export interface HeroMicroStat {
   value: number
   label: string
+  /** Inline description shown directly below the stat — no hover needed */
+  description: string
   delta: number | null
   tooltip: string
 }

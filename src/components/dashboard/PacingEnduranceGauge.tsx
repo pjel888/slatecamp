@@ -41,7 +41,7 @@ export const PacingEnduranceGauge = ({
         : 'Your pace is stable. The goal now is to extend your endurance window.'
 
   return (
-    <Card className='border-[#D4DAE3] bg-white shadow-none'>
+    <Card className='border-0 bg-white shadow-none'>
       <CardHeader className='pb-2'>
         <CardTitle className='text-sm font-medium tracking-tight' style={{ color: '#4A5568' }}>
           Pacing &amp; Endurance

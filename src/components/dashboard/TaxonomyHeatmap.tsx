@@ -33,7 +33,7 @@ export const TaxonomyHeatmap = ({
   onNodeSelect,
 }: TaxonomyHeatmapProps) => {
   return (
-    <Card className='border-border bg-white shadow-none'>
+    <Card className='border-0 bg-white shadow-none'>
       <CardHeader className='flex flex-row items-start justify-between gap-4 pb-2'>
         <div>
           <CardTitle className='text-sm font-medium tracking-tight text-[#4A5568]'>

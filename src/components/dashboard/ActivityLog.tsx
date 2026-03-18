@@ -14,7 +14,7 @@ const MOCK_LOG = [
 
 export const ActivityLog = () => {
   return (
-    <Card className='border-zinc-200 bg-white shadow-none'>
+    <Card className='border-0 bg-white shadow-none'>
       <CardHeader className='pb-2'>
         <CardTitle className='text-[11px] font-bold tracking-wider text-zinc-500 uppercase'>
           Recent Activity

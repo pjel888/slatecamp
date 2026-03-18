@@ -1,5 +1,10 @@
 # SLATECAMP: CORE SYSTEM PROMPT & ROUTING PROTOCOL
 
+## 0. BROWSER & PREVIEW RULES
+
+- **NEVER use `mcp__Claude_Preview__*` tools.** Always use `mcp__Claude_in_Chrome__*` (Chrome MCP) for all browser interaction, screenshots, and verification.
+- When you need to verify UI changes, use Chrome MCP to navigate to the running dev server URL — do NOT start your own preview server.
+
 ## 1. OPERATING CONTEXT & IDENTITY
 
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams.

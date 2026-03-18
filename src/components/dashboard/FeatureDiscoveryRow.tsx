@@ -2,7 +2,11 @@
 
 import Link from 'next/link'
 import { Card } from '@/components/ui/card'
-import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
 import type { DailyWikiArticle, NotePreview } from '@/types/dashboard'
 
@@ -10,47 +14,143 @@ import type { DailyWikiArticle, NotePreview } from '@/types/dashboard'
 
 interface DailyWikiCardProps {
   article: DailyWikiArticle | null
+  moduleCount: number
+  notes: NotePreview[]
+  totalNoteCount?: number
 }
 
-export function DailyWikiCard({ article }: DailyWikiCardProps) {
+export function DailyWikiCard({
+  article,
+  moduleCount,
+  notes,
+  totalNoteCount,
+}: DailyWikiCardProps) {
   return (
-    <Card className="border-0 p-4 overflow-hidden relative" style={{ backgroundColor: '#0F1F5C' }}>
-      <div className="flex items-center gap-1.5 mb-0.5">
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <h3 className="text-sm font-semibold text-white cursor-default">
-              Today&apos;s article
-            </h3>
-          </TooltipTrigger>
-          <TooltipContent side="top">
-            A different expert-written article from the SlateCamp Wiki every day. Reading one article per session is one of the fastest ways to fill your heatmap gaps.
-          </TooltipContent>
-        </Tooltip>
-      </div>
-      <p className="text-[11px] text-white/50 mb-3">
-        From the SlateCamp Wiki — updated daily
-      </p>
+    <Card className='overflow-hidden relative h-full flex flex-col bg-white gap-2 p-2 border-0'>
+      {/* ── 1/3: Today's Article (Camp Orange) ─────────────────────── */}
+      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-article border border-card-article-border'>
+        {/* Animated circles/oblongs */}
+        <div className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20'>
+          <div className='w-full h-full border-2 border-white rounded-full animate-[spin_12s_linear_infinite]' />
+          <div className='absolute inset-0 w-8 h-5 top-2.5 left-1 border border-white/60 rounded-full animate-[spin_8s_linear_infinite_reverse]' />
+        </div>
 
-      {article ? (
-        <>
-          <p className="text-sm font-semibold text-white leading-tight mb-1.5">
-            {article.title}
+        <div className='flex items-center gap-1.5 mb-0.5'>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] cursor-default text-white/80'>
+                [ Today&apos;s Article ]
+              </h3>
+            </TooltipTrigger>
+            <TooltipContent side='top'>
+              A different expert-written article from the SlateCamp Wiki every
+              day. Reading one article per session is one of the fastest ways to
+              fill your heatmap gaps.
+            </TooltipContent>
+          </Tooltip>
+        </div>
+        <p className='text-[11px] mb-2 text-white/60'>
+          From the SlateCamp Wiki — updated daily
+        </p>
+        {article ? (
+          <>
+            <p className='text-sm font-semibold leading-tight mb-1.5 text-white'>
+              {article.title}
+            </p>
+            <p className='text-xs leading-snug line-clamp-3 text-white/80'>
+              {article.excerpt}
+            </p>
+          </>
+        ) : (
+          <p className='text-xs text-white/60'>
+            Your wiki is being set up. Articles will appear here soon.
           </p>
-          <p className="text-xs text-white/70 leading-snug line-clamp-3 mb-3">
-            {article.excerpt}
-          </p>
+        )}
+        <div className='mt-auto flex justify-end'>
           <Link
-            href={`/dashboard/wiki/${article.slug}`}
-            className="text-[11px] font-medium text-white/90 underline underline-offset-2"
+            href={article ? `/dashboard/wiki/${article.slug}` : '/dashboard/wiki'}
+            className='text-[11px] font-medium underline underline-offset-2 text-white/90'
           >
             Read article →
           </Link>
-        </>
-      ) : (
-        <p className="text-xs text-white/50 py-4">
-          Your wiki is being set up. Articles will appear here soon.
+        </div>
+      </div>
+
+      {/* ── 1/3: Notes (Signal Green bg) ───────────────────────────── */}
+      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-notes border border-card-notes-border'>
+        {/* Animated triangles */}
+        <svg className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20 animate-[spin_14s_linear_infinite]' viewBox='0 0 40 40' fill='none'>
+          <polygon points='20,4 36,34 4,34' stroke='white' strokeWidth='2' />
+        </svg>
+        <svg className='absolute right-4 top-4 w-6 h-6 pointer-events-none opacity-15 animate-[spin_9s_linear_infinite_reverse]' viewBox='0 0 24 24' fill='none'>
+          <polygon points='12,2 22,20 2,20' stroke='white' strokeWidth='1.5' />
+        </svg>
+
+        <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] mb-0.5 text-white/80'>
+          [ Your Notes ]
+        </h4>
+        <p className='text-[11px] mb-2 text-white/70'>
+          Captured from your study sessions
         </p>
-      )}
+        {notes.length === 0 ? (
+          <p className='text-[11px] text-white/70'>
+            Highlight text in the Wiki to save your first note.
+          </p>
+        ) : (
+          <div className='space-y-1.5'>
+            {notes.map((note) => (
+              <div key={note.noteId} className='rounded-sm p-2 bg-white/25'>
+                <p className='text-xs font-medium truncate text-white'>
+                  {note.title}
+                </p>
+                <p className='text-[11px] line-clamp-1 mt-0.5 text-white/70'>
+                  {note.snippet}
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
+        <div className='mt-auto flex justify-end'>
+          <Link
+            href='/dashboard/notes'
+            className='text-[11px] font-medium underline underline-offset-2 text-white/90'
+          >
+            {notes.length > 0 ? `Open all ${totalNoteCount ?? notes.length} notes →` : 'Open notes →'}
+          </Link>
+        </div>
+      </div>
+
+      {/* ── 1/3: 3D Lab (Teal) ──────────────────────────────────────── */}
+      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-lab border border-card-lab-border'>
+        {/* Animated geometric shape */}
+        <div className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20'>
+          <div className='w-full h-full border-2 border-white rounded-sm animate-[spin_12s_linear_infinite]' />
+          <div className='absolute inset-1 border border-white/60 rounded-sm animate-[spin_8s_linear_infinite_reverse]' />
+        </div>
+
+        <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] mb-0.5 text-white/80'>
+          [ 3D Lab ]
+        </h4>
+        <p className='text-[11px] text-white/50 mb-2'>
+          Interactive architectural models
+        </p>
+        <p className='text-xs text-white/70 leading-snug'>
+          Explore building codes, structural systems, and spatial concepts
+          through interactive 3D models you can rotate, cut, and explore.
+        </p>
+
+        <div className='mt-auto flex items-center justify-between'>
+          <span className='font-dm-mono text-[11px] text-white/50'>
+            {moduleCount > 0 ? `${moduleCount} modules` : '186 modules planned'}
+          </span>
+          <Link
+            href='/dashboard/3d-lab'
+            className='text-[11px] font-medium text-white/90 underline underline-offset-2'
+          >
+            Explore 3D Lab →
+          </Link>
+        </div>
+      </div>
     </Card>
   )
 }
@@ -63,68 +163,46 @@ interface LabPreviewCardProps {
 
 export function LabPreviewCard({ moduleCount }: LabPreviewCardProps) {
   return (
-    <Card
-      className="border-0 p-4 overflow-hidden relative"
-      style={{
-        background: 'linear-gradient(135deg, #1B3FC4 0%, #2A5BD7 100%)',
-      }}
-    >
-      <div className="flex items-center gap-1.5 mb-0.5">
+    <Card className='border-0 p-4 overflow-hidden relative bg-gradient-to-br from-camp-cobalt to-[#2A5BD7]'>
+      <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>
-            <h3 className="text-sm font-semibold text-white cursor-default">
+            <h3 className='text-sm font-semibold text-white cursor-default'>
               3D Lab
             </h3>
           </TooltipTrigger>
-          <TooltipContent side="top">
-            SlateCamp&apos;s interactive 3D models let you explore building codes and structural systems spatially — not just read about them.
+          <TooltipContent side='top'>
+            SlateCamp&apos;s interactive 3D models let you explore building
+            codes and structural systems spatially — not just read about them.
           </TooltipContent>
         </Tooltip>
       </div>
-      <p className="text-[11px] text-white/50 mb-3">
+      <p className='text-[11px] text-white/50 mb-3'>
         Interactive architectural models
       </p>
 
-      <p className="text-xs text-white/70 leading-snug mb-3">
+      <p className='text-xs text-white/70 leading-snug mb-3'>
         Explore building codes, structural systems, and spatial concepts through
         interactive 3D models you can rotate, cut, and explore.
       </p>
 
       {/* CSS animated geometric shape */}
-      <div className="absolute right-3 top-3 w-12 h-12 pointer-events-none opacity-20">
-        <div
-          className="w-full h-full border-2 border-white rounded-sm"
-          style={{
-            animation: 'spin 12s linear infinite',
-            transformOrigin: 'center',
-          }}
-        />
-        <div
-          className="absolute inset-1 border border-white/60 rounded-sm"
-          style={{
-            animation: 'spin 8s linear infinite reverse',
-          }}
-        />
+      <div className='absolute right-3 top-3 w-12 h-12 pointer-events-none opacity-20'>
+        <div className='w-full h-full border-2 border-white rounded-sm origin-center animate-[spin_12s_linear_infinite]' />
+        <div className='absolute inset-1 border border-white/60 rounded-sm animate-[spin_8s_linear_infinite_reverse]' />
       </div>
 
-      <div className="flex items-center justify-between">
-        <span className="font-dm-mono text-[11px] text-white/50">
+      <div className='flex items-center justify-between'>
+        <span className='font-dm-mono text-[11px] text-white/50'>
           {moduleCount > 0 ? `${moduleCount} modules` : '186 modules planned'}
         </span>
         <Link
-          href="/dashboard/3d-lab"
-          className="text-[11px] font-medium text-white/90 underline underline-offset-2"
+          href='/dashboard/3d-lab'
+          className='text-[11px] font-medium text-white/90 underline underline-offset-2'
         >
           Explore 3D Lab →
         </Link>
       </div>
-
-      <style>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </Card>
   )
 }
@@ -136,57 +214,64 @@ interface RecentNotesCardProps {
   totalNoteCount?: number
 }
 
-export function RecentNotesCard({ notes, totalNoteCount }: RecentNotesCardProps) {
+export function RecentNotesCard({
+  notes,
+  totalNoteCount,
+}: RecentNotesCardProps) {
   return (
-    <Card className="border p-4" style={{ borderColor: '#D4DAE3', backgroundColor: '#F2F0EB' }}>
-      <div className="flex items-center gap-1.5 mb-0.5">
+    <Card className='border border-border p-4 bg-page-bg'>
+      <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>
-            <h3 className="text-sm font-semibold cursor-default" style={{ color: '#1A2332' }}>
+            <h3 className='text-sm font-semibold cursor-default text-text-primary'>
               Your Notes
             </h3>
           </TooltipTrigger>
-          <TooltipContent side="top">
-            Notes you&apos;ve saved while reading articles in the Wiki or reviewing quiz explanations. Everything is tagged to the ALE taxonomy automatically.
+          <TooltipContent side='top'>
+            Notes you&apos;ve saved while reading articles in the Wiki or
+            reviewing quiz explanations. Everything is tagged to the ALE
+            taxonomy automatically.
           </TooltipContent>
         </Tooltip>
       </div>
-      <p className="text-[11px] mb-3" style={{ color: '#8896A7' }}>
+      <p className='text-[11px] mb-3 text-text-tertiary'>
         Captured from your study sessions
       </p>
 
       {notes.length === 0 ? (
-        <div className="py-3">
-          <p className="text-xs mb-2" style={{ color: '#4A5568' }}>
-            Your notes workspace is ready. Highlight any text in the Wiki to save your first note.
+        <div className='py-3'>
+          <p className='text-xs mb-2 text-text-secondary'>
+            Your notes workspace is ready. Highlight any text in the Wiki to
+            save your first note.
           </p>
           <Link
-            href="/dashboard/notes"
-            className="text-[11px] font-medium underline underline-offset-2"
-            style={{ color: '#1B3FC4' }}
+            href='/dashboard/notes'
+            className='text-[11px] font-medium underline underline-offset-2 text-accent-blue'
           >
             Open Notes →
           </Link>
         </div>
       ) : (
         <>
-          <div className="space-y-2">
+          <div className='space-y-2'>
             {notes.map((note) => (
-              <div key={note.noteId} className="bg-white rounded-sm p-2 border" style={{ borderColor: '#D4DAE3' }}>
-                <p className="text-xs font-medium truncate" style={{ color: '#1A2332' }}>
+              <div
+                key={note.noteId}
+                className='bg-white rounded-sm p-2 border border-border'
+              >
+                <p className='text-xs font-medium truncate text-text-primary'>
                   {note.title}
                 </p>
-                <p className="text-[11px] mt-0.5 line-clamp-1" style={{ color: '#8896A7' }}>
+                <p className='text-[11px] mt-0.5 line-clamp-1 text-text-tertiary'>
                   {note.snippet}
                 </p>
               </div>
             ))}
           </div>
-          <div className="mt-2 pt-2">
+          <div className='mt-2 pt-2'>
             <Link
-              href="/dashboard/notes"
-              className="text-[11px] font-medium underline underline-offset-2"
-              style={{ color: '#1B3FC4' }}
+              href='/dashboard/notes'
+              className='text-[11px] font-medium underline underline-offset-2 text-accent-blue'
             >
               Open all {totalNoteCount ?? notes.length} notes →
             </Link>
@@ -201,13 +286,13 @@ export function RecentNotesCard({ notes, totalNoteCount }: RecentNotesCardProps)
 
 export function FeatureDiscoverySkeleton() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
+    <div className='grid grid-cols-1 md:grid-cols-3 gap-2 w-full'>
       {[1, 2, 3].map((i) => (
-        <Card key={i} className="border p-4" style={{ borderColor: '#D4DAE3' }}>
-          <Skeleton className="h-4 w-28 mb-1" />
-          <Skeleton className="h-3 w-40 mb-3" />
-          <Skeleton className="h-12 w-full mb-2" />
-          <Skeleton className="h-3 w-24" />
+        <Card key={i} className='p-4'>
+          <Skeleton className='h-4 w-28 mb-1' />
+          <Skeleton className='h-3 w-40 mb-3' />
+          <Skeleton className='h-12 w-full mb-2' />
+          <Skeleton className='h-3 w-24' />
         </Card>
       ))}
     </div>

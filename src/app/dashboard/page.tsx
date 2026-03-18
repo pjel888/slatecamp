@@ -5,55 +5,60 @@ import { HeatmapSection, HeatmapSectionSkeleton } from '@/components/dashboard/H
 import { NextMissionCard } from '@/components/dashboard/NextMissionCard'
 import { FocusAreasCard } from '@/components/dashboard/FocusAreasCard'
 import { ImprovedActivityFeed } from '@/components/dashboard/ImprovedActivityFeed'
-import { DailyWikiCard, LabPreviewCard, RecentNotesCard } from '@/components/dashboard/FeatureDiscoveryRow'
+import { DailyWikiCard } from '@/components/dashboard/FeatureDiscoveryRow'
+import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
   const data = await getDashboardPageData()
 
   return (
-    <div className="relative h-full w-full">
-      {/* Dotted grid background */}
-      <div
-        className="pointer-events-none absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at center, rgba(24,24,27,0.08) 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-        }}
-        aria-hidden="true"
-      />
+    <SharedPageLayout>
+    <div className="flex flex-col gap-2 w-full h-full min-h-0">
 
-      <div className="relative z-10 flex flex-col gap-2 p-2 w-full">
+      {/* ── 1. Hero: Score + Greeting + Heatmap in one banner ────── */}
+      <HeroCommandBar
+        userName={data.userName}
+        readinessScore={data.readinessScore}
+        previousScore={data.previousScore}
+        daysUntilExam={data.daysUntilExam}
+        heroStats={data.heroStats}
+        syllabusCoveragePercent={data.syllabusCoveragePercent}
+      >
+        <Suspense fallback={<HeatmapSectionSkeleton />}>
+          <HeatmapSection />
+        </Suspense>
+      </HeroCommandBar>
 
-        {/* ── 1. Hero: Score + Greeting + Heatmap in one banner ────── */}
-        <HeroCommandBar
-          userName={data.userName}
-          readinessScore={data.readinessScore}
-          previousScore={data.previousScore}
-          daysUntilExam={data.daysUntilExam}
-          heroStats={data.heroStats}
-          syllabusCoveragePercent={data.syllabusCoveragePercent}
-        >
-          <Suspense fallback={<HeatmapSectionSkeleton />}>
-            <HeatmapSection />
-          </Suspense>
-        </HeroCommandBar>
+      {/* ── 2. Content: 4-column grid ───────────────────────────── */}
+      {/*   Col 1: Resume + Notes (stacked)                         */}
+      {/*   Col 2: Today's Article (full height)                    */}
+      {/*   Col 3: Focus Areas + 3D Lab (stacked)                  */}
+      {/*   Col 4: Recent Activity (full height)                   */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full flex-1 min-h-0">
 
-        {/* ── 2. Action cards row ─────────────────────────────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+        {/* Column 1: Today's Article + 3D Lab (full height) */}
+        <div className="h-full">
+          <DailyWikiCard article={data.dailyArticle} moduleCount={data.labModuleCount} notes={data.recentNotes} />
+        </div>
+
+        {/* Column 2: Resume */}
+        <div className="flex flex-col gap-2">
           <NextMissionCard action={data.action} />
+        </div>
+
+        {/* Column 3: Focus Areas */}
+        <div className="flex flex-col gap-2">
           <FocusAreasCard areas={data.focusAreas} />
+        </div>
+
+        {/* Column 4: Recent Activity (full height) */}
+        <div className="h-full">
           <ImprovedActivityFeed sessions={data.recentSessions} />
         </div>
 
-        {/* ── 3. Feature Discovery Row ────────────────────────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
-          <DailyWikiCard article={data.dailyArticle} />
-          <LabPreviewCard moduleCount={data.labModuleCount} />
-          <RecentNotesCard notes={data.recentNotes} />
-        </div>
-
       </div>
+
     </div>
+    </SharedPageLayout>
   )
 }

@@ -41,7 +41,7 @@ const MOCK_LEADERBOARD = [
 // --- Components ---
 
 export const DaysUntilExamCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none p-4 rounded-sm'>
+  <Card className='border-0 bg-white shadow-none p-4 rounded-sm'>
     <div className='flex items-center justify-between'>
       <div>
         <span className='text-[11px] font-bold uppercase tracking-wider' style={{ color: '#8896A7' }}>Exam Goal</span>
@@ -60,7 +60,7 @@ export const DaysUntilExamCard = () => (
 )
 
 export const StudyStreakCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none p-4 rounded-sm'>
+  <Card className='border-0 bg-white shadow-none p-4 rounded-sm'>
     <div className='flex items-center gap-3'>
       <div className='rounded-full bg-orange-50 p-2'>
         <SCIcon icon={Fire} size='md' className='text-orange-500' />
@@ -75,7 +75,7 @@ export const StudyStreakCard = () => (
 )
 
 export const ActivityLogFeedCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none rounded-sm'>
+  <Card className='border-0 bg-white shadow-none rounded-sm'>
     <CardHeader className='pb-2 border-b border-[#D4DAE3]'>
       <CardTitle className='text-[11px] font-bold tracking-wider uppercase flex items-center gap-2' style={{ color: '#4A5568' }}>
         <SCIcon icon={Clock} size='xs' /> Recent Activity
@@ -104,7 +104,7 @@ export const ActivityLogFeedCard = () => (
 )
 
 export const DetailedWeeklyReadinessTrendCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none rounded-sm p-4'>
+  <Card className='border-0 bg-white shadow-none rounded-sm p-4'>
     <div className='flex items-start justify-between mb-4'>
       <div>
         <span className='text-[11px] font-bold uppercase tracking-wider' style={{ color: '#8896A7' }}>Your Progress</span>
@@ -143,7 +143,7 @@ export const DetailedWeeklyReadinessTrendCard = () => (
 )
 
 export const PacingAndDomainBreakdownCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none rounded-sm p-4'>
+  <Card className='border-0 bg-white shadow-none rounded-sm p-4'>
     <div className='space-y-4'>
       <div>
         <span className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1' style={{ color: '#8896A7' }}>
@@ -178,7 +178,7 @@ export const PacingAndDomainBreakdownCard = () => (
 )
 
 export const LeaderboardSnippetCard = () => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none rounded-sm'>
+  <Card className='border-0 bg-white shadow-none rounded-sm'>
     <CardHeader className='pb-2 border-b border-[#D4DAE3]'>
       <CardTitle className='text-[11px] font-bold tracking-wider uppercase flex items-center gap-2' style={{ color: '#4A5568' }}>
         <SCIcon icon={Medal} size='xs' /> Where You Stand

@@ -9,7 +9,7 @@ interface WeekAtAGlanceProps {
 
 export function WeekAtAGlance({ stats }: WeekAtAGlanceProps) {
   return (
-    <Card className="border p-3 bg-white w-full" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3 bg-white w-full">
       <div className="flex items-center gap-1.5 mb-0.5">
         <Tooltip>
           <TooltipTrigger asChild>
@@ -26,7 +26,7 @@ export function WeekAtAGlance({ stats }: WeekAtAGlanceProps) {
         Compared to last week
       </p>
 
-      <div className="grid grid-cols-3 divide-x" style={{ borderColor: '#D4DAE3' }}>
+      <div className="grid grid-cols-3 divide-x divide-border">
         {stats.map((stat) => (
           <Tooltip key={stat.label}>
             <TooltipTrigger asChild>
@@ -65,7 +65,7 @@ export function WeekAtAGlance({ stats }: WeekAtAGlanceProps) {
 
 export function WeekAtAGlanceSkeleton() {
   return (
-    <Card className="border p-3" style={{ borderColor: '#D4DAE3' }}>
+    <Card className="p-3">
       <Skeleton className="h-4 w-40 mb-1" />
       <Skeleton className="h-3 w-32 mb-3" />
       <div className="grid grid-cols-3 gap-4">

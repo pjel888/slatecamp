@@ -16,7 +16,7 @@ export const TrendMetrics = () => {
       <MetricCard icon={<SCIcon icon={CalendarBlank} size='xs' color='#8896A7' />} label="Sessions This Week" val="8" unit="Completed" />
       <MetricCard icon={<SCIcon icon={Timer} size='xs' color='#8896A7' />} label="Pacing" val="1.4" unit="Min/Q" />
       
-      <Card className='border-[#D4DAE3] bg-white shadow-none p-3 flex flex-col justify-between h-[68px]'>
+      <Card className='border-0 bg-white shadow-none p-3 flex flex-col justify-between h-[68px]'>
         <div className='flex flex-col gap-0.5'>
           <span className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1' style={{ color: '#8896A7' }}>
             <SCIcon icon={TrendUp} size='xs' className='text-primary' /> Weekly Trend
@@ -43,7 +43,7 @@ export const TrendMetrics = () => {
 }
 
 const MetricCard = ({ icon, label, val, unit }: any) => (
-  <Card className='border-[#D4DAE3] bg-white shadow-none p-3 h-[68px]'>
+  <Card className='border-0 bg-white shadow-none p-3 h-[68px]'>
     <div className='flex flex-col gap-0.5'>
       <span className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1 leading-none' style={{ color: '#8896A7' }}>
         {icon} {label}

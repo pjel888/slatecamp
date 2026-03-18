@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { Card } from '@/components/ui/card'
-import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
 import type { ActivityFeedItem } from '@/types/dashboard'
 
@@ -12,7 +16,10 @@ function formatRelative(iso: string): string {
   const days = Math.floor(hours / 24)
   if (days === 1) return 'Yesterday'
   if (days < 7) return `${days} days ago`
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+  return new Date(iso).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+  })
 }
 
 interface ImprovedActivityFeedProps {
@@ -21,63 +28,72 @@ interface ImprovedActivityFeedProps {
 
 export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
   return (
-    <Card className="border p-3 bg-white h-full w-full" style={{ borderColor: '#D4DAE3' }}>
-      <div className="flex items-center gap-1.5 mb-0.5">
+    <Card className='p-3 bg-white h-full w-full border-0'>
+      <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>
-            <h3 className="text-sm font-semibold cursor-default" style={{ color: '#1A2332' }}>
+            <h3
+              className='text-sm font-semibold cursor-default'
+              style={{ color: '#1A2332' }}
+            >
               Recent Activity
             </h3>
           </TooltipTrigger>
-          <TooltipContent side="top">
-            Every quiz session you complete appears here. CAMP and STORM refer to the two quiz modes — hover the badge to learn more.
+          <TooltipContent side='top'>
+            Every quiz session you complete appears here. CAMP and STORM refer
+            to the two quiz modes — hover the badge to learn more.
           </TooltipContent>
         </Tooltip>
       </div>
-      <p className="text-[11px] mb-3" style={{ color: '#8896A7' }}>
+      <p className='text-[11px] mb-3' style={{ color: '#8896A7' }}>
         Your last 7 days of study sessions
       </p>
 
       {sessions.length === 0 ? (
-        <div className="flex flex-col items-center justify-center py-6 gap-2">
-          <p className="text-xs text-center" style={{ color: '#4A5568' }}>
-            No sessions in the last 7 days. Your activity will appear here after your first quiz.
+        <div className='flex flex-col items-center justify-center py-6 gap-2'>
+          <p className='text-xs text-center' style={{ color: '#4A5568' }}>
+            No sessions in the last 7 days. Your activity will appear here after
+            your first quiz.
           </p>
           <Link
-            href="/dashboard/testing?mode=camp"
-            className="text-[11px] font-medium underline underline-offset-2"
+            href='/dashboard/testing?mode=camp'
+            className='text-[11px] font-medium underline underline-offset-2'
             style={{ color: '#1B3FC4' }}
           >
             Start a session →
           </Link>
         </div>
       ) : (
-        <div className="space-y-1.5">
+        <div className='space-y-1.5'>
           {sessions.map((s) => (
             <div
               key={s.sessionId}
-              className="flex items-center gap-2 py-1.5 border-b last:border-b-0"
-              style={{ borderColor: '#F2F0EB' }}
+              className='flex items-center gap-2 py-1.5 border-b last:border-b-0 border-page-bg'
             >
               {/* Mode badge with tooltip */}
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span
-                    className="font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default"
+                    className='font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default'
                     style={{ backgroundColor: '#EEF2FC', color: '#1B3FC4' }}
                   >
                     {s.modeBadge}
                   </span>
                 </TooltipTrigger>
-                {s.modeTooltip && <TooltipContent side="top">{s.modeTooltip}</TooltipContent>}
+                {s.modeTooltip && (
+                  <TooltipContent side='top'>{s.modeTooltip}</TooltipContent>
+                )}
               </Tooltip>
 
               {/* Subject + question count */}
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-medium truncate" style={{ color: '#1A2332' }}>
+              <div className='flex-1 min-w-0'>
+                <p
+                  className='text-xs font-medium truncate'
+                  style={{ color: '#1A2332' }}
+                >
                   {s.subjectName ?? s.testMode}
                 </p>
-                <p className="text-[11px]" style={{ color: '#8896A7' }}>
+                <p className='text-[11px]' style={{ color: '#8896A7' }}>
                   {s.questionCount} question{s.questionCount !== 1 ? 's' : ''}
                 </p>
               </div>
@@ -85,25 +101,30 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
               {/* Score pill (green ≥70, neutral <70, NEVER red) */}
               {s.scorePercent != null && (
                 <Tooltip>
-                  <TooltipTrigger asChild>
+                  <TooltipTrigger>
                     <span
-                      className="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default"
+                      className='shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default'
                       style={{
-                        backgroundColor: s.scorePercent >= 70 ? '#EDFAF4' : '#F2F0EB',
+                        backgroundColor:
+                          s.scorePercent >= 70 ? '#EDFAF4' : '#F2F0EB',
                         color: s.scorePercent >= 70 ? '#1B7A3C' : '#4A5568',
                       }}
                     >
                       {s.scorePercent}%
                     </span>
                   </TooltipTrigger>
-                  <TooltipContent side="top">
-                    Your score for this session. 70% is the passing threshold for the ALE.
+                  <TooltipContent side='top'>
+                    Your score for this session. 70% is the passing threshold
+                    for the ALE.
                   </TooltipContent>
                 </Tooltip>
               )}
 
               {/* Time */}
-              <span className="shrink-0 text-[11px]" style={{ color: '#8896A7' }}>
+              <span
+                className='shrink-0 text-[11px]'
+                style={{ color: '#8896A7' }}
+              >
                 {formatRelative(s.updatedAt)}
               </span>
             </div>
@@ -116,15 +137,15 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
 
 export function ImprovedActivityFeedSkeleton() {
   return (
-    <Card className="border p-3 h-full" style={{ borderColor: '#D4DAE3' }}>
-      <Skeleton className="h-4 w-28 mb-1" />
-      <Skeleton className="h-3 w-48 mb-3" />
+    <Card className='p-3 h-full'>
+      <Skeleton className='h-4 w-28 mb-1' />
+      <Skeleton className='h-3 w-48 mb-3' />
       {[1, 2, 3, 4].map((i) => (
-        <div key={i} className="flex items-center gap-2 py-1.5">
-          <Skeleton className="h-5 w-12 rounded" />
-          <Skeleton className="h-3 flex-1" />
-          <Skeleton className="h-5 w-10 rounded-full" />
-          <Skeleton className="h-3 w-12" />
+        <div key={i} className='flex items-center gap-2 py-1.5'>
+          <Skeleton className='h-5 w-12 rounded' />
+          <Skeleton className='h-3 flex-1' />
+          <Skeleton className='h-5 w-10 rounded-full' />
+          <Skeleton className='h-3 w-12' />
         </div>
       ))}
     </Card>

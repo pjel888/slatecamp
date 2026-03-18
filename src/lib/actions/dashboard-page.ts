@@ -226,19 +226,22 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
   const heroStats: HeroMicroStat[] = [
     {
       value: thisWeekQuestions,
-      label: 'Questions',
+      label: 'Questions answered',
+      description: '',
       delta: lastWeekQuestions > 0 ? thisWeekQuestions - lastWeekQuestions : null,
       tooltip: 'Total questions you\'ve answered in quiz sessions this week',
     },
     {
       value: thisWeekTopics,
-      label: 'Topics',
+      label: 'Topics studied',
+      description: '',
       delta: lastWeekTopics > 0 ? thisWeekTopics - lastWeekTopics : null,
       tooltip: 'Number of distinct ALE topics you\'ve studied this week',
     },
     {
       value: thisWeekDays,
       label: 'Study days',
+      description: '',
       delta: lastWeekDays > 0 ? thisWeekDays - lastWeekDays : null,
       tooltip: 'Days this week where you completed at least one session',
     },
@@ -513,9 +516,9 @@ function emptyDashboard(userName: string): DashboardPageData {
     examDate: null,
     daysUntilExam: null,
     heroStats: [
-      { value: 0, label: 'Questions', delta: null, tooltip: 'Total questions answered this week' },
-      { value: 0, label: 'Topics', delta: null, tooltip: 'Topics studied this week' },
-      { value: 0, label: 'Study days', delta: null, tooltip: 'Days with at least one session this week' },
+      { value: 0, label: 'Questions answered', description: '', delta: null, tooltip: 'Total questions answered this week' },
+      { value: 0, label: 'Topics studied', description: '', delta: null, tooltip: 'Topics studied this week' },
+      { value: 0, label: 'Study days', description: '', delta: null, tooltip: 'Days with at least one session this week' },
     ],
     syllabusCoveragePercent: 0,
     action: {

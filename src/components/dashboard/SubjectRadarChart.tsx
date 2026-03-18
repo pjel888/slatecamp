@@ -42,7 +42,7 @@ const CustomTooltip = ({ active, payload }: any) => {
 export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   if (data.length === 0) {
     return (
-      <Card className='border-border bg-white p-2 flex flex-col h-full relative min-h-[280px]'>
+      <Card className='border-0 bg-white p-2 flex flex-col h-full relative min-h-[280px]'>
         <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus." />
         <CardHeader className='p-2 pt-1'>
           <CardTitle className='text-[11px] font-bold tracking-wider uppercase' style={{ color: '#4A5568' }}>
@@ -65,7 +65,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const outerColor = getScoreColor(maxScore)
 
   return (
-    <Card className='border-border bg-white p-2 flex flex-col h-full relative'>
+    <Card className='border-0 bg-white p-2 flex flex-col h-full relative'>
       <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus. The perimeter represents complete mastery." />
       <CardHeader className='p-2 pt-1'>
         <CardTitle className='text-[11px] font-bold tracking-wider uppercase' style={{ color: '#4A5568' }}>

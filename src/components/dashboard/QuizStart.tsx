@@ -34,7 +34,7 @@ export function QuizStart({
 }: QuizStartProps) {
   return (
     <div className='flex items-center justify-center min-h-[calc(100vh-12rem)] px-4'>
-      <Card className='w-full max-w-md border-zinc-200 shadow-sm overflow-hidden bg-white'>
+      <Card className='w-full max-w-md border-0 shadow-sm overflow-hidden bg-white'>
         <div className='h-2 bg-primary w-full' />
         <CardHeader className='pt-8 pb-6 text-center'>
           <div className='mx-auto bg-[#EEF2FC] w-14 h-14 rounded-md flex items-center justify-center mb-4'>

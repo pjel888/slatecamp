@@ -13,7 +13,7 @@ interface ActionQueuesProps {
 export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
   return (
     <div className='grid grid-cols-1 gap-3 md:grid-cols-3'>
-      <Card className='border-zinc-200 bg-white shadow-none'>
+      <Card className='border-0 bg-white shadow-none'>
         <CardHeader className='flex flex-row items-start justify-between gap-2 pb-1.5'>
           <CardTitle className='text-xs font-medium tracking-tight text-zinc-900'>
             Focus Review
@@ -37,7 +37,7 @@ export const ActionQueues = ({ proofUnlocked }: ActionQueuesProps) => {
         </CardContent>
       </Card>
 
-      <Card className='border-zinc-200 bg-white shadow-none'>
+      <Card className='border-0 bg-white shadow-none'>
         <CardHeader className='flex flex-row items-start justify-between gap-2 pb-1.5'>
           <CardTitle className='text-xs font-medium tracking-tight text-zinc-900'>
             Extended Practice
