@@ -1,0 +1,119 @@
+'use client'
+
+import * as React from 'react'
+import Link from 'next/link'
+import { CaretRight, ArrowLeft, List, ListBullets } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
+import { ROUTES } from '@/lib/constants/routes'
+import { WikiReadingProgress } from './WikiReadingProgress'
+import { WikiBookmarks } from './WikiBookmarks'
+import { WikiSidebar } from './WikiSidebar'
+import { useWikiDiscipline } from './WikiDisciplineContext'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import type { BreadcrumbItem } from '@/lib/actions/wiki-actions'
+
+interface WikiHeaderClientProps {
+  breadcrumbs: BreadcrumbItem[]
+  articleTitle?: string
+  articleSlug?: string
+  scrollContainerId?: string
+  mobileActionsContent?: React.ReactNode
+}
+
+export function WikiHeaderClient({
+  breadcrumbs,
+  articleTitle,
+  articleSlug,
+  scrollContainerId,
+  mobileActionsContent,
+}: WikiHeaderClientProps) {
+  const { disciplineId, disciplineName } = useWikiDiscipline()
+  return (
+    <div className="w-full print:hidden">
+      <div className="flex items-center justify-between px-4 h-10 gap-2">
+        {/* Left: Mobile nav trigger → Back link → Breadcrumbs */}
+        <div className="flex items-center gap-1.5 min-w-0 flex-1">
+          {/* Mobile nav drawer trigger — visible below md */}
+          {disciplineId && (
+            <div className="md:hidden shrink-0">
+              <Sheet>
+                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 transition-colors">
+                  <SCIcon icon={List} size="sm" />
+                  <span className="sr-only">Open navigation</span>
+                </SheetTrigger>
+                <SheetContent side="left" className="w-72 p-0">
+                  <WikiSidebar
+                    disciplineId={disciplineId}
+                    disciplineName={disciplineName || 'Syllabus'}
+                  />
+                </SheetContent>
+              </Sheet>
+            </div>
+          )}
+
+          <Link
+            href={ROUTES.WIKI}
+            className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-600 transition-colors shrink-0"
+            title="Back to syllabus"
+          >
+            <SCIcon icon={ArrowLeft} size="xs" />
+            <span className="hidden sm:inline">Syllabus</span>
+          </Link>
+
+          {breadcrumbs.length > 0 && (
+            <nav aria-label="Breadcrumb" className="hidden sm:flex items-center gap-1 min-w-0 overflow-hidden">
+              <ol className="flex items-center gap-1 min-w-0">
+                {breadcrumbs.map((crumb, i) => {
+                  const isLast = i === breadcrumbs.length - 1
+                  return (
+                    <li key={crumb.node_id} className="flex items-center gap-1 min-w-0">
+                      <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
+                      {isLast ? (
+                        <span className="text-xs font-medium text-zinc-700 truncate max-w-[180px]">
+                          {crumb.name}
+                        </span>
+                      ) : (
+                        <Link
+                          href={crumb.slug ? ROUTES.WIKI_PAGE(crumb.slug) : ROUTES.WIKI}
+                          className="text-xs text-zinc-400 hover:text-zinc-600 transition-colors truncate max-w-[140px]"
+                        >
+                          {crumb.name}
+                        </Link>
+                      )}
+                    </li>
+                  )
+                })}
+              </ol>
+            </nav>
+          )}
+        </div>
+
+        {/* Right: Bookmarks → Mobile actions trigger */}
+        <div className="flex items-center gap-1 shrink-0">
+          <WikiBookmarks
+            currentSlug={articleSlug}
+            currentTitle={articleTitle}
+          />
+
+          {/* Mobile actions drawer trigger — visible below lg */}
+          {mobileActionsContent && (
+            <div className="lg:hidden">
+              <Sheet>
+                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 transition-colors">
+                  <SCIcon icon={ListBullets} size="sm" />
+                  <span className="sr-only">Actions & table of contents</span>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-72 p-0 overflow-y-auto">
+                  {mobileActionsContent}
+                </SheetContent>
+              </Sheet>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Reading progress bar — thin strip along the bottom edge */}
+      <WikiReadingProgress scrollContainerId={scrollContainerId} />
+    </div>
+  )
+}

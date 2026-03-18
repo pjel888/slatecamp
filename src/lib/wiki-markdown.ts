@@ -38,6 +38,14 @@ export function extractHeadings(markdown: string): TocHeading[] {
   return headings
 }
 
+/**
+ * Estimate reading time in minutes (~200 words/min for technical content).
+ */
+export function estimateReadingTime(markdown: string): number {
+  const words = markdown.trim().split(/\s+/).length
+  return Math.max(1, Math.round(words / 200))
+}
+
 // --- Markdown ↔ HTML (Tiptap) ---
 
 /** Convert markdown to HTML for Tiptap. */

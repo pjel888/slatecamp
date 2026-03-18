@@ -1,45 +1,34 @@
 'use client'
 
-import Link from 'next/link'
-import { Brain } from '@phosphor-icons/react'
-import { SCIcon } from '@/components/graphics/icons/Icon'
-import { Button } from '@/components/ui/button'
 import { format } from 'date-fns'
 
 interface WikiArticleHeaderProps {
   title: string
   updatedAt: string
-  practiceHref: string
-  practiceLabel: string
+  /** Estimated reading time in minutes */
+  readingTime?: number
 }
 
 export function WikiArticleHeader({
   title,
   updatedAt,
-  practiceHref,
-  practiceLabel,
+  readingTime,
 }: WikiArticleHeaderProps) {
   return (
-    <header className='mb-8'>
-      <div className='flex items-center gap-2 text-xs font-medium text-muted-foreground mb-3 uppercase tracking-wider'>
-        <span>Wiki Article</span>
-        <span>&bull;</span>
+    <header className="mb-8">
+      <h1 className="text-xl font-bold tracking-tight text-foreground mb-3">
+        {title}
+      </h1>
+      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+        {readingTime != null && readingTime > 0 && (
+          <>
+            <span>{readingTime} min read</span>
+            <span className="text-zinc-300">&bull;</span>
+          </>
+        )}
         <span>Updated {format(new Date(updatedAt), 'MMM d, yyyy')}</span>
       </div>
-      <div className='flex items-center justify-between mb-4'>
-        <h1 className='text-xl font-bold tracking-tight text-foreground'>
-          {title}
-        </h1>
-        <Link href={practiceHref}>
-          <Button
-            size='sm'
-            className='bg-primary hover:bg-[#1535A8] text-white font-bold rounded-sm px-6 shadow-sm transition-all active:scale-95'
-          >
-            <SCIcon icon={Brain} size='sm' className='mr-2' /> {practiceLabel}
-          </Button>
-        </Link>
-      </div>
-      <div className='h-px w-full bg-zinc-200' />
+      <div className="h-px w-full bg-zinc-200 mt-4" />
     </header>
   )
 }

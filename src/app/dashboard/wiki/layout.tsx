@@ -1,5 +1,7 @@
-import { WikiLayoutClient } from '@/components/wiki/WikiLayoutClient'
 import { createClient, getUser } from '@/lib/supabase/server'
+import { WikiSidebar } from '@/components/wiki/WikiSidebar'
+import { WikiSidebarShell } from '@/components/wiki/WikiSidebarShell'
+import { WikiDisciplineProvider } from '@/components/wiki/WikiDisciplineContext'
 import React, { Suspense } from 'react'
 import WikiLoading from './loading'
 
@@ -27,21 +29,31 @@ const WikiLayoutContent = async ({ children }: { children: React.ReactNode }) =>
   const disciplineId = stats?.current_discipline_id ?? null
   const disciplineName = (stats?.disciplines as any)?.name || 'Select Discipline'
 
-  console.log('[WikiLayout] User:', user.email, 'Discipline:', disciplineId, 'Name:', disciplineName, 'Mode:', !!process.env.NEXT_PUBLIC_SUPABASE_URL ? 'Live' : 'Mock')
-
   return (
-    <WikiLayoutClient
-      disciplineId={disciplineId}
-      disciplineName={disciplineName}
-    >
-      {children}
-    </WikiLayoutClient>
+    <WikiDisciplineProvider disciplineId={disciplineId} disciplineName={disciplineName}>
+      <div className="flex flex-col h-full w-full overflow-hidden bg-background">
+        <div className="flex flex-1 min-h-0">
+          {/* Left Sidebar — desktop only (md+), resizable + collapsible */}
+          <WikiSidebarShell>
+            <WikiSidebar
+              disciplineId={disciplineId!}
+              disciplineName={disciplineName}
+            />
+          </WikiSidebarShell>
+
+          {/* Center + Right (managed by page) */}
+          <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
+            {children}
+          </div>
+        </div>
+      </div>
+    </WikiDisciplineProvider>
   )
 }
 
 export default function WikiPageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className='h-full w-full overflow-hidden'>
+    <div className="h-full w-full overflow-hidden">
       <Suspense fallback={<WikiLoading />}>
         <WikiLayoutContent>{children}</WikiLayoutContent>
       </Suspense>
