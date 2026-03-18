@@ -9,6 +9,11 @@ import {
   ArrowCounterClockwise,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import {
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 import { Omnibar } from './Omnibar'
 import { QuickCaptureDrawer } from '../notes/QuickCaptureDrawer'
@@ -26,9 +31,9 @@ const QUICK_ACTIONS = [
   },
   {
     id: 'ai-chat',
-    label: 'AI Chat',
+    label: 'AI Tutor',
     icon: ChatCircle,
-    ariaLabel: 'Open AI chat',
+    ariaLabel: 'Open AI tutor',
     shortcut: undefined,
   },
   {
@@ -92,33 +97,26 @@ export function QuickActionsBar() {
           {/* Action buttons */}
           <div className="flex items-center gap-1">
             {QUICK_ACTIONS.map(({ id, label, icon: Icon, ariaLabel }) => (
-              <button
-                key={id}
-                type="button"
-                onClick={() => handleAction(id)}
-                aria-label={ariaLabel}
-                title={label}
-                className={cn(
-                  'group relative flex h-11 w-11 shrink-0 items-center justify-center rounded-sm',
-                  'text-muted-foreground transition-colors duration-150 ease-out',
-                  'hover:bg-slate-blue-50 hover:text-primary',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40',
-                )}
-              >
-                <SCIcon icon={Icon} size="md" />
-
-                {/* Tooltip */}
-                <span
-                  className={cn(
-                    'pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2',
-                    'whitespace-nowrap rounded-sm bg-foreground px-2 py-1',
-                    'text-[11px] font-medium text-white',
-                    'opacity-0 transition-opacity duration-150 group-hover:opacity-100',
-                  )}
-                >
+              <Tooltip key={id}>
+                <TooltipTrigger asChild>
+                  <button
+                    type="button"
+                    onClick={() => handleAction(id)}
+                    aria-label={ariaLabel}
+                    className={cn(
+                      'flex h-11 w-11 shrink-0 items-center justify-center rounded-sm',
+                      'text-muted-foreground transition-colors duration-150 ease-out',
+                      'hover:bg-slate-blue-50 hover:text-primary',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40',
+                    )}
+                  >
+                    <SCIcon icon={Icon} size="md" />
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent side="top" className='bg-[#1A2332] text-white font-medium text-xs'>
                   {label}
-                </span>
-              </button>
+                </TooltipContent>
+              </Tooltip>
             ))}
           </div>
 

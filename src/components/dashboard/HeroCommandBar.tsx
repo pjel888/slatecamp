@@ -131,10 +131,13 @@ export function HeroCommandBar({
                 </span>
               </div>
               <ReadinessRing score={readinessScore} />
+              <span className='text-white/50 text-[11px] font-medium'>
+                out of 100
+              </span>
               <span className='text-white/70 text-[11px] font-medium'>
                 {label}
               </span>
-              {delta != null && Math.abs(delta) >= 1 && (
+              {readinessScore > 0 && delta != null && Math.abs(delta) >= 1 ? (
                 <span
                   className='text-[11px] font-medium'
                   style={{
@@ -142,6 +145,10 @@ export function HeroCommandBar({
                   }}
                 >
                   {delta > 0 ? `+${delta}` : delta} since last session
+                </span>
+              ) : (
+                <span className='text-white/50 text-[11px] font-medium'>
+                  Start practicing to build your score
                 </span>
               )}
             </div>
@@ -234,7 +241,7 @@ export function HeroCommandBar({
           <TooltipTrigger asChild>
             <div className='flex items-center gap-3 px-6 py-2.5 cursor-default'>
               <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider shrink-0'>
-                ALE Syllabus
+                Architecture Licensure Exam (ALE) Syllabus
               </span>
               <div className='h-1.5 flex-1 rounded-full overflow-hidden bg-white/10'>
                 <div

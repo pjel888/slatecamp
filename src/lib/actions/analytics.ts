@@ -431,6 +431,130 @@ export async function getMemoryHealthData(): Promise<MemoryHealthItem[]> {
   })
 }
 
+// ── Timeline Heatmap (swim-lane) ────────────────────────────────────────────
+
+export interface TimelineHeatmapData {
+  rows: Array<{
+    subject: string
+    color: string
+    totalQuestions: number
+    cells: Array<{
+      weekStart: string
+      subject: string
+      count: number
+      accuracy: number | null
+    }>
+  }>
+  weekLabels: string[]
+}
+
+export async function getTimelineHeatmapData(): Promise<TimelineHeatmapData> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return { rows: [], weekLabels: [] }
+
+  // Fetch discipline
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('current_discipline_id')
+    .eq('user_id', user.id)
+    .single()
+
+  if (!stats?.current_discipline_id) return { rows: [], weekLabels: [] }
+
+  // Fetch interactions from last 12 weeks
+  const twelveWeeksAgo = new Date()
+  twelveWeeksAgo.setDate(twelveWeeksAgo.getDate() - 12 * 7)
+
+  const [interactionsRes, nodeMap] = await Promise.all([
+    supabase
+      .from('user_interactions')
+      .select('topic_id, is_correct, interaction_timestamp')
+      .eq('user_id', user.id)
+      .gte('interaction_timestamp', twelveWeeksAgo.toISOString()),
+    fetchTaxonomyNodeMap(supabase, stats.current_discipline_id),
+  ])
+
+  const interactions = (interactionsRes.data || []) as Array<{
+    topic_id: string
+    is_correct: boolean
+    interaction_timestamp: string
+  }>
+
+  const getLevel1Ancestor = buildLevel1Resolver(nodeMap)
+
+  // Build week buckets (Monday-aligned)
+  function getWeekStart(dateStr: string): string {
+    const d = new Date(`${dateStr}T12:00:00`)
+    const day = d.getDay()
+    const diff = day === 0 ? 6 : day - 1 // Monday = 0
+    d.setDate(d.getDate() - diff)
+    return d.toISOString().split('T')[0]
+  }
+
+  // Generate all 12 week labels
+  const weekLabels: string[] = []
+  const cursor = new Date()
+  cursor.setDate(cursor.getDate() - ((cursor.getDay() + 6) % 7)) // align to Monday
+  for (let i = 11; i >= 0; i--) {
+    const wk = new Date(cursor)
+    wk.setDate(wk.getDate() - i * 7)
+    weekLabels.push(wk.toISOString().split('T')[0])
+  }
+
+  // Aggregate: subject × week → { count, correct, total }
+  const grid = new Map<string, Map<string, { count: number; correct: number; total: number }>>()
+  const subjectMeta = new Map<string, { name: string; color: string; total: number }>()
+
+  for (const i of interactions) {
+    if (!i.topic_id) continue
+    const ancestor = getLevel1Ancestor(i.topic_id)
+    if (!ancestor) continue
+
+    const date = i.interaction_timestamp.split('T')[0]
+    const wk = getWeekStart(date)
+
+    if (!subjectMeta.has(ancestor.id)) {
+      subjectMeta.set(ancestor.id, {
+        name: ancestor.name,
+        color: getSubjectColor(ancestor.name),
+        total: 0,
+      })
+    }
+    subjectMeta.get(ancestor.id)!.total++
+
+    if (!grid.has(ancestor.id)) grid.set(ancestor.id, new Map())
+    const row = grid.get(ancestor.id)!
+    if (!row.has(wk)) row.set(wk, { count: 0, correct: 0, total: 0 })
+    const cell = row.get(wk)!
+    cell.count++
+    cell.total++
+    if (i.is_correct) cell.correct++
+  }
+
+  // Build rows
+  const rows = Array.from(subjectMeta.entries()).map(([id, meta]) => {
+    const rowGrid = grid.get(id) ?? new Map()
+    const cells = weekLabels.map((wk) => {
+      const cell = rowGrid.get(wk)
+      return {
+        weekStart: wk,
+        subject: meta.name,
+        count: cell?.count ?? 0,
+        accuracy: cell && cell.total > 0 ? Math.round((cell.correct / cell.total) * 100) : null,
+      }
+    })
+    return {
+      subject: meta.name,
+      color: meta.color,
+      totalQuestions: meta.total,
+      cells,
+    }
+  })
+
+  return { rows, weekLabels }
+}
+
 export async function getAnalyticsSummaryMetrics(): Promise<AnalyticsSummaryMetrics> {
   const empty: AnalyticsSummaryMetrics = {
     totalQuestions: 0, avgAccuracy: 0, avgPacingMs: 0,

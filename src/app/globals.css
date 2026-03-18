@@ -366,7 +366,40 @@ time,
 .noise::after       { opacity: 0.055; }
 .noise-heavy::after { opacity: 0.09;  }
 
-/* Generic thin scrollbar utility */
+/* ── Global sleek scrollbar ─────────────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: rgba(136, 150, 167, 0.35) transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: background 150ms ease-out;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(136, 150, 167, 0.35);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 150, 167, 0.55);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: rgba(136, 150, 167, 0.7);
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Generic thin scrollbar utility (override for always-visible) */
 .scrollbar-thin {
   scrollbar-width: thin;
   scrollbar-color: #D4DAE3 transparent;

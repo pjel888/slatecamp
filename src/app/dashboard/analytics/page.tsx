@@ -9,6 +9,7 @@ import { StaminaSection } from '@/components/analytics/StaminaSection'
 import { RadarSection } from '@/components/analytics/RadarSection'
 import { MemorySection } from '@/components/analytics/MemorySection'
 import { PacingInsightsSection } from '@/components/analytics/PacingInsightsSection'
+import { TimelineHeatmapSection } from '@/components/analytics/TimelineHeatmapSection'
 
 export default function AnalyticsPage() {
   return (
@@ -16,6 +17,11 @@ export default function AnalyticsPage() {
       {/* Summary Metrics Bar */}
       <Suspense fallback={<ChartSkeleton height="h-[64px]" />}>
         <SummarySection />
+      </Suspense>
+
+      {/* Study Timeline Heatmap */}
+      <Suspense fallback={<ChartSkeleton height="h-[140px]" />}>
+        <TimelineHeatmapSection />
       </Suspense>
 
       {/* Readiness Trajectory */}

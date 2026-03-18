@@ -99,6 +99,22 @@ export interface NotePreview {
   updatedAt: string
 }
 
+// ── SubjectMastery (Radial Heatmap + Progress Bars) ─────────────────────────
+
+export interface TopicRing {
+  topicName: string
+  mastery: number
+  questionsAnswered: number
+}
+
+export interface SubjectMastery {
+  subject: string
+  shortLabel: string
+  mastery: number
+  questionsAnswered: number
+  topics: TopicRing[]
+}
+
 // ── Full Dashboard Page Data ────────────────────────────────────────────────
 
 export interface DashboardPageData {
@@ -116,6 +132,9 @@ export interface DashboardPageData {
 
   // FocusAreasCard
   focusAreas: FocusAreaItem[]
+
+  // Subject Mastery (Radar Chart + Progress Bars)
+  subjectMastery: SubjectMastery[]
 
   // StudyHeatmap (data passed through to existing ActivityHeatmap)
   // Uses HeatmapSection which does its own fetch

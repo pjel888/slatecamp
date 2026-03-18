@@ -24,9 +24,9 @@ export function DailyWikiCard({
   totalNoteCount,
 }: DailyWikiCardProps) {
   return (
-    <Card className='overflow-hidden relative h-full flex flex-col bg-white gap-2 p-2 border-0'>
+    <Card className='overflow-hidden relative h-full grid grid-rows-3 bg-white gap-2 p-2 border-0'>
       {/* ── 1/3: Today's Article (Camp Orange) ─────────────────────── */}
-      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-article border border-card-article-border'>
+      <div className='rounded-md p-3 overflow-hidden relative flex flex-col bg-card-article border border-card-article-border min-h-0'>
         {/* Animated circles/oblongs */}
         <div className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20'>
           <div className='w-full h-full border-2 border-white rounded-full animate-[spin_12s_linear_infinite]' />
@@ -77,7 +77,7 @@ export function DailyWikiCard({
       </div>
 
       {/* ── 1/3: Notes (Signal Green bg) ───────────────────────────── */}
-      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-notes border border-card-notes-border'>
+      <div className='rounded-md p-3 overflow-hidden relative flex flex-col bg-card-notes border border-card-notes-border min-h-0'>
         {/* Animated triangles */}
         <svg
           className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20 animate-[spin_14s_linear_infinite]'
@@ -106,16 +106,29 @@ export function DailyWikiCard({
           </p>
         ) : (
           <div className='space-y-1.5'>
-            {notes.map((note) => (
-              <div key={note.noteId} className='rounded-sm p-2 bg-white/25'>
-                <p className='text-xs font-medium truncate text-white'>
-                  {note.title}
-                </p>
-                <p className='text-[11px] line-clamp-1 mt-0.5 text-white/70'>
-                  {note.snippet}
-                </p>
-              </div>
-            ))}
+            {notes
+              .filter((note) => {
+                if (note.title === 'Untitled Note' && !note.snippet && !note.updatedAt) return false
+                return true
+              })
+              .map((note) => {
+                const displayTitle =
+                  note.title === 'Untitled Note' && !note.snippet && note.updatedAt
+                    ? `Note from ${new Date(note.updatedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`
+                    : note.title
+                return (
+                  <div key={note.noteId} className='rounded-sm p-2 bg-white/25'>
+                    <p className='text-xs font-medium truncate text-white'>
+                      {displayTitle}
+                    </p>
+                    {note.snippet ? (
+                      <p className='text-[11px] line-clamp-1 mt-0.5 text-white/70'>
+                        {note.snippet}
+                      </p>
+                    ) : null}
+                  </div>
+                )
+              })}
           </div>
         )}
         <div className='mt-auto flex justify-end'>
@@ -131,22 +144,27 @@ export function DailyWikiCard({
       </div>
 
       {/* ── 1/3: 3D Lab (Teal) ──────────────────────────────────────── */}
-      <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-lab border border-card-lab-border'>
+      <div className='rounded-md p-3 overflow-hidden relative flex flex-col bg-card-lab border border-card-lab-border min-h-0'>
         {/* Animated geometric shape */}
         <div className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20'>
           <div className='w-full h-full border-2 border-white rounded-sm animate-[spin_12s_linear_infinite]' />
           <div className='absolute inset-1 border border-white/60 rounded-sm animate-[spin_8s_linear_infinite_reverse]' />
         </div>
 
-        <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] mb-0.5 text-white/80'>
-          [ 3D Lab ]
-        </h4>
+        <div className='flex items-center gap-2 mb-0.5'>
+          <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-white/80'>
+            [ 3D Lab ]
+          </h4>
+          <span className='font-dm-mono text-[11px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-sm bg-white/20 text-white/80'>
+            Coming Soon
+          </span>
+        </div>
         <p className='text-[11px] text-white/50 mb-2'>
           Interactive architectural models
         </p>
         <p className='text-xs text-white/70 leading-snug'>
-          Explore building codes, structural systems, and spatial concepts
-          through interactive 3D models you can rotate, cut, and explore.
+          Coming soon — explore building codes, structural systems, and spatial
+          concepts through interactive 3D models you can rotate, cut, and explore.
         </p>
 
         <div className='mt-auto flex justify-end'>

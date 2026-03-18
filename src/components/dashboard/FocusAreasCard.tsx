@@ -49,19 +49,26 @@ export function FocusAreasCard({ areas }: FocusAreasCardProps) {
         </p>
       ) : (
         <div className='space-y-2.5'>
-          {areas.map((area) => {
+          {areas.map((area, index) => {
             const pct = Math.round(area.masteryWeight * 100)
             const labelColor = LABEL_COLORS[area.masteryLabel] ?? '#8896A7'
 
             return (
               <div key={area.topicId} className='space-y-1'>
                 <div className='flex items-center justify-between'>
-                  <span
-                    className='text-xs font-medium truncate pr-2'
-                    style={{ color: '#1A2332' }}
-                  >
-                    {area.topicName}
-                  </span>
+                  <div className='flex items-center gap-1.5 min-w-0 pr-2'>
+                    <span
+                      className='font-dm-mono text-[11px] text-muted-foreground w-4 shrink-0 tabular-nums'
+                    >
+                      {index + 1}
+                    </span>
+                    <span
+                      className={`text-xs truncate ${index === 0 ? 'font-semibold' : 'font-medium'}`}
+                      style={{ color: '#1A2332' }}
+                    >
+                      {area.topicName}
+                    </span>
+                  </div>
                   <span
                     className='font-dm-mono shrink-0 text-[11px] font-medium'
                     style={{ color: labelColor }}

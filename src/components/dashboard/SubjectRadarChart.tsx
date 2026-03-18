@@ -9,29 +9,29 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import type { SubjectMastery } from '@/lib/actions/mastery'
-import { RichInfoPopover } from './RichInfoPopover'
+import Link from 'next/link'
+import type { SubjectMastery } from '@/types/dashboard'
 
 interface SubjectRadarChartProps {
   data: SubjectMastery[]
 }
 
-const getScoreColor = (score: number) => {
-  if (score >= 80) return '#2D9F6F' // green-600
-  if (score >= 50) return '#D4951A' // amber-600
-  return '#D64545' // red-600
-}
-
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
+    const item = payload[0].payload as SubjectMastery
     return (
-      <div className="rounded-md bg-white p-2" style={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}>
-        <p className="text-xs font-bold uppercase tracking-wider" style={{ color: '#4A5568' }}>
-          {payload[0].payload.subject}
+      <div
+        className="rounded-md bg-white px-3 py-2"
+        style={{ border: '1px solid #E8E4DC', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
+      >
+        <p className="text-xs font-semibold" style={{ color: '#1A2332' }}>
+          {item.subject}
         </p>
-        <p className="text-sm font-semibold" style={{ color: '#1A2332' }}>
-          {payload[0].value}% <span className="text-xs font-medium" style={{ color: '#8896A7' }}>Mastery</span>
+        <p className="text-[13px] font-semibold tabular-nums" style={{ color: '#1A2332' }}>
+          {item.mastery}%{' '}
+          <span className="text-xs font-normal" style={{ color: '#6B6B6B' }}>
+            · {item.questionsAnswered} answered
+          </span>
         </p>
       </div>
     )
@@ -40,89 +40,66 @@ const CustomTooltip = ({ active, payload }: any) => {
 }
 
 export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
-  if (data.length === 0) {
-    return (
-      <Card className='border-0 bg-white p-2 flex flex-col h-full relative min-h-[280px]'>
-        <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus." />
-        <CardHeader className='p-2 pt-1'>
-          <CardTitle className='text-[11px] font-bold tracking-wider uppercase' style={{ color: '#4A5568' }}>
-            Subject Mastery Profile
-          </CardTitle>
-        </CardHeader>
-        <CardContent className='p-0 flex-1 flex flex-col items-center justify-center gap-2 text-center px-4'>
-          <p className='text-sm font-medium' style={{ color: '#4A5568' }}>
-            Complete quizzes across subjects to build your mastery profile.
-          </p>
-          <p className='text-xs' style={{ color: '#8896A7' }}>Your radar will appear here after your first session.</p>
-        </CardContent>
-      </Card>
-    )
-  }
-
-  const chartData = data
-
-  const maxScore = Math.max(...chartData.map(d => d.score), 1)
-  const outerColor = getScoreColor(maxScore)
+  const hasData = data.some(d => d.questionsAnswered > 0)
 
   return (
-    <Card className='border-0 bg-white p-2 flex flex-col h-full relative'>
-      <RichInfoPopover title="Domain Readiness Map" description="Radial distribution of competence across the core syllabus. The perimeter represents complete mastery." />
-      <CardHeader className='p-2 pt-1'>
-        <CardTitle className='text-[11px] font-bold tracking-wider uppercase' style={{ color: '#4A5568' }}>
-          Subject Mastery Profile
-        </CardTitle>
-      </CardHeader>
-      <CardContent className='p-0 flex-1 flex flex-col justify-center'>
-        <div className='h-[240px] w-full'>
-          <ResponsiveContainer width='100%' height='100%'>
-            <RadarChart cx='50%' cy='50%' outerRadius='80%' data={chartData}>
-              {/* No gradient fills — Campfire standard */}
-              <PolarGrid stroke='#D4DAE3' strokeWidth={1} />
-              <PolarAngleAxis
-                dataKey='subject'
-                tick={{ fill: '#4A5568', fontSize: 11, fontWeight: 500 }}
-              />
-              <PolarRadiusAxis
-                angle={30}
-                domain={[0, 100]}
-                tick={false}
-                axisLine={false}
-              />
-              <Tooltip content={<CustomTooltip />} cursor={{ stroke: '#D4DAE3', strokeWidth: 1 }} />
-              <Radar
-                name='Mastery'
-                dataKey='score'
-                stroke={outerColor}
-                strokeWidth={1.5}
-                fill={outerColor}
-                fillOpacity={0.12}
-                dot={{ r: 2, fill: '#ffffff', stroke: outerColor, strokeWidth: 1.5 }}
-                activeDot={{ r: 4, fill: '#ffffff', stroke: '#1A2332', strokeWidth: 1.5 }}
-                animationDuration={1500}
-              />
-            </RadarChart>
-          </ResponsiveContainer>
-        </div>
-        
-        <div className='mt-1 grid grid-cols-2 gap-1 border-t border-border/40 pt-2 px-2'>
-          {chartData.map((item) => (
-            <div key={item.subject} className='flex items-center justify-between gap-1.5'>
-              <span className='truncate text-[11px] font-medium uppercase tracking-tight' style={{ color: '#4A5568' }}>
-                {item.subject}
-              </span>
-              <div className="flex items-center gap-1">
-                <div 
-                  className="h-1 w-1 rounded-full" 
-                  style={{ backgroundColor: getScoreColor(item.score) }} 
+    <div className="flex flex-col bg-white border border-[#E8E4DC] rounded-md overflow-hidden h-full">
+      <div className="px-4 py-3 border-b border-[#E8E4DC]">
+        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]">
+          Subject Mastery
+        </span>
+        <h3 className="text-[15px] font-semibold text-[#1A2332] mt-0.5">
+          Your ALE Coverage
+        </h3>
+      </div>
+
+      <div className="flex-1 p-4 min-h-0 flex flex-col items-center justify-center">
+        {!hasData ? (
+          <div className="text-center space-y-2 py-6">
+            <p className="text-sm font-medium" style={{ color: '#555555' }}>
+              Take your first quiz to see your mastery shape
+            </p>
+            <Link
+              href="/dashboard/testing"
+              className="text-sm font-medium underline underline-offset-2"
+              style={{ color: '#1B3FC4' }}
+            >
+              Start a quiz &rarr;
+            </Link>
+          </div>
+        ) : (
+          <div className="w-full h-[260px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <RadarChart cx="50%" cy="50%" outerRadius="75%" data={data}>
+                <PolarGrid stroke="#E8E4DC" strokeWidth={1} />
+                <PolarAngleAxis
+                  dataKey="shortLabel"
+                  tick={{ fill: '#555555', fontSize: 11 }}
                 />
-                <span className='text-xs font-bold' style={{ color: '#1A2332' }}>
-                  {item.score}%
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
+                <PolarRadiusAxis
+                  angle={90}
+                  domain={[0, 100]}
+                  tickCount={5}
+                  tick={false}
+                  axisLine={false}
+                />
+                <Tooltip content={<CustomTooltip />} />
+                <Radar
+                  name="Mastery"
+                  dataKey="mastery"
+                  stroke="#1B3FC4"
+                  strokeWidth={2}
+                  fill="#1B3FC4"
+                  fillOpacity={0.15}
+                  dot={{ r: 4, fill: '#1B3FC4', stroke: '#1B3FC4', strokeWidth: 0 }}
+                  animationDuration={300}
+                  animationEasing="ease-out"
+                />
+              </RadarChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+      </div>
+    </div>
   )
 }

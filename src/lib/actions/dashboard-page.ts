@@ -12,7 +12,26 @@ import type {
   WeekStat,
   DailyWikiArticle,
   NotePreview,
+  SubjectMastery,
+  TopicRing,
 } from '@/types/dashboard'
+
+// ── Short labels for radar chart axes ─────────────────────────────────────────
+
+const SHORT_LABELS: Record<string, string> = {
+  'Architectural Design and Site Planning': 'Arch Design',
+  'Architectural Practice': 'Practice',
+  'Building Materials and Construction': 'Materials',
+  'Building Utilities': 'Utilities',
+  'History of Architecture': 'History',
+  'Structural Design': 'Structural',
+  'Theory and Principles of Planning': 'Planning',
+  'Theory of Architecture': 'Theory',
+}
+
+function shortLabel(subject: string): string {
+  return SHORT_LABELS[subject] ?? subject.split(' ').slice(0, 2).join(' ')
+}
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -107,6 +126,8 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     masteryCountResult,         // Q8: DASHBOARD: HeroCommandBar (syllabus coverage)
     notesResult,                // Q9: DASHBOARD: RecentNotesCard
     wikiArticlesResult,         // Q10: DASHBOARD: DailyWikiCard
+    subjectAreasResult,         // Q11: DASHBOARD: Subject Mastery (radar + bars)
+    subjectMasteryResult,       // Q12: DASHBOARD: Subject Mastery (per-subject weights)
   ] = await Promise.all([
     // Q1
     supabase
@@ -188,6 +209,21 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       .select('article_id, title, slug, content')
       .order('created_at', { ascending: true })
       .limit(50),
+
+    // Q11: full taxonomy tree (levels 1-3) for radial heatmap structure
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, parent_id, level, name, subject_area')
+      .in('level', [1, 2, 3])
+      .order('subject_area')
+      .order('level')
+      .order('name'),
+
+    // Q12: per-topic mastery for current user
+    supabase
+      .from('user_node_mastery')
+      .select('topic_id, current_mastery_weight, total_attempts')
+      .eq('user_id', user.id),
   ])
 
   // ── Extract ─────────────────────────────────────────────────────────────
@@ -302,6 +338,70 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
         updatedAt: ipRaw.updated_at,
       }
     : null
+
+  // ── Subject mastery (radial heatmap + progress bars) ────────────────────
+
+  const taxonomyRows = (subjectAreasResult.data ?? []) as Array<{
+    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string
+  }>
+  const masteryRows = (subjectMasteryResult.data ?? []) as Array<{
+    topic_id: string; current_mastery_weight: number; total_attempts: number
+  }>
+
+  // Build mastery lookup: topic_id → { weight, attempts }
+  const masteryMap = new Map<string, { weight: number; attempts: number }>()
+  for (const m of masteryRows) {
+    masteryMap.set(m.topic_id, { weight: m.current_mastery_weight, attempts: m.total_attempts })
+  }
+
+  // Group taxonomy: level 1 = subjects, level 2 = topics (rings), level 3 = leaves
+  const level1 = taxonomyRows.filter(n => n.level === 1).sort((a, b) => a.name.localeCompare(b.name))
+  const level2 = taxonomyRows.filter(n => n.level === 2)
+  const level3 = taxonomyRows.filter(n => n.level === 3)
+
+  // Map level 3 leaves to their level 2 parent for mastery aggregation
+  const leavesByParent = new Map<string, typeof level3>()
+  for (const leaf of level3) {
+    const existing = leavesByParent.get(leaf.parent_id!) ?? []
+    existing.push(leaf)
+    leavesByParent.set(leaf.parent_id!, existing)
+  }
+
+  const subjectMastery: SubjectMastery[] = level1.map(subject => {
+    const topics = level2.filter(t => t.parent_id === subject.node_id)
+
+    const topicRings: TopicRing[] = topics.map(topic => {
+      const leaves = leavesByParent.get(topic.node_id) ?? []
+      let totalWeight = 0, totalAttempts = 0, count = 0
+      for (const leaf of leaves) {
+        const m = masteryMap.get(leaf.node_id)
+        if (m) {
+          totalWeight += m.weight
+          totalAttempts += m.attempts
+          count++
+        }
+      }
+      return {
+        topicName: topic.name,
+        mastery: count > 0 ? Math.round((totalWeight / count) * 100) : 0,
+        questionsAnswered: totalAttempts,
+      }
+    })
+
+    const allAttempts = topicRings.reduce((sum, t) => sum + t.questionsAnswered, 0)
+    const answeredTopics = topicRings.filter(t => t.questionsAnswered > 0)
+    const avgMastery = answeredTopics.length > 0
+      ? Math.round(answeredTopics.reduce((sum, t) => sum + t.mastery, 0) / answeredTopics.length)
+      : 0
+
+    return {
+      subject: subject.name,
+      shortLabel: shortLabel(subject.name),
+      mastery: avgMastery,
+      questionsAnswered: allAttempts,
+      topics: topicRings,
+    }
+  })
 
   // ── Focus areas ─────────────────────────────────────────────────────────
 
@@ -452,6 +552,7 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     syllabusCoveragePercent,
     action,
     focusAreas,
+    subjectMastery,
     recentSessions,
     weekStats,
     inProgressSession,
@@ -531,6 +632,7 @@ function emptyDashboard(userName: string): DashboardPageData {
       modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
     },
     focusAreas: [],
+    subjectMastery: [],
     recentSessions: [],
     weekStats: [
       { value: 0, label: 'Questions Answered', subLabel: 'this week', delta: null, tooltip: 'Total questions answered this week' },

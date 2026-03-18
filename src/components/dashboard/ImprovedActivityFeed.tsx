@@ -28,7 +28,7 @@ interface ImprovedActivityFeedProps {
 
 export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
   return (
-    <Card className='p-3 bg-white h-full w-full border-0'>
+    <Card className='p-3 bg-white h-full w-full border-0 flex flex-col min-h-0 overflow-hidden'>
       <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -64,7 +64,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
           </Link>
         </div>
       ) : (
-        <div className='space-y-1.5'>
+        <div className='space-y-1.5 flex-1 min-h-0 overflow-auto'>
           {sessions.map((s) => (
             <div
               key={s.sessionId}
@@ -85,16 +85,16 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
                 )}
               </Tooltip>
 
-              {/* Subject + question count */}
+              {/* Mode + topic + question count */}
               <div className='flex-1 min-w-0'>
                 <p
                   className='text-xs font-medium truncate'
                   style={{ color: '#1A2332' }}
                 >
-                  {s.subjectName ?? s.testMode}
+                  {s.testMode} · {s.questionCount} question{s.questionCount !== 1 ? 's' : ''}
                 </p>
                 <p className='text-[11px]' style={{ color: '#8896A7' }}>
-                  {s.questionCount} question{s.questionCount !== 1 ? 's' : ''}
+                  {s.subjectName ?? 'General Practice'}
                 </p>
               </div>
 

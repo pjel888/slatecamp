@@ -78,7 +78,14 @@
       "Bash(curl -s http://localhost:3000/_next/static/css/app/layout.css)",
       "Bash(taskkill /F /IM node.exe)",
       "Skill(clean-code)",
-      "Skill(clean-code:*)"
+      "Skill(clean-code:*)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:echartsforreact.com)",
+      "WebFetch(domain:www.scichart.com)",
+      "WebFetch(domain:echarts.apache.org)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   },
   "enableAllProjectMcpServers": true,
