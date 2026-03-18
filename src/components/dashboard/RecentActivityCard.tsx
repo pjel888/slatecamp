@@ -18,7 +18,7 @@ const ACTIVITY_ICONS = {
 export function RecentActivityCard({ activities }: RecentActivityCardProps) {
   if (activities.length === 0) {
     return (
-      <Card className='p-4 flex flex-col justify-between h-full'>
+      <Card className='p-3 flex flex-col justify-between h-full'>
         <div>
           <p className='font-dm-mono text-[11px] font-medium text-[#6B6B6B] uppercase tracking-[0.2em] mb-3'>
             Recent Activity
@@ -38,12 +38,12 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
   }
 
   return (
-    <Card className='p-4 flex flex-col h-full'>
+    <Card className='p-3 flex flex-col h-full'>
       <p className='font-dm-mono text-[11px] font-medium text-[#6B6B6B] uppercase tracking-[0.2em] mb-3 shrink-0'>
         Recent Activity
       </p>
 
-      <div className='flex flex-col gap-3 flex-1'>
+      <div className='flex flex-col gap-2 flex-1 overflow-y-auto scrollbar-thin min-h-0'>
         {activities.map((activity, idx) => {
           const Icon = ACTIVITY_ICONS[activity.type]
           return (

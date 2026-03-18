@@ -355,6 +355,26 @@ time,
 .noise::after       { opacity: 0.055; }
 .noise-heavy::after { opacity: 0.09;  }
 
+/* Generic thin scrollbar utility */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #D4DAE3 transparent;
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #D4DAE3;
+  border-radius: 2px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #8896A7;
+}
+
 /* Activity heatmap — custom horizontal scrollbar (Slate Blue tints) */
 .activity-heatmap-scroll {
   scrollbar-width: thin;
@@ -488,6 +508,14 @@ a[data-pending] {
 }
 .landing-delay-6 {
   animation-delay: 480ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* Landing page — infinite marquee */

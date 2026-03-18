@@ -53,7 +53,7 @@ export const DashboardHero = ({
   const momentumText = useMemo(() => getContextualCopy(readinessMomentum), [readinessMomentum])
 
   return (
-    <div className='w-full rounded-sm relative h-[180px] shrink-0 mb-2 bg-[#1B3FC4] overflow-hidden'>
+    <div className='w-full rounded-sm relative h-[120px] shrink-0 mb-2 bg-[#1B3FC4] overflow-hidden'>
       {/* Animated Gradient Background */}
       {/* <div className='absolute inset-0 z-0'>
         <GradientImage />
@@ -61,14 +61,14 @@ export const DashboardHero = ({
       </div> */}
 
       {/* Content */}
-      <div className='absolute bottom-0 left-0 right-0 z-20 p-5 pb-6'>
+      <div className='absolute bottom-0 left-0 right-0 z-20 p-3'>
         <p className='font-dm-mono text-white/60 text-[11px] font-medium mb-1 uppercase tracking-[0.2em]'>
           {greeting}
         </p>
         <h1 className='font-display text-white text-2xl font-extrabold tracking-tight leading-snug'>
           {userName.charAt(0).toUpperCase() + userName.slice(1)}.
         </h1>
-        <p className='text-white/70 text-sm mt-1 leading-snug max-w-lg'>
+        <p className='text-white/70 text-sm mt-1 leading-snug max-w-lg line-clamp-1'>
           {momentumText}
         </p>
       </div>

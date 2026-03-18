@@ -1,4 +1,8 @@
+'use client'
+
 import { Starburst } from '@/components/marketing/LandingPrimitives'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
+import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 
 const STEPS = [
   {
@@ -25,19 +29,21 @@ export const HowItWorksSection = () => (
     className="relative border-t border-[#E8E4DC] px-6 py-24"
   >
     <div className="relative z-10 mx-auto max-w-[1200px]">
-      <div className="flex items-center gap-3">
-        <Starburst className="h-3 w-3 text-[--camp-orange]" />
-        <h2
-          id="how-it-works-heading"
-          className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]"
-        >
-          How It Works
-        </h2>
-      </div>
+      <ScrollReveal>
+        <div className="flex items-center gap-3">
+          <Starburst className="h-3 w-3 text-[--camp-orange]" />
+          <h2
+            id="how-it-works-heading"
+            className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]"
+          >
+            How It Works
+          </h2>
+        </div>
+      </ScrollReveal>
 
-      <div className="mt-16 grid grid-cols-1 gap-16 sm:grid-cols-3 sm:gap-12">
+      <StaggerParent className="mt-16 grid grid-cols-1 gap-16 sm:grid-cols-3 sm:gap-12">
         {STEPS.map(({ num, title, desc }) => (
-          <div key={num}>
+          <StaggerItem key={num}>
             <span
               className="font-mono text-[56px] font-bold leading-none tracking-tighter text-[#E8E4DC]"
               aria-hidden="true"
@@ -50,9 +56,9 @@ export const HowItWorksSection = () => (
             <p className="mt-3 text-[14px] leading-relaxed text-[#6B6B6B]">
               {desc}
             </p>
-          </div>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerParent>
     </div>
   </section>
 )

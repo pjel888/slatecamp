@@ -307,7 +307,7 @@ export function ActivityHeatmap({
   const todayISO = signupISOStr(new Date())
 
   return (
-    <div className='flex w-full min-w-0 flex-col p-3 pb-2'>
+    <div className='flex w-full min-w-0 flex-col p-2 overflow-y-auto scrollbar-thin flex-1 min-h-0'>
       {/* ── Card header ───────────────────────────────────────────────────── */}
       <header className='flex w-full shrink-0 items-start justify-between gap-4 pb-2'>
         <div className='flex flex-col gap-0.5'>

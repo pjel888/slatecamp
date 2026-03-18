@@ -1,9 +1,13 @@
+'use client'
+
 import {
   FeatureSectionLayout,
   FeatureCheckItem,
   SectionEyebrow,
   FeaturePill,
 } from '@/components/marketing/FeatureSectionLayout'
+import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 /* ── Quiz mockup (rendered UI, not an image) ── */
 
@@ -83,50 +87,62 @@ const QuizMockup = () => (
 export const QuestionsSection = () => (
   <FeatureSectionLayout>
     {/* Copy — left */}
-    <div>
-      <SectionEyebrow label='Question Bank' />
+    <StaggerParent>
+      <StaggerItem>
+        <SectionEyebrow label='Question Bank' />
+      </StaggerItem>
 
-      <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
-        2,400+ questions built for
-        <br />
-        the ALE. Every single one.
-      </h2>
+      <StaggerItem>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+          2,400+ questions built for
+          <br />
+          the ALE. Every single one.
+        </h2>
+      </StaggerItem>
 
-      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
-        Not recycled PDFs. Not scraped notes. Every question is written
-        to the ALE syllabus, verified by licensed architects, and tagged
-        to its exact PD 1096 provision.
-      </p>
+      <StaggerItem>
+        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
+          Not recycled PDFs. Not scraped notes. Every question is written
+          to the ALE syllabus, verified by licensed architects, and tagged
+          to its exact PD 1096 provision.
+        </p>
+      </StaggerItem>
 
       {/* Feature chips */}
-      <div className='mt-5 flex flex-wrap gap-2'>
-        <FeaturePill variant='cobalt'>Image + diagram questions</FeaturePill>
-        <FeaturePill variant='cobalt'>Code-cited explanations</FeaturePill>
-        <FeaturePill variant='cobalt'>All 7 ALE subjects</FeaturePill>
-        <FeaturePill variant='cobalt'>Difficulty calibrated by IRT</FeaturePill>
-      </div>
+      <StaggerItem>
+        <div className='mt-5 flex flex-wrap gap-2'>
+          <FeaturePill variant='cobalt'>Image + diagram questions</FeaturePill>
+          <FeaturePill variant='cobalt'>Code-cited explanations</FeaturePill>
+          <FeaturePill variant='cobalt'>All 7 ALE subjects</FeaturePill>
+          <FeaturePill variant='cobalt'>Difficulty calibrated by IRT</FeaturePill>
+        </div>
+      </StaggerItem>
 
       {/* Check items */}
-      <div className='mt-8 space-y-5'>
-        <FeatureCheckItem
-          title='Wrong answers teach more than right ones'
-          description='Every incorrect answer unlocks a full explanation citing the exact code provision. You learn the why, not just the what.'
-          accentColor='#1B3FC4'
-        />
-        <FeatureCheckItem
-          title='Three study modes'
-          description='Review for low-pressure recall. Camp Mode for tracked sessions. Storm Mode for full exam simulation with a timer.'
-          accentColor='#1B3FC4'
-        />
-        <FeatureCheckItem
-          title='Spaced repetition built in'
-          description="Questions you've mastered fade back. Questions you keep missing resurface until they stick. The SM-2 algorithm handles the schedule."
-          accentColor='#F5A623'
-        />
-      </div>
-    </div>
+      <StaggerItem>
+        <div className='mt-8 space-y-5'>
+          <FeatureCheckItem
+            title='Wrong answers teach more than right ones'
+            description='Every incorrect answer unlocks a full explanation citing the exact code provision. You learn the why, not just the what.'
+            accentColor='#1B3FC4'
+          />
+          <FeatureCheckItem
+            title='Three study modes'
+            description='Review for low-pressure recall. Camp Mode for tracked sessions. Storm Mode for full exam simulation with a timer.'
+            accentColor='#1B3FC4'
+          />
+          <FeatureCheckItem
+            title='Spaced repetition built in'
+            description="Questions you've mastered fade back. Questions you keep missing resurface until they stick. The SM-2 algorithm handles the schedule."
+            accentColor='#F5A623'
+          />
+        </div>
+      </StaggerItem>
+    </StaggerParent>
 
     {/* Mockup — right */}
-    <QuizMockup />
+    <ScrollReveal delay={0.15} y={20}>
+      <QuizMockup />
+    </ScrollReveal>
   </FeatureSectionLayout>
 )

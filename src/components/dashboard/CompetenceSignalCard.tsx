@@ -50,7 +50,7 @@ export function CompetenceSignalCard({
             <SCIcon icon={Icon} size='xs' className={color} />
           </div>
           <div className='min-w-0'>
-            <p className={`text-4xl font-extrabold leading-none tabular-nums ${color}`}>{value}</p>
+            <p className={`text-[28px] font-extrabold leading-none tabular-nums ${color}`}>{value}</p>
             <p className='text-[11px] text-[#8896A7] mt-0.5 leading-tight truncate'>{label}</p>
           </div>
         </Card>

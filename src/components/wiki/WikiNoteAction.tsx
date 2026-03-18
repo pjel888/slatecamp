@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Note, CircleNotch, CheckCircle } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
-import { createNote } from '@/lib/actions/notes'
+import { createNote } from '@/lib/actions/notes-actions'
 import { useToast } from '@/lib/hooks/use-toast'
 import { cn } from '@/lib/utils'
 

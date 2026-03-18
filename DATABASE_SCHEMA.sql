@@ -16,6 +16,8 @@ CREATE EXTENSION IF NOT EXISTS "pgjwt" WITH SCHEMA "extensions";
 CREATE EXTENSION IF NOT EXISTS "supabase_vault" WITH SCHEMA "vault";
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA "extensions";
 
+-- Enums
+
 CREATE TYPE public.session_status AS ENUM (
     'in_progress',
     'completed',
@@ -38,18 +40,21 @@ CREATE TYPE public.subscription_tier AS ENUM (
 CREATE TYPE public.test_mode AS ENUM (
     'camp',
     'timed',
-    'practice',
-    'storm',
-    'chill',
-    'custom',
-    'blindspot',
-    'proof_sim',
-    'endurance'
+    'practice'
 );
 
+CREATE TYPE public.user_type AS ENUM (
+    'regular',
+    'educational',
+    'corporate'
+);
+
+-- Functions
+
 CREATE OR REPLACE FUNCTION public.update_updated_at_column()
- RETURNS trigger
- LANGUAGE plpgsql
+  RETURNS trigger
+  LANGUAGE plpgsql
+  SET search_path = ''
 AS $function$
 BEGIN
   NEW.updated_at = NOW();
@@ -61,10 +66,24 @@ SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
+-- Tables
+
 CREATE TABLE public.disciplines (
     discipline_id uuid DEFAULT gen_random_uuid() NOT NULL,
     name text NOT NULL,
     acronym text NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+
+CREATE TABLE public.feature_flags (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    key text NOT NULL,
+    description text,
+    enabled boolean DEFAULT false NOT NULL,
+    target_tier text[] DEFAULT '{}'::text[],
+    target_roles text[] DEFAULT '{}'::text[],
+    created_by uuid,
     created_at timestamp with time zone DEFAULT now() NOT NULL,
     updated_at timestamp with time zone DEFAULT now() NOT NULL
 );
@@ -106,17 +125,40 @@ CREATE TABLE public.notes (
     updated_at timestamp with time zone DEFAULT now() NOT NULL
 );
 
--- FIXED TABLE: Added correct_option_id
+CREATE TABLE public.organization_members (
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
+    org_id uuid NOT NULL,
+    user_id uuid NOT NULL,
+    role text NOT NULL,
+    joined_at timestamp with time zone DEFAULT now() NOT NULL,
+    CONSTRAINT organization_members_role_check CHECK (role = ANY (ARRAY['owner'::text, 'admin'::text, 'instructor'::text, 'member'::text]))
+);
+
+CREATE TABLE public.organizations (
+    org_id uuid DEFAULT gen_random_uuid() NOT NULL,
+    name text NOT NULL,
+    slug text NOT NULL,
+    type public.user_type DEFAULT 'regular'::public.user_type NOT NULL,
+    logo_url text,
+    max_seats integer DEFAULT 10 NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+
 CREATE TABLE public.questions (
     question_id uuid DEFAULT gen_random_uuid() NOT NULL,
     topic_id uuid NOT NULL,
     text text NOT NULL,
     options jsonb DEFAULT '[]'::jsonb NOT NULL,
-    correct_option_id text NOT NULL, -- The specific fix
+    correct_option_id text NOT NULL,
     rationale text,
     difficulty numeric DEFAULT 0.50,
     difficulty_rating numeric,
     discrimination_rating numeric,
+    prompt_image_url text,
+    explanation text,
+    code_citation text,
+    model_id text,
     created_at timestamp with time zone DEFAULT now() NOT NULL
 );
 
@@ -131,6 +173,7 @@ CREATE TABLE public.quiz_sessions (
     subject_ids uuid[] DEFAULT '{}'::uuid[] NOT NULL,
     current_question_index integer DEFAULT 0 NOT NULL,
     started_at timestamp with time zone DEFAULT now() NOT NULL,
+    completed_at timestamp with time zone,
     updated_at timestamp with time zone DEFAULT now() NOT NULL
 );
 
@@ -187,6 +230,9 @@ CREATE TABLE public.user_interactions (
     selected_option_id text,
     is_correct boolean NOT NULL,
     time_spent_ms integer DEFAULT 0,
+    is_flagged boolean DEFAULT false NOT NULL,
+    answer_changes integer DEFAULT 0 NOT NULL,
+    options_eliminated integer DEFAULT 0 NOT NULL,
     interaction_timestamp timestamp with time zone DEFAULT now() NOT NULL,
     created_at timestamp with time zone DEFAULT now() NOT NULL,
     updated_at timestamp with time zone DEFAULT now() NOT NULL
@@ -232,23 +278,28 @@ CREATE TABLE public.wiki_articles (
     updated_at timestamp with time zone DEFAULT now() NOT NULL
 );
 
+-- Primary Keys
+
 ALTER TABLE ONLY public.disciplines
     ADD CONSTRAINT disciplines_pkey PRIMARY KEY (discipline_id);
 
-ALTER TABLE ONLY public.disciplines
-    ADD CONSTRAINT disciplines_name_key UNIQUE (name);
+ALTER TABLE ONLY public.feature_flags
+    ADD CONSTRAINT feature_flags_pkey PRIMARY KEY (id);
 
 ALTER TABLE ONLY public.models_3d
     ADD CONSTRAINT models_3d_pkey PRIMARY KEY (model_id);
-
-ALTER TABLE ONLY public.models_3d
-    ADD CONSTRAINT models_3d_slug_key UNIQUE (slug);
 
 ALTER TABLE ONLY public.note_folders
     ADD CONSTRAINT note_folders_pkey PRIMARY KEY (folder_id);
 
 ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_pkey PRIMARY KEY (note_id);
+
+ALTER TABLE ONLY public.organization_members
+    ADD CONSTRAINT organization_members_pkey PRIMARY KEY (id);
+
+ALTER TABLE ONLY public.organizations
+    ADD CONSTRAINT organizations_pkey PRIMARY KEY (org_id);
 
 ALTER TABLE ONLY public.questions
     ADD CONSTRAINT questions_pkey PRIMARY KEY (question_id);
@@ -265,17 +316,11 @@ ALTER TABLE ONLY public.spatial_hotspots
 ALTER TABLE ONLY public.taxonomy_tree
     ADD CONSTRAINT taxonomy_tree_pkey PRIMARY KEY (node_id);
 
-ALTER TABLE ONLY public.taxonomy_tree
-    ADD CONSTRAINT taxonomy_tree_slug_key UNIQUE (slug);
-
 ALTER TABLE ONLY public.user_global_stats
     ADD CONSTRAINT user_global_stats_pkey PRIMARY KEY (user_id);
 
 ALTER TABLE ONLY public.user_interactions
     ADD CONSTRAINT user_interactions_pkey PRIMARY KEY (interaction_id);
-
-ALTER TABLE ONLY public.user_interactions
-    ADD CONSTRAINT uq_user_session_question UNIQUE (user_id, session_id, question_id);
 
 ALTER TABLE ONLY public.user_node_mastery
     ADD CONSTRAINT user_node_mastery_pkey PRIMARY KEY (user_id, topic_id);
@@ -283,34 +328,73 @@ ALTER TABLE ONLY public.user_node_mastery
 ALTER TABLE ONLY public.user_subscriptions
     ADD CONSTRAINT user_subscriptions_pkey PRIMARY KEY (subscription_id);
 
-ALTER TABLE ONLY public.user_subscriptions
-    ADD CONSTRAINT uq_user_subscription UNIQUE (user_id);
-
 ALTER TABLE ONLY public.wiki_article_taxonomy
     ADD CONSTRAINT wiki_article_taxonomy_pkey PRIMARY KEY (article_id, node_id);
 
 ALTER TABLE ONLY public.wiki_articles
     ADD CONSTRAINT wiki_articles_pkey PRIMARY KEY (article_id);
 
+-- Unique Constraints
+
+ALTER TABLE ONLY public.disciplines
+    ADD CONSTRAINT disciplines_name_key UNIQUE (name);
+
+ALTER TABLE ONLY public.feature_flags
+    ADD CONSTRAINT feature_flags_key_key UNIQUE (key);
+
+ALTER TABLE ONLY public.models_3d
+    ADD CONSTRAINT models_3d_slug_key UNIQUE (slug);
+
+ALTER TABLE ONLY public.organizations
+    ADD CONSTRAINT organizations_slug_key UNIQUE (slug);
+
+ALTER TABLE ONLY public.taxonomy_tree
+    ADD CONSTRAINT taxonomy_tree_slug_key UNIQUE (slug);
+
+ALTER TABLE ONLY public.user_interactions
+    ADD CONSTRAINT uq_user_session_question UNIQUE (user_id, session_id, question_id);
+
+ALTER TABLE ONLY public.user_subscriptions
+    ADD CONSTRAINT uq_user_subscription UNIQUE (user_id);
+
 ALTER TABLE ONLY public.wiki_articles
     ADD CONSTRAINT wiki_articles_slug_key UNIQUE (slug);
 
-CREATE TRIGGER tr_models_3d_updated_at BEFORE UPDATE ON public.models_3d FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+-- Triggers
 
-CREATE TRIGGER tr_note_folders_updated_at BEFORE UPDATE ON public.note_folders FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+CREATE TRIGGER tr_models_3d_updated_at
+    BEFORE UPDATE ON public.models_3d
+    FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
-CREATE TRIGGER tr_notes_updated_at BEFORE UPDATE ON public.notes FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+CREATE TRIGGER tr_note_folders_updated_at
+    BEFORE UPDATE ON public.note_folders
+    FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
-CREATE TRIGGER tr_spatial_hotspots_updated_at BEFORE UPDATE ON public.spatial_hotspots FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+CREATE TRIGGER tr_notes_updated_at
+    BEFORE UPDATE ON public.notes
+    FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+
+CREATE TRIGGER tr_quiz_sessions_updated_at
+    BEFORE UPDATE ON public.quiz_sessions
+    FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+
+CREATE TRIGGER tr_spatial_hotspots_updated_at
+    BEFORE UPDATE ON public.spatial_hotspots
+    FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+
+-- Foreign Keys
+
+ALTER TABLE ONLY public.feature_flags
+    ADD CONSTRAINT feature_flags_created_by_fkey FOREIGN KEY (created_by) REFERENCES auth.users(id);
 
 ALTER TABLE ONLY public.note_folders
     ADD CONSTRAINT note_folders_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id);
 
 ALTER TABLE ONLY public.notes
-    ADD CONSTRAINT notes_folder_id_fkey FOREIGN KEY (folder_id) REFERENCES public.note_folders(folder_id);
+    ADD CONSTRAINT notes_article_id_fkey FOREIGN KEY (article_id) REFERENCES public.wiki_articles(article_id) ON DELETE SET NULL;
 
 ALTER TABLE ONLY public.notes
-    ADD CONSTRAINT notes_topic_id_fkey FOREIGN KEY (topic_id) REFERENCES public.taxonomy_tree(node_id);
+    ADD CONSTRAINT notes_folder_id_fkey FOREIGN KEY (folder_id) REFERENCES public.note_folders(folder_id);
 
 ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_question_id_fkey FOREIGN KEY (question_id) REFERENCES public.questions(question_id) ON DELETE SET NULL;
@@ -319,10 +403,16 @@ ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.quiz_sessions(session_id) ON DELETE SET NULL;
 
 ALTER TABLE ONLY public.notes
-    ADD CONSTRAINT notes_article_id_fkey FOREIGN KEY (article_id) REFERENCES public.wiki_articles(article_id) ON DELETE SET NULL;
+    ADD CONSTRAINT notes_topic_id_fkey FOREIGN KEY (topic_id) REFERENCES public.taxonomy_tree(node_id);
 
 ALTER TABLE ONLY public.notes
     ADD CONSTRAINT notes_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id);
+
+ALTER TABLE ONLY public.organization_members
+    ADD CONSTRAINT organization_members_org_id_fkey FOREIGN KEY (org_id) REFERENCES public.organizations(org_id);
+
+ALTER TABLE ONLY public.organization_members
+    ADD CONSTRAINT organization_members_user_id_fkey FOREIGN KEY (user_id) REFERENCES auth.users(id);
 
 ALTER TABLE ONLY public.questions
     ADD CONSTRAINT questions_topic_id_fkey FOREIGN KEY (topic_id) REFERENCES public.taxonomy_tree(node_id);
@@ -382,47 +472,200 @@ ALTER TABLE ONLY public.wiki_article_taxonomy
     ADD CONSTRAINT wiki_article_taxonomy_node_id_fkey FOREIGN KEY (node_id) REFERENCES public.taxonomy_tree(node_id);
 
 -- Grants
+
 GRANT USAGE ON SCHEMA public TO postgres, anon, authenticated, service_role;
 GRANT ALL ON ALL TABLES IN SCHEMA public TO postgres, anon, authenticated, service_role;
 GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO postgres, anon, authenticated, service_role;
 GRANT ALL ON ALL FUNCTIONS IN SCHEMA public TO postgres, anon, authenticated, service_role;
 
 -- Row Level Security
-ALTER TABLE public.user_global_stats ENABLE ROW LEVEL SECURITY;
+
 ALTER TABLE public.disciplines ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.notes ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.feature_flags ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.models_3d ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.note_folders ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.notes ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.organization_members ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.organizations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.questions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.quiz_sessions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.readiness_score_snapshots ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.spatial_hotspots ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.taxonomy_tree ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_global_stats ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_interactions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_node_mastery ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_subscriptions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.wiki_article_taxonomy ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.wiki_articles ENABLE ROW LEVEL SECURITY;
 
 -- Policies
 
-CREATE POLICY "Users can read own stats"
-ON public.user_global_stats -- Added public.
-FOR SELECT
-USING (auth.uid() = user_id);
-
-CREATE POLICY "Users can update own stats"
-ON public.user_global_stats -- Added public.
-FOR UPDATE
-USING (auth.uid() = user_id);
-
-CREATE POLICY "Users can insert own stats"
-ON public.user_global_stats -- Added public.
-FOR INSERT
-WITH CHECK (auth.uid() = user_id);
-
+-- disciplines
 CREATE POLICY "Anyone can read disciplines"
-ON public.disciplines -- Added public.
-FOR SELECT
+ON public.disciplines FOR SELECT USING (true);
+
+-- feature_flags
+CREATE POLICY "Authenticated users can read feature flags"
+ON public.feature_flags FOR SELECT
+TO authenticated
 USING (true);
 
-CREATE POLICY "Users can manage own notes"
-ON public.notes -- Added public.
-FOR ALL
-USING (auth.uid() = user_id)
-WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Admins can manage feature flags"
+ON public.feature_flags FOR ALL
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM auth.users
+        WHERE users.id = auth.uid()
+        AND (users.raw_app_meta_data ->> 'role') = 'admin'
+    )
+);
 
+-- models_3d
+CREATE POLICY "Anyone can read models_3d"
+ON public.models_3d FOR SELECT USING (true);
+
+-- note_folders
 CREATE POLICY "Users can manage own folders"
-ON public.note_folders -- Added public.
-FOR ALL
-USING (auth.uid() = user_id)
-WITH CHECK (auth.uid() = user_id);
+ON public.note_folders FOR ALL
+USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+-- notes
+CREATE POLICY "Users can manage own notes"
+ON public.notes FOR ALL
+USING (auth.uid() = user_id) WITH CHECK (auth.uid() = user_id);
+
+-- organization_members
+CREATE POLICY "Members can read own org members"
+ON public.organization_members FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM organization_members self
+        WHERE self.org_id = organization_members.org_id
+        AND self.user_id = auth.uid()
+    )
+);
+
+CREATE POLICY "Org admins can manage members"
+ON public.organization_members FOR ALL
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM organization_members self
+        WHERE self.org_id = organization_members.org_id
+        AND self.user_id = auth.uid()
+        AND self.role = ANY (ARRAY['owner'::text, 'admin'::text])
+    )
+);
+
+-- organizations
+CREATE POLICY "Members can read own organization"
+ON public.organizations FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM organization_members
+        WHERE organization_members.org_id = organizations.org_id
+        AND organization_members.user_id = auth.uid()
+    )
+);
+
+CREATE POLICY "Org admins can update organization"
+ON public.organizations FOR UPDATE
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM organization_members
+        WHERE organization_members.org_id = organizations.org_id
+        AND organization_members.user_id = auth.uid()
+        AND organization_members.role = ANY (ARRAY['owner'::text, 'admin'::text])
+    )
+);
+
+-- questions
+CREATE POLICY "Anyone can read questions"
+ON public.questions FOR SELECT USING (true);
+
+-- quiz_sessions
+CREATE POLICY "Users can read own quiz sessions"
+ON public.quiz_sessions FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own quiz sessions"
+ON public.quiz_sessions FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can update own quiz sessions"
+ON public.quiz_sessions FOR UPDATE USING (auth.uid() = user_id);
+
+-- readiness_score_snapshots (append-only from service side)
+CREATE POLICY "Users can read own readiness snapshots"
+ON public.readiness_score_snapshots FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own readiness snapshots"
+ON public.readiness_score_snapshots FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+-- spatial_hotspots
+CREATE POLICY "Anyone can read spatial_hotspots"
+ON public.spatial_hotspots FOR SELECT USING (true);
+
+-- taxonomy_tree
+CREATE POLICY "Anyone can read taxonomy_tree"
+ON public.taxonomy_tree FOR SELECT USING (true);
+
+-- user_global_stats
+CREATE POLICY "Users can read own stats"
+ON public.user_global_stats FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can update own stats"
+ON public.user_global_stats FOR UPDATE USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own stats"
+ON public.user_global_stats FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+-- user_interactions (immutable — no UPDATE policy)
+CREATE POLICY "Users can read own interactions"
+ON public.user_interactions FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own interactions"
+ON public.user_interactions FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+-- user_node_mastery
+CREATE POLICY "Users can read own node mastery"
+ON public.user_node_mastery FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own node mastery"
+ON public.user_node_mastery FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+CREATE POLICY "Users can update own node mastery"
+ON public.user_node_mastery FOR UPDATE USING (auth.uid() = user_id);
+
+-- user_subscriptions
+CREATE POLICY "Users can read own subscription"
+ON public.user_subscriptions FOR SELECT
+TO authenticated
+USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can update own subscription"
+ON public.user_subscriptions FOR UPDATE
+TO authenticated
+USING (auth.uid() = user_id);
+
+CREATE POLICY "Admins can read all subscriptions"
+ON public.user_subscriptions FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1 FROM auth.users
+        WHERE users.id = auth.uid()
+        AND (users.raw_app_meta_data ->> 'role') = 'admin'
+    )
+);
+
+-- wiki_article_taxonomy
+CREATE POLICY "Anyone can read wiki_article_taxonomy"
+ON public.wiki_article_taxonomy FOR SELECT USING (true);
+
+-- wiki_articles
+CREATE POLICY "Anyone can read wiki_articles"
+ON public.wiki_articles FOR SELECT USING (true);

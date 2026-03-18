@@ -77,7 +77,7 @@ export function ConfirmSubmitSheet({
               {/* Header */}
               <div className='flex items-center justify-between px-6 py-4 border-b border-border'>
                 <h2 className='text-sm font-semibold text-zinc-900 tracking-tight'>
-                  Submit Session?
+                  Ready to finish?
                 </h2>
                 <button
                   onClick={onCancel}
@@ -114,7 +114,7 @@ export function ConfirmSubmitSheet({
                       {unansweredCount}
                     </span>
                     <span className='text-[11px] font-bold uppercase tracking-widest text-zinc-400 mt-1'>
-                      Skipped
+                      To Review
                     </span>
                   </div>
                   <div className='flex flex-col items-center p-3 rounded-md bg-amber-50 border border-amber-100'>
@@ -136,7 +136,7 @@ export function ConfirmSubmitSheet({
                 {unansweredCount > 0 && (
                   <p className='text-[11px] text-zinc-500 text-center'>
                     {unansweredCount} question{unansweredCount !== 1 ? 's' : ''}{' '}
-                    unanswered. You can go back to review them.
+                    still to review. You can go back anytime.
                   </p>
                 )}
 

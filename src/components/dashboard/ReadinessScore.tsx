@@ -42,12 +42,12 @@ export const ReadinessScore = ({ score, previousScore }: ReadinessScoreProps) =>
           </p>
         </div>
       </CardHeader>
-      <CardContent className='flex flex-row items-end justify-between gap-6 pt-1'>
+      <CardContent className='flex flex-row items-end justify-between gap-4 pt-1'>
         <div className='flex flex-col'>
           <span
             className={cn(
               'font-extrabold tracking-tight tabular-nums',
-              'text-5xl sm:text-6xl',
+              'text-4xl sm:text-5xl',
               getReadinessColorClass(clamped),
             )}
           >

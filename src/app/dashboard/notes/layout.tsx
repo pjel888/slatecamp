@@ -1,8 +1,7 @@
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import React from 'react'
 
 const NotesPageLayout = ({ children }: { children: React.ReactNode }) => {
-  return <SharedPageLayout>{children}</SharedPageLayout>
+  return <div className='h-full w-full overflow-hidden'>{children}</div>
 }
 
 export default NotesPageLayout

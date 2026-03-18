@@ -25,7 +25,7 @@ import {
   getNoteFolders,
   createNote,
   createNoteFolder,
-} from '@/lib/actions/notes'
+} from '@/lib/actions/notes-actions'
 import { cn } from '@/lib/utils'
 import type { NoteStub } from '@/types/app'
 import { format } from 'date-fns'

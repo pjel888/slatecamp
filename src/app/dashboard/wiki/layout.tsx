@@ -1,4 +1,3 @@
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { WikiLayoutClient } from '@/components/wiki/WikiLayoutClient'
 import { createClient, getUser } from '@/lib/supabase/server'
 import React, { Suspense } from 'react'
@@ -42,10 +41,10 @@ const WikiLayoutContent = async ({ children }: { children: React.ReactNode }) =>
 
 export default function WikiPageLayout({ children }: { children: React.ReactNode }) {
   return (
-    <SharedPageLayout>
+    <div className='h-full w-full overflow-hidden'>
       <Suspense fallback={<WikiLoading />}>
         <WikiLayoutContent>{children}</WikiLayoutContent>
       </Suspense>
-    </SharedPageLayout>
+    </div>
   )
 }

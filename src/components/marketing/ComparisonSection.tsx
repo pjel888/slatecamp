@@ -1,4 +1,8 @@
+'use client'
+
 import { Starburst } from '@/components/marketing/LandingPrimitives'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
+import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 
 const COMPARISON_ROWS: readonly {
   dimension: string
@@ -50,25 +54,27 @@ export const ComparisonSection = () => (
     className='border-t border-[#E8E4DC] px-6 py-24'
   >
     <div className='mx-auto max-w-[1200px]'>
-      <div className='flex items-center gap-3'>
-        <Starburst className='h-3 w-3 text-[#F5A623]' />
-        <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'>
-          Two ways to prepare
-        </span>
-      </div>
+      <ScrollReveal delay={0}>
+        <div className='flex items-center gap-3'>
+          <Starburst className='h-3 w-3 text-[#F5A623]' />
+          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'>
+            Two ways to prepare
+          </span>
+        </div>
 
-      <h2
-        id='comparison-heading'
-        className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-[#18181B]'
-      >
-        The old way. The better way.
-      </h2>
+        <h2
+          id='comparison-heading'
+          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-[#18181B]'
+        >
+          The old way. The better way.
+        </h2>
 
-      <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-[#6B6B6B]'>
-        Traditional review centers work. But there&apos;s one thing they
-        can&apos;t tell you that SlateCamp can: exactly where your gaps are,
-        right now, before exam day.
-      </p>
+        <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-[#6B6B6B]'>
+          Traditional review centers work. But there&apos;s one thing they
+          can&apos;t tell you that SlateCamp can: exactly where your gaps are,
+          right now, before exam day.
+        </p>
+      </ScrollReveal>
 
       {/* Table — desktop */}
       <div className='mt-10 hidden overflow-hidden rounded-md border border-[#E8E4DC] md:block'>
@@ -83,68 +89,72 @@ export const ComparisonSection = () => (
           </div>
         </div>
         {/* Data rows */}
-        {COMPARISON_ROWS.map((row) => (
-          <div
-            key={row.dimension}
-            className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] last:border-0 ${
-              row.highlight ? 'bg-[#FFFDF7]' : ''
-            }`}
-          >
-            <div className='px-5 py-3.5 text-[13px] font-medium text-[#18181B]'>
-              {row.dimension}
-            </div>
-            <div className='border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
-              {row.traditional}
-            </div>
-            <div
-              className={`border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] ${
-                row.highlight
-                  ? 'font-medium text-[#1B3FC4]'
-                  : 'text-[#555]'
-              }`}
-            >
-              {row.slatecamp}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Mobile: stacked cards */}
-      <div className='mt-6 space-y-3 md:hidden'>
-        {COMPARISON_ROWS.map((row) => (
-          <div
-            key={row.dimension}
-            className='rounded-md border border-[#E8E4DC] p-4'
-          >
-            <p className='text-[11px] font-semibold uppercase tracking-wide text-[#9CA3AF]'>
-              {row.dimension}
-            </p>
-            <div className='mt-2 flex gap-4'>
-              <div className='flex-1'>
-                <p className='text-[11px] font-medium text-[#9CA3AF]'>
-                  Traditional
-                </p>
-                <p className='mt-0.5 text-[12px] text-[#6B6B6B]'>
+        <StaggerParent>
+          {COMPARISON_ROWS.map((row) => (
+            <StaggerItem key={row.dimension}>
+              <div
+                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] last:border-0 ${
+                  row.highlight ? 'bg-[#FFFDF7]' : ''
+                }`}
+              >
+                <div className='px-5 py-3.5 text-[13px] font-medium text-[#18181B]'>
+                  {row.dimension}
+                </div>
+                <div className='border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
                   {row.traditional}
-                </p>
-              </div>
-              <div className='flex-1'>
-                <p className='text-[11px] font-medium text-[#1B3FC4]'>
-                  SlateCamp
-                </p>
-                <p
-                  className={`mt-0.5 text-[12px] ${
+                </div>
+                <div
+                  className={`border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] ${
                     row.highlight
                       ? 'font-medium text-[#1B3FC4]'
-                      : 'text-[#18181B]'
+                      : 'text-[#555]'
                   }`}
                 >
                   {row.slatecamp}
-                </p>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </StaggerItem>
+          ))}
+        </StaggerParent>
+      </div>
+
+      {/* Mobile: stacked cards */}
+      <div className='mt-6 md:hidden'>
+        <StaggerParent className='space-y-3'>
+          {COMPARISON_ROWS.map((row) => (
+            <StaggerItem key={row.dimension}>
+              <div className='rounded-md border border-[#E8E4DC] p-4'>
+                <p className='text-[11px] font-semibold uppercase tracking-wide text-[#9CA3AF]'>
+                  {row.dimension}
+                </p>
+                <div className='mt-2 flex gap-4'>
+                  <div className='flex-1'>
+                    <p className='text-[11px] font-medium text-[#9CA3AF]'>
+                      Traditional
+                    </p>
+                    <p className='mt-0.5 text-[12px] text-[#6B6B6B]'>
+                      {row.traditional}
+                    </p>
+                  </div>
+                  <div className='flex-1'>
+                    <p className='text-[11px] font-medium text-[#1B3FC4]'>
+                      SlateCamp
+                    </p>
+                    <p
+                      className={`mt-0.5 text-[12px] ${
+                        row.highlight
+                          ? 'font-medium text-[#1B3FC4]'
+                          : 'text-[#18181B]'
+                      }`}
+                    >
+                      {row.slatecamp}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerParent>
       </div>
 
       <p className='mt-6 text-[13px] text-[#9CA3AF]'>

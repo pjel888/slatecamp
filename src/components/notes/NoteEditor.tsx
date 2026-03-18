@@ -10,7 +10,7 @@ import { useEffect, useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
 import { TextB, TextItalic, TextStrikethrough, List as ListIcon, ListNumbers } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { type Note } from '@/lib/actions/notes-actions'
+import { type Note } from '@/types/app'
 
 interface NoteEditorProps {
   note: Note
@@ -50,7 +50,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
       }
       title = title.slice(0, 50).trim()
 
-      onUpdate(note.note_id, json, title)
+      onUpdate(note.id, json, title)
     },
   })
 
@@ -70,7 +70,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
       }
       lastUpdated.current = note.updated_at
     }
-  }, [note.note_id, note.updated_at, note.content, editor])
+  }, [note.id, note.updated_at, note.content, editor])
 
   if (!editorReady || !editor) return null; // Ensure editor is ready before rendering
 

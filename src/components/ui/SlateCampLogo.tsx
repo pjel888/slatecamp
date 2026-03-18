@@ -34,8 +34,8 @@ export const SlateCampLogo = ({
   const campClass = cn(
     isDefault || isInverted
       ? isInverted
-        ? 'text-zinc-100'
-        : 'text-[#1535A8]'
+        ? 'text-white'
+        : 'text-accent-blue-hover'
       : 'text-text-primary',
   )
 

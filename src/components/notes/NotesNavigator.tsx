@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import { createNoteFolder } from '@/lib/actions/notes'
+import { createNoteFolder } from '@/lib/actions/notes-actions'
 
 export type NavFilter =
   | { type: 'all' }

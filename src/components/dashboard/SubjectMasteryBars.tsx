@@ -13,9 +13,9 @@ function getBarColor(mastery: number): string {
 
 export function SubjectMasteryBarsSkeleton() {
   return (
-    <div className="bg-white border border-[#D4DAE3] rounded-md p-5">
+    <div className="bg-white border border-[#D4DAE3] rounded-md p-3">
       <div className="h-3 w-36 bg-[#F2F0EB] rounded-full animate-pulse mb-4" />
-      <div className="space-y-3">
+      <div className="space-y-2">
         {Array.from({ length: 4 }).map((_, i) => (
           <div key={i}>
             <div
@@ -39,12 +39,12 @@ export function SubjectMasteryBars({ subjects }: SubjectMasteryBarsProps) {
   }
 
   return (
-    <div className="bg-white border border-[#D4DAE3] rounded-md p-5">
+    <div className="bg-white border border-[#D4DAE3] rounded-md p-3">
       <p className="font-dm-mono text-[11px] font-medium text-[#8896A7] uppercase tracking-[0.2em] mb-4">
         Subject Mastery
       </p>
 
-      <div className="space-y-3">
+      <div className="space-y-2">
         {subjects.map((subject) => {
           const clamped = Math.max(0, Math.min(100, Math.round(subject.mastery)))
           const barColor = getBarColor(clamped)

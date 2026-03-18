@@ -1,9 +1,13 @@
+'use client'
+
 import {
   FeatureSectionLayout,
   FeatureCheckItem,
   SectionEyebrow,
   FeaturePill,
 } from '@/components/marketing/FeatureSectionLayout'
+import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 /* ── Wiki mockup ── */
 
@@ -57,47 +61,59 @@ const WikiMockup = () => (
 export const WikiSection = () => (
   <FeatureSectionLayout flip amber>
     {/* Copy — right (visually right due to flip) */}
-    <div>
-      <SectionEyebrow label='Wiki' amber />
+    <StaggerParent>
+      <StaggerItem>
+        <SectionEyebrow label='Wiki' amber />
+      </StaggerItem>
 
-      <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
-        Every code provision, every principle.
-        <br />
-        Organized like an encyclopedia.
-        <br />
-        Cited like a reference.
-      </h2>
+      <StaggerItem>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+          Every code provision, every principle.
+          <br />
+          Organized like an encyclopedia.
+          <br />
+          Cited like a reference.
+        </h2>
+      </StaggerItem>
 
-      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-black/60'>
-        No more hunting through PDFs. The SlateCamp Wiki maps every ALE
-        topic to its source — PD 1096, RA 9266, NBCP, and more — with
-        your personal notes workspace alongside.
-      </p>
+      <StaggerItem>
+        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-black/60'>
+          No more hunting through PDFs. The SlateCamp Wiki maps every ALE
+          topic to its source — PD 1096, RA 9266, NBCP, and more — with
+          your personal notes workspace alongside.
+        </p>
+      </StaggerItem>
 
       {/* Feature chips */}
-      <div className='mt-5 flex flex-wrap gap-2'>
-        <FeaturePill variant='on-amber'>All ALE subjects covered</FeaturePill>
-        <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
-        <FeaturePill variant='on-amber'>Personal notes workspace</FeaturePill>
-        <FeaturePill variant='on-amber'>PD 1096 · RA 9266 · NBCP</FeaturePill>
-      </div>
+      <StaggerItem>
+        <div className='mt-5 flex flex-wrap gap-2'>
+          <FeaturePill variant='on-amber'>All ALE subjects covered</FeaturePill>
+          <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
+          <FeaturePill variant='on-amber'>Personal notes workspace</FeaturePill>
+          <FeaturePill variant='on-amber'>PD 1096 · RA 9266 · NBCP</FeaturePill>
+        </div>
+      </StaggerItem>
 
       {/* Check items */}
-      <div className='mt-8 space-y-5'>
-        <FeatureCheckItem
-          title='Linked directly to quiz questions'
-          description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
-          accentColor='#111111'
-        />
-        <FeatureCheckItem
-          title='Your notes, your workspace'
-          description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
-          accentColor='#111111'
-        />
-      </div>
-    </div>
+      <StaggerItem>
+        <div className='mt-8 space-y-5'>
+          <FeatureCheckItem
+            title='Linked directly to quiz questions'
+            description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
+            accentColor='#111111'
+          />
+          <FeatureCheckItem
+            title='Your notes, your workspace'
+            description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
+            accentColor='#111111'
+          />
+        </div>
+      </StaggerItem>
+    </StaggerParent>
 
     {/* Mockup — left (visually left due to flip) */}
-    <WikiMockup />
+    <ScrollReveal delay={0.15} y={0}>
+      <WikiMockup />
+    </ScrollReveal>
   </FeatureSectionLayout>
 )

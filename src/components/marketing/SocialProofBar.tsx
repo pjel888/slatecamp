@@ -1,21 +1,26 @@
+'use client'
+
 import { Starburst } from '@/components/marketing/LandingPrimitives'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 export const SocialProofBar = () => (
   <>
     <section className='border-y border-[#E8E4DC] bg-[#FFFDF7]/80 p-2'>
-      <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center'>
-        <span className='text-[12px] font-medium text-[#6B6B6B]'>
-          Built for the Philippine ALE
-        </span>
-        <span className='text-[12px] text-[#9CA3AF]'>&middot;</span>
-        <span className='text-[12px] font-medium text-[#6B6B6B]'>
-          Every question mapped to the ALE syllabus
-        </span>
-        <span className='text-[12px] text-[#9CA3AF]'>&middot;</span>
-        <span className='text-[12px] font-medium text-[#6B6B6B]'>
-          Readiness Score powered by IRT
-        </span>
-      </div>
+      <ScrollReveal y={0} duration={0.3}>
+        <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center'>
+          <span className='text-[12px] font-medium text-[#6B6B6B]'>
+            Built for the Philippine ALE
+          </span>
+          <span className='text-[12px] text-[#9CA3AF]'>&middot;</span>
+          <span className='text-[12px] font-medium text-[#6B6B6B]'>
+            Every question mapped to the ALE syllabus
+          </span>
+          <span className='text-[12px] text-[#9CA3AF]'>&middot;</span>
+          <span className='text-[12px] font-medium text-[#6B6B6B]'>
+            Readiness Score powered by IRT
+          </span>
+        </div>
+      </ScrollReveal>
     </section>
 
     <section className='px-6'>

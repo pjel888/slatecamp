@@ -119,6 +119,7 @@ export function OptionButton({
           onClick={(e) => { e.stopPropagation(); onStrike(e) }}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); onStrike(e) } }}
           aria-label="Eliminate this option"
+          title="Eliminate this option"
           className={cn(
             'shrink-0 p-1.5 rounded-sm transition-colors',
             state === 'selected'
@@ -136,6 +137,7 @@ export function OptionButton({
           onClick={(e) => { e.stopPropagation(); onStrike(e) }}
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); onStrike(e) } }}
           aria-label="Restore this option"
+          title="Restore this option"
           className="shrink-0 p-1.5 rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-[#EEF2FC]/50 transition-colors"
         >
           <SCIcon icon={Backspace} size="sm" />

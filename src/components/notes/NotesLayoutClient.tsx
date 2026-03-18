@@ -5,7 +5,7 @@ import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Plus, FileText, Trash } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { getNotesList, createNote, deleteNote } from '@/lib/actions/notes'
+import { getNotesList, createNote, deleteNote } from '@/lib/actions/notes-actions'
 import type { NoteStub } from '@/types/app'
 
 interface NotesLayoutClientProps {

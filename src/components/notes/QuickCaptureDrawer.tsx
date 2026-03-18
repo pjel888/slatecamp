@@ -17,7 +17,7 @@ import {
   updateNote,
   getNotesList,
   getNote,
-} from '@/lib/actions/notes'
+} from '@/lib/actions/notes-actions'
 import { ROUTES } from '@/lib/constants/routes'
 import { useNoteContext } from '@/lib/context/note-context'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'

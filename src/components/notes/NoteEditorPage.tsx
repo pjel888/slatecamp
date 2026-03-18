@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { NotesEditor } from '@/components/notes/NotesEditor'
-import { updateNote } from '@/lib/actions/notes'
+import { updateNote } from '@/lib/actions/notes-actions'
 import type { Note } from '@/types/app'
 
 interface NoteEditorPageProps {

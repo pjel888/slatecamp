@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HeroHeadline } from '@/components/marketing/HeroHeadline'
 import { FloatingTestimonialMarquee } from '@/components/marketing/FloatingTestimonialMarquee'
@@ -152,81 +153,70 @@ const STATS = [
 /* ── Hero Cards Components ── */
 
 // Card 1: Supported Exams (Back Left)
-const ExamsSupportedCard = () => (
-  <div
-    className='order-1 w-full max-w-[280px] rounded-[10px] bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
-    aria-hidden='true'
-  >
-    <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2'>
-      <Starburst className='h-3 w-3 text-[#F5A623]' />
-      <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
-        Supported exams
-      </span>
-    </div>
-    <ul className='space-y-1.75'>
-      {SUPPORTED_EXAMS.slice(0, 6).map((exam) => {
-        const isLive = exam.tone === 'live'
-        const dotColor = isLive
-          ? 'bg-emerald-600'
-          : exam.category === 'engineering'
-            ? 'bg-primary'
-            : exam.category === 'health'
-              ? 'bg-emerald-600'
-              : exam.category === 'business'
-                ? 'bg-amber-600'
-                : exam.category === 'education'
-                  ? 'bg-violet-600'
-                  : 'bg-[#FFFDF7]0'
+const ALESubjectCoverageCard = () => {
+  const subjects = [
+    { name: 'Building Technology', weight: '20%', color: 'bg-[#1B3FC4]' },
+    { name: 'Structural Design', weight: '15%', color: 'bg-[#1B3FC4]' },
+    { name: 'Utilities (MEPFS)', weight: '15%', color: 'bg-[#1B3FC4]' },
+    { name: 'History of Architecture', weight: '15%', color: 'bg-[#E8853A]' },
+    { name: 'Architectural Design', weight: '15%', color: 'bg-[#E8853A]' },
+    { name: 'Professional Practice', weight: '10%', color: 'bg-[#E8853A]' },
+    { name: 'Building Laws & Codes', weight: '10%', color: 'bg-[#E8853A]' },
+  ]
 
-        return (
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+      className='order-1 w-full max-w-[280px] rounded-[10px] bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+      aria-hidden='true'
+    >
+      <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2'>
+        <Starburst className='h-3 w-3 text-[#F5A623]' />
+        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+          ALE Coverage
+        </span>
+      </div>
+      <ul className='space-y-1.5'>
+        {subjects.map((subject) => (
           <li
-            key={exam.name}
-            className={cn(
-              'flex items-center justify-between gap-2 rounded-sm px-1.5 py-1',
-              isLive
-                ? 'bg-emerald-50 hover:bg-emerald-100/80'
-                : 'hover:bg-[#F2F0EB]/70',
-            )}
+            key={subject.name}
+            className='flex items-center justify-between gap-2 rounded-sm px-1.5 py-1 hover:bg-[#F2F0EB]/70'
           >
             <div className='flex min-w-0 items-center gap-2'>
               <span
-                className={cn('h-1.5 w-1.5 shrink-0 rounded-full', dotColor)}
-              />
-              <span
                 className={cn(
-                  'truncate text-[13px] font-medium leading-tight',
-                  isLive ? 'text-emerald-800' : 'text-[#555]',
+                  'h-1.5 w-1.5 shrink-0 rounded-full',
+                  subject.color,
                 )}
-              >
-                {exam.name}
+              />
+              <span className='truncate text-[13px] font-medium leading-tight text-[#555]'>
+                {subject.name}
               </span>
             </div>
-            {exam.tone === 'live' ? (
-              <span className='inline-flex shrink-0 items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700'>
-                <span className='h-1.5 w-1.5 rounded-full bg-emerald-600' />
-                Live
-              </span>
-            ) : (
-              <span className='shrink-0 text-[11px] font-medium text-[#6B6B6B]'>
-                {exam.status}
-              </span>
-            )}
+            {/* <span className='shrink-0 font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums font-medium text-[#6B6B6B]'>
+              {subject.weight}
+            </span> */}
           </li>
-        )
-      })}
-      {SUPPORTED_EXAMS.length > 6 ? (
-        <li className='mt-1 flex items-center justify-end text-[11px] font-medium text-[#6B6B6B]'>
-          +{SUPPORTED_EXAMS.length - 6} more exams
-        </li>
-      ) : null}
-    </ul>
-  </div>
-)
+        ))}
+      </ul>
+      <div className='mt-2.5 border-t border-[#E8E4DC] pt-2 text-center'>
+        <span className='text-[11px] font-medium text-[#6B6B6B]'>
+          All 7 subjects · Fully mapped
+        </span>
+      </div>
+    </motion.div>
+  )
+}
 
 // Card 2: Mock Question (Back Right)
 const MockQuestionCard = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
       className='order-3 w-full max-w-[280px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
@@ -275,7 +265,7 @@ const MockQuestionCard = () => {
           )
         })}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -291,8 +281,11 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div
-      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:transform-[translate(-50%,-50%)] md:hover:transform-[translate(-50%,calc(-50%-12px))] md:p-7 hover:rotate-1'
+    <motion.div
+      initial={{ opacity: 0, y: 24, scale: 0.97 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
+      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:hover:-translate-x-1/2 md:hover:-translate-y-[calc(50%+12px)] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -386,7 +379,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           <span aria-hidden='true'>→</span>
         </Link>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -395,7 +388,7 @@ const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
     id='hero-right'
     className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px]  md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
-    <ExamsSupportedCard />
+    <ALESubjectCoverageCard />
     <MockQuestionCard />
     <ConversionHookCard isLoggedIn={isLoggedIn} />
   </div>

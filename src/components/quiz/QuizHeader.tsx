@@ -122,7 +122,7 @@ export function QuizHeader({
       </div>
 
       {/* Progress bar */}
-      <div className="h-[3px] w-full bg-[#EEF2FC]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions}>
+      <div className="h-[3px] w-full bg-[#EEF2FC]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions} aria-label="Quiz progress">
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',

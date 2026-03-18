@@ -86,7 +86,7 @@ async function DashboardLayoutContent({
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
-          <div className='flex h-screen bg-muted text-gray-900 font-sans selection:bg-gray-200'>
+          <div className='flex h-screen overflow-hidden bg-muted text-gray-900 font-sans selection:bg-gray-200'>
             <Sidebar
               isAdmin={isAdmin}
               isDevMode={showDevTools}
@@ -105,7 +105,7 @@ async function DashboardLayoutContent({
                 <div>
                   <DashboardHeader />
                 </div>
-                <main className='flex-1 overflow-y-auto '>
+                <main className='flex-1 min-h-0 overflow-y-auto'>
                   {children}
                 </main>
               </BreadcrumbProvider>

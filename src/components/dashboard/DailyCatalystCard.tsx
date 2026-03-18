@@ -39,9 +39,9 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
     : null
 
   return (
-    <div className='bg-primary rounded-md border border-[#1535A8] p-5 flex flex-col gap-4 h-full relative overflow-hidden group'>
+    <div className='bg-primary rounded-md border border-[#1535A8] p-3 flex flex-col gap-2 relative overflow-hidden group'>
       {/* Header */}
-      <div className='flex items-start gap-3 relative z-10'>
+      <div className='flex items-start gap-2 relative z-10'>
         <div className='p-2 rounded-md bg-primary/50 shrink-0 mt-0.5'>
           <SCIcon icon={Icon} size='sm' className='text-white' />
         </div>
@@ -114,7 +114,7 @@ export function DailyCatalystCard({ catalyst }: DailyCatalystCardProps) {
 
 export function DailyCatalystCardSkeleton() {
   return (
-    <div className='bg-primary/20 rounded-md border border-primary/20 p-5 flex flex-col gap-4 animate-pulse'>
+    <div className='bg-primary/20 rounded-md border border-primary/20 p-3 flex flex-col gap-2 animate-pulse'>
       <div className='flex items-start gap-3'>
         <div className='w-8 h-8 bg-primary/50 rounded-md shrink-0' />
         <div className='flex-1 space-y-2'>

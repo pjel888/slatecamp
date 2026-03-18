@@ -16,11 +16,13 @@ interface FooterNavigatorProps {
   currentIndex: number
   canGoBack: boolean
   canGoForward: boolean
-  strictMode: boolean // disables dot jump navigation
+  strictMode: boolean
   onPrev: () => void
   onNext: () => void
   onJump: (index: number) => void
 }
+
+const DOT_OVERFLOW_THRESHOLD = 40
 
 export function FooterNavigator({
   dots,
@@ -32,6 +34,8 @@ export function FooterNavigator({
   onNext,
   onJump,
 }: FooterNavigatorProps) {
+  const showCount = dots.length > DOT_OVERFLOW_THRESHOLD
+
   return (
     <footer className='shrink-0 border-t border-border bg-[#F5F7FA]'>
       <div className='max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4'>
@@ -52,39 +56,43 @@ export function FooterNavigator({
         </button>
 
         {/* Dot navigator */}
-        <nav
-          aria-label='Question navigator'
-          className='flex items-center gap-1.5 overflow-x-auto max-w-[60vw] py-1 scrollbar-hide'
-        >
-          {dots.map((dot) => (
-            <button
-              key={dot.index}
-              onClick={() => !strictMode && onJump(dot.index)}
-              disabled={strictMode}
-              aria-label={`Question ${dot.index + 1}${dot.state === 'flagged' ? ', flagged' : ''}${dot.state === 'answered' ? ', answered' : ''}${dot.state === 'current' ? ', current' : ''}`}
-              aria-current={dot.state === 'current' ? 'true' : undefined}
-              className={cn(
-                'shrink-0 rounded-full transition-all duration-150 outline-none',
-                'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
-                !strictMode &&
-                  dot.state !== 'current' &&
-                  'cursor-pointer hover:scale-125',
-                strictMode && 'cursor-default',
-
-                // Sizing
-                dot.state === 'current'
-                  ? 'w-4 h-4 ring-2 ring-primary ring-offset-1'
-                  : 'w-2.5 h-2.5',
-
-                // Colors
-                dot.state === 'current' && 'bg-primary',
-                dot.state === 'answered' && 'bg-[#5B7FE0]',
-                dot.state === 'flagged' && 'bg-amber-400',
-                dot.state === 'unanswered' && 'bg-zinc-200',
-              )}
-            />
-          ))}
-        </nav>
+        <div className='flex flex-col items-center gap-1 min-w-0'>
+          <nav
+            aria-label='Question navigator'
+            aria-roledescription='question navigator'
+            className='flex items-center gap-1.5 overflow-x-auto max-w-[60vw] py-1 scrollbar-hide'
+          >
+            {dots.map((dot) => (
+              <button
+                key={dot.index}
+                onClick={() => !strictMode && onJump(dot.index)}
+                disabled={strictMode}
+                aria-label={`Question ${dot.index + 1}${dot.state === 'flagged' ? ', flagged' : ''}${dot.state === 'answered' ? ', answered' : ''}${dot.state === 'current' ? ', current' : ''}`}
+                aria-current={dot.state === 'current' ? 'true' : undefined}
+                className={cn(
+                  'shrink-0 rounded-full transition-all duration-150 outline-none',
+                  'focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
+                  !strictMode &&
+                    dot.state !== 'current' &&
+                    'cursor-pointer hover:scale-125',
+                  strictMode && 'cursor-default',
+                  dot.state === 'current'
+                    ? 'w-4 h-4 ring-2 ring-primary ring-offset-1'
+                    : 'w-2.5 h-2.5',
+                  dot.state === 'current' && 'bg-primary',
+                  dot.state === 'answered' && 'bg-[#5B7FE0]',
+                  dot.state === 'flagged' && 'bg-amber-400',
+                  dot.state === 'unanswered' && 'bg-zinc-200',
+                )}
+              />
+            ))}
+          </nav>
+          {showCount && (
+            <span className='text-[11px] font-bold text-[#8896A7] tracking-wide'>
+              Q{currentIndex + 1} of {dots.length}
+            </span>
+          )}
+        </div>
 
         {/* Next */}
         <button

@@ -1,9 +1,13 @@
+'use client'
+
 import {
   FeatureSectionLayout,
   FeatureCheckItem,
   SectionEyebrow,
   FeaturePill,
 } from '@/components/marketing/FeatureSectionLayout'
+import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 /* ── 3D viewer mockup ── */
 
@@ -131,47 +135,59 @@ const ThreeDMockup = () => (
 export const ThreeDLabSection = () => (
   <FeatureSectionLayout dark flip>
     {/* Copy — left (visually right due to flip) */}
-    <div>
-      <SectionEyebrow label='3D Lab' dark />
+    <StaggerParent>
+      <StaggerItem>
+        <SectionEyebrow label='3D Lab' dark />
+      </StaggerItem>
 
-      <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[34px]'>
-        Some things you can&apos;t learn
-        <br />
-        from a textbook.
-      </h2>
+      <StaggerItem>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[34px]'>
+          Some things you can&apos;t learn
+          <br />
+          from a textbook.
+        </h2>
+      </StaggerItem>
 
-      <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-white/55'>
-        Architecture is spatial. Flat pages can&apos;t teach you how a building
-        actually comes together. The 3D Lab lets you rotate, cut away, and
-        explore structures — so concepts click the way they&apos;re supposed to.
-      </p>
+      <StaggerItem>
+        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-white/55'>
+          Architecture is spatial. Flat pages can&apos;t teach you how a building
+          actually comes together. The 3D Lab lets you rotate, cut away, and
+          explore structures — so concepts click the way they&apos;re supposed to.
+        </p>
+      </StaggerItem>
 
       {/* Feature chips */}
-      <div className='mt-5 flex flex-wrap gap-2'>
-        <FeaturePill variant='muted-dark'>Interactive models</FeaturePill>
-        <FeaturePill variant='amber'>Rotate &amp; explore</FeaturePill>
-        <FeaturePill variant='muted-dark'>Cut-away sections</FeaturePill>
-        <FeaturePill variant='muted-dark'>Linked to study content</FeaturePill>
-      </div>
+      <StaggerItem>
+        <div className='mt-5 flex flex-wrap gap-2'>
+          <FeaturePill variant='muted-dark'>Interactive models</FeaturePill>
+          <FeaturePill variant='amber'>Rotate &amp; explore</FeaturePill>
+          <FeaturePill variant='muted-dark'>Cut-away sections</FeaturePill>
+          <FeaturePill variant='muted-dark'>Linked to study content</FeaturePill>
+        </div>
+      </StaggerItem>
 
       {/* Check items */}
-      <div className='mt-8 space-y-5'>
-        <FeatureCheckItem
-          title='Learn by seeing, not just reading'
-          description='Structural systems, building assemblies, and spatial relationships — explored in three dimensions, not described in two.'
-          accentColor='#F5A623'
-          textDark
-        />
-        <FeatureCheckItem
-          title='Connected to what you&apos;re studying'
-          description='3D models link directly to your notes and quiz content, so context is never more than a click away.'
-          accentColor='#F5A623'
-          textDark
-        />
-      </div>
-    </div>
+      <StaggerItem>
+        <div className='mt-8 space-y-5'>
+          <FeatureCheckItem
+            title='Learn by seeing, not just reading'
+            description='Structural systems, building assemblies, and spatial relationships — explored in three dimensions, not described in two.'
+            accentColor='#F5A623'
+            textDark
+          />
+          <FeatureCheckItem
+            title='Connected to what you&apos;re studying'
+            description='3D models link directly to your notes and quiz content, so context is never more than a click away.'
+            accentColor='#F5A623'
+            textDark
+          />
+        </div>
+      </StaggerItem>
+    </StaggerParent>
 
     {/* Mockup — right (visually left due to flip) */}
-    <ThreeDMockup />
+    <ScrollReveal delay={0.15} y={0}>
+      <ThreeDMockup />
+    </ScrollReveal>
   </FeatureSectionLayout>
 )

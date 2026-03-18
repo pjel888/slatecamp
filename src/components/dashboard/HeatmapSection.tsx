@@ -4,13 +4,15 @@ import { getHeatmapData } from '@/lib/actions/heatmap'
 export async function HeatmapSection() {
   const data = await getHeatmapData()
   return (
-    <ActivityHeatmap
-      data={data.activityDays}
-      examDates={data.examDates}
-      accountCreatedAt={data.accountCreatedAt}
-      signupYear={data.signupYear}
-      endYear={data.endYear}
-    />
+    <div className="flex flex-col flex-1 min-h-0">
+      <ActivityHeatmap
+        data={data.activityDays}
+        examDates={data.examDates}
+        accountCreatedAt={data.accountCreatedAt}
+        signupYear={data.signupYear}
+        endYear={data.endYear}
+      />
+    </div>
   )
 }
 

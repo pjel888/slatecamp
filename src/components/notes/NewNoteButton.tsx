@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { Plus } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
-import { createNote } from '@/lib/actions/notes'
+import { createNote } from '@/lib/actions/notes-actions'
 
 interface NewNoteButtonProps {
   className?: string

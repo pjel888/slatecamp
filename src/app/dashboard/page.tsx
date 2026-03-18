@@ -16,7 +16,7 @@ export default async function DashboardPage() {
 
   return (
     <SharedPageLayout>
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-2 xl:gap-3'>
         {/* 1. Grounding Layer */}
         <DashboardHero
           userName={data.userName}
@@ -47,9 +47,9 @@ export default async function DashboardPage() {
         <SubjectMasteryBars subjects={data.subjectMastery} />
 
         {/* 5. Consistency + Recent Activity — cream section break */}
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2 bg-[#F2F0EB] rounded-md p-2 -mx-0'>
+        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2 bg-[#F2F0EB] rounded-md p-2 xl:p-3'>
           <div className='lg:col-span-3'>
-            <Card className='w-full relative p-2 bg-white'>
+            <Card className='w-full relative p-2 bg-white h-full flex flex-col'>
               <p className='font-dm-mono text-[11px] font-medium text-[#8896A7] uppercase tracking-[0.2em] mb-2 px-1 pt-1'>
                 Consistency
               </p>
@@ -62,7 +62,7 @@ export default async function DashboardPage() {
               </Suspense>
             </Card>
           </div>
-          <div className='lg:col-span-2'>
+          <div className='lg:col-span-2 h-full'>
             <RecentActivityCard activities={data.recentActivities} />
           </div>
         </div>

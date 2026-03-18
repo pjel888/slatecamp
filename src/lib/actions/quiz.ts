@@ -250,6 +250,8 @@ export async function saveInteraction(interaction: {
   is_flagged?: boolean
   answer_changes?: number
   options_eliminated?: number
+  confidence?: 'sure' | 'unsure' | null
+  rationale_view_ms?: number
 }) {
   const supabase = await createClient()
   const {
@@ -284,6 +286,8 @@ export async function saveInteraction(interaction: {
       is_flagged: interaction.is_flagged ?? false,
       answer_changes: interaction.answer_changes ?? 0,
       options_eliminated: interaction.options_eliminated ?? 0,
+      confidence: interaction.confidence ?? null,
+      rationale_view_ms: interaction.rationale_view_ms ?? 0,
       user_id: user.id,
       interaction_timestamp: new Date().toISOString(),
       updated_at: new Date().toISOString(),

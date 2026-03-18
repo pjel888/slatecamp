@@ -5,7 +5,7 @@ import { Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
-import { saveInteraction, updateQuizSession } from '@/lib/actions/quiz'
+import { updateQuizSession } from '@/lib/actions/quiz'
 import {
   playCorrectSound,
   playCompletionSound,
@@ -24,8 +24,18 @@ import {
   RationaleDrawer,
   ConfirmSubmitSheet,
   AITutorDrawer,
+  ConfidenceToggle,
 } from '@/components/quiz'
 import type { OptionState, QuestionDotState } from '@/components/quiz'
+import type { ConfidenceLevel } from '@/components/quiz/ConfidenceToggle'
+
+import {
+  useQuizPersistence,
+  persistToLS,
+  clearLS,
+} from '@/hooks/quiz/useQuizPersistence'
+import { useQuizTimer } from '@/hooks/quiz/useQuizTimer'
+import { useQuizTelemetry } from '@/hooks/quiz/useQuizTelemetry'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -36,30 +46,9 @@ interface QuizRendererProps {
   onExit: () => void
 }
 
-type SaveStatus = 'idle' | 'saving' | 'saved' | 'error' | 'offline'
-
 // ─── LocalStorage helpers ────────────────────────────────────────────────────
 
 const LS_KEY = (sessionId: string) => `slatecamp_quiz_${sessionId}`
-
-function persistToLS(
-  sessionId: string,
-  state: {
-    answers: Record<string, string>
-    flags: string[]
-    strikes: Record<string, string[]>
-    currentIndex: number
-  },
-) {
-  try {
-    localStorage.setItem(
-      LS_KEY(sessionId),
-      JSON.stringify({ ...state, ts: Date.now() }),
-    )
-  } catch {
-    /* quota exceeded — silently skip */
-  }
-}
 
 function restoreFromLS(sessionId: string) {
   try {
@@ -67,14 +56,6 @@ function restoreFromLS(sessionId: string) {
     return raw ? JSON.parse(raw) : null
   } catch {
     return null
-  }
-}
-
-function clearLS(sessionId: string) {
-  try {
-    localStorage.removeItem(LS_KEY(sessionId))
-  } catch {
-    /* ignore */
   }
 }
 
@@ -101,15 +82,12 @@ export function QuizRenderer({
   const [isAIOpen, setIsAIOpen] = useState(false)
   const [isSubmitSheetOpen, setIsSubmitSheetOpen] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
-  const [saveStatus, setSaveStatus] = useState<SaveStatus>('idle')
   const [isAutoSubmitting, setIsAutoSubmitting] = useState(false)
-  const [isOnline, setIsOnline] = useState(true)
 
   // ── Quiz state — restored from LS on mount ───────────────────────────────
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     const ls = restoreFromLS(session.session_id)
     if (ls) return ls.answers
-
     const init: Record<string, string> = {}
     initialInteractions.forEach((i) => {
       if (i.selected_option_id) init[i.question_id] = i.selected_option_id
@@ -120,7 +98,6 @@ export function QuizRenderer({
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<string>>(() => {
     const ls = restoreFromLS(session.session_id)
     if (ls) return new Set<string>(ls.flags)
-
     const init = new Set<string>()
     initialInteractions.forEach((i) => {
       if (i.is_flagged) init.add(i.question_id)
@@ -128,9 +105,7 @@ export function QuizRenderer({
     return init
   })
 
-  const [struckOptions, setStruckOptions] = useState<
-    Record<string, Set<string>>
-  >(() => {
+  const [struckOptions, setStruckOptions] = useState<Record<string, Set<string>>>(() => {
     const ls = restoreFromLS(session.session_id)
     if (ls) {
       const restored: Record<string, Set<string>> = {}
@@ -140,82 +115,117 @@ export function QuizRenderer({
       return restored
     }
     const init: Record<string, Set<string>> = {}
-    questions.forEach((q) => {
-      init[q.question_id] = new Set()
-    })
+    questions.forEach((q) => { init[q.question_id] = new Set() })
     return init
   })
 
   const [checkedQuestions, setCheckedQuestions] = useState<Set<string>>(() => {
     const init = new Set<string>()
     initialInteractions.forEach((i) => {
-      if (
-        !strictMode &&
-        i.selected_option_id &&
-        (mode === 'camp' || mode === 'chill' || mode === 'blindspot')
-      ) {
+      if (!strictMode && i.selected_option_id && (mode === 'camp' || mode === 'chill' || mode === 'blindspot')) {
         init.add(i.question_id)
       }
     })
     return init
   })
 
+  // ── Confidence map (new metacognitive feature) ────────────────────────────
+  const [confidenceMap, setConfidenceMap] = useState<Record<string, ConfidenceLevel>>({})
+
   // answer change tracking for telemetry
   const answerChangesRef = useRef<Record<string, number>>({})
 
-  // Ref for programmatic scroll reset on question change (split-screen left column)
+  // Ref for programmatic scroll reset on question change
   const stemScrollRef = useRef<HTMLDivElement>(null)
 
-  // ── Timer ─────────────────────────────────────────────────────────────────
-  const [countdown, setCountdown] = useState<number | null>(() => {
-    if (!strictMode) return null
-    return questions.length * 120
+  // ── Persistence hook ──────────────────────────────────────────────────────
+  const getState = useCallback(() => ({
+    answers,
+    flags: Array.from(flaggedQuestions),
+    strikes: Object.fromEntries(
+      Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)]),
+    ),
+    currentIndex,
+  }), [answers, flaggedQuestions, struckOptions, currentIndex])
+
+  const {
+    saveStatus,
+    setSaveStatus,
+    isOnline,
+  } = useQuizPersistence({
+    sessionId: session.session_id,
+    getState,
   })
-  const totalTimerSeconds = questions.length * 120
 
-  useEffect(() => {
-    if (!strictMode) return
-    const timer = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev === null || prev <= 0) {
-          clearInterval(timer)
-          handleFinalSubmit()
-          return 0
-        }
-        return prev - 1
-      })
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [strictMode]) // eslint-disable-line react-hooks/exhaustive-deps
+  // ── Timer hook ────────────────────────────────────────────────────────────
+  const {
+    countdown,
+    totalTimerSeconds,
+    isAheadOfPace,
+    isTimerMinimized,
+    setIsTimerMinimized,
+    dwellTimeRemaining,
+    startDwell,
+    clearDwell,
+    resetQuestionTimer,
+    getQuestionElapsedMs,
+  } = useQuizTimer({
+    strictMode,
+    totalQuestions: questions.length,
+    currentIndex,
+    onTimeUp: () => handleFinalSubmit(),
+  })
 
-  // ── Dwell time ───────────────────────────────────────────────────────────
-  const [dwellTimeRemaining, setDwellTimeRemaining] = useState(0)
-  const dwellTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  // ── Telemetry hook ────────────────────────────────────────────────────────
+  const {
+    trackNavigation,
+    startRationaleTimer,
+    getRationaleViewMs,
+    persistInteraction,
+  } = useQuizTelemetry({
+    sessionId: session.session_id,
+    questions,
+    isOnline,
+    setSaveStatus,
+  })
 
-  const startDwell = useCallback((isCorrect: boolean) => {
-    if (dwellTimerRef.current) clearInterval(dwellTimerRef.current)
-    const duration = isCorrect ? 3 : 5
-    setDwellTimeRemaining(duration)
-    dwellTimerRef.current = setInterval(() => {
-      setDwellTimeRemaining((prev) => {
-        if (prev <= 1) {
-          clearInterval(dwellTimerRef.current!)
-          return 0
-        }
-        return prev - 1
-      })
-    }, 1000)
-  }, [])
+  // ── Derived ───────────────────────────────────────────────────────────────
+  const currentQuestion = questions[currentIndex]
+  const options = (currentQuestion?.options as unknown as Choice[]) || []
+  const correctOptionId = currentQuestion?.correct_option_id ?? (currentQuestion as any)?.correct_answer
+  const isChecked = !strictMode && checkedQuestions.has(currentQuestion?.question_id)
+  const selectedAnswer = answers[currentQuestion?.question_id]
+  const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)
+  const confidence = confidenceMap[currentQuestion?.question_id] ?? null
 
-  // ── Timing per question ───────────────────────────────────────────────────
-  const startTimeRef = useRef<number>(Date.now())
+  const dots = useMemo(
+    () => questions.map((q, idx) => {
+      let state: QuestionDotState = 'unanswered'
+      if (idx === currentIndex) state = 'current'
+      else if (flaggedQuestions.has(q.question_id)) state = 'flagged'
+      else if (answers[q.question_id]) state = 'answered'
+      return { index: idx, state }
+    }),
+    [questions, currentIndex, answers, flaggedQuestions],
+  )
+
+  const getOptionState = useCallback((option: Choice): OptionState => {
+    const isSelected = selectedAnswer === option.id
+    const isCorrectOpt = option.id === correctOptionId
+    const isStruck = struckOptions[currentQuestion?.question_id]?.has(option.id)
+
+    if (!isChecked) {
+      if (isSelected) return 'selected'
+      if (isStruck) return 'struck'
+      return 'default'
+    }
+    if (isCorrectOpt) return 'correct'
+    if (isSelected && !isCorrectOpt) return 'wrong'
+    return 'faded'
+  }, [selectedAnswer, correctOptionId, struckOptions, currentQuestion?.question_id, isChecked])
 
   // ── Note context ──────────────────────────────────────────────────────────
   const { setAnchor, clearAnchor } = useNoteContext()
-  const currentQuestion = questions[currentIndex]
-  const options = (currentQuestion?.options as unknown as Choice[]) || []
-  const correctOptionId =
-    currentQuestion?.correct_option_id ?? currentQuestion?.correct_answer
 
   useEffect(() => {
     if (!currentQuestion) return
@@ -231,94 +241,8 @@ export function QuizRenderer({
 
   // ── Scroll left column to top on question change ──────────────────────────
   useEffect(() => {
-    stemScrollRef.current?.scrollTo({
-      top: 0,
-      behavior: 'instant' as ScrollBehavior,
-    })
+    stemScrollRef.current?.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior })
   }, [currentIndex])
-
-  // ── Online/offline ────────────────────────────────────────────────────────
-  useEffect(() => {
-    const onOnline = () => setIsOnline(true)
-    const onOffline = () => {
-      setIsOnline(false)
-      setSaveStatus('offline')
-    }
-    window.addEventListener('online', onOnline)
-    window.addEventListener('offline', onOffline)
-    return () => {
-      window.removeEventListener('online', onOnline)
-      window.removeEventListener('offline', onOffline)
-    }
-  }, [])
-
-  // ── beforeunload: sync LS write ───────────────────────────────────────────
-  useEffect(() => {
-    const onUnload = () => {
-      persistToLS(session.session_id, {
-        answers,
-        flags: Array.from(flaggedQuestions),
-        strikes: Object.fromEntries(
-          Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)]),
-        ),
-        currentIndex,
-      })
-    }
-    window.addEventListener('beforeunload', onUnload)
-    return () => window.removeEventListener('beforeunload', onUnload)
-  }, [
-    session.session_id,
-    answers,
-    flaggedQuestions,
-    struckOptions,
-    currentIndex,
-  ])
-
-  // ── 10-second auto-save (CLAUDE.md mandate) ───────────────────────────────
-  const saveQueueRef = useRef<(() => Promise<void>)[]>([])
-
-  const flushSaveQueue = useCallback(async () => {
-    while (saveQueueRef.current.length > 0) {
-      const fn = saveQueueRef.current.shift()
-      if (fn) await fn()
-    }
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      if (!currentQuestion) return
-
-      // Always persist to LS synchronously
-      persistToLS(session.session_id, {
-        answers,
-        flags: Array.from(flaggedQuestions),
-        strikes: Object.fromEntries(
-          Object.entries(struckOptions).map(([k, v]) => [k, Array.from(v)]),
-        ),
-        currentIndex,
-      })
-
-      // Debounce DB write
-      if (isOnline) {
-        try {
-          await updateQuizSession(session.session_id, {
-            current_question_index: currentIndex,
-          })
-        } catch {
-          /* will retry next interval */
-        }
-      }
-    }, 10_000)
-    return () => clearInterval(interval)
-  }, [
-    session.session_id,
-    answers,
-    flaggedQuestions,
-    struckOptions,
-    currentIndex,
-    currentQuestion,
-    isOnline,
-  ])
 
   // ── Focus loss in strict mode ─────────────────────────────────────────────
   useEffect(() => {
@@ -344,12 +268,12 @@ export function QuizRenderer({
     }
   }, [strictMode, session.session_id, session.status])
 
-  // ── Keyboard shortcuts: A/B/C/D to select options ─────────────────────────
+  // ── Keyboard shortcuts: A/B/C/D/E to select options ───────────────────────
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (isCompleted || isSubmitSheetOpen) return
-      const isChecked = checkedQuestions.has(currentQuestion?.question_id)
-      if (isChecked) return
+      const qChecked = checkedQuestions.has(currentQuestion?.question_id)
+      if (qChecked) return
 
       const idx = ['a', 'b', 'c', 'd', 'e'].indexOf(e.key.toLowerCase())
       if (idx !== -1 && options[idx]) {
@@ -358,48 +282,14 @@ export function QuizRenderer({
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [
-    currentQuestion,
-    options,
-    checkedQuestions,
-    isCompleted,
-    isSubmitSheetOpen,
-  ]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [currentQuestion, options, checkedQuestions, isCompleted, isSubmitSheetOpen]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ── Save interaction to DB ─────────────────────────────────────────────────
-  const persistInteraction = useCallback(
-    async (
-      qId: string,
-      optionId: string | null,
-      isFlagged: boolean,
-      eliminatedCount: number,
-    ) => {
-      if (!isOnline) return
-      const q = questions.find((q) => q.question_id === qId)
-      if (!q) return
-
-      setSaveStatus('saving')
-      try {
-        await saveInteraction({
-          session_id: session.session_id,
-          question_id: qId,
-          topic_id: q.topic_id,
-          selected_option_id: optionId,
-          is_correct:
-            (optionId || null) === (q.correct_option_id ?? q.correct_answer),
-          time_spent_ms: Date.now() - startTimeRef.current,
-          is_flagged: isFlagged,
-          answer_changes: answerChangesRef.current[qId] || 0,
-          options_eliminated: eliminatedCount,
-        })
-        setSaveStatus('saved')
-      } catch (err) {
-        console.error('saveInteraction failed:', err)
-        setSaveStatus('error')
-      }
-    },
-    [session.session_id, questions, isOnline],
-  )
+  // ── Track rationale visibility for telemetry ──────────────────────────────
+  useEffect(() => {
+    if (isRationaleVisible) {
+      startRationaleTimer()
+    }
+  }, [isRationaleVisible, startRationaleTimer])
 
   // ── Handlers ──────────────────────────────────────────────────────────────
 
@@ -407,7 +297,6 @@ export function QuizRenderer({
     const qId = currentQuestion.question_id
     if (!strictMode && checkedQuestions.has(qId)) return
 
-    // Track answer changes for telemetry
     if (answers[qId] && answers[qId] !== choiceId) {
       answerChangesRef.current[qId] = (answerChangesRef.current[qId] || 0) + 1
     }
@@ -429,27 +318,24 @@ export function QuizRenderer({
     if (mode === 'chill') {
       setCheckedQuestions((prev) => new Set(prev).add(qId))
       const isCorrect = choiceId === correctOptionId
-      if (isCorrect) {
-        playCorrectSound()
-      }
+      if (isCorrect) playCorrectSound()
       setIsRationaleVisible(true)
-      persistInteraction(
-        qId,
-        choiceId,
-        flaggedQuestions.has(qId),
-        struckOptions[qId]?.size || 0,
-      )
+      persistInteraction({
+        questionId: qId,
+        optionId: choiceId,
+        isFlagged: flaggedQuestions.has(qId),
+        eliminatedCount: struckOptions[qId]?.size || 0,
+        confidence: confidenceMap[qId] ?? null,
+        answerChanges: answerChangesRef.current[qId] || 0,
+        timeSpentMs: getQuestionElapsedMs(),
+      })
     }
   }
 
-  const toggleStrikethrough = (
-    choiceId: string,
-    e: React.MouseEvent | React.KeyboardEvent,
-  ) => {
+  const toggleStrikethrough = (choiceId: string, e: React.MouseEvent | React.KeyboardEvent) => {
     e.stopPropagation()
     const qId = currentQuestion.question_id
     if (!strictMode && checkedQuestions.has(qId)) return
-
     setStruckOptions((prev) => {
       const currentSet = prev[qId] || new Set()
       const next = new Set(currentSet)
@@ -472,65 +358,69 @@ export function QuizRenderer({
   const handleCheckAnswer = () => {
     const qId = currentQuestion.question_id
     const answer = answers[qId]
+    const rationaleMs = getRationaleViewMs()
+
+    persistInteraction({
+      questionId: qId,
+      optionId: answer || null,
+      isFlagged: flaggedQuestions.has(qId),
+      eliminatedCount: struckOptions[qId]?.size || 0,
+      confidence: confidenceMap[qId] ?? null,
+      answerChanges: answerChangesRef.current[qId] || 0,
+      timeSpentMs: getQuestionElapsedMs(),
+      rationaleViewMs: rationaleMs,
+    })
 
     if (strictMode) {
-      persistInteraction(
-        qId,
-        answer || null,
-        flaggedQuestions.has(qId),
-        struckOptions[qId]?.size || 0,
-      )
       handleNext()
       return
     }
 
     setCheckedQuestions((prev) => new Set(prev).add(qId))
     setIsRationaleVisible(true)
-    persistInteraction(
-      qId,
-      answer || null,
-      flaggedQuestions.has(qId),
-      struckOptions[qId]?.size || 0,
-    )
 
     const isCorrect = answer === correctOptionId
-    if (isCorrect && !strictMode) {
-      playCorrectSound()
-    }
+    if (isCorrect && !strictMode) playCorrectSound()
     if (mode === 'camp' || mode === 'blindspot') {
       startDwell(isCorrect)
     }
   }
 
   const handleNext = useCallback(() => {
+    const prevIndex = currentIndex
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1)
       setIsRationaleVisible(false)
       setIsAIOpen(false)
-      setDwellTimeRemaining(0)
-      startTimeRef.current = Date.now()
+      clearDwell()
+      resetQuestionTimer()
+      trackNavigation(prevIndex, currentIndex + 1)
     } else if (strictMode) {
       handleFinalSubmit()
     }
-  }, [currentIndex, questions.length, strictMode]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [currentIndex, questions.length, strictMode, clearDwell, resetQuestionTimer, trackNavigation]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleBack = () => {
+    const prevIndex = currentIndex
     if (currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1)
       setIsRationaleVisible(false)
       setIsAIOpen(false)
-      setDwellTimeRemaining(0)
-      startTimeRef.current = Date.now()
+      clearDwell()
+      resetQuestionTimer()
+      trackNavigation(prevIndex, currentIndex - 1)
     }
   }
 
   const handleJump = (idx: number) => {
     if (strictMode) return
+    const prevIndex = currentIndex
     setCurrentIndex(idx)
     setIsRationaleVisible(false)
     setIsAIOpen(false)
-    setDwellTimeRemaining(0)
-    startTimeRef.current = Date.now()
+    clearDwell()
+    resetQuestionTimer()
+    trackNavigation(prevIndex, idx)
   }
 
   const handleFinalSubmit = async () => {
@@ -539,7 +429,6 @@ export function QuizRenderer({
       await updateQuizSession(session.session_id, { status: 'completed' })
     } catch (error) {
       console.error('Final submit DB update failed:', error)
-      // Don't block the user — still show results even if DB write fails
     } finally {
       clearLS(session.session_id)
       setIsSaving(false)
@@ -550,49 +439,7 @@ export function QuizRenderer({
     }
   }
 
-  // ── Derived values ────────────────────────────────────────────────────────
-
-  const isChecked =
-    !strictMode && checkedQuestions.has(currentQuestion?.question_id)
-  const selectedAnswer = answers[currentQuestion?.question_id]
-  const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)
-
-  const isAheadOfPace = useMemo(() => {
-    if (countdown === null) return true
-    const elapsed = totalTimerSeconds - countdown
-    const expected = (currentIndex + 1) * 120
-    return elapsed < expected
-  }, [countdown, currentIndex, totalTimerSeconds])
-
-  const dots = useMemo(
-    () =>
-      questions.map((q, idx) => {
-        let state: QuestionDotState = 'unanswered'
-        if (idx === currentIndex) state = 'current'
-        else if (flaggedQuestions.has(q.question_id)) state = 'flagged'
-        else if (answers[q.question_id]) state = 'answered'
-        return { index: idx, state }
-      }),
-    [questions, currentIndex, answers, flaggedQuestions],
-  )
-
-  const getOptionState = (option: Choice): OptionState => {
-    const isSelected = selectedAnswer === option.id
-    const isCorrect = option.id === correctOptionId
-    const isStruck = struckOptions[currentQuestion?.question_id]?.has(option.id)
-
-    if (!isChecked) {
-      if (isSelected) return 'selected' // selection beats strikethrough
-      if (isStruck) return 'struck'
-      return 'default'
-    }
-    // Post-check states
-    if (isCorrect) return 'correct'
-    if (isSelected && !isCorrect) return 'wrong'
-    return 'faded'
-  }
-
-  // ── Render helpers (shared between desktop right column & mobile inline) ──
+  // ── Render helpers ────────────────────────────────────────────────────────
 
   const renderOptions = () => (
     <div className='space-y-2.5' role='group' aria-label='Answer options'>
@@ -614,18 +461,29 @@ export function QuizRenderer({
     <div
       className={cn(
         'flex items-center gap-3',
-        isChecked && !isRationaleVisible ? 'justify-between' : 'justify-end',
+        isChecked && !isRationaleVisible ? 'justify-between' : 'justify-between',
       )}
     >
-      {isChecked && !isRationaleVisible && (
-        <button
-          onClick={() => setIsRationaleVisible(true)}
-          className='h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors'
-        >
-          Show Rationale
-        </button>
-      )}
+      {/* Left: confidence toggle + show rationale */}
+      <div className='flex items-center gap-3'>
+        {!isChecked && !strictMode && (
+          <ConfidenceToggle
+            value={confidence}
+            onChange={(level) => setConfidenceMap((prev) => ({ ...prev, [currentQuestion.question_id]: level }))}
+            disabled={isChecked}
+          />
+        )}
+        {isChecked && !isRationaleVisible && (
+          <button
+            onClick={() => setIsRationaleVisible(true)}
+            className='h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors'
+          >
+            Show Rationale
+          </button>
+        )}
+      </div>
 
+      {/* Right: check/next button */}
       {mode !== 'chill' && !isChecked ? (
         <button
           onClick={handleCheckAnswer}
@@ -665,16 +523,10 @@ export function QuizRenderer({
             >
               <svg className='w-full h-full' viewBox='0 0 100 100' fill='none'>
                 <rect
-                  x='1'
-                  y='1'
-                  width='98'
-                  height='98'
-                  rx='3'
-                  stroke='currentColor'
-                  strokeWidth='2'
+                  x='1' y='1' width='98' height='98' rx='3'
+                  stroke='currentColor' strokeWidth='2'
                   className='text-primary/20'
-                  strokeDasharray='392'
-                  strokeDashoffset='0'
+                  strokeDasharray='392' strokeDashoffset='0'
                 />
               </svg>
             </div>
@@ -699,18 +551,11 @@ export function QuizRenderer({
         isVisible={isRationaleVisible}
         isCorrect={selectedAnswer === correctOptionId}
         onClose={() => setIsRationaleVisible(false)}
-        onWikiClick={() =>
-          router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)
-        }
-        onAddNote={() => {
-          /* note drawer — future */
-        }}
+        onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
+        onAddNote={() => { /* note drawer — future */ }}
         on3DLabClick={
           currentQuestion.model_id
-            ? () =>
-                router.push(
-                  `/dashboard/3d-lab?model=${currentQuestion.model_id}`,
-                )
+            ? () => router.push(`/dashboard/3d-lab?model=${currentQuestion.model_id}`)
             : undefined
         }
       />
@@ -752,10 +597,7 @@ export function QuizRenderer({
         sessionDurationMs={sessionDurationMs}
         onExit={onExit}
         onRestart={onExit}
-        onStartFocusedReview={(topicIds) => {
-          // Exit to dashboard — the TestingHub will handle starting a new session
-          onExit()
-        }}
+        onStartFocusedReview={(topicIds) => { onExit() }}
       />
     )
   }
@@ -772,17 +614,10 @@ export function QuizRenderer({
       {isAutoSubmitting && (
         <div className='absolute inset-0 z-[100] bg-white/90 backdrop-blur-sm flex items-center justify-center'>
           <div className='bg-white p-6 rounded-lg shadow-lg border border-border text-center space-y-3 max-w-xs'>
-            <SCIcon
-              icon={Warning}
-              size='xl'
-              className='text-[#4A5568] mx-auto'
-            />
-            <h2 className='text-lg font-bold text-[#1A2332]'>
-              Session Recorded
-            </h2>
+            <SCIcon icon={Warning} size='xl' className='text-[#4A5568] mx-auto' />
+            <h2 className='text-lg font-bold text-[#1A2332]'>Session Recorded</h2>
             <p className='text-[#4A5568] text-sm'>
-              Your session ended when focus left the window. All your answers
-              have been saved.
+              Your session ended when focus left the window. All your answers have been saved.
             </p>
           </div>
         </div>
@@ -808,21 +643,20 @@ export function QuizRenderer({
         }}
       />
 
-      {/* Timer bar — strict mode only, sits below header */}
+      {/* Timer bar — strict mode only */}
       {strictMode && countdown !== null && (
         <div className='shrink-0 px-5 py-2 border-b border-border bg-[#F5F7FA] flex justify-center'>
           <TimerBar
             totalSeconds={totalTimerSeconds}
             remainingSeconds={countdown}
             isAheadOfPace={isAheadOfPace}
+            isMinimized={isTimerMinimized}
+            onToggleMinimize={() => setIsTimerMinimized((prev) => !prev)}
           />
         </div>
       )}
 
-      {/* ═══ SPLIT-SCREEN CONTENT AREA ═══
-           Desktop (≥1024px): 2-column grid — stem left, options right
-           Mobile  (<1024px): single column — stem + options scroll, nav fixed bottom
-      */}
+      {/* ═══ SPLIT-SCREEN CONTENT AREA ═══ */}
       <div className='flex-1 min-h-0 flex flex-col lg:grid lg:grid-cols-2'>
         {/* ─── LEFT COLUMN: Scrollable stem ─── */}
         <div
@@ -830,7 +664,6 @@ export function QuizRenderer({
           className='flex-1 lg:flex-none overflow-y-auto lg:border-r border-border'
         >
           <div className='max-w-[640px] mx-auto px-5 py-6 space-y-6'>
-            {/* Question stem — subtle fade on question change */}
             <div key={currentIndex} className='animate-in fade-in duration-100'>
               <QuestionStem
                 text={currentQuestion.text}
@@ -849,14 +682,11 @@ export function QuizRenderer({
 
         {/* ─── RIGHT COLUMN: Stationary options + drawers + nav (desktop) ─── */}
         <div className='hidden lg:flex flex-col'>
-          {/* Options + action + drawers — scrollable if needed */}
           <div className='flex-1 overflow-y-auto px-6 pt-6 pb-3 space-y-6'>
             {renderOptions()}
             {renderActionButtons()}
             {renderDrawers()}
           </div>
-
-          {/* Question navigator — docked at bottom of right column */}
           <div className='shrink-0'>{renderFooterNav()}</div>
         </div>
       </div>
