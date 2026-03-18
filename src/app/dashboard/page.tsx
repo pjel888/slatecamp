@@ -1,72 +1,59 @@
 import { Suspense } from 'react'
-import { DashboardHero } from '@/components/dashboard/DashboardHero'
-import { DailyCatalystCard } from '@/components/dashboard/DailyCatalystCard'
-import { RecentActivityCard } from '@/components/dashboard/RecentActivityCard'
-import { CompetenceSignalCard } from '@/components/dashboard/CompetenceSignalCard'
-import { ReadinessScore } from '@/components/dashboard/ReadinessScore'
-import { SubjectMasteryBars } from '@/components/dashboard/SubjectMasteryBars'
-import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { getDashboardPageData } from '@/lib/actions/dashboard-page'
+import { HeroCommandBar } from '@/components/dashboard/HeroCommandBar'
 import { HeatmapSection, HeatmapSectionSkeleton } from '@/components/dashboard/HeatmapSection'
-import { Card } from '@/components/ui/card'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
-import { getDashboardData } from '@/lib/actions/dashboard'
+import { NextMissionCard } from '@/components/dashboard/NextMissionCard'
+import { FocusAreasCard } from '@/components/dashboard/FocusAreasCard'
+import { ImprovedActivityFeed } from '@/components/dashboard/ImprovedActivityFeed'
+import { DailyWikiCard, LabPreviewCard, RecentNotesCard } from '@/components/dashboard/FeatureDiscoveryRow'
 
 export default async function DashboardPage() {
-  const data = await getDashboardData()
+  const data = await getDashboardPageData()
 
   return (
-    <SharedPageLayout>
-      <div className='flex flex-col gap-2 xl:gap-3'>
-        {/* 1. Grounding Layer */}
-        <DashboardHero
+    <div className="relative h-full w-full">
+      {/* Dotted grid background */}
+      <div
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            'radial-gradient(circle at center, rgba(24,24,27,0.08) 1px, transparent 1px)',
+          backgroundSize: '24px 24px',
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="relative z-10 flex flex-col gap-2 p-2 w-full">
+
+        {/* ── 1. Hero: Score + Greeting + Heatmap in one banner ────── */}
+        <HeroCommandBar
           userName={data.userName}
-          readinessMomentum={data.readinessMomentum}
-        />
+          readinessScore={data.readinessScore}
+          previousScore={data.previousScore}
+          daysUntilExam={data.daysUntilExam}
+          heroStats={data.heroStats}
+          syllabusCoveragePercent={data.syllabusCoveragePercent}
+        >
+          <Suspense fallback={<HeatmapSectionSkeleton />}>
+            <HeatmapSection />
+          </Suspense>
+        </HeroCommandBar>
 
-        {/* 2. Primary Action — full width */}
-        <DailyCatalystCard catalyst={data.catalyst} />
-
-        {/* 3. Readiness Score + Quick Stats */}
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2'>
-          <div className='lg:col-span-3'>
-            <ReadinessScore
-              score={data.readinessScore}
-              previousScore={data.previousReadinessScore}
-            />
-          </div>
-          <div className='lg:col-span-2'>
-            <CompetenceSignalCard
-              totalAnswered={data.totalAnswered}
-              topicsMastered={data.topicsMastered}
-              studyDaysCount={data.studyDaysCount}
-            />
-          </div>
+        {/* ── 2. Action cards row ─────────────────────────────────────── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
+          <NextMissionCard action={data.action} />
+          <FocusAreasCard areas={data.focusAreas} />
+          <ImprovedActivityFeed sessions={data.recentSessions} />
         </div>
 
-        {/* 4. Subject Mastery Bars */}
-        <SubjectMasteryBars subjects={data.subjectMastery} />
-
-        {/* 5. Consistency + Recent Activity — cream section break */}
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2 bg-[#F2F0EB] rounded-md p-2 xl:p-3'>
-          <div className='lg:col-span-3'>
-            <Card className='w-full relative p-2 bg-white h-full flex flex-col'>
-              <p className='font-dm-mono text-[11px] font-medium text-[#8896A7] uppercase tracking-[0.2em] mb-2 px-1 pt-1'>
-                Consistency
-              </p>
-              <RichInfoPopover
-                title='Study Journey'
-                description='Your progress over time. Each cell is one day — deeper blue means more sessions completed that day.'
-              />
-              <Suspense fallback={<HeatmapSectionSkeleton />}>
-                <HeatmapSection />
-              </Suspense>
-            </Card>
-          </div>
-          <div className='lg:col-span-2 h-full'>
-            <RecentActivityCard activities={data.recentActivities} />
-          </div>
+        {/* ── 3. Feature Discovery Row ────────────────────────────────── */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 w-full">
+          <DailyWikiCard article={data.dailyArticle} />
+          <LabPreviewCard moduleCount={data.labModuleCount} />
+          <RecentNotesCard notes={data.recentNotes} />
         </div>
+
       </div>
-    </SharedPageLayout>
+    </div>
   )
 }

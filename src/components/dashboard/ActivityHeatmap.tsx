@@ -105,11 +105,11 @@ function toLevel(n: number): Level {
 }
 
 const LEVEL_BG: Record<Level, string> = {
-  0: 'bg-zinc-100 dark:bg-zinc-800',
-  1: 'bg-primary/10',
-  2: 'bg-primary/20',
-  3: 'bg-primary/60',
-  4: 'bg-primary',
+  0: 'bg-white/10',
+  1: 'bg-white/20',
+  2: 'bg-white/35',
+  3: 'bg-white/55',
+  4: 'bg-white/90',
 }
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -311,10 +311,10 @@ export function ActivityHeatmap({
       {/* ── Card header ───────────────────────────────────────────────────── */}
       <header className='flex w-full shrink-0 items-start justify-between gap-4 pb-2'>
         <div className='flex flex-col gap-0.5'>
-          <h3 className='text-sm font-semibold text-zinc-900'>
+          <h3 className='text-sm font-semibold text-white'>
             Study Activity
           </h3>
-          <p className='text-xs text-zinc-500'>
+          <p className='text-xs text-white/50'>
             Your consistency over the past year
           </p>
         </div>
@@ -326,9 +326,9 @@ export function ActivityHeatmap({
               value={selectedYear}
               onChange={(e) => setSelectedYear(Number(e.target.value))}
               className={cn(
-                'appearance-none cursor-pointer rounded-md border border-border',
-                'bg-white pl-3 pr-7 py-1 text-xs font-medium text-zinc-700',
-                'hover:border-zinc-300 focus:outline-none focus:ring-2 focus:ring-primary/30',
+                'appearance-none cursor-pointer rounded-md border border-white/20',
+                'bg-white/10 pl-3 pr-7 py-1 text-xs font-medium text-white',
+                'hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/30',
                 'transition-colors',
               )}
             >
@@ -339,7 +339,7 @@ export function ActivityHeatmap({
               ))}
             </select>
             <svg
-              className='pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-zinc-400'
+              className='pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-white/50'
               width='10'
               height='10'
               viewBox='0 0 10 10'
@@ -376,7 +376,7 @@ export function ActivityHeatmap({
               {blocks.map((b) => (
                 <span
                   key={b.blockIndex}
-                  className='absolute text-xs leading-none text-zinc-500 select-none whitespace-nowrap'
+                  className='absolute text-xs leading-none text-white/50 select-none whitespace-nowrap'
                   style={{
                     top: 0,
                     left: b.blockIndex * layout.slot,
@@ -394,7 +394,7 @@ export function ActivityHeatmap({
                 return b.isYearStart ? (
                   <div
                     key={b.blockIndex}
-                    className='pointer-events-none absolute bg-zinc-300'
+                    className='pointer-events-none absolute bg-white/30'
                     style={{
                       left: x,
                       top: 0,
@@ -406,7 +406,7 @@ export function ActivityHeatmap({
                 ) : (
                   <div
                     key={b.blockIndex}
-                    className='pointer-events-none absolute bg-zinc-200'
+                    className='pointer-events-none absolute bg-white/20'
                     style={{
                       left: x,
                       top: HEADER_H,
@@ -440,7 +440,7 @@ export function ActivityHeatmap({
                       return (
                         <div
                           key={s}
-                          className='rounded-[2px] bg-zinc-100 dark:bg-zinc-800'
+                          className='rounded-[2px] bg-white/10'
                           style={{ opacity: 0.3 }}
                         />
                       )
@@ -476,7 +476,7 @@ export function ActivityHeatmap({
                               isExamDay
                                 ? 'bg-red-400 ring-1 ring-red-600 ring-offset-[1px]'
                                 : beforeSignup
-                                  ? 'bg-zinc-100 dark:bg-zinc-800'
+                                  ? 'bg-white/10'
                                   : LEVEL_BG[level],
                               isSignup &&
                                 !isExamDay &&
@@ -498,7 +498,7 @@ export function ActivityHeatmap({
 
             {/* ── Legend ────────────────────────────────────────────────── */}
             <div className='mt-2 flex items-center justify-end gap-1.5'>
-              <span className='text-xs text-zinc-400 select-none'>
+              <span className='text-xs text-white/40 select-none'>
                 Less
               </span>
               {([0, 1, 2, 3, 4] as Level[]).map((lvl) => (
@@ -508,37 +508,37 @@ export function ActivityHeatmap({
                   style={{ width: layout.cell, height: layout.cell }}
                 />
               ))}
-              <span className='text-xs text-zinc-400 select-none'>
+              <span className='text-xs text-white/40 select-none'>
                 More
               </span>
-              <span className='ml-2 text-xs text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-white/30 select-none'>
                 ·
               </span>
               <div
                 className='rounded-[2px] bg-red-400 ring-1 ring-red-600 ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-xs text-zinc-400 select-none'>
+              <span className='text-xs text-white/40 select-none'>
                 Exam day
               </span>
-              <span className='ml-2 text-xs text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-white/30 select-none'>
                 ·
               </span>
               <div
-                className='rounded-[2px] bg-zinc-100 dark:bg-zinc-800 ring-2 ring-amber-500 ring-offset-[1px] z-10'
+                className='rounded-[2px] bg-white/10 ring-2 ring-amber-500 ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-xs text-zinc-400 select-none'>
+              <span className='text-xs text-white/40 select-none'>
                 Today
               </span>
-              <span className='ml-2 text-xs text-zinc-300 select-none'>
+              <span className='ml-2 text-xs text-white/30 select-none'>
                 ·
               </span>
               <div
                 className='rounded-[2px] bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
-              <span className='text-xs text-zinc-400 select-none'>
+              <span className='text-xs text-white/40 select-none'>
                 Sign up day
               </span>
             </div>
