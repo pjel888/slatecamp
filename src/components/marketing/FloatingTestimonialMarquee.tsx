@@ -244,7 +244,7 @@ function FloatingParticle({ config }: { config: ParticleConfig }) {
         }}
       >
         <div className='flex h-full flex-col justify-between'>
-          <span className='inline-block self-start rounded-full bg-[#EEF2FC] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-[#1535A8]'>
+          <span className='inline-block self-start rounded-full bg-[#EEF2FC] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-[#1535A8]'>
             {config.testimonial.profession}
           </span>
           <div>

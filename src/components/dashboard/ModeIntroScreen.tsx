@@ -56,8 +56,8 @@ export function ModeIntroScreen({
     storm: {
       title: 'Storm Mode',
       icon: Lightning,
-      color: 'text-red-600',
-      bgColor: 'bg-red-50',
+      color: 'text-[#D64545]',
+      bgColor: 'bg-[#FDF0F0]',
       description:
         'Practice under realistic exam conditions. Timed questions with no feedback shown until the session wraps — the closest thing to the real thing.',
       specs: [

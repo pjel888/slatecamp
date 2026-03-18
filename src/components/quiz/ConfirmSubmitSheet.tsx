@@ -91,16 +91,16 @@ export function ConfirmSubmitSheet({
               <div className='px-6 py-5 space-y-5'>
                 {/* Stats grid */}
                 <div className='grid grid-cols-3 gap-2'>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-green-50 border border-green-100'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-[#EDFAF4] border border-[#2D9F6F]/20'>
                     <SCIcon
                       icon={CheckCircle}
                       size='sm'
-                      className='text-green-500 mb-1.5'
+                      className='text-[#2D9F6F] mb-1.5'
                     />
-                    <span className='text-xl font-black text-green-700 leading-none'>
+                    <span className='text-xl font-black text-[#2D9F6F] leading-none'>
                       {answeredCount}
                     </span>
-                    <span className='text-[11px] font-bold uppercase tracking-widest text-green-600/70 mt-1'>
+                    <span className='text-[11px] font-bold uppercase tracking-widest text-[#2D9F6F]/70 mt-1'>
                       Answered
                     </span>
                   </div>
@@ -117,17 +117,17 @@ export function ConfirmSubmitSheet({
                       To Review
                     </span>
                   </div>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-amber-50 border border-amber-100'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-[#FEF8ED] border border-[#D4951A]/20'>
                     <SCIcon
                       icon={Flag}
                       size='sm'
                       weight='fill'
-                      className='text-amber-500 mb-1.5'
+                      className='text-[#D4951A] mb-1.5'
                     />
-                    <span className='text-xl font-black text-amber-700 leading-none'>
+                    <span className='text-xl font-black text-[#D4951A] leading-none'>
                       {flaggedCount}
                     </span>
-                    <span className='text-[11px] font-bold uppercase tracking-widest text-amber-600/70 mt-1'>
+                    <span className='text-[11px] font-bold uppercase tracking-widest text-[#D4951A]/70 mt-1'>
                       Flagged
                     </span>
                   </div>

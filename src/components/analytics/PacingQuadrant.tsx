@@ -90,10 +90,10 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
           <div className="absolute inset-0 pointer-events-none z-10 flex">
             <div className="flex-1 flex flex-col">
               <div className="flex-1 flex items-start justify-start pl-8 pt-1">
-                <span className="text-[11px] font-bold text-green-600 uppercase tracking-wider">✓ Mastered</span>
+                <span className="text-[11px] font-bold text-[#2D9F6F] uppercase tracking-wider">✓ Mastered</span>
               </div>
               <div className="flex-1 flex items-end justify-start pl-8 pb-1">
-                <span className="text-[11px] font-bold text-amber-600 uppercase tracking-wider">Rushing</span>
+                <span className="text-[11px] font-bold text-[#D4951A] uppercase tracking-wider">Rushing</span>
               </div>
             </div>
             <div className="flex-1 flex flex-col">
@@ -101,7 +101,7 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
                 <span className="text-[11px] font-bold text-primary uppercase tracking-wider">Careful</span>
               </div>
               <div className="flex-1 flex items-end justify-end pr-4 pb-1">
-                <span className="text-[11px] font-bold text-red-500 uppercase tracking-wider">Overthinking</span>
+                <span className="text-[11px] font-bold text-[#D64545] uppercase tracking-wider">Overthinking</span>
               </div>
             </div>
           </div>

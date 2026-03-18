@@ -1,5 +1,6 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { NotesShell } from '@/components/notes/NotesShell'
+import { snippet } from '@/lib/utils/text'
 import type { NoteStub } from '@/types/app'
 
 type NotesPageProps = { searchParams?: Promise<{ open?: string }> }
@@ -25,19 +26,6 @@ export default async function NotesPage({ searchParams }: NotesPageProps) {
       .eq('user_id', user.id)
       .order('name', { ascending: true }),
   ])
-
-  function snippet(content: unknown, maxLen = 80): string {
-    try {
-      const doc = content as { content?: Array<{ content?: Array<{ text?: string }> }> }
-      if (!doc.content) return ''
-      let text = ''
-      function walk(n: { content?: Array<{ text?: string }> }): void {
-        if (n.content) n.content.forEach((c) => ('text' in c && c.text ? (text += c.text) : walk(c as never)))
-      }
-      doc.content.forEach(walk)
-      return text.replace(/\s+/g, ' ').trim().slice(0, maxLen) || ''
-    } catch { return '' }
-  }
 
   const initialNotes: NoteStub[] = (notesRaw ?? []).map((row) => ({
     id: row.note_id,

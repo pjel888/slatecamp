@@ -42,7 +42,7 @@ export function TimerBar({
         <div
           className={cn(
             'h-full rounded-sm transition-all duration-300 ease-linear',
-            isFinal ? 'bg-amber-500' : 'bg-[#1B3FC4]',
+            isFinal ? 'bg-[#D4951A]' : 'bg-[#1B3FC4]',
           )}
           style={{ width: `${pct}%` }}
         />

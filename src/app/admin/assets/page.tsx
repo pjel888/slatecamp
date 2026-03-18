@@ -1,23 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { getAssets } from '@/lib/actions/admin/assets'
 import { AssetList } from '@/components/admin/AssetList'
 import { AssetUploader } from '@/components/admin/AssetUploader'
-
-async function getAssets() {
-  const supabase = await createClient()
-  
-  const { data, error } = await supabase
-    .from('models_3d')
-    .select('id:model_id, name, slug, url, thumbnail, created_at')
-    .order('created_at', { ascending: false })
-    .limit(50)
-
-  if (error) {
-    console.error('Error fetching assets:', error)
-    return []
-  }
-
-  return data || []
-}
 
 export default async function AdminAssetsPage() {
   const assets = await getAssets()

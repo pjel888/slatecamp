@@ -474,15 +474,15 @@ export function ActivityHeatmap({
                             className={cn(
                               'rounded-[2px] cursor-default transition-opacity hover:opacity-70',
                               isExamDay
-                                ? 'bg-red-400 ring-1 ring-red-600 ring-offset-[1px]'
+                                ? 'bg-[#D64545] ring-1 ring-[#D64545] ring-offset-[1px]'
                                 : beforeSignup
                                   ? 'bg-white/10'
                                   : LEVEL_BG[level],
                               isSignup &&
                                 !isExamDay &&
-                                '!bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10',
+                                '!bg-[#2D9F6F] ring-2 ring-[#2D9F6F] ring-offset-1 z-10',
                               isToday &&
-                                'ring-2 ring-amber-500 ring-offset-[1px] z-10',
+                                'ring-2 ring-[#D4951A] ring-offset-[1px] z-10',
                             )}
                           />
                         </TooltipTrigger>
@@ -515,7 +515,7 @@ export function ActivityHeatmap({
                 ·
               </span>
               <div
-                className='rounded-[2px] bg-red-400 ring-1 ring-red-600 ring-offset-[1px] z-10'
+                className='rounded-[2px] bg-[#D64545] ring-1 ring-[#D64545] ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
               <span className='text-xs text-white/40 select-none'>
@@ -525,7 +525,7 @@ export function ActivityHeatmap({
                 ·
               </span>
               <div
-                className='rounded-[2px] bg-white/10 ring-2 ring-amber-500 ring-offset-[1px] z-10'
+                className='rounded-[2px] bg-white/10 ring-2 ring-[#D4951A] ring-offset-[1px] z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
               <span className='text-xs text-white/40 select-none'>
@@ -535,7 +535,7 @@ export function ActivityHeatmap({
                 ·
               </span>
               <div
-                className='rounded-[2px] bg-green-500 ring-2 ring-green-700 ring-offset-1 z-10'
+                className='rounded-[2px] bg-[#2D9F6F] ring-2 ring-[#2D9F6F] ring-offset-1 z-10'
                 style={{ width: layout.cell, height: layout.cell }}
               />
               <span className='text-xs text-white/40 select-none'>

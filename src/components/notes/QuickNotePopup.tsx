@@ -148,7 +148,7 @@ export function QuickNotePopup({ open, onOpenChange }: QuickNotePopupProps) {
       {/* Footer: save + open link */}
       <div className='flex shrink-0 flex-col gap-2 border-t border-[#E8E4DF] p-3'>
         {saveError && (
-          <p className='text-xs text-red-600' role='alert'>
+          <p className='text-xs text-[#D64545]' role='alert'>
             {saveError}
           </p>
         )}

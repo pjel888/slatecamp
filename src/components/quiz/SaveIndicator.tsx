@@ -33,9 +33,9 @@ export function SaveIndicator({ status }: SaveIndicatorProps) {
       className={cn(
         'flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest transition-opacity duration-300',
         status === 'saving' && 'text-zinc-400',
-        status === 'saved' && 'text-green-600',
-        status === 'error' && 'text-red-500',
-        status === 'offline' && 'text-amber-600',
+        status === 'saved' && 'text-[#2D9F6F]',
+        status === 'error' && 'text-[#D64545]',
+        status === 'offline' && 'text-[#D4951A]',
       )}
       aria-live="polite"
       aria-label={

@@ -12,7 +12,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── 3D viewer mockup ── */
 
 const ThreeDMockup = () => (
-  <div className='relative overflow-hidden rounded-[10px] bg-[#0D1B3E]'>
+  <div className='relative overflow-hidden rounded-md bg-[#0D1B3E]'>
     <div className='relative z-10'>
       {/* Header */}
       <div className='flex items-center justify-between border-b border-white/10 px-4 py-3'>
@@ -112,19 +112,19 @@ const ThreeDMockup = () => (
       <div className='flex items-center gap-5 border-t border-white/10 px-4 py-2.5'>
         <div className='flex items-center gap-1.5'>
           <div className='h-2.5 w-4 rounded-[2px] border border-[#7EB3FF] bg-[rgba(74,120,255,0.11)]' />
-          <span className='font-mono text-[10px] text-white/30'>Building</span>
+          <span className='font-mono text-[11px] text-white/30'>Building</span>
         </div>
         <div className='flex items-center gap-1.5'>
           <div className='h-px w-4 bg-[#F5A623]' />
-          <span className='font-mono text-[10px] text-white/30'>Setback</span>
+          <span className='font-mono text-[11px] text-white/30'>Setback</span>
         </div>
         <div className='flex items-center gap-1.5'>
           <svg width='16' height='4' viewBox='0 0 16 4' aria-hidden='true'>
             <line x1='0' y1='2' x2='16' y2='2' stroke='rgba(150,200,255,0.28)' strokeWidth='1' strokeDasharray='4 2' />
           </svg>
-          <span className='font-mono text-[10px] text-white/30'>Lot line</span>
+          <span className='font-mono text-[11px] text-white/30'>Lot line</span>
         </div>
-        <span className='ml-auto font-mono text-[10px] text-white/18'>NTS</span>
+        <span className='ml-auto font-mono text-[11px] text-white/18'>NTS</span>
       </div>
     </div>
   </div>

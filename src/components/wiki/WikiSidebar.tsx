@@ -293,7 +293,7 @@ export function WikiSidebar({
             className="w-full h-8 pl-7 pr-8 text-xs rounded-sm border border-zinc-200 bg-zinc-50 text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:border-[#1B3FC4] focus:ring-1 focus:ring-[#1B3FC4]/20 transition-colors"
           />
           {!searchQuery && (
-            <kbd className="absolute right-2 top-1/2 -translate-y-1/2 text-[10px] text-zinc-400 bg-zinc-100 border border-zinc-200 rounded px-1 py-0.5 font-mono pointer-events-none">
+            <kbd className="absolute right-2 top-1/2 -translate-y-1/2 text-[11px] text-zinc-400 bg-zinc-100 border border-zinc-200 rounded px-1 py-0.5 font-mono pointer-events-none">
               /
             </kbd>
           )}

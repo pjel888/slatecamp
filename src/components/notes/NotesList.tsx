@@ -170,7 +170,7 @@ export function NotesList({
                           </span>
                         )}
                         {note.question_id && (
-                          <span className="text-[11px] text-amber-500" title="From Quiz">
+                          <span className="text-[11px] text-[#D4951A]" title="From Quiz">
                             <SCIcon icon={Question} size="xs" />
                           </span>
                         )}

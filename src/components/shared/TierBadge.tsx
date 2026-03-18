@@ -26,7 +26,7 @@ const TIER_CONFIG: Record<
   institutional: {
     label: 'Institutional',
     icon: Crown,
-    className: 'bg-amber-50 text-amber-600 border-amber-100',
+    className: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
   },
 }
 

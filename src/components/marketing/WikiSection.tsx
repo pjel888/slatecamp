@@ -12,7 +12,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Wiki mockup ── */
 
 const WikiMockup = () => (
-  <div className='overflow-hidden rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7]'>
+  <div className='overflow-hidden rounded-md border border-[#E8E4DC] bg-[#FFFDF7]'>
     {/* Header */}
     <div className='flex items-center gap-2.5 border-b border-[#E8E4DC] px-4 py-3'>
       <div className='h-2 w-2 rounded-full bg-[#1B7A3C]' />

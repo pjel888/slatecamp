@@ -168,7 +168,7 @@ export function TestingHub({
               title='Blindspot Mode'
               description="Revisit the topics you've practiced least — the system surfaces areas where focused repetition will have the most impact."
               icon={ShieldCheck}
-              accentColor='bg-amber-500'
+              accentColor='bg-[#D4951A]'
               primaryActionLabel='Revisit Weak Areas'
               onPrimaryAction={() => onStartSession({ mode: 'blindspot' })}
               onSecondaryAction={
@@ -216,7 +216,7 @@ export function TestingHub({
               title='Storm Mode'
               description='Practice under realistic exam conditions — timed questions, no rationales shown until the end. The closest thing to exam day.'
               icon={Lightning}
-              accentColor='bg-red-500'
+              accentColor='bg-[#D64545]'
               primaryActionLabel='Begin Storm'
               onPrimaryAction={() =>
                 onStartSession({ mode: 'storm', instantFeedback: false })
@@ -251,7 +251,7 @@ export function TestingHub({
               title='Extended Practice'
               description='Build your focus gradually — sessions grow longer each week to prepare you for the sustained concentration exam day requires.'
               icon={Pulse}
-              accentColor='bg-amber-500'
+              accentColor='bg-[#D4951A]'
               primaryActionLabel='Start Session'
               onPrimaryAction={() =>
                 onStartSession({ mode: 'endurance', count: 20 })

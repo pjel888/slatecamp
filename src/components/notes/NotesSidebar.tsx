@@ -177,7 +177,7 @@ export function NotesSidebar({ open, onOpenChange }: NotesSidebarProps) {
                       <SCIcon
                         icon={Folder}
                         size='sm'
-                        className='text-amber-500/60'
+                        className='text-[#D4951A]/60'
                       />
                       <span className='text-sm font-medium text-zinc-700'>
                         {folder.name}

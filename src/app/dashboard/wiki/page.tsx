@@ -27,8 +27,8 @@ export default function WikiPage() {
         {/* Feature Grid */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-left'>
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-amber-50 rounded-md flex items-center justify-center'>
-              <SCIcon icon={MagnifyingGlass} size="sm" className='text-amber-600' />
+            <div className='w-8 h-8 bg-[#FEF8ED] rounded-md flex items-center justify-center'>
+              <SCIcon icon={MagnifyingGlass} size="sm" className='text-[#D4951A]' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Syllabus Mapped</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
@@ -43,8 +43,8 @@ export default function WikiPage() {
           </div>
 
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-green-50 rounded-md flex items-center justify-center'>
-              <SCIcon icon={Lightning} size="sm" className='text-green-600' />
+            <div className='w-8 h-8 bg-[#EDFAF4] rounded-md flex items-center justify-center'>
+              <SCIcon icon={Lightning} size="sm" className='text-[#2D9F6F]' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Smart Search</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Quickly find any provision or term across the entire building code.</p>

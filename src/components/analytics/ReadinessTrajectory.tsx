@@ -34,7 +34,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
                 'text-xl font-extrabold tracking-tight tabular-nums',
-                clamped < 50 ? 'text-red-600' : clamped < 75 ? 'text-amber-600' : 'text-green-600'
+                clamped < 50 ? 'text-[#D64545]' : clamped < 75 ? 'text-[#D4951A]' : 'text-[#2D9F6F]'
               )}>
                 {clamped}%
               </span>

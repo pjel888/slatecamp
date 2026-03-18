@@ -132,7 +132,7 @@ export function WikiBookmarks({ currentSlug, currentTitle }: WikiBookmarksProps)
                 </Link>
                 <button
                   onClick={() => removeBookmark(b.slug)}
-                  className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-300 hover:text-red-500 transition-opacity"
+                  className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-300 hover:text-[#D64545] transition-opacity"
                   aria-label={`Remove ${b.title} from bookmarks`}
                 >
                   <SCIcon icon={Trash} size="xs" />

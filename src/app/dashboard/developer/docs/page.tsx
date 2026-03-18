@@ -1,3 +1,5 @@
+import { DocSection } from '@/components/developer/DocSection'
+
 export default function DeveloperDocsPage() {
   return (
     <div className="space-y-6 max-w-3xl">
@@ -26,15 +28,6 @@ export default function DeveloperDocsPage() {
           description="4 tiers: free, camp, insurance, institutional. Each tier grants specific capabilities (AI tokens, 3D lab, SRS). Dev toolbar allows tier simulation via cookie-based feature flags."
         />
       </div>
-    </div>
-  )
-}
-
-function DocSection({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="rounded-lg border border-border p-4">
-      <h3 className="text-sm font-semibold text-foreground">{title}</h3>
-      <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{description}</p>
     </div>
   )
 }

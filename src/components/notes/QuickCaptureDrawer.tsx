@@ -350,7 +350,7 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
               </span>
             )}
             {saveState === 'error' && (
-              <span className="text-red-500">Error saving</span>
+              <span className="text-[#D64545]">Error saving</span>
             )}
           </span>
 
@@ -419,7 +419,7 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
         {/* Footer */}
         <div className="shrink-0 border-t border-border px-3 py-2">
           {saveError && (
-            <p className="mb-1.5 text-[11px] text-red-500" role="alert">
+            <p className="mb-1.5 text-[11px] text-[#D64545]" role="alert">
               {saveError}
             </p>
           )}

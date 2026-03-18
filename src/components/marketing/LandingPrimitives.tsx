@@ -54,7 +54,7 @@ export const Pill = ({
 }) => (
   <span
     className={
-      'inline-block rounded-full border font-[family-name:var(--font-dm-mono)] text-[9px] tracking-[0.1em] px-[9px] py-[3px] ' +
+      'inline-block rounded-full border font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] px-[9px] py-[3px] ' +
       (variant === 'dark'
         ? 'border-white/20 text-white/55'
         : variant === 'amber'
@@ -105,7 +105,7 @@ export const ReadinessDial = ({
             cy={44}
             r={radius}
             fill='none'
-            stroke={tone === 'success' ? '#16A34A' : '#EA580C'} // green-600 or orange-600
+            stroke={tone === 'success' ? '#2D9F6F' : '#E8853A'} // Emerald or Camp Orange
             strokeWidth={6}
             strokeLinecap='round'
             strokeDasharray={circumference}
@@ -121,7 +121,7 @@ export const ReadinessDial = ({
           {value}%
         </span>
         {showWarning && (
-          <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
+          <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D64545] text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
             <SCIcon icon={Warning} size='xs' />
           </div>
         )}

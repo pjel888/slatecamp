@@ -72,7 +72,7 @@ export function WikiNoteAction({ articleId, title, slug }: WikiNoteActionProps) 
       onClick={handleSaveToNotes}
       className={cn(
         "text-xs text-muted-foreground hover:text-primary transition-colors flex items-center gap-2",
-        isSaved && "text-green-600 hover:text-green-600"
+        isSaved && "text-[#2D9F6F] hover:text-[#2D9F6F]"
       )}
     >
       {isCreating ? (

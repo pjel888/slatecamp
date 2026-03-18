@@ -1,27 +1,10 @@
-import { createClient } from "@/lib/supabase/server"
+import { getAdminStats } from '@/lib/actions/admin/dashboard'
 import { Question, FileText, Cube, TreeStructure, ClipboardText } from "@phosphor-icons/react/dist/ssr"
 import { SCIcon } from "@/components/graphics/icons/Icon"
 import Link from "next/link"
 
-async function getStats() {
-  const supabase = await createClient()
-  
-  // Real check against database tables
-  const [q, w, a] = await Promise.all([
-    supabase.from("questions").select("question_id", { count: "exact", head: true }),
-    supabase.from("wiki_articles").select("article_id", { count: "exact", head: true }),
-    supabase.from("models_3d").select("model_id", { count: "exact", head: true }),
-  ])
-  
-  return { 
-    questions: q.count || 0, 
-    wiki: w.count || 0, 
-    assets: a.count || 0 
-  }
-}
-
 export default async function AdminDashboardPage() {
-  const stats = await getStats()
+  const stats = await getAdminStats()
 
   return (
     <div className="space-y-8">
@@ -35,7 +18,7 @@ export default async function AdminDashboardPage() {
       <div className="grid gap-6 md:grid-cols-3">
         {[
           { label: "Questions", value: stats.questions, href: "/admin/questions", icon: Question, color: "text-primary", bg: "bg-[#EEF2FC]" },
-          { label: "Wiki Articles", value: stats.wiki, href: "/admin/wiki", icon: FileText, color: "text-green-600", bg: "bg-green-50" },
+          { label: "Wiki Articles", value: stats.wiki, href: "/admin/wiki", icon: FileText, color: "text-[#2D9F6F]", bg: "bg-[#EDFAF4]" },
           { label: "3D Assets", value: stats.assets, href: "/admin/assets", icon: Cube, color: "text-zinc-600", bg: "bg-zinc-50" },
         ].map((c) => (
           <Link key={c.label} href={c.href} className="group p-6 border border-zinc-200 rounded-md bg-white hover:border-zinc-300 hover:shadow-sm transition-all flex items-center gap-5">
@@ -60,7 +43,7 @@ export default async function AdminDashboardPage() {
             <Link href="/admin/wiki/new" className="p-3 border rounded-md hover:bg-zinc-50 text-sm font-medium text-center">New Article</Link>
           </div>
         </div>
-        
+
         <div className="p-6 border border-zinc-200 rounded-md bg-white flex flex-col items-center justify-center text-center">
           <SCIcon icon={ClipboardText} size="xl" className="text-zinc-200 mb-2" />
           <p className="text-sm text-zinc-500">No pending reviews.</p>

@@ -62,13 +62,13 @@ export const DaysUntilExamCard = () => (
 export const StudyStreakCard = () => (
   <Card className='border-0 bg-white shadow-none p-4 rounded-sm'>
     <div className='flex items-center gap-3'>
-      <div className='rounded-full bg-orange-50 p-2'>
-        <SCIcon icon={Fire} size='md' className='text-orange-500' />
+      <div className='rounded-full bg-[#FEF8ED] p-2'>
+        <SCIcon icon={Fire} size='md' className='text-[#E8853A]' />
       </div>
       <div>
         <span className='text-[11px] font-bold uppercase tracking-wider' style={{ color: '#8896A7' }}>Study Momentum</span>
         <h3 className='text-xl font-bold mt-0.5' style={{ color: '#1A2332' }}>7 Days Running</h3>
-        <p className='text-[11px] text-orange-600 font-bold uppercase'>Great consistency!</p>
+        <p className='text-[11px] text-[#E8853A] font-bold uppercase'>Great consistency!</p>
       </div>
     </div>
   </Card>
@@ -111,7 +111,7 @@ export const DetailedWeeklyReadinessTrendCard = () => (
         <h3 className='text-lg font-bold' style={{ color: '#1A2332' }}>Weekly Readiness</h3>
       </div>
       <div className='text-right'>
-        <span className='text-[11px] font-bold text-green-600 uppercase tracking-wider flex items-center justify-end gap-1'>
+        <span className='text-[11px] font-bold text-[#2D9F6F] uppercase tracking-wider flex items-center justify-end gap-1'>
           <SCIcon icon={TrendUp} size='xs' /> +4% Overall
         </span>
         <p className='text-[11px] font-bold' style={{ color: '#1A2332' }}>W8: 76%</p>
@@ -153,7 +153,7 @@ export const PacingAndDomainBreakdownCard = () => (
           <span className='text-xl font-bold' style={{ color: '#1A2332' }}>1:15</span>
           <span className='text-[11px] font-medium uppercase tracking-tight' style={{ color: '#4A5568' }}>Min / Q</span>
         </div>
-        <p className='text-[11px] text-green-600 font-bold mt-0.5 uppercase tracking-tighter'>0:15 ahead of target (1:30)</p>
+        <p className='text-[11px] text-[#2D9F6F] font-bold mt-0.5 uppercase tracking-tighter'>0:15 ahead of target (1:30)</p>
       </div>
 
       <div className='space-y-2 pt-2 border-t border-[#D4DAE3]'>

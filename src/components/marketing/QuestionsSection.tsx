@@ -12,7 +12,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Quiz mockup (rendered UI, not an image) ── */
 
 const QuizMockup = () => (
-  <div className='overflow-hidden rounded-[10px] border border-[#E8E4DC] bg-white'>
+  <div className='overflow-hidden rounded-md border border-[#E8E4DC] bg-white'>
     {/* Header — Cobalt with noise */}
     <div className='relative overflow-hidden bg-[#1B3FC4] px-4 py-3 noise-heavy'>
       <div className='relative z-10 flex items-center justify-between'>

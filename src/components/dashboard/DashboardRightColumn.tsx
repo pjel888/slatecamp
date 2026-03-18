@@ -166,16 +166,16 @@ export const MetricSmall = ({
         <div
           className={cn(
             'p-1.5 rounded-sm bg-[#EEF2FC]',
-            color === 'orange' && 'bg-orange-50',
-            color === 'amber' && 'bg-amber-50',
+            color === 'orange' && 'bg-[#FEF8ED]',
+            color === 'amber' && 'bg-[#FEF8ED]',
           )}
         >
           <SCIcon
             icon={Icon}
             size='xs'
             className={cn(
-              color === 'orange' && 'text-orange-500',
-              color === 'amber' && 'text-amber-600',
+              color === 'orange' && 'text-[#E8853A]',
+              color === 'amber' && 'text-[#D4951A]',
             )}
             color={!color || color === 'zinc' ? '#8896A7' : undefined}
           />
@@ -291,10 +291,10 @@ export const UnifiedReadinessCard = ({
                 className={cn(
                   'text-4xl font-bold tracking-tighter',
                   clamped < 50
-                    ? 'text-red-600'
+                    ? 'text-[#D64545]'
                     : clamped <= 80
-                      ? 'text-amber-600'
-                      : 'text-green-600',
+                      ? 'text-[#D4951A]'
+                      : 'text-[#2D9F6F]',
                 )}
               >
                 {clamped}%
@@ -302,8 +302,8 @@ export const UnifiedReadinessCard = ({
               <div
                 className={cn(
                   'flex items-center gap-1 px-1 py-0.5 rounded-full text-[11px] font-bold uppercase',
-                  trend === 'up' && 'bg-green-50 text-green-700',
-                  trend === 'down' && 'bg-red-50 text-red-700',
+                  trend === 'up' && 'bg-[#EDFAF4] text-[#2D9F6F]',
+                  trend === 'down' && 'bg-[#FDF0F0] text-[#D64545]',
                   trend === 'flat' && 'bg-[#EEF2FC]',
                 )}
                 style={trend === 'flat' ? { color: '#4A5568' } : undefined}
@@ -346,7 +346,7 @@ export const UnifiedReadinessCard = ({
           >
             <SCIcon icon={TrendUp} size='xs' /> Trajectory
           </span>
-          <span className='text-[11px] font-bold text-green-600 uppercase tracking-wider flex items-center gap-1'>
+          <span className='text-[11px] font-bold text-[#2D9F6F] uppercase tracking-wider flex items-center gap-1'>
             <SCIcon icon={Target} size='xs' /> Target: 85%
           </span>
         </div>
@@ -503,11 +503,11 @@ export const PacingLeaksCard = () => (
       className='text-[11px] font-bold uppercase tracking-wider flex items-center gap-1'
       style={{ color: '#8896A7' }}
     >
-      <SCIcon icon={Timer} size='xs' className='text-amber-500' /> Pacing
+      <SCIcon icon={Timer} size='xs' className='text-[#D4951A]' /> Pacing
       Insights
     </span>
     <div className='mt-1 flex items-start gap-1.5'>
-      <SCIcon icon={Warning} size='xs' className='text-amber-500 mt-0.5' />
+      <SCIcon icon={Warning} size='xs' className='text-[#D4951A] mt-0.5' />
       <p className='text-[11px] leading-tight' style={{ color: '#4A5568' }}>
         <span className='font-bold' style={{ color: '#1A2332' }}>
           Steel Conn.

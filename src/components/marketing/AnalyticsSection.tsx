@@ -65,7 +65,7 @@ const AnimatedBar = ({ pct, color }: { pct: number; color: string }) => {
 /* ── Analytics mockup ── */
 
 const AnalyticsMockup = () => (
-  <div className='rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-5'>
+  <div className='rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5'>
     {/* Overall score + ring */}
     <div className='mb-4 flex items-center gap-4'>
       <ReadinessRing value={75} className='h-20 w-20' />
@@ -119,7 +119,7 @@ const AnalyticsMockup = () => (
 /* ── Score legend ── */
 
 const ScoreLegend = () => (
-  <div className='mt-6 rounded-[10px] border border-[#E8E4DC] bg-[#FFFDF7] p-4'>
+  <div className='mt-6 rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-4'>
     <div className='mb-3 text-[13px] font-bold text-[#111]'>What the score actually means</div>
     {[
       { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: '#1B3FC4' },

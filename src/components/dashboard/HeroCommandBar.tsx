@@ -124,7 +124,7 @@ export function HeroCommandBar({
                   Readiness Score
                 </p>
                 <span
-                  className='inline-flex items-center justify-center h-3.5 w-3.5 rounded-full border border-white/30 text-white/40 text-[9px] font-medium cursor-default'
+                  className='inline-flex items-center justify-center h-3.5 w-3.5 rounded-full border border-white/30 text-white/40 text-[11px] font-medium cursor-default'
                   aria-label='What is Readiness Score?'
                 >
                   ?

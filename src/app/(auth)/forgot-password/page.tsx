@@ -76,7 +76,7 @@ export default function ForgotPasswordPage() {
               </div>
 
               {error && (
-                <div className="flex items-start gap-2 text-sm text-red-600" role="alert">
+                <div className="flex items-start gap-2 text-sm text-[#D64545]" role="alert">
                   <SCIcon icon={Warning} size="sm" className="mt-0.5 shrink-0" />
                   <span>{error}</span>
                 </div>

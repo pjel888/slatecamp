@@ -33,7 +33,7 @@ const StarRating = ({ count }: { count: number }) => (
     {Array.from({ length: count }, (_, i) => (
       <svg
         key={i}
-        className='h-3.5 w-3.5 text-amber-500'
+        className='h-3.5 w-3.5 text-[#D4951A]'
         viewBox='0 0 20 20'
         fill='currentColor'
         aria-hidden='true'

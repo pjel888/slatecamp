@@ -57,7 +57,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
           <SCIcon
             icon={CheckCircle}
             size='sm'
-            className='mt-0.5 shrink-0 text-green-600'
+            className='mt-0.5 shrink-0 text-[#2D9F6F]'
           />
           {feature}
         </li>

@@ -48,7 +48,7 @@ export default function AdminLandingPage() {
             disabled={loading}
             isLoading={loading}
           />
-          {error && <p className="mt-4 text-center text-xs text-red-600">{error}</p>}
+          {error && <p className="mt-4 text-center text-xs text-[#D64545]">{error}</p>}
         </div>
         
         <p className="text-center text-[11px] text-zinc-400 uppercase tracking-widest">

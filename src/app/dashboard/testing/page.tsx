@@ -1,6 +1,4 @@
-import { createClient, getUser } from '@/lib/supabase/server'
-import { getQuizSession } from '@/lib/actions/quiz'
-import { ensureUserGlobalStats } from '@/lib/actions/user-stats'
+import { getTestingPageData } from '@/lib/actions/testing'
 import { CampDashboard } from './CampDashboard'
 import { redirect } from 'next/navigation'
 
@@ -12,71 +10,19 @@ interface PageProps {
 }
 
 export default async function TestingPage({ searchParams }: PageProps) {
-  const supabase = await createClient()
-  const { data: { user } } = await getUser()
-  if (!user) redirect('/login')
-
   const { topicId, subjectId } = await searchParams
 
-  const stats = await ensureUserGlobalStats()
-  if (!stats) {
-    return (
-      <div className="flex flex-col items-center justify-center h-[calc(100vh-4rem)]">
-        <h1 className="text-xl font-medium text-zinc-900">No discipline found</h1>
-        <p className="text-zinc-500 mt-2">Please select a discipline in settings first.</p>
-      </div>
-    )
-  }
-
-  // 1. Look for existing in-progress session
-  const { data: existingSession } = await supabase
-    .from('quiz_sessions')
-    .select('*')
-    .eq('user_id', user.id)
-    .eq('status', 'in_progress')
-    .eq('test_mode', 'camp')
-    .order('created_at', { ascending: false })
-    .limit(1)
-    .maybeSingle()
-
-  // 2. Fetch question IDs scoped to this discipline's leaf nodes only
-  let questionIds: string[] = []
-  if (!topicId && !subjectId) {
-    const { data: leafNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id')
-      .eq('discipline_id', stats.current_discipline_id)
-      .eq('is_leaf', true)
-
-    const leafIds = (leafNodes || []).map((n: { node_id: string }) => n.node_id)
-
-    if (leafIds.length > 0) {
-      const { data: allQuestions } = await supabase
-        .from('questions')
-        .select('question_id')
-        .in('topic_id', leafIds)
-      questionIds = (allQuestions || []).map((q: { question_id: string }) => q.question_id)
-    }
-  }
-
-  // 3. Fetch top-level subjects for custom session builder
-  const { data: subjects } = await supabase
-    .from('taxonomy_tree')
-    .select('*')
-    .eq('discipline_id', stats.current_discipline_id)
-    .eq('level', 1)
-    .order('name')
-
-  const disciplineName = (stats as any).disciplines?.name || 'Architecture'
+  const data = await getTestingPageData({ topicId, subjectId })
+  if (!data) redirect('/login')
 
   return (
     <div className="w-full h-full bg-[#F8F7F5]">
-      <CampDashboard 
-        initialSession={existingSession}
-        disciplineId={stats.current_discipline_id!}
-        disciplineName={disciplineName}
-        subjects={subjects || []}
-        allQuestionIds={questionIds}
+      <CampDashboard
+        initialSession={data.existingSession}
+        disciplineId={data.disciplineId}
+        disciplineName={data.disciplineName}
+        subjects={data.subjects}
+        allQuestionIds={data.questionIds}
       />
     </div>
   )

@@ -29,7 +29,7 @@ export function ContextBadge({ anchor, className }: ContextBadgeProps) {
         </span>
       )}
       {anchor.question_text && (
-        <span className="inline-flex items-center gap-1 rounded-full border border-amber-100 bg-amber-50 px-2.5 py-1 text-[11px] font-medium text-amber-700">
+        <span className="inline-flex items-center gap-1 rounded-full border border-[#D4951A]/20 bg-[#FEF8ED] px-2.5 py-1 text-[11px] font-medium text-[#D4951A]">
           <SCIcon icon={Question} size="xs" className="shrink-0" />
           <span className="truncate max-w-[180px]">
             {anchor.question_text.length > 55

@@ -1,22 +1,5 @@
-import { createClient } from '@/lib/supabase/server'
+import { getArticles } from '@/lib/actions/admin/wiki-queries'
 import { WikiArticleList } from '@/components/admin/WikiArticleList'
-
-async function getArticles() {
-  const supabase = await createClient()
-  
-  const { data, error } = await supabase
-    .from('wiki_articles')
-    .select('id:article_id, title, created_at, updated_at')
-    .order('updated_at', { ascending: false })
-    .limit(100)
-
-  if (error) {
-    console.error('Error fetching articles:', error)
-    return []
-  }
-
-  return data || []
-}
 
 export default async function AdminWikiPage() {
   const articles = await getArticles()

@@ -42,7 +42,7 @@ const DashboardPeek = () => (
         {/* Main Content */}
         <div className='flex-1 space-y-2'>
           <div className='flex gap-3'>
-            <div className='h-14 w-14 shrink-0 rounded-[10px] bg-[#E8E4DC]' />
+            <div className='h-14 w-14 shrink-0 rounded-md bg-[#E8E4DC]' />
             <div className='flex-1 space-y-1.5 pt-1'>
               <div className='h-2.5 w-32 rounded bg-[#E8E4DC]' />
               <div className='h-2 w-48 rounded bg-[#E8E4DC]' />
@@ -169,7 +169,7 @@ const ALESubjectCoverageCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className='order-1 w-full max-w-[280px] rounded-[10px] bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+      className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
       aria-hidden='true'
     >
       <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2'>
@@ -227,7 +227,7 @@ const MockQuestionCard = () => {
             Sample Question
           </span>
         </div>
-        <span className='rounded bg-[#F2F0EB] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[9px] tracking-[0.1em] uppercase text-[#888]'>
+        <span className='rounded bg-[#F2F0EB] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
           {MOCK_QUESTION.topic}
         </span>
       </div>
@@ -244,8 +244,8 @@ const MockQuestionCard = () => {
               key={opt.label}
               className={cn(
                 'flex items-center gap-2 rounded-sm border px-2.5 py-1.5 text-[11px] transition-colors',
-                isCorrect && 'border-green-400 bg-green-50 text-green-800',
-                isIncorrect && 'border-red-400 bg-red-50 text-red-800',
+                isCorrect && 'border-[#2D9F6F] bg-[#EDFAF4] text-[#2D9F6F]',
+                isIncorrect && 'border-[#D64545] bg-[#FDF0F0] text-[#D64545]',
                 !isCorrect &&
                   !isIncorrect &&
                   'border-[#E8E4DC] bg-white text-zinc-800 hover:bg-[#FFFDF7]',
@@ -254,8 +254,8 @@ const MockQuestionCard = () => {
               <span
                 className={cn(
                   'h-2 w-2 shrink-0 rounded-full',
-                  isCorrect && 'bg-green-600',
-                  isIncorrect && 'bg-red-600',
+                  isCorrect && 'bg-[#2D9F6F]',
+                  isIncorrect && 'bg-[#D64545]',
                   !isCorrect && !isIncorrect && 'bg-zinc-400',
                 )}
                 aria-hidden='true'
@@ -337,9 +337,9 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           const score = isHovered ? improved : value
           const barClass =
             score < 50
-              ? 'bg-red-600'
+              ? 'bg-[#D64545]'
               : score < 70
-                ? 'bg-amber-600'
+                ? 'bg-[#D4951A]'
                 : 'bg-emerald-500'
 
           return (
