@@ -14,14 +14,12 @@ import type { DailyWikiArticle, NotePreview } from '@/types/dashboard'
 
 interface DailyWikiCardProps {
   article: DailyWikiArticle | null
-  moduleCount: number
   notes: NotePreview[]
   totalNoteCount?: number
 }
 
 export function DailyWikiCard({
   article,
-  moduleCount,
   notes,
   totalNoteCount,
 }: DailyWikiCardProps) {
@@ -68,7 +66,9 @@ export function DailyWikiCard({
         )}
         <div className='mt-auto flex justify-end'>
           <Link
-            href={article ? `/dashboard/wiki/${article.slug}` : '/dashboard/wiki'}
+            href={
+              article ? `/dashboard/wiki/${article.slug}` : '/dashboard/wiki'
+            }
             className='text-[11px] font-medium underline underline-offset-2 text-white/90'
           >
             Read article →
@@ -79,10 +79,18 @@ export function DailyWikiCard({
       {/* ── 1/3: Notes (Signal Green bg) ───────────────────────────── */}
       <div className='flex-1 rounded-md p-3 overflow-hidden relative flex flex-col bg-card-notes border border-card-notes-border'>
         {/* Animated triangles */}
-        <svg className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20 animate-[spin_14s_linear_infinite]' viewBox='0 0 40 40' fill='none'>
+        <svg
+          className='absolute right-3 top-3 w-10 h-10 pointer-events-none opacity-20 animate-[spin_14s_linear_infinite]'
+          viewBox='0 0 40 40'
+          fill='none'
+        >
           <polygon points='20,4 36,34 4,34' stroke='white' strokeWidth='2' />
         </svg>
-        <svg className='absolute right-4 top-4 w-6 h-6 pointer-events-none opacity-15 animate-[spin_9s_linear_infinite_reverse]' viewBox='0 0 24 24' fill='none'>
+        <svg
+          className='absolute right-4 top-4 w-6 h-6 pointer-events-none opacity-15 animate-[spin_9s_linear_infinite_reverse]'
+          viewBox='0 0 24 24'
+          fill='none'
+        >
           <polygon points='12,2 22,20 2,20' stroke='white' strokeWidth='1.5' />
         </svg>
 
@@ -115,7 +123,9 @@ export function DailyWikiCard({
             href='/dashboard/notes'
             className='text-[11px] font-medium underline underline-offset-2 text-white/90'
           >
-            {notes.length > 0 ? `Open all ${totalNoteCount ?? notes.length} notes →` : 'Open notes →'}
+            {notes.length > 0
+              ? `Open all ${totalNoteCount ?? notes.length} notes →`
+              : 'Open notes →'}
           </Link>
         </div>
       </div>
@@ -139,10 +149,7 @@ export function DailyWikiCard({
           through interactive 3D models you can rotate, cut, and explore.
         </p>
 
-        <div className='mt-auto flex items-center justify-between'>
-          <span className='font-dm-mono text-[11px] text-white/50'>
-            {moduleCount > 0 ? `${moduleCount} modules` : '186 modules planned'}
-          </span>
+        <div className='mt-auto flex justify-end'>
           <Link
             href='/dashboard/3d-lab'
             className='text-[11px] font-medium text-white/90 underline underline-offset-2'
@@ -157,11 +164,7 @@ export function DailyWikiCard({
 
 // ── LabPreviewCard ──────────────────────────────────────────────────────────
 
-interface LabPreviewCardProps {
-  moduleCount: number
-}
-
-export function LabPreviewCard({ moduleCount }: LabPreviewCardProps) {
+export function LabPreviewCard() {
   return (
     <Card className='border-0 p-4 overflow-hidden relative bg-gradient-to-br from-camp-cobalt to-[#2A5BD7]'>
       <div className='flex items-center gap-1.5 mb-0.5'>
@@ -192,10 +195,7 @@ export function LabPreviewCard({ moduleCount }: LabPreviewCardProps) {
         <div className='absolute inset-1 border border-white/60 rounded-sm animate-[spin_8s_linear_infinite_reverse]' />
       </div>
 
-      <div className='flex items-center justify-between'>
-        <span className='font-dm-mono text-[11px] text-white/50'>
-          {moduleCount > 0 ? `${moduleCount} modules` : '186 modules planned'}
-        </span>
+      <div className='flex justify-end'>
         <Link
           href='/dashboard/3d-lab'
           className='text-[11px] font-medium text-white/90 underline underline-offset-2'

@@ -38,7 +38,7 @@ export default async function DashboardPage() {
 
         {/* Column 1: Today's Article + 3D Lab (full height) */}
         <div className="h-full">
-          <DailyWikiCard article={data.dailyArticle} moduleCount={data.labModuleCount} notes={data.recentNotes} />
+          <DailyWikiCard article={data.dailyArticle} notes={data.recentNotes} />
         </div>
 
         {/* Column 2: Resume */}
