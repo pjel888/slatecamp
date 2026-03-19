@@ -13,6 +13,7 @@ import type {
   DailyWikiArticle,
   NotePreview,
   SubjectMastery,
+  SubjectFloorAlert,
   TopicRing,
 } from '@/types/dashboard'
 
@@ -132,7 +133,7 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     // Q1
     supabase
       .from('user_global_stats')
-      .select('global_readiness_score, target_exam_date, current_discipline_id, assessment_completed_at, score_reveal_shown_at, global_current_streak, global_longest_streak, last_study_date')
+      .select('global_readiness_score, target_exam_date, current_discipline_id, assessment_completed_at, score_reveal_shown_at, global_current_streak, global_longest_streak, last_study_date, readiness_sub_scores')
       .eq('user_id', user.id)
       .maybeSingle(),
 
@@ -211,10 +212,14 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       .limit(50),
 
     // Q11: full taxonomy tree (levels 1-3) for radial heatmap structure
+    // Exclude ALE-LAWS (cross-ref only, zero exam weight) and deprecated v1 nodes
     supabase
       .from('taxonomy_tree')
       .select('node_id, parent_id, level, name, subject_area')
       .in('level', [1, 2, 3])
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null)
       .order('subject_area')
       .order('level')
       .order('name'),
@@ -225,6 +230,34 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       .select('topic_id, current_mastery_weight, total_attempts')
       .eq('user_id', user.id),
   ])
+
+  // ── Log partial failures ──────────────────────────────────────────────────
+  const _queryResults = [
+    { key: 'globalStats', result: globalStatsResult },
+    { key: 'snapshots', result: snapshotsResult },
+    { key: 'inProgress', result: inProgressResult },
+    { key: 'focusTopics', result: focusTopicsResult },
+    { key: 'thisWeekInteractions', result: thisWeekInteractionsResult },
+    { key: 'lastWeekInteractions', result: lastWeekInteractionsResult },
+    { key: 'recentSessions', result: recentSessionsResult },
+    { key: 'masteryCount', result: masteryCountResult },
+    { key: 'notes', result: notesResult },
+    { key: 'wikiArticles', result: wikiArticlesResult },
+    { key: 'subjectAreas', result: subjectAreasResult },
+    { key: 'subjectMastery', result: subjectMasteryResult },
+  ]
+
+  const _failedKeys = _queryResults
+    .filter(q => {
+      const err = (q.result as any).error
+      // Only treat as failure if error is a real Supabase PostgrestError (has message or code)
+      return err != null && (err.message || err.code)
+    })
+    .map(q => {
+      const err = (q.result as any).error
+      console.error(`[DASHBOARD] ${q.key} query failed:`, JSON.stringify(err))
+      return q.key
+    })
 
   // ── Onboarding state queries (UX Strategy Section 7) ────────────────────
 
@@ -321,7 +354,7 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     .from('user_node_mastery')
     .select('topic_id, taxonomy_tree(subject_area)')
     .eq('user_id', user.id)
-    .lte('srs_due_at', now)
+    .lte('next_review_at', now)
     .gt('total_attempts', 0)
 
   const srsSubjects = new Set<string>()
@@ -428,6 +461,9 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       .select('node_id', { count: 'exact', head: true })
       .eq('discipline_id', disciplineId)
       .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null)
     totalLeaves = count ?? 0
   }
 
@@ -512,6 +548,19 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       topics: topicRings,
     }
   })
+
+  // ── Subject floor alerts (Task 0.3) ───────────────────────────────────
+  // ALE requires minimum 50% per subject. Alert when any subject is below.
+  const SUBJECT_FLOOR_PCT = 50 // from disciplines.subject_floor_pct default
+  const subjectFloorAlerts: SubjectFloorAlert[] = subjectMastery
+    .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
+    .map(s => ({
+      subject: s.subject,
+      mastery: s.mastery,
+      floorPct: SUBJECT_FLOOR_PCT,
+      gap: SUBJECT_FLOOR_PCT - s.mastery,
+    }))
+    .sort((a, b) => b.gap - a.gap)
 
   // ── Focus areas ─────────────────────────────────────────────────────────
 
@@ -652,6 +701,17 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     .from('models_3d')
     .select('model_id', { count: 'exact', head: true })
 
+  // ── Readiness score anti-inflation metadata ────────────────────────────
+  const subScores = (globalStats as any)?.readiness_sub_scores ?? {}
+  const readinessMeta = subScores._meta
+    ? {
+        ceilingActive: subScores._meta.ceilingActive as boolean | undefined,
+        ceilingValue: subScores._meta.ceilingValue as number | null | undefined,
+        ceilingReason: subScores._meta.ceilingReason as string | null | undefined,
+        greyPenalty: subScores._meta.greyPenalty as number | undefined,
+      }
+    : null
+
   return {
     userName: firstName,
     readinessScore,
@@ -660,9 +720,11 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     daysUntilExam,
     heroStats,
     syllabusCoveragePercent,
+    readinessMeta,
     action,
     focusAreas,
     subjectMastery,
+    subjectFloorAlerts,
     recentSessions,
     weekStats,
     inProgressSession,
@@ -742,6 +804,7 @@ function emptyDashboard(userName: string): DashboardPageData {
       { value: 0, label: 'Study days', description: '', delta: null, tooltip: 'Days with at least one session this week' },
     ],
     syllabusCoveragePercent: 0,
+    readinessMeta: null,
     action: {
       type: 'warmup',
       title: 'Start Your First Session',
@@ -753,6 +816,7 @@ function emptyDashboard(userName: string): DashboardPageData {
     },
     focusAreas: [],
     subjectMastery: [],
+    subjectFloorAlerts: [],
     recentSessions: [],
     weekStats: [
       { value: 0, label: 'Questions Answered', subLabel: 'this week', delta: null, tooltip: 'Total questions answered this week' },

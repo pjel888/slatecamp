@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
-export type NodeState = 'mastered' | 'familiar' | 'danger' | 'unexplored'
+export type NodeState = 'mastered' | 'familiar' | 'danger' | 'unexplored' | 'thin_coverage'
 
 export interface HeatmapNode {
   id: string
@@ -35,6 +35,7 @@ const stateClassMap: Record<NodeState, string> = {
   familiar: 'bg-[#E8853A]',
   danger: 'bg-[#D64545] animate-pulse',  // subtle pulse — UX Strategy Section 8
   unexplored: 'bg-[#D4DAE3]',
+  thin_coverage: 'bg-[#D4DAE3] ring-1 ring-inset ring-[#8896A7]/40',
 }
 
 const stateA11yLabel: Record<NodeState, string> = {
@@ -42,6 +43,7 @@ const stateA11yLabel: Record<NodeState, string> = {
   familiar: 'Developing',
   danger: 'Needs work',
   unexplored: 'Not yet explored',
+  thin_coverage: 'Limited data — fewer than 5 questions answered',
 }
 
 const DELTA_LABELS: Record<DeltaPeriod, string> = {

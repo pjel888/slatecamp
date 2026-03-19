@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { Anthropic } from "@anthropic-ai/sdk";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
   try {
@@ -9,6 +10,14 @@ export async function POST(req: Request) {
     
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) return new Response("Unauthorized", { status: 401 });
+
+    const rateLimit = checkRateLimit(`ai_${user.id}`)
+    if (!rateLimit.allowed) {
+      return NextResponse.json(
+        { error: 'Rate limit exceeded. Please wait before sending another message.' },
+        { status: 429, headers: { 'Retry-After': String(rateLimit.retryAfter) } }
+      )
+    }
 
     // 1. Check tokens in user_subscriptions (v1.0 simplification)
     const { data: sub } = await supabase

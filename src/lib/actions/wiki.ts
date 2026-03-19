@@ -12,10 +12,16 @@ export async function getWikiTaxonomyTree(disciplineId: string) {
     .from("taxonomy_tree")
     .select("*")
     .eq("discipline_id", disciplineId)
+    .eq("is_cross_ref_only", false)
+    .is("deprecated_at", null)
+    .not("ale_id", "is", null)
     .order("level", { ascending: true })
     .order("name", { ascending: true });
 
-  if (error || !data) return [];
+  if (error || !data) {
+    if (error) console.error('[WIKI] getWikiTaxonomyTree failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return [];
+  }
   return data;
 }
 
@@ -31,7 +37,10 @@ export async function getWikiArticlesByNode(
     .select("wiki_articles(*)")
     .eq("node_id", nodeId);
 
-  if (error || !data) return [];
+  if (error || !data) {
+    if (error) console.error('[WIKI] getWikiArticlesByNode failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return [];
+  }
   return data.map(d => d.wiki_articles).filter(Boolean) as unknown as WikiArticle[];
 }
 
@@ -48,7 +57,10 @@ export async function getWikiArticleBySlug(
     .eq("slug", slug)
     .maybeSingle();
 
-  if (error || !data) return null;
+  if (error || !data) {
+    if (error) console.error('[WIKI] getWikiArticleBySlug failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return null;
+  }
   return data as unknown as WikiArticle;
 }
 
@@ -66,8 +78,11 @@ export async function searchWiki(
     .or(`title.ilike.%${searchTerm}%,content.ilike.%${searchTerm}%`)
     .limit(limit);
 
-  if (error || !data) return [];
-  
+  if (error || !data) {
+    if (error) console.error('[WIKI] searchWiki failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return [];
+  }
+
   return data.map(d => ({
     id: d.article_id,
     title: d.title,
@@ -93,7 +108,10 @@ export async function searchWikiPaginated(
     .or(`title.ilike.%${searchTerm}%,content.ilike.%${searchTerm}%`)
     .range(offset, offset + perPage - 1);
 
-  if (error || !data) return { results: [], totalCount: 0 };
+  if (error || !data) {
+    if (error) console.error('[WIKI] searchWikiPaginated failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return { results: [], totalCount: 0 };
+  }
 
   const results = data.map(d => ({
     id: d.article_id,

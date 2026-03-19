@@ -57,4 +57,18 @@ export async function bootstrapUser(
   if (statsError) {
     console.error("Error upserting stats:", JSON.stringify(statsError, null, 2));
   }
+
+  // 4. Safety net: Create minimal profile row if it doesn't exist (D4)
+  // This ensures profiles has a row even if user abandons onboarding
+  const { error: profileError } = await admin
+    .from("profiles")
+    .upsert({
+      id: userId,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    }, { onConflict: 'id', ignoreDuplicates: true });
+
+  if (profileError) {
+    console.error("Error upserting profile:", JSON.stringify(profileError, null, 2));
+  }
 }

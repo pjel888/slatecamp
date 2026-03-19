@@ -6,6 +6,7 @@ import {
   HeatmapSectionSkeleton,
 } from '@/components/dashboard/HeatmapSection'
 import { SubjectMasteryCard } from '@/components/dashboard/SubjectMasteryCard'
+import { SubjectFloorAlert } from '@/components/dashboard/SubjectFloorAlert'
 import { ImprovedActivityFeed } from '@/components/dashboard/ImprovedActivityFeed'
 import { DailyWikiCard } from '@/components/dashboard/FeatureDiscoveryRow'
 import { OnboardingStateCard } from '@/components/dashboard/OnboardingStateCard'
@@ -54,6 +55,11 @@ export default async function DashboardPage() {
           />
         )}
 
+        {/* ── Subject Floor Alert ─────────────────────────── */}
+        {data.subjectFloorAlerts.length > 0 && (
+          <SubjectFloorAlert alerts={data.subjectFloorAlerts} />
+        )}
+
         {/* ── 1. Hero: Score + Greeting + Heatmap ────────── */}
         <HeroCommandBar
           userName={data.userName}
@@ -62,6 +68,7 @@ export default async function DashboardPage() {
           daysUntilExam={data.daysUntilExam}
           heroStats={data.heroStats}
           syllabusCoveragePercent={data.syllabusCoveragePercent}
+          readinessMeta={data.readinessMeta}
         >
           <Suspense fallback={<HeatmapSectionSkeleton />}>
             <HeatmapSection />

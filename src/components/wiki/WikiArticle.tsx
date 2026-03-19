@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
+import type { EIPrompt, EIResponseMap } from '@/lib/actions/ei-prompts'
 import { WikiHighlighter } from './WikiHighlighter'
 import { WikiNoteAnchor } from './WikiNoteAnchor'
 import { WikiTextSelection } from './WikiTextSelection'
@@ -14,10 +15,12 @@ interface WikiArticleProps {
   article: WikiArticleType
   nodeId?: string
   nodeName?: string
+  eiPrompts?: EIPrompt[]
+  eiResponses?: EIResponseMap
 }
 
-// Custom components for MDX rendering
-const mdxComponents = {
+// Base custom components for MDX rendering (no EI — those are added dynamically)
+const baseMdxComponents = {
   // Headings with auto-generated IDs for anchor linking
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
     const id = props.children
@@ -62,9 +65,6 @@ const mdxComponents = {
     />
   ),
   code: (props: React.HTMLAttributes<HTMLElement>) => {
-    // Inline code (inside a <p>) vs block code (inside <pre>) is distinguished
-    // by whether the parent is <pre>. MDXRemote handles this — inline code
-    // gets prose styling from the wrapper, block code gets <pre> styling above.
     return <code {...props} />
   },
 
@@ -80,42 +80,101 @@ const mdxComponents = {
   PHBuildingSetbacks: (props: React.HTMLAttributes<HTMLDivElement>) => {
     return <PHBuildingSetbacks {...props} />
   },
-
-  // Elaborative Interrogation blocks
-  EIBlock: (props: { question: string; answer: string; articleId?: string }) => {
-    return (
-      <ElaborativeInterrogation
-        question={props.question}
-        answer={props.answer}
-        articleId={props.articleId}
-      />
-    )
-  },
 }
 
 /**
- * Pre-processes wiki content to convert [EI]...[/EI] tags into
- * <EIBlock> JSX components for Elaborative Interrogation.
+ * Build MDX components with DB-driven EI prompt data injected via closure.
+ * EIPrompt components in the MDX content use an index to look up data.
  */
-const preprocessEITags = (content: string, articleId?: string): string => {
-  // Match [EI]question[/EI] followed by content until the next heading, EI tag, or end
-  const eiRegex = /\[EI\]([\s\S]*?)\[\/EI\]/g
-  return content.replace(eiRegex, (_match, question: string) => {
-    const trimmedQuestion = question.trim()
-    // Escape quotes for JSX attribute
-    const escapedQuestion = trimmedQuestion.replace(/"/g, '&quot;')
-    const escapedArticleId = articleId ? ` articleId="${articleId}"` : ''
-    // The answer will be revealed from the content that follows naturally
-    // We use a simple approach: the EI block is self-contained
-    return `<EIBlock question="${escapedQuestion}" answer=""${escapedArticleId} />`
+const buildMdxComponents = (
+  prompts: EIPrompt[],
+  responses: EIResponseMap,
+  articleId?: string,
+) => ({
+  ...baseMdxComponents,
+
+  // DB-driven prompts — injected by injectEIPrompts as <EIPrompt idx={N} />
+  EIPrompt: ({ idx }: { idx: number }) => {
+    const prompt = prompts[idx]
+    if (!prompt) return null
+    const response = responses[prompt.prompt_id]
+    return (
+      <ElaborativeInterrogation
+        promptId={prompt.prompt_id}
+        question={prompt.prompt_text}
+        answer={prompt.reveal_text}
+        options={prompt.options}
+        articleId={articleId}
+        existingResponse={response ?? null}
+      />
+    )
+  },
+
+  // Legacy: inline [EI] tags converted to EIBlock (kept for backward compat)
+  EIBlock: (props: { question: string; answer: string; articleId?: string }) => (
+    <ElaborativeInterrogation
+      promptId=""
+      question={props.question}
+      answer={props.answer}
+      options={[]}
+      articleId={props.articleId}
+    />
+  ),
+})
+
+/**
+ * Strip legacy [EI]...[/EI] markdown tags from content.
+ * These are replaced by DB-driven prompts.
+ */
+const stripLegacyEITags = (content: string): string =>
+  content.replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
+
+/**
+ * Inject DB-driven EI prompt placeholders into article content.
+ * Matches prompt.insert_after_heading to markdown headings (##, ###, ####).
+ * Inserts <EIPrompt idx={N} /> after the matching heading line.
+ */
+const injectEIPrompts = (content: string, prompts: EIPrompt[]): string => {
+  if (prompts.length === 0) return content
+
+  // Group prompt indices by normalized heading text
+  const promptsByHeading = new Map<string, number[]>()
+  prompts.forEach((prompt, idx) => {
+    const key = prompt.insert_after_heading.toLowerCase().trim()
+    if (!promptsByHeading.has(key)) {
+      promptsByHeading.set(key, [])
+    }
+    promptsByHeading.get(key)!.push(idx)
   })
+
+  const lines = content.split('\n')
+  const result: string[] = []
+
+  for (const line of lines) {
+    result.push(line)
+
+    const headingMatch = line.match(/^(#{2,4})\s+(.+)$/)
+    if (headingMatch) {
+      const headingText = headingMatch[2].trim().toLowerCase()
+      const indices = promptsByHeading.get(headingText)
+      if (indices) {
+        for (const idx of indices) {
+          result.push('')
+          result.push(`<EIPrompt idx={${idx}} />`)
+          result.push('')
+        }
+      }
+    }
+  }
+
+  return result.join('\n')
 }
 
 /**
  * Extract headings from article content — used by the page to pass
  * heading data to both the article and the right sidebar ToC.
  */
-export function getArticleHeadings(article: WikiArticleType): TocHeading[] {
+export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {
   const content = article.content || ''
   const processedContent = content.replace(/\\n/g, '\n')
   return extractHeadings(processedContent)
@@ -124,14 +183,23 @@ export function getArticleHeadings(article: WikiArticleType): TocHeading[] {
 /**
  * Pure content renderer — no sidebars, no header.
  * Renders the article body with prose typography, callout blocks,
- * styled code/tables, and text-selection popover.
+ * styled code/tables, text-selection popover, and DB-driven EI prompts.
  */
-export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProps) {
+export const WikiArticle = async ({
+  article,
+  nodeId,
+  nodeName,
+  eiPrompts = [],
+  eiResponses = {},
+}: WikiArticleProps) => {
   if (!article) return null
 
   const content = article.content || ''
   const rawContent = content.replace(/\\n/g, '\n')
-  const processedContent = preprocessEITags(rawContent, article.article_id)
+  const cleaned = stripLegacyEITags(rawContent)
+  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+
+  const mdxComponents = buildMdxComponents(eiPrompts, eiResponses, article.article_id)
 
   return (
     <>

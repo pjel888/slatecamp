@@ -117,6 +117,13 @@ export interface SubjectMastery {
 
 // ── Full Dashboard Page Data ────────────────────────────────────────────────
 
+export interface ReadinessMeta {
+  ceilingActive?: boolean
+  ceilingValue?: number | null
+  ceilingReason?: string | null
+  greyPenalty?: number
+}
+
 export interface DashboardPageData {
   // HeroCommandBar
   userName: string
@@ -126,6 +133,7 @@ export interface DashboardPageData {
   daysUntilExam: number | null
   heroStats: HeroMicroStat[]
   syllabusCoveragePercent: number
+  readinessMeta: ReadinessMeta | null
 
   // NextMissionCard
   action: RecommendedAction
@@ -179,4 +187,15 @@ export interface DashboardPageData {
     subjects: string[]
     estimatedMinutes: number
   }
+
+  // Subject Floor Alert (Task 0.3)
+  subjectFloorAlerts: SubjectFloorAlert[]
+}
+
+// ── Subject Floor Alert ────────────────────────────────────────────────────
+export interface SubjectFloorAlert {
+  subject: string
+  mastery: number
+  floorPct: number
+  gap: number
 }

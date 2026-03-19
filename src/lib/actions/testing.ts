@@ -41,6 +41,9 @@ export async function getTestingPageData(params: { topicId?: string; subjectId?:
         .select('node_id')
         .eq('discipline_id', stats.current_discipline_id)
         .eq('is_leaf', true)
+        .eq('is_cross_ref_only', false)
+        .is('deprecated_at', null)
+        .not('ale_id', 'is', null)
 
       const leafIds = (leafNodes || []).map((n: { node_id: string }) => n.node_id)
       if (leafIds.length === 0) return []
@@ -58,6 +61,9 @@ export async function getTestingPageData(params: { topicId?: string; subjectId?:
     .select('*')
     .eq('discipline_id', stats.current_discipline_id)
     .eq('level', 1)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
     .order('name')
 
   const [

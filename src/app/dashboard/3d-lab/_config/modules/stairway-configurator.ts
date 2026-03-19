@@ -446,4 +446,12 @@ export const stairwayConfigurator: ParametricSceneConfig = {
     position: [3, 3, 3],
     fov: 45,
   },
+  // ── Research-Driven Metadata ─────────────────────────────────
+  contextScenario:
+    "You're reviewing plans for a 4-story commercial building in Quezon City. The building inspector has flagged the fire exit stairway. Here's what they found.",
+  aleQuestionCount: 8,
+  aleQuestionType: 'code compliance',
+  supportedPhases: ['guided', 'faded', 'sandbox', 'challenge'],
+  hasChallengeMode: true,
+  showHumanScale: true,
 }

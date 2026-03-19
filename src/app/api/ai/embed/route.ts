@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { getAIProvider } from "@/lib/ai/provider";
 import { isDemoMode } from "@/lib/demo/config";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function POST(request: Request) {
   if (isDemoMode()) {
@@ -16,6 +17,14 @@ export async function POST(request: Request) {
 
   if (!user) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const rateLimit = checkRateLimit(`ai_${user.id}`)
+  if (!rateLimit.allowed) {
+    return NextResponse.json(
+      { error: 'Rate limit exceeded. Please wait before sending another message.' },
+      { status: 429, headers: { 'Retry-After': String(rateLimit.retryAfter) } }
+    )
   }
 
   const { text } = await request.json();

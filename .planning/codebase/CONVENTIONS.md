@@ -68,7 +68,14 @@
 - Always use `import type` for type-only imports to reduce bundle size
 - Example: `import type { Question, TestMode } from '@/types/app'`
 
-## Error Handling
+## Error Handling Convention
+
+| Path type | Error strategy | Reason |
+|---|---|---|
+| Auth failures | `throw new Error('Unauthorized')` | Triggers Next.js error boundary, redirects to login |
+| Critical quiz mutations | `throw error` (let it bubble) | Session integrity matters — fail loudly |
+| Analytics / non-critical reads | `return null` or `return []` + `console.error` | Graceful degradation, dashboard still renders |
+| Server action form returns | `return { ok: false, error: 'message' }` | Client can handle and show toast |
 
 **Patterns:**
 - Supabase errors: Destructure `{ data, error }` from responses; throw errors explicitly:
@@ -84,11 +91,11 @@
   ```typescript
   if (!user) throw new Error('Unauthorized')
   ```
-- Graceful fallbacks: When column may not exist yet (pre-migration), try fallback query:
+- Non-critical reads: Log the error, return safe default:
   ```typescript
-  if (error) {
-    const { error: fallbackError } = await supabase.from(...) // retry without problematic column
-    if (fallbackError) throw fallbackError
+  if (error || !data) {
+    if (error) console.error('[DOMAIN] functionName failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return []
   }
   ```
 - Optional coalescing: Default values for missing IRT fields:

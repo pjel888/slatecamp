@@ -37,6 +37,9 @@ export const MODULE_REGISTRY: ModuleRegistryEntry[] = [
     priority: 1,
     status: 'ready',
     description: 'Configure stair geometry and verify code compliance for rise, run, headroom, and handrails.',
+    contextScenario: "You're reviewing plans for a 4-story commercial building in Quezon City. The building inspector has flagged the fire exit stairway.",
+    aleQuestionCount: 8,
+    supportedPhases: ['guided', 'faded', 'sandbox', 'challenge'],
   },
   {
     id: 'fire-travel-distance',
@@ -47,6 +50,9 @@ export const MODULE_REGISTRY: ModuleRegistryEntry[] = [
     priority: 2,
     status: 'ready',
     description: 'Visualize maximum travel distances to exits with animated egress paths.',
+    contextScenario: 'A client has submitted building permit plans for a new mall in Makati. The fire marshal requires you to verify all travel distance calculations before approval.',
+    aleQuestionCount: 6,
+    supportedPhases: ['guided', 'faded', 'sandbox'],
   },
   {
     id: 'ramp-accessible-toilet',
@@ -57,6 +63,9 @@ export const MODULE_REGISTRY: ModuleRegistryEntry[] = [
     priority: 3,
     status: 'ready',
     description: 'Configure accessible ramp slope and toilet clearances per BP 344.',
+    contextScenario: 'You are designing a public restroom for a government office in Cebu. The building official requires BP 344 compliance for all accessibility features.',
+    aleQuestionCount: 7,
+    supportedPhases: ['guided', 'faded', 'sandbox', 'challenge'],
   },
   {
     id: 'classical-orders-comparison',

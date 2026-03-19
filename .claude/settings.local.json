@@ -87,7 +87,20 @@
       "WebFetch(domain:echarts.apache.org)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "mcp__supabase__list_migrations",
-      "Bash(npx supabase:*)"
+      "Bash(npx supabase:*)",
+      "mcp__supabase__generate_typescript_types",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 scripts/generate_taxonomy_import_sql.py)",
+      "Bash(\"D:/SlateCamp/slate-camp/scripts/taxonomy_v50_sql/_tmp_dsgn_p1.sql\")",
+      "Bash(\"D:/SlateCamp/slate-camp/scripts/taxonomy_v50_sql/_tmp_dsgn_p2.sql\")",
+      "Bash(\"D:/SlateCamp/slate-camp/scripts/taxonomy_v50_sql/_tmp_hist_p1.sql\")",
+      "Bash(\"D:/SlateCamp/slate-camp/scripts/taxonomy_v50_sql/_tmp_hist_p2.sql\")",
+      "Bash(\"D:/SlateCamp/slate-camp/scripts/taxonomy_v50_sql/_tmp_laws_p1.sql\")",
+      "Bash(python3 -c \"import sys,json; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\(d.get\\(''''message'''',{}\\).get\\(''''content'''',[{}]\\)[0].get\\(''''text'''',''''still running...''''\\)[:500]\\)\")",
+      "Bash(grep -c '\"\"type\"\":\"\"assistant\"\"' \"C:/Users/PHILIP~1/AppData/Local/Temp/claude/D--SlateCamp-slate-camp/d8c03d3d-bf4a-4cea-8a40-827663f60ed6/tasks/a9e3d79ceefbc56bf.output\")",
+      "Bash(grep -c '\"\"type\"\":\"\"assistant\"\"' \"C:/Users/PHILIP~1/AppData/Local/Temp/claude/D--SlateCamp-slate-camp/d8c03d3d-bf4a-4cea-8a40-827663f60ed6/tasks/ab6f478ae78537926.output\")",
+      "Bash(python3 -c \"import sys; data=sys.stdin.read\\(\\); print\\(''''FILTER AGENT:'''', ''''DONE'''' if ''''stop_reason:end_turn'''' in data else ''''running''''\\)\")",
+      "Bash(node:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

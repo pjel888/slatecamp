@@ -47,6 +47,21 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE() {
+  if (!isDemoMode()) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    if (!user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const admin = await isAdmin();
+    if (!admin) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+  }
+
   const cookieStore = await cookies();
   cookieStore.delete(COOKIE_NAME);
 

@@ -7,6 +7,7 @@ import { Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
 import { InstructionMesh } from '../_components/GeometryMesh'
+import { HumanSilhouette } from '../_components/HumanSilhouette'
 import type { ParametricSceneConfig } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -51,6 +52,11 @@ export function ParametricSceneRenderer({
 
   return (
     <group scale={config.scale ?? 1}>
+      {/* Human scale reference — 1.7m silhouette (research: scale calibration) */}
+      {config.showHumanScale && (
+        <HumanSilhouette position={[-1.2, 0, 0]} opacity={0.4} />
+      )}
+
       {/* Geometry meshes */}
       {geometryInstructions.map((inst) => (
         <InstructionMesh key={inst.id} inst={inst} />

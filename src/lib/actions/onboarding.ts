@@ -54,6 +54,9 @@ export async function getDiagnosticQuestions(
     .select('node_id')
     .eq('discipline_id', disciplineId)
     .eq('level', 1)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
     .limit(5);
 
   const nodeIds = (nodes ?? []).map((n: any) => n.node_id);

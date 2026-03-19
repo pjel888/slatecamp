@@ -13,9 +13,9 @@ interface ModuleViewerProps {
 
 /**
  * Full-screen 3D module viewer with a back button to the gallery.
- * No sidebar — enforces focus on one module at a time.
+ * Shows context scenario banner and ALE question count from registry metadata.
  */
-export function ModuleViewer({ modelId, basePath }: ModuleViewerProps) {
+export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const entry = getModuleById(modelId)
   const title = entry?.title ?? modelId.replace(/-/g, ' ')
 
@@ -25,14 +25,19 @@ export function ModuleViewer({ modelId, basePath }: ModuleViewerProps) {
       <div className="absolute top-4 left-4 z-20 flex items-center gap-3">
         <Link
           href={basePath}
-          className="flex items-center gap-1.5 rounded-md bg-white/90 backdrop-blur-sm border border-zinc-200 px-3 py-1.5 shadow-sm hover:bg-white transition-colors"
+          className="flex items-center gap-1.5 rounded-sm bg-white/90 backdrop-blur-sm border border-zinc-200 px-3 py-1.5 shadow-sm hover:bg-white transition-colors duration-150"
         >
           <SCIcon icon={ArrowLeft} size="xs" className="text-zinc-600" />
           <span className="text-[11px] font-medium text-zinc-600">Library</span>
         </Link>
         {entry?.codeRef && (
-          <span className="rounded-md bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 text-[11px] font-mono text-zinc-500 shadow-sm">
+          <span className="rounded-sm bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-zinc-500 shadow-sm">
             {entry.codeRef}
+          </span>
+        )}
+        {entry?.aleQuestionCount != null && (
+          <span className="rounded-sm bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-[#E8853A] shadow-sm">
+            ~{entry.aleQuestionCount} ALE questions / sitting
           </span>
         )}
       </div>

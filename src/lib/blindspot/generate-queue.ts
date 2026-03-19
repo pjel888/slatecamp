@@ -39,6 +39,9 @@ export const generateBlindspotQueue = async (
     .from('taxonomy_tree')
     .select('node_id')
     .eq('is_leaf', true)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
 
   const { data: touchedNodes } = await supabase
     .from('user_node_mastery')
@@ -76,7 +79,10 @@ export const generateBlindspotQueue = async (
     .select('queue_id')
     .single()
 
-  if (error || !queue) return null
+  if (error || !queue) {
+    if (error) console.error('[BLINDSPOT] generateBlindspotQueue insert failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return null
+  }
 
   return { queueId: queue.queue_id, nodeIds: targetNodeIds }
 }

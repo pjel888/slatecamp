@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp — Taxonomy v5.0 Product Architecture Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cobalt: #1B3FC4;
+  --cobalt-light: #EBF0FC;
+  --cobalt-dark: #1530A0;
+  --gold: #F5A623;
+  --gold-light: #FEF8ED;
+  --red: #E63329;
+  --red-light: #FDECEA;
+  --green: #1B7A3C;
+  --green-light: #E8F5EE;
+  --orange: #E8853A;
+  --orange-light: #FEF0E6;
+  --cream: #F2F0EB;
+  --warm-white: #F8F7F5;
+  --ink: #1A1A2E;
+  --ink-2: #2C2C3E;
+  --ink-60: rgba(26,26,46,0.60);
+  --ink-30: rgba(26,26,46,0.30);
+  --sep: #E2DDD8;
+  --sep-light: #EDEBE7;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.65}
+
+/* HERO */
+.hero{background:var(--ink);padding:72px 80px 64px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-200px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(27,63,196,0.2) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-150px;left:0;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.07) 0%,transparent 65%);pointer-events:none}
+.hero-eye{font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:20px}
+.hero-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(36px,5vw,58px);line-height:1.04;color:#fff;letter-spacing:-2px;max-width:760px;margin-bottom:20px}
+.hero-title em{font-style:normal;color:var(--gold)}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.45);max-width:600px;line-height:1.75;margin-bottom:48px}
+.hero-meta{display:flex;gap:40px;flex-wrap:wrap}
+.hero-meta dt{font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,0.28);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.hero-meta dd{font-size:13px;font-weight:600;color:rgba(255,255,255,0.6)}
+
+/* NAV */
+.toc{background:var(--ink-2);border-bottom:1px solid rgba(255,255,255,0.06);padding:16px 80px;display:flex;gap:32px;overflow-x:auto}
+.toc a{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,0.35);text-decoration:none;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;transition:color 100ms}
+.toc a:hover{color:var(--gold)}
+
+/* LAYOUT */
+.wrap{max-width:1080px;margin:0 auto;padding:72px 48px}
+hr.div{border:none;border-top:1px solid var(--sep);margin:64px 0}
+
+/* SECTION */
+.sec-eye{font-family:'DM Mono',monospace;font-size:10px;color:var(--cobalt);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}
+.sec-h{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.08;letter-spacing:-1px;color:var(--ink);margin-bottom:10px}
+.sec-h em{font-style:normal;color:var(--cobalt)}
+.sec-lead{font-size:15px;color:var(--ink-60);max-width:700px;line-height:1.8;margin-bottom:40px;padding-left:20px;border-left:3px solid var(--sep)}
+
+/* STAT GRID */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--sep);border:1px solid var(--sep);border-radius:14px;overflow:hidden;margin:32px 0}
+.stat-cell{background:#fff;padding:24px 20px}
+.stat-num{font-family:'Syne',sans-serif;font-weight:800;font-size:38px;letter-spacing:-2px;color:var(--cobalt);line-height:1;margin-bottom:6px}
+.stat-num.gold{color:var(--gold)}
+.stat-num.green{color:var(--green)}
+.stat-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--ink-30);text-transform:uppercase;letter-spacing:1.2px;line-height:1.6}
+
+/* CARDS */
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.card{background:#fff;border:1px solid var(--sep);border-radius:14px;padding:28px;position:relative}
+.card-tag{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;color:var(--ink-30)}
+.card-h{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.card-p{font-size:13px;color:var(--ink-60);line-height:1.7}
+.card.accent-top-cobalt{border-top:3px solid var(--cobalt)}
+.card.accent-top-gold{border-top:3px solid var(--gold)}
+.card.accent-top-green{border-top:3px solid var(--green)}
+.card.accent-top-red{border-top:3px solid var(--red)}
+.card.accent-top-orange{border-top:3px solid var(--orange)}
+.card.full{grid-column:span 2}
+.card.dark{background:var(--ink);border-color:transparent}
+.card.dark .card-h{color:#fff}
+.card.dark .card-p{color:rgba(255,255,255,0.45)}
+.card.dark .card-tag{color:rgba(255,255,255,0.25)}
+
+/* BADGE */
+.badge{display:inline-block;font-family:'DM Mono',monospace;font-size:9px;font-weight:600;padding:3px 10px;border-radius:100px;margin-bottom:10px;letter-spacing:1px;text-transform:uppercase}
+.badge-cobalt{background:var(--cobalt-light);color:var(--cobalt)}
+.badge-gold{background:var(--gold-light);color:#8A5B08}
+.badge-green{background:var(--green-light);color:var(--green)}
+.badge-red{background:var(--red-light);color:var(--red)}
+.badge-orange{background:var(--orange-light);color:#8A4F14}
+
+/* CALLOUT */
+.callout{border-radius:0 12px 12px 0;padding:20px 24px;margin:28px 0;max-width:780px}
+.callout-label{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.callout-text{font-size:14px;line-height:1.75}
+.callout.blue{background:var(--cobalt-light);border-left:3px solid var(--cobalt)}
+.callout.blue .callout-label{color:var(--cobalt)}
+.callout.blue .callout-text{color:#0C1D5A}
+.callout.gold{background:var(--gold-light);border-left:3px solid var(--gold)}
+.callout.gold .callout-label{color:#8A5B08}
+.callout.gold .callout-text{color:#5A3A05}
+.callout.green{background:var(--green-light);border-left:3px solid var(--green)}
+.callout.green .callout-label{color:var(--green)}
+.callout.green .callout-text{color:#0C3E20}
+.callout.red{background:var(--red-light);border-left:3px solid var(--red)}
+.callout.red .callout-label{color:var(--red)}
+.callout.red .callout-text{color:#5A0C08}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--sep);border-radius:14px;overflow:hidden;margin:24px 0;font-size:13px}
+.tbl th{background:var(--ink);color:rgba(255,255,255,0.5);font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:1.5px;padding:13px 18px;text-align:left}
+.tbl td{padding:13px 18px;border-bottom:1px solid var(--sep-light);vertical-align:top;line-height:1.6;color:var(--ink-60)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:nth-child(even) td{background:var(--cream)}
+.tbl td:first-child{color:var(--ink);font-weight:600}
+.tbl td.mono{font-family:'DM Mono',monospace;font-size:11px;color:var(--cobalt)}
+.tbl td.green{color:var(--green);font-weight:700}
+.tbl td.gold{color:#8A5B08;font-weight:600}
+.tbl td.red{color:var(--red);font-weight:700}
+
+/* FIELD GRID */
+.field-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.field-card{background:#fff;border:1px solid var(--sep);border-radius:10px;padding:18px}
+.field-name{font-family:'DM Mono',monospace;font-size:10px;color:var(--cobalt);margin-bottom:6px;font-weight:500}
+.field-type{font-size:11px;color:var(--ink-30);margin-bottom:6px;font-family:'DM Mono',monospace}
+.field-desc{font-size:12.5px;color:var(--ink-60);line-height:1.6}
+.field-powers{margin-top:10px;padding-top:10px;border-top:1px solid var(--sep-light)}
+.field-powers-label{font-family:'DM Mono',monospace;font-size:8.5px;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.field-powers-text{font-size:12px;color:var(--green);line-height:1.55}
+
+/* PULL QUOTE */
+.pq{border-left:4px solid var(--gold);padding:6px 0 6px 24px;margin:36px 0;max-width:680px}
+.pq-text{font-family:'Syne',sans-serif;font-weight:700;font-size:20px;color:var(--ink);line-height:1.4;letter-spacing:-0.5px}
+.pq-cite{font-family:'DM Mono',monospace;font-size:9px;color:var(--ink-30);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
+
+/* FEATURE BLOCK */
+.feature{background:#fff;border:1px solid var(--sep);border-radius:14px;padding:0;overflow:hidden;margin-bottom:16px}
+.feature-header{background:var(--ink);padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.feature-title{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:#fff}
+.feature-body{padding:22px 24px}
+.feature-why{font-size:13.5px;color:var(--ink-60);line-height:1.7;margin-bottom:14px}
+.feature-how{background:var(--cobalt-light);border-radius:8px;padding:14px 16px;font-size:13px;color:var(--cobalt);line-height:1.6}
+
+/* OPPORTUNITY LIST */
+.opp-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--sep);border-radius:14px;overflow:hidden;margin:28px 0}
+.opp-row{display:grid;grid-template-columns:44px 1fr;background:#fff;border-bottom:1px solid var(--sep-light)}
+.opp-row:last-child{border-bottom:none}
+.opp-num{background:var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--gold)}
+.opp-body{padding:18px 22px}
+.opp-h{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:5px}
+.opp-p{font-size:12.5px;color:var(--ink-60);line-height:1.65}
+.opp-tag{font-family:'DM Mono',monospace;font-size:9px;color:var(--cobalt);margin-top:6px;text-transform:uppercase;letter-spacing:1px}
+
+/* DARK SECTION */
+.sec-dark{background:var(--ink);padding:72px 80px;position:relative;overflow:hidden}
+.sec-dark .sec-eye{color:var(--gold)}
+.sec-dark .sec-h{color:#fff}
+.sec-dark .sec-h em{color:var(--gold)}
+.sec-dark .sec-lead{color:rgba(255,255,255,0.4);border-left-color:rgba(255,255,255,0.08)}
+
+/* PRIORITY MATRIX */
+.priority-matrix{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;margin:32px 0}
+.pm-cell{background:rgba(255,255,255,0.04);padding:22px}
+.pm-cell.active{background:rgba(27,63,196,0.25);border:1px solid rgba(27,63,196,0.4)}
+.pm-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.pm-h{font-family:'Syne',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:6px}
+.pm-p{font-size:12px;color:rgba(255,255,255,0.45);line-height:1.6}
+
+/* INTEGRATION MAP */
+.int-map{display:flex;flex-direction:column;gap:0;border:1px solid var(--sep);border-radius:14px;overflow:hidden;margin:28px 0}
+.int-row{display:grid;grid-template-columns:200px 1fr 1fr;border-bottom:1px solid var(--sep-light)}
+.int-row:last-child{border-bottom:none}
+.int-row.header{background:var(--ink)}
+.int-row.header span{font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1.5px;padding:12px 16px;display:block}
+.int-feature{background:#fff;padding:14px 16px;font-size:13px;font-weight:600;color:var(--ink);display:flex;align-items:flex-start}
+.int-before{background:var(--red-light);padding:14px 16px;font-size:12px;color:#5A0C08;line-height:1.55;display:flex;align-items:flex-start}
+.int-after{background:var(--green-light);padding:14px 16px;font-size:12px;color:#0C3E20;line-height:1.55;display:flex;align-items:flex-start}
+.int-feature:nth-child(3n+1){border-right:1px solid var(--sep-light)}
+.int-before{border-right:1px solid var(--sep-light)}
+
+/* SUBJECT MAP */
+.subj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.subj-card{background:#fff;border:1px solid var(--sep);border-radius:12px;padding:18px;position:relative}
+.subj-id{font-family:'DM Mono',monospace;font-size:9px;color:var(--cobalt);margin-bottom:6px}
+.subj-name{font-weight:700;font-size:13.5px;color:var(--ink);margin-bottom:6px;line-height:1.3}
+.subj-area{font-family:'DM Mono',monospace;font-size:10px;padding:2px 8px;border-radius:4px;display:inline-block;margin-bottom:8px}
+.area-a{background:var(--cobalt-light);color:var(--cobalt)}
+.area-b{background:var(--gold-light);color:#8A5B08}
+.area-c{background:var(--green-light);color:var(--green)}
+.area-x{background:var(--cream);color:var(--ink-30)}
+.subj-stats{font-size:11.5px;color:var(--ink-60);line-height:1.6}
+.subj-mastery{margin-top:10px;padding-top:10px;border-top:1px solid var(--sep-light);font-size:11px;color:var(--ink-30)}
+
+/* FOOTER */
+footer{background:var(--ink);padding:48px 80px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px}
+.footer-brand{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:#fff}
+.footer-brand span{color:var(--cobalt)}
+.footer-tagline{font-size:13px;font-style:italic;color:rgba(255,255,255,0.2);margin-top:4px}
+.footer-meta{font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,0.18);text-align:right;line-height:2}
+
+/* UTILS */
+h2{font-family:'Syne',sans-serif;font-weight:700;font-size:20px;color:var(--ink);margin:36px 0 14px;letter-spacing:-0.5px}
+h3{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;color:var(--ink);margin:24px 0 10px}
+p{color:var(--ink-60);line-height:1.78;margin-bottom:14px;max-width:720px;font-size:14.5px}
+strong{color:var(--ink)}
+
+@media(max-width:900px){
+  .hero,.toc,.sec-dark,footer{padding-left:28px;padding-right:28px}
+  .wrap{padding:48px 28px}
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .card-grid,.field-grid,.subj-grid,.priority-matrix{grid-template-columns:1fr}
+  .card.full{grid-column:span 1}
+  .int-map .int-row{grid-template-columns:1fr}
+  footer{grid-template-columns:1fr;text-align:left}
+  .footer-meta{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eye">SlateCamp · Product Architect Report · March 2026</div>
+  <h1 class="hero-title">Taxonomy v5.0 —<br>The <em>Intelligence Layer</em><br>Under Everything</h1>
+  <p class="hero-sub">A comprehensive product architecture analysis of the new taxonomy schema and implementation plan. What it means for every feature, what new opportunities it unlocks, and where the product needs to evolve to fully use what the taxonomy now knows.</p>
+  <dl class="hero-meta">
+    <div><dt>Files Analyzed</dt><dd>slatecamp_taxonomy_v5.json · taxonomy-v50-implementation-plan.md</dd></div>
+    <div><dt>Taxonomy Nodes</dt><dd>232 total (9 subjects · ~51 topics · 172 subtopics)</dd></div>
+    <div><dt>New Fields</dt><dd>8 new data fields on all 172 subtopics</dd></div>
+    <div><dt>Schema Additions</dt><dd>16 columns · 4 ENUMs · 3 new tables · 7 new indexes</dd></div>
+  </dl>
+</section>
+
+<!-- NAV -->
+<nav class="toc">
+  <a href="#verdict">01 Verdict</a>
+  <a href="#schema">02 Schema Analysis</a>
+  <a href="#subjects">03 Subject Map</a>
+  <a href="#integration">04 Feature Integration</a>
+  <a href="#unlocked">05 New Opportunities</a>
+  <a href="#gaps">06 Gaps & Recommendations</a>
+  <a href="#priority">07 Build Priority</a>
+</nav>
+
+<!-- SECTION 01 — EXECUTIVE VERDICT -->
+<section id="verdict">
+<div class="wrap">
+
+<div class="sec-eye">01 — Executive Verdict</div>
+<h2 class="sec-h">v5.0 is not a data upgrade.<br><em>It is a product upgrade.</em></h2>
+<p class="sec-lead">The taxonomy is no longer just a labeling system for quiz questions. With bloom_level, difficulty, exam_frequency, typical_question_formats, three_d_lab_linked, is_computation_heavy, prerequisite relationships, mastery_criteria, and typed wiki_items — the taxonomy has become the intelligence engine that can drive every adaptive feature SlateCamp has ever planned.</p>
+
+<div class="stat-grid">
+  <div class="stat-cell"><div class="stat-num">172</div><div class="stat-label">Subtopics with full<br>metadata coverage</div></div>
+  <div class="stat-cell"><div class="stat-num gold">100%</div><div class="stat-label">exam_frequency<br>populated (was 33%)</div></div>
+  <div class="stat-cell"><div class="stat-num green">66</div><div class="stat-label">Verified legal source<br>URLs (was 0)</div></div>
+  <div class="stat-cell"><div class="stat-num" style="color:var(--orange)">47+</div><div class="stat-label">Cross-reference pairs<br>law → content</div></div>
+</div>
+
+<div class="callout blue">
+  <div class="callout-label">The Governing Principle</div>
+  <div class="callout-text">Every architecture decision was already validated by the question: <em>"Does this make a student more likely to win their board exam?"</em> The taxonomy v5.0 answers that question with data instead of intuition — for every node, on every topic, for every student interaction. The product must now use that data.</div>
+</div>
+
+<div class="card-grid">
+  <div class="card accent-top-green">
+    <div class="card-tag">What Is Definitively Better</div>
+    <h3 class="card-h">v5.0 is categorically stronger than every previous version</h3>
+    <p class="card-p">v3.5 had exam_frequency on only 54 of 164 subtopics (33%). v5.0 has it on all 172. v3.5 had no bloom_level, no difficulty, no question formats, no prerequisites, no mastery_criteria — and untyped wiki_content strings. v5.0 has all of these, fully populated on every leaf node. No existing Philippine ALE review platform has this kind of structured, machine-readable pedagogical metadata on their content — not even close.</p>
+  </div>
+  <div class="card accent-top-red">
+    <div class="card-tag">Critical Factual Corrections</div>
+    <h3 class="card-h">Errors in previous versions that would have cost students the exam</h3>
+    <p class="card-p">The seismic zone error (Zone 4 → Zone 2 per NSCP 2015) and the CPD correction (15 → 45 units per 3-year period) are the kind of factual errors that, left uncorrected, cause students to answer ALE questions with the wrong information. These have been fixed across all affected nodes: ALE-STRC-005-03, ALE-LAWS-005-04, ALE-PRAC-001-01, ALE-PRAC-001-03, ALE-LAWS-001-03. This alone justifies the upgrade.</p>
+  </div>
+  <div class="card accent-top-cobalt">
+    <div class="card-tag">The ALE-LAWS Architecture Decision</div>
+    <h3 class="card-h">Cross-reference layer with zero exam weight — the right call</h3>
+    <p class="card-p">Designating ALE-LAWS as a cross-reference-only subject (is_cross_ref_only = true, exam weight = 0%) is architecturally correct. Law questions are distributed across Areas A, B, and C — ALE-LAWS is a navigation layer, not a testable subject. The trigger that prevents questions from tagging to ALE-LAWS nodes enforces this at the database level, permanently. Wiki articles can still be created for ALE-LAWS nodes. This is exactly right.</p>
+  </div>
+  <div class="card accent-top-gold">
+    <div class="card-tag">New Content — ALE-LAWS-006</div>
+    <h3 class="card-h">Allied Professions & Emerging Practice Laws — long overdue</h3>
+    <p class="card-p">The addition of RA 8534 (Interior Design), RA 8549 (Landscape Architecture), RA 10587 (Environmental Planning), RA 11032 (Ease of Doing Business), and RA 11313 (Safe Spaces Act) as a new topic fills a gap that many ALE candidates miss. These laws define the boundary of architectural scope and the practice context that increasingly appears in professional practice questions.</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+<hr class="div" style="margin:0">
+
+<!-- SECTION 02 — SCHEMA ANALYSIS -->
+<section id="schema" style="background:var(--warm-white)">
+<div class="wrap">
+
+<div class="sec-eye">02 — Schema Analysis</div>
+<h2 class="sec-h">Every new field analyzed:<br><em>what it stores, what it drives.</em></h2>
+<p class="sec-lead">The 8 new data fields in v5.0 are not supplementary — they are the data contracts that the product architecture's planned features depend on. Each field examined below in terms of what it stores, which feature it was designed for, and what additional opportunities it creates.</p>
+
+<div class="field-grid">
+
+  <div class="field-card">
+    <div class="field-name">bloom_level</div>
+    <div class="field-type">ENUM: remember | understand | apply | analyze</div>
+    <div class="field-desc">Bloom's cognitive taxonomy level. Populated on all 172 subtopics. Determines the cognitive demand of a question, not just its topic tag.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Camp Trail progression sequencing (novice → expert). Adaptive difficulty calibration. Cognitive development tracking beyond raw accuracy. Camp Mode vs Storm Mode question selection stratification. Feynman Teach-Back depth evaluation.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">difficulty</div>
+    <div class="field-type">SMALLINT: 1 (Foundational) → 4 (Expert)</div>
+    <div class="field-desc">SME-calibrated difficulty. 1=First-takers should get this right. 4=Multi-step reasoning, high discriminating power. All 172 subtopics populated.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">IRT weighting calibration. Endurance Cycle difficulty ramping. Camp Trail progression within a subject. Topnotcher identification (difficulty 3–4 accuracy distinguishes them). Quiz engine adaptive session generation.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">exam_frequency</div>
+    <div class="field-type">ENUM: low | medium | high</div>
+    <div class="field-desc">SME-assessed ALE exam frequency. Was 54/164 in v3.5 (33%). Now 172/172 (100%). Every subtopic now has a frequency signal.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Blindspot Protocol priority targeting — Red nodes that are high-frequency get targeted first. Camp Trail content ordering — high-frequency topics front-loaded. Free tier content cap — surface high-frequency nodes first. Readiness Score weighting — high-frequency subtopic mastery contributes more.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">typical_question_formats</div>
+    <div class="field-type">TEXT[]: mcq_recall | mcq_application | mcq_calculation | design_application</div>
+    <div class="field-desc">Array of question formats the ALE typically uses for this subtopic. Fully populated across all 172 subtopics.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Question bank coverage auditing — ensures question bank matches format distribution per subtopic. Camp Trail step design — calculation subtopics prescribe longer sessions. Quiz engine contextual variation — confirms which contexts are valid for a node. Assessment quiz balancing — ensures format diversity per subject.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">is_computation_heavy</div>
+    <div class="field-type">BOOLEAN DEFAULT false</div>
+    <div class="field-desc">TRUE for subtopics where ALE items require multi-step calculation. Primarily ALE-STRC (structural) and ALE-UTIL (utilities) subtopics. SPP fee calculations in ALE-PRAC also qualify.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Camp Trail session time budget — computation sessions get more time allocation. Quiz engine time-per-question budget — allows longer avg_time_ms for calculation items without triggering Endurance warnings. 3D Lab routing — computation-heavy nodes benefit from parametric visualization. Pacing Gauge calibration per subject.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">three_d_lab_linked</div>
+    <div class="field-type">BOOLEAN DEFAULT false</div>
+    <div class="field-desc">TRUE if a 3D Lab interactive module exists or is planned. Primarily across ALE-STRC, ALE-MATL, ALE-UTIL, ALE-DSGN spatial subtopics.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Wiki article sidebar — shows "Open in 3D Lab" CTA when true. Camp Trail step builder — suggests lab step alongside quiz step for linked nodes. Blindspot Protocol routing — spatially complex Red nodes route to 3D Lab before quiz. 3D Lab priority build queue — all true nodes are candidates for the top-10 module list.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">wiki_items</div>
+    <div class="field-type">JSONB: typed objects (heading | fact | definition | formula | code_provision | detail | exam_tip | cross_ref | warning)</div>
+    <div class="field-desc">Replaces untyped wiki_content strings. Each item has a type that controls rendering. All 172 subtopics populated. This is the structured authoring brief for SMEs.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Wiki article renderer — renders headings, tips, warnings, formulas distinctively rather than as flat text. Elaborative Interrogation — exam_tip items become EI_PROMPT candidates. SME workflow — structured brief dramatically accelerates article authoring. AI Reference Assistant RAG — typed items allow targeted retrieval by type. Warning-type items surface as flagged corrections automatically.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">mastery_criteria</div>
+    <div class="field-type">JSONB {threshold_pct, critical_topics, note} — subject level (level=1) only</div>
+    <div class="field-desc">Subject-level mastery specification with threshold accuracy, critical topics for passing, and SME study guidance. All 9 subjects populated.</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Readiness Score per-subject pass/fail prediction — does this student meet the subject threshold? Camp Trail completion gate — a trail is not "done" until mastery_threshold_accuracy_pct is reached. Score Reveal screen — sub-score coloring based on threshold proximity. Trail Recommendation Engine — critical_topics drive the "Week 1 focuses on X" recommendation reasoning. SME study notes feed into Dashboard guidance copy.</div>
+    </div>
+  </div>
+
+  <div class="field-card">
+    <div class="field-name">taxonomy_prerequisites</div>
+    <div class="field-type">Junction table: subtopic_id → prerequisite_id (bidirectional)</div>
+    <div class="field-desc">Junction table (not a TEXT array) so both forward and reverse queries work. Forward: "what must be mastered before X?" Reverse: "if X regresses, what other subtopics are at risk?"</div>
+    <div class="field-powers">
+      <div class="field-powers-label">Powers</div>
+      <div class="field-powers-text">Camp Trail sequencing — enforce learning order at the subtopic level. Blindspot Protocol cascade — if ALE-UTIL-001-02 goes Red, flag ALE-UTIL-001-04 (DFU table). Progressive unlocking — gate harder subtopics behind prerequisite mastery thresholds. Curriculum design tool — SMEs can map prerequisite graph visually. Retaker trail design — start with prerequisite gaps, not arbitrary order.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="callout gold">
+  <div class="callout-label">The ALE-LAWS Cross-Reference Architecture</div>
+  <div class="callout-text"><strong>taxonomy_cross_references is the bidirectional law-to-content graph.</strong> 47+ pairs from ALE-LAWS subtopics to substantive subject subtopics. This is what enables bidirectional wiki linking: when reading an ALE-DSGN article on accessible design, "Governing law: BP 344" appears automatically. When reading ALE-LAWS-002-03 (BP 344), "Applied in: Accessible Design (ALE-DSGN-002-01)" appears automatically. No other Philippine ALE platform has this — it turns the laws subject from an orphaned cross-reference into a fully navigable knowledge graph.</div>
+</div>
+
+</div>
+</section>
+
+<hr class="div" style="margin:0">
+
+<!-- SECTION 03 — SUBJECT MAP -->
+<section id="subjects">
+<div class="wrap">
+
+<div class="sec-eye">03 — Subject Map</div>
+<h2 class="sec-h">All 9 subjects analyzed:<br><em>weight, mastery criteria, and implications.</em></h2>
+<p class="sec-lead">The taxonomy defines 9 subjects with explicit PRC exam area weights, mastery threshold criteria, and critical topic lists per subject. This is the structural foundation of the Readiness Score and every adaptive feature built on it.</p>
+
+<div class="subj-grid">
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-HIST</div>
+    <div class="subj-name">History of Architecture</div>
+    <span class="subj-area area-a">Area A · ~10.5%</span>
+    <div class="subj-stats">~35% within Area A · Mastery threshold: 75%</div>
+    <div class="subj-mastery"><strong>Critical:</strong> Pre-Colonial PH (HIST-003), Contemporary PH (HIST-005–006). Pritzker Laureates (HIST-005-04) high-frequency. Philippine architecture most under-studied.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-THEO</div>
+    <div class="subj-name">Theory of Architecture</div>
+    <span class="subj-area area-a">Area A · ~7.5%</span>
+    <div class="subj-stats">~25% within Area A · Mastery threshold: 70%</div>
+    <div class="subj-mastery"><strong>Critical:</strong> Organizing principles (THEO-001), Tropical design (THEO-004). BIM correctly moved here from Practice in v5.0 restructuring.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-PLAN</div>
+    <div class="subj-name">Theory & Principles of Planning</div>
+    <span class="subj-area area-a">Area A · ~6%</span>
+    <div class="subj-stats">~20% within Area A · Mastery threshold: 70%</div>
+    <div class="subj-mastery"><strong>Critical:</strong> Planning process (PLAN-001), Housing (PLAN-003), Site planning per PRC 5-factor framework (PLAN-004). Housing finance added in v5.0.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-PRAC</div>
+    <div class="subj-name">Architectural Practice & Jurisprudence</div>
+    <span class="subj-area area-a">Area A · ~6%</span>
+    <div class="subj-stats">~20% within Area A · Mastery threshold: 80%</div>
+    <div class="subj-mastery"><strong>Highest threshold (80%).</strong> RA 9266 and SPP fee structures high-frequency. CPD = 45 units/3 years (not 15 — legacy error corrected in v5.0). Quantity Surveying added in v5.0.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-STRC</div>
+    <div class="subj-name">Structural Design</div>
+    <span class="subj-area area-b">Area B · ~10.5%</span>
+    <div class="subj-stats">~35% within Area B · Mastery threshold: 70%</div>
+    <div class="subj-mastery"><strong>Conceptual literacy, not calculation.</strong> Seismic Zone 2 (not 4) per NSCP 2015 — critical correction. Many is_computation_heavy flags here. Major 3D Lab opportunity for structural bay visualization.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-MATL</div>
+    <div class="subj-name">Building Materials & Construction</div>
+    <span class="subj-area area-b">Area B · ~9%</span>
+    <div class="subj-stats">~30% within Area B · Mastery threshold: 75%</div>
+    <div class="subj-mastery"><strong>Critical:</strong> CHB dimensions, cement types, glass types, truss names. Philippine Bamboo Standards added. Use DAE visual memory — most architects have seen these materials in the field.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-UTIL</div>
+    <div class="subj-name">Building Utilities (MEPF)</div>
+    <span class="subj-area area-b">Area B · ~10.5%</span>
+    <div class="subj-stats">~35% within Area B · Mastery threshold: 75%</div>
+    <div class="subj-mastery"><strong>Critical:</strong> Fire code travel distances (UTIL-001), plumbing fixture counts (UTIL-003). New DFU Reference Table subtopic (UTIL-001-04). High computation and 3D Lab flags. Communication & BAS systems expanded.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-DSGN</div>
+    <div class="subj-name">Architectural Design & Site Planning</div>
+    <span class="subj-area area-c">Area C · 40%</span>
+    <div class="subj-stats">100% of Area C · Mastery threshold: 75%</div>
+    <div class="subj-mastery"><strong>Largest weight (40%) — single most important subject.</strong> Building code dimensional standards most tested. Expanded from 5 to 7 topics covering all 6 PRC building type categories. Strong 3D Lab alignment.</div>
+  </div>
+
+  <div class="subj-card">
+    <div class="subj-id">ALE-LAWS</div>
+    <div class="subj-name">Philippine Laws & Codes</div>
+    <span class="subj-area area-x">Cross-Reference · 0%</span>
+    <div class="subj-stats">Zero exam weight · Study subject only</div>
+    <div class="subj-mastery">Law questions distributed across Areas A, B, C. ALE-LAWS is the navigation layer. 66 verified legal URLs in v5.0. New ALE-LAWS-006 adds allied profession laws. is_cross_ref_only enforced by DB trigger.</div>
+  </div>
+
+</div>
+
+<div class="callout blue">
+  <div class="callout-label">PRC Area Weighting — Product Implication</div>
+  <div class="callout-text">Area C (ALE-DSGN) is 40% of the exam — a single subject. Area A and B are each 30%, split across 4 and 3 subjects respectively. The Readiness Score must use <strong>prc_area + area_weight_pct + subject_weight_within_area_pct</strong> to calculate weighted pass probability. A student at 70% accuracy on ALE-DSGN is far better positioned than a student at 80% on ALE-HIST. The current Readiness Score calculation must be updated after the import pipeline completes to use PRC area weights.</div>
+</div>
+
+</div>
+</section>
+
+<hr class="div" style="margin:0">
+
+<!-- SECTION 04 — FEATURE INTEGRATION -->
+<section id="integration" style="background:var(--warm-white)">
+<div class="wrap">
+
+<div class="sec-eye">04 — Feature Integration</div>
+<h2 class="sec-h">Before vs. after: how taxonomy v5.0<br><em>changes every feature.</em></h2>
+<p class="sec-lead">Every feature in the product architecture is affected by the new taxonomy. Some features were approximate before and can now be precise. Some planned features can now be built for the first time. Some features were impossible without the taxonomy data and are now fully enabled.</p>
+
+<div class="int-map">
+  <div class="int-row header">
+    <span>Feature</span>
+    <span>Before v5.0</span>
+    <span>After v5.0</span>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Readiness Score</div>
+    <div class="int-before">Flat EMA across all subtopics. No PRC area weighting. Treats a History node the same as a Design node despite 10% vs 40% exam weight difference.</div>
+    <div class="int-after">PRC area-weighted EMA using prc_area + area_weight_pct + subject_weight_within_area_pct. mastery_criteria.threshold_pct drives per-subject pass/fail prediction. Genuinely accurate pass probability.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Taxonomy Heatmap</div>
+    <div class="int-before">Grey/Red/Amber/Green based only on mastery_weight. No frequency weighting. ALE-LAWS nodes appear in student heatmap (wrong). All nodes treated equally in visual priority.</div>
+    <div class="int-after">exam_frequency modulates visual urgency — high-frequency Red nodes pulsate more prominently. WHERE is_cross_ref_only = false AND deprecated_at IS NULL excludes ALE-LAWS. Heatmap is now exam-calibrated, not just accuracy-based.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Blindspot Protocol</div>
+    <div class="int-before">Targets weakest 3 nodes by mastery_weight. No prioritization by frequency or node type. Equal weight given to a low-frequency concept and a high-frequency code provision.</div>
+    <div class="int-after">Prioritizes Red nodes that are high-frequency code_provisions first — the idx_taxonomy_type_frequency index was built specifically for this query. three_d_lab_linked nodes route to 3D Lab before quiz. taxonomy_prerequisites cascade flags dependent subtopics automatically.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Camp Trail Sequencing</div>
+    <div class="int-before">Sequenced by subject order only. No cognitive progression within a subject. Trail steps don't know if a topic requires computation or spatial understanding.</div>
+    <div class="int-after">bloom_level drives sequencing: remember → understand → apply → analyze within each subject. difficulty ramps within the trail. is_computation_heavy flags longer time budgets. three_d_lab_linked prescribes 3D Lab steps for spatial topics. taxonomy_prerequisites enforces learning order.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Quiz Engine (Camp Mode)</div>
+    <div class="int-before">Selects questions by topic_id and difficulty scalar only. No format matching. Cannot distinguish between a topic that needs recall questions vs one that needs calculation questions.</div>
+    <div class="int-after">typical_question_formats drives question pool filtering — calculation topics get mcq_calculation items, concept topics get mcq_recall. bloom_level aligns with IRT discrimination_rating. difficulty 1–4 precisely calibrates adaptive session generation.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Wiki Articles</div>
+    <div class="int-before">SME writes to an empty blank document. No structured brief. wiki_content was an untyped string array — every bullet rendered identically as flat text regardless of whether it was a warning, formula, or exam tip.</div>
+    <div class="int-after">wiki_items typed JSONB provides the SME authoring brief. Heading, fact, definition, formula, code_provision, detail, exam_tip, cross_ref, warning render distinctively. Warning-type items surface as highlighted callouts. Exam_tip items become EI_PROMPT candidates. Article authoring time drops dramatically.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">3D Lab</div>
+    <div class="int-before">Module list was manually curated. No database signal indicating which subtopics require 3D visualization. 3D Lab sessions do not write to mastery engine in current design.</div>
+    <div class="int-after">three_d_lab_linked = true is the authoritative signal for which subtopics need a 3D module. idx_taxonomy_3d_linked index enables instant query of all linked nodes. 3D Lab CTA in wiki sidebar only appears when this flag is true — reduces clutter on non-spatial content.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Trail Recommendation Engine</div>
+    <div class="int-before">Recommends trail type based only on assessment_score + days_to_exam. Trail content is generic per subject, not calibrated to the student's specific node-level gaps.</div>
+    <div class="int-after">mastery_criteria.critical_topics_for_pass drives the recommendation reasoning: "Week 1 focuses on ALE-HIST-006 — your biggest gap in your most under-studied topic." Subject-specific threshold proximity drives urgency framing. Assessment identifies Red nodes → trail front-loads those subtopics specifically.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">AI Reference Assistant</div>
+    <div class="int-before">RAG retrieves wiki article text for a given topic. Returns flat text without knowing whether the student needs a code provision explained, a formula clarified, or a warning about a common error.</div>
+    <div class="int-after">wiki_items typed objects enable targeted RAG retrieval by type. "Explain the warning on this node" → retrieves only warning-type items. "What are the formulas?" → filters for formula-type. taxonomy_sources provides verified legal URLs for mandatory citations. Cross-reference graph enables navigating from a topic to its governing laws automatically.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Metacognitive Calibration</div>
+    <div class="int-before">Pre-session confidence rated per ALE subject (7 subjects). Calibration chart shows predicted vs actual per subject. No within-subject precision.</div>
+    <div class="int-after">With node-level mastery and bloom_level, calibration can be tracked per cognitive type — "you're well-calibrated on recall but overconfident on application." exam_frequency allows weighting: miscalibration on a high-frequency node is more important than on a low-frequency one.</div>
+  </div>
+  <div class="int-row">
+    <div class="int-feature">Feynman Teach-Back</div>
+    <div class="int-before">Post-study explain in plain language. AI evaluates against SME-authored criteria. No connection between the Teach-Back topic and the bloom_level of the underlying subtopic.</div>
+    <div class="int-after">bloom_level determines Teach-Back depth requirement: analyze-level subtopics require causal reasoning and consequence explanation. understand-level requires conceptual explanation only. wiki_items exam_tip and warning types seed the evaluation checklist SMEs author in topic_teach_back_criteria.</div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<hr class="div" style="margin:0">
+
+<!-- SECTION 05 — NEW OPPORTUNITIES -->
+<section id="unlocked">
+<div class="wrap">
+
+<div class="sec-eye">05 — New Opportunities</div>
+<h2 class="sec-h">What the taxonomy <em>unlocks</em><br>that wasn't possible before.</h2>
+<p class="sec-lead">Beyond improving existing features, the new taxonomy fields enable entirely new product capabilities that were architecturally impossible without this data. These are not speculative — they have direct schema support and clear implementation paths.</p>
+
+<div class="opp-list">
+
+  <div class="opp-row">
+    <div class="opp-num">1</div>
+    <div class="opp-body">
+      <div class="opp-h">PRC-Weighted Readiness Score — True Pass Probability</div>
+      <p class="opp-p">The current Readiness Score is a flat accuracy aggregate. With prc_area (A=30%, B=30%, C=40%) and subject_weight_within_area_pct, the score can now represent true ALE pass probability — weighting ALE-DSGN mastery 4× more heavily than ALE-HIST in the overall score calculation, which reflects the actual exam. No Philippine board exam prep platform has a pass-probability score calibrated to PRC's actual area weights.</p>
+      <div class="opp-tag">Schema: prc_area + area_weight_pct + subject_weight_within_area_pct + mastery_criteria.threshold_pct → Readiness Score recalibration</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">2</div>
+    <div class="opp-body">
+      <div class="opp-h">Subject Floor Alert System — "You will fail even with high overall score"</div>
+      <p class="opp-p">The ALE requires a minimum 50% per subject (disciplines.subject_floor_pct = 50). A student at 75% overall can still fail the ALE if any single subject is below 50%. The Readiness Score currently has no sub-score floor alert. With mastery_criteria.threshold_pct per subject, the Analytics Dashboard can now show: "Warning: Your Structural Design score is 48%. You need at least 50% per subject to pass, regardless of your overall score." This is a genuinely life-changing alert — it prevents the most common surprise failure pattern.</p>
+      <div class="opp-tag">Schema: disciplines.subject_floor_pct + mastery_criteria.mastery_threshold_accuracy_pct → sub-score alert system</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">3</div>
+    <div class="opp-body">
+      <div class="opp-h">Cognitive Progression Tracker — Bloom Level Advancement</div>
+      <p class="opp-p">Raw accuracy tells you how often a student gets questions right. bloom_level tells you what type of thinking they're demonstrating. A student at 90% accuracy on remember-level questions but 40% on apply-level questions understands the material but cannot use it — exactly the gap the ALE's hardest questions expose. The Analytics Dashboard can now show a Bloom progression bar per subject: "You've mastered recall and understanding. Your gap is application — you know what the code says but can't evaluate a scenario against it." This is a diagnostic layer no competitor can replicate without this taxonomy.</p>
+      <div class="opp-tag">Schema: bloom_level + user_interactions.is_correct → per-level accuracy per subject</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">4</div>
+    <div class="opp-body">
+      <div class="opp-h">Prerequisite-Cascaded Remediation — "You failed this because you skipped that"</div>
+      <p class="opp-p">When taxonomy_prerequisites shows that ALE-UTIL-001-04 (DFU Reference Table) requires ALE-UTIL-001-02 (Fixture Units), and a student's heatmap shows UTIL-001-04 is Red, the system can now diagnose: "Your DFU calculation gap is rooted in your fixture unit fundamentals. Fix UTIL-001-02 first — it's the prerequisite." This is prerequisite-cascaded remediation, not just "study this weak node." The reverse lookup ("if UTIL-001-02 regresses, what else is at risk?") enables proactive cascade alerts. Most students who fail the ALE fail because they studied topics in isolation — prerequisite sequencing is the solution.</p>
+      <div class="opp-tag">Schema: taxonomy_prerequisites (forward + reverse index) + user_node_mastery → cascade remediation queue</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">5</div>
+    <div class="opp-body">
+      <div class="opp-h">Computation Time Budget — Pacing Calibration per Node Type</div>
+      <p class="opp-p">Students failing the ALE due to time pressure often run out of time on computation sections. is_computation_heavy enables the Pacing Gauge to report per-category pacing: "You're spending 95 seconds per structural calculation question. At exam pace you need 72 seconds." The Endurance Cycle can prescribe computation-specific endurance sessions for students flagged as computation-slow. Camp Trail session time estimates use this flag to allocate more time for computation-heavy trail days. The existing avg_time_ms in user_interactions already captures this data — the flag makes it actionable.</p>
+      <div class="opp-tag">Schema: is_computation_heavy + user_interactions.time_spent_ms → per-category pacing alerts</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">6</div>
+    <div class="opp-body">
+      <div class="opp-h">Legal Citation Widget — Live Law References in Wiki</div>
+      <p class="opp-p">taxonomy_sources is now populated with 66 verified URLs (all lawphil.net, officialgazette.gov.ph, and regulatory body sites). Every ALE-LAWS subtopic and code_provision node can now display a "Primary Laws" sidebar in wiki articles, showing clickable links to the actual legislation. This transforms wiki articles from self-contained summaries into connected legal references. When a student reads about BP 344's ramp specifications, they can click through to the actual 2024 Revised IRR on the NCDA website. This is a trust signal ("we cite the actual law") and a learning reinforcement ("the code says this, here's where").</p>
+      <div class="opp-tag">Schema: taxonomy_sources.url + is_verified + source_type → wiki article legal citation sidebar</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">7</div>
+    <div class="opp-body">
+      <div class="opp-h">Question Bank Coverage Auditing — Automated Gap Detection</div>
+      <p class="opp-p">typical_question_formats defines what question types the ALE uses for each subtopic. The quiz engine can now automatically audit: "ALE-STRC-003-02 (Roof Truss Types) has typical_question_formats = ['mcq_recall', 'mcq_application'] but the question bank has only mcq_recall items — no mcq_application items exist for this subtopic." This automated audit runs on every question bank update, ensuring format coverage matches exam format reality. Without this flag, the question bank is assembled without knowing what the exam actually asks. With it, gap detection is automated and precise.</p>
+      <div class="opp-tag">Schema: typical_question_formats + questions.application_context → automated coverage audit query</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">8</div>
+    <div class="opp-body">
+      <div class="opp-h">SME Authoring Speed — Structured Brief to Draft Article</div>
+      <p class="opp-p">The import pipeline Step 10 already implements auto-generation of wiki article stubs from wiki_items JSONB — converting heading/fact/definition/formula/code_provision/detail/exam_tip/cross_ref/warning items into structured Markdown. This means the 9 new v5.0 nodes (9 new subtopics across ALE-UTIL, ALE-LAWS) get draft articles automatically. For all 172 subtopics, SMEs inherit a structured brief instead of a blank page. Article authoring time drops significantly because the content structure is already determined by the taxonomy — SMEs expand, they don't invent from scratch. This is not a minor workflow improvement; it is the difference between sustainable content production and unsustainable ad-hoc authoring.</p>
+      <div class="opp-tag">Schema: wiki_items typed JSONB → auto-scaffold Markdown on import pipeline Step 10</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">9</div>
+    <div class="opp-body">
+      <div class="opp-h">Exam Day Scheduling Intelligence — Day 1 vs Day 2 Preparation</div>
+      <p class="opp-p">disciplines.exam_day_1_subjects and exam_day_2_subjects are now stored in the database. The ALE splits across two days: Day 1 (History, Theory, Planning, Practice) and Day 2 (Utilities, Structural, Materials, Design). Students frequently over-prepare for Day 1 subjects and under-prepare for Day 2's highest-weight subject (ALE-DSGN at 40%). The system can now surface exam-date-aware pacing: "Your exam is in 14 days. Today is Day 1 preparation. You have 8 days before switching to Day 2 focus — your Day 2 Readiness Score is 52% vs Day 1 at 71%." Camp Trail exam simulation trail can now be split into Day 1 and Day 2 simulations.</p>
+      <div class="opp-tag">Schema: disciplines.exam_day_1_subjects + exam_day_2_subjects → Day 1/Day 2 readiness split display</div>
+    </div>
+  </div>
+
+  <div class="opp-row">
+    <div class="opp-num">10</div>
+    <div class="opp-body">
+      <div class="opp-h">Allied Professions Awareness Module — Practice Boundary Navigation</div>
+      <p class="opp-p">ALE-LAWS-006 (Allied Professions & Emerging Practice Laws) is entirely new in v5.0. It covers interior design, landscape architecture, environmental planning, ease of doing business (building permit timelines), and safe spaces design implications — all of which define the scope boundaries of architectural practice in increasingly complex legal and professional contexts. A dedicated wiki section and quiz stream on "Scope of Practice & Professional Boundaries" becomes possible with this data. The ALE increasingly tests whether architects understand what they can and cannot do in relation to allied professions — and this is now mapped.</p>
+      <div class="opp-tag">Schema: ALE-LAWS-006 (new topic) + 5 new subtopics + cross-refs to ALE-PRAC and ALE-PLAN → new content stream</div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</section>
+
+<!-- SECTION 06 — GAPS AND RECOMMENDATIONS -->
+<section id="gaps" class="sec-dark">
+<div class="wrap">
+
+<div class="sec-eye">06 — Gaps & Recommendations</div>
+<h2 class="sec-h">What the taxonomy v5.0<br><em>still needs.</em></h2>
+<p class="sec-lead">v5.0 is excellent but not complete in every dimension. Five gaps require attention before the new taxonomy data can be fully utilized across the product.</p>
+
+<div class="priority-matrix">
+
+  <div class="pm-cell active">
+    <div class="pm-label">Gap 1 — Critical</div>
+    <div class="pm-h">Readiness Score Not PRC-Weighted Yet</div>
+    <div class="pm-p">The score recalibration using prc_area + area_weight_pct + subject_weight_within_area_pct is listed as a post-import application code update (Part 6 of the plan). This must be treated as a blocking requirement, not a nice-to-have. A Readiness Score that doesn't weight ALE-DSGN at 40% is systemically wrong — it underestimates the importance of the largest exam area. This update must ship with or immediately after the import pipeline completes.</div>
+  </div>
+
+  <div class="pm-cell active">
+    <div class="pm-label">Gap 2 — Critical</div>
+    <div class="pm-h">Prerequisite Graph Is Mostly Empty Placeholders</div>
+    <div class="pm-p">The v5.0 JSON acknowledges: "prerequisite_subtopic_ids arrays are empty [] in most subtopics — placeholders, populate via curriculum designer." Only 5 non-empty pairs exist in v5.0. The prerequisite cascade remediation (Opportunity #4 above) cannot be realized until this graph is populated. A structured prerequisite mapping sprint with the curriculum designer should be scheduled as a high-priority content task after migration 027 ships. The junction table infrastructure is ready — the SME work is not.</div>
+  </div>
+
+  <div class="pm-cell">
+    <div class="pm-label">Gap 3 — High</div>
+    <div class="pm-h">Heatmap Query Must Exclude ALE-LAWS Before Import</div>
+    <div class="pm-p">The plan (Part 6) explicitly flags: "Heatmap query: add WHERE is_cross_ref_only = false AND deprecated_at IS NULL — before ALE-LAWS nodes are seeded (Step 2)." This application code update must be deployed before Step 2 of the import pipeline. If ALE-LAWS nodes are seeded before the heatmap query is updated, students will see law nodes in their mastery heatmap — which is wrong. This is a sequence-dependent requirement.</div>
+  </div>
+
+  <div class="pm-cell">
+    <div class="pm-label">Gap 4 — High</div>
+    <div class="pm-h">Migration 028 Blocks Question Bank Scale</div>
+    <div class="pm-p">Migration 028 (session_questions junction table, replacing quiz_sessions.question_ids[]) is listed as priority "Before ~500 questions." The current question bank has 34 questions. This migration is needed before the question bank scales significantly. The session_questions junction table removes the array-based question storage limitation and enables proper question-session relationships at scale. Building the question bank aggressively while this migration is pending creates technical debt.</div>
+  </div>
+
+  <div class="pm-cell">
+    <div class="pm-label">Gap 5 — Medium</div>
+    <div class="pm-h">wiki_items Types Need Wiki Renderer Support</div>
+    <div class="pm-p">The wiki_items typed objects (heading, fact, definition, formula, code_provision, detail, exam_tip, cross_ref, warning) are in the taxonomy and will be imported as structured JSONB. But the wiki article renderer must be updated to actually render them distinctively — warning types as highlighted callouts, exam_tips as pull quotes, formulas in monospace with visual treatment. Until the renderer supports the type system, all wiki_items render identically as flat text, losing the structural benefit entirely.</div>
+  </div>
+
+  <div class="pm-cell">
+    <div class="pm-label">Gap 6 — Medium</div>
+    <div class="pm-h">three_d_lab_linked Flag Needs Systematic Audit</div>
+    <div class="pm-p">The three_d_lab_linked flag is set on "relevant subtopics across ALE-STRC, ALE-MATL, ALE-UTIL, ALE-DSGN" — but the v5.0 JSON shows many explicitly set to false for subtopics that arguably benefit from 3D visualization (e.g., Earthwork & Equipment, Specialized Works). A systematic review pass with the 3D Lab team should audit every false value against the question "Can a student understand this without seeing it?" — the research-validated filter for 3D Lab module need.</div>
+  </div>
+
+</div>
+
+<div class="callout gold" style="margin-top:32px">
+  <div class="callout-label">The Subject Floor Gap — Most Dangerous Product Omission</div>
+  <div class="callout-text">The ALE's 50% per-subject floor (disciplines.subject_floor_pct = 50) is now in the database. <strong>But there is no product feature that alerts a student when any individual subject score is approaching or below this threshold.</strong> A student with 78% overall but 47% in Structural Design will fail the ALE — and they might not know until results day. A sub-score alert system is not a nice-to-have. It prevents the most common surprise failure outcome. Build it as part of the Analytics Dashboard update after the import pipeline completes.</div>
+</div>
+
+</div>
+</section>
+
+<hr class="div" style="margin:0">
+
+<!-- SECTION 07 — BUILD PRIORITY -->
+<section id="priority">
+<div class="wrap">
+
+<div class="sec-eye">07 — Build Priority</div>
+<h2 class="sec-h">The sequence that gets<br><em>maximum value fastest.</em></h2>
+<p class="sec-lead">This is the product architect's recommended build sequence after Migration 027 and the import pipeline complete. Ordered by impact on student pass probability and by dependency chain.</p>
+
+<table class="tbl">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Build Item</th>
+      <th>Taxonomy Fields Used</th>
+      <th>Blocks</th>
+      <th>Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Heatmap query update (exclude ALE-LAWS + deprecated)</td>
+      <td class="mono">is_cross_ref_only, deprecated_at</td>
+      <td>Must deploy before import Step 2</td>
+      <td class="red">BLOCKING</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Readiness Score PRC area weighting</td>
+      <td class="mono">prc_area, area_weight_pct, subject_weight_within_area_pct</td>
+      <td>Score accuracy after import</td>
+      <td class="red">Critical</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Subject floor alert system (≥ 50% per subject required)</td>
+      <td class="mono">disciplines.subject_floor_pct, mastery_criteria.threshold_pct</td>
+      <td>Student failure prevention</td>
+      <td class="red">Critical</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Wiki renderer — typed wiki_items rendering</td>
+      <td class="mono">wiki_items (all types: heading, exam_tip, warning, formula, etc.)</td>
+      <td>All 172 articles quality</td>
+      <td class="gold">High</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Blindspot Protocol — frequency + type weighting</td>
+      <td class="mono">exam_frequency, node_type, is_cross_ref_only</td>
+      <td>Protocol accuracy</td>
+      <td class="gold">High</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Camp Trail bloom_level sequencing</td>
+      <td class="mono">bloom_level, difficulty, is_computation_heavy</td>
+      <td>Trail pedagogy</td>
+      <td class="gold">High</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3D Lab CTA in wiki sidebar (when three_d_lab_linked = true)</td>
+      <td class="mono">three_d_lab_linked</td>
+      <td>3D Lab traffic</td>
+      <td class="gold">High</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Bloom cognitive level tracking in Analytics Dashboard</td>
+      <td class="mono">bloom_level + user_interactions.is_correct</td>
+      <td>Diagnostic depth</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Prerequisite mapping sprint (curriculum designer)</td>
+      <td class="mono">taxonomy_prerequisites (populate empty pairs)</td>
+      <td>Cascade remediation</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Legal citation widget in wiki (taxonomy_sources URLs)</td>
+      <td class="mono">taxonomy_sources.url, is_verified, source_type</td>
+      <td>Trust and accuracy</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Computation pacing alerts (is_computation_heavy nodes)</td>
+      <td class="mono">is_computation_heavy + avg_time_ms</td>
+      <td>Time pressure prevention</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Question bank format coverage audit</td>
+      <td class="mono">typical_question_formats + questions.application_context</td>
+      <td>Question bank quality</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Day 1 / Day 2 readiness split in Dashboard</td>
+      <td class="mono">disciplines.exam_day_1_subjects, exam_day_2_subjects</td>
+      <td>Exam scheduling</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Prerequisite cascade remediation (after Step 9)</td>
+      <td class="mono">taxonomy_prerequisites reverse lookup</td>
+      <td>Cascade alerts</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Migration 028 — session_questions junction table</td>
+      <td>question_ids[] → junction table</td>
+      <td>Question bank scale</td>
+      <td>Low (before 500 questions)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pq">
+  <div class="pq-text">"The taxonomy is the most important product decision in SlateCamp's architecture. Not because of what it stores — but because of what it enables every other feature to compute."</div>
+  <div class="pq-cite">— Product Architect Assessment</div>
+</div>
+
+<div class="callout green">
+  <div class="callout-label">The Single Most Important Insight From This Analysis</div>
+  <div class="callout-text">Taxonomy v5.0 transforms SlateCamp from a quiz platform that organizes content by topic, into a cognitive engineering platform that knows the difficulty, cognitive level, exam frequency, spatial requirements, computational demand, legal basis, prerequisite dependencies, and mastery criteria for every piece of content. <strong>No existing Philippine ALE prep platform has this level of structured pedagogical metadata on their content.</strong> The moat is not the 3D Lab or the Readiness Score — those are demonstrable features. The moat is this taxonomy: 172 subtopics with 8 data dimensions each, updated and corrected by an SME team, impossible to replicate quickly. Build every product feature to use it fully.</div>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-brand">Slate<span>Camp</span></div>
+    <div class="footer-tagline">Know you'll win.</div>
+  </div>
+  <div class="footer-meta">
+    Taxonomy v5.0 Product Architecture Analysis<br>
+    Based on slatecamp_taxonomy_v5.json + taxonomy-v50-implementation-plan.md<br>
+    Product Architect: Claude · Founder: Philip<br>
+    March 2026 · Internal · Confidential
+  </div>
+</footer>
+
+</body>
+</html>

@@ -5,6 +5,7 @@ import { CanvasWrapper } from '../../_components/CanvasWrapper'
 import { InfoPanel, type InfoContent } from '../../_components/InfoPanel'
 import { useLabStore } from '../../_stores/labStore'
 import { ClassicalOrdersScene, type PartId } from './ClassicalOrdersScene'
+import { trackServerEvent } from '@/lib/analytics-server'
 
 /* ── Educational Content ────────────────────────────────────────────────────── */
 
@@ -85,16 +86,16 @@ export default function ClassicalOrders() {
           setQuizMode(false)
           setActiveHotspot(partId)
           setQuizFeedback('correct')
-          // TODO: track analytics event — 3d_quiz_answer { scene: 'classical-orders', part: partId, correct: true }
+          void trackServerEvent('3d_quiz_answer', { scene: 'classical-orders', part: partId, correct: true })
         } else {
           setQuizFeedback('wrong')
-          // TODO: track analytics event — 3d_quiz_answer { scene: 'classical-orders', part: partId, correct: false }
+          void trackServerEvent('3d_quiz_answer', { scene: 'classical-orders', part: partId, correct: false })
         }
         const duration = correct ? 2000 : 1200
         setTimeout(() => setQuizFeedback(null), duration)
       } else {
         setActiveHotspot(partId)
-        // TODO: track analytics event — 3d_part_select { scene: 'classical-orders', part: partId }
+        void trackServerEvent('3d_part_select', { scene: 'classical-orders', part: partId })
       }
     },
     [isQuizMode, quizTargetPartId, setQuizMode, setActiveHotspot],

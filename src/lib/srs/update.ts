@@ -7,13 +7,13 @@ import { calculateNextReview, getNextReviewDate } from './sm2'
  * Derive SM-2 quality rating from SlateCamp interaction data.
  * 0 = complete failure, 5 = perfect with confidence.
  */
-export const deriveQualityRating = (params: {
+export const deriveQualityRating = async (params: {
   isCorrect: boolean
   timeSpentMs: number
   avgTimeMs: number
   confidence: string | null
   isSuspectedLuckyGuess: boolean
-}): number => {
+}): Promise<number> => {
   if (!params.isCorrect) return 1
   if (params.isSuspectedLuckyGuess) return 2
 
@@ -42,13 +42,13 @@ export const updateSrsSchedule = async (
 
     const { data: mastery } = await supabase
       .from('user_node_mastery')
-      .select('srs_interval_days, srs_ease_factor')
+      .select('review_interval_days, ease_factor')
       .eq('user_id', userId)
       .eq('topic_id', topicId)
       .single()
 
-    const currentInterval = mastery?.srs_interval_days ?? 1
-    const currentEase = mastery?.srs_ease_factor ?? 2.5
+    const currentInterval = mastery?.review_interval_days ?? 1
+    const currentEase = mastery?.ease_factor ?? 2.5
     // Derive repetitions from interval (approximate)
     const repetitions = currentInterval <= 1 ? 0 : currentInterval <= 6 ? 1 : 2
 
@@ -58,13 +58,18 @@ export const updateSrsSchedule = async (
     await supabase
       .from('user_node_mastery')
       .update({
-        srs_interval_days: result.interval,
-        srs_ease_factor: Math.round(result.easeFactor * 100) / 100,
-        srs_due_at: dueAt.toISOString(),
+        review_interval_days: result.interval,
+        ease_factor: Math.round(result.easeFactor * 100) / 100,
+        next_review_at: dueAt.toISOString(),
       })
       .eq('user_id', userId)
       .eq('topic_id', topicId)
-  } catch {
-    // Silent — SRS is important but must not break the quiz
+  } catch (err) {
+    // SRS update failed — log for monitoring but do not break quiz flow
+    console.error('[SRS] updateSrsSchedule failed for user. Session still completed.', {
+      error: err instanceof Error ? err.message : String(err),
+      timestamp: new Date().toISOString(),
+    })
+    // TODO Phase 5: Add Sentry.captureException(err) here when monitoring is added
   }
 }

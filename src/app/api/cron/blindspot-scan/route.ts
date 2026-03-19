@@ -24,115 +24,154 @@ export async function GET(request: Request) {
   }
 
   const supabase = createAdminClient()
-
-  // Get all active users who completed at least one session in the last 30 days
   const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString()
 
-  const { data: activeUsers, error: usersError } = await supabase
+  // BATCH 1: Get all active users (completed a session in last 30 days)
+  const { data: sessionUsers, error: usersError } = await supabase
     .from('quiz_sessions')
     .select('user_id')
     .eq('status', 'completed')
     .gte('started_at', thirtyDaysAgo)
 
-  if (usersError || !activeUsers) {
+  if (usersError || !sessionUsers) {
+    console.error('[CRON:BLINDSPOT] Failed to fetch active users:', usersError)
     return NextResponse.json({ error: 'Failed to fetch active users' }, { status: 500 })
   }
 
-  // Deduplicate user IDs
-  const userIds = [...new Set(activeUsers.map(u => u.user_id))]
+  const userIds = [...new Set(sessionUsers.map(u => u.user_id))]
+  if (userIds.length === 0) {
+    return NextResponse.json({ processed: 0, queuesCreated: 0, skipped: 0, expired: 0 })
+  }
 
-  let queuesCreated = 0
-  let skipped = 0
+  // BATCH 2: Get existing active queues for ALL users at once
+  const { data: existingQueues } = await supabase
+    .from('blindspot_queues')
+    .select('user_id')
+    .in('user_id', userIds)
+    .in('status', ['pending', 'in_progress'])
 
-  for (const userId of userIds) {
-    // Check if user already has an active queue
-    const { data: existing } = await supabase
+  const usersWithQueues = new Set((existingQueues ?? []).map(q => q.user_id))
+
+  // BATCH 3: Get subscription status for ALL users at once
+  const { data: subscriptions } = await supabase
+    .from('user_subscriptions')
+    .select('user_id, tier, status')
+    .in('user_id', userIds)
+
+  const paidUsers = new Set(
+    (subscriptions ?? [])
+      .filter(s => (s.status === 'active' || s.status === 'trialing') && s.tier !== 'free')
+      .map(s => s.user_id)
+  )
+
+  // Filter to eligible users (paid + no existing queue)
+  const eligibleUserIds = userIds.filter(uid => paidUsers.has(uid) && !usersWithQueues.has(uid))
+
+  if (eligibleUserIds.length === 0) {
+    // Still expire stale queues
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+    const { count: expired } = await supabase
       .from('blindspot_queues')
-      .select('queue_id')
-      .eq('user_id', userId)
-      .in('status', ['pending', 'in_progress'])
-      .limit(1)
-      .maybeSingle()
+      .update({ status: 'expired' })
+      .eq('status', 'pending')
+      .lt('created_at', sevenDaysAgo)
 
-    if (existing) {
-      skipped++
-      continue
-    }
+    return NextResponse.json({
+      processed: userIds.length,
+      queuesCreated: 0,
+      skipped: userIds.length - eligibleUserIds.length,
+      expired: expired ?? 0,
+    })
+  }
 
-    // Check if user is on a paid tier (Blindspot is Pro-only)
-    const { data: sub } = await supabase
-      .from('user_subscriptions')
-      .select('tier, status')
-      .eq('user_id', userId)
-      .maybeSingle()
+  // BATCH 4: Get weak nodes for ALL eligible users at once
+  const { data: weakNodes } = await supabase
+    .from('user_node_mastery')
+    .select('user_id, topic_id, current_mastery_weight')
+    .in('user_id', eligibleUserIds)
+    .lt('current_mastery_weight', 0.4)
+    .order('current_mastery_weight', { ascending: true })
 
-    const isPaid =
-      (sub?.status === 'active' || sub?.status === 'trialing') &&
-      sub?.tier !== 'free'
+  const weakNodesByUser = new Map<string, Array<{ topic_id: string; current_mastery_weight: number }>>()
+  for (const node of (weakNodes ?? [])) {
+    if (!weakNodesByUser.has(node.user_id)) weakNodesByUser.set(node.user_id, [])
+    weakNodesByUser.get(node.user_id)!.push(node)
+  }
 
-    if (!isPaid) {
-      skipped++
-      continue
-    }
+  // BATCH 5: Get all leaf nodes (shared across all users)
+  const { data: allLeafNodes } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id')
+    .eq('is_leaf', true)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
 
-    // Find the 3 weakest nodes
-    const { data: weakNodes } = await supabase
-      .from('user_node_mastery')
-      .select('topic_id, current_mastery_weight')
-      .eq('user_id', userId)
-      .lt('current_mastery_weight', 0.4)
-      .order('current_mastery_weight', { ascending: true })
-      .limit(3)
+  // BATCH 6: Get touched nodes for ALL eligible users at once
+  const { data: allTouchedNodes } = await supabase
+    .from('user_node_mastery')
+    .select('user_id, topic_id')
+    .in('user_id', eligibleUserIds)
 
-    // Also find unexplored leaf nodes
-    const { data: allLeafNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id')
-      .eq('is_leaf', true)
+  const touchedByUser = new Map<string, Set<string>>()
+  for (const n of (allTouchedNodes ?? [])) {
+    if (!touchedByUser.has(n.user_id)) touchedByUser.set(n.user_id, new Set())
+    touchedByUser.get(n.user_id)!.add(n.topic_id)
+  }
 
-    const { data: touchedNodes } = await supabase
-      .from('user_node_mastery')
-      .select('topic_id')
-      .eq('user_id', userId)
+  // Process each eligible user with pre-fetched data (no more per-user DB calls)
+  const newQueues: Array<{
+    user_id: string
+    node_ids: string[]
+    question_count: number
+    pre_queue_mastery: Record<string, number>
+    status: string
+  }> = []
 
-    const touchedSet = new Set((touchedNodes || []).map(n => n.topic_id))
-    const greyNodes = (allLeafNodes || [])
+  for (const userId of eligibleUserIds) {
+    const userWeakNodes = (weakNodesByUser.get(userId) ?? []).slice(0, 3)
+    const touchedSet = touchedByUser.get(userId) ?? new Set()
+
+    const greyNodes = (allLeafNodes ?? [])
       .filter(n => !touchedSet.has(n.node_id))
-      .slice(0, 3 - (weakNodes?.length || 0))
+      .slice(0, 3 - userWeakNodes.length)
 
     const targetNodeIds = [
-      ...(weakNodes || []).map(n => n.topic_id),
+      ...userWeakNodes.map(n => n.topic_id),
       ...greyNodes.map(n => n.node_id),
     ].slice(0, 3)
 
-    if (targetNodeIds.length === 0) {
-      skipped++
-      continue
-    }
+    if (targetNodeIds.length === 0) continue
 
-    // Snapshot pre-queue mastery
     const preQueueMastery: Record<string, number> = {}
-    for (const node of (weakNodes || [])) {
+    for (const node of userWeakNodes) {
       preQueueMastery[node.topic_id] = node.current_mastery_weight
     }
 
-    // Create the queue
+    newQueues.push({
+      user_id: userId,
+      node_ids: targetNodeIds,
+      question_count: 12,
+      pre_queue_mastery: preQueueMastery,
+      status: 'pending',
+    })
+  }
+
+  // BATCH INSERT: All new queues in one operation
+  let queuesCreated = 0
+  if (newQueues.length > 0) {
     const { error: insertError } = await supabase
       .from('blindspot_queues')
-      .insert({
-        user_id: userId,
-        node_ids: targetNodeIds,
-        question_count: 12,
-        pre_queue_mastery: preQueueMastery,
-        status: 'pending',
-      })
+      .insert(newQueues)
 
-    if (!insertError) {
-      queuesCreated++
+    if (insertError) {
+      console.error('[CRON:BLINDSPOT] Batch insert failed:', insertError)
+    } else {
+      queuesCreated = newQueues.length
     }
   }
 
-  // Also expire stale queues (pending for more than 7 days)
+  // CLEANUP: Expire stale queues (pending for more than 7 days)
   const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
   const { count: expired } = await supabase
     .from('blindspot_queues')
@@ -143,7 +182,7 @@ export async function GET(request: Request) {
   return NextResponse.json({
     processed: userIds.length,
     queuesCreated,
-    skipped,
+    skipped: userIds.length - eligibleUserIds.length,
     expired: expired ?? 0,
   })
 }

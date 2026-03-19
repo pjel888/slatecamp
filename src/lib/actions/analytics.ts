@@ -77,18 +77,23 @@ async function fetchTaxonomyNodeMap(
     .from('taxonomy_tree')
     .select('node_id, parent_id, level, name')
     .eq('discipline_id', disciplineId)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
   return new Map((data || []).map((n: TaxNode) => [n.node_id, n]))
 }
 
 /**
  * Returns the state label based on mastery weight (0.0 - 1.0).
+ * thin_coverage: node has been visited but question bank is too shallow for reliable assessment.
  * Decision: Phase 2 Decisions Step 3.
  */
-function getMasteryState(weight: number): NodeState {
+function getMasteryState(weight: number, distinctQuestionsSeen: number = 999): NodeState {
+  if (weight <= 0) return 'unexplored'
+  if (distinctQuestionsSeen < 5) return 'thin_coverage'
   if (weight >= 0.85) return 'mastered'
   if (weight >= 0.60) return 'familiar'
-  if (weight > 0) return 'danger'
-  return 'unexplored'
+  return 'danger'
 }
 
 export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapCluster[]> {
@@ -101,21 +106,30 @@ export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapC
     .from('taxonomy_tree')
     .select('node_id, name, level, parent_id')
     .eq('discipline_id', disciplineId)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
     .order('level', { ascending: true })
 
-  if (treeError || !nodesData) return []
+  if (treeError || !nodesData) {
+    if (treeError) console.error('[ANALYTICS] getTaxonomyHeatmap tree query failed:', { error: treeError.message, timestamp: new Date().toISOString() })
+    return []
+  }
   const nodes = nodesData as Array<{ node_id: string; name: string; level: number; parent_id: string | null }>
 
-  // 2. Fetch user's node mastery
+  // 2. Fetch user's node mastery (including distinct_questions_seen for thin_coverage state)
   const { data: masteryData, error: masteryError } = await supabase
     .from('user_node_mastery')
-    .select('topic_id, current_mastery_weight')
+    .select('topic_id, current_mastery_weight, distinct_questions_seen')
     .eq('user_id', user.id)
 
-  if (masteryError) return []
-  const mastery = masteryData as Array<{ topic_id: string; current_mastery_weight: number }>
+  if (masteryError) {
+    console.error('[ANALYTICS] getTaxonomyHeatmap mastery query failed:', { error: masteryError.message, timestamp: new Date().toISOString() })
+    return []
+  }
+  const mastery = masteryData as Array<{ topic_id: string; current_mastery_weight: number; distinct_questions_seen: number }>
 
-  const masteryMap = new Map(mastery?.map(m => [m.topic_id, m.current_mastery_weight]) || [])
+  const masteryMap = new Map(mastery?.map(m => [m.topic_id, { weight: m.current_mastery_weight, distinctQs: m.distinct_questions_seen ?? 0 }]) || [])
 
   // 3. Group by level 1 (Clusters)
   const clusters: HeatmapCluster[] = nodes
@@ -126,12 +140,14 @@ export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapC
         id: parent.node_id,
         title: parent.name,
         nodes: children.map(child => {
-          const weight = masteryMap.get(child.node_id) || 0
+          const entry = masteryMap.get(child.node_id)
+          const weight = entry?.weight ?? 0
+          const distinctQs = entry?.distinctQs ?? 0
           return {
             id: child.node_id,
             label: child.name,
-            state: getMasteryState(weight),
-            progress: weight * 100
+            state: getMasteryState(weight, distinctQs),
+            progress: weight * 100,
           }
         })
       }
@@ -156,7 +172,10 @@ export async function getNodePerformance(topicId: string) {
     .gte('interaction_timestamp', thirtyDaysAgo)
     .order('interaction_timestamp', { ascending: true })
 
-  if (error || !data) return []
+  if (error || !data) {
+    if (error) console.error('[ANALYTICS] getNodePerformance query failed:', { error: error.message, timestamp: new Date().toISOString() })
+    return []
+  }
 
   // Group by date
   const grouped = (data || []).reduce((acc: Record<string, { date: string; correct: number; total: number }>, curr: { is_correct: boolean; interaction_timestamp: string }) => {

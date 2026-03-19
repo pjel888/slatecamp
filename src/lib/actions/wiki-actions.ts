@@ -104,6 +104,9 @@ export async function getTaxonomyTree(
     .from("taxonomy_tree")
     .select("*")
     .eq("discipline_id", disciplineId)
+    .eq("is_cross_ref_only", false)
+    .is("deprecated_at", null)
+    .not("ale_id", "is", null)
     .order("level", { ascending: true })
     .order("name", { ascending: true });
 
@@ -240,6 +243,9 @@ export async function getBreadcrumbTrail(nodeId: string): Promise<BreadcrumbItem
     .from("taxonomy_tree")
     .select("node_id, parent_id, name, slug, level")
     .eq("discipline_id", startNode.discipline_id)
+    .eq("is_cross_ref_only", false)
+    .is("deprecated_at", null)
+    .not("ale_id", "is", null)
     .order("level", { ascending: true });
 
   if (!allNodes) return [];

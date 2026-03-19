@@ -3,6 +3,7 @@ import {
   getWikiArticleByTaxonomySlug,
   getActiveTaxonomyNode,
 } from '@/lib/actions/wiki-actions'
+import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 import { WikiArticle, getArticleHeadings } from '@/components/wiki/WikiArticle'
 import { WikiArticleHeader } from '@/components/wiki/WikiArticleHeader'
 import { WikiHeader } from '@/components/wiki/WikiHeader'
@@ -16,6 +17,7 @@ import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
 import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
+import { WikiReadTracker } from '@/components/wiki/WikiReadTracker'
 
 interface PageProps {
   params: Promise<{
@@ -90,6 +92,12 @@ export default async function WikiArticlePage({ params }: PageProps) {
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
 
+  // Fetch EI prompts + user responses in parallel
+  const [eiPrompts, eiResponses] = await Promise.all([
+    getEIPromptsForArticle(article.article_id),
+    getUserEIResponsesForArticle(article.article_id),
+  ])
+
   const practiceHref = node?.node_id
     ? `/dashboard/testing?topicId=${node.node_id}`
     : `/dashboard/testing?articleId=${article.article_id}`
@@ -150,6 +158,12 @@ export default async function WikiArticlePage({ params }: PageProps) {
             id="wiki-center-pane"
             className="flex-1 overflow-y-auto"
           >
+            {/* Read tracking — records open, tracks scroll depth + time spent */}
+            <WikiReadTracker
+              articleId={article.article_id}
+              scrollContainerId="wiki-center-pane"
+            />
+
             <div className="max-w-prose mx-auto px-6 py-8">
               {/* Wrong-answer context banner (UX Strategy Section 6) */}
               <Suspense fallback={null}>
@@ -166,6 +180,8 @@ export default async function WikiArticlePage({ params }: PageProps) {
                 article={article}
                 nodeId={node?.node_id}
                 nodeName={node?.name}
+                eiPrompts={eiPrompts}
+                eiResponses={eiResponses}
               />
 
               {/* Feature 7: Feynman Teach-Back (only if criteria exist for this topic) */}

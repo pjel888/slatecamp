@@ -28,6 +28,9 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
     .select('*')
     .eq('discipline_id', disciplineId)
     .lte('level', 3)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
     .order('level', { ascending: true })
     .order('name', { ascending: true })
 

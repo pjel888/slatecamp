@@ -1,8 +1,9 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import { computeScoreVelocity } from '@/lib/readiness/velocity'
+import { QuizSessionIdSchema } from '@/lib/validations'
 import { computeUserSignals } from '@/lib/signals/compute'
+import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
 import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
 import { checkDailyCap, incrementDailyCount } from '@/lib/paywall/daily-cap'
 import { computeAccuracyByBlock, updateEnduranceSignals } from '@/lib/endurance/compute'
@@ -13,8 +14,14 @@ import type {
   SessionStatus,
 } from '@/types/app'
 import { revalidatePath } from 'next/cache'
+import { trackServerEvent } from '@/lib/analytics-server'
 
 export async function getQuizSession(sessionId: string) {
+  const parsed = QuizSessionIdSchema.safeParse(sessionId)
+  if (!parsed.success) {
+    throw new Error(`Invalid session ID: ${parsed.error.message}`)
+  }
+
   const supabase = await createClient()
   const {
     data: { user },
@@ -72,11 +79,23 @@ export async function updateQuizSession(
     status?: SessionStatus
   },
 ) {
+  const parsed = QuizSessionIdSchema.safeParse(sessionId)
+  if (!parsed.success) {
+    throw new Error(`Invalid session ID: ${parsed.error.message}`)
+  }
+
   const supabase = await createClient()
   const {
     data: { user },
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
+
+  // ── Session completion: compute readiness score BEFORE setting status ──
+  // The snapshot trigger fires on status='completed' and reads global_readiness_score
+  // + readiness_sub_scores from user_global_stats. Both must be fresh.
+  if (updates.status === 'completed') {
+    await recomputeAndSaveReadinessScore(user.id)
+  }
 
   const fullPayload = {
     ...updates,
@@ -91,32 +110,52 @@ export async function updateQuizSession(
     .eq('user_id', user.id)
 
   if (error) {
-    // completed_at column may not exist yet (pre-migration). Retry without it.
-    if (updates.status === 'completed') {
-      const { error: fallbackError } = await supabase
-        .from('quiz_sessions')
-        .update({ ...updates, updated_at: new Date().toISOString() })
-        .eq('session_id', sessionId)
-        .eq('user_id', user.id)
-      if (fallbackError) throw fallbackError
-      // Fire-and-forget: compute signals after session completion
-      void computeUserSignals(user.id)
-      return { success: true }
-    }
+    console.error('[QUIZ] updateQuizSession failed:', error)
     throw error
   }
 
-  // Fire-and-forget: compute signals after session completion
+  // Fire-and-forget post-completion work
   if (updates.status === 'completed') {
     void computeUserSignals(user.id)
-    // Write accuracy-by-block for endurance tracking
     void writeAccuracyByBlock(supabase, sessionId, user.id)
+
+    // D2 Event 3: assessment_completed — track when assessment session finishes
+    const { data: completedSession } = await supabase
+      .from('quiz_sessions')
+      .select('config, question_ids')
+      .eq('session_id', sessionId)
+      .single()
+
+    const isAssessment = completedSession?.config?.diagnostic || completedSession?.config?.isAssessment
+    if (isAssessment) {
+      const { count: interactionCount } = await supabase
+        .from('user_interactions')
+        .select('*', { count: 'exact', head: true })
+        .eq('session_id', sessionId)
+
+      const { data: globalStats } = await supabase
+        .from('user_global_stats')
+        .select('global_readiness_score')
+        .eq('user_id', user.id)
+        .single()
+
+      void trackServerEvent('assessment_completed', {
+        session_id: sessionId,
+        score: globalStats?.global_readiness_score ?? 0,
+        questions_answered: interactionCount ?? 0,
+      })
+    }
   }
 
   return { success: true }
 }
 
 export async function deleteQuizSession(sessionId: string) {
+  const parsed = QuizSessionIdSchema.safeParse(sessionId)
+  if (!parsed.success) {
+    throw new Error(`Invalid session ID: ${parsed.error.message}`)
+  }
+
   const supabase = await createClient()
   const {
     data: { user },
@@ -135,12 +174,15 @@ export async function deleteQuizSession(sessionId: string) {
 
 /**
  * Updates or creates a user_node_mastery record based on interaction.
- * Also triggers global readiness recalculation and daily snapshots.
- * Decision: Phase 2 Decisions Step 2.
+ * Writes all 5 anti-inflation columns alongside the existing mastery data.
+ *
+ * Global readiness score is now computed at session completion
+ * (via recomputeAndSaveReadinessScore) rather than per-answer.
  */
 async function recordMastery(
   user_id: string,
   topic_id: string,
+  question_id: string,
   is_correct: boolean,
   time_spent_ms: number,
   test_mode: TestMode,
@@ -149,135 +191,98 @@ async function recordMastery(
 ) {
   const supabase = await createClient()
 
-  // 1. Get current node mastery
+  // 1. Get current node mastery (select all columns including new anti-inflation ones)
   const { data: current } = await supabase
     .from('user_node_mastery')
     .select('*')
     .eq('user_id', user_id)
     .eq('topic_id', topic_id)
-    .single()
+    .maybeSingle()
 
-  let alpha = 0.2 // Base EMA smoothing factor
+  // 2. Fetch taxonomy metadata for this node (difficulty 1-4 and bloom_level)
+  const { data: taxonomyNode } = await supabase
+    .from('taxonomy_tree')
+    .select('difficulty, bloom_level')
+    .eq('node_id', topic_id)
+    .maybeSingle()
+
+  const taxonomyDifficulty: number | null = taxonomyNode?.difficulty ?? null
+  const bloomLevel: string | null = taxonomyNode?.bloom_level ?? null
+
+  // 3. EMA smoothing factor by mode
+  let alpha = 0.2
   if (test_mode === 'proof_sim') alpha = 0.6
   else if (test_mode === 'storm') alpha = 0.4
   else if (test_mode === 'chill') alpha = 0.1
   else if (test_mode === 'blindspot') alpha = 0.3
 
-  // Score logic: suspected guesses receive zero mastery bump (nullified)
-  let score = is_correct ? 1.0 : 0.0
-  if (suspected_guess) {
-    score = 0.0
-  }
+  // 4. Lucky guess: 0.3× weight instead of full contribution
+  // Wrong answers always get full weight (wrong answers should fully penalize)
+  const baseWeight = suspected_guess ? 0.3 : 1.0
+  const answerValue = is_correct ? 1.0 : 0.0
 
-  let new_weight = score
-  let total_attempts = 1
-  let total_correct = is_correct ? 1 : 0
-  let new_avg_time = time_spent_ms
+  const prevMastery = current?.current_mastery_weight ?? 0.0
+  const new_weight = prevMastery + alpha * baseWeight * (answerValue - prevMastery)
 
-  if (current) {
-    // If it was a suspected guess, we don't improve the mastery weight
-    // but we still update attempts and avg_time for data accuracy
-    new_weight = score * alpha + current.current_mastery_weight * (1 - alpha)
-    total_attempts = current.total_attempts + 1
-    total_correct = current.total_correct + (is_correct ? 1 : 0)
-    new_avg_time = time_spent_ms * alpha + current.avg_time_ms * (1 - alpha)
-  }
+  const total_attempts = (current?.total_attempts ?? 0) + 1
+  const total_correct = (current?.total_correct ?? 0) + (is_correct ? 1 : 0)
 
-  // 2. Persist node mastery
-  await supabase.from('user_node_mastery').upsert({
-    user_id,
-    topic_id,
-    total_attempts,
-    total_correct,
-    current_mastery_weight: new_weight,
-    avg_time_ms: Math.round(new_avg_time),
-    last_encountered: new Date().toISOString(),
-  })
+  const prevAvgTime = current?.avg_time_ms ?? 0
+  const new_avg_time = Math.round(
+    prevAvgTime + (time_spent_ms - prevAvgTime) / total_attempts,
+  )
 
-  // 3. Recalculate Global Readiness (average of all nodes)
-  const { data: allNodesData } = await supabase
-    .from('user_node_mastery')
-    .select('current_mastery_weight')
+  // 5. Anti-inflation column updates
+
+  // Vector 1: consecutive correct streak (resets on wrong)
+  const prevStreak = current?.consecutive_correct_streak ?? 0
+  const newStreak = is_correct ? prevStreak + 1 : 0
+
+  // Vector 2: highest difficulty correct (only increases, never decreases)
+  const prevHighestDiff = current?.highest_difficulty_correct ?? 0
+  const newHighestDiff = (is_correct && taxonomyDifficulty !== null)
+    ? Math.max(prevHighestDiff, taxonomyDifficulty)
+    : prevHighestDiff
+
+  // Vector 4: Bloom's cognitive level flags (one-way — once true, stays true)
+  const newHasApply = (current?.has_bloom_apply_correct ?? false)
+    || (is_correct && (bloomLevel === 'apply' || bloomLevel === 'analyze'))
+  const newHasAnalyze = (current?.has_bloom_analyze_correct ?? false)
+    || (is_correct && bloomLevel === 'analyze')
+
+  // Vector 5: distinct questions seen (check if this question_id is new for this node)
+  const { count: prevSeenCount } = await supabase
+    .from('user_interactions')
+    .select('interaction_id', { count: 'exact', head: true })
     .eq('user_id', user_id)
+    .eq('topic_id', topic_id)
+    .eq('question_id', question_id)
+  const isNewQuestion = (prevSeenCount ?? 0) <= 1 // <= 1 because the current answer may already be inserted
+  const prevDistinct = current?.distinct_questions_seen ?? 0
+  const newDistinct = isNewQuestion ? prevDistinct + 1 : prevDistinct
 
-  const allNodes = (allNodesData || []) as Array<{
-    current_mastery_weight: number
-  }>
+  // 6. Persist node mastery with all columns
+  await supabase.from('user_node_mastery').upsert(
+    {
+      user_id,
+      topic_id,
+      total_attempts,
+      total_correct,
+      current_mastery_weight: Math.min(Math.max(new_weight, 0), 1),
+      avg_time_ms: new_avg_time,
+      last_encountered: new Date().toISOString(),
+      consecutive_correct_streak: newStreak,
+      highest_difficulty_correct: newHighestDiff,
+      has_bloom_apply_correct: newHasApply,
+      has_bloom_analyze_correct: newHasAnalyze,
+      distinct_questions_seen: newDistinct,
+    },
+    { onConflict: 'user_id, topic_id' },
+  )
 
-  if (allNodes.length > 0) {
-    const sum = allNodes.reduce(
-      (acc, node) => acc + node.current_mastery_weight,
-      0,
-    )
-    const globalScore = (sum / allNodes.length) * 100
-
-    await supabase
-      .from('user_global_stats')
-      .update({
-        global_readiness_score: globalScore,
-        updated_at: new Date().toISOString(),
-      })
-      .eq('user_id', user_id)
-
-    // 4. Daily Snapshotting (Phase 2 Decisions Step 2)
-    const today = new Date().toISOString().split('T')[0]
-    const { data: existingSnapshot } = await supabase
-      .from('readiness_score_snapshots')
-      .select('snapshot_id')
-      .eq('user_id', user_id)
-      .gte('computed_at', `${today}T00:00:00Z`)
-      .lt('computed_at', `${today}T23:59:59Z`)
-      .maybeSingle()
-
-    if (!existingSnapshot) {
-      await supabase.from('readiness_score_snapshots').insert({
-        user_id,
-        score: globalScore,
-        computed_at: new Date().toISOString(),
-      })
-
-      // 5. Snapshot Pruning (Retain only 90 most recent)
-      const { data: overflow } = await supabase
-        .from('readiness_score_snapshots')
-        .select('snapshot_id')
-        .eq('user_id', user_id)
-        .order('computed_at', { ascending: false })
-        .range(90, 999) // skip the 90 we want to keep — only return the excess
-
-      if (overflow && overflow.length > 0) {
-        const idsToDelete = overflow.map((s: any) => s.snapshot_id)
-        await supabase
-          .from('readiness_score_snapshots')
-          .delete()
-          .in('snapshot_id', idsToDelete)
-      }
-    }
-
-    // 6. Score Velocity (DS Report: pts/day over 7d)
-    try {
-      const { data: recentSnapshots } = await supabase
-        .from('readiness_score_snapshots')
-        .select('score, computed_at')
-        .eq('user_id', user_id)
-        .order('computed_at', { ascending: false })
-        .limit(30)
-
-      if (recentSnapshots && recentSnapshots.length >= 2) {
-        const { velocity } = computeScoreVelocity(
-          recentSnapshots as Array<{ score: number; computed_at: string }>
-        )
-        await supabase
-          .from('user_global_stats')
-          .update({
-            score_velocity_7d: velocity,
-            score_velocity_updated_at: new Date().toISOString(),
-          })
-          .eq('user_id', user_id)
-      }
-    } catch {
-      // Velocity is non-critical — never block mastery recording
-    }
-  }
+  // Note: Global readiness score is now computed at session completion
+  // via recomputeAndSaveReadinessScore() called from updateQuizSession().
+  // The snapshot trigger fires when the session status changes to 'completed'.
 }
 
 export async function saveInteraction(interaction: {
@@ -362,6 +367,7 @@ export async function saveInteraction(interaction: {
     await recordMastery(
       user.id,
       interaction.topic_id,
+      interaction.question_id,
       interaction.is_correct,
       interaction.time_spent_ms,
       session.test_mode,
@@ -378,7 +384,7 @@ export async function saveInteraction(interaction: {
         .eq('topic_id', interaction.topic_id)
         .single()
 
-      const quality = deriveQualityRating({
+      const quality = await deriveQualityRating({
         isCorrect: interaction.is_correct,
         timeSpentMs: interaction.time_spent_ms,
         avgTimeMs: currentMastery?.avg_time_ms ?? 10000,
@@ -453,6 +459,9 @@ export async function getQuestionsByTopic(nodeId: string, limit: number = 20) {
   const { data: allNodes } = await supabase
     .from('taxonomy_tree')
     .select('node_id, parent_id, is_leaf')
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
 
   if (!allNodes) return []
 
@@ -633,6 +642,20 @@ export async function createQuizSession(params: {
       .eq('user_id', user.id)
   }
 
+  // D2 Event 2: assessment_started — track when diagnostic/assessment session begins
+  const isAssessment = params.config?.diagnostic || params.config?.isAssessment
+  if (isAssessment) {
+    void trackServerEvent('assessment_started', {
+      session_id: session.session_id,
+      question_count: params.question_ids.length,
+    })
+    // Write assessment_started_at to user_global_stats (gap 2.2)
+    void supabase
+      .from('user_global_stats')
+      .update({ assessment_started_at: new Date().toISOString() })
+      .eq('user_id', user.id)
+  }
+
   return session as QuizSession
 }
 
@@ -640,6 +663,11 @@ export async function createQuizSession(params: {
  * PRD Section 5, Step 10: 24-Hour Review Lock
  */
 export async function getReviewLockStatus(sessionId: string) {
+  const parsed = QuizSessionIdSchema.safeParse(sessionId)
+  if (!parsed.success) {
+    throw new Error(`Invalid session ID: ${parsed.error.message}`)
+  }
+
   const supabase = await createClient()
 
   const { data: session, error } = await supabase
@@ -701,6 +729,9 @@ export async function getMostDecayedNode(disciplineId: string) {
     .select('node_id, name')
     .eq('discipline_id', disciplineId)
     .eq('is_leaf', true)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
 
   if (!leafNodes?.length) return null
 

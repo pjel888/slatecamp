@@ -10,7 +10,7 @@ interface SrsReviewData {
 
 /**
  * Get SRS review queue stats for the dashboard widget.
- * Counts items where srs_due_at <= NOW().
+ * Counts items where next_review_at <= NOW().
  */
 export const getSrsReviewData = async (): Promise<SrsReviewData> => {
   const supabase = await createClient()
@@ -23,7 +23,7 @@ export const getSrsReviewData = async (): Promise<SrsReviewData> => {
     .from('user_node_mastery')
     .select('topic_id, taxonomy_tree(subject_area)')
     .eq('user_id', user.id)
-    .lte('srs_due_at', now)
+    .lte('next_review_at', now)
     .gt('total_attempts', 0)
 
   if (!dueItems || dueItems.length === 0) {

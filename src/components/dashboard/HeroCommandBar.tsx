@@ -80,6 +80,20 @@ function ReadinessRing({ score }: { score: number }) {
 
 // ── Props ───────────────────────────────────────────────────────────────────
 
+interface ReadinessMeta {
+  ceilingActive?: boolean
+  ceilingValue?: number | null
+  ceilingReason?: string | null
+  greyPenalty?: number
+}
+
+const CEILING_COPY: Record<string, string> = {
+  no_level3_correct: 'Answer some Advanced (Level 3) questions to unlock higher scores.',
+  no_level4_correct: 'Expert (Level 4) questions are now your ceiling. Answer some to raise it.',
+  no_apply_level_correct: 'Try Apply-level questions — the ALE tests application, not just recall.',
+  no_analyze_level_correct: 'Analysis-level questions unlock the top score band.',
+}
+
 interface HeroCommandBarProps {
   userName: string
   readinessScore: number
@@ -87,6 +101,7 @@ interface HeroCommandBarProps {
   daysUntilExam: number | null
   heroStats: HeroMicroStat[]
   syllabusCoveragePercent: number
+  readinessMeta?: ReadinessMeta | null
   children?: ReactNode
 }
 
@@ -99,6 +114,7 @@ export function HeroCommandBar({
   daysUntilExam,
   heroStats,
   syllabusCoveragePercent,
+  readinessMeta,
   children,
 }: HeroCommandBarProps) {
   useEffect(() => { trackEvent({ event_name: 'readiness_score_viewed', event_properties: { current_score: readinessScore } }) }, [readinessScore])
@@ -152,6 +168,17 @@ export function HeroCommandBar({
               ) : (
                 <span className='text-white/50 text-[11px] font-medium'>
                   Start practicing to build your score
+                </span>
+              )}
+              {readinessMeta?.ceilingActive && readinessMeta.ceilingReason && (
+                <span className='text-[#F5A623]/80 text-[11px] font-medium text-center leading-tight max-w-[140px]'>
+                  Capped at {readinessMeta.ceilingValue}%.{' '}
+                  {CEILING_COPY[readinessMeta.ceilingReason] ?? ''}
+                </span>
+              )}
+              {!readinessMeta?.ceilingActive && (readinessMeta?.greyPenalty ?? 0) > 0.3 && (
+                <span className='text-white/40 text-[11px] font-medium text-center leading-tight max-w-[140px]'>
+                  Unvisited topics are lowering your score. Explore more of the syllabus.
                 </span>
               )}
             </div>

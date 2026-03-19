@@ -94,3 +94,19 @@ export type AiTutorInput = z.infer<typeof aiTutorSchema>;
 export type StudyAgentInput = z.infer<typeof studyAgentSchema>;
 export type CheckoutInput = z.infer<typeof checkoutSchema>;
 export type FeatureFlagsInput = z.infer<typeof featureFlagsSchema>;
+
+// ── Common primitives ────────────────────────────────────────
+export const UUIDSchema = z.string().uuid('Must be a valid UUID')
+
+export const QuizSessionIdSchema = UUIDSchema
+
+export const TestModeSchema = z.enum(['camp', 'storm', 'blindspot', 'proof_sim', 'chill', 'timed', 'practice', 'custom', 'endurance'])
+
+export const SessionStatusSchema = z.enum(['in_progress', 'completed', 'abandoned'])
+
+export const SubmitAnswerSchema = z.object({
+  sessionId: UUIDSchema,
+  questionId: UUIDSchema,
+  selectedOptionId: UUIDSchema,
+  timeSpentMs: z.number().min(0).max(600_000),
+})
