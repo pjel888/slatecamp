@@ -1,72 +1,166 @@
 # Technology Stack
 
-**Analysis Date:** 2026-03-15
+**Analysis Date:** 2026-03-19
 
-## Core
+## Languages
 
-- **Language**: TypeScript 5.9.3
-- **Framework**: Next.js 16.1.6 (App Router)
-- **Database**: Supabase 2.98.0 (PostgreSQL + pgvector)
-- **Runtime**: React 19.2.4
-- **Package Manager**: Bun (primary), npm (fallback)
+**Primary:**
+- TypeScript 5.9.3 - Full codebase (React components, API routes, server actions, utilities)
+- JSX/TSX - React component markup
 
-## Frontend & UI
+**Secondary:**
+- SQL - Database migrations and schema definitions (`DATABASE_SCHEMA.sql`, `supabase/migrations/`)
+- CSS - Tailwind utility classes (Tailwind CSS 4.2.1)
 
-- **Styling**: Tailwind CSS 4.2.1
-- **Components**: Shadcn UI 0.9.5, Base UI 1.2.0, Radix UI 1.4.3
-- **Animations**: Framer Motion 12.35.2
-- **Icons**: Lucide React 0.577.0
-- **Data Visualization**: Recharts 3.8.0
-- **Themes**: Next-Themes 0.4.6
-- **Command Palette**: cmdk 1.1.1
-- **Resizable Panels**: react-resizable-panels 4.7.3
+## Runtime
 
-## 3D & Graphics
+**Environment:**
+- Node.js (via Next.js App Router)
+- Next.js 16.1.6 (React 19.2.4, React DOM 19.2.4)
 
-- **Core**: Three.js 0.183.2
-- **React Integration**: React Three Fiber 9.5.0
-- **Utilities**: React Three Drei 10.7.7, three-stdlib 2.36.1
-- **Camera Controls**: camera-controls 3.1.2
-- **Gradients**: ShaderGradient 2.4.20
-- **Annotations**: rough-notation 0.5.1
+**Package Manager:**
+- Bun (development and build tool)
+- Lockfile: `package-lock.json` present
 
-## Content & Editing
+## Frameworks
 
-- **Rich Text Editor**: Tiptap 3.20.1 (with extensions: Bubble Menu, Highlight, Image, Placeholder, Task List, Text Style, Typography, Underline)
-- **Markdown**: React-Markdown 10.1.0, Marked 17.0.4, next-mdx-remote 6.0.0
-- **Math Rendering**: Katex 0.16.37, remark-math 6.0.0, rehype-katex 7.0.1
-- **Markdown Processing**: Remark GFM 4.0.1
-- **HTML/Markdown Conversion**: Turndown 7.2.2, isomorphic-dompurify 3.1.0
-- **PDF Parsing**: pdf-parse 2.4.5
+**Core:**
+- Next.js 16.1.6 - Full-stack React framework with App Router
+  - Uses `/app` directory structure for pages and API routes
+  - Server Components and Server Actions as default
+  - `next dev` or `next dev --turbopack` for development
+  - `next build` and `next start` for production
 
-## AI & Intelligence
+**UI & Styling:**
+- React 19.2.4 - Component library
+- Tailwind CSS 4.2.1 - Utility-first CSS framework with PostCSS integration
+- shadcn/ui 0.9.5 - High-quality React component collection (based on @base-ui/react)
+- @base-ui/react 1.2.0 - Headless UI primitives
+- Tailwind Typography plugin 0.5.19 - Rich text styling for prose content
+- Class Variance Authority 0.7.1 - CSS-in-JS variant composition
+- TailwindCSS PostCSS 4.2.1 - CSS processing
 
-- **LLM SDK**: Anthropic SDK 0.78.0
-- **DevTools MCP**: next-devtools-mcp 0.3.10
+**3D & Spatial:**
+- Three.js 0.183.2 - 3D graphics library
+- React Three Fiber 9.5.0 (R3F) - React renderer for Three.js
+- @react-three/drei 10.7.7 - Helpers and abstractions for R3F
+- three-stdlib 2.36.1 - Standard library extensions for Three.js
+- Camera Controls 3.1.2 - Advanced camera manipulation for 3D scenes
+- @shadergradient/react 2.4.20 - Shader-based gradient backgrounds
 
-## Payments & Commerce
+**Rich Text & Content:**
+- TipTap 3.20.1 - Headless rich text editor
+  - Extensions: bubble-menu, highlight, horizontal-rule, image, placeholder, task-item/list, text-style, typography, underline
+  - Markdown and ProseMirror integration
+- Next MDX Remote 6.0.0 - MDX rendering for server-side markdown
+- React Markdown 10.1.0 - Markdown to JSX converter
+- Marked 17.0.4 - Markdown parser
+- Turndown 7.2.2 - HTML to Markdown converter
+- Remark plugins: gfm (GitHub Flavored Markdown), math support
+- Rehype plugins: KaTeX rendering
+- KaTeX 0.16.37 - Mathematical typesetting
 
-- **Stripe**: stripe-js 8.9.0, stripe 20.4.1
-- **PayRex**: payrex-node 1.7.3
+**Form & UI Components:**
+- cmdk 1.1.1 - Command/search component
+- react-day-picker 9.14.0 - Calendar picker
+- react-resizable-panels 4.7.3 - Resizable panel layouts
+- Rough Notation 0.5.1 - SVG annotation/highlighting library
+- Recharts 3.8.0 - React charting library
+- Framer Motion 12.35.2 - Animation library (but transitions capped at 300ms per style guide)
+- nextjs-toploader 3.9.17 - Top navigation progress indicator
 
-## Backend & Data
+**Testing:**
+- No test framework detected in dependencies (no Jest, Vitest, etc.)
 
-- **Supabase Client**: @supabase/ssr 0.9.0, @supabase/supabase-js 2.98.0
-- **Validation**: Zod 4.3.6
+**Build/Dev:**
+- Turbopack support (via `--turbopack` flag) - Fast JavaScript bundler
+- ESLint 9.39.4 with Next.js config - Code linting
+  - eslint-config-next 16.1.6 - Next.js-specific ESLint rules
+- TypeScript 5.9.3 - Type checking (`tsc --noEmit`)
 
-## Utilities
+## Key Dependencies
 
-- **Date Handling**: date-fns 4.1.0, react-day-picker 9.14.0
-- **CSS Utilities**: clsx 2.1.1, tailwind-merge 3.5.0, class-variance-authority 0.7.1
-- **DOM Manipulation**: html2canvas 1.4.1
-- **UI Primitives**: tw-animate-css 1.4.0
+**Critical (Business Logic):**
+- @anthropic-ai/sdk 0.78.0 - Claude AI tutor integration for pedagogical explanations
+- stripe 20.4.1 - Stripe payment processing API client
+- @stripe/stripe-js 8.9.0 - Client-side Stripe integration
+- payrex-node 1.7.3 - PayRex payment gateway for PHP-denominated transactions (alternative to Stripe)
 
-## Dev & Build
+**Infrastructure:**
+- @supabase/supabase-js 2.98.0 - PostgreSQL database client (core backend)
+- @supabase/ssr 0.9.0 - Server-side rendering helpers for Supabase auth
+- supabase 2.78.1 - Supabase CLI and management tools
+- zod 4.3.6 - Schema validation and type inference
+- zustand 5.0.12 - Lightweight state management
 
-- **Linting**: ESLint 9.39.4
-- **Type Checking**: @types/node 25.3.5, @types/react 19.2.14, @types/three 0.183.1
-- **PostCSS**: @tailwindcss/postcss 4.2.1
+**Content & Utilities:**
+- date-fns 4.1.0 - Date manipulation utilities
+- lucide-react 0.577.0 - Icon library
+- @phosphor-icons/react 2.1.10 - Alternative icon set (phosphor icons)
+- clsx 2.1.1 - Conditional className composition
+- tailwind-merge 3.5.0 - Merge Tailwind classes intelligently
+- isomorphic-dompurify 3.1.0 - HTML sanitization (works in browser and server)
+- dompurify 3.2.0 - Safe HTML parsing
+- html2canvas 1.4.1 - Screenshot/canvas rendering
+- papaparse 5.5.3 - CSV/TSV parser
+- pdf-parse 2.4.5 - PDF text extraction
+
+**Development Utilities:**
+- next-devtools-mcp 0.3.10 - Development tools via Model Context Protocol
+- next-themes 0.4.6 - Dark mode and theme management
+- Geist 1.7.0 - Font and design system (Vercel's design system)
+
+## Configuration
+
+**Environment:**
+- Environment variables required:
+  - **Supabase:** `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`
+  - **Anthropic:** `ANTHROPIC_API_KEY`
+  - **Stripe:** `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_CAMP_PRICE_ID`, `STRIPE_INSURANCE_PRICE_ID`, `STRIPE_INSTITUTIONAL_PRICE_ID`
+  - **PayRex:** `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`
+  - **Cron Jobs:** `CRON_SECRET`
+  - **Demo Mode:** `NEXT_PUBLIC_DEMO_MODE` (feature flag)
+  - **AI Provider:** `AI_PROVIDER` (defaults to "openai", can be set to "anthropic")
+
+**Build:**
+- `next.config.ts` - Next.js configuration
+  - Remote image domains: `*.supabase.co`, `lh3.googleusercontent.com`
+  - Server actions body size limit: 50MB
+  - Turbopack experimental support
+- `tsconfig.json` - TypeScript compiler options
+  - Path alias: `@/*` → `./src/*`
+  - Strict mode disabled (ES2017 target, loose null/any checks)
+- `tailwind.config.ts` - Tailwind CSS configuration with content globs
+- `postcss.config.mjs` - PostCSS plugins (Tailwind CSS PostCSS)
+- `eslint.config.mjs` - ESLint configuration (Next.js core web vitals + TypeScript)
+- `components.json` - shadcn/ui CLI configuration
+- `.env.local` - Local environment variables (not committed)
+- `vercel.json` - Vercel-specific deployment configuration and cron job schedules
+
+## Platform Requirements
+
+**Development:**
+- Node.js (LTS recommended)
+- Bun package manager
+- TypeScript 5.9.3+ for type checking
+- Git for version control
+- Vercel CLI (optional, for deployment preview)
+
+**Production:**
+- Deployment target: Vercel (Next.js optimized)
+  - Runs on Node.js runtime
+  - Supports Serverless Functions (API routes)
+  - Serverless cron jobs for scheduled tasks
+- Supabase PostgreSQL instance (external database)
+- Stripe API access (payment processing)
+- PayRex API access (alternative payment gateway)
+- Anthropic Claude API access (AI tutor)
+
+**Browser Requirements:**
+- Modern browsers supporting ES2017+ JavaScript
+- WebGL for 3D Lab visualization (Three.js)
+- Web Workers for compute-heavy tasks
 
 ---
 
-*Stack analysis: 2026-03-15*
+*Stack analysis: 2026-03-19*
