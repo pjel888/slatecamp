@@ -218,7 +218,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
             Assessment
           </span>
           <span className="text-[#4A5568] text-sm tabular-nums">
-            Question {currentIndex + 1} of {totalQuestions}
+            Your score is building &middot; {currentIndex + 1} of {totalQuestions}
           </span>
         </div>
       </header>

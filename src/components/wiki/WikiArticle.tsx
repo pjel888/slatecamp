@@ -185,6 +185,26 @@ export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProp
           )}
         </Suspense>
       </div>
+
+      {/* End-of-article CTA — UX Strategy Section 6: "Every Wiki read should end with a quiz" */}
+      {nodeId && (
+        <div className="mt-10 rounded-md border border-[#1B3FC4] bg-[#EEF2FC] p-4 flex items-center justify-between">
+          <div>
+            <p className="text-sm font-medium text-[#1A2332]">
+              Test what you just read
+            </p>
+            <p className="text-xs text-[#4A5568] mt-0.5">
+              5 questions on this topic — reinforces what you learned.
+            </p>
+          </div>
+          <a
+            href={`/dashboard/testing?topics=${nodeId}`}
+            className="shrink-0 rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          >
+            Start Quiz &rarr;
+          </a>
+        </div>
+      )}
     </>
   )
 }

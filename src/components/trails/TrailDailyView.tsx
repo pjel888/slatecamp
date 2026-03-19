@@ -198,6 +198,13 @@ export const TrailDailyView = ({
                     <span className="text-xs text-[#8896A7]">
                       ~{step.estimated_minutes} min
                     </span>
+                    {/* Sleep-aware label (Walker 2017) */}
+                    {userStudyWindow === 'morning' && (step.step_type === 'wiki' || step.step_type === 'lab') && (
+                      <span className="text-[11px] text-[#D4951A]">Best in the evening</span>
+                    )}
+                    {userStudyWindow === 'evening' && (step.step_type === 'quiz' || step.step_type === 'review') && (
+                      <span className="text-[11px] text-[#D4951A]">Best in the morning</span>
+                    )}
                   </div>
                 </div>
 
