@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
@@ -8,6 +11,8 @@ export interface HeatmapNode {
   label: string
   state: NodeState
   progress: number
+  /** Delta: change indicator (positive = improved, negative = declined, null = no change) */
+  delta?: number | null
 }
 
 export interface HeatmapCluster {
@@ -16,9 +21,13 @@ export interface HeatmapCluster {
   nodes: HeatmapNode[]
 }
 
+type DeltaPeriod = 'off' | 'session' | 'week' | 'month'
+
 interface TaxonomyHeatmapProps {
   clusters: HeatmapCluster[]
   onNodeSelect?: (node: HeatmapNode) => void
+  /** Enable delta view toggle (Pro feature) */
+  showDeltaToggle?: boolean
 }
 
 const stateClassMap: Record<NodeState, string> = {
@@ -28,10 +37,21 @@ const stateClassMap: Record<NodeState, string> = {
   unexplored: 'bg-[#D4DAE3]',
 }
 
+const DELTA_LABELS: Record<DeltaPeriod, string> = {
+  off: 'Current',
+  session: 'Last session',
+  week: 'Last week',
+  month: 'Last month',
+}
+
 export const TaxonomyHeatmap = ({
   clusters,
   onNodeSelect,
+  showDeltaToggle = false,
 }: TaxonomyHeatmapProps) => {
+  const [deltaPeriod, setDeltaPeriod] = useState<DeltaPeriod>('off')
+  const showDelta = deltaPeriod !== 'off'
+
   return (
     <Card className='border-0 bg-white shadow-none'>
       <CardHeader className='flex flex-row items-start justify-between gap-4 pb-2'>
@@ -43,6 +63,27 @@ export const TaxonomyHeatmap = ({
             Master syllabus coverage, by subject and topic.
           </p>
         </div>
+
+        {/* Delta View Toggle — UX Strategy Section 8, Step 4 (Pro feature) */}
+        {showDeltaToggle && (
+          <div className="flex items-center gap-1">
+            {(['off', 'session', 'week', 'month'] as DeltaPeriod[]).map((period) => (
+              <button
+                key={period}
+                type="button"
+                onClick={() => setDeltaPeriod(period)}
+                className={cn(
+                  'px-2 py-1 rounded-sm text-[11px] font-medium transition-colors duration-150',
+                  deltaPeriod === period
+                    ? 'bg-[#1B3FC4] text-white'
+                    : 'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F8F7F5]',
+                )}
+              >
+                {DELTA_LABELS[period]}
+              </button>
+            ))}
+          </div>
+        )}
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
         {clusters.map((cluster) => (
@@ -81,6 +122,15 @@ export const TaxonomyHeatmap = ({
                     <span className='w-[34px] text-right text-[11px] text-[#8896A7]'>
                       {Math.round(node.progress)}%
                     </span>
+                    {/* Delta indicator */}
+                    {showDelta && node.delta != null && node.delta !== 0 && (
+                      <span
+                        className="text-[11px] font-medium shrink-0"
+                        style={{ color: node.delta > 0 ? '#2D9F6F' : '#D64545' }}
+                      >
+                        {node.delta > 0 ? '↑' : '↓'}
+                      </span>
+                    )}
                   </span>
                 </button>
               ))}
@@ -91,20 +141,33 @@ export const TaxonomyHeatmap = ({
         <div className='mt-1 flex flex-wrap items-center gap-3 border-t border-border pt-3 text-[11px] text-[#8896A7]'>
           <div className='flex items-center gap-1.5'>
             <span className='h-2 w-2 rounded-full bg-[#2D9F6F]' />
-            <span>Mastered</span>
+            <span>Strong</span>
           </div>
           <div className='flex items-center gap-1.5'>
             <span className='h-2 w-2 rounded-full bg-[#E8853A]' />
-            <span>Familiar</span>
+            <span>Developing</span>
           </div>
           <div className='flex items-center gap-1.5'>
             <span className='h-2 w-2 rounded-full bg-[#D64545]' />
-            <span>Critical</span>
+            <span>Needs work</span>
           </div>
           <div className='flex items-center gap-1.5'>
             <span className='h-2 w-2 rounded-full bg-[#D4DAE3]' />
-            <span>Unexplored</span>
+            <span>Not yet explored</span>
           </div>
+          {showDelta && (
+            <>
+              <span className="text-[#D4DAE3]">|</span>
+              <div className='flex items-center gap-1.5'>
+                <span className="text-[#2D9F6F]">↑</span>
+                <span>Improved</span>
+              </div>
+              <div className='flex items-center gap-1.5'>
+                <span className="text-[#D64545]">↓</span>
+                <span>Declined</span>
+              </div>
+            </>
+          )}
         </div>
       </CardContent>
     </Card>
