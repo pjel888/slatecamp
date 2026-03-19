@@ -26,6 +26,26 @@ const WelcomeProPage = async () => {
     .eq('user_id', user.id)
     .single()
 
+  // Get mastery data for unblurred heatmap preview
+  const { data: masteryNodes } = await supabase
+    .from('user_node_mastery')
+    .select('current_mastery_weight, taxonomy_tree(subject_area)')
+    .eq('user_id', user.id)
+    .gt('total_attempts', 0)
+    .order('current_mastery_weight', { ascending: true })
+    .limit(20)
+
+  const subjectSummary = new Map<string, { total: number; green: number; amber: number; red: number }>()
+  for (const node of (masteryNodes ?? []) as any[]) {
+    const sa = node.taxonomy_tree?.subject_area ?? 'Unknown'
+    const entry = subjectSummary.get(sa) ?? { total: 0, green: 0, amber: 0, red: 0 }
+    entry.total++
+    if (node.current_mastery_weight >= 0.7) entry.green++
+    else if (node.current_mastery_weight >= 0.4) entry.amber++
+    else entry.red++
+    subjectSummary.set(sa, entry)
+  }
+
   const score = Math.round(stats?.global_readiness_score ?? 0)
   const firstName = user.user_metadata?.full_name?.split(' ')[0] ?? user.email?.split('@')[0] ?? 'there'
 
@@ -65,14 +85,44 @@ const WelcomeProPage = async () => {
           </p>
         </div>
 
-        {/* Unblurred heatmap teaser — showing it's now accessible */}
+        {/* Unblurred heatmap — the exact thing they were deprived of */}
         <div className="mt-8 rounded-md border border-[#D4DAE3] bg-white p-4">
-          <p className="text-sm font-medium text-[#2D9F6F]">
+          <p className="text-sm font-medium text-[#2D9F6F] mb-3">
             Full Taxonomy Heatmap — unlocked
           </p>
-          <p className="mt-1 text-xs text-[#4A5568]">
-            Every node, every subject, every gap — visible and actionable.
-          </p>
+          {subjectSummary.size > 0 ? (
+            <div className="flex flex-col gap-2">
+              {Array.from(subjectSummary.entries()).map(([subject, counts]) => (
+                <div key={subject} className="flex items-center justify-between text-xs">
+                  <span className="text-[#1A2332] font-medium truncate mr-3">{subject}</span>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    {counts.green > 0 && (
+                      <span className="flex items-center gap-0.5">
+                        <span className="h-2 w-2 rounded-full bg-[#2D9F6F]" />
+                        <span className="text-[#2D9F6F]">{counts.green}</span>
+                      </span>
+                    )}
+                    {counts.amber > 0 && (
+                      <span className="flex items-center gap-0.5">
+                        <span className="h-2 w-2 rounded-full bg-[#D4951A]" />
+                        <span className="text-[#D4951A]">{counts.amber}</span>
+                      </span>
+                    )}
+                    {counts.red > 0 && (
+                      <span className="flex items-center gap-0.5">
+                        <span className="h-2 w-2 rounded-full bg-[#D64545]" />
+                        <span className="text-[#D64545]">{counts.red}</span>
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="text-xs text-[#4A5568]">
+              Every node, every subject, every gap — visible and actionable.
+            </p>
+          )}
         </div>
 
         {/* CTA */}

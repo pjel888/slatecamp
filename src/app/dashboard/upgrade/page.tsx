@@ -77,13 +77,13 @@ const UpgradePage = async () => {
           ))}
         </div>
 
-        {/* Social Proof — Campfire */}
+        {/* Social Proof — Campfire (UX Strategy Section 15) */}
         <div className="mt-8 rounded-md border border-[#D4DAE3] bg-white p-4">
           <p className="text-sm italic text-[#4A5568]">
-            &ldquo;Started at 44%, passed June 2025.&rdquo;
+            From the Campfire: &ldquo;Started at 44%, passed June 2025.&rdquo;
           </p>
           <p className="mt-1 text-xs text-[#8896A7]">
-            From the Campfire
+            &mdash; Maria S., PUP Architecture
           </p>
         </div>
 

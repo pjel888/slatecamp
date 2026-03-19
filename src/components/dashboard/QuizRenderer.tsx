@@ -625,7 +625,12 @@ export function QuizRenderer({
         isVisible={isRationaleVisible}
         isCorrect={selectedAnswer === correctOptionId}
         onClose={() => setIsRationaleVisible(false)}
-        onWikiClick={() => router.push(`/dashboard/wiki?nodeId=${currentQuestion.topic_id}`)}
+        onWikiClick={() => {
+          const isWrong = selectedAnswer !== correctOptionId
+          const base = `/dashboard/wiki?nodeId=${currentQuestion.topic_id}`
+          const params = isWrong ? `${base}&from=wrong-answer&topic=${encodeURIComponent(currentQuestion.text.slice(0, 60))}` : base
+          router.push(params)
+        }}
         onAddNote={() => { /* note drawer — future */ }}
         on3DLabClick={
           currentQuestion.model_id
