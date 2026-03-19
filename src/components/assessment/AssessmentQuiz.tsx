@@ -30,6 +30,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   const [answers, setAnswers] = useState<Map<string, string>>(new Map())
   const [loading, setLoading] = useState(true)
   const [completing, setCompleting] = useState(false)
+  const [calculatingScore, setCalculatingScore] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const sessionIdRef = useRef<string | null>(null)
@@ -144,6 +145,11 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
       // Complete assessment scoring
       await completeAssessment(sessionId)
 
+      // UX Strategy: "Calculating your Readiness Score..." — 2-3 second
+      // intentional pause even if computation is instant, creates ceremonial weight
+      setCalculatingScore(true)
+      await new Promise((resolve) => setTimeout(resolve, 2500))
+
       router.push('/dashboard/score-reveal')
     } catch (err) {
       console.error('Failed to complete assessment:', err)
@@ -178,6 +184,23 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
           >
             Return to Dashboard
           </button>
+        </div>
+      </div>
+    )
+  }
+
+  // ── Calculating Score screen (UX Strategy: 2-3s ceremonial pause) ──────
+  if (calculatingScore) {
+    return (
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F8F7F5]">
+        <div className="text-center space-y-4">
+          <div className="w-10 h-10 border-2 border-[#1B3FC4] border-t-transparent rounded-full animate-spin mx-auto" />
+          <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-[#1A2332]">
+            Calculating your Readiness Score...
+          </p>
+          <p className="text-sm text-[#4A5568] max-w-xs mx-auto">
+            {totalQuestions} questions analyzed across {new Set(questions.map((q) => q.topic_id)).size} topics.
+          </p>
         </div>
       </div>
     )
