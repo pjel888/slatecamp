@@ -152,4 +152,31 @@ export interface DashboardPageData {
   dailyArticle: DailyWikiArticle | null
   recentNotes: NotePreview[]
   labModuleCount: number
+
+  // Onboarding State (UX Strategy Section 7 — Daily Launchpad)
+  onboardingState: 'needs_assessment' | 'needs_score_reveal' | 'needs_trail' | 'active_trail' | 'ready'
+  /** For free users post-reveal: count of score updates since reveal */
+  scoreUpdatesSinceReveal: number
+  /** Whether user is on free tier */
+  isFreeUser: boolean
+  /** Active trail info for the trail day card */
+  activeTrailDay: {
+    dayNumber: number
+    title: string
+    estimatedMinutes: number
+    trailSlug: string
+    topGapSubject?: string
+  } | null
+
+  // Sprint 2: Streak & SRS
+  streak: {
+    currentStreak: number
+    longestStreak: number
+    streakStatus: 'active' | 'at_risk' | 'broken'
+  }
+  srsReview: {
+    itemsDue: number
+    subjects: string[]
+    estimatedMinutes: number
+  }
 }

@@ -3,7 +3,7 @@ import { getAssessmentResults } from '@/lib/actions/assessment'
 import { recommendTrail } from '@/lib/actions/trails'
 import { checkScoreRevealAccess, markScoreRevealed } from '@/lib/paywall/score-reveal'
 import { trackServerEvent } from '@/lib/analytics-server'
-import { getUser } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import ScoreReveal from '@/components/assessment/ScoreReveal'
 
 const ScoreRevealPage = async () => {
@@ -18,9 +18,20 @@ const ScoreRevealPage = async () => {
   // Score reveal "shown once" enforcement for free users
   const revealAccess = await checkScoreRevealAccess(user.id)
   if (!revealAccess.canView) {
-    // Free user already saw the reveal — redirect to dashboard with locked state
     redirect('/dashboard')
   }
+
+  // Check retaker status
+  const supabase = await createClient()
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('exam_attempt_number, previous_exam_result')
+    .eq('user_id', user.id)
+    .single()
+
+  const isRetaker =
+    (stats?.exam_attempt_number && stats.exam_attempt_number > 1) ||
+    stats?.previous_exam_result === 'failed'
 
   // Mark as shown (fire-and-forget) and track funnel event
   void markScoreRevealed(user.id)
@@ -37,6 +48,7 @@ const ScoreRevealPage = async () => {
         score={results.score}
         subjectScores={results.subjectScores}
         recommendation={recommendation}
+        isRetaker={!!isRetaker}
       />
     </main>
   )

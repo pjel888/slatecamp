@@ -11,6 +11,7 @@ import type {
   TrailIntensity,
 } from '@/types/app'
 import { revalidatePath } from 'next/cache'
+import { trackServerEvent } from '@/lib/analytics-server'
 
 // ============================================================
 // Trail Library
@@ -132,6 +133,11 @@ export const enrollInTrail = async (trailId: string): Promise<TrailEnrollment> =
     .single()
 
   if (error) throw error
+
+  // Funnel event: trail_enrolled (UX Strategy Section 6)
+  const trailName = (data as any)?.camp_trails?.name ?? 'Unknown Trail'
+  void trackServerEvent('trail_enrolled', { trailId, trailName })
+
   revalidatePath('/dashboard/trails')
   revalidatePath('/dashboard')
   return data as TrailEnrollment

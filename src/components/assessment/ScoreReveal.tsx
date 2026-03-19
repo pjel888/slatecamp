@@ -1,27 +1,42 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { AnimatedScore } from './AnimatedScore'
 import type { AssessmentSubjectScore, TrailRecommendation } from '@/types/app'
+
+// ─── Types ──────────────────────────────────────────────────────────────────
 
 interface ScoreRevealProps {
   score: number
   subjectScores: AssessmentSubjectScore[]
   recommendation: TrailRecommendation | null
+  isRetaker?: boolean
 }
 
-const getScoreColor = (score: number): string => {
-  if (score < 50) return '#D64545'
-  if (score < 70) return '#D4951A'
-  return '#2D9F6F'
+// ─── Zone Colors (UX Strategy Section 4) ─────────────────────────────────
+
+const getZoneColor = (score: number): string => {
+  if (score < 40) return '#D64545'   // Signal Red
+  if (score < 70) return '#E8853A'   // Camp Orange
+  if (score < 85) return '#2D9F6F'   // Emerald / Signal Green
+  return '#1B3FC4'                    // Cobalt Blue
 }
 
-const getInterpretation = (score: number): string => {
-  if (score < 40) return 'A lot of ground ahead \u2014 but this is exactly where the journey starts.'
-  if (score < 60) return 'You have a foundation. Now let\u2019s build on it.'
-  if (score < 75) return 'Solid ground. A focused trail will close the gaps.'
-  if (score < 90) return 'Strong position. Let\u2019s sharpen the edges.'
-  return 'The data says you\u2019re ready. Let\u2019s confirm it with a simulation.'
+// ─── Score Messages (Exact Copy from UX Strategy Section 4) ──────────────
+
+const getScoreMessage = (score: number): string => {
+  if (score < 40) return `${score}%. The map shows where to start. Most people find this more motivating than discouraging once they see the trail.`
+  if (score < 55) return `${score}%. Solid foundation, clear gaps. The Trail will focus on exactly what moves the needle.`
+  if (score < 70) return `${score}%. More than halfway there. The gaps are specific — the Trail is targeted.`
+  if (score < 85) return `${score}%. Strong foundation. Focused refinement and the Proof Run are the path from here.`
+  return `${score}%. Strong — now we make sure it holds under exam conditions.`
 }
+
+const getRetakerMessage = (score: number): string =>
+  `${score}%. Your score tells us something specific about last time — the Trail is built around those specifics.`
+
+// ─── Subject Bar Color ───────────────────────────────────────────────────
 
 const getBarColor = (accuracy: number): string => {
   if (accuracy < 40) return '#D64545'
@@ -29,142 +44,114 @@ const getBarColor = (accuracy: number): string => {
   return '#2D9F6F'
 }
 
-const ScoreReveal = ({ score, subjectScores, recommendation }: ScoreRevealProps) => {
-  const scoreColor = getScoreColor(score)
-  const interpretation = getInterpretation(score)
+// ─── Component ───────────────────────────────────────────────────────────
+
+const ScoreReveal = ({
+  score,
+  subjectScores,
+  recommendation,
+  isRetaker = false,
+}: ScoreRevealProps) => {
+  const [showSecondary, setShowSecondary] = useState(false)
+  const zoneColor = getZoneColor(score)
+  const message = isRetaker ? getRetakerMessage(score) : getScoreMessage(score)
   const sortedScores = [...subjectScores].sort((a, b) => a.accuracy - b.accuracy)
 
+  // Secondary CTA appears after 3 seconds (UX Strategy spec)
+  useEffect(() => {
+    const timer = setTimeout(() => setShowSecondary(true), 3000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
-    <div className="mx-auto max-w-2xl px-4 py-12">
-      {/* THE NUMBER */}
-      <div className="text-center">
-        <p
-          className="text-5xl font-bold tabular-nums"
-          style={{ color: scoreColor }}
-        >
-          {score}%
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto"
+      style={{ backgroundColor: '#F8F7F5' }}
+    >
+      <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
+        {/* DM Mono eyebrow — 11px, uppercase */}
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[#8896A7]">
+          Your Readiness Score
         </p>
-      </div>
 
-      {/* ONE-LINE INTERPRETATION */}
-      <p className="mt-4 text-center text-base" style={{ color: '#4A5568' }}>
-        {interpretation}
-      </p>
-
-      {/* SUBJECT BREAKDOWN */}
-      {sortedScores.length > 0 && (
-        <div className="mt-10 rounded-md bg-white p-6">
-          <h2 className="mb-4 text-lg font-semibold" style={{ color: '#1A2332' }}>
-            Subject Breakdown
-          </h2>
-          <div className="space-y-4">
-            {sortedScores.map((subject) => {
-              const barColor = getBarColor(subject.accuracy)
-              return (
-                <div key={subject.subjectArea}>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span
-                      className="text-sm font-medium truncate mr-3"
-                      style={{ color: '#1A2332' }}
-                    >
-                      {subject.subjectArea}
-                    </span>
-                    <span
-                      className="text-sm font-medium tabular-nums shrink-0"
-                      style={{ color: barColor }}
-                    >
-                      {subject.accuracy}%
-                    </span>
-                  </div>
-                  <div
-                    className="h-2 w-full rounded-full"
-                    style={{ backgroundColor: '#EEF2FC' }}
-                  >
-                    <div
-                      className="h-2 rounded-full transition-all duration-300 ease-out"
-                      style={{
-                        width: `${Math.max(subject.accuracy, 2)}%`,
-                        backgroundColor: barColor,
-                      }}
-                    />
-                  </div>
-                </div>
-              )
-            })}
-          </div>
+        {/* Animated Score — 80px, Syne 800, zone-colored, 700ms ease-out */}
+        <div className="mt-6">
+          <AnimatedScore target={score} color={zoneColor} />
         </div>
-      )}
 
-      {/* BLURRED HEATMAP TEASER */}
-      <div className="relative mt-8 overflow-hidden rounded-md bg-white p-6">
-        <div className="blur-md pointer-events-none select-none" aria-hidden="true">
-          <div className="grid grid-cols-7 gap-1.5">
-            {Array.from({ length: 35 }).map((_, i) => {
-              const colors = ['#2D9F6F', '#D4951A', '#D64545', '#EEF2FC', '#2D9F6F', '#D4951A']
-              return (
-                <div
-                  key={i}
-                  className="h-6 rounded-sm"
-                  style={{ backgroundColor: colors[i % colors.length] }}
-                />
-              )
-            })}
-          </div>
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-white/60">
-          <svg
-            className="h-5 w-5"
-            style={{ color: '#4A5568' }}
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
+        {/* Interpretation — Inter 17px, #4A5568, max-width 480px */}
+        <p className="mx-auto mt-6 max-w-[480px] text-[17px] leading-relaxed text-[#4A5568]">
+          {message}
+        </p>
+
+        {/* Blurred Heatmap — shape visible, color not. CSS filter: blur(8px) */}
+        <div className="relative mx-auto mt-10 overflow-hidden rounded-md border border-[#D4DAE3] bg-white p-6">
+          <div
+            className="pointer-events-none select-none"
+            style={{ filter: 'blur(8px)' }}
+            aria-hidden="true"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-            />
-          </svg>
-          <p className="text-sm font-medium" style={{ color: '#4A5568' }}>
-            Unlock Full Analytics &mdash; see exactly where every gap is.
-          </p>
+            <div className="grid grid-cols-7 gap-2">
+              {sortedScores.length > 0
+                ? sortedScores.flatMap((subject, si) =>
+                    Array.from({ length: 5 }).map((_, qi) => {
+                      const baseColor = getBarColor(subject.accuracy)
+                      const jitter = (qi * 17 + si * 31) % 3
+                      const palette = [baseColor, '#D4951A', '#EEF2FC']
+                      return (
+                        <div
+                          key={`${si}-${qi}`}
+                          className="h-7 rounded-sm"
+                          style={{ backgroundColor: palette[jitter] || baseColor }}
+                        />
+                      )
+                    }),
+                  )
+                : Array.from({ length: 35 }).map((_, i) => {
+                    const palette = ['#2D9F6F', '#D4951A', '#D64545', '#EEF2FC', '#2D9F6F', '#D4951A']
+                    return (
+                      <div
+                        key={i}
+                        className="h-7 rounded-sm"
+                        style={{ backgroundColor: palette[i % palette.length] }}
+                      />
+                    )
+                  })}
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* TRAIL RECOMMENDATION */}
-      {recommendation && (
-        <div className="mt-8 rounded-md bg-white p-6">
-          <p className="text-sm italic" style={{ color: '#4A5568' }}>
-            {recommendation.reasoning}
-          </p>
-          <p className="mt-3 text-base font-bold" style={{ color: '#1A2332' }}>
-            {recommendation.trail.name}
-          </p>
-          <p className="mt-1 text-sm" style={{ color: '#4A5568' }}>
-            {recommendation.weekOnePreview}
-          </p>
-        </div>
-      )}
-
-      {/* CTAs */}
-      <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        {recommendation && (
+        {/* Primary CTA — Cobalt Blue, full-width */}
+        <div className="mt-10 flex flex-col items-center gap-3">
           <Link
-            href={`/dashboard/trails/${recommendation.trail.slug}`}
-            className="inline-flex items-center justify-center rounded-sm px-6 py-3 text-sm font-medium text-white transition-colors duration-150 ease-out hover:opacity-90"
+            href={
+              recommendation
+                ? `/dashboard/trails/${recommendation.trail.slug}`
+                : '/dashboard/trails'
+            }
+            className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             style={{ backgroundColor: '#1B3FC4' }}
           >
-            Start Your Camp Trail &rarr;
+            Start My Camp Trail
           </Link>
-        )}
-        <Link
-          href="/dashboard/trails"
-          className="inline-flex items-center justify-center rounded-sm border px-6 py-3 text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
-          style={{ color: '#1B3FC4', borderColor: '#1B3FC4' }}
-        >
-          Browse All Trails
-        </Link>
+
+          {/* Secondary CTA — delayed 3 seconds, muted (UX Strategy) */}
+          <div
+            className="transition-opacity duration-300 ease-out"
+            style={{ opacity: showSecondary ? 1 : 0 }}
+          >
+            <Link
+              href="/dashboard/upgrade"
+              className="inline-flex items-center gap-1.5 text-sm text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1B3FC4]"
+            >
+              See Full Map
+              <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-[#8896A7]">
+                (Pro)
+              </span>
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -132,7 +132,7 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     // Q1
     supabase
       .from('user_global_stats')
-      .select('global_readiness_score, target_exam_date, current_discipline_id')
+      .select('global_readiness_score, target_exam_date, current_discipline_id, assessment_completed_at, score_reveal_shown_at, global_current_streak, global_longest_streak, last_study_date')
       .eq('user_id', user.id)
       .maybeSingle(),
 
@@ -225,6 +225,116 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
       .select('topic_id, current_mastery_weight, total_attempts')
       .eq('user_id', user.id),
   ])
+
+  // ── Onboarding state queries (UX Strategy Section 7) ────────────────────
+
+  const assessmentCompletedAt = globalStatsResult.data?.assessment_completed_at ?? null
+  const scoreRevealShownAt = globalStatsResult.data?.score_reveal_shown_at ?? null
+
+  // Check user tier
+  const { data: userSub } = await supabase
+    .from('user_subscriptions')
+    .select('tier, status')
+    .eq('user_id', user.id)
+    .maybeSingle()
+
+  const isFreeUser = !userSub || userSub.tier === 'free' || userSub.status !== 'active'
+
+  // Active trail enrollment
+  const { data: activeEnrollment } = await supabase
+    .from('user_trail_enrollments')
+    .select('enrollment_id, trail_id, current_day, status, camp_trails(slug, name, duration_days)')
+    .eq('user_id', user.id)
+    .eq('status', 'active')
+    .order('started_at', { ascending: false })
+    .limit(1)
+    .maybeSingle()
+
+  // Score updates since reveal (for locked widget)
+  let scoreUpdatesSinceReveal = 0
+  if (isFreeUser && scoreRevealShownAt) {
+    const { count } = await supabase
+      .from('readiness_score_snapshots')
+      .select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .gt('computed_at', scoreRevealShownAt)
+    scoreUpdatesSinceReveal = count ?? 0
+  }
+
+  // Determine onboarding state
+  const onboardingState = (() => {
+    if (!assessmentCompletedAt) return 'needs_assessment' as const
+    if (!scoreRevealShownAt && isFreeUser) return 'needs_score_reveal' as const
+    if (!activeEnrollment) return 'needs_trail' as const
+    if (activeEnrollment.status === 'active') return 'active_trail' as const
+    return 'ready' as const
+  })()
+
+  // Get active trail day info
+  let activeTrailDay: {
+    dayNumber: number
+    title: string
+    estimatedMinutes: number
+    trailSlug: string
+    topGapSubject?: string
+  } | null = null
+
+  if (activeEnrollment) {
+    const trailData = activeEnrollment.camp_trails as any
+    const { data: dayData } = await supabase
+      .from('trail_days')
+      .select('title, trail_steps(estimated_minutes)')
+      .eq('trail_id', activeEnrollment.trail_id)
+      .eq('day_number', activeEnrollment.current_day)
+      .maybeSingle()
+
+    const totalMinutes = ((dayData?.trail_steps as any[]) ?? [])
+      .reduce((sum: number, s: any) => sum + (s.estimated_minutes ?? 0), 0)
+
+    activeTrailDay = {
+      dayNumber: activeEnrollment.current_day,
+      title: dayData?.title ?? `Day ${activeEnrollment.current_day}`,
+      estimatedMinutes: totalMinutes,
+      trailSlug: trailData?.slug ?? '',
+    }
+  }
+
+  // ── Streak data (Sprint 2) ──────────────────────────────────────────────
+
+  const lastStudyDate = globalStatsResult.data?.last_study_date ?? null
+  const globalCurrentStreak = globalStatsResult.data?.global_current_streak ?? 0
+  const globalLongestStreak = globalStatsResult.data?.global_longest_streak ?? 0
+
+  const today = new Date().toISOString().split('T')[0]
+  const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+
+  const streakStatus = (() => {
+    if (lastStudyDate === today) return 'active' as const
+    if (lastStudyDate === yesterday) return 'at_risk' as const
+    return 'broken' as const
+  })()
+
+  // ── SRS review data (Sprint 2) ────────────────────────────────────────
+
+  const now = new Date().toISOString()
+  const { data: srsItems } = await supabase
+    .from('user_node_mastery')
+    .select('topic_id, taxonomy_tree(subject_area)')
+    .eq('user_id', user.id)
+    .lte('srs_due_at', now)
+    .gt('total_attempts', 0)
+
+  const srsSubjects = new Set<string>()
+  for (const item of (srsItems ?? [])) {
+    const sa = (item.taxonomy_tree as any)?.subject_area
+    if (sa) srsSubjects.add(sa)
+  }
+
+  const srsReview = {
+    itemsDue: srsItems?.length ?? 0,
+    subjects: Array.from(srsSubjects),
+    estimatedMinutes: Math.max(5, Math.round((srsItems?.length ?? 0) * 1.5)),
+  }
 
   // ── Extract ─────────────────────────────────────────────────────────────
 
@@ -559,6 +669,16 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     dailyArticle,
     recentNotes,
     labModuleCount: labCount ?? 0,
+    onboardingState,
+    scoreUpdatesSinceReveal,
+    isFreeUser,
+    activeTrailDay,
+    streak: {
+      currentStreak: globalCurrentStreak,
+      longestStreak: globalLongestStreak,
+      streakStatus,
+    },
+    srsReview,
   }
 }
 
@@ -643,5 +763,11 @@ function emptyDashboard(userName: string): DashboardPageData {
     dailyArticle: null,
     recentNotes: [],
     labModuleCount: 0,
+    onboardingState: 'needs_assessment',
+    scoreUpdatesSinceReveal: 0,
+    isFreeUser: true,
+    activeTrailDay: null,
+    streak: { currentStreak: 0, longestStreak: 0, streakStatus: 'broken' },
+    srsReview: { itemsDue: 0, subjects: [], estimatedMinutes: 0 },
   }
 }
