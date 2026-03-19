@@ -17,9 +17,9 @@ interface ScoreRevealProps {
 // ─── Zone Colors (UX Strategy Section 4) ─────────────────────────────────
 
 const getZoneColor = (score: number): string => {
-  if (score < 40) return '#D64545'   // Signal Red
+  if (score < 40) return '#E63329'   // Signal Red (UX Strategy --red)
   if (score < 70) return '#E8853A'   // Camp Orange
-  if (score < 85) return '#2D9F6F'   // Emerald / Signal Green
+  if (score < 85) return '#1B7A3C'   // Signal Green (UX Strategy --green)
   return '#1B3FC4'                    // Cobalt Blue
 }
 
@@ -39,9 +39,9 @@ const getRetakerMessage = (score: number): string =>
 // ─── Subject Bar Color ───────────────────────────────────────────────────
 
 const getBarColor = (accuracy: number): string => {
-  if (accuracy < 40) return '#D64545'
+  if (accuracy < 40) return '#E63329'
   if (accuracy < 70) return '#D4951A'
-  return '#2D9F6F'
+  return '#1B7A3C'
 }
 
 // ─── Component ───────────────────────────────────────────────────────────
@@ -66,7 +66,7 @@ const ScoreReveal = ({
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto"
-      style={{ backgroundColor: '#F8F7F5' }}
+      style={{ backgroundColor: '#F2F0EB' }}
     >
       <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
         {/* DM Mono eyebrow — 11px, uppercase */}
@@ -145,7 +145,7 @@ const ScoreReveal = ({
               className="inline-flex items-center gap-1.5 text-sm text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1B3FC4]"
             >
               See Full Map
-              <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-[#8896A7]">
+              <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-[#8896A7]">
                 (Pro)
               </span>
               <span aria-hidden="true">&rarr;</span>

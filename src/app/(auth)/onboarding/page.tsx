@@ -62,6 +62,14 @@ export default async function OnboardingPage() {
       .update(updates)
       .eq('user_id', user.id)
 
+    // Also write target_exam_date to profiles (UX Strategy Section 4)
+    if (examDate) {
+      await supabase
+        .from('profiles')
+        .update({ target_exam_date: examDate })
+        .eq('user_id', user.id)
+    }
+
     revalidatePath('/dashboard', 'layout')
     redirect(ROUTES.DASHBOARD)
   }

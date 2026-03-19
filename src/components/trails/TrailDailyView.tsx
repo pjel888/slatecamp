@@ -247,15 +247,35 @@ export const TrailDailyView = ({
         })}
       </div>
 
-      {/* Footer */}
-      <div className="flex items-center justify-between rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
-        <div className="flex items-center gap-1.5 text-xs text-[#4A5568]">
-          <Clock size={14} className="text-[#8896A7]" />
-          <span>Today&apos;s estimated time: ~{totalEstimatedMinutes} minutes</span>
-        </div>
-        <span className="text-xs text-[#4A5568]">
-          Progress: {totalDaysCompleted} of {trail.duration_days} days completed
-        </span>
+      {/* Day progress bar — UX Strategy: "0/3 → 1/3 → 2/3 → Day Complete" */}
+      {(() => {
+        const requiredSteps = steps.filter((s) => !s.is_optional)
+        const completedCount = requiredSteps.filter((s) => completedSet.has(s.step_id)).length
+        const totalRequired = requiredSteps.length
+        const percent = totalRequired > 0 ? Math.round((completedCount / totalRequired) * 100) : 0
+        return (
+          <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs text-[#4A5568]">
+                Day progress: {completedCount}/{totalRequired} complete
+              </span>
+              <span className="text-xs text-[#8896A7]">
+                ~{totalEstimatedMinutes} min total
+              </span>
+            </div>
+            <div className="h-1.5 w-full rounded-full bg-[#EEF2FC]">
+              <div
+                className="h-1.5 rounded-full bg-[#1B3FC4] transition-all duration-150 ease-out"
+                style={{ width: `${percent}%` }}
+              />
+            </div>
+          </div>
+        )
+      })()}
+
+      {/* Trail-level footer */}
+      <div className="text-center text-xs text-[#8896A7]">
+        {totalDaysCompleted} of {trail.duration_days} trail days completed
       </div>
     </div>
   )

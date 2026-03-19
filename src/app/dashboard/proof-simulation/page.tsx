@@ -120,7 +120,7 @@ const ProofSimulationPage = async () => {
             </h1>
             <p className="mt-4 text-base text-[#4A5568] leading-relaxed">
               The Proof Run mirrors the real ALE. 150 questions. 4 hours.
-              No pause, no feedback. Your result will be your most honest score.
+              No feedback until completion. Your result will be your most honest score.
               It will take time and attention. Start when you&apos;re ready.
             </p>
 

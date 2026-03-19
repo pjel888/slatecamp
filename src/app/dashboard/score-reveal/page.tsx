@@ -42,7 +42,7 @@ const ScoreRevealPage = async () => {
   return (
     <main
       className="min-h-screen"
-      style={{ backgroundColor: '#F8F7F5' }}
+      style={{ backgroundColor: '#F2F0EB' }}
     >
       <ScoreReveal
         score={results.score}

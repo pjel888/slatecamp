@@ -33,8 +33,15 @@ interface TaxonomyHeatmapProps {
 const stateClassMap: Record<NodeState, string> = {
   mastered: 'bg-[#2D9F6F]',
   familiar: 'bg-[#E8853A]',
-  danger: 'bg-[#D64545]',
+  danger: 'bg-[#D64545] animate-pulse',  // subtle pulse — UX Strategy Section 8
   unexplored: 'bg-[#D4DAE3]',
+}
+
+const stateA11yLabel: Record<NodeState, string> = {
+  mastered: 'Strong',
+  familiar: 'Developing',
+  danger: 'Needs work',
+  unexplored: 'Not yet explored',
 }
 
 const DELTA_LABELS: Record<DeltaPeriod, string> = {
@@ -100,10 +107,12 @@ export const TaxonomyHeatmap = ({
                   key={node.id}
                   type='button'
                   onClick={onNodeSelect ? () => onNodeSelect(node) : undefined}
+                  aria-label={`${node.label} — ${stateA11yLabel[node.state]} — ${Math.round(node.progress)}%`}
                   className={cn(
                     'group flex items-center justify-between gap-3 rounded-sm px-2 py-1.5 text-left text-xs',
                     'outline-none ring-0 transition-colors',
                     'hover:bg-[#EEF2FC] focus-visible:bg-[#EEF2FC]',
+                    node.state === 'unexplored' && 'border border-dashed border-[#D4DAE3]',
                   )}
                 >
                   <span className='truncate text-[#1A2332]'>{node.label}</span>

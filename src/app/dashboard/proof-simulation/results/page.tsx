@@ -20,9 +20,9 @@ import SharedPageLayout from '@/components/layouts/SharedPageLayout'
  */
 
 const getZoneColor = (score: number): string => {
-  if (score < 40) return '#D64545'
+  if (score < 40) return '#E63329'
   if (score < 70) return '#E8853A'
-  if (score < 85) return '#2D9F6F'
+  if (score < 85) return '#1B7A3C'
   return '#1B3FC4'
 }
 
