@@ -21,7 +21,7 @@ export async function LandingPageContent() {
   const isLoggedIn = hasSessionCookie
 
   const ctaHref = isLoggedIn ? ROUTES.DASHBOARD : ROUTES.REGISTER
-  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Join the Camp — Free'
+  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Get Your Free Readiness Score'
 
   return (
     <div id='top' className='min-h-screen bg-page-bg'>

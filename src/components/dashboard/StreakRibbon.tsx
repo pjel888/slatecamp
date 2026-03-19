@@ -4,44 +4,48 @@
  * Study Streak Ribbon — UX Strategy Section 9
  * Shows yesterday/today/tomorrow as dot-ribbon, not a raw number.
  * "Trail Streak" — consistency building framing.
+ * Grace Day concept visible when at_risk.
  */
 
 interface StreakRibbonProps {
   currentStreak: number
   streakStatus: 'active' | 'at_risk' | 'broken'
+  /** Grace days remaining this week (UX Strategy: 1/week free, 2/week Pro) */
+  graceDaysRemaining?: number
 }
 
 const DOT_STATES = {
-  completed: 'bg-[#2D9F6F]',      // Emerald — done
-  today_done: 'bg-[#1B3FC4]',     // Cobalt — today completed
-  today_pending: 'border-2 border-[#1B3FC4] bg-transparent', // Today not yet done
-  at_risk: 'border-2 border-[#D4951A] bg-transparent',       // Amber — at risk
-  future: 'border border-[#D4DAE3] bg-transparent',          // Grey — upcoming
-  missed: 'bg-[#D4DAE3]',         // Grey — missed
+  completed: 'bg-[#2D9F6F]',
+  today_done: 'bg-[#1B3FC4]',
+  today_pending: 'border-2 border-[#1B3FC4] bg-transparent',
+  at_risk: 'border-2 border-[#D4951A] bg-transparent',
+  future: 'border border-[#D4DAE3] bg-transparent',
+  missed: 'bg-[#D4DAE3]',
 }
 
-export const StreakRibbon = ({ currentStreak, streakStatus }: StreakRibbonProps) => {
+export const StreakRibbon = ({
+  currentStreak,
+  streakStatus,
+  graceDaysRemaining,
+}: StreakRibbonProps) => {
   if (currentStreak === 0 && streakStatus === 'broken') return null
 
   // Build 7-day ribbon: past 5 days + today + tomorrow
   const dots = Array.from({ length: 7 }).map((_, i) => {
-    const dayOffset = i - 5 // -5 to +1 (yesterday...5 days ago, today, tomorrow)
+    const dayOffset = i - 5
 
     if (dayOffset < 0) {
-      // Past days
       const daysAgo = Math.abs(dayOffset)
       if (daysAgo <= currentStreak) return DOT_STATES.completed
       return DOT_STATES.missed
     }
 
     if (dayOffset === 0) {
-      // Today
       if (streakStatus === 'active') return DOT_STATES.today_done
       if (streakStatus === 'at_risk') return DOT_STATES.at_risk
       return DOT_STATES.today_pending
     }
 
-    // Tomorrow
     return DOT_STATES.future
   })
 
@@ -72,6 +76,12 @@ export const StreakRibbon = ({ currentStreak, streakStatus }: StreakRibbonProps)
       >
         {streakLabel}
       </span>
+      {/* Grace Day indicator — visible when streak is at risk */}
+      {streakStatus === 'at_risk' && graceDaysRemaining !== undefined && graceDaysRemaining > 0 && (
+        <span className="text-[11px] text-[#8896A7]">
+          &middot; {graceDaysRemaining} grace {graceDaysRemaining === 1 ? 'day' : 'days'} left this week
+        </span>
+      )}
     </div>
   )
 }

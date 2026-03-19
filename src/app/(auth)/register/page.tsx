@@ -16,11 +16,11 @@ export default function RegisterPage() {
             {siteConfig.name}
           </Link>
           <h1 className='mt-6 text-xl font-semibold leading-tight tracking-tight text-zinc-900'>
-            Create your account
+            Continue to see your score
           </h1>
           <p className='mt-2 text-sm leading-relaxed text-zinc-500'>
-            Sign in with Google to get started. One account. Everything
-            verified.
+            Create a free account to save your Readiness Score and start
+            your study trail.
           </p>
         </div>
 

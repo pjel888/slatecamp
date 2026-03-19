@@ -15,6 +15,7 @@ import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
+import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
 
 interface PageProps {
   params: Promise<{
@@ -150,6 +151,11 @@ export default async function WikiArticlePage({ params }: PageProps) {
             className="flex-1 overflow-y-auto"
           >
             <div className="max-w-prose mx-auto px-6 py-8">
+              {/* Wrong-answer context banner (UX Strategy Section 6) */}
+              <Suspense fallback={null}>
+                <WrongAnswerBanner />
+              </Suspense>
+
               <WikiArticleHeader
                 title={article.title}
                 updatedAt={article.updated_at}

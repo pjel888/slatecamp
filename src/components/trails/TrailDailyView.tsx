@@ -122,8 +122,30 @@ export const TrailDailyView = ({
     })
   }
 
+  // Detect missed day: current_day > days_completed + 1 means days were skipped
+  const hasMissedDay = enrollment.current_day > (totalDaysCompleted + 1)
+  const missedDayNumber = enrollment.current_day - 1
+
   return (
     <div className="flex flex-col gap-5">
+      {/* Missed day recovery — UX Strategy Section 7 (Alt Path M1) */}
+      {hasMissedDay && (
+        <div className="rounded-md border border-[#D4951A] bg-[#FEF8ED] p-4">
+          <p className="text-sm text-[#1A2332]">
+            You missed Day {missedDayNumber}. Pick it up today, or skip ahead to Day {enrollment.current_day}.
+          </p>
+          <div className="mt-2 flex gap-3">
+            <button
+              type="button"
+              onClick={() => router.push(`/dashboard/trails/${trail.slug}/today`)}
+              className="text-xs font-medium text-[#D4951A] hover:text-[#9A6510] transition-colors duration-150"
+            >
+              Continue with Day {enrollment.current_day}
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div>
         <p className="text-xs font-medium text-[#8896A7] uppercase tracking-wide mb-1">
