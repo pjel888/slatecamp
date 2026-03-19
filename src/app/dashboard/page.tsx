@@ -31,8 +31,22 @@ export default async function DashboardPage() {
         </HeroCommandBar>
 
         {/* ── 2. Content: 4-column grid (scrolls when needed) ──── */}
-        <div className='flex-1 min-h-0 overflow-y-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full min-h-[560px] h-full'>
+        <div className='min-h-0'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
+            {/* Spanning card across columns 1-3 */}
+            <div className='lg:col-span-3 rounded-md border border-[#D4DAE3] bg-white p-2'>
+              <div className='grid grid-cols-3 gap-2 h-full'>
+                <div className='rounded-md bg-[#EEF2FC] min-h-[72px]' />
+                <div className='rounded-md bg-[#EDFAF4] min-h-[72px]' />
+                <div className='rounded-md bg-[#FEF8ED] min-h-[72px]' />
+              </div>
+            </div>
+
+            {/* Column 4: Recent Activity (spans both rows) */}
+            <div className='h-full lg:row-span-2'>
+              <ImprovedActivityFeed sessions={data.recentSessions} />
+            </div>
+
             {/* Column 1: Today's Article */}
             <div className='h-full'>
               <DailyWikiCard
@@ -41,17 +55,12 @@ export default async function DashboardPage() {
               />
             </div>
 
-            {/* Column 2: Subject Mastery (radar chart + progress bars) */}
-            <div className='h-full'>
-              <SubjectMasteryCard data={data.subjectMastery} />
-            </div>
-
-            {/* Column 3: Reserved */}
+            {/* Column 2: Reserved */}
             <div />
 
-            {/* Column 4: Recent Activity */}
+            {/* Column 3: Subject Mastery (radar chart + progress bars) */}
             <div className='h-full'>
-              <ImprovedActivityFeed sessions={data.recentSessions} />
+              <SubjectMasteryCard data={data.subjectMastery} />
             </div>
           </div>
         </div>

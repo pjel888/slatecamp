@@ -53,7 +53,6 @@ export function TimerBar({
         <span
           className={cn(
             'font-medium text-[14px] tabular-nums w-10 transition-colors',
-            isCritical && 'animate-pulse',
             isFinal ? 'text-[#D4951A]' : 'text-[#4A5568]',
           )}
         >

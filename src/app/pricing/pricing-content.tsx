@@ -1,7 +1,9 @@
 'use client'
 
+import { useEffect } from 'react'
 import { Instrument_Serif } from 'next/font/google'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { trackEvent } from '@/lib/analytics'
 import { PricingCard } from '@/components/marketing/PricingCard'
 import {
   INDIVIDUAL_TIERS,
@@ -23,6 +25,8 @@ const TABS = [
 ] as const
 
 export const PricingContent = () => {
+  useEffect(() => { trackEvent({ event_name: 'upgrade_page_viewed' }) }, [])
+
   return (
     <div className="mx-auto max-w-[1200px]">
       <div className="text-center">

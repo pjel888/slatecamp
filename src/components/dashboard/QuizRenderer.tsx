@@ -5,7 +5,7 @@ import { Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
-import { updateQuizSession } from '@/lib/actions/quiz'
+import { updateQuizSession, savePreSessionConfidence, saveErrorType, checkAndGetRelearningQuestions, getSessionQuestions } from '@/lib/actions/quiz'
 import {
   playCorrectSound,
   playCompletionSound,
@@ -13,6 +13,7 @@ import {
 import { ResultsSummary } from './ResultsSummary'
 import { useNoteContext } from '@/lib/context/note-context'
 import { useRouter } from 'next/navigation'
+import { trackEvent } from '@/lib/analytics'
 
 import {
   QuizOverlay,
@@ -25,6 +26,10 @@ import {
   ConfirmSubmitSheet,
   AITutorDrawer,
   ConfidenceToggle,
+  QuestionMap,
+  ConfidenceCheckScreen,
+  ErrorTypePrompt,
+  RestudyLoop,
 } from '@/components/quiz'
 import type { OptionState, QuestionDotState } from '@/components/quiz'
 import type { ConfidenceLevel } from '@/components/quiz/ConfidenceToggle'
@@ -69,8 +74,25 @@ export function QuizRenderer({
 }: QuizRendererProps) {
   const mode = session.test_mode
   const strictMode = mode === 'storm' || mode === 'proof_sim'
+  const showConfidenceCheck = mode === 'camp' || mode === 'storm'
   const router = useRouter()
   const sessionStartRef = useRef<number>(Date.now())
+
+  // ── Pre-session confidence phase ────────────────────────────────────────
+  const [confidencePhase, setConfidencePhase] = useState<'check' | 'quiz'>(
+    showConfidenceCheck ? 'check' : 'quiz',
+  )
+  const [preSessionConfidence, setPreSessionConfidence] = useState<Record<string, number>>({})
+
+  // ── Error taxonomy (post-wrong-answer prompt in camp mode) ─────────────
+  const [showErrorPrompt, setShowErrorPrompt] = useState(false)
+  const [errorPromptQuestionId, setErrorPromptQuestionId] = useState<string | null>(null)
+
+  // ── Successive relearning (Feature 6) ───────────────────────────────────
+  const [showRestudyLoop, setShowRestudyLoop] = useState(false)
+  const [restudyQuestionIds, setRestudyQuestionIds] = useState<string[]>([])
+  const [restudyTopicName, setRestudyTopicName] = useState('')
+  const restudyCheckInFlight = useRef(false)
 
   // ── Core state ────────────────────────────────────────────────────────────
   const [currentIndex, setCurrentIndex] = useState(
@@ -384,9 +406,42 @@ export function QuizRenderer({
     if (mode === 'camp' || mode === 'blindspot') {
       startDwell(isCorrect)
     }
+
+    // Error taxonomy: show prompt after wrong answers in camp mode
+    if (!isCorrect && mode === 'camp') {
+      setShowErrorPrompt(true)
+      setErrorPromptQuestionId(currentQuestion.question_id)
+
+      // Feature 6: Check for successive relearning trigger (async, non-blocking)
+      if (!restudyCheckInFlight.current) {
+        restudyCheckInFlight.current = true
+        checkAndGetRelearningQuestions(
+          currentQuestion.question_id,
+          currentQuestion.topic_id,
+          questions.map((q) => q.question_id),
+        ).then((result) => {
+          if (result.isRepeatFailure && result.restudyQuestionIds.length > 0) {
+            setRestudyQuestionIds(result.restudyQuestionIds)
+            setRestudyTopicName(currentQuestion.subject_id || currentQuestion.topic_id)
+          }
+          restudyCheckInFlight.current = false
+        }).catch(() => {
+          restudyCheckInFlight.current = false
+        })
+      }
+    }
   }
 
   const handleNext = useCallback(() => {
+    // Feature 6: If restudy questions are queued, show the loop first
+    if (restudyQuestionIds.length > 0 && !showRestudyLoop) {
+      setShowRestudyLoop(true)
+      setIsRationaleVisible(false)
+      setShowErrorPrompt(false)
+      clearDwell()
+      return
+    }
+
     const prevIndex = currentIndex
     if (currentIndex < questions.length - 1) {
       setCurrentIndex((prev) => prev + 1)
@@ -398,7 +453,23 @@ export function QuizRenderer({
     } else if (strictMode) {
       handleFinalSubmit()
     }
-  }, [currentIndex, questions.length, strictMode, clearDwell, resetQuestionTimer, trackNavigation]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [currentIndex, questions.length, strictMode, clearDwell, resetQuestionTimer, trackNavigation, restudyQuestionIds, showRestudyLoop]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleRestudyComplete = () => {
+    setShowRestudyLoop(false)
+    setRestudyQuestionIds([])
+    setRestudyTopicName('')
+    // Now advance to next question
+    const prevIndex = currentIndex
+    if (currentIndex < questions.length - 1) {
+      setCurrentIndex((prev) => prev + 1)
+      setIsRationaleVisible(false)
+      setIsAIOpen(false)
+      clearDwell()
+      resetQuestionTimer()
+      trackNavigation(prevIndex, currentIndex + 1)
+    }
+  }
 
   const handleBack = () => {
     const prevIndex = currentIndex
@@ -430,10 +501,13 @@ export function QuizRenderer({
     } catch (error) {
       console.error('Final submit DB update failed:', error)
     } finally {
+      const duration = Date.now() - sessionStartRef.current
+      trackEvent({ event_name: 'quiz_session_completed', event_properties: { test_mode: mode, score: Object.entries(answers).filter(([qId, ans]) => { const q = questions.find(qq => qq.question_id === qId); return q && ans === (q.correct_option_id ?? (q as any).correct_answer) }).length, duration_ms: duration }, session_id: session.session_id })
+
       clearLS(session.session_id)
       setIsSaving(false)
       setIsSubmitSheetOpen(false)
-      setSessionDurationMs(Date.now() - sessionStartRef.current)
+      setSessionDurationMs(duration)
       playCompletionSound()
       setIsCompleted(true)
     }
@@ -559,6 +633,15 @@ export function QuizRenderer({
             : undefined
         }
       />
+      {/* Error taxonomy prompt — shown after wrong answers in camp mode */}
+      {showErrorPrompt && errorPromptQuestionId === currentQuestion.question_id && isRationaleVisible && selectedAnswer !== correctOptionId && (
+        <div className="px-5 max-w-[900px] mx-auto">
+          <ErrorTypePrompt
+            onSelect={handleErrorTypeSelect}
+            onSkip={handleErrorTypeSkip}
+          />
+        </div>
+      )}
       <AITutorDrawer
         question={currentQuestion}
         selectedOptionId={selectedAnswer}
@@ -586,7 +669,55 @@ export function QuizRenderer({
     />
   )
 
+  // ── Derive unique subject names for confidence check ─────────────────────
+  const subjectNamesForConfidence = useMemo(() => {
+    const unique = new Set<string>()
+    questions.forEach((q) => {
+      if (q.subject_id) unique.add(q.subject_id)
+    })
+    return Array.from(unique)
+  }, [questions])
+
+  const handleConfidenceSubmit = async (ratings: Record<string, number>) => {
+    setPreSessionConfidence(ratings)
+    setConfidencePhase('quiz')
+    // Fire and forget — never block quiz start
+    savePreSessionConfidence(session.session_id, ratings).catch(() => {})
+  }
+
+  const handleConfidenceSkip = () => {
+    setConfidencePhase('quiz')
+    // Save empty ratings
+    savePreSessionConfidence(session.session_id, {}).catch(() => {})
+  }
+
+  // ── Error taxonomy handler ──────────────────────────────────────────────
+  const handleErrorTypeSelect = (errorType: string) => {
+    if (errorPromptQuestionId) {
+      saveErrorType(session.session_id, errorPromptQuestionId, errorType).catch(() => {})
+    }
+    setShowErrorPrompt(false)
+    setErrorPromptQuestionId(null)
+  }
+
+  const handleErrorTypeSkip = () => {
+    setShowErrorPrompt(false)
+    setErrorPromptQuestionId(null)
+  }
+
   // ── Render ────────────────────────────────────────────────────────────────
+
+  if (confidencePhase === 'check' && !isCompleted) {
+    return (
+      <QuizOverlay>
+        <ConfidenceCheckScreen
+          subjectNames={subjectNamesForConfidence}
+          onSubmit={handleConfidenceSubmit}
+          onSkip={handleConfidenceSkip}
+        />
+      </QuizOverlay>
+    )
+  }
 
   if (isCompleted) {
     return (
@@ -594,11 +725,27 @@ export function QuizRenderer({
         questions={questions}
         answers={answers}
         testMode={mode}
+        sessionId={session.session_id}
         sessionDurationMs={sessionDurationMs}
+        preSessionConfidence={preSessionConfidence}
         onExit={onExit}
         onRestart={onExit}
         onStartFocusedReview={(topicIds) => { onExit() }}
+        onRetryWrongAnswers={(questionIds) => { onExit() }}
       />
+    )
+  }
+
+  // Feature 6: Successive relearning loop overlay
+  if (showRestudyLoop && restudyQuestionIds.length > 0) {
+    return (
+      <QuizOverlay>
+        <RestudyLoop
+          topicName={restudyTopicName}
+          questionIds={restudyQuestionIds}
+          onComplete={handleRestudyComplete}
+        />
+      </QuizOverlay>
     )
   }
 
@@ -641,6 +788,14 @@ export function QuizRenderer({
             setIsSubmitSheetOpen(true)
           }
         }}
+        questionMap={
+          <QuestionMap
+            dots={dots}
+            currentIndex={currentIndex}
+            onJump={handleJump}
+            disabled={strictMode}
+          />
+        }
       />
 
       {/* Timer bar — strict mode only */}
@@ -705,6 +860,7 @@ export function QuizRenderer({
         onConfirm={handleFinalSubmit}
         onCancel={() => setIsSubmitSheetOpen(false)}
         onExit={() => {
+          trackEvent({ event_name: 'quiz_session_abandoned', event_properties: { test_mode: mode, questions_answered: Object.keys(answers).length, total_questions: questions.length }, session_id: session.session_id })
           setIsSubmitSheetOpen(false)
           onExit()
         }}

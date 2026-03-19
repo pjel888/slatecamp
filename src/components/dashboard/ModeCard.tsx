@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 
 interface ModeCardProps {
   title: string
+  subtitle?: string
   description: string
   icon: PhosphorIcon
   accentColor: string
@@ -20,10 +21,24 @@ interface ModeCardProps {
   onSecondaryAction?: () => void
   hasActiveSession?: boolean
   disabled?: boolean
+  sessionCount?: number
+  lastPlayedAt?: string | null
+  muted?: boolean
+}
+
+const formatTimeAgo = (dateStr: string): string => {
+  const diff = Date.now() - new Date(dateStr).getTime()
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+  if (days === 0) return 'Today'
+  if (days === 1) return 'Yesterday'
+  if (days < 7) return `${days} days ago`
+  if (days < 30) return `${Math.floor(days / 7)}w ago`
+  return `${Math.floor(days / 30)}mo ago`
 }
 
 export function ModeCard({
   title,
+  subtitle,
   description,
   icon: Icon,
   accentColor,
@@ -32,31 +47,54 @@ export function ModeCard({
   onSecondaryAction,
   hasActiveSession,
   disabled,
+  sessionCount,
+  lastPlayedAt,
+  muted,
 }: ModeCardProps) {
   return (
     <div
       className={cn(
         'group relative bg-white border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 flex flex-col h-full',
         disabled && 'opacity-60 grayscale pointer-events-none',
+        muted && 'opacity-70',
       )}
     >
       {/* Icon Header */}
-      <div
-        className={cn(
-          'w-12 h-12 rounded-md flex items-center justify-center mb-6',
-          accentColor,
-        )}
-      >
-        <SCIcon icon={Icon} size='lg' className='text-white' />
+      <div className='flex items-center gap-4 mb-4'>
+        <div
+          className={cn(
+            'w-12 h-12 rounded-md flex items-center justify-center shrink-0',
+            accentColor,
+          )}
+        >
+          <SCIcon icon={Icon} size='lg' className='text-white' />
+        </div>
+        <div className='min-w-0'>
+          <h3 className='text-sm font-semibold text-[#1A2332] leading-tight'>{title}</h3>
+          {subtitle && (
+            <span className='text-[11px] font-bold uppercase tracking-widest text-[#8896A7]'>
+              {subtitle}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Content */}
       <div className='flex-1'>
-        <h3 className='text-sm font-semibold text-[#1A2332] mb-2'>{title}</h3>
-        <p className='text-sm text-[#4A5568] leading-relaxed mb-6'>
+        <p className='text-sm text-[#4A5568] leading-relaxed mb-4 line-clamp-2'>
           {description}
         </p>
       </div>
+
+      {/* Micro-stats */}
+      {(sessionCount !== undefined && sessionCount > 0) && (
+        <div className='mb-4 pb-3 border-b border-border/60'>
+          <p className='text-[11px] text-[#8896A7] font-medium'>
+            {sessionCount} session{sessionCount !== 1 ? 's' : ''}
+            {lastPlayedAt && <> &middot; Last: {formatTimeAgo(lastPlayedAt)}</>}
+          </p>
+        </div>
+      )}
 
       {/* Actions */}
       <div className='flex flex-col gap-2 mt-auto'>

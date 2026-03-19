@@ -1,6 +1,11 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ensureUserGlobalStats } from '@/lib/actions/user-stats'
 
+export interface ModeStats {
+  sessionCount: number
+  lastPlayedAt: string | null
+}
+
 export async function getTestingPageData(params: { topicId?: string; subjectId?: string }) {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
@@ -9,45 +14,75 @@ export async function getTestingPageData(params: { topicId?: string; subjectId?:
   const stats = await ensureUserGlobalStats()
   if (!stats) return null
 
-  // 1. Look for existing in-progress session
-  const { data: existingSession } = await supabase
+  // 1. Look for existing in-progress session (any mode)
+  const existingSessionPromise = supabase
     .from('quiz_sessions')
     .select('*')
     .eq('user_id', user.id)
     .eq('status', 'in_progress')
-    .eq('test_mode', 'camp')
-    .order('created_at', { ascending: false })
+    .order('started_at', { ascending: false })
     .limit(1)
     .maybeSingle()
 
-  // 2. Fetch question IDs scoped to this discipline's leaf nodes only
-  let questionIds: string[] = []
+  // 2. Fetch per-mode session stats (completed sessions)
+  const modeStatsPromise = supabase
+    .from('quiz_sessions')
+    .select('test_mode, started_at')
+    .eq('user_id', user.id)
+    .eq('status', 'completed')
+    .order('started_at', { ascending: false })
+
+  // 3. Fetch question IDs + subjects in parallel
+  let questionIdsPromise: Promise<string[]> = Promise.resolve([])
   if (!params.topicId && !params.subjectId) {
-    const { data: leafNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id')
-      .eq('discipline_id', stats.current_discipline_id)
-      .eq('is_leaf', true)
+    questionIdsPromise = (async () => {
+      const { data: leafNodes } = await supabase
+        .from('taxonomy_tree')
+        .select('node_id')
+        .eq('discipline_id', stats.current_discipline_id)
+        .eq('is_leaf', true)
 
-    const leafIds = (leafNodes || []).map((n: { node_id: string }) => n.node_id)
+      const leafIds = (leafNodes || []).map((n: { node_id: string }) => n.node_id)
+      if (leafIds.length === 0) return []
 
-    if (leafIds.length > 0) {
       const { data: allQuestions } = await supabase
         .from('questions')
         .select('question_id')
         .in('topic_id', leafIds)
-      questionIds = (allQuestions || []).map((q: { question_id: string }) => q.question_id)
-    }
+      return (allQuestions || []).map((q: { question_id: string }) => q.question_id)
+    })()
   }
 
-  // 3. Fetch top-level subjects for custom session builder
-  const { data: subjects } = await supabase
+  const subjectsPromise = supabase
     .from('taxonomy_tree')
     .select('*')
     .eq('discipline_id', stats.current_discipline_id)
     .eq('level', 1)
     .order('name')
 
+  const [
+    { data: existingSession },
+    { data: completedSessions },
+    questionIds,
+    { data: subjects },
+  ] = await Promise.all([
+    existingSessionPromise,
+    modeStatsPromise,
+    questionIdsPromise,
+    subjectsPromise,
+  ])
+
+  // Aggregate mode stats
+  const modeStatsMap: Record<string, ModeStats> = {}
+  for (const s of completedSessions || []) {
+    const mode = s.test_mode as string
+    if (!modeStatsMap[mode]) {
+      modeStatsMap[mode] = { sessionCount: 0, lastPlayedAt: s.started_at }
+    }
+    modeStatsMap[mode].sessionCount++
+  }
+
+  const totalCompletedSessions = (completedSessions || []).length
   const disciplineName = (stats as any).disciplines?.name || 'Architecture'
 
   return {
@@ -56,5 +91,7 @@ export async function getTestingPageData(params: { topicId?: string; subjectId?:
     disciplineName,
     subjects: subjects || [],
     questionIds,
+    modeStats: modeStatsMap,
+    totalCompletedSessions,
   }
 }

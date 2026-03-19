@@ -5,6 +5,7 @@ import { ROUTES } from '@/lib/constants/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 
 import { Discipline } from '@/types/app'
+import { StudyWindowSelector } from '@/components/settings/StudyWindowSelector'
 
 export default async function OnboardingPage() {
   const supabase = await createClient()
@@ -102,6 +103,17 @@ export default async function OnboardingPage() {
             Continue
           </button>
         </form>
+
+        {/* Study window preference — sleep-aware scheduling */}
+        <div className='pt-4 border-t border-zinc-200'>
+          <p className='text-sm font-medium text-zinc-900 mb-3'>
+            When do you usually study?
+          </p>
+          <p className='text-xs text-zinc-500 mb-3'>
+            Optional — helps us order your trail activities for better retention.
+          </p>
+          <StudyWindowSelector compact />
+        </div>
       </div>
     </div>
   )

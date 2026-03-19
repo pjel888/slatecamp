@@ -23,6 +23,8 @@ export default async function TestingPage({ searchParams }: PageProps) {
         disciplineName={data.disciplineName}
         subjects={data.subjects}
         allQuestionIds={data.questionIds}
+        modeStats={data.modeStats}
+        totalCompletedSessions={data.totalCompletedSessions}
       />
     </div>
   )

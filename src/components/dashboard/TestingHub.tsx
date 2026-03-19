@@ -16,6 +16,7 @@ import { ModeCard } from './ModeCard'
 import { CustomSessionBuilder } from './CustomSessionBuilder'
 import { SubjectDrillSelector } from './SubjectDrillSelector'
 import type { QuizSession, TaxonomyNode } from '@/types/app'
+import type { ModeStats } from '@/lib/actions/testing'
 
 interface TestingHubProps {
   initialSession: QuizSession | null
@@ -36,6 +37,8 @@ interface TestingHubProps {
     nodeName: string
     masteryScore: number
   } | null
+  modeStats?: Record<string, ModeStats>
+  totalCompletedSessions?: number
 }
 
 export function TestingHub({
@@ -46,10 +49,13 @@ export function TestingHub({
   onResumeSession,
   readinessScore = 0,
   decayedNode,
+  modeStats = {},
+  totalCompletedSessions = 0,
 }: TestingHubProps) {
   const [isBuilderOpen, setIsBuilderOpen] = useState(false)
   const [isSubjectDrillOpen, setIsSubjectDrillOpen] = useState(false)
   const canUnlockProofSim = readinessScore >= 0.65
+  const isNewUser = totalCompletedSessions < 5
 
   return (
     <div className='max-w-6xl mx-auto px-4 py-12'>
@@ -116,7 +122,8 @@ export function TestingHub({
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             <ModeCard
               title='Camp Mode'
-              description='Learn as you go — a great starting point for new topics. Every answer comes with clear, expert-written rationales.'
+              subtitle='Guided'
+              description='Build foundations with instant feedback and expert rationales on every answer.'
               icon={Brain}
               accentColor='bg-primary'
               primaryActionLabel='Start Camp'
@@ -127,10 +134,13 @@ export function TestingHub({
                   : undefined
               }
               hasActiveSession={initialSession?.test_mode === 'camp'}
+              sessionCount={modeStats.camp?.sessionCount}
+              lastPlayedAt={modeStats.camp?.lastPlayedAt}
             />
             <ModeCard
               title='Chill Mode'
-              description='Browse and absorb at a relaxed pace — ideal for pre-sleep review or low-energy days. Continuous, pressure-free feed.'
+              subtitle='Relaxed'
+              description='Browse and absorb at your own pace — ideal for low-energy review.'
               icon={Coffee}
               accentColor='bg-[#1B3FC4]'
               primaryActionLabel='Enter Chill'
@@ -143,6 +153,8 @@ export function TestingHub({
                   : undefined
               }
               hasActiveSession={initialSession?.test_mode === 'chill'}
+              sessionCount={modeStats.chill?.sessionCount}
+              lastPlayedAt={modeStats.chill?.lastPlayedAt}
             />
           </div>
         </section>
@@ -158,15 +170,18 @@ export function TestingHub({
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             <ModeCard
               title='Subject Mode'
-              description="Pick a topic and go deep — see your mastery score and how recently you've practiced each area to find the right focus."
+              subtitle='Focused'
+              description='Pick a topic and go deep with mastery-aware question selection.'
               icon={Target}
               accentColor='bg-primary'
               primaryActionLabel='Choose a Topic'
               onPrimaryAction={() => setIsSubjectDrillOpen(true)}
+              muted={isNewUser}
             />
             <ModeCard
-              title='Blindspot Mode'
-              description="Revisit the topics you've practiced least — the system surfaces areas where focused repetition will have the most impact."
+              title='Focus Review'
+              subtitle='Targeted'
+              description='Resurface your weakest areas where focused repetition has the most impact.'
               icon={ShieldCheck}
               accentColor='bg-[#D4951A]'
               primaryActionLabel='Revisit Weak Areas'
@@ -177,29 +192,22 @@ export function TestingHub({
                   : undefined
               }
               hasActiveSession={initialSession?.test_mode === 'blindspot'}
+              sessionCount={modeStats.blindspot?.sessionCount}
+              lastPlayedAt={modeStats.blindspot?.lastPlayedAt}
+              muted={isNewUser}
             />
-            <div
-              onClick={() => setIsBuilderOpen(true)}
-              className='group relative bg-white border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 cursor-pointer flex flex-col h-full'
-            >
-              <div className='w-12 h-12 rounded-md bg-zinc-700 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110'>
-                <SCIcon icon={GearSix} size='lg' className='text-white' />
-              </div>
-              <div className='flex-1'>
-                <h3 className='text-sm font-semibold text-[#1A2332] mb-2'>
-                  Custom Session
-                </h3>
-                <p className='text-sm text-[#4A5568] leading-relaxed mb-6'>
-                  Design your own session — choose the topics, question count,
-                  and feedback style that fit what you need today.
-                </p>
-              </div>
-              <div className='mt-auto'>
-                <div className='w-full py-2 bg-zinc-50 rounded-sm text-[#1A2332] text-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all'>
-                  Build Session
-                </div>
-              </div>
-            </div>
+            <ModeCard
+              title='Custom Session'
+              subtitle='Flexible'
+              description='Choose your topics, question count, and feedback style.'
+              icon={GearSix}
+              accentColor='bg-zinc-700'
+              primaryActionLabel='Build Session'
+              onPrimaryAction={() => setIsBuilderOpen(true)}
+              sessionCount={modeStats.custom?.sessionCount}
+              lastPlayedAt={modeStats.custom?.lastPlayedAt}
+              muted={isNewUser}
+            />
           </div>
         </section>
 
@@ -214,7 +222,8 @@ export function TestingHub({
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             <ModeCard
               title='Storm Mode'
-              description='Practice under realistic exam conditions — timed questions, no rationales shown until the end. The closest thing to exam day.'
+              subtitle='Timed'
+              description='Timed questions with no feedback until the end — the closest thing to exam day.'
               icon={Lightning}
               accentColor='bg-[#D64545]'
               primaryActionLabel='Begin Storm'
@@ -227,13 +236,17 @@ export function TestingHub({
                   : undefined
               }
               hasActiveSession={initialSession?.test_mode === 'storm'}
+              sessionCount={modeStats.storm?.sessionCount}
+              lastPlayedAt={modeStats.storm?.lastPlayedAt}
+              muted={isNewUser}
             />
             <ModeCard
               title='Full Exam Simulation'
+              subtitle='Exam Day'
               description={
                 canUnlockProofSim
-                  ? 'Your full-length exam rehearsal — 100 questions across the full syllabus. Review unlocks 24 hours after completion.'
-                  : `Unlocks when your Readiness Score reaches 65%. You're currently at ${Math.round(readinessScore * 100)}% — keep going.`
+                  ? '100 questions across the full syllabus. Review unlocks 24 hours after.'
+                  : `Unlocks at 65% Readiness. Currently at ${Math.round(readinessScore * 100)}%.`
               }
               icon={ShieldCheck}
               accentColor='bg-zinc-900'
@@ -246,16 +259,22 @@ export function TestingHub({
                 })
               }
               disabled={!canUnlockProofSim}
+              sessionCount={modeStats.proof_sim?.sessionCount}
+              lastPlayedAt={modeStats.proof_sim?.lastPlayedAt}
             />
             <ModeCard
               title='Extended Practice'
-              description='Build your focus gradually — sessions grow longer each week to prepare you for the sustained concentration exam day requires.'
+              subtitle='Endurance'
+              description='Sessions grow longer each week to build sustained exam-day concentration.'
               icon={Pulse}
               accentColor='bg-[#D4951A]'
               primaryActionLabel='Start Session'
               onPrimaryAction={() =>
                 onStartSession({ mode: 'endurance', count: 20 })
               }
+              sessionCount={modeStats.endurance?.sessionCount}
+              lastPlayedAt={modeStats.endurance?.lastPlayedAt}
+              muted={isNewUser}
             />
           </div>
         </section>

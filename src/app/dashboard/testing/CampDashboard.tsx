@@ -3,8 +3,10 @@ import React, { useState, useEffect } from 'react'
 import { TestingHub } from '@/components/dashboard/TestingHub'
 import { QuizRenderer } from '@/components/dashboard/QuizRenderer'
 import { ModeIntroScreen } from '@/components/dashboard/ModeIntroScreen'
-import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore, getQuestionsByTopic, getMostDecayedNode } from '@/lib/actions/quiz'
+import { createQuizSession, deleteQuizSession, getSessionQuestions, getSessionInteractions, getUserReadinessScore, getQuestionsByTopic, getMostDecayedNode, selectContextualVariationQuestions } from '@/lib/actions/quiz'
+import { trackEvent } from '@/lib/analytics'
 import type { QuizSession, Question, TaxonomyNode, TestMode } from '@/types/app'
+import type { ModeStats } from '@/lib/actions/testing'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 interface CampDashboardProps {
@@ -13,16 +15,20 @@ interface CampDashboardProps {
   disciplineName: string
   subjects: TaxonomyNode[]
   allQuestionIds: string[]
+  modeStats: Record<string, ModeStats>
+  totalCompletedSessions: number
 }
 
 type ViewState = 'hub' | 'intro' | 'quiz'
 
-export function CampDashboard({ 
-  initialSession, 
-  disciplineId, 
-  disciplineName, 
+export function CampDashboard({
+  initialSession,
+  disciplineId,
+  disciplineName,
   subjects,
-  allQuestionIds 
+  allQuestionIds,
+  modeStats,
+  totalCompletedSessions,
 }: CampDashboardProps) {
   const [session, setSession] = useState<QuizSession | null>(initialSession)
   const [questions, setQuestions] = useState<Question[]>([])
@@ -98,15 +104,23 @@ export function CampDashboard({
       }
 
       let selectedIds: string[] = []
-      
+
+      // Feature 5: Contextual Variation — if flag is set and we have topic IDs
+      if (pendingConfig.config?.contextual_variation && pendingConfig.topicIds?.length) {
+        selectedIds = await selectContextualVariationQuestions(
+          pendingConfig.topicIds,
+          pendingConfig.count,
+        )
+      }
+
       // If we have targeted topics/subjects, fetch specific questions
-      if (pendingConfig.topicIds?.length || pendingConfig.subjectIds?.length) {
+      if (selectedIds.length === 0 && (pendingConfig.topicIds?.length || pendingConfig.subjectIds?.length)) {
         const targetId = pendingConfig.topicIds?.[0] || pendingConfig.subjectIds?.[0]
         if (targetId) {
           selectedIds = await getQuestionsByTopic(targetId, pendingConfig.count)
         }
-      } 
-      
+      }
+
       // Fallback to general shuffle if no targeted questions found or provided
       if (selectedIds.length === 0) {
         const shuffled = [...allQuestionIds].sort(() => 0.5 - Math.random())
@@ -126,6 +140,8 @@ export function CampDashboard({
         getSessionQuestions(newSession.question_ids),
         getSessionInteractions(newSession.session_id)
       ])
+
+      trackEvent({ event_name: 'quiz_session_started', event_properties: { test_mode: pendingConfig.mode, question_count: selectedIds.length }, session_id: newSession.session_id })
 
       setInstantFeedback(pendingConfig.instantFeedback !== false)
       setSession(newSession)
@@ -185,6 +201,8 @@ export function CampDashboard({
         onResumeSession={handleResumeSession}
         readinessScore={readinessScore}
         decayedNode={decayedNode}
+        modeStats={modeStats}
+        totalCompletedSessions={totalCompletedSessions}
       />
     )
   }

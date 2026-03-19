@@ -695,3 +695,111 @@ export interface FinalStretchData {
     suggestedCount: number;
   }>;
 }
+
+// =============================================
+// Camp Trail Types
+// =============================================
+
+export type TrailType = 'time_gated' | 'subject_mastery' | 'code_deep_dive' | 'remediation' | 'exam_simulation'
+export type TrailIntensity = 'intensive' | 'accelerated' | 'standard' | 'comprehensive' | 'undergraduate'
+export type TrailStepType = 'quiz' | 'wiki' | 'lab' | 'review'
+export type TrailEnrollmentStatus = 'active' | 'paused' | 'completed' | 'abandoned'
+
+export interface CampTrail {
+  trail_id: string
+  discipline_id: string
+  name: string
+  slug: string
+  description: string | null
+  trail_type: TrailType
+  intensity: TrailIntensity | null
+  duration_days: number
+  total_steps: number
+  is_published: boolean
+  is_featured: boolean
+  recommended_min_score: number | null
+  recommended_max_score: number | null
+  created_at: string
+  updated_at: string
+}
+
+export interface TrailDay {
+  day_id: string
+  trail_id: string
+  day_number: number
+  title: string
+  description: string | null
+  estimated_minutes: number
+  created_at: string
+  steps?: TrailStep[]
+}
+
+export interface TrailStep {
+  step_id: string
+  day_id: string
+  step_order: number
+  step_type: TrailStepType
+  title: string
+  description: string | null
+  target_node_ids: string[]
+  question_count: number | null
+  difficulty_min: number
+  difficulty_max: number
+  article_id: string | null
+  model_id: string | null
+  estimated_minutes: number
+  is_optional: boolean
+  preferred_time: string | null
+  created_at: string
+}
+
+export interface TrailEnrollment {
+  enrollment_id: string
+  user_id: string
+  trail_id: string
+  status: TrailEnrollmentStatus
+  current_day: number
+  days_completed: number
+  last_activity_at: string | null
+  started_at: string
+  paused_at: string | null
+  completed_at: string | null
+  target_completion_date: string | null
+  readiness_score_at_start: number | null
+  pace_status: string
+  created_at: string
+  updated_at: string
+  camp_trails?: CampTrail
+}
+
+export interface TrailProgress {
+  progress_id: string
+  enrollment_id: string
+  user_id: string
+  step_id: string
+  completed_at: string
+  session_id: string | null
+  time_spent_ms: number | null
+}
+
+export interface TrailDayCompletion {
+  day_completion_id: string
+  enrollment_id: string
+  day_id: string
+  user_id: string
+  completed_at: string
+  readiness_score_at_completion: number | null
+}
+
+export interface TrailRecommendation {
+  trail: CampTrail
+  reasoning: string
+  weekOnePreview: string
+}
+
+export interface AssessmentSubjectScore {
+  subjectArea: string
+  total: number
+  correct: number
+  accuracy: number
+}

@@ -40,6 +40,8 @@ export async function POST(request: Request) {
       const tier: UserTier =
         (session.metadata?.tier as UserTier) ?? "camp";
 
+      const userId = session.metadata?.userId || "";
+
       const { error } = await supabase
         .from("user_subscriptions")
         .update({
@@ -49,9 +51,18 @@ export async function POST(request: Request) {
           status: 'active',
           updated_at: new Date().toISOString(),
         })
-        .eq("user_id", session.metadata?.userId || ""); // Rely on metadata for accuracy
+        .eq("user_id", userId);
 
       if (error) console.error("Subscription update error:", error);
+
+      // Funnel event: pro_subscribed
+      if (userId) {
+        await supabase.from("analytics_events").insert({
+          user_id: userId,
+          event_name: "pro_subscribed",
+          event_properties: { plan: tier, stripe_subscription_id: subscriptionId },
+        }).then(() => {});
+      }
       break;
     }
 

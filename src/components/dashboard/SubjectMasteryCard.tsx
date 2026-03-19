@@ -301,7 +301,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             </TooltipContent>
           </Tooltip>
         </div>
-        <p className='text-[11px] text-[#8896A7] mb-2'>
+        <p className='text-[11px] text-[#8896A7] mb-1'>
           Hover a wedge to see your score
         </p>
 
@@ -319,7 +319,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             </Link>
           </div>
         ) : (
-          <div className='w-full max-w-[220px] mx-auto shrink-0'>
+          <div className='w-full max-w-[200px] mx-auto shrink-0'>
             <RadialHeatmap data={data} animated={animated} />
           </div>
         )}
@@ -330,6 +330,9 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B] shrink-0'>
           [ Breakdown ]
         </h4>
+        <p className='text-[11px] text-[#8896A7] mb-2'>
+          Your mastery per subject area
+        </p>
 
         <div className='flex flex-col flex-1 min-h-0 justify-evenly'>
           {data.map((item, i) => {
@@ -347,7 +350,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                     {clamped}%
                   </span>
                 </div>
-                <div className='h-1.5 w-full bg-white rounded-full overflow-hidden border border-[#E8E4DC] mt-0.5'>
+                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-[#E8E4DC]'>
                   <div
                     className='h-full rounded-full'
                     style={{
@@ -358,7 +361,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                   />
                 </div>
                 <span
-                  className='text-[11px] font-medium block'
+                  className='text-[11px] font-medium block leading-tight'
                   style={{ color: barColor === MASTERY_COLORS.unexplored ? '#8896A7' : barColor }}
                 >
                   {label}

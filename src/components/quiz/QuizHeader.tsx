@@ -37,6 +37,7 @@ interface QuizHeaderProps {
   onFlag: () => void
   onAI: () => void
   onExit: () => void
+  questionMap?: React.ReactNode
 }
 
 export function QuizHeader({
@@ -50,6 +51,7 @@ export function QuizHeader({
   onFlag,
   onAI,
   onExit,
+  questionMap,
 }: QuizHeaderProps) {
   const progress = ((currentIndex + 1) / totalQuestions) * 100
   const isStrict = mode === 'storm' || mode === 'proof_sim'
@@ -97,7 +99,7 @@ export function QuizHeader({
             )}
           >
             <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
-            <span className="hidden sm:inline">Flag</span>
+            <span className="hidden sm:inline">{isFlagged ? 'Flagged' : 'Review later'}</span>
           </button>
 
           <button
@@ -108,6 +110,8 @@ export function QuizHeader({
             <SCIcon icon={ChatCircle} size="xs" />
             <span className="hidden sm:inline">AI</span>
           </button>
+
+          {questionMap}
 
           <div className="w-px h-4 bg-[#D4DAE3] mx-1" aria-hidden />
 
@@ -121,8 +125,8 @@ export function QuizHeader({
         </div>
       </div>
 
-      {/* Progress bar */}
-      <div className="h-[3px] w-full bg-[#EEF2FC]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions} aria-label="Quiz progress">
+      {/* Progress bar — 4px, Cobalt fill, fraction display above */}
+      <div className="h-1 w-full bg-[#EEF2FC]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions} aria-label="Quiz progress">
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',

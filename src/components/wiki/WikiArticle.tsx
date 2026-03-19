@@ -8,6 +8,7 @@ import { WikiNoteAnchor } from './WikiNoteAnchor'
 import { WikiTextSelection } from './WikiTextSelection'
 import { Note, Warn, Tip, Example, Callout } from './WikiCallout'
 import PHBuildingSetbacks from '../interactive-illustrations/2D/SetbackIllustration'
+import { ElaborativeInterrogation } from './ElaborativeInterrogation'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -79,6 +80,35 @@ const mdxComponents = {
   PHBuildingSetbacks: (props: React.HTMLAttributes<HTMLDivElement>) => {
     return <PHBuildingSetbacks {...props} />
   },
+
+  // Elaborative Interrogation blocks
+  EIBlock: (props: { question: string; answer: string; articleId?: string }) => {
+    return (
+      <ElaborativeInterrogation
+        question={props.question}
+        answer={props.answer}
+        articleId={props.articleId}
+      />
+    )
+  },
+}
+
+/**
+ * Pre-processes wiki content to convert [EI]...[/EI] tags into
+ * <EIBlock> JSX components for Elaborative Interrogation.
+ */
+const preprocessEITags = (content: string, articleId?: string): string => {
+  // Match [EI]question[/EI] followed by content until the next heading, EI tag, or end
+  const eiRegex = /\[EI\]([\s\S]*?)\[\/EI\]/g
+  return content.replace(eiRegex, (_match, question: string) => {
+    const trimmedQuestion = question.trim()
+    // Escape quotes for JSX attribute
+    const escapedQuestion = trimmedQuestion.replace(/"/g, '&quot;')
+    const escapedArticleId = articleId ? ` articleId="${articleId}"` : ''
+    // The answer will be revealed from the content that follows naturally
+    // We use a simple approach: the EI block is self-contained
+    return `<EIBlock question="${escapedQuestion}" answer=""${escapedArticleId} />`
+  })
 }
 
 /**
@@ -100,7 +130,8 @@ export async function WikiArticle({ article, nodeId, nodeName }: WikiArticleProp
   if (!article) return null
 
   const content = article.content || ''
-  const processedContent = content.replace(/\\n/g, '\n')
+  const rawContent = content.replace(/\\n/g, '\n')
+  const processedContent = preprocessEITags(rawContent, article.article_id)
 
   return (
     <>

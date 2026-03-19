@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
 import { getReadinessLabel } from '@/lib/constants/readiness'
+import { trackEvent } from '@/lib/analytics'
 import type { HeroMicroStat } from '@/types/dashboard'
 
 // ── Readiness ring SVG ──────────────────────────────────────────────────────
@@ -100,6 +101,8 @@ export function HeroCommandBar({
   syllabusCoveragePercent,
   children,
 }: HeroCommandBarProps) {
+  useEffect(() => { trackEvent({ event_name: 'readiness_score_viewed', event_properties: { current_score: readinessScore } }) }, [readinessScore])
+
   const greeting = useMemo(() => {
     const hour = new Date().getHours()
     if (hour < 5) return 'Good evening'

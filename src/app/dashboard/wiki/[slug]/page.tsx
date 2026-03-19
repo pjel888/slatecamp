@@ -13,6 +13,8 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
+import { getTeachBackCriteria } from '@/lib/actions/teach-back'
+import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
 
 interface PageProps {
   params: Promise<{
@@ -92,6 +94,11 @@ export default async function WikiArticlePage({ params }: PageProps) {
     : `/dashboard/testing?articleId=${article.article_id}`
   const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
 
+  // Check if teach-back criteria exist for this topic
+  const teachBackCriteria = node?.node_id
+    ? await getTeachBackCriteria(node.node_id)
+    : null
+
   // Related topics: sibling articles under the same parent taxonomy node
   let relatedTopics: { slug: string; title: string }[] = []
   if (node?.parent_id) {
@@ -154,6 +161,15 @@ export default async function WikiArticlePage({ params }: PageProps) {
                 nodeId={node?.node_id}
                 nodeName={node?.name}
               />
+
+              {/* Feature 7: Feynman Teach-Back (only if criteria exist for this topic) */}
+              {teachBackCriteria && node?.node_id && node?.name && (
+                <TeachBackPrompt
+                  topicId={node.node_id}
+                  topicName={node.name}
+                  entryPoint="wiki"
+                />
+              )}
             </div>
           </div>
 

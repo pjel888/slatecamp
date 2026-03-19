@@ -1,6 +1,11 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { computeScoreVelocity } from '@/lib/readiness/velocity'
+import { computeUserSignals } from '@/lib/signals/compute'
+import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
+import { checkDailyCap, incrementDailyCount } from '@/lib/paywall/daily-cap'
+import { computeAccuracyByBlock, updateEnduranceSignals } from '@/lib/endurance/compute'
 import type {
   QuizSession,
   Question,
@@ -94,10 +99,20 @@ export async function updateQuizSession(
         .eq('session_id', sessionId)
         .eq('user_id', user.id)
       if (fallbackError) throw fallbackError
+      // Fire-and-forget: compute signals after session completion
+      void computeUserSignals(user.id)
       return { success: true }
     }
     throw error
   }
+
+  // Fire-and-forget: compute signals after session completion
+  if (updates.status === 'completed') {
+    void computeUserSignals(user.id)
+    // Write accuracy-by-block for endurance tracking
+    void writeAccuracyByBlock(supabase, sessionId, user.id)
+  }
+
   return { success: true }
 }
 
@@ -237,6 +252,31 @@ async function recordMastery(
           .in('snapshot_id', idsToDelete)
       }
     }
+
+    // 6. Score Velocity (DS Report: pts/day over 7d)
+    try {
+      const { data: recentSnapshots } = await supabase
+        .from('readiness_score_snapshots')
+        .select('score, computed_at')
+        .eq('user_id', user_id)
+        .order('computed_at', { ascending: false })
+        .limit(30)
+
+      if (recentSnapshots && recentSnapshots.length >= 2) {
+        const { velocity } = computeScoreVelocity(
+          recentSnapshots as Array<{ score: number; computed_at: string }>
+        )
+        await supabase
+          .from('user_global_stats')
+          .update({
+            score_velocity_7d: velocity,
+            score_velocity_updated_at: new Date().toISOString(),
+          })
+          .eq('user_id', user_id)
+      }
+    } catch {
+      // Velocity is non-critical — never block mastery recording
+    }
   }
 }
 
@@ -328,8 +368,79 @@ export async function saveInteraction(interaction: {
       difficulty,
       suspected_guess,
     )
+
+    // SRS scheduling update (Camp Mode only — Storm/Proof use different cadence)
+    if (session.test_mode === 'camp' || session.test_mode === 'blindspot') {
+      const { data: currentMastery } = await supabase
+        .from('user_node_mastery')
+        .select('avg_time_ms')
+        .eq('user_id', user.id)
+        .eq('topic_id', interaction.topic_id)
+        .single()
+
+      const quality = deriveQualityRating({
+        isCorrect: interaction.is_correct,
+        timeSpentMs: interaction.time_spent_ms,
+        avgTimeMs: currentMastery?.avg_time_ms ?? 10000,
+        confidence: interaction.confidence ?? null,
+        isSuspectedLuckyGuess: suspected_guess,
+      })
+      void updateSrsSchedule(user.id, interaction.topic_id, quality)
+    }
   }
 
+  // Increment daily question count for free users (fire-and-forget)
+  void incrementDailyCount(user.id)
+
+  return { success: true }
+}
+
+export async function savePreSessionConfidence(
+  sessionId: string,
+  ratings: Record<string, number>,
+) {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  const { error } = await supabase
+    .from('quiz_sessions')
+    .update({ pre_session_confidence_ratings: ratings })
+    .eq('session_id', sessionId)
+    .eq('user_id', user.id)
+
+  if (error) {
+    // Column may not exist — silently fail so quiz isn't blocked
+    console.warn('[confidence] Could not save pre-session ratings:', error.message)
+    return { success: false }
+  }
+  return { success: true }
+}
+
+export async function saveErrorType(
+  sessionId: string,
+  questionId: string,
+  errorType: string,
+) {
+  const supabase = await createClient()
+  const {
+    data: { user },
+  } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  const { error } = await supabase
+    .from('user_interactions')
+    .update({ error_type: errorType })
+    .eq('session_id', sessionId)
+    .eq('question_id', questionId)
+    .eq('user_id', user.id)
+
+  if (error) {
+    console.warn('[error_type] Could not save error type:', error.message)
+    return { success: false }
+  }
   return { success: true }
 }
 
@@ -372,6 +483,96 @@ export async function getQuestionsByTopic(nodeId: string, limit: number = 20) {
   return (questions || []).map(q => q.question_id)
 }
 
+/**
+ * Feature 6: Successive Relearning Loop
+ * Checks if the user has previously answered this question incorrectly.
+ * If so, returns 3 additional questions from the same topic for immediate re-study.
+ */
+export async function checkAndGetRelearningQuestions(
+  questionId: string,
+  topicId: string,
+  currentSessionQuestionIds: string[],
+): Promise<{ isRepeatFailure: boolean; restudyQuestionIds: string[] }> {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return { isRepeatFailure: false, restudyQuestionIds: [] }
+
+  // Check if user has previously answered this question incorrectly
+  const { count } = await supabase
+    .from('user_interactions')
+    .select('*', { count: 'exact', head: true })
+    .eq('user_id', user.id)
+    .eq('question_id', questionId)
+    .eq('is_correct', false)
+
+  if (!count || count === 0) {
+    return { isRepeatFailure: false, restudyQuestionIds: [] }
+  }
+
+  // Repeat failure detected — fetch 3 questions from the same topic
+  // Exclude questions already in this session
+  const { data: restudyQuestions } = await supabase
+    .from('questions')
+    .select('question_id')
+    .eq('topic_id', topicId)
+    .not('question_id', 'in', `(${currentSessionQuestionIds.map(id => `"${id}"`).join(',')})`)
+    .limit(3)
+
+  return {
+    isRepeatFailure: true,
+    restudyQuestionIds: (restudyQuestions || []).map(
+      (q: { question_id: string }) => q.question_id,
+    ),
+  }
+}
+
+/**
+ * Feature 5: Contextual Variation Practice
+ * Selects one question per application_context value for each target node.
+ * This forces pattern recognition across recall, calculation, design, code, and scenario contexts.
+ */
+export async function selectContextualVariationQuestions(
+  nodeIds: string[],
+  totalCount: number,
+): Promise<string[]> {
+  const supabase = await createClient()
+  const contexts = ['recall', 'calculation', 'design_application', 'code_interpretation', 'client_scenario']
+  const selectedIds: string[] = []
+
+  for (const nodeId of nodeIds) {
+    for (const context of contexts) {
+      if (selectedIds.length >= totalCount) break
+
+      const { data } = await supabase
+        .from('questions')
+        .select('question_id')
+        .eq('topic_id', nodeId)
+        .eq('application_context', context)
+        .limit(1)
+        .order('difficulty', { ascending: false })
+
+      if (data?.[0]) selectedIds.push(data[0].question_id)
+    }
+    if (selectedIds.length >= totalCount) break
+  }
+
+  // If not enough context variety, fill with remaining questions from those nodes
+  if (selectedIds.length < totalCount) {
+    const { data: fallback } = await supabase
+      .from('questions')
+      .select('question_id')
+      .in('topic_id', nodeIds)
+      .not('question_id', 'in', `(${selectedIds.map(id => `"${id}"`).join(',')})`)
+      .limit(totalCount - selectedIds.length)
+
+    if (fallback) {
+      selectedIds.push(...fallback.map((q: { question_id: string }) => q.question_id))
+    }
+  }
+
+  return selectedIds
+}
+
 export async function createQuizSession(params: {
   discipline_id: string
   test_mode: TestMode
@@ -385,6 +586,17 @@ export async function createQuizSession(params: {
     data: { user },
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
+
+  // Free tier daily cap enforcement — check BEFORE creating the session
+  const capResult = await checkDailyCap(user.id)
+  if (!capResult.allowed) {
+    return {
+      error: 'daily_cap_reached',
+      remaining: capResult.remaining,
+      cap: capResult.cap,
+      resetsAt: capResult.resetsAt,
+    } as unknown as QuizSession
+  }
 
   const { data: session, error } = await supabase
     .from('quiz_sessions')
@@ -406,6 +618,21 @@ export async function createQuizSession(params: {
     .single()
 
   if (error) throw error
+
+  // Track first_session_at for marketing attribution
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('first_session_at')
+    .eq('user_id', user.id)
+    .single()
+
+  if (stats && !stats.first_session_at) {
+    await supabase
+      .from('user_global_stats')
+      .update({ first_session_at: new Date().toISOString() })
+      .eq('user_id', user.id)
+  }
+
   return session as QuizSession
 }
 
@@ -497,5 +724,55 @@ export async function getMostDecayedNode(disciplineId: string) {
     nodeId: weakest.topic_id as string,
     nodeName: (leafMap.get(weakest.topic_id) ?? 'Unknown Topic') as string,
     masteryScore: Math.round((weakest.current_mastery_weight as number) * 100),
+  }
+}
+
+/**
+ * Write accuracy-by-block data to quiz_sessions on completion.
+ * Enables Endurance Cycle analysis and Cognitive Stamina chart.
+ * Silent on failure.
+ */
+const writeAccuracyByBlock = async (
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  sessionId: string,
+  userId: string,
+): Promise<void> => {
+  try {
+    const { data: interactions } = await supabase
+      .from('user_interactions')
+      .select('question_order, is_correct')
+      .eq('session_id', sessionId)
+      .eq('user_id', userId)
+      .order('question_order', { ascending: true })
+
+    if (interactions && interactions.length > 0) {
+      const blocks = computeAccuracyByBlock(
+        interactions as { question_order: number; is_correct: boolean }[],
+      )
+      await supabase
+        .from('quiz_sessions')
+        .update({ accuracy_by_block: blocks })
+        .eq('session_id', sessionId)
+
+      // If this is an endurance session, update endurance signals
+      const { data: sessionData } = await supabase
+        .from('quiz_sessions')
+        .select('is_endurance_session')
+        .eq('session_id', sessionId)
+        .single()
+
+      if (sessionData?.is_endurance_session) {
+        const { data: signals } = await supabase
+          .from('user_computed_signals')
+          .select('endurance_baseline_items')
+          .eq('user_id', userId)
+          .maybeSingle()
+
+        const isCalibrationWeek = !signals?.endurance_baseline_items
+        void updateEnduranceSignals(userId, blocks, isCalibrationWeek)
+      }
+    }
+  } catch {
+    // Silent — block accuracy is non-critical
   }
 }
