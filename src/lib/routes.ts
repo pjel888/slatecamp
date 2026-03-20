@@ -7,6 +7,7 @@ import {
   Globe,
   Brain,
   FileText,
+  Path,
 } from '@phosphor-icons/react'
 
 export interface RouteConfig {
@@ -30,6 +31,11 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     path: '/dashboard/wiki',
     title: 'Wiki',
     icon: Globe,
+  },
+  {
+    path: '/dashboard/camptrails',
+    title: 'CampTrails',
+    icon: Path,
   },
   {
     path: '/dashboard/review',

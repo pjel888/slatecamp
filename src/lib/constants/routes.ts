@@ -23,6 +23,7 @@ export const ROUTES = {
   REVIEW: "/dashboard/review",
   REVIEW_EXITED: "/dashboard/review?exited=1",
   ANALYTICS: "/dashboard/analytics",
+  CAMPTRAILS: "/dashboard/camptrails",
   WIKI: "/dashboard/wiki",
   WIKI_PAGE: (slug: string) => `/dashboard/wiki/${slug}`,
   WIKI_SUBJECT: (slug: string) => `/dashboard/wiki/subject/${slug}`,

@@ -22,6 +22,7 @@ import {
   ClipboardText,
   BookOpen,
   Globe,
+  Path,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
@@ -32,6 +33,7 @@ const NAV_ITEMS = [
   { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
   { href: ROUTES.QUIZ, label: 'Quiz', icon: Brain },
   { href: ROUTES.SESSIONS, label: 'Sessions', icon: ClipboardText },
+  { href: ROUTES.CAMPTRAILS, label: 'CampTrails', icon: Path },
   { href: ROUTES.REVIEW, label: 'Review', icon: BookOpen },
   { href: ROUTES.ANALYTICS, label: 'Analytics', icon: ChartBar },
   { href: ROUTES.LIBRARY, label: 'Library', icon: Books },
