@@ -1,194 +1,93 @@
-# Coding Conventions
+# Code Conventions
 
-**Analysis Date:** 2026-03-19
+## Component Patterns
 
-## Naming Patterns
+### Server vs Client Split
+- **Default:** Server Components (no directive needed)
+- **Client:** `'use client'` only for interactivity (hooks, event handlers, browser APIs)
+- **Pattern:** ~30 client components vs hundreds of server components
 
-**Files:**
-- Components: PascalCase (e.g., `WikiArticle.tsx`, `QuizRenderer.tsx`, `HeroCommandBar.tsx`)
-- Functions/utilities: camelCase (e.g., `getPacingQuadrantData.ts`, `updateTheta.ts`)
-- Server actions: camelCase (e.g., `quiz.ts`, `analytics.ts`, `assessment.ts`)
-- Types: `types/app.ts`, `types/supabase.ts` — all type definitions in dedicated files
-- Tests: match source file with `.test.ts` suffix (e.g., `irt.test.ts`, `nbcpCalculator.test.ts`)
+### Component Organization
+- Page-specific components co-located with pages (e.g., `CampDashboard.tsx` in `src/app/dashboard/testing/`)
+- Private components in `_components/` directories
+- Shared UI in `src/components/ui/` (shadcn primitives)
+- Domain components in `src/components/{domain}/` (wiki, quiz, dashboard, etc.)
 
-**Functions:**
-- camelCase: `getQuizSession`, `getSessionQuestions`, `updateQuizSession`, `probabilityCorrect`, `fetchTaxonomyNodeMap`
-- Server actions (exported from `'use server'` files): camelCase async functions (e.g., `getSrsReviewData`, `hasCompletedAssessment`)
-- Private helpers: camelCase with `_` prefix or nested scope (e.g., `buildLevel1Resolver`, `getMasteryState`)
+### Styling
+- **Tailwind-first** — All styling via Tailwind utility classes
+- **`cn()` utility** — Always use for class merging: `cn('base-class', conditional && 'optional-class')`
+- **CVA** — `class-variance-authority` for variant-based component APIs
+- **No CSS modules** — All Tailwind, no `.module.css` files
+- **Design tokens** — Campfire palette defined in CLAUDE.md, enforced via constants
 
-**Variables:**
-- Constants: UPPER_SNAKE_CASE when module-level (e.g., `PACING_TARGET_MS`, `PASSING_ACCURACY`, `LS_KEY`)
-- Local variables: camelCase (e.g., `selectedYear`, `containerW`, `dueItems`, `subjectSet`)
-- React state: camelCase for both state and setter (e.g., `const [selectedYear, setSelectedYear] = useState()`)
+## Data Patterns
 
-**Types:**
-- Interfaces: PascalCase (e.g., `WikiArticle`, `QuizSession`, `Question`, `ReadinessTrajectoryPoint`, `PacingQuadrantPoint`)
-- Type aliases (unions/primitives): PascalCase (e.g., `UserTier`, `TestMode`, `SessionStatus`)
-- Generic types in interfaces: PascalCase (e.g., `Choice`, `TaxonomyNode`)
+### Server Actions
+- All mutations via `'use server'` functions in `src/lib/actions/`
+- Pattern: validate → get user → query Supabase → return typed result
+- Error handling: try/catch with typed error returns (not throwing)
+- Cache invalidation: `revalidatePath()` after mutations
+
+### Supabase Client Usage
+- **Server:** `await createClient()` from `src/lib/supabase/server.ts` (cookie-based)
+- **Client:** `createClient()` from `src/lib/supabase/client.ts` (browser client)
+- **Admin:** `createAdminClient()` from `src/lib/supabase/admin.ts` (service role, bypasses RLS)
+- **Demo:** All clients fall back to mock when `NEXT_PUBLIC_SUPABASE_URL` is absent
+
+### State Management
+- **Minimal Zustand** — Only `src/stores/dev-store.ts` (dev impersonation)
+- **React Context** — `src/lib/context/note-context.tsx`
+- **Custom hooks** — `src/hooks/quiz/` for quiz state, timers, telemetry, persistence
+- **Server-first** — Most state lives on the server, minimal client state
 
 ## Code Style
 
-**Formatting:**
-- No `.prettierrc` or `.editorconfig` in repo root
-- Enforced by Next.js ESLint config defaults
-- Line length: no enforced max (common: 80-100 characters in practice)
+### TypeScript
+- **Strict mode disabled** (`strict: false`, `noImplicitAny: false`, `strictNullChecks: false`)
+- **`as any` usage:** 25 occurrences across 10 files — mostly in analytics and dashboard actions
+- **Arrow functions preferred** — Per user feedback, always use arrow functions
+- **Path alias:** `@/*` maps to `src/*`
 
-**Linting:**
-- Tool: ESLint 9.39.4 with `eslint-config-next`
-- Config: `eslint.config.mjs` (flat config format)
-- Key rules:
-  - Allow `setState` in effects for valid patterns (`react-hooks/set-state-in-effect: off`)
-  - Allow unused args/vars prefixed with `_` (`@typescript-eslint/no-unused-vars: warn` with `argsIgnorePattern: "^_"`)
-  - Allow `<img>` tag (not enforcing `next/image` universally)
-- Linting command: `npm run lint` / `npm run lint:fix`
+### Naming
+- **Functions:** camelCase (`getPageTitle`, `createClient`, `checkRateLimit`)
+- **Components:** PascalCase (`WikiSidebar`, `QuizRenderer`)
+- **Files:** kebab-case for utilities/actions, PascalCase for components
+- **Types:** PascalCase interfaces and types
+- **Constants:** SCREAMING_SNAKE_CASE (`FEATURE_FLAGS`, `DASHBOARD_ROUTES`)
 
-**TypeScript:**
-- Compiler: TypeScript 5.9.3
-- Config: `tsconfig.json` with `strict: false` and `noImplicitAny: false`
-- Path alias: `@/*` maps to `./src/*`
-- All imports use absolute paths with `@/` prefix
-- Generic `any` type permitted (loose checking by design)
+### Error Handling
+- Server actions: try/catch returning `{ error: string }` or `{ data: T }`
+- API routes: try/catch with `NextResponse.json({ error }, { status })`
+- Client: Error boundaries not heavily used; toast notifications for user feedback
+- Silent catches in some areas (SSE parsing, cookie setting)
 
-## Import Organization
+### Imports
+- Absolute imports via `@/` alias
+- No barrel exports — direct file imports
+- Types imported with `import type` where possible
 
-**Order:**
-1. React/external framework imports (`import React`, `import { useState }`)
-2. Next.js imports (`import { revalidatePath }`, `import { MDXRemote }`)
-3. External libraries (`import { createClient }`, `import type { ... }`)
-4. Internal absolute imports (`import { ... } from '@/lib/...'`, `import type { ... } from '@/types/...'`)
-5. Local relative imports (rare, only for same-directory co-location)
+## Feature Flag Pattern
 
-**Path Aliases:**
-- `@/lib/` — shared utilities, server actions, helpers
-- `@/types/` — TypeScript interfaces and types
-- `@/components/` — React components
-- `@/app/` — Next.js App Router pages and layouts
+```typescript
+// Definition: src/config/feature-flags.ts
+export const FEATURE_FLAGS = {
+  ai_tutor_access: {
+    key: 'ai_tutor_access',
+    defaultValue: false,
+    description: 'AI Contextual Tutor access',
+    category: 'access',
+  },
+} as const satisfies Record<string, FeatureFlagDefinition>
 
-**Type Imports:**
-- Always use `import type` for type-only imports to reduce bundle size
-- Example: `import type { Question, TestMode } from '@/types/app'`
+// Resolution: dev override → DB value → config default
+// Hook: src/lib/hooks/useFeatureFlag.ts
+// Action: src/lib/actions/feature-flags.ts
+```
 
-## Error Handling Convention
+## Voice & Content Rules
 
-| Path type | Error strategy | Reason |
-|---|---|---|
-| Auth failures | `throw new Error('Unauthorized')` | Triggers Next.js error boundary, redirects to login |
-| Critical quiz mutations | `throw error` (let it bubble) | Session integrity matters — fail loudly |
-| Analytics / non-critical reads | `return null` or `return []` + `console.error` | Graceful degradation, dashboard still renders |
-| Server action form returns | `return { ok: false, error: 'message' }` | Client can handle and show toast |
-
-**Patterns:**
-- Supabase errors: Destructure `{ data, error }` from responses; throw errors explicitly:
-  ```typescript
-  const { data: session, error } = await supabase
-    .from('quiz_sessions')
-    .select('*')
-    .eq('session_id', sessionId)
-
-  if (error) throw error
-  ```
-- Guard clauses for auth: Check `user` upfront, throw `Unauthorized`:
-  ```typescript
-  if (!user) throw new Error('Unauthorized')
-  ```
-- Non-critical reads: Log the error, return safe default:
-  ```typescript
-  if (error || !data) {
-    if (error) console.error('[DOMAIN] functionName failed:', { error: error.message, timestamp: new Date().toISOString() })
-    return []
-  }
-  ```
-- Optional coalescing: Default values for missing IRT fields:
-  ```typescript
-  const b = question.difficulty_rating || 0.5
-  const a = question.discrimination_rating || 1
-  ```
-
-## Logging
-
-**Framework:** `console` object directly (no logging library)
-
-**Patterns:**
-- Analytics events: Use `trackServerEvent()` for server-side actions (see `src/lib/analytics-server.ts`)
-- Client-side tracking: `trackEvent()` imported from analytics module
-- No structured logging; events tracked via dedicated analytics functions
-
-## Comments
-
-**When to Comment:**
-- **Math-heavy logic:** Always document formulas and parameters (e.g., IRT 2-parameter model formula)
-- **Non-obvious decisions:** Explain the "why" when logic isn't self-evident
-- **Accessibility/Layout:** Use dashes for section dividers in complex components
-
-**JSDoc/TSDoc:**
-- Used sparingly
-- Blocks above exported functions in server action files (e.g., `src/lib/actions/assessment.ts`)
-- Standard format:
-  ```typescript
-  /**
-   * Brief description of what this function does.
-   * Optional additional context about edge cases or assumptions.
-   */
-  export async function functionName() { ... }
-  ```
-- No parameter-level `@param` tags; rely on type annotations for clarity
-
-**Inline Comments:**
-- Single-line `//` for clarifications within functions
-- Sectioning with ASCII dashes: `// ── Analytics data interfaces ────────────────────────`
-- Explain non-obvious behavior: `// Sort questions to match the order in questionIds`
-
-## Function Design
-
-**Size:** No enforced max lines; median 20-50 lines for utility functions
-
-**Parameters:**
-- Typed parameters with explicit types (no implicit `any`)
-- Objects for >3 parameters (e.g., `NBCPInputs` interface for calculator)
-- Async functions consistently use `await` for dependent calls
-
-**Return Values:**
-- Explicit return types in all exported functions
-- Async functions return `Promise<T>`
-- Type guards and null checks before returning:
-  ```typescript
-  if (!user) return false
-  if (!data?.assessment_completed_at) return null
-  ```
-
-## Module Design
-
-**Exports:**
-- Named exports for functions and constants
-- Single `export default` for React components (e.g., `export default DashboardPage`)
-- All types exported as named exports from `src/types/`
-
-**Barrel Files:**
-- Not observed in codebase; each module imports from specific files
-- Example: Import from `@/lib/actions/quiz` not from generic `@/lib/actions`
-
-**Server Components:**
-- Files with `'use server'` directive at top (e.g., `quiz.ts`, `assessment.ts`, `srs-review.ts`)
-- Direct database queries within these files
-- Async functions that must be awaited on client
-
-## Structural Patterns
-
-**Next.js App Router:**
-- Pages in `src/app/` with `page.tsx`
-- Layouts: `layout.tsx` at directory level (e.g., `src/app/(auth)/layout.tsx`)
-- Dynamic routes: `[slug]/page.tsx` syntax
-- API routes: `src/app/api/` directory
-
-**Component Co-location:**
-- Small components live in `_components/` subdirectory within route
-- Example: `src/app/(auth)/onboarding/_components/OnboardingForm.tsx`
-- Larger utilities in `src/lib/` or `src/components/`
-
-**Zustand/State Management:**
-- No global state store observed; primarily React Context + useState
-- Server actions for persistence (Supabase writes)
-
----
-
-*Convention analysis: 2026-03-19*
+Per CLAUDE.md "Confident Companion" voice:
+- Growth-framed messaging ("42 topics covered" not "58 remaining")
+- No militaristic language (use "practice" not "drill", "master" not "dominate")
+- Minimum text size: 11px (never 8-10px)
+- Monospace only on code/data values, never on labels
