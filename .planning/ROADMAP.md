@@ -66,10 +66,10 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- SidebarProvider context, shared types, z-index scale (foundation)
-- [ ] 03-02-PLAN.md -- SidebarNavItem, SidebarNavGroup, SidebarRail (72px icon rail)
-- [ ] 03-03-PLAN.md -- SidebarOverlay with AnimatePresence, SidebarPanel, SidebarHeader
-- [ ] 03-04-PLAN.md -- SidebarUserProfile, SidebarUpgradeCTA, SidebarFooter
+- [x] 03-01-PLAN.md -- SidebarProvider context, shared types, z-index scale (foundation)
+- [x] 03-02-PLAN.md -- SidebarNavItem, SidebarNavGroup, SidebarRail (72px icon rail)
+- [x] 03-03-PLAN.md -- SidebarOverlay with AnimatePresence, SidebarPanel, SidebarHeader
+- [x] 03-04-PLAN.md -- SidebarUserProfile, SidebarUpgradeCTA, SidebarFooter
 - [ ] 03-05-PLAN.md -- Layout wiring, SidebarShell, ThemeToggle migration to Settings page
 
 ## Progress
@@ -81,4 +81,4 @@ Phases execute in numeric order: 1 -> 2 -> 3
 |-------|----------------|--------|-----------|
 | 1. Route Foundation | 1/1 | Complete | 2026-03-20 |
 | 2. Grouped Navigation | 2/2 | Complete | 2026-03-20 |
-| 3. Complete Sidebar | 0/5 | Not started | - |
+| 3. Complete Sidebar | 4/5 | In progress | - |

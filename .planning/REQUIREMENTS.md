@@ -29,15 +29,15 @@
 
 ### User Profile & Account
 
-- [ ] **ACC-01**: Avatar + display name + tier badge shown at top of sidebar (below logo)
-- [ ] **ACC-02**: Account popover at bottom (settings link, theme toggle, logout)
-- [ ] **ACC-03**: Account popover uses DropdownMenu for keyboard nav support
-- [ ] **ACC-04**: Tier badge displays current plan (free, pro, max, institutional, educational, corporate)
+- [x] **ACC-01**: Avatar + display name + tier badge shown at top of sidebar (below logo)
+- [x] **ACC-02**: ~~Account popover at bottom~~ Settings is a plain nav link in footer (user decision: no popover, no ThemeToggle)
+- [x] **ACC-03**: ~~Account popover uses DropdownMenu~~ No popover needed (user decision: Settings is a SidebarNavItem link)
+- [x] **ACC-04**: Tier badge displays current plan (free, pro, max, institutional, educational, corporate)
 
 ### Freemium & Monetization
 
-- [ ] **FRM-01**: Upgrade CTA card pinned above account popover (freemium users only)
-- [ ] **FRM-02**: Ad/partner slot in same position (future-ready, not implemented yet)
+- [x] **FRM-01**: Upgrade CTA card pinned above Settings link (freemium users only)
+- [x] **FRM-02**: Ad/partner slot in same position (future-ready, documented via component comment)
 
 ### Visual Polish
 
@@ -96,12 +96,12 @@
 | OVR-05 | Phase 5 | Complete |
 | OVR-06 | Phase 5 | Complete |
 | OVR-07 | Phase 3 | Complete |
-| ACC-01 | Phase 6 | Pending |
-| ACC-02 | Phase 7 | Pending |
-| ACC-03 | Phase 7 | Pending |
-| ACC-04 | Phase 6 | Pending |
-| FRM-01 | Phase 8 | Pending |
-| FRM-02 | Phase 8 | Pending |
+| ACC-01 | Phase 3 | Complete |
+| ACC-02 | Phase 3 | Complete (overridden) |
+| ACC-03 | Phase 3 | Complete (overridden) |
+| ACC-04 | Phase 3 | Complete |
+| FRM-01 | Phase 3 | Complete |
+| FRM-02 | Phase 3 | Complete |
 | VIS-01 | Phase 9 | Complete |
 | VIS-02 | Phase 9 | Complete |
 | VIS-03 | Phase 9 | Complete |
