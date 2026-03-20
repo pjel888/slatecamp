@@ -34,7 +34,7 @@ import {
 import type { UserTier } from '@/types/app'
 import { ROUTES } from '@/lib/constants/routes'
 import { SlateCampLogo } from '../ui/SlateCampLogo'
-import { SIDEBAR_NAVIGATION } from '@/lib/routes'
+import { GROUPED_NAVIGATION } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 
 function getInitials(name: string, email?: string): string {
@@ -339,22 +339,50 @@ export const Sidebar = ({
 
         {/* Navigation Links */}
         <nav className='flex-1 space-y-1 py-4'>
-          {SIDEBAR_NAVIGATION.map(({ href, label, icon }) => {
-            const isActive =
-              pathname === href ||
-              (href !== '/dashboard' && pathname.startsWith(href))
-            return (
-              <SidebarItem
-                key={href}
-                href={href}
-                label={label}
-                icon={icon}
-                isActive={isActive}
-                collapsed={collapsed}
-                onBeforeNavigate={(e) => handleNavClick(e, href)}
-              />
-            )
-          })}
+          {/* Dashboard standalone item */}
+          <SidebarItem
+            key={GROUPED_NAVIGATION.dashboard.href}
+            href={GROUPED_NAVIGATION.dashboard.href}
+            label={GROUPED_NAVIGATION.dashboard.label}
+            icon={GROUPED_NAVIGATION.dashboard.icon}
+            isActive={pathname === GROUPED_NAVIGATION.dashboard.href}
+            collapsed={collapsed}
+            onBeforeNavigate={(e) => handleNavClick(e, GROUPED_NAVIGATION.dashboard.href)}
+          />
+
+          {/* Separator between Dashboard and first group */}
+          <div className="mx-2 my-2 border-b border-border" />
+
+          {/* Grouped navigation sections */}
+          {GROUPED_NAVIGATION.groups.map(({ config, items }) => (
+            <div key={config.key}>
+              {/* Group label -- hidden when collapsed, visible when expanded */}
+              {!collapsed && (
+                <div className="px-2 pt-4 pb-1">
+                  <span className="text-[11px] font-medium text-[#8896A7]">
+                    {config.label}
+                  </span>
+                </div>
+              )}
+              {/* Group items */}
+              <div className="space-y-1">
+                {items.map(({ href, label, icon }) => {
+                  const isActive = pathname === href || (href !== '/dashboard' && pathname.startsWith(href))
+                  return (
+                    <SidebarItem
+                      key={href}
+                      href={href}
+                      label={label}
+                      icon={icon}
+                      isActive={isActive}
+                      collapsed={collapsed}
+                      onBeforeNavigate={(e) => handleNavClick(e, href)}
+                    />
+                  )
+                })}
+              </div>
+            </div>
+          ))}
 
           {isAdmin && (
             <>
@@ -374,11 +402,19 @@ export const Sidebar = ({
         </nav>
       </div>
 
-      {/* 4. Footer Area (Theme Toggle) */}
-      <div className='border-t border-border p-3'>
+      {/* 4. Footer Area (Settings + Theme Toggle) */}
+      <div className='border-t border-border px-3 py-2'>
+        <SidebarItem
+          href={GROUPED_NAVIGATION.settings.href}
+          label={GROUPED_NAVIGATION.settings.label}
+          icon={GROUPED_NAVIGATION.settings.icon}
+          isActive={pathname === GROUPED_NAVIGATION.settings.href || pathname.startsWith(GROUPED_NAVIGATION.settings.href)}
+          collapsed={collapsed}
+          onBeforeNavigate={(e) => handleNavClick(e, GROUPED_NAVIGATION.settings.href)}
+        />
         <div
           className={cn(
-            'flex transition-all duration-300',
+            'flex pt-1 transition-all duration-300',
             collapsed ? 'justify-center' : 'justify-start px-2',
           )}
         >
