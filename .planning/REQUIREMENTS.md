@@ -20,9 +20,9 @@
 ### Overlay Behavior
 
 - [x] **OVR-01**: Collapsed state is a 72px icon-only rail permanently in document flow
-- [ ] **OVR-02**: Expanded state renders as fixed-position overlay (no content push/shift)
-- [ ] **OVR-03**: Subtle backdrop scrim behind expanded overlay
-- [ ] **OVR-04**: Click outside overlay to collapse
+- [x] **OVR-02**: Expanded state renders as fixed-position overlay (no content push/shift)
+- [x] **OVR-03**: Subtle backdrop scrim behind expanded overlay
+- [x] **OVR-04**: Click outside overlay to collapse
 - [x] **OVR-05**: Escape key collapses overlay
 - [x] **OVR-06**: Auto-collapse on navigation (route change)
 - [x] **OVR-07**: Collapse/expand toggle button accessible in both states
@@ -44,17 +44,17 @@
 - [x] **VIS-01**: Text sizes reduced to professional density (13px labels, 11px group headers)
 - [x] **VIS-02**: Spacing tightened -- compact padding matching GitHub/Supabase density
 - [x] **VIS-03**: Smooth transitions max 300ms (Campfire design system)
-- [ ] **VIS-04**: Respects prefers-reduced-motion
+- [x] **VIS-04**: Respects prefers-reduced-motion
 - [x] **VIS-05**: Tooltips on collapsed rail icons
 - [x] **VIS-06**: Z-index scale established (rail, overlay, backdrop, tooltips, dialogs)
 
 ### Accessibility
 
-- [ ] **A11-01**: Focus trapped within overlay when expanded
-- [ ] **A11-02**: Focus returns to toggle button on collapse
+- [x] **A11-01**: Focus trapped within overlay when expanded
+- [x] **A11-02**: Focus returns to toggle button on collapse
 - [x] **A11-03**: `aria-expanded` on toggle, proper landmark roles
 - [x] **A11-04**: Main content marked `inert` when overlay is open
-- [ ] **A11-05**: Full keyboard navigation within sidebar sections
+- [x] **A11-05**: Full keyboard navigation within sidebar sections
 
 ## v2 Requirements
 
@@ -90,9 +90,9 @@
 | NAV-08 | Phase 2 | Pending |
 | NAV-09 | Phase 2 | Pending |
 | OVR-01 | Phase 3 | Complete |
-| OVR-02 | Phase 4 | Pending |
-| OVR-03 | Phase 4 | Pending |
-| OVR-04 | Phase 5 | Pending |
+| OVR-02 | Phase 4 | Complete |
+| OVR-03 | Phase 4 | Complete |
+| OVR-04 | Phase 5 | Complete |
 | OVR-05 | Phase 5 | Complete |
 | OVR-06 | Phase 5 | Complete |
 | OVR-07 | Phase 3 | Complete |
@@ -105,14 +105,14 @@
 | VIS-01 | Phase 9 | Complete |
 | VIS-02 | Phase 9 | Complete |
 | VIS-03 | Phase 9 | Complete |
-| VIS-04 | Phase 9 | Pending |
+| VIS-04 | Phase 9 | Complete |
 | VIS-05 | Phase 9 | Complete |
 | VIS-06 | Phase 9 | Complete |
-| A11-01 | Phase 10 | Pending |
-| A11-02 | Phase 10 | Pending |
+| A11-01 | Phase 10 | Complete |
+| A11-02 | Phase 10 | Complete |
 | A11-03 | Phase 10 | Complete |
 | A11-04 | Phase 10 | Complete |
-| A11-05 | Phase 10 | Pending |
+| A11-05 | Phase 10 | Complete |
 
 **Coverage:**
 - v1 requirements: 33 total
