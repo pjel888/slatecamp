@@ -7,9 +7,9 @@ import { isDemoMode } from "@/lib/demo/config";
  * Bootstraps a user by ensuring they have necessary records in the new schema.
  * No-op in demo mode.
  */
-export async function bootstrapUser(
+export const bootstrapUser = async (
   userId: string
-): Promise<void> {
+): Promise<void> => {
   if (isDemoMode()) return;
 
   const admin = createAdminClient();
@@ -42,6 +42,7 @@ export async function bootstrapUser(
 
   if (subError) {
     console.error("Error upserting subscription:", JSON.stringify(subError, null, 2));
+    throw new Error(`Bootstrap failed: could not create user subscription — ${subError.message}`);
   }
 
   // 3. Upsert user_global_stats with default discipline
@@ -56,6 +57,7 @@ export async function bootstrapUser(
 
   if (statsError) {
     console.error("Error upserting stats:", JSON.stringify(statsError, null, 2));
+    throw new Error(`Bootstrap failed: could not create user global stats — ${statsError.message}`);
   }
 
   // 4. Safety net: Create minimal profile row if it doesn't exist (D4)
@@ -70,5 +72,6 @@ export async function bootstrapUser(
 
   if (profileError) {
     console.error("Error upserting profile:", JSON.stringify(profileError, null, 2));
+    throw new Error(`Bootstrap failed: could not create user profile — ${profileError.message}`);
   }
-}
+};
