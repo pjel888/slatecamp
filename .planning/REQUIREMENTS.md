@@ -19,13 +19,13 @@
 
 ### Overlay Behavior
 
-- [ ] **OVR-01**: Collapsed state is a 72px icon-only rail permanently in document flow
+- [x] **OVR-01**: Collapsed state is a 72px icon-only rail permanently in document flow
 - [ ] **OVR-02**: Expanded state renders as fixed-position overlay (no content push/shift)
 - [ ] **OVR-03**: Subtle backdrop scrim behind expanded overlay
 - [ ] **OVR-04**: Click outside overlay to collapse
 - [x] **OVR-05**: Escape key collapses overlay
 - [x] **OVR-06**: Auto-collapse on navigation (route change)
-- [ ] **OVR-07**: Collapse/expand toggle button accessible in both states
+- [x] **OVR-07**: Collapse/expand toggle button accessible in both states
 
 ### User Profile & Account
 
@@ -41,11 +41,11 @@
 
 ### Visual Polish
 
-- [ ] **VIS-01**: Text sizes reduced to professional density (13px labels, 11px group headers)
-- [ ] **VIS-02**: Spacing tightened -- compact padding matching GitHub/Supabase density
-- [ ] **VIS-03**: Smooth transitions max 300ms (Campfire design system)
+- [x] **VIS-01**: Text sizes reduced to professional density (13px labels, 11px group headers)
+- [x] **VIS-02**: Spacing tightened -- compact padding matching GitHub/Supabase density
+- [x] **VIS-03**: Smooth transitions max 300ms (Campfire design system)
 - [ ] **VIS-04**: Respects prefers-reduced-motion
-- [ ] **VIS-05**: Tooltips on collapsed rail icons
+- [x] **VIS-05**: Tooltips on collapsed rail icons
 - [x] **VIS-06**: Z-index scale established (rail, overlay, backdrop, tooltips, dialogs)
 
 ### Accessibility
@@ -89,24 +89,24 @@
 | NAV-07 | Phase 1 | Complete |
 | NAV-08 | Phase 2 | Pending |
 | NAV-09 | Phase 2 | Pending |
-| OVR-01 | Phase 3 | Pending |
+| OVR-01 | Phase 3 | Complete |
 | OVR-02 | Phase 4 | Pending |
 | OVR-03 | Phase 4 | Pending |
 | OVR-04 | Phase 5 | Pending |
 | OVR-05 | Phase 5 | Complete |
 | OVR-06 | Phase 5 | Complete |
-| OVR-07 | Phase 3 | Pending |
+| OVR-07 | Phase 3 | Complete |
 | ACC-01 | Phase 6 | Pending |
 | ACC-02 | Phase 7 | Pending |
 | ACC-03 | Phase 7 | Pending |
 | ACC-04 | Phase 6 | Pending |
 | FRM-01 | Phase 8 | Pending |
 | FRM-02 | Phase 8 | Pending |
-| VIS-01 | Phase 9 | Pending |
-| VIS-02 | Phase 9 | Pending |
-| VIS-03 | Phase 9 | Pending |
+| VIS-01 | Phase 9 | Complete |
+| VIS-02 | Phase 9 | Complete |
+| VIS-03 | Phase 9 | Complete |
 | VIS-04 | Phase 9 | Pending |
-| VIS-05 | Phase 9 | Pending |
+| VIS-05 | Phase 9 | Complete |
 | VIS-06 | Phase 9 | Complete |
 | A11-01 | Phase 10 | Pending |
 | A11-02 | Phase 10 | Pending |
