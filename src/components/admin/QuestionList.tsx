@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/client'
+import { deleteQuestions } from '@/lib/actions/admin/questions'
 import { Question, Plus, MagnifyingGlass, Funnel, Trash, PencilSimple, Eye, CircleNotch } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
@@ -45,10 +45,11 @@ export function QuestionList({ initialQuestions }: QuestionListProps) {
 
   const handleDeleteSelected = () => {
     startTransition(async () => {
-      const supabase = createClient()
-      await supabase.from('questions').delete().in('question_id', selectedQuestions)
-      setQuestions((prev) => prev.filter((q) => !selectedQuestions.includes(q.id)))
-      setSelectedQuestions([])
+      const { error } = await deleteQuestions(selectedQuestions)
+      if (!error) {
+        setQuestions((prev) => prev.filter((q) => !selectedQuestions.includes(q.id)))
+        setSelectedQuestions([])
+      }
     })
   }
 
