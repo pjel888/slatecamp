@@ -57,7 +57,6 @@ export function WikiHeaderClient({
             title="Back to syllabus"
           >
             <SCIcon icon={ArrowLeft} size="xs" />
-            <span className="hidden sm:inline">Syllabus</span>
           </Link>
 
           {breadcrumbs.length > 0 && (
