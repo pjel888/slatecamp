@@ -61,8 +61,6 @@ async function DashboardLayoutContent({
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
 
-  console.log('[DashboardLayout] User ID:', user.id, 'Discipline ID:', userStats?.current_discipline_id, 'isDemo:', isDemo)
-
   const isAdmin =
     user.app_metadata?.role === 'admin' ||
     user.email?.endsWith('@slatecamp.com') ||
