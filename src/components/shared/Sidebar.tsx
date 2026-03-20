@@ -339,9 +339,9 @@ export const Sidebar = ({
           </div>
         </div>
 
-        {/* Navigation Links */}
-        <nav className='flex-1 space-y-0.5 py-2'>
-          {/* Dashboard standalone item */}
+        {/* Navigation Links — no divider lines, groups separated by labels + spacing */}
+        <nav className='flex-1 py-2'>
+          {/* Dashboard standalone */}
           <SidebarItem
             key={GROUPED_NAVIGATION.dashboard.href}
             href={GROUPED_NAVIGATION.dashboard.href}
@@ -352,24 +352,18 @@ export const Sidebar = ({
             onBeforeNavigate={(e) => handleNavClick(e, GROUPED_NAVIGATION.dashboard.href)}
           />
 
-          {/* Separator between Dashboard and first group */}
-          <div className="mx-2 my-1.5 border-b border-border" />
-
-          {/* Grouped navigation sections */}
+          {/* Grouped navigation — label creates separation, no lines */}
           {GROUPED_NAVIGATION.groups.map(({ config, items }) => (
-            <div key={config.key}>
-              {/* Group label -- hidden when collapsed, visible when expanded */}
-              <div className="h-7 flex items-end px-2 pb-0.5">
-                {collapsed ? (
-                  <div className="w-full border-b border-border" />
-                ) : (
-                  <span className="text-[11px] font-medium tracking-wide text-[#8896A7]">
+            <div key={config.key} className="mt-4">
+              {/* Group label — only in expanded; collapsed uses the mt-4 gap */}
+              {!collapsed && (
+                <div className="px-2 mb-1">
+                  <span className="text-[11px] font-medium uppercase tracking-wider text-[#8896A7]">
                     {config.label}
                   </span>
-                )}
-              </div>
-              {/* Group items */}
-              <div className="space-y-0.5">
+                </div>
+              )}
+              <div className="space-y-px">
                 {items.map(({ href, label, icon }) => {
                   const isActive = pathname === href || (href !== '/dashboard' && pathname.startsWith(href))
                   return (
@@ -389,8 +383,7 @@ export const Sidebar = ({
           ))}
 
           {isAdmin && (
-            <>
-              <div className='my-1.5 border-t border-border' />
+            <div className="mt-4">
               <SidebarItem
                 href={ROUTES.SETTINGS_DEVELOPER}
                 label='Dev Settings'
@@ -401,7 +394,7 @@ export const Sidebar = ({
                   handleNavClick(e, ROUTES.SETTINGS_DEVELOPER)
                 }
               />
-            </>
+            </div>
           )}
         </nav>
       </div>
