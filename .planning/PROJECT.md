@@ -20,6 +20,8 @@ The sidebar must feel immediately professional — like a serious product built 
 - ✓ Admin-only Dev Settings link renders conditionally — existing
 - ✓ User avatar with fallback initials displayed — existing
 - ✓ Tier badge and upgrade button displayed for free users — existing
+- ✓ CampTrails nav link added with route stub — Phase 1
+- ✓ "Testing" renamed to "Review" across codebase — Phase 1
 
 ### Active
 
@@ -30,8 +32,8 @@ The sidebar must feel immediately professional — like a serious product built 
 - [ ] LEARN group contains: Wiki, Notes, 3D Lab
 - [ ] PRACTICE group contains: CampTrails (new), Review (renamed from Testing)
 - [ ] DATA group contains: Analytics
-- [ ] CampTrails nav link added (route: /dashboard/camptrails, page TBD)
-- [ ] "Testing" renamed to "Review" in sidebar label
+- [x] CampTrails nav link added (route: /dashboard/camptrails, Coming Soon stub)
+- [x] "Testing" renamed to "Review" (label, URL, directory, constants, page title)
 - [ ] User profile (avatar + name + tier badge) displayed at top below logo
 - [ ] Account settings moved to bottom popover (like GitHub) with theme toggle, settings link, and logout
 - [ ] Freemium ad/upgrade CTA card pinned above bottom popover
@@ -77,4 +79,4 @@ The sidebar must feel immediately professional — like a serious product built 
 | Freemium ad/upgrade CTA at bottom | Monetization without disrupting primary navigation flow | — Pending |
 
 ---
-*Last updated: 2026-03-20 after initialization*
+*Last updated: 2026-03-20 after Phase 1 completion*
