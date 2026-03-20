@@ -23,8 +23,8 @@
 - [ ] **OVR-02**: Expanded state renders as fixed-position overlay (no content push/shift)
 - [ ] **OVR-03**: Subtle backdrop scrim behind expanded overlay
 - [ ] **OVR-04**: Click outside overlay to collapse
-- [ ] **OVR-05**: Escape key collapses overlay
-- [ ] **OVR-06**: Auto-collapse on navigation (route change)
+- [x] **OVR-05**: Escape key collapses overlay
+- [x] **OVR-06**: Auto-collapse on navigation (route change)
 - [ ] **OVR-07**: Collapse/expand toggle button accessible in both states
 
 ### User Profile & Account
@@ -46,14 +46,14 @@
 - [ ] **VIS-03**: Smooth transitions max 300ms (Campfire design system)
 - [ ] **VIS-04**: Respects prefers-reduced-motion
 - [ ] **VIS-05**: Tooltips on collapsed rail icons
-- [ ] **VIS-06**: Z-index scale established (rail, overlay, backdrop, tooltips, dialogs)
+- [x] **VIS-06**: Z-index scale established (rail, overlay, backdrop, tooltips, dialogs)
 
 ### Accessibility
 
 - [ ] **A11-01**: Focus trapped within overlay when expanded
 - [ ] **A11-02**: Focus returns to toggle button on collapse
-- [ ] **A11-03**: `aria-expanded` on toggle, proper landmark roles
-- [ ] **A11-04**: Main content marked `inert` when overlay is open
+- [x] **A11-03**: `aria-expanded` on toggle, proper landmark roles
+- [x] **A11-04**: Main content marked `inert` when overlay is open
 - [ ] **A11-05**: Full keyboard navigation within sidebar sections
 
 ## v2 Requirements
@@ -93,8 +93,8 @@
 | OVR-02 | Phase 4 | Pending |
 | OVR-03 | Phase 4 | Pending |
 | OVR-04 | Phase 5 | Pending |
-| OVR-05 | Phase 5 | Pending |
-| OVR-06 | Phase 5 | Pending |
+| OVR-05 | Phase 5 | Complete |
+| OVR-06 | Phase 5 | Complete |
 | OVR-07 | Phase 3 | Pending |
 | ACC-01 | Phase 6 | Pending |
 | ACC-02 | Phase 7 | Pending |
@@ -107,11 +107,11 @@
 | VIS-03 | Phase 9 | Pending |
 | VIS-04 | Phase 9 | Pending |
 | VIS-05 | Phase 9 | Pending |
-| VIS-06 | Phase 9 | Pending |
+| VIS-06 | Phase 9 | Complete |
 | A11-01 | Phase 10 | Pending |
 | A11-02 | Phase 10 | Pending |
-| A11-03 | Phase 10 | Pending |
-| A11-04 | Phase 10 | Pending |
+| A11-03 | Phase 10 | Complete |
+| A11-04 | Phase 10 | Complete |
 | A11-05 | Phase 10 | Pending |
 
 **Coverage:**
