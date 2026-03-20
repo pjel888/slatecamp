@@ -116,7 +116,9 @@
       "Bash(mv bp344-door.js bp344/door.js)",
       "Bash(mv bp344-comparison-table.js bp344/comparison-table.js)",
       "Bash(mv bp344-door-configurator.js bp344/door-configurator.js)",
-      "Bash(mv bp344-corridor-visualizer.js bp344/corridor-visualizer.js)"
+      "Bash(mv bp344-corridor-visualizer.js bp344/corridor-visualizer.js)",
+      "Bash(npx next:*)",
+      "Bash(npm uninstall:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

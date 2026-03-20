@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp Wiki UI — Implementation Spec v1.0</title>
+<style>
+  /* ─────────────────────────────────────────────
+     SPEC DOCUMENT STYLES (not the wiki styles)
+  ───────────────────────────────────────────── */
+  :root {
+    --cobalt: #1B3FC4;
+    --cobalt-light: #E8EEFB;
+    --cobalt-mid: #B8CAF5;
+    --gold: #F5A623;
+    --gold-light: #FFF8E6;
+    --gold-mid: #FAD07A;
+    --red: #E63329;
+    --red-light: #FFF0EF;
+    --green: #1B7A3C;
+    --green-light: #EAF5EE;
+    --cream: #F2F0EB;
+    --warm-white: #F8F7F5;
+    --ink: #1A1A1A;
+    --ink-2: #3D3D3A;
+    --ink-3: #737370;
+    --ink-4: #A8A8A5;
+    --border: #E0DED8;
+    --border-light: #ECEAE4;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    color: var(--ink);
+    background: var(--warm-white);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* Doc layout */
+  .doc-wrap { max-width: 1100px; margin: 0 auto; padding: 48px 32px 120px; }
+
+  /* Cover */
+  .cover { border: 0.5px solid var(--border); border-radius: 16px; background: white; padding: 48px; margin-bottom: 64px; }
+  .cover-eyebrow { font-size: 10px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); margin-bottom: 12px; font-weight: 500; }
+  .cover-title { font-size: 36px; font-weight: 700; color: var(--ink); line-height: 1.15; margin-bottom: 8px; }
+  .cover-sub { font-size: 16px; color: var(--ink-3); line-height: 1.6; margin-bottom: 28px; }
+  .cover-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+  .cover-tag { font-size: 11px; font-family: 'DM Mono', monospace; padding: 4px 10px; border-radius: 4px; font-weight: 500; }
+  .tag-blue { background: var(--cobalt-light); color: var(--cobalt); }
+  .tag-gold { background: var(--gold-light); color: #8A5D00; }
+  .tag-gray { background: var(--cream); color: var(--ink-3); }
+
+  /* Section heading */
+  .spec-section { margin-bottom: 64px; }
+  .spec-section-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 28px; padding-bottom: 12px; border-bottom: 1.5px solid var(--cobalt); }
+  .spec-section-num { font-size: 11px; font-family: 'DM Mono', monospace; font-weight: 500; color: var(--cobalt); letter-spacing: .1em; }
+  .spec-section-title { font-size: 22px; font-weight: 700; color: var(--ink); }
+  .spec-section-desc { font-size: 14px; color: var(--ink-3); line-height: 1.7; margin-bottom: 24px; }
+
+  /* Component spec cards */
+  .spec-card { border: 0.5px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 20px; }
+  .spec-card-header { background: var(--cream); padding: 16px 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; border-bottom: 0.5px solid var(--border); }
+  .spec-card-header-left { display: flex; flex-direction: column; gap: 4px; }
+  .spec-card-name { font-size: 15px; font-weight: 600; color: var(--ink); }
+  .spec-card-sub { font-size: 11px; font-family: 'DM Mono', monospace; color: var(--ink-3); }
+  .spec-card-priority { font-size: 10px; font-family: 'DM Mono', monospace; font-weight: 500; padding: 3px 8px; border-radius: 3px; white-space: nowrap; align-self: flex-start; }
+  .p1 { background: var(--cobalt-light); color: var(--cobalt); }
+  .p2 { background: var(--green-light); color: var(--green); }
+  .p3 { background: var(--cream); color: var(--ink-3); }
+  .spec-card-body { background: white; padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+
+  /* Two-col layout inside card */
+  .spec-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .spec-two-col { grid-template-columns: 1fr; } }
+
+  /* Before/after */
+  .ba { border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .ba-before { background: #FFF5F5; border: 0.5px solid #FFD0CC; }
+  .ba-after { background: #F0F5FF; border: 0.5px solid #B8CAF5; }
+  .ba-label { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; }
+  .ba-before .ba-label { color: #C00; }
+  .ba-after .ba-label { color: var(--cobalt); }
+  .ba-text { font-size: 12px; color: var(--ink-2); line-height: 1.6; }
+
+  /* Preview box */
+  .preview-box { border: 0.5px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .preview-label { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-4); padding: 8px 14px; background: var(--cream); border-bottom: 0.5px solid var(--border); }
+  .preview-inner { padding: 16px; background: white; }
+
+  /* Spec list items */
+  .spec-list { display: flex; flex-direction: column; gap: 8px; }
+  .spec-item { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+  .spec-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--cobalt); margin-top: 7px; flex-shrink: 0; }
+  .spec-item strong { color: var(--ink); font-weight: 600; }
+  .spec-item code { font-family: 'DM Mono', monospace; font-size: 11px; background: var(--cream); padding: 1px 5px; border-radius: 3px; color: var(--cobalt); }
+
+  /* Code block */
+  .code-block { background: #1A1A2E; border-radius: 8px; padding: 16px 18px; overflow-x: auto; }
+  .code-block pre { font-family: 'DM Mono', 'Fira Code', monospace; font-size: 12px; line-height: 1.7; color: #E2E0D8; white-space: pre; }
+  .code-block .c-blue { color: #7BA7F5; }
+  .code-block .c-green { color: #6EC99A; }
+  .code-block .c-gold { color: #F5C842; }
+  .code-block .c-red { color: #F07070; }
+  .code-block .c-gray { color: #888; }
+  .code-block .c-white { color: #fff; }
+
+  /* Token table */
+  .token-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .token-table th { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-4); padding: 8px 12px; text-align: left; border-bottom: 0.5px solid var(--border); }
+  .token-table td { padding: 10px 12px; border-bottom: 0.5px solid var(--border-light); vertical-align: top; line-height: 1.5; }
+  .token-table tr:last-child td { border-bottom: none; }
+  .token-swatch { display: inline-flex; align-items: center; gap: 7px; }
+  .swatch { width: 16px; height: 16px; border-radius: 3px; border: 0.5px solid rgba(0,0,0,.12); flex-shrink: 0; }
+  .mono { font-family: 'DM Mono', monospace; font-size: 11px; }
+
+  /* Callout preview components — the actual wiki components */
+  .wiki-callout { border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 8px 0; display: flex; flex-direction: column; gap: 4px; }
+  .wiki-callout-most { background: #EEF3FD; border-left: 3px solid var(--cobalt); }
+  .wiki-callout-watch { background: #FFF0EF; border-left: 3px solid var(--red); }
+  .wiki-callout-version { background: #FFFBF0; border-left: 3px solid var(--gold); }
+  .wiki-callout-eyebrow { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; }
+  .wiki-callout-most .wiki-callout-eyebrow { color: var(--cobalt); }
+  .wiki-callout-watch .wiki-callout-eyebrow { color: var(--red); }
+  .wiki-callout-version .wiki-callout-eyebrow { color: #8A5D00; }
+  .wiki-callout-text { font-size: 13px; line-height: 1.6; color: var(--ink-2); }
+
+  /* Tag pill */
+  .tag-pill { display: inline-flex; align-items: center; padding: 2px 7px; border-radius: 3px; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; letter-spacing: .04em; }
+  .tag-changed { background: var(--gold-light); color: #8A5D00; border: 0.5px solid var(--gold-mid); }
+  .tag-subject { background: var(--cobalt-light); color: var(--cobalt); }
+  .tag-difficulty { background: var(--gold-light); color: #8A5D00; }
+  .tag-time { background: var(--cream); color: var(--ink-3); }
+
+  /* Wiki table preview */
+  .wiki-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .wiki-table th { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-4); padding: 8px 10px; text-align: left; background: #FAFAF8; border-bottom: 0.5px solid var(--border); }
+  .wiki-table td { padding: 9px 10px; border-bottom: 0.5px solid var(--border-light); line-height: 1.5; }
+  .wiki-table tr:last-child td { border-bottom: none; }
+  .wiki-table .val { font-weight: 600; color: var(--cobalt); font-size: 13px; }
+  .wiki-table .src { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--ink-4); }
+  .wiki-table .row-most { background: #FFFBF0; }
+  .wiki-table .row-most .val { color: #8A5D00; }
+  .wiki-table .section-row { background: #EEF3FD; }
+  .wiki-table .section-row td { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--cobalt); padding: 7px 10px; }
+
+  /* Mistake card preview */
+  .mistake-card { border: 0.5px solid var(--border); border-radius: 8px; padding: 12px 14px; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; }
+  .mistake-num { font-size: 11px; font-family: 'DM Mono', monospace; font-weight: 500; color: var(--cobalt); padding-top: 2px; }
+  .mistake-title { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .mistake-values { font-size: 12px; color: var(--ink-2); line-height: 1.6; }
+  .mistake-wrong { text-decoration: line-through; color: var(--red); }
+  .mistake-right { font-weight: 600; color: var(--cobalt); }
+  .mistake-note { font-size: 11px; color: var(--ink-3); margin-top: 3px; }
+
+  /* Part header preview */
+  .wiki-part-eyebrow { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); margin-bottom: 4px; }
+  .wiki-part-h2 { font-size: 20px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .wiki-part-sub { font-size: 12px; color: var(--ink-3); }
+
+  /* Article header preview */
+  .wiki-header { display: flex; flex-direction: column; gap: 10px; }
+  .wiki-tag-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .wiki-title { font-size: 28px; font-weight: 700; color: var(--ink); line-height: 1.2; }
+  .wiki-updated { font-size: 11px; font-family: 'DM Mono', monospace; color: var(--ink-4); }
+  .wiki-ale-banner { background: var(--cobalt-light); border-left: 3px solid var(--cobalt); border-radius: 0 8px 8px 0; padding: 10px 14px; }
+  .wiki-ale-banner-label { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--cobalt); margin-bottom: 3px; }
+  .wiki-ale-banner-text { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+
+  /* Separator */
+  hr.spec-divider { border: none; border-top: 0.5px solid var(--border); margin: 32px 0; }
+
+  /* Implementation sequence table */
+  .seq-table { width: 100%; border-collapse: collapse; }
+  .seq-table td { padding: 12px 0; border-bottom: 0.5px solid var(--border-light); vertical-align: top; }
+  .seq-table tr:last-child td { border-bottom: none; }
+  .seq-num { font-size: 10px; font-family: 'DM Mono', monospace; font-weight: 500; width: 32px; color: var(--cobalt); padding-top: 2px; }
+  .seq-title { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+  .seq-desc { font-size: 12px; color: var(--ink-3); line-height: 1.5; }
+
+  /* Note box */
+  .note-box { background: var(--cream); border-radius: 8px; padding: 14px 16px; font-size: 13px; color: var(--ink-2); line-height: 1.7; }
+  .note-box strong { color: var(--ink); }
+
+  /* Long code full-width */
+  .code-full { margin: 12px 0; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="doc-wrap">
+
+
+<!-- ═══════════════════════════════════════════════
+     COVER
+═══════════════════════════════════════════════ -->
+<div class="cover">
+  <div class="cover-eyebrow">SlateCamp · Wiki UI Design System</div>
+  <div class="cover-title">Wiki Article UI<br>Implementation Spec v1.0</div>
+  <div class="cover-sub">
+    A complete, step-by-step implementation guide for transforming SlateCamp wiki articles
+    into brand-consistent, learning-science-backed reading experiences.
+    Every component, every token, every decision — ready to hand to Claude Code.
+  </div>
+  <div class="cover-meta">
+    <span class="cover-tag tag-blue">For: Claude Code / Cursor</span>
+    <span class="cover-tag tag-gold">Scope: Wiki article renderer</span>
+    <span class="cover-tag tag-gray">Stack: Next.js · Tailwind · shadcn/ui</span>
+    <span class="cover-tag tag-gray">Updated: March 2026</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     TABLE OF CONTENTS
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">00</span>
+    <span class="spec-section-title">Table of Contents</span>
+  </div>
+  <div class="spec-list">
+    <div class="spec-item"><span class="spec-dot"></span><strong>01 — Design Tokens</strong> · Brand colors, typography, spacing — the source of truth for all decisions</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>02 — File & Folder Structure</strong> · Where every file lives in the Next.js App Router project</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>03 — Article Header Component</strong> · Tags, title, updated date, ALE banner</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>04 — Callout Box System</strong> · Three types: Most-tested (blue), ALE Watch (red), Version Alert (gold)</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>05 — Table Component</strong> · Exam-scannable tables with cobalt values, gold highlights, changed-value pills</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>06 — Part Section Header</strong> · Eyebrow + H2 + subtitle for each major article section</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>07 — Changed-Value Pill ⟳</strong> · Inline Signal Gold pill for 2024 IRR changes</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>08 — Common Mistakes Cards</strong> · Numbered cards with strikethrough-wrong / cobalt-correct format</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>09 — Prose Typography Rules</strong> · Body text, bold, italic, inline code — what earns each treatment</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>10 — MDX Renderer Integration</strong> · How components map to markdown syntax in the wiki</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>11 — Responsive & Dark Mode</strong> · Mobile-first breakpoints, dark mode tokens</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>12 — Implementation Sequence</strong> · Prioritized build order, P1 through P3</div>
+    <div class="spec-item"><span class="spec-dot"></span><strong>13 — Non-Negotiable Rules</strong> · What to never build, anti-patterns list</div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     01 — DESIGN TOKENS
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">01</span>
+    <span class="spec-section-title">Design Tokens</span>
+  </div>
+  <div class="spec-section-desc">
+    These are the exact values that go into <code style="font-family:monospace;background:var(--cream);padding:1px 5px;border-radius:3px">tailwind.config.ts</code> and the
+    CSS variables file. Nothing else gets used. No hex codes in component files — always reference the token name.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Color tokens</span>
+        <span class="spec-card-sub">tailwind.config.ts → theme.extend.colors</span>
+      </div>
+      <span class="spec-card-priority p1">Required first</span>
+    </div>
+    <div class="spec-card-body">
+      <table class="token-table">
+        <thead><tr><th>Token name</th><th>Hex value</th><th>Swatch</th><th>When to use in wiki</th></tr></thead>
+        <tbody>
+          <tr><td><span class="mono">primary</span> / <span class="mono">cobalt</span></td><td><span class="mono">#1B3FC4</span></td><td><span class="token-swatch"><span class="swatch" style="background:#1B3FC4"></span></span></td><td>Exam-critical values in tables, callout borders, eyebrows, mistake numbers</td></tr>
+          <tr><td><span class="mono">cobalt-light</span></td><td><span class="mono">#EEF3FD</span></td><td><span class="token-swatch"><span class="swatch" style="background:#EEF3FD"></span></span></td><td>Most-tested callout background, article tag pill background, ALE banner tint</td></tr>
+          <tr><td><span class="mono">signal-gold</span></td><td><span class="mono">#F5A623</span></td><td><span class="token-swatch"><span class="swatch" style="background:#F5A623"></span></span></td><td>Changed-value pill border, Version Alert callout border, most-tested row highlight</td></tr>
+          <tr><td><span class="mono">signal-gold-light</span></td><td><span class="mono">#FFF8E6</span></td><td><span class="token-swatch"><span class="swatch" style="background:#FFF8E6"></span></span></td><td>Version Alert callout background, most-tested table row background</td></tr>
+          <tr><td><span class="mono">signal-red</span></td><td><span class="mono">#E63329</span></td><td><span class="token-swatch"><span class="swatch" style="background:#E63329"></span></span></td><td>ALE Watch callout border only. Never on scores or body text.</td></tr>
+          <tr><td><span class="mono">signal-red-light</span></td><td><span class="mono">#FFF0EF</span></td><td><span class="token-swatch"><span class="swatch" style="background:#FFF0EF"></span></span></td><td>ALE Watch callout background only</td></tr>
+          <tr><td><span class="mono">signal-green</span></td><td><span class="mono">#1B7A3C</span></td><td><span class="token-swatch"><span class="swatch" style="background:#1B7A3C"></span></span></td><td>Not used in wiki articles. Reserved for Readiness Score.</td></tr>
+          <tr><td><span class="mono">cream</span></td><td><span class="mono">#F2F0EB</span></td><td><span class="token-swatch"><span class="swatch" style="background:#F2F0EB"></span></span></td><td>Page background, code block inline, table header row background</td></tr>
+          <tr><td><span class="mono">warm-white</span></td><td><span class="mono">#F8F7F5</span></td><td><span class="token-swatch"><span class="swatch" style="background:#F8F7F5"></span></span></td><td>Card backgrounds, content area fills</td></tr>
+          <tr><td><span class="mono">ink</span></td><td><span class="mono">#1A1A1A</span></td><td><span class="token-swatch"><span class="swatch" style="background:#1A1A1A"></span></span></td><td>All body text. Default prose color.</td></tr>
+          <tr><td><span class="mono">ink-muted</span></td><td><span class="mono">#737370</span></td><td><span class="token-swatch"><span class="swatch" style="background:#737370"></span></span></td><td>Secondary text, source citations, footnotes, article metadata</td></tr>
+          <tr><td><span class="mono">border</span></td><td><span class="mono">#E0DED8</span></td><td><span class="token-swatch"><span class="swatch" style="background:#E0DED8"></span></span></td><td>Table borders, card outlines, dividers</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Typography tokens</span>
+        <span class="spec-card-sub">tailwind.config.ts → theme.extend.fontFamily</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <table class="token-table">
+        <thead><tr><th>Font</th><th>Token</th><th>Weight</th><th>Use in wiki</th></tr></thead>
+        <tbody>
+          <tr><td>Inter</td><td><span class="mono">font-sans</span></td><td>400 / 600</td><td>All body prose. Default for everything not explicitly overridden.</td></tr>
+          <tr><td>Syne</td><td><span class="mono">font-display</span></td><td>800</td><td>Article H1 title only. Maximum one use per article.</td></tr>
+          <tr><td>DM Mono</td><td><span class="mono">font-mono</span></td><td>400 / 500</td><td>Eyebrows, callout labels, source citations, tag pills, table column headers, mistake numbers.</td></tr>
+          <tr><td>Instrument Serif</td><td><span class="mono">font-serif</span></td><td>400</td><td>Editorial pull-quotes only. Rare. Never for code or references.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="code-full">
+        <div class="code-block">
+<pre><span class="c-gray">// tailwind.config.ts — full font + color extension</span>
+<span class="c-blue">module</span>.<span class="c-green">exports</span> = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: [<span class="c-gold">'Syne'</span>, <span class="c-gold">'sans-serif'</span>],
+        sans:    [<span class="c-gold">'Inter'</span>, <span class="c-gold">'sans-serif'</span>],
+        mono:    [<span class="c-gold">'DM Mono'</span>, <span class="c-gold">'monospace'</span>],
+        serif:   [<span class="c-gold">'Instrument Serif'</span>, <span class="c-gold">'serif'</span>],
+      },
+      colors: {
+        primary:           { DEFAULT: <span class="c-gold">'#1B3FC4'</span>, foreground: <span class="c-gold">'#FFFFFF'</span> },
+        <span class="c-gold">'cobalt-light'</span>:    <span class="c-gold">'#EEF3FD'</span>,
+        <span class="c-gold">'signal-gold'</span>:     <span class="c-gold">'#F5A623'</span>,
+        <span class="c-gold">'signal-gold-light'</span>: <span class="c-gold">'#FFF8E6'</span>,
+        <span class="c-gold">'signal-red'</span>:      <span class="c-gold">'#E63329'</span>,
+        <span class="c-gold">'signal-red-light'</span>:  <span class="c-gold">'#FFF0EF'</span>,
+        <span class="c-gold">'signal-green'</span>:    <span class="c-gold">'#1B7A3C'</span>,
+        cream:             <span class="c-gold">'#F2F0EB'</span>,
+        <span class="c-gold">'warm-white'</span>:      <span class="c-gold">'#F8F7F5'</span>,
+        ink:               <span class="c-gold">'#1A1A1A'</span>,
+        <span class="c-gold">'ink-muted'</span>:       <span class="c-gold">'#737370'</span>,
+        border:            <span class="c-gold">'#E0DED8'</span>,
+      },
+    },
+  },
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     02 — FILE & FOLDER STRUCTURE
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">02</span>
+    <span class="spec-section-title">File &amp; Folder Structure</span>
+  </div>
+  <div class="spec-section-desc">
+    Every file created for the wiki UI system lives exactly here. Do not deviate from this structure.
+    The wiki renderer is in <code style="font-family:monospace;background:var(--cream);padding:1px 5px;border-radius:3px">src/components/wiki/</code>. Each component has a single responsibility.
+  </div>
+
+  <div class="code-full">
+    <div class="code-block">
+<pre><span class="c-gold">src/</span>
+├── <span class="c-gold">components/</span>
+│   └── <span class="c-gold">wiki/</span>
+│       ├── <span class="c-green">WikiArticleHeader.tsx</span>       <span class="c-gray"># Section 03 — tags, title, date, ALE banner</span>
+│       ├── <span class="c-green">WikiCallout.tsx</span>             <span class="c-gray"># Section 04 — Most-tested / ALE Watch / Version</span>
+│       ├── <span class="c-green">WikiTable.tsx</span>               <span class="c-gray"># Section 05 — exam-scannable data table</span>
+│       ├── <span class="c-green">WikiPartHeader.tsx</span>          <span class="c-gray"># Section 06 — eyebrow + H2 + subtitle</span>
+│       ├── <span class="c-green">WikiChangedPill.tsx</span>         <span class="c-gray"># Section 07 — inline ⟳ gold pill</span>
+│       ├── <span class="c-green">WikiMistakeCard.tsx</span>         <span class="c-gray"># Section 08 — numbered mistake cards</span>
+│       ├── <span class="c-green">WikiMistakeList.tsx</span>         <span class="c-gray"># Section 08 — wrapper for all mistake cards</span>
+│       └── <span class="c-green">index.ts</span>                    <span class="c-gray"># re-exports all wiki components</span>
+│
+├── <span class="c-gold">types/</span>
+│   └── <span class="c-green">wiki.ts</span>                         <span class="c-gray"># All TypeScript interfaces for wiki components</span>
+│
+├── <span class="c-gold">app/</span>
+│   └── <span class="c-gold">(wiki)/</span>
+│       └── <span class="c-gold">wiki/</span>
+│           └── <span class="c-gold">[slug]/</span>
+│               └── <span class="c-green">page.tsx</span>            <span class="c-gray"># Wiki article page — MDX renderer</span>
+│
+└── <span class="c-gold">content/</span>
+    └── <span class="c-gold">wiki/</span>
+        └── <span class="c-green">doors-corridors-washrooms-bp344.mdx</span>  <span class="c-gray"># Article content</span></pre>
+    </div>
+  </div>
+
+  <div class="spec-card" style="margin-top:16px">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">TypeScript interfaces</span>
+        <span class="spec-card-sub">src/types/wiki.ts — define before building components</span>
+      </div>
+      <span class="spec-card-priority p1">Define first</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="code-full">
+        <div class="code-block">
+<pre><span class="c-gray">// src/types/wiki.ts</span>
+
+<span class="c-blue">export type</span> WikiCalloutType = <span class="c-gold">'most-tested'</span> | <span class="c-gold">'ale-watch'</span> | <span class="c-gold">'version-alert'</span>
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiCalloutProps</span> {
+  type: WikiCalloutType
+  children: React.ReactNode
+}
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiTableRow</span> {
+  parameter: string
+  dimension?: string
+  value: string
+  source?: string
+  isMostTested?: boolean   <span class="c-gray">// renders gold row highlight</span>
+  isChanged?: boolean      <span class="c-gray">// renders ⟳ pill on parameter</span>
+  isSectionHeader?: boolean <span class="c-gray">// renders cobalt section divider row</span>
+}
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiTableProps</span> {
+  caption?: string
+  columns: string[]        <span class="c-gray">// column header labels</span>
+  rows: WikiTableRow[]
+  hasSourceColumn?: boolean
+}
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiPartHeaderProps</span> {
+  partNumber: number | string
+  title: string
+  subtitle?: string
+}
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiArticleHeaderProps</span> {
+  subject: string          <span class="c-gray">// e.g. "A3 · Accessibility Standards"</span>
+  difficulty: <span class="c-gold">'Foundational'</span> | <span class="c-gold">'Intermediate'</span> | <span class="c-gold">'Advanced'</span>
+  readTime: string         <span class="c-gray">// e.g. "~18 min"</span>
+  title: string
+  updatedNote: string      <span class="c-gray">// e.g. "2024 Revised IRR · Official Gazette Vol. 120 No. 28"</span>
+  aleTestsYou: string      <span class="c-gray">// the one-sentence ALE test statement</span>
+}
+
+<span class="c-blue">export interface</span> <span class="c-green">WikiMistakeProps</span> {
+  number: number
+  title: string
+  wrongValue: string
+  correctValue: string
+  explanation: string
+  sourceRef?: string
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     03 — ARTICLE HEADER COMPONENT
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">03</span>
+    <span class="spec-section-title">Article Header Component</span>
+  </div>
+  <div class="spec-section-desc">
+    The first thing a student sees. Must deliver three pieces of information in under 3 seconds:
+    (1) is this the right topic?, (2) how hard is it?, (3) what will the ALE actually ask me?
+    No decoration. Every element earns its place.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Visual preview</span>
+        <span class="spec-card-sub">what the student sees above the fold</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="preview-box">
+        <div class="preview-label">Rendered output</div>
+        <div class="preview-inner">
+          <div class="wiki-header">
+            <div class="wiki-tag-row">
+              <span class="tag-pill tag-subject">A3 · Accessibility Standards</span>
+              <span class="tag-pill tag-difficulty">Intermediate</span>
+              <span class="tag-pill tag-time">~18 min read</span>
+            </div>
+            <div class="wiki-title">Doors, Corridors &amp; Washrooms — BP 344 / RA 9442</div>
+            <div class="wiki-updated">Updated: 2024 Revised IRR (effective August 8, 2024) · Official Gazette Vol. 120 No. 28</div>
+            <div class="wiki-ale-banner">
+              <div class="wiki-ale-banner-label">The ALE tests you to</div>
+              <div class="wiki-ale-banner-text">Identify specific dimensions, apply them to described building scenarios, and spot violations in accessible washroom floor plans.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">WikiArticleHeader.tsx</span>
+        <span class="spec-card-sub">src/components/wiki/WikiArticleHeader.tsx</span>
+      </div>
+      <span class="spec-card-priority p1">P1</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-list">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Tag row:</strong> Three pill badges in DM Mono on one line. Subject (cobalt bg), Difficulty (gold bg), Read time (cream bg). Use <code>tag-pill</code> pattern. Flex row, gap-1.5, wrap allowed on mobile.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Title:</strong> Syne 800 weight, 28–32px. Only element using <code>font-display</code> on the page. Color <code>ink</code>. Line height 1.15.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Updated line:</strong> DM Mono 10px, <code>ink-muted</code> color. Format: "Updated: [source text]". Never bold.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>ALE banner:</strong> Cobalt left-border (3px solid <code>primary</code>), cobalt-light tint background, border-radius 0 8px 8px 0. DM Mono 9px uppercase eyebrow "The ALE tests you to" in cobalt. Body text Inter 13px. This is NOT a callout box — it's a persistent orientation element.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Spacing:</strong> 24px gap between title and tag row. 8px gap between title and updated line. 12px gap between updated line and ALE banner.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>No horizontal rule</strong> below the header. The article prose begins with a top margin of 32px after the header.</div>
+      </div>
+      <div class="code-full">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiArticleHeader.tsx</span>
+<span class="c-blue">import</span> { type WikiArticleHeaderProps } from <span class="c-gold">'@/types/wiki'</span>
+<span class="c-blue">import</span> { cn } from <span class="c-gold">'@/lib/utils'</span>
+
+<span class="c-blue">const</span> difficultyStyle = {
+  Foundational: <span class="c-gold">'bg-green-50 text-green-800'</span>,
+  Intermediate:  <span class="c-gold">'bg-signal-gold-light text-amber-800'</span>,
+  Advanced:      <span class="c-gold">'bg-red-50 text-red-800'</span>,
+} <span class="c-blue">as const</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiArticleHeader</span>({
+  subject, difficulty, readTime, title, updatedNote, aleTestsYou
+}: WikiArticleHeaderProps) {
+  <span class="c-blue">return</span> (
+    &lt;header className=<span class="c-gold">"flex flex-col gap-3 mb-8"</span>&gt;
+
+      {<span class="c-gray">/* Tag row */</span>}
+      &lt;div className=<span class="c-gold">"flex flex-wrap items-center gap-1.5"</span>&gt;
+        &lt;span className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cobalt-light text-primary"</span>&gt;
+          {subject}
+        &lt;/span&gt;
+        &lt;span className={cn(
+          <span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px]"</span>,
+          difficultyStyle[difficulty]
+        )}&gt;
+          {difficulty}
+        &lt;/span&gt;
+        &lt;span className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cream text-ink-muted"</span>&gt;
+          {readTime} read
+        &lt;/span&gt;
+      &lt;/div&gt;
+
+      {<span class="c-gray">/* Title */</span>}
+      &lt;h1 className=<span class="c-gold">"font-display font-extrabold text-2xl sm:text-3xl text-ink leading-tight"</span>&gt;
+        {title}
+      &lt;/h1&gt;
+
+      {<span class="c-gray">/* Updated metadata */</span>}
+      &lt;p className=<span class="c-gold">"font-mono text-[10px] text-ink-muted"</span>&gt;
+        Updated: {updatedNote}
+      &lt;/p&gt;
+
+      {<span class="c-gray">/* ALE orientation banner */</span>}
+      &lt;div className=<span class="c-gold">"border-l-[3px] border-primary bg-cobalt-light rounded-r-lg px-4 py-3"</span>&gt;
+        &lt;p className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+          The ALE tests you to
+        &lt;/p&gt;
+        &lt;p className=<span class="c-gold">"text-sm text-ink leading-relaxed"</span>&gt;
+          {aleTestsYou}
+        &lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/header&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     04 — CALLOUT BOX SYSTEM
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">04</span>
+    <span class="spec-section-title">Callout Box System</span>
+  </div>
+  <div class="spec-section-desc">
+    Three types. Three colors. Each encodes a distinct meaning. A student who has read three articles
+    should be able to identify the type from color alone before reading a word.
+    <strong>Never create a fourth callout type without a documented learning-science reason.</strong>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Three callout types — visual reference</span>
+        <span class="spec-card-sub">color = meaning, always</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="wiki-callout wiki-callout-most">
+        <div class="wiki-callout-eyebrow">Most-tested</div>
+        <div class="wiki-callout-text">The corridor width change from 1,200 mm to <strong>1,500 mm</strong> <span class="tag-pill tag-changed">⟳ 2024</span>. This is the number most likely to appear in "is this corridor compliant?" scenario questions.</div>
+      </div>
+      <div class="wiki-callout wiki-callout-watch" style="margin-top:8px">
+        <div class="wiki-callout-eyebrow">ALE Watch</div>
+        <div class="wiki-callout-text">The 300 mm grab bar measurement is from the <strong>top of the toilet seat</strong> — not from the floor. The floor measurement (~750 mm) is a derived value, not the specification. Getting this reference point wrong produces wrong answers even when the number is correct.</div>
+      </div>
+      <div class="wiki-callout wiki-callout-version" style="margin-top:8px">
+        <div class="wiki-callout-eyebrow">Version alert — read first</div>
+        <div class="wiki-callout-text">Every number in this article reflects the <strong>2024 IRR only</strong>. Values that changed from 2013 are marked <span class="tag-pill tag-changed">⟳ 2024</span>. If your notes show a different number, the 2024 IRR governs for the exam.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Callout type rules</span>
+        <span class="spec-card-sub">usage constraints — enforce strictly</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-two-col">
+        <div>
+          <div style="font-size:12px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--cobalt);margin-bottom:8px;font-weight:500">Most-tested (cobalt)</div>
+          <div class="spec-list">
+            <div class="spec-item"><span class="spec-dot"></span>Appears after every summary table</div>
+            <div class="spec-item"><span class="spec-dot"></span>Maximum 1 per section</div>
+            <div class="spec-item"><span class="spec-dot"></span>Must contain a specific, bold exam value</div>
+            <div class="spec-item"><span class="spec-dot"></span>1–2 sentences maximum. Never a paragraph.</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin-bottom:8px;font-weight:500">ALE Watch (red)</div>
+          <div class="spec-list">
+            <div class="spec-item"><span class="spec-dot"></span>Only for misconceptions that cause exam failure</div>
+            <div class="spec-item"><span class="spec-dot"></span>Maximum 2 per article, total</div>
+            <div class="spec-item"><span class="spec-dot"></span>States the wrong belief, immediately corrects it</div>
+            <div class="spec-item"><span class="spec-dot"></span>Never used for general reminders</div>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <div style="font-size:12px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#8A5D00;margin-bottom:8px;font-weight:500">Version Alert (gold)</div>
+        <div class="spec-list">
+          <div class="spec-item"><span class="spec-dot"></span>Appears exactly once — at the top of the article, before the first section</div>
+          <div class="spec-item"><span class="spec-dot"></span>Never repeated inline. The ⟳ pill handles inline change signals.</div>
+          <div class="spec-item"><span class="spec-dot"></span>Always contains the IRR year, the ⟳ explanation, and the "if different, 2024 governs" statement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">WikiCallout.tsx</span>
+        <span class="spec-card-sub">src/components/wiki/WikiCallout.tsx</span>
+      </div>
+      <span class="spec-card-priority p1">P1</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="code-full">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiCallout.tsx</span>
+<span class="c-blue">import</span> { cn } from <span class="c-gold">'@/lib/utils'</span>
+<span class="c-blue">import</span> { type WikiCalloutProps } from <span class="c-gold">'@/types/wiki'</span>
+
+<span class="c-blue">const</span> calloutConfig = {
+  <span class="c-gold">'most-tested'</span>: {
+    border:  <span class="c-gold">'border-l-[3px] border-primary'</span>,
+    bg:      <span class="c-gold">'bg-cobalt-light'</span>,
+    label:   <span class="c-gold">'Most-tested'</span>,
+    eyebrow: <span class="c-gold">'text-primary'</span>,
+  },
+  <span class="c-gold">'ale-watch'</span>: {
+    border:  <span class="c-gold">'border-l-[3px] border-signal-red'</span>,
+    bg:      <span class="c-gold">'bg-signal-red-light'</span>,
+    label:   <span class="c-gold">'ALE Watch'</span>,
+    eyebrow: <span class="c-gold">'text-signal-red'</span>,
+  },
+  <span class="c-gold">'version-alert'</span>: {
+    border:  <span class="c-gold">'border-l-[3px] border-signal-gold'</span>,
+    bg:      <span class="c-gold">'bg-signal-gold-light'</span>,
+    label:   <span class="c-gold">'Version alert — read first'</span>,
+    eyebrow: <span class="c-gold">'text-amber-800'</span>,
+  },
+} <span class="c-blue">as const</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiCallout</span>({ type, children }: WikiCalloutProps) {
+  <span class="c-blue">const</span> config = calloutConfig[type]
+  <span class="c-blue">return</span> (
+    &lt;div className={cn(
+      <span class="c-gold">"rounded-r-lg px-4 py-3 my-5"</span>,
+      config.border,
+      config.bg
+    )}&gt;
+      &lt;p className={cn(
+        <span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest mb-1"</span>,
+        config.eyebrow
+      )}&gt;
+        {config.label}
+      &lt;/p&gt;
+      &lt;div className=<span class="c-gold">"text-sm text-ink leading-relaxed [&amp;_strong]:font-semibold [&amp;_strong]:text-ink"</span>&gt;
+        {children}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     05 — TABLE COMPONENT
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">05</span>
+    <span class="spec-section-title">Table Component</span>
+  </div>
+  <div class="spec-section-desc">
+    Tables are the highest-density learning element in the article. A student should be able to
+    find the right exam value in under 3 seconds. This requires: cobalt-colored value column,
+    gold-highlighted most-tested row, DM Mono source references, and inline ⟳ pills on changed values.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Table anatomy — all states</span>
+        <span class="spec-card-sub">every row type shown</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="preview-box">
+        <div class="preview-label">Rendered output — Corridors section</div>
+        <div class="preview-inner" style="padding:0">
+          <table class="wiki-table">
+            <thead>
+              <tr><th>Parameter</th><th>Value (2024 IRR)</th><th>Source</th></tr>
+            </thead>
+            <tbody>
+              <tr class="section-row"><td colspan="3">Corridors</td></tr>
+              <tr class="row-most">
+                <td>Single wheelchair + ambulant <span class="tag-pill tag-changed">⟳ 2024</span></td>
+                <td class="val">1,500 mm minimum</td>
+                <td class="src">C.5.1</td>
+              </tr>
+              <tr>
+                <td>Two wheelchairs simultaneous</td>
+                <td class="val">1,800 mm minimum</td>
+                <td class="src">C.5.2</td>
+              </tr>
+              <tr>
+                <td>Turnabout dimensions <span class="tag-pill tag-changed">⟳ 2024</span></td>
+                <td class="val">1,800 × 1,800 mm</td>
+                <td class="src">C.5.2</td>
+              </tr>
+              <tr>
+                <td>Max spacing between turnabouts</td>
+                <td class="val">12,000 mm (12 m)</td>
+                <td class="src">C.5.2</td>
+              </tr>
+              <tr>
+                <td>Dead-end turnabout — max distance</td>
+                <td class="val">Within 3,500 mm</td>
+                <td class="src">C.5.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Row types — exact styling rules</span>
+        <span class="spec-card-sub">each row type has distinct treatment</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-list">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Column header row:</strong> DM Mono 9px, uppercase, tracking-widest, <code>ink-muted</code> color, background <code>#FAFAF8</code> (one shade off warm-white), 0.5px bottom border. Height 36px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Section header row</strong> (Quick Reference table only): Full-width row, background <code>cobalt-light</code> tinted at 8% opacity — use <code>#1B3FC414</code>. Text: DM Mono 9px uppercase, cobalt color. Use <code>colSpan</code> to fill all columns. This separates DOORS / CORRIDORS / TOILETS groups visually.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Most-tested row:</strong> Background <code>signal-gold-light</code> (#FFF8E6). Value column text color changes from cobalt to <code>amber-800</code> (#92400E). Use sparingly — maximum 1 most-tested row per table section. Determined by <code>isMostTested: true</code> in the data.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Standard row:</strong> White background. Parameter text: Inter 13px, <code>ink</code> color. Value text: Inter 13px semi-bold, <code>primary</code> (cobalt) color. Source text: DM Mono 10px, <code>ink-muted</code> color.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Changed parameter:</strong> Append <code>&lt;WikiChangedPill /&gt;</code> inline after the parameter text when <code>isChanged: true</code>. The pill is Signal Gold, 9px DM Mono, "⟳ 2024".</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Row borders:</strong> 0.5px <code>border-light</code> between rows. No border on final row. No vertical borders.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Cell padding:</strong> 9px top/bottom, 10px left/right on all cells.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Mobile:</strong> On screens &lt;640px, hide the Source column (lowest priority). Parameter + Value survive. Add <code>hidden sm:table-cell</code> to source cells.</div>
+      </div>
+      <div class="code-full" style="margin-top:16px">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiTable.tsx</span>
+<span class="c-blue">import</span> { WikiChangedPill } from <span class="c-gold">'./WikiChangedPill'</span>
+<span class="c-blue">import</span> { type WikiTableProps } from <span class="c-gold">'@/types/wiki'</span>
+<span class="c-blue">import</span> { cn } from <span class="c-gold">'@/lib/utils'</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiTable</span>({ caption, columns, rows, hasSourceColumn = <span class="c-blue">true</span> }: WikiTableProps) {
+  <span class="c-blue">return</span> (
+    &lt;div className=<span class="c-gold">"my-6 rounded-lg border border-border overflow-hidden"</span>&gt;
+      {caption &amp;&amp; (
+        &lt;p className=<span class="c-gold">"font-sans text-xs font-semibold text-ink px-3 py-2.5 border-b border-border bg-warm-white"</span>&gt;
+          {caption}
+        &lt;/p&gt;
+      )}
+      &lt;div className=<span class="c-gold">"overflow-x-auto"</span>&gt;
+        &lt;table className=<span class="c-gold">"w-full border-collapse"</span>&gt;
+          &lt;thead&gt;
+            &lt;tr className=<span class="c-gold">"bg-[#FAFAF8]"</span>&gt;
+              {columns.map((col, i) =&gt; (
+                &lt;th key={i} className={cn(
+                  <span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest text-ink-muted px-2.5 py-2 text-left border-b border-border"</span>,
+                  i === columns.length - 1 &amp;&amp; hasSourceColumn &amp;&amp; <span class="c-gold">"hidden sm:table-cell"</span>
+                )}&gt;
+                  {col}
+                &lt;/th&gt;
+              ))}
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            {rows.map((row, i) =&gt; {
+              <span class="c-blue">if</span> (row.isSectionHeader) <span class="c-blue">return</span> (
+                &lt;tr key={i} className=<span class="c-gold">"bg-[#1B3FC414]"</span>&gt;
+                  &lt;td colSpan={columns.length} className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary px-2.5 py-1.5"</span>&gt;
+                    {row.parameter}
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              )
+              <span class="c-blue">return</span> (
+                &lt;tr key={i} className={cn(
+                  <span class="c-gold">"border-b border-[#ECEAE4] last:border-b-0"</span>,
+                  row.isMostTested &amp;&amp; <span class="c-gold">"bg-signal-gold-light"</span>
+                )}&gt;
+                  &lt;td className=<span class="c-gold">"px-2.5 py-2.5 text-sm text-ink"</span>&gt;
+                    &lt;span&gt;{row.parameter}&lt;/span&gt;
+                    {row.isChanged &amp;&amp; &lt;WikiChangedPill className=<span class="c-gold">"ml-1.5"</span> /&gt;}
+                  &lt;/td&gt;
+                  {row.dimension &amp;&amp; (
+                    &lt;td className=<span class="c-gold">"px-2.5 py-2.5 text-xs text-ink-muted"</span>&gt;{row.dimension}&lt;/td&gt;
+                  )}
+                  &lt;td className={cn(
+                    <span class="c-gold">"px-2.5 py-2.5 text-sm font-semibold"</span>,
+                    row.isMostTested ? <span class="c-gold">"text-amber-800"</span> : <span class="c-gold">"text-primary"</span>
+                  )}&gt;
+                    {row.value}
+                  &lt;/td&gt;
+                  {hasSourceColumn &amp;&amp; (
+                    &lt;td className=<span class="c-gold">"px-2.5 py-2.5 font-mono text-[10px] text-ink-muted hidden sm:table-cell"</span>&gt;
+                      {row.source}
+                    &lt;/td&gt;
+                  )}
+                &lt;/tr&gt;
+              )
+            })}
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     06 — PART SECTION HEADER
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">06</span>
+    <span class="spec-section-title">Part Section Header</span>
+  </div>
+  <div class="spec-section-desc">
+    Every major section (Part 1: Entrances, Part 2: Doors...) opens with an eyebrow + H2 + subtitle.
+    The eyebrow is the brand signal. The H2 is the anchor point for scanning. The subtitle previews
+    the section's content so students can decide in 1 second whether to read it.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Visual preview + code</span>
+        <span class="spec-card-sub">WikiPartHeader.tsx</span>
+      </div>
+      <span class="spec-card-priority p2">P2</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="preview-box">
+        <div class="preview-label">Rendered output</div>
+        <div class="preview-inner">
+          <div class="wiki-part-eyebrow">Part 4</div>
+          <div class="wiki-part-h2">Corridors</div>
+          <div class="wiki-part-sub">Width requirements · turnabout spaces · surface rules</div>
+        </div>
+      </div>
+      <div class="spec-list" style="margin-top:12px">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Eyebrow:</strong> DM Mono 9px, 500 weight, uppercase, tracking-widest, <code>primary</code> color. Text: "Part [N]". Margin bottom 4px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>H2:</strong> Inter 20px, 700 weight, <code>ink</code> color. Line height 1.2. No Syne — Syne is H1 only.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Subtitle:</strong> Inter 12px, 400 weight, <code>ink-muted</code> color. Previews the section content in one noun phrase (not a sentence). Margin top 4px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Top margin:</strong> 48px above the part header. 20px below. Creates visual breathing room between sections.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>No border or background:</strong> The eyebrow color alone is the brand signal. No left border, no background fill. Decoration is not design.</div>
+      </div>
+      <div class="code-full" style="margin-top:12px">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiPartHeader.tsx</span>
+<span class="c-blue">import</span> { type WikiPartHeaderProps } from <span class="c-gold">'@/types/wiki'</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiPartHeader</span>({ partNumber, title, subtitle }: WikiPartHeaderProps) {
+  <span class="c-blue">return</span> (
+    &lt;div className=<span class="c-gold">"mt-12 mb-5"</span>&gt;
+      &lt;p className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+        Part {partNumber}
+      &lt;/p&gt;
+      &lt;h2 className=<span class="c-gold">"font-sans font-bold text-xl text-ink leading-snug"</span>&gt;
+        {title}
+      &lt;/h2&gt;
+      {subtitle &amp;&amp; (
+        &lt;p className=<span class="c-gold">"font-sans text-xs text-ink-muted mt-1"</span>&gt;
+          {subtitle}
+        &lt;/p&gt;
+      )}
+    &lt;/div&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     07 — CHANGED VALUE PILL
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">07</span>
+    <span class="spec-section-title">Changed-Value Pill ⟳</span>
+  </div>
+  <div class="spec-section-desc">
+    Every value that changed between the 2013 Illustrated IRR and the 2024 Revised IRR gets this pill
+    inline. It is Signal Gold. It is the single most important visual signal in the article for protecting
+    students from memorizing the wrong version. Appears in prose AND in table rows.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">WikiChangedPill.tsx</span>
+        <span class="spec-card-sub">src/components/wiki/WikiChangedPill.tsx — tiny but critical</span>
+      </div>
+      <span class="spec-card-priority p1">P1</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="preview-box">
+        <div class="preview-label">Inline usage — in prose and in table rows</div>
+        <div class="preview-inner">
+          <div style="font-size:14px;color:var(--ink-2);line-height:1.8">
+            The minimum corridor width is <strong style="color:var(--cobalt)">1,500 mm</strong> <span class="tag-pill tag-changed">⟳ 2024</span> — raised from 1,200 mm in the 2013 IRR. This is the most consequential change for typical building design.
+          </div>
+          <div style="margin-top:12px;font-size:13px;color:var(--ink-3)">In a table row:</div>
+          <table class="wiki-table" style="margin-top:4px">
+            <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+            <tbody>
+              <tr><td>Approach space <span class="tag-pill tag-changed">⟳ 2024</span></td><td class="val">1,800 × 1,800 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="spec-list" style="margin-top:12px">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Style:</strong> Signal Gold background (#FFF8E6), amber border (0.5px, #FAD07A), amber-800 text (#92400E). DM Mono 9px, font-weight 500. Padding 1px 6px. Border-radius 3px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Text content:</strong> Always "⟳ 2024" — never just "⟳" alone. The year anchors the context.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Position:</strong> Inline after the value or parameter, with margin-left 6px. Never on a new line.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Tooltip:</strong> Add <code>title="Changed from 2013 Illustrated IRR"</code> for accessibility. On hover, shows the old value if passed as a prop.</div>
+      </div>
+      <div class="code-full" style="margin-top:12px">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiChangedPill.tsx</span>
+<span class="c-blue">interface</span> <span class="c-green">WikiChangedPillProps</span> {
+  oldValue?: string   <span class="c-gray">// optional: shown in tooltip</span>
+  className?: string
+}
+
+<span class="c-blue">export function</span> <span class="c-green">WikiChangedPill</span>({ oldValue, className }: WikiChangedPillProps) {
+  <span class="c-blue">const</span> tooltipText = oldValue
+    ? <span class="c-gold">`Changed from ${oldValue} in 2013 Illustrated IRR`</span>
+    : <span class="c-gold">'Changed from 2013 Illustrated IRR'</span>
+
+  <span class="c-blue">return</span> (
+    &lt;span
+      title={tooltipText}
+      className={cn(
+        <span class="c-gold">"inline-flex items-center font-mono text-[9px] font-medium px-1.5 py-px rounded-[3px]"</span>,
+        <span class="c-gold">"bg-signal-gold-light text-amber-800 border border-[#FAD07A]"</span>,
+        <span class="c-gold">"cursor-default select-none"</span>,
+        className
+      )}
+    &gt;
+      ⟳ 2024
+    &lt;/span&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     08 — COMMON MISTAKES CARDS
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">08</span>
+    <span class="spec-section-title">Common Mistakes Cards</span>
+  </div>
+  <div class="spec-section-desc">
+    Memory research shows that presenting the wrong answer explicitly alongside the correct answer —
+    with clear visual differentiation — produces stronger correction of misconceptions than presenting
+    only the correct answer. The strikethrough-wrong / cobalt-correct format puts both in working
+    memory simultaneously, which is exactly what forces the correction to stick.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">Visual preview — two mistake cards</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <div class="mistake-card">
+        <div class="mistake-num">01</div>
+        <div>
+          <div class="mistake-title">Carrying the old corridor width</div>
+          <div class="mistake-values">Wrong: <span class="mistake-wrong">1,200 mm</span> &nbsp;→&nbsp; Correct: <span class="mistake-right">1,500 mm</span> <span class="tag-pill tag-changed">⟳ 2024</span></div>
+          <div class="mistake-note">The 2024 IRR raised this from 1,200 mm. Most older review materials still show the wrong value.</div>
+        </div>
+      </div>
+      <div class="mistake-card" style="margin-top:8px">
+        <div class="mistake-num">02</div>
+        <div>
+          <div class="mistake-title">Making the cubicle rectangular</div>
+          <div class="mistake-values">Wrong: <span class="mistake-wrong">1,700 × 1,800 mm</span> &nbsp;→&nbsp; Correct: <span class="mistake-right">1,800 × 1,800 mm</span> <span class="tag-pill tag-changed">⟳ 2024</span></div>
+          <div class="mistake-note">The 2024 cubicle is a square. The old asymmetric plan is superseded.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">WikiMistakeCard.tsx + WikiMistakeList.tsx</span>
+        <span class="spec-card-sub">src/components/wiki/</span>
+      </div>
+      <span class="spec-card-priority p2">P2</span>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-list">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Card structure:</strong> 2-column grid — number column (28px fixed) + content column. Border 0.5px <code>border</code>. Border-radius 8px. Padding 12px 14px. Gap 10px. No background tint on default state.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Number:</strong> DM Mono 11px, 500 weight, cobalt (<code>text-primary</code>). Zero-padded: "01", "02"... not "1", "2".</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Title:</strong> Inter 13px, 600 weight, <code>ink</code> color. Margin bottom 4px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Wrong value:</strong> Inter 12px, <code>line-through</code> text decoration, <code>signal-red</code> color. Text: "Wrong: [value]".</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Correct value:</strong> Inter 12px, 600 weight, <code>primary</code> (cobalt). Text: "Correct: [value]". Space arrow "→" between wrong and correct in <code>ink-muted</code>.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Append ⟳ pill</strong> after the correct value when the value changed in 2024 IRR.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Explanation:</strong> Inter 11px, <code>ink-muted</code> color. Margin top 3px. One sentence max — why the mistake happens and why the correct answer is correct.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>WikiMistakeList</strong> wraps all cards with a section header: "Common Mistakes — 10 ways students lose marks" in H2 style.</div>
+      </div>
+      <div class="code-full" style="margin-top:12px">
+        <div class="code-block">
+<pre><span class="c-gray">// src/components/wiki/WikiMistakeCard.tsx</span>
+<span class="c-blue">import</span> { WikiChangedPill } from <span class="c-gold">'./WikiChangedPill'</span>
+<span class="c-blue">import</span> { type WikiMistakeProps } from <span class="c-gold">'@/types/wiki'</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiMistakeCard</span>({ number, title, wrongValue, correctValue, explanation, sourceRef }: WikiMistakeProps) {
+  <span class="c-blue">const</span> isChanged = !!sourceRef  <span class="c-gray">// show ⟳ pill when sourceRef provided</span>
+  <span class="c-blue">return</span> (
+    &lt;div className=<span class="c-gold">"grid grid-cols-[28px_1fr] gap-2.5 border border-border rounded-lg px-3.5 py-3"</span>&gt;
+      &lt;span className=<span class="c-gold">"font-mono text-[11px] font-medium text-primary pt-0.5"</span>&gt;
+        {String(number).padStart(2, <span class="c-gold">'0'</span>)}
+      &lt;/span&gt;
+      &lt;div&gt;
+        &lt;p className=<span class="c-gold">"font-sans text-[13px] font-semibold text-ink mb-1"</span>&gt;{title}&lt;/p&gt;
+        &lt;p className=<span class="c-gold">"font-sans text-xs text-ink leading-relaxed"</span>&gt;
+          &lt;span className=<span class="c-gold">"text-ink-muted"</span>&gt;Wrong: &lt;/span&gt;
+          &lt;span className=<span class="c-gold">"line-through text-signal-red"</span>&gt;{wrongValue}&lt;/span&gt;
+          &lt;span className=<span class="c-gold">"text-ink-muted mx-2"</span>&gt;→&lt;/span&gt;
+          &lt;span className=<span class="c-gold">"text-ink-muted"</span>&gt;Correct: &lt;/span&gt;
+          &lt;span className=<span class="c-gold">"font-semibold text-primary"</span>&gt;{correctValue}&lt;/span&gt;
+          {isChanged &amp;&amp; &lt;WikiChangedPill className=<span class="c-gold">"ml-1.5"</span> /&gt;}
+        &lt;/p&gt;
+        &lt;p className=<span class="c-gold">"font-sans text-[11px] text-ink-muted mt-1 leading-relaxed"</span>&gt;
+          {explanation}
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}
+
+<span class="c-gray">// src/components/wiki/WikiMistakeList.tsx</span>
+<span class="c-blue">import</span> { WikiMistakeCard } from <span class="c-gold">'./WikiMistakeCard'</span>
+<span class="c-blue">import</span> { type WikiMistakeProps } from <span class="c-gold">'@/types/wiki'</span>
+
+<span class="c-blue">export function</span> <span class="c-green">WikiMistakeList</span>({ mistakes }: { mistakes: WikiMistakeProps[] }) {
+  <span class="c-blue">return</span> (
+    &lt;section className=<span class="c-gold">"mt-12"</span>&gt;
+      &lt;div className=<span class="c-gold">"mb-5"</span>&gt;
+        &lt;p className=<span class="c-gold">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+          Before exam day
+        &lt;/p&gt;
+        &lt;h2 className=<span class="c-gold">"font-sans font-bold text-xl text-ink"</span>&gt;
+          Common Mistakes — {mistakes.length} ways students lose marks
+        &lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div className=<span class="c-gold">"flex flex-col gap-2"</span>&gt;
+        {mistakes.map((m) =&gt; &lt;WikiMistakeCard key={m.number} {...m} /&gt;)}
+      &lt;/div&gt;
+    &lt;/section&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     09 — PROSE TYPOGRAPHY RULES
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">09</span>
+    <span class="spec-section-title">Prose Typography Rules</span>
+  </div>
+  <div class="spec-section-desc">
+    These rules govern every word between the headers and the tables. They are not style preferences —
+    they are learning interventions. Each formatting choice either reduces or increases cognitive load.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left"><span class="spec-card-name">Body prose rules — what each element does and when to use it</span></div>
+    </div>
+    <div class="spec-card-body">
+      <table class="token-table">
+        <thead><tr><th>Element</th><th>Style</th><th>When to use</th><th>When NOT to use</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Body paragraph</td>
+            <td><span class="mono">Inter 15px, 400wt, ink, leading-7</span></td>
+            <td>All explanatory prose. Default. Max 5 sentences per paragraph.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Bold</strong></td>
+            <td><span class="mono">font-semibold, ink color</span></td>
+            <td>Specific exam-testable value: a number, a code section, a classification. Max 1 instance per 50 words.</td>
+            <td>General emphasis. Topic words. Sentence-level importance. Anything that isn't a specific recall target.</td>
+          </tr>
+          <tr>
+            <td><em>Italic</em></td>
+            <td><span class="mono">italic, ink color</span></td>
+            <td>First use of a technical term. Official names of laws/codes. Foreign architectural terms.</td>
+            <td>Stylistic emphasis. Terms used more than once (italic on first use only). Long phrases (&gt;5 words).</td>
+          </tr>
+          <tr>
+            <td><code>Inline code</code></td>
+            <td><span class="mono">DM Mono 12px, cream bg, cobalt text, rounded-sm px-1</span></td>
+            <td>Section references (C.5.1), code abbreviations (TGFA, FAR), specific formula terms.</td>
+            <td>Long explanations. Never for full sentences.</td>
+          </tr>
+          <tr>
+            <td>H3 subheading</td>
+            <td><span class="mono">Inter 16px, 600wt, ink, mt-8 mb-3</span></td>
+            <td>Sub-topics within a Part section. Use when a section covers 3+ distinct concepts.</td>
+            <td>Labeling what's obvious from the prose. Never use generic H3s like "Background" or "Overview".</td>
+          </tr>
+          <tr>
+            <td>Breathing sentence</td>
+            <td><span class="mono">Same as body, but &lt;15 words, standalone paragraph</span></td>
+            <td>After 2–3 dense paragraphs. Restates the key implication as a single sentence. Creates a cognitive pause.</td>
+            <td>Padding or filler. Must contain a specific exam-relevant statement.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note-box" style="margin-top:16px">
+        <strong>The Bold Test:</strong> Before bolding anything, ask: "If a student sees only this bold text in a scan, can they form a correct answer on an exam question?" If no — do not bold. If yes — bold. The F-pattern scan reads bold text before sentences. Everything bolded must be independently meaningful without its surrounding sentence.
+      </div>
+
+      <div class="code-full" style="margin-top:16px">
+        <div class="code-block">
+<pre><span class="c-gray">/* globals.css — prose styles for wiki articles */</span>
+<span class="c-green">.wiki-prose</span> {
+  <span class="c-gold">@apply</span> font-sans text-[15px] leading-7 text-ink;
+}
+<span class="c-green">.wiki-prose p</span> { <span class="c-gold">@apply</span> mb-5; }
+<span class="c-green">.wiki-prose p:last-child</span> { <span class="c-gold">@apply</span> mb-0; }
+<span class="c-green">.wiki-prose strong</span> { <span class="c-gold">@apply</span> font-semibold text-ink; }
+<span class="c-green">.wiki-prose em</span>     { <span class="c-gold">@apply</span> italic text-ink; }
+<span class="c-green">.wiki-prose code</span>   { <span class="c-gold">@apply</span> font-mono text-[12px] bg-cream text-primary px-1 py-px rounded-[3px]; }
+<span class="c-green">.wiki-prose h3</span>     { <span class="c-gold">@apply</span> font-sans font-semibold text-base text-ink mt-8 mb-3; }
+<span class="c-green">.wiki-prose h2</span>     { <span class="c-gold">@apply</span> font-sans font-bold text-xl text-ink mt-12 mb-5; }</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     10 — MDX RENDERER INTEGRATION
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">10</span>
+    <span class="spec-section-title">MDX Renderer Integration</span>
+  </div>
+  <div class="spec-section-desc">
+    Wiki content is written in MDX. The renderer maps MDX syntax to the React components built above.
+    Content authors never write raw JSX — they use clean markdown syntax with component shortcodes.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left">
+        <span class="spec-card-name">MDX component mapping</span>
+        <span class="spec-card-sub">how markdown maps to components</span>
+      </div>
+    </div>
+    <div class="spec-card-body">
+      <table class="token-table">
+        <thead><tr><th>MDX syntax</th><th>Renders as</th></tr></thead>
+        <tbody>
+          <tr><td><span class="mono">&lt;WikiCallout type="most-tested"&gt;...&lt;/WikiCallout&gt;</span></td><td>Cobalt Most-tested callout</td></tr>
+          <tr><td><span class="mono">&lt;WikiCallout type="ale-watch"&gt;...&lt;/WikiCallout&gt;</span></td><td>Red ALE Watch callout</td></tr>
+          <tr><td><span class="mono">&lt;WikiCallout type="version-alert"&gt;...&lt;/WikiCallout&gt;</span></td><td>Gold Version Alert callout</td></tr>
+          <tr><td><span class="mono">&lt;WikiPartHeader partNumber={4} title="Corridors" subtitle="Width · turnabouts · surface" /&gt;</span></td><td>Part eyebrow + H2 + subtitle</td></tr>
+          <tr><td><span class="mono">&lt;WikiChangedPill /&gt;</span></td><td>Inline ⟳ 2024 gold pill</td></tr>
+          <tr><td><span class="mono">&lt;WikiTable caption="Corridors summary" columns={...} rows={...} /&gt;</span></td><td>Full exam-scannable table</td></tr>
+          <tr><td><span class="mono">&lt;WikiMistakeList mistakes={[...]} /&gt;</span></td><td>All mistake cards as a section</td></tr>
+          <tr><td><span class="mono">## Section title</span></td><td>H2 with <code>.wiki-prose h2</code> styles</td></tr>
+          <tr><td><span class="mono">### Subsection</span></td><td>H3 with <code>.wiki-prose h3</code> styles</td></tr>
+          <tr><td>Body paragraph</td><td><code>&lt;p&gt;</code> with <code>.wiki-prose p</code> styles</td></tr>
+          <tr><td><span class="mono">**1,500 mm**</span></td><td><code>&lt;strong&gt;</code> — exam value bold</td></tr>
+          <tr><td><span class="mono">*vestibule*</span></td><td><code>&lt;em&gt;</code> — technical term italic</td></tr>
+          <tr><td><span class="mono">`C.5.1`</span></td><td><code>&lt;code&gt;</code> — inline DM Mono reference</td></tr>
+        </tbody>
+      </table>
+
+      <div class="code-full" style="margin-top:16px">
+        <div class="code-block">
+<pre><span class="c-gray">// app/(wiki)/wiki/[slug]/page.tsx</span>
+<span class="c-blue">import</span> { MDXRemote } from <span class="c-gold">'next-mdx-remote/rsc'</span>
+<span class="c-blue">import</span> {
+  WikiArticleHeader, WikiCallout, WikiTable,
+  WikiPartHeader, WikiChangedPill,
+  WikiMistakeCard, WikiMistakeList
+} from <span class="c-gold">'@/components/wiki'</span>
+
+<span class="c-blue">const</span> components = {
+  WikiArticleHeader, WikiCallout, WikiTable,
+  WikiPartHeader, WikiChangedPill,
+  WikiMistakeCard, WikiMistakeList,
+}
+
+<span class="c-blue">export default async function</span> <span class="c-green">WikiArticlePage</span>({ params }: { params: { slug: string } }) {
+  <span class="c-blue">const</span> { content, frontmatter } = <span class="c-blue">await</span> getWikiArticle(params.slug)
+  <span class="c-blue">return</span> (
+    &lt;article className=<span class="c-gold">"wiki-prose max-w-3xl mx-auto px-4 sm:px-6 py-10"</span>&gt;
+      &lt;WikiArticleHeader
+        subject={frontmatter.subject}
+        difficulty={frontmatter.difficulty}
+        readTime={frontmatter.readTime}
+        title={frontmatter.title}
+        updatedNote={frontmatter.updatedNote}
+        aleTestsYou={frontmatter.aleTestsYou}
+      /&gt;
+      &lt;MDXRemote source={content} components={components} /&gt;
+    &lt;/article&gt;
+  )
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     11 — RESPONSIVE & DARK MODE
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">11</span>
+    <span class="spec-section-title">Responsive &amp; Dark Mode</span>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left"><span class="spec-card-name">Mobile-first breakpoint rules</span></div>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-list">
+        <div class="spec-item"><span class="spec-dot"></span><strong>Base (0–640px mobile):</strong> Single column. Tag pills wrap. Table source column hidden (<code>hidden sm:table-cell</code>). Callout boxes full width. Mistake cards stack vertically. Title font-size 24px.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>sm (640px tablet+):</strong> Table source column visible. Title font-size 30px. Tag pills on single row.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>lg (1024px desktop):</strong> Max-width 768px on article content. Left margin for potential sticky TOC in Phase 2.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Touch targets:</strong> All interactive elements minimum 44×44px. The ⟳ pill is display-only, not interactive, so no minimum size requirement.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left"><span class="spec-card-name">Dark mode rules</span></div>
+    </div>
+    <div class="spec-card-body">
+      <div class="spec-list">
+        <div class="spec-item"><span class="spec-dot"></span><strong>All text:</strong> Use Tailwind's semantic tokens (<code>text-foreground</code>, <code>text-muted-foreground</code>) — never hardcoded <code>text-ink</code> directly in dark mode components. Add CSS variable mapping in <code>globals.css</code>.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Callout backgrounds:</strong> The cobalt-light, gold-light, red-light tints must be explicitly set with <code>dark:</code> variants — use 10% opacity cobalt/gold/red on dark backgrounds instead of light tint fills.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Tables:</strong> Section header rows use <code>dark:bg-[#1B3FC420]</code>. Most-tested row uses <code>dark:bg-[#92400E20]</code>. Row borders use <code>dark:border-[#3A3835]</code>.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>⟳ pill:</strong> Dark mode: <code>dark:bg-[#92400E20] dark:text-[#F5C842] dark:border-[#A07020]</code>.</div>
+        <div class="spec-item"><span class="spec-dot"></span><strong>Cobalt Blue (#1B3FC4):</strong> Stays cobalt in both modes. Never invert to a different blue. The brand color is consistent.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     12 — IMPLEMENTATION SEQUENCE
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">12</span>
+    <span class="spec-section-title">Implementation Sequence</span>
+  </div>
+  <div class="spec-section-desc">
+    Build in this exact order. P1 items produce the highest learning impact and are pure CSS/component work.
+    Do not start P2 until all P1 items are tested and rendering correctly in both light and dark mode.
+  </div>
+
+  <table class="seq-table">
+    <tbody>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 1</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">Design tokens in tailwind.config.ts</div>
+          <div class="seq-desc">Add all color and font tokens from Section 01. This is the foundation — nothing else works without it. Verify with a test page showing all swatches.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 2</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiChangedPill.tsx</div>
+          <div class="seq-desc">Smallest component. Build first to validate token setup. If the gold pill renders correctly, tokens are working.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 3</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiCallout.tsx — all three types</div>
+          <div class="seq-desc">Build the callout system in one component with the <code>type</code> prop. Test all three types side by side. Verify dark mode for all three. This is the highest learning-impact change in the entire spec.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 4</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiTable.tsx — with all row types</div>
+          <div class="seq-desc">Build the table with standard, most-tested, section-header, and changed-value rows. Test with the BP 344 Corridors data. Verify mobile source column hiding. Verify cobalt value color in light and dark mode.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 5</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiArticleHeader.tsx</div>
+          <div class="seq-desc">Build the full header with all four elements: tag row, title, updated line, ALE banner. Test on mobile (tags should wrap gracefully). The ALE banner is part of the header, not a callout — make sure this distinction is clear in code structure.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p1" style="font-size:9px">P1 · 6</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">Prose styles in globals.css + MDX integration</div>
+          <div class="seq-desc">Add <code>.wiki-prose</code> class with all typographic rules. Wire the MDX renderer to use the component map. Test with the full BP 344 article MDX file. Verify bold, italic, and inline code styles.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p2" style="font-size:9px">P2 · 7</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiPartHeader.tsx</div>
+          <div class="seq-desc">Simple component — eyebrow + H2 + subtitle. Replace all current H2 section headers in the BP 344 article with this component. Verify spacing: 48px above, 20px below.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p2" style="font-size:9px">P2 · 8</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">WikiMistakeCard.tsx + WikiMistakeList.tsx</div>
+          <div class="seq-desc">Build the mistake card with strikethrough-wrong / cobalt-correct format. Build the list wrapper. Verify the ⟳ pill appears on changed values. Test with all 10 BP 344 mistakes.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num"><span class="spec-card-priority p3" style="font-size:9px">P3 · 9</span></td>
+        <td style="padding:12px 0 12px 12px">
+          <div class="seq-title">Quick Reference table — section header rows</div>
+          <div class="seq-desc">The large master table needs cobalt section header rows to be navigable. Add <code>isSectionHeader</code> rows between ENTRANCES / DOORS / CORRIDORS / TOILET sections. Only tackle this after P1 and P2 are complete and stable.</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     13 — NON-NEGOTIABLE RULES
+═══════════════════════════════════════════════ -->
+<div class="spec-section">
+  <div class="spec-section-header">
+    <span class="spec-section-num">13</span>
+    <span class="spec-section-title">Non-Negotiable Rules</span>
+  </div>
+  <div class="spec-section-desc">
+    These are not preferences. They are hard constraints. Any implementation that violates these rules
+    must be revised before shipping — no exceptions.
+  </div>
+
+  <div class="spec-card">
+    <div class="spec-card-header">
+      <div class="spec-card-header-left"><span class="spec-card-name">Anti-patterns — never build these</span></div>
+    </div>
+    <div class="spec-card-body">
+      <table class="token-table">
+        <thead><tr><th>Pattern</th><th>Why it's banned</th></tr></thead>
+        <tbody>
+          <tr><td>Fourth callout type (any new color)</td><td>The three-type system works because it's learnable. A fourth type dilutes the semantic signal. New callout types require a documented learning-science reason and design review.</td></tr>
+          <tr><td>Signal Red for anything other than ALE Watch border</td><td>Red triggers anxiety responses. It is functional-only: ALE Watch callout border. Never on scores, never on failure states, never on body text.</td></tr>
+          <tr><td>Cobalt Blue on more than 15% of text</td><td>Brand color is only meaningful when scarce. If 40% of text is cobalt, nothing reads as exam-critical. The cobalt signal fails when overused.</td></tr>
+          <tr><td>Syne font on anything other than the H1 title</td><td>Syne is the article title font only. Using it on H2, H3, or callouts makes the page feel noisy and breaks the typographic hierarchy.</td></tr>
+          <tr><td>Bold text as general emphasis</td><td>Bold is a specific signal: "this is a number or value to recall under exam pressure." Using it for general emphasis (important topics, interesting phrases) destroys the F-pattern scan value.</td></tr>
+          <tr><td>Decorative borders or backgrounds on prose sections</td><td>Prose sections are not cards. No border, no background, no box-shadow. The callout system is the only bordered element in the prose flow. Everything else is white space.</td></tr>
+          <tr><td>Animations, transitions, or hover effects on content elements</td><td>Wiki articles are a calm reading environment. No hover effects on paragraphs, no transition on headers, no fade-in on tables. Interaction is reserved for the interactive quiz components (bp344-drill, etc.).</td></tr>
+          <tr><td>Gamification elements (badges, streaks, XP)</td><td>These belong in the quiz engine, not in the wiki. A wiki article that rewards "reading" with a badge is toxic positivity and erodes trust in the platform's signal integrity.</td></tr>
+          <tr><td>More than 2 ALE Watch callouts per article</td><td>The red signal must be rare. If 5 things in an article deserve an ALE Watch, the article has too many high-stakes warnings and the signal degrades. Prioritize the 2 most dangerous misconceptions only.</td></tr>
+          <tr><td>Hardcoded hex values in component files</td><td>All color references must use Tailwind token classes or CSS variables. If a hex value appears in a .tsx file that isn't in the Tailwind config, it's a design system violation.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="note-box" style="margin-top:20px">
+    <strong>The governing question for every implementation decision:</strong> Does this make a student more likely to find the right exam value in less time, with less effort? If yes, build it. If no or uncertain, don't build it. Decoration is not design. Every element must earn its place.
+  </div>
+</div>
+
+</div>
+</body>
+</html>
