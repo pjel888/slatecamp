@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
@@ -8,8 +9,8 @@ import { WikiHighlighter } from './WikiHighlighter'
 import { WikiNoteAnchor } from './WikiNoteAnchor'
 import { WikiTextSelection } from './WikiTextSelection'
 import { Note, Warn, Tip, Example, Callout } from './WikiCallout'
-import PHBuildingSetbacks from '../interactive-illustrations/2D/SetbackIllustration'
 import { ElaborativeInterrogation } from './ElaborativeInterrogation'
+import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -19,7 +20,8 @@ interface WikiArticleProps {
   eiResponses?: EIResponseMap
 }
 
-// Base custom components for MDX rendering (no EI — those are added dynamically)
+// Base HTML overrides + callouts — lightweight, always loaded.
+// Widgets are resolved dynamically per-article via the registry.
 const baseMdxComponents = {
   // Headings with auto-generated IDs for anchor linking
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
@@ -75,11 +77,6 @@ const baseMdxComponents = {
   Tip,
   Example,
   Callout,
-
-  // Interactive illustrations
-  PHBuildingSetbacks: (props: React.HTMLAttributes<HTMLDivElement>) => {
-    return <PHBuildingSetbacks {...props} />
-  },
 }
 
 /**
@@ -90,8 +87,10 @@ const buildMdxComponents = (
   prompts: EIPrompt[],
   responses: EIResponseMap,
   articleId?: string,
+  widgets: Record<string, React.ComponentType<any>> = {},
 ) => ({
   ...baseMdxComponents,
+  ...widgets,
 
   // DB-driven prompts — injected by injectEIPrompts as <EIPrompt idx={N} />
   EIPrompt: ({ idx }: { idx: number }) => {
@@ -197,9 +196,13 @@ export const WikiArticle = async ({
   const content = article.content || ''
   const rawContent = content.replace(/\\n/g, '\n')
   const cleaned = stripLegacyEITags(rawContent)
+    .replace(/<!--[\s\S]*?-->/g, '') // Strip HTML comments — MDX requires {/* */} syntax
   const processedContent = injectEIPrompts(cleaned, eiPrompts)
 
-  const mdxComponents = buildMdxComponents(eiPrompts, eiResponses, article.article_id)
+  // Load only the widgets this article actually references
+  const widgets = await resolveWidgets(processedContent)
+
+  const mdxComponents = buildMdxComponents(eiPrompts, eiResponses, article.article_id, widgets)
 
   return (
     <>
@@ -245,7 +248,11 @@ export const WikiArticle = async ({
           }
         >
           {processedContent ? (
-            <MDXRemote source={processedContent} components={mdxComponents} />
+            <MDXRemote
+              source={processedContent}
+              components={mdxComponents}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
           ) : (
             <p className="text-muted-foreground italic">
               This article has no content yet.

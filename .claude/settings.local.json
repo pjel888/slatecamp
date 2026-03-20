@@ -104,7 +104,19 @@
       "Bash(rm -rf \"D:/SlateCamp/slate-camp/.planning/codebase\")",
       "Bash(mkdir -p \"D:/SlateCamp/slate-camp/.planning/codebase\")",
       "Bash(wc -l D:/SlateCamp/slate-camp/src/lib/actions/*.ts)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__list_pages",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/dashboard/wiki/ale-dsgn-002-03-parking-signage)",
+      "mcp__claude_ai_Supabase__execute_sql",
+      "mcp__claude_ai_Supabase__list_projects",
+      "Bash(mkdir -p bp344 pd1096 ra9514)",
+      "Bash(mv bp344-door.js bp344/door.js)",
+      "Bash(mv bp344-comparison-table.js bp344/comparison-table.js)",
+      "Bash(mv bp344-door-configurator.js bp344/door-configurator.js)",
+      "Bash(mv bp344-corridor-visualizer.js bp344/corridor-visualizer.js)"
     ]
   },
   "enableAllProjectMcpServers": true,

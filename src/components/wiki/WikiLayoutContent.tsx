@@ -1,10 +1,12 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { WikiSidebar } from '@/components/wiki/WikiSidebar'
 import { WikiSidebarShell } from '@/components/wiki/WikiSidebarShell'
+import { WikiContentShell } from '@/components/wiki/WikiContentShell'
+import { WikiNavigationProvider } from '@/components/wiki/WikiNavigationContext'
 import { WikiDisciplineProvider } from '@/components/wiki/WikiDisciplineContext'
 import React from 'react'
 
-export async function WikiLayoutContent({ children }: { children: React.ReactNode }) {
+export const WikiLayoutContent = async ({ children }: { children: React.ReactNode }) => {
   const supabase = await createClient()
   const {
     data: { user },
@@ -30,22 +32,22 @@ export async function WikiLayoutContent({ children }: { children: React.ReactNod
 
   return (
     <WikiDisciplineProvider disciplineId={disciplineId} disciplineName={disciplineName}>
-      <div className="flex flex-col h-full w-full overflow-hidden bg-background">
-        <div className="flex flex-1 min-h-0">
-          {/* Left Sidebar — desktop only (md+), resizable + collapsible */}
-          <WikiSidebarShell>
-            <WikiSidebar
-              disciplineId={disciplineId!}
-              disciplineName={disciplineName}
-            />
-          </WikiSidebarShell>
+      <WikiNavigationProvider>
+        <div className="flex flex-col h-full w-full overflow-hidden bg-background">
+          <div className="flex flex-1 min-h-0">
+            <WikiSidebarShell>
+              <WikiSidebar
+                disciplineId={disciplineId!}
+                disciplineName={disciplineName}
+              />
+            </WikiSidebarShell>
 
-          {/* Center + Right (managed by page) */}
-          <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
-            {children}
+            <WikiContentShell>
+              {children}
+            </WikiContentShell>
           </div>
         </div>
-      </div>
+      </WikiNavigationProvider>
     </WikiDisciplineProvider>
   )
 }

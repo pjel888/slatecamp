@@ -1,0 +1,818 @@
+import { useState } from 'react'
+
+export const ComparisonTable = () => {
+  const [activeRow, setActiveRow] = useState(null)
+  const data = [
+    { elem: 'Door — clear level space', old: '1,500 × 1,500 mm', n: '1,800 × 1,800 mm', src: 'C.2.6', detail: 'The turning circle grew. The 2024 IRR aligns the door approach space with the full wheelchair turning diameter of 1,800 mm. The approach alcove in front of every accessible door must be 300 mm deeper than older plans show.' },
+    { elem: 'Door — corridor exception', old: '1,200 mm corridor side', n: '1,500 mm corridor side', src: 'C.2.6 exception', detail: 'Where a door opens onto a corridor (not into it), the minimum corridor width on that side was raised from 1,200 mm to 1,500 mm — consistent with the new single-wheelchair corridor standard.' },
+    { elem: 'Door closer — interior max force', old: '4.0 kg', n: '2.0 kg', src: 'C.2.4', detail: 'Interior door closers now have a tighter force limit. 4.0 kg is the old value; using it in an answer will be marked wrong.' },
+    { elem: 'Door — secondary peephole height', old: '1,100 mm', n: '1,000 mm', src: 'C.2.14', detail: 'Lowered 100 mm to better match wheelchair eye level per updated anthropometric data in the 2024 IRR.' },
+    { elem: 'Threshold — maximum height', old: '19 mm', n: '12 mm', src: 'C.3.1', detail: 'Major change. The threshold maximum was lowered by 7 mm. Bevel is still required if threshold exceeds 6 mm. Any threshold between 12 mm and 19 mm that was compliant under the old IRR is now non-compliant.' },
+    { elem: 'Switch — height range', old: '920–1,200 mm', n: '900–1,200 mm', src: 'C.4.1', detail: 'Minor correction — the lower bound moved from 920 mm to 900 mm. Small difference but could appear in a pattern-recognition question.' },
+    { elem: 'Corridor — single wheelchair + ambulant', old: '1,200 mm', n: '1,500 mm', src: 'C.5.1', detail: 'Most significant corridor change. A 300 mm increase in the minimum corridor width. Older review materials universally state 1,200 mm — this is now wrong.' },
+    { elem: 'Corridor — turnabout dimensions', old: '1,500 × 1,500 mm', n: '1,800 × 1,800 mm', src: 'C.5.2', detail: 'Turnabouts must now accommodate the full 1,800 mm turning diameter. The old 1,500 × 1,500 mm standard is superseded.' },
+    { elem: 'Toilet cubicle — minimum dimensions', old: '1,700 × 1,800 mm', n: '1,800 × 1,800 mm', src: 'C.6.3.a', detail: 'The cubicle is now a square. The old asymmetric 1,700 × 1,800 mm plan is superseded. Any question or scenario using 1,700 mm as a cubicle dimension is testing the wrong value.' },
+    { elem: 'WC centerline from finished wall', old: '750 mm (ambiguous)', n: '450 mm', src: 'C.6.3.d', detail: 'The 2024 IRR explicitly states: WC shall be installed 450 mm from the finished face of the sidewall to the WC centerline. The grab bar outer face to wall is 100 mm (C.6.3.c), and grab bar face to WC CL is 350 mm.' },
+    { elem: 'Turning space outside cubicle', old: '2.25 sq.m / min 1,500 mm', n: '1,800 × 1,800 mm', src: 'C.6.3.i', detail: 'Now expressed as a specific square dimension rather than area + minimum. Consistent with the full wheelchair turning space standard throughout the 2024 IRR.' },
+    { elem: 'Grab bar — height above toilet seat', old: '280–300 mm (range)', n: '300 mm (exact)', src: 'C.6.3.b', detail: 'The range was tightened to a single value. 280 mm is no longer compliant under the 2024 IRR. Only 300 mm above the seat top.' },
+    { elem: 'Grab bar — diameter', old: '38–45 mm', n: '30–40 mm', src: 'A.5.6', detail: 'The diameter range shifted down and narrowed. 45 mm is no longer compliant. The 2024 IRR aligns with international standards for graspability.' },
+    { elem: 'Urinal — maximum lip height', old: '480 mm', n: '350–400 mm', src: 'C.6.12', detail: 'Major change. The urinal lip was lowered by 80–130 mm. 480 mm is now non-compliant. This change brings the standard closer to seated wheelchair user reach.' },
+    { elem: 'Urinal — clear floor space', old: '750 × 1,200 mm', n: '900 × 900 mm', src: 'C.6.12', detail: 'The clear floor space shape changed from a deep rectangle to a square. The minimum width increased from 750 mm to 900 mm.' },
+    { elem: 'Roll-in shower — dimensions', old: '1,500 × 1,500 mm', n: '1,800 × 1,800 mm', src: 'C.6.22', detail: 'Consistent with the full-standard turning space upgrade throughout the 2024 IRR.' },
+    { elem: 'Roll-in shower — curb maximum', old: '10 mm', n: '12 mm', src: 'C.6.22', detail: 'Minor increase. The bevel requirement still applies above a certain height.' },
+    { elem: 'Vestibule — level area', old: '1,800 × 1,500 mm', n: '1,800 × 1,800 mm', src: 'C.1.4', detail: 'The vestibule width was raised from 1,500 mm to 1,800 mm — consistent with the turning space upgrade throughout the code.' },
+    { elem: 'Door-mounted signage size', old: '100 × 100 mm', n: '200 × 200 mm', src: 'A.7.7', detail: 'The ISA symbol size on accessible toilet doors doubled. Any question with 100 × 100 mm as a signage option is testing the old value.' },
+    { elem: 'Signage — wall/door mounting height', old: '1,400–1,600 mm range', n: '1,500 mm max (to center)', src: 'A.7.6', detail: "The 2024 IRR states: maximum height of 1,500 mm from the finished floor to the center of the sign. Expressed as a ceiling, not a range." },
+  ]
+  const s = { fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }
+  return (
+    <div style={s}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — 2024 vs 2013 Comparison</div>
+      <p style={{ fontSize: 13, color: '#444', margin: '0 0 14px' }}>Click any row to see what changed and why it matters for the ALE.</p>
+      <div style={{ overflowX: 'auto' }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
+          <thead>
+            <tr style={{ background: '#1B3FC4' }}>
+              <th style={{ padding: '8px 10px', textAlign: 'left', color: '#fff', fontWeight: 600 }}>Element</th>
+              <th style={{ padding: '8px 10px', textAlign: 'center', color: '#fff', fontWeight: 600 }}>2013 IRR</th>
+              <th style={{ padding: '8px 10px', textAlign: 'center', color: '#F5A623', fontWeight: 600 }}>2024 IRR ★</th>
+              <th style={{ padding: '8px 10px', textAlign: 'left', color: '#fff', fontWeight: 600 }}>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((d, i) => {
+              const changed = d.old !== d.n
+              return (
+                <tr key={i} onClick={() => setActiveRow(activeRow === i ? null : i)} style={{ borderBottom: '1px solid #e8e6e0', cursor: 'pointer', background: activeRow === i ? '#eef1fb' : 'transparent' }}>
+                  <td style={{ padding: '8px 10px', fontWeight: 500, color: '#222' }}>{d.elem}</td>
+                  <td style={{ padding: '8px 10px', textAlign: 'center', color: '#888', fontFamily: "'DM Mono', monospace", fontSize: 11 }}>{d.old}</td>
+                  <td style={{ padding: '8px 10px', textAlign: 'center', fontFamily: "'DM Mono', monospace", fontSize: 11, fontWeight: 600, color: changed ? '#E63329' : '#1B7A3C' }}>{d.n} {changed ? '★' : '✓'}</td>
+                  <td style={{ padding: '8px 10px', fontSize: 11, color: '#555' }}>{d.src}</td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
+      </div>
+      {activeRow !== null && (
+        <div style={{ marginTop: 14, padding: '12px 16px', background: '#fff', border: '1.5px solid #1B3FC4', borderRadius: 8, fontSize: 13, color: '#222' }}>
+          <strong style={{ color: '#1B3FC4' }}>{data[activeRow].elem}</strong>
+          {' — '}
+          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 11, color: '#888' }}>{data[activeRow].src}</span>
+          <br /><br />
+          {data[activeRow].detail}
+        </div>
+      )}
+    </div>
+  )
+}
+
+export const DoorConfigurator = () => {
+  const [width, setWidth] = useState(900)
+  const [space, setSpace] = useState(1800)
+  const [thresh, setThresh] = useState(0)
+  const [hwH, setHwH] = useState(900)
+  const [force, setForce] = useState(2.0)
+  const issues = [], passes = []
+  if (width < 900) issues.push('Clear width ' + width + 'mm < 900mm minimum (C.2.1)')
+  else passes.push('Width ' + width + 'mm ✓')
+  if (space < 1800) issues.push('Approach space ' + space + 'mm < 1,800mm minimum (C.2.6) — 2024 updated')
+  else passes.push('Approach space ' + space + 'mm ✓')
+  if (thresh > 12) issues.push('Threshold ' + thresh + 'mm exceeds 12mm maximum (C.3.1) — 2024 updated, was 19mm')
+  else if (thresh > 6) passes.push('Threshold ' + thresh + 'mm ✓ — bevel required (gradient 1:8)')
+  else passes.push('Threshold ' + thresh + 'mm ✓')
+  if (hwH < 800 || hwH > 1000) issues.push('Hardware height ' + hwH + 'mm outside preferred 800–1,000mm range (C.2.11)')
+  else passes.push('Hardware ' + hwH + 'mm ✓')
+  if (force > 2.0) issues.push('Door closer force ' + force + 'kg exceeds 2.0kg maximum (C.2.4) — 2024 updated, was 4.0kg')
+  else passes.push('Door closer ' + force + 'kg ✓')
+  const ok = issues.length === 0
+  const sc = 0.09, wX = 30, wY = 40, wH = 120
+  const dPx = Math.min(width * sc, 80), spW = Math.min(space * sc, 120), tH = Math.min(thresh * 0.8, 8)
+  const hardY = wY + wH - (hwH * sc), dSX = wX + 10, dEX = dSX + dPx
+  const wOk = width >= 900, sOk = space >= 1800, tOk = thresh <= 12
+  const fields = [
+    { label: 'Clear width (mm)', val: width, set: setWidth, min: 500, max: 1200, step: 10 },
+    { label: 'Approach space (mm)', val: space, set: setSpace, min: 900, max: 2400, step: 100 },
+    { label: 'Threshold height (mm)', val: thresh, set: setThresh, min: 0, max: 25, step: 1 },
+    { label: 'Hardware height (mm)', val: hwH, set: setHwH, min: 600, max: 1200, step: 50 },
+    { label: 'Closer force (kg)', val: force, set: setForce, min: 0.5, max: 5.0, step: 0.1 },
+  ]
+  return (
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — Door Compliance Configurator (2024 IRR)</div>
+      <p style={{ fontSize: 13, color: '#444', margin: '0 0 14px' }}>Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
+      <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 14 }}>
+        {fields.map(({ label, val, set, min, max, step }) => (
+          <div key={label}>
+            <label style={{ display: 'block', fontSize: 11, fontWeight: 600, color: '#555', marginBottom: 4, textTransform: 'uppercase' }}>{label}</label>
+            <input type="number" value={val} min={min} max={max} step={step} onChange={e => set(parseFloat(e.target.value) || 0)} style={{ width: 100, padding: '7px 9px', border: '1.5px solid #ccc', borderRadius: 6, fontSize: 13, fontFamily: "'DM Mono', monospace" }} />
+          </div>
+        ))}
+      </div>
+      <div style={{ borderRadius: 8, padding: '12px 14px', fontSize: 12, lineHeight: 1.8, marginBottom: 12, background: ok ? '#e8f5ee' : '#fdf0ef', border: `1px solid ${ok ? '#1B7A3C' : '#E63329'}`, color: ok ? '#0f4a24' : '#5a1a16' }}>
+        {ok
+          ? <><strong style={{ color: '#1B7A3C' }}>✓ All parameters compliant</strong> — meets 2024 BP 344 IRR.<br /><span style={{ color: '#555' }}>{passes.join(' · ')}</span></>
+          : <><strong style={{ color: '#E63329' }}>✗ Non-compliant:</strong><br />{issues.map((x, i) => <span key={i}>• {x}<br /></span>)}{passes.length > 0 && <span style={{ color: '#555', fontSize: 11 }}>Passing: {passes.join(' · ')}</span>}</>}
+      </div>
+      <svg width="100%" viewBox="0 0 480 200" style={{ maxWidth: 480, display: 'block' }}>
+        <rect x={wX} y={wY} width="10" height={wH} fill="#888" rx="2" />
+        <line x1={dSX} y1={wY + wH / 2} x2={dEX} y2={wY + wH / 2} stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="3" />
+        <path d={`M ${dEX} ${wY + wH / 2} Q ${dEX + 20} ${wY + wH / 2 - 30} ${dEX + 10} ${wY + wH / 2 - dPx * 0.9}`} fill="none" stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="0.8" strokeDasharray="4 2" />
+        <line x1={dSX} y1={wY + wH + 10} x2={dEX} y2={wY + wH + 10} stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
+        <text x={dSX + dPx / 2} y={wY + wH + 22} fontSize="9" fill={wOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">{width}mm {wOk ? '✓' : '✗'}</text>
+        <rect x={dSX} y={wY} width={spW} height={wH} fill={sOk ? 'rgba(27,122,60,0.08)' : 'rgba(230,51,41,0.08)'} stroke={sOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" strokeDasharray="4 3" rx="2" />
+        <text x={dSX + spW / 2} y={wY + wH / 2 - 8} fontSize="8" fill={sOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">Approach</text>
+        <text x={dSX + spW / 2} y={wY + wH / 2 + 4} fontSize="8" fill={sOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">{space}mm {sOk ? '✓' : '✗ min 1800'}</text>
+        {thresh > 0 && <><rect x={dSX} y={wY + wH - tH} width={dPx} height={tH} fill={tOk ? '#c0dd97' : '#F09595'} opacity="0.8" /><text x={dSX + dPx / 2} y={wY + wH + 36} fontSize="8" fill={tOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">Threshold: {thresh}mm {tOk ? '✓' : '✗ max 12mm'}</text></>}
+        <circle cx={dEX - 3} cy={hardY} r="4" fill="#E8853A" />
+        <text x={dEX + 10} y={hardY + 4} fontSize="8" fill="#E8853A">HW: {hwH}mm</text>
+      </svg>
+    </div>
+  )
+}
+
+export const CorridorVisualizer = () => {
+  const [mode, setMode] = useState('single')
+  const [cw, setCw] = useState(1500)
+  const req = mode === 'single' ? 1500 : 1800
+  const label = mode === 'single' ? 'Single wheelchair + ambulant (min 1,500 mm)' : 'Two wheelchairs passing (min 1,800 mm)'
+  const ok = cw >= req
+  const sc = 0.14, cPx = Math.max(Math.min(cw * sc, 240), 20), mPx = req * sc
+  const sX = 80, wY = 40, wH = 80, wc1X = sX + 14, wc1Y = wY + wH / 2 - 14
+  return (
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — Corridor Width Visualizer (2024 IRR)</div>
+      <div style={{ display: 'flex', gap: 20, marginBottom: 12, flexWrap: 'wrap', alignItems: 'center' }}>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#444', cursor: 'pointer' }}>
+          <input type="radio" name="corr-mode" checked={mode === 'single'} onChange={() => setMode('single')} /> Single WC + ambulant
+        </label>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#444', cursor: 'pointer' }}>
+          <input type="radio" name="corr-mode" checked={mode === 'double'} onChange={() => setMode('double')} /> Two wheelchairs
+        </label>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <label style={{ fontSize: 12, color: '#555' }}>Corridor width (mm):</label>
+          <input type="number" value={cw} step={50} min={600} max={3000} onChange={e => setCw(parseFloat(e.target.value) || 0)} style={{ width: 90, padding: '6px 8px', border: '1.5px solid #ccc', borderRadius: 6, fontSize: 13, fontFamily: "'DM Mono', monospace" }} />
+        </div>
+      </div>
+      <svg width="100%" viewBox="0 0 480 160" style={{ maxWidth: 480, display: 'block' }}>
+        <rect x={sX} y={wY} width="6" height={wH} fill="#888" rx="1" />
+        <rect x={sX + cPx} y={wY} width="6" height={wH} fill="#888" rx="1" />
+        <rect x={sX + 6} y={wY} width={cPx - 6} height={wH} fill={ok ? 'rgba(27,122,60,0.07)' : 'rgba(230,51,41,0.07)'} />
+        <rect x={sX + 6} y={wY} width={Math.min(mPx, cPx - 6)} height={wH} fill="none" stroke="#1B3FC4" strokeWidth="1" strokeDasharray="4 3" opacity="0.5" />
+        <rect x={wc1X} y={wc1Y} width="28" height="28" rx="4" fill={ok ? '#1B3FC4' : '#E63329'} opacity="0.7" />
+        <text x={wc1X + 14} y={wc1Y + 16} fontSize="8" fill="#fff" textAnchor="middle">WC</text>
+        {mode === 'double'
+          ? <><rect x={sX + cPx - 42} y={wc1Y} width="28" height="28" rx="4" fill={ok ? '#1B3FC4' : '#E63329'} opacity="0.7" /><text x={sX + cPx - 28} y={wc1Y + 16} fontSize="8" fill="#fff" textAnchor="middle">WC</text></>
+          : <ellipse cx={sX + cPx - 20} cy={wY + wH / 2} rx="9" ry="14" fill={ok ? '#1B7A3C' : '#E63329'} opacity="0.6" />}
+        <line x1={sX + 6} y1={wY + wH + 12} x2={sX + cPx} y2={wY + wH + 12} stroke={ok ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
+        <text x={sX + cPx / 2} y={wY + wH + 24} fontSize="9" fill={ok ? '#1B7A3C' : '#E63329'} textAnchor="middle">{cw}mm {ok ? '✓' : '✗'}</text>
+        <text x={sX + mPx / 2} y={wY - 8} fontSize="8" fill="#1B3FC4" textAnchor="middle" opacity="0.7">min {req}mm (2024)</text>
+      </svg>
+      <div style={{ marginTop: 10, fontSize: 12, padding: '8px 12px', borderRadius: 6, fontWeight: 600, background: ok ? '#e8f5ee' : '#fdf0ef', border: `1px solid ${ok ? '#1B7A3C' : '#E63329'}`, color: ok ? '#1B7A3C' : '#E63329' }}>
+        {ok ? `✓ ${cw}mm meets the 2024 IRR ${req}mm minimum for ${label}.` : `✗ ${cw}mm is below the 2024 IRR ${req}mm minimum. Deficit: ${req - cw}mm.`}
+      </div>
+    </div>
+  )
+}
+
+export const CubicleChecker = () => {
+  const [w, setW] = useState(1800), [d, setD] = useState(1800), [door, setDoor] = useState(900), [turn, setTurn] = useState(1800), [swing, setSwing] = useState('out')
+  const issues = [], passes = []
+  if (w < 1800) issues.push(`Width ${w}mm < 1,800mm (C.6.3.a) — 2024: now square, was 1,700mm`)
+  else passes.push(`Width ${w}mm ✓`)
+  if (d < 1800) issues.push(`Depth ${d}mm < 1,800mm (C.6.3.a)`)
+  else passes.push(`Depth ${d}mm ✓`)
+  if (door < 900) issues.push(`Door ${door}mm < 900mm (C.2.1)`)
+  else passes.push(`Door ${door}mm ✓`)
+  if (turn < 1800) issues.push(`Turning space ${turn}mm < 1,800mm (C.6.3.i) — 2024 updated from 1,500mm`)
+  else passes.push(`Turning ${turn}mm ✓`)
+  if (swing === 'in') issues.push('Door swings inward — must swing outward (C.6.14)')
+  else passes.push('Door swing outward ✓')
+  const ok = issues.length === 0
+  const sc = Math.min(160 / Math.max(w, 1), 160 / Math.max(d, 1))
+  const cw = Math.round(w * sc), cd = Math.round(d * sc), tw = Math.round(turn * sc)
+  const mPx = Math.round(1800 * sc), ox = 30, oy = 20
+  const wOk = w >= 1800, dOk = d >= 1800, tOk = turn >= 1800, swOk = swing === 'out'
+  const wcX = ox + Math.round(cw * 0.5), wcY = oy + Math.round(cd * 0.38)
+  const clPx = Math.round(450 * sc), dPx = Math.round(door * sc), tsY = oy + cd + 22
+  return (
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — Cubicle Compliance Checker (2024 IRR)</div>
+      <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 12 }}>
+        {[['Width (mm)', w, setW], ['Depth (mm)', d, setD], ['Door clear width (mm)', door, setDoor], ['Turning space (mm)', turn, setTurn]].map(([lbl, val, set]) => (
+          <div key={lbl}>
+            <label style={{ display: 'block', fontSize: 11, fontWeight: 600, color: '#555', marginBottom: 4, textTransform: 'uppercase' }}>{lbl}</label>
+            <input type="number" value={val} step={50} min={500} max={2500} onChange={e => set(parseFloat(e.target.value) || 0)} style={{ width: 100, padding: '7px 9px', border: '1.5px solid #ccc', borderRadius: 6, fontSize: 13, fontFamily: "'DM Mono', monospace" }} />
+          </div>
+        ))}
+        <div>
+          <label style={{ display: 'block', fontSize: 11, fontWeight: 600, color: '#555', marginBottom: 4, textTransform: 'uppercase' }}>Door swing</label>
+          <select value={swing} onChange={e => setSwing(e.target.value)} style={{ padding: '7px 9px', border: '1.5px solid #ccc', borderRadius: 6, fontSize: 13 }}>
+            <option value="out">Outward</option>
+            <option value="in">Inward</option>
+          </select>
+        </div>
+      </div>
+      <div style={{ borderRadius: 8, padding: '12px 14px', fontSize: 12, lineHeight: 1.8, marginBottom: 12, background: ok ? '#e8f5ee' : '#fdf0ef', border: `1px solid ${ok ? '#1B7A3C' : '#E63329'}`, color: ok ? '#0f4a24' : '#5a1a16' }}>
+        {ok ? <><strong style={{ color: '#1B7A3C' }}>✓ Compliant — 2024 IRR</strong><br />{passes.join(' · ')}</> : <><strong style={{ color: '#E63329' }}>✗ Non-compliant:</strong><br />{issues.map((x, i) => <span key={i}>• {x}<br /></span>)}</>}
+      </div>
+      <svg width="100%" viewBox="0 0 420 280" style={{ maxWidth: 420, display: 'block' }}>
+        <rect x={ox} y={oy} width={mPx} height={mPx} fill="none" stroke="#1B3FC4" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.35" />
+        <text x={ox + mPx + 3} y={oy + mPx / 2} fontSize="7" fill="#1B3FC4" opacity="0.5" dominantBaseline="central">1800mm min</text>
+        <rect x={ox} y={oy} width={cw} height={cd} fill={wOk && dOk ? 'rgba(27,122,60,0.07)' : 'rgba(230,51,41,0.07)'} stroke={wOk && dOk ? '#1B7A3C' : '#E63329'} strokeWidth="1.5" rx="2" />
+        <ellipse cx={wcX} cy={wcY} rx="14" ry="18" fill="#fff" stroke="#aaa" strokeWidth="1" />
+        <text x={wcX} y={wcY} fontSize="7" fill="#888" textAnchor="middle" dominantBaseline="central">WC</text>
+        <line x1={ox} y1={wcY} x2={ox + clPx} y2={wcY} stroke="#E8853A" strokeWidth="0.8" strokeDasharray="2 2" />
+        <text x={ox + clPx / 2} y={wcY - 6} fontSize="7" fill="#E8853A" textAnchor="middle">450mm CL</text>
+        <line x1={ox} y1={oy + cd} x2={ox + dPx} y2={oy + cd} stroke={swOk ? '#E8853A' : '#E63329'} strokeWidth="2.5" />
+        <text x={ox + dPx / 2} y={oy + cd + 11} fontSize="7" fill={swOk ? '#E8853A' : '#E63329'} textAnchor="middle">{door}mm ({swOk ? '→ out ✓' : '← IN ✗'})</text>
+        <line x1={ox} y1={oy - 8} x2={ox + cw} y2={oy - 8} stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
+        <text x={ox + cw / 2} y={oy - 13} fontSize="9" fill={wOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">{w}mm {wOk ? '✓' : '✗'}</text>
+        <line x1={ox + cw + 8} y1={oy} x2={ox + cw + 8} y2={oy + cd} stroke={dOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
+        <text x={ox + cw + 12} y={oy + cd / 2} fontSize="9" fill={dOk ? '#1B7A3C' : '#E63329'} dominantBaseline="central">{d}mm {dOk ? '✓' : '✗'}</text>
+        <rect x={ox} y={tsY} width={tw} height={Math.round(tw * 0.4)} fill={tOk ? 'rgba(27,122,60,0.08)' : 'rgba(230,51,41,0.08)'} stroke={tOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" strokeDasharray="3 2" rx="2" />
+        <text x={ox + tw / 2} y={tsY + Math.round(tw * 0.2)} fontSize="7" fill={tOk ? '#1B7A3C' : '#E63329'} textAnchor="middle" dominantBaseline="central">Turning: {turn}mm {tOk ? '✓' : '✗ min 1800'}</text>
+      </svg>
+    </div>
+  )
+}
+
+export const GrabBarExplainer = () => {
+  const [offset, setOffset] = useState(300)
+  const ok = offset === 300
+  const bc = ok ? '#1B7A3C' : '#E63329'
+  const sc = 0.22, fY = 280, sH = 450 * sc, sY = fY - sH, bH = (450 + offset) * sc, bY = fY - bH
+  const ox = 60, wcW = 44, wcX = ox + 28, floorToBar = 450 + offset
+  return (
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — Grab Bar Reference Points (2024 IRR)</div>
+      <p style={{ fontSize: 13, color: '#444', margin: '0 0 10px' }}>The 2024 IRR specifies grab bar height from two reference points simultaneously. Move the slider — only 300 mm above seat is compliant.</p>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
+        <label style={{ fontSize: 12, color: '#555' }}>Grab bar height above seat (mm):</label>
+        <input type="range" min={250} max={350} value={offset} onChange={e => setOffset(parseInt(e.target.value))} style={{ width: 160 }} />
+        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 13, color: '#1B3FC4', minWidth: 50 }}>{offset} mm</span>
+      </div>
+      <svg width="100%" viewBox="0 0 380 320" style={{ maxWidth: 380, display: 'block', margin: '0 auto' }}>
+        <line x1="30" y1={fY} x2="340" y2={fY} stroke="#888" strokeWidth="2" />
+        <text x="34" y={fY + 12} fontSize="9" fill="#888">Finished floor (0 mm)</text>
+        <line x1={ox} y1="20" x2={ox} y2={fY} stroke="#bbb" strokeWidth="8" strokeLinecap="round" />
+        <rect x={wcX} y={sY} width={wcW} height={Math.round(sH * 0.62)} fill="#e8e6e0" stroke="#999" strokeWidth="1" rx="4" />
+        <ellipse cx={wcX + wcW / 2} cy={sY} rx={wcW / 2} ry="6" fill="#d0cec7" stroke="#aaa" strokeWidth="1" />
+        <line x1={wcX + wcW + 8} y1={fY} x2={wcX + wcW + 8} y2={sY} stroke="#1B3FC4" strokeWidth="1.5" strokeDasharray="4 2" />
+        <text x={wcX + wcW + 12} y={fY - Math.round(sH / 2)} fontSize="9" fill="#1B3FC4" dominantBaseline="central">450mm (seat)</text>
+        <rect x={ox - 10} y={bY - 5} width="52" height="10" fill={bc} rx="5" opacity="0.9" />
+        <line x1={ox - 18} y1={fY} x2={ox - 18} y2={bY} stroke={bc} strokeWidth="1.5" strokeDasharray="4 2" />
+        <text x={ox - 22} y={Math.round((fY + bY) / 2)} fontSize="9" fill={bc} textAnchor="end" dominantBaseline="central">{floorToBar}mm</text>
+        <text x={ox - 22} y={Math.round((fY + bY) / 2) + 12} fontSize="8" fill={bc} textAnchor="end" dominantBaseline="central">from floor</text>
+        <line x1={ox + 52} y1={sY} x2={ox + 52} y2={bY} stroke="#E8853A" strokeWidth="1.5" strokeDasharray="4 2" />
+        <text x={ox + 66} y={Math.round((sY + bY) / 2)} fontSize="9" fill="#E8853A" dominantBaseline="central">{offset}mm</text>
+        <text x={ox + 66} y={Math.round((sY + bY) / 2) + 12} fontSize="8" fill="#E8853A" dominantBaseline="central">above seat</text>
+        <rect x="30" y={fY + 22} width="320" height="26" rx="5" fill={ok ? '#e8f5ee' : '#fdf0ef'} stroke={bc} strokeWidth="0.8" />
+        <text x="190" y={fY + 38} fontSize="10" fill={bc} textAnchor="middle" dominantBaseline="central">
+          {ok ? '✓ 2024 compliant — 300mm above seat, ~750mm above floor' : '✗ Non-compliant — 2024 IRR requires exactly 300mm above seat'}
+        </text>
+      </svg>
+    </div>
+  )
+}
+
+export const RecallDrill = () => {
+  const items = [
+    { q: '⟳ Min clear door opening width (2024 IRR)?', a: '900 mm', src: 'C.2.1' },
+    { q: '⟳ Clear level space required before and beyond a door (2024)?', a: '1,800 × 1,800 mm', src: 'C.2.6' },
+    { q: '⟳ Door closer maximum force (interior, 2024)?', a: '2.0 kg', src: 'C.2.4' },
+    { q: '⟳ Threshold maximum height (2024)?', a: '12 mm', src: 'C.3.1' },
+    { q: 'At what threshold height is beveling required? At what gradient?', a: 'Above 6 mm; gradient 1:8', src: 'C.3.1' },
+    { q: '⟳ Secondary peephole height (2024)?', a: '1,000 mm', src: 'C.2.14' },
+    { q: '⟳ Switch height range (2024)?', a: '900–1,200 mm', src: 'C.4.1' },
+    { q: '⟳ Corridor minimum width — single wheelchair + ambulant (2024)?', a: '1,500 mm', src: 'C.5.1' },
+    { q: 'Corridor minimum width — two wheelchairs passing?', a: '1,800 mm', src: 'C.5.2' },
+    { q: '⟳ Corridor turnabout dimensions (2024)?', a: '1,800 × 1,800 mm', src: 'C.5.2' },
+    { q: 'Maximum spacing between corridor turnabouts?', a: '12,000 mm (12 m)', src: 'C.5.2' },
+    { q: 'Distance to turnabout from a dead-end corridor?', a: 'At or within 3,500 mm', src: 'C.5.3' },
+    { q: '⟳ Toilet cubicle minimum dimensions (2024)?', a: '1,800 × 1,800 mm (square)', src: 'C.6.3.a' },
+    { q: '⟳ Turning space required outside a toilet cubicle (2024)?', a: '1,800 × 1,800 mm', src: 'C.6.3.i' },
+    { q: 'WC seat height above finished floor?', a: '450 mm', src: 'C.6.7' },
+    { q: '⟳ WC centerline from the finished face of the side wall (2024)?', a: '450 mm', src: 'C.6.3.d' },
+    { q: '⟳ Grab bar outer face to wall distance (2024)?', a: '100 mm', src: 'C.6.3.c' },
+    { q: 'Grab bar face to WC centerline distance?', a: '350 mm', src: 'C.6.3.c' },
+    { q: '⟳ Grab bar height above toilet seat (2024 — exact value)?', a: '300 mm', src: 'C.6.3.b' },
+    { q: '⟳ Grab bar cross-section diameter range (2024)?', a: '30–40 mm', src: 'A.5.6' },
+    { q: 'Minimum wall clearance for grab bars?', a: '50 mm', src: 'A.5.7' },
+    { q: 'Minimum flip-up grab bar load capacity?', a: '200 kg', src: 'C.6.3.b' },
+    { q: 'Lavatory centerline from adjacent wall?', a: '450 mm', src: 'C.6.9' },
+    { q: 'Lavatory rim mounting height?', a: '800 mm', src: 'C.6.9' },
+    { q: 'Lavatory minimum vertical knee clearance?', a: '650 mm', src: 'C.6.9' },
+    { q: '⟳ Urinal maximum lip height (2024)?', a: '350–400 mm', src: 'C.6.12' },
+    { q: '⟳ Urinal clear floor space (2024)?', a: '900 × 900 mm', src: 'C.6.12' },
+    { q: 'Urinal grab bar top edge height?', a: '1,500 mm above floor', src: 'C.6.12' },
+    { q: '⟳ Roll-in shower dimensions (2024)?', a: '1,800 × 1,800 mm', src: 'C.6.22' },
+    { q: '⟳ Roll-in shower maximum curb height (2024)?', a: '12 mm', src: 'C.6.22' },
+    { q: 'Emergency call button height range in accessible toilet?', a: '400–600 mm from finished floor', src: 'C.6.18' },
+    { q: 'Horizontal pull bar height on toilet door?', a: '900 mm', src: 'C.6.17' },
+    { q: 'Why must an accessible toilet door swing outward?', a: 'So a rescuer can open the door if a person has fallen behind it', src: 'C.6.14' },
+    { q: '⟳ Accessible toilet door signage size (2024)?', a: '200 × 200 mm', src: 'A.7.7' },
+    { q: '⟳ Wall/door signage maximum mounting height — to center of sign (2024)?', a: '1,500 mm', src: 'A.7.6' },
+    { q: 'ISA symbol colors?', a: 'White symbols on UN Blue (#5B92E5) background', src: 'A.7.1' },
+    { q: '⟳ Vestibule level area (2024)?', a: '1,800 mm depth × 1,800 mm width', src: 'C.1.4' },
+    { q: 'What hardware type is NOT permitted on accessible routes?', a: 'Knob-type hardware', src: 'C.2.10' },
+    { q: 'How many accessible toilets are required when a floor has 20 or fewer WCs?', a: 'At least 1 accessible female + 1 accessible male cubicle', src: 'C.6.2' },
+    { q: 'What toilet seat shape is explicitly prohibited by the 2024 IRR?', a: 'Horseshoe-shaped seats', src: 'C.6.3.h' },
+  ]
+  const shuffle = arr => { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]] }; return a }
+  const [deck, setDeck] = useState(() => shuffle(items))
+  const [idx, setIdx] = useState(0)
+  const [revealed, setRevealed] = useState(false)
+  const cur = deck[idx]
+  const next = () => {
+    const ni = idx + 1
+    if (ni >= deck.length) { setDeck(shuffle(items)); setIdx(0) } else { setIdx(ni) }
+    setRevealed(false)
+  }
+  return (
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", border: '1px solid #d0cec7', borderRadius: 10, padding: '20px 24px', margin: '20px 0', background: '#F8F7F5' }}>
+      <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#1B3FC4', marginBottom: 8 }}>Interactive — Recall Drill (2024 IRR)</div>
+      <p style={{ fontSize: 13, color: '#444', margin: '0 0 14px' }}>Questions marked ⟳ test a value that changed in 2024 — common ALE traps. Hit <strong>Reveal</strong> then <strong>Next</strong>.</p>
+      <div style={{ background: '#fff', border: '1.5px solid #d0cec7', borderRadius: 8, padding: '16px 18px', minHeight: 80, marginBottom: 12 }}>
+        <div style={{ fontSize: 14, color: '#1a1a1a', fontWeight: 500, marginBottom: 6 }}>{cur.q}</div>
+        <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, color: '#888' }}>BP 344 2024 IRR — {cur.src}</div>
+        {revealed && (
+          <div style={{ marginTop: 12, padding: '10px 14px', borderRadius: 6, background: '#e8f5ee', border: '1px solid #1B7A3C' }}>
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 14, color: '#1B7A3C', fontWeight: 600 }}>{cur.a}</span>
+          </div>
+        )}
+      </div>
+      <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+        {!revealed
+          ? <button onClick={() => setRevealed(true)} style={{ padding: '8px 20px', background: '#1B3FC4', color: '#fff', border: 'none', borderRadius: 6, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit' }}>Reveal</button>
+          : <button onClick={next} style={{ padding: '8px 20px', background: '#fff', color: '#1B3FC4', border: '1.5px solid #1B3FC4', borderRadius: 6, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit' }}>Next →</button>}
+        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 11, color: '#888' }}>{idx + 1} / {deck.length}</span>
+      </div>
+    </div>
+  )
+}
+
+# Doors, Corridors & Washrooms — BP 344 / RA 9442
+
+This article covers the specific dimensional requirements for accessible doors, corridors, and washrooms under BP 344 (Accessibility Law). **All values reflect the 2024 Revised IRR** — effective August 8, 2024 — which contains major dimensional changes from earlier versions. Values that changed from the 2013 Illustrated IRR are flagged with `⟳ 2024 UPDATED`. Read the exam patterns and common mistakes first.
+
+---
+
+## How It's Tested
+
+Three ALE patterns apply to this topic. Knowing them before you read the dimensions tells you which numbers to memorize and which traps to watch for.
+
+**Pattern 1 — Direct recall of dimensions.** "What is the minimum clear opening width for an accessible door under BP 344?" Answer: **900 mm**. Exact values required — 850 mm will be marked wrong.
+
+**Pattern 2 — Scenario application.** "An architect is designing an accessible toilet cubicle. The space available is 1.70 m × 1.80 m. Does this meet BP 344 requirements?" Answer: No — the 2024 IRR requires **1,800 mm × 1,800 mm** (a square). Students who memorized the old 1,700 × 1,800 mm will fail this question.
+
+**Pattern 3 — Code violation identification (Area C).** A floor plan shows an accessible washroom layout. You must identify violations — a grab bar at the wrong height, a door swinging inward, a corridor too narrow, a threshold too high. This rewards understanding *why* each dimension exists, not just memorizing the number.
+
+---
+
+## Common Mistakes
+
+The ten most frequent errors. Read these before the dimensions.
+
+**1. Using outdated corridor width.** The 2024 IRR raised the single-wheelchair + ambulant corridor from 1,200 mm to **1,500 mm** (C.5.1). Students using older review materials will get this wrong.
+
+**2. Thinking the cubicle is rectangular.** The 2024 IRR changed the toilet cubicle to **1,800 × 1,800 mm** — it is now a square. The old 1,700 × 1,800 mm is superseded. Do not use it.
+
+**3. Using the wrong threshold maximum.** The 2024 IRR lowered the threshold maximum to **12 mm** (from 19 mm). If a threshold is higher than 6 mm, it must be beveled. Students still memorizing 19 mm will fail threshold questions.
+
+**4. Getting the clear level space at doors wrong.** The 2024 IRR increased the clear level space to **1,800 × 1,800 mm** (from 1,500 × 1,500 mm) before and beyond every door (C.2.6). The exception: where a door opens onto but not into a corridor, the corridor side may be reduced to **1,500 mm**.
+
+**5. Mixing up grab bar height reference points.** The L-type grab bar must be exactly **300 mm** above the top of the toilet seat — the 2024 IRR dropped the old 280–300 mm range to a single value. Since the WC seat is at 450 mm above the floor, the grab bar top is at approximately **750 mm** above finished floor.
+
+**6. Confusing WC centerline from the wall.** The 2024 IRR explicitly states: WC centerline shall be **450 mm** from the finished face of the sidewall (C.6.3.d). The grab bar outer face to wall is **100 mm**, and the grab bar face to WC centerline is **350 mm** (C.6.3.c).
+
+**7. Wrong urinal lip height.** The 2024 IRR changed the urinal maximum lip height from 480 mm to **350–400 mm from toilet floor** (C.6.12) — a drop of 80–130 mm.
+
+**8. Door swing in accessible toilets.** Accessible toilet stall doors must swing **outward** — so a rescuer can open the door if a person has fallen behind it. Locks must be openable from outside with a coin (C.6.14).
+
+**9. Turnabout dimensions.** The 2024 IRR changed corridor turnabouts to **1,800 × 1,800 mm** (from 1,500 × 1,500 mm). The maximum spacing between turnabouts remains 12,000 mm.
+
+**10. Door closer force.** The 2024 IRR lowered interior door closer maximum force to **2.0 kg** (from 4.0 kg).
+
+---
+
+## What Changed in 2024 — Version Comparison
+
+The 2024 Revised IRR (effective August 8, 2024, Official Gazette Vol. 120 No. 28) introduced significant dimensional changes. Use this table to identify what your existing review materials may have wrong.
+
+<ComparisonTable />
+
+---
+
+## Legislative Framework
+
+Three laws work together to govern accessibility in Philippine buildings.
+
+**Batas Pambansa Blg. 344 (1982)** — the Accessibility Law. It requires buildings, institutions, establishments, and public utilities to install facilities that enhance the mobility of persons with disabilities (PWDs). The DPWH administers it; city/municipal engineers enforce it through the building permit process.
+
+**Republic Act No. 7277 (1992)** — the Magna Carta for Disabled Persons. The overarching rights-based law guaranteeing PWDs the right to accessible transportation, buildings, and public spaces.
+
+**Republic Act No. 9442 (2007)** — amends RA 7277 by adding enforcement penalties. First violation: ₱50,000 to ₱100,000 fine or 6 months to 2 years imprisonment. Subsequent violations: ₱100,000 to ₱200,000 or 2 to 6 years imprisonment.
+
+The **2024 Revised IRR** (effective August 8, 2024, Official Gazette Vol. 120 No. 28, pp. 7192–7205 + Appendix A) is the current technical standard. It was jointly promulgated by DPWH Secretary Manuel M. Bonoan and DOTr Secretary Jaime J. Bautista, in coordination with NCDA Chairman Rexlon T. Gatchalian.
+
+---
+
+## Anthropometric Foundation
+
+Every dimensional requirement in BP 344 derives from the spatial needs of a wheelchair user. Understanding these source values makes every subsequent table logical rather than arbitrary.
+
+| Parameter | Value |
+|---|---|
+| Wheelchair minimum length | 1,100 mm |
+| Wheelchair minimum width | 800 mm |
+| **Wheelchair turning circle** | **1,800 mm diameter** |
+| Comfortable vertical forward reach | 700–1,200 mm above floor |
+| Maximum forward reach (obstruction ≥500 mm deep) | 1,100 mm |
+| Comfortable horizontal forward reach | 500–900 mm |
+| Side reach (unobstructed) | 200–1,300 mm |
+| Maximum obstructed side reach | 1,200 mm |
+| Knee/leg clearance under tables/fixtures | 700 mm |
+| Minimum clear space (wheelchair + occupant width) | 900 mm |
+
+The **1,800 mm turning circle** is the governing dimension in the 2024 IRR — used consistently for door approach spaces, turnabout bays, cubicle maneuvering areas, and vestibule widths.
+
+> **Source:** BP 344 2024 Revised IRR, Rule II Section 1.b — Anthropometrics and Dimensional Data
+
+---
+
+## Accessible Entrances
+
+All public entrances shall be accessible, including those serving leased spaces, parking facilities, pedestrian tunnels, and elevated walkways (C.1.1). All entrances and exits along the accessible route shall prevent longer travel distances or exclusion of PWDs from the standard path (C.1.2).
+
+Where entrances are not level with site arrival grade, accessible ramps, wheelchair lifts, or similar mechanisms shall be provided (C.1.3).
+
+**Vestibules** ⟳ 2024 UPDATED: Level area of at least **1,800 mm depth × 1,800 mm width** (C.1.4). Old value: 1,800 × 1,500 mm.
+
+**Glass doors and panels:** Horizontal or graphical patterns with a minimum luminance contrast of 30%, between **800 mm and 1,500 mm** above the floor (C.1.5).
+
+**Weather protection:** Accessible entrances/exits, including stairs, ramps, and wheelchair lifts, shall have full weather protection from rain and heat exposure (C.1.6).
+
+> **Source:** BP 344 2024 Revised IRR, Part C, Section 1 — Accessible Entrances
+
+---
+
+## Doors
+
+### Dimensional Requirements
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Minimum clear door width** | **900 mm** — from face of door fully open at 90° to door jamb | C.2.1 |
+| Sliding door clear width | 900 mm (when fully opened) | C.2.1 |
+| Double-leaf doors | **1,800 mm** minimum clear width | C.2.3 |
+| **Clear level space before/beyond door** ⟳ | **1,800 × 1,800 mm** | C.2.6 |
+| Exception (corridor side only) ⟳ | Minimum **1,500 mm** corridor width on corridor side | C.2.6 |
+| **Threshold maximum height** ⟳ | **12 mm** | C.3.1 |
+| Threshold beveling | Required if threshold higher than **6 mm**, gradient **1:8** | C.3.1 |
+
+> **ALE trap:** The door clear width is still **900 mm**. The big 2024 changes are the approach space (now **1,800 × 1,800 mm**) and the threshold maximum (now **12 mm**, down from 19 mm).
+
+### Hardware
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Interior door closer max force** ⟳ | **2.0 kg** | C.2.4 |
+| Exterior hinged doors | No specified force maximum | C.2.5 |
+| **Hardware height (centered)** | **900 mm** above floor | C.2.11 |
+| Preferred handle type | Vertical pull handles, centered at **900 mm** | C.2.12 |
+| Hardware type | Lever-type — no wrist action, grasping, or pinching | C.2.10 |
+| Knob-type hardware | **Not permitted** on accessible routes | C.2.10 |
+| **Secondary peephole height** ⟳ | **1,000 mm** from finished floor | C.2.14 |
+| Kick plate height | **300–400 mm** | C.2.13 |
+| Vision panel bottom edge | Not more than **900 mm** above finished floor | C.2.20 |
+| Vision panel top edge | Not less than **1,500 mm** above finished floor | C.2.20 |
+| Vision panel minimum width | Not less than **100 mm** | C.2.21 |
+
+### Door Swing
+
+Swing-out (outward-opening) doors shall be used for storage rooms, closets, toilets, and accessible restroom stalls (C.2.8). For swing doors: from an open position of 70°, the door shall take **4 seconds or more** to move into a semi-closed position of approximately 12° (C.2.9). Automatic doors are preferred wherever possible (C.2.25).
+
+> **Source:** BP 344 2024 Revised IRR, Part C, Section 2 — Doors; Section 3 — Thresholds
+
+<DoorConfigurator />
+
+---
+
+## Switches and Controls
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Switch height range** ⟳ | **900–1,200 mm** above floor (center of switch plate) | C.4.1 |
+| **Distance from door latch side** | **200 mm** (on center) from latch side | C.4.2 |
+
+> Old switch lower bound was 920 mm. The 2024 IRR changed this to **900 mm**.
+
+> **Source:** BP 344 2024 Revised IRR, Part C, Section 4 — Switches
+
+---
+
+## Corridors
+
+### Width Requirements ⟳ 2024 UPDATED
+
+| Scenario | Minimum Clear Width (2024 IRR) | Source |
+|---|---|---|
+| **Single wheelchair + non-PWD passing** ⟳ | **1,500 mm (1.50 m)** | C.5.1 |
+| **Two wheelchairs passing** | **1,800 mm (1.80 m)** | C.5.2 |
+
+> **Major 2024 change:** Single-wheelchair corridor width increased from 1,200 mm to **1,500 mm**. Review materials published before 2024 universally show 1,200 mm — this is the most likely corridor trap on a current ALE.
+
+### Turnabout Spaces ⟳ 2024 UPDATED
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Turnabout space dimensions** ⟳ | **1,800 mm × 1,800 mm** minimum | C.5.2 |
+| **Maximum spacing between turnabouts** | **12,000 mm (12.0 m)** | C.5.2 |
+| **Dead-end corridors** | Turnabout at or within **3,500 mm** of every dead end | C.5.3 |
+
+### Surface, Slope and Headroom
+
+| Parameter | Requirement | Source |
+|---|---|---|
+| Floor surface | Slip-resistant, maintained level | C.5.4 |
+| Maximum longitudinal slope | **1:20 (5%)** | B.3.2 |
+| Maximum cross gradient | **1:100 (1%)** | B.3.3 |
+| Surface interruptions | Edges above **6 mm** not permitted | B.3.6 |
+| Max grating member spacing | **13 mm** center-to-center | B.3.5 |
+| Grating protrusion/recession | Not more than **6 mm** above or below surface | B.3.5 |
+| Minimum headroom clearance | **2,000 mm** | B.3.9 |
+
+> **Source:** BP 344 2024 Revised IRR, Part C, Section 5 — Corridors
+
+<CorridorVisualizer />
+
+---
+
+## Accessible Washrooms and Toilets
+
+This is the highest exam-frequency section of BP 344 and the section most affected by the 2024 IRR changes. All values below are from the 2024 Revised IRR Part C, Section 6 — Toilets and Baths unless noted.
+
+Accessible toilet facilities shall permit effortless and obstruction-free wheelchair movement, enabling entry into the cubicle, closing the door, and transfer to the WC from frontal or lateral positions (C.6.1).
+
+### Minimum Number of Accessible Toilets
+
+| Condition | Requirement | Source |
+|---|---|---|
+| Total WCs per floor ≤ 20 | **At least 1** accessible female + **1** accessible male cubicle | C.6.2 |
+| Total WCs per floor > 20 | At least 1 accessible per gender per 20 WCs | C.6.2 |
+
+### Cubicle Dimensions ⟳ 2024 UPDATED
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Minimum cubicle dimensions** ⟳ | **1,800 mm × 1,800 mm** | C.6.3.a |
+| **Turning space outside cubicle** ⟳ | **1,800 × 1,800 mm** | C.6.3.i |
+| Minimum door clear opening | **900 mm** — door must swing **outward** or be sliding | C.2.1, C.6.14 |
+
+> **ALE trap:** The 2024 cubicle is a **square** — 1,800 × 1,800 mm. The old 1,700 × 1,800 mm asymmetric plan is superseded. Any answer option showing 1,700 mm as a cubicle dimension reflects a pre-2024 standard.
+
+<CubicleChecker />
+
+### Water Closet (Toilet)
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **WC seat height** | **450 mm** above finished floor | C.6.7 |
+| **WC centerline from finished wall** ⟳ | **450 mm** | C.6.3.d |
+| **Grab bar outer face to wall** ⟳ | **100 mm** | C.6.3.c |
+| **Grab bar face to WC centerline** | **350 mm** | C.6.3.c |
+| Flush type | **Tank-type with lever flush valve** | C.6.3.e |
+| Horseshoe-shaped seats | **Prohibited** | C.6.3.h |
+| Color contrast | WC and lavatories shall contrast with tiles | C.6.6 |
+
+> **ALE trap:** WC centerline = **450 mm** from wall (2024). The old value was 750 mm (ambiguous). Lavatory centerline is also 450 mm (C.6.9) — same value but a different fixture. Don't confuse their other dimensions.
+
+### Grab Bars ⟳ 2024 UPDATED
+
+The 2024 IRR tightened both the diameter range and the height specification. Two types are specified: **fixed L-type** (side wall) and **flip-up/movable** (open side).
+
+**General Grab Bar Specifications ⟳:**
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Cross-section diameter** ⟳ | **30 mm to 40 mm** | A.5.6 |
+| **Minimum wall clearance** | **50 mm** | A.5.7 |
+| Minimum ledge clearance | 40 mm | A.5.7 |
+| Surface | Non-slip; shall not rotate within fittings | A.5.9 |
+
+**Fixed L-Type Grab Bar (Side Wall):**
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Height above toilet seat** ⟳ | **300 mm** (exact — not a range) from top of WC seat to top of grab bar | C.6.3.b |
+| Horizontal leg | Extends from back wall, **300 mm** from front of WC | C.6.3.b |
+| Vertical leg length | **750 mm** above horizontal leg | C.6.3.b |
+| Max space to toilet seat edge | **150 mm** between grab bar and toilet seat edge | C.6.3.b |
+
+**Flip-Up Grab Bar (Open Side):**
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| Extension past front of WC | **100 mm** | C.6.3.b |
+| Height above seat | **300 mm** | C.6.3.b |
+| Minimum load capacity | **200 kg** | C.6.3.b |
+
+> **ALE trap:** The **300 mm** measurement is from the **top of the toilet seat**, not from the finished floor. Since the toilet seat is at 450 mm, the grab bar top is at approximately **750 mm** above finished floor.
+
+<GrabBarExplainer />
+
+### Lavatory (Washbasin)
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Lavatory centerline to adjacent wall** | **450 mm** | C.6.9 |
+| **Lavatory mounting height (rim)** | **800 mm** from finished floor | C.6.9 |
+| **Vertical clear leg room** | Not lower than **650 mm** | C.6.9 |
+| Child/shorter stature lavatory | Height **550 mm**, depth **450 mm** (separate unit) | C.6.9 |
+| Faucet type | Lever-type, push-type, or sensor — no grasping/twisting | C.6.f |
+| Pipe insulation | Hot water and drain pipes within knee space must be insulated | C.6.21 |
+
+> Lavatories shall be installed **outside** the 1,800 × 1,800 mm minimum inner dimensions of the accessible toilet compartment (C.6.8).
+
+### Urinals ⟳ 2024 UPDATED — Major Changes
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| Type | **Wall-hung with elongated lip** | C.6.12 |
+| **Maximum lip height** ⟳ | **350–400 mm** from toilet floor | C.6.12 |
+| **Minimum clear floor space** ⟳ | **900 mm wide × 900 mm deep** | C.6.12 |
+| Privacy shields | **750 mm** minimum | C.6.12 |
+| Grab bar length | **600 mm** on both sides | C.6.12 |
+| Grab bar top edge height | **1,500 mm** above finished floor | C.6.12 |
+
+> **Major 2024 change:** Urinal lip dropped from 480 mm to **350–400 mm**. Clear floor space changed from 750 × 1,200 mm to **900 × 900 mm** (square).
+
+### Mirror
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Bottom edge maximum height** | **1,000 mm** above finished floor | C.6.3.l |
+
+### Accessories and Emergency Call
+
+| Feature | Requirement (2024 IRR) | Source |
+|---|---|---|
+| Accessories height | **1,000 mm** above finished floor | C.6.3.k |
+| Color contrast | Mirrors, dispensers, hand dryer, waste bin — min **30%** luminance contrast | C.6.3.j |
+| **Emergency call button** | **Waterproof**, contrasting color, **400–600 mm** from finished floor | C.6.18 |
+| **Horizontal pull bar on toilet door** | Fixed at **900 mm** height | C.6.17 |
+| Strobe light alarm | Required in stand-alone accessible toilets | C.6.19 |
+| Occupied/vacant indicator | Required on standalone accessible toilets | C.6.10 |
+
+### Toilet Door Design
+
+| Principle | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Door swing** | Must open **outward** — so a rescuer can enter if a person has fallen | C.6.14 |
+| Emergency lock override | Lock shall allow opening from outside — coin or simple device | C.6.14 |
+| Preferred door types | **Sliding or folding** with light-force manual operation | C.6.15 |
+
+### Roll-In Shower ⟳ 2024 UPDATED
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Shower dimensions** ⟳ | **1,800 mm × 1,800 mm** | C.6.22 |
+| **Maximum curb height** ⟳ | **12 mm** | C.6.22 |
+| Shower spray hose minimum length | **1,500 mm** | C.6.23 |
+| Shower seat height | **450 mm** | C.6.22 |
+
+### Accessible Bath Tubs
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Minimum clear transfer space** | **900 mm wide × 1,500 mm long** | C.6.24.a |
+| L-type grab bar (horizontal leg) | **1,200 mm** long, mounted **250 mm** above rim | C.6.24.b.i |
+| Vertical grab bar (shower side) | **1,200 mm** long, **250 mm** above rim | C.6.24.b.ii |
+| Shower hose length | **1,500 mm** minimum | C.6.24.c |
+
+> **Source:** BP 344 2024 Revised IRR, Part C, Section 6 — Toilets and Baths
+
+---
+
+## Signage ⟳ 2024 UPDATED
+
+| Parameter | Requirement (2024 IRR) | Source |
+|---|---|---|
+| **Door-mounted signage size** ⟳ | **200 × 200 mm** | A.7.7 |
+| Wall/door mounting height ⟳ | Maximum **1,500 mm** from finished floor to **center** of sign | A.7.6 |
+| Walkway-protruding sign headroom | Minimum **2,200 mm** clear | A.7.5 |
+| Raised characters height | Minimum **1 mm** raised; **16–50 mm** character height | A.7.9 |
+| Braille | Shall be included on public area labels | A.7.9 |
+| ISA color | **White symbols, UN Blue (#5B92E5) background** | A.7.1 |
+| ISA orientation | **Figure faces right** | A.7.1 |
+| Luminance contrast | Minimum **30%** from surroundings | A.7.3 |
+
+> **2024 changes:** Door signage doubled from 100 × 100 mm to **200 × 200 mm**. Mounting height is now expressed as a maximum to the center (**1,500 mm**) rather than a range.
+
+---
+
+## Key Values — Quick Reference (2024 IRR)
+
+Values marked ⟳ changed from the 2013 Illustrated IRR.
+
+| Element | Dimension | Value (2024 IRR) | Source |
+|---|---|---|---|
+| **DOORS** | | | |
+| Door | Clear opening (min) | **900 mm** | C.2.1 |
+| Double-leaf doors | Min clear width | **1,800 mm** | C.2.3 |
+| Door | Clear level space ⟳ | **1,800 × 1,800 mm** | C.2.6 |
+| Door | Exception — corridor side ⟳ | **1,500 mm** min | C.2.6 |
+| Door | Interior closer max force ⟳ | **2.0 kg** | C.2.4 |
+| Door | Hardware height | **900 mm** | C.2.11 |
+| Door | Secondary peephole height ⟳ | **1,000 mm** | C.2.14 |
+| Door | Kick plate height | 300–400 mm | C.2.13 |
+| Door | Sweep period (70° to 12°) | min 4 seconds | C.2.9 |
+| Threshold | Maximum height ⟳ | **12 mm** | C.3.1 |
+| Threshold | Bevel trigger | 6 mm | C.3.1 |
+| Glass door | Contrast pattern zone | 800–1,500 mm | C.1.5 |
+| Vestibule | Level area ⟳ | **1,800 × 1,800 mm** | C.1.4 |
+| **SWITCHES** | | | |
+| Switch | Height range ⟳ | **900–1,200 mm** | C.4.1 |
+| Switch | Max distance from latch | **200 mm** | C.4.2 |
+| **CORRIDORS** | | | |
+| Corridor | Single wheelchair + ambulant ⟳ | **1,500 mm** | C.5.1 |
+| Corridor | Two wheelchairs | **1,800 mm** | C.5.2 |
+| Corridor | Turnabout dimensions ⟳ | **1,800 × 1,800 mm** | C.5.2 |
+| Corridor | Max turnabout spacing | **12,000 mm** | C.5.2 |
+| Corridor | Dead-end turnabout | Within **3,500 mm** | C.5.3 |
+| Corridor | Max grating spacing | 13 mm | B.3.5 |
+| Corridor | Max surface interruption | 6 mm | B.3.6 |
+| Corridor | Minimum headroom | 2,000 mm | B.3.9 |
+| **TOILET CUBICLE** | | | |
+| Cubicle | Clear dimensions ⟳ | **1,800 × 1,800 mm** | C.6.3.a |
+| Cubicle | Turning space outside ⟳ | **1,800 × 1,800 mm** | C.6.3.i |
+| Cubicle | Door swing | **Outward** | C.6.14 |
+| Cubicle | Min toilets per floor (≤20 WC) | 1 accessible per gender | C.6.2 |
+| **WATER CLOSET** | | | |
+| WC | Seat height | **450 mm** | C.6.7 |
+| WC | Centerline from finished wall ⟳ | **450 mm** | C.6.3.d |
+| WC | Grab bar outer face to wall ⟳ | **100 mm** | C.6.3.c |
+| WC | Grab bar face to WC centerline | **350 mm** | C.6.3.c |
+| **GRAB BARS** | | | |
+| Grab bar | Diameter ⟳ | **30–40 mm** | A.5.6 |
+| Grab bar | Wall clearance | 50 mm | A.5.7 |
+| Grab bar | Height above toilet seat ⟳ | **300 mm** (exact) | C.6.3.b |
+| Grab bar | Max space to seat edge | 150 mm | C.6.3.b |
+| Grab bar | Flip-up capacity | min 200 kg | C.6.3.b |
+| **LAVATORY** | | | |
+| Lavatory | Centerline to adjacent wall | **450 mm** | C.6.9 |
+| Lavatory | Mounting height (rim) | **800 mm** | C.6.9 |
+| Lavatory | Knee clearance (min vertical) | **650 mm** | C.6.9 |
+| **URINAL** | | | |
+| Urinal | Max lip height ⟳ | **350–400 mm** | C.6.12 |
+| Urinal | Clear floor space ⟳ | **900 × 900 mm** | C.6.12 |
+| Urinal | Privacy shield | 750 mm | C.6.12 |
+| Urinal | Grab bar top edge | 1,500 mm above floor | C.6.12 |
+| **SHOWER** | | | |
+| Roll-in shower | Dimensions ⟳ | **1,800 × 1,800 mm** | C.6.22 |
+| Shower | Max curb height ⟳ | **12 mm** | C.6.22 |
+| **BATH TUB** | | | |
+| Bath tub | Clear transfer space | 900 × 1,500 mm | C.6.24.a |
+| **EMERGENCY** | | | |
+| Emergency call button | Height range | **400–600 mm** | C.6.18 |
+| Horizontal pull bar | Height on toilet door | **900 mm** | C.6.17 |
+| **SIGNAGE** | | | |
+| Door sign size ⟳ | Accessible toilet/shower | **200 × 200 mm** | A.7.7 |
+| Wall/door sign | Height to center ⟳ | max **1,500 mm** | A.7.6 |
+
+---
+
+## Recall Drill
+
+Test your 2024 IRR values. Questions marked ⟳ test values that changed — the most likely ALE traps.
+
+<RecallDrill />
+
+---
+
+## Relationship to Other Articles
+
+| Related topic | Why it connects |
+|---|---|
+| **Ramps & Handrails** (BP 344) | Ramp requirements complete the accessible route. 2024 IRR: ramp handrails at 900 mm and 700 mm; min ramp width 1,200 mm |
+| **Parking & Signage** (BP 344) | Accessible parking stall: **4,000 mm width × 5,000 mm length** (2024 IRR A.6.7) — begins the accessible route chain |
+| **Stairway Requirements** (PD 1096 / BP 344) | BP 344 stair requirements (max riser 150 mm, min tread 300 mm, min clear width 1,500 mm) supersede NBCP for accessible routes |
+| **Means of Egress** (RA 9514) | Fire code exit widths interact with accessible route widths — the more restrictive standard governs |
+| **PD 1096 Development Controls** | NBCP corridor standards apply to general building design; BP 344 layers on top for accessible routes |
+| **Elevators** (BP 344) | Accessible elevator: min 1,400 mm depth × 1,200 mm width, door 900 mm clear, max 30 m from entrance |
+
+---
+
+## Sources
+
+| Source | Relevance |
+|---|---|
+| **Batas Pambansa Blg. 344 (1982)** | The Accessibility Law — enabling statute |
+| **BP 344 2024 Revised IRR**, Official Gazette Vol. 120 No. 28 (July 8, 2024), effective August 8, 2024 | **Primary source for all dimensional values in this article** — jointly promulgated by DPWH and DOTr, coordinated with NCDA |
+| **BP 344 Illustrated IRR (July 10, 2013 Draft)** | Superseded reference. Values in this article reflect the 2024 IRR |
+| **Republic Act No. 7277 (1992)** | Magna Carta for Disabled Persons — rights framework |
+| **Republic Act No. 9442 (2007)** | Amendment to RA 7277 — penalties and enforcement |
+| **PD 1096 (NBCP), 2004 Revised IRR** | General building standards (BP 344 supersedes for accessible routes) |
+
+> **Verification note:** All dimensional values are sourced directly from the **BP 344 2024 Revised IRR as published in the Official Gazette, July 8, 2024**. Where a value differs from the 2013 Illustrated IRR, it is flagged ⟳ in the tables above. Always verify against the current official published text before applying in professional practice.

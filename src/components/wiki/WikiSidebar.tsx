@@ -3,30 +3,13 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { CaretDown, CaretRight, FileText, BookOpen, Folder, MagnifyingGlass, Scales } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, FileText, BookOpen, MagnifyingGlass, Scales } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { cn } from '@/lib/utils'
+import { useWikiNavigation } from '@/components/wiki/WikiNavigationContext'
 
-const VISITED_KEY = 'wiki_visited_slugs'
-
-function loadVisited(): Set<string> {
-  try {
-    const raw = localStorage.getItem(VISITED_KEY)
-    return raw ? new Set(JSON.parse(raw)) : new Set()
-  } catch {
-    return new Set()
-  }
-}
-
-function markVisited(slug: string) {
-  try {
-    const visited = loadVisited()
-    visited.add(slug)
-    localStorage.setItem(VISITED_KEY, JSON.stringify([...visited]))
-  } catch {}
-}
 
 interface WikiSidebarProps {
   disciplineId: string
@@ -34,19 +17,24 @@ interface WikiSidebarProps {
   collapsed?: boolean
 }
 
-export function WikiSidebar({
+export const WikiSidebar = ({
   disciplineId,
   disciplineName,
   collapsed,
-}: WikiSidebarProps) {
+}: WikiSidebarProps) => {
   const pathname = usePathname()
+  const { navigate } = useWikiNavigation()
   const [nodes, setNodes] = React.useState<TaxonomyNode[]>([])
   const [lawsNodes, setLawsNodes] = React.useState<TaxonomyNode[]>([])
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({})
   const [loading, setLoading] = React.useState(true)
   const [searchQuery, setSearchQuery] = React.useState('')
-  const [visited, setVisited] = React.useState<Set<string>>(new Set())
+  const [isHovered, setIsHovered] = React.useState(false)
   const searchRef = React.useRef<HTMLInputElement>(null)
+
+  // Dim non-active items when an article is open to reduce cognitive load
+  const hasArticleOpen = pathname !== '/dashboard/wiki' && pathname.startsWith('/dashboard/wiki/')
+  const isDimmed = hasArticleOpen && !isHovered
 
   // / keyboard shortcut focuses search
   React.useEffect(() => {
@@ -60,24 +48,8 @@ export function WikiSidebar({
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [])
 
-  // Load visited slugs from localStorage
-  React.useEffect(() => {
-    setVisited(loadVisited())
-  }, [])
 
-  // Mark current page as visited
-  React.useEffect(() => {
-    const slug = pathname.split('/wiki/')[1]
-    if (slug) {
-      markVisited(slug)
-      setVisited(prev => {
-        const next = new Set(prev)
-        next.add(slug)
-        return next
-      })
-    }
-  }, [pathname])
-
+  // Fetch taxonomy data ONLY when discipline changes (not on every navigation)
   React.useEffect(() => {
     if (disciplineId) {
       setLoading(true)
@@ -87,35 +59,48 @@ export function WikiSidebar({
       ]).then(([data, laws]) => {
         setNodes(data)
         setLawsNodes(laws)
-
-        // Auto-expand nodes that contain the active slug
-        const allNodes = [...data, ...laws]
-        const newExpanded: Record<string, boolean> = {}
-        const expandParents = (nodeId: string) => {
-          const node = allNodes.find(n => n.node_id === nodeId)
-          if (node) {
-            newExpanded[node.node_id] = true
-            if (node.parent_id) expandParents(node.parent_id)
-          }
-        }
-
-        const activeNodes = allNodes.filter((n) => n.slug && pathname.includes(n.slug))
-        const activeArticles = allNodes.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
-
-        activeNodes.forEach(n => expandParents(n.node_id))
-        activeArticles.forEach(a => {
-          const parentNode = allNodes.find(n => n.articles?.some(art => art.article_id === a.article_id))
-          if (parentNode) expandParents(parentNode.node_id)
-        })
-
-        setExpanded((prev) => ({ ...prev, ...newExpanded }))
         setLoading(false)
       })
     }
-  }, [disciplineId, pathname])
+  }, [disciplineId])
+
+  // Auto-expand parent nodes to reveal the active article (reacts to pathname changes)
+  React.useEffect(() => {
+    const allNodes = [...nodes, ...lawsNodes]
+    if (allNodes.length === 0) return
+
+    const newExpanded: Record<string, boolean> = {}
+    const expandParents = (nodeId: string) => {
+      const node = allNodes.find(n => n.node_id === nodeId)
+      if (node) {
+        newExpanded[node.node_id] = true
+        if (node.parent_id) expandParents(node.parent_id)
+      }
+    }
+
+    const activeNodes = allNodes.filter((n) => n.slug && pathname.includes(n.slug))
+    const activeArticles = allNodes.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
+
+    activeNodes.forEach(n => expandParents(n.node_id))
+    activeArticles.forEach(a => {
+      const parentNode = allNodes.find(n => n.articles?.some(art => art.article_id === a.article_id))
+      if (parentNode) expandParents(parentNode.node_id)
+    })
+
+    if (Object.keys(newExpanded).length > 0) {
+      setExpanded((prev) => ({ ...prev, ...newExpanded }))
+    }
+  }, [pathname, nodes, lawsNodes])
 
   const toggle = (id: string) => {
     setExpanded((prev) => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  /** Navigate using transition so WikiContentShell can show skeleton */
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href === pathname) return // already on this page
+    e.preventDefault()
+    navigate(href)
   }
 
   const rootNodes = nodes.filter((n) => n.level === 1)
@@ -140,22 +125,6 @@ export function WikiSidebar({
     )
   }
 
-  // --- Read/unread dot helper ---
-  const isNodeVisited = (node: TaxonomyNode): boolean => {
-    if (node.slug && visited.has(node.slug)) return true
-    if (node.articles?.some(a => a.slug && visited.has(a.slug))) return true
-    return false
-  }
-
-  const ReadDot = ({ isRead }: { isRead: boolean }) => (
-    <span
-      className={cn(
-        'w-1.5 h-1.5 rounded-full shrink-0',
-        isRead ? 'bg-[#2D9F6F]' : 'bg-zinc-300',
-      )}
-      aria-label={isRead ? 'Read' : 'Unread'}
-    />
-  )
 
   // --- Search filter ---
   const query = searchQuery.trim().toLowerCase()
@@ -179,7 +148,6 @@ export function WikiSidebar({
     const children = sourceNodes.filter((n) => n.parent_id === node.node_id)
     const nodeArticles = node.articles || []
     const hasChildren = children.length > 0
-    const hasArticles = nodeArticles.length > 0
     const isCategory = node.level === 1 || hasChildren
 
     // When searching, skip non-matching children
@@ -204,13 +172,16 @@ export function WikiSidebar({
       <div key={node.node_id} className="space-y-0.5 min-w-0">
         {isCategory ? (
           <div className={cn(
-            'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-all group min-w-0',
+            'w-full flex items-center gap-1 py-1 px-1 rounded-sm transition-colors duration-200 group min-w-0',
             isActive ? 'bg-[#EEF2FC]/50' : 'hover:bg-zinc-100',
             isChild && 'pl-2'
           )}>
             <button
               onClick={() => toggle(node.node_id)}
-              className="p-1 hover:bg-zinc-200 rounded text-zinc-400 shrink-0"
+              className={cn(
+                'p-1 hover:bg-zinc-200 rounded shrink-0 transition-colors duration-200',
+                isDimmed && !isActive ? 'text-zinc-300' : 'text-zinc-400',
+              )}
             >
               {nodeExpanded ? (
                 <SCIcon icon={CaretDown} size="xs" />
@@ -220,62 +191,65 @@ export function WikiSidebar({
             </button>
             <Link
               href={`/dashboard/wiki/${node.slug ?? ''}`}
+              onClick={(e) => handleLinkClick(e, `/dashboard/wiki/${node.slug ?? ''}`)}
               className={cn(
-                'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate min-w-0',
-                isActive ? 'text-[#1535A8]' : 'text-zinc-700'
+                'flex-1 flex items-center gap-2 py-0.5 px-1 text-[13px] font-medium truncate min-w-0 transition-colors duration-200',
+                isActive ? 'text-[#1535A8]' : isDimmed ? 'text-zinc-400' : 'text-zinc-700',
               )}
             >
               <span className="truncate">{node.name}</span>
             </Link>
-            <ReadDot isRead={isNodeVisited(node)} />
           </div>
         ) : (
           <Link
             href={`/dashboard/wiki/${node.slug ?? ''}`}
+            onClick={(e) => handleLinkClick(e, `/dashboard/wiki/${node.slug ?? ''}`)}
             className={cn(
-              'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-all group min-w-0',
+              'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-colors duration-200 group min-w-0',
               isActive
                 ? 'text-[#1535A8] bg-[#EEF2FC]'
-                : 'text-zinc-600 hover:text-zinc-900 hover:bg-white',
-              isChild && 'ml-3.5',
+                : isDimmed
+                  ? 'text-zinc-400'
+                  : 'text-zinc-600 hover:text-zinc-900 hover:bg-white',
             )}
           >
             <SCIcon icon={FileText} size="xs"
-              className={cn('shrink-0', isActive ? 'text-primary' : 'text-zinc-300')}
+              className={cn('shrink-0 transition-colors duration-200', isActive ? 'text-primary' : isDimmed ? 'text-zinc-300' : 'text-zinc-300')}
             />
             <span className="truncate">{node.name}</span>
-            <ReadDot isRead={isNodeVisited(node)} />
           </Link>
         )}
 
         {nodeExpanded && isCategory && (
           <div
             className={cn(
-              'ml-3.5 pl-3 border-l mt-0.5 mb-1 space-y-0.5 min-w-0',
-              isActive ? 'border-primary/30' : 'border-zinc-200/60',
+              'ml-5 pl-2.5 border-l mt-0.5 mb-1 space-y-0.5 min-w-0 transition-colors duration-200',
+              isActive ? 'border-primary/30' : isDimmed ? 'border-zinc-200/30' : 'border-zinc-200/60',
             )}
           >
             {filteredChildren.map((child) => renderNode(child, true, sourceNodes))}
 
             {filteredArticles.map((art) => {
+              const artHref = `/dashboard/wiki/${art.slug}`
               const isArtActive = pathname.includes(art.slug || '')
-              const isArtRead = art.slug ? visited.has(art.slug) : false
               return (
                 <Link
                   key={art.article_id}
-                  href={`/dashboard/wiki/${art.slug}`}
+                  href={artHref}
+                  onClick={(e) => handleLinkClick(e, artHref)}
                   className={cn(
-                    'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-all min-w-0',
+                    'group flex items-center gap-2 py-1.5 px-2 text-[12px] rounded-sm transition-colors duration-200 min-w-0',
                     isArtActive
                       ? 'bg-[#EEF2FC] text-[#1535A8] font-medium'
-                      : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
+                      : isDimmed
+                        ? 'text-zinc-400'
+                        : 'text-zinc-500 hover:text-zinc-900 hover:bg-white',
                   )}
                 >
                   <SCIcon icon={FileText} size="xs"
-                    className={cn('shrink-0', isArtActive ? 'text-primary' : 'text-zinc-300')}
+                    className={cn('shrink-0 transition-colors duration-200', isArtActive ? 'text-primary' : isDimmed ? 'text-zinc-300/50' : 'text-zinc-300')}
                   />
                   <span className="truncate">{art.title}</span>
-                  <ReadDot isRead={isArtRead} />
                 </Link>
               )
             })}
@@ -286,9 +260,13 @@ export function WikiSidebar({
   }
 
   return (
-    <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
+    <aside
+      className="w-full h-full bg-background flex flex-col overflow-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Element 1: Search — pinned to top, never scrolls */}
-      <div className="shrink-0 p-2 pb-1">
+      <div className={cn('shrink-0 p-2 pb-1 transition-opacity duration-200', isDimmed && 'opacity-50')}>
         <div className="relative">
           <SCIcon icon={MagnifyingGlass} size="xs" className="absolute left-2.5 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none" />
           <input
@@ -330,7 +308,7 @@ export function WikiSidebar({
           </div>
         ) : (
           <>
-            <div className="mb-1.5 px-1 flex items-center gap-1.5">
+            <div className={cn('mb-1.5 px-1 flex items-center gap-1.5 transition-opacity duration-200', isDimmed && 'opacity-40')}>
               <SCIcon icon={BookOpen} size="xs" className="text-zinc-400" />
               <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-400">
                 Syllabus
@@ -345,7 +323,7 @@ export function WikiSidebar({
         {/* Laws & Codes — cross-reference section */}
         {!loading && filteredLawsRoots.length > 0 && (
           <>
-            <div className="mt-4 mb-1.5 px-1 flex items-center gap-1.5">
+            <div className={cn('mt-4 mb-1.5 px-1 flex items-center gap-1.5 transition-opacity duration-200', isDimmed && 'opacity-40')}>
               <SCIcon icon={Scales} size="xs" className="text-zinc-400" />
               <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-400">
                 Laws &amp; Codes
