@@ -169,7 +169,7 @@ export async function deleteQuizSession(sessionId: string) {
     .eq('user_id', user.id)
 
   if (error) throw error
-  revalidatePath('/dashboard/testing')
+  revalidatePath('/dashboard/review')
 }
 
 /**

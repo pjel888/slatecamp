@@ -36,7 +36,7 @@ export const PostModuleCTA = ({
       </p>
       {topicSlug && (
         <Link
-          href={`${ROUTES.TESTING}?topic=${topicSlug}&mode=camp&count=10`}
+          href={`${ROUTES.REVIEW}?topic=${topicSlug}&mode=camp&count=10`}
           className="block w-full py-2.5 bg-[#1B3FC4] text-white text-center text-[13px] font-medium rounded-sm hover:bg-[#1535A8] transition-colors duration-150"
         >
           Answer 10 questions on {topicName} in Camp Mode

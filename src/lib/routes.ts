@@ -32,8 +32,8 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     icon: Globe,
   },
   {
-    path: '/dashboard/testing',
-    title: 'Testing',
+    path: '/dashboard/review',
+    title: 'Review',
     icon: Brain,
   },
   {

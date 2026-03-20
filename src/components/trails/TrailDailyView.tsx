@@ -100,7 +100,7 @@ export const TrailDailyView = ({
         const topicParam = step.target_node_ids.length > 0
           ? `?topics=${step.target_node_ids.join(',')}`
           : ''
-        router.push(`/dashboard/testing${topicParam}`)
+        router.push(`/dashboard/review${topicParam}`)
         return
       }
 

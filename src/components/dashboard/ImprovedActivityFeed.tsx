@@ -56,7 +56,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
             your first quiz.
           </p>
           <Link
-            href='/dashboard/testing?mode=camp'
+            href='/dashboard/review?mode=camp'
             className='text-[11px] font-medium underline underline-offset-2'
             style={{ color: '#1B3FC4' }}
           >

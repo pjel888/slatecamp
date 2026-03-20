@@ -311,7 +311,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
               Take your first quiz to see your mastery shape
             </p>
             <Link
-              href='/dashboard/testing'
+              href='/dashboard/review'
               className='text-sm font-medium underline underline-offset-2'
               style={{ color: '#1B3FC4' }}
             >

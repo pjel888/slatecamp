@@ -36,7 +36,7 @@ export function ResumeSessionBanner({ session }: ResumeSessionBannerProps) {
         </div>
       </div>
       <Link
-        href={`/dashboard/testing?session=${session.sessionId}`}
+        href={`/dashboard/review?session=${session.sessionId}`}
         className="px-4 py-1.5 bg-[#1B3FC4] text-white text-sm font-medium rounded-sm hover:bg-[#1535A8] transition-colors duration-150 shrink-0"
       >
         Continue &rarr;

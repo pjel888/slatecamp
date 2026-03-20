@@ -9,7 +9,7 @@ interface ErrorProps {
   reset: () => void
 }
 
-const TestingError = ({ error, reset }: ErrorProps) => {
+const ReviewError = ({ error, reset }: ErrorProps) => {
   useEffect(() => {
     console.error('[QUIZ ERROR]', error.message, error.digest)
   }, [error])
@@ -20,18 +20,18 @@ const TestingError = ({ error, reset }: ErrorProps) => {
         Your quiz session encountered an issue
       </h2>
       <p className="max-w-sm text-center text-sm text-muted-foreground">
-        Your answers have been auto-saved. You can retry or return to testing.
+        Your answers have been auto-saved. You can retry or return to review.
       </p>
       <div className="flex gap-3">
         <Button onClick={reset} variant="outline" size="sm">
           Retry
         </Button>
-        <Link href="/dashboard/testing">
-          <Button size="sm">Back to Testing</Button>
+        <Link href="/dashboard/review">
+          <Button size="sm">Back to Review</Button>
         </Link>
       </div>
     </div>
   )
 }
 
-export default TestingError
+export default ReviewError

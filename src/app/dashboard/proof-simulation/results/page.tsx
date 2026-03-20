@@ -183,7 +183,7 @@ const ProofSimulationResultsPage = async ({
             {/* Full review CTA */}
             <div className="mt-8 flex flex-col gap-3">
               <Link
-                href={`/dashboard/testing?session=${proofSession.session_id}&review=true`}
+                href={`/dashboard/review?session=${proofSession.session_id}&review=true`}
                 className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
                 style={{ backgroundColor: '#1B3FC4' }}
               >

@@ -28,7 +28,7 @@ export function RecentActivityCard({ activities }: RecentActivityCardProps) {
           </p>
         </div>
         <Link
-          href='/dashboard/testing'
+          href='/dashboard/review'
           className='text-xs font-semibold text-primary hover:text-[#1535A8] uppercase tracking-widest flex items-center gap-1 mt-4 transition-colors'
         >
           Start your first session <SCIcon icon={ArrowRight} size='xs' />

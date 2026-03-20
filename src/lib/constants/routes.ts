@@ -35,7 +35,6 @@ export const ROUTES = {
   LIBRARY_BANK: (bankId: string) => `/dashboard/library/bank/${bankId}`,
   LIBRARY_MARKETPLACE: "/dashboard/library/marketplace",
   THREE_D_LAB: "/dashboard/3d-lab",
-  TESTING: "/dashboard/testing",
   ADMIN: "/dashboard/admin",
   DEVELOPER: "/dashboard/developer",
   DEVELOPER_CONSOLE: "/dashboard/developer/console",

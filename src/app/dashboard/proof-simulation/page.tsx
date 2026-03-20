@@ -134,7 +134,7 @@ const ProofSimulationPage = async () => {
 
             <div className="mt-6 flex flex-col gap-3">
               <Link
-                href="/dashboard/testing?mode=proof_sim"
+                href="/dashboard/review?mode=proof_sim"
                 className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
                 style={{ backgroundColor: '#1B3FC4' }}
               >

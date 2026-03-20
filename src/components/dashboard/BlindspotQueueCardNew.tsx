@@ -57,7 +57,7 @@ export function BlindspotQueueCardNew({ items }: BlindspotQueueCardProps) {
       </div>
 
       <Link
-        href="/dashboard/testing?mode=camp"
+        href="/dashboard/review?mode=camp"
         className="inline-block text-[11px] font-medium underline underline-offset-2 mt-0.5"
         style={{ color: '#1B3FC4' }}
       >

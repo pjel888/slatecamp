@@ -87,7 +87,7 @@ export const NodeDetailSheet = ({ node, onClose }: NodeDetailSheetProps) => {
         {/* CTAs */}
         <div className="mt-5 flex gap-3">
           <Link
-            href={`/dashboard/testing?topics=${node.id}`}
+            href={`/dashboard/review?topics=${node.id}`}
             className="flex-1 rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             onClick={onClose}
           >

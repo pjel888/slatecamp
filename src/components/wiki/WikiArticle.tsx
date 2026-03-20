@@ -9,6 +9,13 @@ import { WikiHighlighter } from './WikiHighlighter'
 import { WikiNoteAnchor } from './WikiNoteAnchor'
 import { WikiTextSelection } from './WikiTextSelection'
 import { Note, Warn, Tip, Example, Callout } from './WikiCallout'
+import { WikiCalloutBox } from './WikiCalloutBox'
+import { WikiExamTable } from './WikiExamTable'
+import { WikiArticleHero } from './WikiArticleHero'
+import { WikiPartHeader } from './WikiPartHeader'
+import { WikiChangedPill } from './WikiChangedPill'
+import { WikiMistakeCard } from './WikiMistakeCard'
+import { WikiMistakeList } from './WikiMistakeList'
 import { ElaborativeInterrogation } from './ElaborativeInterrogation'
 import { resolveWidgets } from './widgets/registry'
 
@@ -77,6 +84,15 @@ const baseMdxComponents = {
   Tip,
   Example,
   Callout,
+
+  // Wiki UI spec-v1 components — exam-focused article rendering
+  WikiCalloutBox,
+  WikiExamTable,
+  WikiArticleHero,
+  WikiPartHeader,
+  WikiChangedPill,
+  WikiMistakeCard,
+  WikiMistakeList,
 }
 
 /**
@@ -224,24 +240,7 @@ export const WikiArticle = async ({
       <WikiTextSelection />
 
       {/* Prose content */}
-      <div
-        className="
-          prose prose-zinc dark:prose-invert max-w-none
-          prose-headings:font-semibold prose-headings:tracking-tight
-          prose-h2:text-lg prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-2
-          prose-h3:text-base prose-h3:mt-8 prose-h3:mb-3
-          prose-h4:text-sm prose-h4:mt-6 prose-h4:mb-2
-          prose-p:leading-relaxed prose-p:text-[#4A5568] prose-p:text-sm
-          prose-li:text-[#4A5568] prose-li:text-sm prose-li:leading-relaxed
-          prose-ul:my-4 prose-ol:my-4
-          prose-strong:text-[#1A2332] prose-strong:font-semibold
-          prose-a:text-[#1B3FC4] prose-a:no-underline hover:prose-a:underline
-          prose-code:bg-zinc-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[13px] prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
-          prose-blockquote:border-l-4 prose-blockquote:border-[#1B3FC4]/20 prose-blockquote:bg-[#F8F7F5] prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-md prose-blockquote:not-italic
-          prose-img:rounded-md prose-img:border prose-img:border-zinc-200
-          prose-hr:border-zinc-200
-        "
-      >
+      <div className="wiki-prose max-w-none">
         <Suspense
           fallback={
             <div className="animate-pulse bg-zinc-100 h-64 w-full rounded-md" />
@@ -273,7 +272,7 @@ export const WikiArticle = async ({
             </p>
           </div>
           <a
-            href={`/dashboard/testing?topics=${nodeId}`}
+            href={`/dashboard/review?topics=${nodeId}`}
             className="shrink-0 rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
           >
             Start Quiz &rarr;

@@ -265,7 +265,7 @@ describe("emptyDashboard — action shape", () => {
 
   test("action.href points to camp mode", async () => {
     const data = await getDashboardPageData()
-    expect(data.action.href).toContain("/dashboard/testing")
+    expect(data.action.href).toContain("/dashboard/review")
   })
 
   test("action.estimatedMinutes is a positive number", async () => {

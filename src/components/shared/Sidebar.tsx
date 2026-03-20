@@ -193,7 +193,7 @@ export const Sidebar = ({
   const handleConfirmLeave = () => {
     setLeaveDialogOpen(false)
     router.push(
-      mode === 'review' ? `${ROUTES.TESTING}?tab=review&exited=1` : leaveTarget,
+      mode === 'review' ? `${ROUTES.REVIEW}?tab=review&exited=1` : leaveTarget,
     )
   }
 

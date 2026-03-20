@@ -5,7 +5,7 @@ import {
 } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 import { WikiArticle, getArticleHeadings } from '@/components/wiki/WikiArticle'
-import { WikiArticleHeader } from '@/components/wiki/WikiArticleHeader'
+import { WikiArticleHero } from '@/components/wiki/WikiArticleHero'
 import { WikiHeader } from '@/components/wiki/WikiHeader'
 import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
 import { notFound } from 'next/navigation'
@@ -30,6 +30,12 @@ const ITEM_STYLES: Record<string, { label: string; border: string; bg: string; t
   heading:        { label: '',                border: '',                    bg: '',               text: '' },
   detail:         { label: 'Detail',          border: 'border-l-[#D4DAE3]', bg: 'bg-white',      text: 'text-[#4A5568]' },
   cross_ref:      { label: 'Cross Reference', border: 'border-l-[#D4DAE3]', bg: 'bg-[#F8F7F5]',  text: 'text-[#4A5568]' },
+}
+
+const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
+  if (!level || level <= 1) return 'Foundational'
+  if (level === 2) return 'Intermediate'
+  return 'Advanced'
 }
 
 const WikiItemsRenderer = ({ items }: { items: { type: string; text: string }[] }) => (
@@ -126,7 +132,7 @@ export default async function WikiArticlePage({ params }: PageProps) {
               )}
 
               <div className="mt-8 pt-6 border-t border-[#D4DAE3]">
-                <Link href={`/dashboard/testing?topicId=${nodeData.node_id}`}>
+                <Link href={`/dashboard/review?topicId=${nodeData.node_id}`}>
                   <Button className="bg-[#1B3FC4] hover:bg-[#1535A8] text-white font-bold rounded-sm px-8">
                     Practice this Topic
                   </Button>
@@ -154,8 +160,8 @@ export default async function WikiArticlePage({ params }: PageProps) {
   ])
 
   const practiceHref = node?.node_id
-    ? `/dashboard/testing?topicId=${node.node_id}`
-    : `/dashboard/testing?articleId=${article.article_id}`
+    ? `/dashboard/review?topicId=${node.node_id}`
+    : `/dashboard/review?articleId=${article.article_id}`
   const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
 
   // Check if teach-back criteria exist for this topic
@@ -225,10 +231,13 @@ export default async function WikiArticlePage({ params }: PageProps) {
                 <WrongAnswerBanner />
               </Suspense>
 
-              <WikiArticleHeader
+              <WikiArticleHero
+                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${node.subject_area}` : node?.subject_area || '')}
+                difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
+                readTime={`~${readingTime} min`}
                 title={article.title}
-                updatedAt={article.updated_at}
-                readingTime={readingTime}
+                updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+                aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
               />
 
               <WikiArticle

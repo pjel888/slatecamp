@@ -124,7 +124,7 @@ const FocusReviewPage = async () => {
         {/* CTAs */}
         <div className="mt-6 flex flex-col gap-3">
           <Link
-            href={`/dashboard/testing?mode=blindspot&queue=${queue.queue_id}`}
+            href={`/dashboard/review?mode=blindspot&queue=${queue.queue_id}`}
             className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             style={{ backgroundColor: '#1B3FC4' }}
           >

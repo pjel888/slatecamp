@@ -89,7 +89,7 @@ export function ContinueSessionCardNew({ session }: ContinueSessionCardProps) {
         </span>
 
         <Link
-          href={`/dashboard/testing?session=${session.sessionId}`}
+          href={`/dashboard/review?session=${session.sessionId}`}
           className="inline-flex items-center justify-center h-7 px-2 text-xs font-medium rounded-sm hover:bg-muted"
           style={{ color: '#1B3FC4' }}
         >
