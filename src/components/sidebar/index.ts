@@ -6,6 +6,9 @@ export { SidebarRail } from './SidebarRail'
 export { SidebarOverlay } from './SidebarOverlay'
 export { SidebarPanel } from './SidebarPanel'
 export { SidebarHeader } from './SidebarHeader'
+export { SidebarUserProfile } from './SidebarUserProfile'
+export { SidebarUpgradeCTA } from './SidebarUpgradeCTA'
+export { SidebarFooter } from './SidebarFooter'
 export {
   Z_INDEX,
   SIDEBAR_WIDTH_COLLAPSED,
