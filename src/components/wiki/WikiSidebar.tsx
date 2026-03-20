@@ -3,9 +3,9 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { CaretDown, CaretRight, FileText, BookOpen, Folder, MagnifyingGlass } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, FileText, BookOpen, Folder, MagnifyingGlass, Scales } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
+import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { cn } from '@/lib/utils'
 
@@ -41,6 +41,7 @@ export function WikiSidebar({
 }: WikiSidebarProps) {
   const pathname = usePathname()
   const [nodes, setNodes] = React.useState<TaxonomyNode[]>([])
+  const [lawsNodes, setLawsNodes] = React.useState<TaxonomyNode[]>([])
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({})
   const [loading, setLoading] = React.useState(true)
   const [searchQuery, setSearchQuery] = React.useState('')
@@ -80,25 +81,30 @@ export function WikiSidebar({
   React.useEffect(() => {
     if (disciplineId) {
       setLoading(true)
-      getTaxonomyTree(disciplineId).then((data) => {
+      Promise.all([
+        getTaxonomyTree(disciplineId),
+        getLawsTaxonomyTree(disciplineId),
+      ]).then(([data, laws]) => {
         setNodes(data)
+        setLawsNodes(laws)
 
         // Auto-expand nodes that contain the active slug
+        const allNodes = [...data, ...laws]
         const newExpanded: Record<string, boolean> = {}
         const expandParents = (nodeId: string) => {
-          const node = data.find(n => n.node_id === nodeId)
+          const node = allNodes.find(n => n.node_id === nodeId)
           if (node) {
             newExpanded[node.node_id] = true
             if (node.parent_id) expandParents(node.parent_id)
           }
         }
 
-        const activeNodes = data.filter((n) => n.slug && pathname.includes(n.slug))
-        const activeArticles = data.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
+        const activeNodes = allNodes.filter((n) => n.slug && pathname.includes(n.slug))
+        const activeArticles = allNodes.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
 
         activeNodes.forEach(n => expandParents(n.node_id))
         activeArticles.forEach(a => {
-          const parentNode = data.find(n => n.articles?.some(art => art.article_id === a.article_id))
+          const parentNode = allNodes.find(n => n.articles?.some(art => art.article_id === a.article_id))
           if (parentNode) expandParents(parentNode.node_id)
         })
 
@@ -113,6 +119,7 @@ export function WikiSidebar({
   }
 
   const rootNodes = nodes.filter((n) => n.level === 1)
+  const lawsRootNodes = lawsNodes.filter((n) => n.level === 1)
 
   if (!disciplineId) {
     return (
@@ -152,32 +159,32 @@ export function WikiSidebar({
 
   // --- Search filter ---
   const query = searchQuery.trim().toLowerCase()
-  const matchesSearch = (node: TaxonomyNode): boolean => {
+  const matchesSearchIn = (node: TaxonomyNode, sourceNodes: TaxonomyNode[]): boolean => {
     if (!query) return true
     if (node.name.toLowerCase().includes(query)) return true
     if (node.articles?.some(a => a.title.toLowerCase().includes(query))) return true
-    const children = nodes.filter(n => n.parent_id === node.node_id)
-    return children.some(child => matchesSearch(child))
+    const children = sourceNodes.filter(n => n.parent_id === node.node_id)
+    return children.some(child => matchesSearchIn(child, sourceNodes))
   }
+  const matchesSearch = (node: TaxonomyNode): boolean => matchesSearchIn(node, nodes)
   const filteredRoots = rootNodes.filter(matchesSearch)
+  const filteredLawsRoots = lawsRootNodes.filter(n => matchesSearchIn(n, lawsNodes))
 
   // When searching, force-expand all matching nodes so results are visible
   const isSearching = query.length > 0
   const isNodeExpanded = (nodeId: string) => isSearching || !!expanded[nodeId]
 
   // --- Render ---
-  const renderNode = (node: TaxonomyNode, isChild = false) => {
-    const children = nodes.filter((n) => n.parent_id === node.node_id)
+  const renderNode = (node: TaxonomyNode, isChild = false, sourceNodes: TaxonomyNode[] = nodes) => {
+    const children = sourceNodes.filter((n) => n.parent_id === node.node_id)
     const nodeArticles = node.articles || []
     const hasChildren = children.length > 0
     const hasArticles = nodeArticles.length > 0
     const isCategory = node.level === 1 || hasChildren
 
-    if (!isCategory && !hasArticles) return null
-
     // When searching, skip non-matching children
     const filteredChildren = isSearching
-      ? children.filter(matchesSearch)
+      ? children.filter(c => matchesSearchIn(c, sourceNodes))
       : children
     const filteredArticles = isSearching
       ? nodeArticles.filter(a => a.title.toLowerCase().includes(query))
@@ -186,7 +193,7 @@ export function WikiSidebar({
     const checkIsActive = (n: TaxonomyNode): boolean => {
       if (n.slug && pathname.includes(n.slug)) return true
       if (n.articles?.some(a => a.slug && pathname.includes(a.slug))) return true
-      const childNodes = nodes.filter(child => child.parent_id === n.node_id)
+      const childNodes = sourceNodes.filter(child => child.parent_id === n.node_id)
       return childNodes.some(child => checkIsActive(child))
     }
 
@@ -248,7 +255,7 @@ export function WikiSidebar({
               isActive ? 'border-primary/30' : 'border-zinc-200/60',
             )}
           >
-            {filteredChildren.map((child) => renderNode(child, true))}
+            {filteredChildren.map((child) => renderNode(child, true, sourceNodes))}
 
             {filteredArticles.map((art) => {
               const isArtActive = pathname.includes(art.slug || '')
@@ -322,9 +329,32 @@ export function WikiSidebar({
             <p className="text-xs text-zinc-400">No matching topics</p>
           </div>
         ) : (
-          <div className="space-y-0.5">
-            {filteredRoots.map((node) => renderNode(node))}
-          </div>
+          <>
+            <div className="mb-1.5 px-1 flex items-center gap-1.5">
+              <SCIcon icon={BookOpen} size="xs" className="text-zinc-400" />
+              <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-400">
+                Syllabus
+              </span>
+            </div>
+            <div className="space-y-0.5">
+              {filteredRoots.map((node) => renderNode(node))}
+            </div>
+          </>
+        )}
+
+        {/* Laws & Codes — cross-reference section */}
+        {!loading && filteredLawsRoots.length > 0 && (
+          <>
+            <div className="mt-4 mb-1.5 px-1 flex items-center gap-1.5">
+              <SCIcon icon={Scales} size="xs" className="text-zinc-400" />
+              <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-400">
+                Laws &amp; Codes
+              </span>
+            </div>
+            <div className="space-y-0.5">
+              {filteredLawsRoots.map((node) => renderNode(node, false, lawsNodes))}
+            </div>
+          </>
         )}
       </nav>
     </aside>

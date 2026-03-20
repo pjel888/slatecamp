@@ -13,6 +13,7 @@ export async function getWikiArticleBySlug(slug: string): Promise<WikiArticle | 
     .from("wiki_articles")
     .select("*")
     .eq("slug", slug)
+    .eq("status", "published")
     .limit(1)
     .maybeSingle();
 
@@ -72,12 +73,13 @@ export async function getWikiArticleByTaxonomySlug(taxonomySlug: string): Promis
 
   if (!articleId) return null;
 
-  // 4. Fetch the actual article content
+  // 4. Fetch the actual article content (only published)
   const { data: article, error: articleError } = await supabase
     .from("wiki_articles")
     .select("*")
     .eq("article_id", articleId)
-    .single();
+    .eq("status", "published")
+    .maybeSingle();
 
   if (articleError) {
     console.error(`[getWikiArticleByTaxonomySlug] Error fetching article content for id "${articleId}":`, articleError.message)
@@ -122,27 +124,49 @@ export async function getTaxonomyTree(
 
   console.log('[getTaxonomyTree] Nodes found:', nodes.length)
 
-  // Fetch wiki articles mapped to these nodes
-  const nodeIds = nodes.map((n: any) => n.node_id);
-
-  const { data: mappings, error: mappingsError } = await supabase
-    .from("wiki_article_taxonomy")
-    .select("node_id, wiki_articles(article_id, slug, title)")
-    .in("node_id", nodeIds);
-
-  if (mappingsError) {
-    console.error("[getTaxonomyTree] Error fetching mappings:", mappingsError.message);
-  }
+  // Fetch wiki articles mapped to leaf nodes only (level 3).
+  // Articles are only rendered on leaf nodes in the sidebar, and using all 433+
+  // node IDs in .in() exceeds PostgREST's ~8KB URL limit, silently returning empty.
+  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id);
 
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>();
 
-  mappings?.forEach((m: any) => {
-    if (!m.wiki_articles) return;
-    if (!articleMap.has(m.node_id)) {
-      articleMap.set(m.node_id, []);
+  if (leafNodeIds.length > 0) {
+    // Chunk into batches of 150 to stay well under URL limits
+    const CHUNK_SIZE = 150;
+    const allJunctionRows: { node_id: string; article_id: string }[] = [];
+
+    for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
+      const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE);
+      const { data: rows, error: junctionError } = await supabase
+        .from("wiki_article_taxonomy")
+        .select("node_id, article_id")
+        .in("node_id", chunk);
+
+      if (junctionError) {
+        console.error("[getTaxonomyTree] Error fetching mappings:", junctionError.message);
+      }
+      if (rows) allJunctionRows.push(...rows);
     }
-    articleMap.get(m.node_id)!.push(m.wiki_articles);
-  });
+
+    if (allJunctionRows.length > 0) {
+      const articleIds = [...new Set(allJunctionRows.map((r) => r.article_id))];
+
+      const { data: articleRows } = await supabase
+        .from("wiki_articles")
+        .select("article_id, slug, title")
+        .in("article_id", articleIds);
+
+      const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? []);
+
+      allJunctionRows.forEach((row) => {
+        const article = articleById.get(row.article_id);
+        if (!article) return;
+        if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, []);
+        articleMap.get(row.node_id)!.push(article);
+      });
+    }
+  }
 
   const finalData = nodes.map((node: any) => ({
     ...(node as TaxonomyNode),
@@ -151,6 +175,75 @@ export async function getTaxonomyTree(
 
   console.log('[getTaxonomyTree] Returning tree nodes:', finalData.length)
   return finalData
+}
+
+/**
+ * Fetch cross-reference-only nodes (Laws & Codes) for the wiki sidebar.
+ * These are separated from the main taxonomy tree because they span
+ * multiple subject areas and don't carry their own exam weight.
+ */
+export const getLawsTaxonomyTree = async (
+  disciplineId: string,
+): Promise<TaxonomyNode[]> => {
+  const supabase = await createClient()
+
+  const { data: nodes, error } = await supabase
+    .from('taxonomy_tree')
+    .select('*')
+    .eq('discipline_id', disciplineId)
+    .eq('is_cross_ref_only', true)
+    .is('deprecated_at', null)
+    .not('ale_id', 'is', null)
+    .order('level', { ascending: true })
+    .order('name', { ascending: true })
+
+  if (error) {
+    console.error('[getLawsTaxonomyTree] Error:', error.message)
+    return []
+  }
+
+  if (!nodes || nodes.length === 0) return []
+
+  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id)
+
+  const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>()
+
+  if (leafNodeIds.length > 0) {
+    const CHUNK_SIZE = 150
+    const allJunctionRows: { node_id: string; article_id: string }[] = []
+
+    for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
+      const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE)
+      const { data: rows } = await supabase
+        .from('wiki_article_taxonomy')
+        .select('node_id, article_id')
+        .in('node_id', chunk)
+      if (rows) allJunctionRows.push(...rows)
+    }
+
+    if (allJunctionRows.length > 0) {
+      const articleIds = [...new Set(allJunctionRows.map((r) => r.article_id))]
+
+      const { data: articleRows } = await supabase
+        .from('wiki_articles')
+        .select('article_id, slug, title')
+        .in('article_id', articleIds)
+
+      const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? [])
+
+      allJunctionRows.forEach((row) => {
+        const article = articleById.get(row.article_id)
+        if (!article) return
+        if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, [])
+        articleMap.get(row.node_id)!.push(article)
+      })
+    }
+  }
+
+  return nodes.map((node: any) => ({
+    ...(node as TaxonomyNode),
+    articles: articleMap.get(node.node_id) || [],
+  }))
 }
 
 /**
@@ -230,20 +323,21 @@ export interface BreadcrumbItem {
 export async function getBreadcrumbTrail(nodeId: string): Promise<BreadcrumbItem[]> {
   const supabase = await createClient();
 
-  // Fetch all nodes in the same discipline so we can walk up locally
+  // Fetch the start node to determine discipline and tree type
   const { data: startNode } = await supabase
     .from("taxonomy_tree")
-    .select("discipline_id")
+    .select("discipline_id, is_cross_ref_only")
     .eq("node_id", nodeId)
     .single();
 
   if (!startNode) return [];
 
+  // Use the same is_cross_ref_only value so ALE-LAWS nodes find their own tree
   const { data: allNodes } = await supabase
     .from("taxonomy_tree")
     .select("node_id, parent_id, name, slug, level")
     .eq("discipline_id", startNode.discipline_id)
-    .eq("is_cross_ref_only", false)
+    .eq("is_cross_ref_only", startNode.is_cross_ref_only)
     .is("deprecated_at", null)
     .not("ale_id", "is", null)
     .order("level", { ascending: true });

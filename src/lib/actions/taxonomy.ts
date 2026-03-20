@@ -56,20 +56,42 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
     })
   }
 
-  // 3. Fetch articles
-  const nodeIds = nodes.map((n: any) => n.node_id)
-  const { data: articleMappings } = await supabase
-    .from('wiki_article_taxonomy')
-    .select('node_id, wiki_articles(article_id, slug, title)')
-    .in('node_id', nodeIds)
+  // 3. Fetch articles — only for leaf nodes, chunked to avoid PostgREST URL limits
+  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id)
 
   const articleMap = new Map<string, any[]>()
-  articleMappings?.forEach((mapping: any) => {
-    if (!articleMap.has(mapping.node_id)) {
-      articleMap.set(mapping.node_id, [])
+
+  if (leafNodeIds.length > 0) {
+    const CHUNK_SIZE = 150
+    const allJunctionRows: { node_id: string; article_id: string }[] = []
+
+    for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
+      const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE)
+      const { data: rows } = await supabase
+        .from('wiki_article_taxonomy')
+        .select('node_id, article_id')
+        .in('node_id', chunk)
+      if (rows) allJunctionRows.push(...rows)
     }
-    articleMap.get(mapping.node_id)!.push(mapping.wiki_articles)
-  })
+
+    if (allJunctionRows.length > 0) {
+      const articleIds = [...new Set(allJunctionRows.map((r) => r.article_id))]
+
+      const { data: articleRows } = await supabase
+        .from('wiki_articles')
+        .select('article_id, slug, title')
+        .in('article_id', articleIds)
+
+      const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? [])
+
+      allJunctionRows.forEach((row) => {
+        const article = articleById.get(row.article_id)
+        if (!article) return
+        if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, [])
+        articleMap.get(row.node_id)!.push(article)
+      })
+    }
+  }
 
   const map = new Map<string, TaxonomyNode>()
   const roots: TaxonomyNode[] = []

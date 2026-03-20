@@ -155,15 +155,12 @@ export function DailyWikiCard({
           <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-white/80'>
             [ 3D Lab ]
           </h4>
-          <span className='font-dm-mono text-[11px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-sm bg-white/20 text-white/80'>
-            Coming Soon
-          </span>
         </div>
         <p className='text-[11px] text-white/50 mb-2'>
           Interactive architectural models
         </p>
         <p className='text-xs text-white/70 leading-snug'>
-          Coming soon — explore building codes, structural systems, and spatial
+          Explore building codes, structural systems, and spatial
           concepts through interactive 3D models you can rotate, cut, and explore.
         </p>
 

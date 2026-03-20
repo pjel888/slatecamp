@@ -100,7 +100,11 @@
       "Bash(grep -c '\"\"type\"\":\"\"assistant\"\"' \"C:/Users/PHILIP~1/AppData/Local/Temp/claude/D--SlateCamp-slate-camp/d8c03d3d-bf4a-4cea-8a40-827663f60ed6/tasks/a9e3d79ceefbc56bf.output\")",
       "Bash(grep -c '\"\"type\"\":\"\"assistant\"\"' \"C:/Users/PHILIP~1/AppData/Local/Temp/claude/D--SlateCamp-slate-camp/d8c03d3d-bf4a-4cea-8a40-827663f60ed6/tasks/ab6f478ae78537926.output\")",
       "Bash(python3 -c \"import sys; data=sys.stdin.read\\(\\); print\\(''''FILTER AGENT:'''', ''''DONE'''' if ''''stop_reason:end_turn'''' in data else ''''running''''\\)\")",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(rm -rf \"D:/SlateCamp/slate-camp/.planning/codebase\")",
+      "Bash(mkdir -p \"D:/SlateCamp/slate-camp/.planning/codebase\")",
+      "Bash(wc -l D:/SlateCamp/slate-camp/src/lib/actions/*.ts)",
+      "Bash(wc:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
