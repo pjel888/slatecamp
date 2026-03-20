@@ -4,7 +4,7 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
-import { Sidebar } from '@/components/shared/Sidebar'
+import { SidebarProvider, SidebarShell, SidebarContent } from '@/components/sidebar'
 import { Navbar } from '@/components/shared/Navbar'
 import { DashboardHeader } from '@/components/shared/DashboardHeader'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
@@ -84,52 +84,51 @@ async function DashboardLayoutContent({
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
-          <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200' style={{ backgroundColor: '#FFFDF7' }}>
-            <Sidebar
-              isAdmin={isAdmin}
-              isDevMode={showDevTools}
-              userDisplay={{
-                name: user.user_metadata?.full_name ?? user.email ?? 'User',
-                avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
-              }}
-              tier={effectiveTier}
-              currentDiscipline={
-                userStats?.disciplines?.name ?? 'No Discipline Selected'
-              }
-            />
-            <div className='flex flex-1 flex-col overflow-hidden border-l border-border'>
-              <BreadcrumbProvider>
-                <Navbar isAdmin={isAdmin} />
-                <div>
-                  <DashboardHeader />
-                </div>
-                <main className='flex-1 min-h-0 overflow-y-auto'>
-                  {children}
-                </main>
-              </BreadcrumbProvider>
+          <SidebarProvider>
+            <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200' style={{ backgroundColor: '#FFFDF7' }}>
+              <SidebarShell
+                isAdmin={isAdmin}
+                isDevMode={showDevTools}
+                userDisplay={{
+                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                }}
+                tier={effectiveTier}
+              />
+              <SidebarContent>
+                <BreadcrumbProvider>
+                  <Navbar isAdmin={isAdmin} />
+                  <div>
+                    <DashboardHeader />
+                  </div>
+                  <main className='flex-1 min-h-0 overflow-y-auto'>
+                    {children}
+                  </main>
+                </BreadcrumbProvider>
+              </SidebarContent>
+              {showDevTools && flags != null && (
+                <>
+                  <DevToolbar
+                    connectionState={isDemo ? 'local' : 'connected'}
+                    currentTier={currentTier}
+                    effectiveTier={effectiveTier}
+                    flags={flags}
+                  />
+                  <DevKeyboardProvider
+                    systemInfo={{
+                      env: process.env.NODE_ENV ?? 'development',
+                      nextVersion: '15',
+                      userId: user.id,
+                      userEmail: user.email ?? '',
+                      userRole: user.app_metadata?.role ?? 'user',
+                      connectionState: isDemo ? 'local' : 'connected',
+                    }}
+                  />
+                </>
+              )}
             </div>
-            {showDevTools && flags != null && (
-              <>
-                <DevToolbar
-                  connectionState={isDemo ? 'local' : 'connected'}
-                  currentTier={currentTier}
-                  effectiveTier={effectiveTier}
-                  flags={flags}
-                />
-                <DevKeyboardProvider
-                  systemInfo={{
-                    env: process.env.NODE_ENV ?? 'development',
-                    nextVersion: '15',
-                    userId: user.id,
-                    userEmail: user.email ?? '',
-                    userRole: user.app_metadata?.role ?? 'user',
-                    connectionState: isDemo ? 'local' : 'connected',
-                  }}
-                />
-              </>
-            )}
-          </div>
-          <QuickActionsBar />
+            <QuickActionsBar />
+          </SidebarProvider>
           </NoteContextProvider>
         </ActiveSessionProvider>
       </DisciplineProvider>

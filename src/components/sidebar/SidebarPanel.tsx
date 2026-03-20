@@ -26,7 +26,7 @@ export const SidebarPanel = ({ header, nav, footer }: SidebarPanelProps) => {
       </div>
 
       {/* Footer: CTA + Settings (pinned outside scroll) */}
-      <div className="shrink-0 border-t border-border px-3 py-2">
+      <div className="shrink-0">
         {footer}
       </div>
     </div>

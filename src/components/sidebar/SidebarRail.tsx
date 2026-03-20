@@ -8,6 +8,8 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useSidebar } from './SidebarProvider'
 import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarNavGroup } from './SidebarNavGroup'
+import { SidebarUserProfile } from './SidebarUserProfile'
+import { SidebarFooter } from './SidebarFooter'
 import {
   Tooltip,
   TooltipTrigger,
@@ -15,6 +17,7 @@ import {
 } from '@/components/ui/tooltip'
 import { ROUTES } from '@/lib/constants/routes'
 import { GROUPED_NAVIGATION } from '@/lib/routes'
+import type { UserTier } from '@/types/app'
 
 // ---------------------------------------------------------------------------
 // Logomark -- compact logo for the rail
@@ -40,9 +43,18 @@ const Logomark = () => (
 interface SidebarRailProps {
   isAdmin?: boolean
   onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void
+  userDisplay?: { name: string; avatarUrl: string | null }
+  tier?: UserTier
+  isDevMode?: boolean
 }
 
-export const SidebarRail = ({ isAdmin, onBeforeNavigate }: SidebarRailProps) => {
+export const SidebarRail = ({
+  isAdmin,
+  onBeforeNavigate,
+  userDisplay,
+  tier = 'free',
+  isDevMode,
+}: SidebarRailProps) => {
   const { expanded, toggle, toggleRef } = useSidebar()
   const pathname = usePathname()
 
@@ -81,7 +93,18 @@ export const SidebarRail = ({ isAdmin, onBeforeNavigate }: SidebarRailProps) => 
         </Tooltip>
       </div>
 
-      {/* 3. Navigation area */}
+      {/* 3. User profile (avatar only in rail) */}
+      {userDisplay && (
+        <SidebarUserProfile
+          name={userDisplay.name}
+          avatarUrl={userDisplay.avatarUrl}
+          tier={tier}
+          isDevMode={isDevMode}
+          variant="rail"
+        />
+      )}
+
+      {/* 4. Navigation area */}
       <nav className="flex flex-1 flex-col px-3 overflow-y-auto overflow-x-hidden py-2">
         {/* Dashboard standalone */}
         <SidebarNavItem
@@ -119,20 +142,12 @@ export const SidebarRail = ({ isAdmin, onBeforeNavigate }: SidebarRailProps) => 
         )}
       </nav>
 
-      {/* 4. Footer area */}
-      <div className="border-t border-border px-3 py-2">
-        <SidebarNavItem
-          href={GROUPED_NAVIGATION.settings.href}
-          label={GROUPED_NAVIGATION.settings.label}
-          icon={GROUPED_NAVIGATION.settings.icon}
-          isActive={
-            pathname === GROUPED_NAVIGATION.settings.href ||
-            pathname.startsWith(GROUPED_NAVIGATION.settings.href)
-          }
-          variant="rail"
-          onBeforeNavigate={(e) => onBeforeNavigate(e, GROUPED_NAVIGATION.settings.href)}
-        />
-      </div>
+      {/* 5. Footer area (CTA + Settings) */}
+      <SidebarFooter
+        variant="rail"
+        isAdmin={isAdmin}
+        onBeforeNavigate={onBeforeNavigate}
+      />
     </aside>
   )
 }

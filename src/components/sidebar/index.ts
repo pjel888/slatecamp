@@ -1,5 +1,7 @@
 // Sidebar module barrel export
 export { SidebarProvider, useSidebar } from './SidebarProvider'
+export { SidebarShell } from './SidebarShell'
+export { SidebarContent } from './SidebarContent'
 export { SidebarNavItem } from './SidebarNavItem'
 export { SidebarNavGroup } from './SidebarNavGroup'
 export { SidebarRail } from './SidebarRail'
