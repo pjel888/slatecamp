@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import { getSessionQuestions } from '@/lib/actions/quiz'
 import { QuestionStem } from './QuestionStem'
 import { OptionButton } from './OptionButton'
@@ -69,7 +70,7 @@ export const RestudyLoop = ({
   }
 
   const getOptionState = (option: Choice): OptionState => {
-    const correctId = currentQuestion?.correct_option_id ?? (currentQuestion as any)?.correct_answer
+    const correctId = getCorrectOptionId(currentQuestion ?? {})
     if (!isChecked) {
       return selectedAnswer === option.id ? 'selected' : 'default'
     }
@@ -107,7 +108,7 @@ export const RestudyLoop = ({
   }
 
   const options = (currentQuestion.options as unknown as Choice[]) || []
-  const correctId = currentQuestion.correct_option_id ?? (currentQuestion as any)?.correct_answer
+  const correctId = getCorrectOptionId(currentQuestion)
 
   return (
     <div className="max-w-2xl mx-auto px-5 py-6 space-y-6 animate-in fade-in duration-150">

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Brain, CircleNotch, Warning } from '@phosphor-icons/react'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
@@ -52,7 +53,7 @@ export function AITutorDrawer({
     if (fetchedForRef.current === question.question_id && response) return
 
     const correctOption = options.find(
-      (o) => o.id === (question.correct_option_id ?? question.correct_answer)
+      (o) => o.id === getCorrectOptionId(question)
     )
     const selectedOption = options.find((o) => o.id === selectedOptionId)
 

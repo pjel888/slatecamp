@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import type { Question, Choice } from '@/types/app'
 import {
   getSessionQuestions,
@@ -124,7 +125,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
       // Save all interactions in parallel batches
       const interactions = questions.map((q) => {
         const selected = answers.get(q.question_id) ?? null
-        const correctId = q.correct_option_id ?? (q as any).correct_answer
+        const correctId = getCorrectOptionId(q)
         const isCorrect = selected === correctId
 
         return saveInteraction({

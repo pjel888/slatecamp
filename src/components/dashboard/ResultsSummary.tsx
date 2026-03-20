@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useMemo, useState, useEffect } from 'react'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import { motion } from 'framer-motion'
 import {
   Target,
@@ -90,7 +91,7 @@ export function ResultsSummary({
     const topicStats: Record<string, { total: number; correct: number; name: string }> = {}
 
     questions.forEach((q) => {
-      const isCorrect = answers[q.question_id] === (q.correct_option_id ?? q.correct_answer)
+      const isCorrect = answers[q.question_id] === getCorrectOptionId(q)
       if (isCorrect) correct++
 
       const topicId = q.topic_id || 'general'
@@ -105,7 +106,7 @@ export function ResultsSummary({
     const score = total > 0 ? Math.round((correct / total) * 100) : 0
 
     const wrongQuestionIds = questions
-      .filter((q) => answers[q.question_id] !== (q.correct_option_id ?? q.correct_answer))
+      .filter((q) => answers[q.question_id] !== getCorrectOptionId(q))
       .map((q) => q.question_id)
 
     return { total, correct, score, topicStats, wrongQuestionIds }
@@ -287,7 +288,7 @@ export function ResultsSummary({
         <div className='space-y-2'>
           {questions.map((q, idx) => {
             const userAnswer = answers[q.question_id]
-            const correctId = q.correct_option_id ?? q.correct_answer
+            const correctId = getCorrectOptionId(q)
             const isCorrect = userAnswer === correctId
             const options = (q.options as unknown as Choice[]) || []
             const userOption = options.find((o) => o.id === userAnswer)

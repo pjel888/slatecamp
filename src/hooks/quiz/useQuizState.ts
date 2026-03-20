@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback, useRef } from 'react'
 import type { Question, QuizSession, Choice } from '@/types/app'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import type { OptionState, QuestionDotState } from '@/components/quiz'
 import type { ConfidenceLevel } from '@/components/quiz/ConfidenceToggle'
 
@@ -145,7 +146,7 @@ export function useQuizState({
   // ── Derived ───────────────────────────────────────────────────────────────
   const currentQuestion = questions[currentIndex]
   const options = (currentQuestion?.options as unknown as Choice[]) || []
-  const correctOptionId = currentQuestion?.correct_option_id ?? (currentQuestion as any)?.correct_answer
+  const correctOptionId = getCorrectOptionId(currentQuestion ?? {})
   const isChecked = !strictMode && checkedQuestions.has(currentQuestion?.question_id)
   const selectedAnswer = answers[currentQuestion?.question_id]
   const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)

@@ -3,6 +3,7 @@
 import { useCallback, useRef } from 'react'
 import { saveInteraction } from '@/lib/actions/quiz'
 import type { Question } from '@/types/app'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import type { ConfidenceLevel } from '@/components/quiz/ConfidenceToggle'
 
 interface UseQuizTelemetryOptions {
@@ -68,7 +69,7 @@ export function useQuizTelemetry({
           question_id: data.questionId,
           topic_id: q.topic_id,
           selected_option_id: data.optionId,
-          is_correct: (data.optionId || null) === (q.correct_option_id ?? (q as any).correct_answer),
+          is_correct: (data.optionId || null) === getCorrectOptionId(q),
           time_spent_ms: data.timeSpentMs,
           is_flagged: data.isFlagged,
           answer_changes: data.answerChanges,

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Warning } from '@phosphor-icons/react'
+import { getCorrectOptionId } from '@/lib/utils/question'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { Question, QuizSession, Choice } from '@/types/app'
@@ -214,7 +215,7 @@ export function QuizRenderer({
   // ── Derived ───────────────────────────────────────────────────────────────
   const currentQuestion = questions[currentIndex]
   const options = (currentQuestion?.options as unknown as Choice[]) || []
-  const correctOptionId = currentQuestion?.correct_option_id ?? (currentQuestion as any)?.correct_answer
+  const correctOptionId = getCorrectOptionId(currentQuestion ?? {})
   const isChecked = !strictMode && checkedQuestions.has(currentQuestion?.question_id)
   const selectedAnswer = answers[currentQuestion?.question_id]
   const isFlagged = flaggedQuestions.has(currentQuestion?.question_id)
@@ -502,7 +503,7 @@ export function QuizRenderer({
       console.error('Final submit DB update failed:', error)
     } finally {
       const duration = Date.now() - sessionStartRef.current
-      trackEvent({ event_name: 'quiz_session_completed', event_properties: { test_mode: mode, score: Object.entries(answers).filter(([qId, ans]) => { const q = questions.find(qq => qq.question_id === qId); return q && ans === (q.correct_option_id ?? (q as any).correct_answer) }).length, duration_ms: duration }, session_id: session.session_id })
+      trackEvent({ event_name: 'quiz_session_completed', event_properties: { test_mode: mode, score: Object.entries(answers).filter(([qId, ans]) => { const q = questions.find(qq => qq.question_id === qId); return q && ans === getCorrectOptionId(q) }).length, duration_ms: duration }, session_id: session.session_id })
 
       clearLS(session.session_id)
       setIsSaving(false)
