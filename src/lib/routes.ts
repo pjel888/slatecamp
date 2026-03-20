@@ -10,12 +10,27 @@ import {
   Path,
 } from '@phosphor-icons/react'
 
+export type NavGroup = 'learn' | 'practice' | 'data'
+
+export interface NavGroupConfig {
+  key: NavGroup
+  label: string
+  order: number
+}
+
+export const NAV_GROUPS: NavGroupConfig[] = [
+  { key: 'learn', label: 'Learn', order: 1 },
+  { key: 'practice', label: 'Practice', order: 2 },
+  { key: 'data', label: 'Data', order: 3 },
+]
+
 export interface RouteConfig {
   path: string
   title: string
   sidebarLabel?: string
   icon?: PhosphorIcon
   sidebar?: boolean
+  group?: NavGroup
 }
 
 /**
@@ -31,35 +46,42 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     path: '/dashboard/wiki',
     title: 'Wiki',
     icon: Globe,
+    group: 'learn',
   },
   {
     path: '/dashboard/camptrails',
     title: 'CampTrails',
     icon: Path,
+    group: 'practice',
   },
   {
     path: '/dashboard/review',
     title: 'Review',
     icon: Brain,
+    group: 'practice',
   },
   {
     path: '/dashboard/notes',
     title: 'Notes',
     icon: FileText,
+    group: 'learn',
   },
   {
     path: '/dashboard/3d-lab',
     title: '3D Lab',
     icon: Cube,
+    group: 'learn',
   },
   {
     path: '/dashboard/analytics',
     title: 'Analytics',
     icon: ChartBar,
+    group: 'data',
   },
   {
     path: '/dashboard/settings',
     title: 'Account Settings',
+    sidebarLabel: 'Settings',
     icon: GearSix,
   },
 ]
@@ -105,3 +127,44 @@ export const SIDEBAR_NAVIGATION: SidebarNavItem[] = DASHBOARD_ROUTES.filter(
   label: route.sidebarLabel ?? route.title,
   icon: route.icon,
 }))
+
+export interface GroupedNavigation {
+  dashboard: SidebarNavItem
+  groups: { config: NavGroupConfig; items: SidebarNavItem[] }[]
+  settings: SidebarNavItem
+}
+
+const deriveGroupedNavigation = (): GroupedNavigation => {
+  const routes = DASHBOARD_ROUTES.filter((r) => r.sidebar !== false)
+
+  const dashboard = routes.find((r) => r.path === '/dashboard')!
+  const settings = routes.find((r) => r.path === '/dashboard/settings')!
+  const grouped = routes.filter((r) => r.group != null)
+
+  const groups = NAV_GROUPS.map((config) => ({
+    config,
+    items: grouped
+      .filter((r) => r.group === config.key)
+      .map((r) => ({
+        href: r.path,
+        label: r.sidebarLabel ?? r.title,
+        icon: r.icon,
+      })),
+  })).filter((g) => g.items.length > 0)
+
+  return {
+    dashboard: {
+      href: dashboard.path,
+      label: dashboard.sidebarLabel ?? dashboard.title,
+      icon: dashboard.icon,
+    },
+    groups,
+    settings: {
+      href: settings.path,
+      label: settings.sidebarLabel ?? settings.title,
+      icon: settings.icon,
+    },
+  }
+}
+
+export const GROUPED_NAVIGATION = deriveGroupedNavigation()
