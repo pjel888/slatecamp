@@ -59,6 +59,8 @@ interface SidebarProps {
 /** * ARCHITECTURE FIX: The Strict Bounding Box
  * 32px box + 20px total left padding = perfectly centered in a 72px collapsed sidebar.
  */
+/** 32px alignment box: 20px left padding + 16px (half of 32px) = 36px = center of 72px collapsed rail.
+ *  DO NOT change this — icons stay pixel-perfect between collapsed/expanded. */
 const ICON_BOX = 'flex h-8 w-8 shrink-0 items-center justify-center'
 const ICON_SIZE = 'h-[18px] w-[18px]'
 
@@ -96,7 +98,7 @@ const SidebarItem = ({
 }: SidebarItemProps) => {
   // We NEVER change to justify-center. Mathematical padding keeps the icon static.
   const baseClasses =
-    'relative flex items-center gap-3 px-2 py-1.5 text-sm rounded-md transition-colors duration-200 outline-none w-full justify-start overflow-hidden'
+    'relative flex items-center gap-2.5 px-2 py-[5px] text-[13px] leading-tight rounded-sm transition-colors duration-150 outline-none w-full justify-start overflow-hidden'
 
   const stateClasses = isActive
     ? 'text-primary font-semibold bg-[#EEF2FC]'
@@ -110,7 +112,7 @@ const SidebarItem = ({
     >
       {/* Dieter Rams Active Indicator */}
       {isActive && (
-        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[4px] h-[16px] bg-primary rounded-r-full' />
+        <div className='absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-[14px] bg-primary rounded-r-full' />
       )}
 
       <div className={ICON_BOX}>
@@ -219,7 +221,7 @@ export const Sidebar = ({
       <div
         className={cn(
           'flex h-16 items-center border-b border-border shrink-0 transition-all duration-300',
-          collapsed ? 'justify-center' : 'justify-start px-5',
+          collapsed ? 'justify-center' : 'justify-start px-3',
         )}
       >
         <Link
@@ -234,13 +236,13 @@ export const Sidebar = ({
       {/* 2. Minimize/Expand Toggle (Below Logo, Above Profile) */}
       <div
         className={cn(
-          'flex items-center border-b border-border shrink-0 py-1.5 transition-all duration-300',
+          'flex items-center border-b border-border shrink-0 py-1 transition-all duration-300',
           collapsed ? 'justify-center' : 'justify-end px-3',
         )}
       >
         <button
           onClick={toggleCollapse}
-          className='flex h-8 w-8 items-center justify-center rounded-md text-[#4A5568] transition-colors hover:bg-[#EEF2FC]/50 hover:text-primary outline-none'
+          className='flex h-7 w-7 items-center justify-center rounded-sm text-[#8896A7] transition-colors duration-150 hover:bg-[#EEF2FC]/50 hover:text-primary outline-none'
           title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           {collapsed ? (
@@ -254,12 +256,12 @@ export const Sidebar = ({
       {/* 3. Main Content Area */}
       <div className='flex flex-1 flex-col px-3 overflow-y-auto overflow-x-hidden pb-4'>
         {/* User Profile Area */}
-        <div className='border-b border-border py-3'>
+        <div className='border-b border-border py-2'>
           <Tooltip>
             <TooltipTrigger asChild>
               <Link
                 href={ROUTES.SETTINGS}
-                className='flex items-center justify-start gap-3 px-2 py-1.5 rounded-md transition-colors hover:bg-[#EEF2FC]/50 outline-none'
+                className='flex items-center justify-start gap-2.5 px-2 py-[5px] rounded-sm transition-colors duration-150 hover:bg-[#EEF2FC]/50 outline-none'
                 onClick={(e) => handleNavClick(e, ROUTES.SETTINGS)}
               >
                 <div className={ICON_BOX}>
@@ -299,8 +301,8 @@ export const Sidebar = ({
           </Tooltip>
         </div>
         {/* Tier & Plan Area */}
-        <div className='border-b border-border py-3'>
-          <div className='flex items-center justify-start gap-3 px-2'>
+        <div className='border-b border-border py-2'>
+          <div className='flex items-center justify-start gap-2.5 px-2'>
             <div className={ICON_BOX}>
               {tier === 'free' ? (
                 <SCIcon icon={Sparkle} size='sm' className='text-[#D4951A]' />
@@ -338,7 +340,7 @@ export const Sidebar = ({
         </div>
 
         {/* Navigation Links */}
-        <nav className='flex-1 space-y-1 py-4'>
+        <nav className='flex-1 space-y-0.5 py-2'>
           {/* Dashboard standalone item */}
           <SidebarItem
             key={GROUPED_NAVIGATION.dashboard.href}
@@ -351,21 +353,23 @@ export const Sidebar = ({
           />
 
           {/* Separator between Dashboard and first group */}
-          <div className="mx-2 my-2 border-b border-border" />
+          <div className="mx-2 my-1.5 border-b border-border" />
 
           {/* Grouped navigation sections */}
           {GROUPED_NAVIGATION.groups.map(({ config, items }) => (
             <div key={config.key}>
               {/* Group label -- hidden when collapsed, visible when expanded */}
-              {!collapsed && (
-                <div className="px-2 pt-4 pb-1">
-                  <span className="text-[11px] font-medium text-[#8896A7]">
+              <div className="h-7 flex items-end px-2 pb-0.5">
+                {collapsed ? (
+                  <div className="w-full border-b border-border" />
+                ) : (
+                  <span className="text-[11px] font-medium tracking-wide text-[#8896A7]">
                     {config.label}
                   </span>
-                </div>
-              )}
+                )}
+              </div>
               {/* Group items */}
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 {items.map(({ href, label, icon }) => {
                   const isActive = pathname === href || (href !== '/dashboard' && pathname.startsWith(href))
                   return (
@@ -386,7 +390,7 @@ export const Sidebar = ({
 
           {isAdmin && (
             <>
-              <div className='my-3 border-t border-border' />
+              <div className='my-1.5 border-t border-border' />
               <SidebarItem
                 href={ROUTES.SETTINGS_DEVELOPER}
                 label='Dev Settings'
