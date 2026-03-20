@@ -33,11 +33,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. Sidebar displays "Review" where it previously said "Testing" and the route works
   2. CampTrails appears in the sidebar and navigates to /dashboard/camptrails (stub page renders)
   3. All existing sidebar links continue to work without regression
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Rename Testing to Review across codebase + add CampTrails nav link and stub page
 
 ### Phase 2: Grouped Navigation
 **Goal**: Users see navigation organized into clear sections that communicate information architecture
@@ -173,7 +172,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Route Foundation | 0/2 | Not started | - |
+| 1. Route Foundation | 0/1 | Planning complete | - |
 | 2. Grouped Navigation | 0/2 | Not started | - |
 | 3. Collapsed Rail | 0/1 | Not started | - |
 | 4. Overlay Expand | 0/1 | Not started | - |
