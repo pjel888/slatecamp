@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { getMasteryLevel } from '@/lib/constants/mastery'
 import type {
   DashboardPageData,
   RecommendedAction,
@@ -36,12 +37,7 @@ function shortLabel(subject: string): string {
 
 // ── Helpers ─────────────────────────────────────────────────────────────────
 
-function getMasteryLabel(weight: number): MasteryLabel {
-  if (weight >= 0.76) return 'Strong'
-  if (weight >= 0.51) return 'Developing'
-  if (weight >= 0.26) return 'Building'
-  return 'Exploring'
-}
+const getMasteryLabel = (weight: number): MasteryLabel => getMasteryLevel(weight) as MasteryLabel
 
 const MODE_NAMES: Record<string, string> = {
   camp: 'Camp Mode',
