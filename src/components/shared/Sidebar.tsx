@@ -354,15 +354,16 @@ export const Sidebar = ({
 
           {/* Grouped navigation — label creates separation, no lines */}
           {GROUPED_NAVIGATION.groups.map(({ config, items }) => (
-            <div key={config.key} className="mt-4">
-              {/* Group label — only in expanded; collapsed uses the mt-4 gap */}
-              {!collapsed && (
-                <div className="px-2 mb-1">
+            <div key={config.key}>
+              {/* Group spacer — MUST be same height in both states so icons never shift.
+                  Expanded: shows label. Collapsed: empty gap separates icon clusters. */}
+              <div className="h-8 flex items-end px-2 pb-1">
+                {!collapsed && (
                   <span className="text-[11px] font-medium uppercase tracking-wider text-[#8896A7]">
                     {config.label}
                   </span>
-                </div>
-              )}
+                )}
+              </div>
               <div className="space-y-px">
                 {items.map(({ href, label, icon }) => {
                   const isActive = pathname === href || (href !== '/dashboard' && pathname.startsWith(href))
