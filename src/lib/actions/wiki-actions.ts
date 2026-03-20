@@ -95,11 +95,7 @@ export async function getWikiArticleByTaxonomySlug(taxonomySlug: string): Promis
 export async function getTaxonomyTree(
   disciplineId: string,
 ): Promise<TaxonomyNode[]> {
-  console.log('[getTaxonomyTree] Starting fetch. ID:', disciplineId)
   const supabase = await createClient();
-  const isMock = (supabase as any).isMockClient; // We'll add this flag to our mock client
-  
-  console.log('[getTaxonomyTree] Using client mode:', isMock ? 'MOCK' : 'LIVE')
 
   // Fetch all taxonomy nodes for the discipline
   const { data: nodes, error } = await supabase
@@ -118,11 +114,8 @@ export async function getTaxonomyTree(
   }
   
   if (!nodes || nodes.length === 0) {
-    console.log('[getTaxonomyTree] No nodes found for discipline:', disciplineId)
     return []
   }
-
-  console.log('[getTaxonomyTree] Nodes found:', nodes.length)
 
   // Fetch wiki articles mapped to leaf nodes only (level 3).
   // Articles are only rendered on leaf nodes in the sidebar, and using all 433+
@@ -160,7 +153,7 @@ export async function getTaxonomyTree(
       const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? []);
 
       allJunctionRows.forEach((row) => {
-        const article = articleById.get(row.article_id);
+        const article = articleById.get(row.article_id) as { article_id: string; slug: string; title: string } | undefined;
         if (!article) return;
         if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, []);
         articleMap.get(row.node_id)!.push(article);
@@ -173,7 +166,6 @@ export async function getTaxonomyTree(
     articles: articleMap.get(node.node_id) || [],
   }));
 
-  console.log('[getTaxonomyTree] Returning tree nodes:', finalData.length)
   return finalData
 }
 
@@ -232,7 +224,7 @@ export const getLawsTaxonomyTree = async (
       const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? [])
 
       allJunctionRows.forEach((row) => {
-        const article = articleById.get(row.article_id)
+        const article = articleById.get(row.article_id) as { article_id: string; slug: string; title: string } | undefined
         if (!article) return
         if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, [])
         articleMap.get(row.node_id)!.push(article)
