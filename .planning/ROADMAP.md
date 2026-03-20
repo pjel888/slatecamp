@@ -47,11 +47,11 @@ Plans:
   2. Navigation items are visually grouped under LEARN (Wiki, Notes, 3D Lab), PRACTICE (CampTrails, Review), and DATA (Analytics) labels
   3. Group labels are visible when sidebar is expanded and hidden when collapsed
   4. Active route highlighting works correctly for all items including Dashboard and items within groups
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Extend RouteConfig with group metadata, derive GROUPED_NAVIGATION, TDD with unit tests
+- [ ] 02-02-PLAN.md -- Replace flat sidebar rendering with grouped sections, pin Settings to bottom, visual checkpoint
 
 ### Phase 3: Collapsed Rail
 **Goal**: The collapsed sidebar is a polished, permanent icon rail that feels intentional rather than an afterthought
@@ -173,7 +173,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Route Foundation | 0/1 | Planning complete | - |
-| 2. Grouped Navigation | 0/2 | Not started | - |
+| 2. Grouped Navigation | 0/2 | Planning complete | - |
 | 3. Collapsed Rail | 0/1 | Not started | - |
 | 4. Overlay Expand | 0/1 | Not started | - |
 | 5. Overlay Interactions | 0/1 | Not started | - |
