@@ -1,3 +1,10 @@
+/**
+ * DEMO MODE MODULE
+ * Activated via NEXT_PUBLIC_DEMO_MODE=true environment variable.
+ * Provides mock data for the /try landing experience without requiring Supabase.
+ * Do NOT delete — this module is env-gated, not import-gated.
+ * See: src/app/try/page.tsx
+ */
 import { DEMO_USER } from './config'
 import type { UserTier } from '@/types/app'
 import { TIER_CAPABILITIES } from '@/lib/dev/dev-mode'

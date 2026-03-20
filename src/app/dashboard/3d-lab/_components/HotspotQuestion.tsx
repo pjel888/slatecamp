@@ -1,3 +1,9 @@
+/**
+ * PLANNED COMPONENT
+ * Scaffolded for upcoming 3D Lab hotspot quiz interactions.
+ * 0 imports today because no 3D scene has been wired to use it yet.
+ * Do NOT delete — needed by upcoming modules in the 3D Lab build list.
+ */
 'use client'
 
 import { useState } from 'react'
