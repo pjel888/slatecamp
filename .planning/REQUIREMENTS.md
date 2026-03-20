@@ -12,8 +12,8 @@
 - [ ] **NAV-03**: LEARN group contains: Wiki, Notes, 3D Lab
 - [ ] **NAV-04**: PRACTICE group contains: CampTrails, Review
 - [ ] **NAV-05**: DATA group contains: Analytics
-- [ ] **NAV-06**: "Testing" renamed to "Review" in sidebar label
-- [ ] **NAV-07**: CampTrails nav link added (route stub at /dashboard/camptrails)
+- [x] **NAV-06**: "Testing" renamed to "Review" in sidebar label
+- [x] **NAV-07**: CampTrails nav link added (route stub at /dashboard/camptrails)
 - [ ] **NAV-08**: Group labels hidden when collapsed, visible when expanded
 - [ ] **NAV-09**: Active route indicator maintained across all states
 
@@ -85,8 +85,8 @@
 | NAV-03 | Phase 2 | Pending |
 | NAV-04 | Phase 2 | Pending |
 | NAV-05 | Phase 2 | Pending |
-| NAV-06 | Phase 1 | Pending |
-| NAV-07 | Phase 1 | Pending |
+| NAV-06 | Phase 1 | Complete |
+| NAV-07 | Phase 1 | Complete |
 | NAV-08 | Phase 2 | Pending |
 | NAV-09 | Phase 2 | Pending |
 | OVR-01 | Phase 3 | Pending |
