@@ -7,11 +7,11 @@
 
 ### Navigation Structure
 
-- [ ] **NAV-01**: Navigation items grouped into labeled sections (LEARN, PRACTICE, DATA)
-- [ ] **NAV-02**: Dashboard rendered as standalone top-level item (category-level visual weight)
-- [ ] **NAV-03**: LEARN group contains: Wiki, Notes, 3D Lab
-- [ ] **NAV-04**: PRACTICE group contains: CampTrails, Review
-- [ ] **NAV-05**: DATA group contains: Analytics
+- [x] **NAV-01**: Navigation items grouped into labeled sections (LEARN, PRACTICE, DATA)
+- [x] **NAV-02**: Dashboard rendered as standalone top-level item (category-level visual weight)
+- [x] **NAV-03**: LEARN group contains: Wiki, Notes, 3D Lab
+- [x] **NAV-04**: PRACTICE group contains: CampTrails, Review
+- [x] **NAV-05**: DATA group contains: Analytics
 - [x] **NAV-06**: "Testing" renamed to "Review" in sidebar label
 - [x] **NAV-07**: CampTrails nav link added (route stub at /dashboard/camptrails)
 - [ ] **NAV-08**: Group labels hidden when collapsed, visible when expanded
@@ -80,11 +80,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
-| NAV-05 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
+| NAV-05 | Phase 2 | Complete |
 | NAV-06 | Phase 1 | Complete |
 | NAV-07 | Phase 1 | Complete |
 | NAV-08 | Phase 2 | Pending |
