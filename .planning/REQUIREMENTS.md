@@ -1,7 +1,7 @@
 # Requirements: SlateCamp Dashboard Sidebar Redesign
 
 **Defined:** 2026-03-20
-**Core Value:** The sidebar must feel immediately professional — like a serious product built for working adults preparing for licensure exams.
+**Core Value:** The sidebar must feel immediately professional -- like a serious product built for working adults preparing for licensure exams.
 
 ## v1 Requirements
 
@@ -42,7 +42,7 @@
 ### Visual Polish
 
 - [ ] **VIS-01**: Text sizes reduced to professional density (13px labels, 11px group headers)
-- [ ] **VIS-02**: Spacing tightened — compact padding matching GitHub/Supabase density
+- [ ] **VIS-02**: Spacing tightened -- compact padding matching GitHub/Supabase density
 - [ ] **VIS-03**: Smooth transitions max 300ms (Campfire design system)
 - [ ] **VIS-04**: Respects prefers-reduced-motion
 - [ ] **VIS-05**: Tooltips on collapsed rail icons
@@ -69,7 +69,7 @@
 
 | Feature | Reason |
 |---------|--------|
-| CampTrails page implementation | Only the nav link and route stub — page is a separate effort |
+| CampTrails page implementation | Only the nav link and route stub -- page is a separate effort |
 | Nested flyout submenus | Over-engineered for 7 routes, anti-pattern per research |
 | Drag-to-reorder nav items | Complexity without value for fixed navigation structure |
 | Sidebar search | cmdk command palette already handles global search |
@@ -80,45 +80,45 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | TBD | Pending |
-| NAV-02 | TBD | Pending |
-| NAV-03 | TBD | Pending |
-| NAV-04 | TBD | Pending |
-| NAV-05 | TBD | Pending |
-| NAV-06 | TBD | Pending |
-| NAV-07 | TBD | Pending |
-| NAV-08 | TBD | Pending |
-| NAV-09 | TBD | Pending |
-| OVR-01 | TBD | Pending |
-| OVR-02 | TBD | Pending |
-| OVR-03 | TBD | Pending |
-| OVR-04 | TBD | Pending |
-| OVR-05 | TBD | Pending |
-| OVR-06 | TBD | Pending |
-| OVR-07 | TBD | Pending |
-| ACC-01 | TBD | Pending |
-| ACC-02 | TBD | Pending |
-| ACC-03 | TBD | Pending |
-| ACC-04 | TBD | Pending |
-| FRM-01 | TBD | Pending |
-| FRM-02 | TBD | Pending |
-| VIS-01 | TBD | Pending |
-| VIS-02 | TBD | Pending |
-| VIS-03 | TBD | Pending |
-| VIS-04 | TBD | Pending |
-| VIS-05 | TBD | Pending |
-| VIS-06 | TBD | Pending |
-| A11-01 | TBD | Pending |
-| A11-02 | TBD | Pending |
-| A11-03 | TBD | Pending |
-| A11-04 | TBD | Pending |
-| A11-05 | TBD | Pending |
+| NAV-01 | Phase 2 | Pending |
+| NAV-02 | Phase 2 | Pending |
+| NAV-03 | Phase 2 | Pending |
+| NAV-04 | Phase 2 | Pending |
+| NAV-05 | Phase 2 | Pending |
+| NAV-06 | Phase 1 | Pending |
+| NAV-07 | Phase 1 | Pending |
+| NAV-08 | Phase 2 | Pending |
+| NAV-09 | Phase 2 | Pending |
+| OVR-01 | Phase 3 | Pending |
+| OVR-02 | Phase 4 | Pending |
+| OVR-03 | Phase 4 | Pending |
+| OVR-04 | Phase 5 | Pending |
+| OVR-05 | Phase 5 | Pending |
+| OVR-06 | Phase 5 | Pending |
+| OVR-07 | Phase 3 | Pending |
+| ACC-01 | Phase 6 | Pending |
+| ACC-02 | Phase 7 | Pending |
+| ACC-03 | Phase 7 | Pending |
+| ACC-04 | Phase 6 | Pending |
+| FRM-01 | Phase 8 | Pending |
+| FRM-02 | Phase 8 | Pending |
+| VIS-01 | Phase 9 | Pending |
+| VIS-02 | Phase 9 | Pending |
+| VIS-03 | Phase 9 | Pending |
+| VIS-04 | Phase 9 | Pending |
+| VIS-05 | Phase 9 | Pending |
+| VIS-06 | Phase 9 | Pending |
+| A11-01 | Phase 10 | Pending |
+| A11-02 | Phase 10 | Pending |
+| A11-03 | Phase 10 | Pending |
+| A11-04 | Phase 10 | Pending |
+| A11-05 | Phase 10 | Pending |
 
 **Coverage:**
 - v1 requirements: 33 total
-- Mapped to phases: 0
-- Unmapped: 33
+- Mapped to phases: 33
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-20*
-*Last updated: 2026-03-20 after initial definition*
+*Last updated: 2026-03-20 after roadmap phase mapping*
