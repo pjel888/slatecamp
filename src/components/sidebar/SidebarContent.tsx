@@ -6,8 +6,7 @@ import { useSidebar } from './SidebarProvider'
 // SidebarContent
 // ---------------------------------------------------------------------------
 // Thin client wrapper for the main content area. Applies contentRef from
-// SidebarProvider for inert management when the overlay is expanded.
-// Needed because layout.tsx is a server component and cannot use hooks.
+// SidebarProvider for inert management when the overlay is open.
 // ---------------------------------------------------------------------------
 
 export const SidebarContent = ({ children }: { children: React.ReactNode }) => {

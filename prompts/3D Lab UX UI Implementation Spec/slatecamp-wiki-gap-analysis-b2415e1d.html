@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp Wiki UI — Gap Analysis & Implementation Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cobalt: #1B3FC4;
+  --cobalt-light: #EEF3FD;
+  --cobalt-mid: #B8CAF5;
+  --gold: #F5A623;
+  --gold-light: #FFF8E6;
+  --gold-mid: #FAD07A;
+  --red: #E63329;
+  --red-light: #FFF0EF;
+  --green: #1B7A3C;
+  --green-light: #EAF5EE;
+  --cream: #F2F0EB;
+  --warm-white: #F8F7F5;
+  --ink: #1A1A1A;
+  --ink-2: #3D3D3A;
+  --ink-3: #737370;
+  --ink-4: #A8A8A5;
+  --border: #E0DED8;
+  --border-light: #ECEAE4;
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--warm-white);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.wrap { max-width: 1060px; margin: 0 auto; padding: 48px 28px 120px; }
+
+/* cover */
+.cover { border: 0.5px solid var(--border); border-radius: 16px; background: white; padding: 48px; margin-bottom: 60px; }
+.cover-eye { font-size: 10px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); margin-bottom: 12px; font-weight: 500; }
+.cover-title { font-size: 34px; font-weight: 700; color: var(--ink); line-height: 1.15; margin-bottom: 8px; }
+.cover-sub { font-size: 15px; color: var(--ink-3); line-height: 1.65; margin-bottom: 28px; }
+.cover-meta { display: flex; gap: 10px; flex-wrap: wrap; }
+.ct { font-size: 10px; font-family: 'DM Mono', monospace; padding: 4px 10px; border-radius: 4px; font-weight: 500; }
+.ct-blue { background: var(--cobalt-light); color: var(--cobalt); }
+.ct-gold { background: var(--gold-light); color: #8A5D00; }
+.ct-green { background: var(--green-light); color: var(--green); }
+.ct-gray { background: var(--cream); color: var(--ink-3); }
+.ct-red { background: var(--red-light); color: var(--red); }
+
+/* chapter */
+.ch { margin-bottom: 64px; }
+.ch-head { display: flex; align-items: baseline; gap: 14px; padding-bottom: 12px; border-bottom: 2px solid var(--cobalt); margin-bottom: 6px; }
+.ch-num { font-size: 10px; font-family: 'DM Mono', monospace; font-weight: 500; color: var(--cobalt); letter-spacing: .12em; }
+.ch-title { font-size: 22px; font-weight: 700; color: var(--ink); }
+.ch-desc { font-size: 13px; color: var(--ink-3); line-height: 1.7; margin-bottom: 24px; margin-top: 6px; }
+
+/* section head within chapter */
+.sh { font-size: 15px; font-weight: 600; color: var(--ink); margin: 32px 0 12px; display: flex; align-items: center; gap: 8px; }
+.sh::before { content:''; display:block; width:3px; height:14px; background:var(--cobalt); border-radius:2px; }
+
+/* cards */
+.card { border: 0.5px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 14px; }
+.card-h { background: var(--cream); padding: 13px 18px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; border-bottom: 0.5px solid var(--border); }
+.card-hl { display: flex; flex-direction: column; gap: 3px; }
+.card-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.card-sub { font-size: 10px; font-family: 'DM Mono', monospace; color: var(--ink-3); }
+.card-body { background: white; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+
+/* status badges */
+.badge { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; padding: 3px 8px; border-radius: 3px; white-space: nowrap; align-self: flex-start; }
+.b-done { background: var(--green-light); color: var(--green); }
+.b-missing { background: var(--red-light); color: var(--red); }
+.b-partial { background: var(--gold-light); color: #8A5D00; }
+.b-schema { background: var(--cobalt-light); color: var(--cobalt); }
+.b-p1 { background: var(--cobalt-light); color: var(--cobalt); }
+.b-p2 { background: var(--green-light); color: var(--green); }
+.b-p3 { background: var(--cream); color: var(--ink-3); }
+
+/* spec list */
+.sl { display: flex; flex-direction: column; gap: 8px; }
+.si { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.si-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--cobalt); margin-top: 7px; flex-shrink: 0; }
+.si-green { background: var(--green); }
+.si-red { background: var(--red); }
+.si-gold { background: var(--gold); }
+.si strong { color: var(--ink); font-weight: 600; }
+.si code { font-family: 'DM Mono', monospace; font-size: 11px; background: var(--cream); padding: 1px 5px; border-radius: 3px; color: var(--cobalt); }
+
+/* two-col */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
+
+/* callout blocks */
+.insight { background: var(--cobalt-light); border-left: 3px solid var(--cobalt); border-radius: 0 8px 8px 0; padding: 12px 15px; }
+.insight-label { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--cobalt); margin-bottom: 3px; }
+.insight-text { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.warn { background: var(--gold-light); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 12px 15px; }
+.warn-label { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: #8A5D00; margin-bottom: 3px; }
+.warn-text { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.success { background: var(--green-light); border-left: 3px solid var(--green); border-radius: 0 8px 8px 0; padding: 12px 15px; }
+.success-label { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--green); margin-bottom: 3px; }
+.success-text { font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+
+/* code block */
+.code { background: #13131F; border-radius: 8px; padding: 15px 17px; overflow-x: auto; margin: 6px 0; }
+.code pre { font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.75; color: #C9C7C0; white-space: pre; }
+.kb { color: #7BA7F5; }
+.ks { color: #F5C842; }
+.kc { color: #6EC99A; }
+.kg { color: #888; }
+.km { color: #F07070; }
+
+/* gap table */
+.gtable { width: 100%; border-collapse: collapse; font-size: 13px; }
+.gtable th { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-4); padding: 8px 12px; text-align: left; border-bottom: 0.5px solid var(--border); }
+.gtable td { padding: 10px 12px; border-bottom: 0.5px solid var(--border-light); vertical-align: top; line-height: 1.55; }
+.gtable tr:last-child td { border-bottom: none; }
+.gtable .mono { font-family: 'DM Mono', monospace; font-size: 11px; }
+
+/* preview mock */
+.preview { border: 0.5px solid var(--border); border-radius: 10px; overflow: hidden; margin: 4px 0; }
+.preview-label { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-4); padding: 7px 13px; background: var(--cream); border-bottom: 0.5px solid var(--border); }
+.preview-inner { padding: 14px; background: white; }
+
+/* mock wiki components */
+.mock-callout { border-radius: 0 8px 8px 0; padding: 11px 15px; margin: 6px 0; }
+.mock-callout-most { background: #EEF3FD; border-left: 3px solid var(--cobalt); }
+.mock-callout-watch { background: #FFF0EF; border-left: 3px solid var(--red); }
+.mock-callout-ver { background: #FFF8E6; border-left: 3px solid var(--gold); }
+.mock-callout-eye { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 3px; }
+.mock-callout-most .mock-callout-eye { color: var(--cobalt); }
+.mock-callout-watch .mock-callout-eye { color: var(--red); }
+.mock-callout-ver .mock-callout-eye { color: #8A5D00; }
+.mock-callout-text { font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+.mock-part-eye { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; color: var(--cobalt); margin-bottom: 3px; }
+.mock-part-h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+.mock-part-sub { font-size: 11px; color: var(--ink-3); }
+.mock-tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+.mock-tag { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; padding: 2px 7px; border-radius: 3px; }
+.mt-blue { background: var(--cobalt-light); color: var(--cobalt); }
+.mt-gold { background: var(--gold-light); color: #8A5D00; }
+.mt-gray { background: var(--cream); color: var(--ink-3); }
+.mock-pill { display: inline-flex; align-items: center; background: var(--gold-light); color: #8A5D00; border: 0.5px solid var(--gold-mid); border-radius: 3px; padding: 1px 6px; font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; margin-left: 4px; }
+.mock-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mock-table th { font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-4); padding: 7px 9px; text-align: left; background: #FAFAF8; border-bottom: 0.5px solid var(--border); }
+.mock-table td { padding: 8px 9px; border-bottom: 0.5px solid var(--border-light); }
+.mock-table tr:last-child td { border-bottom: none; }
+.mock-table .val { font-weight: 600; color: var(--cobalt); }
+.mock-table .src { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--ink-4); }
+.mock-table .row-most { background: var(--gold-light); }
+.mock-table .row-most .val { color: #8A5D00; }
+.mock-table .row-section { background: #1B3FC414; }
+.mock-table .row-section td { font-size: 9px; font-family: 'DM Mono', monospace; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--cobalt); padding: 6px 9px; }
+.mock-mistake { display: grid; grid-template-columns: 28px 1fr; gap: 9px; align-items: start; border: 0.5px solid var(--border); border-radius: 8px; padding: 11px 13px; margin-bottom: 7px; }
+.mock-mistake-num { font-size: 11px; font-family: 'DM Mono', monospace; font-weight: 500; color: var(--cobalt); }
+.mock-mistake-title { font-size: 12px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.mock-mistake-vals { font-size: 11px; color: var(--ink-2); }
+.mock-mistake-wrong { text-decoration: line-through; color: var(--red); }
+.mock-mistake-right { font-weight: 600; color: var(--cobalt); }
+
+/* seq table */
+.seq { width: 100%; border-collapse: collapse; }
+.seq td { padding: 12px 0; border-bottom: 0.5px solid var(--border-light); vertical-align: top; }
+.seq tr:last-child td { border-bottom: none; }
+.seq-num-col { width: 80px; padding-right: 14px; }
+.seq-title { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.seq-desc { font-size: 12px; color: var(--ink-3); line-height: 1.5; }
+
+/* note */
+.note { background: var(--cream); border-radius: 8px; padding: 13px 15px; font-size: 13px; color: var(--ink-2); line-height: 1.7; }
+.note strong { color: var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+
+<!-- ══ COVER ══ -->
+<div class="cover">
+  <div class="cover-eye">SlateCamp · Wiki UI · Gap Analysis</div>
+  <div class="cover-title">article_id: b2415e1d<br>Gap Analysis &amp; Implementation Plan</div>
+  <div class="cover-sub">
+    Full audit of the live "Doors, Corridors &amp; Washrooms — BP 344 / RA 9442" article
+    against the Wiki UI Implementation Spec v1.0. Identifies every gap, documents what the
+    database already has, what schema changes are needed, and provides the exact implementation
+    steps for Claude Code.
+  </div>
+  <div class="cover-meta">
+    <span class="ct ct-green">Article: published</span>
+    <span class="ct ct-blue">Content: 33,007 chars</span>
+    <span class="ct ct-gold">Schema gaps: 1 missing column</span>
+    <span class="ct ct-green">Component shortcodes: all present</span>
+    <span class="ct ct-gray">Slug: ale-dsgn-002-02-doors-corridors-washrooms</span>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 01 — EXECUTIVE SUMMARY ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">01</span><span class="ch-title">Executive Summary</span></div>
+  <div class="ch-desc">The short answer: the article is NOT lacking content — it was written with the spec in mind. The "lacking" appearance you see is a renderer problem, not a content problem. The article content already contains every component shortcode the spec defines. The issue is that the frontend is either (a) rendering them as raw text instead of React components, or (b) the components haven't been built yet.</div>
+
+  <div class="success">
+    <div class="success-label">What's already done — in the database right now</div>
+    <div class="success-text">
+      The article has: ✓ all 3 callout types (<code>WikiCalloutBox</code> with most-tested, ale-watch, version-alert) ·
+      ✓ all 6 WikiPartHeader components with correct partNumber, title, subtitle ·
+      ✓ WikiChangedPill inline throughout ·
+      ✓ Full WikiMistakeList with all 10 mistakes, wrongValue, correctValue, explanation, sourceRef ·
+      ✓ <code>subject_label</code>, <code>difficulty_label</code>, <code>ale_tests_you</code>, <code>updated_note</code> all populated correctly ·
+      ✓ 33,007 chars of well-structured MDX content
+    </div>
+  </div>
+
+  <div class="warn" style="margin-top:12px">
+    <div class="warn-label">What's missing</div>
+    <div class="warn-text">
+      1. <strong>Schema:</strong> No <code>read_time_minutes</code> column — the spec requires this for the article header tag row. Needs a migration.<br>
+      2. <strong>Component naming mismatch:</strong> The content uses <code>&lt;WikiCalloutBox&gt;</code> but the spec defines the component as <code>&lt;WikiCallout&gt;</code>. One of these needs to be aligned.<br>
+      3. <strong>WikiTable component:</strong> The article uses plain markdown tables — not yet converted to the <code>&lt;WikiTable&gt;</code> component with cobalt value columns and gold most-tested rows. This is the highest-impact visual gap.<br>
+      4. <strong>Frontend components:</strong> None of the 7 components from the spec appear to be built yet (WikiArticleHeader, WikiCallout, WikiTable, WikiPartHeader, WikiChangedPill, WikiMistakeCard, WikiMistakeList).
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 02 — DATABASE AUDIT ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">02</span><span class="ch-title">Database Audit — What Exists vs. What the Spec Needs</span></div>
+
+  <div class="sh">wiki_articles table — column-by-column check</div>
+
+  <table class="gtable">
+    <thead><tr><th>Column</th><th>Status</th><th>Current value (this article)</th><th>Spec requirement</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="mono">article_id</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td class="mono">b2415e1d-9fa3-4b25-9a57-c58084c37eab</td>
+        <td>Primary key. No change needed.</td>
+      </tr>
+      <tr>
+        <td class="mono">title</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>Doors, Corridors &amp; Washrooms — BP 344 / RA 9442</td>
+        <td>Maps to <code>WikiArticleHeaderProps.title</code>. ✓</td>
+      </tr>
+      <tr>
+        <td class="mono">slug</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td class="mono">ale-dsgn-002-02-doors-corridors-washrooms</td>
+        <td>Used for routing. ✓</td>
+      </tr>
+      <tr>
+        <td class="mono">subject_label</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>A3 · Accessibility Standards</td>
+        <td>Maps to <code>WikiArticleHeaderProps.subject</code>. ✓ Exact format the spec expects.</td>
+      </tr>
+      <tr>
+        <td class="mono">difficulty_label</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>Intermediate</td>
+        <td>Maps to <code>WikiArticleHeaderProps.difficulty</code>. Must be one of Foundational / Intermediate / Advanced. ✓</td>
+      </tr>
+      <tr>
+        <td class="mono">ale_tests_you</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>Identify specific dimensions, apply them to described building scenarios…</td>
+        <td>Maps to <code>WikiArticleHeaderProps.aleTestsYou</code>. ✓ Already in correct format.</td>
+      </tr>
+      <tr>
+        <td class="mono">updated_note</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>2024 Revised IRR (effective August 8, 2024) · Official Gazette Vol. 120 No. 28</td>
+        <td>Maps to <code>WikiArticleHeaderProps.updatedNote</code>. ✓</td>
+      </tr>
+      <tr style="background:#FFF5F5">
+        <td class="mono"><strong>read_time_minutes</strong></td>
+        <td><span class="badge b-missing">✗ missing</span></td>
+        <td>Column does not exist</td>
+        <td>Required for the <code>WikiArticleHeaderProps.readTime</code> tag pill ("~18 min read"). <strong>Needs migration.</strong></td>
+      </tr>
+      <tr>
+        <td class="mono">content</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>33,007 chars of MDX</td>
+        <td>Full article content with all component shortcodes. ✓</td>
+      </tr>
+      <tr>
+        <td class="mono">status</td>
+        <td><span class="badge b-done">✓ exists</span></td>
+        <td>published</td>
+        <td>Used for conditional rendering (don't render draft articles). ✓</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sh">Component shortcodes in the article content — audit</div>
+
+  <table class="gtable">
+    <thead><tr><th>Shortcode found in DB</th><th>Spec component</th><th>Status</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="mono">&lt;WikiCalloutBox type="version-alert"&gt;</td>
+        <td class="mono">&lt;WikiCallout type="version-alert"&gt;</td>
+        <td><span class="badge b-partial">⚠ name mismatch</span></td>
+        <td>Content uses <code>WikiCalloutBox</code>. Spec defines <code>WikiCallout</code>. Pick one and align — easiest fix is naming the React component <code>WikiCalloutBox</code> to match the content, or running a content migration to rename.</td>
+      </tr>
+      <tr>
+        <td class="mono">&lt;WikiCalloutBox type="most-tested"&gt;</td>
+        <td class="mono">&lt;WikiCallout type="most-tested"&gt;</td>
+        <td><span class="badge b-partial">⚠ name mismatch</span></td>
+        <td>Same naming issue as above.</td>
+      </tr>
+      <tr>
+        <td class="mono">&lt;WikiCalloutBox type="ale-watch"&gt;</td>
+        <td class="mono">&lt;WikiCallout type="ale-watch"&gt;</td>
+        <td><span class="badge b-partial">⚠ name mismatch</span></td>
+        <td>Same naming issue as above.</td>
+      </tr>
+      <tr>
+        <td class="mono">&lt;WikiChangedPill /&gt;</td>
+        <td class="mono">&lt;WikiChangedPill /&gt;</td>
+        <td><span class="badge b-done">✓ exact match</span></td>
+        <td>Name and self-closing format match the spec exactly.</td>
+      </tr>
+      <tr>
+        <td class="mono">&lt;WikiPartHeader partNumber={N} title="..." subtitle="..." /&gt;</td>
+        <td class="mono">&lt;WikiPartHeader partNumber={N} title="..." subtitle="..." /&gt;</td>
+        <td><span class="badge b-done">✓ exact match</span></td>
+        <td>All 6 part headers present (1–6). Props match the TypeScript interface exactly.</td>
+      </tr>
+      <tr>
+        <td class="mono">&lt;WikiMistakeList mistakes={[...]} /&gt;</td>
+        <td class="mono">&lt;WikiMistakeList mistakes={[...]} /&gt;</td>
+        <td><span class="badge b-done">✓ exact match</span></td>
+        <td>All 10 mistakes present. Each has: number, title, wrongValue, correctValue, explanation, sourceRef. Props match the TypeScript interface exactly.</td>
+      </tr>
+      <tr>
+        <td class="mono">Plain markdown tables (|col|col|)</td>
+        <td class="mono">&lt;WikiTable columns={...} rows={...} /&gt;</td>
+        <td><span class="badge b-missing">✗ not converted</span></td>
+        <td>The article has ~12 markdown tables. They need to be converted to <code>&lt;WikiTable&gt;</code> components to get cobalt value styling, gold most-tested rows, section header rows, and source column formatting. This is the biggest visual gap.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- ══ CHAPTER 03 — SCHEMA MIGRATION ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">03</span><span class="ch-title">Schema Migration — 1 Required Column</span></div>
+  <div class="ch-desc">Only one migration is needed. Add <code>read_time_minutes</code> to the <code>wiki_articles</code> table, then populate it for this article.</div>
+
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">Migration: add read_time_minutes</span>
+        <span class="card-sub">Run via Supabase apply_migration · name: add_wiki_read_time</span>
+      </div>
+      <span class="badge b-p1">Run first</span>
+    </div>
+    <div class="card-body">
+      <div class="sl">
+        <div class="si"><span class="si-dot"></span><strong>Why:</strong> The <code>WikiArticleHeader</code> component needs <code>read_time_minutes</code> to render the "~18 min read" tag pill. Without it the tag row is missing one of its three elements.</div>
+        <div class="si"><span class="si-dot"></span><strong>Type:</strong> <code>smallint</code> — read times are always 1–60 minute integers.</div>
+        <div class="si"><span class="si-dot"></span><strong>Nullable:</strong> YES — existing articles without a read time set won't break. The frontend hides the read time tag pill when <code>read_time_minutes</code> is null.</div>
+        <div class="si"><span class="si-dot"></span><strong>Calculated how:</strong> Use the formula from the spec: total word count ÷ 125, rounded up to nearest integer. This article is ~6,000 words → ~48 minutes. Display shows "~18 min read" — so the stored value for this article should be <strong>18</strong> (matching what's in the article header tag).</div>
+      </div>
+      <div class="code">
+<pre><span class="kg">-- Migration: add_wiki_read_time</span>
+<span class="kb">ALTER TABLE</span> wiki_articles
+  <span class="kb">ADD COLUMN</span> read_time_minutes <span class="kc">SMALLINT</span>;
+
+<span class="kg">-- Populate for article b2415e1d (BP 344 Doors/Corridors/Washrooms)</span>
+<span class="kg">-- Word count ~6,000 → spec formula says ~18 min for technical content</span>
+<span class="kb">UPDATE</span> wiki_articles
+  <span class="kb">SET</span> read_time_minutes = <span class="ks">18</span>
+  <span class="kb">WHERE</span> article_id = <span class="ks">'b2415e1d-9fa3-4b25-9a57-c58084c37eab'</span>;
+
+<span class="kg">-- Add comment for future devs</span>
+<span class="kb">COMMENT ON COLUMN</span> wiki_articles.read_time_minutes <span class="kb">IS</span>
+  <span class="ks">'Estimated read time in minutes. Formula: word_count / 125, rounded up. Displayed as "~N min read" in the article header tag row.'</span>;</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 04 — COMPONENT NAMING RESOLUTION ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">04</span><span class="ch-title">Component Naming Resolution — WikiCallout vs WikiCalloutBox</span></div>
+  <div class="ch-desc">The content uses <code>&lt;WikiCalloutBox&gt;</code> (3 instances: version-alert, most-tested, ale-watch). The spec names the component <code>&lt;WikiCallout&gt;</code>. There are two valid solutions — pick one.</div>
+
+  <div class="two-col">
+    <div class="card">
+      <div class="card-h">
+        <div class="card-hl">
+          <span class="card-name">Option A — Name the React component WikiCalloutBox</span>
+          <span class="card-sub">Zero content migrations · recommended</span>
+        </div>
+        <span class="badge b-done">Recommended</span>
+      </div>
+      <div class="card-body">
+        <div class="sl">
+          <div class="si"><span class="si-dot"></span>Build the React component as <code>WikiCalloutBox</code> instead of <code>WikiCallout</code></div>
+          <div class="si"><span class="si-dot"></span>Export it as <code>WikiCalloutBox</code> from <code>src/components/wiki/index.ts</code></div>
+          <div class="si"><span class="si-dot"></span>Add to the MDX component map as <code>WikiCalloutBox</code></div>
+          <div class="si"><span class="si-dot"></span><strong>No database changes needed.</strong> The existing content works immediately.</div>
+          <div class="si"><span class="si-dot"></span>Update the spec document to use <code>WikiCalloutBox</code> as the canonical name</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-h">
+        <div class="card-hl">
+          <span class="card-name">Option B — Migrate content to WikiCallout</span>
+          <span class="card-sub">Keeps spec name · requires DB migration</span>
+        </div>
+        <span class="badge b-p3">Only if consistency with spec matters more</span>
+      </div>
+      <div class="card-body">
+        <div class="sl">
+          <div class="si"><span class="si-dot"></span>Run a SQL UPDATE that replaces all <code>WikiCalloutBox</code> with <code>WikiCallout</code> in content</div>
+          <div class="si"><span class="si-dot"></span>Must be run on ALL wiki articles, not just this one</div>
+          <div class="si"><span class="si-dot"></span>Build the React component as <code>WikiCallout</code> as originally specced</div>
+          <div class="si"><span class="si-dot"></span>Higher risk — requires touching production content</div>
+        </div>
+        <div class="code">
+<pre><span class="kg">-- Option B migration (only if chosen)</span>
+<span class="kb">UPDATE</span> wiki_articles
+  <span class="kb">SET</span> content = replace(content,
+    <span class="ks">'WikiCalloutBox'</span>, <span class="ks">'WikiCallout'</span>)
+  <span class="kb">WHERE</span> content <span class="kb">LIKE</span> <span class="ks">'%WikiCalloutBox%'</span>;</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight" style="margin-top:12px">
+    <div class="insight-label">Decision</div>
+    <div class="insight-text">Go with <strong>Option A</strong>. The content is correct. The spec document is a spec — it can be updated. Never run content migrations unless absolutely necessary. Name the React component <code>WikiCalloutBox</code> to match what's already in the database.</div>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 05 — FRONTEND COMPONENT IMPLEMENTATION ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">05</span><span class="ch-title">Frontend Component Implementation — Complete Code</span></div>
+  <div class="ch-desc">All 7 components, ready for Claude Code. Written to match exactly what the database contains. Component names aligned with Option A (WikiCalloutBox).</div>
+
+  <!-- 5.1 WikiArticleHeader -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiArticleHeader.tsx</span>
+        <span class="card-sub">src/components/wiki/WikiArticleHeader.tsx</span>
+      </div>
+      <span class="badge b-p1">P1 · Build first</span>
+    </div>
+    <div class="card-body">
+      <div class="preview">
+        <div class="preview-label">Rendered output — uses live DB data</div>
+        <div class="preview-inner">
+          <div class="mock-tag-row">
+            <span class="mock-tag mt-blue">A3 · Accessibility Standards</span>
+            <span class="mock-tag mt-gold">Intermediate</span>
+            <span class="mock-tag mt-gray">~18 min read</span>
+          </div>
+          <div style="font-size:22px;font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:5px">Doors, Corridors &amp; Washrooms — BP 344 / RA 9442</div>
+          <div style="font-size:10px;font-family:'DM Mono',monospace;color:var(--ink-4);margin-bottom:10px">Updated: 2024 Revised IRR (effective August 8, 2024) · Official Gazette Vol. 120 No. 28</div>
+          <div style="background:var(--cobalt-light);border-left:3px solid var(--cobalt);border-radius:0 8px 8px 0;padding:10px 14px">
+            <div style="font-size:9px;font-family:'DM Mono',monospace;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--cobalt);margin-bottom:3px">The ALE tests you to</div>
+            <div style="font-size:12px;color:var(--ink-2);line-height:1.55">Identify specific dimensions, apply them to described building scenarios, and spot violations in accessible washroom floor plans.</div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiArticleHeader.tsx</span>
+<span class="kb">import</span> { cn } <span class="kb">from</span> <span class="ks">'@/lib/utils'</span>
+
+<span class="kb">interface</span> <span class="kc">WikiArticleHeaderProps</span> {
+  subject: string
+  difficulty: <span class="ks">'Foundational'</span> | <span class="ks">'Intermediate'</span> | <span class="ks">'Advanced'</span>
+  readTime: number | <span class="kb">null</span>   <span class="kg">// read_time_minutes from DB, null = hide tag</span>
+  title: string
+  updatedNote: string
+  aleTestsYou: string
+}
+
+<span class="kb">const</span> difficultyStyle: Record&lt;string, string&gt; = {
+  Foundational: <span class="ks">'bg-green-50 text-green-800'</span>,
+  Intermediate:  <span class="ks">'bg-signal-gold-light text-amber-800'</span>,
+  Advanced:      <span class="ks">'bg-red-50 text-red-800'</span>,
+}
+
+<span class="kb">export function</span> <span class="kc">WikiArticleHeader</span>({
+  subject, difficulty, readTime, title, updatedNote, aleTestsYou
+}: WikiArticleHeaderProps) {
+  <span class="kb">return</span> (
+    &lt;header className=<span class="ks">"flex flex-col gap-3 mb-8"</span>&gt;
+
+      <span class="kg">{/* Tag row */}</span>
+      &lt;div className=<span class="ks">"flex flex-wrap items-center gap-1.5"</span>&gt;
+        &lt;span className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cobalt-light text-primary"</span>&gt;
+          {subject}
+        &lt;/span&gt;
+        &lt;span className={cn(
+          <span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px]"</span>,
+          difficultyStyle[difficulty] ?? <span class="ks">'bg-cream text-ink-muted'</span>
+        )}&gt;
+          {difficulty}
+        &lt;/span&gt;
+        {readTime !== <span class="kb">null</span> &amp;&amp; (
+          &lt;span className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cream text-ink-muted"</span>&gt;
+            ~{readTime} min read
+          &lt;/span&gt;
+        )}
+      &lt;/div&gt;
+
+      <span class="kg">{/* Title — Syne font for H1 only */}</span>
+      &lt;h1 className=<span class="ks">"font-display font-extrabold text-2xl sm:text-3xl text-ink leading-tight"</span>&gt;
+        {title}
+      &lt;/h1&gt;
+
+      <span class="kg">{/* Updated metadata */}</span>
+      &lt;p className=<span class="ks">"font-mono text-[10px] text-ink-muted"</span>&gt;
+        Updated: {updatedNote}
+      &lt;/p&gt;
+
+      <span class="kg">{/* ALE orientation banner */}</span>
+      &lt;div className=<span class="ks">"border-l-[3px] border-primary bg-cobalt-light rounded-r-lg px-4 py-3"</span>&gt;
+        &lt;p className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+          The ALE tests you to
+        &lt;/p&gt;
+        &lt;p className=<span class="ks">"font-sans text-sm text-ink leading-relaxed"</span>&gt;
+          {aleTestsYou}
+        &lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/header&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.2 WikiCalloutBox -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiCalloutBox.tsx</span>
+        <span class="card-sub">src/components/wiki/WikiCalloutBox.tsx · matches DB content exactly</span>
+      </div>
+      <span class="badge b-p1">P1</span>
+    </div>
+    <div class="card-body">
+      <div class="preview">
+        <div class="preview-label">All three types — live from the article</div>
+        <div class="preview-inner">
+          <div class="mock-callout mock-callout-ver">
+            <div class="mock-callout-eye">Version alert — read first</div>
+            <div class="mock-callout-text">Every number in this article reflects the <strong>2024 IRR only</strong>. Values that changed from 2013 are marked <span class="mock-pill">⟳ 2024</span>. If your notes show a different number, the 2024 IRR governs for the exam.</div>
+          </div>
+          <div class="mock-callout mock-callout-most" style="margin-top:8px">
+            <div class="mock-callout-eye">Most-tested</div>
+            <div class="mock-callout-text">The <strong>1,800 mm</strong> turning circle diameter. Every major dimension in the washroom section traces back to it.</div>
+          </div>
+          <div class="mock-callout mock-callout-watch" style="margin-top:8px">
+            <div class="mock-callout-eye">ALE Watch</div>
+            <div class="mock-callout-text">Questions about penalties never come from BP 344 itself. They come from <strong>RA 9442</strong>. If an option says "BP 344 prescribes a ₱50,000 fine," it's wrong.</div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiCalloutBox.tsx</span>
+<span class="kg">// NOTE: Named WikiCalloutBox (not WikiCallout) to match existing DB content</span>
+<span class="kb">import</span> { cn } <span class="kb">from</span> <span class="ks">'@/lib/utils'</span>
+
+<span class="kb">type</span> CalloutType = <span class="ks">'most-tested'</span> | <span class="ks">'ale-watch'</span> | <span class="ks">'version-alert'</span>
+
+<span class="kb">interface</span> <span class="kc">WikiCalloutBoxProps</span> {
+  type: CalloutType
+  children: React.ReactNode
+}
+
+<span class="kb">const</span> config: Record&lt;CalloutType, { border: string; bg: string; label: string; eyebrow: string }&gt; = {
+  <span class="ks">'most-tested'</span>: {
+    border:  <span class="ks">'border-l-[3px] border-primary'</span>,
+    bg:      <span class="ks">'bg-cobalt-light'</span>,
+    label:   <span class="ks">'Most-tested'</span>,
+    eyebrow: <span class="ks">'text-primary'</span>,
+  },
+  <span class="ks">'ale-watch'</span>: {
+    border:  <span class="ks">'border-l-[3px] border-signal-red'</span>,
+    bg:      <span class="ks">'bg-signal-red-light'</span>,
+    label:   <span class="ks">'ALE Watch'</span>,
+    eyebrow: <span class="ks">'text-signal-red'</span>,
+  },
+  <span class="ks">'version-alert'</span>: {
+    border:  <span class="ks">'border-l-[3px] border-signal-gold'</span>,
+    bg:      <span class="ks">'bg-signal-gold-light'</span>,
+    label:   <span class="ks">'Version alert — read first'</span>,
+    eyebrow: <span class="ks">'text-amber-800'</span>,
+  },
+}
+
+<span class="kb">export function</span> <span class="kc">WikiCalloutBox</span>({ type, children }: WikiCalloutBoxProps) {
+  <span class="kb">const</span> c = config[type]
+  <span class="kb">return</span> (
+    &lt;div className={cn(<span class="ks">"rounded-r-lg px-4 py-3 my-5"</span>, c.border, c.bg)}&gt;
+      &lt;p className={cn(
+        <span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest mb-1"</span>,
+        c.eyebrow
+      )}&gt;{c.label}&lt;/p&gt;
+      &lt;div className=<span class="ks">"text-sm text-ink leading-relaxed [&amp;_strong]:font-semibold"</span>&gt;
+        {children}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.3 WikiChangedPill -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiChangedPill.tsx</span>
+        <span class="card-sub">src/components/wiki/WikiChangedPill.tsx · self-closing, no props required</span>
+      </div>
+      <span class="badge b-p1">P1</span>
+    </div>
+    <div class="card-body">
+      <div class="note">The DB content uses <code>&lt;WikiChangedPill /&gt;</code> with no props — just a self-closing tag. The component must work with zero props as the default case. The <code>oldValue</code> prop from the spec is optional — useful for tooltip text but not required by any existing content.</div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiChangedPill.tsx</span>
+<span class="kb">import</span> { cn } <span class="kb">from</span> <span class="ks">'@/lib/utils'</span>
+
+<span class="kb">interface</span> <span class="kc">WikiChangedPillProps</span> {
+  oldValue?: string    <span class="kg">// Optional — shown in title tooltip</span>
+  className?: string
+}
+
+<span class="kb">export function</span> <span class="kc">WikiChangedPill</span>({ oldValue, className }: WikiChangedPillProps = {}) {
+  <span class="kb">const</span> tooltip = oldValue
+    ? <span class="ks">`Changed from ${oldValue} in 2013 Illustrated IRR`</span>
+    : <span class="ks">'Changed from 2013 Illustrated IRR'</span>
+
+  <span class="kb">return</span> (
+    &lt;span
+      title={tooltip}
+      className={cn(
+        <span class="ks">"inline-flex items-center font-mono text-[9px] font-medium"</span>,
+        <span class="ks">"px-1.5 py-px rounded-[3px] cursor-default select-none"</span>,
+        <span class="ks">"bg-signal-gold-light text-amber-800 border border-[#FAD07A]"</span>,
+        className
+      )}
+    &gt;
+      ⟳ 2024
+    &lt;/span&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.4 WikiPartHeader -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiPartHeader.tsx</span>
+        <span class="card-sub">src/components/wiki/WikiPartHeader.tsx · props match DB content exactly</span>
+      </div>
+      <span class="badge b-p1">P1</span>
+    </div>
+    <div class="card-body">
+      <div class="preview">
+        <div class="preview-label">Rendered — Part 4 from the article</div>
+        <div class="preview-inner">
+          <div class="mock-part-eye">Part 4</div>
+          <div class="mock-part-h2">Corridors</div>
+          <div class="mock-part-sub">Width requirements · turnabout spaces · surface rules</div>
+        </div>
+      </div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiPartHeader.tsx</span>
+<span class="kb">interface</span> <span class="kc">WikiPartHeaderProps</span> {
+  partNumber: number | string
+  title: string
+  subtitle?: string
+}
+
+<span class="kb">export function</span> <span class="kc">WikiPartHeader</span>({ partNumber, title, subtitle }: WikiPartHeaderProps) {
+  <span class="kb">return</span> (
+    &lt;div className=<span class="ks">"mt-12 mb-5"</span>&gt;
+      &lt;p className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+        Part {partNumber}
+      &lt;/p&gt;
+      &lt;h2 className=<span class="ks">"font-sans font-bold text-xl text-ink leading-snug"</span>&gt;
+        {title}
+      &lt;/h2&gt;
+      {subtitle &amp;&amp; (
+        &lt;p className=<span class="ks">"font-sans text-xs text-ink-muted mt-1"</span>&gt;{subtitle}&lt;/p&gt;
+      )}
+    &lt;/div&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.5 WikiMistakeList -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiMistakeCard.tsx + WikiMistakeList.tsx</span>
+        <span class="card-sub">src/components/wiki/ · props match the inline data in the DB exactly</span>
+      </div>
+      <span class="badge b-p2">P2</span>
+    </div>
+    <div class="card-body">
+      <div class="preview">
+        <div class="preview-label">Mistake cards — from the DB data</div>
+        <div class="preview-inner">
+          <div class="mock-mistake">
+            <div class="mock-mistake-num">01</div>
+            <div>
+              <div class="mock-mistake-title">Carrying the old corridor width</div>
+              <div class="mock-mistake-vals">Wrong: <span class="mock-mistake-wrong">1,200 mm</span> → Correct: <span class="mock-mistake-right">1,500 mm</span> <span class="mock-pill">⟳ 2024</span></div>
+              <div style="font-size:11px;color:var(--ink-3);margin-top:3px">The 2024 IRR raised this. Most older review materials still show the wrong value.</div>
+            </div>
+          </div>
+          <div class="mock-mistake">
+            <div class="mock-mistake-num">05</div>
+            <div>
+              <div class="mock-mistake-title">Measuring grab bar height from the floor</div>
+              <div class="mock-mistake-vals">Wrong: <span class="mock-mistake-wrong">750 mm from floor</span> → Correct: <span class="mock-mistake-right">300 mm from seat top</span></div>
+              <div style="font-size:11px;color:var(--ink-3);margin-top:3px">The 300 mm is from the top of the toilet seat, not from the floor.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiMistakeCard.tsx</span>
+<span class="kb">import</span> { WikiChangedPill } <span class="kb">from</span> <span class="ks">'./WikiChangedPill'</span>
+
+<span class="kb">interface</span> <span class="kc">WikiMistakeProps</span> {
+  number: number
+  title: string
+  wrongValue: string
+  correctValue: string
+  explanation: string
+  sourceRef?: string    <span class="kg">// "2024" = show ⟳ pill · undefined = no pill</span>
+}
+
+<span class="kb">export function</span> <span class="kc">WikiMistakeCard</span>({ number, title, wrongValue, correctValue, explanation, sourceRef }: WikiMistakeProps) {
+  <span class="kb">return</span> (
+    &lt;div className=<span class="ks">"grid grid-cols-[28px_1fr] gap-2.5 border border-border rounded-lg px-3.5 py-3"</span>&gt;
+      &lt;span className=<span class="ks">"font-mono text-[11px] font-medium text-primary pt-0.5"</span>&gt;
+        {String(number).padStart(2, <span class="ks">'0'</span>)}
+      &lt;/span&gt;
+      &lt;div&gt;
+        &lt;p className=<span class="ks">"font-sans text-[13px] font-semibold text-ink mb-1"</span>&gt;{title}&lt;/p&gt;
+        &lt;p className=<span class="ks">"font-sans text-xs text-ink"</span>&gt;
+          &lt;span className=<span class="ks">"text-ink-muted"</span>&gt;Wrong: &lt;/span&gt;
+          &lt;span className=<span class="ks">"line-through text-signal-red"</span>&gt;{wrongValue}&lt;/span&gt;
+          &lt;span className=<span class="ks">"text-ink-muted mx-2"</span>&gt;→&lt;/span&gt;
+          &lt;span className=<span class="ks">"text-ink-muted"</span>&gt;Correct: &lt;/span&gt;
+          &lt;span className=<span class="ks">"font-semibold text-primary"</span>&gt;{correctValue}&lt;/span&gt;
+          {sourceRef === <span class="ks">'2024'</span> &amp;&amp; &lt;WikiChangedPill className=<span class="ks">"ml-1.5"</span> /&gt;}
+        &lt;/p&gt;
+        &lt;p className=<span class="ks">"font-sans text-[11px] text-ink-muted mt-1 leading-relaxed"</span>&gt;
+          {explanation}
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}
+
+<span class="kg">// src/components/wiki/WikiMistakeList.tsx</span>
+<span class="kb">import</span> { WikiMistakeCard } <span class="kb">from</span> <span class="ks">'./WikiMistakeCard'</span>
+
+<span class="kb">export function</span> <span class="kc">WikiMistakeList</span>({ mistakes }: { mistakes: WikiMistakeProps[] }) {
+  <span class="kb">return</span> (
+    &lt;section className=<span class="ks">"mt-12"</span>&gt;
+      &lt;div className=<span class="ks">"mb-5"</span>&gt;
+        &lt;p className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary mb-1"</span>&gt;
+          Before exam day
+        &lt;/p&gt;
+        &lt;h2 className=<span class="ks">"font-sans font-bold text-xl text-ink"</span>&gt;
+          Common Mistakes — {mistakes.length} ways students lose marks
+        &lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div className=<span class="ks">"flex flex-col gap-2"</span>&gt;
+        {mistakes.map((m) =&gt; &lt;<span class="kc">WikiMistakeCard</span> key={m.number} {...m} /&gt;)}
+      &lt;/div&gt;
+    &lt;/section&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.6 WikiTable -->
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">WikiTable.tsx</span>
+        <span class="card-sub">src/components/wiki/WikiTable.tsx · highest visual impact — replaces plain markdown tables</span>
+      </div>
+      <span class="badge b-p2">P2 — highest visual impact</span>
+    </div>
+    <div class="card-body">
+      <div class="preview">
+        <div class="preview-label">Table rendered with cobalt values, gold most-tested row, section headers</div>
+        <div class="preview-inner" style="padding:0">
+          <table class="mock-table">
+            <thead><tr><th>Parameter</th><th>Value (2024 IRR)</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr class="row-section"><td colspan="3">Corridors</td></tr>
+              <tr class="row-most"><td>Single wheelchair + ambulant <span class="mock-pill">⟳ 2024</span></td><td class="val">1,500 mm minimum</td><td class="src">C.5.1</td></tr>
+              <tr><td>Two wheelchairs simultaneous</td><td class="val">1,800 mm minimum</td><td class="src">C.5.2</td></tr>
+              <tr><td>Turnabout dimensions <span class="mock-pill">⟳ 2024</span></td><td class="val">1,800 × 1,800 mm</td><td class="src">C.5.2</td></tr>
+              <tr><td>Max spacing between turnabouts</td><td class="val">12,000 mm (12 m)</td><td class="src">C.5.2</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="note" style="margin-top:10px">The current article uses plain markdown tables. The <code>WikiTable</code> component is optional — the article will still render correctly with markdown tables. However, markdown tables cannot display cobalt values, gold highlighted rows, or section header rows. Implement <code>WikiTable</code> as Phase 2 after all other components are working. To convert a table: replace the markdown pipe table with a <code>&lt;WikiTable&gt;</code> shortcode in the article content.</div>
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/WikiTable.tsx — full implementation</span>
+<span class="kb">import</span> { WikiChangedPill } <span class="kb">from</span> <span class="ks">'./WikiChangedPill'</span>
+<span class="kb">import</span> { cn } <span class="kb">from</span> <span class="ks">'@/lib/utils'</span>
+
+<span class="kb">interface</span> <span class="kc">WikiTableRow</span> {
+  parameter: string
+  dimension?: string
+  value: string
+  source?: string
+  isMostTested?: boolean
+  isChanged?: boolean
+  isSectionHeader?: boolean
+}
+
+<span class="kb">interface</span> <span class="kc">WikiTableProps</span> {
+  caption?: string
+  columns: string[]
+  rows: WikiTableRow[]
+  hasSourceColumn?: boolean
+}
+
+<span class="kb">export function</span> <span class="kc">WikiTable</span>({ caption, columns, rows, hasSourceColumn = <span class="kb">true</span> }: WikiTableProps) {
+  <span class="kb">return</span> (
+    &lt;div className=<span class="ks">"my-6 rounded-lg border border-border overflow-hidden"</span>&gt;
+      {caption &amp;&amp; (
+        &lt;p className=<span class="ks">"font-sans text-xs font-semibold text-ink px-3 py-2.5 border-b border-border bg-warm-white"</span>&gt;
+          {caption}
+        &lt;/p&gt;
+      )}
+      &lt;div className=<span class="ks">"overflow-x-auto"</span>&gt;
+        &lt;table className=<span class="ks">"w-full border-collapse"</span>&gt;
+          &lt;thead&gt;
+            &lt;tr className=<span class="ks">"bg-[#FAFAF8]"</span>&gt;
+              {columns.map((col, i) =&gt; (
+                &lt;th key={i} className={cn(
+                  <span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest text-ink-muted px-2.5 py-2 text-left border-b border-border"</span>,
+                  i === columns.length - 1 &amp;&amp; hasSourceColumn &amp;&amp; <span class="ks">"hidden sm:table-cell"</span>
+                )}&gt;{col}&lt;/th&gt;
+              ))}
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            {rows.map((row, i) =&gt; {
+              <span class="kb">if</span> (row.isSectionHeader) <span class="kb">return</span> (
+                &lt;tr key={i} className=<span class="ks">"bg-[#1B3FC414]"</span>&gt;
+                  &lt;td colSpan={columns.length}
+                      className=<span class="ks">"font-mono text-[9px] font-medium uppercase tracking-widest text-primary px-2.5 py-1.5"</span>&gt;
+                    {row.parameter}
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              )
+              <span class="kb">return</span> (
+                &lt;tr key={i} className={cn(
+                  <span class="ks">"border-b border-[#ECEAE4] last:border-b-0"</span>,
+                  row.isMostTested &amp;&amp; <span class="ks">"bg-signal-gold-light"</span>
+                )}&gt;
+                  &lt;td className=<span class="ks">"px-2.5 py-2.5 text-sm text-ink"</span>&gt;
+                    {row.parameter}
+                    {row.isChanged &amp;&amp; &lt;<span class="kc">WikiChangedPill</span> className=<span class="ks">"ml-1.5"</span> /&gt;}
+                  &lt;/td&gt;
+                  {row.dimension &amp;&amp; (
+                    &lt;td className=<span class="ks">"px-2.5 py-2.5 text-xs text-ink-muted"</span>&gt;{row.dimension}&lt;/td&gt;
+                  )}
+                  &lt;td className={cn(
+                    <span class="ks">"px-2.5 py-2.5 text-sm font-semibold"</span>,
+                    row.isMostTested ? <span class="ks">"text-amber-800"</span> : <span class="ks">"text-primary"</span>
+                  )}&gt;{row.value}&lt;/td&gt;
+                  {hasSourceColumn &amp;&amp; (
+                    &lt;td className=<span class="ks">"px-2.5 py-2.5 font-mono text-[10px] text-ink-muted hidden sm:table-cell"</span>&gt;
+                      {row.source}
+                    &lt;/td&gt;
+                  )}
+                &lt;/tr&gt;
+              )
+            })}
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 06 — MDX RENDERER + PAGE ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">06</span><span class="ch-title">MDX Renderer — Wiring Components to the Page</span></div>
+  <div class="ch-desc">How the wiki article page fetches from Supabase and renders the MDX content with the component map. This is the glue layer that connects the database to the UI.</div>
+
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">wiki/[slug]/page.tsx — complete implementation</span>
+        <span class="card-sub">app/(wiki)/wiki/[slug]/page.tsx</span>
+      </div>
+      <span class="badge b-p1">P1 · Critical path</span>
+    </div>
+    <div class="card-body">
+      <div class="code">
+<pre><span class="kg">// app/(wiki)/wiki/[slug]/page.tsx</span>
+<span class="kb">import</span> { createClient } <span class="kb">from</span> <span class="ks">'@/lib/supabase/server'</span>
+<span class="kb">import</span> { MDXRemote } <span class="kb">from</span> <span class="ks">'next-mdx-remote/rsc'</span>
+<span class="kb">import</span> { notFound } <span class="kb">from</span> <span class="ks">'next/navigation'</span>
+<span class="kb">import</span> {
+  WikiArticleHeader,
+  WikiCalloutBox,   <span class="kg">// NOTE: WikiCalloutBox, not WikiCallout</span>
+  WikiTable,
+  WikiPartHeader,
+  WikiChangedPill,
+  WikiMistakeCard,
+  WikiMistakeList,
+} <span class="kb">from</span> <span class="ks">'@/components/wiki'</span>
+
+<span class="kg">// MDX component map — names must exactly match shortcodes in the DB content</span>
+<span class="kb">const</span> components = {
+  WikiCalloutBox,   <span class="kg">// matches &lt;WikiCalloutBox type="..."&gt; in content</span>
+  WikiTable,        <span class="kg">// matches &lt;WikiTable ...&gt; in content (when converted)</span>
+  WikiPartHeader,   <span class="kg">// matches &lt;WikiPartHeader partNumber={N} ...&gt; in content</span>
+  WikiChangedPill,  <span class="kg">// matches &lt;WikiChangedPill /&gt; in content</span>
+  WikiMistakeCard,  <span class="kg">// matches &lt;WikiMistakeCard ...&gt; in content (if used standalone)</span>
+  WikiMistakeList,  <span class="kg">// matches &lt;WikiMistakeList mistakes={[...]} /&gt; in content</span>
+}
+
+<span class="kb">export default async function</span> <span class="kc">WikiArticlePage</span>({
+  params
+}: {
+  params: { slug: string }
+}) {
+  <span class="kb">const</span> supabase = createClient()
+
+  <span class="kb">const</span> { data: article, error } = <span class="kb">await</span> supabase
+    .from(<span class="ks">'wiki_articles'</span>)
+    .select(<span class="ks">`
+      article_id,
+      title,
+      slug,
+      content,
+      status,
+      subject_label,
+      difficulty_label,
+      ale_tests_you,
+      updated_note,
+      read_time_minutes
+    `</span>)
+    .eq(<span class="ks">'slug'</span>, params.slug)
+    .eq(<span class="ks">'status'</span>, <span class="ks">'published'</span>)
+    .single()
+
+  <span class="kb">if</span> (error || !article) notFound()
+
+  <span class="kb">return</span> (
+    &lt;article className=<span class="ks">"wiki-prose max-w-3xl mx-auto px-4 sm:px-6 py-10"</span>&gt;
+
+      &lt;<span class="kc">WikiArticleHeader</span>
+        subject={article.subject_label ?? <span class="ks">''</span>}
+        difficulty={(article.difficulty_label ?? <span class="ks">'Intermediate'</span>) <span class="kb">as any</span>}
+        readTime={article.read_time_minutes}
+        title={article.title}
+        updatedNote={article.updated_note ?? <span class="ks">''</span>}
+        aleTestsYou={article.ale_tests_you ?? <span class="ks">''</span>}
+      /&gt;
+
+      &lt;<span class="kc">MDXRemote</span>
+        source={article.content}
+        components={components}
+      /&gt;
+
+    &lt;/article&gt;
+  )
+}
+
+<span class="kg">// Generate static params for all published articles</span>
+<span class="kb">export async function</span> <span class="kc">generateStaticParams</span>() {
+  <span class="kb">const</span> supabase = createClient()
+  <span class="kb">const</span> { data } = <span class="kb">await</span> supabase
+    .from(<span class="ks">'wiki_articles'</span>)
+    .select(<span class="ks">'slug'</span>)
+    .eq(<span class="ks">'status'</span>, <span class="ks">'published'</span>)
+
+  <span class="kb">return</span> (data ?? []).map((a) =&gt; ({ slug: a.slug }))
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">src/components/wiki/index.ts — re-exports</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="code">
+<pre><span class="kg">// src/components/wiki/index.ts</span>
+<span class="kb">export</span> { WikiArticleHeader } <span class="kb">from</span> <span class="ks">'./WikiArticleHeader'</span>
+<span class="kb">export</span> { WikiCalloutBox } <span class="kb">from</span> <span class="ks">'./WikiCalloutBox'</span>
+<span class="kb">export</span> { WikiTable } <span class="kb">from</span> <span class="ks">'./WikiTable'</span>
+<span class="kb">export</span> { WikiPartHeader } <span class="kb">from</span> <span class="ks">'./WikiPartHeader'</span>
+<span class="kb">export</span> { WikiChangedPill } <span class="kb">from</span> <span class="ks">'./WikiChangedPill'</span>
+<span class="kb">export</span> { WikiMistakeCard } <span class="kb">from</span> <span class="ks">'./WikiMistakeCard'</span>
+<span class="kb">export</span> { WikiMistakeList } <span class="kb">from</span> <span class="ks">'./WikiMistakeList'</span></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h">
+      <div class="card-hl">
+        <span class="card-name">globals.css — wiki-prose class</span>
+        <span class="card-sub">Prose typography rules for the article body</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="code">
+<pre><span class="kg">/* globals.css — add these wiki prose styles */</span>
+<span class="kc">.wiki-prose</span> {
+  <span class="km">@apply</span> font-sans text-[15px] leading-7 text-ink;
+}
+<span class="kc">.wiki-prose p</span>          { <span class="km">@apply</span> mb-5; }
+<span class="kc">.wiki-prose p:last-child</span>{ <span class="km">@apply</span> mb-0; }
+<span class="kc">.wiki-prose strong</span>     { <span class="km">@apply</span> font-semibold text-ink; }
+<span class="kc">.wiki-prose em</span>         { <span class="km">@apply</span> italic text-ink; }
+<span class="kc">.wiki-prose code</span>       { <span class="km">@apply</span> font-mono text-[12px] bg-cream text-primary px-1 py-px rounded-[3px]; }
+<span class="kc">.wiki-prose h2</span>         { <span class="km">@apply</span> font-sans font-bold text-xl text-ink mt-12 mb-5; }
+<span class="kc">.wiki-prose h3</span>         { <span class="km">@apply</span> font-sans font-semibold text-base text-ink mt-8 mb-3; }
+<span class="kc">.wiki-prose hr</span>         { <span class="km">@apply</span> border-border my-8; }
+<span class="kc">.wiki-prose ul</span>         { <span class="km">@apply</span> list-disc pl-5 mb-5 space-y-1.5; }
+<span class="kc">.wiki-prose ol</span>         { <span class="km">@apply</span> list-decimal pl-5 mb-5 space-y-1.5; }
+<span class="kc">.wiki-prose li</span>         { <span class="km">@apply</span> text-sm text-ink-2 leading-relaxed; }
+<span class="kc">.wiki-prose table</span>      { <span class="km">@apply</span> w-full border-collapse my-6 text-sm; }
+<span class="kc">.wiki-prose th</span>         { <span class="km">@apply</span> font-mono text-[9px] uppercase tracking-widest text-ink-muted px-2.5 py-2 text-left border-b border-border bg-[#FAFAF8]; }
+<span class="kc">.wiki-prose td</span>         { <span class="km">@apply</span> px-2.5 py-2.5 border-b border-[#ECEAE4] text-ink; }
+<span class="kc">.wiki-prose tr:last-child td</span> { <span class="km">@apply</span> border-b-0; }
+<span class="kc">.wiki-prose blockquote</span> { <span class="km">@apply</span> border-l-4 border-border pl-4 text-ink-muted italic my-5; }</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CHAPTER 07 — BUILD SEQUENCE ══ -->
+<div class="ch">
+  <div class="ch-head"><span class="ch-num">07</span><span class="ch-title">Build Sequence — Exact Steps for Claude Code</span></div>
+
+  <table class="seq">
+    <tbody>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 1</span></td>
+        <td>
+          <div class="seq-title">Run the schema migration</div>
+          <div class="seq-desc">Execute the SQL from Chapter 03 via Supabase MCP: add <code>read_time_minutes SMALLINT</code> to <code>wiki_articles</code>, then set it to <code>18</code> for article <code>b2415e1d</code>. Verify with a SELECT before proceeding.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 2</span></td>
+        <td>
+          <div class="seq-title">Add Tailwind tokens (if not already present)</div>
+          <div class="seq-desc">Verify <code>tailwind.config.ts</code> has: <code>cobalt-light: '#EEF3FD'</code>, <code>signal-gold-light: '#FFF8E6'</code>, <code>signal-red-light: '#FFF0EF'</code>, <code>signal-gold: '#F5A623'</code>, <code>signal-red: '#E63329'</code>, <code>ink-muted: '#737370'</code>, <code>cream: '#F2F0EB'</code>, <code>warm-white: '#F8F7F5'</code>, <code>border: '#E0DED8'</code>, font <code>display: ['Syne']</code>.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 3</span></td>
+        <td>
+          <div class="seq-title">Add wiki-prose styles to globals.css</div>
+          <div class="seq-desc">Paste the <code>.wiki-prose</code> CSS block from Chapter 06. This handles all plain markdown elements (paragraphs, tables, lists, hr, blockquote) that the MDX renderer will produce from the article content.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 4</span></td>
+        <td>
+          <div class="seq-title">Build WikiChangedPill.tsx</div>
+          <div class="seq-desc">Smallest component. Build and test first — verifies Tailwind tokens are working. If the gold pill renders correctly, the token setup is good.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 5</span></td>
+        <td>
+          <div class="seq-title">Build WikiCalloutBox.tsx</div>
+          <div class="seq-desc">All three types (version-alert, most-tested, ale-watch) in one component. Test all three render correctly with the correct border colors. Verify dark mode for all three.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 6</span></td>
+        <td>
+          <div class="seq-title">Build WikiPartHeader.tsx</div>
+          <div class="seq-desc">Simple — eyebrow + H2 + optional subtitle. Uses the Tailwind tokens from Step 2.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 7</span></td>
+        <td>
+          <div class="seq-title">Build WikiArticleHeader.tsx</div>
+          <div class="seq-desc">The full header with tag row (subject/difficulty/readTime pills), Syne H1 title, updated note, and ALE orientation banner. Handle <code>readTime === null</code> — hides the tag pill gracefully.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 8</span></td>
+        <td>
+          <div class="seq-title">Create src/components/wiki/index.ts</div>
+          <div class="seq-desc">Re-export all components built so far.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p1">Step 9</span></td>
+        <td>
+          <div class="seq-title">Build the wiki/[slug]/page.tsx</div>
+          <div class="seq-desc">Wire the Supabase query, the WikiArticleHeader, and the MDX renderer with the component map. Test by navigating to <code>/wiki/ale-dsgn-002-02-doors-corridors-washrooms</code>. At this point: the header, all callout boxes, all part headers, the changed pill, and the mistake list should all render correctly from the existing DB content.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p2">Step 10</span></td>
+        <td>
+          <div class="seq-title">Build WikiMistakeCard.tsx + WikiMistakeList.tsx</div>
+          <div class="seq-desc">The mistake list is already in the article content as a <code>&lt;WikiMistakeList mistakes={[...]}&gt;</code> shortcode with all 10 mistakes inline as props. Build both components. The data doesn't need to be fetched separately — it's embedded in the MDX.</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="seq-num-col"><span class="badge b-p2">Step 11</span></td>
+        <td>
+          <div class="seq-title">Build WikiTable.tsx</div>
+          <div class="seq-desc">The table component. This is optional for initial launch — the article will render with plain styled markdown tables from the <code>.wiki-prose table</code> CSS. <code>WikiTable</code> upgrades them to cobalt values and gold rows. When ready, convert the article's markdown tables to <code>&lt;WikiTable&gt;</code> shortcodes.</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="insight" style="margin-top:24px">
+    <div class="insight-label">What you get after Step 9</div>
+    <div class="insight-text">The article at <code>/wiki/ale-dsgn-002-02-doors-corridors-washrooms</code> will render with: ✓ full branded header (subject badge, difficulty badge, read time badge, Syne title, updated note, ALE banner) · ✓ version-alert callout at the top · ✓ 6 part headers with eyebrows and subtitles · ✓ most-tested and ale-watch callouts throughout · ✓ inline ⟳ 2024 gold pills on changed values · ✓ full 10-item mistake list with strikethrough-wrong / cobalt-correct format · ✓ all prose with correct typography. The only thing not styled at Step 9 is the tables — they'll be readable but plain until WikiTable is added in Step 11.</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

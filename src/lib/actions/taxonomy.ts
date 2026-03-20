@@ -11,6 +11,14 @@ export interface TaxonomyNode {
   subject_area: string
   is_leaf: boolean
   slug?: string
+  sort_order?: number | null
+  // Taxonomy v5.0 fields (from DB, used by wiki hero)
+  ale_id?: string | null
+  description?: string | null
+  exam_frequency?: string | null
+  bloom_level?: string | null
+  difficulty?: number | null
+  prc_area?: string | null
   children?: TaxonomyNode[]
   articles?: { article_id: string, slug: string, title: string }[]
   mastery?: number // 0.0 to 1.0
@@ -32,6 +40,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
     .is('deprecated_at', null)
     .not('ale_id', 'is', null)
     .order('level', { ascending: true })
+    .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
 
   if (error || !nodes) {
@@ -56,8 +65,11 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
     })
   }
 
-  // 3. Fetch articles — only for leaf nodes, chunked to avoid PostgREST URL limits
-  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id)
+  // 3. Fetch articles — for leaf nodes (no children in set), chunked to avoid PostgREST URL limits
+  const parentNodeIds = new Set(nodes.map((n: any) => n.parent_id).filter(Boolean))
+  const leafNodeIds = nodes
+    .filter((n: any) => n.level === 2 || !parentNodeIds.has(n.node_id))
+    .map((n: any) => n.node_id)
 
   const articleMap = new Map<string, any[]>()
 

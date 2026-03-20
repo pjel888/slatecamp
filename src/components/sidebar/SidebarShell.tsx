@@ -20,8 +20,8 @@ import type { UserTier } from '@/types/app'
 // SidebarShell
 // ---------------------------------------------------------------------------
 // Client wrapper composing SidebarRail + SidebarOverlay + leave-session dialog.
-// Renders as a React fragment (<>...</>) so the SidebarRail participates
-// directly in the parent flex layout without nesting.
+// Rail: always-visible 72px icon bar in the flex flow.
+// Overlay: position:fixed expanded panel that slides over content (Supabase pattern).
 // ---------------------------------------------------------------------------
 
 interface SidebarShellProps {
@@ -43,7 +43,7 @@ export const SidebarShell = ({
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false)
   const [leaveTarget, setLeaveTarget] = useState<string>(ROUTES.DASHBOARD)
 
-  // -- Leave-session guard (preserves old Sidebar.tsx behavior) --------------
+  // -- Leave-session guard --
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
@@ -73,7 +73,7 @@ export const SidebarShell = ({
         isDevMode={isDevMode}
       />
 
-      {/* Overlay -- position:fixed, outside flex flow */}
+      {/* Overlay -- position:fixed, slides over content */}
       <SidebarOverlay
         isAdmin={isAdmin}
         onBeforeNavigate={handleNavClick}
@@ -82,7 +82,7 @@ export const SidebarShell = ({
         isDevMode={isDevMode}
       />
 
-      {/* Leave Session Dialog (preserved from old Sidebar.tsx lines 424-455) */}
+      {/* Leave Session Dialog */}
       {mode && (
         <Dialog open={leaveDialogOpen} onOpenChange={setLeaveDialogOpen}>
           <DialogContent

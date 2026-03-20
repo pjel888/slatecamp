@@ -3,7 +3,8 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
-import { ShieldCheck } from '@phosphor-icons/react'
+import { ShieldCheck, Sparkle, Lightning, Crown } from '@phosphor-icons/react'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useSidebar } from './SidebarProvider'
 import { SidebarPanel } from './SidebarPanel'
 import { SidebarHeader } from './SidebarHeader'
@@ -11,16 +12,32 @@ import { SidebarUserProfile } from './SidebarUserProfile'
 import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarNavGroup } from './SidebarNavGroup'
 import { SidebarFooter } from './SidebarFooter'
+import { TierBadge } from '@/components/shared/TierBadge'
+import { Button } from '@/components/ui/button'
+import { ICON_BOX } from './types'
 import { GROUPED_NAVIGATION } from '@/lib/routes'
 import { ROUTES } from '@/lib/constants/routes'
+import Link from 'next/link'
 import type { UserTier } from '@/types/app'
 
 // ---------------------------------------------------------------------------
-// SidebarOverlay
+// Tier icon helper
 // ---------------------------------------------------------------------------
-// AnimatePresence wrapper rendering a backdrop scrim + expanded panel as
-// siblings. Focus management moves focus into the panel on open and back
-// to the rail toggle button on close.
+
+const getTierIcon = (tier: UserTier) => {
+  if (tier === 'free') return Sparkle
+  if (tier === 'camp' || tier === 'insurance') return Lightning
+  return Crown
+}
+
+const getTierIconColor = (tier: UserTier) => {
+  if (tier === 'free') return 'text-[#D4951A]'
+  if (tier === 'camp' || tier === 'insurance') return 'text-primary'
+  return 'text-[#D4951A]'
+}
+
+// ---------------------------------------------------------------------------
+// SidebarOverlay
 // ---------------------------------------------------------------------------
 
 interface SidebarOverlayProps {
@@ -38,10 +55,9 @@ export const SidebarOverlay = ({
   tier = 'free',
   isDevMode,
 }: SidebarOverlayProps) => {
-  const { expanded, setExpanded, toggleRef } = useSidebar()
+  const { collapsed, setCollapsed, toggleRef } = useSidebar()
   const prefersReducedMotion = useReducedMotion()
 
-  // -- Transitions (VIS-04: duration 0 when reduced motion) ----------------
   const backdropTransition = prefersReducedMotion
     ? { duration: 0 }
     : { duration: 0.15 }
@@ -50,11 +66,8 @@ export const SidebarOverlay = ({
     ? { duration: 0 }
     : { duration: 0.2, ease: 'easeOut' as const }
 
-  // -- Focus management (A11-01, A11-02) -----------------------------------
-  // On expand, move focus to first focusable element inside the panel.
   useEffect(() => {
-    if (!expanded) return
-
+    if (collapsed) return
     const timer = setTimeout(() => {
       const panel = document.querySelector<HTMLElement>(
         '[role="dialog"][aria-label="Navigation sidebar"]',
@@ -64,25 +77,23 @@ export const SidebarOverlay = ({
       )
       firstFocusable?.focus()
     }, 50)
-
     return () => clearTimeout(timer)
-  }, [expanded])
+  }, [collapsed])
 
-  // -- Backdrop click handler (OVR-04) -------------------------------------
-  // Uses onMouseDown (not onClick) to avoid drag-release edge cases.
-  // Focus returns to rail toggle via requestAnimationFrame.
   const handleBackdropClick = () => {
-    setExpanded(false)
+    setCollapsed(true)
     requestAnimationFrame(() => {
       toggleRef.current?.focus()
     })
   }
 
+  const TierIcon = getTierIcon(tier)
+
   return (
     <AnimatePresence>
-      {expanded && (
+      {!collapsed && (
         <>
-          {/* Backdrop -- SIBLING to panel, NOT parent (prevents click bubbling) */}
+          {/* Backdrop */}
           <motion.div
             key="sidebar-backdrop"
             initial={{ opacity: 0 }}
@@ -97,30 +108,70 @@ export const SidebarOverlay = ({
           {/* Panel */}
           <motion.aside
             key="sidebar-panel"
-            initial={
-              prefersReducedMotion
-                ? { opacity: 0 }
-                : { x: -20, opacity: 0 }
-            }
-            animate={
-              prefersReducedMotion
-                ? { opacity: 1 }
-                : { x: 0, opacity: 1 }
-            }
-            exit={
-              prefersReducedMotion
-                ? { opacity: 0 }
-                : { x: -20, opacity: 0 }
-            }
+            initial={prefersReducedMotion ? { opacity: 0 } : { x: -260 }}
+            animate={prefersReducedMotion ? { opacity: 1 } : { x: 0 }}
+            exit={prefersReducedMotion ? { opacity: 0 } : { x: -260 }}
             transition={panelTransition}
             className="fixed inset-y-0 left-0 z-[40] w-[260px] bg-white border-r border-border shadow-md"
             role="dialog"
             aria-label="Navigation sidebar"
           >
             <SidebarPanel
-              header={<SidebarHeader onBeforeNavigate={onBeforeNavigate} />}
-              nav={<OverlayNav isAdmin={isAdmin} onBeforeNavigate={onBeforeNavigate} userDisplay={userDisplay} tier={tier} isDevMode={isDevMode} />}
-              footer={<SidebarFooter variant="expanded" isAdmin={isAdmin} onBeforeNavigate={onBeforeNavigate} />}
+              header={
+                <>
+                  <SidebarHeader onBeforeNavigate={onBeforeNavigate} />
+
+                  {/* Profile — no divider */}
+                  {userDisplay && (
+                    <div className="px-3">
+                      <SidebarUserProfile
+                        name={userDisplay.name}
+                        avatarUrl={userDisplay.avatarUrl}
+                        collapsed={false}
+                      />
+                    </div>
+                  )}
+
+                  {/* Tier & Plan — no divider */}
+                  <div className="py-2 px-3">
+                    <div className="flex items-center justify-start gap-2.5 px-2 py-[5px] rounded-sm">
+                      <div className={ICON_BOX}>
+                        <SCIcon icon={TierIcon} size="sm" className={getTierIconColor(tier)} />
+                      </div>
+                      <div className="flex min-w-0 flex-1 items-center justify-between">
+                        <TierBadge tier={tier} devMode={isDevMode} size="sm" />
+                        {tier === 'free' && (
+                          <Link
+                            href={ROUTES.SETTINGS_BILLING}
+                            onClick={(e) => onBeforeNavigate(e, ROUTES.SETTINGS_BILLING)}
+                          >
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="h-6 px-2 text-xs font-medium border-border text-[#4A5568] hover:bg-primary hover:text-white hover:border-primary transition-colors"
+                            >
+                              Upgrade
+                            </Button>
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </>
+              }
+              nav={
+                <OverlayNavItems
+                  isAdmin={isAdmin}
+                  onBeforeNavigate={onBeforeNavigate}
+                />
+              }
+              footer={
+                <SidebarFooter
+                  collapsed={false}
+                  isAdmin={isAdmin}
+                  onBeforeNavigate={onBeforeNavigate}
+                />
+              }
             />
           </motion.aside>
         </>
@@ -130,46 +181,29 @@ export const SidebarOverlay = ({
 }
 
 // ---------------------------------------------------------------------------
-// OverlayNav -- composed nav content for the expanded panel
+// OverlayNavItems -- ONLY nav links (profile + tier are in header slot)
 // ---------------------------------------------------------------------------
 
-interface OverlayNavProps {
+interface OverlayNavItemsProps {
   isAdmin?: boolean
   onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void
-  userDisplay?: { name: string; avatarUrl: string | null }
-  tier?: UserTier
-  isDevMode?: boolean
 }
 
-const OverlayNav = ({
+const OverlayNavItems = ({
   isAdmin,
   onBeforeNavigate,
-  userDisplay,
-  tier = 'free',
-  isDevMode,
-}: OverlayNavProps) => {
+}: OverlayNavItemsProps) => {
   const pathname = usePathname()
 
   return (
     <>
-      {/* User profile (expanded: avatar + name + tier badge) */}
-      {userDisplay && (
-        <SidebarUserProfile
-          name={userDisplay.name}
-          avatarUrl={userDisplay.avatarUrl}
-          tier={tier}
-          isDevMode={isDevMode}
-          variant="expanded"
-        />
-      )}
-
       {/* Dashboard standalone */}
       <SidebarNavItem
         href={GROUPED_NAVIGATION.dashboard.href}
         label={GROUPED_NAVIGATION.dashboard.label}
         icon={GROUPED_NAVIGATION.dashboard.icon}
         isActive={pathname === GROUPED_NAVIGATION.dashboard.href}
-        variant="expanded"
+        collapsed={false}
         onBeforeNavigate={(e) => onBeforeNavigate(e, GROUPED_NAVIGATION.dashboard.href)}
       />
 
@@ -179,7 +213,7 @@ const OverlayNav = ({
           key={config.key}
           label={config.label}
           items={items}
-          variant="expanded"
+          collapsed={false}
           onBeforeNavigate={onBeforeNavigate}
         />
       ))}
@@ -192,7 +226,7 @@ const OverlayNav = ({
             label="Dev Settings"
             icon={ShieldCheck}
             isActive={pathname === ROUTES.SETTINGS_DEVELOPER}
-            variant="expanded"
+            collapsed={false}
             onBeforeNavigate={(e) => onBeforeNavigate(e, ROUTES.SETTINGS_DEVELOPER)}
           />
         </div>

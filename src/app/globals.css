@@ -94,6 +94,18 @@
   --color-ink:         #18181B;
   --color-border-design: #E8E4DC;
 
+  /* Wiki article design tokens */
+  --color-cobalt-light: #EEF3FD;
+  --color-signal-gold: #F5A623;
+  --color-signal-gold-light: #FFF8E6;
+  --color-signal-red: #E63329;
+  --color-signal-red-light: #FFF0EF;
+  --color-signal-green: #1B7A3C;
+  --color-cream: #F2F0EB;
+  --color-warm-white: #F8F7F5;
+  --color-wiki-ink: #1A1A1A;
+  --color-ink-muted: #737370;
+
   /* Camp Standard — Dashboard card colors */
   --color-card-article:        #eca83b;
   --color-card-article-border: #d4922e;
@@ -624,3 +636,50 @@ a[data-pending] {
   animation: highlight-pulse 3s ease-out forwards;
   border-radius: 4px;
 }
+
+/* ─── Wiki Article Prose ─── */
+.wiki-prose {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  line-height: 1.75rem;
+  color: #1A1A1A;
+}
+.wiki-prose p { margin-bottom: 1.25rem; }
+.wiki-prose p:last-child { margin-bottom: 0; }
+.wiki-prose strong { font-weight: 600; color: #1A1A1A; }
+.wiki-prose em { font-style: italic; color: #1A1A1A; }
+.wiki-prose code {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  background: #F2F0EB;
+  color: #1B3FC4;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.wiki-prose h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1A1A1A;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.wiki-prose h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1A1A1A;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Wiki prose dark mode */
+.dark .wiki-prose { color: #E2E0D8; }
+.dark .wiki-prose strong { color: #E2E0D8; }
+.dark .wiki-prose em { color: #E2E0D8; }
+.dark .wiki-prose code {
+  background: rgba(242, 240, 235, 0.1);
+  color: #7BA7F5;
+}
+.dark .wiki-prose h2,
+.dark .wiki-prose h3 { color: #E2E0D8; }

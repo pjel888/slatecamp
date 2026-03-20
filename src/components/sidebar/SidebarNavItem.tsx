@@ -19,7 +19,7 @@ export const SidebarNavItem = ({
   label,
   icon: Icon,
   isActive,
-  variant,
+  collapsed,
   onBeforeNavigate,
 }: SidebarNavItemProps) => {
   const stateClasses = isActive
@@ -48,7 +48,7 @@ export const SidebarNavItem = ({
         ) : null}
       </div>
 
-      {variant === 'rail' ? (
+      {collapsed ? (
         <span className="sr-only">{label}</span>
       ) : (
         <span className="truncate whitespace-nowrap">{label}</span>
@@ -56,7 +56,7 @@ export const SidebarNavItem = ({
     </TransitionLink>
   )
 
-  if (variant === 'rail') {
+  if (collapsed) {
     return (
       <Tooltip>
         <TooltipTrigger asChild>{link}</TooltipTrigger>

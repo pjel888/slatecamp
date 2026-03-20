@@ -25,15 +25,15 @@ export const SIDEBAR_WIDTH_EXPANDED = 260
 export const ICON_BOX = 'flex h-8 w-8 shrink-0 items-center justify-center'
 export const ICON_SIZE = 'h-[18px] w-[18px]'
 
-export const STORAGE_KEY = 'slatecamp_sidebar_expanded'
+export const STORAGE_KEY = 'slatecamp_sidebar_collapsed'
 
 // ---------------------------------------------------------------------------
 // SidebarProvider Context Value
 // ---------------------------------------------------------------------------
 
 export interface SidebarContextValue {
-  expanded: boolean
-  setExpanded: (v: boolean) => void
+  collapsed: boolean
+  setCollapsed: (v: boolean) => void
   toggle: () => void
   contentRef: React.RefObject<HTMLDivElement | null>
   toggleRef: React.RefObject<HTMLButtonElement | null>
@@ -48,7 +48,7 @@ export interface SidebarNavItemProps {
   label: string
   icon?: PhosphorIcon
   isActive: boolean
-  variant: 'rail' | 'expanded'
+  collapsed: boolean
   onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>) => void
 }
 
@@ -59,9 +59,7 @@ export interface SidebarNavItemProps {
 export interface SidebarUserProfileProps {
   name: string
   avatarUrl: string | null
-  tier: UserTier
-  isDevMode?: boolean
-  variant: 'rail' | 'expanded'
+  collapsed: boolean
 }
 
 // ---------------------------------------------------------------------------
@@ -69,5 +67,5 @@ export interface SidebarUserProfileProps {
 // ---------------------------------------------------------------------------
 
 export interface SidebarUpgradeCTAProps {
-  variant: 'rail' | 'expanded'
+  collapsed: boolean
 }

@@ -148,7 +148,7 @@ export const WikiSidebar = ({
     const children = sourceNodes.filter((n) => n.parent_id === node.node_id)
     const nodeArticles = node.articles || []
     const hasChildren = children.length > 0
-    const isCategory = node.level === 1 || hasChildren
+    const isCategory = node.level <= 2 || hasChildren || nodeArticles.length > 0
 
     // When searching, skip non-matching children
     const filteredChildren = isSearching
@@ -197,7 +197,11 @@ export const WikiSidebar = ({
                 isActive ? 'text-[#1535A8]' : isDimmed ? 'text-zinc-400' : 'text-zinc-700',
               )}
             >
-              <span className="truncate">{node.name}</span>
+              <span className="truncate">
+                {node.level === 2 && node.sort_order != null
+                  ? `${String(node.sort_order).padStart(2, '0')} — ${node.name}`
+                  : node.name}
+              </span>
             </Link>
           </div>
         ) : (

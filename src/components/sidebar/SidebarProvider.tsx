@@ -39,14 +39,14 @@ interface SidebarProviderProps {
 }
 
 export const SidebarProvider = ({ children }: SidebarProviderProps) => {
-  // ---- State ----
-  const [expanded, setExpandedState] = useState(false)
+  // collapsed=true means overlay is closed (rail only visible)
+  const [collapsed, setCollapsedState] = useState(true)
   const contentRef = useRef<HTMLDivElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
   const pathname = usePathname()
 
   // ---- Persistence helpers ----
-  const persistExpanded = useCallback((value: boolean) => {
+  const persistCollapsed = useCallback((value: boolean) => {
     try {
       window.localStorage.setItem(STORAGE_KEY, String(value))
     } catch {
@@ -54,47 +54,47 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
     }
   }, [])
 
-  const setExpanded = useCallback(
+  const setCollapsed = useCallback(
     (v: boolean) => {
-      setExpandedState(v)
-      persistExpanded(v)
+      setCollapsedState(v)
+      persistCollapsed(v)
     },
-    [persistExpanded],
+    [persistCollapsed],
   )
 
   const toggle = useCallback(() => {
-    setExpandedState((prev) => {
+    setCollapsedState((prev) => {
       const next = !prev
-      persistExpanded(next)
+      persistCollapsed(next)
       return next
     })
-  }, [persistExpanded])
+  }, [persistCollapsed])
 
   // ---- Hydrate from localStorage on mount ----
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY)
-      if (stored === 'true') {
-        setExpandedState(true)
+      if (stored === 'false') {
+        setCollapsedState(false)
       }
     } catch {
       // localStorage unavailable
     }
   }, [])
 
-  // ---- Auto-collapse on route change (OVR-06) ----
+  // ---- Auto-collapse overlay on route change ----
   useEffect(() => {
-    setExpandedState(false)
+    setCollapsedState(true)
   }, [pathname])
 
-  // ---- Escape key handler (OVR-05) ----
+  // ---- Escape key closes overlay ----
   useEffect(() => {
-    if (!expanded) return
+    if (collapsed) return
 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        setExpandedState(false)
-        persistExpanded(false)
+        setCollapsedState(true)
+        persistCollapsed(true)
         requestAnimationFrame(() => {
           toggleRef.current?.focus()
         })
@@ -103,24 +103,24 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
 
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [expanded, persistExpanded])
+  }, [collapsed, persistCollapsed])
 
-  // ---- Inert management on main content (A11-04) ----
+  // ---- Inert management on main content when overlay is open ----
   useEffect(() => {
     const el = contentRef.current
     if (!el) return
 
-    if (expanded) {
+    if (!collapsed) {
       el.setAttribute('inert', '')
     } else {
       el.removeAttribute('inert')
     }
-  }, [expanded])
+  }, [collapsed])
 
   // ---- Render ----
   return (
     <SidebarContext.Provider
-      value={{ expanded, setExpanded, toggle, contentRef, toggleRef }}
+      value={{ collapsed, setCollapsed, toggle, contentRef, toggleRef }}
     >
       {children}
     </SidebarContext.Provider>

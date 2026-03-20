@@ -1,5 +1,6 @@
 'use server'
 
+// wiki-actions: taxonomy tree + article data for wiki sidebar
 import { createClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
@@ -106,6 +107,7 @@ export async function getTaxonomyTree(
     .is("deprecated_at", null)
     .not("ale_id", "is", null)
     .order("level", { ascending: true })
+    .order("sort_order", { ascending: true, nullsFirst: false })
     .order("name", { ascending: true });
 
   if (error) {
@@ -117,10 +119,14 @@ export async function getTaxonomyTree(
     return []
   }
 
-  // Fetch wiki articles mapped to leaf nodes only (level 3).
-  // Articles are only rendered on leaf nodes in the sidebar, and using all 433+
-  // node IDs in .in() exceeds PostgREST's ~8KB URL limit, silently returning empty.
-  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id);
+  // Fetch wiki articles for nodes that may have them:
+  // - All actual leaf nodes (no children in this set) — covers level-3 subtopics
+  // - All level-2 nodes — some (e.g., "Subject Overview & Strategy") have articles
+  //   linked directly without level-3 children
+  const parentNodeIds = new Set(nodes.map((n: any) => n.parent_id).filter(Boolean));
+  const leafNodeIds = nodes
+    .filter((n: any) => n.level === 2 || !parentNodeIds.has(n.node_id))
+    .map((n: any) => n.node_id);
 
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>();
 
@@ -187,6 +193,7 @@ export const getLawsTaxonomyTree = async (
     .is('deprecated_at', null)
     .not('ale_id', 'is', null)
     .order('level', { ascending: true })
+    .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
 
   if (error) {
@@ -196,7 +203,10 @@ export const getLawsTaxonomyTree = async (
 
   if (!nodes || nodes.length === 0) return []
 
-  const leafNodeIds = nodes.filter((n: any) => n.level === 3).map((n: any) => n.node_id)
+  const parentNodeIds = new Set(nodes.map((n: any) => n.parent_id).filter(Boolean))
+  const leafNodeIds = nodes
+    .filter((n: any) => n.level === 2 || !parentNodeIds.has(n.node_id))
+    .map((n: any) => n.node_id)
 
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>()
 

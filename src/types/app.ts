@@ -30,6 +30,13 @@ export interface TaxonomyNode {
   is_leaf: boolean;
   created_at: string;
   updated_at: string;
+  // Taxonomy v5.0 fields (from DB, used by wiki hero)
+  ale_id?: string | null;
+  description?: string | null;
+  exam_frequency?: string | null;
+  bloom_level?: string | null;
+  difficulty?: number | null;
+  prc_area?: string | null;
   children?: TaxonomyNode[];
   /** Joined from user_node_mastery — present when fetched with mastery data */
   mastery?: number;
@@ -80,6 +87,11 @@ export interface WikiArticle {
   content: string;
   created_at: string;
   updated_at: string;
+  // Wiki hero metadata (spec v1)
+  ale_tests_you?: string | null;
+  updated_note?: string | null;
+  subject_label?: string | null;
+  difficulty_label?: 'Foundational' | 'Intermediate' | 'Advanced' | null;
 }
 
 export interface UserSubscription {

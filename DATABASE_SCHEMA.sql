@@ -204,7 +204,12 @@ CREATE TABLE public.wiki_articles (
   status            TEXT DEFAULT 'draft',
   reviewed_by       UUID,
   reviewed_at       TIMESTAMPTZ,
-  reviewer_comments TEXT
+  reviewer_comments TEXT,
+  -- Wiki hero metadata (spec v1)
+  ale_tests_you     TEXT,
+  updated_note      TEXT,
+  subject_label     TEXT,
+  difficulty_label  TEXT CHECK (difficulty_label IN ('Foundational', 'Intermediate', 'Advanced'))
 );
 
 -- ── wiki_article_taxonomy ────────────────────────────────────

@@ -9,14 +9,11 @@ import { SidebarUpgradeCTA } from './SidebarUpgradeCTA'
 // ---------------------------------------------------------------------------
 // SidebarFooter
 // ---------------------------------------------------------------------------
-// Simplified per user decision:
-// - NO ThemeToggle (belongs in Settings page)
-// - NO DropdownMenu / popover
-// - Just CTA (free users only) + Settings link
+// No border — parent adds dividers for consistent inset lines.
 // ---------------------------------------------------------------------------
 
 interface SidebarFooterProps {
-  variant: 'rail' | 'expanded'
+  collapsed: boolean
   isAdmin?: boolean
   onBeforeNavigate: (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -25,7 +22,7 @@ interface SidebarFooterProps {
 }
 
 export const SidebarFooter = ({
-  variant,
+  collapsed,
   onBeforeNavigate,
 }: SidebarFooterProps) => {
   const pathname = usePathname()
@@ -34,14 +31,14 @@ export const SidebarFooter = ({
     pathname === ROUTES.SETTINGS || pathname.startsWith(ROUTES.SETTINGS)
 
   return (
-    <div className="border-t border-border px-3 py-2">
-      <SidebarUpgradeCTA variant={variant} />
+    <div className="px-3 py-2">
+      <SidebarUpgradeCTA collapsed={collapsed} />
       <SidebarNavItem
         href={ROUTES.SETTINGS}
         label="Settings"
         icon={Gear}
         isActive={isSettingsActive}
-        variant={variant}
+        collapsed={collapsed}
         onBeforeNavigate={(e) => onBeforeNavigate(e, ROUTES.SETTINGS)}
       />
     </div>

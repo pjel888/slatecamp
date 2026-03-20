@@ -7,24 +7,23 @@ import { SidebarNavItem } from './SidebarNavItem'
 interface SidebarNavGroupProps {
   label: string
   items: Array<{ href: string; label: string; icon?: PhosphorIcon }>
-  variant: 'rail' | 'expanded'
+  collapsed: boolean
   onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void
 }
 
 export const SidebarNavGroup = ({
   label,
   items,
-  variant,
+  collapsed,
   onBeforeNavigate,
 }: SidebarNavGroupProps) => {
   const pathname = usePathname()
 
   return (
     <div>
-      {/* Group header -- h-8 spacer in both states to preserve icon alignment.
-          Expanded: shows label. Rail: empty gap separates icon clusters. */}
+      {/* Group header — spacing only, no divider lines */}
       <div className="h-8 flex items-end px-2 pb-1">
-        {variant === 'expanded' && (
+        {!collapsed && (
           <span className="text-[11px] font-medium uppercase tracking-wider text-[#8896A7]">
             {label}
           </span>
@@ -44,7 +43,7 @@ export const SidebarNavGroup = ({
               label={itemLabel}
               icon={icon}
               isActive={isActive}
-              variant={variant}
+              collapsed={collapsed}
               onBeforeNavigate={(e) => onBeforeNavigate(e, href)}
             />
           )

@@ -1,17 +1,12 @@
 'use client'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { TierBadge } from '@/components/shared/TierBadge'
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from '@/components/ui/tooltip'
 import { ICON_BOX, type SidebarUserProfileProps } from './types'
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
 
 const getInitials = (name: string, email?: string): string => {
   if (name?.trim()) {
@@ -27,13 +22,13 @@ const getInitials = (name: string, email?: string): string => {
 // ---------------------------------------------------------------------------
 // SidebarUserProfile
 // ---------------------------------------------------------------------------
+// No border — parent adds dividers for consistent inset lines.
+// ---------------------------------------------------------------------------
 
 export const SidebarUserProfile = ({
   name,
   avatarUrl,
-  tier,
-  isDevMode,
-  variant,
+  collapsed,
 }: SidebarUserProfileProps) => {
   const initials = getInitials(name)
 
@@ -48,10 +43,9 @@ export const SidebarUserProfile = ({
     </div>
   )
 
-  // Rail variant: avatar only with tooltip
-  if (variant === 'rail') {
+  if (collapsed) {
     return (
-      <div className="border-b border-border py-2">
+      <div className="py-2">
         <Tooltip>
           <TooltipTrigger asChild>
             <div className="flex items-center justify-start gap-2.5 px-2 py-[5px] rounded-sm">
@@ -70,16 +64,14 @@ export const SidebarUserProfile = ({
     )
   }
 
-  // Expanded variant: avatar + name + tier badge
   return (
-    <div className="border-b border-border py-2">
+    <div className="py-2">
       <div className="flex items-center gap-2.5 px-2 py-[5px] rounded-sm">
         {avatar}
         <div className="min-w-0 flex-1">
           <p className="truncate text-[13px] font-medium text-[#1A2332]">
             {name}
           </p>
-          <TierBadge tier={tier} devMode={isDevMode} size="sm" />
         </div>
       </div>
     </div>

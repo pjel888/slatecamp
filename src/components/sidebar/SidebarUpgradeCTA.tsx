@@ -28,13 +28,13 @@ const CTA_BENEFITS = [
 // ---------------------------------------------------------------------------
 {/* FRM-02: This slot can be replaced with partner/ad content for paid users */}
 
-export const SidebarUpgradeCTA = ({ variant }: SidebarUpgradeCTAProps) => {
+export const SidebarUpgradeCTA = ({ collapsed }: SidebarUpgradeCTAProps) => {
   const { effectiveTier } = useTier()
   const showCTA = effectiveTier === 'free'
   if (!showCTA) return null
 
-  // Rail variant: sparkle icon with tooltip
-  if (variant === 'rail') {
+  // Collapsed: sparkle icon with tooltip
+  if (collapsed) {
     return (
       <div className="flex items-center justify-center py-1">
         <Tooltip>
@@ -62,7 +62,7 @@ export const SidebarUpgradeCTA = ({ variant }: SidebarUpgradeCTAProps) => {
     )
   }
 
-  // Expanded variant: feature teaser card
+  // Expanded: feature teaser card
   return (
     <div className="rounded-md border border-border bg-[#F8F7F5] p-3 mb-2">
       <p className="text-[11px] font-semibold text-[#1A2332] mb-1.5">
