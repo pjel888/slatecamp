@@ -1,103 +1,15 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import { getMasteryLevel } from '@/lib/constants/mastery'
-import type {
-  DashboardPageData,
-  RecommendedAction,
-  FocusAreaItem,
-  MasteryLabel,
-  ActivityFeedItem,
-  InProgressSession,
-  HeroMicroStat,
-  WeekStat,
-  DailyWikiArticle,
-  NotePreview,
-  SubjectMastery,
-  SubjectFloorAlert,
-  TopicRing,
-} from '@/types/dashboard'
-
-// ── Short labels for radar chart axes ─────────────────────────────────────────
-
-const SHORT_LABELS: Record<string, string> = {
-  'Architectural Design and Site Planning': 'Arch Design',
-  'Architectural Practice': 'Practice',
-  'Building Materials and Construction': 'Materials',
-  'Building Utilities': 'Utilities',
-  'History of Architecture': 'History',
-  'Structural Design': 'Structural',
-  'Theory and Principles of Planning': 'Planning',
-  'Theory of Architecture': 'Theory',
-}
-
-function shortLabel(subject: string): string {
-  return SHORT_LABELS[subject] ?? subject.split(' ').slice(0, 2).join(' ')
-}
-
-// ── Helpers ─────────────────────────────────────────────────────────────────
-
-const getMasteryLabel = (weight: number): MasteryLabel => getMasteryLevel(weight) as MasteryLabel
-
-const MODE_NAMES: Record<string, string> = {
-  camp: 'Camp Mode',
-  storm: 'Storm Mode',
-  chill: 'Chill Mode',
-  timed: 'Timed Quiz',
-  practice: 'Practice Quiz',
-  custom: 'Custom Quiz',
-  blindspot: 'Focus Review',
-  proof_sim: 'Full Exam Simulation',
-  endurance: 'Extended Practice',
-}
-
-const MODE_BADGES: Record<string, string> = {
-  camp: 'CAMP',
-  storm: 'STORM',
-  timed: 'TIMED',
-  practice: 'PRACTICE',
-  chill: 'CHILL',
-  custom: 'CUSTOM',
-  blindspot: 'FOCUS',
-}
-
-const MODE_TOOLTIPS: Record<string, string> = {
-  camp: 'Camp Mode gives you instant feedback after each question — ideal for learning and review.',
-  storm: 'Storm Mode simulates real exam conditions — no feedback until you finish.',
-  timed: 'Timed Quiz adds a countdown — practice working under pressure.',
-  practice: 'Practice Quiz lets you study at your own pace with full explanations.',
-  chill: 'Chill Mode removes all pressure — study relaxed, no timer, full feedback.',
-}
-
-function formatModeName(mode: string): string {
-  return MODE_NAMES[mode] ?? 'Quiz'
-}
-
-function formatRelativeTime(iso: string): string {
-  const diff = Date.now() - new Date(iso).getTime()
-  const hours = diff / (1000 * 60 * 60)
-  if (hours < 1) return 'Just now'
-  if (hours < 24) return `${Math.floor(hours)}h ago`
-  const days = Math.floor(hours / 24)
-  if (days === 1) return 'Yesterday'
-  if (days < 7) return `${days} days ago`
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}
-
-function getWeekBoundary(weeksAgo: number): { start: string; end: string } {
-  const now = new Date()
-  const dayOfWeek = now.getDay() // 0=Sun
-  const startOfThisWeek = new Date(now)
-  startOfThisWeek.setDate(now.getDate() - dayOfWeek - (weeksAgo * 7))
-  startOfThisWeek.setHours(0, 0, 0, 0)
-  const endOfWeek = new Date(startOfThisWeek)
-  endOfWeek.setDate(startOfThisWeek.getDate() + 7)
-  return { start: startOfThisWeek.toISOString(), end: endOfWeek.toISOString() }
-}
+import type { DashboardPageData } from '@/types/dashboard'
+import { MODE_TOOLTIPS, getWeekBoundary } from './dashboard-helpers'
+import { buildSubjectMastery, buildSubjectFloorAlerts, buildFocusAreas, buildSyllabusCoverage } from './mastery-actions'
+import { buildInProgressSession, buildRecentSessions, buildAction } from './session-actions'
+import { computeWeekCounts, buildHeroStats, buildWeekStats, buildStreakData, buildSrsReview, buildDailyArticle, buildRecentNotes, buildReadinessMeta } from './stats-actions'
 
 // ── Main fetcher ────────────────────────────────────────────────────────────
 
-export async function getDashboardPageData(): Promise<DashboardPageData> {
+export const getDashboardPageData = async (): Promise<DashboardPageData> => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
 
@@ -328,44 +240,7 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     }
   }
 
-  // ── Streak data (Sprint 2) ──────────────────────────────────────────────
-
-  const lastStudyDate = globalStatsResult.data?.last_study_date ?? null
-  const globalCurrentStreak = globalStatsResult.data?.global_current_streak ?? 0
-  const globalLongestStreak = globalStatsResult.data?.global_longest_streak ?? 0
-
-  const today = new Date().toISOString().split('T')[0]
-  const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().split('T')[0]
-
-  const streakStatus = (() => {
-    if (lastStudyDate === today) return 'active' as const
-    if (lastStudyDate === yesterday) return 'at_risk' as const
-    return 'broken' as const
-  })()
-
-  // ── SRS review data (Sprint 2) ────────────────────────────────────────
-
-  const now = new Date().toISOString()
-  const { data: srsItems } = await supabase
-    .from('user_node_mastery')
-    .select('topic_id, taxonomy_tree(subject_area)')
-    .eq('user_id', user.id)
-    .lte('next_review_at', now)
-    .gt('total_attempts', 0)
-
-  const srsSubjects = new Set<string>()
-  for (const item of (srsItems ?? [])) {
-    const sa = (item.taxonomy_tree as any)?.subject_area
-    if (sa) srsSubjects.add(sa)
-  }
-
-  const srsReview = {
-    itemsDue: srsItems?.length ?? 0,
-    subjects: Array.from(srsSubjects),
-    estimatedMinutes: Math.max(5, Math.round((srsItems?.length ?? 0) * 1.5)),
-  }
-
-  // ── Extract ─────────────────────────────────────────────────────────────
+  // ── Extract globals ───────────────────────────────────────────────────────
 
   const globalStats = globalStatsResult.data
   const disciplineId = globalStats?.current_discipline_id
@@ -384,329 +259,37 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
   }
 
-  // ── This week vs last week stats ────────────────────────────────────────
+  // ── Delegate to domain modules ────────────────────────────────────────────
 
-  const thisWeekRows = (thisWeekInteractionsResult.data ?? []) as Array<{ interaction_id: string; topic_id: string | null; interaction_timestamp: string }>
-  const lastWeekRows = (lastWeekInteractionsResult.data ?? []) as Array<{ interaction_id: string; topic_id: string | null; interaction_timestamp: string }>
+  const thisWeekCounts = computeWeekCounts(
+    (thisWeekInteractionsResult.data ?? []) as Array<{ interaction_id: string; topic_id: string | null; interaction_timestamp: string }>
+  )
+  const lastWeekCounts = computeWeekCounts(
+    (lastWeekInteractionsResult.data ?? []) as Array<{ interaction_id: string; topic_id: string | null; interaction_timestamp: string }>
+  )
 
-  const thisWeekQuestions = thisWeekRows.length
-  const lastWeekQuestions = lastWeekRows.length
-  const thisWeekTopics = new Set(thisWeekRows.filter(r => r.topic_id).map(r => r.topic_id)).size
-  const lastWeekTopics = new Set(lastWeekRows.filter(r => r.topic_id).map(r => r.topic_id)).size
-  const thisWeekDays = new Set(thisWeekRows.map(r => r.interaction_timestamp.split('T')[0])).size
-  const lastWeekDays = new Set(lastWeekRows.map(r => r.interaction_timestamp.split('T')[0])).size
-
-  // ── Hero micro-stats ────────────────────────────────────────────────────
-
-  const heroStats: HeroMicroStat[] = [
-    {
-      value: thisWeekQuestions,
-      label: 'Questions answered',
-      description: '',
-      delta: lastWeekQuestions > 0 ? thisWeekQuestions - lastWeekQuestions : null,
-      tooltip: 'Total questions you\'ve answered in quiz sessions this week',
-    },
-    {
-      value: thisWeekTopics,
-      label: 'Topics studied',
-      description: '',
-      delta: lastWeekTopics > 0 ? thisWeekTopics - lastWeekTopics : null,
-      tooltip: 'Number of distinct ALE topics you\'ve studied this week',
-    },
-    {
-      value: thisWeekDays,
-      label: 'Study days',
-      description: '',
-      delta: lastWeekDays > 0 ? thisWeekDays - lastWeekDays : null,
-      tooltip: 'Days this week where you completed at least one session',
-    },
-  ]
-
-  // ── Week at a glance ────────────────────────────────────────────────────
-
-  const weekStats: WeekStat[] = [
-    {
-      value: thisWeekQuestions,
-      label: 'Questions Answered',
-      subLabel: 'this week',
-      delta: lastWeekQuestions > 0 ? thisWeekQuestions - lastWeekQuestions : null,
-      tooltip: 'Total questions you\'ve answered in quiz sessions this week',
-    },
-    {
-      value: thisWeekTopics,
-      label: 'Topics Touched',
-      subLabel: 'this week',
-      delta: lastWeekTopics > 0 ? thisWeekTopics - lastWeekTopics : null,
-      tooltip: 'Number of distinct ALE topics you\'ve studied this week',
-    },
-    {
-      value: thisWeekDays,
-      label: 'Study Days',
-      subLabel: 'this week',
-      delta: lastWeekDays > 0 ? thisWeekDays - lastWeekDays : null,
-      tooltip: 'Days this week where you completed at least one session',
-    },
-  ]
-
-  // ── Syllabus coverage ───────────────────────────────────────────────────
-
-  let totalLeaves = 0
-  if (disciplineId) {
-    const { count } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id', { count: 'exact', head: true })
-      .eq('discipline_id', disciplineId)
-      .eq('is_leaf', true)
-      .eq('is_cross_ref_only', false)
-      .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
-    totalLeaves = count ?? 0
-  }
-
-  const masteryEntries = (masteryCountResult.data ?? []) as Array<{ current_mastery_weight: number }>
-  const topicsWithAnyProgress = masteryEntries.filter(m => m.current_mastery_weight > 0).length
-  const syllabusCoveragePercent = totalLeaves > 0 ? Math.round((topicsWithAnyProgress / totalLeaves) * 100) : 0
-
-  // ── In-progress session ─────────────────────────────────────────────────
-
-  const ipRaw = inProgressResult.data
-  const inProgressSession: InProgressSession | null = ipRaw
-    ? {
-        sessionId: ipRaw.session_id,
-        testMode: ipRaw.test_mode,
-        currentIndex: ipRaw.current_question_index ?? 0,
-        totalQuestions: ipRaw.question_ids?.length ?? 0,
-        startedAt: ipRaw.started_at,
-        updatedAt: ipRaw.updated_at,
-      }
-    : null
-
-  // ── Subject mastery (radial heatmap + progress bars) ────────────────────
-
-  const taxonomyRows = (subjectAreasResult.data ?? []) as Array<{
-    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string
-  }>
-  const masteryRows = (subjectMasteryResult.data ?? []) as Array<{
-    topic_id: string; current_mastery_weight: number; total_attempts: number
-  }>
-
-  // Build mastery lookup: topic_id → { weight, attempts }
-  const masteryMap = new Map<string, { weight: number; attempts: number }>()
-  for (const m of masteryRows) {
-    masteryMap.set(m.topic_id, { weight: m.current_mastery_weight, attempts: m.total_attempts })
-  }
-
-  // Group taxonomy: level 1 = subjects, level 2 = topics (rings), level 3 = leaves
-  const level1 = taxonomyRows.filter(n => n.level === 1).sort((a, b) => a.name.localeCompare(b.name))
-  const level2 = taxonomyRows.filter(n => n.level === 2)
-  const level3 = taxonomyRows.filter(n => n.level === 3)
-
-  // Map level 3 leaves to their level 2 parent for mastery aggregation
-  const leavesByParent = new Map<string, typeof level3>()
-  for (const leaf of level3) {
-    const existing = leavesByParent.get(leaf.parent_id!) ?? []
-    existing.push(leaf)
-    leavesByParent.set(leaf.parent_id!, existing)
-  }
-
-  const subjectMastery: SubjectMastery[] = level1.map(subject => {
-    const topics = level2.filter(t => t.parent_id === subject.node_id)
-
-    const topicRings: TopicRing[] = topics.map(topic => {
-      const leaves = leavesByParent.get(topic.node_id) ?? []
-      let totalWeight = 0, totalAttempts = 0, count = 0
-      for (const leaf of leaves) {
-        const m = masteryMap.get(leaf.node_id)
-        if (m) {
-          totalWeight += m.weight
-          totalAttempts += m.attempts
-          count++
-        }
-      }
-      return {
-        topicName: topic.name,
-        mastery: count > 0 ? Math.round((totalWeight / count) * 100) : 0,
-        questionsAnswered: totalAttempts,
-      }
-    })
-
-    const allAttempts = topicRings.reduce((sum, t) => sum + t.questionsAnswered, 0)
-    const answeredTopics = topicRings.filter(t => t.questionsAnswered > 0)
-    const avgMastery = answeredTopics.length > 0
-      ? Math.round(answeredTopics.reduce((sum, t) => sum + t.mastery, 0) / answeredTopics.length)
-      : 0
-
-    return {
-      subject: subject.name,
-      shortLabel: shortLabel(subject.name),
-      mastery: avgMastery,
-      questionsAnswered: allAttempts,
-      topics: topicRings,
-    }
-  })
-
-  // ── Subject floor alerts (Task 0.3) ───────────────────────────────────
-  // ALE requires minimum 50% per subject. Alert when any subject is below.
-  const SUBJECT_FLOOR_PCT = 50 // from disciplines.subject_floor_pct default
-  const subjectFloorAlerts: SubjectFloorAlert[] = subjectMastery
-    .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
-    .map(s => ({
-      subject: s.subject,
-      mastery: s.mastery,
-      floorPct: SUBJECT_FLOOR_PCT,
-      gap: SUBJECT_FLOOR_PCT - s.mastery,
-    }))
-    .sort((a, b) => b.gap - a.gap)
-
-  // ── Focus areas ─────────────────────────────────────────────────────────
-
-  const focusRaw = (focusTopicsResult.data ?? []) as Array<{
-    topic_id: string
-    current_mastery_weight: number
-    last_encountered: string
-    taxonomy_tree: { name: string; subject_area: string } | null
-  }>
-
-  const focusAreas: FocusAreaItem[] = focusRaw
-    .filter(r => r.current_mastery_weight < 0.76)
-    .slice(0, 4)
-    .map(row => ({
-      topicId: row.topic_id,
-      topicName: row.taxonomy_tree?.name ?? 'Unknown Topic',
-      masteryWeight: row.current_mastery_weight,
-      masteryLabel: getMasteryLabel(row.current_mastery_weight),
-    }))
-
-  // ── Recent sessions with subject lookup ─────────────────────────────────
-
-  const recentRaw = (recentSessionsResult.data ?? []) as Array<{
-    session_id: string
-    test_mode: string
-    status: string
-    question_ids: string[]
-    subject_ids: string[]
-    completed_at: string | null
-    updated_at: string
-  }>
-
-  // Get subject names for session subject_ids
-  const allSubjectIds = [...new Set(recentRaw.flatMap(r => r.subject_ids ?? []))]
-  let subjectNameMap = new Map<string, string>()
-  if (allSubjectIds.length > 0) {
-    const { data: subjects } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, name')
-      .in('node_id', allSubjectIds)
-    if (subjects) {
-      subjectNameMap = new Map(subjects.map((s: { node_id: string; name: string }) => [s.node_id, s.name]))
-    }
-  }
-
-  // Get scores for recent sessions from user_interactions
-  const sessionIds = recentRaw.map(r => r.session_id)
-  let sessionScoreMap = new Map<string, number>()
-  if (sessionIds.length > 0) {
-    const { data: interactions } = await supabase
-      .from('user_interactions')
-      .select('session_id, is_correct')
-      .in('session_id', sessionIds)
-
-    if (interactions) {
-      const grouped = new Map<string, { correct: number; total: number }>()
-      for (const i of interactions as Array<{ session_id: string; is_correct: boolean }>) {
-        const g = grouped.get(i.session_id) ?? { correct: 0, total: 0 }
-        g.total++
-        if (i.is_correct) g.correct++
-        grouped.set(i.session_id, g)
-      }
-      for (const [sid, g] of grouped) {
-        sessionScoreMap.set(sid, g.total > 0 ? Math.round((g.correct / g.total) * 100) : 0)
-      }
-    }
-  }
-
-  const recentSessions: ActivityFeedItem[] = recentRaw.map(row => {
-    const mode = row.test_mode
-    const firstSubjectId = row.subject_ids?.[0]
-    return {
-      sessionId: row.session_id,
-      testMode: formatModeName(mode),
-      modeBadge: MODE_BADGES[mode] ?? 'QUIZ',
-      modeTooltip: MODE_TOOLTIPS[mode] ?? '',
-      subjectName: firstSubjectId ? (subjectNameMap.get(firstSubjectId) ?? null) : null,
-      scorePercent: sessionScoreMap.get(row.session_id) ?? null,
-      questionCount: row.question_ids?.length ?? 0,
-      status: row.status as 'completed' | 'abandoned',
-      updatedAt: row.updated_at,
-    }
-  })
-
-  // ── Action priority ─────────────────────────────────────────────────────
-
+  const heroStats = buildHeroStats(thisWeekCounts, lastWeekCounts)
+  const weekStats = buildWeekStats(thisWeekCounts, lastWeekCounts)
+  const streak = buildStreakData(globalStats)
+  const readinessMeta = buildReadinessMeta(globalStats)
+  const dailyArticle = buildDailyArticle(wikiArticlesResult.data)
+  const recentNotes = buildRecentNotes(notesResult.data)
+  const inProgressSession = buildInProgressSession(inProgressResult.data)
+  const focusAreas = buildFocusAreas(focusTopicsResult.data)
+  const subjectMastery = buildSubjectMastery(subjectAreasResult.data, subjectMasteryResult.data)
+  const subjectFloorAlerts = buildSubjectFloorAlerts(subjectMastery)
   const action = buildAction(inProgressSession, focusAreas)
 
-  // ── Daily wiki article (deterministic rotation by day of year) ──────────
-
-  let dailyArticle: DailyWikiArticle | null = null
-  const wikiArticles = (wikiArticlesResult.data ?? []) as Array<{ article_id: string; title: string; slug: string; content: string }>
-  if (wikiArticles.length > 0) {
-    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (24 * 60 * 60 * 1000))
-    const idx = dayOfYear % wikiArticles.length
-    const article = wikiArticles[idx]
-    // Extract first ~150 chars as excerpt (strip markdown)
-    const plainText = article.content
-      .replace(/#{1,6}\s+/g, '')
-      .replace(/\*\*/g, '')
-      .replace(/\*/g, '')
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-      .replace(/\n+/g, ' ')
-      .trim()
-    dailyArticle = {
-      articleId: article.article_id,
-      title: article.title,
-      slug: article.slug,
-      excerpt: plainText.length > 150 ? plainText.slice(0, 147) + '...' : plainText,
-    }
-  }
-
-  // ── Recent notes ────────────────────────────────────────────────────────
-
-  const notesRaw = (notesResult.data ?? []) as Array<{ note_id: string; title: string; content: unknown; updated_at: string }>
-  const recentNotes: NotePreview[] = notesRaw.map(n => {
-    // Extract snippet from Tiptap JSONB content
-    let snippet = ''
-    if (Array.isArray(n.content)) {
-      const textNodes = n.content
-        .filter((block: any) => block.type === 'paragraph' && block.content)
-        .flatMap((block: any) => block.content)
-        .filter((node: any) => node.type === 'text')
-        .map((node: any) => node.text)
-      snippet = textNodes.join(' ').slice(0, 80)
-    }
-    return {
-      noteId: n.note_id,
-      title: n.title || 'Untitled Note',
-      snippet: snippet || 'No preview available',
-      updatedAt: n.updated_at,
-    }
-  })
+  const [syllabusCoveragePercent, recentSessions, srsReview] = await Promise.all([
+    buildSyllabusCoverage(supabase, disciplineId, masteryCountResult.data),
+    buildRecentSessions(supabase, recentSessionsResult.data),
+    buildSrsReview(supabase, user.id),
+  ])
 
   // ── 3D Lab module count ─────────────────────────────────────────────────
-  // Models_3d table has 0 rows in production, but we count anyway
   const { count: labCount } = await supabase
     .from('models_3d')
     .select('model_id', { count: 'exact', head: true })
-
-  // ── Readiness score anti-inflation metadata ────────────────────────────
-  const subScores = (globalStats as any)?.readiness_sub_scores ?? {}
-  const readinessMeta = subScores._meta
-    ? {
-        ceilingActive: subScores._meta.ceilingActive as boolean | undefined,
-        ceilingValue: subScores._meta.ceilingValue as number | null | undefined,
-        ceilingReason: subScores._meta.ceilingReason as string | null | undefined,
-        greyPenalty: subScores._meta.greyPenalty as number | undefined,
-      }
-    : null
 
   return {
     userName: firstName,
@@ -731,63 +314,14 @@ export async function getDashboardPageData(): Promise<DashboardPageData> {
     scoreUpdatesSinceReveal,
     isFreeUser,
     activeTrailDay,
-    streak: {
-      currentStreak: globalCurrentStreak,
-      longestStreak: globalLongestStreak,
-      streakStatus,
-    },
+    streak,
     srsReview,
-  }
-}
-
-// ── Action builder ──────────────────────────────────────────────────────────
-
-function buildAction(
-  inProgress: InProgressSession | null,
-  focusAreas: FocusAreaItem[],
-): RecommendedAction {
-  if (inProgress) {
-    const remaining = inProgress.totalQuestions - inProgress.currentIndex
-    const mode = inProgress.testMode
-    return {
-      type: 'resume',
-      title: `Continue ${formatModeName(mode)}`,
-      subtitle: `Question ${inProgress.currentIndex + 1} of ${inProgress.totalQuestions} — pick up where you left off`,
-      ctaLabel: 'Continue',
-      href: `/dashboard/testing?session=${inProgress.sessionId}`,
-      estimatedMinutes: Math.max(1, Math.ceil(remaining * 1.2)),
-      modeTooltip: MODE_TOOLTIPS[mode] ?? '',
-      progress: { current: inProgress.currentIndex + 1, total: inProgress.totalQuestions },
-    }
-  }
-
-  if (focusAreas.length > 0) {
-    const weakest = focusAreas[0]
-    return {
-      type: 'blindspot',
-      title: `Practice: ${weakest.topicName}`,
-      subtitle: `This topic needs attention — 10 focused questions to strengthen your understanding`,
-      ctaLabel: 'Start session',
-      href: '/dashboard/testing?mode=camp',
-      estimatedMinutes: 8,
-      modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
-    }
-  }
-
-  return {
-    type: 'warmup',
-    title: 'Start a Camp session',
-    subtitle: '10 questions across your core subjects — about 8 minutes',
-    ctaLabel: 'Begin',
-    href: '/dashboard/testing?mode=camp',
-    estimatedMinutes: 8,
-    modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
   }
 }
 
 // ── Empty dashboard ─────────────────────────────────────────────────────────
 
-function emptyDashboard(userName: string): DashboardPageData {
+const emptyDashboard = (userName: string): DashboardPageData => {
   return {
     userName,
     readinessScore: 0,
