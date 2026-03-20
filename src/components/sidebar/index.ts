@@ -1,5 +1,8 @@
 // Sidebar module barrel export
 export { SidebarProvider, useSidebar } from './SidebarProvider'
+export { SidebarNavItem } from './SidebarNavItem'
+export { SidebarNavGroup } from './SidebarNavGroup'
+export { SidebarRail } from './SidebarRail'
 export {
   Z_INDEX,
   SIDEBAR_WIDTH_COLLAPSED,
