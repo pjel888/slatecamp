@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Route Foundation** - Rename Testing to Review, add CampTrails route stub and nav link ✓ 2026-03-20
 - [x] **Phase 2: Grouped Navigation** - Organize nav items into labeled LEARN, PRACTICE, DATA sections with Dashboard standalone ✓ 2026-03-20
-- [ ] **Phase 3: Complete Sidebar** - Overlay expand, user profile, account popover, freemium CTA, visual polish, accessibility
+- [ ] **Phase 3: Complete Sidebar** - Overlay expand, user profile, freemium CTA, visual polish, accessibility
 
 ## Phase Details
 
@@ -47,26 +47,30 @@ Plans:
 - [x] 02-02-PLAN.md -- Replace flat sidebar rendering with grouped sections, pin Settings to bottom, visual checkpoint
 
 ### Phase 3: Complete Sidebar
-**Goal**: The sidebar is a fully professional, overlay-based navigation system with user profile, account popover, freemium CTA, Supabase-level density, and full accessibility
+**Goal**: The sidebar is a fully professional, overlay-based navigation system with user profile, Settings page link, freemium CTA, Supabase-level density, and full accessibility
 **Depends on**: Phase 2
 **Requirements**: OVR-01, OVR-02, OVR-03, OVR-04, OVR-05, OVR-06, OVR-07, ACC-01, ACC-02, ACC-03, ACC-04, FRM-01, FRM-02, VIS-01, VIS-02, VIS-03, VIS-04, VIS-05, VIS-06, A11-01, A11-02, A11-03, A11-04, A11-05
 **Success Criteria** (what must be TRUE):
   1. Collapsed sidebar is a polished 72px icon rail in document flow
-  2. Expanded sidebar opens as a fixed-position overlay — zero layout shift in main content
+  2. Expanded sidebar opens as a fixed-position overlay -- zero layout shift in main content
   3. Subtle backdrop scrim behind overlay, click-outside/Escape/route-change to dismiss
   4. User avatar + name + tier badge displayed at top of sidebar
-  5. Bottom account popover with settings, theme toggle, logout (DropdownMenu)
-  6. Freemium CTA card above account popover (free users only), future ad slot ready
+  5. Bottom area: Settings page link (NO popover, NO ThemeToggle)
+  6. Freemium CTA card above Settings link (free users only), future ad slot ready
   7. Professional density: 13px nav labels, 11px group headers, tight spacing matching Supabase
   8. All transitions max 300ms, respects prefers-reduced-motion
   9. Tooltips on collapsed rail icons
   10. Z-index scale for rail, overlay, backdrop, tooltips, dialogs
   11. Focus trap in overlay, focus return on collapse, aria-expanded, inert on main content
   12. Full keyboard navigation within sidebar
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md -- SidebarProvider context, shared types, z-index scale (foundation)
+- [ ] 03-02-PLAN.md -- SidebarNavItem, SidebarNavGroup, SidebarRail (72px icon rail)
+- [ ] 03-03-PLAN.md -- SidebarOverlay with AnimatePresence, SidebarPanel, SidebarHeader
+- [ ] 03-04-PLAN.md -- SidebarUserProfile, SidebarUpgradeCTA, SidebarFooter
+- [ ] 03-05-PLAN.md -- Layout wiring, SidebarShell, ThemeToggle migration to Settings page
 
 ## Progress
 
@@ -77,4 +81,4 @@ Phases execute in numeric order: 1 -> 2 -> 3
 |-------|----------------|--------|-----------|
 | 1. Route Foundation | 1/1 | Complete | 2026-03-20 |
 | 2. Grouped Navigation | 2/2 | Complete | 2026-03-20 |
-| 3. Complete Sidebar | 0/? | Not started | - |
+| 3. Complete Sidebar | 0/5 | Not started | - |
