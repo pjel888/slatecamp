@@ -20,19 +20,13 @@ import {
   QuizOverlay,
   QuizHeader,
   QuestionStem,
-  OptionButton,
-  FooterNavigator,
   TimerBar,
-  RationaleDrawer,
   ConfirmSubmitSheet,
-  AITutorDrawer,
-  ConfidenceToggle,
   QuestionMap,
   ConfidenceCheckScreen,
-  ErrorTypePrompt,
   RestudyLoop,
 } from '@/components/quiz'
-import type { OptionState, QuestionDotState } from '@/components/quiz'
+import type { QuestionDotState } from '@/components/quiz'
 import type { ConfidenceLevel } from '@/components/quiz/ConfidenceToggle'
 
 import {
@@ -42,6 +36,11 @@ import {
 } from '@/hooks/quiz/useQuizPersistence'
 import { useQuizTimer } from '@/hooks/quiz/useQuizTimer'
 import { useQuizTelemetry } from '@/hooks/quiz/useQuizTelemetry'
+
+import { QuizOptions } from './QuizOptions'
+import { QuizActionButtons } from './QuizActionButtons'
+import { QuizDrawers } from './QuizDrawers'
+import { QuizFooterNav } from './QuizFooterNav'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -232,19 +231,19 @@ export function QuizRenderer({
     [questions, currentIndex, answers, flaggedQuestions],
   )
 
-  const getOptionState = useCallback((option: Choice): OptionState => {
+  const getOptionState = useCallback((option: Choice) => {
     const isSelected = selectedAnswer === option.id
     const isCorrectOpt = option.id === correctOptionId
     const isStruck = struckOptions[currentQuestion?.question_id]?.has(option.id)
 
     if (!isChecked) {
-      if (isSelected) return 'selected'
-      if (isStruck) return 'struck'
-      return 'default'
+      if (isSelected) return 'selected' as const
+      if (isStruck) return 'struck' as const
+      return 'default' as const
     }
-    if (isCorrectOpt) return 'correct'
-    if (isSelected && !isCorrectOpt) return 'wrong'
-    return 'faded'
+    if (isCorrectOpt) return 'correct' as const
+    if (isSelected && !isCorrectOpt) return 'wrong' as const
+    return 'faded' as const
   }, [selectedAnswer, correctOptionId, struckOptions, currentQuestion?.question_id, isChecked])
 
   // ── Note context ──────────────────────────────────────────────────────────
@@ -514,167 +513,6 @@ export function QuizRenderer({
     }
   }
 
-  // ── Render helpers ────────────────────────────────────────────────────────
-
-  const renderOptions = () => (
-    <div className='space-y-2.5' role='group' aria-label='Answer options'>
-      {options.map((option, idx) => (
-        <OptionButton
-          key={option.id}
-          letter={String.fromCharCode(65 + idx)}
-          text={option.text}
-          state={getOptionState(option)}
-          isChecked={isChecked}
-          onSelect={() => handleChoiceSelect(option.id)}
-          onStrike={(e) => toggleStrikethrough(option.id, e)}
-        />
-      ))}
-    </div>
-  )
-
-  const renderActionButtons = () => (
-    <div
-      className={cn(
-        'flex items-center gap-3',
-        isChecked && !isRationaleVisible ? 'justify-between' : 'justify-between',
-      )}
-    >
-      {/* Left: confidence toggle + show rationale */}
-      <div className='flex items-center gap-3'>
-        {!isChecked && !strictMode && (
-          <ConfidenceToggle
-            value={confidence}
-            onChange={(level) => setConfidenceMap((prev) => ({ ...prev, [currentQuestion.question_id]: level }))}
-            disabled={isChecked}
-          />
-        )}
-        {isChecked && !isRationaleVisible && (
-          <button
-            onClick={() => setIsRationaleVisible(true)}
-            className='h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors'
-          >
-            Show Rationale
-          </button>
-        )}
-      </div>
-
-      {/* Right: check/next button */}
-      {mode !== 'chill' && !isChecked ? (
-        <button
-          onClick={handleCheckAnswer}
-          disabled={!selectedAnswer || isSaving}
-          className={cn(
-            'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
-            selectedAnswer && !isSaving
-              ? 'bg-primary text-white hover:bg-[#1535A8] shadow-sm'
-              : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
-          )}
-        >
-          {isSaving
-            ? 'Saving…'
-            : strictMode
-              ? 'Confirm & Next'
-              : 'Check Answer'}
-        </button>
-      ) : (
-        <div className='relative'>
-          <button
-            onClick={
-              currentIndex === questions.length - 1
-                ? () => setIsSubmitSheetOpen(true)
-                : handleNext
-            }
-            className='h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-primary text-white hover:bg-[#1535A8] shadow-sm'
-          >
-            {currentIndex === questions.length - 1
-              ? 'Finish Session'
-              : 'Next Question'}
-          </button>
-          {dwellTimeRemaining > 0 && (
-            <div
-              className='absolute -inset-1 rounded-sm pointer-events-none'
-              aria-hidden
-              title={`${dwellTimeRemaining}s — take a moment to let this sink in`}
-            >
-              <svg className='w-full h-full' viewBox='0 0 100 100' fill='none'>
-                <rect
-                  x='1' y='1' width='98' height='98' rx='3'
-                  stroke='currentColor' strokeWidth='2'
-                  className='text-primary/20'
-                  strokeDasharray='392' strokeDashoffset='0'
-                />
-              </svg>
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  )
-
-  const renderDrawers = () => (
-    <>
-      <RationaleDrawer
-        rationale={currentQuestion.rationale}
-        explanation={currentQuestion.explanation}
-        codeCitation={currentQuestion.code_citation}
-        correctAnswerText={
-          isChecked && correctOptionId
-            ? (options.find((o) => o.id === correctOptionId)?.text ?? null)
-            : null
-        }
-        modelId={currentQuestion.model_id}
-        isVisible={isRationaleVisible}
-        isCorrect={selectedAnswer === correctOptionId}
-        onClose={() => setIsRationaleVisible(false)}
-        onWikiClick={() => {
-          const isWrong = selectedAnswer !== correctOptionId
-          const base = `/dashboard/wiki?nodeId=${currentQuestion.topic_id}`
-          const params = isWrong ? `${base}&from=wrong-answer&topic=${encodeURIComponent(currentQuestion.text.slice(0, 60))}` : base
-          router.push(params)
-        }}
-        onAddNote={() => { /* note drawer — future */ }}
-        on3DLabClick={
-          currentQuestion.model_id
-            ? () => router.push(`/dashboard/3d-lab?model=${currentQuestion.model_id}`)
-            : undefined
-        }
-      />
-      {/* Error taxonomy prompt — shown after wrong answers in camp mode */}
-      {showErrorPrompt && errorPromptQuestionId === currentQuestion.question_id && isRationaleVisible && selectedAnswer !== correctOptionId && (
-        <div className="px-5 max-w-[900px] mx-auto">
-          <ErrorTypePrompt
-            onSelect={handleErrorTypeSelect}
-            onSkip={handleErrorTypeSkip}
-          />
-        </div>
-      )}
-      <AITutorDrawer
-        question={currentQuestion}
-        selectedOptionId={selectedAnswer}
-        options={options}
-        isVisible={isAIOpen}
-        onClose={() => setIsAIOpen(false)}
-      />
-    </>
-  )
-
-  const renderFooterNav = () => (
-    <FooterNavigator
-      dots={dots}
-      currentIndex={currentIndex}
-      canGoBack={currentIndex > 0}
-      canGoForward={mode === 'chill' ? true : isChecked}
-      strictMode={strictMode}
-      onPrev={handleBack}
-      onNext={
-        currentIndex === questions.length - 1
-          ? () => setIsSubmitSheetOpen(true)
-          : handleNext
-      }
-      onJump={handleJump}
-    />
-  )
-
   // ── Derive unique subject names for confidence check ─────────────────────
   const subjectNamesForConfidence = useMemo(() => {
     const unique = new Set<string>()
@@ -710,6 +548,8 @@ export function QuizRenderer({
     setShowErrorPrompt(false)
     setErrorPromptQuestionId(null)
   }
+
+  const handleOpenSubmitSheet = () => setIsSubmitSheetOpen(true)
 
   // ── Render ────────────────────────────────────────────────────────────────
 
@@ -834,9 +674,57 @@ export function QuizRenderer({
 
             {/* Mobile only: options, actions, drawers inline below stem */}
             <div className='lg:hidden space-y-6'>
-              {renderOptions()}
-              {renderActionButtons()}
-              {renderDrawers()}
+              <QuizOptions
+                options={options}
+                getOptionState={getOptionState}
+                isChecked={isChecked}
+                onSelect={handleChoiceSelect}
+                onStrike={toggleStrikethrough}
+              />
+              <QuizActionButtons
+                mode={mode}
+                strictMode={strictMode}
+                isChecked={isChecked}
+                isRationaleVisible={isRationaleVisible}
+                selectedAnswer={selectedAnswer}
+                isSaving={isSaving}
+                confidence={confidence}
+                currentIndex={currentIndex}
+                totalQuestions={questions.length}
+                dwellTimeRemaining={dwellTimeRemaining}
+                onConfidenceChange={(level) => setConfidenceMap((prev) => ({ ...prev, [currentQuestion.question_id]: level }))}
+                onShowRationale={() => setIsRationaleVisible(true)}
+                onCheckAnswer={handleCheckAnswer}
+                onNext={handleNext}
+                onFinish={handleOpenSubmitSheet}
+              />
+              <QuizDrawers
+                currentQuestion={currentQuestion}
+                options={options}
+                correctOptionId={correctOptionId}
+                selectedAnswer={selectedAnswer}
+                isChecked={isChecked}
+                isRationaleVisible={isRationaleVisible}
+                isAIOpen={isAIOpen}
+                showErrorPrompt={showErrorPrompt}
+                errorPromptQuestionId={errorPromptQuestionId}
+                onRationaleClose={() => setIsRationaleVisible(false)}
+                onWikiClick={() => {
+                  const isWrong = selectedAnswer !== correctOptionId
+                  const base = `/dashboard/wiki?nodeId=${currentQuestion.topic_id}`
+                  const params = isWrong ? `${base}&from=wrong-answer&topic=${encodeURIComponent(currentQuestion.text.slice(0, 60))}` : base
+                  router.push(params)
+                }}
+                onAddNote={() => { /* note drawer — future */ }}
+                on3DLabClick={
+                  currentQuestion.model_id
+                    ? () => router.push(`/dashboard/3d-lab?model=${currentQuestion.model_id}`)
+                    : undefined
+                }
+                onErrorTypeSelect={handleErrorTypeSelect}
+                onErrorTypeSkip={handleErrorTypeSkip}
+                onAIClose={() => setIsAIOpen(false)}
+              />
             </div>
           </div>
         </div>
@@ -844,16 +732,90 @@ export function QuizRenderer({
         {/* ─── RIGHT COLUMN: Stationary options + drawers + nav (desktop) ─── */}
         <div className='hidden lg:flex flex-col'>
           <div className='flex-1 overflow-y-auto px-6 pt-6 pb-3 space-y-6'>
-            {renderOptions()}
-            {renderActionButtons()}
-            {renderDrawers()}
+            <QuizOptions
+              options={options}
+              getOptionState={getOptionState}
+              isChecked={isChecked}
+              onSelect={handleChoiceSelect}
+              onStrike={toggleStrikethrough}
+            />
+            <QuizActionButtons
+              mode={mode}
+              strictMode={strictMode}
+              isChecked={isChecked}
+              isRationaleVisible={isRationaleVisible}
+              selectedAnswer={selectedAnswer}
+              isSaving={isSaving}
+              confidence={confidence}
+              currentIndex={currentIndex}
+              totalQuestions={questions.length}
+              dwellTimeRemaining={dwellTimeRemaining}
+              onConfidenceChange={(level) => setConfidenceMap((prev) => ({ ...prev, [currentQuestion.question_id]: level }))}
+              onShowRationale={() => setIsRationaleVisible(true)}
+              onCheckAnswer={handleCheckAnswer}
+              onNext={handleNext}
+              onFinish={handleOpenSubmitSheet}
+            />
+            <QuizDrawers
+              currentQuestion={currentQuestion}
+              options={options}
+              correctOptionId={correctOptionId}
+              selectedAnswer={selectedAnswer}
+              isChecked={isChecked}
+              isRationaleVisible={isRationaleVisible}
+              isAIOpen={isAIOpen}
+              showErrorPrompt={showErrorPrompt}
+              errorPromptQuestionId={errorPromptQuestionId}
+              onRationaleClose={() => setIsRationaleVisible(false)}
+              onWikiClick={() => {
+                const isWrong = selectedAnswer !== correctOptionId
+                const base = `/dashboard/wiki?nodeId=${currentQuestion.topic_id}`
+                const params = isWrong ? `${base}&from=wrong-answer&topic=${encodeURIComponent(currentQuestion.text.slice(0, 60))}` : base
+                router.push(params)
+              }}
+              onAddNote={() => { /* note drawer — future */ }}
+              on3DLabClick={
+                currentQuestion.model_id
+                  ? () => router.push(`/dashboard/3d-lab?model=${currentQuestion.model_id}`)
+                  : undefined
+              }
+              onErrorTypeSelect={handleErrorTypeSelect}
+              onErrorTypeSkip={handleErrorTypeSkip}
+              onAIClose={() => setIsAIOpen(false)}
+            />
           </div>
-          <div className='shrink-0'>{renderFooterNav()}</div>
+          <div className='shrink-0'>
+            <QuizFooterNav
+              dots={dots}
+              currentIndex={currentIndex}
+              totalQuestions={questions.length}
+              mode={mode}
+              strictMode={strictMode}
+              isChecked={isChecked}
+              onPrev={handleBack}
+              onNext={handleNext}
+              onFinish={handleOpenSubmitSheet}
+              onJump={handleJump}
+            />
+          </div>
         </div>
       </div>
 
       {/* Mobile only: fixed bottom navigation bar */}
-      <div className='lg:hidden'>{renderFooterNav()}</div>
+      <div className='lg:hidden'>
+        <QuizFooterNav
+          dots={dots}
+          currentIndex={currentIndex}
+          totalQuestions={questions.length}
+          mode={mode}
+          strictMode={strictMode}
+          isChecked={isChecked}
+          onPrev={handleBack}
+          onNext={handleNext}
+          onFinish={handleOpenSubmitSheet}
+          onJump={handleJump}
+        />
+      </div>
 
       {/* Submit confirmation sheet */}
       <ConfirmSubmitSheet
