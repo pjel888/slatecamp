@@ -45,7 +45,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
 
         {/* Popover */}
         {isOpen && (
-          <div className="absolute top-full left-0 mt-1.5 w-72 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-50 dark:bg-[#1A1A1A] dark:border-[#3A3835]">
+          <div className="absolute top-full right-0 mt-1.5 w-72 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-50 dark:bg-[#1A1A1A] dark:border-[#3A3835]">
             {/* Header */}
             <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-4 pt-3.5 pb-2 border-b border-[#ECEAE4] dark:border-[#3A3835]">
               Sources ({sources.length})
