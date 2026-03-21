@@ -95,7 +95,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
                   ) : source.label}
                 </p>
                 {source.description && (
-                  <p className="text-[11px] text-[#A8A8A5] leading-snug mt-0.5 dark:text-[#737370]">
+                  <p className="text-[11px] text-[#A8A8A5] leading-snug mt-0.5 line-clamp-1 dark:text-[#737370]">
                     {source.description}
                   </p>
                 )}
