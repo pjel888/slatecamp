@@ -6,8 +6,10 @@ import { Brain, ThumbsUp, ThumbsDown, LinkSimple, FileText } from '@phosphor-ico
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { WikiTableOfContents } from './WikiTableOfContents'
+import { WikiSourcesPopover } from './WikiSourcesPopover'
 import { ROUTES } from '@/lib/constants/routes'
 import type { TocHeading } from '@/lib/wiki-markdown'
+import type { WikiArticleSource } from '@/lib/actions/wiki-actions'
 import { cn } from '@/lib/utils'
 
 interface RelatedTopic {
@@ -22,6 +24,7 @@ interface WikiRightSidebarProps {
   headings: TocHeading[]
   articleSlug: string
   scrollContainerId?: string
+  sources?: WikiArticleSource[]
 }
 
 export function WikiRightSidebar({
@@ -31,6 +34,7 @@ export function WikiRightSidebar({
   headings,
   articleSlug,
   scrollContainerId,
+  sources = [],
 }: WikiRightSidebarProps) {
   const [feedbackGiven, setFeedbackGiven] = React.useState<'up' | 'down' | null>(null)
   const [linkCopied, setLinkCopied] = React.useState(false)
@@ -127,7 +131,10 @@ export function WikiRightSidebar({
         </div>
       </div>
 
-      {/* 4. On this page (ToC) — LAST, free to grow downward. Only rendered if headings exist. */}
+      {/* 4. Sources popover */}
+      <WikiSourcesPopover sources={sources} />
+
+      {/* 5. On this page (ToC) — LAST, free to grow downward. Only rendered if headings exist. */}
       {headings.length > 0 && (
         <>
           <div className="h-px w-full bg-zinc-200 mb-5" />

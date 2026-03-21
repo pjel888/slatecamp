@@ -2,6 +2,7 @@ import {
   getWikiArticleBySlug,
   getWikiArticleByTaxonomySlug,
   getActiveTaxonomyNode,
+  getArticleSources,
 } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 import { WikiArticle, getArticleHeadings } from '@/components/wiki/WikiArticle'
@@ -153,10 +154,11 @@ export default async function WikiArticlePage({ params }: PageProps) {
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
 
-  // Fetch EI prompts + user responses in parallel
-  const [eiPrompts, eiResponses] = await Promise.all([
+  // Fetch EI prompts + user responses + sources in parallel
+  const [eiPrompts, eiResponses, sources] = await Promise.all([
     getEIPromptsForArticle(article.article_id),
     getUserEIResponsesForArticle(article.article_id),
+    getArticleSources(article.article_id),
   ])
 
   const practiceHref = node?.node_id
@@ -204,6 +206,7 @@ export default async function WikiArticlePage({ params }: PageProps) {
                 headings={headings}
                 articleSlug={article.slug}
                 scrollContainerId="wiki-center-pane"
+                sources={sources}
               />
             }
           />
@@ -277,6 +280,7 @@ export default async function WikiArticlePage({ params }: PageProps) {
             headings={headings}
             articleSlug={article.slug}
             scrollContainerId="wiki-center-pane"
+            sources={sources}
           />
         </aside>
       </div>

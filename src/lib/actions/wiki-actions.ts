@@ -5,6 +5,33 @@ import { createClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 
+export interface WikiArticleSource {
+  source_id: string
+  label: string
+  description: string | null
+  url: string | null
+  source_type: string
+  sort_order: number
+}
+
+/**
+ * Fetch sources for a wiki article, ordered by sort_order.
+ */
+export const getArticleSources = async (articleId: string): Promise<WikiArticleSource[]> => {
+  const supabase = await createClient()
+  const { data, error } = await supabase
+    .from('wiki_article_sources')
+    .select('source_id, label, description, url, source_type, sort_order')
+    .eq('article_id', articleId)
+    .order('sort_order', { ascending: true })
+
+  if (error) {
+    console.error('[getArticleSources] Error:', error.message)
+    return []
+  }
+  return (data ?? []) as WikiArticleSource[]
+}
+
 /**
  * Fetch a single wiki article by slug.
  */
