@@ -170,7 +170,8 @@ export async function getTaxonomyTree(
         .in("node_id", chunk);
 
       if (junctionError) {
-        console.error("[getTaxonomyTree] Error fetching mappings:", junctionError.message);
+        console.error("[getTaxonomyTree] Error fetching mappings:", junctionError.code ?? "unavailable");
+        continue;
       }
       if (rows) allJunctionRows.push(...rows);
     }
@@ -243,10 +244,14 @@ export const getLawsTaxonomyTree = async (
 
     for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
       const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE)
-      const { data: rows } = await supabase
+      const { data: rows, error: junctionError } = await supabase
         .from('wiki_article_taxonomy')
         .select('node_id, article_id')
         .in('node_id', chunk)
+      if (junctionError) {
+        console.error('[getLawsTaxonomyTree] Error fetching mappings:', junctionError.code ?? 'unavailable')
+        continue
+      }
       if (rows) allJunctionRows.push(...rows)
     }
 
