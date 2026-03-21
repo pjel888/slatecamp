@@ -7,6 +7,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { WikiTableOfContents } from './WikiTableOfContents'
 import { WikiSourcesPopover } from './WikiSourcesPopover'
+import { WikiRelatedPopover } from './WikiRelatedPopover'
 import { ROUTES } from '@/lib/constants/routes'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { WikiArticleSource } from '@/lib/actions/wiki-actions'
@@ -65,27 +66,8 @@ export function WikiRightSidebar({
         </Link>
       </div>
 
-      {/* 2. Related topics — hard cap of 3 */}
-      {cappedRelated.length > 0 && (
-        <div className="mb-5">
-          <p className="text-[11px] font-medium text-zinc-500 uppercase tracking-wider mb-2">
-            Related
-          </p>
-          <ul className="space-y-1">
-            {cappedRelated.map((topic) => (
-              <li key={topic.slug}>
-                <Link
-                  href={ROUTES.WIKI_PAGE(topic.slug)}
-                  className="flex items-center gap-2 text-xs text-zinc-600 hover:text-zinc-900 hover:bg-zinc-50 rounded-sm px-2 py-1.5 transition-colors"
-                >
-                  <SCIcon icon={FileText} size="xs" className="text-zinc-300 shrink-0" />
-                  <span className="truncate">{topic.title}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      {/* 2. Related topics — popover to avoid layout shift */}
+      <WikiRelatedPopover topics={cappedRelated} />
 
       {/* 3. Feedback + share */}
       <div className="mb-5">
