@@ -11,7 +11,7 @@ export const WikiArticleHero = ({
   subject, difficulty, readTime, title, updatedNote, aleTestsYou
 }: WikiArticleHeroProps) => {
   return (
-    <header className="not-prose flex flex-col gap-3 mb-8">
+    <header className="not-prose flex flex-col gap-3 mb-0">
       {/* Tag row */}
       <div className="flex flex-wrap items-center gap-1.5">
         <span className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#EEF3FD] text-[#1B3FC4]">
@@ -47,6 +47,9 @@ export const WikiArticleHero = ({
           {aleTestsYou}
         </p>
       </div>
+
+      {/* Hero divider — separates hero from article content */}
+      <div className="border-t border-[#E0DED8] mt-7 dark:border-[#3A3835]" />
     </header>
   )
 }

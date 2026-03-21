@@ -641,13 +641,16 @@ a[data-pending] {
 .wiki-prose {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 15px;
-  line-height: 1.75rem;
-  color: #1A1A1A;
+  line-height: 1.7;
+  color: #3D3D3A;
 }
-.wiki-prose p { margin-bottom: 1.25rem; }
+.wiki-prose p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
+}
 .wiki-prose p:last-child { margin-bottom: 0; }
 .wiki-prose strong { font-weight: 600; color: #1A1A1A; }
-.wiki-prose em { font-style: italic; color: #1A1A1A; }
+.wiki-prose em { font-style: italic; color: #3D3D3A; }
 .wiki-prose code {
   font-family: 'DM Mono', monospace;
   font-size: 12px;
@@ -656,30 +659,38 @@ a[data-pending] {
   padding: 1px 5px;
   border-radius: 3px;
 }
-.wiki-prose h3 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #1A1A1A;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-}
 .wiki-prose h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 22px;
+  letter-spacing: -0.01em;
   color: #1A1A1A;
-  margin-top: 3rem;
-  margin-bottom: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.wiki-prose h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1A1A1A;
+  margin-top: 28px;
+  margin-bottom: 0.75rem;
+}
+/* Section dividers — markdown --- renders as <hr> */
+.wiki-prose hr {
+  border: none;
+  border-top: 1px solid #ECEAE4;
+  margin: 40px 0 36px;
 }
 
 /* Wiki prose dark mode */
-.dark .wiki-prose { color: #E2E0D8; }
+.dark .wiki-prose { color: #C8C6C0; }
 .dark .wiki-prose strong { color: #E2E0D8; }
-.dark .wiki-prose em { color: #E2E0D8; }
+.dark .wiki-prose em { color: #C8C6C0; }
 .dark .wiki-prose code {
   background: rgba(242, 240, 235, 0.1);
   color: #7BA7F5;
 }
 .dark .wiki-prose h2,
 .dark .wiki-prose h3 { color: #E2E0D8; }
+.dark .wiki-prose hr { border-top-color: #3A3835; }

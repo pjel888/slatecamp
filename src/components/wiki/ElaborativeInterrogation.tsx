@@ -4,6 +4,7 @@ import { useState, useTransition } from 'react'
 import DOMPurify from 'isomorphic-dompurify'
 import { trackEvent } from '@/lib/analytics'
 import { submitEIResponse } from '@/lib/actions/ei-prompts'
+import { parseMdxProp } from './parse-mdx-prop'
 
 interface EIOption {
   text: string
@@ -13,9 +14,15 @@ interface EIOption {
 interface ElaborativeInterrogationProps {
   promptId: string
   question: string
-  answer: string
-  options: EIOption[]
+  /** Reveal/explanation text — accepts both `answer` and `revealText` (MDX alias) */
+  answer?: string
+  revealText?: string
+  options: EIOption[] | string
   articleId?: string
+  /** "mcq" | "open" — inferred from options if omitted */
+  type?: string
+  /** Placeholder for open-ended textarea */
+  placeholder?: string
   /** Pre-existing response from DB — null if unanswered */
   existingResponse?: {
     selected_option_index: number | null
@@ -24,15 +31,26 @@ interface ElaborativeInterrogationProps {
   } | null
 }
 
+/** Parse options prop — may be native array or MDX string */
+const parseOptions = (options: EIOption[] | string | undefined): EIOption[] =>
+  parseMdxProp<EIOption[]>(options, [])
+
+const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
+
 export const ElaborativeInterrogation = ({
   promptId,
   question,
   answer,
-  options,
+  revealText,
+  options: rawOptions,
   articleId,
+  type,
+  placeholder,
   existingResponse,
 }: ElaborativeInterrogationProps) => {
-  const sanitizedAnswer = DOMPurify.sanitize(answer)
+  const options = parseOptions(rawOptions)
+  const resolvedAnswer = answer || revealText || ''
+  const sanitizedAnswer = DOMPurify.sanitize(resolvedAnswer)
   const isMCQ = options.length > 0
   const wasAnswered = !!existingResponse
 
@@ -42,6 +60,7 @@ export const ElaborativeInterrogation = ({
   const [isRevealed, setIsRevealed] = useState(wasAnswered)
   const [isSubmitted, setIsSubmitted] = useState(wasAnswered)
   const [isPending, startTransition] = useTransition()
+  const [openText, setOpenText] = useState(existingResponse?.response_text ?? '')
 
   const handleMCQSelect = (index: number) => {
     if (isSubmitted) return
@@ -67,11 +86,19 @@ export const ElaborativeInterrogation = ({
     })
   }
 
-  const handleReveal = () => {
+  const handleOpenSubmit = () => {
     setIsRevealed(true)
+    setIsSubmitted(true)
+
+    startTransition(async () => {
+      await submitEIResponse({
+        promptId,
+        responseText: openText,
+      })
+    })
 
     trackEvent({
-      event_name: 'ei_prompt_revealed',
+      event_name: 'ei_prompt_answered',
       event_properties: {
         article_id: articleId,
         prompt_id: promptId,
@@ -80,177 +107,133 @@ export const ElaborativeInterrogation = ({
     })
   }
 
-  // Already answered — show completed state
-  if (wasAnswered && isMCQ) {
-    const prevIndex = existingResponse.selected_option_index
-    const wasCorrect = prevIndex !== null && options[prevIndex]?.is_correct === true
+  // Determine header config based on type
+  const headerIcon = isMCQ ? '💡' : '✍️'
+  const headerLabel = isMCQ ? 'Think About It' : 'Reflect'
+  const headerSubtitle = isMCQ
+    ? 'Test your understanding before moving on'
+    : 'Write your thinking before seeing the explanation'
 
-    return (
-      <div className="not-prose my-6 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
-        <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#8896A7] mb-2">
-          Think About It
-        </p>
-        <p className="text-sm font-medium text-[#1A2332] leading-relaxed mb-3">
-          {question}
-        </p>
-        <div className="space-y-2 mb-3">
-          {options.map((opt, i) => {
-            const isSelected = i === prevIndex
-            const isCorrectOption = opt.is_correct
-            let style = 'border-[#D4DAE3] bg-white text-[#4A5568]'
-            if (isSelected && isCorrectOption) {
-              style = 'border-[#2D9F6F] bg-[#EDFAF4] text-[#1A2332]'
-            } else if (isSelected && !isCorrectOption) {
-              style = 'border-[#D64545] bg-[#FDF0F0] text-[#1A2332]'
-            } else if (isCorrectOption) {
-              style = 'border-[#2D9F6F]/40 bg-[#EDFAF4]/50 text-[#4A5568]'
-            }
-            return (
-              <div
-                key={i}
-                className={`rounded-sm border px-3 py-2 text-sm ${style}`}
-              >
-                {opt.text}
-                {isSelected && isCorrectOption && (
-                  <span className="ml-2 text-[#2D9F6F] font-medium">Correct</span>
-                )}
-                {isSelected && !isCorrectOption && (
-                  <span className="ml-2 text-[#D64545] font-medium">Incorrect</span>
-                )}
-              </div>
-            )
-          })}
+  return (
+    <div className="not-prose my-7 border border-[#E0DED8] rounded-xl overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
+      {/* Header */}
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[#1B3FC415] dark:to-[#1B3FC410] dark:border-[#3A3835]">
+        <div className="w-7 h-7 rounded-lg bg-[#1B3FC4] flex items-center justify-center text-white text-sm">
+          {headerIcon}
         </div>
-        <div className="pt-3 border-t border-[#D4DAE3]">
-          <div
-            className="text-sm text-[#4A5568] leading-relaxed prose prose-sm max-w-none"
-            dangerouslySetInnerHTML={{ __html: sanitizedAnswer }}
-          />
-        </div>
-        <p className="mt-2 text-[11px] text-[#8896A7]">
-          {wasCorrect ? 'You got this right' : 'Reviewed'} &middot; {new Date(existingResponse.responded_at).toLocaleDateString()}
-        </p>
-      </div>
-    )
-  }
-
-  // MCQ — unanswered
-  if (isMCQ && !isSubmitted) {
-    return (
-      <div className="not-prose my-6 rounded-md border border-[#1B3FC4]/15 bg-[#EEF2FC] p-4">
-        <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#8896A7] mb-2">
-          Think About It
-        </p>
-        <p className="text-sm font-medium text-[#1A2332] leading-relaxed mb-3">
-          {question}
-        </p>
-        <div className="space-y-2">
-          {options.map((opt, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => handleMCQSelect(i)}
-              disabled={isPending}
-              className="w-full text-left rounded-sm border border-[#D4DAE3] bg-white px-3 py-2 text-sm text-[#1A2332] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC] disabled:opacity-60"
-            >
-              {opt.text}
-            </button>
-          ))}
+        <div className="flex-1">
+          <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+            {headerLabel}
+          </div>
+          <div className="text-[13px] text-[#3D3D3A] mt-px dark:text-[#C8C6C0]">
+            {headerSubtitle}
+          </div>
         </div>
       </div>
-    )
-  }
 
-  // MCQ — just submitted this session
-  if (isMCQ && isSubmitted && selectedIndex !== null) {
-    const isCorrect = options[selectedIndex]?.is_correct === true
-    return (
-      <div className="not-prose my-6 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
-        <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#8896A7] mb-2">
-          Think About It
-        </p>
-        <p className="text-sm font-medium text-[#1A2332] leading-relaxed mb-3">
+      {/* Body */}
+      <div className="p-5">
+        {/* Already-answered badge */}
+        {wasAnswered && (
+          <div className="flex items-center gap-2 px-3.5 py-2.5 bg-[#EDFAF4] rounded-lg text-xs text-[#1B7A3C] mb-3 dark:bg-[#1B7A3C15]">
+            <span className="text-sm">✓</span>
+            <span className="font-[var(--font-dm-mono)] text-[11px]">
+              You answered this on {new Date(existingResponse!.responded_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+            </span>
+          </div>
+        )}
+
+        {/* Question */}
+        <p className="text-[15px] font-semibold text-[#1A1A1A] mb-4 leading-relaxed dark:text-[#E2E0D8]">
           {question}
         </p>
-        <div className="space-y-2 mb-3">
-          {options.map((opt, i) => {
-            const isSelected = i === selectedIndex
-            const isCorrectOption = opt.is_correct
-            let style = 'border-[#D4DAE3] bg-white text-[#4A5568]'
-            if (isSelected && isCorrectOption) {
-              style = 'border-[#2D9F6F] bg-[#EDFAF4] text-[#1A2332]'
-            } else if (isSelected && !isCorrectOption) {
-              style = 'border-[#D64545] bg-[#FDF0F0] text-[#1A2332]'
-            } else if (isCorrectOption) {
-              style = 'border-[#2D9F6F]/40 bg-[#EDFAF4]/50 text-[#4A5568]'
-            }
-            return (
-              <div
-                key={i}
-                className={`rounded-sm border px-3 py-2 text-sm ${style}`}
+
+        {/* MCQ Options */}
+        {isMCQ && (
+          <div className="flex flex-col gap-2">
+            {options.map((opt, i) => {
+              const isSelected = i === selectedIndex
+              const isCorrectOption = opt.is_correct
+
+              let containerStyle = 'border-[#E0DED8] cursor-pointer hover:border-[#3B5BD6] hover:bg-[#EEF3FD]'
+              let letterStyle = 'border-[#E0DED8] text-[#3D3D3A]'
+
+              if (isSubmitted) {
+                if (isCorrectOption) {
+                  containerStyle = 'border-[#1B7A3C] bg-[#EDFAF4] cursor-default'
+                  letterStyle = 'bg-[#1B7A3C] text-white border-[#1B7A3C]'
+                } else if (isSelected && !isCorrectOption) {
+                  containerStyle = 'border-[#E63329] bg-[#FFF0EF] cursor-default'
+                  letterStyle = 'bg-[#E63329] text-white border-[#E63329]'
+                } else {
+                  containerStyle = 'border-[#E0DED8] opacity-50 cursor-default'
+                }
+              }
+
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => handleMCQSelect(i)}
+                  disabled={isSubmitted || isPending}
+                  className={`flex items-start gap-3 px-4 py-3 border-[1.5px] rounded-[10px] transition-all duration-150 text-left text-sm text-[#3D3D3A] leading-[1.45] dark:text-[#C8C6C0] ${containerStyle}`}
+                >
+                  <span
+                    className={`w-6 h-6 rounded-full border-[1.5px] flex items-center justify-center text-xs font-semibold shrink-0 mt-px font-[var(--font-dm-mono)] transition-all duration-150 ${letterStyle}`}
+                  >
+                    {LETTERS[i]}
+                  </span>
+                  <span>{opt.text}</span>
+                </button>
+              )
+            })}
+          </div>
+        )}
+
+        {/* Open-ended textarea */}
+        {!isMCQ && !isSubmitted && (
+          <>
+            <textarea
+              value={openText}
+              onChange={(e) => setOpenText(e.target.value)}
+              placeholder={placeholder || "Write your answer here. There is no single correct answer, but the explanation below will help you calibrate your thinking."}
+              className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-[#E0DED8] rounded-[10px] font-sans text-sm text-[#1A1A1A] resize-y outline-none transition-colors duration-150 focus:border-[#1B3FC4] placeholder:text-[#A8A8A5] dark:bg-[#1A1A1A] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+            />
+            <div className="flex justify-end mt-2.5">
+              <button
+                type="button"
+                onClick={handleOpenSubmit}
+                disabled={isPending}
+                className="px-5 py-2 bg-[#1B3FC4] text-white border-none rounded-lg text-[13px] font-semibold font-sans transition-colors duration-150 hover:bg-[#3B5BD6] disabled:bg-[#A8A8A5] disabled:cursor-not-allowed"
               >
-                {opt.text}
-                {isSelected && isCorrectOption && (
-                  <span className="ml-2 text-[#2D9F6F] font-medium">Correct</span>
-                )}
-                {isSelected && !isCorrectOption && (
-                  <span className="ml-2 text-[#D64545] font-medium">Incorrect</span>
-                )}
-              </div>
-            )
-          })}
-        </div>
-        <div className="pt-3 border-t border-[#D4DAE3]">
-          <div
-            className="text-sm text-[#4A5568] leading-relaxed prose prose-sm max-w-none"
-            dangerouslySetInnerHTML={{ __html: sanitizedAnswer }}
+                Show Explanation
+              </button>
+            </div>
+          </>
+        )}
+
+        {/* Open-ended — already submitted textarea (readonly) */}
+        {!isMCQ && isSubmitted && openText && (
+          <textarea
+            value={openText}
+            readOnly
+            className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-[#E0DED8] rounded-[10px] font-sans text-sm text-[#1A1A1A] opacity-70 resize-none outline-none dark:bg-[#1A1A1A] dark:border-[#3A3835] dark:text-[#E2E0D8]"
           />
-        </div>
-        {isCorrect ? (
-          <p className="mt-2 text-[11px] text-[#2D9F6F] font-medium">Nice work!</p>
-        ) : (
-          <p className="mt-2 text-[11px] text-[#D4951A] font-medium">Review the explanation above</p>
+        )}
+
+        {/* Reveal text */}
+        {isRevealed && sanitizedAnswer && (
+          <div className="mt-4 p-4 bg-[#F2F0EB] rounded-[10px] dark:bg-[#252420]">
+            <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5">
+              Why This Matters
+            </div>
+            <div
+              className="text-sm text-[#3D3D3A] leading-relaxed [&_strong]:font-semibold [&_strong]:text-[#1A1A1A] dark:text-[#C8C6C0] dark:[&_strong]:text-[#E2E0D8]"
+              dangerouslySetInnerHTML={{ __html: sanitizedAnswer }}
+            />
+          </div>
         )}
       </div>
-    )
-  }
-
-  // Open-ended — revealed
-  if (isRevealed) {
-    return (
-      <div className="not-prose my-6 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
-        <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#8896A7] mb-2">
-          Think About It
-        </p>
-        <p className="text-sm font-medium text-[#1A2332] leading-relaxed">
-          {question}
-        </p>
-        <div className="mt-3 pt-3 border-t border-[#D4DAE3]">
-          <div
-            className="text-sm text-[#4A5568] leading-relaxed prose prose-sm max-w-none"
-            dangerouslySetInnerHTML={{ __html: sanitizedAnswer }}
-          />
-        </div>
-      </div>
-    )
-  }
-
-  // Open-ended — hidden (default)
-  return (
-    <div className="not-prose my-6 rounded-md border border-[#1B3FC4]/15 bg-[#EEF2FC] p-4">
-      <p className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#8896A7] mb-2">
-        Think About It
-      </p>
-      <p className="text-sm font-medium text-[#1A2332] leading-relaxed">
-        {question}
-      </p>
-      <button
-        type="button"
-        onClick={handleReveal}
-        className="mt-3 text-sm font-medium text-[#1B3FC4] transition-colors duration-150 ease-out hover:underline"
-      >
-        Reveal answer &rarr;
-      </button>
     </div>
   )
 }

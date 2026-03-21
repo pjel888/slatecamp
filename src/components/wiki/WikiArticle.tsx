@@ -17,6 +17,11 @@ import { WikiChangedPill } from './WikiChangedPill'
 import { WikiMistakeCard } from './WikiMistakeCard'
 import { WikiMistakeList } from './WikiMistakeList'
 import { ElaborativeInterrogation } from './ElaborativeInterrogation'
+import { KeyValues } from './KeyValues'
+import { FormulaBlock } from './FormulaBlock'
+import { InlineQuiz } from './InlineQuiz'
+import { Tabs, Tab } from './WikiTabs'
+import { Accordion, AccordionItem } from './WikiAccordion'
 import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
@@ -50,20 +55,20 @@ const baseMdxComponents = {
     return <h3 id={id} {...props} />
   },
 
-  // Tables — horizontal scroll wrapper
+  // Tables — prototype wiki-table styling
   table: (props: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="not-prose my-6 overflow-x-auto rounded-md border border-zinc-200">
-      <table className="min-w-full text-sm" {...props} />
+    <div className="not-prose my-4 overflow-x-auto">
+      <table className="w-full border-collapse text-sm" {...props} />
     </div>
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    <thead className="bg-zinc-50 border-b border-zinc-200" {...props} />
+    <thead className="bg-[#F2F0EB] dark:bg-[#252420]" {...props} />
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
-    <th className="px-4 py-2 text-left text-xs font-semibold text-zinc-700 uppercase tracking-wider" {...props} />
+    <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-[#A8A8A5] border-b-[1.5px] border-[#E0DED8] dark:border-[#3A3835]" {...props} />
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
-    <td className="px-4 py-2.5 text-sm text-zinc-600 border-t border-zinc-100" {...props} />
+    <td className="px-3.5 py-[11px] text-sm text-[#3D3D3A] border-b border-[#ECEAE4] align-top leading-relaxed [&_strong]:text-[#1A1A1A] [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-[#C8C6C0] dark:border-[#3A3835] dark:[&_strong]:text-[#E2E0D8]" {...props} />
   ),
 
   // Code blocks — horizontal scroll, styled container
@@ -93,6 +98,18 @@ const baseMdxComponents = {
   WikiChangedPill,
   WikiMistakeCard,
   WikiMistakeList,
+
+  // New spec-v1 components — interactive content blocks
+  KeyValues,
+  FormulaBlock,
+  InlineQuiz,
+  Tabs,
+  Tab,
+  Accordion,
+  AccordionItem,
+
+  // EI — direct MDX usage (not DB-driven, uses revealText prop)
+  ElaborativeInterrogation,
 }
 
 /**
@@ -136,6 +153,73 @@ const buildMdxComponents = (
     />
   ),
 })
+
+/**
+ * Convert JSX expression props ({...}) to JSON string props ("...") for MDX compatibility.
+ * MDX (next-mdx-remote) only supports string props — {[...]} and {{...}} expressions
+ * are silently dropped. This converts them to escaped JSON strings that components
+ * can parse internally via JSON.parse().
+ *
+ * Uses bracket counting to correctly handle nested structures like:
+ *   operands: ["TLA", "PSO%"]  (nested arrays within objects within arrays)
+ */
+const convertExpressionPropsToStrings = (content: string): string => {
+  // Find prop={ patterns and use bracket counting for balanced extraction
+  const result: string[] = []
+  let i = 0
+
+  while (i < content.length) {
+    // Look for propName={ where the next char is [ or {
+    const propMatch = content.substring(i).match(/^(\w+)=\{([\[{])/)
+    if (!propMatch) {
+      result.push(content[i])
+      i++
+      continue
+    }
+
+    const propName = propMatch[1]
+    const startBracket = propMatch[2]
+    const exprStart = i + propName.length + 2 // skip propName={
+
+    // Count brackets to find the matching close
+    let depth = 0
+    let j = exprStart
+    let inString = false
+    let stringChar = ''
+
+    while (j < content.length) {
+      const ch = content[j]
+
+      if (inString) {
+        if (ch === '\\') { j += 2; continue }
+        if (ch === stringChar) inString = false
+      } else {
+        if (ch === '"' || ch === "'") { inString = true; stringChar = ch }
+        else if (ch === '[' || ch === '{') depth++
+        else if (ch === ']' || ch === '}') {
+          depth--
+          if (depth === 0) {
+            // Found the matching closing bracket
+            const exprValue = content.substring(exprStart, j + 1)
+            const escaped = exprValue.replace(/"/g, '&quot;')
+            result.push(`${propName}="${escaped}"`)
+            i = j + 2 // skip the closing }
+            break
+          }
+        }
+      }
+      j++
+    }
+
+    if (depth !== 0) {
+      // Unbalanced — pass through unchanged
+      result.push(content[i])
+      i++
+    }
+  }
+
+  return result.join('')
+}
 
 /**
  * Strip legacy [EI]...[/EI] markdown tags from content.
@@ -213,7 +297,8 @@ export const WikiArticle = async ({
   const rawContent = content.replace(/\\n/g, '\n')
   const cleaned = stripLegacyEITags(rawContent)
     .replace(/<!--[\s\S]*?-->/g, '') // Strip HTML comments — MDX requires {/* */} syntax
-  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const withStringProps = convertExpressionPropsToStrings(cleaned)
+  const processedContent = injectEIPrompts(withStringProps, eiPrompts)
 
   // Load only the widgets this article actually references
   const widgets = await resolveWidgets(processedContent)
@@ -240,7 +325,7 @@ export const WikiArticle = async ({
       <WikiTextSelection />
 
       {/* Prose content */}
-      <div className="wiki-prose max-w-none">
+      <div className="wiki-prose max-w-none mt-8">
         <Suspense
           fallback={
             <div className="animate-pulse bg-zinc-100 h-64 w-full rounded-md" />
