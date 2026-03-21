@@ -14,23 +14,22 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
   const popoverRef = useRef<HTMLDivElement>(null)
   const [pos, setPos] = useState<{ top: number; right: number } | null>(null)
 
-  // Calculate position from trigger button
+  // Position popover so its right edge aligns with the sidebar's left edge
   const updatePosition = useCallback(() => {
     if (!triggerRef.current) return
-    const rect = triggerRef.current.getBoundingClientRect()
+    const triggerRect = triggerRef.current.getBoundingClientRect()
+    // Top-aligned with trigger, popover extends to the left
     setPos({
-      top: rect.bottom + 6,
-      right: window.innerWidth - rect.right,
+      top: triggerRect.top,
+      right: window.innerWidth - triggerRect.left + 8,
     })
   }, [])
 
-  // Open/close + position
   const toggle = () => {
     if (!isOpen) updatePosition()
     setIsOpen(!isOpen)
   }
 
-  // Close on outside click
   useEffect(() => {
     if (!isOpen) return
     const handler = (e: MouseEvent) => {
@@ -46,7 +45,6 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
     return () => document.removeEventListener('mousedown', handler)
   }, [isOpen])
 
-  // Close on scroll
   useEffect(() => {
     if (!isOpen) return
     const handler = () => setIsOpen(false)
@@ -62,7 +60,6 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
         Sources
       </p>
       <div>
-        {/* Trigger */}
         <button
           ref={triggerRef}
           type="button"
@@ -75,40 +72,30 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
           <span>View all sources</span>
         </button>
 
-        {/* Portal popover — escapes overflow clipping */}
         {isOpen && pos && createPortal(
           <div
             ref={popoverRef}
-            className="fixed w-72 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-[100] dark:bg-[#1A1A1A] dark:border-[#3A3835]"
+            className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-[100] dark:bg-[#1A1A1A] dark:border-[#3A3835]"
             style={{ top: pos.top, right: pos.right }}
           >
-            {/* Header */}
-            <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-4 pt-3.5 pb-2 border-b border-[#ECEAE4] dark:border-[#3A3835]">
+            <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-3 pt-3 pb-1.5 border-b border-[#ECEAE4] dark:border-[#3A3835]">
               Sources ({sources.length})
             </div>
 
-            {/* Items */}
             {sources.map((source, i) => (
               <div
                 key={source.source_id}
-                className={`px-4 py-2.5 ${i < sources.length - 1 ? 'border-b border-[#ECEAE4] dark:border-[#3A3835]' : ''}`}
+                className={`px-3 py-2 ${i < sources.length - 1 ? 'border-b border-[#ECEAE4] dark:border-[#3A3835]' : ''}`}
               >
-                <p className="text-[13px] font-semibold text-[#1A1A1A] mb-0.5 dark:text-[#E2E0D8]">
+                <p className="text-[11px] font-bold text-[#1A1A1A] leading-tight dark:text-[#E2E0D8]">
                   {source.url ? (
-                    <a
-                      href={source.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-[#1B3FC4] transition-colors"
-                    >
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="hover:text-[#1B3FC4] transition-colors">
                       {source.label}
                     </a>
-                  ) : (
-                    source.label
-                  )}
+                  ) : source.label}
                 </p>
                 {source.description && (
-                  <p className="text-xs text-[#737370] leading-snug dark:text-[#A8A8A5]">
+                  <p className="text-[11px] text-[#A8A8A5] leading-snug mt-0.5 dark:text-[#737370]">
                     {source.description}
                   </p>
                 )}
