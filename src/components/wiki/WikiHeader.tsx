@@ -4,6 +4,7 @@ import type { BreadcrumbItem } from '@/lib/actions/wiki-actions'
 
 interface WikiHeaderProps {
   nodeId?: string
+  articleId?: string
   articleTitle?: string
   articleSlug?: string
   scrollContainerId?: string
@@ -13,6 +14,7 @@ interface WikiHeaderProps {
 
 export async function WikiHeader({
   nodeId,
+  articleId,
   articleTitle,
   articleSlug,
   scrollContainerId,
@@ -27,6 +29,7 @@ export async function WikiHeader({
   return (
     <WikiHeaderClient
       breadcrumbs={breadcrumbs}
+      articleId={articleId}
       articleTitle={articleTitle}
       articleSlug={articleSlug}
       scrollContainerId={scrollContainerId}

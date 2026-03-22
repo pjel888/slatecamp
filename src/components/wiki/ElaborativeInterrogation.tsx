@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import DOMPurify from 'isomorphic-dompurify'
+import DOMPurify from 'dompurify'
 import { trackEvent } from '@/lib/analytics'
 import { submitEIResponse } from '@/lib/actions/ei-prompts'
 import { parseMdxProp } from './parse-mdx-prop'
@@ -196,6 +196,7 @@ export const ElaborativeInterrogation = ({
             <textarea
               value={openText}
               onChange={(e) => setOpenText(e.target.value)}
+              aria-label="Write your answer"
               placeholder={placeholder || "Write your answer here. There is no single correct answer, but the explanation below will help you calibrate your thinking."}
               className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-[#E0DED8] rounded-[10px] font-sans text-sm text-[#1A1A1A] resize-y outline-none transition-colors duration-150 focus:border-[#1B3FC4] placeholder:text-[#A8A8A5] dark:bg-[#1A1A1A] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             />

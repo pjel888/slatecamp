@@ -32,11 +32,15 @@ export const Tabs = ({ defaultTab, children }: TabsProps) => {
   return (
     <div className="not-prose my-5 border border-[#E0DED8] rounded-[10px] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Tab bar */}
-      <div className="flex border-b border-[#E0DED8] bg-[#F2F0EB] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div role="tablist" className="flex border-b border-[#E0DED8] bg-[#F2F0EB] dark:bg-[#252420] dark:border-[#3A3835]">
         {tabs.map((tab) => (
           <button
             key={tab.value}
             type="button"
+            role="tab"
+            aria-selected={activeTab === tab.value}
+            aria-controls={`tabpanel-${tab.value}`}
+            id={`tab-${tab.value}`}
             onClick={() => setActiveTab(tab.value)}
             className={`font-[var(--font-dm-mono)] text-xs font-medium px-5 py-2.5 border-b-2 -mb-px transition-all duration-150 ${
               activeTab === tab.value
@@ -53,7 +57,11 @@ export const Tabs = ({ defaultTab, children }: TabsProps) => {
       {tabs.map((tab) => (
         <div
           key={tab.value}
-          className={`px-5 py-[18px] ${activeTab === tab.value ? 'block' : 'hidden'}`}
+          role="tabpanel"
+          id={`tabpanel-${tab.value}`}
+          aria-labelledby={`tab-${tab.value}`}
+          hidden={activeTab !== tab.value}
+          className="px-5 py-[18px]"
         >
           <div className="text-sm text-[#3D3D3A] leading-relaxed [&_p]:mb-3 [&_p:last-child]:mb-0 dark:text-[#C8C6C0]">
             {tab.content}

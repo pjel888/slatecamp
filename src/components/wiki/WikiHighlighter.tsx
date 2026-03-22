@@ -14,18 +14,26 @@ export function WikiHighlighter() {
   React.useEffect(() => {
     if (!highlight) return
 
-    // Small delay to ensure MDX content is fully rendered in the DOM
-    const timer = setTimeout(() => {
-      const term = highlight.toLowerCase()
-      
-      // Find all text nodes in the article content area
+    let cancelled = false
+    let fadeTimer: ReturnType<typeof setTimeout>
+
+    // Poll with rAF until the article element has rendered content,
+    // instead of using a fragile fixed timeout.
+    const tryHighlight = () => {
+      if (cancelled) return
+
       const article = document.querySelector('article')
-      if (!article) return
+      if (!article || !article.textContent?.trim()) {
+        requestAnimationFrame(tryHighlight)
+        return
+      }
+
+      const term = highlight.toLowerCase()
 
       const walker = document.createTreeWalker(
         article,
         NodeFilter.SHOW_TEXT,
-        null
+        null,
       )
 
       let node: Node | null
@@ -34,36 +42,38 @@ export function WikiHighlighter() {
         const index = text.indexOf(term)
 
         if (index !== -1) {
-          // Found the term! Now wrap it in a highlight span.
-          const range = document.createRange()
-          range.setStart(node, index)
-          range.setEnd(node, index + term.length)
+          try {
+            const range = document.createRange()
+            range.setStart(node, index)
+            range.setEnd(node, index + term.length)
 
-          const span = document.createElement('span')
-          span.className = 'highlight-fade'
-          span.style.backgroundColor = 'rgba(37, 99, 235, 0.15)'
-          span.style.borderRadius = '2px'
-          span.style.padding = '0 2px'
-          
-          range.surroundContents(span)
+            const span = document.createElement('span')
+            span.className = 'highlight-fade'
+            span.style.backgroundColor = 'rgba(37, 99, 235, 0.15)'
+            span.style.borderRadius = '2px'
+            span.style.padding = '0 2px'
 
-          // Scroll to the highlighted element
-          span.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center'
-          })
+            range.surroundContents(span)
 
-          // Remove the class after animation
-          setTimeout(() => {
-            span.style.backgroundColor = 'transparent'
-          }, 3000)
+            span.scrollIntoView({ behavior: 'smooth', block: 'center' })
 
-          break // Only highlight the first instance
+            fadeTimer = setTimeout(() => {
+              span.style.backgroundColor = 'transparent'
+            }, 3000)
+          } catch {
+            // surroundContents throws if range spans multiple elements — skip gracefully
+          }
+          break
         }
       }
-    }, 500)
+    }
 
-    return () => clearTimeout(timer)
+    requestAnimationFrame(tryHighlight)
+
+    return () => {
+      cancelled = true
+      clearTimeout(fadeTimer)
+    }
   }, [highlight])
 
   return null

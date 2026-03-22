@@ -37,6 +37,42 @@ export const widgetRegistry: Record<string, WidgetLoader> = {
   RecallDrill: () =>
     import('./bp344/RecallDrill').then((m) => m.RecallDrill),
 
+  // -- DSGN-013: Furniture & Equipment Clearances --------------------------
+  BedroomPlanView: () =>
+    import('./dsgn013/BedroomPlanView').then((m) => m.BedroomPlanView),
+  BedSizeComparator: () =>
+    import('./dsgn013/BedSizeComparator').then((m) => m.BedSizeComparator),
+  WorkstationCalculator: () =>
+    import('./dsgn013/WorkstationCalculator').then(
+      (m) => m.WorkstationCalculator,
+    ),
+  DimensionDrill: () =>
+    import('./dsgn013/DimensionDrill').then((m) => m.DimensionDrill),
+
+  // -- DSGN-013-01: Human Body Dimensions & Reach Ranges -------------------
+  BodyDimensionExplorer: () =>
+    import('./dsgn013/BodyDimensionExplorer').then(
+      (m) => m.BodyDimensionExplorer,
+    ),
+  ReachEnvelopeDiagram: () =>
+    import('./dsgn013/ReachEnvelopeDiagram').then(
+      (m) => m.ReachEnvelopeDiagram,
+    ),
+  BodyDimensionDrill: () =>
+    import('./dsgn013/BodyDimensionDrill').then((m) => m.BodyDimensionDrill),
+
+  // -- DSGN-013-03: Spatial Quality — Scale, Proportion, Enclosure --------
+  DHRatioExplorer: () =>
+    import('./dsgn013/DHRatioExplorer').then((m) => m.DHRatioExplorer),
+  ProportionComparator: () =>
+    import('./dsgn013/ProportionComparator').then(
+      (m) => m.ProportionComparator,
+    ),
+  SpatialQualityDrill: () =>
+    import('./dsgn013/SpatialQualityDrill').then(
+      (m) => m.SpatialQualityDrill,
+    ),
+
   // -- Interactive Illustrations ------------------------------------------
   PHBuildingSetbacks: () =>
     import('../../interactive-illustrations/2D/SetbackIllustration').then(

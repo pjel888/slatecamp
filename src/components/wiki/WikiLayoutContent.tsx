@@ -1,4 +1,5 @@
 import { createClient, getUser } from '@/lib/supabase/server'
+import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
 import { WikiSidebar } from '@/components/wiki/WikiSidebar'
 import { WikiSidebarShell } from '@/components/wiki/WikiSidebarShell'
 import { WikiContentShell } from '@/components/wiki/WikiContentShell'
@@ -30,6 +31,13 @@ export const WikiLayoutContent = async ({ children }: { children: React.ReactNod
   const disciplineId = stats?.current_discipline_id ?? null
   const disciplineName = (stats?.disciplines as any)?.name || 'Select Discipline'
 
+  const [nodes, lawsNodes] = disciplineId
+    ? await Promise.all([
+        getTaxonomyTree(disciplineId),
+        getLawsTaxonomyTree(disciplineId),
+      ])
+    : [[], []]
+
   return (
     <WikiDisciplineProvider disciplineId={disciplineId} disciplineName={disciplineName}>
       <WikiNavigationProvider>
@@ -39,6 +47,8 @@ export const WikiLayoutContent = async ({ children }: { children: React.ReactNod
               <WikiSidebar
                 disciplineId={disciplineId!}
                 disciplineName={disciplineName}
+                initialNodes={nodes}
+                initialLawsNodes={lawsNodes}
               />
             </WikiSidebarShell>
 

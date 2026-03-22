@@ -71,7 +71,8 @@ export const DoorConfigurator = () => {
           </>
         )}
       </div>
-      <svg width="100%" viewBox="0 0 480 200" className="max-w-[480px] block">
+      <svg width="100%" viewBox="0 0 480 200" className="max-w-[480px] block" role="img" aria-labelledby="door-viz-title">
+        <title id="door-viz-title">Door compliance visualization — {ok ? 'all parameters compliant' : 'non-compliant'} with 2024 IRR</title>
         <rect x={wX} y={wY} width="10" height={wH} fill="#888" rx="2" />
         <line x1={dSX} y1={wY + wH / 2} x2={dEX} y2={wY + wH / 2} stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="3" />
         <path d={`M ${dEX} ${wY + wH / 2} Q ${dEX + 20} ${wY + wH / 2 - 30} ${dEX + 10} ${wY + wH / 2 - dPx * 0.9}`} fill="none" stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="0.8" strokeDasharray="4 2" />

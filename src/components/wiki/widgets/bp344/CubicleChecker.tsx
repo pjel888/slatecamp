@@ -67,7 +67,8 @@ export const CubicleChecker = () => {
           <><strong className="text-[#E63329]">✗ Non-compliant:</strong><br />{issues.map((x, i) => <span key={i}>• {x}<br /></span>)}</>
         )}
       </div>
-      <svg width="100%" viewBox="0 0 420 280" className="max-w-[420px] block">
+      <svg width="100%" viewBox="0 0 420 280" className="max-w-[420px] block" role="img" aria-labelledby="cubicle-viz-title">
+        <title id="cubicle-viz-title">Cubicle layout visualization — {ok ? 'compliant' : 'non-compliant'} with 2024 IRR standards</title>
         <rect x={ox} y={oy} width={mPx} height={mPx} fill="none" stroke="#1B3FC4" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.35" />
         <text x={ox + mPx + 3} y={oy + mPx / 2} fontSize="7" fill="#1B3FC4" opacity="0.5" dominantBaseline="central">1800mm min</text>
         <rect x={ox} y={oy} width={cw} height={cd} fill={wOk && dOk ? 'rgba(27,122,60,0.07)' : 'rgba(230,51,41,0.07)'} stroke={wOk && dOk ? '#1B7A3C' : '#E63329'} strokeWidth="1.5" rx="2" />

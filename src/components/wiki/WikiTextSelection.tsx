@@ -84,29 +84,29 @@ export function WikiTextSelection() {
       className="fixed z-50 -translate-x-1/2 -translate-y-full"
       style={{ left: position.x, top: position.y }}
     >
-      <div className="flex items-center gap-0.5 bg-zinc-900 text-white rounded-md shadow-lg px-1 py-0.5">
+      <div role="toolbar" aria-label="Text selection actions" className="flex items-center gap-0.5 bg-zinc-900 text-white rounded-md shadow-lg px-1 py-0.5">
         <button
           onClick={handleHighlight}
           className="flex items-center gap-1 px-2 py-1.5 text-xs hover:bg-zinc-700 rounded transition-colors"
-          title="Highlight"
+          aria-label="Highlight selected text"
         >
           <SCIcon icon={HighlighterCircle} size="xs" />
           <span>Highlight</span>
         </button>
-        <div className="w-px h-4 bg-zinc-700" />
+        <div className="w-px h-4 bg-zinc-700" aria-hidden="true" />
         <button
           onClick={handleCopy}
           className="flex items-center gap-1 px-2 py-1.5 text-xs hover:bg-zinc-700 rounded transition-colors"
-          title="Copy"
+          aria-label="Copy selected text"
         >
           <SCIcon icon={Copy} size="xs" />
           <span>Copy</span>
         </button>
-        <div className="w-px h-4 bg-zinc-700" />
+        <div className="w-px h-4 bg-zinc-700" aria-hidden="true" />
         <button
           onClick={handleAddToNotes}
           className="flex items-center gap-1 px-2 py-1.5 text-xs hover:bg-zinc-700 rounded transition-colors"
-          title="Add to Notes"
+          aria-label="Add selected text to notes"
         >
           <SCIcon icon={NotePencil} size="xs" />
           <span>Note</span>

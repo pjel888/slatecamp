@@ -1,5 +1,5 @@
 export const siteConfig = {
   name: 'SlateCamp',
   description:
-    'AI-adaptive board exam prep for architecture students. Active recall, spaced repetition, 2,400+ practice questions, and real-time analytics for ALE and ARE success.',
+    'The only ALE prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models — built specifically for the Philippine Architecture Licensure Exam.',
 } as const

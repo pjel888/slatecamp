@@ -15,19 +15,23 @@ interface WikiSidebarProps {
   disciplineId: string
   disciplineName: string
   collapsed?: boolean
+  initialNodes?: TaxonomyNode[]
+  initialLawsNodes?: TaxonomyNode[]
 }
 
 export const WikiSidebar = ({
   disciplineId,
   disciplineName,
   collapsed,
+  initialNodes,
+  initialLawsNodes,
 }: WikiSidebarProps) => {
   const pathname = usePathname()
   const { navigate } = useWikiNavigation()
-  const [nodes, setNodes] = React.useState<TaxonomyNode[]>([])
-  const [lawsNodes, setLawsNodes] = React.useState<TaxonomyNode[]>([])
+  const [nodes, setNodes] = React.useState<TaxonomyNode[]>(initialNodes ?? [])
+  const [lawsNodes, setLawsNodes] = React.useState<TaxonomyNode[]>(initialLawsNodes ?? [])
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({})
-  const [loading, setLoading] = React.useState(true)
+  const [loading, setLoading] = React.useState(!initialNodes?.length)
   const [searchQuery, setSearchQuery] = React.useState('')
   const [isHovered, setIsHovered] = React.useState(false)
   const searchRef = React.useRef<HTMLInputElement>(null)
@@ -51,6 +55,11 @@ export const WikiSidebar = ({
 
   // Fetch taxonomy data ONLY when discipline changes (not on every navigation)
   React.useEffect(() => {
+    // Skip fetch if server already provided the data
+    if (initialNodes?.length || initialLawsNodes?.length) {
+      setLoading(false)
+      return
+    }
     if (disciplineId) {
       setLoading(true)
       Promise.all([
@@ -62,38 +71,40 @@ export const WikiSidebar = ({
         setLoading(false)
       })
     }
-  }, [disciplineId])
+  }, [disciplineId, initialNodes, initialLawsNodes])
 
-  // Auto-expand parent nodes to reveal the active article (reacts to pathname changes)
+  // Persist expand/collapse state to localStorage.
+  // First visit: all nodes collapsed. Subsequent visits: restore saved state.
+  const EXPAND_KEY = `wiki_sidebar_expanded_${disciplineId}`
+
   React.useEffect(() => {
     const allNodes = [...nodes, ...lawsNodes]
     if (allNodes.length === 0) return
 
-    const newExpanded: Record<string, boolean> = {}
-    const expandParents = (nodeId: string) => {
-      const node = allNodes.find(n => n.node_id === nodeId)
-      if (node) {
-        newExpanded[node.node_id] = true
-        if (node.parent_id) expandParents(node.parent_id)
-      }
+    // Try to restore saved state
+    let saved: Record<string, boolean> | null = null
+    try {
+      const raw = localStorage.getItem(EXPAND_KEY)
+      if (raw) saved = JSON.parse(raw)
+    } catch {}
+
+    if (saved) {
+      // Restore saved state; new nodes default to collapsed
+      const merged = { ...saved }
+      allNodes.forEach(n => {
+        if (!(n.node_id in merged)) merged[n.node_id] = false
+      })
+      setExpanded(merged)
     }
-
-    const activeNodes = allNodes.filter((n) => n.slug && pathname.includes(n.slug))
-    const activeArticles = allNodes.flatMap(n => n.articles || []).filter(a => a.slug && pathname.includes(a.slug))
-
-    activeNodes.forEach(n => expandParents(n.node_id))
-    activeArticles.forEach(a => {
-      const parentNode = allNodes.find(n => n.articles?.some(art => art.article_id === a.article_id))
-      if (parentNode) expandParents(parentNode.node_id)
-    })
-
-    if (Object.keys(newExpanded).length > 0) {
-      setExpanded((prev) => ({ ...prev, ...newExpanded }))
-    }
-  }, [pathname, nodes, lawsNodes])
+    // First visit — leave everything collapsed (default empty state)
+  }, [nodes, lawsNodes, EXPAND_KEY])
 
   const toggle = (id: string) => {
-    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }))
+    setExpanded((prev) => {
+      const next = { ...prev, [id]: !prev[id] }
+      try { localStorage.setItem(EXPAND_KEY, JSON.stringify(next)) } catch {}
+      return next
+    })
   }
 
   /** Navigate using transition so WikiContentShell can show skeleton */
@@ -143,20 +154,48 @@ export const WikiSidebar = ({
   const isSearching = query.length > 0
   const isNodeExpanded = (nodeId: string) => isSearching || !!expanded[nodeId]
 
+  // Strip leading "NN — " prefixes baked into some node names,
+  // then consistently prepend the resolved order number.
+  const displayName = (node: TaxonomyNode, index?: number) => {
+    const bare = node.name.replace(/^(\d{2}\s*—\s*)+/, '')
+    const order = node.sort_order ?? (index != null ? index + 1 : null)
+    if (order != null) {
+      return `${String(order).padStart(2, '0')} — ${bare}`
+    }
+    return bare
+  }
+
   // --- Render ---
-  const renderNode = (node: TaxonomyNode, isChild = false, sourceNodes: TaxonomyNode[] = nodes) => {
+  const renderNode = (node: TaxonomyNode, isChild = false, sourceNodes: TaxonomyNode[] = nodes, siblingIndex?: number) => {
     const children = sourceNodes.filter((n) => n.parent_id === node.node_id)
     const nodeArticles = node.articles || []
     const hasChildren = children.length > 0
-    const isCategory = node.level <= 2 || hasChildren || nodeArticles.length > 0
+    // A leaf node with a single article of the same name should render as a
+    // direct article link, not as a folder containing the article.
+    const isSingleArticleLeaf = !hasChildren && nodeArticles.length === 1
+    const isCategory = isSingleArticleLeaf
+      ? false
+      : node.level <= 2 || hasChildren || nodeArticles.length > 0
 
     // When searching, skip non-matching children
     const filteredChildren = isSearching
       ? children.filter(c => matchesSearchIn(c, sourceNodes))
       : children
+    // Collect article slugs already covered by single-article-leaf children
+    // so the parent doesn't render them again as separate entries.
+    const childArticleSlugs = new Set(
+      children
+        .filter(c => {
+          const ca = c.articles || []
+          const cc = sourceNodes.filter(n => n.parent_id === c.node_id)
+          return cc.length === 0 && ca.length === 1
+        })
+        .map(c => c.articles![0].slug)
+    )
+    const dedupedArticles = nodeArticles.filter(a => !childArticleSlugs.has(a.slug))
     const filteredArticles = isSearching
-      ? nodeArticles.filter(a => a.title.toLowerCase().includes(query))
-      : nodeArticles
+      ? dedupedArticles.filter(a => a.title.toLowerCase().includes(query))
+      : dedupedArticles
 
     const checkIsActive = (n: TaxonomyNode): boolean => {
       if (n.slug && pathname.includes(n.slug)) return true
@@ -167,6 +206,8 @@ export const WikiSidebar = ({
 
     const isActive = checkIsActive(node)
     const nodeExpanded = isNodeExpanded(node.node_id)
+    // For single-article leaf nodes, link directly to the article
+    const leafHref = `/dashboard/wiki/${isSingleArticleLeaf ? nodeArticles[0].slug : (node.slug ?? '')}`
 
     return (
       <div key={node.node_id} className="space-y-0.5 min-w-0">
@@ -197,17 +238,13 @@ export const WikiSidebar = ({
                 isActive ? 'text-[#1535A8]' : isDimmed ? 'text-zinc-400' : 'text-zinc-700',
               )}
             >
-              <span className="truncate">
-                {node.level === 2 && node.sort_order != null
-                  ? `${String(node.sort_order).padStart(2, '0')} — ${node.name}`
-                  : node.name}
-              </span>
+              <span className="truncate">{displayName(node, siblingIndex)}</span>
             </Link>
           </div>
         ) : (
           <Link
-            href={`/dashboard/wiki/${node.slug ?? ''}`}
-            onClick={(e) => handleLinkClick(e, `/dashboard/wiki/${node.slug ?? ''}`)}
+            href={leafHref}
+            onClick={(e) => handleLinkClick(e, leafHref)}
             className={cn(
               'w-full flex items-center gap-2 py-1.5 px-2 text-[13px] font-medium rounded-sm transition-colors duration-200 group min-w-0',
               isActive
@@ -220,7 +257,7 @@ export const WikiSidebar = ({
             <SCIcon icon={FileText} size="xs"
               className={cn('shrink-0 transition-colors duration-200', isActive ? 'text-primary' : isDimmed ? 'text-zinc-300' : 'text-zinc-300')}
             />
-            <span className="truncate">{node.name}</span>
+            <span className="truncate">{displayName(node, siblingIndex)}</span>
           </Link>
         )}
 
@@ -231,7 +268,7 @@ export const WikiSidebar = ({
               isActive ? 'border-primary/30' : isDimmed ? 'border-zinc-200/30' : 'border-zinc-200/60',
             )}
           >
-            {filteredChildren.map((child) => renderNode(child, true, sourceNodes))}
+            {filteredChildren.map((child, i) => renderNode(child, true, sourceNodes, i))}
 
             {filteredArticles.map((art) => {
               const artHref = `/dashboard/wiki/${art.slug}`

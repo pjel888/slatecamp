@@ -9,6 +9,13 @@ export { WikiPartHeader } from './WikiPartHeader'
 export { WikiMistakeCard } from './WikiMistakeCard'
 export { WikiMistakeList } from './WikiMistakeList'
 
+// Spec-v2 components — article content enrichment
+export { KeyValues } from './KeyValues'
+export { Tabs, Tab } from './Tabs'
+export { Accordion, AccordionItem } from './Accordion'
+export { FormulaBlock } from './FormulaBlock'
+export { InlineQuiz } from './InlineQuiz'
+
 // Re-export existing components used by the current layout
 export { Callout, Note, Warn, Tip, Example } from './WikiCallout'
 export { WikiArticleHeader } from './WikiArticleHeader'

@@ -8,6 +8,7 @@ interface FormulaStep {
   operands: string[]
   comment?: string
   divides?: boolean
+  symbol?: '×' | '÷' | '−' | '+'
 }
 
 export const FormulaBlock = ({ label, steps }: { label: string; steps: FormulaStep[] | string }) => {
@@ -32,7 +33,7 @@ export const FormulaBlock = ({ label, steps }: { label: string; steps: FormulaSt
               </span>
               {j < step.operands.length - 1 && (
                 <span className="font-[var(--font-dm-mono)] text-sm text-[#888]">
-                  {step.divides ? '÷' : 'x'}
+                  {step.symbol ?? (step.divides ? '÷' : '×')}
                 </span>
               )}
             </span>

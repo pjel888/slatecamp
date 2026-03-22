@@ -3,7 +3,7 @@ import { Inter, Syne, DM_Mono } from 'next/font/google'
 import { GeistSans } from 'geist/font/sans'
 import { siteConfig } from '@/lib/constants/site'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
 const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '700', '800'],

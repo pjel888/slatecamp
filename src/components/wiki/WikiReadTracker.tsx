@@ -31,15 +31,20 @@ export const WikiReadTracker = ({
 
     const container = document.getElementById(scrollContainerId)
 
+    let rafId: number | null = null
     const handleScroll = () => {
-      if (!container) return
-      const scrollTop = container.scrollTop
-      const scrollHeight = container.scrollHeight - container.clientHeight
-      if (scrollHeight <= 0) return
-      const pct = (scrollTop / scrollHeight) * 100
-      if (pct > maxScrollPctRef.current) {
-        maxScrollPctRef.current = pct
-      }
+      if (rafId !== null) return
+      rafId = requestAnimationFrame(() => {
+        rafId = null
+        if (!container) return
+        const scrollTop = container.scrollTop
+        const scrollHeight = container.scrollHeight - container.clientHeight
+        if (scrollHeight <= 0) return
+        const pct = (scrollTop / scrollHeight) * 100
+        if (pct > maxScrollPctRef.current) {
+          maxScrollPctRef.current = pct
+        }
+      })
     }
 
     const flushProgress = () => {
@@ -61,6 +66,7 @@ export const WikiReadTracker = ({
     document.addEventListener('visibilitychange', handleVisibilityChange)
 
     return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId)
       container?.removeEventListener('scroll', handleScroll)
       document.removeEventListener('visibilitychange', handleVisibilityChange)
       flushProgress()

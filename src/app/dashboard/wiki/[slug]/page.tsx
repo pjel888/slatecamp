@@ -1,7 +1,5 @@
 import {
-  getWikiArticleBySlug,
-  getWikiArticleByTaxonomySlug,
-  getActiveTaxonomyNode,
+  resolveArticleAndNode,
   getArticleSources,
 } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
@@ -12,6 +10,7 @@ import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
+import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { Button } from '@/components/ui/button'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
@@ -70,80 +69,76 @@ const WikiItemsRenderer = ({ items }: { items: { type: string; text: string }[] 
 )
 
 interface PageProps {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<{ slug: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export default async function WikiArticlePage({ params }: PageProps) {
-  const { slug } = await params
+/** Fetch sibling articles under the same parent taxonomy node. */
+async function getRelatedTopics(node: TaxonomyNode | null): Promise<{ slug: string; title: string }[]> {
+  if (!node?.parent_id) return []
+  const supabase = await createClient()
+  const { data: siblings } = await supabase
+    .from('taxonomy_tree')
+    .select('slug, name')
+    .eq('parent_id', node.parent_id)
+    .neq('node_id', node.node_id)
+    .not('slug', 'is', null)
+    .limit(3)
+  return siblings?.map((s: any) => ({ slug: s.slug, title: s.name })) ?? []
+}
 
-  // 1. Try direct article slug
-  let article = await getWikiArticleBySlug(slug)
+export default async function WikiArticlePage({ params, searchParams }: PageProps) {
+  const [{ slug }, sp] = await Promise.all([params, searchParams])
 
-  // 2. Fallback to taxonomy node slug
-  if (!article) {
-    article = await getWikiArticleByTaxonomySlug(slug)
-  }
+  // Single combined lookup — replaces 3 separate sequential queries
+  const { article, node } = await resolveArticleAndNode(slug)
 
-  // 3. Get the associated taxonomy node
-  const node = await getActiveTaxonomyNode(slug)
+  // Taxonomy-only fallback: node exists but no published article
+  if (!article && node) {
+    const wikiItems: { type: string; text: string }[] = Array.isArray((node as any).wiki_items) ? (node as any).wiki_items : []
 
-  // 4. If still not found, check if it's a valid taxonomy slug — render wiki_items as structured content
-  if (!article) {
-    const supabase = await createClient()
-    const { data: nodeData } = await supabase
-      .from('taxonomy_tree')
-      .select('name, node_id, wiki_items, ale_id, exam_frequency, bloom_level')
-      .eq('slug', slug)
-      .maybeSingle()
+    return (
+      <>
+        <Suspense fallback={null}>
+          <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
+            <WikiHeader nodeId={node.node_id} />
+          </div>
+        </Suspense>
 
-    if (nodeData) {
-      const wikiItems: { type: string; text: string }[] = Array.isArray(nodeData.wiki_items) ? nodeData.wiki_items : []
+        <div className="flex-1 overflow-y-auto">
+          <div className="max-w-4xl mx-auto px-8 py-8">
+            <h1 className="text-xl font-bold text-[#1A2332] mb-1">
+              {node.name}
+            </h1>
+            {node.ale_id && (
+              <p className="font-mono text-[11px] text-[#8896A7] mb-6">
+                {node.ale_id}
+                {(node as any).exam_frequency && <span className="ml-3">Exam frequency: {(node as any).exam_frequency}</span>}
+                {(node as any).bloom_level && <span className="ml-3">Bloom: {(node as any).bloom_level}</span>}
+              </p>
+            )}
 
-      return (
-        <>
-          <Suspense fallback={null}>
-            <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
-              <WikiHeader nodeId={nodeData.node_id} />
-            </div>
-          </Suspense>
-
-          <div className="flex-1 overflow-y-auto">
-            <div className="max-w-4xl mx-auto px-8 py-8">
-              <h1 className="text-xl font-bold text-[#1A2332] mb-1">
-                {nodeData.name}
-              </h1>
-              {nodeData.ale_id && (
-                <p className="font-mono text-[11px] text-[#8896A7] mb-6">
-                  {nodeData.ale_id}
-                  {nodeData.exam_frequency && <span className="ml-3">Exam frequency: {nodeData.exam_frequency}</span>}
-                  {nodeData.bloom_level && <span className="ml-3">Bloom: {nodeData.bloom_level}</span>}
-                </p>
-              )}
-
-              {wikiItems.length > 0 ? (
-                <div className="space-y-4">
-                  <WikiItemsRenderer items={wikiItems} />
-                </div>
-              ) : (
-                <p className="text-[#4A5568] leading-relaxed">
-                  Content for this topic is being developed. Check back soon.
-                </p>
-              )}
-
-              <div className="mt-8 pt-6 border-t border-[#D4DAE3]">
-                <Link href={`/dashboard/review?topicId=${nodeData.node_id}`}>
-                  <Button className="bg-[#1B3FC4] hover:bg-[#1535A8] text-white font-bold rounded-sm px-8">
-                    Practice this Topic
-                  </Button>
-                </Link>
+            {wikiItems.length > 0 ? (
+              <div className="space-y-4">
+                <WikiItemsRenderer items={wikiItems} />
               </div>
+            ) : (
+              <p className="text-[#4A5568] leading-relaxed">
+                Content for this topic is being developed. Check back soon.
+              </p>
+            )}
+
+            <div className="mt-8 pt-6 border-t border-[#D4DAE3]">
+              <Link href={`/dashboard/review?topicId=${node.node_id}`}>
+                <Button className="bg-[#1B3FC4] hover:bg-[#1535A8] text-white font-bold rounded-sm px-8">
+                  Practice this Topic
+                </Button>
+              </Link>
             </div>
           </div>
-        </>
-      )
-    }
+        </div>
+      </>
+    )
   }
 
   if (!article) {
@@ -154,39 +149,19 @@ export default async function WikiArticlePage({ params }: PageProps) {
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
 
-  // Fetch EI prompts + user responses + sources in parallel
-  const [eiPrompts, eiResponses, sources] = await Promise.all([
+  // ALL secondary data in parallel — no more sequential waterfall
+  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics] = await Promise.all([
     getEIPromptsForArticle(article.article_id),
     getUserEIResponsesForArticle(article.article_id),
     getArticleSources(article.article_id),
+    node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
+    getRelatedTopics(node),
   ])
 
   const practiceHref = node?.node_id
     ? `/dashboard/review?topicId=${node.node_id}`
     : `/dashboard/review?articleId=${article.article_id}`
   const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
-
-  // Check if teach-back criteria exist for this topic
-  const teachBackCriteria = node?.node_id
-    ? await getTeachBackCriteria(node.node_id)
-    : null
-
-  // Related topics: sibling articles under the same parent taxonomy node
-  let relatedTopics: { slug: string; title: string }[] = []
-  if (node?.parent_id) {
-    const supabase = await createClient()
-    const { data: siblings } = await supabase
-      .from('taxonomy_tree')
-      .select('slug, name')
-      .eq('parent_id', node.parent_id)
-      .neq('node_id', node.node_id)
-      .not('slug', 'is', null)
-      .limit(3)
-
-    if (siblings) {
-      relatedTopics = siblings.map((s: any) => ({ slug: s.slug, title: s.name }))
-    }
-  }
 
   return (
     <>
@@ -195,6 +170,7 @@ export default async function WikiArticlePage({ params }: PageProps) {
         <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
           <WikiHeader
             nodeId={node?.node_id}
+            articleId={article.article_id}
             articleTitle={article.title}
             articleSlug={article.slug}
             scrollContainerId="wiki-center-pane"
@@ -230,9 +206,10 @@ export default async function WikiArticlePage({ params }: PageProps) {
 
             <div className="max-w-4xl mx-auto px-8 py-8">
               {/* Wrong-answer context banner (UX Strategy Section 6) */}
-              <Suspense fallback={null}>
-                <WrongAnswerBanner />
-              </Suspense>
+              <WrongAnswerBanner
+                fromWrongAnswer={sp?.from === 'wrong-answer'}
+                topicName={(sp?.topic as string) ?? null}
+              />
 
               <WikiArticleHero
                 subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${node.subject_area}` : node?.subject_area || '')}

@@ -37,12 +37,12 @@ export const WikiCalloutBox = ({ type, children }: WikiCalloutBoxProps) => {
       )}
       role="note"
     >
-      <p className={cn(
-        "font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest mb-1",
+      <span className={cn(
+        "block font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest mb-1",
         config.eyebrow
       )}>
         {config.label}
-      </p>
+      </span>
       <div className="text-sm text-[#3D3D3A] leading-relaxed [&_strong]:font-semibold [&_strong]:text-[#1A1A1A] dark:text-[#C8C6C0] dark:[&_strong]:text-[#E2E0D8]">
         {children}
       </div>

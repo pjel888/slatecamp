@@ -25,7 +25,8 @@ export const GrabBarExplainer = () => {
         />
         <span className="font-dm-mono text-[13px] text-[#1B3FC4] min-w-[50px]">{offset} mm</span>
       </div>
-      <svg width="100%" viewBox="0 0 380 320" className="max-w-[380px] block mx-auto">
+      <svg width="100%" viewBox="0 0 380 320" className="max-w-[380px] block mx-auto" role="img" aria-labelledby="grabbar-viz-title">
+        <title id="grabbar-viz-title">Grab bar height visualization — {ok ? 'compliant at 300mm above seat' : `non-compliant at ${offset}mm above seat`}</title>
         <line x1="30" y1={fY} x2="340" y2={fY} stroke="#888" strokeWidth="2" />
         <text x="34" y={fY + 12} fontSize="9" fill="#888">Finished floor (0 mm)</text>
         <line x1={ox} y1="20" x2={ox} y2={fY} stroke="#bbb" strokeWidth="8" strokeLinecap="round" />

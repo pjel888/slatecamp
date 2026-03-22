@@ -34,7 +34,8 @@ export const CorridorVisualizer = () => {
           />
         </div>
       </div>
-      <svg width="100%" viewBox="0 0 480 160" className="max-w-[480px] block">
+      <svg width="100%" viewBox="0 0 480 160" className="max-w-[480px] block" role="img" aria-labelledby="corridor-viz-title">
+        <title id="corridor-viz-title">Corridor width visualization showing {cw}mm width — {ok ? 'compliant' : 'non-compliant'} with 2024 IRR {req}mm minimum</title>
         <rect x={sX} y={wY} width="6" height={wH} fill="#888" rx="1" />
         <rect x={sX + cPx} y={wY} width="6" height={wH} fill="#888" rx="1" />
         <rect x={sX + 6} y={wY} width={cPx - 6} height={wH} fill={ok ? 'rgba(27,122,60,0.07)' : 'rgba(230,51,41,0.07)'} />

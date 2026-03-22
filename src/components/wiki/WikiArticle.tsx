@@ -22,6 +22,7 @@ import { FormulaBlock } from './FormulaBlock'
 import { InlineQuiz } from './InlineQuiz'
 import { Tabs, Tab } from './WikiTabs'
 import { Accordion, AccordionItem } from './WikiAccordion'
+import { LawCallout } from './LawCallout'
 import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
@@ -32,28 +33,25 @@ interface WikiArticleProps {
   eiResponses?: EIResponseMap
 }
 
+/** Derive a URL-safe anchor slug from heading text. */
+const toHeadingId = (children: React.ReactNode): string | undefined =>
+  children
+    ?.toString()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+
 // Base HTML overrides + callouts — lightweight, always loaded.
 // Widgets are resolved dynamically per-article via the registry.
 const baseMdxComponents = {
   // Headings with auto-generated IDs for anchor linking
-  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
-    const id = props.children
-      ?.toString()
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .trim()
-      .replace(/\s+/g, '-')
-    return <h2 id={id} {...props} />
-  },
-  h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => {
-    const id = props.children
-      ?.toString()
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .trim()
-      .replace(/\s+/g, '-')
-    return <h3 id={id} {...props} />
-  },
+  h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
+    <h2 id={toHeadingId(props.children)} {...props} />
+  ),
+  h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
+    <h3 id={toHeadingId(props.children)} {...props} />
+  ),
 
   // Tables — prototype wiki-table styling
   table: (props: React.HTMLAttributes<HTMLTableElement>) => (
@@ -110,6 +108,9 @@ const baseMdxComponents = {
 
   // EI — direct MDX usage (not DB-driven, uses revealText prop)
   ElaborativeInterrogation,
+
+  // Law citation callouts — color-coded by legal code
+  LawCallout,
 }
 
 /**

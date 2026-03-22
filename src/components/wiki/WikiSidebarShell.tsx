@@ -4,7 +4,6 @@ import * as React from 'react'
 import { SidebarSimple } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
-const COLLAPSE_KEY = 'wiki_sidebar_collapsed'
 const WIDTH_KEY = 'wiki_sidebar_width'
 const MIN_W = 180
 const MAX_W = 480
@@ -12,7 +11,8 @@ const DEFAULT_W = 256
 
 /**
  * Wraps the left sidebar with resize drag-handle and collapse toggle.
- * Persists width and collapsed state to localStorage.
+ * Persists width to localStorage. Collapse state is session-only
+ * (always starts expanded on page load).
  */
 export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
   const [isCollapsed, setIsCollapsed] = React.useState(false)
@@ -25,17 +25,10 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
   React.useEffect(() => {
     setMounted(true)
     try {
-      const savedCollapsed = localStorage.getItem(COLLAPSE_KEY)
-      if (savedCollapsed) setIsCollapsed(JSON.parse(savedCollapsed))
       const savedWidth = localStorage.getItem(WIDTH_KEY)
       if (savedWidth) setWidth(Math.min(MAX_W, Math.max(MIN_W, parseInt(savedWidth))))
     } catch {}
   }, [])
-
-  React.useEffect(() => {
-    if (!mounted) return
-    try { localStorage.setItem(COLLAPSE_KEY, JSON.stringify(isCollapsed)) } catch {}
-  }, [mounted, isCollapsed])
 
   const onMouseDown = (e: React.MouseEvent) => {
     if (isCollapsed) return

@@ -84,6 +84,7 @@ export const TeachBackPrompt = ({
           <textarea
             value={response}
             onChange={(e) => setResponse(e.target.value)}
+            aria-label="Explain this concept in your own words"
             placeholder="In my own words, this concept means..."
             rows={6}
             className="w-full px-4 py-3 border border-[#D4DAE3] rounded-md text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/20 focus:border-[#1B3FC4] resize-y"

@@ -5,6 +5,34 @@ import { createClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 
+/**
+ * Retry a Supabase query on transient gateway errors (502/503/504).
+ * Supabase sits behind Cloudflare which returns HTML error pages on
+ * gateway failures; the client surfaces the HTML as `error.message`.
+ */
+async function withRetry<T>(
+  fn: () => Promise<{ data: T | null; error: any }>,
+  maxRetries = 2,
+): Promise<{ data: T | null; error: any }> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const result = await fn()
+    if (!result.error) return result
+
+    const msg: string = result.error.message ?? ''
+    const isTransient =
+      msg.includes('Bad gateway') ||
+      msg.includes('<!DOCTYPE') ||
+      msg.includes('502') ||
+      msg.includes('503') ||
+      msg.includes('504')
+
+    if (!isTransient || attempt === maxRetries) return result
+
+    await new Promise((r) => setTimeout(r, 500 * (attempt + 1)))
+  }
+  return fn()
+}
+
 export interface WikiArticleSource {
   source_id: string
   label: string
@@ -158,40 +186,37 @@ export async function getTaxonomyTree(
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>();
 
   if (leafNodeIds.length > 0) {
-    // Chunk into batches of 150 to stay well under URL limits
-    const CHUNK_SIZE = 150;
-    const allJunctionRows: { node_id: string; article_id: string }[] = [];
-
+    // Chunk into smaller batches and run in PARALLEL with retry.
+    // Uses nested select to combine junction + article lookup in one step.
+    const CHUNK_SIZE = 80;
+    const chunks: string[][] = [];
     for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
-      const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE);
-      const { data: rows, error: junctionError } = await supabase
-        .from("wiki_article_taxonomy")
-        .select("node_id, article_id")
-        .in("node_id", chunk);
-
-      if (junctionError) {
-        console.error("[getTaxonomyTree] Error fetching mappings:", junctionError.code ?? "unavailable");
-        continue;
-      }
-      if (rows) allJunctionRows.push(...rows);
+      chunks.push(leafNodeIds.slice(i, i + CHUNK_SIZE));
     }
 
-    if (allJunctionRows.length > 0) {
-      const articleIds = [...new Set(allJunctionRows.map((r) => r.article_id))];
+    const chunkResults = await Promise.all(
+      chunks.map((chunk) =>
+        withRetry(() =>
+          supabase
+            .from("wiki_article_taxonomy")
+            .select("node_id, wiki_articles(article_id, slug, title)")
+            .in("node_id", chunk),
+        ),
+      ),
+    );
 
-      const { data: articleRows } = await supabase
-        .from("wiki_articles")
-        .select("article_id, slug, title")
-        .in("article_id", articleIds);
-
-      const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? []);
-
-      allJunctionRows.forEach((row) => {
-        const article = articleById.get(row.article_id) as { article_id: string; slug: string; title: string } | undefined;
-        if (!article) return;
+    for (const { data: rows, error: chunkError } of chunkResults) {
+      if (chunkError) {
+        console.error("[getTaxonomyTree] Error fetching mappings:", chunkError.code ?? chunkError.message?.slice(0, 120));
+        continue;
+      }
+      if (!rows) continue;
+      for (const row of rows as any[]) {
+        const article = row.wiki_articles as { article_id: string; slug: string; title: string } | null;
+        if (!article) continue;
         if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, []);
         articleMap.get(row.node_id)!.push(article);
-      });
+      }
     }
   }
 
@@ -239,38 +264,35 @@ export const getLawsTaxonomyTree = async (
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>()
 
   if (leafNodeIds.length > 0) {
-    const CHUNK_SIZE = 150
-    const allJunctionRows: { node_id: string; article_id: string }[] = []
-
+    const CHUNK_SIZE = 80
+    const chunks: string[][] = []
     for (let i = 0; i < leafNodeIds.length; i += CHUNK_SIZE) {
-      const chunk = leafNodeIds.slice(i, i + CHUNK_SIZE)
-      const { data: rows, error: junctionError } = await supabase
-        .from('wiki_article_taxonomy')
-        .select('node_id, article_id')
-        .in('node_id', chunk)
-      if (junctionError) {
-        console.error('[getLawsTaxonomyTree] Error fetching mappings:', junctionError.code ?? 'unavailable')
-        continue
-      }
-      if (rows) allJunctionRows.push(...rows)
+      chunks.push(leafNodeIds.slice(i, i + CHUNK_SIZE))
     }
 
-    if (allJunctionRows.length > 0) {
-      const articleIds = [...new Set(allJunctionRows.map((r) => r.article_id))]
+    const chunkResults = await Promise.all(
+      chunks.map((chunk) =>
+        withRetry(() =>
+          supabase
+            .from('wiki_article_taxonomy')
+            .select('node_id, wiki_articles(article_id, slug, title)')
+            .in('node_id', chunk),
+        ),
+      ),
+    )
 
-      const { data: articleRows } = await supabase
-        .from('wiki_articles')
-        .select('article_id, slug, title')
-        .in('article_id', articleIds)
-
-      const articleById = new Map(articleRows?.map((a: any) => [a.article_id, a]) ?? [])
-
-      allJunctionRows.forEach((row) => {
-        const article = articleById.get(row.article_id) as { article_id: string; slug: string; title: string } | undefined
-        if (!article) return
+    for (const { data: rows, error: chunkError } of chunkResults) {
+      if (chunkError) {
+        console.error('[getLawsTaxonomyTree] Error fetching mappings:', chunkError.code ?? chunkError.message?.slice(0, 120))
+        continue
+      }
+      if (!rows) continue
+      for (const row of rows as any[]) {
+        const article = row.wiki_articles as { article_id: string; slug: string; title: string } | null
+        if (!article) continue
         if (!articleMap.has(row.node_id)) articleMap.set(row.node_id, [])
         articleMap.get(row.node_id)!.push(article)
-      })
+      }
     }
   }
 
@@ -343,6 +365,107 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
   return null;
 }
 
+/**
+ * Resolve both the wiki article and the taxonomy node for a given slug in a
+ * single efficient query chain, reusing intermediate results.
+ *
+ * - If the slug matches a wiki_articles.slug, the article is fetched first,
+ *   then the junction table is used to find the taxonomy node.
+ * - If the slug matches a taxonomy_tree.slug, the node is fetched first,
+ *   then the junction table is used to find the primary (or any) article.
+ * - Returns { article: null, node: null } when neither path finds a match.
+ */
+export async function resolveArticleAndNode(
+  slug: string,
+): Promise<{ article: WikiArticle | null; node: TaxonomyNode | null }> {
+  const supabase = await createClient()
+
+  // Path 1: slug matches an article slug
+  const { data: article } = await supabase
+    .from('wiki_articles')
+    .select('*')
+    .eq('slug', slug)
+    .eq('status', 'published')
+    .limit(1)
+    .maybeSingle()
+
+  if (article) {
+    // Article found — resolve its taxonomy node via junction table
+    const { data: junction } = await supabase
+      .from('wiki_article_taxonomy')
+      .select('node_id')
+      .eq('article_id', (article as WikiArticle).article_id)
+      .eq('is_primary', true)
+      .maybeSingle()
+
+    const nodeId =
+      junction?.node_id ??
+      (await (async () => {
+        const { data: fallback } = await supabase
+          .from('wiki_article_taxonomy')
+          .select('node_id')
+          .eq('article_id', (article as WikiArticle).article_id)
+          .limit(1)
+          .maybeSingle()
+        return fallback?.node_id ?? null
+      })())
+
+    if (nodeId) {
+      const { data: node } = await supabase
+        .from('taxonomy_tree')
+        .select('*')
+        .eq('node_id', nodeId)
+        .single()
+      return { article: article as WikiArticle, node: node as TaxonomyNode | null }
+    }
+
+    return { article: article as WikiArticle, node: null }
+  }
+
+  // Path 2: slug matches a taxonomy node slug
+  const { data: directNode } = await supabase
+    .from('taxonomy_tree')
+    .select('*')
+    .eq('slug', slug)
+    .maybeSingle()
+
+  if (!directNode) return { article: null, node: null }
+
+  // Node found — resolve its primary (or any) article via junction table
+  const { data: primaryJunction } = await supabase
+    .from('wiki_article_taxonomy')
+    .select('article_id')
+    .eq('node_id', (directNode as TaxonomyNode).node_id)
+    .eq('is_primary', true)
+    .maybeSingle()
+
+  let articleId = primaryJunction?.article_id
+
+  if (!articleId) {
+    const { data: fallbackJunction } = await supabase
+      .from('wiki_article_taxonomy')
+      .select('article_id')
+      .eq('node_id', (directNode as TaxonomyNode).node_id)
+      .limit(1)
+      .maybeSingle()
+    articleId = fallbackJunction?.article_id
+  }
+
+  if (!articleId) return { article: null, node: directNode as TaxonomyNode }
+
+  const { data: nodeArticle } = await supabase
+    .from('wiki_articles')
+    .select('*')
+    .eq('article_id', articleId)
+    .eq('status', 'published')
+    .maybeSingle()
+
+  return {
+    article: nodeArticle as WikiArticle | null,
+    node: directNode as TaxonomyNode,
+  }
+}
+
 export interface BreadcrumbItem {
   name: string
   slug: string | null
@@ -353,56 +476,26 @@ export interface BreadcrumbItem {
 /**
  * Build the breadcrumb trail from a taxonomy node up to the root.
  * Returns an array ordered root-first → current-node-last.
+ *
+ * Fetches only the ancestor chain (3-4 rows) instead of the entire discipline
+ * tree (500+ rows).
  */
 export async function getBreadcrumbTrail(nodeId: string): Promise<BreadcrumbItem[]> {
-  const supabase = await createClient();
-
-  // Fetch the start node to determine discipline and tree type
-  const { data: startNode } = await supabase
-    .from("taxonomy_tree")
-    .select("discipline_id, is_cross_ref_only")
-    .eq("node_id", nodeId)
-    .single();
-
-  if (!startNode) return [];
-
-  // Use the same is_cross_ref_only value so ALE-LAWS nodes find their own tree
-  const { data: allNodes } = await supabase
-    .from("taxonomy_tree")
-    .select("node_id, parent_id, name, slug, level")
-    .eq("discipline_id", startNode.discipline_id)
-    .eq("is_cross_ref_only", startNode.is_cross_ref_only)
-    .is("deprecated_at", null)
-    .not("ale_id", "is", null)
-    .order("level", { ascending: true });
-
-  if (!allNodes) return [];
-
-  interface BreadcrumbNode {
-    node_id: string
-    parent_id: string | null
-    name: string
-    slug: string | null
-    level: number
-  }
-
-  const nodeMap = new Map<string, BreadcrumbNode>(
-    allNodes.map((n: any) => [n.node_id, n as BreadcrumbNode])
-  );
-  const trail: BreadcrumbItem[] = [];
-  let currentId: string | null = nodeId;
+  const supabase = await createClient()
+  const trail: BreadcrumbItem[] = []
+  let currentId: string | null = nodeId
 
   while (currentId) {
-    const node = nodeMap.get(currentId);
-    if (!node) break;
-    trail.unshift({
-      name: node.name,
-      slug: node.slug,
-      node_id: node.node_id,
-      level: node.level,
-    });
-    currentId = node.parent_id;
+    const { data: node } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id, parent_id, name, slug, level')
+      .eq('node_id', currentId)
+      .single()
+
+    if (!node) break
+    trail.unshift({ name: node.name, slug: node.slug, node_id: node.node_id, level: node.level })
+    currentId = node.parent_id
   }
 
-  return trail;
+  return trail
 }

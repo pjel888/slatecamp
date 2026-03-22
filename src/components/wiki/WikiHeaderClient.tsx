@@ -14,6 +14,7 @@ import type { BreadcrumbItem } from '@/lib/actions/wiki-actions'
 
 interface WikiHeaderClientProps {
   breadcrumbs: BreadcrumbItem[]
+  articleId?: string
   articleTitle?: string
   articleSlug?: string
   scrollContainerId?: string
@@ -22,6 +23,7 @@ interface WikiHeaderClientProps {
 
 export function WikiHeaderClient({
   breadcrumbs,
+  articleId,
   articleTitle,
   articleSlug,
   scrollContainerId,
@@ -54,7 +56,7 @@ export function WikiHeaderClient({
           <Link
             href={ROUTES.WIKI}
             className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-600 transition-colors shrink-0"
-            title="Back to syllabus"
+            aria-label="Back to syllabus"
           >
             <SCIcon icon={ArrowLeft} size="xs" />
           </Link>
@@ -90,6 +92,7 @@ export function WikiHeaderClient({
         {/* Right: Bookmarks → Mobile actions trigger */}
         <div className="flex items-center gap-1 shrink-0">
           <WikiBookmarks
+            currentArticleId={articleId}
             currentSlug={articleSlug}
             currentTitle={articleTitle}
           />

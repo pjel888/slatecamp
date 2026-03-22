@@ -37,6 +37,15 @@ export interface WikiArticleHeroProps {
   aleTestsYou: string
 }
 
+export type LawCalloutCode = 'nbcp' | 'bp344' | 'ra9514' | 'bp220' | 'pd957' | 'irr'
+
+export interface LawCalloutProps {
+  code: LawCalloutCode
+  section?: string
+  title?: string
+  children: React.ReactNode
+}
+
 export interface WikiMistakeProps {
   number: number
   title: string

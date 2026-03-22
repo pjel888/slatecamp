@@ -1,6 +1,7 @@
-'use client'
-
-import { useSearchParams } from 'next/navigation'
+interface WrongAnswerBannerProps {
+  fromWrongAnswer: boolean
+  topicName: string | null
+}
 
 /**
  * Wrong-Answer Context Banner — UX Strategy Section 6
@@ -8,11 +9,7 @@ import { useSearchParams } from 'next/navigation'
  * Shown at the top of Wiki articles when arriving from a wrong answer.
  */
 
-export const WrongAnswerBanner = () => {
-  const searchParams = useSearchParams()
-  const fromWrongAnswer = searchParams.get('from') === 'wrong-answer'
-  const topicName = searchParams.get('topic')
-
+export const WrongAnswerBanner = ({ fromWrongAnswer, topicName }: WrongAnswerBannerProps) => {
   if (!fromWrongAnswer || !topicName) return null
 
   return (
