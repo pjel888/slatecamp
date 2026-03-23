@@ -63,7 +63,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'male'
                 ? 'bg-[#1B3FC4] text-white'
-                : 'bg-[#F2F0EB] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
+                : 'bg-[#F5F5F5] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
             }`}
           >
             Male
@@ -74,7 +74,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'female'
                 ? 'bg-[#1B3FC4] text-white'
-                : 'bg-[#F2F0EB] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
+                : 'bg-[#F5F5F5] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
             }`}
           >
             Female
@@ -93,7 +93,7 @@ export const BodyDimensionExplorer = () => {
               className={`w-full text-left px-5 py-2.5 border-b border-[#ECEAE4] transition-all duration-150 dark:border-[#3A3835] ${
                 i === activeIdx
                   ? 'bg-[#EEF3FD] border-l-2 border-l-[#1B3FC4] dark:bg-[#1B3FC4]/10'
-                  : 'hover:bg-[#F8F7F5] border-l-2 border-l-transparent dark:hover:bg-[#252420]'
+                  : 'hover:bg-[#F5F5F5] border-l-2 border-l-transparent dark:hover:bg-[#252420]'
               }`}
             >
               <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-[#1B3FC4]' : 'text-[#1A1A1A] dark:text-[#E2E0D8]'}`}>
@@ -119,7 +119,7 @@ export const BodyDimensionExplorer = () => {
               { label: '50th %ile', val: active.p50, desc: 'Average' },
               { label: '95th %ile', val: active.p95, desc: 'Large' },
             ].map((p) => (
-              <div key={p.label} className="bg-[#F2F0EB] rounded-lg p-3 text-center dark:bg-[#252420]">
+              <div key={p.label} className="bg-[#F5F5F5] rounded-lg p-3 text-center dark:bg-[#252420]">
                 <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
                   {p.label}
                 </div>

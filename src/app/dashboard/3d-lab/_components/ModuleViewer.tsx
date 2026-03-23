@@ -1,8 +1,13 @@
 'use client'
 
-import Link from 'next/link'
-import { ArrowLeft } from '@phosphor-icons/react'
-import { SCIcon } from '@/components/graphics/icons/Icon'
+import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useRouter } from 'next/navigation'
+import { LabTopBar } from '@/components/3d-lab/LabTopBar'
+import { OnboardingFlow } from '@/components/3d-lab/OnboardingFlow'
+import { ModuleContextCard } from '@/components/3d-lab/ModuleContextCard'
+import { useLabStore } from '@/stores/useLabStore'
+import { useLabTelemetry } from '@/hooks/useLabTelemetry'
+import type { ModuleConfig } from '@/types/3d-lab'
 import { LabViewport } from './LabViewport'
 import { getModuleById } from '../_config/moduleRegistry'
 
@@ -12,49 +17,113 @@ interface ModuleViewerProps {
 }
 
 /**
- * Full-screen 3D module viewer with a back button to the gallery.
- * Shows context scenario banner and ALE question count from registry metadata.
+ * 3D Lab module viewer — new visual shell wrapping existing template renderers.
+ *
+ * What this provides (non-conflicting):
+ *   - LabTopBar: 36px dark navy bar (in document flow, above canvas)
+ *   - OnboardingFlow: modal overlay on first-ever visit
+ *   - ModuleContextCard: auto-dismiss card on first visit per module
+ *
+ * What the TEMPLATES provide (their own UI):
+ *   - GenericControlPanel / ControlPanel (parameter sliders)
+ *   - ViolationBar / compliance indicators
+ *   - Context scenario text (inside control panel)
+ *   - Any template-specific overlays (cut depth, etc.)
+ *
+ * This separation prevents overlay conflicts. Templates own their canvas-level UI.
  */
 export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
+  const router = useRouter()
   const entry = getModuleById(modelId)
   const title = entry?.title ?? modelId.replace(/-/g, ' ')
+  const codeRef = entry?.codeRef ?? ''
+
+  const resetSession = useLabStore((s) => s.resetSession)
+
+  const [showOnboarding, setShowOnboarding] = useState(false)
+  const [showContextCard, setShowContextCard] = useState(false)
+
+  // Build shim for ModuleContextCard
+  const moduleConfigShim: ModuleConfig = useMemo(() => ({
+    slug: modelId,
+    title,
+    codeReference: codeRef,
+    subject: entry?.subject ?? '',
+    learningObjective: entry?.description ?? '',
+    estimatedMinutes: 5,
+    modelUrl: '',
+    modelSizeMB: 0,
+    defaultCameraPosition: [4, 3, 4],
+    defaultCameraTarget: [0, 0, 0],
+    hotspots: [],
+    questions: [],
+    supportsCrossSection: false,
+    supportsExplodedView: false,
+    preTrainingTips: [],
+    presetViews: {},
+  }), [modelId, title, codeRef, entry])
+
+  // Telemetry
+  useLabTelemetry({ moduleSlug: modelId })
+
+  // Init
+  useEffect(() => {
+    resetSession()
+    if (typeof window !== 'undefined') {
+      if (!localStorage.getItem('3dlab_onboarded')) {
+        setShowOnboarding(true)
+      } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
+        setShowContextCard(true)
+      }
+    }
+    return () => { resetSession() }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [modelId])
+
+  const handleBack = useCallback(() => router.push(basePath), [router, basePath])
+
+  const handleOnboardingComplete = useCallback(() => {
+    setShowOnboarding(false)
+    if (typeof window !== 'undefined' && !localStorage.getItem(`module_${modelId}_seen`)) {
+      setShowContextCard(true)
+    }
+  }, [modelId])
+
+  const handleContextDismiss = useCallback(() => {
+    setShowContextCard(false)
+  }, [])
 
   return (
-    <div className="relative h-full w-full">
-      {/* Back button + title bar */}
-      <div className="absolute top-4 left-4 z-20 flex items-center gap-3">
-        <Link
-          href={basePath}
-          className="flex items-center gap-1.5 rounded-sm bg-white/90 backdrop-blur-sm border border-zinc-200 px-3 py-1.5 shadow-sm hover:bg-white transition-colors duration-150"
-        >
-          <SCIcon icon={ArrowLeft} size="xs" className="text-zinc-600" />
-          <span className="text-[11px] font-medium text-zinc-600">Library</span>
-        </Link>
-        {entry?.codeRef && (
-          <span className="rounded-sm bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-zinc-500 shadow-sm">
-            {entry.codeRef}
-          </span>
-        )}
-        {entry?.aleQuestionCount != null && (
-          <span className="rounded-sm bg-white/80 backdrop-blur-sm border border-zinc-200 px-2 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-[#E8853A] shadow-sm">
-            ~{entry.aleQuestionCount} ALE questions / sitting
-          </span>
+    <div className="flex flex-col h-full w-full">
+      {/* LabTopBar — in document flow, no overlap possible */}
+      <LabTopBar
+        title={title}
+        codeReference={codeRef}
+        visitedCount={0}
+        totalCount={entry?.aleQuestionCount ?? 0}
+        onBack={handleBack}
+      />
+
+      {/* Canvas area — template fills this entirely and owns all its overlays */}
+      <div className="flex-1 relative overflow-hidden bg-[var(--color-cream)]">
+        <LabViewport
+          modelId={modelId}
+          model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+          parameters={[]}
+          hotspots={[]}
+          userTier="camp"
+        />
+
+        {/* ModuleContextCard — top-left, auto-dismiss 6s, doesn't conflict with template UIs */}
+        {showContextCard && !showOnboarding && (
+          <ModuleContextCard config={moduleConfigShim} onDismiss={handleContextDismiss} />
         )}
       </div>
 
-      {/* Full-screen viewport */}
-      <LabViewport
-        modelId={modelId}
-        model={{
-          model_id: modelId,
-          name: title,
-          slug: modelId,
-          url: '',
-        }}
-        parameters={[]}
-        hotspots={[]}
-        userTier="camp"
-      />
+      {/* OnboardingFlow — full-screen modal, above everything */}
+      {showOnboarding && (
+        <OnboardingFlow onComplete={handleOnboardingComplete} />
+      )}
     </div>
   )
 }

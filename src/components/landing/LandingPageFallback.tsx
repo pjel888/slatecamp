@@ -13,7 +13,7 @@ import { ROUTES } from '@/lib/constants'
 
 export function LandingPageFallback() {
   return (
-    <div id='top' className='min-h-screen bg-[#F2F0EB]'>
+    <div id='top' className='min-h-screen bg-[#F5F5F5]'>
       <MarketingNav activeRoute='/' logoScrollsToTop />
       <main>
         <HeroSection
@@ -28,7 +28,7 @@ export function LandingPageFallback() {
         <ComparisonSection />
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t border-[#E8E4DC] px-6 py-24'
+          className='border-t border-[#E5E7EB] px-6 py-24'
         >
           <div className='mx-auto max-w-[1200px]'>
             <div className='flex items-center gap-3'>

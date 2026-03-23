@@ -2,7 +2,7 @@
 
 :root {
   /* Warm gradients — hero backgrounds, celebration surfaces */
-  --grad-warm-surface: linear-gradient(135deg, #F8F7F5 0%, #FEF5ED 100%);
+  --grad-warm-surface: linear-gradient(135deg, #F5F5F5 0%, #FEF5ED 100%);
   --grad-warm-glow: linear-gradient(180deg, rgba(232,133,58,0.06) 0%, rgba(232,133,58,0) 100%);
 
   /* Cool gradients — testing surfaces, focus contexts */
@@ -23,7 +23,7 @@
   --gc-success: #2D9F6F;
   --gc-danger: #D64545;
   --gc-border: #D4DAE3;
-  --gc-cutout: #F8F7F5;
+  --gc-cutout: #F5F5F5;
 }
 
 .dark {

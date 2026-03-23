@@ -154,7 +154,7 @@ export default async function OnboardingPage() {
   return (
     <div
       className="flex min-h-screen flex-col items-center justify-center px-6"
-      style={{ backgroundColor: '#F8F7F5' }}
+      style={{ backgroundColor: '#F5F5F5' }}
     >
       <div className="w-full max-w-md space-y-6">
         {/* Progress indicator */}

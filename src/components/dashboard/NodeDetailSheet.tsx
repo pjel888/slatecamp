@@ -96,7 +96,7 @@ export const NodeDetailSheet = ({ node, onClose }: NodeDetailSheetProps) => {
           {node.wikiSlug && (
             <Link
               href={`/dashboard/wiki/${node.wikiSlug}`}
-              className="flex-1 rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-center text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+              className="flex-1 rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-center text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
               onClick={onClose}
             >
               Read about this

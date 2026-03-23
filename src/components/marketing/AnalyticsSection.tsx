@@ -22,7 +22,7 @@ const ReadinessRing = ({ value, className = '' }: { value: number; className?: s
   return (
     <div className={`relative ${className}`}>
       <svg className='-rotate-90' width={80} height={80} viewBox='0 0 80 80' aria-hidden='true'>
-        <circle cx={40} cy={40} r={radius} fill='none' stroke='#E8E4DC' strokeWidth={5} />
+        <circle cx={40} cy={40} r={radius} fill='none' stroke='#E5E7EB' strokeWidth={5} />
         <motion.circle
           ref={ref}
           cx={40}
@@ -65,7 +65,7 @@ const AnimatedBar = ({ pct, color }: { pct: number; color: string }) => {
 /* ── Analytics mockup ── */
 
 const AnalyticsMockup = () => (
-  <div className='rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5'>
+  <div className='rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-5'>
     {/* Overall score + ring */}
     <div className='mb-4 flex items-center gap-4'>
       <ReadinessRing value={75} className='h-20 w-20' />
@@ -84,7 +84,7 @@ const AnalyticsMockup = () => (
         { label: 'Questions', value: '847', sub: 'answered total', accent: undefined },
         { label: 'Streak', value: '12', sub: 'days active', accent: '#F5A623' },
       ].map((stat) => (
-        <div key={stat.label} className='rounded-[8px] bg-[#F2F0EB] p-3'>
+        <div key={stat.label} className='rounded-[8px] bg-[#F5F5F5] p-3'>
           <div className='font-mono text-[11px] uppercase tracking-[.12em] text-[#888]'>{stat.label}</div>
           <div className='mt-1 text-[20px] font-extrabold' style={{ color: stat.accent || '#111' }}>
             {stat.value}
@@ -108,7 +108,7 @@ const AnalyticsMockup = () => (
           <span className='text-[#888]'>{s.name}</span>
           <span style={{ color: s.color }}>{s.pct}%</span>
         </div>
-        <div className='h-[5px] overflow-hidden rounded-full bg-[#E8E4DC]'>
+        <div className='h-[5px] overflow-hidden rounded-full bg-[#E5E7EB]'>
           <AnimatedBar pct={s.pct} color={s.color} />
         </div>
       </div>
@@ -119,7 +119,7 @@ const AnalyticsMockup = () => (
 /* ── Score legend ── */
 
 const ScoreLegend = () => (
-  <div className='mt-6 rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-4'>
+  <div className='mt-6 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-4'>
     <div className='mb-3 text-[13px] font-bold text-[#111]'>What the score actually means</div>
     {[
       { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: '#1B3FC4' },

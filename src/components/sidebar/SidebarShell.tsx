@@ -96,7 +96,7 @@ export const SidebarShell = ({
               Your progress in this {mode === 'review' ? 'review' : 'quiz'} will
               not be saved. You can come back anytime.
             </DialogDescription>
-            <DialogFooter className="mt-4 gap-2 border-t border-border bg-[#F8F7F5] p-4 sm:flex-row">
+            <DialogFooter className="mt-4 gap-2 border-t border-border bg-[#F5F5F5] p-4 sm:flex-row">
               <Button
                 variant="outline"
                 onClick={() => setLeaveDialogOpen(false)}

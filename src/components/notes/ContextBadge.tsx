@@ -23,7 +23,7 @@ export function ContextBadge({ anchor, className }: ContextBadgeProps) {
         </span>
       )}
       {anchor.article_title && (
-        <span className="inline-flex items-center gap-1 rounded-full border border-[#D4DAE3] bg-[#F8F7F5] px-2.5 py-1 text-[11px] font-medium text-[#4A5568]">
+        <span className="inline-flex items-center gap-1 rounded-full border border-[#D4DAE3] bg-[#F5F5F5] px-2.5 py-1 text-[11px] font-medium text-[#4A5568]">
           <SCIcon icon={BookOpen} size="xs" className="shrink-0" />
           <span className="truncate max-w-[160px]">{anchor.article_title}</span>
         </span>

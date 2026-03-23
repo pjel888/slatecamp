@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import { hasAuthCookie } from '@/lib/supabase/server'
 
 const NAV_LINKS = [
+  { href: ROUTES.TOOLS, label: 'Tools' },
   { href: ROUTES.PRICING, label: 'Pricing' },
   { href: ROUTES.ABOUT, label: 'About' },
   { href: ROUTES.CONTACT, label: 'Contact' },
@@ -38,7 +39,7 @@ export async function MarketingNav({
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
       ? 'border-white/10 bg-primary/80 text-white'
-      : 'border-[#E8E4DC] bg-[#FFFDF7]/90 text-zinc-900',
+      : 'border-[#E5E7EB] bg-[#FFFFFF]/90 text-zinc-900',
   )
 
   return (

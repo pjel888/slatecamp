@@ -124,7 +124,7 @@ const ProofSimulationPage = async () => {
               It will take time and attention. Start when you&apos;re ready.
             </p>
 
-            <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
+            <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F5F5F5] p-4">
               <p className="text-sm text-[#4A5568]">
                 Timer runs as a progress bar, not a countdown.
                 One 10-minute pause is allowed. No answer changes after confirmation.

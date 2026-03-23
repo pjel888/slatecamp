@@ -74,7 +74,7 @@ export const WikiRelatedPopover = ({ topics }: WikiRelatedPopoverProps) => {
           onClick={toggle}
           className="flex items-center gap-1.5 text-[13px] text-[#737370] hover:text-[#1B3FC4] transition-colors duration-150 py-1"
         >
-          <span className="w-4 h-4 rounded bg-[#F2F0EB] flex items-center justify-center text-[9px] font-bold text-[#A8A8A5]">
+          <span className="w-4 h-4 rounded bg-[#F5F5F5] flex items-center justify-center text-[9px] font-bold text-[#A8A8A5]">
             {topics.length}
           </span>
           <span>Related topics</span>
@@ -95,7 +95,7 @@ export const WikiRelatedPopover = ({ topics }: WikiRelatedPopoverProps) => {
                 key={topic.slug}
                 href={ROUTES.WIKI_PAGE(topic.slug)}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-2 px-3 py-2 hover:bg-[#F8F7F5] transition-colors dark:hover:bg-[#252420] ${i < topics.length - 1 ? 'border-b border-[#ECEAE4] dark:border-[#3A3835]' : ''}`}
+                className={`flex items-center gap-2 px-3 py-2 hover:bg-[#F5F5F5] transition-colors dark:hover:bg-[#252420] ${i < topics.length - 1 ? 'border-b border-[#ECEAE4] dark:border-[#3A3835]' : ''}`}
               >
                 <SCIcon icon={FileText} size="xs" className="text-[#A8A8A5] shrink-0" />
                 <span className="text-[11px] font-bold text-[#1A1A1A] dark:text-[#E2E0D8]">

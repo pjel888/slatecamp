@@ -4,7 +4,7 @@ export const BedroomPlanView = () => {
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 bg-[#F2F0EB] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="flex items-center justify-between px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
         <div>
           <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
             Plan View

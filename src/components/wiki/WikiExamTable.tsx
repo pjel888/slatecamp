@@ -6,7 +6,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
   return (
     <div className="not-prose my-6 rounded-lg border border-[#E0DED8] overflow-hidden dark:border-[#3A3835]">
       {caption && (
-        <p className="font-sans text-xs font-semibold text-[#1A1A1A] px-3 py-2.5 border-b border-[#E0DED8] bg-[#F8F7F5] dark:text-[#E2E0D8] dark:bg-[#2A2825] dark:border-[#3A3835]">
+        <p className="font-sans text-xs font-semibold text-[#1A1A1A] px-3 py-2.5 border-b border-[#E0DED8] bg-[#F5F5F5] dark:text-[#E2E0D8] dark:bg-[#2A2825] dark:border-[#3A3835]">
           {caption}
         </p>
       )}

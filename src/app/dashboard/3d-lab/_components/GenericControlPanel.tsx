@@ -1,19 +1,27 @@
 // src/app/dashboard/3d-lab/_components/GenericControlPanel.tsx
+// Restyled to match implementation plan v2 §6.1 — ParameterPanel design
 'use client'
 
 import { memo, useState, useMemo } from 'react'
-import { CaretDown, CaretRight, ArrowCounterClockwise } from '@phosphor-icons/react'
+import {
+  CaretDown,
+  CaretRight,
+  ArrowCounterClockwise,
+  CheckCircle,
+  Warning,
+  XCircle,
+} from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { Button } from '@/components/ui/button'
-import { Slider } from '@/components/ui/slider'
 import { cn } from '@/lib/utils'
 import type { ParameterDef, Preset } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 
-// ─── Sub-components ──────────────────────────────────────────────────────────
+const MONO_FONT = 'var(--font-dm-mono), monospace'
 
-function Section({
+// ─── Section (collapsible group) ─────────────────────────────────────────────
+
+const Section = ({
   title,
   children,
   defaultOpen = true,
@@ -21,29 +29,34 @@ function Section({
   title: string
   children: React.ReactNode
   defaultOpen?: boolean
-}) {
+}) => {
   const [open, setOpen] = useState(defaultOpen)
   return (
-    <div className="border-t border-border first:border-t-0 pt-2 first:pt-0">
+    <div className="border-t border-[#D4DAE3] pt-3 first:border-t-0 first:pt-0">
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-1 w-full text-left mb-2"
       >
-        {open ? (
-          <SCIcon icon={CaretDown} size="xs" className="text-zinc-400" />
-        ) : (
-          <SCIcon icon={CaretRight} size="xs" className="text-zinc-400" />
-        )}
-        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+        <SCIcon
+          icon={open ? CaretDown : CaretRight}
+          size="xs"
+          className="text-[#8896A7]"
+        />
+        <span
+          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+          className="font-bold uppercase tracking-[0.15em] text-[#8896A7]"
+        >
           {title}
         </span>
       </button>
-      {open && <div className="space-y-3">{children}</div>}
+      {open && <div className="space-y-4">{children}</div>}
     </div>
   )
 }
 
-function SliderControl({
+// ─── Slider (Campfire cobalt/gold/red compliance colors) ─────────────────────
+
+const SliderControl = ({
   param,
   value,
   onChange,
@@ -51,35 +64,85 @@ function SliderControl({
   param: ParameterDef
   value: number
   onChange: (v: number) => void
-}) {
+}) => {
   const displayVal =
-    param.decimals !== undefined ? value.toFixed(param.decimals) : value
+    param.decimals !== undefined ? value.toFixed(param.decimals) : Math.round(value)
+
+  const min = param.min ?? 0
+  const max = param.max ?? 100
+  const pct = Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100))
+
   return (
-    <div className="space-y-1">
+    <div className="space-y-1.5">
       <div className="flex items-center justify-between">
-        <label className="text-[11px] font-medium text-zinc-600">
+        <label className="text-[11px] font-medium text-[#1A2332]">
           {param.label}
         </label>
-        <span className="text-[11px] font-bold text-zinc-900 tabular-nums">
-          {displayVal} {param.unit ?? ''}
+        <span
+          className="text-[#1A2332] font-medium tabular-nums"
+          style={{ fontFamily: MONO_FONT, fontSize: 12 }}
+        >
+          {displayVal}
+          {param.unit && (
+            <span className="text-[#8896A7] ml-0.5" style={{ fontSize: 11 }}>
+              {param.unit}
+            </span>
+          )}
         </span>
       </div>
-      <Slider
-        value={[value]}
-        min={param.min ?? 0}
-        max={param.max ?? 100}
-        step={param.step ?? 1}
-        onValueChange={(v) => {
-          const val = Array.isArray(v) ? v[0] : v
-          if (typeof val === 'number') onChange(val)
-        }}
-        className="cursor-pointer"
-      />
+
+      {/* Custom slider track matching spec: 4px track, cobalt fill */}
+      <div className="relative h-5 flex items-center">
+        <div className="absolute inset-x-0 h-[4px] rounded-full bg-[#D4DAE3]" />
+        <div
+          className="absolute left-0 h-[4px] rounded-full transition-all duration-75"
+          style={{
+            width: `${pct}%`,
+            backgroundColor: '#1B3FC4',
+          }}
+        />
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step={param.step ?? 1}
+          value={value}
+          onChange={(e) => onChange(Number(e.target.value))}
+          className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+          aria-label={param.label}
+          aria-valuemin={min}
+          aria-valuemax={max}
+          aria-valuenow={value}
+        />
+        {/* Visual thumb */}
+        <div
+          className="absolute w-[14px] h-[14px] rounded-full bg-white border-2 border-[#1B3FC4] pointer-events-none shadow-sm transition-transform duration-75 hover:scale-110"
+          style={{ left: `calc(${pct}% - 7px)` }}
+        />
+      </div>
+
+      {/* Range labels */}
+      <div className="flex justify-between">
+        <span
+          className="text-[#8896A7]"
+          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+        >
+          {min}
+        </span>
+        <span
+          className="text-[#8896A7]"
+          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+        >
+          {max}
+        </span>
+      </div>
     </div>
   )
 }
 
-function ToggleControl({
+// ─── Toggle ──────────────────────────────────────────────────────────────────
+
+const ToggleControl = ({
   param,
   value,
   onChange,
@@ -87,33 +150,34 @@ function ToggleControl({
   param: ParameterDef
   value: boolean
   onChange: (v: boolean) => void
-}) {
-  return (
-    <div className="flex items-center justify-between">
-      <label className="text-[11px] font-medium text-zinc-600">
-        {param.label}
-      </label>
-      <button
-        onClick={() => onChange(!value)}
+}) => (
+  <div className="flex items-center justify-between">
+    <label className="text-[11px] font-medium text-[#1A2332]">
+      {param.label}
+    </label>
+    <button
+      onClick={() => onChange(!value)}
+      className={cn(
+        'w-9 h-5 rounded-full transition-colors duration-150 relative cursor-pointer',
+        value ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]'
+      )}
+      role="switch"
+      aria-checked={value}
+      aria-label={param.label}
+    >
+      <span
         className={cn(
-          'w-8 h-4 rounded-full transition-colors relative',
-          value
-            ? 'bg-primary cursor-pointer'
-            : 'bg-zinc-200 cursor-pointer'
+          'absolute top-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-transform duration-150',
+          value ? 'translate-x-[18px]' : 'translate-x-0.5'
         )}
-      >
-        <span
-          className={cn(
-            'absolute top-0.5 w-3 h-3 rounded-full bg-white shadow-sm transition-transform',
-            value ? 'translate-x-4' : 'translate-x-0.5'
-          )}
-        />
-      </button>
-    </div>
-  )
-}
+      />
+    </button>
+  </div>
+)
 
-function DropdownControl({
+// ─── Dropdown ────────────────────────────────────────────────────────────────
+
+const DropdownControl = ({
   param,
   value,
   onChange,
@@ -121,23 +185,81 @@ function DropdownControl({
   param: ParameterDef
   value: string
   onChange: (v: string) => void
-}) {
+}) => (
+  <div className="space-y-1">
+    <label className="text-[11px] font-medium text-[#1A2332]">
+      {param.label}
+    </label>
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className="w-full text-[11px] font-medium text-[#1A2332] border border-[#D4DAE3] rounded-sm px-2 py-1.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+      style={{ fontFamily: MONO_FONT }}
+    >
+      {param.options?.map((o) => (
+        <option key={o.value} value={o.value}>
+          {o.label}
+        </option>
+      ))}
+    </select>
+  </div>
+)
+
+// ─── Compliance Status (live indicator at bottom of panel) ───────────────────
+
+const ComplianceIndicator = ({
+  violations,
+}: {
+  violations: Array<{ message: string; severity: string }>
+}) => {
+  if (violations.length === 0) {
+    return (
+      <div className="rounded-md p-3 bg-[#EDFAF4] border border-[#2D9F6F]/20">
+        <div className="flex items-center gap-2">
+          <SCIcon icon={CheckCircle} size="xs" className="text-[#2D9F6F]" />
+          <span
+            className="text-[#2D9F6F] font-medium"
+            style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+          >
+            COMPLIANT
+          </span>
+        </div>
+        <p className="text-[11px] text-[#4A5568] mt-1">
+          All values within code limits.
+        </p>
+      </div>
+    )
+  }
+
+  const hasError = violations.some((v) => v.severity === 'error')
+
   return (
-    <div className="flex items-center justify-between gap-2">
-      <label className="text-[11px] font-medium text-zinc-600 shrink-0">
-        {param.label}
-      </label>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary min-w-0"
-      >
-        {param.options?.map((o) => (
-          <option key={o.value} value={o.value}>
-            {o.label}
-          </option>
-        ))}
-      </select>
+    <div
+      className={cn(
+        'rounded-md p-3 border',
+        hasError
+          ? 'bg-[#FDF0F0] border-[#D64545]/20'
+          : 'bg-[#FEF8ED] border-[#D4951A]/20'
+      )}
+    >
+      <div className="flex items-center gap-2">
+        <SCIcon
+          icon={hasError ? XCircle : Warning}
+          size="xs"
+          className={hasError ? 'text-[#D64545]' : 'text-[#D4951A]'}
+        />
+        <span
+          className={cn('font-medium', hasError ? 'text-[#D64545]' : 'text-[#D4951A]')}
+          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+        >
+          {hasError ? 'VIOLATION' : 'AT LIMIT'}
+        </span>
+      </div>
+      {violations.map((v, i) => (
+        <p key={i} className="text-[11px] text-[#4A5568] mt-1">
+          {v.message}
+        </p>
+      ))}
     </div>
   )
 }
@@ -150,6 +272,12 @@ interface GenericControlPanelProps {
   presets?: Preset[]
   useStore: UseBoundStore<StoreApi<ModuleStoreState>>
   className?: string
+  contextScenario?: string
+  violations?: Array<{
+    check: (params: Record<string, number | boolean | string>) => boolean
+    message: string
+    severity: string
+  }>
 }
 
 export const GenericControlPanel = memo(function GenericControlPanel({
@@ -158,28 +286,33 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   presets,
   useStore,
   className,
+  contextScenario,
+  violations,
 }: GenericControlPanelProps) {
   const params = useStore((s) => s.params)
   const setParam = useStore((s) => s.setParam)
   const setParams = useStore((s) => s.setParams)
   const reset = useStore((s) => s.reset)
 
-  // Group parameters by their group field
+  // Group parameters
   const grouped = useMemo(() => {
     const groups = new Map<string, ParameterDef[]>()
     for (const p of parameters) {
       const group = p.group ?? '_ungrouped'
       const existing = groups.get(group)
-      if (existing) {
-        existing.push(p)
-      } else {
-        groups.set(group, [p])
-      }
+      if (existing) existing.push(p)
+      else groups.set(group, [p])
     }
     return groups
   }, [parameters])
 
-  function renderParam(param: ParameterDef) {
+  // Active violations
+  const activeViolations = useMemo(
+    () => (violations ?? []).filter((v) => v.check(params)),
+    [violations, params]
+  )
+
+  const renderParam = (param: ParameterDef) => {
     const value = params[param.key] ?? param.default
 
     switch (param.type) {
@@ -218,54 +351,82 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   return (
     <div
       className={cn(
-        'absolute left-4 top-4 bottom-4 z-10 w-72 overflow-y-auto',
-        'bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-3',
+        // Flush left drawer per implementation plan §6.1
+        'absolute left-0 top-0 bottom-0 z-10 w-[240px] overflow-y-auto',
+        'bg-white border-r border-[#D4DAE3]',
+        // Mobile: bottom sheet
+        'max-sm:left-0 max-sm:right-0 max-sm:top-auto max-sm:bottom-0 max-sm:w-full max-sm:max-h-[50vh] max-sm:rounded-t-lg max-sm:border-r-0 max-sm:border-t max-sm:shadow-lg',
         className
       )}
+      role="complementary"
+      aria-label="Parameter controls"
     >
       {/* Header */}
-      <div className="flex items-center justify-between">
-        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+      <div className="sticky top-0 bg-white border-b border-[#D4DAE3] px-4 py-3 z-10">
+        <span
+          className="text-[#8896A7] uppercase"
+          style={{ fontFamily: MONO_FONT, fontSize: 11, letterSpacing: '0.1em' }}
+        >
           {title}
         </span>
-        <Button
-          variant="ghost"
-          size="icon"
-          className="h-6 w-6 rounded-sm hover:bg-zinc-100"
-          onClick={reset}
-          title="Reset to defaults"
-        >
-          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
-        </Button>
+        <div className="flex items-center justify-between mt-1">
+          <span className="text-[13px] font-semibold text-[#1A2332]">
+            Parameters
+          </span>
+          <button
+            onClick={reset}
+            className="p-1 rounded-sm hover:bg-[#EEF2FC] transition-colors duration-150"
+            title="Reset to defaults"
+          >
+            <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-[#8896A7]" />
+          </button>
+        </div>
       </div>
 
-      {/* Preset buttons */}
-      {presets && presets.length > 0 && (
-        <div className="flex flex-wrap gap-1">
-          {presets.map((preset) => (
-            <button
-              key={preset.label}
-              onClick={() => setParams(preset.values)}
-              className="text-[11px] font-medium text-primary border border-primary/30 rounded px-1.5 py-0.5 hover:bg-[#EEF2FC] transition-colors"
-            >
-              {preset.label}
-            </button>
-          ))}
-        </div>
-      )}
-
-      {/* Parameter groups */}
-      {Array.from(grouped.entries()).map(([group, params]) =>
-        group === '_ungrouped' ? (
-          <div key={group} className="space-y-3">
-            {params.map(renderParam)}
+      <div className="p-4 space-y-4">
+        {/* Context scenario */}
+        {contextScenario && (
+          <div className="rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-2.5">
+            <p className="text-[11px] leading-relaxed text-[#4A5568]">
+              {contextScenario}
+            </p>
           </div>
-        ) : (
-          <Section key={group} title={group}>
-            {params.map(renderParam)}
-          </Section>
-        )
-      )}
+        )}
+
+        {/* Preset buttons */}
+        {presets && presets.length > 0 && (
+          <div className="flex flex-wrap gap-1.5">
+            {presets.map((preset) => (
+              <button
+                key={preset.label}
+                onClick={() => setParams(preset.values)}
+                className="text-[11px] font-medium text-[#1B3FC4] border border-[#1B3FC4]/20 rounded-sm px-2 py-1 hover:bg-[#EEF2FC] transition-colors duration-150"
+                style={{ fontFamily: MONO_FONT, fontSize: 11 }}
+              >
+                {preset.label}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Parameter groups */}
+        {Array.from(grouped.entries()).map(([group, groupParams]) =>
+          group === '_ungrouped' ? (
+            <div key={group} className="space-y-4">
+              {groupParams.map(renderParam)}
+            </div>
+          ) : (
+            <Section key={group} title={group}>
+              {groupParams.map(renderParam)}
+            </Section>
+          )
+        )}
+
+        {/* Compliance indicator */}
+        {violations && (
+          <ComplianceIndicator violations={activeViolations} />
+        )}
+      </div>
     </div>
   )
 })

@@ -29,7 +29,7 @@ const statusLabels: Record<string, string> = {
 }
 
 const statusColors: Record<string, string> = {
-  draft: 'bg-[#F8F7F5] text-[#4A5568]',
+  draft: 'bg-[#F5F5F5] text-[#4A5568]',
   pending_review: 'bg-[#FEF8ED] text-[#D4951A]',
   published: 'bg-[#EDFAF4] text-[#2D9F6F]',
   archived: 'bg-[#FDF0F0] text-[#D64545]',

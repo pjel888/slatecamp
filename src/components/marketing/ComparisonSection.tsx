@@ -51,7 +51,7 @@ const COMPARISON_ROWS: readonly {
 export const ComparisonSection = () => (
   <section
     aria-labelledby='comparison-heading'
-    className='border-t border-[#E8E4DC] px-6 py-24'
+    className='border-t border-[#E5E7EB] px-6 py-24'
   >
     <div className='mx-auto max-w-[1200px]'>
       <ScrollReveal delay={0}>
@@ -77,14 +77,14 @@ export const ComparisonSection = () => (
       </ScrollReveal>
 
       {/* Table — desktop */}
-      <div className='mt-10 hidden overflow-hidden rounded-md border border-[#E8E4DC] md:block'>
+      <div className='mt-10 hidden overflow-hidden rounded-md border border-[#E5E7EB] md:block'>
         {/* Header row */}
-        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] bg-[#FFFDF7]'>
+        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-[#E5E7EB] bg-[#FFFFFF]'>
           <div className='px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]' />
-          <div className='border-l border-[#E8E4DC] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
+          <div className='border-l border-[#E5E7EB] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
             Traditional Review Center
           </div>
-          <div className='border-l border-[#E8E4DC] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-[#1B3FC4]'>
+          <div className='border-l border-[#E5E7EB] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-[#1B3FC4]'>
             SlateCamp
           </div>
         </div>
@@ -93,18 +93,18 @@ export const ComparisonSection = () => (
           {COMPARISON_ROWS.map((row) => (
             <StaggerItem key={row.dimension}>
               <div
-                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E8E4DC] last:border-0 ${
-                  row.highlight ? 'bg-[#FFFDF7]' : ''
+                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E5E7EB] last:border-0 ${
+                  row.highlight ? 'bg-[#FFFFFF]' : ''
                 }`}
               >
                 <div className='px-5 py-3.5 text-[13px] font-medium text-[#18181B]'>
                   {row.dimension}
                 </div>
-                <div className='border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
+                <div className='border-l border-[#E5E7EB] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
                   {row.traditional}
                 </div>
                 <div
-                  className={`border-l border-[#E8E4DC] px-5 py-3.5 text-[13px] ${
+                  className={`border-l border-[#E5E7EB] px-5 py-3.5 text-[13px] ${
                     row.highlight
                       ? 'font-medium text-[#1B3FC4]'
                       : 'text-[#555]'
@@ -123,7 +123,7 @@ export const ComparisonSection = () => (
         <StaggerParent className='space-y-3'>
           {COMPARISON_ROWS.map((row) => (
             <StaggerItem key={row.dimension}>
-              <div className='rounded-md border border-[#E8E4DC] p-4'>
+              <div className='rounded-md border border-[#E5E7EB] p-4'>
                 <p className='text-[11px] font-semibold uppercase tracking-wide text-[#9CA3AF]'>
                   {row.dimension}
                 </p>

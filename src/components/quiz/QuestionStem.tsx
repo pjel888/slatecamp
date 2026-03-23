@@ -35,7 +35,7 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
   return (
     <div className={cn('space-y-4', className)}>
       {imageUrl && !hasError && (
-        <div className="rounded-md overflow-hidden border border-[#D4DAE3] bg-[#F8F7F5]">
+        <div className="rounded-md overflow-hidden border border-[#D4DAE3] bg-[#F5F5F5]">
           {!isLoaded && (
             <div className="animate-pulse bg-[#D4DAE3]/30 h-[200px]" />
           )}

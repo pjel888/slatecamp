@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 const TryPage = () => {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#F8F7F5' }}>
+    <main className="min-h-screen" style={{ backgroundColor: '#F5F5F5' }}>
       <PreAssessmentTeaser />
     </main>
   )

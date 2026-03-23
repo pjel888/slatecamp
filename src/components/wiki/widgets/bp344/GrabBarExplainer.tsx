@@ -10,7 +10,7 @@ export const GrabBarExplainer = () => {
   const ox = 60, wcW = 44, wcX = ox + 28, floorToBar = 450 + offset
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F8F7F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[#1B3FC4] mb-2">Interactive — Grab Bar Reference Points (2024 IRR)</div>
       <p className="text-[13px] text-[#444] mb-2.5">The 2024 IRR specifies grab bar height from two reference points simultaneously. Move the slider — only 300 mm above seat is compliant.</p>
       <div className="flex items-center gap-3 mb-3 flex-wrap">

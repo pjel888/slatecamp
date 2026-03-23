@@ -210,7 +210,7 @@ export const TrailDailyView = ({
                       {step.title}
                     </span>
                     {step.is_optional && (
-                      <span className="text-[11px] text-[#8896A7] bg-[#F8F7F5] px-1.5 py-0.5 rounded-sm">
+                      <span className="text-[11px] text-[#8896A7] bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">
                         Optional
                       </span>
                     )}
@@ -254,7 +254,7 @@ export const TrailDailyView = ({
         const totalRequired = requiredSteps.length
         const percent = totalRequired > 0 ? Math.round((completedCount / totalRequired) * 100) : 0
         return (
-          <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+          <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs text-[#4A5568]">
                 Day progress: {completedCount}/{totalRequired} complete

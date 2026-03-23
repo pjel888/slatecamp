@@ -31,7 +31,7 @@ export const CubicleChecker = () => {
   const clPx = Math.round(450 * sc), dPx = Math.round(door * sc), tsY = oy + cd + 22
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F8F7F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[#1B3FC4] mb-2">Interactive — Cubicle Compliance Checker (2024 IRR)</div>
       <div className="flex gap-3.5 flex-wrap mb-3">
         {([['Width (mm)', w, setW], ['Depth (mm)', d, setD], ['Door clear width (mm)', door, setDoor], ['Turning space (mm)', turn, setTurn]] as const).map(([lbl, val, set]) => (

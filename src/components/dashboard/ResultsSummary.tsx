@@ -206,7 +206,7 @@ export function ResultsSummary({
 
       {/* ── Pacing Insight ──────────────────────────────────────────── */}
       {debrief && debrief.userHistoricalAvgTimeMs && debrief.avgTimeMs > 0 && (
-        <div className='mb-8 p-4 bg-[#F8F7F5] border border-border rounded-md flex items-center gap-3'>
+        <div className='mb-8 p-4 bg-[#F5F5F5] border border-border rounded-md flex items-center gap-3'>
           <SCIcon
             icon={debrief.avgTimeMs < debrief.userHistoricalAvgTimeMs ? TrendDown : TrendUp}
             size='sm'
@@ -263,7 +263,7 @@ export function ResultsSummary({
                   </div>
                 </div>
                 <div className='flex items-center gap-4'>
-                  <div className='w-24 h-1.5 bg-[#F8F7F5] rounded-full overflow-hidden border border-[#D4DAE3]/30 hidden sm:block'>
+                  <div className='w-24 h-1.5 bg-[#F5F5F5] rounded-full overflow-hidden border border-[#D4DAE3]/30 hidden sm:block'>
                     <div
                       className={cn(
                         'h-full rounded-full',
@@ -304,7 +304,7 @@ export function ResultsSummary({
                 {/* Summary row */}
                 <button
                   onClick={() => toggleExpand(q.question_id)}
-                  className='w-full flex items-center gap-3 p-4 text-left hover:bg-[#F8F7F5]/50 transition-colors'
+                  className='w-full flex items-center gap-3 p-4 text-left hover:bg-[#F5F5F5]/50 transition-colors'
                 >
                   <span className='text-[11px] font-bold text-[#8896A7] w-6 shrink-0'>
                     {idx + 1}
@@ -324,7 +324,7 @@ export function ResultsSummary({
                       </span>
                     )}
                     {topicName && (
-                      <span className='hidden md:block text-[11px] text-[#8896A7] bg-[#F8F7F5] px-2 py-0.5 rounded-sm max-w-[120px] truncate'>
+                      <span className='hidden md:block text-[11px] text-[#8896A7] bg-[#F5F5F5] px-2 py-0.5 rounded-sm max-w-[120px] truncate'>
                         {topicName}
                       </span>
                     )}
@@ -409,7 +409,7 @@ export function ResultsSummary({
         <Button
           onClick={onExit}
           variant='outline'
-          className='h-14 rounded-sm border-[#D4DAE3] text-[#4A5568] hover:bg-[#F8F7F5] font-bold uppercase tracking-widest text-[11px] gap-2'
+          className='h-14 rounded-sm border-[#D4DAE3] text-[#4A5568] hover:bg-[#F5F5F5] font-bold uppercase tracking-widest text-[11px] gap-2'
         >
           <SCIcon icon={SquaresFour} size='sm' />
           Back to Testing Hub
@@ -491,7 +491,7 @@ const CalibrationSection = ({
       <div className="bg-white border border-[#D4DAE3] rounded-md overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-[#D4DAE3] bg-[#F8F7F5]">
+            <tr className="border-b border-[#D4DAE3] bg-[#F5F5F5]">
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Subject</th>
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Predicted</th>
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Actual</th>

@@ -16,11 +16,11 @@ interface SubjectMasteryCardProps {
 // ── Mastery color constants ──────────────────────────────────────────────────
 
 const MASTERY_COLORS = {
-  unexplored: '#E8E4DC',
+  unexplored: '#E5E7EB',
   high: '#57be90',
   mid: '#da9359',
   low: '#d36f6f',
-  track: '#F2F0EB',
+  track: '#F5F5F5',
   ringHigh: '#57be90',
   ringMid: '#8ED4AE',
   ringMidLow: '#da9359',
@@ -287,7 +287,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
   return (
     <div className='grid grid-rows-3 bg-white rounded-md overflow-hidden h-full p-2 gap-2'>
       {/* ── Radial heatmap section ──────────────────────────────────── */}
-      <div className='rounded-md bg-[#F8F7F5] border border-[#E8E4DC] p-3 flex flex-col min-h-0'>
+      <div className='rounded-md bg-[#F5F5F5] border border-[#E5E7EB] p-3 flex flex-col min-h-0'>
         <div className='flex items-center gap-1.5 mb-0.5'>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -326,7 +326,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
       </div>
 
       {/* ── Subject breakdown bars ──────────────────────────────────── */}
-      <div className='row-span-2 rounded-md bg-[#F8F7F5] border border-[#E8E4DC] p-3 flex flex-col min-h-0 overflow-hidden'>
+      <div className='row-span-2 rounded-md bg-[#F5F5F5] border border-[#E5E7EB] p-3 flex flex-col min-h-0 overflow-hidden'>
         <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B] shrink-0'>
           [ Breakdown ]
         </h4>
@@ -350,7 +350,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                     {clamped}%
                   </span>
                 </div>
-                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-[#E8E4DC]'>
+                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-[#E5E7EB]'>
                   <div
                     className='h-full rounded-full'
                     style={{
@@ -372,7 +372,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </div>
 
         {/* Footer */}
-        <div className='pt-2 border-t border-[#E8E4DC] flex items-center justify-between shrink-0'>
+        <div className='pt-2 border-t border-[#E5E7EB] flex items-center justify-between shrink-0'>
           <p className='text-[11px] text-[#8896A7]'>
             {hasData
               ? `${abovePassing} of ${data.length} above passing`

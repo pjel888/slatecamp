@@ -224,7 +224,7 @@ export const ElaborativeInterrogation = ({
 
         {/* Reveal text */}
         {isRevealed && sanitizedAnswer && (
-          <div className="mt-4 p-4 bg-[#F2F0EB] rounded-[10px] dark:bg-[#252420]">
+          <div className="mt-4 p-4 bg-[#F5F5F5] rounded-[10px] dark:bg-[#252420]">
             <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5">
               Why This Matters
             </div>

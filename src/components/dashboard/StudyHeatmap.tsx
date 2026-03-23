@@ -21,7 +21,7 @@ const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Se
 
 // Cobalt-based intensity scale
 const INTENSITY_COLORS = [
-  '#F2F0EB',                   // 0: no activity (Neutral Cream)
+  '#F5F5F5',                   // 0: no activity (Neutral Cream)
   'rgba(27, 63, 196, 0.15)',   // 1: 1-2 questions
   'rgba(27, 63, 196, 0.30)',   // 2: 3-5 questions
   'rgba(27, 63, 196, 0.55)',   // 3: 6-10 questions
@@ -329,7 +329,7 @@ export function StudyHeatmap({ activityDays, todayStr }: StudyHeatmapProps) {
                   style={{
                     width: cellSize,
                     height: cellSize,
-                    backgroundColor: '#F2F0EB',
+                    backgroundColor: '#F5F5F5',
                   }}
                 />
               ))}

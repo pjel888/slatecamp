@@ -56,7 +56,7 @@ export const ProportionComparator = () => {
 
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
-      <div className="px-5 py-3.5 bg-[#F2F0EB] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
         <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
           Interactive · Room Proportion Comparator
         </div>
@@ -89,7 +89,7 @@ export const ProportionComparator = () => {
                   className={`transition-all duration-150 ${
                     isActive
                       ? 'fill-[#1B3FC4]/10 stroke-[#1B3FC4] stroke-2'
-                      : 'fill-[#F2F0EB] stroke-[#E0DED8] stroke-1 group-hover:stroke-[#1B3FC4]'
+                      : 'fill-[#F5F5F5] stroke-[#E0DED8] stroke-1 group-hover:stroke-[#1B3FC4]'
                   }`}
                 />
                 <text

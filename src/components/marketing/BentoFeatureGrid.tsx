@@ -169,7 +169,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* STAT: 1 in 3 — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-2 rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
+        <div className='landing-reveal landing-delay-2 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
           <Starburst className='h-3 w-3 text-[#F5A623]' />
           <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-[#E63329]'>
             1 in 3
@@ -251,7 +251,7 @@ export const BentoFeatureGrid = () => (
       <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
 
         {/* 3D LAB — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-5 rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-5 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
               <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight text-[#111]'>
@@ -299,7 +299,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-6 rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-6 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#aaa]'>
               [ Bounded Intelligence ]

@@ -35,7 +35,7 @@ export function CompetenceSignalCard({
       value: studyDaysCount > 0 ? studyDaysCount.toString() : '—',
       label: 'Study days',
       color: 'text-[#4A5568]',
-      bg: 'bg-[#F8F7F5]',
+      bg: 'bg-[#F5F5F5]',
     },
   ]
 
@@ -72,10 +72,10 @@ export function CompetenceSignalCardSkeleton() {
           key={i}
           className='bg-white rounded-md border border-[#D4DAE3] p-3 flex items-center gap-2.5 animate-pulse'
         >
-          <div className='w-7 h-7 bg-[#F8F7F5] rounded-md shrink-0' />
+          <div className='w-7 h-7 bg-[#F5F5F5] rounded-md shrink-0' />
           <div className='space-y-1 flex-1'>
             <div className='h-6 bg-[#D4DAE3] rounded w-10' />
-            <div className='h-2 bg-[#F8F7F5] rounded w-20' />
+            <div className='h-2 bg-[#F5F5F5] rounded w-20' />
           </div>
         </div>
       ))}

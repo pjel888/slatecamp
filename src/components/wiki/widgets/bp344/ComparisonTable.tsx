@@ -29,7 +29,7 @@ export const ComparisonTable = () => {
   const [activeRow, setActiveRow] = React.useState<number | null>(null)
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F8F7F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[#1B3FC4] mb-2">Interactive — 2024 vs 2013 Comparison</div>
       <p className="text-[13px] text-[#444] mb-3.5">Click any row to see what changed and why it matters for the ALE.</p>
       <div className="overflow-x-auto">

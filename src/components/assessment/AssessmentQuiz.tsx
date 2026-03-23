@@ -193,7 +193,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   // ── Calculating Score screen (UX Strategy: 2-3s ceremonial pause) ──────
   if (calculatingScore) {
     return (
-      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F8F7F5]">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5F5F5]">
         <div className="text-center space-y-4">
           <div className="w-10 h-10 border-2 border-[#1B3FC4] border-t-transparent rounded-full animate-spin mx-auto" />
           <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-[#1A2332]">
@@ -291,7 +291,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                       'shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-colors duration-150 ease-out',
                       isSelected
                         ? 'bg-[#1B3FC4] text-white'
-                        : 'bg-[#F8F7F5] text-[#4A5568] border border-[#D4DAE3]',
+                        : 'bg-[#F5F5F5] text-[#4A5568] border border-[#D4DAE3]',
                     )}
                   >
                     {letter}
@@ -322,7 +322,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
               'h-10 px-5 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
               isFirstQuestion || completing
                 ? 'text-[#8896A7] cursor-not-allowed'
-                : 'text-[#4A5568] hover:text-[#1A2332] hover:bg-[#F8F7F5]',
+                : 'text-[#4A5568] hover:text-[#1A2332] hover:bg-[#F5F5F5]',
             )}
           >
             &larr; Previous

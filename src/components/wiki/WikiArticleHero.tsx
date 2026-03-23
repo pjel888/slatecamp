@@ -23,7 +23,7 @@ export const WikiArticleHero = ({
         )}>
           {difficulty}
         </span>
-        <span className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#F2F0EB] text-[#737370]">
+        <span className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#F5F5F5] text-[#737370]">
           {readTime} read
         </span>
       </div>

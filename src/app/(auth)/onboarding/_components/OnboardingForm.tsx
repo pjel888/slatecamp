@@ -154,7 +154,7 @@ export const OnboardingForm = ({
 
       {/* Returning reviewer — context copy */}
       {reviewerType === 'returning_reviewer' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
           <p className="text-[13px] text-[#4A5568] leading-relaxed">
             You know the ALE. You know what needs to change.{' '}
             <span className="font-medium text-[#1A2332]">
@@ -166,7 +166,7 @@ export const OnboardingForm = ({
 
       {/* Undergrad — context copy */}
       {reviewerType === 'undergrad' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
           <p className="text-[13px] text-[#4A5568] leading-relaxed">
             No pressure. Just the best building code reference in the Philippines.
           </p>
@@ -175,7 +175,7 @@ export const OnboardingForm = ({
 
       {/* DAE — context copy */}
       {reviewerType === 'dae' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
           <p className="text-[13px] text-[#4A5568] leading-relaxed">
             Keep your knowledge current between renewals.
           </p>

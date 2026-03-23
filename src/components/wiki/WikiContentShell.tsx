@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { useWikiNavigation } from '@/components/wiki/WikiNavigationContext'
 
-/** Skeleton bar — uses bg-zinc-200 for visibility against bg-background (#F8F7F5) */
+/** Skeleton bar — uses bg-zinc-200 for visibility against bg-background (#F5F5F5) */
 const Bone = ({ className = '' }: { className?: string }) => (
   <div className={`animate-pulse rounded-sm bg-zinc-200/80 ${className}`} />
 )

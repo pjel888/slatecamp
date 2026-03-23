@@ -114,7 +114,7 @@ const FocusReviewPage = async () => {
         </div>
 
         {/* Session description */}
-        <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
+        <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F5F5F5] p-4">
           <p className="text-sm text-[#4A5568]">
             5&ndash;7 days &middot; {queue.question_count} questions per day &middot;
             Targets the specific misunderstandings causing these nodes to stay at their current level.

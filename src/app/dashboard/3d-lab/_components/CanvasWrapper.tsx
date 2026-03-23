@@ -39,12 +39,12 @@ export const CanvasWrapper = memo(function CanvasWrapper({
   cameraFov = 35,
   showGround = true,
   minDistance = 3,
-  maxDistance = 20,
+  maxDistance = Infinity,
 }: CanvasWrapperProps) {
   const [canvasReady, setCanvasReady] = useState(false)
 
   return (
-    <div className="relative h-full w-full rounded-md border border-border bg-[#FBFBFA] overflow-hidden">
+    <div className="relative h-full w-full bg-[var(--color-cream)] overflow-hidden">
       {/* Loading overlay — removed once Canvas WebGL context is created */}
       {!canvasReady && (
         <div className="absolute inset-0 flex items-center justify-center bg-zinc-50/50 z-10">

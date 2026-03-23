@@ -19,7 +19,7 @@ export const palette = {
   amber: '#D4951A',
   amber50: '#FEF8ED',
   infoBlue: '#3B82C8',
-  surfaceLight: '#F8F7F5',
+  surfaceLight: '#F5F5F5',
   surfaceCard: '#FFFFFF',
   surfaceFocused: '#F5F7FA',
   inkPrimary: '#1A2332',
@@ -35,7 +35,7 @@ export const cssVars = {
   success: 'var(--gc-success, #2D9F6F)',
   danger: 'var(--gc-danger, #D64545)',
   border: 'var(--gc-border, #D4DAE3)',
-  cutout: 'var(--gc-cutout, #F8F7F5)',
+  cutout: 'var(--gc-cutout, #F5F5F5)',
 } as const
 
 // ── Readiness score color thresholds ──

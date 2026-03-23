@@ -44,7 +44,7 @@ export const ReachEnvelopeDiagram = () => {
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
-      <div className="px-5 py-3.5 bg-[#F2F0EB] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
         <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
           Interactive · Reach Envelope Zones
         </div>
@@ -77,7 +77,7 @@ export const ReachEnvelopeDiagram = () => {
             { label: 'Lowest reach', max: d.low.min, comfortable: null },
             { label: 'Side reach', max: d.side.max, comfortable: d.side.comfortable },
           ].map((zone) => (
-            <div key={zone.label} className="bg-[#F2F0EB] rounded-lg p-3 dark:bg-[#252420]">
+            <div key={zone.label} className="bg-[#F5F5F5] rounded-lg p-3 dark:bg-[#252420]">
               <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-2">
                 {zone.label}
               </div>

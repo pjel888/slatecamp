@@ -22,7 +22,7 @@ const CustomTooltip = ({ active, payload }: any) => {
     return (
       <div
         className="rounded-md bg-white px-3 py-2"
-        style={{ border: '1px solid #E8E4DC', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
+        style={{ border: '1px solid #E5E7EB', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
       >
         <p className="text-xs font-semibold" style={{ color: '#1A2332' }}>
           {item.subject}
@@ -43,8 +43,8 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const hasData = data.some(d => d.questionsAnswered > 0)
 
   return (
-    <div className="flex flex-col bg-white border border-[#E8E4DC] rounded-md overflow-hidden h-full">
-      <div className="px-4 py-3 border-b border-[#E8E4DC]">
+    <div className="flex flex-col bg-white border border-[#E5E7EB] rounded-md overflow-hidden h-full">
+      <div className="px-4 py-3 border-b border-[#E5E7EB]">
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]">
           Subject Mastery
         </span>
@@ -71,7 +71,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
           <div className="w-full h-[260px]">
             <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="75%" data={data}>
-                <PolarGrid stroke="#E8E4DC" strokeWidth={1} />
+                <PolarGrid stroke="#E5E7EB" strokeWidth={1} />
                 <PolarAngleAxis
                   dataKey="shortLabel"
                   tick={{ fill: '#555555', fontSize: 11 }}

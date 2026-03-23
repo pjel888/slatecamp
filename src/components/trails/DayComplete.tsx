@@ -117,7 +117,7 @@ export const DayComplete = ({
 
       {/* Fresh Start milestone — Day 7, 14, 28 */}
       {milestone && (
-        <div className="mt-4 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
+        <div className="mt-4 rounded-md border border-[#D4DAE3] bg-[#F5F5F5] p-4">
           <p className="text-sm text-[#1A2332]">{milestone}</p>
         </div>
       )}

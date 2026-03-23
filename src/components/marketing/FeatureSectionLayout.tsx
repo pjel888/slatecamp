@@ -21,7 +21,7 @@ export const FeatureSectionLayout = ({
         ? 'bg-[#111111] border-white/10'
         : amber
           ? 'bg-[#F5A623] border-[#D4851A]/40'
-          : 'border-[#E8E4DC] bg-[#F2F0EB]'
+          : 'border-[#E5E7EB] bg-[#F5F5F5]'
     }`}
   >
     <div
@@ -101,7 +101,7 @@ export const FeaturePill = ({
     cobalt: 'border-[#1B3FC4]/25 bg-[#1B3FC4]/8 text-[#1B3FC4]',
     amber: 'border-[#F5A623]/25 bg-[#F5A623]/10 text-[#9A6B15]',
     green: 'border-[#1B7A3C]/25 bg-[#1B7A3C]/8 text-[#1B7A3C]',
-    'muted-light': 'border-[#E8E4DC] text-[#6B6B6B]',
+    'muted-light': 'border-[#E5E7EB] text-[#6B6B6B]',
     'muted-dark': 'border-white/15 text-white/50',
     'on-amber': 'border-black/20 bg-black/[0.08] text-[#111]',
   }

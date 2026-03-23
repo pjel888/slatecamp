@@ -172,7 +172,8 @@ export const WikiSidebar = ({
     const hasChildren = children.length > 0
     // A leaf node with a single article of the same name should render as a
     // direct article link, not as a folder containing the article.
-    const isSingleArticleLeaf = !hasChildren && nodeArticles.length === 1
+    // Level-2 nodes (e.g. "Subject Overview & Strategy") always stay as folders.
+    const isSingleArticleLeaf = node.level > 2 && !hasChildren && nodeArticles.length === 1
     const isCategory = isSingleArticleLeaf
       ? false
       : node.level <= 2 || hasChildren || nodeArticles.length > 0

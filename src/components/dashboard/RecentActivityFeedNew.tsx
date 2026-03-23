@@ -72,7 +72,7 @@ export function RecentActivityFeedNew({ sessions }: RecentActivityFeedProps) {
               >
                 <div
                   className="shrink-0 rounded p-1"
-                  style={{ backgroundColor: '#F8F7F5' }}
+                  style={{ backgroundColor: '#F5F5F5' }}
                 >
                   <Icon />
                 </div>

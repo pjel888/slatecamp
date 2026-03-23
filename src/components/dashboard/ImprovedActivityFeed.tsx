@@ -106,7 +106,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
                       className='shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default'
                       style={{
                         backgroundColor:
-                          s.scorePercent >= 70 ? '#EDFAF4' : '#F2F0EB',
+                          s.scorePercent >= 70 ? '#EDFAF4' : '#F5F5F5',
                         color: s.scorePercent >= 70 ? '#1B7A3C' : '#4A5568',
                       }}
                     >

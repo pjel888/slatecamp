@@ -36,7 +36,7 @@ export function ConfidenceToggle({
           'outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
           value === 'sure'
             ? 'bg-[#EEF2FC] text-[#1535A8] border border-[#1535A8]/20'
-            : 'text-[#8896A7] border border-transparent hover:bg-[#F8F7F5] hover:text-[#4A5568]',
+            : 'text-[#8896A7] border border-transparent hover:bg-[#F5F5F5] hover:text-[#4A5568]',
           disabled && 'opacity-40 cursor-not-allowed',
         )}
       >
@@ -52,7 +52,7 @@ export function ConfidenceToggle({
           'outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
           value === 'unsure'
             ? 'bg-[#FEF8ED] text-[#D4951A] border border-[#D4951A]/20'
-            : 'text-[#8896A7] border border-transparent hover:bg-[#F8F7F5] hover:text-[#4A5568]',
+            : 'text-[#8896A7] border border-transparent hover:bg-[#F5F5F5] hover:text-[#4A5568]',
           disabled && 'opacity-40 cursor-not-allowed',
         )}
       >

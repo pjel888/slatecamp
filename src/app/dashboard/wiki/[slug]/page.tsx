@@ -29,7 +29,7 @@ const ITEM_STYLES: Record<string, { label: string; border: string; bg: string; t
   warning:        { label: 'Warning',         border: 'border-l-[#D64545]', bg: 'bg-[#FDF0F0]',  text: 'text-[#D64545]' },
   heading:        { label: '',                border: '',                    bg: '',               text: '' },
   detail:         { label: 'Detail',          border: 'border-l-[#D4DAE3]', bg: 'bg-white',      text: 'text-[#4A5568]' },
-  cross_ref:      { label: 'Cross Reference', border: 'border-l-[#D4DAE3]', bg: 'bg-[#F8F7F5]',  text: 'text-[#4A5568]' },
+  cross_ref:      { label: 'Cross Reference', border: 'border-l-[#D4DAE3]', bg: 'bg-[#F5F5F5]',  text: 'text-[#4A5568]' },
 }
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {

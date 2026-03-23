@@ -30,7 +30,7 @@ export function Accordion({ children }: { children: ReactNode }) {
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : i)}
-              className="w-full flex justify-between items-center py-[14px] px-[18px] bg-white hover:bg-[#F2F0EB] transition-colors duration-150 text-left"
+              className="w-full flex justify-between items-center py-[14px] px-[18px] bg-white hover:bg-[#F5F5F5] transition-colors duration-150 text-left"
             >
               <span className="text-[14px] font-semibold text-[#1A1A1A]">{item.title}</span>
               <span className={`text-[12px] text-[#A8A8A5] transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>

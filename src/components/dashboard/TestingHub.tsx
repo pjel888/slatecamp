@@ -102,7 +102,7 @@ export function TestingHub({
           </div>
         </div>
       ) : (
-        <div className='mb-16 p-6 bg-[#F8F7F5] border border-border rounded-md flex items-center gap-4'>
+        <div className='mb-16 p-6 bg-[#F5F5F5] border border-border rounded-md flex items-center gap-4'>
           <SCIcon icon={Target} size='md' className='text-zinc-300 shrink-0' />
           <p className='text-sm text-zinc-400'>
             Finish a few sessions and personalized suggestions will appear here.

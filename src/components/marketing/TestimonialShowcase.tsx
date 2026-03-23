@@ -55,7 +55,7 @@ export const TestimonialShowcase = ({
           'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
           (dark
             ? 'border-white/10 bg-primary/40 text-white'
-            : 'border-[#E8E4DC] bg-[#FFFDF7]')
+            : 'border-[#E5E7EB] bg-[#FFFFFF]')
         }
       >
         <div>
@@ -71,7 +71,7 @@ export const TestimonialShowcase = ({
         <div
           className={
             'mt-6 border-t pt-5 ' +
-            (dark ? 'border-white/10' : 'border-[#E8E4DC]')
+            (dark ? 'border-white/10' : 'border-[#E5E7EB]')
           }
         >
           <p

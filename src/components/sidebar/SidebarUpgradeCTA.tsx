@@ -64,7 +64,7 @@ export const SidebarUpgradeCTA = ({ collapsed }: SidebarUpgradeCTAProps) => {
 
   // Expanded: feature teaser card
   return (
-    <div className="rounded-md border border-border bg-[#F8F7F5] p-3 mb-2">
+    <div className="rounded-md border border-border bg-[#F5F5F5] p-3 mb-2">
       <p className="text-[11px] font-semibold text-[#1A2332] mb-1.5">
         Unlock more
       </p>

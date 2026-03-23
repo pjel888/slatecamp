@@ -146,7 +146,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
               <button
                 type="button"
                 onClick={() => toggleWeek(week)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+                className="flex items-center justify-between w-full px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
               >
                 <div className="flex items-center gap-2">
                   {isExpanded ? (

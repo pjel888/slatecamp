@@ -32,7 +32,7 @@ export const Tabs = ({ defaultTab, children }: TabsProps) => {
   return (
     <div className="not-prose my-5 border border-[#E0DED8] rounded-[10px] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Tab bar */}
-      <div role="tablist" className="flex border-b border-[#E0DED8] bg-[#F2F0EB] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div role="tablist" className="flex border-b border-[#E0DED8] bg-[#F5F5F5] dark:bg-[#252420] dark:border-[#3A3835]">
         {tabs.map((tab) => (
           <button
             key={tab.value}

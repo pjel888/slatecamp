@@ -65,7 +65,7 @@ export const ConfidenceCheckScreen = ({
                         'px-3 py-1 rounded-sm text-xs font-medium transition-colors duration-150',
                         isSelected
                           ? 'bg-[#1B3FC4] text-white'
-                          : 'bg-[#F2F0EB] text-[#555555] hover:bg-[#E8E4DC]',
+                          : 'bg-[#F5F5F5] text-[#555555] hover:bg-[#E5E7EB]',
                       )}
                     >
                       {label}

@@ -67,7 +67,7 @@ const UpgradePage = async () => {
             <div
               key={row.feature}
               className={`grid grid-cols-3 items-center px-4 py-3 border-t border-[#D4DAE3] ${
-                i % 2 === 0 ? 'bg-white' : 'bg-[#F8F7F5]'
+                i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F5]'
               }`}
             >
               <div className="text-sm font-medium text-[#1A2332]">{row.feature}</div>
@@ -106,7 +106,7 @@ const UpgradePage = async () => {
             Pay with GCash
           </button>
           <button
-            className="w-full max-w-sm rounded-sm border border-[#D4DAE3] bg-white px-6 py-3.5 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+            className="w-full max-w-sm rounded-sm border border-[#D4DAE3] bg-white px-6 py-3.5 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
           >
             Pay with Card
           </button>

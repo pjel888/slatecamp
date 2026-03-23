@@ -14,7 +14,7 @@ export const metadata = { title: `Contact — ${siteConfig.name}` };
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#F8F7F5]">
+    <div className="min-h-screen bg-[#F5F5F5]">
       <MarketingNav activeRoute="/contact" />
       <main className="flex flex-col items-center justify-center px-6 pt-40 pb-24">
         <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight text-[#1A2332]">

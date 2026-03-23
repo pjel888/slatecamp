@@ -180,7 +180,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             type="button"
             onClick={() => handleSubmit()}
             disabled={submitting}
-            className="rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+            className="rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
           >
             Skip
           </button>

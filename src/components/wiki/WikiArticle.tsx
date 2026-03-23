@@ -60,7 +60,7 @@ const baseMdxComponents = {
     </div>
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    <thead className="bg-[#F2F0EB] dark:bg-[#252420]" {...props} />
+    <thead className="bg-[#F5F5F5] dark:bg-[#252420]" {...props} />
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-[#A8A8A5] border-b-[1.5px] border-[#E0DED8] dark:border-[#3A3835]" {...props} />

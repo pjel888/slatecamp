@@ -88,7 +88,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   } : {}
 
   return (
-    <div className="flex h-full w-full overflow-hidden bg-[#F8F7F5]">
+    <div className="flex h-full w-full overflow-hidden bg-[#F5F5F5]">
       {/* Pane 1: Navigator (collapsible) */}
       <NotesNavigator
         folders={folders}

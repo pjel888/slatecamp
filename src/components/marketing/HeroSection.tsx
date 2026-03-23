@@ -20,9 +20,9 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 
 const DashboardPeek = () => (
   <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
-    <div className='relative h-[140px] overflow-hidden rounded-t-[10px] border border-b-0 border-[#E8E4DC] bg-[#FFFDF7] shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
+    <div className='relative h-[140px] overflow-hidden rounded-t-[10px] border border-b-0 border-[#E5E7EB] bg-[#FFFFFF] shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
       {/* Fake window chrome */}
-      <div className='flex items-center gap-1.5 border-b border-[#E8E4DC] bg-[#F2F0EB] px-4 py-2.5'>
+      <div className='flex items-center gap-1.5 border-b border-[#E5E7EB] bg-[#F5F5F5] px-4 py-2.5'>
         <div className='h-2.5 w-2.5 rounded-full bg-[#E63329]' />
         <div className='h-2.5 w-2.5 rounded-full bg-[#F5A623]' />
         <div className='h-2.5 w-2.5 rounded-full bg-[#1B7A3C]' />
@@ -34,18 +34,18 @@ const DashboardPeek = () => (
       <div className='flex gap-4 px-5 py-3'>
         {/* Sidebar */}
         <div className='hidden w-[140px] shrink-0 space-y-2 sm:block'>
-          <div className='h-2 w-20 rounded bg-[#E8E4DC]' />
-          <div className='h-2 w-16 rounded bg-[#E8E4DC]' />
-          <div className='h-2 w-24 rounded bg-[#E8E4DC]' />
-          <div className='h-2 w-20 rounded bg-[#E8E4DC]' />
+          <div className='h-2 w-20 rounded bg-[#E5E7EB]' />
+          <div className='h-2 w-16 rounded bg-[#E5E7EB]' />
+          <div className='h-2 w-24 rounded bg-[#E5E7EB]' />
+          <div className='h-2 w-20 rounded bg-[#E5E7EB]' />
         </div>
         {/* Main Content */}
         <div className='flex-1 space-y-2'>
           <div className='flex gap-3'>
-            <div className='h-14 w-14 shrink-0 rounded-md bg-[#E8E4DC]' />
+            <div className='h-14 w-14 shrink-0 rounded-md bg-[#E5E7EB]' />
             <div className='flex-1 space-y-1.5 pt-1'>
-              <div className='h-2.5 w-32 rounded bg-[#E8E4DC]' />
-              <div className='h-2 w-48 rounded bg-[#E8E4DC]' />
+              <div className='h-2.5 w-32 rounded bg-[#E5E7EB]' />
+              <div className='h-2 w-48 rounded bg-[#E5E7EB]' />
             </div>
           </div>
           <div className='flex gap-2'>
@@ -68,7 +68,7 @@ const DashboardPeek = () => (
         </div>
       </div>
       {/* Gradient fade at the bottom */}
-      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-linear-to-t from-[#FFFDF7] to-transparent' />
+      <div className='pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-linear-to-t from-[#FFFFFF] to-transparent' />
     </div>
   </div>
 )
@@ -169,10 +169,10 @@ const ALESubjectCoverageCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-[#FFFDF7] to-[#FFFDF7]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E8E4DC] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+      className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-[#FFFFFF] to-[#FFFFFF]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E5E7EB] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
       aria-hidden='true'
     >
-      <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2'>
+      <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E5E7EB] pb-2'>
         <Starburst className='h-3 w-3 text-[#F5A623]' />
         <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
           ALE Coverage
@@ -182,7 +182,7 @@ const ALESubjectCoverageCard = () => {
         {subjects.map((subject) => (
           <li
             key={subject.name}
-            className='flex items-center justify-between gap-2 rounded-sm px-1.5 py-1 hover:bg-[#F2F0EB]/70'
+            className='flex items-center justify-between gap-2 rounded-sm px-1.5 py-1 hover:bg-[#F5F5F5]/70'
           >
             <div className='flex min-w-0 items-center gap-2'>
               <span
@@ -201,7 +201,7 @@ const ALESubjectCoverageCard = () => {
           </li>
         ))}
       </ul>
-      <div className='mt-2.5 border-t border-[#E8E4DC] pt-2 text-center'>
+      <div className='mt-2.5 border-t border-[#E5E7EB] pt-2 text-center'>
         <span className='text-[11px] font-medium text-[#6B6B6B]'>
           All 7 subjects · Fully mapped
         </span>
@@ -217,17 +217,17 @@ const MockQuestionCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className='order-3 w-full max-w-[280px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+      className='order-3 w-full max-w-[280px] rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
       aria-hidden='true'
     >
-      <div className='mb-2.5 flex items-center justify-between border-b border-[#E8E4DC] pb-2'>
+      <div className='mb-2.5 flex items-center justify-between border-b border-[#E5E7EB] pb-2'>
         <div className='flex items-center gap-1.5'>
           <Starburst className='h-3 w-3 text-[#F5A623]' />
           <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
             Sample Question
           </span>
         </div>
-        <span className='rounded bg-[#F2F0EB] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
+        <span className='rounded bg-[#F5F5F5] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
           {MOCK_QUESTION.topic}
         </span>
       </div>
@@ -248,7 +248,7 @@ const MockQuestionCard = () => {
                 isIncorrect && 'border-[#D64545] bg-[#FDF0F0] text-[#D64545]',
                 !isCorrect &&
                   !isIncorrect &&
-                  'border-[#E8E4DC] bg-white text-zinc-800 hover:bg-[#FFFDF7]',
+                  'border-[#E5E7EB] bg-white text-zinc-800 hover:bg-[#FFFFFF]',
               )}
             >
               <span
@@ -285,11 +285,11 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       initial={{ opacity: 0, y: 24, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E8E4DC] bg-[#FFFDF7]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:hover:-translate-x-1/2 md:hover:-translate-y-[calc(50%+12px)] md:p-7 hover:rotate-1'
+      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E5E7EB] bg-[#FFFFFF]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:hover:-translate-x-1/2 md:hover:-translate-y-[calc(50%+12px)] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='mb-3 flex items-center gap-1.5 border-b border-[#E8E4DC] pb-2.5'>
+      <div className='mb-3 flex items-center gap-1.5 border-b border-[#E5E7EB] pb-2.5'>
         <Starburst className='h-3 w-3 text-[#F5A623]' />
         <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
           Readiness snapshot
@@ -355,7 +355,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
                   {score}%
                 </span>
               </div>
-              <div className='h-1.5 w-full rounded-full bg-[#F2F0EB]'>
+              <div className='h-1.5 w-full rounded-full bg-[#F5F5F5]'>
                 <div
                   className={cn(
                     'h-1.5 rounded-full transition-[width] duration-200',
@@ -372,7 +372,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       <div className='mt-3 flex items-center justify-between text-[11px] text-[#6B6B6B]'>
         <Link
           href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
-          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-[#E8E4DC] bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-[#EEF2FC] hover:text-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
+          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-[#E5E7EB] bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-[#EEF2FC] hover:text-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >
           Start Now
@@ -460,7 +460,7 @@ export const HeroSection = ({
           </div>
 
           {/* Stats Bar */}
-          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#E8E4DC] pt-3'>
+          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#E5E7EB] pt-3'>
             {STATS.map((stat) => (
               <span
                 key={stat}

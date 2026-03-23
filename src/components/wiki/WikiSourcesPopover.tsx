@@ -66,7 +66,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
           onClick={toggle}
           className="flex items-center gap-1.5 text-[13px] text-[#737370] hover:text-[#1B3FC4] transition-colors duration-150 py-1"
         >
-          <span className="w-4 h-4 rounded bg-[#F2F0EB] flex items-center justify-center text-[9px] font-bold text-[#A8A8A5]">
+          <span className="w-4 h-4 rounded bg-[#F5F5F5] flex items-center justify-center text-[9px] font-bold text-[#A8A8A5]">
             {sources.length}
           </span>
           <span>View all sources</span>

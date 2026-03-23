@@ -16,7 +16,7 @@ export const AccordionItem = ({ title, children }: AccordionItemProps) => {
         type="button"
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center px-[18px] py-3.5 bg-white text-left text-sm font-semibold text-[#1A1A1A] transition-colors duration-150 hover:bg-[#F2F0EB] dark:bg-[#1A1A1A] dark:text-[#E2E0D8] dark:hover:bg-[#252420]"
+        className="w-full flex justify-between items-center px-[18px] py-3.5 bg-white text-left text-sm font-semibold text-[#1A1A1A] transition-colors duration-150 hover:bg-[#F5F5F5] dark:bg-[#1A1A1A] dark:text-[#E2E0D8] dark:hover:bg-[#252420]"
       >
         {title}
         <svg

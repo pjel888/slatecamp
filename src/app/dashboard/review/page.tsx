@@ -16,7 +16,7 @@ export default async function TestingPage({ searchParams }: PageProps) {
   if (!data) redirect('/login')
 
   return (
-    <div className="w-full h-full bg-[#F8F7F5]">
+    <div className="w-full h-full">
       <CampDashboard
         initialSession={data.existingSession}
         disciplineId={data.disciplineId}

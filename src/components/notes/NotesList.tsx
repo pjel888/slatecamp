@@ -92,7 +92,7 @@ export function NotesList({
                 placeholder="Search notes..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full rounded-md bg-[#F8F7F5] py-1.5 pl-8 pr-3 text-xs text-[#1A2332] border border-[#D4DAE3] placeholder:text-[#8896A7] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/20 focus:border-[#1B3FC4] transition-all duration-150"
+                className="w-full rounded-md bg-[#F5F5F5] py-1.5 pl-8 pr-3 text-xs text-[#1A2332] border border-[#D4DAE3] placeholder:text-[#8896A7] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/20 focus:border-[#1B3FC4] transition-all duration-150"
               />
             </div>
           </div>
@@ -158,7 +158,7 @@ export function NotesList({
                             'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[11px] font-semibold',
                             isSelected
                               ? 'bg-[#1B3FC4]/10 text-[#1B3FC4]'
-                              : 'bg-[#F8F7F5] text-[#4A5568]',
+                              : 'bg-[#F5F5F5] text-[#4A5568]',
                           )}>
                             <badge.icon className="h-2.5 w-2.5" />
                             {badge.label}

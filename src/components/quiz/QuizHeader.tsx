@@ -18,12 +18,12 @@ const MODE_LABELS: Record<TestMode, string> = {
 
 const MODE_STYLES: Record<TestMode, string> = {
   camp: 'bg-[#EEF2FC] text-[#1535A8] border-[#1535A8]/20',
-  chill: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
+  chill: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
   storm: 'bg-[#1A2332] text-white border-[#1A2332]',
   proof_sim: 'bg-[#1A2332] text-white border-[#1A2332]',
   blindspot: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
-  custom: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
-  endurance: 'bg-[#F8F7F5] text-[#4A5568] border-[#D4DAE3]',
+  custom: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
+  endurance: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
 }
 
 interface QuizHeaderProps {

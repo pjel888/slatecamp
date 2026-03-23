@@ -12,9 +12,9 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Wiki mockup ── */
 
 const WikiMockup = () => (
-  <div className='overflow-hidden rounded-md border border-[#E8E4DC] bg-[#FFFDF7]'>
+  <div className='overflow-hidden rounded-md border border-[#E5E7EB] bg-[#FFFFFF]'>
     {/* Header */}
-    <div className='flex items-center gap-2.5 border-b border-[#E8E4DC] px-4 py-3'>
+    <div className='flex items-center gap-2.5 border-b border-[#E5E7EB] px-4 py-3'>
       <div className='h-2 w-2 rounded-full bg-[#1B7A3C]' />
       <span className='text-[13px] font-bold text-[#111]'>
         Building Technology — Firewall Requirements
@@ -22,7 +22,7 @@ const WikiMockup = () => (
     </div>
 
     {/* Table of contents */}
-    <div className='border-b border-[#E8E4DC] bg-[#F2F0EB] px-4 py-3'>
+    <div className='border-b border-[#E5E7EB] bg-[#F5F5F5] px-4 py-3'>
       <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-[#888]'>On this page</div>
       {['Definition & Purpose', 'Height Requirements', 'Construction Standards', 'Common Exam Questions'].map(
         (item) => (

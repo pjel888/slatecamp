@@ -190,7 +190,7 @@ export default function CutawaySection({ config }: CutawaySectionProps) {
         cameraPosition={cameraPos}
         cameraFov={cameraFov}
         minDistance={1}
-        maxDistance={8}
+        maxDistance={20}
       >
         <CutawaySectionScene config={config} useStore={useStore} />
       </CanvasWrapper>

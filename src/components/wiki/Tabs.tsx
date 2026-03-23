@@ -33,7 +33,7 @@ export function Tabs({ defaultTab, children }: TabsProps) {
 
   return (
     <div className="not-prose my-5 border border-[#E0DED8] rounded-[10px] overflow-hidden bg-white">
-      <div className="flex border-b border-[#E0DED8] bg-[#F2F0EB]">
+      <div className="flex border-b border-[#E0DED8] bg-[#F5F5F5]">
         {tabs.map((tab) => (
           <button
             key={tab.value}

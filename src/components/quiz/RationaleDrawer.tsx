@@ -114,7 +114,7 @@ export function RationaleDrawer({
                 </button>
                 <button
                   onClick={onAddNote}
-                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-[#4A5568] hover:bg-[#F8F7F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-[#4A5568] hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
                 >
                   <SCIcon icon={Plus} size="xs" />
                   Add Note

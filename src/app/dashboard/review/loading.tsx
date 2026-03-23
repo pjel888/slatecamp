@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 export default function TestingLoading() {
   return (
-    <div className="w-full h-full bg-[#F8F7F5] animate-in fade-in-0 duration-150">
+    <div className="w-full h-full animate-in fade-in-0 duration-150">
       <div className="flex flex-col h-full">
         {/* Top bar */}
         <div className="shrink-0 border-b border-[#D4DAE3] bg-white px-4 py-3 flex items-center justify-between">

@@ -54,7 +54,7 @@ export const DimensionDrill = () => {
           className={`w-full rounded-[10px] p-7 min-h-[120px] flex flex-col items-center justify-center transition-colors duration-150 cursor-pointer select-none ${
             revealed
               ? 'bg-[#EEF3FD] dark:bg-[#1B3FC4]/10'
-              : 'bg-[#F2F0EB] hover:bg-[#EEF3FD] dark:bg-[#252420] dark:hover:bg-[#1B3FC4]/10'
+              : 'bg-[#F5F5F5] hover:bg-[#EEF3FD] dark:bg-[#252420] dark:hover:bg-[#1B3FC4]/10'
           }`}
         >
           <div

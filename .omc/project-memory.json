@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774031865176,
+  "lastScanned": 1774281833382,
   "projectRoot": "D:\\SlateCamp\\slate-camp",
   "techStack": {
     "languages": [
@@ -84,21 +84,21 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 0,
-      "lastAccessed": 1774031865153,
+      "lastAccessed": 1774281833357,
       "keyFiles": []
     },
     "prompts": {
       "path": "prompts",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1774031865154,
+      "lastAccessed": 1774281833357,
       "keyFiles": []
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
       "fileCount": 7,
-      "lastAccessed": 1774031865160,
+      "lastAccessed": 1774281833365,
       "keyFiles": [
         "file.svg",
         "globe.svg",
@@ -111,7 +111,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 4,
-      "lastAccessed": 1774031865160,
+      "lastAccessed": 1774281833365,
       "keyFiles": [
         "db-inspect.ts",
         "dev.js",
@@ -123,14 +123,14 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 0,
-      "lastAccessed": 1774031865160,
+      "lastAccessed": 1774281833365,
       "keyFiles": []
     },
     "supabase": {
       "path": "supabase",
       "purpose": null,
       "fileCount": 4,
-      "lastAccessed": 1774031865160,
+      "lastAccessed": 1774281833365,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -142,7 +142,7 @@
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 6,
-      "lastAccessed": 1774031865162,
+      "lastAccessed": 1774281833366,
       "keyFiles": [
         "error.tsx",
         "favicon.ico",
@@ -153,14 +153,14 @@
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 0,
-      "lastAccessed": 1774031865162,
+      "lastAccessed": 1774281833366,
       "keyFiles": []
     },
     "src\\config": {
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 1,
-      "lastAccessed": 1774031865162,
+      "lastAccessed": 1774281833367,
       "keyFiles": [
         "feature-flags.ts"
       ]
@@ -169,7 +169,7 @@
       "path": "src\\data",
       "purpose": "Data files",
       "fileCount": 1,
-      "lastAccessed": 1774031865163,
+      "lastAccessed": 1774281833367,
       "keyFiles": [
         "mock-questions.json"
       ]
@@ -178,7 +178,7 @@
       "path": "src\\lib",
       "purpose": "Library code",
       "fileCount": 8,
-      "lastAccessed": 1774031865163,
+      "lastAccessed": 1774281833367,
       "keyFiles": [
         "analytics-server.ts",
         "analytics.ts",
@@ -189,7 +189,7 @@
       "path": "src\\types",
       "purpose": "Type definitions",
       "fileCount": 6,
-      "lastAccessed": 1774031865163,
+      "lastAccessed": 1774281833368,
       "keyFiles": [
         "app.ts",
         "bun-test.d.ts",
@@ -199,8 +199,8 @@
     "supabase\\migrations": {
       "path": "supabase\\migrations",
       "purpose": "Database migrations",
-      "fileCount": 27,
-      "lastAccessed": 1774031865164,
+      "fileCount": 31,
+      "lastAccessed": 1774281833368,
       "keyFiles": [
         "004_add_user_roles.sql",
         "005_add_wiki_content_status.sql",
@@ -210,303 +210,303 @@
   },
   "hotPaths": [
     {
-      "path": "src\\components\\wiki\\WikiSidebar.tsx",
-      "accessCount": 36,
-      "lastAccessed": 1774079816617,
+      "path": "src\\app\\globals.css",
+      "accessCount": 23,
+      "lastAccessed": 1774287773857,
       "type": "file"
     },
     {
-      "path": "src\\lib\\actions\\wiki-actions.ts",
-      "accessCount": 24,
-      "lastAccessed": 1774077731560,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiArticle.tsx",
-      "accessCount": 20,
-      "lastAccessed": 1774076629009,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarOverlay.tsx",
-      "accessCount": 16,
-      "lastAccessed": 1774034150702,
-      "type": "file"
-    },
-    {
-      "path": "DATABASE_SCHEMA.sql",
-      "accessCount": 15,
-      "lastAccessed": 1774077324976,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\ElaborativeInterrogation.tsx",
-      "accessCount": 13,
-      "lastAccessed": 1774078195539,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\wiki\\[slug]\\page.tsx",
-      "accessCount": 13,
-      "lastAccessed": 1774078311509,
-      "type": "file"
-    },
-    {
-      "path": ".claude\\settings.local.json",
-      "accessCount": 11,
-      "lastAccessed": 1774032114977,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarRail.tsx",
-      "accessCount": 8,
-      "lastAccessed": 1774034119042,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiArticleHero.tsx",
-      "accessCount": 8,
-      "lastAccessed": 1774072543635,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki",
-      "accessCount": 8,
-      "lastAccessed": 1774072560771,
+      "path": "",
+      "accessCount": 10,
+      "lastAccessed": 1774289877315,
       "type": "directory"
     },
     {
-      "path": "src\\components\\wiki\\WikiRightSidebar.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774072542288,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\KeyValues.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774077097944,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\FormulaBlock.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774077098562,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarUserProfile.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774034019132,
-      "type": "file"
-    },
-    {
-      "path": "src\\types\\wiki.ts",
-      "accessCount": 6,
-      "lastAccessed": 1774076629620,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiMistakeCard.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774077098837,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiMistakeList.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774077106358,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\types.ts",
-      "accessCount": 5,
-      "lastAccessed": 1774033563283,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarHeader.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774034123889,
-      "type": "file"
-    },
-    {
-      "path": "src",
-      "accessCount": 5,
-      "lastAccessed": 1774078673787,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarNavGroup.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774034135394,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\slatecamp-wiki-ui-implementation-spec-v1\\slatecamp-wiki-article-prototype.html",
-      "accessCount": 4,
-      "lastAccessed": 1774044695238,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiSidebarShell.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774072516222,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiHeaderClient.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774072516678,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\TeachBackPrompt.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774072517583,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarProvider.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774033077298,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarContent.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774033079597,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarShell.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774033089603,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarNavItem.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774033186562,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarFooter.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774034023683,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiHeader.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774072544525,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\InlineQuiz.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774076654867,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar",
-      "accessCount": 2,
-      "lastAccessed": 1774032586596,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarUpgradeCTA.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774032789211,
-      "type": "file"
-    },
-    {
-      "path": "C:\\Users\\Philip Lewis\\.claude\\projects\\D--SlateCamp-slate-camp\\memory\\MEMORY.md",
-      "accessCount": 2,
-      "lastAccessed": 1774033245412,
-      "type": "file"
-    },
-    {
-      "path": ".mcp.json",
-      "accessCount": 1,
-      "lastAccessed": 1774031989547,
+      "path": "src\\components\\marketing\\MarketingNav.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1774287861317,
       "type": "file"
     },
     {
       "path": "src\\app\\dashboard\\layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774032358687,
+      "accessCount": 8,
+      "lastAccessed": 1774291444294,
       "type": "file"
     },
     {
-      "path": "src\\components\\ui\\tooltip.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774032359200,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarPanel.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774032361376,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\shared\\Sidebar.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774032378249,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\index.ts",
-      "accessCount": 1,
-      "lastAccessed": 1774032531574,
-      "type": "file"
-    },
-    {
-      "path": "C:\\Users\\Philip Lewis\\.claude\\projects\\D--SlateCamp-slate-camp\\memory\\feedback_overlay_sidebar.md",
-      "accessCount": 1,
-      "lastAccessed": 1774033233173,
-      "type": "file"
-    },
-    {
-      "path": "src\\types",
-      "accessCount": 1,
-      "lastAccessed": 1774042465853,
+      "path": "src",
+      "accessCount": 6,
+      "lastAccessed": 1774289883873,
       "type": "directory"
     },
     {
-      "path": "src\\types\\app.ts",
-      "accessCount": 1,
-      "lastAccessed": 1774042466628,
+      "path": "src\\types\\tools.ts",
+      "accessCount": 6,
+      "lastAccessed": 1774290044103,
       "type": "file"
     },
     {
-      "path": "src\\lib\\actions",
-      "accessCount": 1,
-      "lastAccessed": 1774042474158,
+      "path": "src\\components\\ui\\button.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1774285423511,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\constants\\routes.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774285482920,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\graphics\\tokens.ts",
+      "accessCount": 5,
+      "lastAccessed": 1774287826310,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\contact\\page.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1774287834193,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\constants\\site.ts",
+      "accessCount": 4,
+      "lastAccessed": 1774285398668,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\ToolPageLayout.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774285414348,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\ThreeDCanvasPlaceholder.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774285414637,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ui\\input.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774285423956,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\marketing\\MarketingFooter.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774285658616,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiSidebar.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774287813456,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774287897209,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\layouts\\SharedPageLayout.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774290607439,
+      "type": "file"
+    },
+    {
+      "path": "src\\app",
+      "accessCount": 3,
+      "lastAccessed": 1774283431464,
       "type": "directory"
     },
     {
-      "path": "src\\types\\supabase.ts",
-      "accessCount": 1,
-      "lastAccessed": 1774042542928,
+      "path": "src\\components\\ui\\card.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774285372281,
       "type": "file"
     },
     {
-      "path": "src\\lib\\actions\\wiki.ts",
-      "accessCount": 1,
-      "lastAccessed": 1774042564665,
+      "path": "src\\app\\try\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287833335,
       "type": "file"
     },
     {
-      "path": "src\\components\\wiki\\Accordion.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774070507806,
+      "path": "src\\app\\dashboard\\review\\CampDashboard.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287837735,
       "type": "file"
     },
     {
-      "path": "src\\components\\wiki\\Tabs.tsx",
+      "path": "src\\app\\dashboard\\review\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287838170,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\review\\loading.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287838486,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiContentShell.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287839044,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\marketing\\LandingPrimitives.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287862147,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\[slug]\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774287874176,
+      "type": "file"
+    },
+    {
+      "path": "DATABASE_SCHEMA.sql",
+      "accessCount": 2,
+      "lastAccessed": 1774282461446,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774283410869,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\pricing\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774285353209,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ui\\label.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774285384667,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774287758800,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 2,
+      "lastAccessed": 1774289847517,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/actions/wiki-actions.ts",
       "accessCount": 1,
-      "lastAccessed": 1774070512067,
+      "lastAccessed": 1774282454152,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285205662,
+      "type": "file"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774285206724,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ui\\select.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285222652,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\utils.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774285379690,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\ToolCard.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285392365,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\floor-tiles\\FloorTilesForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285428238,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\floor-tiles-calculator\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285442022,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\wall-paint\\WallPaintForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285449208,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\floor-tiles-calculator\\FloorTilesPageClient.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285451530,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\wall-paint-calculator\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285454374,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\wall-paint-calculator\\WallPaintPageClient.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285463138,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\tools\\lot-plotter\\LotPlotterForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285480478,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\lot-plotter\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285489232,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\tools\\lot-plotter\\LotPlotterClient.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774285499736,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774287341444,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiLayoutContent.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774287354408,
       "type": "file"
     }
   ],

@@ -89,10 +89,10 @@
   --color-camp-red:    #E63329;
   --color-camp-green:  #1B7A3C;
   --color-camp-amber:  #F5A623;
-  --color-camp-cream:  #FFFDF7;
-  --color-page-bg:     #F2F0EB;
+  --color-camp-cream:  #FFFFFF;
+  --color-page-bg:     #FFFFFF;
   --color-ink:         #18181B;
-  --color-border-design: #E8E4DC;
+  --color-border-design: #E5E7EB;
 
   /* Wiki article design tokens */
   --color-cobalt-light: #EEF3FD;
@@ -101,8 +101,8 @@
   --color-signal-red: #E63329;
   --color-signal-red-light: #FFF0EF;
   --color-signal-green: #1B7A3C;
-  --color-cream: #F2F0EB;
-  --color-warm-white: #F8F7F5;
+  --color-cream: #FFFFFF;
+  --color-warm-white: #FFFFFF;
   --color-wiki-ink: #1A1A1A;
   --color-ink-muted: #737370;
 
@@ -120,7 +120,7 @@
 }
 
 :root {
-  --background: #F8F7F5;       /* Surface Light (warm white) */
+  --background: #FFFFFF;       /* Page bg */
   --foreground: #1A2332;        /* Ink Primary */
   --card: #ffffff;              /* Surface Card (unchanged) */
   --card-foreground: #1A2332;
@@ -128,11 +128,11 @@
   --popover-foreground: #1A2332;
   --primary: #1B3FC4;           /* Camp Cobalt */
   --primary-foreground: #ffffff;
-  --secondary: #F8F7F5;         /* Surface Light */
+  --secondary: #F5F5F5;         /* Neutral gray */
   --secondary-foreground: #1A2332;
-  --muted: #F8F7F5;             /* Surface Light */
+  --muted: #F5F5F5;             /* Neutral gray */
   --muted-foreground: #8896A7;  /* Ink Tertiary */
-  --accent: #F8F7F5;
+  --accent: #F5F5F5;
   --accent-foreground: #1A2332;
   --destructive: #D64545;       /* Warm Red */
   --border: #D4DAE3;            /* Border Default */
@@ -156,8 +156,8 @@
   --sidebar-ring: #1B3FC4;
 
   /* Campfire — Neutral palette */
-  --bg-primary: #F8F7F5;
-  --bg-secondary: #F8F7F5;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5F5;
   --bg-tertiary: #EEF2FC;
   --border-strong: #D4DAE3;
   --border-light: #D4DAE3;
@@ -226,10 +226,10 @@
   --camp-red:    #E63329;
   --camp-green:  #1B7A3C;
   --camp-amber:  #F5A623;
-  --camp-cream:  #FFFDF7;
-  --page-bg:     #F2F0EB;
+  --camp-cream:  #FFFFFF;
+  --page-bg:     #FFFFFF;
   --ink:         #18181B;
-  --border-design: #E8E4DC;
+  --border-design: #E5E7EB;
   --text-2:      #6B6B6B;
   --text-3:      #9CA3AF;
 }
@@ -654,7 +654,7 @@ a[data-pending] {
 .wiki-prose code {
   font-family: 'DM Mono', monospace;
   font-size: 12px;
-  background: #F2F0EB;
+  background: #F5F5F5;
   color: #1B3FC4;
   padding: 1px 5px;
   border-radius: 3px;

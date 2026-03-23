@@ -66,7 +66,7 @@ const ScoreReveal = ({
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto"
-      style={{ backgroundColor: '#F2F0EB' }}
+      style={{ backgroundColor: '#F5F5F5' }}
     >
       <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
         {/* DM Mono eyebrow — 11px, uppercase */}

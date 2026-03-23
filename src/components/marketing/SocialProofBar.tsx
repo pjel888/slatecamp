@@ -5,7 +5,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 export const SocialProofBar = () => (
   <>
-    <section className='border-y border-[#E8E4DC] bg-[#FFFDF7]/80 p-2'>
+    <section className='border-y border-[#E5E7EB] bg-[#FFFFFF]/80 p-2'>
       <ScrollReveal y={0} duration={0.3}>
         <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center'>
           <span className='text-[12px] font-medium text-[#6B6B6B]'>

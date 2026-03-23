@@ -85,7 +85,7 @@ export const TaxonomyHeatmap = ({
                   'px-2 py-1 rounded-sm text-[11px] font-medium transition-colors duration-150',
                   deltaPeriod === period
                     ? 'bg-[#1B3FC4] text-white'
-                    : 'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F8F7F5]',
+                    : 'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F5F5F5]',
                 )}
               >
                 {DELTA_LABELS[period]}
@@ -96,7 +96,7 @@ export const TaxonomyHeatmap = ({
       </CardHeader>
       <CardContent className='space-y-4 pt-1'>
         {clusters.map((cluster) => (
-          <div key={cluster.id} className='space-y-2 rounded-md bg-[#F8F7F5] p-3'>
+          <div key={cluster.id} className='space-y-2 rounded-md bg-[#F5F5F5] p-3'>
             <div className='flex items-baseline justify-between gap-2'>
               <p className='text-xs font-medium tracking-tight text-[#1A2332]'>
                 {cluster.title}

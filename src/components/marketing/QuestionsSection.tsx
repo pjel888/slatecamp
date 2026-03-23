@@ -12,7 +12,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Quiz mockup (rendered UI, not an image) ── */
 
 const QuizMockup = () => (
-  <div className='overflow-hidden rounded-md border border-[#E8E4DC] bg-white'>
+  <div className='overflow-hidden rounded-md border border-[#E5E7EB] bg-white'>
     {/* Header — Cobalt with noise */}
     <div className='relative overflow-hidden bg-[#1B3FC4] px-4 py-3 noise-heavy'>
       <div className='relative z-10 flex items-center justify-between'>
@@ -51,7 +51,7 @@ const QuizMockup = () => (
               ? 'border-[#1B7A3C] bg-[#f0fdf4] text-[#1B7A3C]'
               : opt.state === 'selected'
                 ? 'border-[#1B3FC4] bg-[#EEF2FC] text-[#1B3FC4]'
-                : 'border-[#E8E4DC] text-[#555]'
+                : 'border-[#E5E7EB] text-[#555]'
           }`}
         >
           <div
@@ -65,7 +65,7 @@ const QuizMockup = () => (
       ))}
 
       {/* Explanation card */}
-      <div className='mt-3 rounded-[8px] bg-[#F2F0EB] p-3'>
+      <div className='mt-3 rounded-[8px] bg-[#F5F5F5] p-3'>
         <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-[#1B3FC4]'>
           Explanation
         </div>

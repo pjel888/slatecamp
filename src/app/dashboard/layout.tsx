@@ -85,7 +85,7 @@ async function DashboardLayoutContent({
         <ActiveSessionProvider>
           <NoteContextProvider>
           <SidebarProvider>
-            <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200' style={{ backgroundColor: '#FFFDF7' }}>
+            <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg'>
               <SidebarShell
                 isAdmin={isAdmin}
                 isDevMode={showDevTools}
@@ -101,7 +101,7 @@ async function DashboardLayoutContent({
                   <div>
                     <DashboardHeader />
                   </div>
-                  <main className='flex-1 min-h-0 overflow-y-auto'>
+                  <main className='flex-1 min-h-0 overflow-y-auto bg-page-bg'>
                     {children}
                   </main>
                 </BreadcrumbProvider>

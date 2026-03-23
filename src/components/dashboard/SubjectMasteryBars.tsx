@@ -9,7 +9,7 @@ interface SubjectMasteryBarsProps {
 }
 
 function getBarColor(mastery: number, questionsAnswered: number): string {
-  if (questionsAnswered === 0) return '#E8E4DC'
+  if (questionsAnswered === 0) return '#E5E7EB'
   if (mastery >= 70) return '#6BC09A'
   if (mastery >= 40) return '#F0B07A'
   return '#E89090'
@@ -26,8 +26,8 @@ export function SubjectMasteryBars({ data }: SubjectMasteryBarsProps) {
   }, [])
 
   return (
-    <div className="flex flex-col bg-white border border-[#E8E4DC] rounded-md overflow-hidden h-full">
-      <div className="px-4 py-3 border-b border-[#E8E4DC]">
+    <div className="flex flex-col bg-white border border-[#E5E7EB] rounded-md overflow-hidden h-full">
+      <div className="px-4 py-3 border-b border-[#E5E7EB]">
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]">
           By Subject
         </span>
@@ -52,7 +52,7 @@ export function SubjectMasteryBars({ data }: SubjectMasteryBarsProps) {
                     {clamped}%
                   </span>
                 </div>
-                <div className="h-1.5 w-full bg-[#F2F0EB] rounded-full overflow-hidden">
+                <div className="h-1.5 w-full bg-[#F5F5F5] rounded-full overflow-hidden">
                   <div
                     className="h-full rounded-full"
                     style={{
@@ -67,7 +67,7 @@ export function SubjectMasteryBars({ data }: SubjectMasteryBarsProps) {
           })}
         </div>
 
-        <div className="mt-3 pt-2 border-t border-[#E8E4DC] flex items-center justify-between">
+        <div className="mt-3 pt-2 border-t border-[#E5E7EB] flex items-center justify-between">
           <p className="text-xs text-[#6B6B6B]">
             {hasData
               ? `${abovePassing} of ${data.length} subjects above passing`
