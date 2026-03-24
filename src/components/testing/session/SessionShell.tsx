@@ -423,7 +423,27 @@ export const SessionShell = ({
   const isChill = isChillLike(source)
   const answeredCountForChill = Array.from(submittedQuestions).length
 
-  if (!currentQuestion) return null
+  if (!currentQuestion) {
+    return (
+      <QuizOverlay aria-label="Testing session">
+        <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
+          <div className="max-w-sm space-y-4">
+            <h2 className="text-lg font-semibold text-[#1A2332]">No Questions Available</h2>
+            <p className="text-sm text-[#4A5568]">
+              This session could not load any questions. This can happen when your discipline has no questions yet or the session was created with an empty question set.
+            </p>
+            <button
+              type="button"
+              onClick={handleExit}
+              className="mt-4 h-9 px-6 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-[#1535A8] transition-colors"
+            >
+              Back to Testing
+            </button>
+          </div>
+        </div>
+      </QuizOverlay>
+    )
+  }
 
   return (
     <QuizOverlay aria-label="Testing session">

@@ -298,6 +298,11 @@ export const createTestingSession = async (
     }
   }
 
+  // Guard: never create a session with zero questions
+  if (questionIds.length === 0) {
+    throw new Error('No questions available for this session configuration. Please check your discipline selection and try again.')
+  }
+
   // Capture mastery snapshot at start for debrief delta computation
   let masterySnapshot: Record<string, number> | null = null
   if (questionIds.length > 0) {
