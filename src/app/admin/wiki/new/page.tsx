@@ -1,5 +1,11 @@
-import { WikiEditor } from '@/components/admin/WikiEditor'
+import dynamic from 'next/dynamic'
 
-export default function NewWikiArticlePage() {
+const WikiEditor = dynamic(
+  () => import('@/components/admin/WikiEditor').then(m => m.WikiEditor),
+)
+
+const NewWikiArticlePage = () => {
   return <WikiEditor />
 }
+
+export default NewWikiArticlePage

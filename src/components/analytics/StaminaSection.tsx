@@ -1,7 +1,11 @@
+import dynamic from 'next/dynamic'
 import { getStaminaCurveData } from '@/lib/actions/analytics'
-import { StaminaCurve } from '@/components/analytics/StaminaCurve'
 
-export async function StaminaSection() {
+const StaminaCurve = dynamic(
+  () => import('@/components/analytics/StaminaCurve').then(m => m.StaminaCurve),
+)
+
+export const StaminaSection = async () => {
   const data = await getStaminaCurveData()
   return <StaminaCurve data={data} />
 }

@@ -1,8 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getSubjectMasteryData } from '@/lib/actions/mastery'
-import { SubjectRadarChart } from '@/components/dashboard/SubjectRadarChart'
 import type { SubjectMastery } from '@/types/dashboard'
 
-export async function RadarSection() {
+const SubjectRadarChart = dynamic(
+  () => import('@/components/dashboard/SubjectRadarChart').then(m => m.SubjectRadarChart),
+)
+
+export const RadarSection = async () => {
   const raw = await getSubjectMasteryData()
 
   const data: SubjectMastery[] = raw.map(d => ({

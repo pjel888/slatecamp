@@ -23,7 +23,12 @@ import { useNoteContext } from '@/lib/context/note-context'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { TemplatePicker } from '@/components/notes/TemplatePicker'
-import { NotesEditor } from '@/components/notes/NotesEditor'
+import dynamic from 'next/dynamic'
+
+const NotesEditor = dynamic(
+  () => import('@/components/notes/NotesEditor').then(m => m.NotesEditor),
+  { ssr: false },
+)
 import { cn } from '@/lib/utils'
 import { formatDistanceToNow } from 'date-fns'
 import type { NoteType, NoteStub } from '@/types/app'

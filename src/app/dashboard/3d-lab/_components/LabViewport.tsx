@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import type { Model3D, ModelParameter, SpatialHotspot } from '@/components/3d/Workspace'
-import { Workspace } from '@/components/3d/Workspace'
 import { CircleNotch } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getModuleById } from '../_config/moduleRegistry'
@@ -81,6 +80,13 @@ function LoadingSpinner() {
     </div>
   )
 }
+
+// ─── Workspace (Three.js — lazy loaded) ──────────────────────────────────
+
+const Workspace = dynamic(
+  () => import('@/components/3d/Workspace').then(m => m.Workspace),
+  { ssr: false, loading: () => <LoadingSpinner /> },
+)
 
 // ─── Template Module Wrapper ───────────────────────────────────────────────
 

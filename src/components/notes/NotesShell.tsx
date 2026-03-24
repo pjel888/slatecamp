@@ -7,7 +7,12 @@ import { cn } from '@/lib/utils'
 import { getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes-actions'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
-import { NotesEditor } from '@/components/notes/NotesEditor'
+import dynamic from 'next/dynamic'
+
+const NotesEditor = dynamic(
+  () => import('@/components/notes/NotesEditor').then(m => m.NotesEditor),
+  { ssr: false },
+)
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { useNotesPanels, useNotesList, useNoteEditor } from '@/hooks/notes'
 import type { NoteStub } from '@/types/app'

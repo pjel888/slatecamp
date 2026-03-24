@@ -1,6 +1,10 @@
+import dynamic from 'next/dynamic'
 import { getArticle } from '@/lib/actions/admin/wiki-queries'
 import { notFound } from 'next/navigation'
-import { WikiEditor } from '@/components/admin/WikiEditor'
+
+const WikiEditor = dynamic(
+  () => import('@/components/admin/WikiEditor').then(m => m.WikiEditor),
+)
 
 interface PageProps {
   params: Promise<{ id: string }>

@@ -52,24 +52,24 @@ export function Callout({ variant = 'note', title, children }: CalloutProps) {
   const Icon = config.icon
 
   return (
-    <div
+    <span
       className={cn(
-        'not-prose my-6 rounded-md border-l-4 px-4 py-3',
+        'not-prose block my-6 rounded-md border-l-4 px-4 py-3',
         config.border,
         config.bg,
       )}
       role="note"
     >
-      <div className="flex items-center gap-2 mb-1.5">
+      <span className="flex items-center gap-2 mb-1.5">
         <Icon size={16} weight="bold" className={config.iconColor} />
         <span className={cn('text-xs font-semibold uppercase tracking-wider', config.labelColor)}>
           {title || config.label}
         </span>
-      </div>
-      <div className="text-sm text-zinc-700 leading-relaxed [&>p]:m-0 [&>p+p]:mt-2">
+      </span>
+      <span className="block text-sm text-zinc-700 leading-relaxed [&>p]:m-0 [&>p+p]:mt-2">
         {children}
-      </div>
-    </div>
+      </span>
+    </span>
   )
 }
 

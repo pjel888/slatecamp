@@ -1,8 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getReadinessTrajectory } from '@/lib/actions/analytics'
 import { getReadinessScore } from '@/lib/actions/readiness'
-import { ReadinessTrajectory } from '@/components/analytics/ReadinessTrajectory'
 
-export async function ReadinessSection() {
+const ReadinessTrajectory = dynamic(
+  () => import('@/components/analytics/ReadinessTrajectory').then(m => m.ReadinessTrajectory),
+)
+
+export const ReadinessSection = async () => {
   const [trajectory, readiness] = await Promise.all([
     getReadinessTrajectory(),
     getReadinessScore(),
