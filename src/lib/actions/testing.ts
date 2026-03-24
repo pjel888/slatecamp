@@ -64,6 +64,7 @@ export const createTestingSession = async (
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) throw new Error('Unauthenticated')
+  if (user.id !== userId) throw new Error('Unauthorized')
 
   // Resolve discipline_id from user global stats
   const { data: stats } = await supabase
@@ -98,6 +99,11 @@ export const createTestingSession = async (
 
     if (config.subjectFilter?.length > 0) {
       nodeQuery = nodeQuery.in('subject_area', config.subjectFilter)
+    }
+
+    // Focus Review: restrict to specific weak topic nodes sent by client
+    if (config.topicFilter?.length > 0) {
+      nodeQuery = nodeQuery.in('node_id', config.topicFilter)
     }
 
     const { data: leafNodes } = await nodeQuery
@@ -259,7 +265,7 @@ export const createTestingSession = async (
     questionIds = (enduranceQ || []).map((q: { question_id: string }) => q.question_id)
   } else if (config.source === 'chill_mode') {
     // ~50 from mixed pool, shuffled
-    const { data: nodes } = await supabase
+    let chillNodeQuery = supabase
       .from('taxonomy_tree')
       .select('node_id')
       .eq('discipline_id', disciplineId)
@@ -268,6 +274,11 @@ export const createTestingSession = async (
       .is('deprecated_at', null)
       .not('ale_id', 'is', null)
 
+    if (config.subjectFilter?.length > 0) {
+      chillNodeQuery = chillNodeQuery.in('subject_area', config.subjectFilter)
+    }
+
+    const { data: nodes } = await chillNodeQuery
     const nodeIds = (nodes || []).map((n: { node_id: string }) => n.node_id)
     const { data: chillQ } = await supabase
       .from('questions')

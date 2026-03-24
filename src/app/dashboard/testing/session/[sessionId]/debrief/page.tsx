@@ -70,11 +70,13 @@ const DebriefPage = async ({ params }: DebriefPageProps) => {
     ),
   ]
 
-  const { data: masteryData } = await supabase
-    .from('user_node_mastery')
-    .select('topic_id, current_mastery_weight, taxonomy_tree!inner(name, ale_id)')
-    .eq('user_id', user.id)
-    .in('topic_id', topicIds)
+  const { data: masteryData } = topicIds.length > 0
+    ? await supabase
+        .from('user_node_mastery')
+        .select('topic_id, current_mastery_weight, taxonomy_tree!inner(name, ale_id)')
+        .eq('user_id', user.id)
+        .in('topic_id', topicIds)
+    : { data: [] }
 
   return (
     <DebriefLayout
