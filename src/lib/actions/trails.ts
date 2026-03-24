@@ -7,8 +7,12 @@ import type {
   TrailStep,
   TrailEnrollment,
   TrailProgress,
+  TrailDayCompletion,
   TrailRecommendation,
   TrailIntensity,
+  ScorePoint,
+  DayCompletionData,
+  NodeMasteryState,
 } from '@/types/app'
 import { revalidatePath } from 'next/cache'
 import { trackServerEvent } from '@/lib/analytics-server'
@@ -138,7 +142,7 @@ export const enrollInTrail = async (trailId: string): Promise<TrailEnrollment> =
   const trailName = (data as any)?.camp_trails?.name ?? 'Unknown Trail'
   void trackServerEvent('trail_enrolled', { trailId, trailName })
 
-  revalidatePath('/dashboard/trails')
+  revalidatePath('/dashboard/camptrails')
   revalidatePath('/dashboard')
   return data as TrailEnrollment
 }
@@ -255,7 +259,7 @@ export const completeStep = async (params: {
     }
   }
 
-  revalidatePath('/dashboard/trails')
+  revalidatePath('/dashboard/camptrails')
   revalidatePath('/dashboard')
 }
 
@@ -364,3 +368,185 @@ export const recommendTrail = async (): Promise<TrailRecommendation | null> => {
     weekOnePreview: `Week 1 focuses on ${weakestSubjectName} — your biggest gap.`,
   }
 }
+
+// ============================================================
+// Trail Lifecycle Actions
+// ============================================================
+
+export const pauseTrail = async (enrollmentId: string): Promise<void> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  await supabase
+    .from('user_trail_enrollments')
+    .update({ status: 'paused', paused_at: new Date().toISOString() })
+    .eq('enrollment_id', enrollmentId)
+    .eq('user_id', user.id)
+
+  revalidatePath('/dashboard/camptrails')
+  revalidatePath('/dashboard')
+}
+
+export const resumeTrail = async (enrollmentId: string): Promise<void> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  await supabase
+    .from('user_trail_enrollments')
+    .update({ status: 'active', paused_at: null })
+    .eq('enrollment_id', enrollmentId)
+    .eq('user_id', user.id)
+
+  revalidatePath('/dashboard/camptrails')
+  revalidatePath('/dashboard')
+}
+
+export const abandonTrail = async (enrollmentId: string): Promise<void> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  // Get current days_completed for record
+  const { data: enrollment } = await supabase
+    .from('user_trail_enrollments')
+    .select('days_completed')
+    .eq('enrollment_id', enrollmentId)
+    .eq('user_id', user.id)
+    .single()
+
+  await supabase
+    .from('user_trail_enrollments')
+    .update({
+      status: 'abandoned',
+      abandoned_at: new Date().toISOString(),
+      days_completed_at_abandon: enrollment?.days_completed ?? 0,
+    })
+    .eq('enrollment_id', enrollmentId)
+    .eq('user_id', user.id)
+
+  revalidatePath('/dashboard/camptrails')
+  revalidatePath('/dashboard')
+}
+
+// ============================================================
+// Score Trajectory & Day Completion Data
+// ============================================================
+
+export const getScoreTrajectory = async (enrollmentId: string): Promise<ScorePoint[]> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const { data, error } = await supabase
+    .from('trail_day_completions')
+    .select('day_number, readiness_score_at_completion, completed_at')
+    .eq('enrollment_id', enrollmentId)
+    .not('readiness_score_at_completion', 'is', null)
+    .order('day_number', { ascending: true })
+
+  if (error) return []
+
+  return (data || []).map((d: any) => ({
+    day_number: d.day_number ?? 0,
+    score: d.readiness_score_at_completion ?? 0,
+    completed_at: d.completed_at,
+  }))
+}
+
+export const getDayCompletionDetail = async (
+  enrollmentId: string,
+  dayNumber: number,
+): Promise<DayCompletionData | null> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return null
+
+  // Get the day completion record
+  const { data: completion } = await supabase
+    .from('trail_day_completions')
+    .select('*, trail_days!inner(day_id, day_number, title, subject_focus, estimated_minutes, trail_id)')
+    .eq('enrollment_id', enrollmentId)
+    .eq('day_number', dayNumber)
+    .single()
+
+  if (!completion) return null
+
+  const trailDay = (completion as any).trail_days
+  const trailId = trailDay?.trail_id
+
+  // Get the next day
+  let nextDay: DayCompletionData['next_day'] = null
+  if (trailId) {
+    const { data: next } = await supabase
+      .from('trail_days')
+      .select('day_number, title, estimated_minutes, trail_steps(step_id)')
+      .eq('trail_id', trailId)
+      .eq('day_number', dayNumber + 1)
+      .single()
+
+    if (next) {
+      nextDay = {
+        day_number: next.day_number,
+        title: next.title,
+        estimated_minutes: next.estimated_minutes,
+        step_count: (next.trail_steps as any[])?.length ?? 0,
+      }
+    }
+  }
+
+  return {
+    day_number: dayNumber,
+    subject_focus: trailDay?.subject_focus ?? null,
+    mastery_before: (completion.mastery_before as Record<string, number>) ?? {},
+    mastery_after: (completion.mastery_after as Record<string, number>) ?? {},
+    nodes_updated: [],
+    next_day: nextDay,
+  }
+}
+
+export const getFullDayCompletions = async (enrollmentId: string): Promise<TrailDayCompletion[]> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const { data, error } = await supabase
+    .from('trail_day_completions')
+    .select('*')
+    .eq('enrollment_id', enrollmentId)
+    .order('day_number', { ascending: true })
+
+  if (error) return []
+  return (data || []) as TrailDayCompletion[]
+}
+
+export const getTodayNodeStates = async (nodeIds: string[]): Promise<NodeMasteryState[]> => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user || nodeIds.length === 0) return []
+
+  const { data, error } = await supabase
+    .from('user_node_mastery')
+    .select('topic_id, current_mastery_weight, last_encountered')
+    .eq('user_id', user.id)
+    .in('topic_id', nodeIds)
+
+  if (error) return []
+
+  return (data || []).map((d: any) => {
+    const weight = d.current_mastery_weight ?? 0
+    let level: NodeMasteryState['mastery_level'] = 'grey'
+    if (weight >= 0.8) level = 'green'
+    else if (weight >= 0.5) level = 'amber'
+    else if (weight > 0) level = 'red'
+
+    return {
+      node_id: d.topic_id,
+      mastery_level: level,
+      current_mastery_weight: weight,
+      last_encountered: d.last_encountered,
+    }
+  })
+}
+

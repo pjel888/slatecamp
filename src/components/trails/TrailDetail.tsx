@@ -56,7 +56,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
   const handleEnroll = () => {
     startTransition(async () => {
       await enrollInTrail(trail.trail_id)
-      router.push(`/dashboard/trails/${trail.slug}/today`)
+      router.push(`/dashboard/camptrails/${trail.slug}/today`)
     })
   }
 
@@ -102,7 +102,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
             </div>
             <button
               type="button"
-              onClick={() => router.push(`/dashboard/trails/${trail.slug}/today`)}
+              onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
               className="px-4 py-2 rounded-sm bg-[#1B3FC4] text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             >
               Continue Trail &rarr;

@@ -137,7 +137,7 @@ export const TrailDailyView = ({
           <div className="mt-2 flex gap-3">
             <button
               type="button"
-              onClick={() => router.push(`/dashboard/trails/${trail.slug}/today`)}
+              onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
               className="text-xs font-medium text-[#D4951A] hover:text-[#9A6510] transition-colors duration-150"
             >
               Continue with Day {enrollment.current_day}

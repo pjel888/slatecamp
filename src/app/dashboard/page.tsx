@@ -13,6 +13,7 @@ import { OnboardingStateCard } from '@/components/dashboard/OnboardingStateCard'
 import { LockedScoreWidget } from '@/components/dashboard/LockedScoreWidget'
 import { StreakRibbon } from '@/components/dashboard/StreakRibbon'
 import { SrsReviewWidget } from '@/components/dashboard/SrsReviewWidget'
+import { DashboardTrailCard, DashboardTrailPrompt } from '@/components/trails/DashboardTrailCard'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
@@ -54,6 +55,18 @@ export default async function DashboardPage() {
             estimatedMinutes={data.srsReview.estimatedMinutes}
           />
         )}
+
+        {/* ── Today's Trail Day ──────────────────────────── */}
+        {data.activeTrailDay ? (
+          <DashboardTrailCard
+            dayNumber={data.activeTrailDay.dayNumber}
+            title={data.activeTrailDay.title}
+            estimatedMinutes={data.activeTrailDay.estimatedMinutes}
+            trailSlug={data.activeTrailDay.trailSlug}
+          />
+        ) : data.onboardingState === 'ready' ? (
+          <DashboardTrailPrompt />
+        ) : null}
 
         {/* ── Subject Floor Alert ─────────────────────────── */}
         {data.subjectFloorAlerts.length > 0 && (

@@ -126,8 +126,8 @@ const ScoreReveal = ({
           <Link
             href={
               recommendation
-                ? `/dashboard/trails/${recommendation.trail.slug}`
-                : '/dashboard/trails'
+                ? `/dashboard/camptrails/${recommendation.trail.slug}`
+                : '/dashboard/camptrails'
             }
             className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             style={{ backgroundColor: '#1B3FC4' }}

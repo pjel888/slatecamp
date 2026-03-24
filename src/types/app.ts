@@ -727,8 +727,11 @@ export interface CampTrail {
   intensity: TrailIntensity | null
   duration_days: number
   total_steps: number
+  daily_time_estimate_minutes: number
+  subjects_covered: string[]
   is_published: boolean
   is_featured: boolean
+  is_free: boolean
   recommended_min_score: number | null
   recommended_max_score: number | null
   created_at: string
@@ -742,6 +745,11 @@ export interface TrailDay {
   title: string
   description: string | null
   estimated_minutes: number
+  subject_focus: string | null
+  subject_color: string | null
+  is_rest_day: boolean
+  is_phase_transition: boolean
+  phase_name: string | null
   created_at: string
   steps?: TrailStep[]
 }
@@ -761,7 +769,9 @@ export interface TrailStep {
   model_id: string | null
   estimated_minutes: number
   is_optional: boolean
+  is_computation_heavy: boolean
   preferred_time: string | null
+  lab_phase: string | null
   created_at: string
 }
 
@@ -776,8 +786,10 @@ export interface TrailEnrollment {
   started_at: string
   paused_at: string | null
   completed_at: string | null
+  abandoned_at: string | null
   target_completion_date: string | null
   readiness_score_at_start: number | null
+  days_completed_at_abandon: number | null
   pace_status: string
   created_at: string
   updated_at: string
@@ -799,14 +811,70 @@ export interface TrailDayCompletion {
   enrollment_id: string
   day_id: string
   user_id: string
+  day_number: number | null
   completed_at: string
   readiness_score_at_completion: number | null
+  mastery_before: Record<string, number> | null
+  mastery_after: Record<string, number> | null
+  all_steps_completed: boolean
 }
 
 export interface TrailRecommendation {
   trail: CampTrail
   reasoning: string
   weekOnePreview: string
+  isRetaker?: boolean
+}
+
+// Camp Trail composite types for UX components
+export interface TrailPhase {
+  phase_number: number
+  name: string
+  week_start: number
+  week_end: number
+  subject_focus: string
+}
+
+export interface ScorePoint {
+  day_number: number
+  score: number
+  completed_at: string
+}
+
+export interface DayCompletionData {
+  day_number: number
+  subject_focus: string | null
+  mastery_before: Record<string, number>
+  mastery_after: Record<string, number>
+  nodes_updated: { node_id: string; from: string; to: string }[]
+  next_day: { day_number: number; title: string; estimated_minutes: number; step_count: number } | null
+}
+
+export interface NodeMasteryState {
+  node_id: string
+  mastery_level: 'grey' | 'red' | 'amber' | 'green'
+  current_mastery_weight: number
+  last_encountered: string | null
+}
+
+// Step type visual config
+export const STEP_TYPE_CONFIG = {
+  wiki: { icon: '📖', label: 'WIKI READ', accent: '', cta: 'Start Reading →' },
+  quiz: { icon: '⚡', label: 'QUIZ', accent: 'bg-[#EEF2FC]', cta: 'Start Quiz →' },
+  lab: { icon: '🏛️', label: '3D LAB', accent: 'bg-[#EEEDFE]', cta: 'Open 3D Lab →' },
+  review: { icon: '🔄', label: 'REVIEW', accent: 'bg-[#FFF8E6]', cta: 'Start Review →' },
+} as const
+
+// Subject color map for TrailPhaseMap
+export const SUBJECT_COLORS: Record<string, string> = {
+  'Building Laws': '#1B3FC4',
+  'Fire & Life Safety': '#E63329',
+  'Structural Design': '#E8853A',
+  'Materials & Methods': '#1B7A3C',
+  'MEPF Utilities': '#534AB7',
+  'History & Theory': '#F5A623',
+  'Planning': '#6B9B37',
+  'Professional Practice': '#4A7B9D',
 }
 
 export interface AssessmentSubjectScore {

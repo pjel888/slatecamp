@@ -50,7 +50,7 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
   },
   {
     path: '/dashboard/camptrails',
-    title: 'CampTrails',
+    title: 'Camp Trail',
     icon: Path,
     group: 'practice',
   },

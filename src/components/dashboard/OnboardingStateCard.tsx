@@ -102,7 +102,7 @@ export const OnboardingStateCard = ({
   if (state === 'active_trail' && trailDay) {
     return (
       <Link
-        href={`/dashboard/trails/${trailDay.trailSlug}/today`}
+        href={`/dashboard/camptrails/${trailDay.trailSlug}/today`}
         className="block rounded-md border border-[#1B3FC4] bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[#1B3FC4]">

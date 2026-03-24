@@ -41,13 +41,16 @@ export const ROUTES = {
   TOOLS_WALL_PAINT: "/tools/wall-paint-calculator",
   TOOLS_LOT_PLOTTER: "/tools/lot-plotter",
   ADMIN: "/dashboard/admin",
-  DEVELOPER: "/dashboard/developer",
-  DEVELOPER_CONSOLE: "/dashboard/developer/console",
-  DEVELOPER_TEST_DATA: "/dashboard/developer/test-data",
-  DEVELOPER_DOCS: "/dashboard/developer/docs",
-  DEVELOPER_DB: "/dashboard/developer/db",
-  DEVELOPER_LOGS: "/dashboard/developer/logs",
-  DEVELOPER_DESIGN_SYSTEM: "/dashboard/developer/design-system",
+  DEVELOPER: "/developer",
+  DEVELOPER_CONSOLE: "/developer/tools/console",
+  DEVELOPER_TEST_DATA: "/developer/tools/test-data",
+  DEVELOPER_DOCS: "/developer/architecture",
+  DEVELOPER_DB: "/developer/tools/db",
+  DEVELOPER_LOGS: "/developer/tools/logs",
+  DEVELOPER_DESIGN_SYSTEM: "/developer/design-system",
+  DEVELOPER_API_REFERENCE: "/developer/api-reference",
+  DEVELOPER_COMPONENTS: "/developer/components",
+  DEVELOPER_TOOLS: "/developer/tools",
 } as const;
 
 /** Paths that do not require authentication (middleware). */
