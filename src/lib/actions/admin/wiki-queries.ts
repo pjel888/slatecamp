@@ -5,9 +5,9 @@ export async function getArticles() {
 
   const { data, error } = await supabase
     .from('wiki_articles')
-    .select('id:article_id, title, created_at, updated_at')
+    .select('article_id, title, slug, status, content, created_at, updated_at')
     .order('updated_at', { ascending: false })
-    .limit(100)
+    .limit(200)
 
   if (error) {
     console.error('Error fetching articles:', error)

@@ -1,4 +1,7 @@
+import type { Metadata } from 'next'
 import { canReviewContent } from '@/lib/admin/roles'
+
+export const metadata: Metadata = { title: 'Reviews — SlateCamp Admin' }
 import { redirect } from 'next/navigation'
 import { SMEReviewQueue } from '@/components/admin/SMEReviewQueue'
 

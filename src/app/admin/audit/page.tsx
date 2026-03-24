@@ -1,4 +1,7 @@
+import type { Metadata } from 'next'
 import { isSuperAdmin } from '@/lib/admin/roles'
+
+export const metadata: Metadata = { title: 'Audit Log — SlateCamp Admin' }
 import { redirect } from 'next/navigation'
 import { AuditLogViewer } from '@/components/admin/AuditLogViewer'
 

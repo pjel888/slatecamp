@@ -1,4 +1,7 @@
+import type { Metadata } from 'next'
 import { getAssets } from '@/lib/actions/admin/assets'
+
+export const metadata: Metadata = { title: '3D Assets — SlateCamp Admin' }
 import { AssetList } from '@/components/admin/AssetList'
 import { AssetUploader } from '@/components/admin/AssetUploader'
 

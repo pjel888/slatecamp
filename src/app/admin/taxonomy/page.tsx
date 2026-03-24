@@ -1,4 +1,7 @@
+import type { Metadata } from 'next'
 import { getTaxonomyNodes } from '@/lib/actions/admin/taxonomy'
+
+export const metadata: Metadata = { title: 'Taxonomy — SlateCamp Admin' }
 import { TaxonomyEditor } from '@/components/admin/TaxonomyEditor'
 
 export default async function AdminTaxonomyPage() {

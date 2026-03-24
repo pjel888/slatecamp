@@ -1,11 +1,7 @@
-import dynamic from 'next/dynamic'
+import { redirect } from 'next/navigation'
 
-const WikiEditor = dynamic(
-  () => import('@/components/admin/WikiEditor').then(m => m.WikiEditor),
-)
-
-const NewWikiArticlePage = () => {
-  return <WikiEditor />
+const NewWikiPage = () => {
+  redirect('/admin/articles/new')
 }
 
-export default NewWikiArticlePage
+export default NewWikiPage

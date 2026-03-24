@@ -1,13 +1,12 @@
 import { createClient } from '@/lib/supabase/server'
 
-export async function getQuestions() {
+export const getQuestions = async () => {
   const supabase = await createClient()
 
   const { data, error } = await supabase
     .from('questions')
-    .select('id:question_id, text, topic_id, difficulty, options, created_at')
+    .select('question_id, text, topic_id, difficulty, options, rationale, code_citation, created_at, updated_at')
     .order('created_at', { ascending: false })
-    .limit(100)
 
   if (error) {
     console.error('Error fetching questions:', error)
@@ -17,11 +16,26 @@ export async function getQuestions() {
   // Ensure options is always an array to prevent {} errors in rendering
   return (data || []).map(q => ({
     ...q,
-    options: Array.isArray(q.options) ? q.options : []
+    options: Array.isArray(q.options) ? q.options : [],
   }))
 }
 
-export async function getQuestion(id: string) {
+export const getQuestionsForAnalytics = async () => {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase
+    .from('questions')
+    .select('question_id, difficulty, rationale, code_citation, topic_id')
+
+  if (error) {
+    console.error('Error fetching questions for analytics:', error)
+    return []
+  }
+
+  return data || []
+}
+
+export const getQuestion = async (id: string) => {
   const supabase = await createClient()
 
   const { data, error } = await supabase
