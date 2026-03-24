@@ -132,7 +132,7 @@ export const createTestingSession = async (
         .in('topic_id', orderedNodeIds)
 
       if (recentIds.length > 0) {
-        qQuery = qQuery.not('question_id', 'in', `(${recentIds.map((id) => `"${id}"`).join(',')})`)
+        qQuery = qQuery.not('question_id', 'in', `(${recentIds.join(',')})`)
       }
 
       const { data: candidateQuestions } = await qQuery.limit(questionCount * 3)

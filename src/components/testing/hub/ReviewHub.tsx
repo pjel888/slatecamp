@@ -1,11 +1,12 @@
 'use client'
 
-import { useMemo } from 'react'
+import { useMemo, useState, useCallback } from 'react'
 import { WelcomeCard } from './WelcomeCard'
 import { SmartSuggestionCard } from './SmartSuggestionCard'
 import { InProgressBanner } from './InProgressBanner'
 import { ZoneSection } from './ZoneSection'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
+import { abandonTestingSession } from '@/lib/actions/testing'
 import type {
   ModeStats,
   SmartSuggestion,
@@ -295,6 +296,14 @@ const ReviewHub = ({
     [inProgressSession],
   )
 
+  const [bannerDismissed, setBannerDismissed] = useState(false)
+
+  const handleAbandon = useCallback(async () => {
+    if (!inProgressSession) return
+    setBannerDismissed(true)
+    await abandonTestingSession(inProgressSession.session_id)
+  }, [inProgressSession])
+
   const normalizedTier = (userTier === 'free' ? 'free' : 'pro') as 'free' | 'pro'
 
   const zone1Modes = MODES_BY_ZONE[1].map((key) => MODE_DEFINITIONS[key])
@@ -304,8 +313,8 @@ const ReviewHub = ({
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--background)' }}>
       {/* In-progress session banner */}
-      {inProgressInfo && (
-        <InProgressBanner session={inProgressInfo} />
+      {inProgressInfo && !bannerDismissed && (
+        <InProgressBanner session={inProgressInfo} onAbandon={handleAbandon} />
       )}
 
       <main
