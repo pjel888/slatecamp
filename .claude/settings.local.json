@@ -124,7 +124,10 @@
       "Bash(echo \"MISSING: $f\")",
       "mcp__chrome-devtools__navigate_page",
       "mcp__chrome-devtools__list_pages",
-      "mcp__plugin_oh-my-claudecode_t__ast_grep_search"
+      "mcp__plugin_oh-my-claudecode_t__ast_grep_search",
+      "Bash(curl -s http://localhost:3000/dashboard/wiki)",
+      "Bash(curl:*)",
+      "mcp__claude_ai_Supabase__get_logs"
     ]
   }
 }

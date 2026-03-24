@@ -96,7 +96,7 @@ export function CampDashboard({
 
   const confirmStartSession = async () => {
     if (!pendingConfig) return
-    
+
     setLoading(true)
     try {
       if (session) {
@@ -127,6 +127,12 @@ export function CampDashboard({
         selectedIds = shuffled.slice(0, pendingConfig.count)
       }
 
+      if (selectedIds.length === 0) {
+        console.error('[quiz] No questions available to create session')
+        setView('hub')
+        return
+      }
+
       const newSession = await createQuizSession({
         discipline_id: disciplineId,
         test_mode: pendingConfig.mode as TestMode,
@@ -136,10 +142,23 @@ export function CampDashboard({
         config: pendingConfig.config
       })
 
+      // Handle daily cap error returned as a fake session object
+      if ((newSession as any).error === 'daily_cap_reached') {
+        console.warn('[quiz] Daily question cap reached')
+        setView('hub')
+        return
+      }
+
       const [qData, iData] = await Promise.all([
         getSessionQuestions(newSession.question_ids),
         getSessionInteractions(newSession.session_id)
       ])
+
+      if (qData.length === 0) {
+        console.error('[quiz] getSessionQuestions returned 0 questions')
+        setView('hub')
+        return
+      }
 
       trackEvent({ event_name: 'quiz_session_started', event_properties: { test_mode: pendingConfig.mode, question_count: selectedIds.length }, session_id: newSession.session_id })
 
@@ -150,6 +169,7 @@ export function CampDashboard({
       setView('quiz')
     } catch (error) {
       console.error('Failed to start session:', error)
+      setView('hub')
     } finally {
       setLoading(false)
       setPendingConfig(null)
@@ -158,17 +178,30 @@ export function CampDashboard({
 
   const handleResumeSession = async () => {
     if (!session) return
+    if (!session.question_ids?.length) {
+      // Stale session with no questions — delete it and stay on hub
+      await deleteQuizSession(session.session_id).catch(() => {})
+      setSession(null)
+      return
+    }
     setLoading(true)
     try {
       const [qData, iData] = await Promise.all([
         getSessionQuestions(session.question_ids),
         getSessionInteractions(session.session_id)
       ])
+      if (qData.length === 0) {
+        console.error('[quiz] Resume returned 0 questions, deleting stale session')
+        await deleteQuizSession(session.session_id).catch(() => {})
+        setSession(null)
+        return
+      }
       setQuestions(qData)
       setInteractions(iData)
       setView('quiz')
     } catch (error) {
       console.error('Failed to resume session:', error)
+      setView('hub')
     } finally {
       setLoading(false)
     }

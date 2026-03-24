@@ -174,6 +174,8 @@ export async function getTaxonomyTree(
     return []
   }
 
+  console.log(`[getTaxonomyTree] DEBUG: ${nodes.length} nodes fetched (levels: ${[...new Set(nodes.map((n: any) => n.level))].join(',')})`)
+
   // Fetch wiki articles for nodes that may have them:
   // - All actual leaf nodes (no children in this set) — covers level-3 subtopics
   // - All level-2 nodes — some (e.g., "Subject Overview & Strategy") have articles
@@ -184,6 +186,8 @@ export async function getTaxonomyTree(
     .map((n: any) => n.node_id);
 
   const articleMap = new Map<string, { article_id: string; slug: string; title: string }[]>();
+
+  console.log(`[getTaxonomyTree] DEBUG: ${leafNodeIds.length} leafNodeIds computed`)
 
   if (leafNodeIds.length > 0) {
     // Chunk into smaller batches and run in PARALLEL with retry.
@@ -220,10 +224,16 @@ export async function getTaxonomyTree(
     }
   }
 
+  const nodesWithArticles = [...articleMap.entries()].filter(([, arts]) => arts.length > 0).length
+  console.log(`[getTaxonomyTree] DEBUG: articleMap has ${articleMap.size} entries, ${nodesWithArticles} nodes with articles. Sample:`, [...articleMap.entries()].slice(0, 2))
+
   const finalData = nodes.map((node: any) => ({
     ...(node as TaxonomyNode),
     articles: articleMap.get(node.node_id) || [],
   }));
+
+  const withArts = finalData.filter(n => n.articles && n.articles.length > 0).length
+  console.log(`[getTaxonomyTree] DEBUG: finalData has ${finalData.length} nodes, ${withArts} have articles`)
 
   return finalData
 }

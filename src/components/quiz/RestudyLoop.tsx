@@ -143,7 +143,7 @@ export const RestudyLoop = ({
       {/* Rationale (if checked and wrong) */}
       {isChecked && selectedAnswer !== correctId && currentQuestion.rationale && (
         <div className="p-3 bg-[#EEF2FC] border border-primary/10 rounded-md">
-          <p className="text-[13px] text-[#4A5568] leading-relaxed">{currentQuestion.rationale}</p>
+          <p className="text-[13px] text-[#4A5568] leading-relaxed">{typeof currentQuestion.rationale === 'string' ? currentQuestion.rationale : (currentQuestion.rationale as any)?.correct || ''}</p>
         </div>
       )}
 

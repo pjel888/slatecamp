@@ -4,9 +4,11 @@ import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Info, X, ArrowSquareOut, Plus, CheckCircle, Scales, Cube } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { resolveRationaleText, resolveRationaleTakeaway } from '@/lib/utils/question'
+import type { RationaleData } from '@/lib/utils/question'
 
 interface RationaleDrawerProps {
-  rationale: string | null
+  rationale: RationaleData
   explanation?: string | null
   codeCitation?: string | null
   correctAnswerText?: string | null
@@ -33,6 +35,8 @@ export function RationaleDrawer({
   on3DLabClick,
 }: RationaleDrawerProps) {
   const closeRef = useRef<HTMLButtonElement>(null)
+  const rationaleText = resolveRationaleText(rationale) || 'No explanation is available for this question yet.'
+  const takeaway = resolveRationaleTakeaway(rationale)
 
   // Focus close button when drawer opens for keyboard accessibility
   useEffect(() => {
@@ -76,8 +80,16 @@ export function RationaleDrawer({
 
               {/* Rationale body */}
               <p className="text-[14px] text-zinc-700 leading-[1.7] max-w-[65ch]">
-                {rationale || 'No explanation is available for this question yet.'}
+                {rationaleText}
               </p>
+
+              {/* Takeaway */}
+              {takeaway && (
+                <div className="flex items-start gap-2 bg-[#FEF8ED] border border-[#D4951A]/20 rounded-md px-3 py-2.5">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#D4951A] shrink-0 mt-0.5">Key Takeaway</span>
+                  <p className="text-sm text-[#1A2332]">{takeaway}</p>
+                </div>
+              )}
 
               {/* Correct answer highlight */}
               {correctAnswerText && (

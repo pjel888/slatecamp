@@ -2,10 +2,14 @@
 
 import { WikiMistakeCard } from './WikiMistakeCard'
 import { parseMdxProp } from './parse-mdx-prop'
+import { transformMistakeString } from './transform-mistake-string'
 import type { WikiMistakeProps } from '@/types/wiki'
 
-export const WikiMistakeList = ({ mistakes = [] }: { mistakes?: WikiMistakeProps[] | string }) => {
-  const parsed = parseMdxProp<WikiMistakeProps[]>(mistakes, [])
+export const WikiMistakeList = ({ mistakes = [] }: { mistakes?: WikiMistakeProps[] | string[] | string }) => {
+  const raw = parseMdxProp<(WikiMistakeProps | string)[]>(mistakes, [])
+  const parsed = raw.map((item, i) =>
+    typeof item === 'string' ? transformMistakeString(item, i) : item
+  )
   if (parsed.length === 0) return null
   return (
     <div className="not-prose">

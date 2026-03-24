@@ -133,7 +133,7 @@ export const QuestionPanel = ({
                 animation: 'panel-fade-in 150ms ease-out both',
               }}
             >
-              {question.rationale}
+              {typeof question.rationale === 'string' ? question.rationale : (question.rationale as any)?.correct || ''}
             </p>
           )}
 

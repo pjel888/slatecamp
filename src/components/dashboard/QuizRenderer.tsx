@@ -595,7 +595,28 @@ export function QuizRenderer({
     )
   }
 
-  if (!currentQuestion) return null
+  if (!currentQuestion) {
+    return (
+      <QuizOverlay>
+        <div className="flex flex-col items-center justify-center min-h-[60vh] px-5 py-10">
+          <div className="w-full max-w-sm text-center space-y-4">
+            <SCIcon icon={Warning} size="xl" className="text-[#8896A7] mx-auto" />
+            <h2 className="text-base font-semibold text-[#1A2332]">No questions loaded</h2>
+            <p className="text-sm text-[#4A5568]">
+              Something went wrong loading this session. Please go back and try again.
+            </p>
+            <button
+              type="button"
+              onClick={onExit}
+              className="h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] bg-[#1B3FC4] text-white hover:bg-[#1535A8] transition-colors"
+            >
+              Back to Review
+            </button>
+          </div>
+        </div>
+      </QuizOverlay>
+    )
+  }
 
   const answeredCount = Object.keys(answers).length
   const unansweredCount = questions.length - answeredCount

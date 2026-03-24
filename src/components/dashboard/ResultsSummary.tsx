@@ -357,7 +357,7 @@ export function ResultsSummary({
                       {/* Rationale */}
                       {!isCorrect && q.rationale && (
                         <div className='mt-2 p-3 bg-[#EEF2FC] border border-primary/10 rounded-md'>
-                          <p className='text-[13px] text-[#4A5568] leading-relaxed'>{q.rationale}</p>
+                          <p className='text-[13px] text-[#4A5568] leading-relaxed'>{typeof q.rationale === 'string' ? q.rationale : (q.rationale as any)?.correct || ''}</p>
                           {q.code_citation && (
                             <div className='flex items-center gap-1.5 mt-2 text-[12px] text-[#4A5568]'>
                               <SCIcon icon={Scales} size='xs' className='text-[#8896A7]' />

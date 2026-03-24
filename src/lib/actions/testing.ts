@@ -33,25 +33,25 @@ export async function getTestingPageData(params: { topicId?: string; subjectId?:
     .order('started_at', { ascending: false })
 
   // 3. Fetch question IDs + subjects in parallel
+  // Uses a PostgREST inner join instead of .in() to avoid URL length limits
+  // (446 leaf-node UUIDs exceed PostgREST GET query-string limits)
   let questionIdsPromise: Promise<string[]> = Promise.resolve([])
   if (!params.topicId && !params.subjectId) {
     questionIdsPromise = (async () => {
-      const { data: leafNodes } = await supabase
-        .from('taxonomy_tree')
-        .select('node_id')
-        .eq('discipline_id', stats.current_discipline_id)
-        .eq('is_leaf', true)
-        .eq('is_cross_ref_only', false)
-        .is('deprecated_at', null)
-        .not('ale_id', 'is', null)
-
-      const leafIds = (leafNodes || []).map((n: { node_id: string }) => n.node_id)
-      if (leafIds.length === 0) return []
-
-      const { data: allQuestions } = await supabase
+      const { data: allQuestions, error } = await supabase
         .from('questions')
-        .select('question_id')
-        .in('topic_id', leafIds)
+        .select('question_id, taxonomy_tree!inner(discipline_id)')
+        .eq('taxonomy_tree.discipline_id', stats.current_discipline_id)
+        .eq('taxonomy_tree.is_leaf', true)
+        .eq('taxonomy_tree.is_cross_ref_only', false)
+        .is('taxonomy_tree.deprecated_at', null)
+        .not('taxonomy_tree.ale_id', 'is', null)
+
+      if (error) {
+        console.error('[testing] Failed to fetch question IDs:', error.message)
+        return []
+      }
+
       return (allQuestions || []).map((q: { question_id: string }) => q.question_id)
     })()
   }

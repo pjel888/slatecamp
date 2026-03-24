@@ -58,7 +58,7 @@ export interface Question {
   options: Choice[];
   correct_option_id: string;
   correct_answer?: string;
-  rationale: string | null; // General rationale
+  rationale: string | { correct?: string; takeaway?: string; [key: string]: string | undefined } | null;
   difficulty: number; // 0.0 to 1.0
   difficulty_rating?: number; // IRT field
   discrimination_rating?: number; // IRT field

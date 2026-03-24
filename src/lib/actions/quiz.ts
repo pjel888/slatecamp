@@ -162,9 +162,10 @@ export async function deleteQuizSession(sessionId: string) {
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
+  // Mark as abandoned instead of deleting — user_interactions FK prevents hard delete
   const { error } = await supabase
     .from('quiz_sessions')
-    .delete()
+    .update({ status: 'abandoned' as SessionStatus, updated_at: new Date().toISOString() })
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
 
