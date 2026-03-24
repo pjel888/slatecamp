@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { DataTable, type Column } from '@/components/shared/data-table'
 import { Badge } from '@/components/ui/badge'
 
@@ -97,6 +98,24 @@ const columns: Column<Row>[] = [
     header: 'Updated',
     type: 'date',
     sortable: true,
+  },
+  {
+    key: 'actions',
+    header: '',
+    type: 'action',
+    render: (row) => {
+      const q = asQ(row)
+      return q.topic_id ? (
+        <Link
+          href={`/admin/content?topic=${q.topic_id}`}
+          className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+          onClick={(e) => e.stopPropagation()}
+          title="Open content editor to view this question in article context"
+        >
+          View in context &rarr;
+        </Link>
+      ) : null
+    },
   },
 ]
 

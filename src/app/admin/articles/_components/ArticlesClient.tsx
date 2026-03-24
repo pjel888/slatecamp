@@ -74,6 +74,20 @@ const columns: Column<Article>[] = [
     type: 'date',
     sortable: true,
   },
+  {
+    key: 'actions',
+    header: '',
+    type: 'action',
+    render: (row) => (
+      <Link
+        href={`/admin/content/${row.article_id}`}
+        className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+        onClick={(e) => e.stopPropagation()}
+      >
+        Edit with Questions &rarr;
+      </Link>
+    ),
+  },
 ]
 
 /* ------------------------------------------------------------------ */
