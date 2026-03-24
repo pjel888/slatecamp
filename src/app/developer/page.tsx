@@ -1,15 +1,15 @@
-import { ROUTES } from '@/lib/constants/routes'
 import { Card } from '@/components/ui/card'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
 import {
   Palette,
-  Code2,
-  Layers,
-  Grid3X3,
-  Wrench,
   Activity,
+  Wrench,
+  Database,
+  ToggleRight,
+  UserCog,
+  FlaskConical,
 } from 'lucide-react'
 
 export const metadata = {
@@ -17,43 +17,45 @@ export const metadata = {
   description: 'Internal documentation, API reference, architecture guides, and dev tools for the SlateCamp engineering team.',
 }
 
-const quickLinks = [
+const sectionCards = [
   {
     title: 'Design System',
-    description: 'Colors, typography, components, tokens, and the Campfire visual language.',
+    description: 'Domain-organized component catalog with live previews, props tables, and copyable code.',
     icon: Palette,
-    href: ROUTES.DEVELOPER_DESIGN_SYSTEM,
+    href: '/developer/design-system',
+    badge: '21 Components',
+    badgeVariant: 'default' as const,
   },
   {
-    title: 'API Reference',
-    description: '11 route handlers, 50+ server actions, webhook documentation.',
-    icon: Code2,
-    href: ROUTES.DEVELOPER_API_REFERENCE,
-  },
-  {
-    title: 'Architecture',
-    description: 'Schema, auth, mastery engine, data flow, and deployment.',
-    icon: Layers,
-    href: ROUTES.DEVELOPER_DOCS,
-  },
-  {
-    title: 'Component Library',
-    description: '247 components — UI primitives, MDX blocks, interactive widgets.',
-    icon: Grid3X3,
-    href: ROUTES.DEVELOPER_COMPONENTS,
+    title: 'System Status',
+    description: 'Database health, API latency, edge functions, and deployment status.',
+    icon: Activity,
+    href: '/developer/status',
+    badge: 'Operational',
+    badgeVariant: 'success' as const,
   },
   {
     title: 'Dev Tools',
-    description: 'Console, database browser, audit logs, and test data generator.',
+    description: 'Feature flags, user impersonation, and test data generation.',
     icon: Wrench,
-    href: ROUTES.DEVELOPER_TOOLS,
+    href: '/developer/tools',
+    badge: '3 Tools',
+    badgeVariant: 'default' as const,
   },
-  {
-    title: 'System Health',
-    description: 'Environment status, cron jobs, and platform metrics.',
-    icon: Activity,
-    href: ROUTES.DEVELOPER_TOOLS,
-  },
+]
+
+const healthServices = [
+  { name: 'Database', status: 'operational' as const },
+  { name: 'API', status: 'operational' as const },
+  { name: 'Auth', status: 'operational' as const },
+  { name: 'Cache', status: 'degraded' as const },
+]
+
+const quickActions = [
+  { label: 'Check DB Status', href: '/developer/status/database', icon: Database },
+  { label: 'Toggle Feature Flag', href: '/developer/tools', icon: ToggleRight },
+  { label: 'Impersonate User', href: '/developer/tools', icon: UserCog },
+  { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: FlaskConical },
 ]
 
 const stats = [
@@ -78,7 +80,21 @@ const techStack = [
   { layer: 'Payments', pkg: 'stripe + payrex-node', version: '20.4.1 / 1.7.3' },
 ]
 
-export default function DeveloperPortalPage() {
+const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {
+  const isOperational = status === 'operational'
+  return (
+    <span className="inline-flex items-center gap-1.5 text-[10px] font-medium">
+      <span
+        className={`w-1.5 h-1.5 rounded-full ${isOperational ? 'bg-emerald-500' : 'bg-amber-500'}`}
+      />
+      <span className={isOperational ? 'text-emerald-600' : 'text-amber-600'}>
+        {name}
+      </span>
+    </span>
+  )
+}
+
+const DeveloperPortalPage = () => {
   return (
     <div className="max-w-5xl space-y-8">
       {/* Hero */}
@@ -94,19 +110,59 @@ export default function DeveloperPortalPage() {
         </p>
       </div>
 
-      {/* Quick Links */}
+      {/* Section Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {quickLinks.map((link) => (
-          <Link key={link.href + link.title} href={link.href}>
+        {sectionCards.map((card) => (
+          <Link key={card.href} href={card.href}>
             <Card variant="interactive" size="sm" className="h-full">
-              <div className="flex items-center gap-2 mb-1.5">
-                <link.icon className="w-4 h-4 text-primary" />
-                <span className="text-[13px] font-semibold text-foreground">{link.title}</span>
+              <div className="flex items-center justify-between mb-1.5">
+                <div className="flex items-center gap-2">
+                  <card.icon className="w-4 h-4 text-primary" />
+                  <span className="text-[13px] font-semibold text-foreground">{card.title}</span>
+                </div>
+                <Badge variant={card.badgeVariant} size="xs" pill>
+                  {card.badge}
+                </Badge>
               </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">{link.description}</p>
+              <p className="text-[11px] text-muted-foreground leading-relaxed">{card.description}</p>
             </Card>
           </Link>
         ))}
+      </div>
+
+      {/* System Health Summary */}
+      <Card className="p-2.5">
+        <div className="flex items-center gap-4 flex-wrap">
+          <span className="text-[11px] font-semibold text-foreground">System Health</span>
+          <div className="flex items-center gap-3">
+            {healthServices.map((service) => (
+              <StatusDot key={service.name} status={service.status} name={service.name} />
+            ))}
+          </div>
+          <span className="h-3 w-px bg-border" />
+          <span className="text-[10px] text-muted-foreground font-[family-name:var(--font-dm-mono)]">
+            Last checked: 3s ago
+          </span>
+        </div>
+      </Card>
+
+      {/* Quick Actions */}
+      <div>
+        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+          Quick Actions
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {quickActions.map((action) => (
+            <Link key={action.label} href={action.href}>
+              <Card variant="interactive" size="sm" className="h-full">
+                <div className="flex items-center gap-2">
+                  <action.icon className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-[11px] font-medium text-foreground">{action.label}</span>
+                </div>
+              </Card>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Platform Metrics */}
@@ -155,3 +211,5 @@ export default function DeveloperPortalPage() {
     </div>
   )
 }
+
+export default DeveloperPortalPage

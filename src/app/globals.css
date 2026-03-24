@@ -105,7 +105,7 @@
   /* Campfire — Functional accents (Tailwind utilities) */
   --color-accent-blue: var(--accent-blue);
   --color-accent-blue-hover: var(--accent-hover);
-  --color-danger: var(--danger);
+  --color-danger: var(--destructive);
   --color-info: var(--info);
 
   /* Campfire — Surface colors */
@@ -128,10 +128,10 @@
   --color-quiz-selected-border: var(--quiz-selected-border);
 
   /* Campfire — NEW semantic tokens for Tailwind */
-  --color-camp-orange: var(--camp-orange);
-  --color-emerald: var(--emerald);
-  --color-slate-blue-50: var(--slate-blue-50);
-  --color-emerald-50: var(--emerald-50);
+  --color-camp-orange: var(--accent);
+  --color-emerald: var(--success);
+  --color-slate-blue-50: var(--primary-50);
+  --color-emerald-50: var(--success-50);
   --color-surface-focused: var(--surface-focused);
   --color-border-warm: var(--border-warm);
 

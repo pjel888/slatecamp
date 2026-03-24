@@ -52,7 +52,7 @@ const MobileNav = ({
               <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-muted-foreground px-4 py-2 select-none">
                 {group.label}
               </p>
-              <div className="space-y-px">
+              <div className="space-y-2">
                 {group.items.map((item) => {
                   const active = isActive(item.href)
                   return (

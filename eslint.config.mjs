@@ -13,6 +13,13 @@ const eslintConfig = defineConfig([
       "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
       // Allow <img> where next/image is not practical (dynamic URLs, content images)
       "@next/next/no-img-element": "warn",
+      // Flag hardcoded hex colors in Tailwind classes — use design tokens instead
+      "no-restricted-syntax": ["warn",
+        {
+          selector: "Literal[value=/(?:text|bg|border|ring|outline|shadow|accent|fill|stroke)-\\[#[0-9a-fA-F]/]",
+          message: "Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700).",
+        },
+      ],
     },
   },
   // Override default ignores of eslint-config-next.

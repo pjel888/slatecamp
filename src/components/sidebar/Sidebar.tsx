@@ -154,10 +154,10 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
         {/* Scrollable body */}
         <div
           style={{ padding: 0 }}
-          className="flex flex-1 flex-col overflow-y-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {/* Dashboard — standalone group */}
-          <div style={{ padding: '0 6px' }}>
+          <div className="pt-4 pb-2 px-[6px]">
             <SidebarNavItem
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
@@ -190,7 +190,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
               </div>
 
               {/* Group items */}
-              <div style={{ padding: '0 6px' }}>
+              <div className="flex flex-col gap-2" style={{ padding: '0 6px' }}>
                 {group.items.map((navItem) => (
                   <SidebarNavItem
                     key={navItem.id}
@@ -205,7 +205,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
 
               {/* Separator between groups (not after last) */}
               {groupIdx < SIDEBAR_GROUPS.length - 1 && (
-                <div className="mx-[6px] my-1 border-t border-border" />
+                <div className="mx-[6px] my-4 border-t border-border" />
               )}
             </div>
           ))}

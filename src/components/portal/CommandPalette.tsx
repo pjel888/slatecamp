@@ -134,15 +134,17 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
       open={open}
       onOpenChange={setOpen}
       title="Command Palette"
-      description="Search admin pages and navigate quickly"
+      description="Search components, status, tools..."
     >
       <CommandInput
-        placeholder="Search pages..."
+        placeholder="Search components, status, tools..."
         value={query}
         onValueChange={setQuery}
       />
       <CommandList>
-        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandEmpty>
+          <span className="text-muted-foreground">No results found. Try a different search term.</span>
+        </CommandEmpty>
 
         {/* Recent pages — shown only when not actively searching */}
         {!isSearching && recentPages.length > 0 && (
@@ -181,6 +183,22 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
           </CommandGroup>
         ))}
       </CommandList>
+
+      {/* Keyboard hints footer */}
+      <div className="flex items-center justify-center gap-3 border-t border-border px-3 py-2">
+        <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">↑↓</kbd>
+          Navigate
+        </span>
+        <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">↵</kbd>
+          Select
+        </span>
+        <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">Esc</kbd>
+          Close
+        </span>
+      </div>
     </CommandDialog>
   )
 }
