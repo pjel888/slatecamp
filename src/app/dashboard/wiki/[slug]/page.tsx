@@ -20,16 +20,16 @@ import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
 import { WikiReadTracker } from '@/components/wiki/WikiReadTracker'
 
 const ITEM_STYLES: Record<string, { label: string; border: string; bg: string; text: string }> = {
-  fact:           { label: 'Key Fact',        border: 'border-l-[#1B3FC4]', bg: 'bg-[#EEF2FC]',  text: 'text-[#1B3FC4]' },
-  definition:     { label: 'Definition',      border: 'border-l-[#2D9F6F]', bg: 'bg-[#EDFAF4]',  text: 'text-[#2D9F6F]' },
-  formula:        { label: 'Formula',         border: 'border-l-[#D4951A]', bg: 'bg-[#FEF8ED]',  text: 'text-[#D4951A]' },
-  concept:        { label: 'Concept',         border: 'border-l-[#3B82C8]', bg: 'bg-[#EEF6FC]',  text: 'text-[#3B82C8]' },
-  code_provision: { label: 'Code Provision',  border: 'border-l-[#8896A7]', bg: 'bg-[#F5F7FA]',  text: 'text-[#4A5568]' },
-  exam_tip:       { label: 'Exam Tip',        border: 'border-l-[#E8853A]', bg: 'bg-[#FEF3E8]',  text: 'text-[#E8853A]' },
-  warning:        { label: 'Warning',         border: 'border-l-[#D64545]', bg: 'bg-[#FDF0F0]',  text: 'text-[#D64545]' },
-  heading:        { label: '',                border: '',                    bg: '',               text: '' },
-  detail:         { label: 'Detail',          border: 'border-l-[#D4DAE3]', bg: 'bg-white',      text: 'text-[#4A5568]' },
-  cross_ref:      { label: 'Cross Reference', border: 'border-l-[#D4DAE3]', bg: 'bg-[#F5F5F5]',  text: 'text-[#4A5568]' },
+  fact:           { label: 'Key Fact',        border: 'border-l-primary',        bg: 'bg-primary/5',        text: 'text-primary' },
+  definition:     { label: 'Definition',      border: 'border-l-emerald-500',    bg: 'bg-emerald-50',       text: 'text-emerald-600' },
+  formula:        { label: 'Formula',         border: 'border-l-amber-500',      bg: 'bg-amber-50',         text: 'text-amber-600' },
+  concept:        { label: 'Concept',         border: 'border-l-blue-500',       bg: 'bg-blue-50',          text: 'text-blue-600' },
+  code_provision: { label: 'Code Provision',  border: 'border-l-border',         bg: 'bg-muted/50',         text: 'text-text-secondary' },
+  exam_tip:       { label: 'Exam Tip',        border: 'border-l-orange-500',     bg: 'bg-orange-50',        text: 'text-orange-600' },
+  warning:        { label: 'Warning',         border: 'border-l-red-500',        bg: 'bg-red-50',           text: 'text-red-500' },
+  heading:        { label: '',                border: '',                         bg: '',                    text: '' },
+  detail:         { label: 'Detail',          border: 'border-l-border',         bg: 'bg-white',            text: 'text-text-secondary' },
+  cross_ref:      { label: 'Cross Reference', border: 'border-l-border',         bg: 'bg-muted',            text: 'text-text-secondary' },
 }
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
@@ -43,7 +43,7 @@ const WikiItemsRenderer = ({ items }: { items: { type: string; text: string }[] 
     {items.map((item, i) => {
       if (item.type === 'heading') {
         return (
-          <h2 key={i} className="text-base font-bold text-[#1A2332] mt-6 mb-2 first:mt-0">
+          <h2 key={i} className="text-base font-bold text-foreground mt-6 mb-2 first:mt-0">
             {item.text}
           </h2>
         )
@@ -61,7 +61,7 @@ const WikiItemsRenderer = ({ items }: { items: { type: string; text: string }[] 
               {style.label}
             </span>
           )}
-          <p className="text-sm text-[#1A2332] leading-relaxed">{item.text}</p>
+          <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
         </div>
       )
     })}
@@ -100,18 +100,18 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
     return (
       <>
         <Suspense fallback={null}>
-          <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
+          <div className="sticky top-0 z-30 border-b border-border bg-background">
             <WikiHeader nodeId={node.node_id} />
           </div>
         </Suspense>
 
         <div className="flex-1 overflow-y-auto">
           <div className="max-w-4xl mx-auto px-8 py-8">
-            <h1 className="text-xl font-bold text-[#1A2332] mb-1">
+            <h1 className="text-xl font-bold text-foreground mb-1">
               {node.name}
             </h1>
             {node.ale_id && (
-              <p className="font-mono text-[11px] text-[#8896A7] mb-6">
+              <p className="font-mono text-[11px] text-muted-foreground mb-6">
                 {node.ale_id}
                 {(node as any).exam_frequency && <span className="ml-3">Exam frequency: {(node as any).exam_frequency}</span>}
                 {(node as any).bloom_level && <span className="ml-3">Bloom: {(node as any).bloom_level}</span>}
@@ -123,14 +123,14 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
                 <WikiItemsRenderer items={wikiItems} />
               </div>
             ) : (
-              <p className="text-[#4A5568] leading-relaxed">
+              <p className="text-text-secondary leading-relaxed">
                 Content for this topic is being developed. Check back soon.
               </p>
             )}
 
-            <div className="mt-8 pt-6 border-t border-[#D4DAE3]">
-              <Link href={`/dashboard/review?topicId=${node.node_id}`}>
-                <Button className="bg-[#1B3FC4] hover:bg-[#1535A8] text-white font-bold rounded-sm px-8">
+            <div className="mt-8 pt-6 border-t border-border">
+              <Link href={`/dashboard/testing/subject/setup`}>
+                <Button className="font-bold rounded-sm px-8">
                   Practice this Topic
                 </Button>
               </Link>
@@ -159,15 +159,15 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
   ])
 
   const practiceHref = node?.node_id
-    ? `/dashboard/review?topicId=${node.node_id}`
-    : `/dashboard/review?articleId=${article.article_id}`
+    ? `/dashboard/testing/subject/setup`
+    : `/dashboard/testing/camp/setup`
   const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
 
   return (
     <>
       {/* Zone 1: Header — full-width, sticky top, fixed height */}
       <Suspense fallback={null}>
-        <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
+        <div className="sticky top-0 z-30 border-b border-border bg-background">
           <WikiHeader
             nodeId={node?.node_id}
             articleId={article.article_id}
@@ -240,8 +240,8 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
           </div>
 
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}
-          <div className="shrink-0 border-t border-zinc-200 bg-background print:hidden">
-            <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-zinc-400">
+          <div className="shrink-0 border-t border-border bg-background print:hidden">
+            <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
               <span>&larr; Previous topic</span>
               <span>Next topic &rarr;</span>
             </div>
@@ -249,16 +249,18 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
         </main>
 
         {/* Zone 4: Right Sidebar — sticky, strict ordering. Hidden in print. */}
-        <aside className="hidden lg:block print:!hidden w-56 shrink-0 border-l border-zinc-100 bg-zinc-50/30 h-full overflow-y-auto">
-          <WikiRightSidebar
-            practiceHref={practiceHref}
-            practiceLabel={practiceLabel}
-            relatedTopics={relatedTopics}
-            headings={headings}
-            articleSlug={article.slug}
-            scrollContainerId="wiki-center-pane"
-            sources={sources}
-          />
+        <aside className="hidden lg:block print:!hidden w-56 shrink-0 border-l border-border/60">
+          <div className="sticky top-0 max-h-screen overflow-y-auto py-6 px-4">
+            <WikiRightSidebar
+              practiceHref={practiceHref}
+              practiceLabel={practiceLabel}
+              relatedTopics={relatedTopics}
+              headings={headings}
+              articleSlug={article.slug}
+              scrollContainerId="wiki-center-pane"
+              sources={sources}
+            />
+          </div>
         </aside>
       </div>
     </>

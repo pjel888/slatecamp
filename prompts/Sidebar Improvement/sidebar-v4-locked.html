@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp Sidebar v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/*
+  ================================================================
+  SPATIAL LOCK CONTRACT — READ THIS BEFORE TOUCHING ANYTHING
+  ================================================================
+
+  RULE: Between collapsed (52px) and expanded (216px), the ONLY 
+  CSS property that changes on the sidebar is WIDTH. Nothing else.
+
+  Every child element has FIXED dimensions in both states:
+    - Nav rows: always 32px tall
+    - Group labels: always 22px tall (opacity change only)
+    - Separators: always 1px + 8px margin = 9px
+    - Icon containers: always 40×32px, flex-shrink:0
+    - Padding: always 6px horizontal
+
+  Labels and shortcuts become visible via OPACITY ONLY.
+  No height, padding, margin, max-width, or width changes. Ever.
+  
+  If you add a new element, it must have a FIXED height in both states.
+  ================================================================
+*/
+
+:root {
+  --bg:#FFFFFF;
+  --fg:#111827;
+  --fg2:#6B7280;
+  --fg3:#9CA3AF;
+  --bdr:#E5E7EB;
+  --surf:#F3F4F6;
+  --surfh:#EBEDF0;
+  --surfa:rgba(235,237,240,0.5);
+  --pri:#1B3FC4;
+  --pri-s:rgba(27,63,196,0.07);
+  --shad:0 4px 20px rgba(0,0,0,0.07),0 1px 3px rgba(0,0,0,0.04);
+  --bkdrop:rgba(0,0,0,0.025);
+  --bkblur:1px;
+  --tip-bg:#1F2937;
+  --tip-fg:#F9FAFB;
+  --gold:#D97706;
+  --green:#059669;
+}
+[data-theme="dark"]{
+  --bg:#0B0E14;--fg:#E5E7EB;--fg2:#9CA3AF;--fg3:#6B7280;
+  --bdr:#1F2937;--surf:#161B27;--surfh:#1F2937;
+  --surfa:rgba(31,41,55,0.5);
+  --pri:#4F6AE8;--pri-s:rgba(79,106,232,0.1);
+  --shad:0 4px 20px rgba(0,0,0,0.3);
+  --bkdrop:rgba(0,0,0,0.2);--bkblur:2px;
+  --tip-bg:#D1D5DB;--tip-fg:#111827;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:'Inter',system-ui,sans-serif;background:#F9FAFB;color:var(--fg);overflow-x:hidden;min-height:100dvh}
+[data-theme="dark"] body{background:#080A10}
+a{text-decoration:none;color:inherit}button{font-family:inherit}
+
+/* ================================================================
+   SIDEBAR SHELL — only width changes
+   ================================================================ */
+.sb{
+  position:fixed;top:0;left:0;height:100dvh;
+  width:52px;
+  background:var(--bg);
+  border-right:1px solid var(--bdr);
+  z-index:40;
+  display:flex;flex-direction:column;
+  overflow:hidden;
+  transition:width 180ms cubic-bezier(0.16,1,0.3,1);
+  will-change:width;
+}
+.sb.exp{width:216px;box-shadow:var(--shad)}
+.sb.col{transition:width 140ms cubic-bezier(0.4,0,1,1)}
+
+/* Backdrop */
+.bk{
+  position:fixed;inset:0;z-index:30;
+  background:var(--bkdrop);
+  backdrop-filter:blur(var(--bkblur));
+  -webkit-backdrop-filter:blur(var(--bkblur));
+  opacity:0;pointer-events:none;
+  transition:opacity 180ms ease;
+}
+.bk.on{opacity:1;pointer-events:auto}
+
+/* ================================================================
+   LOGO — fixed 40px height, always
+   ================================================================ */
+.hd{
+  display:flex;align-items:center;
+  height:40px; /* FIXED */
+  padding:0 6px; /* FIXED */
+  flex-shrink:0;
+  border-bottom:1px solid var(--bdr);
+}
+.hd-i{
+  flex-shrink:0;width:40px;height:40px;
+  display:flex;align-items:center;justify-content:center;
+}
+.hd-i svg{width:17px;height:17px;color:var(--pri)}
+.hd-t{
+  white-space:nowrap;overflow:hidden;
+  opacity:0;transition:opacity 180ms ease;
+  font-family:'Syne',sans-serif;font-weight:800;font-size:13px;
+  letter-spacing:-0.3px;
+}
+.hd-t .a{color:var(--fg)}.hd-t .b{color:var(--pri)}
+.sb.exp .hd-t{opacity:1}
+
+/* ================================================================
+   NAV BODY — scrollable column
+   ================================================================ */
+.bd{
+  flex:1;display:flex;flex-direction:column;
+  padding:4px 0;overflow-y:auto;overflow-x:hidden;
+  scrollbar-width:none;
+}
+.bd::-webkit-scrollbar{display:none}
+
+/* ================================================================
+   GROUP LABEL — ALWAYS 22px tall. ALWAYS.
+   Only opacity changes. Height, padding, margin: FIXED.
+   ================================================================ */
+.gl{
+  height:22px; /* FIXED — never changes */
+  padding:6px 16px 0; /* FIXED — never changes */
+  font-family:'DM Mono',monospace;
+  font-size:9px;font-weight:500;
+  text-transform:uppercase;letter-spacing:0.08em;
+  color:var(--fg3);
+  white-space:nowrap;overflow:hidden;
+  opacity:0; /* hidden when collapsed */
+  transition:opacity 180ms ease;
+  flex-shrink:0;
+}
+.sb.exp .gl{opacity:0.75}
+
+/* ================================================================
+   SEPARATOR — ALWAYS 9px (1px line + 4px margin top + 4px bottom)
+   ================================================================ */
+.sp{
+  height:1px; /* FIXED */
+  margin:4px 14px; /* FIXED */
+  background:var(--bdr);opacity:0.4;
+  flex-shrink:0;
+}
+
+/* Spacer pushes tertiary items down */
+.fill{flex:1;min-height:4px}
+
+/* ================================================================
+   NAV GROUP — just a flex column with fixed padding
+   ================================================================ */
+.g{
+  display:flex;flex-direction:column;
+  gap:1px; /* FIXED */
+  padding:0 6px; /* FIXED — matches sidebar horizontal padding */
+}
+
+/* ================================================================
+   NAV ITEM — 32px tall, always. Icon container 40px wide, always.
+   ================================================================ */
+.n{
+  position:relative;display:flex;align-items:center;
+  height:32px; /* FIXED */
+  border-radius:6px;
+  cursor:pointer;border:none;background:none;
+  width:100%;color:inherit;outline:none;
+  transition:background 100ms ease;
+  flex-shrink:0;
+}
+.n:hover{background:var(--surfh)}
+.n:focus-visible{outline:2px solid var(--pri);outline-offset:-2px}
+
+/* Active */
+.n.on{background:var(--surfa)}
+.n.on::before{
+  content:'';position:absolute;
+  left:-6px;top:50%;transform:translateY(-50%);
+  width:2.5px;height:16px;
+  background:var(--pri);border-radius:0 2px 2px 0;
+}
+
+/* ICON — the sacred immovable element */
+.ic{
+  flex-shrink:0;
+  width:40px;  /* FIXED — never changes */
+  height:32px; /* FIXED — never changes */
+  display:flex;align-items:center;justify-content:center;
+}
+.ic svg{
+  width:16px;height:16px;stroke-width:1.75;
+  color:var(--fg2);transition:color 100ms ease;
+}
+.n.on .ic svg{color:var(--fg)}
+.n:hover .ic svg{color:var(--fg)}
+.n.s2 .ic svg{opacity:0.65}
+.n.s3 .ic svg{opacity:0.55}
+.n.s2:hover .ic svg,.n.s2.on .ic svg,
+.n.s3:hover .ic svg,.n.s3.on .ic svg{opacity:1}
+
+/* LABEL — opacity ONLY. No width/max-width/height changes. */
+.lb{
+  white-space:nowrap;overflow:hidden;
+  font-size:12.5px;font-weight:400;color:var(--fg2);
+  opacity:0; /* hidden in collapsed */
+  transition:opacity 180ms ease;
+  flex-shrink:1;
+  min-width:0;
+}
+.sb.exp .lb{opacity:1}
+.n.on .lb{color:var(--fg);font-weight:500}
+
+/* SHORTCUT BADGE — opacity ONLY */
+.kb{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;
+  color:var(--fg3);background:var(--surf);
+  border:1px solid var(--bdr);border-radius:3px;
+  padding:0 4px;margin-left:auto;margin-right:4px;
+  white-space:nowrap;line-height:1.5;
+  opacity:0; /* hidden in collapsed */
+  transition:opacity 180ms ease;
+}
+.sb.exp .kb{opacity:0.6}
+
+/* ================================================================
+   TOOLTIP (collapsed only)
+   ================================================================ */
+.tp{
+  position:fixed;left:60px;
+  background:var(--tip-bg);color:var(--tip-fg);
+  font-size:11px;font-weight:500;
+  padding:3px 7px;border-radius:4px;
+  white-space:nowrap;pointer-events:none;
+  opacity:0;transform:translateX(-3px);
+  transition:opacity 100ms ease,transform 100ms ease;
+  z-index:50;box-shadow:0 2px 8px rgba(0,0,0,0.12);
+}
+.tp::before{
+  content:'';position:absolute;left:-3px;top:50%;transform:translateY(-50%);
+  border:3px solid transparent;border-right-color:var(--tip-bg);
+}
+.tp.on{opacity:1;transform:translateX(0)}
+.tp .tk{font-family:'DM Mono',monospace;font-size:9px;opacity:0.5;margin-left:5px}
+
+/* ================================================================
+   FOOTER — fixed heights
+   ================================================================ */
+.ft{flex-shrink:0;border-top:1px solid var(--bdr);padding:4px 6px}
+.pf{
+  display:flex;align-items:center;
+  height:30px; /* FIXED */
+  border-radius:6px;cursor:pointer;
+  transition:background 100ms ease;
+}
+.pf:hover{background:var(--surfh)}
+.pf-a{
+  flex-shrink:0;width:40px;height:30px;
+  display:flex;align-items:center;justify-content:center;
+}
+.pf-img{
+  width:22px;height:22px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pri),#6366F1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:8px;font-weight:600;color:#fff;
+}
+.pf-inf{
+  overflow:hidden;white-space:nowrap;min-width:0;
+  opacity:0;transition:opacity 180ms ease;
+}
+.sb.exp .pf-inf{opacity:1}
+.pf-n{font-size:11.5px;font-weight:500;color:var(--fg);line-height:1.3;display:flex;align-items:center;gap:4px}
+.pf-e{font-size:10px;color:var(--fg3);line-height:1.3}
+.badge{
+  font-family:'DM Mono',monospace;font-size:7.5px;font-weight:500;
+  text-transform:uppercase;letter-spacing:0.04em;
+  padding:0 3px;border-radius:2px;
+  background:var(--pri-s);color:var(--pri);line-height:1.6;
+}
+
+.tg{
+  display:flex;align-items:center;
+  height:30px; /* FIXED */
+  border-radius:6px;cursor:pointer;
+  border:none;background:none;color:var(--fg3);
+  transition:background 100ms ease,color 100ms ease;
+  width:100%;padding:0;
+}
+.tg:hover{background:var(--surfh);color:var(--fg)}
+.tg:focus-visible{outline:2px solid var(--pri);outline-offset:-2px}
+.tg-i{
+  flex-shrink:0;width:40px;height:30px;
+  display:flex;align-items:center;justify-content:center;
+}
+.tg-i svg{width:14px;height:14px;transition:transform 180ms ease}
+.sb.exp .tg-i svg{transform:rotate(180deg)}
+.tg-l{font-size:11.5px;color:var(--fg3);opacity:0;white-space:nowrap;overflow:hidden;transition:opacity 180ms ease}
+.sb.exp .tg-l{opacity:1}
+.tg-k{
+  font-family:'DM Mono',monospace;font-size:9px;font-weight:500;
+  color:var(--fg3);background:var(--surf);
+  border:1px solid var(--bdr);border-radius:3px;
+  padding:0 4px;margin-left:auto;margin-right:4px;
+  white-space:nowrap;line-height:1.5;
+  opacity:0;transition:opacity 180ms ease;
+}
+.sb.exp .tg-k{opacity:0.6}
+
+/* ================================================================
+   MAIN — margin-left NEVER changes
+   ================================================================ */
+.mn{margin-left:52px;min-height:100dvh;padding:20px 24px;transition:none}
+
+/* ================================================================
+   VERIFY OVERLAY
+   ================================================================ */
+.vf{
+  position:fixed;top:8px;left:66px;z-index:100;
+  font-family:'DM Mono',monospace;font-size:10px;
+  background:var(--bg);border:1px solid var(--bdr);
+  border-radius:6px;padding:10px 14px;color:var(--fg2);
+  display:none;line-height:1.6;box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+.vf.on{display:block}
+.vf b{color:var(--fg);font-weight:600}
+.vf .ok{color:var(--green)}.vf .bad{color:#DC2626}
+
+/* ================================================================
+   DEMO CHROME
+   ================================================================ */
+.dh{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:8px}
+.dh-t{font-family:'Syne',sans-serif;font-weight:800;font-size:17px;color:var(--fg)}
+.dh-s{font-family:'DM Mono',monospace;font-size:9px;color:var(--fg3);margin-top:2px}
+.dc{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.bt{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:4px 9px;border-radius:5px;font-size:10.5px;font-weight:500;
+  cursor:pointer;border:1px solid var(--bdr);background:var(--bg);
+  color:var(--fg);transition:all 100ms ease;font-family:'Inter',sans-serif;
+}
+.bt:hover{background:var(--surf)}
+.bt.on{background:var(--pri);color:white;border-color:var(--pri)}
+.bt svg{width:11px;height:11px}
+.pill{
+  font-family:'DM Mono',monospace;font-size:9.5px;color:var(--fg3);
+  padding:3px 8px;background:var(--surf);border:1px solid var(--bdr);
+  border-radius:4px;display:flex;align-items:center;gap:4px;
+}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.dot.x{background:var(--pri)}
+.pg{background:var(--bg);border-radius:8px;border:1px solid var(--bdr);padding:20px;min-height:68vh}
+.pg-t{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--fg);margin-bottom:3px}
+.pg-s{font-size:12px;color:var(--fg2);margin-bottom:20px}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.cd{background:var(--bg);border:1px solid var(--bdr);border-radius:7px;padding:14px}
+.cd-e{font-family:'DM Mono',monospace;font-size:8.5px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:var(--fg3);margin-bottom:3px}
+.cd-t{font-weight:500;font-size:12.5px;color:var(--fg);margin-bottom:8px}
+.cd-b{height:3px;background:var(--surf);border-radius:2px;overflow:hidden;margin-bottom:5px}
+.cd-f{height:100%;border-radius:2px;background:var(--pri)}
+.cd-s{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--fg3)}
+.cd-n{font-family:'DM Mono',monospace;font-size:22px;font-weight:500;color:var(--pri);margin-bottom:8px}
+.cd-n span{font-size:11px;color:var(--fg3)}
+
+/* Shortcuts ref */
+.sh{
+  position:fixed;bottom:12px;right:12px;background:var(--bg);
+  border:1px solid var(--bdr);border-radius:6px;padding:10px 14px;
+  z-index:20;box-shadow:0 2px 8px rgba(0,0,0,0.03);max-width:180px;
+}
+.sh-t{font-family:'DM Mono',monospace;font-size:8px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:var(--fg3);margin-bottom:6px}
+.sr{display:flex;align-items:center;justify-content:space-between;padding:1.5px 0}
+.sr span:first-child{font-size:10.5px;color:var(--fg)}
+.sk{font-family:'DM Mono',monospace;font-size:9px;background:var(--surf);border:1px solid var(--bdr);border-radius:3px;padding:0 4px;color:var(--fg3);line-height:1.5}
+
+/* ================================================================
+   MOBILE
+   ================================================================ */
+.mt{display:none;position:fixed;top:0;left:0;right:0;height:42px;background:var(--bg);border-bottom:1px solid var(--bdr);z-index:45;align-items:center;padding:0 10px;gap:8px}
+.mh{width:34px;height:34px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:5px;color:var(--fg);transition:background 100ms ease}
+.mh:hover{background:var(--surfh)}
+.mh svg{width:17px;height:17px;stroke-width:1.75}
+.ml{font-family:'Syne',sans-serif;font-weight:800;font-size:13px}
+.ml .a{color:var(--fg)}.ml .b{color:var(--pri)}
+.md{display:none;position:fixed;top:0;left:0;width:100vw;height:100dvh;z-index:50;background:var(--bg);transform:translateX(-100%);transition:transform 200ms cubic-bezier(0.16,1,0.3,1);flex-direction:column;overflow-y:auto}
+.md.open{transform:translateX(0)}
+.md-h{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.md-lg{font-family:'Syne',sans-serif;font-weight:800;font-size:14px}
+.md-lg .a{color:var(--fg)}.md-lg .b{color:var(--pri)}
+.mx{width:34px;height:34px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:5px;color:var(--fg2)}
+.mx:hover{background:var(--surfh);color:var(--fg)}
+.mx svg{width:17px;height:17px}
+.md-n{flex:1;padding:6px 10px;display:flex;flex-direction:column;gap:1px}
+.md-gl{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;color:var(--fg3);opacity:0.8;padding:10px 10px 3px}
+.mi{display:flex;align-items:center;height:42px;padding:0 10px;border-radius:7px;cursor:pointer;gap:11px;transition:background 100ms ease;position:relative}
+.mi:hover{background:var(--surfh)}
+.mi.on{background:var(--surfa)}
+.mi.on::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:2.5px;height:16px;background:var(--pri);border-radius:0 2px 2px 0}
+.mi svg{width:17px;height:17px;stroke-width:1.75;color:var(--fg2);flex-shrink:0}
+.mi.on svg{color:var(--fg)}
+.mi-l{font-size:13.5px;color:var(--fg2)}
+.mi.on .mi-l{font-weight:500;color:var(--fg)}
+.mi.s2 svg{opacity:0.65}.mi.s3 svg{opacity:0.55}
+.md-sp{height:1px;background:var(--bdr);margin:4px 10px;opacity:0.4}
+.md-fill{flex:1}
+.md-f{border-top:1px solid var(--bdr);padding:10px}
+.md-pf{display:flex;align-items:center;gap:9px;padding:5px}
+.md-av{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--pri),#6366F1);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:#fff;flex-shrink:0}
+.md-pn{font-size:12.5px;font-weight:500;color:var(--fg)}
+.md-pe{font-size:10.5px;color:var(--fg3)}
+
+@media(max-width:767px){
+  .sb,.bk{display:none!important}
+  .mn{margin-left:0!important;padding:48px 10px 10px}
+  .mt{display:flex}.md{display:flex}.sh{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="sb" id="sb" aria-label="Main navigation">
+  <div class="hd">
+    <div class="hd-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+    <span class="hd-t"><span class="a">Slate</span><span class="b">Camp</span></span>
+  </div>
+
+  <div class="bd">
+
+    <!-- DASHBOARD (solo) -->
+    <div class="g">
+      <a href="#" class="n on" data-t="Dashboard" data-k="⌘1" aria-current="page">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+        <span class="lb">Dashboard</span>
+        <span class="kb">⌘1</span>
+      </a>
+    </div>
+
+    <div class="sp"></div>
+
+    <!-- LEARN label — ALWAYS 22px tall -->
+    <div class="gl">Learn</div>
+    <div class="g">
+      <a href="#" class="n" data-t="Wiki" data-k="⌘2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <span class="lb">Wiki</span>
+        <span class="kb">⌘2</span>
+      </a>
+      <a href="#" class="n" data-t="Notes" data-k="⌘3">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        <span class="lb">Notes</span>
+        <span class="kb">⌘3</span>
+      </a>
+      <a href="#" class="n" data-t="3D Lab" data-k="⌘4">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20"/><path d="M12 2a14.5 14.5 0 0 1 0 20"/><path d="M2 12h20"/><path d="M12 2v20"/></svg></span>
+        <span class="lb">3D Lab</span>
+        <span class="kb">⌘4</span>
+      </a>
+    </div>
+
+    <div class="sp"></div>
+
+    <!-- PRACTICE label — ALWAYS 22px tall -->
+    <div class="gl">Practice</div>
+    <div class="g">
+      <a href="#" class="n s2" data-t="Testing & Review">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span class="lb">Testing & Review</span>
+      </a>
+      <a href="#" class="n s2" data-t="Camp Trail">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c0-4 4-4 4-8s-2-6 4-6 4 2 4 6-4 4-4 8"/><circle cx="12" cy="5" r="1" fill="currentColor" stroke="none"/><path d="M8 19h8"/></svg></span>
+        <span class="lb">Camp Trail</span>
+      </a>
+    </div>
+
+    <div class="sp"></div>
+
+    <!-- DATA label — ALWAYS 22px tall -->
+    <div class="gl">Data</div>
+    <div class="g">
+      <a href="#" class="n s2" data-t="Analytics">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+        <span class="lb">Analytics</span>
+      </a>
+      <a href="#" class="n s2" data-t="Dev Settings">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span class="lb">Dev Settings</span>
+      </a>
+    </div>
+
+    <div class="fill"></div>
+
+    <!-- Settings (bottom) -->
+    <div class="g">
+      <a href="#" class="n s3" data-t="Settings">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span class="lb">Settings</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="ft">
+    <div class="pf" data-t="Philip Lewis">
+      <span class="pf-a"><span class="pf-img">PL</span></span>
+      <span class="pf-inf">
+        <div class="pf-n">Philip Lewis <span class="badge">Pro</span></div>
+        <div class="pf-e">philip@slatecamp.com</div>
+      </span>
+    </div>
+    <button class="tg" id="tg" aria-expanded="false" aria-label="Toggle sidebar">
+      <span class="tg-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 17l5-5-5-5"/><path d="M6 17l5-5-5-5"/></svg></span>
+      <span class="tg-l">Collapse</span>
+      <span class="tg-k">⌘B</span>
+    </button>
+  </div>
+</nav>
+
+<div class="bk" id="bk"></div>
+<div class="tp" id="tp" role="tooltip"></div>
+<div class="vf" id="vf"><div id="vo"></div></div>
+
+<!-- Mobile -->
+<div class="mt">
+  <button class="mh" id="mo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <span class="ml"><span class="a">Slate</span><span class="b">Camp</span></span>
+</div>
+<div class="md" id="md">
+  <div class="md-h">
+    <span class="md-lg"><span class="a">Slate</span><span class="b">Camp</span></span>
+    <button class="mx" id="mc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <div class="md-n">
+    <a class="mi on" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="mi-l">Dashboard</span></a>
+    <div class="md-sp"></div>
+    <div class="md-gl">Learn</div>
+    <a class="mi" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="mi-l">Wiki</span></a>
+    <a class="mi" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg><span class="mi-l">Notes</span></a>
+    <a class="mi" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20"/><path d="M12 2a14.5 14.5 0 0 1 0 20"/><path d="M2 12h20"/><path d="M12 2v20"/></svg><span class="mi-l">3D Lab</span></a>
+    <div class="md-sp"></div>
+    <div class="md-gl">Practice</div>
+    <a class="mi s2" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></svg><span class="mi-l">Testing & Review</span></a>
+    <a class="mi s2" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c0-4 4-4 4-8s-2-6 4-6 4 2 4 6-4 4-4 8"/><circle cx="12" cy="5" r="1" fill="currentColor" stroke="none"/><path d="M8 19h8"/></svg><span class="mi-l">Camp Trail</span></a>
+    <div class="md-sp"></div>
+    <div class="md-gl">Data</div>
+    <a class="mi s2" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="mi-l">Analytics</span></a>
+    <a class="mi s2" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span class="mi-l">Dev Settings</span></a>
+    <div class="md-fill"></div>
+    <a class="mi s3" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="mi-l">Settings</span></a>
+  </div>
+  <div class="md-f">
+    <div class="md-pf"><span class="md-av">PL</span><div><div class="md-pn">Philip Lewis <span class="badge">Pro</span></div><div class="md-pe">philip@slatecamp.com</div></div></div>
+  </div>
+</div>
+
+<!-- Main -->
+<div class="mn">
+  <div class="dh">
+    <div>
+      <div class="dh-t">Sidebar v2 Prototype</div>
+      <div class="dh-s">Icons spatially locked · Group labels always occupy space · 52→216px overlay</div>
+    </div>
+    <div class="dc">
+      <div class="pill"><span class="dot" id="sd"></span><span id="st">Collapsed · 52px</span></div>
+      <button class="bt" id="dk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Dark</button>
+      <button class="bt" id="cy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="1,4 1,10 7,10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>Cycle</button>
+      <button class="bt" id="vb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Verify Lock</button>
+    </div>
+  </div>
+  <div class="pg">
+    <div class="pg-t" id="pt">Dashboard</div>
+    <div class="pg-s">Your Camp Trail progress and study analytics</div>
+    <div class="cg">
+      <div class="cd"><div class="cd-e">Camp Trail</div><div class="cd-t">Day 23 of 56</div><div class="cd-b"><div class="cd-f" style="width:41%"></div></div><div class="cd-s">41% · Structural Systems</div></div>
+      <div class="cd"><div class="cd-e">Readiness Score</div><div class="cd-n">62<span>/100</span></div><div class="cd-b"><div class="cd-f" style="width:62%"></div></div><div class="cd-s">+4 from last week</div></div>
+      <div class="cd"><div class="cd-e">Today's Focus</div><div class="cd-t">3 activities · ~45 min</div><div class="cd-b"><div class="cd-f" style="width:0%"></div></div><div class="cd-s">Wiki → Quiz → 3D Lab</div></div>
+      <div class="cd"><div class="cd-e">Weekly Streak</div><div class="cd-n">5<span> days</span></div><div class="cd-b"><div class="cd-f" style="width:71%;background:var(--gold)"></div></div><div class="cd-s">Mon Tue Wed Thu Fri</div></div>
+      <div class="cd"><div class="cd-e">Subject Mastery</div><div class="cd-t">Building Technology</div><div class="cd-b"><div class="cd-f" style="width:78%;background:var(--green)"></div></div><div class="cd-s">78% — 12 nodes Green</div></div>
+      <div class="cd"><div class="cd-e">Recent Activity</div><div class="cd-t">Storm Mode — History</div><div class="cd-b"><div class="cd-f" style="width:55%"></div></div><div class="cd-s">55% accuracy · 20 items</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="sh">
+  <div class="sh-t">Keyboard Shortcuts</div>
+  <div class="sr"><span>Toggle sidebar</span><span class="sk">⌘B</span></div>
+  <div class="sr"><span>Dashboard</span><span class="sk">⌘1</span></div>
+  <div class="sr"><span>Wiki</span><span class="sk">⌘2</span></div>
+  <div class="sr"><span>Notes</span><span class="sk">⌘3</span></div>
+  <div class="sr"><span>3D Lab</span><span class="sk">⌘4</span></div>
+  <div class="sr"><span>Collapse</span><span class="sk">Esc</span></div>
+</div>
+
+<script>
+(function(){
+'use strict';
+const sb=document.getElementById('sb'),bk=document.getElementById('bk'),
+  tg=document.getElementById('tg'),tp=document.getElementById('tp'),
+  st=document.getElementById('st'),sd=document.getElementById('sd'),
+  pt=document.getElementById('pt'),vf=document.getElementById('vf'),
+  vo=document.getElementById('vo'),md=document.getElementById('md');
+const ns=sb.querySelectorAll('.n'),ms=md.querySelectorAll('.mi');
+let exp=false,tt=null;
+
+function expand(){if(exp)return;exp=true;sb.classList.remove('col');sb.classList.add('exp');bk.classList.add('on');tg.setAttribute('aria-expanded','true');hideTip();upSt()}
+function collapse(){if(!exp)return;exp=false;sb.classList.add('col');sb.classList.remove('exp');bk.classList.remove('on');tg.setAttribute('aria-expanded','false');upSt();setTimeout(()=>sb.classList.remove('col'),150)}
+function toggle(){exp?collapse():expand()}
+function upSt(){st.textContent=exp?'Expanded · 216px':'Collapsed · 52px';sd.className=exp?'dot x':'dot'}
+
+function showTip(el){
+  if(exp)return;const t=el.getAttribute('data-t');if(!t)return;
+  const k=el.getAttribute('data-k');
+  tp.innerHTML=t+(k?'<span class="tk">'+k+'</span>':'');
+  const r=el.getBoundingClientRect();
+  tp.style.top=(r.top+r.height/2-11)+'px';
+  clearTimeout(tt);tt=setTimeout(()=>tp.classList.add('on'),70);
+}
+function hideTip(){clearTimeout(tt);tp.classList.remove('on')}
+
+function setActive(el){
+  ns.forEach(n=>{n.classList.remove('on');n.removeAttribute('aria-current')});
+  el.classList.add('on');el.setAttribute('aria-current','page');
+  pt.textContent=el.querySelector('.lb').textContent;
+  const i=Array.from(ns).indexOf(el);
+  ms.forEach((m,j)=>m.classList.toggle('on',j===i));
+}
+
+// SPATIAL LOCK VERIFIER — measures every icon in both states
+function verify(){
+  const getPos=()=>{
+    const p={};
+    ns.forEach((n,i)=>{const r=n.querySelector('.ic svg').getBoundingClientRect();p[i]={x:r.left,y:r.top}});
+    return p;
+  };
+  if(exp)collapse();
+  setTimeout(()=>{
+    const c=getPos();
+    expand();
+    setTimeout(()=>{
+      const e=getPos();
+      let html='<b>SPATIAL LOCK TEST</b><br>',ok=true;
+      for(let i in c){
+        const dx=Math.abs(e[i].x-c[i].x),dy=Math.abs(e[i].y-c[i].y);
+        const pass=dx<0.5&&dy<0.5;if(!pass)ok=false;
+        const name=ns[i].querySelector('.lb').textContent;
+        html+=name+': Δx='+dx.toFixed(1)+' Δy='+dy.toFixed(1)+' <span class="'+(pass?'ok':'bad')+'">'+(pass?'✓':'✗ SHIFTED!')+'</span><br>';
+      }
+      html+='<br><b class="'+(ok?'ok':'bad')+'">'+(ok?'ALL ICONS LOCKED ✓':'ICONS SHIFTED ✗')+'</b>';
+      vo.innerHTML=html;vf.classList.add('on');
+      setTimeout(()=>vf.classList.remove('on'),6000);
+    },250);
+  },200);
+}
+
+tg.addEventListener('click',e=>{e.stopPropagation();toggle()});
+bk.addEventListener('click',collapse);
+ns.forEach(n=>{
+  n.addEventListener('mouseenter',()=>showTip(n));
+  n.addEventListener('mouseleave',hideTip);
+  n.addEventListener('click',e=>{e.preventDefault();setActive(n);if(exp)collapse()});
+});
+const pf=sb.querySelector('.pf');
+pf.addEventListener('mouseenter',()=>{if(!exp)showTip(pf)});
+pf.addEventListener('mouseleave',hideTip);
+ms.forEach((m,i)=>{m.addEventListener('click',e=>{e.preventDefault();ms.forEach(x=>x.classList.remove('on'));m.classList.add('on');md.classList.remove('open');if(ns[i])setActive(ns[i])})});
+
+document.addEventListener('keydown',e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key==='b'){e.preventDefault();toggle();return}
+  if(e.key==='Escape'){if(exp){collapse();tg.focus()}if(md.classList.contains('open'))md.classList.remove('open');return}
+  if((e.metaKey||e.ctrlKey)&&e.key>='1'&&e.key<='4'){e.preventDefault();const t=[0,1,2,3];if(ns[t[parseInt(e.key)-1]])setActive(ns[t[parseInt(e.key)-1]])}
+});
+sb.addEventListener('keydown',e=>{
+  const items=Array.from(ns),c=items.indexOf(document.activeElement);
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();let nx=e.key==='ArrowDown'?(c<items.length-1?c+1:0):(c>0?c-1:items.length-1);items[nx].focus()}
+  if(e.key==='Home'){e.preventDefault();ns[0].focus()}
+  if(e.key==='End'){e.preventDefault();ns[ns.length-1].focus()}
+});
+
+document.getElementById('dk').addEventListener('click',function(){
+  const d=document.documentElement.getAttribute('data-theme')==='dark';
+  document.documentElement.setAttribute('data-theme',d?'light':'dark');
+  this.classList.toggle('on',!d);
+  this.innerHTML=d?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Dark':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>Light';
+});
+let ai=0;document.getElementById('cy').addEventListener('click',()=>{ai=(ai+1)%ns.length;setActive(ns[ai])});
+document.getElementById('vb').addEventListener('click',verify);
+document.getElementById('mo').addEventListener('click',()=>md.classList.add('open'));
+document.getElementById('mc').addEventListener('click',()=>md.classList.remove('open'));
+document.addEventListener('click',e=>{if(exp&&!sb.contains(e.target)&&!bk.contains(e.target))collapse()});
+sb.addEventListener('click',e=>e.stopPropagation());
+})();
+</script>
+</body>
+</html>

@@ -1,94 +1,93 @@
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
-import { getPublishedTrails, getUserEnrollments, recommendTrail } from '@/lib/actions/trails'
+import { getPublishedTrails, getUserEnrollments, recommendTrail } from '@/lib/queries/trails'
 import type { CampTrail, TrailEnrollment } from '@/types/app'
 import { RecommendedTrailCard } from '@/components/trails/RecommendedTrailCard'
-import { TrailCard } from '@/components/trails/TrailCard'
 import { ActiveTrailBanner } from '@/components/trails/ActiveTrailBanner'
-
-const TRAIL_TYPE_LABELS: Record<string, string> = {
-  time_gated: 'Time-Gated Programs',
-  subject_mastery: 'Subject Mastery Paths',
-  code_deep_dive: 'Code Deep-Dives',
-  remediation: 'Targeted Remediation',
-  exam_simulation: 'Exam Simulation',
-}
+import { TrailLibrary } from '@/components/trails/TrailLibrary'
+import { MapTrifold, Compass } from '@phosphor-icons/react/dist/ssr'
 
 const CampTrailsPage = async () => {
-  // Fetch data with graceful fallbacks so the page always renders
   const [trails, enrollments, recommendation] = await Promise.all([
     getPublishedTrails().catch(() => [] as CampTrail[]),
     getUserEnrollments().catch(() => [] as TrailEnrollment[]),
     recommendTrail().catch(() => null),
   ])
 
-  const activeEnrollment = enrollments.find((e) => e.status === 'active') ?? null
+  const activeEnrollments = enrollments.filter((e) => e.status === 'active')
+  const hasActiveEnrollment = activeEnrollments.length > 0
   const recommendedTrailId = recommendation?.trail.trail_id ?? null
 
-  // Group trails by trail_type
-  const grouped = trails.reduce<Record<string, CampTrail[]>>((acc, trail) => {
-    const key = trail.trail_type
-    if (!acc[key]) acc[key] = []
-    acc[key].push(trail)
-    return acc
-  }, {})
-
-  // Attach enrollment to trails
-  const enrollmentMap = new Map<string, TrailEnrollment>()
+  const enrollmentMap: Record<string, TrailEnrollment> = {}
   for (const e of enrollments) {
-    enrollmentMap.set(e.trail_id, e)
+    enrollmentMap[e.trail_id] = e
   }
 
   return (
     <SharedPageLayout>
-      <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto">
-        <h1 className="text-2xl font-bold text-[#1A2332]">Camp Trails</h1>
+      <div className="flex flex-col gap-8 w-full">
 
-        {/* Active enrollment banner */}
-        {activeEnrollment && (
-          <ActiveTrailBanner enrollment={activeEnrollment} />
-        )}
-
-        {/* Recommended trail card — always first when no active enrollment */}
-        {recommendation && !activeEnrollment && (
+        {/* ─── Page Header ─── */}
+        <div className="flex items-start justify-between gap-6">
           <div>
-            <p className="font-mono text-[11px] uppercase text-[#8896A7] tracking-wide mb-2">
-              Recommended for you
+            <p className="font-mono text-[11px] uppercase tracking-widest text-[#534AB7] mb-1.5">
+              Structured Study
             </p>
-            <RecommendedTrailCard recommendation={recommendation} />
+            <h1 className="text-2xl font-bold text-[#1A2332] mb-1">
+              Camp Trail
+            </h1>
+            <p className="text-sm text-[#4A5568] max-w-2xl leading-relaxed">
+              Your daily study prescription. Choose a trail calibrated to your
+              exam date and gaps — then follow the map.
+            </p>
           </div>
-        )}
+          <div className="hidden md:flex items-center gap-2 shrink-0 mt-1">
+            <span className="font-mono text-[11px] text-[#8896A7] tabular-nums">
+              {trails.length} trails available
+            </span>
+          </div>
+        </div>
 
-        {/* Trail library by type */}
-        {Object.keys(grouped).length > 0 && (
+        {/* ─── Hero Zone: Active Trail(s) or Recommendation ─── */}
+        {/* This is the ONE thing above the fold — singular focus */}
+        {hasActiveEnrollment ? (
+          <div className="flex flex-col gap-3">
+            {activeEnrollments.map((enrollment) => (
+              <ActiveTrailBanner key={enrollment.enrollment_id} enrollment={enrollment} />
+            ))}
+          </div>
+        ) : recommendation ? (
+          <RecommendedTrailCard recommendation={recommendation} />
+        ) : null}
+
+        {/* ─── Trail Library ─── */}
+        {trails.length > 0 && (
           <div>
-            <p className="font-mono text-[11px] uppercase text-[#8896A7] tracking-wide mb-3">
-              {activeEnrollment || recommendation ? 'Other Trails' : 'All Trails'}
-            </p>
-            <div className="h-px bg-[#D4DAE3] mb-4" />
-          </div>
-        )}
-
-        {Object.entries(grouped).map(([trailType, typeTrails]) => (
-          <section key={trailType}>
-            <h2 className="text-sm font-semibold text-[#4A5568] uppercase tracking-wide mb-3">
-              {TRAIL_TYPE_LABELS[trailType] ?? trailType}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              {typeTrails.map((trail) => (
-                <TrailCard
-                  key={trail.trail_id}
-                  trail={{ ...trail, enrollment: enrollmentMap.get(trail.trail_id) ?? null }}
-                  isLocked={false}
-                />
-              ))}
+            <div className="h-px bg-[#D4DAE3]" />
+            <div className="pt-6">
+              <p className="font-mono text-[11px] uppercase text-[#8896A7] tracking-widest mb-4">
+                {hasActiveEnrollment || recommendation ? 'Explore More Trails' : 'All Trails'}
+              </p>
+              <TrailLibrary
+                trails={trails}
+                enrollmentMap={enrollmentMap}
+                excludeTrailId={!hasActiveEnrollment ? recommendedTrailId : null}
+              />
             </div>
-          </section>
-        ))}
+          </div>
+        )}
 
+        {/* ─── Welcoming Empty State ─── */}
         {trails.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-sm text-[#4A5568]">
-              No trails available yet. Check back soon for structured study paths.
+          <div className="flex flex-col items-center justify-center py-16 px-6 text-center">
+            <div className="w-12 h-12 rounded-lg bg-[#EEF2FC] flex items-center justify-center mb-4">
+              <Compass size={24} className="text-[#1B3FC4]" />
+            </div>
+            <h2 className="text-lg font-semibold text-[#1A2332] mb-2">
+              Trails are being prepared
+            </h2>
+            <p className="text-sm text-[#4A5568] max-w-md">
+              Structured study paths are coming soon. In the meantime, you can
+              practice with Camp Mode or explore the Wiki.
             </p>
           </div>
         )}

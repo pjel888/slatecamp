@@ -7,7 +7,7 @@ import {
   getEnrollmentForTrail,
   getFullDayCompletions,
   recommendTrail,
-} from '@/lib/actions/trails'
+} from '@/lib/queries/trails'
 import { TrailPhaseMap } from '@/components/trails/TrailPhaseMap'
 import { TrailDetailEnroll } from '@/components/trails/TrailDetailEnroll'
 import { ArrowLeft, Clock, Fire, ListChecks } from '@phosphor-icons/react/dist/ssr'

@@ -50,10 +50,10 @@ const VARIANTS: Record<CalloutVariant, VariantConfig> = {
   info: {
     icon: Info,
     label: 'Info',
-    border: 'border-[var(--ink-secondary,#4A5568)]/20',
+    border: 'border-[var(--text-secondary,#4A5568)]/20',
     bg: 'bg-[var(--surface-focused)]',
-    iconColor: 'text-[var(--ink-secondary,#4A5568)]',
-    labelColor: 'text-[var(--ink-secondary,#4A5568)]',
+    iconColor: 'text-[var(--text-secondary,#4A5568)]',
+    labelColor: 'text-[var(--text-secondary,#4A5568)]',
   },
   warning: {
     icon: Warning,
@@ -82,10 +82,10 @@ const VARIANTS: Record<CalloutVariant, VariantConfig> = {
   danger: {
     icon: WarningDiamond,
     label: 'Danger',
-    border: 'border-[var(--danger)]/30',
-    bg: 'bg-[var(--danger)]/5',
-    iconColor: 'text-[var(--danger)]',
-    labelColor: 'text-[var(--danger)]',
+    border: 'border-[var(--destructive)]/30',
+    bg: 'bg-[var(--destructive)]/5',
+    iconColor: 'text-[var(--destructive)]',
+    labelColor: 'text-[var(--destructive)]',
   },
   requirement: {
     icon: BookOpen,
@@ -106,10 +106,10 @@ const VARIANTS: Record<CalloutVariant, VariantConfig> = {
   authority: {
     icon: Scales,
     label: 'Legal Authority',
-    border: 'border-[var(--ink-secondary,#4A5568)]/40',
+    border: 'border-[var(--text-secondary,#4A5568)]/40',
     bg: 'bg-[var(--surface-focused)]',
-    iconColor: 'text-[var(--ink-secondary,#4A5568)]',
-    labelColor: 'text-[var(--ink-secondary,#4A5568)]',
+    iconColor: 'text-[var(--text-secondary,#4A5568)]',
+    labelColor: 'text-[var(--text-secondary,#4A5568)]',
     italic: true,
   },
   'most-tested': {

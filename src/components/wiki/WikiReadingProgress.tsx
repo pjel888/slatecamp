@@ -35,7 +35,11 @@ export function WikiReadingProgress({ scrollContainerId }: { scrollContainerId?:
   }, [scrollContainerId])
 
   return (
-    <div className="h-[2px] w-full bg-zinc-100" aria-hidden="true">
+    <div
+      className="h-[2px] w-full transition-opacity duration-300 ease-out"
+      style={{ opacity: progress > 0 ? 1 : 0 }}
+      aria-hidden="true"
+    >
       <div
         className="h-full bg-[#1B3FC4] transition-[width] duration-100 ease-out"
         style={{ width: `${progress}%` }}

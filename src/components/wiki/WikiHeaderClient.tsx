@@ -114,7 +114,6 @@ export function WikiHeaderClient({
         </div>
       </div>
 
-      {/* Reading progress bar — thin strip along the bottom edge */}
       <WikiReadingProgress scrollContainerId={scrollContainerId} />
     </div>
   )

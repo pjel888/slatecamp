@@ -3,9 +3,10 @@ import {
   SquaresFour,
   ChartBar,
   Cube,
+  Exam,
   GearSix,
   Globe,
-  Brain,
+
   FileText,
   Path,
 } from '@phosphor-icons/react'
@@ -49,15 +50,16 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'learn',
   },
   {
-    path: '/dashboard/camptrails',
-    title: 'Camp Trail',
-    icon: Path,
+    path: '/dashboard/testing',
+    title: 'Testing & Review',
+    sidebarLabel: 'Testing & Review',
+    icon: Exam,
     group: 'practice',
   },
   {
-    path: '/dashboard/review',
-    title: 'Review',
-    icon: Brain,
+    path: '/dashboard/camptrails',
+    title: 'Camp Trail',
+    icon: Path,
     group: 'practice',
   },
   {
@@ -94,6 +96,8 @@ const DEFAULT_TITLE = 'Overview'
 
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/quiz/', title: 'Active Session' },
+  { prefix: '/dashboard/testing/session/', title: 'Active Session' },
+  { prefix: '/dashboard/testing/', title: 'Testing & Review' },
   { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
 ]

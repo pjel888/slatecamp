@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 
 const SUBJECT_AREAS = [
   'Architectural Design and Site Planning',
@@ -226,7 +227,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       subtitle: `You were on question ${current + 1} of ${total} — pick up right where you left off`,
       progress: { current: current + 1, total },
       estimatedMinutes: Math.max(1, Math.ceil((total - current) * 1.2)),
-      href: `/dashboard/review?session=${incomplete.session_id}`,
+      href: `/dashboard/testing`,
     }
   } else if (weak) {
     const topicName =
@@ -237,7 +238,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,
-      href: `/dashboard/review?mode=camp`,
+      href: `/dashboard/testing/camp/setup`,
     }
   } else {
     catalyst = {
@@ -245,7 +246,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: 'Daily Warmup',
       subtitle: 'A quick 5-question session from your core subjects — the perfect way to start',
       estimatedMinutes: 3,
-      href: '/dashboard/review?mode=camp',
+      href: '/dashboard/testing/camp/setup',
     }
   }
 
@@ -260,7 +261,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       type: 'quiz',
       title: `${modeName}`,
       subtitle: total > 0 ? `${total} questions · ${formatRelativeTime(lastDone.updated_at)}` : formatRelativeTime(lastDone.updated_at),
-      href: `/dashboard/review`,
+      href: `/dashboard/testing`,
     })
   }
 
@@ -299,7 +300,7 @@ function emptyDashboard(userName: string): DashboardData {
       title: 'Start Your First Session',
       subtitle: 'Jump in with a 5-question warmup — no setup needed',
       estimatedMinutes: 3,
-      href: '/dashboard/review?mode=camp',
+      href: '/dashboard/testing/camp/setup',
     },
     recentActivities: [],
     totalAnswered: 0,
@@ -325,13 +326,3 @@ function formatModeName(mode: string): string {
   return map[mode] ?? 'Quiz'
 }
 
-function formatRelativeTime(iso: string): string {
-  const diff = Date.now() - new Date(iso).getTime()
-  const hours = diff / (1000 * 60 * 60)
-  if (hours < 1) return 'Just now'
-  if (hours < 24) return `${Math.floor(hours)}h ago`
-  const days = Math.floor(hours / 24)
-  if (days === 1) return 'Yesterday'
-  if (days < 7) return `${days} days ago`
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}

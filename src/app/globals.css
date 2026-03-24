@@ -49,12 +49,63 @@
   --radius-lg: 0.5rem;     /* 8px — modals, dialogs */
   --radius-xl: 0.5rem;     /* cap at 8px — no larger */
 
+  /* ── Shade scale utilities ── */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+
+  --color-success: var(--success);
+  --color-success-50: var(--success-50);
+  --color-success-100: var(--success-100);
+  --color-success-200: var(--success-200);
+  --color-success-300: var(--success-300);
+  --color-success-400: var(--success-400);
+  --color-success-600: var(--success-600);
+  --color-success-700: var(--success-700);
+  --color-success-800: var(--success-800);
+  --color-success-900: var(--success-900);
+
+  --color-warning: var(--warning);
+  --color-warning-50: var(--warning-50);
+  --color-warning-100: var(--warning-100);
+  --color-warning-200: var(--warning-200);
+  --color-warning-300: var(--warning-300);
+  --color-warning-400: var(--warning-400);
+  --color-warning-600: var(--warning-600);
+  --color-warning-700: var(--warning-700);
+  --color-warning-800: var(--warning-800);
+  --color-warning-900: var(--warning-900);
+
+  --color-destructive-50: var(--destructive-50);
+  --color-destructive-100: var(--destructive-100);
+  --color-destructive-200: var(--destructive-200);
+  --color-destructive-300: var(--destructive-300);
+  --color-destructive-400: var(--destructive-400);
+  --color-destructive-600: var(--destructive-600);
+  --color-destructive-700: var(--destructive-700);
+  --color-destructive-800: var(--destructive-800);
+  --color-destructive-900: var(--destructive-900);
+
+  --color-accent-50: var(--accent-50);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+  --color-accent-800: var(--accent-800);
+  --color-accent-900: var(--accent-900);
+
   /* Campfire — Functional accents (Tailwind utilities) */
   --color-accent-blue: var(--accent-blue);
   --color-accent-blue-hover: var(--accent-hover);
-  --color-success: var(--success);
   --color-danger: var(--danger);
-  --color-warning: var(--warning);
   --color-info: var(--info);
 
   /* Campfire — Surface colors */
@@ -156,6 +207,57 @@
   --sidebar-border: #D4DAE3;
   --sidebar-ring: #1B3FC4;
 
+  /* ── Shade scales (50–900) ── */
+  --primary-50: #EEF2FC;
+  --primary-100: #E3E6F3;
+  --primary-200: #C4CCE9;
+  --primary-300: #91A1DE;
+  --primary-400: #5874DA;
+  --primary-600: #1739B5;
+  --primary-700: #1535A8;
+  --primary-800: #0A2070;
+  --primary-900: #06154C;
+
+  --success-50: #EDFAF4;
+  --success-100: #E5F0EB;
+  --success-200: #C9E3D8;
+  --success-300: #9CD3BC;
+  --success-400: #6BC7A0;
+  --success-600: #258B5F;
+  --success-700: #1D7A50;
+  --success-800: #186243;
+  --success-900: #0F422D;
+
+  --warning-50: #FEF8ED;
+  --warning-100: #F3EDE2;
+  --warning-200: #EADDC2;
+  --warning-300: #E1C58E;
+  --warning-400: #DEAF54;
+  --warning-600: #B88114;
+  --warning-700: #96680D;
+  --warning-800: #724E08;
+  --warning-900: #4E3504;
+
+  --destructive-50: #FDF0F0;
+  --destructive-100: #F3E2E2;
+  --destructive-200: #E9C4C4;
+  --destructive-300: #DE9292;
+  --destructive-400: #D75B5B;
+  --destructive-600: #AC2020;
+  --destructive-700: #8C1717;
+  --destructive-800: #6A1010;
+  --destructive-900: #480A0A;
+
+  --accent-50: #FEF3E8;
+  --accent-100: #F5E9E0;
+  --accent-200: #EED3BF;
+  --accent-300: #E8B188;
+  --accent-400: #E78E4B;
+  --accent-600: #BD5A0F;
+  --accent-700: #D4751A;
+  --accent-800: #763505;
+  --accent-900: #502302;
+
   /* Campfire — Neutral palette */
   --bg-primary: #FFFFFF;
   --bg-secondary: #F5F5F5;
@@ -185,6 +287,15 @@
   --slate-blue-50: #EEF2FC;
   --surface-focused: #F5F7FA;    /* Testing interface bg */
   --border-warm: rgba(232, 133, 58, 0.15);
+
+  /* Campfire — Semantic aliases (canonical names) */
+  --ink-primary: #1A2332;        /* = --text-primary */
+  --ink-secondary: #4A5568;      /* = --text-secondary */
+  --ink-tertiary: #8896A7;       /* = --text-tertiary */
+  --border-default: #D4DAE3;     /* = --border */
+  --amber: #D4951A;              /* = --warning */
+  --surface-card: #FFFFFF;       /* = --card */
+  --surface-light: #F8F7F5;      /* warm white page bg */
 
   /* Campfire — Card surfaces */
   --card-bg: #ffffff;
@@ -287,6 +398,57 @@
   --warning: #E8B040;
   --info: #5BA0E0;
 
+  /* ── Shade scales (dark) ── */
+  --primary-50: rgba(91, 127, 224, 0.1);
+  --primary-100: rgba(91, 127, 224, 0.15);
+  --primary-200: rgba(91, 127, 224, 0.25);
+  --primary-300: #4A6FD0;
+  --primary-400: #5B7FE0;
+  --primary-600: #7B9AEA;
+  --primary-700: #9BB5F0;
+  --primary-800: #BDD0F6;
+  --primary-900: #DEE8FB;
+
+  --success-50: rgba(77, 191, 143, 0.1);
+  --success-100: rgba(77, 191, 143, 0.15);
+  --success-200: rgba(77, 191, 143, 0.25);
+  --success-300: #3DAF80;
+  --success-400: #4DBF8F;
+  --success-600: #6DD4A6;
+  --success-700: #8DE3BC;
+  --success-800: #B0EFD3;
+  --success-900: #D4F7E8;
+
+  --warning-50: rgba(232, 176, 64, 0.1);
+  --warning-100: rgba(232, 176, 64, 0.15);
+  --warning-200: rgba(232, 176, 64, 0.25);
+  --warning-300: #D8A030;
+  --warning-400: #E8B040;
+  --warning-600: #F0C060;
+  --warning-700: #F5D080;
+  --warning-800: #FAE0A0;
+  --warning-900: #FDF0D0;
+
+  --destructive-50: rgba(232, 92, 92, 0.1);
+  --destructive-100: rgba(232, 92, 92, 0.15);
+  --destructive-200: rgba(232, 92, 92, 0.25);
+  --destructive-300: #D04A4A;
+  --destructive-400: #E85C5C;
+  --destructive-600: #F07070;
+  --destructive-700: #F59090;
+  --destructive-800: #FAB0B0;
+  --destructive-900: #FDD8D8;
+
+  --accent-50: rgba(240, 160, 96, 0.1);
+  --accent-100: rgba(240, 160, 96, 0.15);
+  --accent-200: rgba(240, 160, 96, 0.25);
+  --accent-300: #E09050;
+  --accent-400: #F0A060;
+  --accent-600: #F5B880;
+  --accent-700: #FAC8A0;
+  --accent-800: #FDD8C0;
+  --accent-900: #FEE8E0;
+
   /* Campfire — NEW tokens (dark) */
   --camp-orange: #F0A060;
   --camp-orange-hover: #E89040;
@@ -297,6 +459,15 @@
   --slate-blue-50: rgba(27, 63, 196, 0.15);
   --surface-focused: #1C2433;
   --border-warm: rgba(232, 133, 58, 0.2);
+
+  /* Campfire — Semantic aliases (dark) */
+  --ink-primary: #E8ECF1;
+  --ink-secondary: #8896A7;
+  --ink-tertiary: #6C7A8A;
+  --border-default: #2A3444;
+  --amber: #E8B040;
+  --surface-card: #1C2433;
+  --surface-light: #141B24;
 
   --card-bg: #1C2433;
   --card-border-color: #2A3444;
@@ -659,6 +830,26 @@ a[data-pending] {
 
 .landing-orb {
   animation: orb-drift 20s ease-in-out infinite;
+}
+
+/* Camp Trail — staggered fadeUp entrance */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trail-fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 /* Wiki Heading Highlight */

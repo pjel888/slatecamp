@@ -6,7 +6,7 @@ import {
   getEnrollmentForTrail,
   getDayCompletionDetail,
   getScoreTrajectory,
-} from '@/lib/actions/trails'
+} from '@/lib/queries/trails'
 import { DayCompletionMoment } from '@/components/trails/DayCompletionMoment'
 import { ScoreTrajectoryChart } from '@/components/trails/ScoreTrajectoryChart'
 

@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testing & Review — SlateCamp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════
+   SLATECAMP DESIGN SYSTEM TOKENS
+   ═══════════════════════════════════════════ */
+:root {
+  --cobalt: #1B3FC4;
+  --cobalt-light: #EEF2FC;
+  --cobalt-hover: #1634A8;
+  --green: #1B7A3C;
+  --green-light: #EAF5EE;
+  --red: #E63329;
+  --red-light: #FFF0EF;
+  --gold: #F5A623;
+  --gold-light: #FFF8E6;
+  --orange: #E8853A;
+  --orange-light: #FFF3E8;
+  --purple: #534AB7;
+  --purple-light: #EEEDFE;
+  --bg: #F8F7F5;
+  --bg-cream: #F2F0EB;
+  --surface: #FFFFFF;
+  --border: #E8E4DC;
+  --border-hover: #D4D0C8;
+  --ink: #1A1A1A;
+  --ink-secondary: #4A4A4A;
+  --ink-muted: #8A8780;
+  --ink-faint: #B8B4AC;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --sidebar-w: 260px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ─── LAYOUT ─── */
+.layout { display: flex; min-height: 100vh; }
+
+/* ─── SIDEBAR (reused from Camp Trail) ─── */
+.sidebar {
+  width: var(--sidebar-w); background: var(--surface); border-right: 1px solid var(--border);
+  padding: 20px 0; position: fixed; top: 0; left: 0; height: 100vh;
+  overflow-y: auto; z-index: 100; display: flex; flex-direction: column;
+}
+.sidebar-logo { padding: 0 20px 20px; border-bottom: 1px solid var(--border); margin-bottom: 8px; }
+.sidebar-logo-mark { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.sidebar-logo-icon {
+  width: 32px; height: 32px; background: var(--cobalt); border-radius: var(--r-md);
+  display: flex; align-items: center; justify-content: center;
+}
+.sidebar-logo-icon svg { width: 18px; height: 18px; }
+.sidebar-logo-text { font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--ink); }
+.sidebar-nav { padding: 8px 12px; flex: 1; }
+.sidebar-section-label {
+  font-family: var(--font-mono); font-size: 9px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-faint); padding: 16px 8px 6px;
+}
+.sidebar-link {
+  display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: var(--r-md);
+  font-size: 13px; font-weight: 500; color: var(--ink-secondary); text-decoration: none;
+  transition: all 0.15s; cursor: pointer;
+}
+.sidebar-link:hover { background: var(--bg-cream); color: var(--ink); }
+.sidebar-link.active { background: var(--cobalt-light); color: var(--cobalt); font-weight: 600; }
+.sidebar-link.active svg { stroke: var(--cobalt); }
+.sidebar-link svg { width: 18px; height: 18px; stroke: var(--ink-muted); stroke-width: 1.8; fill: none; flex-shrink: 0; }
+.sidebar-score-card { margin: 8px 12px 0; padding: 14px; background: var(--bg); border-radius: var(--r-lg); border: 1px solid var(--border); }
+.sidebar-score-label { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-muted); margin-bottom: 6px; }
+.sidebar-score-value { font-family: var(--font-display); font-size: 28px; font-weight: 800; color: var(--ink); line-height: 1; }
+.sidebar-score-bar { margin-top: 8px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.sidebar-score-fill { height: 100%; background: var(--orange); border-radius: 2px; width: 62%; }
+
+/* ─── MAIN ─── */
+.main { margin-left: var(--sidebar-w); flex: 1; min-height: 100vh; }
+.main-header {
+  background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 32px;
+  display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50;
+}
+.breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+.breadcrumb a { color: var(--ink-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--cobalt); }
+.breadcrumb-sep { color: var(--ink-faint); font-size: 11px; }
+.breadcrumb-current { color: var(--ink); font-weight: 500; }
+.avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--cobalt-light); color: var(--cobalt); font-family: var(--font-display); font-weight: 700; font-size: 12px; display: flex; align-items: center; justify-content: center; }
+.main-content { padding: 32px; max-width: 960px; }
+
+/* ─── STATE PAGES ─── */
+.state-page { display: none; }
+.state-page.visible { display: block; }
+
+/* ─── SHARED ATOMS ─── */
+.eyebrow { font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.2px; color: var(--cobalt); margin-bottom: 6px; }
+.page-title { font-family: var(--font-display); font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.5px; line-height: 1.15; margin-bottom: 4px; }
+.page-desc { font-size: 14px; color: var(--ink-secondary); line-height: 1.6; max-width: 560px; margin-bottom: 0; }
+.section-label { font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.2px; color: var(--ink-muted); margin-bottom: 14px; }
+.divider { height: 1px; background: var(--border); margin: 28px 0; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px;
+  font-family: var(--font-body); font-size: 13px; font-weight: 600;
+  border: none; border-radius: var(--r-md); cursor: pointer; transition: all 0.15s; text-decoration: none;
+}
+.btn:active { transform: scale(0.98); }
+.btn-cobalt { background: var(--cobalt); color: white; }
+.btn-cobalt:hover { background: var(--cobalt-hover); }
+.btn-outline { background: transparent; color: var(--ink-secondary); border: 1px solid var(--border); }
+.btn-outline:hover { border-color: var(--border-hover); background: var(--bg-cream); }
+.btn-ghost { background: transparent; color: var(--ink-muted); padding: 8px 12px; }
+.btn-ghost:hover { color: var(--ink); background: var(--bg-cream); }
+.btn svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 2.5; fill: none; }
+
+.badge {
+  font-family: var(--font-mono); font-size: 9px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 1px; padding: 3px 7px; border-radius: 4px;
+}
+.badge-pro { background: var(--ink); color: white; }
+
+/* ═══════════════════════════════════════════
+   HUB STATE
+   ═══════════════════════════════════════════ */
+
+/* Smart Suggestion Card */
+.suggestion-card {
+  padding: 16px 20px; border-radius: var(--r-lg); margin-bottom: 28px;
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.suggestion-card.blindspot {
+  background: var(--red-light); border: 1px solid #F5C6C3;
+}
+.suggestion-card.return {
+  background: var(--bg-cream); border: 1px solid var(--border);
+}
+.suggestion-icon {
+  width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 16px;
+}
+.suggestion-body { flex: 1; }
+.suggestion-eyebrow {
+  font-family: var(--font-mono); font-size: 9px; text-transform: uppercase;
+  letter-spacing: 1px; margin-bottom: 4px;
+}
+.suggestion-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 3px; }
+.suggestion-desc { font-size: 13px; color: var(--ink-secondary); line-height: 1.5; }
+.suggestion-cta { margin-top: 10px; }
+
+/* Zone Headers */
+.zone-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px; margin-top: 32px;
+}
+.zone-header .section-label { margin-bottom: 0; }
+.zone-header-line { flex: 1; height: 1px; background: var(--border); }
+
+/* Mode Cards */
+.mode-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; }
+.mode-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg);
+  padding: 20px; transition: all 0.2s; cursor: pointer; position: relative;
+}
+.mode-card:hover { border-color: var(--border-hover); box-shadow: 0 2px 8px rgba(0,0,0,0.04); transform: translateY(-1px); }
+.mode-card.zone-2 { border-left: 4px solid var(--cobalt); }
+.mode-card.zone-3 { border-left: 4px solid var(--orange); }
+.mode-card.locked { opacity: 0.65; }
+
+.mc-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.mc-label { font-family: var(--font-mono); font-size: 9px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 5px; }
+.mc-label-icon { font-size: 13px; }
+.mc-character { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+.mc-desc { font-size: 13px; color: var(--ink-muted); line-height: 1.5; margin-bottom: 14px; }
+.mc-stats {
+  font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;
+}
+.mc-stats span { display: flex; align-items: center; gap: 3px; }
+.mc-cta { width: 100%; justify-content: center; padding: 9px 16px; font-size: 13px; }
+
+/* Proof Sim Locked State */
+.proof-locked { padding: 14px; background: var(--bg); border-radius: var(--r-md); margin-top: 10px; }
+.proof-locked-label { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); margin-bottom: 6px; }
+.proof-locked-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 4px; }
+.proof-locked-fill { height: 100%; background: var(--cobalt); border-radius: 3px; }
+.proof-locked-text { font-size: 11px; color: var(--ink-muted); }
+
+/* ═══════════════════════════════════════════
+   SETUP STATE
+   ═══════════════════════════════════════════ */
+.setup-back {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-muted);
+  text-decoration: none; cursor: pointer; margin-bottom: 20px; transition: color 0.15s;
+}
+.setup-back:hover { color: var(--cobalt); }
+.setup-back svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; }
+
+.setup-section { margin-top: 24px; }
+.setup-section-label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-muted); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.setup-desc { font-size: 13px; color: var(--ink-secondary); line-height: 1.6; margin-bottom: 16px; }
+
+.pill-group { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill {
+  padding: 8px 18px; border-radius: 100px; border: 1px solid var(--border);
+  font-family: var(--font-body); font-size: 13px; font-weight: 500; color: var(--ink-secondary);
+  background: var(--surface); cursor: pointer; transition: all 0.15s;
+}
+.pill:hover { border-color: var(--border-hover); }
+.pill.selected { background: var(--cobalt); color: white; border-color: var(--cobalt); }
+
+.confidence-grid { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.conf-row { display: flex; align-items: center; gap: 12px; }
+.conf-label { font-size: 12px; color: var(--ink-secondary); width: 120px; flex-shrink: 0; }
+.conf-slider { flex: 1; display: flex; gap: 6px; }
+.conf-dot {
+  width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted);
+  cursor: pointer; transition: all 0.15s; background: var(--surface);
+}
+.conf-dot:hover { border-color: var(--cobalt); }
+.conf-dot.active { background: var(--cobalt); color: white; border-color: var(--cobalt); }
+
+.radio-group { display: flex; flex-direction: column; gap: 8px; }
+.radio-item {
+  display: flex; align-items: center; gap: 10px; padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  cursor: pointer; transition: all 0.15s; font-size: 13px; color: var(--ink-secondary);
+}
+.radio-item:hover { border-color: var(--border-hover); }
+.radio-item.selected { border-color: var(--cobalt); background: var(--cobalt-light); color: var(--ink); }
+.radio-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; position: relative; }
+.radio-item.selected .radio-dot { border-color: var(--cobalt); }
+.radio-item.selected .radio-dot::after { content: ''; width: 8px; height: 8px; background: var(--cobalt); border-radius: 50%; position: absolute; top: 2px; left: 2px; }
+
+/* ═══════════════════════════════════════════
+   ACTIVE SESSION STATE
+   ═══════════════════════════════════════════ */
+.session-wrap { background: var(--surface); min-height: calc(100vh - 53px); padding: 0; }
+
+/* Progress header */
+.session-progress-bar {
+  height: 4px; background: var(--border); width: 100%; position: relative;
+}
+.session-progress-fill { height: 100%; background: var(--cobalt); transition: width 0.4s ease; }
+
+.session-header {
+  padding: 12px 32px; display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+.session-fraction { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+.session-flag {
+  display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--ink-muted);
+  cursor: pointer; padding: 6px 10px; border-radius: var(--r-md); border: 1px solid transparent;
+  transition: all 0.15s; background: none;
+}
+.session-flag:hover { background: var(--gold-light); border-color: var(--gold); color: var(--gold); }
+.session-flag.flagged { background: var(--gold-light); border-color: var(--gold); color: #8B6914; }
+
+/* Question area */
+.question-area { padding: 32px 32px 24px; max-width: 720px; }
+.q-subject { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-muted); margin-bottom: 12px; }
+.q-stem { font-size: 16px; font-weight: 500; color: var(--ink); line-height: 1.65; margin-bottom: 24px; }
+
+/* Options */
+.options-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.option-row {
+  display: flex; align-items: center; gap: 12px; padding: 14px 16px; min-height: 56px;
+  border: 1.5px solid var(--border); border-radius: var(--r-lg); cursor: pointer;
+  transition: all 0.15s; background: var(--surface); position: relative;
+}
+.option-row:hover { background: var(--bg); }
+.option-row.selected { background: var(--cobalt-light); border-color: var(--cobalt); }
+.option-row.eliminated { opacity: 0.45; text-decoration: line-through; }
+.option-row.correct { background: var(--green-light); border-color: var(--green); }
+.option-row.incorrect { background: var(--red-light); border-color: var(--red); }
+.option-row.reveal-correct { background: var(--green-light); border-color: var(--green); }
+
+.option-letter {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: var(--ink-muted);
+  width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--border);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  transition: all 0.15s;
+}
+.option-row.selected .option-letter { background: var(--cobalt); color: white; border-color: var(--cobalt); }
+.option-row.correct .option-letter { background: var(--green); color: white; border-color: var(--green); }
+.option-row.incorrect .option-letter { background: var(--red); color: white; border-color: var(--red); }
+.option-row.reveal-correct .option-letter { background: var(--green); color: white; border-color: var(--green); }
+
+.option-text { font-size: 14px; color: var(--ink); flex: 1; }
+.option-result-icon { font-size: 14px; flex-shrink: 0; }
+
+.option-elim {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 11px; color: var(--ink-faint); cursor: pointer; padding: 4px;
+  border-radius: 4px; opacity: 0; transition: opacity 0.15s;
+}
+.option-row:hover .option-elim { opacity: 1; }
+.option-row.selected .option-elim, .option-row.eliminated .option-elim { opacity: 0; }
+
+/* Confidence tag */
+.confidence-tag {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+  font-size: 12px; color: var(--ink-muted);
+}
+.conf-btn {
+  padding: 5px 14px; border-radius: 100px; border: 1px solid var(--border);
+  font-family: var(--font-body); font-size: 12px; color: var(--ink-muted);
+  cursor: pointer; transition: all 0.15s; background: var(--surface);
+}
+.conf-btn:hover { border-color: var(--cobalt); color: var(--cobalt); }
+.conf-btn.active { background: var(--cobalt); color: white; border-color: var(--cobalt); }
+
+/* Session footer */
+.session-footer {
+  padding: 16px 32px; display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid var(--border); max-width: 720px;
+}
+
+/* Rationale panel (Camp Mode post-answer) */
+.rationale-panel {
+  margin-top: 8px; padding: 20px; background: var(--bg); border-radius: var(--r-lg);
+  border: 1px solid var(--border); max-width: 720px;
+}
+.rationale-eyebrow { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--cobalt); margin-bottom: 10px; }
+.rationale-text { font-size: 14px; color: var(--ink-secondary); line-height: 1.7; margin-bottom: 14px; }
+.rationale-citation {
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
+  background: var(--cobalt-light); border-radius: var(--r-sm); font-family: var(--font-mono);
+  font-size: 11px; color: var(--cobalt); margin-bottom: 14px;
+}
+.rationale-links { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.rationale-link { font-size: 13px; color: var(--cobalt); text-decoration: none; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.rationale-link:hover { text-decoration: underline; }
+
+/* Error taxonomy prompt */
+.error-taxonomy { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.error-taxonomy-label { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-muted); margin-bottom: 8px; }
+.error-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.error-pill {
+  padding: 6px 12px; border-radius: 100px; border: 1px solid var(--border);
+  font-size: 12px; color: var(--ink-secondary); cursor: pointer; transition: all 0.15s; background: var(--surface);
+}
+.error-pill:hover { border-color: var(--border-hover); background: var(--bg-cream); }
+.error-pill.selected { background: var(--ink); color: white; border-color: var(--ink); }
+
+/* ═══════════════════════════════════════════
+   DEBRIEF STATE
+   ═══════════════════════════════════════════ */
+.debrief-hero {
+  text-align: center; padding: 40px 20px 32px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--r-lg); margin-bottom: 24px;
+}
+.debrief-score { font-family: var(--font-display); font-size: 52px; font-weight: 800; color: var(--ink); line-height: 1; }
+.debrief-score-label { font-size: 14px; color: var(--ink-muted); margin-top: 4px; }
+.debrief-pct { font-family: var(--font-display); font-size: 32px; font-weight: 700; margin-top: 8px; }
+.debrief-pct.pass { color: var(--green); }
+.debrief-pct.mid { color: var(--ink); }
+.debrief-pct.low { color: var(--orange); }
+.debrief-copy { font-size: 14px; color: var(--ink-secondary); margin-top: 10px; font-style: italic; }
+
+/* Readiness delta */
+.readiness-delta {
+  display: flex; align-items: center; gap: 10px; padding: 16px 20px;
+  background: var(--cobalt-light); border-radius: var(--r-lg); margin-bottom: 24px;
+}
+.rd-label { font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--cobalt); }
+.rd-value { font-size: 18px; font-weight: 600; color: var(--cobalt); }
+.rd-arrow { color: var(--ink-muted); }
+
+/* Node mastery strip */
+.node-strip { margin-bottom: 24px; }
+.node-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.node-id { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); min-width: 130px; }
+.node-name { font-size: 13px; color: var(--ink); flex: 1; }
+.node-transition { font-family: var(--font-mono); font-size: 11px; display: flex; align-items: center; gap: 6px; }
+.node-dots { display: flex; gap: 2px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-grey { background: var(--border); }
+.dot-red { background: var(--red); }
+.dot-amber { background: var(--orange); }
+.dot-green { background: var(--green); }
+.node-delta { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); white-space: nowrap; }
+
+/* Question review strip */
+.review-strip-scroll { overflow-x: auto; padding-bottom: 8px; margin-bottom: 16px; }
+.review-strip { display: flex; gap: 4px; }
+.review-tile {
+  width: 40px; height: 40px; border-radius: var(--r-sm); display: flex;
+  align-items: center; justify-content: center; font-size: 13px; font-weight: 600;
+  cursor: pointer; flex-shrink: 0; transition: all 0.15s; border: 2px solid transparent;
+}
+.review-tile:hover { transform: scale(1.1); }
+.review-tile.active-tile { border-color: var(--ink); transform: scale(1.1); }
+.rt-correct { background: var(--green-light); color: var(--green); }
+.rt-wrong { background: var(--red-light); color: var(--red); }
+.rt-flagged { background: var(--gold-light); color: #8B6914; }
+
+/* Review detail */
+.review-detail {
+  padding: 16px 20px; background: var(--bg); border-radius: var(--r-lg);
+  border: 1px solid var(--border); margin-bottom: 24px;
+}
+.rd-q { font-size: 14px; color: var(--ink); font-weight: 500; margin-bottom: 8px; line-height: 1.5; }
+.rd-answer { font-size: 13px; margin-bottom: 4px; }
+.rd-meta { font-family: var(--font-mono); font-size: 10px; color: var(--ink-muted); margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Calibration reveal */
+.calibration-card {
+  padding: 20px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-lg); margin-bottom: 24px;
+}
+.cal-row { display: flex; align-items: flex-start; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.cal-row:last-child { border-bottom: none; }
+.cal-subject { font-size: 13px; font-weight: 600; color: var(--ink); min-width: 130px; }
+.cal-data { flex: 1; }
+.cal-blocks { display: flex; gap: 3px; margin-bottom: 4px; }
+.cal-block { width: 16px; height: 16px; border-radius: 3px; }
+.cal-block-filled { background: var(--cobalt); }
+.cal-block-empty { background: var(--border); }
+.cal-score { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+.cal-gap { font-size: 12px; color: var(--ink-secondary); margin-top: 4px; font-style: italic; }
+
+/* Debrief footer */
+.debrief-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+
+/* ═══════════════════════════════════════════
+   ANIMATION
+   ═══════════════════════════════════════════ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.animate-in { animation: fadeUp 0.35s ease forwards; opacity: 0; }
+.delay-1 { animation-delay: 0.05s; } .delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; } .delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; } .delay-6 { animation-delay: 0.3s; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .main-content { padding: 20px 16px; }
+  .main-header { padding: 12px 16px; }
+  .mode-grid { grid-template-columns: 1fr; }
+  .question-area { padding: 20px 16px; }
+  .session-header { padding: 10px 16px; }
+  .session-footer { padding: 12px 16px; }
+  .node-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .cal-row { flex-direction: column; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <a class="sidebar-logo-mark" href="#">
+        <div class="sidebar-logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <span class="sidebar-logo-text">SlateCamp</span>
+      </a>
+    </div>
+    <div class="sidebar-nav">
+      <div class="sidebar-section-label">Overview</div>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Dashboard</a>
+      <div class="sidebar-section-label">Study</div>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Wiki</a>
+      <a class="sidebar-link active" href="#"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Review & Testing</a>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Camp Trail</a>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>3D Lab</a>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Notes</a>
+      <div class="sidebar-section-label">Progress</div>
+      <a class="sidebar-link" href="#"><svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>Heatmap</a>
+    </div>
+    <div class="sidebar-score-card">
+      <div class="sidebar-score-label">Readiness Score</div>
+      <div class="sidebar-score-value">62%</div>
+      <div class="sidebar-score-bar"><div class="sidebar-score-fill"></div></div>
+    </div>
+  </nav>
+
+  <!-- ═══ MAIN ═══ -->
+  <main class="main">
+    <header class="main-header">
+      <div class="breadcrumb">
+        <a href="#">Dashboard</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current" id="breadcrumb-label">Review & Testing</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="avatar">JD</div>
+      </div>
+    </header>
+
+    <div class="main-content">
+
+      <!-- ═══════════════════════════════════════════
+           STATE: HUB
+           ═══════════════════════════════════════════ -->
+      <div class="state-page visible" id="state-hub">
+
+        <div class="animate-in delay-1">
+          <div class="eyebrow">Review & Testing</div>
+          <h1 class="page-title">Build Mastery. Earn your Score.</h1>
+          <p class="page-desc">Choose a session mode that fits your goal today. Every answer feeds your Readiness Score.</p>
+        </div>
+
+        <!-- Smart Suggestion: Blindspot Alert -->
+        <div class="suggestion-card blindspot animate-in delay-2" style="margin-top:24px;">
+          <div class="suggestion-icon" style="background:var(--red-light);">⚠️</div>
+          <div class="suggestion-body">
+            <div class="suggestion-eyebrow" style="color:var(--red);">Blindspot Protocol</div>
+            <div class="suggestion-title">3 Building Laws nodes have been Red for 2+ weeks</div>
+            <div class="suggestion-desc">BP 344 Corridors, PD 1096 Room Heights, and RA 9514 Travel Distances haven't improved despite recent quiz activity. A focused session on these topics has the highest chance of moving them.</div>
+            <div class="suggestion-cta">
+              <button class="btn btn-cobalt mc-cta" style="width:auto;" onclick="goToSetup()">
+                Start Focus Review
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZONE 01: FOUNDATIONS -->
+        <div class="zone-header animate-in delay-3">
+          <div class="section-label">Zone 01 · Foundations</div>
+          <div class="zone-header-line"></div>
+        </div>
+
+        <div class="mode-grid animate-in delay-3">
+          <div class="mode-card" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--cobalt)"><span class="mc-label-icon">📖</span> Camp Mode</span>
+            </div>
+            <div class="mc-character">Guided Study</div>
+            <div class="mc-desc">Immediate feedback after each answer. Rationale on every question. No timer. No pressure.</div>
+            <div class="mc-stats">
+              <span>22 sessions</span>
+              <span>·</span>
+              <span>Last: 74%</span>
+              <span>·</span>
+              <span>18 items/session avg</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta">
+              Start Camp Mode
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <div class="mode-card" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--green)"><span class="mc-label-icon">🌿</span> Chill Mode</span>
+            </div>
+            <div class="mc-character">Relaxed</div>
+            <div class="mc-desc">Browse questions casually. Answer when you feel like it. Low stakes, real learning.</div>
+            <div class="mc-stats">
+              <span>6 sessions</span>
+              <span>·</span>
+              <span>Last: 68%</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta">
+              Start Chill Mode
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ZONE 02: DELIBERATE PRACTICE -->
+        <div class="zone-header animate-in delay-4">
+          <div class="section-label">Zone 02 · Deliberate Practice</div>
+          <div class="zone-header-line"></div>
+        </div>
+
+        <div class="mode-grid animate-in delay-4">
+          <div class="mode-card zone-2" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--cobalt)"><span class="mc-label-icon">🎯</span> Subject Mode</span>
+            </div>
+            <div class="mc-character">Focused</div>
+            <div class="mc-desc">Deep-dive into one ALE subject. Questions calibrated to your current mastery level.</div>
+            <div class="mc-stats">
+              <span>8 sessions</span>
+              <span>·</span>
+              <span>Last: 62%</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta">
+              Start Subject Mode
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <div class="mode-card zone-2" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--cobalt)"><span class="mc-label-icon">🔍</span> Focus Review</span>
+            </div>
+            <div class="mc-character">Targeted</div>
+            <div class="mc-desc">Blindspot Protocol-driven. Targets your weakest nodes with the highest-impact questions.</div>
+            <div class="mc-stats">
+              <span>3 sessions</span>
+              <span>·</span>
+              <span>Last: 55%</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta">
+              Start Focus Review
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <div class="mode-card zone-2" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--cobalt)"><span class="mc-label-icon">⚙️</span> Custom Session</span>
+              <span class="badge badge-pro">Pro</span>
+            </div>
+            <div class="mc-character">Flexible</div>
+            <div class="mc-desc">Full control. Pick topics, difficulty, timer, feedback style. Build any session you want.</div>
+            <div class="mc-stats">
+              <span>5 sessions</span>
+              <span>·</span>
+              <span>Last: 78%</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta">
+              Build Custom Session
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ZONE 03: EXAM READINESS -->
+        <div class="zone-header animate-in delay-5">
+          <div class="section-label">Zone 03 · Exam Readiness</div>
+          <div class="zone-header-line"></div>
+        </div>
+
+        <div class="mode-grid animate-in delay-5">
+          <div class="mode-card zone-3" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--orange)"><span class="mc-label-icon">⚡</span> Storm Mode</span>
+              <span class="badge badge-pro">Pro</span>
+            </div>
+            <div class="mc-character">Timed</div>
+            <div class="mc-desc">Exam conditions. No feedback until done. The timer runs as a bar — not a countdown. This is how the real ALE works.</div>
+            <div class="mc-stats">
+              <span>14 sessions</span>
+              <span>·</span>
+              <span>Last: 72%</span>
+              <span>·</span>
+              <span>47 items/session avg</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta" style="background:var(--orange);">
+              Start Storm Mode
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <!-- Proof Simulation — Locked state -->
+          <div class="mode-card zone-3 locked">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--orange)"><span class="mc-label-icon">🛡️</span> Proof Simulation</span>
+              <span class="badge badge-pro">Pro</span>
+            </div>
+            <div class="mc-character">Exam Day</div>
+            <div class="mc-desc">200 questions. Real exam conditions. Score delivered 24 hours later.</div>
+            <div class="proof-locked">
+              <div class="proof-locked-label">Unlock when: Readiness Score ≥ 65%</div>
+              <div class="proof-locked-bar"><div class="proof-locked-fill" style="width: 89%;"></div></div>
+              <div class="proof-locked-text">You're at 62%. Need 3 more points.</div>
+            </div>
+          </div>
+
+          <div class="mode-card zone-3" onclick="goToSetup()">
+            <div class="mc-header">
+              <span class="mc-label" style="color:var(--orange)"><span class="mc-label-icon">🏋️</span> Extended Practice</span>
+              <span class="badge badge-pro">Pro</span>
+            </div>
+            <div class="mc-character">Endurance</div>
+            <div class="mc-desc">100+ question sessions. Builds the cognitive stamina needed for ALE Day 2 (Area C).</div>
+            <div class="mc-stats">
+              <span>2 sessions</span>
+              <span>·</span>
+              <span>Fatigue threshold: ~35 items</span>
+            </div>
+            <button class="btn btn-cobalt mc-cta" style="background:var(--orange);">
+              Start Extended Practice
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /state-hub -->
+
+
+      <!-- ═══════════════════════════════════════════
+           STATE: SETUP (Camp Mode)
+           ═══════════════════════════════════════════ -->
+      <div class="state-page" id="state-setup">
+
+        <a class="setup-back" onclick="goToHub()">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Review
+        </a>
+
+        <div class="animate-in delay-1">
+          <div class="eyebrow" style="color:var(--cobalt);">Camp Mode</div>
+          <h1 class="page-title" style="font-size:24px;">Guided Study</h1>
+          <p class="setup-desc" style="margin-top:6px;">Immediate feedback after each answer. Rationale on every question. No timer. No pressure.</p>
+        </div>
+
+        <div class="setup-section animate-in delay-2">
+          <div class="setup-section-label">How Many Questions?</div>
+          <div class="pill-group">
+            <button class="pill" onclick="selectPill(this)">10</button>
+            <button class="pill selected" onclick="selectPill(this)">20</button>
+            <button class="pill" onclick="selectPill(this)">30</button>
+            <button class="pill" onclick="selectPill(this)">50</button>
+          </div>
+        </div>
+
+        <div class="setup-section animate-in delay-3">
+          <div class="setup-section-label">Confidence Check</div>
+          <div style="font-size:13px;color:var(--ink-muted);margin-bottom:12px;">How confident are you in these subjects right now?</div>
+          <div class="confidence-grid">
+            <div class="conf-row">
+              <span class="conf-label">Building Laws</span>
+              <div class="conf-slider">
+                <button class="conf-dot" onclick="selectConf(this)">1</button>
+                <button class="conf-dot active" onclick="selectConf(this)">2</button>
+                <button class="conf-dot" onclick="selectConf(this)">3</button>
+              </div>
+            </div>
+            <div class="conf-row">
+              <span class="conf-label">Structural Design</span>
+              <div class="conf-slider">
+                <button class="conf-dot active" onclick="selectConf(this)">1</button>
+                <button class="conf-dot" onclick="selectConf(this)">2</button>
+                <button class="conf-dot" onclick="selectConf(this)">3</button>
+              </div>
+            </div>
+            <div class="conf-row">
+              <span class="conf-label">Fire & Life Safety</span>
+              <div class="conf-slider">
+                <button class="conf-dot" onclick="selectConf(this)">1</button>
+                <button class="conf-dot active" onclick="selectConf(this)">2</button>
+                <button class="conf-dot" onclick="selectConf(this)">3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-section animate-in delay-4">
+          <div class="setup-section-label">Focus (optional)</div>
+          <div class="radio-group">
+            <div class="radio-item selected" onclick="selectRadio(this)">
+              <div class="radio-dot"></div>
+              Prioritize weakest nodes (recommended)
+            </div>
+            <div class="radio-item" onclick="selectRadio(this)">
+              <div class="radio-dot"></div>
+              Focus on one subject
+            </div>
+            <div class="radio-item" onclick="selectRadio(this)">
+              <div class="radio-dot"></div>
+              Mix all subjects equally
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;" class="animate-in delay-5">
+          <button class="btn btn-cobalt" style="padding:12px 28px;font-size:14px;" onclick="goToSession()">
+            Start 20-question session
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+      </div><!-- /state-setup -->
+
+
+      <!-- ═══════════════════════════════════════════
+           STATE: ACTIVE SESSION
+           ═══════════════════════════════════════════ -->
+      <div class="state-page" id="state-session">
+        <div class="session-wrap">
+
+          <!-- Progress bar -->
+          <div class="session-progress-bar">
+            <div class="session-progress-fill" id="progressFill" style="width:5%"></div>
+          </div>
+
+          <!-- Session header -->
+          <div class="session-header">
+            <span class="session-fraction" id="questionCounter">1 / 20</span>
+            <div style="display:flex;gap:8px;">
+              <button class="session-flag" id="flagBtn" onclick="toggleFlag()">
+                ⚑ Review later
+              </button>
+              <button class="btn-ghost" onclick="toggleNavigator()" style="font-size:12px;padding:6px 10px;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);cursor:pointer;">
+                ▦
+              </button>
+            </div>
+          </div>
+
+          <!-- Question area -->
+          <div class="question-area" id="questionArea">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Session footer -->
+          <div class="session-footer" id="sessionFooter">
+            <button class="btn btn-ghost" id="prevBtn" onclick="prevQuestion()" style="visibility:hidden;">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+              Previous
+            </button>
+            <button class="btn btn-cobalt" id="submitBtn" onclick="submitAnswer()">
+              Submit Answer
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+          <!-- Navigator overlay -->
+          <div id="navigatorOverlay" style="display:none;position:fixed;bottom:0;left:var(--sidebar-w);right:0;background:var(--surface);border-top:1px solid var(--border);padding:20px 32px;z-index:60;box-shadow:0 -4px 16px rgba(0,0,0,0.08);">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span class="section-label" style="margin-bottom:0;">Session Navigator</span>
+              <button onclick="toggleNavigator()" style="background:none;border:none;cursor:pointer;font-size:18px;color:var(--ink-muted);">✕</button>
+            </div>
+            <div id="navGrid" style="display:grid;grid-template-columns:repeat(10,1fr);gap:4px;"></div>
+            <div style="display:flex;gap:12px;margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--ink-muted);">
+              <span>■ Answered</span> <span>□ Unanswered</span> <span style="color:var(--gold);">⚑ Flagged</span>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /state-session -->
+
+
+      <!-- ═══════════════════════════════════════════
+           STATE: DEBRIEF
+           ═══════════════════════════════════════════ -->
+      <div class="state-page" id="state-debrief">
+
+        <div class="animate-in delay-1">
+          <div class="section-label" style="color:var(--ink-muted);">Session Complete</div>
+        </div>
+
+        <!-- Score Hero -->
+        <div class="debrief-hero animate-in delay-1">
+          <div class="debrief-score">17 / 20</div>
+          <div class="debrief-score-label">correct</div>
+          <div class="debrief-pct pass">85%</div>
+          <div class="debrief-copy">"Strong session. You're locking this in."</div>
+        </div>
+
+        <!-- Readiness Delta -->
+        <div class="readiness-delta animate-in delay-2">
+          <div style="flex:1;">
+            <div class="rd-label">Readiness Score Update</div>
+            <div class="rd-value">62% <span class="rd-arrow">→</span> 65% <span style="font-size:14px;">(+3)</span></div>
+          </div>
+        </div>
+
+        <!-- Node Mastery Strip -->
+        <div class="animate-in delay-3">
+          <div class="section-label">Node Mastery Updates</div>
+          <div class="node-strip">
+            <div class="node-row">
+              <span class="node-id">ALE-DSGN-003-02</span>
+              <span class="node-name">BP 344 §C.5 Corridors</span>
+              <span class="node-transition">
+                <span class="node-dots"><span class="dot dot-grey"></span></span>
+                <span style="color:var(--ink-faint);">→</span>
+                <span class="node-dots"><span class="dot dot-amber"></span></span>
+              </span>
+              <span class="node-delta" style="color:var(--orange);">Red → Amber +18 pts</span>
+            </div>
+            <div class="node-row">
+              <span class="node-id">ALE-DSGN-002-01</span>
+              <span class="node-name">PD 1096 §808 Room Heights</span>
+              <span class="node-transition">
+                <span class="node-dots"><span class="dot dot-amber"></span><span class="dot dot-amber"></span></span>
+                <span style="color:var(--ink-faint);">→</span>
+                <span class="node-dots"><span class="dot dot-green"></span><span class="dot dot-green"></span></span>
+              </span>
+              <span class="node-delta" style="color:var(--green);">Amber → Green +22 pts</span>
+            </div>
+            <div class="node-row">
+              <span class="node-id">ALE-DSGN-003-05</span>
+              <span class="node-name">RA 9514 Travel Distance</span>
+              <span class="node-transition">
+                <span class="node-dots"><span class="dot dot-red"></span></span>
+                <span style="color:var(--ink-faint);">→</span>
+                <span class="node-dots"><span class="dot dot-red"></span></span>
+              </span>
+              <span class="node-delta">Still Red +6 pts</span>
+            </div>
+            <div class="node-row">
+              <span class="node-id">ALE-STRC-001-03</span>
+              <span class="node-name">NSCP Seismic Zone Factors</span>
+              <span class="node-transition">
+                <span class="node-dots"><span class="dot dot-amber"></span></span>
+                <span style="color:var(--ink-faint);">→</span>
+                <span class="node-dots"><span class="dot dot-amber"></span><span class="dot dot-amber"></span></span>
+              </span>
+              <span class="node-delta" style="color:var(--orange);">Amber +14 pts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Question Review Strip -->
+        <div class="animate-in delay-4">
+          <div class="section-label">Question Review</div>
+          <div class="review-strip-scroll">
+            <div class="review-strip" id="reviewStrip">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+          <div class="review-detail" id="reviewDetail">
+            <div class="rd-q" id="rdQuestion">Select a question tile above to review it.</div>
+            <div id="rdBody"></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Calibration Reveal -->
+        <div class="animate-in delay-5">
+          <div class="section-label">Your Calibration</div>
+          <div class="calibration-card">
+            <div class="cal-row">
+              <div class="cal-subject">Building Laws</div>
+              <div class="cal-data">
+                <div style="font-size:12px;color:var(--ink-muted);margin-bottom:4px;">You predicted:</div>
+                <div class="cal-blocks">
+                  <div class="cal-block cal-block-filled"></div>
+                  <div class="cal-block cal-block-filled"></div>
+                  <div class="cal-block cal-block-filled"></div>
+                </div>
+                <div class="cal-score" style="margin-top:4px;">Confident (3/3)</div>
+                <div class="cal-score">You scored: 47%</div>
+                <div class="cal-gap">You were overconfident by 2 levels</div>
+              </div>
+            </div>
+            <div class="cal-row">
+              <div class="cal-subject">Structural Design</div>
+              <div class="cal-data">
+                <div style="font-size:12px;color:var(--ink-muted);margin-bottom:4px;">You predicted:</div>
+                <div class="cal-blocks">
+                  <div class="cal-block cal-block-filled"></div>
+                  <div class="cal-block cal-block-empty"></div>
+                  <div class="cal-block cal-block-empty"></div>
+                </div>
+                <div class="cal-score" style="margin-top:4px;">Not confident (1/3)</div>
+                <div class="cal-score">You scored: 82%</div>
+                <div class="cal-gap">You were underconfident — you know this better than you think</div>
+              </div>
+            </div>
+            <div class="cal-row">
+              <div class="cal-subject">Fire & Life Safety</div>
+              <div class="cal-data">
+                <div style="font-size:12px;color:var(--ink-muted);margin-bottom:4px;">You predicted:</div>
+                <div class="cal-blocks">
+                  <div class="cal-block cal-block-filled"></div>
+                  <div class="cal-block cal-block-filled"></div>
+                  <div class="cal-block cal-block-empty"></div>
+                </div>
+                <div class="cal-score" style="margin-top:4px;">Somewhat confident (2/3)</div>
+                <div class="cal-score">You scored: 71%</div>
+                <div class="cal-gap">Well-calibrated — your prediction matched reality</div>
+              </div>
+            </div>
+            <div style="padding-top:12px;margin-top:4px;border-top:1px solid var(--border);">
+              <div style="font-family:var(--font-mono);font-size:10px;color:var(--ink-muted);">Your calibration score: <strong style="color:var(--ink);">58 / 100</strong> (Higher = better self-knowledge)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Debrief Actions -->
+        <div class="debrief-actions animate-in delay-6">
+          <button class="btn btn-cobalt" onclick="goToHub()">
+            Retry wrong answers (3)
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <button class="btn btn-outline" onclick="goToHub()">
+            Start new session
+          </button>
+          <button class="btn btn-ghost" onclick="goToHub()">
+            Back to Review Hub
+          </button>
+        </div>
+
+      </div><!-- /state-debrief -->
+
+    </div>
+  </main>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+// MOCK DATA ENGINE
+// ═══════════════════════════════════════════
+const QUESTIONS = [
+  {
+    id: 1, subject: "Building Laws",
+    stem: "Under BP 344 (2024 IRR), what is the minimum clear width required for corridors serving as accessible routes in buildings with occupancy load exceeding 50 persons?",
+    options: ["A. 1.00 meter", "B. 1.20 meters", "C. 1.50 meters", "D. 1.80 meters"],
+    correct: 1, // B
+    rationale: "Under BP 344 Section C.5 of the 2024 IRR, corridors serving as accessible routes must have a minimum clear width of 1.20 meters when the occupancy load exceeds 50 persons. The 1.50-meter standard applies to corridors in hospitals and institutional settings, not general commercial occupancies.",
+    citation: "BP 344, 2024 IRR, Section C.5",
+    wikiLink: "BP 344 Accessible Routes",
+    has3D: true
+  },
+  {
+    id: 2, subject: "Building Laws",
+    stem: "What is the minimum clear floor-to-ceiling height required for habitable rooms under PD 1096?",
+    options: ["A. 2.00 meters", "B. 2.10 meters", "C. 2.40 meters", "D. 2.70 meters"],
+    correct: 2, // C
+    rationale: "Under PD 1096 Rule VII, Section 808, the minimum clear ceiling height for habitable rooms is 2.40 meters. The 2.10-meter standard applies to utility rooms, corridors, and storage. The 2.70-meter value is the standard for residential ground floors in some LGU amendments, not the NBC base requirement.",
+    citation: "PD 1096, Rule VII, Section 808",
+    wikiLink: "PD 1096 Room Heights",
+    has3D: true
+  },
+  {
+    id: 3, subject: "Fire & Life Safety",
+    stem: "Under RA 9514, what is the maximum travel distance to an exit for a sprinklered building with Group B occupancy?",
+    options: ["A. 30 meters", "B. 45 meters", "C. 60 meters", "D. 75 meters"],
+    correct: 2, // C
+    rationale: "Under RA 9514 IRR Rule 10, the maximum travel distance for sprinklered buildings with Group B (commercial) occupancy is 60 meters. Non-sprinklered buildings are limited to 45 meters. The 75-meter value applies only to Group F (industrial) occupancies with sprinkler systems.",
+    citation: "RA 9514, IRR Rule 10, Table 10.1.4",
+    wikiLink: "RA 9514 Travel Distances",
+    has3D: false
+  },
+  {
+    id: 4, subject: "Structural Design",
+    stem: "According to NSCP 2015, what seismic zone factor (Z) is assigned to Zone 4?",
+    options: ["A. 0.20", "B. 0.30", "C. 0.40", "D. 0.50"],
+    correct: 2, // C (0.40)
+    rationale: "NSCP 2015 Section 208.4.1 assigns a seismic zone factor Z = 0.40 to Zone 4. Zone 2 has Z = 0.20, and Zone 4 is the highest seismic zone in the Philippines. Most of Metro Manila, Visayas, and Mindanao are classified as Zone 4.",
+    citation: "NSCP 2015, Section 208.4.1, Table 208-3",
+    wikiLink: "NSCP Seismic Design",
+    has3D: false
+  },
+  {
+    id: 5, subject: "Building Laws",
+    stem: "Under BP 344, what is the maximum slope permitted for an accessible ramp?",
+    options: ["A. 1:8", "B. 1:10", "C. 1:12", "D. 1:16"],
+    correct: 2, // C (1:12)
+    rationale: "BP 344 Section D.2 specifies a maximum ramp slope of 1:12 (one unit of rise for every 12 units of run) for accessible routes. Slopes steeper than 1:12 are permitted only for existing buildings where space constraints make 1:12 impossible, and only up to 1:10 with handrails on both sides.",
+    citation: "BP 344, Section D.2",
+    wikiLink: "BP 344 Ramps",
+    has3D: true
+  }
+];
+
+// Mock session results (20 questions, using the 5 real ones + 15 simulated)
+const SESSION_RESULTS = [];
+for (let i = 0; i < 20; i++) {
+  const isCorrect = ![2, 5, 11].includes(i); // 3 wrong answers
+  const isFlagged = [6, 11].includes(i);
+  SESSION_RESULTS.push({
+    qNum: i + 1,
+    correct: isCorrect,
+    flagged: isFlagged,
+    stem: i < 5 ? QUESTIONS[i].stem : `Sample question ${i+1} about ALE content`,
+    yourAnswer: isCorrect ? "Correct answer" : "Wrong answer selected",
+    correctAnswer: "Correct answer text",
+    time: Math.floor(Math.random() * 40000) + 15000,
+    errorTag: !isCorrect ? ["Knowledge gap", "Two options looked similar", "Wrong code version"][i % 3] : null
+  });
+}
+
+// ═══════════════════════════════════════════
+// STATE MANAGEMENT
+// ═══════════════════════════════════════════
+let currentState = 'HUB'; // HUB | SETUP | SESSION | DEBRIEF
+let currentQ = 0;
+let answers = new Array(QUESTIONS.length).fill(null);
+let eliminations = new Array(QUESTIONS.length).fill(null).map(() => new Set());
+let flags = new Set();
+let confidences = new Array(QUESTIONS.length).fill(null);
+let submitted = new Array(QUESTIONS.length).fill(false);
+
+function showState(state) {
+  document.querySelectorAll('.state-page').forEach(p => p.classList.remove('visible'));
+  document.getElementById('state-' + state.toLowerCase()).classList.add('visible');
+  currentState = state;
+  const label = document.getElementById('breadcrumb-label');
+  const labels = { HUB: 'Review & Testing', SETUP: 'Camp Mode Setup', SESSION: 'Active Session', DEBRIEF: 'Session Debrief' };
+  label.textContent = labels[state];
+}
+
+function goToHub() { showState('HUB'); }
+function goToSetup() { showState('SETUP'); }
+function goToSession() {
+  currentQ = 0;
+  answers = new Array(QUESTIONS.length).fill(null);
+  eliminations = new Array(QUESTIONS.length).fill(null).map(() => new Set());
+  flags = new Set();
+  confidences = new Array(QUESTIONS.length).fill(null);
+  submitted = new Array(QUESTIONS.length).fill(false);
+  showState('SESSION');
+  renderQuestion();
+}
+function goToDebrief() {
+  showState('DEBRIEF');
+  renderReviewStrip();
+}
+
+// ═══════════════════════════════════════════
+// SESSION RENDERING
+// ═══════════════════════════════════════════
+function renderQuestion() {
+  const q = QUESTIONS[currentQ];
+  const area = document.getElementById('questionArea');
+  const isSubmitted = submitted[currentQ];
+
+  // Update progress
+  document.getElementById('progressFill').style.width = ((currentQ + 1) / QUESTIONS.length * 100) + '%';
+  document.getElementById('questionCounter').textContent = `${currentQ + 1} / ${QUESTIONS.length}`;
+
+  // Flag state
+  const flagBtn = document.getElementById('flagBtn');
+  flagBtn.classList.toggle('flagged', flags.has(currentQ));
+  flagBtn.textContent = flags.has(currentQ) ? '⚑ Flagged' : '⚑ Review later';
+
+  // Prev button
+  document.getElementById('prevBtn').style.visibility = currentQ > 0 ? 'visible' : 'hidden';
+
+  // Submit button
+  const submitBtn = document.getElementById('submitBtn');
+  if (isSubmitted) {
+    if (currentQ < QUESTIONS.length - 1) {
+      submitBtn.textContent = 'Next Question →';
+      submitBtn.onclick = nextQuestion;
+    } else {
+      submitBtn.textContent = 'Finish Session →';
+      submitBtn.onclick = goToDebrief;
+    }
+  } else {
+    submitBtn.innerHTML = 'Submit Answer <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none"><polyline points="9 18 15 12 9 6"/></svg>';
+    submitBtn.onclick = submitAnswer;
+  }
+
+  // Question content
+  let html = `<div class="q-subject">${q.subject}</div>`;
+  html += `<div class="q-stem">${q.stem}</div>`;
+  html += `<div class="options-list">`;
+
+  q.options.forEach((opt, i) => {
+    let cls = 'option-row';
+    if (isSubmitted) {
+      if (i === q.correct) cls += ' correct reveal-correct';
+      else if (i === answers[currentQ] && i !== q.correct) cls += ' incorrect';
+    } else {
+      if (answers[currentQ] === i) cls += ' selected';
+      if (eliminations[currentQ].has(i)) cls += ' eliminated';
+    }
+
+    const letter = ['A', 'B', 'C', 'D'][i];
+    let resultIcon = '';
+    if (isSubmitted && i === q.correct) resultIcon = '<span class="option-result-icon">✓</span>';
+    if (isSubmitted && i === answers[currentQ] && i !== q.correct) resultIcon = '<span class="option-result-icon">✗</span>';
+
+    html += `<div class="${cls}" onclick="${isSubmitted ? '' : `selectOption(${i})`}" style="${isSubmitted ? 'cursor:default;' : ''}">`;
+    html += `<span class="option-letter">${letter}</span>`;
+    html += `<span class="option-text">${opt}</span>`;
+    html += resultIcon;
+    if (!isSubmitted && !eliminations[currentQ].has(i) && answers[currentQ] !== i) {
+      html += `<span class="option-elim" onclick="event.stopPropagation();eliminateOption(${i})">✕</span>`;
+    }
+    html += `</div>`;
+  });
+  html += `</div>`;
+
+  // Confidence tag (before submit)
+  if (!isSubmitted) {
+    html += `<div class="confidence-tag">`;
+    html += `<span>How sure are you?</span>`;
+    html += `<button class="conf-btn ${confidences[currentQ]==='sure'?'active':''}" onclick="setConfidence('sure')">Sure</button>`;
+    html += `<button class="conf-btn ${confidences[currentQ]==='unsure'?'active':''}" onclick="setConfidence('unsure')">Unsure</button>`;
+    html += `</div>`;
+  }
+
+  // Rationale panel (after submit, Camp Mode)
+  if (isSubmitted) {
+    const isWrong = answers[currentQ] !== q.correct;
+    html += `<div class="rationale-panel">`;
+    html += `<div class="rationale-eyebrow">Why ${['A','B','C','D'][q.correct]} is correct</div>`;
+    html += `<div class="rationale-text">${q.rationale}</div>`;
+    html += `<div class="rationale-citation">📖 ${q.citation}</div>`;
+    html += `<div class="rationale-links">`;
+    html += `<a class="rationale-link" href="#">Read full article →</a>`;
+    if (q.has3D) html += `<a class="rationale-link" href="#">🏛️ See this in 3D</a>`;
+    html += `</div>`;
+
+    if (isWrong) {
+      html += `<div class="error-taxonomy">`;
+      html += `<div class="error-taxonomy-label">What happened?</div>`;
+      html += `<div class="error-pills">`;
+      ['Knowledge gap','Misread','Two options looked similar','Wrong code version','Would\'ve got it with more time'].forEach(tag => {
+        html += `<button class="error-pill" onclick="this.classList.toggle('selected')">${tag}</button>`;
+      });
+      html += `</div></div>`;
+    }
+    html += `</div>`;
+  }
+
+  area.innerHTML = html;
+}
+
+function selectOption(i) {
+  if (submitted[currentQ]) return;
+  if (eliminations[currentQ].has(i)) return;
+  answers[currentQ] = i;
+  renderQuestion();
+}
+
+function eliminateOption(i) {
+  if (submitted[currentQ]) return;
+  if (answers[currentQ] === i) answers[currentQ] = null;
+  eliminations[currentQ].has(i) ? eliminations[currentQ].delete(i) : eliminations[currentQ].add(i);
+  renderQuestion();
+}
+
+function setConfidence(val) {
+  confidences[currentQ] = val;
+  renderQuestion();
+}
+
+function submitAnswer() {
+  if (answers[currentQ] === null) return;
+  submitted[currentQ] = true;
+  renderQuestion();
+}
+
+function nextQuestion() {
+  if (currentQ < QUESTIONS.length - 1) { currentQ++; renderQuestion(); }
+}
+function prevQuestion() {
+  if (currentQ > 0) { currentQ--; renderQuestion(); }
+}
+
+function toggleFlag() {
+  flags.has(currentQ) ? flags.delete(currentQ) : flags.add(currentQ);
+  renderQuestion();
+}
+
+function toggleNavigator() {
+  const overlay = document.getElementById('navigatorOverlay');
+  if (overlay.style.display === 'none') {
+    overlay.style.display = 'block';
+    const grid = document.getElementById('navGrid');
+    let html = '';
+    for (let i = 0; i < QUESTIONS.length; i++) {
+      let bg = 'var(--surface)'; let border = '1px solid var(--border)'; let color = 'var(--ink-muted)';
+      if (submitted[i]) { bg = 'var(--cobalt-light)'; border = '1px solid var(--cobalt)'; color = 'var(--cobalt)'; }
+      if (flags.has(i)) { bg = 'var(--gold-light)'; border = '1px solid var(--gold)'; color = '#8B6914'; }
+      if (i === currentQ) { border = '2px solid var(--ink)'; }
+      html += `<button style="width:100%;aspect-ratio:1;border-radius:var(--r-sm);background:${bg};border:${border};color:${color};font-family:var(--font-mono);font-size:11px;cursor:pointer;" onclick="currentQ=${i};renderQuestion();toggleNavigator();">${i+1}</button>`;
+    }
+    grid.innerHTML = html;
+  } else {
+    overlay.style.display = 'none';
+  }
+}
+
+// ═══════════════════════════════════════════
+// DEBRIEF: REVIEW STRIP
+// ═══════════════════════════════════════════
+function renderReviewStrip() {
+  const strip = document.getElementById('reviewStrip');
+  let html = '';
+  SESSION_RESULTS.forEach((r, i) => {
+    let cls = r.correct ? 'rt-correct' : 'rt-wrong';
+    if (r.flagged) cls = 'rt-flagged';
+    const symbol = r.correct ? '✓' : (r.flagged ? '⚑' : '✗');
+    html += `<div class="review-tile ${cls}" onclick="showReviewDetail(${i})">${symbol}</div>`;
+  });
+  strip.innerHTML = html;
+}
+
+function showReviewDetail(i) {
+  const r = SESSION_RESULTS[i];
+  document.querySelectorAll('.review-tile').forEach(t => t.classList.remove('active-tile'));
+  document.querySelectorAll('.review-tile')[i].classList.add('active-tile');
+
+  const detail = document.getElementById('reviewDetail');
+  let html = `<div class="rd-q">Q${r.qNum}: ${r.stem}</div>`;
+  html += `<div class="rd-answer" style="color:${r.correct ? 'var(--green)' : 'var(--red)'};">${r.correct ? '✓ Correct' : '✗ Incorrect'}: ${r.correct ? r.correctAnswer : r.yourAnswer}</div>`;
+  if (!r.correct) html += `<div class="rd-answer" style="color:var(--green);">Correct: ${r.correctAnswer}</div>`;
+  html += `<div class="rd-meta">`;
+  html += `<span>Took ${Math.round(r.time / 1000)}s</span>`;
+  if (r.flagged) html += `<span style="color:var(--gold);">⚑ Flagged</span>`;
+  if (r.errorTag) html += `<span>Tagged: ${r.errorTag}</span>`;
+  html += `</div>`;
+  detail.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════
+// SETUP HELPERS
+// ═══════════════════════════════════════════
+function selectPill(el) {
+  el.parentElement.querySelectorAll('.pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+}
+function selectConf(el) {
+  el.parentElement.querySelectorAll('.conf-dot').forEach(d => d.classList.remove('active'));
+  el.classList.add('active');
+}
+function selectRadio(el) {
+  el.parentElement.querySelectorAll('.radio-item').forEach(r => r.classList.remove('selected'));
+  el.classList.add('selected');
+}
+</script>
+
+</body>
+</html>

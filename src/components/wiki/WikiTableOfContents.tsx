@@ -76,22 +76,23 @@ export function WikiTableOfContents({ headings, scrollContainerId }: WikiTableOf
 
   return (
     <nav aria-label="Table of contents">
-      <p className="text-[11px] font-medium text-zinc-500 uppercase tracking-wider mb-3">
+      <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider mb-3">
         On this page
       </p>
-      <ul className="space-y-0.5 border-l border-zinc-200">
+      <ul className="space-y-0.5 border-l border-border">
         {headings.map(({ id, text, level }, index) => {
           const isActive = activeId === id
           return (
             <li key={`${id}-${index}`}>
               <button
                 onClick={() => handleClick(id)}
+                aria-current={isActive ? 'true' : undefined}
                 className={cn(
                   'block w-full text-left text-xs py-1 transition-colors leading-snug border-l-2 -ml-px',
                   level === 3 ? 'pl-5' : 'pl-3',
                   isActive
-                    ? 'border-[#1B3FC4] text-[#1A2332] font-medium'
-                    : 'border-transparent text-zinc-400 hover:text-zinc-700 hover:border-zinc-300',
+                    ? 'border-primary text-foreground font-medium'
+                    : 'border-transparent text-muted-foreground hover:text-text-secondary hover:border-border',
                 )}
               >
                 {text}

@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { getAssessmentResults } from '@/lib/actions/assessment'
-import { recommendTrail } from '@/lib/actions/trails'
+import { recommendTrail } from '@/lib/queries/trails'
 import { checkScoreRevealAccess, markScoreRevealed } from '@/lib/paywall/score-reveal'
 import { trackServerEvent } from '@/lib/analytics-server'
 import { createClient, getUser } from '@/lib/supabase/server'

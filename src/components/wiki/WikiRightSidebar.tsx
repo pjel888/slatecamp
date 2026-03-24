@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Brain, ThumbsUp, ThumbsDown, LinkSimple, FileText } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 import { WikiTableOfContents } from './WikiTableOfContents'
 import { WikiSourcesPopover } from './WikiSourcesPopover'
 import { WikiRelatedPopover } from './WikiRelatedPopover'
@@ -52,13 +53,13 @@ export function WikiRightSidebar({
   const cappedRelated = relatedTopics.slice(0, 3)
 
   return (
-    <div className="py-6 px-4 space-y-0">
+    <div className="space-y-0">
       {/* 1. Practice CTA — single button, always visible, fixed height */}
       <div className="mb-5">
         <Link href={practiceHref}>
           <Button
             size="sm"
-            className="w-full bg-primary hover:bg-[#1535A8] text-white font-bold rounded-sm shadow-sm transition-all active:scale-[0.98]"
+            className="w-full font-bold rounded-sm shadow-sm active:scale-[0.98]"
           >
             <SCIcon icon={Brain} size="sm" className="mr-2" />
             {practiceLabel}
@@ -71,7 +72,7 @@ export function WikiRightSidebar({
 
       {/* 3. Feedback + share */}
       <div className="mb-5">
-        <p className="text-[11px] font-medium text-zinc-500 uppercase tracking-wider mb-2">
+        <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider mb-2">
           Feedback
         </p>
         <div className="flex items-center gap-1">
@@ -80,8 +81,8 @@ export function WikiRightSidebar({
             className={cn(
               'p-1.5 rounded-sm transition-colors',
               feedbackGiven === 'up'
-                ? 'bg-[#EDFAF4] text-[#2D9F6F]'
-                : 'text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100',
+                ? 'bg-emerald-50 text-emerald-600'
+                : 'text-muted-foreground hover:text-text-secondary hover:bg-muted',
             )}
             aria-label="Helpful"
           >
@@ -92,19 +93,19 @@ export function WikiRightSidebar({
             className={cn(
               'p-1.5 rounded-sm transition-colors',
               feedbackGiven === 'down'
-                ? 'bg-[#FDF0F0] text-[#D64545]'
-                : 'text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100',
+                ? 'bg-red-50 text-red-500'
+                : 'text-muted-foreground hover:text-text-secondary hover:bg-muted',
             )}
             aria-label="Not helpful"
           >
             <SCIcon icon={ThumbsDown} size="sm" weight={feedbackGiven === 'down' ? 'fill' : 'regular'} />
           </button>
 
-          <div className="w-px h-4 bg-zinc-200 mx-1" />
+          <Separator orientation="vertical" className="h-4 mx-1" />
 
           <button
             onClick={handleCopyLink}
-            className="flex items-center gap-1 px-2 py-1.5 rounded-sm text-xs text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 transition-colors"
+            className="flex items-center gap-1 px-2 py-1.5 rounded-sm text-xs text-muted-foreground hover:text-text-secondary hover:bg-muted transition-colors"
             aria-label="Copy link to this article"
           >
             <SCIcon icon={LinkSimple} size="xs" />
@@ -119,7 +120,7 @@ export function WikiRightSidebar({
       {/* 5. On this page (ToC) — LAST, free to grow downward. Only rendered if headings exist. */}
       {headings.length > 0 && (
         <>
-          <div className="h-px w-full bg-zinc-200 mb-5" />
+          <Separator className="mb-5" />
           <WikiTableOfContents headings={headings} scrollContainerId={scrollContainerId} />
         </>
       )}

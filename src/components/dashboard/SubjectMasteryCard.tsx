@@ -312,7 +312,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             icon={<Target className="h-5 w-5" />}
             message="Your mastery shape appears here"
             description="Complete a quiz session to see how your skills map across subjects."
-            action={{ label: "Start a quiz", href: "/dashboard/review" }}
+            action={{ label: "Start a quiz", href: "/dashboard/testing" }}
             className="flex-1"
           />
         ) : (

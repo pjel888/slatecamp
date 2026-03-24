@@ -30,7 +30,11 @@ export const getPublishedTrails = async (): Promise<CampTrail[]> => {
     .order('is_featured', { ascending: false })
     .order('duration_days', { ascending: true })
 
-  if (error) throw error
+  if (error) {
+    console.error('[getPublishedTrails] Supabase error:', error.message, error.code, error.details, error.hint)
+    throw error
+  }
+  console.log('[getPublishedTrails] returned', data?.length, 'trails')
   return (data || []) as CampTrail[]
 }
 

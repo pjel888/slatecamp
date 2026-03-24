@@ -22,10 +22,10 @@ export function getReadinessLabel(score: number): string {
 export function getReadinessColor(score: number): string {
   if (score >= 70) return "var(--success)";
   if (score >= 40) return "var(--warning)";
-  return "var(--danger)";
+  return "var(--destructive)";
 }
 
 /** CSS variable for delta increase (e.g. "+3"). */
 export const READINESS_DELTA_POSITIVE = "var(--success)";
 /** CSS variable for delta decrease. */
-export const READINESS_DELTA_NEGATIVE = "var(--danger)";
+export const READINESS_DELTA_NEGATIVE = "var(--destructive)";

@@ -9,7 +9,7 @@ import {
   getFullDayCompletions,
   getScoreTrajectory,
   getTodayNodeStates,
-} from '@/lib/actions/trails'
+} from '@/lib/queries/trails'
 import { getStudyWindow } from '@/lib/actions/profile'
 import { TrailDayView } from '@/components/trails/TrailDayView'
 import { MiniHeatmapPreview } from '@/components/trails/MiniHeatmapPreview'

@@ -35,7 +35,7 @@ describe('GROUPED_NAVIGATION', () => {
     expect(practice.config.label).toBe('Practice')
     expect(practice.items).toHaveLength(2)
     expect(practice.items[0].href).toBe('/dashboard/camptrails')
-    expect(practice.items[1].href).toBe('/dashboard/review')
+    expect(practice.items[1].href).toBe('/dashboard/testing')
   })
 
   test('Data group has label "Data" and contains analytics', () => {

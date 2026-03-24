@@ -52,8 +52,8 @@ const WelcomeProPage = async () => {
   // Zone color for score
   const scoreColor =
     score < 40 ? 'var(--destructive)' :
-    score < 70 ? 'var(--camp-orange)' :
-    score < 85 ? 'var(--emerald)' :
+    score < 70 ? 'var(--accent)' :
+    score < 85 ? 'var(--success)' :
     'var(--primary)'
 
   void trackServerEvent('pro_welcome_viewed', { score })

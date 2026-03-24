@@ -256,7 +256,7 @@ export function QuizRenderer({
       question_text: currentQuestion.text,
       topic_id: currentQuestion.topic_id,
       session_id: session.session_id,
-      source_url: '/dashboard/review',
+      source_url: '/dashboard/testing',
     })
     return () => clearAnchor()
   }, [currentQuestion?.question_id, session.session_id, setAnchor, clearAnchor])

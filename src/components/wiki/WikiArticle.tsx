@@ -5,6 +5,7 @@ import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { EIPrompt, EIResponseMap } from '@/lib/actions/ei-prompts'
+import { Button } from '@/components/ui/button'
 import { WikiHighlighter } from './WikiHighlighter'
 import { WikiNoteAnchor } from './WikiNoteAnchor'
 import { WikiTextSelection } from './WikiTextSelection'
@@ -60,13 +61,13 @@ const baseMdxComponents = {
     </div>
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    <thead className="bg-[#F5F5F5] dark:bg-[#252420]" {...props} />
+    <thead className="bg-muted dark:bg-muted" {...props} />
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
-    <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-[#A8A8A5] border-b-[1.5px] border-[#E0DED8] dark:border-[#3A3835]" {...props} />
+    <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-muted-foreground border-b-[1.5px] border-border" {...props} />
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
-    <td className="px-3.5 py-[11px] text-sm text-[#3D3D3A] border-b border-[#ECEAE4] align-top leading-relaxed [&_strong]:text-[#1A1A1A] [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-[#C8C6C0] dark:border-[#3A3835] dark:[&_strong]:text-[#E2E0D8]" {...props} />
+    <td className="px-3.5 py-[11px] text-sm text-foreground border-b border-border/60 align-top leading-relaxed [&_strong]:text-foreground [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0" {...props} />
   ),
 
   // Code blocks — horizontal scroll, styled container
@@ -329,7 +330,7 @@ export const WikiArticle = async ({
       <div className="wiki-prose max-w-none mt-8">
         <Suspense
           fallback={
-            <div className="animate-pulse bg-zinc-100 h-64 w-full rounded-md" />
+            <div className="animate-pulse bg-muted h-64 w-full rounded-md" />
           }
         >
           {processedContent ? (
@@ -348,20 +349,19 @@ export const WikiArticle = async ({
 
       {/* End-of-article CTA — UX Strategy Section 6: "Every Wiki read should end with a quiz" */}
       {nodeId && (
-        <div className="mt-10 rounded-md border border-[#1B3FC4] bg-[#EEF2FC] p-4 flex items-center justify-between">
+        <div className="mt-10 rounded-md border border-primary/30 bg-primary/5 p-4 flex items-center justify-between">
           <div>
-            <p className="text-sm font-medium text-[#1A2332]">
+            <p className="text-sm font-medium text-foreground">
               Test what you just read
             </p>
-            <p className="text-xs text-[#4A5568] mt-0.5">
+            <p className="text-xs text-text-secondary mt-0.5">
               5 questions on this topic — reinforces what you learned.
             </p>
           </div>
-          <a
-            href={`/dashboard/review?topics=${nodeId}`}
-            className="shrink-0 rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-          >
-            Start Quiz &rarr;
+          <a href={`/dashboard/testing/camp/setup`}>
+            <Button size="sm" className="shrink-0 rounded-sm font-semibold">
+              Start Quiz &rarr;
+            </Button>
           </a>
         </div>
       )}

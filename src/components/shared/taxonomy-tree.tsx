@@ -70,6 +70,51 @@ const sortLabel = (node: TaxonomyTreeNode, index?: number): string | null => {
   return null
 }
 
+/** Walk tree to find ancestor node_ids for a given slug */
+const findAncestorIds = (
+  nodes: TaxonomyTreeNode[],
+  slug: string,
+): string[] => {
+  const walk = (list: TaxonomyTreeNode[], path: string[]): string[] | null => {
+    for (const node of list) {
+      const nodeSlug = node.slug ?? ''
+      const effectiveSlug = nodeSlug
+        || (node.level >= 3 && node.articles?.length ? node.articles[0].slug : '')
+      const isMatch = effectiveSlug === slug || node.articles?.some(a => a.slug === slug)
+
+      if (isMatch) return [...path, node.node_id]
+      if (node.children?.length) {
+        const found = walk(node.children, [...path, node.node_id])
+        if (found) return found
+      }
+    }
+    return null
+  }
+  return walk(nodes, []) ?? []
+}
+
+const STORAGE_KEY = 'wiki_taxonomy_expanded'
+
+/** Highlight ALL matched substrings in search results.
+ *  Regex-safe, dark mode aware, 2-char minimum to avoid noise. */
+const HighlightMatch = ({ text, query }: { text: string; query: string }) => {
+  if (!query || query.length < 2) return <>{text}</>
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const parts = text.split(new RegExp(`(${escaped})`, 'gi'))
+  if (parts.length === 1) return <>{text}</>
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <mark key={i} className="bg-amber-100 text-inherit rounded-sm px-px dark:bg-amber-900/30">{part}</mark>
+        ) : (
+          <span key={i}>{part}</span>
+        ),
+      )}
+    </>
+  )
+}
+
 /** Count all nodes in tree (for showSearch threshold) */
 const countNodes = (nodes: TaxonomyTreeNode[]): number => {
   let count = 0
@@ -83,7 +128,8 @@ const countNodes = (nodes: TaxonomyTreeNode[]): number => {
   return count
 }
 
-/** Filter: a node is visible if it or any descendant matches the query */
+/** Filter: a node is visible if it or any descendant matches the query.
+ *  Uses a shared mutable path to avoid O(n*d) array allocations. */
 const filterNodes = (
   nodes: TaxonomyTreeNode[],
   query: string,
@@ -91,8 +137,9 @@ const filterNodes = (
   if (!query.trim()) return null
   const q = query.toLowerCase()
   const matches = new Set<string>()
+  const path: string[] = []
 
-  const walk = (list: TaxonomyTreeNode[], ancestors: string[]) => {
+  const walk = (list: TaxonomyTreeNode[]) => {
     for (const node of list) {
       const nameMatch = node.name.toLowerCase().includes(q)
       const aleMatch = node.ale_id?.toLowerCase().includes(q) ?? false
@@ -100,15 +147,17 @@ const filterNodes = (
 
       if (nameMatch || aleMatch || articleMatch) {
         matches.add(node.node_id)
-        ancestors.forEach(id => matches.add(id))
+        for (const id of path) matches.add(id)
       }
 
       if (node.children?.length) {
-        walk(node.children, [...ancestors, node.node_id])
+        path.push(node.node_id)
+        walk(node.children)
+        path.pop()
       }
     }
   }
-  walk(nodes, [])
+  walk(nodes)
   return matches.size > 0 ? matches : new Set()
 }
 
@@ -122,11 +171,13 @@ interface TreeBranchProps {
   expanded: Set<string>
   onToggle: (id: string) => void
   activeSlug?: string
+  activeAncestors: Set<string> | null
   basePath: string
   onNavigate?: (href: string) => void
   showCounts: boolean
   dimInactive: boolean
   matchSet: Set<string> | null
+  searchQuery: string
   siblingIndex?: number
 }
 
@@ -136,11 +187,13 @@ const TreeBranch = React.memo(({
   expanded,
   onToggle,
   activeSlug,
+  activeAncestors,
   basePath,
   onNavigate,
   showCounts,
   dimInactive,
   matchSet,
+  searchQuery,
   siblingIndex,
 }: TreeBranchProps) => {
   const hasChildren = (node.children?.length ?? 0) > 0
@@ -149,7 +202,10 @@ const TreeBranch = React.memo(({
   // Level 3+ = articles → always leaf, never expandable
   const isArticle = node.level >= 3
   const isExpandable = !isArticle && (hasChildren || hasArticles || node.level <= 2)
-  const isExpanded = expanded.has(node.node_id)
+  // During search: auto-expand matched ancestors. Otherwise: user's expanded state.
+  const isExpanded = matchSet
+    ? matchSet.has(node.node_id)
+    : expanded.has(node.node_id)
   const isLeaf = isArticle
   const nodeSlug = node.slug ?? ''
   // For leaf nodes (articles): use the first article's slug if the node has no slug
@@ -158,14 +214,7 @@ const TreeBranch = React.memo(({
   const isActive = activeSlug
     ? (effectiveSlug === activeSlug || node.articles?.some(a => a.slug === activeSlug))
     : false
-  const isChildActive = activeSlug
-    ? node.articles?.some(a => a.slug === activeSlug) ||
-      node.children?.some(function checkChild(c: TaxonomyTreeNode): boolean {
-        if (c.slug === activeSlug) return true
-        if (c.articles?.some(a => a.slug === activeSlug)) return true
-        return c.children?.some(checkChild) ?? false
-      })
-    : false
+  const isChildActive = activeAncestors?.has(node.node_id) ?? false
   const isDimmed = dimInactive && activeSlug && !isActive && !isChildActive
 
   // Indentation: 20px per depth level
@@ -211,7 +260,7 @@ const TreeBranch = React.memo(({
         className={cn(
           'group flex items-center min-w-0',
           node.level <= 1 && 'mt-2 first:mt-0',
-          node.level === 2 && 'mt-1 first:mt-0',
+          node.level === 2 && 'mt-3 first:mt-0',
         )}
         style={{ paddingLeft: `${indent}px` }}
       >
@@ -222,7 +271,7 @@ const TreeBranch = React.memo(({
             tabIndex={-1}
             onClick={handleToggle}
             className={cn(
-              'flex w-5 shrink-0 items-center justify-center text-[#1A2332] transition-colors duration-150',
+              'flex w-5 shrink-0 items-center justify-center text-text-secondary transition-colors duration-150',
               'hover:text-foreground',
               node.level <= 1 ? 'h-8' : 'h-5',
             )}
@@ -250,7 +299,7 @@ const TreeBranch = React.memo(({
         <LevelIcon
           className={cn(
             'h-3.5 w-3.5 shrink-0 mr-2 transition-colors duration-150',
-            isActive || isChildActive ? 'text-primary' : isDimmed ? 'text-[#4A5568]' : 'text-[#1A2332]',
+            isActive || isChildActive ? 'text-primary' : isDimmed ? 'text-muted-foreground' : 'text-text-secondary',
           )}
         />
 
@@ -268,11 +317,11 @@ const TreeBranch = React.memo(({
             isActive || isChildActive
               ? 'text-primary'
               : isDimmed
-                ? 'text-[#4A5568]'
-                : 'text-[#1A2332] hover:text-primary',
+                ? 'text-muted-foreground'
+                : 'text-text-secondary hover:text-primary',
           )}
         >
-          {displayName(node)}
+          <HighlightMatch text={displayName(node)} query={searchQuery} />
         </Link>
 
         {/* Right-aligned sort order number in DM Mono */}
@@ -280,7 +329,7 @@ const TreeBranch = React.memo(({
           <span
             className={cn(
               'ml-auto shrink-0 pl-2 font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums',
-              isActive || isChildActive ? 'text-primary' : 'text-[#4A5568]',
+              isActive || isChildActive ? 'text-primary' : 'text-text-secondary',
             )}
           >
             {orderLabel}
@@ -292,7 +341,7 @@ const TreeBranch = React.memo(({
       {isExpanded && isExpandable && (
         <div
           className={cn(
-            'border-l transition-colors duration-150 space-y-0.5',
+            'border-l transition-colors duration-150 space-y-2',
             isActive || isChildActive ? 'border-primary/30' : 'border-border/60',
           )}
           style={{ marginLeft: `${indent + 22}px` }}
@@ -306,11 +355,13 @@ const TreeBranch = React.memo(({
               expanded={expanded}
               onToggle={onToggle}
               activeSlug={activeSlug}
+              activeAncestors={activeAncestors}
               basePath={basePath}
               onNavigate={onNavigate}
               showCounts={showCounts}
               dimInactive={dimInactive}
               matchSet={matchSet}
+              searchQuery={searchQuery}
               siblingIndex={i}
             />
           ))}
@@ -326,7 +377,7 @@ const TreeBranch = React.memo(({
                   <FileText
                     className={cn(
                       'h-3 w-3 transition-colors duration-150',
-                      isArtActive ? 'text-primary' : 'text-[#1A2332]',
+                      isArtActive ? 'text-primary' : 'text-text-secondary',
                     )}
                   />
                 </span>
@@ -338,11 +389,11 @@ const TreeBranch = React.memo(({
                     isArtActive
                       ? 'text-primary font-medium'
                       : isDimmed
-                        ? 'text-[#4A5568]'
-                        : 'text-[#1A2332] hover:text-primary',
+                        ? 'text-muted-foreground'
+                        : 'text-text-secondary hover:text-primary',
                   )}
                 >
-                  {art.title}
+                  <HighlightMatch text={art.title} query={searchQuery} />
                 </Link>
               </div>
             )
@@ -368,26 +419,55 @@ const TaxonomyTree = ({
   dimInactive = false,
   className,
 }: TaxonomyTreeProps) => {
-  const [expanded, setExpanded] = React.useState<Set<string>>(() => new Set())
+  // Restore expanded state from localStorage only when an article is active
+  const [expanded, setExpanded] = React.useState<Set<string>>(() => {
+    if (!activeSlug) return new Set()
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY)
+      if (stored) return new Set(JSON.parse(stored) as string[])
+    } catch { /* ignore */ }
+    return new Set()
+  })
   const [searchQuery, setSearchQuery] = React.useState('')
+  const deferredQuery = React.useDeferredValue(searchQuery)
+  const isSearchPending = searchQuery !== deferredQuery
 
   const totalNodes = React.useMemo(() => countNodes(nodes), [nodes])
   const shouldShowSearch = showSearch ?? totalNodes > 10
 
   const matchSet = React.useMemo(
-    () => filterNodes(nodes, searchQuery),
-    [nodes, searchQuery],
+    () => filterNodes(nodes, deferredQuery),
+    [nodes, deferredQuery],
   )
 
-  // Auto-expand matching nodes during search
+  // Pre-compute active ancestor set for O(1) lookups in TreeBranch
+  const activeAncestors = React.useMemo(() => {
+    if (!activeSlug) return null
+    return new Set(findAncestorIds(nodes, activeSlug))
+  }, [activeSlug, nodes])
+
+  // Auto-expand ancestor path to active article
   React.useEffect(() => {
-    if (!matchSet || matchSet.size === 0) return
+    if (!activeSlug || nodes.length === 0) return
+    const ancestors = findAncestorIds(nodes, activeSlug)
+    if (ancestors.length === 0) return
     setExpanded(prev => {
       const next = new Set(prev)
-      for (const id of matchSet) next.add(id)
-      return next
+      let changed = false
+      for (const id of ancestors) {
+        if (!next.has(id)) { next.add(id); changed = true }
+      }
+      return changed ? next : prev
     })
-  }, [matchSet])
+  }, [activeSlug, nodes])
+
+  // Persist expanded state to localStorage
+  React.useEffect(() => {
+    if (expanded.size === 0) return
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...expanded]))
+    } catch { /* ignore */ }
+  }, [expanded])
 
   const onToggle = React.useCallback((id: string) => {
     setExpanded(prev => {
@@ -406,29 +486,45 @@ const TaxonomyTree = ({
   const noResults = matchSet !== null && visibleRoots.length === 0
 
   return (
-    <div className={cn('flex flex-col transition-opacity duration-200', className)}>
+    <div className={cn(
+      'group/tree flex flex-col',
+      'opacity-75 hover:opacity-100 transition-opacity duration-200 ease-out',
+      'motion-reduce:transition-none motion-reduce:opacity-100',
+      className,
+    )}>
       {shouldShowSearch && (
         <div className="border-b border-border p-1 pb-2">
           <SearchInput
-            value={searchQuery}
             onChange={setSearchQuery}
             placeholder="Filter topics..."
             size="sm"
-            debounceMs={150}
+            debounceMs={250}
+            loading={isSearchPending}
           />
         </div>
       )}
+
+      {/* Screen reader announcement for search results */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        {deferredQuery && !noResults && `${matchSet?.size ?? 0} topics match "${deferredQuery}"`}
+        {deferredQuery && noResults && `No topics match "${deferredQuery}"`}
+      </div>
 
       {isEmpty ? (
         <div className="px-3 py-8 text-center text-sm text-muted-foreground">
           No taxonomy data
         </div>
       ) : noResults ? (
-        <div className="px-3 py-8 text-center text-sm text-muted-foreground">
-          No matching topics
+        <div className="px-3 py-6 text-center">
+          <p className="text-sm text-muted-foreground">
+            No topics match &ldquo;<span className="font-medium text-text-secondary">{deferredQuery}</span>&rdquo;
+          </p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Try a shorter or different keyword
+          </p>
         </div>
       ) : (
-        <nav className="overflow-y-auto p-1 space-y-0.5" aria-label="Taxonomy navigation">
+        <nav className="overflow-y-auto p-1 space-y-2" aria-label="Taxonomy navigation">
           {visibleRoots.map((node, i) => (
             <TreeBranch
               key={node.node_id}
@@ -437,11 +533,13 @@ const TaxonomyTree = ({
               expanded={expanded}
               onToggle={onToggle}
               activeSlug={activeSlug}
+              activeAncestors={activeAncestors}
               basePath={basePath}
               onNavigate={onNavigate}
               showCounts={showCounts}
               dimInactive={dimInactive}
               matchSet={matchSet}
+              searchQuery={deferredQuery}
               siblingIndex={i}
             />
           ))}

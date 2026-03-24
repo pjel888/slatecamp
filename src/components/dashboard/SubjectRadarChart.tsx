@@ -60,7 +60,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
             icon={<BarChart3 className="h-5 w-5" />}
             message="Mastery data builds as you practice"
             description="Complete a quiz session and your subject coverage will appear here."
-            action={{ label: "Start a quiz", href: "/dashboard/review" }}
+            action={{ label: "Start a quiz", href: "/dashboard/testing" }}
           />
         ) : (
           <div className="w-full h-[260px]">
