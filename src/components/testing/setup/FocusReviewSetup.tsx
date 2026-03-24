@@ -37,11 +37,13 @@ const FocusReviewSetup = ({ userId, weakNodes }: FocusReviewSetupProps) => {
     mastery: Math.round(row.current_mastery_weight * 100),
   }))
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const hasWeakNodes = nodes.length > 0
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'focus_review',
@@ -63,6 +65,8 @@ const FocusReviewSetup = ({ userId, weakNodes }: FocusReviewSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -139,6 +143,11 @@ const FocusReviewSetup = ({ userId, weakNodes }: FocusReviewSetupProps) => {
             </div>
           </section>
 
+          {error && (
+            <p className="text-sm text-[#D64545] text-center" role="alert">
+              {error}
+            </p>
+          )}
           <Button
             variant="default"
             size="lg"

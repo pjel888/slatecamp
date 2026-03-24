@@ -44,6 +44,7 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
   const [selectedSubjectId, setSelectedSubjectId] = useState<string | null>(null)
   const [questionCount, setQuestionCount] = useState(20)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const subjects = ALE_SUBJECTS.map((s) => ({ subjectId: s.id, subjectName: s.name }))
 
@@ -54,6 +55,7 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
   const handleStart = async () => {
     if (!selectedSubjectId) return
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'subject_mode',
@@ -75,6 +77,8 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -123,6 +127,11 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
           />
         </section>
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="default"
           size="lg"

@@ -25,12 +25,14 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
   const [focusOption, setFocusOption] = useState<FocusOption>('weakest')
   const [focusSubjectId, setFocusSubjectId] = useState<string | undefined>(undefined)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const subjects = ALE_SUBJECTS.map((s) => ({ subjectId: s.id, subjectName: s.name }))
   const isFirstTime = completedSessionCount === 0
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'camp_mode',
@@ -52,6 +54,8 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -122,6 +126,11 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
           />
         </section>
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="default"
           size="lg"

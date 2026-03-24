@@ -508,17 +508,24 @@ export const saveTestingInteraction = async (
     ? (session.question_ids as string[]).indexOf(payload.questionId)
     : null
 
+  const { data: questionData } = await supabase
+    .from('questions')
+    .select('topic_id')
+    .eq('question_id', payload.questionId)
+    .single()
+
   const { error } = await supabase.from('user_interactions').upsert(
     {
       session_id: payload.sessionId,
       user_id: user.id,
       question_id: payload.questionId,
+      topic_id: questionData?.topic_id ?? null,
       selected_option_id: payload.selectedOptionId,
       is_correct: payload.isCorrect ?? false,
       time_spent_ms: payload.timeSpentMs,
       is_flagged: payload.isFlagged,
       confidence: payload.confidenceTag,
-      error_type: payload.errorTags.length > 0 ? payload.errorTags[0] : null,
+      error_type: payload.errorTags.length > 0 ? payload.errorTags.join(',') : null,
       options_eliminated: payload.eliminatedOptionIds.length,
       answer_changes: payload.answerChanges,
       question_order: questionOrder !== null && questionOrder >= 0 ? questionOrder : null,

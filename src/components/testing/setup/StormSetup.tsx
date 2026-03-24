@@ -18,11 +18,13 @@ const StormSetup = ({ userId }: StormSetupProps) => {
   const router = useRouter()
   const [questionCount, setQuestionCount] = useState(50)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const minutes = Math.round((questionCount * SECONDS_PER_QUESTION) / 60)
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'storm_mode',
@@ -44,6 +46,8 @@ const StormSetup = ({ userId }: StormSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -91,6 +95,11 @@ const StormSetup = ({ userId }: StormSetupProps) => {
           </p>
         </div>
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="warmCta"
           size="lg"

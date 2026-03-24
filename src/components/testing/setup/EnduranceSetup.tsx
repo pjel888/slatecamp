@@ -42,9 +42,11 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
   const previousFatigueThreshold = deriveReliableWindow(previousSessions)
   const router = useRouter()
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'extended_practice',
@@ -66,6 +68,8 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -114,6 +118,11 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
           </p>
         </div>
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="warmCta"
           size="lg"

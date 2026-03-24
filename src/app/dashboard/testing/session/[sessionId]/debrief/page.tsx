@@ -27,7 +27,7 @@ const DebriefPage = async ({ params }: DebriefPageProps) => {
   // Check if this is a proof simulation with cold delivery
   const isSimulation = session.config?.source === 'proof_simulation'
   if (isSimulation) {
-    const completedAt = new Date(session.completed_at)
+    const completedAt = session.completed_at ? new Date(session.completed_at) : new Date()
     const now = new Date()
     const hoursSinceCompletion = (now.getTime() - completedAt.getTime()) / (1000 * 60 * 60)
     if (hoursSinceCompletion < 24) {
@@ -56,9 +56,10 @@ const DebriefPage = async ({ params }: DebriefPageProps) => {
   const thisSnapshot = (snapshots ?? []).find(
     (s: { session_id: string | null }) => s.session_id === sessionId
   )
+  const sessionCompletedAt = session.completed_at ? new Date(session.completed_at) : new Date()
   const previousSnapshots = (snapshots ?? []).filter(
     (s: { computed_at: string }) =>
-      new Date(s.computed_at) < new Date(session.completed_at)
+      new Date(s.computed_at) < sessionCompletedAt
   )
   const previousScore = previousSnapshots[0]?.score ?? 0
   const currentScore = thisSnapshot?.score ?? previousScore

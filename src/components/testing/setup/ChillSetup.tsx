@@ -24,9 +24,11 @@ const ChillSetup = ({ userId }: ChillSetupProps) => {
   const router = useRouter()
   const [subjectFilter, setSubjectFilter] = useState<string>('all')
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'chill_mode',
@@ -48,6 +50,8 @@ const ChillSetup = ({ userId }: ChillSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -96,6 +100,11 @@ const ChillSetup = ({ userId }: ChillSetupProps) => {
           You can end this session anytime — no penalty.
         </p>
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="default"
           size="lg"

@@ -18,9 +18,11 @@ const SIMULATION_QUESTION_COUNT = 200
 const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleBegin = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'proof_simulation',
@@ -42,6 +44,8 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -96,6 +100,11 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
         </p>
 
         <div className="flex flex-col gap-3">
+          {error && (
+            <p className="text-sm text-[#D64545] text-center" role="alert">
+              {error}
+            </p>
+          )}
           <Button
             variant="warmCta"
             size="xl"

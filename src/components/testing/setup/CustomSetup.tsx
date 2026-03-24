@@ -33,6 +33,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
   const [timerEnabled, setTimerEnabled] = useState(false)
   const [timerMinutes, setTimerMinutes] = useState(30)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const toggleSubject = (subjectId: string) => {
     setSelectedSubjectIds((prev) =>
@@ -48,6 +49,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
 
   const handleStart = async () => {
     setLoading(true)
+    setError(null)
     try {
       const config: SessionConfig = {
         source: 'custom_session',
@@ -69,6 +71,8 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
       }
       const sessionId = await createTestingSession(userId, config)
       router.push(ROUTES.TESTING_SESSION(sessionId))
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -239,6 +243,11 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
           </div>
         )}
 
+        {error && (
+          <p className="text-sm text-[#D64545] text-center" role="alert">
+            {error}
+          </p>
+        )}
         <Button
           variant="default"
           size="lg"

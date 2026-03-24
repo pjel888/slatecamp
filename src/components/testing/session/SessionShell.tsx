@@ -36,7 +36,7 @@ interface ExistingInteraction {
   is_correct: boolean | null
   confidence: string | null
   error_type: string | null
-  options_eliminated: string[] | null
+  options_eliminated: number | null
   is_flagged: boolean | null
   time_spent_ms: number | null
   answer_changes: number | null
@@ -98,7 +98,7 @@ export const SessionShell = ({
         isCorrect: interaction.is_correct,
         confidenceTag: (interaction.confidence as ConfidenceTag | null) ?? null,
         errorTags: interaction.error_type ? ([interaction.error_type] as ErrorTag[]) : [],
-        eliminatedOptionIds: interaction.options_eliminated ?? [],
+        eliminatedOptionIds: [],
         isFlagged: interaction.is_flagged ?? false,
         timeSpentMs: interaction.time_spent_ms ?? 0,
         answerChanges: interaction.answer_changes ?? 0,
@@ -118,7 +118,17 @@ export const SessionShell = ({
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false)
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error' | 'offline'>('idle')
   const [isCompleting, setIsCompleting] = useState(false)
-  const [remainingSeconds, setRemainingSeconds] = useState(timerSeconds)
+  const [remainingSeconds, setRemainingSeconds] = useState(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = JSON.parse(localStorage.getItem(`slatecamp_testing_${session.session_id}`) ?? '{}')
+        if (typeof cached.remainingSeconds === 'number' && cached.remainingSeconds > 0) {
+          return cached.remainingSeconds
+        }
+      } catch { /* ignore */ }
+    }
+    return timerSeconds
+  })
 
   // Track time spent per question
   const questionStartTimeRef = useRef<number>(Date.now())
@@ -136,12 +146,13 @@ export const SessionShell = ({
         answers: Object.fromEntries(answers),
         submittedQuestions: Array.from(submittedQuestions),
         stormConfirmedQuestions: Array.from(stormConfirmedQuestions),
+        remainingSeconds,
       }
       localStorage.setItem(localStorageKey, JSON.stringify(snapshot))
     } catch {
       // Ignore storage errors
     }
-  }, [currentIndex, answers, submittedQuestions, stormConfirmedQuestions, localStorageKey])
+  }, [currentIndex, answers, submittedQuestions, stormConfirmedQuestions, remainingSeconds, localStorageKey])
 
   // ─── Storm timer countdown ─────────────────────────────────────────────────
 
@@ -268,6 +279,17 @@ export const SessionShell = ({
     [currentQuestion, getOrCreateAnswer],
   )
 
+  // ─── Navigation ───────────────────────────────────────────────────────────
+
+  const handleNavigate = useCallback(
+    async (nextIndex: number) => {
+      questionStartTimeRef.current = Date.now()
+      setCurrentIndex(nextIndex)
+      updateSessionProgress(sessionId, nextIndex).catch(() => {})
+    },
+    [sessionId],
+  )
+
   // ─── Submit answer (Camp / Chill) ──────────────────────────────────────────
 
   const handleSubmitAnswer = useCallback(async () => {
@@ -341,7 +363,7 @@ export const SessionShell = ({
     } else {
       setShowConfirmSubmit(true)
     }
-  }, [currentQuestion, getOrCreateAnswer, sessionId, currentIndex, questions.length])
+  }, [currentQuestion, getOrCreateAnswer, sessionId, currentIndex, questions.length, handleNavigate])
 
   // ─── Chill: skip ──────────────────────────────────────────────────────────
 
@@ -351,18 +373,7 @@ export const SessionShell = ({
     } else {
       setShowConfirmSubmit(true)
     }
-  }, [currentIndex, questions.length])
-
-  // ─── Navigation ───────────────────────────────────────────────────────────
-
-  const handleNavigate = useCallback(
-    async (nextIndex: number) => {
-      questionStartTimeRef.current = Date.now()
-      setCurrentIndex(nextIndex)
-      updateSessionProgress(sessionId, nextIndex).catch(() => {})
-    },
-    [sessionId],
-  )
+  }, [currentIndex, questions.length, handleNavigate])
 
   const handleNext = useCallback(() => {
     if (currentIndex < questions.length - 1) {
@@ -399,18 +410,22 @@ export const SessionShell = ({
     setShowConfirmSubmit(true)
   }, [])
 
+  const isStorm = isStormLike(source)
+  const isChill = isChillLike(source)
+
   // ─── Keyboard navigation ──────────────────────────────────────────────────
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       // Don't intercept when navigator is open or confirm sheet is open
       if (showNavigator || showConfirmSubmit) return
-      if (e.key === 'ArrowRight' && isCurrentSubmitted) handleNext()
+      const canAdvance = isStorm ? isCurrentStormConfirmed : isCurrentSubmitted
+      if (e.key === 'ArrowRight' && canAdvance) handleNext()
       if (e.key === 'ArrowLeft') handlePrev()
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [showNavigator, showConfirmSubmit, isCurrentSubmitted, handleNext, handlePrev])
+  }, [showNavigator, showConfirmSubmit, isCurrentSubmitted, isCurrentStormConfirmed, isStorm, handleNext, handlePrev])
 
   // ─── Derived counts ───────────────────────────────────────────────────────
 
@@ -419,8 +434,6 @@ export const SessionShell = ({
   const unansweredCount = questions.length - answeredCount
   const progress = ((currentIndex + 1) / questions.length) * 100
   const isFlagged = currentAnswer?.isFlagged ?? false
-  const isStorm = isStormLike(source)
-  const isChill = isChillLike(source)
   const answeredCountForChill = Array.from(submittedQuestions).length
 
   if (!currentQuestion) {
@@ -536,6 +549,7 @@ export const SessionShell = ({
               answer={currentAnswer}
               isConfirmed={isCurrentStormConfirmed}
               onSelectOption={handleSelectOption}
+              onStrikeOption={handleStrikeOption}
               onConfirm={handleStormConfirm}
             />
           ) : isChill ? (

@@ -14,6 +14,7 @@ interface StormSessionBehaviorProps {
   /** True after the user has confirmed their selection for this question */
   isConfirmed: boolean
   onSelectOption: (optionId: string) => void
+  onStrikeOption: (optionId: string) => void
   onConfirm: () => void
 }
 
@@ -32,6 +33,7 @@ export const StormSessionBehavior = ({
   answer,
   isConfirmed,
   onSelectOption,
+  onStrikeOption,
   onConfirm,
 }: StormSessionBehaviorProps) => {
   const hasSelection = Boolean(answer?.selectedOptionId)
@@ -57,8 +59,8 @@ export const StormSessionBehavior = ({
               isChecked={isConfirmed}
               onSelect={() => !isConfirmed && onSelectOption(option.id)}
               onStrike={(e) => {
-                // Storm mode: allow elimination pre-confirm
                 e.stopPropagation()
+                onStrikeOption(option.id)
               }}
             />
           )
@@ -79,7 +81,7 @@ export const StormSessionBehavior = ({
               : 'bg-[#F5F5F5] text-[#8896A7] cursor-not-allowed',
           )}
         >
-          Confirm &amp; Next
+          Confirm & Next
         </button>
       )}
 
