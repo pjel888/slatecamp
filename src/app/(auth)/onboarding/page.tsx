@@ -153,21 +153,20 @@ export default async function OnboardingPage() {
 
   return (
     <div
-      className="flex min-h-screen flex-col items-center justify-center px-6"
-      style={{ backgroundColor: '#F5F5F5' }}
+      className="flex min-h-screen flex-col items-center justify-center px-6 bg-muted"
     >
       <div className="w-full max-w-md space-y-6">
         {/* Progress indicator */}
-        <p className="text-center text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+        <p className="text-center text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
           Step 1 of 3 before your score is ready
         </p>
 
-        <div className="rounded-md border border-[#D4DAE3] bg-white p-6 space-y-6">
+        <div className="rounded-md border border-border bg-white p-6 space-y-6">
           <div className="text-center">
-            <h1 className="text-xl font-bold text-[#1A2332]">
+            <h1 className="text-xl font-bold text-foreground">
               Let&apos;s set up your study path
             </h1>
-            <p className="mt-1.5 text-sm text-[#4A5568]">
+            <p className="mt-1.5 text-sm text-muted-foreground">
               A few quick questions, then we&apos;ll build your diagnostic.
             </p>
           </div>

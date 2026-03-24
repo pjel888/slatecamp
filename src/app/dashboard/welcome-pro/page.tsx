@@ -51,27 +51,26 @@ const WelcomeProPage = async () => {
 
   // Zone color for score
   const scoreColor =
-    score < 40 ? '#D64545' :
-    score < 70 ? '#E8853A' :
-    score < 85 ? '#2D9F6F' :
-    '#1B3FC4'
+    score < 40 ? 'var(--destructive)' :
+    score < 70 ? 'var(--camp-orange)' :
+    score < 85 ? 'var(--emerald)' :
+    'var(--primary)'
 
   void trackServerEvent('pro_welcome_viewed', { score })
 
   return (
     <div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center px-6"
-      style={{ backgroundColor: '#EDFAF4' }}
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center px-6 bg-emerald-50"
     >
       <div className="mx-auto w-full max-w-lg text-center">
         {/* Welcome headline */}
-        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight text-[#1A2332]">
+        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight text-foreground">
           Welcome to Camp, {firstName}.
         </h1>
 
         {/* Live Readiness Score — the payoff */}
         <div className="mt-8">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[#4A5568]">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-muted-foreground">
             Your Readiness Score
           </p>
           <p
@@ -80,38 +79,38 @@ const WelcomeProPage = async () => {
           >
             {score}%
           </p>
-          <p className="mt-2 text-sm text-[#4A5568]">
+          <p className="mt-2 text-sm text-muted-foreground">
             Live — updates after every session.
           </p>
         </div>
 
         {/* Unblurred heatmap — the exact thing they were deprived of */}
-        <div className="mt-8 rounded-md border border-[#D4DAE3] bg-white p-4">
-          <p className="text-sm font-medium text-[#2D9F6F] mb-3">
+        <div className="mt-8 rounded-md border border-border bg-white p-4">
+          <p className="text-sm font-medium text-emerald mb-3">
             Full Taxonomy Heatmap — unlocked
           </p>
           {subjectSummary.size > 0 ? (
             <div className="flex flex-col gap-2">
               {Array.from(subjectSummary.entries()).map(([subject, counts]) => (
                 <div key={subject} className="flex items-center justify-between text-xs">
-                  <span className="text-[#1A2332] font-medium truncate mr-3">{subject}</span>
+                  <span className="text-foreground font-medium truncate mr-3">{subject}</span>
                   <div className="flex items-center gap-1.5 shrink-0">
                     {counts.green > 0 && (
                       <span className="flex items-center gap-0.5">
-                        <span className="h-2 w-2 rounded-full bg-[#2D9F6F]" />
-                        <span className="text-[#2D9F6F]">{counts.green}</span>
+                        <span className="h-2 w-2 rounded-full bg-emerald" />
+                        <span className="text-emerald">{counts.green}</span>
                       </span>
                     )}
                     {counts.amber > 0 && (
                       <span className="flex items-center gap-0.5">
-                        <span className="h-2 w-2 rounded-full bg-[#D4951A]" />
-                        <span className="text-[#D4951A]">{counts.amber}</span>
+                        <span className="h-2 w-2 rounded-full bg-warning" />
+                        <span className="text-warning">{counts.amber}</span>
                       </span>
                     )}
                     {counts.red > 0 && (
                       <span className="flex items-center gap-0.5">
-                        <span className="h-2 w-2 rounded-full bg-[#D64545]" />
-                        <span className="text-[#D64545]">{counts.red}</span>
+                        <span className="h-2 w-2 rounded-full bg-destructive" />
+                        <span className="text-destructive">{counts.red}</span>
                       </span>
                     )}
                   </div>
@@ -119,7 +118,7 @@ const WelcomeProPage = async () => {
               ))}
             </div>
           ) : (
-            <p className="text-xs text-[#4A5568]">
+            <p className="text-xs text-muted-foreground">
               Every node, every subject, every gap — visible and actionable.
             </p>
           )}
@@ -128,8 +127,7 @@ const WelcomeProPage = async () => {
         {/* CTA */}
         <Link
           href="/dashboard"
-          className="mt-8 inline-flex items-center justify-center rounded-sm px-8 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-          style={{ backgroundColor: '#1B3FC4' }}
+          className="mt-8 inline-flex items-center justify-center rounded-sm bg-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
         >
           Go to Dashboard
         </Link>

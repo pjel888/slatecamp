@@ -20,10 +20,10 @@ import SharedPageLayout from '@/components/layouts/SharedPageLayout'
  */
 
 const getZoneColor = (score: number): string => {
-  if (score < 40) return '#E63329'
-  if (score < 70) return '#E8853A'
-  if (score < 85) return '#1B7A3C'
-  return '#1B3FC4'
+  if (score < 40) return 'var(--destructive)'
+  if (score < 70) return 'var(--camp-orange)'
+  if (score < 85) return 'var(--emerald)'
+  return 'var(--primary)'
 }
 
 const ProofSimulationResultsPage = async ({
@@ -92,7 +92,7 @@ const ProofSimulationResultsPage = async ({
         {!isFullAnalysisReady ? (
           /* ── Cold Score Delivery — the honest moment ── */
           <div className="text-center">
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[#8896A7]">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-muted-foreground">
               Proof Run Complete
             </p>
 
@@ -106,7 +106,7 @@ const ProofSimulationResultsPage = async ({
 
             {/* Passing threshold reference */}
             <div className="mt-6 mx-auto max-w-xs">
-              <div className="h-2 w-full rounded-full bg-[#EEF2FC] relative">
+              <div className="h-2 w-full rounded-full bg-primary/10 relative">
                 <div
                   className="h-2 rounded-full"
                   style={{
@@ -116,25 +116,24 @@ const ProofSimulationResultsPage = async ({
                 />
                 {/* 70% passing threshold line */}
                 <div
-                  className="absolute top-0 bottom-0 w-px bg-[#1A2332]"
+                  className="absolute top-0 bottom-0 w-px bg-foreground"
                   style={{ left: '70%' }}
                   title="Passing threshold"
                 />
               </div>
-              <p className="mt-1 text-xs text-[#8896A7] text-right" style={{ marginRight: '28%' }}>
+              <p className="mt-1 text-xs text-muted-foreground text-right" style={{ marginRight: '28%' }}>
                 Passing
               </p>
             </div>
 
             {/* Delayed analysis message */}
-            <p className="mt-8 text-base text-[#4A5568] max-w-sm mx-auto leading-relaxed">
+            <p className="mt-8 text-base text-muted-foreground max-w-sm mx-auto leading-relaxed">
               Detailed breakdown available tomorrow at {unlockTimeString}. Let that sit tonight.
             </p>
 
             <Link
               href="/dashboard"
-              className="mt-8 inline-flex items-center justify-center rounded-sm px-8 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-              style={{ backgroundColor: '#1B3FC4' }}
+              className="mt-8 inline-flex items-center justify-center rounded-sm bg-primary px-8 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
             >
               Back to Dashboard
             </Link>
@@ -142,29 +141,29 @@ const ProofSimulationResultsPage = async ({
         ) : (
           /* ── Full Analysis — 24 hours later ── */
           <div>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[#8896A7]">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-muted-foreground">
               Proof Run Analysis
             </p>
 
-            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-[#1A2332]">
+            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-foreground">
               Your Proof Run
             </h1>
 
             {/* Score comparison */}
-            <div className="mt-6 rounded-md border border-[#D4DAE3] bg-white p-5">
+            <div className="mt-6 rounded-md border border-border bg-white p-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs text-[#8896A7]">Daily Score</p>
-                  <p className="text-2xl font-bold text-[#1A2332]">{dailyScore}%</p>
+                  <p className="text-xs text-muted-foreground">Daily Score</p>
+                  <p className="text-2xl font-bold text-foreground">{dailyScore}%</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-xs text-[#8896A7]">Pressure Gap</p>
-                  <p className="text-2xl font-bold" style={{ color: pressureGap > 0 ? '#D64545' : '#2D9F6F' }}>
+                  <p className="text-xs text-muted-foreground">Pressure Gap</p>
+                  <p className="text-2xl font-bold" style={{ color: pressureGap > 0 ? 'var(--destructive)' : 'var(--emerald)' }}>
                     {pressureGap > 0 ? `-${pressureGap}` : `+${Math.abs(pressureGap)}`}
                   </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-[#8896A7]">Proof Score</p>
+                  <p className="text-xs text-muted-foreground">Proof Score</p>
                   <p className="text-2xl font-bold" style={{ color: zoneColor }}>
                     {proofScore}%
                   </p>
@@ -173,7 +172,7 @@ const ProofSimulationResultsPage = async ({
             </div>
 
             {/* Interpretation */}
-            <p className="mt-6 text-base text-[#4A5568] leading-relaxed">
+            <p className="mt-6 text-base text-muted-foreground leading-relaxed">
               {pressureGap > 0
                 ? `Your daily score was ${dailyScore}. Your Proof Run returned ${proofScore}. The ${pressureGap}-point gap is where preparation meets pressure. The next phase of the Trail is built around closing it.`
                 : `Your Proof Run score of ${proofScore}% held steady under exam conditions. Your preparation is translating to performance under pressure.`
@@ -184,14 +183,13 @@ const ProofSimulationResultsPage = async ({
             <div className="mt-8 flex flex-col gap-3">
               <Link
                 href={`/dashboard/review?session=${proofSession.session_id}&review=true`}
-                className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-                style={{ backgroundColor: '#1B3FC4' }}
+                className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
               >
                 Review All Questions
               </Link>
               <Link
                 href="/dashboard"
-                className="text-center text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150"
+                className="text-center text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
               >
                 Back to Dashboard
               </Link>

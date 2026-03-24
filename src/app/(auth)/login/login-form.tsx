@@ -55,7 +55,7 @@ export function LoginFormInner() {
       />
 
       {error && (
-        <div className="flex items-start gap-2 text-sm text-[#D64545]" role="alert">
+        <div className="flex items-start gap-2 text-sm text-destructive" role="alert">
           <SCIcon icon={Warning} size="sm" className="mt-0.5 shrink-0" />
           <span>{error}</span>
         </div>

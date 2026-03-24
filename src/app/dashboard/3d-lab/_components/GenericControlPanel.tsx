@@ -32,7 +32,7 @@ const Section = ({
 }) => {
   const [open, setOpen] = useState(defaultOpen)
   return (
-    <div className="border-t border-[#D4DAE3] pt-3 first:border-t-0 first:pt-0">
+    <div className="border-t border-border pt-3 first:border-t-0 first:pt-0">
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex items-center gap-1 w-full text-left mb-2"
@@ -40,11 +40,11 @@ const Section = ({
         <SCIcon
           icon={open ? CaretDown : CaretRight}
           size="xs"
-          className="text-[#8896A7]"
+          className="text-muted-foreground"
         />
         <span
           style={{ fontFamily: MONO_FONT, fontSize: 11 }}
-          className="font-bold uppercase tracking-[0.15em] text-[#8896A7]"
+          className="font-bold uppercase tracking-[0.15em] text-muted-foreground"
         >
           {title}
         </span>
@@ -75,16 +75,16 @@ const SliderControl = ({
   return (
     <div className="space-y-1.5">
       <div className="flex items-center justify-between">
-        <label className="text-[11px] font-medium text-[#1A2332]">
+        <label className="text-[11px] font-medium text-foreground">
           {param.label}
         </label>
         <span
-          className="text-[#1A2332] font-medium tabular-nums"
+          className="text-foreground font-medium tabular-nums"
           style={{ fontFamily: MONO_FONT, fontSize: 12 }}
         >
           {displayVal}
           {param.unit && (
-            <span className="text-[#8896A7] ml-0.5" style={{ fontSize: 11 }}>
+            <span className="text-muted-foreground ml-0.5" style={{ fontSize: 11 }}>
               {param.unit}
             </span>
           )}
@@ -93,12 +93,12 @@ const SliderControl = ({
 
       {/* Custom slider track matching spec: 4px track, cobalt fill */}
       <div className="relative h-5 flex items-center">
-        <div className="absolute inset-x-0 h-[4px] rounded-full bg-[#D4DAE3]" />
+        <div className="absolute inset-x-0 h-[4px] rounded-full bg-border" />
         <div
           className="absolute left-0 h-[4px] rounded-full transition-all duration-75"
           style={{
             width: `${pct}%`,
-            backgroundColor: '#1B3FC4',
+            backgroundColor: 'var(--primary)',
           }}
         />
         <input
@@ -116,7 +116,7 @@ const SliderControl = ({
         />
         {/* Visual thumb */}
         <div
-          className="absolute w-[14px] h-[14px] rounded-full bg-white border-2 border-[#1B3FC4] pointer-events-none shadow-sm transition-transform duration-75 hover:scale-110"
+          className="absolute w-[14px] h-[14px] rounded-full bg-white border-2 border-primary pointer-events-none shadow-sm transition-transform duration-75 hover:scale-110"
           style={{ left: `calc(${pct}% - 7px)` }}
         />
       </div>
@@ -124,13 +124,13 @@ const SliderControl = ({
       {/* Range labels */}
       <div className="flex justify-between">
         <span
-          className="text-[#8896A7]"
+          className="text-muted-foreground"
           style={{ fontFamily: MONO_FONT, fontSize: 11 }}
         >
           {min}
         </span>
         <span
-          className="text-[#8896A7]"
+          className="text-muted-foreground"
           style={{ fontFamily: MONO_FONT, fontSize: 11 }}
         >
           {max}
@@ -152,14 +152,14 @@ const ToggleControl = ({
   onChange: (v: boolean) => void
 }) => (
   <div className="flex items-center justify-between">
-    <label className="text-[11px] font-medium text-[#1A2332]">
+    <label className="text-[11px] font-medium text-foreground">
       {param.label}
     </label>
     <button
       onClick={() => onChange(!value)}
       className={cn(
         'w-9 h-5 rounded-full transition-colors duration-150 relative cursor-pointer',
-        value ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]'
+        value ? 'bg-primary' : 'bg-border'
       )}
       role="switch"
       aria-checked={value}
@@ -187,13 +187,13 @@ const DropdownControl = ({
   onChange: (v: string) => void
 }) => (
   <div className="space-y-1">
-    <label className="text-[11px] font-medium text-[#1A2332]">
+    <label className="text-[11px] font-medium text-foreground">
       {param.label}
     </label>
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="w-full text-[11px] font-medium text-[#1A2332] border border-[#D4DAE3] rounded-sm px-2 py-1.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+      className="w-full text-[11px] font-medium text-foreground border border-border rounded-sm px-2 py-1.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
       style={{ fontFamily: MONO_FONT }}
     >
       {param.options?.map((o) => (
@@ -214,17 +214,17 @@ const ComplianceIndicator = ({
 }) => {
   if (violations.length === 0) {
     return (
-      <div className="rounded-md p-3 bg-[#EDFAF4] border border-[#2D9F6F]/20">
+      <div className="rounded-md p-3 bg-emerald-50 border border-emerald/20">
         <div className="flex items-center gap-2">
-          <SCIcon icon={CheckCircle} size="xs" className="text-[#2D9F6F]" />
+          <SCIcon icon={CheckCircle} size="xs" className="text-emerald" />
           <span
-            className="text-[#2D9F6F] font-medium"
+            className="text-emerald font-medium"
             style={{ fontFamily: MONO_FONT, fontSize: 11 }}
           >
             COMPLIANT
           </span>
         </div>
-        <p className="text-[11px] text-[#4A5568] mt-1">
+        <p className="text-[11px] text-muted-foreground mt-1">
           All values within code limits.
         </p>
       </div>
@@ -238,25 +238,25 @@ const ComplianceIndicator = ({
       className={cn(
         'rounded-md p-3 border',
         hasError
-          ? 'bg-[#FDF0F0] border-[#D64545]/20'
-          : 'bg-[#FEF8ED] border-[#D4951A]/20'
+          ? 'bg-destructive/10 border-destructive/20'
+          : 'bg-amber-50 border-warning/20'
       )}
     >
       <div className="flex items-center gap-2">
         <SCIcon
           icon={hasError ? XCircle : Warning}
           size="xs"
-          className={hasError ? 'text-[#D64545]' : 'text-[#D4951A]'}
+          className={hasError ? 'text-destructive' : 'text-warning'}
         />
         <span
-          className={cn('font-medium', hasError ? 'text-[#D64545]' : 'text-[#D4951A]')}
+          className={cn('font-medium', hasError ? 'text-destructive' : 'text-warning')}
           style={{ fontFamily: MONO_FONT, fontSize: 11 }}
         >
           {hasError ? 'VIOLATION' : 'AT LIMIT'}
         </span>
       </div>
       {violations.map((v, i) => (
-        <p key={i} className="text-[11px] text-[#4A5568] mt-1">
+        <p key={i} className="text-[11px] text-muted-foreground mt-1">
           {v.message}
         </p>
       ))}
@@ -353,7 +353,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
       className={cn(
         // Flush left drawer per implementation plan §6.1
         'absolute left-0 top-0 bottom-0 z-10 w-[240px] overflow-y-auto',
-        'bg-white border-r border-[#D4DAE3]',
+        'bg-white border-r border-border',
         // Mobile: bottom sheet
         'max-sm:left-0 max-sm:right-0 max-sm:top-auto max-sm:bottom-0 max-sm:w-full max-sm:max-h-[50vh] max-sm:rounded-t-lg max-sm:border-r-0 max-sm:border-t max-sm:shadow-lg',
         className
@@ -362,23 +362,23 @@ export const GenericControlPanel = memo(function GenericControlPanel({
       aria-label="Parameter controls"
     >
       {/* Header */}
-      <div className="sticky top-0 bg-white border-b border-[#D4DAE3] px-4 py-3 z-10">
+      <div className="sticky top-0 bg-white border-b border-border px-4 py-3 z-10">
         <span
-          className="text-[#8896A7] uppercase"
+          className="text-muted-foreground uppercase"
           style={{ fontFamily: MONO_FONT, fontSize: 11, letterSpacing: '0.1em' }}
         >
           {title}
         </span>
         <div className="flex items-center justify-between mt-1">
-          <span className="text-[13px] font-semibold text-[#1A2332]">
+          <span className="text-[13px] font-semibold text-foreground">
             Parameters
           </span>
           <button
             onClick={reset}
-            className="p-1 rounded-sm hover:bg-[#EEF2FC] transition-colors duration-150"
+            className="p-1 rounded-sm hover:bg-primary/10 transition-colors duration-150"
             title="Reset to defaults"
           >
-            <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-[#8896A7]" />
+            <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-muted-foreground" />
           </button>
         </div>
       </div>
@@ -386,8 +386,8 @@ export const GenericControlPanel = memo(function GenericControlPanel({
       <div className="p-4 space-y-4">
         {/* Context scenario */}
         {contextScenario && (
-          <div className="rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-2.5">
-            <p className="text-[11px] leading-relaxed text-[#4A5568]">
+          <div className="rounded-sm border border-border bg-background px-3 py-2.5">
+            <p className="text-[11px] leading-relaxed text-muted-foreground">
               {contextScenario}
             </p>
           </div>
@@ -400,7 +400,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
               <button
                 key={preset.label}
                 onClick={() => setParams(preset.values)}
-                className="text-[11px] font-medium text-[#1B3FC4] border border-[#1B3FC4]/20 rounded-sm px-2 py-1 hover:bg-[#EEF2FC] transition-colors duration-150"
+                className="text-[11px] font-medium text-primary border border-primary/20 rounded-sm px-2 py-1 hover:bg-primary/10 transition-colors duration-150"
                 style={{ fontFamily: MONO_FONT, fontSize: 11 }}
               >
                 {preset.label}

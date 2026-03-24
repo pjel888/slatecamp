@@ -40,36 +40,36 @@ const ProofSimulationPage = async () => {
         {!gate.allowed ? (
           /* ── Locked State — UX Strategy: two progress bars toward unlock ── */
           <div>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
               Full Exam Simulation
             </p>
-            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-[#1A2332]">
+            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-foreground">
               The Proof Run unlocks when you&apos;re ready
             </h1>
-            <p className="mt-2 text-sm text-[#4A5568] leading-relaxed">
+            <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
               150 questions. 4 hours. Real exam conditions. Two gates must be met before the simulation becomes available.
             </p>
 
             {/* Gate 1: Node Coverage */}
-            <div className="mt-8 rounded-md border border-[#D4DAE3] bg-white p-4">
+            <div className="mt-8 rounded-md border border-border bg-white p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium text-[#1A2332]">
+                <span className="text-sm font-medium text-foreground">
                   Topic Coverage
                 </span>
-                <span className="font-[family-name:var(--font-dm-mono)] text-xs text-[#4A5568]">
+                <span className="font-[family-name:var(--font-dm-mono)] text-xs text-muted-foreground">
                   {gate.nodesCovered} / {gate.nodesRequired}
                 </span>
               </div>
-              <div className="h-2 w-full rounded-full bg-[#EEF2FC]">
+              <div className="h-2 w-full rounded-full bg-primary/10">
                 <div
                   className="h-2 rounded-full transition-all duration-300 ease-out"
                   style={{
                     width: `${nodePercent}%`,
-                    backgroundColor: nodePercent >= 100 ? '#2D9F6F' : '#1B3FC4',
+                    backgroundColor: nodePercent >= 100 ? 'var(--emerald)' : 'var(--primary)',
                   }}
                 />
               </div>
-              <p className="mt-1.5 text-xs text-[#8896A7]">
+              <p className="mt-1.5 text-xs text-muted-foreground">
                 {nodePercent >= 100
                   ? 'Topic coverage requirement met'
                   : `${70}% of taxonomy nodes must be at Developing level or above`}
@@ -77,25 +77,25 @@ const ProofSimulationPage = async () => {
             </div>
 
             {/* Gate 2: Endurance Window */}
-            <div className="mt-3 rounded-md border border-[#D4DAE3] bg-white p-4">
+            <div className="mt-3 rounded-md border border-border bg-white p-4">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium text-[#1A2332]">
+                <span className="text-sm font-medium text-foreground">
                   Endurance Window
                 </span>
-                <span className="font-[family-name:var(--font-dm-mono)] text-xs text-[#4A5568]">
+                <span className="font-[family-name:var(--font-dm-mono)] text-xs text-muted-foreground">
                   {gate.enduranceWindow} / {gate.enduranceRequired} items
                 </span>
               </div>
-              <div className="h-2 w-full rounded-full bg-[#EEF2FC]">
+              <div className="h-2 w-full rounded-full bg-primary/10">
                 <div
                   className="h-2 rounded-full transition-all duration-300 ease-out"
                   style={{
                     width: `${endurancePercent}%`,
-                    backgroundColor: endurancePercent >= 100 ? '#2D9F6F' : '#E8853A',
+                    backgroundColor: endurancePercent >= 100 ? 'var(--emerald)' : 'var(--camp-orange)',
                   }}
                 />
               </div>
-              <p className="mt-1.5 text-xs text-[#8896A7]">
+              <p className="mt-1.5 text-xs text-muted-foreground">
                 {endurancePercent >= 100
                   ? 'Endurance requirement met'
                   : 'Must cover 80% of exam duration at sustained accuracy'}
@@ -104,7 +104,7 @@ const ProofSimulationPage = async () => {
 
             <Link
               href="/dashboard"
-              className="mt-6 inline-flex items-center text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150"
+              className="mt-6 inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
             >
               &larr; Back to Dashboard
             </Link>
@@ -112,20 +112,20 @@ const ProofSimulationPage = async () => {
         ) : (
           /* ── Unlocked: Pre-Simulation Briefing ── */
           <div>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[#2D9F6F]">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-emerald">
               Ready
             </p>
-            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-[#1A2332]">
+            <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-foreground">
               Full Exam Simulation
             </h1>
-            <p className="mt-4 text-base text-[#4A5568] leading-relaxed">
+            <p className="mt-4 text-base text-muted-foreground leading-relaxed">
               The Proof Run mirrors the real ALE. 150 questions. 4 hours.
               No feedback until completion. Your result will be your most honest score.
               It will take time and attention. Start when you&apos;re ready.
             </p>
 
-            <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F5F5F5] p-4">
-              <p className="text-sm text-[#4A5568]">
+            <div className="mt-6 rounded-md border border-border bg-muted p-4">
+              <p className="text-sm text-muted-foreground">
                 Timer runs as a progress bar, not a countdown.
                 One 10-minute pause is allowed. No answer changes after confirmation.
                 Full review available after completion.
@@ -135,14 +135,13 @@ const ProofSimulationPage = async () => {
             <div className="mt-6 flex flex-col gap-3">
               <Link
                 href="/dashboard/review?mode=proof_sim"
-                className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-                style={{ backgroundColor: '#1B3FC4' }}
+                className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
               >
                 Begin Proof Run
               </Link>
               <Link
                 href="/dashboard"
-                className="text-center text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150"
+                className="text-center text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
               >
                 Not now — back to dashboard
               </Link>

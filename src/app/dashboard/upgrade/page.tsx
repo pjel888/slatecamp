@@ -42,21 +42,21 @@ const UpgradePage = async () => {
     <SharedPageLayout>
       <div className="mx-auto w-full max-w-xl px-4 py-8">
         {/* Headline — Syne 800, 36px */}
-        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight tracking-tight text-[#1A2332]">
+        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight tracking-tight text-foreground">
           Know you&apos;ll win.
         </h1>
 
         {/* Value statement — Inter 16px */}
-        <p className="mt-4 text-base text-[#4A5568] leading-relaxed">
+        <p className="mt-4 text-base text-muted-foreground leading-relaxed">
           Pro students see their live score, full heatmap, and a Day-by-Day Trail
           built around their gaps.
         </p>
 
         {/* Feature Comparison Table */}
-        <div className="mt-8 overflow-hidden rounded-md border border-[#D4DAE3]">
-          <div className="grid grid-cols-3 bg-[#1A2332] px-4 py-3">
-            <div className="text-[11px] font-medium uppercase tracking-wider text-[#8896A7]" />
-            <div className="text-center text-[11px] font-medium uppercase tracking-wider text-[#8896A7]">
+        <div className="mt-8 overflow-hidden rounded-md border border-border">
+          <div className="grid grid-cols-3 bg-foreground px-4 py-3">
+            <div className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground" />
+            <div className="text-center text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
               Free
             </div>
             <div className="text-center text-[11px] font-medium uppercase tracking-wider text-white">
@@ -66,33 +66,33 @@ const UpgradePage = async () => {
           {FEATURE_COMPARISON.map((row, i) => (
             <div
               key={row.feature}
-              className={`grid grid-cols-3 items-center px-4 py-3 border-t border-[#D4DAE3] ${
-                i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F5]'
+              className={`grid grid-cols-3 items-center px-4 py-3 border-t border-border ${
+                i % 2 === 0 ? 'bg-white' : 'bg-muted'
               }`}
             >
-              <div className="text-sm font-medium text-[#1A2332]">{row.feature}</div>
-              <div className="text-center text-sm text-[#8896A7]">{row.free}</div>
-              <div className="text-center text-sm font-medium text-[#1A2332]">{row.pro}</div>
+              <div className="text-sm font-medium text-foreground">{row.feature}</div>
+              <div className="text-center text-sm text-muted-foreground">{row.free}</div>
+              <div className="text-center text-sm font-medium text-foreground">{row.pro}</div>
             </div>
           ))}
         </div>
 
         {/* Social Proof — Campfire (UX Strategy Section 15) */}
-        <div className="mt-8 rounded-md border border-[#D4DAE3] bg-white p-4">
-          <p className="text-sm italic text-[#4A5568]">
+        <div className="mt-8 rounded-md border border-border bg-white p-4">
+          <p className="text-sm italic text-muted-foreground">
             From the Campfire: &ldquo;Started at 44%, passed June 2025.&rdquo;
           </p>
-          <p className="mt-1 text-xs text-[#8896A7]">
+          <p className="mt-1 text-xs text-muted-foreground">
             &mdash; Maria S., PUP Architecture
           </p>
         </div>
 
         {/* Pricing */}
         <div className="mt-8 text-center">
-          <p className="text-2xl font-bold text-[#1A2332]">
-            &#8369;6,999<span className="text-sm font-normal text-[#4A5568]">/cycle</span>
+          <p className="text-2xl font-bold text-foreground">
+            &#8369;6,999<span className="text-sm font-normal text-muted-foreground">/cycle</span>
           </p>
-          <p className="mt-1 text-sm text-[#4A5568]">
+          <p className="mt-1 text-sm text-muted-foreground">
             &#8369;9,999/year &middot; Save 29%
           </p>
         </div>
@@ -100,13 +100,12 @@ const UpgradePage = async () => {
         {/* Payment CTAs — GCash FIRST (Philippines context) */}
         <div className="mt-6 flex flex-col items-center gap-3">
           <button
-            className="w-full max-w-sm rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-            style={{ backgroundColor: '#1B3FC4' }}
+            className="w-full max-w-sm rounded-sm bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
           >
             Pay with GCash
           </button>
           <button
-            className="w-full max-w-sm rounded-sm border border-[#D4DAE3] bg-white px-6 py-3.5 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+            className="w-full max-w-sm rounded-sm border border-border bg-white px-6 py-3.5 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:bg-muted"
           >
             Pay with Card
           </button>
@@ -116,14 +115,14 @@ const UpgradePage = async () => {
         <div className="mt-4 text-center">
           <Link
             href="/dashboard"
-            className="text-sm text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1A2332]"
+            className="text-sm text-muted-foreground transition-colors duration-150 ease-out hover:text-foreground"
           >
             Not yet — continue free
           </Link>
         </div>
 
         {/* Trust line */}
-        <p className="mt-3 text-center text-xs text-[#8896A7]">
+        <p className="mt-3 text-center text-xs text-muted-foreground">
           Secure payment &middot; Cancel anytime
         </p>
       </div>

@@ -13,9 +13,9 @@ import SharedPageLayout from '@/components/layouts/SharedPageLayout'
  */
 
 const MASTERY_STATE = (weight: number) => {
-  if (weight >= 0.7) return { label: 'Strong', color: '#2D9F6F', bg: '#EDFAF4' }
-  if (weight >= 0.4) return { label: 'Developing', color: '#D4951A', bg: '#FEF8ED' }
-  return { label: 'Needs work', color: '#D64545', bg: '#FDF0F0' }
+  if (weight >= 0.7) return { label: 'Strong', color: 'var(--emerald)', bg: 'var(--emerald-50)' }
+  if (weight >= 0.4) return { label: 'Developing', color: 'var(--warning)', bg: 'var(--amber-50)' }
+  return { label: 'Needs work', color: 'var(--destructive)', bg: 'var(--destructive-50)' }
 }
 
 const FocusReviewPage = async () => {
@@ -31,16 +31,16 @@ const FocusReviewPage = async () => {
     return (
       <SharedPageLayout>
         <div className="mx-auto w-full max-w-xl text-center py-12">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
             Focus Review
           </p>
-          <p className="mt-4 text-sm text-[#4A5568]">
+          <p className="mt-4 text-sm text-muted-foreground">
             No focus areas identified right now. The system scans nightly and will
             surface topics that need attention when patterns emerge.
           </p>
           <Link
             href="/dashboard"
-            className="mt-6 inline-flex items-center text-sm text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+            className="mt-6 inline-flex items-center text-sm text-primary hover:text-primary/90 transition-colors duration-150"
           >
             &larr; Back to Dashboard
           </Link>
@@ -70,13 +70,13 @@ const FocusReviewPage = async () => {
   return (
     <SharedPageLayout>
       <div className="mx-auto w-full max-w-xl">
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
           Focus Review
         </p>
-        <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-[#1A2332]">
+        <h1 className="mt-2 font-[family-name:var(--font-syne)] text-2xl font-bold text-foreground">
           {subjects.join(', ')} nodes have been Red for 3+ weeks
         </h1>
-        <p className="mt-2 text-sm text-[#4A5568] leading-relaxed">
+        <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
           A focused session is ready. {queue.question_count} questions targeting the specific
           patterns causing these nodes to stay at their current level.
         </p>
@@ -86,7 +86,7 @@ const FocusReviewPage = async () => {
           {nodeDetails.map((node) => (
             <div
               key={node.name}
-              className="flex items-center justify-between rounded-md border border-[#D4DAE3] bg-white p-3"
+              className="flex items-center justify-between rounded-md border border-border bg-white p-3"
             >
               <div className="flex items-center gap-3">
                 <div
@@ -94,8 +94,8 @@ const FocusReviewPage = async () => {
                   style={{ backgroundColor: node.color }}
                 />
                 <div>
-                  <p className="text-sm font-medium text-[#1A2332]">{node.name}</p>
-                  <p className="text-xs text-[#8896A7]">{node.subjectArea}</p>
+                  <p className="text-sm font-medium text-foreground">{node.name}</p>
+                  <p className="text-xs text-muted-foreground">{node.subjectArea}</p>
                 </div>
               </div>
               <div className="text-right">
@@ -105,7 +105,7 @@ const FocusReviewPage = async () => {
                 >
                   {node.mastery}%
                 </p>
-                <p className="text-xs text-[#8896A7]">
+                <p className="text-xs text-muted-foreground">
                   {node.attempts} attempts
                 </p>
               </div>
@@ -114,8 +114,8 @@ const FocusReviewPage = async () => {
         </div>
 
         {/* Session description */}
-        <div className="mt-6 rounded-md border border-[#D4DAE3] bg-[#F5F5F5] p-4">
-          <p className="text-sm text-[#4A5568]">
+        <div className="mt-6 rounded-md border border-border bg-muted p-4">
+          <p className="text-sm text-muted-foreground">
             5&ndash;7 days &middot; {queue.question_count} questions per day &middot;
             Targets the specific misunderstandings causing these nodes to stay at their current level.
           </p>
@@ -125,14 +125,13 @@ const FocusReviewPage = async () => {
         <div className="mt-6 flex flex-col gap-3">
           <Link
             href={`/dashboard/review?mode=blindspot&queue=${queue.queue_id}`}
-            className="inline-flex w-full items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-            style={{ backgroundColor: '#1B3FC4' }}
+            className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
           >
             Start Remediation
           </Link>
           <Link
             href="/dashboard"
-            className="text-center text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150"
+            className="text-center text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
           >
             Remind me tomorrow
           </Link>

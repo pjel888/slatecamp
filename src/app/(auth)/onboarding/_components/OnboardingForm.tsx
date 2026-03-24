@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { Input } from '@/components/ui/input'
+import { SubmitButton } from '@/components/ui/button'
 import { StudyWindowSelector } from '@/components/settings/StudyWindowSelector'
 import type { Discipline } from '@/types/app'
 
@@ -83,20 +85,20 @@ export const OnboardingForm = ({
 
       {/* Discipline Selection */}
       <div>
-        <label className="block text-sm font-medium text-[#1A2332] mb-2">
+        <label className="block text-sm font-medium text-foreground mb-2">
           Choose your discipline
         </label>
         <div className="space-y-2">
           {disciplines.map((discipline: Discipline) => (
             <label
               key={discipline.discipline_id}
-              className="flex items-center justify-between rounded-md border border-[#D4DAE3] p-3 transition-colors duration-150 hover:border-[#1B3FC4] hover:bg-[#EEF2FC]/50 cursor-pointer"
+              className="flex items-center justify-between rounded-md border border-border p-3 transition-colors duration-150 hover:border-primary hover:bg-primary/5 cursor-pointer"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-[#EEF2FC] text-[#1B3FC4]">
+                <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary/10 text-primary">
                   <span className="text-[11px] font-bold">{discipline.acronym}</span>
                 </div>
-                <span className="text-sm font-medium text-[#1A2332]">{discipline.name}</span>
+                <span className="text-sm font-medium text-foreground">{discipline.name}</span>
               </div>
               <input
                 type="radio"
@@ -104,7 +106,7 @@ export const OnboardingForm = ({
                 value={discipline.discipline_id}
                 required
                 onChange={() => setSelectedDisciplineId(discipline.discipline_id)}
-                className="h-4 w-4 border-[#D4DAE3] text-[#1B3FC4]"
+                className="h-4 w-4 border-border text-primary"
               />
             </label>
           ))}
@@ -113,7 +115,7 @@ export const OnboardingForm = ({
 
       {/* Reviewer Type — 4-way selector */}
       <div>
-        <p className="text-sm font-medium text-[#1A2332] mb-2">
+        <p className="text-sm font-medium text-foreground mb-2">
           What brings you to SlateCamp?
         </p>
         <div className="space-y-2">
@@ -127,23 +129,23 @@ export const OnboardingForm = ({
                 onChange={() => setReviewerType(value)}
                 className="peer sr-only"
               />
-              <div className="rounded-md border border-[#D4DAE3] p-3 transition-colors duration-150 peer-checked:border-[#1B3FC4] peer-checked:bg-[#EEF2FC] hover:border-[#1B3FC4]/50 hover:bg-[#EEF2FC]/30">
+              <div className="rounded-md border border-border p-3 transition-colors duration-150 peer-checked:border-primary peer-checked:bg-primary/10 hover:border-primary/50 hover:bg-primary/5">
                 <div className="flex items-start gap-3">
                   <div
                     className={[
                       'mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-150',
                       reviewerType === value
-                        ? 'border-[#1B3FC4]'
-                        : 'border-[#D4DAE3]',
+                        ? 'border-primary'
+                        : 'border-border',
                     ].join(' ')}
                   >
                     {reviewerType === value && (
-                      <div className="h-2 w-2 rounded-full bg-[#1B3FC4]" />
+                      <div className="h-2 w-2 rounded-full bg-primary" />
                     )}
                   </div>
                   <div>
-                    <span className="text-sm font-medium text-[#1A2332]">{label}</span>
-                    <p className="mt-0.5 text-xs text-[#8896A7]">{subLabel}</p>
+                    <span className="text-sm font-medium text-foreground">{label}</span>
+                    <p className="mt-0.5 text-xs text-muted-foreground">{subLabel}</p>
                   </div>
                 </div>
               </div>
@@ -154,10 +156,10 @@ export const OnboardingForm = ({
 
       {/* Returning reviewer — context copy */}
       {reviewerType === 'returning_reviewer' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
-          <p className="text-[13px] text-[#4A5568] leading-relaxed">
+        <div className="rounded-md border border-border bg-muted px-4 py-3">
+          <p className="text-[13px] text-muted-foreground leading-relaxed">
             You know the ALE. You know what needs to change.{' '}
-            <span className="font-medium text-[#1A2332]">
+            <span className="font-medium text-foreground">
               SlateCamp gives you the data to change it.
             </span>
           </p>
@@ -166,8 +168,8 @@ export const OnboardingForm = ({
 
       {/* Undergrad — context copy */}
       {reviewerType === 'undergrad' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
-          <p className="text-[13px] text-[#4A5568] leading-relaxed">
+        <div className="rounded-md border border-border bg-muted px-4 py-3">
+          <p className="text-[13px] text-muted-foreground leading-relaxed">
             No pressure. Just the best building code reference in the Philippines.
           </p>
         </div>
@@ -175,8 +177,8 @@ export const OnboardingForm = ({
 
       {/* DAE — context copy */}
       {reviewerType === 'dae' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F5F5F5] px-4 py-3">
-          <p className="text-[13px] text-[#4A5568] leading-relaxed">
+        <div className="rounded-md border border-border bg-muted px-4 py-3">
+          <p className="text-[13px] text-muted-foreground leading-relaxed">
             Keep your knowledge current between renewals.
           </p>
         </div>
@@ -185,10 +187,10 @@ export const OnboardingForm = ({
       {/* Struggled subjects — returning_reviewer only */}
       {showStruggledSubjects && subjects.length > 0 && (
         <div>
-          <p className="text-sm font-medium text-[#1A2332] mb-1">
+          <p className="text-sm font-medium text-foreground mb-1">
             What subject felt hardest?
           </p>
-          <p className="text-xs text-[#8896A7] mb-2">
+          <p className="text-xs text-muted-foreground mb-2">
             Select all that apply — we&apos;ll prioritise these areas for you.
           </p>
           <div className="space-y-1.5">
@@ -202,14 +204,14 @@ export const OnboardingForm = ({
                   className={[
                     'w-full flex items-center gap-3 rounded-md border px-3 py-2.5 text-left transition-colors duration-150',
                     isChecked
-                      ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                      : 'border-[#D4DAE3] hover:border-[#1B3FC4]/50 hover:bg-[#EEF2FC]/30',
+                      ? 'border-primary bg-primary/10'
+                      : 'border-border hover:border-primary/50 hover:bg-primary/5',
                   ].join(' ')}
                 >
                   <div
                     className={[
                       'flex h-4 w-4 shrink-0 items-center justify-center rounded-sm border-2 transition-colors duration-150',
-                      isChecked ? 'border-[#1B3FC4] bg-[#1B3FC4]' : 'border-[#D4DAE3]',
+                      isChecked ? 'border-primary bg-primary' : 'border-border',
                     ].join(' ')}
                   >
                     {isChecked && (
@@ -231,7 +233,7 @@ export const OnboardingForm = ({
                       </svg>
                     )}
                   </div>
-                  <span className="text-sm text-[#1A2332]">{subject.name}</span>
+                  <span className="text-sm text-foreground">{subject.name}</span>
                 </button>
               )
             })}
@@ -242,15 +244,14 @@ export const OnboardingForm = ({
       {/* School / Institution — undergrad only */}
       {showSchoolField && (
         <div>
-          <label htmlFor="schoolOrInstitution" className="block text-sm font-medium text-[#1A2332] mb-1.5">
+          <label htmlFor="schoolOrInstitution" className="block text-sm font-medium text-foreground mb-1.5">
             School or institution
           </label>
-          <input
+          <Input
             type="text"
             id="schoolOrInstitution"
             name="schoolOrInstitution"
             placeholder="e.g. University of Santo Tomas"
-            className="w-full rounded-sm border border-[#D4DAE3] px-3 py-2 text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
           />
         </div>
       )}
@@ -258,16 +259,15 @@ export const OnboardingForm = ({
       {/* Exam Date — first_taker + returning_reviewer only */}
       {showExamDate && (
         <div>
-          <label htmlFor="examDate" className="block text-sm font-medium text-[#1A2332] mb-1.5">
+          <label htmlFor="examDate" className="block text-sm font-medium text-foreground mb-1.5">
             When is your target exam date?
           </label>
-          <input
+          <Input
             type="date"
             id="examDate"
             name="examDate"
-            className="w-full rounded-sm border border-[#D4DAE3] px-3 py-2 text-sm text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
           />
-          <p className="mt-1 text-xs text-[#8896A7]">
+          <p className="mt-1 text-xs text-muted-foreground">
             Helps us recommend the right study trail for your timeline.
           </p>
         </div>
@@ -275,24 +275,20 @@ export const OnboardingForm = ({
 
       {/* Study Window — all types */}
       {showStudyWindow && (
-        <div className="pt-2 border-t border-[#D4DAE3]">
-          <p className="text-sm font-medium text-[#1A2332] mb-1">
+        <div className="pt-2 border-t border-border">
+          <p className="text-sm font-medium text-foreground mb-1">
             When do you usually study?
           </p>
-          <p className="text-xs text-[#8896A7] mb-2">
+          <p className="text-xs text-muted-foreground mb-2">
             Optional — helps order trail activities for better retention.
           </p>
           <StudyWindowSelector compact />
         </div>
       )}
 
-      <button
-        type="submit"
-        className="flex w-full justify-center rounded-sm px-4 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
-        style={{ backgroundColor: '#1B3FC4' }}
-      >
+      <SubmitButton variant="primary" size="lg" fullWidth pendingLabel="Setting up your account...">
         Continue to Diagnostic &rarr;
-      </button>
+      </SubmitButton>
     </form>
   )
 }
