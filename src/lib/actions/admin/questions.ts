@@ -40,8 +40,8 @@ export async function createQuestion(data: CreateQuestionInput) {
   if (!data.text || typeof data.text !== 'string' || data.text.trim().length === 0) {
     throw new Error('Validation error: text is required and must be a non-empty string')
   }
-  if (!Array.isArray(data.options) || data.options.length !== 4) {
-    throw new Error('Validation error: options must be an array with exactly 4 items')
+  if (!Array.isArray(data.options) || data.options.length < 4 || data.options.length > 5) {
+    throw new Error('Validation error: options must be an array with 4 or 5 items')
   }
   if (!data.topic_id || typeof data.topic_id !== 'string' || data.topic_id.trim().length === 0) {
     throw new Error('Validation error: topic_id is required')

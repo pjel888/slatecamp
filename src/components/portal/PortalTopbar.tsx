@@ -34,7 +34,7 @@ const PortalTopbar = ({
     <span className="font-[family-name:var(--font-display)] font-extrabold text-sm text-white tracking-tight">
       SlateCamp
     </span>
-    <span className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium text-white/45 uppercase tracking-[0.1em] px-2 py-0.5 border border-white/[0.12] rounded-sm">
+    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-white/45 uppercase tracking-[0.1em] px-2 py-0.5 border border-white/[0.12] rounded-sm">
       {portalLabel}
     </span>
     <div className="w-px h-5 bg-white/10" />
