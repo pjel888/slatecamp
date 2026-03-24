@@ -1,0 +1,510 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1774319514033,
+  "projectRoot": "D:\\SlateCamp\\slate-camp",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "next",
+        "version": "16.1.6",
+        "category": "fullstack"
+      },
+      {
+        "name": "react",
+        "version": "19.2.4",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.4",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "node scripts/dev.js",
+      "dev:turbo": "next dev --turbopack",
+      "dev:webpack": "next dev --webpack",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint .",
+      "lint:fix": "eslint . --fix",
+      "type-check": "tsc --noEmit",
+      "db:seed": "bun scripts/seed.ts"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1774319514005,
+      "keyFiles": []
+    },
+    "prompts": {
+      "path": "prompts",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1774319514006,
+      "keyFiles": []
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 8,
+      "lastAccessed": 1774319514014,
+      "keyFiles": [
+        "AGENTS.md",
+        "file.svg",
+        "globe.svg",
+        "next.svg",
+        "noise.png"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 5,
+      "lastAccessed": 1774319514014,
+      "keyFiles": [
+        "AGENTS.md",
+        "db-inspect.ts",
+        "dev.js",
+        "openapi-spec.json",
+        "test-db.ts"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 1,
+      "lastAccessed": 1774319514015,
+      "keyFiles": [
+        "AGENTS.md"
+      ]
+    },
+    "supabase": {
+      "path": "supabase",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1774319514015,
+      "keyFiles": [
+        "00_DROP_ALL_TABLES.sql",
+        "01_RESET_AND_SEED.sql",
+        "02_RUN_ALL_SEEDS.sql",
+        "03_QUIZ SEED.sql",
+        "AGENTS.md"
+      ]
+    },
+    "src\\app": {
+      "path": "src\\app",
+      "purpose": "Application code",
+      "fileCount": 7,
+      "lastAccessed": 1774319514016,
+      "keyFiles": [
+        "AGENTS.md",
+        "error.tsx",
+        "favicon.ico"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 1,
+      "lastAccessed": 1774319514016,
+      "keyFiles": [
+        "AGENTS.md"
+      ]
+    },
+    "src\\config": {
+      "path": "src\\config",
+      "purpose": "Configuration files",
+      "fileCount": 2,
+      "lastAccessed": 1774319514016,
+      "keyFiles": [
+        "AGENTS.md",
+        "feature-flags.ts"
+      ]
+    },
+    "src\\data": {
+      "path": "src\\data",
+      "purpose": "Data files",
+      "fileCount": 2,
+      "lastAccessed": 1774319514017,
+      "keyFiles": [
+        "AGENTS.md",
+        "mock-questions.json"
+      ]
+    },
+    "src\\lib": {
+      "path": "src\\lib",
+      "purpose": "Library code",
+      "fileCount": 10,
+      "lastAccessed": 1774319514017,
+      "keyFiles": [
+        "AGENTS.md",
+        "analytics-server.ts",
+        "analytics.ts"
+      ]
+    },
+    "src\\types": {
+      "path": "src\\types",
+      "purpose": "Type definitions",
+      "fileCount": 9,
+      "lastAccessed": 1774319514017,
+      "keyFiles": [
+        "3d-lab.ts",
+        "AGENTS.md",
+        "app.ts"
+      ]
+    },
+    "supabase\\migrations": {
+      "path": "supabase\\migrations",
+      "purpose": "Database migrations",
+      "fileCount": 31,
+      "lastAccessed": 1774319514018,
+      "keyFiles": [
+        "004_add_user_roles.sql",
+        "005_add_wiki_content_status.sql",
+        "006_add_3d_asset_status.sql"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src",
+      "accessCount": 100,
+      "lastAccessed": 1774321741297,
+      "type": "directory"
+    },
+    {
+      "path": "",
+      "accessCount": 9,
+      "lastAccessed": 1774321588194,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiLayoutContent.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1774321813981,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\moduleRegistry.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774320233912,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiMistakeCard.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1774320326419,
+      "type": "file"
+    },
+    {
+      "path": "src\\types\\wiki.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774321711484,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\admin\\get-admin-profile.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774320199327,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\utils.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774320266067,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\transform-mistake-string.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774320309622,
+      "type": "file"
+    },
+    {
+      "path": "src\\stores\\useLabStore.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774321558542,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\layout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774321743180,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiSidebar.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1774321744123,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\actions\\wiki-actions.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774321751075,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\shared\\Sidebar.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320193897,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\sidebar\\SidebarOverlay.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320194922,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\api\\admin\\flags\\route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320195708,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\actions\\feature-flags.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320197406,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\admin\\feature-flags.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320198524,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\dev\\dev-toolbar.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320198692,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320200422,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\actions",
+      "accessCount": 1,
+      "lastAccessed": 1774320200671,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\utils\\helpers.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320207170,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\utils\\text.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320207491,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\utils\\wiki.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320208003,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\demo\\data.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774320208400,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config",
+      "accessCount": 1,
+      "lastAccessed": 1774320213699,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\context\\breadcrumb-context.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320234354,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiMistakeList.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774320266539,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib",
+      "accessCount": 1,
+      "lastAccessed": 1774321494819,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app",
+      "accessCount": 1,
+      "lastAccessed": 1774321495728,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\ModuleViewer.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321524200,
+      "type": "directory"
+    },
+    {
+      "path": "src\\types\\3d-lab.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774321525169,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab",
+      "accessCount": 1,
+      "lastAccessed": 1774321559164,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\wiki\\widgets\\registry.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774321566989,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\3d-lab\\modules",
+      "accessCount": 1,
+      "lastAccessed": 1774321568478,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\GenericControlPanel.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321574718,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\wiki\\index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774321593319,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiSidebarShell.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321694055,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321695027,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\actions\\taxonomy.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774321703134,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiNavigationContext.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321703311,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiContentShell.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321703456,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiDisciplineContext.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321707134,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\[slug]\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321708034,
+      "type": "file"
+    },
+    {
+      "path": "src\\types\\app.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774321711614,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\wiki\\loading.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321750146,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiSidebarLoader.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321783073,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\wiki\\WikiSidebarSkeleton.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1774321796331,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

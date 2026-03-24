@@ -6,7 +6,7 @@ const STOP_WORDS = new Set([
 ])
 
 /** Truncate at word boundary, trim trailing stop words. */
-export function shorten(text: string, maxLen = 55): string {
+export function shorten(text: string, maxLen = 80): string {
   const trimmed = text.trim()
   if (trimmed.length <= maxLen) return trimmed
 
