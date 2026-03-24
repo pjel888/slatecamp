@@ -1,56 +1,44 @@
 'use client'
 
-import Link from 'next/link'
-import { SidebarSimple } from '@phosphor-icons/react'
-import { SCIcon } from '@/components/graphics/icons/Icon'
-import { ROUTES } from '@/lib/constants/routes'
-import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
-import { useSidebar } from './SidebarProvider'
+import { BookOpen } from '@phosphor-icons/react'
+import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------
-// SidebarHeader (overlay)
-// ---------------------------------------------------------------------------
-// Two sections matching rail vertical layout. Only divider: under the logo.
+// SidebarHeader — HTML v4 anatomy
+// Height: 40px. Logo icon: 40x40px. Wordmark: opacity-only on expand.
 // ---------------------------------------------------------------------------
 
 interface SidebarHeaderProps {
-  onBeforeNavigate: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void
+  expanded: boolean
 }
 
-export const SidebarHeader = ({ onBeforeNavigate }: SidebarHeaderProps) => {
-  const { setCollapsed, toggleRef } = useSidebar()
+export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
+  <div
+    className={cn(
+      'flex h-16 shrink-0 items-center px-[6px]',
+      'border-b border-gray-200 dark:border-gray-800',
+    )}
+  >
+    {/* Logo icon container: 40x64px — matches dashboard header height for visual continuity */}
+    <div className="flex h-16 w-10 shrink-0 items-center justify-center">
+      <BookOpen
+        size={17}
+        weight="fill"
+        className="text-[#1B3FC4] dark:text-[#4F6AE8]"
+      />
+    </div>
 
-  const handleCollapse = () => {
-    setCollapsed(true)
-    requestAnimationFrame(() => {
-      toggleRef.current?.focus()
-    })
-  }
-
-  return (
-    <>
-      {/* 1. Logo area — only divider in the sidebar */}
-      <div className="flex h-16 items-center shrink-0 px-3">
-        <Link
-          href={ROUTES.DASHBOARD}
-          onClick={(e) => onBeforeNavigate(e, ROUTES.DASHBOARD)}
-          className="outline-none"
-        >
-          <SlateCampLogo size="sm" />
-        </Link>
-      </div>
-      <div className="mx-3 h-px bg-border" />
-
-      {/* 2. Toggle area — no divider */}
-      <div className="flex items-center justify-end shrink-0 py-1 px-3">
-        <button
-          onClick={handleCollapse}
-          className="flex h-7 w-7 items-center justify-center rounded-sm text-[#8896A7] transition-colors duration-150 hover:bg-[#EEF2FC]/50 hover:text-primary outline-none"
-          aria-label="Collapse sidebar"
-        >
-          <SCIcon icon={SidebarSimple} size="sm" />
-        </button>
-      </div>
-    </>
-  )
-}
+    {/* Wordmark — opacity-only visibility */}
+    <div
+      className={cn(
+        'whitespace-nowrap overflow-hidden',
+        'text-[13px] font-extrabold tracking-[-0.3px] leading-none font-sans',
+        'transition-opacity duration-[180ms] ease-out',
+        expanded ? 'opacity-100' : 'opacity-0 w-0',
+      )}
+    >
+      <span className="text-gray-900 dark:text-gray-200">Slate</span>
+      <span className="text-[#1B3FC4] dark:text-[#4F6AE8]">Camp</span>
+    </div>
+  </div>
+)

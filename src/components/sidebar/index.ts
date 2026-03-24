@@ -1,27 +1,35 @@
-// Sidebar module barrel export
+// Sidebar module barrel export — v2 (overhaul)
 export { SidebarProvider, useSidebar } from './SidebarProvider'
-export { SidebarShell } from './SidebarShell'
+export { Sidebar } from './Sidebar'
 export { SidebarContent } from './SidebarContent'
 export { SidebarNavItem } from './SidebarNavItem'
-export { SidebarNavGroup } from './SidebarNavGroup'
-export { SidebarRail } from './SidebarRail'
-export { SidebarOverlay } from './SidebarOverlay'
-export { SidebarPanel } from './SidebarPanel'
 export { SidebarHeader } from './SidebarHeader'
-export { SidebarUserProfile } from './SidebarUserProfile'
-export { SidebarUpgradeCTA } from './SidebarUpgradeCTA'
 export { SidebarFooter } from './SidebarFooter'
+export { MobileTopBar } from './MobileTopBar'
+export { MobileDrawer } from './MobileDrawer'
+export { MobileSidebarShell } from './MobileSidebarShell'
 export {
   Z_INDEX,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
-  ICON_BOX,
+  ICON_CONTAINER_CLASS,
   ICON_SIZE,
   STORAGE_KEY,
+  TRANSITION,
+  ICON_TIER_OPACITY,
 } from './types'
 export type {
   SidebarContextValue,
+  SidebarNavItemConfig,
+  SidebarNavGroupConfig,
   SidebarNavItemProps,
-  SidebarUserProfileProps,
-  SidebarUpgradeCTAProps,
+  SidebarProps,
+  IconTier,
 } from './types'
+export {
+  SIDEBAR_NAV_ITEMS,
+  SIDEBAR_GROUPS,
+  DASHBOARD_ITEM,
+  SETTINGS_ITEM,
+  SHORTCUT_MAP,
+} from './sidebar-constants'

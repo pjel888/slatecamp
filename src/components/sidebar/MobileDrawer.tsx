@@ -1,0 +1,335 @@
+'use client'
+
+import { useEffect, useRef, useCallback } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { X } from '@phosphor-icons/react'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { cn } from '@/lib/utils'
+import { useActiveSession } from '@/lib/context/active-session-context'
+import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
+import { Z_INDEX, ICON_TIER_OPACITY } from './types'
+import type { SidebarNavItemConfig } from './types'
+
+// ---------------------------------------------------------------------------
+// MobileDrawer — full-screen slide-in nav drawer for mobile
+// Spec: HTML v4. z-index 50. Slides from left. CSS transitions only.
+// ---------------------------------------------------------------------------
+
+interface MobileDrawerProps {
+  isOpen: boolean
+  onClose: () => void
+  userDisplay: { name: string; avatarUrl: string | null }
+  tier: string
+}
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+const getInitials = (name: string): string => {
+  if (!name?.trim()) return 'U'
+  const parts = name.trim().split(/\s+/)
+  if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+  return name.slice(0, 2).toUpperCase()
+}
+
+// ---------------------------------------------------------------------------
+// MobileNavItem — 42px touch-friendly row
+// ---------------------------------------------------------------------------
+
+interface MobileNavItemProps {
+  item: SidebarNavItemConfig
+  isActive: boolean
+  onNavigate: (e: React.MouseEvent<HTMLAnchorElement>) => void
+}
+
+const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
+  const { icon: Icon, label, href, tier } = item
+  const tierOpacity = ICON_TIER_OPACITY[tier]
+
+  return (
+    <Link
+      href={href}
+      onClick={onNavigate}
+      aria-current={isActive ? 'page' : undefined}
+      className={cn(
+        // Base layout — 42px height for touch targets
+        'relative flex h-[42px] w-full items-center gap-[11px] rounded-[7px] px-2.5',
+        'outline-none transition-colors duration-[120ms] ease-out',
+        'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]',
+        // Default
+        'text-gray-500 dark:text-gray-400',
+        // Hover
+        'hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-200',
+        // Active
+        isActive && [
+          'bg-gray-100/50 dark:bg-gray-800/50',
+          'text-gray-900 dark:text-gray-200',
+          // Left-edge active indicator — bleeds into px-2.5 (10px) padding zone
+          'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
+          'before:w-[2.5px] before:h-[18px]',
+          'before:bg-[#1B3FC4] dark:before:bg-[#4F6AE8]',
+          'before:rounded-r-sm',
+          "before:content-['']",
+        ],
+      )}
+    >
+      {/* Icon — 18x18px (slightly larger than desktop 16px for touch) */}
+      <Icon
+        size={18}
+        weight="regular"
+        className="shrink-0 transition-opacity duration-[120ms]"
+        style={{ opacity: isActive || tier === 'default' ? 1.0 : tierOpacity }}
+      />
+
+      {/* Label */}
+      <span
+        className={cn(
+          'text-[14px] leading-none',
+          isActive ? 'font-medium' : 'font-normal',
+        )}
+      >
+        {label}
+      </span>
+    </Link>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// MobileDrawer
+// ---------------------------------------------------------------------------
+
+export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawerProps) => {
+  const pathname = usePathname()
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const { activeSession } = useActiveSession()
+
+  // Close on route change
+  useEffect(() => {
+    onClose()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname])
+
+  // Escape key closes drawer
+  useEffect(() => {
+    if (!isOpen) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [isOpen, onClose])
+
+  // Body scroll lock
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
+  // Auto-focus close button when drawer opens
+  useEffect(() => {
+    if (!isOpen) return
+    const id = setTimeout(() => closeButtonRef.current?.focus(), 50)
+    return () => clearTimeout(id)
+  }, [isOpen])
+
+  const isActive = useCallback(
+    (href: string, exact = false) =>
+      exact ? pathname === href : pathname === href || pathname.startsWith(href + '/'),
+    [pathname],
+  )
+
+  // Navigation handler: active session guard + close drawer
+  const handleNavigate = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (activeSession) {
+        const confirmed = window.confirm(
+          'You have an active session. Are you sure you want to leave?',
+        )
+        if (!confirmed) {
+          e.preventDefault()
+          return
+        }
+      }
+      onClose()
+    },
+    [activeSession, onClose],
+  )
+
+  // Reduced-motion detection (client-side only, safe for SSR)
+  const prefersReducedMotion =
+    typeof window !== 'undefined'
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false
+
+  const drawerTransition = prefersReducedMotion
+    ? undefined
+    : 'transform 200ms cubic-bezier(0.16, 1, 0.3, 1)'
+
+  const backdropTransition = prefersReducedMotion
+    ? undefined
+    : 'opacity 200ms ease-out'
+
+  const initials = getInitials(userDisplay.name)
+
+  return (
+    <>
+      {/* Backdrop — z-index 49, behind drawer */}
+      <div
+        aria-hidden="true"
+        onClick={onClose}
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: Z_INDEX.mobileDrawer - 1,
+          background: 'rgba(0,0,0,0.20)',
+          opacity: isOpen ? 1 : 0,
+          pointerEvents: isOpen ? 'auto' : 'none',
+          transition: backdropTransition,
+        }}
+        className="lg:hidden"
+      />
+
+      {/* Drawer — slides in from left */}
+      <nav
+        role="dialog"
+        aria-modal={isOpen}
+        aria-label="Mobile navigation"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          width: '100vw',
+          height: '100dvh',
+          zIndex: Z_INDEX.mobileDrawer,
+          transform: isOpen ? 'translateX(0)' : 'translateX(-100%)',
+          transition: drawerTransition,
+          display: 'flex',
+          flexDirection: 'column',
+          borderRight: '1px solid var(--border)',
+        }}
+        className="bg-white dark:bg-gray-950 lg:hidden"
+      >
+        {/* Drawer header */}
+        <div
+          className="flex shrink-0 items-center justify-between border-b border-border"
+          style={{ height: 44, padding: '0 10px' }}
+        >
+          {/* Wordmark */}
+          <div
+            className="font-extrabold text-[13px] select-none"
+            style={{ letterSpacing: '-0.3px', lineHeight: 1 }}
+          >
+            <span className="text-[#1A2332] dark:text-white">Slate</span>
+            <span className="text-[#1B3FC4]">Camp</span>
+          </div>
+
+          {/* Close button — min 44×44 touch target */}
+          <button
+            ref={closeButtonRef}
+            onClick={onClose}
+            aria-label="Close navigation"
+            className="flex items-center justify-center rounded-md text-[#4A5568] dark:text-gray-400 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]"
+            style={{ width: 44, height: 44 }}
+          >
+            <X size={20} weight="regular" />
+          </button>
+        </div>
+
+        {/* Scrollable nav area */}
+        <div className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {/* Dashboard — standalone */}
+          <div className="px-[10px]">
+            <MobileNavItem
+              item={DASHBOARD_ITEM}
+              isActive={isActive(DASHBOARD_ITEM.href, true)}
+              onNavigate={handleNavigate}
+            />
+          </div>
+
+          {/* Separator */}
+          <div className="mx-[10px] my-1.5 border-t border-border" />
+
+          {/* Nav groups */}
+          {SIDEBAR_GROUPS.map((group, groupIdx) => (
+            <div key={group.key}>
+              {/* Group label — always visible in drawer (expanded state) */}
+              <div
+                className="flex h-[22px] items-end text-[10px] uppercase tracking-[0.08em] text-[#8896A7]"
+                style={{ paddingLeft: 14, userSelect: 'none' }}
+              >
+                {group.label}
+              </div>
+
+              {/* Group items */}
+              <div className="px-[10px]">
+                {group.items.map((item) => (
+                  <MobileNavItem
+                    key={item.id}
+                    item={item}
+                    isActive={isActive(item.href)}
+                    onNavigate={handleNavigate}
+                  />
+                ))}
+              </div>
+
+              {/* Separator between groups (not after last) */}
+              {groupIdx < SIDEBAR_GROUPS.length - 1 && (
+                <div className="mx-[10px] my-1.5 border-t border-border" />
+              )}
+            </div>
+          ))}
+
+          {/* Flex spacer — pushes settings to bottom */}
+          <div className="flex-1" />
+
+          {/* Settings — bottom-pinned */}
+          <div className="mx-[10px] mb-1 border-t border-border" />
+          <div className="px-[10px]">
+            <MobileNavItem
+              item={SETTINGS_ITEM}
+              isActive={isActive(SETTINGS_ITEM.href)}
+              onNavigate={handleNavigate}
+            />
+          </div>
+        </div>
+
+        {/* Drawer footer — user profile */}
+        <div className="shrink-0 border-t border-border px-[10px] py-3">
+          <div className="flex items-center gap-2.5">
+            {/* Avatar — 28×28px */}
+            <Avatar className="h-7 w-7 shrink-0 border border-border shadow-sm">
+              {userDisplay.avatarUrl ? (
+                <AvatarImage src={userDisplay.avatarUrl} alt={userDisplay.name} />
+              ) : null}
+              <AvatarFallback className="bg-[#EEF2FC] text-[11px] font-medium text-[#1A2332]">
+                {initials}
+              </AvatarFallback>
+            </Avatar>
+
+            {/* Name + tier badge */}
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-1.5">
+                <p className="truncate text-[13px] font-medium text-[#1A2332] dark:text-gray-100">
+                  {userDisplay.name}
+                </p>
+                {tier && tier !== 'free' && (
+                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[10px] font-medium uppercase text-[#1B3FC4]">
+                    {tier}
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
+  )
+}

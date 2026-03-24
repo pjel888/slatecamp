@@ -147,7 +147,7 @@ export default async function DashboardLayout({ children }) {
 
   return (
     <div className="flex h-screen">
-      <Sidebar navigation={GROUPED_NAVIGATION} />
+      <Sidebar userDisplay={...} tier={...} />
       <main className="flex-1 overflow-auto">
         {children}
       </main>
@@ -209,7 +209,7 @@ export function MyComponent() {
 ```
 
 **Route Configuration:**
-- Single source of truth: `src/lib/routes.ts` — defines `DASHBOARD_ROUTES`, `SIDEBAR_NAVIGATION`, `GROUPED_NAVIGATION`, `getPageTitle()`
+- Single source of truth: `src/lib/sidebar-constants.ts` — defines `SIDEBAR_NAV_ITEMS`, `DASHBOARD_ROUTES`, `getPageTitle()`
 - Nav groups: `learn` (Wiki, Notes, 3D Lab), `practice` (CampTrails, Review), `data` (Analytics)
 - Sidebar auto-generates from route metadata — no hardcoded nav lists elsewhere
 - Dynamic page titles via `getPageTitle()` based on pathname prefixes

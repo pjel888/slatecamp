@@ -8,9 +8,10 @@ import {
   useRef,
   useCallback,
 } from 'react'
-import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import type { SidebarContextValue } from './types'
 import { STORAGE_KEY } from './types'
+import { SHORTCUT_MAP } from './sidebar-constants'
 
 // ---------------------------------------------------------------------------
 // Context
@@ -39,88 +40,152 @@ interface SidebarProviderProps {
 }
 
 export const SidebarProvider = ({ children }: SidebarProviderProps) => {
-  // collapsed=true means overlay is closed (rail only visible)
-  const [collapsed, setCollapsedState] = useState(true)
-  const contentRef = useRef<HTMLDivElement>(null)
-  const toggleRef = useRef<HTMLButtonElement>(null)
-  const pathname = usePathname()
+  const [expanded, setExpandedState] = useState(false)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
-  // ---- Persistence helpers ----
-  const persistCollapsed = useCallback((value: boolean) => {
+  const sidebarRef = useRef<HTMLElement | null>(null)
+  const toggleRef = useRef<HTMLButtonElement | null>(null)
+  const contentRef = useRef<HTMLDivElement | null>(null)
+
+  const router = useRouter()
+
+  // ---- Stable setters ----
+
+  const setExpanded = useCallback((v: boolean) => {
+    setExpandedState(v)
     try {
-      window.localStorage.setItem(STORAGE_KEY, String(value))
+      window.localStorage.setItem(STORAGE_KEY, String(v))
     } catch {
       // localStorage unavailable (SSR, private browsing, quota)
     }
   }, [])
 
-  const setCollapsed = useCallback(
-    (v: boolean) => {
-      setCollapsedState(v)
-      persistCollapsed(v)
-    },
-    [persistCollapsed],
-  )
-
   const toggle = useCallback(() => {
-    setCollapsedState((prev) => {
+    setExpandedState((prev) => {
       const next = !prev
-      persistCollapsed(next)
+      try {
+        window.localStorage.setItem(STORAGE_KEY, String(next))
+      } catch {
+        // localStorage unavailable
+      }
       return next
     })
-  }, [persistCollapsed])
+  }, [])
 
-  // ---- Hydrate from localStorage on mount ----
+  const expand = useCallback(() => {
+    setExpanded(true)
+  }, [setExpanded])
+
+  const collapse = useCallback(() => {
+    setExpanded(false)
+  }, [setExpanded])
+
+  // ---- Hydrate from localStorage on mount (SSR-safe) ----
+
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY)
-      if (stored === 'false') {
-        setCollapsedState(false)
+      if (stored === 'true') {
+        setExpandedState(true)
       }
     } catch {
       // localStorage unavailable
     }
   }, [])
 
-  // ---- Auto-collapse overlay on route change ----
-  useEffect(() => {
-    setCollapsedState(true)
-  }, [pathname])
+  // ---- Reduced motion detection ----
 
-  // ---- Escape key closes overlay ----
   useEffect(() => {
-    if (collapsed) return
+    if (typeof window === 'undefined') return
 
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setCollapsedState(true)
-        persistCollapsed(true)
-        requestAnimationFrame(() => {
-          toggleRef.current?.focus()
-        })
-      }
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+    setPrefersReducedMotion(mq.matches)
+
+    const onChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches)
     }
 
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [collapsed, persistCollapsed])
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
 
   // ---- Inert management on main content when overlay is open ----
+
   useEffect(() => {
     const el = contentRef.current
     if (!el) return
 
-    if (!collapsed) {
+    if (expanded) {
       el.setAttribute('inert', '')
     } else {
       el.removeAttribute('inert')
     }
-  }, [collapsed])
+  }, [expanded])
+
+  // ---- Click-outside to collapse ----
+
+  useEffect(() => {
+    if (!expanded) return
+
+    const onMouseDown = (e: MouseEvent) => {
+      const sidebar = sidebarRef.current
+      if (!sidebar) return
+      if (sidebar.contains(e.target as Node)) return
+      setExpanded(false)
+    }
+
+    document.addEventListener('mousedown', onMouseDown)
+    return () => document.removeEventListener('mousedown', onMouseDown)
+  }, [expanded, setExpanded])
+
+  // ---- Keyboard shortcuts ----
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const isModifier = e.metaKey || e.ctrlKey
+
+      // Cmd/Ctrl+B: toggle sidebar
+      if (isModifier && e.key === 'b') {
+        e.preventDefault()
+        toggle()
+        return
+      }
+
+      // Escape: collapse if expanded, return focus to toggle button
+      if (e.key === 'Escape' && expanded) {
+        setExpanded(false)
+        requestAnimationFrame(() => {
+          toggleRef.current?.focus()
+        })
+        return
+      }
+
+      // Cmd/Ctrl+1–4: navigate to routes
+      if (isModifier && e.key in SHORTCUT_MAP) {
+        e.preventDefault()
+        router.push(SHORTCUT_MAP[e.key])
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [expanded, toggle, setExpanded, router])
 
   // ---- Render ----
+
   return (
     <SidebarContext.Provider
-      value={{ collapsed, setCollapsed, toggle, contentRef, toggleRef }}
+      value={{
+        expanded,
+        setExpanded,
+        toggle,
+        expand,
+        collapse,
+        prefersReducedMotion,
+        sidebarRef,
+        toggleRef,
+        contentRef,
+      }}
     >
       {children}
     </SidebarContext.Provider>

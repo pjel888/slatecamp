@@ -4,7 +4,10 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
-import { SidebarProvider, SidebarShell, SidebarContent } from '@/components/sidebar'
+import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
+import { Sidebar } from '@/components/sidebar/Sidebar'
+import { SidebarContent } from '@/components/sidebar/SidebarContent'
+import { MobileSidebarShell } from '@/components/sidebar/MobileSidebarShell'
 import { Navbar } from '@/components/shared/Navbar'
 import { DashboardHeader } from '@/components/shared/DashboardHeader'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
@@ -86,9 +89,16 @@ async function DashboardLayoutContent({
           <NoteContextProvider>
           <SidebarProvider>
             <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg'>
-              <SidebarShell
+              <Sidebar
                 isAdmin={isAdmin}
                 isDevMode={showDevTools}
+                userDisplay={{
+                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                }}
+                tier={effectiveTier}
+              />
+              <MobileSidebarShell
                 userDisplay={{
                   name: user.user_metadata?.full_name ?? user.email ?? 'User',
                   avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
