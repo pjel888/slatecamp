@@ -4,6 +4,9 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { DataTable, type Column } from '@/components/shared/data-table'
 import { Badge } from '@/components/ui/badge'
+import { DifficultyBar } from '@/components/ui/difficulty-bar'
+import { QuestionQualityBadges } from '@/components/admin/QuestionQualityBadges'
+import { QuestionQuickPreview } from '@/components/admin/QuestionQuickPreview'
 
 interface Question extends Record<string, unknown> {
   question_id: string
@@ -17,32 +20,6 @@ interface Question extends Record<string, unknown> {
   options: unknown[]
 }
 
-const difficultyBar = (value: number | null) => {
-  const d = value ?? 0.5
-  const pct = Math.round(d * 100)
-
-  // Color based on difficulty: low = emerald, mid = amber, high = red
-  const barColor =
-    d < 0.35
-      ? 'bg-emerald-500'
-      : d < 0.65
-        ? 'bg-amber-500'
-        : 'bg-red-500'
-
-  return (
-    <div className="flex items-center gap-2">
-      <div className="h-1.5 w-16 rounded-full bg-muted overflow-hidden">
-        <div
-          className={`h-full rounded-full transition-all duration-150 ${barColor}`}
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-      <span className="text-[11px] text-muted-foreground tabular-nums font-[family-name:var(--font-dm-mono)]">
-        {d.toFixed(2)}
-      </span>
-    </div>
-  )
-}
 
 type Row = Record<string, unknown>
 
@@ -77,7 +54,20 @@ const columns: Column<Row>[] = [
     key: 'difficulty',
     header: 'Difficulty',
     sortable: true,
-    render: (row) => difficultyBar(asQ(row).difficulty),
+    render: (row) => <DifficultyBar value={asQ(row).difficulty} size="sm" />,
+  },
+  {
+    key: 'quality',
+    header: 'Quality',
+    render: (row) => {
+      const q = asQ(row)
+      return (
+        <QuestionQualityBadges
+          hasRationale={Boolean(q.rationale)}
+          hasCitation={Boolean(q.code_citation)}
+        />
+      )
+    },
   },
   {
     key: 'code_citation',
@@ -105,16 +95,28 @@ const columns: Column<Row>[] = [
     type: 'action',
     render: (row) => {
       const q = asQ(row)
-      return q.topic_id ? (
-        <Link
-          href={`/admin/content?topic=${q.topic_id}`}
-          className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
-          onClick={(e) => e.stopPropagation()}
-          title="Open content editor to view this question in article context"
-        >
-          View in context &rarr;
-        </Link>
-      ) : null
+      const opts = q.options as string[] | { text: string; is_correct?: boolean }[]
+      return (
+        <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+          <QuestionQuickPreview
+            stem={q.text}
+            options={opts && opts.length > 0 ? opts : ['', '', '', '']}
+            correctAnswer={0}
+            rationale={q.rationale}
+            codeCitation={q.code_citation}
+          />
+          {q.topic_id && (
+            <Link
+              href={`/admin/content?topic=${q.topic_id}`}
+              className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+              onClick={(e) => e.stopPropagation()}
+              title="Open content editor to view this question in article context"
+            >
+              View in context &rarr;
+            </Link>
+          )}
+        </div>
+      )
     },
   },
 ]

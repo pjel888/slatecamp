@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { isAdmin } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
-
-export const metadata: Metadata = { title: 'Activity Feed — SlateCamp Admin' }
 import { redirect } from 'next/navigation'
 import { Card } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { EventBadge } from '@/components/ui/event-badge'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EmptyState } from '@/components/shared/empty-state'
+
+export const metadata: Metadata = { title: 'Activity Feed — SlateCamp Admin' }
 
 /* ------------------------------------------------------------------ */
 /*  Action label mapping                                               */
@@ -23,14 +23,6 @@ const actionLabel = (eventType: string): string => {
     PUBLISH: 'published',
   }
   return map[eventType?.toUpperCase()] ?? eventType.toLowerCase()
-}
-
-const eventBadgeVariant = (eventType: string) => {
-  const upper = eventType?.toUpperCase()
-  if (upper === 'INSERT' || upper === 'CREATE') return 'success' as const
-  if (upper === 'UPDATE') return 'info' as const
-  if (upper === 'DELETE') return 'danger' as const
-  return 'default' as const
 }
 
 /* ------------------------------------------------------------------ */
@@ -83,7 +75,7 @@ const AdminActivityPage = async () => {
   const supabase = await createClient()
   const { data: logs } = await supabase
     .from('audit_logs')
-    .select('*')
+    .select('id, actor_id, event_type, table_name, record_id, metadata, content_snapshot, created_at')
     .order('created_at', { ascending: false })
     .limit(50)
 
@@ -148,13 +140,9 @@ const AdminActivityPage = async () => {
                 </div>
 
                 {/* Badge */}
-                <Badge
-                  variant={eventBadgeVariant(log.event_type)}
-                  size="xs"
-                  className="shrink-0 mt-0.5"
-                >
-                  {log.event_type}
-                </Badge>
+                <span className="shrink-0 mt-0.5">
+                  <EventBadge eventType={log.event_type} />
+                </span>
               </div>
             ))}
           </div>

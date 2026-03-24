@@ -10,6 +10,7 @@ interface PortalTopbarProps {
   topbarBg: string
   rightContent?: React.ReactNode
   searchComponent?: React.ReactNode
+  mobileNav?: React.ReactNode
   backHref?: string
   backLabel?: string
   className?: string
@@ -20,6 +21,7 @@ const PortalTopbar = ({
   topbarBg,
   rightContent,
   searchComponent,
+  mobileNav,
   backHref = ROUTES.DASHBOARD,
   backLabel = 'Dashboard',
   className,
@@ -31,6 +33,7 @@ const PortalTopbar = ({
     )}
     style={{ background: topbarBg }}
   >
+    {mobileNav}
     <span className="font-[family-name:var(--font-display)] font-extrabold text-sm text-white tracking-tight">
       SlateCamp
     </span>

@@ -4,7 +4,7 @@ import { useState, useCallback } from 'react'
 import { UploadSimple, File, XCircle, CheckCircle, CircleNotch, Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import { createClient } from '@/lib/supabase/client'
+import { uploadAssetFile, createAsset } from '@/lib/actions/admin/assets'
 
 interface AssetMetadata {
   system: string
@@ -17,7 +17,7 @@ const systemOptions = ['structural', 'mep', 'architectural', 'civil']
 const layerOptions = ['foundation', 'frame', 'envelope', 'core', 'roof']
 const disciplineOptions = ['ALE', 'PNLE', 'BAR']
 
-export function AssetUploader() {
+export const AssetUploader = () => {
   const [file, setFile] = useState<File | null>(null)
   const [metadata, setMetadata] = useState<AssetMetadata>({
     system: '',
@@ -27,7 +27,6 @@ export function AssetUploader() {
   })
   const [name, setName] = useState('')
   const [isUploading, setIsUploading] = useState(false)
-  const [uploadProgress, setUploadProgress] = useState(0)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
 
@@ -62,35 +61,20 @@ export function AssetUploader() {
     setError(null)
 
     try {
-      const supabase = createClient()
-      
-      // Upload to storage
-      const fileExt = file.name.split('.').pop()
-      const filePath = `assets/${Date.now()}-${name}.${fileExt}`
-      
-      const { error: uploadError } = await supabase.storage
-        .from('3d-models')
-        .upload(filePath, file)
+      const formData = new FormData()
+      formData.append('file', file)
 
-      if (uploadError) throw uploadError
+      const { url, error: uploadError } = await uploadAssetFile(formData)
+      if (uploadError || !url) throw new Error(uploadError ?? 'Upload failed')
 
-      // Get public URL
-      const { data: { publicUrl } } = supabase.storage
-        .from('3d-models')
-        .getPublicUrl(filePath)
+      const { error: dbError } = await createAsset({
+        name,
+        slug: name.toLowerCase().replace(/\s+/g, '-'),
+        url,
+        metadata,
+      })
 
-      // Save to database
-      const { error: dbError } = await supabase
-        .from('models_3d')
-        .insert({
-          name,
-          slug: name.toLowerCase().replace(/\s+/g, '-'),
-          url: publicUrl,
-          metadata,
-          status: 'draft',
-        })
-
-      if (dbError) throw dbError
+      if (dbError) throw new Error(dbError.message)
 
       setSuccess(true)
       setFile(null)
@@ -100,7 +84,6 @@ export function AssetUploader() {
       setError(err instanceof Error ? err.message : 'Upload failed')
     } finally {
       setIsUploading(false)
-      setUploadProgress(0)
     }
   }
 
@@ -112,8 +95,8 @@ export function AssetUploader() {
         onDragOver={(e) => e.preventDefault()}
         className={cn(
           "border-2 border-dashed rounded-md p-8 text-center transition-colors",
-          file 
-            ? "border-primary bg-primary/5" 
+          file
+            ? "border-primary bg-primary/5"
             : "border-border hover:border-muted-foreground"
         )}
       >

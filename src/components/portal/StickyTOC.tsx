@@ -41,7 +41,7 @@ const StickyTOC = ({ items, className }: StickyTOCProps) => {
 
   return (
     <nav className={cn('sticky top-20 w-44 shrink-0 hidden xl:block', className)}>
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-muted-foreground mb-2">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-muted-foreground mb-2">
         On this page
       </p>
       <ul className="space-y-px">

@@ -56,17 +56,6 @@ export const formatModeName = (mode: string): string => {
   return MODE_NAMES[mode] ?? 'Quiz'
 }
 
-export const formatRelativeTime = (iso: string): string => {
-  const diff = Date.now() - new Date(iso).getTime()
-  const hours = diff / (1000 * 60 * 60)
-  if (hours < 1) return 'Just now'
-  if (hours < 24) return `${Math.floor(hours)}h ago`
-  const days = Math.floor(hours / 24)
-  if (days === 1) return 'Yesterday'
-  if (days < 7) return `${days} days ago`
-  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}
-
 export const getWeekBoundary = (weeksAgo: number): { start: string; end: string } => {
   const now = new Date()
   const dayOfWeek = now.getDay() // 0=Sun

@@ -175,6 +175,19 @@ export const getArticleFull = async (id: string) => {
   return data
 }
 
+/** Get only the updated_at timestamp for conflict detection */
+export const getArticleUpdatedAt = async (id: string): Promise<string | null> => {
+  const supabase = await createClient()
+  const { data, error } = await supabase
+    .from('wiki_articles')
+    .select('updated_at')
+    .eq('article_id', id)
+    .single()
+
+  if (error || !data) return null
+  return data.updated_at
+}
+
 /** Get taxonomy node links for an article */
 export const getArticleTaxonomyNodes = async (articleId: string) => {
   const supabase = await createClient()
@@ -329,6 +342,7 @@ export const updateQuestion = async (
 
   if (!error) {
     revalidatePath('/admin/questions')
+    revalidatePath('/admin/content')
   }
 
   return { error }

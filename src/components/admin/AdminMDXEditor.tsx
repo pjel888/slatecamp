@@ -11,6 +11,9 @@ import * as runtime from 'react/jsx-runtime'
 import remarkGfm from 'remark-gfm'
 import { baseMdxComponents } from '@/components/wiki/mdx-components-shared'
 import { updateWikiArticle, createWikiArticle } from '@/lib/actions/admin/wiki'
+import { ArticlePreviewTab } from '@/components/admin/ArticlePreviewTab'
+import { ComponentToolbar } from '@/components/admin/ComponentToolbar'
+import { ArticlePropertiesPanel } from '@/components/admin/ArticlePropertiesPanel'
 import type { ReactElement } from 'react'
 
 // ---------------------------------------------------------------------------
@@ -222,6 +225,12 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
   const [saveMsg, setSaveMsg] = useState<string | null>(null)
   const [saveError, setSaveError] = useState<string | null>(null)
 
+  // Properties panel fields
+  const [difficultyLabel, setDifficultyLabel] = useState('')
+  const [aleTestsYou, setAleTestsYou] = useState('')
+  const [updatedNote, setUpdatedNote] = useState('')
+  const [reviewerComments, setReviewerComments] = useState('')
+
   // Preview state
   const [previewNode, setPreviewNode] = useState<ReactElement | null>(null)
   const [previewError, setPreviewError] = useState<string | null>(null)
@@ -264,7 +273,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
         setPreviewError(err instanceof Error ? err.message : String(err))
         setPreviewNode(null)
       }
-    }, 300)
+    }, 500)
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current)
     }
@@ -286,6 +295,19 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       selection: { anchor: from + insertion.length },
     })
     view.focus()
+  }, [])
+
+  // ---------------------------------------------------------------------------
+  // Properties panel field handler
+  // ---------------------------------------------------------------------------
+  const handlePanelFieldChange = useCallback((field: string, value: string) => {
+    switch (field) {
+      case 'status': setStatus(value); break
+      case 'difficultyLabel': setDifficultyLabel(value); break
+      case 'aleTestsYou': setAleTestsYou(value); break
+      case 'updatedNote': setUpdatedNote(value); break
+      case 'reviewerComments': setReviewerComments(value); break
+    }
   }, [])
 
   // ---------------------------------------------------------------------------
@@ -444,7 +466,12 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       </div>
 
       {/* ------------------------------------------------------------------ */}
-      {/* Split pane                                                          */}
+      {/* Component toolbar                                                   */}
+      {/* ------------------------------------------------------------------ */}
+      <ComponentToolbar onInsert={insertSnippet} />
+
+      {/* ------------------------------------------------------------------ */}
+      {/* Split pane + properties panel                                       */}
       {/* ------------------------------------------------------------------ */}
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* Left: CodeMirror editor */}
@@ -490,34 +517,29 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           </div>
         </div>
 
-        {/* Right: Live preview */}
-        <div className="flex w-1/2 flex-col overflow-hidden">
-          <div className="shrink-0 border-b border-[#D4DAE3] bg-[#F8F7F5] px-4 py-1.5">
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
-              Preview
-            </span>
-          </div>
-          <div className="min-h-0 flex-1 overflow-y-auto bg-white px-8 py-6">
-            {previewError ? (
-              <div className="rounded-md border border-[#D64545]/30 bg-[#FDF0F0] p-4">
-                <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#D64545] mb-2">
-                  Compilation Error
-                </p>
-                <pre className="whitespace-pre-wrap font-mono text-xs text-[#D64545] leading-relaxed">
-                  {previewError}
-                </pre>
-              </div>
-            ) : previewNode ? (
-              <div className="wiki-prose max-w-none">
-                {previewNode}
-              </div>
-            ) : (
-              <p className="text-sm text-[#8896A7] italic">
-                Start typing to see a live preview...
-              </p>
-            )}
-          </div>
+        {/* Centre: Student-view preview */}
+        <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+          <ArticlePreviewTab
+            previewNode={previewNode}
+            previewError={previewError}
+            title={title}
+          />
         </div>
+
+        {/* Right: Article properties panel */}
+        <ArticlePropertiesPanel
+          articleId={article?.article_id}
+          slug={slug}
+          status={status}
+          difficultyLabel={difficultyLabel}
+          aleTestsYou={aleTestsYou}
+          updatedNote={updatedNote}
+          reviewedBy={undefined}
+          reviewerComments={reviewerComments}
+          createdAt={undefined}
+          updatedAt={article?.updated_at}
+          onFieldChange={handlePanelFieldChange}
+        />
       </div>
     </div>
   )

@@ -4,7 +4,12 @@ import { useState } from 'react'
 import { CaretRight, CaretDown, Plus, PencilSimple, Trash, XCircle } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import { createClient } from '@/lib/supabase/client'
+import { ConfirmDialog } from '@/components/ui/dialog'
+import {
+  updateTaxonomyNode,
+  createTaxonomyNode,
+  deleteTaxonomyNode,
+} from '@/lib/actions/admin/taxonomy'
 
 interface TaxonomyNode {
   id: string
@@ -21,12 +26,14 @@ interface TaxonomyEditorProps {
   disciplineId: string
 }
 
-export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorProps) {
+export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorProps) => {
   const [nodes, setNodes] = useState(initialNodes)
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editingName, setEditingName] = useState('')
   const [parentIdForNew, setParentIdForNew] = useState<string | null>(null)
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false)
+  const [nodeToDelete, setNodeToDelete] = useState<string | null>(null)
 
   const toggleExpand = (id: string) => {
     setExpandedIds(prev => {
@@ -47,58 +54,64 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
 
   const saveEdit = async () => {
     if (!editingId || !editingName.trim()) return
-    
-    const supabase = createClient()
-    const { error } = await supabase
-      .from('taxonomy_tree')
-      .update({ name: editingName.trim() })
-      .eq('node_id', editingId)
+
+    const { error } = await updateTaxonomyNode(editingId, { name: editingName.trim() })
 
     if (!error) {
-      setNodes(prev => prev.map(n => 
+      setNodes(prev => prev.map(n =>
         n.id === editingId ? { ...n, name: editingName.trim() } : n
       ))
     }
-    
+
     setEditingId(null)
     setEditingName('')
   }
 
-  const addNode = async (parentId: string | null) => {
-    const supabase = createClient()
-    
-    const { data, error } = await supabase
-      .from('taxonomy_tree')
-      .insert({
-        discipline_id: disciplineId,
-        name: 'New Topic',
-        level: parentId ? 2 : 1,
-        subject_area: parentId ? 'Subject' : null,
-        is_leaf: true,
-        parent_id: parentId,
-      })
-      .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
-      .single()
+  const addRootNode = async () => {
+    const { data, error } = await createTaxonomyNode({
+      discipline_id: disciplineId,
+      name: 'New Topic',
+      level: 1,
+      parent_id: null,
+    })
 
     if (!error && data) {
       setNodes(prev => [...prev, data])
     }
-    
+  }
+
+  const addChildNode = async (parentId: string, parentLevel: number, name: string) => {
+    const level = parentLevel + 1
+    const { data, error } = await createTaxonomyNode({
+      discipline_id: disciplineId,
+      name,
+      level,
+      parent_id: parentId,
+    })
+
+    if (!error && data) {
+      setNodes(prev => [...prev, data])
+      setExpandedIds(prev => new Set(prev).add(parentId))
+    }
+
     setParentIdForNew(null)
   }
 
-  const deleteNode = async (id: string) => {
-    if (!confirm('Are you sure you want to delete this node?')) return
-    
-    const supabase = createClient()
-    const { error } = await supabase
-      .from('taxonomy_tree')
-      .delete()
-      .eq('node_id', id)
+  const requestDelete = (id: string) => {
+    setNodeToDelete(id)
+    setShowDeleteDialog(true)
+  }
+
+  const confirmDelete = async () => {
+    if (!nodeToDelete) return
+
+    const { error } = await deleteTaxonomyNode(nodeToDelete)
 
     if (!error) {
-      setNodes(prev => prev.filter(n => n.id !== id))
+      setNodes(prev => prev.filter(n => n.id !== nodeToDelete))
     }
+
+    setNodeToDelete(null)
   }
 
   const renderNode = (node: TaxonomyNode, level: number = 0) => {
@@ -109,7 +122,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
 
     return (
       <div key={node.id} className="min-w-0">
-        <div 
+        <div
           className={cn(
             "flex items-center gap-2 py-1.5 px-3 hover:bg-muted/50 rounded-md group",
             level > 0 && "ml-6 border-l border-border/50"
@@ -129,7 +142,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
           ) : (
             <span className="w-5 shrink-0" />
           )}
-          
+
           {isEditing ? (
             <div className="flex-1 flex items-center gap-2">
               <input
@@ -179,7 +192,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                   </button>
                 )}
                 <button
-                  onClick={() => deleteNode(node.id)}
+                  onClick={() => requestDelete(node.id)}
                   className="p-1 hover:bg-muted rounded text-red-600"
                   title="Delete Node"
                 >
@@ -189,12 +202,12 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
             </>
           )}
         </div>
-        
+
         {/* Render children recursively */}
         {isExpanded && (
           <div className="space-y-0.5">
             {children.map(child => renderNode(child, level + 1))}
-            
+
             {/* Inline add for this specific parent */}
             {parentIdForNew === node.id && (
               <div className={cn("py-2", level >= 0 && "ml-12")}>
@@ -204,26 +217,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                     placeholder="Enter child name..."
                     onKeyDown={async (e) => {
                       if (e.key === 'Enter' && e.currentTarget.value.trim()) {
-                        const name = e.currentTarget.value.trim()
-                        const supabase = createClient()
-                        const { data, error } = await supabase
-                          .from('taxonomy_tree')
-                          .insert({
-                            discipline_id: disciplineId,
-                            name,
-                            level: node.level + 1,
-                            subject_area: node.level === 1 ? 'Module' : 'Topic',
-                            is_leaf: node.level + 1 === 3,
-                            parent_id: node.id,
-                          })
-                          .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
-                          .single()
-                        
-                        if (!error && data) {
-                          setNodes(prev => [...prev, data])
-                          setExpandedIds(prev => new Set(prev).add(node.id))
-                        }
-                        setParentIdForNew(null)
+                        await addChildNode(node.id, node.level, e.currentTarget.value.trim())
                       }
                       if (e.key === 'Escape') {
                         setParentIdForNew(null)
@@ -232,7 +226,7 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
                     className="flex-1 px-2 py-1 text-sm rounded border border-input bg-background max-w-[200px]"
                     autoFocus
                   />
-                  <button 
+                  <button
                     onClick={() => setParentIdForNew(null)}
                     className="text-xs text-muted-foreground hover:text-foreground"
                   >
@@ -248,35 +242,48 @@ export function TaxonomyEditor({ initialNodes, disciplineId }: TaxonomyEditorPro
   }
 
   return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold">Taxonomy Tree</h2>
-        <button
-          onClick={() => addNode(null)}
-          className="flex items-center gap-2 px-3 py-1.5 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
-        >
-          <SCIcon icon={Plus} size="sm" />
-          Add Subject
-        </button>
+    <>
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-semibold">Taxonomy Tree</h2>
+          <button
+            onClick={addRootNode}
+            className="flex items-center gap-2 px-3 py-1.5 text-sm rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
+          >
+            <SCIcon icon={Plus} size="sm" />
+            Add Subject
+          </button>
+        </div>
+
+        <div className="rounded-md border border-border bg-card">
+          {nodes.length === 0 ? (
+            <div className="p-8 text-center text-muted-foreground">
+              No taxonomy nodes found
+            </div>
+          ) : (
+            <div className="p-4">
+              {nodes
+                .filter(n => !n.parent_id && n.id)
+                .map(node => (
+                  <div key={node.id || node.name} className="group">
+                    {renderNode(node)}
+                  </div>
+                ))}
+            </div>
+          )}
+        </div>
       </div>
 
-      <div className="rounded-md border border-border bg-card">
-        {nodes.length === 0 ? (
-          <div className="p-8 text-center text-muted-foreground">
-            No taxonomy nodes found
-          </div>
-        ) : (
-          <div className="p-4">
-            {nodes
-              .filter(n => !n.parent_id && n.id)
-              .map(node => (
-                <div key={node.id || node.name} className="group">
-                  {renderNode(node)}
-                </div>
-              ))}
-          </div>
-        )}
-      </div>
-    </div>
+      <ConfirmDialog
+        open={showDeleteDialog}
+        onOpenChange={setShowDeleteDialog}
+        title="Delete taxonomy node"
+        description="This will permanently delete the node and cannot be undone."
+        confirmLabel="Delete"
+        confirmVariant="destructive"
+        onConfirm={confirmDelete}
+        onCancel={() => setNodeToDelete(null)}
+      />
+    </>
   )
 }

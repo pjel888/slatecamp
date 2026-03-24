@@ -1,6 +1,12 @@
-import { createClient } from '@/lib/supabase/server'
+'use server'
 
-export async function getTaxonomyNodes() {
+import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { revalidatePath } from 'next/cache'
+import { canManageContent } from '@/lib/admin/roles'
+import { z } from 'zod'
+
+export const getTaxonomyNodes = async () => {
   const supabase = await createClient()
 
   const { data, error } = await supabase
@@ -15,4 +21,88 @@ export async function getTaxonomyNodes() {
   }
 
   return data || []
+}
+
+const updateNodeSchema = z.object({
+  name: z.string().min(1, 'Name is required').max(255),
+})
+
+export const updateTaxonomyNode = async (id: string, data: { name: string }) => {
+  const authorized = await canManageContent()
+  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+
+  const parsed = updateNodeSchema.safeParse(data)
+  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+
+  const supabase = createAdminClient()
+
+  const { error } = await supabase
+    .from('taxonomy_tree')
+    .update({ name: parsed.data.name })
+    .eq('node_id', id)
+
+  if (!error) {
+    revalidatePath('/admin/taxonomy')
+  }
+
+  return { error }
+}
+
+const createNodeSchema = z.object({
+  name: z.string().min(1, 'Name is required').max(255),
+  parent_id: z.string().nullable(),
+  level: z.number().int().min(1).max(3),
+  discipline_id: z.string().min(1),
+})
+
+export const createTaxonomyNode = async (data: {
+  name: string
+  parent_id: string | null
+  level: number
+  discipline_id: string
+}) => {
+  const authorized = await canManageContent()
+  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+
+  const parsed = createNodeSchema.safeParse(data)
+  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+
+  const supabase = createAdminClient()
+
+  const { data: newNode, error } = await supabase
+    .from('taxonomy_tree')
+    .insert({
+      discipline_id: parsed.data.discipline_id,
+      name: parsed.data.name,
+      level: parsed.data.level,
+      subject_area: parsed.data.parent_id ? 'Subject' : null,
+      is_leaf: parsed.data.level === 3,
+      parent_id: parsed.data.parent_id,
+    })
+    .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
+    .single()
+
+  if (!error) {
+    revalidatePath('/admin/taxonomy')
+  }
+
+  return { data: newNode, error }
+}
+
+export const deleteTaxonomyNode = async (id: string) => {
+  const authorized = await canManageContent()
+  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+
+  const supabase = createAdminClient()
+
+  const { error } = await supabase
+    .from('taxonomy_tree')
+    .delete()
+    .eq('node_id', id)
+
+  if (!error) {
+    revalidatePath('/admin/taxonomy')
+  }
+
+  return { error }
 }

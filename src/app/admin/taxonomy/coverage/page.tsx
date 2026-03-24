@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { fetchCoverageData, classifyCoverage, type CoverageCellData, type CoverageLevel } from '@/lib/actions/admin/coverage'
 import { SectionHeader } from '@/components/shared/section-header'
 
@@ -13,10 +14,10 @@ import { Grid3X3, AlertTriangle } from 'lucide-react'
  * ------------------------------------------------------------------ */
 
 const coverageStyles: Record<CoverageLevel, string> = {
-  full: 'bg-[#EDFAF4] border-[#C6DBAD]',
-  partial: 'bg-[#FFF8EB] border-[#FDE68A]',
+  full: 'bg-[#EDFAF4] border-[#2D9F6F]',
+  partial: 'bg-[#FEF8ED] border-[#D4951A]',
   empty: 'bg-muted border-border',
-  critical: 'bg-muted border-2 border-red-500',
+  critical: 'bg-muted border-2 border-[#D64545]',
 }
 
 /* ------------------------------------------------------------------
@@ -69,10 +70,10 @@ const AdminTaxonomyCoveragePage = async () => {
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest">
           Legend
         </span>
-        <LegendItem className="bg-[#EDFAF4] border-[#C6DBAD]" label="Full" />
-        <LegendItem className="bg-[#FFF8EB] border-[#FDE68A]" label="Partial" />
+        <LegendItem className="bg-[#EDFAF4] border-[#2D9F6F]" label="Full (≥10q + article)" />
+        <LegendItem className="bg-[#FEF8ED] border-[#D4951A]" label="Partial (1–9q or draft)" />
         <LegendItem className="bg-muted border-border" label="Empty" />
-        <LegendItem className="bg-muted border-2 border-red-500" label="Critical Gap" />
+        <LegendItem className="bg-muted border-2 border-[#D64545]" label="Critical Gap (high-freq, no content)" />
       </div>
 
       {/* Coverage grid per level-1 node */}
@@ -136,7 +137,8 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
   const isCritical = level === 'critical'
 
   return (
-    <div
+    <Link
+      href={`/admin/content?node=${cell.node_id}`}
       className={`
         relative flex flex-col items-center justify-center
         rounded-sm border p-1 min-h-[40px]
@@ -144,12 +146,11 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
         hover:scale-105 hover:shadow-sm hover:z-10
         ${coverageStyles[level]}
       `}
-      role="img"
-      aria-label={`${cell.ale_id ?? cell.name}: ${cell.questionCount} question${cell.questionCount !== 1 ? 's' : ''}, ${level} coverage`}
+      aria-label={`${cell.ale_id ?? cell.name}: ${cell.questionCount} question${cell.questionCount !== 1 ? 's' : ''}, ${level} coverage — click to view content`}
       title={`${cell.name}${cell.ale_id ? ` (${cell.ale_id})` : ''} — ${cell.questionCount}q${cell.hasArticle ? ', has article' : ''}${cell.examFrequency ? `, freq: ${cell.examFrequency}` : ''}`}
     >
       {isCritical && (
-        <AlertTriangle className="h-2.5 w-2.5 text-red-500 absolute top-0.5 right-0.5" />
+        <AlertTriangle className="h-2.5 w-2.5 text-[#D64545] absolute top-0.5 right-0.5" />
       )}
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-bold tabular-nums leading-none">
         {cell.questionCount > 0 ? `${cell.questionCount}q` : '0'}
@@ -157,7 +158,7 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground leading-tight truncate max-w-full px-0.5 mt-0.5">
         {cell.ale_id ?? cell.name.slice(0, 6)}
       </span>
-    </div>
+    </Link>
   )
 }
 

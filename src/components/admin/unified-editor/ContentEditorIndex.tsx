@@ -15,6 +15,7 @@ import {
 } from 'lucide-react'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 import { Badge } from '@/components/ui/badge'
+import { StatusBadge } from '@/components/ui/status-badge'
 import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
@@ -399,19 +400,15 @@ export const ContentEditorIndex = ({
                       <span className="text-sm font-medium text-[#1A2332] truncate">
                         {article.title || 'Untitled'}
                       </span>
-                      <Badge
-                        variant={
+                      <StatusBadge
+                        status={
                           article.status === 'published'
-                            ? 'success'
+                            ? 'published'
                             : article.status === 'review'
-                              ? 'warning'
-                              : 'default'
+                              ? 'review'
+                              : 'draft'
                         }
-                        size="sm"
-                        dot
-                      >
-                        {article.status || 'draft'}
-                      </Badge>
+                      />
                       {article.difficulty_label && (
                         <Badge variant="outline" size="sm">
                           {article.difficulty_label}

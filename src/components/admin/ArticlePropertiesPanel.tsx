@@ -1,0 +1,234 @@
+'use client'
+
+import { useState } from 'react'
+
+// ---------------------------------------------------------------------------
+// Types
+// ---------------------------------------------------------------------------
+
+interface ArticlePropertiesPanelProps {
+  articleId?: string
+  slug?: string
+  status?: string
+  difficultyLabel?: string
+  aleTestsYou?: string
+  updatedNote?: string
+  subjectLabel?: string
+  reviewedBy?: string
+  reviewerComments?: string
+  createdAt?: string
+  updatedAt?: string
+  onFieldChange?: (field: string, value: string) => void
+}
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+const formatDate = (iso: string | undefined) => {
+  if (!iso) return '—'
+  return new Date(iso).toLocaleString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  })
+}
+
+// ---------------------------------------------------------------------------
+// Section sub-component
+// ---------------------------------------------------------------------------
+
+interface SectionProps {
+  label: string
+  children: React.ReactNode
+}
+
+const Section = ({ label, children }: SectionProps) => (
+  <div className="px-4 py-3 border-b border-[#D4DAE3] last:border-b-0">
+    <p
+      className="mb-2 text-[11px] font-medium uppercase tracking-widest text-[#8896A7]"
+      style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+    >
+      {label}
+    </p>
+    {children}
+  </div>
+)
+
+// ---------------------------------------------------------------------------
+// Main component
+// ---------------------------------------------------------------------------
+
+export const ArticlePropertiesPanel = ({
+  articleId,
+  slug,
+  status,
+  difficultyLabel,
+  aleTestsYou,
+  updatedNote,
+  subjectLabel,
+  reviewedBy,
+  reviewerComments,
+  createdAt,
+  updatedAt,
+  onFieldChange,
+}: ArticlePropertiesPanelProps) => {
+  const [collapsed, setCollapsed] = useState(false)
+
+  if (collapsed) {
+    return (
+      <div className="shrink-0 border-l border-[#D4DAE3] flex flex-col items-center pt-3 w-8 bg-white">
+        <button
+          type="button"
+          onClick={() => setCollapsed(false)}
+          title="Expand properties"
+          className="rounded-sm p-1 text-[#8896A7] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+        >
+          {/* Chevron left (expand) */}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M7.5 2.5L4.5 6l3 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      </div>
+    )
+  }
+
+  return (
+    <div className="w-[280px] shrink-0 border-l border-[#D4DAE3] overflow-y-auto bg-white flex flex-col">
+      {/* Header */}
+      <div className="flex shrink-0 items-center justify-between border-b border-[#D4DAE3] px-4 py-2.5">
+        <span
+          className="text-[11px] font-medium uppercase tracking-widest text-[#8896A7]"
+          style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+        >
+          Properties
+        </span>
+        <button
+          type="button"
+          onClick={() => setCollapsed(true)}
+          title="Collapse properties"
+          className="rounded-sm p-1 text-[#8896A7] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+        >
+          {/* Chevron right (collapse) */}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      {/* STATUS */}
+      <Section label="Status">
+        <select
+          value={status ?? 'draft'}
+          onChange={e => onFieldChange?.('status', e.target.value)}
+          className="w-full rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150"
+        >
+          <option value="draft">Draft</option>
+          <option value="review">In Review</option>
+          <option value="published">Published</option>
+        </select>
+      </Section>
+
+      {/* DIFFICULTY */}
+      <Section label="Difficulty">
+        <select
+          value={difficultyLabel ?? ''}
+          onChange={e => onFieldChange?.('difficultyLabel', e.target.value)}
+          className="w-full rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150"
+        >
+          <option value="">— Select —</option>
+          <option value="Foundational">Foundational</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </Section>
+
+      {/* TAXONOMY */}
+      {(articleId || subjectLabel) && (
+        <Section label="Taxonomy">
+          {articleId && (
+            <p
+              className="text-[11px] text-[#8896A7] mb-1 truncate"
+              style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+              title={articleId}
+            >
+              {articleId}
+            </p>
+          )}
+          {subjectLabel && (
+            <p className="text-[11px] text-[#4A5568]">{subjectLabel}</p>
+          )}
+        </Section>
+      )}
+
+      {/* LEARNING */}
+      <Section label="Learning">
+        <textarea
+          value={aleTestsYou ?? ''}
+          onChange={e => onFieldChange?.('aleTestsYou', e.target.value)}
+          placeholder="What this article tests you on..."
+          rows={3}
+          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+        />
+      </Section>
+
+      {/* NOTES */}
+      <Section label="Notes">
+        <textarea
+          value={updatedNote ?? ''}
+          onChange={e => onFieldChange?.('updatedNote', e.target.value)}
+          placeholder="Update notes or change summary..."
+          rows={3}
+          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+        />
+      </Section>
+
+      {/* REVIEW */}
+      <Section label="Review">
+        {reviewedBy ? (
+          <p
+            className="mb-2 text-[11px] text-[#8896A7]"
+            style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+          >
+            {reviewedBy}
+          </p>
+        ) : (
+          <p className="mb-2 text-[11px] text-[#8896A7] italic">Not yet reviewed</p>
+        )}
+        <textarea
+          value={reviewerComments ?? ''}
+          onChange={e => onFieldChange?.('reviewerComments', e.target.value)}
+          placeholder="Reviewer comments..."
+          rows={3}
+          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+        />
+      </Section>
+
+      {/* META */}
+      <Section label="Meta">
+        <div className="space-y-2">
+          <div>
+            <p
+              className="mb-0.5 text-[11px] font-medium text-[#8896A7]"
+              style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+            >
+              Created
+            </p>
+            <p className="text-[11px] text-[#4A5568]">{formatDate(createdAt)}</p>
+          </div>
+          <div>
+            <p
+              className="mb-0.5 text-[11px] font-medium text-[#8896A7]"
+              style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+            >
+              Updated
+            </p>
+            <p className="text-[11px] text-[#4A5568]">{formatDate(updatedAt)}</p>
+          </div>
+        </div>
+      </Section>
+    </div>
+  )
+}

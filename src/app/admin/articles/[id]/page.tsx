@@ -3,6 +3,9 @@ import { getArticle } from '@/lib/actions/admin/wiki-queries'
 import { canManageContent } from '@/lib/admin/roles'
 import { redirect, notFound } from 'next/navigation'
 
+import type { Metadata } from 'next'
+export const metadata: Metadata = { title: 'Edit Article | Admin' }
+
 interface PageProps {
   params: Promise<{ id: string }>
 }

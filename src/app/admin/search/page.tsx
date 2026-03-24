@@ -35,58 +35,68 @@ interface TaxonomyResult {
 /* ------------------------------------------------------------------ */
 
 const ContentSearchPage = () => {
-  const [query, setQuery] = React.useState('')
+  const [inputValue, setInputValue] = React.useState('')
+  const deferredValue = React.useDeferredValue(inputValue)
   const [loading, setLoading] = React.useState(false)
   const [questions, setQuestions] = React.useState<QuestionResult[]>([])
   const [articles, setArticles] = React.useState<ArticleResult[]>([])
   const [taxonomy, setTaxonomy] = React.useState<TaxonomyResult[]>([])
   const [hasSearched, setHasSearched] = React.useState(false)
+  const [searchError, setSearchError] = React.useState<string | null>(null)
 
-  const handleSearch = React.useCallback(async (value: string) => {
-    setQuery(value)
-
+  const handleInputChange = React.useCallback((value: string) => {
+    setInputValue(value)
     if (!value.trim()) {
       setQuestions([])
       setArticles([])
       setTaxonomy([])
       setHasSearched(false)
-      return
-    }
-
-    setLoading(true)
-    setHasSearched(true)
-
-    try {
-      const supabase = createClient()
-      const searchTerm = `%${value.trim()}%`
-
-      const [qRes, aRes, tRes] = await Promise.all([
-        supabase
-          .from('questions')
-          .select('question_id, text')
-          .ilike('text', searchTerm)
-          .limit(20),
-        supabase
-          .from('wiki_articles')
-          .select('article_id, title')
-          .ilike('title', searchTerm)
-          .limit(20),
-        supabase
-          .from('taxonomy_tree')
-          .select('node_id, name, ale_id')
-          .or(`name.ilike.${searchTerm},ale_id.ilike.${searchTerm}`)
-          .limit(20),
-      ])
-
-      setQuestions((qRes.data ?? []) as QuestionResult[])
-      setArticles((aRes.data ?? []) as ArticleResult[])
-      setTaxonomy((tRes.data ?? []) as TaxonomyResult[])
-    } catch {
-      // Silently handle search errors
-    } finally {
-      setLoading(false)
+      setSearchError(null)
     }
   }, [])
+
+  React.useEffect(() => {
+    if (!deferredValue.trim()) return
+
+    const performSearch = async () => {
+      setLoading(true)
+      setHasSearched(true)
+      setSearchError(null)
+
+      try {
+        const supabase = createClient()
+        const searchTerm = `%${deferredValue.trim()}%`
+
+        const [qRes, aRes, tRes] = await Promise.all([
+          supabase
+            .from('questions')
+            .select('question_id, text')
+            .ilike('text', searchTerm)
+            .limit(20),
+          supabase
+            .from('wiki_articles')
+            .select('article_id, title')
+            .ilike('title', searchTerm)
+            .limit(20),
+          supabase
+            .from('taxonomy_tree')
+            .select('node_id, name, ale_id')
+            .or(`name.ilike.${searchTerm},ale_id.ilike.${searchTerm}`)
+            .limit(20),
+        ])
+
+        setQuestions((qRes.data ?? []) as QuestionResult[])
+        setArticles((aRes.data ?? []) as ArticleResult[])
+        setTaxonomy((tRes.data ?? []) as TaxonomyResult[])
+      } catch {
+        setSearchError('Search failed. Please try again.')
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    performSearch()
+  }, [deferredValue])
 
   const totalCount = questions.length + articles.length + taxonomy.length
 
@@ -151,13 +161,17 @@ const ContentSearchPage = () => {
 
       <SearchInput
         placeholder="Search questions, articles, taxonomy..."
-        onChange={handleSearch}
+        onChange={handleInputChange}
         loading={loading}
         size="lg"
         shortcutHint="/"
       />
 
-      {!hasSearched && (
+      {searchError && (
+        <p className="text-sm text-[#D64545]">{searchError}</p>
+      )}
+
+      {!hasSearched && !searchError && (
         <EmptyState
           icon={<Search className="size-5" />}
           message="Search across all content"
@@ -165,11 +179,11 @@ const ContentSearchPage = () => {
         />
       )}
 
-      {noResults && (
+      {noResults && !searchError && (
         <EmptyState
           icon={<Search className="size-5" />}
           message="No results found"
-          description={`No content matches "${query}". Try a different search term.`}
+          description={`No content matches "${inputValue}". Try a different search term.`}
         />
       )}
 

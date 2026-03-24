@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { PageHeader } from '@/components/shared/page-header'
@@ -36,11 +37,13 @@ const computeWordCount = (content: string | null): number =>
 const normalizeStatus = (status: string | null): 'published' | 'draft' =>
   status === 'published' ? 'published' : 'draft'
 
+type StatusFilter = 'all' | 'published' | 'draft' | 'review'
+
 /* ------------------------------------------------------------------ */
 /*  Columns                                                            */
 /* ------------------------------------------------------------------ */
 
-const columns: Column<Article>[] = [
+const buildColumns = (): Column<Article>[] => [
   {
     key: 'title',
     header: 'Title',
@@ -79,16 +82,83 @@ const columns: Column<Article>[] = [
     header: '',
     type: 'action',
     render: (row) => (
-      <Link
-        href={`/admin/content/${row.article_id}`}
-        className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
-        onClick={(e) => e.stopPropagation()}
-      >
-        Edit with Questions &rarr;
-      </Link>
+      <div className="flex items-center gap-3">
+        <Link
+          href={`/admin/content/${row.article_id}`}
+          className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+          onClick={(e) => e.stopPropagation()}
+        >
+          Edit with Questions &rarr;
+        </Link>
+        {row.slug && (
+          <Link
+            href={`/dashboard/wiki/${row.slug}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap text-xs text-[#8896A7] hover:text-[#4A5568] transition-colors duration-150"
+            onClick={(e) => e.stopPropagation()}
+          >
+            Preview ↗
+          </Link>
+        )}
+      </div>
     ),
   },
 ]
+
+const columns = buildColumns()
+
+/* ------------------------------------------------------------------ */
+/*  Status filter tabs sub-component                                   */
+/* ------------------------------------------------------------------ */
+
+interface StatusTabsProps {
+  articles: Article[]
+  active: StatusFilter
+  onChange: (filter: StatusFilter) => void
+}
+
+const STATUS_TABS: { key: StatusFilter; label: string }[] = [
+  { key: 'all', label: 'All' },
+  { key: 'published', label: 'Published' },
+  { key: 'draft', label: 'Draft' },
+  { key: 'review', label: 'Review' },
+]
+
+const StatusTabs = ({ articles, active, onChange }: StatusTabsProps) => {
+  const counts: Record<StatusFilter, number> = {
+    all: articles.length,
+    published: articles.filter((a) => a.status === 'published').length,
+    draft: articles.filter((a) => !a.status || a.status === 'draft').length,
+    review: articles.filter((a) => a.status === 'review').length,
+  }
+
+  return (
+    <div className="flex items-center gap-0 border-b border-[#D4DAE3]">
+      {STATUS_TABS.map((tab) => (
+        <button
+          key={tab.key}
+          type="button"
+          onClick={() => onChange(tab.key)}
+          className={`px-4 py-2 text-xs font-medium transition-colors duration-150 border-b-2 -mb-px ${
+            active === tab.key
+              ? 'border-[#1B3FC4] text-[#1B3FC4]'
+              : 'border-transparent text-[#4A5568] hover:text-[#1A2332]'
+          }`}
+        >
+          {tab.label}
+          <span
+            className={`ml-1.5 font-mono text-[11px] ${
+              active === tab.key ? 'text-[#1B3FC4]' : 'text-[#8896A7]'
+            }`}
+          >
+            ({counts[tab.key]})
+          </span>
+        </button>
+      ))}
+    </div>
+  )
+}
 
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
@@ -96,10 +166,18 @@ const columns: Column<Article>[] = [
 
 export const ArticlesClient = ({ articles }: ArticlesClientProps) => {
   const router = useRouter()
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
 
   const handleRowClick = (row: Article) => {
     router.push(`/admin/articles/${row.article_id}`)
   }
+
+  const filteredArticles = articles.filter((a) => {
+    if (statusFilter === 'all') return true
+    if (statusFilter === 'published') return a.status === 'published'
+    if (statusFilter === 'review') return a.status === 'review'
+    return !a.status || a.status === 'draft'
+  })
 
   return (
     <div className="space-y-6">
@@ -113,18 +191,26 @@ export const ArticlesClient = ({ articles }: ArticlesClientProps) => {
         }
       />
 
-      <DataTable
-        columns={columns}
-        data={articles}
-        keyField="article_id"
-        searchable
-        searchPlaceholder="Search articles..."
-        searchFields={['title']}
-        pageSize={50}
-        onRowClick={handleRowClick}
-        emptyMessage="No articles yet"
-        defaultSort={{ key: 'updated_at', direction: 'desc' }}
-      />
+      <div className="space-y-0">
+        <StatusTabs
+          articles={articles}
+          active={statusFilter}
+          onChange={setStatusFilter}
+        />
+
+        <DataTable
+          columns={columns}
+          data={filteredArticles}
+          keyField="article_id"
+          searchable
+          searchPlaceholder="Search articles..."
+          searchFields={['title']}
+          pageSize={50}
+          onRowClick={handleRowClick}
+          emptyMessage="No articles yet"
+          defaultSort={{ key: 'updated_at', direction: 'desc' }}
+        />
+      </div>
     </div>
   )
 }

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { getPipelineArticles } from '@/lib/actions/admin/pipeline'
-import { formatRelativeTime } from '@/lib/utils/format-time'
 
 export const metadata: Metadata = { title: 'Publishing Pipeline — SlateCamp Admin' }
 import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { PipelineCard } from './_components/PipelineCard'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -93,22 +92,11 @@ const PipelinePage = async () => {
                   </p>
                 ) : (
                   items.map((article) => (
-                    <Link
+                    <PipelineCard
                       key={article.article_id}
-                      href={`/admin/articles/${article.article_id}`}
-                      aria-label={`${article.title} — ${col.label}`}
-                      className="block rounded-md border border-border p-2.5 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
-                    >
-                      <p className="text-sm font-medium leading-snug line-clamp-2">
-                        {article.title}
-                      </p>
-                      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground mt-0.5 truncate">
-                        {article.slug}
-                      </p>
-                      <p className="text-[11px] text-muted-foreground mt-1">
-                        {formatRelativeTime(article.updated_at)}
-                      </p>
-                    </Link>
+                      article={article}
+                      columnKey={col.key}
+                    />
                   ))
                 )}
               </div>

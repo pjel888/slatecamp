@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useCallback, useState } from 'react'
+import { useEffect, useCallback, useState, useRef } from 'react'
 import { useDirtyState } from './DirtyStateProvider'
 import type { QuestionData, EIPromptData, SaveItemResult } from './types'
 import {
@@ -9,6 +9,7 @@ import {
   createEIPrompt,
   updateEIPrompt,
   deleteEIPrompt,
+  getArticleUpdatedAt,
 } from '@/lib/actions/admin/content'
 import {
   createQuestion,
@@ -28,6 +29,8 @@ interface SaveAllBarProps {
     updated_note?: string
     subject_label?: string
     reviewer_comments?: string
+    /** The updated_at timestamp when the page first loaded (for conflict detection) */
+    initial_updated_at?: string
   }
   questions: QuestionData[]
   eiPrompts: EIPromptData[]
@@ -50,15 +53,15 @@ export const SaveAllBar = ({
 }: SaveAllBarProps) => {
   const dirty = useDirtyState()
   const [results, setResults] = useState<SaveItemResult[]>([])
+  const [conflictWarning, setConflictWarning] = useState(false)
+  const pendingSaveRef = useRef(false)
 
   const failedResults = results.filter((r) => !r.success)
   const successResults = results.filter((r) => r.success)
 
-  // ── Save orchestration ─────────────────────────────────────
+  // ── Core save execution (called after conflict check) ───────
 
-  const executeSave = useCallback(async () => {
-    if (isSaving) return
-
+  const doSave = useCallback(async () => {
     setIsSaving(true)
     setSaveError(null)
     setResults([])
@@ -353,7 +356,6 @@ export const SaveAllBar = ({
 
     setIsSaving(false)
   }, [
-    isSaving,
     setIsSaving,
     setSaveError,
     onSaveComplete,
@@ -363,15 +365,49 @@ export const SaveAllBar = ({
     eiPrompts,
   ])
 
+  // ── Conflict-aware save entry point ────────────────────────
+
+  const executeSave = useCallback(async () => {
+    if (isSaving) return
+
+    // Only run conflict check when article is dirty and we have an initial timestamp
+    if (dirty.articleDirty && articleState.initial_updated_at) {
+      try {
+        const serverTs = await getArticleUpdatedAt(articleState.article_id)
+        if (serverTs && serverTs !== articleState.initial_updated_at) {
+          // Server version is newer — show conflict warning
+          pendingSaveRef.current = true
+          setConflictWarning(true)
+          return
+        }
+      } catch {
+        // If the check fails, proceed with save anyway
+      }
+    }
+
+    await doSave()
+  }, [isSaving, dirty.articleDirty, articleState, doSave])
+
   // ── Listen for custom save event ───────────────────────────
 
   useEffect(() => {
-    const handler = () => {
-      executeSave()
-    }
+    const handler = () => { executeSave() }
     window.addEventListener('unified-editor:save', handler)
     return () => window.removeEventListener('unified-editor:save', handler)
   }, [executeSave])
+
+  // ── Conflict dialog handlers ────────────────────────────────
+
+  const handleConflictSaveAnyway = useCallback(async () => {
+    setConflictWarning(false)
+    pendingSaveRef.current = false
+    await doSave()
+  }, [doSave])
+
+  const handleConflictCancel = useCallback(() => {
+    setConflictWarning(false)
+    pendingSaveRef.current = false
+  }, [])
 
   // ── Retry failed items ─────────────────────────────────────
 
@@ -385,6 +421,46 @@ export const SaveAllBar = ({
     setResults([])
     setSaveError(null)
   }, [setSaveError])
+
+  // ── Conflict warning dialog ─────────────────────────────────
+
+  if (conflictWarning) {
+    return (
+      <div className="border-b border-[#D4DAE3] bg-[#FEF8ED] px-4 py-3">
+        <div className="flex items-start gap-3">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FEF8ED] border border-[#D4951A]/40">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 4v4m0 2.5h.01M14.5 8a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="#D4951A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold text-[#1A2332]">
+              Concurrent edit detected
+            </p>
+            <p className="mt-0.5 text-xs text-[#4A5568]">
+              This article was modified by another user since you started editing. Saving now will overwrite their changes.
+            </p>
+          </div>
+          <div className="flex shrink-0 items-center gap-2">
+            <button
+              type="button"
+              onClick={handleConflictCancel}
+              className="rounded-sm border border-[#D4DAE3] px-3 py-1 text-xs text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#8896A7] hover:text-[#1A2332]"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              onClick={handleConflictSaveAnyway}
+              className="rounded-sm bg-[#D64545] px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#b33a3a]"
+            >
+              Save anyway
+            </button>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   // ── Render nothing when no errors ──────────────────────────
 

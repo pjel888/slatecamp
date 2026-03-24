@@ -17,7 +17,7 @@ export default async function AdminAssetsPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-1">
-          <div className="rounded-md border p-6">
+          <div id="asset-uploader" className="rounded-md border p-6">
             <h2 className="text-lg font-semibold mb-4">Upload New Asset</h2>
             <AssetUploader />
           </div>

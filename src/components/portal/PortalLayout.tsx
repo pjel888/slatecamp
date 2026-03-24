@@ -1,5 +1,6 @@
 import { PortalTopbar } from './PortalTopbar'
 import { PortalSidebar, type NavGroup } from './PortalSidebar'
+import { MobileNav } from './MobileNav'
 
 interface PortalLayoutProps {
   portalLabel: string
@@ -34,6 +35,14 @@ const PortalLayout = ({
       searchComponent={searchComponent}
       backHref={backHref}
       backLabel={backLabel}
+      mobileNav={
+        <MobileNav
+          navItems={navItems}
+          accentColor={accentColor}
+          accentLightColor={accentLightColor}
+          portalLabel={portalLabel}
+        />
+      }
     />
     <div className="flex flex-1">
       <PortalSidebar

@@ -82,13 +82,17 @@ export function AssetList({ initialAssets }: AssetListProps) {
           <option value="mep">MEP</option>
           <option value="architectural">Architectural</option>
         </select>
-        <Link
-          href="/admin/assets/new"
+        <a
+          href="#asset-uploader"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"
+          onClick={(e) => {
+            e.preventDefault()
+            document.getElementById('asset-uploader')?.scrollIntoView({ behavior: 'smooth' })
+          }}
         >
           <SCIcon icon={Plus} size="sm" />
           Upload Asset
-        </Link>
+        </a>
       </div>
 
       {/* Assets Grid */}

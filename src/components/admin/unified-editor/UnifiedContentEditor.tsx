@@ -168,6 +168,8 @@ const EditorInner = ({
     updated_note: updatedNote || undefined,
     subject_label: subjectLabel || undefined,
     reviewer_comments: reviewerComments || undefined,
+    // Snapshot of updated_at when the page loaded — used for concurrent edit detection
+    initial_updated_at: initialArticle.updated_at,
   }
 
   return (

@@ -1,7 +1,8 @@
 'use client'
 
 import { useEffect, useState, useCallback, useMemo } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
+import { Clock } from 'lucide-react'
 import {
   CommandDialog,
   CommandInput,
@@ -20,13 +21,78 @@ interface CommandPaletteProps {
   pages: { title: string; href: string; group: string; keywords?: string }[]
 }
 
+interface RecentPage {
+  title: string
+  href: string
+  group: string
+  timestamp: number
+}
+
+/* ------------------------------------------------------------------ */
+/*  Hook: useRecentPages                                               */
+/* ------------------------------------------------------------------ */
+
+const STORAGE_KEY = 'admin-recent-pages'
+const MAX_RECENT = 5
+
+const useRecentPages = (
+  pages: CommandPaletteProps['pages'],
+) => {
+  const pathname = usePathname()
+
+  /* Save current pathname to recent pages whenever it changes */
+  useEffect(() => {
+    const matched = pages.find((p) => p.href === pathname)
+    if (!matched) return
+
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      const existing: RecentPage[] = raw ? JSON.parse(raw) : []
+
+      /* Remove duplicate if already present */
+      const filtered = existing.filter((r) => r.href !== matched.href)
+
+      const next: RecentPage[] = [
+        { title: matched.title, href: matched.href, group: matched.group, timestamp: Date.now() },
+        ...filtered,
+      ].slice(0, MAX_RECENT)
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
+    } catch {
+      /* localStorage may be unavailable in some environments */
+    }
+  }, [pathname, pages])
+
+  const getRecent = useCallback((): RecentPage[] => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      return raw ? JSON.parse(raw) : []
+    } catch {
+      return []
+    }
+  }, [])
+
+  return { getRecent }
+}
+
 /* ------------------------------------------------------------------ */
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
 const CommandPalette = ({ pages }: CommandPaletteProps) => {
   const [open, setOpen] = useState(false)
+  const [query, setQuery] = useState('')
+  const [recentPages, setRecentPages] = useState<RecentPage[]>([])
   const router = useRouter()
+  const { getRecent } = useRecentPages(pages)
+
+  /* Load recent pages when palette opens */
+  useEffect(() => {
+    if (open) {
+      setRecentPages(getRecent())
+      setQuery('')
+    }
+  }, [open, getRecent])
 
   /* Keyboard shortcut: Cmd+K / Ctrl+K */
   useEffect(() => {
@@ -61,6 +127,8 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
     [router],
   )
 
+  const isSearching = query.trim().length > 0
+
   return (
     <CommandDialog
       open={open}
@@ -68,9 +136,34 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
       title="Command Palette"
       description="Search admin pages and navigate quickly"
     >
-      <CommandInput placeholder="Search pages..." />
+      <CommandInput
+        placeholder="Search pages..."
+        value={query}
+        onValueChange={setQuery}
+      />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
+
+        {/* Recent pages — shown only when not actively searching */}
+        {!isSearching && recentPages.length > 0 && (
+          <CommandGroup heading="Recent">
+            {recentPages.map((page) => (
+              <CommandItem
+                key={`recent-${page.href}`}
+                value={`recent ${page.title} ${page.group}`}
+                onSelect={() => handleSelect(page.href)}
+              >
+                <Clock className="mr-2 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+                <span className="flex-1 text-sm">{page.title}</span>
+                <Badge variant="default" size="xs" className="ml-2 shrink-0">
+                  {page.group}
+                </Badge>
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        )}
+
+        {/* All pages grouped — always rendered so cmdk filtering works */}
         {[...grouped.entries()].map(([group, items]) => (
           <CommandGroup key={group} heading={group}>
             {items.map((page) => (

@@ -3,6 +3,8 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { useDirtyState } from './DirtyStateProvider'
+import { CampModePreview } from '@/components/admin/preview/CampModePreview'
+import { DifficultyBar } from '@/components/ui/difficulty-bar'
 import type {
   QuestionData,
   EIPromptData,
@@ -52,26 +54,6 @@ const formatTimestamp = (ts: string | null | undefined): string => {
 const isValidImageUrl = (url: string | null | undefined): boolean => {
   if (!url) return false
   return /^https?:\/\/.+\.(png|jpe?g|gif|webp|svg|avif)/i.test(url)
-}
-
-// ─── Difficulty Bar ─────────────────────────────────────────
-
-const DifficultyBar = ({ value }: { value: number | null }) => {
-  const difficulty = value ?? 0
-  const filled = Math.round(difficulty * 5)
-
-  return (
-    <div className="flex items-center gap-0.5" title={`Difficulty: ${difficulty.toFixed(2)}`}>
-      {Array.from({ length: 5 }, (_, i) => (
-        <div
-          key={i}
-          className={`h-2.5 w-1.5 rounded-[1px] ${
-            i < filled ? 'bg-[#D4951A]' : 'bg-[#D4DAE3]'
-          }`}
-        />
-      ))}
-    </div>
-  )
 }
 
 // ─── Toggle Button Group ────────────────────────────────────
@@ -856,6 +838,7 @@ const QuestionCard = ({
   const nodeName = node?.name || null
   const hasCitation = Boolean(question.code_citation)
   const hasRationale = Boolean(question.rationale)
+  const [showCampPreview, setShowCampPreview] = useState(false)
 
   // ── Deleted state ──────────────────────────────────────────
   if (isDeleted) {
@@ -955,13 +938,27 @@ const QuestionCard = ({
             <span className="font-mono text-[11px] text-[#8896A7]">{aleId}</span>
           )}
         </div>
-        <button
-          type="button"
-          onClick={onToggle}
-          className="text-xs text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1A2332]"
-        >
-          Collapse &#9652;
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setShowCampPreview((v) => !v)}
+            className={`rounded-sm border px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 ease-out ${
+              showCampPreview
+                ? 'border-[#D4951A] bg-[#FFF8EB] text-[#D4951A]'
+                : 'border-[#D4DAE3] bg-white text-[#4A5568] hover:border-[#8896A7] hover:text-[#1A2332]'
+            }`}
+            title="Toggle Camp Mode preview"
+          >
+            {showCampPreview ? 'Hide Preview' : 'Preview'}
+          </button>
+          <button
+            type="button"
+            onClick={onToggle}
+            className="text-xs text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1A2332]"
+          >
+            Collapse &#9652;
+          </button>
+        </div>
       </div>
 
       <QuestionCardExpanded
@@ -971,6 +968,22 @@ const QuestionCard = ({
         onUpdate={onUpdate}
         onDelete={onDelete}
       />
+
+      {/* ── Camp Mode Preview (inline toggle) ─────────────── */}
+      {showCampPreview && (
+        <div className="border-t border-[#D4DAE3] px-3 pb-3 pt-3">
+          <CampModePreview
+            stem={question.text}
+            options={question.options.map((o) => o.text)}
+            correctAnswer={question.options.findIndex(
+              (o) => o.id === question.correct_option_id
+            )}
+            rationale={question.rationale || ''}
+            codeCitation={question.code_citation || undefined}
+            difficulty={question.difficulty ?? undefined}
+          />
+        </div>
+      )}
     </div>
   )
 }
@@ -1072,6 +1085,26 @@ export const QuestionsPanel = ({
   const [searchQuery, setSearchQuery] = useState('')
   const [rationaleFilter, setRationaleFilter] = useState<RationaleFilter>('all')
   const [citationFilter, setCitationFilter] = useState<CitationFilter>('all')
+
+  // ── Search input ref (for ⌘K focus) ───────────────────────
+  const searchInputRef = useRef<HTMLInputElement>(null)
+
+  // ── Keyboard shortcuts: Escape + ⌘K ──────────────────────
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setExpandedId(null)
+        setExpandedDraftId(null)
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        searchInputRef.current?.focus()
+        searchInputRef.current?.select()
+      }
+    }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }, [])
 
   // ── Build node lookup ─────────────────────────────────────
   const nodeMap = useMemo(() => {
@@ -1270,10 +1303,11 @@ export const QuestionsPanel = ({
                   <path d="M10.5 10.5L14 14" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
                 </svg>
                 <input
+                  ref={searchInputRef}
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search question stems..."
+                  placeholder="Search question stems... (⌘K)"
                   className="w-full border border-[#D4DAE3] rounded-sm bg-white py-1 pl-7 pr-2.5 text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:ring-2 focus:ring-[#1B3FC4]/20 outline-none transition-colors duration-150 ease-out"
                 />
               </div>

@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageUsers } from '@/lib/admin/roles'
 
 /**
@@ -39,7 +40,7 @@ export const assignRole = async (formData: FormData) => {
     throw new Error('Invalid user ID format')
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { error } = await supabase
     .from('user_roles')
     .insert({ user_id: userId, role })
@@ -67,7 +68,7 @@ export const revokeRole = async (formData: FormData) => {
     throw new Error('Missing required field: roleId')
   }
 
-  const supabase = await createClient()
+  const supabase = createAdminClient()
   const { error } = await supabase
     .from('user_roles')
     .delete()

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
+import { AlertTriangle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
@@ -16,18 +17,34 @@ const AdminError = ({ error, reset }: ErrorProps) => {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 p-8">
-      <h2 className="font-display text-xl font-extrabold text-foreground">
-        Admin panel error
-      </h2>
-      <p className="max-w-sm text-center text-sm text-muted-foreground">
-        Something went wrong in the admin area.
-      </p>
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FDF0F0]">
+        <AlertTriangle className="h-6 w-6 text-[#D64545]" />
+      </div>
+      <div className="text-center">
+        <h2 className="text-lg font-semibold text-[#1A2332]">
+          Something went wrong
+        </h2>
+        <p className="mt-1 max-w-sm text-sm text-[#4A5568]">
+          {error.message || 'An unexpected error occurred in the admin area.'}
+        </p>
+        {error.digest && (
+          <p className="mt-1 font-mono text-[11px] text-[#8896A7]">
+            Error ID: {error.digest}
+          </p>
+        )}
+      </div>
       <div className="flex gap-3">
-        <Button onClick={reset} variant="outline" size="sm">
-          Retry
+        <Button
+          onClick={reset}
+          size="sm"
+          className="bg-[#1B3FC4] text-white hover:bg-[#1535A8]"
+        >
+          Try again
         </Button>
-        <Link href="/admin">
-          <Button size="sm">Back to Admin</Button>
+        <Link href="/admin/dashboard">
+          <Button variant="outline" size="sm">
+            Back to Dashboard
+          </Button>
         </Link>
       </div>
     </div>

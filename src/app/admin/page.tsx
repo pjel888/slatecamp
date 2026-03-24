@@ -32,17 +32,17 @@ export default function AdminLandingPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 px-6">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-[#F8F7F5] px-6">
       <div className="w-full max-w-[400px] space-y-8">
         <div className="text-center">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-zinc-900">
-            SLATECAMP <span className="text-zinc-400">ADMIN</span>
+          <Link href="/" className="text-xl font-bold tracking-tighter text-[#1A2332]">
+            SLATECAMP <span className="text-[#8896A7]">ADMIN</span>
           </Link>
-          <h1 className="mt-6 text-xl font-semibold text-zinc-900">Staff Portal</h1>
-          <p className="mt-2 text-sm text-zinc-500">Authorized personnel only.</p>
+          <h1 className="mt-6 text-xl font-semibold text-[#1A2332]">Staff Portal</h1>
+          <p className="mt-2 text-sm text-[#4A5568]">Authorized personnel only.</p>
         </div>
 
-        <div className="rounded-md border border-zinc-200 bg-white p-8 shadow-sm">
+        <div className="rounded-md border border-[#D4DAE3] bg-white p-8 shadow-sm">
           <SignInWithGoogleButton
             onClick={handleAdminLogin}
             disabled={loading}
@@ -51,7 +51,7 @@ export default function AdminLandingPage() {
           {error && <p className="mt-4 text-center text-xs text-[#D64545]">{error}</p>}
         </div>
         
-        <p className="text-center text-[11px] text-zinc-400 uppercase tracking-widest">
+        <p className="text-center text-[11px] text-[#8896A7] uppercase tracking-widest">
           Secure Environment
         </p>
       </div>

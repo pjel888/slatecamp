@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { cn } from '@/lib/utils'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
+import { EventBadge } from '@/components/ui/event-badge'
 
 export function AuditLogViewer() {
   const [logs, setLogs] = useState<AuditLog[]>([])
@@ -42,13 +42,6 @@ export function AuditLogViewer() {
     return matchesSearch
   })
 
-  const eventColors: Record<string, string> = {
-    CREATE: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-    UPDATE: 'bg-[#EEF2FC] text-[#1535A8] dark:bg-[#1C2433] dark:text-[#5B7FE0]',
-    DELETE: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
-    PUBLISH: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
-  }
-
   return (
     <div className="space-y-4">
       {/* Filters */}
@@ -71,6 +64,7 @@ export function AuditLogViewer() {
           <option value="">All Tables</option>
           <option value="questions">questions</option>
           <option value="wiki_articles">wiki_articles</option>
+          <option value="taxonomy_tree">taxonomy_tree</option>
           <option value="models_3d">models_3d</option>
         </select>
         <select
@@ -129,12 +123,7 @@ export function AuditLogViewer() {
                       {new Date(log.created_at).toLocaleString()}
                     </td>
                     <td className="px-4 py-3">
-                      <span className={cn(
-                        "inline-flex px-2 py-0.5 rounded-full text-xs font-medium",
-                        eventColors[log.event_type]
-                      )}>
-                        {log.event_type}
-                      </span>
+                      <EventBadge eventType={log.event_type} />
                     </td>
                     <td className="px-4 py-3 text-sm">{log.table_name}</td>
                     <td className="px-4 py-3 text-sm font-mono text-xs">

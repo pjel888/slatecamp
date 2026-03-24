@@ -3,6 +3,20 @@ import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/portal/CodeBlock'
 import { PropTable } from '@/app/developer/_components/PropTable'
+import { cn } from '@/lib/utils'
+
+/* Wiki MDX components — imported for live previews */
+import { Note, Warn, Tip, Callout } from '@/components/wiki/Callout'
+import { LawCallout } from '@/components/wiki/LawCallout'
+import { WikiCalloutBox } from '@/components/wiki/WikiCalloutBox'
+import { WikiPartHeader } from '@/components/wiki/WikiPartHeader'
+import { WikiChangedPill } from '@/components/wiki/WikiChangedPill'
+import { KeyValues } from '@/components/wiki/KeyValues'
+import { FormulaBlock } from '@/components/wiki/FormulaBlock'
+import { Tabs as WikiTabs, Tab } from '@/components/wiki/WikiTabs'
+import { Accordion, AccordionItem } from '@/components/ui/accordion'
+import { WikiMistakeCard } from '@/components/wiki/WikiMistakeCard'
+import { WikiMistakeList } from '@/components/wiki/WikiMistakeList'
 
 export const metadata = {
   title: 'Component Library — SlateCamp Developer Portal',
@@ -35,6 +49,12 @@ const SectionLabel = ({ children }: { children: React.ReactNode }) => (
   <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2 mt-6 first:mt-0">
     {children}
   </p>
+)
+
+const PreviewBox = ({ children, className }: { children: React.ReactNode; className?: string }) => (
+  <div className={cn('rounded-md border border-border/60 bg-muted/20 p-4 overflow-hidden space-y-3', className)}>
+    {children}
+  </div>
 )
 
 const ComponentCard = ({
@@ -403,6 +423,12 @@ const MdxComponentsTab = () => (
           { name: 'children', type: 'React.ReactNode', required: true },
         ]}
       />
+      <PreviewBox>
+        <Note>This is the default note callout — blue info style.</Note>
+        <Warn title="Important">Check minimum egress width before sizing corridors.</Warn>
+        <Tip>Mnemonics work best when tied to a physical memory anchor.</Tip>
+        <Callout variant="most-tested">Section 501 appears on 60% of board exams.</Callout>
+      </PreviewBox>
       <CodeBlock
         language="mdx"
         code={`<Note>This is the default note callout — blue info style.</Note>
@@ -468,6 +494,14 @@ const MdxComponentsTab = () => (
           { name: 'children', type: 'React.ReactNode', required: true },
         ]}
       />
+      <PreviewBox>
+        <LawCallout code="nbcp" section="Section 401">
+          Minimum corridor width: 1.10 m for residential occupancies, 1.50 m for all others.
+        </LawCallout>
+        <LawCallout code="bp344" section="Section 7.1" title="Accessible Parking">
+          At least one in every 50 parking slots shall be designated for PWDs.
+        </LawCallout>
+      </PreviewBox>
       <CodeBlock
         language="mdx"
         code={`<LawCallout code="nbcp" section="Section 401">
@@ -510,6 +544,11 @@ const MdxComponentsTab = () => (
           { name: 'children', type: 'React.ReactNode', required: true },
         ]}
       />
+      <PreviewBox>
+        <WikiCalloutBox type="most-tested">
+          Section 701 (Exit Requirements) appears in 3 of the last 5 boards.
+        </WikiCalloutBox>
+      </PreviewBox>
       <CodeBlock
         language="mdx"
         code={`<WikiCalloutBox type="most-tested">
@@ -557,9 +596,12 @@ const MdxComponentsTab = () => (
       badge={<MdxBadge />}
       description="Section divider within a long article. Renders a numbered part label with a thick underline accent."
     >
+      <PreviewBox>
+        <WikiPartHeader partNumber={1} title="Human Body Dimensions" />
+      </PreviewBox>
       <CodeBlock
         language="mdx"
-        code={`<WikiPartHeader part={1} title="Human Body Dimensions" />`}
+        code={`<WikiPartHeader partNumber={1} title="Human Body Dimensions" />`}
       />
     </ComponentCard>
 
@@ -568,9 +610,12 @@ const MdxComponentsTab = () => (
       badge={<MdxBadge />}
       description="Inline indicator for provisions that changed in a recent code revision. Orange pill with amendment year."
     >
+      <PreviewBox>
+        <p className="text-sm text-foreground">The minimum accessible ramp gradient is 1:12 <WikiChangedPill oldValue="1:10 (2013 IRR)" />.</p>
+      </PreviewBox>
       <CodeBlock
         language="mdx"
-        code={`The minimum accessible ramp gradient is 1:12 <WikiChangedPill year={2023} />.`}
+        code={`The minimum accessible ramp gradient is 1:12 <WikiChangedPill oldValue="1:10 (2013 IRR)" />.`}
       />
     </ComponentCard>
 
@@ -581,12 +626,19 @@ const MdxComponentsTab = () => (
       badge={<MdxBadge />}
       description="Definition list for numeric standards and code thresholds. Renders key-value pairs in a compact grid."
     >
+      <PreviewBox>
+        <KeyValues items={[
+          { label: 'Min corridor width (residential)', value: '1.10 m' },
+          { label: 'Min corridor width (commercial)', value: '1.50 m' },
+          { label: 'Min stair width', value: '0.90 m' },
+        ]} />
+      </PreviewBox>
       <CodeBlock
         language="mdx"
         code={`<KeyValues items={[
-  { key: 'Min corridor width (residential)', value: '1.10 m' },
-  { key: 'Min corridor width (commercial)', value: '1.50 m' },
-  { key: 'Min stair width', value: '0.90 m' },
+  { label: 'Min corridor width (residential)', value: '1.10 m' },
+  { label: 'Min corridor width (commercial)', value: '1.50 m' },
+  { label: 'Min stair width', value: '0.90 m' },
 ]} />`}
       />
     </ComponentCard>
@@ -596,11 +648,15 @@ const MdxComponentsTab = () => (
       badge={<MdxBadge />}
       description="Styled formula display with LaTeX support. Uses a monospace code-block style with optional variable legend."
     >
+      <PreviewBox>
+        <FormulaBlock label="Floor Area Ratio" steps={[
+          { variable: 'FAR', operator: '=', operands: ['GFA', 'Lot Area'], symbol: '÷' },
+        ]} />
+      </PreviewBox>
       <CodeBlock
         language="mdx"
-        code={`<FormulaBlock formula="FAR = GFA / Lot Area" legend={[
-  { symbol: 'FAR', definition: 'Floor Area Ratio' },
-  { symbol: 'GFA', definition: 'Gross Floor Area (all floors, m²)' },
+        code={`<FormulaBlock label="Floor Area Ratio" steps={[
+  { variable: 'FAR', operator: '=', operands: ['GFA', 'Lot Area'], symbol: '÷' },
 ]} />`}
       />
     </ComponentCard>
@@ -699,6 +755,148 @@ const MdxComponentsTab = () => (
   { label: 'Submit application', detail: 'City Building Official — 3 copies' },
   { label: 'Evaluation', detail: 'Compliance check against NBCP and local ordinances' },
   { label: 'Issuance', detail: 'Building permit released within 15 working days' },
+]} />`}
+      />
+    </ComponentCard>
+
+    <SectionLabel>Interactive Blocks</SectionLabel>
+
+    {/* WikiTabs / Tab */}
+    <ComponentCard
+      name="Tabs / Tab"
+      badge={<MdxBadge />}
+      path="src/components/wiki/WikiTabs.tsx"
+      description="MDX-compatible tabbed content. Parses child Tab elements by label/value props. For app UI, use the Base UI Tabs from src/components/ui/tabs.tsx instead."
+    >
+      <PropTable
+        props={[
+          { name: 'defaultTab', type: 'string', default: 'first tab value', description: 'Initially active tab value' },
+        ]}
+      />
+      <PreviewBox>
+        <WikiTabs defaultTab="overview">
+          <Tab label="Overview" value="overview">
+            Site analysis is the systematic study of existing conditions.
+          </Tab>
+          <Tab label="Key Provisions" value="provisions">
+            NBCP Section 708: Minimum setback requirements.
+          </Tab>
+          <Tab label="Practice Tips" value="tips">
+            Focus on slope classification and solar orientation.
+          </Tab>
+        </WikiTabs>
+      </PreviewBox>
+      <CodeBlock
+        language="mdx"
+        code={`<Tabs defaultTab="overview">
+  <Tab label="Overview" value="overview">
+    Site analysis is the systematic study of existing conditions.
+  </Tab>
+  <Tab label="Key Provisions" value="provisions">
+    NBCP Section 708: Minimum setback requirements.
+  </Tab>
+  <Tab label="Practice Tips" value="tips">
+    Focus on slope classification and solar orientation.
+  </Tab>
+</Tabs>`}
+      />
+    </ComponentCard>
+
+    {/* Accordion / AccordionItem */}
+    <ComponentCard
+      name="Accordion / AccordionItem"
+      badge={<MdxBadge />}
+      path="src/components/ui/accordion.tsx"
+      description="Collapsible content sections with single-open (default) or multi-open modes. Context-based: items inside an Accordion parent are coordinated; standalone AccordionItems manage their own state."
+    >
+      <PropTable
+        props={[
+          { name: 'allowMultiple', type: 'boolean', default: 'false', description: 'Allow multiple items open at once' },
+          { name: 'title', type: 'string', required: true, description: 'AccordionItem header text' },
+        ]}
+      />
+      <PreviewBox>
+        <Accordion>
+          <AccordionItem title="What is FAR?">
+            Floor Area Ratio = Total Gross Floor Area / Total Lot Area.
+          </AccordionItem>
+          <AccordionItem title="How is ISA calculated?">
+            Impervious Surface Area ratio limits hard surfaces on a lot.
+          </AccordionItem>
+          <AccordionItem title="NBCP fire setback rules">
+            PD 1096 Section 708 requires minimum setbacks based on occupancy.
+          </AccordionItem>
+        </Accordion>
+      </PreviewBox>
+      <CodeBlock
+        language="mdx"
+        code={`<Accordion>
+  <AccordionItem title="What is FAR?">
+    Floor Area Ratio = Total Gross Floor Area / Total Lot Area.
+  </AccordionItem>
+  <AccordionItem title="How is ISA calculated?">
+    Impervious Surface Area ratio limits hard surfaces on a lot.
+  </AccordionItem>
+  <AccordionItem title="NBCP fire setback rules">
+    PD 1096 Section 708 requires minimum setbacks based on occupancy.
+  </AccordionItem>
+</Accordion>`}
+      />
+    </ComponentCard>
+
+    {/* WikiMistakeCard */}
+    <ComponentCard
+      name="WikiMistakeCard"
+      badge={<MdxBadge />}
+      path="src/components/wiki/WikiMistakeCard.tsx"
+      description="Error correction card showing a common student mistake vs the correct answer, with an explanation. Used inside WikiMistakeList."
+    >
+      <PropTable
+        props={[
+          { name: 'wrong', type: 'string', required: true, description: 'What students commonly write' },
+          { name: 'correct', type: 'string', required: true, description: 'The correct answer' },
+          { name: 'explanation', type: 'string', required: true, description: 'Why the mistake happens and how to remember correctly' },
+        ]}
+      />
+      <PreviewBox>
+        <WikiMistakeCard
+          number={1}
+          title="FAR Formula Reversal"
+          wrongValue="FAR = Lot Area / GFA"
+          correctValue="FAR = GFA / Lot Area"
+          explanation="FAR measures how much floor area you get per unit of land, not the inverse."
+        />
+      </PreviewBox>
+      <CodeBlock
+        language="mdx"
+        code={`<WikiMistakeCard
+  number={1}
+  title="FAR Formula Reversal"
+  wrongValue="FAR = Lot Area / GFA"
+  correctValue="FAR = GFA / Lot Area"
+  explanation="FAR measures how much floor area you get per unit of land, not the inverse."
+/>`}
+      />
+    </ComponentCard>
+
+    {/* WikiMistakeList */}
+    <ComponentCard
+      name="WikiMistakeList"
+      badge={<MdxBadge />}
+      path="src/components/wiki/WikiMistakeList.tsx"
+      description="Container for multiple WikiMistakeCard instances. Renders a titled section with consistent spacing."
+    >
+      <PreviewBox>
+        <WikiMistakeList mistakes={[
+          { number: 1, title: "OSPA Calculation", wrongValue: "OSPA = 70% of TLA", correctValue: "OSPA = 100% - BHL% - ISA%", explanation: "OSPA is derived from subtracting built-up and impervious areas, not a fixed percentage." },
+          { number: 2, title: "Setback Measurement", wrongValue: "Setback is measured from property line to nearest wall", correctValue: "Setback is measured from property line to outermost face of building", explanation: "Projections like eaves and balconies count toward the building face." },
+        ]} />
+      </PreviewBox>
+      <CodeBlock
+        language="mdx"
+        code={`<WikiMistakeList mistakes={[
+  { number: 1, title: "OSPA Calculation", wrongValue: "OSPA = 70% of TLA", correctValue: "OSPA = 100% - BHL% - ISA%", explanation: "OSPA is derived from subtracting built-up and impervious areas, not a fixed percentage." },
+  { number: 2, title: "Setback Measurement", wrongValue: "Setback from property line to nearest wall", correctValue: "Setback from property line to outermost face of building", explanation: "Projections like eaves and balconies count toward the building face." },
 ]} />`}
       />
     </ComponentCard>

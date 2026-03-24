@@ -12,17 +12,70 @@ import { ComponentShowcase } from '@/app/developer/_components/ComponentShowcase
 /* ------------------------------------------------------------------ */
 
 const brandColors = [
-  { name: 'Camp Cobalt', hex: '#1B3FC4', var: '--camp-cobalt', tw: 'bg-[#1B3FC4]', usage: 'Primary actions, nav, links, active states' },
-  { name: 'Camp Cobalt 50', hex: '#EEF2FC', var: '--slate-blue-50', tw: 'bg-[#EEF2FC]', usage: 'Active backgrounds, tints, hover states' },
-  { name: 'Cobalt 700', hex: '#1535A8', var: '--accent-hover', tw: 'bg-[#1535A8]', usage: 'Hover / pressed cobalt states' },
-  { name: 'Camp Orange', hex: '#E8853A', var: '--camp-orange', tw: 'bg-[#E8853A]', usage: 'Progress celebration, warm CTAs' },
-  { name: 'Emerald', hex: '#2D9F6F', var: '--emerald', tw: 'bg-[#2D9F6F]', usage: 'Success, mastery, correct answers' },
-  { name: 'Emerald 50', hex: '#EDFAF4', var: '--emerald-50', tw: 'bg-[#EDFAF4]', usage: 'Success backgrounds' },
-  { name: 'Warm Red', hex: '#D64545', var: '--danger', tw: 'bg-[#D64545]', usage: 'Error, critical — always with context' },
-  { name: 'Warm Red 50', hex: '#FDF0F0', var: '--quiz-wrong-bg', tw: 'bg-[#FDF0F0]', usage: 'Error backgrounds' },
-  { name: 'Amber', hex: '#D4951A', var: '--warning', tw: 'bg-[#D4951A]', usage: 'Warning, developing skill' },
-  { name: 'Amber 50', hex: '#FEF8ED', var: '--confidence-unsure', tw: 'bg-[#FEF8ED]', usage: 'Warning backgrounds' },
-  { name: 'Info Blue', hex: '#3B82C8', var: '--info', tw: 'bg-[#3B82C8]', usage: 'Informational callouts' },
+  { name: 'Primary (Cobalt)', hex: '#1B3FC4', var: '--primary', tw: 'bg-primary', usage: 'Primary actions, nav, links, active states' },
+  { name: 'Primary 50', hex: '#EEF2FC', var: '--primary-50', tw: 'bg-primary-50', usage: 'Active backgrounds, tints, hover states' },
+  { name: 'Primary 700', hex: '#1535A8', var: '--primary-700', tw: 'bg-primary-700', usage: 'Hover / pressed states' },
+  { name: 'Accent (Orange)', hex: '#E8853A', var: '--accent', tw: 'bg-accent', usage: 'Progress celebration, warm CTAs' },
+  { name: 'Success (Emerald)', hex: '#2D9F6F', var: '--success', tw: 'bg-success', usage: 'Success, mastery, correct answers' },
+  { name: 'Success 50', hex: '#EDFAF4', var: '--success-50', tw: 'bg-success-50', usage: 'Success backgrounds' },
+  { name: 'Destructive (Red)', hex: '#D64545', var: '--destructive', tw: 'bg-destructive', usage: 'Error, critical — always with context' },
+  { name: 'Destructive 50', hex: '#FDF0F0', var: '--destructive-50', tw: 'bg-destructive-50', usage: 'Error backgrounds' },
+  { name: 'Warning (Amber)', hex: '#D4951A', var: '--warning', tw: 'bg-warning', usage: 'Warning, developing skill' },
+  { name: 'Warning 50', hex: '#FEF8ED', var: '--warning-50', tw: 'bg-warning-50', usage: 'Warning backgrounds' },
+  { name: 'Info Blue', hex: '#3B82C8', var: '--info', tw: 'bg-info', usage: 'Informational callouts' },
+]
+
+const shadeScales = [
+  {
+    name: 'Primary',
+    shades: [
+      { shade: '50', hex: '#EEF2FC' }, { shade: '100', hex: '#E3E6F3' },
+      { shade: '200', hex: '#C4CCE9' }, { shade: '300', hex: '#91A1DE' },
+      { shade: '400', hex: '#5874DA' }, { shade: '500', hex: '#1B3FC4' },
+      { shade: '600', hex: '#1739B5' }, { shade: '700', hex: '#1535A8' },
+      { shade: '800', hex: '#0A2070' }, { shade: '900', hex: '#06154C' },
+    ],
+  },
+  {
+    name: 'Success',
+    shades: [
+      { shade: '50', hex: '#EDFAF4' }, { shade: '100', hex: '#E5F0EB' },
+      { shade: '200', hex: '#C9E3D8' }, { shade: '300', hex: '#9CD3BC' },
+      { shade: '400', hex: '#6BC7A0' }, { shade: '500', hex: '#2D9F6F' },
+      { shade: '600', hex: '#258B5F' }, { shade: '700', hex: '#1D7A50' },
+      { shade: '800', hex: '#186243' }, { shade: '900', hex: '#0F422D' },
+    ],
+  },
+  {
+    name: 'Warning',
+    shades: [
+      { shade: '50', hex: '#FEF8ED' }, { shade: '100', hex: '#F3EDE2' },
+      { shade: '200', hex: '#EADDC2' }, { shade: '300', hex: '#E1C58E' },
+      { shade: '400', hex: '#DEAF54' }, { shade: '500', hex: '#D4951A' },
+      { shade: '600', hex: '#B88114' }, { shade: '700', hex: '#96680D' },
+      { shade: '800', hex: '#724E08' }, { shade: '900', hex: '#4E3504' },
+    ],
+  },
+  {
+    name: 'Destructive',
+    shades: [
+      { shade: '50', hex: '#FDF0F0' }, { shade: '100', hex: '#F3E2E2' },
+      { shade: '200', hex: '#E9C4C4' }, { shade: '300', hex: '#DE9292' },
+      { shade: '400', hex: '#D75B5B' }, { shade: '500', hex: '#D64545' },
+      { shade: '600', hex: '#AC2020' }, { shade: '700', hex: '#8C1717' },
+      { shade: '800', hex: '#6A1010' }, { shade: '900', hex: '#480A0A' },
+    ],
+  },
+  {
+    name: 'Accent',
+    shades: [
+      { shade: '50', hex: '#FEF3E8' }, { shade: '100', hex: '#F5E9E0' },
+      { shade: '200', hex: '#EED3BF' }, { shade: '300', hex: '#E8B188' },
+      { shade: '400', hex: '#E78E4B' }, { shade: '500', hex: '#E8853A' },
+      { shade: '600', hex: '#BD5A0F' }, { shade: '700', hex: '#D4751A' },
+      { shade: '800', hex: '#763505' }, { shade: '900', hex: '#502302' },
+    ],
+  },
 ]
 
 const surfaceColors = [
@@ -287,13 +340,39 @@ export default function DesignSystemPage() {
           <ColorSection title="Ink &amp; Borders" colors={inkColors} />
           <ColorSection title="Semantic — Quiz States &amp; Charts" colors={semanticColors} />
 
+          {/* Shade Scales */}
+          <div className="mt-8 mb-6">
+            <h3 className="font-[family-name:var(--font-display)] font-bold text-[13px] text-foreground mb-4">Shade Scales (50–900)</h3>
+            <div className="space-y-4">
+              {shadeScales.map((scale) => (
+                <div key={scale.name}>
+                  <p className="font-[family-name:var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-muted-foreground mb-1.5">{scale.name}</p>
+                  <div className="flex rounded-md overflow-hidden border border-border">
+                    {scale.shades.map((s) => (
+                      <div
+                        key={s.shade}
+                        className="flex-1 h-10 relative group cursor-pointer"
+                        style={{ backgroundColor: s.hex }}
+                        title={`${scale.name.toLowerCase()}-${s.shade}: ${s.hex}`}
+                      >
+                        <span className={`absolute inset-0 flex items-center justify-center font-[family-name:var(--font-dm-mono)] text-[9px] font-medium opacity-0 group-hover:opacity-100 transition-opacity ${parseInt(s.shade) >= 500 ? 'text-white' : 'text-foreground'}`}>
+                          {s.shade}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-6">
             <h3 className="font-[family-name:var(--font-display)] font-bold text-[13px] text-foreground mb-2">Usage</h3>
             <CodeBlock
               language="css"
               code={`/* Use CSS custom properties directly */
 .my-element {
-  background-color: var(--camp-cobalt);  /* #1B3FC4 */
+  background-color: var(--primary);  /* #1B3FC4 */
   color: var(--text-primary);            /* #1A2332 */
   border-color: var(--border);           /* #D4DAE3 */
 }

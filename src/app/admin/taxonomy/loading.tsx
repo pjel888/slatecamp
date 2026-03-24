@@ -6,7 +6,7 @@ const Loading = () => (
         <div key={i} className="h-10 bg-muted rounded-md" style={{ marginLeft: `${(i % 3) * 24}px` }} />
       ))}
     </div>
-    <div className="w-[40%] bg-card border border-border rounded-xl p-4 space-y-4">
+    <div className="w-[40%] bg-card border border-border rounded-md p-4 space-y-4">
       <div className="h-4 w-24 bg-muted rounded" />
       {Array.from({ length: 6 }).map((_, i) => (
         <div key={i} className="space-y-2">

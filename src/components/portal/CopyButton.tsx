@@ -23,7 +23,7 @@ const CopyButton = ({ text, className }: CopyButtonProps) => {
       type="button"
       onClick={handleCopy}
       className={cn(
-        'inline-flex items-center gap-1 font-[family-name:var(--font-dm-mono)] text-[9px] px-1.5 py-0.5 rounded border transition-colors duration-150',
+        'inline-flex items-center gap-1 font-[family-name:var(--font-dm-mono)] text-[11px] px-1.5 py-0.5 rounded border transition-colors duration-150',
         copied
           ? 'text-emerald-400 border-emerald-500/30'
           : 'text-white/35 border-white/10 hover:text-white/70 hover:border-white/20',
