@@ -32,7 +32,7 @@ function DialogOverlay({
     <DialogPrimitive.Backdrop
       data-slot="dialog-overlay"
       className={cn(
-        "fixed inset-0 isolate z-50 bg-black/20 duration-100 supports-backdrop-filter:backdrop-blur-md data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
+        "fixed inset-0 isolate z-50 bg-black/50 backdrop-blur-sm duration-100 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0",
         className
       )}
       {...props}
@@ -40,13 +40,25 @@ function DialogOverlay({
   )
 }
 
+const dialogSizeMap = {
+  sm: 'sm:max-w-sm',
+  md: 'sm:max-w-md',
+  lg: 'sm:max-w-lg',
+  xl: 'sm:max-w-xl',
+  full: 'sm:max-w-3xl',
+} as const
+
+type DialogSize = keyof typeof dialogSizeMap
+
 function DialogContent({
   className,
   children,
   showCloseButton = true,
+  size = 'md',
   ...props
 }: DialogPrimitive.Popup.Props & {
   showCloseButton?: boolean
+  size?: DialogSize
 }) {
   return (
     <DialogPortal>
@@ -54,7 +66,8 @@ function DialogContent({
       <DialogPrimitive.Popup
         data-slot="dialog-content"
         className={cn(
-          "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-lg bg-background p-4 text-sm ring-1 ring-foreground/10 duration-100 outline-none sm:max-w-sm data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+          "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-xl border border-border bg-card p-4 text-sm shadow-lg duration-100 outline-none data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+          dialogSizeMap[size],
           className
         )}
         {...props}
@@ -143,6 +156,75 @@ function DialogDescription({
   )
 }
 
+/* ------------------------------------------------------------------ */
+/*  ConfirmDialog                                                     */
+/* ------------------------------------------------------------------ */
+
+interface ConfirmDialogProps {
+  open: boolean
+  onOpenChange: (open: boolean) => void
+  title: string
+  description?: string
+  confirmLabel?: string
+  cancelLabel?: string
+  confirmVariant?: 'primary' | 'destructive'
+  onConfirm: () => void | Promise<void>
+  onCancel?: () => void
+  loading?: boolean
+}
+
+const ConfirmDialog = ({
+  open,
+  onOpenChange,
+  title,
+  description,
+  confirmLabel = 'Confirm',
+  cancelLabel = 'Cancel',
+  confirmVariant = 'primary',
+  onConfirm,
+  onCancel,
+  loading = false,
+}: ConfirmDialogProps) => {
+  const handleCancel = React.useCallback(() => {
+    onCancel?.()
+    onOpenChange(false)
+  }, [onCancel, onOpenChange])
+
+  const handleConfirm = React.useCallback(async () => {
+    await onConfirm()
+    onOpenChange(false)
+  }, [onConfirm, onOpenChange])
+
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent size="sm" showCloseButton={false}>
+        <DialogHeader>
+          <DialogTitle>{title}</DialogTitle>
+          {description && (
+            <DialogDescription>{description}</DialogDescription>
+          )}
+        </DialogHeader>
+        <DialogFooter className="sm:justify-between">
+          <Button
+            variant="secondary"
+            onClick={handleCancel}
+            disabled={loading}
+          >
+            {cancelLabel}
+          </Button>
+          <Button
+            variant={confirmVariant === 'destructive' ? 'destructive' : 'default'}
+            onClick={handleConfirm}
+            disabled={loading}
+          >
+            {loading ? 'Loading...' : confirmLabel}
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+  )
+}
+
 export {
   Dialog,
   DialogClose,
@@ -154,4 +236,7 @@ export {
   DialogPortal,
   DialogTitle,
   DialogTrigger,
+  ConfirmDialog,
 }
+
+export type { DialogSize, ConfirmDialogProps }

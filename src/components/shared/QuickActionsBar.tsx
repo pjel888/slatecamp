@@ -113,7 +113,7 @@ export function QuickActionsBar() {
                     <SCIcon icon={Icon} size="md" />
                   </button>
                 </TooltipTrigger>
-                <TooltipContent side="top" className='bg-[#1A2332] text-white font-medium text-xs'>
+                <TooltipContent side="top" className='bg-foreground text-white font-medium text-xs'>
                   {label}
                 </TooltipContent>
               </Tooltip>

@@ -10,28 +10,48 @@ const PENDING_CLASSES =
   'cursor-not-allowed opacity-70 transition-[opacity] duration-150 ease-in-out'
 
 const buttonVariants = cva(
-  "group/button inline-flex shrink-0 items-center justify-center rounded-sm border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "group/button inline-flex shrink-0 items-center justify-center gap-1.5 rounded-sm border border-transparent bg-clip-padding font-medium whitespace-nowrap transition-all duration-150 ease-out outline-none select-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: 'bg-primary text-white hover:brightness-90',
-        outline:
-          'border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50',
+        // Primary (also aliased as 'default')
+        primary:
+          'bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
+        default:
+          'bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
+
+        // Secondary (also aliased as 'outline')
         secondary:
-          'bg-transparent border border-border text-foreground hover:bg-muted',
+          'bg-transparent border border-border text-foreground hover:bg-muted active:bg-muted/80 active:scale-[0.98]',
+        outline:
+          'bg-transparent border border-border text-foreground hover:bg-muted active:bg-muted/80 active:scale-[0.98]',
+
+        // Ghost
         ghost:
-          'hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50',
+          'bg-transparent text-foreground hover:bg-muted active:bg-muted/80 aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50',
+
+        // Destructive
         destructive:
-          'bg-transparent border border-destructive text-destructive hover:bg-destructive/10',
-        warmCta: 'bg-[#E8853A] text-white hover:brightness-90',
-        link: 'text-primary underline-offset-4 hover:underline',
+          'bg-destructive text-destructive-foreground hover:bg-destructive/90 active:bg-destructive/80 active:scale-[0.98]',
+
+        // Link
+        link: 'text-primary underline-offset-4 hover:underline active:text-primary/80',
+
+        // Success
+        success:
+          'bg-emerald text-white hover:bg-emerald/90 active:bg-emerald/80 active:scale-[0.98]',
+
+        // Warm CTA (orange accent, backward compat)
+        warmCta:
+          'bg-[#E8853A] text-white hover:brightness-90 active:brightness-80 active:scale-[0.98]',
       },
       size: {
-        default:
-          'h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2',
-        xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-sm has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
-        sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-sm has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
-        lg: 'h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3',
+        xs: "h-7 gap-1 px-2 py-1 text-[11px] [&_svg:not([class*='size-'])]:size-3",
+        sm: "h-8 gap-1 px-3 py-1.5 text-xs [&_svg:not([class*='size-'])]:size-3.5",
+        md: "h-9 gap-1.5 px-4 py-2 text-sm [&_svg:not([class*='size-'])]:size-4",
+        default: "h-9 gap-1.5 px-4 py-2 text-sm [&_svg:not([class*='size-'])]:size-4",
+        lg: "h-10 gap-1.5 px-6 py-2.5 text-sm [&_svg:not([class*='size-'])]:size-4",
+        xl: "h-12 gap-2 px-8 py-3 text-base [&_svg:not([class*='size-'])]:size-5",
         icon: 'size-8',
         'icon-xs':
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-sm [&_svg:not([class*='size-'])]:size-3",
@@ -47,29 +67,116 @@ const buttonVariants = cva(
   },
 )
 
-function Button({
+/* ------------------------------------------------------------------ */
+/* Spinner (inline SVG, used when loading=true)                       */
+/* ------------------------------------------------------------------ */
+
+const Spinner = ({ className }: { className?: string }) => (
+  <svg
+    className={cn('animate-spin', className)}
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <circle
+      className="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      strokeWidth="4"
+    />
+    <path
+      className="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+    />
+  </svg>
+)
+
+/* ------------------------------------------------------------------ */
+/* Spinner size map (mirrors icon sizes per button size)              */
+/* ------------------------------------------------------------------ */
+
+const spinnerSizeClass: Record<string, string> = {
+  xs: 'w-3 h-3',
+  sm: 'w-3.5 h-3.5',
+  md: 'w-4 h-4',
+  default: 'w-4 h-4',
+  lg: 'w-4 h-4',
+  xl: 'w-5 h-5',
+  icon: 'w-4 h-4',
+  'icon-xs': 'w-3 h-3',
+  'icon-sm': 'w-3.5 h-3.5',
+  'icon-lg': 'w-4 h-4',
+}
+
+/* ------------------------------------------------------------------ */
+/* Button                                                             */
+/* ------------------------------------------------------------------ */
+
+interface ButtonProps
+  extends ButtonPrimitive.Props,
+    VariantProps<typeof buttonVariants> {
+  leftIcon?: React.ReactNode
+  rightIcon?: React.ReactNode
+  loading?: boolean
+  fullWidth?: boolean
+}
+
+const Button = ({
   className,
   variant = 'default',
   size = 'default',
+  leftIcon,
+  rightIcon,
+  loading = false,
+  fullWidth = false,
+  disabled,
+  children,
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: ButtonProps) => {
+  const resolvedSize = size ?? 'default'
+
   return (
     <ButtonPrimitive
-      data-slot='button'
+      data-slot="button"
       suppressHydrationWarning
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({ variant, size, className }),
+        loading && 'pointer-events-none opacity-70',
+        fullWidth && 'w-full',
+      )}
+      disabled={loading || disabled}
       {...props}
-    />
+    >
+      {loading ? (
+        <Spinner className={spinnerSizeClass[resolvedSize]} />
+      ) : (
+        leftIcon
+      )}
+      {children}
+      {!loading && rightIcon}
+    </ButtonPrimitive>
   )
 }
+
+/* ------------------------------------------------------------------ */
+/* PendingButton                                                      */
+/* ------------------------------------------------------------------ */
 
 interface PendingButtonProps
   extends ButtonPrimitive.Props, VariantProps<typeof buttonVariants> {
   pending?: boolean
   pendingLabel?: React.ReactNode
+  leftIcon?: React.ReactNode
+  rightIcon?: React.ReactNode
+  loading?: boolean
+  fullWidth?: boolean
 }
 
-function PendingButton({
+const PendingButton = ({
   className,
   variant = 'default',
   size = 'default',
@@ -78,7 +185,7 @@ function PendingButton({
   children,
   disabled,
   ...props
-}: PendingButtonProps) {
+}: PendingButtonProps) => {
   return (
     <Button
       variant={variant}
@@ -93,14 +200,18 @@ function PendingButton({
   )
 }
 
-function SubmitButton({
+/* ------------------------------------------------------------------ */
+/* SubmitButton                                                       */
+/* ------------------------------------------------------------------ */
+
+const SubmitButton = ({
   className,
   variant = 'default',
   size = 'default',
   pendingLabel = 'Saving...',
   children,
   ...props
-}: Omit<PendingButtonProps, 'pending'>) {
+}: Omit<PendingButtonProps, 'pending'>) => {
   const { pending } = useFormStatus()
   return (
     <PendingButton
@@ -117,3 +228,4 @@ function SubmitButton({
 }
 
 export { Button, buttonVariants, PendingButton, SubmitButton }
+export type { ButtonProps, PendingButtonProps }
