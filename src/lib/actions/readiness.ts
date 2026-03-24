@@ -9,7 +9,7 @@ const EMPTY_RESULT: ReadinessScoreData = {
   previousScore: null,
   subScores: { accuracy: 0, coverage: 0, srsHealth: 50, recency: 0, weakArea: 100 },
   label: 'Keep Practicing',
-  color: 'var(--danger)',
+  color: 'var(--destructive)',
 };
 
 /**
