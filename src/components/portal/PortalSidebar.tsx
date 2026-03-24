@@ -60,7 +60,7 @@ const PortalSidebar = ({
     >
       {navItems.map((group) => (
         <div key={group.label} className="first:mt-0 mt-4">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-muted-foreground px-4 py-2 select-none">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-muted-foreground px-4 py-2 select-none">
             {group.label}
           </p>
           <div className="space-y-px">

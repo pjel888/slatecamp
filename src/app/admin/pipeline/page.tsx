@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { createClient } from '@/lib/supabase/server'
+import { getPipelineArticles } from '@/lib/actions/admin/pipeline'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 
 export const metadata: Metadata = { title: 'Publishing Pipeline — SlateCamp Admin' }
 import { SectionHeader } from '@/components/shared/section-header'
@@ -18,29 +19,6 @@ interface PipelineArticle {
   status: string
   updated_at: string
   created_at: string
-}
-
-/* ------------------------------------------------------------------ */
-/*  Helpers                                                            */
-/* ------------------------------------------------------------------ */
-
-const formatRelativeTime = (dateStr: string): string => {
-  const now = Date.now()
-  const then = new Date(dateStr).getTime()
-  const diffMs = now - then
-
-  const minutes = Math.floor(diffMs / 60_000)
-  if (minutes < 1) return 'just now'
-  if (minutes < 60) return `${minutes}m ago`
-
-  const hours = Math.floor(minutes / 60)
-  if (hours < 24) return `${hours}h ago`
-
-  const days = Math.floor(hours / 24)
-  if (days < 30) return `${days}d ago`
-
-  const months = Math.floor(days / 30)
-  return `${months}mo ago`
 }
 
 const COLUMNS = [
@@ -69,11 +47,7 @@ const COLUMNS = [
 /* ------------------------------------------------------------------ */
 
 const PipelinePage = async () => {
-  const supabase = await createClient()
-  const { data: articles } = await supabase
-    .from('wiki_articles')
-    .select('article_id, title, slug, status, updated_at, created_at')
-    .order('updated_at', { ascending: false })
+  const articles = await getPipelineArticles()
 
   const grouped: Record<string, PipelineArticle[]> = {
     draft: [],
@@ -81,7 +55,7 @@ const PipelinePage = async () => {
     published: [],
   }
 
-  for (const article of (articles ?? []) as PipelineArticle[]) {
+  for (const article of articles as PipelineArticle[]) {
     const bucket = grouped[article.status]
     if (bucket) {
       bucket.push(article)
@@ -122,6 +96,7 @@ const PipelinePage = async () => {
                     <Link
                       key={article.article_id}
                       href={`/admin/articles/${article.article_id}`}
+                      aria-label={`${article.title} — ${col.label}`}
                       className="block rounded-md border border-border p-2.5 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
                     >
                       <p className="text-sm font-medium leading-snug line-clamp-2">

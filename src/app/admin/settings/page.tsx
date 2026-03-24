@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { redirect } from 'next/navigation'
 import { isSuperAdmin } from '@/lib/admin/roles'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 
 export const metadata: Metadata = { title: 'Settings — SlateCamp Admin' }
 import { getAdminUsers, assignRole, revokeRole } from '@/lib/actions/admin/roles'
@@ -22,23 +23,7 @@ const ROLE_BADGE_MAP: Record<string, { variant: 'danger' | 'warning' | 'info'; l
   sme_reviewer: { variant: 'info', label: 'SME Reviewer' },
 }
 
-const formatRelativeDate = (dateStr: string) => {
-  const date = new Date(dateStr)
-  if (isNaN(date.getTime())) return '\u2014'
-
-  const now = new Date()
-  const diffMs = now.getTime() - date.getTime()
-  const diffMin = Math.floor(diffMs / 60_000)
-  const diffHr = Math.floor(diffMin / 60)
-  const diffDay = Math.floor(diffHr / 24)
-
-  if (diffMin < 1) return 'just now'
-  if (diffMin < 60) return `${diffMin}m ago`
-  if (diffHr < 24) return `${diffHr}h ago`
-  if (diffDay <= 7) return `${diffDay}d ago`
-
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
-}
+const formatRelativeDate = formatRelativeTime
 
 const truncateUuid = (uuid: string) =>
   uuid.length > 12 ? `${uuid.slice(0, 8)}\u2026${uuid.slice(-4)}` : uuid
@@ -125,6 +110,7 @@ const AdminSettingsPage = async () => {
                             size="xs"
                             pendingLabel="Revoking..."
                             leftIcon={<UserX className="size-3.5" />}
+                            aria-label={`Revoke ${badge.label} role for user ${truncateUuid(row.user_id)}`}
                           >
                             Revoke
                           </SubmitButton>
@@ -159,6 +145,8 @@ const AdminSettingsPage = async () => {
                 id="userId"
                 name="userId"
                 placeholder="User UUID"
+                pattern="^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+                title="Enter a valid UUID (e.g. 550e8400-e29b-41d4-a716-446655440000)"
                 required
                 size="md"
               />

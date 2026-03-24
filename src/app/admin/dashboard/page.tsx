@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { getAdminDashboardData } from '@/lib/actions/admin/dashboard'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 
 export const metadata: Metadata = { title: 'Dashboard — SlateCamp Admin' }
 import { SectionHeader } from '@/components/shared/section-header'
@@ -16,26 +17,6 @@ import {
   GitBranch,
   ArrowRight,
 } from 'lucide-react'
-
-/* ------------------------------------------------------------------ */
-/*  Relative time formatter                                            */
-/* ------------------------------------------------------------------ */
-
-const formatRelativeTime = (dateString: string): string => {
-  const now = Date.now()
-  const then = new Date(dateString).getTime()
-  const diffMs = now - then
-  const diffSeconds = Math.floor(diffMs / 1000)
-  const diffMinutes = Math.floor(diffSeconds / 60)
-  const diffHours = Math.floor(diffMinutes / 60)
-  const diffDays = Math.floor(diffHours / 24)
-
-  if (diffSeconds < 60) return 'just now'
-  if (diffMinutes < 60) return `${diffMinutes}m ago`
-  if (diffHours < 24) return `${diffHours}h ago`
-  if (diffDays < 30) return `${diffDays}d ago`
-  return new Date(dateString).toLocaleDateString()
-}
 
 /* ------------------------------------------------------------------ */
 /*  Event type → badge variant mapping                                 */
@@ -190,6 +171,7 @@ const AdminDashboardPage = async () => {
             <span className="text-sm font-semibold text-foreground">Recent Activity</span>
             <Link
               href="/admin/audit"
+              aria-label="View all recent activity"
               className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors duration-150"
             >
               View all

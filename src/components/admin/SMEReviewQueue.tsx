@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { canReviewContent } from '@/lib/admin/roles'
 import { approveArticle, requestChanges } from '@/lib/wiki/wiki-actions'
 import { CheckCircle, XCircle, ChatCircle, Question, FileText, Cube } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { isAdmin } from '@/lib/admin/roles'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 
 export const metadata: Metadata = { title: 'Activity Feed — SlateCamp Admin' }
 import { redirect } from 'next/navigation'
@@ -8,34 +9,6 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EmptyState } from '@/components/shared/empty-state'
-
-/* ------------------------------------------------------------------ */
-/*  Relative time helper                                               */
-/* ------------------------------------------------------------------ */
-
-const relativeTime = (dateStr: string): string => {
-  const now = Date.now()
-  const then = new Date(dateStr).getTime()
-  const diffMs = now - then
-
-  const seconds = Math.floor(diffMs / 1000)
-  if (seconds < 60) return 'just now'
-
-  const minutes = Math.floor(seconds / 60)
-  if (minutes < 60) return `${minutes}m ago`
-
-  const hours = Math.floor(minutes / 60)
-  if (hours < 24) return `${hours}h ago`
-
-  const days = Math.floor(hours / 24)
-  if (days < 7) return `${days}d ago`
-
-  return new Date(dateStr).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-  })
-}
 
 /* ------------------------------------------------------------------ */
 /*  Action label mapping                                               */
@@ -170,7 +143,7 @@ const AdminActivityPage = async () => {
                     </span>
                   </p>
                   <p className="mt-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
-                    {relativeTime(log.created_at)}
+                    {formatRelativeTime(log.created_at)}
                   </p>
                 </div>
 

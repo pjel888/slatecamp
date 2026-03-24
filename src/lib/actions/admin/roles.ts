@@ -34,6 +34,11 @@ export const assignRole = async (formData: FormData) => {
     throw new Error('Missing required fields: userId and role')
   }
 
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+  if (!uuidRegex.test(userId)) {
+    throw new Error('Invalid user ID format')
+  }
+
   const supabase = await createClient()
   const { error } = await supabase
     .from('user_roles')

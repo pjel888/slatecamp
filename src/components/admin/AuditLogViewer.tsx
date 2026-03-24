@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
@@ -113,9 +113,8 @@ export function AuditLogViewer() {
             </thead>
             <tbody>
               {filteredLogs.map((log) => (
-                <>
-                  <tr 
-                    key={log.id} 
+                <React.Fragment key={log.id}>
+                  <tr
                     className="border-t hover:bg-muted/50 cursor-pointer"
                     onClick={() => setExpandedId(expandedId === log.id ? null : log.id)}
                   >
@@ -159,7 +158,7 @@ export function AuditLogViewer() {
                       </td>
                     </tr>
                   )}
-                </>
+                </React.Fragment>
               ))}
             </tbody>
           </table>

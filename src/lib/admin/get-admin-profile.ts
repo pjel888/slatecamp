@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { getFeatureFlags, getEffectiveTier, getConnectionState } from "./feature-flags";
-import { isAdminByEmail } from "./is-admin";
+import { getUserRole } from "@/lib/admin/roles";
 import type { UserTier } from "@/types/app";
 import type { DevConnectionState } from "@/lib/dev/dev-mode";
 
@@ -56,7 +56,8 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
 
   // Even if stats/sub are missing, we can provide a base profile if user exists
   const currentTier = (subscription?.tier ?? "free") as UserTier;
-  const isAdmin = user.app_metadata?.role === 'admin' || user.email?.endsWith('@slatecamp.com');
+  const role = await getUserRole();
+  const isAdmin = role !== null;
   
   const flags = await getFeatureFlags();
   const connectionState = getConnectionState();
