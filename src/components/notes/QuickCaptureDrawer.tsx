@@ -1,10 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { createPortal } from 'react-dom'
 import {
-  DotsSixVertical,
-  X,
   ArrowSquareOut,
   Plus,
   FileText,
@@ -20,13 +17,13 @@ import {
 } from '@/lib/actions/notes-actions'
 import { ROUTES } from '@/lib/constants/routes'
 import { useNoteContext } from '@/lib/context/note-context'
-import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { TemplatePicker } from '@/components/notes/TemplatePicker'
+import { FloatingPanel } from '@/components/shared/floating-panel'
 import dynamic from 'next/dynamic'
 
 const NotesEditor = dynamic(
-  () => import('@/components/notes/NotesEditor').then(m => m.NotesEditor),
+  () => import('@/components/notes/NotesEditor').then((m) => m.NotesEditor),
   { ssr: false },
 )
 import { cn } from '@/lib/utils'
@@ -36,8 +33,6 @@ import type { NoteType, NoteStub } from '@/types/app'
 const MODAL_WIDTH = 520
 const MODAL_HEIGHT = 520
 const LIST_WIDTH = 180
-const DEFAULT_RIGHT = 'center' as const
-const DEFAULT_BOTTOM = 120
 const AUTOSAVE_DELAY = 800
 
 const EMPTY_DOC = { type: 'doc', content: [{ type: 'paragraph' }] }
@@ -48,7 +43,7 @@ interface QuickCaptureDrawerProps {
 
 type SaveState = 'idle' | 'saving' | 'saved' | 'error'
 
-export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
+export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
   const { anchor, drawerOpen, closeDrawer } = useNoteContext()
 
   // Note state
@@ -67,13 +62,6 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
   const debounceRef = useRef<NodeJS.Timeout | null>(null)
   const noteIdRef = useRef<string | null>(null)
   const hasQuestionContext = Boolean(anchor.question_id)
-
-  const { style: floatStyle, onPointerDown: onDrag } =
-    useDraggableFloatingPosition(
-      'quick-capture-modal',
-      DEFAULT_RIGHT,
-      DEFAULT_BOTTOM,
-    )
 
   // Keep noteIdRef in sync
   useEffect(() => {
@@ -209,256 +197,215 @@ export function QuickCaptureDrawer({ userId }: QuickCaptureDrawerProps) {
     }
   }
 
-  // Keyboard shortcuts
-  useEffect(() => {
-    if (!drawerOpen) return
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeDrawer()
-    }
-    document.addEventListener('keydown', onKeyDown)
-    return () => document.removeEventListener('keydown', onKeyDown)
-  }, [drawerOpen, closeDrawer])
-
-  if (typeof document === 'undefined') return null
-
   const hasAnchor = Boolean(
     anchor.topic_id || anchor.article_id || anchor.question_id,
   )
 
-  const modal = (
-    <div
-      role="dialog"
-      aria-label="Quick capture"
-      aria-modal="true"
-      style={{
-        ...floatStyle,
-        width: MODAL_WIDTH,
-        maxWidth: 'calc(100vw - 24px)',
-        maxHeight: 'calc(100vh - 24px)',
-        display: drawerOpen ? 'flex' : 'none',
-      }}
-      className={cn(
-        'flex-row rounded-lg border border-border bg-background',
-        'shadow-lg ring-1 ring-black/5',
-      )}
-    >
-      {/* ── Notes list sidebar ── */}
-      <div
-        className="flex flex-col border-r border-border/60 bg-muted/30"
-        style={{ width: LIST_WIDTH }}
-      >
-        {/* List header */}
-        <div className="flex shrink-0 items-center justify-between border-b border-border/60 px-2.5 py-2">
-          <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
-            Notes
-          </span>
-          <button
-            type="button"
-            onClick={resetToNew}
-            className="rounded-sm p-1 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
-            title="New note"
-          >
-            <SCIcon icon={Plus} size="xs" />
-          </button>
-        </div>
-
-        {/* Notes list */}
-        <ul className="flex-1 overflow-y-auto py-1">
-          {listLoading ? (
-            <li className="py-6 text-center text-[11px] text-muted-foreground">
-              Loading...
-            </li>
-          ) : stubs.length === 0 ? (
-            <li className="py-6 text-center text-[11px] text-muted-foreground">
-              No notes yet
-            </li>
-          ) : (
-            stubs.slice(0, 20).map((stub) => {
-              const isActive = noteId === stub.id
-              return (
-                <li key={stub.id}>
-                  <button
-                    type="button"
-                    onClick={() => selectNote(stub.id)}
-                    className={cn(
-                      'flex w-full flex-col gap-0.5 px-2.5 py-2 text-left transition-colors',
-                      isActive
-                        ? 'bg-primary/10 text-foreground'
-                        : 'hover:bg-muted text-foreground/80',
-                    )}
-                  >
-                    <div className="flex items-center gap-1">
-                      <SCIcon
-                        icon={FileText}
-                        size="xs"
-                        className={cn(
-                          'shrink-0',
-                          isActive ? 'text-primary' : 'text-muted-foreground',
-                        )}
-                      />
-                      <span className="flex-1 truncate text-[12px] font-medium leading-snug">
-                        {stub.title || 'Untitled Note'}
-                      </span>
-                      {stub.is_pinned && (
-                        <SCIcon
-                          icon={PushPin}
-                          size="xs"
-                          className="shrink-0 text-primary/60"
-                        />
-                      )}
-                    </div>
-                    {stub.snippet && (
-                      <span className="line-clamp-1 pl-[18px] text-[11px] text-muted-foreground">
-                        {stub.snippet}
-                      </span>
-                    )}
-                    <span className="pl-[18px] text-[11px] text-muted-foreground/60">
-                      {formatDistanceToNow(new Date(stub.updated_at), {
-                        addSuffix: false,
-                      })
-                        .replace('about ', '')
-                        .replace('less than a minute', 'now')}
-                    </span>
-                  </button>
-                </li>
-              )
-            })
-          )}
-        </ul>
-      </div>
-
-      {/* ── Editor pane ── */}
-      <div className="flex flex-1 flex-col overflow-hidden">
-        {/* Header: drag handle + title + close */}
-        <div className="flex shrink-0 items-center gap-1 border-b border-border px-2 py-2">
-          <span
-            role="button"
-            tabIndex={0}
-            onPointerDown={onDrag}
-            className="flex h-8 w-8 shrink-0 cursor-grab active:cursor-grabbing touch-none items-center justify-center rounded-sm text-muted-foreground/60 hover:text-muted-foreground transition-colors"
-            aria-label="Drag to move"
-          >
-            <SCIcon icon={DotsSixVertical} size="sm" />
-          </span>
-          <span className="flex-1 text-[13px] font-semibold text-foreground">
-            {noteId ? 'Edit Note' : 'New Note'}
-          </span>
-
-          {/* Save state indicator */}
-          <span className="flex items-center gap-1 text-[11px] text-muted-foreground mr-1">
-            {saveState === 'saving' && (
-              <span className="animate-pulse">Saving...</span>
-            )}
-            {saveState === 'saved' && (
-              <span className="flex items-center gap-0.5 text-emerald-600">
-                <SCIcon icon={Check} size="xs" /> Saved
-              </span>
-            )}
-            {saveState === 'error' && (
-              <span className="text-[#D64545]">Error saving</span>
-            )}
-          </span>
-
-          <button
-            type="button"
-            onClick={closeDrawer}
-            className="flex h-8 w-8 items-center justify-center rounded-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
-            aria-label="Close"
-          >
-            <SCIcon icon={X} size="sm" />
-          </button>
-        </div>
-
-        {/* Context badge */}
-        {hasAnchor && (
-          <div className="shrink-0 border-b border-border/60 bg-muted/40 px-3 py-2">
-            <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-              Anchored to
-            </p>
-            <ContextBadge anchor={anchor} />
-          </div>
-        )}
-
-        {/* Template picker */}
-        <div className="shrink-0 border-b border-border/60 px-3 py-2.5">
-          <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-            Note type
-          </p>
-          <TemplatePicker
-            value={noteType}
-            onChange={handleTypeChange}
-            disableGap={!hasQuestionContext}
-          />
-        </div>
-
-        {/* Title */}
-        <div className="shrink-0 border-b border-border/60 px-3 py-2">
-          <input
-            ref={titleInputRef}
-            type="text"
-            value={title}
-            onChange={(e) => handleTitleChange(e.target.value)}
-            placeholder="Note title..."
-            className="w-full bg-transparent text-sm font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
-            aria-label="Note title"
-          />
-        </div>
-
-        {/* Rich editor */}
-        <div
-          className="min-h-0 flex-1 overflow-y-auto"
-          style={{ height: MODAL_HEIGHT - 220 }}
+  /* ── Sidebar: notes list ── */
+  const notesSidebar = (
+    <div className="flex flex-col h-full">
+      {/* List header */}
+      <div className="flex shrink-0 items-center justify-between border-b border-border/60 px-2.5 py-2">
+        <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
+          Notes
+        </span>
+        <button
+          type="button"
+          onClick={resetToNew}
+          className="rounded-sm p-1 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+          title="New note"
         >
-          {drawerOpen && (
-            <NotesEditor
-              content={content}
-              onChange={handleContentChange}
-              userId={userId}
-              compact
-              placeholder="Start writing... (select text to format)"
-              className="h-full"
-            />
-          )}
-        </div>
-
-        {/* Footer */}
-        <div className="shrink-0 border-t border-border px-3 py-2">
-          {saveError && (
-            <p className="mb-1.5 text-[11px] text-[#D64545]" role="alert">
-              {saveError}
-            </p>
-          )}
-          <div className="flex items-center justify-between">
-            <span className="text-[11px] text-muted-foreground select-none">
-              Auto-saves as you type
-            </span>
-            {noteId && (
-              <a
-                href={`${ROUTES.NOTES}?open=${encodeURIComponent(noteId)}`}
-                className="inline-flex items-center gap-1 text-[11px] font-medium text-primary hover:underline"
-              >
-                Open in Notes
-                <SCIcon icon={ArrowSquareOut} size="xs" />
-              </a>
-            )}
-          </div>
-        </div>
+          <SCIcon icon={Plus} size="xs" />
+        </button>
       </div>
+
+      {/* Notes list */}
+      <ul className="flex-1 overflow-y-auto py-1">
+        {listLoading ? (
+          <li className="py-6 text-center text-[11px] text-muted-foreground">
+            Loading...
+          </li>
+        ) : stubs.length === 0 ? (
+          <li className="py-6 text-center text-[11px] text-muted-foreground">
+            No notes yet
+          </li>
+        ) : (
+          stubs.slice(0, 20).map((stub) => {
+            const isActive = noteId === stub.id
+            return (
+              <li key={stub.id}>
+                <button
+                  type="button"
+                  onClick={() => selectNote(stub.id)}
+                  className={cn(
+                    'flex w-full flex-col gap-0.5 px-2.5 py-2 text-left transition-colors',
+                    isActive
+                      ? 'bg-primary/10 text-foreground'
+                      : 'hover:bg-muted text-foreground/80',
+                  )}
+                >
+                  <div className="flex items-center gap-1">
+                    <SCIcon
+                      icon={FileText}
+                      size="xs"
+                      className={cn(
+                        'shrink-0',
+                        isActive ? 'text-primary' : 'text-muted-foreground',
+                      )}
+                    />
+                    <span className="flex-1 truncate text-[12px] font-medium leading-snug">
+                      {stub.title || 'Untitled Note'}
+                    </span>
+                    {stub.is_pinned && (
+                      <SCIcon
+                        icon={PushPin}
+                        size="xs"
+                        className="shrink-0 text-primary/60"
+                      />
+                    )}
+                  </div>
+                  {stub.snippet && (
+                    <span className="line-clamp-1 pl-[18px] text-[11px] text-muted-foreground">
+                      {stub.snippet}
+                    </span>
+                  )}
+                  <span className="pl-[18px] text-[11px] text-muted-foreground/60">
+                    {formatDistanceToNow(new Date(stub.updated_at), {
+                      addSuffix: false,
+                    })
+                      .replace('about ', '')
+                      .replace('less than a minute', 'now')}
+                  </span>
+                </button>
+              </li>
+            )
+          })
+        )}
+      </ul>
     </div>
   )
 
-  return createPortal(modal, document.body)
+  /* ── Header actions: save state indicator ── */
+  const saveIndicator = (
+    <span className="flex items-center gap-1 text-[11px] text-muted-foreground mr-1">
+      {saveState === 'saving' && (
+        <span className="animate-pulse">Saving...</span>
+      )}
+      {saveState === 'saved' && (
+        <span className="flex items-center gap-0.5 text-emerald-600">
+          <SCIcon icon={Check} size="xs" /> Saved
+        </span>
+      )}
+      {saveState === 'error' && (
+        <span className="text-destructive">Error saving</span>
+      )}
+    </span>
+  )
+
+  /* ── Footer ── */
+  const notesFooter = (
+    <>
+      {saveError && (
+        <p className="mb-1.5 text-[11px] text-destructive" role="alert">
+          {saveError}
+        </p>
+      )}
+      <div className="flex items-center justify-between">
+        <span className="text-[11px] text-muted-foreground select-none">
+          Auto-saves as you type
+        </span>
+        {noteId && (
+          <a
+            href={`${ROUTES.NOTES}?open=${encodeURIComponent(noteId)}`}
+            className="inline-flex items-center gap-1 text-[11px] font-medium text-primary hover:underline"
+          >
+            Open in Notes
+            <SCIcon icon={ArrowSquareOut} size="xs" />
+          </a>
+        )}
+      </div>
+    </>
+  )
+
+  return (
+    <FloatingPanel
+      open={drawerOpen}
+      onClose={closeDrawer}
+      title={noteId ? 'Edit Note' : 'New Note'}
+      headerActions={saveIndicator}
+      draggable
+      dragStorageKey="quick-capture-modal"
+      backdrop="none"
+      width={MODAL_WIDTH}
+      height={MODAL_HEIGHT}
+      sidebar={notesSidebar}
+      sidebarWidth={LIST_WIDTH}
+      footer={notesFooter}
+    >
+      {/* Context badge */}
+      {hasAnchor && (
+        <div className="shrink-0 border-b border-border/60 bg-muted/40 px-3 py-2">
+          <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+            Anchored to
+          </p>
+          <ContextBadge anchor={anchor} />
+        </div>
+      )}
+
+      {/* Template picker */}
+      <div className="shrink-0 border-b border-border/60 px-3 py-2.5">
+        <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+          Note type
+        </p>
+        <TemplatePicker
+          value={noteType}
+          onChange={handleTypeChange}
+          disableGap={!hasQuestionContext}
+        />
+      </div>
+
+      {/* Title */}
+      <div className="shrink-0 border-b border-border/60 px-3 py-2">
+        <input
+          ref={titleInputRef}
+          type="text"
+          value={title}
+          onChange={(e) => handleTitleChange(e.target.value)}
+          placeholder="Note title..."
+          className="w-full bg-transparent text-sm font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
+          aria-label="Note title"
+        />
+      </div>
+
+      {/* Rich editor */}
+      <div
+        className="min-h-0 flex-1 overflow-y-auto"
+        style={{ height: MODAL_HEIGHT - 220 }}
+      >
+        {drawerOpen && (
+          <NotesEditor
+            content={content}
+            onChange={handleContentChange}
+            userId={userId}
+            compact
+            placeholder="Start writing... (select text to format)"
+            className="h-full"
+          />
+        )}
+      </div>
+    </FloatingPanel>
+  )
 }
 
 /** Check if tiptap doc has any text content */
-function contentHasText(content: Record<string, unknown>): boolean {
+const contentHasText = (content: Record<string, unknown>): boolean => {
   try {
     const doc = content as {
       content?: Array<{ content?: Array<{ text?: string }> }>
     }
     if (!doc.content) return false
     let found = false
-    function walk(n: { content?: Array<{ text?: string }> }): void {
+    const walk = (n: { content?: Array<{ text?: string }> }): void => {
       if (found) return
       if (n.content)
         n.content.forEach((c) => {

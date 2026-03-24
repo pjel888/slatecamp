@@ -23,7 +23,6 @@ export const WikiLayoutContent = async ({ children }: { children: React.ReactNod
   } = await getUser()
 
   if (!user) {
-    console.log('[WikiLayout] No user found')
     return null
   }
 

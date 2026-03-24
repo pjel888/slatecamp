@@ -28,13 +28,13 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       <CardHeader className="p-2 pt-1">
         <div className="flex items-start justify-between">
           <div>
-            <CardTitle className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">
+            <CardTitle className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
               Readiness Trajectory
             </CardTitle>
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
                 'text-xl font-extrabold tracking-tight tabular-nums',
-                clamped < 50 ? 'text-[#D64545]' : clamped < 75 ? 'text-[#D4951A]' : 'text-[#2D9F6F]'
+                clamped < 50 ? 'text-destructive' : clamped < 75 ? 'text-warning' : 'text-emerald'
               )}>
                 {clamped}%
               </span>
@@ -43,9 +43,9 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
                   'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold uppercase',
                   trend === 'up' && 'bg-green-50 text-green-700',
                   trend === 'down' && 'bg-red-50 text-red-700',
-                  trend === 'flat' && 'bg-[#EEF2FC]',
+                  trend === 'flat' && 'bg-primary/10',
                 )}
-                style={trend === 'flat' ? { color: '#4A5568' } : undefined}
+                style={trend === 'flat' ? { color: 'var(--muted-foreground)' } : undefined}
               >
                 {trend === 'up' && <SCIcon icon={TrendUp} size='xs' />}
                 {trend === 'down' && <SCIcon icon={TrendDown} size='xs' />}
@@ -62,7 +62,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
           <div className="h-[120px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px]" style={{ color: '#8896A7' }}>
+            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
               Complete more quizzes to see your readiness trajectory here.
             </p>
           </div>

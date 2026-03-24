@@ -36,14 +36,14 @@ export function StaminaCurve({ data }: Props) {
     <Card className="border-border bg-white p-2 relative h-full">
       <RichInfoPopover title="Cognitive Stamina" description="Accuracy by question position. A declining curve indicates cognitive fatigue in longer sessions." />
       <CardHeader className="p-2 pt-1">
-        <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>
+        <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
           Cognitive Stamina
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
           <div className="h-[160px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[180px]" style={{ color: '#8896A7' }}>
+            <p className="text-xs text-center leading-snug max-w-[180px] text-muted-foreground">
               Complete sessions with 10+ questions to see your stamina curve.
             </p>
           </div>

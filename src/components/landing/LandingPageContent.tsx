@@ -54,16 +54,17 @@ export async function LandingPageContent() {
         {/* ────────────────────── TESTIMONIALS ────────────────────── */}
         <section
           aria-labelledby='testimonials-heading'
-          className='border-t border-[#E5E7EB] px-6 py-24'
+          className='border-t border-border px-6 py-24'
         >
           <div className='mx-auto max-w-[1200px]'>
+            {/* TODO: evaluate SectionHeader migration — custom Starburst icon + gap layout */}
             <div className='flex items-center gap-3'>
               <span className='text-[#F5A623]'>
                 <Starburst className='h-4 w-4' />
               </span>
               <h2
                 id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'
+                className='font-mono text-[11px] tracking-[0.2em] uppercase text-muted-foreground'
               >
                 What Students Say
               </h2>

@@ -59,7 +59,7 @@ export function DevOverlay({ systemInfo, dbFlags }: DevOverlayProps) {
           </div>
           <div className="flex items-center gap-2">
             <a
-              href="/dashboard/developer"
+              href="/developer"
               className="rounded-md bg-muted px-3 py-1.5 text-[11px] font-medium text-foreground transition-colors hover:bg-muted/80"
             >
               Full Console

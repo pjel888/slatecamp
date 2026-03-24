@@ -143,6 +143,7 @@ export const AnalyticsSection = () => (
   <FeatureSectionLayout>
     {/* Copy — left */}
     <StaggerParent>
+      {/* TODO: evaluate SectionHeader migration — uses marketing SectionEyebrow with Starburst icon */}
       <StaggerItem>
         <SectionEyebrow label='Analytics' />
       </StaggerItem>

@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { Target } from 'lucide-react'
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from '@/components/ui/tooltip'
+import { EmptyState } from '@/components/shared/empty-state'
 import type { SubjectMastery } from '@/types/dashboard'
 
 interface SubjectMasteryCardProps {
@@ -306,18 +308,13 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </p>
 
         {!hasData ? (
-          <div className='text-center space-y-2 py-6 flex-1 flex flex-col items-center justify-center'>
-            <p className='text-sm font-medium text-[#555555]'>
-              Take your first quiz to see your mastery shape
-            </p>
-            <Link
-              href='/dashboard/review'
-              className='text-sm font-medium underline underline-offset-2'
-              style={{ color: '#1B3FC4' }}
-            >
-              Start a quiz &rarr;
-            </Link>
-          </div>
+          <EmptyState
+            icon={<Target className="h-5 w-5" />}
+            message="Your mastery shape appears here"
+            description="Complete a quiz session to see how your skills map across subjects."
+            action={{ label: "Start a quiz", href: "/dashboard/review" }}
+            className="flex-1"
+          />
         ) : (
           <div className='w-full max-w-[200px] mx-auto shrink-0'>
             <RadialHeatmap data={data} animated={animated} />

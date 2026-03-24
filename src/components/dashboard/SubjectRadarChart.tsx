@@ -9,7 +9,8 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
-import Link from 'next/link'
+import { BarChart3 } from 'lucide-react'
+import { EmptyState } from '@/components/shared/empty-state'
 import type { SubjectMastery } from '@/types/dashboard'
 
 interface SubjectRadarChartProps {
@@ -55,18 +56,12 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
 
       <div className="flex-1 p-4 min-h-0 flex flex-col items-center justify-center">
         {!hasData ? (
-          <div className="text-center space-y-2 py-6">
-            <p className="text-sm font-medium" style={{ color: '#555555' }}>
-              Take your first quiz to see your mastery shape
-            </p>
-            <Link
-              href="/dashboard/review"
-              className="text-sm font-medium underline underline-offset-2"
-              style={{ color: '#1B3FC4' }}
-            >
-              Start a quiz &rarr;
-            </Link>
-          </div>
+          <EmptyState
+            icon={<BarChart3 className="h-5 w-5" />}
+            message="Mastery data builds as you practice"
+            description="Complete a quiz session and your subject coverage will appear here."
+            action={{ label: "Start a quiz", href: "/dashboard/review" }}
+          />
         ) : (
           <div className="w-full h-[260px]">
             <ResponsiveContainer width="100%" height="100%">

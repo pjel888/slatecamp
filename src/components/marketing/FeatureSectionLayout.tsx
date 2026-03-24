@@ -66,6 +66,7 @@ export const FeatureCheckItem = ({
 )
 
 /* ── Section eyebrow label ── */
+// TODO: evaluate SectionHeader migration — marketing eyebrow has Starburst icon + dark/amber variants
 
 export const SectionEyebrow = ({
   label,

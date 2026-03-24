@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { SquaresFour, X } from '@phosphor-icons/react'
+import { SquaresFour } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { CloseButton } from '@/components/ui/close-button'
 import { cn } from '@/lib/utils'
 import type { QuestionDotState } from './FooterNavigator'
 
@@ -78,13 +79,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
             <div className='flex items-center gap-3 text-[11px] font-bold text-[#8896A7]'>
               <span>{answered}/{dots.length} answered</span>
               {flagged > 0 && <span className='text-[#D4951A]'>{flagged} flagged</span>}
-              <button
-                onClick={() => setIsOpen(false)}
-                className='h-5 w-5 flex items-center justify-center rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-zinc-100 transition-colors'
-                aria-label='Close question map'
-              >
-                <SCIcon icon={X} size='xs' />
-              </button>
+              <CloseButton onClick={() => setIsOpen(false)} aria-label="Close question map" size="sm" />
             </div>
           </div>
           <div className='p-3 grid grid-cols-10 gap-1.5 max-h-[240px] overflow-y-auto'>

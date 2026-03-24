@@ -595,6 +595,7 @@ export function QuizRenderer({
     )
   }
 
+  // TODO: extract NoQuestionsLoaded fallback when more error states are added — currently ~15 lines
   if (!currentQuestion) {
     return (
       <QuizOverlay>
@@ -624,7 +625,7 @@ export function QuizRenderer({
 
   return (
     <QuizOverlay>
-      {/* Integrity violation overlay (strict mode focus loss) */}
+      {/* TODO: extract IntegrityViolationOverlay when state is refactored — currently only ~10 lines and tightly coupled to isAutoSubmitting */}
       {isAutoSubmitting && (
         <div className='absolute inset-0 z-[100] bg-white/90 backdrop-blur-sm flex items-center justify-center'>
           <div className='bg-white p-6 rounded-lg shadow-lg border border-border text-center space-y-3 max-w-xs'>

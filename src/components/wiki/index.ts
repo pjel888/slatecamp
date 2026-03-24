@@ -17,5 +17,5 @@ export { FormulaBlock } from './FormulaBlock'
 export { InlineQuiz } from './InlineQuiz'
 
 // Re-export existing components used by the current layout
-export { Callout, Note, Warn, Tip, Example } from './WikiCallout'
+export { Callout, Note, Warn, Tip, Example, CalloutBox, AlertBox, ExamTip, AuthorityContent } from './Callout'
 export { WikiArticleHeader } from './WikiArticleHeader'

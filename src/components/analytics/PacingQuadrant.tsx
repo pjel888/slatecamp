@@ -64,11 +64,11 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
       <Card className="border-border bg-white p-2 relative h-full min-h-[320px] flex flex-col">
         <RichInfoPopover title="Pacing vs. Accuracy" description="Reveals whether you're rushing, overthinking, or mastering material across subjects." />
         <CardHeader className="p-2 pt-1">
-          <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>Pacing vs. Accuracy</CardTitle>
+          <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">Pacing vs. Accuracy</CardTitle>
         </CardHeader>
         <CardContent className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-2">
-          <p className="text-sm font-medium" style={{ color: '#4A5568' }}>Complete quizzes across multiple subjects to unlock your Pacing Profile.</p>
-          <p className="text-xs" style={{ color: '#8896A7' }}>This chart reveals where you're rushing, overthinking, or mastering the material.</p>
+          <p className="text-sm font-medium text-muted-foreground">Complete quizzes across multiple subjects to unlock your Pacing Profile.</p>
+          <p className="text-xs text-muted-foreground">This chart reveals where you're rushing, overthinking, or mastering the material.</p>
         </CardContent>
       </Card>
     )
@@ -82,7 +82,7 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
     <Card className="border-border bg-white p-2 relative">
       <RichInfoPopover title="Pacing vs. Accuracy" description="Each dot is a subject. Fast + accurate = Mastered. Fast + inaccurate = Rushing. Slow + accurate = Careful. Slow + inaccurate = Overthinking." />
       <CardHeader className="p-2 pt-1">
-        <CardTitle className="text-[11px] font-bold tracking-wider uppercase" style={{ color: '#4A5568' }}>Pacing vs. Accuracy</CardTitle>
+        <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">Pacing vs. Accuracy</CardTitle>
       </CardHeader>
       <CardContent className="p-0 px-1 pb-2">
         {/* Quadrant labels */}
@@ -90,10 +90,10 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
           <div className="absolute inset-0 pointer-events-none z-10 flex">
             <div className="flex-1 flex flex-col">
               <div className="flex-1 flex items-start justify-start pl-8 pt-1">
-                <span className="text-[11px] font-bold text-[#2D9F6F] uppercase tracking-wider">✓ Mastered</span>
+                <span className="text-[11px] font-bold text-emerald uppercase tracking-wider">✓ Mastered</span>
               </div>
               <div className="flex-1 flex items-end justify-start pl-8 pb-1">
-                <span className="text-[11px] font-bold text-[#D4951A] uppercase tracking-wider">Rushing</span>
+                <span className="text-[11px] font-bold text-warning uppercase tracking-wider">Rushing</span>
               </div>
             </div>
             <div className="flex-1 flex flex-col">
@@ -101,7 +101,7 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
                 <span className="text-[11px] font-bold text-primary uppercase tracking-wider">Careful</span>
               </div>
               <div className="flex-1 flex items-end justify-end pr-4 pb-1">
-                <span className="text-[11px] font-bold text-[#D64545] uppercase tracking-wider">Overthinking</span>
+                <span className="text-[11px] font-bold text-destructive uppercase tracking-wider">Overthinking</span>
               </div>
             </div>
           </div>

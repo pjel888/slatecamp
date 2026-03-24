@@ -9,8 +9,7 @@ const eventQueue: TelemetryEvent[] = []
 const FLUSH_INTERVAL_MS = 5_000
 const MAX_QUEUE_SIZE = 50
 
-// Dispatch a telemetry event. In dev mode, logs to console.
-// In production, batches and sends to analytics endpoint.
+// Dispatch a telemetry event. Batches and sends to analytics endpoint in production.
 export const trackLabEvent = (
   moduleSlug: string,
   event: string,
@@ -21,10 +20,6 @@ export const trackLabEvent = (
     event,
     timestamp: Date.now(),
     payload,
-  }
-
-  if (IS_DEV) {
-    console.log('[3D Lab Telemetry]', event, payload)
   }
 
   eventQueue.push(telemetryEvent)

@@ -2,8 +2,9 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Info, X, ArrowSquareOut, Plus, CheckCircle, Scales, Cube } from '@phosphor-icons/react'
+import { Info, ArrowSquareOut, Plus, CheckCircle, Scales, Cube } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { CloseButton } from '@/components/ui/close-button'
 import { resolveRationaleText, resolveRationaleTakeaway } from '@/lib/utils/question'
 import type { RationaleData } from '@/lib/utils/question'
 
@@ -34,14 +35,14 @@ export function RationaleDrawer({
   onAddNote,
   on3DLabClick,
 }: RationaleDrawerProps) {
-  const closeRef = useRef<HTMLButtonElement>(null)
+  const closeRef = useRef<HTMLDivElement>(null)
   const rationaleText = resolveRationaleText(rationale) || 'No explanation is available for this question yet.'
   const takeaway = resolveRationaleTakeaway(rationale)
 
   // Focus close button when drawer opens for keyboard accessibility
   useEffect(() => {
     if (isVisible) {
-      const t = setTimeout(() => closeRef.current?.focus(), 350)
+      const t = setTimeout(() => closeRef.current?.querySelector('button')?.focus(), 350)
       return () => clearTimeout(t)
     }
   }, [isVisible])
@@ -68,14 +69,9 @@ export function RationaleDrawer({
                     {isCorrect ? 'Nice Work — Rationale' : "Let's Review — Rationale"}
                   </span>
                 </div>
-                <button
-                  ref={closeRef}
-                  onClick={onClose}
-                  aria-label="Close rationale"
-                  className="h-6 w-6 flex items-center justify-center rounded-full text-primary/50 hover:text-primary hover:bg-[#E4EBF5] transition-colors"
-                >
-                  <SCIcon icon={X} size="xs" />
-                </button>
+                <div ref={closeRef}>
+                  <CloseButton onClick={onClose} aria-label="Close rationale" size="sm" />
+                </div>
               </div>
 
               {/* Rationale body */}

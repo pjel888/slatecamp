@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { CloseButton } from '@/components/ui/close-button'
 import type { HotspotData } from '@/types/3d-lab'
 
 interface InfoPanelProps {
@@ -73,7 +74,7 @@ export const InfoPanel = ({
             maxHeight: '60vh',
             overflowY: 'auto',
             backgroundColor: '#FFFFFF',
-            borderTop: '0.5px solid #D4DAE3',
+            borderTop: '0.5px solid var(--border)',
             borderRadius: '12px 12px 0 0',
             boxShadow: '0 -4px 24px rgba(0,0,0,0.12)',
             padding: '20px 16px 32px',
@@ -105,7 +106,7 @@ export const InfoPanel = ({
     ...(openLeft ? { right: '16px' } : { left: '16px' }),
     width: '240px',
     backgroundColor: '#FFFFFF',
-    border: '0.5px solid #D4DAE3',
+    border: '0.5px solid var(--border)',
     borderRadius: '12px',
     boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
     padding: '14px',
@@ -153,22 +154,7 @@ const PanelContent = ({
   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
     {/* Close button */}
     <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-      <button
-        onClick={onClose}
-        aria-label="Close panel"
-        style={{
-          background: 'transparent',
-          border: 'none',
-          cursor: 'pointer',
-          padding: '2px 4px',
-          fontFamily: '"DM Mono", monospace',
-          fontSize: '11px',
-          color: '#8896A7',
-          lineHeight: 1,
-        }}
-      >
-        ✕
-      </button>
+      <CloseButton onClick={onClose} aria-label="Close panel" size="sm" />
     </div>
 
     {/* Eyebrow */}
@@ -178,7 +164,7 @@ const PanelContent = ({
         fontSize: '9px',
         textTransform: 'uppercase',
         letterSpacing: '0.06em',
-        color: isExamCritical ? '#F5A623' : '#8896A7',
+        color: isExamCritical ? '#F5A623' : 'var(--muted-foreground)',
         margin: 0,
         lineHeight: 1.4,
       }}
@@ -192,7 +178,7 @@ const PanelContent = ({
         fontFamily: 'Inter, system-ui, sans-serif',
         fontSize: '13px',
         fontWeight: 600,
-        color: '#1A2332',
+        color: 'var(--foreground)',
         margin: 0,
         lineHeight: 1.4,
       }}
@@ -205,7 +191,7 @@ const PanelContent = ({
       style={{
         fontFamily: 'Inter, system-ui, sans-serif',
         fontSize: '12px',
-        color: '#4A5568',
+        color: 'var(--muted-foreground)',
         margin: 0,
         lineHeight: 1.5,
       }}
@@ -217,8 +203,8 @@ const PanelContent = ({
     {hotspot.values.length > 0 && (
       <div
         style={{
-          borderTop: '0.5px solid #D4DAE3',
-          borderBottom: '0.5px solid #D4DAE3',
+          borderTop: '0.5px solid var(--border)',
+          borderBottom: '0.5px solid var(--border)',
           paddingTop: '8px',
           paddingBottom: '8px',
           display: 'flex',
@@ -240,7 +226,7 @@ const PanelContent = ({
               style={{
                 fontFamily: 'Inter, system-ui, sans-serif',
                 fontSize: '11px',
-                color: '#4A5568',
+                color: 'var(--muted-foreground)',
                 flexShrink: 0,
               }}
             >
@@ -251,7 +237,7 @@ const PanelContent = ({
                 fontFamily: '"DM Mono", monospace',
                 fontSize: '12px',
                 fontWeight: 500,
-                color: '#1A2332',
+                color: 'var(--foreground)',
                 textDecoration: row.isOld ? 'line-through' : 'none',
                 opacity: row.isOld ? 0.5 : 1,
                 textAlign: 'right',
@@ -269,7 +255,7 @@ const PanelContent = ({
       style={{
         fontFamily: '"DM Mono", monospace',
         fontSize: '10px',
-        color: '#8896A7',
+        color: 'var(--muted-foreground)',
         margin: 0,
         lineHeight: 1.4,
       }}
@@ -287,7 +273,7 @@ const PanelContent = ({
         padding: 0,
         fontFamily: '"DM Mono", monospace',
         fontSize: '11px',
-        color: '#1B3FC4',
+        color: 'var(--primary)',
         textAlign: 'left',
         textDecoration: 'none',
         transition: 'text-decoration 150ms ease-out',

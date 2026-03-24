@@ -8,8 +8,9 @@ import type {
   ToastProps,
 } from "@/components/ui/toast"
 
-const TOAST_LIMIT = 1
+const TOAST_LIMIT = 3
 const TOAST_REMOVE_DELAY = 1000000
+const TOAST_AUTO_DISMISS_MS = 5000
 
 type ToasterToast = ToastProps & {
   id: string
@@ -141,15 +142,25 @@ function dispatch(action: Action) {
 
 type Toast = Omit<ToasterToast, "id">
 
+const autoDismissTimeouts = new Map<string, ReturnType<typeof setTimeout>>()
+
 function toast({ ...props }: Toast) {
   const id = genId()
 
-  const update = (props: ToasterToast) =>
+  const update = (updatedProps: ToasterToast) =>
     dispatch({
       type: "UPDATE_TOAST",
-      toast: { ...props, id },
+      toast: { ...updatedProps, id },
     })
-  const dismiss = () => dispatch({ type: "DISMISS_TOAST", toastId: id })
+  const dismiss = () => {
+    // Clear auto-dismiss timer if it exists
+    const existing = autoDismissTimeouts.get(id)
+    if (existing) {
+      clearTimeout(existing)
+      autoDismissTimeouts.delete(id)
+    }
+    dispatch({ type: "DISMISS_TOAST", toastId: id })
+  }
 
   dispatch({
     type: "ADD_TOAST",
@@ -162,6 +173,16 @@ function toast({ ...props }: Toast) {
       },
     },
   })
+
+  // Auto-dismiss: errors stay until dismissed, all others dismiss after 5s
+  const variant = (props as Record<string, unknown>).variant as string | undefined
+  if (variant !== "error" && variant !== "destructive") {
+    const timeout = setTimeout(() => {
+      autoDismissTimeouts.delete(id)
+      dismiss()
+    }, TOAST_AUTO_DISMISS_MS)
+    autoDismissTimeouts.set(id, timeout)
+  }
 
   return {
     id: id,

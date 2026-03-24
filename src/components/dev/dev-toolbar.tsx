@@ -309,7 +309,7 @@ export function DevToolbar({
               Reset
             </button>
             <a
-              href='/dashboard/developer'
+              href='/developer'
               className='flex items-center gap-1 text-[11px] text-muted-foreground transition-colors hover:text-foreground'
             >
               <SCIcon icon={Terminal} size="xs" />

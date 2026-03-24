@@ -18,41 +18,41 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
     className={`flex flex-col rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ${
       tier.highlighted
         ? 'border-primary ring-1 ring-primary shadow-[0_0_0_1px_rgba(37,99,235,0.8)]'
-        : 'border-zinc-200'
+        : 'border-border'
     } bg-white`}
   >
-    <span className='text-[11px] font-medium uppercase tracking-[0.15em] text-zinc-500'>
+    <span className='text-[11px] font-medium uppercase tracking-[0.15em] text-muted-foreground'>
       {tier.tierName}
     </span>
-    <p className='mt-1 text-[13px] text-zinc-600'>{tier.targetAudience}</p>
+    <p className='mt-1 text-[13px] text-foreground/70'>{tier.targetAudience}</p>
 
     <div className='mt-5'>
       {tier.originalPrice && (
-        <s className='block text-[13px] text-zinc-400'>{tier.originalPrice}</s>
+        <s className='block text-[13px] text-muted-foreground'>{tier.originalPrice}</s>
       )}
-      <span className='text-[40px] font-semibold leading-none tracking-tight text-zinc-900'>
+      <span className='text-[40px] font-semibold leading-none tracking-tight text-foreground'>
         {tier.price}
       </span>
       {tier.priceSubtext && (
-        <span className='ml-1 text-[13px] text-zinc-400'>
+        <span className='ml-1 text-[13px] text-muted-foreground'>
           {tier.priceSubtext}
         </span>
       )}
     </div>
 
     <p
-      className={`${serif.className} mt-4 text-[17px] italic leading-snug text-zinc-700`}
+      className={`${serif.className} mt-4 text-[17px] italic leading-snug text-foreground/80`}
     >
       &ldquo;{tier.hook}&rdquo;
     </p>
 
-    <div className='my-5 h-px bg-zinc-200' />
+    <div className='my-5 h-px bg-border' />
 
     <ul className='flex-1 space-y-2.5'>
       {tier.features.map((feature) => (
         <li
           key={feature}
-          className='flex items-start gap-2.5 text-[13px] leading-relaxed text-zinc-900'
+          className='flex items-start gap-2.5 text-[13px] leading-relaxed text-foreground'
         >
           <SCIcon
             icon={CheckCircle}
@@ -69,12 +69,12 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
         {tier.limits.map((limit) => (
           <li
             key={limit}
-            className='flex items-start gap-2.5 text-[13px] leading-relaxed text-zinc-500'
+            className='flex items-start gap-2.5 text-[13px] leading-relaxed text-muted-foreground'
           >
             <SCIcon
               icon={XCircle}
               size='sm'
-              className='mt-0.5 shrink-0 text-zinc-600'
+              className='mt-0.5 shrink-0 text-foreground/70'
             />
             {limit}
           </li>
@@ -87,7 +87,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
       className={`mt-7 block w-full rounded-sm px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
         tier.highlighted
           ? 'bg-primary hover:bg-[#1535A8]'
-          : 'bg-[#1B3FC4] hover:bg-zinc-800'
+          : 'bg-[#1B3FC4] hover:bg-[#1535A8]'
       }`}
     >
       {tier.ctaLabel}

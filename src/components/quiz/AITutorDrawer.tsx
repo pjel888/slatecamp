@@ -2,9 +2,10 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Brain, CircleNotch, Warning } from '@phosphor-icons/react'
+import { Brain, CircleNotch, Warning } from '@phosphor-icons/react'
 import { getCorrectOptionId } from '@/lib/utils/question'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { CloseButton } from '@/components/ui/close-button'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
 
@@ -44,7 +45,7 @@ export function AITutorDrawer({
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [response, setResponse] = useState<TutorResponse | null>(null)
-  const closeRef = useRef<HTMLButtonElement>(null)
+  const closeRef = useRef<HTMLDivElement>(null)
   const fetchedForRef = useRef<string | null>(null)
 
   useEffect(() => {
@@ -95,7 +96,7 @@ export function AITutorDrawer({
   // Focus close button when drawer opens
   useEffect(() => {
     if (isVisible) {
-      const t = setTimeout(() => closeRef.current?.focus(), 350)
+      const t = setTimeout(() => closeRef.current?.querySelector('button')?.focus(), 350)
       return () => clearTimeout(t)
     }
   }, [isVisible])
@@ -121,14 +122,9 @@ export function AITutorDrawer({
                   <SCIcon icon={Brain} size="sm" />
                   <span className="text-[11px] font-black uppercase tracking-widest">AI Tutor</span>
                 </div>
-                <button
-                  ref={closeRef}
-                  onClick={onClose}
-                  aria-label="Close AI tutor"
-                  className="h-6 w-6 flex items-center justify-center rounded-full text-zinc-300 hover:text-zinc-600 hover:bg-zinc-200 transition-colors"
-                >
-                  <SCIcon icon={X} size="xs" />
-                </button>
+                <div ref={closeRef}>
+                  <CloseButton onClick={onClose} aria-label="Close AI tutor" size="sm" />
+                </div>
               </div>
 
               {/* Body */}
