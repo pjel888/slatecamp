@@ -68,7 +68,7 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
         timerSeconds: null,
         focusOption: 'single-subject',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

@@ -56,7 +56,7 @@ const FocusReviewSetup = ({ userId, weakNodes }: FocusReviewSetupProps) => {
         timerSeconds: null,
         focusOption: 'weakest',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

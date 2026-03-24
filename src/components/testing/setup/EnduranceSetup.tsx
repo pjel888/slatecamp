@@ -59,7 +59,7 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
         timerSeconds: null,
         focusOption: 'mixed',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: true,

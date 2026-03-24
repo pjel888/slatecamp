@@ -122,7 +122,7 @@ export interface SessionConfig {
   timerSeconds: number | null
   focusOption: FocusOption
   preSessionConfidence: SubjectConfidence[]
-  isBlindsplotSession: boolean
+  isBlindspotSession: boolean
   blindspotQueueId: string | null
   isProofSimulation: boolean
   isEnduranceSession: boolean

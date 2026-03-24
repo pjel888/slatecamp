@@ -35,7 +35,7 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
         timerSeconds: SIMULATION_QUESTION_COUNT * SECONDS_PER_QUESTION,
         focusOption: 'mixed',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: true,
         isEnduranceSession: false,

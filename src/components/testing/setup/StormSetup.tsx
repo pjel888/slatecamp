@@ -37,7 +37,7 @@ const StormSetup = ({ userId }: StormSetupProps) => {
         timerSeconds: questionCount * SECONDS_PER_QUESTION,
         focusOption: 'mixed',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

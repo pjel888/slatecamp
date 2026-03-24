@@ -13,7 +13,6 @@ interface NavigatorOverlayProps {
   currentIndex: number
   onJump: (index: number) => void
   onClose: () => void
-  showCorrectness?: boolean
 }
 
 const getCellState = (
@@ -21,7 +20,6 @@ const getCellState = (
   currentIndex: number,
   questionId: string,
   answers: Map<string, AnswerState>,
-  showCorrectness: boolean,
 ): NavigatorCellState => {
   if (index === currentIndex) return 'current'
   const answer = answers.get(questionId)
@@ -38,7 +36,6 @@ export const NavigatorOverlay = ({
   currentIndex,
   onJump,
   onClose,
-  showCorrectness = true,
 }: NavigatorOverlayProps) => {
   const overlayRef = useRef<HTMLDivElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -100,7 +97,7 @@ export const NavigatorOverlay = ({
             style={{ gridTemplateColumns: 'repeat(10, minmax(0, 1fr))' }}
           >
             {questionIds.map((qId, index) => {
-              const state = getCellState(index, currentIndex, qId, answers, showCorrectness)
+              const state = getCellState(index, currentIndex, qId, answers)
               return (
                 <button
                   key={qId}

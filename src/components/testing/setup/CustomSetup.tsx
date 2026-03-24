@@ -62,7 +62,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
         timerSeconds: timerEnabled ? timerMinutes * 60 : null,
         focusOption: selectedSubjectIds.length === 1 ? 'single-subject' : 'mixed',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

@@ -647,7 +647,6 @@ export const SessionShell = ({
           currentIndex={currentIndex}
           onJump={handleNavigate}
           onClose={() => setShowNavigator(false)}
-          showCorrectness={!isStorm}
         />
       )}
 

@@ -45,7 +45,7 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
         timerSeconds: null,
         focusOption,
         preSessionConfidence: confidenceRatings,
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

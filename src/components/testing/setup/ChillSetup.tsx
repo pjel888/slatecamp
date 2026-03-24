@@ -41,7 +41,7 @@ const ChillSetup = ({ userId }: ChillSetupProps) => {
         timerSeconds: null,
         focusOption: subjectFilter !== 'all' ? 'single-subject' : 'mixed',
         preSessionConfidence: [],
-        isBlindsplotSession: false,
+        isBlindspotSession: false,
         blindspotQueueId: null,
         isProofSimulation: false,
         isEnduranceSession: false,

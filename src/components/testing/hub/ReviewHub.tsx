@@ -24,7 +24,7 @@ interface RawSession {
     source?: ModeSource
     isProofSimulation?: boolean
     isEnduranceSession?: boolean
-    isBlindsplotSession?: boolean
+    isBlindspotSession?: boolean
   } | null
   status: string
   question_ids: string[] | null
