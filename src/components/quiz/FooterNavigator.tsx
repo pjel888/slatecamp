@@ -37,7 +37,7 @@ export function FooterNavigator({
   const showCount = dots.length > DOT_OVERFLOW_THRESHOLD
 
   return (
-    <footer className='shrink-0 border-t border-border bg-[#F5F7FA]'>
+    <footer className='shrink-0 border-t border-border bg-surface-focused'>
       <div className='max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4'>
         {/* Previous */}
         <button

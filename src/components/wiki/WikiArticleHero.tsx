@@ -2,8 +2,8 @@ import { cn } from '@/lib/utils'
 import type { WikiArticleHeroProps } from '@/types/wiki'
 
 const difficultyStyle = {
-  Foundational: 'bg-[#EDFAF4] text-[#166534]',
-  Intermediate: 'bg-[#FFF8E6] text-[#92400E]',
+  Foundational: 'bg-success-50 text-[#166534]',
+  Intermediate: 'bg-signal-gold-light text-[#92400E]',
   Advanced: 'bg-[#FFF0EF] text-[#991B1B]',
 } as const
 
@@ -14,7 +14,7 @@ export const WikiArticleHero = ({
     <header className="not-prose flex flex-col gap-3 mb-0">
       {/* Tag row */}
       <div className="flex flex-wrap items-center gap-1.5">
-        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#EEF3FD] text-camp-cobalt">
+        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cobalt-light text-camp-cobalt">
           {subject}
         </span>
         <span className={cn(
@@ -23,13 +23,13 @@ export const WikiArticleHero = ({
         )}>
           {difficulty}
         </span>
-        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#F5F5F5] text-[#737370]">
+        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-muted text-ink-muted">
           {readTime} read
         </span>
       </div>
 
       {/* Title — Syne 800 weight, only element using font-display */}
-      <h1 className="font-[var(--font-display)] font-extrabold text-2xl sm:text-[30px] text-[#1A1A1A] leading-tight dark:text-[#E2E0D8]">
+      <h1 className="font-[var(--font-display)] font-extrabold text-2xl sm:text-[30px] text-wiki-ink leading-tight dark:text-[#E2E0D8]">
         {title}
       </h1>
 
@@ -39,7 +39,7 @@ export const WikiArticleHero = ({
       </p>
 
       {/* ALE orientation banner — NOT a callout */}
-      <div className="border-l-[3px] border-camp-cobalt bg-[#EEF3FD] rounded-r-lg px-4 py-3 dark:bg-[#1B3FC410]">
+      <div className="border-l-[3px] border-camp-cobalt bg-cobalt-light rounded-r-lg px-4 py-3 dark:bg-[#1B3FC410]">
         <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-camp-cobalt mb-1">
           The ALE tests you to
         </p>

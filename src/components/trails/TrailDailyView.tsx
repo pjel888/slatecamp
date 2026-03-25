@@ -130,7 +130,7 @@ export const TrailDailyView = ({
     <div className="flex flex-col gap-5">
       {/* Missed day recovery — UX Strategy Section 7 (Alt Path M1) */}
       {hasMissedDay && (
-        <div className="rounded-md border border-warning bg-[#FEF8ED] p-4">
+        <div className="rounded-md border border-warning bg-warning-50 p-4">
           <p className="text-sm text-text-primary">
             You missed Day {missedDayNumber}. Pick it up today, or skip ahead to Day {enrollment.current_day}.
           </p>
@@ -210,7 +210,7 @@ export const TrailDailyView = ({
                       {step.title}
                     </span>
                     {step.is_optional && (
-                      <span className="text-[11px] text-text-tertiary bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">
+                      <span className="text-[11px] text-text-tertiary bg-muted px-1.5 py-0.5 rounded-sm">
                         Optional
                       </span>
                     )}
@@ -254,7 +254,7 @@ export const TrailDailyView = ({
         const totalRequired = requiredSteps.length
         const percent = totalRequired > 0 ? Math.round((completedCount / totalRequired) * 100) : 0
         return (
-          <div className="rounded-md border border-border bg-[#F5F5F5] px-4 py-3">
+          <div className="rounded-md border border-border bg-muted px-4 py-3">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs text-text-secondary">
                 Day progress: {completedCount}/{totalRequired} complete

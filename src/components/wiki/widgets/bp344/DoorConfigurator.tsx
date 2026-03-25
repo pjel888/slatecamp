@@ -38,7 +38,7 @@ export const DoorConfigurator = () => {
   ]
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Door Compliance Configurator (2024 IRR)</div>
       <p className="text-[13px] text-[#444] mb-3.5">Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
       <div className="flex gap-3.5 flex-wrap mb-3.5">
@@ -57,15 +57,15 @@ export const DoorConfigurator = () => {
           </div>
         ))}
       </div>
-      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-[#1B7A3C] text-[#0f4a24]' : 'bg-[#fdf0ef] border border-[#E63329] text-[#5a1a16]'}`}>
+      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-camp-green text-[#0f4a24]' : 'bg-[#fdf0ef] border border-camp-red text-[#5a1a16]'}`}>
         {ok ? (
           <>
-            <strong className="text-[#1B7A3C]">✓ All parameters compliant</strong> — meets 2024 BP 344 IRR.
+            <strong className="text-camp-green">✓ All parameters compliant</strong> — meets 2024 BP 344 IRR.
             <br /><span className="text-[#555]">{passes.join(' · ')}</span>
           </>
         ) : (
           <>
-            <strong className="text-[#E63329]">✗ Non-compliant:</strong><br />
+            <strong className="text-camp-red">✗ Non-compliant:</strong><br />
             {issues.map((x, i) => <span key={i}>• {x}<br /></span>)}
             {passes.length > 0 && <span className="text-[#555] text-[11px]">Passing: {passes.join(' · ')}</span>}
           </>

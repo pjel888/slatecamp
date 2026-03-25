@@ -49,7 +49,7 @@ export const QuestionPreviewPanel = ({
   return (
     <div className="sticky top-[112px] h-[calc(100vh-112px)] overflow-y-auto flex flex-col gap-4">
       {/* Mode toggle */}
-      <div className="flex items-center gap-1 p-1 rounded-md bg-[#F5F7FA] border border-border shrink-0">
+      <div className="flex items-center gap-1 p-1 rounded-md bg-surface-focused border border-border shrink-0">
         <button
           type="button"
           onClick={() => setActiveMode('camp')}

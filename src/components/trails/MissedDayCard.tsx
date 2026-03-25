@@ -64,7 +64,7 @@ const MissedDayCard = ({
               setShowCatchUp(true)
             }
           }}
-          className="rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 hover:bg-[#F8F7F5]"
+          className="rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 hover:bg-surface-light"
         >
           View what I missed
         </button>

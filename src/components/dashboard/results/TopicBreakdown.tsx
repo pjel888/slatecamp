@@ -30,10 +30,10 @@ export const TopicBreakdown = ({ topicStats }: TopicBreakdownProps) => (
                 className={cn(
                   'w-8 h-8 rounded-md flex items-center justify-center border shrink-0',
                   percentage >= 75
-                    ? 'bg-[#EDFAF4] border-emerald/20 text-emerald'
+                    ? 'bg-success-50 border-emerald/20 text-emerald'
                     : percentage >= 50
-                      ? 'bg-[#FEF8ED] border-warning/20 text-warning'
-                      : 'bg-[#FDF0F0] border-destructive/20 text-destructive',
+                      ? 'bg-warning-50 border-warning/20 text-warning'
+                      : 'bg-destructive-50 border-destructive/20 text-destructive',
                 )}
               >
                 <SCIcon icon={BookOpen} size='sm' />
@@ -44,7 +44,7 @@ export const TopicBreakdown = ({ topicStats }: TopicBreakdownProps) => (
               </div>
             </div>
             <div className='flex items-center gap-4'>
-              <div className='w-24 h-1.5 bg-[#F5F5F5] rounded-full overflow-hidden border border-border/30 hidden sm:block'>
+              <div className='w-24 h-1.5 bg-muted rounded-full overflow-hidden border border-border/30 hidden sm:block'>
                 <div
                   className={cn(
                     'h-full rounded-full',

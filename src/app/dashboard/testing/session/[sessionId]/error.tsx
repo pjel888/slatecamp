@@ -13,7 +13,7 @@ const SessionError = ({
   const router = useRouter()
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5F7FA] px-6 text-center">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-surface-focused px-6 text-center">
       <div className="max-w-sm space-y-4">
         <h2 className="text-lg font-semibold text-text-primary">Session Error</h2>
         <p className="text-sm text-text-secondary">

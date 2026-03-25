@@ -18,9 +18,9 @@ const TRAIL_TYPE_LABELS: Record<CampTrail['trail_type'], string> = {
 const TRAIL_TYPE_STYLES: Record<CampTrail['trail_type'], string> = {
   time_gated: 'bg-primary-50 text-camp-cobalt',
   subject_mastery: 'bg-[#EEEDFE] text-[#534AB7]',
-  code_deep_dive: 'bg-[#FEF8ED] text-[#8B6914]',
+  code_deep_dive: 'bg-warning-50 text-[#8B6914]',
   remediation: 'bg-[#FFF3E8] text-[#9E5B1F]',
-  exam_simulation: 'bg-[#FDF0F0] text-[#E63329]',
+  exam_simulation: 'bg-destructive-50 text-camp-red',
 }
 
 /* ------------------------------------------------------------------ */
@@ -191,7 +191,7 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
         'group relative flex flex-col rounded-lg border border-border bg-white transition-all duration-150 hover:border-[#B8B4AC] hover:shadow-sm cursor-pointer',
         'focus-visible:ring-2 focus-visible:ring-camp-cobalt/20 focus-visible:ring-offset-2 outline-none',
         state === 'enrolled' && 'border-[#534AB7] border-[1.5px]',
-        state === 'completed' && 'bg-[#EDFAF4] border-emerald/30',
+        state === 'completed' && 'bg-success-50 border-emerald/30',
         state === 'locked' && 'opacity-70',
       )}
     >
@@ -208,7 +208,7 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
           </span>
 
           {trail.is_free ? (
-            <span className="font-mono text-[11px] uppercase bg-[#EDFAF4] text-emerald px-1.5 py-0.5 rounded-sm">
+            <span className="font-mono text-[11px] uppercase bg-success-50 text-emerald px-1.5 py-0.5 rounded-sm">
               Free
             </span>
           ) : (

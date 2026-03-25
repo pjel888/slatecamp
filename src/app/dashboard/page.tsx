@@ -114,8 +114,8 @@ export default async function DashboardPage() {
             <div className='lg:col-span-3 rounded-md border border-border bg-white p-2'>
               <div className='grid grid-cols-3 gap-2 h-full'>
                 <div className='rounded-md bg-primary-50 min-h-[72px]' />
-                <div className='rounded-md bg-[#EDFAF4] min-h-[72px]' />
-                <div className='rounded-md bg-[#FEF8ED] min-h-[72px]' />
+                <div className='rounded-md bg-success-50 min-h-[72px]' />
+                <div className='rounded-md bg-warning-50 min-h-[72px]' />
               </div>
             </div>
 

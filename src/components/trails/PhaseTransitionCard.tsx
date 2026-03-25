@@ -15,7 +15,7 @@ export const PhaseTransitionCard = ({
   toPhase,
 }: PhaseTransitionCardProps) => {
   return (
-    <div className="rounded-md border border-border bg-[#F8F7F5] p-4">
+    <div className="rounded-md border border-border bg-surface-light p-4">
       <p className="text-sm font-semibold text-text-primary">
         Phase {fromPhase.phase_number}: {fromPhase.name} &mdash; complete.
       </p>

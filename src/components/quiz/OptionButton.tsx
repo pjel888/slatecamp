@@ -65,13 +65,13 @@ export function OptionButton({
 
         // Post-check: correct answer
         state === 'correct' && [
-          'bg-[#EDFAF4] border-emerald text-text-primary',
+          'bg-success-50 border-emerald text-text-primary',
           'cursor-default ring-2 ring-emerald/30 shadow-[0_0_12px_rgba(45,159,111,0.15)]',
         ],
 
         // Post-check: selected + wrong
         state === 'wrong' && [
-          'bg-[#FDF0F0] border-destructive/50 text-text-primary',
+          'bg-destructive-50 border-destructive/50 text-text-primary',
           'cursor-default opacity-80',
         ],
 

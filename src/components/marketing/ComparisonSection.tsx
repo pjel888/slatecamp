@@ -49,25 +49,25 @@ const COMPARISON_ROWS: readonly {
 export const ComparisonSection = () => (
   <section
     aria-labelledby='comparison-heading'
-    className='border-t border-[#E5E7EB] px-6 py-24'
+    className='border-t border-border-design px-6 py-24'
   >
     <div className='mx-auto max-w-[1200px]'>
       <ScrollReveal delay={0}>
         <div className='flex items-center gap-3'>
-          <Starburst className='h-3 w-3 text-[#F5A623]' />
-          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]'>
+          <Starburst className='h-3 w-3 text-camp-amber' />
+          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-text-2'>
             Two ways to prepare
           </span>
         </div>
 
         <h2
           id='comparison-heading'
-          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-[#18181B]'
+          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-ink'
         >
           The old way. The better way.
         </h2>
 
-        <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-[#6B6B6B]'>
+        <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-text-2'>
           Traditional review centers work. But there&apos;s one thing they
           can&apos;t tell you that SlateCamp can: exactly where your gaps are,
           right now, before exam day.
@@ -75,14 +75,14 @@ export const ComparisonSection = () => (
       </ScrollReveal>
 
       {/* Table — desktop */}
-      <div className='mt-10 hidden overflow-hidden rounded-md border border-[#E5E7EB] md:block'>
+      <div className='mt-10 hidden overflow-hidden rounded-md border border-border-design md:block'>
         {/* Header row */}
-        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-[#E5E7EB] bg-[#FFFFFF]'>
-          <div className='px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]' />
-          <div className='border-l border-[#E5E7EB] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
+        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-border-design bg-white'>
+          <div className='px-5 py-3 text-[12px] font-semibold text-text-2' />
+          <div className='border-l border-border-design px-5 py-3 text-[12px] font-semibold text-text-2'>
             Traditional Review Center
           </div>
-          <div className='border-l border-[#E5E7EB] bg-primary-50 px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
+          <div className='border-l border-border-design bg-primary-50 px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
             SlateCamp
           </div>
         </div>
@@ -91,18 +91,18 @@ export const ComparisonSection = () => (
           {COMPARISON_ROWS.map((row) => (
             <StaggerItem key={row.dimension}>
               <div
-                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-[#E5E7EB] last:border-0 ${
-                  row.highlight ? 'bg-[#FFFFFF]' : ''
+                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-border-design last:border-0 ${
+                  row.highlight ? 'bg-white' : ''
                 }`}
               >
-                <div className='px-5 py-3.5 text-[13px] font-medium text-[#18181B]'>
+                <div className='px-5 py-3.5 text-[13px] font-medium text-ink'>
                   {row.dimension}
                 </div>
-                <div className='border-l border-[#E5E7EB] px-5 py-3.5 text-[13px] text-[#6B6B6B]'>
+                <div className='border-l border-border-design px-5 py-3.5 text-[13px] text-text-2'>
                   {row.traditional}
                 </div>
                 <div
-                  className={`border-l border-[#E5E7EB] px-5 py-3.5 text-[13px] ${
+                  className={`border-l border-border-design px-5 py-3.5 text-[13px] ${
                     row.highlight
                       ? 'font-medium text-camp-cobalt'
                       : 'text-[#555]'
@@ -121,16 +121,16 @@ export const ComparisonSection = () => (
         <StaggerParent className='space-y-3'>
           {COMPARISON_ROWS.map((row) => (
             <StaggerItem key={row.dimension}>
-              <div className='rounded-md border border-[#E5E7EB] p-4'>
-                <p className='text-[11px] font-semibold uppercase tracking-wide text-[#9CA3AF]'>
+              <div className='rounded-md border border-border-design p-4'>
+                <p className='text-[11px] font-semibold uppercase tracking-wide text-gray-400'>
                   {row.dimension}
                 </p>
                 <div className='mt-2 flex gap-4'>
                   <div className='flex-1'>
-                    <p className='text-[11px] font-medium text-[#9CA3AF]'>
+                    <p className='text-[11px] font-medium text-gray-400'>
                       Traditional
                     </p>
-                    <p className='mt-0.5 text-[12px] text-[#6B6B6B]'>
+                    <p className='mt-0.5 text-[12px] text-text-2'>
                       {row.traditional}
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export const ComparisonSection = () => (
                       className={`mt-0.5 text-[12px] ${
                         row.highlight
                           ? 'font-medium text-camp-cobalt'
-                          : 'text-[#18181B]'
+                          : 'text-ink'
                       }`}
                     >
                       {row.slatecamp}
@@ -155,7 +155,7 @@ export const ComparisonSection = () => (
         </StaggerParent>
       </div>
 
-      <p className='mt-6 text-[13px] text-[#9CA3AF]'>
+      <p className='mt-6 text-[13px] text-gray-400'>
         SlateCamp isn&apos;t against review centers — many students use both.
         But if you want to know whether you&apos;re ready before exam day,
         SlateCamp is the only way to find out.

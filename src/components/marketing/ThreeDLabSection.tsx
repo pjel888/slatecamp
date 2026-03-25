@@ -113,7 +113,7 @@ const ThreeDMockup = () => (
           <span className='font-mono text-[11px] text-white/30'>Building</span>
         </div>
         <div className='flex items-center gap-1.5'>
-          <div className='h-px w-4 bg-[#F5A623]' />
+          <div className='h-px w-4 bg-camp-amber' />
           <span className='font-mono text-[11px] text-white/30'>Setback</span>
         </div>
         <div className='flex items-center gap-1.5'>

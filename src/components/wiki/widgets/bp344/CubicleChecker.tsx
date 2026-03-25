@@ -31,7 +31,7 @@ export const CubicleChecker = () => {
   const clPx = Math.round(450 * sc), dPx = Math.round(door * sc), tsY = oy + cd + 22
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Cubicle Compliance Checker (2024 IRR)</div>
       <div className="flex gap-3.5 flex-wrap mb-3">
         {([['Width (mm)', w, setW], ['Depth (mm)', d, setD], ['Door clear width (mm)', door, setDoor], ['Turning space (mm)', turn, setTurn]] as const).map(([lbl, val, set]) => (
@@ -60,11 +60,11 @@ export const CubicleChecker = () => {
           </select>
         </div>
       </div>
-      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-[#1B7A3C] text-[#0f4a24]' : 'bg-[#fdf0ef] border border-[#E63329] text-[#5a1a16]'}`}>
+      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-camp-green text-[#0f4a24]' : 'bg-[#fdf0ef] border border-camp-red text-[#5a1a16]'}`}>
         {ok ? (
-          <><strong className="text-[#1B7A3C]">✓ Compliant — 2024 IRR</strong><br />{passes.join(' · ')}</>
+          <><strong className="text-camp-green">✓ Compliant — 2024 IRR</strong><br />{passes.join(' · ')}</>
         ) : (
-          <><strong className="text-[#E63329]">✗ Non-compliant:</strong><br />{issues.map((x, i) => <span key={i}>• {x}<br /></span>)}</>
+          <><strong className="text-camp-red">✗ Non-compliant:</strong><br />{issues.map((x, i) => <span key={i}>• {x}<br /></span>)}</>
         )}
       </div>
       <svg width="100%" viewBox="0 0 420 280" className="max-w-[420px] block" role="img" aria-labelledby="cubicle-viz-title">

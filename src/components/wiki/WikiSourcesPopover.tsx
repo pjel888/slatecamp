@@ -64,9 +64,9 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
           ref={triggerRef}
           type="button"
           onClick={toggle}
-          className="flex items-center gap-1.5 text-[13px] text-[#737370] hover:text-camp-cobalt transition-colors duration-150 py-1"
+          className="flex items-center gap-1.5 text-[13px] text-ink-muted hover:text-camp-cobalt transition-colors duration-150 py-1"
         >
-          <span className="w-4 h-4 rounded bg-[#F5F5F5] flex items-center justify-center text-[11px] font-bold text-[#A8A8A5]">
+          <span className="w-4 h-4 rounded bg-muted flex items-center justify-center text-[11px] font-bold text-[#A8A8A5]">
             {sources.length}
           </span>
           <span>View all sources</span>
@@ -75,7 +75,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
         {isOpen && pos && createPortal(
           <div
             ref={popoverRef}
-            className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-[100] dark:bg-[#1A1A1A] dark:border-[#3A3835]"
+            className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-[100] dark:bg-wiki-ink dark:border-[#3A3835]"
             style={{ top: pos.top, right: pos.right }}
           >
             <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-3 pt-3 pb-1.5 border-b border-[#ECEAE4] dark:border-[#3A3835]">
@@ -87,7 +87,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
                 key={source.source_id}
                 className={`px-3 py-2 ${i < sources.length - 1 ? 'border-b border-[#ECEAE4] dark:border-[#3A3835]' : ''}`}
               >
-                <p className="text-[11px] font-bold text-[#1A1A1A] leading-tight dark:text-[#E2E0D8]">
+                <p className="text-[11px] font-bold text-wiki-ink leading-tight dark:text-[#E2E0D8]">
                   {source.url ? (
                     <a href={source.url} target="_blank" rel="noopener noreferrer" className="hover:text-camp-cobalt transition-colors">
                       {source.label}
@@ -95,7 +95,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
                   ) : source.label}
                 </p>
                 {source.description && (
-                  <p className="text-[11px] text-[#A8A8A5] leading-snug mt-0.5 line-clamp-1 dark:text-[#737370]">
+                  <p className="text-[11px] text-[#A8A8A5] leading-snug mt-0.5 line-clamp-1 dark:text-ink-muted">
                     {source.description}
                   </p>
                 )}

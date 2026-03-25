@@ -58,7 +58,7 @@ export const Pill = ({
         ? 'border-white/20 text-white/55'
         : variant === 'amber'
           ? 'border-black/15 text-black/45'
-          : 'border-[#E5E7EB] text-[#6B6B6B]')
+          : 'border-border-design text-text-2')
     }
   >
     {children}
@@ -146,7 +146,7 @@ export const CircleArrow = ({
         ? 'border-white/25 text-white/55'
         : variant === 'amber'
           ? 'border-black/20 text-black/40'
-          : 'border-[#E5E7EB] text-[#6B6B6B]')
+          : 'border-border-design text-text-2')
     }
     aria-hidden='true'
   >

@@ -9,8 +9,8 @@ interface Props {
 
 const STYLES = {
   insight: 'bg-primary-50 text-primary-700',
-  warning: 'bg-[#FEF8ED] text-warning',
-  success: 'bg-[#EDFAF4] text-emerald',
+  warning: 'bg-warning-50 text-warning',
+  success: 'bg-success-50 text-emerald',
 }
 
 export function ChartCoachingAnnotation({ text, variant = 'insight' }: Props) {

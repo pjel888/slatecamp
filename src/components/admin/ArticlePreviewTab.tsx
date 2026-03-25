@@ -18,7 +18,7 @@ export const ArticlePreviewTab = ({ previewNode, previewError, title }: ArticleP
       <div className="min-h-0 flex-1 overflow-y-auto bg-white">
         {previewError ? (
           <div className="max-w-[720px] mx-auto px-8 py-8">
-            <div className="rounded-md border border-destructive/30 bg-[#FDF0F0] p-4">
+            <div className="rounded-md border border-destructive/30 bg-destructive-50 p-4">
               <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-destructive mb-2">
                 Compilation Error
               </p>

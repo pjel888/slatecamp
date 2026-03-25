@@ -109,7 +109,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
               return (
                 <label
                   key={subject.id}
-                  className="flex items-center gap-3 cursor-pointer rounded-md border border-[var(--border)] px-4 py-3 hover:bg-[#F8F7F5] transition-colors duration-150 ease-out"
+                  className="flex items-center gap-3 cursor-pointer rounded-md border border-[var(--border)] px-4 py-3 hover:bg-surface-light transition-colors duration-150 ease-out"
                 >
                   <input
                     type="checkbox"
@@ -169,7 +169,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
                     'rounded-full px-4 py-2 text-sm font-medium transition-colors duration-150 ease-out border select-none',
                     isSelected
                       ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
-                      : 'bg-white text-[var(--text-secondary)] border-[var(--border)] hover:bg-[#F8F7F5]',
+                      : 'bg-white text-[var(--text-secondary)] border-[var(--border)] hover:bg-surface-light',
                   )}
                 >
                   {band.label}
@@ -233,7 +233,7 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
 
         {/* Live counter */}
         {availableQuestionCount !== undefined && (
-          <div className="rounded-md bg-[#F8F7F5] border border-[var(--border)] px-4 py-3">
+          <div className="rounded-md bg-surface-light border border-[var(--border)] px-4 py-3">
             <p className="text-[13px] text-[var(--text-secondary)]">
               <span className="font-medium text-[var(--foreground)]">
                 {availableQuestionCount} questions

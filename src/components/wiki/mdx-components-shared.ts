@@ -48,7 +48,7 @@ export const baseMdxComponents = {
     )
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    React.createElement('thead', { className: 'bg-[#F5F5F5] dark:bg-[#252420]', ...props })
+    React.createElement('thead', { className: 'bg-muted dark:bg-[#252420]', ...props })
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('th', {
@@ -58,7 +58,7 @@ export const baseMdxComponents = {
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('td', {
-      className: 'px-3.5 py-[11px] text-sm text-[#3D3D3A] border-b border-[#ECEAE4] align-top leading-relaxed [&_strong]:text-[#1A1A1A] [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-[#C8C6C0] dark:border-[#3A3835] dark:[&_strong]:text-[#E2E0D8]',
+      className: 'px-3.5 py-[11px] text-sm text-[#3D3D3A] border-b border-[#ECEAE4] align-top leading-relaxed [&_strong]:text-wiki-ink [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-[#C8C6C0] dark:border-[#3A3835] dark:[&_strong]:text-[#E2E0D8]',
       ...props,
     })
   ),

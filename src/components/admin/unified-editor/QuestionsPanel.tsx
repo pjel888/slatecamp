@@ -146,7 +146,7 @@ const CollapsibleSection = ({
       <button
         type="button"
         onClick={() => setOpen((p) => !p)}
-        className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+        className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-surface-light"
       >
         <svg
           className={`h-3 w-3 shrink-0 text-text-tertiary transition-transform duration-150 ease-out ${
@@ -840,7 +840,7 @@ const QuestionCard = ({
   // ── Deleted state ──────────────────────────────────────────
   if (isDeleted) {
     return (
-      <div className="border border-destructive rounded-md bg-[#FDF0F0]">
+      <div className="border border-destructive rounded-md bg-destructive-50">
         <div className="flex items-center justify-between px-3 py-2.5">
           <div className="flex items-center gap-2">
             <span className="text-xs font-medium text-destructive">Delete on next save</span>
@@ -851,7 +851,7 @@ const QuestionCard = ({
           <button
             type="button"
             onClick={onUndoDelete}
-            className="shrink-0 rounded-sm border border-destructive/30 bg-white px-2.5 py-1 text-xs font-medium text-destructive transition-colors duration-150 ease-out hover:bg-[#FDF0F0]"
+            className="shrink-0 rounded-sm border border-destructive/30 bg-white px-2.5 py-1 text-xs font-medium text-destructive transition-colors duration-150 ease-out hover:bg-destructive-50"
           >
             Undo
           </button>
@@ -925,7 +925,7 @@ const QuestionCard = ({
   return (
     <div className="overflow-hidden border border-border rounded-md bg-white">
       {/* Collapse header */}
-      <div className="flex items-center justify-between border-b border-border bg-[#F8F7F5] px-3 py-2">
+      <div className="flex items-center justify-between border-b border-border bg-surface-light px-3 py-2">
         <div className="flex items-center gap-2">
           {isDirty && (
             <span className="h-2 w-2 shrink-0 rounded-full bg-warning" title="Unsaved changes" />
@@ -1288,7 +1288,7 @@ export const QuestionsPanel = ({
         <TabsContent value="questions" className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {/* Filter bar */}
           {showFilterBar && (
-            <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-border bg-[#F8F7F5] px-3 py-2">
+            <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-border bg-surface-light px-3 py-2">
               <div className="relative min-w-[180px] flex-1">
                 <svg
                   className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary"

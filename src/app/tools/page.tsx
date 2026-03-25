@@ -47,7 +47,7 @@ const TOOLS = [
 
 export default function ToolsHubPage() {
   return (
-    <div className='min-h-screen bg-[#F5F5F5]'>
+    <div className='min-h-screen bg-muted'>
       <MarketingNav activeRoute='/tools' />
       <main className='px-6 pt-32 pb-24 sm:pt-40'>
         <div className='mx-auto max-w-[1200px]'>

@@ -2,7 +2,7 @@
 // Score ring placeholder pulses to signal loading state.
 
 const Loading = () => (
-  <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-[#F5F5F5]">
+  <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-muted">
     <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
       {/* Eyebrow label placeholder */}
       <div className="mx-auto h-2 w-36 animate-pulse rounded-sm bg-muted" />

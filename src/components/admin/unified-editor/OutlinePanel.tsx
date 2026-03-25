@@ -121,7 +121,7 @@ export const OutlinePanel = ({
                 <button
                   type="button"
                   onClick={() => scrollToHeading(heading)}
-                  className={`flex w-full items-center gap-1.5 text-left text-xs transition-colors duration-150 ease-out hover:bg-[#F8F7F5] ${heading.level === 3 ? 'pl-7 pr-3 py-1.5' : 'px-3 py-1.5'} group cursor-pointer`}
+                  className={`flex w-full items-center gap-1.5 text-left text-xs transition-colors duration-150 ease-out hover:bg-surface-light ${heading.level === 3 ? 'pl-7 pr-3 py-1.5' : 'px-3 py-1.5'} group cursor-pointer`}
                   title={heading.text}
                 >
                   {/* Section icon */}

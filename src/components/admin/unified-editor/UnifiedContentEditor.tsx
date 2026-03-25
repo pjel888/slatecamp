@@ -173,7 +173,7 @@ const EditorInner = ({
   }
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-[#F8F7F5]">
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-surface-light">
       {/* Content Bar */}
       <ContentBar
         title={title}

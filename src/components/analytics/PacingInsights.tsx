@@ -31,7 +31,7 @@ export function PacingInsights({ data }: Props) {
                     <div className="flex items-center gap-1">
                       <span className={cn(
                         'text-[11px] font-bold px-1.5 py-0.5 rounded-full',
-                        isHigh ? 'bg-[#FDF0F0] text-destructive' : 'bg-[#FEF8ED] text-warning'
+                        isHigh ? 'bg-destructive-50 text-destructive' : 'bg-warning-50 text-warning'
                       )}>
                         {item.ratio}x
                       </span>
@@ -49,7 +49,7 @@ export function PacingInsights({ data }: Props) {
               )
             })}
             {data[0]?.ratio > 1.5 && (
-              <div className="flex items-start gap-1.5 bg-[#FEF8ED] rounded-md px-2 py-1.5 mt-1">
+              <div className="flex items-start gap-1.5 bg-warning-50 rounded-md px-2 py-1.5 mt-1">
                 <SCIcon icon={Warning} size="xs" className="text-warning mt-0.5 shrink-0" />
                 <p className="text-[11px] text-warning leading-snug">
                   Extra time here isn&apos;t improving accuracy. Try flagging and moving on.

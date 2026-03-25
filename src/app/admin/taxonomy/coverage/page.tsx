@@ -14,8 +14,8 @@ import { GridFour, Warning } from '@phosphor-icons/react/dist/ssr'
  * ------------------------------------------------------------------ */
 
 const coverageStyles: Record<CoverageLevel, string> = {
-  full: 'bg-[#EDFAF4] border-emerald',
-  partial: 'bg-[#FEF8ED] border-warning',
+  full: 'bg-success-50 border-emerald',
+  partial: 'bg-warning-50 border-warning',
   empty: 'bg-muted border-border',
   critical: 'bg-muted border-2 border-destructive',
 }
@@ -70,8 +70,8 @@ const AdminTaxonomyCoveragePage = async () => {
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest">
           Legend
         </span>
-        <LegendItem className="bg-[#EDFAF4] border-emerald" label="Full (≥10q + article)" />
-        <LegendItem className="bg-[#FEF8ED] border-warning" label="Partial (1–9q or draft)" />
+        <LegendItem className="bg-success-50 border-emerald" label="Full (≥10q + article)" />
+        <LegendItem className="bg-warning-50 border-warning" label="Partial (1–9q or draft)" />
         <LegendItem className="bg-muted border-border" label="Empty" />
         <LegendItem className="bg-muted border-2 border-destructive" label="Critical Gap (high-freq, no content)" />
       </div>

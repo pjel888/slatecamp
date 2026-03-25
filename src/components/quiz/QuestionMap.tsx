@@ -101,7 +101,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
                   disabled && 'cursor-default',
                   dot.index === currentIndex && 'bg-primary text-white ring-2 ring-primary/30',
                   dot.state === 'answered' && dot.index !== currentIndex && 'bg-primary-50 text-primary-700 border border-primary-700/20',
-                  dot.state === 'flagged' && dot.index !== currentIndex && 'bg-[#FEF8ED] text-warning border border-warning/20',
+                  dot.state === 'flagged' && dot.index !== currentIndex && 'bg-warning-50 text-warning border border-warning/20',
                   dot.state === 'unanswered' && dot.index !== currentIndex && 'bg-zinc-50 text-text-tertiary border border-border',
                 )}
               >
@@ -118,7 +118,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
               <span className='w-3 h-3 rounded-sm bg-primary-50 border border-primary-700/20' /> Answered
             </span>
             <span className='flex items-center gap-1.5'>
-              <span className='w-3 h-3 rounded-sm bg-[#FEF8ED] border border-warning/20' /> Flagged
+              <span className='w-3 h-3 rounded-sm bg-warning-50 border border-warning/20' /> Flagged
             </span>
           </div>
         </div>

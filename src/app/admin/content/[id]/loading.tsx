@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-[#F8F7F5]">
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-surface-light">
       {/* Content bar skeleton */}
       <div className="flex shrink-0 items-center gap-4 border-b border-border bg-white px-4 py-3">
         <div className="h-4 w-20 animate-pulse rounded bg-border" />
@@ -28,7 +28,7 @@ export default function Loading() {
 
         {/* Article panel */}
         <div className="flex w-[55%] flex-col border-r border-border">
-          <div className="shrink-0 border-b border-border bg-[#F8F7F5] px-4 py-2">
+          <div className="shrink-0 border-b border-border bg-surface-light px-4 py-2">
             <div className="flex gap-2">
               <div className="h-6 w-16 animate-pulse rounded bg-border" />
               <div className="h-6 w-16 animate-pulse rounded bg-border" />
@@ -50,7 +50,7 @@ export default function Loading() {
 
         {/* Questions panel */}
         <div className="flex w-[45%] flex-col">
-          <div className="shrink-0 border-b border-border bg-[#F8F7F5] px-4 py-2">
+          <div className="shrink-0 border-b border-border bg-surface-light px-4 py-2">
             <div className="flex gap-2">
               <div className="h-6 w-20 animate-pulse rounded bg-border" />
               <div className="h-6 w-20 animate-pulse rounded bg-border" />

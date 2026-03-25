@@ -12,7 +12,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
   const otherCount = alerts.length - 1
 
   return (
-    <div className="rounded-md border border-destructive/30 bg-[#FDF0F0] px-4 py-3">
+    <div className="rounded-md border border-destructive/30 bg-destructive-50 px-4 py-3">
       <div className="flex items-start gap-3">
         <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-destructive/10">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-destructive">

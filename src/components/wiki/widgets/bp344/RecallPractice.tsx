@@ -72,15 +72,15 @@ export const RecallDrill = () => {
   }
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Recall Practice (2024 IRR)</div>
       <p className="text-[13px] text-[#444] mb-3.5">Questions marked ⟳ test a value that changed in 2024 — common ALE traps. Hit <strong>Reveal</strong> then <strong>Next</strong>.</p>
       <div className="bg-white border-[1.5px] border-[#d0cec7] rounded-md px-4 py-4 min-h-[80px] mb-3">
-        <div className="text-[14px] text-[#1a1a1a] font-medium mb-1.5">{cur.q}</div>
+        <div className="text-[14px] text-wiki-ink font-medium mb-1.5">{cur.q}</div>
         <div className="font-dm-mono text-[11px] text-[#888]">BP 344 2024 IRR — {cur.src}</div>
         {revealed && (
-          <div className="mt-3 px-3.5 py-2.5 rounded-md bg-[#e8f5ee] border border-[#1B7A3C]">
-            <span className="font-dm-mono text-[14px] text-[#1B7A3C] font-semibold">{cur.a}</span>
+          <div className="mt-3 px-3.5 py-2.5 rounded-md bg-[#e8f5ee] border border-camp-green">
+            <span className="font-dm-mono text-[14px] text-camp-green font-semibold">{cur.a}</span>
           </div>
         )}
       </div>

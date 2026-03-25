@@ -30,9 +30,9 @@ interface ContentBarProps {
 // ─── Helpers ─────────────────────────────────────────────────
 
 const STATUS_STYLES: Record<string, string> = {
-  draft: 'bg-[#FEF8ED] text-warning',
-  review: 'bg-[#FEF8ED] text-warning',
-  published: 'bg-[#EDFAF4] text-emerald',
+  draft: 'bg-warning-50 text-warning',
+  review: 'bg-warning-50 text-warning',
+  published: 'bg-success-50 text-emerald',
 }
 
 const Divider = () => <div className="h-4 w-px bg-border" />
@@ -99,7 +99,7 @@ export const ContentBar = ({
           {aleId}
         </span>
       ) : (
-        <span className="whitespace-nowrap rounded-sm bg-[#FEF8ED] px-2 py-0.5 text-[11px] font-medium text-warning">
+        <span className="whitespace-nowrap rounded-sm bg-warning-50 px-2 py-0.5 text-[11px] font-medium text-warning">
           No topic linked
         </span>
       )}

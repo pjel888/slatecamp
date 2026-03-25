@@ -52,9 +52,9 @@ export const BedSizeComparator = () => {
   const bed = BEDS[active]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
       {/* Header */}
-      <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-muted border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Tap a bed to see its clearance requirements
         </div>
@@ -81,7 +81,7 @@ export const BedSizeComparator = () => {
                   className={`transition-all duration-150 ${
                     isActive
                       ? 'fill-camp-cobalt/15 stroke-camp-cobalt stroke-2'
-                      : 'fill-[#EEF3FD] stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt group-hover:stroke-2'
+                      : 'fill-cobalt-light stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt group-hover:stroke-2'
                   }`}
                 />
                 <text
@@ -95,7 +95,7 @@ export const BedSizeComparator = () => {
                   {b.name.toUpperCase()}
                 </text>
               </svg>
-              <div className="font-[var(--font-dm-mono)] text-[11px] text-[#737370] mt-2 uppercase tracking-[0.08em]">
+              <div className="font-[var(--font-dm-mono)] text-[11px] text-ink-muted mt-2 uppercase tracking-[0.08em]">
                 {b.name}
               </div>
               <div className="font-[var(--font-dm-mono)] text-[11px] text-camp-cobalt font-medium mt-0.5">
@@ -108,7 +108,7 @@ export const BedSizeComparator = () => {
 
       {/* Info panel */}
       <div className="px-5 py-3.5 border-t border-[#ECEAE4] text-[13px] text-[#3D3D3A] leading-relaxed min-h-[60px] dark:border-[#3A3835] dark:text-[#C8C6C0]">
-        <strong className="text-[#1A1A1A] dark:text-[#E2E0D8]">
+        <strong className="text-wiki-ink dark:text-[#E2E0D8]">
           {bed.name} bed ({formatDim(bed.w)} × {formatDim(bed.l)} mm)
         </strong>{' '}
         — {bed.info.split(' — ')[1]}

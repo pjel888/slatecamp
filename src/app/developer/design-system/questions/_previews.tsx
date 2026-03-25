@@ -106,7 +106,7 @@ export const AnswerOptionPreview = () => (
     </div>
 
     {/* Correct state */}
-    <div className="flex items-center gap-3 px-3 py-2.5 rounded-sm border border-emerald-500 bg-[#EDFAF4] text-foreground">
+    <div className="flex items-center gap-3 px-3 py-2.5 rounded-sm border border-emerald-500 bg-success-50 text-foreground">
       <span className="flex-shrink-0 w-4 h-4 rounded-full border-2 border-emerald-500 flex items-center justify-center">
         <span className="w-2 h-2 rounded-full bg-emerald-500" />
       </span>
@@ -128,7 +128,7 @@ export const AnswerOptionPreview = () => (
 export const RationalePanelPreview = () => (
   <div className="w-full max-w-md rounded-md border border-emerald-200 overflow-hidden">
     {/* Header */}
-    <div className="bg-[#EDFAF4] px-4 py-2.5 border-b border-emerald-200">
+    <div className="bg-success-50 px-4 py-2.5 border-b border-emerald-200">
       <div className="flex items-center gap-2">
         <span className="w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center text-white text-[11px] font-bold">
           &#10003;
@@ -174,13 +174,13 @@ export const RationalePanelPreview = () => (
 
 export const DifficultyBadgePreview = () => (
   <div className="flex items-center gap-3">
-    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-[#EDFAF4] text-emerald-700 text-[12px] font-medium">
+    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-success-50 text-emerald-700 text-[12px] font-medium">
       Easy
     </span>
-    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-[#FEF8ED] text-amber-700 text-[12px] font-medium">
+    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-warning-50 text-amber-700 text-[12px] font-medium">
       Medium
     </span>
-    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-[#FDF0F0] text-red-700 text-[12px] font-medium">
+    <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-destructive-50 text-red-700 text-[12px] font-medium">
       Hard
     </span>
   </div>

@@ -5,6 +5,7 @@ import { Check, X, Flag } from '@phosphor-icons/react/dist/ssr'
 import type { QuestionReviewItem } from '@/types/testing'
 import { ERROR_TAG_LABELS } from '@/types/testing'
 import { Eyebrow } from '@/components/ui/eyebrow'
+import { Card } from '@/components/ui/card'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -58,7 +59,7 @@ const DetailPanel = ({ item }: { item: QuestionReviewItem }) => {
   const timeSeconds = Math.round(item.timeSpentMs / 1000)
 
   return (
-    <div className="mt-3 bg-card rounded-lg border border-border p-4 space-y-3">
+    <Card className="mt-3 space-y-3">
       {/* Question text */}
       <p
         className="text-sm line-clamp-2"
@@ -142,7 +143,7 @@ const DetailPanel = ({ item }: { item: QuestionReviewItem }) => {
           </span>
         )}
       </div>
-    </div>
+    </Card>
   )
 }
 

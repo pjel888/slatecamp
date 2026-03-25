@@ -240,7 +240,7 @@ export const ContentEditorIndex = ({
           <button
             type="button"
             onClick={() => setSidebarCollapsed((v) => !v)}
-            className="flex h-8 w-8 items-center justify-center rounded-sm border border-border text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+            className="flex h-8 w-8 items-center justify-center rounded-sm border border-border text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
             aria-label={sidebarCollapsed ? 'Show topics' : 'Hide topics'}
           >
             <TreeStructure className="h-3.5 w-3.5" />
@@ -269,7 +269,7 @@ export const ContentEditorIndex = ({
                   'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 first:rounded-l-sm last:rounded-r-sm',
                   statusFilter === opt.value
                     ? 'bg-camp-cobalt text-white'
-                    : 'bg-white text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary'
+                    : 'bg-white text-text-secondary hover:bg-surface-light hover:text-text-primary'
                 )}
               >
                 {opt.label}
@@ -306,7 +306,7 @@ export const ContentEditorIndex = ({
         </div>
 
         {/* Stats bar */}
-        <div className="flex shrink-0 items-center gap-4 border-b border-border bg-[#F8F7F5] px-5 py-2">
+        <div className="flex shrink-0 items-center gap-4 border-b border-border bg-surface-light px-5 py-2">
           <span className="text-[11px] text-text-tertiary">
             <span className="font-semibold text-text-primary">{filteredStats.articles}</span>{' '}
             {filteredStats.articles === 1 ? 'article' : 'articles'}
@@ -377,7 +377,7 @@ export const ContentEditorIndex = ({
                 <Link
                   key={article.article_id}
                   href={`/admin/content/${article.article_id}`}
-                  className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-[#F8F7F5]"
+                  className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-surface-light"
                 >
                   {/* Icon */}
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary-50">

@@ -18,7 +18,7 @@ const BlindspotPriorityFlag = ({ flaggedNodeCount }: BlindspotPriorityFlagProps)
   }
 
   return (
-    <div className="rounded-md border border-destructive bg-[#FDF0F0] p-3">
+    <div className="rounded-md border border-destructive bg-destructive-50 p-3">
       <div className="flex items-center gap-1.5">
         <WarningCircle size={14} weight="bold" className="shrink-0 text-destructive" />
         <span className="font-mono text-[11px] font-semibold text-destructive">

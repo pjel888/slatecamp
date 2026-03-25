@@ -17,7 +17,7 @@ const AdminError = ({ error, reset }: ErrorProps) => {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 p-8">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FDF0F0]">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-destructive-50">
         <Warning size={24} className="text-destructive" />
       </div>
       <div className="text-center">

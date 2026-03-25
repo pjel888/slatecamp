@@ -163,7 +163,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   // ── Loading state ───────────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
+      <div className="min-h-screen bg-surface-focused flex flex-col">
         <div className="shrink-0 h-16 bg-white border-b border-border" />
         <div className="shrink-0 h-1 bg-border/40" />
         <div className="flex-1 flex items-start justify-center">
@@ -186,7 +186,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   // ── Error state ─────────────────────────────────────────────────────────
   if (error) {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] flex items-center justify-center px-6">
+      <div className="min-h-screen bg-surface-focused flex items-center justify-center px-6">
         <div className="bg-white rounded-md p-6 max-w-sm w-full text-center space-y-4">
           <p className="text-destructive text-sm font-medium">{error}</p>
           <button
@@ -203,7 +203,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   // ── Calculating Score screen (UX Strategy: 2-3s ceremonial pause) ──────
   if (calculatingScore) {
     return (
-      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5F5F5]">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-muted">
         <div className="w-full max-w-xs space-y-4 px-4">
           <Skeleton className="h-6 w-3/4 mx-auto" />
           <Skeleton className="h-4 w-full" />
@@ -221,7 +221,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
 
   // ── Render ──────────────────────────────────────────────────────────────
   return (
-    <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
+    <div className="min-h-screen bg-surface-focused flex flex-col">
       {/* Top bar */}
       <header className="shrink-0 bg-white border-b border-border px-5 py-3.5">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
@@ -301,7 +301,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                       'shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-colors duration-150 ease-out',
                       isSelected
                         ? 'bg-camp-cobalt text-white'
-                        : 'bg-[#F5F5F5] text-text-secondary border border-border',
+                        : 'bg-muted text-text-secondary border border-border',
                     )}
                   >
                     {letter}
@@ -332,7 +332,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
               'h-10 px-5 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
               isFirstQuestion || completing
                 ? 'text-text-tertiary cursor-not-allowed'
-                : 'text-text-secondary hover:text-text-primary hover:bg-[#F5F5F5]',
+                : 'text-text-secondary hover:text-text-primary hover:bg-muted',
             )}
           >
             &larr; Previous

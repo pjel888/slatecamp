@@ -92,7 +92,7 @@ export function ConfirmSubmitSheet({
               <div className='px-6 py-5 space-y-5'>
                 {/* Stats grid */}
                 <div className='grid grid-cols-3 gap-2'>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-[#EDFAF4] border border-emerald/20'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-success-50 border border-emerald/20'>
                     <SCIcon
                       icon={CheckCircle}
                       size='sm'
@@ -114,7 +114,7 @@ export function ConfirmSubmitSheet({
                     </span>
                     <Eyebrow className="text-zinc-400 mt-1">To Review</Eyebrow>
                   </div>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-[#FEF8ED] border border-warning/20'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-warning-50 border border-warning/20'>
                     <SCIcon
                       icon={Flag}
                       size='sm'

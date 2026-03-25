@@ -58,7 +58,7 @@ export const DashboardTrailPrompt = () => {
   return (
     <Link
       href="/dashboard/trails"
-      className="block rounded-md border border-dashed border-border bg-[#F8F7F5] p-4 transition-shadow duration-150 ease-out hover:shadow-sm hover:border-camp-cobalt"
+      className="block rounded-md border border-dashed border-border bg-surface-light p-4 transition-shadow duration-150 ease-out hover:shadow-sm hover:border-camp-cobalt"
     >
       <div className="flex items-center gap-3">
         <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-50">

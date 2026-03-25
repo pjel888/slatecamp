@@ -103,7 +103,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   } : {}
 
   return (
-    <div className="flex h-full w-full overflow-hidden bg-[#F5F5F5]">
+    <div className="flex h-full w-full overflow-hidden bg-muted">
       <ConfirmDialog
         open={showDeleteConfirm}
         onOpenChange={setShowDeleteConfirm}

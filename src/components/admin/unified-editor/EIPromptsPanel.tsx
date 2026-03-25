@@ -16,10 +16,10 @@ interface EIPromptsPanelProps {
 // ─── Helpers ─────────────────────────────────────────────────
 
 const STATUS_STYLES: Record<string, string> = {
-  draft: 'bg-[#FEF8ED] text-warning',
-  review: 'bg-[#FEF8ED] text-warning',
-  published: 'bg-[#EDFAF4] text-emerald',
-  archived: 'bg-[#F8F7F5] text-text-tertiary',
+  draft: 'bg-warning-50 text-warning',
+  review: 'bg-warning-50 text-warning',
+  published: 'bg-success-50 text-emerald',
+  archived: 'bg-surface-light text-text-tertiary',
 }
 
 const STATUS_LABELS: Record<string, string> = {
@@ -130,7 +130,7 @@ const PromptCard = ({
 
   if (isDeleted) {
     return (
-      <div className="rounded-md border-2 border-destructive bg-[#FDF0F0] px-4 py-3">
+      <div className="rounded-md border-2 border-destructive bg-destructive-50 px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xs font-medium text-destructive">
@@ -186,11 +186,11 @@ const PromptCard = ({
 
           {/* Active indicator */}
           {prompt.is_active ? (
-            <span className="shrink-0 rounded-sm bg-[#EDFAF4] px-1.5 py-0.5 text-[11px] font-medium text-emerald">
+            <span className="shrink-0 rounded-sm bg-success-50 px-1.5 py-0.5 text-[11px] font-medium text-emerald">
               active
             </span>
           ) : (
-            <span className="shrink-0 rounded-sm bg-[#F8F7F5] px-1.5 py-0.5 text-[11px] font-medium text-text-tertiary">
+            <span className="shrink-0 rounded-sm bg-surface-light px-1.5 py-0.5 text-[11px] font-medium text-text-tertiary">
               inactive
             </span>
           )}
@@ -208,7 +208,7 @@ const PromptCard = ({
             e.stopPropagation()
             onDelete(prompt.prompt_id)
           }}
-          className="shrink-0 rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-destructive"
+          className="shrink-0 rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-destructive-50 hover:text-destructive"
           aria-label="Delete prompt"
         >
           <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -513,7 +513,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
         <button
           type="button"
           onClick={() => onRemove(draft._tempId)}
-          className="rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-destructive"
+          className="rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-destructive-50 hover:text-destructive"
           aria-label="Remove draft"
         >
           <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">

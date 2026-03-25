@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 export default function AssessmentLoading() {
   return (
-    <div className="w-full h-full bg-[#F5F7FA] flex items-center justify-center animate-in fade-in-0 duration-150">
+    <div className="w-full h-full bg-surface-focused flex items-center justify-center animate-in fade-in-0 duration-150">
       <div className="w-full max-w-xl space-y-6 text-center px-6">
         {/* Progress bar */}
         <Skeleton className="h-1.5 w-full rounded-full" />

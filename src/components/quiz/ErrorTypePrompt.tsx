@@ -39,7 +39,7 @@ export const ErrorTypePrompt = ({ onSelect, onSkip }: ErrorTypePromptProps) => {
               'px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-150',
               selected === value
                 ? 'bg-camp-cobalt text-white'
-                : 'bg-[#F5F5F5] text-[#555555] hover:bg-[#E5E7EB]',
+                : 'bg-muted text-[#555555] hover:bg-border-design',
             )}
           >
             {label}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Card } from '@/components/ui/card'
 
 /* ------------------------------------------------------------------ */
 /*  StatCard — Server Component                                         */
@@ -101,9 +102,9 @@ export const StatCard = ({
   }
 
   return (
-    <div className="bg-card border border-border rounded-md p-4">
+    <Card>
       {inner}
-    </div>
+    </Card>
   )
 }
 

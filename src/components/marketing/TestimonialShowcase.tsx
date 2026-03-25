@@ -55,14 +55,14 @@ export const TestimonialShowcase = ({
           'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
           (dark
             ? 'border-white/10 bg-primary/40 text-white'
-            : 'border-[#E5E7EB] bg-[#FFFFFF]')
+            : 'border-border-design bg-white')
         }
       >
         <div>
           <StarRating count={testimonial.rating} />
           <blockquote
             className={`font-[family-name:var(--font-syne)] mt-5 text-[17px] italic leading-relaxed ${
-              dark ? 'text-white/90' : 'text-[#18181B]'
+              dark ? 'text-white/90' : 'text-ink'
             }`}
           >
             &ldquo;{testimonial.quote}&rdquo;
@@ -71,20 +71,20 @@ export const TestimonialShowcase = ({
         <div
           className={
             'mt-6 border-t pt-5 ' +
-            (dark ? 'border-white/10' : 'border-[#E5E7EB]')
+            (dark ? 'border-white/10' : 'border-border-design')
           }
         >
           <p
             className={
               'text-[14px] font-semibold ' +
-              (dark ? 'text-white' : 'text-[#18181B]')
+              (dark ? 'text-white' : 'text-ink')
             }
           >
             {testimonial.name}
           </p>
           <p
             className={
-              'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-[#6B6B6B]')
+              'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-text-2')
             }
           >
             {testimonial.title}

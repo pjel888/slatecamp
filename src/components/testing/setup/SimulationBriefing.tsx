@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 import { ROUTES } from '@/lib/constants/routes'
 import { createTestingSession } from '@/lib/actions/testing'
 import type { SessionConfig } from '@/types/testing'
@@ -63,7 +64,7 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
           </p>
         </div>
 
-        <div className="rounded-lg border border-[var(--border)] bg-white p-6 mb-6">
+        <Card className="mb-6 p-6">
           <h2 className="text-[13px] font-medium text-[var(--text-secondary)] uppercase tracking-wide mb-4">
             What to expect
           </h2>
@@ -83,9 +84,9 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
               </li>
             ))}
           </ul>
-        </div>
+        </Card>
 
-        <div className="rounded-md bg-[#F8F7F5] border border-[var(--border)] px-4 py-4 mb-6">
+        <div className="rounded-md bg-surface-light border border-[var(--border)] px-4 py-4 mb-6">
           <p className="text-[13px] font-medium text-[var(--text-secondary)] mb-1">
             Why 24 hours?
           </p>

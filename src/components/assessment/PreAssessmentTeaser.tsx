@@ -188,9 +188,9 @@ export const PreAssessmentTeaser = () => {
                   disabled={showResult}
                   className={`w-full text-left rounded-sm border px-4 py-3 text-sm transition-colors duration-150 ${
                     showCorrect
-                      ? 'border-emerald bg-[#EDFAF4] text-text-primary'
+                      ? 'border-emerald bg-success-50 text-text-primary'
                       : showWrong
-                        ? 'border-destructive bg-[#FDF0F0] text-text-primary'
+                        ? 'border-destructive bg-destructive-50 text-text-primary'
                         : isSelected
                           ? 'border-camp-cobalt bg-primary-50 text-text-primary'
                           : 'border-border bg-white text-text-secondary hover:border-camp-cobalt hover:bg-primary-50/50'

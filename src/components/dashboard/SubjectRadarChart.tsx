@@ -44,9 +44,9 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const hasData = data.some(d => d.questionsAnswered > 0)
 
   return (
-    <div className="flex flex-col bg-white border border-[#E5E7EB] rounded-md overflow-hidden h-full">
-      <div className="px-4 py-3 border-b border-[#E5E7EB]">
-        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]">
+    <div className="flex flex-col bg-white border border-border-design rounded-md overflow-hidden h-full">
+      <div className="px-4 py-3 border-b border-border-design">
+        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-text-2">
           Subject Mastery
         </span>
         <h3 className="text-[15px] font-semibold text-text-primary mt-0.5">

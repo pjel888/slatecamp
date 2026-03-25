@@ -290,11 +290,11 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
   return (
     <div className='grid grid-rows-3 bg-white rounded-md overflow-hidden h-full p-2 gap-2'>
       {/* ── Radial heatmap section ──────────────────────────────────── */}
-      <div className='rounded-md bg-[#F5F5F5] border border-[#E5E7EB] p-3 flex flex-col min-h-0'>
+      <div className='rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0'>
         <div className='flex items-center gap-1.5 mb-0.5'>
           <Tooltip>
             <TooltipTrigger asChild>
-              <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] cursor-default text-[#6B6B6B]'>
+              <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] cursor-default text-text-2'>
                 [ Subject Mastery ]
               </h3>
             </TooltipTrigger>
@@ -324,8 +324,8 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
       </div>
 
       {/* ── Subject breakdown bars ──────────────────────────────────── */}
-      <div className='row-span-2 rounded-md bg-[#F5F5F5] border border-[#E5E7EB] p-3 flex flex-col min-h-0 overflow-hidden'>
-        <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B] shrink-0'>
+      <div className='row-span-2 rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0 overflow-hidden'>
+        <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2 shrink-0'>
           [ Breakdown ]
         </h4>
         <p className='text-[11px] text-text-tertiary mb-2'>
@@ -348,7 +348,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                     {clamped}%
                   </span>
                 </div>
-                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-[#E5E7EB]'>
+                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-border-design'>
                   <div
                     className='h-full rounded-full'
                     style={{
@@ -370,7 +370,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </div>
 
         {/* Footer */}
-        <div className='pt-2 border-t border-[#E5E7EB] flex items-center justify-between shrink-0'>
+        <div className='pt-2 border-t border-border-design flex items-center justify-between shrink-0'>
           <p className='text-[11px] text-text-tertiary'>
             {hasData
               ? `${abovePassing} of ${data.length} above passing`

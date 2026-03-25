@@ -111,7 +111,7 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
           </div>
         )}
 
-        <div className="rounded-md bg-[#F8F7F5] border border-[var(--border)] px-4 py-4">
+        <div className="rounded-md bg-surface-light border border-[var(--border)] px-4 py-4">
           <p className="text-[14px] text-[var(--text-secondary)] leading-relaxed">
             You&apos;ll receive immediate feedback throughout. The session ends at 100 questions
             unless you choose to stop earlier.

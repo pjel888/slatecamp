@@ -29,17 +29,17 @@ export async function MarketingNav({
       activeRoute === href
         ? isDark
           ? 'text-white'
-          : 'text-[#18181B]'
+          : 'text-ink'
         : isDark
           ? 'text-white/60 hover:text-white'
-          : 'text-[#6B6B6B] hover:text-[#18181B]',
+          : 'text-text-2 hover:text-ink',
     )
 
   const headerClass = cn(
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
       ? 'border-white/10 bg-primary/80 text-white'
-      : 'border-[#E5E7EB] bg-[#FFFFFF]/90 text-zinc-900',
+      : 'border-border-design bg-white/90 text-zinc-900',
   )
 
   return (
@@ -67,7 +67,7 @@ export async function MarketingNav({
         <nav
           className={cn(
             'hidden items-center gap-1 text-[13px] sm:flex',
-            isDark ? 'text-white/60' : 'text-[#6B6B6B]',
+            isDark ? 'text-white/60' : 'text-text-2',
           )}
         >
           {activeRoute === '/' ? (
@@ -117,7 +117,7 @@ export async function MarketingNav({
                   'rounded-sm px-4 py-3 text-[13px] transition-colors duration-150',
                   isDark
                     ? 'text-white/60 hover:text-white'
-                    : 'text-[#6B6B6B] hover:text-[#18181B]',
+                    : 'text-text-2 hover:text-ink',
                 )}
               >
                 Log in

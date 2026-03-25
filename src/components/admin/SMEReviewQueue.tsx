@@ -98,7 +98,7 @@ export const SMEReviewQueue = () => {
       <div className="space-y-4">
         {/* Error banner */}
         {error && (
-          <div className="p-3 rounded-md bg-[#FDF0F0] border border-destructive/30 text-sm text-destructive flex items-center justify-between">
+          <div className="p-3 rounded-md bg-destructive-50 border border-destructive/30 text-sm text-destructive flex items-center justify-between">
             <span>{error}</span>
             <button
               type="button"

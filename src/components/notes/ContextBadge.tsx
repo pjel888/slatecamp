@@ -23,13 +23,13 @@ export function ContextBadge({ anchor, className }: ContextBadgeProps) {
         </span>
       )}
       {anchor.article_title && (
-        <span className="inline-flex items-center gap-1 rounded-full border border-border bg-[#F5F5F5] px-2.5 py-1 text-[11px] font-medium text-text-secondary">
+        <span className="inline-flex items-center gap-1 rounded-full border border-border bg-muted px-2.5 py-1 text-[11px] font-medium text-text-secondary">
           <SCIcon icon={BookOpen} size="xs" className="shrink-0" />
           <span className="truncate max-w-[160px]">{anchor.article_title}</span>
         </span>
       )}
       {anchor.question_text && (
-        <span className="inline-flex items-center gap-1 rounded-full border border-warning/20 bg-[#FEF8ED] px-2.5 py-1 text-[11px] font-medium text-warning">
+        <span className="inline-flex items-center gap-1 rounded-full border border-warning/20 bg-warning-50 px-2.5 py-1 text-[11px] font-medium text-warning">
           <SCIcon icon={Question} size="xs" className="shrink-0" />
           <span className="truncate max-w-[180px]">
             {anchor.question_text.length > 55

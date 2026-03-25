@@ -55,12 +55,12 @@ export const ProportionComparator = () => {
   const [activeIdx, setActiveIdx] = useState(2) // Golden ratio as default
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
-      <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-muted border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Room Proportion Comparator
         </div>
-        <div className="text-xs text-[#737370] mt-0.5 dark:text-[#A8A8A5]">
+        <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
           Tap a proportion to see its spatial quality and design implications
         </div>
       </div>
@@ -89,7 +89,7 @@ export const ProportionComparator = () => {
                   className={`transition-all duration-150 ${
                     isActive
                       ? 'fill-camp-cobalt/10 stroke-camp-cobalt stroke-2'
-                      : 'fill-[#F5F5F5] stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt'
+                      : 'fill-muted stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt'
                   }`}
                 />
                 <text
@@ -108,7 +108,7 @@ export const ProportionComparator = () => {
               }`}>
                 {p.label}
               </div>
-              <div className={`text-[11px] mt-0.5 ${isActive ? 'text-[#1A1A1A] font-medium dark:text-[#E2E0D8]' : 'text-[#A8A8A5]'}`}>
+              <div className={`text-[11px] mt-0.5 ${isActive ? 'text-wiki-ink font-medium dark:text-[#E2E0D8]' : 'text-[#A8A8A5]'}`}>
                 {p.quality}
               </div>
             </button>
@@ -118,14 +118,14 @@ export const ProportionComparator = () => {
 
       {/* Info */}
       <div className="px-5 py-4 border-t border-[#ECEAE4] dark:border-[#3A3835]">
-        <div className="font-semibold text-sm text-[#1A1A1A] mb-1.5 dark:text-[#E2E0D8]">
+        <div className="font-semibold text-sm text-wiki-ink mb-1.5 dark:text-[#E2E0D8]">
           {PROPORTIONS[activeIdx].ratio} — {PROPORTIONS[activeIdx].label}
         </div>
         <p className="text-[13px] text-[#3D3D3A] leading-relaxed mb-2 dark:text-[#C8C6C0]">
           {PROPORTIONS[activeIdx].description}
         </p>
-        <div className="text-[12px] text-[#737370] dark:text-[#A8A8A5]">
-          <strong className="text-[#1A1A1A] dark:text-[#E2E0D8]">Common uses:</strong> {PROPORTIONS[activeIdx].examples}
+        <div className="text-[12px] text-ink-muted dark:text-[#A8A8A5]">
+          <strong className="text-wiki-ink dark:text-[#E2E0D8]">Common uses:</strong> {PROPORTIONS[activeIdx].examples}
         </div>
       </div>
     </div>

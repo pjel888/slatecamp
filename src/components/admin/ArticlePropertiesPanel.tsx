@@ -87,7 +87,7 @@ export const ArticlePropertiesPanel = ({
           type="button"
           onClick={() => setCollapsed(false)}
           title="Expand properties"
-          className="rounded-sm p-1 text-text-tertiary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+          className="rounded-sm p-1 text-text-tertiary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
           {/* Chevron left (expand) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -107,7 +107,7 @@ export const ArticlePropertiesPanel = ({
           type="button"
           onClick={() => setCollapsed(true)}
           title="Collapse properties"
-          className="rounded-sm p-1 text-text-tertiary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+          className="rounded-sm p-1 text-text-tertiary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
           {/* Chevron right (collapse) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">

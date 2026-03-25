@@ -426,9 +426,9 @@ export const SaveAllBar = ({
 
   if (conflictWarning) {
     return (
-      <div className="border-b border-border bg-[#FEF8ED] px-4 py-3">
+      <div className="border-b border-border bg-warning-50 px-4 py-3">
         <div className="flex items-start gap-3">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FEF8ED] border border-warning/40">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-warning-50 border border-warning/40">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 4v4m0 2.5h.01M14.5 8a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="#D4951A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -467,7 +467,7 @@ export const SaveAllBar = ({
   if (failedResults.length === 0) return null
 
   return (
-    <div className="border-b border-border bg-[#FEF8ED] px-4 py-2">
+    <div className="border-b border-border bg-warning-50 px-4 py-2">
       <div className="flex items-start gap-3">
         <div className="min-w-0 flex-1">
           <p className="text-xs font-medium text-warning">

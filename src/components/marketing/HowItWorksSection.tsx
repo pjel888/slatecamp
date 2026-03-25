@@ -24,7 +24,7 @@ export const HowItWorksSection = () => (
   <section
     id="how-it-works"
     aria-labelledby="how-it-works-heading"
-    className="relative border-t border-[#E5E7EB] px-6 py-24"
+    className="relative border-t border-border-design px-6 py-24"
   >
     <div className="relative z-10 mx-auto max-w-[1200px]">
       <ScrollReveal>
@@ -32,7 +32,7 @@ export const HowItWorksSection = () => (
           <Starburst className="h-3 w-3 text-[--camp-orange]" />
           <h2
             id="how-it-works-heading"
-            className="font-mono text-[11px] tracking-[0.2em] uppercase text-[#6B6B6B]"
+            className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-2"
           >
             How It Works
           </h2>
@@ -43,15 +43,15 @@ export const HowItWorksSection = () => (
         {STEPS.map(({ num, title, desc }) => (
           <StaggerItem key={num}>
             <span
-              className="font-mono text-[56px] font-bold leading-none tracking-tighter text-[#E5E7EB]"
+              className="font-mono text-[56px] font-bold leading-none tracking-tighter text-border-design"
               aria-hidden="true"
             >
               {num}
             </span>
-            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold tracking-tight text-[#18181B]">
+            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold tracking-tight text-ink">
               {title}
             </h3>
-            <p className="mt-3 text-[14px] leading-relaxed text-[#6B6B6B]">
+            <p className="mt-3 text-[14px] leading-relaxed text-text-2">
               {desc}
             </p>
           </StaggerItem>

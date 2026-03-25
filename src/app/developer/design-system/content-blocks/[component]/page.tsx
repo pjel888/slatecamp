@@ -243,7 +243,7 @@ const lawCalloutData: ComponentData = {
   of the floor area of the room.
 </LawCallout>`,
   preview: (
-    <div className="w-full max-w-md rounded-r-lg border-l-[3px] border-primary bg-[#EEF3FD] px-4 py-3">
+    <div className="w-full max-w-md rounded-r-lg border-l-[3px] border-primary bg-cobalt-light px-4 py-3">
       <span className="block font-mono text-[11px] font-medium uppercase tracking-widest text-primary mb-1">
         NBCP (PD 1096) — Rule VII, Section 708
       </span>
@@ -411,7 +411,7 @@ const elaborativeInterrogationData: ComponentData = {
 />`,
   preview: (
     <div className="w-full max-w-md border border-border rounded-xl overflow-hidden bg-card">
-      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-border">
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[#E8EEFF] border-b border-border">
         <div className="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-white text-sm">
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />

@@ -170,7 +170,7 @@ export const DayCompletionMoment = ({
 
       {/* Tomorrow preview */}
       {next_day && (
-        <div className="rounded-md border border-border bg-[#F8F7F5] p-4">
+        <div className="rounded-md border border-border bg-surface-light p-4">
           <span className="font-mono text-[11px] uppercase tracking-wider text-text-tertiary block mb-2">
             Tomorrow
           </span>
@@ -202,7 +202,7 @@ export const DayCompletionMoment = ({
       <button
         type="button"
         onClick={() => router.push('/dashboard')}
-        className="self-start rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+        className="self-start rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-muted"
       >
         Back to Dashboard
       </button>

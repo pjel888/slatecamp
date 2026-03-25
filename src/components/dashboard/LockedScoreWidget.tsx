@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Card } from '@/components/ui/card'
 
 /**
  * Locked Score Widget — UX Strategy Section 5b
@@ -14,7 +15,7 @@ interface LockedScoreWidgetProps {
 
 export const LockedScoreWidget = ({ updatesSinceReveal }: LockedScoreWidgetProps) => {
   return (
-    <div className="rounded-md border border-border bg-white p-4">
+    <Card>
       <div className="flex items-center gap-2 mb-2">
         <svg
           className="h-4 w-4 text-text-tertiary"
@@ -42,6 +43,6 @@ export const LockedScoreWidget = ({ updatesSinceReveal }: LockedScoreWidgetProps
       >
         Upgrade to See Live &rarr;
       </Link>
-    </div>
+    </Card>
   )
 }

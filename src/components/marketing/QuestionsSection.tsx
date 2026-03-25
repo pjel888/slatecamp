@@ -10,7 +10,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Quiz mockup (rendered UI, not an image) ── */
 
 const QuizMockup = () => (
-  <div className='overflow-hidden rounded-md border border-[#E5E7EB] bg-white'>
+  <div className='overflow-hidden rounded-md border border-border-design bg-white'>
     {/* Header — Cobalt with noise */}
     <div className='relative overflow-hidden bg-camp-cobalt px-4 py-3 noise-heavy'>
       <div className='relative z-10 flex items-center justify-between'>
@@ -46,10 +46,10 @@ const QuizMockup = () => (
           key={opt.label}
           className={`mb-1.5 flex items-center gap-2.5 rounded-[6px] border-[1.5px] px-3 py-2 text-[12px] ${
             opt.state === 'correct'
-              ? 'border-[#1B7A3C] bg-[#f0fdf4] text-[#1B7A3C]'
+              ? 'border-camp-green bg-[#f0fdf4] text-camp-green'
               : opt.state === 'selected'
                 ? 'border-camp-cobalt bg-primary-50 text-camp-cobalt'
-                : 'border-[#E5E7EB] text-[#555]'
+                : 'border-border-design text-[#555]'
           }`}
         >
           <div
@@ -63,7 +63,7 @@ const QuizMockup = () => (
       ))}
 
       {/* Explanation card */}
-      <div className='mt-3 rounded-[8px] bg-[#F5F5F5] p-3'>
+      <div className='mt-3 rounded-[8px] bg-muted p-3'>
         <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-camp-cobalt'>
           Explanation
         </div>
@@ -99,7 +99,7 @@ export const QuestionsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
+        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-text-2'>
           Not recycled PDFs. Not scraped notes. Every question is written
           to the ALE syllabus, verified by licensed architects, and tagged
           to its exact PD 1096 provision.

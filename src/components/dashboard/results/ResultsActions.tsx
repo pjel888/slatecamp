@@ -54,7 +54,7 @@ export const ResultsActions = ({ onExit, onRestart }: { onExit: () => void; onRe
     <Button
       onClick={onExit}
       variant='outline'
-      className='h-14 rounded-sm border-border text-text-secondary hover:bg-[#F5F5F5] font-bold uppercase tracking-widest text-[11px] gap-2'
+      className='h-14 rounded-sm border-border text-text-secondary hover:bg-muted font-bold uppercase tracking-widest text-[11px] gap-2'
     >
       <SCIcon icon={SquaresFour} size='sm' />
       Back to Testing Hub

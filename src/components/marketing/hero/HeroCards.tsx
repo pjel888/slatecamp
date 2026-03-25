@@ -49,12 +49,12 @@ const ALESubjectCoverageCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-[#FFFFFF] to-[#FFFFFF]/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-[#E5E7EB] transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
+      className='order-1 w-full max-w-[280px] rounded-md bg-linear-to-b from-white to-white/90 p-4 shadow-[0_10px_30px_rgba(24,24,27,0.06)] ring-1 ring-border-design transition-all duration-150 md:absolute md:left-5 md:-top-28 md:order-0 md:z-10 md:-rotate-3 md:hover:z-50 md:hover:-translate-y-2 md:hover:shadow-[0_18px_40px_rgba(24,24,27,0.14)]'
       aria-hidden='true'
     >
-      <div className='mb-2.5 flex items-center gap-1.5 border-b border-[#E5E7EB] pb-2'>
-        <Starburst className='h-3 w-3 text-[#F5A623]' />
-        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+      <div className='mb-2.5 flex items-center gap-1.5 border-b border-border-design pb-2'>
+        <Starburst className='h-3 w-3 text-camp-amber' />
+        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
           ALE Coverage
         </span>
       </div>
@@ -62,7 +62,7 @@ const ALESubjectCoverageCard = () => {
         {subjects.map((subject) => (
           <li
             key={subject.name}
-            className='flex items-center justify-between gap-2 rounded-sm px-1.5 py-1 hover:bg-[#F5F5F5]/70'
+            className='flex items-center justify-between gap-2 rounded-sm px-1.5 py-1 hover:bg-muted/70'
           >
             <div className='flex min-w-0 items-center gap-2'>
               <span
@@ -78,8 +78,8 @@ const ALESubjectCoverageCard = () => {
           </li>
         ))}
       </ul>
-      <div className='mt-2.5 border-t border-[#E5E7EB] pt-2 text-center'>
-        <span className='text-[11px] font-medium text-[#6B6B6B]'>
+      <div className='mt-2.5 border-t border-border-design pt-2 text-center'>
+        <span className='text-[11px] font-medium text-text-2'>
           All 7 subjects · Fully mapped
         </span>
       </div>
@@ -94,21 +94,21 @@ const MockQuestionCard = () => (
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-    className='order-3 w-full max-w-[280px] rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
+    className='order-3 w-full max-w-[280px] rounded-md border border-border-design bg-white p-5 shadow-[0_10px_30px_rgba(24,24,27,0.06)] transition-all duration-150 md:absolute md:right-4 md:top-4 md:order-0 md:z-10 md:rotate-3 md:hover:z-50 md:hover:-translate-y-1.5'
     aria-hidden='true'
   >
-    <div className='mb-2.5 flex items-center justify-between border-b border-[#E5E7EB] pb-2'>
+    <div className='mb-2.5 flex items-center justify-between border-b border-border-design pb-2'>
       <div className='flex items-center gap-1.5'>
-        <Starburst className='h-3 w-3 text-[#F5A623]' />
-        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+        <Starburst className='h-3 w-3 text-camp-amber' />
+        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
           Sample Question
         </span>
       </div>
-      <span className='rounded bg-[#F5F5F5] px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
+      <span className='rounded bg-muted px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
         {MOCK_QUESTION.topic}
       </span>
     </div>
-    <p className='mb-3 text-[12px] leading-snug text-[#18181B]'>
+    <p className='mb-3 text-[12px] leading-snug text-ink'>
       {MOCK_QUESTION.question}
     </p>
     <div className='space-y-1.5'>
@@ -121,11 +121,11 @@ const MockQuestionCard = () => (
             key={opt.label}
             className={cn(
               'flex items-center gap-2 rounded-sm border px-2.5 py-1.5 text-[11px] transition-colors',
-              isCorrect && 'border-emerald bg-[#EDFAF4] text-emerald',
-              isIncorrect && 'border-destructive bg-[#FDF0F0] text-destructive',
+              isCorrect && 'border-emerald bg-success-50 text-emerald',
+              isIncorrect && 'border-destructive bg-destructive-50 text-destructive',
               !isCorrect &&
                 !isIncorrect &&
-                'border-[#E5E7EB] bg-white text-zinc-800 hover:bg-[#FFFFFF]',
+                'border-border-design bg-white text-zinc-800 hover:bg-white',
             )}
           >
             <span
@@ -155,22 +155,22 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       initial={{ opacity: 0, y: 24, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-[#E5E7EB] bg-[#FFFFFF]/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:hover:-translate-x-1/2 md:hover:-translate-y-[calc(50%+12px)] md:p-7 hover:rotate-1'
+      className='order-2 z-20 w-full max-w-[320px] rounded-md border border-border-design bg-white/90 p-6 shadow-[0_20px_50px_rgba(24,24,27,0.12)] backdrop-blur-sm transition-transform duration-150 md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:hover:-translate-x-1/2 md:hover:-translate-y-[calc(50%+12px)] md:p-7 hover:rotate-1'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='mb-3 flex items-center gap-1.5 border-b border-[#E5E7EB] pb-2.5'>
-        <Starburst className='h-3 w-3 text-[#F5A623]' />
-        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#6B6B6B]'>
+      <div className='mb-3 flex items-center gap-1.5 border-b border-border-design pb-2.5'>
+        <Starburst className='h-3 w-3 text-camp-amber' />
+        <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
           Readiness snapshot
         </span>
       </div>
 
-      <h3 className='text-base font-semibold tracking-tight text-[#18181B]'>
+      <h3 className='text-base font-semibold tracking-tight text-ink'>
         {isHovered ? "This is what's possible" : "Are you sure you'll pass?"}
       </h3>
 
-      <p className='mt-2 text-[12px] leading-snug text-[#6B6B6B]'>
+      <p className='mt-2 text-[12px] leading-snug text-text-2'>
         {isHovered
           ? 'This is what your score can look like once SlateCamp is driving your review.'
           : 'Most students walk into the ALE not knowing where their gaps are. This is where you find out.'}
@@ -187,12 +187,12 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           <p
             className={cn(
               'font-medium',
-              isHovered ? 'text-emerald-700' : 'text-[#18181B]',
+              isHovered ? 'text-emerald-700' : 'text-ink',
             )}
           >
             Overall readiness: {isHovered ? '98%' : '42%'}
           </p>
-          <p className='text-[#6B6B6B]'>
+          <p className='text-text-2'>
             {isHovered
               ? 'Same exam. Very different odds when you train with intent.'
               : 'Most reviewees sit here right before they realise where the gaps are.'}
@@ -217,13 +217,13 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
                 <span
                   className={cn(
                     'font-medium',
-                    isHovered ? 'text-emerald-700' : 'text-[#18181B]',
+                    isHovered ? 'text-emerald-700' : 'text-ink',
                   )}
                 >
                   {score}%
                 </span>
               </div>
-              <div className='h-1.5 w-full rounded-full bg-[#F5F5F5]'>
+              <div className='h-1.5 w-full rounded-full bg-muted'>
                 <div
                   className={cn(
                     'h-1.5 rounded-full transition-[width] duration-200',
@@ -237,10 +237,10 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
         })}
       </div>
 
-      <div className='mt-3 flex items-center justify-between text-[11px] text-[#6B6B6B]'>
+      <div className='mt-3 flex items-center justify-between text-[11px] text-text-2'>
         <Link
           href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
-          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-[#E5E7EB] bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-primary-50 hover:text-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
+          className='ml-auto inline-flex items-center gap-1 rounded-sm border border-border-design bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-primary-50 hover:text-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >
           Start Now

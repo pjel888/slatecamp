@@ -33,7 +33,7 @@ export default function AdminLandingPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-[#F8F7F5] px-6">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-surface-light px-6">
       <div className="w-full max-w-[400px] space-y-8">
         <div className="text-center">
           <Link href="/" className="text-xl font-bold tracking-tighter text-text-primary">

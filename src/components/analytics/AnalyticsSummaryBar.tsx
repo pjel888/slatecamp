@@ -6,7 +6,7 @@ interface Props { data: AnalyticsSummaryMetrics }
 function Metric({ label, value, unit, accent }: { label: string; value: string | number; unit: string; accent?: boolean }) {
   return (
     <div className="bg-white p-3 flex flex-col gap-0.5">
-      <span className="font-dm-mono text-[11px] font-medium text-[#6B6B6B] uppercase tracking-[0.2em] leading-none">{label}</span>
+      <span className="font-dm-mono text-[11px] font-medium text-text-2 uppercase tracking-[0.2em] leading-none">{label}</span>
       <div className="flex items-baseline gap-1">
         <span className={cn('text-xl font-extrabold leading-none tabular-nums', accent ? 'text-primary' : 'text-text-primary')}>
           {value}

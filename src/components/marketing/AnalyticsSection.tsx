@@ -65,13 +65,13 @@ const AnimatedBar = ({ pct, color }: { pct: number; color: string }) => {
 /* ── Analytics mockup ── */
 
 const AnalyticsMockup = () => (
-  <div className='rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-5'>
+  <div className='rounded-md border border-border-design bg-white p-5'>
     {/* Overall score + ring */}
     <div className='mb-4 flex items-center gap-4'>
       <ReadinessRing value={75} className='h-20 w-20' />
       <div>
         <div className='text-[18px] font-extrabold text-[#111]'>Getting there</div>
-        <div className='mt-1 text-[11px] leading-relaxed text-[#6B6B6B]'>
+        <div className='mt-1 text-[11px] leading-relaxed text-text-2'>
           2 subjects need targeted review before you&apos;re exam-ready.
         </div>
         <div className='mt-2 font-mono text-[11px] text-[#888]'>↑ +8 pts this week</div>
@@ -84,7 +84,7 @@ const AnalyticsMockup = () => (
         { label: 'Questions', value: '847', sub: 'answered total', accent: undefined },
         { label: 'Streak', value: '12', sub: 'days active', accent: '#F5A623' },
       ].map((stat) => (
-        <div key={stat.label} className='rounded-[8px] bg-[#F5F5F5] p-3'>
+        <div key={stat.label} className='rounded-[8px] bg-muted p-3'>
           <div className='font-mono text-[11px] uppercase tracking-[.12em] text-[#888]'>{stat.label}</div>
           <div className='mt-1 text-[20px] font-extrabold' style={{ color: stat.accent || '#111' }}>
             {stat.value}
@@ -108,7 +108,7 @@ const AnalyticsMockup = () => (
           <span className='text-[#888]'>{s.name}</span>
           <span style={{ color: s.color }}>{s.pct}%</span>
         </div>
-        <div className='h-[5px] overflow-hidden rounded-full bg-[#E5E7EB]'>
+        <div className='h-[5px] overflow-hidden rounded-full bg-border-design'>
           <AnimatedBar pct={s.pct} color={s.color} />
         </div>
       </div>
@@ -119,7 +119,7 @@ const AnalyticsMockup = () => (
 /* ── Score legend ── */
 
 const ScoreLegend = () => (
-  <div className='mt-6 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-4'>
+  <div className='mt-6 rounded-md border border-border-design bg-white p-4'>
     <div className='mb-3 text-[13px] font-bold text-[#111]'>What the score actually means</div>
     {[
       { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: '#1B3FC4' },
@@ -130,7 +130,7 @@ const ScoreLegend = () => (
         <div className='h-2 w-8 rounded-full' style={{ background: tier.color }} />
         <span className='text-[12px] text-[#111]'>
           <strong>{tier.range}</strong>{' '}
-          <span className='text-[#6B6B6B]'>{tier.label}</span>
+          <span className='text-text-2'>{tier.label}</span>
         </span>
       </div>
     ))}
@@ -157,7 +157,7 @@ export const AnalyticsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-[#6B6B6B]'>
+        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-text-2'>
           Not a grade. A GPS. Live, subject-by-subject mastery data
           updated after every session — so you always know which
           topic needs work next.

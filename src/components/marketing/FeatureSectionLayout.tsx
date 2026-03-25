@@ -16,10 +16,10 @@ export const FeatureSectionLayout = ({
   <section
     className={`border-t px-6 py-24 ${
       dark
-        ? 'bg-[#111111] border-white/10'
+        ? 'bg-camp-black border-white/10'
         : amber
-          ? 'bg-[#F5A623] border-[#D4851A]/40'
-          : 'border-[#E5E7EB] bg-[#F5F5F5]'
+          ? 'bg-camp-amber border-[#D4851A]/40'
+          : 'border-border-design bg-muted'
     }`}
   >
     <div
@@ -56,7 +56,7 @@ export const FeatureCheckItem = ({
       <div className={`text-[13px] font-bold ${textDark ? 'text-white' : 'text-[#111]'}`}>
         {title}
       </div>
-      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/50' : 'text-[#6B6B6B]'}`}>
+      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/50' : 'text-text-2'}`}>
         {description}
       </div>
     </div>
@@ -76,7 +76,7 @@ export const SectionEyebrow = ({
   amber?: boolean
 }) => (
   <div className='mb-5 flex items-center gap-2'>
-    <Starburst className='h-3 w-3 text-[#F5A623]' />
+    <Starburst className='h-3 w-3 text-camp-amber' />
     <span
       className={`font-mono text-[11px] tracking-[.2em] uppercase ${
         dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-zinc-500'
@@ -98,9 +98,9 @@ export const FeaturePill = ({
 }) => {
   const styles = {
     cobalt: 'border-camp-cobalt/25 bg-camp-cobalt/8 text-camp-cobalt',
-    amber: 'border-[#F5A623]/25 bg-[#F5A623]/10 text-[#9A6B15]',
-    green: 'border-[#1B7A3C]/25 bg-[#1B7A3C]/8 text-[#1B7A3C]',
-    'muted-light': 'border-[#E5E7EB] text-[#6B6B6B]',
+    amber: 'border-camp-amber/25 bg-camp-amber/10 text-[#9A6B15]',
+    green: 'border-camp-green/25 bg-camp-green/8 text-camp-green',
+    'muted-light': 'border-border-design text-text-2',
     'muted-dark': 'border-white/15 text-white/50',
     'on-amber': 'border-black/20 bg-black/[0.08] text-[#111]',
   }

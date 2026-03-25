@@ -39,8 +39,8 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
       </div>
 
       {/* Body */}
-      <div className="p-5 bg-white dark:bg-[#1A1A1A]">
-        <p className="text-sm font-semibold text-[#1A1A1A] mb-3.5 leading-relaxed dark:text-[#E2E0D8]">
+      <div className="p-5 bg-white dark:bg-wiki-ink">
+        <p className="text-sm font-semibold text-wiki-ink mb-3.5 leading-relaxed dark:text-[#E2E0D8]">
           {question}
         </p>
 
@@ -49,16 +49,16 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
             const isSelected = i === selectedIndex
             const isCorrectOption = opt.is_correct
 
-            let containerStyle = 'border-[#E0DED8] hover:border-camp-cobalt hover:bg-[#EEF3FD] cursor-pointer'
+            let containerStyle = 'border-[#E0DED8] hover:border-camp-cobalt hover:bg-cobalt-light cursor-pointer'
             let letterStyle = 'border-[#E0DED8] text-[#3D3D3A]'
 
             if (isAnswered) {
               if (isCorrectOption) {
-                containerStyle = 'border-[#1B7A3C] bg-[#EDFAF4]'
-                letterStyle = 'bg-[#1B7A3C] text-white border-[#1B7A3C]'
+                containerStyle = 'border-camp-green bg-success-50'
+                letterStyle = 'bg-camp-green text-white border-camp-green'
               } else if (isSelected && !isCorrectOption) {
-                containerStyle = 'border-[#E63329] bg-[#FFF0EF]'
-                letterStyle = 'bg-[#E63329] text-white border-[#E63329]'
+                containerStyle = 'border-camp-red bg-[#FFF0EF]'
+                letterStyle = 'bg-camp-red text-white border-camp-red'
               } else {
                 containerStyle = 'border-[#E0DED8] opacity-50'
               }
@@ -85,8 +85,8 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
 
         {/* Rationale */}
         {isAnswered && (
-          <div className="mt-3.5 p-3.5 bg-[#EDFAF4] rounded-lg text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B7A3C10] dark:text-[#C8C6C0]">
-            <span className="font-semibold text-[#1B7A3C]">Correct: {LETTERS[options.findIndex(o => o.is_correct)]}.</span>{' '}
+          <div className="mt-3.5 p-3.5 bg-success-50 rounded-lg text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B7A3C10] dark:text-[#C8C6C0]">
+            <span className="font-semibold text-camp-green">Correct: {LETTERS[options.findIndex(o => o.is_correct)]}.</span>{' '}
             {rationale}
           </div>
         )}

@@ -81,7 +81,7 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href="/dashboard/trails"
-        className="block rounded-md border border-emerald bg-[#EDFAF4] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-emerald bg-success-50 p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-emerald">
           Trail ready

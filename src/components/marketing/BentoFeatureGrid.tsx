@@ -11,10 +11,10 @@ const QuizMockup = ({ theme = 'dark' }: { theme?: 'dark' | 'amber' }) => {
   const rowFaint = theme === 'amber' ? 'bg-black/[0.06]' : 'bg-white/[0.04]'
   const radio = theme === 'amber' ? 'border-black/40' : 'border-current opacity-70'
   const bar = theme === 'amber' ? 'bg-black/30' : 'bg-current opacity-30'
-  const correctBorder = theme === 'amber' ? 'border-[#1B7A3C]/70' : 'border-emerald/45'
-  const correctBg = theme === 'amber' ? 'bg-[#1B7A3C]/20' : 'bg-emerald/[0.18]'
-  const correctRadio = theme === 'amber' ? 'border-[#1B7A3C] bg-[#1B7A3C]' : 'border-emerald bg-emerald'
-  const correctBar = theme === 'amber' ? 'bg-[#1B7A3C] opacity-80' : 'bg-emerald opacity-70'
+  const correctBorder = theme === 'amber' ? 'border-camp-green/70' : 'border-emerald/45'
+  const correctBg = theme === 'amber' ? 'bg-camp-green/20' : 'bg-emerald/[0.18]'
+  const correctRadio = theme === 'amber' ? 'border-camp-green bg-camp-green' : 'border-emerald bg-emerald'
+  const correctBar = theme === 'amber' ? 'bg-camp-green opacity-80' : 'bg-emerald opacity-70'
 
   return (
     <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
@@ -137,14 +137,14 @@ export const BentoFeatureGrid = () => (
       <div className='grid grid-cols-1 gap-[10px] md:grid-cols-3 md:grid-rows-2'>
 
         {/* REVIEW MODE — Camp Amber + light noise */}
-        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-md bg-[#F5A623] p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-md bg-camp-amber p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <div className='flex items-center justify-between'>
                 <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-black/40'>
                   [ Review Mode ]
                 </span>
-                <Starburst className='h-3 w-3 text-[#111111]' />
+                <Starburst className='h-3 w-3 text-camp-black' />
               </div>
               <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#111]'>
                 Active Recall,
@@ -169,9 +169,9 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* STAT: 1 in 3 — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-2 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
-          <Starburst className='h-3 w-3 text-[#F5A623]' />
-          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-[#E63329]'>
+        <div className='landing-reveal landing-delay-2 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
+          <Starburst className='h-3 w-3 text-camp-amber' />
+          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-camp-red'>
             1 in 3
           </div>
           <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-[#555]'>
@@ -226,7 +226,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* QUOTE — Camp Red + noise */}
-        <div className='landing-reveal landing-delay-4 relative overflow-hidden rounded-md bg-[#E63329] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
+        <div className='landing-reveal landing-delay-4 relative overflow-hidden rounded-md bg-camp-red p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/45'>
@@ -251,13 +251,13 @@ export const BentoFeatureGrid = () => (
       <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
 
         {/* 3D LAB — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-5 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-5 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
               <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight text-[#111]'>
                 3D Lab
               </h3>
-              <Starburst className='h-3 w-3 text-[#F5A623]' />
+              <Starburst className='h-3 w-3 text-camp-amber' />
             </div>
             <p className='mt-7 text-[13px] italic leading-[1.4] text-[#555]'>
               Visual learning,
@@ -275,7 +275,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* SESSIONS — Camp Green + noise */}
-        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-md bg-[#1B7A3C] p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-md bg-camp-green p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
               <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/40'>
@@ -299,7 +299,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-6 rounded-md border border-[#E5E7EB] bg-[#FFFFFF] p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='landing-reveal landing-delay-6 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#aaa]'>
               [ Bounded Intelligence ]
@@ -324,7 +324,7 @@ export const BentoFeatureGrid = () => (
       <div className='landing-reveal mt-[10px] relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise md:p-8'>
         <div className='relative z-10 grid grid-cols-1 items-center gap-7 md:grid-cols-2'>
           <div>
-            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#F5A623]'>
+            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-camp-amber'>
               The Engine
             </span>
             <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight tracking-tight text-white'>

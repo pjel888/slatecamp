@@ -7,11 +7,11 @@ import { enrollInTrail } from '@/lib/actions/trails'
 import type { CampTrail, TrailDay, TrailEnrollment } from '@/types/app'
 
 const INTENSITY_COLORS: Record<string, { bg: string; text: string }> = {
-  intensive: { bg: 'bg-[#FDF0F0]', text: 'text-destructive' },
-  accelerated: { bg: 'bg-[#FEF8ED]', text: 'text-warning' },
+  intensive: { bg: 'bg-destructive-50', text: 'text-destructive' },
+  accelerated: { bg: 'bg-warning-50', text: 'text-warning' },
   standard: { bg: 'bg-primary-50', text: 'text-camp-cobalt' },
-  comprehensive: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
-  undergraduate: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
+  comprehensive: { bg: 'bg-success-50', text: 'text-emerald' },
+  undergraduate: { bg: 'bg-success-50', text: 'text-emerald' },
 }
 
 const groupDaysByWeek = (days: TrailDay[]): Record<number, TrailDay[]> => {
@@ -146,7 +146,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
               <button
                 type="button"
                 onClick={() => toggleWeek(week)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+                className="flex items-center justify-between w-full px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-muted"
               >
                 <div className="flex items-center gap-2">
                   {isExpanded ? (

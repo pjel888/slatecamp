@@ -18,12 +18,12 @@ const MODE_LABELS: Record<TestMode, string> = {
 
 const MODE_STYLES: Record<TestMode, string> = {
   camp: 'bg-primary-50 text-primary-700 border-primary-700/20',
-  chill: 'bg-[#F5F5F5] text-text-secondary border-border',
+  chill: 'bg-muted text-text-secondary border-border',
   storm: 'bg-text-primary text-white border-text-primary',
   proof_sim: 'bg-text-primary text-white border-text-primary',
-  blindspot: 'bg-[#FEF8ED] text-warning border-warning/20',
-  custom: 'bg-[#F5F5F5] text-text-secondary border-border',
-  endurance: 'bg-[#F5F5F5] text-text-secondary border-border',
+  blindspot: 'bg-warning-50 text-warning border-warning/20',
+  custom: 'bg-muted text-text-secondary border-border',
+  endurance: 'bg-muted text-text-secondary border-border',
 }
 
 interface QuizHeaderProps {
@@ -58,7 +58,7 @@ export function QuizHeader({
   const label = isSubjectMode ? 'Subject Practice' : MODE_LABELS[mode]
 
   return (
-    <header className="shrink-0 border-b border-border bg-[#F5F7FA]">
+    <header className="shrink-0 border-b border-border bg-surface-focused">
       <div className="max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
         {/* Left: mode + counter */}
         <div className="flex items-center gap-3 min-w-0">
@@ -94,7 +94,7 @@ export function QuizHeader({
             className={cn(
               'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               isFlagged
-                ? 'bg-[#FEF8ED] text-warning border border-warning/20'
+                ? 'bg-warning-50 text-warning border border-warning/20'
                 : 'text-text-tertiary hover:bg-primary-50 hover:text-text-secondary',
             )}
           >

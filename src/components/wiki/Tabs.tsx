@@ -33,7 +33,7 @@ export function Tabs({ defaultTab, children }: TabsProps) {
 
   return (
     <div className="not-prose my-5 border border-[#E0DED8] rounded-[10px] overflow-hidden bg-white">
-      <div className="flex border-b border-[#E0DED8] bg-[#F5F5F5]">
+      <div className="flex border-b border-[#E0DED8] bg-muted">
         {tabs.map((tab) => (
           <button
             key={tab.value}
@@ -42,7 +42,7 @@ export function Tabs({ defaultTab, children }: TabsProps) {
             className={`font-[family-name:var(--font-dm-mono)] text-[12px] font-medium py-[10px] px-5 border-b-2 -mb-px transition-all duration-150 ${
               activeTab === tab.value
                 ? 'text-camp-cobalt border-camp-cobalt bg-white'
-                : 'text-[#737370] border-transparent hover:text-[#1A1A1A]'
+                : 'text-ink-muted border-transparent hover:text-wiki-ink'
             }`}
           >
             {tab.label}

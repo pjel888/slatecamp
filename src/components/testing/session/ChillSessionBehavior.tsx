@@ -104,7 +104,7 @@ export const ChillSessionBehavior = ({
             <span className="text-border group-open:rotate-90 transition-transform duration-150 inline-block">▶</span>
             Show explanation
           </summary>
-          <div className="mt-2 p-3 bg-[#F5F7FA] rounded-md border border-border">
+          <div className="mt-2 p-3 bg-surface-focused rounded-md border border-border">
             <p className="text-[13px] text-text-secondary leading-[1.7]">
               {typeof question.rationale === 'string'
                 ? question.rationale
@@ -126,7 +126,7 @@ export const ChillSessionBehavior = ({
               'flex-1 h-11 rounded-sm text-[13px] font-black uppercase tracking-widest transition-colors duration-150',
               answer?.selectedOptionId
                 ? 'bg-camp-cobalt text-white hover:bg-primary-700'
-                : 'bg-[#F5F5F5] text-text-tertiary cursor-not-allowed',
+                : 'bg-muted text-text-tertiary cursor-not-allowed',
             )}
           >
             Submit
@@ -135,7 +135,7 @@ export const ChillSessionBehavior = ({
             type="button"
             onClick={onSkip}
             aria-label="Skip this question"
-            className="h-11 px-4 rounded-sm border border-border text-text-tertiary hover:text-text-secondary hover:bg-[#F5F5F5] text-[13px] font-semibold transition-colors duration-150"
+            className="h-11 px-4 rounded-sm border border-border text-text-tertiary hover:text-text-secondary hover:bg-muted text-[13px] font-semibold transition-colors duration-150"
           >
             Skip →
           </button>
@@ -145,7 +145,7 @@ export const ChillSessionBehavior = ({
       {/* Inline rationale after submit */}
       {isSubmitted && (
         <div
-          className="rounded-md border border-border bg-[#F5F7FA] p-4 space-y-3"
+          className="rounded-md border border-border bg-surface-focused p-4 space-y-3"
           role="region"
           aria-label="Answer rationale"
         >
@@ -178,7 +178,7 @@ export const ChillSessionBehavior = ({
                 href={ROUTES.WIKI_PAGE(question.topic_id)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-muted text-[11px] font-black uppercase tracking-widest transition-colors"
               >
                 <SCIcon icon={ArrowSquareOut} size="xs" />
                 Read full article
@@ -189,7 +189,7 @@ export const ChillSessionBehavior = ({
                 href={ROUTES.THREE_D_LAB}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-muted text-[11px] font-black uppercase tracking-widest transition-colors"
               >
                 <SCIcon icon={Cube} size="xs" />
                 See this in 3D

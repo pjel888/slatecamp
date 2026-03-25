@@ -92,7 +92,7 @@ export const PacingInsight = ({ debrief }: { debrief: DebriefData }) => {
   if (!debrief.userHistoricalAvgTimeMs || debrief.avgTimeMs <= 0) return null
 
   return (
-    <div className='mb-8 p-4 bg-[#F5F5F5] border border-border rounded-md flex items-center gap-3'>
+    <div className='mb-8 p-4 bg-muted border border-border rounded-md flex items-center gap-3'>
       <SCIcon
         icon={debrief.avgTimeMs < debrief.userHistoricalAvgTimeMs ? TrendDown : TrendUp}
         size='sm'

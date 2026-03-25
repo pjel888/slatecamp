@@ -15,7 +15,7 @@ export const StormModePreview = ({ stem, options }: StormModePreviewProps) => {
   const [selected, setSelected] = useState<number | null>(null)
 
   return (
-    <div className="rounded-md border border-border bg-[#F5F7FA] overflow-hidden text-sm">
+    <div className="rounded-md border border-border bg-surface-focused overflow-hidden text-sm">
       {/* STUDENT VIEW watermark */}
       <StudentViewWatermark label="Student View — Storm Mode" />
 
@@ -55,7 +55,7 @@ export const StormModePreview = ({ stem, options }: StormModePreviewProps) => {
                 'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[11px] font-black border transition-colors',
                 selected === idx
                   ? 'bg-primary/10 border-primary/30 text-camp-cobalt'
-                  : 'bg-[#F8F7F5] border-border text-text-tertiary',
+                  : 'bg-surface-light border-border text-text-tertiary',
               )}
             >
               {LABELS[idx]}

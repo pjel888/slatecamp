@@ -104,7 +104,7 @@ export const TrailDayView = ({
       ))}
 
       {/* Day progress bar */}
-      <div className="rounded-md border border-border bg-[#F8F7F5] px-4 py-3">
+      <div className="rounded-md border border-border bg-surface-light px-4 py-3">
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs text-text-secondary">
             Day progress: {completedCount}/{totalRequired} complete

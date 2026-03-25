@@ -44,7 +44,7 @@ const wikiCardData: ComponentData = {
         <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-primary-50 text-primary text-[11px] font-medium">
           PD 1096 — National Building Code
         </span>
-        <span className="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-[#EDFAF4] text-emerald-700 text-[11px] font-medium">
+        <span className="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-success-50 text-emerald-700 text-[11px] font-medium">
           Published
         </span>
       </div>

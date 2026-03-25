@@ -45,14 +45,14 @@ export const BodyDimensionExplorer = () => {
   const active = dims[activeIdx]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
+      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
         <div>
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
             Interactive · Anthropometric Data Explorer
           </div>
-          <div className="text-xs text-[#737370] mt-0.5 dark:text-[#A8A8A5]">
+          <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
             Tap a dimension to see percentile values and design implications
           </div>
         </div>
@@ -63,7 +63,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'male'
                 ? 'bg-camp-cobalt text-white'
-                : 'bg-[#F5F5F5] text-[#737370] hover:text-camp-cobalt dark:bg-[#252420]'
+                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-[#252420]'
             }`}
           >
             Male
@@ -74,7 +74,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'female'
                 ? 'bg-camp-cobalt text-white'
-                : 'bg-[#F5F5F5] text-[#737370] hover:text-camp-cobalt dark:bg-[#252420]'
+                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-[#252420]'
             }`}
           >
             Female
@@ -92,11 +92,11 @@ export const BodyDimensionExplorer = () => {
               onClick={() => setActiveIdx(i)}
               className={`w-full text-left px-5 py-2.5 border-b border-[#ECEAE4] transition-all duration-150 dark:border-[#3A3835] ${
                 i === activeIdx
-                  ? 'bg-[#EEF3FD] border-l-2 border-l-camp-cobalt dark:bg-camp-cobalt/10'
-                  : 'hover:bg-[#F5F5F5] border-l-2 border-l-transparent dark:hover:bg-[#252420]'
+                  ? 'bg-cobalt-light border-l-2 border-l-camp-cobalt dark:bg-camp-cobalt/10'
+                  : 'hover:bg-muted border-l-2 border-l-transparent dark:hover:bg-[#252420]'
               }`}
             >
-              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-camp-cobalt' : 'text-[#1A1A1A] dark:text-[#E2E0D8]'}`}>
+              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-camp-cobalt' : 'text-wiki-ink dark:text-[#E2E0D8]'}`}>
                 {d.label}
               </div>
               <div className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5] mt-0.5">
@@ -108,7 +108,7 @@ export const BodyDimensionExplorer = () => {
 
         {/* Detail panel */}
         <div className="w-full sm:w-[320px] p-5">
-          <div className="text-[15px] font-semibold text-[#1A1A1A] mb-3 dark:text-[#E2E0D8]">
+          <div className="text-[15px] font-semibold text-wiki-ink mb-3 dark:text-[#E2E0D8]">
             {active.label}
           </div>
 
@@ -119,7 +119,7 @@ export const BodyDimensionExplorer = () => {
               { label: '50th %ile', val: active.p50, desc: 'Average' },
               { label: '95th %ile', val: active.p95, desc: 'Large' },
             ].map((p) => (
-              <div key={p.label} className="bg-[#F5F5F5] rounded-lg p-3 text-center dark:bg-[#252420]">
+              <div key={p.label} className="bg-muted rounded-lg p-3 text-center dark:bg-[#252420]">
                 <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
                   {p.label}
                 </div>
@@ -132,7 +132,7 @@ export const BodyDimensionExplorer = () => {
           </div>
 
           {/* Design note */}
-          <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-camp-cobalt/10 dark:text-[#C8C6C0]">
+          <div className="bg-cobalt-light rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-camp-cobalt/10 dark:text-[#C8C6C0]">
             <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-camp-cobalt mb-1.5 font-medium">
               Design implication
             </div>

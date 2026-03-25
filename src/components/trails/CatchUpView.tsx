@@ -98,7 +98,7 @@ export const CatchUpView = ({
           <button
             type="button"
             onClick={onCatchUp}
-            className="rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+            className="rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-muted"
           >
             Catch up on missed days
           </button>

@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import type { Question } from '@/types/app'
 import { getDebriefData } from '@/lib/actions/debrief'
 import type { DebriefData } from '@/lib/actions/debrief'
+import { Card } from '@/components/ui/card'
 
 import { ScoreHero } from './results/ScoreHero'
 import { StatCards, PacingInsight } from './results/StatCards'
@@ -149,7 +150,7 @@ const CALIBRATION_LABELS: Record<CalibrationState, string> = {
 const CALIBRATION_COLORS: Record<CalibrationState, string> = {
   overconfident: 'text-camp-orange',
   underconfident: 'text-camp-cobalt',
-  well_calibrated: 'text-[#1B7A3C]',
+  well_calibrated: 'text-camp-green',
 }
 
 const CONFIDENCE_LABELS: Record<number, string> = {
@@ -196,7 +197,7 @@ const CalibrationSection = ({
       <div className="bg-white border border-border rounded-md overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-border bg-[#F5F5F5]">
+            <tr className="border-b border-border bg-muted">
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-text-tertiary">Subject</th>
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-text-tertiary">Predicted</th>
               <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-text-tertiary">Actual</th>
@@ -267,7 +268,7 @@ const ErrorPatternSection = ({
       <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-text-tertiary">
         Error Patterns ({tagged.length} wrong answers tagged)
       </h2>
-      <div className="bg-white border border-border rounded-md p-4 space-y-3">
+      <Card className="space-y-3">
         {sorted.map(([type, count]) => (
           <div key={type} className="flex items-center justify-between">
             <span className="text-sm text-text-primary">
@@ -285,7 +286,7 @@ const ErrorPatternSection = ({
             </p>
           </div>
         )}
-      </div>
+      </Card>
     </div>
   )
 }

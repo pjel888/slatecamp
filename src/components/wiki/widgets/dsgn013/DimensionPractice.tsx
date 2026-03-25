@@ -35,9 +35,9 @@ export const DimensionDrill = () => {
   }
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
       {/* Header */}
-      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#FFF8E6] to-[#FFF4DC] border-b border-[#E0DED8] dark:from-warning/10 dark:to-warning/5 dark:border-[#3A3835]">
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-signal-gold-light to-[#FFF4DC] border-b border-[#E0DED8] dark:from-warning/10 dark:to-warning/5 dark:border-[#3A3835]">
         <div className="w-7 h-7 rounded-lg bg-warning flex items-center justify-center text-white text-sm">
           🧠
         </div>
@@ -53,15 +53,15 @@ export const DimensionDrill = () => {
           onClick={() => setRevealed(true)}
           className={`w-full rounded-[10px] p-7 min-h-[120px] flex flex-col items-center justify-center transition-colors duration-150 cursor-pointer select-none ${
             revealed
-              ? 'bg-[#EEF3FD] dark:bg-camp-cobalt/10'
-              : 'bg-[#F5F5F5] hover:bg-[#EEF3FD] dark:bg-[#252420] dark:hover:bg-camp-cobalt/10'
+              ? 'bg-cobalt-light dark:bg-camp-cobalt/10'
+              : 'bg-muted hover:bg-cobalt-light dark:bg-[#252420] dark:hover:bg-camp-cobalt/10'
           }`}
         >
           <div
             className={`font-semibold transition-all duration-150 ${
               revealed
-                ? 'text-[13px] text-[#737370] dark:text-[#A8A8A5]'
-                : 'text-base text-[#1A1A1A] dark:text-[#E2E0D8]'
+                ? 'text-[13px] text-ink-muted dark:text-[#A8A8A5]'
+                : 'text-base text-wiki-ink dark:text-[#E2E0D8]'
             }`}
           >
             {item.q}
@@ -72,7 +72,7 @@ export const DimensionDrill = () => {
             </div>
           )}
           {!revealed && (
-            <div className="text-xs text-[#A8A8A5] mt-2 dark:text-[#737370]">
+            <div className="text-xs text-[#A8A8A5] mt-2 dark:text-ink-muted">
               Tap to reveal
             </div>
           )}
@@ -83,7 +83,7 @@ export const DimensionDrill = () => {
           <button
             type="button"
             onClick={prev}
-            className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-[#737370] transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]"
+            className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]"
           >
             ← Previous
           </button>
@@ -93,7 +93,7 @@ export const DimensionDrill = () => {
           <button
             type="button"
             onClick={next}
-            className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-[#737370] transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]"
+            className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]"
           >
             Next →
           </button>

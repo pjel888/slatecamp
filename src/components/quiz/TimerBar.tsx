@@ -26,7 +26,7 @@ export function TimerBar({
 
   return (
     <div
-      className="flex items-center gap-3 bg-[#F5F7FA] border border-border rounded-sm px-3 py-1.5 cursor-pointer"
+      className="flex items-center gap-3 bg-surface-focused border border-border rounded-sm px-3 py-1.5 cursor-pointer"
       onClick={onToggleMinimize}
       role="button"
       tabIndex={0}

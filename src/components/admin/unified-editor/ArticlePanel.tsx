@@ -149,7 +149,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-[#F8F7F5] hover:text-text-primary"
+        className="flex items-center gap-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light hover:text-text-primary"
       >
         {label}
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" className="opacity-50">
@@ -335,7 +335,7 @@ export const ArticlePanel = ({
     <div className="flex h-full flex-col overflow-hidden">
       <Tabs defaultValue="editor" className="flex flex-1 flex-col min-h-0 overflow-hidden">
         {/* ── Tab Header ─────────────────────────────────── */}
-        <div className="shrink-0 border-b border-border bg-[#F8F7F5] px-3">
+        <div className="shrink-0 border-b border-border bg-surface-light px-3">
           <TabsList variant="underline" className="gap-0 border-b-0">
             <TabsTrigger value="editor" className="text-xs">
               Editor
@@ -410,7 +410,7 @@ export const ArticlePanel = ({
           {articleSlug ? (
             <div className="flex h-full flex-col">
               {/* Toolbar */}
-              <div className="flex shrink-0 items-center gap-3 border-b border-border bg-[#F8F7F5] px-3 py-1.5">
+              <div className="flex shrink-0 items-center gap-3 border-b border-border bg-surface-light px-3 py-1.5">
                 <Eyebrow>Student View</Eyebrow>
                 <span className="text-[11px] text-text-secondary">
                   Shows the saved article exactly as students see it
@@ -422,7 +422,7 @@ export const ArticlePanel = ({
                     const iframe = document.getElementById('wiki-preview-iframe') as HTMLIFrameElement
                     if (iframe) iframe.src = iframe.src
                   }}
-                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
                 >
                   Refresh
                 </button>
@@ -473,7 +473,7 @@ export const ArticlePanel = ({
                     return (
                       <div
                         key={`${idx}-a`}
-                        className="rounded-sm bg-[#EDFAF4] px-2 py-px text-emerald"
+                        className="rounded-sm bg-success-50 px-2 py-px text-emerald"
                       >
                         <span className="mr-3 inline-block w-4 select-none text-right opacity-50">+</span>
                         {line.text}
@@ -484,7 +484,7 @@ export const ArticlePanel = ({
                     return (
                       <div
                         key={`${idx}-r`}
-                        className="rounded-sm bg-[#FDF0F0] px-2 py-px text-destructive"
+                        className="rounded-sm bg-destructive-50 px-2 py-px text-destructive"
                       >
                         <span className="mr-3 inline-block w-4 select-none text-right opacity-50">-</span>
                         {line.text}
@@ -506,7 +506,7 @@ export const ArticlePanel = ({
       </Tabs>
 
       {/* ── Article Metadata (Collapsible) ─────────────────── */}
-      <div className="shrink-0 border-t border-border bg-[#F8F7F5]">
+      <div className="shrink-0 border-t border-border bg-surface-light">
         <button
           type="button"
           onClick={() => setMetadataOpen((v) => !v)}
@@ -569,7 +569,7 @@ export const ArticlePanel = ({
               <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
                 Reviewed by
               </label>
-              <span className="rounded-sm border border-border bg-[#F8F7F5] px-2.5 py-1.5 font-mono text-[11px] text-text-tertiary">
+              <span className="rounded-sm border border-border bg-surface-light px-2.5 py-1.5 font-mono text-[11px] text-text-tertiary">
                 {reviewedBy || '\u2014'}
               </span>
             </div>

@@ -84,7 +84,7 @@ export const NavigatorOverlay = ({
               type="button"
               onClick={onClose}
               aria-label="Close navigator"
-              className="h-8 w-8 flex items-center justify-center rounded-md text-text-tertiary hover:text-text-secondary hover:bg-[#F5F5F5] transition-colors"
+              className="h-8 w-8 flex items-center justify-center rounded-md text-text-tertiary hover:text-text-secondary hover:bg-muted transition-colors"
             >
               <SCIcon icon={X} size="sm" />
             </button>

@@ -6,7 +6,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
   return (
     <div className="not-prose my-6 rounded-lg border border-[#E0DED8] overflow-hidden dark:border-[#3A3835]">
       {caption && (
-        <p className="font-sans text-xs font-semibold text-[#1A1A1A] px-3 py-2.5 border-b border-[#E0DED8] bg-[#F5F5F5] dark:text-[#E2E0D8] dark:bg-[#2A2825] dark:border-[#3A3835]">
+        <p className="font-sans text-xs font-semibold text-wiki-ink px-3 py-2.5 border-b border-[#E0DED8] bg-muted dark:text-[#E2E0D8] dark:bg-[#2A2825] dark:border-[#3A3835]">
           {caption}
         </p>
       )}
@@ -46,15 +46,15 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                   key={i}
                   className={cn(
                     "border-b border-[#ECEAE4] last:border-b-0 dark:border-[#3A3835]",
-                    row.isMostTested && "bg-[#FFF8E6] dark:bg-[#92400E20]"
+                    row.isMostTested && "bg-signal-gold-light dark:bg-[#92400E20]"
                   )}
                 >
-                  <td className="px-2.5 py-2.5 text-sm text-[#1A1A1A] dark:text-[#E2E0D8]">
+                  <td className="px-2.5 py-2.5 text-sm text-wiki-ink dark:text-[#E2E0D8]">
                     <span>{row.parameter}</span>
                     {row.isChanged && <WikiChangedPill className="ml-1.5" />}
                   </td>
                   {row.dimension != null && (
-                    <td className="px-2.5 py-2.5 text-xs text-[#737370] dark:text-[#A8A8A5]">
+                    <td className="px-2.5 py-2.5 text-xs text-ink-muted dark:text-[#A8A8A5]">
                       {row.dimension}
                     </td>
                   )}

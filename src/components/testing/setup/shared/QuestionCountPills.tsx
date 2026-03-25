@@ -22,7 +22,7 @@ const QuestionCountPills = ({ options, selected, onChange }: QuestionCountPillsP
             'rounded-full px-4 py-2 text-sm font-medium transition-colors duration-150 ease-out border select-none',
             isSelected
               ? 'bg-[var(--primary)] text-white border-[var(--primary)]'
-              : 'bg-white text-[var(--text-secondary)] border-[var(--border)] hover:bg-[#F8F7F5]',
+              : 'bg-white text-[var(--text-secondary)] border-[var(--border)] hover:bg-surface-light',
           )}
         >
           {count}

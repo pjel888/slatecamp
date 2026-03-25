@@ -171,7 +171,7 @@ export function HeroCommandBar({
                 </span>
               )}
               {readinessMeta?.ceilingActive && readinessMeta.ceilingReason && (
-                <span className='text-[#F5A623]/80 text-[11px] font-medium text-center leading-tight max-w-[140px]'>
+                <span className='text-camp-amber/80 text-[11px] font-medium text-center leading-tight max-w-[140px]'>
                   Capped at {readinessMeta.ceilingValue}%.{' '}
                   {CEILING_COPY[readinessMeta.ceilingReason] ?? ''}
                 </span>

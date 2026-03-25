@@ -27,10 +27,10 @@ export default function WikiPage() {
         {/* Feature Grid */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-left'>
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-[#FEF8ED] rounded-md flex items-center justify-center'>
+            <div className='w-8 h-8 bg-warning-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={MagnifyingGlass} size="sm" className='text-warning' />
             </div>
-            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Syllabus Mapped</h3>
+            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Syllabus Mapped</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
           </div>
 
@@ -38,15 +38,15 @@ export default function WikiPage() {
             <div className='w-8 h-8 bg-primary-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={Sparkle} size="sm" className='text-primary' />
             </div>
-            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Interactive</h3>
+            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Interactive</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Complex codes come alive with 2D illustrations and 3D spatial lab models.</p>
           </div>
 
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-[#EDFAF4] rounded-md flex items-center justify-center'>
+            <div className='w-8 h-8 bg-success-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={Lightning} size="sm" className='text-emerald' />
             </div>
-            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Smart Search</h3>
+            <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Smart Search</h3>
             <p className='text-xs text-zinc-500 leading-relaxed'>Quickly find any provision or term across the entire building code.</p>
           </div>
         </div>

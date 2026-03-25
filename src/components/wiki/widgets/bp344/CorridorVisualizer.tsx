@@ -12,7 +12,7 @@ export const CorridorVisualizer = () => {
   const sX = 80, wY = 40, wH = 80, wc1X = sX + 14, wc1Y = wY + wH / 2 - 14
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Corridor Width Visualizer (2024 IRR)</div>
       <div className="flex gap-5 mb-3 flex-wrap items-center">
         <label className="flex items-center gap-2 text-[13px] text-[#444] cursor-pointer">
@@ -54,7 +54,7 @@ export const CorridorVisualizer = () => {
         <text x={sX + cPx / 2} y={wY + wH + 24} fontSize="9" fill={ok ? '#1B7A3C' : '#E63329'} textAnchor="middle">{cw}mm {ok ? '✓' : '✗'}</text>
         <text x={sX + mPx / 2} y={wY - 8} fontSize="8" fill="#1B3FC4" textAnchor="middle" opacity="0.7">min {req}mm (2024)</text>
       </svg>
-      <div className={`mt-2.5 text-[12px] px-3 py-2 rounded-md font-semibold ${ok ? 'bg-[#e8f5ee] border border-[#1B7A3C] text-[#1B7A3C]' : 'bg-[#fdf0ef] border border-[#E63329] text-[#E63329]'}`}>
+      <div className={`mt-2.5 text-[12px] px-3 py-2 rounded-md font-semibold ${ok ? 'bg-[#e8f5ee] border border-camp-green text-camp-green' : 'bg-[#fdf0ef] border border-camp-red text-camp-red'}`}>
         {ok ? `✓ ${cw}mm meets the 2024 IRR ${req}mm minimum for ${label}.` : `✗ ${cw}mm is below the 2024 IRR ${req}mm minimum. Deficit: ${req - cw}mm.`}
       </div>
     </div>

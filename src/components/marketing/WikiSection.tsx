@@ -10,23 +10,23 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 /* ── Wiki mockup ── */
 
 const WikiMockup = () => (
-  <div className='overflow-hidden rounded-md border border-[#E5E7EB] bg-[#FFFFFF]'>
+  <div className='overflow-hidden rounded-md border border-border-design bg-white'>
     {/* Header */}
-    <div className='flex items-center gap-2.5 border-b border-[#E5E7EB] px-4 py-3'>
-      <div className='h-2 w-2 rounded-full bg-[#1B7A3C]' />
+    <div className='flex items-center gap-2.5 border-b border-border-design px-4 py-3'>
+      <div className='h-2 w-2 rounded-full bg-camp-green' />
       <span className='text-[13px] font-bold text-[#111]'>
         Building Technology — Firewall Requirements
       </span>
     </div>
 
     {/* Table of contents */}
-    <div className='border-b border-[#E5E7EB] bg-[#F5F5F5] px-4 py-3'>
+    <div className='border-b border-border-design bg-muted px-4 py-3'>
       <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-[#888]'>On this page</div>
       {['Definition & Purpose', 'Height Requirements', 'Construction Standards', 'Common Exam Questions'].map(
         (item) => (
           <div
             key={item}
-            className='mb-1 border-l-2 border-[#1B7A3C] pl-2 text-[11px] text-[#1B7A3C]'
+            className='mb-1 border-l-2 border-camp-green pl-2 text-[11px] text-camp-green'
           >
             {item}
           </div>
@@ -37,7 +37,7 @@ const WikiMockup = () => (
     {/* Article body */}
     <div className='px-4 py-4'>
       <h3 className='mb-2 text-[14px] font-bold text-[#111]'>Height Requirements</h3>
-      <p className='mb-3 text-[11px] leading-relaxed text-[#6B6B6B]'>
+      <p className='mb-3 text-[11px] leading-relaxed text-text-2'>
         A firewall must extend at least 0.50m above the highest point of the roof it protects.
         For buildings with combustible roofs, the firewall must project at least 0.60m above
         the roofline on both sides.

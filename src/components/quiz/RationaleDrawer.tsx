@@ -81,7 +81,7 @@ export function RationaleDrawer({
 
               {/* Takeaway */}
               {takeaway && (
-                <div className="flex items-start gap-2 bg-[#FEF8ED] border border-warning/20 rounded-md px-3 py-2.5">
+                <div className="flex items-start gap-2 bg-warning-50 border border-warning/20 rounded-md px-3 py-2.5">
                   <span className="text-[11px] font-bold uppercase tracking-wider text-warning shrink-0 mt-0.5">Key Takeaway</span>
                   <p className="text-sm text-text-primary">{takeaway}</p>
                 </div>
@@ -89,7 +89,7 @@ export function RationaleDrawer({
 
               {/* Correct answer highlight */}
               {correctAnswerText && (
-                <div className="flex items-start gap-2 bg-[#EDFAF4] border border-emerald/20 rounded-md px-3 py-2.5">
+                <div className="flex items-start gap-2 bg-success-50 border border-emerald/20 rounded-md px-3 py-2.5">
                   <SCIcon icon={CheckCircle} size="sm" className="text-emerald shrink-0 mt-0.5" />
                   <p className="text-sm text-text-primary font-medium">{correctAnswerText}</p>
                 </div>
@@ -122,7 +122,7 @@ export function RationaleDrawer({
                 </button>
                 <button
                   onClick={onAddNote}
-                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-text-secondary hover:bg-muted text-[11px] font-black uppercase tracking-widest transition-colors"
                 >
                   <SCIcon icon={Plus} size="xs" />
                   Add Note

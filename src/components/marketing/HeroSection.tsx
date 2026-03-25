@@ -78,18 +78,18 @@ export const HeroSection = ({
               >
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
-              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-[#6B6B6B]'>
+              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-text-2'>
                 Free to start &middot; No credit card required
               </p>
             </div>
           </div>
 
           {/* Stats Bar */}
-          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-[#E5E7EB] pt-3'>
+          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-border-design pt-3'>
             {STATS.map((stat) => (
               <span
                 key={stat}
-                className='flex items-center gap-2 text-[12px] text-[#9CA3AF]'
+                className='flex items-center gap-2 text-[12px] text-gray-400'
               >
                 <span
                   className='h-1 w-1 rounded-full bg-camp-cobalt'

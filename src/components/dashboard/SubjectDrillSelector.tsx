@@ -254,7 +254,7 @@ export function SubjectDrillSelector({
 
                   {selectedNode.mastery !== undefined &&
                     selectedNode.mastery > 0.8 && (
-                      <div className='p-3 bg-[#FEF8ED] border border-warning/20 rounded-sm flex gap-3'>
+                      <div className='p-3 bg-warning-50 border border-warning/20 rounded-sm flex gap-3'>
                         <SCIcon
                           icon={Warning}
                           size='sm'

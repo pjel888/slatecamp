@@ -1,4 +1,5 @@
 import { Skeleton } from "@/components/ui/skeleton";
+import { Card } from "@/components/ui/card";
 
 /**
  * Skeleton for the dashboard page — mirrors the actual layout structure:
@@ -15,7 +16,7 @@ export function DashboardPageSkeleton() {
       </div>
 
       {/* ── Hero Command Bar ───────────────────────────── */}
-      <div className="rounded-md border border-border bg-white p-4">
+      <Card>
         <div className="flex flex-col md:flex-row gap-4">
           {/* Score circle */}
           <div className="flex items-center gap-4 shrink-0">
@@ -50,18 +51,18 @@ export function DashboardPageSkeleton() {
             ))}
           </div>
         </div>
-      </div>
+      </Card>
 
       {/* ── Content Grid ───────────────────────────────── */}
       <div className="min-h-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full">
           {/* Quick-stat cards (3-col span) */}
-          <div className="lg:col-span-3 rounded-md border border-border bg-white p-2">
+          <Card className="lg:col-span-3 p-2">
             <div className="grid grid-cols-3 gap-2">
               {[
                 { bg: "bg-primary-50" },
-                { bg: "bg-[#EDFAF4]" },
-                { bg: "bg-[#FEF8ED]" },
+                { bg: "bg-success-50" },
+                { bg: "bg-warning-50" },
               ].map((card, i) => (
                 <div key={i} className={`rounded-md ${card.bg} p-3 min-h-[72px] flex flex-col justify-between`}>
                   <Skeleton className="h-3 w-16 bg-black/5" />
@@ -69,10 +70,10 @@ export function DashboardPageSkeleton() {
                 </div>
               ))}
             </div>
-          </div>
+          </Card>
 
           {/* Activity feed (right column, spans 2 rows) */}
-          <div className="h-full lg:row-span-2 rounded-md border border-border bg-white p-3">
+          <Card className="h-full lg:row-span-2 p-3">
             <Skeleton className="h-4 w-24 mb-3" />
             <div className="space-y-3">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -85,21 +86,21 @@ export function DashboardPageSkeleton() {
                 </div>
               ))}
             </div>
-          </div>
+          </Card>
 
           {/* Daily wiki card */}
-          <div className="rounded-md border border-border bg-white p-3">
+          <Card className="p-3">
             <Skeleton className="h-4 w-20 mb-2" />
             <Skeleton className="h-3 w-full mb-1.5" />
             <Skeleton className="h-3 w-3/4" />
             <Skeleton className="h-7 w-24 rounded-sm mt-3" />
-          </div>
+          </Card>
 
           {/* Empty spacer (matches real layout) */}
           <div />
 
           {/* Subject mastery card */}
-          <div className="rounded-md border border-border bg-white p-3">
+          <Card className="p-3">
             <Skeleton className="h-4 w-28 mb-3" />
             <div className="space-y-2">
               {[1, 2, 3, 4].map((i) => (
@@ -109,7 +110,7 @@ export function DashboardPageSkeleton() {
                 </div>
               ))}
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </div>

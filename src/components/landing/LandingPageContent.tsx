@@ -59,7 +59,7 @@ export async function LandingPageContent() {
           <div className='mx-auto max-w-[1200px]'>
             {/* TODO: evaluate SectionHeader migration — custom Starburst icon + gap layout */}
             <div className='flex items-center gap-3'>
-              <span className='text-[#F5A623]'>
+              <span className='text-camp-amber'>
                 <Starburst className='h-4 w-4' />
               </span>
               <h2

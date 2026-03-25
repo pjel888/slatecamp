@@ -202,7 +202,7 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
           </DialogHeader>
 
           {deleteError && (
-            <p className="text-[11px] text-destructive bg-[#FDF0F0] border border-destructive/20 rounded-sm px-3 py-2">
+            <p className="text-[11px] text-destructive bg-destructive-50 border border-destructive/20 rounded-sm px-3 py-2">
               {deleteError}
             </p>
           )}

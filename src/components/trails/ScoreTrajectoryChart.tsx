@@ -55,7 +55,7 @@ export const ScoreTrajectoryChart = ({
 
   if (data.length === 0) {
     return (
-      <div className="flex items-center justify-center rounded-md border border-border bg-[#F8F7F5] p-6" style={{ height }}>
+      <div className="flex items-center justify-center rounded-md border border-border bg-surface-light p-6" style={{ height }}>
         <p className="text-sm text-text-secondary">
           Complete your first day to see your score trajectory.
         </p>

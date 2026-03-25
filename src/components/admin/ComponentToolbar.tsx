@@ -29,7 +29,7 @@ const TOOLBAR_ITEMS: { label: string; tag: string }[] = [
 // ---------------------------------------------------------------------------
 
 export const ComponentToolbar = ({ onInsert }: ComponentToolbarProps) => (
-  <div className="flex flex-wrap gap-1.5 px-3 py-2 border-b border-border bg-[#F8F7F5]/60">
+  <div className="flex flex-wrap gap-1.5 px-3 py-2 border-b border-border bg-surface-light/60">
     <Eyebrow className="self-center mr-1">Components</Eyebrow>
     {TOOLBAR_ITEMS.map(item => (
       <button

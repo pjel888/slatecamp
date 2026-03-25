@@ -40,13 +40,13 @@ export default function ContactPage() {
         {/* ── Hero ── */}
         <section className="mx-auto max-w-[1200px] px-6 pt-36 pb-20 sm:pt-44">
           <div className="max-w-[600px]">
-            <p className="mb-4 text-[13px] font-medium uppercase tracking-widest text-[#1B3FC4]">
+            <p className="mb-4 text-[13px] font-medium uppercase tracking-widest text-primary">
               Contact
             </p>
-            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] tracking-tight text-[#1A2332]">
+            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
               We&apos;re here to help.
             </h1>
-            <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-[#4A5568]">
+            <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-text-secondary">
               SlateCamp is a small team. When you reach out, you&apos;re talking
               directly to the people who built the platform.
             </p>
@@ -59,19 +59,19 @@ export default function ContactPage() {
             <div className="grid gap-6 sm:grid-cols-2">
               {/* Email */}
               <div className="rounded-md border border-zinc-200 bg-zinc-50 p-8">
-                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-[#EEF2FC] text-[#1B3FC4]">
+                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
                   <EnvelopeSimple size={20} weight="duotone" />
                 </div>
-                <h2 className="text-[16px] font-semibold text-[#1A2332]">
+                <h2 className="text-[16px] font-semibold text-foreground">
                   Email support
                 </h2>
-                <p className="mt-2 text-[13px] leading-relaxed text-[#4A5568]">
+                <p className="mt-2 text-[13px] leading-relaxed text-text-secondary">
                   For questions about your account, the question bank, or
                   anything else — email us directly.
                 </p>
                 <a
                   href="mailto:support@slatecamp.com"
-                  className="mt-4 inline-block text-[14px] font-medium text-[#1B3FC4] transition-colors duration-150 hover:text-[#1535A8]"
+                  className="mt-4 inline-block text-[14px] font-medium text-primary transition-colors duration-150 hover:text-[#1535A8]"
                 >
                   support@slatecamp.com
                 </a>
@@ -79,13 +79,13 @@ export default function ContactPage() {
 
               {/* Response time */}
               <div className="rounded-md border border-zinc-200 bg-zinc-50 p-8">
-                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-[#EEF2FC] text-[#1B3FC4]">
+                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
                   <Clock size={20} weight="duotone" />
                 </div>
-                <h2 className="text-[16px] font-semibold text-[#1A2332]">
+                <h2 className="text-[16px] font-semibold text-foreground">
                   Response time
                 </h2>
-                <p className="mt-2 text-[13px] leading-relaxed text-[#4A5568]">
+                <p className="mt-2 text-[13px] leading-relaxed text-text-secondary">
                   We respond to every message within 24 hours on weekdays.
                   Urgent issues affecting your active study session are
                   prioritised.
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on Instagram"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-[#4A5568] transition-colors duration-150 hover:border-zinc-300 hover:text-[#1A2332]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
                 >
                   <InstagramLogo size={18} />
                 </a>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on X / Twitter"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-[#4A5568] transition-colors duration-150 hover:border-zinc-300 hover:text-[#1A2332]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
                 >
                   <TwitterLogo size={18} />
                 </a>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-[#4A5568] transition-colors duration-150 hover:border-zinc-300 hover:text-[#1A2332]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
                 >
                   <LinkedinLogo size={18} />
                 </a>
@@ -136,13 +136,13 @@ export default function ContactPage() {
 
         {/* ── FAQ ── */}
         <section className="mx-auto max-w-[1200px] px-6 py-20">
-          <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-[#EEF2FC] text-[#1B3FC4]">
+          <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
             <Question size={20} weight="duotone" />
           </div>
-          <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold tracking-tight text-[#1A2332]">
+          <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold tracking-tight text-foreground">
             Frequently asked questions
           </h2>
-          <p className="mt-3 max-w-[480px] text-[15px] leading-relaxed text-[#4A5568]">
+          <p className="mt-3 max-w-[480px] text-[15px] leading-relaxed text-text-secondary">
             Quick answers to the questions we hear most often.
           </p>
 
@@ -152,8 +152,8 @@ export default function ContactPage() {
                 key={q}
                 className="rounded-md border border-zinc-200 bg-white p-6 transition-shadow duration-150 hover:shadow-sm"
               >
-                <p className="text-[14px] font-semibold text-[#1A2332]">{q}</p>
-                <p className="mt-2 text-[13px] leading-relaxed text-[#4A5568]">
+                <p className="text-[14px] font-semibold text-foreground">{q}</p>
+                <p className="mt-2 text-[13px] leading-relaxed text-text-secondary">
                   {a}
                 </p>
               </div>

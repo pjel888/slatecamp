@@ -119,7 +119,7 @@ const TrailDetailPage = async ({
 
               return (
                 <details key={week} className="group rounded-md border border-border bg-white overflow-hidden" open={week === 1}>
-                  <summary className="flex items-center justify-between w-full px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:bg-[#F8F7F5] list-none">
+                  <summary className="flex items-center justify-between w-full px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:bg-surface-light list-none">
                     <div className="flex items-center gap-2">
                       <span className="text-sm font-medium text-text-primary">Week {week}</span>
                       {subjectFocuses.length > 0 && (
@@ -137,7 +137,7 @@ const TrailDetailPage = async ({
                           <span className="font-mono text-[11px] text-text-tertiary w-12">Day {day.day_number}</span>
                           <span className="text-sm text-text-primary">{day.title}</span>
                           {day.is_rest_day && (
-                            <span className="text-[11px] text-text-tertiary bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">Rest</span>
+                            <span className="text-[11px] text-text-tertiary bg-muted px-1.5 py-0.5 rounded-sm">Rest</span>
                           )}
                         </div>
                         <span className="text-xs text-text-tertiary">

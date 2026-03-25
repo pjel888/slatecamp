@@ -181,7 +181,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
       <button
         type="button"
         onClick={() => setOpen(v => !v)}
-        className="flex items-center gap-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs font-medium text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+        className="flex items-center gap-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs font-medium text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
       >
         {label}
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" className="opacity-50">
@@ -349,14 +349,14 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
   const wordCount = countWords(content)
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-[#F8F7F5]">
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-surface-light">
       {/* ------------------------------------------------------------------ */}
       {/* Metadata bar                                                        */}
       {/* ------------------------------------------------------------------ */}
       <div className="flex shrink-0 items-center gap-4 border-b border-border bg-white px-4 py-2.5">
         <Link
           href="/admin/articles"
-          className="shrink-0 rounded-sm px-2 py-1 text-xs text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
+          className="shrink-0 rounded-sm px-2 py-1 text-xs text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
           &larr; Articles
         </Link>
@@ -397,8 +397,8 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           onClick={() => setStatus(s => s === 'published' ? 'draft' : 'published')}
           className={`shrink-0 rounded-sm px-2.5 py-1 font-mono text-[11px] font-medium transition-colors duration-150 ${
             status === 'published'
-              ? 'bg-[#EDFAF4] text-emerald hover:bg-[#d5f5e8]'
-              : 'bg-[#FEF8ED] text-warning hover:bg-[#fdefd0]'
+              ? 'bg-success-50 text-emerald hover:bg-[#d5f5e8]'
+              : 'bg-warning-50 text-warning hover:bg-[#fdefd0]'
           }`}
         >
           {status === 'published' ? 'Published' : 'Draft'}
@@ -475,7 +475,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* Left: CodeMirror editor */}
         <div className="flex w-1/2 flex-col overflow-hidden border-r border-border">
-          <div className="shrink-0 border-b border-border bg-[#F8F7F5] px-4 py-1.5">
+          <div className="shrink-0 border-b border-border bg-surface-light px-4 py-1.5">
             <Eyebrow>MDX Source</Eyebrow>
           </div>
           <div className="min-h-0 flex-1 overflow-auto">

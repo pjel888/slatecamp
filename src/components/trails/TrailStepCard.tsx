@@ -54,7 +54,7 @@ const TrailStepCard = ({
 
   // Container border/bg classes based on state
   const containerClasses = isCompleted
-    ? 'border-emerald bg-[#EDFAF4]'
+    ? 'border-emerald bg-success-50'
     : step.is_optional
       ? 'border-dashed border-border opacity-75'
       : 'border-border bg-white'
@@ -82,7 +82,7 @@ const TrailStepCard = ({
           {config.label}
         </span>
         {step.is_optional && (
-          <span className="ml-auto rounded-sm bg-[#F5F5F5] px-1.5 py-0.5 text-[11px] text-text-tertiary">
+          <span className="ml-auto rounded-sm bg-muted px-1.5 py-0.5 text-[11px] text-text-tertiary">
             Optional
           </span>
         )}

@@ -88,7 +88,7 @@ const StormSetup = ({ userId }: StormSetupProps) => {
           </p>
         </section>
 
-        <div className="rounded-md bg-[#F8F7F5] border border-[var(--border)] px-4 py-4">
+        <div className="rounded-md bg-surface-light border border-[var(--border)] px-4 py-4">
           <p className="text-[14px] text-[var(--text-secondary)] leading-relaxed">
             Once you start, the timer runs continuously. You&apos;ll see your results and all
             explanations when you finish. Take a breath — you&apos;ve got this.

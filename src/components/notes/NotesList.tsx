@@ -92,7 +92,7 @@ export function NotesList({
                 placeholder="Search notes..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full rounded-md bg-[#F5F5F5] py-1.5 pl-8 pr-3 text-xs text-text-primary border border-border placeholder:text-text-tertiary focus:bg-white focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt transition-all duration-150"
+                className="w-full rounded-md bg-muted py-1.5 pl-8 pr-3 text-xs text-text-primary border border-border placeholder:text-text-tertiary focus:bg-white focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt transition-all duration-150"
               />
             </div>
           </div>
@@ -158,7 +158,7 @@ export function NotesList({
                             'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[11px] font-semibold',
                             isSelected
                               ? 'bg-camp-cobalt/10 text-camp-cobalt'
-                              : 'bg-[#F5F5F5] text-text-secondary',
+                              : 'bg-muted text-text-secondary',
                           )}>
                             <badge.icon className="h-2.5 w-2.5" />
                             {badge.label}
@@ -191,7 +191,7 @@ export function NotesList({
                       </button>
                       <button
                         onClick={(e) => { e.stopPropagation(); onDelete(note.id) }}
-                        className="rounded p-1 text-border hover:bg-[#FDF0F0] hover:text-destructive transition-colors"
+                        className="rounded p-1 text-border hover:bg-destructive-50 hover:text-destructive transition-colors"
                         title="Delete"
                       >
                         <SCIcon icon={Trash} size="xs" />

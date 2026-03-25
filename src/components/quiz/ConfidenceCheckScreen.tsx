@@ -31,7 +31,7 @@ export const ConfidenceCheckScreen = ({
   const allRated = subjectNames.every((s) => ratings[s] !== undefined)
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] px-5 py-10 bg-[#F5F7FA]">
+    <div className="flex flex-col items-center justify-center min-h-[60vh] px-5 py-10 bg-surface-focused">
       <div className="w-full max-w-md space-y-6">
         {/* Eyebrow */}
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-text-tertiary text-center">
@@ -65,7 +65,7 @@ export const ConfidenceCheckScreen = ({
                         'px-3 py-1 rounded-sm text-xs font-medium transition-colors duration-150',
                         isSelected
                           ? 'bg-camp-cobalt text-white'
-                          : 'bg-[#F5F5F5] text-[#555555] hover:bg-[#E5E7EB]',
+                          : 'bg-muted text-[#555555] hover:bg-border-design',
                       )}
                     >
                       {label}

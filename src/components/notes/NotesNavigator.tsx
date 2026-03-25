@@ -87,7 +87,7 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       <div className={cn('mt-4', collapsed ? 'px-1' : 'px-2')}>
         <div className={cn('mb-1 flex items-center', collapsed ? 'justify-center' : 'justify-between px-1')}>
           {!collapsed && (
-            <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">Folders</span>
+            <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-text-2">Folders</span>
           )}
           <Button
             variant="ghost"
@@ -145,7 +145,7 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       {/* By Source */}
       <div className={cn('mt-4', collapsed ? 'px-1' : 'px-2')}>
         {!collapsed && (
-          <p className="mb-1 px-1 font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">By Source</p>
+          <p className="mb-1 px-1 font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-text-2">By Source</p>
         )}
         <button onClick={() => onFilterChange({ type: 'source', source: 'wiki' })} className={navBtn(is({ type: 'source', source: 'wiki' }))} title={collapsed ? 'From Wiki' : undefined}>
           <SCIcon icon={BookOpen} size="sm" className="shrink-0" weight={is({ type: 'source', source: 'wiki' }) ? 'bold' : 'regular'} />

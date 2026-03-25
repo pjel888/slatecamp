@@ -53,7 +53,7 @@ export const QuestionReviewList = ({
             {/* Summary row */}
             <button
               onClick={() => onToggleExpand(q.question_id)}
-              className='w-full flex items-center gap-3 p-4 text-left hover:bg-[#F5F5F5]/50 transition-colors'
+              className='w-full flex items-center gap-3 p-4 text-left hover:bg-muted/50 transition-colors'
             >
               <span className='text-[11px] font-bold text-text-tertiary w-6 shrink-0'>
                 {idx + 1}
@@ -73,7 +73,7 @@ export const QuestionReviewList = ({
                   </span>
                 )}
                 {topicName && (
-                  <span className='hidden md:block text-[11px] text-text-tertiary bg-[#F5F5F5] px-2 py-0.5 rounded-sm max-w-[120px] truncate'>
+                  <span className='hidden md:block text-[11px] text-text-tertiary bg-muted px-2 py-0.5 rounded-sm max-w-[120px] truncate'>
                     {topicName}
                   </span>
                 )}

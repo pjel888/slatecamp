@@ -152,7 +152,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
       {/* Header */}
       <div className="flex items-start justify-between mb-3">
         <div>
-          <h3 className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">
+          <h3 className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-text-2">
             Study Timeline
           </h3>
           <p className="text-xs text-ink-tertiary mt-0.5">

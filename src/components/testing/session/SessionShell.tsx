@@ -485,7 +485,7 @@ export const SessionShell = ({
       </div>
 
       {/* Header */}
-      <header className="shrink-0 border-b border-border bg-[#F5F7FA]">
+      <header className="shrink-0 border-b border-border bg-surface-focused">
         <div className="max-w-[720px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
           {/* Left: counter */}
           <span className="text-[13px] font-bold text-text-primary tabular-nums">
@@ -507,7 +507,7 @@ export const SessionShell = ({
               className={cn(
                 'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
                 isFlagged
-                  ? 'bg-[#FEF8ED] text-warning border border-warning/20'
+                  ? 'bg-warning-50 text-warning border border-warning/20'
                   : 'text-text-tertiary hover:bg-primary-50 hover:text-text-secondary',
               )}
             >
@@ -584,7 +584,7 @@ export const SessionShell = ({
       </main>
 
       {/* Footer */}
-      <footer className="shrink-0 border-t border-border bg-[#F5F7FA]">
+      <footer className="shrink-0 border-t border-border bg-surface-focused">
         <div className="max-w-[720px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
           {/* Previous */}
           <button
@@ -608,7 +608,7 @@ export const SessionShell = ({
               type="button"
               onClick={() => setShowConfirmSubmit(true)}
               aria-label="End session"
-              className="h-9 px-4 rounded-sm border border-border text-text-tertiary hover:text-text-secondary hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+              className="h-9 px-4 rounded-sm border border-border text-text-tertiary hover:text-text-secondary hover:bg-muted text-[11px] font-black uppercase tracking-widest transition-colors"
             >
               End Session
             </button>

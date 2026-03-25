@@ -38,10 +38,10 @@ export const CampModePreview = ({
         : 'bg-white border-border text-text-primary hover:border-camp-cobalt cursor-pointer'
     }
     if (idx === correctAnswer) {
-      return 'bg-[#EDFAF4] border-emerald text-text-primary cursor-default ring-2 ring-emerald/30'
+      return 'bg-success-50 border-emerald text-text-primary cursor-default ring-2 ring-emerald/30'
     }
     if (idx === selected && idx !== correctAnswer) {
-      return 'bg-[#FDF0F0] border-destructive/50 text-text-primary cursor-default opacity-80'
+      return 'bg-destructive-50 border-destructive/50 text-text-primary cursor-default opacity-80'
     }
     return 'bg-white border-border text-border opacity-40 cursor-default'
   }
@@ -50,11 +50,11 @@ export const CampModePreview = ({
     if (!isChecked) {
       return selected === idx
         ? 'bg-primary/10 border-primary/30 text-camp-cobalt'
-        : 'bg-[#F8F7F5] border-border text-text-tertiary'
+        : 'bg-surface-light border-border text-text-tertiary'
     }
     if (idx === correctAnswer) return 'bg-emerald border-emerald text-white'
     if (idx === selected && idx !== correctAnswer) return 'bg-destructive border-destructive text-white'
-    return 'bg-[#F8F7F5] border-border text-border'
+    return 'bg-surface-light border-border text-border'
   }
 
   return (
@@ -129,7 +129,7 @@ export const CampModePreview = ({
             </p>
             {codeCitation && (
               <div className="pt-1">
-                <span className="font-mono text-[11px] px-2 py-0.5 rounded-sm bg-[#F5F5F5] border border-border text-text-secondary">
+                <span className="font-mono text-[11px] px-2 py-0.5 rounded-sm bg-muted border border-border text-text-secondary">
                   {codeCitation}
                 </span>
               </div>
