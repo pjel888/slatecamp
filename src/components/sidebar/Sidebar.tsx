@@ -191,15 +191,18 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           {/* Nav groups */}
           {SIDEBAR_GROUPS.map((group, groupIdx) => (
             <div key={group.key}>
-              {/* Group label — visible only when expanded */}
+              {/* Group label — collapses to zero height when sidebar is minimized */}
               <div
-                className="flex items-end mt-2 mb-1.5 text-[8px] font-bold uppercase tracking-[0.08em] text-gray-400"
+                className="flex items-end text-[8px] font-bold uppercase tracking-[0.08em] text-gray-400 overflow-hidden"
                 style={{
-                  paddingLeft: 16, // aligns with icon center at 10px group padding + 6px offset
+                  paddingLeft: 16,
+                  marginTop: expanded ? 8 : 0,
+                  marginBottom: expanded ? 6 : 0,
+                  height: expanded ? 14 : 0,
                   opacity: expanded ? 0.75 : 0,
                   transition: prefersReducedMotion
                     ? undefined
-                    : `opacity ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
+                    : `all ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
                   pointerEvents: 'none',
                   userSelect: 'none',
                 }}
@@ -221,9 +224,19 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
                 ))}
               </div>
 
-              {/* Separator between groups (not after last) */}
+              {/* Separator between groups (not after last, collapses when minimized) */}
               {groupIdx < SIDEBAR_GROUPS.length - 1 && (
-                <div className="mx-[6px] my-2 border-t border-border" />
+                <div
+                  className="mx-[6px] border-t border-border overflow-hidden"
+                  style={{
+                    marginTop: expanded ? 8 : 2,
+                    marginBottom: expanded ? 8 : 2,
+                    opacity: expanded ? 1 : 0,
+                    transition: prefersReducedMotion
+                      ? undefined
+                      : `all ${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`,
+                  }}
+                />
               )}
             </div>
           ))}

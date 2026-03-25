@@ -19,7 +19,7 @@ export const Z_INDEX = {
 // ---------------------------------------------------------------------------
 
 export const SIDEBAR_WIDTH_COLLAPSED = 52
-export const SIDEBAR_WIDTH_EXPANDED = 216
+export const SIDEBAR_WIDTH_EXPANDED = 256
 
 /** Nav item row height: 32px */
 export const NAV_ITEM_HEIGHT = 32
