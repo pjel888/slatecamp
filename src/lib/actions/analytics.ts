@@ -584,8 +584,10 @@ export async function getAnalyticsSummaryMetrics(): Promise<AnalyticsSummaryMetr
   const { data: { user } } = await getUser()
   if (!user) return empty
 
+  const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString()
+
   const [interactionsRes, sessionsRes, statsRes] = await Promise.all([
-    supabase.from('user_interactions').select('is_correct, time_spent_ms').eq('user_id', user.id),
+    supabase.from('user_interactions').select('is_correct, time_spent_ms').eq('user_id', user.id).gte('interaction_timestamp', ninetyDaysAgo),
     supabase
       .from('quiz_sessions')
       .select('completed_at')

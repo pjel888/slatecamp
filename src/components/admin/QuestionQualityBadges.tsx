@@ -1,5 +1,3 @@
-'use client'
-
 export interface QuestionQualityBadgesProps {
   hasRationale: boolean
   hasCitation: boolean

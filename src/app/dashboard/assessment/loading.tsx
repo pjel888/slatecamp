@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import { Card } from '@/components/ui/card'
 
 export default function AssessmentLoading() {
   return (
@@ -8,7 +9,7 @@ export default function AssessmentLoading() {
         <Skeleton className="h-1.5 w-full rounded-full" />
 
         {/* Question card */}
-        <div className="rounded-md border border-border bg-white p-8 space-y-5">
+        <Card className="p-8 space-y-5">
           <Skeleton className="h-3 w-20 mx-auto" />
           <Skeleton className="h-5 w-full" />
           <Skeleton className="h-4 w-5/6 mx-auto" />
@@ -22,7 +23,7 @@ export default function AssessmentLoading() {
               </div>
             ))}
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   )

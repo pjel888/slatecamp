@@ -4,6 +4,7 @@ import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
 import { enrollInTrail } from '@/lib/actions/trails'
 import type { CampTrail, TrailEnrollment } from '@/types/app'
+import { Card } from '@/components/ui/card'
 
 interface TrailDetailEnrollProps {
   trail: CampTrail
@@ -23,7 +24,7 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
 
   if (enrollment && enrollment.status === 'active') {
     return (
-      <div className="rounded-md border border-border bg-white p-4 flex items-center justify-between">
+      <Card className="p-4 flex items-center justify-between">
         <div>
           <p className="text-sm font-medium text-text-primary">
             Day {enrollment.current_day} of {trail.duration_days}
@@ -39,12 +40,12 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
         >
           Continue Trail →
         </button>
-      </div>
+      </Card>
     )
   }
 
   return (
-    <div className="rounded-md border border-border bg-white p-4 flex items-center justify-between">
+    <Card className="p-4 flex items-center justify-between">
       <p className="text-sm text-text-secondary">
         Ready to start? This trail takes {trail.duration_days} days to complete.
       </p>
@@ -56,6 +57,6 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
       >
         {isPending ? 'Starting...' : 'Start This Trail →'}
       </button>
-    </div>
+    </Card>
   )
 }

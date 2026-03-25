@@ -1,6 +1,7 @@
 import { notFound, redirect } from 'next/navigation'
 import Link from 'next/link'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { Card } from '@/components/ui/card'
 import {
   getTrailBySlug,
   getEnrollmentForTrail,
@@ -67,7 +68,7 @@ const DayCompletePage = async ({
         ) : completionData.next_day ? (
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wide text-text-tertiary mb-2">Tomorrow</p>
-            <div className="rounded-md border border-border bg-white p-4">
+            <Card className="p-4">
               <p className="text-sm font-medium text-text-primary">
                 Day {completionData.next_day.day_number} · {completionData.next_day.title}
               </p>
@@ -82,7 +83,7 @@ const DayCompletePage = async ({
                   Back to Dashboard
                 </Link>
               </div>
-            </div>
+            </Card>
           </div>
         ) : (
           <div className="flex items-center gap-3">

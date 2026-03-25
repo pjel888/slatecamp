@@ -13,8 +13,19 @@ interface Props {
   passingAccuracy: number
 }
 
-const CustomDot = (props: any) => {
-  const { cx, cy, payload } = props
+interface CustomDotProps {
+  cx?: number
+  cy?: number
+  payload?: PacingQuadrantPoint
+}
+
+interface CustomTooltipProps {
+  active?: boolean
+  payload?: Array<{ payload: PacingQuadrantPoint }>
+}
+
+const CustomDot = ({ cx, cy, payload }: CustomDotProps) => {
+  if (cx == null || cy == null || !payload) return null
   return (
     <g>
       <circle cx={cx} cy={cy} r={6} fill={payload.color} fillOpacity={0.85} stroke="#fff" strokeWidth={1.5} />
@@ -22,9 +33,9 @@ const CustomDot = (props: any) => {
   )
 }
 
-const CustomTooltip = ({ active, payload }: any) => {
+const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   if (!active || !payload?.length) return null
-  const d = payload[0].payload as PacingQuadrantPoint
+  const d = payload[0].payload
   const secs = Math.round(d.avgTimeMs / 1000)
   return (
     <div className="rounded-md bg-white p-2 text-xs" style={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}>

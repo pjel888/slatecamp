@@ -1,5 +1,3 @@
-'use client'
-
 import { BookOpen, Question, Tag } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'

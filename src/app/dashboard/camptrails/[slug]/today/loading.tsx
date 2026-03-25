@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton'
+import { Card } from '@/components/ui/card'
 
 export default function TrailTodayLoading() {
   return (
@@ -11,12 +12,12 @@ export default function TrailTodayLoading() {
       </div>
       <div className="h-px bg-border" />
       {[1, 2, 3].map((i) => (
-        <div key={i} className="rounded-md border border-border bg-white p-4 space-y-3">
+        <Card key={i} className="p-4 space-y-3">
           <Skeleton className="h-3 w-16" />
           <Skeleton className="h-5 w-56" />
           <Skeleton className="h-3 w-32" />
           <Skeleton className="h-9 w-32 rounded-sm" />
-        </div>
+        </Card>
       ))}
       <div className="h-px bg-border" />
       <Skeleton className="h-16 w-full rounded-md" />

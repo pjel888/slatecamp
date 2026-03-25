@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { CaretDown, CaretRight, Clock, Fire, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import { enrollInTrail } from '@/lib/actions/trails'
 import type { CampTrail, TrailDay, TrailEnrollment } from '@/types/app'
+import { Card } from '@/components/ui/card'
 
 const INTENSITY_COLORS: Record<string, { bg: string; text: string }> = {
   intensive: { bg: 'bg-destructive-50', text: 'text-destructive' },
@@ -89,7 +90,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
       </div>
 
       {/* CTA */}
-      <div className="rounded-md border border-border bg-white p-4">
+      <Card className="p-4">
         {enrollment ? (
           <div className="flex items-center justify-between">
             <div>
@@ -123,7 +124,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
             </button>
           </div>
         )}
-      </div>
+      </Card>
 
       {/* Week-by-week preview */}
       <div className="flex flex-col gap-2">
@@ -139,9 +140,9 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
           )
 
           return (
-            <div
+            <Card
               key={week}
-              className="rounded-md border border-border bg-white overflow-hidden"
+              className="overflow-hidden"
             >
               <button
                 type="button"
@@ -182,7 +183,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
                   ))}
                 </div>
               )}
-            </div>
+            </Card>
           )
         })}
       </div>

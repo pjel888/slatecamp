@@ -133,6 +133,7 @@ export interface QuizSession {
   completed_at: string | null;
   created_at: string;
   updated_at: string;
+  mastery_snapshot_at_start?: Record<string, number> | null;
 }
 
 // Legacy types kept for backward compatibility where needed

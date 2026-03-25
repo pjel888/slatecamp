@@ -11,6 +11,7 @@
 import { useState } from 'react'
 import type { TrailEnrollment } from '@/types/app'
 import { CatchUpView } from '@/components/trails/CatchUpView'
+import { Card } from '@/components/ui/card'
 
 interface MissedDayCardProps {
   enrollment: TrailEnrollment
@@ -27,7 +28,7 @@ const MissedDayCard = ({
 }: MissedDayCardProps) => {
   const [showCatchUp, setShowCatchUp] = useState(false)
   return (
-    <div className="rounded-md border border-border bg-white p-5">
+    <Card className="p-5">
       {/* Headline — where they left off */}
       <p className="text-lg font-semibold text-text-primary">
         You left off at Day {enrollment.current_day}.
@@ -79,7 +80,7 @@ const MissedDayCard = ({
           onSkip={() => setShowCatchUp(false)}
         />
       )}
-    </div>
+    </Card>
   )
 }
 

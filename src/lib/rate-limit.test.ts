@@ -1,3 +1,4 @@
+/// <reference types="bun-types" />
 import { describe, test, expect } from "bun:test"
 import { checkRateLimit } from "./rate-limit"
 

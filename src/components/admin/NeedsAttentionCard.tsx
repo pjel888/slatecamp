@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/ui/card'

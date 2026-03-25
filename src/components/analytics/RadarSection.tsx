@@ -13,7 +13,7 @@ export const RadarSection = async () => {
     subject: d.subject,
     shortLabel: d.subject.split(' ').slice(0, 2).join(' '),
     mastery: d.score,
-    questionsAnswered: d.score > 0 ? 1 : 0,
+    questionsAnswered: d.score,
     topics: [],
   }))
 

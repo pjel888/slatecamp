@@ -4,6 +4,7 @@ import { useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { ArrowRight, Clock, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import type { DayCompletionData } from '@/types/app'
+import { Card } from '@/components/ui/card'
 
 /* ------------------------------------------------------------------ */
 /*  Node mastery color mapping                                         */
@@ -73,7 +74,7 @@ export const DayCompletionMoment = ({
       </div>
 
       {/* Mastery scenario */}
-      <div className="rounded-md border border-border bg-white p-4">
+      <Card className="p-4">
         {scenario === 'improved' && (
           <>
             <p className="text-sm text-text-secondary mb-3">
@@ -138,7 +139,7 @@ export const DayCompletionMoment = ({
             when you&apos;re learning something genuinely hard.
           </p>
         )}
-      </div>
+      </Card>
 
       {/* Nodes updated */}
       {nodes_updated.length > 0 && (
@@ -170,7 +171,7 @@ export const DayCompletionMoment = ({
 
       {/* Tomorrow preview */}
       {next_day && (
-        <div className="rounded-md border border-border bg-surface-light p-4">
+        <Card className="p-4 bg-surface-light">
           <span className="font-mono text-[11px] uppercase tracking-wider text-text-tertiary block mb-2">
             Tomorrow
           </span>
@@ -195,7 +196,7 @@ export const DayCompletionMoment = ({
             Start Day {next_day.day_number}
             <ArrowRight size={14} weight="bold" />
           </button>
-        </div>
+        </Card>
       )}
 
       {/* Back to Dashboard */}

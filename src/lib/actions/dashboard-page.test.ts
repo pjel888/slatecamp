@@ -1,3 +1,4 @@
+/// <reference types="bun-types" />
 import { expect, test, describe, mock, beforeEach } from "bun:test"
 
 // ── Mock @/lib/supabase/server ────────────────────────────────────────────────

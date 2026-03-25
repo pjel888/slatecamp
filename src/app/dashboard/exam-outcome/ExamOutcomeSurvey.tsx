@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { submitExamOutcome } from './actions'
+import { Card } from '@/components/ui/card'
 
 type ExamResult = 'passed' | 'failed' | 'did_not_take'
 
@@ -46,7 +47,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
   if (step === 'done' && result === 'passed') {
     return (
       <div className="space-y-4">
-        <div className="rounded-md border border-emerald/30 bg-emerald-50 p-6 text-center">
+        <Card className="p-6 text-center border-emerald/30 bg-emerald-50">
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald/10">
             <svg className="h-6 w-6 text-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -59,9 +60,9 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             Your SlateCamp heatmap is now your professional reference library.
             The building codes you studied are the building codes you&apos;ll practice with.
           </p>
-        </div>
+        </Card>
 
-        <div className="rounded-md border border-border bg-white p-4 space-y-3">
+        <Card className="p-4 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             What&apos;s next
           </p>
@@ -78,7 +79,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             Someone reviewing right now is at 38% wondering if they&apos;ll make it.
             Your journey is their map.
           </p>
-        </div>
+        </Card>
       </div>
     )
   }
@@ -86,7 +87,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
   if (step === 'done' && result === 'failed') {
     return (
       <div className="space-y-4">
-        <div className="rounded-md border border-border bg-white p-6 text-center">
+        <Card className="p-6 text-center">
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
             <svg className="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -99,9 +100,9 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             Your heatmap from this cycle is saved. Your Camp Trail picks up
             exactly where you left off &mdash; with additional data from this cycle.
           </p>
-        </div>
+        </Card>
 
-        <div className="rounded-md border border-border bg-white p-4 space-y-3">
+        <Card className="p-4 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             Your data is ready
           </p>
@@ -117,14 +118,14 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
           <p className="text-[11px] text-muted-foreground leading-relaxed">
             More data, better strategy. The next exam window opens registration soon.
           </p>
-        </div>
+        </Card>
       </div>
     )
   }
 
   if (step === 'done') {
     return (
-      <div className="rounded-md border border-border bg-white p-6 text-center">
+      <Card className="p-6 text-center">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-50">
           <svg className="h-6 w-6 text-emerald" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -136,13 +137,13 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
         <p className="mt-1.5 text-sm text-muted-foreground">
           Your result helps us improve SlateCamp for future candidates.
         </p>
-      </div>
+      </Card>
     )
   }
 
   if (step === 'score') {
     return (
-      <div className="rounded-md border border-border bg-white p-6 space-y-4">
+      <Card className="p-6 space-y-4">
         <div>
           <label htmlFor="score" className="block text-sm font-medium text-foreground mb-1.5">
             What was your reported score?
@@ -184,13 +185,13 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             Skip
           </button>
         </div>
-      </div>
+      </Card>
     )
   }
 
   // Step 1: Result selection
   return (
-    <div className="rounded-md border border-border bg-white p-6 space-y-4">
+    <Card className="p-6 space-y-4">
       <p className="text-sm font-medium text-foreground">
         Did you take the {examBatch} ALE?
       </p>
@@ -223,7 +224,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
       {submitting && (
         <p className="text-center text-sm text-muted-foreground">Saving...</p>
       )}
-    </div>
+    </Card>
   )
 }
 
