@@ -23,6 +23,8 @@ const STATIC_PAGES: { title: string; href: string; group: string; keywords: stri
   { title: 'Database Browser', href: '/developer/tools/db', group: 'Tools', keywords: 'tables rls rows browse' },
   { title: 'Audit Logs', href: '/developer/tools/logs', group: 'Tools', keywords: 'events actions history' },
   { title: 'Test Data', href: '/developer/tools/test-data', group: 'Tools', keywords: 'mock generator sessions seed' },
+  { title: 'Content Blocks', href: '/developer/design-system/content-blocks', group: 'Portal', keywords: 'pedagogical mdx blocks wiki articles' },
+  { title: 'Interactive Widgets', href: '/developer/design-system/widgets', group: 'Portal', keywords: 'per-law interactive visualizers' },
 ]
 
 /* ------------------------------------------------------------------ */
