@@ -1,35 +1,50 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # shared
 
 ## Purpose
 
-Cross-cutting reusable components used throughout the app: theme provider, navigation structure (navbar, sidebar with rail+overlay pattern), header, progress tracking, info tooltips, loading states, error boundaries. Most are client components; some wrap server layouts.
+Cross-cutting reusable components used throughout the app: theme provider, navigation structure (navbar, sidebar with rail+overlay pattern), header, progress tracking, info tooltips, loading states, error boundaries, data tables, section headers, stat cards, score displays, taxonomy pickers, and breadcrumbs. Most are client components; some are server-renderable.
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
-| `ThemeProvider.tsx` | Next-themes provider wrapper: light/dark mode with system detection. Usually in root layout. |
-| `ThemeToggle.tsx` | Sun/Moon icon button to switch theme. Calls `setTheme()` from useTheme hook. |
-| `Navbar.tsx` | Top navigation: logo, nav items (Dashboard, Wiki, Quiz, etc.), theme toggle, user menu. Rail+sheet pattern for mobile. |
-| `Sidebar.tsx` | Main sidebar: user avatar, tier badge, navigation links, collapsible via Sheet on mobile. Links to main routes (ROUTES constants). |
+| `ThemeProvider.tsx` | Next-themes provider wrapper: light/dark mode with system detection. Usually in root layout. `'use client'` |
+| `ThemeToggle.tsx` | Sun/Moon icon button to switch theme. Calls `setTheme()` from useTheme hook. `'use client'` |
+| `Navbar.tsx` | Top navigation: logo, nav items (Dashboard, Wiki, Quiz, etc.), theme toggle, user menu. `'use client'` |
 | `DashboardHeader.tsx` | Page header: breadcrumb or page title, optional action buttons. Reused across dashboard pages. |
-| `NavigationProgress.tsx` | Progress bar: top-of-page loading indicator. Triggered on route changes via router events. |
-| `NotificationBell.tsx` | Bell icon: click opens notification popover. Shows unread count badge. Fetches from notifications table. |
-| `LogoutButton.tsx` | Logout action: calls Supabase signOut, redirects to /login. Integrated into user menu. |
-| `Omnibar.tsx` | Command palette: global search input (topics, questions, articles). Keyboard shortcut (Cmd+K). |
-| `QuickActionsBar.tsx` | Floating action bar: shortcuts to common tasks (start quiz, jump to 3D Lab, etc.). |
-| `InfoTooltip.tsx` | Help icon + tooltip: explains UI concepts (e.g., "Readiness Score is your composite mastery %ile"). Reusable across pages. |
-| `StandardInfoPopover.tsx` | Info icon + popover (wider/taller than tooltip): detailed explanations with links. |
+| `NavigationProgress.tsx` | Progress bar: top-of-page loading indicator. Triggered on route changes. `'use client'` |
+| `LogoutButton.tsx` | Logout action: calls Supabase signOut, redirects to /login. `'use client'` |
+| `Omnibar.tsx` | Command palette: global search input (topics, questions, articles). Keyboard shortcut (Cmd+K). `'use client'` |
+| `QuickActionsBar.tsx` | Floating action bar: shortcuts to common tasks. `'use client'` |
+| `InfoTooltip.tsx` | Help icon + tooltip: explains UI concepts. Reusable across pages. |
+| `StandardInfoPopover.tsx` | Info icon + popover (wider/taller than tooltip): detailed explanations with links. `'use client'` |
 | `TierBadge.tsx` | User tier badge: Free/Pro/Enterprise. Shows next tier benefits on hover. |
-| `TransitionLink.tsx` | Next Link wrapper with page transition animation (fade out → navigate → fade in). Respects prefers-reduced-motion. |
+| `TransitionLink.tsx` | Next Link wrapper with page transition animation. Respects prefers-reduced-motion. `'use client'` |
 | `DashboardPageSkeleton.tsx` | Loading skeleton for full pages: header placeholder + grid of card skeletons. |
+| `data-table.tsx` | Generic sortable, searchable, paginated data table. Supports column definitions, selection (Checkbox), search, sorting, pagination. Exports `DataTable` and `Column` type. `'use client'` |
+| `section-header.tsx` | Standardized section header with eyebrow, title, subtitle, action slot. Three levels: page, section, card. |
+| `stat-card.tsx` | Metric card with eyebrow label, value, trend indicator (up/down/flat), optional link. |
+| `score-display.tsx` | Score rendering utilities. Exports `getScoreColorHex()` for readiness score coloring. `'use client'` |
+| `taxonomy-picker.tsx` | Taxonomy node picker with tree navigation. `'use client'` |
+| `taxonomy-tree.tsx` | Taxonomy tree rendering component. `'use client'` |
+| `legal-citation-badge.tsx` | Citation badge linking to legal/code references. `'use client'` |
+| `breadcrumb.tsx` | Breadcrumb navigation component. |
+| `page-header.tsx` | Alternative page header component. |
+| `sidebar-nav.tsx` | Sidebar navigation for settings/sub-pages. `'use client'` |
+| `content-sidebar.tsx` | Content area sidebar for secondary navigation. `'use client'` |
+| `action-card.tsx` | Action card with title, description, and CTA button. |
+| `app-drawer.tsx` | Application-wide drawer component. `'use client'` |
+| `empty-state.tsx` | Empty state placeholder with icon, message, and optional action. |
+| `floating-panel.tsx` | Floating panel for contextual content. `'use client'` |
+| `question-card.tsx` | Question display card for lists and previews. |
+| `question-dot-navigator.tsx` | Dot-based question navigator for quiz progress. `'use client'` |
 
 ## Subdirectories
 
-None.
+None. All shared components are flat in `src/components/shared/`.
 
 ## For AI Agents
 
@@ -41,89 +56,50 @@ None.
 
 3. **useTheme hook.** Access theme state via `const { theme, setTheme } = useTheme()`. Only available inside ThemeProvider boundary.
 
-4. **Supabase auth context.** Navbar and LogoutButton use `useAuth()` or similar auth context hook (check @/lib/context/ for exact hook name). This provides user, session, signOut methods.
+4. **DataTable reuse.** The `data-table.tsx` component is a generic table used by CEO TeamTable, admin audit logs, and other tabular views. Define columns via `Column<T>[]` interface. Supports sorting, search, pagination, and row selection.
 
-5. **Router integration.** NavigationProgress hooks into Next.js router events (`routeChangeStart`, `routeChangeComplete`). Do not add manual route-based logic to other components.
+5. **SectionHeader levels.** Use `level="page"` for top-level page headers, `level="section"` for content sections, `level="card"` for card-internal headers. Each level has appropriate typography sizing.
 
-6. **No route logic inside shared components.** All navigation logic lives in ROUTES constants (@/lib/constants/routes.ts). Sidebar/Navbar reference these constants only.
+6. **Score display.** `score-display.tsx` exports `getScoreColorHex()` which is the canonical source for readiness score color thresholds. It is re-exported by `@/components/graphics/tokens.ts` for graphic contexts.
+
+7. **No route logic inside shared components.** All navigation logic lives in ROUTES constants (@/lib/constants/routes.ts). Shared components reference these constants only.
 
 ### Common Patterns
 
-**Theme toggle in layout:**
+**Data table usage:**
 ```tsx
-import { ThemeProvider } from '@/components/shared/ThemeProvider'
-import { Navbar } from '@/components/shared/Navbar'
+import { DataTable, type Column } from '@/components/shared/data-table'
 
-export const RootLayout = ({ children }) => (
-  <ThemeProvider>
-    <Navbar />
-    {children}
-  </ThemeProvider>
-)
+const columns: Column<MyRow>[] = [
+  { key: 'name', header: 'Name', sortable: true },
+  { key: 'status', header: 'Status', type: 'badge' },
+  { key: 'date', header: 'Date', type: 'date', sortable: true },
+]
+
+<DataTable columns={columns} data={rows} keyField="id" />
 ```
 
-**Sidebar with sheet on mobile:**
+**Section header usage:**
 ```tsx
-// Sidebar.tsx uses Sheet internally:
-const [isOpen, setIsOpen] = useState(false)
-return (
-  <>
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild>
-        <Button variant="ghost" size="icon">
-          <SidebarSimple />
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left">
-        {/* nav items */}
-      </SheetContent>
-    </Sheet>
-  </>
-)
+import { SectionHeader } from '@/components/shared/section-header'
+
+<SectionHeader
+  eyebrow="Analytics"
+  title="Readiness Trajectory"
+  level="section"
+  action={<Button size="sm">Export</Button>}
+/>
 ```
 
-**Info tooltip for readiness score:**
+**Stat card usage:**
 ```tsx
-import { InfoTooltip } from '@/components/shared/InfoTooltip'
+import { StatCard } from '@/components/shared/stat-card'
 
-<div className="flex items-center gap-1">
-  <span className="text-sm font-bold">Readiness: 72%</span>
-  <InfoTooltip text="Your composite mastery score based on quiz performance and spaced repetition." />
-</div>
-```
-
-**Conditional navigation based on tier:**
-```tsx
-import { TierBadge } from '@/components/shared/TierBadge'
-
-const { user } = useAuth()
-return (
-  <div>
-    <TierBadge tier={user?.subscription_tier} />
-    {user?.subscription_tier !== 'free' && (
-      <Link href={ROUTES.THREE_D_LAB}>3D Lab</Link>
-    )}
-  </div>
-)
-```
-
-**Page transition on navigation:**
-```tsx
-import { TransitionLink } from '@/components/shared/TransitionLink'
-
-<TransitionLink href={ROUTES.QUIZ}>
-  <Button>Start Quiz</Button>
-</TransitionLink>
-```
-
-**Dashboard page skeleton while loading:**
-```tsx
-import { DashboardPageSkeleton } from '@/components/shared/DashboardPageSkeleton'
-
-export const MyPage = async () => {
-  const data = await fetchData() // May take time
-  return <DashboardPageSkeleton />
-}
+<StatCard
+  eyebrow="Questions Answered"
+  value={342}
+  trend={{ direction: 'up', label: '+12 this week' }}
+/>
 ```
 
 ## Dependencies
@@ -132,9 +108,9 @@ export const MyPage = async () => {
 
 | Module | Purpose |
 |--------|---------|
-| `@/lib/constants/routes` | ROUTES object: all route strings (DASHBOARD, QUIZ, THREE_D_LAB, etc.) |
+| `@/lib/constants/routes` | ROUTES object: all route strings |
 | `@/lib/context/*` | Auth context hooks, active session context |
-| `@/components/ui/*` | Button, Sheet, Dialog, Tooltip, Badge, etc. |
+| `@/components/ui/*` | Button, Sheet, Dialog, Tooltip, Badge, Checkbox, Input, Skeleton |
 | `@/lib/utils` | cn() for conditional styling |
 
 ### External
@@ -142,9 +118,10 @@ export const MyPage = async () => {
 | Package | Usage | Version |
 |---------|-------|---------|
 | **next-themes** | ThemeProvider, useTheme hook | ^0.4.6 |
-| **@supabase/supabase-js** | Auth (signOut) via client in LogoutButton | ^2.98.0 |
 | **next/navigation** | useRouter, usePathname for routing | 16.1.6 |
-| **react** | Hooks: useState, useEffect | ^19.2.4 |
+| **next/link** | Client-side navigation | 16.1.6 |
+| **react** | Hooks: useState, useEffect, useMemo | ^19.2.4 |
+| **lucide-react** | Icons: TrendingUp, TrendingDown, Minus, ChevronLeft, ChevronRight, ArrowUpDown | ^0.577.0 |
 | **@phosphor-icons/react** | Icons: Sun, Moon, Bell, SidebarSimple, etc. | ^1.4.14 |
 | **framer-motion** | Page transition animations (TransitionLink) | ^12.35.2 |
 

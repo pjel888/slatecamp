@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # components
 
@@ -15,28 +15,31 @@ All components are server-first (default `'use client'` only where interactivity
 |-----------|---------|---|
 | `3d/` | Base 3D components | Three.js/R3F primitives, scene setup |
 | `3d-lab/` | 3D Lab workspace (26 files) | Spatial learning: LabViewer, LabCanvas, hotspots, exploded views, cross-sections, violation visualizers |
-| `admin/` | Admin panel UI (11 files) | Question editors, taxonomy management, content curation |
-| `analytics/` | Analytics dashboard (17 files) | recharts-based: charts, trend visualizations, performance metrics |
+| `admin/` | Admin panel UI (21 files + 3 subdirs) | MDX editor, question editors, asset management, SME review, unified content editor, preview modes, settings |
+| `analytics/` | Analytics dashboard (18 files) | Recharts-based: readiness trajectory, memory health, pacing quadrant, stamina curves, timeline heatmaps |
 | `assessment/` | Assessment/exam UI (4 files) | Exam state, progress tracking, result rendering |
 | `auth/` | Authentication UI (3 files) | Login/register forms, credential input |
-| `dashboard/` | Main dashboard (58 files) | Largest set: ReadinessScore, TaxonomyHeatmap, PacingGauge, session builders, activity feeds |
-| `dev/` | Developer tools (8 files) | Dev console, DemoShell, debug panels |
-| `developer/` | Developer documentation (1 file) | API/SDK reference |
-| `graphics/` | Graphic elements (3 files + subdirs) | Icons, SVG utilities, NoiseFilter |
+| `ceo/` | CEO dashboard (13 files + skeletons/) | Revenue charts, runway gauge, team table, churn risk, cohort retention, financial ledger |
+| `dashboard/` | Main dashboard (28 files + heatmap/, results/) | ReadinessScore, TaxonomyHeatmap, session builders, mode cards, activity feeds, quiz renderer |
+| `dev/` | Developer tools (8 files) | Dev toolbar, demo shell, feature flag board, impersonation panel, system info |
+| `developer/` | Developer portal UI (8 files) | Component page layout, status banner, status KPI, uptime bar, breadcrumbs |
+| `graphics/` | Graphic system (4 files + icons/, ui/) | Design tokens, SCIcon wrapper, icon map, gradients, patterns, noise filter |
 | `interactive-illustrations/` | Interactive 2D learning (2D/ subdir) | SVG-based teaching illustrations, animations |
 | `landing/` | Landing page (2 files) | Marketing hero, CTAs |
 | `layouts/` | Layout wrappers (1 file) | Page layout structure |
 | `marketing/` | Marketing pages (20 files) | Pricing, features, testimonials, value props |
 | `motion/` | Framer-motion animations (2 files) | Reusable animation components |
-| `notes/` | Note-taking (13 files) | TipTap editor integration, note cards, formatting toolbar |
-| `quiz/` | Quiz/testing (16 files) | Question rendering, answer input, rationale drawers, timer, confidence toggle |
+| `notes/` | Note-taking (9 files) | TipTap editor, note shell, navigator, quick capture, templates |
+| `portal/` | Portal shell (9 files) | Shared layout for admin/CEO/developer portals: topbar, sidebar, command palette, code blocks |
+| `quiz/` | Quiz primitives (17 files) | Question rendering, answer input, rationale drawers, timer, confidence toggle, save indicator |
 | `settings/` | User settings (1 file) | Account/preference configuration |
-| `shared/` | Reusable utilities (15 files) | ThemeProvider, NavigationProgress, modals, header, navbar, sidebar |
-| `sidebar/` | Sidebar navigation (14 files) | Rail+overlay pattern (Supabase/GitHub style), responsive |
+| `shared/` | Reusable utilities (31 files) | ThemeProvider, data-table, section-header, stat-card, taxonomy-picker, breadcrumb, empty-state, score-display |
+| `sidebar/` | Sidebar navigation (13 files) | Unified v2 sidebar (52px/216px), mobile drawer, provider, constants |
+| `testing/` | Testing engine (42 files, 4 subdirs) | Full testing lifecycle: setup, session, debrief, hub. Mode-specific behaviors, score bands |
 | `tools/` | Standalone tools (3 subdirs) | Calculator UI, physics tools |
-| `trails/` | Camp Trails learning paths (3 files) | Trail visualization, progress tracking |
-| `ui/` | shadcn/ui primitives (30 files) | button, dialog, card, tooltip, input, etc. — base UI system |
-| `wiki/` | Wiki/knowledge base (44 files) | Article viewer, search, tag widgets, citation badges |
+| `trails/` | Camp Trails (22 files) | Trail library, daily views, phase maps, catch-up, score trajectory, recommendations |
+| `ui/` | shadcn/ui primitives (43 files) | button, dialog, card, tooltip, input, checkbox, badge, tabs, sheet, command, etc. |
+| `wiki/` | Wiki/knowledge base (54 files + widgets/) | Article viewer, MDX rendering, sidebar, TOC, callouts, learning aids, bp344/dsgn013 widgets |
 
 ## For AI Agents
 
@@ -116,10 +119,10 @@ const getReadinessColorClass = (value: number): string => {
 
 | Category | Modules |
 |----------|---------|
-| **Stores** | `@/stores/useLabStore`, `useQuizStore`, `useDashboardStore` (Zustand) |
-| **Types** | `@/types/3d-lab`, `@/types/quiz`, `@/types/dashboard` |
+| **Stores** | `@/stores/useLabStore`, `useQuizStore`, `useDashboardStore`, `dev-store` (Zustand) |
+| **Types** | `@/types/3d-lab`, `@/types/quiz`, `@/types/dashboard`, `@/types/testing`, `@/types/ceo`, `@/types/developer`, `@/types/app` |
 | **Utils** | `@/lib/utils` (cn), `@/lib/color-utils`, `@/lib/format-utils` |
-| **Server Actions** | `@/app/actions/*` (auth, quiz, dashboard fetchers) |
+| **Server Actions** | `@/app/actions/*`, `@/lib/actions/*` (auth, quiz, dashboard, testing, ceo fetchers) |
 | **UI Primitives** | `@/components/ui/*` (shadcn/ui base) |
 
 ### External
@@ -139,7 +142,8 @@ const getReadinessColorClass = (value: number): string => {
 | **zustand** | State management | ^5.0.12 |
 | **tailwindcss** | CSS framework (v4 with CSS variables) | ^4.2.1 |
 | **@base-ui/react** | Unstyled UI headless components | ^1.2.0 |
-| **lucide-react** | Icon library | ^0.577.0 |
+| **lucide-react** | Icon library (portals) | ^0.577.0 |
+| **@phosphor-icons/react** | Icon library (main app, via SCIcon) | ^1.4.14 |
 | **next-themes** | Theme provider (light/dark) | ^0.4.6 |
 | **@radix-ui/react-toast** | Toast notifications | ^1.2.15 |
 | **@anthropic-ai/sdk** | Claude AI integration (AI Tutor) | ^0.78.0 |
@@ -147,6 +151,7 @@ const getReadinessColorClass = (value: number): string => {
 | **katex** | LaTeX math rendering | ^0.16.37 |
 | **dompurify** | HTML sanitization | ^3.3.3 |
 | **papaparse** | CSV parsing | ^5.5.3 |
+| **fuse.js** | Fuzzy search (CommandPalette) | latest |
 
 ### Styling Rules (Enforced)
 

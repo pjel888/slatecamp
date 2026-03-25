@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # notes
 
@@ -11,20 +11,18 @@ Note-taking system using TipTap rich text editor. Provides markdown-like editing
 
 | File | Description |
 |------|-------------|
-| `NotesEditor.tsx` | TipTap editor for individual note with formatting toolbar (bold, italic, strikethrough, lists) |
-| `NotesEditor.tsx` (alternative) | Advanced TipTap editor with bubble menu, highlights, images, task lists, headings, font sizes |
-| `NoteEditor.tsx` | Wrapper showing single note with auto-save indicator and edit controls |
-| `NotesShell.tsx` | Main shell/layout for notes workspace (sidebar + editor) |
-| `NotesSidebar.tsx` | Right sidebar with notes list, search, folder navigation, new note creation |
-| `NotesList.tsx` | Renderable list of notes (for sidebar or standalone) |
-| `NotesNavigator.tsx` | Navigation component for moving between notes |
-| `NotesLayoutClient.tsx` | Client-side layout orchestrator for notes section |
-| `NoteEditorPage.tsx` | Page wrapper for individual note editor view |
-| `NewNoteButton.tsx` | Button to create new note |
-| `TemplatePicker.tsx` | Template selection modal for new notes |
-| `QuickCaptureDrawer.tsx` | Drawer for quick note capture (side-panel) |
-| `QuickNotePopup.tsx` | Popup for quick note creation (modal) |
-| `ContextBadge.tsx` | Badge showing note context (source: Quiz, Wiki, etc.) |
+| `NotesEditor.tsx` | TipTap editor with formatting toolbar (bold, italic, strikethrough, lists), bubble menu, highlights, images, task lists, headings, font sizes. `'use client'` |
+| `NoteEditor.tsx` | Wrapper showing single note with auto-save indicator and edit controls. `'use client'` |
+| `NotesShell.tsx` | Main shell/layout for notes workspace (sidebar + editor). `'use client'` |
+| `NotesList.tsx` | Renderable list of notes (for sidebar or standalone). `'use client'` |
+| `NotesNavigator.tsx` | Navigation component for moving between notes. `'use client'` |
+| `QuickCaptureDrawer.tsx` | Drawer for quick note capture (side-panel). `'use client'` |
+| `TemplatePicker.tsx` | Template selection modal for new notes. `'use client'` |
+| `ContextBadge.tsx` | Badge showing note context source (Quiz, Wiki, etc.). |
+
+## Subdirectories
+
+None. All notes components are flat in `src/components/notes/`.
 
 ## For AI Agents
 
@@ -54,4 +52,4 @@ Note-taking system using TipTap rich text editor. Provides markdown-like editing
 - `date-fns` - Date formatting
 - UI components from `@/components/ui/` - Sheet, Button, Input
 
-<!-- MANUAL: Update image upload domain/bucket when Supabase Storage is configured. Ensure fallback to base64 works if upload fails. Monitor auto-save debounce — adjust if latency issues arise. -->
+<!-- MANUAL: Update image upload domain/bucket when Supabase Storage is configured. Ensure fallback to base64 works if upload fails. Monitor auto-save debounce -- adjust if latency issues arise. -->

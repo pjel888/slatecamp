@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # analytics
 
@@ -12,32 +12,32 @@ Analytics dashboard visualizations powered by Recharts. Displays mastery traject
 | File | Description |
 |------|-------------|
 | `ReadinessSection.tsx` | Server component: fetches readiness trajectory + score, renders ReadinessTrajectory chart. |
-| `ReadinessTrajectory.tsx` | Recharts ComposedChart: area (passing threshold) + line (user trajectory). Shows current %ile, delta, trend icon. |
+| `ReadinessTrajectory.tsx` | Recharts ComposedChart: area (passing threshold) + line (user trajectory). Shows current %ile, delta, trend icon. `'use client'` |
 | `SummarySection.tsx` | Cards: total practice time, questions answered, topics covered, current readiness %. |
 | `AnalyticsSummaryBar.tsx` | Horizontal summary bar: stats widgets with icons and values. Compact version of SummarySection. |
-| `RadarSection.tsx` | Recharts Radar chart: discipline-level mastery on 6-point scale (0–100). |
-| `TimelineHeatmap.tsx` | Calendar-grid heatmap: day → activity intensity (color gradient from none→high). Shows 12-month window. |
-| `TimelineHeatmapSection.tsx` | Container for TimelineHeatmap. Includes title, legend (activity scale), metadata. |
-| `StaminaCurve.tsx` | Line chart: study session duration over time. Shows fatigue patterns (drop-off near end of practice). |
-| `StaminaSection.tsx` | Container: StaminaCurve + text interpretation (stamina insights). |
-| `MemoryHealthMap.tsx` | Grid of topic cards: status badge (strong, review, fading, critical) with color-coded backgrounds. Sorted by urgency. |
+| `RadarSection.tsx` | Recharts Radar chart: discipline-level mastery on 6-point scale (0-100). `'use client'` |
+| `TimelineHeatmap.tsx` | Calendar-grid heatmap: day to activity intensity (color gradient). Shows 12-month window. `'use client'` |
+| `TimelineHeatmapSection.tsx` | Container for TimelineHeatmap with title, legend, metadata. |
+| `StaminaCurve.tsx` | Line chart: study session duration over time. Shows fatigue patterns. `'use client'` |
+| `StaminaSection.tsx` | Container: StaminaCurve + text interpretation. |
+| `MemoryHealthMap.tsx` | Grid of topic cards: status badge (strong, review, fading, critical) with color-coded backgrounds. `'use client'` |
 | `MemorySection.tsx` | Container for MemoryHealthMap + description. |
-| `PacingQuadrant.tsx` | 2x2 quadrant: speed (x-axis) vs. accuracy (y-axis). Topics plotted as dots. Target zone highlighted. |
+| `PacingQuadrant.tsx` | 2x2 quadrant: speed (x-axis) vs. accuracy (y-axis). Topics plotted as dots. `'use client'` |
 | `PacingQuadrantSection.tsx` | Container: PacingQuadrant + legend explaining zones. |
 | `PacingInsights.tsx` | Text analysis: "You are rushing" or "You are overthinking" based on quadrant placement. |
 | `PacingInsightsSection.tsx` | Container: PacingInsights text + optional recommendations. |
-| `ChartSkeleton.tsx` | Loading skeleton for chart placeholders. Matches card dimensions. |
-| `ChartCoachingAnnotation.tsx` | Overlay label on charts: "You're making progress" or "Focus on [topic]" based on data. |
+| `ChartSkeleton.tsx` | Loading skeleton for chart placeholders. |
+| `ChartCoachingAnnotation.tsx` | Overlay label on charts: contextual coaching messages based on data. |
 
 ## Subdirectories
 
-None.
+None. All analytics components are flat in `src/components/analytics/`.
 
 ## For AI Agents
 
 ### Working In This Directory
 
-1. **Server vs. Client split.** `*Section.tsx` files are server components (fetch + compose). `*Trajectory.tsx`, `*Heatmap.tsx`, `*Curve.tsx` are client components (`'use client'`) that render charts and handle interactions.
+1. **Server vs. Client split.** `*Section.tsx` files are server components (fetch + compose). `*Trajectory.tsx`, `*Heatmap.tsx`, `*Curve.tsx`, `*Quadrant.tsx` are client components (`'use client'`) that render charts and handle interactions.
 
 2. **Recharts integration.**
    - Use `ResponsiveContainer` to make charts responsive (width: 100%).
@@ -90,15 +90,6 @@ const STATUS_STYLES: Record<MemoryHealthItem['status'], string> = {
   review: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
   fading: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
   critical: 'bg-[#FDF0F0] text-[#D64545] border-[#D64545]/20',
-}
-```
-
-**Conditional coaching message:**
-```tsx
-const getInsight = (speed: number, accuracy: number): string => {
-  if (speed > 75 && accuracy < 60) return 'You\'re rushing — slow down and focus.'
-  if (speed < 25) return 'Take your time, but don\'t overthink.'
-  return 'Good balance between speed and accuracy.'
 }
 ```
 

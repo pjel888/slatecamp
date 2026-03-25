@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # lib
 
@@ -26,7 +26,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 
 | Directory | Purpose |
 |-----------|---------|
-| `actions/` | **Server Actions only.** 42+ files handling ALL data mutations—quiz creation, session updates, readiness recalc, admin ops. Never access DB from components; always route through actions. |
+| `actions/` | **Server Actions only.** 42 root files + admin/ (12 files), ceo/ (3 files), dev/ (2 files) handling ALL data mutations. Never access DB from components; always route through actions. |
 | `admin/` | Admin-specific logic: role checks, permission gates, admin profile retrieval, feature flags. |
 | `ai/` | AI contextual tutor integration (Anthropic API). Temperature 0.0. Mandatory citation badges. Prompts and provider abstraction. |
 | `audio/` | Audio playback utilities for feedback sounds and ambient cues. |
@@ -41,18 +41,19 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 | `import/` | Data import utilities: CSV parsing, question import schema, validation. |
 | `notes/` | Note system logic: image uploads, note persistence, attachments. |
 | `outcomes/` | Exam outcome predictions: scoring models, pass/fail estimation. |
-| `payments/` | Payment processing: subscription lifecycle, billing events. |
-| `payrex/` | PayRex payment gateway integration. |
+| `payments/` | Payment provider abstraction: routes checkout to Stripe or PayRex based on `PAYMENT_PROVIDER` env var. |
+| `payrex/` | PayRex payment gateway config: singleton client, PHP plans (centavos), GCash/Maya/QRPH support. |
 | `paywall/` | Paywall and access control: daily cap enforcement, score reveal gates, feature paywalls. |
 | `proof-simulation/` | Full exam simulation logic: full-length test mode, timer, review rules. |
 | `readiness/` | Readiness score details: velocity tracking, churn detection, threshold logic. |
 | `signals/` | User learning signals: learning velocity, struggle indicators, mastery signals. |
+| `queries/` | Read-only query functions for server components (NOT server actions). Trail queries + ceo/ subdir for CEO portal reads. |
 | `srs/` | **Spaced Repetition System.** 7 files: IRT 2-parameter logistic model, SM2 algorithm, retention curves, review queue scheduling. Core mastery algorithm. |
-| `stripe/` | Stripe payment gateway integration. |
+| `stripe/` | Stripe payment gateway config: singleton client, PHP plans, price IDs from env vars. |
 | `supabase/` | Supabase client and utilities: browser client, server client, middleware, admin client, type definitions, error formatting. |
 | `utils/` | General utilities: text processing, constants, helper functions, wiki utilities. |
 | `validations/` | Zod validation schemas: request body validation, form input schemas. |
-| `wiki/` | Wiki content processing: wiki queries, formatting, search. |
+| `wiki/` | Wiki article lifecycle: CRUD with SME review workflow (draft -> review -> approved -> published). |
 | `workflow/` | Workflow and pipeline logic: content orchestration, async processing. |
 | `__tests__/` | Unit tests and integration tests. |
 
@@ -288,6 +289,6 @@ export const createQuiz = async (input: unknown) => {
 
 ---
 
-**Last Updated:** 2026-03-24
+**Last Updated:** 2026-03-25
 
 **For questions or updates to this guide, consult `.claude/agents/` and `.claude/docs/` in the repository root.**

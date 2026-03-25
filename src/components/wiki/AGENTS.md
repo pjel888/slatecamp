@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # wiki
 
@@ -12,73 +12,93 @@ Knowledge base and reference system for SlateCamp. Renders structured article co
 | File | Description |
 |------|-------------|
 | `WikiArticle.tsx` | Main article renderer using MDXRemote. Composes heading navigation, MDX components (callouts, tables, formulas, accordions, tabs, widgets), elaborative interrogation, mistake lists, inline quiz. |
-| `WikiLayoutClient.tsx` | Client-side layout shell. Wraps article content, manages mobile nav drawer (left sidebar), responds to viewport changes. |
-| `WikiContentShell.tsx` | Wrapper for article body. Manages scroll context, reading progress tracking, TOC sticky positioning. |
 | `WikiLayoutContent.tsx` | Inner content container. Applies typography, spacing, and responsive widths for readability. |
+| `WikiContentShell.tsx` | Wrapper for article body. Manages scroll context, reading progress tracking, TOC sticky positioning. |
 | `WikiHeader.tsx` | Top navigation bar with discipline/article breadcrumb, mobile menu toggle, search, settings. |
-| `WikiHeaderClient.tsx` | Client-side header logic (mobile detection, drawer state). |
+| `WikiHeaderClient.tsx` | Client-side header logic (mobile detection, drawer state). `'use client'` |
 | `WikiArticleHeader.tsx` | Article title, discipline context, publication/update metadata, action buttons (bookmark, share, flag). |
-| `WikiArticleHero.tsx` | Large hero section with article cover image, title, intro paragraph, estimated read time. |
-| `WikiPartHeader.tsx` | Section divider header within article. Marks major structural boundaries. |
-| `WikiSidebar.tsx` | Left sidebar with article taxonomy tree, related articles, search. Collapsible on mobile via rail+overlay pattern. |
+| `WikiArticleHero.tsx` | Large hero section with article cover image, title, intro paragraph, estimated read time. `'use client'` |
+| `WikiPartHeader.tsx` | Section divider header within article. Marks major structural boundaries. `'use client'` |
+| `WikiSidebar.tsx` | Left sidebar with article taxonomy tree, related articles, search. Collapsible on mobile via rail+overlay pattern. `'use client'` |
 | `WikiSidebarShell.tsx` | Container for sidebar. |
+| `WikiSidebarLoader.tsx` | Lazy loader for sidebar content. |
+| `WikiSidebarSkeleton.tsx` | Loading skeleton for sidebar. |
 | `WikiRightSidebar.tsx` | Right sidebar with table of contents, reading progress, bookmark list, note anchors. |
 | `WikiTableOfContents.tsx` | Interactive TOC extracted from h2/h3 headings. Scrolling highlights current section. Sticky positioning. |
-| `WikiReadingProgress.tsx` | Progress bar or visual indicator showing scroll % through article. May link to sections. |
+| `WikiReadingProgress.tsx` | Progress bar or visual indicator showing scroll % through article. |
 | `WikiNavigationContext.tsx` | Context provider for navigation state (current article, discipline, breadcrumb). |
 | `WikiDisciplineContext.tsx` | Context provider for discipline metadata (id, name, tree, icon). |
-| `WikiHighlighter.tsx` | User-initiated text selection → highlight in color (per note/bookmark context). Stores to user's personal workspace. |
-| `WikiTextSelection.tsx` | Utility for capturing user text selection on mobile/desktop. Prevents default behavior, triggers note action menu. |
-| `WikiNoteAnchor.tsx` | Inline anchor for a user-created note or highlight. Shows note preview on hover. Links to workspace. |
-| `WikiNoteAction.tsx` | Post-selection menu: Create Note, Add Bookmark, Flag for Review, Share. Modal to capture note text. |
-| `WikiBookmarks.tsx` | List of bookmarked articles or sections. May appear in right sidebar or as dedicated modal. |
-| `WikiReadTracker.tsx` | Tracks user read progress per article (scroll depth, time spent, comprehension check). Persisted to user profile. |
-| `WikiCallout.tsx` | Semantic callout components: Note, Warn, Tip, Example, Callout (generic). Styled with Campfire colors + icons. |
+| `WikiHighlighter.tsx` | User-initiated text selection highlight in color. Stores to user's personal workspace. |
+| `WikiTextSelection.tsx` | Utility for capturing user text selection on mobile/desktop. |
+| `WikiNoteAnchor.tsx` | Inline anchor for a user-created note or highlight. Shows note preview on hover. |
+| `WikiBookmarks.tsx` | List of bookmarked articles or sections. |
+| `WikiReadTracker.tsx` | Tracks user read progress per article (scroll depth, time spent). Persisted to user profile. |
+| `WikiCallout.tsx` | Semantic callout component: Note, Warn, Tip, Example. Styled with Campfire colors + icons. |
 | `WikiCalloutBox.tsx` | Container for callout content. Applies border, background tint, icon. |
-| `LawCallout.tsx` | Specialized callout for legal/code reference (e.g., "IBC 101.2.1"). Uses monospace for code. |
-| `FormulaBlock.tsx` | Renders mathematical formulas/equations. May use KaTeX or MathJax. |
-| `KeyValues.tsx` | Two-column key-value pairs (term, definition). Useful for glossaries, specs. |
-| `WikiExamTable.tsx` | Styled table for exam content (requirements matrix, comparison table, specification table). Responsive grid on mobile. |
-| `Tabs.tsx` | Reusable tab component (base UI). Used by WikiTabs. |
-| `WikiTabs.tsx` | Tab wrapper for MDX. Useful for showing multiple related examples (e.g., code in Python vs. Pseudocode). |
+| `WikiChangedPill.tsx` | Badge indicating "Updated X days ago" or "New." Content freshness indicator. `'use client'` |
+| `WikiExamTable.tsx` | Styled table for exam content (requirements matrix, comparison table). Responsive grid on mobile. `'use client'` |
+| `WikiMistakeCard.tsx` | Card highlighting a common misconception with correct principle. |
+| `WikiMistakeList.tsx` | List of common mistakes for a topic. |
+| `WikiSourcesPopover.tsx` | Popover with citation metadata and links to source documents. `'use client'` |
+| `WikiRelatedPopover.tsx` | Popover suggesting related articles, prerequisite topics, or advanced depth. `'use client'` |
+| `WrongAnswerBanner.tsx` | Banner above article when linked from incorrect quiz answer. |
 | `Accordion.tsx` | Reusable accordion component (base UI). Used by WikiAccordion. |
-| `WikiAccordion.tsx` | Accordion wrapper for MDX. Useful for collapsing lengthy optional content. |
-| `WikiMistakeCard.tsx` | Card highlighting a common misconception with correct principle. Sourced from question rationale data. |
-| `WikiMistakeList.tsx` | List of common mistakes for a topic. Compiled from question feedback. |
-| `InlineQuiz.tsx` | Embedded quiz within article body. Quick self-check (1–3 questions) with instant feedback. Not scored; pedagogical only. |
-| `ElaborativeInterrogation.tsx` | Prompt: "Why is this true? How does it connect to...?" Toggles reveal of deeper explanation. Spaced repetition hook. |
-| `TeachBackPrompt.tsx` | Prompt: "Explain this concept in your own words." Text input + AI evaluation (optional). Retrieval practice. |
-| `WikiSourcesPopover.tsx` | Popover with citation metadata and links to source documents. Links to exact Wiki paragraphs. |
-| `WikiRelatedPopover.tsx` | Popover suggesting related articles, prerequisite topics, or advanced depth. |
-| `WikiChangedPill.tsx` | Badge indicating "Updated X days ago" or "New." Helps users know content freshness. |
-| `WikiNoteAnchor.tsx` | Inline link to a note or highlight. Shows creator, timestamp, content preview. |
-| `WrongAnswerBanner.tsx` | Banner above article when linked from incorrect quiz answer. "You missed this — here's the concept:" |
-| `widgets/bp344/` | **Building Performance 344 widget set** — Building code/accessibility. Includes: |
-| `widgets/bp344/DoorConfigurator.tsx` | Interactive door opening width, threshold height, approach space validator. Real-time compliance checking against code. |
-| `widgets/bp344/GrabBarExplainer.tsx` | 3D grab bar placement and specification tool with measurement inputs. |
-| `widgets/bp344/CorridorVisualizer.tsx` | 2D corridor layout with width, cross-slope, tactile warning visualization. |
-| `widgets/bp344/CubicleChecker.tsx` | Cubicle dimension checker (width, depth, knee space) with compliance legend. |
-| `widgets/bp344/ComparisonTable.tsx` | Side-by-side comparison of code requirements (old vs. new, ADA vs. IBC, etc.). |
-| `widgets/bp344/RecallDrill.tsx` | Spaced repetition drill for code dimensions/requirements (flashcard style). |
-| `widgets/dsgn013/` | **Design 013 widget set** — Ergonomic/anthropometric data. Includes: |
-| `widgets/dsgn013/BodyDimensionExplorer.tsx` | Interactive explorer of male/female body dimensions (percentiles: 5th, 50th, 95th). Highlights architectural relevance (e.g., eye height → sightlines). |
-| `widgets/dsgn013/BodyDimensionDrill.tsx` | Spaced repetition drill: "What dimension determines shelf height?" with multiple-choice or free-text response. |
-| `widgets/dsgn013/DimensionDrill.tsx` | General-purpose dimension flashcard tool. |
-| `widgets/dsgn013/BedSizeComparator.tsx` | Interactive bed size comparison (Twin, Full, Queen, King, California King) with dimensions, diagonal, use cases. |
-| `widgets/dsgn013/BedroomPlanView.tsx` | Top-down 2D bedroom plan view. Draggable furniture, dimension readout, collision detection. |
-| `widgets/dsgn013/ReachEnvelopeDiagram.tsx` | Visualization of comfortable reach envelope (arm extension, forward reach, upward reach) for different seated positions. |
-| `widgets/dsgn013/SpatialQualityDrill.tsx` | Drill: "What is the maximum comfortable reach overhead?" with dimension-based feedback. |
-| `widgets/dsgn013/ProportionComparator.tsx` | Slider to compare proportional dimensions across body dimensions or objects (e.g., door height to corridor width ratio). |
-| `widgets/dsgn013/WorkstationCalculator.tsx` | Calculator for ergonomic desk height, monitor position, keyboard tray depth given user height input. |
-| `widgets/registry.ts` | Dynamic widget resolution by article/component ID. Maps widget codes (bp344/*, dsgn013/*) to component imports. Supports lazy loading. |
+| `WikiAccordion.tsx` | Accordion wrapper for MDX content. |
+| `Tabs.tsx` | Reusable tab component (base UI). Used by WikiTabs. |
+| `WikiTabs.tsx` | Tab wrapper for MDX content. |
+| `AlertBox.tsx` | Alert box MDX component for important notices. |
+| `AuthorityContent.tsx` | Authority content block for official references. |
+| `Callout.tsx` | Generic callout MDX component. |
+| `ComparisonTable.tsx` | Side-by-side comparison table MDX component. |
+| `ExamTip.tsx` | Exam tip callout for test-relevant information. |
+| `FormulaBlock.tsx` | Renders mathematical formulas/equations using KaTeX. `'use client'` |
+| `GenericBlock.tsx` | Generic content block MDX component. |
+| `InlineQuiz.tsx` | Embedded quiz within article body. Quick self-check with instant feedback. |
+| `KeyValues.tsx` | Two-column key-value pairs (term, definition). |
+| `LawCallout.tsx` | Specialized callout for legal/code reference (e.g., "IBC 101.2.1"). Uses monospace for code. |
+| `ProcessFlow.tsx` | Process flow diagram MDX component. |
+| `ElaborativeInterrogation.tsx` | "Why is this true?" prompts activating deeper recall. Toggles reveal of deeper explanation. `'use client'` |
+| `TeachBackPrompt.tsx` | "Explain this concept in your own words." Text input + AI evaluation. `'use client'` |
+| `index.ts` | Barrel exports for wiki components. |
+| `mdx-components-shared.ts` | Shared MDX component mappings for article rendering. |
+| `parse-mdx-prop.ts` | Utility for parsing MDX component props from content. |
+| `transform-mistake-string.ts` | Utility for transforming mistake data into display format. |
+| `wiki-icons.ts` | Wiki-specific icon definitions. |
 
 ## Subdirectories
 
-| Directory | Purpose |
-|-----------|---------|
-| `widgets/` | Interactive widget subdirectory containing **bp344/** and **dsgn013/** widget sets. Registered dynamically via registry. |
-| `widgets/bp344/` | Building Performance code widgets. |
-| `widgets/dsgn013/` | Design/ergonomics widgets. |
+| Directory | Purpose | File Count |
+|-----------|---------|------------|
+| `widgets/` | Interactive widget subdirectory with registry | 1 file (registry.ts) |
+| `widgets/bp344/` | Building Performance 344 code widgets | 7 files |
+| `widgets/dsgn013/` | Design/ergonomics widgets | 10 files |
+
+### widgets/bp344/
+
+| File | Description |
+|------|-------------|
+| `DoorConfigurator.tsx` | Interactive door opening width, threshold height, approach space validator. `'use client'` |
+| `GrabBarExplainer.tsx` | 3D grab bar placement and specification tool. `'use client'` |
+| `CorridorVisualizer.tsx` | 2D corridor layout with width, cross-slope, tactile warning visualization. `'use client'` |
+| `CubicleChecker.tsx` | Cubicle dimension checker with compliance legend. `'use client'` |
+| `ComparisonTable.tsx` | Side-by-side comparison of code requirements. `'use client'` |
+| `RecallDrill.tsx` | Spaced repetition drill for code dimensions/requirements. `'use client'` |
+| `index.ts` | Barrel exports for bp344 widgets. |
+
+### widgets/dsgn013/
+
+| File | Description |
+|------|-------------|
+| `BodyDimensionExplorer.tsx` | Interactive explorer of male/female body dimensions (percentiles: 5th, 50th, 95th). `'use client'` |
+| `BodyDimensionDrill.tsx` | Spaced repetition drill for body dimension questions. `'use client'` |
+| `DimensionDrill.tsx` | General-purpose dimension flashcard tool. `'use client'` |
+| `BedSizeComparator.tsx` | Interactive bed size comparison with dimensions. `'use client'` |
+| `BedroomPlanView.tsx` | Top-down 2D bedroom plan view with draggable furniture. `'use client'` |
+| `ReachEnvelopeDiagram.tsx` | Visualization of comfortable reach envelope. `'use client'` |
+| `SpatialQualityDrill.tsx` | Drill for spatial quality dimension questions. `'use client'` |
+| `ProportionComparator.tsx` | Slider to compare proportional dimensions. `'use client'` |
+| `DHRatioExplorer.tsx` | Door height ratio explorer. `'use client'` |
+| `WorkstationCalculator.tsx` | Ergonomic workstation calculator based on user height. `'use client'` |
 
 ## For AI Agents
 
@@ -115,22 +135,23 @@ The wiki is a **structured knowledge base** designed for reference and deep lear
 
 ### Internal
 
-- `@/types/app` — WikiArticle, TocHeading, EIPrompt, EIResponseMap, TaxonomyNode
-- `@/lib/wiki-markdown` — extractHeadings(), heading ID generation, Markdown utilities
-- `@/lib/actions/ei-prompts` — Elaborative interrogation prompt fetching
-- `@/lib/routes` — GROUPED_NAVIGATION for sidebar tree
-- `@/components/ui/*` — shadcn/ui (Sheet, Tooltip, etc.)
-- `@/components/graphics/icons/Icon` — SCIcon wrapper for Phosphor
+- `@/types/app` -- WikiArticle, TocHeading, EIPrompt, EIResponseMap, TaxonomyNode
+- `@/lib/wiki-markdown` -- extractHeadings(), heading ID generation, Markdown utilities
+- `@/lib/actions/ei-prompts` -- Elaborative interrogation prompt fetching
+- `@/lib/routes` -- GROUPED_NAVIGATION for sidebar tree
+- `@/components/ui/*` -- shadcn/ui (Sheet, Tooltip, etc.)
+- `@/components/graphics/icons/Icon` -- SCIcon wrapper for Phosphor
+- `@/components/shared/score-display` -- Score display utilities
 
 ### External
 
-- `react` (19.x) — Hooks, Suspense, context
-- `next-mdx-remote/rsc` — Server-side MDX rendering
-- `remark-gfm` — GitHub Flavored Markdown plugin
-- `framer-motion` — Drawer animations, transitions
-- `@phosphor-icons/react` — Icon set
+- `react` (19.x) -- Hooks, Suspense, context
+- `next-mdx-remote/rsc` -- Server-side MDX rendering
+- `remark-gfm` -- GitHub Flavored Markdown plugin
+- `framer-motion` -- Drawer animations, transitions
+- `@phosphor-icons/react` -- Icon set
+- `katex` -- LaTeX math rendering (FormulaBlock)
 - `recharts` (if any charts in widgets)
-- `three.js` + `react-three-fiber` (if 3D visualization needed for spatial widgets)
 
 ## Campfire Design System
 
@@ -156,4 +177,3 @@ The wiki is a **structured knowledge base** designed for reference and deep lear
 - Code blocks: light background, line numbers optional, syntax highlighting.
 
 <!-- MANUAL: -->
-

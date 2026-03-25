@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
 
 # actions
 
@@ -11,9 +11,9 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 
 | File | Description |
 |------|-------------|
+| **quiz.ts** | Quiz session creation, retrieval, answer submission, SRS updates, readiness recomputation |
 | **assessment.ts** | Assessment completion checks, result retrieval, subject score breakdown |
 | **analytics.ts** | Server-side event tracking, analytics data aggregation |
-| **quiz.ts** | Quiz session creation, retrieval, answer submission, SRS updates, readiness recomputation |
 | **daily-mission.ts** | Daily mission generation, completion tracking, rewards |
 | **dashboard.ts** | Dashboard data aggregation (readiness, catalysts, recent activity) |
 | **dashboard-page.ts** | Page-level dashboard queries and data transformation |
@@ -22,39 +22,42 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 | **mastery-actions.ts** | Mastery-related mutations |
 | **debrief.ts** | Quiz debrief/summary data after session completion |
 | **readiness-score-update.ts** | Readiness score calculation and persistence |
+| **readiness.ts** | Readiness data queries for dashboard display |
 | **heatmap.ts** | Taxonomy heatmap/performance distribution data |
-| **notes.ts** (if exists) | User note CRUD operations |
+| **notes-actions.ts** | User note CRUD operations |
 | **feature-flags.ts** | Feature flag checks and overrides |
 | **final-stretch.ts** | Final review/cram session logic |
 | **lab.ts** | 3D lab interaction and state |
 | **ei-prompts.ts** | Educational instant (AI tutor) prompt management |
 | **email-preferences.ts** | Email subscription/notification preferences |
+| **onboarding.ts** | User onboarding flow and profile setup |
+| **profile.ts** | User profile reads and updates |
+| **session-actions.ts** | Session lifecycle: create, pause, resume, complete |
+| **session-discovery.ts** | Session discovery and filtering for review hub |
+| **session-insights.ts** | Post-session insight computation |
+| **sessions.ts** | Session listing and history queries |
+| **social-proof.ts** | Social proof metrics (user counts, activity) |
+| **srs-dashboard.ts** | SRS dashboard data: review queue, schedule stats |
+| **srs-review.ts** | SRS review session handling |
+| **stats-actions.ts** | User statistics mutations and aggregation |
+| **streak.ts** | Study streak tracking and persistence |
+| **taxonomy.ts** | Taxonomy tree queries for quiz and navigation |
+| **teach-back.ts** | Teach-back prompt generation and validation |
+| **testing.ts** | Test mode session configuration (Camp, Storm, Chill) |
+| **trails.ts** | Learning trail mutations: enroll, pause, abandon, complete |
+| **user-stats.ts** | User global stats computation and caching |
+| **wiki.ts** | Wiki article queries for student-facing views |
+| **wiki-actions.ts** | Wiki interaction tracking (reads, bookmarks) |
+| **wiki-bookmarks.ts** | Wiki bookmark CRUD |
+| **wiki-reads.ts** | Wiki read tracking and history |
 
 ## Subdirectories
 
 | Directory | Purpose |
 |-----------|---------|
-| **admin/** | Admin-only mutations: question creation/edit/delete, taxonomy management, wiki article management, asset uploads, dashboard queries |
-| **dev/** | Development/test utilities: test data generation, database viewer tools |
-
-### admin/ (7 files)
-
-| File | Description |
-|------|-------------|
-| **questions.ts** | Create, update, delete questions; validate question data |
-| **question-queries.ts** | Admin queries for question library, filtering, search |
-| **wiki.ts** | Create, update, delete wiki articles; manage article metadata |
-| **wiki-queries.ts** | Admin queries for wiki library, subject filtering, search |
-| **taxonomy.ts** | Create/edit taxonomy nodes, manage parent-child relationships |
-| **assets.ts** | Upload question/wiki image assets, manage file storage |
-| **dashboard.ts** | Admin dashboard queries: user counts, engagement metrics, question statistics |
-
-### dev/ (2 files)
-
-| File | Description |
-|------|-------------|
-| **test-data.ts** | Seed test questions, users, sessions for local development |
-| **db-viewer.ts** | Read-only database viewer for debugging schema and sample rows |
+| **admin/** | Admin-only mutations: 12 files for questions, wiki, taxonomy, assets, bulk ops, roles, pipeline, coverage, content, dashboard. See `admin/AGENTS.md`. |
+| **ceo/** | CEO portal mutations: 3 files for financial entries, team management, investor export. See `ceo/AGENTS.md`. |
+| **dev/** | Development/test utilities: test data generation, database viewer tools. |
 
 ## For AI Agents
 
