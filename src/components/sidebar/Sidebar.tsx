@@ -186,7 +186,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           </div>
 
           {/* Separator */}
-          <div className="mx-[6px] my-1 border-t border-border" />
+          <div className="mx-[6px] mt-1 mb-4 border-t border-border" />
 
           {/* Nav items — flat list, no group labels or dividers */}
           <div className="flex flex-col gap-4" style={{ padding: '4px 6px 0' }}>
