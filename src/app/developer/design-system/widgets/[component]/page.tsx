@@ -10,6 +10,20 @@ import {
   DoorConfiguratorPreview,
   CorridorVisualizerPreview,
   WorkstationCalculatorPreview,
+  CubicleCheckerPreview,
+  GrabBarExplainerPreview,
+  RecallDrillPreview,
+  ComparisonTablePreview,
+  ReachEnvelopeDiagramPreview,
+  BedroomPlanViewPreview,
+  BedSizeComparatorPreview,
+  BodyDimensionExplorerPreview,
+  DHRatioExplorerPreview,
+  ProportionComparatorPreview,
+  DimensionDrillPreview,
+  SpatialQualityDrillPreview,
+  BodyDimensionDrillPreview,
+  PHBuildingSetbacksPreview,
 } from '../_widget-previews'
 
 /* ------------------------------------------------------------------ */
@@ -66,23 +80,173 @@ const workstationCalculatorData: ComponentData = {
   preview: <WorkstationCalculatorPreview />,
 }
 
-/* ── Placeholder data for remaining widgets ──────────────────────── */
+/* ── CubicleChecker ─────────────────────────────────────────────── */
 
-const makePlaceholder = (title: string, importPath: string): ComponentData => ({
+const cubicleCheckerData: ComponentData = {
   propsTable: [
-    { name: 'className', type: 'string', defaultValue: null, required: false, description: 'Additional CSS class names.' },
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained component. Width, depth, door width, turning space, and door swing are controlled via internal state.' },
   ],
-  codeSnippet: `import { ${title} } from '${importPath}'
+  codeSnippet: `import { CubicleChecker } from '@/components/wiki/widgets/bp344/CubicleChecker'
 
-<${title} />`,
-  preview: (
-    <div className="w-full max-w-md bg-muted/30 border border-dashed border-border rounded-md px-6 py-10 flex items-center justify-center">
-      <span className="text-[13px] text-muted-foreground">
-        Preview: {title}
-      </span>
-    </div>
-  ),
-})
+<CubicleChecker />`,
+  preview: <CubicleCheckerPreview />,
+}
+
+/* ── GrabBarExplainer ──────────────────────────────────────────── */
+
+const grabBarExplainerData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained component. Grab bar offset above seat is controlled via an internal slider (250–350 mm range).' },
+  ],
+  codeSnippet: `import { GrabBarExplainer } from '@/components/wiki/widgets/bp344/GrabBarExplainer'
+
+<GrabBarExplainer />`,
+  preview: <GrabBarExplainerPreview />,
+}
+
+/* ── RecallDrill ───────────────────────────────────────────────── */
+
+const recallDrillData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained flashcard drill. Contains 40 shuffled BP 344 2024 IRR recall questions with reveal/next navigation.' },
+  ],
+  codeSnippet: `import { RecallDrill } from '@/components/wiki/widgets/bp344/RecallDrill'
+
+<RecallDrill />`,
+  preview: <RecallDrillPreview />,
+}
+
+/* ── ComparisonTable (BP344 2024 vs 2013) ──────────────────────── */
+
+const comparisonTableData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained comparison table. Contains 20 rows of 2013 vs 2024 IRR values. Click a row to expand its detail panel.' },
+  ],
+  codeSnippet: `import { ComparisonTable } from '@/components/wiki/widgets/bp344/ComparisonTable'
+
+<ComparisonTable />`,
+  preview: <ComparisonTablePreview />,
+}
+
+/* ── ReachEnvelopeDiagram ──────────────────────────────────────── */
+
+const reachEnvelopeDiagramData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained reach envelope explorer. Tabs switch between standing, seated, and wheelchair postures showing forward, overhead, low, and side reach zones.' },
+  ],
+  codeSnippet: `import { ReachEnvelopeDiagram } from '@/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram'
+
+<ReachEnvelopeDiagram />`,
+  preview: <ReachEnvelopeDiagramPreview />,
+}
+
+/* ── BedroomPlanView ───────────────────────────────────────────── */
+
+const bedroomPlanViewData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Static SVG plan view of a 3.5 m x 4.0 m bedroom with a queen bed, nightstands, wardrobe, and clearance zone overlays.' },
+  ],
+  codeSnippet: `import { BedroomPlanView } from '@/components/wiki/widgets/dsgn013/BedroomPlanView'
+
+<BedroomPlanView />`,
+  preview: <BedroomPlanViewPreview />,
+}
+
+/* ── BedSizeComparator ─────────────────────────────────────────── */
+
+const bedSizeComparatorData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained bed size comparator. Tap twin, double, queen, or king to see dimensions and clearance requirements.' },
+  ],
+  codeSnippet: `import { BedSizeComparator } from '@/components/wiki/widgets/dsgn013/BedSizeComparator'
+
+<BedSizeComparator />`,
+  preview: <BedSizeComparatorPreview />,
+}
+
+/* ── BodyDimensionExplorer ─────────────────────────────────────── */
+
+const bodyDimensionExplorerData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained anthropometric explorer. Toggle male/female, then tap any of 10 body dimensions to see 5th, 50th, and 95th percentile values with design implications.' },
+  ],
+  codeSnippet: `import { BodyDimensionExplorer } from '@/components/wiki/widgets/dsgn013/BodyDimensionExplorer'
+
+<BodyDimensionExplorer />`,
+  preview: <BodyDimensionExplorerPreview />,
+}
+
+/* ── DHRatioExplorer ───────────────────────────────────────────── */
+
+const dhRatioExplorerData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained D/H ratio explorer. Tap five ratio presets (< 1 through > 4) to visualize enclosure and see spatial perception descriptions with real-world examples.' },
+  ],
+  codeSnippet: `import { DHRatioExplorer } from '@/components/wiki/widgets/dsgn013/DHRatioExplorer'
+
+<DHRatioExplorer />`,
+  preview: <DHRatioExplorerPreview />,
+}
+
+/* ── ProportionComparator ──────────────────────────────────────── */
+
+const proportionComparatorData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained room proportion comparator. Tap 1:1, 1:1.4, 1:1.618 (golden), or 1:2 to see spatial quality descriptions and common uses.' },
+  ],
+  codeSnippet: `import { ProportionComparator } from '@/components/wiki/widgets/dsgn013/ProportionComparator'
+
+<ProportionComparator />`,
+  preview: <ProportionComparatorPreview />,
+}
+
+/* ── DimensionDrill ────────────────────────────────────────────── */
+
+const dimensionDrillData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained retrieval practice drill. 14 flashcards covering bed sizes, furniture dimensions, and PD 1096 minimum areas with tap-to-reveal and prev/next navigation.' },
+  ],
+  codeSnippet: `import { DimensionDrill } from '@/components/wiki/widgets/dsgn013/DimensionDrill'
+
+<DimensionDrill />`,
+  preview: <DimensionDrillPreview />,
+}
+
+/* ── SpatialQualityDrill ───────────────────────────────────────── */
+
+const spatialQualityDrillData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained retrieval practice drill. 16 flashcards on D/H ratios, ceiling heights, proxemics zones, and spatial perception with tap-to-reveal and prev/next navigation.' },
+  ],
+  codeSnippet: `import { SpatialQualityDrill } from '@/components/wiki/widgets/dsgn013/SpatialQualityDrill'
+
+<SpatialQualityDrill />`,
+  preview: <SpatialQualityDrillPreview />,
+}
+
+/* ── BodyDimensionDrill ────────────────────────────────────────── */
+
+const bodyDimensionDrillData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained retrieval practice drill. 18 flashcards on anthropometric percentiles, reach ranges, and ergonomic standards with tap-to-reveal and prev/next navigation.' },
+  ],
+  codeSnippet: `import { BodyDimensionDrill } from '@/components/wiki/widgets/dsgn013/BodyDimensionDrill'
+
+<BodyDimensionDrill />`,
+  preview: <BodyDimensionDrillPreview />,
+}
+
+/* ── PHBuildingSetbacks ────────────────────────────────────────── */
+
+const phBuildingSetbacksData: ComponentData = {
+  propsTable: [
+    { name: '(no props)', type: '—', defaultValue: '—', required: false, description: 'Self-contained PD 1096 setback illustration. Select RROW width (below 6 m, 6-10 m, 10-15 m, 15 m+) to see front, side, and rear setback zones with a buildable area SVG diagram.' },
+  ],
+  codeSnippet: `import PHBuildingSetbacks from '@/components/interactive-illustrations/2D/SetbackIllustration'
+
+<PHBuildingSetbacks />`,
+  preview: <PHBuildingSetbacksPreview />,
+}
 
 /* ── Component data lookup ───────────────────────────────────────── */
 
@@ -90,20 +254,20 @@ const COMPONENT_DATA: Record<string, ComponentData> = {
   'door-configurator': doorConfiguratorData,
   'corridor-visualizer': corridorVisualizerData,
   'workstation-calculator': workstationCalculatorData,
-  'cubicle-checker': makePlaceholder('CubicleChecker', '@/components/wiki/widgets/bp344/CubicleChecker'),
-  'grab-bar-explainer': makePlaceholder('GrabBarExplainer', '@/components/wiki/widgets/bp344/GrabBarExplainer'),
-  'recall-drill': makePlaceholder('RecallDrill', '@/components/wiki/widgets/bp344/RecallDrill'),
-  'bp344-comparison': makePlaceholder('BP344Comparison', '@/components/wiki/widgets/bp344/ComparisonTable'),
-  'reach-envelope-diagram': makePlaceholder('ReachEnvelopeDiagram', '@/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram'),
-  'bedroom-plan-view': makePlaceholder('BedroomPlanView', '@/components/wiki/widgets/dsgn013/BedroomPlanView'),
-  'bed-size-comparator': makePlaceholder('BedSizeComparator', '@/components/wiki/widgets/dsgn013/BedSizeComparator'),
-  'body-dimension-explorer': makePlaceholder('BodyDimensionExplorer', '@/components/wiki/widgets/dsgn013/BodyDimensionExplorer'),
-  'dh-ratio-explorer': makePlaceholder('DHRatioExplorer', '@/components/wiki/widgets/dsgn013/DHRatioExplorer'),
-  'proportion-comparator': makePlaceholder('ProportionComparator', '@/components/wiki/widgets/dsgn013/ProportionComparator'),
-  'dimension-drill': makePlaceholder('DimensionDrill', '@/components/wiki/widgets/dsgn013/DimensionDrill'),
-  'spatial-quality-drill': makePlaceholder('SpatialQualityDrill', '@/components/wiki/widgets/dsgn013/SpatialQualityDrill'),
-  'body-dimension-drill': makePlaceholder('BodyDimensionDrill', '@/components/wiki/widgets/dsgn013/BodyDimensionDrill'),
-  'ph-building-setbacks': makePlaceholder('PHBuildingSetbacks', '@/components/interactive-illustrations/2D/SetbackIllustration'),
+  'cubicle-checker': cubicleCheckerData,
+  'grab-bar-explainer': grabBarExplainerData,
+  'recall-drill': recallDrillData,
+  'bp344-comparison': comparisonTableData,
+  'reach-envelope-diagram': reachEnvelopeDiagramData,
+  'bedroom-plan-view': bedroomPlanViewData,
+  'bed-size-comparator': bedSizeComparatorData,
+  'body-dimension-explorer': bodyDimensionExplorerData,
+  'dh-ratio-explorer': dhRatioExplorerData,
+  'proportion-comparator': proportionComparatorData,
+  'dimension-drill': dimensionDrillData,
+  'spatial-quality-drill': spatialQualityDrillData,
+  'body-dimension-drill': bodyDimensionDrillData,
+  'ph-building-setbacks': phBuildingSetbacksData,
 }
 
 /* ------------------------------------------------------------------ */
