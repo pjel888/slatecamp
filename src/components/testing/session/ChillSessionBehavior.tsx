@@ -2,6 +2,7 @@
 
 import { ArrowSquareOut, Cube, Scales } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { OptionButton } from '@/components/quiz/OptionButton'
 import { QuestionStem } from '@/components/quiz/QuestionStem'
 import { cn } from '@/lib/utils'
@@ -63,12 +64,7 @@ export const ChillSessionBehavior = ({
     <div className="space-y-5">
       {/* Subject label */}
       {subjectLabel && (
-        <p
-          className="text-[11px] font-black uppercase tracking-widest text-[#8896A7]"
-          aria-label={`Subject: ${subjectLabel}`}
-        >
-          {subjectLabel}
-        </p>
+        <Eyebrow aria-label={`Subject: ${subjectLabel}`}>{subjectLabel}</Eyebrow>
       )}
 
       {/* Chill progress — open-ended, growth-framed */}
@@ -153,9 +149,7 @@ export const ChillSessionBehavior = ({
           role="region"
           aria-label="Answer rationale"
         >
-          <p className="text-[11px] font-black uppercase tracking-widest text-[#8896A7]">
-            Why {correctLetter} is correct
-          </p>
+          <Eyebrow>Why {correctLetter} is correct</Eyebrow>
 
           {question.rationale && (
             <p className="text-[14px] text-[#4A5568] leading-[1.7]">

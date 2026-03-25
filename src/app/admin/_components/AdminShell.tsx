@@ -150,22 +150,33 @@ const adminNavItems: NavGroup[] = [
 
 interface AdminShellProps {
   role: UserRole
+  badgeCounts?: { pendingReviews: number }
   children: React.ReactNode
 }
 
-const AdminShell = ({ role, children }: AdminShellProps) => (
-  <PortalLayout
-    portalLabel={PORTALS.admin.label}
-    topbarBg={PORTALS.admin.topbarBg}
-    accentColor={PORTALS.admin.accentColor}
-    accentLightColor={PORTALS.admin.accentLightColor}
-    navItems={adminNavItems}
-    rightContent={<AdminRoleBadge role={role} />}
-    backLabel={PORTALS.admin.backLabel}
-  >
-    <CommandPalette pages={adminPages} />
-    {children}
-  </PortalLayout>
-)
+const AdminShell = ({ role, badgeCounts, children }: AdminShellProps) => {
+  const navItemsWithBadges = adminNavItems.map((group) => ({
+    ...group,
+    items: group.items.map((item) => ({
+      ...item,
+      badge: item.label === 'Review Queue' ? badgeCounts?.pendingReviews : undefined,
+    })),
+  }))
+
+  return (
+    <PortalLayout
+      portalLabel={PORTALS.admin.label}
+      topbarBg={PORTALS.admin.topbarBg}
+      accentColor={PORTALS.admin.accentColor}
+      accentLightColor={PORTALS.admin.accentLightColor}
+      navItems={navItemsWithBadges}
+      rightContent={<AdminRoleBadge role={role} />}
+      backLabel={PORTALS.admin.backLabel}
+    >
+      <CommandPalette pages={adminPages} />
+      {children}
+    </PortalLayout>
+  )
+}
 
 export { AdminShell, adminNavItems }

@@ -15,7 +15,7 @@ export const FormulaBlock = ({ label, steps }: { label: string; steps: FormulaSt
   const parsed = parseMdxProp<FormulaStep[]>(steps, [])
   return (
     <div className="not-prose bg-[#1A1A2E] rounded-[10px] px-6 py-5 my-4">
-      <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.12em] text-[#7BA7F5] mb-3">
+      <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.12em] text-[#7BA7F5] mb-3">
         {label}
       </div>
       {parsed.map((step, i) => (

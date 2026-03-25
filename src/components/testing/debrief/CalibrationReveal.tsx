@@ -1,6 +1,7 @@
 'use client'
 
 import type { CalibrationResult, CalibrationSubject } from '@/types/testing'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -101,12 +102,7 @@ const SubjectRow = ({ subject, isLast }: { subject: CalibrationSubject; isLast: 
 export const CalibrationReveal = ({ calibration }: CalibrationRevealProps) => (
   <div>
     {/* Section label */}
-    <p
-      className="mb-3 text-[11px] font-medium uppercase tracking-widest"
-      style={{ color: 'var(--muted-foreground)' }}
-    >
-      Your Calibration
-    </p>
+    <Eyebrow className="mb-3 block">Your Calibration</Eyebrow>
 
     <div className="bg-card rounded-lg border border-border p-5">
       {/* Subject rows */}

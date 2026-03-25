@@ -79,7 +79,7 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
           <img
             src={imageUrl}
             alt="Question reference material"
-            className="max-w-[90vw] max-h-[90vh] object-contain rounded-md shadow-2xl cursor-zoom-out"
+            className="max-w-[90vw] max-h-[90vh] object-contain rounded-md shadow-lg cursor-zoom-out"
             onClick={(e) => e.stopPropagation()}
           />
         </div>

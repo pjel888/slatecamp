@@ -59,10 +59,14 @@ export const fetchCoverageData = async () => {
     return { level1: [], childrenMap: new Map<string, CoverageCellData[]>(), stats: { total: 0, full: 0, partial: 0, empty: 0, critical: 0 } }
   }
 
-  // 2. Get question counts per topic_id
+  // 2. Scope queries to only relevant node IDs (level-2 nodes)
+  const level2NodeIds = (nodes as TaxonomyNode[]).filter((n) => n.level === 2).map((n) => n.node_id)
+
+  // Get question counts per topic_id — scoped to relevant nodes only
   const { data: questions, error: qError } = await supabase
     .from('questions')
     .select('topic_id')
+    .in('topic_id', level2NodeIds)
 
   if (qError) console.error('Error fetching questions:', qError)
 
@@ -72,10 +76,11 @@ export const fetchCoverageData = async () => {
     questionCounts.set(q.topic_id, current + 1)
   })
 
-  // 3. Get article presence via junction table
+  // 3. Get article presence via junction table — scoped to relevant nodes only
   const { data: articleLinks, error: aError } = await supabase
     .from('wiki_article_taxonomy')
     .select('node_id')
+    .in('node_id', level2NodeIds)
 
   if (aError) console.error('Error fetching article taxonomy:', aError)
 

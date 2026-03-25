@@ -20,6 +20,7 @@ interface NavItem {
   href: string
   icon?: React.ReactNode
   children?: NavChild[]
+  badge?: number
 }
 
 interface NavGroup {
@@ -174,6 +175,11 @@ const PortalSidebar = ({
                         </span>
                       )}
                       <span className="truncate">{item.label}</span>
+                      {item.badge != null && item.badge > 0 && (
+                        <span className="inline-flex items-center rounded-full bg-amber-100 px-1.5 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-amber-800 tabular-nums">
+                          {item.badge > 99 ? '99+' : item.badge}
+                        </span>
+                      )}
                       <svg
                         className={cn(
                           'ml-auto w-3 h-3 shrink-0 text-muted-foreground transition-transform duration-150',
@@ -217,6 +223,11 @@ const PortalSidebar = ({
                         </span>
                       )}
                       <span className="truncate">{item.label}</span>
+                      {item.badge != null && item.badge > 0 && (
+                        <span className="ml-auto inline-flex items-center rounded-full bg-amber-100 px-1.5 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-amber-800 tabular-nums">
+                          {item.badge > 99 ? '99+' : item.badge}
+                        </span>
+                      )}
                     </Link>
                   )}
 

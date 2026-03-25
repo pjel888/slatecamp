@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { DataTable, type Column } from '@/components/shared/data-table'
@@ -7,6 +8,8 @@ import { Badge } from '@/components/ui/badge'
 import { DifficultyBar } from '@/components/ui/difficulty-bar'
 import { QuestionQualityBadges } from '@/components/admin/QuestionQualityBadges'
 import { QuestionQuickPreview } from '@/components/admin/QuestionQuickPreview'
+import { BulkActionBar } from '@/components/admin/BulkActionBar'
+import { bulkDeleteQuestions } from '@/lib/actions/admin/bulk'
 
 interface Question extends Record<string, unknown> {
   question_id: string
@@ -127,6 +130,13 @@ interface QuestionsTableClientProps {
 
 export const QuestionsTableClient = ({ questions }: QuestionsTableClientProps) => {
   const router = useRouter()
+  const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set())
+
+  const handleBulkDelete = async () => {
+    const result = await bulkDeleteQuestions([...selectedKeys])
+    if (result.error) throw new Error(result.error)
+    setSelectedKeys(new Set())
+  }
 
   return (
     <DataTable
@@ -142,6 +152,16 @@ export const QuestionsTableClient = ({ questions }: QuestionsTableClientProps) =
         router.push(`/admin/questions/${id}`)
       }}
       emptyMessage="No questions found"
+      selectable
+      selectedKeys={selectedKeys}
+      onSelectionChange={setSelectedKeys}
+      bulkActions={
+        <BulkActionBar
+          selectedCount={selectedKeys.size}
+          onDelete={handleBulkDelete}
+          entityName="questions"
+        />
+      }
     />
   )
 }

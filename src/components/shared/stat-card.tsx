@@ -80,7 +80,7 @@ const StatCard = ({
   )
 
   const containerClasses = cn(
-    'rounded-lg border border-border bg-card p-4 flex flex-col',
+    'rounded-md border border-border bg-card p-4 flex flex-col',
     href && 'hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer',
     className
   )

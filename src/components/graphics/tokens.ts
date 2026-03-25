@@ -39,10 +39,6 @@ export const cssVars = {
 } as const
 
 // ── Readiness score color thresholds ──
-export function getScoreColor(score: number) {
-  if (score >= 70)
-    return { main: '#2D9F6F', grad: '#248A5E', glow: 'rgba(45,159,111,0.08)' }
-  if (score >= 40)
-    return { main: '#E8853A', grad: '#D4751A', glow: 'rgba(232,133,58,0.08)' }
-  return { main: '#D64545', grad: '#B83A3A', glow: 'rgba(214,69,69,0.08)' }
-}
+// Canonical source: @/components/shared/score-display (getScoreColorHex)
+// Re-exported here for Canvas/SVG graphic contexts.
+export { getScoreColorHex as getScoreColor } from '@/components/shared/score-display'

@@ -41,7 +41,7 @@ export const DimensionDrill = () => {
         <div className="w-7 h-7 rounded-lg bg-[#D4951A] flex items-center justify-center text-white text-sm">
           🧠
         </div>
-        <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#D4900C]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#D4900C]">
           Retrieval Practice
         </div>
       </div>

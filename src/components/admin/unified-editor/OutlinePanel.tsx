@@ -2,6 +2,7 @@
 
 import { useCallback, useMemo } from 'react'
 import { EditorView } from '@codemirror/view'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import type { ParsedHeading, QuestionData, EIPromptData } from './types'
 
 // ─── Props ───────────────────────────────────────────────────
@@ -104,9 +105,7 @@ export const OutlinePanel = ({
     <div className="sticky top-0 flex w-[200px] shrink-0 flex-col overflow-y-auto border-r border-[#D4DAE3] bg-white xl:w-[200px]">
       {/* Header */}
       <div className="px-3 pb-2 pt-4">
-        <span className="font-mono text-[11px] uppercase tracking-widest text-[#8896A7]">
-          Outline
-        </span>
+        <Eyebrow>Outline</Eyebrow>
       </div>
 
       {/* Headings list */}
@@ -155,9 +154,7 @@ export const OutlinePanel = ({
       {/* EI Prompts section */}
       <div className="px-3 pb-4 pt-3">
         <div className="mb-2 flex items-center justify-between">
-          <span className="font-mono text-[11px] uppercase tracking-widest text-[#8896A7]">
-            EI Prompts
-          </span>
+          <Eyebrow>EI Prompts</Eyebrow>
           <span className="rounded-sm bg-[#EEF2FC] px-1.5 py-0.5 text-[11px] font-medium text-[#1B3FC4]">
             {eiPrompts.length}
           </span>

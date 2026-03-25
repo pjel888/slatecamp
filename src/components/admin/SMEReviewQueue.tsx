@@ -5,9 +5,17 @@ import { createClient } from '@/lib/supabase/client'
 import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { ApproveDialog } from '@/components/admin/ApproveDialog'
 import { RequestChangesDialog } from '@/components/admin/RequestChangesDialog'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 interface PendingItem {
   id: string
@@ -105,17 +113,17 @@ export const SMEReviewQueue = () => {
 
         {/* Filter */}
         <div className="flex gap-4">
-          <select
-            value={typeFilter}
-            onChange={(e) => setTypeFilter(e.target.value)}
-            className="px-3 py-2 rounded-sm border border-input bg-background text-sm"
-            aria-label="Filter by content type"
-          >
-            <option value="">All Types</option>
-            <option value="wiki">Wiki Articles</option>
-            <option value="question">Questions</option>
-            <option value="asset">3D Assets</option>
-          </select>
+          <Select value={typeFilter} onValueChange={setTypeFilter}>
+            <SelectTrigger aria-label="Filter by content type">
+              <SelectValue placeholder="All Types" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="">All Types</SelectItem>
+              <SelectItem value="wiki">Wiki Articles</SelectItem>
+              <SelectItem value="question">Questions</SelectItem>
+              <SelectItem value="asset">3D Assets</SelectItem>
+            </SelectContent>
+          </Select>
           <Badge variant="default" size="sm">
             {filteredItems.length} pending
           </Badge>
@@ -163,23 +171,23 @@ export const SMEReviewQueue = () => {
                     </div>
 
                     <div className="flex gap-2 shrink-0">
-                      <button
-                        type="button"
+                      <Button
+                        variant="success"
+                        size="sm"
                         onClick={() => openApprove(item)}
-                        className="flex items-center gap-1 px-3 py-1.5 text-sm rounded-sm bg-[#2D9F6F] text-white hover:bg-[#2D9F6F]/90 transition-colors duration-150"
+                        leftIcon={<SCIcon icon={CheckCircle} size="sm" />}
                         aria-label={`Approve ${item.title}`}
                       >
-                        <SCIcon icon={CheckCircle} size="sm" />
                         Approve
-                      </button>
-                      <button
-                        type="button"
+                      </Button>
+                      <Button
+                        variant="secondary"
+                        size="sm"
                         onClick={() => openChanges(item)}
-                        className="flex items-center gap-1 px-3 py-1.5 text-sm rounded-sm border border-input hover:bg-muted transition-colors duration-150"
                         aria-label={`Request changes for ${item.title}`}
                       >
                         Request Changes
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </div>

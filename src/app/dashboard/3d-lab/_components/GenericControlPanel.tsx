@@ -13,6 +13,13 @@ import {
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import type { ParameterDef, Preset } from '../_types/templates'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -190,18 +197,18 @@ const DropdownControl = ({
     <label className="text-[11px] font-medium text-foreground">
       {param.label}
     </label>
-    <select
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      className="w-full text-[11px] font-medium text-foreground border border-border rounded-sm px-2 py-1.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
-      style={{ fontFamily: MONO_FONT }}
-    >
-      {param.options?.map((o) => (
-        <option key={o.value} value={o.value}>
-          {o.label}
-        </option>
-      ))}
-    </select>
+    <Select value={value} onValueChange={onChange}>
+      <SelectTrigger size="sm" className="w-full" style={{ fontFamily: MONO_FONT }}>
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent>
+        {param.options?.map((o) => (
+          <SelectItem key={o.value} value={o.value}>
+            {o.label}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   </div>
 )
 

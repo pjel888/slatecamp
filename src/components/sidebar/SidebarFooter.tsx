@@ -67,7 +67,7 @@ export const SidebarFooter = ({
               className="h-full w-full object-cover"
             />
           ) : (
-            <span className="text-[8px] font-semibold text-white leading-none select-none">
+            <span className="text-[11px] font-semibold text-white leading-none select-none">
               {initials}
             </span>
           )}
@@ -170,7 +170,7 @@ export const SidebarFooter = ({
         {/* Shortcut badge */}
         <span
           className={cn(
-            'ml-auto mr-1 font-mono text-[9px] font-medium',
+            'ml-auto mr-1 font-mono text-[11px] font-medium',
             'text-gray-400 dark:text-gray-500',
             'bg-gray-100 dark:bg-gray-800',
             'px-1 rounded-[3px]',

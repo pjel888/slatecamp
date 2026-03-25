@@ -11,6 +11,7 @@ import {
   Cell,
 } from 'recharts'
 import type { AccuracyBlock } from '@/types/testing'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -72,12 +73,7 @@ export const BlockAccuracyChart = ({ blocks }: BlockAccuracyChartProps) => {
   return (
     <div>
       {/* Section label */}
-      <p
-        className="mb-3 text-[11px] font-medium uppercase tracking-widest"
-        style={{ color: 'var(--muted-foreground)' }}
-      >
-        Accuracy by Block
-      </p>
+      <Eyebrow className="mb-3 block">Accuracy by Block</Eyebrow>
 
       <div className="bg-card rounded-lg border border-border p-5">
         <ResponsiveContainer width="100%" height={200}>

@@ -14,16 +14,16 @@ export const WikiArticleHero = ({
     <header className="not-prose flex flex-col gap-3 mb-0">
       {/* Tag row */}
       <div className="flex flex-wrap items-center gap-1.5">
-        <span className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#EEF3FD] text-[#1B3FC4]">
+        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#EEF3FD] text-[#1B3FC4]">
           {subject}
         </span>
         <span className={cn(
-          "font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px]",
+          "font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px]",
           difficultyStyle[difficulty]
         )}>
           {difficulty}
         </span>
-        <span className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#F5F5F5] text-[#737370]">
+        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-[#F5F5F5] text-[#737370]">
           {readTime} read
         </span>
       </div>
@@ -34,13 +34,13 @@ export const WikiArticleHero = ({
       </h1>
 
       {/* Updated metadata */}
-      <p className="font-[var(--font-dm-mono)] text-[10px] text-[#A8A8A5]">
+      <p className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5]">
         Updated: {updatedNote}
       </p>
 
       {/* ALE orientation banner — NOT a callout */}
       <div className="border-l-[3px] border-[#1B3FC4] bg-[#EEF3FD] rounded-r-lg px-4 py-3 dark:bg-[#1B3FC410]">
-        <p className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest text-[#1B3FC4] mb-1">
+        <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-[#1B3FC4] mb-1">
           The ALE tests you to
         </p>
         <p className="text-sm text-[#3D3D3A] leading-relaxed dark:text-[#C8C6C0]">

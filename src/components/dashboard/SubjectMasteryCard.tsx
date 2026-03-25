@@ -9,6 +9,7 @@ import {
   TooltipContent,
 } from '@/components/ui/tooltip'
 import { EmptyState } from '@/components/shared/empty-state'
+import { getScoreColorHex } from '@/components/shared/score-display'
 import type { SubjectMastery } from '@/types/dashboard'
 
 interface SubjectMasteryCardProps {
@@ -21,12 +22,12 @@ const MASTERY_COLORS = {
   unexplored: '#E5E7EB',
   high: '#57be90',
   mid: '#da9359',
-  low: '#d36f6f',
+  low: '#8896A7',    // neutral muted — never red for low scores
   track: '#F5F5F5',
   ringHigh: '#57be90',
   ringMid: '#8ED4AE',
   ringMidLow: '#da9359',
-  ringLow: '#d36f6f',
+  ringLow: '#8896A7', // neutral muted — never red for low scores
 } as const
 
 // ── Color helpers ────────────────────────────────────────────────────────────
@@ -35,7 +36,7 @@ const getMasteryColor = (mastery: number, questionsAnswered: number): string => 
   if (questionsAnswered === 0) return MASTERY_COLORS.unexplored
   if (mastery >= 70) return MASTERY_COLORS.high
   if (mastery >= 40) return MASTERY_COLORS.mid
-  return MASTERY_COLORS.low
+  return getScoreColorHex(mastery).main  // neutral muted — never red for low scores
 }
 
 const getMasteryLabel = (mastery: number, questionsAnswered: number): string => {

@@ -12,6 +12,7 @@ import { SubmitButton } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { EmptyState } from '@/components/shared/empty-state'
 import { Shield, UserX, Users } from 'lucide-react'
+import { RoleSelect } from '@/components/admin/settings/RoleSelect'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -159,20 +160,7 @@ const AdminSettingsPage = async () => {
               >
                 Role
               </label>
-              <select
-                id="role"
-                name="role"
-                required
-                className="h-9 rounded-sm border border-input bg-transparent px-3 text-sm text-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/20"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Select role...
-                </option>
-                <option value="super_admin">Super Admin</option>
-                <option value="content_admin">Content Admin</option>
-                <option value="sme_reviewer">SME Reviewer</option>
-              </select>
+              <RoleSelect />
             </div>
 
             <SubmitButton size="md" pendingLabel="Assigning...">

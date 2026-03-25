@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { StudentViewWatermark } from '@/components/ui/student-view-watermark'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 export interface CampModePreviewProps {
   stem: string
@@ -42,18 +43,18 @@ export const CampModePreview = ({
     if (idx === selected && idx !== correctAnswer) {
       return 'bg-[#FDF0F0] border-[#D64545]/50 text-[#1A2332] cursor-default opacity-80'
     }
-    return 'bg-white border-zinc-100 text-zinc-300 opacity-40 cursor-default'
+    return 'bg-white border-[#D4DAE3] text-[#D4DAE3] opacity-40 cursor-default'
   }
 
   const getLetterBadgeStyle = (idx: number) => {
     if (!isChecked) {
       return selected === idx
         ? 'bg-primary/10 border-primary/30 text-[#1B3FC4]'
-        : 'bg-zinc-50 border-[#D4DAE3] text-[#8896A7]'
+        : 'bg-[#F8F7F5] border-[#D4DAE3] text-[#8896A7]'
     }
     if (idx === correctAnswer) return 'bg-[#2D9F6F] border-[#2D9F6F] text-white'
     if (idx === selected && idx !== correctAnswer) return 'bg-[#D64545] border-[#D64545] text-white'
-    return 'bg-zinc-50 border-zinc-100 text-zinc-200'
+    return 'bg-[#F8F7F5] border-[#D4DAE3] text-[#D4DAE3]'
   }
 
   return (
@@ -122,9 +123,7 @@ export const CampModePreview = ({
       {isChecked && (
         <div className="px-4 pb-4">
           <div className="rounded-md border bg-[#EEF2FC] p-4 space-y-2">
-            <span className="text-[11px] font-black uppercase tracking-widest text-[#1B3FC4]">
-              Rationale
-            </span>
+            <Eyebrow className="font-black text-[#1B3FC4]">Rationale</Eyebrow>
             <p className="text-sm text-[#4A5568] leading-[1.65]">
               {rationale || <span className="italic text-[#8896A7]">Rationale will appear here…</span>}
             </p>

@@ -49,7 +49,7 @@ export const BodyDimensionExplorer = () => {
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[#1B3FC4]/10 dark:to-[#1B3FC4]/5 dark:border-[#3A3835]">
         <div>
-          <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
             Interactive · Anthropometric Data Explorer
           </div>
           <div className="text-xs text-[#737370] mt-0.5 dark:text-[#A8A8A5]">
@@ -120,20 +120,20 @@ export const BodyDimensionExplorer = () => {
               { label: '95th %ile', val: active.p95, desc: 'Large' },
             ].map((p) => (
               <div key={p.label} className="bg-[#F5F5F5] rounded-lg p-3 text-center dark:bg-[#252420]">
-                <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
+                <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
                   {p.label}
                 </div>
                 <div className="font-[var(--font-dm-mono)] text-lg font-medium text-[#1B3FC4]">
                   {p.val}
                 </div>
-                <div className="text-[10px] text-[#A8A8A5] mt-0.5">mm</div>
+                <div className="text-[11px] text-[#A8A8A5] mt-0.5">mm</div>
               </div>
             ))}
           </div>
 
           {/* Design note */}
           <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B3FC4]/10 dark:text-[#C8C6C0]">
-            <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5 font-medium">
+            <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5 font-medium">
               Design implication
             </div>
             {active.note}

@@ -32,7 +32,7 @@ export const WorkstationCalculator = () => {
           🧮
         </div>
         <div>
-          <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
             Interactive Calculator
           </div>
           <div className="text-[13px] text-[#3D3D3A] mt-0.5 dark:text-[#C8C6C0]">
@@ -113,7 +113,7 @@ export const WorkstationCalculator = () => {
 
         {/* Result */}
         <div className="p-4 bg-[#F5F5F5] rounded-[10px] mt-3 dark:bg-[#252420]">
-          <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-[#1B3FC4] mb-1.5">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-[#1B3FC4] mb-1.5">
             Required Gross Floor Area
           </div>
           <div>

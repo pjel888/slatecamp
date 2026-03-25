@@ -5,6 +5,7 @@ import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRi
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createNoteFolder } from '@/lib/actions/notes-actions'
+import { Button } from '@/components/ui/button'
 
 export type NavFilter =
   | { type: 'all' }
@@ -60,13 +61,14 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
     )}>
       {/* Collapse toggle — identical to NotesList */}
       <div className="flex shrink-0 items-center justify-end px-2 py-3">
-        <button
+        <Button
+          variant="ghost"
+          size="icon-sm"
           onClick={onToggle}
-          className="flex items-center justify-center h-7 w-7 shrink-0 rounded-md text-[#8896A7] hover:text-[#1B3FC4] hover:bg-[#EEF2FC]/60 transition-colors duration-150"
           aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
         >
           <SCIcon icon={collapsed ? CaretRight : CaretLeft} size="sm" />
-        </button>
+        </Button>
       </div>
 
       {/* All notes + Pinned */}
@@ -87,13 +89,14 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
           {!collapsed && (
             <span className="font-dm-mono text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B6B6B]">Folders</span>
           )}
-          <button
+          <Button
+            variant="ghost"
+            size="icon-xs"
             onClick={() => setAddingFolder(true)}
-            className="rounded p-0.5 text-[#8896A7] hover:text-[#1B3FC4] transition-colors"
             title="New folder"
           >
             <SCIcon icon={Plus} size="xs" />
-          </button>
+          </Button>
         </div>
         {folders.map((f) => {
           const active = is({ type: 'folder', id: f.folder_id, name: f.name })
@@ -127,13 +130,14 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
               placeholder="Folder name..."
               className="flex-1 rounded border border-[#D4DAE3] bg-white px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/20 focus:border-[#1B3FC4]"
             />
-            <button
+            <Button
               type="submit"
+              size="xs"
               disabled={creating || !newFolderName.trim()}
-              className="rounded-md bg-primary px-2 py-1 text-[11px] text-white disabled:opacity-40"
+              loading={creating}
             >
-              {creating ? '...' : 'Add'}
-            </button>
+              Add
+            </Button>
           </form>
         )}
       </div>

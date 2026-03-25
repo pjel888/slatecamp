@@ -55,8 +55,10 @@ import {
   QuestionCardSkeleton,
   ScoreRingSkeleton,
 } from '@/components/ui/skeleton'
-import { ScoreDisplay } from '@/components/shared/score-display'
+import { ScoreDisplay, getScoreColor, getScoreColorHex } from '@/components/shared/score-display'
 import { StatCard } from '@/components/shared/stat-card'
+import { Eyebrow } from '@/components/ui/eyebrow'
+import { Checkbox } from '@/components/ui/checkbox'
 import { Input, SearchInput } from '@/components/ui/input'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Breadcrumb } from '@/components/shared/breadcrumb'
@@ -722,6 +724,33 @@ const DesignSystemPage = () => {
             trend={{ direction: 'down', label: 'Missed yesterday' }}
           />
         </div>
+
+        {/* Subtitle + clickable (href) */}
+        <div className="space-y-3">
+          <p className="text-xs font-medium text-muted-foreground">With subtitle and href (clickable card)</p>
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+            <StatCard
+              eyebrow="Building Codes"
+              value="74%"
+              subtitle="18 of 24 topics covered"
+              trend={{ direction: 'up', label: '+3% this week' }}
+              href="#"
+            />
+            <StatCard
+              eyebrow="Structural Design"
+              value="61%"
+              subtitle="Click to view breakdown"
+              href="#"
+            />
+            <StatCard
+              eyebrow="Professional Practice"
+              value="88%"
+              subtitle="Strong area — keep it up"
+              color="text-emerald-600"
+              href="#"
+            />
+          </div>
+        </div>
       </Section>
 
       {/* ============================================================ */}
@@ -1031,6 +1060,18 @@ const DesignSystemPage = () => {
               options={sampleQuestionOptions}
               questionNumber={7}
               metadata={{ difficulty: 'Medium', status: 'Published' }}
+            />
+          </div>
+
+          {/* Preview variant */}
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-muted-foreground">Preview Variant (admin — highlights correct answer, no interaction)</p>
+            <QuestionCard
+              variant="preview"
+              stem="According to the National Building Code of the Philippines (PD 1096), what is the minimum clear width of a corridor serving as a means of egress in a residential building?"
+              options={sampleQuestionOptions}
+              questionNumber={7}
+              metadata={{ difficulty: 'Medium', aleId: 'ARC-BC-01', topicName: 'NBCP (PD 1096)', status: 'Published' }}
             />
           </div>
         </div>
@@ -2068,7 +2109,126 @@ const DesignSystemPage = () => {
       </Section>
 
       {/* ============================================================ */}
-      {/*  36. Sidebar Nav (Contained Preview)                          */}
+      {/*  36. Score Color Utilities                                    */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="DATA DISPLAY"
+        title="Score Color Utilities"
+        subtitle="getScoreColor (Tailwind classes) and getScoreColorHex (Canvas/SVG hex values). Both use the same thresholds: ≥70 emerald, ≥40 neutral, <40 muted. NEVER red for low scores."
+      >
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-muted-foreground">getScoreColor — Tailwind class map</p>
+            <div className="rounded-md border border-border bg-card p-4 space-y-2">
+              {[85, 55, 25].map((score) => {
+                const c = getScoreColor(score)
+                return (
+                  <div key={score} className="flex items-center gap-3">
+                    <span className={`font-mono text-sm font-bold tabular-nums ${c.text}`}>{score}%</span>
+                    <span className="text-xs text-muted-foreground font-mono">{c.text}</span>
+                    <div className={`w-3 h-3 rounded-full ${c.bg}`} />
+                  </div>
+                )
+              })}
+            </div>
+            <p className="text-[11px] text-muted-foreground">Returns <span className="font-mono">{'{ text, fill, bg }'}</span> Tailwind class strings for use in JSX.</p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-muted-foreground">getScoreColorHex — Hex values for Canvas/SVG</p>
+            <div className="rounded-md border border-border bg-card p-4 space-y-2">
+              {[85, 55, 25].map((score) => {
+                const h = getScoreColorHex(score)
+                return (
+                  <div key={score} className="flex items-center gap-3">
+                    <span className="font-mono text-sm font-bold tabular-nums text-foreground w-8">{score}%</span>
+                    <div className="w-3 h-3 rounded-full shrink-0" style={{ background: h.main }} />
+                    <span className="text-[11px] text-muted-foreground font-mono">{h.main}</span>
+                    <span className="text-[11px] text-muted-foreground font-mono">{h.grad}</span>
+                  </div>
+                )
+              })}
+            </div>
+            <p className="text-[11px] text-muted-foreground">Returns <span className="font-mono">{'{ main, grad, glow }'}</span> hex strings for Three.js/Canvas contexts.</p>
+          </div>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  37. Eyebrow                                                  */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="FOUNDATIONS"
+        title="Eyebrow"
+        subtitle="Standalone DM Mono label for section categorization. Use instead of raw className strings — it centralizes the typographic token."
+      >
+        <div className="rounded-md border border-border bg-card p-6 space-y-5">
+          <div className="space-y-1">
+            <Eyebrow>Default Eyebrow</Eyebrow>
+            <p className="text-[11px] text-muted-foreground font-mono mt-1">{`<Eyebrow>Default Eyebrow</Eyebrow>`}</p>
+          </div>
+          <div className="space-y-1">
+            <Eyebrow className="text-primary">With className override (text-primary)</Eyebrow>
+            <p className="text-[11px] text-muted-foreground font-mono mt-1">{`<Eyebrow className="text-primary">...</Eyebrow>`}</p>
+          </div>
+          <div className="space-y-1">
+            <Eyebrow className="text-emerald-600">With className override (text-emerald-600)</Eyebrow>
+            <p className="text-[11px] text-muted-foreground font-mono mt-1">{`<Eyebrow className="text-emerald-600">...</Eyebrow>`}</p>
+          </div>
+          <p className="text-xs text-muted-foreground border-t border-border pt-4">
+            The Eyebrow renders a <span className="font-mono">span</span> with DM Mono, 11px, uppercase, wide tracking. All instances of this label style in the codebase should use this component — not raw Tailwind classes.
+          </p>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  38. Checkbox                                                 */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="FORMS"
+        title="Checkbox"
+        subtitle="Base UI checkbox with checked, unchecked, indeterminate, and disabled states. Built on @base-ui/react/checkbox."
+      >
+        <div className="rounded-md border border-border bg-card p-6 space-y-6">
+          {/* Basic states */}
+          <div className="space-y-3">
+            <p className="text-xs font-medium text-muted-foreground">States</p>
+            <div className="flex flex-wrap items-center gap-6">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <Checkbox />
+                <span className="text-sm text-foreground">Unchecked</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <Checkbox defaultChecked />
+                <span className="text-sm text-foreground">Checked</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-not-allowed opacity-50">
+                <Checkbox disabled />
+                <span className="text-sm text-foreground">Disabled unchecked</span>
+              </label>
+              <label className="flex items-center gap-2 cursor-not-allowed opacity-50">
+                <Checkbox disabled defaultChecked />
+                <span className="text-sm text-foreground">Disabled checked</span>
+              </label>
+            </div>
+          </div>
+
+          {/* In a list context */}
+          <div className="space-y-3">
+            <p className="text-xs font-medium text-muted-foreground">In a list (select-all pattern)</p>
+            <div className="space-y-2 max-w-sm">
+              {['Fire Safety Requirements', 'Accessibility Standards', 'Structural Loads'].map((item) => (
+                <label key={item} className="flex items-center gap-2.5 cursor-pointer group">
+                  <Checkbox id={`chk-${item}`} />
+                  <span className="text-sm text-foreground group-hover:text-primary transition-colors duration-150">{item}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  40. Sidebar Nav (Contained Preview)                          */}
       {/* ============================================================ */}
       <Section
         eyebrow="NAVIGATION"

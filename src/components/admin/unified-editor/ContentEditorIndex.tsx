@@ -19,6 +19,7 @@ import { StatusBadge } from '@/components/ui/status-badge'
 import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -180,9 +181,7 @@ export const ContentEditorIndex = ({
           <div className="flex items-center justify-between border-b border-[#D4DAE3] px-4 py-3">
             <div className="flex items-center gap-2">
               <FolderTree className="h-3.5 w-3.5 text-[#4A5568]" />
-              <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
-                Topics
-              </span>
+              <Eyebrow>Topics</Eyebrow>
             </div>
             {selectedNodeId && (
               <button

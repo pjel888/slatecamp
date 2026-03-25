@@ -3,6 +3,14 @@
 import { useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { useDirtyState } from './DirtyStateProvider'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+import { Button } from '@/components/ui/button'
 
 // ─── Props ───────────────────────────────────────────────────
 
@@ -99,29 +107,34 @@ export const ContentBar = ({
       <Divider />
 
       {/* 7. Status dropdown */}
-      <select
-        value={status}
-        onChange={(e) => onStatusChange(e.target.value)}
-        className={`cursor-pointer rounded-sm border-0 px-2 py-1 text-xs font-medium transition-colors duration-150 ease-out focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]/30 ${STATUS_STYLES[status] ?? STATUS_STYLES.draft}`}
-      >
-        <option value="draft">Draft</option>
-        <option value="review">Review</option>
-        <option value="published">Published</option>
-      </select>
+      <Select value={status} onValueChange={onStatusChange}>
+        <SelectTrigger
+          size="sm"
+          className={`border-0 font-medium ${STATUS_STYLES[status] ?? STATUS_STYLES.draft}`}
+        >
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="draft">Draft</SelectItem>
+          <SelectItem value="review">Review</SelectItem>
+          <SelectItem value="published">Published</SelectItem>
+        </SelectContent>
+      </Select>
 
       <Divider />
 
       {/* 9. Difficulty dropdown */}
-      <select
-        value={difficultyLabel}
-        onChange={(e) => onDifficultyLabelChange(e.target.value)}
-        className="cursor-pointer rounded-sm border border-[#D4DAE3] bg-transparent px-2 py-1 text-xs text-[#4A5568] transition-colors duration-150 ease-out focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]/30"
-      >
-        <option value="">No difficulty</option>
-        <option value="Foundational">Foundational</option>
-        <option value="Intermediate">Intermediate</option>
-        <option value="Advanced">Advanced</option>
-      </select>
+      <Select value={difficultyLabel} onValueChange={onDifficultyLabelChange}>
+        <SelectTrigger size="sm">
+          <SelectValue placeholder="No difficulty" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="">No difficulty</SelectItem>
+          <SelectItem value="Foundational">Foundational</SelectItem>
+          <SelectItem value="Intermediate">Intermediate</SelectItem>
+          <SelectItem value="Advanced">Advanced</SelectItem>
+        </SelectContent>
+      </Select>
 
       <Divider />
 
@@ -142,45 +155,23 @@ export const ContentBar = ({
       <div className="flex-1" />
 
       {/* 14. Discard button */}
-      <button
-        type="button"
+      <Button
+        variant="secondary"
+        size="sm"
         onClick={() => window.location.reload()}
-        className="rounded-sm border border-[#D4DAE3] bg-transparent px-3 py-1.5 text-xs text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#8896A7] hover:text-[#1A2332]"
       >
         Discard
-      </button>
+      </Button>
 
       {/* 15. Save All button */}
-      <button
-        type="button"
+      <Button
+        size="sm"
         onClick={dispatchSave}
         disabled={isSaving}
-        className="inline-flex items-center gap-1.5 rounded-sm bg-[#1B3FC4] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-60"
+        loading={isSaving}
       >
-        {isSaving && (
-          <svg
-            className="h-3 w-3 animate-spin"
-            viewBox="0 0 24 24"
-            fill="none"
-            aria-hidden="true"
-          >
-            <circle
-              className="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              strokeWidth="4"
-            />
-            <path
-              className="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-            />
-          </svg>
-        )}
         Save All
-      </button>
+      </Button>
     </div>
   )
 }

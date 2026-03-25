@@ -3,6 +3,7 @@ import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { canReviewContent, getUserRole } from '@/lib/admin/roles'
 import { AdminShell } from './_components/AdminShell'
+import { getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { headers } from 'next/headers'
 
 export default async function AdminLayout({
@@ -31,8 +32,10 @@ export default async function AdminLayout({
     redirect(ROUTES.DASHBOARD)
   }
 
+  const attentionData = await getNeedsAttentionData()
+
   return (
-    <AdminShell role={role}>
+    <AdminShell role={role} badgeCounts={{ pendingReviews: attentionData.pendingReviews }}>
       {children}
     </AdminShell>
   )

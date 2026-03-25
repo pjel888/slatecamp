@@ -157,7 +157,7 @@ export function DevToolbar({
             setOpen(true)
           }}
           onPointerDown={onDrag}
-          className='cursor-grab active:cursor-grabbing flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-xl'
+          className='cursor-grab active:cursor-grabbing flex items-center gap-2 rounded-full border border-border bg-background/95 px-3 py-1.5 shadow-lg backdrop-blur-sm transition-all hover:shadow-lg'
         >
           <SCIcon icon={Wrench} size="xs" className='text-muted-foreground' />
           <SCIcon icon={ConnIcon} size="xs" className={connConfig.color} />

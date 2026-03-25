@@ -7,6 +7,7 @@ import {
   ArrowCounterClockwise,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -72,9 +73,7 @@ export function ModeCard({
         <div className='min-w-0'>
           <h3 className='text-sm font-semibold text-[#1A2332] leading-tight'>{title}</h3>
           {subtitle && (
-            <span className='text-[11px] font-bold uppercase tracking-widest text-[#8896A7]'>
-              {subtitle}
-            </span>
+            <Eyebrow>{subtitle}</Eyebrow>
           )}
         </div>
       </div>

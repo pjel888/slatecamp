@@ -11,6 +11,8 @@ import {
   Warning,
   Clock,
 } from '@phosphor-icons/react'
+import { SectionHeader } from '@/components/shared/section-header'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import {
@@ -20,6 +22,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
+import { Skeleton } from '@/components/ui/skeleton'
 import { getTaxonomyTree } from '@/lib/actions/taxonomy'
 import type { TaxonomyNode } from '@/types/app'
 import { cn } from '@/lib/utils'
@@ -192,11 +195,12 @@ export function SubjectDrillSelector({
 
             <div className='flex-1 overflow-y-auto px-4 pb-6 scrollbar-thin'>
               {loading ? (
-                <div className='flex flex-col items-center justify-center h-full py-20 space-y-4'>
-                  <div className='h-6 w-6 border-2 border-zinc-900 border-t-transparent rounded-full animate-spin' />
-                  <span className='text-xs font-medium text-zinc-400'>
-                    Loading topics...
-                  </span>
+                <div className='space-y-2 py-4'>
+                  <Skeleton className='h-8 w-full' />
+                  <Skeleton className='h-8 w-5/6' />
+                  <Skeleton className='h-8 w-full' />
+                  <Skeleton className='h-8 w-4/6' />
+                  <Skeleton className='h-8 w-full' />
                 </div>
               ) : (
                 <div className='space-y-0.5'>
@@ -212,18 +216,15 @@ export function SubjectDrillSelector({
               {selectedNode ? (
                 <div className='space-y-4 animate-in fade-in slide-in-from-right-2'>
                   <div className='p-4 bg-white rounded-sm border border-zinc-200 shadow-sm'>
-                    <p className='text-[11px] font-bold uppercase tracking-widest text-primary mb-1'>
-                      Selected Topic
-                    </p>
-                    <h4 className='text-sm font-bold text-zinc-900 leading-tight'>
-                      {selectedNode.name}
-                    </h4>
+                    <SectionHeader
+                      eyebrow="Selected Topic"
+                      title={selectedNode.name}
+                      level="card"
+                    />
 
                     <div className='mt-4 grid grid-cols-2 gap-4'>
                       <div>
-                        <p className='text-[11px] font-bold uppercase tracking-widest text-zinc-400'>
-                          Mastery
-                        </p>
+                        <Eyebrow>Mastery</Eyebrow>
                         <p
                           className={cn(
                             'text-xs font-bold',
@@ -239,9 +240,7 @@ export function SubjectDrillSelector({
                         </p>
                       </div>
                       <div>
-                        <p className='text-[11px] font-bold uppercase tracking-widest text-zinc-400'>
-                          Last Seen
-                        </p>
+                        <Eyebrow>Last Seen</Eyebrow>
                         <p className='text-xs font-bold text-zinc-600'>
                           {selectedNode.last_encountered
                             ? formatDistanceToNow(

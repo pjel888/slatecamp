@@ -21,6 +21,8 @@ interface Article extends Record<string, unknown> {
   created_at: string
   updated_at: string
   word_count?: number
+  questionCount?: number
+  hasCoverage?: boolean
 }
 
 interface ArticlesClientProps {
@@ -59,6 +61,26 @@ const buildColumns = (): Column<Article>[] => [
     header: 'Status',
     render: (row) => (
       <StatusBadge status={normalizeStatus(row.status)} />
+    ),
+  },
+  {
+    key: 'questionCount',
+    header: 'Questions',
+    type: 'number',
+    sortable: true,
+    render: (row) => (
+      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums">
+        {row.questionCount ?? 0}
+      </span>
+    ),
+  },
+  {
+    key: 'hasCoverage',
+    header: 'Coverage',
+    render: (row) => (
+      row.questionCount && row.questionCount > 0
+        ? <span className="text-[11px] font-medium text-[#2D9F6F]">Complete</span>
+        : <span className="text-[11px] font-medium text-muted-foreground">GAPS</span>
     ),
   },
   {

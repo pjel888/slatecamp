@@ -1,8 +1,8 @@
 'use client'
 
-import { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef, useCallback, useState } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { X } from '@phosphor-icons/react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { cn } from '@/lib/utils'
@@ -10,6 +10,7 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import { Z_INDEX, ICON_TIER_OPACITY } from './types'
 import type { SidebarNavItemConfig } from './types'
+import { ConfirmDialog } from '@/components/ui/dialog'
 
 // ---------------------------------------------------------------------------
 // MobileDrawer — full-screen slide-in nav drawer for mobile
@@ -102,8 +103,11 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
 
 export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawerProps) => {
   const pathname = usePathname()
+  const router = useRouter()
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const { activeSession } = useActiveSession()
+  const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
+  const [pendingHref, setPendingHref] = useState<string | null>(null)
 
   // Close on route change
   useEffect(() => {
@@ -151,18 +155,22 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
   const handleNavigate = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       if (activeSession) {
-        const confirmed = window.confirm(
-          'You have an active session. Are you sure you want to leave?',
-        )
-        if (!confirmed) {
-          e.preventDefault()
-          return
-        }
+        e.preventDefault()
+        const href = e.currentTarget.getAttribute('href') ?? '/'
+        setPendingHref(href)
+        setShowLeaveConfirm(true)
+        return
       }
       onClose()
     },
     [activeSession, onClose],
   )
+
+  const handleLeaveConfirm = useCallback(() => {
+    if (pendingHref) router.push(pendingHref)
+    setPendingHref(null)
+    onClose()
+  }, [pendingHref, router, onClose])
 
   // Reduced-motion detection (client-side only, safe for SSR)
   const prefersReducedMotion =
@@ -182,6 +190,16 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
 
   return (
     <>
+      <ConfirmDialog
+        open={showLeaveConfirm}
+        onOpenChange={setShowLeaveConfirm}
+        title="Leave active session?"
+        description="You have an active session. Are you sure you want to leave?"
+        confirmLabel="Leave"
+        cancelLabel="Stay"
+        onConfirm={handleLeaveConfirm}
+      />
+
       {/* Backdrop — z-index 49, behind drawer */}
       <div
         aria-hidden="true"
@@ -262,7 +280,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
             <div key={group.key}>
               {/* Group label — always visible in drawer (expanded state) */}
               <div
-                className="flex h-[22px] items-end text-[10px] uppercase tracking-[0.08em] text-[#8896A7]"
+                className="flex h-[22px] items-end text-[11px] uppercase tracking-[0.08em] text-[#8896A7]"
                 style={{ paddingLeft: 14, userSelect: 'none' }}
               >
                 {group.label}
@@ -321,7 +339,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
                   {userDisplay.name}
                 </p>
                 {tier && tier !== 'free' && (
-                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[10px] font-medium uppercase text-[#1B3FC4]">
+                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[11px] font-medium uppercase text-[#1B3FC4]">
                     {tier}
                   </span>
                 )}

@@ -113,6 +113,31 @@ export const getContentBySubject = async (): Promise<SubjectContentCount[]> => {
   }))
 }
 
+export interface NeedsAttentionData {
+  pendingReviews: number
+  missingRationale: number
+}
+
+export const getNeedsAttentionData = async (): Promise<NeedsAttentionData> => {
+  const supabase = await createClient()
+
+  const [reviews, rationale] = await Promise.all([
+    supabase
+      .from('wiki_articles')
+      .select('article_id', { count: 'exact', head: true })
+      .eq('status', 'review'),
+    supabase
+      .from('questions')
+      .select('question_id', { count: 'exact', head: true })
+      .is('rationale', null),
+  ])
+
+  return {
+    pendingReviews: reviews.count || 0,
+    missingRationale: rationale.count || 0,
+  }
+}
+
 export const getCriticalCoverageGap = async (): Promise<CoverageGap | null> => {
   const supabase = await createClient()
 

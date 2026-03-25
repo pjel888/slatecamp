@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
+import { Eyebrow } from "@/components/ui/eyebrow";
 import Link from "next/link";
 
 export default function AdminLandingPage() {
@@ -51,9 +52,7 @@ export default function AdminLandingPage() {
           {error && <p className="mt-4 text-center text-xs text-[#D64545]">{error}</p>}
         </div>
 
-        <p className="text-center text-[11px] text-[#8896A7] uppercase tracking-widest">
-          Secure Environment
-        </p>
+        <Eyebrow className="block text-center">Secure Environment</Eyebrow>
       </div>
     </div>
   );

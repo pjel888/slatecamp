@@ -122,7 +122,7 @@ export const ElaborativeInterrogation = ({
           {headerIcon}
         </div>
         <div className="flex-1">
-          <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
             {headerLabel}
           </div>
           <div className="text-[13px] text-[#3D3D3A] mt-px dark:text-[#C8C6C0]">
@@ -225,7 +225,7 @@ export const ElaborativeInterrogation = ({
         {/* Reveal text */}
         {isRevealed && sanitizedAnswer && (
           <div className="mt-4 p-4 bg-[#F5F5F5] rounded-[10px] dark:bg-[#252420]">
-            <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5">
+            <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5">
               Why This Matters
             </div>
             <div

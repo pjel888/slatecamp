@@ -16,6 +16,7 @@ import {
   Warning,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { TestMode } from '@/types/app'
@@ -148,9 +149,7 @@ export function ModeIntroScreen({
                   <SCIcon icon={SpecIcon} size='md' className='text-zinc-400' />
                 </div>
                 <div>
-                  <p className='text-[11px] font-black uppercase tracking-widest text-zinc-400'>
-                    {spec.label}
-                  </p>
+                  <Eyebrow>{spec.label}</Eyebrow>
                   <p className='text-sm font-bold text-zinc-900'>
                     {spec.value}
                   </p>

@@ -4,6 +4,7 @@ import * as React from 'react'
 import { ArrowUpDown, ArrowUp, ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
+import { Checkbox } from '@/components/ui/checkbox'
 import { SearchInput } from '@/components/ui/input'
 import { TableRowSkeleton } from '@/components/ui/skeleton'
 import { EmptyState } from '@/components/shared/empty-state'
@@ -306,6 +307,7 @@ function DataTable<T extends Record<string, unknown>>({
           placeholder={searchPlaceholder}
           onChange={setSearchQuery}
           size="md"
+          aria-label={searchPlaceholder || 'Search table'}
         />
       )}
 
@@ -320,23 +322,17 @@ function DataTable<T extends Record<string, unknown>>({
       )}
 
       {/* Table container */}
-      <div className="rounded-lg border border-border overflow-hidden">
+      <div className="rounded-lg border border-border overflow-hidden" aria-live="polite">
         <table className="w-full">
           {/* Header */}
           <thead className="bg-muted/30">
             <tr>
               {selectable && (
-                <th className="px-4 py-3 w-10">
-                  <input
-                    type="checkbox"
+                <th className="px-4 py-3 w-10" scope="col">
+                  <Checkbox
                     checked={allVisibleSelected}
-                    ref={(el) => {
-                      if (el) {
-                        el.indeterminate = someVisibleSelected && !allVisibleSelected
-                      }
-                    }}
-                    onChange={handleToggleAll}
-                    className="rounded"
+                    indeterminate={someVisibleSelected && !allVisibleSelected}
+                    onCheckedChange={handleToggleAll}
                     aria-label="Select all rows"
                   />
                 </th>
@@ -344,6 +340,7 @@ function DataTable<T extends Record<string, unknown>>({
               {columns.map((column) => (
                 <th
                   key={column.key}
+                  scope="col"
                   className={cn(
                     'px-4 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wide',
                     column.type === 'number' && 'text-right',
@@ -420,7 +417,7 @@ function DataTable<T extends Record<string, unknown>>({
                             // Don't trigger row click when clicking checkboxes or buttons
                             const target = e.target as HTMLElement
                             if (
-                              target.closest('input[type="checkbox"]') ||
+                              target.closest('[data-slot="checkbox"]') ||
                               target.closest('button') ||
                               target.closest('a')
                             ) {
@@ -433,11 +430,9 @@ function DataTable<T extends Record<string, unknown>>({
                   >
                     {selectable && (
                       <td className="px-4 py-3 w-10">
-                        <input
-                          type="checkbox"
+                        <Checkbox
                           checked={isSelected ?? false}
-                          onChange={() => handleToggleRow(rowKey)}
-                          className="rounded"
+                          onCheckedChange={() => handleToggleRow(rowKey)}
                           aria-label={`Select row ${rowKey}`}
                         />
                       </td>

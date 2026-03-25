@@ -8,6 +8,7 @@ import {
   CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
 import { cn } from '@/lib/utils'
+import { getScoreColor } from '@/components/shared/score-display'
 import type { ReadinessTrajectoryPoint } from '@/lib/actions/analytics'
 
 interface Props {
@@ -34,7 +35,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
                 'text-xl font-extrabold tracking-tight tabular-nums',
-                clamped < 50 ? 'text-destructive' : clamped < 75 ? 'text-warning' : 'text-emerald'
+                getScoreColor(clamped).text
               )}>
                 {clamped}%
               </span>

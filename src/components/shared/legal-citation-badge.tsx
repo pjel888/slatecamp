@@ -47,7 +47,7 @@ const codeConfig: Record<LegalCode, { label: string; bg: string; text: string }>
 }
 
 const baseClasses =
-  'font-mono text-[10px] font-medium px-1.5 py-0.5 rounded inline-flex items-center gap-1'
+  'font-mono text-[11px] font-medium px-1.5 py-0.5 rounded inline-flex items-center gap-1'
 
 const LegalCitationBadge = ({ code, href, className }: LegalCitationBadgeProps) => {
   const config = codeConfig[code]

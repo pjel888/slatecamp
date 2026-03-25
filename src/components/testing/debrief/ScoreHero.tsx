@@ -2,6 +2,7 @@
 
 import type { ScoreBand } from '@/types/testing'
 import { SCORE_BAND_THRESHOLDS } from '@/types/testing'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -20,12 +21,7 @@ export const ScoreHero = ({ correct, total, percentage, scoreBand }: ScoreHeroPr
   return (
     <div className="bg-card rounded-lg border border-border p-8 text-center">
       {/* Section label */}
-      <p
-        className="text-[11px] font-medium uppercase tracking-widest"
-        style={{ color: 'var(--muted-foreground)' }}
-      >
-        Session Complete
-      </p>
+      <Eyebrow>Session Complete</Eyebrow>
 
       {/* Score fraction */}
       <p

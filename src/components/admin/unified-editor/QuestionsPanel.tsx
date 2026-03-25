@@ -5,6 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { useDirtyState } from './DirtyStateProvider'
 import { CampModePreview } from '@/components/admin/preview/CampModePreview'
 import { DifficultyBar } from '@/components/ui/difficulty-bar'
+import { Checkbox } from '@/components/ui/checkbox'
 import type {
   QuestionData,
   EIPromptData,
@@ -388,11 +389,9 @@ const QuestionCardExpanded = ({
 
           {/* Is assessment */}
           <label className="flex cursor-pointer items-center gap-2">
-            <input
-              type="checkbox"
+            <Checkbox
               checked={question.is_assessment}
-              onChange={(e) => onUpdate({ is_assessment: e.target.checked })}
-              className="h-3.5 w-3.5 rounded-sm accent-[#1B3FC4]"
+              onCheckedChange={(checked) => onUpdate({ is_assessment: !!checked })}
             />
             <span className="text-xs font-medium text-[#4A5568]">
               Diagnostic only
@@ -581,7 +580,7 @@ const DraftQuestionCard = ({
         }}
       >
         <div className="flex items-center gap-2 px-3 py-2.5">
-          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#1B3FC4] text-[9px] font-bold text-white">
+          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#1B3FC4] text-[11px] font-bold text-white">
             N
           </span>
           <DifficultyBar value={draft.difficulty} />
@@ -600,7 +599,7 @@ const DraftQuestionCard = ({
       {/* Header */}
       <div className="flex items-center justify-between border-b border-[#D4DAE3] bg-[#EEF2FC] px-3 py-2">
         <div className="flex items-center gap-2">
-          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#1B3FC4] text-[9px] font-bold text-white">
+          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#1B3FC4] text-[11px] font-bold text-white">
             N
           </span>
           <span className="text-xs font-semibold text-[#1B3FC4]">New Question</span>
@@ -743,11 +742,9 @@ const DraftQuestionCard = ({
           </div>
 
           <label className="flex cursor-pointer items-center gap-2">
-            <input
-              type="checkbox"
+            <Checkbox
               checked={draft.is_assessment}
-              onChange={(e) => handleUpdate({ is_assessment: e.target.checked })}
-              className="h-3.5 w-3.5 rounded-sm accent-[#1B3FC4]"
+              onCheckedChange={(checked) => handleUpdate({ is_assessment: !!checked })}
             />
             <span className="text-xs font-medium text-[#4A5568]">
               Diagnostic only

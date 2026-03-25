@@ -299,7 +299,7 @@ const TreeNode = React.memo(({
         </span>
 
         {/* Right-aligned: counts and/or ALE ID suffix in DM Mono */}
-        <span className="ml-auto flex shrink-0 items-center gap-0.5 font-[family-name:var(--font-dm-mono)] text-[9px] text-muted-foreground">
+        <span className="ml-auto flex shrink-0 items-center gap-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
           {showCounts && (node.article_count || node.question_count) ? (
             <>
               {node.article_count != null && node.article_count > 0 && (

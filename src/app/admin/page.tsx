@@ -10,7 +10,7 @@ import {
   AlertTriangle,
   LayoutDashboard,
 } from 'lucide-react'
-import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap } from '@/lib/actions/admin/dashboard'
+import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
@@ -18,6 +18,7 @@ import { ActionCard } from '@/components/shared/action-card'
 import { Card } from '@/components/ui/card'
 import { EventBadge } from '@/components/ui/event-badge'
 import { Eyebrow } from '@/components/ui/eyebrow'
+import { NeedsAttentionCard } from '@/components/admin/NeedsAttentionCard'
 
 export const metadata: Metadata = { title: 'Dashboard — SlateCamp Admin' }
 
@@ -75,10 +76,11 @@ const quickActions = [
 /* ------------------------------------------------------------------ */
 
 const AdminDashboardPage = async () => {
-  const [data, subjectCounts, coverageGap] = await Promise.all([
+  const [data, subjectCounts, coverageGap, attentionData] = await Promise.all([
     getAdminDashboardData(),
     getContentBySubject(),
     getCriticalCoverageGap(),
+    getNeedsAttentionData(),
   ])
 
   const recentLogs = data.recentAuditLogs.slice(0, 10)
@@ -122,7 +124,10 @@ const AdminDashboardPage = async () => {
         </div>
       )}
 
-      {/* Section 3: Stat Cards */}
+      {/* Section 3: Needs Attention */}
+      <NeedsAttentionCard {...attentionData} />
+
+      {/* Section 4: Stat Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
           eyebrow="Total Questions"
@@ -164,7 +169,7 @@ const AdminDashboardPage = async () => {
                       {subject.name}
                     </span>
                     {subject.ale_id && (
-                      <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">
+                      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
                         {subject.ale_id}
                       </span>
                     )}
@@ -179,11 +184,11 @@ const AdminDashboardPage = async () => {
                     <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground tabular-nums w-8 text-right">
                       {subject.questionCount}
                     </span>
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">q</span>
+                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">q</span>
                     <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground tabular-nums w-6 text-right">
                       {subject.articleCount}
                     </span>
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">a</span>
+                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">a</span>
                   </div>
                 </div>
               )
@@ -235,7 +240,7 @@ const AdminDashboardPage = async () => {
                 <div key={log.id} className="flex items-start gap-3">
                   {/* Avatar circle */}
                   <div className="h-7 w-7 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[10px] font-medium text-primary">
+                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-primary">
                       {getInitials(log.actor_id)}
                     </span>
                   </div>

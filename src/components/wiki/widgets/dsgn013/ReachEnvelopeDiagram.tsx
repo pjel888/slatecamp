@@ -45,7 +45,7 @@ export const ReachEnvelopeDiagram = () => {
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
       <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
-        <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
           Interactive · Reach Envelope Zones
         </div>
       </div>
@@ -78,7 +78,7 @@ export const ReachEnvelopeDiagram = () => {
             { label: 'Side reach', max: d.side.max, comfortable: d.side.comfortable },
           ].map((zone) => (
             <div key={zone.label} className="bg-[#F5F5F5] rounded-lg p-3 dark:bg-[#252420]">
-              <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-2">
+              <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-2">
                 {zone.label}
               </div>
               <div className="font-[var(--font-dm-mono)] text-sm font-medium text-[#1B3FC4] mb-0.5">
@@ -95,7 +95,7 @@ export const ReachEnvelopeDiagram = () => {
 
         {/* Notes */}
         <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B3FC4]/10 dark:text-[#C8C6C0]">
-          <div className="font-[var(--font-dm-mono)] text-[9px] uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5 font-medium">
+          <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5 font-medium">
             {d.label} — Design Notes
           </div>
           {d.notes}

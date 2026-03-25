@@ -9,6 +9,7 @@ import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { cn } from '@/lib/utils'
 import { useWikiNavigation } from '@/components/wiki/WikiNavigationContext'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { TaxonomyTree } from '@/components/shared/taxonomy-tree'
 import type { TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 
@@ -166,9 +167,7 @@ export const WikiSidebar = ({
         <div className="flex flex-col flex-1 min-h-0">
           <div className="px-3 pt-3 pb-1.5 flex items-center gap-1.5 shrink-0">
             <SCIcon icon={BookOpen} size="xs" className="text-muted-foreground" />
-            <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
-              Syllabus
-            </span>
+            <Eyebrow>Syllabus</Eyebrow>
           </div>
           <TaxonomyTree
             nodes={syllabusTree}
@@ -188,9 +187,7 @@ export const WikiSidebar = ({
         <div className="flex flex-col shrink-0 border-t border-border">
           <div className="px-3 pt-3 pb-1.5 flex items-center gap-1.5">
             <SCIcon icon={Scales} size="xs" className="text-muted-foreground" />
-            <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
-              Laws &amp; Codes
-            </span>
+            <Eyebrow>Laws &amp; Codes</Eyebrow>
           </div>
           <TaxonomyTree
             nodes={lawsTree}

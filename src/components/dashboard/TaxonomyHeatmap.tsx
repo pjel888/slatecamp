@@ -33,7 +33,7 @@ interface TaxonomyHeatmapProps {
 const stateClassMap: Record<NodeState, string> = {
   mastered: 'bg-[#2D9F6F]',
   familiar: 'bg-[#E8853A]',
-  danger: 'bg-[#D64545] animate-pulse',  // subtle pulse — UX Strategy Section 8
+  danger: 'bg-[#D4951A] animate-pulse',  // Amber — needs work; red is reserved for functional errors
   unexplored: 'bg-[#D4DAE3]',
   thin_coverage: 'bg-[#D4DAE3] ring-1 ring-inset ring-[#8896A7]/40',
 }
@@ -159,7 +159,7 @@ export const TaxonomyHeatmap = ({
             <span>Developing</span>
           </div>
           <div className='flex items-center gap-1.5'>
-            <span className='h-2 w-2 rounded-full bg-[#D64545]' />
+            <span className='h-2 w-2 rounded-full bg-[#D4951A]' />
             <span>Needs work</span>
           </div>
           <div className='flex items-center gap-1.5'>

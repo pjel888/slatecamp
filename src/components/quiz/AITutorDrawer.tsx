@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Brain, CircleNotch, Warning } from '@phosphor-icons/react'
 import { getCorrectOptionId } from '@/lib/utils/question'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { CloseButton } from '@/components/ui/close-button'
 import { cn } from '@/lib/utils'
 import type { Question, Choice } from '@/types/app'
@@ -130,6 +131,7 @@ export function AITutorDrawer({
               {/* Body */}
               {loading && (
                 <div className="flex items-center gap-2 text-zinc-400 py-2">
+                  {/* Spinner: AI response throbber — inline indicator, not a content placeholder */}
                   <SCIcon icon={CircleNotch} size="sm" className="animate-spin" />
                   <span className="text-[11px] font-medium">Preparing your explanation…</span>
                 </div>
@@ -146,9 +148,7 @@ export function AITutorDrawer({
                 <div className="space-y-3">
                   {response.misconception && (
                     <div className="space-y-1">
-                      <p className="text-[11px] font-black uppercase tracking-widest text-[#D4951A]">
-                        Misconception
-                      </p>
+                      <Eyebrow className="text-[#D4951A]">Misconception</Eyebrow>
                       <p className="text-[13px] text-zinc-600 leading-[1.65] max-w-[65ch]">
                         {response.misconception}
                       </p>
@@ -157,9 +157,7 @@ export function AITutorDrawer({
 
                   {response.principle && (
                     <div className="space-y-1">
-                      <p className="text-[11px] font-black uppercase tracking-widest text-primary">
-                        Principle
-                      </p>
+                      <Eyebrow className="text-primary">Principle</Eyebrow>
                       <p className="text-[13px] text-zinc-700 leading-[1.65] max-w-[65ch]">
                         {response.principle}
                       </p>

@@ -14,20 +14,20 @@ interface SectionHeaderProps {
 const levelStyles = {
   page: {
     eyebrow:
-      "font-[family-name:var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-widest text-muted-foreground",
+      "font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground",
     title:
       "font-[family-name:var(--font-display)] font-extrabold text-xl tracking-tight",
     subtitle: "text-sm text-muted-foreground",
   },
   section: {
     eyebrow:
-      "font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest text-muted-foreground",
+      "font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground",
     title: "font-sans font-medium text-base",
     subtitle: "text-xs text-muted-foreground",
   },
   card: {
     eyebrow:
-      "font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest text-muted-foreground mb-0.5",
+      "font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground mb-0.5",
     title: "font-sans font-medium text-sm",
     subtitle: "text-xs text-muted-foreground",
   },

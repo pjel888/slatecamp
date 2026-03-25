@@ -18,7 +18,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                 <th
                   key={i}
                   className={cn(
-                    "font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest text-[#A8A8A5] px-2.5 py-2 text-left border-b border-[#E0DED8] dark:border-[#3A3835]",
+                    "font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-[#A8A8A5] px-2.5 py-2 text-left border-b border-[#E0DED8] dark:border-[#3A3835]",
                     i === columns.length - 1 && hasSourceColumn && "hidden sm:table-cell"
                   )}
                 >
@@ -34,7 +34,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                   <tr key={i} className="bg-[#1B3FC414] dark:bg-[#1B3FC420]">
                     <td
                       colSpan={columns.length}
-                      className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-widest text-[#1B3FC4] px-2.5 py-1.5"
+                      className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-[#1B3FC4] px-2.5 py-1.5"
                     >
                       {row.parameter}
                     </td>
@@ -69,7 +69,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                     {row.value}
                   </td>
                   {hasSourceColumn && (
-                    <td className="px-2.5 py-2.5 font-[var(--font-dm-mono)] text-[10px] text-[#A8A8A5] hidden sm:table-cell">
+                    <td className="px-2.5 py-2.5 font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5] hidden sm:table-cell">
                       {row.source}
                     </td>
                   )}

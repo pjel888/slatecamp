@@ -40,7 +40,7 @@ export const StormTimerBar = ({
       style={{ position: 'relative' }}
     >
       <div
-        className="h-full transition-all duration-1000 linear"
+        className="h-full transition-all duration-300 linear"
         style={{
           width: `${pct}%`,
           backgroundColor: barColor,

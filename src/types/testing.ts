@@ -198,7 +198,7 @@ export const SCORE_BAND_THRESHOLDS: Record<ScoreBand, { min: number; color: stri
   },
   foundation: {
     min: 0,
-    color: 'var(--warm-red)',
+    color: 'var(--muted-foreground)',
     copy: 'This is where the learning happens. The topics you struggled with are now your roadmap.',
   },
 }

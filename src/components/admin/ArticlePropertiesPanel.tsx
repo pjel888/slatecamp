@@ -1,6 +1,14 @@
 'use client'
 
 import { useState } from 'react'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ---------------------------------------------------------------------------
 // Types
@@ -47,12 +55,7 @@ interface SectionProps {
 
 const Section = ({ label, children }: SectionProps) => (
   <div className="px-4 py-3 border-b border-[#D4DAE3] last:border-b-0">
-    <p
-      className="mb-2 text-[11px] font-medium uppercase tracking-widest text-[#8896A7]"
-      style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
-    >
-      {label}
-    </p>
+    <Eyebrow className="mb-2 block">{label}</Eyebrow>
     {children}
   </div>
 )
@@ -99,12 +102,7 @@ export const ArticlePropertiesPanel = ({
     <div className="w-[280px] shrink-0 border-l border-[#D4DAE3] overflow-y-auto bg-white flex flex-col">
       {/* Header */}
       <div className="flex shrink-0 items-center justify-between border-b border-[#D4DAE3] px-4 py-2.5">
-        <span
-          className="text-[11px] font-medium uppercase tracking-widest text-[#8896A7]"
-          style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
-        >
-          Properties
-        </span>
+        <Eyebrow>Properties</Eyebrow>
         <button
           type="button"
           onClick={() => setCollapsed(true)}
@@ -120,29 +118,36 @@ export const ArticlePropertiesPanel = ({
 
       {/* STATUS */}
       <Section label="Status">
-        <select
+        <Select
           value={status ?? 'draft'}
-          onChange={e => onFieldChange?.('status', e.target.value)}
-          className="w-full rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150"
+          onValueChange={val => onFieldChange?.('status', val)}
         >
-          <option value="draft">Draft</option>
-          <option value="review">In Review</option>
-          <option value="published">Published</option>
-        </select>
+          <SelectTrigger className="w-full">
+            <SelectValue />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="draft">Draft</SelectItem>
+            <SelectItem value="review">In Review</SelectItem>
+            <SelectItem value="published">Published</SelectItem>
+          </SelectContent>
+        </Select>
       </Section>
 
       {/* DIFFICULTY */}
       <Section label="Difficulty">
-        <select
+        <Select
           value={difficultyLabel ?? ''}
-          onChange={e => onFieldChange?.('difficultyLabel', e.target.value)}
-          className="w-full rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150"
+          onValueChange={val => onFieldChange?.('difficultyLabel', val)}
         >
-          <option value="">— Select —</option>
-          <option value="Foundational">Foundational</option>
-          <option value="Intermediate">Intermediate</option>
-          <option value="Advanced">Advanced</option>
-        </select>
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="— Select —" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="Foundational">Foundational</SelectItem>
+            <SelectItem value="Intermediate">Intermediate</SelectItem>
+            <SelectItem value="Advanced">Advanced</SelectItem>
+          </SelectContent>
+        </Select>
       </Section>
 
       {/* TAXONOMY */}

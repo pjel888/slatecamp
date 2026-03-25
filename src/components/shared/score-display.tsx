@@ -253,5 +253,15 @@ const ScoreDisplay = ({
   )
 }
 
-export { ScoreDisplay, getScoreColor }
+// --- Hex variant for Canvas/SVG contexts ---
+const getScoreColorHex = (value: number) => {
+  if (value >= 70)
+    return { main: '#2D9F6F', grad: '#34D399', glow: 'rgba(45,159,111,0.3)' }
+  if (value >= 40)
+    return { main: '#4A5568', grad: '#718096', glow: 'rgba(74,85,104,0.2)' }
+  return { main: '#8896A7', grad: '#A0AEC0', glow: 'rgba(136,150,167,0.15)' }
+  // NEVER red for low scores
+}
+
+export { ScoreDisplay, getScoreColor, getScoreColorHex }
 export type { ScoreDisplayProps }

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Check, X, Flag } from 'lucide-react'
 import type { QuestionReviewItem } from '@/types/testing'
 import { ERROR_TAG_LABELS } from '@/types/testing'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -159,12 +160,7 @@ export const QuestionReviewStrip = ({ items, onRetryWrong }: QuestionReviewStrip
   return (
     <div>
       {/* Section label */}
-      <p
-        className="mb-3 text-[11px] font-medium uppercase tracking-widest"
-        style={{ color: 'var(--muted-foreground)' }}
-      >
-        Question Review
-      </p>
+      <Eyebrow className="mb-3 block">Question Review</Eyebrow>
 
       {/* Scrollable tile strip */}
       <div

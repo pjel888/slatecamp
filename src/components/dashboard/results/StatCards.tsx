@@ -9,6 +9,7 @@ import {
   TrendDown,
 } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import { cn } from '@/lib/utils'
 import type { DebriefData } from '@/lib/actions/debrief'
 
@@ -39,7 +40,7 @@ export const StatCards = ({ sessionDurationMs, total, debrief }: StatCardsProps)
         <div className='text-lg font-extrabold text-[#1A2332]'>
           {sessionDurationMs ? formatDuration(sessionDurationMs) : '—'}
         </div>
-        <span className='text-[11px] text-[#8896A7] uppercase tracking-widest font-bold'>Duration</span>
+        <Eyebrow>Duration</Eyebrow>
       </div>
 
       {/* Avg time per Q */}
@@ -48,7 +49,7 @@ export const StatCards = ({ sessionDurationMs, total, debrief }: StatCardsProps)
         <div className='text-lg font-extrabold text-[#1A2332]'>
           {debrief && debrief.avgTimeMs > 0 ? `${Math.round(debrief.avgTimeMs / 1000)}s` : sessionDurationMs && total > 0 ? `${Math.round(sessionDurationMs / total / 1000)}s` : '—'}
         </div>
-        <span className='text-[11px] text-[#8896A7] uppercase tracking-widest font-bold'>Avg / Question</span>
+        <Eyebrow>Avg / Question</Eyebrow>
       </div>
 
       {/* Readiness delta */}
@@ -59,17 +60,16 @@ export const StatCards = ({ sessionDurationMs, total, debrief }: StatCardsProps)
             <div className='text-lg font-extrabold text-[#1A2332]'>
               {Math.round(debrief.readinessBefore)}% → {Math.round(debrief.readinessAfter)}%
             </div>
-            <span className={cn(
-              'text-[11px] uppercase tracking-widest font-bold',
+            <Eyebrow className={cn(
               readinessDelta !== null && readinessDelta > 0 ? 'text-[#2D9F6F]' : readinessDelta !== null && readinessDelta < 0 ? 'text-[#D64545]' : 'text-[#8896A7]',
             )}>
               {readinessDelta !== null && readinessDelta > 0 ? '+' : ''}{readinessDelta ?? 0} Readiness
-            </span>
+            </Eyebrow>
           </>
         ) : (
           <>
             <div className='text-lg font-extrabold text-[#2D9F6F]'>Updated</div>
-            <span className='text-[11px] text-[#8896A7] uppercase tracking-widest font-bold'>Readiness</span>
+            <Eyebrow>Readiness</Eyebrow>
           </>
         )}
       </div>
@@ -80,11 +80,11 @@ export const StatCards = ({ sessionDurationMs, total, debrief }: StatCardsProps)
         <div className='text-lg font-extrabold text-[#1A2332]'>
           {debrief ? debrief.answerChangeCount : '—'}
         </div>
-        <span className='text-[11px] text-[#8896A7] uppercase tracking-widest font-bold'>
+        <Eyebrow>
           {debrief && debrief.answerChangeCount > 0
             ? `${debrief.answerChangesCorrect} turned correct`
             : 'Answer Changes'}
-        </span>
+        </Eyebrow>
       </div>
     </div>
   )

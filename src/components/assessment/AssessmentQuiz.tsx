@@ -12,6 +12,7 @@ import {
   updateQuizSession,
 } from '@/lib/actions/quiz'
 import { completeAssessment } from '@/lib/actions/assessment'
+import { Skeleton } from '@/components/ui/skeleton'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -162,12 +163,21 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   // ── Loading state ───────────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#F5F7FA] flex items-center justify-center">
-        <div className="text-center space-y-3">
-          <div className="w-8 h-8 border-2 border-[#1B3FC4] border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-[#4A5568] text-sm font-medium">
-            Preparing your assessment...
-          </p>
+      <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
+        <div className="shrink-0 h-16 bg-white border-b border-[#D4DAE3]" />
+        <div className="shrink-0 h-1 bg-[#D4DAE3]/40" />
+        <div className="flex-1 flex items-start justify-center">
+          <div className="w-full max-w-2xl px-5 py-8 space-y-6">
+            <Skeleton className="h-4 w-1/3" />
+            <Skeleton className="h-6 w-full" />
+            <Skeleton className="h-6 w-5/6" />
+            <div className="space-y-2.5 pt-2">
+              <Skeleton className="h-14 w-full rounded-md" />
+              <Skeleton className="h-14 w-full rounded-md" />
+              <Skeleton className="h-14 w-full rounded-md" />
+              <Skeleton className="h-14 w-full rounded-md" />
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -194,14 +204,14 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   if (calculatingScore) {
     return (
       <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5F5F5]">
-        <div className="text-center space-y-4">
-          <div className="w-10 h-10 border-2 border-[#1B3FC4] border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="font-[family-name:var(--font-syne)] text-lg font-bold text-[#1A2332]">
-            Calculating your Readiness Score...
-          </p>
-          <p className="text-sm text-[#4A5568] max-w-xs mx-auto">
-            {totalQuestions} questions analyzed across {new Set(questions.map((q) => q.topic_id)).size} topics.
-          </p>
+        <div className="w-full max-w-xs space-y-4 px-4">
+          <Skeleton className="h-6 w-3/4 mx-auto" />
+          <Skeleton className="h-4 w-full" />
+          <Skeleton className="h-4 w-2/3 mx-auto" />
+          <div className="pt-2 space-y-2">
+            <Skeleton className="h-3 w-full" />
+            <Skeleton className="h-3 w-5/6 mx-auto" />
+          </div>
         </div>
       </div>
     )
@@ -342,6 +352,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
             >
               {completing ? (
                 <span className="flex items-center gap-2">
+                  {/* Spinner: inline button loading */}
                   <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                   Completing...
                 </span>

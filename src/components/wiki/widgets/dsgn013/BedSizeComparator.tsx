@@ -55,7 +55,7 @@ export const BedSizeComparator = () => {
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
       <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
-        <div className="font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
           Interactive · Tap a bed to see its clearance requirements
         </div>
       </div>
@@ -95,7 +95,7 @@ export const BedSizeComparator = () => {
                   {b.name.toUpperCase()}
                 </text>
               </svg>
-              <div className="font-[var(--font-dm-mono)] text-[10px] text-[#737370] mt-2 uppercase tracking-[0.08em]">
+              <div className="font-[var(--font-dm-mono)] text-[11px] text-[#737370] mt-2 uppercase tracking-[0.08em]">
                 {b.name}
               </div>
               <div className="font-[var(--font-dm-mono)] text-[11px] text-[#1B3FC4] font-medium mt-0.5">

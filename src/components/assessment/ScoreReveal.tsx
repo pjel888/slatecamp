@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { AnimatedScore } from './AnimatedScore'
+import { getScoreColorHex } from '@/components/shared/score-display'
 import type { AssessmentSubjectScore, TrailRecommendation } from '@/types/app'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -17,10 +18,10 @@ interface ScoreRevealProps {
 // ─── Zone Colors (UX Strategy Section 4) ─────────────────────────────────
 
 const getZoneColor = (score: number): string => {
-  if (score < 40) return '#E63329'   // Signal Red (UX Strategy --red)
-  if (score < 70) return '#E8853A'   // Camp Orange
-  if (score < 85) return '#1B7A3C'   // Signal Green (UX Strategy --green)
-  return '#1B3FC4'                    // Cobalt Blue
+  if (score < 40) return getScoreColorHex(score).main  // neutral muted — never red for low scores
+  if (score < 70) return '#E8853A'                     // Camp Orange
+  if (score < 85) return '#1B7A3C'                     // Signal Green (UX Strategy --green)
+  return '#1B3FC4'                                     // Cobalt Blue
 }
 
 // ─── Score Messages (Exact Copy from UX Strategy Section 4) ──────────────
@@ -39,7 +40,7 @@ const getRetakerMessage = (score: number): string =>
 // ─── Subject Bar Color ───────────────────────────────────────────────────
 
 const getBarColor = (accuracy: number): string => {
-  if (accuracy < 40) return '#E63329'
+  if (accuracy < 40) return getScoreColorHex(accuracy).main  // neutral muted — never red for low scores
   if (accuracy < 70) return '#D4951A'
   return '#1B7A3C'
 }

@@ -5,6 +5,7 @@ import { WelcomeCard } from './WelcomeCard'
 import { SmartSuggestionCard } from './SmartSuggestionCard'
 import { InProgressBanner } from './InProgressBanner'
 import { ZoneSection } from './ZoneSection'
+import { SectionHeader } from '@/components/shared/section-header'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
 import { abandonTestingSession } from '@/lib/actions/testing'
 import type {
@@ -323,26 +324,12 @@ const ReviewHub = ({
       >
         {/* ── Page header ─────────────────────────────────────────── */}
         <header className="mb-8">
-          <p
-            className="text-[12px] font-medium uppercase tracking-widest mb-1"
-            style={{ color: 'var(--muted-foreground)' }}
-            aria-hidden="true"
-          >
-            Review &amp; Testing
-          </p>
-          <h1
-            className="text-[28px] font-semibold leading-tight mb-2"
-            style={{ color: 'var(--foreground)' }}
-          >
-            Build Mastery. Earn your Score.
-          </h1>
-          <p
-            className="text-[15px] font-normal leading-relaxed"
-            style={{ color: 'var(--text-secondary)' }}
-          >
-            Choose a session mode that fits your goal today. Every answer feeds
-            your Readiness Score.
-          </p>
+          <SectionHeader
+            eyebrow="Review & Testing"
+            title="Build Mastery. Earn your Score."
+            subtitle="Choose a session mode that fits your goal today. Every answer feeds your Readiness Score."
+            level="page"
+          />
         </header>
 
         {/* ── Smart suggestion or Welcome card ────────────────────── */}

@@ -5,6 +5,13 @@ import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phospho
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
 import { EventBadge } from '@/components/ui/event-badge'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 export function AuditLogViewer() {
   const [logs, setLogs] = useState<AuditLog[]>([])
@@ -56,28 +63,30 @@ export function AuditLogViewer() {
             className="w-full pl-10 pr-4 py-2 rounded-md border border-input bg-background"
           />
         </div>
-        <select
-          value={tableFilter}
-          onChange={(e) => setTableFilter(e.target.value)}
-          className="px-3 py-2 rounded-md border border-input bg-background"
-        >
-          <option value="">All Tables</option>
-          <option value="questions">questions</option>
-          <option value="wiki_articles">wiki_articles</option>
-          <option value="taxonomy_tree">taxonomy_tree</option>
-          <option value="models_3d">models_3d</option>
-        </select>
-        <select
-          value={eventFilter}
-          onChange={(e) => setEventFilter(e.target.value)}
-          className="px-3 py-2 rounded-md border border-input bg-background"
-        >
-          <option value="">All Events</option>
-          <option value="CREATE">CREATE</option>
-          <option value="UPDATE">UPDATE</option>
-          <option value="DELETE">DELETE</option>
-          <option value="PUBLISH">PUBLISH</option>
-        </select>
+        <Select value={tableFilter} onValueChange={setTableFilter}>
+          <SelectTrigger>
+            <SelectValue placeholder="All Tables" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="">All Tables</SelectItem>
+            <SelectItem value="questions">questions</SelectItem>
+            <SelectItem value="wiki_articles">wiki_articles</SelectItem>
+            <SelectItem value="taxonomy_tree">taxonomy_tree</SelectItem>
+            <SelectItem value="models_3d">models_3d</SelectItem>
+          </SelectContent>
+        </Select>
+        <Select value={eventFilter} onValueChange={setEventFilter}>
+          <SelectTrigger>
+            <SelectValue placeholder="All Events" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="">All Events</SelectItem>
+            <SelectItem value="CREATE">CREATE</SelectItem>
+            <SelectItem value="UPDATE">UPDATE</SelectItem>
+            <SelectItem value="DELETE">DELETE</SelectItem>
+            <SelectItem value="PUBLISH">PUBLISH</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Logs Table */}

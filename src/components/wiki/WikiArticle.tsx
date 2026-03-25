@@ -64,7 +64,7 @@ const baseMdxComponents = {
     <thead className="bg-muted dark:bg-muted" {...props} />
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
-    <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-muted-foreground border-b-[1.5px] border-border" {...props} />
+    <th className="px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.08em] text-muted-foreground border-b-[1.5px] border-border" {...props} />
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     <td className="px-3.5 py-[11px] text-sm text-foreground border-b border-border/60 align-top leading-relaxed [&_strong]:text-foreground [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0" {...props} />

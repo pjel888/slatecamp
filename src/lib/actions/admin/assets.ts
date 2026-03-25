@@ -23,6 +23,23 @@ export const getAssets = async () => {
   return data || []
 }
 
+export const getAsset = async (id: string) => {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase
+    .from('models_3d')
+    .select('id:model_id, name, slug, url, thumbnail, status, metadata, created_at')
+    .eq('model_id', id)
+    .single()
+
+  if (error) {
+    console.error('Error fetching asset:', error)
+    return null
+  }
+
+  return data
+}
+
 const createAssetSchema = z.object({
   name: z.string().min(1, 'Name is required').max(255),
   slug: z.string().min(1, 'Slug is required').max(255),

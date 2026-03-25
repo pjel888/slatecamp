@@ -36,8 +36,8 @@ const badgeVariants = cva(
         link: 'bg-transparent text-primary border-transparent underline-offset-4 hover:underline',
       },
       size: {
-        xs: 'px-1.5 py-0.5 text-[9px] font-mono uppercase tracking-widest [&>svg]:size-2.5',
-        sm: 'px-2 py-0.5 text-[10px] font-medium [&>svg]:size-3',
+        xs: 'px-1.5 py-0.5 text-[11px] font-mono uppercase tracking-widest [&>svg]:size-2.5',
+        sm: 'px-2 py-0.5 text-[11px] font-medium [&>svg]:size-3',
         md: 'px-2.5 py-1 text-xs font-medium [&>svg]:size-3.5',
         lg: 'px-3 py-1 text-sm font-medium [&>svg]:size-3.5',
       },

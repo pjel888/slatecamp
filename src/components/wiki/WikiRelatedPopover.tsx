@@ -74,7 +74,7 @@ export const WikiRelatedPopover = ({ topics }: WikiRelatedPopoverProps) => {
           onClick={toggle}
           className="flex items-center gap-1.5 text-[13px] text-[#737370] hover:text-[#1B3FC4] transition-colors duration-150 py-1"
         >
-          <span className="w-4 h-4 rounded bg-[#F5F5F5] flex items-center justify-center text-[9px] font-bold text-[#A8A8A5]">
+          <span className="w-4 h-4 rounded bg-[#F5F5F5] flex items-center justify-center text-[11px] font-bold text-[#A8A8A5]">
             {topics.length}
           </span>
           <span>Related topics</span>
@@ -86,7 +86,7 @@ export const WikiRelatedPopover = ({ topics }: WikiRelatedPopoverProps) => {
             className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-[#E0DED8] rounded-[10px] shadow-lg z-[100] dark:bg-[#1A1A1A] dark:border-[#3A3835]"
             style={{ top: pos.top, right: pos.right }}
           >
-            <div className="font-[var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-3 pt-3 pb-1.5 border-b border-[#ECEAE4] dark:border-[#3A3835]">
+            <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#A8A8A5] px-3 pt-3 pb-1.5 border-b border-[#ECEAE4] dark:border-[#3A3835]">
               Related ({topics.length})
             </div>
 

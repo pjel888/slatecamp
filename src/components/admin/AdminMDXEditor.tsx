@@ -14,6 +14,7 @@ import { updateWikiArticle, createWikiArticle } from '@/lib/actions/admin/wiki'
 import { ArticlePreviewTab } from '@/components/admin/ArticlePreviewTab'
 import { ComponentToolbar } from '@/components/admin/ComponentToolbar'
 import { ArticlePropertiesPanel } from '@/components/admin/ArticlePropertiesPanel'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import type { ReactElement } from 'react'
 
 // ---------------------------------------------------------------------------
@@ -452,9 +453,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       {/* Component insertion toolbar                                        */}
       {/* ------------------------------------------------------------------ */}
       <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[#D4DAE3] bg-white px-4 py-2">
-        <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7] mr-1">
-          Insert
-        </span>
+        <Eyebrow className="mr-1">Insert</Eyebrow>
         {SNIPPET_GROUPS.map(group => (
           <SnippetDropdown
             key={group.label}
@@ -477,9 +476,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
         {/* Left: CodeMirror editor */}
         <div className="flex w-1/2 flex-col overflow-hidden border-r border-[#D4DAE3]">
           <div className="shrink-0 border-b border-[#D4DAE3] bg-[#F8F7F5] px-4 py-1.5">
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
-              MDX Source
-            </span>
+            <Eyebrow>MDX Source</Eyebrow>
           </div>
           <div className="min-h-0 flex-1 overflow-auto">
             <CodeMirror

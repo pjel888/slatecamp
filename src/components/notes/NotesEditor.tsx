@@ -28,6 +28,14 @@ import {
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { uploadNoteImage } from '@/lib/notes/uploadImage'
+import { Button } from '@/components/ui/button'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 type JSONNode = { type: string; content?: JSONNode[]; text?: string }
 const DEFAULT_CONTENT: Record<string, unknown> = { type: 'doc', content: [{ type: 'paragraph' }] }
@@ -226,15 +234,15 @@ export function NotesEditor({
           style={{ top: bubblePos.top, left: bubblePos.left }}
           onMouseDown={(e) => e.preventDefault()}
         >
-          <button type="button" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
+          <Button type="button" variant="ghost" size="icon-xs" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
             <SCIcon icon={TextB} size="xs" />
-          </button>
-          <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
+          </Button>
+          <Button type="button" variant="ghost" size="icon-xs" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
             <SCIcon icon={TextItalic} size="xs" />
-          </button>
-          <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
+          </Button>
+          <Button type="button" variant="ghost" size="icon-xs" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
             <SCIcon icon={TextUnderline} size="xs" />
-          </button>
+          </Button>
           <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
           {HL_COLOURS.map(({ label, colour }) => (
             <button
@@ -264,66 +272,67 @@ export function NotesEditor({
           )}
         >
           <nav className="flex flex-wrap items-center gap-0.5" aria-label="Formatting">
-            <button type="button" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
+            <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleBold().run()} className={toolbarBtn(editor.isActive('bold'))} title="Bold">
               <SCIcon icon={TextB} size="sm" />
-            </button>
-            <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
+            </Button>
+            <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleItalic().run()} className={toolbarBtn(editor.isActive('italic'))} title="Italic">
               <SCIcon icon={TextItalic} size="sm" />
-            </button>
-            <button type="button" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
+            </Button>
+            <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleUnderline().run()} className={toolbarBtn(editor.isActive('underline'))} title="Underline">
               <SCIcon icon={TextUnderline} size="sm" />
-            </button>
-            <button type="button" onClick={() => editor.chain().focus().toggleHighlight().run()} className={toolbarBtn(editor.isActive('highlight'))} title="Highlight">
+            </Button>
+            <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleHighlight().run()} className={toolbarBtn(editor.isActive('highlight'))} title="Highlight">
               <SCIcon icon={HighlighterCircle} size="sm" />
-            </button>
+            </Button>
 
             {!compact && (
               <>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
-                <button type="button" onClick={() => editor.chain().focus().toggleBulletList().run()} className={toolbarBtn(editor.isActive('bulletList'))} title="Bullet list">
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleBulletList().run()} className={toolbarBtn(editor.isActive('bulletList'))} title="Bullet list">
                   <SCIcon icon={ListIcon} size="sm" />
-                </button>
-                <button type="button" onClick={() => editor.chain().focus().toggleOrderedList().run()} className={toolbarBtn(editor.isActive('orderedList'))} title="Numbered list">
+                </Button>
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleOrderedList().run()} className={toolbarBtn(editor.isActive('orderedList'))} title="Numbered list">
                   <SCIcon icon={ListNumbers} size="sm" />
-                </button>
-                <button type="button" onClick={() => editor.chain().focus().toggleTaskList().run()} className={toolbarBtn(editor.isActive('taskList'))} title="Todo list">
+                </Button>
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleTaskList().run()} className={toolbarBtn(editor.isActive('taskList'))} title="Todo list">
                   <SCIcon icon={ListChecks} size="sm" />
-                </button>
+                </Button>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
-                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 1 }))} title="Heading 1">
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 1 }))} title="Heading 1">
                   <SCIcon icon={TextH} size="sm" />
-                </button>
-                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 2 }))} title="Heading 2">
+                </Button>
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 2 }))} title="Heading 2">
                   <SCIcon icon={TextHTwo} size="sm" />
-                </button>
-                <button type="button" onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 3 }))} title="Heading 3">
+                </Button>
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()} className={toolbarBtn(editor.isActive('heading', { level: 3 }))} title="Heading 3">
                   <SCIcon icon={TextHThree} size="sm" />
-                </button>
-                <button type="button" onClick={() => editor.chain().focus().setHorizontalRule().run()} className="rounded p-2 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground" title="Horizontal rule">
+                </Button>
+                <Button type="button" variant="ghost" size="icon-sm" onClick={() => editor.chain().focus().setHorizontalRule().run()} title="Horizontal rule">
                   <SCIcon icon={Minus} size="sm" />
-                </button>
+                </Button>
                 <span className="mx-1 w-px self-stretch bg-border" aria-hidden />
-                <select
-                  title="Text size"
+                <Select
                   value={editor.getAttributes('textStyle').fontSize ?? ''}
-                  onChange={(e) => {
-                    const v = e.target.value
+                  onValueChange={(v) => {
                     if (v) editor.chain().focus().setFontSize(v).run()
                     else editor.chain().focus().unsetFontSize().run()
                   }}
-                  className="h-8 rounded border-0 bg-transparent px-2 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-border"
                 >
-                  <option value="">Size</option>
-                  <option value="12px">Small</option>
-                  <option value="16px">Normal</option>
-                  <option value="20px">Large</option>
-                </select>
+                  <SelectTrigger size="sm" className="border-0 bg-transparent" title="Text size">
+                    <SelectValue placeholder="Size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="12px">Small</SelectItem>
+                    <SelectItem value="16px">Normal</SelectItem>
+                    <SelectItem value="20px">Large</SelectItem>
+                  </SelectContent>
+                </Select>
               </>
             )}
 
-            <button type="button" onClick={handleImageButton} className="rounded p-2 text-muted-foreground transition-colors hover:bg-secondary/60 hover:text-foreground" title="Insert image">
+            <Button type="button" variant="ghost" size="icon-sm" onClick={handleImageButton} title="Insert image">
               <SCIcon icon={ImageSquare} size="sm" />
-            </button>
+            </Button>
           </nav>
         </div>
       )}

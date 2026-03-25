@@ -55,7 +55,7 @@ export const StormModePreview = ({ stem, options }: StormModePreviewProps) => {
                 'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[11px] font-black border transition-colors',
                 selected === idx
                   ? 'bg-primary/10 border-primary/30 text-[#1B3FC4]'
-                  : 'bg-zinc-50 border-[#D4DAE3] text-[#8896A7]',
+                  : 'bg-[#F8F7F5] border-[#D4DAE3] text-[#8896A7]',
               )}
             >
               {LABELS[idx]}

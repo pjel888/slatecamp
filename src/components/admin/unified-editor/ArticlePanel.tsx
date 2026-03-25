@@ -5,6 +5,7 @@ import CodeMirror from '@uiw/react-codemirror'
 import { markdown } from '@codemirror/lang-markdown'
 import { EditorView } from '@codemirror/view'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { Eyebrow } from '@/components/ui/eyebrow'
 import type { ParsedHeading } from './types'
 
 // ─── Props ────────────────────────────────────────────────────
@@ -356,9 +357,7 @@ export const ArticlePanel = ({
         <TabsContent value="editor" className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {/* Snippet Toolbar */}
           <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[#D4DAE3] bg-white px-3 py-2">
-            <span className="mr-1 font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
-              Insert
-            </span>
+            <Eyebrow className="mr-1">Insert</Eyebrow>
             {SNIPPET_GROUPS.map((group) => (
               <SnippetDropdown
                 key={group.label}
@@ -412,9 +411,7 @@ export const ArticlePanel = ({
             <div className="flex h-full flex-col">
               {/* Toolbar */}
               <div className="flex shrink-0 items-center gap-3 border-b border-[#D4DAE3] bg-[#F8F7F5] px-3 py-1.5">
-                <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
-                  Student View
-                </span>
+                <Eyebrow>Student View</Eyebrow>
                 <span className="text-[11px] text-[#4A5568]">
                   Shows the saved article exactly as students see it
                 </span>

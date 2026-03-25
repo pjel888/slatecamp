@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
+import { Skeleton } from '@/components/ui/skeleton'
 import {
   submitTeachBack,
   submitRevision,
@@ -128,9 +129,10 @@ export const TeachBackPrompt = ({
   if (phase === 'submitting') {
     return (
       <div className="mt-10 border-t border-[#D4DAE3] pt-8">
-        <div className="flex items-center gap-3 text-[#4A5568]">
-          <div className="h-5 w-5 border-2 border-[#1B3FC4] border-t-transparent rounded-full animate-spin" />
-          <span className="text-sm">Evaluating your explanation...</span>
+        <div className="space-y-3 max-w-xl">
+          <Skeleton className="h-4 w-3/4" />
+          <Skeleton className="h-4 w-1/2" />
+          <Skeleton className="h-20 w-full" />
         </div>
       </div>
     )

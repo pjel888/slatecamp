@@ -13,6 +13,8 @@ const eslintConfig = defineConfig([
       "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
       // Allow <img> where next/image is not practical (dynamic URLs, content images)
       "@next/next/no-img-element": "warn",
+      // Ban native browser dialogs — use ConfirmDialog/AlertDialog from @/components/ui/dialog
+      "no-restricted-globals": ["error", "alert", "confirm", "prompt"],
       // Flag hardcoded hex colors in Tailwind classes — use design tokens instead
       "no-restricted-syntax": ["warn",
         {

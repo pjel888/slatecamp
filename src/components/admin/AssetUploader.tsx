@@ -5,6 +5,14 @@ import { UploadSimple, File, XCircle, CheckCircle, CircleNotch, Warning } from '
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { uploadAssetFile, createAsset } from '@/lib/actions/admin/assets'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
+import { Button } from '@/components/ui/button'
 
 interface AssetMetadata {
   system: string
@@ -159,50 +167,59 @@ export const AssetUploader = () => {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium mb-2">System *</label>
-              <select
+              <Select
                 value={metadata.system}
-                onChange={(e) => setMetadata(m => ({ ...m, system: e.target.value }))}
-                className="w-full px-3 py-2 rounded-md border border-input bg-background"
+                onValueChange={(val) => setMetadata(m => ({ ...m, system: val }))}
               >
-                <option value="">Select system...</option>
-                {systemOptions.map(s => (
-                  <option key={s} value={s}>{s.charAt(0).toUpperCase() + s.slice(1)}</option>
-                ))}
-              </select>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select system..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {systemOptions.map(s => (
+                    <SelectItem key={s} value={s}>{s.charAt(0).toUpperCase() + s.slice(1)}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             <div>
               <label className="block text-sm font-medium mb-2">Layer *</label>
-              <select
+              <Select
                 value={metadata.layer}
-                onChange={(e) => setMetadata(m => ({ ...m, layer: e.target.value }))}
-                className="w-full px-3 py-2 rounded-md border border-input bg-background"
+                onValueChange={(val) => setMetadata(m => ({ ...m, layer: val }))}
               >
-                <option value="">Select layer...</option>
-                {layerOptions.map(l => (
-                  <option key={l} value={l}>{l.charAt(0).toUpperCase() + l.slice(1)}</option>
-                ))}
-              </select>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select layer..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {layerOptions.map(l => (
+                    <SelectItem key={l} value={l}>{l.charAt(0).toUpperCase() + l.slice(1)}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-2">Discipline</label>
-            <select
+            <Select
               value={metadata.discipline}
-              onChange={(e) => setMetadata(m => ({ ...m, discipline: e.target.value }))}
-              className="w-full px-3 py-2 rounded-md border border-input bg-background"
+              onValueChange={(val) => setMetadata(m => ({ ...m, discipline: val }))}
             >
-              <option value="">Select discipline...</option>
-              {disciplineOptions.map(d => (
-                <option key={d} value={d}>{d}</option>
-              ))}
-            </select>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Select discipline..." />
+              </SelectTrigger>
+              <SelectContent>
+                {disciplineOptions.map(d => (
+                  <SelectItem key={d} value={d}>{d}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Error */}
           {error && (
-            <div className="flex items-center gap-2 text-red-600">
+            <div className="flex items-center gap-2 text-[#D64545]">
               <SCIcon icon={Warning} size="sm" />
               <p className="text-sm">{error}</p>
             </div>
@@ -210,30 +227,22 @@ export const AssetUploader = () => {
 
           {/* Success */}
           {success && (
-            <div className="flex items-center gap-2 text-green-600">
+            <div className="flex items-center gap-2 text-[#2D9F6F]">
               <SCIcon icon={CheckCircle} size="sm" />
               <p className="text-sm">Asset uploaded successfully!</p>
             </div>
           )}
 
           {/* Upload Button */}
-          <button
+          <Button
             onClick={handleUpload}
             disabled={isUploading}
-            className="w-full py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50 font-medium flex items-center justify-center gap-2"
+            fullWidth
+            loading={isUploading}
+            leftIcon={<SCIcon icon={UploadSimple} size="sm" />}
           >
-            {isUploading ? (
-              <>
-                <SCIcon icon={CircleNotch} size="sm" className="animate-spin" />
-                Uploading...
-              </>
-            ) : (
-              <>
-                <SCIcon icon={UploadSimple} size="sm" />
-                Upload Asset
-              </>
-            )}
-          </button>
+            {isUploading ? 'Uploading...' : 'Upload Asset'}
+          </Button>
         </div>
       )}
     </div>

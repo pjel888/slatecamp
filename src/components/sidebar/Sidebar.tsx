@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef, useCallback, useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+import { useRef, useCallback, useEffect, useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { useSidebar } from './SidebarProvider'
 import { SidebarHeader } from './SidebarHeader'
 import { SidebarNavItem } from './SidebarNavItem'
@@ -15,6 +15,7 @@ import {
 } from './types'
 import type { SidebarProps } from './types'
 import { useActiveSession } from '@/lib/context/active-session-context'
+import { ConfirmDialog } from '@/components/ui/dialog'
 
 // ---------------------------------------------------------------------------
 // Sidebar — unified fixed nav shell (replaces SidebarShell + SidebarRail + SidebarOverlay)
@@ -24,8 +25,11 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps) => {
   const { expanded, collapse, expand, toggle, sidebarRef, toggleRef, prefersReducedMotion } = useSidebar()
   const pathname = usePathname()
+  const router = useRouter()
   const collapsingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const isCollapsing = useRef(false)
+  const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
+  const [pendingHref, setPendingHref] = useState<string | null>(null)
 
   // Track collapsing state for CSS class (faster easing during collapse)
   useEffect(() => {
@@ -87,19 +91,23 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
   const handleNavigate = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       if (activeSession) {
-        const confirmed = window.confirm(
-          'You have an active session. Are you sure you want to leave?',
-        )
-        if (!confirmed) {
-          e.preventDefault()
-          return
-        }
+        e.preventDefault()
+        const href = e.currentTarget.getAttribute('href') ?? '/'
+        setPendingHref(href)
+        setShowLeaveConfirm(true)
+        return
       }
       // Collapse on navigate (overlay pattern)
       if (expanded) handleCollapse()
     },
     [activeSession, expanded, handleCollapse],
   )
+
+  const handleLeaveConfirm = useCallback(() => {
+    if (pendingHref) router.push(pendingHref)
+    setPendingHref(null)
+    if (expanded) handleCollapse()
+  }, [pendingHref, router, expanded, handleCollapse])
 
   const handleToggle = useCallback(() => {
     if (expanded) {
@@ -127,6 +135,16 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
 
   return (
     <>
+      <ConfirmDialog
+        open={showLeaveConfirm}
+        onOpenChange={setShowLeaveConfirm}
+        title="Leave active session?"
+        description="You have an active session. Are you sure you want to leave?"
+        confirmLabel="Leave"
+        cancelLabel="Stay"
+        onConfirm={handleLeaveConfirm}
+      />
+
       {/* Sidebar nav shell */}
       <nav
         ref={sidebarRef as React.RefObject<HTMLElement>}
@@ -175,7 +193,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
             <div key={group.key}>
               {/* Group label — visible only when expanded */}
               <div
-                className="flex h-[22px] items-end text-[9px] uppercase tracking-[0.08em] text-gray-400"
+                className="flex h-[22px] items-end text-[11px] uppercase tracking-[0.08em] text-gray-400"
                 style={{
                   paddingLeft: 16, // aligns with icon center at 10px group padding + 6px offset
                   opacity: expanded ? 0.75 : 0,

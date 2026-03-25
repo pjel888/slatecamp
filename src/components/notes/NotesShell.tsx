@@ -1,10 +1,11 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, useState, useCallback } from 'react'
 import { Notepad } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes-actions'
+import { ConfirmDialog } from '@/components/ui/dialog'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
 import dynamic from 'next/dynamic'
@@ -41,6 +42,8 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   const [filter, setFilter] = useState<NavFilter>({ type: 'all' })
   const [searchQuery, setSearchQuery] = useState('')
   const titleInputRef = useRef<HTMLInputElement>(null)
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
+  const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null)
 
   // Extracted hooks
   const { navCollapsed, setNavCollapsed, listCollapsed, setListCollapsed } = useNotesPanels()
@@ -72,12 +75,19 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     }
   }
 
-  const handleDelete = async (id: string) => {
-    if (!confirm('Delete this note?')) return
+  const handleDelete = useCallback((id: string) => {
+    setPendingDeleteId(id)
+    setShowDeleteConfirm(true)
+  }, [])
+
+  const handleDeleteConfirm = useCallback(async () => {
+    if (!pendingDeleteId) return
+    const id = pendingDeleteId
+    setPendingDeleteId(null)
     setStubs((prev) => prev.filter((n) => n.id !== id))
     if (selectedId === id) { setSelectedId(null); setCurrentNote(null) }
     await deleteNote(id)
-  }
+  }, [pendingDeleteId, selectedId, setStubs, setSelectedId, setCurrentNote])
 
   const handlePin = async (id: string, pinned: boolean) => {
     setStubs((prev) => prev.map((n) => n.id === id ? { ...n, is_pinned: pinned } : n))
@@ -94,6 +104,15 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
 
   return (
     <div className="flex h-full w-full overflow-hidden bg-[#F5F5F5]">
+      <ConfirmDialog
+        open={showDeleteConfirm}
+        onOpenChange={setShowDeleteConfirm}
+        title="Delete note?"
+        description="Delete this note? This action cannot be undone."
+        confirmLabel="Delete"
+        cancelLabel="Cancel"
+        onConfirm={handleDeleteConfirm}
+      />
       {/* Pane 1: Navigator (collapsible) */}
       <NotesNavigator
         folders={folders}

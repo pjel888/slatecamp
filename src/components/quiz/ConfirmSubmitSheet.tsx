@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle, Circle, Flag, X } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Eyebrow } from '@/components/ui/eyebrow'
 
 interface ConfirmSubmitSheetProps {
   isOpen: boolean
@@ -100,9 +101,7 @@ export function ConfirmSubmitSheet({
                     <span className='text-xl font-black text-[#2D9F6F] leading-none'>
                       {answeredCount}
                     </span>
-                    <span className='text-[11px] font-bold uppercase tracking-widest text-[#2D9F6F]/70 mt-1'>
-                      Answered
-                    </span>
+                    <Eyebrow className="text-[#2D9F6F]/70 mt-1">Answered</Eyebrow>
                   </div>
                   <div className='flex flex-col items-center p-3 rounded-md bg-zinc-50 border border-zinc-100'>
                     <SCIcon
@@ -113,9 +112,7 @@ export function ConfirmSubmitSheet({
                     <span className='text-xl font-black text-zinc-500 leading-none'>
                       {unansweredCount}
                     </span>
-                    <span className='text-[11px] font-bold uppercase tracking-widest text-zinc-400 mt-1'>
-                      To Review
-                    </span>
+                    <Eyebrow className="text-zinc-400 mt-1">To Review</Eyebrow>
                   </div>
                   <div className='flex flex-col items-center p-3 rounded-md bg-[#FEF8ED] border border-[#D4951A]/20'>
                     <SCIcon
@@ -127,9 +124,7 @@ export function ConfirmSubmitSheet({
                     <span className='text-xl font-black text-[#D4951A] leading-none'>
                       {flaggedCount}
                     </span>
-                    <span className='text-[11px] font-bold uppercase tracking-widest text-[#D4951A]/70 mt-1'>
-                      Flagged
-                    </span>
+                    <Eyebrow className="text-[#D4951A]/70 mt-1">Flagged</Eyebrow>
                   </div>
                 </div>
 
