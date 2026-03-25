@@ -1,6 +1,7 @@
 import { PortalTopbar } from './PortalTopbar'
 import { PortalSidebar, type NavGroup } from './PortalSidebar'
 import { MobileNav } from './MobileNav'
+import { cn } from '@/lib/utils'
 
 interface PortalLayoutProps {
   portalLabel: string
@@ -12,6 +13,7 @@ interface PortalLayoutProps {
   searchComponent?: React.ReactNode
   backHref?: string
   backLabel?: string
+  rightRail?: React.ReactNode
   children: React.ReactNode
 }
 
@@ -25,6 +27,7 @@ const PortalLayout = ({
   searchComponent,
   backHref,
   backLabel,
+  rightRail,
   children,
 }: PortalLayoutProps) => (
   <div className="flex flex-col min-h-screen">
@@ -50,9 +53,16 @@ const PortalLayout = ({
         accentColor={accentColor}
         accentLightColor={accentLightColor}
       />
-      <main className="flex-1 min-w-0 overflow-y-auto px-6 py-6 lg:px-8">
-        {children}
-      </main>
+      <div className="flex flex-1 min-w-0">
+        <main className={cn("flex-1 min-w-0 overflow-y-auto px-6 py-6 lg:px-8", rightRail && "max-w-4xl")}>
+          {children}
+        </main>
+        {rightRail && (
+          <aside className="w-[170px] shrink-0 sticky top-12 h-fit hidden xl:block py-5 pr-4">
+            {rightRail}
+          </aside>
+        )}
+      </div>
     </div>
   </div>
 )
