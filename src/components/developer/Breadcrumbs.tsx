@@ -15,6 +15,8 @@ const SEGMENT_LABELS: Record<string, string> = {
   questions: 'Questions',
   'testing-path': 'Testing Path',
   shared: 'Shared',
+  'content-blocks': 'Content Blocks',
+  widgets: 'Interactive Widgets',
   status: 'Status',
   database: 'Database',
   infrastructure: 'Infrastructure',

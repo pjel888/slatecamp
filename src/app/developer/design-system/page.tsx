@@ -24,18 +24,24 @@ const DOMAIN_DESCRIPTIONS: Record<string, string> = {
 
 const DOMAIN_ORDER = ['wiki', 'content-blocks', 'widgets', 'questions', 'testing-path', 'shared'] as const
 
+/** Domains that have their own index page.tsx listing all components. */
+const DOMAINS_WITH_INDEX = new Set<string>(['content-blocks', 'widgets'])
+
 const DesignSystemPage = () => {
   const domains = DOMAIN_ORDER.map((key) => {
     const components = getComponentsByDomain(key)
     const firstSlug = components[0]?.slug
+    const hasIndex = DOMAINS_WITH_INDEX.has(key)
     return {
       key,
       label: DOMAIN_LABELS[key] ?? key,
       description: DOMAIN_DESCRIPTIONS[key] ?? '',
       count: components.length,
-      href: firstSlug
-        ? `/developer/design-system/${key}/${firstSlug}`
-        : `/developer/design-system/${key}`,
+      href: hasIndex
+        ? `/developer/design-system/${key}`
+        : firstSlug
+          ? `/developer/design-system/${key}/${firstSlug}`
+          : `/developer/design-system/${key}`,
     }
   })
 
