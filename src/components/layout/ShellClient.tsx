@@ -1,40 +1,35 @@
 'use client'
 
 import { useState } from 'react'
-import type { NavSection, NavFooterItem, UserRole } from '@/types/layout'
+import type { UserRole } from '@/types/layout'
+import { getRoleConfig } from '@/config/navigation'
 import { UnifiedSidebar } from './UnifiedSidebar'
 import { UnifiedTopBar } from './UnifiedTopBar'
 import { MobileDrawer } from './MobileDrawer'
 
 interface ShellClientProps {
-  shellTitle: string
-  sections: NavSection[]
-  footerItems: NavFooterItem[]
   role: UserRole
   children: React.ReactNode
-  /** Display name for the top bar greeting — defaults to role label */
+  /** Display name for the top bar greeting — defaults to shell title */
   displayName?: string
 }
 
 export const ShellClient = ({
-  shellTitle,
-  sections,
-  footerItems,
   role,
   children,
   displayName,
 }: ShellClientProps) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
-
-  const resolvedDisplayName = displayName ?? shellTitle
+  const config = getRoleConfig(role)
+  const resolvedDisplayName = displayName ?? config.shellTitle
 
   return (
     <div className="flex h-screen bg-background overflow-hidden">
       {/* Desktop sidebar — fixed left, hidden on mobile */}
       <UnifiedSidebar
-        shellTitle={shellTitle}
-        sections={sections}
-        footerItems={footerItems}
+        shellTitle={config.shellTitle}
+        sections={config.sections}
+        footerItems={config.footerItems}
       />
 
       {/* Content area — offset by sidebar width on desktop */}
@@ -56,9 +51,9 @@ export const ShellClient = ({
       <MobileDrawer
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        shellTitle={shellTitle}
-        sections={sections}
-        footerItems={footerItems}
+        shellTitle={config.shellTitle}
+        sections={config.sections}
+        footerItems={config.footerItems}
       />
     </div>
   )

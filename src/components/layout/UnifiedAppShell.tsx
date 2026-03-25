@@ -1,8 +1,10 @@
 import type { UserRole } from '@/types/layout'
-import { getRoleConfig } from '@/config/navigation'
 import { ShellClient } from './ShellClient'
 
 // ── Server Component ──
+// Note: getRoleConfig() is called in ShellClient (client side) because
+// navigation config contains React component references (Lucide icons)
+// that cannot be serialized across the Server→Client boundary.
 
 interface UnifiedAppShellProps {
   role: UserRole
@@ -10,18 +12,8 @@ interface UnifiedAppShellProps {
   children: React.ReactNode
 }
 
-export const UnifiedAppShell = ({ role, displayName, children }: UnifiedAppShellProps) => {
-  const config = getRoleConfig(role)
-
-  return (
-    <ShellClient
-      shellTitle={config.shellTitle}
-      sections={config.sections}
-      footerItems={config.footerItems}
-      role={role}
-      displayName={displayName}
-    >
-      {children}
-    </ShellClient>
-  )
-}
+export const UnifiedAppShell = ({ role, displayName, children }: UnifiedAppShellProps) => (
+  <ShellClient role={role} displayName={displayName}>
+    {children}
+  </ShellClient>
+)
