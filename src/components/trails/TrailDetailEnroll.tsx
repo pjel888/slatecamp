@@ -35,7 +35,7 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
         <button
           type="button"
           onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-          className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-primary-700"
         >
           Continue Trail →
         </button>
@@ -52,7 +52,7 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
         type="button"
         onClick={handleEnroll}
         disabled={isPending}
-        className="px-5 py-2.5 rounded-sm bg-camp-cobalt text-white text-sm font-semibold transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+        className="px-5 py-2.5 rounded-sm bg-camp-cobalt text-white text-sm font-semibold transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-50"
       >
         {isPending ? 'Starting...' : 'Start This Trail →'}
       </button>

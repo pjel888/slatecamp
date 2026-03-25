@@ -25,7 +25,7 @@ export const DashboardTrailCard = ({
   return (
     <Link
       href={`/dashboard/camptrails/${trailSlug}/today`}
-      className="block rounded-md border border-camp-cobalt bg-[#EEF2FC] p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
+      className="block rounded-md border border-camp-cobalt bg-primary-50 p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex items-start justify-between mb-2">
         <div className="flex items-center gap-2">
@@ -63,7 +63,7 @@ export const DashboardTrailPrompt = () => {
       className="block rounded-md border border-dashed border-border bg-[#F8F7F5] p-4 transition-shadow duration-150 ease-out hover:shadow-sm hover:border-camp-cobalt"
     >
       <div className="flex items-center gap-3">
-        <div className="flex h-8 w-8 items-center justify-center rounded-md bg-[#EEF2FC]">
+        <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary-50">
           <Path size={16} className="text-camp-cobalt" />
         </div>
         <div>

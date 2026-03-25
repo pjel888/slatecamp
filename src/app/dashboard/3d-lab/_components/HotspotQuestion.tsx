@@ -47,7 +47,7 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
           let classes = 'bg-zinc-50 hover:bg-zinc-100 border-zinc-200'
           if (revealed && opt.id === correctOptionId) classes = 'bg-emerald-50 border-emerald'
           if (revealed && opt.id === selected && opt.id !== correctOptionId) classes = 'bg-red-50 border-destructive'
-          if (!revealed && opt.id === selected) classes = 'bg-[#EEF2FC] border-camp-cobalt'
+          if (!revealed && opt.id === selected) classes = 'bg-primary-50 border-camp-cobalt'
 
           return (
             <button
@@ -64,7 +64,7 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
       {!revealed && selected && (
         <button
           onClick={handleConfirm}
-          className="w-full py-2.5 bg-camp-cobalt text-white text-[13px] font-medium rounded-sm hover:bg-[#1535A8] transition-colors duration-150"
+          className="w-full py-2.5 bg-camp-cobalt text-white text-[13px] font-medium rounded-sm hover:bg-primary-700 transition-colors duration-150"
         >
           Confirm Answer
         </button>

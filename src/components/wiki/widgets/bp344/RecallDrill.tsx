@@ -88,14 +88,14 @@ export const RecallDrill = () => {
         {!revealed ? (
           <button
             onClick={() => setRevealed(true)}
-            className="px-5 py-2 bg-camp-cobalt text-white border-none rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#1535A8] transition-colors duration-150"
+            className="px-5 py-2 bg-camp-cobalt text-white border-none rounded-md text-[13px] cursor-pointer font-sans hover:bg-primary-700 transition-colors duration-150"
           >
             Reveal
           </button>
         ) : (
           <button
             onClick={next}
-            className="px-5 py-2 bg-white text-camp-cobalt border-[1.5px] border-camp-cobalt rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#EEF2FC] transition-colors duration-150"
+            className="px-5 py-2 bg-white text-camp-cobalt border-[1.5px] border-camp-cobalt rounded-md text-[13px] cursor-pointer font-sans hover:bg-primary-50 transition-colors duration-150"
           >
             Next →
           </button>

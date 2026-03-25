@@ -60,7 +60,7 @@ function AnnotationPanel({
                 w-full text-left rounded px-2 py-1.5 transition-colors cursor-pointer
                 ${!isVisible ? 'opacity-30' : ''}
                 ${isActive
-                  ? 'bg-[#EEF2FC] border border-primary/30'
+                  ? 'bg-primary-50 border border-primary/30'
                   : 'hover:bg-zinc-50 border border-transparent'
                 }
               `}

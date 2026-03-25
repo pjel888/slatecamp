@@ -86,8 +86,8 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
       href={tier.ctaHref}
       className={`mt-7 block w-full rounded-sm px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
         tier.highlighted
-          ? 'bg-primary hover:bg-[#1535A8]'
-          : 'bg-camp-cobalt hover:bg-[#1535A8]'
+          ? 'bg-primary hover:bg-primary-700'
+          : 'bg-camp-cobalt hover:bg-primary-700'
       }`}
     >
       {tier.ctaLabel}

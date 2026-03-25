@@ -178,7 +178,7 @@ export const ContentEditorIndex = ({
               <button
                 type="button"
                 onClick={() => setSelectedNodeId(null)}
-                className="text-[11px] text-camp-cobalt hover:text-[#1535A8] transition-colors duration-150"
+                className="text-[11px] text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
               >
                 Clear
               </button>
@@ -333,7 +333,7 @@ export const ContentEditorIndex = ({
                   setStatusFilter('all')
                   setSelectedNodeId(null)
                 }}
-                className="text-[11px] text-camp-cobalt hover:text-[#1535A8] transition-colors duration-150"
+                className="text-[11px] text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
               >
                 Clear all filters
               </button>
@@ -380,7 +380,7 @@ export const ContentEditorIndex = ({
                   className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-[#F8F7F5]"
                 >
                   {/* Icon */}
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#EEF2FC]">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary-50">
                     <FileText size={16} className="text-camp-cobalt" />
                   </div>
 

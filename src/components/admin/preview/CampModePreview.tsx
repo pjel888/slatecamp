@@ -34,7 +34,7 @@ export const CampModePreview = ({
   const getOptionStyle = (idx: number) => {
     if (!isChecked) {
       return selected === idx
-        ? 'bg-[#EEF2FC] border-camp-cobalt text-text-primary cursor-pointer'
+        ? 'bg-primary-50 border-camp-cobalt text-text-primary cursor-pointer'
         : 'bg-white border-border text-text-primary hover:border-camp-cobalt cursor-pointer'
     }
     if (idx === correctAnswer) {
@@ -122,7 +122,7 @@ export const CampModePreview = ({
       {/* Rationale — shown after selection */}
       {isChecked && (
         <div className="px-4 pb-4">
-          <div className="rounded-md border bg-[#EEF2FC] p-4 space-y-2">
+          <div className="rounded-md border bg-primary-50 p-4 space-y-2">
             <Eyebrow className="font-black text-camp-cobalt">Rationale</Eyebrow>
             <p className="text-sm text-text-secondary leading-[1.65]">
               {rationale || <span className="italic text-text-tertiary">Rationale will appear here…</span>}
@@ -145,7 +145,7 @@ export const CampModePreview = ({
             type="button"
             disabled={selected === null}
             onClick={() => selected !== null && setSelected(selected)}
-            className="w-full h-9 rounded-sm bg-camp-cobalt text-white text-[11px] font-black uppercase tracking-[0.15em] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 hover:bg-[#1535A8]"
+            className="w-full h-9 rounded-sm bg-camp-cobalt text-white text-[11px] font-black uppercase tracking-[0.15em] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 hover:bg-primary-700"
           >
             Check Answer
           </button>

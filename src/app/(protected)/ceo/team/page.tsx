@@ -2,7 +2,7 @@ import { Users, Plus } from '@phosphor-icons/react/dist/ssr'
 import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 import { getTeamMembers, getDepartmentCosts } from '@/lib/queries/ceo/team-queries'
 import { TeamTable } from '@/components/ceo/TeamTable'
-import { DepartmentCostChart } from '@/components/ceo/DepartmentCostChart'
+import { DepartmentCostChartClient } from '@/components/ceo/charts/DepartmentCostChartClient'
 import { formatPeso } from '@/types/ceo'
 
 export const metadata = {
@@ -77,7 +77,7 @@ const CeoTeamPage = async () => {
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             {/* Pie Chart */}
             <div className="bg-card border border-border rounded-md p-4">
-              <DepartmentCostChart data={departmentCosts} />
+              <DepartmentCostChartClient data={departmentCosts} />
             </div>
 
             {/* Cost Summary List */}

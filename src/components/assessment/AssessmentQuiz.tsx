@@ -191,7 +191,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
           <p className="text-destructive text-sm font-medium">{error}</p>
           <button
             onClick={() => router.push('/dashboard')}
-            className="h-10 px-6 rounded-sm bg-camp-cobalt text-white text-sm font-semibold hover:bg-[#1535A8] transition-colors duration-150 ease-out"
+            className="h-10 px-6 rounded-sm bg-camp-cobalt text-white text-sm font-semibold hover:bg-primary-700 transition-colors duration-150 ease-out"
           >
             Return to Dashboard
           </button>
@@ -247,7 +247,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
         <div className="max-w-2xl mx-auto px-5 py-8 space-y-6">
           {/* Framing text on first question */}
           {isFirstQuestion && (
-            <div className="bg-[#EEF2FC] rounded-md px-4 py-3">
+            <div className="bg-primary-50 rounded-md px-4 py-3">
               <p className="text-text-primary text-sm leading-relaxed">
                 This is not a test — it's a diagnostic to understand where you stand.
                 Answer each question to the best of your ability.
@@ -289,7 +289,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                     'flex items-start gap-3',
                     'shadow-none hover:shadow-sm',
                     isSelected
-                      ? 'border-camp-cobalt bg-[#EEF2FC]'
+                      ? 'border-camp-cobalt bg-primary-50'
                       : 'border-border bg-white hover:border-camp-cobalt/40',
                     completing && 'opacity-60 cursor-not-allowed',
                   )}
@@ -347,7 +347,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                 'h-10 px-6 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
                 completing || !selectedOptionId
                   ? 'bg-border text-text-tertiary cursor-not-allowed'
-                  : 'bg-camp-cobalt text-white hover:bg-[#1535A8]',
+                  : 'bg-camp-cobalt text-white hover:bg-primary-700',
               )}
             >
               {completing ? (
@@ -368,7 +368,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                 'h-10 px-6 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
                 !selectedOptionId || completing
                   ? 'bg-border text-text-tertiary cursor-not-allowed'
-                  : 'bg-camp-cobalt text-white hover:bg-[#1535A8]',
+                  : 'bg-camp-cobalt text-white hover:bg-primary-700',
               )}
             >
               Next &rarr;

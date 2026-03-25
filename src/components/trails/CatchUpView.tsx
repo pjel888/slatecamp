@@ -105,7 +105,7 @@ export const CatchUpView = ({
           <button
             type="button"
             onClick={onSkip}
-            className="rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700"
           >
             Pick up where I left off
           </button>

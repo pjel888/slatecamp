@@ -87,7 +87,7 @@ export const DayCompletionMoment = ({
                 <span className="font-mono text-[11px] uppercase text-text-tertiary w-14">
                   Before
                 </span>
-                <div className="flex-1 h-2 rounded-full bg-[#EEF2FC] overflow-hidden">
+                <div className="flex-1 h-2 rounded-full bg-primary-50 overflow-hidden">
                   <div
                     className="h-full rounded-full bg-border"
                     style={{
@@ -104,7 +104,7 @@ export const DayCompletionMoment = ({
                 <span className="font-mono text-[11px] uppercase text-text-tertiary w-14">
                   After
                 </span>
-                <div className="flex-1 h-2 rounded-full bg-[#EEF2FC] overflow-hidden">
+                <div className="flex-1 h-2 rounded-full bg-primary-50 overflow-hidden">
                   <div
                     className="h-full rounded-full bg-camp-cobalt"
                     style={{
@@ -190,7 +190,7 @@ export const DayCompletionMoment = ({
             onClick={() =>
               router.push(`/dashboard/camptrails/${trailSlug}/today`)
             }
-            className="mt-3 inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="mt-3 inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700"
           >
             Start Day {next_day.day_number}
             <ArrowRight size={14} weight="bold" />

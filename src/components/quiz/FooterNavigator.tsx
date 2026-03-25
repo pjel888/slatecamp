@@ -47,7 +47,7 @@ export function FooterNavigator({
           className={cn(
             'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoBack
-              ? 'border border-border text-text-secondary hover:bg-[#EEF2FC]/50 hover:text-primary'
+              ? 'border border-border text-text-secondary hover:bg-primary-50/50 hover:text-primary'
               : 'border border-border/50 text-text-tertiary/40 cursor-not-allowed',
           )}
         >
@@ -102,7 +102,7 @@ export function FooterNavigator({
           className={cn(
             'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoForward
-              ? 'bg-primary hover:bg-[#1535A8] text-white'
+              ? 'bg-primary hover:bg-primary-700 text-white'
               : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',
           )}
         >

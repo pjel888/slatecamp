@@ -112,7 +112,7 @@ export const TeachBackPrompt = ({
                 className={cn(
                   'h-9 px-5 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
                   wordCount >= 20
-                    ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
+                    ? 'bg-camp-cobalt text-white hover:bg-primary-700'
                     : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
                 )}
               >
@@ -193,7 +193,7 @@ export const TeachBackPrompt = ({
 
         {/* Revision prompt */}
         {evaluation.revision_prompt && (
-          <div className="p-4 bg-[#EEF2FC] border border-camp-cobalt/15 rounded-md">
+          <div className="p-4 bg-primary-50 border border-camp-cobalt/15 rounded-md">
             <p className="text-xs font-bold uppercase tracking-wider text-camp-cobalt mb-1">
               Revision Prompt
             </p>
@@ -211,7 +211,7 @@ export const TeachBackPrompt = ({
               setRevisedResponse(response)
               setPhase('revising')
             }}
-            className="h-9 px-5 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-[#1535A8] transition-all flex items-center gap-1.5"
+            className="h-9 px-5 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-primary-700 transition-all flex items-center gap-1.5"
           >
             Revise my answer
             <SCIcon icon={ArrowRight} size="xs" />
@@ -246,7 +246,7 @@ export const TeachBackPrompt = ({
             type="button"
             onClick={handleRevise}
             disabled={!revisedResponse.trim()}
-            className="h-9 px-5 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-[#1535A8] transition-all"
+            className="h-9 px-5 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-primary-700 transition-all"
           >
             Submit Revision
           </button>

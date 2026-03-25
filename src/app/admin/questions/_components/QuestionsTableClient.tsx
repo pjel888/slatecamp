@@ -111,7 +111,7 @@ const columns: Column<Row>[] = [
           {q.topic_id && (
             <Link
               href={`/admin/content?topic=${q.topic_id}`}
-              className="whitespace-nowrap text-xs text-camp-cobalt hover:text-[#1535A8] transition-colors duration-150"
+              className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
               onClick={(e) => e.stopPropagation()}
               title="Open content editor to view this question in article context"
             >

@@ -9,7 +9,7 @@ export default function WikiPage() {
     <div className='flex h-full w-full items-center justify-center p-6'>
       <div className='max-w-2xl w-full text-center space-y-8'>
         {/* Hero Icon */}
-        <div className='mx-auto w-20 h-20 bg-[#EEF2FC] rounded-md flex items-center justify-center border border-primary/20 shadow-sm'>
+        <div className='mx-auto w-20 h-20 bg-primary-50 rounded-md flex items-center justify-center border border-primary/20 shadow-sm'>
           <SCIcon icon={BookOpen} size="2xl" className='text-primary' />
         </div>
 
@@ -35,7 +35,7 @@ export default function WikiPage() {
           </div>
 
           <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
-            <div className='w-8 h-8 bg-[#EEF2FC] rounded-md flex items-center justify-center'>
+            <div className='w-8 h-8 bg-primary-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={Sparkle} size="sm" className='text-primary' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]'>Interactive</h3>

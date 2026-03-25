@@ -9,7 +9,7 @@ import type { CampTrail, TrailDay, TrailEnrollment } from '@/types/app'
 const INTENSITY_COLORS: Record<string, { bg: string; text: string }> = {
   intensive: { bg: 'bg-[#FDF0F0]', text: 'text-destructive' },
   accelerated: { bg: 'bg-[#FEF8ED]', text: 'text-warning' },
-  standard: { bg: 'bg-[#EEF2FC]', text: 'text-camp-cobalt' },
+  standard: { bg: 'bg-primary-50', text: 'text-camp-cobalt' },
   comprehensive: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
   undergraduate: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
 }
@@ -38,7 +38,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
   const totalSteps = days.reduce((sum, d) => sum + (d.steps?.length ?? 0), 0)
 
   const intensityColors = trail.intensity
-    ? INTENSITY_COLORS[trail.intensity] ?? { bg: 'bg-[#EEF2FC]', text: 'text-camp-cobalt' }
+    ? INTENSITY_COLORS[trail.intensity] ?? { bg: 'bg-primary-50', text: 'text-camp-cobalt' }
     : null
 
   const toggleWeek = (week: number) => {
@@ -103,7 +103,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
             <button
               type="button"
               onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-primary-700"
             >
               Continue Trail &rarr;
             </button>
@@ -117,7 +117,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
               type="button"
               onClick={handleEnroll}
               disabled={isPending}
-              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-50"
             >
               {isPending ? 'Starting...' : 'Start This Trail \u2192'}
             </button>

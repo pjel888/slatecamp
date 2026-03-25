@@ -17,7 +17,7 @@ export function ContextBadge({ anchor, className }: ContextBadgeProps) {
   return (
     <div className={cn('flex flex-wrap gap-1.5', className)}>
       {anchor.topic_name && (
-        <span className="inline-flex items-center gap-1 rounded-full border border-primary/20 bg-[#EEF2FC] px-2.5 py-1 text-[11px] font-medium text-[#1535A8]">
+        <span className="inline-flex items-center gap-1 rounded-full border border-primary/20 bg-primary-50 px-2.5 py-1 text-[11px] font-medium text-primary-700">
           <SCIcon icon={Tag} size="xs" className="shrink-0" />
           <span className="truncate max-w-[160px]">{anchor.topic_name}</span>
         </span>

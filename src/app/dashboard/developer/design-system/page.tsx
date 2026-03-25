@@ -231,8 +231,8 @@ const sampleTreeNodes = [
 
 const campfireColors = [
   { name: 'Camp Cobalt', hex: '#1B3FC4', class: 'bg-camp-cobalt', usage: 'Primary actions, nav, links' },
-  { name: 'Camp Cobalt 50', hex: '#EEF2FC', class: 'bg-[#EEF2FC]', usage: 'Active backgrounds, tints' },
-  { name: 'Camp Cobalt 700', hex: '#1535A8', class: 'bg-[#1535A8]', usage: 'Hover/pressed states' },
+  { name: 'Camp Cobalt 50', hex: '#EEF2FC', class: 'bg-primary-50', usage: 'Active backgrounds, tints' },
+  { name: 'Camp Cobalt 700', hex: '#1535A8', class: 'bg-primary-700', usage: 'Hover/pressed states' },
   { name: 'Camp Orange', hex: '#E8853A', class: 'bg-camp-orange', usage: 'Progress, warm CTAs' },
   { name: 'Emerald', hex: '#2D9F6F', class: 'bg-emerald', usage: 'Success, mastery, correct' },
   { name: 'Emerald 50', hex: '#EDFAF4', class: 'bg-[#EDFAF4]', usage: 'Success backgrounds' },

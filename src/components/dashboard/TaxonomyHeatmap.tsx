@@ -113,13 +113,13 @@ export const TaxonomyHeatmap = ({
                   className={cn(
                     'group flex items-center justify-between gap-3 rounded-sm px-2 py-1.5 text-left text-xs',
                     'outline-none ring-0 transition-colors',
-                    'hover:bg-[#EEF2FC] focus-visible:bg-[#EEF2FC]',
+                    'hover:bg-primary-50 focus-visible:bg-primary-50',
                     node.state === 'unexplored' && 'border border-dashed border-border',
                   )}
                 >
                   <span className='truncate text-text-primary'>{node.label}</span>
                   <span className='flex min-w-[96px] items-center gap-2'>
-                    <span className='relative block h-1.5 w-full overflow-hidden rounded-full bg-[#EEF2FC]'>
+                    <span className='relative block h-1.5 w-full overflow-hidden rounded-full bg-primary-50'>
                       <span
                         className={cn(
                           'absolute inset-y-0 left-0 rounded-full transition-all',

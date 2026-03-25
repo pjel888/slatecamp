@@ -79,7 +79,7 @@ const CampTrailsPage = async () => {
         {/* ─── Welcoming Empty State ─── */}
         {trails.length === 0 && (
           <div className="flex flex-col items-center justify-center py-16 px-6 text-center">
-            <div className="w-12 h-12 rounded-lg bg-[#EEF2FC] flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center mb-4">
               <Compass size={24} className="text-camp-cobalt" />
             </div>
             <h2 className="text-lg font-semibold text-text-primary mb-2">

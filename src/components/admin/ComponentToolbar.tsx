@@ -40,7 +40,7 @@ export const ComponentToolbar = ({ onInsert }: ComponentToolbarProps) => (
           e.preventDefault()
           onInsert(item.tag)
         }}
-        className="text-[11px] px-2 py-1 rounded-sm border border-border bg-white text-text-secondary hover:bg-[#EEF2FC] hover:text-camp-cobalt hover:border-camp-cobalt/40 transition-colors duration-150"
+        className="text-[11px] px-2 py-1 rounded-sm border border-border bg-white text-text-secondary hover:bg-primary-50 hover:text-camp-cobalt hover:border-camp-cobalt/40 transition-colors duration-150"
       >
         {item.label}
       </button>

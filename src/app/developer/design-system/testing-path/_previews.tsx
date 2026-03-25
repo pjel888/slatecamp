@@ -242,7 +242,7 @@ export const SubjectPillPreview = () => (
         className={cn(
           'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[12px] font-medium',
           pill.variant === 'primary' &&
-            'bg-[#EEF2FC] text-camp-cobalt',
+            'bg-primary-50 text-camp-cobalt',
           pill.variant === 'default' &&
             'bg-muted text-foreground',
           pill.variant === 'subtle' &&

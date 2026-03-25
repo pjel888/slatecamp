@@ -129,7 +129,7 @@ const examTipData: ComponentData = {
   force limits.
 </ExamTip>`,
   preview: (
-    <div className="w-full max-w-md rounded-md border-l-4 border-primary bg-[#EEF2FC] px-4 py-3">
+    <div className="w-full max-w-md rounded-md border-l-4 border-primary bg-primary-50 px-4 py-3">
       <div className="flex items-center gap-2 mb-1.5">
         <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { StatCard } from '@/components/shared/stat-card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { RunwayGauge } from '@/components/ceo/RunwayGauge'
-import { RevenueChart } from '@/components/ceo/RevenueChart'
+import { RevenueChartClient } from '@/components/ceo/charts/RevenueChartClient'
 import { MetricCardSkeleton } from '@/components/ceo/skeletons/MetricCardSkeleton'
 import { ChartSkeleton } from '@/components/ceo/skeletons/ChartSkeleton'
 import {
@@ -91,7 +91,7 @@ const BusinessHealthSection = async () => {
         runwayMonths={financial.runwayMonths}
         cashOnHand={financial.cashOnHand}
       />
-      <RevenueChart data={revenueData} />
+      <RevenueChartClient data={revenueData} />
     </div>
   )
 }

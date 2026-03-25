@@ -45,7 +45,7 @@ export const QuestionCardPreview = () => {
             className={cn(
               'w-full flex items-center gap-3 px-3 py-2.5 rounded-sm border text-left transition-colors duration-150 cursor-pointer',
               selectedId === opt.id
-                ? 'border-primary bg-[#EEF2FC] text-foreground'
+                ? 'border-primary bg-primary-50 text-foreground'
                 : 'border-border bg-card text-foreground hover:border-primary/40 hover:bg-muted/50',
             )}
           >
@@ -94,7 +94,7 @@ export const AnswerOptionPreview = () => (
     </div>
 
     {/* Selected state */}
-    <div className="flex items-center gap-3 px-3 py-2.5 rounded-sm border border-primary bg-[#EEF2FC] text-foreground">
+    <div className="flex items-center gap-3 px-3 py-2.5 rounded-sm border border-primary bg-primary-50 text-foreground">
       <span className="flex-shrink-0 w-4 h-4 rounded-full border-2 border-primary flex items-center justify-center">
         <span className="w-2 h-2 rounded-full bg-primary" />
       </span>

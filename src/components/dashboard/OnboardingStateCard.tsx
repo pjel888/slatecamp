@@ -35,7 +35,7 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href="/dashboard/assessment"
-        className="block rounded-md border border-camp-cobalt bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-camp-cobalt bg-primary-50 p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-cobalt">
           Get started
@@ -103,7 +103,7 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href={`/dashboard/camptrails/${trailDay.trailSlug}/today`}
-        className="block rounded-md border border-camp-cobalt bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-camp-cobalt bg-primary-50 p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-cobalt">
           Today&apos;s trail

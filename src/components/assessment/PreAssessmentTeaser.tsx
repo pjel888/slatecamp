@@ -124,7 +124,7 @@ export const PreAssessmentTeaser = () => {
           </p>
           <Link
             href="/register"
-            className="mt-8 inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="mt-8 inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             style={{ backgroundColor: '#1B3FC4' }}
           >
             Create a free account to see your full score
@@ -192,8 +192,8 @@ export const PreAssessmentTeaser = () => {
                       : showWrong
                         ? 'border-destructive bg-[#FDF0F0] text-text-primary'
                         : isSelected
-                          ? 'border-camp-cobalt bg-[#EEF2FC] text-text-primary'
-                          : 'border-border bg-white text-text-secondary hover:border-camp-cobalt hover:bg-[#EEF2FC]/50'
+                          ? 'border-camp-cobalt bg-primary-50 text-text-primary'
+                          : 'border-border bg-white text-text-secondary hover:border-camp-cobalt hover:bg-primary-50/50'
                   }`}
                 >
                   {option.text}
@@ -218,7 +218,7 @@ export const PreAssessmentTeaser = () => {
               <button
                 type="button"
                 onClick={handleNext}
-                className="w-full rounded-sm px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+                className="w-full rounded-sm px-6 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
                 style={{ backgroundColor: '#1B3FC4' }}
               >
                 {isLast ? 'See Results' : 'Next Question'}

@@ -38,7 +38,7 @@ export const LockedScoreWidget = ({ updatesSinceReveal }: LockedScoreWidgetProps
       </p>
       <Link
         href="/dashboard/upgrade"
-        className="mt-3 inline-flex items-center text-sm font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
+        className="mt-3 inline-flex items-center text-sm font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-primary-700"
       >
         Upgrade to See Live &rarr;
       </Link>

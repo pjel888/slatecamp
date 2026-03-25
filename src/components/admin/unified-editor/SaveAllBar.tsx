@@ -508,7 +508,7 @@ export const SaveAllBar = ({
           <button
             type="button"
             onClick={handleRetry}
-            className="rounded-sm bg-camp-cobalt px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="rounded-sm bg-camp-cobalt px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
           >
             Retry failed items
           </button>

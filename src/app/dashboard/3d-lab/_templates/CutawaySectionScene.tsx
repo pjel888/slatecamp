@@ -161,7 +161,7 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
               className={`
                 whitespace-nowrap rounded px-1.5 py-0.5 shadow-sm border
                 ${isActive
-                  ? 'bg-[#EEF2FC] border-primary/40'
+                  ? 'bg-primary-50 border-primary/40'
                   : 'bg-white/90 backdrop-blur-sm border-zinc-200'
                 }
               `}

@@ -105,7 +105,7 @@ export const QuestionReviewList = ({
                   )}
                   {/* Rationale */}
                   {!isCorrect && q.rationale && (
-                    <div className='mt-2 p-3 bg-[#EEF2FC] border border-primary/10 rounded-md'>
+                    <div className='mt-2 p-3 bg-primary-50 border border-primary/10 rounded-md'>
                       <p className='text-[13px] text-text-secondary leading-relaxed'>{typeof q.rationale === 'string' ? q.rationale : (q.rationale as any)?.correct || ''}</p>
                       {q.code_citation && (
                         <div className='flex items-center gap-1.5 mt-2 text-[12px] text-text-secondary'>

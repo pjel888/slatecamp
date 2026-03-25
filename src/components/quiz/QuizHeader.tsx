@@ -17,7 +17,7 @@ const MODE_LABELS: Record<TestMode, string> = {
 }
 
 const MODE_STYLES: Record<TestMode, string> = {
-  camp: 'bg-[#EEF2FC] text-[#1535A8] border-[#1535A8]/20',
+  camp: 'bg-primary-50 text-primary-700 border-primary-700/20',
   chill: 'bg-[#F5F5F5] text-text-secondary border-border',
   storm: 'bg-text-primary text-white border-text-primary',
   proof_sim: 'bg-text-primary text-white border-text-primary',
@@ -71,7 +71,7 @@ export function QuizHeader({
             {label}
           </span>
           {isTargeted && (
-            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[11px] font-black uppercase tracking-widest bg-[#EEF2FC] text-[#1535A8] border-[#1535A8]/20">
+            <span className="hidden sm:block shrink-0 px-2 py-0.5 rounded-sm border text-[11px] font-black uppercase tracking-widest bg-primary-50 text-primary-700 border-primary-700/20">
               Targeted
             </span>
           )}
@@ -95,7 +95,7 @@ export function QuizHeader({
               'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               isFlagged
                 ? 'bg-[#FEF8ED] text-warning border border-warning/20'
-                : 'text-text-tertiary hover:bg-[#EEF2FC] hover:text-text-secondary',
+                : 'text-text-tertiary hover:bg-primary-50 hover:text-text-secondary',
             )}
           >
             <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
@@ -105,7 +105,7 @@ export function QuizHeader({
           <button
             onClick={onAI}
             aria-label="Open AI tutor"
-            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-text-tertiary hover:bg-[#EEF2FC] hover:text-text-secondary transition-colors"
+            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-text-tertiary hover:bg-primary-50 hover:text-text-secondary transition-colors"
           >
             <SCIcon icon={ChatCircle} size="xs" />
             <span className="hidden sm:inline">AI</span>
@@ -118,7 +118,7 @@ export function QuizHeader({
           <button
             onClick={onExit}
             aria-label="Exit quiz session"
-            className="h-8 w-8 flex items-center justify-center rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC] transition-colors"
+            className="h-8 w-8 flex items-center justify-center rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-primary-50 transition-colors"
           >
             <SCIcon icon={X} size="sm" />
           </button>
@@ -126,7 +126,7 @@ export function QuizHeader({
       </div>
 
       {/* Progress bar — 4px, Cobalt fill, fraction display above */}
-      <div className="h-1 w-full bg-[#EEF2FC]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions} aria-label="Quiz progress">
+      <div className="h-1 w-full bg-primary-50" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemin={1} aria-valuemax={totalQuestions} aria-label="Quiz progress">
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',

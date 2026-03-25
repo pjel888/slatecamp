@@ -77,7 +77,7 @@ export const StormSessionBehavior = ({
           className={cn(
             'w-full h-11 rounded-sm text-[13px] font-black uppercase tracking-widest transition-colors duration-150',
             hasSelection
-              ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
+              ? 'bg-camp-cobalt text-white hover:bg-primary-700'
               : 'bg-[#F5F5F5] text-text-tertiary cursor-not-allowed',
           )}
         >

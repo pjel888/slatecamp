@@ -130,7 +130,7 @@ const ScoreReveal = ({
                 ? `/dashboard/camptrails/${recommendation.trail.slug}`
                 : '/dashboard/camptrails'
             }
-            className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             style={{ backgroundColor: '#1B3FC4' }}
           >
             Start My Camp Trail

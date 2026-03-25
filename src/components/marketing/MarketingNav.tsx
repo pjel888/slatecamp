@@ -103,8 +103,8 @@ export async function MarketingNav({
               className={cn(
                 'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                 isDark
-                  ? 'bg-primary hover:bg-[#1535A8]'
-                  : 'bg-primary hover:bg-[#1535A8]',
+                  ? 'bg-primary hover:bg-primary-700'
+                  : 'bg-primary hover:bg-primary-700',
               )}
             >
               Go to dashboard
@@ -127,8 +127,8 @@ export async function MarketingNav({
                 className={cn(
                   'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                   isDark
-                    ? 'bg-primary hover:bg-[#1535A8]'
-                    : 'bg-primary hover:bg-[#1535A8]',
+                    ? 'bg-primary hover:bg-primary-700'
+                    : 'bg-primary hover:bg-primary-700',
                 )}
               >
                 Join Free →

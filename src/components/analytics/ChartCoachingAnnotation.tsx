@@ -9,7 +9,7 @@ interface Props {
 }
 
 const STYLES = {
-  insight: 'bg-[#EEF2FC] text-[#1535A8]',
+  insight: 'bg-primary-50 text-primary-700',
   warning: 'bg-[#FEF8ED] text-warning',
   success: 'bg-[#EDFAF4] text-emerald',
 }

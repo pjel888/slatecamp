@@ -448,7 +448,7 @@ export const SessionShell = ({
             <button
               type="button"
               onClick={handleExit}
-              className="mt-4 h-9 px-6 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-[#1535A8] transition-colors"
+              className="mt-4 h-9 px-6 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-primary-700 transition-colors"
             >
               Back to Testing
             </button>
@@ -471,7 +471,7 @@ export const SessionShell = ({
 
       {/* Progress bar */}
       <div
-        className="h-1 w-full bg-[#EEF2FC] shrink-0"
+        className="h-1 w-full bg-primary-50 shrink-0"
         role="progressbar"
         aria-valuenow={currentIndex + 1}
         aria-valuemin={1}
@@ -508,7 +508,7 @@ export const SessionShell = ({
                 'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
                 isFlagged
                   ? 'bg-[#FEF8ED] text-warning border border-warning/20'
-                  : 'text-text-tertiary hover:bg-[#EEF2FC] hover:text-text-secondary',
+                  : 'text-text-tertiary hover:bg-primary-50 hover:text-text-secondary',
               )}
             >
               <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
@@ -520,7 +520,7 @@ export const SessionShell = ({
               onClick={() => setShowNavigator(true)}
               aria-label="Open question navigator"
               aria-expanded={showNavigator}
-              className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-text-tertiary hover:bg-[#EEF2FC] hover:text-text-secondary transition-colors"
+              className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-text-tertiary hover:bg-primary-50 hover:text-text-secondary transition-colors"
             >
               <SCIcon icon={MapTrifold} size="xs" />
               <span className="hidden sm:inline">Navigator</span>
@@ -532,7 +532,7 @@ export const SessionShell = ({
               type="button"
               onClick={handleExit}
               aria-label="Exit session"
-              className="h-8 w-8 flex items-center justify-center rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC] transition-colors"
+              className="h-8 w-8 flex items-center justify-center rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-primary-50 transition-colors"
             >
               <SCIcon icon={X} size="sm" />
             </button>
@@ -595,7 +595,7 @@ export const SessionShell = ({
             className={cn(
               'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               currentIndex > 0
-                ? 'border border-border text-text-secondary hover:bg-[#EEF2FC]/50 hover:text-primary'
+                ? 'border border-border text-text-secondary hover:bg-primary-50/50 hover:text-primary'
                 : 'border border-border/50 text-text-tertiary/40 cursor-not-allowed',
             )}
           >
@@ -628,7 +628,7 @@ export const SessionShell = ({
               className={cn(
                 'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
                 (isStorm ? isCurrentStormConfirmed : isCurrentSubmitted)
-                  ? 'bg-primary text-white hover:bg-[#1535A8]'
+                  ? 'bg-primary text-white hover:bg-primary-700'
                   : 'bg-zinc-100 text-zinc-300 cursor-not-allowed',
               )}
             >

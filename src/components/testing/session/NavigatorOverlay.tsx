@@ -114,7 +114,7 @@ export const NavigatorOverlay = ({
                     state === 'current' && 'bg-camp-cobalt text-white ring-2 ring-camp-cobalt ring-offset-2',
                     state === 'answered' && 'bg-camp-cobalt text-white',
                     state === 'flagged' && 'bg-warning text-white',
-                    state === 'unanswered' && 'bg-white border border-border text-text-tertiary hover:border-camp-cobalt/30 hover:bg-[#EEF2FC]/50',
+                    state === 'unanswered' && 'bg-white border border-border text-text-tertiary hover:border-camp-cobalt/30 hover:bg-primary-50/50',
                   )}
                 >
                   {index + 1}

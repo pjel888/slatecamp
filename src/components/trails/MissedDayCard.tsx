@@ -49,7 +49,7 @@ const MissedDayCard = ({
         <button
           type="button"
           onClick={onContinue}
-          className="rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+          className="rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 hover:bg-primary-700"
         >
           Continue Day {enrollment.current_day} &rarr;
         </button>

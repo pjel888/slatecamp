@@ -47,7 +47,7 @@ export function NotesList({
       <div className="flex shrink-0 items-center justify-end px-2 py-3">
         <button
           onClick={onToggle}
-          className="flex items-center justify-center h-7 w-7 shrink-0 rounded-md text-text-tertiary hover:text-camp-cobalt hover:bg-[#EEF2FC]/60 transition-colors duration-150"
+          className="flex items-center justify-center h-7 w-7 shrink-0 rounded-md text-text-tertiary hover:text-camp-cobalt hover:bg-primary-50/60 transition-colors duration-150"
           aria-label={collapsed ? 'Expand notes list' : 'Collapse notes list'}
         >
           <SCIcon icon={collapsed ? CaretRight : CaretLeft} size="sm" />
@@ -59,7 +59,7 @@ export function NotesList({
         <div className="flex flex-1 flex-col items-center gap-3 pt-2">
           <button
             onClick={onCreate}
-            className="flex items-center justify-center h-7 w-7 rounded-md text-text-tertiary hover:bg-[#EEF2FC] hover:text-camp-cobalt transition-colors"
+            className="flex items-center justify-center h-7 w-7 rounded-md text-text-tertiary hover:bg-primary-50 hover:text-camp-cobalt transition-colors"
             title="New note"
           >
             <SCIcon icon={Plus} size="sm" />
@@ -79,7 +79,7 @@ export function NotesList({
               <span className="text-[13px] font-semibold text-text-primary">Notes</span>
               <button
                 onClick={onCreate}
-                className="rounded-md p-1 text-text-tertiary hover:bg-[#EEF2FC] hover:text-camp-cobalt transition-colors"
+                className="rounded-md p-1 text-text-tertiary hover:bg-primary-50 hover:text-camp-cobalt transition-colors"
                 title="New note"
               >
                 <SCIcon icon={Plus} size="sm" />
@@ -115,7 +115,7 @@ export function NotesList({
                       className={cn(
                         'flex w-full flex-col items-start gap-1.5 rounded-md mx-1 px-3 py-3 text-left transition-colors duration-100',
                         isSelected
-                          ? 'bg-[#EEF2FC]'
+                          ? 'bg-primary-50'
                           : 'hover:bg-camp-cobalt/[0.04]',
                       )}
                       style={{ width: 'calc(100% - 8px)' }}
@@ -184,7 +184,7 @@ export function NotesList({
                     )}>
                       <button
                         onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
-                        className="rounded p-1 text-border hover:bg-[#EEF2FC] hover:text-primary transition-colors"
+                        className="rounded p-1 text-border hover:bg-primary-50 hover:text-primary transition-colors"
                         title={note.is_pinned ? 'Unpin' : 'Pin'}
                       >
                         <SCIcon icon={PushPin} size="xs" />

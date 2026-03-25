@@ -36,7 +36,7 @@ export const StormTimerBar = ({
       role="timer"
       aria-label={remainingSeconds <= 0 ? 'Time expired' : remainingSeconds < 60 ? `${remainingSeconds} seconds remaining` : `${Math.ceil(remainingSeconds / 60)} minutes remaining`}
       aria-live="off"
-      className="w-full h-1 bg-[#EEF2FC] overflow-hidden"
+      className="w-full h-1 bg-primary-50 overflow-hidden"
       style={{ position: 'relative' }}
     >
       <div

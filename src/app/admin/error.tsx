@@ -37,7 +37,7 @@ const AdminError = ({ error, reset }: ErrorProps) => {
         <Button
           onClick={reset}
           size="sm"
-          className="bg-camp-cobalt text-white hover:bg-[#1535A8]"
+          className="bg-camp-cobalt text-white hover:bg-primary-700"
         >
           Try again
         </Button>

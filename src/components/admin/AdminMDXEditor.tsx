@@ -199,7 +199,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
                 onInsert(item.snippet)
                 setOpen(false)
               }}
-              className="block w-full px-3 py-2 text-left text-xs text-text-primary hover:bg-[#EEF2FC] hover:text-camp-cobalt transition-colors duration-150"
+              className="block w-full px-3 py-2 text-left text-xs text-text-primary hover:bg-primary-50 hover:text-camp-cobalt transition-colors duration-150"
             >
               {item.label}
             </button>
@@ -443,7 +443,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           type="button"
           onClick={handleSave}
           disabled={isSaving}
-          className="shrink-0 rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+          className="shrink-0 rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-50"
         >
           {isSaving ? 'Saving...' : article?.article_id ? 'Save' : 'Create'}
         </button>

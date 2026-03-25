@@ -38,8 +38,8 @@ export const ErrorTaxonomyPrompt = ({ selectedTags, onChange }: ErrorTaxonomyPro
               className={cn(
                 'px-3 py-1.5 rounded-full text-[12px] font-medium border transition-colors duration-150',
                 isActive
-                  ? 'bg-[#EEF2FC] border-camp-cobalt text-camp-cobalt'
-                  : 'bg-white border-border text-text-secondary hover:border-camp-cobalt/30 hover:bg-[#EEF2FC]/30',
+                  ? 'bg-primary-50 border-camp-cobalt text-camp-cobalt'
+                  : 'bg-white border-border text-text-secondary hover:border-camp-cobalt/30 hover:bg-primary-50/30',
               )}
             >
               {ERROR_TAG_LABELS[tag]}

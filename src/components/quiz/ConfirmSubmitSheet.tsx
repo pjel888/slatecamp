@@ -141,7 +141,7 @@ export function ConfirmSubmitSheet({
                     ref={confirmRef}
                     onClick={onConfirm}
                     disabled={isSaving}
-                    className='w-full h-10 rounded-sm bg-primary text-white font-semibold text-sm hover:bg-[#1535A8] transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
+                    className='w-full h-10 rounded-sm bg-primary text-white font-semibold text-sm hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
                   >
                     {isSaving
                       ? 'Submitting...'
@@ -149,7 +149,7 @@ export function ConfirmSubmitSheet({
                   </button>
                   <button
                     onClick={onCancel}
-                    className='w-full h-9 rounded-sm border border-border text-text-secondary font-medium text-sm hover:bg-[#EEF2FC]/50 transition-colors'
+                    className='w-full h-9 rounded-sm border border-border text-text-secondary font-medium text-sm hover:bg-primary-50/50 transition-colors'
                   >
                     Keep Reviewing
                   </button>

@@ -46,7 +46,7 @@ export const StormModePreview = ({ stem, options }: StormModePreviewProps) => {
             className={cn(
               'flex items-center gap-3 w-full min-h-[48px] px-4 py-3 rounded-sm border text-left transition-colors duration-150',
               selected === idx
-                ? 'bg-[#EEF2FC] border-camp-cobalt text-text-primary'
+                ? 'bg-primary-50 border-camp-cobalt text-text-primary'
                 : 'bg-white border-border text-text-primary hover:border-camp-cobalt cursor-pointer',
             )}
           >

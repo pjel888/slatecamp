@@ -93,7 +93,7 @@ export const ConfidenceCheckScreen = ({
             className={cn(
               'h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
               allRated
-                ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
+                ? 'bg-camp-cobalt text-white hover:bg-primary-700'
                 : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
             )}
           >

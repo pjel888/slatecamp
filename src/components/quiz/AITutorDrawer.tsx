@@ -166,7 +166,7 @@ export function AITutorDrawer({
 
                   {response.wikiHint && (
                     <div className="pt-1">
-                      <span className="inline-flex items-center gap-1.5 h-6 px-2.5 rounded-sm bg-[#EEF2FC] border border-primary/20 text-[#1535A8] text-[11px] font-black uppercase tracking-widest">
+                      <span className="inline-flex items-center gap-1.5 h-6 px-2.5 rounded-sm bg-primary-50 border border-primary/20 text-primary-700 text-[11px] font-black uppercase tracking-widest">
                         {response.wikiHint}
                       </span>
                     </div>

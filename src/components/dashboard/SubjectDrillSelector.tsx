@@ -319,7 +319,7 @@ export function SubjectDrillSelector({
                   }
                 }}
                 disabled={!selectedNodeId}
-                className='w-full h-10 text-sm font-semibold bg-primary hover:bg-[#1535A8] text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
+                className='w-full h-10 text-sm font-semibold bg-primary hover:bg-primary-700 text-white rounded-md transition-colors flex items-center justify-center gap-2 group'
               >
                 Start Practice Session
                 <SCIcon

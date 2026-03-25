@@ -35,7 +35,7 @@ export function TimerBar({
     >
       {/* Depletion bar — always visible */}
       <div
-        className="w-24 h-1.5 bg-[#EEF2FC] rounded-sm overflow-hidden"
+        className="w-24 h-1.5 bg-primary-50 rounded-sm overflow-hidden"
         role="timer"
         aria-label={`${timeLabel} remaining`}
       >

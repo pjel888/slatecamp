@@ -1,8 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 import { StatCard } from '@/components/shared/stat-card'
-import { RevenueExpenseChart } from '@/components/ceo/RevenueExpenseChart'
-import { ExpenseBreakdownChart } from '@/components/ceo/ExpenseBreakdownChart'
+import { RevenueExpenseChartClient } from '@/components/ceo/charts/RevenueExpenseChartClient'
+import { ExpenseBreakdownChartClient } from '@/components/ceo/charts/ExpenseBreakdownChartClient'
 import { FinancialLedger } from '@/components/ceo/FinancialLedger'
 import { ExportButton } from '@/components/ceo/ExportButton'
 import { formatPeso, CATEGORY_LABELS } from '@/types/ceo'
@@ -182,7 +182,7 @@ export default async function FinancialsPage() {
       {/* Monthly P&L Chart */}
       <div className="bg-card border border-border rounded-md p-4">
         <Eyebrow className="block mb-4">Monthly P&L</Eyebrow>
-        <RevenueExpenseChart data={monthlyData} />
+        <RevenueExpenseChartClient data={monthlyData} />
       </div>
 
       {/* Expense Breakdown + Cost Summary */}
@@ -191,7 +191,7 @@ export default async function FinancialsPage() {
           <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground mb-4">
             Expense Breakdown
           </p>
-          <ExpenseBreakdownChart data={expenseBreakdown} />
+          <ExpenseBreakdownChartClient data={expenseBreakdown} />
         </div>
 
         <div className="bg-card border border-border rounded-md p-4">

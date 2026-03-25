@@ -363,7 +363,7 @@ const PromptCard = ({
                 <button
                   type="button"
                   onClick={handleAddOption}
-                  className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                  className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-primary-700"
                 >
                   + Add option
                 </button>
@@ -507,7 +507,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
   )
 
   return (
-    <div className="rounded-md border-2 border-dashed border-camp-cobalt/30 bg-[#EEF2FC]/30 px-4 py-4">
+    <div className="rounded-md border-2 border-dashed border-camp-cobalt/30 bg-primary-50/30 px-4 py-4">
       <div className="mb-3 flex items-center justify-between">
         <span className="text-xs font-medium text-camp-cobalt">New EI Prompt</span>
         <button
@@ -656,7 +656,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
               <button
                 type="button"
                 onClick={handleAddOption}
-                className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-primary-700"
               >
                 + Add option
               </button>
@@ -769,7 +769,7 @@ export const EIPromptsPanel = ({
         <button
           type="button"
           onClick={handleAdd}
-          className="rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
         >
           + Add First Prompt
         </button>
@@ -807,7 +807,7 @@ export const EIPromptsPanel = ({
       <button
         type="button"
         onClick={handleAdd}
-        className="w-full rounded-sm border border-dashed border-border bg-transparent px-4 py-2.5 text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:border-camp-cobalt hover:bg-[#EEF2FC]"
+        className="w-full rounded-sm border border-dashed border-border bg-transparent px-4 py-2.5 text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:border-camp-cobalt hover:bg-primary-50"
       >
         + Add EI Prompt
       </button>

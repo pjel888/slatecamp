@@ -81,7 +81,7 @@ const ToggleGroup = ({
           onClick={() => onChange(opt.value)}
           className={`px-2 py-0.5 text-[11px] font-medium transition-colors duration-150 ease-out first:rounded-l-sm last:rounded-r-sm ${
             value === opt.value
-              ? 'bg-[#EEF2FC] text-camp-cobalt'
+              ? 'bg-primary-50 text-camp-cobalt'
               : 'bg-white text-text-tertiary hover:text-text-secondary'
           }`}
         >
@@ -568,7 +568,7 @@ const DraftQuestionCard = ({
   if (!isExpanded) {
     return (
       <div
-        className="group cursor-pointer border border-camp-cobalt rounded-md bg-[#EEF2FC] transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="group cursor-pointer border border-camp-cobalt rounded-md bg-primary-50 transition-shadow duration-150 ease-out hover:shadow-sm"
         onClick={onExpand}
         role="button"
         tabIndex={0}
@@ -597,7 +597,7 @@ const DraftQuestionCard = ({
   return (
     <div className="overflow-hidden border border-camp-cobalt rounded-md bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-border bg-[#EEF2FC] px-3 py-2">
+      <div className="flex items-center justify-between border-b border-border bg-primary-50 px-3 py-2">
         <div className="flex items-center gap-2">
           <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-camp-cobalt text-[11px] font-bold text-white">
             N
@@ -1257,13 +1257,13 @@ export const QuestionsPanel = ({
           <TabsList variant="underline" className="border-b-0">
             <TabsTrigger value="questions">
               Questions
-              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-camp-cobalt">
+              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-primary-50 px-1 text-[11px] font-medium text-camp-cobalt">
                 {totalCount}
               </span>
             </TabsTrigger>
             <TabsTrigger value="ei-prompts">
               EI Prompts
-              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-camp-cobalt">
+              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-primary-50 px-1 text-[11px] font-medium text-camp-cobalt">
                 {eiPrompts.length}
               </span>
             </TabsTrigger>
@@ -1275,7 +1275,7 @@ export const QuestionsPanel = ({
           <button
             type="button"
             onClick={handleAddQuestion}
-            className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-sm text-camp-cobalt transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
+            className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-sm text-camp-cobalt transition-colors duration-150 ease-out hover:bg-primary-50"
             title="Add new question"
           >
             <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1338,7 +1338,7 @@ export const QuestionsPanel = ({
             {isEmpty ? (
               /* ── Empty state ──────────────────────────────── */
               <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EEF2FC]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-50">
                   <svg className="h-6 w-6 text-camp-cobalt" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M9 12h6m-3-3v6m-6 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -1354,7 +1354,7 @@ export const QuestionsPanel = ({
                 <button
                   type="button"
                   onClick={handleAddQuestion}
-                  className="inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+                  className="inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
                 >
                   <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -1420,7 +1420,7 @@ export const QuestionsPanel = ({
                           setRationaleFilter('all')
                           setCitationFilter('all')
                         }}
-                        className="mt-2 text-xs text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                        className="mt-2 text-xs text-camp-cobalt transition-colors duration-150 ease-out hover:text-primary-700"
                       >
                         Clear filters
                       </button>

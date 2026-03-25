@@ -61,7 +61,7 @@ export const QuizActionButtons = ({
       {isChecked && !isRationaleVisible && (
         <button
           onClick={onShowRationale}
-          className='h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors'
+          className='h-11 px-5 rounded-sm border border-primary/20 text-primary hover:bg-primary-50 text-[11px] font-black uppercase tracking-widest transition-colors'
         >
           Show Rationale
         </button>
@@ -76,7 +76,7 @@ export const QuizActionButtons = ({
         className={cn(
           'h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all',
           selectedAnswer && !isSaving
-            ? 'bg-primary text-white hover:bg-[#1535A8] shadow-sm'
+            ? 'bg-primary text-white hover:bg-primary-700 shadow-sm'
             : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
         )}
       >
@@ -94,7 +94,7 @@ export const QuizActionButtons = ({
               ? onFinish
               : onNext
           }
-          className='h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-primary text-white hover:bg-[#1535A8] shadow-sm'
+          className='h-11 px-8 rounded-sm font-black text-xs uppercase tracking-[0.15em] transition-all bg-primary text-white hover:bg-primary-700 shadow-sm'
         >
           {currentIndex === totalQuestions - 1
             ? 'Finish Session'

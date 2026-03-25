@@ -84,7 +84,7 @@ export function CustomSessionBuilder({
               <Button
                 variant='ghost'
                 size='sm'
-                className='h-7 text-[11px] font-semibold text-primary hover:text-[#1535A8] hover:bg-[#EEF2FC]'
+                className='h-7 text-[11px] font-semibold text-primary hover:text-primary-700 hover:bg-primary-50'
                 onClick={() =>
                   setSelectedSubjects(subjects.map((s) => s.node_id))
                 }
@@ -179,7 +179,7 @@ export function CustomSessionBuilder({
           <Button
             onClick={handleStart}
             disabled={selectedSubjects.length === 0}
-            className='w-full h-12 text-base font-bold bg-primary hover:bg-[#1535A8] text-white rounded-md'
+            className='w-full h-12 text-base font-bold bg-primary hover:bg-primary-700 text-white rounded-md'
           >
             Start Session
           </Button>

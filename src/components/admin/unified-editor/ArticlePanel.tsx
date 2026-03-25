@@ -167,7 +167,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
                 onInsert(item.snippet)
                 setOpen(false)
               }}
-              className="block w-full px-3 py-2 text-left text-xs text-text-primary transition-colors duration-150 ease-out hover:bg-[#EEF2FC] hover:text-camp-cobalt"
+              className="block w-full px-3 py-2 text-left text-xs text-text-primary transition-colors duration-150 ease-out hover:bg-primary-50 hover:text-camp-cobalt"
             >
               {item.label}
             </button>
@@ -345,7 +345,7 @@ export const ArticlePanel = ({
             </TabsTrigger>
             <TabsTrigger value="diff" className="text-xs">
               Diff{diffCount > 0 && (
-                <span className="ml-1 inline-flex min-w-[18px] items-center justify-center rounded-full bg-[#EEF2FC] px-1.5 py-0.5 font-mono text-[11px] font-medium leading-none text-camp-cobalt">
+                <span className="ml-1 inline-flex min-w-[18px] items-center justify-center rounded-full bg-primary-50 px-1.5 py-0.5 font-mono text-[11px] font-medium leading-none text-camp-cobalt">
                   {diffCount}
                 </span>
               )}
@@ -430,7 +430,7 @@ export const ArticlePanel = ({
                   href={`/dashboard/wiki/${articleSlug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-camp-cobalt hover:bg-[#EEF2FC] transition-colors duration-150"
+                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-camp-cobalt hover:bg-primary-50 transition-colors duration-150"
                 >
                   Open in new tab
                 </a>
@@ -510,7 +510,7 @@ export const ArticlePanel = ({
         <button
           type="button"
           onClick={() => setMetadataOpen((v) => !v)}
-          className="flex w-full items-center gap-1.5 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
+          className="flex w-full items-center gap-1.5 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-primary-50"
         >
           <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
             Article Metadata

@@ -327,7 +327,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
               {userDisplay.avatarUrl ? (
                 <AvatarImage src={userDisplay.avatarUrl} alt={userDisplay.name} />
               ) : null}
-              <AvatarFallback className="bg-[#EEF2FC] text-[11px] font-medium text-text-primary">
+              <AvatarFallback className="bg-primary-50 text-[11px] font-medium text-text-primary">
                 {initials}
               </AvatarFallback>
             </Avatar>
@@ -339,7 +339,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
                   {userDisplay.name}
                 </p>
                 {tier && tier !== 'free' && (
-                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[11px] font-medium uppercase text-camp-cobalt">
+                  <span className="shrink-0 rounded-[3px] bg-primary-50 px-1 py-px font-mono text-[11px] font-medium uppercase text-camp-cobalt">
                     {tier}
                   </span>
                 )}

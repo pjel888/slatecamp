@@ -61,7 +61,7 @@ export function DashboardPageSkeleton() {
           <div className="lg:col-span-3 rounded-md border border-border bg-white p-2">
             <div className="grid grid-cols-3 gap-2">
               {[
-                { bg: "bg-[#EEF2FC]" },
+                { bg: "bg-primary-50" },
                 { bg: "bg-[#EDFAF4]" },
                 { bg: "bg-[#FEF8ED]" },
               ].map((card, i) => (

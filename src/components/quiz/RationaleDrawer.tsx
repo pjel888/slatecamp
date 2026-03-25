@@ -59,7 +59,7 @@ export function RationaleDrawer({
           role="region"
           aria-label="Answer rationale"
         >
-          <div className="bg-[#EEF2FC] border-b border-primary/20">
+          <div className="bg-primary-50 border-b border-primary/20">
             <div className="max-w-[900px] mx-auto px-5 py-5 space-y-3">
               {/* Header row */}
               <div className="flex items-center justify-between">
@@ -115,7 +115,7 @@ export function RationaleDrawer({
               <div className="flex items-center gap-2 pt-1">
                 <button
                   onClick={onWikiClick}
-                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-primary/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
+                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-primary/20 text-primary-700 hover:bg-primary-50 text-[11px] font-black uppercase tracking-widest transition-colors"
                 >
                   <SCIcon icon={ArrowSquareOut} size="xs" />
                   Wiki Reference
@@ -130,7 +130,7 @@ export function RationaleDrawer({
                 {modelId && on3DLabClick && (
                   <button
                     onClick={on3DLabClick}
-                    className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-primary/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
+                    className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-primary/20 text-primary-700 hover:bg-primary-50 text-[11px] font-black uppercase tracking-widest transition-colors"
                   >
                     <SCIcon icon={Cube} size="xs" />
                     3D Model

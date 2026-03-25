@@ -170,7 +170,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
                 'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150',
                 range === opt.value
                   ? 'bg-camp-cobalt text-white'
-                  : 'bg-white text-ink-secondary hover:bg-[#EEF2FC]',
+                  : 'bg-white text-ink-secondary hover:bg-primary-50',
               )}
             >
               {opt.label}

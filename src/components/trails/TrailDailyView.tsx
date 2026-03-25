@@ -236,7 +236,7 @@ export const TrailDailyView = ({
                     type="button"
                     onClick={() => handleStepAction(step)}
                     disabled={isPending}
-                    className="flex-shrink-0 px-3 py-1.5 rounded-sm bg-[#EEF2FC] text-camp-cobalt text-xs font-medium transition-colors duration-150 ease-out hover:bg-camp-cobalt hover:text-white disabled:opacity-50"
+                    className="flex-shrink-0 px-3 py-1.5 rounded-sm bg-primary-50 text-camp-cobalt text-xs font-medium transition-colors duration-150 ease-out hover:bg-camp-cobalt hover:text-white disabled:opacity-50"
                   >
                     {actionLabel} &rarr;
                   </button>
@@ -263,7 +263,7 @@ export const TrailDailyView = ({
                 ~{totalEstimatedMinutes} min total
               </span>
             </div>
-            <div className="h-1.5 w-full rounded-full bg-[#EEF2FC]">
+            <div className="h-1.5 w-full rounded-full bg-primary-50">
               <div
                 className="h-1.5 rounded-full bg-camp-cobalt transition-all duration-150 ease-out"
                 style={{ width: `${percent}%` }}

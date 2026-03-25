@@ -107,7 +107,7 @@ const buildColumns = (): Column<Article>[] => [
       <div className="flex items-center gap-3">
         <Link
           href={`/admin/content/${row.article_id}`}
-          className="whitespace-nowrap text-xs text-camp-cobalt hover:text-[#1535A8] transition-colors duration-150"
+          className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
           onClick={(e) => e.stopPropagation()}
         >
           Edit with Questions &rarr;

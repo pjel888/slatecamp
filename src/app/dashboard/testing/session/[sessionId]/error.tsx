@@ -23,14 +23,14 @@ const SessionError = ({
           <button
             type="button"
             onClick={reset}
-            className="h-9 px-5 rounded-sm border border-border text-text-secondary text-[11px] font-black uppercase tracking-widest hover:bg-[#EEF2FC]/50 transition-colors"
+            className="h-9 px-5 rounded-sm border border-border text-text-secondary text-[11px] font-black uppercase tracking-widest hover:bg-primary-50/50 transition-colors"
           >
             Try Again
           </button>
           <button
             type="button"
             onClick={() => router.push(ROUTES.TESTING)}
-            className="h-9 px-5 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-[#1535A8] transition-colors"
+            className="h-9 px-5 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-primary-700 transition-colors"
           >
             Back to Testing
           </button>

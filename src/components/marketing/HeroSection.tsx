@@ -74,7 +74,7 @@ export const HeroSection = ({
             <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
+                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
               >
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>

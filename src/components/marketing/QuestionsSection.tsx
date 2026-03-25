@@ -50,7 +50,7 @@ const QuizMockup = () => (
             opt.state === 'correct'
               ? 'border-[#1B7A3C] bg-[#f0fdf4] text-[#1B7A3C]'
               : opt.state === 'selected'
-                ? 'border-camp-cobalt bg-[#EEF2FC] text-camp-cobalt'
+                ? 'border-camp-cobalt bg-primary-50 text-camp-cobalt'
                 : 'border-[#E5E7EB] text-[#555]'
           }`}
         >

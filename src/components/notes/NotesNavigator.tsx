@@ -37,8 +37,8 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       'flex items-center gap-2.5 rounded-md transition-colors duration-100 w-full text-left text-[13px]',
       collapsed ? 'justify-center px-0 py-2' : 'px-3 py-2',
       active
-        ? 'bg-[#EEF2FC] text-camp-cobalt font-medium'
-        : 'text-text-secondary hover:bg-[#EEF2FC]/60 hover:text-camp-cobalt',
+        ? 'bg-primary-50 text-camp-cobalt font-medium'
+        : 'text-text-secondary hover:bg-primary-50/60 hover:text-camp-cobalt',
     )
 
   const handleCreateFolder = async () => {

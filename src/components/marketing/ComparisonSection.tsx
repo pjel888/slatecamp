@@ -84,7 +84,7 @@ export const ComparisonSection = () => (
           <div className='border-l border-[#E5E7EB] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
             Traditional Review Center
           </div>
-          <div className='border-l border-[#E5E7EB] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
+          <div className='border-l border-[#E5E7EB] bg-primary-50 px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
             SlateCamp
           </div>
         </div>

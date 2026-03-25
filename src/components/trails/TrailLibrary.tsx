@@ -95,7 +95,7 @@ export const TrailLibrary = ({ trails, enrollmentMap, excludeTrailId }: TrailLib
           <button
             type="button"
             onClick={() => setExpanded(true)}
-            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-md border border-dashed border-border text-sm font-medium text-text-secondary hover:border-camp-cobalt hover:text-camp-cobalt hover:bg-[#EEF2FC]/50 transition-all duration-150 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-md border border-dashed border-border text-sm font-medium text-text-secondary hover:border-camp-cobalt hover:text-camp-cobalt hover:bg-primary-50/50 transition-all duration-150 cursor-pointer"
           >
             <Rows size={16} />
             Browse {remainingCount} more trail{remainingCount !== 1 ? 's' : ''}

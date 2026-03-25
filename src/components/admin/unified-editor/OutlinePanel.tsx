@@ -155,7 +155,7 @@ export const OutlinePanel = ({
       <div className="px-3 pb-4 pt-3">
         <div className="mb-2 flex items-center justify-between">
           <Eyebrow>EI Prompts</Eyebrow>
-          <span className="rounded-sm bg-[#EEF2FC] px-1.5 py-0.5 text-[11px] font-medium text-camp-cobalt">
+          <span className="rounded-sm bg-primary-50 px-1.5 py-0.5 text-[11px] font-medium text-camp-cobalt">
             {eiPrompts.length}
           </span>
         </div>

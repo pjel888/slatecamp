@@ -117,7 +117,7 @@ export const RestudyLoop = ({
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-text-tertiary">
           Re-Study {currentIdx + 1} of {questions.length}
         </p>
-        <span className="text-xs text-text-tertiary bg-[#EEF2FC] px-2 py-0.5 rounded-sm">
+        <span className="text-xs text-text-tertiary bg-primary-50 px-2 py-0.5 rounded-sm">
           {topicName}
         </span>
       </div>
@@ -142,7 +142,7 @@ export const RestudyLoop = ({
 
       {/* Rationale (if checked and wrong) */}
       {isChecked && selectedAnswer !== correctId && currentQuestion.rationale && (
-        <div className="p-3 bg-[#EEF2FC] border border-primary/10 rounded-md">
+        <div className="p-3 bg-primary-50 border border-primary/10 rounded-md">
           <p className="text-[13px] text-text-secondary leading-relaxed">{typeof currentQuestion.rationale === 'string' ? currentQuestion.rationale : (currentQuestion.rationale as any)?.correct || ''}</p>
         </div>
       )}
@@ -157,7 +157,7 @@ export const RestudyLoop = ({
             className={cn(
               'h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
               selectedAnswer
-                ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
+                ? 'bg-camp-cobalt text-white hover:bg-primary-700'
                 : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
             )}
           >
@@ -167,7 +167,7 @@ export const RestudyLoop = ({
           <button
             type="button"
             onClick={handleNext}
-            className="h-10 px-6 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-[#1535A8] transition-all"
+            className="h-10 px-6 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-primary-700 transition-all"
           >
             {currentIdx === questions.length - 1 ? 'Done' : 'Next'}
           </button>

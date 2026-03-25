@@ -116,7 +116,7 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
                   ? removeBookmark(currentArticleId)
                   : addBookmark(currentArticleId, currentSlug, currentTitle)
               }
-              className="text-[11px] text-primary hover:text-[#1535A8] font-medium transition-colors"
+              className="text-[11px] text-primary hover:text-primary-700 font-medium transition-colors"
             >
               {isSaved ? 'Unsave this page' : 'Save this page'}
             </button>

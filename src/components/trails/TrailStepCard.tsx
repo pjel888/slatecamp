@@ -140,7 +140,7 @@ const TrailStepCard = ({
             type="button"
             onClick={handleCTA}
             disabled={isPending}
-            className="rounded-sm bg-[#EEF2FC] px-4 py-2 text-sm font-medium text-camp-cobalt transition-colors duration-150 hover:bg-camp-cobalt hover:text-white disabled:opacity-50"
+            className="rounded-sm bg-primary-50 px-4 py-2 text-sm font-medium text-camp-cobalt transition-colors duration-150 hover:bg-camp-cobalt hover:text-white disabled:opacity-50"
           >
             {config.cta}
           </button>

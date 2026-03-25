@@ -47,13 +47,13 @@ export function OptionButton({
         // Default
         state === 'default' && [
           'bg-white border-border text-text-primary',
-          'hover:border-primary/20 hover:bg-[#EEF2FC]/50',
+          'hover:border-primary/20 hover:bg-primary-50/50',
           'cursor-pointer',
         ],
 
         // Selected (pre-check) — calm cobalt tint, not full fill
         state === 'selected' && [
-          'bg-[#EEF2FC] border-primary text-text-primary',
+          'bg-primary-50 border-primary text-text-primary',
           'cursor-pointer',
         ],
 
@@ -124,7 +124,7 @@ export function OptionButton({
             'shrink-0 p-1.5 rounded-sm transition-colors',
             state === 'selected'
               ? 'text-primary/40 hover:text-primary hover:bg-primary/10'
-              : 'text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC]/50',
+              : 'text-text-tertiary hover:text-text-secondary hover:bg-primary-50/50',
           )}
         >
           <SCIcon icon={Backspace} size="sm" />
@@ -138,7 +138,7 @@ export function OptionButton({
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); onStrike(e) } }}
           aria-label="Restore this option"
           title="Restore this option"
-          className="shrink-0 p-1.5 rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC]/50 transition-colors"
+          className="shrink-0 p-1.5 rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-primary-50/50 transition-colors"
         >
           <SCIcon icon={Backspace} size="sm" />
         </span>

@@ -74,7 +74,7 @@ export const InfoPanel = memo(function InfoPanel({
               {content.onQuiz && (
                 <Button
                   size='sm'
-                  className='h-7 text-[11px] font-bold uppercase tracking-wide rounded-sm bg-primary hover:bg-[#1535A8]'
+                  className='h-7 text-[11px] font-bold uppercase tracking-wide rounded-sm bg-primary hover:bg-primary-700'
                   onClick={content.onQuiz}
                 >
                   <SCIcon icon={Brain} size='xs' className='mr-1.5' />

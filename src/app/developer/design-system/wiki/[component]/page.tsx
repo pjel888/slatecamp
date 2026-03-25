@@ -41,7 +41,7 @@ const wikiCardData: ComponentData = {
   preview: (
     <div className="w-full max-w-sm bg-card border border-border rounded-md p-4 space-y-3 hover:shadow-sm transition-shadow duration-150">
       <div className="flex items-center gap-2">
-        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-primary text-[11px] font-medium">
+        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-primary-50 text-primary text-[11px] font-medium">
           PD 1096 — National Building Code
         </span>
         <span className="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-[#EDFAF4] text-emerald-700 text-[11px] font-medium">
@@ -203,7 +203,7 @@ const tagBadgeData: ComponentData = {
 <TagBadge label="Archived" variant="muted" />`,
   preview: (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-[#EEF2FC] text-primary text-[12px] font-medium">
+      <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-primary-50 text-primary text-[12px] font-medium">
         Structural
       </span>
       <span className="inline-flex items-center px-2.5 py-1 rounded-sm border border-border bg-card text-foreground text-[12px] font-medium">
@@ -212,7 +212,7 @@ const tagBadgeData: ComponentData = {
       <span className="inline-flex items-center px-2.5 py-1 rounded-sm bg-muted text-muted-foreground text-[12px] font-medium">
         Archived
       </span>
-      <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-primary text-[11px] font-medium">
+      <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-primary-50 text-primary text-[11px] font-medium">
         Utilities
       </span>
       <span className="inline-flex items-center px-2 py-0.5 rounded-sm border border-border bg-card text-foreground text-[11px] font-medium">

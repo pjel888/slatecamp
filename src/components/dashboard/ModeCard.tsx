@@ -103,7 +103,7 @@ export function ModeCard({
             'w-full font-semibold transition-all',
             hasActiveSession
               ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
-              : 'bg-primary text-white hover:bg-[#1535A8]',
+              : 'bg-primary text-white hover:bg-primary-700',
           )}
         >
           {hasActiveSession ? (
@@ -120,7 +120,7 @@ export function ModeCard({
           <Button
             variant='outline'
             onClick={onSecondaryAction}
-            className='w-full border-primary/20 text-primary hover:bg-[#EEF2FC] font-semibold'
+            className='w-full border-primary/20 text-primary hover:bg-primary-50 font-semibold'
           >
             <SCIcon icon={Play} size='sm' weight='fill' className='mr-2' />{' '}
             Resume Session

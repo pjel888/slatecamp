@@ -58,8 +58,8 @@ export const StudyWindowSelector = ({
             className={cn(
               'w-full flex items-center justify-between rounded-md border px-4 py-3 transition-colors text-left',
               selected === value
-                ? 'border-camp-cobalt bg-[#EEF2FC]'
-                : 'border-border hover:border-camp-cobalt/50 hover:bg-[#EEF2FC]/30',
+                ? 'border-camp-cobalt bg-primary-50'
+                : 'border-border hover:border-camp-cobalt/50 hover:bg-primary-50/30',
             )}
           >
             <div className="flex items-center gap-3">

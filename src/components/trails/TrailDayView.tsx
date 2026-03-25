@@ -116,7 +116,7 @@ export const TrailDayView = ({
             </span>
           )}
         </div>
-        <div className="h-1.5 w-full rounded-full bg-[#EEF2FC]">
+        <div className="h-1.5 w-full rounded-full bg-primary-50">
           <div
             className="h-1.5 rounded-full bg-camp-cobalt transition-all duration-300 ease-out"
             style={{ width: `${progressPercent}%` }}

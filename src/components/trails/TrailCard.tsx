@@ -16,7 +16,7 @@ const TRAIL_TYPE_LABELS: Record<CampTrail['trail_type'], string> = {
 }
 
 const TRAIL_TYPE_STYLES: Record<CampTrail['trail_type'], string> = {
-  time_gated: 'bg-[#EEF2FC] text-camp-cobalt',
+  time_gated: 'bg-primary-50 text-camp-cobalt',
   subject_mastery: 'bg-[#EEEDFE] text-[#534AB7]',
   code_deep_dive: 'bg-[#FEF8ED] text-[#8B6914]',
   remediation: 'bg-[#FFF3E8] text-[#9E5B1F]',
