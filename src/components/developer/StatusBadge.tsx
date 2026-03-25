@@ -1,4 +1,4 @@
-import { Check, AlertTriangle, X } from 'lucide-react'
+import { Check, Warning, X } from '@phosphor-icons/react'
 import type { ServiceStatus } from '@/types/developer'
 
 /* ------------------------------------------------------------------ */
@@ -26,7 +26,7 @@ const config = {
     dotColor: 'bg-amber-500',
     textColor: 'text-amber-600',
     bgColor: 'bg-amber-50',
-    Icon: AlertTriangle,
+    Icon: Warning,
   },
   outage: {
     label: 'Outage',

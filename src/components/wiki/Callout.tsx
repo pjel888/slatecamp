@@ -1,5 +1,4 @@
-import { Info, Warning, Lightbulb, BookOpen, WarningDiamond, Target, Scales } from '@phosphor-icons/react/dist/ssr'
-import { X } from 'lucide-react'
+import { Info, Warning, Lightbulb, BookOpen, WarningDiamond, Target, Scales, X } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 /**

@@ -3,16 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import {
-  Search,
-  Plus,
-  FileText,
-  ArrowRight,
-  FolderTree,
-  HelpCircle,
-  LayoutGrid,
-  List,
-} from 'lucide-react'
+import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question } from '@phosphor-icons/react'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 import { Badge } from '@/components/ui/badge'
 import { StatusBadge } from '@/components/ui/status-badge'
@@ -180,7 +171,7 @@ export const ContentEditorIndex = ({
           {/* Sidebar header */}
           <div className="flex items-center justify-between border-b border-border px-4 py-3">
             <div className="flex items-center gap-2">
-              <FolderTree className="h-3.5 w-3.5 text-text-secondary" />
+              <TreeStructure className="h-3.5 w-3.5 text-text-secondary" />
               <Eyebrow>Topics</Eyebrow>
             </div>
             {selectedNodeId && (
@@ -252,12 +243,12 @@ export const ContentEditorIndex = ({
             className="flex h-8 w-8 items-center justify-center rounded-sm border border-border text-text-secondary hover:bg-[#F8F7F5] hover:text-text-primary transition-colors duration-150"
             aria-label={sidebarCollapsed ? 'Show topics' : 'Hide topics'}
           >
-            <FolderTree className="h-3.5 w-3.5" />
+            <TreeStructure className="h-3.5 w-3.5" />
           </button>
 
           {/* Search */}
           <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary" />
+            <MagnifyingGlass className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary" />
             <input
               type="text"
               value={searchQuery}
@@ -308,7 +299,7 @@ export const ContentEditorIndex = ({
           {/* New Article */}
           <Link href="/admin/content/new">
             <Button variant="primary" size="sm">
-              <Plus className="w-3.5 h-3.5" />
+              <Plus className="w-3.5 h-3.5" weight="bold" />
               New Article
             </Button>
           </Link>
@@ -356,7 +347,7 @@ export const ContentEditorIndex = ({
             <div className="flex items-center justify-center h-full">
               {articles.length === 0 ? (
                 <EmptyState
-                  icon={<FileText className="w-5 h-5" />}
+                  icon={<FileText size={20} />}
                   message="No articles yet"
                   description="Create your first article to start building content and questions together."
                   action={{
@@ -366,7 +357,7 @@ export const ContentEditorIndex = ({
                 />
               ) : (
                 <EmptyState
-                  icon={<Search className="w-5 h-5" />}
+                  icon={<MagnifyingGlass size={20} />}
                   message="No matching articles"
                   description="Try adjusting your search or filter criteria."
                   action={{
@@ -390,7 +381,7 @@ export const ContentEditorIndex = ({
                 >
                   {/* Icon */}
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#EEF2FC]">
-                    <FileText className="h-4 w-4 text-camp-cobalt" />
+                    <FileText size={16} className="text-camp-cobalt" />
                   </div>
 
                   {/* Content */}
@@ -430,7 +421,7 @@ export const ContentEditorIndex = ({
                       )}
                       <span>{article.word_count.toLocaleString()}w</span>
                       <span className="flex items-center gap-0.5">
-                        <HelpCircle className="h-2.5 w-2.5" />
+                        <Question size={10} />
                         {article.question_count}q
                       </span>
                       <span>Updated {formatDate(article.updated_at)}</span>
@@ -440,7 +431,7 @@ export const ContentEditorIndex = ({
                   {/* Hover action */}
                   <div className="shrink-0 flex items-center gap-1 text-xs font-medium text-camp-cobalt opacity-0 group-hover:opacity-100 transition-opacity duration-150">
                     Open Editor
-                    <ArrowRight className="w-3 h-3" />
+                    <ArrowRight size={12} />
                   </div>
                 </Link>
               ))}

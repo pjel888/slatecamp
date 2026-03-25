@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { Search } from 'lucide-react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
 import { createClient } from '@/lib/supabase/client'
 import { SectionHeader } from '@/components/shared/section-header'
 import { SearchInput } from '@/components/ui/input'
@@ -173,7 +173,7 @@ export const ContentSearchClient = () => {
 
       {!hasSearched && !searchError && (
         <EmptyState
-          icon={<Search className="size-5" />}
+          icon={<MagnifyingGlass size={20} />}
           message="Search across all content"
           description="Type to search questions, articles, and taxonomy nodes."
         />
@@ -181,7 +181,7 @@ export const ContentSearchClient = () => {
 
       {noResults && !searchError && (
         <EmptyState
-          icon={<Search className="size-5" />}
+          icon={<MagnifyingGlass size={20} />}
           message="No results found"
           description={`No content matches "${inputValue}". Try a different search term.`}
         />

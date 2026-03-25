@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Monitor, Database, FileText, FlaskConical } from 'lucide-react'
+import { Monitor, Database, FileText, Flask } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
 import { ROUTES } from '@/lib/constants/routes'
 
@@ -30,7 +30,7 @@ const tools = [
   {
     title: 'Test Data Generator',
     description: 'Generate mock sessions and organizations.',
-    icon: FlaskConical,
+    icon: Flask,
     href: ROUTES.DEVELOPER_TEST_DATA,
   },
 ]

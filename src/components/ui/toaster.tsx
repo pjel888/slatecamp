@@ -1,6 +1,6 @@
 "use client"
 
-import { CheckCircle2, AlertCircle, AlertTriangle, Info } from "lucide-react"
+import { CheckCircle, WarningCircle, Warning, Info } from "@phosphor-icons/react"
 import { useToast } from "@/lib/hooks/use-toast"
 import {
   Toast,
@@ -12,9 +12,9 @@ import {
 } from "@/components/ui/toast"
 
 const variantIcons = {
-  success: CheckCircle2,
-  error: AlertCircle,
-  warning: AlertTriangle,
+  success: CheckCircle,
+  error: WarningCircle,
+  warning: Warning,
   info: Info,
 } as const
 

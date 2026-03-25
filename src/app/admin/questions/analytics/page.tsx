@@ -6,7 +6,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from '@phosphor-icons/react'
 import Link from 'next/link'
 
 /* ------------------------------------------------------------------ */
@@ -76,7 +76,7 @@ const QuestionsAnalyticsPage = async () => {
         href="/admin/questions"
         className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
       >
-        <ArrowLeft className="w-3.5 h-3.5" />
+        <ArrowLeft className="w-3.5 h-3.5" weight="bold" />
         Back to Questions
       </Link>
 

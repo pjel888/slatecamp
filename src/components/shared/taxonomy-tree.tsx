@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { ChevronRight, FileText, BookOpen, Layers } from 'lucide-react'
+import { CaretRight, FileText, BookOpen, Stack } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { SearchInput } from '@/components/ui/input'
 
@@ -250,8 +250,8 @@ const TreeBranch = React.memo(({
 
   const nodeHref = `${basePath}/${effectiveSlug}`
 
-  // Level-based icon: subjects=BookOpen, subtopics=Layers, articles=FileText
-  const LevelIcon = node.level <= 1 ? BookOpen : node.level === 2 ? Layers : FileText
+  // Level-based icon: subjects=BookOpen, subtopics=Stack, articles=FileText
+  const LevelIcon = node.level <= 1 ? BookOpen : node.level === 2 ? Stack : FileText
 
   return (
     <>
@@ -277,7 +277,7 @@ const TreeBranch = React.memo(({
             )}
             aria-label={isExpanded ? 'Collapse' : 'Expand'}
           >
-            <ChevronRight
+            <CaretRight
               className={cn(
                 'h-3 w-3 transition-transform duration-150',
                 isExpanded && 'rotate-90',

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
+import { CaretRight } from '@phosphor-icons/react'
 
 import { cn } from '@/lib/utils'
 
@@ -23,7 +23,7 @@ const Separator = ({ type }: { type: 'slash' | 'chevron' }) => {
     )
   }
   return (
-    <ChevronRight
+    <CaretRight
       aria-hidden="true"
       className="h-3.5 w-3.5 text-muted-foreground"
     />

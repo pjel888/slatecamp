@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
@@ -18,7 +18,7 @@ const AdminError = ({ error, reset }: ErrorProps) => {
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 p-8">
       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#FDF0F0]">
-        <AlertTriangle className="h-6 w-6 text-destructive" />
+        <Warning size={24} className="text-destructive" />
       </div>
       <div className="text-center">
         <h2 className="text-lg font-semibold text-text-primary">

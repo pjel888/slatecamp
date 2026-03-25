@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge'
 import { SubmitButton } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { EmptyState } from '@/components/shared/empty-state'
-import { Shield, UserX, Users } from 'lucide-react'
+import { Shield, UserMinus, Users } from '@phosphor-icons/react'
 import { RoleSelect } from '@/components/admin/settings/RoleSelect'
 
 /* ------------------------------------------------------------------ */
@@ -52,7 +52,7 @@ const AdminSettingsPage = async () => {
       <Card>
         {adminUsers.length === 0 ? (
           <EmptyState
-            icon={<Users className="size-5" />}
+            icon={<Users size={20} />}
             message="No admin roles assigned"
             description="Use the form below to assign a role to a user."
           />
@@ -110,7 +110,7 @@ const AdminSettingsPage = async () => {
                             variant="ghost"
                             size="xs"
                             pendingLabel="Revoking..."
-                            leftIcon={<UserX className="size-3.5" />}
+                            leftIcon={<UserMinus size={14} />}
                             aria-label={`Revoke ${badge.label} role for user ${truncateUuid(row.user_id)}`}
                           >
                             Revoke
@@ -130,7 +130,7 @@ const AdminSettingsPage = async () => {
       <Card>
         <div className="space-y-4">
           <div className="flex items-center gap-2">
-            <Shield className="size-4 text-muted-foreground" />
+            <Shield size={16} className="text-muted-foreground" />
             <h3 className="text-sm font-semibold text-foreground">Add Role</h3>
           </div>
 

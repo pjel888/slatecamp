@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
 
 export default function DeveloperPortalError({
   error,
@@ -19,7 +19,7 @@ export default function DeveloperPortalError({
   return (
     <div className="max-w-lg mx-auto py-16">
       <Card className="text-center p-8">
-        <AlertTriangle className="w-8 h-8 text-amber-500 mx-auto mb-3" />
+        <Warning size={32} className="text-amber-500 mx-auto mb-3" />
         <h2 className="font-[family-name:var(--font-display)] font-bold text-lg text-foreground mb-1">
           Something went wrong
         </h2>

@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { Clock, ChevronLeft } from 'lucide-react'
+import { Clock, CaretLeft } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { DebriefLayout } from './DebriefLayout'
 import { PressureGapCard } from './PressureGapCard'
@@ -138,7 +138,7 @@ const WaitingState = ({
               variant="outline"
               size="md"
               onClick={onBack}
-              leftIcon={<ChevronLeft className="h-4 w-4" />}
+              leftIcon={<CaretLeft size={16} />}
             >
               Back to Review
             </Button>

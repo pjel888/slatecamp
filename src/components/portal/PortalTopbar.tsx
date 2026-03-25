@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/constants/routes'
 
@@ -51,7 +51,7 @@ const PortalTopbar = ({
         href={backHref}
         className="flex items-center gap-1 text-[11px] text-white/45 hover:text-white transition-colors duration-150"
       >
-        <ArrowLeft className="w-3 h-3" />
+        <ArrowLeft size={12} />
         {backLabel}
       </Link>
     )}

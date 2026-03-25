@@ -1,4 +1,4 @@
-import { Users, Plus } from 'lucide-react'
+import { Users, Plus } from '@phosphor-icons/react'
 import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 import { getTeamMembers, getDepartmentCosts } from '@/lib/queries/ceo/team-queries'
 import { TeamTable } from '@/components/ceo/TeamTable'
@@ -27,7 +27,7 @@ const CeoTeamPage = async () => {
       <div className="flex items-start justify-between gap-4">
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
-            <Users className="h-4 w-4 text-muted-foreground" />
+            <Users size={16} className="text-muted-foreground" />
             <h1 className="font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
               Team
             </h1>
@@ -47,7 +47,7 @@ const CeoTeamPage = async () => {
         </div>
 
         <button className="inline-flex items-center gap-2 rounded-sm bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150">
-          <Plus className="h-3.5 w-3.5" />
+          <Plus className="h-3.5 w-3.5" weight="bold" />
           Add Team Member
         </button>
       </div>

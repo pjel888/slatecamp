@@ -1,19 +1,6 @@
 'use client'
 
-import {
-  LayoutDashboard,
-  HelpCircle,
-  FileText,
-  GitBranch,
-  Box,
-  CheckSquare,
-  GitPullRequest,
-  Columns,
-  Search,
-  Clock,
-  Activity,
-  Settings,
-} from 'lucide-react'
+import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Columns, Pulse, GearSix } from '@phosphor-icons/react'
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'
@@ -35,8 +22,8 @@ const adminPages = [
   { title: 'Review Queue', href: '/admin/reviews', group: 'Quality' },
   { title: 'Publishing Pipeline', href: '/admin/pipeline', group: 'Quality' },
   { title: 'Content Search', href: '/admin/search', group: 'Quality' },
-  { title: 'Audit Log', href: '/admin/audit', group: 'Activity' },
-  { title: 'Activity Feed', href: '/admin/activity', group: 'Activity' },
+  { title: 'Audit Log', href: '/admin/audit', group: 'Pulse' },
+  { title: 'Pulse Feed', href: '/admin/activity', group: 'Pulse' },
   { title: 'Settings', href: '/admin/settings', group: 'Settings' },
 ]
 
@@ -47,7 +34,7 @@ const adminNavItems: NavGroup[] = [
       {
         label: 'Dashboard',
         href: '/admin/dashboard',
-        icon: <LayoutDashboard className="w-3.5 h-3.5" />,
+        icon: <SquaresFour className="w-3.5 h-3.5" />,
       },
     ],
   },
@@ -57,7 +44,7 @@ const adminNavItems: NavGroup[] = [
       {
         label: 'Questions',
         href: '/admin/questions',
-        icon: <HelpCircle className="w-3.5 h-3.5" />,
+        icon: <Question className="w-3.5 h-3.5" />,
         children: [
           { label: 'All Questions', href: '/admin/questions' },
           { label: 'Create New', href: '/admin/questions/new' },
@@ -97,7 +84,7 @@ const adminNavItems: NavGroup[] = [
       {
         label: '3D Assets',
         href: '/admin/assets',
-        icon: <Box className="w-3.5 h-3.5" />,
+        icon: <Cube className="w-3.5 h-3.5" />,
       },
     ],
   },
@@ -117,12 +104,12 @@ const adminNavItems: NavGroup[] = [
       {
         label: 'Content Search',
         href: '/admin/search',
-        icon: <Search className="w-3.5 h-3.5" />,
+        icon: <MagnifyingGlass className="w-3.5 h-3.5" />,
       },
     ],
   },
   {
-    label: 'Activity',
+    label: 'Pulse',
     items: [
       {
         label: 'Audit Log',
@@ -130,9 +117,9 @@ const adminNavItems: NavGroup[] = [
         icon: <Clock className="w-3.5 h-3.5" />,
       },
       {
-        label: 'Activity Feed',
+        label: 'Pulse Feed',
         href: '/admin/activity',
-        icon: <Activity className="w-3.5 h-3.5" />,
+        icon: <Pulse className="w-3.5 h-3.5" />,
       },
     ],
   },
@@ -142,7 +129,7 @@ const adminNavItems: NavGroup[] = [
       {
         label: 'Settings',
         href: '/admin/settings',
-        icon: <Settings className="w-3.5 h-3.5" />,
+        icon: <GearSix className="w-3.5 h-3.5" />,
       },
     ],
   },

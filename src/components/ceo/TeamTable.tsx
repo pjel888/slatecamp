@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { Pencil, ShieldCheck } from 'lucide-react'
+import { PencilSimple, ShieldCheck } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { RoleAssignmentModal } from '@/components/ceo/RoleAssignmentModal'
 import type { TeamMember, TeamDepartment } from '@/types/ceo'
@@ -141,7 +141,7 @@ export const TeamTable = ({ members }: TeamTableProps) => {
             className="inline-flex items-center gap-1 rounded-sm border border-border px-2 py-1 text-[11px] text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors duration-150"
             aria-label={`Edit ${member.displayName}`}
           >
-            <Pencil className="h-3 w-3" />
+            <PencilSimple size={12} />
             Edit
           </button>
           {member.userId && (
@@ -150,7 +150,7 @@ export const TeamTable = ({ members }: TeamTableProps) => {
               className="inline-flex items-center gap-1 rounded-sm border border-border px-2 py-1 text-[11px] text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors duration-150"
               aria-label={`Assign role to ${member.displayName}`}
             >
-              <ShieldCheck className="h-3 w-3" />
+              <ShieldCheck size={12} />
               Role
             </button>
           )}

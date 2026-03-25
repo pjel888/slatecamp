@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback, useMemo } from 'react'
 import * as React from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Fuse from 'fuse.js'
-import { Clock } from 'lucide-react'
+import { Clock } from '@phosphor-icons/react'
 import {
   CommandDialog,
   CommandInput,
@@ -260,7 +260,7 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
                 value={`recent-${page.href}`}
                 onSelect={() => handleSelect(page.href)}
               >
-                <Clock className="mr-2 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+                <Clock size={14} className="mr-2 shrink-0 text-muted-foreground" />
                 <span className="flex-1 text-sm">{page.title}</span>
                 <Badge variant="default" size="xs" className="ml-2 shrink-0">
                   {page.group}

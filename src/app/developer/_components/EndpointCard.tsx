@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ChevronDown } from 'lucide-react'
+import { CaretDown } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
 import { CodeBlock } from './CodeBlock'
@@ -78,7 +78,7 @@ export const EndpointCard = ({
             </Badge>
           ))}
           {hasDetails && (
-            <ChevronDown
+            <CaretDown
               className={cn(
                 'w-3.5 h-3.5 text-muted-foreground transition-transform duration-150',
                 expanded && 'rotate-180',

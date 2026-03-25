@@ -1,4 +1,4 @@
-import { Check, AlertTriangle, X } from 'lucide-react'
+import { Check, Warning, X } from '@phosphor-icons/react'
 import type { ServiceStatus } from '@/types/developer'
 
 /* ------------------------------------------------------------------ */
@@ -23,7 +23,7 @@ const bannerConfig = {
     bg: 'bg-amber-50',
     border: 'border-amber-200',
     text: 'text-amber-700',
-    icon: AlertTriangle,
+    icon: Warning,
     message: 'Partially Degraded Service',
   },
   outage: {

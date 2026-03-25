@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { CheckCircle2, AlertTriangle, HelpCircle, Flame, Zap, Eye, Award } from 'lucide-react'
+import { CheckCircle, Warning, Question, Fire, Lightning, Eye, Trophy } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */
@@ -131,9 +131,9 @@ const StatusBadge = ({ status }: { status: 'published' | 'draft' | 'archived' | 
 
 const VerificationBadge = ({ status, count }: { status: 'clean' | 'has_issues' | 'unverified'; count?: number }) => {
   const config = {
-    clean: { variant: 'success' as const, label: 'Clean', icon: <CheckCircle2 /> },
-    has_issues: { variant: 'danger' as const, label: count ? `${count} issues` : 'Has issues', icon: <AlertTriangle /> },
-    unverified: { variant: 'default' as const, label: 'Unverified', icon: <HelpCircle /> },
+    clean: { variant: 'success' as const, label: 'Clean', icon: <CheckCircle /> },
+    has_issues: { variant: 'danger' as const, label: count ? `${count} issues` : 'Has issues', icon: <Warning /> },
+    unverified: { variant: 'default' as const, label: 'Unverified', icon: <Question /> },
   }
   const { variant, label, icon } = config[status]
   return <Badge variant={variant} size="sm" icon={icon}>{label}</Badge>
@@ -151,10 +151,10 @@ const DifficultyBadge = ({ level }: { level: 'foundational' | 'intermediate' | '
 
 const SessionModeBadge = ({ mode }: { mode: 'camp' | 'storm' | 'blindspot' | 'proof' }) => {
   const config = {
-    camp: { variant: 'primary' as const, label: 'CAMP', icon: <Flame /> },
-    storm: { variant: 'warning' as const, label: 'STORM', icon: <Zap /> },
+    camp: { variant: 'primary' as const, label: 'CAMP', icon: <Fire /> },
+    storm: { variant: 'warning' as const, label: 'STORM', icon: <Lightning /> },
     blindspot: { variant: 'purple' as const, label: 'BLINDSPOT', icon: <Eye /> },
-    proof: { variant: 'orange' as const, label: 'PROOF', icon: <Award /> },
+    proof: { variant: 'orange' as const, label: 'PROOF', icon: <Trophy /> },
   }
   const { variant, label, icon } = config[mode]
   return <Badge variant={variant} size="xs" icon={icon} pill>{label}</Badge>

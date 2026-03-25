@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Search } from 'lucide-react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
 import { CommandPalette } from '@/components/portal'
 import { getAllComponents, DOMAIN_LABELS } from '@/lib/developer/componentRegistry'
 
@@ -76,7 +76,7 @@ export const DevPortalSearch = () => {
         }}
         className="flex items-center gap-1.5 bg-white/[0.06] border border-white/10 rounded-xs px-2.5 py-1 w-[200px] cursor-pointer hover:bg-white/[0.10] transition-colors duration-150"
       >
-        <Search className="w-3.5 h-3.5 text-white/30 shrink-0" />
+        <MagnifyingGlass className="w-3.5 h-3.5 text-white/30 shrink-0" />
         <span className="text-white/25 text-xs flex-1 text-left">Search components...</span>
         <kbd className="font-[family-name:var(--font-dm-mono)] text-[11px] text-white/25 border border-white/10 px-1 py-px rounded">
           ⌘K

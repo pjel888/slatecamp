@@ -1,15 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import {
-  Plus,
-  FileText,
-  Upload,
-  ClipboardCheck,
-  GitBranch,
-  ArrowRight,
-  AlertTriangle,
-  LayoutDashboard,
-} from 'lucide-react'
+import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
@@ -34,37 +25,37 @@ const getInitials = (actorId: string): string => actorId.slice(0, 2).toUpperCase
 
 const quickActions = [
   {
-    icon: <Plus className="h-4 w-4 text-muted-foreground" />,
+    icon: <Plus size={16} className="text-muted-foreground" />,
     title: 'Create Question',
     subtitle: 'Add a new question to the bank',
     href: '/admin/questions/new',
   },
   {
-    icon: <FileText className="h-4 w-4 text-muted-foreground" />,
+    icon: <FileText size={16} className="text-muted-foreground" />,
     title: 'Create Article',
     subtitle: 'Write a new wiki article',
     href: '/admin/articles/new',
   },
   {
-    icon: <LayoutDashboard className="h-4 w-4 text-muted-foreground" />,
+    icon: <SquaresFour size={16} className="text-muted-foreground" />,
     title: 'Content Editor',
     subtitle: 'Manage existing content',
     href: '/admin/content',
   },
   {
-    icon: <Upload className="h-4 w-4 text-muted-foreground" />,
+    icon: <UploadSimple size={16} className="text-muted-foreground" />,
     title: 'Import Questions',
     subtitle: 'Bulk import from spreadsheet',
     href: '/admin/questions/import',
   },
   {
-    icon: <ClipboardCheck className="h-4 w-4 text-muted-foreground" />,
+    icon: <ClipboardText size={16} className="text-muted-foreground" />,
     title: 'Review Queue',
     subtitle: 'Items awaiting review',
     href: '/admin/reviews',
   },
   {
-    icon: <GitBranch className="h-4 w-4 text-muted-foreground" />,
+    icon: <GitBranch size={16} className="text-muted-foreground" />,
     title: 'Taxonomy Editor',
     subtitle: 'Manage content taxonomy',
     href: '/admin/taxonomy',
@@ -101,7 +92,7 @@ const AdminDashboardPage = async () => {
       {/* Section 2: Coverage Alert */}
       {coverageGap && (
         <div className="flex items-start gap-3 rounded-md border border-amber-200 bg-amber-50 px-4 py-3">
-          <AlertTriangle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
+          <Warning size={16} className="shrink-0 text-amber-600 mt-0.5" />
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-amber-900">
               Coverage gap detected
@@ -119,7 +110,7 @@ const AdminDashboardPage = async () => {
             className="shrink-0 inline-flex items-center gap-1 text-xs font-medium text-amber-800 hover:text-amber-900 transition-colors duration-150"
           >
             Create content
-            <ArrowRight className="h-3 w-3" />
+            <ArrowRight size={12} />
           </Link>
         </div>
       )}
@@ -226,7 +217,7 @@ const AdminDashboardPage = async () => {
               className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors duration-150"
             >
               View all
-              <ArrowRight className="h-3 w-3" />
+              <ArrowRight size={12} />
             </Link>
           </div>
 

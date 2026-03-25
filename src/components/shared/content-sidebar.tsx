@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { ChevronDown, ChevronRight, ThumbsUp, ThumbsDown, Flag } from 'lucide-react'
+import { CaretDown, CaretRight, ThumbsUp, ThumbsDown, Flag } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------
@@ -89,7 +89,7 @@ const ContentSidebarSection = ({
     >
       <p className="text-xs font-medium text-foreground">{title}</p>
       {collapsible && (
-        <ChevronDown
+        <CaretDown
           className={cn(
             'w-3.5 h-3.5 text-muted-foreground transition-transform duration-150',
             open && 'rotate-180',
@@ -163,21 +163,21 @@ const ContentSidebarFeedback = ({
         onClick={onHelpful}
         className="flex h-7 w-7 items-center justify-center rounded-sm border border-border text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground"
       >
-        <ThumbsUp className="h-3.5 w-3.5" />
+        <ThumbsUp className="h-3.5 w-3.5" weight="regular" />
       </button>
       <button
         type="button"
         onClick={onNotHelpful}
         className="flex h-7 w-7 items-center justify-center rounded-sm border border-border text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground"
       >
-        <ThumbsDown className="h-3.5 w-3.5" />
+        <ThumbsDown className="h-3.5 w-3.5" weight="regular" />
       </button>
       <button
         type="button"
         onClick={onReport}
         className="flex h-7 items-center gap-1 rounded-sm border border-border px-2 text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground"
       >
-        <Flag className="h-3 w-3" />
+        <Flag className="h-3 w-3" weight="regular" />
         <span className="text-[11px]">Report</span>
       </button>
     </div>
@@ -277,7 +277,7 @@ const ContentSidebarPopover = ({
         )}
       >
         <span>{label}</span>
-        <ChevronRight
+        <CaretRight
           className={cn(
             'h-3 w-3 transition-transform duration-150',
             open && 'rotate-90',

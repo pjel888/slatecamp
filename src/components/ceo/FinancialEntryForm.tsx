@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { X } from 'lucide-react'
+import { X } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { addFinancialEntry, updateFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import {
@@ -156,7 +156,7 @@ export const FinancialEntryForm = ({ isOpen, onClose, editEntry }: FinancialEntr
             className="rounded-sm p-1 text-muted-foreground hover:text-foreground transition-colors duration-150"
             aria-label="Close"
           >
-            <X className="h-4 w-4" />
+            <X size={16} />
           </button>
         </div>
 

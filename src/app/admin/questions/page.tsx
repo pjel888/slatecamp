@@ -4,7 +4,7 @@ import { getQuestions } from '@/lib/actions/admin/question-queries'
 export const metadata: Metadata = { title: 'Questions — SlateCamp Admin' }
 import { PageHeader } from '@/components/shared/page-header'
 import { Button } from '@/components/ui/button'
-import { Plus, Upload, BarChart3 } from 'lucide-react'
+import { Plus, UploadSimple, ChartBar } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { QuestionsTableClient } from './_components/QuestionsTableClient'
 
@@ -19,12 +19,12 @@ const AdminQuestionsPage = async () => {
         actions={
           <>
             <Link href="/admin/questions/analytics">
-              <Button variant="ghost" size="sm" leftIcon={<BarChart3 />}>
+              <Button variant="ghost" size="sm" leftIcon={<ChartBar />}>
                 Analytics
               </Button>
             </Link>
             <Link href="/admin/questions/import">
-              <Button variant="secondary" size="sm" leftIcon={<Upload />}>
+              <Button variant="secondary" size="sm" leftIcon={<UploadSimple />}>
                 Import
               </Button>
             </Link>

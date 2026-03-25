@@ -8,8 +8,8 @@ import {
   CircleNotch,
   BookOpen,
   FileText,
+  ArrowRight,
 } from '@phosphor-icons/react'
-import { ArrowRight, Search } from 'lucide-react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { createClient } from '@/lib/supabase/client'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -146,7 +146,7 @@ export const Omnibar = ({
         {/* Search input — inside body, using our input styling */}
         <div className="px-3 pt-3 pb-2 shrink-0">
           <div className="relative">
-            <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+            <MagnifyingGlass size={16} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
             <Command.Input
               value={query}
               onValueChange={setQuery}

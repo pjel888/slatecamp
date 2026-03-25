@@ -1,18 +1,6 @@
 'use client'
 
-import {
-  LayoutGrid,
-  Palette,
-  Activity,
-  Database,
-  Server,
-  Wrench,
-  Monitor,
-  FlaskConical,
-  BookOpen,
-  Boxes,
-  ScrollText,
-} from 'lucide-react'
+import { Database, Monitor, Flask, BookOpen, SquaresFour, Palette, Pulse, HardDrives, Wrench, Stack, Scroll } from '@phosphor-icons/react'
 import { PortalLayout } from '@/components/portal'
 import { Badge } from '@/components/ui/badge'
 import { DevPortalSearch } from './DevPortalSearch'
@@ -23,7 +11,7 @@ const devNavItems: NavGroup[] = [
   {
     label: 'Portal',
     items: [
-      { href: '/developer', label: 'Overview', icon: <LayoutGrid className="w-3.5 h-3.5" /> },
+      { href: '/developer', label: 'Overview', icon: <SquaresFour className="w-3.5 h-3.5" /> },
     ],
   },
   {
@@ -120,16 +108,16 @@ const devNavItems: NavGroup[] = [
   {
     label: 'Documentation',
     items: [
-      { href: '/developer/api-reference', label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" /> },
-      { href: '/developer/architecture', label: 'Architecture', icon: <Boxes className="w-3.5 h-3.5" /> },
+      { href: '/developer/api-reference', label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" weight="regular" /> },
+      { href: '/developer/architecture', label: 'Architecture', icon: <Stack className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Status',
     items: [
-      { href: '/developer/status', label: 'Overview', icon: <Activity className="w-3.5 h-3.5" /> },
+      { href: '/developer/status', label: 'Overview', icon: <Pulse className="w-3.5 h-3.5" /> },
       { href: '/developer/status/database', label: 'Database', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: '/developer/status/infrastructure', label: 'Infrastructure', icon: <Server className="w-3.5 h-3.5" /> },
+      { href: '/developer/status/infrastructure', label: 'Infrastructure', icon: <HardDrives className="w-3.5 h-3.5" /> },
     ],
   },
   {
@@ -138,8 +126,8 @@ const devNavItems: NavGroup[] = [
       { href: '/developer/tools', label: 'Dev Tools', icon: <Wrench className="w-3.5 h-3.5" /> },
       { href: '/developer/tools/console', label: 'Console', icon: <Monitor className="w-3.5 h-3.5" /> },
       { href: '/developer/tools/db', label: 'Database Browser', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/logs', label: 'Audit Logs', icon: <ScrollText className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/test-data', label: 'Test Data', icon: <FlaskConical className="w-3.5 h-3.5" /> },
+      { href: '/developer/tools/logs', label: 'Audit Logs', icon: <Scroll className="w-3.5 h-3.5" /> },
+      { href: '/developer/tools/test-data', label: 'Test Data', icon: <Flask className="w-3.5 h-3.5" /> },
     ],
   },
 ]

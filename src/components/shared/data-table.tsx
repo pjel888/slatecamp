@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { ArrowUpDown, ArrowUp, ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowsDownUp, ArrowUp, ArrowDown, CaretLeft, CaretRight } from '@phosphor-icons/react'
 
 import { cn } from '@/lib/utils'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -358,12 +358,12 @@ function DataTable<T extends Record<string, unknown>>({
                         <span className="inline-flex">
                           {sortState?.key === column.key ? (
                             sortState.direction === 'asc' ? (
-                              <ArrowUp className="size-3.5" />
+                              <ArrowUp size={14} />
                             ) : (
-                              <ArrowDown className="size-3.5" />
+                              <ArrowDown size={14} />
                             )
                           ) : (
-                            <ArrowUpDown className="size-3.5 opacity-40" />
+                            <ArrowsDownUp size={14} className="opacity-40" />
                           )}
                         </span>
                       )}
@@ -491,7 +491,7 @@ function DataTable<T extends Record<string, unknown>>({
                 className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-border text-sm transition-colors duration-150 hover:bg-muted disabled:pointer-events-none disabled:opacity-40"
                 aria-label="Previous page"
               >
-                <ChevronLeft className="size-4" />
+                <CaretLeft size={16} />
               </button>
 
               {getPageNumbers().map((page, idx) =>
@@ -528,7 +528,7 @@ function DataTable<T extends Record<string, unknown>>({
                 className="inline-flex h-8 w-8 items-center justify-center rounded-sm border border-border text-sm transition-colors duration-150 hover:bg-muted disabled:pointer-events-none disabled:opacity-40"
                 aria-label="Next page"
               >
-                <ChevronRight className="size-4" />
+                <CaretRight size={16} />
               </button>
             </nav>
           </div>

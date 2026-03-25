@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, X, Flag } from 'lucide-react'
+import { Check, X, Flag } from '@phosphor-icons/react'
 import type { QuestionReviewItem } from '@/types/testing'
 import { ERROR_TAG_LABELS } from '@/types/testing'
 import { Eyebrow } from '@/components/ui/eyebrow'

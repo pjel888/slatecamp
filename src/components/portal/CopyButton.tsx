@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, Copy } from 'lucide-react'
+import { Check, Copy } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 interface CopyButtonProps {
@@ -31,7 +31,7 @@ const CopyButton = ({ text, className }: CopyButtonProps) => {
       )}
       aria-label={copied ? 'Copied' : 'Copy to clipboard'}
     >
-      {copied ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
+      {copied ? <Check size={12} /> : <Copy size={12} />}
       {copied ? 'Copied' : 'Copy'}
     </button>
   )

@@ -1,16 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import {
-  Book,
-  Leaf,
-  Target,
-  Search,
-  Settings,
-  Zap,
-  Shield,
-  Dumbbell,
-} from 'lucide-react'
+import { Crosshair, MagnifyingGlass, Lightning, Shield, Book, Leaf, GearSix, Barbell } from '@phosphor-icons/react'
 import { Badge } from '@/components/ui/badge'
 
 import { cn } from '@/lib/utils'
@@ -22,12 +13,12 @@ import type { SimulationGateStatus } from '@/types/testing'
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>> = {
   book: ({ className, ...p }) => <Book className={className} {...p} />,
   leaf: ({ className, ...p }) => <Leaf className={className} {...p} />,
-  target: ({ className, ...p }) => <Target className={className} {...p} />,
-  search: ({ className, ...p }) => <Search className={className} {...p} />,
-  settings: ({ className, ...p }) => <Settings className={className} {...p} />,
-  zap: ({ className, ...p }) => <Zap className={className} {...p} />,
+  target: ({ className, ...p }) => <Crosshair className={className} {...p} />,
+  search: ({ className, ...p }) => <MagnifyingGlass className={className} {...p} />,
+  settings: ({ className, ...p }) => <GearSix className={className} {...p} />,
+  zap: ({ className, ...p }) => <Lightning className={className} {...p} />,
   shield: ({ className, ...p }) => <Shield className={className} {...p} />,
-  dumbbell: ({ className, ...p }) => <Dumbbell className={className} {...p} />,
+  dumbbell: ({ className, ...p }) => <Barbell className={className} {...p} />,
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────

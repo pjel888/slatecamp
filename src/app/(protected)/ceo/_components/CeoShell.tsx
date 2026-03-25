@@ -1,15 +1,15 @@
 'use client'
 
 import {
-  LayoutDashboard,
-  DollarSign,
-  TrendingUp,
+  SquaresFour,
+  CurrencyDollar,
+  TrendUp,
   Users,
-  Target,
+  Crosshair,
   Package,
-  Building2,
-  Settings,
-} from 'lucide-react'
+  Buildings,
+  GearSix,
+} from '@phosphor-icons/react'
 import { PortalLayout } from '@/components/portal'
 import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
@@ -18,34 +18,34 @@ const ceoNavItems: NavGroup[] = [
   {
     label: 'Business',
     items: [
-      { href: '/ceo', label: 'Dashboard', icon: <LayoutDashboard className="w-3.5 h-3.5" /> },
-      { href: '/ceo/revenue', label: 'Revenue', icon: <DollarSign className="w-3.5 h-3.5" /> },
-      { href: '/ceo/growth', label: 'Growth', icon: <TrendingUp className="w-3.5 h-3.5" /> },
+      { href: '/ceo', label: 'Dashboard', icon: <SquaresFour className="w-3.5 h-3.5" /> },
+      { href: '/ceo/revenue', label: 'Revenue', icon: <CurrencyDollar className="w-3.5 h-3.5" /> },
+      { href: '/ceo/growth', label: 'Growth', icon: <TrendUp className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Product',
     items: [
       { href: '/ceo/users', label: 'Users', icon: <Users className="w-3.5 h-3.5" /> },
-      { href: '/ceo/outcomes', label: 'Outcomes', icon: <Target className="w-3.5 h-3.5" /> },
+      { href: '/ceo/outcomes', label: 'Outcomes', icon: <Crosshair className="w-3.5 h-3.5" /> },
       { href: '/ceo/content', label: 'Content', icon: <Package className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Operations',
     items: [
-      { href: '/ceo/team', label: 'Team', icon: <Building2 className="w-3.5 h-3.5" /> },
+      { href: '/ceo/team', label: 'Team', icon: <Buildings className="w-3.5 h-3.5" /> },
       {
         href: '/ceo/financials',
         label: 'Financials',
-        icon: <DollarSign className="w-3.5 h-3.5" />,
+        icon: <CurrencyDollar className="w-3.5 h-3.5" />,
       },
     ],
   },
   {
     label: 'Settings',
     items: [
-      { href: '/ceo/settings', label: 'Settings', icon: <Settings className="w-3.5 h-3.5" /> },
+      { href: '/ceo/settings', label: 'Settings', icon: <GearSix className="w-3.5 h-3.5" /> },
     ],
   },
 ]

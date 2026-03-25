@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 interface PageHeaderProps {
@@ -26,7 +26,7 @@ export const PageHeader = ({
           href={backHref}
           className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors mb-2"
         >
-          <ArrowLeft className="w-3.5 h-3.5" />
+          <ArrowLeft className="w-3.5 h-3.5" weight="bold" />
           {backLabel || 'Back'}
         </Link>
       )}

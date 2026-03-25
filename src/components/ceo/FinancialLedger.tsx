@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { Pencil, Trash2 } from 'lucide-react'
+import { PencilSimple, Trash } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { deleteFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import { FinancialEntryForm } from '@/components/ceo/FinancialEntryForm'
@@ -149,7 +149,7 @@ export const FinancialLedger = ({ entries }: FinancialLedgerProps) => {
             className="inline-flex items-center gap-1 rounded-sm border border-border px-2 py-1 text-[11px] text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors duration-150"
             aria-label={`Edit entry from ${entry.entryDate}`}
           >
-            <Pencil className="h-3 w-3" />
+            <PencilSimple size={12} />
             Edit
           </button>
           <button
@@ -158,7 +158,7 @@ export const FinancialLedger = ({ entries }: FinancialLedgerProps) => {
             className="inline-flex items-center gap-1 rounded-sm border border-border px-2 py-1 text-[11px] text-muted-foreground hover:text-destructive hover:border-destructive/30 disabled:opacity-50 transition-colors duration-150"
             aria-label={`Delete entry from ${entry.entryDate}`}
           >
-            <Trash2 className="h-3 w-3" />
+            <Trash size={12} />
             {deletingId === entry.id ? 'Deleting…' : 'Delete'}
           </button>
         </div>

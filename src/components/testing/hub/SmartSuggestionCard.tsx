@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { AlertTriangle, Calendar, Target, ArrowRight } from 'lucide-react'
+import { Warning, Crosshair, ArrowRight, Calendar } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import type { SmartSuggestion, SuggestionVariant } from '@/types/testing'
@@ -45,7 +45,7 @@ const VARIANT_CONFIG: Record<SuggestionVariant, VariantConfig> = {
     accentBorder: '#D64545',
     iconBg: 'rgba(214, 69, 69, 0.1)',
     iconColor: '#D64545',
-    Icon: ({ className }) => <AlertTriangle className={className} />,
+    Icon: ({ className }) => <Warning className={className} />,
   },
   'exam-countdown': {
     bg: '#FEF8ED',
@@ -61,7 +61,7 @@ const VARIANT_CONFIG: Record<SuggestionVariant, VariantConfig> = {
     accentBorder: '#1B3FC4',
     iconBg: 'rgba(27, 63, 196, 0.1)',
     iconColor: '#1B3FC4',
-    Icon: ({ className }) => <Target className={className} />,
+    Icon: ({ className }) => <Crosshair className={className} />,
   },
   return: {
     bg: '#EEF2FC',

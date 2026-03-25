@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { useState } from 'react'
-import { Check, X, Bookmark, ChevronDown } from 'lucide-react'
+import { Check, X, BookmarkSimple, CaretDown } from '@phosphor-icons/react'
 import DOMPurify from 'dompurify'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
@@ -134,8 +134,8 @@ const LetterCircle = ({
       state === 'faded' && 'bg-muted text-muted-foreground',
     )}
   >
-    {state === 'correct' ? <Check className="h-4 w-4" /> : null}
-    {state === 'incorrect' ? <X className="h-4 w-4" /> : null}
+    {state === 'correct' ? <Check size={16} /> : null}
+    {state === 'incorrect' ? <X size={16} /> : null}
     {state !== 'correct' && state !== 'incorrect' ? label : null}
   </div>
 )
@@ -220,7 +220,7 @@ const RationaleSection = ({
           onClick={() => setIsOpen((prev) => !prev)}
           className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors duration-150"
         >
-          <ChevronDown
+          <CaretDown
             className={cn(
               'h-3.5 w-3.5 transition-transform duration-150',
               isOpen && 'rotate-180',
@@ -284,9 +284,9 @@ const CardHeader = ({
               : 'text-muted-foreground hover:text-foreground',
           )}
         >
-          <Bookmark
-            className="h-4 w-4"
-            fill={flagged ? 'currentColor' : 'none'}
+          <BookmarkSimple
+            size={16}
+            weight={flagged ? 'fill' : 'regular'}
           />
         </button>
       )}

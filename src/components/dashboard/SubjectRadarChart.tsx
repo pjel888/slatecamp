@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
-import { BarChart3 } from 'lucide-react'
+import { ChartBar } from '@phosphor-icons/react'
 import { EmptyState } from '@/components/shared/empty-state'
 import type { SubjectMastery } from '@/types/dashboard'
 
@@ -57,7 +57,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
       <div className="flex-1 p-4 min-h-0 flex flex-col items-center justify-center">
         {!hasData ? (
           <EmptyState
-            icon={<BarChart3 className="h-5 w-5" />}
+            icon={<ChartBar size={20} />}
             message="Mastery data builds as you practice"
             description="Complete a quiz session and your subject coverage will appear here."
             action={{ label: "Start a quiz", href: "/dashboard/testing" }}

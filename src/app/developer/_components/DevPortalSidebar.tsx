@@ -1,34 +1,23 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import {
-  LayoutGrid,
-  Palette,
-  Code2,
-  Layers,
-  Grid3X3,
-  Wrench,
-  Monitor,
-  Database,
-  FileText,
-  FlaskConical,
-} from 'lucide-react'
+import { Stack, GridFour, Monitor, Database, FileText, Flask, SquaresFour, Palette, Code, Wrench } from '@phosphor-icons/react'
 import { SidebarNavGroup, SidebarNavItem } from '@/components/shared/sidebar-nav'
 
 const navSections = [
   {
     label: 'Portal',
     items: [
-      { href: '/developer', label: 'Overview', icon: <LayoutGrid className="w-4 h-4" /> },
+      { href: '/developer', label: 'Overview', icon: <SquaresFour className="w-4 h-4" /> },
     ],
   },
   {
     label: 'Documentation',
     items: [
       { href: '/developer/design-system', label: 'Design System', icon: <Palette className="w-4 h-4" /> },
-      { href: '/developer/api-reference', label: 'API Reference', icon: <Code2 className="w-4 h-4" /> },
-      { href: '/developer/architecture', label: 'Architecture', icon: <Layers className="w-4 h-4" /> },
-      { href: '/developer/components', label: 'Component Library', icon: <Grid3X3 className="w-4 h-4" /> },
+      { href: '/developer/api-reference', label: 'API Reference', icon: <Code className="w-4 h-4" /> },
+      { href: '/developer/architecture', label: 'Architecture', icon: <Stack className="w-4 h-4" /> },
+      { href: '/developer/components', label: 'Component Library', icon: <GridFour className="w-4 h-4" /> },
     ],
   },
   {
@@ -38,7 +27,7 @@ const navSections = [
       { href: '/developer/tools/console', label: 'Console', icon: <Monitor className="w-4 h-4" /> },
       { href: '/developer/tools/db', label: 'Database Browser', icon: <Database className="w-4 h-4" /> },
       { href: '/developer/tools/logs', label: 'Audit Logs', icon: <FileText className="w-4 h-4" /> },
-      { href: '/developer/tools/test-data', label: 'Test Data', icon: <FlaskConical className="w-4 h-4" /> },
+      { href: '/developer/tools/test-data', label: 'Test Data', icon: <Flask className="w-4 h-4" /> },
     ],
   },
 ]

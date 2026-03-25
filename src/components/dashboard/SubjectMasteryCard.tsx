@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Target } from 'lucide-react'
+import { Crosshair } from '@phosphor-icons/react'
 import {
   Tooltip,
   TooltipTrigger,
@@ -310,7 +310,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
 
         {!hasData ? (
           <EmptyState
-            icon={<Target className="h-5 w-5" />}
+            icon={<Crosshair size={20} />}
             message="Your mastery shape appears here"
             description="Complete a quiz session to see how your skills map across subjects."
             action={{ label: "Start a quiz", href: "/dashboard/testing" }}

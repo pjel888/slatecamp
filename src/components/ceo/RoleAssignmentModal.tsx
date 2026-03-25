@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { AlertTriangle } from 'lucide-react'
+import { Warning } from '@phosphor-icons/react'
 import {
   Dialog,
   DialogContent,
@@ -59,7 +59,7 @@ export const RoleAssignmentModal = ({ member, isOpen, onClose }: RoleAssignmentM
 
         {/* Warning */}
         <div className="flex items-start gap-2 rounded-md bg-warning/10 px-3 py-2.5 text-[11px] text-warning">
-          <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+          <Warning size={14} className="mt-0.5 shrink-0" />
           <span>
             This updates <span className="font-mono">profiles.role</span> in the live database.
             Changes take effect immediately.

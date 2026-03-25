@@ -2,35 +2,35 @@
 
 import { useState } from 'react'
 import {
-  Bookmark,
-  Search,
+  BookmarkSimple,
+  MagnifyingGlass,
   Plus,
   ArrowRight,
-  Trash2,
-  CheckCircle2,
-  AlertTriangle,
+  Trash,
+  CheckCircle,
+  Warning,
   Info,
   X,
-  FolderTree,
+  TreeStructure,
   FileText,
-  BarChart3,
+  ChartBar,
   Clock,
-  TrendingUp,
-  Settings,
+  TrendUp,
   BookOpen,
-  Target,
-  Bold,
-  Italic,
-  Underline,
-  AlignLeft,
-  AlignCenter,
-  List,
-  Home,
+  Crosshair,
   Database,
+  GearSix,
+  TextB,
+  TextItalic,
+  TextUnderline,
+  TextAlignLeft,
+  TextAlignCenter,
+  ListBullets,
+  House,
   Palette,
-  GripVertical,
+  DotsSixVertical,
   User,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
 
 import { Button } from '@/components/ui/button'
 import { CloseButton } from '@/components/ui/close-button'
@@ -411,9 +411,9 @@ const DesignSystemPage = () => {
           <div className="flex flex-wrap items-center gap-2">
             <Button leftIcon={<Plus />}>Add Question</Button>
             <Button rightIcon={<ArrowRight />}>Continue</Button>
-            <Button variant="destructive" leftIcon={<Trash2 />}>Delete</Button>
-            <Button variant="secondary" leftIcon={<Search />}>Search Topics</Button>
-            <Button variant="success" leftIcon={<CheckCircle2 />}>Mark Complete</Button>
+            <Button variant="destructive" leftIcon={<Trash />}>Delete</Button>
+            <Button variant="secondary" leftIcon={<MagnifyingGlass />}>Search Topics</Button>
+            <Button variant="success" leftIcon={<CheckCircle />}>Mark Complete</Button>
           </div>
         </div>
 
@@ -932,7 +932,7 @@ const DesignSystemPage = () => {
           </Card>
           <Card variant="default" size="md">
             <EmptyState
-              icon={<BarChart3 className="h-5 w-5" />}
+              icon={<ChartBar className="h-5 w-5" />}
               message="No study data available"
               description="Complete a practice session to see your performance analytics here."
             />
@@ -1225,7 +1225,7 @@ const DesignSystemPage = () => {
           <Button
             variant="secondary"
             size="sm"
-            leftIcon={<CheckCircle2 className="text-emerald-500" />}
+            leftIcon={<CheckCircle className="text-emerald-500" />}
             onClick={() =>
               toast({
                 variant: 'success' as never,
@@ -1239,7 +1239,7 @@ const DesignSystemPage = () => {
           <Button
             variant="secondary"
             size="sm"
-            leftIcon={<AlertTriangle className="text-amber-500" />}
+            leftIcon={<Warning className="text-amber-500" />}
             onClick={() =>
               toast({
                 variant: 'warning' as never,
@@ -1504,9 +1504,9 @@ const DesignSystemPage = () => {
         <div className="space-y-3">
           <p className="text-xs font-medium text-muted-foreground">Ghost Variant</p>
           <div className="flex items-center gap-2">
-            <IconButton icon={<Settings />} tooltip="Settings" variant="ghost" size="sm" />
-            <IconButton icon={<Settings />} tooltip="Settings" variant="ghost" size="md" />
-            <IconButton icon={<Settings />} tooltip="Settings" variant="ghost" size="lg" />
+            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="sm" />
+            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="md" />
+            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="lg" />
           </div>
         </div>
 
@@ -1524,9 +1524,9 @@ const DesignSystemPage = () => {
         <div className="space-y-3">
           <p className="text-xs font-medium text-muted-foreground">Subtle Variant</p>
           <div className="flex items-center gap-2">
-            <IconButton icon={<Target />} tooltip="Focus Mode" variant="subtle" size="sm" />
-            <IconButton icon={<Target />} tooltip="Focus Mode" variant="subtle" size="md" />
-            <IconButton icon={<Target />} tooltip="Focus Mode" variant="subtle" size="lg" />
+            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="sm" />
+            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="md" />
+            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="lg" />
           </div>
         </div>
       </Section>
@@ -1543,18 +1543,18 @@ const DesignSystemPage = () => {
           <CardContent>
             <Toolbar>
               <ToolbarGroup>
-                <IconButton icon={<Bold />} tooltip="Bold" variant="ghost" size="sm" />
-                <IconButton icon={<Italic />} tooltip="Italic" variant="ghost" size="sm" />
-                <IconButton icon={<Underline />} tooltip="Underline" variant="ghost" size="sm" />
+                <IconButton icon={<TextB />} tooltip="Bold" variant="ghost" size="sm" />
+                <IconButton icon={<TextItalic />} tooltip="Italic" variant="ghost" size="sm" />
+                <IconButton icon={<TextUnderline />} tooltip="Underline" variant="ghost" size="sm" />
               </ToolbarGroup>
               <ToolbarDivider />
               <ToolbarGroup>
-                <IconButton icon={<AlignLeft />} tooltip="Align Left" variant="ghost" size="sm" />
-                <IconButton icon={<AlignCenter />} tooltip="Align Center" variant="ghost" size="sm" />
+                <IconButton icon={<TextAlignLeft />} tooltip="Align Left" variant="ghost" size="sm" />
+                <IconButton icon={<TextAlignCenter />} tooltip="Align Center" variant="ghost" size="sm" />
               </ToolbarGroup>
               <ToolbarDivider />
               <ToolbarGroup>
-                <IconButton icon={<List />} tooltip="Bullet List" variant="ghost" size="sm" />
+                <IconButton icon={<ListBullets />} tooltip="Bullet List" variant="ghost" size="sm" />
                 <IconButton icon={<BookOpen />} tooltip="Insert Citation" variant="ghost" size="sm" />
               </ToolbarGroup>
             </Toolbar>
@@ -1583,7 +1583,7 @@ const DesignSystemPage = () => {
             onClick={() => {}}
           />
           <ActionCard
-            icon={<Target className="w-5 h-5 text-emerald-600" />}
+            icon={<Crosshair className="w-5 h-5 text-emerald-600" />}
             badge={<Badge variant="outline">78%</Badge>}
             title="Practice Session"
             subtitle="Building Codes"
@@ -1597,7 +1597,7 @@ const DesignSystemPage = () => {
             onClick={() => {}}
           />
           <ActionCard
-            icon={<BarChart3 className="w-5 h-5 text-camp-orange" />}
+            icon={<ChartBar className="w-5 h-5 text-camp-orange" />}
             title="Performance Analytics"
             subtitle="Weekly Report"
             description="View your study trends and topic mastery breakdown."
@@ -1848,13 +1848,13 @@ const DesignSystemPage = () => {
                 <SidebarNavItem
                   href="#"
                   label="Dashboard"
-                  icon={<Home />}
+                  icon={<House />}
                   active
                 />
                 <SidebarNavItem
                   href="#"
                   label="Practice Sessions"
-                  icon={<Target />}
+                  icon={<Crosshair />}
                   badge={<Badge variant="secondary" className="text-[11px] h-5 px-1.5">3</Badge>}
                 />
                 <SidebarNavItem
@@ -1873,7 +1873,7 @@ const DesignSystemPage = () => {
                 <SidebarNavItem
                   href="#"
                   label="Taxonomy"
-                  icon={<FolderTree />}
+                  icon={<TreeStructure />}
                 />
                 <SidebarNavItem
                   href="#"
@@ -2240,7 +2240,7 @@ const DesignSystemPage = () => {
             <SidebarNavItem
               href="#"
               label="Home"
-              icon={<Home />}
+              icon={<House />}
               active
             />
             <SidebarNavItem
@@ -2251,7 +2251,7 @@ const DesignSystemPage = () => {
             <SidebarNavItem
               href="#"
               label="Performance"
-              icon={<BarChart3 />}
+              icon={<ChartBar />}
               badge={<Badge variant="secondary" className="text-[11px] h-5 px-1.5">New</Badge>}
             />
             <SidebarNavItem
@@ -2265,7 +2265,7 @@ const DesignSystemPage = () => {
             <SidebarNavItem
               href="#"
               label="Preferences"
-              icon={<Settings />}
+              icon={<GearSix />}
             />
             <SidebarNavItem
               href="#"

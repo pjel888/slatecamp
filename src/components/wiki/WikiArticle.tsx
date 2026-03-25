@@ -282,6 +282,42 @@ export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {
 }
 
 /**
+ * Renders MDX content with a graceful fallback on compilation errors.
+ * MDX compilation fails on HTML-like tags starting with numbers (e.g. <1st>, <100mm>).
+ */
+const MDXContent = async ({
+  source,
+  components,
+}: {
+  source: string
+  components: ReturnType<typeof buildMdxComponents>
+}) => {
+  try {
+    return (
+      <MDXRemote
+        source={source}
+        components={components}
+        options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+      />
+    )
+  } catch {
+    // MDX compilation failed (e.g. tags starting with numbers like <1st>, <100mm>).
+    // Show the raw content as plain text so the article is still readable.
+    return (
+      <>
+        <div className="mb-4 flex items-start gap-2 rounded-md border border-amber-200 bg-amber-50 px-3 py-2.5 text-[12px] text-amber-800">
+          <span className="mt-0.5 shrink-0">⚠</span>
+          <span>Some formatting in this article could not be rendered. Content is shown as plain text.</span>
+        </div>
+        <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed text-foreground">
+          {source}
+        </pre>
+      </>
+    )
+  }
+}
+
+/**
  * Pure content renderer — no sidebars, no header.
  * Renders the article body with prose typography, callout blocks,
  * styled code/tables, text-selection popover, and DB-driven EI prompts.
@@ -334,11 +370,7 @@ export const WikiArticle = async ({
           }
         >
           {processedContent ? (
-            <MDXRemote
-              source={processedContent}
-              components={mdxComponents}
-              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-            />
+            <MDXContent source={processedContent} components={mdxComponents} />
           ) : (
             <p className="text-muted-foreground italic">
               This article has no content yet.

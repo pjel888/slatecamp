@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Sun, Moon } from 'lucide-react'
+import { Sun, Moon } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 interface PreviewAreaProps {
@@ -36,7 +36,7 @@ export const PreviewArea = ({ children, className }: PreviewAreaProps) => {
           )}
           aria-label={isDark ? 'Switch to light preview' : 'Switch to dark preview'}
         >
-          {isDark ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
+          {isDark ? <Sun className="w-3.5 h-3.5" weight="fill" /> : <Moon className="w-3.5 h-3.5" weight="fill" />}
         </button>
       </div>
 

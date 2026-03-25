@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Download, Check, Copy } from 'lucide-react'
+import { DownloadSimple, Check, Copy } from '@phosphor-icons/react'
 import { generateInvestorExport } from '@/lib/actions/ceo/export-actions'
 
 export const ExportButton = () => {
@@ -40,10 +40,10 @@ export const ExportButton = () => {
         className="inline-flex items-center gap-1.5 rounded-sm border border-border px-3 py-1.5 text-[11px] font-medium text-muted-foreground hover:text-foreground hover:border-foreground/30 disabled:opacity-50 transition-colors duration-150"
         aria-label="Export investor update to clipboard"
       >
-        {state === 'loading' && <Download className="h-3 w-3 animate-pulse" />}
-        {state === 'copied' && <Check className="h-3 w-3 text-success" />}
-        {state === 'error' && <Copy className="h-3 w-3 text-destructive" />}
-        {state === 'idle' && <Download className="h-3 w-3" />}
+        {state === 'loading' && <DownloadSimple size={12} className="animate-pulse" />}
+        {state === 'copied' && <Check size={12} className="text-success" />}
+        {state === 'error' && <Copy size={12} className="text-destructive" />}
+        {state === 'idle' && <DownloadSimple size={12} />}
         {state === 'loading' ? 'Generating…' : state === 'copied' ? 'Copied!' : 'Export ↓'}
       </button>
       {state === 'error' && errorMsg && (

@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { ChevronRight, Check, FolderTree } from 'lucide-react'
+import { CaretRight, Check, TreeStructure } from '@phosphor-icons/react'
 
 import { cn } from '@/lib/utils'
 import { SearchInput } from '@/components/ui/input'
@@ -262,7 +262,7 @@ const TreeNode = React.memo(({
             onClick={handleChevronClick}
             aria-label={isExpanded ? 'Collapse' : 'Expand'}
           >
-            <ChevronRight
+            <CaretRight
               className={cn(
                 'h-2.5 w-2.5 transition-transform duration-150',
                 isExpanded && 'rotate-90',
@@ -453,7 +453,7 @@ const TreeContent = ({
 
       {isEmpty ? (
         <EmptyState
-          icon={<FolderTree className="h-5 w-5" />}
+          icon={<TreeStructure size={20} />}
           message="No taxonomy data available"
           className="py-8"
         />
@@ -780,7 +780,7 @@ const TaxonomyPicker = ({
           aria-expanded={dropdownOpen}
         >
           <span className="truncate">{selectedLabel}</span>
-          <ChevronRight
+          <CaretRight
             className={cn(
               'ml-2 h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-150',
               dropdownOpen && 'rotate-90',

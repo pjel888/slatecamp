@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 
@@ -35,7 +35,7 @@ const NeedsAttentionCard = ({ pendingReviews, missingRationale }: NeedsAttention
                 className="inline-flex items-center gap-0.5 text-[11px] font-medium text-amber-700 hover:text-amber-900 transition-colors duration-150 shrink-0"
               >
                 View
-                <ArrowRight className="h-2.5 w-2.5" />
+                <ArrowRight size={10} />
               </Link>
             </div>
           )}
@@ -51,7 +51,7 @@ const NeedsAttentionCard = ({ pendingReviews, missingRationale }: NeedsAttention
                 className="inline-flex items-center gap-0.5 text-[11px] font-medium text-amber-700 hover:text-amber-900 transition-colors duration-150 shrink-0"
               >
                 View
-                <ArrowRight className="h-2.5 w-2.5" />
+                <ArrowRight size={10} />
               </Link>
             </div>
           )}

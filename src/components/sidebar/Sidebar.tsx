@@ -188,53 +188,19 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           {/* Separator */}
           <div className="mx-[6px] my-1 border-t border-border" />
 
-          {/* Nav groups */}
-          {SIDEBAR_GROUPS.map((group, groupIdx) => (
-            <div key={group.key}>
-              {/* Group label — same height always, opacity-only toggle for stable icon positions */}
-              <div
-                className="flex items-end mt-2 mb-1.5 text-[8px] font-bold uppercase tracking-[0.08em] text-gray-400"
-                style={{
-                  paddingLeft: 16,
-                  opacity: expanded ? 0.75 : 0,
-                  transition: prefersReducedMotion
-                    ? undefined
-                    : `opacity ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
-                  pointerEvents: 'none',
-                  userSelect: 'none',
-                }}
-              >
-                {group.label}
-              </div>
-
-              {/* Group items */}
-              <div className="flex flex-col gap-2" style={{ padding: '0 6px' }}>
-                {group.items.map((navItem) => (
-                  <SidebarNavItem
-                    key={navItem.id}
-                    item={navItem}
-                    isActive={isActive(navItem.href)}
-                    expanded={expanded}
-                    showTooltip
-                    onNavigate={handleNavigate}
-                  />
-                ))}
-              </div>
-
-              {/* Separator between groups (not after last, fades but keeps height) */}
-              {groupIdx < SIDEBAR_GROUPS.length - 1 && (
-                <div
-                  className="mx-[6px] my-2 border-t border-border"
-                  style={{
-                    opacity: expanded ? 1 : 0,
-                    transition: prefersReducedMotion
-                      ? undefined
-                      : `opacity ${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`,
-                  }}
-                />
-              )}
-            </div>
-          ))}
+          {/* Nav items — flat list, no group labels or dividers */}
+          <div className="flex flex-col gap-4" style={{ padding: '4px 6px 0' }}>
+            {SIDEBAR_GROUPS.flatMap((group) => group.items).map((navItem) => (
+              <SidebarNavItem
+                key={navItem.id}
+                item={navItem}
+                isActive={isActive(navItem.href)}
+                expanded={expanded}
+                showTooltip
+                onNavigate={handleNavigate}
+              />
+            ))}
+          </div>
 
           {/* Flex spacer — absorbs remaining space */}
           <div className="flex-1" />

@@ -2,15 +2,7 @@ import { Card } from '@/components/ui/card'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import {
-  Palette,
-  Activity,
-  Wrench,
-  Database,
-  ToggleRight,
-  UserCog,
-  FlaskConical,
-} from 'lucide-react'
+import { Database, Flask, Palette, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react'
 import { CHANGELOG } from '@/lib/developer/changelog'
 import { getAllComponents } from '@/lib/developer/componentRegistry'
 
@@ -31,7 +23,7 @@ const sectionCards = [
   {
     title: 'System Status',
     description: 'Database health, API latency, edge functions, and deployment status.',
-    icon: Activity,
+    icon: Pulse,
     href: '/developer/status',
     badge: 'Operational',
     badgeVariant: 'success' as const,
@@ -56,8 +48,8 @@ const healthServices = [
 const quickActions = [
   { label: 'Check DB Status', href: '/developer/status/database', icon: Database },
   { label: 'Toggle Feature Flag', href: '/developer/tools', icon: ToggleRight },
-  { label: 'Impersonate User', href: '/developer/tools', icon: UserCog },
-  { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: FlaskConical },
+  { label: 'Impersonate User', href: '/developer/tools', icon: UserGear },
+  { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: Flask },
 ]
 
 const stats = [

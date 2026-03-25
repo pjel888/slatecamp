@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Coverage Map — SlateCamp Admin' }
 import { StatCard } from '@/components/shared/stat-card'
 import { Card } from '@/components/ui/card'
 import { EmptyState } from '@/components/shared/empty-state'
-import { Grid3X3, AlertTriangle } from 'lucide-react'
+import { GridFour, Warning } from '@phosphor-icons/react'
 
 /* ------------------------------------------------------------------
  *  Helpers
@@ -36,7 +36,7 @@ const AdminTaxonomyCoveragePage = async () => {
           subtitle="Visual overview of content coverage."
         />
         <EmptyState
-          icon={<Grid3X3 className="h-5 w-5" />}
+          icon={<GridFour size={20} />}
           message="No taxonomy data found"
           description="Add taxonomy nodes to see coverage analysis here."
         />
@@ -150,7 +150,7 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
       title={`${cell.name}${cell.ale_id ? ` (${cell.ale_id})` : ''} — ${cell.questionCount}q${cell.hasArticle ? ', has article' : ''}${cell.examFrequency ? `, freq: ${cell.examFrequency}` : ''}`}
     >
       {isCritical && (
-        <AlertTriangle className="h-2.5 w-2.5 text-destructive absolute top-0.5 right-0.5" />
+        <Warning size={10} className="text-destructive absolute top-0.5 right-0.5" />
       )}
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-bold tabular-nums leading-none">
         {cell.questionCount > 0 ? `${cell.questionCount}q` : '0'}

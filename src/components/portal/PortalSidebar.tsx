@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Search } from 'lucide-react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */
@@ -121,7 +121,7 @@ const PortalSidebar = ({
     >
       {/* Search / filter input */}
       <div className="mx-2.5 mb-1.5 relative">
-        <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-[13px] h-[13px] text-muted-foreground pointer-events-none" />
+        <MagnifyingGlass className="absolute left-2 top-1/2 -translate-y-1/2 w-[13px] h-[13px] text-muted-foreground pointer-events-none" />
         <input
           ref={searchInputRef}
           type="text"

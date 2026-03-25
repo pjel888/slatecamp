@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import { TrendingUp, TrendingDown, Minus } from 'lucide-react'
+import { TrendUp, TrendDown, Minus } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 interface StatCardProps {
@@ -15,11 +15,11 @@ interface StatCardProps {
 
 const trendConfig = {
   up: {
-    icon: TrendingUp,
+    icon: TrendUp,
     className: 'text-emerald-600 dark:text-emerald-400',
   },
   down: {
-    icon: TrendingDown,
+    icon: TrendDown,
     className: 'text-amber-600 dark:text-amber-400',
   },
   flat: {

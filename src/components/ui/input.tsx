@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { Input as InputPrimitive } from '@base-ui/react/input'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { Search, X, Loader2 } from 'lucide-react'
+import { MagnifyingGlass, X, SpinnerGap } from '@phosphor-icons/react'
 
 import { cn } from '@/lib/utils'
 
@@ -139,11 +139,11 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
       <div data-slot="search-input" className="relative">
         <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2.5">
           {loading ? (
-            <Loader2
+            <SpinnerGap
               className={cn(searchIconSize[size], 'animate-spin text-muted-foreground')}
             />
           ) : (
-            <Search
+            <MagnifyingGlass
               className={cn(searchIconSize[size], 'text-muted-foreground')}
             />
           )}
