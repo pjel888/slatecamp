@@ -11,6 +11,8 @@ import {
   UserCog,
   FlaskConical,
 } from 'lucide-react'
+import { CHANGELOG } from '@/lib/developer/changelog'
+import { getAllComponents } from '@/lib/developer/componentRegistry'
 
 export const metadata = {
   title: 'Developer Portal — SlateCamp',
@@ -23,7 +25,7 @@ const sectionCards = [
     description: 'Domain-organized component catalog with live previews, props tables, and copyable code.',
     icon: Palette,
     href: '/developer/design-system',
-    badge: '21 Components',
+    badge: `${getAllComponents().length} Components`,
     badgeVariant: 'default' as const,
   },
   {
@@ -206,6 +208,50 @@ const DeveloperPortalPage = () => {
               ))}
             </tbody>
           </table>
+        </div>
+      </div>
+
+      {/* Recent Changes */}
+      <div>
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+          Recent Changes
+        </p>
+        <div className="space-y-2">
+          {CHANGELOG.slice(0, 5).map((entry) => (
+            <div
+              key={`${entry.date}-${entry.title}`}
+              className="flex items-start gap-3 rounded-md border border-border bg-card px-4 py-3"
+            >
+              <span className="shrink-0 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground pt-px">
+                {entry.date}
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-semibold text-foreground truncate">
+                    {entry.title}
+                  </span>
+                  {entry.badge && (
+                    <Badge
+                      variant={
+                        entry.badge === 'new'
+                          ? 'success'
+                          : entry.badge === 'fix'
+                            ? 'danger'
+                            : 'default'
+                      }
+                      size="xs"
+                      pill
+                    >
+                      {entry.badge}
+                    </Badge>
+                  )}
+                </div>
+                <p className="text-[11px] text-muted-foreground leading-relaxed mt-0.5">
+                  {entry.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
