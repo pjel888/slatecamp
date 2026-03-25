@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import { Instrument_Serif } from 'next/font/google'
 import { ROUTES } from '@/lib/constants/routes'

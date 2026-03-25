@@ -1,5 +1,3 @@
-'use client'
-
 import type { NodeMasteryDelta } from '@/types/testing'
 import { Eyebrow } from '@/components/ui/eyebrow'
 

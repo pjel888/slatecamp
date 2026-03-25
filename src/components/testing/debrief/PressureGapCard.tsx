@@ -1,5 +1,3 @@
-'use client'
-
 import type { PressureGap } from '@/types/testing'
 
 // ─── Types ────────────────────────────────────────────────────────────────────

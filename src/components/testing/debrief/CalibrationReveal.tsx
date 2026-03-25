@@ -1,5 +1,3 @@
-'use client'
-
 import type { CalibrationResult, CalibrationSubject } from '@/types/testing'
 import { Eyebrow } from '@/components/ui/eyebrow'
 

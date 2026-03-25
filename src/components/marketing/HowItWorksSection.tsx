@@ -1,5 +1,3 @@
-'use client'
-
 import { Starburst } from '@/components/marketing/LandingPrimitives'
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'

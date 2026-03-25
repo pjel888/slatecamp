@@ -14,7 +14,7 @@ const SUBJECT_AREAS = [
   'Theory of Architecture',
 ] as const
 
-export type CatalystType = 'resume' | 'drill' | 'warmup'
+export type CatalystType = 'resume' | 'practice' | 'warmup'
 
 export interface DailyCatalyst {
   type: CatalystType
@@ -236,7 +236,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       (weak as { taxonomy_tree?: { name: string } })?.taxonomy_tree?.name ??
       'a challenging topic'
     catalyst = {
-      type: 'drill',
+      type: 'practice',
       title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,

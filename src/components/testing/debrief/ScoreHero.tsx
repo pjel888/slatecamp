@@ -1,5 +1,3 @@
-'use client'
-
 import type { ScoreBand } from '@/types/testing'
 import { SCORE_BAND_THRESHOLDS } from '@/types/testing'
 import { Eyebrow } from '@/components/ui/eyebrow'

@@ -1,5 +1,3 @@
-'use client'
-
 import { Starburst } from '@/components/marketing/LandingPrimitives'
 
 /* ── Shared split layout for feature sections ── */

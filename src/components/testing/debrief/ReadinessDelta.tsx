@@ -1,5 +1,3 @@
-'use client'
-
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface ReadinessDeltaProps {
