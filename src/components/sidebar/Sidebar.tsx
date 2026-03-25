@@ -207,7 +207,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
         </div>
 
         {/* Settings — pinned above footer, outside scrollable body for spatial lock */}
-        <div className="shrink-0" style={{ padding: '0 6px' }}>
+        <div className="shrink-0 pb-4" style={{ padding: '0 6px 16px' }}>
           <SidebarNavItem
             item={SETTINGS_ITEM}
             isActive={isActive(SETTINGS_ITEM.href)}
