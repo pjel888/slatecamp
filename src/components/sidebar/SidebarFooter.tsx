@@ -113,7 +113,7 @@ export const SidebarFooter = ({
       className={cn(
         'flex flex-col gap-2',
         'border-t border-gray-200 dark:border-gray-800',
-        'pt-2 pb-6 px-[6px]',
+        'pt-4 pb-6 px-[6px]',
       )}
     >
       {/* Profile row — with tooltip when collapsed */}
