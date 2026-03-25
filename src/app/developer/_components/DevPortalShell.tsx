@@ -29,11 +29,6 @@ const devNavItems: NavGroup[] = [
     label: 'Design System',
     items: [
       { href: '/developer/design-system', label: 'Overview', icon: <Palette className="w-3.5 h-3.5" /> },
-    ],
-  },
-  {
-    label: 'Wiki Article',
-    items: [
       {
         href: '/developer/design-system/wiki',
         label: 'Wiki Article',
@@ -45,11 +40,46 @@ const devNavItems: NavGroup[] = [
           { label: 'TagBadge', href: '/developer/design-system/wiki/tag-badge' },
         ],
       },
-    ],
-  },
-  {
-    label: 'Question & Q&A',
-    items: [
+      {
+        href: '/developer/design-system/content-blocks',
+        label: 'Content Blocks',
+        children: [
+          { label: 'InlineQuiz', href: '/developer/design-system/content-blocks/inline-quiz' },
+          { label: 'FormulaBlock', href: '/developer/design-system/content-blocks/formula-block' },
+          { label: 'ExamTip', href: '/developer/design-system/content-blocks/exam-tip' },
+          { label: 'ProcessFlow', href: '/developer/design-system/content-blocks/process-flow' },
+          { label: 'WikiComparisonTable', href: '/developer/design-system/content-blocks/wiki-comparison-table' },
+          { label: 'LawCallout', href: '/developer/design-system/content-blocks/law-callout' },
+          { label: 'AlertBox', href: '/developer/design-system/content-blocks/alert-box' },
+          { label: 'Accordion', href: '/developer/design-system/content-blocks/accordion' },
+          { label: 'TeachBackPrompt', href: '/developer/design-system/content-blocks/teach-back-prompt' },
+          { label: 'ElaborativeInterrogation', href: '/developer/design-system/content-blocks/elaborative-interrogation' },
+          { label: 'KeyValues', href: '/developer/design-system/content-blocks/key-values' },
+        ],
+      },
+      {
+        href: '/developer/design-system/widgets',
+        label: 'Interactive Widgets',
+        children: [
+          { label: 'DoorConfigurator', href: '/developer/design-system/widgets/door-configurator' },
+          { label: 'CorridorVisualizer', href: '/developer/design-system/widgets/corridor-visualizer' },
+          { label: 'CubicleChecker', href: '/developer/design-system/widgets/cubicle-checker' },
+          { label: 'GrabBarExplainer', href: '/developer/design-system/widgets/grab-bar-explainer' },
+          { label: 'RecallDrill', href: '/developer/design-system/widgets/recall-drill' },
+          { label: 'BP344Comparison', href: '/developer/design-system/widgets/bp344-comparison' },
+          { label: 'WorkstationCalculator', href: '/developer/design-system/widgets/workstation-calculator' },
+          { label: 'ReachEnvelopeDiagram', href: '/developer/design-system/widgets/reach-envelope-diagram' },
+          { label: 'BedroomPlanView', href: '/developer/design-system/widgets/bedroom-plan-view' },
+          { label: 'BedSizeComparator', href: '/developer/design-system/widgets/bed-size-comparator' },
+          { label: 'BodyDimensionExplorer', href: '/developer/design-system/widgets/body-dimension-explorer' },
+          { label: 'DHRatioExplorer', href: '/developer/design-system/widgets/dh-ratio-explorer' },
+          { label: 'ProportionComparator', href: '/developer/design-system/widgets/proportion-comparator' },
+          { label: 'DimensionDrill', href: '/developer/design-system/widgets/dimension-drill' },
+          { label: 'SpatialQualityDrill', href: '/developer/design-system/widgets/spatial-quality-drill' },
+          { label: 'BodyDimensionDrill', href: '/developer/design-system/widgets/body-dimension-drill' },
+          { label: 'PHBuildingSetbacks', href: '/developer/design-system/widgets/ph-building-setbacks' },
+        ],
+      },
       {
         href: '/developer/design-system/questions',
         label: 'Question & Q&A',
@@ -61,11 +91,6 @@ const devNavItems: NavGroup[] = [
           { label: 'SessionTimer', href: '/developer/design-system/questions/session-timer' },
         ],
       },
-    ],
-  },
-  {
-    label: 'Review & Testing Path',
-    items: [
       {
         href: '/developer/design-system/testing-path',
         label: 'Review & Testing Path',
@@ -77,11 +102,6 @@ const devNavItems: NavGroup[] = [
           { label: 'SubjectPill', href: '/developer/design-system/testing-path/subject-pill' },
         ],
       },
-    ],
-  },
-  {
-    label: 'System / Shared',
-    items: [
       {
         href: '/developer/design-system/shared',
         label: 'System / Shared',
