@@ -11,6 +11,7 @@ import {
   Settings,
 } from 'lucide-react'
 import { PortalLayout } from '@/components/portal'
+import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
 
 const ceoNavItems: NavGroup[] = [
@@ -56,13 +57,13 @@ interface CeoShellProps {
 
 export const CeoShell = ({ displayName, children }: CeoShellProps) => (
   <PortalLayout
-    portalLabel="CEO Dashboard"
-    topbarBg="#7A4B1A"
-    accentColor="#E8853A"
-    accentLightColor="#FFF5EC"
+    portalLabel={PORTALS.ceo.label}
+    topbarBg={PORTALS.ceo.topbarBg}
+    accentColor={PORTALS.ceo.accentColor}
+    accentLightColor={PORTALS.ceo.accentLightColor}
     navItems={ceoNavItems}
-    backLabel="Dashboard"
-    backHref="/dashboard"
+    backLabel={PORTALS.ceo.backLabel}
+    backHref={PORTALS.ceo.backHref}
   >
     {children}
   </PortalLayout>

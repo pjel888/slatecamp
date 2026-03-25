@@ -4,7 +4,7 @@ import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
 import { isDemoMode } from "@/lib/demo/config";
 import { canReviewContent } from "@/lib/admin/roles";
 
-export async function updateSession(request: NextRequest) {
+export const updateSession = async (request: NextRequest) => {
   const response = NextResponse.next({ request });
   const pathname = request.nextUrl.pathname;
 
@@ -14,12 +14,12 @@ export async function updateSession(request: NextRequest) {
   }
 
   // 2. PUBLIC PATHS
-  // Note: /admin is the login page and must be public
-  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin';
-  
+  // Note: /admin/login is the login page and must be public
+  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin/login';
+
   // 3. DEMO MODE
   if (isDemoMode()) {
-    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin') {
+    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin/login') {
       return NextResponse.redirect(new URL(ROUTES.DASHBOARD, request.url));
     }
     return response;
@@ -41,8 +41,7 @@ export async function updateSession(request: NextRequest) {
     }
   );
 
-  const { data: { session } } = await supabase.auth.getSession();
-  const user = session?.user ?? null;
+  const { data: { user } } = await supabase.auth.getUser();
 
   const redirectWithCookies = (path: string) => {
     const res = NextResponse.redirect(new URL(path, request.url));
@@ -53,9 +52,9 @@ export async function updateSession(request: NextRequest) {
   // 5. PROTECTION LOGIC
   if (!user) {
     if (isPublicPath) return response;
-    
-    // Redirect unauthenticated /admin/* to /admin, others to /login
-    const target = pathname.startsWith('/admin/') ? '/admin' : ROUTES.LOGIN;
+
+    // Redirect unauthenticated /admin/* to /admin/login, others to /login
+    const target = pathname.startsWith('/admin/') ? '/admin/login' : ROUTES.LOGIN;
     const url = new URL(target, request.url);
     if (pathname !== target) url.searchParams.set('next', pathname);
     return redirectWithCookies(url.pathname + url.search);
@@ -66,16 +65,41 @@ export async function updateSession(request: NextRequest) {
     return redirectWithCookies(ROUTES.DASHBOARD);
   }
 
-  // Logged-in user on admin portal
-  if (pathname === '/admin') {
+  // Logged-in user on admin login page
+  if (pathname === '/admin/login') {
     const isAdmin = await canReviewContent();
-    return redirectWithCookies(isAdmin ? '/admin/dashboard' : ROUTES.DASHBOARD);
+    return redirectWithCookies(isAdmin ? '/admin' : ROUTES.DASHBOARD);
   }
 
   // Admin path protection
-  if (pathname.startsWith('/admin/')) {
+  if (pathname.startsWith('/admin/') || pathname === '/admin') {
     const isAdmin = await canReviewContent();
     if (!isAdmin) return redirectWithCookies(ROUTES.DASHBOARD);
+  }
+
+  // CEO portal — require ceo or super_admin role via profiles table
+  if (pathname.startsWith('/ceo')) {
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('role')
+      .eq('id', user.id)
+      .single()
+
+    if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
+      return redirectWithCookies(ROUTES.DASHBOARD);
+    }
+  }
+
+  // Developer portal — require any admin role
+  if (pathname.startsWith('/developer')) {
+    const { data: roles } = await supabase
+      .from('user_roles')
+      .select('role')
+      .eq('user_id', user.id)
+
+    if (!roles || roles.length === 0) {
+      return redirectWithCookies(ROUTES.DASHBOARD);
+    }
   }
 
   return response;

@@ -16,6 +16,7 @@ import {
 } from 'lucide-react'
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
+import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
 import type { UserRole } from '@/lib/admin/roles'
 
@@ -154,13 +155,13 @@ interface AdminShellProps {
 
 const AdminShell = ({ role, children }: AdminShellProps) => (
   <PortalLayout
-    portalLabel="Admin Console"
-    topbarBg="#6B1A1A"
-    accentColor="#B91C1C"
-    accentLightColor="#FEF2F2"
+    portalLabel={PORTALS.admin.label}
+    topbarBg={PORTALS.admin.topbarBg}
+    accentColor={PORTALS.admin.accentColor}
+    accentLightColor={PORTALS.admin.accentLightColor}
     navItems={adminNavItems}
     rightContent={<AdminRoleBadge role={role} />}
-    backLabel="Dashboard"
+    backLabel={PORTALS.admin.backLabel}
   >
     <CommandPalette pages={adminPages} />
     {children}

@@ -17,14 +17,14 @@ export default async function DeveloperPortalLayout({
 }: {
   children: React.ReactNode
 }) {
-  const isDev = process.env.NODE_ENV === 'development'
+  const isBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
   const role = await getUserRole()
 
-  if (!isDev && !role) {
+  if (!isBypass && !role) {
     redirect(ROUTES.DASHBOARD)
   }
 
-  const env: 'development' | 'staging' | 'production' = isDev
+  const env: 'development' | 'staging' | 'production' = isBypass
     ? 'development'
     : process.env.NEXT_PUBLIC_APP_URL?.includes('staging')
       ? 'staging'

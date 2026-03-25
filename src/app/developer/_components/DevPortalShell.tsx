@@ -16,6 +16,7 @@ import {
 import { PortalLayout } from '@/components/portal'
 import { Badge } from '@/components/ui/badge'
 import { DevPortalSearch } from './DevPortalSearch'
+import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
 
 const devNavItems: NavGroup[] = [
@@ -156,10 +157,10 @@ const envBadgeVariant = {
 
 export const DevPortalShell = ({ env, children }: DevPortalShellProps) => (
   <PortalLayout
-    portalLabel="Developer Portal"
-    topbarBg="#0F1F5C"
-    accentColor="#1B3FC4"
-    accentLightColor="#EEF2FC"
+    portalLabel={PORTALS.developer.label}
+    topbarBg={PORTALS.developer.topbarBg}
+    accentColor={PORTALS.developer.accentColor}
+    accentLightColor={PORTALS.developer.accentLightColor}
     navItems={devNavItems}
     rightContent={
       <Badge

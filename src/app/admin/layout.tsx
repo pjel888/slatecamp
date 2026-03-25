@@ -14,15 +14,15 @@ export default async function AdminLayout({
   const pathname = headerList.get('x-pathname') || ''
 
   // CRITICAL: Public Landing Bypass — login page renders without portal chrome
-  if (pathname === '/admin') {
+  if (pathname === '/admin/login') {
     return <>{children}</>
   }
 
   const { data: { user } } = await getUser()
-  if (!user) return <>{children}</>
+  if (!user) redirect('/admin/login')
 
   const isAdmin = await canReviewContent()
-  if (!isAdmin && pathname !== '/admin') {
+  if (!isAdmin && pathname !== '/admin/login') {
     redirect(ROUTES.DASHBOARD)
   }
 
