@@ -43,7 +43,7 @@ export const getTeachBackCriteria = async (
 
   const { data } = await supabase
     .from('topic_teach_back_criteria')
-    .select('*')
+    .select('criteria_id, topic_id, required_concepts, required_exceptions, common_misconceptions, code_citations')
     .eq('topic_id', topicId)
     .limit(1)
     .maybeSingle()

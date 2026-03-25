@@ -1,4 +1,3 @@
-'use client'
 import { Lightbulb } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'

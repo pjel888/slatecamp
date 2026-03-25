@@ -1,5 +1,3 @@
-'use client'
-
 import { cn } from '@/lib/utils'
 import { LEVEL_BG } from './HeatmapGrid'
 import type { Level } from './HeatmapGrid'

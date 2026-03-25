@@ -240,7 +240,7 @@ export const getLawsTaxonomyTree = async (
 
   const { data: nodes, error } = await supabase
     .from('taxonomy_tree')
-    .select('*')
+    .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, ale_id, description, exam_frequency, bloom_level, difficulty, prc_area')
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', true)
     .is('deprecated_at', null)
@@ -383,7 +383,7 @@ export async function resolveArticleAndNode(
   // Path 1: slug matches an article slug
   const { data: article } = await supabase
     .from('wiki_articles')
-    .select('*')
+    .select('article_id, slug, title, content, created_at, updated_at, ale_tests_you, updated_note, subject_label, difficulty_label, status')
     .eq('slug', slug)
     .eq('status', 'published')
     .limit(1)
@@ -413,7 +413,7 @@ export async function resolveArticleAndNode(
     if (nodeId) {
       const { data: node } = await supabase
         .from('taxonomy_tree')
-        .select('*')
+        .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, ale_id, description, exam_frequency, bloom_level, difficulty, prc_area')
         .eq('node_id', nodeId)
         .single()
       return { article: article as WikiArticle, node: node as TaxonomyNode | null }
@@ -425,7 +425,7 @@ export async function resolveArticleAndNode(
   // Path 2: slug matches a taxonomy node slug
   const { data: directNode } = await supabase
     .from('taxonomy_tree')
-    .select('*')
+    .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, ale_id, description, exam_frequency, bloom_level, difficulty, prc_area')
     .eq('slug', slug)
     .maybeSingle()
 
@@ -455,7 +455,7 @@ export async function resolveArticleAndNode(
 
   const { data: nodeArticle } = await supabase
     .from('wiki_articles')
-    .select('*')
+    .select('article_id, slug, title, content, created_at, updated_at, ale_tests_you, updated_note, subject_label, difficulty_label, status')
     .eq('article_id', articleId)
     .eq('status', 'published')
     .maybeSingle()

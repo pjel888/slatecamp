@@ -31,7 +31,7 @@ export async function getQuizSession(sessionId: string) {
 
   const { data: session, error } = await supabase
     .from('quiz_sessions')
-    .select('*')
+    .select('session_id, user_id, discipline_id, test_mode, status, config, question_ids, subject_ids, source_article_id, current_question_index, started_at, completed_at, created_at, updated_at')
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
     .single()
@@ -44,7 +44,7 @@ export async function getSessionQuestions(questionIds: string[]) {
   const supabase = await createClient()
   const { data: questions, error } = await supabase
     .from('questions')
-    .select('*')
+    .select('question_id, topic_id, text, options, correct_option_id, rationale, difficulty, difficulty_rating, discrimination_rating, prompt_image_url, explanation, code_citation, model_id')
     .in('question_id', questionIds)
 
   if (error) throw error
@@ -65,7 +65,7 @@ export async function getSessionInteractions(sessionId: string) {
 
   const { data: interactions, error } = await supabase
     .from('user_interactions')
-    .select('*')
+    .select('interaction_id, session_id, question_id, topic_id, user_id, selected_option_id, is_correct, time_spent_ms, is_flagged, answer_changes, options_eliminated, confidence, rationale_view_ms, error_type, question_order, interaction_timestamp, updated_at')
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
 
@@ -196,7 +196,7 @@ export async function recordMastery(
   // 1. Get current node mastery (select all columns including new anti-inflation ones)
   const { data: current } = await supabase
     .from('user_node_mastery')
-    .select('*')
+    .select('current_mastery_weight, total_attempts, total_correct, avg_time_ms, consecutive_correct_streak, highest_difficulty_correct, has_bloom_apply_correct, has_bloom_analyze_correct, distinct_questions_seen, theta')
     .eq('user_id', user_id)
     .eq('topic_id', topic_id)
     .maybeSingle()

@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * Study Streak Ribbon — UX Strategy Section 9
  * Shows yesterday/today/tomorrow as dot-ribbon, not a raw number.

@@ -190,6 +190,11 @@ export interface DashboardPageData {
 
   // Subject Floor Alert (Task 0.3)
   subjectFloorAlerts: SubjectFloorAlert[]
+
+  // QuickStatsRow
+  sessionsCompleted: number
+  greenTopics: number
+  totalTopics: number
 }
 
 // ── Subject Floor Alert ────────────────────────────────────────────────────

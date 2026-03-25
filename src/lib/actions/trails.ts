@@ -26,7 +26,7 @@ export const getPublishedTrails = async (): Promise<CampTrail[]> => {
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('camp_trails')
-    .select('*')
+    .select('trail_id, discipline_id, name, slug, description, trail_type, intensity, duration_days, total_steps, daily_time_estimate_minutes, subjects_covered, is_published, is_featured, is_free, recommended_min_score, recommended_max_score, created_at, updated_at')
     .eq('is_published', true)
     .order('is_featured', { ascending: false })
     .order('duration_days', { ascending: true })
@@ -43,7 +43,7 @@ export const getTrailBySlug = async (slug: string): Promise<CampTrail | null> =>
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('camp_trails')
-    .select('*')
+    .select('trail_id, discipline_id, name, slug, description, trail_type, intensity, duration_days, total_steps, daily_time_estimate_minutes, subjects_covered, is_published, is_featured, is_free, recommended_min_score, recommended_max_score, created_at, updated_at')
     .eq('slug', slug)
     .single()
 
@@ -163,7 +163,7 @@ export const getStepProgress = async (enrollmentId: string): Promise<TrailProgre
 
   const { data, error } = await supabase
     .from('user_trail_progress')
-    .select('*')
+    .select('progress_id, enrollment_id, user_id, step_id, completed_at, session_id, time_spent_ms')
     .eq('enrollment_id', enrollmentId)
     .eq('user_id', user.id)
 
@@ -327,7 +327,7 @@ export const recommendTrail = async (): Promise<TrailRecommendation | null> => {
   // Find matching published trail
   const { data: trails } = await supabase
     .from('camp_trails')
-    .select('*')
+    .select('trail_id, discipline_id, name, slug, description, trail_type, intensity, duration_days, total_steps, daily_time_estimate_minutes, subjects_covered, is_published, is_featured, is_free, recommended_min_score, recommended_max_score, created_at, updated_at')
     .eq('is_published', true)
     .eq('intensity', recommendedIntensity)
     .limit(1)
@@ -337,7 +337,7 @@ export const recommendTrail = async (): Promise<TrailRecommendation | null> => {
   if (!matchedTrail) {
     const { data: fallback } = await supabase
       .from('camp_trails')
-      .select('*')
+      .select('trail_id, discipline_id, name, slug, description, trail_type, intensity, duration_days, total_steps, daily_time_estimate_minutes, subjects_covered, is_published, is_featured, is_free, recommended_min_score, recommended_max_score, created_at, updated_at')
       .eq('is_published', true)
       .order('is_featured', { ascending: false })
       .limit(1)
@@ -518,7 +518,7 @@ export const getFullDayCompletions = async (enrollmentId: string): Promise<Trail
 
   const { data, error } = await supabase
     .from('trail_day_completions')
-    .select('*')
+    .select('day_completion_id, enrollment_id, day_id, user_id, day_number, completed_at, readiness_score_at_completion, mastery_before, mastery_after, all_steps_completed')
     .eq('enrollment_id', enrollmentId)
     .order('day_number', { ascending: true })
 

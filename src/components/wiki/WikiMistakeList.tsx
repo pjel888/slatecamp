@@ -1,5 +1,3 @@
-'use client'
-
 import { WikiMistakeCard } from './WikiMistakeCard'
 import { parseMdxProp } from './parse-mdx-prop'
 import { transformMistakeString } from './transform-mistake-string'

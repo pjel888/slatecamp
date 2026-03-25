@@ -1,5 +1,3 @@
-'use client'
-
 import { parseMdxProp } from './parse-mdx-prop'
 
 interface KeyValueItem {

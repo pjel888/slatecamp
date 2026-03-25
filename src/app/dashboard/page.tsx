@@ -14,6 +14,8 @@ import { LockedScoreWidget } from '@/components/dashboard/LockedScoreWidget'
 import { StreakRibbon } from '@/components/dashboard/StreakRibbon'
 import { SrsReviewWidget } from '@/components/dashboard/SrsReviewWidget'
 import { DashboardTrailCard, DashboardTrailPrompt } from '@/components/trails/DashboardTrailCard'
+import { TodayActionCard } from '@/components/shared/TodayActionCard'
+import { QuickStatsRow } from '@/components/shared/QuickStatsRow'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
@@ -88,7 +90,25 @@ export default async function DashboardPage() {
           </Suspense>
         </HeroCommandBar>
 
-        {/* ── 2. Content grid ────────────────────────────── */}
+        {/* ── 2. Today's Action ───────────────────────────── */}
+        <TodayActionCard
+          enrolled={!!data.activeTrailDay}
+          dayNumber={data.activeTrailDay?.dayNumber}
+          topicName={data.activeTrailDay?.title}
+          estimatedMinutes={data.activeTrailDay?.estimatedMinutes}
+          ctaLabel={data.activeTrailDay ? `Continue Day ${data.activeTrailDay.dayNumber}` : 'Start Diagnostic'}
+          ctaHref={data.activeTrailDay ? `/dashboard/trails/${data.activeTrailDay.trailSlug}` : '/dashboard/testing/camp/setup'}
+        />
+
+        {/* ── 3. Quick Stats Row ──────────────────────────── */}
+        <QuickStatsRow
+          daysToExam={data.daysUntilExam ?? undefined}
+          sessionsCompleted={data.sessionsCompleted}
+          greenTopics={data.greenTopics}
+          totalTopics={data.totalTopics}
+        />
+
+        {/* ── 4. Content grid ────────────────────────────── */}
         <div className='min-h-0'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
             <div className='lg:col-span-3 rounded-md border border-border bg-white p-2'>

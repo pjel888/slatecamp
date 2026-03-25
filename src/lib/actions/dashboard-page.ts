@@ -37,6 +37,7 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     wikiArticlesResult,         // Q10: DASHBOARD: DailyWikiCard
     subjectAreasResult,         // Q11: DASHBOARD: Subject Mastery (radar + bars)
     subjectMasteryResult,       // Q12: DASHBOARD: Subject Mastery (per-subject weights)
+    totalSessionsResult,        // Q13: DASHBOARD: QuickStatsRow (total completed sessions)
   ] = await Promise.all([
     // Q1
     supabase
@@ -137,6 +138,13 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
       .from('user_node_mastery')
       .select('topic_id, current_mastery_weight, total_attempts')
       .eq('user_id', user.id),
+
+    // Q13: total completed sessions count
+    supabase
+      .from('quiz_sessions')
+      .select('session_id', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .eq('status', 'completed'),
   ])
 
   // ── Log partial failures ──────────────────────────────────────────────────
@@ -153,6 +161,7 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     { key: 'wikiArticles', result: wikiArticlesResult },
     { key: 'subjectAreas', result: subjectAreasResult },
     { key: 'subjectMastery', result: subjectMasteryResult },
+    { key: 'totalSessions', result: totalSessionsResult },
   ]
 
   const _failedKeys = _queryResults
@@ -286,6 +295,14 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     buildSrsReview(supabase, user.id),
   ])
 
+  // ── QuickStatsRow derived values ────────────────────────────────────────
+  const sessionsCompleted = totalSessionsResult.count ?? 0
+  const masteryEntries = masteryCountResult.data ?? []
+  const greenTopics = masteryEntries.filter(
+    (e: { current_mastery_weight: number }) => e.current_mastery_weight >= 0.7
+  ).length
+  const totalTopics = masteryEntries.length
+
   // ── 3D Lab module count ─────────────────────────────────────────────────
   const { count: labCount } = await supabase
     .from('models_3d')
@@ -316,6 +333,9 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     activeTrailDay,
     streak,
     srsReview,
+    sessionsCompleted,
+    greenTopics,
+    totalTopics,
   }
 }
 
@@ -363,5 +383,8 @@ const emptyDashboard = (userName: string): DashboardPageData => {
     activeTrailDay: null,
     streak: { currentStreak: 0, longestStreak: 0, streakStatus: 'broken' },
     srsReview: { itemsDue: 0, subjects: [], estimatedMinutes: 0 },
+    sessionsCompleted: 0,
+    greenTopics: 0,
+    totalTopics: 0,
   }
 }

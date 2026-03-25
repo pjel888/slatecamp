@@ -36,7 +36,7 @@ export async function getAuditLogsAction(filters: AuditLogFilters = {}): Promise
 
   let query = supabase
     .from('audit_logs')
-    .select('*')
+    .select('id, actor_id, event_type, table_name, record_id, metadata, content_snapshot, created_at')
     .order('created_at', { ascending: false })
 
   if (filters.tableName) {

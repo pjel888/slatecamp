@@ -58,7 +58,7 @@ async function DashboardLayoutContent({
 
   const { data: allDisciplines } = await supabase
     .from('disciplines')
-    .select('*')
+    .select('discipline_id, name, acronym, created_at, updated_at')
     .order('name')
 
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null

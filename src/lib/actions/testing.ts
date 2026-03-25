@@ -405,7 +405,7 @@ export const getTestingPageData = async (params: { topicId?: string; subjectId?:
 
   const existingSessionPromise = supabase
     .from('quiz_sessions')
-    .select('*')
+    .select('session_id, user_id, discipline_id, test_mode, status, config, question_ids, subject_ids, source_article_id, current_question_index, started_at, completed_at, created_at, updated_at')
     .eq('user_id', user.id)
     .eq('status', 'in_progress')
     .order('started_at', { ascending: false })
@@ -442,7 +442,7 @@ export const getTestingPageData = async (params: { topicId?: string; subjectId?:
 
   const subjectsPromise = supabase
     .from('taxonomy_tree')
-    .select('*')
+    .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, ale_id, description, exam_frequency, bloom_level, difficulty, prc_area')
     .eq('discipline_id', stats.current_discipline_id)
     .eq('level', 1)
     .eq('is_cross_ref_only', false)
@@ -593,6 +593,39 @@ export const saveTestingInteraction = async (
       })
       void updateSrsSchedule(user.id, topicId, quality)
     }
+  }
+
+  // IRT theta update (non-blocking, fire-and-forget)
+  try {
+    const supabaseIrt = await createClient()
+    // Get question's IRT params
+    const { data: irtQuestionData } = await supabaseIrt
+      .from('questions')
+      .select('irt_difficulty, irt_discrimination, topic_id')
+      .eq('question_id', payload.questionId)
+      .single()
+
+    if (irtQuestionData && irtQuestionData.irt_discrimination > 0) {
+      // Get discipline from topic
+      const { data: topicData } = await supabaseIrt
+        .from('taxonomy_tree')
+        .select('discipline_id')
+        .eq('node_id', irtQuestionData.topic_id)
+        .single()
+
+      if (topicData?.discipline_id) {
+        await supabaseIrt.rpc('update_theta', {
+          p_user_id: user.id,
+          p_discipline_id: topicData.discipline_id,
+          p_item_difficulty: irtQuestionData.irt_difficulty,
+          p_item_discrimination: irtQuestionData.irt_discrimination,
+          p_is_correct: payload.isCorrect ?? false,
+        })
+      }
+    }
+  } catch (irtError) {
+    // IRT failure must NOT block the quiz flow
+    console.error('[TESTING: IRT] update_theta failed:', irtError)
   }
 
   return { error: null }

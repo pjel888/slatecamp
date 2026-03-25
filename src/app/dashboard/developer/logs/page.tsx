@@ -14,7 +14,7 @@ export default async function LogsPage() {
   // Attempt to read audit_logs — table may not exist yet
   const { data: logs, error } = await supabase
     .from('audit_logs')
-    .select('*')
+    .select('id, user_id, action, details, created_at')
     .order('created_at', { ascending: false })
     .limit(50)
 

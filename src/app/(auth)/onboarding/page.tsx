@@ -35,7 +35,7 @@ export default async function OnboardingPage() {
   const [{ data: disciplines }, { data: subjectRows }] = await Promise.all([
     supabase
       .from('disciplines')
-      .select('*')
+      .select('discipline_id, name, acronym, created_at, updated_at')
       .order('name'),
     // Fetch level-1 subjects for every discipline (used by returning_reviewer multi-select)
     supabase

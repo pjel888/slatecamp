@@ -17,7 +17,7 @@ const SimulationResultsPage = async ({ params }: SimulationResultsPageProps) => 
     // Fetch simulation session
     supabase
       .from('quiz_sessions')
-      .select('*')
+      .select('session_id, user_id, discipline_id, test_mode, status, config, question_ids, subject_ids, source_article_id, current_question_index, started_at, completed_at, created_at, updated_at')
       .eq('session_id', sessionId)
       .eq('user_id', user.id)
       .maybeSingle(),

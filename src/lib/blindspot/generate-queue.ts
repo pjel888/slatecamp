@@ -164,7 +164,7 @@ export const getActiveBlindspotQueue = async (userId: string) => {
 
   const { data } = await supabase
     .from('blindspot_queues')
-    .select('*')
+    .select('queue_id, user_id, node_ids, question_count, status, session_id, pre_queue_mastery, post_queue_mastery, nodes_improved, generated_at, completed_at, deferred_until')
     .eq('user_id', userId)
     .in('status', ['pending', 'in_progress', 'deferred'])
     .order('created_at', { ascending: false })

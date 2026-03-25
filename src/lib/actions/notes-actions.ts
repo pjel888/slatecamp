@@ -56,7 +56,7 @@ export async function getNoteFolders() {
 
   const { data, error } = await supabase
     .from('note_folders')
-    .select('*')
+    .select('folder_id, user_id, name, created_at, updated_at')
     .eq('user_id', user.id)
     .order('name', { ascending: true })
 
@@ -71,7 +71,7 @@ export async function getNote(id: string): Promise<Note | null> {
 
   const { data, error } = await supabase
     .from('notes')
-    .select('*')
+    .select('note_id, user_id, title, content, folder_id, topic_id, question_id, article_id, session_id, source_url, note_type, tags, color, is_pinned, created_at, updated_at')
     .eq('note_id', id)
     .eq('user_id', user.id)
     .single()

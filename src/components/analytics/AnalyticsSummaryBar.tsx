@@ -1,4 +1,3 @@
-'use client'
 import type { AnalyticsSummaryMetrics } from '@/lib/actions/analytics'
 import { cn } from '@/lib/utils'
 

@@ -1,5 +1,3 @@
-'use client'
-
 import type { NodeMasteryState } from '@/types/app'
 
 /* ------------------------------------------------------------------ */

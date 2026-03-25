@@ -70,7 +70,7 @@ export async function getDiagnosticQuestions(
     // Fetch questions from these areas
     const { data: questions, error } = await supabase
       .from('questions')
-      .select('*')
+      .select('question_id, topic_id, text, options, correct_option_id, rationale, difficulty, difficulty_rating, discrimination_rating, prompt_image_url, explanation, code_citation, model_id, created_at, updated_at')
       .in('topic_id', nodeIds)
       .limit(count * 2);
 

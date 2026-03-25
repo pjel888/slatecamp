@@ -1,5 +1,3 @@
-"use client";
-
 import { StandardInfoPopover } from "./StandardInfoPopover";
 
 interface InfoTooltipProps {
