@@ -1,3 +1,5 @@
+'use server'
+
 import type { MasteryLabel } from '@/types/dashboard'
 import { getMasteryLevel } from '@/lib/constants/mastery'
 

@@ -1,3 +1,5 @@
+'use server'
+
 import { createClient } from '@/lib/supabase/server'
 import type { AuditLog } from '@/lib/audit/audit-queries'
 
