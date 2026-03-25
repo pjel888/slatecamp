@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import { UnifiedAppShell } from '@/components/layout/UnifiedAppShell'
+import { CeoShell } from './_components/CeoShell'
 
 export const metadata = {
   title: 'CEO Dashboard — SlateCamp',
@@ -27,8 +27,8 @@ export default async function CeoLayout({
   }
 
   return (
-    <UnifiedAppShell role="ceo" displayName={profile.display_name || 'CEO'}>
+    <CeoShell displayName={profile.display_name || 'CEO'}>
       {children}
-    </UnifiedAppShell>
+    </CeoShell>
   )
 }
