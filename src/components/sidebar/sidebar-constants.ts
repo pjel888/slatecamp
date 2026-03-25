@@ -21,7 +21,9 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Learn group — tier: default (primary study loop)
   { id: 'wiki', href: '/dashboard/wiki', label: 'Wiki', icon: Globe, tier: 'default', group: 'learn', shortcut: '⌘2' },
   { id: 'notes', href: '/dashboard/notes', label: 'Notes', icon: FileText, tier: 'default', group: 'learn', shortcut: '⌘3' },
-  { id: '3d-lab', href: '/dashboard/3d-lab', label: '3D Lab', icon: Cube, tier: 'default', group: 'learn', shortcut: '⌘4' },
+
+  // Explore group — tier: default (interactive tools)
+  { id: '3d-lab', href: '/dashboard/3d-lab', label: '3D Lab', icon: Cube, tier: 'default', group: 'explore', shortcut: '⌘4' },
 
   // Practice group — tier: secondary (tools)
   { id: 'testing', href: '/dashboard/testing', label: 'Testing & Review', icon: Exam, tier: 'secondary', group: 'practice' },
@@ -40,6 +42,7 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
 
 export const SIDEBAR_GROUPS: SidebarNavGroupConfig[] = [
   { key: 'learn', label: 'Learn', items: SIDEBAR_NAV_ITEMS.filter((i) => i.group === 'learn') },
+  { key: 'explore', label: 'Explore', items: SIDEBAR_NAV_ITEMS.filter((i) => i.group === 'explore') },
   { key: 'practice', label: 'Practice', items: SIDEBAR_NAV_ITEMS.filter((i) => i.group === 'practice') },
   { key: 'data', label: 'Data', items: SIDEBAR_NAV_ITEMS.filter((i) => i.group === 'data') },
 ]
