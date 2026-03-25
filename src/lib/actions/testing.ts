@@ -348,6 +348,16 @@ export const createTestingSession = async (
     }
   }
 
+  // Resolve ALE-* subject IDs to taxonomy node UUIDs for subject_ids (UUID[] column)
+  let resolvedSubjectUuids: string[] = []
+  if (config.subjectFilter?.length > 0) {
+    const { data: subjectNodes } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id')
+      .in('ale_id', config.subjectFilter)
+    resolvedSubjectUuids = (subjectNodes || []).map((n: { node_id: string }) => n.node_id)
+  }
+
   const { data: session, error } = await supabase
     .from('quiz_sessions')
     .insert({
@@ -357,7 +367,7 @@ export const createTestingSession = async (
       status: 'in_progress',
       config: config as unknown as Record<string, unknown>,
       question_ids: questionIds,
-      subject_ids: config.subjectFilter ?? [],
+      subject_ids: resolvedSubjectUuids,
       current_question_index: 0,
       pre_session_confidence_ratings: config.preSessionConfidence
         ? Object.fromEntries(config.preSessionConfidence.map((s) => [s.subjectId, s.rating]))

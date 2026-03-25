@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Syne, DM_Mono } from 'next/font/google'
-import { GeistSans } from 'geist/font/sans'
 import { siteConfig } from '@/lib/constants/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
@@ -57,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${syne.variable} ${dmMono.variable} ${GeistSans.variable} font-sans antialiased`}
+        className={`${inter.variable} ${syne.variable} ${dmMono.variable} font-sans antialiased`}
       >
         <ThemeProvider>
           <NoiseFilter />

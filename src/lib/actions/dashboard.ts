@@ -61,6 +61,8 @@ export async function getDashboardData(): Promise<DashboardData> {
     return emptyDashboard(userName)
   }
 
+  try {
+
   const [
     incompleteResult,
     lastDoneResult,
@@ -276,17 +278,21 @@ export async function getDashboardData(): Promise<DashboardData> {
     })
   }
 
-  return {
-    userName,
-    readinessScore,
-    readinessMomentum,
-    catalyst,
-    recentActivities: activities,
-    totalAnswered,
-    topicsMastered,
-    subjectMastery,
-    studyDaysCount,
-    previousReadinessScore,
+    return {
+      userName,
+      readinessScore,
+      readinessMomentum,
+      catalyst,
+      recentActivities: activities,
+      totalAnswered,
+      topicsMastered,
+      subjectMastery,
+      studyDaysCount,
+      previousReadinessScore,
+    }
+  } catch (err) {
+    console.error('[DASHBOARD: getDashboardData]', err)
+    return emptyDashboard(userName)
   }
 }
 
