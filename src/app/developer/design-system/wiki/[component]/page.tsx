@@ -44,7 +44,7 @@ const wikiCardData: ComponentData = {
         <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-primary text-[11px] font-medium">
           PD 1096 — National Building Code
         </span>
-        <span className="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-[#EDFAF4] text-emerald-700 text-[10px] font-medium">
+        <span className="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-[#EDFAF4] text-emerald-700 text-[11px] font-medium">
           Published
         </span>
       </div>
@@ -58,13 +58,13 @@ const wikiCardData: ComponentData = {
         </p>
       </div>
       <div className="flex flex-wrap gap-1.5">
-        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[10px] text-muted-foreground">
+        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[11px] text-muted-foreground">
           egress
         </span>
-        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[10px] text-muted-foreground">
+        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[11px] text-muted-foreground">
           corridors
         </span>
-        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[10px] text-muted-foreground">
+        <span className="inline-flex items-center px-2 py-0.5 rounded-sm bg-muted text-[11px] text-muted-foreground">
           commercial
         </span>
       </div>
@@ -131,7 +131,7 @@ const tableOfContentsData: ComponentData = {
 />`,
   preview: (
     <div className="w-full max-w-xs">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
         On this page
       </p>
       <nav className="space-y-1 border-l border-border pl-3">

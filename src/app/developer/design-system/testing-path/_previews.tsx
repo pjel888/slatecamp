@@ -185,7 +185,7 @@ export const HeatmapGridPreview = () => (
       >
         <span
           className={cn(
-            'font-[family-name:var(--font-dm-mono)] text-[10px] font-medium',
+            'font-[family-name:var(--font-dm-mono)] text-[11px] font-medium',
             value > 60 ? 'text-white' : 'text-emerald-900',
           )}
         >
@@ -252,7 +252,7 @@ export const SubjectPillPreview = () => (
         {pill.label}
         <span
           className={cn(
-            'font-[family-name:var(--font-dm-mono)] text-[10px]',
+            'font-[family-name:var(--font-dm-mono)] text-[11px]',
             pill.variant === 'primary'
               ? 'text-[#1B3FC4]/60'
               : 'text-muted-foreground',

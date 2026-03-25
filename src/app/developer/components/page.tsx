@@ -46,7 +46,7 @@ const WidgetBadge = ({ group }: { group: string }) => (
 )
 
 const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2 mt-6 first:mt-0">
+  <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2 mt-6 first:mt-0">
     {children}
   </p>
 )
@@ -98,7 +98,7 @@ const SimpleRow = ({
     <span className="text-[12px] font-semibold text-foreground w-40 shrink-0 font-[family-name:var(--font-display)]">
       {name}
     </span>
-    <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground w-48 shrink-0">
+    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground w-48 shrink-0">
       {path}
     </span>
     <span className="text-[11px] text-muted-foreground leading-relaxed">{description}</span>
@@ -911,7 +911,7 @@ const WidgetsTab = () => (
   <div className="space-y-4">
     {/* How it works */}
     <Card variant="default" size="sm" className="gap-3">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         Architecture
       </p>
       <h3 className="text-[13px] font-semibold text-foreground font-[family-name:var(--font-display)]">
@@ -919,9 +919,9 @@ const WidgetsTab = () => (
       </h3>
       <p className="text-[11px] text-muted-foreground leading-relaxed">
         Widgets are React components embedded in MDX via JSX tags. At render time,{' '}
-        <code className="font-[family-name:var(--font-dm-mono)] text-[10px] text-primary bg-primary/5 px-1 rounded">detectWidgets(content)</code>{' '}
+        <code className="font-[family-name:var(--font-dm-mono)] text-[11px] text-primary bg-primary/5 px-1 rounded">detectWidgets(content)</code>{' '}
         scans the raw MDX string for known tag names, then{' '}
-        <code className="font-[family-name:var(--font-dm-mono)] text-[10px] text-primary bg-primary/5 px-1 rounded">resolveWidgets(content)</code>{' '}
+        <code className="font-[family-name:var(--font-dm-mono)] text-[11px] text-primary bg-primary/5 px-1 rounded">resolveWidgets(content)</code>{' '}
         dynamically imports only those modules. An article using 3 widgets loads 3 bundles — not the entire registry.
       </p>
       <CodeBlock
@@ -1106,7 +1106,7 @@ export default function ComponentLibraryPage() {
     <div className="max-w-5xl space-y-6">
       {/* Header */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Engineering Reference
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">

@@ -27,7 +27,7 @@ export default function DeveloperPortalError({
           {error.message || 'An unexpected error occurred in the Developer Portal.'}
         </p>
         {error.digest && (
-          <p className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground mb-4">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground mb-4">
             Error ID: {error.digest}
           </p>
         )}

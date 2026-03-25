@@ -53,7 +53,7 @@ export const StatusBanner = ({ statuses }: StatusBannerProps) => {
         <Icon className="w-4 h-4 shrink-0" />
         <span className="text-[13px] font-semibold">{message}</span>
       </div>
-      <span className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">
+      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
         Last checked: 3s ago
       </span>
     </div>

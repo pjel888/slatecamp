@@ -37,7 +37,7 @@ const InfrastructureStatusPage = async () => {
 
       {/* Header */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Infrastructure
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
@@ -47,13 +47,13 @@ const InfrastructureStatusPage = async () => {
 
       {/* API Latency */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           API Latency
         </p>
         <div className="grid grid-cols-3 gap-3">
           {latencyMetrics.map((metric) => (
             <Card key={metric.label} size="sm" className="flex flex-col gap-1">
-              <span className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+              <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 {metric.label}
               </span>
               <span className="font-[family-name:var(--font-dm-mono)] text-2xl font-semibold tabular-nums text-foreground">
@@ -67,7 +67,7 @@ const InfrastructureStatusPage = async () => {
 
       {/* Edge Functions */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           Edge Functions
         </p>
         <Card size="sm" className="divide-y divide-border">
@@ -80,7 +80,7 @@ const InfrastructureStatusPage = async () => {
                 <span className="text-xs font-[family-name:var(--font-dm-mono)] text-foreground">
                   {fn.name}
                 </span>
-                <span className="text-[10px] text-muted-foreground">
+                <span className="text-[11px] text-muted-foreground">
                   Last invoked {timeAgo(fn.lastInvocation)}
                 </span>
               </div>
@@ -92,7 +92,7 @@ const InfrastructureStatusPage = async () => {
 
       {/* Last Deployment */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           Last Deployment
         </p>
         <Card size="sm">

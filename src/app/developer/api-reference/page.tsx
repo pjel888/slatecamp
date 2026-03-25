@@ -551,7 +551,7 @@ export default function ApiReferencePage() {
     <div className="max-w-5xl space-y-6">
       {/* Header */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Documentation
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
@@ -582,7 +582,7 @@ export default function ApiReferencePage() {
 
           {/* Payments */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Payments
             </p>
             <div className="space-y-2">
@@ -594,7 +594,7 @@ export default function ApiReferencePage() {
 
           {/* Webhooks */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Webhooks
             </p>
             <div className="space-y-2">
@@ -606,7 +606,7 @@ export default function ApiReferencePage() {
 
           {/* Cron Jobs */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Cron Jobs
             </p>
             <div className="space-y-2">
@@ -618,7 +618,7 @@ export default function ApiReferencePage() {
 
           {/* AI */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               AI
             </p>
             <div className="space-y-2">
@@ -630,7 +630,7 @@ export default function ApiReferencePage() {
 
           {/* Admin */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Admin
             </p>
             <div className="space-y-2">
@@ -642,7 +642,7 @@ export default function ApiReferencePage() {
 
           {/* Debug */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Debug
             </p>
             <div className="space-y-2">
@@ -667,23 +667,23 @@ export default function ApiReferencePage() {
 
           {actionGroups.map((group) => (
             <section key={group.domain}>
-              <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+              <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
                 {group.domain}
               </p>
               <div className="rounded-xs border border-border overflow-hidden">
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-border bg-muted/60">
-                      <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[30%]">
+                      <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[30%]">
                         Function
                       </th>
-                      <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[30%]">
+                      <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[30%]">
                         Description
                       </th>
-                      <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[20%] hidden lg:table-cell">
+                      <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[20%] hidden lg:table-cell">
                         Tables
                       </th>
-                      <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[10%]">
+                      <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[10%]">
                         Auth
                       </th>
                     </tr>
@@ -705,7 +705,7 @@ export default function ApiReferencePage() {
                           </span>
                         </td>
                         <td className="px-4 py-2.5 align-top hidden lg:table-cell">
-                          <span className="text-[10px] text-muted-foreground font-[family-name:var(--font-dm-mono)] leading-relaxed">
+                          <span className="text-[11px] text-muted-foreground font-[family-name:var(--font-dm-mono)] leading-relaxed">
                             {action.reads !== '—' && (
                               <span className="block">
                                 <span className="text-emerald-600">R</span> {action.reads}
@@ -720,7 +720,7 @@ export default function ApiReferencePage() {
                           </span>
                         </td>
                         <td className="px-4 py-2.5 align-top">
-                          <span className="text-[10px] text-muted-foreground">{action.auth}</span>
+                          <span className="text-[11px] text-muted-foreground">{action.auth}</span>
                         </td>
                       </tr>
                     ))}
@@ -736,17 +736,17 @@ export default function ApiReferencePage() {
 
           {/* Stripe */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Stripe — POST /api/webhooks/stripe
             </p>
             <div className="rounded-xs border border-border overflow-hidden">
               <table className="w-full text-left">
                 <thead>
                   <tr className="border-b border-border bg-muted/60">
-                    <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[35%]">
+                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[35%]">
                       Event
                     </th>
-                    <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                       Database Mutations
                     </th>
                   </tr>
@@ -787,7 +787,7 @@ export default function ApiReferencePage() {
             </div>
 
             <div className="mt-4 rounded-xs border border-border bg-muted/30 px-4 py-3">
-              <p className="font-[family-name:var(--font-dm-mono)] text-[9px] uppercase tracking-[0.1em] text-muted-foreground mb-2">
+              <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-muted-foreground mb-2">
                 Signature Verification
               </p>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
@@ -806,17 +806,17 @@ export default function ApiReferencePage() {
 
           {/* PayRex */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               PayRex — POST /api/webhooks/payrex
             </p>
             <div className="rounded-xs border border-border overflow-hidden">
               <table className="w-full text-left">
                 <thead>
                   <tr className="border-b border-border bg-muted/60">
-                    <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground w-[35%]">
+                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[35%]">
                       Event
                     </th>
-                    <th className="px-4 py-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                       Database Mutations
                     </th>
                   </tr>
@@ -840,7 +840,7 @@ export default function ApiReferencePage() {
             </div>
 
             <div className="mt-4 rounded-xs border border-border bg-muted/30 px-4 py-3">
-              <p className="font-[family-name:var(--font-dm-mono)] text-[9px] uppercase tracking-[0.1em] text-muted-foreground mb-2">
+              <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-muted-foreground mb-2">
                 Signature Verification
               </p>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
@@ -859,7 +859,7 @@ export default function ApiReferencePage() {
 
           {/* Shared notes */}
           <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
               Shared Conventions
             </p>
             <div className="space-y-2 text-[11px] text-muted-foreground leading-relaxed">

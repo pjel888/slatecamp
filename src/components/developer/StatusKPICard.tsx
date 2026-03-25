@@ -17,7 +17,7 @@ interface StatusKPICardProps {
 
 export const StatusKPICard = ({ label, value, unit, status }: StatusKPICardProps) => (
   <Card size="sm" className="flex flex-col gap-2">
-    <span className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
       {label}
     </span>
     <span className="font-[family-name:var(--font-dm-mono)] text-2xl font-semibold tabular-nums text-foreground">

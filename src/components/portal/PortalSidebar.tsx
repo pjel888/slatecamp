@@ -3,6 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Search } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */
@@ -45,12 +46,60 @@ const PortalSidebar = ({
 }: PortalSidebarProps) => {
   const pathname = usePathname()
   const [manualToggle, setManualToggle] = React.useState<Record<string, boolean>>({})
+  const [search, setSearch] = React.useState('')
+  const searchInputRef = React.useRef<HTMLInputElement>(null)
+
+  /* ---- Keyboard shortcut: "/" focuses the search input ------------ */
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== '/') return
+      const tag = (e.target as HTMLElement)?.tagName?.toLowerCase()
+      if (tag === 'input' || tag === 'textarea' || tag === 'select') return
+      if ((e.target as HTMLElement)?.isContentEditable) return
+      e.preventDefault()
+      searchInputRef.current?.focus()
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [])
+
+  /* ---- Filtering logic ------------------------------------------- */
+  const filteredNavItems = React.useMemo(() => {
+    const query = search.trim().toLowerCase()
+    if (!query) return navItems
+
+    return navItems
+      .map((group) => {
+        const filteredItems = group.items
+          .map((item) => {
+            const itemMatches = item.label.toLowerCase().includes(query)
+            const matchingChildren = item.children?.filter((child) =>
+              child.label.toLowerCase().includes(query),
+            )
+
+            // Keep the item if its own label matches or any child matches
+            if (itemMatches) return item
+            if (matchingChildren && matchingChildren.length > 0) {
+              return { ...item, children: matchingChildren }
+            }
+            return null
+          })
+          .filter(Boolean) as NavItem[]
+
+        if (filteredItems.length === 0) return null
+        return { ...group, items: filteredItems }
+      })
+      .filter(Boolean) as NavGroup[]
+  }, [navItems, search])
 
   const isActive = (href: string, exact?: boolean) =>
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
 
   const isExpanded = (item: NavItem) => {
     if (!item.children) return false
+    // When filtering, auto-expand all matching groups
+    if (search.trim()) return true
     // Manual toggle takes priority
     if (manualToggle[item.href] !== undefined) return manualToggle[item.href]
     // Auto-expand when a child or the parent is active
@@ -65,10 +114,24 @@ const PortalSidebar = ({
     <aside
       className={cn(
         'w-[220px] shrink-0 bg-card border-r border-border sticky top-12 h-[calc(100vh-48px)] overflow-y-auto py-3 hidden lg:block',
+        '[&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-transparent',
         className,
       )}
     >
-      {navItems.map((group) => (
+      {/* Search / filter input */}
+      <div className="mx-2.5 mb-1.5 relative">
+        <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-[13px] h-[13px] text-muted-foreground pointer-events-none" />
+        <input
+          ref={searchInputRef}
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Filter..."
+          className="w-full rounded-sm bg-muted border border-transparent pl-7 pr-2 py-1 text-[11px] font-sans text-foreground placeholder:text-muted-foreground outline-none transition-colors duration-150 focus:border-primary focus:bg-card focus:ring-2 focus:ring-primary/10"
+        />
+      </div>
+
+      {filteredNavItems.map((group) => (
         <div key={group.label} className="first:mt-0 mt-4">
           <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-muted-foreground px-4 py-2 select-none">
             {group.label}

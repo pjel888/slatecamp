@@ -42,7 +42,7 @@ const DatabaseStatusPage = async () => {
 
       {/* Header */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Database
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
@@ -52,7 +52,7 @@ const DatabaseStatusPage = async () => {
 
       {/* Connection Pool */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           Connection Pool
         </p>
         <Card size="sm">
@@ -92,7 +92,7 @@ const DatabaseStatusPage = async () => {
 
       {/* Table Row Counts */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           Table Row Counts
         </p>
         <div className="rounded-md border border-border overflow-hidden">
@@ -134,7 +134,7 @@ const DatabaseStatusPage = async () => {
 
       {/* Recent Migrations */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
           Recent Migrations
         </p>
         <Card size="sm" className="divide-y divide-border">
@@ -147,7 +147,7 @@ const DatabaseStatusPage = async () => {
                 <span className="text-xs font-[family-name:var(--font-dm-mono)] text-foreground">
                   {migration.name}
                 </span>
-                <span className="text-[10px] text-muted-foreground">
+                <span className="text-[11px] text-muted-foreground">
                   {timeAgo(migration.timestamp)}
                 </span>
               </div>

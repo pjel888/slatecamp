@@ -35,7 +35,7 @@ export const DevBadge = ({
 }: DevBadgeProps) => (
   <span
     className={cn(
-      'inline-flex items-center font-[family-name:var(--font-dm-mono)] text-[9px] font-medium px-1.5 py-0.5 rounded-full',
+      'inline-flex items-center font-[family-name:var(--font-dm-mono)] text-[11px] font-medium px-1.5 py-0.5 rounded-full',
       variantStyles[variant][status],
       className,
     )}

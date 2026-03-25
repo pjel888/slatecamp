@@ -39,7 +39,7 @@ export default function DevToolsPage() {
   return (
     <div className="max-w-4xl space-y-6">
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Engineering
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">

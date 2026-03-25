@@ -88,7 +88,7 @@ export const AnswerOptionPreview = () => (
         A.
       </span>
       <span className="text-[13px]">1.00 meter</span>
-      <span className="ml-auto text-[10px] text-muted-foreground italic">
+      <span className="ml-auto text-[11px] text-muted-foreground italic">
         default
       </span>
     </div>
@@ -102,7 +102,7 @@ export const AnswerOptionPreview = () => (
         B.
       </span>
       <span className="text-[13px]">1.10 meters</span>
-      <span className="ml-auto text-[10px] text-primary italic">selected</span>
+      <span className="ml-auto text-[11px] text-primary italic">selected</span>
     </div>
 
     {/* Correct state */}
@@ -114,7 +114,7 @@ export const AnswerOptionPreview = () => (
         C.
       </span>
       <span className="text-[13px]">1.20 meters</span>
-      <span className="ml-auto text-[10px] text-emerald-600 italic">
+      <span className="ml-auto text-[11px] text-emerald-600 italic">
         correct
       </span>
     </div>
@@ -152,7 +152,7 @@ export const RationalePanelPreview = () => (
 
       {/* Citations */}
       <div className="space-y-1.5">
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
           Citations
         </p>
         <div className="flex flex-wrap gap-1.5">

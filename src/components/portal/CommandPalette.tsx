@@ -187,15 +187,15 @@ const CommandPalette = ({ pages }: CommandPaletteProps) => {
       {/* Keyboard hints footer */}
       <div className="flex items-center justify-center gap-3 border-t border-border px-3 py-2">
         <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
-          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">↑↓</kbd>
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[11px]">↑↓</kbd>
           Navigate
         </span>
         <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
-          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">↵</kbd>
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[11px]">↵</kbd>
           Select
         </span>
         <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
-          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[10px]">Esc</kbd>
+          <kbd className="inline-flex h-4 items-center rounded border border-border bg-muted px-1 font-[family-name:var(--font-dm-mono)] text-[11px]">Esc</kbd>
           Close
         </span>
       </div>

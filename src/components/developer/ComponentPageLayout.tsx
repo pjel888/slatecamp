@@ -58,7 +58,7 @@ export const ComponentPageLayout = ({
     <div className="max-w-4xl">
       {/* Header */}
       <div className="mb-5">
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           {domain}
         </p>
         <div className="flex items-center gap-2 mb-1">
@@ -81,7 +81,7 @@ export const ComponentPageLayout = ({
             </code>
             <CopyButton text={`import { ${title} } from '${importPath}'`} />
           </div>
-          <p className="font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground/60">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground/60">
             {filePath}
           </p>
         </div>
@@ -133,7 +133,7 @@ export const ComponentPageLayout = ({
 
       {/* Footer */}
       {lastUpdated && (
-        <p className="mt-6 font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">
+        <p className="mt-6 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
           Last updated: {new Date(lastUpdated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
       )}

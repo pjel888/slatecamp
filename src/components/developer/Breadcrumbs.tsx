@@ -51,7 +51,7 @@ export const Breadcrumbs = () => {
       {crumbs.map((crumb, i) => (
         <span key={crumb.href} className="flex items-center gap-1.5">
           {i > 0 && (
-            <span className="text-[9px] text-border select-none">/</span>
+            <span className="text-[11px] text-border select-none">/</span>
           )}
           {crumb.isLast ? (
             <span className="text-[11px] font-medium text-foreground">

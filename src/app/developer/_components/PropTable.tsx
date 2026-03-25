@@ -18,16 +18,16 @@ export const PropTable = ({ props, className }: PropTableProps) => (
     <table className="w-full border-collapse">
       <thead>
         <tr className="border-b border-border bg-muted">
-          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
+          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
             Prop
           </th>
-          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
+          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
             Type
           </th>
-          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
+          <th className="px-2.5 py-1.5 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
             Default
           </th>
-          <th className="px-2.5 py-1.5 text-center font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
+          <th className="px-2.5 py-1.5 text-center font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
             Req
           </th>
         </tr>
@@ -38,13 +38,13 @@ export const PropTable = ({ props, className }: PropTableProps) => (
             <td className="px-2.5 py-1.5 font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-primary">
               {prop.name}
             </td>
-            <td className="px-2.5 py-1.5 font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">
+            <td className="px-2.5 py-1.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
               {prop.type}
             </td>
-            <td className="px-2.5 py-1.5 font-[family-name:var(--font-dm-mono)] text-[10px] text-muted-foreground">
+            <td className="px-2.5 py-1.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
               {prop.default ?? '—'}
             </td>
-            <td className="px-2.5 py-1.5 text-center text-[10px]">
+            <td className="px-2.5 py-1.5 text-center text-[11px]">
               {prop.required ? (
                 <span className="text-emerald-500">●</span>
               ) : (

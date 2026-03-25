@@ -38,7 +38,7 @@ const config = {
 } as const
 
 const sizeConfig = {
-  sm: { text: 'text-[10px]', icon: 'w-3 h-3', dot: 'w-1.5 h-1.5', px: 'px-1.5 py-0.5', gap: 'gap-1' },
+  sm: { text: 'text-[11px]', icon: 'w-3 h-3', dot: 'w-1.5 h-1.5', px: 'px-1.5 py-0.5', gap: 'gap-1' },
   md: { text: 'text-[11px]', icon: 'w-3.5 h-3.5', dot: 'w-2 h-2', px: 'px-2 py-1', gap: 'gap-1.5' },
 } as const
 

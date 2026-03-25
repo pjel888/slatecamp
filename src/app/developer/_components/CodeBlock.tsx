@@ -25,7 +25,7 @@ export const CodeBlock = ({
       {/* Header */}
       {(language || filename) && (
         <div className="flex items-center justify-between px-3 py-1.5 border-b border-zinc-800 bg-white/[0.02]">
-          <span className="font-[family-name:var(--font-dm-mono)] text-[9px] text-white/35 uppercase tracking-[0.06em]">
+          <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-white/35 uppercase tracking-[0.06em]">
             {filename || language}
           </span>
           <CopyButton text={code} />

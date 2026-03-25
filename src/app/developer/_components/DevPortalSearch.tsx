@@ -76,7 +76,7 @@ export const DevPortalSearch = () => {
       >
         <Search className="w-3.5 h-3.5 text-white/30 shrink-0" />
         <span className="text-white/25 text-xs flex-1 text-left">Search components...</span>
-        <kbd className="font-[family-name:var(--font-dm-mono)] text-[9px] text-white/25 border border-white/10 px-1 py-px rounded">
+        <kbd className="font-[family-name:var(--font-dm-mono)] text-[11px] text-white/25 border border-white/10 px-1 py-px rounded">
           ⌘K
         </kbd>
       </button>

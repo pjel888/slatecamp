@@ -9,6 +9,9 @@ import {
   Wrench,
   Monitor,
   FlaskConical,
+  BookOpen,
+  Boxes,
+  ScrollText,
 } from 'lucide-react'
 import { PortalLayout } from '@/components/portal'
 import { Badge } from '@/components/ui/badge'
@@ -94,6 +97,13 @@ const devNavItems: NavGroup[] = [
     ],
   },
   {
+    label: 'Documentation',
+    items: [
+      { href: '/developer/api-reference', label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" /> },
+      { href: '/developer/architecture', label: 'Architecture', icon: <Boxes className="w-3.5 h-3.5" /> },
+    ],
+  },
+  {
     label: 'Status',
     items: [
       { href: '/developer/status', label: 'Overview', icon: <Activity className="w-3.5 h-3.5" /> },
@@ -107,6 +117,7 @@ const devNavItems: NavGroup[] = [
       { href: '/developer/tools', label: 'Dev Tools', icon: <Wrench className="w-3.5 h-3.5" /> },
       { href: '/developer/tools/console', label: 'Console', icon: <Monitor className="w-3.5 h-3.5" /> },
       { href: '/developer/tools/db', label: 'Database Browser', icon: <Database className="w-3.5 h-3.5" /> },
+      { href: '/developer/tools/logs', label: 'Audit Logs', icon: <ScrollText className="w-3.5 h-3.5" /> },
       { href: '/developer/tools/test-data', label: 'Test Data', icon: <FlaskConical className="w-3.5 h-3.5" /> },
     ],
   },

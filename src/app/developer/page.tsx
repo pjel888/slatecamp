@@ -83,7 +83,7 @@ const techStack = [
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {
   const isOperational = status === 'operational'
   return (
-    <span className="inline-flex items-center gap-1.5 text-[10px] font-medium">
+    <span className="inline-flex items-center gap-1.5 text-[11px] font-medium">
       <span
         className={`w-1.5 h-1.5 rounded-full ${isOperational ? 'bg-emerald-500' : 'bg-amber-500'}`}
       />
@@ -99,7 +99,7 @@ const DeveloperPortalPage = () => {
     <div className="max-w-5xl space-y-8">
       {/* Hero */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Internal Docs & Tools
         </p>
         <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
@@ -140,7 +140,7 @@ const DeveloperPortalPage = () => {
             ))}
           </div>
           <span className="h-3 w-px bg-border" />
-          <span className="text-[10px] text-muted-foreground font-[family-name:var(--font-dm-mono)]">
+          <span className="text-[11px] text-muted-foreground font-[family-name:var(--font-dm-mono)]">
             Last checked: 3s ago
           </span>
         </div>
@@ -148,7 +148,7 @@ const DeveloperPortalPage = () => {
 
       {/* Quick Actions */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
           Quick Actions
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -167,7 +167,7 @@ const DeveloperPortalPage = () => {
 
       {/* Platform Metrics */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
           Platform Metrics
         </p>
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
@@ -184,7 +184,7 @@ const DeveloperPortalPage = () => {
 
       {/* Tech Stack */}
       <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-2">
           Tech Stack
         </p>
         <div className="rounded-xs border border-border overflow-hidden">

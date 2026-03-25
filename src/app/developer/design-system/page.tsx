@@ -38,7 +38,7 @@ const DesignSystemPage = () => {
   return (
     <div className="max-w-4xl">
       {/* Header */}
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
         Component Library
       </p>
       <h1 className="font-[family-name:var(--font-display)] font-extrabold text-2xl text-foreground tracking-tight mb-1">
@@ -60,7 +60,7 @@ const DesignSystemPage = () => {
               <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-150">
                 {d.label}
               </span>
-              <span className="inline-flex items-center justify-center h-5 min-w-5 px-1.5 rounded-full bg-muted font-[family-name:var(--font-dm-mono)] text-[10px] font-medium text-muted-foreground">
+              <span className="inline-flex items-center justify-center h-5 min-w-5 px-1.5 rounded-full bg-muted font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground">
                 {d.count}
               </span>
             </div>

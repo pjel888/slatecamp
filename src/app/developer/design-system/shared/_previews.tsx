@@ -27,7 +27,7 @@ export const ButtonPreview = () => (
   <div className="w-full space-y-6">
     {/* Variants */}
     <div className="space-y-2">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         Variants
       </p>
       <div className="flex flex-wrap items-center gap-3">
@@ -48,7 +48,7 @@ export const ButtonPreview = () => (
 
     {/* Sizes */}
     <div className="space-y-2">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         Sizes
       </p>
       <div className="flex flex-wrap items-end gap-3">
@@ -69,7 +69,7 @@ export const ButtonPreview = () => (
 
     {/* States */}
     <div className="space-y-2">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         States
       </p>
       <div className="flex flex-wrap items-center gap-3">
@@ -107,7 +107,7 @@ export const BadgePreview = () => (
   <div className="w-full space-y-6">
     {/* Standard badges */}
     <div className="space-y-2">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         Variants (sm)
       </p>
       <div className="flex flex-wrap items-center gap-2">
@@ -128,7 +128,7 @@ export const BadgePreview = () => (
 
     {/* Pill badges */}
     <div className="space-y-2">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
         Pill Variant
       </p>
       <div className="flex flex-wrap items-center gap-2">

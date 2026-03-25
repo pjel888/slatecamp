@@ -191,7 +191,7 @@ const migrations = [
 /* ------------------------------------------------------------------ */
 
 const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="font-[family-name:var(--font-dm-mono)] text-[9px] font-medium text-muted-foreground uppercase tracking-[0.12em] mb-1">
+  <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.12em] mb-1">
     {children}
   </p>
 )
@@ -202,7 +202,7 @@ const TableHeader = ({ cols }: { cols: string[] }) => (
       {cols.map((col) => (
         <th
           key={col}
-          className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[9px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
+          className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
         >
           {col}
         </th>
@@ -388,13 +388,13 @@ export default function ArchitecturePage() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-border">
-                      <th className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[9px] font-medium text-muted-foreground uppercase tracking-[0.1em]">
+                      <th className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]">
                         Permission
                       </th>
                       {['super_admin', 'content_admin', 'sme_reviewer'].map((role) => (
                         <th
                           key={role}
-                          className="px-3 py-2 text-center font-[family-name:var(--font-dm-mono)] text-[9px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
+                          className="px-3 py-2 text-center font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
                         >
                           {role}
                         </th>
@@ -484,9 +484,9 @@ export default function ArchitecturePage() {
               <p className="text-[11px] font-medium text-foreground mb-1">IRT Mandate</p>
               <p className="text-[11px] text-muted-foreground">
                 All mastery calculations use the Item Response Theory (IRT) 2-parameter logistic model.
-                Parameters: <code className="font-[family-name:var(--font-dm-mono)] text-[10px]">theta</code> (student ability),{' '}
-                <code className="font-[family-name:var(--font-dm-mono)] text-[10px]">discrimination</code>,{' '}
-                <code className="font-[family-name:var(--font-dm-mono)] text-[10px]">difficulty</code>.
+                Parameters: <code className="font-[family-name:var(--font-dm-mono)] text-[11px]">theta</code> (student ability),{' '}
+                <code className="font-[family-name:var(--font-dm-mono)] text-[11px]">discrimination</code>,{' '}
+                <code className="font-[family-name:var(--font-dm-mono)] text-[11px]">difficulty</code>.
                 Mastery weight updates use EMA (Exponential Moving Average).
               </p>
             </CardContent>
