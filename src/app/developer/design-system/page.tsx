@@ -10,6 +10,10 @@ import {
 
 const DOMAIN_DESCRIPTIONS: Record<string, string> = {
   wiki: 'Article rendering, navigation, and taxonomy components for the knowledge base.',
+  'content-blocks':
+    'Pedagogical MDX blocks embedded in wiki articles — quizzes, formulas, callouts, and more.',
+  widgets:
+    'Interactive per-law visualizers and calculators for architecture exam content.',
   questions:
     'Quiz presentation, answer selection, rationale display, and session management.',
   'testing-path':
@@ -18,7 +22,7 @@ const DOMAIN_DESCRIPTIONS: Record<string, string> = {
     'Foundational UI primitives used across every domain — buttons, cards, badges, and more.',
 }
 
-const DOMAIN_ORDER = ['wiki', 'questions', 'testing-path', 'shared'] as const
+const DOMAIN_ORDER = ['wiki', 'content-blocks', 'widgets', 'questions', 'testing-path', 'shared'] as const
 
 const DesignSystemPage = () => {
   const domains = DOMAIN_ORDER.map((key) => {
