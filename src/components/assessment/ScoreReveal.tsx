@@ -4,9 +4,11 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { AnimatedScore } from './AnimatedScore'
 import { getScoreColorHex } from '@/components/shared/score-display'
+import { ZoneContextCard } from '@/components/score/ZoneContextCard'
+import type { ScoreZone } from '@/components/score/ZoneContextCard'
 import type { AssessmentSubjectScore, TrailRecommendation } from '@/types/app'
 
-// ─── Types ──────────────────────────────────────────────────────────────────
+// ─── Types ───────────────────────────────────────────────────────────────────
 
 interface ScoreRevealProps {
   score: number
@@ -15,37 +17,32 @@ interface ScoreRevealProps {
   isRetaker?: boolean
 }
 
-// ─── Zone Colors (UX Strategy Section 4) ─────────────────────────────────
+// ─── Zone helpers ─────────────────────────────────────────────────────────────
 
-const getZoneColor = (score: number): string => {
-  if (score < 40) return getScoreColorHex(score).main  // neutral muted — never red for low scores
-  if (score < 70) return '#E8853A'                     // Camp Orange
-  if (score < 85) return '#1B7A3C'                     // Signal Green (UX Strategy --green)
-  return '#1B3FC4'                                     // Cobalt Blue
+const getZone = (score: number): ScoreZone => {
+  if (score >= 85) return 'strong'
+  if (score >= 70) return 'green'
+  if (score >= 40) return 'amber'
+  return 'needs-review'
 }
 
-// ─── Score Messages (Exact Copy from UX Strategy Section 4) ──────────────
-
-const getScoreMessage = (score: number): string => {
-  if (score < 40) return `${score}%. The map shows where to start. Most people find this more motivating than discouraging once they see the trail.`
-  if (score < 55) return `${score}%. Solid foundation, clear gaps. The Trail will focus on exactly what moves the needle.`
-  if (score < 70) return `${score}%. More than halfway there. The gaps are specific — the Trail is targeted.`
-  if (score < 85) return `${score}%. Strong foundation. Focused refinement and the Proof Run are the path from here.`
-  return `${score}%. Strong — now we make sure it holds under exam conditions.`
+// Zone-colored ring — matches score-display getScoreColorHex palette but zone-aware
+const getZoneRingColor = (score: number): string => {
+  if (score >= 85) return '#1B3FC4'           // Camp Cobalt — strong
+  if (score >= 70) return '#1B7A3C'           // Signal Green — solid
+  if (score >= 40) return '#E8853A'           // Camp Orange — building
+  return getScoreColorHex(score).main         // Muted neutral — NEVER red for low scores
 }
 
-const getRetakerMessage = (score: number): string =>
-  `${score}%. Your score tells us something specific about last time — the Trail is built around those specifics.`
-
-// ─── Subject Bar Color ───────────────────────────────────────────────────
+// ─── Subject Bar Color ────────────────────────────────────────────────────────
 
 const getBarColor = (accuracy: number): string => {
-  if (accuracy < 40) return getScoreColorHex(accuracy).main  // neutral muted — never red for low scores
+  if (accuracy < 40) return getScoreColorHex(accuracy).main
   if (accuracy < 70) return '#D4951A'
   return '#1B7A3C'
 }
 
-// ─── Component ───────────────────────────────────────────────────────────
+// ─── Component ────────────────────────────────────────────────────────────────
 
 const ScoreReveal = ({
   score,
@@ -54,8 +51,8 @@ const ScoreReveal = ({
   isRetaker = false,
 }: ScoreRevealProps) => {
   const [showSecondary, setShowSecondary] = useState(false)
-  const zoneColor = getZoneColor(score)
-  const message = isRetaker ? getRetakerMessage(score) : getScoreMessage(score)
+  const zone = getZone(score)
+  const ringColor = getZoneRingColor(score)
   const sortedScores = [...subjectScores].sort((a, b) => a.accuracy - b.accuracy)
 
   // Secondary CTA appears after 3 seconds (UX Strategy spec)
@@ -64,29 +61,36 @@ const ScoreReveal = ({
     return () => clearTimeout(timer)
   }, [])
 
+  const trailHref = recommendation
+    ? `/dashboard/camptrails/${recommendation.trail.slug}`
+    : '/dashboard/camptrails'
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto"
       style={{ backgroundColor: '#F5F5F5' }}
     >
       <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
-        {/* DM Mono eyebrow — 11px, uppercase */}
+        {/* Layer 2: Eyebrow — DM Mono 11px uppercase */}
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-text-tertiary">
           Your Readiness Score
         </p>
 
-        {/* Animated Score — 80px, Syne 800, zone-colored, 700ms ease-out */}
+        {/* Layer 2: Animated score — 80px, zone-colored ring, 700ms ease-out */}
         <div className="mt-6">
-          <AnimatedScore target={score} color={zoneColor} />
+          <AnimatedScore target={score} color={ringColor} />
         </div>
 
-        {/* Interpretation — Inter 17px, #4A5568, max-width 480px */}
-        <p className="mx-auto mt-6 max-w-[480px] text-[17px] leading-relaxed text-text-secondary">
-          {message}
-        </p>
+        {/* Layer 3: Zone context card — appears immediately after score animates */}
+        <div className="mx-auto mt-6 max-w-[480px]">
+          <ZoneContextCard
+            zone={zone}
+            topicCount={subjectScores.length > 0 ? subjectScores.length : undefined}
+          />
+        </div>
 
-        {/* Blurred Heatmap — shape visible, color not. CSS filter: blur(8px) */}
-        <div className="relative mx-auto mt-10 overflow-hidden rounded-md border border-border bg-white p-6">
+        {/* Blurred heatmap preview — shape visible, color not */}
+        <div className="relative mx-auto mt-8 overflow-hidden rounded-md border border-border bg-white p-6">
           <div
             className="pointer-events-none select-none"
             style={{ filter: 'blur(8px)' }}
@@ -109,7 +113,7 @@ const ScoreReveal = ({
                     }),
                   )
                 : Array.from({ length: 35 }).map((_, i) => {
-                    const palette = ['#2D9F6F', '#D4951A', '#D64545', '#EEF2FC', '#2D9F6F', '#D4951A']
+                    const palette = ['#2D9F6F', '#D4951A', '#4A5568', '#EEF2FC', '#2D9F6F', '#D4951A']
                     return (
                       <div
                         key={i}
@@ -122,21 +126,20 @@ const ScoreReveal = ({
           </div>
         </div>
 
-        {/* Primary CTA — Cobalt Blue, full-width */}
-        <div className="mt-10 flex flex-col items-center gap-3">
+        {/* CTAs */}
+        <div className="mt-8 flex flex-col items-center gap-3">
+          {/* Primary CTA — Camp Orange, full-width */}
           <Link
-            href={
-              recommendation
-                ? `/dashboard/camptrails/${recommendation.trail.slug}`
-                : '/dashboard/camptrails'
-            }
-            className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
-            style={{ backgroundColor: '#1B3FC4' }}
+            href={trailHref}
+            className="inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out"
+            style={{ backgroundColor: '#E8853A' }}
+            onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#d4752f' }}
+            onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = '#E8853A' }}
           >
-            Start My Camp Trail
+            See Your Trail
           </Link>
 
-          {/* Secondary CTA — delayed 3 seconds, muted (UX Strategy) */}
+          {/* Secondary CTA — delayed 3 seconds, muted */}
           <div
             className="transition-opacity duration-300 ease-out"
             style={{ opacity: showSecondary ? 1 : 0 }}
@@ -145,10 +148,7 @@ const ScoreReveal = ({
               href="/dashboard/upgrade"
               className="inline-flex items-center gap-1.5 text-sm text-text-secondary transition-colors duration-150 ease-out hover:text-camp-cobalt"
             >
-              See Full Map
-              <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary">
-                (Pro)
-              </span>
+              View Full Map
               <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>

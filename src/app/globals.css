@@ -647,6 +647,16 @@ time,
   background: #8896A7;
 }
 
+/* ── Accessibility: 44px minimum touch targets on coarse-pointer devices ── */
+@media (pointer: coarse) {
+  button,
+  [role="button"],
+  a[href] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
 /* ── Navigation feedback: tactile press + pending dim ── */
 
 /* Tactile press on interactive elements — instant physical click feel */
