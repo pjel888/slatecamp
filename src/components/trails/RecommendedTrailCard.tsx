@@ -42,15 +42,15 @@ export const RecommendedTrailCard = ({
   const subjectCount = trail.subjects_covered?.length ?? 0
 
   const ctaClasses = [
-    'inline-block rounded-md bg-white px-5 py-2.5 text-sm font-bold text-[camp-cobalt]',
+    'inline-block rounded-md bg-white px-5 py-2.5 text-sm font-bold text-camp-cobalt',
     'transition-all duration-150 ease-out text-center',
     'hover:bg-white/90 active:bg-white/80 active:scale-[0.98]',
-    'focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-[camp-cobalt] outline-none',
+    'focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-camp-cobalt outline-none',
     'disabled:opacity-60 disabled:pointer-events-none',
   ].join(' ')
 
   return (
-    <div className="relative rounded-lg bg-[camp-cobalt] p-6 text-white overflow-hidden">
+    <div className="relative rounded-lg bg-camp-cobalt p-6 text-white overflow-hidden">
       {/* Subtle gradient overlay */}
       <div
         className="pointer-events-none absolute inset-0"

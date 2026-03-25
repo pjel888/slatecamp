@@ -76,6 +76,9 @@ export const createTestingSession = async (
     .maybeSingle()
 
   const disciplineId = stats?.current_discipline_id ?? null
+  if (!disciplineId) {
+    throw new Error('No discipline selected. Please choose a discipline in Settings before starting a session.')
+  }
   const dbTestMode = SOURCE_TO_DB_MODE[config.source] ?? 'camp'
   const questionCount = config.questionCount ?? 20
 

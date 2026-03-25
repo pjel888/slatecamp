@@ -89,7 +89,7 @@ export const RequestChangesDialog = ({
         </div>
 
         {error && (
-          <p className="text-[11px] text-[destructive] bg-[#FDF0F0] border border-[destructive]/20 rounded-sm px-3 py-2">
+          <p className="text-[11px] text-destructive bg-[#FDF0F0] border border-destructive/20 rounded-sm px-3 py-2">
             {error}
           </p>
         )}

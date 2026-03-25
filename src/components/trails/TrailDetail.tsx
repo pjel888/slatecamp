@@ -7,11 +7,11 @@ import { enrollInTrail } from '@/lib/actions/trails'
 import type { CampTrail, TrailDay, TrailEnrollment } from '@/types/app'
 
 const INTENSITY_COLORS: Record<string, { bg: string; text: string }> = {
-  intensive: { bg: 'bg-[#FDF0F0]', text: 'text-[destructive]' },
-  accelerated: { bg: 'bg-[#FEF8ED]', text: 'text-[warning]' },
-  standard: { bg: 'bg-[#EEF2FC]', text: 'text-[camp-cobalt]' },
-  comprehensive: { bg: 'bg-[#EDFAF4]', text: 'text-[emerald]' },
-  undergraduate: { bg: 'bg-[#EDFAF4]', text: 'text-[emerald]' },
+  intensive: { bg: 'bg-[#FDF0F0]', text: 'text-destructive' },
+  accelerated: { bg: 'bg-[#FEF8ED]', text: 'text-warning' },
+  standard: { bg: 'bg-[#EEF2FC]', text: 'text-camp-cobalt' },
+  comprehensive: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
+  undergraduate: { bg: 'bg-[#EDFAF4]', text: 'text-emerald' },
 }
 
 const groupDaysByWeek = (days: TrailDay[]): Record<number, TrailDay[]> => {
@@ -38,7 +38,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
   const totalSteps = days.reduce((sum, d) => sum + (d.steps?.length ?? 0), 0)
 
   const intensityColors = trail.intensity
-    ? INTENSITY_COLORS[trail.intensity] ?? { bg: 'bg-[#EEF2FC]', text: 'text-[camp-cobalt]' }
+    ? INTENSITY_COLORS[trail.intensity] ?? { bg: 'bg-[#EEF2FC]', text: 'text-camp-cobalt' }
     : null
 
   const toggleWeek = (week: number) => {
@@ -64,16 +64,16 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
     <div className="flex flex-col gap-5">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold text-[text-primary] mb-2">{trail.name}</h1>
+        <h1 className="text-2xl font-bold text-text-primary mb-2">{trail.name}</h1>
         {trail.description && (
-          <p className="text-sm text-[text-secondary] leading-relaxed">{trail.description}</p>
+          <p className="text-sm text-text-secondary leading-relaxed">{trail.description}</p>
         )}
       </div>
 
       {/* Stats row */}
       <div className="flex flex-wrap items-center gap-4">
-        <div className="flex items-center gap-1.5 text-sm text-[text-secondary]">
-          <Clock size={16} className="text-[text-tertiary]" />
+        <div className="flex items-center gap-1.5 text-sm text-text-secondary">
+          <Clock size={16} className="text-text-tertiary" />
           <span>{trail.duration_days} days</span>
         </div>
         {intensityColors && (
@@ -82,42 +82,42 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
             {trail.intensity!.charAt(0).toUpperCase() + trail.intensity!.slice(1)}
           </span>
         )}
-        <div className="flex items-center gap-1.5 text-sm text-[text-secondary]">
-          <ListChecks size={16} className="text-[text-tertiary]" />
+        <div className="flex items-center gap-1.5 text-sm text-text-secondary">
+          <ListChecks size={16} className="text-text-tertiary" />
           <span>{totalSteps} steps</span>
         </div>
       </div>
 
       {/* CTA */}
-      <div className="rounded-md border border-[border] bg-white p-4">
+      <div className="rounded-md border border-border bg-white p-4">
         {enrollment ? (
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-[text-primary]">
+              <p className="text-sm font-medium text-text-primary">
                 Day {enrollment.current_day} of {trail.duration_days}
               </p>
-              <p className="text-xs text-[text-secondary]">
+              <p className="text-xs text-text-secondary">
                 {enrollment.days_completed} days completed
               </p>
             </div>
             <button
               type="button"
               onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-              className="px-4 py-2 rounded-sm bg-[camp-cobalt] text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
             >
               Continue Trail &rarr;
             </button>
           </div>
         ) : (
           <div className="flex items-center justify-between">
-            <p className="text-sm text-[text-secondary]">
+            <p className="text-sm text-text-secondary">
               Ready to start? This trail takes {trail.duration_days} days to complete.
             </p>
             <button
               type="button"
               onClick={handleEnroll}
               disabled={isPending}
-              className="px-4 py-2 rounded-sm bg-[camp-cobalt] text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+              className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
             >
               {isPending ? 'Starting...' : 'Start This Trail \u2192'}
             </button>
@@ -127,7 +127,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
 
       {/* Week-by-week preview */}
       <div className="flex flex-col gap-2">
-        <h2 className="text-sm font-semibold text-[text-secondary] uppercase tracking-wide">
+        <h2 className="text-sm font-semibold text-text-secondary uppercase tracking-wide">
           Weekly Breakdown
         </h2>
         {Object.entries(weekGroups).map(([weekStr, weekDays]) => {
@@ -141,7 +141,7 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
           return (
             <div
               key={week}
-              className="rounded-md border border-[border] bg-white overflow-hidden"
+              className="rounded-md border border-border bg-white overflow-hidden"
             >
               <button
                 type="button"
@@ -150,32 +150,32 @@ export const TrailDetail = ({ trail, days, enrollment }: TrailDetailProps) => {
               >
                 <div className="flex items-center gap-2">
                   {isExpanded ? (
-                    <CaretDown size={14} className="text-[text-tertiary]" />
+                    <CaretDown size={14} className="text-text-tertiary" />
                   ) : (
-                    <CaretRight size={14} className="text-[text-tertiary]" />
+                    <CaretRight size={14} className="text-text-tertiary" />
                   )}
-                  <span className="text-sm font-medium text-[text-primary]">
+                  <span className="text-sm font-medium text-text-primary">
                     Week {week}
                   </span>
-                  <span className="text-xs text-[text-tertiary]">
+                  <span className="text-xs text-text-tertiary">
                     {weekDays.length} days, {weekStepCount} steps
                   </span>
                 </div>
               </button>
               {isExpanded && (
-                <div className="border-t border-[border] px-4 py-2">
+                <div className="border-t border-border px-4 py-2">
                   {weekDays.map((day) => (
                     <div
                       key={day.day_id}
                       className="flex items-center justify-between py-1.5"
                     >
                       <div className="flex items-center gap-2">
-                        <span className="text-xs font-medium text-[text-tertiary] w-12">
+                        <span className="text-xs font-medium text-text-tertiary w-12">
                           Day {day.day_number}
                         </span>
-                        <span className="text-sm text-[text-primary]">{day.title}</span>
+                        <span className="text-sm text-text-primary">{day.title}</span>
                       </div>
-                      <span className="text-xs text-[text-tertiary]">
+                      <span className="text-xs text-text-tertiary">
                         {day.steps?.length ?? 0} steps
                       </span>
                     </div>

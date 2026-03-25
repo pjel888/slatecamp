@@ -142,12 +142,12 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
         {currentNote ? (
           <div className="flex h-full flex-col">
             {/* Editor header */}
-            <div className="shrink-0 border-b border-[border]/50 px-8 pt-6 pb-3">
+            <div className="shrink-0 border-b border-border/50 px-8 pt-6 pb-3">
               <div className="mx-auto max-w-3xl">
                 <div className="mb-2 flex items-center justify-between">
                   {/* Context anchors */}
                   <ContextBadge anchor={anchor} />
-                  <span className={cn('text-[11px] text-[text-tertiary]', isSaving && 'animate-pulse')}>
+                  <span className={cn('text-[11px] text-text-tertiary', isSaving && 'animate-pulse')}>
                     {isSaving ? 'Saving...' : new Date(currentNote.updated_at).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
                   </span>
                 </div>
@@ -157,7 +157,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                   value={pendingTitle ?? currentNote.title}
                   onChange={(e) => setPendingTitle(e.target.value)}
                   placeholder="Untitled Note"
-                  className="w-full border-none bg-transparent p-0 text-xl font-bold text-[text-primary] placeholder:text-[border] focus:outline-none focus:ring-0"
+                  className="w-full border-none bg-transparent p-0 text-xl font-bold text-text-primary placeholder:text-border focus:outline-none focus:ring-0"
                 />
               </div>
             </div>
@@ -179,10 +179,10 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
         ) : (
           <div className="flex h-full flex-col items-center justify-center gap-3 text-center px-8">
             <SCIcon icon={Notepad} size="2xl" weight="duotone" className="text-primary opacity-20 mb-1" />
-            <p className="text-base font-medium text-[text-primary]">
+            <p className="text-base font-medium text-text-primary">
               Your workspace is ready
             </p>
-            <p className="text-sm text-[text-tertiary] mt-0.5 max-w-[280px]">
+            <p className="text-sm text-text-tertiary mt-0.5 max-w-[280px]">
               Select a note from the list, or create a new one to start capturing ideas.
             </p>
           </div>

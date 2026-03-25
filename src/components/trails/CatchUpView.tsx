@@ -35,7 +35,7 @@ export const CatchUpView = ({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent size="md">
         <DialogHeader>
-          <DialogTitle className="text-lg font-semibold text-[text-primary]">
+          <DialogTitle className="text-lg font-semibold text-text-primary">
             While you were away
           </DialogTitle>
         </DialogHeader>
@@ -54,7 +54,7 @@ export const CatchUpView = ({
               return (
                 <div
                   key={day.day_id}
-                  className="flex items-start gap-3 rounded-md border border-[border] bg-white p-3"
+                  className="flex items-start gap-3 rounded-md border border-border bg-white p-3"
                 >
                   {/* Subject color indicator */}
                   <div
@@ -64,25 +64,25 @@ export const CatchUpView = ({
 
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="font-mono text-[11px] text-[text-tertiary]">
+                      <span className="font-mono text-[11px] text-text-tertiary">
                         Day {day.day_number}
                       </span>
                       {day.subject_focus && (
-                        <span className="text-[11px] text-[text-tertiary]">
+                        <span className="text-[11px] text-text-tertiary">
                           &middot; {day.subject_focus}
                         </span>
                       )}
                     </div>
-                    <p className="text-sm font-medium text-[text-primary] mt-0.5">
+                    <p className="text-sm font-medium text-text-primary mt-0.5">
                       {day.title}
                     </p>
                     <div className="flex items-center gap-3 mt-1">
-                      <span className="flex items-center gap-1 text-xs text-[text-secondary]">
-                        <ListChecks size={12} className="text-[text-tertiary]" />
+                      <span className="flex items-center gap-1 text-xs text-text-secondary">
+                        <ListChecks size={12} className="text-text-tertiary" />
                         {stepCount} steps
                       </span>
-                      <span className="flex items-center gap-1 text-xs text-[text-secondary]">
-                        <Clock size={12} className="text-[text-tertiary]" />
+                      <span className="flex items-center gap-1 text-xs text-text-secondary">
+                        <Clock size={12} className="text-text-tertiary" />
                         ~{day.estimated_minutes} min
                       </span>
                     </div>
@@ -98,14 +98,14 @@ export const CatchUpView = ({
           <button
             type="button"
             onClick={onCatchUp}
-            className="rounded-sm border border-[border] bg-transparent px-4 py-2 text-sm font-medium text-[text-secondary] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+            className="rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
           >
             Catch up on missed days
           </button>
           <button
             type="button"
             onClick={onSkip}
-            className="rounded-sm bg-[camp-cobalt] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
           >
             Pick up where I left off
           </button>

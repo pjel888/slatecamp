@@ -14,7 +14,7 @@ export function PacingInsights({ data }: Props) {
       <RichInfoPopover title="Latency Analytics" description="Subjects where your average response time significantly exceeds the 2-minute exam standard." />
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider text-zinc-500 uppercase flex items-center gap-1">
-          <SCIcon icon={Timer} size="xs" className="text-[warning]" /> Pacing Leaks
+          <SCIcon icon={Timer} size="xs" className="text-warning" /> Pacing Leaks
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
@@ -32,7 +32,7 @@ export function PacingInsights({ data }: Props) {
                     <div className="flex items-center gap-1">
                       <span className={cn(
                         'text-[11px] font-bold px-1.5 py-0.5 rounded-full',
-                        isHigh ? 'bg-[#FDF0F0] text-[destructive]' : 'bg-[#FEF8ED] text-[warning]'
+                        isHigh ? 'bg-[#FDF0F0] text-destructive' : 'bg-[#FEF8ED] text-warning'
                       )}>
                         {item.ratio}x
                       </span>
@@ -41,7 +41,7 @@ export function PacingInsights({ data }: Props) {
                   </div>
                   <div className="h-1 bg-zinc-100 rounded-full overflow-hidden">
                     <div
-                      className={cn('h-full rounded-full', isHigh ? 'bg-[destructive]' : 'bg-[warning]')}
+                      className={cn('h-full rounded-full', isHigh ? 'bg-destructive' : 'bg-warning')}
                       style={{ width: `${Math.min(item.ratio / 3, 1) * 100}%` }}
                     />
                   </div>
@@ -51,8 +51,8 @@ export function PacingInsights({ data }: Props) {
             })}
             {data[0]?.ratio > 1.5 && (
               <div className="flex items-start gap-1.5 bg-[#FEF8ED] rounded-md px-2 py-1.5 mt-1">
-                <SCIcon icon={Warning} size="xs" className="text-[warning] mt-0.5 shrink-0" />
-                <p className="text-[11px] text-[warning] leading-snug">
+                <SCIcon icon={Warning} size="xs" className="text-warning mt-0.5 shrink-0" />
+                <p className="text-[11px] text-warning leading-snug">
                   Extra time here isn&apos;t improving accuracy. Try flagging and moving on.
                 </p>
               </div>

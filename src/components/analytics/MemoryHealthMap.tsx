@@ -7,10 +7,10 @@ import type { MemoryHealthItem } from '@/lib/actions/analytics'
 interface Props { data: MemoryHealthItem[] }
 
 const STATUS_STYLES: Record<MemoryHealthItem['status'], string> = {
-  strong:       'bg-[#EDFAF4] text-[emerald] border-[emerald]/20',
-  review:       'bg-[#FEF8ED] text-[warning] border-[warning]/20',
-  fading:       'bg-[#FEF8ED] text-[warning] border-[warning]/20',
-  critical:     'bg-[#FDF0F0] text-[destructive] border-[destructive]/20',
+  strong:       'bg-[#EDFAF4] text-emerald border-emerald/20',
+  review:       'bg-[#FEF8ED] text-warning border-warning/20',
+  fading:       'bg-[#FEF8ED] text-warning border-warning/20',
+  critical:     'bg-[#FDF0F0] text-destructive border-destructive/20',
 }
 
 const STATUS_ORDER = { critical: 0, fading: 1, review: 2, strong: 3 }
@@ -49,7 +49,7 @@ export function MemoryHealthMap({ data }: Props) {
               ))}
             </div>
             {needsAttention > 0 && (
-              <div className="mt-2 text-[11px] text-[destructive] font-medium">
+              <div className="mt-2 text-[11px] text-destructive font-medium">
                 {critical > 0
                   ? `${critical} topic${critical > 1 ? 's' : ''} critically faded — knowledge is slipping away.`
                   : `${needsAttention} topic${needsAttention > 1 ? 's' : ''} ready for a quick refresh.`}

@@ -30,12 +30,12 @@ export const ComparisonTable = () => {
 
   return (
     <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
-      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[camp-cobalt] mb-2">Interactive — 2024 vs 2013 Comparison</div>
+      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — 2024 vs 2013 Comparison</div>
       <p className="text-[13px] text-[#444] mb-3.5">Click any row to see what changed and why it matters for the ALE.</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-[12px]">
           <thead>
-            <tr className="bg-[camp-cobalt]">
+            <tr className="bg-camp-cobalt">
               <th className="px-2.5 py-2 text-left text-white font-semibold">Element</th>
               <th className="px-2.5 py-2 text-center text-white font-semibold">2013 IRR</th>
               <th className="px-2.5 py-2 text-center text-[#F5A623] font-semibold">2024 IRR ★</th>
@@ -49,7 +49,7 @@ export const ComparisonTable = () => {
                 <tr
                   key={i}
                   onClick={() => setActiveRow(activeRow === i ? null : i)}
-                  className="border-b border-[#e8e6e0] cursor-pointer hover:bg-[camp-cobalt]/[0.04] transition-colors duration-150"
+                  className="border-b border-[#e8e6e0] cursor-pointer hover:bg-camp-cobalt/[0.04] transition-colors duration-150"
                   style={{ background: activeRow === i ? '#eef1fb' : undefined }}
                 >
                   <td className="px-2.5 py-2 font-medium text-[#222]">{d.elem}</td>
@@ -65,8 +65,8 @@ export const ComparisonTable = () => {
         </table>
       </div>
       {activeRow !== null && (
-        <div className="mt-3.5 p-3 px-4 bg-white border-[1.5px] border-[camp-cobalt] rounded-md text-[13px] text-[#222]">
-          <strong className="text-[camp-cobalt]">{DATA[activeRow].elem}</strong>
+        <div className="mt-3.5 p-3 px-4 bg-white border-[1.5px] border-camp-cobalt rounded-md text-[13px] text-[#222]">
+          <strong className="text-camp-cobalt">{DATA[activeRow].elem}</strong>
           {' — '}
           <span className="font-dm-mono text-[11px] text-[#888]">{DATA[activeRow].src}</span>
           <br /><br />

@@ -98,12 +98,12 @@ export const SMEReviewQueue = () => {
       <div className="space-y-4">
         {/* Error banner */}
         {error && (
-          <div className="p-3 rounded-md bg-[#FDF0F0] border border-[destructive]/30 text-sm text-[destructive] flex items-center justify-between">
+          <div className="p-3 rounded-md bg-[#FDF0F0] border border-destructive/30 text-sm text-destructive flex items-center justify-between">
             <span>{error}</span>
             <button
               type="button"
               onClick={() => setError(null)}
-              className="text-[destructive] hover:opacity-70 text-xs ml-3"
+              className="text-destructive hover:opacity-70 text-xs ml-3"
               aria-label="Dismiss error"
             >
               ✕
@@ -157,7 +157,7 @@ export const SMEReviewQueue = () => {
                             href={`/dashboard/wiki/${item.slug}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-[11px] text-[camp-cobalt] hover:underline shrink-0"
+                            className="inline-flex items-center gap-1 text-[11px] text-camp-cobalt hover:underline shrink-0"
                             aria-label={`Preview ${item.title} in a new tab`}
                           >
                             Preview Article

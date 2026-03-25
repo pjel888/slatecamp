@@ -15,12 +15,12 @@ interface StreakRibbonProps {
 }
 
 const DOT_STATES = {
-  completed: 'bg-[emerald]',
-  today_done: 'bg-[camp-cobalt]',
-  today_pending: 'border-2 border-[camp-cobalt] bg-transparent',
-  at_risk: 'border-2 border-[warning] bg-transparent',
-  future: 'border border-[border] bg-transparent',
-  missed: 'bg-[border]',
+  completed: 'bg-emerald',
+  today_done: 'bg-camp-cobalt',
+  today_pending: 'border-2 border-camp-cobalt bg-transparent',
+  at_risk: 'border-2 border-warning bg-transparent',
+  future: 'border border-border bg-transparent',
+  missed: 'bg-border',
 }
 
 export const StreakRibbon = ({
@@ -78,7 +78,7 @@ export const StreakRibbon = ({
       </span>
       {/* Grace Day indicator — visible when streak is at risk */}
       {streakStatus === 'at_risk' && graceDaysRemaining !== undefined && graceDaysRemaining > 0 && (
-        <span className="text-[11px] text-[text-tertiary]">
+        <span className="text-[11px] text-text-tertiary">
           &middot; {graceDaysRemaining} grace {graceDaysRemaining === 1 ? 'day' : 'days'} left this week
         </span>
       )}

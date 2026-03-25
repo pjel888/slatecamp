@@ -60,7 +60,7 @@ export const HeroSection = ({
               >
                 <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-3 w-3' />
-                  <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-[camp-cobalt]'>
+                  <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-camp-cobalt'>
                     Board exam preparation platform.
                   </span>
                 </div>
@@ -74,7 +74,7 @@ export const HeroSection = ({
             <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-[camp-cobalt] px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[camp-cobalt] focus-visible:ring-offset-2'
+                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
               >
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
@@ -92,7 +92,7 @@ export const HeroSection = ({
                 className='flex items-center gap-2 text-[12px] text-[#9CA3AF]'
               >
                 <span
-                  className='h-1 w-1 rounded-full bg-[camp-cobalt]'
+                  className='h-1 w-1 rounded-full bg-camp-cobalt'
                   aria-hidden='true'
                 />
                 {stat}

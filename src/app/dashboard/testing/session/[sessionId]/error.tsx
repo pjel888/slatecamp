@@ -15,15 +15,15 @@ const SessionError = ({
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#F5F7FA] px-6 text-center">
       <div className="max-w-sm space-y-4">
-        <h2 className="text-lg font-semibold text-[text-primary]">Session Error</h2>
-        <p className="text-sm text-[text-secondary]">
+        <h2 className="text-lg font-semibold text-text-primary">Session Error</h2>
+        <p className="text-sm text-text-secondary">
           {error.message || 'Something went wrong loading this session.'}
         </p>
         <div className="flex items-center justify-center gap-3 pt-2">
           <button
             type="button"
             onClick={reset}
-            className="h-9 px-5 rounded-sm border border-[border] text-[text-secondary] text-[11px] font-black uppercase tracking-widest hover:bg-[#EEF2FC]/50 transition-colors"
+            className="h-9 px-5 rounded-sm border border-border text-text-secondary text-[11px] font-black uppercase tracking-widest hover:bg-[#EEF2FC]/50 transition-colors"
           >
             Try Again
           </button>

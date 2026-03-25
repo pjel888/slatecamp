@@ -22,7 +22,7 @@ export const ErrorTaxonomyPrompt = ({ selectedTags, onChange }: ErrorTaxonomyPro
 
   return (
     <div className="space-y-2 pt-1">
-      <span className="text-[12px] font-semibold text-[text-tertiary] uppercase tracking-widest">
+      <span className="text-[12px] font-semibold text-text-tertiary uppercase tracking-widest">
         What happened?
       </span>
       <div className="flex flex-wrap gap-1.5">
@@ -38,8 +38,8 @@ export const ErrorTaxonomyPrompt = ({ selectedTags, onChange }: ErrorTaxonomyPro
               className={cn(
                 'px-3 py-1.5 rounded-full text-[12px] font-medium border transition-colors duration-150',
                 isActive
-                  ? 'bg-[#EEF2FC] border-[camp-cobalt] text-[camp-cobalt]'
-                  : 'bg-white border-[border] text-[text-secondary] hover:border-[camp-cobalt]/30 hover:bg-[#EEF2FC]/30',
+                  ? 'bg-[#EEF2FC] border-camp-cobalt text-camp-cobalt'
+                  : 'bg-white border-border text-text-secondary hover:border-camp-cobalt/30 hover:bg-[#EEF2FC]/30',
               )}
             >
               {ERROR_TAG_LABELS[tag]}
@@ -47,7 +47,7 @@ export const ErrorTaxonomyPrompt = ({ selectedTags, onChange }: ErrorTaxonomyPro
           )
         })}
       </div>
-      <p className="text-[11px] text-[text-tertiary]">
+      <p className="text-[11px] text-text-tertiary">
         Optional — helps us understand where to focus
       </p>
     </div>

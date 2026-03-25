@@ -127,7 +127,7 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
         </section>
 
         {error && (
-          <p className="text-sm text-[destructive] text-center" role="alert">
+          <p className="text-sm text-destructive text-center" role="alert">
             {error}
           </p>
         )}

@@ -37,8 +37,8 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
       'flex items-center gap-2.5 rounded-md transition-colors duration-100 w-full text-left text-[13px]',
       collapsed ? 'justify-center px-0 py-2' : 'px-3 py-2',
       active
-        ? 'bg-[#EEF2FC] text-[camp-cobalt] font-medium'
-        : 'text-[text-secondary] hover:bg-[#EEF2FC]/60 hover:text-[camp-cobalt]',
+        ? 'bg-[#EEF2FC] text-camp-cobalt font-medium'
+        : 'text-text-secondary hover:bg-[#EEF2FC]/60 hover:text-camp-cobalt',
     )
 
   const handleCreateFolder = async () => {
@@ -56,7 +56,7 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
 
   return (
     <nav className={cn(
-      'flex h-full shrink-0 flex-col overflow-y-auto border-r border-[border] bg-white transition-all duration-200 ease-out',
+      'flex h-full shrink-0 flex-col overflow-y-auto border-r border-border bg-white transition-all duration-200 ease-out',
       collapsed ? 'w-12' : 'w-[220px]',
     )}>
       {/* Collapse toggle — identical to NotesList */}
@@ -128,7 +128,7 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
               onChange={(e) => setNewFolderName(e.target.value)}
               onKeyDown={(e) => e.key === 'Escape' && setAddingFolder(false)}
               placeholder="Folder name..."
-              className="flex-1 rounded border border-[border] bg-white px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-[camp-cobalt]/20 focus:border-[camp-cobalt]"
+              className="flex-1 rounded border border-border bg-white px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt"
             />
             <Button
               type="submit"

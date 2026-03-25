@@ -46,32 +46,32 @@ export function OptionButton({
 
         // Default
         state === 'default' && [
-          'bg-white border-border text-[text-primary]',
+          'bg-white border-border text-text-primary',
           'hover:border-primary/20 hover:bg-[#EEF2FC]/50',
           'cursor-pointer',
         ],
 
         // Selected (pre-check) — calm cobalt tint, not full fill
         state === 'selected' && [
-          'bg-[#EEF2FC] border-primary text-[text-primary]',
+          'bg-[#EEF2FC] border-primary text-text-primary',
           'cursor-pointer',
         ],
 
         // Struck through (pre-check)
         state === 'struck' && [
-          'bg-white border-border text-[text-tertiary] opacity-50',
+          'bg-white border-border text-text-tertiary opacity-50',
           'cursor-pointer hover:opacity-60',
         ],
 
         // Post-check: correct answer
         state === 'correct' && [
-          'bg-[#EDFAF4] border-[emerald] text-[text-primary]',
-          'cursor-default ring-2 ring-[emerald]/30 shadow-[0_0_12px_rgba(45,159,111,0.15)]',
+          'bg-[#EDFAF4] border-emerald text-text-primary',
+          'cursor-default ring-2 ring-emerald/30 shadow-[0_0_12px_rgba(45,159,111,0.15)]',
         ],
 
         // Post-check: selected + wrong
         state === 'wrong' && [
-          'bg-[#FDF0F0] border-[destructive]/50 text-[text-primary]',
+          'bg-[#FDF0F0] border-destructive/50 text-text-primary',
           'cursor-default opacity-80',
         ],
 
@@ -97,11 +97,11 @@ export function OptionButton({
         aria-hidden
         className={cn(
           'shrink-0 w-7 h-7 rounded-sm flex items-center justify-center text-[11px] font-black border transition-colors',
-          state === 'default'  && 'bg-zinc-50 border-border text-[text-tertiary]',
+          state === 'default'  && 'bg-zinc-50 border-border text-text-tertiary',
           state === 'selected' && 'bg-primary/10 border-primary/30 text-primary',
-          state === 'struck'   && 'bg-zinc-50 border-border text-[text-tertiary]',
-          state === 'correct'  && 'bg-[emerald] border-[emerald] text-white',
-          state === 'wrong'    && 'bg-[destructive] border-[destructive] text-white',
+          state === 'struck'   && 'bg-zinc-50 border-border text-text-tertiary',
+          state === 'correct'  && 'bg-emerald border-emerald text-white',
+          state === 'wrong'    && 'bg-destructive border-destructive text-white',
           state === 'faded'    && 'bg-zinc-50 border-zinc-100 text-zinc-200',
         )}
       >
@@ -124,7 +124,7 @@ export function OptionButton({
             'shrink-0 p-1.5 rounded-sm transition-colors',
             state === 'selected'
               ? 'text-primary/40 hover:text-primary hover:bg-primary/10'
-              : 'text-[text-tertiary] hover:text-[text-secondary] hover:bg-[#EEF2FC]/50',
+              : 'text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC]/50',
           )}
         >
           <SCIcon icon={Backspace} size="sm" />
@@ -138,17 +138,17 @@ export function OptionButton({
           onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); e.stopPropagation(); onStrike(e) } }}
           aria-label="Restore this option"
           title="Restore this option"
-          className="shrink-0 p-1.5 rounded-sm text-[text-tertiary] hover:text-[text-secondary] hover:bg-[#EEF2FC]/50 transition-colors"
+          className="shrink-0 p-1.5 rounded-sm text-text-tertiary hover:text-text-secondary hover:bg-[#EEF2FC]/50 transition-colors"
         >
           <SCIcon icon={Backspace} size="sm" />
         </span>
       )}
 
       {state === 'correct' && (
-        <SCIcon icon={CheckCircle} size="sm" className="shrink-0 text-[emerald]" />
+        <SCIcon icon={CheckCircle} size="sm" className="shrink-0 text-emerald" />
       )}
       {state === 'wrong' && (
-        <SCIcon icon={XCircle} size="sm" className="shrink-0 text-[destructive]" />
+        <SCIcon icon={XCircle} size="sm" className="shrink-0 text-destructive" />
       )}
     </button>
   )

@@ -168,7 +168,7 @@ export const ContentSearchClient = () => {
       />
 
       {searchError && (
-        <p className="text-sm text-[destructive]">{searchError}</p>
+        <p className="text-sm text-destructive">{searchError}</p>
       )}
 
       {!hasSearched && !searchError && (

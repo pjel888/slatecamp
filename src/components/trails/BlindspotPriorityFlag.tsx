@@ -18,14 +18,14 @@ const BlindspotPriorityFlag = ({ flaggedNodeCount }: BlindspotPriorityFlagProps)
   }
 
   return (
-    <div className="rounded-md border border-[destructive] bg-[#FDF0F0] p-3">
+    <div className="rounded-md border border-destructive bg-[#FDF0F0] p-3">
       <div className="flex items-center gap-1.5">
-        <WarningCircle size={14} weight="bold" className="shrink-0 text-[destructive]" />
-        <span className="font-mono text-[11px] font-semibold text-[destructive]">
+        <WarningCircle size={14} weight="bold" className="shrink-0 text-destructive" />
+        <span className="font-mono text-[11px] font-semibold text-destructive">
           PRIORITY FLAG
         </span>
       </div>
-      <p className="mt-1.5 text-xs text-[text-secondary]">
+      <p className="mt-1.5 text-xs text-text-secondary">
         Focus Review identified this topic as a critical gap. This step matters more than usual today.
       </p>
     </div>

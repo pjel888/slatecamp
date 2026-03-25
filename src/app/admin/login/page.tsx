@@ -36,20 +36,20 @@ export default function AdminLandingPage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#F8F7F5] px-6">
       <div className="w-full max-w-[400px] space-y-8">
         <div className="text-center">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-[text-primary]">
-            SLATECAMP <span className="text-[text-tertiary]">ADMIN</span>
+          <Link href="/" className="text-xl font-bold tracking-tighter text-text-primary">
+            SLATECAMP <span className="text-text-tertiary">ADMIN</span>
           </Link>
-          <h1 className="mt-6 text-xl font-semibold text-[text-primary]">Staff Portal</h1>
-          <p className="mt-2 text-sm text-[text-secondary]">Authorized personnel only.</p>
+          <h1 className="mt-6 text-xl font-semibold text-text-primary">Staff Portal</h1>
+          <p className="mt-2 text-sm text-text-secondary">Authorized personnel only.</p>
         </div>
 
-        <div className="rounded-md border border-[border] bg-white p-8 shadow-sm">
+        <div className="rounded-md border border-border bg-white p-8 shadow-sm">
           <SignInWithGoogleButton
             onClick={handleAdminLogin}
             disabled={loading}
             isLoading={loading}
           />
-          {error && <p className="mt-4 text-center text-xs text-[destructive]">{error}</p>}
+          {error && <p className="mt-4 text-center text-xs text-destructive">{error}</p>}
         </div>
 
         <Eyebrow className="block text-center">Secure Environment</Eyebrow>

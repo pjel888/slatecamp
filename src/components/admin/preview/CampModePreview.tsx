@@ -34,31 +34,31 @@ export const CampModePreview = ({
   const getOptionStyle = (idx: number) => {
     if (!isChecked) {
       return selected === idx
-        ? 'bg-[#EEF2FC] border-[camp-cobalt] text-[text-primary] cursor-pointer'
-        : 'bg-white border-[border] text-[text-primary] hover:border-[camp-cobalt] cursor-pointer'
+        ? 'bg-[#EEF2FC] border-camp-cobalt text-text-primary cursor-pointer'
+        : 'bg-white border-border text-text-primary hover:border-camp-cobalt cursor-pointer'
     }
     if (idx === correctAnswer) {
-      return 'bg-[#EDFAF4] border-[emerald] text-[text-primary] cursor-default ring-2 ring-[emerald]/30'
+      return 'bg-[#EDFAF4] border-emerald text-text-primary cursor-default ring-2 ring-emerald/30'
     }
     if (idx === selected && idx !== correctAnswer) {
-      return 'bg-[#FDF0F0] border-[destructive]/50 text-[text-primary] cursor-default opacity-80'
+      return 'bg-[#FDF0F0] border-destructive/50 text-text-primary cursor-default opacity-80'
     }
-    return 'bg-white border-[border] text-[border] opacity-40 cursor-default'
+    return 'bg-white border-border text-border opacity-40 cursor-default'
   }
 
   const getLetterBadgeStyle = (idx: number) => {
     if (!isChecked) {
       return selected === idx
-        ? 'bg-primary/10 border-primary/30 text-[camp-cobalt]'
-        : 'bg-[#F8F7F5] border-[border] text-[text-tertiary]'
+        ? 'bg-primary/10 border-primary/30 text-camp-cobalt'
+        : 'bg-[#F8F7F5] border-border text-text-tertiary'
     }
-    if (idx === correctAnswer) return 'bg-[emerald] border-[emerald] text-white'
-    if (idx === selected && idx !== correctAnswer) return 'bg-[destructive] border-[destructive] text-white'
-    return 'bg-[#F8F7F5] border-[border] text-[border]'
+    if (idx === correctAnswer) return 'bg-emerald border-emerald text-white'
+    if (idx === selected && idx !== correctAnswer) return 'bg-destructive border-destructive text-white'
+    return 'bg-[#F8F7F5] border-border text-border'
   }
 
   return (
-    <div className="rounded-md border border-[border] bg-white overflow-hidden text-sm">
+    <div className="rounded-md border border-border bg-white overflow-hidden text-sm">
       {/* STUDENT VIEW watermark */}
       <div className="flex items-center justify-between border-b border-amber-200 bg-[#FFF8EB]">
         <StudentViewWatermark label="Student View — Camp Mode" />
@@ -76,17 +76,17 @@ export const CampModePreview = ({
       {/* Progress bar stub */}
       <div className="px-4 pt-3 pb-1">
         <div className="flex items-center justify-between mb-1">
-          <span className="text-[11px] text-[text-tertiary]">Question 7 of 20</span>
+          <span className="text-[11px] text-text-tertiary">Question 7 of 20</span>
         </div>
-        <div className="h-1.5 w-full rounded-full bg-[border] overflow-hidden">
-          <div className="h-full rounded-full bg-[camp-cobalt]" style={{ width: '35%' }} />
+        <div className="h-1.5 w-full rounded-full bg-border overflow-hidden">
+          <div className="h-full rounded-full bg-camp-cobalt" style={{ width: '35%' }} />
         </div>
       </div>
 
       {/* Question stem */}
       <div className="px-4 pt-4 pb-3">
-        <p className="text-base font-medium text-[text-primary] leading-[1.65]">
-          {stem || <span className="text-[text-tertiary] italic">Question stem will appear here…</span>}
+        <p className="text-base font-medium text-text-primary leading-[1.65]">
+          {stem || <span className="text-text-tertiary italic">Question stem will appear here…</span>}
         </p>
       </div>
 
@@ -113,7 +113,7 @@ export const CampModePreview = ({
               {LABELS[idx]}
             </div>
             <span className="text-[15px] font-medium leading-snug flex-1">
-              {option || <span className="italic text-[text-tertiary]">Option {LABELS[idx]}…</span>}
+              {option || <span className="italic text-text-tertiary">Option {LABELS[idx]}…</span>}
             </span>
           </button>
         ))}
@@ -123,13 +123,13 @@ export const CampModePreview = ({
       {isChecked && (
         <div className="px-4 pb-4">
           <div className="rounded-md border bg-[#EEF2FC] p-4 space-y-2">
-            <Eyebrow className="font-black text-[camp-cobalt]">Rationale</Eyebrow>
-            <p className="text-sm text-[text-secondary] leading-[1.65]">
-              {rationale || <span className="italic text-[text-tertiary]">Rationale will appear here…</span>}
+            <Eyebrow className="font-black text-camp-cobalt">Rationale</Eyebrow>
+            <p className="text-sm text-text-secondary leading-[1.65]">
+              {rationale || <span className="italic text-text-tertiary">Rationale will appear here…</span>}
             </p>
             {codeCitation && (
               <div className="pt-1">
-                <span className="font-mono text-[11px] px-2 py-0.5 rounded-sm bg-[#F5F5F5] border border-[border] text-[text-secondary]">
+                <span className="font-mono text-[11px] px-2 py-0.5 rounded-sm bg-[#F5F5F5] border border-border text-text-secondary">
                   {codeCitation}
                 </span>
               </div>
@@ -145,7 +145,7 @@ export const CampModePreview = ({
             type="button"
             disabled={selected === null}
             onClick={() => selected !== null && setSelected(selected)}
-            className="w-full h-9 rounded-sm bg-[camp-cobalt] text-white text-[11px] font-black uppercase tracking-[0.15em] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 hover:bg-[#1535A8]"
+            className="w-full h-9 rounded-sm bg-camp-cobalt text-white text-[11px] font-black uppercase tracking-[0.15em] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 hover:bg-[#1535A8]"
           >
             Check Answer
           </button>

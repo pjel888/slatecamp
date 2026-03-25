@@ -57,35 +57,35 @@ const TrailDetailPage = async ({
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
         <Link
           href="/dashboard/camptrails"
-          className="flex items-center gap-1.5 text-sm text-[text-secondary] hover:text-[text-primary] transition-colors duration-150 w-fit"
+          className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors duration-150 w-fit"
         >
           <ArrowLeft size={14} />
           Back to Trails
         </Link>
 
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-[text-tertiary] mb-1">
+          <p className="font-mono text-[11px] uppercase tracking-wide text-text-tertiary mb-1">
             {trail.trail_type.replace('_', ' ')}
           </p>
-          <h1 className="text-2xl font-bold text-[text-primary] mb-2">{trail.name}</h1>
+          <h1 className="text-2xl font-bold text-text-primary mb-2">{trail.name}</h1>
           {trail.description && (
-            <p className="text-sm text-[text-secondary] leading-relaxed">{trail.description}</p>
+            <p className="text-sm text-text-secondary leading-relaxed">{trail.description}</p>
           )}
         </div>
 
-        <div className="flex flex-wrap items-center gap-4 text-sm text-[text-secondary]">
+        <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
           <span className="flex items-center gap-1.5">
-            <Clock size={16} className="text-[text-tertiary]" />
+            <Clock size={16} className="text-text-tertiary" />
             {trail.duration_days} days · ~{Math.round(trail.daily_time_estimate_minutes / 60 * 10) / 10} hrs/day
           </span>
           {trail.intensity && (
             <span className="flex items-center gap-1.5">
-              <Fire size={16} className="text-[text-tertiary]" />
+              <Fire size={16} className="text-text-tertiary" />
               {INTENSITY_LABELS[trail.intensity] ?? trail.intensity}
             </span>
           )}
           <span className="flex items-center gap-1.5">
-            <ListChecks size={16} className="text-[text-tertiary]" />
+            <ListChecks size={16} className="text-text-tertiary" />
             {totalSteps} activities
           </span>
         </div>
@@ -93,11 +93,11 @@ const TrailDetailPage = async ({
         <TrailDetailEnroll trail={trail} enrollment={enrollment} />
 
         {rationale && (
-          <p className="text-sm italic text-[text-secondary]">{rationale}</p>
+          <p className="text-sm italic text-text-secondary">{rationale}</p>
         )}
 
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-[text-tertiary] mb-3">
+          <p className="font-mono text-[11px] uppercase tracking-wide text-text-tertiary mb-3">
             Trail Overview
           </p>
           <TrailPhaseMap
@@ -108,7 +108,7 @@ const TrailDetailPage = async ({
         </div>
 
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-[text-tertiary] mb-3">
+          <p className="font-mono text-[11px] uppercase tracking-wide text-text-tertiary mb-3">
             Week-by-Week Preview
           </p>
           <div className="flex flex-col gap-2">
@@ -118,29 +118,29 @@ const TrailDetailPage = async ({
               const subjectFocuses = [...new Set(weekDays.map((d) => d.subject_focus).filter(Boolean))]
 
               return (
-                <details key={week} className="group rounded-md border border-[border] bg-white overflow-hidden" open={week === 1}>
+                <details key={week} className="group rounded-md border border-border bg-white overflow-hidden" open={week === 1}>
                   <summary className="flex items-center justify-between w-full px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:bg-[#F8F7F5] list-none">
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-medium text-[text-primary]">Week {week}</span>
+                      <span className="text-sm font-medium text-text-primary">Week {week}</span>
                       {subjectFocuses.length > 0 && (
-                        <span className="text-xs text-[text-tertiary]">{subjectFocuses.join(', ')}</span>
+                        <span className="text-xs text-text-tertiary">{subjectFocuses.join(', ')}</span>
                       )}
                     </div>
-                    <span className="text-xs text-[text-tertiary]">
+                    <span className="text-xs text-text-tertiary">
                       {weekDays.length} days · {weekStepCount} activities
                     </span>
                   </summary>
-                  <div className="border-t border-[border] px-4 py-2">
+                  <div className="border-t border-border px-4 py-2">
                     {weekDays.map((day) => (
                       <div key={day.day_id} className="flex items-center justify-between py-1.5">
                         <div className="flex items-center gap-2">
-                          <span className="font-mono text-[11px] text-[text-tertiary] w-12">Day {day.day_number}</span>
-                          <span className="text-sm text-[text-primary]">{day.title}</span>
+                          <span className="font-mono text-[11px] text-text-tertiary w-12">Day {day.day_number}</span>
+                          <span className="text-sm text-text-primary">{day.title}</span>
                           {day.is_rest_day && (
-                            <span className="text-[11px] text-[text-tertiary] bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">Rest</span>
+                            <span className="text-[11px] text-text-tertiary bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">Rest</span>
                           )}
                         </div>
-                        <span className="text-xs text-[text-tertiary]">
+                        <span className="text-xs text-text-tertiary">
                           {day.is_rest_day ? '—' : `${day.steps?.length ?? 0} steps · ~${day.estimated_minutes}m`}
                         </span>
                       </div>

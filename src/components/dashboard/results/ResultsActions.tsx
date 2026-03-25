@@ -22,17 +22,17 @@ export const RetryWrongAnswers = ({
   wrongQuestionIds: string[]
   onRetryWrongAnswers: (questionIds: string[]) => void
 }) => (
-  <div className='mb-10 p-5 bg-[#EEF2FC] border border-[camp-cobalt]/20 rounded-md'>
+  <div className='mb-10 p-5 bg-[#EEF2FC] border border-camp-cobalt/20 rounded-md'>
     <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4'>
       <div className='flex items-start gap-3'>
-        <div className='w-10 h-10 rounded-md bg-white border border-[camp-cobalt]/10 flex items-center justify-center shrink-0'>
+        <div className='w-10 h-10 rounded-md bg-white border border-camp-cobalt/10 flex items-center justify-center shrink-0'>
           <SCIcon icon={ArrowCounterClockwise} size='md' className='text-primary' />
         </div>
         <div>
-          <h3 className='text-sm font-semibold text-[text-primary]'>
+          <h3 className='text-sm font-semibold text-text-primary'>
             Retry missed questions
           </h3>
-          <p className='text-sm text-[text-secondary] mt-0.5'>
+          <p className='text-sm text-text-secondary mt-0.5'>
             {wrongQuestionIds.length} question{wrongQuestionIds.length !== 1 ? 's' : ''} to revisit.
             Retrieval practice on missed items produces the strongest memory consolidation.
           </p>
@@ -50,11 +50,11 @@ export const RetryWrongAnswers = ({
 )
 
 export const ResultsActions = ({ onExit, onRestart }: { onExit: () => void; onRestart: () => void }) => (
-  <div className='pt-8 border-t border-[border] grid grid-cols-1 md:grid-cols-2 gap-4'>
+  <div className='pt-8 border-t border-border grid grid-cols-1 md:grid-cols-2 gap-4'>
     <Button
       onClick={onExit}
       variant='outline'
-      className='h-14 rounded-sm border-[border] text-[text-secondary] hover:bg-[#F5F5F5] font-bold uppercase tracking-widest text-[11px] gap-2'
+      className='h-14 rounded-sm border-border text-text-secondary hover:bg-[#F5F5F5] font-bold uppercase tracking-widest text-[11px] gap-2'
     >
       <SCIcon icon={SquaresFour} size='sm' />
       Back to Testing Hub

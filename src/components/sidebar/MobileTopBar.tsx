@@ -31,7 +31,7 @@ export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
       <button
         onClick={onOpenDrawer}
         aria-label="Open navigation"
-        className="flex items-center justify-center rounded-md text-[text-secondary] transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-400 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]"
+        className="flex items-center justify-center rounded-md text-text-secondary transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-400 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt"
         style={{ width: 34, height: 34 }}
       >
         <List size={17} weight="regular" />
@@ -42,8 +42,8 @@ export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
         className="font-extrabold text-[13px] select-none"
         style={{ letterSpacing: '-0.3px', lineHeight: 1 }}
       >
-        <span className="text-[text-primary] dark:text-white">Slate</span>
-        <span className="text-[camp-cobalt]">Camp</span>
+        <span className="text-text-primary dark:text-white">Slate</span>
+        <span className="text-camp-cobalt">Camp</span>
       </div>
     </div>
   )

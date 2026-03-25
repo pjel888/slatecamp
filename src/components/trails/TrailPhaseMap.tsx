@@ -78,9 +78,9 @@ const DayCell = ({ day, isCompleted, isCurrent, isUpcoming }: DayCellProps) => {
         <TooltipTrigger>
           <div
             className={cn(
-              'w-7 h-7 rounded-[4px] border border-[border] bg-transparent',
+              'w-7 h-7 rounded-[4px] border border-border bg-transparent',
               'max-sm:w-[22px] max-sm:h-[22px]',
-              isCurrent && 'ring-2 ring-[camp-cobalt]',
+              isCurrent && 'ring-2 ring-camp-cobalt',
             )}
             aria-label={`Day ${day.day_number}: Rest day`}
           />
@@ -103,7 +103,7 @@ const DayCell = ({ day, isCompleted, isCurrent, isUpcoming }: DayCellProps) => {
             className={cn(
               'relative flex items-center justify-center w-7 h-7 rounded-[4px]',
               'max-sm:w-[22px] max-sm:h-[22px]',
-              isCurrent && 'ring-2 ring-[camp-cobalt]',
+              isCurrent && 'ring-2 ring-camp-cobalt',
             )}
             style={{
               backgroundColor: color,
@@ -146,7 +146,7 @@ const DayCell = ({ day, isCompleted, isCurrent, isUpcoming }: DayCellProps) => {
           className={cn(
             'w-7 h-7 rounded-[4px]',
             'max-sm:w-[22px] max-sm:h-[22px]',
-            isCurrent && 'ring-2 ring-[camp-cobalt]',
+            isCurrent && 'ring-2 ring-camp-cobalt',
           )}
           style={{
             backgroundColor: color,
@@ -233,7 +233,7 @@ export const TrailPhaseMap = ({
           {COL_HEADERS.map((label) => (
             <div
               key={label}
-              className="flex items-center justify-center font-mono text-[11px] text-[text-tertiary] select-none"
+              className="flex items-center justify-center font-mono text-[11px] text-text-tertiary select-none"
             >
               {label}
             </div>
@@ -249,11 +249,11 @@ export const TrailPhaseMap = ({
               {/* Phase boundary label */}
               {phaseName && (
                 <div className="flex items-center gap-2 py-1 mb-0.5">
-                  <div className="h-px flex-1 bg-[border]" />
-                  <span className="font-mono text-[11px] text-[text-tertiary] whitespace-nowrap select-none">
+                  <div className="h-px flex-1 bg-border" />
+                  <span className="font-mono text-[11px] text-text-tertiary whitespace-nowrap select-none">
                     {phaseName}
                   </span>
-                  <div className="h-px flex-1 bg-[border]" />
+                  <div className="h-px flex-1 bg-border" />
                 </div>
               )}
 
@@ -263,7 +263,7 @@ export const TrailPhaseMap = ({
               >
                 {/* Week label */}
                 <div className="w-10 max-sm:w-8 text-right pr-2">
-                  <span className="font-mono text-[11px] text-[text-tertiary] select-none">
+                  <span className="font-mono text-[11px] text-text-tertiary select-none">
                     Wk {weekIdx + 1}
                   </span>
                 </div>

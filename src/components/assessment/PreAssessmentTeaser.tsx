@@ -112,13 +112,13 @@ export const PreAssessmentTeaser = () => {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center px-6">
         <div className="mx-auto w-full max-w-md text-center">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[text-tertiary]">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-text-tertiary">
             Sample complete
           </p>
-          <p className="mt-4 font-[family-name:var(--font-syne)] text-3xl font-bold text-[text-primary]">
+          <p className="mt-4 font-[family-name:var(--font-syne)] text-3xl font-bold text-text-primary">
             {correctCount} of {SAMPLE_QUESTIONS.length} correct
           </p>
-          <p className="mt-3 text-sm text-[text-secondary] max-w-xs mx-auto">
+          <p className="mt-3 text-sm text-text-secondary max-w-xs mx-auto">
             That was just 5 questions across 5 subjects. The full diagnostic is 35 questions
             and gives you a complete Readiness Score.
           </p>
@@ -131,7 +131,7 @@ export const PreAssessmentTeaser = () => {
           </Link>
           <Link
             href="/"
-            className="mt-3 block text-sm text-[text-secondary] hover:text-[text-primary] transition-colors duration-150"
+            className="mt-3 block text-sm text-text-secondary hover:text-text-primary transition-colors duration-150"
           >
             Back to home
           </Link>
@@ -146,19 +146,19 @@ export const PreAssessmentTeaser = () => {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="shrink-0 bg-white border-b border-[border] px-5 py-3.5">
+      <header className="shrink-0 bg-white border-b border-border px-5 py-3.5">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
-          <span className="text-sm font-semibold text-[text-primary]">Try SlateCamp</span>
-          <span className="font-[family-name:var(--font-dm-mono)] text-xs text-[text-tertiary]">
+          <span className="text-sm font-semibold text-text-primary">Try SlateCamp</span>
+          <span className="font-[family-name:var(--font-dm-mono)] text-xs text-text-tertiary">
             {currentIndex + 1} of {SAMPLE_QUESTIONS.length}
           </span>
         </div>
       </header>
 
       {/* Progress */}
-      <div className="shrink-0 h-1 bg-[border]/40">
+      <div className="shrink-0 h-1 bg-border/40">
         <div
-          className="h-full bg-[camp-cobalt] transition-all duration-150 ease-out"
+          className="h-full bg-camp-cobalt transition-all duration-150 ease-out"
           style={{ width: `${((currentIndex + 1) / SAMPLE_QUESTIONS.length) * 100}%` }}
         />
       </div>
@@ -166,10 +166,10 @@ export const PreAssessmentTeaser = () => {
       {/* Question */}
       <main className="flex-1 flex items-center justify-center px-6 py-8">
         <div className="w-full max-w-xl">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[camp-cobalt] mb-3">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-cobalt mb-3">
             {question.subject}
           </p>
-          <h2 className="text-lg font-semibold text-[text-primary] leading-relaxed mb-6">
+          <h2 className="text-lg font-semibold text-text-primary leading-relaxed mb-6">
             {question.text}
           </h2>
 
@@ -188,12 +188,12 @@ export const PreAssessmentTeaser = () => {
                   disabled={showResult}
                   className={`w-full text-left rounded-sm border px-4 py-3 text-sm transition-colors duration-150 ${
                     showCorrect
-                      ? 'border-[emerald] bg-[#EDFAF4] text-[text-primary]'
+                      ? 'border-emerald bg-[#EDFAF4] text-text-primary'
                       : showWrong
-                        ? 'border-[destructive] bg-[#FDF0F0] text-[text-primary]'
+                        ? 'border-destructive bg-[#FDF0F0] text-text-primary'
                         : isSelected
-                          ? 'border-[camp-cobalt] bg-[#EEF2FC] text-[text-primary]'
-                          : 'border-[border] bg-white text-[text-secondary] hover:border-[camp-cobalt] hover:bg-[#EEF2FC]/50'
+                          ? 'border-camp-cobalt bg-[#EEF2FC] text-text-primary'
+                          : 'border-border bg-white text-text-secondary hover:border-camp-cobalt hover:bg-[#EEF2FC]/50'
                   }`}
                 >
                   {option.text}

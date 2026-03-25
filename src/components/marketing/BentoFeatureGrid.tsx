@@ -11,10 +11,10 @@ const QuizMockup = ({ theme = 'dark' }: { theme?: 'dark' | 'amber' }) => {
   const rowFaint = theme === 'amber' ? 'bg-black/[0.06]' : 'bg-white/[0.04]'
   const radio = theme === 'amber' ? 'border-black/40' : 'border-current opacity-70'
   const bar = theme === 'amber' ? 'bg-black/30' : 'bg-current opacity-30'
-  const correctBorder = theme === 'amber' ? 'border-[#1B7A3C]/70' : 'border-[emerald]/45'
-  const correctBg = theme === 'amber' ? 'bg-[#1B7A3C]/20' : 'bg-[emerald]/[0.18]'
-  const correctRadio = theme === 'amber' ? 'border-[#1B7A3C] bg-[#1B7A3C]' : 'border-[emerald] bg-[emerald]'
-  const correctBar = theme === 'amber' ? 'bg-[#1B7A3C] opacity-80' : 'bg-[emerald] opacity-70'
+  const correctBorder = theme === 'amber' ? 'border-[#1B7A3C]/70' : 'border-emerald/45'
+  const correctBg = theme === 'amber' ? 'bg-[#1B7A3C]/20' : 'bg-emerald/[0.18]'
+  const correctRadio = theme === 'amber' ? 'border-[#1B7A3C] bg-[#1B7A3C]' : 'border-emerald bg-emerald'
+  const correctBar = theme === 'amber' ? 'bg-[#1B7A3C] opacity-80' : 'bg-emerald opacity-70'
 
   return (
     <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
@@ -60,9 +60,9 @@ const MasteryBars = () => (
           <div
             className={`h-full rounded-[3px] ${
               s.tone === 'good'
-                ? 'bg-[emerald]'
+                ? 'bg-emerald'
                 : s.tone === 'warn'
-                  ? 'bg-[warning]'
+                  ? 'bg-warning'
                   : 'bg-[#e2e2e6]'
             }`}
             style={{ width: `${s.pct}%` }}
@@ -184,7 +184,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* ANALYTICS — Camp Cobalt + heavy noise */}
-        <div className='landing-reveal landing-delay-3 relative overflow-hidden rounded-md bg-[camp-cobalt] p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='landing-reveal landing-delay-3 relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <div className='flex items-center justify-between'>
@@ -321,7 +321,7 @@ export const BentoFeatureGrid = () => (
       </div>
 
       {/* ── Full-width Engine card — Camp Cobalt + noise ── */}
-      <div className='landing-reveal mt-[10px] relative overflow-hidden rounded-md bg-[camp-cobalt] p-7 text-white noise md:p-8'>
+      <div className='landing-reveal mt-[10px] relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise md:p-8'>
         <div className='relative z-10 grid grid-cols-1 items-center gap-7 md:grid-cols-2'>
           <div>
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#F5A623]'>

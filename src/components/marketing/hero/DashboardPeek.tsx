@@ -33,11 +33,11 @@ export const DashboardPeek = () => (
           <div className='flex gap-2'>
             {[
               'bg-[#1B7A3C]',
-              'bg-[camp-cobalt]',
-              'bg-[camp-cobalt]',
+              'bg-camp-cobalt',
+              'bg-camp-cobalt',
               'bg-[#1B7A3C]',
               'bg-[#1B7A3C]',
-              'bg-[camp-cobalt]',
+              'bg-camp-cobalt',
             ].map((colorClass, i) => (
               <div
                 key={i}

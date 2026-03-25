@@ -7,10 +7,10 @@ import type { NodeMasteryState } from '@/types/app'
 /* ------------------------------------------------------------------ */
 
 const MASTERY_DOT_COLOR: Record<NodeMasteryState['mastery_level'], string> = {
-  grey: 'bg-[border]',
-  red: 'bg-[destructive]',
-  amber: 'bg-[warning]',
-  green: 'bg-[emerald]',
+  grey: 'bg-border',
+  red: 'bg-destructive',
+  amber: 'bg-warning',
+  green: 'bg-emerald',
 }
 
 const MAX_VISIBLE_NODES = 8
@@ -41,12 +41,12 @@ export const MiniHeatmapPreview = ({
   return (
     <div className="flex flex-col gap-2">
       {/* Label */}
-      <span className="font-mono text-[11px] uppercase tracking-wider text-[text-tertiary]">
+      <span className="font-mono text-[11px] uppercase tracking-wider text-text-tertiary">
         Today&apos;s Coverage Map
       </span>
 
       {/* Subject name */}
-      <span className="text-sm font-medium text-[text-primary]">{subjectName}</span>
+      <span className="text-sm font-medium text-text-primary">{subjectName}</span>
 
       {/* Node dots */}
       <div className="flex flex-wrap items-center gap-1.5">
@@ -58,18 +58,18 @@ export const MiniHeatmapPreview = ({
           />
         ))}
         {overflowCount > 0 && (
-          <span className="text-xs text-[text-tertiary]">+{overflowCount} more</span>
+          <span className="text-xs text-text-tertiary">+{overflowCount} more</span>
         )}
       </div>
 
       {/* Summary */}
       {allMastered ? (
-        <p className="text-xs text-[text-secondary] leading-relaxed">
+        <p className="text-xs text-text-secondary leading-relaxed">
           You&apos;ve already mastered these topics. Today is consolidation
           &mdash; your score is protecting these gains.
         </p>
       ) : (
-        <p className="text-xs text-[text-secondary]">
+        <p className="text-xs text-text-secondary">
           {targetedNodes.length} nodes targeted &middot; {coveredCount} already
           covered
         </p>

@@ -46,7 +46,7 @@ export const SidebarFooter = ({
         'flex h-[30px] w-full items-center rounded-md cursor-pointer',
         'transition-colors duration-[120ms] ease-out',
         'hover:bg-gray-100 dark:hover:bg-gray-800',
-        'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]',
+        'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
       )}
     >
       {/* Avatar container: 40x30px */}
@@ -56,7 +56,7 @@ export const SidebarFooter = ({
             'h-[22px] w-[22px] rounded-full overflow-hidden',
             'flex items-center justify-center shrink-0',
             !userDisplay.avatarUrl &&
-              'bg-gradient-to-br from-[camp-cobalt] to-[#6366F1]',
+              'bg-gradient-to-br from-camp-cobalt to-[#6366F1]',
           )}
         >
           {userDisplay.avatarUrl ? (
@@ -92,7 +92,7 @@ export const SidebarFooter = ({
               className={cn(
                 'ml-1.5 inline-flex items-center',
                 'font-mono text-[7.5px] uppercase tracking-[0.04em]',
-                'bg-[camp-cobalt]/[0.07] text-[camp-cobalt]',
+                'bg-camp-cobalt/[0.07] text-camp-cobalt',
                 'dark:bg-[#4F6AE8]/10 dark:text-[#4F6AE8]',
                 'rounded-[2px] px-1',
               )}
@@ -140,7 +140,7 @@ export const SidebarFooter = ({
           'flex h-[30px] w-full items-center rounded-md',
           'transition-colors duration-[120ms] ease-out',
           'hover:bg-gray-100 dark:hover:bg-gray-800',
-          'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]',
+          'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
         )}
       >
         {/* Toggle icon container: 40x30px */}

@@ -16,10 +16,10 @@ interface EIPromptsPanelProps {
 // ─── Helpers ─────────────────────────────────────────────────
 
 const STATUS_STYLES: Record<string, string> = {
-  draft: 'bg-[#FEF8ED] text-[warning]',
-  review: 'bg-[#FEF8ED] text-[warning]',
-  published: 'bg-[#EDFAF4] text-[emerald]',
-  archived: 'bg-[#F8F7F5] text-[text-tertiary]',
+  draft: 'bg-[#FEF8ED] text-warning',
+  review: 'bg-[#FEF8ED] text-warning',
+  published: 'bg-[#EDFAF4] text-emerald',
+  archived: 'bg-[#F8F7F5] text-text-tertiary',
 }
 
 const STATUS_LABELS: Record<string, string> = {
@@ -130,20 +130,20 @@ const PromptCard = ({
 
   if (isDeleted) {
     return (
-      <div className="rounded-md border-2 border-[destructive] bg-[#FDF0F0] px-4 py-3">
+      <div className="rounded-md border-2 border-destructive bg-[#FDF0F0] px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-[destructive]">
+            <span className="text-xs font-medium text-destructive">
               Delete on next save
             </span>
-            <span className="text-xs text-[text-secondary]">
+            <span className="text-xs text-text-secondary">
               {truncate(prompt.prompt_text, 60)}
             </span>
           </div>
           <button
             type="button"
             onClick={() => onUndoDelete(prompt.prompt_id)}
-            className="rounded-sm border border-[border] bg-white px-2.5 py-1 text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:border-[text-tertiary] hover:text-[text-primary]"
+            className="rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-secondary transition-colors duration-150 ease-out hover:border-text-tertiary hover:text-text-primary"
           >
             Undo
           </button>
@@ -153,7 +153,7 @@ const PromptCard = ({
   }
 
   return (
-    <div className="rounded-md border border-[border] bg-white transition-shadow duration-150 ease-out hover:shadow-sm">
+    <div className="rounded-md border border-border bg-white transition-shadow duration-150 ease-out hover:shadow-sm">
       {/* Collapsed header */}
       <button
         type="button"
@@ -162,7 +162,7 @@ const PromptCard = ({
       >
         {/* Chevron */}
         <svg
-          className={`h-3.5 w-3.5 shrink-0 text-[text-tertiary] transition-transform duration-150 ease-out ${expanded ? 'rotate-90' : ''}`}
+          className={`h-3.5 w-3.5 shrink-0 text-text-tertiary transition-transform duration-150 ease-out ${expanded ? 'rotate-90' : ''}`}
           viewBox="0 0 16 16"
           fill="currentColor"
           aria-hidden="true"
@@ -172,8 +172,8 @@ const PromptCard = ({
 
         <div className="flex min-w-0 flex-1 items-center gap-2">
           {/* Heading reference */}
-          <span className="shrink-0 text-xs text-[text-tertiary]">After:</span>
-          <span className="shrink-0 text-xs font-medium text-[text-primary]">
+          <span className="shrink-0 text-xs text-text-tertiary">After:</span>
+          <span className="shrink-0 text-xs font-medium text-text-primary">
             &ldquo;{prompt.insert_after_heading || 'No heading'}&rdquo;
           </span>
 
@@ -186,18 +186,18 @@ const PromptCard = ({
 
           {/* Active indicator */}
           {prompt.is_active ? (
-            <span className="shrink-0 rounded-sm bg-[#EDFAF4] px-1.5 py-0.5 text-[11px] font-medium text-[emerald]">
+            <span className="shrink-0 rounded-sm bg-[#EDFAF4] px-1.5 py-0.5 text-[11px] font-medium text-emerald">
               active
             </span>
           ) : (
-            <span className="shrink-0 rounded-sm bg-[#F8F7F5] px-1.5 py-0.5 text-[11px] font-medium text-[text-tertiary]">
+            <span className="shrink-0 rounded-sm bg-[#F8F7F5] px-1.5 py-0.5 text-[11px] font-medium text-text-tertiary">
               inactive
             </span>
           )}
         </div>
 
         {/* Truncated prompt text */}
-        <span className="hidden min-w-0 truncate text-xs text-[text-secondary] md:block">
+        <span className="hidden min-w-0 truncate text-xs text-text-secondary md:block">
           {truncate(prompt.prompt_text, 100)}
         </span>
 
@@ -208,7 +208,7 @@ const PromptCard = ({
             e.stopPropagation()
             onDelete(prompt.prompt_id)
           }}
-          className="shrink-0 rounded-sm p-1 text-[text-tertiary] transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-[destructive]"
+          className="shrink-0 rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-destructive"
           aria-label="Delete prompt"
         >
           <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -224,10 +224,10 @@ const PromptCard = ({
 
       {/* Expanded fields */}
       {expanded && (
-        <div className="space-y-4 border-t border-[border] px-4 py-4">
+        <div className="space-y-4 border-t border-border px-4 py-4">
           {/* Insert after heading */}
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Insert after heading
             </label>
             <input
@@ -240,15 +240,15 @@ const PromptCard = ({
               }
               onBlur={(e) => validateHeading(e.target.value)}
               placeholder="e.g. Key Innovations"
-              className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
             {headingValidation.status === 'found' && (
-              <p className="mt-1 flex items-center gap-1 text-[11px] text-[emerald]">
+              <p className="mt-1 flex items-center gap-1 text-[11px] text-emerald">
                 <span aria-hidden="true">&#10003;</span> Heading found
               </p>
             )}
             {headingValidation.status === 'not-found' && (
-              <p className="mt-1 text-[11px] text-[warning]">
+              <p className="mt-1 text-[11px] text-warning">
                 <span aria-hidden="true">&#9888;</span> No matching heading
                 found
                 {headingValidation.suggestion && (
@@ -267,7 +267,7 @@ const PromptCard = ({
                           suggestion: null,
                         })
                       }}
-                      className="font-medium underline transition-colors duration-150 ease-out hover:text-[text-primary]"
+                      className="font-medium underline transition-colors duration-150 ease-out hover:text-text-primary"
                     >
                       {headingValidation.suggestion}
                     </button>
@@ -280,7 +280,7 @@ const PromptCard = ({
 
           {/* Prompt text */}
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Question
             </label>
             <textarea
@@ -290,13 +290,13 @@ const PromptCard = ({
               }
               rows={3}
               placeholder="The question shown to students..."
-              className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
 
           {/* Reveal text */}
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Answer
             </label>
             <textarea
@@ -306,20 +306,20 @@ const PromptCard = ({
               }
               rows={3}
               placeholder="The answer revealed after student responds..."
-              className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
 
           {/* MCQ Options */}
           <div>
             <div className="mb-2 flex items-center gap-2">
-              <label className="text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+              <label className="text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
                 MCQ Options
               </label>
               <button
                 type="button"
                 onClick={() => setShowOptions((prev) => !prev)}
-                className={`relative inline-flex h-4 w-7 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${showOptions ? 'bg-[camp-cobalt]' : 'bg-[border]'}`}
+                className={`relative inline-flex h-4 w-7 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${showOptions ? 'bg-camp-cobalt' : 'bg-border'}`}
                 role="switch"
                 aria-checked={showOptions}
               >
@@ -338,7 +338,7 @@ const PromptCard = ({
                       name={`correct-${prompt.prompt_id}`}
                       checked={opt.is_correct}
                       onChange={() => handleOptionCorrectToggle(i)}
-                      className="h-3.5 w-3.5 accent-[camp-cobalt]"
+                      className="h-3.5 w-3.5 accent-camp-cobalt"
                       aria-label={`Mark option ${i + 1} as correct`}
                     />
                     <input
@@ -346,12 +346,12 @@ const PromptCard = ({
                       value={opt.text}
                       onChange={(e) => handleOptionTextChange(i, e.target.value)}
                       placeholder={`Option ${i + 1}`}
-                      className="min-w-0 flex-1 rounded-sm border border-[border] bg-white px-2.5 py-1 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+                      className="min-w-0 flex-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
                     />
                     <button
                       type="button"
                       onClick={() => handleRemoveOption(i)}
-                      className="shrink-0 rounded-sm p-0.5 text-[text-tertiary] transition-colors duration-150 ease-out hover:text-[destructive]"
+                      className="shrink-0 rounded-sm p-0.5 text-text-tertiary transition-colors duration-150 ease-out hover:text-destructive"
                       aria-label={`Remove option ${i + 1}`}
                     >
                       <svg className="h-3 w-3" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -363,7 +363,7 @@ const PromptCard = ({
                 <button
                   type="button"
                   onClick={handleAddOption}
-                  className="text-xs font-medium text-[camp-cobalt] transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                  className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
                 >
                   + Add option
                 </button>
@@ -375,7 +375,7 @@ const PromptCard = ({
           <div className="flex flex-wrap items-end gap-4">
             {/* Status */}
             <div>
-              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
                 Status
               </label>
               <select
@@ -383,7 +383,7 @@ const PromptCard = ({
                 onChange={(e) =>
                   onUpdate(prompt.prompt_id, { status: e.target.value })
                 }
-                className="cursor-pointer rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+                className="cursor-pointer rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
               >
                 <option value="draft">Draft</option>
                 <option value="review">Review</option>
@@ -394,7 +394,7 @@ const PromptCard = ({
 
             {/* Active toggle */}
             <div>
-              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
                 Show to students
               </label>
               <button
@@ -404,7 +404,7 @@ const PromptCard = ({
                     is_active: !prompt.is_active,
                   })
                 }
-                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${prompt.is_active ? 'bg-[emerald]' : 'bg-[border]'}`}
+                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${prompt.is_active ? 'bg-emerald' : 'bg-border'}`}
                 role="switch"
                 aria-checked={prompt.is_active}
               >
@@ -416,7 +416,7 @@ const PromptCard = ({
 
             {/* Sort order */}
             <div>
-              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+              <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
                 Sort order
               </label>
               <input
@@ -428,7 +428,7 @@ const PromptCard = ({
                   })
                 }
                 min={0}
-                className="w-16 rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+                className="w-16 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
               />
             </div>
           </div>
@@ -507,13 +507,13 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
   )
 
   return (
-    <div className="rounded-md border-2 border-dashed border-[camp-cobalt]/30 bg-[#EEF2FC]/30 px-4 py-4">
+    <div className="rounded-md border-2 border-dashed border-camp-cobalt/30 bg-[#EEF2FC]/30 px-4 py-4">
       <div className="mb-3 flex items-center justify-between">
-        <span className="text-xs font-medium text-[camp-cobalt]">New EI Prompt</span>
+        <span className="text-xs font-medium text-camp-cobalt">New EI Prompt</span>
         <button
           type="button"
           onClick={() => onRemove(draft._tempId)}
-          className="rounded-sm p-1 text-[text-tertiary] transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-[destructive]"
+          className="rounded-sm p-1 text-text-tertiary transition-colors duration-150 ease-out hover:bg-[#FDF0F0] hover:text-destructive"
           aria-label="Remove draft"
         >
           <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -525,7 +525,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
       <div className="space-y-4">
         {/* Insert after heading */}
         <div>
-          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
             Insert after heading
           </label>
           <input
@@ -538,15 +538,15 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             onBlur={(e) => validateHeading(e.target.value)}
             placeholder="e.g. Key Innovations"
-            className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
           {headingValidation.status === 'found' && (
-            <p className="mt-1 flex items-center gap-1 text-[11px] text-[emerald]">
+            <p className="mt-1 flex items-center gap-1 text-[11px] text-emerald">
               <span aria-hidden="true">&#10003;</span> Heading found
             </p>
           )}
           {headingValidation.status === 'not-found' && (
-            <p className="mt-1 text-[11px] text-[warning]">
+            <p className="mt-1 text-[11px] text-warning">
               <span aria-hidden="true">&#9888;</span> No matching heading found
               {headingValidation.suggestion && (
                 <>
@@ -560,7 +560,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                       })
                       setHeadingValidation({ status: 'found', suggestion: null })
                     }}
-                    className="font-medium underline transition-colors duration-150 ease-out hover:text-[text-primary]"
+                    className="font-medium underline transition-colors duration-150 ease-out hover:text-text-primary"
                   >
                     {headingValidation.suggestion}
                   </button>
@@ -573,7 +573,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
 
         {/* Prompt text */}
         <div>
-          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
             Question
           </label>
           <textarea
@@ -583,13 +583,13 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             rows={3}
             placeholder="The question shown to students..."
-            className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
         </div>
 
         {/* Reveal text */}
         <div>
-          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+          <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
             Answer
           </label>
           <textarea
@@ -599,20 +599,20 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             rows={3}
             placeholder="The answer revealed after student responds..."
-            className="w-full rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
         </div>
 
         {/* MCQ Options */}
         <div>
           <div className="mb-2 flex items-center gap-2">
-            <label className="text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               MCQ Options
             </label>
             <button
               type="button"
               onClick={() => setShowOptions((prev) => !prev)}
-              className={`relative inline-flex h-4 w-7 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${showOptions ? 'bg-[camp-cobalt]' : 'bg-[border]'}`}
+              className={`relative inline-flex h-4 w-7 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${showOptions ? 'bg-camp-cobalt' : 'bg-border'}`}
               role="switch"
               aria-checked={showOptions}
             >
@@ -631,7 +631,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                     name={`correct-draft-${draft._tempId}`}
                     checked={opt.is_correct}
                     onChange={() => handleOptionCorrectToggle(i)}
-                    className="h-3.5 w-3.5 accent-[camp-cobalt]"
+                    className="h-3.5 w-3.5 accent-camp-cobalt"
                     aria-label={`Mark option ${i + 1} as correct`}
                   />
                   <input
@@ -639,12 +639,12 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                     value={opt.text}
                     onChange={(e) => handleOptionTextChange(i, e.target.value)}
                     placeholder={`Option ${i + 1}`}
-                    className="min-w-0 flex-1 rounded-sm border border-[border] bg-white px-2.5 py-1 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+                    className="min-w-0 flex-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
                   />
                   <button
                     type="button"
                     onClick={() => handleRemoveOption(i)}
-                    className="shrink-0 rounded-sm p-0.5 text-[text-tertiary] transition-colors duration-150 ease-out hover:text-[destructive]"
+                    className="shrink-0 rounded-sm p-0.5 text-text-tertiary transition-colors duration-150 ease-out hover:text-destructive"
                     aria-label={`Remove option ${i + 1}`}
                   >
                     <svg className="h-3 w-3" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -656,7 +656,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
               <button
                 type="button"
                 onClick={handleAddOption}
-                className="text-xs font-medium text-[camp-cobalt] transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                className="text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
               >
                 + Add option
               </button>
@@ -667,7 +667,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
         {/* Status + Active + Sort Order row */}
         <div className="flex flex-wrap items-end gap-4">
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Status
             </label>
             <select
@@ -675,7 +675,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
               onChange={(e) =>
                 onUpdate(draft._tempId, { status: e.target.value })
               }
-              className="cursor-pointer rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+              className="cursor-pointer rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             >
               <option value="draft">Draft</option>
               <option value="review">Review</option>
@@ -685,7 +685,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
           </div>
 
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Show to students
             </label>
             <button
@@ -693,7 +693,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
               onClick={() =>
                 onUpdate(draft._tempId, { is_active: !draft.is_active })
               }
-              className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${draft.is_active ? 'bg-[emerald]' : 'bg-[border]'}`}
+              className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-150 ease-out ${draft.is_active ? 'bg-emerald' : 'bg-border'}`}
               role="switch"
               aria-checked={draft.is_active}
             >
@@ -704,7 +704,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
           </div>
 
           <div>
-            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
+            <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Sort order
             </label>
             <input
@@ -716,7 +716,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                 })
               }
               min={0}
-              className="w-16 rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] outline-none transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:ring-1 focus:ring-[camp-cobalt]/30"
+              className="w-16 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
         </div>
@@ -760,16 +760,16 @@ export const EIPromptsPanel = ({
   if (sorted.length === 0 && dirty.newEIPrompts.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center px-6 py-12 text-center">
-        <p className="mb-1 text-sm text-[text-secondary]">
+        <p className="mb-1 text-sm text-text-secondary">
           No EI prompts for this article yet.
         </p>
-        <p className="mb-4 text-xs text-[text-tertiary]">
+        <p className="mb-4 text-xs text-text-tertiary">
           Add prompts to create check-your-understanding moments.
         </p>
         <button
           type="button"
           onClick={handleAdd}
-          className="rounded-sm bg-[camp-cobalt] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
         >
           + Add First Prompt
         </button>
@@ -807,7 +807,7 @@ export const EIPromptsPanel = ({
       <button
         type="button"
         onClick={handleAdd}
-        className="w-full rounded-sm border border-dashed border-[border] bg-transparent px-4 py-2.5 text-xs font-medium text-[camp-cobalt] transition-colors duration-150 ease-out hover:border-[camp-cobalt] hover:bg-[#EEF2FC]"
+        className="w-full rounded-sm border border-dashed border-border bg-transparent px-4 py-2.5 text-xs font-medium text-camp-cobalt transition-colors duration-150 ease-out hover:border-camp-cobalt hover:bg-[#EEF2FC]"
       >
         + Add EI Prompt
       </button>

@@ -10,10 +10,10 @@ import type { DayCompletionData } from '@/types/app'
 /* ------------------------------------------------------------------ */
 
 const NODE_DOT_COLOR: Record<string, string> = {
-  grey: 'bg-[border]',
-  red: 'bg-[destructive]',
-  amber: 'bg-[warning]',
-  green: 'bg-[emerald]',
+  grey: 'bg-border',
+  red: 'bg-destructive',
+  amber: 'bg-warning',
+  green: 'bg-emerald',
 }
 
 /* ------------------------------------------------------------------ */
@@ -62,21 +62,21 @@ export const DayCompletionMoment = ({
     <div className="flex flex-col gap-5">
       {/* Title */}
       <div>
-        <h2 className="text-2xl font-bold text-[text-primary]">
+        <h2 className="text-2xl font-bold text-text-primary">
           Day {day_number} complete.
         </h2>
         {subject_focus && (
-          <p className="text-lg text-[text-secondary] mt-1">
+          <p className="text-lg text-text-secondary mt-1">
             {subject_focus} &mdash; covered.
           </p>
         )}
       </div>
 
       {/* Mastery scenario */}
-      <div className="rounded-md border border-[border] bg-white p-4">
+      <div className="rounded-md border border-border bg-white p-4">
         {scenario === 'improved' && (
           <>
-            <p className="text-sm text-[text-secondary] mb-3">
+            <p className="text-sm text-text-secondary mb-3">
               Your {subject_focus ?? 'overall'} mastery moved from {avgBefore}%
               to {avgAfter}% today.
             </p>
@@ -84,56 +84,56 @@ export const DayCompletionMoment = ({
             {/* Before / After bars */}
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-3">
-                <span className="font-mono text-[11px] uppercase text-[text-tertiary] w-14">
+                <span className="font-mono text-[11px] uppercase text-text-tertiary w-14">
                   Before
                 </span>
                 <div className="flex-1 h-2 rounded-full bg-[#EEF2FC] overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-[border]"
+                    className="h-full rounded-full bg-border"
                     style={{
                       width: `${avgBefore}%`,
                       transition: 'width 600ms ease-out',
                     }}
                   />
                 </div>
-                <span className="font-mono text-[11px] text-[text-tertiary] w-10 text-right">
+                <span className="font-mono text-[11px] text-text-tertiary w-10 text-right">
                   {avgBefore}%
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="font-mono text-[11px] uppercase text-[text-tertiary] w-14">
+                <span className="font-mono text-[11px] uppercase text-text-tertiary w-14">
                   After
                 </span>
                 <div className="flex-1 h-2 rounded-full bg-[#EEF2FC] overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-[camp-cobalt]"
+                    className="h-full rounded-full bg-camp-cobalt"
                     style={{
                       width: `${avgAfter}%`,
                       transition: 'width 600ms ease-out',
                     }}
                   />
                 </div>
-                <span className="font-mono text-[11px] text-[text-tertiary] w-10 text-right">
+                <span className="font-mono text-[11px] text-text-tertiary w-10 text-right">
                   {avgAfter}%
                 </span>
               </div>
             </div>
 
-            <p className="text-sm font-semibold text-[camp-cobalt] mt-3">
+            <p className="text-sm font-semibold text-camp-cobalt mt-3">
               &#9650; +{delta} points
             </p>
           </>
         )}
 
         {scenario === 'unchanged' && (
-          <p className="text-sm text-[text-secondary]">
+          <p className="text-sm text-text-secondary">
             Today&apos;s content is in progress. The heatmap updates after you
             review this again in a few days.
           </p>
         )}
 
         {scenario === 'dipped' && (
-          <p className="text-sm text-[text-secondary]">
+          <p className="text-sm text-text-secondary">
             You covered new material today. Scores often dip before they rise
             when you&apos;re learning something genuinely hard.
           </p>
@@ -143,7 +143,7 @@ export const DayCompletionMoment = ({
       {/* Nodes updated */}
       {nodes_updated.length > 0 && (
         <div>
-          <span className="font-mono text-[11px] uppercase tracking-wider text-[text-tertiary] block mb-2">
+          <span className="font-mono text-[11px] uppercase tracking-wider text-text-tertiary block mb-2">
             Nodes Updated
           </span>
           <div className="flex flex-wrap items-center gap-1.5">
@@ -154,12 +154,12 @@ export const DayCompletionMoment = ({
                 title={`${node.node_id}: ${node.from} → ${node.to}`}
               >
                 <div
-                  className={`h-3 w-3 rounded-full ${NODE_DOT_COLOR[node.from] ?? 'bg-[border]'}`}
+                  className={`h-3 w-3 rounded-full ${NODE_DOT_COLOR[node.from] ?? 'bg-border'}`}
                   style={{ transition: 'background-color 400ms ease-out' }}
                 />
-                <span className="text-[11px] text-[text-tertiary]">&rarr;</span>
+                <span className="text-[11px] text-text-tertiary">&rarr;</span>
                 <div
-                  className={`h-3 w-3 rounded-full ${NODE_DOT_COLOR[node.to] ?? 'bg-[border]'}`}
+                  className={`h-3 w-3 rounded-full ${NODE_DOT_COLOR[node.to] ?? 'bg-border'}`}
                   style={{ transition: 'background-color 400ms ease-out' }}
                 />
               </div>
@@ -170,18 +170,18 @@ export const DayCompletionMoment = ({
 
       {/* Tomorrow preview */}
       {next_day && (
-        <div className="rounded-md border border-[border] bg-[#F8F7F5] p-4">
-          <span className="font-mono text-[11px] uppercase tracking-wider text-[text-tertiary] block mb-2">
+        <div className="rounded-md border border-border bg-[#F8F7F5] p-4">
+          <span className="font-mono text-[11px] uppercase tracking-wider text-text-tertiary block mb-2">
             Tomorrow
           </span>
-          <p className="text-sm font-medium text-[text-primary]">{next_day.title}</p>
+          <p className="text-sm font-medium text-text-primary">{next_day.title}</p>
           <div className="flex items-center gap-3 mt-1.5">
-            <span className="flex items-center gap-1 text-xs text-[text-secondary]">
-              <ListChecks size={14} className="text-[text-tertiary]" />
+            <span className="flex items-center gap-1 text-xs text-text-secondary">
+              <ListChecks size={14} className="text-text-tertiary" />
               {next_day.step_count} steps
             </span>
-            <span className="flex items-center gap-1 text-xs text-[text-secondary]">
-              <Clock size={14} className="text-[text-tertiary]" />
+            <span className="flex items-center gap-1 text-xs text-text-secondary">
+              <Clock size={14} className="text-text-tertiary" />
               ~{next_day.estimated_minutes} min
             </span>
           </div>
@@ -190,7 +190,7 @@ export const DayCompletionMoment = ({
             onClick={() =>
               router.push(`/dashboard/camptrails/${trailSlug}/today`)
             }
-            className="mt-3 inline-flex items-center gap-1.5 rounded-sm bg-[camp-cobalt] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="mt-3 inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
           >
             Start Day {next_day.day_number}
             <ArrowRight size={14} weight="bold" />
@@ -202,7 +202,7 @@ export const DayCompletionMoment = ({
       <button
         type="button"
         onClick={() => router.push('/dashboard')}
-        className="self-start rounded-sm border border-[border] bg-transparent px-4 py-2 text-sm font-medium text-[text-secondary] transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
+        className="self-start rounded-sm border border-border bg-transparent px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-[#F5F5F5]"
       >
         Back to Dashboard
       </button>

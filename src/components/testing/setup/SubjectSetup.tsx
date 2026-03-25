@@ -128,7 +128,7 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
         </section>
 
         {error && (
-          <p className="text-sm text-[destructive] text-center" role="alert">
+          <p className="text-sm text-destructive text-center" role="alert">
             {error}
           </p>
         )}

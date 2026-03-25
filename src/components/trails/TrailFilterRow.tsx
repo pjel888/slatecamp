@@ -38,8 +38,8 @@ export const TrailFilterRow = ({ onFilterChange, activeFilter = 'all' }: TrailFi
             className={[
               'px-3.5 py-1.5 rounded-full border text-xs font-medium cursor-pointer transition-all duration-150',
               isActive
-                ? 'bg-[text-primary] text-white border-[text-primary]'
-                : 'bg-white text-[text-secondary] border-[border] hover:border-[#B8B4AC] hover:bg-[#F8F7F5]',
+                ? 'bg-text-primary text-white border-text-primary'
+                : 'bg-white text-text-secondary border-border hover:border-[#B8B4AC] hover:bg-[#F8F7F5]',
             ].join(' ')}
           >
             {option.label}

@@ -40,11 +40,11 @@ export const StudyWindowSelector = ({
   }
 
   return (
-    <div className={cn('space-y-3', compact ? '' : 'p-5 bg-white border border-[border] rounded-md')}>
+    <div className={cn('space-y-3', compact ? '' : 'p-5 bg-white border border-border rounded-md')}>
       {!compact && (
         <div>
-          <h3 className="text-sm font-bold text-[text-primary]">When do you usually study?</h3>
-          <p className="text-[13px] text-[text-secondary] mt-0.5">
+          <h3 className="text-sm font-bold text-text-primary">When do you usually study?</h3>
+          <p className="text-[13px] text-text-secondary mt-0.5">
             We&apos;ll optimize your trail step ordering based on learning science.
           </p>
         </div>
@@ -58,31 +58,31 @@ export const StudyWindowSelector = ({
             className={cn(
               'w-full flex items-center justify-between rounded-md border px-4 py-3 transition-colors text-left',
               selected === value
-                ? 'border-[camp-cobalt] bg-[#EEF2FC]'
-                : 'border-[border] hover:border-[camp-cobalt]/50 hover:bg-[#EEF2FC]/30',
+                ? 'border-camp-cobalt bg-[#EEF2FC]'
+                : 'border-border hover:border-camp-cobalt/50 hover:bg-[#EEF2FC]/30',
             )}
           >
             <div className="flex items-center gap-3">
               <div
                 className={cn(
                   'w-4 h-4 rounded-full border-2 flex items-center justify-center',
-                  selected === value ? 'border-[camp-cobalt]' : 'border-[border]',
+                  selected === value ? 'border-camp-cobalt' : 'border-border',
                 )}
               >
                 {selected === value && (
-                  <div className="w-2 h-2 rounded-full bg-[camp-cobalt]" />
+                  <div className="w-2 h-2 rounded-full bg-camp-cobalt" />
                 )}
               </div>
-              <span className="text-sm font-medium text-[text-primary]">{label}</span>
+              <span className="text-sm font-medium text-text-primary">{label}</span>
             </div>
             {description && (
-              <span className="text-xs text-[text-tertiary]">{description}</span>
+              <span className="text-xs text-text-tertiary">{description}</span>
             )}
           </button>
         ))}
       </div>
       {saved && (
-        <p className="text-xs text-[emerald] font-medium">Saved</p>
+        <p className="text-xs text-emerald font-medium">Saved</p>
       )}
     </div>
   )

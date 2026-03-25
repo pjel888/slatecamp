@@ -18,11 +18,11 @@ export const ArticlePreviewTab = ({ previewNode, previewError, title }: ArticleP
       <div className="min-h-0 flex-1 overflow-y-auto bg-white">
         {previewError ? (
           <div className="max-w-[720px] mx-auto px-8 py-8">
-            <div className="rounded-md border border-[destructive]/30 bg-[#FDF0F0] p-4">
-              <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-[destructive] mb-2">
+            <div className="rounded-md border border-destructive/30 bg-[#FDF0F0] p-4">
+              <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-destructive mb-2">
                 Compilation Error
               </p>
-              <pre className="whitespace-pre-wrap font-mono text-xs text-[destructive] leading-relaxed">
+              <pre className="whitespace-pre-wrap font-mono text-xs text-destructive leading-relaxed">
                 {previewError}
               </pre>
             </div>
@@ -35,7 +35,7 @@ export const ArticlePreviewTab = ({ previewNode, previewError, title }: ArticleP
           </div>
         ) : (
           <div className="max-w-[720px] mx-auto px-8 py-8">
-            <p className="text-sm text-[text-tertiary] italic">
+            <p className="text-sm text-text-tertiary italic">
               Start typing to see a student-view preview...
             </p>
           </div>

@@ -217,7 +217,7 @@ const EditorInner = ({
         </div>
 
         {/* Article Panel — full-width stacked, ~55% on xl+ */}
-        <div className="flex w-full min-w-0 flex-col overflow-hidden border-b border-[border] max-h-[50vh] xl:max-h-none xl:w-[55%] xl:border-b-0 xl:border-r">
+        <div className="flex w-full min-w-0 flex-col overflow-hidden border-b border-border max-h-[50vh] xl:max-h-none xl:w-[55%] xl:border-b-0 xl:border-r">
           <PanelErrorBoundary panelName="Article">
             <ArticlePanel
               content={content}

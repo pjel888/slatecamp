@@ -35,20 +35,20 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href="/dashboard/assessment"
-        className="block rounded-md border border-[camp-cobalt] bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-camp-cobalt bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[camp-cobalt]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-cobalt">
           Get started
         </p>
-        <p className="mt-2 text-base font-semibold text-[text-primary]">
+        <p className="mt-2 text-base font-semibold text-text-primary">
           {assessmentProgress && assessmentProgress > 0
             ? `Your score is ${assessmentProgress}% complete. Pick up where you left off.`
             : 'Start your diagnostic — 35 questions, ~20 min'}
         </p>
-        <p className="mt-1 text-sm text-[text-secondary]">
+        <p className="mt-1 text-sm text-text-secondary">
           Your Readiness Score tells you exactly where you stand across all ALE subjects.
         </p>
-        <span className="mt-3 inline-flex items-center text-sm font-medium text-[camp-cobalt]">
+        <span className="mt-3 inline-flex items-center text-sm font-medium text-camp-cobalt">
           {assessmentProgress && assessmentProgress > 0 ? 'Continue Assessment' : 'Start Assessment'} &rarr;
         </span>
       </Link>
@@ -59,18 +59,18 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href="/dashboard/score-reveal"
-        className="block rounded-md border border-[camp-orange] bg-[camp-orange]/5 p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-camp-orange bg-camp-orange/5 p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[camp-orange]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-orange">
           Score ready
         </p>
-        <p className="mt-2 text-base font-semibold text-[text-primary]">
+        <p className="mt-2 text-base font-semibold text-text-primary">
           Your Readiness Score is ready. See where you stand.
         </p>
-        <p className="mt-1 text-sm text-[text-secondary]">
+        <p className="mt-1 text-sm text-text-secondary">
           35 questions analyzed. One number that shows exactly where to focus.
         </p>
-        <span className="mt-3 inline-flex items-center text-sm font-medium text-[camp-orange]">
+        <span className="mt-3 inline-flex items-center text-sm font-medium text-camp-orange">
           See Your Score &rarr;
         </span>
       </Link>
@@ -81,18 +81,18 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href="/dashboard/trails"
-        className="block rounded-md border border-[emerald] bg-[#EDFAF4] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-emerald bg-[#EDFAF4] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[emerald]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-emerald">
           Trail ready
         </p>
-        <p className="mt-2 text-base font-semibold text-[text-primary]">
+        <p className="mt-2 text-base font-semibold text-text-primary">
           Your trail is ready.{trailDay?.topGapSubject ? ` Day 1 focuses on ${trailDay.topGapSubject}.` : ''}
         </p>
-        <p className="mt-1 text-sm text-[text-secondary]">
+        <p className="mt-1 text-sm text-text-secondary">
           A structured study plan built around your assessment results.
         </p>
-        <span className="mt-3 inline-flex items-center text-sm font-medium text-[emerald]">
+        <span className="mt-3 inline-flex items-center text-sm font-medium text-emerald">
           Start Your Camp Trail &rarr;
         </span>
       </Link>
@@ -103,18 +103,18 @@ export const OnboardingStateCard = ({
     return (
       <Link
         href={`/dashboard/camptrails/${trailDay.trailSlug}/today`}
-        className="block rounded-md border border-[camp-cobalt] bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="block rounded-md border border-camp-cobalt bg-[#EEF2FC] p-5 transition-shadow duration-150 ease-out hover:shadow-sm"
       >
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-[camp-cobalt]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[1.5px] text-camp-cobalt">
           Today&apos;s trail
         </p>
-        <p className="mt-2 text-base font-semibold text-[text-primary]">
+        <p className="mt-2 text-base font-semibold text-text-primary">
           Day {trailDay.dayNumber} &middot; {trailDay.title}
         </p>
-        <p className="mt-1 text-sm text-[text-secondary]">
+        <p className="mt-1 text-sm text-text-secondary">
           ~{trailDay.estimatedMinutes} min
         </p>
-        <span className="mt-3 inline-flex items-center text-sm font-medium text-[camp-cobalt]">
+        <span className="mt-3 inline-flex items-center text-sm font-medium text-camp-cobalt">
           Start Day {trailDay.dayNumber} &rarr;
         </span>
       </Link>

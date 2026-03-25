@@ -14,7 +14,7 @@ export const DashboardHeader = () => {
 
   return (
     <header className='flex items-center border-b border-border bg-white h-16'>
-      <h1 className='font-display text-2xl font-extrabold text-[text-primary] tracking-tight px-2'>
+      <h1 className='font-display text-2xl font-extrabold text-text-primary tracking-tight px-2'>
         {title}
       </h1>
     </header>

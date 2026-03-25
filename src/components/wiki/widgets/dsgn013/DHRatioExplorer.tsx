@@ -67,8 +67,8 @@ export const DHRatioExplorer = () => {
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
-      <div className="px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[camp-cobalt]/10 dark:to-[camp-cobalt]/5 dark:border-[#3A3835]">
-        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt]">
+      <div className="px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · D/H Ratio and Spatial Enclosure
         </div>
         <div className="text-xs text-[#737370] mt-0.5 dark:text-[#A8A8A5]">
@@ -123,7 +123,7 @@ export const DHRatioExplorer = () => {
                   />
                 </svg>
                 <div className={`font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] transition-colors duration-150 ${
-                  isActive ? 'text-[camp-cobalt]' : 'text-[#A8A8A5]'
+                  isActive ? 'text-camp-cobalt' : 'text-[#A8A8A5]'
                 }`}>
                   {r.ratio}
                 </div>

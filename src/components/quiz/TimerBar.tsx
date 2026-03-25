@@ -42,7 +42,7 @@ export function TimerBar({
         <div
           className={cn(
             'h-full rounded-sm transition-all duration-300 ease-linear',
-            isFinal ? 'bg-[warning]' : 'bg-[camp-cobalt]',
+            isFinal ? 'bg-warning' : 'bg-camp-cobalt',
           )}
           style={{ width: `${pct}%` }}
         />
@@ -53,7 +53,7 @@ export function TimerBar({
         <span
           className={cn(
             'font-medium text-[14px] tabular-nums w-10 transition-colors',
-            isFinal ? 'text-[warning]' : 'text-[text-secondary]',
+            isFinal ? 'text-warning' : 'text-text-secondary',
           )}
         >
           {timeLabel}
@@ -65,7 +65,7 @@ export function TimerBar({
         <span
           className={cn(
             'text-[11px] font-black uppercase tracking-wider hidden sm:block',
-            isAheadOfPace ? 'text-[emerald]' : 'text-[text-tertiary]',
+            isAheadOfPace ? 'text-emerald' : 'text-text-tertiary',
           )}
         >
           {isAheadOfPace ? 'On pace' : 'Pace'}

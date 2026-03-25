@@ -13,7 +13,7 @@ export const CorridorVisualizer = () => {
 
   return (
     <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
-      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[camp-cobalt] mb-2">Interactive — Corridor Width Visualizer (2024 IRR)</div>
+      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Corridor Width Visualizer (2024 IRR)</div>
       <div className="flex gap-5 mb-3 flex-wrap items-center">
         <label className="flex items-center gap-2 text-[13px] text-[#444] cursor-pointer">
           <input type="radio" name="corr-mode" checked={mode === 'single'} onChange={() => setMode('single')} /> Single WC + ambulant

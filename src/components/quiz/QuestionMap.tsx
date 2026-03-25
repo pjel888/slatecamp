@@ -58,7 +58,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
           'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
           isOpen
             ? 'bg-[#EEF2FC] text-primary border border-primary/20'
-            : 'text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[text-secondary]',
+            : 'text-text-tertiary hover:bg-[#EEF2FC] hover:text-text-secondary',
         )}
       >
         <SCIcon icon={SquaresFour} size='xs' />
@@ -73,12 +73,12 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
           aria-label='Question navigator'
         >
           <div className='flex items-center justify-between px-4 py-3 border-b border-border'>
-            <span className='text-[11px] font-black uppercase tracking-widest text-[text-tertiary]'>
+            <span className='text-[11px] font-black uppercase tracking-widest text-text-tertiary'>
               Question Map
             </span>
-            <div className='flex items-center gap-3 text-[11px] font-bold text-[text-tertiary]'>
+            <div className='flex items-center gap-3 text-[11px] font-bold text-text-tertiary'>
               <span>{answered}/{dots.length} answered</span>
-              {flagged > 0 && <span className='text-[warning]'>{flagged} flagged</span>}
+              {flagged > 0 && <span className='text-warning'>{flagged} flagged</span>}
               <CloseButton onClick={() => setIsOpen(false)} aria-label="Close question map" size="sm" />
             </div>
           </div>
@@ -101,8 +101,8 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
                   disabled && 'cursor-default',
                   dot.index === currentIndex && 'bg-primary text-white ring-2 ring-primary/30',
                   dot.state === 'answered' && dot.index !== currentIndex && 'bg-[#EEF2FC] text-[#1535A8] border border-[#1535A8]/20',
-                  dot.state === 'flagged' && dot.index !== currentIndex && 'bg-[#FEF8ED] text-[warning] border border-[warning]/20',
-                  dot.state === 'unanswered' && dot.index !== currentIndex && 'bg-zinc-50 text-[text-tertiary] border border-border',
+                  dot.state === 'flagged' && dot.index !== currentIndex && 'bg-[#FEF8ED] text-warning border border-warning/20',
+                  dot.state === 'unanswered' && dot.index !== currentIndex && 'bg-zinc-50 text-text-tertiary border border-border',
                 )}
               >
                 {dot.index + 1}
@@ -110,7 +110,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
             ))}
           </div>
           {/* Legend */}
-          <div className='px-4 py-2.5 border-t border-border flex items-center gap-4 text-[11px] text-[text-tertiary]'>
+          <div className='px-4 py-2.5 border-t border-border flex items-center gap-4 text-[11px] text-text-tertiary'>
             <span className='flex items-center gap-1.5'>
               <span className='w-3 h-3 rounded-sm bg-primary' /> Current
             </span>
@@ -118,7 +118,7 @@ export const QuestionMap = ({ dots, currentIndex, onJump, disabled }: QuestionMa
               <span className='w-3 h-3 rounded-sm bg-[#EEF2FC] border border-[#1535A8]/20' /> Answered
             </span>
             <span className='flex items-center gap-1.5'>
-              <span className='w-3 h-3 rounded-sm bg-[#FEF8ED] border border-[warning]/20' /> Flagged
+              <span className='w-3 h-3 rounded-sm bg-[#FEF8ED] border border-warning/20' /> Flagged
             </span>
           </div>
         </div>

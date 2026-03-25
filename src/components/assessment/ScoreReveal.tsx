@@ -71,7 +71,7 @@ const ScoreReveal = ({
     >
       <div className="mx-auto w-full max-w-lg px-6 py-16 text-center">
         {/* DM Mono eyebrow — 11px, uppercase */}
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-[text-tertiary]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-text-tertiary">
           Your Readiness Score
         </p>
 
@@ -81,12 +81,12 @@ const ScoreReveal = ({
         </div>
 
         {/* Interpretation — Inter 17px, #4A5568, max-width 480px */}
-        <p className="mx-auto mt-6 max-w-[480px] text-[17px] leading-relaxed text-[text-secondary]">
+        <p className="mx-auto mt-6 max-w-[480px] text-[17px] leading-relaxed text-text-secondary">
           {message}
         </p>
 
         {/* Blurred Heatmap — shape visible, color not. CSS filter: blur(8px) */}
-        <div className="relative mx-auto mt-10 overflow-hidden rounded-md border border-[border] bg-white p-6">
+        <div className="relative mx-auto mt-10 overflow-hidden rounded-md border border-border bg-white p-6">
           <div
             className="pointer-events-none select-none"
             style={{ filter: 'blur(8px)' }}
@@ -143,10 +143,10 @@ const ScoreReveal = ({
           >
             <Link
               href="/dashboard/upgrade"
-              className="inline-flex items-center gap-1.5 text-sm text-[text-secondary] transition-colors duration-150 ease-out hover:text-[camp-cobalt]"
+              className="inline-flex items-center gap-1.5 text-sm text-text-secondary transition-colors duration-150 ease-out hover:text-camp-cobalt"
             >
               See Full Map
-              <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-[text-tertiary]">
+              <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary">
                 (Pro)
               </span>
               <span aria-hidden="true">&rarr;</span>

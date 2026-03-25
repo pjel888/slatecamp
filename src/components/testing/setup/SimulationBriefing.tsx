@@ -101,7 +101,7 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
 
         <div className="flex flex-col gap-3">
           {error && (
-            <p className="text-sm text-[destructive] text-center" role="alert">
+            <p className="text-sm text-destructive text-center" role="alert">
               {error}
             </p>
           )}

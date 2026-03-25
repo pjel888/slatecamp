@@ -26,10 +26,10 @@ const ExamOutcomePage = async () => {
   return (
     <SharedPageLayout>
       <div className="mx-auto w-full max-w-md px-4 py-12">
-        <h1 className="font-[family-name:var(--font-syne)] text-xl font-bold text-[text-primary]">
+        <h1 className="font-[family-name:var(--font-syne)] text-xl font-bold text-text-primary">
           How did the {CURRENT_EXAM_BATCH} ALE go?
         </h1>
-        <p className="mt-2 text-sm text-[text-secondary]">
+        <p className="mt-2 text-sm text-text-secondary">
           Your response helps us improve SlateCamp for the next batch of candidates.
           Takes about 30 seconds.
         </p>

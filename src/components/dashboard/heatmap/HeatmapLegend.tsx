@@ -27,7 +27,7 @@ export const HeatmapLegend = ({ cellSize }: HeatmapLegendProps) => (
       ·
     </span>
     <div
-      className='rounded-[2px] bg-[destructive] ring-1 ring-[destructive] ring-offset-[1px] z-10'
+      className='rounded-[2px] bg-destructive ring-1 ring-destructive ring-offset-[1px] z-10'
       style={{ width: cellSize, height: cellSize }}
     />
     <span className='text-xs text-white/40 select-none'>
@@ -37,7 +37,7 @@ export const HeatmapLegend = ({ cellSize }: HeatmapLegendProps) => (
       ·
     </span>
     <div
-      className='rounded-[2px] bg-white/10 ring-2 ring-[warning] ring-offset-[1px] z-10'
+      className='rounded-[2px] bg-white/10 ring-2 ring-warning ring-offset-[1px] z-10'
       style={{ width: cellSize, height: cellSize }}
     />
     <span className='text-xs text-white/40 select-none'>
@@ -47,7 +47,7 @@ export const HeatmapLegend = ({ cellSize }: HeatmapLegendProps) => (
       ·
     </span>
     <div
-      className='rounded-[2px] bg-[emerald] ring-2 ring-[emerald] ring-offset-1 z-10'
+      className='rounded-[2px] bg-emerald ring-2 ring-emerald ring-offset-1 z-10'
       style={{ width: cellSize, height: cellSize }}
     />
     <span className='text-xs text-white/40 select-none'>

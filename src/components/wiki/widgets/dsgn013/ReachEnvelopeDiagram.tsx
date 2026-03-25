@@ -45,7 +45,7 @@ export const ReachEnvelopeDiagram = () => {
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
       <div className="px-5 py-3.5 bg-[#F5F5F5] border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
-        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Reach Envelope Zones
         </div>
       </div>
@@ -59,7 +59,7 @@ export const ReachEnvelopeDiagram = () => {
             onClick={() => setPosture(b.key)}
             className={`flex-1 py-2.5 text-[12px] font-[var(--font-dm-mono)] font-medium transition-all duration-150 border-b-2 -mb-px ${
               posture === b.key
-                ? 'text-[camp-cobalt] border-[camp-cobalt] bg-white dark:bg-[#1A1A1A]'
+                ? 'text-camp-cobalt border-camp-cobalt bg-white dark:bg-[#1A1A1A]'
                 : 'text-[#737370] border-transparent hover:text-[#1A1A1A] dark:text-[#A8A8A5]'
             }`}
           >
@@ -81,11 +81,11 @@ export const ReachEnvelopeDiagram = () => {
               <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-2">
                 {zone.label}
               </div>
-              <div className="font-[var(--font-dm-mono)] text-sm font-medium text-[camp-cobalt] mb-0.5">
+              <div className="font-[var(--font-dm-mono)] text-sm font-medium text-camp-cobalt mb-0.5">
                 {zone.max}
               </div>
               {zone.comfortable && (
-                <div className="font-[var(--font-dm-mono)] text-[11px] text-[emerald]">
+                <div className="font-[var(--font-dm-mono)] text-[11px] text-emerald">
                   Comfortable: {zone.comfortable}
                 </div>
               )}
@@ -94,8 +94,8 @@ export const ReachEnvelopeDiagram = () => {
         </div>
 
         {/* Notes */}
-        <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[camp-cobalt]/10 dark:text-[#C8C6C0]">
-          <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-[camp-cobalt] mb-1.5 font-medium">
+        <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-camp-cobalt/10 dark:text-[#C8C6C0]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-camp-cobalt mb-1.5 font-medium">
             {d.label} — Design Notes
           </div>
           {d.notes}

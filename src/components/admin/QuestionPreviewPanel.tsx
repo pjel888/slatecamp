@@ -49,14 +49,14 @@ export const QuestionPreviewPanel = ({
   return (
     <div className="sticky top-[112px] h-[calc(100vh-112px)] overflow-y-auto flex flex-col gap-4">
       {/* Mode toggle */}
-      <div className="flex items-center gap-1 p-1 rounded-md bg-[#F5F7FA] border border-[border] shrink-0">
+      <div className="flex items-center gap-1 p-1 rounded-md bg-[#F5F7FA] border border-border shrink-0">
         <button
           type="button"
           onClick={() => setActiveMode('camp')}
           className={`flex-1 h-8 rounded-sm text-[11px] font-black uppercase tracking-wider transition-colors duration-150 ${
             activeMode === 'camp'
-              ? 'bg-[camp-cobalt] text-white shadow-sm'
-              : 'text-[text-secondary] hover:text-[text-primary]'
+              ? 'bg-camp-cobalt text-white shadow-sm'
+              : 'text-text-secondary hover:text-text-primary'
           }`}
         >
           Camp Mode
@@ -66,8 +66,8 @@ export const QuestionPreviewPanel = ({
           onClick={() => setActiveMode('storm')}
           className={`flex-1 h-8 rounded-sm text-[11px] font-black uppercase tracking-wider transition-colors duration-150 ${
             activeMode === 'storm'
-              ? 'bg-[camp-cobalt] text-white shadow-sm'
-              : 'text-[text-secondary] hover:text-[text-primary]'
+              ? 'bg-camp-cobalt text-white shadow-sm'
+              : 'text-text-secondary hover:text-text-primary'
           }`}
         >
           Storm Mode

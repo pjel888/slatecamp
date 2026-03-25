@@ -82,13 +82,13 @@ export const RestudyLoop = ({
   if (loading || phase === 'transition') {
     return (
       <div className="flex flex-col items-center justify-center py-16 px-5 animate-in fade-in duration-200">
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-[text-tertiary] mb-3">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-text-tertiary mb-3">
           Quick Re-Study
         </p>
-        <p className="text-base font-semibold text-[text-primary] text-center max-w-sm">
+        <p className="text-base font-semibold text-text-primary text-center max-w-sm">
           You&apos;ve seen this concept before and it didn&apos;t stick. Three focused questions to fix that.
         </p>
-        <p className="text-sm text-[text-secondary] mt-2">{topicName}</p>
+        <p className="text-sm text-text-secondary mt-2">{topicName}</p>
       </div>
     )
   }
@@ -96,8 +96,8 @@ export const RestudyLoop = ({
   if (phase === 'complete') {
     return (
       <div className="flex flex-col items-center justify-center py-16 px-5 animate-in fade-in duration-200">
-        <p className="text-base font-semibold text-[text-primary]">Re-study complete.</p>
-        <p className="text-sm text-[text-secondary] mt-1">Back to your session.</p>
+        <p className="text-base font-semibold text-text-primary">Re-study complete.</p>
+        <p className="text-sm text-text-secondary mt-1">Back to your session.</p>
       </div>
     )
   }
@@ -114,10 +114,10 @@ export const RestudyLoop = ({
     <div className="max-w-2xl mx-auto px-5 py-6 space-y-6 animate-in fade-in duration-150">
       {/* Progress indicator */}
       <div className="flex items-center justify-between">
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-[text-tertiary]">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-text-tertiary">
           Re-Study {currentIdx + 1} of {questions.length}
         </p>
-        <span className="text-xs text-[text-tertiary] bg-[#EEF2FC] px-2 py-0.5 rounded-sm">
+        <span className="text-xs text-text-tertiary bg-[#EEF2FC] px-2 py-0.5 rounded-sm">
           {topicName}
         </span>
       </div>
@@ -143,7 +143,7 @@ export const RestudyLoop = ({
       {/* Rationale (if checked and wrong) */}
       {isChecked && selectedAnswer !== correctId && currentQuestion.rationale && (
         <div className="p-3 bg-[#EEF2FC] border border-primary/10 rounded-md">
-          <p className="text-[13px] text-[text-secondary] leading-relaxed">{typeof currentQuestion.rationale === 'string' ? currentQuestion.rationale : (currentQuestion.rationale as any)?.correct || ''}</p>
+          <p className="text-[13px] text-text-secondary leading-relaxed">{typeof currentQuestion.rationale === 'string' ? currentQuestion.rationale : (currentQuestion.rationale as any)?.correct || ''}</p>
         </div>
       )}
 
@@ -157,7 +157,7 @@ export const RestudyLoop = ({
             className={cn(
               'h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
               selectedAnswer
-                ? 'bg-[camp-cobalt] text-white hover:bg-[#1535A8]'
+                ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
                 : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
             )}
           >
@@ -167,7 +167,7 @@ export const RestudyLoop = ({
           <button
             type="button"
             onClick={handleNext}
-            className="h-10 px-6 rounded-sm bg-[camp-cobalt] text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-[#1535A8] transition-all"
+            className="h-10 px-6 rounded-sm bg-camp-cobalt text-white font-bold text-xs uppercase tracking-[0.15em] hover:bg-[#1535A8] transition-all"
           >
             {currentIdx === questions.length - 1 ? 'Done' : 'Next'}
           </button>

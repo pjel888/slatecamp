@@ -23,19 +23,19 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
 
   if (enrollment && enrollment.status === 'active') {
     return (
-      <div className="rounded-md border border-[border] bg-white p-4 flex items-center justify-between">
+      <div className="rounded-md border border-border bg-white p-4 flex items-center justify-between">
         <div>
-          <p className="text-sm font-medium text-[text-primary]">
+          <p className="text-sm font-medium text-text-primary">
             Day {enrollment.current_day} of {trail.duration_days}
           </p>
-          <p className="text-xs text-[text-secondary]">
+          <p className="text-xs text-text-secondary">
             {enrollment.days_completed} days completed
           </p>
         </div>
         <button
           type="button"
           onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-          className="px-4 py-2 rounded-sm bg-[camp-cobalt] text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-[#1535A8]"
         >
           Continue Trail →
         </button>
@@ -44,15 +44,15 @@ export const TrailDetailEnroll = ({ trail, enrollment }: TrailDetailEnrollProps)
   }
 
   return (
-    <div className="rounded-md border border-[border] bg-white p-4 flex items-center justify-between">
-      <p className="text-sm text-[text-secondary]">
+    <div className="rounded-md border border-border bg-white p-4 flex items-center justify-between">
+      <p className="text-sm text-text-secondary">
         Ready to start? This trail takes {trail.duration_days} days to complete.
       </p>
       <button
         type="button"
         onClick={handleEnroll}
         disabled={isPending}
-        className="px-5 py-2.5 rounded-sm bg-[camp-cobalt] text-white text-sm font-semibold transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+        className="px-5 py-2.5 rounded-sm bg-camp-cobalt text-white text-sm font-semibold transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
       >
         {isPending ? 'Starting...' : 'Start This Trail →'}
       </button>

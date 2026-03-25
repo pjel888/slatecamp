@@ -130,15 +130,15 @@ export const TrailDailyView = ({
     <div className="flex flex-col gap-5">
       {/* Missed day recovery — UX Strategy Section 7 (Alt Path M1) */}
       {hasMissedDay && (
-        <div className="rounded-md border border-[warning] bg-[#FEF8ED] p-4">
-          <p className="text-sm text-[text-primary]">
+        <div className="rounded-md border border-warning bg-[#FEF8ED] p-4">
+          <p className="text-sm text-text-primary">
             You missed Day {missedDayNumber}. Pick it up today, or skip ahead to Day {enrollment.current_day}.
           </p>
           <div className="mt-2 flex gap-3">
             <button
               type="button"
               onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-              className="text-xs font-medium text-[warning] hover:text-[#9A6510] transition-colors duration-150"
+              className="text-xs font-medium text-warning hover:text-[#9A6510] transition-colors duration-150"
             >
               Continue with Day {enrollment.current_day}
             </button>
@@ -148,22 +148,22 @@ export const TrailDailyView = ({
 
       {/* Header */}
       <div>
-        <p className="text-xs font-medium text-[text-tertiary] uppercase tracking-wide mb-1">
+        <p className="text-xs font-medium text-text-tertiary uppercase tracking-wide mb-1">
           Your Camp Trail
         </p>
-        <h1 className="text-xl font-bold text-[text-primary]">
+        <h1 className="text-xl font-bold text-text-primary">
           Day {currentDay.day_number} of {trail.duration_days}
         </h1>
-        <p className="text-base font-semibold text-[text-primary] mt-1">
+        <p className="text-base font-semibold text-text-primary mt-1">
           {currentDay.title}
         </p>
         {currentDay.description && (
-          <p className="text-sm text-[text-secondary] mt-1">{currentDay.description}</p>
+          <p className="text-sm text-text-secondary mt-1">{currentDay.description}</p>
         )}
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-[border]" />
+      <div className="h-px bg-border" />
 
       {/* Step list */}
       <div className="flex flex-col gap-2">
@@ -176,7 +176,7 @@ export const TrailDailyView = ({
             <div
               key={step.step_id}
               className={`rounded-md border bg-white p-3 transition-shadow duration-150 ease-out ${
-                isCompleted ? 'border-[border] opacity-60' : 'border-[border]'
+                isCompleted ? 'border-border opacity-60' : 'border-border'
               }`}
             >
               <div className="flex items-center gap-3">
@@ -184,8 +184,8 @@ export const TrailDailyView = ({
                 <div
                   className={`flex-shrink-0 w-5 h-5 rounded-sm border flex items-center justify-center ${
                     isCompleted
-                      ? 'bg-[emerald] border-[emerald]'
-                      : 'border-[border]'
+                      ? 'bg-emerald border-emerald'
+                      : 'border-border'
                   }`}
                 >
                   {isCompleted && <Check size={12} weight="bold" className="text-white" />}
@@ -194,7 +194,7 @@ export const TrailDailyView = ({
                 {/* Icon */}
                 <StepIcon
                   size={18}
-                  className={isCompleted ? 'text-[text-tertiary]' : 'text-[camp-cobalt]'}
+                  className={isCompleted ? 'text-text-tertiary' : 'text-camp-cobalt'}
                 />
 
                 {/* Content */}
@@ -203,29 +203,29 @@ export const TrailDailyView = ({
                     <span
                       className={`text-sm font-medium ${
                         isCompleted
-                          ? 'line-through text-[text-tertiary]'
-                          : 'text-[text-primary]'
+                          ? 'line-through text-text-tertiary'
+                          : 'text-text-primary'
                       }`}
                     >
                       {step.title}
                     </span>
                     {step.is_optional && (
-                      <span className="text-[11px] text-[text-tertiary] bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">
+                      <span className="text-[11px] text-text-tertiary bg-[#F5F5F5] px-1.5 py-0.5 rounded-sm">
                         Optional
                       </span>
                     )}
                   </div>
                   <div className="flex items-center gap-1.5 mt-0.5">
-                    <Clock size={12} className="text-[text-tertiary]" />
-                    <span className="text-xs text-[text-tertiary]">
+                    <Clock size={12} className="text-text-tertiary" />
+                    <span className="text-xs text-text-tertiary">
                       ~{step.estimated_minutes} min
                     </span>
                     {/* Sleep-aware label (Walker 2017) */}
                     {userStudyWindow === 'morning' && (step.step_type === 'wiki' || step.step_type === 'lab') && (
-                      <span className="text-[11px] text-[warning]">Best in the evening</span>
+                      <span className="text-[11px] text-warning">Best in the evening</span>
                     )}
                     {userStudyWindow === 'evening' && (step.step_type === 'quiz' || step.step_type === 'review') && (
-                      <span className="text-[11px] text-[warning]">Best in the morning</span>
+                      <span className="text-[11px] text-warning">Best in the morning</span>
                     )}
                   </div>
                 </div>
@@ -236,7 +236,7 @@ export const TrailDailyView = ({
                     type="button"
                     onClick={() => handleStepAction(step)}
                     disabled={isPending}
-                    className="flex-shrink-0 px-3 py-1.5 rounded-sm bg-[#EEF2FC] text-[camp-cobalt] text-xs font-medium transition-colors duration-150 ease-out hover:bg-[camp-cobalt] hover:text-white disabled:opacity-50"
+                    className="flex-shrink-0 px-3 py-1.5 rounded-sm bg-[#EEF2FC] text-camp-cobalt text-xs font-medium transition-colors duration-150 ease-out hover:bg-camp-cobalt hover:text-white disabled:opacity-50"
                   >
                     {actionLabel} &rarr;
                   </button>
@@ -254,18 +254,18 @@ export const TrailDailyView = ({
         const totalRequired = requiredSteps.length
         const percent = totalRequired > 0 ? Math.round((completedCount / totalRequired) * 100) : 0
         return (
-          <div className="rounded-md border border-[border] bg-[#F5F5F5] px-4 py-3">
+          <div className="rounded-md border border-border bg-[#F5F5F5] px-4 py-3">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-xs text-[text-secondary]">
+              <span className="text-xs text-text-secondary">
                 Day progress: {completedCount}/{totalRequired} complete
               </span>
-              <span className="text-xs text-[text-tertiary]">
+              <span className="text-xs text-text-tertiary">
                 ~{totalEstimatedMinutes} min total
               </span>
             </div>
             <div className="h-1.5 w-full rounded-full bg-[#EEF2FC]">
               <div
-                className="h-1.5 rounded-full bg-[camp-cobalt] transition-all duration-150 ease-out"
+                className="h-1.5 rounded-full bg-camp-cobalt transition-all duration-150 ease-out"
                 style={{ width: `${percent}%` }}
               />
             </div>
@@ -274,7 +274,7 @@ export const TrailDailyView = ({
       })()}
 
       {/* Trail-level footer */}
-      <div className="text-center text-xs text-[text-tertiary]">
+      <div className="text-center text-xs text-text-tertiary">
         {totalDaysCompleted} of {trail.duration_days} trail days completed
       </div>
     </div>

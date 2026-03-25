@@ -50,7 +50,7 @@ const WikiMockup = () => (
       <div className='flex flex-wrap items-center gap-1.5'>
         <FeaturePill variant='green'>PD 1096</FeaturePill>
         <FeaturePill variant='cobalt'>Building Technology</FeaturePill>
-        <span className='text-[11px] text-[camp-cobalt] underline'>12 related questions →</span>
+        <span className='text-[11px] text-camp-cobalt underline'>12 related questions →</span>
       </div>
     </div>
   </div>

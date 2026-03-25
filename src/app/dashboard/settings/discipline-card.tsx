@@ -80,9 +80,9 @@ export function DisciplineCard() {
           })}
         </div>
         
-        <div className='p-4 bg-[#FEF8ED]/50 border-t border-[warning]/20 flex gap-3'>
-          <SCIcon icon={Warning} size="sm" className='text-[warning] shrink-0 mt-0.5' />
-          <p className='text-[11px] text-[warning] leading-relaxed'>
+        <div className='p-4 bg-[#FEF8ED]/50 border-t border-warning/20 flex gap-3'>
+          <SCIcon icon={Warning} size="sm" className='text-warning shrink-0 mt-0.5' />
+          <p className='text-[11px] text-warning leading-relaxed'>
             <strong>Note:</strong> Switching your active discipline will change the entire dashboard context, including your Wiki, Readiness Score, and Question Bank. Subscription costs may vary by discipline.
           </p>
         </div>

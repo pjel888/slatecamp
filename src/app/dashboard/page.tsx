@@ -91,7 +91,7 @@ export default async function DashboardPage() {
         {/* ── 2. Content grid ────────────────────────────── */}
         <div className='min-h-0'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
-            <div className='lg:col-span-3 rounded-md border border-[border] bg-white p-2'>
+            <div className='lg:col-span-3 rounded-md border border-border bg-white p-2'>
               <div className='grid grid-cols-3 gap-2 h-full'>
                 <div className='rounded-md bg-[#EEF2FC] min-h-[72px]' />
                 <div className='rounded-md bg-[#EDFAF4] min-h-[72px]' />

@@ -92,16 +92,16 @@ export function ConfirmSubmitSheet({
               <div className='px-6 py-5 space-y-5'>
                 {/* Stats grid */}
                 <div className='grid grid-cols-3 gap-2'>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-[#EDFAF4] border border-[emerald]/20'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-[#EDFAF4] border border-emerald/20'>
                     <SCIcon
                       icon={CheckCircle}
                       size='sm'
-                      className='text-[emerald] mb-1.5'
+                      className='text-emerald mb-1.5'
                     />
-                    <span className='text-xl font-black text-[emerald] leading-none'>
+                    <span className='text-xl font-black text-emerald leading-none'>
                       {answeredCount}
                     </span>
-                    <Eyebrow className="text-[emerald]/70 mt-1">Answered</Eyebrow>
+                    <Eyebrow className="text-emerald/70 mt-1">Answered</Eyebrow>
                   </div>
                   <div className='flex flex-col items-center p-3 rounded-md bg-zinc-50 border border-zinc-100'>
                     <SCIcon
@@ -114,17 +114,17 @@ export function ConfirmSubmitSheet({
                     </span>
                     <Eyebrow className="text-zinc-400 mt-1">To Review</Eyebrow>
                   </div>
-                  <div className='flex flex-col items-center p-3 rounded-md bg-[#FEF8ED] border border-[warning]/20'>
+                  <div className='flex flex-col items-center p-3 rounded-md bg-[#FEF8ED] border border-warning/20'>
                     <SCIcon
                       icon={Flag}
                       size='sm'
                       weight='fill'
-                      className='text-[warning] mb-1.5'
+                      className='text-warning mb-1.5'
                     />
-                    <span className='text-xl font-black text-[warning] leading-none'>
+                    <span className='text-xl font-black text-warning leading-none'>
                       {flaggedCount}
                     </span>
-                    <Eyebrow className="text-[warning]/70 mt-1">Flagged</Eyebrow>
+                    <Eyebrow className="text-warning/70 mt-1">Flagged</Eyebrow>
                   </div>
                 </div>
 
@@ -149,7 +149,7 @@ export function ConfirmSubmitSheet({
                   </button>
                   <button
                     onClick={onCancel}
-                    className='w-full h-9 rounded-sm border border-border text-[text-secondary] font-medium text-sm hover:bg-[#EEF2FC]/50 transition-colors'
+                    className='w-full h-9 rounded-sm border border-border text-text-secondary font-medium text-sm hover:bg-[#EEF2FC]/50 transition-colors'
                   >
                     Keep Reviewing
                   </button>

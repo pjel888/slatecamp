@@ -35,7 +35,7 @@ export const QuestionQuickPreview = ({
         <button
           type="button"
           onClick={(e) => e.stopPropagation()}
-          className="whitespace-nowrap text-xs text-[text-secondary] hover:text-[camp-cobalt] border border-[border] rounded-sm px-2 py-0.5 transition-colors duration-150 hover:border-[camp-cobalt] bg-white"
+          className="whitespace-nowrap text-xs text-text-secondary hover:text-camp-cobalt border border-border rounded-sm px-2 py-0.5 transition-colors duration-150 hover:border-camp-cobalt bg-white"
         >
           Preview
         </button>
@@ -46,14 +46,14 @@ export const QuestionQuickPreview = ({
         sideOffset={8}
         className="w-[400px] p-0 rounded-md overflow-hidden"
       >
-        <div className="flex items-center justify-between px-3 py-2 border-b border-[border] bg-[#F8F7F5]">
-          <span className="text-[11px] font-semibold text-[text-secondary] uppercase tracking-wider">
+        <div className="flex items-center justify-between px-3 py-2 border-b border-border bg-[#F8F7F5]">
+          <span className="text-[11px] font-semibold text-text-secondary uppercase tracking-wider">
             Quick Preview
           </span>
           <button
             type="button"
             onClick={() => setOpen(false)}
-            className="text-[text-tertiary] hover:text-[text-primary] transition-colors duration-150 text-[11px] leading-none"
+            className="text-text-tertiary hover:text-text-primary transition-colors duration-150 text-[11px] leading-none"
             aria-label="Close preview"
           >
             ✕

@@ -426,18 +426,18 @@ export const SaveAllBar = ({
 
   if (conflictWarning) {
     return (
-      <div className="border-b border-[border] bg-[#FEF8ED] px-4 py-3">
+      <div className="border-b border-border bg-[#FEF8ED] px-4 py-3">
         <div className="flex items-start gap-3">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FEF8ED] border border-[warning]/40">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#FEF8ED] border border-warning/40">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 4v4m0 2.5h.01M14.5 8a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="#D4951A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div className="min-w-0 flex-1">
-            <p className="text-xs font-semibold text-[text-primary]">
+            <p className="text-xs font-semibold text-text-primary">
               Concurrent edit detected
             </p>
-            <p className="mt-0.5 text-xs text-[text-secondary]">
+            <p className="mt-0.5 text-xs text-text-secondary">
               This article was modified by another user since you started editing. Saving now will overwrite their changes.
             </p>
           </div>
@@ -445,14 +445,14 @@ export const SaveAllBar = ({
             <button
               type="button"
               onClick={handleConflictCancel}
-              className="rounded-sm border border-[border] px-3 py-1 text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:border-[text-tertiary] hover:text-[text-primary]"
+              className="rounded-sm border border-border px-3 py-1 text-xs text-text-secondary transition-colors duration-150 ease-out hover:border-text-tertiary hover:text-text-primary"
             >
               Cancel
             </button>
             <button
               type="button"
               onClick={handleConflictSaveAnyway}
-              className="rounded-sm bg-[destructive] px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#b33a3a]"
+              className="rounded-sm bg-destructive px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#b33a3a]"
             >
               Save anyway
             </button>
@@ -467,14 +467,14 @@ export const SaveAllBar = ({
   if (failedResults.length === 0) return null
 
   return (
-    <div className="border-b border-[border] bg-[#FEF8ED] px-4 py-2">
+    <div className="border-b border-border bg-[#FEF8ED] px-4 py-2">
       <div className="flex items-start gap-3">
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-medium text-[warning]">
+          <p className="text-xs font-medium text-warning">
             {failedResults.length} item{failedResults.length !== 1 ? 's' : ''}{' '}
             failed to save
             {successResults.length > 0 && (
-              <span className="text-[emerald]">
+              <span className="text-emerald">
                 {' '}
                 ({successResults.length} succeeded)
               </span>
@@ -485,19 +485,19 @@ export const SaveAllBar = ({
             {results.map((r) => (
               <li key={`${r.type}-${r.id}`} className="flex items-center gap-1.5 text-[11px]">
                 {r.success ? (
-                  <span className="text-[emerald]" aria-label="Succeeded">
+                  <span className="text-emerald" aria-label="Succeeded">
                     &#10003;
                   </span>
                 ) : (
-                  <span className="text-[destructive]" aria-label="Failed">
+                  <span className="text-destructive" aria-label="Failed">
                     &#10007;
                   </span>
                 )}
-                <span className={r.success ? 'text-[text-secondary]' : 'text-[text-primary]'}>
+                <span className={r.success ? 'text-text-secondary' : 'text-text-primary'}>
                   {r.label}
                 </span>
                 {r.error && (
-                  <span className="text-[destructive]">&mdash; {r.error}</span>
+                  <span className="text-destructive">&mdash; {r.error}</span>
                 )}
               </li>
             ))}
@@ -508,14 +508,14 @@ export const SaveAllBar = ({
           <button
             type="button"
             onClick={handleRetry}
-            className="rounded-sm bg-[camp-cobalt] px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            className="rounded-sm bg-camp-cobalt px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
           >
             Retry failed items
           </button>
           <button
             type="button"
             onClick={handleDismiss}
-            className="rounded-sm border border-[border] px-3 py-1 text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:border-[text-tertiary] hover:text-[text-primary]"
+            className="rounded-sm border border-border px-3 py-1 text-xs text-text-secondary transition-colors duration-150 ease-out hover:border-text-tertiary hover:text-text-primary"
           >
             Dismiss
           </button>

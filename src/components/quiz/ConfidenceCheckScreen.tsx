@@ -34,12 +34,12 @@ export const ConfidenceCheckScreen = ({
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-5 py-10 bg-[#F5F7FA]">
       <div className="w-full max-w-md space-y-6">
         {/* Eyebrow */}
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-[text-tertiary] text-center">
+        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-text-tertiary text-center">
           Confidence Check
         </p>
 
         {/* Prompt */}
-        <h2 className="text-base font-semibold text-[text-primary] text-center">
+        <h2 className="text-base font-semibold text-text-primary text-center">
           How confident are you in these subjects right now?
         </h2>
 
@@ -48,9 +48,9 @@ export const ConfidenceCheckScreen = ({
           {subjectNames.map((subject) => (
             <div
               key={subject}
-              className="flex items-center justify-between bg-white border border-[border] rounded-md px-4 py-3"
+              className="flex items-center justify-between bg-white border border-border rounded-md px-4 py-3"
             >
-              <span className="text-sm font-medium text-[text-primary] truncate mr-4">
+              <span className="text-sm font-medium text-text-primary truncate mr-4">
                 {subject}
               </span>
               <div className="flex items-center gap-1.5 shrink-0">
@@ -64,7 +64,7 @@ export const ConfidenceCheckScreen = ({
                       className={cn(
                         'px-3 py-1 rounded-sm text-xs font-medium transition-colors duration-150',
                         isSelected
-                          ? 'bg-[camp-cobalt] text-white'
+                          ? 'bg-camp-cobalt text-white'
                           : 'bg-[#F5F5F5] text-[#555555] hover:bg-[#E5E7EB]',
                       )}
                     >
@@ -82,7 +82,7 @@ export const ConfidenceCheckScreen = ({
           <button
             type="button"
             onClick={onSkip}
-            className="text-sm text-[text-tertiary] hover:text-[text-secondary] transition-colors"
+            className="text-sm text-text-tertiary hover:text-text-secondary transition-colors"
           >
             Skip
           </button>
@@ -93,7 +93,7 @@ export const ConfidenceCheckScreen = ({
             className={cn(
               'h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
               allRated
-                ? 'bg-[camp-cobalt] text-white hover:bg-[#1535A8]'
+                ? 'bg-camp-cobalt text-white hover:bg-[#1535A8]'
                 : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
             )}
           >

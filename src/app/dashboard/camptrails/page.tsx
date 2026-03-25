@@ -32,16 +32,16 @@ const CampTrailsPage = async () => {
             <p className="font-mono text-[11px] uppercase tracking-widest text-[#534AB7] mb-1.5">
               Structured Study
             </p>
-            <h1 className="text-2xl font-bold text-[text-primary] mb-1">
+            <h1 className="text-2xl font-bold text-text-primary mb-1">
               Camp Trail
             </h1>
-            <p className="text-sm text-[text-secondary] max-w-2xl leading-relaxed">
+            <p className="text-sm text-text-secondary max-w-2xl leading-relaxed">
               Your daily study prescription. Choose a trail calibrated to your
               exam date and gaps — then follow the map.
             </p>
           </div>
           <div className="hidden md:flex items-center gap-2 shrink-0 mt-1">
-            <span className="font-mono text-[11px] text-[text-tertiary] tabular-nums">
+            <span className="font-mono text-[11px] text-text-tertiary tabular-nums">
               {trails.length} trails available
             </span>
           </div>
@@ -62,9 +62,9 @@ const CampTrailsPage = async () => {
         {/* ─── Trail Library ─── */}
         {trails.length > 0 && (
           <div>
-            <div className="h-px bg-[border]" />
+            <div className="h-px bg-border" />
             <div className="pt-6">
-              <p className="font-mono text-[11px] uppercase text-[text-tertiary] tracking-widest mb-4">
+              <p className="font-mono text-[11px] uppercase text-text-tertiary tracking-widest mb-4">
                 {hasActiveEnrollment || recommendation ? 'Explore More Trails' : 'All Trails'}
               </p>
               <TrailLibrary
@@ -80,12 +80,12 @@ const CampTrailsPage = async () => {
         {trails.length === 0 && (
           <div className="flex flex-col items-center justify-center py-16 px-6 text-center">
             <div className="w-12 h-12 rounded-lg bg-[#EEF2FC] flex items-center justify-center mb-4">
-              <Compass size={24} className="text-[camp-cobalt]" />
+              <Compass size={24} className="text-camp-cobalt" />
             </div>
-            <h2 className="text-lg font-semibold text-[text-primary] mb-2">
+            <h2 className="text-lg font-semibold text-text-primary mb-2">
               Trails are being prepared
             </h2>
-            <p className="text-sm text-[text-secondary] max-w-md">
+            <p className="text-sm text-text-secondary max-w-md">
               Structured study paths are coming soon. In the meantime, you can
               practice with Camp Mode or explore the Wiki.
             </p>

@@ -14,7 +14,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 const QuizMockup = () => (
   <div className='overflow-hidden rounded-md border border-[#E5E7EB] bg-white'>
     {/* Header — Cobalt with noise */}
-    <div className='relative overflow-hidden bg-[camp-cobalt] px-4 py-3 noise-heavy'>
+    <div className='relative overflow-hidden bg-camp-cobalt px-4 py-3 noise-heavy'>
       <div className='relative z-10 flex items-center justify-between'>
         <div>
           <div className='font-mono text-[11px] tracking-[.18em] uppercase text-white/50'>
@@ -50,7 +50,7 @@ const QuizMockup = () => (
             opt.state === 'correct'
               ? 'border-[#1B7A3C] bg-[#f0fdf4] text-[#1B7A3C]'
               : opt.state === 'selected'
-                ? 'border-[camp-cobalt] bg-[#EEF2FC] text-[camp-cobalt]'
+                ? 'border-camp-cobalt bg-[#EEF2FC] text-camp-cobalt'
                 : 'border-[#E5E7EB] text-[#555]'
           }`}
         >
@@ -66,7 +66,7 @@ const QuizMockup = () => (
 
       {/* Explanation card */}
       <div className='mt-3 rounded-[8px] bg-[#F5F5F5] p-3'>
-        <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-[camp-cobalt]'>
+        <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-camp-cobalt'>
           Explanation
         </div>
         <p className='text-[11px] leading-relaxed text-[#555]'>
@@ -74,7 +74,7 @@ const QuizMockup = () => (
           ceiling height of 2.70m on the ground floor, and 2.40m on floors above.
           This is a commonly tested provision.
         </p>
-        <span className='mt-2 inline-block rounded-[4px] bg-[camp-cobalt] px-2 py-0.5 font-mono text-[11px] text-white'>
+        <span className='mt-2 inline-block rounded-[4px] bg-camp-cobalt px-2 py-0.5 font-mono text-[11px] text-white'>
           PD 1096 § 808
         </span>
       </div>

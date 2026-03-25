@@ -27,9 +27,9 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
   }
 
   return (
-    <div className="not-prose my-6 border border-[camp-cobalt] rounded-[10px] overflow-hidden">
+    <div className="not-prose my-6 border border-camp-cobalt rounded-[10px] overflow-hidden">
       {/* Header */}
-      <div className="bg-[camp-cobalt] px-[18px] py-3 flex items-center gap-2.5">
+      <div className="bg-camp-cobalt px-[18px] py-3 flex items-center gap-2.5">
         <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-[11px] text-white font-bold">
           ?
         </div>
@@ -49,7 +49,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
             const isSelected = i === selectedIndex
             const isCorrectOption = opt.is_correct
 
-            let containerStyle = 'border-[#E0DED8] hover:border-[camp-cobalt] hover:bg-[#EEF3FD] cursor-pointer'
+            let containerStyle = 'border-[#E0DED8] hover:border-camp-cobalt hover:bg-[#EEF3FD] cursor-pointer'
             let letterStyle = 'border-[#E0DED8] text-[#3D3D3A]'
 
             if (isAnswered) {

@@ -72,8 +72,8 @@ const ToggleGroup = ({
   options: { value: string; label: string }[]
 }) => (
   <div className="flex items-center gap-1.5">
-    <span className="text-xs text-[text-tertiary]">{label}:</span>
-    <div className="flex rounded-sm border border-[border]">
+    <span className="text-xs text-text-tertiary">{label}:</span>
+    <div className="flex rounded-sm border border-border">
       {options.map((opt) => (
         <button
           key={opt.value}
@@ -81,8 +81,8 @@ const ToggleGroup = ({
           onClick={() => onChange(opt.value)}
           className={`px-2 py-0.5 text-[11px] font-medium transition-colors duration-150 ease-out first:rounded-l-sm last:rounded-r-sm ${
             value === opt.value
-              ? 'bg-[#EEF2FC] text-[camp-cobalt]'
-              : 'bg-white text-[text-tertiary] hover:text-[text-secondary]'
+              ? 'bg-[#EEF2FC] text-camp-cobalt'
+              : 'bg-white text-text-tertiary hover:text-text-secondary'
           }`}
         >
           {opt.label}
@@ -123,7 +123,7 @@ const AutoTextarea = ({
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
       rows={minRows}
-      className={`w-full resize-none border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out ${className}`}
+      className={`w-full resize-none border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out ${className}`}
     />
   )
 }
@@ -142,14 +142,14 @@ const CollapsibleSection = ({
   const [open, setOpen] = useState(defaultOpen)
 
   return (
-    <div className="border-t border-[border]">
+    <div className="border-t border-border">
       <button
         type="button"
         onClick={() => setOpen((p) => !p)}
         className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
       >
         <svg
-          className={`h-3 w-3 shrink-0 text-[text-tertiary] transition-transform duration-150 ease-out ${
+          className={`h-3 w-3 shrink-0 text-text-tertiary transition-transform duration-150 ease-out ${
             open ? 'rotate-90' : ''
           }`}
           viewBox="0 0 12 12"
@@ -158,7 +158,7 @@ const CollapsibleSection = ({
         >
           <path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-        <span className="font-mono text-[11px] uppercase tracking-widest text-[text-tertiary]">
+        <span className="font-mono text-[11px] uppercase tracking-widest text-text-tertiary">
           {title}
         </span>
       </button>
@@ -182,20 +182,20 @@ const CopyableField = ({ label, value }: { label: string; value: string | null }
 
   return (
     <div className="flex items-center justify-between gap-2">
-      <span className="text-xs text-[text-tertiary]">{label}:</span>
+      <span className="text-xs text-text-tertiary">{label}:</span>
       <div className="flex items-center gap-1">
-        <span className="max-w-[200px] truncate font-mono text-[11px] text-[text-secondary]">
+        <span className="max-w-[200px] truncate font-mono text-[11px] text-text-secondary">
           {value || 'N/A'}
         </span>
         {value && (
           <button
             type="button"
             onClick={handleCopy}
-            className="rounded-sm p-0.5 text-[text-tertiary] transition-colors duration-150 ease-out hover:text-[text-secondary]"
+            className="rounded-sm p-0.5 text-text-tertiary transition-colors duration-150 ease-out hover:text-text-secondary"
             title="Copy"
           >
             {copied ? (
-              <svg className="h-3 w-3 text-[emerald]" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <svg className="h-3 w-3 text-emerald" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M3 8.5l3 3 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             ) : (
@@ -265,7 +265,7 @@ const QuestionCardExpanded = ({
         <div className="space-y-3">
           {/* Question stem */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Question stem
             </label>
             <AutoTextarea
@@ -278,7 +278,7 @@ const QuestionCardExpanded = ({
 
           {/* Options A-D with radio */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Answer options
             </label>
             <div className="space-y-2">
@@ -290,9 +290,9 @@ const QuestionCardExpanded = ({
                       name={`correct-${question.question_id}`}
                       checked={question.correct_option_id === opt.id}
                       onChange={() => handleCorrectChange(opt.id)}
-                      className="h-3.5 w-3.5 accent-[emerald]"
+                      className="h-3.5 w-3.5 accent-emerald"
                     />
-                    <span className="font-mono text-[11px] font-semibold text-[text-secondary]">
+                    <span className="font-mono text-[11px] font-semibold text-text-secondary">
                       {opt.id}
                     </span>
                   </label>
@@ -301,7 +301,7 @@ const QuestionCardExpanded = ({
                     value={opt.text}
                     onChange={(e) => handleOptionTextChange(opt.id, e.target.value)}
                     placeholder={`Option ${opt.id}...`}
-                    className="min-w-0 flex-1 border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+                    className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                   />
                 </div>
               ))}
@@ -310,7 +310,7 @@ const QuestionCardExpanded = ({
 
           {/* Rationale */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Rationale
             </label>
             <AutoTextarea
@@ -320,11 +320,11 @@ const QuestionCardExpanded = ({
               minRows={2}
             />
             <div className="mt-1 flex items-center justify-between">
-              <span className="text-[11px] text-[text-tertiary]">
+              <span className="text-[11px] text-text-tertiary">
                 {rationaleLength} character{rationaleLength !== 1 ? 's' : ''}
               </span>
               {rationaleLength > 0 && rationaleLength < 50 && (
-                <span className="flex items-center gap-1 text-[11px] text-[warning]">
+                <span className="flex items-center gap-1 text-[11px] text-warning">
                   <svg className="h-3 w-3" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M8 5v3m0 2.5h.01M14.5 8a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -341,7 +341,7 @@ const QuestionCardExpanded = ({
         <div className="space-y-3">
           {/* Explanation */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Extended explanation (optional)
             </label>
             <AutoTextarea
@@ -354,7 +354,7 @@ const QuestionCardExpanded = ({
 
           {/* Code citation */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Code citation
             </label>
             <input
@@ -362,13 +362,13 @@ const QuestionCardExpanded = ({
               value={question.code_citation || ''}
               onChange={(e) => onUpdate({ code_citation: e.target.value })}
               placeholder="BP 344 &sect;C.6.3.a"
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           {/* Difficulty */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Difficulty (0.00 - 1.00)
             </label>
             <div className="flex items-center gap-3">
@@ -381,7 +381,7 @@ const QuestionCardExpanded = ({
                 onChange={(e) =>
                   onUpdate({ difficulty: parseFloat(e.target.value) || 0 })
                 }
-                className="w-24 border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
               />
               <DifficultyBar value={question.difficulty} />
             </div>
@@ -393,14 +393,14 @@ const QuestionCardExpanded = ({
               checked={question.is_assessment}
               onCheckedChange={(checked) => onUpdate({ is_assessment: !!checked })}
             />
-            <span className="text-xs font-medium text-[text-secondary]">
+            <span className="text-xs font-medium text-text-secondary">
               Diagnostic only
             </span>
           </label>
 
           {/* Application context */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Real-world scenario
             </label>
             <input
@@ -408,13 +408,13 @@ const QuestionCardExpanded = ({
               value={question.application_context || ''}
               onChange={(e) => onUpdate({ application_context: e.target.value })}
               placeholder="How this applies in practice..."
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           {/* Practice context tags */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Practice context (comma-separated tags)
             </label>
             <input
@@ -422,13 +422,13 @@ const QuestionCardExpanded = ({
               value={(question.practice_context || []).join(', ')}
               onChange={(e) => handlePracticeContextChange(e.target.value)}
               placeholder="residential, commercial, seismic"
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           {/* Prompt image URL */}
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Prompt image URL
             </label>
             <input
@@ -436,10 +436,10 @@ const QuestionCardExpanded = ({
               value={question.prompt_image_url || ''}
               onChange={(e) => onUpdate({ prompt_image_url: e.target.value })}
               placeholder="https://..."
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
             {isValidImageUrl(question.prompt_image_url) && (
-              <div className="mt-2 overflow-hidden rounded-sm border border-[border]">
+              <div className="mt-2 overflow-hidden rounded-sm border border-border">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={question.prompt_image_url!}
@@ -457,45 +457,45 @@ const QuestionCardExpanded = ({
         <div className="space-y-2">
           <CopyableField label="question_id" value={question.question_id} />
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">topic_id:</span>
-            <span className="font-mono text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">topic_id:</span>
+            <span className="font-mono text-[11px] text-text-secondary">
               {nodeAleId || question.topic_id}
               {nodeName && (
-                <span className="ml-1 font-sans text-[text-tertiary]">({nodeName})</span>
+                <span className="ml-1 font-sans text-text-tertiary">({nodeName})</span>
               )}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">model_id:</span>
-            <span className="font-mono text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">model_id:</span>
+            <span className="font-mono text-[11px] text-text-secondary">
               {question.model_id || 'N/A'}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">difficulty_rating (IRT):</span>
-            <span className="font-mono text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">difficulty_rating (IRT):</span>
+            <span className="font-mono text-[11px] text-text-secondary">
               {question.difficulty_rating != null
                 ? question.difficulty_rating.toFixed(3)
                 : 'Not yet computed'}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">discrimination_rating (IRT):</span>
-            <span className="font-mono text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">discrimination_rating (IRT):</span>
+            <span className="font-mono text-[11px] text-text-secondary">
               {question.discrimination_rating != null
                 ? question.discrimination_rating.toFixed(3)
                 : 'Not yet computed'}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">created_at:</span>
-            <span className="text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">created_at:</span>
+            <span className="text-[11px] text-text-secondary">
               {formatTimestamp(question.created_at)}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs text-[text-tertiary]">updated_at:</span>
-            <span className="text-[11px] text-[text-secondary]">
+            <span className="text-xs text-text-tertiary">updated_at:</span>
+            <span className="text-[11px] text-text-secondary">
               {formatTimestamp(question.updated_at)}
             </span>
           </div>
@@ -503,11 +503,11 @@ const QuestionCardExpanded = ({
       </CollapsibleSection>
 
       {/* ── Delete action ──────────────────────────────────── */}
-      <div className="border-t border-[border] px-3 py-2">
+      <div className="border-t border-border px-3 py-2">
         <button
           type="button"
           onClick={onDelete}
-          className="text-xs text-[destructive] transition-colors duration-150 ease-out hover:text-[#b33a3a]"
+          className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-[#b33a3a]"
         >
           Delete question
         </button>
@@ -568,7 +568,7 @@ const DraftQuestionCard = ({
   if (!isExpanded) {
     return (
       <div
-        className="group cursor-pointer border border-[camp-cobalt] rounded-md bg-[#EEF2FC] transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="group cursor-pointer border border-camp-cobalt rounded-md bg-[#EEF2FC] transition-shadow duration-150 ease-out hover:shadow-sm"
         onClick={onExpand}
         role="button"
         tabIndex={0}
@@ -580,42 +580,42 @@ const DraftQuestionCard = ({
         }}
       >
         <div className="flex items-center gap-2 px-3 py-2.5">
-          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[camp-cobalt] text-[11px] font-bold text-white">
+          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-camp-cobalt text-[11px] font-bold text-white">
             N
           </span>
           <DifficultyBar value={draft.difficulty} />
-          <span className="font-mono text-[11px] text-[camp-cobalt]">NEW</span>
-          <span className="min-w-0 flex-1 truncate text-sm text-[text-primary]">
+          <span className="font-mono text-[11px] text-camp-cobalt">NEW</span>
+          <span className="min-w-0 flex-1 truncate text-sm text-text-primary">
             {draft.text ? truncate(draft.text, 120) : 'New question (untitled)'}
           </span>
-          <span className="shrink-0 text-xs text-[camp-cobalt]">Edit &#9662;</span>
+          <span className="shrink-0 text-xs text-camp-cobalt">Edit &#9662;</span>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="overflow-hidden border border-[camp-cobalt] rounded-md bg-white">
+    <div className="overflow-hidden border border-camp-cobalt rounded-md bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-[border] bg-[#EEF2FC] px-3 py-2">
+      <div className="flex items-center justify-between border-b border-border bg-[#EEF2FC] px-3 py-2">
         <div className="flex items-center gap-2">
-          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[camp-cobalt] text-[11px] font-bold text-white">
+          <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-camp-cobalt text-[11px] font-bold text-white">
             N
           </span>
-          <span className="text-xs font-semibold text-[camp-cobalt]">New Question</span>
+          <span className="text-xs font-semibold text-camp-cobalt">New Question</span>
         </div>
         <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={onRemove}
-            className="text-xs text-[destructive] transition-colors duration-150 ease-out hover:text-[#b33a3a]"
+            className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-[#b33a3a]"
           >
             Discard
           </button>
           <button
             type="button"
             onClick={onExpand}
-            className="text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:text-[text-primary]"
+            className="text-xs text-text-secondary transition-colors duration-150 ease-out hover:text-text-primary"
           >
             Collapse &#9652;
           </button>
@@ -625,7 +625,7 @@ const DraftQuestionCard = ({
       {/* Core fields */}
       <div className="space-y-3 px-3 py-3">
         <div>
-          <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+          <label className="mb-1 block text-xs font-medium text-text-secondary">
             Question stem
           </label>
           <AutoTextarea
@@ -637,7 +637,7 @@ const DraftQuestionCard = ({
         </div>
 
         <div>
-          <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+          <label className="mb-1 block text-xs font-medium text-text-secondary">
             Answer options
           </label>
           <div className="space-y-2">
@@ -649,9 +649,9 @@ const DraftQuestionCard = ({
                     name={`correct-draft-${draft._tempId}`}
                     checked={draft.correct_option_id === opt.id}
                     onChange={() => handleUpdate({ correct_option_id: opt.id })}
-                    className="h-3.5 w-3.5 accent-[emerald]"
+                    className="h-3.5 w-3.5 accent-emerald"
                   />
-                  <span className="font-mono text-[11px] font-semibold text-[text-secondary]">
+                  <span className="font-mono text-[11px] font-semibold text-text-secondary">
                     {opt.id}
                   </span>
                 </label>
@@ -660,7 +660,7 @@ const DraftQuestionCard = ({
                   value={opt.text}
                   onChange={(e) => handleOptionTextChange(opt.id, e.target.value)}
                   placeholder={`Option ${opt.id}...`}
-                  className="min-w-0 flex-1 border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+                  className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                 />
               </div>
             ))}
@@ -668,7 +668,7 @@ const DraftQuestionCard = ({
         </div>
 
         <div>
-          <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+          <label className="mb-1 block text-xs font-medium text-text-secondary">
             Rationale
           </label>
           <AutoTextarea
@@ -678,11 +678,11 @@ const DraftQuestionCard = ({
             minRows={2}
           />
           <div className="mt-1 flex items-center justify-between">
-            <span className="text-[11px] text-[text-tertiary]">
+            <span className="text-[11px] text-text-tertiary">
               {rationaleLength} character{rationaleLength !== 1 ? 's' : ''}
             </span>
             {rationaleLength > 0 && rationaleLength < 50 && (
-              <span className="flex items-center gap-1 text-[11px] text-[warning]">
+              <span className="flex items-center gap-1 text-[11px] text-warning">
                 <svg className="h-3 w-3" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path d="M8 5v3m0 2.5h.01M14.5 8a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -697,7 +697,7 @@ const DraftQuestionCard = ({
       <CollapsibleSection title="Details">
         <div className="space-y-3">
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Extended explanation (optional)
             </label>
             <AutoTextarea
@@ -709,7 +709,7 @@ const DraftQuestionCard = ({
           </div>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Code citation
             </label>
             <input
@@ -717,12 +717,12 @@ const DraftQuestionCard = ({
               value={draft.code_citation}
               onChange={(e) => handleUpdate({ code_citation: e.target.value })}
               placeholder="BP 344 &sect;C.6.3.a"
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Difficulty (0.00 - 1.00)
             </label>
             <div className="flex items-center gap-3">
@@ -735,7 +735,7 @@ const DraftQuestionCard = ({
                 onChange={(e) =>
                   handleUpdate({ difficulty: parseFloat(e.target.value) || 0 })
                 }
-                className="w-24 border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
               />
               <DifficultyBar value={draft.difficulty} />
             </div>
@@ -746,13 +746,13 @@ const DraftQuestionCard = ({
               checked={draft.is_assessment}
               onCheckedChange={(checked) => handleUpdate({ is_assessment: !!checked })}
             />
-            <span className="text-xs font-medium text-[text-secondary]">
+            <span className="text-xs font-medium text-text-secondary">
               Diagnostic only
             </span>
           </label>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Real-world scenario
             </label>
             <input
@@ -760,12 +760,12 @@ const DraftQuestionCard = ({
               value={draft.application_context}
               onChange={(e) => handleUpdate({ application_context: e.target.value })}
               placeholder="How this applies in practice..."
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Practice context (comma-separated tags)
             </label>
             <input
@@ -773,12 +773,12 @@ const DraftQuestionCard = ({
               value={draft.practice_context.join(', ')}
               onChange={(e) => handlePracticeContextChange(e.target.value)}
               placeholder="residential, commercial, seismic"
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
           <div>
-            <label className="mb-1 block text-xs font-medium text-[text-secondary]">
+            <label className="mb-1 block text-xs font-medium text-text-secondary">
               Prompt image URL
             </label>
             <input
@@ -786,10 +786,10 @@ const DraftQuestionCard = ({
               value={draft.prompt_image_url}
               onChange={(e) => handleUpdate({ prompt_image_url: e.target.value })}
               placeholder="https://..."
-              className="w-full border border-[border] rounded-sm px-2.5 py-1.5 text-sm bg-white text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
             {isValidImageUrl(draft.prompt_image_url) && (
-              <div className="mt-2 overflow-hidden rounded-sm border border-[border]">
+              <div className="mt-2 overflow-hidden rounded-sm border border-border">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={draft.prompt_image_url}
@@ -840,18 +840,18 @@ const QuestionCard = ({
   // ── Deleted state ──────────────────────────────────────────
   if (isDeleted) {
     return (
-      <div className="border border-[destructive] rounded-md bg-[#FDF0F0]">
+      <div className="border border-destructive rounded-md bg-[#FDF0F0]">
         <div className="flex items-center justify-between px-3 py-2.5">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-medium text-[destructive]">Delete on next save</span>
-            <span className="min-w-0 truncate text-sm text-[destructive]/70">
+            <span className="text-xs font-medium text-destructive">Delete on next save</span>
+            <span className="min-w-0 truncate text-sm text-destructive/70">
               {truncate(question.text, 80)}
             </span>
           </div>
           <button
             type="button"
             onClick={onUndoDelete}
-            className="shrink-0 rounded-sm border border-[destructive]/30 bg-white px-2.5 py-1 text-xs font-medium text-[destructive] transition-colors duration-150 ease-out hover:bg-[#FDF0F0]"
+            className="shrink-0 rounded-sm border border-destructive/30 bg-white px-2.5 py-1 text-xs font-medium text-destructive transition-colors duration-150 ease-out hover:bg-[#FDF0F0]"
           >
             Undo
           </button>
@@ -864,7 +864,7 @@ const QuestionCard = ({
   if (!isExpanded) {
     return (
       <div
-        className="group cursor-pointer border border-[border] rounded-md bg-white transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="group cursor-pointer border border-border rounded-md bg-white transition-shadow duration-150 ease-out hover:shadow-sm"
         onClick={onToggle}
         role="button"
         tabIndex={0}
@@ -878,22 +878,22 @@ const QuestionCard = ({
         <div className="flex items-center gap-2 px-3 py-2.5">
           {/* Dirty indicator */}
           {isDirty && (
-            <span className="h-2 w-2 shrink-0 rounded-full bg-[warning]" title="Unsaved changes" />
+            <span className="h-2 w-2 shrink-0 rounded-full bg-warning" title="Unsaved changes" />
           )}
 
           <DifficultyBar value={question.difficulty} />
 
           {aleId && (
-            <span className="font-mono text-[11px] text-[text-tertiary]">{aleId}</span>
+            <span className="font-mono text-[11px] text-text-tertiary">{aleId}</span>
           )}
 
           {hasCitation && (
-            <span className="text-[11px] text-[emerald]">Has citation</span>
+            <span className="text-[11px] text-emerald">Has citation</span>
           )}
 
           {!hasRationale && (
             <svg
-              className="h-3.5 w-3.5 shrink-0 text-[warning]"
+              className="h-3.5 w-3.5 shrink-0 text-warning"
               viewBox="0 0 16 16"
               fill="none"
               role="img"
@@ -909,11 +909,11 @@ const QuestionCard = ({
             </svg>
           )}
 
-          <span className="min-w-0 flex-1 truncate text-sm text-[text-primary]">
+          <span className="min-w-0 flex-1 truncate text-sm text-text-primary">
             {truncate(question.text, 120)}
           </span>
 
-          <span className="shrink-0 text-xs text-[camp-cobalt] opacity-0 transition-opacity duration-150 ease-out group-hover:opacity-100">
+          <span className="shrink-0 text-xs text-camp-cobalt opacity-0 transition-opacity duration-150 ease-out group-hover:opacity-100">
             Edit &#9662;
           </span>
         </div>
@@ -923,16 +923,16 @@ const QuestionCard = ({
 
   // ── Expanded state ─────────────────────────────────────────
   return (
-    <div className="overflow-hidden border border-[border] rounded-md bg-white">
+    <div className="overflow-hidden border border-border rounded-md bg-white">
       {/* Collapse header */}
-      <div className="flex items-center justify-between border-b border-[border] bg-[#F8F7F5] px-3 py-2">
+      <div className="flex items-center justify-between border-b border-border bg-[#F8F7F5] px-3 py-2">
         <div className="flex items-center gap-2">
           {isDirty && (
-            <span className="h-2 w-2 shrink-0 rounded-full bg-[warning]" title="Unsaved changes" />
+            <span className="h-2 w-2 shrink-0 rounded-full bg-warning" title="Unsaved changes" />
           )}
           <DifficultyBar value={question.difficulty} />
           {aleId && (
-            <span className="font-mono text-[11px] text-[text-tertiary]">{aleId}</span>
+            <span className="font-mono text-[11px] text-text-tertiary">{aleId}</span>
           )}
         </div>
         <div className="flex items-center gap-2">
@@ -941,8 +941,8 @@ const QuestionCard = ({
             onClick={() => setShowCampPreview((v) => !v)}
             className={`rounded-sm border px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 ease-out ${
               showCampPreview
-                ? 'border-[warning] bg-[#FFF8EB] text-[warning]'
-                : 'border-[border] bg-white text-[text-secondary] hover:border-[text-tertiary] hover:text-[text-primary]'
+                ? 'border-warning bg-[#FFF8EB] text-warning'
+                : 'border-border bg-white text-text-secondary hover:border-text-tertiary hover:text-text-primary'
             }`}
             title="Toggle Camp Mode preview"
           >
@@ -951,7 +951,7 @@ const QuestionCard = ({
           <button
             type="button"
             onClick={onToggle}
-            className="text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:text-[text-primary]"
+            className="text-xs text-text-secondary transition-colors duration-150 ease-out hover:text-text-primary"
           >
             Collapse &#9652;
           </button>
@@ -968,7 +968,7 @@ const QuestionCard = ({
 
       {/* ── Camp Mode Preview (inline toggle) ─────────────── */}
       {showCampPreview && (
-        <div className="border-t border-[border] px-3 pb-3 pt-3">
+        <div className="border-t border-border px-3 pb-3 pt-3">
           <CampModePreview
             stem={question.text}
             options={question.options.map((o) => o.text)}
@@ -1015,7 +1015,7 @@ const TaxonomyGroup = ({
         className="flex w-full items-center gap-2 py-2 text-left"
       >
         <svg
-          className={`h-3 w-3 shrink-0 text-[text-tertiary] transition-transform duration-150 ease-out ${
+          className={`h-3 w-3 shrink-0 text-text-tertiary transition-transform duration-150 ease-out ${
             collapsed ? '' : 'rotate-90'
           }`}
           viewBox="0 0 12 12"
@@ -1024,11 +1024,11 @@ const TaxonomyGroup = ({
         >
           <path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-        <span className="font-mono text-[11px] text-[text-tertiary]">
+        <span className="font-mono text-[11px] text-text-tertiary">
           {node.ale_id || node.node_id.slice(0, 12)}
         </span>
-        <span className="text-xs font-medium text-[text-secondary]">&mdash; {node.name}</span>
-        <span className="text-[11px] text-[text-tertiary]">
+        <span className="text-xs font-medium text-text-secondary">&mdash; {node.name}</span>
+        <span className="text-[11px] text-text-tertiary">
           {questions.length} question{questions.length !== 1 ? 's' : ''}
         </span>
       </button>
@@ -1253,17 +1253,17 @@ export const QuestionsPanel = ({
     <div className="flex h-full flex-col overflow-hidden">
       <Tabs defaultValue="questions" className="flex h-full flex-col overflow-hidden">
         {/* ── Tab bar ───────────────────────────────────────── */}
-        <div className="flex shrink-0 items-center border-b border-[border] bg-white px-3">
+        <div className="flex shrink-0 items-center border-b border-border bg-white px-3">
           <TabsList variant="underline" className="border-b-0">
             <TabsTrigger value="questions">
               Questions
-              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-[camp-cobalt]">
+              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-camp-cobalt">
                 {totalCount}
               </span>
             </TabsTrigger>
             <TabsTrigger value="ei-prompts">
               EI Prompts
-              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-[camp-cobalt]">
+              <span className="ml-1.5 inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-[#EEF2FC] px-1 text-[11px] font-medium text-camp-cobalt">
                 {eiPrompts.length}
               </span>
             </TabsTrigger>
@@ -1275,7 +1275,7 @@ export const QuestionsPanel = ({
           <button
             type="button"
             onClick={handleAddQuestion}
-            className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-sm text-[camp-cobalt] transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
+            className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-sm text-camp-cobalt transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
             title="Add new question"
           >
             <svg className="h-4 w-4" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -1288,10 +1288,10 @@ export const QuestionsPanel = ({
         <TabsContent value="questions" className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {/* Filter bar */}
           {showFilterBar && (
-            <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[border] bg-[#F8F7F5] px-3 py-2">
+            <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-border bg-[#F8F7F5] px-3 py-2">
               <div className="relative min-w-[180px] flex-1">
                 <svg
-                  className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[text-tertiary]"
+                  className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary"
                   viewBox="0 0 16 16"
                   fill="none"
                   aria-hidden="true"
@@ -1305,7 +1305,7 @@ export const QuestionsPanel = ({
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search question stems... (⌘K)"
-                  className="w-full border border-[border] rounded-sm bg-white py-1 pl-7 pr-2.5 text-sm text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150 ease-out"
+                  className="w-full border border-border rounded-sm bg-white py-1 pl-7 pr-2.5 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                 />
               </div>
 
@@ -1339,22 +1339,22 @@ export const QuestionsPanel = ({
               /* ── Empty state ──────────────────────────────── */
               <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EEF2FC]">
-                  <svg className="h-6 w-6 text-[camp-cobalt]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <svg className="h-6 w-6 text-camp-cobalt" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <path d="M9 12h6m-3-3v6m-6 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-[text-primary]">
+                  <p className="text-sm font-medium text-text-primary">
                     No questions for this topic yet
                   </p>
-                  <p className="mt-1 max-w-[280px] text-xs text-[text-tertiary]">
+                  <p className="mt-1 max-w-[280px] text-xs text-text-tertiary">
                     Add the first question to start building exam coverage.
                   </p>
                 </div>
                 <button
                   type="button"
                   onClick={handleAddQuestion}
-                  className="inline-flex items-center gap-1.5 rounded-sm bg-[camp-cobalt] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+                  className="inline-flex items-center gap-1.5 rounded-sm bg-camp-cobalt px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
                 >
                   <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -1410,7 +1410,7 @@ export const QuestionsPanel = ({
                   dirty.newQuestions.length === 0 &&
                   questions.length > 0 && (
                     <div className="py-8 text-center">
-                      <p className="text-sm text-[text-tertiary]">
+                      <p className="text-sm text-text-tertiary">
                         No questions match the current filters.
                       </p>
                       <button
@@ -1420,7 +1420,7 @@ export const QuestionsPanel = ({
                           setRationaleFilter('all')
                           setCitationFilter('all')
                         }}
-                        className="mt-2 text-xs text-[camp-cobalt] transition-colors duration-150 ease-out hover:text-[#1535A8]"
+                        className="mt-2 text-xs text-camp-cobalt transition-colors duration-150 ease-out hover:text-[#1535A8]"
                       >
                         Clear filters
                       </button>

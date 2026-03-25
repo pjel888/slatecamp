@@ -4,7 +4,7 @@
  * without crashing the MDX renderer.
  */
 export const GenericBlock = ({ children }: { children?: React.ReactNode }) => (
-  <div className="not-prose my-4 rounded-md border border-[border] bg-[#F8F7F5] p-4 text-sm text-[text-primary] leading-relaxed [&>p]:m-0 [&>p+p]:mt-2 [&_strong]:font-semibold">
+  <div className="not-prose my-4 rounded-md border border-border bg-[#F8F7F5] p-4 text-sm text-text-primary leading-relaxed [&>p]:m-0 [&>p+p]:mt-2 [&_strong]:font-semibold">
     {children}
   </div>
 )

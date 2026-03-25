@@ -41,7 +41,7 @@ export function Tabs({ defaultTab, children }: TabsProps) {
             onClick={() => setActiveTab(tab.value)}
             className={`font-[family-name:var(--font-dm-mono)] text-[12px] font-medium py-[10px] px-5 border-b-2 -mb-px transition-all duration-150 ${
               activeTab === tab.value
-                ? 'text-[camp-cobalt] border-[camp-cobalt] bg-white'
+                ? 'text-camp-cobalt border-camp-cobalt bg-white'
                 : 'text-[#737370] border-transparent hover:text-[#1A1A1A]'
             }`}
           >

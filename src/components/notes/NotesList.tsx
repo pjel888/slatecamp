@@ -40,14 +40,14 @@ export function NotesList({
 
   return (
     <div className={cn(
-      'flex h-full shrink-0 flex-col border-r border-[border] bg-white transition-all duration-200 ease-out',
+      'flex h-full shrink-0 flex-col border-r border-border bg-white transition-all duration-200 ease-out',
       collapsed ? 'w-12' : 'w-[268px]',
     )}>
       {/* Collapse toggle — identical to NotesNavigator */}
       <div className="flex shrink-0 items-center justify-end px-2 py-3">
         <button
           onClick={onToggle}
-          className="flex items-center justify-center h-7 w-7 shrink-0 rounded-md text-[text-tertiary] hover:text-[camp-cobalt] hover:bg-[#EEF2FC]/60 transition-colors duration-150"
+          className="flex items-center justify-center h-7 w-7 shrink-0 rounded-md text-text-tertiary hover:text-camp-cobalt hover:bg-[#EEF2FC]/60 transition-colors duration-150"
           aria-label={collapsed ? 'Expand notes list' : 'Collapse notes list'}
         >
           <SCIcon icon={collapsed ? CaretRight : CaretLeft} size="sm" />
@@ -59,40 +59,40 @@ export function NotesList({
         <div className="flex flex-1 flex-col items-center gap-3 pt-2">
           <button
             onClick={onCreate}
-            className="flex items-center justify-center h-7 w-7 rounded-md text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[camp-cobalt] transition-colors"
+            className="flex items-center justify-center h-7 w-7 rounded-md text-text-tertiary hover:bg-[#EEF2FC] hover:text-camp-cobalt transition-colors"
             title="New note"
           >
             <SCIcon icon={Plus} size="sm" />
           </button>
-          <div className="flex items-center justify-center h-7 w-7 text-[text-tertiary]" title="Notes list">
+          <div className="flex items-center justify-center h-7 w-7 text-text-tertiary" title="Notes list">
             <SCIcon icon={FileText} size="sm" />
           </div>
           {notes.length > 0 && (
-            <span className="text-[11px] font-medium text-[text-tertiary]">{notes.length}</span>
+            <span className="text-[11px] font-medium text-text-tertiary">{notes.length}</span>
           )}
         </div>
       ) : (
         <>
           {/* Header */}
-          <div className="flex shrink-0 flex-col gap-2.5 border-b border-[border] px-3 pb-3">
+          <div className="flex shrink-0 flex-col gap-2.5 border-b border-border px-3 pb-3">
             <div className="flex items-center justify-between">
-              <span className="text-[13px] font-semibold text-[text-primary]">Notes</span>
+              <span className="text-[13px] font-semibold text-text-primary">Notes</span>
               <button
                 onClick={onCreate}
-                className="rounded-md p-1 text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[camp-cobalt] transition-colors"
+                className="rounded-md p-1 text-text-tertiary hover:bg-[#EEF2FC] hover:text-camp-cobalt transition-colors"
                 title="New note"
               >
                 <SCIcon icon={Plus} size="sm" />
               </button>
             </div>
             <div className="relative">
-              <SCIcon icon={MagnifyingGlass} size="xs" className="absolute left-2.5 top-1/2 -translate-y-1/2 text-[text-tertiary] pointer-events-none" />
+              <SCIcon icon={MagnifyingGlass} size="xs" className="absolute left-2.5 top-1/2 -translate-y-1/2 text-text-tertiary pointer-events-none" />
               <input
                 type="text"
                 placeholder="Search notes..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full rounded-md bg-[#F5F5F5] py-1.5 pl-8 pr-3 text-xs text-[text-primary] border border-[border] placeholder:text-[text-tertiary] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[camp-cobalt]/20 focus:border-[camp-cobalt] transition-all duration-150"
+                className="w-full rounded-md bg-[#F5F5F5] py-1.5 pl-8 pr-3 text-xs text-text-primary border border-border placeholder:text-text-tertiary focus:bg-white focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt transition-all duration-150"
               />
             </div>
           </div>
@@ -100,7 +100,7 @@ export function NotesList({
           {/* List */}
           <ul className="flex-1 overflow-y-auto py-1">
             {filtered.length === 0 ? (
-              <li className="py-10 text-center text-xs text-[text-tertiary]">
+              <li className="py-10 text-center text-xs text-text-tertiary">
                 {searchQuery ? 'No matching notes' : 'No notes yet'}
               </li>
             ) : (
@@ -116,7 +116,7 @@ export function NotesList({
                         'flex w-full flex-col items-start gap-1.5 rounded-md mx-1 px-3 py-3 text-left transition-colors duration-100',
                         isSelected
                           ? 'bg-[#EEF2FC]'
-                          : 'hover:bg-[camp-cobalt]/[0.04]',
+                          : 'hover:bg-camp-cobalt/[0.04]',
                       )}
                       style={{ width: 'calc(100% - 8px)' }}
                     >
@@ -130,7 +130,7 @@ export function NotesList({
                         )}
                         <span className={cn(
                           'flex-1 truncate text-[13px] font-semibold leading-snug',
-                          isSelected ? 'text-[camp-cobalt]' : 'text-[text-primary]',
+                          isSelected ? 'text-camp-cobalt' : 'text-text-primary',
                         )}>
                           {note.title || 'Untitled Note'}
                         </span>
@@ -141,14 +141,14 @@ export function NotesList({
 
                       {/* Snippet */}
                       {note.snippet && (
-                        <span className="line-clamp-2 text-[11px] leading-relaxed text-[text-secondary]">
+                        <span className="line-clamp-2 text-[11px] leading-relaxed text-text-secondary">
                           {note.snippet}
                         </span>
                       )}
 
                       {/* Meta row */}
                       <div className="flex w-full items-center gap-2">
-                        <span className="text-[11px] text-[text-tertiary]">
+                        <span className="text-[11px] text-text-tertiary">
                           {formatDistanceToNow(new Date(note.updated_at), { addSuffix: false })
                             .replace('about ', '')
                             .replace('less than a minute', 'now')}
@@ -157,8 +157,8 @@ export function NotesList({
                           <span className={cn(
                             'inline-flex items-center gap-0.5 rounded-full px-1.5 py-0.5 text-[11px] font-semibold',
                             isSelected
-                              ? 'bg-[camp-cobalt]/10 text-[camp-cobalt]'
-                              : 'bg-[#F5F5F5] text-[text-secondary]',
+                              ? 'bg-camp-cobalt/10 text-camp-cobalt'
+                              : 'bg-[#F5F5F5] text-text-secondary',
                           )}>
                             <badge.icon className="h-2.5 w-2.5" />
                             {badge.label}
@@ -170,7 +170,7 @@ export function NotesList({
                           </span>
                         )}
                         {note.question_id && (
-                          <span className="text-[11px] text-[warning]" title="From Quiz">
+                          <span className="text-[11px] text-warning" title="From Quiz">
                             <SCIcon icon={Question} size="xs" />
                           </span>
                         )}
@@ -184,14 +184,14 @@ export function NotesList({
                     )}>
                       <button
                         onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
-                        className="rounded p-1 text-[border] hover:bg-[#EEF2FC] hover:text-primary transition-colors"
+                        className="rounded p-1 text-border hover:bg-[#EEF2FC] hover:text-primary transition-colors"
                         title={note.is_pinned ? 'Unpin' : 'Pin'}
                       >
                         <SCIcon icon={PushPin} size="xs" />
                       </button>
                       <button
                         onClick={(e) => { e.stopPropagation(); onDelete(note.id) }}
-                        className="rounded p-1 text-[border] hover:bg-[#FDF0F0] hover:text-[destructive] transition-colors"
+                        className="rounded p-1 text-border hover:bg-[#FDF0F0] hover:text-destructive transition-colors"
                         title="Delete"
                       >
                         <SCIcon icon={Trash} size="xs" />

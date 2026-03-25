@@ -45,9 +45,9 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
       <div className="space-y-2">
         {options.map((opt) => {
           let classes = 'bg-zinc-50 hover:bg-zinc-100 border-zinc-200'
-          if (revealed && opt.id === correctOptionId) classes = 'bg-emerald-50 border-[emerald]'
-          if (revealed && opt.id === selected && opt.id !== correctOptionId) classes = 'bg-red-50 border-[destructive]'
-          if (!revealed && opt.id === selected) classes = 'bg-[#EEF2FC] border-[camp-cobalt]'
+          if (revealed && opt.id === correctOptionId) classes = 'bg-emerald-50 border-emerald'
+          if (revealed && opt.id === selected && opt.id !== correctOptionId) classes = 'bg-red-50 border-destructive'
+          if (!revealed && opt.id === selected) classes = 'bg-[#EEF2FC] border-camp-cobalt'
 
           return (
             <button
@@ -64,7 +64,7 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
       {!revealed && selected && (
         <button
           onClick={handleConfirm}
-          className="w-full py-2.5 bg-[camp-cobalt] text-white text-[13px] font-medium rounded-sm hover:bg-[#1535A8] transition-colors duration-150"
+          className="w-full py-2.5 bg-camp-cobalt text-white text-[13px] font-medium rounded-sm hover:bg-[#1535A8] transition-colors duration-150"
         >
           Confirm Answer
         </button>
@@ -72,7 +72,7 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
 
       {revealed && (
         <div className="mt-3 p-3 bg-zinc-50 rounded-sm border border-zinc-200">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-[camp-cobalt] mb-1">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-camp-cobalt mb-1">
             Code Reference
           </p>
           <p className="text-[12px] text-zinc-600 leading-relaxed">{codeCitation}</p>

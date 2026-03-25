@@ -26,7 +26,7 @@ export const ErrorTypePrompt = ({ onSelect, onSkip }: ErrorTypePromptProps) => {
 
   return (
     <div className="py-3 space-y-2">
-      <p className="text-[13px] text-[text-secondary] font-medium">
+      <p className="text-[13px] text-text-secondary font-medium">
         What happened there?
       </p>
       <div className="flex flex-wrap gap-1.5">
@@ -38,7 +38,7 @@ export const ErrorTypePrompt = ({ onSelect, onSkip }: ErrorTypePromptProps) => {
             className={cn(
               'px-3 py-1.5 rounded-full text-xs font-medium transition-colors duration-150',
               selected === value
-                ? 'bg-[camp-cobalt] text-white'
+                ? 'bg-camp-cobalt text-white'
                 : 'bg-[#F5F5F5] text-[#555555] hover:bg-[#E5E7EB]',
             )}
           >
@@ -49,7 +49,7 @@ export const ErrorTypePrompt = ({ onSelect, onSkip }: ErrorTypePromptProps) => {
       <button
         type="button"
         onClick={onSkip}
-        className="text-xs text-[text-tertiary] hover:text-[text-secondary] transition-colors"
+        className="text-xs text-text-tertiary hover:text-text-secondary transition-colors"
       >
         Skip
       </button>

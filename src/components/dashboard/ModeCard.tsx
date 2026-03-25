@@ -71,7 +71,7 @@ export function ModeCard({
           <SCIcon icon={Icon} size='lg' className='text-white' />
         </div>
         <div className='min-w-0'>
-          <h3 className='text-sm font-semibold text-[text-primary] leading-tight'>{title}</h3>
+          <h3 className='text-sm font-semibold text-text-primary leading-tight'>{title}</h3>
           {subtitle && (
             <Eyebrow>{subtitle}</Eyebrow>
           )}
@@ -80,7 +80,7 @@ export function ModeCard({
 
       {/* Content */}
       <div className='flex-1'>
-        <p className='text-sm text-[text-secondary] leading-relaxed mb-4 line-clamp-2'>
+        <p className='text-sm text-text-secondary leading-relaxed mb-4 line-clamp-2'>
           {description}
         </p>
       </div>
@@ -88,7 +88,7 @@ export function ModeCard({
       {/* Micro-stats */}
       {(sessionCount !== undefined && sessionCount > 0) && (
         <div className='mb-4 pb-3 border-b border-border/60'>
-          <p className='text-[11px] text-[text-tertiary] font-medium'>
+          <p className='text-[11px] text-text-tertiary font-medium'>
             {sessionCount} session{sessionCount !== 1 ? 's' : ''}
             {lastPlayedAt && <> &middot; Last: {formatTimeAgo(lastPlayedAt)}</>}
           </p>

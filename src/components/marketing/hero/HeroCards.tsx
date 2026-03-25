@@ -35,13 +35,13 @@ const SUBJECT_READINESS = [
 
 const ALESubjectCoverageCard = () => {
   const subjects = [
-    { name: 'Building Technology', weight: '20%', color: 'bg-[camp-cobalt]' },
-    { name: 'Structural Design', weight: '15%', color: 'bg-[camp-cobalt]' },
-    { name: 'Utilities (MEPFS)', weight: '15%', color: 'bg-[camp-cobalt]' },
-    { name: 'History of Architecture', weight: '15%', color: 'bg-[camp-orange]' },
-    { name: 'Architectural Design', weight: '15%', color: 'bg-[camp-orange]' },
-    { name: 'Professional Practice', weight: '10%', color: 'bg-[camp-orange]' },
-    { name: 'Building Laws & Codes', weight: '10%', color: 'bg-[camp-orange]' },
+    { name: 'Building Technology', weight: '20%', color: 'bg-camp-cobalt' },
+    { name: 'Structural Design', weight: '15%', color: 'bg-camp-cobalt' },
+    { name: 'Utilities (MEPFS)', weight: '15%', color: 'bg-camp-cobalt' },
+    { name: 'History of Architecture', weight: '15%', color: 'bg-camp-orange' },
+    { name: 'Architectural Design', weight: '15%', color: 'bg-camp-orange' },
+    { name: 'Professional Practice', weight: '10%', color: 'bg-camp-orange' },
+    { name: 'Building Laws & Codes', weight: '10%', color: 'bg-camp-orange' },
   ]
 
   return (
@@ -121,8 +121,8 @@ const MockQuestionCard = () => (
             key={opt.label}
             className={cn(
               'flex items-center gap-2 rounded-sm border px-2.5 py-1.5 text-[11px] transition-colors',
-              isCorrect && 'border-[emerald] bg-[#EDFAF4] text-[emerald]',
-              isIncorrect && 'border-[destructive] bg-[#FDF0F0] text-[destructive]',
+              isCorrect && 'border-emerald bg-[#EDFAF4] text-emerald',
+              isIncorrect && 'border-destructive bg-[#FDF0F0] text-destructive',
               !isCorrect &&
                 !isIncorrect &&
                 'border-[#E5E7EB] bg-white text-zinc-800 hover:bg-[#FFFFFF]',
@@ -131,8 +131,8 @@ const MockQuestionCard = () => (
             <span
               className={cn(
                 'h-2 w-2 shrink-0 rounded-full',
-                isCorrect && 'bg-[emerald]',
-                isIncorrect && 'bg-[destructive]',
+                isCorrect && 'bg-emerald',
+                isIncorrect && 'bg-destructive',
                 !isCorrect && !isIncorrect && 'bg-zinc-400',
               )}
               aria-hidden='true'
@@ -205,9 +205,9 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           const score = isHovered ? improved : value
           const barClass =
             score < 50
-              ? 'bg-[destructive]'
+              ? 'bg-destructive'
               : score < 70
-                ? 'bg-[warning]'
+                ? 'bg-warning'
                 : 'bg-emerald-500'
 
           return (

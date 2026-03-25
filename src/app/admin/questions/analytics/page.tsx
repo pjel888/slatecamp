@@ -193,7 +193,7 @@ const QuestionsAnalyticsPage = async () => {
               label="Has citation"
               filled={stats.total - stats.missingCitation}
               total={stats.total}
-              color="bg-[camp-cobalt]"
+              color="bg-camp-cobalt"
             />
           </div>
         </CardContent>

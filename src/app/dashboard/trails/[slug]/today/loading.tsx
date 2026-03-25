@@ -14,11 +14,11 @@ export default function TrailTodayLoading() {
         <Skeleton className="h-3 w-36" />
       </div>
 
-      <div className="h-px bg-[border]" />
+      <div className="h-px bg-border" />
 
       {/* Step cards */}
       {[1, 2, 3].map((i) => (
-        <div key={i} className="rounded-md border border-[border] bg-white p-4 space-y-3">
+        <div key={i} className="rounded-md border border-border bg-white p-4 space-y-3">
           <div className="flex items-center gap-3">
             <Skeleton className="w-5 h-5 rounded-sm" />
             <Skeleton className="h-3 w-16" />
@@ -32,7 +32,7 @@ export default function TrailTodayLoading() {
         </div>
       ))}
 
-      <div className="h-px bg-[border]" />
+      <div className="h-px bg-border" />
 
       {/* Mini heatmap */}
       <div className="space-y-2">
@@ -44,7 +44,7 @@ export default function TrailTodayLoading() {
         </div>
       </div>
 
-      <div className="h-px bg-[border]" />
+      <div className="h-px bg-border" />
 
       {/* Trail ribbon */}
       <div className="space-y-2">

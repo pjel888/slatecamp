@@ -22,7 +22,7 @@ const SleepAwareLabel = ({ preferredTime, userStudyWindow }: SleepAwareLabelProp
   // Conflict: step prefers morning but user studies in the evening
   if (preferredTime === 'morning' && userStudyWindow === 'evening') {
     return (
-      <span className="text-[11px] italic text-[warning]">
+      <span className="text-[11px] italic text-warning">
         Best studied in the morning
       </span>
     )
@@ -31,7 +31,7 @@ const SleepAwareLabel = ({ preferredTime, userStudyWindow }: SleepAwareLabelProp
   // Conflict: step prefers evening but user studies in the morning
   if (preferredTime === 'evening' && userStudyWindow === 'morning') {
     return (
-      <span className="text-[11px] italic text-[warning]">
+      <span className="text-[11px] italic text-warning">
         Best studied in the evening
       </span>
     )
