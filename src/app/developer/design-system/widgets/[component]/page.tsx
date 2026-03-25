@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import dynamic from 'next/dynamic'
 import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
 import { ComponentPageLayout } from '@/components/developer/ComponentPageLayout'
 import {
@@ -7,6 +6,11 @@ import {
   getComponentsByDomain,
 } from '@/lib/developer/componentRegistry'
 import type { PropsTableEntry } from '@/types/developer'
+import {
+  DoorConfiguratorPreview,
+  CorridorVisualizerPreview,
+  WorkstationCalculatorPreview,
+} from '../_widget-previews'
 
 /* ------------------------------------------------------------------ */
 /*  Widgets Domain — Component Documentation Pages                     */
@@ -17,23 +21,6 @@ interface ComponentData {
   codeSnippet: string
   preview: React.ReactNode
 }
-
-/* ── Dynamic imports (client components, SSR disabled) ───────────── */
-
-const DoorConfiguratorPreview = dynamic(
-  () => import('@/components/wiki/widgets/bp344/DoorConfigurator').then((m) => m.DoorConfigurator),
-  { ssr: false }
-)
-
-const CorridorVisualizerPreview = dynamic(
-  () => import('@/components/wiki/widgets/bp344/CorridorVisualizer').then((m) => m.CorridorVisualizer),
-  { ssr: false }
-)
-
-const WorkstationCalculatorPreview = dynamic(
-  () => import('@/components/wiki/widgets/dsgn013/WorkstationCalculator').then((m) => m.WorkstationCalculator),
-  { ssr: false }
-)
 
 /* ── DoorConfigurator ────────────────────────────────────────────── */
 
@@ -48,11 +35,7 @@ const doorConfiguratorData: ComponentData = {
   codeSnippet: `import { DoorConfigurator } from '@/components/wiki/widgets/bp344/DoorConfigurator'
 
 <DoorConfigurator />`,
-  preview: (
-    <div className="max-w-md">
-      <DoorConfiguratorPreview />
-    </div>
-  ),
+  preview: <DoorConfiguratorPreview />,
 }
 
 /* ── CorridorVisualizer ──────────────────────────────────────────── */
@@ -65,11 +48,7 @@ const corridorVisualizerData: ComponentData = {
   codeSnippet: `import { CorridorVisualizer } from '@/components/wiki/widgets/bp344/CorridorVisualizer'
 
 <CorridorVisualizer />`,
-  preview: (
-    <div className="max-w-lg">
-      <CorridorVisualizerPreview />
-    </div>
-  ),
+  preview: <CorridorVisualizerPreview />,
 }
 
 /* ── WorkstationCalculator ───────────────────────────────────────── */
@@ -84,11 +63,7 @@ const workstationCalculatorData: ComponentData = {
   codeSnippet: `import { WorkstationCalculator } from '@/components/wiki/widgets/dsgn013/WorkstationCalculator'
 
 <WorkstationCalculator />`,
-  preview: (
-    <div className="max-w-md">
-      <WorkstationCalculatorPreview />
-    </div>
-  ),
+  preview: <WorkstationCalculatorPreview />,
 }
 
 /* ── Placeholder data for remaining widgets ──────────────────────── */
