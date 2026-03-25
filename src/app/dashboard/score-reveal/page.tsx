@@ -23,7 +23,14 @@ const ScoreRevealPage = async () => {
 
   // Mark as shown (fire-and-forget) and track funnel event
   void markScoreRevealed(user.id)
-  void trackServerEvent('score_reveal_viewed', { score: results.score })
+  const scoreZone =
+    results.score >= 75 ? 'high' : results.score >= 50 ? 'mid' : 'low'
+  void trackServerEvent('score_reveal_viewed', {
+    score: results.score,
+    zone: scoreZone,
+    is_first_view: true,
+    time_to_render_ms: 0,
+  })
 
   // Check retaker status and recommend trail in parallel
   const supabase = await createClient()

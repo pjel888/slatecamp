@@ -27,6 +27,7 @@ import {
   completeTestingSession,
   updateSessionProgress,
 } from '@/lib/actions/testing'
+import { trackSessionStarted, trackSessionCompleted } from '@/lib/analytics/events'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -153,6 +154,15 @@ export const SessionShell = ({
       // Ignore storage errors
     }
   }, [currentIndex, answers, submittedQuestions, stormConfirmedQuestions, remainingSeconds, localStorageKey])
+
+  // ─── Track session started on mount ───────────────────────────────────────
+
+  useEffect(() => {
+    void trackSessionStarted({
+      mode: source,
+      source_screen: 'testing',
+    })
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ─── Storm timer countdown ─────────────────────────────────────────────────
 
@@ -398,9 +408,18 @@ export const SessionShell = ({
       setSaveStatus('error')
       return
     }
+    const correctCount = Array.from(answers.values()).filter((a) => a.isCorrect).length
+    const totalAnswered = Array.from(answers.values()).filter((a) => a.selectedOptionId).length
+    const score = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0
+    void trackSessionCompleted({
+      mode: source,
+      score,
+      questions_total: questions.length,
+      time_elapsed_s: Math.round((Date.now() - (session.started_at ? new Date(session.started_at).getTime() : Date.now())) / 1000),
+    })
     try { localStorage.removeItem(localStorageKey) } catch { /* ignore */ }
     router.push(ROUTES.TESTING_DEBRIEF(sessionId))
-  }, [sessionId, localStorageKey, router])
+  }, [sessionId, localStorageKey, router, answers, source, questions.length, session.started_at])
 
   const handleExit = useCallback(() => {
     router.push(ROUTES.TESTING)

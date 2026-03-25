@@ -12,6 +12,7 @@ import {
   updateQuizSession,
 } from '@/lib/actions/quiz'
 import { completeAssessment } from '@/lib/actions/assessment'
+import { trackDiagnosticCompleted } from '@/lib/analytics/events'
 import { Skeleton } from '@/components/ui/skeleton'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
@@ -146,6 +147,13 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
 
       // Complete assessment scoring
       await completeAssessment(sessionId)
+
+      // Track diagnostic completion
+      void trackDiagnosticCompleted({
+        questions_answered: questions.length,
+        time_elapsed_s: Math.round((Date.now() - questionStartRef.current) / 1000),
+        completion_rate: answers.size / questions.length,
+      })
 
       // UX Strategy: "Calculating your Readiness Score..." — 2-3 second
       // intentional pause even if computation is instant, creates ceremonial weight

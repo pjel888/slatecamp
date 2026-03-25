@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { getDashboardPageData } from '@/lib/actions/dashboard-page'
+import { trackServerEvent } from '@/lib/analytics-server'
 import { HeroCommandBar } from '@/components/dashboard/HeroCommandBar'
 import {
   HeatmapSection,
@@ -20,6 +21,12 @@ import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
   const data = await getDashboardPageData()
+
+  void trackServerEvent('app_opened', {
+    days_since_last_visit: 0,
+    current_score: data.readinessScore || undefined,
+    days_to_exam: data.daysUntilExam ?? undefined,
+  })
 
   const showLockedScore =
     data.isFreeUser &&
