@@ -15,7 +15,7 @@ export default function NotesLoading() {
       {/* Note cards grid */}
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {[1, 2, 3, 4, 5, 6].map((i) => (
-          <div key={i} className="rounded-md border border-[#D4DAE3] bg-white p-4 space-y-2.5">
+          <div key={i} className="rounded-md border border-[border] bg-white p-4 space-y-2.5">
             <Skeleton className="h-4 w-3/4" />
             <Skeleton className="h-3 w-full" />
             <Skeleton className="h-3 w-2/3" />

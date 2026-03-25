@@ -11,7 +11,7 @@ interface ConfidenceTagProps {
 export const ConfidenceTag = ({ value, onChange }: ConfidenceTagProps) => {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-[12px] font-semibold text-[#8896A7] uppercase tracking-widest shrink-0">
+      <span className="text-[12px] font-semibold text-[text-tertiary] uppercase tracking-widest shrink-0">
         How sure are you?
       </span>
       <div className="flex items-center gap-2">
@@ -23,8 +23,8 @@ export const ConfidenceTag = ({ value, onChange }: ConfidenceTagProps) => {
           className={cn(
             'px-3 py-1.5 rounded-full text-[12px] font-semibold border transition-colors duration-150',
             value === 'sure'
-              ? 'bg-[#1B3FC4] border-[#1B3FC4] text-white'
-              : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40 hover:bg-[#EEF2FC]/50',
+              ? 'bg-[camp-cobalt] border-[camp-cobalt] text-white'
+              : 'bg-white border-[border] text-[text-secondary] hover:border-[camp-cobalt]/40 hover:bg-[#EEF2FC]/50',
           )}
         >
           Sure
@@ -37,8 +37,8 @@ export const ConfidenceTag = ({ value, onChange }: ConfidenceTagProps) => {
           className={cn(
             'px-3 py-1.5 rounded-full text-[12px] font-semibold border transition-colors duration-150',
             value === 'unsure'
-              ? 'bg-[#1B3FC4] border-[#1B3FC4] text-white'
-              : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40 hover:bg-[#EEF2FC]/50',
+              ? 'bg-[camp-cobalt] border-[camp-cobalt] text-white'
+              : 'bg-white border-[border] text-[text-secondary] hover:border-[camp-cobalt]/40 hover:bg-[#EEF2FC]/50',
           )}
         >
           Unsure

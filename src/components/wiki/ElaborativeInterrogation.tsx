@@ -118,11 +118,11 @@ export const ElaborativeInterrogation = ({
     <div className="not-prose my-7 border border-[#E0DED8] rounded-xl overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
       <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[#1B3FC415] dark:to-[#1B3FC410] dark:border-[#3A3835]">
-        <div className="w-7 h-7 rounded-lg bg-[#1B3FC4] flex items-center justify-center text-white text-sm">
+        <div className="w-7 h-7 rounded-lg bg-[camp-cobalt] flex items-center justify-center text-white text-sm">
           {headerIcon}
         </div>
         <div className="flex-1">
-          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt]">
             {headerLabel}
           </div>
           <div className="text-[13px] text-[#3D3D3A] mt-px dark:text-[#C8C6C0]">
@@ -198,14 +198,14 @@ export const ElaborativeInterrogation = ({
               onChange={(e) => setOpenText(e.target.value)}
               aria-label="Write your answer"
               placeholder={placeholder || "Write your answer here. There is no single correct answer, but the explanation below will help you calibrate your thinking."}
-              className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-[#E0DED8] rounded-[10px] font-sans text-sm text-[#1A1A1A] resize-y outline-none transition-colors duration-150 focus:border-[#1B3FC4] placeholder:text-[#A8A8A5] dark:bg-[#1A1A1A] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-[#E0DED8] rounded-[10px] font-sans text-sm text-[#1A1A1A] resize-y outline-none transition-colors duration-150 focus:border-[camp-cobalt] placeholder:text-[#A8A8A5] dark:bg-[#1A1A1A] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             />
             <div className="flex justify-end mt-2.5">
               <button
                 type="button"
                 onClick={handleOpenSubmit}
                 disabled={isPending}
-                className="px-5 py-2 bg-[#1B3FC4] text-white border-none rounded-lg text-[13px] font-semibold font-sans transition-colors duration-150 hover:bg-[#3B5BD6] disabled:bg-[#A8A8A5] disabled:cursor-not-allowed"
+                className="px-5 py-2 bg-[camp-cobalt] text-white border-none rounded-lg text-[13px] font-semibold font-sans transition-colors duration-150 hover:bg-[#3B5BD6] disabled:bg-[#A8A8A5] disabled:cursor-not-allowed"
               >
                 Show Explanation
               </button>
@@ -225,7 +225,7 @@ export const ElaborativeInterrogation = ({
         {/* Reveal text */}
         {isRevealed && sanitizedAnswer && (
           <div className="mt-4 p-4 bg-[#F5F5F5] rounded-[10px] dark:bg-[#252420]">
-            <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5">
+            <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt] mb-1.5">
               Why This Matters
             </div>
             <div

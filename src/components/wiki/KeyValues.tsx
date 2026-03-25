@@ -17,7 +17,7 @@ export const KeyValues = ({ items }: { items: KeyValueItem[] | string }) => {
           key={i}
           className="bg-white border border-[#E0DED8] rounded-[10px] px-4 py-4 text-center dark:bg-[#1A1A1A] dark:border-[#3A3835]"
         >
-          <div className="font-sans text-[28px] font-bold text-[#1B3FC4] leading-none mb-1">
+          <div className="font-sans text-[28px] font-bold text-[camp-cobalt] leading-none mb-1">
             {item.value}
           </div>
           <div className="font-[var(--font-dm-mono)] text-[11px] text-[#737370] uppercase tracking-[0.06em] dark:text-[#A8A8A5]">

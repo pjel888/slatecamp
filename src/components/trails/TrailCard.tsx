@@ -16,7 +16,7 @@ const TRAIL_TYPE_LABELS: Record<CampTrail['trail_type'], string> = {
 }
 
 const TRAIL_TYPE_STYLES: Record<CampTrail['trail_type'], string> = {
-  time_gated: 'bg-[#EEF2FC] text-[#1B3FC4]',
+  time_gated: 'bg-[#EEF2FC] text-[camp-cobalt]',
   subject_mastery: 'bg-[#EEEDFE] text-[#534AB7]',
   code_deep_dive: 'bg-[#FEF8ED] text-[#8B6914]',
   remediation: 'bg-[#FFF3E8] text-[#9E5B1F]',
@@ -92,7 +92,7 @@ const MiniPhaseMap = ({ trail, enrollment }: MiniPhaseMapProps) => {
           return (
             <span
               key={i}
-              className="aspect-square min-w-0 rounded-[3px] border border-[#D4DAE3] bg-transparent"
+              className="aspect-square min-w-0 rounded-[3px] border border-[border] bg-transparent"
             />
           )
         }
@@ -133,7 +133,7 @@ const MiniPhaseMap = ({ trail, enrollment }: MiniPhaseMapProps) => {
         return (
           <span
             key={i}
-            className="aspect-square min-w-0 rounded-[3px] border border-[#D4DAE3] bg-transparent"
+            className="aspect-square min-w-0 rounded-[3px] border border-[border] bg-transparent"
           />
         )
       })}
@@ -188,10 +188,10 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
     <Link
       href={href}
       className={cn(
-        'group relative flex flex-col rounded-lg border border-[#D4DAE3] bg-white transition-all duration-150 hover:border-[#B8B4AC] hover:shadow-sm cursor-pointer',
-        'focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/20 focus-visible:ring-offset-2 outline-none',
+        'group relative flex flex-col rounded-lg border border-[border] bg-white transition-all duration-150 hover:border-[#B8B4AC] hover:shadow-sm cursor-pointer',
+        'focus-visible:ring-2 focus-visible:ring-[camp-cobalt]/20 focus-visible:ring-offset-2 outline-none',
         state === 'enrolled' && 'border-[#534AB7] border-[1.5px]',
-        state === 'completed' && 'bg-[#EDFAF4] border-[#2D9F6F]/30',
+        state === 'completed' && 'bg-[#EDFAF4] border-[emerald]/30',
         state === 'locked' && 'opacity-70',
       )}
     >
@@ -208,32 +208,32 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
           </span>
 
           {trail.is_free ? (
-            <span className="font-mono text-[11px] uppercase bg-[#EDFAF4] text-[#2D9F6F] px-1.5 py-0.5 rounded-sm">
+            <span className="font-mono text-[11px] uppercase bg-[#EDFAF4] text-[emerald] px-1.5 py-0.5 rounded-sm">
               Free
             </span>
           ) : (
-            <span className="font-mono text-[11px] uppercase bg-[#1A2332] text-white px-1.5 py-0.5 rounded-sm">
+            <span className="font-mono text-[11px] uppercase bg-[text-primary] text-white px-1.5 py-0.5 rounded-sm">
               Pro
             </span>
           )}
         </div>
 
         {/* Title */}
-        <h3 className="text-base font-semibold text-[#1A2332] mb-1 leading-snug">
+        <h3 className="text-base font-semibold text-[text-primary] mb-1 leading-snug">
           {trail.name}
         </h3>
 
         {/* Description */}
         {trail.description && (
-          <p className="text-sm text-[#8896A7] line-clamp-2 mb-4 flex-1">
+          <p className="text-sm text-[text-tertiary] line-clamp-2 mb-4 flex-1">
             {trail.description}
           </p>
         )}
 
         {/* Meta row */}
-        <div className="flex items-center gap-3 text-xs text-[#8896A7] mb-3">
+        <div className="flex items-center gap-3 text-xs text-[text-tertiary] mb-3">
           <span className="inline-flex items-center gap-1">
-            <Clock size={13} className="text-[#8896A7]" />
+            <Clock size={13} className="text-[text-tertiary]" />
             {trail.duration_days} days
           </span>
           <span>~{hrsPerDay} hrs/day</span>
@@ -248,7 +248,7 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
 
         {/* Progress bar for enrolled */}
         {state === 'enrolled' && (
-          <div className="h-[3px] rounded-sm bg-[#D4DAE3] mb-3">
+          <div className="h-[3px] rounded-sm bg-[border] mb-3">
             <div
               className="h-[3px] rounded-sm bg-[#534AB7] transition-all duration-150 ease-out"
               style={{ width: `${progressPercent}%` }}
@@ -259,28 +259,28 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
         {/* Footer */}
         <div className="flex justify-between items-center pt-1">
           {state === 'locked' ? (
-            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#8896A7]">
+            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[text-tertiary]">
               <Lock size={14} weight="bold" />
               Upgrade to Access
             </span>
           ) : state === 'completed' ? (
-            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#2D9F6F]">
+            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-[emerald]">
               <Check size={14} weight="bold" />
               Completed
             </span>
           ) : state === 'enrolled' ? (
-            <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#1B3FC4] transition-all duration-150 group-hover:gap-2">
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-[camp-cobalt] transition-all duration-150 group-hover:gap-2">
               Continue
               <ArrowRight size={14} weight="bold" />
             </span>
           ) : (
-            <span className="text-sm font-semibold text-[#1B3FC4] transition-all duration-150 group-hover:gap-2 inline-flex items-center gap-1">
+            <span className="text-sm font-semibold text-[camp-cobalt] transition-all duration-150 group-hover:gap-2 inline-flex items-center gap-1">
               View Trail
             </span>
           )}
 
           {state === 'enrolled' && trail.enrollment && (
-            <span className="font-mono text-[11px] text-[#8896A7] tabular-nums">
+            <span className="font-mono text-[11px] text-[text-tertiary] tabular-nums">
               {trail.enrollment.days_completed}/{trail.duration_days}
             </span>
           )}

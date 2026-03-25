@@ -17,11 +17,11 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#F5F5F5]">
       <MarketingNav activeRoute="/contact" />
       <main className="flex flex-col items-center justify-center px-6 pt-40 pb-24">
-        <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight text-[#1A2332]">
+        <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight text-[text-primary]">
           Contact
         </h1>
         <p
-          className={`${serif.className} mt-4 text-[20px] italic text-[#8896A7]`}
+          className={`${serif.className} mt-4 text-[20px] italic text-[text-tertiary]`}
         >
           Coming Soon
         </p>

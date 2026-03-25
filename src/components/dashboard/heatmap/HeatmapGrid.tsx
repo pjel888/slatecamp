@@ -194,15 +194,15 @@ export const HeatmapGrid = ({
                   className={cn(
                     'rounded-[2px] cursor-default transition-opacity hover:opacity-70',
                     isExamDay
-                      ? 'bg-[#D64545] ring-1 ring-[#D64545] ring-offset-[1px]'
+                      ? 'bg-[destructive] ring-1 ring-[destructive] ring-offset-[1px]'
                       : beforeSignup
                         ? 'bg-white/10'
                         : LEVEL_BG[level],
                     isSignup &&
                       !isExamDay &&
-                      '!bg-[#2D9F6F] ring-2 ring-[#2D9F6F] ring-offset-1 z-10',
+                      '!bg-[emerald] ring-2 ring-[emerald] ring-offset-1 z-10',
                     isToday &&
-                      'ring-2 ring-[#D4951A] ring-offset-[1px] z-10',
+                      'ring-2 ring-[warning] ring-offset-[1px] z-10',
                   )}
                 />
               </TooltipTrigger>

@@ -14,7 +14,7 @@ export default function TrailDetailLoading() {
         <Skeleton className="h-5 w-24" />
         <Skeleton className="h-5 w-28" />
       </div>
-      <div className="rounded-md border border-[#D4DAE3] p-4 flex items-center justify-between">
+      <div className="rounded-md border border-[border] p-4 flex items-center justify-between">
         <Skeleton className="h-4 w-56" />
         <Skeleton className="h-10 w-36 rounded-sm" />
       </div>

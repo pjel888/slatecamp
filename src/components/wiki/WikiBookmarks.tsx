@@ -102,7 +102,7 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
           icon={BookmarkSimple}
           size="sm"
           weight={isSaved ? 'fill' : 'regular'}
-          className={isSaved ? 'text-[#E8853A]' : undefined}
+          className={isSaved ? 'text-[camp-orange]' : undefined}
         />
       </PopoverTrigger>
       <PopoverContent align="end" className="w-72 p-0">
@@ -142,7 +142,7 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
                 </Link>
                 <button
                   onClick={() => removeBookmark(b.articleId)}
-                  className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-300 hover:text-[#D64545] transition-opacity"
+                  className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-300 hover:text-[destructive] transition-opacity"
                   aria-label={`Remove ${b.title} from bookmarks`}
                 >
                   <SCIcon icon={Trash} size="xs" />

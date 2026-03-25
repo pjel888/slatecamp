@@ -58,7 +58,7 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
         // Base layout — 42px height for touch targets
         'relative flex h-[42px] w-full items-center gap-[11px] rounded-[7px] px-2.5',
         'outline-none transition-colors duration-[120ms] ease-out',
-        'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]',
+        'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]',
         // Default
         'text-gray-500 dark:text-gray-400',
         // Hover
@@ -70,7 +70,7 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
           // Left-edge active indicator — bleeds into px-2.5 (10px) padding zone
           'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-[18px]',
-          'before:bg-[#1B3FC4] dark:before:bg-[#4F6AE8]',
+          'before:bg-[camp-cobalt] dark:before:bg-[#4F6AE8]',
           'before:rounded-r-sm',
           "before:content-['']",
         ],
@@ -245,8 +245,8 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
             className="font-extrabold text-[13px] select-none"
             style={{ letterSpacing: '-0.3px', lineHeight: 1 }}
           >
-            <span className="text-[#1A2332] dark:text-white">Slate</span>
-            <span className="text-[#1B3FC4]">Camp</span>
+            <span className="text-[text-primary] dark:text-white">Slate</span>
+            <span className="text-[camp-cobalt]">Camp</span>
           </div>
 
           {/* Close button — min 44×44 touch target */}
@@ -254,7 +254,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
             ref={closeButtonRef}
             onClick={onClose}
             aria-label="Close navigation"
-            className="flex items-center justify-center rounded-md text-[#4A5568] dark:text-gray-400 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]"
+            className="flex items-center justify-center rounded-md text-[text-secondary] dark:text-gray-400 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]"
             style={{ width: 44, height: 44 }}
           >
             <X size={20} weight="regular" />
@@ -280,7 +280,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
             <div key={group.key}>
               {/* Group label — always visible in drawer (expanded state) */}
               <div
-                className="flex h-[22px] items-end text-[11px] uppercase tracking-[0.08em] text-[#8896A7]"
+                className="flex h-[22px] items-end text-[11px] uppercase tracking-[0.08em] text-[text-tertiary]"
                 style={{ paddingLeft: 14, userSelect: 'none' }}
               >
                 {group.label}
@@ -327,7 +327,7 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
               {userDisplay.avatarUrl ? (
                 <AvatarImage src={userDisplay.avatarUrl} alt={userDisplay.name} />
               ) : null}
-              <AvatarFallback className="bg-[#EEF2FC] text-[11px] font-medium text-[#1A2332]">
+              <AvatarFallback className="bg-[#EEF2FC] text-[11px] font-medium text-[text-primary]">
                 {initials}
               </AvatarFallback>
             </Avatar>
@@ -335,11 +335,11 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
             {/* Name + tier badge */}
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-1.5">
-                <p className="truncate text-[13px] font-medium text-[#1A2332] dark:text-gray-100">
+                <p className="truncate text-[13px] font-medium text-[text-primary] dark:text-gray-100">
                   {userDisplay.name}
                 </p>
                 {tier && tier !== 'free' && (
-                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[11px] font-medium uppercase text-[#1B3FC4]">
+                  <span className="shrink-0 rounded-[3px] bg-[#EEF2FC] px-1 py-px font-mono text-[11px] font-medium uppercase text-[camp-cobalt]">
                     {tier}
                   </span>
                 )}

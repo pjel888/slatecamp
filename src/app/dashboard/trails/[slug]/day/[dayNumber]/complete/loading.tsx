@@ -13,7 +13,7 @@ const DayCompleteLoading = () => (
     {/* Mastery section */}
     <div className="space-y-3">
       <Skeleton className="h-4 w-36" />
-      <div className="rounded-md border border-[#D4DAE3] p-4 space-y-3">
+      <div className="rounded-md border border-[border] p-4 space-y-3">
         <Skeleton className="h-5 w-40" />
         <Skeleton className="h-3 w-full" />
         <Skeleton className="h-3 w-full" />
@@ -26,7 +26,7 @@ const DayCompleteLoading = () => (
     {/* Next day */}
     <div className="space-y-3">
       <Skeleton className="h-4 w-24" />
-      <div className="rounded-md border border-[#D4DAE3] p-4 space-y-2">
+      <div className="rounded-md border border-[border] p-4 space-y-2">
         <Skeleton className="h-5 w-56" />
         <Skeleton className="h-3 w-40" />
         <Skeleton className="h-9 w-32 rounded-sm mt-2" />

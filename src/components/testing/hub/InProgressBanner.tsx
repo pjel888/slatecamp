@@ -112,7 +112,7 @@ const InProgressBanner = ({ session, onAbandon }: InProgressBannerProps) => {
                 </AlertDialogCancel>
                 <AlertDialogAction
                   variant="destructive"
-                  className="rounded-sm bg-[#D64545] text-white hover:bg-[#C03C3C] text-[13px]"
+                  className="rounded-sm bg-[destructive] text-white hover:bg-[#C03C3C] text-[13px]"
                   onClick={handleAbandon}
                 >
                   Yes, abandon

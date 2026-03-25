@@ -49,7 +49,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B]">
           Subject Mastery
         </span>
-        <h3 className="text-[15px] font-semibold text-[#1A2332] mt-0.5">
+        <h3 className="text-[15px] font-semibold text-[text-primary] mt-0.5">
           Your ALE Coverage
         </h3>
       </div>

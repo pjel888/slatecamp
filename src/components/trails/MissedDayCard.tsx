@@ -27,19 +27,19 @@ const MissedDayCard = ({
 }: MissedDayCardProps) => {
   const [showCatchUp, setShowCatchUp] = useState(false)
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white p-5">
+    <div className="rounded-md border border-[border] bg-white p-5">
       {/* Headline — where they left off */}
-      <p className="text-lg font-semibold text-[#1A2332]">
+      <p className="text-lg font-semibold text-[text-primary]">
         You left off at Day {enrollment.current_day}.
       </p>
 
       {/* Time away */}
-      <p className="mt-1 text-sm text-[#4A5568]">
+      <p className="mt-1 text-sm text-[text-secondary]">
         {daysSinceLastActivity} day{daysSinceLastActivity !== 1 ? 's' : ''} ago.
       </p>
 
       {/* Encouragement — no pressure */}
-      <p className="mt-1 text-sm text-[#4A5568]">
+      <p className="mt-1 text-sm text-[text-secondary]">
         Day {enrollment.current_day} is ready when you are.
       </p>
 
@@ -49,7 +49,7 @@ const MissedDayCard = ({
         <button
           type="button"
           onClick={onContinue}
-          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+          className="rounded-sm bg-[camp-cobalt] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
         >
           Continue Day {enrollment.current_day} &rarr;
         </button>
@@ -64,7 +64,7 @@ const MissedDayCard = ({
               setShowCatchUp(true)
             }
           }}
-          className="rounded-sm border border-[#D4DAE3] bg-transparent px-4 py-2 text-sm font-medium text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5]"
+          className="rounded-sm border border-[border] bg-transparent px-4 py-2 text-sm font-medium text-[text-secondary] transition-colors duration-150 hover:bg-[#F8F7F5]"
         >
           View what I missed
         </button>

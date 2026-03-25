@@ -36,9 +36,9 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
   return (
     <div className={cn('space-y-4', className)}>
       {imageUrl && !hasError && (
-        <div className="rounded-md overflow-hidden border border-[#D4DAE3] bg-[#F5F5F5]">
+        <div className="rounded-md overflow-hidden border border-[border] bg-[#F5F5F5]">
           {!isLoaded && (
-            <div className="animate-pulse bg-[#D4DAE3]/30 h-[200px]" />
+            <div className="animate-pulse bg-[border]/30 h-[200px]" />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -57,7 +57,7 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
       )}
 
       <p
-        className="text-[16px] font-normal text-[#1A2332] leading-[1.7] tracking-tight max-w-[65ch] selection:bg-[#EEF2FC] selection:text-[#1535A8]"
+        className="text-[16px] font-normal text-[text-primary] leading-[1.7] tracking-tight max-w-[65ch] selection:bg-[#EEF2FC] selection:text-[#1535A8]"
       >
         {text}
       </p>

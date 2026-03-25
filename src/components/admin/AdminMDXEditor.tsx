@@ -181,7 +181,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
       <button
         type="button"
         onClick={() => setOpen(v => !v)}
-        className="flex items-center gap-1 rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1 text-xs font-medium text-[#4A5568] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+        className="flex items-center gap-1 rounded-sm border border-[border] bg-white px-2.5 py-1 text-xs font-medium text-[text-secondary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
       >
         {label}
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" className="opacity-50">
@@ -189,7 +189,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
         </svg>
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-[#D4DAE3] bg-white shadow-md">
+        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-[border] bg-white shadow-md">
           {items.map(item => (
             <button
               key={item.label}
@@ -199,7 +199,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
                 onInsert(item.snippet)
                 setOpen(false)
               }}
-              className="block w-full px-3 py-2 text-left text-xs text-[#1A2332] hover:bg-[#EEF2FC] hover:text-[#1B3FC4] transition-colors duration-150"
+              className="block w-full px-3 py-2 text-left text-xs text-[text-primary] hover:bg-[#EEF2FC] hover:text-[camp-cobalt] transition-colors duration-150"
             >
               {item.label}
             </button>
@@ -353,15 +353,15 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       {/* ------------------------------------------------------------------ */}
       {/* Metadata bar                                                        */}
       {/* ------------------------------------------------------------------ */}
-      <div className="flex shrink-0 items-center gap-4 border-b border-[#D4DAE3] bg-white px-4 py-2.5">
+      <div className="flex shrink-0 items-center gap-4 border-b border-[border] bg-white px-4 py-2.5">
         <Link
           href="/admin/articles"
-          className="shrink-0 rounded-sm px-2 py-1 text-xs text-[#4A5568] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+          className="shrink-0 rounded-sm px-2 py-1 text-xs text-[text-secondary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
         >
           &larr; Articles
         </Link>
 
-        <div className="h-4 w-px bg-[#D4DAE3]" />
+        <div className="h-4 w-px bg-[border]" />
 
         {/* Title */}
         <input
@@ -369,14 +369,14 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           placeholder="Article title..."
           value={title}
           onChange={e => setTitle(e.target.value)}
-          className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-[#1A2332] placeholder:text-[#8896A7] focus:outline-none"
+          className="min-w-0 flex-1 bg-transparent text-sm font-semibold text-[text-primary] placeholder:text-[text-tertiary] focus:outline-none"
         />
 
-        <div className="h-4 w-px bg-[#D4DAE3]" />
+        <div className="h-4 w-px bg-[border]" />
 
         {/* Slug */}
         <div className="flex items-center gap-1.5 shrink-0">
-          <span className="font-mono text-[11px] text-[#8896A7]">/</span>
+          <span className="font-mono text-[11px] text-[text-tertiary]">/</span>
           <input
             type="text"
             value={slug}
@@ -385,11 +385,11 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
               setSlugManuallyEdited(true)
             }}
             placeholder="article-slug"
-            className="w-40 rounded-sm border border-transparent bg-transparent font-mono text-[11px] text-[#4A5568] placeholder:text-[#8896A7] focus:border-[#D4DAE3] focus:bg-white focus:outline-none px-1 py-0.5 transition-colors duration-150"
+            className="w-40 rounded-sm border border-transparent bg-transparent font-mono text-[11px] text-[text-secondary] placeholder:text-[text-tertiary] focus:border-[border] focus:bg-white focus:outline-none px-1 py-0.5 transition-colors duration-150"
           />
         </div>
 
-        <div className="h-4 w-px bg-[#D4DAE3]" />
+        <div className="h-4 w-px bg-[border]" />
 
         {/* Status toggle */}
         <button
@@ -397,8 +397,8 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           onClick={() => setStatus(s => s === 'published' ? 'draft' : 'published')}
           className={`shrink-0 rounded-sm px-2.5 py-1 font-mono text-[11px] font-medium transition-colors duration-150 ${
             status === 'published'
-              ? 'bg-[#EDFAF4] text-[#2D9F6F] hover:bg-[#d5f5e8]'
-              : 'bg-[#FEF8ED] text-[#D4951A] hover:bg-[#fdefd0]'
+              ? 'bg-[#EDFAF4] text-[emerald] hover:bg-[#d5f5e8]'
+              : 'bg-[#FEF8ED] text-[warning] hover:bg-[#fdefd0]'
           }`}
         >
           {status === 'published' ? 'Published' : 'Draft'}
@@ -407,35 +407,35 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
         {/* ALE ID (read-only) */}
         {article?.ale_id && (
           <>
-            <div className="h-4 w-px bg-[#D4DAE3]" />
-            <span className="shrink-0 font-mono text-[11px] text-[#8896A7]">{article.ale_id}</span>
+            <div className="h-4 w-px bg-[border]" />
+            <span className="shrink-0 font-mono text-[11px] text-[text-tertiary]">{article.ale_id}</span>
           </>
         )}
 
         {/* Word count */}
-        <div className="h-4 w-px bg-[#D4DAE3]" />
-        <span className="shrink-0 font-mono text-[11px] text-[#8896A7]">
+        <div className="h-4 w-px bg-[border]" />
+        <span className="shrink-0 font-mono text-[11px] text-[text-tertiary]">
           {wordCount.toLocaleString()} w
         </span>
 
         {/* Updated at */}
         {article?.updated_at && (
           <>
-            <div className="h-4 w-px bg-[#D4DAE3]" />
-            <span className="shrink-0 text-[11px] text-[#8896A7]">
+            <div className="h-4 w-px bg-[border]" />
+            <span className="shrink-0 text-[11px] text-[text-tertiary]">
               {formatDate(article.updated_at)}
             </span>
           </>
         )}
 
-        <div className="h-4 w-px bg-[#D4DAE3]" />
+        <div className="h-4 w-px bg-[border]" />
 
         {/* Save feedback */}
         {saveMsg && (
-          <span className="shrink-0 font-mono text-[11px] text-[#2D9F6F]">{saveMsg}</span>
+          <span className="shrink-0 font-mono text-[11px] text-[emerald]">{saveMsg}</span>
         )}
         {saveError && (
-          <span className="shrink-0 font-mono text-[11px] text-[#D64545]">{saveError}</span>
+          <span className="shrink-0 font-mono text-[11px] text-[destructive]">{saveError}</span>
         )}
 
         {/* Save button */}
@@ -443,7 +443,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           type="button"
           onClick={handleSave}
           disabled={isSaving}
-          className="shrink-0 rounded-sm bg-[#1B3FC4] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
+          className="shrink-0 rounded-sm bg-[camp-cobalt] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-50"
         >
           {isSaving ? 'Saving...' : article?.article_id ? 'Save' : 'Create'}
         </button>
@@ -452,7 +452,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       {/* ------------------------------------------------------------------ */}
       {/* Component insertion toolbar                                        */}
       {/* ------------------------------------------------------------------ */}
-      <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[#D4DAE3] bg-white px-4 py-2">
+      <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[border] bg-white px-4 py-2">
         <Eyebrow className="mr-1">Insert</Eyebrow>
         {SNIPPET_GROUPS.map(group => (
           <SnippetDropdown
@@ -474,8 +474,8 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       {/* ------------------------------------------------------------------ */}
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* Left: CodeMirror editor */}
-        <div className="flex w-1/2 flex-col overflow-hidden border-r border-[#D4DAE3]">
-          <div className="shrink-0 border-b border-[#D4DAE3] bg-[#F8F7F5] px-4 py-1.5">
+        <div className="flex w-1/2 flex-col overflow-hidden border-r border-[border]">
+          <div className="shrink-0 border-b border-[border] bg-[#F8F7F5] px-4 py-1.5">
             <Eyebrow>MDX Source</Eyebrow>
           </div>
           <div className="min-h-0 flex-1 overflow-auto">

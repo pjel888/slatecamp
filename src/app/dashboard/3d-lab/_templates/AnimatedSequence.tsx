@@ -121,7 +121,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
             step={1}
             value={currentStep}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[#1B3FC4] mb-2"
+            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[camp-cobalt] mb-2"
           />
 
           {/* Controls */}

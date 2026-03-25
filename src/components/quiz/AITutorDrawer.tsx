@@ -138,7 +138,7 @@ export function AITutorDrawer({
               )}
 
               {error && (
-                <div className="flex items-center gap-2 text-[#D64545] py-2">
+                <div className="flex items-center gap-2 text-[destructive] py-2">
                   <SCIcon icon={Warning} size="sm" />
                   <span className="text-[11px] font-medium">{error}</span>
                 </div>
@@ -148,7 +148,7 @@ export function AITutorDrawer({
                 <div className="space-y-3">
                   {response.misconception && (
                     <div className="space-y-1">
-                      <Eyebrow className="text-[#D4951A]">Misconception</Eyebrow>
+                      <Eyebrow className="text-[warning]">Misconception</Eyebrow>
                       <p className="text-[13px] text-zinc-600 leading-[1.65] max-w-[65ch]">
                         {response.misconception}
                       </p>

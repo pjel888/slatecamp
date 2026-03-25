@@ -14,10 +14,10 @@ import { Grid3X3, AlertTriangle } from 'lucide-react'
  * ------------------------------------------------------------------ */
 
 const coverageStyles: Record<CoverageLevel, string> = {
-  full: 'bg-[#EDFAF4] border-[#2D9F6F]',
-  partial: 'bg-[#FEF8ED] border-[#D4951A]',
+  full: 'bg-[#EDFAF4] border-[emerald]',
+  partial: 'bg-[#FEF8ED] border-[warning]',
   empty: 'bg-muted border-border',
-  critical: 'bg-muted border-2 border-[#D64545]',
+  critical: 'bg-muted border-2 border-[destructive]',
 }
 
 /* ------------------------------------------------------------------
@@ -70,10 +70,10 @@ const AdminTaxonomyCoveragePage = async () => {
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest">
           Legend
         </span>
-        <LegendItem className="bg-[#EDFAF4] border-[#2D9F6F]" label="Full (≥10q + article)" />
-        <LegendItem className="bg-[#FEF8ED] border-[#D4951A]" label="Partial (1–9q or draft)" />
+        <LegendItem className="bg-[#EDFAF4] border-[emerald]" label="Full (≥10q + article)" />
+        <LegendItem className="bg-[#FEF8ED] border-[warning]" label="Partial (1–9q or draft)" />
         <LegendItem className="bg-muted border-border" label="Empty" />
-        <LegendItem className="bg-muted border-2 border-[#D64545]" label="Critical Gap (high-freq, no content)" />
+        <LegendItem className="bg-muted border-2 border-[destructive]" label="Critical Gap (high-freq, no content)" />
       </div>
 
       {/* Coverage grid per level-1 node */}
@@ -150,7 +150,7 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
       title={`${cell.name}${cell.ale_id ? ` (${cell.ale_id})` : ''} — ${cell.questionCount}q${cell.hasArticle ? ', has article' : ''}${cell.examFrequency ? `, freq: ${cell.examFrequency}` : ''}`}
     >
       {isCritical && (
-        <AlertTriangle className="h-2.5 w-2.5 text-[#D64545] absolute top-0.5 right-0.5" />
+        <AlertTriangle className="h-2.5 w-2.5 text-[destructive] absolute top-0.5 right-0.5" />
       )}
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-bold tabular-nums leading-none">
         {cell.questionCount > 0 ? `${cell.questionCount}q` : '0'}

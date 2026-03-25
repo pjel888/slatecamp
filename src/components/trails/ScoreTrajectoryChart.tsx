@@ -55,8 +55,8 @@ export const ScoreTrajectoryChart = ({
 
   if (data.length === 0) {
     return (
-      <div className="flex items-center justify-center rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-6" style={{ height }}>
-        <p className="text-sm text-[#4A5568]">
+      <div className="flex items-center justify-center rounded-md border border-[border] bg-[#F8F7F5] p-6" style={{ height }}>
+        <p className="text-sm text-[text-secondary]">
           Complete your first day to see your score trajectory.
         </p>
       </div>
@@ -69,7 +69,7 @@ export const ScoreTrajectoryChart = ({
   return (
     <div className="flex flex-col gap-3">
       {/* Summary sentence */}
-      <p className="text-lg font-semibold text-[#1A2332]">
+      <p className="text-lg font-semibold text-[text-primary]">
         Your Readiness Score {delta >= 0 ? 'rose' : 'moved'} from {startScore}%
         to {endScore}% &mdash; a {deltaLabel}-point {gainOrLoss} over{' '}
         {dayCount} days.

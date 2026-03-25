@@ -441,8 +441,8 @@ export const SessionShell = ({
       <QuizOverlay aria-label="Testing session">
         <div className="flex flex-1 flex-col items-center justify-center px-6 text-center">
           <div className="max-w-sm space-y-4">
-            <h2 className="text-lg font-semibold text-[#1A2332]">No Questions Available</h2>
-            <p className="text-sm text-[#4A5568]">
+            <h2 className="text-lg font-semibold text-[text-primary]">No Questions Available</h2>
+            <p className="text-sm text-[text-secondary]">
               This session could not load any questions. This can happen when your discipline has no questions yet or the session was created with an empty question set.
             </p>
             <button
@@ -485,10 +485,10 @@ export const SessionShell = ({
       </div>
 
       {/* Header */}
-      <header className="shrink-0 border-b border-[#D4DAE3] bg-[#F5F7FA]">
+      <header className="shrink-0 border-b border-[border] bg-[#F5F7FA]">
         <div className="max-w-[720px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
           {/* Left: counter */}
-          <span className="text-[13px] font-bold text-[#1A2332] tabular-nums">
+          <span className="text-[13px] font-bold text-[text-primary] tabular-nums">
             {currentIndex + 1} / {questions.length}
           </span>
 
@@ -507,8 +507,8 @@ export const SessionShell = ({
               className={cn(
                 'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
                 isFlagged
-                  ? 'bg-[#FEF8ED] text-[#D4951A] border border-[#D4951A]/20'
-                  : 'text-[#8896A7] hover:bg-[#EEF2FC] hover:text-[#4A5568]',
+                  ? 'bg-[#FEF8ED] text-[warning] border border-[warning]/20'
+                  : 'text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[text-secondary]',
               )}
             >
               <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
@@ -520,19 +520,19 @@ export const SessionShell = ({
               onClick={() => setShowNavigator(true)}
               aria-label="Open question navigator"
               aria-expanded={showNavigator}
-              className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-[#8896A7] hover:bg-[#EEF2FC] hover:text-[#4A5568] transition-colors"
+              className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[text-secondary] transition-colors"
             >
               <SCIcon icon={MapTrifold} size="xs" />
               <span className="hidden sm:inline">Navigator</span>
             </button>
 
-            <div className="w-px h-4 bg-[#D4DAE3] mx-1" aria-hidden />
+            <div className="w-px h-4 bg-[border] mx-1" aria-hidden />
 
             <button
               type="button"
               onClick={handleExit}
               aria-label="Exit session"
-              className="h-8 w-8 flex items-center justify-center rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-[#EEF2FC] transition-colors"
+              className="h-8 w-8 flex items-center justify-center rounded-sm text-[text-tertiary] hover:text-[text-secondary] hover:bg-[#EEF2FC] transition-colors"
             >
               <SCIcon icon={X} size="sm" />
             </button>
@@ -584,7 +584,7 @@ export const SessionShell = ({
       </main>
 
       {/* Footer */}
-      <footer className="shrink-0 border-t border-[#D4DAE3] bg-[#F5F7FA]">
+      <footer className="shrink-0 border-t border-[border] bg-[#F5F7FA]">
         <div className="max-w-[720px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
           {/* Previous */}
           <button
@@ -595,8 +595,8 @@ export const SessionShell = ({
             className={cn(
               'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               currentIndex > 0
-                ? 'border border-[#D4DAE3] text-[#4A5568] hover:bg-[#EEF2FC]/50 hover:text-primary'
-                : 'border border-[#D4DAE3]/50 text-[#8896A7]/40 cursor-not-allowed',
+                ? 'border border-[border] text-[text-secondary] hover:bg-[#EEF2FC]/50 hover:text-primary'
+                : 'border border-[border]/50 text-[text-tertiary]/40 cursor-not-allowed',
             )}
           >
             ← Previous
@@ -608,7 +608,7 @@ export const SessionShell = ({
               type="button"
               onClick={() => setShowConfirmSubmit(true)}
               aria-label="End session"
-              className="h-9 px-4 rounded-sm border border-[#D4DAE3] text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+              className="h-9 px-4 rounded-sm border border-[border] text-[text-tertiary] hover:text-[text-secondary] hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
             >
               End Session
             </button>

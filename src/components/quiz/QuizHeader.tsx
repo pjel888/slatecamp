@@ -18,12 +18,12 @@ const MODE_LABELS: Record<TestMode, string> = {
 
 const MODE_STYLES: Record<TestMode, string> = {
   camp: 'bg-[#EEF2FC] text-[#1535A8] border-[#1535A8]/20',
-  chill: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
-  storm: 'bg-[#1A2332] text-white border-[#1A2332]',
-  proof_sim: 'bg-[#1A2332] text-white border-[#1A2332]',
-  blindspot: 'bg-[#FEF8ED] text-[#D4951A] border-[#D4951A]/20',
-  custom: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
-  endurance: 'bg-[#F5F5F5] text-[#4A5568] border-[#D4DAE3]',
+  chill: 'bg-[#F5F5F5] text-[text-secondary] border-[border]',
+  storm: 'bg-[text-primary] text-white border-[text-primary]',
+  proof_sim: 'bg-[text-primary] text-white border-[text-primary]',
+  blindspot: 'bg-[#FEF8ED] text-[warning] border-[warning]/20',
+  custom: 'bg-[#F5F5F5] text-[text-secondary] border-[border]',
+  endurance: 'bg-[#F5F5F5] text-[text-secondary] border-[border]',
 }
 
 interface QuizHeaderProps {
@@ -58,7 +58,7 @@ export function QuizHeader({
   const label = isSubjectMode ? 'Subject Practice' : MODE_LABELS[mode]
 
   return (
-    <header className="shrink-0 border-b border-[#D4DAE3] bg-[#F5F7FA]">
+    <header className="shrink-0 border-b border-[border] bg-[#F5F7FA]">
       <div className="max-w-[900px] mx-auto px-5 py-3 flex items-center justify-between gap-4">
         {/* Left: mode + counter */}
         <div className="flex items-center gap-3 min-w-0">
@@ -75,7 +75,7 @@ export function QuizHeader({
               Targeted
             </span>
           )}
-          <span className="text-[11px] font-bold text-[#8896A7] tracking-wide whitespace-nowrap">
+          <span className="text-[11px] font-bold text-[text-tertiary] tracking-wide whitespace-nowrap">
             {currentIndex + 1} / {totalQuestions}
           </span>
         </div>
@@ -94,8 +94,8 @@ export function QuizHeader({
             className={cn(
               'flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
               isFlagged
-                ? 'bg-[#FEF8ED] text-[#D4951A] border border-[#D4951A]/20'
-                : 'text-[#8896A7] hover:bg-[#EEF2FC] hover:text-[#4A5568]',
+                ? 'bg-[#FEF8ED] text-[warning] border border-[warning]/20'
+                : 'text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[text-secondary]',
             )}
           >
             <SCIcon icon={Flag} size="xs" weight={isFlagged ? 'fill' : 'regular'} />
@@ -105,7 +105,7 @@ export function QuizHeader({
           <button
             onClick={onAI}
             aria-label="Open AI tutor"
-            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-[#8896A7] hover:bg-[#EEF2FC] hover:text-[#4A5568] transition-colors"
+            className="flex items-center gap-1.5 h-8 px-3 rounded-sm text-[11px] font-black uppercase tracking-widest text-[text-tertiary] hover:bg-[#EEF2FC] hover:text-[text-secondary] transition-colors"
           >
             <SCIcon icon={ChatCircle} size="xs" />
             <span className="hidden sm:inline">AI</span>
@@ -113,12 +113,12 @@ export function QuizHeader({
 
           {questionMap}
 
-          <div className="w-px h-4 bg-[#D4DAE3] mx-1" aria-hidden />
+          <div className="w-px h-4 bg-[border] mx-1" aria-hidden />
 
           <button
             onClick={onExit}
             aria-label="Exit quiz session"
-            className="h-8 w-8 flex items-center justify-center rounded-sm text-[#8896A7] hover:text-[#4A5568] hover:bg-[#EEF2FC] transition-colors"
+            className="h-8 w-8 flex items-center justify-center rounded-sm text-[text-tertiary] hover:text-[text-secondary] hover:bg-[#EEF2FC] transition-colors"
           >
             <SCIcon icon={X} size="sm" />
           </button>
@@ -130,7 +130,7 @@ export function QuizHeader({
         <div
           className={cn(
             'h-full transition-all duration-300 ease-out',
-            isStrict ? 'bg-[#1A2332]' : 'bg-primary',
+            isStrict ? 'bg-[text-primary]' : 'bg-primary',
           )}
           style={{ width: `${progress}%` }}
         />

@@ -117,8 +117,8 @@ export const CampSessionBehavior = ({
           className={cn(
             'w-full h-11 rounded-sm text-[13px] font-black uppercase tracking-widest transition-colors duration-150',
             answer?.selectedOptionId
-              ? 'bg-[#1B3FC4] text-white hover:bg-[#1535A8]'
-              : 'bg-[#F5F5F5] text-[#8896A7] cursor-not-allowed',
+              ? 'bg-[camp-cobalt] text-white hover:bg-[#1535A8]'
+              : 'bg-[#F5F5F5] text-[text-tertiary] cursor-not-allowed',
           )}
         >
           Submit Answer
@@ -131,8 +131,8 @@ export const CampSessionBehavior = ({
           className={cn(
             'rounded-md border p-4 space-y-3',
             isCorrect
-              ? 'bg-[#EDFAF4] border-[#2D9F6F]/30'
-              : 'bg-[#EEF2FC] border-[#1B3FC4]/20',
+              ? 'bg-[#EDFAF4] border-[emerald]/30'
+              : 'bg-[#EEF2FC] border-[camp-cobalt]/20',
           )}
           role="region"
           aria-label="Answer rationale"
@@ -141,7 +141,7 @@ export const CampSessionBehavior = ({
           <p
             className={cn(
               'text-[11px] font-black uppercase tracking-widest',
-              isCorrect ? 'text-[#2D9F6F]' : 'text-[#1535A8]',
+              isCorrect ? 'text-[emerald]' : 'text-[#1535A8]',
             )}
           >
             Why {correctLetter} is correct
@@ -149,7 +149,7 @@ export const CampSessionBehavior = ({
 
           {/* Rationale text */}
           {question.rationale && (
-            <p className="text-[14px] text-[#4A5568] leading-[1.7]">
+            <p className="text-[14px] text-[text-secondary] leading-[1.7]">
               {typeof question.rationale === 'string'
                 ? question.rationale
                 : question.rationale.correct ?? ''}
@@ -158,15 +158,15 @@ export const CampSessionBehavior = ({
 
           {/* Extended explanation */}
           {question.explanation && (
-            <p className="text-[14px] text-[#4A5568] leading-[1.7]">{question.explanation}</p>
+            <p className="text-[14px] text-[text-secondary] leading-[1.7]">{question.explanation}</p>
           )}
 
           {/* Code citation — monospace per spec */}
           {question.code_citation && (
-            <div className="flex items-start gap-2 bg-white border border-[#D4DAE3] rounded-md px-3 py-2">
-              <SCIcon icon={Scales} size="sm" className="text-[#4A5568] shrink-0 mt-0.5" />
+            <div className="flex items-start gap-2 bg-white border border-[border] rounded-md px-3 py-2">
+              <SCIcon icon={Scales} size="sm" className="text-[text-secondary] shrink-0 mt-0.5" />
               <span
-                className="font-mono text-[12px] text-[#4A5568] leading-[1.6]"
+                className="font-mono text-[12px] text-[text-secondary] leading-[1.6]"
                 aria-label={`Code citation: ${question.code_citation}`}
               >
                 {question.code_citation}
@@ -181,7 +181,7 @@ export const CampSessionBehavior = ({
                 href={ROUTES.WIKI_PAGE(question.topic_id)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-[#1B3FC4]/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
+                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-[camp-cobalt]/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
               >
                 <SCIcon icon={ArrowSquareOut} size="xs" />
                 Read full article
@@ -192,7 +192,7 @@ export const CampSessionBehavior = ({
                 href={ROUTES.THREE_D_LAB}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-[#1B3FC4]/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
+                className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-[camp-cobalt]/20 text-[#1535A8] hover:bg-[#EEF2FC] text-[11px] font-black uppercase tracking-widest transition-colors"
               >
                 <SCIcon icon={Cube} size="xs" />
                 See this in 3D

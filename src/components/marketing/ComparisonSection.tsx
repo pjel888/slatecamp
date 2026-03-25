@@ -84,7 +84,7 @@ export const ComparisonSection = () => (
           <div className='border-l border-[#E5E7EB] px-5 py-3 text-[12px] font-semibold text-[#6B6B6B]'>
             Traditional Review Center
           </div>
-          <div className='border-l border-[#E5E7EB] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-[#1B3FC4]'>
+          <div className='border-l border-[#E5E7EB] bg-[#EEF2FC] px-5 py-3 text-[12px] font-semibold text-[camp-cobalt]'>
             SlateCamp
           </div>
         </div>
@@ -106,7 +106,7 @@ export const ComparisonSection = () => (
                 <div
                   className={`border-l border-[#E5E7EB] px-5 py-3.5 text-[13px] ${
                     row.highlight
-                      ? 'font-medium text-[#1B3FC4]'
+                      ? 'font-medium text-[camp-cobalt]'
                       : 'text-[#555]'
                   }`}
                 >
@@ -137,13 +137,13 @@ export const ComparisonSection = () => (
                     </p>
                   </div>
                   <div className='flex-1'>
-                    <p className='text-[11px] font-medium text-[#1B3FC4]'>
+                    <p className='text-[11px] font-medium text-[camp-cobalt]'>
                       SlateCamp
                     </p>
                     <p
                       className={`mt-0.5 text-[12px] ${
                         row.highlight
-                          ? 'font-medium text-[#1B3FC4]'
+                          ? 'font-medium text-[camp-cobalt]'
                           : 'text-[#18181B]'
                       }`}
                     >

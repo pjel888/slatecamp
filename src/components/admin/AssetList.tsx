@@ -29,10 +29,10 @@ const statusLabels: Record<string, string> = {
 }
 
 const statusColors: Record<string, string> = {
-  draft: 'bg-[#F5F5F5] text-[#4A5568]',
-  pending_review: 'bg-[#FEF8ED] text-[#D4951A]',
-  published: 'bg-[#EDFAF4] text-[#2D9F6F]',
-  archived: 'bg-[#FDF0F0] text-[#D64545]',
+  draft: 'bg-[#F5F5F5] text-[text-secondary]',
+  pending_review: 'bg-[#FEF8ED] text-[warning]',
+  published: 'bg-[#EDFAF4] text-[emerald]',
+  archived: 'bg-[#FDF0F0] text-[destructive]',
 }
 
 export function AssetList({ initialAssets }: AssetListProps) {

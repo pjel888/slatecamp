@@ -54,10 +54,10 @@ const TrailStepCard = ({
 
   // Container border/bg classes based on state
   const containerClasses = isCompleted
-    ? 'border-[#2D9F6F] bg-[#EDFAF4]'
+    ? 'border-[emerald] bg-[#EDFAF4]'
     : step.is_optional
-      ? 'border-dashed border-[#D4DAE3] opacity-75'
-      : 'border-[#D4DAE3] bg-white'
+      ? 'border-dashed border-[border] opacity-75'
+      : 'border-[border] bg-white'
 
   const handleCTA = () => {
     if (isCompleted || isPending) return
@@ -78,26 +78,26 @@ const TrailStepCard = ({
       {/* 1. Step type row */}
       <div className="flex items-center gap-1.5">
         <span className="text-sm leading-none" aria-hidden="true">{config.icon}</span>
-        <span className="font-mono text-[11px] font-medium uppercase tracking-wide text-[#8896A7]">
+        <span className="font-mono text-[11px] font-medium uppercase tracking-wide text-[text-tertiary]">
           {config.label}
         </span>
         {step.is_optional && (
-          <span className="ml-auto rounded-sm bg-[#F5F5F5] px-1.5 py-0.5 text-[11px] text-[#8896A7]">
+          <span className="ml-auto rounded-sm bg-[#F5F5F5] px-1.5 py-0.5 text-[11px] text-[text-tertiary]">
             Optional
           </span>
         )}
       </div>
 
       {/* 2. Step title */}
-      <h3 className="mt-2 text-sm font-semibold text-[#1A2332]">
+      <h3 className="mt-2 text-sm font-semibold text-[text-primary]">
         {step.title}
       </h3>
 
       {/* 3. Time estimate + SleepAwareLabel */}
       <div className="mt-1.5 flex flex-wrap items-center gap-2">
         <div className="flex items-center gap-1">
-          <Clock size={12} className="text-[#8896A7]" />
-          <span className="text-[11px] text-[#8896A7]">
+          <Clock size={12} className="text-[text-tertiary]" />
+          <span className="text-[11px] text-[text-tertiary]">
             ~{step.estimated_minutes} min
           </span>
         </div>
@@ -116,14 +116,14 @@ const TrailStepCard = ({
 
       {/* 5. Taxonomy coverage */}
       {step.target_node_ids.length > 0 && (
-        <p className="mt-2 hidden text-[11px] text-[#8896A7] sm:block">
+        <p className="mt-2 hidden text-[11px] text-[text-tertiary] sm:block">
           Covers {step.target_node_ids.length} taxonomy node{step.target_node_ids.length !== 1 ? 's' : ''}
         </p>
       )}
 
       {/* 6. Computation-heavy indicator */}
       {step.is_computation_heavy && (
-        <p className="mt-2 text-xs text-[#E8853A]">
+        <p className="mt-2 text-xs text-[camp-orange]">
           &#9201; This session involves calculations — budget extra time.
         </p>
       )}
@@ -132,15 +132,15 @@ const TrailStepCard = ({
       <div className="mt-3">
         {isCompleted ? (
           <div className="flex items-center gap-1.5">
-            <Check size={16} weight="bold" className="text-[#2D9F6F]" />
-            <span className="text-sm font-medium text-[#2D9F6F]">Complete</span>
+            <Check size={16} weight="bold" className="text-[emerald]" />
+            <span className="text-sm font-medium text-[emerald]">Complete</span>
           </div>
         ) : (
           <button
             type="button"
             onClick={handleCTA}
             disabled={isPending}
-            className="rounded-sm bg-[#EEF2FC] px-4 py-2 text-sm font-medium text-[#1B3FC4] transition-colors duration-150 hover:bg-[#1B3FC4] hover:text-white disabled:opacity-50"
+            className="rounded-sm bg-[#EEF2FC] px-4 py-2 text-sm font-medium text-[camp-cobalt] transition-colors duration-150 hover:bg-[camp-cobalt] hover:text-white disabled:opacity-50"
           >
             {config.cta}
           </button>

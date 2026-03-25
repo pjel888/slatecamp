@@ -30,7 +30,7 @@ export const FinalCtaSection = ({
         <ScrollReveal y={12} duration={0.4} delay={0.15}>
           <Link
             href={ctaHref}
-            className='mt-10 inline-flex rounded-sm bg-[#1B3FC4] px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2'
+            className='mt-10 inline-flex rounded-sm bg-[camp-cobalt] px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:bg-[#1535A8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[camp-cobalt] focus-visible:ring-offset-2'
           >
             {ctaLabel}
           </Link>

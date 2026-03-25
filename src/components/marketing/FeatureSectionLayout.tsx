@@ -99,7 +99,7 @@ export const FeaturePill = ({
   variant?: 'cobalt' | 'amber' | 'green' | 'muted-light' | 'muted-dark' | 'on-amber'
 }) => {
   const styles = {
-    cobalt: 'border-[#1B3FC4]/25 bg-[#1B3FC4]/8 text-[#1B3FC4]',
+    cobalt: 'border-[camp-cobalt]/25 bg-[camp-cobalt]/8 text-[camp-cobalt]',
     amber: 'border-[#F5A623]/25 bg-[#F5A623]/10 text-[#9A6B15]',
     green: 'border-[#1B7A3C]/25 bg-[#1B7A3C]/8 text-[#1B7A3C]',
     'muted-light': 'border-[#E5E7EB] text-[#6B6B6B]',

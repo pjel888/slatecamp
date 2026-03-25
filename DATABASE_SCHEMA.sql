@@ -438,6 +438,8 @@ CREATE TABLE public.user_node_mastery (
   has_bloom_apply_correct     BOOLEAN NOT NULL DEFAULT false,
   has_bloom_analyze_correct   BOOLEAN NOT NULL DEFAULT false,
   distinct_questions_seen     INTEGER NOT NULL DEFAULT 0,
+  -- IRT ability estimate (Migration 20260325)
+  theta                       DOUBLE PRECISION NOT NULL DEFAULT 0.0,
   PRIMARY KEY (user_id, topic_id)
 );
 

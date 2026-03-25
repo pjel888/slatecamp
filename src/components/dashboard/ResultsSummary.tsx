@@ -147,8 +147,8 @@ const CALIBRATION_LABELS: Record<CalibrationState, string> = {
 }
 
 const CALIBRATION_COLORS: Record<CalibrationState, string> = {
-  overconfident: 'text-[#E8853A]',
-  underconfident: 'text-[#1B3FC4]',
+  overconfident: 'text-[camp-orange]',
+  underconfident: 'text-[camp-cobalt]',
   well_calibrated: 'text-[#1B7A3C]',
 }
 
@@ -190,26 +190,26 @@ const CalibrationSection = ({
 
   return (
     <div className="space-y-4 mb-10">
-      <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#8896A7]">
+      <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-[text-tertiary]">
         Your Calibration
       </h2>
-      <div className="bg-white border border-[#D4DAE3] rounded-md overflow-hidden">
+      <div className="bg-white border border-[border] rounded-md overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-[#D4DAE3] bg-[#F5F5F5]">
-              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Subject</th>
-              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Predicted</th>
-              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Actual</th>
-              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[#8896A7]">Calibration</th>
+            <tr className="border-b border-[border] bg-[#F5F5F5]">
+              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[text-tertiary]">Subject</th>
+              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[text-tertiary]">Predicted</th>
+              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[text-tertiary]">Actual</th>
+              <th className="text-left px-4 py-2.5 text-[11px] font-bold uppercase tracking-wider text-[text-tertiary]">Calibration</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((row) => (
-              <tr key={row.subject} className="border-b border-[#D4DAE3] last:border-b-0">
-                <td className="px-4 py-3 font-medium text-[#1A2332]">{row.subject}</td>
-                <td className="px-4 py-3 text-[#4A5568]">{CONFIDENCE_LABELS[row.predicted] ?? '—'}</td>
-                <td className="px-4 py-3 text-[#4A5568]">{row.actualPct !== null ? `${row.actualPct}%` : '—'}</td>
-                <td className={cn('px-4 py-3 font-medium', row.calibration ? CALIBRATION_COLORS[row.calibration] : 'text-[#8896A7]')}>
+              <tr key={row.subject} className="border-b border-[border] last:border-b-0">
+                <td className="px-4 py-3 font-medium text-[text-primary]">{row.subject}</td>
+                <td className="px-4 py-3 text-[text-secondary]">{CONFIDENCE_LABELS[row.predicted] ?? '—'}</td>
+                <td className="px-4 py-3 text-[text-secondary]">{row.actualPct !== null ? `${row.actualPct}%` : '—'}</td>
+                <td className={cn('px-4 py-3 font-medium', row.calibration ? CALIBRATION_COLORS[row.calibration] : 'text-[text-tertiary]')}>
                   {row.calibration ? CALIBRATION_LABELS[row.calibration] : '—'}
                 </td>
               </tr>
@@ -217,7 +217,7 @@ const CalibrationSection = ({
           </tbody>
         </table>
       </div>
-      <p className="text-[13px] text-[#4A5568] leading-relaxed max-w-[60ch]">
+      <p className="text-[13px] text-[text-secondary] leading-relaxed max-w-[60ch]">
         The gap between prediction and performance is where hidden risk lives. Calibration improves with practice.
       </p>
     </div>
@@ -264,23 +264,23 @@ const ErrorPatternSection = ({
 
   return (
     <div className="space-y-4 mb-10">
-      <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#8896A7]">
+      <h2 className="text-[11px] font-black uppercase tracking-[0.3em] text-[text-tertiary]">
         Error Patterns ({tagged.length} wrong answers tagged)
       </h2>
-      <div className="bg-white border border-[#D4DAE3] rounded-md p-4 space-y-3">
+      <div className="bg-white border border-[border] rounded-md p-4 space-y-3">
         {sorted.map(([type, count]) => (
           <div key={type} className="flex items-center justify-between">
-            <span className="text-sm text-[#1A2332]">
+            <span className="text-sm text-[text-primary]">
               {ERROR_TYPE_LABELS[type] ?? type}
             </span>
-            <span className="text-sm font-bold text-[#4A5568]">
+            <span className="text-sm font-bold text-[text-secondary]">
               {count} answer{count !== 1 ? 's' : ''}
             </span>
           </div>
         ))}
         {dominant && ERROR_TYPE_INSIGHTS[dominant] && (
-          <div className="pt-3 border-t border-[#D4DAE3]">
-            <p className="text-[13px] text-[#4A5568] leading-relaxed">
+          <div className="pt-3 border-t border-[border]">
+            <p className="text-[13px] text-[text-secondary] leading-relaxed">
               → {ERROR_TYPE_INSIGHTS[dominant]}
             </p>
           </div>

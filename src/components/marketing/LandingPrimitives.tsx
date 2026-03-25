@@ -121,7 +121,7 @@ export const ReadinessDial = ({
           {value}%
         </span>
         {showWarning && (
-          <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#D64545] text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
+          <div className='absolute -right-1 -top-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[destructive] text-white shadow-[0_0_12px_rgba(248,113,113,0.9)]'>
             <SCIcon icon={Warning} size='xs' />
           </div>
         )}

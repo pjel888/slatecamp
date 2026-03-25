@@ -54,7 +54,7 @@ interface SectionProps {
 }
 
 const Section = ({ label, children }: SectionProps) => (
-  <div className="px-4 py-3 border-b border-[#D4DAE3] last:border-b-0">
+  <div className="px-4 py-3 border-b border-[border] last:border-b-0">
     <Eyebrow className="mb-2 block">{label}</Eyebrow>
     {children}
   </div>
@@ -82,12 +82,12 @@ export const ArticlePropertiesPanel = ({
 
   if (collapsed) {
     return (
-      <div className="shrink-0 border-l border-[#D4DAE3] flex flex-col items-center pt-3 w-8 bg-white">
+      <div className="shrink-0 border-l border-[border] flex flex-col items-center pt-3 w-8 bg-white">
         <button
           type="button"
           onClick={() => setCollapsed(false)}
           title="Expand properties"
-          className="rounded-sm p-1 text-[#8896A7] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+          className="rounded-sm p-1 text-[text-tertiary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
         >
           {/* Chevron left (expand) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -99,15 +99,15 @@ export const ArticlePropertiesPanel = ({
   }
 
   return (
-    <div className="w-[280px] shrink-0 border-l border-[#D4DAE3] overflow-y-auto bg-white flex flex-col">
+    <div className="w-[280px] shrink-0 border-l border-[border] overflow-y-auto bg-white flex flex-col">
       {/* Header */}
-      <div className="flex shrink-0 items-center justify-between border-b border-[#D4DAE3] px-4 py-2.5">
+      <div className="flex shrink-0 items-center justify-between border-b border-[border] px-4 py-2.5">
         <Eyebrow>Properties</Eyebrow>
         <button
           type="button"
           onClick={() => setCollapsed(true)}
           title="Collapse properties"
-          className="rounded-sm p-1 text-[#8896A7] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+          className="rounded-sm p-1 text-[text-tertiary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
         >
           {/* Chevron right (collapse) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -155,7 +155,7 @@ export const ArticlePropertiesPanel = ({
         <Section label="Taxonomy">
           {articleId && (
             <p
-              className="text-[11px] text-[#8896A7] mb-1 truncate"
+              className="text-[11px] text-[text-tertiary] mb-1 truncate"
               style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
               title={articleId}
             >
@@ -163,7 +163,7 @@ export const ArticlePropertiesPanel = ({
             </p>
           )}
           {subjectLabel && (
-            <p className="text-[11px] text-[#4A5568]">{subjectLabel}</p>
+            <p className="text-[11px] text-[text-secondary]">{subjectLabel}</p>
           )}
         </Section>
       )}
@@ -175,7 +175,7 @@ export const ArticlePropertiesPanel = ({
           onChange={e => onFieldChange?.('aleTestsYou', e.target.value)}
           placeholder="What this article tests you on..."
           rows={3}
-          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+          className="w-full resize-none rounded-sm border border-[border] bg-white px-2 py-1.5 text-[11px] text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:outline-none transition-colors duration-150 leading-relaxed"
         />
       </Section>
 
@@ -186,7 +186,7 @@ export const ArticlePropertiesPanel = ({
           onChange={e => onFieldChange?.('updatedNote', e.target.value)}
           placeholder="Update notes or change summary..."
           rows={3}
-          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+          className="w-full resize-none rounded-sm border border-[border] bg-white px-2 py-1.5 text-[11px] text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:outline-none transition-colors duration-150 leading-relaxed"
         />
       </Section>
 
@@ -194,20 +194,20 @@ export const ArticlePropertiesPanel = ({
       <Section label="Review">
         {reviewedBy ? (
           <p
-            className="mb-2 text-[11px] text-[#8896A7]"
+            className="mb-2 text-[11px] text-[text-tertiary]"
             style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
           >
             {reviewedBy}
           </p>
         ) : (
-          <p className="mb-2 text-[11px] text-[#8896A7] italic">Not yet reviewed</p>
+          <p className="mb-2 text-[11px] text-[text-tertiary] italic">Not yet reviewed</p>
         )}
         <textarea
           value={reviewerComments ?? ''}
           onChange={e => onFieldChange?.('reviewerComments', e.target.value)}
           placeholder="Reviewer comments..."
           rows={3}
-          className="w-full resize-none rounded-sm border border-[#D4DAE3] bg-white px-2 py-1.5 text-[11px] text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none transition-colors duration-150 leading-relaxed"
+          className="w-full resize-none rounded-sm border border-[border] bg-white px-2 py-1.5 text-[11px] text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:outline-none transition-colors duration-150 leading-relaxed"
         />
       </Section>
 
@@ -216,21 +216,21 @@ export const ArticlePropertiesPanel = ({
         <div className="space-y-2">
           <div>
             <p
-              className="mb-0.5 text-[11px] font-medium text-[#8896A7]"
+              className="mb-0.5 text-[11px] font-medium text-[text-tertiary]"
               style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
             >
               Created
             </p>
-            <p className="text-[11px] text-[#4A5568]">{formatDate(createdAt)}</p>
+            <p className="text-[11px] text-[text-secondary]">{formatDate(createdAt)}</p>
           </div>
           <div>
             <p
-              className="mb-0.5 text-[11px] font-medium text-[#8896A7]"
+              className="mb-0.5 text-[11px] font-medium text-[text-tertiary]"
               style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
             >
               Updated
             </p>
-            <p className="text-[11px] text-[#4A5568]">{formatDate(updatedAt)}</p>
+            <p className="text-[11px] text-[text-secondary]">{formatDate(updatedAt)}</p>
           </div>
         </div>
       </Section>

@@ -219,7 +219,7 @@ export const AssetUploader = () => {
 
           {/* Error */}
           {error && (
-            <div className="flex items-center gap-2 text-[#D64545]">
+            <div className="flex items-center gap-2 text-[destructive]">
               <SCIcon icon={Warning} size="sm" />
               <p className="text-sm">{error}</p>
             </div>
@@ -227,7 +227,7 @@ export const AssetUploader = () => {
 
           {/* Success */}
           {success && (
-            <div className="flex items-center gap-2 text-[#2D9F6F]">
+            <div className="flex items-center gap-2 text-[emerald]">
               <SCIcon icon={CheckCircle} size="sm" />
               <p className="text-sm">Asset uploaded successfully!</p>
             </div>

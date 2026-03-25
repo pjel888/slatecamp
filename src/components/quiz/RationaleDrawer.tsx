@@ -81,33 +81,33 @@ export function RationaleDrawer({
 
               {/* Takeaway */}
               {takeaway && (
-                <div className="flex items-start gap-2 bg-[#FEF8ED] border border-[#D4951A]/20 rounded-md px-3 py-2.5">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#D4951A] shrink-0 mt-0.5">Key Takeaway</span>
-                  <p className="text-sm text-[#1A2332]">{takeaway}</p>
+                <div className="flex items-start gap-2 bg-[#FEF8ED] border border-[warning]/20 rounded-md px-3 py-2.5">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[warning] shrink-0 mt-0.5">Key Takeaway</span>
+                  <p className="text-sm text-[text-primary]">{takeaway}</p>
                 </div>
               )}
 
               {/* Correct answer highlight */}
               {correctAnswerText && (
-                <div className="flex items-start gap-2 bg-[#EDFAF4] border border-[#2D9F6F]/20 rounded-md px-3 py-2.5">
-                  <SCIcon icon={CheckCircle} size="sm" className="text-[#2D9F6F] shrink-0 mt-0.5" />
-                  <p className="text-sm text-[#1A2332] font-medium">{correctAnswerText}</p>
+                <div className="flex items-start gap-2 bg-[#EDFAF4] border border-[emerald]/20 rounded-md px-3 py-2.5">
+                  <SCIcon icon={CheckCircle} size="sm" className="text-[emerald] shrink-0 mt-0.5" />
+                  <p className="text-sm text-[text-primary] font-medium">{correctAnswerText}</p>
                 </div>
               )}
 
               {/* Why This Matters — detailed explanation */}
               {explanation && (
                 <div className="space-y-1.5">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#4A5568]">Why This Matters</span>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[text-secondary]">Why This Matters</span>
                   <p className="text-[14px] text-zinc-700 leading-[1.7] max-w-[65ch]">{explanation}</p>
                 </div>
               )}
 
               {/* Code citation */}
               {codeCitation && (
-                <div className="flex items-start gap-2 bg-white border border-[#D4DAE3] rounded-md px-3 py-2.5">
-                  <SCIcon icon={Scales} size="sm" className="text-[#4A5568] shrink-0 mt-0.5" />
-                  <p className="text-[13px] text-[#4A5568] font-medium">{codeCitation}</p>
+                <div className="flex items-start gap-2 bg-white border border-[border] rounded-md px-3 py-2.5">
+                  <SCIcon icon={Scales} size="sm" className="text-[text-secondary] shrink-0 mt-0.5" />
+                  <p className="text-[13px] text-[text-secondary] font-medium">{codeCitation}</p>
                 </div>
               )}
 
@@ -122,7 +122,7 @@ export function RationaleDrawer({
                 </button>
                 <button
                   onClick={onAddNote}
-                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-[#4A5568] hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
+                  className="flex items-center gap-1.5 h-7 px-3 rounded-sm bg-white border border-border text-[text-secondary] hover:bg-[#F5F5F5] text-[11px] font-black uppercase tracking-widest transition-colors"
                 >
                   <SCIcon icon={Plus} size="xs" />
                   Add Note

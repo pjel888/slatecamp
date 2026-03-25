@@ -1914,6 +1914,7 @@ export type Database = {
           review_interval_days: number | null
           teach_back_attempted: boolean | null
           teach_back_gap_count: number | null
+          theta: number
           topic_id: string
           total_attempts: number
           total_correct: number
@@ -1935,6 +1936,7 @@ export type Database = {
           review_interval_days?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
+          theta?: number
           topic_id: string
           total_attempts?: number
           total_correct?: number
@@ -1956,6 +1958,7 @@ export type Database = {
           review_interval_days?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
+          theta?: number
           topic_id?: string
           total_attempts?: number
           total_correct?: number

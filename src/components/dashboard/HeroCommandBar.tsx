@@ -131,7 +131,7 @@ export function HeroCommandBar({
   const delta = previousScore != null ? readinessScore - previousScore : null
 
   return (
-    <div className='w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col'>
+    <div className='w-full rounded-md bg-[camp-cobalt] overflow-hidden flex flex-col'>
       {/* ── Top row: Ring | Greeting+Stats | Heatmap ──────────────── */}
       <div className='flex items-stretch w-full flex-1'>
         {/* SECTION 1: Readiness Score Ring */}
@@ -300,7 +300,7 @@ export function HeroCommandBar({
 
 export function HeroCommandBarSkeleton() {
   return (
-    <div className='w-full rounded-md bg-[#1B3FC4] overflow-hidden flex flex-col'>
+    <div className='w-full rounded-md bg-[camp-cobalt] overflow-hidden flex flex-col'>
       <div className='flex items-stretch flex-1'>
         <div className='flex flex-col items-center gap-2 px-6 py-5'>
           <Skeleton className='h-3 w-24 bg-white/10' />

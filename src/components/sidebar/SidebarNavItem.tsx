@@ -44,7 +44,7 @@ export const SidebarNavItem = ({
         // Transition
         'transition-colors duration-[120ms] ease-out',
         // Focus-visible ring
-        'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]',
+        'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[camp-cobalt]',
         // Default state
         'text-gray-500 dark:text-gray-400',
         // Hover state
@@ -57,7 +57,7 @@ export const SidebarNavItem = ({
           // left:-6px bleeds into the parent px-[6px] padding zone
           'before:absolute before:left-[-6px] before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-4',
-          'before:bg-[#1B3FC4] dark:before:bg-[#4F6AE8]',
+          'before:bg-[camp-cobalt] dark:before:bg-[#4F6AE8]',
           'before:rounded-r-sm',
           'before:content-[\'\']',
         ],

@@ -57,7 +57,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
           <SCIcon
             icon={CheckCircle}
             size='sm'
-            className='mt-0.5 shrink-0 text-[#2D9F6F]'
+            className='mt-0.5 shrink-0 text-[emerald]'
           />
           {feature}
         </li>
@@ -87,7 +87,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
       className={`mt-7 block w-full rounded-sm px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
         tier.highlighted
           ? 'bg-primary hover:bg-[#1535A8]'
-          : 'bg-[#1B3FC4] hover:bg-[#1535A8]'
+          : 'bg-[camp-cobalt] hover:bg-[#1535A8]'
       }`}
     >
       {tier.ctaLabel}

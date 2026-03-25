@@ -56,7 +56,7 @@ export const FirstTimeTooltip = ({
           ref={tooltipRef}
           role="tooltip"
           className={cn(
-            'absolute z-50 w-[280px] bg-[#EEF2FC] border border-[#1B3FC4]/20 rounded-md p-3 shadow-md',
+            'absolute z-50 w-[280px] bg-[#EEF2FC] border border-[camp-cobalt]/20 rounded-md p-3 shadow-md',
             placementClasses[placement],
           )}
         >
@@ -64,7 +64,7 @@ export const FirstTimeTooltip = ({
           <button
             type="button"
             onClick={dismiss}
-            className="text-[11px] font-black uppercase tracking-widest text-[#1B3FC4] hover:text-[#1535A8] transition-colors"
+            className="text-[11px] font-black uppercase tracking-widest text-[camp-cobalt] hover:text-[#1535A8] transition-colors"
           >
             Got it
           </button>

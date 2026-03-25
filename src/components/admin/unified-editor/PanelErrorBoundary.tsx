@@ -31,21 +31,21 @@ export class PanelErrorBoundary extends Component<Props, State> {
               <path d="M10 6v4m0 4h.01M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="#D4951A" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
           </div>
-          <p className="text-sm font-medium text-[#1A2332] mb-1">
+          <p className="text-sm font-medium text-[text-primary] mb-1">
             {this.props.panelName} panel encountered an error.
           </p>
-          <p className="text-xs text-[#4A5568] mb-3">
+          <p className="text-xs text-[text-secondary] mb-3">
             Other panels are still functional.
           </p>
           <button
             type="button"
             onClick={() => this.setState({ hasError: false, error: null })}
-            className="rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-xs font-medium text-[#1A2332] hover:bg-[#F8F7F5] transition-colors duration-150"
+            className="rounded-sm border border-[border] bg-white px-3 py-1.5 text-xs font-medium text-[text-primary] hover:bg-[#F8F7F5] transition-colors duration-150"
           >
             Reload {this.props.panelName.toLowerCase()} panel
           </button>
           {this.state.error && (
-            <pre className="mt-3 max-w-full overflow-auto rounded-sm bg-[#F8F7F5] p-2 text-[11px] font-mono text-[#D64545]">
+            <pre className="mt-3 max-w-full overflow-auto rounded-sm bg-[#F8F7F5] p-2 text-[11px] font-mono text-[destructive]">
               {this.state.error.message}
             </pre>
           )}

@@ -10,8 +10,8 @@ interface Props {
 
 const STYLES = {
   insight: 'bg-[#EEF2FC] text-[#1535A8]',
-  warning: 'bg-[#FEF8ED] text-[#D4951A]',
-  success: 'bg-[#EDFAF4] text-[#2D9F6F]',
+  warning: 'bg-[#FEF8ED] text-[warning]',
+  success: 'bg-[#EDFAF4] text-[emerald]',
 }
 
 export function ChartCoachingAnnotation({ text, variant = 'insight' }: Props) {

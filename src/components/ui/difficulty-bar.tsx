@@ -42,7 +42,7 @@ export const DifficultyBar = ({ value, size = 'md' }: DifficultyBarProps) => {
       {Array.from({ length: 5 }, (_, i) => (
         <div
           key={i}
-          className={`h-2.5 w-1.5 rounded-[1px] ${i < filled ? 'bg-[#D4951A]' : 'bg-[#D4DAE3]'}`}
+          className={`h-2.5 w-1.5 rounded-[1px] ${i < filled ? 'bg-[warning]' : 'bg-[border]'}`}
         />
       ))}
     </div>

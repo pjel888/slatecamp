@@ -80,7 +80,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             step={0.01}
             value={explode}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[#1B3FC4]"
+            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-[camp-cobalt]"
           />
         </div>
       </div>

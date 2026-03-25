@@ -25,18 +25,18 @@ export const SrsReviewWidget = ({
   return (
     <Link
       href="/dashboard/testing/camp/setup"
-      className="block rounded-md border border-[#D4DAE3] bg-white p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
+      className="block rounded-md border border-[border] bg-white p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-sm font-medium text-[#1A2332]">
+          <p className="text-sm font-medium text-[text-primary]">
             {itemsDue} {itemsDue === 1 ? 'item' : 'items'} ready for review
           </p>
-          <p className="mt-0.5 text-xs text-[#8896A7]">
+          <p className="mt-0.5 text-xs text-[text-tertiary]">
             {subjectList}{hasMore ? ` +${subjects.length - 3} more` : ''} &middot; ~{estimatedMinutes} min
           </p>
         </div>
-        <span className="text-xs font-medium text-[#1B3FC4]">
+        <span className="text-xs font-medium text-[camp-cobalt]">
           Review &rarr;
         </span>
       </div>

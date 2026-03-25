@@ -98,10 +98,10 @@ export const TrailRibbon = ({
     <div className="flex flex-col gap-2">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <span className="font-mono text-[11px] uppercase tracking-wider text-[#8896A7]">
+        <span className="font-mono text-[11px] uppercase tracking-wider text-[text-tertiary]">
           Trail Progress
         </span>
-        <span className="font-mono text-[11px] uppercase tracking-wider text-[#8896A7]">
+        <span className="font-mono text-[11px] uppercase tracking-wider text-[text-tertiary]">
           Day {currentDay} of {totalDays}
         </span>
       </div>
@@ -147,7 +147,7 @@ export const TrailRibbon = ({
                     scrollSnapAlign: 'start',
                   }}
                 >
-                  <span className="font-mono text-[11px] text-[#8896A7] whitespace-nowrap absolute -top-4">
+                  <span className="font-mono text-[11px] text-[text-tertiary] whitespace-nowrap absolute -top-4">
                     {day.phase_name}
                   </span>
                   <div
@@ -182,7 +182,7 @@ export const TrailRibbon = ({
               >
                 {/* TODAY label */}
                 {isToday && (
-                  <span className="font-mono text-[11px] font-medium text-[#1B3FC4] absolute -top-4 whitespace-nowrap">
+                  <span className="font-mono text-[11px] font-medium text-[camp-cobalt] absolute -top-4 whitespace-nowrap">
                     TODAY
                   </span>
                 )}
@@ -259,7 +259,7 @@ export const TrailRibbon = ({
 
       {/* Empty state */}
       {isFirstDay && (
-        <p className="text-xs text-[#4A5568]">
+        <p className="text-xs text-[text-secondary]">
           Your trail starts here. Complete Day 1 to see your trajectory begin.
         </p>
       )}

@@ -15,11 +15,11 @@ export const PhaseTransitionCard = ({
   toPhase,
 }: PhaseTransitionCardProps) => {
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
-      <p className="text-sm font-semibold text-[#1A2332]">
+    <div className="rounded-md border border-[border] bg-[#F8F7F5] p-4">
+      <p className="text-sm font-semibold text-[text-primary]">
         Phase {fromPhase.phase_number}: {fromPhase.name} &mdash; complete.
       </p>
-      <p className="text-sm text-[#4A5568] mt-1">
+      <p className="text-sm text-[text-secondary] mt-1">
         Phase {toPhase.phase_number}: {toPhase.name} begins.
       </p>
     </div>

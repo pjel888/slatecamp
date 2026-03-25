@@ -164,8 +164,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   if (loading) {
     return (
       <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
-        <div className="shrink-0 h-16 bg-white border-b border-[#D4DAE3]" />
-        <div className="shrink-0 h-1 bg-[#D4DAE3]/40" />
+        <div className="shrink-0 h-16 bg-white border-b border-[border]" />
+        <div className="shrink-0 h-1 bg-[border]/40" />
         <div className="flex-1 flex items-start justify-center">
           <div className="w-full max-w-2xl px-5 py-8 space-y-6">
             <Skeleton className="h-4 w-1/3" />
@@ -188,10 +188,10 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
     return (
       <div className="min-h-screen bg-[#F5F7FA] flex items-center justify-center px-6">
         <div className="bg-white rounded-md p-6 max-w-sm w-full text-center space-y-4">
-          <p className="text-[#D64545] text-sm font-medium">{error}</p>
+          <p className="text-[destructive] text-sm font-medium">{error}</p>
           <button
             onClick={() => router.push('/dashboard')}
-            className="h-10 px-6 rounded-sm bg-[#1B3FC4] text-white text-sm font-semibold hover:bg-[#1535A8] transition-colors duration-150 ease-out"
+            className="h-10 px-6 rounded-sm bg-[camp-cobalt] text-white text-sm font-semibold hover:bg-[#1535A8] transition-colors duration-150 ease-out"
           >
             Return to Dashboard
           </button>
@@ -223,21 +223,21 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   return (
     <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
       {/* Top bar */}
-      <header className="shrink-0 bg-white border-b border-[#D4DAE3] px-5 py-3.5">
+      <header className="shrink-0 bg-white border-b border-[border] px-5 py-3.5">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
-          <span className="text-[#1A2332] text-sm font-semibold tracking-tight">
+          <span className="text-[text-primary] text-sm font-semibold tracking-tight">
             Assessment
           </span>
-          <span className="text-[#4A5568] text-sm tabular-nums">
+          <span className="text-[text-secondary] text-sm tabular-nums">
             Your score is building &middot; {currentIndex + 1} of {totalQuestions}
           </span>
         </div>
       </header>
 
       {/* Progress bar */}
-      <div className="shrink-0 h-1 bg-[#D4DAE3]/40">
+      <div className="shrink-0 h-1 bg-[border]/40">
         <div
-          className="h-full bg-[#1B3FC4] transition-all duration-150 ease-out"
+          className="h-full bg-[camp-cobalt] transition-all duration-150 ease-out"
           style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
         />
       </div>
@@ -248,7 +248,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
           {/* Framing text on first question */}
           {isFirstQuestion && (
             <div className="bg-[#EEF2FC] rounded-md px-4 py-3">
-              <p className="text-[#1A2332] text-sm leading-relaxed">
+              <p className="text-[text-primary] text-sm leading-relaxed">
                 This is not a test — it's a diagnostic to understand where you stand.
                 Answer each question to the best of your ability.
               </p>
@@ -258,17 +258,17 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
           {/* Subject transition label */}
           {isSubjectTransition && currentQuestion.subject_id && (
             <div className="flex items-center gap-2">
-              <div className="h-px flex-1 bg-[#D4DAE3]" />
-              <span className="text-[11px] font-medium text-[#8896A7] uppercase tracking-wider shrink-0">
+              <div className="h-px flex-1 bg-[border]" />
+              <span className="text-[11px] font-medium text-[text-tertiary] uppercase tracking-wider shrink-0">
                 New subject area
               </span>
-              <div className="h-px flex-1 bg-[#D4DAE3]" />
+              <div className="h-px flex-1 bg-[border]" />
             </div>
           )}
 
           {/* Question text */}
           <div key={currentQuestion.question_id} className="animate-in fade-in duration-100">
-            <p className="text-[#1A2332] text-base leading-relaxed font-medium">
+            <p className="text-[text-primary] text-base leading-relaxed font-medium">
               {currentQuestion.text}
             </p>
           </div>
@@ -289,8 +289,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                     'flex items-start gap-3',
                     'shadow-none hover:shadow-sm',
                     isSelected
-                      ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                      : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/40',
+                      ? 'border-[camp-cobalt] bg-[#EEF2FC]'
+                      : 'border-[border] bg-white hover:border-[camp-cobalt]/40',
                     completing && 'opacity-60 cursor-not-allowed',
                   )}
                   role="radio"
@@ -300,8 +300,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                     className={cn(
                       'shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-colors duration-150 ease-out',
                       isSelected
-                        ? 'bg-[#1B3FC4] text-white'
-                        : 'bg-[#F5F5F5] text-[#4A5568] border border-[#D4DAE3]',
+                        ? 'bg-[camp-cobalt] text-white'
+                        : 'bg-[#F5F5F5] text-[text-secondary] border border-[border]',
                     )}
                   >
                     {letter}
@@ -309,7 +309,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
                   <span
                     className={cn(
                       'text-sm leading-relaxed pt-0.5',
-                      isSelected ? 'text-[#1A2332] font-medium' : 'text-[#4A5568]',
+                      isSelected ? 'text-[text-primary] font-medium' : 'text-[text-secondary]',
                     )}
                   >
                     {option.text}
@@ -322,7 +322,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
       </main>
 
       {/* Navigation footer */}
-      <footer className="shrink-0 bg-white border-t border-[#D4DAE3] px-5 py-4">
+      <footer className="shrink-0 bg-white border-t border-[border] px-5 py-4">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           {/* Back button */}
           <button
@@ -331,8 +331,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
             className={cn(
               'h-10 px-5 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
               isFirstQuestion || completing
-                ? 'text-[#8896A7] cursor-not-allowed'
-                : 'text-[#4A5568] hover:text-[#1A2332] hover:bg-[#F5F5F5]',
+                ? 'text-[text-tertiary] cursor-not-allowed'
+                : 'text-[text-secondary] hover:text-[text-primary] hover:bg-[#F5F5F5]',
             )}
           >
             &larr; Previous
@@ -346,8 +346,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
               className={cn(
                 'h-10 px-6 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
                 completing || !selectedOptionId
-                  ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
-                  : 'bg-[#1B3FC4] text-white hover:bg-[#1535A8]',
+                  ? 'bg-[border] text-[text-tertiary] cursor-not-allowed'
+                  : 'bg-[camp-cobalt] text-white hover:bg-[#1535A8]',
               )}
             >
               {completing ? (
@@ -367,8 +367,8 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
               className={cn(
                 'h-10 px-6 rounded-sm text-sm font-semibold transition-colors duration-150 ease-out',
                 !selectedOptionId || completing
-                  ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
-                  : 'bg-[#1B3FC4] text-white hover:bg-[#1535A8]',
+                  ? 'bg-[border] text-[text-tertiary] cursor-not-allowed'
+                  : 'bg-[camp-cobalt] text-white hover:bg-[#1535A8]',
               )}
             >
               Next &rarr;

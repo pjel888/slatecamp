@@ -36,21 +36,22 @@ const DebriefPage = async ({ params }: DebriefPageProps) => {
     }
   }
 
-  // Fetch all interactions for this session
-  const { data: interactions } = await supabase
-    .from('user_interactions')
-    .select('*, questions!inner(question_id, text, options, correct_option_id, rationale, code_citation, model_id, topic_id)')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .order('question_order', { ascending: true })
-
-  // Fetch readiness score snapshots (before and after)
-  const { data: snapshots } = await supabase
-    .from('readiness_score_snapshots')
-    .select('score, computed_at, session_id')
-    .eq('user_id', user.id)
-    .order('computed_at', { ascending: false })
-    .limit(10)
+  const [{ data: interactions }, { data: snapshots }] = await Promise.all([
+    // Fetch all interactions for this session
+    supabase
+      .from('user_interactions')
+      .select('*, questions!inner(question_id, text, options, correct_option_id, rationale, code_citation, model_id, topic_id)')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id)
+      .order('question_order', { ascending: true }),
+    // Fetch readiness score snapshots (before and after)
+    supabase
+      .from('readiness_score_snapshots')
+      .select('score, computed_at, session_id')
+      .eq('user_id', user.id)
+      .order('computed_at', { ascending: false })
+      .limit(10),
+  ])
 
   // Find score before and after this session
   const thisSnapshot = (snapshots ?? []).find(

@@ -32,17 +32,18 @@ export default async function OnboardingPage() {
 
   await bootstrapUser(user.id)
 
-  const { data: disciplines } = await supabase
-    .from('disciplines')
-    .select('*')
-    .order('name')
-
-  // Fetch level-1 subjects for every discipline (used by returning_reviewer multi-select)
-  const { data: subjectRows } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id, name, discipline_id')
-    .eq('level', 1)
-    .order('name')
+  const [{ data: disciplines }, { data: subjectRows }] = await Promise.all([
+    supabase
+      .from('disciplines')
+      .select('*')
+      .order('name'),
+    // Fetch level-1 subjects for every discipline (used by returning_reviewer multi-select)
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, name, discipline_id')
+      .eq('level', 1)
+      .order('name'),
+  ])
 
   // Build a lookup: disciplineId → Subject[]
   const subjectsByDiscipline: Record<string, { node_id: string; name: string }[]> = {}

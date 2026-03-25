@@ -102,7 +102,7 @@ export const OutlinePanel = ({
   }, [eiPrompts])
 
   return (
-    <div className="sticky top-0 flex w-[200px] shrink-0 flex-col overflow-y-auto border-r border-[#D4DAE3] bg-white xl:w-[200px]">
+    <div className="sticky top-0 flex w-[200px] shrink-0 flex-col overflow-y-auto border-r border-[border] bg-white xl:w-[200px]">
       {/* Header */}
       <div className="px-3 pb-2 pt-4">
         <Eyebrow>Outline</Eyebrow>
@@ -111,7 +111,7 @@ export const OutlinePanel = ({
       {/* Headings list */}
       <nav className="flex-1 pb-2" aria-label="Article outline">
         {headings.length === 0 ? (
-          <p className="px-3 py-2 text-[11px] text-[#8896A7]">
+          <p className="px-3 py-2 text-[11px] text-[text-tertiary]">
             No headings found in content.
           </p>
         ) : (
@@ -125,18 +125,18 @@ export const OutlinePanel = ({
                   title={heading.text}
                 >
                   {/* Section icon */}
-                  <span className="shrink-0 text-[#8896A7] group-hover:text-[#1B3FC4]">
+                  <span className="shrink-0 text-[text-tertiary] group-hover:text-[camp-cobalt]">
                     &sect;
                   </span>
 
                   {/* Heading text */}
-                  <span className="min-w-0 flex-1 truncate text-[#1A2332] group-hover:text-[#1B3FC4]">
+                  <span className="min-w-0 flex-1 truncate text-[text-primary] group-hover:text-[camp-cobalt]">
                     {truncate(heading.text, 28)}
                   </span>
 
                   {/* Question count badge */}
                   <span
-                    className={`shrink-0 text-[11px] ${count === 0 ? 'text-[#D4951A]' : 'text-[#8896A7]'}`}
+                    className={`shrink-0 text-[11px] ${count === 0 ? 'text-[warning]' : 'text-[text-tertiary]'}`}
                     title="Approximate — based on keyword matching"
                   >
                     {count}q
@@ -149,30 +149,30 @@ export const OutlinePanel = ({
       </nav>
 
       {/* Divider */}
-      <div className="mx-3 border-t border-[#D4DAE3]" />
+      <div className="mx-3 border-t border-[border]" />
 
       {/* EI Prompts section */}
       <div className="px-3 pb-4 pt-3">
         <div className="mb-2 flex items-center justify-between">
           <Eyebrow>EI Prompts</Eyebrow>
-          <span className="rounded-sm bg-[#EEF2FC] px-1.5 py-0.5 text-[11px] font-medium text-[#1B3FC4]">
+          <span className="rounded-sm bg-[#EEF2FC] px-1.5 py-0.5 text-[11px] font-medium text-[camp-cobalt]">
             {eiPrompts.length}
           </span>
         </div>
 
         {eiPrompts.length === 0 ? (
-          <p className="text-[11px] text-[#8896A7]">No EI prompts yet.</p>
+          <p className="text-[11px] text-[text-tertiary]">No EI prompts yet.</p>
         ) : (
           <ul className="space-y-1">
             {eiPrompts.map((prompt) => (
               <li
                 key={prompt.prompt_id}
-                className="flex items-start gap-1.5 py-1 text-[11px] text-[#4A5568]"
+                className="flex items-start gap-1.5 py-1 text-[11px] text-[text-secondary]"
               >
-                <span className="shrink-0 text-[#8896A7]">&sect;</span>
+                <span className="shrink-0 text-[text-tertiary]">&sect;</span>
                 <span className="min-w-0">
-                  <span className="text-[#8896A7]">After </span>
-                  <span className="font-medium text-[#1A2332]">
+                  <span className="text-[text-tertiary]">After </span>
+                  <span className="font-medium text-[text-primary]">
                     {truncate(prompt.insert_after_heading || '(none)', 22)}
                   </span>
                 </span>

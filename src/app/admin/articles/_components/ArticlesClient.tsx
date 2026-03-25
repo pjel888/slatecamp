@@ -79,7 +79,7 @@ const buildColumns = (): Column<Article>[] => [
     header: 'Coverage',
     render: (row) => (
       row.questionCount && row.questionCount > 0
-        ? <span className="text-[11px] font-medium text-[#2D9F6F]">Complete</span>
+        ? <span className="text-[11px] font-medium text-[emerald]">Complete</span>
         : <span className="text-[11px] font-medium text-muted-foreground">GAPS</span>
     ),
   },
@@ -107,7 +107,7 @@ const buildColumns = (): Column<Article>[] => [
       <div className="flex items-center gap-3">
         <Link
           href={`/admin/content/${row.article_id}`}
-          className="whitespace-nowrap text-xs text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+          className="whitespace-nowrap text-xs text-[camp-cobalt] hover:text-[#1535A8] transition-colors duration-150"
           onClick={(e) => e.stopPropagation()}
         >
           Edit with Questions &rarr;
@@ -117,7 +117,7 @@ const buildColumns = (): Column<Article>[] => [
             href={`/dashboard/wiki/${row.slug}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-xs text-[#8896A7] hover:text-[#4A5568] transition-colors duration-150"
+            className="whitespace-nowrap text-xs text-[text-tertiary] hover:text-[text-secondary] transition-colors duration-150"
             onClick={(e) => e.stopPropagation()}
           >
             Preview ↗
@@ -156,7 +156,7 @@ const StatusTabs = ({ articles, active, onChange }: StatusTabsProps) => {
   }
 
   return (
-    <div className="flex items-center gap-0 border-b border-[#D4DAE3]">
+    <div className="flex items-center gap-0 border-b border-[border]">
       {STATUS_TABS.map((tab) => (
         <button
           key={tab.key}
@@ -164,14 +164,14 @@ const StatusTabs = ({ articles, active, onChange }: StatusTabsProps) => {
           onClick={() => onChange(tab.key)}
           className={`px-4 py-2 text-xs font-medium transition-colors duration-150 border-b-2 -mb-px ${
             active === tab.key
-              ? 'border-[#1B3FC4] text-[#1B3FC4]'
-              : 'border-transparent text-[#4A5568] hover:text-[#1A2332]'
+              ? 'border-[camp-cobalt] text-[camp-cobalt]'
+              : 'border-transparent text-[text-secondary] hover:text-[text-primary]'
           }`}
         >
           {tab.label}
           <span
             className={`ml-1.5 font-mono text-[11px] ${
-              active === tab.key ? 'text-[#1B3FC4]' : 'text-[#8896A7]'
+              active === tab.key ? 'text-[camp-cobalt]' : 'text-[text-tertiary]'
             }`}
           >
             ({counts[tab.key]})

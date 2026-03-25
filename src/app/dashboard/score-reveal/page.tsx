@@ -21,23 +21,24 @@ const ScoreRevealPage = async () => {
     redirect('/dashboard')
   }
 
-  // Check retaker status
-  const supabase = await createClient()
-  const { data: stats } = await supabase
-    .from('user_global_stats')
-    .select('exam_attempt_number, previous_exam_result')
-    .eq('user_id', user.id)
-    .single()
-
-  const isRetaker =
-    (stats?.exam_attempt_number && stats.exam_attempt_number > 1) ||
-    stats?.previous_exam_result === 'failed'
-
   // Mark as shown (fire-and-forget) and track funnel event
   void markScoreRevealed(user.id)
   void trackServerEvent('score_reveal_viewed', { score: results.score })
 
-  const recommendation = await recommendTrail()
+  // Check retaker status and recommend trail in parallel
+  const supabase = await createClient()
+  const [{ data: stats }, recommendation] = await Promise.all([
+    supabase
+      .from('user_global_stats')
+      .select('exam_attempt_number, previous_exam_result')
+      .eq('user_id', user.id)
+      .single(),
+    recommendTrail(),
+  ])
+
+  const isRetaker =
+    (stats?.exam_attempt_number && stats.exam_attempt_number > 1) ||
+    stats?.previous_exam_result === 'failed'
 
   return (
     <main

@@ -9,14 +9,14 @@ export const QuestionQualityBadges = ({ hasRationale, hasCitation }: QuestionQua
   <div className="flex items-center gap-2">
     <span
       className={`text-[11px] font-medium ${
-        hasRationale ? 'text-[#2D9F6F]' : 'text-[#D64545]'
+        hasRationale ? 'text-[emerald]' : 'text-[destructive]'
       }`}
     >
       {hasRationale ? '✓ Rationale' : '✗ Rationale'}
     </span>
     <span
       className={`text-[11px] font-medium ${
-        hasCitation ? 'text-[#2D9F6F]' : 'text-[#D64545]'
+        hasCitation ? 'text-[emerald]' : 'text-[destructive]'
       }`}
     >
       {hasCitation ? '✓ Citation' : '✗ Citation'}

@@ -24,7 +24,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
       <BookOpen
         size={17}
         weight="fill"
-        className="text-[#1B3FC4] dark:text-[#4F6AE8]"
+        className="text-[camp-cobalt] dark:text-[#4F6AE8]"
       />
     </div>
 
@@ -38,7 +38,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
       )}
     >
       <span className="text-gray-900 dark:text-gray-200">Slate</span>
-      <span className="text-[#1B3FC4] dark:text-[#4F6AE8]">Camp</span>
+      <span className="text-[camp-cobalt] dark:text-[#4F6AE8]">Camp</span>
     </div>
   </div>
 )

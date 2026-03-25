@@ -304,7 +304,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             </TooltipContent>
           </Tooltip>
         </div>
-        <p className='text-[11px] text-[#8896A7] mb-1'>
+        <p className='text-[11px] text-[text-tertiary] mb-1'>
           Hover a wedge to see your score
         </p>
 
@@ -328,7 +328,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         <h4 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-[#6B6B6B] shrink-0'>
           [ Breakdown ]
         </h4>
-        <p className='text-[11px] text-[#8896A7] mb-2'>
+        <p className='text-[11px] text-[text-tertiary] mb-2'>
           Your mastery per subject area
         </p>
 
@@ -341,10 +341,10 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             return (
               <div key={item.subject}>
                 <div className='flex items-center justify-between'>
-                  <span className='text-xs font-medium text-[#1A2332] truncate pr-2'>
+                  <span className='text-xs font-medium text-[text-primary] truncate pr-2'>
                     {item.subject}
                   </span>
-                  <span className='text-xs font-semibold text-[#1A2332] tabular-nums shrink-0'>
+                  <span className='text-xs font-semibold text-[text-primary] tabular-nums shrink-0'>
                     {clamped}%
                   </span>
                 </div>
@@ -371,7 +371,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
 
         {/* Footer */}
         <div className='pt-2 border-t border-[#E5E7EB] flex items-center justify-between shrink-0'>
-          <p className='text-[11px] text-[#8896A7]'>
+          <p className='text-[11px] text-[text-tertiary]'>
             {hasData
               ? `${abovePassing} of ${data.length} above passing`
               : 'Bars fill as you answer questions'}

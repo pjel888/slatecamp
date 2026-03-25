@@ -125,7 +125,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
 
         {/* Error Banner */}
         {errorMessage && (
-          <div className="px-4 py-3 rounded-md bg-[#FDF0F0] border border-[#D64545] text-[#D64545] text-sm">
+          <div className="px-4 py-3 rounded-md bg-[#FDF0F0] border border-[destructive] text-[destructive] text-sm">
             {errorMessage}
           </div>
         )}

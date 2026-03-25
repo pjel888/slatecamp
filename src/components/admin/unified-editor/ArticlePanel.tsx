@@ -149,7 +149,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1 text-xs font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:bg-[#F8F7F5] hover:text-[#1A2332]"
+        className="flex items-center gap-1 rounded-sm border border-[border] bg-white px-2.5 py-1 text-xs font-medium text-[text-secondary] transition-colors duration-150 ease-out hover:bg-[#F8F7F5] hover:text-[text-primary]"
       >
         {label}
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" className="opacity-50">
@@ -157,7 +157,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
         </svg>
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-[#D4DAE3] bg-white shadow-md">
+        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-[border] bg-white shadow-md">
           {items.map((item) => (
             <button
               key={item.label}
@@ -167,7 +167,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
                 onInsert(item.snippet)
                 setOpen(false)
               }}
-              className="block w-full px-3 py-2 text-left text-xs text-[#1A2332] transition-colors duration-150 ease-out hover:bg-[#EEF2FC] hover:text-[#1B3FC4]"
+              className="block w-full px-3 py-2 text-left text-xs text-[text-primary] transition-colors duration-150 ease-out hover:bg-[#EEF2FC] hover:text-[camp-cobalt]"
             >
               {item.label}
             </button>
@@ -335,7 +335,7 @@ export const ArticlePanel = ({
     <div className="flex h-full flex-col overflow-hidden">
       <Tabs defaultValue="editor" className="flex flex-1 flex-col min-h-0 overflow-hidden">
         {/* ── Tab Header ─────────────────────────────────── */}
-        <div className="shrink-0 border-b border-[#D4DAE3] bg-[#F8F7F5] px-3">
+        <div className="shrink-0 border-b border-[border] bg-[#F8F7F5] px-3">
           <TabsList variant="underline" className="gap-0 border-b-0">
             <TabsTrigger value="editor" className="text-xs">
               Editor
@@ -345,7 +345,7 @@ export const ArticlePanel = ({
             </TabsTrigger>
             <TabsTrigger value="diff" className="text-xs">
               Diff{diffCount > 0 && (
-                <span className="ml-1 inline-flex min-w-[18px] items-center justify-center rounded-full bg-[#EEF2FC] px-1.5 py-0.5 font-mono text-[11px] font-medium leading-none text-[#1B3FC4]">
+                <span className="ml-1 inline-flex min-w-[18px] items-center justify-center rounded-full bg-[#EEF2FC] px-1.5 py-0.5 font-mono text-[11px] font-medium leading-none text-[camp-cobalt]">
                   {diffCount}
                 </span>
               )}
@@ -356,7 +356,7 @@ export const ArticlePanel = ({
         {/* ── Editor Tab ─────────────────────────────────── */}
         <TabsContent value="editor" className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {/* Snippet Toolbar */}
-          <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[#D4DAE3] bg-white px-3 py-2">
+          <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-[border] bg-white px-3 py-2">
             <Eyebrow className="mr-1">Insert</Eyebrow>
             {SNIPPET_GROUPS.map((group) => (
               <SnippetDropdown
@@ -410,9 +410,9 @@ export const ArticlePanel = ({
           {articleSlug ? (
             <div className="flex h-full flex-col">
               {/* Toolbar */}
-              <div className="flex shrink-0 items-center gap-3 border-b border-[#D4DAE3] bg-[#F8F7F5] px-3 py-1.5">
+              <div className="flex shrink-0 items-center gap-3 border-b border-[border] bg-[#F8F7F5] px-3 py-1.5">
                 <Eyebrow>Student View</Eyebrow>
-                <span className="text-[11px] text-[#4A5568]">
+                <span className="text-[11px] text-[text-secondary]">
                   Shows the saved article exactly as students see it
                 </span>
                 <div className="flex-1" />
@@ -422,7 +422,7 @@ export const ArticlePanel = ({
                     const iframe = document.getElementById('wiki-preview-iframe') as HTMLIFrameElement
                     if (iframe) iframe.src = iframe.src
                   }}
-                  className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1 text-[11px] font-medium text-[#4A5568] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+                  className="rounded-sm border border-[border] bg-white px-2.5 py-1 text-[11px] font-medium text-[text-secondary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
                 >
                   Refresh
                 </button>
@@ -430,7 +430,7 @@ export const ArticlePanel = ({
                   href={`/dashboard/wiki/${articleSlug}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1 text-[11px] font-medium text-[#1B3FC4] hover:bg-[#EEF2FC] transition-colors duration-150"
+                  className="rounded-sm border border-[border] bg-white px-2.5 py-1 text-[11px] font-medium text-[camp-cobalt] hover:bg-[#EEF2FC] transition-colors duration-150"
                 >
                   Open in new tab
                 </a>
@@ -446,10 +446,10 @@ export const ArticlePanel = ({
           ) : (
             <div className="flex items-center justify-center h-full">
               <div className="text-center">
-                <p className="text-sm font-medium text-[#1A2332] mb-1">
+                <p className="text-sm font-medium text-[text-primary] mb-1">
                   Save the article first to preview
                 </p>
-                <p className="text-xs text-[#8896A7]">
+                <p className="text-xs text-[text-tertiary]">
                   The student view loads the saved article from the wiki page.
                   Save your changes, then switch to this tab.
                 </p>
@@ -462,7 +462,7 @@ export const ArticlePanel = ({
         <TabsContent value="diff" className="min-h-0 flex-1 overflow-hidden">
           <div className="h-full overflow-y-auto bg-white p-4">
           {diffCount === 0 ? (
-            <p className="text-sm italic text-[#8896A7]">
+            <p className="text-sm italic text-[text-tertiary]">
               No changes from saved version.
             </p>
           ) : (
@@ -473,7 +473,7 @@ export const ArticlePanel = ({
                     return (
                       <div
                         key={`${idx}-a`}
-                        className="rounded-sm bg-[#EDFAF4] px-2 py-px text-[#2D9F6F]"
+                        className="rounded-sm bg-[#EDFAF4] px-2 py-px text-[emerald]"
                       >
                         <span className="mr-3 inline-block w-4 select-none text-right opacity-50">+</span>
                         {line.text}
@@ -484,7 +484,7 @@ export const ArticlePanel = ({
                     return (
                       <div
                         key={`${idx}-r`}
-                        className="rounded-sm bg-[#FDF0F0] px-2 py-px text-[#D64545]"
+                        className="rounded-sm bg-[#FDF0F0] px-2 py-px text-[destructive]"
                       >
                         <span className="mr-3 inline-block w-4 select-none text-right opacity-50">-</span>
                         {line.text}
@@ -492,8 +492,8 @@ export const ArticlePanel = ({
                     )
                   }
                   return (
-                    <div key={`${idx}-u`} className="px-2 py-px text-[#1A2332]">
-                      <span className="mr-3 inline-block w-4 select-none text-right text-[#8896A7]">&nbsp;</span>
+                    <div key={`${idx}-u`} className="px-2 py-px text-[text-primary]">
+                      <span className="mr-3 inline-block w-4 select-none text-right text-[text-tertiary]">&nbsp;</span>
                       {line.text}
                     </div>
                   )
@@ -506,84 +506,84 @@ export const ArticlePanel = ({
       </Tabs>
 
       {/* ── Article Metadata (Collapsible) ─────────────────── */}
-      <div className="shrink-0 border-t border-[#D4DAE3] bg-[#F8F7F5]">
+      <div className="shrink-0 border-t border-[border] bg-[#F8F7F5]">
         <button
           type="button"
           onClick={() => setMetadataOpen((v) => !v)}
           className="flex w-full items-center gap-1.5 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-[#EEF2FC]"
         >
-          <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+          <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
             Article Metadata
           </span>
-          <span className="text-[11px] text-[#8896A7]">
+          <span className="text-[11px] text-[text-tertiary]">
             {metadataOpen ? '\u25BE' : '\u25B8'}
           </span>
         </button>
 
         {metadataOpen && (
-          <div className="grid grid-cols-2 gap-3 border-t border-[#D4DAE3] bg-white px-3 py-3">
+          <div className="grid grid-cols-2 gap-3 border-t border-[border] bg-white px-3 py-3">
             {/* ale_tests_you */}
             <div className="flex flex-col gap-1">
-              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
                 What this tests you on
               </label>
               <input
                 type="text"
                 value={aleTestsYou}
                 onChange={(e) => onAleTestsYouChange(e.target.value)}
-                className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1.5 text-xs text-[#1A2332] placeholder:text-[#8896A7] transition-colors duration-150 ease-out focus:border-[#1B3FC4] focus:outline-none"
+                className="rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] placeholder:text-[text-tertiary] transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:outline-none"
                 placeholder="Key topics tested..."
               />
             </div>
 
             {/* updated_note */}
             <div className="flex flex-col gap-1">
-              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
                 What changed
               </label>
               <input
                 type="text"
                 value={updatedNote}
                 onChange={(e) => onUpdatedNoteChange(e.target.value)}
-                className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1.5 text-xs text-[#1A2332] placeholder:text-[#8896A7] transition-colors duration-150 ease-out focus:border-[#1B3FC4] focus:outline-none"
+                className="rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] placeholder:text-[text-tertiary] transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:outline-none"
                 placeholder="Summary of changes..."
               />
             </div>
 
             {/* subject_label */}
             <div className="flex flex-col gap-1">
-              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
                 Subject label
               </label>
               <input
                 type="text"
                 value={subjectLabel}
                 onChange={(e) => onSubjectLabelChange(e.target.value)}
-                className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1.5 text-xs text-[#1A2332] placeholder:text-[#8896A7] transition-colors duration-150 ease-out focus:border-[#1B3FC4] focus:outline-none"
+                className="rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] placeholder:text-[text-tertiary] transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:outline-none"
                 placeholder="e.g. Real Property"
               />
             </div>
 
             {/* reviewed_by */}
             <div className="flex flex-col gap-1">
-              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
                 Reviewed by
               </label>
-              <span className="rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-2.5 py-1.5 font-mono text-[11px] text-[#8896A7]">
+              <span className="rounded-sm border border-[border] bg-[#F8F7F5] px-2.5 py-1.5 font-mono text-[11px] text-[text-tertiary]">
                 {reviewedBy || '\u2014'}
               </span>
             </div>
 
             {/* reviewer_comments — full width */}
             <div className="col-span-2 flex flex-col gap-1">
-              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[#8896A7]">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-[text-tertiary]">
                 Reviewer comments
               </label>
               <textarea
                 value={reviewerComments}
                 onChange={(e) => onReviewerCommentsChange(e.target.value)}
                 rows={3}
-                className="rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1.5 text-xs text-[#1A2332] placeholder:text-[#8896A7] transition-colors duration-150 ease-out focus:border-[#1B3FC4] focus:outline-none"
+                className="rounded-sm border border-[border] bg-white px-2.5 py-1.5 text-xs text-[text-primary] placeholder:text-[text-tertiary] transition-colors duration-150 ease-out focus:border-[camp-cobalt] focus:outline-none"
                 placeholder="Notes from review..."
               />
             </div>

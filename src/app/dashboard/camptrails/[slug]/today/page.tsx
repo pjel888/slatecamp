@@ -64,7 +64,7 @@ const TrailTodayPage = async ({
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-5">
         <Link
           href={`/dashboard/camptrails/${trail.slug}`}
-          className="flex items-center gap-1.5 text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150 w-fit"
+          className="flex items-center gap-1.5 text-sm text-[text-secondary] hover:text-[text-primary] transition-colors duration-150 w-fit"
         >
           <ArrowLeft size={14} />
           Trail Overview
@@ -75,21 +75,21 @@ const TrailTodayPage = async ({
         )}
 
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-[#1B3FC4] mb-1">
+          <p className="font-mono text-[11px] uppercase tracking-wide text-[camp-cobalt] mb-1">
             Day {currentDay.day_number} of {trail.duration_days}
           </p>
-          <h1 className="text-xl font-bold text-[#1A2332]">{currentDay.title}</h1>
+          <h1 className="text-xl font-bold text-[text-primary]">{currentDay.title}</h1>
           {currentDay.subject_focus && (
-            <p className="text-sm text-[#4A5568] mt-0.5">
+            <p className="text-sm text-[text-secondary] mt-0.5">
               {currentDay.subject_focus} — Week {Math.ceil(currentDay.day_number / 7)} of {Math.ceil(trail.duration_days / 7)}
             </p>
           )}
-          <p className="text-sm text-[#8896A7] mt-1">
+          <p className="text-sm text-[text-tertiary] mt-1">
             ~{currentDay.estimated_minutes} min total · {currentDay.steps?.length ?? 0} activities
           </p>
         </div>
 
-        <div className="h-px bg-[#D4DAE3]" />
+        <div className="h-px bg-[border]" />
 
         <TrailDayView
           trail={trail}
@@ -99,7 +99,7 @@ const TrailTodayPage = async ({
           userStudyWindow={studyWindow}
         />
 
-        <div className="h-px bg-[#D4DAE3]" />
+        <div className="h-px bg-[border]" />
 
         {todayNodeIds.length > 0 && (
           <>
@@ -108,7 +108,7 @@ const TrailTodayPage = async ({
               targetNodeIds={todayNodeIds}
               subjectName={currentDay.subject_focus ?? 'Today\'s Topics'}
             />
-            <div className="h-px bg-[#D4DAE3]" />
+            <div className="h-px bg-[border]" />
           </>
         )}
 

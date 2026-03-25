@@ -34,7 +34,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                   <tr key={i} className="bg-[#1B3FC414] dark:bg-[#1B3FC420]">
                     <td
                       colSpan={columns.length}
-                      className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-[#1B3FC4] px-2.5 py-1.5"
+                      className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-[camp-cobalt] px-2.5 py-1.5"
                     >
                       {row.parameter}
                     </td>
@@ -63,7 +63,7 @@ export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }
                       "px-2.5 py-2.5 text-sm font-semibold",
                       row.isMostTested
                         ? "text-[#92400E] dark:text-[#F5C842]"
-                        : "text-[#1B3FC4]"
+                        : "text-[camp-cobalt]"
                     )}
                   >
                     {row.value}

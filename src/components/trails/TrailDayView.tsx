@@ -104,13 +104,13 @@ export const TrailDayView = ({
       ))}
 
       {/* Day progress bar */}
-      <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+      <div className="rounded-md border border-[border] bg-[#F8F7F5] px-4 py-3">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs text-[#4A5568]">
+          <span className="text-xs text-[text-secondary]">
             Day progress: {completedCount}/{totalRequired} complete
           </span>
           {completedCount === totalRequired && totalRequired > 0 && (
-            <span className="flex items-center gap-1 text-xs font-medium text-[#2D9F6F]">
+            <span className="flex items-center gap-1 text-xs font-medium text-[emerald]">
               <Check size={12} weight="bold" />
               All steps complete
             </span>
@@ -118,7 +118,7 @@ export const TrailDayView = ({
         </div>
         <div className="h-1.5 w-full rounded-full bg-[#EEF2FC]">
           <div
-            className="h-1.5 rounded-full bg-[#1B3FC4] transition-all duration-300 ease-out"
+            className="h-1.5 rounded-full bg-[camp-cobalt] transition-all duration-300 ease-out"
             style={{ width: `${progressPercent}%` }}
           />
         </div>

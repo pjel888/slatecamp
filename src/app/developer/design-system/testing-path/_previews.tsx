@@ -242,7 +242,7 @@ export const SubjectPillPreview = () => (
         className={cn(
           'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[12px] font-medium',
           pill.variant === 'primary' &&
-            'bg-[#EEF2FC] text-[#1B3FC4]',
+            'bg-[#EEF2FC] text-[camp-cobalt]',
           pill.variant === 'default' &&
             'bg-muted text-foreground',
           pill.variant === 'subtle' &&
@@ -254,7 +254,7 @@ export const SubjectPillPreview = () => (
           className={cn(
             'font-[family-name:var(--font-dm-mono)] text-[11px]',
             pill.variant === 'primary'
-              ? 'text-[#1B3FC4]/60'
+              ? 'text-[camp-cobalt]/60'
               : 'text-muted-foreground',
           )}
         >

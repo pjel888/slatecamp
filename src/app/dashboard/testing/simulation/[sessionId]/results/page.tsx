@@ -13,13 +13,21 @@ const SimulationResultsPage = async ({ params }: SimulationResultsPageProps) => 
   const { data: { user } } = await getUser()
   if (!user) redirect(ROUTES.LOGIN)
 
-  // Fetch simulation session
-  const { data: session } = await supabase
-    .from('quiz_sessions')
-    .select('*')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .maybeSingle()
+  const [{ data: session }, { data: stats }] = await Promise.all([
+    // Fetch simulation session
+    supabase
+      .from('quiz_sessions')
+      .select('*')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id)
+      .maybeSingle(),
+    // Fetch readiness score for pressure gap
+    supabase
+      .from('user_global_stats')
+      .select('global_readiness_score')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+  ])
 
   if (!session || session.config?.source !== 'proof_simulation') notFound()
 
@@ -31,13 +39,6 @@ const SimulationResultsPage = async ({ params }: SimulationResultsPageProps) => 
     ? (now.getTime() - completedAt.getTime()) / (1000 * 60 * 60)
     : 0
   const resultsAvailable = isCompleted && hoursSinceCompletion >= 24
-
-  // Fetch readiness score for pressure gap
-  const { data: stats } = await supabase
-    .from('user_global_stats')
-    .select('global_readiness_score')
-    .eq('user_id', user.id)
-    .maybeSingle()
 
   // If results available, fetch interactions
   let interactions = null

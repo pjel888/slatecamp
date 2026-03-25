@@ -22,7 +22,7 @@ export const ActiveTrailBanner = ({ enrollment }: ActiveTrailBannerProps) => {
   return (
     <Link
       href={`/dashboard/camptrails/${trail.slug}/today`}
-      className="block rounded-lg border border-[#D4DAE3] border-l-[3px] border-l-[#534AB7] bg-white transition-all duration-150 ease-out hover:shadow-sm"
+      className="block rounded-lg border border-[border] border-l-[3px] border-l-[#534AB7] bg-white transition-all duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 sm:p-5">
         {/* Left side */}
@@ -35,20 +35,20 @@ export const ActiveTrailBanner = ({ enrollment }: ActiveTrailBannerProps) => {
               Active Trail
             </span>
           </div>
-          <p className="text-base font-semibold text-[#1A2332] truncate">
+          <p className="text-base font-semibold text-[text-primary] truncate">
             {trail.name}
           </p>
-          <p className="text-sm text-[#8896A7]">
+          <p className="text-sm text-[text-tertiary]">
             Day {enrollment.current_day} of {trail.duration_days} &middot; {subjectFocus} &middot; ~{hrsPerDay} hrs today
           </p>
         </div>
 
         {/* Right side */}
         <div className="flex flex-col items-end gap-2.5 shrink-0">
-          <span className="font-mono text-[11px] text-[#8896A7]">
+          <span className="font-mono text-[11px] text-[text-tertiary]">
             Day {enrollment.current_day} / {trail.duration_days}
           </span>
-          <div className="h-1 w-full sm:w-28 rounded-sm bg-[#D4DAE3]">
+          <div className="h-1 w-full sm:w-28 rounded-sm bg-[border]">
             <div
               className="h-1 rounded-sm bg-[#534AB7] transition-all duration-150 ease-out"
               style={{ width: `${progressPercent}%` }}

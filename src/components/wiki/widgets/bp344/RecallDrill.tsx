@@ -73,7 +73,7 @@ export const RecallDrill = () => {
 
   return (
     <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
-      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[#1B3FC4] mb-2">Interactive — Recall Drill (2024 IRR)</div>
+      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[camp-cobalt] mb-2">Interactive — Recall Drill (2024 IRR)</div>
       <p className="text-[13px] text-[#444] mb-3.5">Questions marked ⟳ test a value that changed in 2024 — common ALE traps. Hit <strong>Reveal</strong> then <strong>Next</strong>.</p>
       <div className="bg-white border-[1.5px] border-[#d0cec7] rounded-md px-4 py-4 min-h-[80px] mb-3">
         <div className="text-[14px] text-[#1a1a1a] font-medium mb-1.5">{cur.q}</div>
@@ -88,14 +88,14 @@ export const RecallDrill = () => {
         {!revealed ? (
           <button
             onClick={() => setRevealed(true)}
-            className="px-5 py-2 bg-[#1B3FC4] text-white border-none rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#1535A8] transition-colors duration-150"
+            className="px-5 py-2 bg-[camp-cobalt] text-white border-none rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#1535A8] transition-colors duration-150"
           >
             Reveal
           </button>
         ) : (
           <button
             onClick={next}
-            className="px-5 py-2 bg-white text-[#1B3FC4] border-[1.5px] border-[#1B3FC4] rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#EEF2FC] transition-colors duration-150"
+            className="px-5 py-2 bg-white text-[camp-cobalt] border-[1.5px] border-[camp-cobalt] rounded-md text-[13px] cursor-pointer font-sans hover:bg-[#EEF2FC] transition-colors duration-150"
           >
             Next →
           </button>

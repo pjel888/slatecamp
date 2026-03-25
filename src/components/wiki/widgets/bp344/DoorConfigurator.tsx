@@ -39,7 +39,7 @@ export const DoorConfigurator = () => {
 
   return (
     <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-[#F5F5F5] px-6 py-5">
-      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[#1B3FC4] mb-2">Interactive — Door Compliance Configurator (2024 IRR)</div>
+      <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-[camp-cobalt] mb-2">Interactive — Door Compliance Configurator (2024 IRR)</div>
       <p className="text-[13px] text-[#444] mb-3.5">Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
       <div className="flex gap-3.5 flex-wrap mb-3.5">
         {fields.map(({ label, val, set, min, max, step }) => (

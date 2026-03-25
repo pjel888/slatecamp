@@ -17,7 +17,7 @@ export function DashboardPageSkeleton() {
       </div>
 
       {/* ── Hero Command Bar ───────────────────────────── */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white p-4">
+      <div className="rounded-md border border-[border] bg-white p-4">
         <div className="flex flex-col md:flex-row gap-4">
           {/* Score circle */}
           <div className="flex items-center gap-4 shrink-0">
@@ -41,7 +41,7 @@ export function DashboardPageSkeleton() {
         </div>
 
         {/* Heatmap area */}
-        <div className="mt-4 pt-4 border-t border-[#D4DAE3]">
+        <div className="mt-4 pt-4 border-t border-[border]">
           <div className="flex items-center justify-between mb-3">
             <Skeleton className="h-4 w-32" />
             <Skeleton className="h-7 w-24 rounded-sm" />
@@ -58,7 +58,7 @@ export function DashboardPageSkeleton() {
       <div className="min-h-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full">
           {/* Quick-stat cards (3-col span) */}
-          <div className="lg:col-span-3 rounded-md border border-[#D4DAE3] bg-white p-2">
+          <div className="lg:col-span-3 rounded-md border border-[border] bg-white p-2">
             <div className="grid grid-cols-3 gap-2">
               {[
                 { bg: "bg-[#EEF2FC]" },
@@ -74,7 +74,7 @@ export function DashboardPageSkeleton() {
           </div>
 
           {/* Activity feed (right column, spans 2 rows) */}
-          <div className="h-full lg:row-span-2 rounded-md border border-[#D4DAE3] bg-white p-3">
+          <div className="h-full lg:row-span-2 rounded-md border border-[border] bg-white p-3">
             <Skeleton className="h-4 w-24 mb-3" />
             <div className="space-y-3">
               {[1, 2, 3, 4, 5].map((i) => (
@@ -90,7 +90,7 @@ export function DashboardPageSkeleton() {
           </div>
 
           {/* Daily wiki card */}
-          <div className="rounded-md border border-[#D4DAE3] bg-white p-3">
+          <div className="rounded-md border border-[border] bg-white p-3">
             <Skeleton className="h-4 w-20 mb-2" />
             <Skeleton className="h-3 w-full mb-1.5" />
             <Skeleton className="h-3 w-3/4" />
@@ -101,7 +101,7 @@ export function DashboardPageSkeleton() {
           <div />
 
           {/* Subject mastery card */}
-          <div className="rounded-md border border-[#D4DAE3] bg-white p-3">
+          <div className="rounded-md border border-[border] bg-white p-3">
             <Skeleton className="h-4 w-28 mb-3" />
             <div className="space-y-2">
               {[1, 2, 3, 4].map((i) => (

@@ -86,9 +86,9 @@ export function SubjectDrillSelector({
 
   const getMasteryColor = (mastery?: number) => {
     if (mastery === undefined) return 'bg-zinc-200'
-    if (mastery < 0.4) return 'bg-[#D64545]'
-    if (mastery < 0.7) return 'bg-[#D4951A]'
-    return 'bg-[#2D9F6F]'
+    if (mastery < 0.4) return 'bg-[destructive]'
+    if (mastery < 0.7) return 'bg-[warning]'
+    return 'bg-[emerald]'
   }
 
   const renderNode = (node: TaxonomyNode, depth: number = 0) => {
@@ -149,10 +149,10 @@ export function SubjectDrillSelector({
 
           <div className='ml-auto flex items-center gap-1.5'>
             {isWeak && (
-              <SCIcon icon={Warning} size='xs' className='text-[#D64545]' />
+              <SCIcon icon={Warning} size='xs' className='text-[destructive]' />
             )}
             {isNeglected && (
-              <SCIcon icon={Clock} size='xs' className='text-[#D4951A]' />
+              <SCIcon icon={Clock} size='xs' className='text-[warning]' />
             )}
             <span
               className={cn(
@@ -254,13 +254,13 @@ export function SubjectDrillSelector({
 
                   {selectedNode.mastery !== undefined &&
                     selectedNode.mastery > 0.8 && (
-                      <div className='p-3 bg-[#FEF8ED] border border-[#D4951A]/20 rounded-sm flex gap-3'>
+                      <div className='p-3 bg-[#FEF8ED] border border-[warning]/20 rounded-sm flex gap-3'>
                         <SCIcon
                           icon={Warning}
                           size='sm'
-                          className='text-[#D4951A] shrink-0'
+                          className='text-[warning] shrink-0'
                         />
-                        <p className='text-[11px] text-[#D4951A] leading-snug'>
+                        <p className='text-[11px] text-[warning] leading-snug'>
                           <span className='font-bold'>
                             You&apos;re already strong here.
                           </span>{' '}

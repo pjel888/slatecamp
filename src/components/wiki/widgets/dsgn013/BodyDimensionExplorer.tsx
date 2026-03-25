@@ -47,9 +47,9 @@ export const BodyDimensionExplorer = () => {
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[#1B3FC4]/10 dark:to-[#1B3FC4]/5 dark:border-[#3A3835]">
+      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[camp-cobalt]/10 dark:to-[camp-cobalt]/5 dark:border-[#3A3835]">
         <div>
-          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt]">
             Interactive · Anthropometric Data Explorer
           </div>
           <div className="text-xs text-[#737370] mt-0.5 dark:text-[#A8A8A5]">
@@ -62,8 +62,8 @@ export const BodyDimensionExplorer = () => {
             onClick={() => { setSex('male'); setActiveIdx(0) }}
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'male'
-                ? 'bg-[#1B3FC4] text-white'
-                : 'bg-[#F5F5F5] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
+                ? 'bg-[camp-cobalt] text-white'
+                : 'bg-[#F5F5F5] text-[#737370] hover:text-[camp-cobalt] dark:bg-[#252420]'
             }`}
           >
             Male
@@ -73,8 +73,8 @@ export const BodyDimensionExplorer = () => {
             onClick={() => { setSex('female'); setActiveIdx(0) }}
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'female'
-                ? 'bg-[#1B3FC4] text-white'
-                : 'bg-[#F5F5F5] text-[#737370] hover:text-[#1B3FC4] dark:bg-[#252420]'
+                ? 'bg-[camp-cobalt] text-white'
+                : 'bg-[#F5F5F5] text-[#737370] hover:text-[camp-cobalt] dark:bg-[#252420]'
             }`}
           >
             Female
@@ -92,11 +92,11 @@ export const BodyDimensionExplorer = () => {
               onClick={() => setActiveIdx(i)}
               className={`w-full text-left px-5 py-2.5 border-b border-[#ECEAE4] transition-all duration-150 dark:border-[#3A3835] ${
                 i === activeIdx
-                  ? 'bg-[#EEF3FD] border-l-2 border-l-[#1B3FC4] dark:bg-[#1B3FC4]/10'
+                  ? 'bg-[#EEF3FD] border-l-2 border-l-[camp-cobalt] dark:bg-[camp-cobalt]/10'
                   : 'hover:bg-[#F5F5F5] border-l-2 border-l-transparent dark:hover:bg-[#252420]'
               }`}
             >
-              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-[#1B3FC4]' : 'text-[#1A1A1A] dark:text-[#E2E0D8]'}`}>
+              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-[camp-cobalt]' : 'text-[#1A1A1A] dark:text-[#E2E0D8]'}`}>
                 {d.label}
               </div>
               <div className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5] mt-0.5">
@@ -123,7 +123,7 @@ export const BodyDimensionExplorer = () => {
                 <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
                   {p.label}
                 </div>
-                <div className="font-[var(--font-dm-mono)] text-lg font-medium text-[#1B3FC4]">
+                <div className="font-[var(--font-dm-mono)] text-lg font-medium text-[camp-cobalt]">
                   {p.val}
                 </div>
                 <div className="text-[11px] text-[#A8A8A5] mt-0.5">mm</div>
@@ -132,8 +132,8 @@ export const BodyDimensionExplorer = () => {
           </div>
 
           {/* Design note */}
-          <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B3FC4]/10 dark:text-[#C8C6C0]">
-            <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-[#1B3FC4] mb-1.5 font-medium">
+          <div className="bg-[#EEF3FD] rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[camp-cobalt]/10 dark:text-[#C8C6C0]">
+            <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-[camp-cobalt] mb-1.5 font-medium">
               Design implication
             </div>
             {active.note}

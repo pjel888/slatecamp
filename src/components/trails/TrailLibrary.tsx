@@ -95,7 +95,7 @@ export const TrailLibrary = ({ trails, enrollmentMap, excludeTrailId }: TrailLib
           <button
             type="button"
             onClick={() => setExpanded(true)}
-            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-md border border-dashed border-[#D4DAE3] text-sm font-medium text-[#4A5568] hover:border-[#1B3FC4] hover:text-[#1B3FC4] hover:bg-[#EEF2FC]/50 transition-all duration-150 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-md border border-dashed border-[border] text-sm font-medium text-[text-secondary] hover:border-[camp-cobalt] hover:text-[camp-cobalt] hover:bg-[#EEF2FC]/50 transition-all duration-150 cursor-pointer"
           >
             <Rows size={16} />
             Browse {remainingCount} more trail{remainingCount !== 1 ? 's' : ''}
@@ -113,14 +113,14 @@ export const TrailLibrary = ({ trails, enrollmentMap, excludeTrailId }: TrailLib
 
       {filteredGrouped.length === 0 && (
         <div className="text-center py-8">
-          <p className="text-sm text-[#4A5568]">No trails match this filter.</p>
+          <p className="text-sm text-[text-secondary]">No trails match this filter.</p>
         </div>
       )}
 
       <div className="flex flex-col gap-8">
         {filteredGrouped.map((group) => (
           <section key={group.type}>
-            <h2 className="text-sm font-semibold text-[#4A5568] uppercase tracking-wide mb-3">
+            <h2 className="text-sm font-semibold text-[text-secondary] uppercase tracking-wide mb-3">
               {group.label}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -140,7 +140,7 @@ export const TrailLibrary = ({ trails, enrollmentMap, excludeTrailId }: TrailLib
       <button
         type="button"
         onClick={() => { setExpanded(false); setActiveFilter('all') }}
-        className="mt-6 w-full flex items-center justify-center gap-2 py-2.5 text-sm text-[#8896A7] hover:text-[#4A5568] transition-colors duration-150 cursor-pointer"
+        className="mt-6 w-full flex items-center justify-center gap-2 py-2.5 text-sm text-[text-tertiary] hover:text-[text-secondary] transition-colors duration-150 cursor-pointer"
       >
         Show fewer trails
       </button>

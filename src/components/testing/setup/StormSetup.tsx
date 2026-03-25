@@ -96,7 +96,7 @@ const StormSetup = ({ userId }: StormSetupProps) => {
         </div>
 
         {error && (
-          <p className="text-sm text-[#D64545] text-center" role="alert">
+          <p className="text-sm text-[destructive] text-center" role="alert">
             {error}
           </p>
         )}

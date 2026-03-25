@@ -47,8 +47,8 @@ export function FooterNavigator({
           className={cn(
             'flex items-center gap-2 h-9 px-4 rounded-sm text-[11px] font-black uppercase tracking-widest transition-colors',
             canGoBack
-              ? 'border border-border text-[#4A5568] hover:bg-[#EEF2FC]/50 hover:text-primary'
-              : 'border border-border/50 text-[#8896A7]/40 cursor-not-allowed',
+              ? 'border border-border text-[text-secondary] hover:bg-[#EEF2FC]/50 hover:text-primary'
+              : 'border border-border/50 text-[text-tertiary]/40 cursor-not-allowed',
           )}
         >
           <SCIcon icon={CaretLeft} size='sm' />
@@ -81,14 +81,14 @@ export function FooterNavigator({
                     : 'w-2.5 h-2.5',
                   dot.state === 'current' && 'bg-primary',
                   dot.state === 'answered' && 'bg-[#5B7FE0]',
-                  dot.state === 'flagged' && 'bg-[#D4951A]',
+                  dot.state === 'flagged' && 'bg-[warning]',
                   dot.state === 'unanswered' && 'bg-zinc-200',
                 )}
               />
             ))}
           </nav>
           {showCount && (
-            <span className='text-[11px] font-bold text-[#8896A7] tracking-wide'>
+            <span className='text-[11px] font-bold text-[text-tertiary] tracking-wide'>
               Q{currentIndex + 1} of {dots.length}
             </span>
           )}

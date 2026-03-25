@@ -27,12 +27,12 @@ export const WorkstationCalculator = () => {
   return (
     <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-[#1A1A1A] dark:border-[#3A3835]">
       {/* Header */}
-      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[#1B3FC4]/10 dark:to-[#1B3FC4]/5 dark:border-[#3A3835]">
-        <div className="w-7 h-7 rounded-lg bg-[#1B3FC4] flex items-center justify-center text-white text-sm">
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-[#EEF3FD] to-[#E8EEFF] border-b border-[#E0DED8] dark:from-[camp-cobalt]/10 dark:to-[camp-cobalt]/5 dark:border-[#3A3835]">
+        <div className="w-7 h-7 rounded-lg bg-[camp-cobalt] flex items-center justify-center text-white text-sm">
           🧮
         </div>
         <div>
-          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#1B3FC4]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[camp-cobalt]">
             Interactive Calculator
           </div>
           <div className="text-[13px] text-[#3D3D3A] mt-0.5 dark:text-[#C8C6C0]">
@@ -55,7 +55,7 @@ export const WorkstationCalculator = () => {
               min={1}
               max={1000}
               onChange={(e) => setEmployees(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[#1B3FC4] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[camp-cobalt] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             />
           </div>
 
@@ -67,7 +67,7 @@ export const WorkstationCalculator = () => {
             <select
               value={density}
               onChange={(e) => setDensity(parseFloat(e.target.value))}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[#1B3FC4] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[camp-cobalt] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             >
               {DENSITY_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -85,7 +85,7 @@ export const WorkstationCalculator = () => {
             <select
               value={multiplier}
               onChange={(e) => setMultiplier(parseFloat(e.target.value))}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[#1B3FC4] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[camp-cobalt] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             >
               {MULTIPLIER_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -106,18 +106,18 @@ export const WorkstationCalculator = () => {
               min={1}
               max={50}
               onChange={(e) => setFloors(parseInt(e.target.value) || 1)}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[#1B3FC4] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-[#1A1A1A] bg-white outline-none transition-colors duration-150 focus:border-[camp-cobalt] dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
             />
           </div>
         </div>
 
         {/* Result */}
         <div className="p-4 bg-[#F5F5F5] rounded-[10px] mt-3 dark:bg-[#252420]">
-          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-[#1B3FC4] mb-1.5">
+          <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-[camp-cobalt] mb-1.5">
             Required Gross Floor Area
           </div>
           <div>
-            <span className="font-[var(--font-dm-mono)] text-2xl font-medium text-[#1B3FC4]">
+            <span className="font-[var(--font-dm-mono)] text-2xl font-medium text-[camp-cobalt]">
               {gfa.toLocaleString()}
             </span>
             <span className="text-sm text-[#737370] ml-1">sq m</span>

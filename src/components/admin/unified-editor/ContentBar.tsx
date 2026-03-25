@@ -30,12 +30,12 @@ interface ContentBarProps {
 // ─── Helpers ─────────────────────────────────────────────────
 
 const STATUS_STYLES: Record<string, string> = {
-  draft: 'bg-[#FEF8ED] text-[#D4951A]',
-  review: 'bg-[#FEF8ED] text-[#D4951A]',
-  published: 'bg-[#EDFAF4] text-[#2D9F6F]',
+  draft: 'bg-[#FEF8ED] text-[warning]',
+  review: 'bg-[#FEF8ED] text-[warning]',
+  published: 'bg-[#EDFAF4] text-[emerald]',
 }
 
-const Divider = () => <div className="h-4 w-px bg-[#D4DAE3]" />
+const Divider = () => <div className="h-4 w-px bg-[border]" />
 
 const dispatchSave = () => {
   window.dispatchEvent(new CustomEvent('unified-editor:save'))
@@ -71,11 +71,11 @@ export const ContentBar = ({
   }, [handleKeyDown])
 
   return (
-    <div className="sticky top-0 z-30 flex h-16 w-full shrink-0 items-center gap-3 border-b border-[#D4DAE3] bg-white px-4">
+    <div className="sticky top-0 z-30 flex h-16 w-full shrink-0 items-center gap-3 border-b border-[border] bg-white px-4">
       {/* 1. Back link */}
       <Link
         href="/admin/articles"
-        className="whitespace-nowrap text-xs text-[#4A5568] transition-colors duration-150 ease-out hover:text-[#1A2332]"
+        className="whitespace-nowrap text-xs text-[text-secondary] transition-colors duration-150 ease-out hover:text-[text-primary]"
       >
         &larr; Back to Articles
       </Link>
@@ -88,18 +88,18 @@ export const ContentBar = ({
         value={title}
         onChange={(e) => onTitleChange(e.target.value)}
         placeholder="Article title..."
-        className="min-w-0 flex-1 truncate border-0 bg-transparent text-sm font-semibold text-[#1A2332] outline-none ring-0 transition-colors duration-150 ease-out placeholder:text-[#8896A7] focus:ring-1 focus:ring-[#1B3FC4]/30"
+        className="min-w-0 flex-1 truncate border-0 bg-transparent text-sm font-semibold text-[text-primary] outline-none ring-0 transition-colors duration-150 ease-out placeholder:text-[text-tertiary] focus:ring-1 focus:ring-[camp-cobalt]/30"
       />
 
       <Divider />
 
       {/* 5. ALE ID badge */}
       {aleId ? (
-        <span className="whitespace-nowrap font-mono text-[11px] text-[#8896A7]">
+        <span className="whitespace-nowrap font-mono text-[11px] text-[text-tertiary]">
           {aleId}
         </span>
       ) : (
-        <span className="whitespace-nowrap rounded-sm bg-[#FEF8ED] px-2 py-0.5 text-[11px] font-medium text-[#D4951A]">
+        <span className="whitespace-nowrap rounded-sm bg-[#FEF8ED] px-2 py-0.5 text-[11px] font-medium text-[warning]">
           No topic linked
         </span>
       )}
@@ -139,13 +139,13 @@ export const ContentBar = ({
       <Divider />
 
       {/* 11. Questions count */}
-      <span className="whitespace-nowrap text-xs text-[#8896A7]">
+      <span className="whitespace-nowrap text-xs text-[text-tertiary]">
         {questionsCount} question{questionsCount !== 1 ? 's' : ''}
       </span>
 
       {/* 12. Unsaved indicator */}
       {dirty.isAnythingDirty && (
-        <span className="flex items-center gap-1 whitespace-nowrap text-xs text-[#D4951A]">
+        <span className="flex items-center gap-1 whitespace-nowrap text-xs text-[warning]">
           <span aria-hidden="true">&#9679;</span>
           Unsaved changes
         </span>

@@ -176,18 +176,18 @@ export const ContentEditorIndex = ({
     <div className="flex h-[calc(100vh-8rem)] overflow-hidden">
       {/* ── Left: Taxonomy Sidebar ────────────────────────────── */}
       {!sidebarCollapsed && (
-        <div className="flex w-[280px] shrink-0 flex-col border-r border-[#D4DAE3] bg-white">
+        <div className="flex w-[280px] shrink-0 flex-col border-r border-[border] bg-white">
           {/* Sidebar header */}
-          <div className="flex items-center justify-between border-b border-[#D4DAE3] px-4 py-3">
+          <div className="flex items-center justify-between border-b border-[border] px-4 py-3">
             <div className="flex items-center gap-2">
-              <FolderTree className="h-3.5 w-3.5 text-[#4A5568]" />
+              <FolderTree className="h-3.5 w-3.5 text-[text-secondary]" />
               <Eyebrow>Topics</Eyebrow>
             </div>
             {selectedNodeId && (
               <button
                 type="button"
                 onClick={() => setSelectedNodeId(null)}
-                className="text-[11px] text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+                className="text-[11px] text-[camp-cobalt] hover:text-[#1535A8] transition-colors duration-150"
               >
                 Clear
               </button>
@@ -210,29 +210,29 @@ export const ContentEditorIndex = ({
           </div>
 
           {/* Coverage stats */}
-          <div className="border-t border-[#D4DAE3] px-4 py-3">
+          <div className="border-t border-[border] px-4 py-3">
             <div className="grid grid-cols-2 gap-2">
               <div>
-                <p className="text-[11px] text-[#8896A7]">Topics</p>
-                <p className="text-sm font-semibold text-[#1A2332]">
+                <p className="text-[11px] text-[text-tertiary]">Topics</p>
+                <p className="text-sm font-semibold text-[text-primary]">
                   {stats.totalTopics}
                 </p>
               </div>
               <div>
-                <p className="text-[11px] text-[#8896A7]">Covered</p>
-                <p className="text-sm font-semibold text-[#2D9F6F]">
+                <p className="text-[11px] text-[text-tertiary]">Covered</p>
+                <p className="text-sm font-semibold text-[emerald]">
                   {stats.topicsWithArticles}
                 </p>
               </div>
               <div>
-                <p className="text-[11px] text-[#8896A7]">Articles</p>
-                <p className="text-sm font-semibold text-[#1A2332]">
+                <p className="text-[11px] text-[text-tertiary]">Articles</p>
+                <p className="text-sm font-semibold text-[text-primary]">
                   {stats.totalArticles}
                 </p>
               </div>
               <div>
-                <p className="text-[11px] text-[#8896A7]">Questions</p>
-                <p className="text-sm font-semibold text-[#1A2332]">
+                <p className="text-[11px] text-[text-tertiary]">Questions</p>
+                <p className="text-sm font-semibold text-[text-primary]">
                   {stats.totalQuestions}
                 </p>
               </div>
@@ -244,12 +244,12 @@ export const ContentEditorIndex = ({
       {/* ── Right: Article List ───────────────────────────────── */}
       <div className="flex flex-1 flex-col overflow-hidden">
         {/* Top bar: Search + Filters */}
-        <div className="flex shrink-0 items-center gap-3 border-b border-[#D4DAE3] bg-white px-5 py-3">
+        <div className="flex shrink-0 items-center gap-3 border-b border-[border] bg-white px-5 py-3">
           {/* Sidebar toggle */}
           <button
             type="button"
             onClick={() => setSidebarCollapsed((v) => !v)}
-            className="flex h-8 w-8 items-center justify-center rounded-sm border border-[#D4DAE3] text-[#4A5568] hover:bg-[#F8F7F5] hover:text-[#1A2332] transition-colors duration-150"
+            className="flex h-8 w-8 items-center justify-center rounded-sm border border-[border] text-[text-secondary] hover:bg-[#F8F7F5] hover:text-[text-primary] transition-colors duration-150"
             aria-label={sidebarCollapsed ? 'Show topics' : 'Hide topics'}
           >
             <FolderTree className="h-3.5 w-3.5" />
@@ -257,18 +257,18 @@ export const ContentEditorIndex = ({
 
           {/* Search */}
           <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[#8896A7]" />
+            <Search className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-[text-tertiary]" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search articles by title, slug, or topic..."
-              className="h-8 w-full rounded-sm border border-[#D4DAE3] bg-white pl-8 pr-3 text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:ring-2 focus:ring-[#1B3FC4]/20 outline-none transition-colors duration-150"
+              className="h-8 w-full rounded-sm border border-[border] bg-white pl-8 pr-3 text-sm text-[text-primary] placeholder:text-[text-tertiary] focus:border-[camp-cobalt] focus:ring-2 focus:ring-[camp-cobalt]/20 outline-none transition-colors duration-150"
             />
           </div>
 
           {/* Status filter pills */}
-          <div className="flex rounded-sm border border-[#D4DAE3]">
+          <div className="flex rounded-sm border border-[border]">
             {STATUS_OPTIONS.map((opt) => (
               <button
                 key={opt.value}
@@ -277,8 +277,8 @@ export const ContentEditorIndex = ({
                 className={cn(
                   'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 first:rounded-l-sm last:rounded-r-sm',
                   statusFilter === opt.value
-                    ? 'bg-[#1B3FC4] text-white'
-                    : 'bg-white text-[#4A5568] hover:bg-[#F8F7F5] hover:text-[#1A2332]'
+                    ? 'bg-[camp-cobalt] text-white'
+                    : 'bg-white text-[text-secondary] hover:bg-[#F8F7F5] hover:text-[text-primary]'
                 )}
               >
                 {opt.label}
@@ -298,7 +298,7 @@ export const ContentEditorIndex = ({
               <button
                 type="button"
                 onClick={() => setSelectedNodeId(null)}
-                className="text-[11px] text-[#8896A7] hover:text-[#D64545] transition-colors duration-150"
+                className="text-[11px] text-[text-tertiary] hover:text-[destructive] transition-colors duration-150"
               >
                 &times;
               </button>
@@ -315,26 +315,26 @@ export const ContentEditorIndex = ({
         </div>
 
         {/* Stats bar */}
-        <div className="flex shrink-0 items-center gap-4 border-b border-[#D4DAE3] bg-[#F8F7F5] px-5 py-2">
-          <span className="text-[11px] text-[#8896A7]">
-            <span className="font-semibold text-[#1A2332]">{filteredStats.articles}</span>{' '}
+        <div className="flex shrink-0 items-center gap-4 border-b border-[border] bg-[#F8F7F5] px-5 py-2">
+          <span className="text-[11px] text-[text-tertiary]">
+            <span className="font-semibold text-[text-primary]">{filteredStats.articles}</span>{' '}
             {filteredStats.articles === 1 ? 'article' : 'articles'}
           </span>
-          <span className="h-3 w-px bg-[#D4DAE3]" />
-          <span className="text-[11px] text-[#8896A7]">
-            <span className="font-semibold text-[#1A2332]">{filteredStats.questions}</span>{' '}
+          <span className="h-3 w-px bg-[border]" />
+          <span className="text-[11px] text-[text-tertiary]">
+            <span className="font-semibold text-[text-primary]">{filteredStats.questions}</span>{' '}
             questions
           </span>
-          <span className="h-3 w-px bg-[#D4DAE3]" />
-          <span className="text-[11px] text-[#8896A7]">
-            <span className="font-semibold text-[#1A2332]">
+          <span className="h-3 w-px bg-[border]" />
+          <span className="text-[11px] text-[text-tertiary]">
+            <span className="font-semibold text-[text-primary]">
               {filteredStats.words.toLocaleString()}
             </span>{' '}
             words
           </span>
           {(searchQuery || statusFilter !== 'all' || selectedNodeId) && (
             <>
-              <span className="h-3 w-px bg-[#D4DAE3]" />
+              <span className="h-3 w-px bg-[border]" />
               <button
                 type="button"
                 onClick={() => {
@@ -342,7 +342,7 @@ export const ContentEditorIndex = ({
                   setStatusFilter('all')
                   setSelectedNodeId(null)
                 }}
-                className="text-[11px] text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+                className="text-[11px] text-[camp-cobalt] hover:text-[#1535A8] transition-colors duration-150"
               >
                 Clear all filters
               </button>
@@ -381,7 +381,7 @@ export const ContentEditorIndex = ({
               )}
             </div>
           ) : (
-            <div className="divide-y divide-[#D4DAE3]">
+            <div className="divide-y divide-[border]">
               {filteredArticles.map((article) => (
                 <Link
                   key={article.article_id}
@@ -390,13 +390,13 @@ export const ContentEditorIndex = ({
                 >
                   {/* Icon */}
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#EEF2FC]">
-                    <FileText className="h-4 w-4 text-[#1B3FC4]" />
+                    <FileText className="h-4 w-4 text-[camp-cobalt]" />
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-0.5">
-                      <span className="text-sm font-medium text-[#1A2332] truncate">
+                      <span className="text-sm font-medium text-[text-primary] truncate">
                         {article.title || 'Untitled'}
                       </span>
                       <StatusBadge
@@ -414,9 +414,9 @@ export const ContentEditorIndex = ({
                         </Badge>
                       )}
                     </div>
-                    <div className="flex items-center gap-3 text-[11px] text-[#8896A7]">
+                    <div className="flex items-center gap-3 text-[11px] text-[text-tertiary]">
                       {article.primary_ale_id && (
-                        <span className="font-mono text-[#4A5568]">
+                        <span className="font-mono text-[text-secondary]">
                           {article.primary_ale_id}
                         </span>
                       )}
@@ -438,7 +438,7 @@ export const ContentEditorIndex = ({
                   </div>
 
                   {/* Hover action */}
-                  <div className="shrink-0 flex items-center gap-1 text-xs font-medium text-[#1B3FC4] opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                  <div className="shrink-0 flex items-center gap-1 text-xs font-medium text-[camp-cobalt] opacity-0 group-hover:opacity-100 transition-opacity duration-150">
                     Open Editor
                     <ArrowRight className="w-3 h-3" />
                   </div>

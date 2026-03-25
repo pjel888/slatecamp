@@ -43,7 +43,7 @@ const buttonVariants = cva(
 
         // Warm CTA (orange accent, backward compat)
         warmCta:
-          'bg-[#E8853A] text-white hover:brightness-90 active:brightness-80 active:scale-[0.98]',
+          'bg-[camp-orange] text-white hover:brightness-90 active:brightness-80 active:scale-[0.98]',
       },
       size: {
         xs: "h-7 gap-1 px-2 py-1 text-[11px] [&_svg:not([class*='size-'])]:size-3",

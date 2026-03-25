@@ -5,6 +5,7 @@ import { QuizSessionIdSchema } from '@/lib/validations'
 import { computeUserSignals } from '@/lib/signals/compute'
 import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
 import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
+import { updateTheta } from '@/lib/srs/irt'
 import { checkDailyCap, incrementDailyCount } from '@/lib/paywall/daily-cap'
 import { computeAccuracyByBlock, updateEnduranceSignals } from '@/lib/endurance/compute'
 import type {
@@ -280,6 +281,34 @@ export async function recordMastery(
     },
     { onConflict: 'user_id, topic_id' },
   )
+
+  // 7. IRT theta update (fire-and-forget)
+  // Fetch the question's IRT params and update the ability estimate
+  void (async () => {
+    try {
+      const { data: q } = await supabase
+        .from('questions')
+        .select('question_id, difficulty_rating, discrimination_rating')
+        .eq('question_id', question_id)
+        .single()
+
+      if (q) {
+        const currentTheta = current?.theta ?? 0.0
+        const newTheta = updateTheta(
+          currentTheta,
+          q as unknown as Question,
+          is_correct,
+        )
+        await supabase
+          .from('user_node_mastery')
+          .update({ theta: newTheta })
+          .eq('user_id', user_id)
+          .eq('topic_id', topic_id)
+      }
+    } catch {
+      // Silent — theta update is non-critical
+    }
+  })()
 
   // Note: Global readiness score is now computed at session completion
   // via recomputeAndSaveReadinessScore() called from updateQuizSession().
