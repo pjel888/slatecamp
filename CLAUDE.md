@@ -66,7 +66,7 @@ Before generating any code or architecture, you MUST execute the following seque
 ### Typography
 
 - **Font family:** Inter, system fallbacks
-- **Minimum text size:** 11px (`text-[11px]`). NEVER use `text-[8px]`, `text-[9px]`, or `text-[10px]`.
+- **Minimum text size:** 8px (`text-[8px]`). Use 8px sparingly for labels, group names, and metadata only.
 - **Monospace:** ONLY on code snippets, data values, and the Readiness Score number. NEVER on labels, categories, or metadata.
 
 ### Shadows

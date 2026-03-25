@@ -193,7 +193,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
             <div key={group.key}>
               {/* Group label — visible only when expanded */}
               <div
-                className="flex h-[22px] items-end text-[11px] uppercase tracking-[0.08em] text-gray-400"
+                className="flex h-[22px] items-end mb-1.5 text-[8px] font-bold uppercase tracking-[0.08em] text-gray-400"
                 style={{
                   paddingLeft: 16, // aligns with icon center at 10px group padding + 6px offset
                   opacity: expanded ? 0.75 : 0,
