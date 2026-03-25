@@ -4,7 +4,7 @@ import {
   ArrowRight,
   ArrowCounterClockwise,
   SquaresFour,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 

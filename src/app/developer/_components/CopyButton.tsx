@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Check, Copy } from '@phosphor-icons/react'
+import { Check, Copy } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 interface CopyButtonProps {

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Cube, Plus, MagnifyingGlass, PencilSimple, Trash } from '@phosphor-icons/react'
+import { Cube, Plus, MagnifyingGlass, PencilSimple, Trash } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

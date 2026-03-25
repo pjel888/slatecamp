@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { CaretDown, CaretRight, Clock, Fire, ListChecks } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, Clock, Fire, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import { enrollInTrail } from '@/lib/actions/trails'
 import type { CampTrail, TrailDay, TrailEnrollment } from '@/types/app'
 

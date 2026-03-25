@@ -1,4 +1,4 @@
-import { Check, Warning, X } from '@phosphor-icons/react'
+import { Check, Warning, X } from '@phosphor-icons/react/dist/ssr'
 import type { ServiceStatus } from '@/types/developer'
 
 /* ------------------------------------------------------------------ */

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createQuestion, updateQuestion, deleteQuestion } from '@/lib/actions/admin/questions'
-import { FloppyDisk, XCircle, Trash, ArrowLeft } from '@phosphor-icons/react'
+import { FloppyDisk, XCircle, Trash, ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import Link from 'next/link'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'

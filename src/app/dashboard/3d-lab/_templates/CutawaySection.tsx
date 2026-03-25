@@ -2,7 +2,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Stack, BookOpen } from '@phosphor-icons/react'
+import { Stack, BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { CutawaySectionScene } from './CutawaySectionScene'

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor-icons/react'
+import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'

@@ -2,9 +2,9 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { CaretDown, CaretRight, MagnifyingGlass, Cube, Stack, MapTrifold, Scissors, Play } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, MagnifyingGlass, Cube, Stack, MapTrifold, Scissors, Play } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { MODULE_REGISTRY, SUBJECT_AREAS } from '../_config/moduleRegistry'
 import type { ModuleRegistryEntry, TemplateType } from '../_types/templates'
 

@@ -2,7 +2,7 @@
 'use client'
 
 import { memo, useState } from 'react'
-import { CaretDown, CaretRight, ArrowCounterClockwise } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, ArrowCounterClockwise } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'

@@ -1,6 +1,6 @@
 'use client'
 
-import { X } from '@phosphor-icons/react'
+import { X } from '@phosphor-icons/react/dist/ssr'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'

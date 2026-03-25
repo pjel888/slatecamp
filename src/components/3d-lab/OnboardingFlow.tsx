@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { HandGrabbing, Crosshair, ClipboardText } from '@phosphor-icons/react'
+import { HandGrabbing, Crosshair, ClipboardText } from '@phosphor-icons/react/dist/ssr'
 
 interface OnboardingFlowProps {
   onComplete: () => void

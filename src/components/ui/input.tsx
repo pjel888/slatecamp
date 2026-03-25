@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { Input as InputPrimitive } from '@base-ui/react/input'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { MagnifyingGlass, X, SpinnerGap } from '@phosphor-icons/react'
+import { MagnifyingGlass, X, SpinnerGap } from '@phosphor-icons/react/dist/ssr'
 
 import { cn } from '@/lib/utils'
 

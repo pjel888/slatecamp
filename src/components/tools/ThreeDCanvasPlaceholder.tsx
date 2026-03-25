@@ -1,6 +1,6 @@
 'use client'
 
-import { Cube } from '@phosphor-icons/react'
+import { Cube } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 interface ThreeDCanvasPlaceholderProps {

@@ -1,8 +1,12 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { canReviewContent } from '@/lib/admin/roles'
 
 export const getArticlesWithCoverage = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   const { data: articles } = await supabase
@@ -47,7 +51,10 @@ export const getArticlesWithCoverage = async () => {
   }))
 }
 
-export async function getArticles() {
+export const getArticles = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   const { data, error } = await supabase
@@ -64,7 +71,10 @@ export async function getArticles() {
   return data || []
 }
 
-export async function getArticle(id: string) {
+export const getArticle = async (id: string) => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_articles')

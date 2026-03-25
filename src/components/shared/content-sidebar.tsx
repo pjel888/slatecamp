@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { CaretDown, CaretRight, ThumbsUp, ThumbsDown, Flag } from '@phosphor-icons/react'
+import { CaretDown, CaretRight, ThumbsUp, ThumbsDown, Flag } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { CaretRight, ArrowLeft, List, ListBullets } from '@phosphor-icons/react'
+import { CaretRight, ArrowLeft, List, ListBullets } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import { WikiReadingProgress } from './WikiReadingProgress'

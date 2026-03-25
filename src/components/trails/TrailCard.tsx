@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Check, Lock, ArrowRight, Clock } from '@phosphor-icons/react'
+import { Check, Lock, ArrowRight, Clock } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import type { CampTrail, TrailEnrollment } from '@/types/app'
 

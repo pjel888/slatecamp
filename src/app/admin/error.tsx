@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 

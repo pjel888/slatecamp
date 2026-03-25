@@ -1,6 +1,6 @@
 'use client'
 
-import { Plus, MagnifyingGlass, Trash, PushPin, BookOpen, Question, SquaresFour, Warning, CaretLeft, CaretRight, FileText } from '@phosphor-icons/react'
+import { Plus, MagnifyingGlass, Trash, PushPin, BookOpen, Question, SquaresFour, Warning, CaretLeft, CaretRight, FileText } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { formatDistanceToNow } from 'date-fns'
 import { cn } from '@/lib/utils'

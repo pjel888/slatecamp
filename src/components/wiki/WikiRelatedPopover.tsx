@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import Link from 'next/link'
-import { FileText } from '@phosphor-icons/react'
+import { FileText } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Crosshair, MagnifyingGlass, Lightning, Shield, Book, Leaf, GearSix, Barbell } from '@phosphor-icons/react'
+import { Crosshair, MagnifyingGlass, Lightning, Shield, Book, Leaf, GearSix, Barbell } from '@phosphor-icons/react/dist/ssr'
 import { Badge } from '@/components/ui/badge'
 
 import { cn } from '@/lib/utils'

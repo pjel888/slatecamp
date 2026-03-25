@@ -8,6 +8,7 @@ import { ZoneSection } from './ZoneSection'
 import { SectionHeader } from '@/components/shared/section-header'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
 import { abandonTestingSession } from '@/lib/actions/testing'
+import { getSubjectName } from '@/types/testing'
 import type {
   ModeStats,
   SmartSuggestion,
@@ -177,7 +178,7 @@ const computeSmartSuggestion = ({
   // Priority 3: weak subject
   if (weakNodes.length > 0) {
     const weakNode = weakNodes[0]
-    const subjectName = weakNode.taxonomy_tree?.subject_area ?? 'a subject area'
+    const subjectName = getSubjectName(weakNode.taxonomy_tree?.subject_area) ?? 'a subject area'
     return {
       variant: 'weak-subject',
       title: `${subjectName} could use attention`,

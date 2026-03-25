@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { CaretDown, Rows } from '@phosphor-icons/react'
+import { CaretDown, Rows } from '@phosphor-icons/react/dist/ssr'
 import { TrailFilterRow } from '@/components/trails/TrailFilterRow'
 import { TrailCard } from '@/components/trails/TrailCard'
 import type { CampTrail, TrailEnrollment } from '@/types/app'

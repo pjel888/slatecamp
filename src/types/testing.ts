@@ -300,3 +300,11 @@ export const ALE_SUBJECTS = [
 ] as const
 
 export type ALESubjectId = typeof ALE_SUBJECTS[number]['id']
+
+const ALE_SUBJECT_MAP = new Map(ALE_SUBJECTS.map((s) => [s.id, s]))
+
+export const getSubjectName = (aleId: string | undefined | null): string =>
+  ALE_SUBJECT_MAP.get(aleId as ALESubjectId)?.name ?? aleId ?? 'Unknown'
+
+export const getSubjectShortName = (aleId: string | undefined | null): string =>
+  ALE_SUBJECT_MAP.get(aleId as ALESubjectId)?.short ?? aleId ?? 'Unknown'

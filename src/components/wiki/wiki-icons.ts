@@ -12,8 +12,8 @@ import {
   Triangle,
   PencilRuler,
   BookOpen,
-  type Icon as PhosphorIcon,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 
 export const WIKI_SUBJECT_ICONS: Record<string, PhosphorIcon> = {
   'history-of-architecture': Bank,

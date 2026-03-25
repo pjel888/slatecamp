@@ -8,7 +8,7 @@ import {
   DottedGridOverlay,
 } from '@/components/marketing/LandingPrimitives'
 import { cn } from '@/lib/utils'
-import { CaretRight } from '@phosphor-icons/react'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 import { DashboardPeek } from './hero/DashboardPeek'

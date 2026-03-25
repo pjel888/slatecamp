@@ -1,6 +1,6 @@
 'use client'
 
-import { Database, Monitor, Flask, BookOpen, SquaresFour, Palette, Pulse, HardDrives, Wrench, Stack, Scroll } from '@phosphor-icons/react'
+import { Database, Monitor, Flask, BookOpen, SquaresFour, Palette, Pulse, HardDrives, Wrench, Stack, Scroll } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout } from '@/components/portal'
 import { Badge } from '@/components/ui/badge'
 import { DevPortalSearch } from './DevPortalSearch'

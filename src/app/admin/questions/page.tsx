@@ -4,7 +4,7 @@ import { getQuestions } from '@/lib/actions/admin/question-queries'
 export const metadata: Metadata = { title: 'Questions — SlateCamp Admin' }
 import { PageHeader } from '@/components/shared/page-header'
 import { Button } from '@/components/ui/button'
-import { Plus, UploadSimple, ChartBar } from '@phosphor-icons/react'
+import { Plus, UploadSimple, ChartBar } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 import { QuestionsTableClient } from './_components/QuestionsTableClient'
 

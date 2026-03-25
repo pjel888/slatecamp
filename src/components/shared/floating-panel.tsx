@@ -2,7 +2,7 @@
 
 import { useEffect, useCallback } from 'react'
 import { createPortal } from 'react-dom'
-import { DotsSixVertical } from '@phosphor-icons/react'
+import { DotsSixVertical } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CloseButton } from '@/components/ui/close-button'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'

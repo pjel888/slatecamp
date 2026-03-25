@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowSquareOut, Cube, Scales } from '@phosphor-icons/react'
+import { ArrowSquareOut, Cube, Scales } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { OptionButton } from '@/components/quiz/OptionButton'

@@ -1,6 +1,6 @@
 'use server';
 
-import { createClient } from '@/lib/supabase/server';
+import { createClient, getUser } from '@/lib/supabase/server';
 
 export async function getQuestionSocialProof(
   questionId: string
@@ -8,6 +8,8 @@ export async function getQuestionSocialProof(
   weeklyAttempts: number;
   weeklyAccuracy: number;
 }> {
+  const { data: { user } } = await getUser()
+  if (!user) return { weeklyAttempts: 0, weeklyAccuracy: 0 }
   const supabase = await createClient();
   const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
 
@@ -29,6 +31,8 @@ export async function getQuestionSocialProof(
 export async function getTopicDailyStudiers(
   topicId: string
 ): Promise<number> {
+  const { data: { user } } = await getUser()
+  if (!user) return 0
   const supabase = await createClient();
   const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
 
@@ -46,6 +50,8 @@ export async function getTopicDailyStudiers(
 export async function getTopicDailyStudiersBatch(
   topicIds: string[]
 ): Promise<Record<string, number>> {
+  const { data: { user } } = await getUser()
+  if (!user) return {}
   if (topicIds.length === 0) return {};
   const results = await Promise.all(
     topicIds.map(async (id) => {

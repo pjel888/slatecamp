@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { PencilSimple, Trash } from '@phosphor-icons/react'
+import { PencilSimple, Trash } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { deleteFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import { FinancialEntryForm } from '@/components/ceo/FinancialEntryForm'

@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { CheckCircle, Warning, Question, Fire, Lightning, Eye, Trophy } from '@phosphor-icons/react'
+import { CheckCircle, Warning, Question, Fire, Lightning, Eye, Trophy } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */

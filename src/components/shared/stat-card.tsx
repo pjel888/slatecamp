@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Link from 'next/link'
-import { TrendUp, TrendDown, Minus } from '@phosphor-icons/react'
+import { TrendUp, TrendDown, Minus } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 interface StatCardProps {

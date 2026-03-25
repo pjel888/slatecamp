@@ -1,5 +1,5 @@
 'use client'
-import { Timer, Warning } from '@phosphor-icons/react'
+import { Timer, Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'

@@ -8,7 +8,7 @@ import Typography from '@tiptap/extension-typography'
 // import BubbleMenuExtension from '@tiptap/extension-bubble-menu'
 import { useEffect, useState, useRef } from 'react'
 import { cn } from '@/lib/utils'
-import { TextB, TextItalic, TextStrikethrough, List as ListIcon, ListNumbers } from '@phosphor-icons/react'
+import { TextB, TextItalic, TextStrikethrough, List as ListIcon, ListNumbers } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { type Note } from '@/types/app'
 

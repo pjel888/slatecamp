@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Star } from '@phosphor-icons/react'
+import { Star } from '@phosphor-icons/react/dist/ssr'
 import {
   Tooltip,
   TooltipTrigger,

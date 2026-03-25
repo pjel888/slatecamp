@@ -1,6 +1,6 @@
 'use client'
 
-import { List } from '@phosphor-icons/react'
+import { List } from '@phosphor-icons/react/dist/ssr'
 import { Z_INDEX } from './types'
 
 // ---------------------------------------------------------------------------

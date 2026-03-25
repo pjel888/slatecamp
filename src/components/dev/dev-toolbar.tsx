@@ -15,9 +15,9 @@ import {
   WifiHigh,
   WifiSlash,
   Terminal,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'

@@ -1,6 +1,6 @@
 'use client'
 
-import { Clock, ListChecks } from '@phosphor-icons/react'
+import { Clock, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import {
   Dialog,
   DialogContent,

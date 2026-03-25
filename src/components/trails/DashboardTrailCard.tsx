@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, Path } from '@phosphor-icons/react'
+import { ArrowRight, Path } from '@phosphor-icons/react/dist/ssr'
 
 interface DashboardTrailCardProps {
   dayNumber: number

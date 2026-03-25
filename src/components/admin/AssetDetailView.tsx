@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Cube, ArrowLeft, Trash } from '@phosphor-icons/react'
+import { Cube, ArrowLeft, Trash } from '@phosphor-icons/react/dist/ssr'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CheckCircle, Circle, Flag, X } from '@phosphor-icons/react'
+import { CheckCircle, Circle, Flag, X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'
 

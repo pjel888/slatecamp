@@ -1,4 +1,4 @@
-import { Users, Plus } from '@phosphor-icons/react'
+import { Users, Plus } from '@phosphor-icons/react/dist/ssr'
 import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 import { getTeamMembers, getDepartmentCosts } from '@/lib/queries/ceo/team-queries'
 import { TeamTable } from '@/components/ceo/TeamTable'

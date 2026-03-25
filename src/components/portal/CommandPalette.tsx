@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback, useMemo } from 'react'
 import * as React from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Fuse from 'fuse.js'
-import { Clock } from '@phosphor-icons/react'
+import { Clock } from '@phosphor-icons/react/dist/ssr'
 import {
   CommandDialog,
   CommandInput,

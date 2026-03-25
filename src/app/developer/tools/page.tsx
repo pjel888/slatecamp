@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Monitor, Database, FileText, Flask } from '@phosphor-icons/react'
+import { Monitor, Database, FileText, Flask } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/ui/card'
 import { ROUTES } from '@/lib/constants/routes'
 

@@ -11,6 +11,7 @@ import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
+import { getSubjectName } from '@/types/testing'
 import { Button } from '@/components/ui/button'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
@@ -212,7 +213,7 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
               />
 
               <WikiArticleHero
-                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${node.subject_area}` : node?.subject_area || '')}
+                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
                 difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
                 readTime={`~${readingTime} min`}
                 title={article.title}

@@ -2,10 +2,10 @@
 
 import React from 'react'
 import {
-  type Icon as PhosphorIcon,
   Play,
   ArrowCounterClockwise,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { Button } from '@/components/ui/button'

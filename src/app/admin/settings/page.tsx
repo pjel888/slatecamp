@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge'
 import { SubmitButton } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { EmptyState } from '@/components/shared/empty-state'
-import { Shield, UserMinus, Users } from '@phosphor-icons/react'
+import { Shield, UserMinus, Users } from '@phosphor-icons/react/dist/ssr'
 import { RoleSelect } from '@/components/admin/settings/RoleSelect'
 
 /* ------------------------------------------------------------------ */

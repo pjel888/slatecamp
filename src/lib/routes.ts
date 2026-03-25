@@ -1,4 +1,4 @@
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import {
   SquaresFour,
   ChartBar,
@@ -9,7 +9,7 @@ import {
 
   FileText,
   Path,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 
 export type NavGroup = 'learn' | 'practice' | 'data'
 

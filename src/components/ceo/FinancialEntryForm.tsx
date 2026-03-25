@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { X } from '@phosphor-icons/react'
+import { X } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { addFinancialEntry, updateFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import {

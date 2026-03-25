@@ -3,7 +3,7 @@
 // src/app/dashboard/3d-lab/_templates/FloorPlanScene.tsx
 import { useMemo } from 'react'
 import { Line, Html } from '@react-three/drei'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useModuleInvalidate } from '../_hooks/useModuleInvalidate'
 import type { FloorPlanConfig } from '../_types/templates'

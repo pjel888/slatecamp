@@ -7,7 +7,7 @@ import {
   CaretUp,
   Scales,
   Flag,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getCorrectOptionId } from '@/lib/utils/question'

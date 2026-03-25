@@ -1,4 +1,4 @@
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 
 // ---------------------------------------------------------------------------
 // Z-Index Scale (matching locked HTML v4)

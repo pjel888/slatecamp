@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { BookOpen } from '@phosphor-icons/react'
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 

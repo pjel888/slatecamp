@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState, useCallback } from 'react'
-import { Notepad } from '@phosphor-icons/react'
+import { Notepad } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes-actions'

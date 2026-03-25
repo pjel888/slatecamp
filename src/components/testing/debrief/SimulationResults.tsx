@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { Clock, CaretLeft } from '@phosphor-icons/react'
+import { Clock, CaretLeft } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import { DebriefLayout } from './DebriefLayout'
 import { PressureGapCard } from './PressureGapCard'

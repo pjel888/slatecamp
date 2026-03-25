@@ -1,6 +1,6 @@
 'use client'
 
-import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Columns, Pulse, GearSix } from '@phosphor-icons/react'
+import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Columns, Pulse, GearSix } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'

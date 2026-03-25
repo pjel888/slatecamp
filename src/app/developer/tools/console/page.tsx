@@ -3,14 +3,14 @@ import { ConsoleClient } from './console-client'
 
 export default async function DeveloperConsolePage() {
   const supabase = await createClient()
-  const {
-    data: { user },
-  } = await getUser()
 
-  // Fetch DB feature flags
-  const { data: dbFlagRows } = await supabase
-    .from('feature_flags')
-    .select('key, enabled')
+  // Fetch user and feature flags in parallel — flags don't depend on user.id
+  const [{ data: { user } }, { data: dbFlagRows }] = await Promise.all([
+    getUser(),
+    supabase
+      .from('feature_flags')
+      .select('key, enabled'),
+  ])
 
   const dbFlags: Record<string, boolean> = {}
   for (const row of dbFlagRows ?? []) {

@@ -8,7 +8,7 @@ import {
   Cube,
   Check,
   Clock,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { completeStep } from '@/lib/actions/trails'
 import type { CampTrail, TrailDay, TrailStep, TrailEnrollment } from '@/types/app'
 

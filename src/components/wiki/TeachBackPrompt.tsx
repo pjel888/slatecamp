@@ -8,7 +8,7 @@ import {
   submitRevision,
   type TeachBackEvaluation,
 } from '@/lib/actions/teach-back'
-import { CheckCircle, XCircle, WarningCircle, ArrowRight } from '@phosphor-icons/react'
+import { CheckCircle, XCircle, WarningCircle, ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface TeachBackPromptProps {

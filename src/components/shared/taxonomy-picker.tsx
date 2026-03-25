@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { CaretRight, Check, TreeStructure } from '@phosphor-icons/react'
+import { CaretRight, Check, TreeStructure } from '@phosphor-icons/react/dist/ssr'
 
 import { cn } from '@/lib/utils'
 import { SearchInput } from '@/components/ui/input'

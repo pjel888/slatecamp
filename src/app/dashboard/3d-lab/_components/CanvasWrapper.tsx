@@ -3,7 +3,7 @@
 import { memo, type ReactNode, Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, ContactShadows } from '@react-three/drei'
-import { CircleNotch } from '@phosphor-icons/react'
+import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useInvalidateOnChange } from '../_hooks/useInvalidateOnChange'
 

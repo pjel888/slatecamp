@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useCallback } from 'react'
-import { X } from '@phosphor-icons/react'
+import { X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useDevStore } from '@/stores/dev-store'
 import { ImpersonationPanel } from './impersonation-panel'

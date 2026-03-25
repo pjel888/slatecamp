@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { SidebarSimple } from '@phosphor-icons/react'
+import { SidebarSimple } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 const WIDTH_KEY = 'wiki_sidebar_width'

@@ -11,7 +11,7 @@
  */
 
 import { useRouter } from 'next/navigation'
-import { Check, Clock } from '@phosphor-icons/react'
+import { Check, Clock } from '@phosphor-icons/react/dist/ssr'
 import { SleepAwareLabel } from '@/components/trails/SleepAwareLabel'
 import { BlindspotPriorityFlag } from '@/components/trails/BlindspotPriorityFlag'
 import { STEP_TYPE_CONFIG } from '@/types/app'

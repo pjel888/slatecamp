@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { CaretRight, CaretDown, Plus, PencilSimple, Trash, XCircle } from '@phosphor-icons/react'
+import { CaretRight, CaretDown, Plus, PencilSimple, Trash, XCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { ConfirmDialog } from '@/components/ui/dialog'

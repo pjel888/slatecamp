@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react'
 import { useRouter } from 'next/navigation'
-import { ArrowRight, Clock, ListChecks } from '@phosphor-icons/react'
+import { ArrowRight, Clock, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import type { DayCompletionData } from '@/types/app'
 
 /* ------------------------------------------------------------------ */

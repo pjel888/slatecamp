@@ -1,6 +1,6 @@
 'use client'
 
-import { Crosshair, GridFour } from '@phosphor-icons/react'
+import { Crosshair, GridFour } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface FocusModeToggleProps {

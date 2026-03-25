@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createNoteFolder } from '@/lib/actions/notes-actions'

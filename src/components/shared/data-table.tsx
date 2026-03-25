@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { ArrowsDownUp, ArrowUp, ArrowDown, CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { ArrowsDownUp, ArrowUp, ArrowDown, CaretLeft, CaretRight } from '@phosphor-icons/react/dist/ssr'
 
 import { cn } from '@/lib/utils'
 import { Checkbox } from '@/components/ui/checkbox'

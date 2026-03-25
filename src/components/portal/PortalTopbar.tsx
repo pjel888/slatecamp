@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft } from '@phosphor-icons/react'
+import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/constants/routes'
 

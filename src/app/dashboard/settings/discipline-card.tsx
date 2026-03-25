@@ -3,7 +3,7 @@
 import * as React from 'react'
 import { useDiscipline } from '@/lib/context/discipline-context'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { GraduationCap, Check, Warning } from '@phosphor-icons/react'
+import { GraduationCap, Check, Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

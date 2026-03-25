@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { BookmarkSimple, Trash } from '@phosphor-icons/react'
+import { BookmarkSimple, Trash } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import {
   Popover,

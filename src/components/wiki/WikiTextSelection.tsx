@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { HighlighterCircle, Copy, NotePencil } from '@phosphor-icons/react'
+import { HighlighterCircle, Copy, NotePencil } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 /**

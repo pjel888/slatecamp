@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import { MagnifyingGlass } from '@phosphor-icons/react'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { CommandPalette } from '@/components/portal'
 import { getAllComponents, DOMAIN_LABELS } from '@/lib/developer/componentRegistry'
 

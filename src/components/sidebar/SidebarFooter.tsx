@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDoubleRight } from '@phosphor-icons/react'
+import { CaretDoubleRight } from '@phosphor-icons/react/dist/ssr'
 import {
   Tooltip,
   TooltipTrigger,

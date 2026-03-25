@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Crosshair } from '@phosphor-icons/react'
+import { Crosshair } from '@phosphor-icons/react/dist/ssr'
 import {
   Tooltip,
   TooltipTrigger,

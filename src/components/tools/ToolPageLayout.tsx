@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { CaretRight } from '@phosphor-icons/react'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 interface ToolPageLayoutProps {

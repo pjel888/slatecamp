@@ -1,6 +1,7 @@
 'use client'
 
-import { FileText, SquaresFour, Warning, type Icon as PhosphorIcon } from '@phosphor-icons/react'
+import { FileText, SquaresFour, Warning } from '@phosphor-icons/react/dist/ssr'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { NoteType } from '@/types/app'

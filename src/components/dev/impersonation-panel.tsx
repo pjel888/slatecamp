@@ -1,9 +1,9 @@
 'use client'
 
 import { useDevStore, IMPERSONATION_PRESETS, type ImpersonationPreset } from '@/stores/dev-store'
-import { User, ShieldCheck, Buildings, GraduationCap, Briefcase, Crown } from '@phosphor-icons/react'
+import { User, ShieldCheck, Buildings, GraduationCap, Briefcase, Crown } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 
 const PRESET_ICONS: Record<string, PhosphorIcon> = {
   arch_student: User,

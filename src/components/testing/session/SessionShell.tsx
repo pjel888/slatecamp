@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import { Flag, MapTrifold, X } from '@phosphor-icons/react'
+import { Flag, MapTrifold, X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { QuizOverlay } from '@/components/quiz/QuizOverlay'
 import { SaveIndicator } from '@/components/quiz/SaveIndicator'

@@ -1,7 +1,7 @@
 'use client'
 
 import { memo } from 'react'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { CanvasWrapper } from '../../_components/CanvasWrapper'

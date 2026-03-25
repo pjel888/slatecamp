@@ -2,7 +2,7 @@
 
 import { memo } from 'react'
 import { Html } from '@react-three/drei'
-import { X, ArrowSquareOut } from '@phosphor-icons/react'
+import { X, ArrowSquareOut } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

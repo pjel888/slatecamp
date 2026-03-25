@@ -1,5 +1,9 @@
-
 import { createClient } from '@/lib/supabase/server'
+import { canReviewContent } from '@/lib/admin/roles'
+import { classifyCoverage, type CoverageCellData, type CoverageLevel } from '@/lib/utils/coverage'
+
+// Re-export so existing imports from this module continue to work
+export { classifyCoverage, type CoverageCellData, type CoverageLevel }
 
 /* ------------------------------------------------------------------
  *  Types
@@ -14,36 +18,14 @@ interface TaxonomyNode {
   exam_frequency: string | null
 }
 
-export interface CoverageCellData {
-  node_id: string
-  name: string
-  ale_id: string | null
-  questionCount: number
-  hasArticle: boolean
-  examFrequency: string | null
-}
-
-export type CoverageLevel = 'full' | 'partial' | 'empty' | 'critical'
-
-/* ------------------------------------------------------------------
- *  Helpers
- * ------------------------------------------------------------------ */
-
-export const classifyCoverage = (cell: CoverageCellData): CoverageLevel => {
-  const hasQuestions = cell.questionCount > 0
-  const isHighFrequency = cell.examFrequency === 'high'
-
-  if (cell.questionCount >= 10 && cell.hasArticle) return 'full'
-  if (hasQuestions || cell.hasArticle) return 'partial'
-  if (!hasQuestions && !cell.hasArticle && isHighFrequency) return 'critical'
-  return 'empty'
-}
-
 /* ------------------------------------------------------------------
  *  Data fetching
  * ------------------------------------------------------------------ */
 
 export const fetchCoverageData = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   // 1. Get taxonomy nodes at level 1 and 2

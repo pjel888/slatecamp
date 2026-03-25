@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react'
+import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
 import { EventBadge } from '@/components/ui/event-badge'

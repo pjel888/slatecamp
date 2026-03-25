@@ -1,5 +1,5 @@
 'use client'
-import { type IconWeight, type Icon as PhosphorIcon } from '@phosphor-icons/react'
+import { type IconWeight, type Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { cn } from '@/lib/utils'
 
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'

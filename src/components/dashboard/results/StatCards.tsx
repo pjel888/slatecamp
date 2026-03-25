@@ -7,7 +7,7 @@ import {
   Timer,
   TrendUp,
   TrendDown,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { cn } from '@/lib/utils'

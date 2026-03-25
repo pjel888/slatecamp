@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Brain, CircleNotch, Warning } from '@phosphor-icons/react'
+import { Brain, CircleNotch, Warning } from '@phosphor-icons/react/dist/ssr'
 import { getCorrectOptionId } from '@/lib/utils/question'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'

@@ -10,7 +10,7 @@ import {
   Lightning,
   Warning,
   Clock,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SectionHeader } from '@/components/shared/section-header'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { SCIcon } from '@/components/graphics/icons/Icon'

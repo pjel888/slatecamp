@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react'
+import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'

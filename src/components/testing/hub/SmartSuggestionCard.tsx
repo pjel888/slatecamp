@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Warning, Crosshair, ArrowRight, Calendar } from '@phosphor-icons/react'
+import { Warning, Crosshair, ArrowRight, Calendar } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import type { SmartSuggestion, SuggestionVariant } from '@/types/testing'

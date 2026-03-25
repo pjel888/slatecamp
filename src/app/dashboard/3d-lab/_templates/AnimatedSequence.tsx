@@ -2,7 +2,7 @@
 
 // src/app/dashboard/3d-lab/_templates/AnimatedSequence.tsx
 import { useMemo, useCallback, useEffect, useRef } from 'react'
-import { Play, Pause, CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { Play, Pause, CaretLeft, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { createModuleStore } from '../_stores/createModuleStore'

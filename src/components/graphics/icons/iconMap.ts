@@ -11,7 +11,7 @@ import {
   Warning, Info, ShieldCheck, Lock, Sparkle,
   CalendarBlank, Clock, Fire, Heartbeat,
   ListChecks, GridFour, Rows, Stack,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 
 // Navigation
 export const nav = {

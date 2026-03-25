@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, Scales } from '@phosphor-icons/react'
+import { BookOpen, Scales } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'

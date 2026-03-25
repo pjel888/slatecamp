@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { PencilSimple, ShieldCheck } from '@phosphor-icons/react'
+import { PencilSimple, ShieldCheck } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { RoleAssignmentModal } from '@/components/ceo/RoleAssignmentModal'
 import type { TeamMember, TeamDepartment } from '@/types/ceo'

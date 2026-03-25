@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Check } from '@phosphor-icons/react'
+import { Check } from '@phosphor-icons/react/dist/ssr'
 import { completeStep } from '@/lib/actions/trails'
 import { TrailStepCard } from '@/components/trails/TrailStepCard'
 import type { CampTrail, TrailDay, TrailStep, TrailEnrollment } from '@/types/app'

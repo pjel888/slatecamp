@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { GearSix, BookOpen, Stack, CheckCircle } from '@phosphor-icons/react'
+import { GearSix, BookOpen, Stack, CheckCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import {

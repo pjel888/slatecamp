@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts'
-import { ChartBar } from '@phosphor-icons/react'
+import { ChartBar } from '@phosphor-icons/react/dist/ssr'
 import { EmptyState } from '@/components/shared/empty-state'
 import type { SubjectMastery } from '@/types/dashboard'
 

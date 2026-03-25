@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { CaretDown } from '@phosphor-icons/react'
+import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
 import { CodeBlock } from './CodeBlock'

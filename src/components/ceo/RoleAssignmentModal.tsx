@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import {
   Dialog,
   DialogContent,

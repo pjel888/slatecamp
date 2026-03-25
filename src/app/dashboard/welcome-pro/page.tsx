@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { isPaidUser } from '@/lib/paywall/check-access'
 import { trackServerEvent } from '@/lib/analytics-server'
+import { getSubjectName } from '@/types/testing'
 
 /**
  * Pro Confirmation Screen — UX Strategy Section 15 (Step 3)
@@ -20,24 +21,26 @@ const WelcomeProPage = async () => {
   if (!paid) redirect('/dashboard')
 
   const supabase = await createClient()
-  const { data: stats } = await supabase
-    .from('user_global_stats')
-    .select('global_readiness_score')
-    .eq('user_id', user.id)
-    .single()
 
-  // Get mastery data for unblurred heatmap preview
-  const { data: masteryNodes } = await supabase
-    .from('user_node_mastery')
-    .select('current_mastery_weight, taxonomy_tree(subject_area)')
-    .eq('user_id', user.id)
-    .gt('total_attempts', 0)
-    .order('current_mastery_weight', { ascending: true })
-    .limit(20)
+  // Fetch stats and mastery nodes in parallel — both only need user.id
+  const [{ data: stats }, { data: masteryNodes }] = await Promise.all([
+    supabase
+      .from('user_global_stats')
+      .select('global_readiness_score')
+      .eq('user_id', user.id)
+      .single(),
+    supabase
+      .from('user_node_mastery')
+      .select('current_mastery_weight, taxonomy_tree(subject_area)')
+      .eq('user_id', user.id)
+      .gt('total_attempts', 0)
+      .order('current_mastery_weight', { ascending: true })
+      .limit(20),
+  ])
 
   const subjectSummary = new Map<string, { total: number; green: number; amber: number; red: number }>()
   for (const node of (masteryNodes ?? []) as any[]) {
-    const sa = node.taxonomy_tree?.subject_area ?? 'Unknown'
+    const sa = getSubjectName(node.taxonomy_tree?.subject_area)
     const entry = subjectSummary.get(sa) ?? { total: 0, green: 0, amber: 0, red: 0 }
     entry.total++
     if (node.current_mastery_weight >= 0.7) entry.green++

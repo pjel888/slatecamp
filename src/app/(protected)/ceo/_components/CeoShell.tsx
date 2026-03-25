@@ -9,7 +9,7 @@ import {
   Package,
   Buildings,
   GearSix,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout } from '@/components/portal'
 import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'

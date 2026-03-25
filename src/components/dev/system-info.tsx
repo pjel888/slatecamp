@@ -2,9 +2,9 @@
 
 import { usePathname } from 'next/navigation'
 import { useDevStore } from '@/stores/dev-store'
-import { Monitor, Globe, User, ShieldCheck } from '@phosphor-icons/react'
+import { Monitor, Globe, User, ShieldCheck } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import type { Icon as PhosphorIcon } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 
 interface SystemInfoProps {
   env: string

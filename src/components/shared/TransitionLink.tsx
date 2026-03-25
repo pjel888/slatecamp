@@ -3,7 +3,7 @@
 import { useTransition, type ComponentProps } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { CircleNotch } from '@phosphor-icons/react'
+import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

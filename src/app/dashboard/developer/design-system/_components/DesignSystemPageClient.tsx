@@ -30,7 +30,7 @@ import {
   Palette,
   DotsSixVertical,
   User,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 
 import { Button } from '@/components/ui/button'
 import { CloseButton } from '@/components/ui/close-button'

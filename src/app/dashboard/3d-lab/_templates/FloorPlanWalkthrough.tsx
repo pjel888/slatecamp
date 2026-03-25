@@ -2,7 +2,7 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { GenericControlPanel } from '../_components/GenericControlPanel'

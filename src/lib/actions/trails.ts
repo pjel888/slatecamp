@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { getSubjectName } from '@/types/testing'
 import type {
   CampTrail,
   TrailDay,
@@ -360,7 +361,7 @@ export const recommendTrail = async (): Promise<TrailRecommendation | null> => {
       .select('subject_area')
       .eq('node_id', mastery[0].topic_id)
       .single()
-    if (node?.subject_area) weakestSubjectName = node.subject_area
+    if (node?.subject_area) weakestSubjectName = getSubjectName(node.subject_area)
   }
 
   const daysText = daysToExam ? `${daysToExam} days until your exam` : 'no exam date set'

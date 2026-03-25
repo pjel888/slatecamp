@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle, XCircle, Backspace } from '@phosphor-icons/react'
+import { CheckCircle, XCircle, Backspace } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

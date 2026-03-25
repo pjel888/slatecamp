@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Sun, Moon } from '@phosphor-icons/react'
+import { Sun, Moon } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 interface PreviewAreaProps {

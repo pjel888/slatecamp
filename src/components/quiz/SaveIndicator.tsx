@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { CheckCircle, WifiHigh, WifiSlash, CircleNotch } from '@phosphor-icons/react'
+import { CheckCircle, WifiHigh, WifiSlash, CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

@@ -23,7 +23,7 @@ import {
   BookOpen,
   Globe,
   Path,
-} from '@phosphor-icons/react'
+} from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
 import { siteConfig } from '@/lib/constants/site'

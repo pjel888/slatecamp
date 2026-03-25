@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { UploadSimple, FileText, Warning, CheckCircle, DownloadSimple, XCircle } from '@phosphor-icons/react'
+import { UploadSimple, FileText, Warning, CheckCircle, DownloadSimple, XCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { 

@@ -2,7 +2,7 @@
 
 import { memo } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { XCircle, ArrowSquareOut, Brain } from '@phosphor-icons/react'
+import { XCircle, ArrowSquareOut, Brain } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Trash } from '@phosphor-icons/react'
+import { Trash } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import { ConfirmDialog } from '@/components/ui/dialog'
 

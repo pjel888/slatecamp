@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { SquaresFour } from '@phosphor-icons/react'
+import { SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CloseButton } from '@/components/ui/close-button'
 import { cn } from '@/lib/utils'

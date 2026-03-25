@@ -2,7 +2,7 @@
 'use client'
 
 import { Html } from '@react-three/drei'
-import { Warning } from '@phosphor-icons/react'
+import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface ViolationIndicatorProps {

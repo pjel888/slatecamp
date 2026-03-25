@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { DownloadSimple, Check, Copy } from '@phosphor-icons/react'
+import { DownloadSimple, Check, Copy } from '@phosphor-icons/react/dist/ssr'
 import { generateInvestorExport } from '@/lib/actions/ceo/export-actions'
 
 export const ExportButton = () => {

@@ -2,7 +2,7 @@ import { Card } from '@/components/ui/card'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import { Database, Flask, Palette, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react'
+import { Database, Flask, Palette, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
 import { getAllComponents } from '@/lib/developer/componentRegistry'
 

@@ -6,7 +6,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowLeft } from '@phosphor-icons/react'
+import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 
 /* ------------------------------------------------------------------ */

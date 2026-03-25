@@ -3,7 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question } from '@phosphor-icons/react'
+import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question } from '@phosphor-icons/react/dist/ssr'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 import { Badge } from '@/components/ui/badge'
 import { StatusBadge } from '@/components/ui/status-badge'

@@ -1,9 +1,13 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { canReviewContent } from '@/lib/admin/roles'
 import type { AuditLog } from '@/lib/audit/audit-queries'
 
 export const getAdminStats = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   const [q, w, a] = await Promise.all([
@@ -45,6 +49,9 @@ export interface CoverageGap {
 }
 
 export const getAdminDashboardData = async (): Promise<AdminDashboardData> => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   const [q, wTotal, wPublished, wDraft, taxonomy, assets3d, logs] = await Promise.all([
@@ -69,6 +76,9 @@ export const getAdminDashboardData = async (): Promise<AdminDashboardData> => {
 }
 
 export const getContentBySubject = async (): Promise<SubjectContentCount[]> => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   // Fetch level-1 taxonomy nodes (subjects)
@@ -121,6 +131,9 @@ export interface NeedsAttentionData {
 }
 
 export const getNeedsAttentionData = async (): Promise<NeedsAttentionData> => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   const [reviews, rationale] = await Promise.all([
@@ -141,6 +154,9 @@ export const getNeedsAttentionData = async (): Promise<NeedsAttentionData> => {
 }
 
 export const getCriticalCoverageGap = async (): Promise<CoverageGap | null> => {
+  const authorized = await canReviewContent()
+  if (!authorized) throw new Error('Unauthorized')
+
   const supabase = await createClient()
 
   // Fetch high-frequency leaf nodes, fall back to medium if none found

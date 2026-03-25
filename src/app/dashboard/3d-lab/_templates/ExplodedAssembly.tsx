@@ -3,7 +3,7 @@
 // src/app/dashboard/3d-lab/_templates/ExplodedAssembly.tsx
 import { useMemo, useCallback } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { X } from '@phosphor-icons/react'
+import { X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { createModuleStore } from '../_stores/createModuleStore'

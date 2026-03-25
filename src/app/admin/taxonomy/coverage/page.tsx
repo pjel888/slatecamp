@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: 'Coverage Map — SlateCamp Admin' }
 import { StatCard } from '@/components/shared/stat-card'
 import { Card } from '@/components/ui/card'
 import { EmptyState } from '@/components/shared/empty-state'
-import { GridFour, Warning } from '@phosphor-icons/react'
+import { GridFour, Warning } from '@phosphor-icons/react/dist/ssr'
 
 /* ------------------------------------------------------------------
  *  Helpers

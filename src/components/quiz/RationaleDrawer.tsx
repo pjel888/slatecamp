@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Info, ArrowSquareOut, Plus, CheckCircle, Scales, Cube } from '@phosphor-icons/react'
+import { Info, ArrowSquareOut, Plus, CheckCircle, Scales, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CloseButton } from '@/components/ui/close-button'
 import { resolveRationaleText, resolveRationaleTakeaway } from '@/lib/utils/question'

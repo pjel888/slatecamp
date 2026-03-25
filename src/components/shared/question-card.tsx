@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { useState } from 'react'
-import { Check, X, BookmarkSimple, CaretDown } from '@phosphor-icons/react'
+import { Check, X, BookmarkSimple, CaretDown } from '@phosphor-icons/react/dist/ssr'
 import DOMPurify from 'dompurify'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'

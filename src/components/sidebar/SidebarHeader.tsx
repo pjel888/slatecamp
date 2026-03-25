@@ -1,6 +1,6 @@
 'use client'
 
-import { BookOpen } from '@phosphor-icons/react'
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------

@@ -33,21 +33,21 @@ export default async function FinancialsPage() {
 
   const supabase = await createClient()
 
-  // Fetch all financial entries
-  const { data: rawEntries } = await supabase
-    .from('ceo_financial_entries')
-    .select('id, entry_date, entry_type, category, amount_php, description, is_recurring, created_at, updated_at')
-    .order('entry_date', { ascending: false })
+  // Fetch financial entries and cash balance in parallel — both are independent
+  const [{ data: rawEntries }, { data: cashEntry }] = await Promise.all([
+    supabase
+      .from('ceo_financial_entries')
+      .select('id, entry_date, entry_type, category, amount_php, description, is_recurring, created_at, updated_at')
+      .order('entry_date', { ascending: false }),
+    supabase
+      .from('ceo_cash_balance_entries')
+      .select('amount_php, balance_date')
+      .order('balance_date', { ascending: false })
+      .limit(1)
+      .single(),
+  ])
 
   const entries: FinancialEntry[] = (rawEntries ?? []).map(mapEntry)
-
-  // Latest cash balance
-  const { data: cashEntry } = await supabase
-    .from('ceo_cash_balance_entries')
-    .select('amount_php, balance_date')
-    .order('balance_date', { ascending: false })
-    .limit(1)
-    .single()
 
   const cashOnHand = cashEntry?.amount_php ?? null
 

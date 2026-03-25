@@ -1,6 +1,6 @@
 'use client'
 
-import { Flag, ChatCircle, X } from '@phosphor-icons/react'
+import { Flag, ChatCircle, X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import type { TestMode } from '@/types/app'

@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { ArrowRight } from '@phosphor-icons/react'
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { DevToolbar } from './dev-toolbar'
 
