@@ -4,7 +4,12 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
-import { UnifiedAppShell } from '@/components/layout/UnifiedAppShell'
+import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
+import { Sidebar } from '@/components/sidebar/Sidebar'
+import { SidebarContent } from '@/components/sidebar/SidebarContent'
+import { MobileSidebarShell } from '@/components/sidebar/MobileSidebarShell'
+import { Navbar } from '@/components/shared/Navbar'
+import { DashboardHeader } from '@/components/shared/DashboardHeader'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { DevKeyboardProvider } from '@/components/dev/dev-keyboard-provider'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
@@ -13,6 +18,7 @@ import { TierProvider } from '@/lib/context/tier-context'
 import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import { DisciplineProvider } from '@/lib/context/discipline-context'
 import { DashboardPageSkeleton } from '@/components/shared/DashboardPageSkeleton'
+import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import type {
   UserTier,
   UserGlobalStats,
@@ -69,24 +75,47 @@ async function DashboardLayoutContent({
     ? getEffectiveTier(currentTier, true, flags)
     : currentTier
 
-  const displayName = user.user_metadata?.full_name ?? user.email ?? 'Camper'
-
   return (
     <TierProvider
       tier={currentTier}
       effectiveTier={effectiveTier}
       isDevMode={showDevTools}
     >
-      <DisciplineProvider
+      <DisciplineProvider 
         initialDiscipline={userStats?.disciplines ?? null}
         initialDisciplines={allDisciplines as Discipline[] ?? []}
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
-            <BreadcrumbProvider>
-              <UnifiedAppShell role="student" displayName={displayName}>
-                {children}
-              </UnifiedAppShell>
+          <SidebarProvider>
+            <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg'>
+              <Sidebar
+                isAdmin={isAdmin}
+                isDevMode={showDevTools}
+                userDisplay={{
+                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                }}
+                tier={effectiveTier}
+              />
+              <MobileSidebarShell
+                userDisplay={{
+                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                }}
+                tier={effectiveTier}
+              />
+              <SidebarContent>
+                <BreadcrumbProvider>
+                  <Navbar isAdmin={isAdmin} />
+                  <div>
+                    <DashboardHeader />
+                  </div>
+                  <main className='flex-1 min-h-0 overflow-y-auto bg-page-bg'>
+                    {children}
+                  </main>
+                </BreadcrumbProvider>
+              </SidebarContent>
               {showDevTools && flags != null && (
                 <>
                   <DevToolbar
@@ -107,7 +136,9 @@ async function DashboardLayoutContent({
                   />
                 </>
               )}
-            </BreadcrumbProvider>
+            </div>
+            <QuickActionsBar />
+          </SidebarProvider>
           </NoteContextProvider>
         </ActiveSessionProvider>
       </DisciplineProvider>

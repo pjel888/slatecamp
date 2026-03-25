@@ -1,0 +1,50 @@
+'use client'
+
+import { List } from '@phosphor-icons/react'
+import { Z_INDEX } from './types'
+
+// ---------------------------------------------------------------------------
+// MobileTopBar — fixed 42px bar visible only below lg breakpoint
+// Spec: HTML v4. z-index 45. Hamburger opens MobileDrawer via onOpenDrawer.
+// ---------------------------------------------------------------------------
+
+interface MobileTopBarProps {
+  onOpenDrawer: () => void
+}
+
+export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
+  return (
+    <div
+      className="flex lg:hidden items-center px-2 gap-2"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: 42,
+        zIndex: Z_INDEX.mobileTopBar,
+        borderBottom: '1px solid var(--border)',
+        backgroundColor: 'white',
+      }}
+    >
+      {/* Hamburger button */}
+      <button
+        onClick={onOpenDrawer}
+        aria-label="Open navigation"
+        className="flex items-center justify-center rounded-md text-[#4A5568] transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-400 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#1B3FC4]"
+        style={{ width: 34, height: 34 }}
+      >
+        <List size={17} weight="regular" />
+      </button>
+
+      {/* Wordmark logo */}
+      <div
+        className="font-extrabold text-[13px] select-none"
+        style={{ letterSpacing: '-0.3px', lineHeight: 1 }}
+      >
+        <span className="text-[#1A2332] dark:text-white">Slate</span>
+        <span className="text-[#1B3FC4]">Camp</span>
+      </div>
+    </div>
+  )
+}

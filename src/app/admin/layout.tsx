@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
 import { canReviewContent, getUserRole } from '@/lib/admin/roles'
-import { UnifiedAppShell } from '@/components/layout/UnifiedAppShell'
+import { AdminShell } from './_components/AdminShell'
 import { headers } from 'next/headers'
 
 export default async function AdminLayout({
@@ -32,8 +32,8 @@ export default async function AdminLayout({
   }
 
   return (
-    <UnifiedAppShell role="admin" displayName="Admin">
+    <AdminShell role={role}>
       {children}
-    </UnifiedAppShell>
+    </AdminShell>
   )
 }
