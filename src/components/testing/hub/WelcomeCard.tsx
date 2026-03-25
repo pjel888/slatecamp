@@ -33,7 +33,7 @@ const WelcomeCard = () => (
           feedback and explanations on every question. No timer, no pressure.
         </p>
         <Link
-          href="/dashboard/testing/camp/setup"
+          href="/quiz/camp/setup"
           className="inline-flex items-center justify-center rounded-sm px-3 py-2 text-[13px] font-medium bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all duration-150 ease-out active:scale-[0.98]"
         >
           Start your first session

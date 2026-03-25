@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuizHeader instead (timer is integrated into QuizHeader in v2). This file will be removed in the next major version. */
 'use client'
 
 import { cn } from '@/lib/utils'

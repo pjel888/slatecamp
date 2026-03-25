@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuestionPalette instead. This file will be removed in the next major version. */
 'use client'
 
 import { useState, useRef, useEffect } from 'react'

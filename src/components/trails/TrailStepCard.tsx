@@ -29,9 +29,9 @@ interface TrailStepCardProps {
 
 const CTA_ROUTES: Record<TrailStepType, (nodeIds: string[]) => string> = {
   wiki: () => '/dashboard/wiki',
-  quiz: (nodeIds) => `/dashboard/testing/camp/setup`,
+  quiz: (nodeIds) => `/quiz/camp/setup`,
   lab: () => '/dashboard/3d-lab',
-  review: (nodeIds) => `/dashboard/testing/camp/setup`,
+  review: (nodeIds) => `/quiz/camp/setup`,
 }
 
 const TrailStepCard = ({

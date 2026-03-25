@@ -147,7 +147,7 @@ const computeSmartSuggestion = ({
       description:
         'Your mastery data shows these topics need a focused session. A targeted review here has the highest impact on your Readiness Score.',
       ctaLabel: 'Start Focus Review',
-      ctaHref: '/dashboard/testing/focus-review/setup',
+      ctaHref: '/quiz/focused/setup',
       metadata: { nodeNames: [] },
     }
   }
@@ -168,8 +168,8 @@ const computeSmartSuggestion = ({
         ctaLabel: daysUntil <= 7 ? 'Start Storm Mode' : 'Start Camp Mode',
         ctaHref:
           daysUntil <= 7
-            ? '/dashboard/testing/storm/setup'
-            : '/dashboard/testing/camp/setup',
+            ? '/quiz/storm/setup'
+            : '/quiz/camp/setup',
         metadata: { daysUntilExam: daysUntil },
       }
     }
@@ -184,7 +184,7 @@ const computeSmartSuggestion = ({
       title: `${subjectName} could use attention`,
       description: `Your mastery in ${subjectName} is below your average. A Subject Mode session here would strengthen your weakest area.`,
       ctaLabel: `Practice ${subjectName}`,
-      ctaHref: '/dashboard/testing/subject/setup',
+      ctaHref: '/quiz/subject/setup',
       metadata: { subjectName },
     }
   }
@@ -200,7 +200,7 @@ const computeSmartSuggestion = ({
         title: 'Pick up where you left off',
         description: `Your last session was ${daysSince} day${daysSince !== 1 ? 's' : ''} ago. A quick Camp Mode session is the best way to get back in rhythm.`,
         ctaLabel: 'Start Camp Mode',
-        ctaHref: '/dashboard/testing/camp/setup',
+        ctaHref: '/quiz/camp/setup',
       }
     }
   }

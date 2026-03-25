@@ -24,7 +24,7 @@ export const SrsReviewWidget = ({
 
   return (
     <Link
-      href="/dashboard/testing/camp/setup"
+      href="/quiz/camp/setup"
       className="block rounded-md border border-border bg-white p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex items-center justify-between">

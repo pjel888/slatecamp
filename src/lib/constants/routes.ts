@@ -18,13 +18,19 @@ export const ROUTES = {
   QUIZ: "/dashboard/quiz",
   SESSIONS: "/dashboard/sessions",
   REVIEW: "/dashboard/testing",
-  // Testing & Review Hub
+  // Testing & Review Hub (entry point — keep as-is)
   TESTING: "/dashboard/testing",
+  // v1 legacy routes — do not use for new links
   TESTING_SETUP: (mode: string) => `/dashboard/testing/${mode}/setup`,
   TESTING_SESSION: (sessionId: string) => `/dashboard/testing/session/${sessionId}`,
   TESTING_DEBRIEF: (sessionId: string) => `/dashboard/testing/session/${sessionId}/debrief`,
   TESTING_SIM_BRIEFING: "/dashboard/testing/simulation/briefing",
   TESTING_SIM_RESULTS: (sessionId: string) => `/dashboard/testing/simulation/${sessionId}/results`,
+  // Quiz Engine v2 (unified shell) — use these for all new setup/session links
+  QUIZ_V2_SETUP: (mode: string) => `/quiz/${mode}/setup`,
+  QUIZ_V2_SESSION: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}`,
+  QUIZ_V2_RESULTS: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results`,
+  QUIZ_V2_REVIEW: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review`,
   ANALYTICS: "/dashboard/analytics",
   CAMPTRAILS: "/dashboard/camptrails",
   WIKI: "/dashboard/wiki",

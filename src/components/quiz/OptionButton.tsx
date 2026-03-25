@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/OptionsColumn instead. This file will be removed in the next major version. */
 'use client'
 
 import { CheckCircle, XCircle, Backspace } from '@phosphor-icons/react/dist/ssr'

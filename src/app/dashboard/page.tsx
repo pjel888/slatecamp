@@ -104,7 +104,7 @@ export default async function DashboardPage() {
           topicName={data.activeTrailDay?.title}
           estimatedMinutes={data.activeTrailDay?.estimatedMinutes}
           ctaLabel={data.activeTrailDay ? `Continue Day ${data.activeTrailDay.dayNumber}` : 'Start Diagnostic'}
-          ctaHref={data.activeTrailDay ? `/dashboard/trails/${data.activeTrailDay.trailSlug}` : '/dashboard/testing/camp/setup'}
+          ctaHref={data.activeTrailDay ? `/dashboard/trails/${data.activeTrailDay.trailSlug}` : '/quiz/camp/setup'}
         />
 
         {/* ── 3. Quick Stats Row ──────────────────────────── */}

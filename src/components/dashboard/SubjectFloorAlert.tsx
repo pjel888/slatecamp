@@ -39,7 +39,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
             {' '}A high overall score won&apos;t compensate.
           </p>
           <Link
-            href="/dashboard/testing/camp/setup"
+            href="/quiz/camp/setup"
             className="mt-1.5 inline-block text-[11px] font-medium text-camp-cobalt underline underline-offset-2"
           >
             Start a {worst.subject} review &rarr;

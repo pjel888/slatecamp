@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/OptionsColumn instead (confidence toggle is integrated into OptionsColumn in v2). This file will be removed in the next major version. */
 'use client'
 
 import { cn } from '@/lib/utils'

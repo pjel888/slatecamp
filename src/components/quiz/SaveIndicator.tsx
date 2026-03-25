@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuizShell instead (save state is managed internally by QuizShell in v2). This file will be removed in the next major version. */
 'use client'
 
 import { useEffect, useState } from 'react'

@@ -765,7 +765,7 @@ export const getSmartSuggestion = async (userId: string): Promise<SmartSuggestio
           ? `${nodeNames.join(', ')} and others haven't improved recently. A focused session here has the highest impact.`
           : "Some of your topics haven't improved recently. A focused session here has the highest impact.",
       ctaLabel: 'Start Focus Review',
-      ctaHref: `/dashboard/testing/setup/focus-review?queueId=${blindspotQueue.queue_id}`,
+      ctaHref: `/quiz/focused/setup?queueId=${blindspotQueue.queue_id}`,
       metadata: { nodeNames },
     }
   }
@@ -801,8 +801,8 @@ export const getSmartSuggestion = async (userId: string): Promise<SmartSuggestio
         ctaLabel: readiness >= SIMULATION_READINESS_THRESHOLD ? 'Start Simulation' : 'Start Camp Mode',
         ctaHref:
           readiness >= SIMULATION_READINESS_THRESHOLD
-            ? '/dashboard/testing/setup/simulation'
-            : '/dashboard/testing/setup/camp',
+            ? '/quiz/fullexam/setup'
+            : '/quiz/camp/setup',
         metadata: { daysUntilExam, currentReadiness: readiness },
       }
     }
@@ -847,7 +847,7 @@ export const getSmartSuggestion = async (userId: string): Promise<SmartSuggestio
         title: `${weakestSubject} could use attention`,
         description: `Your accuracy in ${weakestSubject} is ${accuracyPct}% — below your average. A Subject Mode session here would strengthen your weakest area.`,
         ctaLabel: `Practice ${weakestSubject}`,
-        ctaHref: `/dashboard/testing/setup/subject?subject=${encodeURIComponent(weakestSubject)}`,
+        ctaHref: `/quiz/subject/setup?subject=${encodeURIComponent(weakestSubject)}`,
         metadata: { subjectName: weakestSubject },
       }
     }
@@ -871,7 +871,7 @@ export const getSmartSuggestion = async (userId: string): Promise<SmartSuggestio
         title: 'Pick up where you left off',
         description: `Your last session was ${daysLabel} ago. A quick Camp Mode session is the best way to get back in rhythm.`,
         ctaLabel: 'Start Camp Mode',
-        ctaHref: '/dashboard/testing/setup/camp',
+        ctaHref: '/quiz/camp/setup',
       }
     }
   }

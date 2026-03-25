@@ -69,7 +69,13 @@ const ModeCard = ({
   const isZone3 = mode.zone === 3
   const accentColor = isZone3 ? 'var(--accent)' : 'var(--primary)'
   const showProBadge = mode.isPro && userTier === 'free'
-  const href = `/dashboard/testing/${mode.key}/setup`
+  const MODE_KEY_TO_V2: Record<string, string> = {
+    'focus-review': 'focused',
+    simulation: 'fullexam',
+    endurance: 'extended',
+  }
+  const v2Mode = MODE_KEY_TO_V2[mode.key] ?? mode.key
+  const href = `/quiz/${v2Mode}/setup`
 
   const cardContent = (
     <>

@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuizBody instead (confidence check is handled within QuizBody in v2). This file will be removed in the next major version. */
 'use client'
 
 import { useState } from 'react'

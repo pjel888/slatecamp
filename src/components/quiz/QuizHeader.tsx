@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuizHeader instead. This file will be removed in the next major version. */
 'use client'
 
 import { Flag, ChatCircle, X } from '@phosphor-icons/react/dist/ssr'

@@ -1,3 +1,4 @@
+/** @deprecated This barrel export is for v1 quiz components. Use quiz-v2/* instead. This file will be removed in the next major version. */
 export { QuizOverlay } from './QuizOverlay'
 export { QuizHeader } from './QuizHeader'
 export { QuestionStem } from './QuestionStem'

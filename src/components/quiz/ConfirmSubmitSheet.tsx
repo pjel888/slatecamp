@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/SubmitConfirmModal instead. This file will be removed in the next major version. */
 'use client'
 
 import { useEffect, useRef } from 'react'

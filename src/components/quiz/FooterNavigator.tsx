@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuizFooter instead. This file will be removed in the next major version. */
 'use client'
 
 import { CaretLeft, CaretRight } from '@phosphor-icons/react/dist/ssr'

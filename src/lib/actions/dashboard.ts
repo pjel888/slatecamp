@@ -240,7 +240,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,
-      href: `/dashboard/testing/camp/setup`,
+      href: `/quiz/camp/setup`,
     }
   } else {
     catalyst = {
@@ -248,7 +248,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: 'Daily Warmup',
       subtitle: 'A quick 5-question session from your core subjects — the perfect way to start',
       estimatedMinutes: 3,
-      href: '/dashboard/testing/camp/setup',
+      href: '/quiz/camp/setup',
     }
   }
 
@@ -306,7 +306,7 @@ function emptyDashboard(userName: string): DashboardData {
       title: 'Start Your First Session',
       subtitle: 'Jump in with a 5-question warmup — no setup needed',
       estimatedMinutes: 3,
-      href: '/dashboard/testing/camp/setup',
+      href: '/quiz/camp/setup',
     },
     recentActivities: [],
     totalAnswered: 0,

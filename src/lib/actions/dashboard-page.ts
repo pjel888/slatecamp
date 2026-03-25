@@ -360,7 +360,7 @@ const emptyDashboard = (userName: string): DashboardPageData => {
       title: 'Start Your First Session',
       subtitle: 'Jump in with a quick warmup — no setup needed',
       ctaLabel: 'Begin',
-      href: '/dashboard/testing/camp/setup',
+      href: '/quiz/camp/setup',
       estimatedMinutes: 3,
       modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
     },

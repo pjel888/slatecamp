@@ -53,7 +53,7 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
       rewardType: 'readiness',
       rewardValue: 2,
       actionLabel: 'Start Practice',
-      actionHref: '/dashboard/testing/camp/setup',
+      actionHref: '/quiz/camp/setup',
     },
     {
       id: 'wiki-explorer',

@@ -390,7 +390,7 @@ export const WikiArticle = async ({
               5 questions on this topic — reinforces what you learned.
             </p>
           </div>
-          <a href={`/dashboard/testing/camp/setup`}>
+          <a href={`/quiz/camp/setup`}>
             <Button size="sm" className="shrink-0 rounded-sm font-semibold">
               Start Quiz &rarr;
             </Button>

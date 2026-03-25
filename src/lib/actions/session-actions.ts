@@ -121,7 +121,7 @@ export const buildAction = (
       title: `Practice: ${weakest.topicName}`,
       subtitle: `This topic needs attention — 10 focused questions to strengthen your understanding`,
       ctaLabel: 'Start session',
-      href: '/dashboard/testing/camp/setup',
+      href: '/quiz/camp/setup',
       estimatedMinutes: 8,
       modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
     }
@@ -132,7 +132,7 @@ export const buildAction = (
     title: 'Start a Camp session',
     subtitle: '10 questions across your core subjects — about 8 minutes',
     ctaLabel: 'Begin',
-    href: '/dashboard/testing/camp/setup',
+    href: '/quiz/camp/setup',
     estimatedMinutes: 8,
     modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
   }

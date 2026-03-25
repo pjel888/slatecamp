@@ -130,7 +130,7 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
             )}
 
             <div className="mt-8 pt-6 border-t border-border">
-              <Link href={`/dashboard/testing/subject/setup`}>
+              <Link href={`/quiz/subject/setup`}>
                 <Button className="font-bold rounded-sm px-8">
                   Practice this Topic
                 </Button>
@@ -160,8 +160,8 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
   ])
 
   const practiceHref = node?.node_id
-    ? `/dashboard/testing/subject/setup`
-    : `/dashboard/testing/camp/setup`
+    ? `/quiz/subject/setup`
+    : `/quiz/camp/setup`
   const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
 
   return (

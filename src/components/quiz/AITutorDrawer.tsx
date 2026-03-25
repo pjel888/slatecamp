@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/FeedbackPanel instead (AI tutor is integrated into FeedbackPanel in v2). This file will be removed in the next major version. */
 'use client'
 
 import { useState, useEffect, useRef } from 'react'

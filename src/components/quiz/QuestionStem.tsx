@@ -1,3 +1,4 @@
+/** @deprecated Use quiz-v2/QuestionColumn instead. This file will be removed in the next major version. */
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
