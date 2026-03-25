@@ -223,7 +223,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
 
               {/* Separator between groups (not after last) */}
               {groupIdx < SIDEBAR_GROUPS.length - 1 && (
-                <div className="mx-[6px] my-4 border-t border-border" />
+                <div className="mx-[6px] my-2 border-t border-border" />
               )}
             </div>
           ))}
