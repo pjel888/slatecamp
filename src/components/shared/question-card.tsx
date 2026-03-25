@@ -3,6 +3,7 @@
 import * as React from 'react'
 import { useState } from 'react'
 import { Check, X, Bookmark, ChevronDown } from 'lucide-react'
+import DOMPurify from 'dompurify'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
 
@@ -230,7 +231,7 @@ const RationaleSection = ({
         {isOpen && (
           <div
             className="bg-muted/30 rounded-lg p-4 mt-2 text-sm text-foreground leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: rationale }}
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(rationale) }}
           />
         )}
       </div>
@@ -240,7 +241,7 @@ const RationaleSection = ({
   return (
     <div
       className="bg-muted/30 rounded-lg p-4 mt-4 text-sm text-foreground leading-relaxed"
-      dangerouslySetInnerHTML={{ __html: rationale }}
+      dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(rationale) }}
     />
   )
 }
@@ -406,7 +407,7 @@ const QuestionCard = ({
       {/* Stem */}
       <div
         className="text-sm leading-relaxed text-foreground mb-4"
-        dangerouslySetInnerHTML={{ __html: stem }}
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(stem) }}
       />
 
       {/* Options */}

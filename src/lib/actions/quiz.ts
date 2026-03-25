@@ -180,7 +180,7 @@ export async function deleteQuizSession(sessionId: string) {
  * Global readiness score is now computed at session completion
  * (via recomputeAndSaveReadinessScore) rather than per-answer.
  */
-async function recordMastery(
+export async function recordMastery(
   user_id: string,
   topic_id: string,
   question_id: string,

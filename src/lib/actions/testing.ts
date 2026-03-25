@@ -5,6 +5,8 @@ import { revalidatePath } from 'next/cache'
 import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
 import { computeUserSignals } from '@/lib/signals/compute'
 import { computeAccuracyByBlock } from '@/lib/endurance/compute'
+import { recordMastery } from '@/lib/actions/quiz'
+import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
 import type { QuizSession } from '@/types/app'
 import type {
   SessionConfig,
@@ -496,10 +498,10 @@ export const saveTestingInteraction = async (
   const { data: { user } } = await getUser()
   if (!user) return { error: 'Unauthenticated' }
 
-  // Derive question_order from session question_ids array
+  // Derive question_order from session and fetch test_mode for SRS gating
   const { data: session } = await supabase
     .from('quiz_sessions')
-    .select('question_ids')
+    .select('question_ids, test_mode')
     .eq('session_id', payload.sessionId)
     .eq('user_id', user.id)
     .single()
@@ -510,7 +512,7 @@ export const saveTestingInteraction = async (
 
   const { data: questionData } = await supabase
     .from('questions')
-    .select('topic_id')
+    .select('topic_id, difficulty')
     .eq('question_id', payload.questionId)
     .single()
 
@@ -538,6 +540,46 @@ export const saveTestingInteraction = async (
   if (error) {
     console.error('[saveTestingInteraction] error:', error.message)
     return { error: error.message }
+  }
+
+  // ── Mastery recording + SRS scheduling (mirroring quiz.ts saveInteraction) ──
+  const topicId = questionData?.topic_id
+  if (topicId && session) {
+    const difficulty = questionData?.difficulty ?? 0.5
+    const speedThreshold = 3000 + (difficulty * 5000)
+    const isCorrect = payload.isCorrect ?? false
+    const suspectedGuess = isCorrect && payload.timeSpentMs < speedThreshold
+
+    // Update per-answer mastery weights (EMA, anti-inflation columns)
+    void recordMastery(
+      user.id,
+      topicId,
+      payload.questionId,
+      isCorrect,
+      payload.timeSpentMs,
+      session.test_mode,
+      difficulty,
+      suspectedGuess,
+    )
+
+    // SRS scheduling for learning modes (camp covers camp_mode, focus_review, blindspot_queue, etc.)
+    if (session.test_mode === 'camp') {
+      const { data: currentMastery } = await supabase
+        .from('user_node_mastery')
+        .select('avg_time_ms')
+        .eq('user_id', user.id)
+        .eq('topic_id', topicId)
+        .maybeSingle()
+
+      const quality = await deriveQualityRating({
+        isCorrect,
+        timeSpentMs: payload.timeSpentMs,
+        avgTimeMs: currentMastery?.avg_time_ms ?? 10000,
+        confidence: payload.confidenceTag ?? null,
+        isSuspectedLuckyGuess: suspectedGuess,
+      })
+      void updateSrsSchedule(user.id, topicId, quality)
+    }
   }
 
   return { error: null }
