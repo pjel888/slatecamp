@@ -16,11 +16,12 @@ export interface ComponentMeta {
   slug: string
   title: string
   description: string
-  domain: 'wiki' | 'questions' | 'testing-path' | 'shared'
+  domain: 'wiki' | 'questions' | 'testing-path' | 'shared' | 'content-blocks' | 'widgets'
   status: 'stable' | 'beta' | 'deprecated'
   importPath: string
   filePath: string
   tags?: string[]
+  lawGroup?: 'BP-344' | 'DSGN-013' | 'PD-1096'
 }
 
 /** Full data needed to render a component documentation page. */
