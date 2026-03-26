@@ -43,7 +43,7 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
 
       {/* Value change */}
       {(previous_value || new_value) && (
-        <div className="flex flex-col gap-1 mb-3 pl-3 border-l-2 border-[#D4DAE3]">
+        <div className="flex flex-col gap-1 mb-3 pl-3 border border-[#D4DAE3] rounded-sm">
           {previous_value && (
             <p className="text-xs text-[#8896A7] line-through">{previous_value}</p>
           )}

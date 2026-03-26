@@ -98,11 +98,10 @@ const SmartSuggestionCard = ({ suggestion }: SmartSuggestionCardProps) => {
 
   return (
     <Card
-      className="rounded-lg p-5 border-l-[3px]"
+      className="rounded-md p-5 border"
       style={{
         backgroundColor: config.bg,
-        borderColor: 'var(--border)',
-        borderLeftColor: config.accentBorder,
+        borderColor: config.accentBorder ? `${config.accentBorder}33` : 'var(--border)',
       }}
       role="complementary"
       aria-label={`${eyebrow}: ${title}`}

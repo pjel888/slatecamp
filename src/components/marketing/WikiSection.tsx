@@ -26,7 +26,7 @@ const WikiMockup = () => (
         (item) => (
           <div
             key={item}
-            className='mb-1 border-l-2 border-camp-green pl-2 text-[11px] text-camp-green'
+            className='mb-1 border border-camp-green/20 rounded-sm px-2 text-[11px] text-camp-green'
           >
             {item}
           </div>

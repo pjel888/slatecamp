@@ -7,8 +7,7 @@ import { Button } from '@/components/ui/button'
 
 const WelcomeCard = () => (
   <Card
-    className="rounded-lg p-5 border-l-[3px] border-l-[var(--primary)] bg-primary-50 border border-[var(--border)]"
-    style={{ borderLeftColor: 'var(--primary)' }}
+    className="rounded-md p-5 bg-[#EEF2FC] border border-[#1B3FC4]/20"
     aria-label="Welcome to your study sessions"
   >
     <div className="flex items-start gap-4">

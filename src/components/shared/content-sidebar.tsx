@@ -130,7 +130,7 @@ const ContentSidebarTocLink = ({
     href={href}
     style={{ paddingLeft: `${12 + depth * 12}px` }}
     className={cn(
-      'block border-l-2 py-1 text-xs transition-colors duration-150',
+      'block py-1 text-xs transition-colors duration-150 rounded-sm',
       active
         ? 'border-primary text-primary font-medium'
         : 'border-transparent text-muted-foreground hover:text-foreground hover:border-border',
