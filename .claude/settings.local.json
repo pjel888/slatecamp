@@ -142,7 +142,15 @@
       "Bash(__NEW_LINE_08761438476cba36__ echo:*)",
       "mcp__Claude_Preview__preview_start",
       "mcp__plugin_oh-my-claudecode_t__python_repl",
-      "Bash(taskkill //F //PID 39132)"
+      "Bash(taskkill //F //PID 39132)",
+      "Bash(do wc:*)",
+      "Bash(grep -ohP '<[A-Z][A-Za-z]+' *.md)",
+      "Bash(do grep:*)",
+      "Bash(echo \"MISSING title: $f\")",
+      "Bash(echo \"MISSING slug: $f\")",
+      "Bash(grep -oh '<[A-Z][A-Za-z]*' *.md)",
+      "Write(D:/SlateCamp/slate-camp/.claude/**)",
+      "Edit(D:/SlateCamp/slate-camp/.claude/**)"
     ]
   }
 }
