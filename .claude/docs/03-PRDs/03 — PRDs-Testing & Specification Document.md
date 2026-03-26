@@ -599,10 +599,43 @@ Average time per item is updated and compared to the board exam pace standard: *
 - [x] **SM-2 Model**: Implemented in `src/lib/srs/sm2.ts` for spaced repetition scheduling.
 - [x] **EMA Recalculation**: Implemented in `recordMastery` action (smoothing factor α = 0.2).
 
-### UI/UX Components
-- [x] **Mode-Aware Feedback**: `QuizRenderer.tsx` handles Camp (dwell time), Storm (timer), and Chill (one-tap reveal).
-- [x] **The Arsenal**: Strikethrough and Flagging tools functional.
-- [x] **Recommendation Engine**: Front-end banner implemented in `TestingHub.tsx`.
+### UI/UX Components (quiz-v2 Component Tree)
+
+The Quiz Engine v2 uses a unified config-driven shell with a two-column layout:
+
+- `QuizShell` — outer shell, owns session state, renders the two-column layout
+- `OptionsColumn` — left column: question text, option cards, Arsenal toolbar
+- `FeedbackPanel` — right column: rationale, Teleport Link, Ask AI CTA (Camp/Chill only)
+- `QuizFooter` — bottom bar: navigation, submit, next controls
+- `SetupFlow` — pre-session configuration (IntroSlide1, IntroSlide2)
+- `ResultsDashboard` — post-session results overview with score breakdown
+- `ResultsCTAs` — post-session action cards (Fix weakest topic, Go to Wiki, Save notes)
+- `ReviewCard` / `ReviewCardList` / `ReviewFilterBar` — question-by-question review
+- `ReviewHub` — the Testing Hub entry point (`src/components/testing/hub/ReviewHub.tsx`)
+- `SessionsTable` — past sessions list in the hub (`src/components/testing/hub/SessionsTable.tsx`)
+
+Previous component names (`QuizRenderer.tsx`, `TestingHub.tsx`) are retired — use the quiz-v2 names above.
+
+- [x] **Mode-Aware Feedback**: `QuizShell` + `FeedbackPanel` handle Camp (dwell time), Storm (timer), and Chill (one-tap reveal).
+- [x] **The Arsenal**: Strikethrough and Flagging tools functional in `OptionsColumn`.
+- [x] **Recommendation Engine**: Front-end banner implemented in `ReviewHub`.
+- [x] **Setup Flow**: `SetupFlow`, `IntroSlide1`, `IntroSlide2` components complete.
+- [x] **Results**: `ResultsDashboard`, `ResultsCTAs`, `ReviewCard`, `ReviewCardList`, `ReviewFilterBar` complete.
+- [x] **Hub**: `ReviewHub` and `SessionsTable` replace the old TestingHub.
+
+### Quiz Modes Reference
+
+| Mode | IP Name | UI Label | Status |
+|---|---|---|---|
+| Camp | Camp Mode™ | Camp Mode | ✅ Implemented |
+| Storm | Storm Mode™ | Storm Mode | ✅ Implemented |
+| Chill | — | Chill Mode | ✅ Implemented |
+| Custom | — | Custom Session | ✅ Implemented |
+| Blindspot | Blindspot Protocol™ | Focus Review | ✅ Implemented |
+| Proof Sim | Proof Simulation™ | Full Exam Simulation | ✅ Implemented |
+| Endurance | Endurance Cycle™ | Extended Practice | ✅ Implemented |
+
+> **UI Naming Note:** IP/trademark names are used in internal docs and legal filings. Student-facing UI uses the labels in the "UI Label" column above. Never display "Blindspot Protocol", "Endurance Cycle", or "Proof Simulation" in the student UI.
 
 ---
 

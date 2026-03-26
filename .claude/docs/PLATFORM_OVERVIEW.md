@@ -1,7 +1,7 @@
 # Technical & Business Audit: SlateCamp (Slate Camp)
 
-**Date:** March 16, 2026  
-**Role:** Elite CTO / Technical Due Diligence Auditor  
+**Date:** March 16, 2026
+**Role:** Elite CTO / Technical Due Diligence Auditor
 **Status:** **[FINAL REPORT]**
 
 ---
@@ -12,7 +12,7 @@
 
 - **Target Audience:** Professionals requiring deep domain mastery and spatial understanding of complex subjects.
 - **Core Value Proposition:** Transitioning study from passive memorization to active mastery through a "Socratic" learning loop, spatial 3D visualization, and data-driven readiness scoring.
-- **Revenue Model:** Tiered subscription (Free, Pro, Enterprise) managed via Stripe and Payrex, with built-in "Final Stretch" upsell triggers based on exam-date proximity.
+- **Revenue Model:** Tiered subscription (Free, Camp, Insurance, Institutional) managed via Stripe and PayRex.
 
 ---
 
@@ -38,9 +38,9 @@ An exhaustive inventory of the frontend, backend, and infrastructure libraries.
 
 ### **A. Testing Hub & Learning Science**
 
-- **Adaptive Quiz Modes:** Includes `Camp` (standard), `Storm` (rapid fire), `Blindspot` (weak domains), `Proof Sim` (simulation), and `Endurance`.
-- **Item Response Theory (IRT):** Dynamically selects questions based on user ability ($\theta$) and question discrimination ($a$) / difficulty ($b$).
-- **Spaced Repetition (SRS):** A modified SM-2 algorithm that weighs response time and user confidence to schedule review intervals.
+- **Adaptive Quiz Modes:** Includes `Camp` (standard), `Storm` (rapid fire), `Focus Review` (weak domains — IP name: Blindspot Protocol™), `Full Exam Simulation` (IP name: Proof Simulation™), and `Extended Practice` (IP name: Endurance Cycle™).
+- **Item Response Theory (IRT):** Dynamically selects questions based on user ability ($\theta$) and question discrimination ($a$) / difficulty ($b$). Implemented in `src/lib/srs/irt.ts`.
+- **Spaced Repetition (SRS):** A modified SM-2 algorithm that weighs response time and user confidence to schedule review intervals. Implemented in `src/lib/srs/sm2.ts`.
 
 ### **B. Spatial Knowledge & 3D Lab**
 
@@ -61,14 +61,17 @@ An exhaustive inventory of the frontend, backend, and infrastructure libraries.
 Located in `src/lib/srs/irt.ts`, the platform utilizes a **2-Parameter Logistic (2PL) Model**. It calculates the probability of a correct answer and updates the user's "Theta" (ability score) using an information-weighted delta function.
 
 - **IP Goal:** Ensures users are always challenged at the "Goldilocks Zone" ($P \approx 0.75$) of learning.
+- **Status (March 2026):** Implemented and live.
 
 ### **II. Modified SM-2 (Response-Time Weighted SRS)**
 
 Located in `src/lib/srs/sm2.ts`, the SRS engine doesn't just look at "Correct/Incorrect." It calculates "Quality" based on:
 
-1.  **Correctness:** Binary pass/fail.
-2.  **Latency:** Faster responses indicate higher "fluency" and result in longer intervals.
-3.  **Confidence:** User-reported certainty ("Know" vs "Unsure") adjusts the Ease Factor ($EF$).
+1. **Correctness:** Binary pass/fail.
+2. **Latency:** Faster responses indicate higher "fluency" and result in longer intervals.
+3. **Confidence:** User-reported certainty ("Know" vs "Unsure") adjusts the Ease Factor ($EF$).
+
+- **Status (March 2026):** Implemented and live.
 
 ### **III. Socratic AI Tutor**
 
@@ -78,26 +81,26 @@ A prompt-engineered anti-hallucination pipeline (`src/lib/ai/prompts.ts`) that f
 
 ---
 
-## 5. UX/UI Design System: "The Cerebro Standard"
+## 5. UX/UI Design System: "Campfire"
 
-The design system is **Campfire** — warm, inviting, and research-backed. Clean and functional with subtle warmth, Inter typeface, and a muted earth-tone palette anchored by Camp Cobalt (#1B3FC4).
+The design system is **Campfire** — warm, inviting, and research-backed. Clean and functional with subtle warmth, Inter typeface, and a warm-white palette anchored by Camp Cobalt (#1B3FC4).
 
-- **Color Palette:** Apple-inspired neutrals (`Snow`, `Bone`, `Ash`, `Graphite`, `Charcoal`) with functional signal colors (`Signal Amber`, `Signal Green`, `Signal Red`).
-- **Typography:** Strict sans-serif hierarchy using CSS variables for `--text-primary` through `--text-quaternary`.
+- **Color Palette:** Campfire tokens — `Camp Cobalt` (#1B3FC4), `Emerald` (#2D9F6F), `Warm Red` (#D64545), `Amber` (#D4951A), `Surface Light` (#F8F7F5), `Ink Primary` (#1A2332), with matching `-50` tints for semantic backgrounds.
+- **Typography:** Inter sans-serif hierarchy with `Ink Primary` through `Ink Tertiary` semantic roles. Monospace only for code, data values, and the Readiness Score number.
 - **Component Architecture:**
   - **Tactile Feedback:** Instant scale transforms ($0.98$) on all interactive elements for a "physical" click feel.
   - **Navigation:** Transition-aware links with `data-pending` states for zero-perceived-latency UI.
-  - **Radii:** Soft, progressive rounding (`--radius-sm` to `--radius-4xl`) based on a $0.75$rem base.
+  - **Radii:** `rounded-md` (8px) for cards, `rounded-sm` (6px) for buttons/inputs, `rounded-lg` (12px) for modals. No `rounded-xl` or larger on standard elements.
 
 ---
 
 ## 6. Strategic Business Findings
 
-1.  **Data Integrity:** The database uses strict RLS (Row Level Security) and triggers for `updated_at` consistency.
-2.  **Scalability:** The use of Supabase + Next.js Server Actions allows for a thin client and heavy lifting on the server/database layer.
-3.  **Moat:** The combination of a proprietary 6-level taxonomy linked across 3D models, Wiki articles, and IRT-based questions creates a massive barrier to entry for competitors.
+1. **Data Integrity:** The database uses strict RLS (Row Level Security) and triggers for `updated_at` consistency.
+2. **Scalability:** The use of Supabase + Next.js Server Actions allows for a thin client and heavy lifting on the server/database layer.
+3. **Moat:** The combination of a proprietary 6-level taxonomy linked across 3D models, Wiki articles, and IRT-based questions creates a massive barrier to entry for competitors.
 
 ---
 
-**End of Audit Report.**  
+**End of Audit Report.**
 _This document serves as the Source of Truth for future development cycles._

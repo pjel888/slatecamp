@@ -111,11 +111,11 @@ Feedback is not one-size-fits-all. The three personas from Discovery each have d
 | Size | 1,000–5,000 users |
 | Profile | Organic signups from TikTok/Reels campaigns (split-screen: blurry PDF vs. interactive 3D Lab), SEO syllabus content (long-tail keywords like "PD 1096 Floor Area Ratio formula"), Campus Ambassador word-of-mouth |
 | Duration | Ongoing (transition to general availability) |
-| Feedback channels | All channels active + university partner dashboards + App Store / Play Store reviews |
+| Feedback channels | All channels active + university partner dashboards + in-app feedback widget |
 
 **Focus Areas:**
 
-- [ ]  **Conversion funnel optimization** — Free → Camp (₱499–799/mo) → Insurance (₱4,999/yr) tier progression. Parent-targeted messaging for Insurance tier ("A fraction of review center fees")
+- [ ]  **Conversion funnel optimization** — Free → Camp (₱499–799/mo) → Insurance (₱3,999 / 6 months) tier progression. Parent-targeted messaging for Insurance tier ("A fraction of review center fees")
 - [ ]  **Retention curves** — 7-day, 30-day, 90-day retention segmented by persona and tier
 - [ ]  **Infrastructure scaling** — Supabase performance under load, CDN cache-hit rates for SSG Wiki pages (target: < 100ms), WebGL memory on 3D Lab under concurrent sessions
 - [ ]  **Content coverage** — identify taxonomy nodes with zero Wiki articles or zero quiz items (orphan nodes in `taxonomy_tree` not referenced by `wiki_articles` or `questions`)
@@ -157,7 +157,7 @@ Feedback is not one-size-fits-all. The three personas from Discovery each have d
 | **Campus Ambassador Reports** | Structured | Weekly | B (observed) | In-person demo observations, common questions during studio sessions, competitor mentions (which review centers are students also using?), peer reactions to 3D Lab and Readiness Score |
 | **University Partner Reviews** | B2B | Monthly | C | Cohort-level usage data (anonymized), dean satisfaction score, integration requests (LMS, SIS), curriculum alignment gaps, board passing rate correlation |
 | **Facebook Group Monitoring** | Passive | Ongoing | A | Organic mentions of SlateCamp in ALE review groups (thousands of members), competitor comparisons, sentiment analysis, common complaints about existing review methods (validates our problem statement) |
-| **App Store / Play Store Reviews** | Public | Ongoing | A, B | Star ratings, written reviews (mine for feature requests and pain points), common complaint themes, comparison mentions |
+| **In-App Feedback Widget** | In-product | Ongoing | A, B | Structured submissions tied to feature_area and taxonomy_node_id; common complaint themes, feature request volume |
 | **Topnotcher SME Feedback** | Expert review | Monthly | N/A (internal) | Content accuracy audit results per `subject_area`, question quality ratings per difficulty level, taxonomy gap analysis (missing nodes), building code update alerts (NBC, PD 1096 amendments) |
 
 ### Offline Feedback Queue
@@ -498,7 +498,7 @@ Every resolved feedback item triggers a user notification. Templates are brief, 
 | **Feature Request Received** | "Thanks for the idea! We've added [feature request] to our backlog. Other users can upvote it too — the most-requested features get prioritized." |
 | **Feature Shipped** | "Remember when you asked for [feature]? It's here. Check it out: [link]." |
 
-**Notification delivery:** In-app notification banner (follows 05-Design elevation system: `--shadow-md`, `--radius-md`, `--braun-orange` accent border). No email notifications unless user opts in — respect the inbox.
+**Notification delivery:** In-app notification banner (follows 05-Design elevation system: `--shadow-md`, `--radius-md`, Camp Cobalt `#1B3FC4` accent border). No email notifications unless user opts in — respect the inbox.
 
 ---
 
@@ -565,7 +565,7 @@ Understanding the cultural dynamics of the Filipino student market is critical f
 - **Hiya (social shame):** Filipino students may avoid direct negative feedback because it feels confrontational. The feedback widget's mood picker (😤😐😊) provides an emotional buffer. Anonymous submission is available for the floating widget.
 - **Pakikisama (group harmony):** Students are more likely to share feedback in group settings (Discord, Facebook groups) than 1:1. Campus Ambassador reports capture this group-sourced insight.
 - **Barkada (friend group) dynamics:** Study groups share everything — including SlateCamp screenshots, complaints, and workarounds. The Discord community must feel like a barkada, not a corporate support forum.
-- **Parent involvement:** For the Insurance tier (₱4,999/yr), parents are often the buyers. Churn exit surveys should ask whether the decision-maker was the student or parent. Parent satisfaction is a separate feedback vector.
+- **Parent involvement:** For the Insurance tier (₱3,999 / 6 months), parents are often the buyers. Churn exit surveys should ask whether the decision-maker was the student or parent. Parent satisfaction is a separate feedback vector.
 - **Pasalubong (gift-giving) culture:** Referral rewards (extend free tier for friends) align with the cultural norm of sharing good finds with your circle. Frame as "give your barkada free access" not "earn rewards."
 - **Social media as default channel:** Filipino students will post complaints on Facebook or Twitter before using in-app support. Facebook Group Monitoring is not optional — it's the primary early warning system for viral negative sentiment.
 

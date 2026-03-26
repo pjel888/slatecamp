@@ -3,7 +3,7 @@
 Research, validation, and market intelligence for SlateCamp.
 
 > **Strategic framing:** Architecture is our *beachhead* — not our ceiling. The platform is being built from day one to support any high-stakes professional licensure exam. We start with Architecture because the spatial complexity of the ALE stress-tests every layer of the product. Once the engine works here, expansion to other PRC-regulated professions is a data migration and content licensing exercise.
-> 
+>
 
 ---
 
@@ -152,9 +152,15 @@ Architecture is the ideal first market because:
 ## 🔒 Intellectual Property — What We're Building & Protecting
 
 > Full IP documentation, patent strategy, and AIPO filing roadmap: [SlateCamp USP & Patentable IP](https://www.notion.so/SlateCamp-USP-Patentable-IP-fe9118a0440e42c5b7ea8346c461e843?pvs=21)
-> 
+>
 
 SlateCamp is not just a study app — it is a **proprietary system** built on a stack of novel algorithms, methodologies, and UX patterns. The IP is the moat. Below is a summary of the key protectable assets relevant to market positioning and funding conversations.
+
+> **UI Naming Note:** Several IP assets carry trademark names used in internal/legal docs but have student-facing labels in the UI per the Campfire brand voice guide:
+> - **Blindspot Protocol™** → displayed as **"Focus Review"** in student UI
+> - **Endurance Cycle™** → displayed as **"Extended Practice"** in student UI
+> - **Proof Simulation™** → displayed as **"Full Exam Simulation"** in student UI
+> Internal documents and IP filings retain the trademark names.
 
 ### Core Proprietary Technologies
 
@@ -163,9 +169,9 @@ SlateCamp is not just a study app — it is a **proprietary system** built on a 
 | **Readiness Score™** | Composite predictive algorithm combining Exponential Moving Average (EMA), Item Response Theory (IRT) difficulty weighting, and a Lucky Guess Detector™ to produce a single board exam pass probability score | Patent + Trade Secret | 🔴 P0 — Immediate |
 | **Lucky Guess Detector™** | Time-difficulty correlation system that withholds mastery credit for suspiciously fast correct answers and silently re-tests the topic — preventing false confidence | Patent | 🔴 P0 — Immediate |
 | **Double-Pass Auditor LLM** | Two-LLM verification pipeline where a secondary Auditor LLM fact-checks the primary AI's responses against a closed-loop vector database before delivery — the Zero-Hallucination Mandate | Patent + Trade Secret | 🔴 P0 — Immediate |
-| **Blindspot Protocol™** | Nightly automated scan of the Taxonomy Heatmap that generates targeted quiz queues from the student's weakest nodes — the system hunts what the student avoids | Patent + Trademark | 🔴 P0 — Immediate |
-| **Endurance Cycle™** | Progressive cognitive stamina training system using accuracy decay curves and 10–15% weekly session extension to build toward exam-day duration | Patent + Trademark | 🔴 P0 — Immediate |
-| **Proof Simulation™** | Competence-gated, full-fidelity exam rehearsal with cold score delivery, 24-hour delayed diagnostic, and pressure-tested Readiness Score recalibration | Patent + Trademark | 🔴 P0 — Immediate |
+| **Blindspot Protocol™** | Nightly automated scan of the Taxonomy Heatmap that generates targeted quiz queues from the student's weakest nodes — the system hunts what the student avoids. UI label: **Focus Review** | Patent + Trademark | 🔴 P0 — Immediate |
+| **Endurance Cycle™** | Progressive cognitive stamina training system using accuracy decay curves and 10–15% weekly session extension to build toward exam-day duration. UI label: **Extended Practice** | Patent + Trademark | 🔴 P0 — Immediate |
+| **Proof Simulation™** | Competence-gated, full-fidelity exam rehearsal with cold score delivery, 24-hour delayed diagnostic, and pressure-tested Readiness Score recalibration. UI label: **Full Exam Simulation** | Patent + Trademark | 🔴 P0 — Immediate |
 | **Taxonomy Heatmap™** | Real-time visual map of the entire syllabus color-coded by mastery level — each node is a topic ID driving all platform activity | Design Patent + Trade Dress | 🟡 P1 — Next quarter |
 | **Parametric 3D Sandbox** | "Learning by Breaking" — procedurally-generated 3D building model where exceeding code limits turns geometry red with inline legal citations; in-canvas spatial quizzing | Design Patent + Trade Secret | 🟡 P1 — Next quarter |
 | **Master Syllabus Taxonomy** | Complete hierarchical mapping of every testable PRC topic (Subject → Module → Topic → topic_id) with difficulty weights, prerequisite chains, and SME-validated content | Copyright + Trade Secret | 🟡 P1 — Next quarter |
@@ -182,7 +188,7 @@ The IP above was designed around the **Architecture Licensure Exam** but is **pr
 ### IP Filing Status
 
 - **Filing body:** Intellectual Property Office of the Philippines (IPOPHL) via AIPO's IP lawyers at Ateneo Blue Nest
-- **Lead assets for initial filing:** Readiness Score (EMA + IRT + Lucky Guess), Double-Pass Auditor LLM, Parametric 3D Sandbox, and the Progression Triad (Blindspot + Endurance + Proof Simulation)
+- **Lead assets for initial filing:** Readiness Score (EMA + IRT + Lucky Guess), Double-Pass Auditor LLM, Parametric 3D Sandbox, and the Progression Triad (Blindspot Protocol + Endurance Cycle + Proof Simulation)
 - **Trademark targets:** Camp Mode™, Storm Mode™, Blindspot Protocol™, Endurance Cycle™, Proof Simulation™, SlateCamp Reference Assistant™
 
 ---

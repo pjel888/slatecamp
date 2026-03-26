@@ -1,13 +1,13 @@
 # 05 — Design
 
-SlateCamp Design System v6.0 — extracted from the Master Blueprint HTML. **Light mode is the primary experience.** Dark mode is supported as a secondary theme.
+SlateCamp **Campfire** Design System — the visual and interaction language for all SlateCamp surfaces. **Light mode is the primary experience.** Dark mode is supported as a secondary theme.
 
 <aside>
 📐
 
 **Design Philosophy:** Campfire — warm, inviting, research-backed, commercially viable
 
-Every visual decision prioritizes **clarity over decoration**, **function over flair**, and **structure over style.** Transitions never exceed 150ms. Color is only used when it carries meaning.
+Every visual decision prioritizes **clarity over decoration**, **function over flair**, and **structure over style.** Transitions never exceed 300ms. Color is only used when it carries meaning.
 
 </aside>
 
@@ -15,58 +15,58 @@ Every visual decision prioritizes **clarity over decoration**, **function over f
 
 ## ☀️ Theme Strategy
 
-- **Light mode = primary.** The default experience ships in light mode — clean matte whites and aluminum grays from the Tailwind Zinc scale
+- **Light mode = primary.** The default experience ships in light mode — warm whites from the Campfire palette (`#F8F7F5` Surface Light), never Zinc-100 or pure white for page backgrounds
 - **Dark mode = supported.** Toggle via `next-themes ^0.4.6` with system preference detection
 - Never use pure black (`#000000`) or pure white (`#FFFFFF`) for backgrounds — always use the token values below
-- Text selection highlight uses the primary accent tint: `rgba(37, 99, 235, 0.15)`
+- Text selection highlight uses the Camp Cobalt tint: `rgba(27, 63, 196, 0.15)` (`--camp-cobalt-tint-2`)
 
 ---
 
-## 🎨 Color Tokens
+## 🎨 Color Tokens — Campfire Palette
 
 ### Surface Palette (Light Mode)
 
-| **Token** | **Hex** | **Tailwind** | **Usage** |
-| --- | --- | --- | --- |
-| `--surface-primary` | `#F4F4F5` | zinc-100 | Page background, sidebar background |
-| `--surface-secondary` | `#FFFFFF` | white | Card background, alternating section bg |
-| `--surface-tertiary` | `#FAFAFA` | zinc-50 | Chips, tags, subtle inset areas |
-| `--surface-elevated` | `#FFFFFF` | white | Elevated cards, modals, popovers |
-| `--surface-sunken` | `#E4E4E7` | zinc-200 | Table headers, scrollbar track, progress bar bg |
-| `--surface-sidebar` | `#F4F4F5` | zinc-100 | Left navigation sidebar |
-| `--surface-dark` | `#18181B` | zinc-900 | Dark sections (manifesto), feature number badges, footer |
-| `--surface-dark-2` | `#27272A` | zinc-800 | Dark mode secondary surface |
+| **Token** | **Hex** | **Usage** |
+| --- | --- | --- |
+| `--surface-light` | `#F8F7F5` | Page background (warm white — NOT Zinc-100) |
+| `--surface-card` | `#FFFFFF` | Card background, modal background |
+| `--surface-focused` | `#F5F7FA` | Testing interface background (cool white) |
+| `--surface-elevated` | `#FFFFFF` | Elevated cards, popovers |
+| `--surface-sunken` | `#E8EAF0` | Table headers, scrollbar track, progress bar bg |
+| `--surface-sidebar` | `#F8F7F5` | Left navigation sidebar |
+| `--surface-dark` | `#1A2332` | Dark sections (manifesto), feature badges, footer |
+| `--surface-dark-2` | `#243040` | Dark mode secondary surface |
 
 ### Ink Palette (Text Hierarchy)
 
-| **Token** | **Hex** | **Tailwind** | **Usage** |
+| **Token** | **Hex** | **Usage** |
+| --- | --- | --- |
+| `--ink-primary` | `#1A2332` | Headings, primary body text, strong emphasis |
+| `--ink-secondary` | `#4A5568` | Body text, card descriptions, table cell text |
+| `--ink-tertiary` | `#8896A7` | Section descriptions, secondary labels, nav links |
+| `--ink-placeholder` | `#B0BAC9` | Placeholder text, divider labels |
+| `--border-default` | `#D4DAE3` | Borders, chip outlines, step dot borders |
+| `--border-light` | `#E8EAF0` | Light dividers, section borders, table row borders |
+| `--ink-inverse` | `#F8F7F5` | Text on dark backgrounds |
+
+### Campfire Functional Accent Colors
+
+| **Role** | **Token** | **Hex** | **Usage** |
 | --- | --- | --- | --- |
-| `--ink-primary` | `#18181B` | zinc-900 | Headings, primary body text, strong emphasis |
-| `--ink-secondary` | `#27272A` | zinc-800 | Body text, card descriptions, table cell text |
-| `--ink-tertiary` | `#52525B` | zinc-600 | Section descriptions, secondary labels, nav links |
-| `--ink-quaternary` | `#71717A` | zinc-500 | Eyebrow labels, mono captions, stat labels |
-| `--ink-placeholder` | `#A1A1AA` | zinc-400 | Placeholder text, sidebar nav numbers, divider labels |
-| `--ink-separator` | `#D4D4D8` | zinc-300 | Borders, chip outlines, step dot borders |
-| `--ink-separator-light` | `#E4E4E7` | zinc-200 | Light dividers, section borders, table row borders |
-| `--ink-inverse` | `#F4F4F5` | zinc-100 | Text on dark backgrounds |
-
-### Functional Accent Colors
-
-| **Role** | **Token** | **Hex** | **Tailwind** | **Usage** |
-| --- | --- | --- | --- | --- |
-| **Primary** | `--primary` | `#1B3FC4` | Camp Cobalt | Primary actions, nav, links |
-| Primary Hover | `--braun-orange-hover` | `#1D4ED8` | blue-700 | Button hover, link hover |
-| Primary Light | `--braun-orange-light` | `#EFF6FF` | blue-50 | Mentor callout background, active nav tint |
-| Primary Tint | `--braun-orange-tint` | `rgba(37,99,235,0.08)` | — | Hover tint on nav, subtle highlight |
-| Primary Tint 2 | `--braun-orange-tint-2` | `rgba(37,99,235,0.15)` | — | Text selection, inline highlight `.hl` |
-| **Success** | `--braun-green` | `#16A34A` | green-600 | Mastered heatmap nodes, correct answers, pass status |
-| Success Light | `--braun-green-light` | `#F0FDF4` | green-50 | Positive voice example background |
-| **Error** | `--braun-red` | `#DC2626` | red-600 | Critical heatmap nodes, wrong answers, low scores |
-| Error Light | `--braun-red-light` | `#FEF2F2` | red-50 | Error background tint |
-| **Warning** | `--braun-amber` | `#D97706` | amber-600 | Developing heatmap nodes, mid-range scores |
-| Warning Light | `--braun-amber-light` | `#FFFBEB` | amber-50 | Warning background tint |
-| **Neutral** | `--braun-grey` | `#71717A` | zinc-500 | Unexplored heatmap nodes, disabled states |
-| Neutral Light | `--braun-grey-light` | `#F4F4F5` | zinc-100 | Grey node tag background |
+| **Primary** | `--camp-cobalt` | `#1B3FC4` | Primary actions, nav, links, active states |
+| Primary 700 | `--camp-cobalt-700` | `#1535A8` | Hover/pressed states |
+| Primary 50 | `--camp-cobalt-50` | `#EEF2FC` | Active backgrounds, tints, hover states |
+| Primary Tint | `--camp-cobalt-tint` | `rgba(27,63,196,0.08)` | Hover tint on nav, subtle highlight |
+| Primary Tint 2 | `--camp-cobalt-tint-2` | `rgba(27,63,196,0.15)` | Text selection, inline highlight `.hl` |
+| **Success** | `--emerald` | `#2D9F6F` | Mastered heatmap nodes, correct answers |
+| Success 50 | `--emerald-50` | `#EDFAF4` | Success backgrounds |
+| **Error** | `--warm-red` | `#D64545` | Critical heatmap nodes, wrong answers, low scores |
+| Error 50 | `--warm-red-50` | `#FDF0F0` | Error background tint |
+| **Warning** | `--amber` | `#D4951A` | Developing heatmap nodes, mid-range scores |
+| Warning 50 | `--amber-50` | `#FEF8ED` | Warning background tint |
+| **Info** | `--info-blue` | `#3B82C8` | Informational callouts |
+| **Neutral** | `--ink-tertiary` | `#8896A7` | Unexplored heatmap nodes, disabled states |
+| **Progress** | `--camp-orange` | `#E8853A` | Progress celebration, warm CTAs (use sparingly) |
 
 <aside>
 ⚠️
@@ -114,16 +114,17 @@ Every visual decision prioritizes **clarity over decoration**, **function over f
 
 ## 📐 Shapes & Radii
 
-Apple-style squircle radii for all interactive and container elements.
+Campfire radii are intentionally restrained — warm but not playful.
 
-| **Token** | **Value** | **Usage** |
-| --- | --- | --- |
-| `--radius-xs` | 6px | Nav links, code badges, voice examples, small tags |
-| `--radius-sm` | 10px | Brand mark, feature number badges, step dots |
-| `--radius-md` | 14px | Cards, callouts, tables, modals, heatmap wrappers |
-| `--radius-lg` | 20px | Large containers, hero sections |
-| `--radius-xl` | 28px | Full-page modals, splash screens |
-| Pill | 100px (full round) | Chips, tags, pill badges |
+| **Token** | **Value** | **Tailwind** | **Usage** |
+| --- | --- | --- | --- |
+| `--radius-xs` | 4px | `rounded` | Micro elements: badges, kbd, inline code |
+| `--radius-sm` | 6px | `rounded-sm` | Buttons, inputs, small tags, step dots |
+| `--radius-md` | 8px | `rounded-md` | Cards, callouts, tables, heatmap wrappers |
+| `--radius-lg` | 12px | `rounded-lg` | Modals, dialogs, drawers |
+| Pill | 9999px | `rounded-full` | Chips, tags, pill badges |
+
+> **Forbidden:** `rounded-xl` (16px), `rounded-2xl` (24px), `rounded-3xl` (32px) on standard elements. These are not part of the Campfire system.
 
 ---
 
@@ -220,34 +221,34 @@ Built on **shadcn/ui** (`shadcn ^4.0.0`) + **Tailwind CSS v4** + **Base UI** (`@
 ### Design System Patterns (from Blueprint CSS)
 
 - **Cards** — Elevated interactive containers
-    - Background: `--surface-elevated` (white)
-    - Border: `1px solid --ink-separator-light`
-    - Radius: `--radius-md` (14px)
-    - Shadow: `--shadow-sm` at rest → `--shadow-lg` on hover
-    - Hover: border turns `--braun-orange`, `translateY(-1px)`
-    - Transition: `--transition-max` (150ms)
+    - Background: `--surface-card` (white)
+    - Border: `1px solid --border-light`
+    - Radius: `--radius-md` (8px)
+    - Shadow: `shadow-none` at rest → `shadow-sm` on hover
+    - Hover: border turns `--camp-cobalt`, `translateY(-1px)`
+    - Transition: 150ms ease-out
     - Internal structure: `.card-tag` (mono 9px uppercase label) → `h3` (17px 700) → `p` (13.5px)
 - **Eyebrow Labels** — Section identifiers
     - Font: `--font-mono`, 10px, weight 500
-    - Color: `--braun-orange` (primary accent)
+    - Color: `--camp-cobalt` (primary accent)
     - Letter-spacing: 0.18em, uppercase
     - Preceded by a 14px accent bar (`::before`)
 - **Pull Quotes** — Highlighted text blocks
-    - Background: `--surface-elevated`
-    - Left accent bar: 4px `--braun-orange`
-    - Border: `1px solid --ink-separator-light`
-    - Radius: `--radius-md`
+    - Background: `--surface-card`
+    - Left accent bar: 4px `--camp-cobalt`
+    - Border: `1px solid --border-light`
+    - Radius: `--radius-md` (8px)
     - Text: `clamp(16px, 1.6vw, 19px)`, weight 500, italic
-    - Citation: mono 10px, uppercase, `--braun-orange`
+    - Citation: mono 10px, uppercase, `--camp-cobalt`
 - **Mentor Callouts** — Contextual guidance blocks
-    - Background: `--braun-orange-light` (blue-50)
-    - Border: `1px solid --braun-orange-tint-2`
-    - Left accent bar: 4px `--braun-orange`
-    - Icon: 20px weight 800, `--braun-orange`
+    - Background: `--camp-cobalt-50` (#EEF2FC)
+    - Border: `1px solid --camp-cobalt-tint-2`
+    - Left accent bar: 4px `--camp-cobalt`
+    - Icon: 20px weight 800, `--camp-cobalt`
     - Text: 13.5px, `--ink-secondary`
 - **Stat Cells** — Large metric displays
-    - Value: 38–56px, weight 800, `--braun-orange`, letter-spacing -0.03em
-    - Label: mono 9px, weight 500, `--ink-quaternary`, uppercase
+    - Value: 38–56px, weight 800, `--camp-cobalt`, letter-spacing -0.03em
+    - Label: mono 9px, weight 500, `--ink-tertiary`, uppercase
     - Used in bordered grid layouts with 1px gap
 - **Step Flows** — Sequential process visualization
     - Grid: `44px (indicator) | 1fr (content)`
@@ -257,15 +258,15 @@ Built on **shadcn/ui** (`shadcn ^4.0.0`) + **Tailwind CSS v4** + **Base UI** (`@
     - Description: 13px 400, `--ink-tertiary`, max-width 540px
 - **Node Tags** — Heatmap status indicators
     - Inline-flex pill with 6px dot + mono 10px label
-    - Red: `--braun-red` text on `--braun-red-tint` bg
-    - Amber: `--braun-amber` text on `--braun-amber-tint` bg
-    - Green: `--braun-green` text on `--braun-green-tint` bg
-    - Grey: `--braun-grey` text on `--braun-grey-tint` bg
+    - Red: `--warm-red` (#D64545) text on `--warm-red-50` (#FDF0F0) bg
+    - Amber: `--amber` (#D4951A) text on `--amber-50` (#FEF8ED) bg
+    - Green: `--emerald` (#2D9F6F) text on `--emerald-50` (#EDFAF4) bg
+    - Grey: `--ink-tertiary` (#8896A7) text on `--surface-light` bg
 - **Phase Cards** — GTM phase blocks
     - Grid: `60px (badge) | 1fr`
-    - Badge: 48px square, 2px `--ink-primary` border, `--radius-sm`
-    - Hover: border → `--braun-orange`, shadow → `--shadow-md`
-    - KPI block: `--surface-tertiary` bg, mono 10px, accent `--braun-orange`
+    - Badge: 48px square, 2px `--ink-primary` border, `--radius-sm` (6px)
+    - Hover: border → `--camp-cobalt`, shadow → `shadow-md`
+    - KPI block: `--surface-light` bg, mono 10px, accent `--camp-cobalt`
 
 ---
 
@@ -309,7 +310,7 @@ Built on **shadcn/ui** (`shadcn ^4.0.0`) + **Tailwind CSS v4** + **Base UI** (`@
 ::-webkit-scrollbar-thumb:hover { background: var(--ink-quaternary); }
 
 /* Text selection */
-::selection { background: var(--braun-orange-tint-2); color: var(--ink-primary); }
+::selection { background: var(--camp-cobalt-tint-2); color: var(--ink-primary); }
 ```
 
 ---
@@ -322,8 +323,8 @@ Some sections (e.g., Manifesto, Footer) use the inverted dark treatment within t
 - Eyebrow text: `rgba(255, 255, 255, 0.35)`
 - Title: `#FFFFFF`
 - Body text: `rgba(255, 255, 255, 0.75)`
-- Accent emphasis (`<em>`): `--braun-orange`
-- Pull quote: `#FFFFFF`, weight 700, left border `--braun-orange`
+- Accent emphasis (`<em>`): `--camp-cobalt-50` (#EEF2FC)
+- Pull quote: `#FFFFFF`, weight 700, left border `--camp-cobalt-50`
 - Footer tagline: `rgba(255, 255, 255, 0.35)` italic
 - Footer meta: `rgba(255, 255, 255, 0.2)` mono
 

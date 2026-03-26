@@ -9,7 +9,7 @@ The go-to-market strategy, messaging architecture, and conversion infrastructure
 <aside>
 🎯
 
-**Traditional review is chaotic guessing. SlateCamp is mathematical proof you will pass.**
+**Traditional review is chaotic guessing. SlateCamp is mathematical proof you'll win.**
 
 Every piece of copy, every ad, every onboarding screen, every push notification anchors to this single thesis. If a message does not reinforce this contrast, it does not ship.
 
@@ -46,7 +46,7 @@ Every ad, landing page, and email maps to the left column. We name the pain. The
 
 ### The Hero Message
 
-**Headline:** Know you will pass.
+**Headline:** Know you'll win.
 
 **Sub-headline:** Stop hoping you studied the right things. SlateCamp measures your exact readiness against the entire board exam syllabus — so you walk into the testing center with proof, not prayers.
 
@@ -58,7 +58,7 @@ All copy follows a strict three-layer hierarchy. Every piece of communication �
 
 **Layer 1 — The Promise (Emotional)**
 
-> Eliminate exam-day panic. Know you will pass before you sit down.
+> Eliminate exam-day panic. Know you'll win before you sit down.
 > 
 
 This is the hook. It speaks to the anxiety that keeps reviewees awake at 2 AM. It does not describe *how* we deliver the outcome. It states the outcome.
@@ -299,7 +299,7 @@ Isolation kills retention. Review season is brutal, and most students suffer alo
 - **Milestone broadcasts:** When a user turns a red node green, the server announces it. Public proof of progress.
 - **Topnotcher AMAs:** Monthly live sessions with SME topnotchers answering questions in real time.
 - **Study squads:** Self-organized groups by exam date, school, or subject focus.
-- **The Leaderboard:** Weekly Readiness Score rankings (opt-in). Competition drives engagement.
+- **Progress sharing:** Users can optionally share Readiness Score snapshots as milestones — no rankings, no leaderboards, no streaks.
 
 ### Data-Driven Push Notifications
 
@@ -307,8 +307,7 @@ Every notification references the user's own data. No generic reminders.
 
 - **Pacing alert:** "Your average time per item is 3m 15s. The ALE requires 1m 30s. At this pace, you will leave 20 items blank. Tap for a 10-item speed drill."
 - **Blind spot alert:** "You have not studied [Topic] in 14 days. Your mastery on this node has decayed to 42%. A 15-minute session repairs it."
-- **Milestone alert:** "Your Readiness Score crossed 75%. You are now in the top 30% of SlateCamp users preparing for the ALE."
-- **Streak maintenance:** "You have studied 12 days straight. Your Readiness Score has climbed 9 points this month. Do not break the chain."
+- **Progress alert:** "Your Readiness Score crossed 75%. Your Structural Design node moved from red to amber this week."
 
 ---
 
@@ -349,7 +348,7 @@ The brand earns trust by refusing to manufacture excitement. The product generat
 ### Above the Fold
 
 - **Eyebrow:** BOARD EXAM PREP
-- **H1:** Know you will pass.
+- **H1:** Know you'll win.
 - **H2:** Stop hoping you studied the right things. Cut your review time in half, eliminate blind spots, and walk into the testing center with mathematical proof that you are ready.
 - **Primary CTA:** Start your diagnostic — free.
 - **Visual:** Animated Taxonomy Heatmap transitioning from red to green over a 30-day timeline.

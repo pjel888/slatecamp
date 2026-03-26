@@ -8,7 +8,7 @@ Business model, pricing logic, and go-to-market strategy frameworks for SlateCam
 
 | **Block** | **SlateCamp** |
 | --- | --- |
-| **Value Proposition** | The single, unified study ecosystem that eliminates exam anxiety by proving readiness with data. "Know you'll pass." |
+| **Value Proposition** | The single, unified study ecosystem that eliminates exam anxiety by proving readiness with data. "Know you'll win." |
 | **Customer Segments** | B2C: ALE reviewees, architecture undergrads. B2B: University departments, review centers. |
 | **Channels** | TikTok/Reels (3D Lab videos), Campus Ambassadors, SEO syllabus content, Topnotcher SME endorsements |
 | **Revenue Streams** | Freemium → Camp tier (monthly) → Insurance tier (6-month lump). B2B institutional licensing. |
@@ -32,7 +32,7 @@ Filipino students are price-sensitive but will spend irrationally (often using p
 | --- | --- | --- | --- |
 | **Free** | ₱0 | Syllabus outline, 5 basic 3D models, 20 questions/day | The "Aha!" moment from 3D Lab + first (low) Readiness Score |
 | **Camp** | ₱499–799/mo | Full Quiz Engine, Readiness Score, Personal Notes, Wiki | Paywall after 20 daily questions; desire to track progress |
-| **Insurance** | ₱4,999 / year | Everything — AI Tutor, unlimited 3D Lab, Storm Mode mocks | Post-graduation "review season" purchase; parents as buyers |
+| **Insurance** | ₱3,999 / 6 months | Everything — AI Tutor, unlimited 3D Lab, Storm Mode mocks | Post-graduation "review season" purchase; parents as buyers |
 | **Institutional** | Bulk license | Cohort dashboard, admin controls, custom taxonomy mapping | Dean sees 70% of batch bleeding red — intervenes early |
 
 ### Payment Infrastructure
@@ -77,9 +77,9 @@ Filipino students are price-sensitive but will spend irrationally (often using p
 
 ### Middle of Funnel (Activation & Retention)
 
-- **Gamified Onboarding** — forced 10-item diagnostic quiz on signup → first Readiness Score in 60 seconds
-- **Discord Community** — milestone broadcasts, shared accountability
-- **Push Notifications** — data-driven urgency based on pacing metrics
+- **Diagnostic Onboarding** — forced 10-item diagnostic quiz on signup → first Readiness Score in 60 seconds
+- **Discord Community** — milestone broadcasts, shared accountability, topnotcher AMAs
+- **Push Notifications** — data-driven urgency based on pacing metrics and mastery decay
 
 ### Bottom of Funnel (Conversion)
 

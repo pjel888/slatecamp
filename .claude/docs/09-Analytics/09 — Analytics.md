@@ -124,10 +124,10 @@ Every node in the Master Syllabus Taxonomy — from top-level subjects (Structur
 
 | **State** | **Score Range** | **Color** | **Design Token** | **Meaning** |
 | --- | --- | --- | --- | --- |
-| Mastered | ≥ 85% | 🟢 Green | `--braun-green` (#16A34A) | Reliably competent. Revisit only if score decays below threshold. |
-| Familiar | 60–84% | 🟡 Amber | `--braun-amber` (#D97706) | Developing but not dependable. Targeted review recommended. |
-| Critical | < 59% | 🔴 Red | `--braun-red` (#DC2626) | Active vulnerability. These nodes will cost you points on exam day. |
-| Unexplored | 0 attempts | ⬜ Grey | `--braun-grey` (#71717A) | No data. Unknown risk. These are the silent threats. |
+| Mastered | ≥ 85% | 🟢 Green | `--emerald` (#2D9F6F) | Reliably competent. Revisit only if score decays below threshold. |
+| Familiar | 60–84% | 🟡 Amber | `--amber` (#D4951A) | Developing but not dependable. Targeted review recommended. |
+| Critical | < 60% | 🔴 Red | `--warm-red` (#D64545) | Active vulnerability. These nodes will cost you points on exam day. |
+| Unexplored | 0 attempts | ⬜ Grey | `--ink-tertiary` (#8896A7) | No data. Unknown risk. These are the silent threats. |
 
 Color is never decorative. Every hue maps to a semantic state defined in the Design System (05-Design). Heatmap nodes also carry text labels and patterns — color is never the sole indicator of meaning (WCAG 2.1 AA compliance).
 
@@ -197,7 +197,7 @@ The Readiness Score measures competence under normal conditions. The Proof Simul
 
 **How it works:**
 
-- Unlocked when a student has ≥ 3 green nodes (minimum viable mastery)
+- Unlocked when a student's **Readiness Score ≥ 65%** (minimum viable mastery). If below 65%, the button is grayed out with: *"Unlock Full Exam Simulation when your Readiness Score reaches 65%. Currently: [X]%."*
 - Simulates a full-length board exam section: 100+ items, strict countdown, no rationale access, no "Flag for Review" rescue
 - After submission, the system generates a **Proof Score** — the Readiness Score recalculated using only Proof Simulation data
 - The delta between the student's normal Readiness Score and their Proof Score reveals the **pressure gap** — the difference between what they know and what they can perform under stress

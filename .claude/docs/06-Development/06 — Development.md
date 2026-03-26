@@ -1,6 +1,6 @@
 # 06 — Development
 
-The comprehensive engineering handbook for **SlateCamp** (`project-cerebro v0.1.0`). Covers environment setup, package management, coding standards, Git workflow, CI/CD, and industry best practices.
+The comprehensive engineering handbook for **SlateCamp** (`slate-camp v0.1.0`). Covers environment setup, package management, coding standards, Git workflow, CI/CD, and industry best practices.
 
 <aside>
 🏕️
@@ -37,8 +37,8 @@ The comprehensive engineering handbook for **SlateCamp** (`project-cerebro v0.1.
 
 ```bash
 # 1. Clone the repository
-git clone git@github.com:your-org/project-cerebro.git
-cd project-cerebro
+git clone git@github.com:pjel888/slate-camp.git
+cd slate-camp
 
 # 2. Install dependencies with Bun (preferred)
 bun install
@@ -68,7 +68,7 @@ bun dev
 | **Metric**    | **Bun**                               | **pnpm**                         | **npm**                     |
 | ------------- | ------------------------------------- | -------------------------------- | --------------------------- |
 | Install speed | ⚡ Fastest (native, no Node overhead) | Fast (content-addressable store) | Slowest                     |
-| Lockfile      | `bun.lockb` (binary, fast parse)      | `pnpm-lock.yaml`                 | `package-lock.json`         |
+| Lockfile      | `bun.lock` (text format, fast parse) | `pnpm-lock.yaml`                 | `package-lock.json`         |
 | Disk usage    | Low                                   | Lowest (symlinked store)         | Highest (flat node_modules) |
 | Native TS     | Yes — runs `.ts` files directly       | No                               | No                          |
 | Test runner   | Built-in (`bun test`)                 | Needs external                   | Needs external              |
@@ -87,7 +87,7 @@ bun dev
 
 ### Rules
 
-- **Always commit the lockfile** (`bun.lockb`) — this ensures reproducible builds across the team
+- **Always commit the lockfile** (`bun.lock`) — this ensures reproducible builds across the team
 - **Never mix package managers** — if using Bun, do not run `npm install` or `pnpm install` in the same project; it creates conflicting lockfiles
 - **Pin critical dependencies** — use exact versions for `next`, `react`, `supabase`, and `stripe` to avoid surprise breaking changes
 - **Audit regularly** — run `bun pm audit` or `pnpm audit` before each release
@@ -626,7 +626,7 @@ Every push and PR triggers the following pipeline:
 ## 📁 Project Structure Reference
 
 ```
-project-cerebro/
+slate-camp/
 ├── src/
 │   ├── app/                    # Next.js App Router
 │   │   ├── (auth)/             # Auth pages (login, signup, reset)
@@ -670,7 +670,7 @@ project-cerebro/
 ├── .env.local                  # Local secrets (gitignored)
 ├── .eslintrc.json
 ├── .gitignore
-├── bun.lockb                   # Bun lockfile (committed)
+├── bun.lock                   # Bun lockfile (committed)
 ├── next.config.js
 ├── package.json
 ├── postcss.config.js

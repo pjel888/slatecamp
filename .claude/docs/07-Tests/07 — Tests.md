@@ -68,13 +68,16 @@ Tests live alongside the code they test, using the `.test.ts` / `.test.tsx` conv
 ```
 src/
 ├── lib/
-│   ├── scoring/
-│   │   ├── readiness-score.ts
-│   │   ├── readiness-score.test.ts      ← Unit test
-│   │   ├── ema-weighting.ts
-│   │   ├── ema-weighting.test.ts        ← Unit test
-│   │   ├── irt-calculation.ts
-│   │   └── irt-calculation.test.ts      ← Unit test
+│   ├── srs/
+│   │   ├── irt.ts                       ← IRT 2-PL model (implemented)
+│   │   ├── irt.test.ts                  ← Unit test
+│   │   ├── sm2.ts                       ← SM-2 spaced repetition (implemented)
+│   │   └── sm2.test.ts                  ← Unit test
+│   ├── actions/
+│   │   ├── mastery-actions.ts           ← EMA recalculation
+│   │   ├── mastery-actions.test.ts      ← Unit test
+│   │   ├── readiness-score-update.ts    ← Readiness Score update action
+│   │   └── readiness-score-update.test.ts
 │   ├── validations/
 │   │   ├── quiz-submission.schema.ts
 │   │   └── quiz-submission.schema.test.ts
@@ -132,7 +135,7 @@ The foundation. Fast, isolated, no network calls, no database. Test pure logic.
 
 ```tsx
 import { describe, it, expect } from 'bun:test'
-import { calculateReadinessScore } from '@/lib/scoring/readiness-score'
+import { calculateReadinessScore } from '@/lib/actions/readiness-score-update'
 
 describe('calculateReadinessScore', () => {
   it('returns 0 when no quiz history exists', () => {

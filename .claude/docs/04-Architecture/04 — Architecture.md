@@ -44,6 +44,9 @@ SlateCamp uses **Supabase** as the unified backend:
 | `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `current_mastery_weight` (EMA), `avg_time_ms`, `last_encountered` |
 | `user_notes` | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array) |
 | `wiki_embeddings` | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id` |
+| `user_global_stats` | Aggregated per-user analytics | `user_id`, `total_questions_answered`, `total_correct`, `total_time_ms`, `current_readiness_score`, `last_updated` |
+| `readiness_score_snapshots` | Historical Readiness Score time series | `snapshot_id`, `user_id`, `readiness_score`, `snapshot_date`, `node_scores` (JSONB) |
+| `notifications` | In-app notification records | `notification_id`, `user_id`, `type`, `title`, `body`, `read_at`, `created_at`, `metadata` (JSONB) |
 
 ---
 
@@ -76,7 +79,7 @@ Topic-level mastery is calculated using an Exponential Moving Average (EMA) to p
 
 ```jsx
 slatecamp/
-├── src/                    # Claude Code AI agent config
+├── .claude/                # Claude Code AI agent config
 │   ├── agents/                 # Custom AI agent definitions
 │   ├── docs/                   # Agent reference docs
 │   ├── skills/                 # Reusable AI skills
@@ -121,7 +124,7 @@ slatecamp/
 │   │   ├── auth/               # Auth UI: login forms, signup flows
 │   │   ├── dashboard/          # Dashboard: heatmap, charts, node inspector
 │   │   ├── dev/                # Dev tools: debug panels, test utilities
-│   │   ├── layouts/            # Layout shells: sidebar, header, footer
+│   │   ├── layout/             # Layout shells: sidebar, header, footer
 │   │   ├── marketing/          # Marketing pages: hero, features, CTA sections
 │   │   ├── notes/              # Notes workspace: editor, capture, cheat sheets
 │   │   ├── shared/             # Shared: modals, tooltips, loaders, error states
@@ -174,12 +177,15 @@ Components are organized by **feature domain**, not by type. Each folder is self
 | `components/auth/` | Authentication | Login forms, signup flows, onboarding quiz |
 | `components/dashboard/` | Analytics (Feature 6) | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge |
 | `components/dev/` | Developer Tools | Debug panels, test utilities, dev-only UI |
-| `components/layouts/` | App Shell | Sidebar nav, header, footer, responsive wrappers |
+| `components/layout/` | App Shell | Sidebar nav, header, footer, responsive wrappers |
 | `components/marketing/` | Marketing Pages | Hero section, feature grids, CTA blocks, testimonials |
 | `components/notes/` | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder |
 | `components/shared/` | Shared Utilities | Modals, tooltips, loaders, error boundaries, toast notifications |
 | `components/ui/` | Design System | shadcn/ui primitives (Button, Input, Dialog, Card, etc.) |
 | `components/wiki/` | Wiki (Feature 1) | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar |
+| `components/quiz-v2/` | Quiz Engine v2 (Feature 2) | `QuizShell`, `OptionsColumn`, `FeedbackPanel`, `QuizFooter`, `SetupFlow`, `ResultsDashboard`, `ResultsCTAs`, `ReviewCard`, `ReviewCardList`, `ReviewFilterBar` |
+| `components/testing/hub/` | Testing Hub | `ReviewHub` (entry point), `SessionsTable` (past sessions) |
+| `components/notifications/` | Notifications | In-app notification bell, notification list, read/unread state |
 
 ### State Management
 
