@@ -1,11 +1,9 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { ROUTES } from '@/lib/constants/routes'
-import { startSession } from '@/lib/actions/quiz-v2/start-session'
 
 interface PreviousSession {
   session_id: string
@@ -18,113 +16,66 @@ interface EnduranceSetupProps {
   previousSessions: PreviousSession[]
 }
 
-/**
- * Derives the reliable window (median question count) from past Design Endurance Training sessions.
- */
-const deriveReliableWindow = (sessions: PreviousSession[]): number | null => {
-  if (sessions.length === 0) return null
-  const counts = sessions
-    .map((s) => {
-      const qc = (s.config as { questionCount?: number } | null)?.questionCount
-      return typeof qc === 'number' ? qc : null
-    })
-    .filter((n): n is number => n !== null)
-  if (counts.length === 0) return null
-  counts.sort((a, b) => a - b)
-  const mid = Math.floor(counts.length / 2)
-  return counts.length % 2 !== 0
-    ? counts[mid]!
-    : Math.round((counts[mid - 1]! + counts[mid]!) / 2)
-}
-
-const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
-  const previousFatigueThreshold = deriveReliableWindow(previousSessions)
+const EnduranceSetup = ({ previousSessions }: EnduranceSetupProps) => {
   const router = useRouter()
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleStart = async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const result = await startSession({
-        mode: 'extended',
-        config: {
-          setup: {
-            questionCount: 100,
-            topics: [],
-            disciplines: [],
-            difficultyMode: 'static',
-            initialDifficulty: 'mixed',
-            isTrailSession: false,
-            trailDayId: null,
-          },
-        },
-      })
-      router.push(ROUTES.QUIZ_V2_SESSION('extended', result.sessionId))
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
-    } finally {
-      setLoading(false)
-    }
-  }
+  const completedCount = previousSessions.length
 
   return (
     <div className="max-w-[600px] mx-auto px-4 py-8">
       <Link
         href={ROUTES.TESTING}
-        className="inline-flex items-center text-[14px] text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors duration-150 ease-out mb-8"
+        className="inline-flex items-center text-[14px] text-[#4A5568] hover:text-[#1B3FC4] transition-colors duration-150 ease-out mb-8"
       >
         ← Back to Review
       </Link>
 
       <div className="mb-8">
-        <p className="text-[12px] font-medium uppercase tracking-wide text-[var(--muted-foreground)] mb-1">
+        <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7] mb-1">
           Exam Readiness
         </p>
-        <h1 className="text-[24px] font-semibold text-[var(--foreground)] mb-2">Design Endurance Training</h1>
-        <p className="text-[15px] text-[var(--text-secondary)] leading-relaxed">
-          Design is 40% of the ALE — and it&apos;s 3+ hours under pressure. This session monitors your accuracy in 10-question blocks to help you build your cognitive stamina window. Today&apos;s target: extend your reliable performance window by 10+ questions.
+        <h1 className="text-[24px] font-semibold text-[#1A2332] mb-2">Design Endurance Training</h1>
+        <p className="text-[15px] text-[#4A5568] leading-relaxed">
+          Design is 40% of the ALE — and it&apos;s 3+ hours of scenario-based computation under pressure.
+          Each scenario gives you a building brief with site data, then walks you through development
+          controls calculations with hidden traps that mirror the real exam.
         </p>
       </div>
 
-      <div className="space-y-8">
-        {previousFatigueThreshold !== null && (
-          <div className="rounded-md border border-[var(--border)] bg-[var(--slate-blue-50)] px-4 py-4">
-            <p className="text-[13px] font-medium text-[var(--text-secondary)] mb-1">
-              Design Window from last session
+      <div className="space-y-6">
+        {completedCount > 0 && (
+          <div className="rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-4 py-4">
+            <p className="text-[13px] font-medium text-[#4A5568] mb-1">
+              Progress
             </p>
-            <p className="text-[14px] text-[var(--foreground)]">
-              Your reliable performance window was around{' '}
-              <span className="font-medium">{previousFatigueThreshold} questions</span>. Target: {previousFatigueThreshold + 10}+ today.
-            </p>
-            <p className="mt-1 text-[12px] text-[var(--muted-foreground)]">
-              Each session builds your stamina for the 3+ hour Design exam section.
+            <p className="text-[14px] text-[#1A2332]">
+              You&apos;ve completed{' '}
+              <span className="font-medium">{completedCount} scenario sessions</span>.
+              Each one builds your computation speed and trap awareness.
             </p>
           </div>
         )}
 
-        <div className="rounded-md bg-surface-light border border-[var(--border)] px-4 py-4">
-          <p className="text-[14px] text-[var(--text-secondary)] leading-relaxed">
-            You&apos;ll receive immediate feedback throughout. The session ends at 100 questions
-            unless you choose to stop earlier.
+        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-4">
+          <p className="text-[14px] text-[#4A5568] leading-relaxed mb-3">
+            12 design scenarios available — from single-family residence (foundational)
+            to mixed-use high-rise (advanced). Each includes:
           </p>
+          <ul className="text-[13px] text-[#4A5568] space-y-1.5 ml-4 list-disc">
+            <li>Full building brief with site data and program</li>
+            <li>Step-by-step computation questions (PSO, AMBF, TGFA, FLAR, etc.)</li>
+            <li>Hidden traps that cascade across questions — just like the real ALE</li>
+            <li>Solution breakdowns with code citations after each answer</li>
+          </ul>
         </div>
 
-        {error && (
-          <p className="text-sm text-destructive text-center" role="alert">
-            {error}
-          </p>
-        )}
         <Button
           variant="warmCta"
           size="lg"
           fullWidth
-          loading={loading}
-          onClick={handleStart}
+          onClick={() => router.push('/dashboard/area-c/design-quiz')}
           className="rounded-sm"
         >
-          Start Design Training
+          Choose a Scenario
         </Button>
       </div>
     </div>
