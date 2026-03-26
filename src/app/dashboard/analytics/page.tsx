@@ -10,6 +10,12 @@ import { RadarSection } from '@/components/analytics/RadarSection'
 import { MemorySection } from '@/components/analytics/MemorySection'
 import { PacingInsightsSection } from '@/components/analytics/PacingInsightsSection'
 import { TimelineHeatmapSection } from '@/components/analytics/TimelineHeatmapSection'
+import { AccuracyBySubjectSection } from '@/components/analytics/AccuracyBySubjectSection'
+import { TimeSpentDistributionSection } from '@/components/analytics/TimeSpentDistributionSection'
+import { SessionHistorySection } from '@/components/analytics/SessionHistorySection'
+import { ConfidenceCalibrationSection } from '@/components/analytics/ConfidenceCalibrationSection'
+import { WeakestTopicsSection } from '@/components/analytics/WeakestTopicsSection'
+import { StudyStreakCalendarSection } from '@/components/analytics/StudyStreakCalendarSection'
 
 export default function AnalyticsPage() {
   return (
@@ -29,6 +35,11 @@ export default function AnalyticsPage() {
         <ReadinessSection />
       </Suspense>
 
+      {/* Session Performance Over Time */}
+      <Suspense fallback={<ChartSkeleton height="h-[260px]" />}>
+        <SessionHistorySection />
+      </Suspense>
+
       {/* Pacing Quadrant (signature) + Stamina Curve */}
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-2">
         <div className="xl:col-span-7">
@@ -43,6 +54,16 @@ export default function AnalyticsPage() {
         </div>
       </div>
 
+      {/* Accuracy by Subject + Response Time Distribution */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <Suspense fallback={<ChartSkeleton height="h-[280px]" />}>
+          <AccuracyBySubjectSection />
+        </Suspense>
+        <Suspense fallback={<ChartSkeleton height="h-[280px]" />}>
+          <TimeSpentDistributionSection />
+        </Suspense>
+      </div>
+
       {/* Subject Radar + Memory Health + Pacing Insights */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         <Suspense fallback={<ChartSkeleton height="h-[320px]" />}>
@@ -55,6 +76,21 @@ export default function AnalyticsPage() {
           <PacingInsightsSection />
         </Suspense>
       </div>
+
+      {/* Confidence Calibration + Study Activity Calendar */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <Suspense fallback={<ChartSkeleton height="h-[280px]" />}>
+          <ConfidenceCalibrationSection />
+        </Suspense>
+        <Suspense fallback={<ChartSkeleton height="h-[280px]" />}>
+          <StudyStreakCalendarSection />
+        </Suspense>
+      </div>
+
+      {/* Topics to Focus On */}
+      <Suspense fallback={<ChartSkeleton height="h-[320px]" />}>
+        <WeakestTopicsSection />
+      </Suspense>
     </div>
   )
 }
