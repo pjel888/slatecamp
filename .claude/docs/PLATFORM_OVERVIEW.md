@@ -1,106 +1,162 @@
-# Technical & Business Audit: SlateCamp (Slate Camp)
+# Technical & Business Audit: SlateCamp
 
-**Date:** March 16, 2026
-**Role:** Elite CTO / Technical Due Diligence Auditor
-**Status:** **[FINAL REPORT]**
+**Date:** March 26, 2026
+**Status:** **[UPDATED — reflects current codebase state]**
 
 ---
 
 ## 1. Business Overview
 
-**SlateCamp** (Slate Camp) is a high-fidelity, AI-integrated educational SaaS platform specifically engineered for high-stakes professional certification and board exam preparation (e.g., medical, legal, or specialized engineering).
+**SlateCamp** is a high-fidelity, AI-integrated educational SaaS platform engineered for the Philippine Architecture Licensure Exam (ALE). Architecture is the beachhead market; the platform is built to expand to any PRC-regulated profession.
 
-- **Target Audience:** Professionals requiring deep domain mastery and spatial understanding of complex subjects.
-- **Core Value Proposition:** Transitioning study from passive memorization to active mastery through a "Socratic" learning loop, spatial 3D visualization, and data-driven readiness scoring.
-- **Revenue Model:** Tiered subscription (Free, Camp, Insurance, Institutional) managed via Stripe and PayRex.
-
----
-
-## 2. The Tech Stack (Next.js 16 Architecture)
-
-An exhaustive inventory of the frontend, backend, and infrastructure libraries.
-
-| Layer               | Technologies                                                            |
-| :------------------ | :---------------------------------------------------------------------- |
-| **Framework**       | Next.js 16 (App Router), React 19 (Server Components, Actions)          |
-| **Database**        | Supabase (PostgreSQL) with `pg_graphql`, `pgjwt`, and custom extensions |
-| **Authentication**  | Supabase Auth with SSR support (`@supabase/ssr`)                        |
-| **Styling**         | Tailwind CSS 4.0, `@tailwindcss/typography`, Framer Motion (Animations) |
-| **3D Rendering**    | Three.js, `@react-three/fiber`, `@react-three/drei` (The "3D Lab")      |
-| **Editor/Wiki**     | Tiptap (Headless Rich Text), `katex` (Math), `marked` (Markdown)        |
-| **AI Integration**  | Anthropic SDK (Claude), RAG-enhanced Socratic Tutoring                  |
-| **Payments**        | Stripe (Global), Payrex (Regional/Alternative)                          |
-| **Data/Validation** | Zod (Schema), PapaParse (CSV Import), PDF-Parse                         |
+- **Target Audience:** ALE reviewees, returning reviewers, architecture undergraduates, DAE apprentices, practicing architects.
+- **Core Value Proposition:** Transitioning study from passive memorization to active mastery through adaptive quizzing, spatial 3D visualization, and data-driven readiness scoring. "Know you'll win."
+- **Revenue Model:** Tiered subscription (Free, Camp ₱499-799/mo, Insurance ₱3,999/6mo, Institutional bulk) managed via Stripe (international) and PayRex (Philippines — GCash, Maya, bank transfers).
 
 ---
 
-## 3. Core Features & Functional Architecture
+## 2. Tech Stack
 
-### **A. Testing Hub & Learning Science**
+| Layer | Technologies |
+|---|---|
+| **Framework** | Next.js App Router, React 19 (Server Components, Server Actions) |
+| **Styling** | Tailwind CSS 4, shadcn/ui, Phosphor Icons |
+| **Database** | Supabase (PostgreSQL 17, ap-northeast-1) with RLS, pgvector, Realtime |
+| **Authentication** | Supabase Auth with SSR (`@supabase/ssr`) |
+| **3D Rendering** | Three.js, @react-three/fiber, @react-three/drei |
+| **Editor** | Tiptap (notes), MDX (wiki) |
+| **Charts** | Recharts |
+| **AI** | Anthropic SDK (Claude), RAG pipeline |
+| **Payments** | Stripe (global) + PayRex (Philippines) |
+| **Validation** | Zod |
+| **State** | Zustand (quiz, lab, notifications) |
+| **Package Manager** | Bun (`bun.lock`) |
+| **Deployment** | Vercel |
+| **Design System** | Campfire |
 
-- **Adaptive Quiz Modes:** Includes `Camp` (standard), `Storm` (rapid fire), `Focus Review` (weak domains — IP name: Blindspot Protocol™), `Full Exam Simulation` (IP name: Proof Simulation™), and `Extended Practice` (IP name: Endurance Cycle™).
-- **Item Response Theory (IRT):** Dynamically selects questions based on user ability ($\theta$) and question discrimination ($a$) / difficulty ($b$). Implemented in `src/lib/srs/irt.ts`.
-- **Spaced Repetition (SRS):** A modified SM-2 algorithm that weighs response time and user confidence to schedule review intervals. Implemented in `src/lib/srs/sm2.ts`.
+---
 
-### **B. Spatial Knowledge & 3D Lab**
+## 3. Core Features (What's Built)
 
-- **Interactive 3D Assets:** GLTF/GLB models with custom `spatial_hotspots` linked to the taxonomy tree.
-- **Contextual Wiki:** A massive hierarchical Knowledge Wiki (6-level taxonomy) where articles are status-tracked (`draft`, `published`, `review`).
+### A. Quiz Engine v2 (9 Modes)
 
-### **C. Management & Productivity**
+The primary product surface. Config-driven via `QuizSessionConfig` JSONB — a single `QuizShell` component handles all 9 modes:
 
-- **Note Engine:** A folder-based note-taking system with Tiptap integration, allowing users to link notes to specific taxonomy nodes.
-- **Admin Suite:** Robust tools for Taxonomy management, Question bank auditing, 3D asset status monitoring, and Audit logging for security compliance.
+| Mode | Questions | Feedback | Purpose |
+|---|---|---|---|
+| Camp | 20 | Immediate | Guided daily study |
+| Chill | 10 | Immediate, skip-friendly | Low-pressure practice |
+| Subject | 15 | Immediate, adaptive | Single-subject deep dive |
+| Focused | 15 | Immediate | Weakest areas (data-driven) |
+| Custom | User picks | User picks | Full control |
+| Storm | 50 | Deferred (60min timed) | Exam simulation |
+| Full Exam | 200 | 24hr delayed (4hr timed) | ALE simulation |
+| Extended | 100 | Immediate | Stamina training |
+| Article Review | 5 | Immediate | Wiki-integrated |
+
+**Key components:** `QuizShell`, `OptionsColumn`, `FeedbackPanel`, `QuizFooter`, `SetupFlow`, `ResultsDashboard`, `ReviewCardList`
+
+**Algorithms:** IRT 2PL question selection, adaptive difficulty, EMA mastery, SM-2 spaced repetition, confidence calibration, stamina analysis
+
+### B. Readiness Score
+
+Anti-inflation scoring with 6 vectors: diminishing streak returns, difficulty ceiling (70/82), grey node penalty, Bloom's cognitive ceiling (75/87), question bank depth weight, recency decay (30-day half-life). PRC area-weighted: 30/30/40.
+
+**Implementation:** `src/lib/readiness-score.ts` (pure function), `src/lib/actions/readiness-score-update.ts` (DB wiring)
+
+### C. Knowledge Wiki
+
+Taxonomy-mapped articles with MDX rendering, 9-type WikiItemRenderer (heading, fact, definition, formula, code_provision, detail, exam_tip, cross_ref, warning), interactive widgets (BP-344, DSGN-013), elaborative interrogation prompts, inline quizzes, bookmarks, read tracking, full-text search.
+
+### D. 3D Learning Lab
+
+React Three Fiber canvas with hotspot annotations linked to taxonomy. Guided + free exploration modes. Parametric controls (slider-based dimension adjustment), compliance state visualization, cross-section/exploded views, quiz mode within lab.
+
+### E. Camp Trails (Guided Study Plans)
+
+Trail types: time-gated, subject mastery, code deep-dive, remediation, exam simulation. Day-by-day structure with steps (quiz/wiki/lab/review). Enrollment tracking, streak management, missed day handling, score trajectory.
+
+### F. Analytics Dashboard
+
+Pacing Quadrant, Readiness Trajectory, Stamina Curve, Timeline Heatmap, Memory Health Map, Bloom Cognitive Tracker. Chart coaching annotations for pedagogical context.
+
+### G. Additional Features
+
+- **Flash Cards** — DB-driven from question bank, category browse, swipe/keyboard
+- **Cram Card** — Auto-generated from wrong-answer patterns (20-session gate)
+- **Design Practice** — Calculator (PD 1096/BP 344), Design Problems (5 levels, timer, BP 344 checklist), Design Quiz (12 scenario-based computation quizzes)
+- **Notes** — Rich Tiptap editor with folder organization, contextual anchoring to taxonomy
+- **Notifications** — 12 types, real-time via Supabase Realtime, preferences, quiet hours
+- **SRS** — SM-2 spaced repetition cards with due scheduling
+- **Onboarding** — Multi-path: first-taker, returning reviewer, undergrad, DAE, comp exam bridge
+- **Results Day** — Passer/non-passer flows, social sharing, professional mode transition
+- **Study Pods** — Group accountability (max 6), score deltas (never absolute scores)
+- **Code Updates** — Building code changelog feed
+- **Assessment** — Diagnostic quiz + score reveal ceremony
+
+### H. Admin & Business
+
+- **CMS** — Unified content editor (articles + questions + EI prompts), taxonomy editor, pipeline management, SME review queue
+- **CEO Dashboard** — Financial (MRR, ARR, burn, runway), unit economics (CAC, LTV, churn), cohort retention, team management
+- **Developer Hub** — Component registry, design system docs, API reference, DB viewer, test data tools
+- **Payments** — Stripe + PayRex with paywall gating, daily question cap for free tier
 
 ---
 
 ## 4. Proprietary IP & Algorithms
 
-### **I. Adaptive Scoring Engine (IRT & Mastery)**
+### I. IRT 2PL Model (`src/lib/srs/irt.ts`)
+Selects questions at the optimal challenge point (P ≈ 0.75). Updates user theta via Newton-Raphson step. **Status: Implemented and live.**
 
-Located in `src/lib/srs/irt.ts`, the platform utilizes a **2-Parameter Logistic (2PL) Model**. It calculates the probability of a correct answer and updates the user's "Theta" (ability score) using an information-weighted delta function.
+### II. SM-2 with Response-Time Weighting (`src/lib/srs/sm2.ts`)
+Quality calculation based on correctness, latency, and confidence. Adjusts ease factor and review intervals. **Status: Implemented and live.**
 
-- **IP Goal:** Ensures users are always challenged at the "Goldilocks Zone" ($P \approx 0.75$) of learning.
-- **Status (March 2026):** Implemented and live.
+### III. Readiness Score Engine (`src/lib/readiness-score.ts`)
+6-vector anti-inflation composite. PRC area-weighted (30/30/40). **Status: Implemented and live.**
 
-### **II. Modified SM-2 (Response-Time Weighted SRS)**
-
-Located in `src/lib/srs/sm2.ts`, the SRS engine doesn't just look at "Correct/Incorrect." It calculates "Quality" based on:
-
-1. **Correctness:** Binary pass/fail.
-2. **Latency:** Faster responses indicate higher "fluency" and result in longer intervals.
-3. **Confidence:** User-reported certainty ("Know" vs "Unsure") adjusts the Ease Factor ($EF$).
-
-- **Status (March 2026):** Implemented and live.
-
-### **III. Socratic AI Tutor**
-
-A prompt-engineered anti-hallucination pipeline (`src/lib/ai/prompts.ts`) that forces the AI to act as a Socratic guide.
-
-- **Logic:** Reference RAG context (uploaded study materials) + student's "weak domains" + past performance to ask one guiding question at a time without revealing the answer.
+### IV. Pending IP Features
+- [ ] Lucky Guess Detector (time-threshold penalty on suspiciously fast correct answers)
+- [ ] Double-Pass LLM Verification (generator + auditor for zero-hallucination AI tutor)
+- [ ] 3D Bounds Breaking (visual code violation feedback with Warm Red material)
 
 ---
 
-## 5. UX/UI Design System: "Campfire"
+## 5. Design System: Campfire
 
-The design system is **Campfire** — warm, inviting, and research-backed. Clean and functional with subtle warmth, Inter typeface, and a warm-white palette anchored by Camp Cobalt (#1B3FC4).
+Warm, inviting, research-backed. Light mode primary. Inter typeface. Camp Cobalt `#1B3FC4` primary accent.
 
-- **Color Palette:** Campfire tokens — `Camp Cobalt` (#1B3FC4), `Emerald` (#2D9F6F), `Warm Red` (#D64545), `Amber` (#D4951A), `Surface Light` (#F8F7F5), `Ink Primary` (#1A2332), with matching `-50` tints for semantic backgrounds.
-- **Typography:** Inter sans-serif hierarchy with `Ink Primary` through `Ink Tertiary` semantic roles. Monospace only for code, data values, and the Readiness Score number.
-- **Component Architecture:**
-  - **Tactile Feedback:** Instant scale transforms ($0.98$) on all interactive elements for a "physical" click feel.
-  - **Navigation:** Transition-aware links with `data-pending` states for zero-perceived-latency UI.
-  - **Radii:** `rounded-md` (8px) for cards, `rounded-sm` (6px) for buttons/inputs, `rounded-lg` (12px) for modals. No `rounded-xl` or larger on standard elements.
+| Token | Hex | Usage |
+|---|---|---|
+| Camp Cobalt | `#1B3FC4` | Primary actions, nav, links |
+| Emerald | `#2D9F6F` | Success, correct |
+| Warm Red | `#D64545` | Error, critical |
+| Amber | `#D4951A` | Warning |
+| Surface Light | `#F8F7F5` | Page background (warm white) |
+| Ink Primary | `#1A2332` | Main text |
+
+- Cards: `rounded-md shadow-none`, Buttons: `rounded-sm`, Modals: `rounded-lg`
+- Transitions: max 300ms. No gamification. No shame language.
 
 ---
 
-## 6. Strategic Business Findings
+## 6. Database
 
-1. **Data Integrity:** The database uses strict RLS (Row Level Security) and triggers for `updated_at` consistency.
-2. **Scalability:** The use of Supabase + Next.js Server Actions allows for a thin client and heavy lifting on the server/database layer.
-3. **Moat:** The combination of a proprietary 6-level taxonomy linked across 3D models, Wiki articles, and IRT-based questions creates a massive barrier to entry for competitors.
+**64 tables** in production (PostgreSQL 17, Supabase). Full schema in `DATABASE_SCHEMA.sql`.
+
+Key tables: `profiles` (PK: `id`), `taxonomy_tree`, `questions`, `quiz_sessions`, `user_interactions`, `user_node_mastery`, `user_global_stats`, `readiness_score_snapshots`, `wiki_articles`, `notifications`, `camp_trails`, `design_problems`, `study_pods`, `notes`.
+
+All tables have RLS enabled. `profiles` PK is `id` (NOT `user_id`).
+
+---
+
+## 7. Strategic Position
+
+1. **Data Integrity:** Strict RLS, triggers for `updated_at` consistency, 64 tables with comprehensive indexing.
+2. **Scalability:** Supabase + Server Actions architecture with parallel data fetching (16 concurrent queries on dashboard).
+3. **Moat:** Integrated loop (Wiki + Quiz + 3D + AI + Notes + Analytics + Trails) across a proprietary 6-level taxonomy. Network effects from study pods and community. Design quiz scenarios that no competitor has.
+4. **Philippines-first:** PayRex for GCash/Maya, culturally sensitive UX (no shame language, retaker support), ALE-specific content.
 
 ---
 
 **End of Audit Report.**
-_This document serves as the Source of Truth for future development cycles._
+_For detailed architecture, see `CURRENT_ARCHITECTURE.md`. For design tokens, see `05 — Design.md`._
