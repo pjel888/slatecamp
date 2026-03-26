@@ -20,8 +20,8 @@ description: Extracts repeated or large UI blocks into focused, reusable compone
 
 ### 2. Types
 
-- Define props interfaces in the component file, or in `src/types/` (e.g. `src/types/components.ts` or `src/types/app.ts`) when shared across features.
-- No `any`; use existing types from `src/types/app.ts` and Supabase where applicable.
+- Define props interfaces in the component file, or in `src/types/` (e.g. `src/types/dashboard.ts`, `src/types/app.ts`, or `src/types/quiz-config.ts`) when shared across features.
+- No `any`; use existing types from `src/types/` and Supabase where applicable.
 
 ### 3. Design
 

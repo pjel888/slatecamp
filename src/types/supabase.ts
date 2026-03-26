@@ -91,6 +91,7 @@ export type Database = {
           pre_queue_mastery: Json | null
           question_count: number | null
           queue_id: string
+          recommendation_type: string | null
           session_id: string | null
           status: string | null
           user_id: string
@@ -105,6 +106,7 @@ export type Database = {
           pre_queue_mastery?: Json | null
           question_count?: number | null
           queue_id?: string
+          recommendation_type?: string | null
           session_id?: string | null
           status?: string | null
           user_id: string
@@ -119,6 +121,7 @@ export type Database = {
           pre_queue_mastery?: Json | null
           question_count?: number | null
           queue_id?: string
+          recommendation_type?: string | null
           session_id?: string | null
           status?: string | null
           user_id?: string
@@ -1186,6 +1189,8 @@ export type Database = {
           comp_exam_date: string | null
           comp_exam_scores: Json | null
           created_at: string | null
+          dae_contexts_updated_at: string | null
+          dae_work_contexts: string[] | null
           discipline_id: string | null
           display_name: string | null
           enrolled_review_center: string | null
@@ -1209,6 +1214,8 @@ export type Database = {
           comp_exam_date?: string | null
           comp_exam_scores?: Json | null
           created_at?: string | null
+          dae_contexts_updated_at?: string | null
+          dae_work_contexts?: string[] | null
           discipline_id?: string | null
           display_name?: string | null
           enrolled_review_center?: string | null
@@ -1232,6 +1239,8 @@ export type Database = {
           comp_exam_date?: string | null
           comp_exam_scores?: Json | null
           created_at?: string | null
+          dae_contexts_updated_at?: string | null
+          dae_work_contexts?: string[] | null
           discipline_id?: string | null
           display_name?: string | null
           enrolled_review_center?: string | null
@@ -1573,6 +1582,7 @@ export type Database = {
         Row: {
           created_at: string
           created_by: string | null
+          invite_code: string | null
           max_members: number
           pod_id: string
           pod_name: string | null
@@ -1580,6 +1590,7 @@ export type Database = {
         Insert: {
           created_at?: string
           created_by?: string | null
+          invite_code?: string | null
           max_members?: number
           pod_id?: string
           pod_name?: string | null
@@ -1587,6 +1598,7 @@ export type Database = {
         Update: {
           created_at?: string
           created_by?: string | null
+          invite_code?: string | null
           max_members?: number
           pod_id?: string
           pod_name?: string | null
@@ -3797,4 +3809,3 @@ export const Constants = {
     },
   },
 } as const
-

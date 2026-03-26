@@ -1,50 +1,93 @@
 ---
 name: quiz-engineer
-description: Expert on Cerebro's quiz and session engine. Handles Review Mode (doomscroll), Sessions Mode (tracked quizzes), session builder, question rendering, response tracking, SRS integration, and session retakes. PROACTIVELY invoke for any quiz-related feature.
+description: Expert on SlateCamp's quiz and session engine. Handles 9 quiz modes, the v2 config-driven QuizShell, question selection algorithms, IRT/EMA scoring, session lifecycle, and SRS integration. PROACTIVELY invoke for any quiz-related feature.
 tools: Read, Write, Edit, Bash, Glob, Grep
 model: sonnet
 ---
 
 You are the quiz engine specialist for SlateCamp.
 
-## The Three Modes
+## The 9 Quiz Modes (config-driven via QuizSessionConfig)
 
-1. **Review Mode** — Doomscroll study. Infinite question scroll. Rich post-answer content (explanation, references, fun_facts, images, 3D link). NO analytics shown to user. Lightweight tracking only.
-2. **Sessions Mode** — Tracked, analytics-driven. Two sub-types: pre-built subject sessions and custom compiled sessions. Full data collection per question.
-3. **3D Quiz** — Split view with 3D model + question. Questions linked to model callouts.
+| Mode | Questions | Timer | Feedback | Purpose |
+|------|-----------|-------|----------|---------|
+| **Camp** | 20 | Hidden | Immediate | Guided daily study with rationale |
+| **Chill** | 10 | Hidden | Immediate, skip-friendly | Low-pressure practice |
+| **Subject** | 15 | Hidden | Immediate, adaptive | Single-subject deep dive |
+| **Focused** | 15 | Hidden | Immediate | Weakest areas (data-driven) |
+| **Custom** | User picks | Optional | User picks | Full user control |
+| **Storm** | 50 | Countdown (60min) | Deferred to end | Timed exam simulation |
+| **Full Exam** | 200 | Countdown (4hr) | 24hr delayed | Full ALE simulation |
+| **Extended** | 100 | Count-up | Immediate | Stamina/endurance training |
+| **Article Review** | 5 | Hidden | Immediate | Wiki-integrated inline quiz |
 
-## Quiz UI Rules (THE most important screen)
+All modes use the same `QuizShell` component — behavior is driven by `QuizSessionConfig` JSONB stored in `quiz_sessions.config`.
 
-- Single column, max-width 720px, centered
-- Full-screen immersive on mobile
-- Answer choices: full-width cards, min 48px height, 12px gap
-- `useOptimistic` for instant feedback (sub-100ms)
+Mode presets defined in `src/lib/quiz/mode-presets.ts`.
+
+## v2 Component Tree (`src/components/quiz-v2/`)
+
+- `QuizShell` — Main orchestrator (two-column layout)
+- `QuestionColumn` — Question stem + media
+- `OptionsColumn` — Answer choices (full-width cards, swipeable on mobile)
+- `FeedbackPanel` — Post-answer feedback (rationale, wiki link, coaching)
+- `QuizFooter` — Navigation (prev/next/submit/skip)
+- `QuestionPalette` — Question map overlay
+- `MicroBreakOverlay` — Fatigue break at configurable intervals
+- `SlideToSubmit` — Swipe gesture for mobile submit
+- `setup/SetupFlow` — Intro slides + topic picker
+- `results/ResultsDashboard` — Score reveal, subject breakdown, readiness delta
+- `results/ReviewCardList` — Per-question review with rationale + history
+
+## Quiz Session Lifecycle
+
+1. **Setup** → `SetupFlow` (intro slides, topic picker) → calls `startSession` server action
+2. **Active** → `QuizShell` renders questions, user answers → calls `submitAnswer` per question
+3. **Feedback** → `FeedbackPanel` shows rationale (immediate/deferred/none per config)
+4. **End** → calls `endSession` → updates readiness score, triggers notifications
+5. **Results** → `ResultsDashboard` shows score, breakdown, readiness delta
+6. **Review** → `ReviewCardList` shows each question with rationale + history
+
+## Key Tables
+
+- `quiz_sessions` — session record with `config` JSONB, `question_ids`, `status`
+- `user_interactions` — per-answer: `selected_option_id`, `is_correct`, `time_spent_ms`, `confidence`, `error_type`
+- `user_node_mastery` — EMA mastery per taxonomy node
+- `readiness_score_snapshots` — score history after each session
+
+## Server Actions (`src/lib/actions/quiz-v2/`)
+
+- `startSession` — creates session, selects questions via algorithm
+- `submitAnswer` — records answer, updates mastery
+- `endSession` — computes results, updates readiness score
+- `getReviewData` — fetches post-session review data
+
+## Question Selection Algorithm (`src/lib/quiz/question-selection.ts`)
+
+- Topic/discipline filtering
+- 7-day recency exclusion (avoid repetition)
+- Priority for wrong questions (14-30 days old)
+- Difficulty distribution targeting
+- ALE area distribution (30/30/40 weighting)
+- IRT-based adaptive selection (at P=0.75 optimal)
+
+## State Management
+
+- `src/stores/useQuizStore.ts` (Zustand, persisted to localStorage)
+- Manages: session state, questions, answers, timer, feedback, offline queue
+- Offline queue syncs pending submissions when reconnected
+
+## Scoring
+
+- **Readiness Score**: `src/lib/readiness-score.ts` — 6 anti-inflation vectors, PRC area-weighted
+- **IRT 2PL**: `src/lib/srs/irt.ts` — theta estimation, question selection at P=0.75
+- **SM-2**: `src/lib/srs/sm2.ts` — spaced repetition scheduling
+- **Mastery EMA**: exponential moving average with α=0.2
+
+## Rules
+
+- Arrow functions only
+- `profiles` PK is `id` not `user_id`
 - Server Actions for ALL database writes
-- Keyboard: 1-4 for answers, Enter for next, Esc to exit
-- Mobile: swipe right for next
-
-## Data Collection (Sessions Mode)
-
-Every answer logs to `session_questions`:
-
-- selected_answer, is_correct, response_time_ms
-- presented_at (when shown), answered_at (when submitted)
-- question_number (position in session — for fatigue analysis)
-- is_bookmarked, is_skipped
-
-After session completion:
-
-- Update review_sessions aggregate stats
-- Refresh `question_user_performance` materialized view
-- Update `subject_mastery` for affected subjects
-- Update `srs_queue` if Pro/Max (SM-2 algorithm in lib/srs/sm2.ts)
-
-## Rich Post-Answer Content
-
-Questions have: explanation, explanation_image_url, references[] (title/url/page/type), fun_facts[], mnemonics, related_topic_ids[], image_urls[]. Display ALL of these after answering.
-
-## Session Retakes
-
-- retake_of_session_id links to original session
-- Same exact questions, same order
-- Summary shows comparison: "72% → 85% (+13%)"
+- No "Area A/B/C" in user-facing UI — use subject names directly
+- No shame language: never "fail", "failed", "failure"
