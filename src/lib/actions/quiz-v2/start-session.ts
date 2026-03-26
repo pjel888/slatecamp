@@ -186,10 +186,11 @@ export const startSession = async (
     // Safe for .in() URL param (under ~16KB header limit)
     questionQuery = questionQuery.in('topic_id', topicIds)
   } else if (filterByDisciplineId) {
-    // Large set or discipline-level filter — get topic IDs for the discipline
-    // and use a more targeted approach: fetch questions that belong to any topic
-    // under this discipline. Since questions reference topic_id (leaf nodes),
-    // we need the leaf node IDs, but we'll query in batches to avoid overflow.
+    // Large discipline-level filter — fetching all leaf node IDs then using .in()
+    // overflows Supabase's 16KB header limit (~200+ UUIDs).
+    // Instead: fetch leaf node IDs for JS-side filtering AFTER the query.
+    // The question query runs without a topic filter (fetches extras), then we
+    // filter to only questions belonging to this discipline's leaf nodes.
     const { data: leafNodes } = await supabase
       .from('taxonomy_tree')
       .select('node_id')
@@ -198,10 +199,9 @@ export const startSession = async (
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
 
-    const batchIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
-    if (batchIds.length > 0) {
-      questionQuery = questionQuery.in('topic_id', batchIds)
-    }
+    // Store for post-query JS filtering instead of .in() URL param
+    topicIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
+    // DON'T add .in() to the query — filter in step 6 below
   }
   // else: no filter — query all questions (Camp/mixed mode default)
 
@@ -216,7 +216,12 @@ export const startSession = async (
   if (qError) throw qError
 
   // 6. Exclude recently seen, shuffle, cap at questionCount
-  const allQuestions = rawQuestions ?? []
+  // If topicIds were set but NOT passed to .in() (discipline-level filter to avoid
+  // header overflow), filter in JS now.
+  const topicIdSet = topicIds.length > 100 ? new Set(topicIds) : null
+  const allQuestions = topicIdSet
+    ? (rawQuestions ?? []).filter((q: { topic_id: string }) => topicIdSet.has(q.topic_id))
+    : (rawQuestions ?? [])
   const recentSet = new Set(recentQuestionIds)
 
   const fresh = allQuestions.filter(

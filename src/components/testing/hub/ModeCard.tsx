@@ -199,21 +199,26 @@ const ModeCard = ({
         </div>
       )}
 
-      {/* CTA button — always visible, disabled state when locked */}
-      <span
-        className={cn(
-          'inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out mt-auto',
-          isLocked
-            ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
-            : isZone3
-              ? 'bg-[var(--accent)] text-white'
-              : 'bg-[var(--primary)] text-white'
-        )}
-        tabIndex={-1}
-        aria-hidden="true"
-      >
-        {isLocked ? `Unlock at ${lockProgress?.requiredReadiness ?? 65}% Readiness` : mode.ctaLabel}
-      </span>
+      {/* CTA button — always visible, only this is clickable */}
+      {isLocked ? (
+        <span
+          className="inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium mt-auto bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed"
+        >
+          Unlock at {lockProgress?.requiredReadiness ?? 65}% Readiness
+        </span>
+      ) : (
+        <Link
+          href={href}
+          className={cn(
+            'inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out mt-auto',
+            isZone3
+              ? 'bg-[var(--accent)] text-white hover:opacity-90'
+              : 'bg-[var(--primary)] text-white hover:opacity-90'
+          )}
+        >
+          {mode.ctaLabel}
+        </Link>
+      )}
     </>
   )
 
@@ -235,24 +240,20 @@ const ModeCard = ({
   }
 
   return (
-    <Link
-      href={href}
+    <div
       className={cn(
         'group relative flex flex-col rounded-md border border-l-[3px] p-4',
-        'transition-all duration-200 ease-out',
-        'hover:-translate-y-px hover:shadow-sm hover:border-[var(--primary)]/30',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)]/30 focus-visible:ring-offset-2'
       )}
       style={{
         backgroundColor: 'var(--surface-card)',
         borderColor: 'var(--border-default)',
         borderLeftColor: accentColor,
-        textDecoration: 'none',
       }}
+      role="article"
       aria-label={`${mode.character} — ${mode.label}. ${mode.description}`}
     >
       {cardContent}
-    </Link>
+    </div>
   )
 }
 
