@@ -83,8 +83,8 @@ export const SolutionReveal = ({
           {trapsForQuestion.map((trap) => (
             <div
               key={trap.trap_id}
-              className='flex items-start gap-2 rounded-sm border-l-4 px-3 py-2.5'
-              style={{ background: '#FEF8ED', borderLeftColor: '#D4951A' }}
+              className='flex items-start gap-2 rounded-md border border-[#D4951A]/20 px-3 py-2.5'
+              style={{ background: '#FEF8ED' }}
             >
               <Warning size={14} style={{ color: '#D4951A' }} weight='fill' className='shrink-0 mt-0.5' />
               <div className='flex flex-col gap-1'>

@@ -130,11 +130,17 @@ export const endSession = async (
   const subjectBreakdown: EndSessionResult['subjectBreakdown'] = []
 
   if (topicIds.length > 0) {
-    const { data: taxonomyNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, name, subject_area, discipline_id')
-      .in('node_id', topicIds)
-
+    // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
+    const BATCH_SIZE = 80
+    const allTaxonomyNodes: Array<{ node_id: string; name: string; subject_area: string; discipline_id: string }> = []
+    for (let i = 0; i < topicIds.length; i += BATCH_SIZE) {
+      const batch = topicIds.slice(i, i + BATCH_SIZE)
+      const { data } = await supabase
+        .from('taxonomy_tree')
+        .select('node_id, name, subject_area, discipline_id')
+        .in('node_id', batch)
+      if (data) allTaxonomyNodes.push(...(data as typeof allTaxonomyNodes))
+    }
     // Group by subject_area
     const subjectMap = new Map<
       string,
@@ -142,9 +148,9 @@ export const endSession = async (
     >()
 
     for (const interaction of allInteractions) {
-      const node = (taxonomyNodes ?? []).find(
-        (n: { node_id: string }) => n.node_id === interaction.topic_id,
-      ) as { node_id: string; name: string; subject_area: string; discipline_id: string } | undefined
+      const node = allTaxonomyNodes.find(
+        (n) => n.node_id === interaction.topic_id,
+      )
 
       if (!node) continue
 

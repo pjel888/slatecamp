@@ -39,7 +39,7 @@ export const WikiArticleHero = ({
       </p>
 
       {/* ALE orientation banner — NOT a callout */}
-      <div className="border-l-[3px] border-camp-cobalt bg-cobalt-light rounded-r-lg px-4 py-3 dark:bg-[#1B3FC410]">
+      <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-[#1B3FC410]">
         <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-camp-cobalt mb-1">
           The ALE tests you to
         </p>

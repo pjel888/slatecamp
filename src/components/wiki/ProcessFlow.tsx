@@ -1,7 +1,7 @@
 export const ProcessFlow = ({ children }: { children: React.ReactNode }) => (
   <div
     className={[
-      'not-prose my-6 pl-4 border-l-2 border-camp-cobalt/30',
+      'not-prose my-6 pl-4 border border-camp-cobalt/10 rounded-md',
       '[&>ol]:list-none [&>ol]:m-0 [&>ol]:p-0 [&>ol]:space-y-4',
       '[&>ol>li]:relative [&>ol>li]:pl-6 [&>ol>li]:text-sm [&>ol>li]:leading-relaxed [&>ol>li]:text-text-primary',
       '[&>ol>li_strong]:text-camp-cobalt [&>ol>li_strong]:font-semibold',

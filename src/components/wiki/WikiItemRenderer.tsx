@@ -91,7 +91,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
 
     case 'code_provision':
       return (
-        <div className="border-l-4 border-[#1B3FC4] pl-4 bg-[#EEF2FC] rounded-md p-3">
+        <div className="border border-[#1B3FC4]/20 bg-[#EEF2FC] rounded-md p-3">
           {item.source_ref && (
             <span className="font-mono text-[9px] uppercase tracking-wider text-[#1B3FC4] block mb-1">
               {item.source_ref}
@@ -110,7 +110,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
 
     case 'exam_tip':
       return (
-        <div className="border-l-4 border-[#D4951A] pl-4 bg-[#FEF8ED] rounded-md p-3">
+        <div className="border border-[#D4951A]/20 bg-[#FEF8ED] rounded-md p-3">
           <span className="font-mono text-[9px] uppercase tracking-wider text-[#D4951A] block mb-1">
             Exam Tip
           </span>

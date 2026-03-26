@@ -225,11 +225,10 @@ const ModeCard = ({
   if (isLocked) {
     return (
       <div
-        className="relative flex flex-col rounded-md border border-l-[3px] p-4"
+        className="relative flex flex-col rounded-md border p-4"
         style={{
           backgroundColor: 'var(--surface-card)',
           borderColor: 'var(--border-default)',
-          borderLeftColor: accentColor,
         }}
         aria-label={`${mode.character} — locked. ${lockProgress?.pointsNeeded ?? 0} more readiness points needed.`}
         role="article"
@@ -241,13 +240,10 @@ const ModeCard = ({
 
   return (
     <div
-      className={cn(
-        'group relative flex flex-col rounded-md border border-l-[3px] p-4',
-      )}
+      className="group relative flex flex-col rounded-md border p-4"
       style={{
         backgroundColor: 'var(--surface-card)',
         borderColor: 'var(--border-default)',
-        borderLeftColor: accentColor,
       }}
       role="article"
       aria-label={`${mode.character} — ${mode.label}. ${mode.description}`}

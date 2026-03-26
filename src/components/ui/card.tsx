@@ -12,7 +12,7 @@ const cardVariants = cva(
         interactive:
           'bg-card border border-border rounded-lg hover:border-primary/30 hover:shadow-sm cursor-pointer transition-all duration-150 focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:ring-offset-2',
         selected: 'border border-primary bg-primary/5 rounded-lg',
-        'accent-left': 'bg-card border border-border border-l-[3px] rounded-lg',
+        'accent-left': 'bg-card border-2 border-border rounded-lg',
         feature: 'rounded-lg',
         ghost: 'bg-transparent rounded-lg',
       },

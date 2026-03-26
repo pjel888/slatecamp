@@ -16,30 +16,56 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) notFound()
 
-  // Fetch session
+  // Fetch session — only the columns we need (not select('*'))
   const { data: session } = await supabase
     .from('quiz_sessions')
-    .select('*')
+    .select('session_id, user_id, config, question_ids')
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
     .single()
 
   if (!session) notFound()
 
-  // Fetch questions for this session
+  // Fetch questions for this session — only client-safe columns (no correct_option_id, rationale)
+  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
   const questionIds: string[] = session.question_ids ?? []
-  const { data: questions } = await supabase
-    .from('questions')
-    .select('*')
-    .in('question_id', questionIds)
+  const BATCH_SIZE = 80
+  const questionBatches = []
+  for (let i = 0; i < questionIds.length; i += BATCH_SIZE) {
+    questionBatches.push(questionIds.slice(i, i + BATCH_SIZE))
+  }
+
+  const allQuestions: Array<{
+    question_id: string
+    text: string
+    options: unknown
+    prompt_image_url: string | null
+    difficulty: number
+    topic_id: string
+  }> = []
+
+  for (const batch of questionBatches) {
+    const { data } = await supabase
+      .from('questions')
+      .select('question_id, text, options, prompt_image_url, difficulty, topic_id')
+      .in('question_id', batch)
+
+    if (data) allQuestions.push(...data)
+  }
 
   // Build config from session data or use mode preset
   const config: QuizSessionConfig = (session.config as QuizSessionConfig) ??
     MODE_PRESETS[mode as QuizMode] ??
     MODE_PRESETS.camp
 
+  // Preserve session question order — map by ID then reorder
+  const questionMap = new Map(allQuestions.map((q) => [q.question_id, q]))
+  const orderedQuestions = questionIds
+    .map((id) => questionMap.get(id))
+    .filter((q): q is NonNullable<typeof q> => q != null)
+
   // Strip questions for client (remove correct answers)
-  const clientQuestions = (questions ?? []).map((q, i) =>
+  const clientQuestions = orderedQuestions.map((q, i) =>
     stripQuestionForClient(q, i + 1),
   )
 

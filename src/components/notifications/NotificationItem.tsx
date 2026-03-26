@@ -32,8 +32,8 @@ export const NotificationItem = ({ notification, variant = 'page' }: Notificatio
       className={cn(
         'flex w-full gap-3.5 px-4 py-3.5 text-left transition-colors duration-150 cursor-pointer',
         isUnread
-          ? 'bg-blue-50/50 border-l-[3px] border-l-[#1B3FC4]'
-          : 'border-l-[3px] border-l-transparent hover:bg-muted/50',
+          ? 'bg-[#EEF2FC]'
+          : 'hover:bg-muted/50',
       )}
     >
       <NotificationIcon type={notification.type} isUnread={isUnread} />

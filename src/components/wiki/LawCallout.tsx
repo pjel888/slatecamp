@@ -9,42 +9,42 @@ const lawConfig: Record<LawCalloutCode, {
   label: string
 }> = {
   nbcp: {
-    border: 'border-l-[3px] border-camp-cobalt',
+    border: 'border border-camp-cobalt/20',
     bg: 'bg-cobalt-light',
     darkBg: 'dark:bg-[#1B3FC410]',
     eyebrow: 'text-camp-cobalt',
     label: 'NBCP (PD 1096)',
   },
   bp344: {
-    border: 'border-l-[3px] border-emerald',
+    border: 'border border-emerald/20',
     bg: 'bg-success-50',
     darkBg: 'dark:bg-[#2D9F6F10]',
     eyebrow: 'text-emerald',
     label: 'BP 344 — Accessibility',
   },
   ra9514: {
-    border: 'border-l-[3px] border-destructive',
+    border: 'border border-destructive/20',
     bg: 'bg-destructive-50',
     darkBg: 'dark:bg-[#D6454510]',
     eyebrow: 'text-destructive',
     label: 'RA 9514 — Fire Code',
   },
   bp220: {
-    border: 'border-l-[3px] border-warning',
+    border: 'border border-warning/20',
     bg: 'bg-warning-50',
     darkBg: 'dark:bg-[#D4951A10]',
     eyebrow: 'text-[#92400E]',
     label: 'BP 220 — Housing',
   },
   pd957: {
-    border: 'border-l-[3px] border-text-secondary',
+    border: 'border border-text-secondary/20',
     bg: 'bg-surface-focused',
     darkBg: 'dark:bg-[#4A556810]',
     eyebrow: 'text-text-secondary',
     label: 'PD 957 — Subdivisions',
   },
   irr: {
-    border: 'border-l-[3px] border-camp-orange',
+    border: 'border border-camp-orange/20',
     bg: 'bg-[#FFF5ED]',
     darkBg: 'dark:bg-[#E8853A10]',
     eyebrow: 'text-[#C2410C]',
@@ -59,7 +59,7 @@ export const LawCallout = ({ code, section, title, children }: LawCalloutProps) 
   return (
     <div
       className={cn(
-        'not-prose rounded-r-lg px-4 py-3 my-5',
+        'not-prose rounded-md px-4 py-3 my-5',
         config.border,
         config.bg,
         config.darkBg,

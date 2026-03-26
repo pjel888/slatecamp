@@ -57,7 +57,7 @@ const ArticleSkeleton = () => (
             </div>
 
             {/* Callout / key fact block */}
-            <div className="border-l-3 border-zinc-300 pl-4 py-3 rounded-r-sm bg-zinc-100/50 mb-6">
+            <div className="border border-zinc-200 rounded-md bg-zinc-50 pl-4 py-3 mb-6">
               <Bone className="h-2.5 w-16 mb-2" />
               <div className="space-y-2">
                 <Bone className="h-3.5 w-full" />
@@ -77,7 +77,7 @@ const ArticleSkeleton = () => (
             </div>
 
             {/* Another callout */}
-            <div className="border-l-3 border-zinc-300 pl-4 py-3 rounded-r-sm bg-zinc-100/50">
+            <div className="border border-zinc-200 rounded-md bg-zinc-50 pl-4 py-3">
               <Bone className="h-2.5 w-20 mb-2" />
               <div className="space-y-2">
                 <Bone className="h-3.5 w-full" />

@@ -166,7 +166,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
     return (
       <div
         className={cn(
-          'not-prose rounded-r-lg border-l-[3px] px-4 py-3 my-5',
+          'not-prose rounded-md border px-4 py-3 my-5',
           showDismiss && 'relative',
           config.border,
           config.bg,
@@ -207,7 +207,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
   return (
     <span
       className={cn(
-        'not-prose block my-6 rounded-md border-l-4 px-4 py-3',
+        'not-prose block my-6 rounded-md border px-4 py-3',
         showDismiss && 'relative',
         config.border,
         config.bg,

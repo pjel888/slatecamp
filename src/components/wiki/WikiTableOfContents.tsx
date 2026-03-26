@@ -88,11 +88,11 @@ export function WikiTableOfContents({ headings, scrollContainerId }: WikiTableOf
                 onClick={() => handleClick(id)}
                 aria-current={isActive ? 'true' : undefined}
                 className={cn(
-                  'block w-full text-left text-xs py-1 transition-colors leading-snug border-l-2 -ml-px',
+                  'block w-full text-left text-xs py-1 transition-colors leading-snug rounded-sm -ml-px',
                   level === 3 ? 'pl-5' : 'pl-3',
                   isActive
-                    ? 'border-primary text-foreground font-medium'
-                    : 'border-transparent text-muted-foreground hover:text-text-secondary hover:border-border',
+                    ? 'bg-[#EEF2FC] text-foreground font-medium'
+                    : 'text-muted-foreground hover:text-text-secondary hover:bg-muted/40',
                 )}
               >
                 {text}

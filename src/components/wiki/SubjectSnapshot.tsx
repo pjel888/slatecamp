@@ -33,7 +33,7 @@ export const SubjectSnapshot = ({ items }: { items: SnapshotItem[] | string }) =
   // If no hero detected, render all items in a flat grid (fallback)
   if (!hero) {
     return (
-      <div className="not-prose my-5 rounded-md border-t-[3px] border-camp-cobalt bg-[#F8F7F5] dark:bg-[#1E1D1B] px-5 py-4">
+      <div className="not-prose my-5 rounded-md border border-camp-cobalt/20 bg-[#F8F7F5] dark:bg-[#1E1D1B] px-5 py-4">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-3">
           {parsed.map((item, i) => (
             <SupportingItem key={i} label={item.label} value={item.value} />
@@ -44,7 +44,7 @@ export const SubjectSnapshot = ({ items }: { items: SnapshotItem[] | string }) =
   }
 
   return (
-    <div className="not-prose my-5 rounded-md border-t-[3px] border-camp-cobalt bg-[#F8F7F5] dark:bg-[#1E1D1B]">
+    <div className="not-prose my-5 rounded-md border border-camp-cobalt/20 bg-[#F8F7F5] dark:bg-[#1E1D1B]">
       <div className="flex flex-col sm:flex-row">
         {/* Hero stat — left zone */}
         <div className="flex flex-col items-center justify-center px-6 py-5 sm:min-w-[140px] sm:border-r sm:border-[#D4DAE3] dark:sm:border-[#3A3835]">

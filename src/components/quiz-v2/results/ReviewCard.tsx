@@ -41,12 +41,12 @@ const LETTER_BG: Record<OptionState, string> = {
 
 const getCorrectnessInfo = (question: ReviewQuestionData) => {
   if (question.isSkipped) {
-    return { icon: '\u2298', label: 'Skipped', colorClass: 'text-[#8896A7]', borderClass: 'border-l-[#D4DAE3]' }
+    return { icon: '\u2298', label: 'Skipped', colorClass: 'text-[#8896A7]' }
   }
   if (question.isCorrect) {
-    return { icon: '\u2713', label: 'Correct', colorClass: 'text-[#2D9F6F]', borderClass: 'border-l-[#1B3FC4]' }
+    return { icon: '\u2713', label: 'Correct', colorClass: 'text-[#2D9F6F]' }
   }
-  return { icon: '\u2192', label: 'Not quite', colorClass: 'text-[#D4951A]', borderClass: 'border-l-[#D4951A]' }
+  return { icon: '\u2192', label: 'Not quite', colorClass: 'text-[#D4951A]' }
 }
 
 const getConfidenceLabel = (level: number | null): string | null => {
@@ -70,10 +70,7 @@ export const ReviewCard = ({
 
   return (
     <div
-      className={cn(
-        'bg-white rounded-md border border-[#D4DAE3] border-l-[3px] overflow-hidden',
-        info.borderClass,
-      )}
+      className="bg-white rounded-md border border-[#D4DAE3] overflow-hidden"
     >
       {/* ── Header (always visible, toggles expand) ─────────────────────────── */}
       <button

@@ -112,12 +112,12 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
       type="button"
       onClick={() => onSelect(mode)}
       className={cn(
-        'group flex flex-col rounded-md border border-l-[3px] p-4 text-left w-full',
+        'group flex flex-col rounded-md border p-4 text-left w-full',
         'bg-white transition-all duration-150 ease-out',
         'hover:-translate-y-px hover:shadow-sm',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30 focus-visible:ring-offset-2',
       )}
-      style={{ borderColor: '#D4DAE3', borderLeftColor: accent }}
+      style={{ borderColor: '#D4DAE3' }}
       aria-label={`${label}. ${description}`}
     >
       {/* Icon + zone badge */}

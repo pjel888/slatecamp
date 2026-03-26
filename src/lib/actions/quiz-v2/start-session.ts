@@ -250,18 +250,22 @@ export const startSession = async (
   )
 
   // 7. Fetch taxonomy breadcrumbs for selected topics
+  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
   const uniqueTopicIds = [...new Set(selectedQuestions.map((q: { topic_id: string }) => q.topic_id))]
-  const { data: taxonomyNodes } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id, name, subject_area')
-    .in('node_id', uniqueTopicIds)
+  const TAXONOMY_BATCH = 80
+  const taxonomyMap = new Map<string, string>()
 
-  const taxonomyMap = new Map<string, string>(
-    (taxonomyNodes ?? []).map((n: { node_id: string; name: string; subject_area: string }) => [
-      n.node_id,
-      `${n.subject_area} > ${n.name}`,
-    ] as [string, string]),
-  )
+  for (let i = 0; i < uniqueTopicIds.length; i += TAXONOMY_BATCH) {
+    const batch = uniqueTopicIds.slice(i, i + TAXONOMY_BATCH)
+    const { data: taxonomyNodes } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id, name, subject_area')
+      .in('node_id', batch)
+
+    for (const n of (taxonomyNodes ?? []) as Array<{ node_id: string; name: string; subject_area: string }>) {
+      taxonomyMap.set(n.node_id, `${n.subject_area} > ${n.name}`)
+    }
+  }
 
   // 8. Create quiz_sessions row
   const { data: session, error: sessionError } = await supabase
