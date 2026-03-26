@@ -3,25 +3,40 @@ import { ScoreReveal } from './ScoreReveal'
 import { SubjectBreakdown } from './SubjectBreakdown'
 import { ReadinessImpact } from './ReadinessImpact'
 import { StaminaChart } from './StaminaChart'
+import { ConfidenceMatrix } from './ConfidenceMatrix'
 import { ReviewCardList } from './ReviewCardList'
 import { ResultsCTAs } from './ResultsCTAs'
+import { ResultsWithPostdiction } from './ResultsWithPostdiction'
+import { PredictionComparison } from './PredictionComparison'
+import { FeedForwardCards } from './FeedForwardCards'
+import { SimulationDebrief } from './SimulationDebrief'
 import type {
   EndSessionResult,
   QuizSessionConfig,
   StaminaBlock,
   ReviewQuestionData,
   QuestionHistoryStats,
+  Recommendation,
 } from '@/types/quiz-config'
+import type { ConfidenceMatrixResult } from '@/lib/actions/quiz-v2/get-confidence-matrix'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
+
+interface PredictionData {
+  predictionScore: number
+  postdictionScore: number | null
+}
 
 interface ResultsDashboardProps {
   sessionId: string
   result: EndSessionResult
   config: QuizSessionConfig
   staminaBlocks?: StaminaBlock[]
+  confidenceMatrix?: ConfidenceMatrixResult | null
   reviewQuestions: ReviewQuestionData[]
   questionHistory?: Record<string, QuestionHistoryStats>
+  predictionData?: PredictionData | null
+  recommendations?: Recommendation[]
 }
 
 // ─── Skeleton helpers ─────────────────────────────────────────────────────────
@@ -81,8 +96,11 @@ const ResultsDashboard = ({
   result,
   config,
   staminaBlocks,
+  confidenceMatrix,
   reviewQuestions,
   questionHistory,
+  predictionData,
+  recommendations,
 }: ResultsDashboardProps) => {
   const showStamina =
     config.results.showStaminaChart &&
@@ -91,76 +109,127 @@ const ResultsDashboard = ({
 
   const missedCount = reviewQuestions.filter((q) => !q.isCorrect && !q.isSkipped).length
   const isPerfect = result.score.correct === result.score.total && result.score.total > 0
+  const hasPrediction = predictionData !== null && predictionData !== undefined
 
   return (
-    <main
-      className="max-w-[900px] mx-auto px-4 py-8 space-y-8"
-      aria-label="Session results"
+    <ResultsWithPostdiction
+      sessionId={sessionId}
+      actualScore={result.score.percent}
+      hasPrediction={hasPrediction}
     >
-      {/* ── Section 1: Score Hero ──────────────────────────────────────────── */}
-      <section aria-label="Score summary">
-        <Suspense fallback={<ScoreSkeleton />}>
-          <ScoreReveal
-            percent={result.score.percent}
-            correct={result.score.correct}
-            total={result.score.total}
-            growthDelta={config.results.showGrowthDelta ? result.growthVsPrevious : null}
-          />
-        </Suspense>
-
-        {/* Readiness impact — hidden in Chill mode */}
-        {config.results.showReadinessScoreImpact && (
-          <div className="mt-4">
-            <ReadinessImpact
-              before={result.readinessScoreBefore}
-              after={result.readinessScoreAfter}
-              delta={result.readinessScoreDelta}
+      <main
+        className="max-w-[900px] mx-auto px-4 py-8 space-y-8"
+        aria-label="Session results"
+      >
+        {/* ── Section 1: Score Hero ──────────────────────────────────────────── */}
+        <section aria-label="Score summary">
+          <Suspense fallback={<ScoreSkeleton />}>
+            <ScoreReveal
+              percent={result.score.percent}
+              correct={result.score.correct}
+              total={result.score.total}
+              growthDelta={config.results.showGrowthDelta ? result.growthVsPrevious : null}
             />
-          </div>
-        )}
-      </section>
+          </Suspense>
 
-      {/* ── Section 2: Performance Breakdown ───────────────────────────────── */}
-      <section aria-label="Performance breakdown">
-        {/* Subject breakdown — conditional */}
-        {config.results.showSubjectBreakdown && result.subjectBreakdown.length > 0 && (
-          <SubjectBreakdown breakdown={result.subjectBreakdown} />
+          {/* Readiness impact — hidden in Chill mode */}
+          {config.results.showReadinessScoreImpact && (
+            <div className="mt-4">
+              <ReadinessImpact
+                before={result.readinessScoreBefore}
+                after={result.readinessScoreAfter}
+                delta={result.readinessScoreDelta}
+              />
+            </div>
+          )}
+        </section>
+
+        {/* ── Section 2: Self-Assessment Accuracy ────────────────────────────── */}
+        {hasPrediction && (
+          <section aria-label="Self-assessment accuracy">
+            <PredictionComparison
+              sessionId={sessionId}
+              predictionScore={predictionData.predictionScore}
+              postdictionScore={predictionData.postdictionScore}
+              actualScore={result.score.percent}
+            />
+          </section>
         )}
 
-        {/* Stamina chart — client island, conditional */}
-        {showStamina && (
-          <div className="mt-4">
+        {/* ── Section 3: Performance Breakdown ───────────────────────────────── */}
+        <section aria-label="Performance breakdown">
+          {/* Subject breakdown — conditional */}
+          {config.results.showSubjectBreakdown && result.subjectBreakdown.length > 0 && (
+            <SubjectBreakdown breakdown={result.subjectBreakdown} />
+          )}
+
+          {/* Stamina chart — client island, conditional */}
+          {showStamina && (
+            <div className="mt-4">
+              <Suspense fallback={<ChartSkeleton />}>
+                <StaminaChart blocks={staminaBlocks!} />
+              </Suspense>
+            </div>
+          )}
+        </section>
+
+        {/* ── Section 4: Confidence Diagnostic Matrix ─────────────────────── */}
+        {confidenceMatrix && (
+          <section aria-label="Confidence diagnostic">
+            <ConfidenceMatrix
+              matrix={confidenceMatrix}
+              sessionId={sessionId}
+              mode={config.mode}
+            />
+          </section>
+        )}
+
+        {/* ── Section 5: Simulation Debrief (fullexam only) ──────────────────── */}
+        {config.mode === 'fullexam' && (
+          <section aria-label="Simulation debrief">
             <Suspense fallback={<ChartSkeleton />}>
-              <StaminaChart blocks={staminaBlocks!} />
+              <SimulationDebrief
+                result={result}
+                reviewQuestions={reviewQuestions}
+                staminaBlocks={staminaBlocks}
+                prediction={hasPrediction ? predictionData.predictionScore : null}
+              />
             </Suspense>
-          </div>
+          </section>
         )}
-      </section>
 
-      {/* ── Section 3: Inline Question Review Cards ────────────────────────── */}
-      <section aria-label="Question review">
-        <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
-          Question Review
-        </p>
-        <Suspense fallback={<ReviewSkeleton />}>
-          <ReviewCardList
-            questions={reviewQuestions}
-            questionHistory={questionHistory}
-          />
-        </Suspense>
-      </section>
+        {/* ── Section 6: Inline Question Review Cards ────────────────────────── */}
+        <section aria-label="Question review">
+          <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+            Question Review
+          </p>
+          <Suspense fallback={<ReviewSkeleton />}>
+            <ReviewCardList
+              questions={reviewQuestions}
+              questionHistory={questionHistory}
+            />
+          </Suspense>
+        </section>
 
-      {/* ── Section 4: Action CTAs ─────────────────────────────────────────── */}
-      <section aria-label="Next steps">
-        <Suspense fallback={<div className="h-24 animate-pulse" />}>
-          <MergedCTAs
-            sessionId={sessionId}
-            missedCount={missedCount}
-            isPerfect={isPerfect}
-          />
-        </Suspense>
-      </section>
-    </main>
+        {/* ── Section 6: Feed-Forward Recommendations ────────────────────────── */}
+        {recommendations && recommendations.length > 0 && (
+          <section aria-label="Suggested next steps">
+            <FeedForwardCards recommendations={recommendations} />
+          </section>
+        )}
+
+        {/* ── Section 7: Action CTAs ─────────────────────────────────────────── */}
+        <section aria-label="Next steps">
+          <Suspense fallback={<div className="h-24 animate-pulse" />}>
+            <MergedCTAs
+              sessionId={sessionId}
+              missedCount={missedCount}
+              isPerfect={isPerfect}
+            />
+          </Suspense>
+        </section>
+      </main>
+    </ResultsWithPostdiction>
   )
 }
 

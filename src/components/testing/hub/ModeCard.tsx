@@ -71,10 +71,11 @@ const ModeCard = ({
   const MODE_KEY_TO_V2: Record<string, string> = {
     'focus-review': 'focused',
     simulation: 'fullexam',
-    endurance: 'extended',
   }
+  // Design Endurance routes to the long-format scenario picker, not the regular quiz engine
+  const isEndurance = mode.key === 'endurance'
   const v2Mode = MODE_KEY_TO_V2[mode.key] ?? mode.key
-  const href = `/quiz/${v2Mode}/setup`
+  const href = isEndurance ? '/dashboard/area-c/design-quiz' : `/quiz/${v2Mode}/setup`
 
   const cardContent = (
     <>

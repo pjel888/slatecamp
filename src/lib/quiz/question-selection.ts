@@ -92,6 +92,8 @@ export const stripQuestionForClient = (question: {
   prompt_image_url?: string | null
   difficulty?: number
   topic_id?: string
+  question_type?: string
+  metadata?: Record<string, unknown> | null
 }, position: number) => ({
   question_id: question.question_id,
   position,
@@ -104,5 +106,7 @@ export const stripQuestionForClient = (question: {
     : difficultyToBand(question.difficulty ?? 3) === 'medium'
       ? 'Medium' as const
       : 'Hard' as const,
+  question_type: (question.question_type ?? 'mcq') as 'mcq' | 'numeric' | 'short_text' | 'formula',
+  unit: (question.metadata as Record<string, unknown> | null)?.unit as string | null ?? null,
   options: normalizeOptions(question.options),
 })

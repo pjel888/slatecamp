@@ -2,7 +2,7 @@
 
 import { useRef, useState, useCallback, useEffect } from 'react'
 import { useDrag } from '@use-gesture/react'
-import { ArrowRight, Check } from '@phosphor-icons/react'
+import { ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
@@ -11,6 +11,8 @@ interface SlideToSubmitProps {
   onSubmit: () => void
   disabled?: boolean
   label?: string
+  /** Set to true when the answer has been checked and feedback is showing */
+  checked?: boolean
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -25,6 +27,7 @@ export const SlideToSubmit = ({
   onSubmit,
   disabled = false,
   label = 'Slide to submit',
+  checked = false,
 }: SlideToSubmitProps) => {
   const trackRef = useRef<HTMLDivElement>(null)
   const [offset, setOffset] = useState(0)
@@ -52,7 +55,6 @@ export const SlideToSubmit = ({
     if (completed) return
     setCompleted(true)
     navigator.vibrate?.(15)
-    // Brief pause before firing submit for visual satisfaction
     setTimeout(onSubmit, 200)
   }, [completed, onSubmit])
 
@@ -68,18 +70,15 @@ export const SlideToSubmit = ({
         const clamped = Math.max(0, Math.min(mx, maxOffset))
         setOffset(clamped)
 
-        // Haptic at threshold crossing
         if (clamped / maxOffset >= THRESHOLD_PERCENT) {
           navigator.vibrate?.(10)
         }
       } else {
         setIsDragging(false)
         if (offset / maxOffset >= THRESHOLD_PERCENT) {
-          // Snap to end and submit
           setOffset(maxOffset)
           handleComplete()
         } else {
-          // Snap back
           setOffset(0)
         }
       }
@@ -87,11 +86,23 @@ export const SlideToSubmit = ({
     { axis: 'x', filterTaps: true },
   )
 
-  // Reset when disabled changes (new question)
+  // Reset when checked goes from true → false (new question loaded)
+  // or when disabled goes from true → false
+  const prevCheckedRef = useRef(checked)
+  const prevDisabledRef = useRef(disabled)
   useEffect(() => {
-    setOffset(0)
-    setCompleted(false)
-  }, [disabled])
+    const wasChecked = prevCheckedRef.current
+    const wasDisabled = prevDisabledRef.current
+    prevCheckedRef.current = checked
+    prevDisabledRef.current = disabled
+
+    // New question: checked was true (answer shown) and now it's false (fresh question)
+    // OR disabled was true and now false
+    if ((wasChecked && !checked) || (wasDisabled && !disabled)) {
+      setOffset(0)
+      setCompleted(false)
+    }
+  }, [disabled, checked])
 
   return (
     <div
@@ -100,7 +111,7 @@ export const SlideToSubmit = ({
         'relative flex items-center w-full rounded-md overflow-hidden select-none touch-none',
         'border border-[#D4DAE3] bg-[#F8F7F5]',
         disabled && 'opacity-40 pointer-events-none',
-        completed && 'border-[#1B3FC4] bg-[#EEF2FC]',
+        completed && 'border-[#1B3FC4] bg-[#EEF2FC] pointer-events-none',
       )}
       style={{ height: HANDLE_SIZE + TRACK_PADDING * 2, padding: TRACK_PADDING }}
       aria-label={label}
@@ -118,50 +129,64 @@ export const SlideToSubmit = ({
         }}
       />
 
-      {/* Label — fades out as handle moves */}
+      {/* Label — fades out as handle moves, shows "Checking..." when completed */}
       <span
-        className="absolute inset-0 flex items-center justify-center text-[13px] font-medium text-[#8896A7] pointer-events-none"
+        className="absolute inset-0 flex items-center justify-center text-[13px] font-medium pointer-events-none"
         style={{
-          opacity: completed ? 0 : Math.max(0, 1 - progress * 2.5),
+          opacity: completed ? 1 : Math.max(0, 1 - progress * 2.5),
           transition: isDragging ? 'none' : 'opacity 200ms ease-out',
+          color: completed ? '#1B3FC4' : '#8896A7',
         }}
       >
-        {label}
+        {completed && !checked ? (
+          <span className="flex items-center gap-2">
+            <span className="h-3.5 w-3.5 rounded-full border-2 border-[#1B3FC4]/20 border-t-[#1B3FC4] animate-spin" />
+            Checking your answer...
+          </span>
+        ) : completed && checked ? (
+          <span className="text-[#1B3FC4]">Answer checked</span>
+        ) : (
+          label
+        )}
       </span>
 
-      {/* Checking answer — inline spinner + message after slide */}
-      {completed && (
-        <span className="absolute inset-0 flex items-center justify-center gap-2 text-[13px] font-medium text-[#1B3FC4] pointer-events-none animate-in fade-in duration-200">
-          <span className="h-3.5 w-3.5 rounded-full border-2 border-[#1B3FC4]/20 border-t-[#1B3FC4] animate-spin" />
-          Checking your answer...
-        </span>
-      )}
-
-      {/* Draggable handle */}
+      {/* Draggable handle — always shows arrow, stays at end when completed */}
       <div
         {...bind()}
         className={cn(
-          'relative z-10 flex items-center justify-center shrink-0 rounded-sm cursor-grab active:cursor-grabbing',
-          'shadow-sm',
+          'relative z-10 flex items-center justify-center shrink-0 rounded-sm shadow-sm',
           completed
-            ? 'bg-[#1B3FC4] text-white'
-            : thresholdReached && isDragging
-              ? 'bg-[#1B3FC4] text-white'
-              : 'bg-white text-[#1B3FC4] border border-[#D4DAE3]',
+            ? 'cursor-default'
+            : isDragging
+              ? 'cursor-grabbing'
+              : 'cursor-grab',
         )}
         style={{
           width: HANDLE_SIZE,
           height: HANDLE_SIZE,
           transform: `translateX(${offset}px)`,
-          transition: isDragging ? 'none' : 'transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), background-color 150ms ease-out, color 150ms ease-out',
+          backgroundColor: completed || isDragging ? '#1B3FC4' : undefined,
+          color: completed || isDragging ? '#FFFFFF' : '#8896A7',
+          border: completed || isDragging ? 'none' : '1px solid #D4DAE3',
+          transition: isDragging ? 'none' : 'transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), background-color 150ms ease-out, color 150ms ease-out, border-color 150ms ease-out',
+        }}
+        onMouseEnter={(e) => {
+          if (!completed && !isDragging) {
+            e.currentTarget.style.backgroundColor = '#1B3FC4'
+            e.currentTarget.style.color = '#FFFFFF'
+            e.currentTarget.style.border = 'none'
+          }
+        }}
+        onMouseLeave={(e) => {
+          if (!completed && !isDragging) {
+            e.currentTarget.style.backgroundColor = ''
+            e.currentTarget.style.color = '#8896A7'
+            e.currentTarget.style.border = '1px solid #D4DAE3'
+          }
         }}
         aria-hidden="true"
       >
-        {completed ? (
-          <Check size={18} weight="bold" />
-        ) : (
-          <ArrowRight size={18} weight="bold" />
-        )}
+        <ArrowRight size={18} weight="bold" />
       </div>
 
       {/* End zone indicator — subtle chevrons */}

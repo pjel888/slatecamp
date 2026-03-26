@@ -14,8 +14,11 @@ import { StreakRibbon } from '@/components/dashboard/StreakRibbon'
 import ResultsDayBanner from '@/app/dashboard/results-day/_components/ResultsDayBanner'
 import { ReviewCenterSyncCard } from '@/components/dashboard/ReviewCenterSyncCard'
 import { BloomCognitiveTracker } from '@/components/dashboard/BloomCognitiveTracker'
+import { ReviewCalendar } from '@/components/dashboard/ReviewCalendar'
+import { DailyDoseCard } from '@/components/dashboard/DailyDoseCard'
 import TransitionPrompt from '@/app/dashboard/professional/_components/TransitionPrompt'
 import { getBloomBreakdown } from '@/lib/actions/bloom-tracker'
+import { getReviewCalendarData } from '@/lib/actions/analytics/get-review-calendar'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
@@ -36,7 +39,11 @@ export default async function DashboardPage() {
 
 
   // Bloom cognitive tracker data (only fetched if enough sessions)
-  const bloomData = data.sessionsCompleted >= 10 ? await getBloomBreakdown() : []
+  // Review calendar data (personalized forgetting curves)
+  const [bloomData, reviewCalendarData] = await Promise.all([
+    data.sessionsCompleted >= 10 ? getBloomBreakdown() : Promise.resolve([]),
+    getReviewCalendarData(),
+  ])
 
   // Professional mode transition prompt logic
   const showPasserTransition = data.aleResult === 'passed' && data.daysUntilExam !== null && data.daysUntilExam < -3
@@ -73,15 +80,17 @@ export default async function DashboardPage() {
           </Suspense>
         </HeroCommandBar>
 
+        {/* ── Daily Dose — adaptive study plan ─────────── */}
+        <Suspense fallback={null}>
+          <DailyDoseCard />
+        </Suspense>
+
         {/* ── Content grid ──────────────────────────────── */}
         <div className='min-h-0'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
-            <div className='lg:col-span-3 rounded-md border border-border bg-white p-2'>
-              <div className='grid grid-cols-3 gap-2 h-full'>
-                <div className='rounded-md bg-primary-50 min-h-[72px]' />
-                <div className='rounded-md bg-success-50 min-h-[72px]' />
-                <div className='rounded-md bg-warning-50 min-h-[72px]' />
-              </div>
+            {/* ── Review Calendar (7-day forward view) ── */}
+            <div className='lg:col-span-3'>
+              <ReviewCalendar data={reviewCalendarData} />
             </div>
 
             <div className='h-full lg:row-span-2'>
@@ -94,8 +103,6 @@ export default async function DashboardPage() {
                 notes={data.recentNotes}
               />
             </div>
-
-            <div />
 
             <div className='h-full'>
               <SubjectMasteryCard data={data.subjectMastery} />

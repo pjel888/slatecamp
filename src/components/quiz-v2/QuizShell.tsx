@@ -10,6 +10,8 @@ import { QuestionPalette } from './QuestionPalette'
 import { ExitConfirmModal } from './ExitConfirmModal'
 import { SubmitConfirmModal } from './SubmitConfirmModal'
 import { MicroBreakOverlay } from './MicroBreakOverlay'
+import { TimerDisplay } from './TimerDisplay'
+import { PacingNudge } from './PacingNudge'
 import { endSession as endSessionAction } from '@/lib/actions/quiz-v2'
 import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type {
@@ -151,6 +153,10 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
           correctOptionId: feedbackState.correctOptionId ?? '',
           rationale: feedbackState.rationale,
           wikiUrl: feedbackState.wikiUrl,
+          errorDiagnostic: feedbackState.errorDiagnostic ?? null,
+          closeness: feedbackState.closeness,
+          correctAnswer: feedbackState.correctAnswer,
+          questionType: feedbackState.questionType,
         }
       : null
 
@@ -160,7 +166,14 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
       ? Math.max(0, Math.floor((timerState.limitMs - timerState.elapsedMs) / 1000))
       : null
 
-  const hasAnswered = currentAnswer?.selectedOptionId != null
+  // For MCQ: any selection counts. For generation: non-empty string counts.
+  const hasAnswered = currentAnswer?.selectedOptionId != null && currentAnswer.selectedOptionId !== ''
+
+  // ── Pressure level derived data ─────────────────────────────────────────
+  const pressureLevel = config.pressure_level ?? 0
+  const questionTimeMs = currentAnswer
+    ? Date.now() - currentAnswer.timeStartedMs
+    : 0
 
   // ── Handlers ──────────────────────────────────────────────────────────────
 
@@ -227,7 +240,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
     const state = useQuizStore.getState()
     const firstUnanswered = state.questions.findIndex((q) => {
       const a = state.answers.get(q.question_id)
-      return !a?.selectedOptionId && !a?.isSkipped
+      return (!a?.selectedOptionId || a.selectedOptionId === '') && !a?.isSkipped
     })
     if (firstUnanswered >= 0) {
       goToQuestion(firstUnanswered)
@@ -259,6 +272,23 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
     goNext,
   ])
 
+  const handlePacingAutoAdvance = useCallback(() => {
+    if (!currentQuestion) return
+    const state = useQuizStore.getState()
+    const ans = state.answers.get(currentQuestion.question_id)
+    if (ans && !ans.submittedAt && !ans.isSkipped) {
+      // Mark as skipped and advance
+      const next = new Map(state.answers)
+      next.set(currentQuestion.question_id, {
+        ...ans,
+        isSkipped: true,
+        timeSpentMs: Date.now() - ans.timeStartedMs,
+      })
+      useQuizStore.setState({ answers: next })
+    }
+    goNext()
+  }, [currentQuestion, goNext])
+
   const handlePaletteJump = useCallback(
     (index: number) => {
       togglePalette()
@@ -287,9 +317,18 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
         onExit={showExitModal}
         onToggleFlag={config.navigation.bookmarkEnabled ? handleToggleFlag : undefined}
         onOpenPalette={config.navigation.questionPalette ? togglePalette : undefined}
+        timerSlot={
+          pressureLevel > 0 ? (
+            <TimerDisplay
+              pressureLevel={pressureLevel}
+              totalTimeMs={timerState.limitMs}
+              elapsedMs={timerState.elapsedMs}
+            />
+          ) : undefined
+        }
       />
 
-      <main className="flex-1 overflow-hidden">
+      <main className="flex-1 overflow-hidden relative">
         <QuizBody
           question={currentQuestion}
           selectedOptionId={currentAnswer?.selectedOptionId ?? null}
@@ -301,6 +340,15 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
           onSubmit={handleSubmit}
           onNext={handleNext}
         />
+        {/* Pacing nudge for pressure level 2+ */}
+        {pressureLevel >= 2 && currentQuestion && (
+          <PacingNudge
+            pressureLevel={pressureLevel}
+            difficultyLabel={currentQuestion.difficulty_label}
+            questionTimeMs={questionTimeMs}
+            onAutoAdvance={pressureLevel === 3 ? handlePacingAutoAdvance : undefined}
+          />
+        )}
       </main>
 
       <QuizFooter

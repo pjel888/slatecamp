@@ -1,9 +1,13 @@
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import type { QuizSessionConfig, EndSessionResult, StaminaBlock } from '@/types/quiz-config'
+import type { QuizSessionConfig, EndSessionResult, StaminaBlock, Recommendation } from '@/types/quiz-config'
 import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { analyzeStamina } from '@/lib/quiz/stamina-analysis'
-import { getReviewData } from '@/lib/actions/quiz-v2'
+import { getReviewData, getConfidenceMatrix } from '@/lib/actions/quiz-v2'
+import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
+const PREDICTION_MODES = ['storm', 'fullexam', 'extended']
+const shouldShowPrediction = (mode: string) => PREDICTION_MODES.includes(mode)
+import type { QuizMode } from '@/types/quiz-config'
 
 interface ResultsPageProps {
   params: Promise<{ mode: string; sessionId: string }>
@@ -119,6 +123,46 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
     reviewData = null
   }
 
+  // Fetch confidence matrix data (skip for chill mode — no confidence input)
+  let confidenceMatrix = null
+  if (config.mode !== 'chill') {
+    try {
+      confidenceMatrix = await getConfidenceMatrix(sessionId)
+    } catch {
+      // Non-critical — render without confidence matrix
+      confidenceMatrix = null
+    }
+  }
+
+  // Fetch prediction data if this mode supports predictions
+  const quizMode = mode as QuizMode
+  let predictionData: { predictionScore: number; postdictionScore: number | null } | null = null
+
+  if (shouldShowPrediction(quizMode)) {
+    const { data: prediction } = await supabase
+      .from('session_predictions')
+      .select('prediction_score, postdiction_score')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id)
+      .maybeSingle()
+
+    if (prediction) {
+      predictionData = {
+        predictionScore: prediction.prediction_score,
+        postdictionScore: prediction.postdiction_score,
+      }
+    }
+  }
+
+  // Generate feed-forward recommendations
+  let recommendations: Recommendation[] = []
+  try {
+    recommendations = await generateRecommendations(user.id, sessionId, 3)
+  } catch {
+    // Non-critical — render without recommendations
+    recommendations = []
+  }
+
   const ResultsDashboard = (await import('@/components/quiz-v2/results/ResultsDashboard')).default
 
   return (
@@ -127,8 +171,11 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
       result={result}
       config={config}
       staminaBlocks={staminaBlocks}
+      confidenceMatrix={confidenceMatrix}
       reviewQuestions={reviewData?.questions ?? []}
       questionHistory={reviewData?.questionHistory}
+      predictionData={predictionData}
+      recommendations={recommendations}
     />
   )
 }

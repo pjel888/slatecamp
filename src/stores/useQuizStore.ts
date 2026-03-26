@@ -12,11 +12,13 @@ import type {
   QuizMode,
   QuizSessionConfig,
   QuestionForClient,
+  QuestionType,
   QuizAnswerState,
   StartSessionResult,
   SubmitAnswerInput,
   EndSessionResult,
   FeedbackData,
+  ErrorDiagnostic,
 } from '@/types/quiz-config'
 
 // ---------------------------------------------------------------------------
@@ -38,7 +40,12 @@ interface FeedbackState {
   correctOptionId: string | null
   rationale: string | null
   wikiUrl: string | null
+  errorDiagnostic: ErrorDiagnostic | null
   nextButtonEnabled: boolean
+  // Generation effect fields
+  closeness: number | undefined
+  correctAnswer: string | undefined
+  questionType: QuestionType | undefined
 }
 
 interface UIState {
@@ -113,7 +120,7 @@ interface QuizStore {
 
   selectAnswer: (questionId: string, optionId: string) => void
   deselectAnswer: (questionId: string) => void
-  setConfidence: (questionId: string, level: 1 | 2 | 3) => void
+  setConfidence: (questionId: string, level: number) => void
   submitCurrentAnswer: () => Promise<void>
   skipCurrentQuestion: () => void
 
@@ -191,7 +198,11 @@ const defaultFeedback = (): FeedbackState => ({
   correctOptionId: null,
   rationale: null,
   wikiUrl: null,
+  errorDiagnostic: null,
   nextButtonEnabled: false,
+  closeness: undefined,
+  correctAnswer: undefined,
+  questionType: undefined,
 })
 
 const defaultUI = (): UIState => ({
@@ -418,6 +429,11 @@ export const useQuizStore = create<QuizStore>()(
                 correctOptionId: result.correctOptionId,
                 rationale: result.rationale,
                 wikiUrl: result.wikiArticleUrl,
+                errorDiagnostic: result.errorDiagnostic ?? null,
+                // Generation effect fields — forwarded from server result
+                closeness: result.closeness,
+                correctAnswer: result.correctAnswer,
+                questionType: result.questionType,
               })
             }
 
@@ -549,7 +565,11 @@ export const useQuizStore = create<QuizStore>()(
               correctOptionId: data.correctOptionId,
               rationale: data.rationale,
               wikiUrl: data.wikiUrl,
+              errorDiagnostic: data.errorDiagnostic ?? null,
               nextButtonEnabled: false,
+              closeness: data.closeness,
+              correctAnswer: data.correctAnswer,
+              questionType: data.questionType,
             },
           }),
 

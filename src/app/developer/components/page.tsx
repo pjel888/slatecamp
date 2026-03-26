@@ -17,13 +17,7 @@ import { Tabs as WikiTabs, Tab } from '@/components/wiki/WikiTabs'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { WikiMistakeCard } from '@/components/wiki/WikiMistakeCard'
 import { WikiMistakeList } from '@/components/wiki/WikiMistakeList'
-import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
-
-/* Live preview wrappers (client) */
-const SlideToSubmitPreview = () => {
-  'use client'
-  return <SlideToSubmit onSubmit={() => alert('Submitted!')} label="Slide to submit" />
-}
+import { SlideToSubmitPreview } from '@/app/developer/_components/SlideToSubmitPreview'
 
 export const metadata = {
   title: 'Component Library — SlateCamp Developer Portal',

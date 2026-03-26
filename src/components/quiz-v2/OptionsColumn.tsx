@@ -4,6 +4,7 @@ import { useEffect, useCallback } from 'react'
 import { Backspace } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { ConfidenceInput } from './ConfidenceInput'
 import { FeedbackPanel } from './FeedbackPanel'
 import { SlideToSubmit } from './SlideToSubmit'
 import type { QuestionForClient, FeedbackData, QuizSessionConfig } from '@/types/quiz-config'
@@ -11,9 +12,11 @@ import type { QuestionForClient, FeedbackData, QuizSessionConfig } from '@/types
 interface OptionsColumnProps {
   question: QuestionForClient
   selectedOptionId: string | null
+  confidenceLevel: 1 | 2 | 3 | null
   feedback: FeedbackData | null
   config: QuizSessionConfig
   onSelectOption: (optionId: string) => void
+  onConfidenceChange: (level: number) => void
   onSubmit: () => void
   onNext: () => void
 }
@@ -52,9 +55,11 @@ const LETTER_STATE_CLASSES: Record<string, string> = {
 export const OptionsColumn = ({
   question,
   selectedOptionId,
+  confidenceLevel,
   feedback,
   config,
   onSelectOption,
+  onConfidenceChange,
   onSubmit,
   onNext,
 }: OptionsColumnProps) => {
@@ -107,8 +112,8 @@ export const OptionsColumn = ({
             <div key={option.id} className="relative">
               <label
                 className={cn(
-                  'flex items-center gap-3 w-full rounded-md border px-4 py-3',
-                  'transition-all duration-150 ease-out',
+                  'flex items-center gap-3 w-full rounded-md border px-4 py-3 min-h-[52px]',
+                  'transition-colors duration-150 ease-out',
                   OPTION_STATE_CLASSES[state],
                   isDisabled && state === 'default' && 'pointer-events-none opacity-60',
                   isEliminated && !isSelected && 'opacity-50',
@@ -147,44 +152,53 @@ export const OptionsColumn = ({
                   {option.text}
                 </span>
 
-                {/* Inline eliminate / restore button — always visible, not submitted */}
-                {!isSubmitted && (
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      e.stopPropagation()
-                      toggleEliminate(question.question_id, option.id)
-                    }}
-                    className={cn(
-                      'flex-shrink-0 flex items-center justify-center',
-                      'w-8 h-8 rounded-sm',
-                      'transition-colors duration-150 ease-out',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
-                      isEliminated
+                {/* Inline eliminate / restore button — always present to prevent layout shift, invisible after submit */}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    if (!isSubmitted) toggleEliminate(question.question_id, option.id)
+                  }}
+                  disabled={isSubmitted}
+                  className={cn(
+                    'flex-shrink-0 flex items-center justify-center',
+                    'w-8 h-8 rounded-sm',
+                    'transition-colors duration-150 ease-out',
+                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+                    isSubmitted
+                      ? 'opacity-0 pointer-events-none'
+                      : isEliminated
                         ? 'text-[#D64545] hover:text-[#D64545] hover:bg-[#D64545]/10'
                         : 'text-[#8896A7] hover:text-[#4A5568]',
-                    )}
-                    aria-label={isEliminated ? `Restore option ${option.letter}` : `Eliminate option ${option.letter}`}
-                    aria-pressed={isEliminated}
-                  >
-                    <Backspace size={12} weight="regular" aria-hidden="true" />
-                  </button>
-                )}
+                  )}
+                  aria-label={isEliminated ? `Restore option ${option.letter}` : `Eliminate option ${option.letter}`}
+                  aria-pressed={isEliminated}
+                >
+                  <Backspace size={12} weight="regular" aria-hidden="true" />
+                </button>
               </label>
             </div>
           )
         })}
       </div>
 
-      {/* Slide-to-submit bar — always visible, disabled until option selected */}
-      {!isSubmitted && (
-        <SlideToSubmit
-          onSubmit={onSubmit}
-          label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
-          disabled={!hasAnswered}
+      {/* Confidence slider — always visible, disabled after submit. Hidden only in chill mode. */}
+      {config.mode !== 'chill' && (
+        <ConfidenceInput
+          value={confidenceLevel}
+          onChange={onConfidenceChange}
+          disabled={isSubmitted}
         />
       )}
+
+      {/* Slide-to-submit bar — always visible, disabled until option selected or after submit */}
+      <SlideToSubmit
+        onSubmit={onSubmit}
+        label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
+        disabled={!hasAnswered || isSubmitted}
+        checked={isSubmitted}
+      />
 
       {/* Inline feedback panel */}
       {showFeedbackPanel && selectedOptionId && (
@@ -194,6 +208,7 @@ export const OptionsColumn = ({
           selectedOptionId={selectedOptionId}
           gatedDelayMs={config.feedback.gatedProgressionDelayMs}
           onNext={onNext}
+          mode={config.mode}
         />
       )}
     </div>

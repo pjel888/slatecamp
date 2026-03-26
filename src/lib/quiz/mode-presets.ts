@@ -491,6 +491,10 @@ export const mergeWithPreset = (
     navigation: { ...preset.navigation, ...overrides.navigation },
     results: { ...preset.results, ...overrides.results },
     breaks: { ...preset.breaks, ...overrides.breaks },
+    // Top-level optionals — carry through if provided
+    pressure_level: overrides.pressure_level ?? preset.pressure_level,
+    interleave: overrides.interleave ?? preset.interleave,
+    interleave_ratio: overrides.interleave_ratio ?? preset.interleave_ratio,
   }
 }
 

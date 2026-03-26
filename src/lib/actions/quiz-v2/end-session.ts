@@ -6,6 +6,8 @@ import {
   triggerScoreChangeNotification,
   triggerZoneTransitionNotification,
 } from '@/lib/actions/notification-triggers'
+import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
+import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
 import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
 
 export const endSession = async (
@@ -95,6 +97,11 @@ export const endSession = async (
     }
     void triggerScoreChangeNotification(user.id, readinessScoreBefore, readinessScoreAfter, sessionTopicName)
     void triggerZoneTransitionNotification(user.id, readinessScoreBefore, readinessScoreAfter)
+  }
+
+  // 5b. Fire-and-forget post-session hooks (calibration snapshot, etc.)
+  if (finalStatus === 'completed') {
+    void runPostSessionHooks(user.id)
   }
 
   // 6. Determine results_available_at
@@ -233,6 +240,17 @@ export const endSession = async (
 
   const missedQuestionCount = totalQuestions - totalAnswered
 
+  // Generate feed-forward recommendations (non-blocking — fall back to empty)
+  let recommendations: EndSessionResult['recommendations'] = []
+  if (finalStatus === 'completed') {
+    try {
+      recommendations = await generateRecommendations(user.id, sessionId, 3)
+    } catch {
+      // Recommendations are non-critical; proceed without them
+      recommendations = []
+    }
+  }
+
   return {
     score: {
       correct: totalCorrect,
@@ -248,5 +266,6 @@ export const endSession = async (
     trailDayCompleted,
     nextTrailDay,
     missedQuestionCount,
+    recommendations,
   }
 }

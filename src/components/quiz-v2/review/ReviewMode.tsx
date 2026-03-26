@@ -132,6 +132,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
         image_alt_text: null,
         taxonomy_breadcrumb: current.taxonomyBreadcrumb,
         difficulty_label: 'Medium' as const,
+        question_type: 'mcq' as const,
         options: current.options.map((o) => ({
           id: o.id,
           letter: o.letter,
@@ -236,9 +237,6 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
         <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-[#D4DAE3] overflow-y-auto">
           <QuestionColumn
             question={questionForColumn}
-            confidenceLevel={null}
-            showConfidence={false}
-            onConfidenceChange={() => undefined}
           />
 
           {/* Rationale panel always visible in review */}

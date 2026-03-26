@@ -5,7 +5,10 @@ import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import { IntroSlide1 } from './IntroSlide1'
 import { IntroSlide2 } from './IntroSlide2'
 import { IntroSlide3 } from './IntroSlide3'
+import { PressureLevelSelector } from './PressureLevelSelector'
+import { SimulationChecklist } from './SimulationChecklist'
 import { MODE_LABELS, MODE_PRESETS, mergeWithPreset } from '@/lib/quiz/mode-presets'
+import { getUnlockedPressureLevel, type PressureLevel } from '@/lib/quiz/pressure-config'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import type { AdvancedConfig } from './IntroSlide3'
 
@@ -28,13 +31,14 @@ const SLIDE_COUNT: Record<QuizMode, number> = {
 interface SetupFlowProps {
   mode: QuizMode
   subjects?: TaxonomySubject[]
+  readinessScore?: number
   onBegin: (config: QuizSessionConfig) => void
   onBack?: () => void
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
+const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: SetupFlowProps) => {
   const slideCount = SLIDE_COUNT[mode]
   const [slideIndex, setSlideIndex] = useState(0)
   const [visible, setVisible] = useState(true)
@@ -45,6 +49,21 @@ const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
   )
   const [selectedTopics, setSelectedTopics] = useState<string[]>([])
   const [advancedConfig, setAdvancedConfig] = useState<AdvancedConfig | null>(null)
+  const [interleaveEnabled, setInterleaveEnabled] = useState(false)
+
+  // Pressure level state (storm/fullexam modes)
+  const hasPressureSelector = mode === 'storm' || mode === 'fullexam'
+  const maxUnlocked = getUnlockedPressureLevel(readinessScore)
+  const [pressureLevel, setPressureLevel] = useState<PressureLevel>(
+    hasPressureSelector ? Math.min(maxUnlocked, (mode === 'fullexam' ? 3 : 2)) as PressureLevel : 0,
+  )
+
+  // Simulation checklist gate (fullexam at pressure level 3)
+  const needsChecklist = mode === 'fullexam' && pressureLevel === 3
+  const [checklistPassed, setChecklistPassed] = useState(false)
+
+  // Interleaving only makes sense when specific topics are selected (otherwise there's nothing to interleave against)
+  const showInterleaveToggle = (mode === 'camp' || mode === 'custom') && selectedTopics.length > 0
 
   // Crossfade transition helper
   const transitionTo = (nextIndex: number) => {
@@ -60,10 +79,22 @@ const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
   /** Called from slide 1 "Begin" — either finishes or advances */
   const handleSlide1Begin = () => {
     if (slideCount === 1) {
+      // For fullexam at pressure 3, require checklist before finalizing
+      if (needsChecklist && !checklistPassed) {
+        setChecklistPassed(false)
+        transitionTo(1) // Show checklist as "slide 1"
+        return
+      }
       finalize(selectedTopics, null)
     } else {
       transitionTo(1)
     }
+  }
+
+  /** Called from simulation checklist "Start Simulation" */
+  const handleChecklistReady = () => {
+    setChecklistPassed(true)
+    finalize(selectedTopics, null)
   }
 
   /** Called from slide 2 "Continue" */
@@ -115,6 +146,17 @@ const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
         difficultyMode: adv.setup.difficultyMode,
         initialDifficulty: adv.setup.initialDifficulty,
       }
+    }
+
+    // Interleave config — only when user has opted in
+    if (showInterleaveToggle && interleaveEnabled) {
+      overrides.interleave = true
+      overrides.interleave_ratio = 0.3
+    }
+
+    // Pressure level — storm/fullexam modes
+    if (hasPressureSelector) {
+      overrides.pressure_level = pressureLevel
     }
 
     onBegin(mergeWithPreset(mode, overrides))
@@ -175,15 +217,35 @@ const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
         aria-atomic="true"
       >
         {slideIndex === 0 && (
-          <IntroSlide1
-            mode={mode}
-            questionCount={questionCount}
-            onCountChange={setQuestionCount}
-            onBegin={handleSlide1Begin}
-          />
+          <div className="space-y-6">
+            <IntroSlide1
+              mode={mode}
+              questionCount={questionCount}
+              onCountChange={setQuestionCount}
+              onBegin={handleSlide1Begin}
+              showInterleaveToggle={showInterleaveToggle}
+              interleaveEnabled={interleaveEnabled}
+              onInterleaveChange={setInterleaveEnabled}
+            />
+
+            {/* Pressure level selector for storm/fullexam */}
+            {hasPressureSelector && (
+              <PressureLevelSelector
+                currentRS={readinessScore}
+                selected={pressureLevel}
+                onChange={setPressureLevel}
+              />
+            )}
+          </div>
         )}
 
-        {slideIndex === 1 && (
+        {/* Simulation checklist (fullexam + pressure 3) replaces slide 1 */}
+        {slideIndex === 1 && needsChecklist && !checklistPassed && (
+          <SimulationChecklist onReady={handleChecklistReady} />
+        )}
+
+        {/* Normal slide 1 for multi-slide modes (subject/focused/custom) */}
+        {slideIndex === 1 && !(needsChecklist && !checklistPassed) && (
           <IntroSlide2
             mode={mode}
             subjects={subjects}

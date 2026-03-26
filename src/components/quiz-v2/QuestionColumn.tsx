@@ -1,26 +1,13 @@
 'use client'
 
-import { cn } from '@/lib/utils'
 import type { QuestionForClient } from '@/types/quiz-config'
 
 interface QuestionColumnProps {
   question: QuestionForClient
-  confidenceLevel: 1 | 2 | 3 | null
-  showConfidence: boolean
-  onConfidenceChange: (level: 1 | 2 | 3) => void
 }
-
-const CONFIDENCE_OPTIONS: { value: 1 | 2 | 3; label: string }[] = [
-  { value: 1, label: 'Guessing' },
-  { value: 2, label: 'Somewhat sure' },
-  { value: 3, label: 'Very sure' },
-]
 
 export const QuestionColumn = ({
   question,
-  confidenceLevel,
-  showConfidence,
-  onConfidenceChange,
 }: QuestionColumnProps) => {
   const headingId = `question-heading-${question.question_id}`
   const stemId = `question-stem-${question.question_id}`
@@ -30,6 +17,14 @@ export const QuestionColumn = ({
       {/* Topic breadcrumb */}
       <p className="text-xs text-[#8896A7] mb-3 leading-snug">
         {question.taxonomy_breadcrumb}
+        {question.is_interleaved && (
+          <span
+            className="ml-1.5 inline-flex items-center rounded-sm px-1.5 py-0.5 text-[11px] font-medium"
+            style={{ color: '#8896A7', backgroundColor: 'rgba(136,150,167,0.10)' }}
+          >
+            related topic
+          </span>
+        )}
       </p>
 
       {/* Question number */}
@@ -70,44 +65,6 @@ export const QuestionColumn = ({
         </figure>
       )}
 
-      {/* Confidence rating */}
-      {showConfidence && (
-        <fieldset className="mt-6 border-0 p-0 m-0">
-          <legend className="text-xs font-medium text-[#4A5568] mb-2">
-            How confident are you?
-          </legend>
-          <div className="flex gap-2 flex-wrap">
-            {CONFIDENCE_OPTIONS.map(opt => {
-              const inputId = `confidence-${question.question_id}-${opt.value}`
-              const isSelected = confidenceLevel === opt.value
-              return (
-                <label
-                  key={opt.value}
-                  htmlFor={inputId}
-                  className={cn(
-                    'flex items-center gap-1.5 px-3 py-1.5 rounded-sm border text-xs cursor-pointer',
-                    'transition-colors duration-150 ease-out select-none',
-                    isSelected
-                      ? 'bg-[#EEF2FC] border-[#1B3FC4] text-[#1B3FC4] font-medium'
-                      : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40',
-                  )}
-                >
-                  <input
-                    id={inputId}
-                    type="radio"
-                    name={`confidence-${question.question_id}`}
-                    value={opt.value}
-                    checked={isSelected}
-                    onChange={() => onConfidenceChange(opt.value)}
-                    className="sr-only"
-                  />
-                  {opt.label}
-                </label>
-              )
-            })}
-          </div>
-        </fieldset>
-      )}
     </section>
   )
 }

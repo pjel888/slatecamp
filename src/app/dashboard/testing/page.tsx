@@ -4,6 +4,11 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/constants/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
+import {
+  getActiveSRCycles,
+  getDueSRCycles,
+  getUserSRProgress,
+} from '@/lib/actions/quiz-v2/successive-relearning'
 
 /** Async content — fetches data then renders */
 const TestingContent = async () => {
@@ -18,6 +23,9 @@ const TestingContent = async () => {
     { data: blindspotQueues },
     { data: profile },
     { data: weakNodes },
+    srActiveCycles,
+    srDueCycles,
+    srProgress,
   ] = await Promise.all([
     supabase
       .from('user_subscriptions')
@@ -53,6 +61,9 @@ const TestingContent = async () => {
       .lt('current_mastery_weight', 0.4)
       .order('current_mastery_weight', { ascending: true })
       .limit(5),
+    getActiveSRCycles(user.id).catch(() => []),
+    getDueSRCycles(user.id).catch(() => []),
+    getUserSRProgress(user.id).catch(() => ({ active: 0, spacing: 0, durable: 0, reset: 0, total: 0 })),
   ])
 
   const userTier = subscription?.tier ?? 'free'
@@ -76,6 +87,9 @@ const TestingContent = async () => {
       blindspotQueues={blindspotQueues ?? []}
       targetExamDate={profile?.target_exam_date ?? null}
       weakNodes={weakNodes ?? []}
+      srActiveCycles={srActiveCycles}
+      srDueCycles={srDueCycles}
+      srProgress={srProgress}
     />
   )
 }

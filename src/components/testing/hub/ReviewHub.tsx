@@ -4,8 +4,10 @@ import { useMemo, useState, useCallback } from 'react'
 import { WelcomeCard } from './WelcomeCard'
 import { SmartSuggestionCard } from './SmartSuggestionCard'
 import { InProgressBanner } from './InProgressBanner'
+import { DoseBanner } from './DoseBanner'
 import { ZoneSection } from './ZoneSection'
 import { SessionsTable } from './SessionsTable'
+import { SRSection } from './SRSection'
 import { SectionHeader } from '@/components/shared/section-header'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
 import { abandonTestingSession } from '@/lib/actions/testing'
@@ -17,6 +19,11 @@ import type {
   InProgressSessionInfo,
   ModeSource,
 } from '@/types/testing'
+import type {
+  SRActiveCycle,
+  SRDueCycle,
+  SRProgressSummary,
+} from '@/lib/actions/quiz-v2/successive-relearning'
 
 // ─── Raw session shape from page.tsx query ────────────────────────────────────
 
@@ -68,6 +75,9 @@ interface ReviewHubProps {
   blindspotQueues: RawBlindspotQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
+  srActiveCycles?: SRActiveCycle[]
+  srDueCycles?: SRDueCycle[]
+  srProgress?: SRProgressSummary
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -268,6 +278,9 @@ const ReviewHub = ({
   blindspotQueues,
   targetExamDate,
   weakNodes,
+  srActiveCycles = [],
+  srDueCycles = [],
+  srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
 }: ReviewHubProps) => {
   const sessionCount = completedSessions.length
   const isFirstTime = sessionCount === 0
@@ -330,6 +343,15 @@ const ReviewHub = ({
           />
         </header>
 
+        {/* ── Daily Dose recommendation banner ──────────────────── */}
+        {!isFirstTime && (
+          <DoseBanner
+            lastStudyDate={lastStudyDate}
+            targetExamDate={targetExamDate}
+            weakestSubject={weakNodes[0]?.taxonomy_tree?.subject_area ? getSubjectName(weakNodes[0].taxonomy_tree.subject_area) : null}
+          />
+        )}
+
         {/* ── Smart suggestion or Welcome card ────────────────────── */}
         {isFirstTime ? (
           <div className="mb-8">
@@ -368,6 +390,17 @@ const ReviewHub = ({
             opacity={getZoneOpacity(3, sessionCount)}
           />
         </div>
+
+        {/* ── Successive Relearning ─────────────────────────────── */}
+        {!isFirstTime && (
+          <div className="mt-10">
+            <SRSection
+              activeCycles={srActiveCycles}
+              dueCycles={srDueCycles}
+              progress={srProgress}
+            />
+          </div>
+        )}
 
         {/* ── Session History ──────────────────────────────────── */}
         <div className="mt-10">

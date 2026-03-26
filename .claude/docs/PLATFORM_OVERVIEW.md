@@ -78,7 +78,9 @@ Trail types: time-gated, subject mastery, code deep-dive, remediation, exam simu
 
 ### F. Analytics Dashboard
 
-Pacing Quadrant, Readiness Trajectory, Stamina Curve, Timeline Heatmap, Memory Health Map, Bloom Cognitive Tracker. Chart coaching annotations for pedagogical context.
+**Existing:** Pacing Quadrant, Readiness Trajectory, Stamina Curve, Timeline Heatmap, Memory Health Map, Bloom Cognitive Tracker. Chart coaching annotations for pedagogical context.
+
+**New (Metacognitive):** Calibration Curve, Calibration Score Card, Error Pattern Card, Memory Strength Quadrant, Forgetting Curves, Stamina Heatmap, Difficulty/Mastery Scatter, Study Velocity, Pacing/Accuracy, Exam Countdown, Progress Card, Simulation Trajectory, Exam Outcome Form.
 
 ### G. Additional Features
 
@@ -114,7 +116,45 @@ Quality calculation based on correctness, latency, and confidence. Adjusts ease 
 ### III. Readiness Score Engine (`src/lib/readiness-score.ts`)
 6-vector anti-inflation composite. PRC area-weighted (30/30/40). **Status: Implemented and live.**
 
-### IV. Pending IP Features
+### IV. Metacognitive Calibration System (NEW — 16 features implemented)
+
+**Confidence & Calibration:**
+- [x] Confidence-weighted scoring — 3-level input (Guessing/Partly sure/Confident) on every question
+- [x] Brier-based Calibration Score — 30-day rolling snapshot stored in `calibration_snapshots`
+- [x] Calibration Curve visualization — Recharts diagonal reference line, overconfidence/underconfidence fills
+- [x] 2x2 Diagnostic Matrix — Confident+Wrong quadrant drives priority review
+
+**Self-Assessment Training:**
+- [x] Pre-session Prediction Slider — "How do you think you'll do?" before Storm/FullExam
+- [x] Post-session Postdiction — "How do you think you did?" before score reveal
+- [x] Prediction vs Actual comparison card with trend tracking
+
+**Learning Engine:**
+- [x] Successive Relearning — 3 consecutive correct → spaced retests (1d/3d/7d/14d) → "durable"
+- [x] Interleaved Topic Mixing — 70/30 primary/sibling questions, gated at 60% mastery
+- [x] Generation Questions — numeric, short_text, formula with fuzzy answer matching (1.2x EMA weight)
+- [x] Progressive Pressure Ladder — 4 levels (Learning → Exam), unlocked by readiness score
+
+**Feedback Intelligence:**
+- [x] Wrong Answer Taxonomy — 6 error categories classified per interaction
+- [x] Feed-Forward Recommendation Engine — 3 post-session action cards
+- [x] Socratic AI Error Exploration — 5-turn Socratic chat + AI-generated mnemonics
+- [x] Pre-Questions Before Wiki — 3-5 MCQs before reading (g=1.25 effect size)
+
+**Retention & Scheduling:**
+- [x] Personalized Forgetting Rates — ACT-R decay model per user-topic
+- [x] Storage/Retrieval Strength — Bjork's Theory of Disuse (2-dimension memory model)
+- [x] Review Calendar — 7-day forward view with overdue/due/upcoming topics
+- [x] Cramming Detector — warns after 40+ questions on one topic in 4 hours
+- [x] Adaptive Daily Dose — one-tap personalized study session from 6 signal sources
+
+**Visualizations & Reporting:**
+- [x] 7 new analytics charts: Forgetting Curves, Stamina Heatmap, Difficulty/Mastery Scatter, Study Velocity, Pacing/Accuracy, Exam Countdown, Calibration Curve
+- [x] Monthly Progress Report — shareable card with Web Share API
+- [x] Simulation Trajectory — line chart tracking full-exam performance over time
+- [x] Exam Outcome Self-Reporting — for future pass-rate correlation
+
+### V. Pending IP Features
 - [ ] Lucky Guess Detector (time-threshold penalty on suspiciously fast correct answers)
 - [ ] Double-Pass LLM Verification (generator + auditor for zero-hallucination AI tutor)
 - [ ] 3D Bounds Breaking (visual code violation feedback with Warm Red material)

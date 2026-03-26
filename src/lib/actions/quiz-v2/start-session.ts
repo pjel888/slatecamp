@@ -3,6 +3,7 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { normalizeOptions } from '@/lib/utils/question'
+import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selection'
 import type {
   StartSessionInput,
   StartSessionResult,
@@ -28,6 +29,8 @@ const toClientQuestion = (
     difficulty: number
     topic_id: string
     breadcrumb?: string
+    is_interleaved?: boolean
+    question_type?: string
   },
   position: number,
 ): QuestionForClient => ({
@@ -38,6 +41,9 @@ const toClientQuestion = (
   image_alt_text: null,
   taxonomy_breadcrumb: q.breadcrumb ?? '',
   difficulty_label: toDifficultyLabel(q.difficulty ?? 0.5),
+  is_interleaved: q.is_interleaved ?? false,
+  question_type: (q.question_type as QuestionForClient['question_type']) ?? 'mcq',
+  unit: null,
   options: normalizeOptions(q.options),
 })
 
@@ -174,11 +180,94 @@ export const startSession = async (
   else if (initialDifficulty === 'medium') difficultyRange = { min: 0.4, max: 0.7 }
   else if (initialDifficulty === 'hard') difficultyRange = { min: 0.7, max: 1 }
 
+  // ── 4b. Interleaved selection path ─────────────────────────────────────────
+  // When interleave is enabled and we have resolved topic IDs, use the
+  // interleaved selection algorithm instead of the standard question fetch.
+  const useInterleaving = mergedConfig.interleave === true && topicIds.length > 0
+
+  if (useInterleaving) {
+    const interleaveRatio = mergedConfig.interleave_ratio ?? 0.3
+
+    console.log('[startSession] Using interleaved selection, ratio:', interleaveRatio, 'topics:', topicIds.length)
+
+    const interleavedQuestions = await selectQuestionsWithInterleaving({
+      primaryTopicIds: topicIds,
+      totalCount: questionCount,
+      interleaveRatio,
+      excludeQuestionIds: recentQuestionIds,
+      difficultyRange,
+    })
+
+    const interleavedIds = interleavedQuestions.map((q) => q.question_id)
+
+    // Fetch taxonomy breadcrumbs for interleaved questions
+    const ilUniqueTids = [...new Set(interleavedQuestions.map((q) => q.topic_id))]
+    const TAXONOMY_BATCH = 80
+    const ilTaxMap = new Map<string, string>()
+
+    for (let i = 0; i < ilUniqueTids.length; i += TAXONOMY_BATCH) {
+      const batch = ilUniqueTids.slice(i, i + TAXONOMY_BATCH)
+      const { data: taxonomyNodes } = await supabase
+        .from('taxonomy_tree')
+        .select('node_id, name, subject_area')
+        .in('node_id', batch)
+
+      for (const n of (taxonomyNodes ?? []) as Array<{ node_id: string; name: string; subject_area: string }>) {
+        ilTaxMap.set(n.node_id, `${n.subject_area} > ${n.name}`)
+      }
+    }
+
+    // Create session row
+    const { data: ilSession, error: ilSessionError } = await supabase
+      .from('quiz_sessions')
+      .insert({
+        user_id: user.id,
+        discipline_id: disciplineId,
+        test_mode: 'camp',
+        status: 'in_progress',
+        config: mergedConfig,
+        question_ids: interleavedIds,
+        subject_ids: ilUniqueTids,
+        started_at: new Date().toISOString(),
+      })
+      .select('session_id')
+      .single()
+
+    if (ilSessionError) {
+      console.error('[startSession] Failed to create interleaved session:', ilSessionError)
+      throw ilSessionError
+    }
+
+    console.log('[startSession] Interleaved session created:', ilSession.session_id, 'with', interleavedQuestions.length, 'questions')
+
+    const ilClientQuestions: QuestionForClient[] = interleavedQuestions.map(
+      (q, idx) =>
+        toClientQuestion(
+          {
+            ...q,
+            breadcrumb: ilTaxMap.get(q.topic_id) ?? '',
+            is_interleaved: q.is_interleaved,
+          },
+          idx + 1,
+        ),
+    )
+
+    return {
+      sessionId: ilSession.session_id,
+      config: mergedConfig,
+      questions: ilClientQuestions,
+      totalQuestions: ilClientQuestions.length,
+      readinessScoreBefore,
+    }
+  }
+
+  // ── Standard (non-interleaved) question selection ──────────────────────────
+
   // 5. Fetch questions
   let questionQuery = supabase
     .from('questions')
     .select(
-      'question_id, topic_id, text, options, difficulty, prompt_image_url',
+      'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type',
     )
     .limit(questionCount * 3) // fetch extras to allow exclusion filtering
 
@@ -299,6 +388,7 @@ export const startSession = async (
       prompt_image_url: string | null
       difficulty: number
       topic_id: string
+      question_type?: string
     }, idx: number) =>
       toClientQuestion(
         { ...q, breadcrumb: taxonomyMap.get(q.topic_id) ?? '' },

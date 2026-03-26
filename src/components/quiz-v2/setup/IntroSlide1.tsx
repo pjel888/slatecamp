@@ -57,6 +57,9 @@ interface IntroSlide1Props {
   questionCount: number
   onCountChange: (count: number) => void
   onBegin: () => void
+  showInterleaveToggle?: boolean
+  interleaveEnabled?: boolean
+  onInterleaveChange?: (enabled: boolean) => void
 }
 
 // ─── Per-mode question count options ─────────────────────────────────────────
@@ -72,7 +75,15 @@ const getCountOptions = (mode: QuizMode): number[] =>
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-const IntroSlide1 = ({ mode, questionCount, onCountChange, onBegin }: IntroSlide1Props) => {
+const IntroSlide1 = ({
+  mode,
+  questionCount,
+  onCountChange,
+  onBegin,
+  showInterleaveToggle = false,
+  interleaveEnabled = false,
+  onInterleaveChange,
+}: IntroSlide1Props) => {
   const Icon = MODE_ICONS[mode]
   const accent = isZone3(mode) ? '#E8853A' : '#1B3FC4'
   const iconBg = isZone3(mode) ? 'rgba(232,133,58,0.10)' : 'rgba(27,63,196,0.10)'
@@ -149,6 +160,47 @@ const IntroSlide1 = ({ mode, questionCount, onCountChange, onBegin }: IntroSlide
             options={countOptions}
           />
         </div>
+      )}
+
+      {/* Interleave toggle — camp & custom modes only */}
+      {showInterleaveToggle && (
+        <label
+          htmlFor="interleave-toggle"
+          className="flex items-start gap-3 rounded-md border border-[#D4DAE3] px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:border-[#1B3FC4]/40"
+          style={interleaveEnabled ? { borderColor: '#1B3FC4', backgroundColor: '#EEF2FC' } : undefined}
+        >
+          <input
+            id="interleave-toggle"
+            type="checkbox"
+            role="switch"
+            checked={interleaveEnabled}
+            onChange={(e) => onInterleaveChange?.(e.target.checked)}
+            className="sr-only peer"
+            aria-describedby="interleave-description"
+          />
+          {/* Custom toggle track */}
+          <span
+            className="relative mt-0.5 flex h-5 w-9 shrink-0 rounded-full transition-colors duration-150 ease-out"
+            style={{ backgroundColor: interleaveEnabled ? '#1B3FC4' : '#D4DAE3' }}
+            aria-hidden="true"
+          >
+            <span
+              className="absolute top-0.5 left-0.5 h-4 w-4 rounded-full bg-white transition-transform duration-150 ease-out"
+              style={{ transform: interleaveEnabled ? 'translateX(16px)' : 'translateX(0)' }}
+            />
+          </span>
+          <span>
+            <span className="text-[13px] font-medium text-[#1A2332] block">
+              Shuffle in similar topics
+            </span>
+            <span
+              id="interleave-description"
+              className="text-[12px] text-[#8896A7] block mt-0.5"
+            >
+              Mixes in questions from similar subjects so you practice telling them apart
+            </span>
+          </span>
+        </label>
       )}
 
       {/* Begin button */}

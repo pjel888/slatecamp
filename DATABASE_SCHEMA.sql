@@ -1,1147 +1,1206 @@
--- ==========================================================================
--- SlateCamp DATABASE SCHEMA
--- Auto-generated from Supabase production database: 2026-03-26
--- 64 tables in public schema
--- ==========================================================================
-
--- ── disciplines ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.disciplines (
-  discipline_id                            uuid DEFAULT gen_random_uuid(),
-  name                                     text UNIQUE,
-  acronym                                  text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  passing_threshold_pct                    smallint DEFAULT 70,
-  subject_floor_pct                        smallint DEFAULT 50,
-  exam_day_1_subjects                      ARRAY DEFAULT '{}'::text[],
-  exam_day_2_subjects                      ARRAY DEFAULT '{}'::text[],
-  recent_passing_rates                     jsonb DEFAULT '{}'::jsonb
-);
-ALTER TABLE public.disciplines ENABLE ROW LEVEL SECURITY;
-
--- ── models_3d ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.models_3d (
-  model_id                                 uuid DEFAULT gen_random_uuid(),
-  name                                     text,
-  slug                                     text UNIQUE,
-  url                                      text,
-  thumbnail                                text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  status                                   text DEFAULT 'draft'::text,
-  metadata                                 jsonb DEFAULT '{}'::jsonb,
-  reviewed_by                              uuid,
-  reviewed_at                              timestamp with time zone,
-  context_scenario                         text,
-  ale_question_count                       integer,
-  ale_question_type                        text,
-  supported_phases                         ARRAY DEFAULT '{guided}'::text[],
-  has_challenge_mode                       boolean DEFAULT false
-);
-ALTER TABLE public.models_3d ENABLE ROW LEVEL SECURITY;
-
--- ── note_folders ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.note_folders (
-  folder_id                                uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  name                                     text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.note_folders ENABLE ROW LEVEL SECURITY;
-
--- ── notes ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.notes (
-  note_id                                  uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  folder_id                                uuid,
-  topic_id                                 uuid,
-  title                                    text DEFAULT 'Untitled Note'::text,
-  content                                  jsonb DEFAULT '[]'::jsonb,
-  source_url                               text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  is_pinned                                boolean DEFAULT false,
-  question_id                              uuid,
-  session_id                               uuid,
-  article_id                               uuid,
-  note_type                                text DEFAULT 'standard'::text,
-  tags                                     ARRAY DEFAULT '{}'::text[],
-  color                                    text
-);
-ALTER TABLE public.notes ENABLE ROW LEVEL SECURITY;
-
--- ── questions ────────────────────────────────────────────────
--- Rows: 4847 | RLS: enabled
-CREATE TABLE public.questions (
-  question_id                              uuid DEFAULT gen_random_uuid(),
-  topic_id                                 uuid,
-  text                                     text,
-  options                                  jsonb DEFAULT '[]'::jsonb,
-  correct_option_id                        text,
-  rationale                                jsonb,
-  difficulty                               numeric DEFAULT 0.50,
-  difficulty_rating                        numeric,
-  discrimination_rating                    numeric,
-  created_at                               timestamp with time zone DEFAULT now(),
-  prompt_image_url                         text,
-  explanation                              text,
-  code_citation                            text,
-  model_id                                 text,
-  is_assessment                            boolean DEFAULT false,
-  updated_at                               timestamp with time zone DEFAULT now(),
-  application_context                      text,
-  practice_context                         ARRAY DEFAULT '{}'::text[],
-  bloom_level                              text,
-  irt_difficulty                           double precision DEFAULT 0.0,
-  irt_discrimination                       double precision DEFAULT 1.0,
-  irt_guessing                             double precision DEFAULT 0.0,
-  irt_calibrated_at                        timestamp with time zone
-);
-ALTER TABLE public.questions ENABLE ROW LEVEL SECURITY;
-
--- ── quiz_sessions ────────────────────────────────────────────────
--- Rows: 22 | RLS: enabled
-CREATE TABLE public.quiz_sessions (
-  session_id                               uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  discipline_id                            uuid,
-  test_mode                                USER-DEFINED DEFAULT 'camp'::test_mode,
-  status                                   USER-DEFINED DEFAULT 'in_progress'::session_status,
-  config                                   jsonb DEFAULT '{}'::jsonb,
-  question_ids                             ARRAY DEFAULT '{}'::uuid[],
-  subject_ids                              ARRAY DEFAULT '{}'::uuid[],
-  current_question_index                   integer DEFAULT 0,
-  started_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  completed_at                             timestamp with time zone,
-  pre_session_confidence_ratings           jsonb DEFAULT '{}'::jsonb,
-  is_proof_simulation                      boolean DEFAULT false,
-  is_endurance_session                     boolean DEFAULT false,
-  accuracy_by_block                        jsonb DEFAULT '[]'::jsonb,
-  session_discovery                        jsonb,
-  mastery_snapshot_at_start                jsonb
-);
-ALTER TABLE public.quiz_sessions ENABLE ROW LEVEL SECURITY;
-
--- ── readiness_score_snapshots ────────────────────────────────────────────────
--- Rows: 2 | RLS: enabled
-CREATE TABLE public.readiness_score_snapshots (
-  snapshot_id                              uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  score                                    double precision,
-  sub_scores                               jsonb DEFAULT '{}'::jsonb,
-  computed_at                              timestamp with time zone DEFAULT now(),
-  session_id                               uuid,
-  is_proof_simulation                      boolean DEFAULT false,
-  analysis_available_at                    timestamp with time zone
-);
-ALTER TABLE public.readiness_score_snapshots ENABLE ROW LEVEL SECURITY;
-
--- ── spatial_hotspots ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.spatial_hotspots (
-  hotspot_id                               uuid DEFAULT gen_random_uuid(),
-  model_id                                 uuid,
-  node_id                                  uuid,
-  title                                    text,
-  description                              text,
-  position_x                               double precision,
-  position_y                               double precision,
-  position_z                               double precision,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  phase                                    text DEFAULT 'guided'::text,
-  question_id                              uuid,
-  reveal_order                             integer DEFAULT 1
-);
-ALTER TABLE public.spatial_hotspots ENABLE ROW LEVEL SECURITY;
-
--- ── taxonomy_tree ────────────────────────────────────────────────
--- Rows: 560 | RLS: enabled
-CREATE TABLE public.taxonomy_tree (
-  node_id                                  uuid DEFAULT gen_random_uuid(),
-  discipline_id                            uuid,
-  parent_id                                uuid,
-  level                                    smallint,
-  name                                     text,
-  subject_area                             text,
-  slug                                     text UNIQUE,
-  is_leaf                                  boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  ale_id                                   text UNIQUE,
-  node_type                                USER-DEFINED,
-  exam_frequency                           USER-DEFINED,
-  prc_area                                 text,
-  area_weight_pct                          smallint,
-  subject_weight_within_area_pct           smallint,
-  description                              text,
-  is_cross_ref_only                        boolean DEFAULT false,
-  deprecated_at                            timestamp with time zone,
-  wiki_items                               jsonb DEFAULT '[]'::jsonb,
-  bloom_level                              USER-DEFINED,
-  difficulty                               smallint,
-  typical_question_formats                 ARRAY DEFAULT '{}'::text[],
-  is_computation_heavy                     boolean DEFAULT false,
-  three_d_lab_linked                       boolean DEFAULT false,
-  mastery_criteria                         jsonb,
-  sort_order                               smallint
-);
-ALTER TABLE public.taxonomy_tree ENABLE ROW LEVEL SECURITY;
-
--- ── user_global_stats ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.user_global_stats (
-  user_id                                  uuid,
-  current_discipline_id                    uuid,
-  global_readiness_score                   double precision DEFAULT 0.0,
-  target_exam_date                         timestamp with time zone,
-  final_stretch_upsell_shown               boolean DEFAULT false,
-  updated_at                               timestamp with time zone DEFAULT now(),
-  signup_source                            text,
-  utm_campaign                             text,
-  utm_medium                               text,
-  utm_content                              text,
-  referral_code                            text,
-  first_session_at                         timestamp with time zone,
-  onboarding_completed_at                  timestamp with time zone,
-  assessment_completed_at                  timestamp with time zone,
-  assessment_score                         double precision,
-  first_touch_source                       text,
-  first_touch_campaign                     text,
-  last_touch_source                        text,
-  last_touch_campaign                      text,
-  acquisition_touchpoints                  jsonb DEFAULT '[]'::jsonb,
-  exam_attempt_number                      integer DEFAULT 1,
-  previous_exam_result                     text,
-  customer_archetype                       text,
-  churn_risk_score                         double precision DEFAULT 0,
-  churn_risk_updated_at                    timestamp with time zone,
-  score_velocity_7d                        double precision DEFAULT 0,
-  score_velocity_updated_at                timestamp with time zone,
-  free_questions_today                     integer DEFAULT 0,
-  free_questions_reset_date                date DEFAULT CURRENT_DATE,
-  score_reveal_shown_at                    timestamp with time zone,
-  global_current_streak                    integer DEFAULT 0,
-  global_longest_streak                    integer DEFAULT 0,
-  last_study_date                          date,
-  is_retaker                               boolean DEFAULT false,
-  onboarding_retaker_framing_shown         boolean DEFAULT false,
-  assessment_started_at                    timestamp with time zone,
-  proof_simulation_unlocked_at             timestamp with time zone,
-  last_active_date                         date,
-  readiness_sub_scores                     jsonb DEFAULT '{}'::jsonb
-);
-ALTER TABLE public.user_global_stats ENABLE ROW LEVEL SECURITY;
-
--- ── user_interactions ────────────────────────────────────────────────
--- Rows: 113 | RLS: enabled
-CREATE TABLE public.user_interactions (
-  interaction_id                           uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  session_id                               uuid,
-  question_id                              uuid,
-  topic_id                                 uuid,
-  selected_option_id                       text,
-  is_correct                               boolean,
-  time_spent_ms                            integer DEFAULT 0,
-  interaction_timestamp                    timestamp with time zone DEFAULT now(),
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  is_flagged                               boolean DEFAULT false,
-  answer_changes                           integer DEFAULT 0,
-  options_eliminated                       integer DEFAULT 0,
-  confidence                               text,
-  rationale_view_ms                        integer DEFAULT 0,
-  error_type                               text,
-  question_order                           integer,
-  is_suspected_lucky_guess                 boolean DEFAULT false,
-  source_type                              text DEFAULT 'quiz'::text
-);
-ALTER TABLE public.user_interactions ENABLE ROW LEVEL SECURITY;
-
--- ── user_node_mastery ────────────────────────────────────────────────
--- Rows: 45 | RLS: enabled
-CREATE TABLE public.user_node_mastery (
-  user_id                                  uuid,
-  topic_id                                 uuid,
-  total_attempts                           integer DEFAULT 0,
-  total_correct                            integer DEFAULT 0,
-  current_mastery_weight                   double precision DEFAULT 0.0,
-  avg_time_ms                              integer DEFAULT 0,
-  last_encountered                         timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  teach_back_attempted                     boolean DEFAULT false,
-  teach_back_gap_count                     integer DEFAULT 0,
-  next_review_at                           timestamp with time zone,
-  review_interval_days                     integer DEFAULT 1,
-  ease_factor                              double precision DEFAULT 2.5,
-  review_count                             integer DEFAULT 0,
-  consecutive_correct_streak               integer DEFAULT 0,
-  highest_difficulty_correct               smallint DEFAULT 0,
-  has_bloom_apply_correct                  boolean DEFAULT false,
-  has_bloom_analyze_correct                boolean DEFAULT false,
-  distinct_questions_seen                  integer DEFAULT 0
-);
-ALTER TABLE public.user_node_mastery ENABLE ROW LEVEL SECURITY;
-
--- ── user_subscriptions ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.user_subscriptions (
-  subscription_id                          uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid UNIQUE,
-  tier                                     USER-DEFINED DEFAULT 'free'::subscription_tier,
-  status                                   USER-DEFINED DEFAULT 'active'::subscription_status,
-  email_notifications_enabled              boolean DEFAULT true,
-  marketing_emails_enabled                 boolean DEFAULT false,
-  stripe_customer_id                       text,
-  stripe_subscription_id                   text,
-  payrex_customer_id                       text,
-  payrex_reference                         text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  converted_from_source                    text,
-  trial_started_at                         timestamp with time zone,
-  readiness_score_at_conversion            double precision,
-  free_questions_today                     integer DEFAULT 0,
-  free_cap_reset_date                      date,
-  amount                                   numeric,
-  cancelled_at                             timestamp with time zone
-);
-ALTER TABLE public.user_subscriptions ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_article_taxonomy ────────────────────────────────────────────────
--- Rows: 464 | RLS: enabled
-CREATE TABLE public.wiki_article_taxonomy (
-  article_id                               uuid,
-  node_id                                  uuid,
-  is_primary                               boolean DEFAULT false
-);
-ALTER TABLE public.wiki_article_taxonomy ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_articles ────────────────────────────────────────────────
--- Rows: 464 | RLS: enabled
-CREATE TABLE public.wiki_articles (
-  article_id                               uuid DEFAULT gen_random_uuid(),
-  title                                    text,
-  slug                                     text UNIQUE,
-  content                                  text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  status                                   text DEFAULT 'draft'::text,
-  reviewed_by                              uuid,
-  reviewed_at                              timestamp with time zone,
-  reviewer_comments                        text,
-  ale_tests_you                            text,
-  updated_note                             text,
-  subject_label                            text,
-  difficulty_label                         text,
-  read_time                                text
-);
-ALTER TABLE public.wiki_articles ENABLE ROW LEVEL SECURITY;
-
--- ── feature_flags ────────────────────────────────────────────────
--- Rows: 27 | RLS: enabled
-CREATE TABLE public.feature_flags (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  key                                      text UNIQUE,
-  description                              text,
-  enabled                                  boolean DEFAULT false,
-  target_tier                              ARRAY DEFAULT '{}'::text[],
-  target_roles                             ARRAY DEFAULT '{}'::text[],
-  created_by                               uuid,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.feature_flags ENABLE ROW LEVEL SECURITY;
-
--- ── organizations ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.organizations (
-  org_id                                   uuid DEFAULT gen_random_uuid(),
-  name                                     text,
-  slug                                     text UNIQUE,
-  type                                     USER-DEFINED DEFAULT 'regular'::user_type,
-  logo_url                                 text,
-  max_seats                                integer DEFAULT 10,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.organizations ENABLE ROW LEVEL SECURITY;
-
--- ── organization_members ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.organization_members (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  org_id                                   uuid,
-  user_id                                  uuid,
-  role                                     text,
-  joined_at                                timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.organization_members ENABLE ROW LEVEL SECURITY;
-
--- ── profiles ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.profiles (
-  id                                       uuid,
-  full_name                                text,
-  display_name                             text,
-  avatar_url                               text,
-  user_type                                text DEFAULT 'reviewee'::text,
-  discipline_id                            uuid,
-  target_exam_date                         date,
-  school_or_institution                    text,
-  onboarding_completed_at                  timestamp with time zone,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  preferred_study_window                   text DEFAULT 'any'::text,
-  reviewer_type                            text DEFAULT 'first_taker'::text,
-  previous_exam_subjects_struggled         jsonb DEFAULT '[]'::jsonb,
-  enrolled_review_center                   text,
-  comp_exam_scores                         jsonb,
-  comp_exam_date                           date,
-  ale_result                               text,
-  oath_taking_date                         date,
-  account_mode                             text DEFAULT 'review_mode'::text,
-  role                                     text DEFAULT 'member'::text,
-  dae_work_contexts                        ARRAY DEFAULT '{}'::text[],
-  dae_contexts_updated_at                  timestamp with time zone
-);
-ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
-
--- ── user_mastery_history ────────────────────────────────────────────────
--- Rows: 110 | RLS: enabled
-CREATE TABLE public.user_mastery_history (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  topic_id                                 uuid,
-  mastery_weight                           numeric,
-  total_correct                            integer DEFAULT 0,
-  total_attempts                           integer DEFAULT 0,
-  session_id                               uuid,
-  snapshot_reason                          text DEFAULT 'session_complete'::text,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.user_mastery_history ENABLE ROW LEVEL SECURITY;
-
--- ── analytics_events ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.analytics_events (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  event_name                               text,
-  event_properties                         jsonb DEFAULT '{}'::jsonb,
-  page_path                                text,
-  session_id                               uuid,
-  created_at                               timestamp with time zone DEFAULT now(),
-  referrer                                 text
-);
-ALTER TABLE public.analytics_events ENABLE ROW LEVEL SECURITY;
-
--- ── camp_trails ────────────────────────────────────────────────
--- Rows: 22 | RLS: enabled
-CREATE TABLE public.camp_trails (
-  trail_id                                 uuid DEFAULT gen_random_uuid(),
-  discipline_id                            uuid,
-  name                                     text,
-  slug                                     text UNIQUE,
-  description                              text,
-  trail_type                               USER-DEFINED,
-  intensity                                USER-DEFINED,
-  duration_days                            integer,
-  total_steps                              integer DEFAULT 0,
-  is_published                             boolean DEFAULT false,
-  is_featured                              boolean DEFAULT false,
-  recommended_min_score                    double precision,
-  recommended_max_score                    double precision,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  daily_time_estimate_minutes              integer DEFAULT 90,
-  subjects_covered                         ARRAY DEFAULT '{}'::text[],
-  is_free                                  boolean DEFAULT false
-);
-ALTER TABLE public.camp_trails ENABLE ROW LEVEL SECURITY;
-
--- ── trail_days ────────────────────────────────────────────────
--- Rows: 56 | RLS: enabled
-CREATE TABLE public.trail_days (
-  day_id                                   uuid DEFAULT gen_random_uuid(),
-  trail_id                                 uuid,
-  day_number                               integer,
-  title                                    text,
-  description                              text,
-  estimated_minutes                        integer DEFAULT 60,
-  created_at                               timestamp with time zone DEFAULT now(),
-  subject_focus                            text,
-  subject_color                            text,
-  is_rest_day                              boolean DEFAULT false,
-  is_phase_transition                      boolean DEFAULT false,
-  phase_name                               text
-);
-ALTER TABLE public.trail_days ENABLE ROW LEVEL SECURITY;
-
--- ── trail_steps ────────────────────────────────────────────────
--- Rows: 130 | RLS: enabled
-CREATE TABLE public.trail_steps (
-  step_id                                  uuid DEFAULT gen_random_uuid(),
-  day_id                                   uuid,
-  step_order                               integer,
-  step_type                                USER-DEFINED,
-  title                                    text,
-  description                              text,
-  target_node_ids                          ARRAY DEFAULT '{}'::uuid[],
-  question_count                           integer,
-  difficulty_min                           double precision DEFAULT 0.0,
-  difficulty_max                           double precision DEFAULT 1.0,
-  article_id                               uuid,
-  model_id                                 uuid,
-  estimated_minutes                        integer DEFAULT 15,
-  is_optional                              boolean DEFAULT false,
-  preferred_time                           text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  lab_phase                                text DEFAULT 'guided'::text,
-  is_computation_heavy                     boolean DEFAULT false
-);
-ALTER TABLE public.trail_steps ENABLE ROW LEVEL SECURITY;
-
--- ── user_trail_enrollments ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_trail_enrollments (
-  enrollment_id                            uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  trail_id                                 uuid,
-  status                                   USER-DEFINED DEFAULT 'active'::trail_enrollment_status,
-  current_day                              integer DEFAULT 1,
-  days_completed                           integer DEFAULT 0,
-  last_activity_at                         timestamp with time zone,
-  started_at                               timestamp with time zone DEFAULT now(),
-  paused_at                                timestamp with time zone,
-  completed_at                             timestamp with time zone,
-  target_completion_date                   timestamp with time zone,
-  readiness_score_at_start                 double precision,
-  pace_status                              text DEFAULT 'on_track'::text,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  current_streak                           integer DEFAULT 0,
-  longest_streak                           integer DEFAULT 0,
-  grace_days_used_this_week                integer DEFAULT 0,
-  last_streak_date                         date,
-  streak_grace_week_start                  date,
-  milestones_shown                         jsonb DEFAULT '[]'::jsonb,
-  days_completed_at_abandon                integer,
-  abandoned_at                             timestamp with time zone
-);
-ALTER TABLE public.user_trail_enrollments ENABLE ROW LEVEL SECURITY;
-
--- ── user_trail_progress ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_trail_progress (
-  progress_id                              uuid DEFAULT gen_random_uuid(),
-  enrollment_id                            uuid,
-  user_id                                  uuid,
-  step_id                                  uuid,
-  completed_at                             timestamp with time zone DEFAULT now(),
-  session_id                               uuid,
-  time_spent_ms                            integer
-);
-ALTER TABLE public.user_trail_progress ENABLE ROW LEVEL SECURITY;
-
--- ── trail_day_completions ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.trail_day_completions (
-  day_completion_id                        uuid DEFAULT gen_random_uuid(),
-  enrollment_id                            uuid,
-  day_id                                   uuid,
-  user_id                                  uuid,
-  completed_at                             timestamp with time zone DEFAULT now(),
-  readiness_score_at_completion            double precision,
-  mastery_before                           jsonb,
-  mastery_after                            jsonb,
-  all_steps_completed                      boolean DEFAULT false,
-  day_number                               integer
-);
-ALTER TABLE public.trail_day_completions ENABLE ROW LEVEL SECURITY;
-
--- ── session_trail_credits ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.session_trail_credits (
-  session_id                               uuid,
-  enrollment_id                            uuid,
-  step_id                                  uuid,
-  credited_at                              timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.session_trail_credits ENABLE ROW LEVEL SECURITY;
-
--- ── exam_outcomes ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.exam_outcomes (
-  outcome_id                               uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  discipline_id                            uuid,
-  exam_batch                               text,
-  result                                   text,
-  self_reported_score                      numeric,
-  peak_readiness_score                     double precision,
-  readiness_score_at_7d_before             double precision,
-  avg_session_accuracy                     double precision,
-  total_sessions_completed                 integer,
-  total_questions_answered                 integer,
-  days_active                              integer,
-  signup_source                            text,
-  customer_archetype                       text,
-  reported_at                              timestamp with time zone DEFAULT now(),
-  verified                                 boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.exam_outcomes ENABLE ROW LEVEL SECURITY;
-
--- ── blindspot_queues ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.blindspot_queues (
-  queue_id                                 uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  session_id                               uuid,
-  node_ids                                 ARRAY,
-  question_count                           integer DEFAULT 12,
-  generated_at                             timestamp with time zone DEFAULT now(),
-  deferred_until                           timestamp with time zone,
-  completed_at                             timestamp with time zone,
-  status                                   text DEFAULT 'pending'::text,
-  pre_queue_mastery                        jsonb DEFAULT '{}'::jsonb,
-  post_queue_mastery                       jsonb DEFAULT '{}'::jsonb,
-  nodes_improved                           integer DEFAULT 0,
-  recommendation_type                      text DEFAULT 'quiz'::text
-);
-ALTER TABLE public.blindspot_queues ENABLE ROW LEVEL SECURITY;
-
--- ── user_computed_signals ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_computed_signals (
-  user_id                                  uuid,
-  score_velocity_7d                        double precision DEFAULT 0,
-  score_velocity_updated_at                timestamp with time zone,
-  churn_risk_score                         double precision DEFAULT 0,
-  churn_risk_updated_at                    timestamp with time zone,
-  days_since_last_session                  integer,
-  sessions_last_7d                         integer DEFAULT 0,
-  computed_at                              timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  endurance_baseline_items                 integer,
-  endurance_window_items                   integer,
-  endurance_target_items                   integer DEFAULT 150,
-  endurance_last_updated                   timestamp with time zone,
-  calibration_accuracy                     double precision,
-  calibration_updated_at                   timestamp with time zone,
-  calibration_score                        double precision,
-  calibration_sessions_count               integer DEFAULT 0
-);
-ALTER TABLE public.user_computed_signals ENABLE ROW LEVEL SECURITY;
-
--- ── teach_back_submissions ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.teach_back_submissions (
-  submission_id                            uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  topic_id                                 uuid,
-  entry_point                              text,
-  trail_day_id                             uuid,
-  prompt_text                              text,
-  student_response                         text,
-  evaluation_result                        jsonb DEFAULT '{}'::jsonb,
-  gaps_identified                          ARRAY DEFAULT '{}'::text[],
-  revised_response                         text,
-  submitted_at                             timestamp with time zone DEFAULT now(),
-  revised_at                               timestamp with time zone,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.teach_back_submissions ENABLE ROW LEVEL SECURITY;
-
--- ── topic_teach_back_criteria ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.topic_teach_back_criteria (
-  criteria_id                              uuid DEFAULT gen_random_uuid(),
-  topic_id                                 uuid,
-  required_concepts                        ARRAY DEFAULT '{}'::text[],
-  required_exceptions                      ARRAY DEFAULT '{}'::text[],
-  common_misconceptions                    ARRAY DEFAULT '{}'::text[],
-  code_citations                           ARRAY DEFAULT '{}'::text[],
-  authored_by                              uuid,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.topic_teach_back_criteria ENABLE ROW LEVEL SECURITY;
-
--- ── user_endurance_profiles ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_endurance_profiles (
-  user_id                                  uuid,
-  baseline_reliable_items                  integer,
-  baseline_accuracy_decay_at               integer,
-  baseline_avg_accuracy                    double precision,
-  baseline_calibrated_at                   timestamp with time zone,
-  current_endurance_target                 integer,
-  endurance_window_minutes                 double precision,
-  endurance_sessions_completed             integer DEFAULT 0,
-  avg_seconds_per_question                 double precision,
-  pacing_target_seconds                    double precision DEFAULT 96,
-  pacing_updated_at                        timestamp with time zone,
-  consecutive_plateau_weeks                integer DEFAULT 0,
-  last_endurance_session_at                timestamp with time zone,
-  endurance_gate_pct                       double precision DEFAULT 
-CASE
-    WHEN ((pacing_target_seconds > (0)::double precision) AND (baseline_reliable_items > 0)) THEN LEAST((endurance_window_minutes / ((pacing_target_seconds * (baseline_reliable_items)::double precision) / (60.0)::double precision)), (1.0)::double precision)
-    ELSE (0)::double precision
-END,
-  computed_at                              timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.user_endurance_profiles ENABLE ROW LEVEL SECURITY;
-
--- ── user_push_tokens ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_push_tokens (
-  token_id                                 uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  token                                    text UNIQUE,
-  platform                                 text,
-  is_active                                boolean DEFAULT true,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.user_push_tokens ENABLE ROW LEVEL SECURITY;
-
--- ── notification_log ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.notification_log (
-  log_id                                   uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  trigger_type                             text,
-  channel                                  text,
-  sent_at                                  timestamp with time zone DEFAULT now(),
-  delivery_status                          text DEFAULT 'sent'::text
-);
-ALTER TABLE public.notification_log ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_article_reads ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.wiki_article_reads (
-  read_id                                  uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  article_id                               uuid,
-  read_at                                  timestamp with time zone DEFAULT now(),
-  read_pct                                 smallint DEFAULT 0,
-  time_spent_ms                            integer,
-  trail_step_id                            uuid
-);
-ALTER TABLE public.wiki_article_reads ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_ei_prompts ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.wiki_ei_prompts (
-  prompt_id                                uuid DEFAULT gen_random_uuid(),
-  article_id                               uuid,
-  node_id                                  uuid,
-  insert_after_heading                     text,
-  prompt_text                              text,
-  reveal_text                              text,
-  options                                  jsonb DEFAULT '[]'::jsonb,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now(),
-  sort_order                               smallint DEFAULT 0,
-  is_active                                boolean DEFAULT true,
-  status                                   text DEFAULT 'draft'::text,
-  reviewed_by                              uuid,
-  reviewed_at                              timestamp with time zone,
-  reviewer_notes                           text
-);
-ALTER TABLE public.wiki_ei_prompts ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_ei_responses ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.wiki_ei_responses (
-  response_id                              uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  prompt_id                                uuid,
-  response_text                            text,
-  selected_option_index                    smallint,
-  responded_at                             timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.wiki_ei_responses ENABLE ROW LEVEL SECURITY;
-
--- ── anon_diagnostic_sessions ────────────────────────────────────────────────
--- Rows: 0 | RLS: disabled
-CREATE TABLE public.anon_diagnostic_sessions (
-  anon_session_id                          uuid DEFAULT gen_random_uuid(),
-  browser_session_id                       text,
-  question_ids                             ARRAY DEFAULT '{}'::uuid[],
-  answers                                  jsonb DEFAULT '{}'::jsonb,
-  questions_answered                       integer DEFAULT 0,
-  started_at                               timestamp with time zone DEFAULT now(),
-  expires_at                               timestamp with time zone DEFAULT (now() + '02:00:00'::interval),
-  converted_user_id                        uuid
-);
-
--- ── campfire_testimonials ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.campfire_testimonials (
-  testimonial_id                           uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  display_name                             text,
-  school_name                              text,
-  starting_score                           double precision,
-  final_score                              double precision,
-  passed                                   boolean,
-  exam_batch                               text,
-  quote                                    text,
-  is_featured                              boolean DEFAULT false,
-  is_verified                              boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.campfire_testimonials ENABLE ROW LEVEL SECURITY;
-
--- ── taxonomy_cross_references ────────────────────────────────────────────────
--- Rows: 14 | RLS: enabled
-CREATE TABLE public.taxonomy_cross_references (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  source_node_id                           uuid,
-  target_node_id                           uuid,
-  relationship_type                        text DEFAULT 'law_applies_to'::text,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.taxonomy_cross_references ENABLE ROW LEVEL SECURITY;
-
--- ── taxonomy_sources ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.taxonomy_sources (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  node_id                                  uuid,
-  label                                    text,
-  url                                      text DEFAULT 'TBD'::text,
-  source_type                              USER-DEFINED,
-  is_verified                              boolean DEFAULT false,
-  sort_order                               smallint DEFAULT 0,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.taxonomy_sources ENABLE ROW LEVEL SECURITY;
-
--- ── taxonomy_prerequisites ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.taxonomy_prerequisites (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  subtopic_id                              uuid,
-  prerequisite_id                          uuid,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.taxonomy_prerequisites ENABLE ROW LEVEL SECURITY;
-
--- ── design_problems ────────────────────────────────────────────────
--- Rows: 5 | RLS: enabled
-CREATE TABLE public.design_problems (
-  problem_id                               uuid DEFAULT gen_random_uuid(),
-  title                                    text,
-  building_type                            text,
-  difficulty                               integer,
-  time_limit_minutes                       integer DEFAULT 180,
-  brief                                    text,
-  program                                  jsonb DEFAULT '{}'::jsonb,
-  site_data                                jsonb DEFAULT '{}'::jsonb,
-  code_references                          ARRAY DEFAULT '{}'::text[],
-  is_published                             boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.design_problems ENABLE ROW LEVEL SECURITY;
-
--- ── design_problem_sessions ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.design_problem_sessions (
-  session_id                               uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  problem_id                               uuid,
-  started_at                               timestamp with time zone DEFAULT now(),
-  completed_at                             timestamp with time zone,
-  time_elapsed_seconds                     integer,
-  self_assessment_score                    integer,
-  checklist_completion                     jsonb DEFAULT '{}'::jsonb
-);
-ALTER TABLE public.design_problem_sessions ENABLE ROW LEVEL SECURITY;
-
--- ── study_pods ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.study_pods (
-  pod_id                                   uuid DEFAULT gen_random_uuid(),
-  pod_name                                 text,
-  created_by                               uuid,
-  max_members                              integer DEFAULT 6,
-  created_at                               timestamp with time zone DEFAULT now(),
-  invite_code                              text UNIQUE DEFAULT encode(extensions.gen_random_bytes(6), 'hex'::text)
-);
-ALTER TABLE public.study_pods ENABLE ROW LEVEL SECURITY;
-
--- ── pod_members ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.pod_members (
-  pod_id                                   uuid,
-  user_id                                  uuid,
-  joined_at                                timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.pod_members ENABLE ROW LEVEL SECURITY;
-
--- ── oath_taking_schedules ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.oath_taking_schedules (
-  schedule_id                              uuid DEFAULT gen_random_uuid(),
-  oath_date                                date,
-  region                                   text,
-  venue                                    text,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.oath_taking_schedules ENABLE ROW LEVEL SECURITY;
-
--- ── code_updates ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.code_updates (
-  update_id                                uuid DEFAULT gen_random_uuid(),
-  ale_id                                   text,
-  summary                                  text,
-  previous_value                           text,
-  new_value                                text,
-  effective_date                           date,
-  is_ale_testable                          boolean DEFAULT true,
-  published_at                             timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.code_updates ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_article_sources ────────────────────────────────────────────────
--- Rows: 1110 | RLS: enabled
-CREATE TABLE public.wiki_article_sources (
-  source_id                                uuid DEFAULT gen_random_uuid(),
-  article_id                               uuid,
-  label                                    text,
-  url                                      text,
-  source_type                              USER-DEFINED,
-  description                              text,
-  sort_order                               smallint DEFAULT 0,
-  is_verified                              boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.wiki_article_sources ENABLE ROW LEVEL SECURITY;
-
--- ── wiki_bookmarks ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.wiki_bookmarks (
-  bookmark_id                              uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  article_id                               uuid,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.wiki_bookmarks ENABLE ROW LEVEL SECURITY;
-
--- ── design_scenarios ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.design_scenarios (
-  scenario_id                              uuid DEFAULT gen_random_uuid(),
-  scenario_code                            text UNIQUE,
-  title                                    text,
-  building_type                            text,
-  zone_code                                text,
-  occupancy_category                       USER-DEFINED,
-  difficulty                               smallint,
-  time_limit_minutes                       smallint,
-  brief                                    text,
-  site_data                                jsonb,
-  program                                  jsonb,
-  computation_sheet                        jsonb,
-  hidden_traps                             jsonb,
-  code_references                          ARRAY DEFAULT '{}'::text[],
-  question_count                           smallint DEFAULT 0,
-  trap_count                               smallint DEFAULT 0,
-  is_published                             boolean DEFAULT false,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.design_scenarios ENABLE ROW LEVEL SECURITY;
-
--- ── design_questions ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.design_questions (
-  question_id                              uuid DEFAULT gen_random_uuid(),
-  scenario_id                              uuid,
-  number                                   smallint,
-  type                                     USER-DEFINED,
-  question_stem                            text,
-  options                                  jsonb DEFAULT '[]'::jsonb,
-  correct_answer_index                     smallint,
-  rationale                                jsonb,
-  solution_steps                           ARRAY DEFAULT '{}'::text[],
-  code_citation                            text,
-  wiki_ref                                 text,
-  bloom_level                              text,
-  is_trap_question                         boolean DEFAULT false,
-  difficulty                               numeric DEFAULT 0.50,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.design_questions ENABLE ROW LEVEL SECURITY;
-
--- ── user_question_responses ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_question_responses (
-  response_id                              uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  question_id                              uuid,
-  session_id                               uuid,
-  answered_at                              timestamp with time zone DEFAULT now(),
-  is_correct                               boolean,
-  selected_option                          text,
-  time_taken_ms                            integer,
-  confidence_level                         smallint
-);
-ALTER TABLE public.user_question_responses ENABLE ROW LEVEL SECURITY;
-
--- ── user_roles ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.user_roles (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  role                                     character varying,
-  created_at                               timestamp with time zone DEFAULT now(),
-  created_by                               uuid
-);
-ALTER TABLE public.user_roles ENABLE ROW LEVEL SECURITY;
-
--- ── ceo_financial_entries ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.ceo_financial_entries (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  entry_date                               date,
-  entry_type                               USER-DEFINED,
-  category                                 text,
-  amount_php                               numeric,
-  description                              text,
-  is_recurring                             boolean DEFAULT false,
-  created_by                               uuid,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.ceo_financial_entries ENABLE ROW LEVEL SECURITY;
-
--- ── ceo_team_members ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.ceo_team_members (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  display_name                             text,
-  role_title                               text,
-  department                               USER-DEFINED,
-  monthly_cost_php                         numeric,
-  system_role                              USER-DEFINED DEFAULT 'member'::system_role_type,
-  start_date                               date,
-  end_date                                 date,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.ceo_team_members ENABLE ROW LEVEL SECURITY;
-
--- ── ceo_gate_status ────────────────────────────────────────────────
--- Rows: 1 | RLS: enabled
-CREATE TABLE public.ceo_gate_status (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  gate_number                              smallint,
-  entered_at                               timestamp with time zone DEFAULT now(),
-  exit_conditions_met                      jsonb DEFAULT '{}'::jsonb,
-  notes                                    text,
-  created_by                               uuid,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.ceo_gate_status ENABLE ROW LEVEL SECURITY;
-
--- ── ceo_cash_balance_entries ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.ceo_cash_balance_entries (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  balance_date                             date,
-  amount_php                               numeric,
-  notes                                    text,
-  created_by                               uuid,
-  created_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.ceo_cash_balance_entries ENABLE ROW LEVEL SECURITY;
-
--- ── user_theta ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.user_theta (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  discipline_id                            uuid,
-  theta                                    double precision DEFAULT 0.0,
-  theta_se                                 double precision DEFAULT 1.0,
-  responses_count                          integer DEFAULT 0,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.user_theta ENABLE ROW LEVEL SECURITY;
-
--- ── user_srs_cards ────────────────────────────────────────────────
--- Rows: 43 | RLS: enabled
-CREATE TABLE public.user_srs_cards (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  node_id                                  text,
-  ease_factor                              double precision DEFAULT 2.5,
-  interval_days                            double precision DEFAULT 1.0,
-  repetitions                              integer DEFAULT 0,
-  quality_last                             integer,
-  next_review_at                           timestamp with time zone DEFAULT now(),
-  last_reviewed_at                         timestamp with time zone,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.user_srs_cards ENABLE ROW LEVEL SECURITY;
-
--- ── notifications ────────────────────────────────────────────────
--- Rows: 3 | RLS: enabled
-CREATE TABLE public.notifications (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid,
-  type                                     USER-DEFINED,
-  title                                    text,
-  body                                     text,
-  metadata                                 jsonb DEFAULT '{}'::jsonb,
-  read_at                                  timestamp with time zone,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.notifications ENABLE ROW LEVEL SECURITY;
-
--- ── notification_preferences ────────────────────────────────────────────────
--- Rows: 0 | RLS: enabled
-CREATE TABLE public.notification_preferences (
-  id                                       uuid DEFAULT gen_random_uuid(),
-  user_id                                  uuid UNIQUE,
-  score_changes                            boolean DEFAULT true,
-  trail_ready                              boolean DEFAULT true,
-  blindspot                                boolean DEFAULT true,
-  milestones                               boolean DEFAULT true,
-  campfire                                 boolean DEFAULT true,
-  content_updates                          boolean DEFAULT true,
-  weekly_digest                            boolean DEFAULT true,
-  coaching_tips                            boolean DEFAULT false,
-  billing                                  boolean DEFAULT true,
-  daily_digest                             boolean DEFAULT false,
-  quiet_hours_start                        time without time zone,
-  quiet_hours_end                          time without time zone,
-  created_at                               timestamp with time zone DEFAULT now(),
-  updated_at                               timestamp with time zone DEFAULT now()
-);
-ALTER TABLE public.notification_preferences ENABLE ROW LEVEL SECURITY;
-
--- End of schema
+-- ============================================================================
+-- SlateCamp Database Schema — Generated 2026-03-26
+-- 72 tables · 1 view(s) · Supabase (PostgreSQL 17)
+-- ============================================================================
+
+-- ============================================================================
+-- 1. Core
+-- ============================================================================
+
+-- ─── Table: profiles ────────────────────────────────────────────────────
+CREATE TABLE profiles (
+  id                                       UUID NOT NULL,
+  full_name                                TEXT,
+  display_name                             TEXT,
+  avatar_url                               TEXT,
+  user_type                                TEXT DEFAULT 'reviewee',
+  discipline_id                            UUID,
+  target_exam_date                         DATE,
+  school_or_institution                    TEXT,
+  onboarding_completed_at                  TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ DEFAULT now(),
+  updated_at                               TIMESTAMPTZ DEFAULT now(),
+  preferred_study_window                   TEXT DEFAULT 'any',
+  reviewer_type                            TEXT DEFAULT 'first_taker',
+  previous_exam_subjects_struggled         JSONB DEFAULT '[]'::JSONB,
+  enrolled_review_center                   TEXT,
+  comp_exam_scores                         JSONB,
+  comp_exam_date                           DATE,
+  ale_result                               TEXT,
+  oath_taking_date                         DATE,
+  account_mode                             TEXT DEFAULT 'review_mode',
+  role                                     TEXT DEFAULT 'member',
+  dae_work_contexts                        TEXT[] DEFAULT '{}',
+  dae_contexts_updated_at                  TIMESTAMPTZ,
+  school_name                              TEXT,
+  region                                   TEXT
+);
+
+-- ─── Table: disciplines ─────────────────────────────────────────────────
+CREATE TABLE disciplines (
+  discipline_id                            UUID NOT NULL DEFAULT gen_random_uuid(),
+  name                                     TEXT NOT NULL,
+  acronym                                  TEXT NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  passing_threshold_pct                    SMALLINT NOT NULL DEFAULT 70,
+  subject_floor_pct                        SMALLINT NOT NULL DEFAULT 50,
+  exam_day_1_subjects                      TEXT[] DEFAULT '{}',
+  exam_day_2_subjects                      TEXT[] DEFAULT '{}',
+  recent_passing_rates                     JSONB DEFAULT '{}'::JSONB
+);
+
+-- ─── Table: organizations ───────────────────────────────────────────────
+CREATE TABLE organizations (
+  org_id                                   UUID NOT NULL DEFAULT gen_random_uuid(),
+  name                                     TEXT NOT NULL,
+  slug                                     TEXT NOT NULL,
+  type                                     USER_TYPE NOT NULL DEFAULT 'regular',
+  logo_url                                 TEXT,
+  max_seats                                INTEGER NOT NULL DEFAULT 10,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: organization_members ────────────────────────────────────────
+CREATE TABLE organization_members (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  org_id                                   UUID NOT NULL,
+  user_id                                  UUID NOT NULL,
+  role                                     TEXT NOT NULL,
+  joined_at                                TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: user_roles ──────────────────────────────────────────────────
+CREATE TABLE user_roles (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  role                                     VARCHAR(20) NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  created_by                               UUID
+);
+
+-- ─── Table: user_subscriptions ──────────────────────────────────────────
+CREATE TABLE user_subscriptions (
+  subscription_id                          UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  tier                                     SUBSCRIPTION_TIER NOT NULL DEFAULT 'free',
+  status                                   SUBSCRIPTION_STATUS NOT NULL DEFAULT 'active',
+  email_notifications_enabled              BOOLEAN DEFAULT TRUE,
+  marketing_emails_enabled                 BOOLEAN DEFAULT FALSE,
+  stripe_customer_id                       TEXT,
+  stripe_subscription_id                   TEXT,
+  payrex_customer_id                       TEXT,
+  payrex_reference                         TEXT,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  converted_from_source                    TEXT,
+  trial_started_at                         TIMESTAMPTZ,
+  readiness_score_at_conversion            DOUBLE PRECISION,
+  free_questions_today                     INTEGER NOT NULL DEFAULT 0,
+  free_cap_reset_date                      DATE,
+  amount                                   NUMERIC(10,2),
+  cancelled_at                             TIMESTAMPTZ
+);
+
+-- ─── Table: user_push_tokens ────────────────────────────────────────────
+CREATE TABLE user_push_tokens (
+  token_id                                 UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  token                                    TEXT NOT NULL,
+  platform                                 TEXT NOT NULL,
+  is_active                                BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: oath_taking_schedules ───────────────────────────────────────
+CREATE TABLE oath_taking_schedules (
+  schedule_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  oath_date                                DATE NOT NULL,
+  region                                   TEXT NOT NULL,
+  venue                                    TEXT,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: study_pods ──────────────────────────────────────────────────
+CREATE TABLE study_pods (
+  pod_id                                   UUID NOT NULL DEFAULT gen_random_uuid(),
+  pod_name                                 TEXT,
+  created_by                               UUID,
+  max_members                              INTEGER NOT NULL DEFAULT 6,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  invite_code                              TEXT DEFAULT encode(gen_random_bytes(6), 'hex'::text)
+);
+
+-- ─── Table: pod_members ─────────────────────────────────────────────────
+CREATE TABLE pod_members (
+  pod_id                                   UUID NOT NULL,
+  user_id                                  UUID NOT NULL,
+  joined_at                                TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 2. Content
+-- ============================================================================
+
+-- ─── Table: questions ───────────────────────────────────────────────────
+CREATE TABLE questions (
+  question_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  topic_id                                 UUID NOT NULL,
+  text                                     TEXT NOT NULL,
+  options                                  JSONB NOT NULL DEFAULT '[]'::JSONB,
+  correct_option_id                        TEXT NOT NULL,
+  rationale                                JSONB,
+  difficulty                               NUMERIC DEFAULT 0.50,
+  difficulty_rating                        NUMERIC,
+  discrimination_rating                    NUMERIC,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  prompt_image_url                         TEXT,
+  explanation                              TEXT,
+  code_citation                            TEXT,
+  model_id                                 TEXT,
+  is_assessment                            BOOLEAN DEFAULT FALSE,
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  application_context                      TEXT,
+  practice_context                         TEXT[] DEFAULT '{}',
+  bloom_level                              TEXT,
+  irt_difficulty                           DOUBLE PRECISION DEFAULT 0.0,
+  irt_discrimination                       DOUBLE PRECISION DEFAULT 1.0,
+  irt_guessing                             DOUBLE PRECISION DEFAULT 0.0,
+  irt_calibrated_at                        TIMESTAMPTZ,
+  question_type                            TEXT DEFAULT 'mcq',
+  correct_value                            NUMERIC,
+  value_tolerance                          NUMERIC DEFAULT 0,
+  accepted_answers                         TEXT[]
+);
+
+-- ─── Table: taxonomy_tree ───────────────────────────────────────────────
+CREATE TABLE taxonomy_tree (
+  node_id                                  UUID NOT NULL DEFAULT gen_random_uuid(),
+  discipline_id                            UUID NOT NULL,
+  parent_id                                UUID,
+  level                                    SMALLINT NOT NULL,
+  name                                     TEXT NOT NULL,
+  subject_area                             TEXT NOT NULL,
+  slug                                     TEXT,
+  is_leaf                                  BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  ale_id                                   TEXT,
+  node_type                                TAXONOMY_NODE_TYPE,
+  exam_frequency                           EXAM_FREQUENCY_LEVEL,
+  prc_area                                 TEXT,
+  area_weight_pct                          SMALLINT,
+  subject_weight_within_area_pct           SMALLINT,
+  description                              TEXT,
+  is_cross_ref_only                        BOOLEAN NOT NULL DEFAULT FALSE,
+  deprecated_at                            TIMESTAMPTZ,
+  wiki_items                               JSONB NOT NULL DEFAULT '[]'::JSONB,
+  bloom_level                              BLOOM_LEVEL_TYPE,
+  difficulty                               SMALLINT,
+  typical_question_formats                 TEXT[] NOT NULL DEFAULT '{}',
+  is_computation_heavy                     BOOLEAN NOT NULL DEFAULT FALSE,
+  three_d_lab_linked                       BOOLEAN NOT NULL DEFAULT FALSE,
+  mastery_criteria                         JSONB,
+  sort_order                               SMALLINT
+);
+
+-- ─── Table: taxonomy_cross_references ───────────────────────────────────
+CREATE TABLE taxonomy_cross_references (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  source_node_id                           UUID NOT NULL,
+  target_node_id                           UUID NOT NULL,
+  relationship_type                        TEXT NOT NULL DEFAULT 'law_applies_to',
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: taxonomy_prerequisites ──────────────────────────────────────
+CREATE TABLE taxonomy_prerequisites (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  subtopic_id                              UUID NOT NULL,
+  prerequisite_id                          UUID NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: taxonomy_sources ────────────────────────────────────────────
+CREATE TABLE taxonomy_sources (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  node_id                                  UUID NOT NULL,
+  label                                    TEXT NOT NULL,
+  url                                      TEXT NOT NULL DEFAULT 'TBD',
+  source_type                              TAXONOMY_SOURCE_TYPE NOT NULL,
+  is_verified                              BOOLEAN NOT NULL DEFAULT FALSE,
+  sort_order                               SMALLINT NOT NULL DEFAULT 0,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: wiki_articles ───────────────────────────────────────────────
+CREATE TABLE wiki_articles (
+  article_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  title                                    TEXT NOT NULL,
+  slug                                     TEXT NOT NULL,
+  content                                  TEXT NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  status                                   TEXT DEFAULT 'draft',
+  reviewed_by                              UUID,
+  reviewed_at                              TIMESTAMPTZ,
+  reviewer_comments                        TEXT,
+  ale_tests_you                            TEXT,
+  updated_note                             TEXT,
+  subject_label                            TEXT,
+  difficulty_label                         TEXT,
+  read_time                                TEXT
+);
+
+-- ─── Table: wiki_article_reads ──────────────────────────────────────────
+CREATE TABLE wiki_article_reads (
+  read_id                                  UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  article_id                               UUID NOT NULL,
+  read_at                                  TIMESTAMPTZ NOT NULL DEFAULT now(),
+  read_pct                                 SMALLINT NOT NULL DEFAULT 0,
+  time_spent_ms                            INTEGER,
+  trail_step_id                            UUID
+);
+
+-- ─── Table: wiki_article_sources ────────────────────────────────────────
+CREATE TABLE wiki_article_sources (
+  source_id                                UUID NOT NULL DEFAULT gen_random_uuid(),
+  article_id                               UUID NOT NULL,
+  label                                    TEXT NOT NULL,
+  url                                      TEXT,
+  source_type                              TAXONOMY_SOURCE_TYPE NOT NULL,
+  description                              TEXT,
+  sort_order                               SMALLINT NOT NULL DEFAULT 0,
+  is_verified                              BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: wiki_article_taxonomy ───────────────────────────────────────
+CREATE TABLE wiki_article_taxonomy (
+  article_id                               UUID NOT NULL,
+  node_id                                  UUID NOT NULL,
+  is_primary                               BOOLEAN DEFAULT FALSE
+);
+
+-- ─── Table: wiki_bookmarks ──────────────────────────────────────────────
+CREATE TABLE wiki_bookmarks (
+  bookmark_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  article_id                               UUID NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: wiki_ei_prompts ─────────────────────────────────────────────
+CREATE TABLE wiki_ei_prompts (
+  prompt_id                                UUID NOT NULL DEFAULT gen_random_uuid(),
+  article_id                               UUID NOT NULL,
+  node_id                                  UUID,
+  insert_after_heading                     TEXT NOT NULL,
+  prompt_text                              TEXT NOT NULL,
+  reveal_text                              TEXT NOT NULL,
+  options                                  JSONB DEFAULT '[]'::JSONB,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  sort_order                               SMALLINT NOT NULL DEFAULT 0,
+  is_active                                BOOLEAN NOT NULL DEFAULT TRUE,
+  status                                   TEXT NOT NULL DEFAULT 'draft',
+  reviewed_by                              UUID,
+  reviewed_at                              TIMESTAMPTZ,
+  reviewer_notes                           TEXT
+);
+
+-- ─── Table: wiki_ei_responses ───────────────────────────────────────────
+CREATE TABLE wiki_ei_responses (
+  response_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  prompt_id                                UUID NOT NULL,
+  response_text                            TEXT,
+  selected_option_index                    SMALLINT,
+  responded_at                             TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 3. Quiz Engine
+-- ============================================================================
+
+-- ─── Table: quiz_sessions ───────────────────────────────────────────────
+CREATE TABLE quiz_sessions (
+  session_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  discipline_id                            UUID,
+  test_mode                                TEST_MODE NOT NULL DEFAULT 'camp',
+  status                                   SESSION_STATUS NOT NULL DEFAULT 'in_progress',
+  config                                   JSONB NOT NULL DEFAULT '{}'::JSONB,
+  question_ids                             UUID[] NOT NULL DEFAULT '{}',
+  subject_ids                              UUID[] NOT NULL DEFAULT '{}',
+  current_question_index                   INTEGER NOT NULL DEFAULT 0,
+  started_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  completed_at                             TIMESTAMPTZ,
+  pre_session_confidence_ratings           JSONB DEFAULT '{}'::JSONB,
+  is_proof_simulation                      BOOLEAN DEFAULT FALSE,
+  is_endurance_session                     BOOLEAN DEFAULT FALSE,
+  accuracy_by_block                        JSONB DEFAULT '[]'::JSONB,
+  session_discovery                        JSONB,
+  mastery_snapshot_at_start                JSONB
+);
+
+-- ─── Table: user_interactions ───────────────────────────────────────────
+CREATE TABLE user_interactions (
+  interaction_id                           UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  session_id                               UUID NOT NULL,
+  question_id                              UUID NOT NULL,
+  topic_id                                 UUID,
+  selected_option_id                       TEXT,
+  is_correct                               BOOLEAN NOT NULL,
+  time_spent_ms                            INTEGER DEFAULT 0,
+  interaction_timestamp                    TIMESTAMPTZ NOT NULL DEFAULT now(),
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  is_flagged                               BOOLEAN NOT NULL DEFAULT FALSE,
+  answer_changes                           INTEGER NOT NULL DEFAULT 0,
+  options_eliminated                       INTEGER NOT NULL DEFAULT 0,
+  confidence                               TEXT,
+  rationale_view_ms                        INTEGER DEFAULT 0,
+  error_type                               TEXT,
+  question_order                           INTEGER,
+  is_suspected_lucky_guess                 BOOLEAN NOT NULL DEFAULT FALSE,
+  source_type                              TEXT DEFAULT 'quiz',
+  error_category                           TEXT,
+  error_confidence                         NUMERIC(3,2)
+);
+
+-- ─── Table: user_question_responses ─────────────────────────────────────
+CREATE TABLE user_question_responses (
+  response_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  question_id                              UUID NOT NULL,
+  session_id                               UUID,
+  answered_at                              TIMESTAMPTZ NOT NULL DEFAULT now(),
+  is_correct                               BOOLEAN NOT NULL,
+  selected_option                          TEXT,
+  time_taken_ms                            INTEGER,
+  confidence_level                         SMALLINT
+);
+
+-- ─── Table: anon_diagnostic_sessions ────────────────────────────────────
+CREATE TABLE anon_diagnostic_sessions (
+  anon_session_id                          UUID NOT NULL DEFAULT gen_random_uuid(),
+  browser_session_id                       TEXT NOT NULL,
+  question_ids                             UUID[] NOT NULL DEFAULT '{}',
+  answers                                  JSONB NOT NULL DEFAULT '{}'::JSONB,
+  questions_answered                       INTEGER NOT NULL DEFAULT 0,
+  started_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  expires_at                               TIMESTAMPTZ NOT NULL DEFAULT (now() + '02:00:00'::interval),
+  converted_user_id                        UUID
+);
+
+-- ============================================================================
+-- 4. Mastery & Learning
+-- ============================================================================
+
+-- ─── Table: user_node_mastery ───────────────────────────────────────────
+CREATE TABLE user_node_mastery (
+  user_id                                  UUID NOT NULL,
+  topic_id                                 UUID NOT NULL,
+  total_attempts                           INTEGER NOT NULL DEFAULT 0,
+  total_correct                            INTEGER NOT NULL DEFAULT 0,
+  current_mastery_weight                   DOUBLE PRECISION NOT NULL DEFAULT 0.0,
+  avg_time_ms                              INTEGER NOT NULL DEFAULT 0,
+  last_encountered                         TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ DEFAULT now(),
+  teach_back_attempted                     BOOLEAN DEFAULT FALSE,
+  teach_back_gap_count                     INTEGER DEFAULT 0,
+  next_review_at                           TIMESTAMPTZ,
+  review_interval_days                     INTEGER DEFAULT 1,
+  ease_factor                              DOUBLE PRECISION DEFAULT 2.5,
+  review_count                             INTEGER NOT NULL DEFAULT 0,
+  consecutive_correct_streak               INTEGER NOT NULL DEFAULT 0,
+  highest_difficulty_correct               SMALLINT NOT NULL DEFAULT 0,
+  has_bloom_apply_correct                  BOOLEAN NOT NULL DEFAULT FALSE,
+  has_bloom_analyze_correct                BOOLEAN NOT NULL DEFAULT FALSE,
+  distinct_questions_seen                  INTEGER NOT NULL DEFAULT 0,
+  decay_rate                               NUMERIC(4,3) DEFAULT 0.3,
+  predicted_recall                         NUMERIC(4,3),
+  optimal_review_at                        TIMESTAMPTZ,
+  storage_strength                         NUMERIC(4,3) DEFAULT 0,
+  retrieval_strength                       NUMERIC(4,3) DEFAULT 0,
+  practice_count                           INTEGER DEFAULT 0,
+  practice_contexts                        INTEGER DEFAULT 0
+);
+
+-- ─── Table: user_mastery_history ────────────────────────────────────────
+CREATE TABLE user_mastery_history (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  topic_id                                 UUID NOT NULL,
+  mastery_weight                           NUMERIC(5,4) NOT NULL,
+  total_correct                            INTEGER NOT NULL DEFAULT 0,
+  total_attempts                           INTEGER NOT NULL DEFAULT 0,
+  session_id                               UUID,
+  snapshot_reason                          TEXT DEFAULT 'session_complete',
+  created_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ─── Table: user_srs_cards ──────────────────────────────────────────────
+CREATE TABLE user_srs_cards (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  node_id                                  TEXT NOT NULL,
+  ease_factor                              DOUBLE PRECISION NOT NULL DEFAULT 2.5,
+  interval_days                            DOUBLE PRECISION NOT NULL DEFAULT 1.0,
+  repetitions                              INTEGER NOT NULL DEFAULT 0,
+  quality_last                             INTEGER,
+  next_review_at                           TIMESTAMPTZ NOT NULL DEFAULT now(),
+  last_reviewed_at                         TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: user_theta ──────────────────────────────────────────────────
+CREATE TABLE user_theta (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  discipline_id                            UUID,
+  theta                                    DOUBLE PRECISION NOT NULL DEFAULT 0.0,
+  theta_se                                 DOUBLE PRECISION NOT NULL DEFAULT 1.0,
+  responses_count                          INTEGER NOT NULL DEFAULT 0,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: user_global_stats ───────────────────────────────────────────
+CREATE TABLE user_global_stats (
+  user_id                                  UUID NOT NULL,
+  current_discipline_id                    UUID,
+  global_readiness_score                   DOUBLE PRECISION NOT NULL DEFAULT 0.0,
+  target_exam_date                         TIMESTAMPTZ,
+  final_stretch_upsell_shown               BOOLEAN DEFAULT FALSE,
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  signup_source                            TEXT,
+  utm_campaign                             TEXT,
+  utm_medium                               TEXT,
+  utm_content                              TEXT,
+  referral_code                            TEXT,
+  first_session_at                         TIMESTAMPTZ,
+  onboarding_completed_at                  TIMESTAMPTZ,
+  assessment_completed_at                  TIMESTAMPTZ,
+  assessment_score                         DOUBLE PRECISION,
+  first_touch_source                       TEXT,
+  first_touch_campaign                     TEXT,
+  last_touch_source                        TEXT,
+  last_touch_campaign                      TEXT,
+  acquisition_touchpoints                  JSONB DEFAULT '[]'::JSONB,
+  exam_attempt_number                      INTEGER DEFAULT 1,
+  previous_exam_result                     TEXT,
+  customer_archetype                       TEXT,
+  churn_risk_score                         DOUBLE PRECISION DEFAULT 0,
+  churn_risk_updated_at                    TIMESTAMPTZ,
+  score_velocity_7d                        DOUBLE PRECISION DEFAULT 0,
+  score_velocity_updated_at                TIMESTAMPTZ,
+  free_questions_today                     INTEGER DEFAULT 0,
+  free_questions_reset_date                DATE DEFAULT CURRENT_DATE,
+  score_reveal_shown_at                    TIMESTAMPTZ,
+  global_current_streak                    INTEGER NOT NULL DEFAULT 0,
+  global_longest_streak                    INTEGER NOT NULL DEFAULT 0,
+  last_study_date                          DATE,
+  is_retaker                               BOOLEAN NOT NULL DEFAULT FALSE,
+  onboarding_retaker_framing_shown         BOOLEAN NOT NULL DEFAULT FALSE,
+  assessment_started_at                    TIMESTAMPTZ,
+  proof_simulation_unlocked_at             TIMESTAMPTZ,
+  last_active_date                         DATE,
+  readiness_sub_scores                     JSONB NOT NULL DEFAULT '{}'::JSONB,
+  simulation_count                         INTEGER DEFAULT 0,
+  last_simulation_score                    NUMERIC(5,2),
+  best_simulation_score                    NUMERIC(5,2)
+);
+
+-- ─── Table: user_endurance_profiles ─────────────────────────────────────
+CREATE TABLE user_endurance_profiles (
+  user_id                                  UUID NOT NULL,
+  baseline_reliable_items                  INTEGER,
+  baseline_accuracy_decay_at               INTEGER,
+  baseline_avg_accuracy                    DOUBLE PRECISION,
+  baseline_calibrated_at                   TIMESTAMPTZ,
+  current_endurance_target                 INTEGER,
+  endurance_window_minutes                 DOUBLE PRECISION,
+  endurance_sessions_completed             INTEGER NOT NULL DEFAULT 0,
+  avg_seconds_per_question                 DOUBLE PRECISION,
+  pacing_target_seconds                    DOUBLE PRECISION NOT NULL DEFAULT 96,
+  pacing_updated_at                        TIMESTAMPTZ,
+  consecutive_plateau_weeks                INTEGER NOT NULL DEFAULT 0,
+  last_endurance_session_at                TIMESTAMPTZ,
+  endurance_gate_pct                       DOUBLE PRECISION,
+  computed_at                              TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: blindspot_queues ────────────────────────────────────────────
+CREATE TABLE blindspot_queues (
+  queue_id                                 UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  session_id                               UUID,
+  node_ids                                 UUID[] NOT NULL,
+  question_count                           INTEGER DEFAULT 12,
+  generated_at                             TIMESTAMPTZ DEFAULT now(),
+  deferred_until                           TIMESTAMPTZ,
+  completed_at                             TIMESTAMPTZ,
+  status                                   TEXT DEFAULT 'pending',
+  pre_queue_mastery                        JSONB DEFAULT '{}'::JSONB,
+  post_queue_mastery                       JSONB DEFAULT '{}'::JSONB,
+  nodes_improved                           INTEGER DEFAULT 0,
+  recommendation_type                      TEXT DEFAULT 'quiz'
+);
+
+-- ─── Table: teach_back_submissions ──────────────────────────────────────
+CREATE TABLE teach_back_submissions (
+  submission_id                            UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  topic_id                                 UUID,
+  entry_point                              TEXT NOT NULL,
+  trail_day_id                             UUID,
+  prompt_text                              TEXT NOT NULL,
+  student_response                         TEXT NOT NULL,
+  evaluation_result                        JSONB DEFAULT '{}'::JSONB,
+  gaps_identified                          TEXT[] DEFAULT '{}',
+  revised_response                         TEXT,
+  submitted_at                             TIMESTAMPTZ DEFAULT now(),
+  revised_at                               TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ DEFAULT now(),
+  updated_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ─── Table: topic_teach_back_criteria ───────────────────────────────────
+CREATE TABLE topic_teach_back_criteria (
+  criteria_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  topic_id                                 UUID NOT NULL,
+  required_concepts                        TEXT[] NOT NULL DEFAULT '{}',
+  required_exceptions                      TEXT[] NOT NULL DEFAULT '{}',
+  common_misconceptions                    TEXT[] NOT NULL DEFAULT '{}',
+  code_citations                           TEXT[] NOT NULL DEFAULT '{}',
+  authored_by                              UUID,
+  created_at                               TIMESTAMPTZ DEFAULT now(),
+  updated_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ============================================================================
+-- 5. Metacognitive System
+-- ============================================================================
+
+-- ─── Table: session_predictions ─────────────────────────────────────────
+CREATE TABLE session_predictions (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  session_id                               UUID NOT NULL,
+  prediction_score                         SMALLINT NOT NULL,
+  postdiction_score                        SMALLINT,
+  actual_score                             SMALLINT,
+  prediction_at                            TIMESTAMPTZ NOT NULL DEFAULT now(),
+  postdiction_at                           TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: calibration_snapshots ───────────────────────────────────────
+CREATE TABLE calibration_snapshots (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  calibration_score                        NUMERIC(5,2) NOT NULL,
+  brier_score                              NUMERIC(5,4) NOT NULL,
+  sample_size                              INTEGER NOT NULL,
+  confident_accuracy                       NUMERIC(5,4),
+  guessing_accuracy                        NUMERIC(5,4),
+  overconfidence_index                     NUMERIC(5,4),
+  underconfidence_index                    NUMERIC(5,4),
+  window_start                             TIMESTAMPTZ NOT NULL,
+  window_end                               TIMESTAMPTZ NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: successive_relearning_cycles ────────────────────────────────
+CREATE TABLE successive_relearning_cycles (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  topic_id                                 UUID NOT NULL,
+  status                                   TEXT NOT NULL DEFAULT 'active',
+  consecutive_correct                      INTEGER NOT NULL DEFAULT 0,
+  current_spacing_interval                 INTEGER,
+  spacing_level                            INTEGER NOT NULL DEFAULT 0,
+  next_retest_at                           TIMESTAMPTZ,
+  total_resets                             INTEGER NOT NULL DEFAULT 0,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: confusion_pairs ─────────────────────────────────────────────
+CREATE TABLE confusion_pairs (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  topic_a                                  UUID NOT NULL,
+  topic_b                                  UUID NOT NULL,
+  co_failure_rate                          NUMERIC(5,4) NOT NULL,
+  sample_size                              INTEGER NOT NULL,
+  disambiguation_article_id                UUID,
+  detected_at                              TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: daily_doses ─────────────────────────────────────────────────
+CREATE TABLE daily_doses (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  dose_date                                DATE NOT NULL,
+  activities                               JSONB NOT NULL,
+  estimated_minutes                        INTEGER NOT NULL,
+  rationale                                TEXT,
+  started_at                               TIMESTAMPTZ,
+  completed_at                             TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: exam_outcomes ───────────────────────────────────────────────
+CREATE TABLE exam_outcomes (
+  outcome_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID,
+  discipline_id                            UUID,
+  exam_batch                               TEXT NOT NULL,
+  result                                   TEXT NOT NULL,
+  self_reported_score                      NUMERIC,
+  peak_readiness_score                     DOUBLE PRECISION,
+  readiness_score_at_7d_before             DOUBLE PRECISION,
+  avg_session_accuracy                     DOUBLE PRECISION,
+  total_sessions_completed                 INTEGER,
+  total_questions_answered                 INTEGER,
+  days_active                              INTEGER,
+  signup_source                            TEXT,
+  customer_archetype                       TEXT,
+  reported_at                              TIMESTAMPTZ DEFAULT now(),
+  verified                                 BOOLEAN DEFAULT FALSE,
+  created_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ============================================================================
+-- 6. Analytics & Signals
+-- ============================================================================
+
+-- ─── Table: analytics_events ────────────────────────────────────────────
+CREATE TABLE analytics_events (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID,
+  event_name                               TEXT NOT NULL,
+  event_properties                         JSONB DEFAULT '{}'::JSONB,
+  page_path                                TEXT,
+  session_id                               UUID,
+  created_at                               TIMESTAMPTZ DEFAULT now(),
+  referrer                                 TEXT
+);
+
+-- ─── Table: user_computed_signals ───────────────────────────────────────
+CREATE TABLE user_computed_signals (
+  user_id                                  UUID NOT NULL,
+  score_velocity_7d                        DOUBLE PRECISION NOT NULL DEFAULT 0,
+  score_velocity_updated_at                TIMESTAMPTZ,
+  churn_risk_score                         DOUBLE PRECISION NOT NULL DEFAULT 0,
+  churn_risk_updated_at                    TIMESTAMPTZ,
+  days_since_last_session                  INTEGER,
+  sessions_last_7d                         INTEGER NOT NULL DEFAULT 0,
+  computed_at                              TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  endurance_baseline_items                 INTEGER,
+  endurance_window_items                   INTEGER,
+  endurance_target_items                   INTEGER DEFAULT 150,
+  endurance_last_updated                   TIMESTAMPTZ,
+  calibration_accuracy                     DOUBLE PRECISION,
+  calibration_updated_at                   TIMESTAMPTZ,
+  calibration_score                        DOUBLE PRECISION,
+  calibration_sessions_count               INTEGER NOT NULL DEFAULT 0
+);
+
+-- ─── Table: readiness_score_snapshots ───────────────────────────────────
+CREATE TABLE readiness_score_snapshots (
+  snapshot_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  score                                    DOUBLE PRECISION NOT NULL,
+  sub_scores                               JSONB NOT NULL DEFAULT '{}'::JSONB,
+  computed_at                              TIMESTAMPTZ NOT NULL DEFAULT now(),
+  session_id                               UUID,
+  is_proof_simulation                      BOOLEAN NOT NULL DEFAULT FALSE,
+  analysis_available_at                    TIMESTAMPTZ
+);
+
+-- ============================================================================
+-- 7. 3D Lab
+-- ============================================================================
+
+-- ─── Table: models_3d ───────────────────────────────────────────────────
+CREATE TABLE models_3d (
+  model_id                                 UUID NOT NULL DEFAULT gen_random_uuid(),
+  name                                     TEXT NOT NULL,
+  slug                                     TEXT NOT NULL,
+  url                                      TEXT NOT NULL,
+  thumbnail                                TEXT,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  status                                   TEXT DEFAULT 'draft',
+  metadata                                 JSONB DEFAULT '{}'::JSONB,
+  reviewed_by                              UUID,
+  reviewed_at                              TIMESTAMPTZ,
+  context_scenario                         TEXT,
+  ale_question_count                       INTEGER,
+  ale_question_type                        TEXT,
+  supported_phases                         TEXT[] DEFAULT '{guided}',
+  has_challenge_mode                       BOOLEAN DEFAULT FALSE
+);
+
+-- ─── Table: spatial_hotspots ────────────────────────────────────────────
+CREATE TABLE spatial_hotspots (
+  hotspot_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  model_id                                 UUID NOT NULL,
+  node_id                                  UUID,
+  title                                    TEXT NOT NULL,
+  description                              TEXT,
+  position_x                               DOUBLE PRECISION NOT NULL,
+  position_y                               DOUBLE PRECISION NOT NULL,
+  position_z                               DOUBLE PRECISION NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  phase                                    TEXT DEFAULT 'guided',
+  question_id                              UUID,
+  reveal_order                             INTEGER DEFAULT 1,
+  linked_question_id                       UUID,
+  quiz_trigger_distance                    NUMERIC(6,2) DEFAULT 5.0,
+  unlock_order                             INTEGER
+);
+
+-- ============================================================================
+-- 8. Trails & Gamification
+-- ============================================================================
+
+-- ─── Table: camp_trails ─────────────────────────────────────────────────
+CREATE TABLE camp_trails (
+  trail_id                                 UUID NOT NULL DEFAULT gen_random_uuid(),
+  discipline_id                            UUID NOT NULL,
+  name                                     TEXT NOT NULL,
+  slug                                     TEXT NOT NULL,
+  description                              TEXT,
+  trail_type                               TRAIL_TYPE NOT NULL,
+  intensity                                TRAIL_INTENSITY,
+  duration_days                            INTEGER NOT NULL,
+  total_steps                              INTEGER NOT NULL DEFAULT 0,
+  is_published                             BOOLEAN NOT NULL DEFAULT FALSE,
+  is_featured                              BOOLEAN NOT NULL DEFAULT FALSE,
+  recommended_min_score                    DOUBLE PRECISION,
+  recommended_max_score                    DOUBLE PRECISION,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  daily_time_estimate_minutes              INTEGER NOT NULL DEFAULT 90,
+  subjects_covered                         TEXT[] DEFAULT '{}',
+  is_free                                  BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+-- ─── Table: trail_days ──────────────────────────────────────────────────
+CREATE TABLE trail_days (
+  day_id                                   UUID NOT NULL DEFAULT gen_random_uuid(),
+  trail_id                                 UUID NOT NULL,
+  day_number                               INTEGER NOT NULL,
+  title                                    TEXT NOT NULL,
+  description                              TEXT,
+  estimated_minutes                        INTEGER DEFAULT 60,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  subject_focus                            TEXT,
+  subject_color                            TEXT,
+  is_rest_day                              BOOLEAN NOT NULL DEFAULT FALSE,
+  is_phase_transition                      BOOLEAN NOT NULL DEFAULT FALSE,
+  phase_name                               TEXT
+);
+
+-- ─── Table: trail_steps ─────────────────────────────────────────────────
+CREATE TABLE trail_steps (
+  step_id                                  UUID NOT NULL DEFAULT gen_random_uuid(),
+  day_id                                   UUID NOT NULL,
+  step_order                               INTEGER NOT NULL,
+  step_type                                TRAIL_STEP_TYPE NOT NULL,
+  title                                    TEXT NOT NULL,
+  description                              TEXT,
+  target_node_ids                          UUID[] DEFAULT '{}',
+  question_count                           INTEGER,
+  difficulty_min                           DOUBLE PRECISION DEFAULT 0.0,
+  difficulty_max                           DOUBLE PRECISION DEFAULT 1.0,
+  article_id                               UUID,
+  model_id                                 UUID,
+  estimated_minutes                        INTEGER DEFAULT 15,
+  is_optional                              BOOLEAN NOT NULL DEFAULT FALSE,
+  preferred_time                           TEXT,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  lab_phase                                TEXT DEFAULT 'guided',
+  is_computation_heavy                     BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+-- ─── Table: trail_day_completions ───────────────────────────────────────
+CREATE TABLE trail_day_completions (
+  day_completion_id                        UUID NOT NULL DEFAULT gen_random_uuid(),
+  enrollment_id                            UUID NOT NULL,
+  day_id                                   UUID NOT NULL,
+  user_id                                  UUID NOT NULL,
+  completed_at                             TIMESTAMPTZ NOT NULL DEFAULT now(),
+  readiness_score_at_completion            DOUBLE PRECISION,
+  mastery_before                           JSONB,
+  mastery_after                            JSONB,
+  all_steps_completed                      BOOLEAN NOT NULL DEFAULT FALSE,
+  day_number                               INTEGER
+);
+
+-- ─── Table: user_trail_enrollments ──────────────────────────────────────
+CREATE TABLE user_trail_enrollments (
+  enrollment_id                            UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  trail_id                                 UUID NOT NULL,
+  status                                   TRAIL_ENROLLMENT_STATUS NOT NULL DEFAULT 'active',
+  current_day                              INTEGER NOT NULL DEFAULT 1,
+  days_completed                           INTEGER NOT NULL DEFAULT 0,
+  last_activity_at                         TIMESTAMPTZ,
+  started_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  paused_at                                TIMESTAMPTZ,
+  completed_at                             TIMESTAMPTZ,
+  target_completion_date                   TIMESTAMPTZ,
+  readiness_score_at_start                 DOUBLE PRECISION,
+  pace_status                              TEXT DEFAULT 'on_track',
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  current_streak                           INTEGER NOT NULL DEFAULT 0,
+  longest_streak                           INTEGER NOT NULL DEFAULT 0,
+  grace_days_used_this_week                INTEGER NOT NULL DEFAULT 0,
+  last_streak_date                         DATE,
+  streak_grace_week_start                  DATE,
+  milestones_shown                         JSONB NOT NULL DEFAULT '[]'::JSONB,
+  days_completed_at_abandon                INTEGER,
+  abandoned_at                             TIMESTAMPTZ
+);
+
+-- ─── Table: user_trail_progress ─────────────────────────────────────────
+CREATE TABLE user_trail_progress (
+  progress_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  enrollment_id                            UUID NOT NULL,
+  user_id                                  UUID NOT NULL,
+  step_id                                  UUID NOT NULL,
+  completed_at                             TIMESTAMPTZ NOT NULL DEFAULT now(),
+  session_id                               UUID,
+  time_spent_ms                            INTEGER
+);
+
+-- ─── Table: session_trail_credits ───────────────────────────────────────
+CREATE TABLE session_trail_credits (
+  session_id                               UUID NOT NULL,
+  enrollment_id                            UUID NOT NULL,
+  step_id                                  UUID NOT NULL,
+  credited_at                              TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 9. Notifications
+-- ============================================================================
+
+-- ─── Table: notifications ───────────────────────────────────────────────
+CREATE TABLE notifications (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  type                                     NOTIFICATION_TYPE NOT NULL,
+  title                                    TEXT NOT NULL,
+  body                                     TEXT NOT NULL,
+  metadata                                 JSONB NOT NULL DEFAULT '{}'::JSONB,
+  read_at                                  TIMESTAMPTZ,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: notification_log ────────────────────────────────────────────
+CREATE TABLE notification_log (
+  log_id                                   UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  trigger_type                             TEXT NOT NULL,
+  channel                                  TEXT NOT NULL,
+  sent_at                                  TIMESTAMPTZ NOT NULL DEFAULT now(),
+  delivery_status                          TEXT DEFAULT 'sent'
+);
+
+-- ─── Table: notification_preferences ────────────────────────────────────
+CREATE TABLE notification_preferences (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  score_changes                            BOOLEAN NOT NULL DEFAULT TRUE,
+  trail_ready                              BOOLEAN NOT NULL DEFAULT TRUE,
+  blindspot                                BOOLEAN NOT NULL DEFAULT TRUE,
+  milestones                               BOOLEAN NOT NULL DEFAULT TRUE,
+  campfire                                 BOOLEAN NOT NULL DEFAULT TRUE,
+  content_updates                          BOOLEAN NOT NULL DEFAULT TRUE,
+  weekly_digest                            BOOLEAN NOT NULL DEFAULT TRUE,
+  coaching_tips                            BOOLEAN NOT NULL DEFAULT FALSE,
+  billing                                  BOOLEAN NOT NULL DEFAULT TRUE,
+  daily_digest                             BOOLEAN NOT NULL DEFAULT FALSE,
+  quiet_hours_start                        TIME,
+  quiet_hours_end                          TIME,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 10. Design Problems
+-- ============================================================================
+
+-- ─── Table: design_problems ─────────────────────────────────────────────
+CREATE TABLE design_problems (
+  problem_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  title                                    TEXT NOT NULL,
+  building_type                            TEXT NOT NULL,
+  difficulty                               INTEGER,
+  time_limit_minutes                       INTEGER DEFAULT 180,
+  brief                                    TEXT NOT NULL,
+  program                                  JSONB NOT NULL DEFAULT '{}'::JSONB,
+  site_data                                JSONB NOT NULL DEFAULT '{}'::JSONB,
+  code_references                          TEXT[] DEFAULT '{}',
+  is_published                             BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: design_questions ────────────────────────────────────────────
+CREATE TABLE design_questions (
+  question_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  scenario_id                              UUID NOT NULL,
+  number                                   SMALLINT NOT NULL,
+  type                                     DESIGN_QUESTION_TYPE NOT NULL,
+  question_stem                            TEXT NOT NULL,
+  options                                  JSONB NOT NULL DEFAULT '[]'::JSONB,
+  correct_answer_index                     SMALLINT NOT NULL,
+  rationale                                JSONB,
+  solution_steps                           TEXT[] NOT NULL DEFAULT '{}',
+  code_citation                            TEXT,
+  wiki_ref                                 TEXT,
+  bloom_level                              TEXT,
+  is_trap_question                         BOOLEAN NOT NULL DEFAULT FALSE,
+  difficulty                               NUMERIC DEFAULT 0.50,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: design_problem_sessions ─────────────────────────────────────
+CREATE TABLE design_problem_sessions (
+  session_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  problem_id                               UUID NOT NULL,
+  started_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  completed_at                             TIMESTAMPTZ,
+  time_elapsed_seconds                     INTEGER,
+  self_assessment_score                    INTEGER,
+  checklist_completion                     JSONB DEFAULT '{}'::JSONB
+);
+
+-- ─── Table: design_scenarios ────────────────────────────────────────────
+CREATE TABLE design_scenarios (
+  scenario_id                              TEXT NOT NULL,
+  title                                    TEXT NOT NULL,
+  building_type                            TEXT NOT NULL,
+  difficulty                               TEXT NOT NULL,
+  trap_count                               INTEGER DEFAULT 0,
+  time_limit_minutes                       INTEGER DEFAULT 180,
+  brief                                    TEXT NOT NULL,
+  site_data                                JSONB NOT NULL DEFAULT '{}'::JSONB,
+  program                                  JSONB NOT NULL DEFAULT '{}'::JSONB,
+  code_references                          TEXT[] DEFAULT '{}',
+  computation_sheet                        JSONB DEFAULT '{}'::JSONB,
+  hidden_traps                             JSONB DEFAULT '[]'::JSONB,
+  created_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ─── Table: design_scenario_questions ───────────────────────────────────
+CREATE TABLE design_scenario_questions (
+  question_id                              UUID NOT NULL DEFAULT gen_random_uuid(),
+  scenario_id                              TEXT NOT NULL,
+  question_number                          INTEGER NOT NULL,
+  question_type                            TEXT DEFAULT 'DC',
+  question_stem                            TEXT NOT NULL,
+  options                                  JSONB NOT NULL DEFAULT '[]'::JSONB,
+  correct_answer_index                     INTEGER NOT NULL,
+  rationale                                JSONB DEFAULT '{}'::JSONB,
+  solution_steps                           TEXT[] DEFAULT '{}',
+  code_citation                            TEXT,
+  difficulty_rating                        NUMERIC DEFAULT 0.5,
+  discrimination_rating                    NUMERIC DEFAULT 1.0,
+  created_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ─── Table: design_scenario_interactions ────────────────────────────────
+CREATE TABLE design_scenario_interactions (
+  interaction_id                           UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  session_id                               UUID,
+  question_id                              UUID,
+  scenario_id                              TEXT,
+  selected_answer_index                    INTEGER,
+  is_correct                               BOOLEAN NOT NULL,
+  time_spent_ms                            INTEGER,
+  fell_for_trap                            BOOLEAN DEFAULT FALSE,
+  trap_id                                  INTEGER,
+  created_at                               TIMESTAMPTZ DEFAULT now()
+);
+
+-- ─── Table: design_scenario_sessions ────────────────────────────────────
+CREATE TABLE design_scenario_sessions (
+  session_id                               UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  scenario_id                              TEXT NOT NULL,
+  started_at                               TIMESTAMPTZ DEFAULT now(),
+  completed_at                             TIMESTAMPTZ,
+  answers                                  JSONB DEFAULT '[]'::JSONB,
+  score                                    INTEGER,
+  total_questions                          INTEGER,
+  traps_fallen_into                        INTEGER DEFAULT 0,
+  time_elapsed_seconds                     INTEGER
+);
+
+-- ============================================================================
+-- 11. CEO Dashboard
+-- ============================================================================
+
+-- ─── Table: ceo_cash_balance_entries ────────────────────────────────────
+CREATE TABLE ceo_cash_balance_entries (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  balance_date                             DATE NOT NULL,
+  amount_php                               NUMERIC(14,2) NOT NULL,
+  notes                                    TEXT,
+  created_by                               UUID NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: ceo_financial_entries ───────────────────────────────────────
+CREATE TABLE ceo_financial_entries (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  entry_date                               DATE NOT NULL,
+  entry_type                               FINANCIAL_ENTRY_TYPE NOT NULL,
+  category                                 TEXT NOT NULL,
+  amount_php                               NUMERIC(12,2) NOT NULL,
+  description                              TEXT,
+  is_recurring                             BOOLEAN NOT NULL DEFAULT FALSE,
+  created_by                               UUID NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: ceo_gate_status ─────────────────────────────────────────────
+CREATE TABLE ceo_gate_status (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  gate_number                              SMALLINT NOT NULL,
+  entered_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  exit_conditions_met                      JSONB NOT NULL DEFAULT '{}'::JSONB,
+  notes                                    TEXT,
+  created_by                               UUID NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: ceo_team_members ────────────────────────────────────────────
+CREATE TABLE ceo_team_members (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID,
+  display_name                             TEXT NOT NULL,
+  role_title                               TEXT NOT NULL,
+  department                               TEAM_DEPARTMENT NOT NULL,
+  monthly_cost_php                         NUMERIC(10,2),
+  system_role                              SYSTEM_ROLE_TYPE NOT NULL DEFAULT 'member',
+  start_date                               DATE NOT NULL,
+  end_date                                 DATE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 12. Other
+-- ============================================================================
+
+-- ─── Table: feature_flags ───────────────────────────────────────────────
+CREATE TABLE feature_flags (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  key                                      TEXT NOT NULL,
+  description                              TEXT,
+  enabled                                  BOOLEAN NOT NULL DEFAULT FALSE,
+  target_tier                              TEXT[] DEFAULT '{}',
+  target_roles                             TEXT[] DEFAULT '{}',
+  created_by                               UUID,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: code_updates ────────────────────────────────────────────────
+CREATE TABLE code_updates (
+  update_id                                UUID NOT NULL DEFAULT gen_random_uuid(),
+  ale_id                                   TEXT,
+  summary                                  TEXT NOT NULL,
+  previous_value                           TEXT,
+  new_value                                TEXT,
+  effective_date                           DATE,
+  is_ale_testable                          BOOLEAN NOT NULL DEFAULT TRUE,
+  published_at                             TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: notes ───────────────────────────────────────────────────────
+CREATE TABLE notes (
+  note_id                                  UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  folder_id                                UUID,
+  topic_id                                 UUID,
+  title                                    TEXT NOT NULL DEFAULT 'Untitled Note',
+  content                                  JSONB NOT NULL DEFAULT '[]'::JSONB,
+  source_url                               TEXT,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  is_pinned                                BOOLEAN NOT NULL DEFAULT FALSE,
+  question_id                              UUID,
+  session_id                               UUID,
+  article_id                               UUID,
+  note_type                                TEXT NOT NULL DEFAULT 'standard',
+  tags                                     TEXT[] DEFAULT '{}',
+  color                                    TEXT
+);
+
+-- ─── Table: note_folders ────────────────────────────────────────────────
+CREATE TABLE note_folders (
+  folder_id                                UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  name                                     TEXT NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: campfire_testimonials ───────────────────────────────────────
+CREATE TABLE campfire_testimonials (
+  testimonial_id                           UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID,
+  display_name                             TEXT NOT NULL,
+  school_name                              TEXT,
+  starting_score                           DOUBLE PRECISION,
+  final_score                              DOUBLE PRECISION,
+  passed                                   BOOLEAN NOT NULL,
+  exam_batch                               TEXT NOT NULL,
+  quote                                    TEXT,
+  is_featured                              BOOLEAN NOT NULL DEFAULT FALSE,
+  is_verified                              BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 13. Views
+-- ============================================================================
+
+-- ─── Table: v_current_gate ──────────────────────────────────────────────
+-- (Represented as a view in the database)
+-- Columns:
+--   id UUID
+--   gate_number SMALLINT
+--   entered_at TIMESTAMPTZ
+--   exit_conditions_met JSONB
+--   notes TEXT
+--   created_by UUID
+--   created_at TIMESTAMPTZ
+

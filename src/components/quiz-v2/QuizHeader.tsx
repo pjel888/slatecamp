@@ -16,6 +16,8 @@ interface QuizHeaderProps {
   onExit: () => void
   onToggleFlag?: () => void
   onOpenPalette?: () => void
+  /** Optional pressure-aware timer to replace the default timer display */
+  timerSlot?: React.ReactNode
 }
 
 const formatTime = (seconds: number): string => {
@@ -38,6 +40,7 @@ export const QuizHeader = ({
   onExit,
   onToggleFlag,
   onOpenPalette,
+  timerSlot,
 }: QuizHeaderProps) => {
   const progressPercent =
     totalQuestions > 0 ? Math.round((currentPosition / totalQuestions) * 100) : 0
@@ -100,8 +103,10 @@ export const QuizHeader = ({
         {MODE_LABELS[config.mode]}
       </span>
 
-      {/* Timer */}
-      {showTimer && (
+      {/* Timer — pressure-aware slot takes priority, then default */}
+      {timerSlot ? (
+        timerSlot
+      ) : showTimer ? (
         <div
           className={cn(
             'flex items-center gap-1 text-xs tabular-nums font-medium shrink-0',
@@ -116,7 +121,7 @@ export const QuizHeader = ({
           <Timer size={14} aria-hidden="true" />
           {formatTime(displaySeconds)}
         </div>
-      )}
+      ) : null}
 
       {/* Bookmark */}
       {config.navigation.bookmarkEnabled && onToggleFlag && (

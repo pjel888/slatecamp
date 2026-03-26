@@ -2,7 +2,11 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { resolveRationaleText } from '@/lib/utils/question'
-import type { SubmitAnswerInput, SubmitAnswerResult } from '@/types/quiz-config'
+import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
+import { classifyAndStoreError } from './classify-and-store-error'
+import { runPostInteractionHooks } from '@/lib/actions/mastery/post-interaction-hooks'
+import type { SubmitAnswerInput, SubmitAnswerResult, QuestionType } from '@/types/quiz-config'
+import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
 
 export const submitAnswer = async (
   input: SubmitAnswerInput,
@@ -30,18 +34,51 @@ export const submitAnswer = async (
   const { data: question, error: questionError } = await supabase
     .from('questions')
     .select(
-      'question_id, topic_id, correct_option_id, rationale, difficulty, options',
+      'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers',
     )
     .eq('question_id', questionId)
     .single()
 
   if (questionError || !question) throw new Error('Question not found')
 
-  const isCorrect = question.correct_option_id === selectedOptionId
+  // Cast DB row to access generation columns (may not be in generated types yet)
+  const raw = question as Record<string, unknown>
+  const questionType = (raw.question_type as string) ?? 'mcq'
+  const isGeneration = questionType !== 'mcq'
 
-  // 3. Map confidence number to DB text value
+  // Determine correctness — MCQ vs generation answer matching
+  let isCorrect: boolean
+  let closeness = 0
+  let correctAnswer = ''
+
+  if (isGeneration) {
+    const matchData: QuestionMatchData = {
+      question_type: questionType,
+      correct_value: raw.correct_value as number | null,
+      value_tolerance: raw.value_tolerance as number | null,
+      accepted_answers: raw.accepted_answers as string[] | null,
+      correct_option_id: raw.correct_option_id as string | null,
+    }
+    const matchResult = matchGenerationAnswer(questionType, selectedOptionId, matchData)
+    isCorrect = matchResult.isCorrect
+    closeness = matchResult.closeness
+
+    // Build display-ready correct answer string
+    if (questionType === 'numeric' || questionType === 'formula') {
+      correctAnswer = matchData.correct_value?.toString() ?? ''
+    } else if (questionType === 'short_text') {
+      correctAnswer = matchData.accepted_answers?.[0] ?? ''
+    }
+  } else {
+    isCorrect = question.correct_option_id === selectedOptionId
+  }
+
+  // 3. Map continuous 0–1 confidence to legacy text value + store raw score
+  const confidenceScore = confidenceLevel ?? null
   const confidenceText =
-    confidenceLevel === 1 ? 'unsure' : confidenceLevel === 3 ? 'sure' : null
+    confidenceLevel != null
+      ? confidenceLevel <= 0.33 ? 'unsure' : confidenceLevel >= 0.67 ? 'sure' : null
+      : null
 
   // 4. Determine question order (position in session question_ids array)
   const questionIds: string[] = session.question_ids ?? []
@@ -54,7 +91,7 @@ export const submitAnswer = async (
     isCorrect && timeSpentMs < speedThreshold
 
   // 6. Insert into user_interactions (immutable log — upsert to handle retries)
-  const { error: interactionError } = await supabase
+  const { data: upsertedRow, error: interactionError } = await supabase
     .from('user_interactions')
     .upsert(
       {
@@ -66,6 +103,7 @@ export const submitAnswer = async (
         is_correct: isCorrect,
         time_spent_ms: timeSpentMs,
         confidence: confidenceText,
+        confidence_score: confidenceScore,
         is_suspected_lucky_guess: isSuspectedLuckyGuess,
         question_order: questionOrder,
         interaction_timestamp: new Date().toISOString(),
@@ -73,8 +111,12 @@ export const submitAnswer = async (
       },
       { onConflict: 'user_id,session_id,question_id' },
     )
+    .select('interaction_id')
+    .single()
 
   if (interactionError) throw interactionError
+
+  const interactionId = upsertedRow?.interaction_id ?? null
 
   // 7. Read current counters from user_interactions for this session
   const { count: answeredCount } = await supabase
@@ -116,9 +158,48 @@ export const submitAnswer = async (
 
     if (wikiLink) {
       const slug = (wikiLink as { wiki_articles?: { slug?: string } }).wiki_articles?.slug
-      if (slug) wikiArticleUrl = `/wiki/${slug}`
+      if (slug) wikiArticleUrl = `/dashboard/wiki/${slug}?from=quiz`
     }
   }
+
+  // 9. Classify error (non-blocking for the quiz flow — errors are caught internally)
+  let errorDiagnostic = null
+  if (!isCorrect && interactionId && feedbackTiming === 'immediate') {
+    const classification = await classifyAndStoreError(
+      interactionId,
+      questionId,
+      user.id,
+      timeSpentMs,
+      isCorrect,
+    )
+    if (classification && classification.confidence > 0.5) {
+      errorDiagnostic = {
+        category: classification.category,
+        confidence: classification.confidence,
+        message: classification.message,
+      }
+    }
+  }
+
+  // 10. Fire post-interaction hooks (memory strength + decay rate — non-blocking)
+  const sessionConfig = session.config as { mode?: string; interleave?: boolean } | null
+  // Generation effect: correct generation answers get 1.2x EMA weight
+  // for stronger memory trace (production effect from cognitive science)
+  const generationMultiplier = isGeneration && isCorrect ? 1.2 : 1.0
+
+  runPostInteractionHooks({
+    userId: user.id,
+    topicId: question.topic_id,
+    isCorrect,
+    timeSpentMs,
+    avgTimeMs: 0, // first interaction has no baseline — hook handles this
+    difficulty: question.difficulty ?? 0.5,
+    isInterleaved: sessionConfig?.interleave ?? false,
+    sessionMode: sessionConfig?.mode ?? 'camp',
+    emaWeightMultiplier: generationMultiplier,
+  }).catch(() => {
+    // Swallow — hooks are fire-and-forget
+  })
 
   return {
     isCorrect,
@@ -128,5 +209,12 @@ export const submitAnswer = async (
     answeredCount: answered,
     correctCount: correct,
     sessionComplete,
+    errorDiagnostic,
+    // Generation effect fields — only populated for non-MCQ questions
+    ...(isGeneration && {
+      closeness,
+      correctAnswer,
+      questionType: questionType as QuestionType,
+    }),
   }
 }

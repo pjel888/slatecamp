@@ -93,7 +93,7 @@ export const getReviewData = async (
       .eq('is_primary', true)
 
     for (const w of (wikiLinks ?? []) as Array<{ node_id: string; wiki_articles?: { slug?: string } }>) {
-      wikiMap.set(w.node_id, w.wiki_articles?.slug ? `/wiki/${w.wiki_articles.slug}` : null)
+      wikiMap.set(w.node_id, w.wiki_articles?.slug ? `/dashboard/wiki/${w.wiki_articles.slug}?from=quiz` : null)
     }
   }
 

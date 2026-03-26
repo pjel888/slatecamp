@@ -1,8 +1,9 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { SetupFlow } from '@/components/quiz-v2/setup/SetupFlow'
+import { PredictionSlider, shouldShowPrediction } from '@/components/quiz-v2/PredictionSlider'
 import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
@@ -12,36 +13,65 @@ interface SetupPageClientProps {
   subjects?: TaxonomySubject[]
 }
 
+type SetupPhase = 'setup' | 'creating' | 'prediction' | 'navigating'
+
 export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
   const router = useRouter()
-  const [loading, setLoading] = useState(false)
-
+  const [phase, setPhase] = useState<SetupPhase>('setup')
   const [error, setError] = useState<string | null>(null)
+  const [createdSessionId, setCreatedSessionId] = useState<string | null>(null)
 
   const handleBegin = async (config: QuizSessionConfig) => {
-    setLoading(true)
+    setPhase('creating')
     setError(null)
     try {
       const result = await startSession({ mode, config })
       if ('error' in result) {
         setError(String((result as { error: unknown }).error))
-        setLoading(false)
+        setPhase('setup')
         return
       }
-      router.push(`/quiz/${mode}/session/${result.sessionId}`)
+
+      setCreatedSessionId(result.sessionId)
+
+      // If this mode supports predictions, show the prediction slider
+      if (shouldShowPrediction(mode)) {
+        setPhase('prediction')
+      } else {
+        setPhase('navigating')
+        router.push(`/quiz/${mode}/session/${result.sessionId}`)
+      }
     } catch (err) {
       console.error('[quiz-setup] startSession failed:', err)
       setError(err instanceof Error ? err.message : 'Failed to start session')
-      setLoading(false)
+      setPhase('setup')
     }
   }
+
+  const handlePredictionConfirm = useCallback(() => {
+    if (!createdSessionId) return
+    setPhase('navigating')
+    router.push(`/quiz/${mode}/session/${createdSessionId}`)
+  }, [createdSessionId, mode, router])
 
   const handleBack = () => {
     router.back()
   }
 
-  if (loading) {
+  if (phase === 'creating' || phase === 'navigating') {
     return <CampfireLoader />
+  }
+
+  if (phase === 'prediction' && createdSessionId) {
+    return (
+      <div className="max-w-[560px] mx-auto px-4 py-8">
+        <PredictionSlider
+          sessionId={createdSessionId}
+          mode={mode}
+          onConfirm={handlePredictionConfirm}
+        />
+      </div>
+    )
   }
 
   return (

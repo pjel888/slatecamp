@@ -1,0 +1,224 @@
+'use client'
+
+import { useState } from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import {
+  ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis,
+  CartesianGrid, Tooltip, ReferenceArea, ReferenceLine, Cell,
+} from 'recharts'
+import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import type { DifficultyMasteryPoint } from '@/lib/actions/analytics/chart-data'
+
+interface Props {
+  data: DifficultyMasteryPoint[]
+}
+
+interface CustomDotProps {
+  cx?: number
+  cy?: number
+  payload?: DifficultyMasteryPoint
+}
+
+interface CustomTooltipProps {
+  active?: boolean
+  payload?: Array<{ payload: DifficultyMasteryPoint }>
+}
+
+const DIFFICULTY_MID = 0.5
+const MASTERY_MID = 50
+
+const getQuadrantColor = (point: DifficultyMasteryPoint): string => {
+  const hard = point.avgDifficulty >= DIFFICULTY_MID
+  const mastered = point.masteryPct >= MASTERY_MID
+  if (hard && mastered) return '#2D9F6F'     // Strengths
+  if (!hard && mastered) return '#8896A7'    // Move on
+  if (hard && !mastered) return '#D64545'    // Priority targets
+  return '#D4951A'                           // Quick fixes
+}
+
+const CustomDot = ({ cx, cy, payload }: CustomDotProps) => {
+  if (cx == null || cy == null || !payload) return null
+  const color = getQuadrantColor(payload)
+  return (
+    <g>
+      <circle
+        cx={cx}
+        cy={cy}
+        r={5}
+        fill={color}
+        fillOpacity={0.85}
+        stroke="#fff"
+        strokeWidth={1.5}
+        style={{ cursor: 'pointer' }}
+      />
+    </g>
+  )
+}
+
+const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
+  if (!active || !payload?.length) return null
+  const d = payload[0].payload
+  return (
+    <div
+      className="rounded-md bg-white p-2 text-xs"
+      style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
+    >
+      <p className="font-bold mb-1" style={{ color: '#1A2332' }}>{d.topicName}</p>
+      <p style={{ color: '#4A5568' }}>
+        Difficulty: {(d.avgDifficulty * 100).toFixed(0)}% | Mastery: {d.masteryPct}%
+      </p>
+      <p style={{ color: '#8896A7' }}>{d.questionCount} attempts</p>
+    </div>
+  )
+}
+
+const buildCoaching = (data: DifficultyMasteryPoint[]): { text: string; variant: 'warning' | 'success' | 'insight' } | null => {
+  if (data.length < 3) return null
+
+  const priorityTargets = data.filter(d => d.avgDifficulty >= DIFFICULTY_MID && d.masteryPct < MASTERY_MID)
+  const quickFixes = data.filter(d => d.avgDifficulty < DIFFICULTY_MID && d.masteryPct < MASTERY_MID)
+
+  if (priorityTargets.length > 0) {
+    const names = priorityTargets.slice(0, 2).map(d => d.topicName.split(' ').slice(-2).join(' ')).join(', ')
+    return {
+      text: `${names} ${priorityTargets.length === 1 ? 'is a' : 'are'} priority target${priorityTargets.length === 1 ? '' : 's'} — hard content with low mastery. Focus here for the biggest score gain.`,
+      variant: 'warning',
+    }
+  }
+
+  if (quickFixes.length > 0) {
+    return {
+      text: `${quickFixes.length} topic${quickFixes.length === 1 ? '' : 's'} with easy questions but low mastery — quick sessions could raise your score.`,
+      variant: 'insight',
+    }
+  }
+
+  const strengths = data.filter(d => d.avgDifficulty >= DIFFICULTY_MID && d.masteryPct >= MASTERY_MID)
+  if (strengths.length >= data.length * 0.5) {
+    return {
+      text: `Strong performance on hard content — over half your topics are in the "strengths" zone.`,
+      variant: 'success',
+    }
+  }
+
+  return null
+}
+
+export const DifficultyMasteryScatter = ({ data }: Props) => {
+  const coaching = buildCoaching(data)
+
+  if (data.length === 0) {
+    return (
+      <Card className="border-border bg-white p-2 relative h-full">
+        <RichInfoPopover
+          title="Difficulty vs. Mastery"
+          description="Maps each topic by question difficulty and your mastery level. Identifies priority targets and quick wins."
+        />
+        <CardHeader className="p-2 pt-1">
+          <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
+            Difficulty vs. Mastery
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-2 min-h-[200px]">
+          <p className="text-sm font-medium text-muted-foreground">
+            Complete quizzes across topics to map your difficulty-mastery profile.
+          </p>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  const maxDifficulty = Math.min(1, Math.max(...data.map(d => d.avgDifficulty), 0.6) + 0.1)
+
+  return (
+    <Card className="border-border bg-white p-2 relative h-full">
+      <RichInfoPopover
+        title="Difficulty vs. Mastery"
+        description="Each dot is a topic. Top-right = hard + mastered (strengths). Bottom-right = hard + weak (priority targets). Bottom-left = easy + weak (quick fixes)."
+      />
+      <CardHeader className="p-2 pt-1">
+        <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
+          Difficulty vs. Mastery
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="p-0 px-1 pb-2">
+        <div className="relative">
+          {/* Quadrant labels */}
+          <div className="absolute inset-0 pointer-events-none z-10 flex">
+            <div className="flex-1 flex flex-col">
+              <div className="flex-1 flex items-start justify-start pl-8 pt-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#8896A7' }}>
+                  Move on
+                </span>
+              </div>
+              <div className="flex-1 flex items-end justify-start pl-8 pb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4951A' }}>
+                  Quick fixes
+                </span>
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col">
+              <div className="flex-1 flex items-start justify-end pr-4 pt-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#2D9F6F' }}>
+                  Your strengths
+                </span>
+              </div>
+              <div className="flex-1 flex items-end justify-end pr-4 pb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D64545' }}>
+                  Priority targets
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-[280px]">
+            <ResponsiveContainer width="100%" height="100%">
+              <ScatterChart margin={{ top: 20, right: 20, left: 0, bottom: 30 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#D4DAE3" />
+                <XAxis
+                  type="number"
+                  dataKey="avgDifficulty"
+                  domain={[0, maxDifficulty]}
+                  tickFormatter={v => `${Math.round(v * 100)}%`}
+                  axisLine={false}
+                  tickLine={false}
+                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  label={{ value: 'Avg Question Difficulty', position: 'insideBottom', offset: -18, fontSize: 11, fill: '#4A5568' }}
+                />
+                <YAxis
+                  type="number"
+                  dataKey="masteryPct"
+                  domain={[0, 100]}
+                  tickFormatter={v => `${v}%`}
+                  axisLine={false}
+                  tickLine={false}
+                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  width={36}
+                />
+                <Tooltip content={<CustomTooltip />} />
+
+                {/* Quadrant backgrounds */}
+                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={MASTERY_MID} y2={100} fill="#2D9F6F" fillOpacity={0.04} />
+                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={MASTERY_MID} y2={100} fill="#E5E7EB" fillOpacity={0.15} />
+                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={0} y2={MASTERY_MID} fill="#D64545" fillOpacity={0.04} />
+                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={0} y2={MASTERY_MID} fill="#D4951A" fillOpacity={0.04} />
+
+                {/* Reference lines */}
+                <ReferenceLine x={DIFFICULTY_MID} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine y={MASTERY_MID} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
+
+                <Scatter data={data} shape={<CustomDot />}>
+                  {data.map((entry, i) => (
+                    <Cell key={i} fill={getQuadrantColor(entry)} />
+                  ))}
+                </Scatter>
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+        {coaching && <ChartCoachingAnnotation text={coaching.text} variant={coaching.variant} />}
+      </CardContent>
+    </Card>
+  )
+}

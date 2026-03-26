@@ -42,6 +42,8 @@ export type BloomLevel =
   | 'evaluate'
   | 'create'
 
+export type PressureLevel = 0 | 1 | 2 | 3
+
 export type AleFrequency =
   | 'very-high'
   | 'high'
@@ -119,6 +121,11 @@ export interface QuizSessionConfig {
     intervalQuestions: number
     breakDurationSeconds: number
   }
+
+  pressure_level?: PressureLevel  // Progressive pressure ladder (0–3)
+
+  interleave?: boolean       // default false — mix related taxonomy siblings
+  interleave_ratio?: number  // default 0.3 — fraction of questions from sibling topics
 }
 
 // ─── Question types (client-facing, stripped of answers) ─────────────────────
@@ -131,6 +138,8 @@ export interface QuestionOption {
   distractor_type?: DistractorType | null
 }
 
+export type QuestionType = 'mcq' | 'numeric' | 'short_text' | 'formula'
+
 export interface QuestionForClient {
   question_id: string
   position: number
@@ -139,6 +148,9 @@ export interface QuestionForClient {
   image_alt_text: string | null
   taxonomy_breadcrumb: string
   difficulty_label: 'Easy' | 'Medium' | 'Hard'
+  is_interleaved?: boolean  // true when question comes from a sibling topic
+  question_type: QuestionType  // generation effect: mcq (default) or generation types
+  unit?: string | null         // unit label for numeric/formula inputs (e.g. "psi", "ft")
   options: Array<{
     id: string
     letter: 'A' | 'B' | 'C' | 'D'
@@ -150,7 +162,8 @@ export interface QuestionForClient {
 
 export interface QuizAnswerState {
   selectedOptionId: string | null
-  confidenceLevel: 1 | 2 | 3 | null
+  /** Continuous 0–1 confidence score. 0 = guessing, 1 = confident. null = not set. */
+  confidenceLevel: number | null
   isCorrect: boolean | null
   isSkipped: boolean
   isFlagged: boolean
@@ -179,7 +192,8 @@ export interface SubmitAnswerInput {
   sessionId: string
   questionId: string
   selectedOptionId: string
-  confidenceLevel?: 1 | 2 | 3
+  /** Continuous 0–1 confidence score */
+  confidenceLevel?: number
   timeSpentMs: number
 }
 
@@ -191,11 +205,29 @@ export interface SubmitAnswerResult {
   answeredCount: number
   correctCount: number
   sessionComplete: boolean
+  errorDiagnostic: ErrorDiagnostic | null
+  // Generation effect fields (only present for non-MCQ)
+  closeness?: number           // 0–1 how close the answer was
+  correctAnswer?: string       // display-ready correct answer string
+  questionType?: QuestionType  // echoed back so client knows format
 }
 
 export interface EndSessionInput {
   sessionId: string
   endReason: EndReason
+}
+
+// ─── Feed-Forward Recommendations ────────────────────────────────────────────
+
+export interface Recommendation {
+  type: 'quiz' | 'wiki' | 'review' | 'rest'
+  priority: number // 0–100
+  title: string
+  description: string
+  action: {
+    type: 'start_session' | 'open_wiki' | 'open_srs'
+    href: string // Pre-built URL for one-tap navigation
+  }
 }
 
 export interface EndSessionResult {
@@ -219,6 +251,7 @@ export interface EndSessionResult {
   trailDayCompleted: boolean
   nextTrailDay: { id: string; title: string; topic: string } | null
   missedQuestionCount: number
+  recommendations?: Recommendation[]
 }
 
 export interface ReviewQuestionData {
@@ -279,6 +312,14 @@ export interface TaxonomySubtopic {
   interactionCount: number
 }
 
+// ─── Error Diagnostic (from error classifier) ───────────────────────────────
+
+export interface ErrorDiagnostic {
+  category: string
+  confidence: number
+  message: string
+}
+
 // ─── Feedback data (for Zustand store) ──────────────────────────────────────
 
 export interface FeedbackData {
@@ -287,6 +328,11 @@ export interface FeedbackData {
   correctOptionId: string
   rationale: string | null
   wikiUrl: string | null
+  errorDiagnostic: ErrorDiagnostic | null
+  // Generation effect fields (only present for non-MCQ)
+  closeness?: number
+  correctAnswer?: string
+  questionType?: QuestionType
 }
 
 // ─── Stamina analysis ───────────────────────────────────────────────────────

@@ -32,7 +32,7 @@ SlateCamp uses **Supabase** as the unified backend:
 - **Realtime:** Supabase Realtime for live quiz state sync and collaborative features
 - **Storage:** Supabase Storage for 3D assets (.GLB), images, and user uploads
 
-### Database — 64 Tables (full schema in `DATABASE_SCHEMA.sql`)
+### Database — 72 Tables (full schema in `DATABASE_SCHEMA.sql`)
 
 **IMPORTANT:** `profiles` PK is `id` (NOT `user_id`). All other user tables use `user_id`.
 
@@ -87,6 +87,71 @@ SlateCamp uses **Supabase** as the unified backend:
 | `analytics_events` | Event tracking |
 | `user_computed_signals` | Pre-computed churn/velocity signals |
 | `user_endurance_profiles` | Design Endurance Training tracking |
+
+#### Metacognitive Calibration System (NEW — 6 tables)
+| Table | Purpose |
+|---|---|
+| `session_predictions` | Pre/post-diction scores per session for calibration training |
+| `calibration_snapshots` | Brier-score calibration snapshots (30-day rolling window) |
+| `successive_relearning_cycles` | SR state machine: active → criterion_met → spacing → durable |
+| `confusion_pairs` | Co-failure topic pairs detected via weekly analysis |
+| `daily_doses` | Personalized daily study sessions with activity sequences |
+| `exam_outcomes` | Self-reported exam results for outcome correlation |
+
+#### Metacognitive Column Additions (existing tables)
+| Table | New Columns | Purpose |
+|---|---|---|
+| `user_interactions` | `error_category`, `error_confidence`, `error_type` | Wrong answer taxonomy (6 categories) |
+| `user_node_mastery` | `decay_rate`, `predicted_recall`, `optimal_review_at` | ACT-R personalized forgetting rates |
+| `user_node_mastery` | `storage_strength`, `retrieval_strength`, `practice_count`, `practice_contexts` | Bjork memory strength model |
+| `user_global_stats` | `simulation_count`, `last_simulation_score`, `best_simulation_score` | Exam simulation tracking |
+| `questions` | `question_type`, `correct_value`, `value_tolerance`, `accepted_answers` | Generation questions (numeric, short_text, formula) |
+| `spatial_hotspots` | `linked_question_id`, `quiz_trigger_distance`, `unlock_order` | 3D Lab quiz mode |
+| `profiles` | `school_name`, `region` | Geographic analytics |
+
+---
+
+## 🧠 Metacognitive Calibration System
+
+A research-backed second-generation learning engine that trains self-assessment accuracy alongside knowledge.
+
+### Data Pipelines
+
+**Post-Interaction Pipeline** (fires after every quiz answer via `submit-answer.ts`):
+1. Record interaction → `user_interactions`
+2. Classify error → `error_category` via `classifyError()` (6 categories: random_guess, knowledge_gap, misremembered_fact, computation_error, misread_question, concept_confusion)
+3. Update decay rate → `user_node_mastery.decay_rate` via ACT-R model
+4. Update memory strength → `storage_strength` + `retrieval_strength` via Bjork's Theory of Disuse
+5. Process SR cycle → `successive_relearning_cycles` state machine (if applicable)
+
+**Post-Session Pipeline** (fires after session ends via `end-session.ts` → `post-session-hooks.ts`):
+1. Update calibration snapshot → `calibration_snapshots` (Brier score from last 30 days)
+2. Generate feed-forward recommendations → `quiz_sessions.recommendations` JSONB
+3. Update readiness score → existing pipeline
+
+**Key Server Actions:**
+- `src/lib/actions/quiz-v2/post-session-hooks.ts` — Orchestrator for post-session processing
+- `src/lib/actions/mastery/post-interaction-hooks.ts` — Orchestrator for post-interaction processing
+- `src/lib/actions/calibration-score-update.ts` — Brier-based calibration scoring
+- `src/lib/actions/quiz-v2/generate-recommendations.ts` — Feed-forward recommendation engine
+- `src/lib/actions/mastery/update-decay-rate.ts` — ACT-R decay rate updater
+- `src/lib/actions/mastery/update-memory-strength.ts` — Storage/retrieval strength updater
+- `src/lib/quiz/error-classifier.ts` — Wrong answer taxonomy classifier
+- `src/lib/quiz/answer-matching.ts` — Generation question answer matching (Levenshtein + numeric tolerance)
+- `src/lib/quiz/memory-strength.ts` — Bjork memory strength engine
+- `src/lib/actions/daily-dose/generate.ts` — Adaptive daily dose generator (6 signal sources)
+
+### New Quiz Capabilities
+- **Prediction/Postdiction** — Pre-session score prediction + post-session postdiction before score reveal
+- **Confidence Input** — 3-level confidence selector (Guessing/Partly sure/Confident) on every question
+- **Generation Questions** — Numeric, short_text, formula question types with fuzzy answer matching
+- **Interleaved Mixing** — 70/30 primary/sibling topic mixing, gated at 60% mastery (Hwang 2025)
+- **Progressive Pressure** — 4-level ladder (Learning → Awareness → Pacing → Exam), unlocked by readiness score
+- **Successive Relearning** — 3 consecutive correct → spaced retests at 1d/3d/7d/14d → "durable" status
+- **Socratic AI** — 5-turn Socratic chat for wrong answers + AI-generated mnemonics
+
+### New Analytics Charts (7)
+- Calibration Curve, Forgetting Curves, Stamina Heatmap, Difficulty/Mastery Scatter, Study Velocity, Pacing/Accuracy, Exam Countdown
 
 ---
 

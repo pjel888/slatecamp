@@ -30,6 +30,7 @@ const toClientQuestion = (
   image_alt_text: null,
   taxonomy_breadcrumb: '',
   difficulty_label: toDifficultyLabel(q.difficulty ?? 0.5),
+  question_type: 'mcq',
   options: normalizeOptions(q.options),
 })
 
