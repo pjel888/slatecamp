@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useCallback } from 'react'
-import { X } from '@phosphor-icons/react'
+import { Backspace } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { FeedbackPanel } from './FeedbackPanel'
@@ -120,7 +120,7 @@ export const OptionsColumn = ({
                   value={option.id}
                   checked={isSelected}
                   disabled={isDisabled}
-                  onChange={() => onSelectOption(option.id)}
+                  onChange={() => onSelectOption(isSelected ? '' : option.id)}
                   className="sr-only"
                   aria-label={`Option ${option.letter}: ${option.text}${isEliminated ? ' (eliminated)' : ''}`}
                 />
@@ -168,7 +168,7 @@ export const OptionsColumn = ({
                     aria-label={isEliminated ? `Restore option ${option.letter}` : `Eliminate option ${option.letter}`}
                     aria-pressed={isEliminated}
                   >
-                    <X size={14} weight="bold" aria-hidden="true" />
+                    <Backspace size={12} weight="regular" aria-hidden="true" />
                   </button>
                 )}
               </label>
@@ -177,13 +177,13 @@ export const OptionsColumn = ({
         })}
       </div>
 
-      {/* Slide-to-submit bar */}
-      {hasAnswered && !isSubmitted && config.feedback.timing !== 'none' && (
-        <SlideToSubmit onSubmit={onSubmit} label="Slide to submit" />
-      )}
-
-      {hasAnswered && !isSubmitted && config.feedback.timing === 'none' && (
-        <SlideToSubmit onSubmit={onSubmit} label="Slide to continue" />
+      {/* Slide-to-submit bar — always visible, disabled until option selected */}
+      {!isSubmitted && (
+        <SlideToSubmit
+          onSubmit={onSubmit}
+          label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
+          disabled={!hasAnswered}
+        />
       )}
 
       {/* Inline feedback panel */}
