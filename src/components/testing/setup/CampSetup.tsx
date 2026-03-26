@@ -9,8 +9,8 @@ import { ConfidenceCheck } from './shared/ConfidenceCheck'
 import { FocusSelector } from './shared/FocusSelector'
 import { ROUTES } from '@/lib/constants/routes'
 import { QUESTION_COUNT_OPTIONS } from '@/lib/constants/testing-modes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SubjectConfidence, FocusOption, SessionConfig } from '@/types/testing'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
+import type { SubjectConfidence, FocusOption } from '@/types/testing'
 import { ALE_SUBJECTS } from '@/types/testing'
 
 interface CampSetupProps {
@@ -34,26 +34,21 @@ const CampSetup = ({ userId, completedSessionCount }: CampSetupProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'camp_mode',
-        questionCount,
-        subjectFilter: focusOption === 'single-subject' && focusSubjectId ? [focusSubjectId] : [],
-        topicFilter: [],
-        difficultyBands: [],
-        feedbackMode: 'immediate',
-        timerEnabled: false,
-        timerSeconds: null,
-        focusOption,
-        preSessionConfidence: confidenceRatings,
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: false,
-        isEnduranceSession: false,
-        strippedUi: false,
-        masteryWeightMultiplier: 1,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      const result = await startSession({
+        mode: 'camp',
+        config: {
+          setup: {
+            questionCount,
+            topics: focusOption === 'single-subject' && focusSubjectId ? [focusSubjectId] : [],
+            disciplines: [],
+            difficultyMode: 'adaptive',
+            initialDifficulty: 'mixed',
+            isTrailSession: true,
+            trailDayId: null,
+          },
+        },
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('camp', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {

@@ -199,28 +199,28 @@ const ModeCard = ({
         </div>
       )}
 
-      {/* CTA button */}
-      {!isLocked && (
-        <span
-          className={cn(
-            'inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out',
-            isZone3
+      {/* CTA button — always visible, disabled state when locked */}
+      <span
+        className={cn(
+          'inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out mt-auto',
+          isLocked
+            ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
+            : isZone3
               ? 'bg-[var(--accent)] text-white'
               : 'bg-[var(--primary)] text-white'
-          )}
-          tabIndex={-1}
-          aria-hidden="true"
-        >
-          {mode.ctaLabel}
-        </span>
-      )}
+        )}
+        tabIndex={-1}
+        aria-hidden="true"
+      >
+        {isLocked ? `Unlock at ${lockProgress?.requiredReadiness ?? 65}% Readiness` : mode.ctaLabel}
+      </span>
     </>
   )
 
   if (isLocked) {
     return (
       <div
-        className="relative flex flex-col rounded-md border border-l-[3px] p-4 opacity-65"
+        className="relative flex flex-col rounded-md border border-l-[3px] p-4"
         style={{
           backgroundColor: 'var(--surface-card)',
           borderColor: 'var(--border-default)',

@@ -5,8 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { ROUTES } from '@/lib/constants/routes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SessionConfig } from '@/types/testing'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
 import { cn } from '@/lib/utils'
 
 interface WeakNodeRow {
@@ -45,26 +44,21 @@ const FocusReviewSetup = ({ userId, weakNodes }: FocusReviewSetupProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'focus_review',
-        questionCount: 12,
-        subjectFilter: [],
-        topicFilter: nodes.map((n) => n.nodeId),
-        difficultyBands: [],
-        feedbackMode: 'immediate',
-        timerEnabled: false,
-        timerSeconds: null,
-        focusOption: 'weakest',
-        preSessionConfidence: [],
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: false,
-        isEnduranceSession: false,
-        strippedUi: false,
-        masteryWeightMultiplier: 2,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      const result = await startSession({
+        mode: 'focused',
+        config: {
+          setup: {
+            questionCount: 12,
+            topics: nodes.map((n) => n.nodeId),
+            disciplines: [],
+            difficultyMode: 'adaptive',
+            initialDifficulty: 'easy',
+            isTrailSession: false,
+            trailDayId: null,
+          },
+        },
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('focused', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {

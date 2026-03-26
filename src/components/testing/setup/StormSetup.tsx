@@ -7,8 +7,7 @@ import { Button } from '@/components/ui/button'
 import { QuestionCountPills } from './shared/QuestionCountPills'
 import { ROUTES } from '@/lib/constants/routes'
 import { QUESTION_COUNT_OPTIONS, SECONDS_PER_QUESTION } from '@/lib/constants/testing-modes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SessionConfig } from '@/types/testing'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
 
 interface StormSetupProps {
   userId: string
@@ -26,26 +25,30 @@ const StormSetup = ({ userId }: StormSetupProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'storm_mode',
-        questionCount,
-        subjectFilter: [],
-        topicFilter: [],
-        difficultyBands: [],
-        feedbackMode: 'deferred',
-        timerEnabled: true,
-        timerSeconds: questionCount * SECONDS_PER_QUESTION,
-        focusOption: 'mixed',
-        preSessionConfidence: [],
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: false,
-        isEnduranceSession: false,
-        strippedUi: true,
-        masteryWeightMultiplier: 1,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      const result = await startSession({
+        mode: 'storm',
+        config: {
+          setup: {
+            questionCount,
+            topics: [],
+            disciplines: [],
+            difficultyMode: 'static',
+            initialDifficulty: 'mixed',
+            isTrailSession: false,
+            trailDayId: null,
+          },
+          timer: {
+            enabled: true,
+            visible: true,
+            mode: 'bar',
+            totalSeconds: questionCount * SECONDS_PER_QUESTION,
+            perQuestion: false,
+            pausable: false,
+            warningThresholds: [0.75, 0.90, 0.95],
+          },
+        },
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('storm', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {

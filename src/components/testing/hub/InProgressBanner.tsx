@@ -24,7 +24,21 @@ interface InProgressBannerProps {
 const InProgressBanner = ({ session, onAbandon }: InProgressBannerProps) => {
   const [isAbandoning, setIsAbandoning] = useState(false)
 
-  const resumeHref = `/dashboard/testing/session/${session.sessionId}`
+  const SOURCE_TO_V2_MODE: Record<string, string> = {
+    camp_mode: 'camp',
+    chill_mode: 'chill',
+    subject_mode: 'subject',
+    focus_review: 'focused',
+    custom_session: 'custom',
+    storm_mode: 'storm',
+    proof_simulation: 'fullexam',
+    extended_practice: 'extended',
+    assessment_quiz: 'camp',
+    trail_quiz: 'camp',
+    blindspot_queue: 'focused',
+  }
+  const v2Mode = SOURCE_TO_V2_MODE[session.source] ?? 'camp'
+  const resumeHref = `/quiz/${v2Mode}/session/${session.sessionId}`
 
   const handleAbandon = () => {
     setIsAbandoning(true)

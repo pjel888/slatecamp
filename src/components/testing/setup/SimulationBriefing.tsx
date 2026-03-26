@@ -6,17 +6,13 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ROUTES } from '@/lib/constants/routes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SessionConfig } from '@/types/testing'
-import { SECONDS_PER_QUESTION } from '@/lib/constants/testing-modes'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
 
 interface SimulationBriefingProps {
   userId: string
 }
 
-const SIMULATION_QUESTION_COUNT = 200
-
-const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
+const SimulationBriefing = (_props: SimulationBriefingProps) => {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -25,26 +21,11 @@ const SimulationBriefing = ({ userId }: SimulationBriefingProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'proof_simulation',
-        questionCount: SIMULATION_QUESTION_COUNT,
-        subjectFilter: [],
-        topicFilter: [],
-        difficultyBands: [],
-        feedbackMode: 'deferred',
-        timerEnabled: true,
-        timerSeconds: SIMULATION_QUESTION_COUNT * SECONDS_PER_QUESTION,
-        focusOption: 'mixed',
-        preSessionConfidence: [],
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: true,
-        isEnduranceSession: false,
-        strippedUi: true,
-        masteryWeightMultiplier: 1,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      const result = await startSession({
+        mode: 'fullexam',
+        config: {},
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('fullexam', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {

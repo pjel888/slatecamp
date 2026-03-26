@@ -70,6 +70,9 @@ interface QuizStore {
   // ANSWER STATE
   answers: Map<string, QuizAnswerState>
 
+  // ELIMINATION STATE — questionId → Set of eliminated optionIds
+  eliminatedOptions: Map<string, Set<string>>
+
   // TIMER STATE
   timer: TimerState
 
@@ -121,6 +124,12 @@ interface QuizStore {
   goToQuestion: (index: number) => void
   goNext: () => void
   goPrevious: () => void
+
+  // -------------------------------------------------------------------------
+  // ELIMINATION ACTIONS
+  // -------------------------------------------------------------------------
+
+  toggleEliminate: (questionId: string, optionId: string) => void
 
   // -------------------------------------------------------------------------
   // FLAG / FEEDBACK ACTIONS
@@ -225,6 +234,7 @@ export const useQuizStore = create<QuizStore>()(
         totalQuestions: 0,
 
         answers: new Map(),
+        eliminatedOptions: new Map(),
 
         timer: defaultTimer(),
         feedback: defaultFeedback(),
@@ -309,6 +319,7 @@ export const useQuizStore = create<QuizStore>()(
             currentIndex: 0,
             totalQuestions: result.totalQuestions,
             answers,
+            eliminatedOptions: new Map(),
             timer: { ...defaultTimer(), limitMs },
             feedback: defaultFeedback(),
             ui: defaultUI(),
@@ -327,6 +338,7 @@ export const useQuizStore = create<QuizStore>()(
             currentIndex: 0,
             totalQuestions: 0,
             answers: new Map(),
+            eliminatedOptions: new Map(),
             timer: defaultTimer(),
             feedback: defaultFeedback(),
             ui: defaultUI(),
@@ -498,6 +510,22 @@ export const useQuizStore = create<QuizStore>()(
           if (!config?.navigation.backAllowed) return
           if (currentIndex <= 0) return
           get().goToQuestion(currentIndex - 1)
+        },
+
+        // ── Elimination actions ───────────────────────────────────────────────
+
+        toggleEliminate: (questionId, optionId) => {
+          const { eliminatedOptions } = get()
+          const current = eliminatedOptions.get(questionId) ?? new Set<string>()
+          const next = new Set(current)
+          if (next.has(optionId)) {
+            next.delete(optionId)
+          } else {
+            next.add(optionId)
+          }
+          const nextMap = new Map(eliminatedOptions)
+          nextMap.set(questionId, next)
+          set({ eliminatedOptions: nextMap })
         },
 
         // ── Flag / feedback actions ───────────────────────────────────────────

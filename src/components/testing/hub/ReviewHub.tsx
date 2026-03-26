@@ -253,14 +253,8 @@ const toInProgressSessionInfo = (
 
 // ─── Progressive disclosure helpers ──────────────────────────────────────────
 
-const getZoneOpacity = (zone: 1 | 2 | 3, sessionCount: number): number => {
-  if (zone === 1) return 1
-  if (zone === 2) return sessionCount < 5 ? 0.75 : 1
-  // zone 3
-  if (sessionCount < 5) return 0.55
-  if (sessionCount < 10) return 0.8
-  return 1
-}
+// All zones always fully visible — no progressive disclosure opacity
+const getZoneOpacity = (_zone: 1 | 2 | 3, _sessionCount: number): number => 1
 
 // ─── Component ────────────────────────────────────────────────────────────────
 

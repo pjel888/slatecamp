@@ -8,8 +8,7 @@ import { QuestionCountPills } from './shared/QuestionCountPills'
 import { SubjectGrid } from './shared/SubjectGrid'
 import { ROUTES } from '@/lib/constants/routes'
 import { QUESTION_COUNT_OPTIONS } from '@/lib/constants/testing-modes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SessionConfig } from '@/types/testing'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
 import { ALE_SUBJECTS } from '@/types/testing'
 
 interface MasteryRow {
@@ -57,26 +56,21 @@ const SubjectSetup = ({ userId, masteryData }: SubjectSetupProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'subject_mode',
-        questionCount,
-        subjectFilter: [selectedSubjectId],
-        topicFilter: [],
-        difficultyBands: [],
-        feedbackMode: 'immediate',
-        timerEnabled: false,
-        timerSeconds: null,
-        focusOption: 'single-subject',
-        preSessionConfidence: [],
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: false,
-        isEnduranceSession: false,
-        strippedUi: false,
-        masteryWeightMultiplier: 1,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      const result = await startSession({
+        mode: 'subject',
+        config: {
+          setup: {
+            questionCount,
+            topics: [],
+            disciplines: [selectedSubjectId],
+            difficultyMode: 'adaptive',
+            initialDifficulty: 'mixed',
+            isTrailSession: false,
+            trailDayId: null,
+          },
+        },
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('subject', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {

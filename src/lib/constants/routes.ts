@@ -22,7 +22,8 @@ export const ROUTES = {
   TESTING: "/dashboard/testing",
   // v1 legacy routes — do not use for new links
   TESTING_SETUP: (mode: string) => `/dashboard/testing/${mode}/setup`,
-  TESTING_SESSION: (sessionId: string) => `/dashboard/testing/session/${sessionId}`,
+  // TESTING_SESSION now routes through v2 shell (v1 page kept but no longer linked)
+  TESTING_SESSION: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}`,
   TESTING_DEBRIEF: (sessionId: string) => `/dashboard/testing/session/${sessionId}/debrief`,
   TESTING_SIM_BRIEFING: "/dashboard/testing/simulation/briefing",
   TESTING_SIM_RESULTS: (sessionId: string) => `/dashboard/testing/simulation/${sessionId}/results`,

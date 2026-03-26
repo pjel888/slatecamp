@@ -7,8 +7,8 @@ import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
 import { Switch } from '@/components/ui/switch'
 import { ROUTES } from '@/lib/constants/routes'
-import { createTestingSession } from '@/lib/actions/testing'
-import type { SessionConfig, DifficultyBand, FeedbackStyle } from '@/types/testing'
+import { startSession } from '@/lib/actions/quiz-v2/start-session'
+import type { DifficultyBand, FeedbackStyle } from '@/types/testing'
 import { ALE_SUBJECTS } from '@/types/testing'
 import { cn } from '@/lib/utils'
 
@@ -51,26 +51,46 @@ const CustomSetup = ({ userId, availableQuestionCount }: CustomSetupProps) => {
     setLoading(true)
     setError(null)
     try {
-      const config: SessionConfig = {
-        source: 'custom_session',
-        questionCount,
-        subjectFilter: selectedSubjectIds,
-        topicFilter: [],
-        difficultyBands: selectedBands,
-        feedbackMode: feedbackStyle,
-        timerEnabled,
-        timerSeconds: timerEnabled ? timerMinutes * 60 : null,
-        focusOption: selectedSubjectIds.length === 1 ? 'single-subject' : 'mixed',
-        preSessionConfidence: [],
-        isBlindspotSession: false,
-        blindspotQueueId: null,
-        isProofSimulation: false,
-        isEnduranceSession: false,
-        strippedUi: false,
-        masteryWeightMultiplier: 1,
-      }
-      const sessionId = await createTestingSession(userId, config)
-      router.push(ROUTES.TESTING_SESSION(sessionId))
+      // Map v1 difficulty bands to v2 initialDifficulty
+      const initialDifficulty = selectedBands.includes('foundational')
+        ? 'easy'
+        : selectedBands.includes('advanced') || selectedBands.includes('expert')
+          ? 'hard'
+          : selectedBands.includes('intermediate')
+            ? 'medium'
+            : 'mixed'
+      const result = await startSession({
+        mode: 'custom',
+        config: {
+          setup: {
+            questionCount,
+            topics: selectedSubjectIds,
+            disciplines: [],
+            difficultyMode: 'user-selected',
+            initialDifficulty,
+            isTrailSession: false,
+            trailDayId: null,
+          },
+          feedback: {
+            timing: feedbackStyle === 'deferred' ? 'deferred' : 'immediate',
+            showExplanation: feedbackStyle !== 'deferred',
+            showCorrectAnswer: feedbackStyle !== 'deferred',
+            showConfidenceRating: false,
+            gatedProgressionDelayMs: 0,
+            explanationDepth: 'full',
+          },
+          timer: {
+            enabled: timerEnabled,
+            visible: timerEnabled,
+            mode: timerEnabled ? 'countdown' : 'hidden',
+            totalSeconds: timerEnabled ? timerMinutes * 60 : null,
+            perQuestion: false,
+            pausable: true,
+            warningThresholds: timerEnabled ? [0.75, 0.90, 0.95] : [],
+          },
+        },
+      })
+      router.push(ROUTES.QUIZ_V2_SESSION('custom', result.sessionId))
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to start session. Please try again.')
     } finally {
