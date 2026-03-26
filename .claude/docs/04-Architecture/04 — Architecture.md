@@ -32,21 +32,61 @@ SlateCamp uses **Supabase** as the unified backend:
 - **Realtime:** Supabase Realtime for live quiz state sync and collaborative features
 - **Storage:** Supabase Storage for 3D assets (.GLB), images, and user uploads
 
-### Core Database Tables
+### Database — 64 Tables (full schema in `DATABASE_SCHEMA.sql`)
 
-| **Table** | **Purpose** | **Key Columns** |
-| --- | --- | --- |
-| `taxonomy_tree` | Master Syllabus hierarchy | `node_id`, `parent_id`, `level` (1-3), `name`, `subject_area` |
-| `wiki_articles` | SME-authored content | `article_id`, `topic_id` (FK), `title`, `content` (MD), `author_id`, `last_updated` |
-| `questions` | Quiz question bank | `question_id`, `topic_id` (FK), `subject_id` (FK), `text` (MD), `options` (JSONB), `rationale` (MD), `difficulty`, `difficulty_rating` (IRT b), `discrimination_rating` (IRT a) |
-| `user_interactions` | Atomic telemetry log | `interaction_id`, `user_id`, `session_id`, `question_id`, `selected_option`, `is_correct`, `time_spent_ms` |
-| `quiz_sessions` | Testing session state | `session_id`, `user_id`, `test_mode`, `status`, `config` (JSONB), `question_ids` (UUID[]), `current_question_index` |
-| `user_node_mastery` | Aggregated mastery scores | `user_id`, `topic_id`, `total_attempts`, `total_correct`, `current_mastery_weight` (EMA), `avg_time_ms`, `last_encountered` |
-| `user_notes` | Personal workspace blocks | `note_id`, `user_id`, `title`, `content_blocks` (JSON), `associated_topics` (FK array) |
-| `wiki_embeddings` | Vector store for AI tutor | `embedding_id`, `article_id` (FK), `chunk_text`, `embedding` (vector), `topic_id` |
-| `user_global_stats` | Aggregated per-user analytics | `user_id`, `total_questions_answered`, `total_correct`, `total_time_ms`, `current_readiness_score`, `last_updated` |
-| `readiness_score_snapshots` | Historical Readiness Score time series | `snapshot_id`, `user_id`, `readiness_score`, `snapshot_date`, `node_scores` (JSONB) |
-| `notifications` | In-app notification records | `notification_id`, `user_id`, `type`, `title`, `body`, `read_at`, `created_at`, `metadata` (JSONB) |
+**IMPORTANT:** `profiles` PK is `id` (NOT `user_id`). All other user tables use `user_id`.
+
+#### Core
+| Table | Purpose |
+|---|---|
+| `profiles` | User profiles (PK: `id` → auth.users), reviewer_type, account_mode, ale_result |
+| `disciplines` | Board exam types (Architecture/ALE), passing thresholds |
+| `taxonomy_tree` | Hierarchical subject taxonomy (subjects > topics > subtopics), bloom_level, difficulty, exam_frequency |
+
+#### Quiz Engine
+| Table | Purpose |
+|---|---|
+| `questions` | Question bank — IRT difficulty/discrimination, options JSONB, code_citation |
+| `quiz_sessions` | Session records — config JSONB, question_ids, status |
+| `user_interactions` | Per-answer telemetry — selected_option, is_correct, time_spent_ms, confidence |
+
+#### Mastery & Scoring
+| Table | Purpose |
+|---|---|
+| `user_node_mastery` | Per-node EMA mastery (PK: user_id + topic_id), theta, bloom flags |
+| `user_global_stats` | Readiness score, streak, exam date, assessment status |
+| `readiness_score_snapshots` | Score history with sub_scores JSONB |
+| `blindspot_queues` | Auto-generated weak area review queues |
+| `user_srs_cards` | Spaced repetition cards |
+| `user_theta` | IRT theta estimates per node |
+
+#### Content
+| Table | Purpose |
+|---|---|
+| `wiki_articles` | Wiki content (MDX), status tracking |
+| `wiki_article_taxonomy` | Article-to-taxonomy mapping |
+| `wiki_ei_prompts` / `wiki_ei_responses` | Elaborative interrogation |
+| `models_3d` / `spatial_hotspots` | 3D models + hotspot annotations |
+| `notes` / `note_folders` | Rich notes (Tiptap JSONB) with contextual anchoring |
+
+#### Trails
+| Table | Purpose |
+|---|---|
+| `camp_trails` / `trail_days` / `trail_steps` | Guided study plan definitions |
+| `user_trail_enrollments` / `user_trail_progress` | Enrollment + progress tracking |
+
+#### Features
+| Table | Purpose |
+|---|---|
+| `notifications` / `notification_preferences` | 12-type notification system with preferences |
+| `design_problems` / `design_problem_sessions` | Design practice library |
+| `study_pods` / `pod_members` | Study group accountability |
+| `code_updates` | Building code changelog |
+| `oath_taking_schedules` | Oath ceremony dates |
+| `user_subscriptions` | Tier + payment tracking (Stripe/PayRex) |
+| `analytics_events` | Event tracking |
+| `user_computed_signals` | Pre-computed churn/velocity signals |
+| `user_endurance_profiles` | Design Endurance Training tracking |
 
 ---
 
@@ -77,130 +117,187 @@ Topic-level mastery is calculated using an Exponential Moving Average (EMA) to p
 
 ### Full Project Directory
 
-```jsx
-slatecamp/
-├── .claude/                # Claude Code AI agent config
-│   ├── agents/                 # Custom AI agent definitions
-│   ├── docs/                   # Agent reference docs
-│   ├── skills/                 # Reusable AI skills
-│   │   ├── componentize-ui/
-│   │   ├── enforce-server-components/
-│   │   ├── extract-magic-strings/
-│   │   └── worktrees/
-│   ├── launch.json
-│   └── settings.local.json
-├── .cursor/                    # Cursor IDE config
-├── .next/                      # Next.js build output
-├── .planning/                  # Project planning docs
-├── .worktrees/                 # Git worktree configs
-├── docs/                       # Project documentation
-├── node_modules/
-├── public/                     # Static assets (fonts, images, 3D models)
-├── scripts/                    # Build & dev scripts (custom dev.js)
-├── src/                        # ══════ SOURCE ROOT ══════
-│   ├── app/                    # ── Next.js App Router ──
-│   │   ├── (auth)/             # Route group: login, signup, onboarding
-│   │   ├── about/              # Marketing: About page
-│   │   ├── api/                # API routes (Stripe webhooks, Edge Functions)
-│   │   ├── auth/               # Auth callbacks (Supabase OAuth, magic links)
-│   │   ├── contact/            # Marketing: Contact page
-│   │   ├── dashboard/          # ── Authenticated App Shell ──
-│   │   │   ├── 3d-lab/         #   Feature 4: Interactive 3D Lab
-│   │   │   ├── analytics/      #   Feature 6: Heatmap & Readiness Score
-│   │   │   ├── notes/          #   Feature 3: Personal Notes & Workspace
-│   │   │   ├── settings/       #   User settings & account management
-│   │   │   ├── testing/        #   Feature 2: Quizzing Engine (Camp + Storm)
-│   │   │   ├── wiki/           #   Feature 1: Taxonomy-Mapped Wiki
-│   │   │   ├── layout.tsx      #   Dashboard layout (sidebar, nav, auth gate)
-│   │   │   ├── loading.tsx     #   Dashboard loading skeleton
-│   │   │   └── page.tsx        #   Dashboard home (overview / Readiness Score)
-│   │   ├── pricing/            # Marketing: Pricing tiers page
-│   │   ├── favicon.ico
-│   │   ├── globals.css         # Tailwind v4 global styles
-│   │   ├── layout.tsx          # Root layout (providers, theme, fonts)
-│   │   └── page.tsx            # Landing page / hero
-│   ├── components/             # ── Component Library ──
-│   │   ├── 3d/                 # 3D Lab: R3F canvas, parametric sandbox, models
-│   │   ├── auth/               # Auth UI: login forms, signup flows
-│   │   ├── dashboard/          # Dashboard: heatmap, charts, node inspector
-│   │   ├── dev/                # Dev tools: debug panels, test utilities
-│   │   ├── layout/             # Layout shells: sidebar, header, footer
-│   │   ├── marketing/          # Marketing pages: hero, features, CTA sections
-│   │   ├── notes/              # Notes workspace: editor, capture, cheat sheets
-│   │   ├── shared/             # Shared: modals, tooltips, loaders, error states
-│   │   ├── ui/                 # shadcn/ui primitives: button, input, dialog, etc.
-│   │   └── wiki/               # Wiki: article viewer, ToC, breadcrumbs, Zen Mode
-│   └── lib/                    # Utilities, helpers, constants, hooks, types, Supabase client
-├── .cursorrules                # Cursor IDE AI rules
-├── .env.local                  # Environment variables (Supabase, Stripe, PayRex keys)
-├── .gitattributes
-├── .gitignore
-├── bun.lock                    # Bun package manager lockfile
-├── CLAUDE.md                   # Claude Code project context doc
-├── components.json             # shadcn/ui component registry config
-├── DATABASE_SCHEMA.sql         # Supabase PostgreSQL schema definition
-├── eslint.config.mjs           # ESLint flat config (Next.js rules)
-├── FEATURE_TREE.md             # Feature hierarchy / roadmap doc
-└── install.cmd                 # Windows install script
+```
+slate-camp/
+├── src/
+│   ├── app/                          # Next.js App Router
+│   │   ├── (auth)/                   # Auth (login, register, onboarding, comp-exam)
+│   │   ├── (protected)/ceo/          # CEO dashboard (financials, insights, team)
+│   │   ├── about/ contact/ pricing/  # Marketing pages
+│   │   ├── try/                      # Anonymous diagnostic quiz
+│   │   ├── tools/                    # Public SEO tools (calculators)
+│   │   ├── admin/                    # Content CMS (articles, questions, taxonomy, pipeline)
+│   │   ├── developer/                # Dev hub (design system, console, DB viewer)
+│   │   ├── dashboard/                # ── Main App ──
+│   │   │   ├── wiki/[slug]/          # Knowledge Wiki
+│   │   │   ├── testing/              # Testing & Review hub + mode setups
+│   │   │   ├── 3d-lab/               # 3D Learning Lab
+│   │   │   ├── analytics/            # Performance analytics
+│   │   │   ├── camptrails/[slug]/    # Camp Trails
+│   │   │   ├── flash/[category]/     # Flash Cards
+│   │   │   ├── notes/                # Notes workspace
+│   │   │   ├── notifications/        # Notifications page
+│   │   │   ├── cram-card/            # Personal Cram Card
+│   │   │   ├── area-c/              # Design practice (calculator, problems, quiz)
+│   │   │   ├── pods/[podId]/         # Study Pods
+│   │   │   ├── dae-mode/             # DAE Maintenance Mode
+│   │   │   ├── professional/         # Professional Reference Mode
+│   │   │   ├── studio/               # Studio Mode (students)
+│   │   │   ├── code-updates/         # Code changelog
+│   │   │   ├── results-day/          # Post-exam results flow
+│   │   │   ├── assessment/           # Diagnostic quiz
+│   │   │   ├── settings/             # Account settings
+│   │   │   └── page.tsx              # Dashboard home
+│   │   ├── quiz/[mode]/session/[id]/ # Quiz Engine v2 (setup, active, results, review)
+│   │   └── api/                      # Cron, AI, payments, webhooks
+│   │
+│   ├── components/
+│   │   ├── quiz-v2/                  # v2 Quiz Engine (QuizShell, Options, Feedback, Footer, setup/, results/, review/)
+│   │   ├── dashboard/                # Dashboard (HeroCommandBar, Heatmap, BloomTracker, etc.)
+│   │   ├── wiki/                     # Wiki (WikiArticle, WikiItemRenderer, widgets/)
+│   │   ├── testing/                  # Testing hub (ReviewHub, SessionsTable, setup/, session/)
+│   │   ├── notifications/            # Notification bell, list, preferences
+│   │   ├── trails/                   # Camp Trails (library, steps, daily view)
+│   │   ├── 3d/ + 3d-lab/            # R3F canvas + lab panels
+│   │   ├── analytics/               # Charts (Pacing, Readiness, Stamina)
+│   │   ├── notes/                   # Tiptap editor shell
+│   │   ├── sidebar/                 # Rail+overlay sidebar
+│   │   ├── admin/                   # CMS components
+│   │   ├── ceo/                     # CEO dashboard charts
+│   │   ├── ui/                      # shadcn/ui primitives
+│   │   └── shared/                  # DashboardHeader, CampfireLoader
+│   │
+│   ├── lib/
+│   │   ├── readiness-score.ts       # Anti-inflation scoring (6 vectors, PRC-weighted)
+│   │   ├── srs/                     # irt.ts (IRT 2PL), sm2.ts (SM-2), retention.ts
+│   │   ├── quiz/                    # mode-presets.ts, question-selection.ts, adaptive, offline/
+│   │   ├── actions/                 # 60+ server actions ('use server')
+│   │   │   ├── quiz-v2/             # start-session, submit-answer, end-session, get-review-data
+│   │   │   └── dashboard-page.ts    # 16 parallel queries
+│   │   ├── constants/               # routes, testing-modes, readiness, pricing
+│   │   ├── supabase/                # server.ts, client.ts, admin.ts, middleware.ts
+│   │   ├── context/                 # React contexts (session, tier, discipline)
+│   │   ├── hooks/                   # Custom hooks
+│   │   └── paywall/                 # Access control, daily cap, score reveal
+│   │
+│   ├── stores/                      # Zustand (quiz, lab, notifications, dev)
+│   └── types/                       # supabase.ts (auto), app.ts, quiz-config.ts, dashboard.ts, etc.
+│
+├── supabase/migrations/             # 56 migration files
+├── Design Questions/                # 12 design scenario JSONs
+├── DATABASE_SCHEMA.sql              # 64 tables (auto-generated from Supabase)
+├── CLAUDE.md                        # Project instructions
+├── bun.lock                         # Bun lockfile (text format)
+└── .claude/                         # Agents (17), docs (12), skills (40)
 ```
 
 ### Routing Architecture
 
-The app uses a **two-zone pattern:** public marketing routes at the top level, and all authenticated product features nested under `/dashboard/`.
+The app uses a **multi-zone pattern:** public marketing, auth, dashboard (main app), quiz engine (top-level), admin CMS, CEO dashboard, and developer tools.
 
-| **Route** | **Zone** | **Maps to Feature** |
-| --- | --- | --- |
-| `/` | Public | Landing page / hero ("Know you'll win") |
-| `/about` | Public | Marketing: About SlateCamp |
-| `/contact` | Public | Marketing: Contact / support |
-| `/pricing` | Public | Marketing: Pricing tiers (Free → Camp → Insurance) |
-| `(auth)/` | Public | Login, signup, onboarding flow |
-| `/auth` | Public | Supabase auth callbacks (OAuth, magic links) |
-| `/api` | Server | Stripe/PayRex webhooks, Edge Functions |
-| **`/dashboard`** | **Auth'd** | **Dashboard home — overview & Readiness Score** |
-| `/dashboard/wiki` | Auth'd | Feature 1: Taxonomy-Mapped Wiki |
-| `/dashboard/testing` | Auth'd | Feature 2: Quizzing Engine (Camp + Storm Mode) |
-| `/dashboard/notes` | Auth'd | Feature 3: Personal Notes & Workspace |
-| `/dashboard/3d-lab` | Auth'd | Feature 4: Interactive 3D Lab |
-| `/dashboard/analytics` | Auth'd | Feature 6: Heatmap & Performance Analytics |
-| `/dashboard/settings` | Auth'd | User settings & account management |
+| **Zone** | **Routes** | **Purpose** |
+|---|---|---|
+| Public | `/`, `/about`, `/contact`, `/pricing`, `/try`, `/tools/*` | Marketing + anonymous diagnostic |
+| Auth | `(auth)/login`, `register`, `onboarding`, `comp-exam` | Authentication + onboarding flows |
+| Dashboard | `/dashboard/*` | Main authenticated app (20+ sub-routes) |
+| Quiz v2 | `/quiz/[mode]/session/[id]/*` | Config-driven quiz (setup, active, results, review) |
+| Admin | `/admin/*` | Content CMS, taxonomy, questions, pipeline |
+| CEO | `/ceo/*` | Financial dashboard, insights, team |
+| Developer | `/developer/*` | Component registry, design system, tools |
+| API | `/api/*` | Cron jobs, AI endpoints, payment webhooks |
 
-The `dashboard/layout.tsx` acts as the **authenticated app shell** — it wraps all product features with the sidebar navigation, auth gate, and shared loading state (`loading.tsx`).
+**Dashboard sub-routes (authenticated):**
+
+| Route | Feature |
+|---|---|
+| `/dashboard` | Home — readiness score, heatmap, activity feed |
+| `/dashboard/wiki/[slug]` | Knowledge Wiki |
+| `/dashboard/testing` | Testing & Review hub (9 quiz modes) |
+| `/dashboard/3d-lab` | 3D Learning Lab |
+| `/dashboard/analytics` | Performance analytics |
+| `/dashboard/camptrails/[slug]` | Camp Trails (guided study) |
+| `/dashboard/flash/[category]` | Flash Cards |
+| `/dashboard/notes` | Rich notes workspace |
+| `/dashboard/notifications` | Notification center |
+| `/dashboard/cram-card` | Personal Cram Card |
+| `/dashboard/area-c/*` | Design practice (calculator, problems, quiz) |
+| `/dashboard/pods/[podId]` | Study Pods |
+| `/dashboard/settings` | Account settings |
+
+The `dashboard/layout.tsx` acts as the **authenticated app shell** — sidebar navigation, auth gate, and shared loading state.
 
 ### Component Architecture
 
-Components are organized by **feature domain**, not by type. Each folder is self-contained:
+Components are organized by **feature domain**, not by type:
 
-| **Directory** | **Feature** | **Key Components** |
-| --- | --- | --- |
-| `components/3d/` | 3D Lab (Feature 4) | R3F canvas, parametric sandbox, camera controls, model viewers |
-| `components/auth/` | Authentication | Login forms, signup flows, onboarding quiz |
-| `components/dashboard/` | Analytics (Feature 6) | Taxonomy heatmap, Recharts graphs, node inspector, pacing gauge |
-| `components/dev/` | Developer Tools | Debug panels, test utilities, dev-only UI |
-| `components/layout/` | App Shell | Sidebar nav, header, footer, responsive wrappers |
-| `components/marketing/` | Marketing Pages | Hero section, feature grids, CTA blocks, testimonials |
-| `components/notes/` | Notes Workspace (Feature 3) | TipTap editor, capture blocks, cheat sheet builder |
-| `components/shared/` | Shared Utilities | Modals, tooltips, loaders, error boundaries, toast notifications |
-| `components/ui/` | Design System | shadcn/ui primitives (Button, Input, Dialog, Card, etc.) |
-| `components/wiki/` | Wiki (Feature 1) | Article renderer, sticky ToC, breadcrumbs, Zen Mode, Omnibar |
-| `components/quiz-v2/` | Quiz Engine v2 (Feature 2) | `QuizShell`, `OptionsColumn`, `FeedbackPanel`, `QuizFooter`, `SetupFlow`, `ResultsDashboard`, `ResultsCTAs`, `ReviewCard`, `ReviewCardList`, `ReviewFilterBar` |
-| `components/testing/hub/` | Testing Hub | `ReviewHub` (entry point), `SessionsTable` (past sessions) |
-| `components/notifications/` | Notifications | In-app notification bell, notification list, read/unread state |
+| **Directory** | **Key Components** |
+|---|---|
+| `quiz-v2/` | `QuizShell` (orchestrator), `OptionsColumn`, `FeedbackPanel`, `QuizFooter`, `SlideToSubmit`, `SwipeableOption`, `setup/SetupFlow`, `results/ResultsDashboard`, `review/ReviewCardList` |
+| `dashboard/` | `HeroCommandBar`, `TaxonomyHeatmap`, `SubjectMasteryCard`, `BloomCognitiveTracker`, `ReviewCenterSyncCard`, `StreakRibbon`, `ImprovedActivityFeed`, `SubjectFloorAlert` |
+| `wiki/` | `WikiArticle` (MDX), `WikiItemRenderer` (9 types), `WikiRightSidebar`, `WikiQuizButton/Modal`, `widgets/bp344/`, `widgets/dsgn013/` |
+| `testing/` | `hub/ReviewHub`, `hub/SessionsTable`, `setup/EnduranceSetup`, `setup/StormSetup`, `session/SessionShell` |
+| `notifications/` | `NotificationBell` (popover), `NotificationList`, `NotificationItem`, `NotificationPreferences` |
+| `trails/` | `TrailLibrary`, `TrailStepCard`, `TrailDailyView`, `DayCompletionMoment` |
+| `3d/ + 3d-lab/` | R3F `Workspace`, `InfoPanel`, `LabTopBar`, parametric controls |
+| `analytics/` | `PacingQuadrant`, `ReadinessTrajectory`, `StaminaCurve`, `TimelineHeatmap`, `MemoryHealthMap` |
+| `notes/` | `NotesShell`, `NotesNavigator`, `NotesList` (Tiptap editor) |
+| `sidebar/` | `Sidebar` (rail+overlay pattern), `SidebarProvider`, `sidebar-constants` |
+| `admin/` | `UnifiedContentEditor`, `TaxonomyEditor`, `QuestionEditor`, `SMEReviewQueue` |
+| `ceo/` | Financial charts, `TeamTable`, `ExportButton` |
+| `ui/` | shadcn/ui primitives (Button, Card, Dialog, Input, etc.) |
+| `shared/` | `DashboardHeader`, `CampfireLoader`, `SharedPageLayout` |
 
 ### State Management
 
-- **Server state:** Supabase client with React Server Components
-- **Client UI state:** React Context (dark mode, zen mode, active ToC highlight)
-- **Quiz state:** Local state with 10-second auto-save to Supabase (zero-data-loss guarantee)
-- **Theme:** `next-themes ^0.4.6` for dark/light mode switching
+| Store | Purpose | Persistence |
+|---|---|---|
+| `useQuizStore` (Zustand) | Quiz session state, answers, timer, offline queue | localStorage |
+| `useLabStore` (Zustand) | 3D Lab state, hotspots, parametric values | None |
+| `useNotificationStore` (Zustand) | Real-time notifications via Supabase Realtime | None |
+| `dev-store` (Zustand) | Developer impersonation, feature flag overrides | sessionStorage |
+| React Context | Active session guard, tier, discipline, breadcrumbs, notes | None |
+| Server state | Supabase via Server Components + Server Actions | Database |
 
-### Dev Tooling & AI Assistance
+### Quiz Engine — 9 Modes (Config-Driven)
 
-- **Claude Code** (`.claude/`) — AI agents with custom skills for componentizing UI, enforcing Server Components, and extracting magic strings
-- **Cursor IDE** (`.cursor/`, `.cursorrules`) — AI-assisted coding with project-specific rules
-- **Package Manager:** Bun (`bun.lock`) for fast installs and script execution
-- **Schema Source of Truth:** `DATABASE_SCHEMA.sql` at project root — all Supabase table definitions
-- **Feature Roadmap:** `FEATURE_TREE.md` at project root — feature hierarchy and status
+All modes use a single `QuizShell` component. Behavior is driven by `QuizSessionConfig` JSONB stored in `quiz_sessions.config`. Mode presets in `src/lib/quiz/mode-presets.ts`.
+
+| Mode | Questions | Timer | Feedback | Purpose |
+|---|---|---|---|---|
+| Camp | 20 | Hidden | Immediate | Guided daily study |
+| Chill | 10 | Hidden | Immediate, skip-friendly | Low-pressure practice |
+| Subject | 15 | Hidden | Immediate, adaptive | Single-subject deep dive |
+| Focused | 15 | Hidden | Immediate | Weakest areas (data-driven) |
+| Custom | User picks | Optional | User picks | Full control |
+| Storm | 50 | 60min countdown | Deferred | Exam simulation |
+| Full Exam | 200 | 4hr countdown | 24hr delayed | ALE simulation |
+| Extended | 100 | Count-up | Immediate | Stamina training |
+| Article Review | 5 | Hidden | Immediate | Wiki-integrated |
+
+### Scoring Algorithms
+
+- **Readiness Score** (`src/lib/readiness-score.ts`): 6 anti-inflation vectors (streak diminishing returns, difficulty ceiling, grey node penalty, Bloom's ceiling, question bank depth, recency decay). PRC-weighted: 30/30/40.
+- **IRT 2PL** (`src/lib/srs/irt.ts`): Question selection at P=0.75 optimal challenge. Newton-Raphson theta update.
+- **SM-2** (`src/lib/srs/sm2.ts`): Spaced repetition with quality-based interval scheduling.
+- **Mastery EMA**: `S_t = 0.2 × x_t + 0.8 × S_{t-1}`
+
+### Sidebar Navigation
+
+| Group | Items |
+|---|---|
+| (standalone) | Dashboard |
+| Learn | Wiki, Notes |
+| Explore | 3D Lab |
+| Practice | Testing & Review, Camp Trail, Flash Cards |
+| Data | Analytics |
+| (bottom) | Settings |
+
+### Dev Tooling
+
+- **Claude Code** (`.claude/`) — 17 agents, 40 skills, 12 docs
+- **Package Manager:** Bun (`bun.lock` text format)
+- **Schema Source of Truth:** `DATABASE_SCHEMA.sql` at project root (64 tables)
+- **Deployment:** Vercel (auto-deploy on push to main)
 
 ---
 
