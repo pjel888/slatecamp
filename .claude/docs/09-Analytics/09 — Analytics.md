@@ -324,7 +324,7 @@ All dashboard components are rendered with **Recharts** (`recharts ^3.8.0`), con
 
 | **Metric** | **Definition** | **Target** | **Data Source** |
 | --- | --- | --- | --- |
-| **Free-to-Paid Conversion** | % of free users who upgrade to Camp (₱499–799/mo) or Insurance (₱4,999/yr) | Phase 2: ≥ 8%, Phase 3: ≥ 15% | Stripe + PayRex subscription events |
+| **Free-to-Paid Conversion** | % of free users who upgrade to Camp (₱499–799/mo) or Insurance (₱3,999 / 6 months) | Phase 2: ≥ 8%, Phase 3: ≥ 15% | Stripe + PayRex subscription events |
 | **DAU/MAU Ratio** | Daily stickiness — proportion of monthly users who return daily | ≥ 30% | Supabase auth sessions with quiz or Wiki activity |
 | **MRR** | Monthly Recurring Revenue from Camp + Insurance tiers | Monotonically increasing | Stripe dashboard + PayRex reports |
 | **Churn Rate** | % of paid subscribers who cancel per month | < 5% | Stripe `customer.subscription.deleted` events |
