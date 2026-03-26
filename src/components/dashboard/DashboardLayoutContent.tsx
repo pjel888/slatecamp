@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/constants/routes'
@@ -102,7 +103,20 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                     <DashboardHeader userId={user.id} />
                   </div>
                   <main className='flex-1 min-h-0 overflow-y-auto bg-page-bg'>
-                    {children}
+                    <Suspense fallback={
+                      <div className="flex flex-col gap-3 p-2 animate-in fade-in-0 duration-100">
+                        <div className="h-7 w-48 rounded bg-border-default/40 animate-pulse" />
+                        <div className="h-4 w-72 rounded bg-border-default/30 animate-pulse" />
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
+                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
+                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
+                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
+                        </div>
+                      </div>
+                    }>
+                      {children}
+                    </Suspense>
                   </main>
                 </BreadcrumbProvider>
               </SidebarContent>
