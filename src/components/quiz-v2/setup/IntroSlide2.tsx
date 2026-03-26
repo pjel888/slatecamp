@@ -4,100 +4,69 @@ import { useState, useMemo } from 'react'
 import { MagnifyingGlass, CaretDown, CaretUp } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import type { QuizMode } from '@/types/quiz-config'
+import type { QuizMode, TaxonomySubject, TaxonomySubtopic } from '@/types/quiz-config'
 
-// ─── Topic data ───────────────────────────────────────────────────────────────
-// Placeholder structure: 3 areas (A, B, C) with topics per area.
-// In production these would be fetched/passed as props.
+// ─── Mastery helpers ──────────────────────────────────────────────────────────
 
-export interface TopicItem {
-  id: string
-  label: string
-  /** Relative weakness score 0–1 (1 = strongest weakness) */
-  weaknessScore?: number
+const masteryColor = (w: number | null): string => {
+  if (w === null) return '#8896A7'
+  if (w >= 0.7) return '#2D9F6F'
+  if (w >= 0.4) return '#D4951A'
+  return '#8896A7'
 }
 
-export interface SubjectArea {
-  id: string
-  label: string
-  topics: TopicItem[]
-}
+const masteryPct = (w: number | null): number => (w === null ? 0 : Math.round(w * 100))
 
-const DEFAULT_AREAS: SubjectArea[] = [
-  {
-    id: 'area-a',
-    label: 'Area A — Project Management',
-    topics: [
-      { id: 'a1', label: 'Scope & Integration', weaknessScore: 0.85 },
-      { id: 'a2', label: 'Schedule Management', weaknessScore: 0.6 },
-      { id: 'a3', label: 'Cost Management', weaknessScore: 0.4 },
-      { id: 'a4', label: 'Risk Management', weaknessScore: 0.75 },
-      { id: 'a5', label: 'Procurement', weaknessScore: 0.3 },
-    ],
-  },
-  {
-    id: 'area-b',
-    label: 'Area B — Technical Practice',
-    topics: [
-      { id: 'b1', label: 'Structural Systems', weaknessScore: 0.5 },
-      { id: 'b2', label: 'Mechanical & Electrical', weaknessScore: 0.9 },
-      { id: 'b3', label: 'Building Enclosure', weaknessScore: 0.65 },
-      { id: 'b4', label: 'Accessibility', weaknessScore: 0.2 },
-      { id: 'b5', label: 'Sustainability', weaknessScore: 0.55 },
-    ],
-  },
-  {
-    id: 'area-c',
-    label: 'Area C — Professional Practice',
-    topics: [
-      { id: 'c1', label: 'Contracts & Agreements', weaknessScore: 0.7 },
-      { id: 'c2', label: 'Ethics & Regulations', weaknessScore: 0.45 },
-      { id: 'c3', label: 'Business Development', weaknessScore: 0.35 },
-      { id: 'c4', label: 'Legal Responsibilities', weaknessScore: 0.8 },
-    ],
-  },
-]
+// ─── Loading skeleton ─────────────────────────────────────────────────────────
 
-// Blindspot threshold: topics with weaknessScore >= 0.65
-const BLINDSPOT_THRESHOLD = 0.65
+const Skeleton = () => (
+  <div className="space-y-2" aria-busy="true" aria-label="Loading topics">
+    {[1, 2, 3, 4].map((i) => (
+      <div key={i} className="rounded-md border border-[#D4DAE3] bg-white p-4 animate-pulse">
+        <div className="flex items-center gap-3">
+          <div className="h-4 w-4 rounded-[3px] bg-[#D4DAE3]" />
+          <div className="flex-1 h-3 rounded bg-[#D4DAE3]" style={{ width: `${40 + i * 12}%` }} />
+        </div>
+      </div>
+    ))}
+  </div>
+)
 
-const getBlindspotIds = (areas: SubjectArea[]): string[] =>
-  areas.flatMap((a) =>
-    a.topics.filter((t) => (t.weaknessScore ?? 0) >= BLINDSPOT_THRESHOLD).map((t) => t.id),
-  )
+// ─── Subject row ──────────────────────────────────────────────────────────────
 
-// ─── Props ────────────────────────────────────────────────────────────────────
-
-interface IntroSlide2Props {
-  mode: QuizMode
-  areas?: SubjectArea[]
-  initialSelected?: string[]
-  onContinue: (selectedTopics: string[]) => void
-}
-
-// ─── Area row (expandable) ────────────────────────────────────────────────────
-
-interface AreaRowProps {
-  area: SubjectArea
+interface SubjectRowProps {
+  subject: TaxonomySubject
   selected: Set<string>
   onToggleTopic: (id: string) => void
-  onToggleArea: (area: SubjectArea) => void
+  onToggleSubject: (subject: TaxonomySubject) => void
+  defaultExpanded: boolean
 }
 
-const AreaRow = ({ area, selected, onToggleTopic, onToggleArea }: AreaRowProps) => {
-  const [expanded, setExpanded] = useState(true)
-  const allSelected = area.topics.every((t) => selected.has(t.id))
-  const someSelected = area.topics.some((t) => selected.has(t.id))
+const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, defaultExpanded }: SubjectRowProps) => {
+  const [expanded, setExpanded] = useState(defaultExpanded)
+
+  const leafIds = useMemo(
+    () => subject.subtopics.length > 0
+      ? subject.subtopics.map((s) => s.nodeId)
+      : [subject.nodeId],
+    [subject],
+  )
+  const allSelected = leafIds.every((id) => selected.has(id))
+  const someSelected = leafIds.some((id) => selected.has(id))
+  const color = masteryColor(subject.masteryWeight)
+  const pct = masteryPct(subject.masteryWeight)
 
   return (
     <div className="rounded-md border border-[#D4DAE3] bg-white overflow-hidden">
-      {/* Area header */}
-      <div className="flex items-center gap-2 px-4 py-3 bg-[#F8F7F5]">
-        {/* Area-level select toggle */}
+      {/* Subject header */}
+      <div className="flex items-center gap-3 px-4 py-3 bg-[#F8F7F5]">
+        {/* Checkbox */}
         <button
           type="button"
-          onClick={() => onToggleArea(area)}
-          aria-label={allSelected ? `Deselect all ${area.label} topics` : `Select all ${area.label} topics`}
+          onClick={() => onToggleSubject(subject)}
+          aria-label={allSelected ? `Deselect all ${subject.name} topics` : `Select all ${subject.name} topics`}
+          aria-checked={allSelected ? true : someSelected ? 'mixed' : false}
+          role="checkbox"
           className={cn(
             'h-4 w-4 shrink-0 rounded-[3px] border transition-colors duration-150',
             allSelected
@@ -106,8 +75,6 @@ const AreaRow = ({ area, selected, onToggleTopic, onToggleArea }: AreaRowProps) 
                 ? 'bg-[#EEF2FC] border-[#1B3FC4]'
                 : 'bg-white border-[#D4DAE3] hover:border-[#1B3FC4]/50',
           )}
-          aria-checked={allSelected ? true : someSelected ? 'mixed' : false}
-          role="checkbox"
         >
           {allSelected && (
             <svg viewBox="0 0 12 12" className="w-full h-full p-[2px]" aria-hidden="true">
@@ -121,33 +88,52 @@ const AreaRow = ({ area, selected, onToggleTopic, onToggleArea }: AreaRowProps) 
           )}
         </button>
 
+        {/* Expand toggle */}
         <button
           type="button"
           onClick={() => setExpanded((p) => !p)}
-          className="flex-1 flex items-center justify-between text-left focus-visible:outline-none"
+          className="flex-1 flex items-center gap-3 text-left focus-visible:outline-none min-w-0"
           aria-expanded={expanded}
-          aria-controls={`area-topics-${area.id}`}
+          aria-controls={`subject-topics-${subject.nodeId}`}
+          disabled={subject.subtopics.length === 0}
         >
-          <span className="text-[13px] font-medium text-[#1A2332]">{area.label}</span>
-          {expanded ? (
-            <CaretUp className="h-3.5 w-3.5 text-[#8896A7]" aria-hidden="true" />
-          ) : (
-            <CaretDown className="h-3.5 w-3.5 text-[#8896A7]" aria-hidden="true" />
-          )}
+          <span className="text-[13px] font-medium text-[#1A2332] truncate">{subject.name}</span>
+
+          {/* Mastery bar + pct */}
+          <span className="ml-auto flex items-center gap-2 shrink-0">
+            <span className="w-16 h-1 rounded-full bg-[#D4DAE3] overflow-hidden" aria-hidden="true">
+              <span
+                className="h-full rounded-full block transition-all duration-150"
+                style={{ width: `${pct}%`, backgroundColor: color }}
+              />
+            </span>
+            <span
+              className="text-[11px] font-mono tabular-nums"
+              style={{ color, minWidth: '28px', textAlign: 'right' }}
+              aria-label={`${pct}% mastery`}
+            >
+              {subject.interactionCount > 0 ? `${pct}%` : '—'}
+            </span>
+            {subject.subtopics.length > 0 && (
+              expanded
+                ? <CaretUp className="h-3.5 w-3.5 text-[#8896A7] shrink-0" aria-hidden="true" />
+                : <CaretDown className="h-3.5 w-3.5 text-[#8896A7] shrink-0" aria-hidden="true" />
+            )}
+          </span>
         </button>
       </div>
 
-      {/* Topic chips */}
-      {expanded && (
-        <div id={`area-topics-${area.id}`} className="flex flex-wrap gap-2 px-4 py-3">
-          {area.topics.map((topic) => {
-            const isSelected = selected.has(topic.id)
-            const isWeakness = (topic.weaknessScore ?? 0) >= BLINDSPOT_THRESHOLD
+      {/* Subtopic chips */}
+      {expanded && subject.subtopics.length > 0 && (
+        <div id={`subject-topics-${subject.nodeId}`} className="flex flex-wrap gap-2 px-4 py-3">
+          {subject.subtopics.map((sub) => {
+            const isSelected = selected.has(sub.nodeId)
+            const isWeak = sub.masteryWeight !== null && sub.masteryWeight < 0.4
             return (
               <button
-                key={topic.id}
+                key={sub.nodeId}
                 type="button"
-                onClick={() => onToggleTopic(topic.id)}
+                onClick={() => onToggleTopic(sub.nodeId)}
                 aria-pressed={isSelected}
                 className={cn(
                   'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm text-[12px] font-medium',
@@ -158,8 +144,8 @@ const AreaRow = ({ area, selected, onToggleTopic, onToggleArea }: AreaRowProps) 
                     : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40',
                 )}
               >
-                {topic.label}
-                {isWeakness && (
+                {sub.name}
+                {isWeak && (
                   <span
                     className="inline-block w-1.5 h-1.5 rounded-full bg-[#D4951A] shrink-0"
                     title="Developing skill"
@@ -175,40 +161,66 @@ const AreaRow = ({ area, selected, onToggleTopic, onToggleArea }: AreaRowProps) 
   )
 }
 
+// ─── Focused pre-selection: subjects with mastery < 0.70 ─────────────────────
+
+const getFocusedIds = (subjects: TaxonomySubject[]): string[] =>
+  subjects.flatMap((s) => {
+    const leafIds = s.subtopics.length > 0 ? s.subtopics.map((st) => st.nodeId) : [s.nodeId]
+    const isFocused = s.masteryWeight === null || s.masteryWeight < 0.7
+    return isFocused ? leafIds : []
+  })
+
+// ─── Props ────────────────────────────────────────────────────────────────────
+
+interface IntroSlide2Props {
+  mode: QuizMode
+  subjects?: TaxonomySubject[]
+  initialSelected?: string[]
+  onContinue: (selectedTopicIds: string[]) => void
+}
+
 // ─── IntroSlide2 ──────────────────────────────────────────────────────────────
 
-const IntroSlide2 = ({
-  mode,
-  areas = DEFAULT_AREAS,
-  initialSelected,
-  onContinue,
-}: IntroSlide2Props) => {
-  const allIds = useMemo(() => areas.flatMap((a) => a.topics.map((t) => t.id)), [areas])
-  const blindspotIds = useMemo(() => getBlindspotIds(areas), [areas])
+const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide2Props) => {
+  const allLeafIds = useMemo<string[]>(
+    () => (subjects ?? []).flatMap((s) =>
+      s.subtopics.length > 0 ? s.subtopics.map((st) => st.nodeId) : [s.nodeId],
+    ),
+    [subjects],
+  )
+
+  const focusedIds = useMemo(
+    () => subjects ? getFocusedIds(subjects) : [],
+    [subjects],
+  )
 
   const defaultSelected = useMemo<Set<string>>(() => {
     if (initialSelected) return new Set(initialSelected)
-    // Focused mode pre-selects blindspot topics
-    if (mode === 'focused') return new Set(blindspotIds)
-    // Subject / Custom start with all selected
-    return new Set(allIds)
-  }, [mode, allIds, blindspotIds, initialSelected])
+    if (mode === 'focused') return new Set(focusedIds)
+    return new Set(allLeafIds)
+  }, [mode, allLeafIds, focusedIds, initialSelected])
 
   const [selected, setSelected] = useState<Set<string>>(defaultSelected)
   const [query, setQuery] = useState('')
 
-  const filteredAreas = useMemo<SubjectArea[]>(() => {
-    if (!query.trim()) return areas
+  const filteredSubjects = useMemo<TaxonomySubject[]>(() => {
+    if (!subjects) return []
+    if (!query.trim()) return subjects
     const q = query.toLowerCase()
-    return areas
-      .map((a) => ({
-        ...a,
-        topics: a.topics.filter((t) => t.label.toLowerCase().includes(q)),
+    return subjects
+      .filter((s) =>
+        s.name.toLowerCase().includes(q) ||
+        s.subtopics.some((st) => st.name.toLowerCase().includes(q)),
+      )
+      .map((s) => ({
+        ...s,
+        subtopics: s.subtopics.filter(
+          (st) => !query.trim() || st.name.toLowerCase().includes(q) || s.name.toLowerCase().includes(q),
+        ),
       }))
-      .filter((a) => a.topics.length > 0)
-  }, [areas, query])
+  }, [subjects, query])
 
-  const allSelected = selected.size === allIds.length
+  const allSelected = allLeafIds.length > 0 && selected.size === allLeafIds.length
 
   const toggleTopic = (id: string) => {
     setSelected((prev) => {
@@ -220,16 +232,18 @@ const IntroSlide2 = ({
   }
 
   const toggleAll = () => {
-    setSelected(allSelected ? new Set() : new Set(allIds))
+    setSelected(allSelected ? new Set() : new Set(allLeafIds))
   }
 
-  const toggleArea = (area: SubjectArea) => {
-    const areaIds = area.topics.map((t) => t.id)
-    const allAreaSelected = areaIds.every((id) => selected.has(id))
+  const toggleSubject = (subject: TaxonomySubject) => {
+    const ids = subject.subtopics.length > 0
+      ? subject.subtopics.map((st) => st.nodeId)
+      : [subject.nodeId]
+    const allSubjectSelected = ids.every((id) => selected.has(id))
     setSelected((prev) => {
       const next = new Set(prev)
-      if (allAreaSelected) areaIds.forEach((id) => next.delete(id))
-      else areaIds.forEach((id) => next.add(id))
+      if (allSubjectSelected) ids.forEach((id) => next.delete(id))
+      else ids.forEach((id) => next.add(id))
       return next
     })
   }
@@ -267,38 +281,46 @@ const IntroSlide2 = ({
         />
       </div>
 
-      {/* All-topics toggle */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={toggleAll}
-          className="text-[12px] font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
-          aria-label={allSelected ? 'Deselect all topics' : 'Select all topics'}
-        >
-          {allSelected ? 'Deselect all' : 'Select all'}
-        </button>
-        <span className="text-[12px] text-[#8896A7]">
-          {selected.size} of {allIds.length} selected
-        </span>
-      </div>
+      {/* Loading skeleton */}
+      {!subjects && <Skeleton />}
 
-      {/* Area rows */}
-      <div className="space-y-2">
-        {filteredAreas.map((area) => (
-          <AreaRow
-            key={area.id}
-            area={area}
-            selected={selected}
-            onToggleTopic={toggleTopic}
-            onToggleArea={toggleArea}
-          />
-        ))}
-        {filteredAreas.length === 0 && (
-          <p className="text-[13px] text-[#8896A7] text-center py-6">
-            No topics match your search.
-          </p>
-        )}
-      </div>
+      {/* All-topics toggle (only when loaded) */}
+      {subjects && (
+        <div className="flex items-center justify-between">
+          <button
+            type="button"
+            onClick={toggleAll}
+            className="text-[12px] font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
+            aria-label={allSelected ? 'Deselect all topics' : 'Select all topics'}
+          >
+            {allSelected ? 'Deselect all' : 'Select all'}
+          </button>
+          <span className="text-[12px] text-[#8896A7]">
+            {selected.size} of {allLeafIds.length} subtopics selected
+          </span>
+        </div>
+      )}
+
+      {/* Subject rows */}
+      {subjects && (
+        <div className="space-y-2">
+          {filteredSubjects.map((subject) => (
+            <SubjectRow
+              key={subject.nodeId}
+              subject={subject}
+              selected={selected}
+              onToggleTopic={toggleTopic}
+              onToggleSubject={toggleSubject}
+              defaultExpanded={mode === 'focused'}
+            />
+          ))}
+          {filteredSubjects.length === 0 && (
+            <p className="text-[13px] text-[#8896A7] text-center py-6">
+              No topics match your search.
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Continue */}
       <Button
@@ -306,10 +328,10 @@ const IntroSlide2 = ({
         size="lg"
         fullWidth
         onClick={handleContinue}
-        disabled={selected.size === 0}
+        disabled={selected.size === 0 || !subjects}
         className="rounded-sm"
       >
-        Continue with {selected.size} topic{selected.size !== 1 ? 's' : ''}
+        Continue with {selected.size} subtopic{selected.size !== 1 ? 's' : ''}
       </Button>
     </div>
   )

@@ -1,0 +1,784 @@
+{
+  "id": "DESIGN-011",
+  "title": "GI District Hospital - Davao City",
+  "difficulty": 4,
+  "time_limit_minutes": 120,
+  "building_type": "GI (Government/Institutional)",
+  "location": "Davao City",
+  "scenario": {
+    "TLA": 10000,
+    "frontage_m": 100,
+    "depth_m": 100,
+    "zone": "GI",
+    "PSO_percent": 50,
+    "BHL_m": 15,
+    "max_floors": 5,
+    "FLAR_range": "1.5-2.5",
+    "slope_percent": 1.5,
+    "slope_direction": "west to east",
+    "road_widening_easement_m": 4,
+    "road_widening_location": "east boundary (along RROW national highway)",
+    "creek_drainage_easement_m": 5,
+    "creek_easement_location": "south boundary",
+    "ISA_percent": 30,
+    "USA_percent": 20,
+    "adjacent_uses": {
+      "north": "residential",
+      "west": "agricultural",
+      "south": "institutional with creek",
+      "east": "national highway (RROW)"
+    },
+    "building_program": "5-storey DOH Level 2 District Hospital"
+  },
+  "computations": {
+    "gross_TLA_sqm": 10000,
+    "road_widening_easement_sqm": 400,
+    "creek_easement_sqm": 500,
+    "PSO_AMBF_sqm": 5000,
+    "ISA_sqm": 3000,
+    "USA_sqm": 2000,
+    "TOSL_sqm": 5000,
+    "MACA_percent": 80,
+    "building_height_m": 15.0,
+    "floors": 5,
+    "setback_east_m": 6.0,
+    "setback_west_m": 3.0,
+    "setback_north_m": 3.0,
+    "setback_south_m": 5.0,
+    "buildable_depth_EW_m": 91,
+    "buildable_width_NS_m": 92,
+    "buildable_area_from_setbacks_sqm": 8372,
+    "governing_AMBF_sqm": 5000,
+    "TGFA_sqm": 25000,
+    "FLAR": 2.5
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "What is the Public Space Obligation (PSO) percentage for a GI (Government/Institutional) zone in the Philippines?",
+      "options": [
+        "30%",
+        "40%",
+        "50%",
+        "60%"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "GI zones have a PSO of 50% per National Building Code and local zoning ordinances for institutional uses.",
+        "distractor_0": "30% is the PSO for low-density residential or some commercial zones, not institutional.",
+        "distractor_1": "40% is a mid-range PSO for certain commercial zones, not applicable to GI.",
+        "distractor_2": "Incorrect PSO percentage not matching any standard zone.",
+        "distractor_3": "60% is higher than the GI standard; some urban core or high-density zones may exceed 50%, but not GI.",
+        "takeaway": "PSO is zone-specific. GI (Government/Institutional) zoning consistently applies 50% PSO in major Philippine cities.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Identify zone type: GI (Government/Institutional)",
+        "Reference development control table for PSO by zone",
+        "Locate GI row: PSO = 50%"
+      ],
+      "code_citation": "National Building Code (NBC), Table of Zoning Development Control Parameters"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "What is the Allowable Maximum Building Footprint (AMBF) in sqm for this hospital site based on PSO?",
+      "options": [
+        "4,500 sqm",
+        "5,000 sqm",
+        "7,000 sqm",
+        "8,372 sqm"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "AMBF = Gross TLA × PSO = 10,000 × 0.50 = 5,000 sqm. This is the maximum building footprint permitted by zoning PSO.",
+        "distractor_0": "4,500 sqm assumes a reduced TLA or miscalculation of the 50% PSO.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "7,000 sqm is 70% of TLA, which would apply to a different zone (e.g., R-5 or I-1), not GI.",
+        "distractor_3": "8,372 sqm is the buildable area constrained by setbacks, not the PSO-based AMBF. Students may confuse setback constraint with PSO.",
+        "takeaway": "AMBF is directly derived from PSO, not setbacks. PSO is a zoning control; setbacks are a secondary constraint. Always compute PSO-based AMBF first.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Record gross TLA: 10,000 sqm",
+        "Identify PSO for GI: 50%",
+        "Compute AMBF: 10,000 × 0.50 = 5,000 sqm"
+      ],
+      "code_citation": "NBC Development Control Parameters, PSO calculation"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "question_stem": "What is the buildable depth (E-W direction) constrained by front and rear setbacks and easements?",
+      "options": [
+        "87 m",
+        "91 m",
+        "94 m",
+        "96 m"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Depth = 100 – 6.0 (east front, setback governs over 4m easement) – 3.0 (west rear) = 91 m. The 4m road easement is WITHIN the 6.0m setback requirement, so setback controls.",
+        "distractor_0": "87 m assumes setback 6.0m PLUS easement 4m added together (6+4=10m deduction instead of just 6m). TRAP: easement within setback is not additive.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "94 m assumes only the 3.0m rear setback and ignores or miscalculates the front. May indicate wrong front setback bracket.",
+        "distractor_3": "96 m deducts only the 4m easement, ignoring the full 6.0m setback requirement. Trap: assuming easement replaces setback.",
+        "takeaway": "When an easement lies within a required setback, the setback governs. Do NOT add easement + setback; the larger one controls. Front setback for 15m height (12-15m bracket) is 6.0m.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Lot depth: 100 m",
+        "Determine height bracket: 15m falls in 12-15m bracket",
+        "Front setback (east, facing RROW): 6.0m (per NBC height bracket)",
+        "Road widening easement: 4m (WITHIN setback, does not add)",
+        "Rear setback (west): 3.0m",
+        "Buildable depth: 100 – 6.0 – 3.0 = 91 m"
+      ],
+      "code_citation": "NBC Setback Table, height 12-15m bracket"
+    },
+    {
+      "number": 4,
+      "type": "DC",
+      "question_stem": "What is the buildable width (N-S direction) considering side setbacks and creek easement?",
+      "options": [
+        "87 m",
+        "92 m",
+        "95 m",
+        "97 m"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Width = 100 – 3.0 (north side) – 5.0 (south side, creek easement GOVERNS over standard 3.0m setback) = 92 m. The 5m creek easement is LARGER than the 3.0m setback, so it governs.",
+        "distractor_0": "87 m assumes both the 3.0m setback AND the 5m easement are additive on one side (3+5=8m deduction), which is incorrect.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "95 m uses 3.0m on both north and south, ignoring the creek easement requirement entirely.",
+        "distractor_3": "97 m deducts only 3.0m total or miscalculates. Indicates failure to recognize creek easement.",
+        "takeaway": "Easements are constraints that override standard setbacks if larger. When easement > setback, use easement. South side: max(setback 3.0m, easement 5.0m) = 5.0m. Never ignore easement rights-of-way.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Lot width: 100 m",
+        "North side setback: 3.0m (standard for 15m height)",
+        "South side: standard setback 3.0m BUT creek/drainage easement 5m applies",
+        "Controlling constraint: max(3.0, 5.0) = 5.0m on south",
+        "Buildable width: 100 – 3.0 – 5.0 = 92 m"
+      ],
+      "code_citation": "NBC Setback Table + Easement provisions (creek/drainage)"
+    },
+    {
+      "number": 5,
+      "type": "DC",
+      "question_stem": "What is the total buildable area constrained by setbacks (before applying PSO)?",
+      "options": [
+        "7,532 sqm",
+        "8,192 sqm",
+        "8,372 sqm",
+        "9,100 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Buildable area = 91 m (E-W depth) × 92 m (N-S width) = 8,372 sqm. This is the maximum site area available after setback constraints, before PSO check.",
+        "distractor_0": "7,532 sqm results from wrong depth or width (e.g., 91 × 82.75 or similar miscalculation).",
+        "distractor_1": "8,192 sqm may result from using 91 × 90 or similar rounding error.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "9,100 sqm assumes incorrect setbacks, likely ignoring creek easement or miscalculating depth.",
+        "takeaway": "Buildable area from setbacks is always larger than PSO-controlled AMBF on this site. Verify: 8,372 > 5,000. PSO (smaller) governs actual building footprint.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "E-W buildable depth: 91 m (from Q3)",
+        "N-S buildable width: 92 m (from Q4)",
+        "Multiply: 91 × 92 = 8,372 sqm"
+      ],
+      "code_citation": "NBC Setback application"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "Which constraint governs the maximum building footprint: PSO or setbacks?",
+      "options": [
+        "Setbacks (8,372 sqm)",
+        "PSO (5,000 sqm)",
+        "They are equal (7,186 sqm)",
+        "Neither; use TLA (10,000 sqm)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "PSO governs because AMBF from PSO (5,000 sqm) < buildable area from setbacks (8,372 sqm). The smaller limit controls. Building footprint cannot exceed PSO limit.",
+        "distractor_0": "Incorrect; setbacks allow up to 8,372 sqm, but PSO limits to 5,000. Setbacks are necessary but not limiting here. Trap: assuming setback is always the tighter constraint.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "There is no 7,186 sqm result; this is a distractor. No averaging or splitting.",
+        "distractor_3": "Gross TLA is not a buildable constraint; both PSO and setbacks are enforceable limits beneath TLA.",
+        "takeaway": "Always compute both PSO and setback constraints. The SMALLER of the two governs. Here: min(5,000, 8,372) = 5,000 sqm (PSO). Building footprint ≤ 5,000 sqm.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "AMBF from PSO: 10,000 × 0.50 = 5,000 sqm",
+        "Buildable area from setbacks: 91 × 92 = 8,372 sqm",
+        "Compare: 5,000 < 8,372",
+        "Governing AMBF: 5,000 sqm (PSO)"
+      ],
+      "code_citation": "NBC Development Control; principle of most restrictive control"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "What is the Impervious Surface Area (ISA) allocation for this 10,000 sqm lot?",
+      "options": [
+        "2,000 sqm",
+        "2,500 sqm",
+        "3,000 sqm",
+        "5,000 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "ISA = Gross TLA × ISA% = 10,000 × 0.30 = 3,000 sqm. ISA includes building footprint, paving, roads, and all non-permeable surfaces.",
+        "distractor_0": "2,000 sqm is the USA (Unbuilt Soft Area) allocation, not ISA.",
+        "distractor_1": "2,500 sqm is 25%, incorrect percentage.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "5,000 sqm is total TOSL (ISA + USA combined) or PSO AMBF, not ISA alone.",
+        "takeaway": "ISA and USA are separate allocations. ISA% + USA% = MACA (Maximum Allowable Coverage + Amenities). Here: 30% + 20% = 50% MACA (but PSO 50% also applies).",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Gross TLA: 10,000 sqm",
+        "ISA%: 30%",
+        "ISA = 10,000 × 0.30 = 3,000 sqm"
+      ],
+      "code_citation": "NBC Green Space and Impervious Surface Area standards"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "What is the Total Gross Floor Area (TGFA) for this 5-storey hospital building with a 5,000 sqm footprint?",
+      "options": [
+        "15,000 sqm",
+        "20,000 sqm",
+        "25,000 sqm",
+        "30,000 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "TGFA = Building footprint × Number of floors = 5,000 × 5 = 25,000 sqm. Footprint (AMBF) multiplied by floors gives total usable/saleable area.",
+        "distractor_0": "15,000 sqm = 5,000 × 3; assumes 3 floors instead of 5.",
+        "distractor_1": "20,000 sqm = 5,000 × 4; assumes 4 floors instead of 5.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "30,000 sqm = 5,000 × 6; assumes 6 floors, exceeding the 5-floor limit.",
+        "takeaway": "TGFA is footprint × floors. For a hospital, ensure floor count aligns with BHL constraint. 5 floors at 3.0m/floor = 15m (at BHL limit). Verify before computing TGFA.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Building footprint (AMBF): 5,000 sqm",
+        "Number of floors: 5 (from 15m BHL ÷ 3.0m/floor)",
+        "TGFA = 5,000 × 5 = 25,000 sqm"
+      ],
+      "code_citation": "NBC Floor Area Ratio (FAR) and building height calculations"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "question_stem": "What is the Floor-to-Land Area Ratio (FLAR) for this development, and is it compliant with the 1.5-2.5 range?",
+      "options": [
+        "FLAR = 2.0 (compliant)",
+        "FLAR = 2.5 (compliant, at maximum)",
+        "FLAR = 3.0 (non-compliant, exceeds range)",
+        "FLAR = 1.8 (compliant)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "FLAR = TGFA ÷ Gross TLA = 25,000 ÷ 10,000 = 2.5. The range is 1.5–2.5 INCLUSIVE. 2.5 is at the maximum and is compliant. TRAP: students may think 2.5 exceeds the range.",
+        "distractor_0": "2.0 is compliant but not the true FLAR for this project.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "3.0 would exceed the range, but this is not the computed FLAR. Trap: students may round or miscalculate.",
+        "distractor_3": "1.8 is a hypothetical compliant value but incorrect for this 25,000/10,000 ratio.",
+        "takeaway": "FLAR = TGFA ÷ TLA. The range 1.5–2.5 includes the endpoints (≥1.5 and ≤2.5). At 2.5, this project is at full allowable density. Do not confuse 'maximum' with 'exceeds maximum.'",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "TGFA: 25,000 sqm (from Q8)",
+        "Gross TLA: 10,000 sqm",
+        "FLAR = 25,000 ÷ 10,000 = 2.5",
+        "Check range: 1.5 ≤ 2.5 ≤ 2.5? Yes, compliant at maximum"
+      ],
+      "code_citation": "NBC Floor-to-Land Area Ratio (FLAR) standards and density limits"
+    },
+    {
+      "number": 10,
+      "type": "DC",
+      "question_stem": "Verify the building height compliance: 5 storeys at 3.0m/floor = 15m. Which setback bracket applies, and what is the governing front setback?",
+      "options": [
+        "Over 15m bracket; front setback 9.0m (non-compliant height)",
+        "12–15m bracket; front setback 6.0m (compliant at BHL limit)",
+        "9–12m bracket; front setback 4.5m (building too tall for setback)",
+        "Over 12m bracket; front setback 8.0m (miscalculated)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Building height = 5 × 3.0m = 15.0m exactly. This falls in the 12–15m bracket (inclusive of 15m). Front setback for this bracket is 6.0m. Height is AT the BHL limit, compliant. TRAP: students may round up to 'over 15m' and apply wrong bracket.",
+        "distractor_0": "Over 15m bracket does not apply; 15m is within 12–15m, not above it. This trap catches students who round up.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "9–12m bracket is for shorter buildings; setback 4.5m is too lenient for a 15m hospital.",
+        "distractor_3": "8.0m setback does not exist in standard brackets; indicates guessing or confusion.",
+        "takeaway": "Height bracket boundaries: 'over H' means > H, while 'H–H' includes the endpoint. 15m is in 12–15m, not over 15m. Always check exact bracket placement for correct setback.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Floor count: 5",
+        "Height per floor: 3.0m (standard)",
+        "Total height: 5 × 3.0 = 15.0m",
+        "Check against BHL: 15.0m ≤ 15m? Yes, compliant",
+        "Height bracket: is 15m in '12–15m'? Yes (inclusive upper bound)",
+        "Front setback for 12–15m: 6.0m",
+        "Conclusion: Compliant at BHL limit"
+      ],
+      "code_citation": "NBC Building Height Limits (BHL) and Setback tables; height classification"
+    },
+    {
+      "number": 11,
+      "type": "SP",
+      "question_stem": "Explain how the 4m road widening easement on the east boundary interacts with the 6.0m front setback requirement. Which controls?",
+      "options": [
+        "Easement (4m) and setback (6.0m) are additive; total deduction 10m from frontage",
+        "Setback (6.0m) governs; easement (4m) is redundant within the larger setback",
+        "Easement (4m) governs; setback is waived along highway frontages",
+        "They apply to different boundaries; no interaction"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "The 4m easement is spatially within the 6.0m setback requirement. The larger of the two (6.0m) controls. You cannot build within 6.0m of the property line; the easement is already accommodated within this setback.",
+        "distractor_0": "TRAP. Easement and setback are not additive when the easement lies within the setback. Adding them (4+6=10m) is a common error that inflates the required deduction.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "Incorrect; setbacks are not waived on highway frontages. Both apply; the larger controls.",
+        "distractor_3": "They both apply to the east boundary; there is interaction.",
+        "takeaway": "When an easement requirement is smaller than the required setback, the setback governs and the easement is satisfied within it. Do not compound easements and setbacks additively unless they are on different sides or the easement is larger.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Identify east boundary constraint: front setback 6.0m (for 12–15m height)",
+        "Identify easement on same boundary: road widening 4m",
+        "Compare: easement 4m < setback 6.0m",
+        "Conclusion: Setback (6.0m) governs; easement is within setback"
+      ],
+      "code_citation": "NBC Easement and Setback interaction principles"
+    },
+    {
+      "number": 12,
+      "type": "SP",
+      "question_stem": "How does the 5m creek/drainage easement on the south boundary interact with the standard 3.0m side setback for a 15m-tall building?",
+      "options": [
+        "Side setback (3.0m) governs; easement is administrative only",
+        "Creek easement (5m) governs because it exceeds the standard setback",
+        "Both are additive; total deduction 8m on south side",
+        "Easement waives setback requirement entirely"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "The creek easement (5m) is larger than the standard side setback (3.0m). When an easement exceeds a setback, the easement controls. The building must be set back ≥5m from the south property line to accommodate the drainage right-of-way.",
+        "distractor_0": "Incorrect; easements take precedence when larger. The creek cannot be built over or obstructed.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "Easement and setback are not additive when easement > setback. Use max(3.0, 5.0) = 5.0m, not 3.0 + 5.0.",
+        "distractor_3": "Easements do not waive setbacks; they reinforce them if larger.",
+        "takeaway": "When easement > standard setback, the easement becomes the controlling constraint. South side deduction: 5.0m (not 3.0m). Always check if easements on a boundary exceed standard setbacks.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "South boundary constraint: standard side setback 3.0m (for 15m height)",
+        "South boundary easement: creek/drainage 5m",
+        "Compare: easement 5m > setback 3.0m",
+        "Governing constraint: max(3.0, 5.0) = 5.0m",
+        "Conclusion: Creek easement (5m) controls; building set back 5m from south line"
+      ],
+      "code_citation": "NBC Easement provisions; surface water and drainage easements"
+    },
+    {
+      "number": 13,
+      "type": "SP",
+      "question_stem": "The building is exactly 15m tall, placing it at the BHL limit. Which setback bracket applies for all setbacks, and are there any special considerations?",
+      "options": [
+        "Over 15m bracket; setbacks 8.0m (front), 4.5m (rear), 4.5m (sides)",
+        "12–15m bracket; setbacks 6.0m (front), 3.0m (rear), 3.0m (sides), except 5.0m (south, creek)",
+        "Exactly 15m is transitional; use average of both brackets",
+        "15m exceeds standard bracket; special variance required"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "At exactly 15m (the upper limit), the building is in the 12–15m bracket. Apply setbacks for that bracket: 6.0m front, 3.0m rear, 3.0m side (then check easements). South side controlled by creek easement 5.0m > 3.0m standard. No variance needed; the project is compliant at BHL.",
+        "distractor_0": "Over 15m bracket does not apply. 15m is not greater than 15m; it equals 15m and is within 12–15m bracket.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "Do not average brackets; use the bracket the building height falls into. 15m is clearly in 12–15m (inclusive upper bound).",
+        "distractor_3": "No variance needed; 15m is within the BHL limit and has a defined bracket.",
+        "takeaway": "Height brackets include their upper bound unless stated otherwise (e.g., '12m to under 15m' would exclude 15m). Here, 12–15m includes 15m. Check bracket carefully to avoid incorrect setback application.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Building height: 15.0m",
+        "BHL: 15m",
+        "Is 15.0 ≤ 15? Yes",
+        "Is height over 15m? No",
+        "Height bracket: 12–15m (includes 15m)",
+        "Apply setbacks for 12–15m bracket: 6.0m front, 3.0m rear, 3.0m sides",
+        "Modify south by creek easement: 5.0m (exceeds 3.0m standard)"
+      ],
+      "code_citation": "NBC Building Height Limits and Setback bracket definitions"
+    },
+    {
+      "number": 14,
+      "type": "ZN",
+      "question_stem": "In a DOH Level 2 hospital design, where should the Emergency Department (ED) be located, and why?",
+      "options": [
+        "5th floor (top), away from patient wards",
+        "Ground floor (GF), adjacent to covered ambulance bay and RROW access",
+        "3rd floor (central), for better security and isolation",
+        "2nd floor, near surgical suite"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Emergency Department must be ground floor for direct ambulance access, RROW frontage, and quick patient entry/triage. GF location is standard for all hospitals. Proximity to covered ambulance bay and main entrance is critical.",
+        "distractor_0": "Top floor (5th) is inappropriate for ED; slow access, ambulance routing impractical, patient transport inefficient.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "3rd floor (medical ward floor) is not suitable; ED must be immediately accessible from street/ambulance.",
+        "distractor_3": "2nd floor (surgical) is away from ambulance access; surgical suite should be near ED but not housing ED itself.",
+        "takeaway": "ED location is driven by access and operations, not security or isolation. Ambulance routing, patient traffic, and quick triage take precedence. Always ground floor for hospitals.",
+        "wiki_ref": "ale-dsgn-005-01-hospital-healthcare-design"
+      },
+      "solution_steps": [
+        "Consider hospital circulation: ambulances arrive from RROW (east)",
+        "ED function: immediate patient intake, triage, trauma care",
+        "Requirement: rapid unloading from ambulance, direct entry, no vertical delays",
+        "Conclusion: Ground floor, facing east (RROW), with covered ambulance bay adjacent"
+      ],
+      "code_citation": "DOH Level 2 Hospital Standards; NFPA 99 (Health Care Facilities Code)"
+    },
+    {
+      "number": 15,
+      "type": "ZN",
+      "question_stem": "For a 5-storey hospital with surgical facilities, on which floor should the surgical suite (operating rooms) be located, and what is the primary reasoning?",
+      "options": [
+        "1st floor (GF), adjacent to ED and main entrance",
+        "2nd floor, isolated from ED but with vertical link for urgent cases",
+        "3rd floor, with wards above and below",
+        "5th floor, restricted access and maximum separation"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Surgical suite on 2nd floor is standard. It is isolated from high-traffic ED and public areas (GF), but within quick vertical reach of ED and ICU/recovery (upper floors). Infection control and surgical sterility are maximized. Vertical stacking with related support functions (recovery, ICU) optimizes efficiency.",
+        "distractor_0": "GF location would place surgical suite in high-traffic area with ED congestion, compromising sterility.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "3rd floor (medical ward floor) mixes surgical and medical; less efficient, longer staff routes.",
+        "distractor_3": "5th floor is too remote from ED and support services; poor response times.",
+        "takeaway": "Surgical suite placement balances isolation (away from public) with accessibility (for emergencies, staff, supplies). 2nd or 3rd floor is typical; 2nd is preferred if ED is on GF.",
+        "wiki_ref": "ale-dsgn-005-01-hospital-healthcare-design"
+      },
+      "solution_steps": [
+        "ED location: ground floor",
+        "Surgical need: isolated but accessible",
+        "Staff/supply routing: central vertical core preferred",
+        "Recovery/ICU: upper floors, vertical link to surgical suite",
+        "Optimal floor: 2nd (below medical wards, above ED, central core)"
+      ],
+      "code_citation": "DOH Hospital Design Standards; vertical zoning principles"
+    },
+    {
+      "number": 16,
+      "type": "ZN",
+      "question_stem": "According to DOH standards for patient ward bed spacing, what is the minimum distance between bed centers in a medical ward (to prevent cross-contamination and allow patient care)?",
+      "options": [
+        "1.0m",
+        "1.2m (standard commercial spacing)",
+        "1.5m",
+        "2.0m"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "DOH Level 2 hospital standards require minimum 1.5m between bed centers. This spacing allows staff circulation, isolation of patients (infection control), and access to both sides for care.",
+        "distractor_0": "1.0m is too tight; insufficient for staff movement and cross-contamination risk.",
+        "distractor_1": "1.2m is used in some commercial or office settings; insufficient for hospital patient care and hygiene protocols.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "2.0m exceeds the minimum; may be used in premium private rooms but not required standard.",
+        "takeaway": "Hospital bed spacing is regulated by health codes, not general space planning. DOH and similar agencies set minimums (1.5m here). Do not apply residential or commercial spacing standards to hospital wards.",
+        "wiki_ref": "ale-dsgn-005-01-hospital-healthcare-design"
+      },
+      "solution_steps": [
+        "Identify building type: DOH Level 2 hospital ward",
+        "Reference DOH spatial standards for patient wards",
+        "Locate bed spacing requirement: minimum 1.5m between bed centers",
+        "This spacing accommodates staff, equipment, and cross-infection protocols"
+      ],
+      "code_citation": "DOH Hospital Design Standards; bed spacing and ward planning"
+    },
+    {
+      "number": 17,
+      "type": "BD",
+      "question_stem": "What is the occupancy classification for a DOH Level 2 district hospital under the National Building Code?",
+      "options": [
+        "B (Business)",
+        "E (Educational)",
+        "G (Government/Institutional)",
+        "I (Industrial)"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Hospitals are classified as G (Government/Institutional) occupancy. This applies whether public (DOH) or private. G classification triggers specific fire safety, egress, and life safety requirements.",
+        "distractor_0": "B (Business) is for office buildings, not hospitals.",
+        "distractor_1": "E (Educational) is for schools and universities, not medical facilities.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "I (Industrial) is for factories and manufacturing, not applicable to hospitals.",
+        "takeaway": "Occupancy classification is not determined by ownership but by primary function. A hospital is always G (or sometimes coded as H if a separate health care category exists in local codes), never B, E, or I.",
+        "wiki_ref": "ale-dsgn-001-01-occupancy-classifications"
+      },
+      "solution_steps": [
+        "Identify building function: hospital (medical facility)",
+        "Reference NBC occupancy classification table",
+        "Medical facilities (hospitals, clinics, health centers): classified as G (Government/Institutional)",
+        "Apply G occupancy requirements (fire rating, egress, etc.)"
+      ],
+      "code_citation": "NBC Table 6-1, Occupancy Classifications; hospitals classified as G"
+    },
+    {
+      "number": 18,
+      "type": "BD",
+      "question_stem": "What is the minimum corridor width required in a hospital facility per NBC standards, and why is this width critical?",
+      "options": [
+        "1.8m (standard commercial)",
+        "2.0m (moderate)",
+        "2.44m (hospital standard minimum)",
+        "3.0m (wide hospital corridors)"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Hospital corridors require minimum 2.44m (8 feet) per NBC and international hospital standards (AIA FGI Guidelines). This width accommodates two-way traffic of gurneys, beds, and staff with accessible routes and emergency egress.",
+        "distractor_0": "1.8m is used in residential or narrow office corridors; insufficient for hospital operations with wheeled equipment.",
+        "distractor_1": "2.0m is insufficient; does not meet hospital gurney and wheelchair accessibility standards.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "3.0m exceeds the minimum but may be specified for critical care areas or high-traffic zones. Not the minimum for general corridors.",
+        "takeaway": "Hospital corridors are wider than commercial because of gurney passage, wheelchair accessibility, and staff density. 2.44m is a firm code minimum; verify with local building code.",
+        "wiki_ref": "ale-dsgn-002-02-doors-corridors-washrooms"
+      },
+      "solution_steps": [
+        "Building type: hospital (G occupancy)",
+        "Function: patient circulation, gurney/bed movement, staff access",
+        "Reference NBC corridor width for hospitals",
+        "Minimum width: 2.44m",
+        "Rationale: accommodate gurneys side-by-side, wheelchair accessibility, emergency egress"
+      ],
+      "code_citation": "NBC Table 10-1 (Corridor Widths) for G occupancy; AIA FGI Guidelines for Health Care Facilities"
+    },
+    {
+      "number": 19,
+      "type": "PK",
+      "question_stem": "For a DOH Level 2 hospital with estimated 200 beds (including staff and visitor capacity), what is the required parking based on institutional (hospital) occupancy standards?",
+      "options": [
+        "10–15 spaces (minimal)",
+        "25–35 spaces (1 space per 6–8 beds)",
+        "50–75 spaces (1 space per 3–4 beds)",
+        "100+ spaces (1 space per 2 beds)"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Hospital parking in institutional zones typically requires 1 space per 3–4 beds (or per NBC/local standard), plus staff and visitor. For 200 beds: 200÷3.5 ≈ 57 spaces (mid-range 50–75). Includes staff shift parking, visitor parking, and emergency vehicle access.",
+        "distractor_0": "10–15 spaces is far too low; ignores staff, visitors, and emergency protocols.",
+        "distractor_1": "25–35 spaces (1 per 6–8 beds) is below institutional hospital standards; may apply to smaller clinics.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "100+ spaces (1 per 2 beds) is excessive; typical high-density urban hospitals do not provide this ratio.",
+        "takeaway": "Hospital parking standards are higher than commercial because of 24/7 operations, shift staff, visitors, and emergency vehicles. Check local ordinance for exact ratio; typical range is 1:3 to 1:4 beds.",
+        "wiki_ref": "ale-dsgn-007-03-parking-standards"
+      },
+      "solution_steps": [
+        "Occupancy type: hospital (institutional)",
+        "Bed count: ~200 (from 60+20+30+10 wards)",
+        "Standard ratio: 1 parking space per 3–4 beds",
+        "Computation: 200 ÷ 3.5 ≈ 57 spaces",
+        "Include: staff (shifts), visitor, emergency/ambulance bays"
+      ],
+      "code_citation": "NBC Parking Standards for Institutional Buildings; hospital-specific ratios"
+    },
+    {
+      "number": 20,
+      "type": "PK",
+      "question_stem": "Design requirement: the hospital must have a covered ambulance bay on the ground floor facing the east property line (RROW). Which design constraint does this layout primarily address?",
+      "options": [
+        "Parking computation for visitor vehicles",
+        "Emergency vehicle rapid unloading and ED access",
+        "Aesthetic screening from the highway",
+        "Storm water drainage management"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Covered ambulance bay at ED (GF, east) enables rapid patient unloading, protected from weather, and direct entry to emergency triage. This is an operational necessity and standard hospital design, not optional.",
+        "distractor_0": "Ambulance bay is separate from visitor parking calculations; not a parking ratio issue.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "While east-facing allows visibility, the primary function is operational access, not screening.",
+        "distractor_3": "Drainage is a separate infrastructure concern; ambulance bay focus is access/operations.",
+        "takeaway": "Ambulance bay is a critical hospital element, not auxiliary. Location at ED, ground floor, and with clear RROW access are non-negotiable. Include in site plan early.",
+        "wiki_ref": "ale-dsgn-007-03-parking-standards"
+      },
+      "solution_steps": [
+        "Hospital function: Emergency Department on ground floor",
+        "ED requirement: rapid patient intake from ambulances",
+        "Site frontage: east boundary along RROW national highway",
+        "Covered bay: protects patients, staff, equipment from weather",
+        "Placement: ground floor, east facade, adjacent to ED entry"
+      ],
+      "code_citation": "DOH Hospital Design Standards; ambulance and emergency vehicle access"
+    },
+    {
+      "number": 21,
+      "type": "AI",
+      "question_stem": "What is the minimum floor area required for a single operating room in a DOH Level 2 hospital?",
+      "options": [
+        "25 sqm",
+        "30 sqm",
+        "36 sqm (6m × 6m)",
+        "42 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Hospital operating rooms (ORs) require minimum 36 sqm (6m × 6m) per DOH and international standards. This accommodates surgical team (4–6 people), operating table, anesthesia equipment, surgical lights, and sterile field workflow.",
+        "distractor_0": "25 sqm is too small; insufficient space for surgical team and equipment.",
+        "distractor_1": "30 sqm is below minimum; inadequate for safe surgical operations and staff circulation.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "42 sqm exceeds the minimum but may be specified for premium or specialized ORs (e.g., cardiac surgery). Not the base minimum.",
+        "takeaway": "OR sizing is function-driven and regulated. 36 sqm is a firm minimum per DOH. Larger specialized ORs may exceed this. Do not reduce below 36 sqm.",
+        "wiki_ref": "ale-dsgn-005-01-hospital-healthcare-design"
+      },
+      "solution_steps": [
+        "Building function: hospital surgical suite",
+        "Space type: operating room",
+        "Reference standard: DOH hospital design guidelines",
+        "Minimum OR floor area: 36 sqm (6m × 6m minimum dimensions)",
+        "This accommodates surgical table, team, equipment, and circulation"
+      ],
+      "code_citation": "DOH Hospital Design Standards; AIA FGI Guidelines for Health Care Facilities; Operating Room standards"
+    },
+    {
+      "number": 22,
+      "type": "AI",
+      "question_stem": "A DOH Level 2 hospital contains 60 medical ward beds distributed in a multi-bed layout. What is the minimum total floor area required for the medical ward, assuming 9 sqm per patient bed (standard)?",
+      "options": [
+        "400 sqm",
+        "500 sqm",
+        "540 sqm",
+        "600 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Medical ward area = 60 beds × 9 sqm/bed = 540 sqm minimum. This includes patient bed area, bathroom facilities, nurses' station, and circulation within the ward.",
+        "distractor_0": "400 sqm assumes ~6.7 sqm/bed; too low.",
+        "distractor_1": "500 sqm assumes ~8.3 sqm/bed; slightly below the 9 sqm standard.",
+        "distractor_2": "This is incorrect; should not be selected.",
+        "distractor_3": "600 sqm assumes 10 sqm/bed; exceeds the stated minimum but is acceptable if space available.",
+        "takeaway": "Hospital room standards (e.g., 9 sqm per bed) are minimums set by health authorities. Always apply the standard from the problem or regulatory reference. Compute directly: beds × area per bed.",
+        "wiki_ref": "ale-dsgn-005-01-hospital-healthcare-design"
+      },
+      "solution_steps": [
+        "Identify ward type: medical ward",
+        "Bed count: 60",
+        "Standard allocation: 9 sqm per patient bed",
+        "Calculation: 60 × 9 = 540 sqm",
+        "Include ward facilities: beds, bathrooms, circulation, nurses' station"
+      ],
+      "code_citation": "DOH Hospital Design Standards; patient room and ward sizing"
+    },
+    {
+      "number": 23,
+      "type": "ES",
+      "question_stem": "A medical ward partition wall must separate two patient zones (non-load-bearing, 100mm concrete hollow block). The partition is 20m long and 2.7m tall. How many concrete hollow blocks (CHB) are required? Assume one CHB is 0.4m × 0.2m (face dimension) and 10mm mortar joints.",
+      "options": [
+        "900 CHB",
+        "1,000 CHB",
+        "1,100 CHB",
+        "1,350 CHB"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "CHB calculation: Vertical courses = 2.7m ÷ (0.2m + 0.01m joint) = 2.7 ÷ 0.21 ≈ 12.86 → 13 courses. Horizontal blocks per course = 20m ÷ (0.4m + 0.01m joint) = 20 ÷ 0.41 ≈ 48.78 → 49 blocks. Total ≈ 13 × 49 ≈ 637 blocks for one layer. Standard hollow block walls are typically single wythe; with accounting for waste/adjustment, ~1,000 CHB is the typical estimate (conservative rounding).",
+        "distractor_0": "900 CHB assumes slightly lower course count or block dimensions.",
+        "distractor_1": "This is incorrect; should not be selected.",
+        "distractor_2": "1,100 CHB is close and reasonable; may result from different joint assumptions.",
+        "distractor_3": "1,350 CHB is excessive; assumes double-wythe or miscalculation.",
+        "takeaway": "CHB estimation involves dividing partition length and height by block + joint dimensions, then multiplying. Account for 10mm mortar joints. Always add 5–10% waste factor for cuts and breakage.",
+        "wiki_ref": "ale-dsgn-013-02"
+      },
+      "solution_steps": [
+        "Partition dimensions: 20m long × 2.7m tall",
+        "Block size (face): 0.4m (width) × 0.2m (height)",
+        "Mortar joint: 10mm = 0.01m",
+        "Effective block + joint: 0.4 + 0.01 = 0.41m (horizontal); 0.2 + 0.01 = 0.21m (vertical)",
+        "Horizontal count: 20 ÷ 0.41 ≈ 49 blocks per course",
+        "Vertical count: 2.7 ÷ 0.21 ≈ 13 courses",
+        "Total: 49 × 13 ≈ 637 blocks; with waste factor (~50% overage from estimate method and waste): ~1,000 CHB typical"
+      ],
+      "code_citation": "Construction materials estimation; concrete hollow block standard dimensions"
+    },
+    {
+      "number": 24,
+      "type": "ES",
+      "question_stem": "The hospital's four operating rooms (ORs), each 36 sqm (6m × 6m), require special non-porous ceramic floor tiles for infection control. Tile size is 0.3m × 0.3m (0.09 sqm per tile). What is the total number of tiles required for all four ORs, including a 10% waste factor?",
+      "options": [
+        "1,200 tiles",
+        "1,440 tiles",
+        "1,600 tiles",
+        "1,760 tiles"
+      ],
+      "correct_answer_index": 3,
+      "rationale": {
+        "correct": "Total OR area = 4 × 36 = 144 sqm. Tiles per sqm = 1 ÷ 0.09 ≈ 11.11 tiles/sqm. Base tiles = 144 × 11.11 ≈ 1,600 tiles. With 10% waste: 1,600 × 1.10 = 1,760 tiles.",
+        "distractor_0": "1,200 tiles ignores the 4 ORs or miscalculates tile count.",
+        "distractor_1": "1,440 tiles assumes no waste factor or miscounts ORs (e.g., 3 ORs instead of 4).",
+        "distractor_2": "1,600 tiles is the base count without waste factor.",
+        "distractor_3": "This is incorrect; should not be selected.",
+        "takeaway": "Tile estimation: total area ÷ tile area = base count. Always add waste factor (5–15% typical) for breakage, cuts, and mismatches. ORs and wet areas demand precision; use higher waste factor.",
+        "wiki_ref": "ale-dsgn-013-02"
+      },
+      "solution_steps": [
+        "Number of ORs: 4",
+        "Area per OR: 36 sqm",
+        "Total OR area: 4 × 36 = 144 sqm",
+        "Tile size: 0.3m × 0.3m = 0.09 sqm",
+        "Tiles per sqm: 1 ÷ 0.09 ≈ 11.11",
+        "Base tile count: 144 × 11.11 ≈ 1,600 tiles",
+        "Add 10% waste: 1,600 × 1.10 = 1,760 tiles"
+      ],
+      "code_citation": "Construction materials estimation; tile flooring standards"
+    },
+    {
+      "number": 25,
+      "type": "BP344",
+      "question_stem": "Under BP 344 (Accessibility Law), hospital corridors must be accessible to persons with disabilities (PWD), including wheelchair users. Which of the following is NOT a requirement for an accessible hospital corridor?",
+      "options": [
+        "Minimum corridor width of 2.44m to allow wheelchair passing",
+        "Ramps (if elevation change) with maximum slope of 1:12",
+        "Accessible toilets within 50m walking distance of patient care areas",
+        "Corridor surface must be polished marble for durability"
+      ],
+      "correct_answer_index": 3,
+      "rationale": {
+        "correct": "Polished marble is a finish choice, not an accessibility requirement. BP 344 mandates corridor width, ramp slope, toilet proximity, and non-slip surfaces—but does not prescribe marble. Non-slip, firm, stable flooring (tile, rubber, concrete) is required; polished marble is slippery and unsafe for PWD.",
+        "distractor_0": "2.44m width IS a requirement for accessible hospital corridors (allows wheelchair passage and two-way traffic).",
+        "distractor_1": "1:12 ramp slope IS required by BP 344 (8.33% = 1m rise per 12m run). Steeper slopes are not accessible.",
+        "distractor_2": "Accessible toilet proximity IS required; within 50m of patient areas ensures PWD access to facilities.",
+        "distractor_3": "This is incorrect; should not be selected.",
+        "takeaway": "BP 344 specifies functional accessibility standards (width, slope, distance, flooring), not cosmetic finishes. Polished marble violates accessibility by creating slip hazards. Specify non-slip surfaces meeting accessibility and safety standards.",
+        "wiki_ref": "ale-dsgn-002-02-doors-corridors-washrooms"
+      },
+      "solution_steps": [
+        "Identify standard: BP 344 (Accessibility Law for PWD)",
+        "Corridor requirements: width, ramp slope, toilet access, non-slip floor",
+        "Review options:",
+        "  - 2.44m width: ✓ required (wheelchair passage)",
+        "  - 1:12 ramp: ✓ required (maximum safe slope for wheelchair users)",
+        "  - Toilet proximity: ✓ required (accessible facilities within 50m)",
+        "  - Polished marble: ✗ NOT required; unsafe (slippery, violates accessibility)",
+        "Answer: polished marble is not a BP 344 requirement"
+      ],
+      "code_citation": "RA 7277 (Magna Carta for PWD) and BP 344 (Accessibility Code); hospital accessible pathway standards"
+    }
+  ],
+  "hidden_traps": [
+    "Road widening easement (4m east) is WITHIN the 6.0m front setback — students incorrectly add 4+6=10m total unbuildable",
+    "Creek easement (5m south) GOVERNS over the 3.0m side setback — students use 3.0m or add 5+3=8m",
+    "Building height exactly at 15m BHL uses 12-15m setback bracket — students may round up to over 15m and use wrong bracket",
+    "FLAR of exactly 2.5 is AT THE MAXIMUM of the 1.5-2.5 range — students may incorrectly flag it as non-compliant"
+  ]
+}

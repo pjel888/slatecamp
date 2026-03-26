@@ -10,6 +10,7 @@ import { WikiTableOfContents } from './WikiTableOfContents'
 import { WikiSourcesPopover } from './WikiSourcesPopover'
 import { WikiRelatedPopover } from './WikiRelatedPopover'
 import { ROUTES } from '@/lib/constants/routes'
+import { WikiQuizButton } from './WikiQuizButton'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { WikiArticleSource } from '@/lib/actions/wiki-actions'
 import { cn } from '@/lib/utils'
@@ -22,6 +23,10 @@ interface RelatedTopic {
 interface WikiRightSidebarProps {
   practiceHref: string
   practiceLabel: string
+  /** Taxonomy node ID for inline quiz modal */
+  nodeId?: string
+  /** Topic name for the quiz modal header */
+  topicName?: string
   relatedTopics?: RelatedTopic[]
   headings: TocHeading[]
   articleSlug: string
@@ -32,6 +37,8 @@ interface WikiRightSidebarProps {
 export function WikiRightSidebar({
   practiceHref,
   practiceLabel,
+  nodeId,
+  topicName,
   relatedTopics = [],
   headings,
   articleSlug,
@@ -54,17 +61,9 @@ export function WikiRightSidebar({
 
   return (
     <div className="space-y-0">
-      {/* 1. Practice CTA — single button, always visible, fixed height */}
+      {/* 1. Review CTA — always opens inline quiz modal */}
       <div className="mb-5">
-        <Link href={practiceHref}>
-          <Button
-            size="sm"
-            className="w-full font-bold rounded-sm shadow-sm active:scale-[0.98]"
-          >
-            <SCIcon icon={Brain} size="sm" className="mr-2" />
-            {practiceLabel}
-          </Button>
-        </Link>
+        <WikiQuizButton nodeId={nodeId ?? ''} topicName={topicName ?? 'This Topic'} />
       </div>
 
       {/* 2. Related topics — popover to avoid layout shift */}

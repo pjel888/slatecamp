@@ -31,6 +31,7 @@ export const ROUTES = {
   QUIZ_V2_SESSION: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}`,
   QUIZ_V2_RESULTS: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results`,
   QUIZ_V2_REVIEW: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review`,
+  DAE_MODE: "/dashboard/dae-mode",
   ANALYTICS: "/dashboard/analytics",
   CAMPTRAILS: "/dashboard/camptrails",
   WIKI: "/dashboard/wiki",
@@ -52,6 +53,9 @@ export const ROUTES = {
   DEVELOPER_API_REFERENCE: "/developer/api-reference",
   DEVELOPER_COMPONENTS: "/developer/components",
   DEVELOPER_TOOLS: "/developer/tools",
+  CODE_UPDATES: "/dashboard/code-updates",
+  PODS: "/dashboard/pods",
+  POD: (podId: string) => `/dashboard/pods/${podId}`,
 } as const;
 
 /** Paths that do not require authentication (middleware). */

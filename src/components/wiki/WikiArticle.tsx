@@ -23,7 +23,11 @@ import { FormulaBlock } from './FormulaBlock'
 import { InlineQuiz } from './InlineQuiz'
 import { Tabs, Tab } from './WikiTabs'
 import { Accordion, AccordionItem } from './WikiAccordion'
+import { ExamTip } from './ExamTip'
+import { ComparisonTable } from './ComparisonTable'
+import { SubjectSnapshot } from './SubjectSnapshot'
 import { LawCallout } from './LawCallout'
+import { RevealBlock } from './RevealBlock'
 import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
@@ -89,6 +93,10 @@ const baseMdxComponents = {
   Example,
   Callout,
 
+  ExamTip,
+  ComparisonTable,
+  SubjectSnapshot,
+
   // Wiki UI spec-v1 components — exam-focused article rendering
   WikiCalloutBox,
   WikiExamTable,
@@ -112,6 +120,9 @@ const baseMdxComponents = {
 
   // Law citation callouts — color-coded by legal code
   LawCallout,
+
+  // Active recall — blur-to-reveal content block
+  RevealBlock,
 }
 
 /**
@@ -379,24 +390,7 @@ export const WikiArticle = async ({
         </Suspense>
       </div>
 
-      {/* End-of-article CTA — UX Strategy Section 6: "Every Wiki read should end with a quiz" */}
-      {nodeId && (
-        <div className="mt-10 rounded-md border border-primary/30 bg-primary/5 p-4 flex items-center justify-between">
-          <div>
-            <p className="text-sm font-medium text-foreground">
-              Test what you just read
-            </p>
-            <p className="text-xs text-text-secondary mt-0.5">
-              5 questions on this topic — reinforces what you learned.
-            </p>
-          </div>
-          <a href={`/quiz/camp/setup`}>
-            <Button size="sm" className="shrink-0 rounded-sm font-semibold">
-              Start Quiz &rarr;
-            </Button>
-          </a>
-        </div>
-      )}
+      {/* "Practice this topic" CTA removed — already available in the right sidebar */}
     </>
   )
 }

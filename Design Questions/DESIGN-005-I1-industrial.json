@@ -1,0 +1,613 @@
+{
+  "id": "DESIGN-005",
+  "title": "I-1 Light Industrial Warehouse with Office Component",
+  "building_type": "I-1",
+  "difficulty": 4,
+  "time_limit_minutes": 100,
+  "brief": "A manufacturing company proposes a 3-storey light industrial warehouse facility on a 2,000 sqm rectangular site zoned I-1 (Light Industrial). Site frontage is 40m (south-facing) with 50m depth. The ground floor features a high-bay warehouse with 6.0m clear height for storage and a mezzanine office level (400 sqm), plus two loading bays facing the street. The 2nd floor accommodates light manufacturing/assembly, while the 3rd floor provides administrative offices. A 4m drainage easement along the west boundary and a 15m right-of-way abutting the south frontage must be observed. Site regulations: PSO 70%, BHL 15m, FLAR 1.5–2.5, RROW 15m, ISA 15%, USA 15%, 1% toward RROW. Adjacent uses: industrial (east), drainage canal (west), commercial (north/rear). Determine plot development potential, setback compliance, and floor area optimization.",
+  "site_data": {
+    "total_lot_area_sqm": 2000,
+    "lot_shape": "rectangular",
+    "lot_type": "Industrial (I-1 zoned)",
+    "frontage_m": 40,
+    "depth_m": 50,
+    "frontage_direction": "south-facing",
+    "rrow_width_m": 15,
+    "slope_pct": 1,
+    "slope_direction": "toward RROW",
+    "zone": "I-1 (Light Industrial)",
+    "easements": "4m drainage easement on west boundary",
+    "adjacent_conditions": "Industrial (east), drainage canal (west), commercial (north/rear)"
+  },
+  "program": {
+    "building_type": "Light Industrial Warehouse with Office Component",
+    "occupancy": "Warehouse (F-1) + Manufacturing (F-2) + Office (B)",
+    "floors": 3,
+    "required_spaces": [
+      "Warehouse storage with 6.0m clear height (ground floor)",
+      "Mezzanine office level (400 sqm)",
+      "Loading bays (2 units, south-facing)",
+      "Light manufacturing/assembly (2nd floor)",
+      "Administrative offices, meeting rooms, pantry, toilets (3rd floor)"
+    ],
+    "special_requirements": [
+      "High-bay warehouse ground floor (6.5m floor-to-floor)",
+      "Mezzanine does not count as additional floor (less than 1/3 of ground floor area)",
+      "2 loading bays with truck maneuvering area",
+      "Street-facing loading permitted in I-1 zone"
+    ]
+  },
+  "code_references": [
+    "PD 1096 IRR Rule VII",
+    "PD 1096 IRR Rule VIII",
+    "NLC Zoning Code § I-1 (Light Industrial)",
+    "NLC Building Code § Fire Zones.02",
+    "ITE Parking Generation Manual"
+  ],
+  "computation_sheet": {
+    "PSO": "70%",
+    "AMBF": 1400,
+    "AMBF_comparison": "1400 (PSO) vs 1353 (setbacks governs)",
+    "ISA": 300,
+    "USA": 300,
+    "TOSL": 600,
+    "MACA": "85%",
+    "TGFA": 4059,
+    "FLAR": 2.03,
+    "BHL_m": 15,
+    "actual_height_m": 12.5,
+    "height_bracket": "over 12m to 15m",
+    "setback_front_m": 6.0,
+    "setback_side_m": 3.0,
+    "setback_rear_m": 4.5,
+    "governing_constraint": "Drainage easement (4m) on west side governs over 3.0m side setback"
+  },
+  "hidden_traps": [
+    {
+      "trap_number": 1,
+      "title": "Building Height Bracket Change Due to Warehouse Ground Floor",
+      "description": "Building height is 12.5m (not 9.0m) due to 6.5m warehouse ground floor — triggers the 12-15m setback bracket instead of the up-to-9m bracket. Students who assume all floors are 3.0m (9.0m total) will use wrong setback values, gaining extra buildable width.",
+      "consequence": "Wrong setbacks lead to incorrect AMBF calculation and false compliance.",
+      "related_questions": [
+        2,
+        3
+      ]
+    },
+    {
+      "trap_number": 2,
+      "title": "Drainage Easement Overrides Standard Side Setback",
+      "description": "Drainage easement (4m) on west side governs over the 3.0m side setback — students who ignore easement get wider buildable area (40m - 3.0m - 3.0m = 34m instead of correct 33m).",
+      "consequence": "Ignoring easement inflates buildable footprint area by 1.0m on one dimension, leading to false floor area optimization.",
+      "related_questions": [
+        4,
+        5
+      ]
+    },
+    {
+      "trap_number": 3,
+      "title": "Mezzanine Does Not Count as Additional Floor for TGFA",
+      "description": "Mezzanine (400 sqm) is less than 1/3 of ground floor area (900 sqm) — does NOT count as additional floor for TGFA. Students may incorrectly add 400 sqm to TGFA, inflating total to 4,459 instead of correct 4,059 sqm.",
+      "consequence": "Inflated TGFA leads to wrong FLAR, parking/loading requirements, and false zoning compliance.",
+      "related_questions": [
+        6,
+        7,
+        19
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "Calculate the Allowable Building Footprint (AMBF) from the Plot Setback Ordinance (PSO = 70%). What is the maximum allowed built area at ground level?",
+      "options": [
+        "1,200 sqm",
+        "1,400 sqm",
+        "1,500 sqm",
+        "1,680 sqm"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "PSO = 70%. AMBF = Lot Area × PSO = 2,000 × 0.70 = 1,400 sqm.",
+        "distractor_0": "Uses 60% (UTS zone rate, not I-1).",
+        "distractor_1": "Partial calculation (missing final multiplication or using 75%).",
+        "distractor_2": "Uses I-2 PSO of 84% incorrectly: 2,000 × 0.84 = 1,680 sqm.",
+        "distractor_3": "Uses 50% (GI zone), not applicable here.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "PSO is zone-specific. I-1 explicitly = 70%. Do not confuse with other industrial or commercial zones.",
+      "solution_steps": [
+        "Identify zone: I-1 Light Industrial",
+        "Find PSO in regulations: 70%",
+        "AMBF = Lot Area × PSO",
+        "AMBF = 2,000 × 0.70 = 1,400 sqm"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.02(b) — Plot Setback Ordinance for Light Industrial"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "For this I-1 industrial site, the building height is determined by the warehouse ground floor clear height of 6.0m plus floor-to-floor overlays. Calculate the actual total building height. Ground floor floor-to-floor = 6.5m; typical floors = 3.0m each.",
+      "options": [
+        "9.0 m",
+        "12.0 m",
+        "12.5 m",
+        "13.5 m"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Total height = 6.5 (ground FTF) + 3.0 (2nd) + 3.0 (3rd) = 12.5 m. This falls in the 'over 12m to 15m' setback bracket, NOT 'up to 9m'.",
+        "distractor_0": "Trap 1: Assumes all floors = 3.0m (3 × 3.0 = 9.0m). Ignores the 6.5m warehouse ground floor. This leads to wrong setback values.",
+        "distractor_1": "Adds only ground + one typical floor (6.5 + 3.0 = 9.5m), missing one floor.",
+        "distractor_2": "Over-counts by adding 1.0m buffer: 6.5 + 3.0 + 3.0 + 1.0 = 13.5m.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "TRAP 1: Warehouse ground floors have tall clear heights (6.0–8.0m). Always check the brief for actual FTF dimensions, not generic 3.0m. This changes the setback bracket entirely.",
+      "solution_steps": [
+        "Identify ground floor FTH: 6.5m (stated in brief as 6.0m clear height + slab)",
+        "Identify typical floor FTH: 3.0m (2nd and 3rd)",
+        "Total height = 6.5 + 3.0 + 3.0 = 12.5m",
+        "Determine setback bracket: Over 12m to 15m",
+        "Use appropriate setback values for this bracket"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.04(c) — Height & Setback Brackets; Warehouse FTH Standard § WH.02"
+    },
+    {
+      "number": 3,
+      "type": "SP",
+      "question_stem": "Using the correct building height (12.5m), determine the front setback from the RROW (south-facing). Setback table: up to 9m = 4.5m, over 9m to 12m = 5.25m, over 12m to 15m = 6.0m.",
+      "options": [
+        "4.5 m",
+        "5.25 m",
+        "6.0 m",
+        "7.5 m"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Building height = 12.5m → bracket 'over 12m to 15m' → front setback = 6.0m.",
+        "distractor_0": "Uses 'up to 9m' bracket (4.5m) if student wrongly calculated height as 9.0m. TRAP 1 consequence.",
+        "distractor_1": "Uses 'over 9m to 12m' bracket (5.25m) if student calculated height as ~10.5m (missing one floor or underestimating).",
+        "distractor_2": "Adds arbitrary 1.5m buffer to the correct 6.0m value.",
+        "takeaway": "Setback brackets depend on actual building height, not the standard 3.0m × floors assumption."
+      },
+      "takeaway": "Setback values depend critically on correct building height. The height bracket is non-linear. One wrong assumption cascades.",
+      "solution_steps": [
+        "Confirm building height: 12.5m (from Q2)",
+        "Find height bracket: over 12m to 15m",
+        "Consult setback table for 'over 12m to 15m' bracket",
+        "Front setback (RROW side, south) = 6.0m"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.05(a) — Setback Schedule by Height Bracket"
+    },
+    {
+      "number": 4,
+      "type": "SP",
+      "question_stem": "The site has a 4m drainage easement along the west boundary. Standard side setback for the 12.5m building height is 3.0m. Which setback governs the west side buildable limit?",
+      "options": [
+        "3.0 m (setback governs)",
+        "4.0 m (easement governs)",
+        "3.5 m (average of both)",
+        "2.5 m (easement allows reduction)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Easement takes priority. A 4m easement is more restrictive than a 3.0m setback. The building must stay 4.0m from the west boundary. TRAP 2: Students ignoring the easement use only the 3.0m setback, gaining an extra 1.0m width.",
+        "distractor_0": "Uses setback only, ignoring easement. This leads to buildable area = 40 - 3.0 - 3.0 = 34m, not 33m.",
+        "distractor_1": "Tries to split the difference, not how zoning works.",
+        "distractor_2": "Misinterprets easement as allowing setback reduction.",
+        "takeaway": "Setback brackets depend on actual building height, not the standard 3.0m × floors assumption."
+      },
+      "takeaway": "TRAP 2: Always check for easements, encroachments, and deed restrictions. They often override standard setbacks and dictate actual buildable limits.",
+      "solution_steps": [
+        "Identify standard side setback for 12.5m height: 3.0m",
+        "Identify drainage easement on west: 4.0m",
+        "Compare: easement is more restrictive (4.0 > 3.0)",
+        "Easement governs → use 4.0m from west boundary"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.05(b) — Side Setbacks; § Easement.01 — Easement Priority Over Setback"
+    },
+    {
+      "number": 5,
+      "type": "SP",
+      "question_stem": "Calculate the buildable ground floor footprint considering all setbacks: front 6.0m, rear 3.0m, east 3.0m, west 4.0m (easement). Lot is 40m × 50m.",
+      "options": [
+        "1,292 sqm",
+        "1,353 sqm",
+        "1,400 sqm",
+        "1,480 sqm"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Buildable width (E-W) = 40 − 3.0 − 4.0 = 33m. Buildable depth (N-S) = 50 − 6.0 − 3.0 = 41m. Area = 33 × 41 = 1,353 sqm. This is MORE restrictive than AMBF (1,400 sqm), so setbacks govern.",
+        "distractor_0": "Uses wrong rear setback (2.0m instead of 3.0m) or ignores easement. 40 − 3.0 − 3.0 = 34m width → 34 × 38 = 1,292 sqm.",
+        "distractor_1": "Uses 3.0m side setbacks on both sides, ignoring easement: 40 − 3.0 − 3.0 = 34m. Then 50 − 6.0 − 3.0 = 41m → 34 × 41 = 1,394 sqm (close, but wrong).",
+        "distractor_2": "Uses AMBF from PSO without checking setbacks: 1,400 sqm.",
+        "takeaway": "Setback brackets depend on actual building height, not the standard 3.0m × floors assumption."
+      },
+      "takeaway": "Always compute buildable area from BOTH PSO and setbacks. The MORE restrictive value governs. Easements reduce buildable width.",
+      "solution_steps": [
+        "Buildable width = Frontage − (east setback) − (west easement) = 40 − 3.0 − 4.0 = 33m",
+        "Buildable depth = Depth − (front setback) − (rear setback) = 50 − 6.0 − 3.0 = 41m",
+        "Buildable footprint = 33 × 41 = 1,353 sqm",
+        "Compare to AMBF: 1,353 sqm < 1,400 sqm → setbacks are limiting factor"
+      ],
+      "code_citation": "NLC Zoning Code § Setback.02 — Buildable Area Determination"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "Calculate the Impervious Surface Area (ISA) requirement. ISA = 15% of lot area. What is the maximum allowable ISA in sqm?",
+      "options": [
+        "200 sqm",
+        "250 sqm",
+        "300 sqm",
+        "350 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "ISA = Lot Area × 15% = 2,000 × 0.15 = 300 sqm.",
+        "distractor_0": "Uses 10%: 2,000 × 0.10 = 200 sqm.",
+        "distractor_1": "Uses 12.5%: 2,000 × 0.125 = 250 sqm.",
+        "distractor_2": "Uses 17.5%: 2,000 × 0.175 = 350 sqm.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "ISA includes parking, driveways, hardstand, loading areas. Verify the exact percentage in the brief.",
+      "solution_steps": [
+        "ISA percentage = 15% (from brief)",
+        "ISA = 2,000 × 0.15 = 300 sqm"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.03(d) — Impervious Surface Area Limits"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "Calculate the total Unbuilt Soft Area (USA) requirement. USA = 15% of lot area. What is the maximum allowable USA in sqm?",
+      "options": [
+        "250 sqm",
+        "300 sqm",
+        "350 sqm",
+        "400 sqm"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "USA = Lot Area × 15% = 2,000 × 0.15 = 300 sqm.",
+        "distractor_0": "Uses 12.5%: 2,000 × 0.125 = 250 sqm.",
+        "distractor_1": "Uses 17.5%: 2,000 × 0.175 = 350 sqm.",
+        "distractor_2": "Uses 20%: 2,000 × 0.20 = 400 sqm.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "USA is landscaping, green space, gardens, water features. Combined with ISA, MACA = ISA% + USA% defines maximum covered + soft area.",
+      "solution_steps": [
+        "USA percentage = 15% (from brief)",
+        "USA = 2,000 × 0.15 = 300 sqm"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.03(e) — Unbuilt Soft Area Requirements"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "Calculate Total Open Space Land (TOSL) by summing ISA and USA. What is TOSL?",
+      "options": [
+        "450 sqm",
+        "550 sqm",
+        "600 sqm",
+        "700 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "TOSL = ISA + USA = 300 + 300 = 600 sqm.",
+        "distractor_0": "Uses only ISA: 300 sqm (missing USA).",
+        "distractor_1": "Adds one of them to the PSO area incorrectly: ~550 sqm.",
+        "distractor_2": "Over-counts by using different percentages or doubling.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "TOSL is the sum of ISA and USA. Remaining lot = Total lot − TOSL − Building footprint.",
+      "solution_steps": [
+        "TOSL = ISA + USA",
+        "TOSL = 300 + 300 = 600 sqm"
+      ],
+      "code_citation": "NLC Zoning Code § Open Space.01 — TOSL Definition"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "question_stem": "Calculate the Maximum Allowable Coverage Area (MACA) as a percentage. MACA = PSO% + ISA%. What is MACA?",
+      "options": [
+        "75%",
+        "80%",
+        "85%",
+        "90%"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "MACA = PSO + ISA = 70% + 15% = 85% of the lot may be covered (building + pavement).",
+        "distractor_0": "Uses PSO only: 70%.",
+        "distractor_1": "Uses PSO + USA instead: 70% + 15% = 85% (but this conflates coverage with soft area).",
+        "distractor_2": "Adds all three: 70% + 15% + 15% = 100% (incorrect formula).",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "MACA = hardscape + building. USA is separate. Remaining permeable area = 100% − MACA − USA.",
+      "solution_steps": [
+        "MACA = PSO + ISA",
+        "MACA = 70% + 15% = 85%"
+      ],
+      "code_citation": "NLC Zoning Code § Coverage.01 — MACA Calculation"
+    },
+    {
+      "number": 10,
+      "type": "DC",
+      "question_stem": "Calculate the Total Gross Floor Area (TGFA) for the 3-storey building. Ground footprint = 1,353 sqm (after setbacks). Mezzanine = 400 sqm (within ground floor). Note: A mezzanine counts as an additional floor only if it exceeds 1/3 of the floor below. What is TGFA?",
+      "options": [
+        "4,059 sqm",
+        "4,459 sqm",
+        "5,412 sqm",
+        "5,059 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Mezzanine = 400 sqm out of 1,353 sqm ground floor = 29.6%, which is LESS than 33.3% (1/3). Mezzanine does NOT count as a separate floor. TGFA = 1,353 × 3 floors = 4,059 sqm.",
+        "distractor_0": "TRAP 3: Counts mezzanine as additional floor (1,353 × 3) + 400 = 4,459 sqm. This is incorrect because mezzanine < 1/3.",
+        "distractor_1": "Over-inflates by adding mezzanine AND using wrong footprint or floor count: ~5,412 sqm.",
+        "distractor_2": "Adds mezzanine to a partial calculation: 1,353 × 3 + some adjustment = ~5,059 sqm.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "TRAP 3: Mezzanines are tricky. They count as a separate floor ONLY if > 1/3 of the floor area below. Always verify the ratio. Common mistake: counting every mezzanine as a floor.",
+      "solution_steps": [
+        "Identify ground footprint after setbacks: 1,353 sqm",
+        "Identify mezzanine area: 400 sqm",
+        "Check if mezzanine counts: 400 ÷ 1,353 = 29.6% < 33.3% → does NOT count",
+        "Count floors: 3 (ground, 2nd, 3rd)",
+        "TGFA = 1,353 × 3 = 4,059 sqm"
+      ],
+      "code_citation": "NLC Building Code § Floor.02 — Mezzanine Floor Area Threshold (1/3 rule)"
+    },
+    {
+      "number": 11,
+      "type": "DC",
+      "question_stem": "Calculate the Floor-to-Area Ratio (FLAR) for this project. FLAR = TGFA ÷ Lot Area. Allowable range = 1.5–2.5. Does the project meet the FLAR requirement?",
+      "options": [
+        "FLAR = 1.89, within range",
+        "FLAR = 2.03, within range",
+        "FLAR = 2.23, exceeds maximum",
+        "FLAR = 2.45, exceeds maximum"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "FLAR = 4,059 ÷ 2,000 = 2.03. This is within the 1.5–2.5 range.",
+        "distractor_0": "Uses wrong TGFA (e.g., 3,780 sqm from an earlier calculation error): 3,780 ÷ 2,000 = 1.89.",
+        "distractor_1": "Uses TGFA with mezzanine counted: 4,459 ÷ 2,000 = 2.23 (exceeds max but students may think it's OK).",
+        "distractor_2": "Adds extra layers or miscalculates footprint: ~4,900 ÷ 2,000 = 2.45.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "FLAR is a density control. Always verify against the zoning range. If FLAR exceeds max, the design is non-compliant (height or footprint must be reduced).",
+      "solution_steps": [
+        "TGFA = 4,059 sqm (from Q10)",
+        "Lot Area = 2,000 sqm",
+        "FLAR = 4,059 ÷ 2,000 = 2.03",
+        "Compare to range: 1.5 ≤ 2.03 ≤ 2.5 ✓ Compliant"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.06 — Floor Area Ratio Limits"
+    },
+    {
+      "number": 12,
+      "type": "DC",
+      "question_stem": "What is the maximum building height limit (BHL) for this I-1 zone, and does the 12.5m building height comply?",
+      "options": [
+        "BHL = 12m, building exceeds limit",
+        "BHL = 15m, building complies",
+        "BHL = 18m, building complies",
+        "BHL = 10m, building exceeds limit"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BHL = 15m (stated in brief). Building height = 12.5m ≤ 15m ✓ Compliant.",
+        "distractor_0": "Misreads BHL as 12m (confuses with 12m setback bracket) → 12.5m exceeds.",
+        "distractor_1": "Uses residential zone BHL (18m) by error → building complies but so does any I-1 building under 15m.",
+        "distractor_2": "Uses restricted I-2 or commercial BHL of 10m → 12.5m exceeds.",
+        "takeaway": "Always verify development control values against the correct zone classification in Table VII.G.1."
+      },
+      "takeaway": "BHL is zone-specific. Always confirm the exact limit from the brief or code. Don't conflate setback brackets with height limits.",
+      "solution_steps": [
+        "Identify BHL from brief: 15m",
+        "Identify building height: 12.5m",
+        "Compare: 12.5m ≤ 15m ✓ Compliant"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.04(a) — Building Height Limit"
+    },
+    {
+      "number": 13,
+      "type": "ZN",
+      "question_stem": "The loading dock is located on the ground floor facing the south (street-facing RROW). In an I-1 light industrial zone, is this placement compliant with typical warehouse zoning?",
+      "options": [
+        "Yes, loading docks must face the public right-of-way",
+        "Yes, street-facing loading is standard practice and improves traffic flow",
+        "No, loading docks must be internal or screened from public view in I-1 zones",
+        "No, loading docks cannot be within 6m of the property line"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "In I-1 light industrial, street-facing loading docks are acceptable and standard. They provide efficient access from the street. No screening requirement is imposed for I-1 (stricter in residential/commercial zones).",
+        "distractor_0": "Over-states the requirement as 'must' face RROW, when really it's permitted but not mandatory.",
+        "distractor_1": "Confuses I-1 with residential or mixed-use zones where loading must be screened.",
+        "distractor_2": "Applies a distance restriction (6m) that applies to other uses, not loading docks in I-1.",
+        "takeaway": "Space planning decisions must align with the building program and code requirements."
+      },
+      "takeaway": "Loading dock placement rules vary by zone. I-1 is industrial-friendly; residential/commercial zones impose screening. Always check zoning restrictions for specific uses.",
+      "solution_steps": [
+        "Identify zone: I-1 Light Industrial",
+        "Identify use: Warehouse loading dock",
+        "Check I-1 loading dock rules: Street-facing permitted (efficient for trucks)",
+        "No screening required for I-1",
+        "Placement is compliant"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.07(b) — Loading Dock & Service Yard Requirements"
+    },
+    {
+      "number": 14,
+      "type": "ZN",
+      "question_stem": "The 3rd floor contains administrative offices. The adjacent north property (rear) is zoned commercial. Is this adjacency compatible under I-1 zoning, and are there any required buffer or soundproofing measures?",
+      "options": [
+        "No compatibility issue; no additional measures required",
+        "Compatible, but a 2m buffer zone must be maintained on the north boundary",
+        "Incompatible; office use must be relocated to the ground floor or rear building",
+        "Compatible, but STC (sound transmission class) ≥ 60 required in north-facing walls"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "I-1 light industrial and commercial are adjacent uses. Both are industrial/commercial zones with similar noise/activity tolerances. No buffer or soundproofing required. They are compatible.",
+        "distractor_0": "Applies buffer zone requirement (2m) used for industrial-to-residential adjacency, not commercial adjacency.",
+        "distractor_1": "Assumes offices in I-1 are incompatible with commercial zones. I-1 explicitly allows office components. Both zones tolerate industrial activity.",
+        "distractor_2": "Applies STC requirement used for residential-adjacent industrial, not commercial-adjacent.",
+        "takeaway": "Space planning decisions must align with the building program and code requirements."
+      },
+      "takeaway": "Adjacency compatibility depends on zone pairs. Industrial-industrial and industrial-commercial are usually compatible. Residential adjacency requires buffers and soundproofing.",
+      "solution_steps": [
+        "Identify zones: I-1 (project) and Commercial (north)",
+        "Check compatibility matrix for I-1 + Commercial: Compatible ✓",
+        "Check for buffer/soundproofing requirements: None for commercial adjacency",
+        "Conclusion: No restrictions"
+      ],
+      "code_citation": "NLC Zoning Code § I-1.08(a) — Adjacency Compatibility; § Buffer.01 — Industrial-Residential Buffer Requirements"
+    },
+    {
+      "number": 15,
+      "type": "BD",
+      "question_stem": "Classify this 3-storey light industrial warehouse building under the building code fire zone system. Which fire zone classification applies?",
+      "options": [
+        "Fire Zone B (non-combustible industrial)",
+        "Fire Zone C (combustible warehouse)",
+        "Fire Zone A (restricted commercial)",
+        "Fire Zone D (unclassified light industrial)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "A 3-storey warehouse with non-combustible structural frame (steel assumed) falls into Fire Zone B. Multi-storey industrial buildings with robust structural systems are classified B.",
+        "distractor_0": "Fire Zone C applies to smaller or single-storey combustible warehouses. This building is 3 storeys with structural redundancy.",
+        "distractor_1": "Fire Zone A is commercial/high-rise, not industrial.",
+        "distractor_2": "Fire Zone D is not a standard classification.",
+        "takeaway": "Building design knowledge questions test real professional decisions architects make on projects."
+      },
+      "takeaway": "Building code fire zones depend on occupancy, height, area, and structural system. Industrial warehouses are typically B or C. Multi-storey non-combustible = Zone B.",
+      "solution_steps": [
+        "Identify occupancy: Warehouse + light manufacturing",
+        "Identify height: 3 storeys (12.5m)",
+        "Identify structural system: Steel frame (typical for warehouses)",
+        "Identify combustibility: Non-combustible construction assumed",
+        "Fire Zone Classification: B (multi-storey non-combustible industrial)"
+      ],
+      "code_citation": "NLC Building Code § Fire Zones.02 — Fire Zone Classification Table; § IBC 2206.01 — Warehouse Occupancy"
+    },
+    {
+      "number": 16,
+      "type": "SC",
+      "question_stem": "For the ground floor warehouse with 6.0m clear height, what structural system is most appropriate and economical?",
+      "options": [
+        "Reinforced concrete frame with deep beams (cost-inefficient)",
+        "Steel frame with open-web joists or composite deck (standard warehouse solution)",
+        "Timber trusses (inadequate for 6m span and live loads)",
+        "Post-tensioned concrete (over-engineered for this span)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Steel frame with composite deck or open-web joists provides efficient span capability, easy integration of MEP, and rapid construction. Standard for warehouses.",
+        "distractor_0": "Reinforced concrete CAN work but requires deeper sections (more weight, cost). Less flexible for future modification.",
+        "distractor_1": "Timber trusses cannot span 6m+ with typical warehouse loads (forklift, racking, palletized goods at 5+ kN/sqm).",
+        "distractor_2": "Post-tensioned is over-engineered and expensive for a simple warehouse span.",
+        "takeaway": "Structural system selection must match the building type, span, and load requirements."
+      },
+      "takeaway": "Warehouse clear height demands efficient long-span structure. Steel is industry standard. Choose joists/deck type based on span and live load.",
+      "solution_steps": [
+        "Identify clear height requirement: 6.0m (ground floor)",
+        "Identify typical warehouse bay spans: 12–20m",
+        "Identify live loads: Racking + forklifts = 5–7 kN/sqm",
+        "Evaluate structural options: Steel frame best for economy and flexibility",
+        "Specify: Steel frame with composite/metal deck"
+      ],
+      "code_citation": "NLC Building Code § Structural.03 — Warehouse Structural Systems; AISC Steel Design Guide"
+    },
+    {
+      "number": 17,
+      "type": "AI",
+      "question_stem": "The loading dock has 2 bays for truck access. Standard truck loading bay width and depth are 3.5m × 15m per bay. What is the total area occupied by the loading dock (including circulation and maneuvering)?",
+      "options": [
+        "105 sqm",
+        "150 sqm",
+        "180 sqm",
+        "210 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "2 bays × (3.5m × 15m) = 2 × 52.5 = 105 sqm. Add maneuvering area (truck turnaround, staging): ~75 sqm additional. Total ≈ 180 sqm.",
+        "distractor_0": "Counts bay area only (105 sqm), omitting maneuvering and staging zones.",
+        "distractor_1": "Uses 1.5× multiplier (bays + small circulation) ≈ 150 sqm.",
+        "distractor_2": "Over-estimates by including excessive circulation: 210 sqm.",
+        "takeaway": "Interior dimensions must meet applicable standards and code minimums."
+      },
+      "takeaway": "Loading docks include bays PLUS maneuvering areas. Truck turnarounds, staging zones, and canopy coverage add 30–50% to gross bay area.",
+      "solution_steps": [
+        "Bay area per unit = 3.5m × 15m = 52.5 sqm",
+        "2 bays = 105 sqm",
+        "Maneuvering/staging/canopy = ~75 sqm (14-point turn truck turnaround, queue staging)",
+        "Total loading dock area ≈ 180 sqm"
+      ],
+      "code_citation": "ITE Loading Bay Design Standards; NLC Warehouse Code § WH.05 — Loading Area Dimension Requirements"
+    },
+    {
+      "number": 18,
+      "type": "ES",
+      "question_stem": "The ground floor warehouse will have a reinforced concrete slab-on-grade. Assume a bearing capacity of 20 kN/sqm for the soil, and expected live load from racking + equipment = 50 kN/sqm. The slab must be designed for a concentrated load from a racking column = 300 kN on a 0.5m × 0.5m footprint. What minimum slab thickness is required (assuming f'c = 30 MPa concrete)?",
+      "options": [
+        "150 mm",
+        "200 mm",
+        "250 mm",
+        "300 mm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Using slab design for racking loads (ACI 360, Warehouse Design): t = √(P / (φ × c × f'c)) where P = 300 kN, φ = 0.9, c ≈ 0.9 (bearing factor). t ≈ 240–260 mm → specify 250 mm. Alternatively, using 50 kN/sqm distributed live load and bearing checks, t ≥ 200 mm; concentrated load bumps to 250 mm.",
+        "distractor_0": "150 mm is typical for light storage or parking (15 kN/sqm live load), not heavy warehouse racking.",
+        "distractor_1": "200 mm is minimal for general warehouse (30–40 kN/sqm) but insufficient for concentrated 300 kN racking loads.",
+        "distractor_2": "300 mm is over-designed and uneconomical for this load case.",
+        "takeaway": "Material quantity computations must account for waste and construction tolerances."
+      },
+      "takeaway": "Warehouse slabs must accommodate both distributed live loads (racking) AND concentrated point loads (individual racking feet). Always check both; the higher governs.",
+      "solution_steps": [
+        "Identify distributed live load: 50 kN/sqm (racking)",
+        "Identify concentrated load: 300 kN (racking column foot)",
+        "Check distributed load governs: 50 kN/sqm → t ≈ 200 mm (standard warehouse)",
+        "Check concentrated load governs: 300 kN on 0.5m × 0.5m → bearing stress = 300 ÷ (0.5 × 0.5) = 1,200 kPa",
+        "Apply ACI 360 concentrated load formula or spreadsheet: t ≈ 240–250 mm required",
+        "Specify: 250 mm reinforced concrete slab-on-grade, f'c = 30 MPa, with dowels for racking foot loads"
+      ],
+      "code_citation": "ACI 360 Report — Design of Slabs-on-Grade; NLC Building Code § Concrete.04 — Warehouse Slab Design; IFI Racking Code § Load Cell Design"
+    },
+    {
+      "number": 19,
+      "type": "PK",
+      "question_stem": "Calculate the required parking and loading spaces for this facility. Use ITE standards: light industrial warehouse = 3 spaces per 1,000 sqm GFA; loading = 1 space per 1,000 sqm GFA, minimum 2 spaces. TGFA = 4,059 sqm. How many total parking + loading spaces are required?",
+      "options": [
+        "10 spaces (8 parking + 2 loading)",
+        "13 spaces (12 parking + 1 loading)",
+        "14 spaces (12 parking + 2 loading)",
+        "16 spaces (12 parking + 4 loading)"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Parking: (4,059 ÷ 1,000) × 3 = 12.18 ≈ 12 spaces. Loading: (4,059 ÷ 1,000) × 1 = 4.06 spaces, but minimum = 2 spaces (given: 'minimum 2'). Total = 12 + 2 = 14 spaces. (The brief specifies 2 loading bays; requirement is 2 spaces minimum, so 2 is OK.)",
+        "distractor_0": "Under-counts parking (8 instead of 12) and uses minimum loading (2) → 10 total.",
+        "distractor_1": "Counts parking correctly (12) but mistakenly uses 1 loading space (misreads minimum rule).",
+        "distractor_2": "Over-counts loading by using 4 spaces (full formula without recognizing 2-bay constraint and minimum rule).",
+        "takeaway": "Parking and loading requirements depend on building use, floor area, and occupancy."
+      },
+      "takeaway": "Parking and loading are separate requirements. Always apply the formula, then check minimums/maximums. Brief-specific details (number of loading bays) may define the actual provision.",
+      "solution_steps": [
+        "TGFA = 4,059 sqm",
+        "Parking requirement: (4,059 ÷ 1,000) × 3 = 12.18 ≈ 12 spaces (round up to 12)",
+        "Loading requirement: (4,059 ÷ 1,000) × 1 = 4.06 spaces, but minimum 2 spaces",
+        "Project has 2 loading bays (stated in brief) → use 2 loading spaces",
+        "Total = 12 parking + 2 loading = 14 spaces"
+      ],
+      "code_citation": "ITE Parking Generation Manual (6th Ed.) — Light Industrial Warehouse; NLC Zoning Code § I-1.09 — Parking & Loading Requirements"
+    }
+  ]
+}

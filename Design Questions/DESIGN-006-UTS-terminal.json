@@ -1,0 +1,400 @@
+{
+  "id": "DESIGN-006",
+  "title": "UTS Provincial Bus Terminal",
+  "building_type": "UTS",
+  "difficulty": 5,
+  "time_limit_minutes": 120,
+  "brief": "Design a provincial bus terminal for a challenging 3000 sqm through lot in the UTS zone. The rectangular lot measures 50m × 60m with a 2% slope toward the east and faces roads on both north and south boundaries. A 5m road widening easement encumbers the south boundary, and a 3m drainage easement runs along the east boundary. The building must accommodate 20 bus bays, passenger waiting areas, ticket counters, baggage handling, commercial spaces, restaurants, administrative offices, driver facilities, and covered rooftop parking—all within a 4-storey envelope. Compliance requirements include BP 344 accessibility standards for boarding platforms, separated bus entry and exit circulation, and a covered baggage loading platform. The design must navigate the through-lot condition, which imposes two front setbacks (not front and rear), and reconcile the easement encroachments with standard setback requirements. Calculate allowable building footprint from both PSO and setback constraints, determine the governing floor area limit, verify building height and floor count compliance, and develop a functional layout that optimizes passenger flow and operational efficiency.",
+  "site_data": {
+    "total_lot_area_sqm": 3000,
+    "lot_shape": "rectangular",
+    "lot_type": "through",
+    "frontage_m": 50,
+    "depth_m": 60,
+    "frontage_direction": "south",
+    "rrow_width_m": "20m south, 10m north",
+    "slope_pct": 2,
+    "slope_direction": "east_to_west",
+    "zone": "UTS",
+    "easements": ["5m road widening along south boundary", "3m drainage easement along east boundary"],
+    "adjacent_conditions": "commercial east and west, roads south and north"
+  },
+  "program": {
+    "building_type": "UTS Provincial Bus Terminal",
+    "occupancy": "Transportation/Utilities",
+    "floors": 4,
+    "required_spaces": ["20 bus bays", "passenger waiting areas", "ticket counters", "baggage area", "commercial spaces", "passenger lounge", "restaurants", "admin offices", "driver facilities", "covered rooftop parking"],
+    "special_requirements": ["BP 344 accessible boarding", "separate bus entry/exit", "covered loading platform"]
+  },
+  "code_references": ["PD 1096 IRR Rule VII", "PD 1096 IRR Rule VIII", "BP 344"],
+  "computation_sheet": {
+    "PSO": "60%",
+    "AMBF_from_PSO": "3000 × 0.60 = 1800 sqm",
+    "ISA": "3000 × 0.20 = 600 sqm",
+    "USA": "3000 × 0.20 = 600 sqm",
+    "TOSL": "600 + 600 = 1200 sqm",
+    "MACA": "60% + 20% = 80%",
+    "BHL": "15m",
+    "max_floors": "15 ÷ 3.0 = 5 floors",
+    "building_height": "4 × 3.0 = 12.0m",
+    "setback_bracket": "over 9m up to 12m",
+    "setbacks_south_front": "6.0m (road widening 5m is within this)",
+    "setbacks_north_front": "6.0m (through lot = second front setback)",
+    "setbacks_east_side": "3.0m (drainage easement governs over 2.0m)",
+    "setbacks_west_side": "2.0m",
+    "buildable_NS": "60 - 6.0 - 6.0 = 48m",
+    "buildable_EW": "50 - 3.0 - 2.0 = 45m",
+    "AMBF_from_setbacks": "48 × 45 = 2160 sqm",
+    "governing_AMBF": "1800 sqm (PSO governs, 1800 < 2160)",
+    "TGFA": "1800 × 4 = 7200 sqm",
+    "FLAR": "7200 ÷ 3000 = 2.4 (within 2.0-3.0 range)"
+  },
+  "hidden_traps": [
+    "Through lot has TWO front setbacks (6.0m each from south and north roads) and NO rear setback — students apply front+rear instead of front+front",
+    "Road widening easement (5m south) is WITHIN the 6.0m front setback — students add 5+6=11m instead of using 6m",
+    "TLA for PSO uses full 3000 sqm cadastral area, NOT reduced by easements — students may deduct 5m×50m=250 sqm",
+    "Drainage easement (3m east) governs over standard 2.0m side setback — students ignore easement"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "What is the Proposed Site Occupancy (PSO) for a UTS Provincial Bus Terminal in the UTS zone per PD 1096 IRR Rule VII?",
+      "options": ["50%", "60%", "70%", "75%"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "UTS zone PSO = 60% per PD 1096 Table VII.G.1 for Transportation/Utilities occupancy. This is the base site occupancy before applying setback constraints.",
+        "distractor_0": "50% is the PSO for General Industry (GI) zone, not UTS.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "70% applies to I-1 (Light Industrial) zone; UTS is more restricted.",
+        "distractor_3": "75% applies to C-2 (Community Commercial) zone; UTS occupancy is lower.",
+        "takeaway": "UTS Provincial Bus Terminal PSO is fixed at 60% regardless of lot constraints."
+      },
+      "solution_steps": ["Identify zone: UTS", "Reference PD 1096 IRR Rule VII, Table VII.G.1", "Locate occupancy: Transportation/Utilities", "Read PSO value: 60%"],
+      "code_citation": "PD 1096 IRR Rule VII, Table VII.G.1"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "Calculate the Allowable Building Footprint (AMBF) based on Proposed Site Occupancy for the 3000 sqm lot. What is the result?",
+      "options": ["1650 sqm", "1800 sqm", "2100 sqm", "1500 sqm"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "AMBF from PSO = 3000 sqm × 60% = 1800 sqm. The full cadastral area (3000 sqm) is used, NOT reduced by easement areas. Easements affect layout and setbacks, not the TLA base.",
+        "distractor_0": "1650 sqm results from deducting easement area (5m×50m = 250 sqm) first: (3000-250)×60% = 1650. This is TRAP-3: students incorrectly reduce TLA by easement before applying PSO.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "2100 sqm results from using 70% PSO (wrong zone code), not 60%.",
+        "distractor_3": "1500 sqm results from using 50% PSO (GI zone), not UTS.",
+        "takeaway": "TRAP-3: PSO calculation uses full cadastral TLA, never reduced by easement areas."
+      },
+      "solution_steps": ["Identify PSO: 60% (from Q1)", "Identify TLA: 3000 sqm (full cadastral area)", "Calculate AMBF: 3000 × 0.60 = 1800 sqm", "Do NOT deduct easement from TLA base"],
+      "code_citation": "PD 1096 IRR Rule VII.H.1"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "question_stem": "For a through lot 60m deep with south front setback 6.0m and north front setback 6.0m, what is the buildable N-S depth?",
+      "options": ["54m", "48m", "52m", "42m"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Buildable N-S depth = 60m - 6.0m (south front) - 6.0m (north front) = 48m. A through lot faces TWO roads, so BOTH setbacks are front setbacks. No rear setback applies.",
+        "distractor_0": "54m results from using only one front setback: 60 - 6.0 = 54m. This TRAP-1 error: students forget the through lot has two front setbacks.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "52m results from wrong setback bracket application (4.5m + 4.5m = 9m total instead of 6.0m + 6.0m = 12m). Student misread the bracket.",
+        "distractor_3": "42m results from incorrectly adding drainage easement (3m) to both setbacks: 60 - 6.0 - 6.0 - 3.0 = 45m, then further deducting. Wrong approach.",
+        "takeaway": "TRAP-1: Through lot requires TWO front setbacks; do not add front+rear setbacks."
+      },
+      "solution_steps": ["Identify lot type: through (faces two roads)", "Identify setback bracket: height 12.0m falls in 'over 9m up to 12m'", "Read setback: 6.0m from table", "Calculate: 60 - 6.0 (south) - 6.0 (north) = 48m", "Note: both are FRONT setbacks, no rear"],
+      "code_citation": "PD 1096 IRR Rule VIII, Section 8.2.2 (Through Lot Setbacks)"
+    },
+    {
+      "number": 4,
+      "type": "DC",
+      "question_stem": "For the same lot, 50m wide with east side setback 3.0m (due to drainage easement) and west side setback 2.0m, what is the buildable E-W width?",
+      "options": ["46m", "45m", "44m", "39m"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Buildable E-W width = 50m - 3.0m (east; governed by drainage easement) - 2.0m (west) = 45m. The drainage easement is 3m and governs over the standard 2.0m side setback requirement.",
+        "distractor_0": "46m results from ignoring the drainage easement on the east and using standard 2.0m side setbacks: 50 - 2.0 - 2.0 = 46m. This TRAP-4 error: students overlook easement governance.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "44m results from using 3.0m on both sides: 50 - 3.0 - 3.0 = 44m. Student incorrectly applied east easement to west side too.",
+        "distractor_3": "39m is unrealistic; results from compounding errors (6.0 + 5.0 deduction). Clear computational mistake.",
+        "takeaway": "TRAP-4: Drainage easement (3m) governs over standard 2.0m side setback on affected side."
+      },
+      "solution_steps": ["Identify lot width: 50m", "Identify east side: 3.0m setback (drainage easement governs)", "Identify west side: 2.0m standard side setback", "Calculate: 50 - 3.0 - 2.0 = 45m"],
+      "code_citation": "PD 1096 IRR Rule VIII, Section 8.2.1 (Easement Impact on Setbacks)"
+    },
+    {
+      "number": 5,
+      "type": "DC",
+      "question_stem": "What is the Allowable Building Footprint (AMBF) calculated from the buildable area constrained by setbacks (48m × 45m)?",
+      "options": ["2160 sqm", "2484 sqm", "2288 sqm", "2000 sqm"],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "AMBF from setbacks = 48m × 45m = 2160 sqm. This is the maximum footprint geometry allows. However, the smaller PSO-based AMBF (1800 sqm) governs.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "2484 sqm results from wrong N-S depth: 54m × 46m (using TRAP-1 and TRAP-4 errors combined).",
+        "distractor_2": "2288 sqm results from 52m × 44m (wrong brackets and easement application).",
+        "distractor_3": "2000 sqm is a round number students might guess if confused about constraints.",
+        "takeaway": "AMBF from setbacks (2160 sqm) exceeds PSO-based AMBF (1800 sqm); PSO governs."
+      },
+      "solution_steps": ["Use buildable N-S depth: 48m (from Q3)", "Use buildable E-W width: 45m (from Q4)", "Calculate: 48 × 45 = 2160 sqm", "Note: This exceeds PSO-based AMBF of 1800 sqm"],
+      "code_citation": "PD 1096 IRR Rule VII.H.2"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "What is the governing Allowable Building Footprint (AMBF) for this UTS bus terminal? Is it limited by PSO or setback geometry?",
+      "options": ["2160 sqm (setback-limited)", "1800 sqm (PSO-limited)", "1650 sqm (reduced for easement)", "1500 sqm (reduced for slope)"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Governing AMBF = 1800 sqm. The smaller of (PSO-based AMBF) or (setback-limited AMBF) governs. Since 1800 < 2160, the PSO constraint (60% × 3000) is the limiting factor. This is unusual and a trap because students expect setbacks to govern.",
+        "distractor_0": "2160 sqm is the setback-limited AMBF but does NOT govern because it exceeds PSO limit. Students may assume setback geometry always governs.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "1650 sqm incorrectly deducts easement from TLA first (TRAP-3). Never reduce TLA by easement before PSO calculation.",
+        "distractor_3": "1500 sqm results from wrong PSO (50% instead of 60%) or assumes slope further restricts, which it does not.",
+        "takeaway": "Governing AMBF is the MINIMUM of PSO-based or setback-based AMBF; here PSO governs at 1800 sqm."
+      },
+      "solution_steps": ["Calculate PSO-based AMBF: 3000 × 60% = 1800 sqm (Q2)", "Calculate setback-based AMBF: 48 × 45 = 2160 sqm (Q5)", "Apply rule: AMBF = min(1800, 2160) = 1800 sqm", "PSO governs, which is unusual but correct"],
+      "code_citation": "PD 1096 IRR Rule VII.H.3"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "Calculate the Total Gross Floor Area (TGFA) for the 4-storey bus terminal with governing AMBF of 1800 sqm.",
+      "options": ["8640 sqm", "7200 sqm", "9000 sqm", "6600 sqm"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "TGFA = AMBF × number of floors = 1800 sqm × 4 = 7200 sqm. The building has 4 storeys (as stated in program), each 1800 sqm.",
+        "distractor_0": "8640 sqm results from using setback-limited AMBF (2160) instead: 2160 × 4 = 8640. Student uses wrong AMBF.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "9000 sqm results from calculating with 5 floors (max allowed) instead of 4 (as programmed): 1800 × 5 = 9000.",
+        "distractor_3": "6600 sqm results from reducing AMBF due to easement first (wrong TRAP-3 thinking): 1650 × 4 = 6600.",
+        "takeaway": "TGFA uses programmed floor count (4), not maximum allowable floors (5)."
+      },
+      "solution_steps": ["Identify governing AMBF: 1800 sqm (from Q6)", "Identify programmed floors: 4", "Calculate TGFA: 1800 × 4 = 7200 sqm"],
+      "code_citation": "PD 1096 IRR Rule VII.H.4"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "Calculate the Floor Area Ratio (FLAR) for the bus terminal. Is it within the allowable range for UTS zone (2.0–3.0)?",
+      "options": ["2.88 (exceeds range)", "2.4 (within range)", "3.0 (at maximum)", "2.2 (below minimum)"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "FLAR = TGFA ÷ TLA = 7200 sqm ÷ 3000 sqm = 2.4. This falls within the UTS zone range of 2.0–3.0, confirming the design is compliant.",
+        "distractor_0": "2.88 results from using setback-limited TGFA: 8640 ÷ 3000 = 2.88. Student used wrong AMBF and TGFA.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "3.0 is the maximum allowable FLAR, not the calculated value. Student chose the ceiling instead of calculating.",
+        "distractor_3": "2.2 results from reducing TLA due to easement: 7200 ÷ (3000 - 250) = 2.4... but student miscalculates or uses wrong reduced TLA.",
+        "takeaway": "FLAR = TGFA ÷ TLA must fall within zone range; 2.4 is compliant for UTS."
+      },
+      "solution_steps": ["Identify TGFA: 7200 sqm (from Q7)", "Identify TLA: 3000 sqm", "Calculate FLAR: 7200 ÷ 3000 = 2.4", "Verify: 2.4 is within 2.0–3.0 range for UTS zone"],
+      "code_citation": "PD 1096 IRR Rule VII.I.1"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "question_stem": "What is the total Impervious Surface Area (ISA) required for the bus terminal site? (ISA = 20% of TLA per UTS zone requirements.)",
+      "options": ["550 sqm", "600 sqm", "360 sqm", "540 sqm"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "ISA = TLA × 20% = 3000 sqm × 0.20 = 600 sqm. ISA is always calculated on full cadastral TLA, not reduced by easement.",
+        "distractor_0": "550 sqm results from reducing TLA by easement: (3000 - 250) × 20% = 550. Student incorrectly deducted easement area.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "360 sqm results from using wrong ISA percentage (12% instead of 20%).",
+        "distractor_3": "540 sqm results from using 18% ISA percentage (non-standard) or other calculation error.",
+        "takeaway": "ISA is always 20% of full TLA; easements do not reduce the TLA base."
+      },
+      "solution_steps": ["Identify TLA: 3000 sqm", "Identify ISA percentage: 20% (UTS zone standard)", "Calculate ISA: 3000 × 0.20 = 600 sqm"],
+      "code_citation": "PD 1096 IRR Rule VII, Table VII.G.1 (Utilities Occupancy)"
+    },
+    {
+      "number": 10,
+      "type": "DC",
+      "question_stem": "What is the maximum number of floors allowed for a building with BHL = 15m and floor-to-floor height = 3.0m in the UTS zone?",
+      "options": ["4 floors", "5 floors", "3 floors", "6 floors"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Maximum floors = BHL ÷ floor-to-floor height = 15m ÷ 3.0m = 5 floors. However, the program specifies 4 floors, which is within this limit and is compliant.",
+        "distractor_0": "4 floors is the actual programmed design, not the maximum allowed. Student confused programmed vs. maximum.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "3 floors results from using incorrect BHL (9m instead of 15m) or wrong calculation.",
+        "distractor_3": "6 floors exceeds the calculation; results from wrong math (15 ÷ 2.5 = 6) or reading wrong BHL.",
+        "takeaway": "BHL limits floor count; 15m ÷ 3.0m = 5 floors max, but design uses 4 (within limit)."
+      },
+      "solution_steps": ["Identify BHL: 15m (UTS zone standard)", "Identify floor-to-floor height: 3.0m", "Calculate max floors: 15 ÷ 3.0 = 5 floors", "Note: actual design (4 floors) is within this maximum"],
+      "code_citation": "PD 1096 IRR Rule VII, Section 7.4.1 (Building Height Limits)"
+    },
+    {
+      "number": 11,
+      "type": "SP",
+      "question_stem": "Explain the setback requirement for a through lot that faces roads on both north and south sides. Which setback rule applies to each side?",
+      "options": ["Front setback on both sides; rear setback applies to neither", "Front setback south, rear setback north", "Rear setback on both sides", "Varies by zone; no standard rule"],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "A through lot faces two road frontages; both are treated as FRONT setbacks. Neither side is 'rear.' Each road frontage requires the front setback for the applicable height bracket. For this 12m building: 6.0m front on south and 6.0m front on north.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "Incorrect; assumes one side is rear. Through lots do not have rear setbacks.",
+        "distractor_2": "Incorrect; both sides are fronts, not rears.",
+        "distractor_3": "Incorrect; through lot setback rules are standard in PD 1096.",
+        "takeaway": "Through lots have two front setbacks, zero rear setbacks—a key distinction."
+      },
+      "solution_steps": ["Identify lot type: through (faces two roads)", "Determine frontage orientation: south and north", "Apply rule: both are FRONT setbacks", "Calculate each: south 6.0m, north 6.0m (height bracket 9–12m)"],
+      "code_citation": "PD 1096 IRR Rule VIII, Section 8.2.2 (Through Lot Provisions)"
+    },
+    {
+      "number": 12,
+      "type": "SP",
+      "question_stem": "A 5m road widening easement runs along the south boundary. The front setback for the 12m building is 6.0m. How do these two requirements interact?",
+      "options": ["Add both: 5 + 6 = 11m unbuildable", "The 6.0m setback governs; easement is within it", "Reduce setback to 5m to accommodate easement", "Easement voids the setback requirement"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "The 6.0m setback requirement governs because it exceeds the 5m easement. The easement (5m) falls entirely within the setback zone (6.0m). The south boundary has a single 6.0m unbuildable strip, not 11m. This is TRAP-2.",
+        "distractor_0": "Incorrect; students incorrectly add easement to setback (TRAP-2). The easement does not add to setback; it overlaps with it.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "Incorrect; setback requirements are not reduced by easements.",
+        "distractor_3": "Incorrect; easements do not eliminate setback requirements.",
+        "takeaway": "TRAP-2: Easement within setback does not increase unbuildable strip; larger requirement governs."
+      },
+      "solution_steps": ["Identify easement: 5m road widening on south", "Identify setback: 6.0m front on south", "Compare: 6.0m > 5m", "Apply rule: larger requirement (6.0m) governs", "Unbuildable strip: 6.0m (not 11m)"],
+      "code_citation": "PD 1096 IRR Rule VIII, Section 8.2.3 (Easement and Setback Interaction)"
+    },
+    {
+      "number": 13,
+      "type": "SP",
+      "question_stem": "What is the total width of the unbuildable strip along the south boundary when a 5m easement and 6.0m setback both apply?",
+      "options": ["11m total", "6.0m total", "5m total", "8.5m total"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "The unbuildable strip is 6.0m, not 11m. The easement (5m) does not add to the setback (6.0m); it falls within the setback zone. The larger of the two governs. Unbuildable = 6.0m from south boundary.",
+        "distractor_0": "11m is the TRAP-2 error: adding 5 + 6 instead of applying the larger requirement. This is a critical misconception.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "5m would ignore the setback requirement entirely.",
+        "distractor_3": "8.5m is an arbitrary middle value; results from averaging or misapplying both requirements.",
+        "takeaway": "TRAP-2: Overlapping easement and setback use the larger value, not the sum."
+      },
+      "solution_steps": ["Identify road widening easement: 5m", "Identify front setback: 6.0m", "Determine relationship: 6.0m > 5m (easement is within setback)", "Apply rule: use the larger requirement", "Unbuildable strip = 6.0m"],
+      "code_citation": "PD 1096 IRR Rule VIII, Section 8.2.3"
+    },
+    {
+      "number": 14,
+      "type": "ZN",
+      "question_stem": "The bus terminal must accommodate 20 bus bays. Assuming a standard bay length of 12m and width of 3m per bay, how many bays can fit along the buildable E-W dimension (45m)?",
+      "options": ["15 bays (3m each)", "14 bays (3.2m each)", "12 bays (3.75m each)", "10 bays (4.5m each)"],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Buildable E-W width is 45m. If each bay is 3m wide, then 45 ÷ 3 = 15 bays can fit along one direction. With parallel bay configurations or multi-row arrangement, 20 bays total can be accommodated within the building footprint (1800 sqm AMBF).",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "14 bays results from reducing available width or using wrong width value (44.8m ÷ 3.2 = 14).",
+        "distractor_2": "12 bays results from using reduced width due to easement misunderstanding or wrong calculation.",
+        "distractor_3": "10 bays is too few; results from over-restrictive assumptions about bay spacing.",
+        "takeaway": "Bus bay zoning must use buildable dimensions; 45m E-W width accommodates 15 bays at 3m width."
+      },
+      "solution_steps": ["Identify buildable E-W width: 45m (from Q4)", "Identify standard bay width: 3m", "Calculate linear bays: 45 ÷ 3 = 15 bays per row", "Confirm 20 bays can fit in multi-row or parallel arrangement within 1800 sqm AMBF"],
+      "code_citation": "PD 1096 IRR (Transit Terminal Operational Guidelines)"
+    },
+    {
+      "number": 15,
+      "type": "ZN",
+      "question_stem": "In a bus terminal layout, which two zones should be immediately adjacent for efficient passenger flow and safety?",
+      "options": ["Ticket counter and baggage area", "Waiting area and bus boarding bays", "Admin offices and driver facilities", "Restaurants and commercial spaces"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Waiting area and bus boarding bays must be immediately adjacent. Passengers queue in the waiting area, receive final information, and then proceed directly to the platform/bays for boarding. This adjacency minimizes cross-traffic and supports efficient terminal operations.",
+        "distractor_0": "Ticket counter and baggage area are important but can be separated or on different levels; not the primary adjacency driver.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "Admin offices and driver facilities do not require adjacency; they support different functions.",
+        "distractor_3": "Restaurants and commercial are ancillary; adjacency less critical than waiting-to-boarding flow.",
+        "takeaway": "Waiting area must directly connect to boarding bays for passenger flow efficiency."
+      },
+      "solution_steps": ["Identify primary passenger journey: entry → ticket → wait → board", "Identify critical adjacency: waiting → boarding", "Confirm: this adjacency minimizes cross-traffic and improves safety"],
+      "code_citation": "PD 1096 IRR (Transit Terminal Planning Guidelines)"
+    },
+    {
+      "number": 16,
+      "type": "BD",
+      "question_stem": "Per BP 344 (Accessibility Code), what is the primary requirement for bus terminal boarding areas to serve persons with disabilities?",
+      "options": ["Audio-visual announcement system only", "Level boarding platform with accessible ramps and handrails", "Designated wheelchair parking spaces only", "Printed information sheets at information desk"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BP 344 mandates level boarding platforms with ramps (≤1:8 slope) and handrails for all boarding areas. This allows persons with mobility devices (wheelchairs, canes, crutches) to board independently and safely. Level boarding is the foundation of terminal accessibility.",
+        "distractor_0": "Audio-visual systems support wayfinding but do not address physical access to buses.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "Parking alone does not address boarding accessibility.",
+        "distractor_3": "Printed information is supplementary; does not address physical boarding access.",
+        "takeaway": "BP 344 requires accessible level boarding platforms with ramps and handrails."
+      },
+      "solution_steps": ["Reference BP 344 (Philippine Accessibility Code)", "Locate terminal provisions section", "Identify boarding accessibility: level platform, ramps (≤1:8), handrails", "Confirm: supports independent boarding for persons with disabilities"],
+      "code_citation": "BP 344, Sections 3.5.2 and 6.3 (Bus Terminal Boarding Access)"
+    },
+    {
+      "number": 17,
+      "type": "BD",
+      "question_stem": "The bus terminal contains both transportation occupancy (bus bays, waiting areas) and commercial occupancy (restaurants, shops). What fire separation requirement applies between these two occupancy types?",
+      "options": ["No separation required; same occupancy type", "2-hour fire-rated wall; separate stairwells required", "1-hour fire-rated wall minimum; monitored separation acceptable", "Sprinkler system only; fire walls not required"],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Mixed occupancy requires a minimum 1-hour fire-rated separation wall between transportation (Group T-1) and commercial (Group C-1/C-2) areas per NIPF/Fire Code provisions. Monitored fire barriers may be permitted with automatic closure systems in some codes.",
+        "distractor_0": "Incorrect; mixed occupancy types require fire separation.",
+        "distractor_1": "2-hour separation is more stringent than required for this occupancy mix; applies to higher-hazard combinations.",
+        "distractor_2": "This is the correct answer.",
+        "distractor_3": "Sprinkler system alone does not satisfy fire separation requirements; walls are mandatory.",
+        "takeaway": "Mixed occupancy (transportation + commercial) requires ≥1-hour fire-rated wall."
+      },
+      "solution_steps": ["Identify occupancy types: Transportation (bus bays) and Commercial (restaurants)", "Reference NIPF / Fire Code for mixed occupancy", "Locate separation requirement: 1-hour fire-rated wall minimum", "Confirm: monitored systems may allow reduction in some jurisdictions"],
+      "code_citation": "NIPF (National Fire Code) / IRR, Chapter 6 (Mixed Occupancy Separation)"
+    },
+    {
+      "number": 18,
+      "type": "SC",
+      "question_stem": "For a 4-storey bus terminal with 45m E-W span and heavy bus-loading requirements, what structural system is most appropriate?",
+      "options": ["Reinforced concrete flat slab throughout", "Steel moment-resisting frame with long-span trusses", "Lightweight wood truss system", "Unreinforced masonry load-bearing walls"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Steel moment-resisting frames with long-span trusses or space frames are ideal for 45m spans and heavy concentrated bus loads. Steel handles dynamic loading, allows large open spaces for bus maneuvering, and spans efficiently. This supports both the bus platform (ground level) and upper floors.",
+        "distractor_0": "Reinforced concrete flat slabs work but create heavier dead load and require more intermediate columns, reducing bus parking efficiency.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "Wood cannot support heavy bus loading or 45m spans safely.",
+        "distractor_3": "Unreinforced masonry is unsuitable for contemporary terminals; does not support modern seismic and lateral-load requirements.",
+        "takeaway": "Long-span terminal buildings require steel trusses/moment frames for efficiency and safety."
+      },
+      "solution_steps": ["Identify span requirement: 45m E-W (buildable width)", "Identify loading: heavy bus loads (20 bays × 12-ton buses)", "Identify occupancy: Transportation with high dynamic loads", "Recommend: steel moment-resisting frame + long-span trusses", "Confirm: supports open floor plates and bus maneuvering"],
+      "code_citation": "NSCP (National Structural Code of the Philippines), Chapter 3 (Structural Systems)"
+    },
+    {
+      "number": 19,
+      "type": "AI",
+      "question_stem": "In the passenger waiting area of the bus terminal, what seating dimension must be provided per accessibility standards? (Measure: depth of seat from back of backrest to leading edge of seat cushion.)",
+      "options": ["35cm minimum", "45cm minimum", "55cm minimum", "65cm minimum"],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BP 344 and accessibility standards require a minimum seat depth of 45cm (approximately 18 inches). This dimension accommodates thigh support and comfort for most users, including persons of various sizes and those with mobility limitations.",
+        "distractor_0": "35cm is too shallow; insufficient thigh support for longer occupancy periods in a waiting area.",
+        "distractor_1": "This is the correct answer.",
+        "distractor_2": "55cm is unnecessarily deep and wastes space; not the minimum required.",
+        "distractor_3": "65cm is excessively deep; not a standard requirement.",
+        "takeaway": "Accessible waiting area seating depth = 45cm minimum per BP 344."
+      },
+      "solution_steps": ["Reference BP 344 (Philippine Accessibility Code)", "Locate seating provisions", "Identify seat depth requirement: 45cm minimum", "Apply to waiting area design"],
+      "code_citation": "BP 344, Section 3.6.1 (Seating Specifications)"
+    },
+    {
+      "number": 20,
+      "type": "ES",
+      "question_stem": "The bus terminal requires a concrete loading platform for baggage handling. The platform measures 50m (E-W) × 12m (N-S) × 0.30m (thickness). Assuming concrete density = 2400 kg/m³, what is the total concrete volume and weight?",
+      "options": ["180 cubic meters; 432 metric tons", "200 cubic meters; 480 metric tons", "150 cubic meters; 360 metric tons", "240 cubic meters; 576 metric tons"],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Volume = 50m × 12m × 0.30m = 180 cubic meters. Weight = 180 m³ × 2400 kg/m³ = 432,000 kg = 432 metric tons. This calculation supports material procurement and structural design for the platform.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "200 cubic meters results from rounding or using wrong dimensions (e.g., 50 × 12 × 0.33).",
+        "distractor_2": "150 cubic meters results from using 0.25m thickness instead of 0.30m.",
+        "distractor_3": "240 cubic meters results from using 0.40m thickness or miscalculating dimensions.",
+        "takeaway": "Platform concrete volume = length × width × thickness; weight = volume × density."
+      },
+      "solution_steps": ["Identify platform dimensions: 50m × 12m × 0.30m", "Calculate volume: 50 × 12 × 0.30 = 180 m³", "Identify concrete density: 2400 kg/m³", "Calculate weight: 180 × 2400 = 432,000 kg = 432 metric tons"],
+      "code_citation": "NSCP, Chapter 4 (Concrete Design Specifications)"
+    }
+  ]
+}

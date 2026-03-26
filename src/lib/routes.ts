@@ -6,9 +6,10 @@ import {
   Exam,
   GearSix,
   Globe,
-
+  Cards,
   FileText,
   Path,
+  Users,
 } from '@phosphor-icons/react/dist/ssr'
 
 export type NavGroup = 'learn' | 'practice' | 'data'
@@ -34,6 +35,8 @@ export interface RouteConfig {
   group?: NavGroup
 }
 
+export const RESULTS_DAY = '/dashboard/results-day'
+
 /**
  * Single source of truth for dashboard routes: titles and sidebar metadata.
  */
@@ -42,6 +45,10 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     path: '/dashboard',
     title: 'Dashboard',
     icon: SquaresFour,
+  },
+  {
+    path: '/dashboard/area-c',
+    title: 'Design',
   },
   {
     path: '/dashboard/wiki',
@@ -57,10 +64,30 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'practice',
   },
   {
+    path: '/dashboard/dae-mode',
+    title: 'DAE Maintenance Mode',
+    sidebarLabel: 'DAE Mode',
+    group: 'practice',
+  },
+  {
     path: '/dashboard/camptrails',
     title: 'Camp Trail',
     icon: Path,
     group: 'practice',
+  },
+  {
+    path: '/dashboard/pods',
+    title: 'Study Pods',
+    sidebarLabel: 'Study Pods',
+    icon: Users,
+    group: 'practice',
+  },
+  {
+    path: '/dashboard/flash',
+    title: 'ALE Numbers Flash',
+    sidebarLabel: 'Flash Cards',
+    icon: Cards,
+    group: 'learn',
   },
   {
     path: '/dashboard/notes',
@@ -79,6 +106,29 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     title: 'Analytics',
     icon: ChartBar,
     group: 'data',
+  },
+  {
+    path: '/dashboard/cram-card',
+    title: 'Cram Card',
+    group: 'data',
+  },
+  {
+    path: '/dashboard/professional',
+    title: 'Professional Reference',
+    sidebarLabel: 'Professional Reference',
+  },
+  {
+    path: '/dashboard/studio',
+    title: 'Studio Mode',
+  },
+  {
+    path: '/dashboard/notifications',
+    title: 'Notifications',
+  },
+  {
+    path: '/dashboard/code-updates',
+    title: 'Code Updates',
+    sidebarLabel: 'Code Updates',
   },
   {
     path: '/dashboard/settings',
@@ -100,6 +150,8 @@ const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/testing/', title: 'Testing & Review' },
   { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
+  { prefix: '/dashboard/flash/', title: 'ALE Numbers Flash' },
+  { prefix: '/dashboard/pods/', title: 'Study Pods' },
 ]
 
 export const getPageTitle = (pathname: string): string => {

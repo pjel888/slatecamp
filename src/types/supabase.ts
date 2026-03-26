@@ -128,16 +128,19 @@ export type Database = {
       camp_trails: {
         Row: {
           created_at: string
+          daily_time_estimate_minutes: number
           description: string | null
           discipline_id: string
           duration_days: number
           intensity: Database["public"]["Enums"]["trail_intensity"] | null
           is_featured: boolean
+          is_free: boolean
           is_published: boolean
           name: string
           recommended_max_score: number | null
           recommended_min_score: number | null
           slug: string
+          subjects_covered: string[] | null
           total_steps: number
           trail_id: string
           trail_type: Database["public"]["Enums"]["trail_type"]
@@ -145,16 +148,19 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          daily_time_estimate_minutes?: number
           description?: string | null
           discipline_id: string
           duration_days: number
           intensity?: Database["public"]["Enums"]["trail_intensity"] | null
           is_featured?: boolean
+          is_free?: boolean
           is_published?: boolean
           name: string
           recommended_max_score?: number | null
           recommended_min_score?: number | null
           slug: string
+          subjects_covered?: string[] | null
           total_steps?: number
           trail_id?: string
           trail_type: Database["public"]["Enums"]["trail_type"]
@@ -162,16 +168,19 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          daily_time_estimate_minutes?: number
           description?: string | null
           discipline_id?: string
           duration_days?: number
           intensity?: Database["public"]["Enums"]["trail_intensity"] | null
           is_featured?: boolean
+          is_free?: boolean
           is_published?: boolean
           name?: string
           recommended_max_score?: number | null
           recommended_min_score?: number | null
           slug?: string
+          subjects_covered?: string[] | null
           total_steps?: number
           trail_id?: string
           trail_type?: Database["public"]["Enums"]["trail_type"]
@@ -229,6 +238,399 @@ export type Database = {
           starting_score?: number | null
           testimonial_id?: string
           user_id?: string | null
+        }
+        Relationships: []
+      }
+      ceo_cash_balance_entries: {
+        Row: {
+          amount_php: number
+          balance_date: string
+          created_at: string
+          created_by: string
+          id: string
+          notes: string | null
+        }
+        Insert: {
+          amount_php: number
+          balance_date: string
+          created_at?: string
+          created_by: string
+          id?: string
+          notes?: string | null
+        }
+        Update: {
+          amount_php?: number
+          balance_date?: string
+          created_at?: string
+          created_by?: string
+          id?: string
+          notes?: string | null
+        }
+        Relationships: []
+      }
+      ceo_financial_entries: {
+        Row: {
+          amount_php: number
+          category: string
+          created_at: string
+          created_by: string
+          description: string | null
+          entry_date: string
+          entry_type: Database["public"]["Enums"]["financial_entry_type"]
+          id: string
+          is_recurring: boolean
+          updated_at: string
+        }
+        Insert: {
+          amount_php: number
+          category: string
+          created_at?: string
+          created_by: string
+          description?: string | null
+          entry_date: string
+          entry_type: Database["public"]["Enums"]["financial_entry_type"]
+          id?: string
+          is_recurring?: boolean
+          updated_at?: string
+        }
+        Update: {
+          amount_php?: number
+          category?: string
+          created_at?: string
+          created_by?: string
+          description?: string | null
+          entry_date?: string
+          entry_type?: Database["public"]["Enums"]["financial_entry_type"]
+          id?: string
+          is_recurring?: boolean
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      ceo_gate_status: {
+        Row: {
+          created_at: string
+          created_by: string
+          entered_at: string
+          exit_conditions_met: Json
+          gate_number: number
+          id: string
+          notes: string | null
+        }
+        Insert: {
+          created_at?: string
+          created_by: string
+          entered_at?: string
+          exit_conditions_met?: Json
+          gate_number: number
+          id?: string
+          notes?: string | null
+        }
+        Update: {
+          created_at?: string
+          created_by?: string
+          entered_at?: string
+          exit_conditions_met?: Json
+          gate_number?: number
+          id?: string
+          notes?: string | null
+        }
+        Relationships: []
+      }
+      ceo_team_members: {
+        Row: {
+          created_at: string
+          department: Database["public"]["Enums"]["team_department"]
+          display_name: string
+          end_date: string | null
+          id: string
+          monthly_cost_php: number | null
+          role_title: string
+          start_date: string
+          system_role: Database["public"]["Enums"]["system_role_type"]
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          department: Database["public"]["Enums"]["team_department"]
+          display_name: string
+          end_date?: string | null
+          id?: string
+          monthly_cost_php?: number | null
+          role_title: string
+          start_date: string
+          system_role?: Database["public"]["Enums"]["system_role_type"]
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          department?: Database["public"]["Enums"]["team_department"]
+          display_name?: string
+          end_date?: string | null
+          id?: string
+          monthly_cost_php?: number | null
+          role_title?: string
+          start_date?: string
+          system_role?: Database["public"]["Enums"]["system_role_type"]
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      code_updates: {
+        Row: {
+          ale_id: string | null
+          effective_date: string | null
+          is_ale_testable: boolean
+          new_value: string | null
+          previous_value: string | null
+          published_at: string
+          summary: string
+          update_id: string
+        }
+        Insert: {
+          ale_id?: string | null
+          effective_date?: string | null
+          is_ale_testable?: boolean
+          new_value?: string | null
+          previous_value?: string | null
+          published_at?: string
+          summary: string
+          update_id?: string
+        }
+        Update: {
+          ale_id?: string | null
+          effective_date?: string | null
+          is_ale_testable?: boolean
+          new_value?: string | null
+          previous_value?: string | null
+          published_at?: string
+          summary?: string
+          update_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "code_updates_ale_id_fkey"
+            columns: ["ale_id"]
+            isOneToOne: false
+            referencedRelation: "taxonomy_tree"
+            referencedColumns: ["ale_id"]
+          },
+        ]
+      }
+      design_problem_sessions: {
+        Row: {
+          checklist_completion: Json | null
+          completed_at: string | null
+          problem_id: string
+          self_assessment_score: number | null
+          session_id: string
+          started_at: string
+          time_elapsed_seconds: number | null
+          user_id: string
+        }
+        Insert: {
+          checklist_completion?: Json | null
+          completed_at?: string | null
+          problem_id: string
+          self_assessment_score?: number | null
+          session_id?: string
+          started_at?: string
+          time_elapsed_seconds?: number | null
+          user_id: string
+        }
+        Update: {
+          checklist_completion?: Json | null
+          completed_at?: string | null
+          problem_id?: string
+          self_assessment_score?: number | null
+          session_id?: string
+          started_at?: string
+          time_elapsed_seconds?: number | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "design_problem_sessions_problem_id_fkey"
+            columns: ["problem_id"]
+            isOneToOne: false
+            referencedRelation: "design_problems"
+            referencedColumns: ["problem_id"]
+          },
+        ]
+      }
+      design_problems: {
+        Row: {
+          brief: string
+          building_type: string
+          code_references: string[] | null
+          created_at: string
+          difficulty: number | null
+          is_published: boolean
+          problem_id: string
+          program: Json
+          site_data: Json
+          time_limit_minutes: number | null
+          title: string
+        }
+        Insert: {
+          brief: string
+          building_type: string
+          code_references?: string[] | null
+          created_at?: string
+          difficulty?: number | null
+          is_published?: boolean
+          problem_id?: string
+          program?: Json
+          site_data?: Json
+          time_limit_minutes?: number | null
+          title: string
+        }
+        Update: {
+          brief?: string
+          building_type?: string
+          code_references?: string[] | null
+          created_at?: string
+          difficulty?: number | null
+          is_published?: boolean
+          problem_id?: string
+          program?: Json
+          site_data?: Json
+          time_limit_minutes?: number | null
+          title?: string
+        }
+        Relationships: []
+      }
+      design_questions: {
+        Row: {
+          bloom_level: string | null
+          code_citation: string | null
+          correct_answer_index: number
+          created_at: string
+          difficulty: number | null
+          is_trap_question: boolean
+          number: number
+          options: Json
+          question_id: string
+          question_stem: string
+          rationale: Json | null
+          scenario_id: string
+          solution_steps: string[]
+          type: Database["public"]["Enums"]["design_question_type"]
+          updated_at: string
+          wiki_ref: string | null
+        }
+        Insert: {
+          bloom_level?: string | null
+          code_citation?: string | null
+          correct_answer_index: number
+          created_at?: string
+          difficulty?: number | null
+          is_trap_question?: boolean
+          number: number
+          options?: Json
+          question_id?: string
+          question_stem: string
+          rationale?: Json | null
+          scenario_id: string
+          solution_steps?: string[]
+          type: Database["public"]["Enums"]["design_question_type"]
+          updated_at?: string
+          wiki_ref?: string | null
+        }
+        Update: {
+          bloom_level?: string | null
+          code_citation?: string | null
+          correct_answer_index?: number
+          created_at?: string
+          difficulty?: number | null
+          is_trap_question?: boolean
+          number?: number
+          options?: Json
+          question_id?: string
+          question_stem?: string
+          rationale?: Json | null
+          scenario_id?: string
+          solution_steps?: string[]
+          type?: Database["public"]["Enums"]["design_question_type"]
+          updated_at?: string
+          wiki_ref?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "design_questions_scenario_fkey"
+            columns: ["scenario_id"]
+            isOneToOne: false
+            referencedRelation: "design_scenarios"
+            referencedColumns: ["scenario_id"]
+          },
+        ]
+      }
+      design_scenarios: {
+        Row: {
+          brief: string | null
+          building_type: string
+          code_references: string[]
+          computation_sheet: Json | null
+          created_at: string
+          difficulty: number
+          hidden_traps: Json | null
+          is_published: boolean
+          occupancy_category: Database["public"]["Enums"]["design_occupancy_category"]
+          program: Json | null
+          question_count: number
+          scenario_code: string
+          scenario_id: string
+          site_data: Json | null
+          time_limit_minutes: number | null
+          title: string
+          trap_count: number
+          updated_at: string
+          zone_code: string
+        }
+        Insert: {
+          brief?: string | null
+          building_type: string
+          code_references?: string[]
+          computation_sheet?: Json | null
+          created_at?: string
+          difficulty: number
+          hidden_traps?: Json | null
+          is_published?: boolean
+          occupancy_category: Database["public"]["Enums"]["design_occupancy_category"]
+          program?: Json | null
+          question_count?: number
+          scenario_code: string
+          scenario_id?: string
+          site_data?: Json | null
+          time_limit_minutes?: number | null
+          title: string
+          trap_count?: number
+          updated_at?: string
+          zone_code: string
+        }
+        Update: {
+          brief?: string | null
+          building_type?: string
+          code_references?: string[]
+          computation_sheet?: Json | null
+          created_at?: string
+          difficulty?: number
+          hidden_traps?: Json | null
+          is_published?: boolean
+          occupancy_category?: Database["public"]["Enums"]["design_occupancy_category"]
+          program?: Json | null
+          question_count?: number
+          scenario_code?: string
+          scenario_id?: string
+          site_data?: Json | null
+          time_limit_minutes?: number | null
+          title?: string
+          trap_count?: number
+          updated_at?: string
+          zone_code?: string
         }
         Relationships: []
       }
@@ -568,6 +970,123 @@ export type Database = {
         }
         Relationships: []
       }
+      notification_preferences: {
+        Row: {
+          billing: boolean
+          blindspot: boolean
+          campfire: boolean
+          coaching_tips: boolean
+          content_updates: boolean
+          created_at: string
+          daily_digest: boolean
+          id: string
+          milestones: boolean
+          quiet_hours_end: string | null
+          quiet_hours_start: string | null
+          score_changes: boolean
+          trail_ready: boolean
+          updated_at: string
+          user_id: string
+          weekly_digest: boolean
+        }
+        Insert: {
+          billing?: boolean
+          blindspot?: boolean
+          campfire?: boolean
+          coaching_tips?: boolean
+          content_updates?: boolean
+          created_at?: string
+          daily_digest?: boolean
+          id?: string
+          milestones?: boolean
+          quiet_hours_end?: string | null
+          quiet_hours_start?: string | null
+          score_changes?: boolean
+          trail_ready?: boolean
+          updated_at?: string
+          user_id: string
+          weekly_digest?: boolean
+        }
+        Update: {
+          billing?: boolean
+          blindspot?: boolean
+          campfire?: boolean
+          coaching_tips?: boolean
+          content_updates?: boolean
+          created_at?: string
+          daily_digest?: boolean
+          id?: string
+          milestones?: boolean
+          quiet_hours_end?: string | null
+          quiet_hours_start?: string | null
+          score_changes?: boolean
+          trail_ready?: boolean
+          updated_at?: string
+          user_id?: string
+          weekly_digest?: boolean
+        }
+        Relationships: []
+      }
+      notifications: {
+        Row: {
+          body: string
+          created_at: string
+          id: string
+          metadata: Json
+          read_at: string | null
+          title: string
+          type: Database["public"]["Enums"]["notification_type"]
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          body: string
+          created_at?: string
+          id?: string
+          metadata?: Json
+          read_at?: string | null
+          title: string
+          type: Database["public"]["Enums"]["notification_type"]
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          body?: string
+          created_at?: string
+          id?: string
+          metadata?: Json
+          read_at?: string | null
+          title?: string
+          type?: Database["public"]["Enums"]["notification_type"]
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      oath_taking_schedules: {
+        Row: {
+          created_at: string
+          oath_date: string
+          region: string
+          schedule_id: string
+          venue: string | null
+        }
+        Insert: {
+          created_at?: string
+          oath_date: string
+          region: string
+          schedule_id?: string
+          venue?: string | null
+        }
+        Update: {
+          created_at?: string
+          oath_date?: string
+          region?: string
+          schedule_id?: string
+          venue?: string | null
+        }
+        Relationships: []
+      }
       organization_members: {
         Row: {
           id: string
@@ -633,6 +1152,32 @@ export type Database = {
         }
         Relationships: []
       }
+      pod_members: {
+        Row: {
+          joined_at: string
+          pod_id: string
+          user_id: string
+        }
+        Insert: {
+          joined_at?: string
+          pod_id: string
+          user_id: string
+        }
+        Update: {
+          joined_at?: string
+          pod_id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pod_members_pod_id_fkey"
+            columns: ["pod_id"]
+            isOneToOne: false
+            referencedRelation: "study_pods"
+            referencedColumns: ["pod_id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           account_mode: string | null
@@ -651,6 +1196,7 @@ export type Database = {
           preferred_study_window: string | null
           previous_exam_subjects_struggled: Json | null
           reviewer_type: string | null
+          role: string | null
           school_or_institution: string | null
           target_exam_date: string | null
           updated_at: string | null
@@ -673,6 +1219,7 @@ export type Database = {
           preferred_study_window?: string | null
           previous_exam_subjects_struggled?: Json | null
           reviewer_type?: string | null
+          role?: string | null
           school_or_institution?: string | null
           target_exam_date?: string | null
           updated_at?: string | null
@@ -695,6 +1242,7 @@ export type Database = {
           preferred_study_window?: string | null
           previous_exam_subjects_struggled?: Json | null
           reviewer_type?: string | null
+          role?: string | null
           school_or_institution?: string | null
           target_exam_date?: string | null
           updated_at?: string | null
@@ -713,6 +1261,7 @@ export type Database = {
       questions: {
         Row: {
           application_context: string | null
+          bloom_level: string | null
           code_citation: string | null
           correct_option_id: string
           created_at: string
@@ -720,19 +1269,24 @@ export type Database = {
           difficulty_rating: number | null
           discrimination_rating: number | null
           explanation: string | null
+          irt_calibrated_at: string | null
+          irt_difficulty: number | null
+          irt_discrimination: number | null
+          irt_guessing: number | null
           is_assessment: boolean | null
           model_id: string | null
           options: Json
           practice_context: string[] | null
           prompt_image_url: string | null
           question_id: string
-          rationale: string | null
+          rationale: Json | null
           text: string
           topic_id: string
           updated_at: string
         }
         Insert: {
           application_context?: string | null
+          bloom_level?: string | null
           code_citation?: string | null
           correct_option_id: string
           created_at?: string
@@ -740,19 +1294,24 @@ export type Database = {
           difficulty_rating?: number | null
           discrimination_rating?: number | null
           explanation?: string | null
+          irt_calibrated_at?: string | null
+          irt_difficulty?: number | null
+          irt_discrimination?: number | null
+          irt_guessing?: number | null
           is_assessment?: boolean | null
           model_id?: string | null
           options?: Json
           practice_context?: string[] | null
           prompt_image_url?: string | null
           question_id?: string
-          rationale?: string | null
+          rationale?: Json | null
           text: string
           topic_id: string
           updated_at?: string
         }
         Update: {
           application_context?: string | null
+          bloom_level?: string | null
           code_citation?: string | null
           correct_option_id?: string
           created_at?: string
@@ -760,13 +1319,17 @@ export type Database = {
           difficulty_rating?: number | null
           discrimination_rating?: number | null
           explanation?: string | null
+          irt_calibrated_at?: string | null
+          irt_difficulty?: number | null
+          irt_discrimination?: number | null
+          irt_guessing?: number | null
           is_assessment?: boolean | null
           model_id?: string | null
           options?: Json
           practice_context?: string[] | null
           prompt_image_url?: string | null
           question_id?: string
-          rationale?: string | null
+          rationale?: Json | null
           text?: string
           topic_id?: string
           updated_at?: string
@@ -1006,6 +1569,30 @@ export type Database = {
           },
         ]
       }
+      study_pods: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          max_members: number
+          pod_id: string
+          pod_name: string | null
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          max_members?: number
+          pod_id?: string
+          pod_name?: string | null
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          max_members?: number
+          pod_id?: string
+          pod_name?: string | null
+        }
+        Relationships: []
+      }
       taxonomy_cross_references: {
         Row: {
           created_at: string
@@ -1149,6 +1736,7 @@ export type Database = {
           parent_id: string | null
           prc_area: string | null
           slug: string | null
+          sort_order: number | null
           subject_area: string
           subject_weight_within_area_pct: number | null
           three_d_lab_linked: boolean
@@ -1179,6 +1767,7 @@ export type Database = {
           parent_id?: string | null
           prc_area?: string | null
           slug?: string | null
+          sort_order?: number | null
           subject_area: string
           subject_weight_within_area_pct?: number | null
           three_d_lab_linked?: boolean
@@ -1209,6 +1798,7 @@ export type Database = {
           parent_id?: string | null
           prc_area?: string | null
           slug?: string | null
+          sort_order?: number | null
           subject_area?: string
           subject_weight_within_area_pct?: number | null
           three_d_lab_linked?: boolean
@@ -1345,26 +1935,38 @@ export type Database = {
       }
       trail_day_completions: {
         Row: {
+          all_steps_completed: boolean
           completed_at: string
           day_completion_id: string
           day_id: string
+          day_number: number | null
           enrollment_id: string
+          mastery_after: Json | null
+          mastery_before: Json | null
           readiness_score_at_completion: number | null
           user_id: string
         }
         Insert: {
+          all_steps_completed?: boolean
           completed_at?: string
           day_completion_id?: string
           day_id: string
+          day_number?: number | null
           enrollment_id: string
+          mastery_after?: Json | null
+          mastery_before?: Json | null
           readiness_score_at_completion?: number | null
           user_id: string
         }
         Update: {
+          all_steps_completed?: boolean
           completed_at?: string
           day_completion_id?: string
           day_id?: string
+          day_number?: number | null
           enrollment_id?: string
+          mastery_after?: Json | null
+          mastery_before?: Json | null
           readiness_score_at_completion?: number | null
           user_id?: string
         }
@@ -1392,6 +1994,11 @@ export type Database = {
           day_number: number
           description: string | null
           estimated_minutes: number | null
+          is_phase_transition: boolean
+          is_rest_day: boolean
+          phase_name: string | null
+          subject_color: string | null
+          subject_focus: string | null
           title: string
           trail_id: string
         }
@@ -1401,6 +2008,11 @@ export type Database = {
           day_number: number
           description?: string | null
           estimated_minutes?: number | null
+          is_phase_transition?: boolean
+          is_rest_day?: boolean
+          phase_name?: string | null
+          subject_color?: string | null
+          subject_focus?: string | null
           title: string
           trail_id: string
         }
@@ -1410,6 +2022,11 @@ export type Database = {
           day_number?: number
           description?: string | null
           estimated_minutes?: number | null
+          is_phase_transition?: boolean
+          is_rest_day?: boolean
+          phase_name?: string | null
+          subject_color?: string | null
+          subject_focus?: string | null
           title?: string
           trail_id?: string
         }
@@ -1432,6 +2049,7 @@ export type Database = {
           difficulty_max: number | null
           difficulty_min: number | null
           estimated_minutes: number | null
+          is_computation_heavy: boolean
           is_optional: boolean
           lab_phase: string | null
           model_id: string | null
@@ -1451,6 +2069,7 @@ export type Database = {
           difficulty_max?: number | null
           difficulty_min?: number | null
           estimated_minutes?: number | null
+          is_computation_heavy?: boolean
           is_optional?: boolean
           lab_phase?: string | null
           model_id?: string | null
@@ -1470,6 +2089,7 @@ export type Database = {
           difficulty_max?: number | null
           difficulty_min?: number | null
           estimated_minutes?: number | null
+          is_computation_heavy?: boolean
           is_optional?: boolean
           lab_phase?: string | null
           model_id?: string | null
@@ -1914,7 +2534,6 @@ export type Database = {
           review_interval_days: number | null
           teach_back_attempted: boolean | null
           teach_back_gap_count: number | null
-          theta: number
           topic_id: string
           total_attempts: number
           total_correct: number
@@ -1936,7 +2555,6 @@ export type Database = {
           review_interval_days?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
-          theta?: number
           topic_id: string
           total_attempts?: number
           total_correct?: number
@@ -1958,7 +2576,6 @@ export type Database = {
           review_interval_days?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
-          theta?: number
           topic_id?: string
           total_attempts?: number
           total_correct?: number
@@ -2005,8 +2622,120 @@ export type Database = {
         }
         Relationships: []
       }
+      user_question_responses: {
+        Row: {
+          answered_at: string
+          confidence_level: number | null
+          is_correct: boolean
+          question_id: string
+          response_id: string
+          selected_option: string | null
+          session_id: string | null
+          time_taken_ms: number | null
+          user_id: string
+        }
+        Insert: {
+          answered_at?: string
+          confidence_level?: number | null
+          is_correct: boolean
+          question_id: string
+          response_id?: string
+          selected_option?: string | null
+          session_id?: string | null
+          time_taken_ms?: number | null
+          user_id: string
+        }
+        Update: {
+          answered_at?: string
+          confidence_level?: number | null
+          is_correct?: boolean
+          question_id?: string
+          response_id?: string
+          selected_option?: string | null
+          session_id?: string | null
+          time_taken_ms?: number | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_question_responses_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["question_id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          id: string
+          role: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          role: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          role?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_srs_cards: {
+        Row: {
+          created_at: string
+          ease_factor: number
+          id: string
+          interval_days: number
+          last_reviewed_at: string | null
+          next_review_at: string
+          node_id: string
+          quality_last: number | null
+          repetitions: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          ease_factor?: number
+          id?: string
+          interval_days?: number
+          last_reviewed_at?: string | null
+          next_review_at?: string
+          node_id: string
+          quality_last?: number | null
+          repetitions?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          ease_factor?: number
+          id?: string
+          interval_days?: number
+          last_reviewed_at?: string | null
+          next_review_at?: string
+          node_id?: string
+          quality_last?: number | null
+          repetitions?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       user_subscriptions: {
         Row: {
+          amount: number | null
+          cancelled_at: string | null
           converted_from_source: string | null
           created_at: string
           email_notifications_enabled: boolean | null
@@ -2026,6 +2755,8 @@ export type Database = {
           user_id: string
         }
         Insert: {
+          amount?: number | null
+          cancelled_at?: string | null
           converted_from_source?: string | null
           created_at?: string
           email_notifications_enabled?: boolean | null
@@ -2045,6 +2776,8 @@ export type Database = {
           user_id: string
         }
         Update: {
+          amount?: number | null
+          cancelled_at?: string | null
           converted_from_source?: string | null
           created_at?: string
           email_notifications_enabled?: boolean | null
@@ -2065,13 +2798,56 @@ export type Database = {
         }
         Relationships: []
       }
+      user_theta: {
+        Row: {
+          created_at: string
+          discipline_id: string | null
+          id: string
+          responses_count: number
+          theta: number
+          theta_se: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          discipline_id?: string | null
+          id?: string
+          responses_count?: number
+          theta?: number
+          theta_se?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          discipline_id?: string | null
+          id?: string
+          responses_count?: number
+          theta?: number
+          theta_se?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_theta_discipline_id_fkey"
+            columns: ["discipline_id"]
+            isOneToOne: false
+            referencedRelation: "disciplines"
+            referencedColumns: ["discipline_id"]
+          },
+        ]
+      }
       user_trail_enrollments: {
         Row: {
+          abandoned_at: string | null
           completed_at: string | null
           created_at: string
           current_day: number
           current_streak: number
           days_completed: number
+          days_completed_at_abandon: number | null
           enrollment_id: string
           grace_days_used_this_week: number
           last_activity_at: string | null
@@ -2090,11 +2866,13 @@ export type Database = {
           user_id: string
         }
         Insert: {
+          abandoned_at?: string | null
           completed_at?: string | null
           created_at?: string
           current_day?: number
           current_streak?: number
           days_completed?: number
+          days_completed_at_abandon?: number | null
           enrollment_id?: string
           grace_days_used_this_week?: number
           last_activity_at?: string | null
@@ -2113,11 +2891,13 @@ export type Database = {
           user_id: string
         }
         Update: {
+          abandoned_at?: string | null
           completed_at?: string | null
           created_at?: string
           current_day?: number
           current_streak?: number
           days_completed?: number
+          days_completed_at_abandon?: number | null
           enrollment_id?: string
           grace_days_used_this_week?: number
           last_activity_at?: string | null
@@ -2242,6 +3022,53 @@ export type Database = {
           },
         ]
       }
+      wiki_article_sources: {
+        Row: {
+          article_id: string
+          created_at: string
+          description: string | null
+          is_verified: boolean
+          label: string
+          sort_order: number
+          source_id: string
+          source_type: Database["public"]["Enums"]["taxonomy_source_type"]
+          updated_at: string
+          url: string | null
+        }
+        Insert: {
+          article_id: string
+          created_at?: string
+          description?: string | null
+          is_verified?: boolean
+          label: string
+          sort_order?: number
+          source_id?: string
+          source_type: Database["public"]["Enums"]["taxonomy_source_type"]
+          updated_at?: string
+          url?: string | null
+        }
+        Update: {
+          article_id?: string
+          created_at?: string
+          description?: string | null
+          is_verified?: boolean
+          label?: string
+          sort_order?: number
+          source_id?: string
+          source_type?: Database["public"]["Enums"]["taxonomy_source_type"]
+          updated_at?: string
+          url?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "wiki_article_sources_article_id_fkey"
+            columns: ["article_id"]
+            isOneToOne: false
+            referencedRelation: "wiki_articles"
+            referencedColumns: ["article_id"]
+          },
+        ]
+      }
       wiki_article_taxonomy: {
         Row: {
           article_id: string
@@ -2277,75 +3104,137 @@ export type Database = {
       }
       wiki_articles: {
         Row: {
+          ale_tests_you: string | null
           article_id: string
           content: string
           created_at: string
+          difficulty_label: string | null
+          read_time: string | null
           reviewed_at: string | null
           reviewed_by: string | null
           reviewer_comments: string | null
           slug: string
           status: string | null
+          subject_label: string | null
           title: string
           updated_at: string
+          updated_note: string | null
         }
         Insert: {
+          ale_tests_you?: string | null
           article_id?: string
           content: string
           created_at?: string
+          difficulty_label?: string | null
+          read_time?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
           reviewer_comments?: string | null
           slug: string
           status?: string | null
+          subject_label?: string | null
           title: string
           updated_at?: string
+          updated_note?: string | null
         }
         Update: {
+          ale_tests_you?: string | null
           article_id?: string
           content?: string
           created_at?: string
+          difficulty_label?: string | null
+          read_time?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
           reviewer_comments?: string | null
           slug?: string
           status?: string | null
+          subject_label?: string | null
           title?: string
           updated_at?: string
+          updated_note?: string | null
         }
         Relationships: []
+      }
+      wiki_bookmarks: {
+        Row: {
+          article_id: string
+          bookmark_id: string
+          created_at: string
+          user_id: string
+        }
+        Insert: {
+          article_id: string
+          bookmark_id?: string
+          created_at?: string
+          user_id: string
+        }
+        Update: {
+          article_id?: string
+          bookmark_id?: string
+          created_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "wiki_bookmarks_article_id_fkey"
+            columns: ["article_id"]
+            isOneToOne: false
+            referencedRelation: "wiki_articles"
+            referencedColumns: ["article_id"]
+          },
+        ]
       }
       wiki_ei_prompts: {
         Row: {
           article_id: string
           created_at: string
           insert_after_heading: string
+          is_active: boolean
           node_id: string | null
           options: Json | null
           prompt_id: string
           prompt_text: string
           reveal_text: string
+          reviewed_at: string | null
+          reviewed_by: string | null
+          reviewer_notes: string | null
+          sort_order: number
+          status: string
           updated_at: string
         }
         Insert: {
           article_id: string
           created_at?: string
           insert_after_heading: string
+          is_active?: boolean
           node_id?: string | null
           options?: Json | null
           prompt_id?: string
           prompt_text: string
           reveal_text: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          reviewer_notes?: string | null
+          sort_order?: number
+          status?: string
           updated_at?: string
         }
         Update: {
           article_id?: string
           created_at?: string
           insert_after_heading?: string
+          is_active?: boolean
           node_id?: string | null
           options?: Json | null
           prompt_id?: string
           prompt_text?: string
           reveal_text?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          reviewer_notes?: string | null
+          sort_order?: number
+          status?: string
           updated_at?: string
         }
         Relationships: [
@@ -2372,6 +3261,7 @@ export type Database = {
           response_id: string
           response_text: string | null
           selected_option_index: number | null
+          updated_at: string
           user_id: string
         }
         Insert: {
@@ -2380,6 +3270,7 @@ export type Database = {
           response_id?: string
           response_text?: string | null
           selected_option_index?: number | null
+          updated_at?: string
           user_id: string
         }
         Update: {
@@ -2388,6 +3279,7 @@ export type Database = {
           response_id?: string
           response_text?: string | null
           selected_option_index?: number | null
+          updated_at?: string
           user_id?: string
         }
         Relationships: [
@@ -2402,17 +3294,227 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      mv_acquisition_source_distribution: {
+        Row: {
+          avg_days_to_conversion: number | null
+          conversion_rate: number | null
+          converted_users: number | null
+          source: string | null
+          total_users: number | null
+        }
+        Relationships: []
+      }
+      mv_churn_risk_distribution: {
+        Row: {
+          avg_days_since_session: number | null
+          avg_readiness_score: number | null
+          avg_score_velocity: number | null
+          risk_level: string | null
+          user_count: number | null
+        }
+        Relationships: []
+      }
+      mv_churn_signals: {
+        Row: {
+          affected_users: number | null
+          churn_multiplier: number | null
+          signal_description: string | null
+          signal_key: string | null
+        }
+        Relationships: []
+      }
+      mv_cohort_retention: {
+        Row: {
+          active_users: number | null
+          cohort_month: string | null
+          cohort_size: number | null
+          retention_rate: number | null
+          week_number: number | null
+        }
+        Relationships: []
+      }
+      mv_engagement_snapshot: {
+        Row: {
+          avg_sessions_per_week: number | null
+          avg_streak_length: number | null
+          dau: number | null
+          dau_mau_ratio: number | null
+          mau: number | null
+          snapshot_date: string | null
+          wau: number | null
+        }
+        Relationships: []
+      }
+      mv_monthly_financial_summary: {
+        Row: {
+          category: string | null
+          entry_count: number | null
+          entry_type: string | null
+          has_recurring: boolean | null
+          month: string | null
+          total_amount: number | null
+        }
+        Relationships: []
+      }
+      mv_time_to_value: {
+        Row: {
+          avg_score_at_conversion: number | null
+          avg_sessions_before_conversion: number | null
+          computed_at: string | null
+          diagnostic_completion_rate: number | null
+          free_to_paid_conversion_rate: number | null
+          median_days_to_conversion: number | null
+          median_days_to_first_session: number | null
+        }
+        Relationships: []
+      }
+      user_question_stats: {
+        Row: {
+          avg_time_ms: number | null
+          correct_count: number | null
+          first_answered_at: string | null
+          last_answered_at: string | null
+          last_was_correct: boolean | null
+          question_id: string | null
+          total_attempts: number | null
+          user_id: string | null
+          wrong_count: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_question_responses_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["question_id"]
+          },
+        ]
+      }
+      v_current_gate: {
+        Row: {
+          created_at: string | null
+          created_by: string | null
+          entered_at: string | null
+          exit_conditions_met: Json | null
+          gate_number: number | null
+          id: string | null
+          notes: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
-      [_ in never]: never
+      can_review_content: { Args: never; Returns: boolean }
+      check_user_admin_role: { Args: { p_user_id: string }; Returns: boolean }
+      compute_monthly_burn: { Args: { target_month?: string }; Returns: number }
+      compute_monthly_churn_rate: { Args: never; Returns: number }
+      compute_mrr: { Args: never; Returns: number }
+      compute_runway_months: { Args: never; Returns: number }
+      create_notification: {
+        Args: {
+          p_body: string
+          p_metadata?: Json
+          p_title: string
+          p_type: Database["public"]["Enums"]["notification_type"]
+          p_user_id: string
+        }
+        Returns: string
+      }
+      get_review_deck: {
+        Args: { p_limit?: number; p_user_id: string }
+        Returns: {
+          ease_factor: number
+          id: string
+          interval_days: number
+          last_reviewed_at: string
+          next_review_at: string
+          node_id: string
+          overdue_days: number
+          quality_last: number
+          repetitions: number
+        }[]
+      }
+      get_review_due_count: { Args: { p_user_id: string }; Returns: number }
+      has_admin_role: { Args: never; Returns: boolean }
+      is_ceo_or_super_admin: { Args: never; Returns: boolean }
+      is_super_admin: { Args: never; Returns: boolean }
+      refresh_ceo_materialized_views: { Args: never; Returns: undefined }
+      select_next_item: {
+        Args: {
+          p_discipline_id: string
+          p_session_id: string
+          p_target_p?: number
+          p_topic_id?: string
+          p_user_id: string
+        }
+        Returns: {
+          fisher_information: number
+          irt_difficulty: number
+          irt_discrimination: number
+          irt_guessing: number
+          question_id: string
+        }[]
+      }
+      update_theta: {
+        Args: {
+          p_discipline_id: string
+          p_is_correct: boolean
+          p_item_difficulty: number
+          p_item_discrimination: number
+          p_user_id: string
+        }
+        Returns: {
+          responses_count: number
+          theta: number
+          theta_se: number
+        }[]
+      }
     }
     Enums: {
       bloom_level_type: "remember" | "understand" | "apply" | "analyze"
+      design_occupancy_category:
+        | "residential"
+        | "commercial"
+        | "institutional"
+        | "industrial"
+        | "mixed_use"
+        | "special"
+      design_question_type:
+        | "DC"
+        | "SP"
+        | "ZN"
+        | "BD"
+        | "ES"
+        | "AI"
+        | "PK"
+        | "SC"
+        | "BP344"
       exam_frequency_level: "low" | "medium" | "high"
+      financial_entry_type: "revenue" | "expense" | "investment"
+      notification_type:
+        | "score_change"
+        | "trail_ready"
+        | "blindspot"
+        | "zone_transition"
+        | "proof_unlocked"
+        | "campfire_story"
+        | "campfire_reply"
+        | "content_update"
+        | "weekly_digest"
+        | "coaching_tip"
+        | "billing"
+        | "system"
       session_status: "in_progress" | "completed" | "abandoned"
       subscription_status: "active" | "cancelled" | "expired" | "trialing"
       subscription_tier: "free" | "pro" | "enterprise"
+      system_role_type:
+        | "ceo"
+        | "super_admin"
+        | "admin"
+        | "lead"
+        | "member"
+        | "consultant"
+        | "viewer"
       taxonomy_node_type:
         | "concept"
         | "code_provision"
@@ -2420,6 +3522,9 @@ export type Database = {
         | "case_study"
         | "person"
         | "building"
+        | "fact"
+        | "professional_standard"
+        | "service_delivery_method"
       taxonomy_source_type:
         | "primary_law"
         | "implementing_rules"
@@ -2427,7 +3532,23 @@ export type Database = {
         | "reference_standard"
         | "prc_syllabus"
         | "heritage_body"
-      test_mode: "camp" | "timed" | "practice"
+      team_department:
+        | "engineering"
+        | "content"
+        | "design"
+        | "marketing"
+        | "operations"
+        | "consulting"
+      test_mode:
+        | "camp"
+        | "timed"
+        | "practice"
+        | "storm"
+        | "chill"
+        | "custom"
+        | "blindspot"
+        | "proof_sim"
+        | "endurance"
       trail_enrollment_status: "active" | "paused" | "completed" | "abandoned"
       trail_intensity:
         | "intensive"
@@ -2571,10 +3692,53 @@ export const Constants = {
   public: {
     Enums: {
       bloom_level_type: ["remember", "understand", "apply", "analyze"],
+      design_occupancy_category: [
+        "residential",
+        "commercial",
+        "institutional",
+        "industrial",
+        "mixed_use",
+        "special",
+      ],
+      design_question_type: [
+        "DC",
+        "SP",
+        "ZN",
+        "BD",
+        "ES",
+        "AI",
+        "PK",
+        "SC",
+        "BP344",
+      ],
       exam_frequency_level: ["low", "medium", "high"],
+      financial_entry_type: ["revenue", "expense", "investment"],
+      notification_type: [
+        "score_change",
+        "trail_ready",
+        "blindspot",
+        "zone_transition",
+        "proof_unlocked",
+        "campfire_story",
+        "campfire_reply",
+        "content_update",
+        "weekly_digest",
+        "coaching_tip",
+        "billing",
+        "system",
+      ],
       session_status: ["in_progress", "completed", "abandoned"],
       subscription_status: ["active", "cancelled", "expired", "trialing"],
       subscription_tier: ["free", "pro", "enterprise"],
+      system_role_type: [
+        "ceo",
+        "super_admin",
+        "admin",
+        "lead",
+        "member",
+        "consultant",
+        "viewer",
+      ],
       taxonomy_node_type: [
         "concept",
         "code_provision",
@@ -2582,6 +3746,9 @@ export const Constants = {
         "case_study",
         "person",
         "building",
+        "fact",
+        "professional_standard",
+        "service_delivery_method",
       ],
       taxonomy_source_type: [
         "primary_law",
@@ -2591,7 +3758,25 @@ export const Constants = {
         "prc_syllabus",
         "heritage_body",
       ],
-      test_mode: ["camp", "timed", "practice"],
+      team_department: [
+        "engineering",
+        "content",
+        "design",
+        "marketing",
+        "operations",
+        "consulting",
+      ],
+      test_mode: [
+        "camp",
+        "timed",
+        "practice",
+        "storm",
+        "chill",
+        "custom",
+        "blindspot",
+        "proof_sim",
+        "endurance",
+      ],
       trail_enrollment_status: ["active", "paused", "completed", "abandoned"],
       trail_intensity: [
         "intensive",
@@ -2612,3 +3797,4 @@ export const Constants = {
     },
   },
 } as const
+

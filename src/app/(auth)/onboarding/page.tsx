@@ -64,6 +64,7 @@ export default async function OnboardingPage() {
     const examDate = formData.get('examDate') as string | null
     const studyWindow = formData.get('studyWindow') as string | null
     const schoolOrInstitution = formData.get('schoolOrInstitution') as string | null
+    const enrolledReviewCenter = (formData.get('enrolledReviewCenter') as string | null) || 'none'
 
     // Deserialise struggled subjects (JSON array of subject names from the client)
     let struggledSubjectNames: string[] = []
@@ -114,6 +115,7 @@ export default async function OnboardingPage() {
       reviewer_type: reviewerType,
       preferred_study_window: studyWindow || 'any',
       onboarding_completed_at: new Date().toISOString(),
+      enrolled_review_center: enrolledReviewCenter,
     }
 
     if (examDate && (reviewerType === 'first_taker' || reviewerType === 'returning_reviewer')) {

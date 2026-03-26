@@ -1,4 +1,4 @@
-import { Lightbulb } from '@phosphor-icons/react/dist/ssr'
+import { Lightbulb } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 

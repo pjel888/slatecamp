@@ -224,7 +224,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
   )
 
   // 9. Build sub_scores JSONB for DB storage
-  const subScoresForDB = {
+  const subScoresForDB: Record<string, any> = {
     ...Object.fromEntries(result.subScores.map(s => [s.ale_id, {
       score: s.score,
       nodeCount: s.nodeCount,
@@ -242,6 +242,49 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
       dayOneScore: result.dayOneScore,
       dayTwoScore: result.dayTwoScore,
     },
+  }
+
+  // 9b. Project Laws & Codes sub-score from cross-referenced nodes.
+  // Laws has is_cross_ref_only=true so it's excluded from the global score,
+  // but we include it in sub_scores for display purposes.
+  const { data: crossRefs } = await supabase
+    .from('taxonomy_cross_references')
+    .select('target_node_id')
+    .eq('relationship_type', 'law_applies_to')
+
+  if (crossRefs && crossRefs.length > 0) {
+    const targetSubtopicIds = [...new Set(crossRefs.map(cr => cr.target_node_id))]
+    const { data: targetLeaves } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id')
+      .in('parent_id', targetSubtopicIds)
+      .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+
+    if (targetLeaves && targetLeaves.length > 0) {
+      const targetLeafIds = new Set(targetLeaves.map(l => l.node_id))
+      // Filter mastery nodes that belong to cross-ref targets
+      const lawsNodes = nodeInputs.filter(n => targetLeafIds.has(n.topic_id))
+      const touchedCount = lawsNodes.length
+      const nodeCount = targetLeafIds.size
+
+      let projectedScore = 0
+      if (touchedCount > 0) {
+        const touchedSum = lawsNodes.reduce((sum, n) => sum + n.current_mastery_weight, 0)
+        projectedScore = Math.round(((touchedSum / nodeCount) * 100) * 10) / 10
+      }
+
+      subScoresForDB['ALE-LAWS'] = {
+        score: projectedScore,
+        nodeCount,
+        touchedCount,
+        greyCount: nodeCount - touchedCount,
+        thinCoverageCount: lawsNodes.filter(n => n.distinct_questions_seen < 5).length,
+        belowFloor: projectedScore < 50,
+        projected: true, // flag indicating this is a cross-ref projection
+      }
+    }
   }
 
   // 10. Write back to user_global_stats

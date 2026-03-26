@@ -10,6 +10,7 @@ export type QuizMode =
   | 'storm'
   | 'fullexam'
   | 'extended'
+  | 'article_review'
 
 export type SessionStatus =
   | 'configuring'
@@ -242,11 +243,40 @@ export interface ReviewQuestionData {
   wrongAnswerExplanation: string | null
 }
 
+export interface QuestionHistoryStats {
+  timesSeen: number
+  timesCorrect: number
+  timesWrong: number
+  lastSeenAt: string | null
+}
+
 export interface ReviewDataResult {
   sessionId: string
   mode: QuizMode
   score: { correct: number; total: number; percent: number }
   questions: ReviewQuestionData[]
+  /** Per-question history keyed by question_id (Pro users only) */
+  questionHistory?: Record<string, QuestionHistoryStats>
+}
+
+// ─── Taxonomy data for topic picker ─────────────────────────────────────────
+
+export interface TaxonomySubject {
+  nodeId: string
+  name: string
+  aleId: string | null
+  masteryWeight: number | null
+  interactionCount: number
+  subtopics: TaxonomySubtopic[]
+}
+
+export interface TaxonomySubtopic {
+  nodeId: string
+  name: string
+  aleId: string | null
+  isLeaf: boolean
+  masteryWeight: number | null
+  interactionCount: number
 }
 
 // ─── Feedback data (for Zustand store) ──────────────────────────────────────

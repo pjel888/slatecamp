@@ -1,0 +1,744 @@
+{
+  "metadata": {
+    "id": "DESIGN-012",
+    "title": "R-2 Socialized Row Housing Development - General Trias, Cavite",
+    "difficulty": 2,
+    "time_limit_minutes": 120,
+    "building_type": "R-2",
+    "scenario_type": "design_control",
+    "created_date": "2026-03-21",
+    "version": "1.0"
+  },
+  "scenario": {
+    "project_name": "Trias Affordable Housing Block A",
+    "location": "General Trias, Cavite",
+    "client_type": "Private Developer (Economic Housing under BP 220)",
+    "site_parameters": {
+      "total_lot_area_sqm": 2000,
+      "lot_dimensions": {
+        "frontage_m": 50,
+        "depth_m": 40
+      },
+      "lot_type": "Inside lot",
+      "zone": "R-2",
+      "adjacent_uses": [
+        "R-2 residential on all sides"
+      ],
+      "topography": "2% slope toward road (south)",
+      "restrictions": [
+        "No easements",
+        "No heritage structures"
+      ]
+    },
+    "development_program": {
+      "building_type": "2-storey row house (Economic Housing)",
+      "total_units": 20,
+      "unit_arrangement": "2 rows of 10 units (linear block arrangement)",
+      "unit_dimensions": {
+        "width_m": 4.5,
+        "depth_m": 12,
+        "area_per_floor_sqm": 54,
+        "total_area_per_unit_sqm": 108
+      },
+      "unit_program": {
+        "ground_floor": [
+          "Living/dining area",
+          "Kitchen",
+          "Toilet and bath",
+          "Service/laundry area"
+        ],
+        "second_floor": [
+          "2 bedrooms",
+          "Toilet and bath"
+        ]
+      },
+      "building_configuration": {
+        "height_m": 6.0,
+        "floors": 2,
+        "construction_type": "CHB with firewall party walls",
+        "firewall_interval": "Between every 4th unit"
+      },
+      "site_planning": {
+        "row_a_location": "South row (facing road)",
+        "row_b_location": "North row (facing interior)",
+        "fire_separation_m": 3,
+        "access_road_location": "Between rows (development road)"
+      }
+    },
+    "design_control_parameters": {
+      "pso_percent": 65,
+      "flar_range": [
+        1.5,
+        2.5
+      ],
+      "bhl_m": 15,
+      "maca_percent": 80,
+      "isa_percent": 15,
+      "usa_percent": 20,
+      "setbacks_6m_height": {
+        "front_m": 4.5,
+        "sides_m": 2.0,
+        "rear_m": 2.0
+      }
+    },
+    "computed_values": {
+      "ambf_from_pso_sqm": 1300,
+      "buildable_area_from_setbacks_sqm": 1541,
+      "governing_ambf_sqm": 1300,
+      "actual_footprint_sqm": 1080,
+      "isa_sqm": 300,
+      "usa_sqm": 400,
+      "tosl_sqm": 700,
+      "tgfa_sqm": 2160,
+      "flar_computed": 1.08,
+      "flar_compliance": "NON-COMPLIANT (below minimum 1.5)"
+    },
+    "regulatory_notes": {
+      "zoning_code": "National Building Code + PD 957 Subdivision Rules",
+      "housing_policy": "BP 220 Economic Housing Program",
+      "firewall_standard": "PD 1096 — Every 4th unit firewall requirement",
+      "accessibility": "BP 344 Accessibility Code (accessible pathway required)"
+    },
+    "traps": [
+      {
+        "trap_id": 1,
+        "title": "FLAR Non-Compliance (Low-Density Housing Trap)",
+        "description": "2-storey development yields FLAR of 1.08, below R-2 minimum of 1.5. Many students ignore FLAR computation for row housing developments and assume compliance. The solution requires recognizing the under-density and computing the 3 floors needed (FLAR = 1.62) to achieve compliance.",
+        "affected_questions": [
+          7,
+          8
+        ]
+      },
+      {
+        "trap_id": 2,
+        "title": "Firewall Interval Requirement (PD 1096 Knowledge)",
+        "description": "Brief description mentions row houses with firewalls, but PD 1096 specifies firewall placement at every 4th unit, not between every unit. Students unfamiliar with this standard may incorrectly assume continuous firewall between all units or no firewall at all.",
+        "affected_questions": [
+          13
+        ]
+      },
+      {
+        "trap_id": 3,
+        "title": "PSO vs Setback-Derived AMBF Confusion",
+        "description": "Setback calculation yields 1,541 sqm buildable area, while PSO yields 1,300 sqm. PSO governs (more restrictive), but students may pick the setback-derived value, leading to incorrect AMBF and subsequent compliance errors.",
+        "affected_questions": [
+          2,
+          4,
+          5
+        ]
+      }
+    ]
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "For an R-2 zone residential development, what is the maximum Percentage Site Occupancy (PSO) allowed?",
+      "options": [
+        "50%",
+        "65%",
+        "80%",
+        "90%"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "R-2 zoning allows a maximum PSO of 65%. This is the standard for low-density residential zones under the National Building Code and IRR guidelines.",
+        "distractor_0": "50% is the PSO for R-1 (very low-density residential). The Trias project is zoned R-2, which permits higher density than R-1.",
+        "distractor_1": "80% is the PSO for R-3 or special economic housing zones with exceptional zoning variance. R-2 standard does not allow 80% PSO.",
+        "distractor_2": "90% is the maximum PSO for high-density zones (C or I) or special socialized housing with specific BP 220 variance approval. Standard R-2 does not allow 90%.",
+        "distractor_3": "",
+        "takeaway": "Know the PSO limits by zone classification: R-1 (50%), R-2 (65%), R-3 (75%), C (80-85%), I (85-90%). For the Trias project, PSO = 65% is the baseline; BP 220 may allow relaxation with variance, but the standard is 65%.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Identify zone: R-2 (low-density residential)",
+        "Reference NBC Table on PSO by zone",
+        "R-2 PSO = 65% (standard)"
+      ],
+      "code_citation": "National Building Code of the Philippines, Table 2.1 (Development Control Parameters by Zone); IRR of PD 957"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "Calculate the Allowable Maximum Building Footprint (AMBF) derived from PSO for the Trias site (TLA = 2,000 sqm, PSO = 65%).",
+      "options": [
+        "1,000 sqm",
+        "1,300 sqm",
+        "1,541 sqm",
+        "1,800 sqm"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "AMBF from PSO = TLA × PSO = 2,000 sqm × 65% = 1,300 sqm. This is the maximum building footprint allowed under the site occupancy rule. PSO is applied directly to calculate the gross footprint constraint.",
+        "distractor_0": "1,000 sqm would result from applying 50% (R-1 PSO), not 65% for R-2. This is a common error when misapplying zone PSO values.",
+        "distractor_1": "1,541 sqm is the buildable area derived from setback calculations, not from PSO. While setbacks define a buildable envelope, PSO is the controlling (more restrictive) parameter here. Confusing these two methods is the third trap.",
+        "distractor_2": "1,800 sqm would result from 90% PSO, applicable only to special zones or exceptional variances, not standard R-2. This overestimates the allowable footprint.",
+        "distractor_3": "",
+        "takeaway": "AMBF calculation: Always compute both PSO-derived AMBF and setback-derived buildable area. The more restrictive governs final design. In Trias: AMBF from PSO (1,300 sqm) governs over setback buildable (1,541 sqm). This is Trap 3.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Apply formula: AMBF = TLA × PSO",
+        "AMBF = 2,000 × 0.65 = 1,300 sqm",
+        "Document: This is the PSO-derived maximum footprint"
+      ],
+      "code_citation": "National Building Code, Section 2.1 (PSO Definition); Development Control Parameters Table"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "question_stem": "For a 6.0-meter-high building in R-2 zone, calculate the buildable area using standard setbacks (front 4.5m, sides 2.0m each, rear 2.0m). The lot is 50m × 40m.",
+      "options": [
+        "1,300 sqm",
+        "1,400 sqm",
+        "1,541 sqm",
+        "1,700 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Buildable area = (Frontage − 2×side setback) × (Depth − front setback − rear setback) = (50 − 2×2.0) × (40 − 4.5 − 2.0) = 46 × 33.5 = 1,541 sqm. Setbacks reduce the available building envelope based on height-related restrictions.",
+        "distractor_0": "1,300 sqm is the PSO-derived AMBF, not the setback-derived buildable area. Confusing PSO constraint with setback constraint is a critical error. PSO governs in Trias (Trap 3).",
+        "distractor_1": "1,400 sqm results from calculation errors, such as using 35m depth (missing one setback) or 46m × 30.4m. Common arithmetic mistakes in setback subtraction.",
+        "distractor_2": "1,700 sqm would result from using smaller setbacks (e.g., 1.5m sides, 3.0m front) or miscalculating depth (40 − 3 = 37 instead of 33.5). Over-generous setback assumptions.",
+        "distractor_3": "",
+        "takeaway": "Setback-derived buildable area (1,541 sqm) is larger than PSO-derived AMBF (1,300 sqm). When both constraints apply, the more restrictive governs. In Trias, PSO (1,300 sqm) is the limiting factor. Always compute both and identify the governing constraint.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Calculate usable width: 50m − 2m − 2m = 46m",
+        "Calculate usable depth: 40m − 4.5m − 2.0m = 33.5m",
+        "Buildable area = 46m × 33.5m = 1,541 sqm",
+        "Compare to PSO-derived AMBF: 1,541 > 1,300, so PSO governs"
+      ],
+      "code_citation": "National Building Code, Table 2.2 (Setback Requirements by Height and Zone)"
+    },
+    {
+      "number": 4,
+      "type": "DC",
+      "question_stem": "Which constraint governs the maximum allowable building footprint for the Trias development: PSO-derived AMBF or setback-derived buildable area? State the governing value.",
+      "options": [
+        "Setback-derived: 1,541 sqm",
+        "PSO-derived: 1,300 sqm (governing)",
+        "Both are equal: 1,420 sqm",
+        "Setback-derived: 1,541 sqm plus 10% contingency"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "The more restrictive constraint governs. PSO-derived AMBF (1,300 sqm) is smaller than setback-derived buildable area (1,541 sqm), so PSO is the controlling parameter. The developer cannot exceed 1,300 sqm of building footprint regardless of setback allowances. This is Trap 3: students often overlook this comparison.",
+        "distractor_0": "Using setback-derived area (1,541 sqm) alone ignores the PSO constraint entirely. This is the trap: applying setbacks without checking PSO leads to over-building and regulatory non-compliance.",
+        "distractor_1": "Averaging or finding a middle value (1,420 sqm) is incorrect. The more restrictive constraint sets the legal maximum, not an average. Both must be satisfied simultaneously.",
+        "distractor_2": "Adding a 10% contingency to setback-derived area is neither a valid calculation nor a regulatory practice. Contingencies do not override zoning controls.",
+        "distractor_3": "",
+        "takeaway": "Design Control principle: Always compute multiple constraints (PSO, setbacks, BHL, FLAR, MACA, etc.). The most restrictive governs. In Trias: PSO < Setbacks, so PSO governs maximum footprint at 1,300 sqm. The actual footprint (1,080 sqm) must not exceed 1,300 sqm. This is critical for compliance checking.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Compute PSO-derived AMBF: 2,000 × 0.65 = 1,300 sqm",
+        "Compute setback-derived buildable: (50−4) × (40−6.5) = 1,541 sqm",
+        "Compare: 1,300 < 1,541",
+        "Conclusion: PSO (1,300 sqm) is the governing constraint"
+      ],
+      "code_citation": "NBC Table 2.1; Development Control Parameters — Most Restrictive Rule"
+    },
+    {
+      "number": 5,
+      "type": "DC",
+      "question_stem": "The Trias development has an actual building footprint of 1,080 sqm (20 units × 54 sqm each). Is this footprint in compliance with the governing AMBF constraint?",
+      "options": [
+        "No, exceeds AMBF by 220 sqm",
+        "Yes, within AMBF of 1,300 sqm",
+        "No, exceeds setback-derived buildable by 461 sqm",
+        "Insufficient data to determine"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Actual footprint (1,080 sqm) < Governing AMBF (1,300 sqm). The development is compliant with the PSO constraint. The 1,080 sqm footprint uses 83% of the allowed 1,300 sqm, leaving 220 sqm reserve for future modifications or expansion within the footprint envelope.",
+        "distractor_0": "This inverts the comparison: 1,080 < 1,300, so the footprint does NOT exceed AMBF. This error occurs when confusing which value is the limit.",
+        "distractor_1": "This correctly compares to setback-derived area (1,080 < 1,541), but setbacks do not govern here — PSO does. Selecting the wrong constraint for evaluation is a critical distractor.",
+        "distractor_2": "Claiming insufficient data is incorrect; all necessary values have been provided. This is a deflection distractor for students uncertain in their calculations.",
+        "distractor_3": "",
+        "takeaway": "Compliance checking: Compare actual against governing constraint. Actual (1,080 sqm) vs. PSO-derived AMBF (1,300 sqm) → Compliant. Actual (1,080 sqm) vs. Setback buildable (1,541 sqm) → Also compliant, but irrelevant here since PSO governs. Always identify the governing constraint first.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Identify governing AMBF: 1,300 sqm (from PSO)",
+        "Actual footprint: 1,080 sqm",
+        "Compare: 1,080 sqm < 1,300 sqm",
+        "Result: COMPLIANT with footprint constraint"
+      ],
+      "code_citation": "NBC Development Control Parameters; Compliance Verification Methods"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "Calculate the Total Gross Floor Area (TGFA) for the Trias development (20 units, 2 storeys each, 54 sqm per floor per unit).",
+      "options": [
+        "1,080 sqm",
+        "1,500 sqm",
+        "2,160 sqm",
+        "2,500 sqm"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "TGFA = Number of units × Area per floor × Number of floors = 20 × 54 × 2 = 2,160 sqm. This is the total livable floor area across all buildings in the development. TGFA is used to compute Floor Area Ratio (FLAR) and verify density compliance.",
+        "distractor_0": "1,080 sqm is the total building footprint (ground floor only), not the TGFA. Confusing footprint with total floor area is a common computational error.",
+        "distractor_1": "1,500 sqm might result from incomplete calculation (e.g., 20 × 75 sqm, missing floor multiplication or miscounting units). This reflects partial computation.",
+        "distractor_2": "2,500 sqm would result from assuming 3 storeys (20 × 54 × 2.3) or higher unit area than stated. This overestimates the actual TGFA.",
+        "distractor_3": "",
+        "takeaway": "TGFA calculation: Total units × Area per floor × Number of floors. For Trias: 20 × 54 × 2 = 2,160 sqm. This value feeds directly into FLAR computation, which is critical for density compliance. Do not confuse footprint with TGFA.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Identify unit count: 20 units",
+        "Identify area per floor: 54 sqm",
+        "Identify floor count: 2 storeys",
+        "Calculate: 20 × 54 × 2 = 2,160 sqm"
+      ],
+      "code_citation": "NBC Section 2.1 (TGFA Definition); Development Control Parameters"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "Calculate the Floor Area Ratio (FLAR) for the Trias development (TGFA = 2,160 sqm, TLA = 2,000 sqm). Is it compliant with R-2 minimum FLAR of 1.5?",
+      "options": [
+        "FLAR = 1.08 — NON-COMPLIANT",
+        "FLAR = 1.50 — Borderline compliant",
+        "FLAR = 2.16 — Over-compliant",
+        "FLAR = 0.54 — Non-compliant (too low)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "FLAR = TGFA ÷ TLA = 2,160 ÷ 2,000 = 1.08. This is BELOW the R-2 minimum FLAR of 1.5, making the development NON-COMPLIANT. This is Trap 1: the 2-storey row house configuration is under-dense for R-2 zoning. The development must be redesigned (3 storeys minimum) to achieve 1.62 FLAR and meet minimum density requirements.",
+        "distractor_0": "1.50 represents the MINIMUM acceptable FLAR, not the actual computed value. Students may round 1.08 to 1.50, assuming compliance. The actual computation shows non-compliance.",
+        "distractor_1": "2.16 inverts the ratio (TGFA ÷ TLA should yield 2,160 ÷ 2,000 = 1.08, not 2.16 ÷ 1). This is a distractor for arithmetic errors.",
+        "distractor_2": "0.54 would result from dividing area by double (e.g., 1,080 ÷ 2,000 or 2,160 ÷ 4,000). This is far too low and unlikely without grossly miscalculating.",
+        "distractor_3": "",
+        "takeaway": "FLAR = TGFA ÷ TLA. For Trias: 2,160 ÷ 2,000 = 1.08. Minimum R-2 FLAR = 1.5. The development is NON-COMPLIANT. This is a critical finding: the developer must increase floors to 3 storeys (FLAR = 1.62) or increase unit count. This trap catches students who skip FLAR checks on residential projects.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Calculate FLAR: TGFA ÷ TLA = 2,160 ÷ 2,000 = 1.08",
+        "Reference R-2 minimum FLAR: 1.5",
+        "Compare: 1.08 < 1.5",
+        "Conclusion: NON-COMPLIANT; design must increase to 3 floors minimum"
+      ],
+      "code_citation": "NBC Table 2.1 (FLAR Ranges by Zone); Development Control Parameters"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "To achieve minimum FLAR compliance (1.5) for the Trias R-2 development while keeping 20 units and the same 54 sqm per-floor area, how many storeys (minimum) must the buildings be?",
+      "options": [
+        "2 storeys (current — not sufficient)",
+        "3 storeys (FLAR = 1.62 — compliant)",
+        "4 storeys (FLAR = 2.16 — excessive)",
+        "Cannot be achieved without changing lot size or unit count"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "FLAR required: TGFA = TLA × minimum FLAR = 2,000 × 1.5 = 3,000 sqm. With 20 units × 54 sqm/floor = 1,080 sqm footprint: Floors needed = 3,000 ÷ 1,080 = 2.78 → 3 floors minimum. At 3 storeys: TGFA = 20 × 54 × 3 = 3,240 sqm, FLAR = 3,240 ÷ 2,000 = 1.62 (within 1.5–2.5 range, compliant). This directly addresses the non-compliance found in Q7.",
+        "distractor_0": "2 storeys is the current design, which yields FLAR = 1.08 (non-compliant). This is a red-herring distractor repeating the problem without solving it.",
+        "distractor_1": "4 storeys would yield FLAR = 2.16, which exceeds the R-2 maximum FLAR of 2.5 but is above the minimum. While technically compliant, it's excessive and not the minimum required. However, some students may select this as 'safer.'",
+        "distractor_2": "This defeatist answer ignores the straightforward solution: increase floors to 3. With fixed footprint and area, adding floors is the standard design solution. This is a distractor for students lacking confidence in design iterations.",
+        "distractor_3": "",
+        "takeaway": "Density optimization: FLAR compliance requires a minimum of 3 storeys for Trias. The developer must either: (A) redesign as 3-storey row apartments, (B) add more units on the same footprint, or (C) seek an alternative site/zoning variance. This is a realistic design constraint in economic housing projects: balancing affordability (2-storey simplicity) with density requirements (3+ storeys). The lesson is: compute FLAR early and redesign if non-compliant.",
+        "wiki_ref": "ale-dsgn-001-02-development-control-parameters"
+      },
+      "solution_steps": [
+        "Required TGFA for FLAR = 1.5: 2,000 × 1.5 = 3,000 sqm",
+        "Current footprint: 20 × 54 = 1,080 sqm",
+        "Floors needed: 3,000 ÷ 1,080 = 2.78 → round up to 3",
+        "Verify: 20 × 54 × 3 = 3,240 sqm; FLAR = 3,240 ÷ 2,000 = 1.62 ✓"
+      ],
+      "code_citation": "NBC Development Control Parameters; FLAR Compliance Method"
+    },
+    {
+      "number": 9,
+      "type": "SP",
+      "question_stem": "For a 6.0-meter-high (2-storey) residential building in R-2 zone, state the required setback values: front, both sides, and rear.",
+      "options": [
+        "Front 3m, sides 1.5m each, rear 1.5m",
+        "Front 4.5m, sides 2.0m each, rear 2.0m",
+        "Front 5.0m, sides 2.5m each, rear 2.5m",
+        "Front 6.0m, sides 3.0m each, rear 3.0m"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "For buildings up to 6m height in R-2 zone: front setback = 4.5m, side setbacks = 2.0m each, rear setback = 2.0m. These are standard values per NBC Table 2.2 (Setback Requirements by Zone and Height). The Trias buildings, at 6.0m, fall in this bracket.",
+        "distractor_0": "Smaller setbacks (3m, 1.5m, 1.5m) are typical for R-3 or higher-density zones, or for buildings under 4.5m. Applying insufficient setbacks to R-2 would violate spacing and light/air standards.",
+        "distractor_1": "Larger setbacks (5.0m, 2.5m, 2.5m) are appropriate for buildings 6–9m (3–4 storeys) or in sensitive R-2 areas. Over-generous setbacks reduce buildable area unnecessarily.",
+        "distractor_2": "6.0m front and 3.0m sides/rear match requirements for 10–12m buildings (4+ storeys) or special heritage zones. These are too large for a 6m building.",
+        "distractor_3": "",
+        "takeaway": "Setback standards scale with building height. At 6.0m (2 storeys), the Trias buildings require: front 4.5m, sides 2.0m, rear 2.0m. Always cross-reference building height against setback bracket tables. Undersized setbacks violate spacing codes; oversized setbacks waste buildable area.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Identify building height: 6.0m (2 storeys × 3.0m per storey)",
+        "Reference NBC Table 2.2 (Setback by Height, R-2 zone)",
+        "For 6m bracket: front 4.5m, sides 2.0m each, rear 2.0m"
+      ],
+      "code_citation": "National Building Code, Table 2.2 (Setback Requirements by Zone and Height)"
+    },
+    {
+      "number": 10,
+      "type": "SP",
+      "question_stem": "In the Trias row house development, what is the minimum required fire separation distance between the two rows of 10 units (Row A facing the road, Row B facing the interior)? What is this space used for?",
+      "options": [
+        "2.0m fire separation; used for water drainage only",
+        "3.0m fire separation; used as a development access road with emergency egress",
+        "4.5m fire separation; used as primary road with utilities",
+        "5.0m fire separation; used as open plaza area"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Minimum fire separation between row house blocks is 3.0m per PD 957 and NBC fire code. This 3m space accommodates: (A) emergency egress and fire equipment access, (B) utility runs (water, power, sewage), (C) drainage channels, and (D) pedestrian circulation. In Trias, this 3m space functions as an internal development road connecting both rows.",
+        "distractor_0": "2.0m is insufficient for emergency vehicle access and violates fire code spacing. While drainage can occur here, firefighting operations require wider access.",
+        "distractor_1": "4.5m exceeds the minimum requirement and would waste developable site area. While permissible if site allows, it's not the minimum mandated standard.",
+        "distractor_2": "5.0m and larger separations may be appropriate for major internal roads or special site conditions, but they're not the standard fire separation minimum. This overdesigns for a row house block.",
+        "distractor_3": "",
+        "takeaway": "Fire separation = 3.0m minimum for row housing. This space serves dual purposes: (1) fire safety (emergency access, equipment maneuvering), (2) site functionality (road, utilities, drainage). In Trias, the 3m gap between Row A and Row B is a critical design element, not wasted space. Always incorporate fire separations into site planning early, not as afterthoughts.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Identify fire code standard: PD 957 row house spacing; NBC fire separation",
+        "Minimum spacing: 3.0m",
+        "Trias implementation: 3m between Row A and Row B",
+        "Function: emergency egress, utilities, drainage, pedestrian access"
+      ],
+      "code_citation": "PD 957 (Subdivision Rules), Section 3.2 (Fire Separation); National Building Code, Fire Safety Chapter"
+    },
+    {
+      "number": 11,
+      "type": "SP",
+      "question_stem": "Describe the lot orientation and unit access arrangement for the Trias development. Which row (A or B) has primary access from the public road, and how do units in the rear row (B) achieve egress?",
+      "options": [
+        "Row A (south, facing road) has primary access; Row B units access via rear courtyards only",
+        "Row A (south, facing road) has primary access; Row B accesses via 3m internal road between rows plus common pathways",
+        "Both rows have equal access directly from the public road; no internal circulation needed",
+        "Row B (north) has primary access; Row A is accessed via rooftop bridges (not feasible)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Row A (south front row, facing the 50m road frontage) has primary direct access to the public road. Row B (north, interior row) achieves access via the 3.0m internal development road separating the two rows, which connects to the public road at either end (east/west access points). Within the site, a network of common pedestrian pathways distributes residents to their units. This 'hierarchical access' is standard in linear row house clusters.",
+        "distractor_0": "Relying on rear courtyards alone for Row B egress is insufficient for emergency evacuation, service delivery, and daily accessibility. This violates PD 957 provisions for adequate access per unit.",
+        "distractor_1": "Equal direct access from the public road would require twice the road frontage (100m for two rows) or additional entry points. The linear arrangement naturally creates a hierarchy: front row primary, rear row secondary via internal road.",
+        "distractor_2": "Rooftop bridges are impractical, costly, and not approved for residential access. This distractor is absurd but tests whether students recognize feasibility.",
+        "distractor_3": "",
+        "takeaway": "Row house site planning uses hierarchical access: primary rows (facing major road) access directly; secondary rows (interior) access via internal development roads and pedestrian paths. In Trias, the 3m fire separation is the critical circulation spine. All units must have independent access to a public or development road (PD 957 requirement). Row B achieves this via the internal road, not isolated courtyards.",
+        "wiki_ref": "ale-dsgn-001-04-setbacks-firewalls"
+      },
+      "solution_steps": [
+        "Identify primary access: Row A (south front, facing 50m road frontage)",
+        "Identify secondary access: Row B (north rear)",
+        "Connection: Row B accesses via 3.0m internal development road",
+        "Distribution: Common pathways serve individual units; each unit has independent access point"
+      ],
+      "code_citation": "PD 957, Section 4.2 (Access Requirements); NBC Section 1 (Egress Standards)"
+    },
+    {
+      "number": 12,
+      "type": "ZN",
+      "question_stem": "Describe the ground floor program of a Trias unit (4.5m wide × 12m deep). List the functional areas and explain how they optimize the 54 sqm footprint for economic housing.",
+      "options": [
+        "Open-plan living/dining only; no separate kitchen; shared bathroom with adjoining unit",
+        "Living/dining (15 sqm), kitchen (8 sqm), toilet & bath (5 sqm), service/laundry (4 sqm); optimized for essential functions with compact dimensions",
+        "Living/dining (20 sqm), separate kitchen (12 sqm), master bedroom (15 sqm), bathroom (7 sqm)",
+        "Living room (10 sqm), formal dining (8 sqm), kitchen (10 sqm), two bathrooms (8 sqm), storage (8 sqm)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "Economic housing under BP 220 prioritizes essential functions in minimal space: (1) Combined living/dining (15 sqm) for multi-purpose gathering, (2) Kitchen (8 sqm) — compact galley or L-shaped layout, (3) Toilet & bath (5 sqm) — single unit per floor, (4) Service/laundry (4 sqm) — rear utility area. This arrangement uses ~32 sqm of the 54 sqm ground floor, leaving ~22 sqm for circulation, walls, and flexibility. This is the standard BP 220 economic housing prototype.",
+        "distractor_0": "Open-plan without kitchen is not feasible for residential use and violates building code requirements for independent kitchen space. Shared bathrooms between units are also non-compliant (each unit must have independent facilities).",
+        "distractor_1": "Master bedroom on ground floor displaces essential living/dining area and is inappropriate for a 2-storey layout (bedrooms belong on the 2nd floor per space efficiency). This misapplies residential planning logic.",
+        "distractor_2": "Excessive areas (20+12+15+8+8 = 63 sqm total) exceed the 54 sqm available footprint and are luxury standard, not economic housing. BP 220 explicitly restricts minimum room sizes to achieve affordability.",
+        "distractor_3": "",
+        "takeaway": "Economic housing ground floor: essential functions (living, cooking, sanitation, service) in compact zones. The BP 220 standard avoids formal dining, separate living rooms, multiple bathrooms, and large kitchens. Space is multi-functional: living/dining merges for flexibility; service area doubles as laundry and utility storage. Ground floor is service-oriented; bedrooms move to 2nd floor. This optimization keeps per-unit cost low while maintaining livability.",
+        "wiki_ref": "ale-dsgn-003-03-housing-subdivisions-bp-220-pd-957"
+      },
+      "solution_steps": [
+        "Identify BP 220 economic housing standard: 54–108 sqm per unit",
+        "Ground floor allocation for 54 sqm footprint:",
+        "  - Living/dining: 15 sqm (multi-purpose)",
+        "  - Kitchen: 8 sqm (compact)",
+        "  - Toilet & bath: 5 sqm",
+        "  - Service/laundry: 4 sqm",
+        "  - Circulation/walls: ~22 sqm",
+        "Rationale: Minimize non-productive space; maximize livability within cost constraints"
+      ],
+      "code_citation": "BP 220 (Mortgage Incentive Act) — Economic Housing Standards; PD 957 Housing Unit Program Requirements"
+    },
+    {
+      "number": 13,
+      "type": "ZN",
+      "question_stem": "According to PD 1096 (Fire Code for Row Housing), at what interval must firewalls be placed between Trias units? Does the brief requirement ('firewalls between units') satisfy this standard?",
+      "options": [
+        "Every unit (between every pair) — brief requirement is excessive",
+        "Every 4th unit (continuous firewall every 4 units) — brief mention is insufficient without clarification",
+        "Every 5th unit — brief requirement misses the correct interval",
+        "No firewall required; units separated by 0.5m air gap"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "PD 1096 mandates firewall (party wall, 200mm CHB minimum, Class A fire-rated) between every 4th unit in a continuous row house block. This is Trap 2. The brief states 'firewalls between units' but does NOT specify the interval. The correct interpretation: firewall placement at units 4–5, 8–9, 12–13, 16–17, and 20 (rear), creating four 4-unit segments within the 10-unit row. Students unfamiliar with PD 1096 may assume either continuous firewall between all units (excessive and costly) or no firewall at all (dangerously incorrect).",
+        "distractor_0": "Continuous firewall between every unit (every 1st) would be over-engineered and economically prohibitive. While maximally safe, it's not code-minimum and increases construction cost by ~15% for a 20-unit block.",
+        "distractor_1": "Every 5th unit is incorrect; PD 1096 explicitly specifies every 4th unit (i.e., units 1–4 as one segment, 5–8 as next, etc.). This interval balances fire containment with construction economy.",
+        "distractor_2": "No firewall with only a 0.5m air gap provides negligible fire resistance and is non-compliant. Fire can spread rapidly across an air gap without a rated barrier.",
+        "distractor_3": "",
+        "takeaway": "PD 1096 firewall standard: Every 4th unit in a row house block. Trias with 20 units in a linear row must have 4 firewall segments. This is a critical code trap: the brief mentions firewalls vaguely, but students must know the specific interval. The design implication: firewall locations must be coordinated with structural planning, plumbing stacks, electrical risers, and unit layouts. Missing or misplaced firewalls result in failed building permit review.",
+        "wiki_ref": "ale-dsgn-003-03-housing-subdivisions-bp-220-pd-957"
+      },
+      "solution_steps": [
+        "Reference PD 1096 Fire Safety Standards for Row Housing",
+        "Standard: Firewall required between every 4th unit (party wall, 200mm CHB minimum, 4-hour fire-rating)",
+        "Trias 10-unit row: firewalls at units 4–5, 8–9 (within the row)",
+        "Trias 2 rows of 10: total of 4 firewall locations across both rows",
+        "Brief statement ('firewalls between units') is vague; correct interpretation requires PD 1096 knowledge"
+      ],
+      "code_citation": "PD 1096 (Fire Safety Code), Section 2.3 (Party Walls in Row Housing); Firewall Placement Standards"
+    },
+    {
+      "number": 14,
+      "type": "BD",
+      "question_stem": "Under BP 220 Economic Housing, what is the minimum total unit floor area (TUFA) per unit, and what occupancy classification applies to Trias row housing units?",
+      "options": [
+        "Minimum 64 sqm; Occupancy Class R-2 Residential",
+        "Minimum 108 sqm; Occupancy Class R (Residential) — Economic tier",
+        "Minimum 150 sqm; Occupancy Class A (Apartments)",
+        "Minimum 36 sqm; Occupancy Class R-3 (Group Housing)"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BP 220 specifies minimum total unit floor area of 108 sqm for low-rise (2–3 storey) economic row housing. Each Trias unit is exactly 108 sqm (54 sqm × 2 floors). The occupancy classification is 'Residential (R)' — Economic Housing tier under BP 220, distinct from standard R-1/R-2 zoning classes. Occupancy refers to building code classification (fire safety, egress, construction type), while zoning refers to land use regulation.",
+        "distractor_0": "64 sqm is the BP 220 lot size minimum, not the unit floor area minimum. Students may confuse lot size (per unit) with floor area per unit. 64 sqm ÷ 2 floors = 32 sqm per floor, insufficient for livable space.",
+        "distractor_1": "150 sqm exceeds BP 220 economic housing standard and would be classified as 'medium-cost' or 'social housing,' not economic. This inflates project cost.",
+        "distractor_2": "36 sqm is the socialized housing lot minimum (below economic tier) and is far too small for a 2-storey unit. R-3 group housing includes dorms, hotels, and congregate facilities, not single-family units.",
+        "distractor_3": "",
+        "takeaway": "BP 220 tiers: Socialized housing (24–36 sqm lot, low cost), Economic housing (64–80 sqm lot, 108–120 sqm TUFA, moderate affordability), Social housing (120+ sqm lot, 150+ sqm TUFA). Trias is Economic Housing tier. Occupancy code is 'R' for residential; zoning is 'R-2.' Both must be satisfied in design: zoning controls density/site layout, occupancy code controls fire safety/construction standards.",
+        "wiki_ref": "ale-dsgn-003-03-housing-subdivisions-bp-220-pd-957"
+      },
+      "solution_steps": [
+        "Identify housing tier: BP 220 Economic Housing",
+        "Minimum TUFA per tier: 108 sqm for economic row housing",
+        "Trias unit size: 54 × 2 = 108 sqm (meets minimum exactly)",
+        "Occupancy classification: R (Residential) — Economic tier",
+        "Building code compliance: 2-storey row, CHB construction with firewall"
+      ],
+      "code_citation": "BP 220 (Mortgage Incentive Act), Schedule of Standards; Occupancy Classifications, NBC Section 1"
+    },
+    {
+      "number": 15,
+      "type": "BD",
+      "question_stem": "What is the minimum fire-rating requirement for the 200mm CHB firewall between every 4th unit in Trias row housing, and what construction method achieves this rating?",
+      "options": [
+        "1-hour fire-rating; single-wythe CHB with mortar joints sealed",
+        "2-hour fire-rating; double-wythe CHB with grout cavity fill",
+        "4-hour fire-rating; 200mm CHB + Class A fire sealant + both sides plastered 25mm",
+        "No fire-rating required; acoustic separation only"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "PD 1096 and NBC require a 4-hour fire-rating for party walls in residential row housing. A 200mm (8-inch) CHB (concrete hollow block) wall achieves 4-hour fire-rating when: (1) blocks are solid-grouted (no air gaps), (2) both faces are plastered minimum 25mm thick with Class A fire-resistant plaster (e.g., gypsum + perlite or vermiculite), (3) all penetrations sealed with fire caulk, (4) junction with roof/floor rated to same standard. This robust construction ensures 4-hour fire containment without flame/smoke penetration.",
+        "distractor_0": "1-hour fire-rating applies to temporary partitions or 75mm non-load-bearing walls. This is insufficient for a party wall in a residential building, which must contain fire for extended periods to allow evacuation of adjacent units.",
+        "distractor_1": "2-hour fire-rating is intermediate and insufficient. While achievable with 150mm CHB + plaster, row housing party walls require 4-hour (not 2-hour) per PD 1096.",
+        "distractor_2": "No fire-rating (acoustic separation only) is negligent and non-compliant. Acoustic performance (sound transmission) is separate from fire-rating. A party wall must satisfy both: fire-rating for safety, acoustic for livability.",
+        "distractor_3": "",
+        "takeaway": "Fire-rated party wall design: 200mm CHB + full grout + 25mm plaster both sides + sealant = 4-hour fire-rating. This is a standard construction detail in row housing. Students must understand the difference between fire-rating (structural containment, typically 4-hour for residential), acoustic rating (sound isolation, STC 50–55 for residential), and thermal rating (insulation, not primary for firewalls). Specifying incorrect fire-rating leads to permit rejection and costly redesign.",
+        "wiki_ref": "ale-dsgn-001-01-occupancy-classifications"
+      },
+      "solution_steps": [
+        "Reference: PD 1096, NBC Section on Party Walls",
+        "Row housing party wall requirement: 4-hour fire-rating",
+        "200mm CHB construction detail:",
+        "  1. CHB units, fully grouted (no hollow cores)",
+        "  2. Both faces plastered 25mm minimum (Class A fire-resistant plaster)",
+        "  3. Penetrations sealed with fire caulk",
+        "  4. Floor/roof junctions rated to 4-hour as well",
+        "Result: 4-hour fire-rating achieved"
+      ],
+      "code_citation": "PD 1096 (Fire Safety Code), Party Wall Standards; NBC Section 6 (Fire Safety, Fire-Resistance Rating)"
+    },
+    {
+      "number": 16,
+      "type": "PK",
+      "question_stem": "For the Trias 20-unit economic housing development (R-2 zone), how many parking spaces are required under NBC and PD 957 standards? (Assume 2 bedrooms per unit = Group C occupancy for parking.)",
+      "options": [
+        "20 spaces (1 space per unit)",
+        "10 spaces (0.5 space per unit)",
+        "30 spaces (1.5 spaces per unit)",
+        "Parking not required for economic housing developments"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "For economic housing under PD 957 in R-2 zones, the parking standard is 0.5 space per unit (or 1 space per 2 units). For Trias with 20 units: 20 × 0.5 = 10 spaces required. This reduced standard recognizes that economic housing residents typically have lower car ownership (affordability constraint) and may rely on public transit. The 10 spaces can be provided as: (A) 8 on-site spaces (4 pairs of tandem parking in 2 dedicated lots), (B) 2 off-site spaces within 100m via easement, or (C) cash-in-lieu contribution to municipal parking fund (PD 957, Section 5).",
+        "distractor_0": "1 space per unit (20 spaces) is the standard for middle-income residential (R-2 standard mixed-use). Economic housing is exempt from this higher requirement to reduce land cost.",
+        "distractor_1": "1.5 spaces per unit (30 spaces) is appropriate for upper-income residential (R-1 low-density) or commercial mixed-use. This exceeds economic housing requirements.",
+        "distractor_2": "Zero parking is incorrect. Even with reduced standards, some parking must be provided or a cash-in-lieu contribution made. Economic housing does NOT exempt parking entirely.",
+        "distractor_3": "",
+        "takeaway": "Parking reduction for affordability: PD 957 allows 0.5 space per unit for economic housing (vs. 1–1.5 for standard residential). Trias needs 10 spaces minimum. Site planning strategy: provide small parking lots strategically (possibly near the development road) rather than undersized garages per unit (which inflate construction cost). Alternatively, developer can contribute to municipal parking fund if on-site provision is infeasible. This is a key cost-reduction lever in economic housing projects.",
+        "wiki_ref": "ale-dsgn-007-03-parking-standards"
+      },
+      "solution_steps": [
+        "Identify housing tier: Economic (BP 220)",
+        "Reference parking standard: PD 957, Section 5",
+        "Rate: 0.5 space per unit (reduced from 1.0 for standard residential)",
+        "Calculation: 20 units × 0.5 = 10 spaces",
+        "Compliance options: on-site, off-site within 100m, or cash-in-lieu"
+      ],
+      "code_citation": "PD 957 (Subdivision Rules), Section 5 (Parking Standards); NBC Table 7 (Parking by Occupancy)"
+    },
+    {
+      "number": 17,
+      "type": "AI",
+      "question_stem": "Under BP 220 and NBC requirements, what is the minimum clear floor area for a bedroom in economic housing, and what are the minimum window size/opening area for natural light and ventilation in a habitable room?",
+      "options": [
+        "Minimum 8 sqm per bedroom; minimum window 1.0 sqm (10% of floor area)",
+        "Minimum 9 sqm per bedroom; minimum window 1.5 sqm (15% of floor area for light + 5% for ventilation)",
+        "Minimum 12 sqm per bedroom; minimum window 2.5 sqm (25% of floor area)",
+        "No minimum; developer discretion under BP 220"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BP 220 and NBC specify: (1) Minimum floor area per bedroom = 9 sqm, and (2) Minimum window opening area = 15% of floor area for natural light AND minimum 5% of floor area for cross-ventilation. For a 9 sqm bedroom: Light window = 9 × 0.15 = 1.35 sqm ≈ 1.5 sqm (e.g., 1.0m × 1.5m), Ventilation opening = 9 × 0.05 = 0.45 sqm ≈ 0.5 sqm (operable casement or louvers). These minimums ensure habitability and health in compact units.",
+        "distractor_0": "8 sqm is below the BP 220 minimum of 9 sqm and may be applied to very small rooms (study, den) but not bedrooms. 1.0 sqm window is marginal and may be insufficient for adequate light in a residential bedroom.",
+        "distractor_1": "12 sqm and 2.5 sqm window exceed BP 220 standards and are appropriate for middle-income or social housing, not economic tier. This increases per-unit construction cost by ~5–8%, pricing out affordability targets.",
+        "distractor_2": "Developer discretion with no minimums is dangerous and violates habitability codes. Economic housing residents deserve minimum standards for light, air, and thermal comfort. BP 220 explicitly sets minimums to prevent slum conditions.",
+        "distractor_3": "",
+        "takeaway": "Compact room design under BP 220: 9 sqm minimum bedroom; 15% light window + 5% ventilation opening. For Trias units (110 sqm total, ~2 bedrooms): if bedrooms are 10–11 sqm each, window areas should be ~1.5 sqm + 0.5 sqm = 2.0 sqm combined per bedroom. This is a key design constraint: small rooms require careful window placement to maximize light and airflow without compromising thermal control or privacy. Corner bedrooms (two exposures) help meet these requirements efficiently.",
+        "wiki_ref": "ale-dsgn-001-03-light-ventilation-room-requirements"
+      },
+      "solution_steps": [
+        "Reference BP 220 minimum room sizes:",
+        "  - Bedroom: minimum 9 sqm",
+        "  - Living/dining: minimum 15 sqm (or combined 15 sqm per Table)",
+        "  - Kitchen: minimum 6 sqm",
+        "Window/opening standards for habitable rooms:",
+        "  - Natural light: minimum 15% of floor area",
+        "  - Cross-ventilation: minimum 5% of floor area (operable)",
+        "Example (9 sqm bedroom): 1.35 sqm light window + 0.45 sqm vent opening"
+      ],
+      "code_citation": "BP 220 (Mortgage Incentive Act), Schedule of Standards; NBC Section 2 (Light and Ventilation Requirements)"
+    },
+    {
+      "number": 18,
+      "type": "ES",
+      "question_stem": "Calculate the number of 10cm × 20cm × 40cm concrete hollow blocks (CHB) needed to construct a 200mm-thick firewall between two units (segment length 4.5m, height 3.0m). Use a standard rate of 12.5 pieces per square meter of finished wall. Assume 10% waste factor.",
+      "options": [
+        "150 pieces",
+        "169 pieces",
+        "186 pieces",
+        "210 pieces"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Wall area = Length × Height = 4.5m × 3.0m = 13.5 sqm. CHB required = 13.5 × 12.5 = 168.75 pieces (base). With 10% waste factor: 168.75 × 1.10 = 185.6 ≈ 186 pieces. This assumes 200mm CHB (one wythe, fully grouted); if double-wythe (400mm), the calculation doubles. Standard construction practice: order 186 pieces for a single 4.5m × 3.0m firewall segment. For Trias with 4 firewall segments, total CHB = 186 × 4 = 744 pieces.",
+        "distractor_0": "150 pieces underestimates by omitting the waste factor or rounding wall area down (13.5 ≈ 12 sqm). This leads to material shortage and schedule delays.",
+        "distractor_1": "169 pieces is the base calculation without waste factor (13.5 × 12.5 = 168.75). While close, excluding waste is poor practice; construction always includes contingency for breakage and waste.",
+        "distractor_2": "210 pieces overestimates, possibly from using 15 pieces/sqm (for mortar joints inclusive of waste) or inflating the wall area. While a conservative estimate, it wastes budget.",
+        "distractor_3": "",
+        "takeaway": "Estimating CHB quantity: Wall area (sqm) × Unit rate (pieces/sqm) × Waste factor (1.10 = 10%). For Trias firewalls: 4 segments × 186 = 744 CHB total. This feeds into material procurement, cost estimation, and schedule planning. Always include waste factor for concrete/masonry products; breakage during transport and handling typically runs 8–12%.",
+        "wiki_ref": "ale-dsgn-001-01-occupancy-classifications"
+      },
+      "solution_steps": [
+        "Calculate wall area: 4.5m width × 3.0m height = 13.5 sqm",
+        "Apply unit rate: 13.5 sqm × 12.5 pieces/sqm = 168.75 pieces",
+        "Add waste factor (10%): 168.75 × 1.10 = 185.6 pieces",
+        "Round up: 186 pieces",
+        "Note: This is per one segment; Trias has 4 firewall segments = 744 total"
+      ],
+      "code_citation": "Standard Construction Estimation Practices; CHB Specification (10×20×40cm unit)"
+    },
+    {
+      "number": 19,
+      "type": "ES",
+      "question_stem": "Calculate the cubic meter volume of concrete required for the suspended slab system in one Trias unit (floor area 54 sqm, slab thickness 150mm, assume 85% of floor area is supported slab, 15% is beams/columns). Use concrete density of 2,400 kg/m³. How many cubic meters per unit?",
+      "options": [
+        "6.50 cu.m per unit",
+        "7.10 cu.m per unit",
+        "7.65 cu.m per unit",
+        "8.20 cu.m per unit"
+      ],
+      "correct_answer_index": 2,
+      "rationale": {
+        "correct": "Effective slab area = 54 sqm × 0.85 = 45.9 sqm (accounting for column footprints and beam zones). Slab volume = Area × Thickness = 45.9 sqm × 0.15m = 6.885 cu.m. Adding beam volumes (typically 10–15% of total structural concrete) and columns: Conservative estimate = 6.885 × 1.11 (accounting for additional structural elements) ≈ 7.65 cu.m per unit. For a 2-storey unit, total concrete per unit = 7.65 × 2 = 15.3 cu.m. For 20 units in Trias: 15.3 × 20 = 306 cu.m total structural concrete (for project-level material procurement planning).",
+        "distractor_0": "6.50 cu.m underestimates by omitting beam and column contributions or using a lower slab thickness (125mm). This underestimates material procurement and leads to supply shortages.",
+        "distractor_1": "7.10 cu.m is a partial estimate (slab + minor beams) but misses column volumes. Using exactly the slab volume (6.885) rounded to 7.10 ignores structural frame contributions.",
+        "distractor_2": "8.20 cu.m overestimates by assuming 100% of floor area is slab (ignoring the 15% non-slab factor) or using excessively thick beams. While conservative, it inflates concrete cost unnecessarily.",
+        "distractor_3": "",
+        "takeaway": "Structural concrete estimation: (Effective floor area × Slab thickness) + (Beams + Columns factor ~10–15%). For economic housing, designers minimize concrete volume to reduce cost while meeting structural safety. A typical 108 sqm 2-storey unit requires ~15–16 cu.m concrete. Trias 20-unit block: ~300–320 cu.m structural concrete. This is a key line item in construction cost estimation.",
+        "wiki_ref": "ale-dsgn-001-01-occupancy-classifications"
+      },
+      "solution_steps": [
+        "Effective slab area: 54 sqm × 0.85 = 45.9 sqm",
+        "Slab volume: 45.9 sqm × 0.15m = 6.885 cu.m",
+        "Add beam and column factor (11%): 6.885 × 1.11 = 7.64 cu.m",
+        "Round: 7.65 cu.m per storey",
+        "For 2-storey unit: 7.65 × 2 = 15.3 cu.m",
+        "For entire project (20 units): 15.3 × 20 = 306 cu.m"
+      ],
+      "code_citation": "Standard Structural Estimation Practices; Concrete Design Codes (NSC, ACI)"
+    },
+    {
+      "number": 20,
+      "type": "BP344",
+      "question_stem": "Under BP 344 (Accessibility Code), what is the required accessible pathway width for common areas in the Trias housing development, and must it connect to accessible parking or a road?",
+      "options": [
+        "1.0m minimum width; no connection requirement",
+        "1.2m minimum width; must connect to accessible entrance(s) and, if parking provided, to accessible parking spaces",
+        "1.5m minimum width; must connect to all units and public transport",
+        "2.0m minimum width; separate pathway from pedestrian zones"
+      ],
+      "correct_answer_index": 1,
+      "rationale": {
+        "correct": "BP 344 requires: (1) Accessible pathways minimum 1.2m clear width (unobstructed by utilities, landscaping, or parked vehicles), (2) Connections from public road → accessible parking (if parking provided) → accessible entrance(s), (3) Continuous accessible route with maximum 1:12 slope (8.33%) and cross-slope ≤1:48. For Trias, accessible pathways must: link the development entrance to both Row A and Row B, connect to the 10 parking spaces (with accessible spaces marked: 1 space per 20 units = 1 accessible space minimum), and include ramps or level transitions where slopes exceed 1:12.",
+        "distractor_0": "1.0m is too narrow for accessible passage (wheelchairs require 1.2m to maneuver safely). No connection requirement ignores the purpose of accessibility: providing independent access from public realm to all facilities.",
+        "distractor_1": "1.5m exceeds the minimum (though acceptable) and requires 'all units' connection, which may be impractical in a row house setting where individual unit lots are private. The standard requires access to common areas and unit entrances (not private interiors).",
+        "distractor_2": "2.0m is excessive for residential pathways; applies to commercial/institutional settings. Separate pathway from pedestrian zones is unnecessary and contradicts universal design principles (integration, not segregation).",
+        "distractor_3": "",
+        "takeaway": "BP 344 accessible pathway design: 1.2m minimum clear width, continuous connection from public road → parking → entrance, slopes ≤8.33% (ramps if steeper), cross-slope ≤2%. For Trias, site plan must show accessible routes marked and dimensioned. This adds minimal cost (~2–3% of site works) and greatly improves livability for elderly and PWD residents. Economic housing is NOT exempt from accessibility; in fact, inclusivity is a core principle of affordable housing design. Omitting accessible pathways results in permit rejection.",
+        "wiki_ref": "ale-dsgn-002-01-ramps-handrails"
+      },
+      "solution_steps": [
+        "Reference BP 344 Accessibility Code, Section 3 (Accessible Routes)",
+        "Minimum pathway width: 1.2m clear",
+        "Connections required:",
+        "  1. From public road/entrance to site",
+        "  2. From entrance to parking areas (if provided)",
+        "  3. From parking to building entrances/common areas",
+        "Slope limits:",
+        "  - Running slope: max 1:12 (8.33%)",
+        "  - Cross-slope: max 1:48 (2%)",
+        "Trias implementation: Mark 1.2m accessible route through development; ensure connection to accessible parking (1 space minimum)"
+      ],
+      "code_citation": "BP 344 (Persons with Disability (PWD) Accessibility Decree); NBC Section 2 (Accessible Routes)"
+    }
+  ],
+  "summary": {
+    "total_questions": 20,
+    "difficulty_level": 2,
+    "estimated_time_minutes": 120,
+    "question_distribution": {
+      "DC (Development Control)": 8,
+      "SP (Site Planning/Setbacks)": 3,
+      "ZN (Zoning/Housing)": 2,
+      "BD (Building Design)": 2,
+      "PK (Parking)": 1,
+      "AI (Area/Interior Standards)": 1,
+      "ES (Estimating)": 2,
+      "BP344 (Accessibility)": 1
+    },
+    "key_traps": [
+      "TRAP 1 (Q7-Q8): FLAR Non-Compliance — 2-storey development yields FLAR 1.08 (below R-2 min 1.5). Students must recognize under-density and compute 3 floors needed.",
+      "TRAP 2 (Q13): Firewall Interval — PD 1096 requires firewall every 4th unit, not between all units. Brief is vague; requires standard knowledge.",
+      "TRAP 3 (Q2, Q4, Q5): PSO vs Setback Constraint — PSO-derived AMBF (1,300 sqm) is more restrictive than setback-derived buildable (1,541 sqm). Students must identify governing constraint."
+    ],
+    "scenario_context": "Trias Affordable Housing Block A is a realistic, economically-constrained project representing the common challenge of balancing density requirements (FLAR minimum) with affordability drivers (2-storey simplicity, low construction cost). The scenario teaches that zoning compliance and building code standards are non-negotiable constraints that must be solved during design, not after construction. The FLAR trap is particularly instructive: developers cannot build 'cheap' if it means violating density minimums; they must either densify (3 floors), increase units, or seek variance."
+  },
+  "id": "DESIGN-012",
+  "building_type": "R-2",
+  "difficulty": 2,
+  "hidden_traps": [
+    "FLAR non-compliance: 2-storey development yields FLAR of 1.08, below R-2 minimum of 1.5 — students who dont check FLAR compliance miss this",
+    "Firewall requirement: PD 1096 requires firewall between every 4th unit in row housing — brief is intentionally vague to test regulatory knowledge",
+    "PSO governs over setbacks: 65% PSO on 2000 sqm lot gives 1300 sqm AMBF, more restrictive than setback-derived 1541 sqm — students may pick setback area"
+  ]
+}

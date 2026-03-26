@@ -20,7 +20,7 @@ interface EnduranceSetupProps {
 }
 
 /**
- * Derives the reliable window (median question count) from past endurance sessions.
+ * Derives the reliable window (median question count) from past Design Endurance Training sessions.
  */
 const deriveReliableWindow = (sessions: PreviousSession[]): number | null => {
   if (sessions.length === 0) return null
@@ -86,12 +86,11 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
 
       <div className="mb-8">
         <p className="text-[12px] font-medium uppercase tracking-wide text-[var(--muted-foreground)] mb-1">
-          Extended Practice
+          Exam Readiness
         </p>
-        <h1 className="text-[24px] font-semibold text-[var(--foreground)] mb-2">Endurance</h1>
+        <h1 className="text-[24px] font-semibold text-[var(--foreground)] mb-2">Design Endurance Training</h1>
         <p className="text-[15px] text-[var(--text-secondary)] leading-relaxed">
-          This session starts with 100 questions and monitors your accuracy in 10-question blocks.
-          When your accuracy dips, that&apos;s your current endurance limit.
+          Design is 40% of the ALE — and it&apos;s 3+ hours under pressure. This session monitors your accuracy in 10-question blocks to help you build your cognitive stamina window. Today&apos;s target: extend your reliable performance window by 10+ questions.
         </p>
       </div>
 
@@ -99,14 +98,14 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
         {previousFatigueThreshold !== null && (
           <div className="rounded-md border border-[var(--border)] bg-[var(--slate-blue-50)] px-4 py-4">
             <p className="text-[13px] font-medium text-[var(--text-secondary)] mb-1">
-              Previous session
+              Design Window from last session
             </p>
             <p className="text-[14px] text-[var(--foreground)]">
-              Your reliable window was around{' '}
-              <span className="font-medium">{previousFatigueThreshold} questions</span>.
+              Your reliable performance window was around{' '}
+              <span className="font-medium">{previousFatigueThreshold} questions</span>. Target: {previousFatigueThreshold + 10}+ today.
             </p>
             <p className="mt-1 text-[12px] text-[var(--muted-foreground)]">
-              See how you compare today.
+              Each session builds your stamina for the 3+ hour Design exam section.
             </p>
           </div>
         )}
@@ -131,7 +130,7 @@ const EnduranceSetup = ({ userId, previousSessions }: EnduranceSetupProps) => {
           onClick={handleStart}
           className="rounded-sm"
         >
-          Start Extended Practice
+          Start Design Training
         </Button>
       </div>
     </div>

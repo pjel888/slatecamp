@@ -11,7 +11,7 @@
  */
 
 import { useRouter } from 'next/navigation'
-import { Check, Clock } from '@phosphor-icons/react/dist/ssr'
+import { Check, Clock, Timer } from '@phosphor-icons/react/dist/ssr'
 import { SleepAwareLabel } from '@/components/trails/SleepAwareLabel'
 import { BlindspotPriorityFlag } from '@/components/trails/BlindspotPriorityFlag'
 import { STEP_TYPE_CONFIG } from '@/types/app'
@@ -121,11 +121,14 @@ const TrailStepCard = ({
         </p>
       )}
 
-      {/* 6. Computation-heavy indicator */}
+      {/* 6. Computation-heavy badge */}
       {step.is_computation_heavy && (
-        <p className="mt-2 text-xs text-camp-orange">
-          &#9201; This session involves calculations — budget extra time.
-        </p>
+        <div className="mt-2 inline-flex items-center gap-1 rounded-sm bg-[#F5F7FA] px-1.5 py-0.5">
+          <Timer size={10} className="text-[#8896A7] shrink-0" />
+          <span className="text-[9px] font-mono text-[#8896A7] leading-none">
+            Computation session
+          </span>
+        </div>
       )}
 
       {/* 7. CTA / completion indicator */}

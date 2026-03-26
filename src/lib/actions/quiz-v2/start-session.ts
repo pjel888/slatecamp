@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
+import { normalizeOptions } from '@/lib/utils/question'
 import type {
   StartSessionInput,
   StartSessionResult,
@@ -22,7 +23,7 @@ const toClientQuestion = (
   q: {
     question_id: string
     text: string
-    options: Array<{ id: string; letter: string; text: string }>
+    options: unknown
     prompt_image_url: string | null
     difficulty: number
     topic_id: string
@@ -37,11 +38,7 @@ const toClientQuestion = (
   image_alt_text: null,
   taxonomy_breadcrumb: q.breadcrumb ?? '',
   difficulty_label: toDifficultyLabel(q.difficulty ?? 0.5),
-  options: q.options.map((o) => ({
-    id: o.id,
-    letter: o.letter as 'A' | 'B' | 'C' | 'D',
-    text: o.text,
-  })),
+  options: normalizeOptions(q.options),
 })
 
 // ─── Action ──────────────────────────────────────────────────────────────────
@@ -53,7 +50,12 @@ export const startSession = async (
   const {
     data: { user },
   } = await getUser()
-  if (!user) throw new Error('Unauthorized')
+  if (!user) {
+    console.error('[startSession] No authenticated user')
+    throw new Error('Unauthorized')
+  }
+
+  console.log('[startSession] Starting for user:', user.id, 'mode:', input.mode)
 
   // 1. Merge user overrides with mode preset
   const mergedConfig = mergeWithPreset(input.mode, input.config)
@@ -91,34 +93,80 @@ export const startSession = async (
   )
 
   // Determine topic_ids to filter by
+  // NOTE: Supabase .in() has a ~50-UUID practical limit before hitting header overflow.
+  // For large sets (Camp/Storm/FullExam with no specific topics), skip the topic filter
+  // and query all questions — the shuffle + cap will handle diversity.
   let topicIds: string[] = []
+  let filterByDisciplineId: string | null = null
 
   if (topics.length > 0) {
-    // Use provided topic IDs directly
-    topicIds = topics
-  } else if (disciplines.length > 0) {
-    // Expand disciplines to leaf nodes
-    const { data: leafNodes } = await supabase
+    // User picked topics from the picker — these may be subject-level (level 1)
+    // or subtopic-level (level 2+). Questions are tagged at leaf level,
+    // so expand any non-leaf selections to their leaf children.
+    const { data: selectedNodes } = await supabase
       .from('taxonomy_tree')
-      .select('node_id')
-      .in('discipline_id', disciplines)
-      .eq('is_leaf', true)
-      .eq('is_cross_ref_only', false)
-      .is('deprecated_at', null)
+      .select('node_id, is_leaf')
+      .in('node_id', topics)
 
-    topicIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
+    const leafIds = (selectedNodes ?? [])
+      .filter((n: { is_leaf: boolean }) => n.is_leaf)
+      .map((n: { node_id: string }) => n.node_id)
+
+    const parentIds = (selectedNodes ?? [])
+      .filter((n: { is_leaf: boolean }) => !n.is_leaf)
+      .map((n: { node_id: string }) => n.node_id)
+
+    if (parentIds.length > 0) {
+      // Expand parent nodes to their leaf children
+      const { data: childLeaves } = await supabase
+        .from('taxonomy_tree')
+        .select('node_id')
+        .in('parent_id', parentIds)
+        .eq('is_leaf', true)
+        .eq('is_cross_ref_only', false)
+        .is('deprecated_at', null)
+
+      leafIds.push(...(childLeaves ?? []).map((n: { node_id: string }) => n.node_id))
+    }
+
+    // Resolve cross-references: for any selected parent that maps to content
+    // in other subjects (e.g. Laws & Codes → PPJ, DSGN, MEPF), pull in those
+    // target subtopics' leaf children too. This works for pure cross-ref
+    // selections AND mixed selections (Laws + regular subtopics together).
+    if (parentIds.length > 0) {
+      const { data: crossRefs } = await supabase
+        .from('taxonomy_cross_references')
+        .select('target_node_id')
+        .in('source_node_id', parentIds)
+
+      if (crossRefs && crossRefs.length > 0) {
+        const targetIds = crossRefs.map((cr: { target_node_id: string }) => cr.target_node_id)
+        const { data: crossRefLeaves } = await supabase
+          .from('taxonomy_tree')
+          .select('node_id')
+          .in('parent_id', targetIds)
+          .eq('is_leaf', true)
+          .eq('is_cross_ref_only', false)
+          .is('deprecated_at', null)
+
+        // Deduplicate — a leaf may already be in the set from direct expansion
+        const existingSet = new Set(leafIds)
+        for (const n of (crossRefLeaves ?? [])) {
+          if (!existingSet.has(n.node_id)) leafIds.push(n.node_id)
+        }
+      }
+    }
+
+    topicIds = leafIds.length > 0 ? leafIds : topics
+  } else if (disciplines.length > 0 && disciplines.length <= 3) {
+    // Filter by discipline_id on questions table via taxonomy join
+    // Don't expand to leaf nodes — use discipline filter instead
+    filterByDisciplineId = disciplines[0]
   } else if (disciplineId) {
-    // Fall back to user's active discipline
-    const { data: leafNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id')
-      .eq('discipline_id', disciplineId)
-      .eq('is_leaf', true)
-      .eq('is_cross_ref_only', false)
-      .is('deprecated_at', null)
-
-    topicIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
+    // Fall back to user's active discipline — filter at discipline level, not leaf level
+    filterByDisciplineId = disciplineId
   }
+  // If none of the above: query ALL questions (Camp default behavior)
 
   // 4. Build difficulty filter
   let difficultyRange: { min: number; max: number } | null = null
@@ -134,9 +182,28 @@ export const startSession = async (
     )
     .limit(questionCount * 3) // fetch extras to allow exclusion filtering
 
-  if (topicIds.length > 0) {
+  if (topicIds.length > 0 && topicIds.length <= 100) {
+    // Safe for .in() URL param (under ~16KB header limit)
     questionQuery = questionQuery.in('topic_id', topicIds)
+  } else if (filterByDisciplineId) {
+    // Large set or discipline-level filter — get topic IDs for the discipline
+    // and use a more targeted approach: fetch questions that belong to any topic
+    // under this discipline. Since questions reference topic_id (leaf nodes),
+    // we need the leaf node IDs, but we'll query in batches to avoid overflow.
+    const { data: leafNodes } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id')
+      .eq('discipline_id', filterByDisciplineId)
+      .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+
+    const batchIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
+    if (batchIds.length > 0) {
+      questionQuery = questionQuery.in('topic_id', batchIds)
+    }
   }
+  // else: no filter — query all questions (Camp/mixed mode default)
 
   if (difficultyRange) {
     questionQuery = questionQuery
@@ -207,7 +274,12 @@ export const startSession = async (
     .select('session_id')
     .single()
 
-  if (sessionError) throw sessionError
+  if (sessionError) {
+    console.error('[startSession] Failed to create session:', sessionError)
+    throw sessionError
+  }
+
+  console.log('[startSession] Session created:', session.session_id, 'with', selectedQuestions.length, 'questions')
 
   // 9. Shape questions for client (strip correct_option_id, rationale, wrong_answer_rationales)
   const clientQuestions: QuestionForClient[] = selectedQuestions.map(

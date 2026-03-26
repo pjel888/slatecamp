@@ -395,7 +395,8 @@ CREATE TABLE public.blindspot_queues (
   status              TEXT DEFAULT 'pending',
   pre_queue_mastery   JSONB DEFAULT '{}'::jsonb,
   post_queue_mastery  JSONB DEFAULT '{}'::jsonb,
-  nodes_improved      INTEGER DEFAULT 0
+  nodes_improved      INTEGER DEFAULT 0,
+  recommendation_type TEXT DEFAULT 'quiz'
 );
 
 -- ── anon_diagnostic_sessions ─────────────────────────────────

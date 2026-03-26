@@ -16,7 +16,7 @@ export interface ComponentMeta {
   slug: string
   title: string
   description: string
-  domain: 'wiki' | 'questions' | 'testing-path' | 'shared' | 'content-blocks' | 'widgets'
+  domain: 'wiki' | 'questions' | 'testing-path' | 'shared' | 'content-blocks' | 'widgets' | 'notifications' | 'quiz-v2'
   status: 'stable' | 'beta' | 'deprecated'
   importPath: string
   filePath: string

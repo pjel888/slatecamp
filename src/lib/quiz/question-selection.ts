@@ -1,6 +1,7 @@
 // ─── Question Selection Algorithm (Doc 3 §7) ────────────────────────────────
 // Selects questions based on mode config: topics, difficulty, freshness
 
+import { normalizeOptions } from '@/lib/utils/question'
 import type { QuizSessionConfig, QuizMode } from '@/types/quiz-config'
 
 interface SelectionParams {
@@ -87,7 +88,7 @@ export const difficultyToBand = (level: number): 'easy' | 'medium' | 'hard' => {
 export const stripQuestionForClient = (question: {
   question_id: string
   text: string
-  options: Array<{ id: string; text: string; is_correct?: boolean }>
+  options: unknown
   prompt_image_url?: string | null
   difficulty?: number
   topic_id?: string
@@ -96,17 +97,12 @@ export const stripQuestionForClient = (question: {
   position,
   stem: question.text,
   image_url: question.prompt_image_url ?? null,
-  image_alt_text: null, // TODO: populate from question metadata
-  taxonomy_breadcrumb: '', // TODO: populate from taxonomy join
+  image_alt_text: null,
+  taxonomy_breadcrumb: '',
   difficulty_label: difficultyToBand(question.difficulty ?? 3) === 'easy'
     ? 'Easy' as const
     : difficultyToBand(question.difficulty ?? 3) === 'medium'
       ? 'Medium' as const
       : 'Hard' as const,
-  options: question.options.map((opt, idx) => ({
-    id: opt.id,
-    letter: (['A', 'B', 'C', 'D'] as const)[idx],
-    text: opt.text,
-    // NOTE: is_correct is intentionally excluded for client security
-  })),
+  options: normalizeOptions(question.options),
 })

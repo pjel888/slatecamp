@@ -1,0 +1,801 @@
+{
+  "id": "DESIGN-004",
+  "title": "San Benildo Elementary School - GI Zone Institutional Campus",
+  "building_type": "Government/Institutional - School Building",
+  "difficulty": 3,
+  "time_limit_minutes": 100,
+  "brief": "The City Government is constructing San Benildo Elementary School on a 1,200 sqm rectangular institutional lot in the GI zone. The site is bounded by the 30m east-facing road frontage, a 3m creek easement (PD 1067) along the south boundary, an adjacent church to the north, and residential properties to the west. The 4-storey building will accommodate approximately 600 students across 8 classrooms per floor, with dedicated ground-level administrative offices, faculty facilities, an open-stack library, school canteen with seating, and a covered court. The design must comply with BP 344 accessibility standards including ramp access, accessible toilets per floor, and corridor widths. A flagpole plaza occupies the front setback. The project presents challenges in managing creek easement constraints, applying PSO and setback rules, and integrating school-specific program elements within tight buildable dimensions.",
+  "site_data": {
+    "total_lot_area_sqm": 1200,
+    "lot_configuration": "Rectangular",
+    "dimensions": {
+      "east_frontage_m": 30,
+      "north_south_depth_m": 40,
+      "note": "East side faces road (30m frontage), lot extends 40m westward"
+    },
+    "frontage_direction": "East",
+    "zone": "GI",
+    "zoning_parameters": {
+      "pso_percent": 50,
+      "bhl_m": 15,
+      "flar_min": 1.5,
+      "flar_max": 2.5,
+      "isa_percent": 30,
+      "usa_percent": 20
+    },
+    "setback_height_bracket": "Over 9m to 12m",
+    "setback_values_m": {
+      "front_east": 6.0,
+      "side_north": 2.0,
+      "side_south": 2.0,
+      "rear_west": 3.0,
+      "note": "South 3m creek easement governs over 2m side setback"
+    },
+    "constraints": {
+      "creek_easement_south": {
+        "width_m": 3.0,
+        "regulation": "PD 1067",
+        "effect": "Prohibits building within 3m of south boundary"
+      },
+      "slope": {
+        "percent": 2.5,
+        "direction": "Toward road right-of-way"
+      },
+      "rrow_width_m": 12
+    },
+    "adjacent_uses": {
+      "north": "Church (institutional)",
+      "south": "Creek (easement)",
+      "west": "Residential (single-family, rear)",
+      "east": "Road (public right-of-way)"
+    },
+    "site_orientation": "East-facing frontage; north-south dimension = 30m; east-west depth = 40m"
+  },
+  "program": {
+    "building_type": "4-Storey Elementary School",
+    "total_storeys": 4,
+    "ground_floor": {
+      "admin_offices": "Principal, vice-principal, registrar (40 sqm)",
+      "faculty_room": "Teacher preparation and rest area (30 sqm)",
+      "library": "Open-stack circulation, carrel seating, media center (80 sqm)",
+      "canteen": "Food service and dining area (60 sqm)",
+      "covered_court": "Indoor multipurpose court adjacent to building",
+      "accessible_restroom": "Per BP 344",
+      "ramp": "6° slope entry from plaza"
+    },
+    "floors_2_3_4": {
+      "classrooms": "8 per floor × 3 floors = 24 units (48-56 sqm each)",
+      "science_laboratory": "One per floor (70 sqm)",
+      "computer_laboratory": "One per floor (60 sqm)",
+      "accessible_restroom": "Per BP 344",
+      "corridor_width": "2.0m minimum (BP 344 universal access)"
+    },
+    "total_floor_area_programmed": "Approximately 2,400 sqm (4 floors × 600 sqm average per floor)",
+    "accessibility_requirements": {
+      "ramp": "6% slope (1:16.67), handrails both sides, landing platforms",
+      "toilet": "Minimum 1 per floor, min 1.5m × 1.8m clear floor space",
+      "corridors": "Minimum 2.0m width for wheelchair passage and two-way flow",
+      "classrooms": "Min 1.0m circulation space, appropriate fixture heights"
+    },
+    "site_features": {
+      "flagpole_plaza": "Positioned in front setback area",
+      "covered_walkways": "Between blocks or additional facilities"
+    }
+  },
+  "code_references": {
+    "national_building_code": "NBC/BCBH (Building Code – Batasang-Codal)",
+    "accessibility": "Republic Act 7277 (Magna Carta for PWD) and BP 344 (Accessibility Law) – 6% max ramp slope, minimum 2m corridor width, accessible toilets per floor, universal design principles",
+    "zoning": "Local Government Code / City Zoning Ordinance – GI Zone, PSO 50%, BHL 15m, setback standards for institutional use",
+    "water_code": "PD 1067 (Water Code) – 3m creek easement/buffer zone preservation",
+    "school_code": "DepEd / School Design Standards – Classroom dimensions (48-56 sqm), facility types, spacing, sports courts",
+    "fire_code": "Fire Code of the Philippines – Exit widths, stair widths, travel distance, accessible egress routes"
+  },
+  "computation_sheet": {
+    "lot_area": {
+      "computation": "30m × 40m",
+      "result": 1200,
+      "unit": "sqm",
+      "note": "Rectangular lot; 30m frontage (E-W direction along road), 40m depth (N-S direction)"
+    },
+    "pso_calculation": {
+      "formula": "Total lot area × PSO %",
+      "computation": "1,200 × 0.50",
+      "result": 600,
+      "unit": "sqm",
+      "interpretation": "Maximum footprint allowed by Parking Setback Ordinance"
+    },
+    "ambf_from_setbacks": {
+      "buildable_n_s_dimension": {
+        "formula": "Frontage - side setback (N) - creek easement (S)",
+        "computation": "30 - 2.0 - 3.0",
+        "result": 25,
+        "unit": "m",
+        "note": "Creek easement (3m) governs over standard side setback (2m)"
+      },
+      "buildable_e_w_dimension": {
+        "formula": "Depth - front setback (E) - rear setback (W)",
+        "computation": "40 - 6.0 - 3.0",
+        "result": 31,
+        "unit": "m"
+      },
+      "buildable_area": {
+        "formula": "N-S dimension × E-W dimension",
+        "computation": "25 × 31",
+        "result": 775,
+        "unit": "sqm",
+        "note": "Area available after setbacks and creek easement"
+      }
+    },
+    "ambf_governing": {
+      "pso_ambf": 600,
+      "setback_ambf": 775,
+      "governing_value": 600,
+      "governing_mechanism": "PSO",
+      "note": "PSO is more restrictive (600 < 775); setbacks are adequate but PSO controls"
+    },
+    "isa_calculation": {
+      "formula": "Total lot area × ISA %",
+      "computation": "1,200 × 0.30",
+      "result": 360,
+      "unit": "sqm"
+    },
+    "usa_calculation": {
+      "formula": "Total lot area × USA %",
+      "computation": "1,200 × 0.20",
+      "result": 240,
+      "unit": "sqm"
+    },
+    "tosl_calculation": {
+      "formula": "ISA + USA",
+      "computation": "360 + 240",
+      "result": 600,
+      "unit": "sqm",
+      "note": "Total Open Space Lands"
+    },
+    "maca_calculation": {
+      "formula": "PSO % + ISA %",
+      "computation": "50 + 30",
+      "result": 80,
+      "unit": "%",
+      "interpretation": "Maximum Area of Construction and Access"
+    },
+    "building_height": {
+      "formula": "Number of storeys × typical floor-to-floor height",
+      "computation": "4 × 3.0m",
+      "result": 12.0,
+      "unit": "m",
+      "note": "Height bracket: over 9m to 12m (inclusive)"
+    },
+    "bhl_check": {
+      "formula": "BHL ÷ typical floor height",
+      "computation": "15 ÷ 3.0",
+      "result": 5,
+      "unit": "storeys",
+      "note": "4-storey school complies; BHL allows up to 5 storeys"
+    },
+    "setback_values_at_12m": {
+      "note": "Building at 12.0m falls in 'over 9m to 12m' bracket (12m is inclusive endpoint)",
+      "front_m": 6.0,
+      "side_m": 2.0,
+      "rear_m": 3.0,
+      "interpretation": "Standard setbacks for height bracket 9-12m"
+    },
+    "creek_easement_interaction": {
+      "standard_side_setback_m": 2.0,
+      "creek_easement_width_m": 3.0,
+      "governing_setback": "3.0m (creek easement is greater)",
+      "note": "Both setback and easement requirements apply; the greater value governs"
+    },
+    "tgfa_calculation": {
+      "formula": "AMBF × number of storeys",
+      "computation": "600 × 4",
+      "result": 2400,
+      "unit": "sqm",
+      "interpretation": "Total Gross Floor Area"
+    },
+    "flar_calculation": {
+      "formula": "TGFA ÷ total lot area",
+      "computation": "2,400 ÷ 1,200",
+      "result": 2.0,
+      "unit": "ratio",
+      "compliance": "Within range 1.5-2.5 ✓"
+    },
+    "hidden_trap_1_note": "Creek easement (3m) overrides standard side setback (2m). Students using 2.0m alone get 26m × 31m = 806 sqm, which still doesn't change the governing value (PSO = 600) but represents incorrect setback application.",
+    "hidden_trap_2_note": "PSO governs over setback-derived buildable area. Students conditioned to 'pick the smaller number' may not recognize that PSO can be the controlling parameter, leading to incorrect AMBF or buildable area statements.",
+    "hidden_trap_3_note": "Building height of 12.0m exactly at the boundary between brackets. Incorrect interpretation (12m as 'over 12m' instead of 'to 12m inclusive') leads to setback values of front=6.0m, side=3.0m, rear=3.0m, giving buildable area of 24m × 31m = 744 sqm—still controlled by PSO but wrong setback answer."
+  },
+  "hidden_traps": [
+    {
+      "trap_number": 1,
+      "title": "Creek Easement vs Side Setback Override",
+      "description": "The 3m creek easement along the south boundary OVERRIDES the 2.0m standard side setback. Students who apply only the 2.0m setback gain an extra 1 meter in buildable width (26m vs 25m, yielding 806 sqm instead of 775 sqm). Although PSO (600 sqm) still governs and masks this error in final AMBF, incorrect setback application will generate wrong answers for 'buildable area from setbacks alone' questions.",
+      "incorrect_approach": "South buildable distance = 40m - 6.0m (front) - 3.0m (rear) = 31m; N-S dimension = 30m - 2.0m (north only, ignoring easement) = 28m; buildable = 28 × 31 = 868 sqm",
+      "correct_approach": "South buildable distance = 40m - 6.0m (front) - 3.0m (rear) = 31m; N-S dimension = 30m - 2.0m (north) - 3.0m (south easement) = 25m; buildable = 25 × 31 = 775 sqm. PSO (600) governs.",
+      "affected_question_types": ["SP", "DC"]
+    },
+    {
+      "trap_number": 2,
+      "title": "PSO as Governing Mechanism (Not Always the Smaller Number)",
+      "description": "In most scenarios, setback-derived buildable area is smaller than PSO-allowed area, making setbacks the governing constraint. Here, PSO (600 sqm) is MORE restrictive than setback buildable area (775 sqm). Students trained to reflexively pick the lower number may state AMBF = 775 sqm or treat setbacks as governing when PSO actually controls. This fundamental misunderstanding of 'governing' versus 'available' parameters will propagate through derivative calculations (TGFA, FLAR).",
+      "incorrect_approach": "AMBF = 775 sqm (from setbacks, treating setbacks as 'the answer'). Then TGFA = 775 × 4 = 3,100 sqm. FLAR = 3,100 ÷ 1,200 = 2.58 (EXCEEDS maximum 2.5).",
+      "correct_approach": "AMBF = min(600 PSO, 775 setback) = 600 sqm. Then TGFA = 600 × 4 = 2,400 sqm. FLAR = 2,400 ÷ 1,200 = 2.0 (COMPLIES).",
+      "affected_question_types": ["DC", "SP"]
+    },
+    {
+      "trap_number": 3,
+      "title": "Height Bracket Boundary at 12.0m Exact",
+      "description": "Building height is exactly 12.0m (4 floors × 3.0m). The setback table rule is 'over 9m to 12m' (inclusive of 12m). Students who misinterpret this as '12m belongs in the next bracket (over 12m)' will apply incorrect setback values: front=6.0m, side=3.0m, rear=3.0m (from the 12-15m bracket). This yields N-S buildable = 30 - 3.0 - 3.0 = 24m, and area = 24 × 31 = 744 sqm. Although PSO (600) still governs, the student provides a wrong answer for 'setback-derived buildable area' and demonstrates fundamental misunderstanding of bracket inclusion rules.",
+      "incorrect_approach": "Building height 12.0m → 'over 12m' bracket → setbacks: front=6.0m, side=3.0m, rear=3.0m → N-S dimension = 30 - 3.0 - 3.0 = 24m → buildable = 24 × 31 = 744 sqm",
+      "correct_approach": "Building height 12.0m → 'over 9m to 12m' bracket (12 is included) → setbacks: front=6.0m, side=2.0m, rear=3.0m → N-S dimension = 30 - 2.0 - 3.0 = 25m → buildable = 25 × 31 = 775 sqm. PSO (600) governs AMBF.",
+      "affected_question_types": ["SP", "DC"]
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "category": "Parking Setback Ordinance (PSO)",
+      "question_stem": "What is the maximum ground-floor footprint (AMBF) allowed under the PSO requirement for this 1,200 sqm GI-zoned lot?",
+      "options": [
+        "600 sqm",
+        "500 sqm",
+        "775 sqm",
+        "1,200 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "PSO for GI zone is 50%. AMBF = 1,200 sqm × 0.50 = 600 sqm.",
+        "distractor_0": "500 sqm: confusion with PSO = 40% (some other zone like C-2).",
+        "distractor_1": "775 sqm: buildable area derived from setback constraints, not PSO. Common error when student confuses setback-derived area with PSO-allowed area.",
+        "distractor_2": "1,200 sqm: no reduction applied; student ignored PSO requirement entirely or assumed 100% coverage.",
+        "takeaway": "PSO is a regulatory maximum on footprint based on zone. Compute it directly from the code percentage, not from physical setback geometry."
+      },
+      "solution_steps": [
+        "Identify zone: GI (Government/Institutional)",
+        "Locate PSO for GI: 50%",
+        "Apply formula: AMBF = Total lot area × PSO% = 1,200 × 0.50",
+        "Result: 600 sqm"
+      ],
+      "code_citation": "City Zoning Ordinance, GI Zone, PSO parameter"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "category": "Allowable Building Footprint (AMBF) via Setbacks",
+      "question_stem": "What is the maximum ground-floor footprint derived from setback and easement constraints (before applying PSO)? Show the governing N-S and E-W buildable dimensions.",
+      "options": [
+        "25m (N-S) × 31m (E-W) = 775 sqm",
+        "26m (N-S) × 31m (E-W) = 806 sqm",
+        "28m (N-S) × 31m (E-W) = 868 sqm",
+        "25m (N-S) × 34m (E-W) = 850 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "N-S: 30m frontage - 2.0m (north setback) - 3.0m (creek easement governs south) = 25m. E-W: 40m depth - 6.0m (front) - 3.0m (rear) = 31m. Area = 25 × 31 = 775 sqm. This is BEFORE applying PSO; PSO (600 sqm) is more restrictive and governs final AMBF.",
+        "distractor_0": "26m × 31m: Ignores creek easement; uses only the 2.0m standard setback for south side. Yields 806 sqm and misses the regulatory override.",
+        "distractor_1": "28m × 31m: Applies only north setback (2.0m), ignoring south constraints entirely. Results in incorrect 868 sqm.",
+        "distractor_2": "25m × 34m: Correct N-S but incorrect E-W (uses 34m instead of 31m, suggesting student subtracted only 6m or applied wrong rear setback).",
+        "takeaway": "Creek easement (PD 1067) overrides standard side setback. Always check regulatory easements and use the GREATER required setback. Buildable area from geometry may differ from PSO-controlled AMBF."
+      },
+      "solution_steps": [
+        "Identify lot dimensions: 30m (N-S frontage) × 40m (E-W depth)",
+        "North setback at 12m height: 2.0m",
+        "South: creek easement = 3.0m (governs over 2.0m standard setback)",
+        "N-S buildable: 30 - 2.0 - 3.0 = 25m",
+        "Front setback (east): 6.0m",
+        "Rear setback (west): 3.0m",
+        "E-W buildable: 40 - 6.0 - 3.0 = 31m",
+        "Setback-derived AMBF: 25 × 31 = 775 sqm",
+        "Note: PSO (600 sqm) is more restrictive and governs final AMBF."
+      ],
+      "code_citation": "Setback schedule for 9-12m height bracket; PD 1067 (Water Code) creek easement"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "category": "Impervious Surface Area (ISA)",
+      "question_stem": "Calculate the required Impervious Surface Area (ISA) for this lot.",
+      "options": [
+        "360 sqm",
+        "300 sqm",
+        "400 sqm",
+        "240 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "ISA = Total lot area × ISA% = 1,200 × 0.30 = 360 sqm.",
+        "distractor_0": "300 sqm: error calculating 25% instead of 30% (1,200 × 0.25).",
+        "distractor_1": "400 sqm: confuses ISA with USA or uses wrong percentage (e.g., 33%).",
+        "distractor_2": "240 sqm: applies USA% (20%) instead of ISA%, or calculates ISA + USA incorrectly.",
+        "takeaway": "ISA is a zoning requirement specifying minimum hard surface. Apply the correct zone percentage directly; do not confuse with USA, TOSL, or MACA."
+      },
+      "solution_steps": [
+        "Total lot area: 1,200 sqm",
+        "ISA% for GI zone: 30%",
+        "ISA = 1,200 × 0.30 = 360 sqm"
+      ],
+      "code_citation": "City Zoning Ordinance, GI Zone parameters"
+    },
+    {
+      "number": 4,
+      "type": "DC",
+      "category": "Unbuilt Space Area (USA)",
+      "question_stem": "Calculate the required Unbuilt Space Area (USA) for this institutional lot.",
+      "options": [
+        "240 sqm",
+        "300 sqm",
+        "200 sqm",
+        "360 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "USA = Total lot area × USA% = 1,200 × 0.20 = 240 sqm.",
+        "distractor_0": "300 sqm: error using 25% instead of 20%, or confusing with ISA.",
+        "distractor_1": "200 sqm: rounds down incorrectly or applies wrong percentage (16.7%).",
+        "distractor_2": "360 sqm: applies ISA% (30%) to this question by mistake.",
+        "takeaway": "USA is distinct from ISA. Apply the correct zone percentage; verify both values are required (ISA + USA = TOSL)."
+      },
+      "solution_steps": [
+        "Total lot area: 1,200 sqm",
+        "USA% for GI zone: 20%",
+        "USA = 1,200 × 0.20 = 240 sqm"
+      ],
+      "code_citation": "City Zoning Ordinance, GI Zone parameters"
+    },
+    {
+      "number": 5,
+      "type": "DC",
+      "category": "Total Open Space Lands (TOSL)",
+      "question_stem": "What is the total minimum open space requirement (TOSL) for this lot?",
+      "options": [
+        "600 sqm",
+        "360 sqm",
+        "240 sqm",
+        "800 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "TOSL = ISA + USA = 360 + 240 = 600 sqm.",
+        "distractor_0": "360 sqm: only ISA; student omitted USA component.",
+        "distractor_1": "240 sqm: only USA; student omitted ISA component.",
+        "distractor_2": "800 sqm: arbitrary number or confusion with PSO-allowed area.",
+        "takeaway": "TOSL combines both hard surface (ISA) and soft surface (USA) requirements. Both must be provided; do not use one to substitute for the other."
+      },
+      "solution_steps": [
+        "ISA: 1,200 × 0.30 = 360 sqm",
+        "USA: 1,200 × 0.20 = 240 sqm",
+        "TOSL = 360 + 240 = 600 sqm"
+      ],
+      "code_citation": "City Zoning Ordinance, GI Zone parameters"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "category": "Maximum Area of Construction and Access (MACA)",
+      "question_stem": "Calculate MACA (Maximum Area of Construction and Access) for this GI-zoned lot.",
+      "options": [
+        "80%",
+        "70%",
+        "75%",
+        "50%"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "MACA = PSO% + ISA% = 50 + 30 = 80%.",
+        "distractor_0": "70%: error adding PSO + USA (50 + 20) instead of PSO + ISA.",
+        "distractor_1": "75%: miscalculation or use of wrong zone percentages.",
+        "distractor_2": "50%: only PSO; student omitted ISA component.",
+        "takeaway": "MACA represents the combined footprint and hard surface allowance. It is derived from PSO (building footprint) plus ISA (hard-paved surfaces), not USA."
+      },
+      "solution_steps": [
+        "PSO for GI: 50%",
+        "ISA for GI: 30%",
+        "MACA = 50 + 30 = 80%"
+      ],
+      "code_citation": "City Zoning Ordinance, MACA calculation"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "category": "Total Gross Floor Area (TGFA)",
+      "question_stem": "Calculate the Total Gross Floor Area (TGFA) for this 4-storey institutional building, given that AMBF is controlled by PSO.",
+      "options": [
+        "2,400 sqm",
+        "3,100 sqm",
+        "1,800 sqm",
+        "2,100 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "AMBF = 600 sqm (controlled by PSO, 50% of 1,200). TGFA = AMBF × storeys = 600 × 4 = 2,400 sqm.",
+        "distractor_0": "3,100 sqm: uses setback-derived AMBF (775 sqm) instead of PSO-controlled value. 775 × 4 = 3,100 (incorrect because PSO governs).",
+        "distractor_1": "1,800 sqm: incorrect storey count or AMBF calculation (e.g., 450 × 4).",
+        "distractor_2": "2,100 sqm: partial calculation or error in storey count (e.g., 525 × 4).",
+        "takeaway": "TGFA depends on AMBF, which is governed by the MORE RESTRICTIVE of PSO or setback constraints. Here, PSO (600) < setback area (775), so PSO controls. Always verify which mechanism actually limits the footprint."
+      },
+      "solution_steps": [
+        "Determine AMBF: PSO (600 sqm) governs over setback-derived area (775 sqm)",
+        "Number of storeys: 4",
+        "TGFA = 600 × 4 = 2,400 sqm"
+      ],
+      "code_citation": "Zoning Ordinance; building design standards"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "category": "Floor Area Ratio (FLAR)",
+      "question_stem": "Verify that the FLAR for this school building complies with the GI-zone range (1.5-2.5).",
+      "options": [
+        "FLAR = 2.0 ✓ (complies)",
+        "FLAR = 2.58 ✗ (exceeds maximum)",
+        "FLAR = 1.8 ✓ (complies)",
+        "FLAR = 3.1 ✗ (exceeds maximum)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "FLAR = TGFA ÷ lot area = 2,400 ÷ 1,200 = 2.0. This is exactly in the middle of the 1.5-2.5 range and complies.",
+        "distractor_0": "2.58: uses setback-derived AMBF (775) instead of PSO-controlled (600). TGFA = 775 × 4 = 3,100; FLAR = 3,100 ÷ 1,200 = 2.58 (exceeds 2.5). Results from Trap #2.",
+        "distractor_1": "1.8: incorrect TGFA calculation (e.g., 2,160 sqm; 2,160 ÷ 1,200 = 1.8) or AMBF error.",
+        "distractor_2": "3.1: uses overestimated TGFA or incorrect lot area.",
+        "takeaway": "FLAR compliance depends on accurate AMBF determination. If you use the wrong controlling mechanism (setback instead of PSO), FLAR will exceed limits. Always verify that both AMBF and FLAR are consistent with the governing constraint."
+      },
+      "solution_steps": [
+        "TGFA: 2,400 sqm (600 AMBF × 4 storeys)",
+        "Lot area: 1,200 sqm",
+        "FLAR = 2,400 ÷ 1,200 = 2.0",
+        "Range: 1.5-2.5",
+        "Result: 2.0 is within range. Complies. ✓"
+      ],
+      "code_citation": "City Zoning Ordinance, FLAR limits for GI zone"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "category": "Building Height Limit (BHL)",
+      "question_stem": "This school is designed as a 4-storey building with 3.0m floor-to-floor heights. Verify compliance with the GI-zone BHL of 15m. How many storeys could this lot legally support?",
+      "options": [
+        "5 storeys (12m < 15m limit; 4-storey school complies)",
+        "4 storeys (building height 12m equals the limit)",
+        "3 storeys (building must not exceed 9m)",
+        "6 storeys (15m ÷ 3.0m = 5, rounded up)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "BHL = 15m. Max storeys = 15 ÷ 3.0 = 5 storeys. Building height = 4 × 3.0 = 12m, which is less than 15m. The 4-storey school complies with the height limit.",
+        "distractor_0": "4 storeys: treats 12m as equal to the limit and suggests no margin for compliance or confuses the calculation.",
+        "distractor_1": "3 storeys: incorrectly applies a 9m sub-limit or misreads the BHL.",
+        "distractor_2": "6 storeys: incorrect rounding or confuses BHL with number of storeys allowed (15m ÷ 3.0 = 5, not 6).",
+        "takeaway": "BHL is a maximum height in meters, not storeys. Divide by typical floor-to-floor height to determine max storey count. 4-storey at 12m is well within a 15m limit."
+      },
+      "solution_steps": [
+        "GI-zone BHL: 15m",
+        "Typical floor-to-floor height: 3.0m",
+        "Max storey count: 15 ÷ 3.0 = 5 storeys",
+        "Proposed building: 4 storeys × 3.0m = 12m",
+        "12m < 15m. Complies. ✓"
+      ],
+      "code_citation": "City Zoning Ordinance, GI Zone BHL parameter"
+    },
+    {
+      "number": 10,
+      "type": "SP",
+      "category": "Creek Easement Effect on South Setback",
+      "question_stem": "The 3m creek easement (PD 1067) runs along the south boundary. How does this affect the buildable dimension on the south side compared to the standard side setback of 2.0m at this 12m building height?",
+      "options": [
+        "Creek easement (3m) is greater; it governs and sets the required clearance from south boundary.",
+        "Standard side setback (2m) applies; creek easement is a separate environmental feature and does not affect setback rules.",
+        "Both are required; total clearance from south boundary is 3m + 2m = 5m.",
+        "Creek easement is advisory only; the stricter of the two is the standard setback (2m)."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Regulatory easements override standard setbacks when the easement is wider. Here, 3m > 2m, so the building must be 3m from the south boundary. Both are 'required,' but the easement governs the minimum distance.",
+        "distractor_0": "Only the standard 2m setback applies: misunderstands the regulatory hierarchy. Easements are binding constraints that supersede standard setback tables.",
+        "distractor_1": "Total clearance is 5m: conflates 'required' with 'additive.' Easement width and setback distance are mutually exclusive minimums; use the greater, not the sum.",
+        "distractor_2": "Easement is advisory: completely ignores the legal binding nature of PD 1067. Easements are enforceable encumbrances; they are not optional.",
+        "takeaway": "When a specific regulatory easement (water code, historic district, etc.) is wider than a standard setback, the easement governs. Always cross-check against site-specific easements and encumbrances before applying generic setback tables."
+      },
+      "solution_steps": [
+        "Standard side setback at 12m height: 2.0m",
+        "Creek easement per PD 1067: 3.0m",
+        "Compare: 3.0m > 2.0m",
+        "Governing constraint: creek easement (3.0m)",
+        "Interpretation: Building must maintain 3.0m clearance from south boundary."
+      ],
+      "code_citation": "PD 1067 (Water Code); setback schedule"
+    },
+    {
+      "number": 11,
+      "type": "SP",
+      "category": "Setback Values at 12m Building Height",
+      "question_stem": "Confirm the setback values applicable to this 4-storey school building at 12.0m height. Which height bracket does 12m fall into, and what are the resulting setback values?",
+      "options": [
+        "Over 9m to 12m bracket: front 6.0m, side 2.0m, rear 3.0m",
+        "Over 12m to 15m bracket: front 6.0m, side 3.0m, rear 3.0m",
+        "Over 9m to 12m bracket: front 4.5m, side 2.0m, rear 3.0m",
+        "Over 6m to 9m bracket: front 4.5m, side 1.5m, rear 3.0m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "At exactly 12m, the building falls into the 'over 9m to 12m' bracket (12 is the inclusive upper endpoint). Setbacks for this bracket are front 6.0m, side 2.0m, rear 3.0m.",
+        "distractor_0": "Over 12m to 15m bracket: misinterprets the bracket boundary, treating 12m as exceeding the 9-12m bracket and entering the next one. Leads to incorrectly stricter setbacks (side 3.0m instead of 2.0m).",
+        "distractor_1": "Over 9m to 12m bracket with front 4.5m: correct bracket but wrong front setback value (confuses with another zone or height category).",
+        "distractor_2": "Over 6m to 9m bracket: completely wrong bracket; suggests fundamental misreading of building height or setback table structure.",
+        "takeaway": "Height bracket endpoints are inclusive. 'Over 9m to 12m' includes 9.01m through 12.0m exactly. Do not bump a 12.0m building into the next bracket. Verify the exact setback table structure from your code."
+      },
+      "solution_steps": [
+        "Building height: 4 storeys × 3.0m = 12.0m",
+        "Identify bracket: 'Over 9m to 12m' (12 is inclusive upper limit)",
+        "Applicable setbacks for 9-12m bracket:",
+        "  – Front (east): 6.0m",
+        "  – Side (north): 2.0m",
+        "  – Side (south): 2.0m (superseded by creek easement 3.0m)",
+        "  – Rear (west): 3.0m"
+      ],
+      "code_citation": "City Zoning Ordinance, setback schedule for institutional buildings"
+    },
+    {
+      "number": 12,
+      "type": "SP",
+      "category": "Buildable Area from Setbacks (Comprehensive)",
+      "question_stem": "Synthesize all setback and easement constraints to calculate the buildable footprint area. What are the final N-S and E-W buildable dimensions, and how does this compare to PSO-controlled AMBF?",
+      "options": [
+        "25m (N-S) × 31m (E-W) = 775 sqm buildable; PSO (600 sqm) is more restrictive and controls AMBF.",
+        "26m (N-S) × 31m (E-W) = 806 sqm buildable; setbacks are the governing constraint.",
+        "30m (N-S) × 34m (E-W) = 1,020 sqm buildable; no setbacks apply to institutional buildings.",
+        "25m (N-S) × 27m (E-W) = 675 sqm buildable; creek easement requires additional rear setback."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "N-S: 30m - 2.0m (north) - 3.0m (creek easement south) = 25m. E-W: 40m - 6.0m (front) - 3.0m (rear) = 31m. Area = 775 sqm. PSO (600 sqm) is more restrictive, so AMBF = 600 sqm (PSO governs).",
+        "distractor_0": "26m × 31m: ignores creek easement; uses only standard 2.0m south setback. Yields 806 sqm but misses regulatory override. This is Trap #1.",
+        "distractor_1": "30m × 34m: ignores setbacks entirely; suggests institutional buildings are exempt (false). Results in inflated buildable area.",
+        "distractor_2": "25m × 27m: correct N-S but incorrect E-W (suggests rear setback of 13m or front setback of 0m). Misunderstands setback geometry.",
+        "takeaway": "Always apply ALL site constraints: standard setbacks, easements, and height-based brackets. Recognize when PSO is more restrictive than geometric setbacks. The buildable footprint is the intersection of all constraints, not the union."
+      },
+      "solution_steps": [
+        "Lot dimensions: 30m (N-S) × 40m (E-W)",
+        "North boundary: 30m",
+        "  – North setback (2.0m) → buildable from north = 30 - 2.0 = 28m",
+        "South boundary: 30m",
+        "  – Standard side setback: 2.0m",
+        "  – Creek easement (PD 1067): 3.0m",
+        "  – Governing (greater): 3.0m → buildable from south = 30 - 3.0 = 27m",
+        "  – Wait: recalculate. N-S buildable = 30 - 2.0 (north) - 3.0 (south) = 25m ✓",
+        "East boundary: 40m",
+        "  – Front setback (6.0m) → buildable from east = 40 - 6.0 = 34m",
+        "West boundary: 40m",
+        "  – Rear setback (3.0m) → buildable from west = 40 - 3.0 = 37m",
+        "  – Wait: E-W buildable = 40 - 6.0 (front) - 3.0 (rear) = 31m ✓",
+        "Setback-derived AMBF: 25 × 31 = 775 sqm",
+        "PSO-allowed AMBF: 1,200 × 0.50 = 600 sqm",
+        "Governing constraint: PSO (600 sqm < 775 sqm)",
+        "Final AMBF: 600 sqm"
+      ],
+      "code_citation": "Zoning setback schedule; PD 1067; PSO ordinance"
+    },
+    {
+      "number": 13,
+      "type": "ZN",
+      "category": "Classroom Adjacency and Layout Strategy",
+      "question_stem": "The school has 8 classrooms per floor (48-56 sqm each). Given the buildable footprint constraint (600 sqm AMBF), how should the floor plate be organized regarding classroom placement and adjacency to maximize natural light and minimize inter-classroom noise?",
+      "options": [
+        "Classrooms perimeter-distributed along north and east facades; administrative/service spaces (corridors, stairwells) core-centralized to buffer noise and manage utilities.",
+        "All classrooms concentrated in the core; administrative spaces at perimeter to maximize exterior walls for daylight.",
+        "Classrooms randomly distributed without regard to adjacency; rely entirely on mechanical systems for air quality.",
+        "Classrooms on floors 2-4 only; ground floor dedicated solely to administration, with no classroom space needed."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Optimal school layout places classrooms at the perimeter to access natural light and outside air; administrative/circulation spaces in the core buffer between classroom groups and manage mechanical/electrical routing. This is aligned with BP 344 and DepEd school design standards.",
+        "distractor_0": "Core classrooms: inefficient daylight access; reduces occupant comfort and increases energy demand. Violates DepEd guidance on classroom environment.",
+        "distractor_1": "Random distribution: ignores acoustic and thermal control principles. Creates unpredictable adjacency issues (toilets next to classrooms, stairwells causing noise bleed).",
+        "distractor_2": "Classrooms on upper floors only: inefficient use of ground floor and ignores program requirement (admin, library, canteen, covered court all specified for ground floor).",
+        "takeaway": "School planning follows a 'perimeter classrooms + central services' model. Adjacency strategy improves both function and occupant experience, and demonstrates compliance with modern school design standards."
+      },
+      "solution_steps": [
+        "Identify program elements: 8 classrooms per floor (48-56 sqm), admin, library, canteen, covered court on ground floor.",
+        "Zoning principle: perimeter = classrooms (daylight, outdoor connection); core = circulation/services (stairwells, toilets, utilities).",
+        "Ground floor: admin, library, canteen at perimeter or mid-zones; lobby, stairs, accessible toilets core.",
+        "Upper floors: classrooms perimeter; corridors, service rooms core.",
+        "Result: maximizes daylighting, manages noise, complies with accessibility (corridor width 2.0m minimum), efficient utility distribution."
+      ],
+      "code_citation": "DepEd School Design Standards; BP 344 (Accessibility); NBC general design principles"
+    },
+    {
+      "number": 14,
+      "type": "ZN",
+      "category": "Administrative and Service Area Placement",
+      "question_stem": "Where should the administrative offices (principal, vice-principal, registrar, ~40 sqm) and faculty room (~30 sqm) be located within the 4-storey school building to support effective school operations?",
+      "options": [
+        "Ground floor, near main entrance, with direct access to visitors and staff, separated from classroom noise zones.",
+        "Top floor (4th), away from visitor traffic and daily disturbances.",
+        "Scattered across multiple floors, with separate admin functions on each level.",
+        "Basement level (if available), hidden from public view."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Administrative spaces should be ground-floor, near the main entrance, to facilitate visitor reception, parent meetings, and staff coordination. Separation from classroom noise zones maintains focus and professional environment. Aligns with school operational best practices.",
+        "distractor_0": "Top floor: creates inefficiency (visitors climb stairs; principal removed from daily supervision of grounds and entry). Violates functional school planning principles.",
+        "distractor_1": "Scattered across floors: duplicates facilities, wastes space, and fractures administrative function. Inefficient for staff collaboration.",
+        "distractor_2": "Basement: dark, isolated; violates accessibility for students with mobility constraints (BP 344). Not practical for a school.",
+        "takeaway": "School administration is best located at ground floor, near entry, for operational efficiency, visitor management, and accessibility compliance."
+      },
+      "solution_steps": [
+        "Identify admin program: principal, vice-principal, registrar offices; faculty room.",
+        "Functional requirement: handle parent visits, staff coordination, daily operations.",
+        "Best placement: ground floor, near main entrance, visible and accessible.",
+        "Separation: shield from classroom zones to minimize noise distraction.",
+        "Outcome: efficient workflow, accessible entry, professional environment."
+      ],
+      "code_citation": "DepEd School Design Standards; BP 344 (Accessibility)"
+    },
+    {
+      "number": 15,
+      "type": "BD",
+      "category": "School Building Code Provisions - Egress and Occupancy",
+      "question_stem": "For a 4-storey elementary school with approximately 600 students, what are the critical building code provisions that govern egress design and occupancy per storey? (Select the most comprehensive statement.)",
+      "options": [
+        "Stairwell width ≥ 1.5m; max travel distance 30m from any point to stairwell; occupancy load ≤ 250 per storey based on classroom area factor (~9.3 sqm per student).",
+        "Single stairwell acceptable; max travel distance 50m; no occupancy limit per storey.",
+        "Evacuation time ≤ 30 seconds; stairwell width ≥ 1.0m; occupancy unrestricted.",
+        "Two stairwells mandatory; max travel distance 15m; occupancy strictly ≤ 150 per storey."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "For schools, Fire Code specifies stair width ≥1.5m (typical), max travel distance 30m to an exit, and occupancy load derived from room area divided by area factor. For classrooms at ~50 sqm serving ~5-6 students each, total per storey ≈ 240-280 students; design for ~250 per storey is safe. Two stairwells strongly recommended for 4-storey building (not always mandatory at 4 floors, but best practice).",
+        "distractor_0": "Single stairwell acceptable: violates egress redundancy principle for mid-rise buildings. Fire Code typically requires min 2 exits for buildings >3 storeys or >500 total occupancy.",
+        "distractor_1": "30-second evacuation, 1.0m stairs: contradictory and over-optimistic. 1.0m stairs are substandard; 30 seconds is unrealistic for 600 students.",
+        "distractor_2": "≤150 per storey: excessively restrictive; conflicts with program (150 × 4 = 600 total, but ground floor also has admin/support, not just students).",
+        "takeaway": "School egress design must provide redundant routes, adequate stair capacity, and travel distance limits per Fire Code. Occupancy load is calculated from space area and type, not arbitrary caps."
+      },
+      "solution_steps": [
+        "Identify occupancy type: elementary school (assembly/educational facility).",
+        "Total occupants: ~600 students + ~50 staff = ~650 persons.",
+        "Egress requirements (Fire Code of the Philippines):",
+        "  – Min exits: 2 (for mid-rise, >3 storeys or >250 occupancy per storey)",
+        "  – Min stairwell width: 1.5m (0.75m per 200 persons in stairwell width)",
+        "  – Max travel distance: 30m from any occupied point to stairwell",
+        "  – Occupancy load per storey: classrooms at ~50 sqm ÷ ~9.3 sqm/person ≈ 5.4 persons per classroom; 8 classrooms ≈ 43 persons per storey from classrooms + circulation ≈ ~200-250 per classroom floor.",
+        "  – Ground floor: 8 classrooms equivalent + admin + library + canteen ≈ 250-300 during peak hours.",
+        "Result: Design for dual stairwells, each ≥1.5m wide, max travel distance 30m, occupancy ~250 per classroom storey."
+      ],
+      "code_citation": "Fire Code of the Philippines; NBC/BCBH (Building Code); DepEd School Design Standards"
+    },
+    {
+      "number": 16,
+      "type": "BD",
+      "category": "BP 344 Accessibility - Ramp Slope and Corridor Width",
+      "question_stem": "The school's main entrance ramp (per BP 344 Magna Carta for PWD) must serve visitors and staff with mobility aids. What is the maximum allowable slope, and what minimum corridor width must be provided inside the building for wheelchair passage and two-way traffic flow?",
+      "options": [
+        "Max ramp slope 6% (1:16.67); min corridor width 2.0m.",
+        "Max ramp slope 10% (1:10); min corridor width 1.5m.",
+        "Max ramp slope 4% (1:25); min corridor width 2.5m.",
+        "Max ramp slope 12% (1:8.33); min corridor width 1.0m."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "BP 344 specifies maximum ramp slope of 1:12 to 1:16 (typically 1:16.67 ≈ 6%) for full accessibility; steeper slopes (1:10 = 10%) allowable only for short runs. Corridor width ≥2.0m accommodates wheelchairs and two-person passage (one wheelchair + one walking, or two wheelchairs passing). These values are binding for public institutions.",
+        "distractor_0": "1:10 slope (10%), 1.5m corridor: ramp is too steep for independent wheelchair use; corridor too narrow for two-way traffic (wheelchair + pedestrian clash). Fails accessibility mandate.",
+        "distractor_1": "1:25 slope (4%), 2.5m corridor: overly stringent; 1:25 is beyond code requirement (though preferable). 2.5m wastes valuable interior space. Not the standard requirement.",
+        "distractor_2": "1:8.33 (12%), 1.0m corridor: ramp far exceeds max slope (wheelchair users cannot negotiate safely); corridor is impassable for wheelchair (need min 1.5m for wheelchair width + clearance, and 2.0m for two-way flow).",
+        "takeaway": "BP 344 is non-negotiable for public buildings. 6% ramp slope and 2.0m corridor width are the minimum standards. Always cite BP 344 and RA 7277 when designing accessible schools."
+      },
+      "solution_steps": [
+        "Applicable law: BP 344 (Accessibility Law for PWD) and RA 7277 (Magna Carta for PWD).",
+        "Main entrance ramp:",
+        "  – Max slope: 1:16.67 (6%) for full accessibility; 1:12 (8.3%) for short runs only.",
+        "  – Handrails: both sides, 75-90cm height, 4cm diameter.",
+        "  – Landing: min 1.5m × 1.5m at start, end, and direction changes.",
+        "Interior corridors:",
+        "  – Min width: 2.0m (accommodates wheelchair + pedestrian, or two wheelchairs passing).",
+        "  – Surface: slip-resistant, level (max 2% slope for drainage).",
+        "Accessible restroom per floor:",
+        "  – Min size: 1.5m × 1.8m clear floor space.",
+        "  – Grab bars, lever handles, accessible fixture heights.",
+        "Result: Building design must prioritize universal access per BP 344."
+      ],
+      "code_citation": "BP 344 (Batas Pambansa Blg. 344 - Accessibility Law); RA 7277 (Magna Carta for PWD); NBC/BCBH"
+    },
+    {
+      "number": 17,
+      "type": "ES",
+      "category": "Structural System for School Building",
+      "question_stem": "For a 4-storey institutional school building with approximately 2,400 sqm TGFA in the GI zone, which structural system is most appropriate and cost-effective for long-term public facility durability?",
+      "options": [
+        "Reinforced concrete frame (RC) with masonry/CHB infill; flat plate or beam-slab floor system; designed for ductile behavior and seismic resilience.",
+        "Light steel frame with prefabricated cladding; economical but limited durability for institutional long-term use.",
+        "Unreinforced masonry load-bearing walls only; single-storey practical limit.",
+        "Timber frame; unsuitable for public institutional buildings in urban areas due to fire code restrictions."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "RC frame with masonry infill is the standard for mid-rise institutional buildings in tropical/seismic regions. Ductile behavior, durability, fire resistance, and proven performance in schools. Flat plate or beam-slab floors suit classroom grid layouts. Maintenance and adaptation are straightforward.",
+        "distractor_0": "Light steel with cladding: appropriate for certain commercial buildings but less durable for institutional long-term use; maintenance higher; less thermal mass; inferior fire rating without costly upgrades.",
+        "distractor_1": "Unreinforced masonry: fails for 4-storey span; inadequate lateral load resistance; seismic risk unacceptable.",
+        "distractor_2": "Timber: violates Fire Code for public buildings; insufficient for institutional occupancy; unsuitable in Philippines tropical climate (termite, moisture).",
+        "takeaway": "Institutional buildings demand durability, fire resistance, and seismic resilience. RC frame is the engineer's standard choice for schools in the Philippines."
+      },
+      "solution_steps": [
+        "Building type: 4-storey public elementary school (~2,400 sqm TGFA).",
+        "Occupancy: educational facility, high occupant load (600+ students/staff).",
+        "Performance requirements: long-term durability, fire safety, seismic resilience, adaptability.",
+        "Climate: tropical (high humidity, termites); earthquake-prone region.",
+        "Structural system decision:",
+        "  ✓ RC frame (primary lateral and vertical load system)",
+        "  ✓ Masonry/CHB infill walls (partitions, external walls)",
+        "  ✓ Flat plate or T-beam floors (suits classroom grid, easy to span 7-8m)",
+        "  ✓ Ductile detailing for seismic design (RC columns, beam-column joints)",
+        "  ✓ Materials: concrete f'c 24-28 MPa, Grade 60 rebar, CHB Unit Masonry",
+        "Result: RC frame + masonry infill is the specified structural system."
+      ],
+      "code_citation": "NBC/BCBH (Structural Design); Seismic Design Manual (PHIVOLCS); Fire Code of the Philippines; DepEd Design Standards"
+    },
+    {
+      "number": 18,
+      "type": "AI",
+      "category": "Classroom Dimension and Area Standard",
+      "question_stem": "Each classroom is specified as 48-56 sqm in floor area. For an elementary school classroom accommodating ~50 students including a teacher, what is the typical net floor area required per student, and does this allocation support the stated room size range?",
+      "options": [
+        "~1.0 sqm per student (net); 50 students × 1.0 = 50 sqm fits within 48-56 sqm range. Confirms standard DepEd/school design practice.",
+        "~2.0 sqm per student (net); 50 students × 2.0 = 100 sqm; stated 48-56 sqm is inadequate.",
+        "~0.5 sqm per student (net); standard for very high-density primary schools; margins for furniture minimal.",
+        "~3.0 sqm per student (net); typical for universities, not primary schools; 48-56 sqm insufficient for elementary program."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "DepEd and international best practice (UNESCO, IFC) recommend ~1.0 sqm per student in classroom, plus teacher and circulation. A 50-sqm room accommodates ~45-50 students comfortably. The 48-56 sqm range aligns with this standard and provides modest flexibility (larger class or furniture arrangement variations).",
+        "distractor_0": "2.0 sqm per student: applies to secondary/tertiary institutions or specialized labs, not primary education. Would require ~100 sqm per classroom (unrealistic for 600 sqm AMBF building).",
+        "distractor_1": "0.5 sqm per student: violates occupational health standards; inadequate for movement, outdoor visibility, emergency egress. Produces cramped, unsafe conditions.",
+        "distractor_2": "3.0 sqm per student: applies to universities/research facilities with lab benches, equipment. Grossly exceeds primary education needs.",
+        "takeaway": "Elementary classroom sizing is a well-established standard: ~1.0 sqm per student (net), resulting in 48-56 sqm for ~50-student classes. This figure anchors the feasibility of the entire program (24 classrooms × 50 sqm avg = 1,200 sqm estimated, within 2,400 sqm TGFA)."
+      },
+      "solution_steps": [
+        "Program requirement: 8 classrooms per floor × 3 classroom floors = 24 classrooms.",
+        "Stated size per classroom: 48-56 sqm (average ~52 sqm).",
+        "Typical elementary class size: 40-50 students.",
+        "Net floor area standard (DepEd): ~1.0 sqm per student.",
+        "For 50 students: 50 students × 1.0 sqm = 50 sqm net.",
+        "Verification: 50 sqm falls within 48-56 sqm range. ✓",
+        "Total classroom area (all floors): 24 × 52 = 1,248 sqm.",
+        "Proportion of TGFA: 1,248 ÷ 2,400 ≈ 52% (reasonable for a school where ~40-50% is classroom, remainder is corridors, labs, admin, library, support).",
+        "Conclusion: The 48-56 sqm classroom specification is consistent with DepEd standards and accommodates the 600-student enrollment across 24 classes."
+      ],
+      "code_citation": "DepEd School Design Standards; UNESCO Guidelines; IFC Best Practices for Educational Facilities"
+    },
+    {
+      "number": 19,
+      "type": "PK",
+      "category": "School Parking and Drop-off Requirements",
+      "question_stem": "For a 4-storey elementary school with approximately 600 students and 50 staff members, calculate the minimum parking requirement and on-site drop-off/loading area based on municipal standards. (Typical: 1 space per 8-10 students for school parking; 1 drop-off per 50 students.)",
+      "options": [
+        "Minimum 75 parking spaces (650 occupants ÷ 8-10); minimum 12-13 drop-off bays (~60-65 students per bay) for morning/afternoon peak arrivals.",
+        "Minimum 200 parking spaces; maximum 5 drop-off bays.",
+        "Minimum 10 parking spaces; drop-off on public road, no on-site requirement.",
+        "Minimum 120 parking spaces; drop-off not required for government schools."
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Standard school parking: 1 space per 8-10 students + staff. (600 students + 50 staff) ÷ 9 ≈ 72-75 spaces. Drop-off: 1 bay per 50 students = 600 ÷ 50 = 12 bays (typical stacked/queuing design fits 10-15 bays). Drop-off should be on-site, protected, weather-covered per best practice.",
+        "distractor_0": "200 parking: excessive; assumes 1 space per 3-4 occupants (fits a hospital or office building, not school where most students arrive by foot/tricycle/bus).",
+        "distractor_1": "10 parking spaces: dangerously inadequate; only fits staff, not any parent/visitor vehicles; creates traffic chaos on surrounding streets.",
+        "distractor_2": "Drop-off not required for government schools: false; municipal codes uniformly require on-site drop-off to manage traffic and safety.",
+        "takeaway": "School parking and drop-off are calculated from enrollment and occupancy projections, not arbitrary figures. They are essential traffic management and safety features that must be planned on-site or via nearby public facilities. This school's 1,200 sqm lot may not fully accommodate 75+ parking spaces; discuss on-site + nearby public lot strategy."
+      },
+      "solution_steps": [
+        "Total occupancy: 600 students + 50 staff = 650 persons.",
+        "Parking standard: 1 space per 8-10 students/staff (school-specific standard varies by municipality; typical range is 0.1-0.125 spaces per occupant).",
+        "Calculation: 650 ÷ 9 ≈ 72 spaces.",
+        "Rounded: minimum 75 parking spaces.",
+        "Drop-off standard: 1 bay per 50 students.",
+        "Calculation: 600 ÷ 50 = 12 drop-off bays.",
+        "Design strategy:",
+        "  – On-site: 20-30 parking spaces for staff + visitors in multi-level or compact lot arrangement.",
+        "  – Additional: 45-50 spaces via nearby public lot or shared parking agreement (e.g., church lot next door may offer evening/weekend overflow).",
+        "  – Drop-off: 12 bays, stacked configuration (~20-25m long × 3m wide, weather-covered canopy).",
+        "Result: minimum 75 parking (mix of on-site + nearby agreements); 12 on-site drop-off bays."
+      ],
+      "code_citation": "City Zoning Ordinance, School Parking Requirements; DPWH/LGU Traffic Management Guidelines; DepEd School Design Standards"
+    }
+  ]
+}

@@ -1,9 +1,8 @@
-import {
-  resolveArticleAndNode,
-  getArticleSources,
-} from '@/lib/actions/wiki-actions'
+import { getArticleSources } from '@/lib/actions/wiki-actions'
+import { getCachedArticleAndNode } from '@/lib/actions/cached-queries'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 import { WikiArticle, getArticleHeadings } from '@/components/wiki/WikiArticle'
+import { WikiItemRenderer } from '@/components/wiki/WikiItemRenderer'
 import { WikiArticleHero } from '@/components/wiki/WikiArticleHero'
 import { WikiHeader } from '@/components/wiki/WikiHeader'
 import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
@@ -20,54 +19,11 @@ import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
 import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
 import { WikiReadTracker } from '@/components/wiki/WikiReadTracker'
 
-const ITEM_STYLES: Record<string, { label: string; border: string; bg: string; text: string }> = {
-  fact:           { label: 'Key Fact',        border: 'border-l-primary',        bg: 'bg-primary/5',        text: 'text-primary' },
-  definition:     { label: 'Definition',      border: 'border-l-emerald-500',    bg: 'bg-emerald-50',       text: 'text-emerald-600' },
-  formula:        { label: 'Formula',         border: 'border-l-amber-500',      bg: 'bg-amber-50',         text: 'text-amber-600' },
-  concept:        { label: 'Concept',         border: 'border-l-blue-500',       bg: 'bg-blue-50',          text: 'text-blue-600' },
-  code_provision: { label: 'Code Provision',  border: 'border-l-border',         bg: 'bg-muted/50',         text: 'text-text-secondary' },
-  exam_tip:       { label: 'Exam Tip',        border: 'border-l-orange-500',     bg: 'bg-orange-50',        text: 'text-orange-600' },
-  warning:        { label: 'Warning',         border: 'border-l-red-500',        bg: 'bg-red-50',           text: 'text-red-500' },
-  heading:        { label: '',                border: '',                         bg: '',                    text: '' },
-  detail:         { label: 'Detail',          border: 'border-l-border',         bg: 'bg-white',            text: 'text-text-secondary' },
-  cross_ref:      { label: 'Cross Reference', border: 'border-l-border',         bg: 'bg-muted',            text: 'text-text-secondary' },
-}
-
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
   if (level === 2) return 'Intermediate'
   return 'Advanced'
 }
-
-const WikiItemsRenderer = ({ items }: { items: { type: string; text: string }[] }) => (
-  <>
-    {items.map((item, i) => {
-      if (item.type === 'heading') {
-        return (
-          <h2 key={i} className="text-base font-bold text-foreground mt-6 mb-2 first:mt-0">
-            {item.text}
-          </h2>
-        )
-      }
-
-      const style = ITEM_STYLES[item.type] ?? ITEM_STYLES.detail
-
-      return (
-        <div
-          key={i}
-          className={`border-l-3 pl-4 py-2.5 rounded-r-sm ${style.border} ${style.bg}`}
-        >
-          {style.label && (
-            <span className={`font-mono text-[11px] font-medium uppercase tracking-wider ${style.text} block mb-1`}>
-              {style.label}
-            </span>
-          )}
-          <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
-        </div>
-      )
-    })}
-  </>
-)
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -91,12 +47,13 @@ async function getRelatedTopics(node: TaxonomyNode | null): Promise<{ slug: stri
 export default async function WikiArticlePage({ params, searchParams }: PageProps) {
   const [{ slug }, sp] = await Promise.all([params, searchParams])
 
-  // Single combined lookup — replaces 3 separate sequential queries
-  const { article, node } = await resolveArticleAndNode(slug)
+  // Cached article + node lookup (revalidates hourly)
+  const { article, node } = await getCachedArticleAndNode(slug)
 
   // Taxonomy-only fallback: node exists but no published article
   if (!article && node) {
-    const wikiItems: { type: string; text: string }[] = Array.isArray((node as any).wiki_items) ? (node as any).wiki_items : []
+    const wikiItems: { type: string; text: string; source_ref?: string }[] = Array.isArray((node as any).wiki_items) ? (node as any).wiki_items : []
+    const threeDLabLinked: boolean = (node as any).three_d_lab_linked === true
 
     return (
       <>
@@ -120,9 +77,11 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
             )}
 
             {wikiItems.length > 0 ? (
-              <div className="space-y-4">
-                <WikiItemsRenderer items={wikiItems} />
-              </div>
+              <WikiItemRenderer
+                items={wikiItems}
+                aleId={node.ale_id}
+                threeDLabLinked={threeDLabLinked}
+              />
             ) : (
               <p className="text-text-secondary leading-relaxed">
                 Content for this topic is being developed. Check back soon.
@@ -159,10 +118,10 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
     getRelatedTopics(node),
   ])
 
-  const practiceHref = node?.node_id
-    ? `/quiz/subject/setup`
-    : `/quiz/camp/setup`
-  const practiceLabel = `Practice this ${node?.name ? 'Topic' : 'Article'}`
+  const practiceHref = '/quiz/camp/setup'
+  const practiceLabel = 'Practice this Article'
+  const wikiNodeId = node?.node_id ?? undefined
+  const wikiTopicName = node?.name ?? article.title
 
   return (
     <>
@@ -179,6 +138,8 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
               <WikiRightSidebar
                 practiceHref={practiceHref}
                 practiceLabel={practiceLabel}
+                nodeId={wikiNodeId}
+                topicName={wikiTopicName}
                 relatedTopics={relatedTopics}
                 headings={headings}
                 articleSlug={article.slug}
@@ -255,6 +216,8 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
             <WikiRightSidebar
               practiceHref={practiceHref}
               practiceLabel={practiceLabel}
+              nodeId={wikiNodeId}
+              topicName={wikiTopicName}
               relatedTopics={relatedTopics}
               headings={headings}
               articleSlug={article.slug}

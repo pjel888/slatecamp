@@ -2,6 +2,10 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
+import {
+  triggerScoreChangeNotification,
+  triggerZoneTransitionNotification,
+} from '@/lib/actions/notification-triggers'
 import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
 
 export const endSession = async (
@@ -75,6 +79,23 @@ export const endSession = async (
 
   const readinessScoreAfter = updatedStats?.global_readiness_score ?? readinessScoreBefore
   const readinessScoreDelta = readinessScoreAfter - readinessScoreBefore
+
+  // Fire-and-forget notification triggers (non-blocking)
+  if (finalStatus === 'completed') {
+    // Derive a representative topic name from the first answered topic
+    const firstTopicId = allInteractions[0]?.topic_id ?? null
+    let sessionTopicName = 'your session'
+    if (firstTopicId) {
+      const { data: topicNode } = await supabase
+        .from('taxonomy_tree')
+        .select('name')
+        .eq('node_id', firstTopicId)
+        .maybeSingle()
+      if (topicNode?.name) sessionTopicName = topicNode.name
+    }
+    void triggerScoreChangeNotification(user.id, readinessScoreBefore, readinessScoreAfter, sessionTopicName)
+    void triggerZoneTransitionNotification(user.id, readinessScoreBefore, readinessScoreAfter)
+  }
 
   // 6. Determine results_available_at
   const config = session.config as { mode?: string; results?: { delayHours?: number } } | null

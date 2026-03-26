@@ -35,7 +35,7 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
     navigation: {
       model: 'linear',
-      backAllowed: false,
+      backAllowed: true,
       questionPalette: false,
       bookmarkEnabled: false,
       skipEnabled: false,
@@ -139,7 +139,7 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
     navigation: {
       model: 'linear',
-      backAllowed: false,
+      backAllowed: true,
       questionPalette: false,
       bookmarkEnabled: false,
       skipEnabled: false,
@@ -191,7 +191,7 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
     navigation: {
       model: 'linear',
-      backAllowed: false,
+      backAllowed: true,
       questionPalette: false,
       bookmarkEnabled: false,
       skipEnabled: false,
@@ -399,7 +399,7 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
     navigation: {
       model: 'linear',
-      backAllowed: false,
+      backAllowed: true,
       questionPalette: true,
       bookmarkEnabled: true,
       skipEnabled: true,
@@ -418,6 +418,58 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
       enabled: true,
       intervalQuestions: 30,
       breakDurationSeconds: 30,
+    },
+  },
+
+  article_review: {
+    mode: 'article_review',
+    setup: {
+      questionCount: 5,
+      topics: [],
+      disciplines: [],
+      difficultyMode: 'static' as const,
+      initialDifficulty: 'mixed' as const,
+      isTrailSession: false,
+      trailDayId: null,
+    },
+    timer: {
+      enabled: false,
+      visible: false,
+      mode: 'hidden' as const,
+      totalSeconds: null,
+      perQuestion: false,
+      pausable: false,
+      warningThresholds: [],
+    },
+    feedback: {
+      timing: 'immediate' as const,
+      showExplanation: true,
+      showCorrectAnswer: true,
+      showConfidenceRating: false,
+      gatedProgressionDelayMs: 2000,
+      explanationDepth: 'brief' as const,
+    },
+    navigation: {
+      model: 'linear' as const,
+      backAllowed: true,
+      questionPalette: false,
+      bookmarkEnabled: false,
+      skipEnabled: false,
+      confirmBeforeSubmit: false,
+    },
+    results: {
+      showImmediately: true,
+      delayHours: 0,
+      showPercentile: false,
+      showSubjectBreakdown: false,
+      showGrowthDelta: false,
+      showReadinessScoreImpact: false,
+      showStaminaChart: false,
+    },
+    breaks: {
+      enabled: false,
+      intervalQuestions: 0,
+      breakDurationSeconds: 0,
     },
   },
 }
@@ -452,6 +504,7 @@ export const MODE_LABELS: Record<QuizMode, string> = {
   storm: 'Storm Mode',
   fullexam: 'Full Exam Simulation',
   extended: 'Extended Practice',
+  article_review: 'Article Review',
 }
 
 /** Get the score band label and color class for a given percentage */

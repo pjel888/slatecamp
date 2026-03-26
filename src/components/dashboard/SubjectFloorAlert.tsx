@@ -8,44 +8,30 @@ interface SubjectFloorAlertProps {
 export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
   if (alerts.length === 0) return null
 
-  const worst = alerts[0]
-  const otherCount = alerts.length - 1
-
   return (
-    <div className="rounded-md border border-destructive/30 bg-destructive-50 px-4 py-3">
-      <div className="flex items-start gap-3">
-        <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-destructive/10">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-destructive">
-            <path d="M6 1L11 10H1L6 1Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-            <circle cx="6" cy="8" r="0.5" fill="currentColor" />
-            <line x1="6" y1="4.5" x2="6" y2="6.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-          </svg>
+    <div className="rounded-md bg-[#E63329] shadow-none">
+      {alerts.map((alert, index) => (
+        <div key={alert.subject}>
+          {index > 0 && (
+            <div className="border-t border-white/20" />
+          )}
+          <div className="px-4 py-3">
+            <p className="font-mono text-[9px] uppercase tracking-widest text-white">
+              EXAM RISK: SUBJECT FLOOR
+            </p>
+            <p className="mt-1 text-sm leading-snug text-white">
+              {alert.subject} is at {alert.mastery}%. The ALE requires at least{' '}
+              {alert.floorPct}% in every subject to pass — regardless of your overall score.
+            </p>
+            <Link
+              href={`/dashboard/testing?subject=${alert.aleId ?? ''}`}
+              className="mt-2 inline-block rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+            >
+              Study {alert.subject} Now →
+            </Link>
+          </div>
         </div>
-
-        <div className="flex-1 min-w-0">
-          <p className="text-xs font-semibold text-text-primary">
-            Subject below passing floor
-          </p>
-          <p className="mt-0.5 text-[11px] leading-relaxed text-text-secondary">
-            <span className="font-semibold text-destructive">{worst.subject}</span>
-            {' '}is at{' '}
-            <span className="font-mono font-semibold text-destructive">{worst.mastery}%</span>
-            {' '}&mdash; the ALE requires a minimum of {worst.floorPct}% per subject.
-            {otherCount > 0 && (
-              <span className="text-text-secondary">
-                {' '}{otherCount} other {otherCount === 1 ? 'subject' : 'subjects'} also below floor.
-              </span>
-            )}
-            {' '}A high overall score won&apos;t compensate.
-          </p>
-          <Link
-            href="/quiz/camp/setup"
-            className="mt-1.5 inline-block text-[11px] font-medium text-camp-cobalt underline underline-offset-2"
-          >
-            Start a {worst.subject} review &rarr;
-          </Link>
-        </div>
-      </div>
+      ))}
     </div>
   )
 }

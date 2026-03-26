@@ -2,7 +2,8 @@ import { WikiChangedPill } from './WikiChangedPill'
 import { cn } from '@/lib/utils'
 import type { WikiTableProps } from '@/types/wiki'
 
-export const WikiExamTable = ({ caption, columns, rows, hasSourceColumn = true }: WikiTableProps) => {
+export const WikiExamTable = ({ caption, columns = [], rows = [], hasSourceColumn = true }: WikiTableProps) => {
+  if (!columns.length || !rows.length) return null
   return (
     <div className="not-prose my-6 rounded-lg border border-[#E0DED8] overflow-hidden dark:border-[#3A3835]">
       {caption && (

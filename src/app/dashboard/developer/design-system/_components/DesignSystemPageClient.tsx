@@ -96,6 +96,8 @@ import {
 } from '@/components/shared/content-sidebar'
 import { Callout, Note, Warn, Tip, Example, CalloutBox } from '@/components/wiki/Callout'
 import { Accordion, AccordionItem } from '@/components/wiki/Accordion'
+import { NotificationIcon } from '@/components/notifications/NotificationIcon'
+import { CampfireLoader } from '@/components/shared/CampfireLoader'
 
 /* ------------------------------------------------------------------ */
 /*  Sample data                                                        */
@@ -2113,6 +2115,94 @@ const DesignSystemPage = () => {
               icon={<User />}
             />
           </SidebarNavGroup>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  37. Notification Icon                                        */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="NOTIFICATIONS"
+        title="Notification Icon"
+        subtitle="Color-coded icon avatar mapped by notification type. 12 types supported."
+      >
+        <div className="flex flex-wrap gap-3">
+          {(['score_change', 'trail_ready', 'blindspot', 'zone_transition', 'proof_unlocked', 'campfire_story', 'content_update', 'weekly_digest', 'coaching_tip', 'billing', 'system'] as const).map((type) => (
+            <div key={type} className="flex flex-col items-center gap-1">
+              <NotificationIcon type={type} isUnread={true} />
+              <span className="text-[10px] text-muted-foreground font-mono">{type}</span>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4">
+          <p className="text-xs text-muted-foreground mb-2">Read state (muted):</p>
+          <div className="flex flex-wrap gap-3">
+            {(['score_change', 'trail_ready', 'blindspot'] as const).map((type) => (
+              <NotificationIcon key={type} type={type} isUnread={false} />
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  38. Notification Item                                        */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="NOTIFICATIONS"
+        title="Notification Item"
+        subtitle="Single notification row with icon, title, body, timestamp. Unread items show cobalt left-border + background tint."
+      >
+        <div className="max-w-md border border-border rounded-md overflow-hidden">
+          <div className="flex w-full gap-3.5 px-4 py-3.5 text-left bg-blue-50/50 border-l-[3px] border-l-[#1B3FC4]">
+            <NotificationIcon type="score_change" isUnread={true} />
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-[13px] font-medium text-foreground truncate">Your Readiness Score moved</p>
+                <span className="text-[11px] text-muted-foreground flex-shrink-0">2h ago</span>
+              </div>
+              <p className="text-[12px] mt-0.5 text-muted-foreground">68 → 72 after today&apos;s session on Structural Systems</p>
+            </div>
+          </div>
+          <div className="flex w-full gap-3.5 px-4 py-3.5 text-left border-l-[3px] border-l-transparent">
+            <NotificationIcon type="campfire_story" isUnread={false} />
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-[13px] text-muted-foreground truncate">New passer story in Campfire</p>
+                <span className="text-[11px] text-muted-foreground flex-shrink-0">2d ago</span>
+              </div>
+              <p className="text-[12px] mt-0.5 text-muted-foreground/70">Ana R., TIP Manila</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  39. Notification Filters                                     */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="NOTIFICATIONS"
+        title="Notification Filters"
+        subtitle="Pill-style filter bar. Active pill inverts to foreground/background."
+      >
+        <div className="flex gap-1.5">
+          <span className="text-xs px-3.5 py-1.5 rounded-full bg-foreground text-background">All</span>
+          <span className="text-xs px-3.5 py-1.5 rounded-full bg-card border border-border text-muted-foreground">Progress</span>
+          <span className="text-xs px-3.5 py-1.5 rounded-full bg-card border border-border text-muted-foreground">Trail</span>
+          <span className="text-xs px-3.5 py-1.5 rounded-full bg-card border border-border text-muted-foreground">Campfire</span>
+          <span className="text-xs px-3.5 py-1.5 rounded-full bg-card border border-border text-muted-foreground">System</span>
+        </div>
+      </Section>
+
+      {/* ============================================================ */}
+      {/*  40. Campfire Loader                                          */}
+      {/* ============================================================ */}
+      <Section
+        eyebrow="SHARED"
+        title="Campfire Loader"
+        subtitle="Animated campfire loading indicator for transitions and data fetching."
+      >
+        <div className="flex items-center justify-center py-8 bg-muted/30 rounded-md">
+          <CampfireLoader />
         </div>
       </Section>
     </div>

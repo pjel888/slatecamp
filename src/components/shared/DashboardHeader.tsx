@@ -3,8 +3,13 @@
 import { useMemo } from 'react'
 import { usePathname } from 'next/navigation'
 import { getPageTitle } from '@/lib/routes'
+import { HeaderActions } from '@/components/layout/HeaderActions'
 
-export const DashboardHeader = () => {
+interface DashboardHeaderProps {
+  userId?: string
+}
+
+export const DashboardHeader = ({ userId }: DashboardHeaderProps) => {
   const pathname = usePathname()
 
   const title = useMemo(() => {
@@ -13,10 +18,11 @@ export const DashboardHeader = () => {
   }, [pathname])
 
   return (
-    <header className='flex items-center border-b border-border bg-white h-16'>
-      <h1 className='font-display text-2xl font-extrabold text-text-primary tracking-tight px-2'>
+    <header className='flex items-center justify-between border-b border-border bg-white h-16 px-4'>
+      <h1 className='font-display text-2xl font-extrabold text-text-primary tracking-tight truncate'>
         {title}
       </h1>
+      <HeaderActions userId={userId} />
     </header>
   )
 }

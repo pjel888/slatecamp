@@ -32,7 +32,7 @@ export const MODE_NAMES: Record<string, string> = {
   custom: 'Custom Quiz',
   blindspot: 'Focus Review',
   proof_sim: 'Full Exam Simulation',
-  endurance: 'Extended Practice',
+  endurance: 'Design Endurance Training',
 }
 
 export const MODE_BADGES: Record<string, string> = {

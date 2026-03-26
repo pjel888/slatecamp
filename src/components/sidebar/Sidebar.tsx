@@ -174,8 +174,8 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           style={{ padding: 0 }}
           className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {/* Dashboard — standalone group */}
-          <div className="pt-4 pb-2 px-[6px]">
+          {/* Dashboard — standalone */}
+          <div className="pt-4 pb-4 px-[6px]">
             <SidebarNavItem
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
@@ -186,19 +186,33 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           </div>
 
           {/* Separator */}
-          <div className="mx-[6px] mt-1 mb-4 border-t border-border" />
+          <div className="mx-[6px] pt-2 pb-4 border-t border-border" />
 
-          {/* Nav items — flat list, no group labels or dividers */}
-          <div className="flex flex-col gap-4" style={{ padding: '4px 6px 0' }}>
-            {SIDEBAR_GROUPS.flatMap((group) => group.items).map((navItem) => (
-              <SidebarNavItem
-                key={navItem.id}
-                item={navItem}
-                isActive={isActive(navItem.href)}
-                expanded={expanded}
-                showTooltip
-                onNavigate={handleNavigate}
-              />
+          {/* Nav groups */}
+          <div className="flex flex-col gap-3 px-[6px] pt-2">
+            {SIDEBAR_GROUPS.map((group, groupIdx) => (
+              <div key={group.key} className="flex flex-col gap-0.5">
+                {/* Group label (expanded) → thin divider (collapsed), skip divider for first group */}
+                <div className="h-5 flex items-center">
+                  {expanded ? (
+                    <span className="px-2 text-[8px] font-bold tracking-wider text-text-tertiary uppercase select-none">
+                      {group.label}
+                    </span>
+                  ) : groupIdx > 0 ? (
+                    <div className="mx-1 w-full border-t border-border/40" />
+                  ) : null}
+                </div>
+                {group.items.map((navItem) => (
+                  <SidebarNavItem
+                    key={navItem.id}
+                    item={navItem}
+                    isActive={isActive(navItem.href)}
+                    expanded={expanded}
+                    showTooltip
+                    onNavigate={handleNavigate}
+                  />
+                ))}
+              </div>
             ))}
           </div>
 

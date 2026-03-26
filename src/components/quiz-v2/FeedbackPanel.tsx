@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { CheckCircle, ArrowRight, ArrowSquareOut } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -22,17 +22,37 @@ export const FeedbackPanel = ({
   onNext,
 }: FeedbackPanelProps) => {
   const [nextReady, setNextReady] = useState(gatedDelayMs === 0)
+  const [remainingMs, setRemainingMs] = useState(gatedDelayMs)
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   useEffect(() => {
-    setNextReady(gatedDelayMs === 0)
-    if (gatedDelayMs > 0) {
-      const timer = setTimeout(() => setNextReady(true), gatedDelayMs)
-      return () => clearTimeout(timer)
+    const isImmediate = gatedDelayMs === 0
+    setNextReady(isImmediate)
+    setRemainingMs(isImmediate ? 0 : gatedDelayMs)
+
+    if (!isImmediate) {
+      const startTime = Date.now()
+      intervalRef.current = setInterval(() => {
+        const elapsed = Date.now() - startTime
+        const left = Math.max(0, gatedDelayMs - elapsed)
+        setRemainingMs(left)
+        if (left <= 0) {
+          setNextReady(true)
+          if (intervalRef.current) clearInterval(intervalRef.current)
+        }
+      }, 50)
+    }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current)
     }
   }, [gatedDelayMs, feedback.questionId])
 
-  const selectedOption = question.options.find(o => o.id === selectedOptionId)
-  const correctOption = question.options.find(o => o.id === feedback.correctOptionId)
+  const selectedOption = question.options.find((o) => o.id === selectedOptionId)
+  const correctOption = question.options.find((o) => o.id === feedback.correctOptionId)
+
+  const countdownSeconds = Math.ceil(remainingMs / 1000)
+  const countdownProgress = gatedDelayMs > 0 ? 1 - remainingMs / gatedDelayMs : 1
 
   return (
     <div
@@ -107,16 +127,33 @@ export const FeedbackPanel = ({
         </a>
       )}
 
-      {/* Next button — gated */}
-      <div className="pt-1">
+      {/* Gated next button — always visible, disabled during countdown */}
+      <div className="pt-1 space-y-2">
+        {/* Countdown explanation + progress bar (while gated) */}
+        {!nextReady && gatedDelayMs > 0 && (
+          <div className="space-y-1.5">
+            <p className="text-[11px] text-[#8896A7]">
+              Review the explanation — next question in {countdownSeconds}s
+            </p>
+            <div className="h-1 rounded-full bg-[#D4DAE3] overflow-hidden">
+              <div
+                className="h-full rounded-full bg-[#1B3FC4]/40 transition-none"
+                style={{ width: `${countdownProgress * 100}%` }}
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Button — always visible, disabled until countdown finishes */}
         <Button
           variant="primary"
           size="sm"
           disabled={!nextReady}
           onClick={onNext}
+          aria-disabled={!nextReady}
           className={cn(
-            'transition-opacity duration-150',
-            !nextReady && 'opacity-0 pointer-events-none',
+            'transition-all duration-200',
+            !nextReady && 'opacity-50 cursor-not-allowed',
           )}
         >
           Next question

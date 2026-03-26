@@ -16,8 +16,8 @@ import { NoteContextProvider } from '@/lib/context/note-context'
 import { TierProvider } from '@/lib/context/tier-context'
 import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import { DisciplineProvider } from '@/lib/context/discipline-context'
-import { QuickActionsBar } from '@/components/shared/QuickActionsBar'
 import { isDemoMode } from '@/lib/demo/config'
+import { getCachedDisciplines } from '@/lib/actions/cached-queries'
 import type { UserTier, UserGlobalStats, Discipline } from '@/types/app'
 
 interface DashboardLayoutContentProps {
@@ -37,22 +37,19 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     await bootstrapUser(user.id)
   }
 
-  const { data: subscription } = await supabase
-    .from('user_subscriptions')
-    .select('tier')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  const { data: stats } = await supabase
-    .from('user_global_stats')
-    .select('*, disciplines(*)')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  const { data: allDisciplines } = await supabase
-    .from('disciplines')
-    .select('discipline_id, name, acronym, created_at, updated_at')
-    .order('name')
+  const [{ data: subscription }, { data: stats }, allDisciplines] = await Promise.all([
+    supabase
+      .from('user_subscriptions')
+      .select('tier')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+    supabase
+      .from('user_global_stats')
+      .select('*, disciplines(*)')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+    getCachedDisciplines(),
+  ])
 
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
@@ -102,7 +99,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 <BreadcrumbProvider>
                   <Navbar isAdmin={isAdmin} />
                   <div>
-                    <DashboardHeader />
+                    <DashboardHeader userId={user.id} />
                   </div>
                   <main className='flex-1 min-h-0 overflow-y-auto bg-page-bg'>
                     {children}
@@ -130,7 +127,6 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 </>
               )}
             </div>
-            <QuickActionsBar />
           </SidebarProvider>
           </NoteContextProvider>
         </ActiveSessionProvider>

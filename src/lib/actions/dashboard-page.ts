@@ -3,9 +3,10 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { DashboardPageData } from '@/types/dashboard'
 import { MODE_TOOLTIPS, getWeekBoundary } from './dashboard-helpers'
-import { buildSubjectMastery, buildSubjectFloorAlerts, buildFocusAreas, buildSyllabusCoverage } from './mastery-actions'
+import { buildSubjectMastery, buildProjectedLawsMastery, buildSubjectFloorAlerts, buildFocusAreas, buildSyllabusCoverage } from './mastery-actions'
 import { buildInProgressSession, buildRecentSessions, buildAction } from './session-actions'
 import { computeWeekCounts, buildHeroStats, buildWeekStats, buildStreakData, buildSrsReview, buildDailyArticle, buildRecentNotes, buildReadinessMeta } from './stats-actions'
+import { getCachedTaxonomyTree, getCachedWikiArticles } from './cached-queries'
 
 // ── Main fetcher ────────────────────────────────────────────────────────────
 
@@ -38,6 +39,9 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     subjectAreasResult,         // Q11: DASHBOARD: Subject Mastery (radar + bars)
     subjectMasteryResult,       // Q12: DASHBOARD: Subject Mastery (per-subject weights)
     totalSessionsResult,        // Q13: DASHBOARD: QuickStatsRow (total completed sessions)
+    userSubResult,              // Q14: DASHBOARD: Onboarding tier check
+    activeEnrollmentResult,     // Q15: DASHBOARD: Onboarding trail enrollment
+    profileResult,              // Q16: DASHBOARD: Results Day + Review Center
   ] = await Promise.all([
     // Q1
     supabase
@@ -113,25 +117,11 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
       .order('updated_at', { ascending: false })
       .limit(2),
 
-    // Q10: wiki articles for daily rotation
-    supabase
-      .from('wiki_articles')
-      .select('article_id, title, slug, content')
-      .order('created_at', { ascending: true })
-      .limit(50),
+    // Q10: wiki articles for daily rotation (cached 1h)
+    getCachedWikiArticles().then(data => ({ data, error: null })),
 
-    // Q11: full taxonomy tree (levels 1-3) for radial heatmap structure
-    // Exclude ALE-LAWS (cross-ref only, zero exam weight) and deprecated v1 nodes
-    supabase
-      .from('taxonomy_tree')
-      .select('node_id, parent_id, level, name, subject_area')
-      .in('level', [1, 2, 3])
-      .eq('is_cross_ref_only', false)
-      .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
-      .order('subject_area')
-      .order('level')
-      .order('name'),
+    // Q11: taxonomy tree for radial heatmap (cached 1h)
+    getCachedTaxonomyTree().then(data => ({ data, error: null })),
 
     // Q12: per-topic mastery for current user
     supabase
@@ -145,6 +135,30 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
       .select('session_id', { count: 'exact', head: true })
       .eq('user_id', user.id)
       .eq('status', 'completed'),
+
+    // Q14: user subscription tier
+    supabase
+      .from('user_subscriptions')
+      .select('tier, status')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+
+    // Q15: active trail enrollment
+    supabase
+      .from('user_trail_enrollments')
+      .select('enrollment_id, trail_id, current_day, status, camp_trails(slug, name, duration_days)')
+      .eq('user_id', user.id)
+      .eq('status', 'active')
+      .order('started_at', { ascending: false })
+      .limit(1)
+      .maybeSingle(),
+
+    // Q16: profile fields for Results Day + Review Center
+    supabase
+      .from('profiles')
+      .select('ale_result, enrolled_review_center')
+      .eq('id', user.id)
+      .maybeSingle(),
   ])
 
   // ── Log partial failures ──────────────────────────────────────────────────
@@ -162,12 +176,19 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     { key: 'subjectAreas', result: subjectAreasResult },
     { key: 'subjectMastery', result: subjectMasteryResult },
     { key: 'totalSessions', result: totalSessionsResult },
+    { key: 'userSub', result: userSubResult },
+    { key: 'activeEnrollment', result: activeEnrollmentResult },
+    { key: 'profile', result: profileResult },
   ]
+
+  // Known RLS issue: user_subscriptions policy references `users` table the
+  // anon role can't read. The query fails gracefully (isFreeUser defaults to true).
+  const SUPPRESSED_KEYS = new Set(['userSub'])
 
   const _failedKeys = _queryResults
     .filter(q => {
+      if (SUPPRESSED_KEYS.has(q.key)) return false
       const err = (q.result as any).error
-      // Only treat as failure if error is a real Supabase PostgrestError (has message or code)
       return err != null && (err.message || err.code)
     })
     .map(q => {
@@ -176,40 +197,34 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
       return q.key
     })
 
-  // ── Onboarding state queries (UX Strategy Section 7) ────────────────────
+  // ── Onboarding state (UX Strategy Section 7) ─────────────────────────
 
   const assessmentCompletedAt = globalStatsResult.data?.assessment_completed_at ?? null
   const scoreRevealShownAt = globalStatsResult.data?.score_reveal_shown_at ?? null
-
-  // Check user tier
-  const { data: userSub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
+  const userSub = userSubResult.data
+  const activeEnrollment = activeEnrollmentResult.data
   const isFreeUser = !userSub || userSub.tier === 'free' || userSub.status !== 'active'
 
-  // Active trail enrollment
-  const { data: activeEnrollment } = await supabase
-    .from('user_trail_enrollments')
-    .select('enrollment_id, trail_id, current_day, status, camp_trails(slug, name, duration_days)')
-    .eq('user_id', user.id)
-    .eq('status', 'active')
-    .order('started_at', { ascending: false })
-    .limit(1)
-    .maybeSingle()
+  // Conditional queries that depend on results above — run in parallel
+  const [scoreUpdatesResult, trailDayResult] = await Promise.all([
+    isFreeUser && scoreRevealShownAt
+      ? supabase
+          .from('readiness_score_snapshots')
+          .select('*', { count: 'exact', head: true })
+          .eq('user_id', user.id)
+          .gt('computed_at', scoreRevealShownAt)
+      : Promise.resolve({ count: 0 }),
+    activeEnrollment
+      ? supabase
+          .from('trail_days')
+          .select('title, trail_steps(estimated_minutes)')
+          .eq('trail_id', activeEnrollment.trail_id)
+          .eq('day_number', activeEnrollment.current_day)
+          .maybeSingle()
+      : Promise.resolve({ data: null }),
+  ])
 
-  // Score updates since reveal (for locked widget)
-  let scoreUpdatesSinceReveal = 0
-  if (isFreeUser && scoreRevealShownAt) {
-    const { count } = await supabase
-      .from('readiness_score_snapshots')
-      .select('*', { count: 'exact', head: true })
-      .eq('user_id', user.id)
-      .gt('computed_at', scoreRevealShownAt)
-    scoreUpdatesSinceReveal = count ?? 0
-  }
+  const scoreUpdatesSinceReveal = (scoreUpdatesResult as { count: number | null }).count ?? 0
 
   // Determine onboarding state
   const onboardingState = (() => {
@@ -220,7 +235,7 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     return 'ready' as const
   })()
 
-  // Get active trail day info
+  // Build active trail day info
   let activeTrailDay: {
     dayNumber: number
     title: string
@@ -231,13 +246,7 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
 
   if (activeEnrollment) {
     const trailData = activeEnrollment.camp_trails as any
-    const { data: dayData } = await supabase
-      .from('trail_days')
-      .select('title, trail_steps(estimated_minutes)')
-      .eq('trail_id', activeEnrollment.trail_id)
-      .eq('day_number', activeEnrollment.current_day)
-      .maybeSingle()
-
+    const dayData = (trailDayResult as { data: any }).data
     const totalMinutes = ((dayData?.trail_steps as any[]) ?? [])
       .reduce((sum: number, s: any) => sum + (s.estimated_minutes ?? 0), 0)
 
@@ -286,14 +295,21 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
   const inProgressSession = buildInProgressSession(inProgressResult.data)
   const focusAreas = buildFocusAreas(focusTopicsResult.data)
   const subjectMastery = buildSubjectMastery(subjectAreasResult.data, subjectMasteryResult.data)
-  const subjectFloorAlerts = buildSubjectFloorAlerts(subjectMastery)
+
   const action = buildAction(inProgressSession, focusAreas)
 
-  const [syllabusCoveragePercent, recentSessions, srsReview] = await Promise.all([
+  // Run all remaining async work in parallel
+  const [projectedLaws, syllabusCoveragePercent, recentSessions, srsReview, labCountResult] = await Promise.all([
+    buildProjectedLawsMastery(supabase, user.id),
     buildSyllabusCoverage(supabase, disciplineId, masteryCountResult.data),
     buildRecentSessions(supabase, recentSessionsResult.data),
     buildSrsReview(supabase, user.id),
+    supabase.from('models_3d').select('model_id', { count: 'exact', head: true }),
   ])
+
+  // Append projected Laws & Codes mastery (cross-referenced from other subjects)
+  if (projectedLaws) subjectMastery.push(projectedLaws)
+  const subjectFloorAlerts = buildSubjectFloorAlerts(subjectMastery)
 
   // ── QuickStatsRow derived values ────────────────────────────────────────
   const sessionsCompleted = totalSessionsResult.count ?? 0
@@ -302,11 +318,16 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     (e: { current_mastery_weight: number }) => e.current_mastery_weight >= 0.7
   ).length
   const totalTopics = masteryEntries.length
+  const labCount = labCountResult.count
 
-  // ── 3D Lab module count ─────────────────────────────────────────────────
-  const { count: labCount } = await supabase
-    .from('models_3d')
-    .select('model_id', { count: 'exact', head: true })
+  // ── Results Day banner eligibility ────────────────────────────────────────
+  const aleResult = profileResult.data?.ale_result ?? null
+  const enrolledReviewCenter = profileResult.data?.enrolled_review_center ?? null
+  let showResultsDayBanner = false
+  if (examDateRaw && !aleResult) {
+    const daysSinceExam = Math.floor((Date.now() - new Date(examDateRaw).getTime()) / (24 * 60 * 60 * 1000))
+    showResultsDayBanner = daysSinceExam >= 3 && daysSinceExam <= 14
+  }
 
   return {
     userName: firstName,
@@ -336,6 +357,9 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     sessionsCompleted,
     greenTopics,
     totalTopics,
+    aleResult,
+    enrolledReviewCenter,
+    showResultsDayBanner,
   }
 }
 
@@ -386,5 +410,8 @@ const emptyDashboard = (userName: string): DashboardPageData => {
     sessionsCompleted: 0,
     greenTopics: 0,
     totalTopics: 0,
+    aleResult: null,
+    enrolledReviewCenter: null,
+    showResultsDayBanner: false,
   }
 }

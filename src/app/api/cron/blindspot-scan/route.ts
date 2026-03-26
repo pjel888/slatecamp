@@ -13,7 +13,42 @@ import { headers } from 'next/headers'
  *   (16:00 UTC = midnight PHT)
  *
  * Protected by CRON_SECRET header verification.
+ *
+ * WEIGHTING: Priority score = (1 - mastery_ema) × FREQUENCY_WEIGHTS × TYPE_WEIGHTS
+ * Routes to '3d_lab' if three_d_lab_linked=true AND mastery<0.4 (red)
  */
+
+// Frequency weighting (exam_frequency_level)
+const FREQUENCY_WEIGHTS: Record<string, number> = {
+  'high': 3.0,
+  'medium': 1.5,
+  'low': 0.5,
+}
+
+// Type weighting (taxonomy_node_type)
+const TYPE_WEIGHTS: Record<string, number> = {
+  'code_provision': 2.0,
+  'formula': 1.8,
+  'concept': 1.0,
+  'person': 0.7,
+  'building': 0.7,
+  'case_study': 0.8,
+}
+
+const getPriorityScore = (
+  mastery: number,
+  examFrequency: string | null,
+  nodeType: string | null,
+): number => {
+  const frequencyWeight = examFrequency && FREQUENCY_WEIGHTS[examFrequency]
+    ? FREQUENCY_WEIGHTS[examFrequency]
+    : 1.0
+  const typeWeight = nodeType && TYPE_WEIGHTS[nodeType]
+    ? TYPE_WEIGHTS[nodeType]
+    : 1.0
+  return (1 - mastery) * frequencyWeight * typeWeight
+}
+
 export async function GET(request: Request) {
   // Verify cron secret
   const headersList = await headers()
@@ -84,18 +119,47 @@ export async function GET(request: Request) {
     })
   }
 
-  // BATCH 4: Get weak nodes for ALL eligible users at once
+  // BATCH 4: Get weak nodes with full metadata for priority weighting
   const { data: weakNodes } = await supabase
     .from('user_node_mastery')
-    .select('user_id, topic_id, current_mastery_weight')
+    .select(
+      `user_id, topic_id, current_mastery_weight,
+       taxonomy_tree!topic_id(node_id, exam_frequency, node_type, three_d_lab_linked)`
+    )
     .in('user_id', eligibleUserIds)
     .lt('current_mastery_weight', 0.4)
-    .order('current_mastery_weight', { ascending: true })
 
-  const weakNodesByUser = new Map<string, Array<{ topic_id: string; current_mastery_weight: number }>>()
+  const weakNodesByUser = new Map<string, Array<{
+    topic_id: string
+    current_mastery_weight: number
+    exam_frequency: string | null
+    node_type: string | null
+    three_d_lab_linked: boolean
+    priority_score: number
+  }>>()
+
   for (const node of (weakNodes ?? [])) {
+    const taxonomy = node.taxonomy_tree as any
+    const priorityScore = getPriorityScore(
+      node.current_mastery_weight,
+      taxonomy?.exam_frequency,
+      taxonomy?.node_type
+    )
+
     if (!weakNodesByUser.has(node.user_id)) weakNodesByUser.set(node.user_id, [])
-    weakNodesByUser.get(node.user_id)!.push(node)
+    weakNodesByUser.get(node.user_id)!.push({
+      topic_id: node.topic_id,
+      current_mastery_weight: node.current_mastery_weight,
+      exam_frequency: taxonomy?.exam_frequency,
+      node_type: taxonomy?.node_type,
+      three_d_lab_linked: taxonomy?.three_d_lab_linked,
+      priority_score: priorityScore,
+    })
+  }
+
+  // Sort each user's weak nodes by priority score (highest first)
+  for (const nodes of weakNodesByUser.values()) {
+    nodes.sort((a, b) => b.priority_score - a.priority_score)
   }
 
   // BATCH 5: Get all leaf nodes (shared across all users)
@@ -126,6 +190,7 @@ export async function GET(request: Request) {
     question_count: number
     pre_queue_mastery: Record<string, number>
     status: string
+    recommendation_type: string
   }> = []
 
   for (const userId of eligibleUserIds) {
@@ -144,8 +209,14 @@ export async function GET(request: Request) {
     if (targetNodeIds.length === 0) continue
 
     const preQueueMastery: Record<string, number> = {}
+    let recommendationType = 'quiz'
+
     for (const node of userWeakNodes) {
       preQueueMastery[node.topic_id] = node.current_mastery_weight
+      // If node is red (mastery < 0.4) AND has 3D Lab linked, recommend 3d_lab first
+      if (node.current_mastery_weight < 0.4 && node.three_d_lab_linked) {
+        recommendationType = '3d_lab'
+      }
     }
 
     newQueues.push({
@@ -154,6 +225,7 @@ export async function GET(request: Request) {
       question_count: 12,
       pre_queue_mastery: preQueueMastery,
       status: 'pending',
+      recommendation_type: recommendationType,
     })
   }
 

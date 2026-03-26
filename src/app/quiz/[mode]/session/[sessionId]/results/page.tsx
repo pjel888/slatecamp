@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import type { QuizSessionConfig, EndSessionResult, StaminaBlock } from '@/types/quiz-config'
 import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { analyzeStamina } from '@/lib/quiz/stamina-analysis'
+import { getReviewData } from '@/lib/actions/quiz-v2'
 
 interface ResultsPageProps {
   params: Promise<{ mode: string; sessionId: string }>
@@ -109,6 +110,15 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
     staminaBlocks = analyzeStamina(allInteractions)
   }
 
+  // Fetch review data for inline question review
+  let reviewData
+  try {
+    reviewData = await getReviewData(sessionId)
+  } catch {
+    // If review data fails to load, render with empty questions
+    reviewData = null
+  }
+
   const ResultsDashboard = (await import('@/components/quiz-v2/results/ResultsDashboard')).default
 
   return (
@@ -117,6 +127,8 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
       result={result}
       config={config}
       staminaBlocks={staminaBlocks}
+      reviewQuestions={reviewData?.questions ?? []}
+      questionHistory={reviewData?.questionHistory}
     />
   )
 }

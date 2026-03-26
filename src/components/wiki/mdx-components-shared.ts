@@ -17,6 +17,7 @@ import { LawCallout } from './LawCallout'
 import { ExamTip } from './ExamTip'
 import { AlertBox } from './AlertBox'
 import { ComparisonTable } from './ComparisonTable'
+import { SubjectSnapshot } from './SubjectSnapshot'
 import { ProcessFlow } from './ProcessFlow'
 import { AuthorityContent } from './AuthorityContent'
 import { GenericBlock, SPP206RefServices, SPP207RefServices } from './GenericBlock'
@@ -114,6 +115,9 @@ export const baseMdxComponents = {
 
   // Comparison-styled table wrapper (alternating rows, blue header)
   ComparisonTable,
+
+  // Compact metadata bar for subject overview articles
+  SubjectSnapshot,
 
   // Ordered process timeline with vertical connector
   ProcessFlow,

@@ -30,19 +30,21 @@ const MODE_ICONS: Record<QuizMode, IconComponent> = {
   storm: ({ className, ...p }) => <Lightning className={className} {...p} />,
   fullexam: ({ className, ...p }) => <Shield className={className} {...p} />,
   extended: ({ className, ...p }) => <Barbell className={className} {...p} />,
+  article_review: ({ className, ...p }) => <Book className={className} {...p} />,
 }
 
 // ─── Session summaries ────────────────────────────────────────────────────────
 
 const MODE_SUMMARY: Record<QuizMode, string> = {
-  camp: '20 questions · ~15 minutes · Adaptive difficulty',
-  chill: '20 questions · No timer · Skip freely',
-  subject: '20 questions · ~15 minutes · Subject-focused',
-  focused: '20 questions · ~15 minutes · Developing skills',
-  custom: '20 questions · Fully configurable',
-  storm: '100 questions · 100 minutes · No feedback during',
+  camp: 'Adaptive difficulty · Instant feedback',
+  chill: 'No timer · Skip freely · Instant feedback',
+  subject: 'Deep-dive into a subject · Adaptive difficulty',
+  focused: 'Target your developing skills · Adaptive difficulty',
+  custom: 'Fully configurable session',
+  storm: 'Exam conditions · No feedback during session',
   fullexam: '200 questions · 4 hours · Results in 24 hours',
-  extended: '50 questions · Count-up timer · Stamina analysis',
+  extended: 'Build stamina · Count-up timer · Brief feedback',
+  article_review: 'Quick review from wiki article',
 }
 
 // Zone 3 modes use Camp Orange accent
@@ -76,7 +78,7 @@ const IntroSlide1 = ({ mode, questionCount, onCountChange, onBegin }: IntroSlide
   const iconBg = isZone3(mode) ? 'rgba(232,133,58,0.10)' : 'rgba(27,63,196,0.10)'
   const countOptions = getCountOptions(mode)
 
-  // Storm: hide stepper, fixed 100q
+  // Only hide count stepper for Full Exam (fixed at 200)
   const hideCountStepper = mode === 'fullexam'
 
   return (
@@ -166,7 +168,9 @@ const IntroSlide1 = ({ mode, questionCount, onCountChange, onBegin }: IntroSlide
           ? `Start ${questionCount}-question Storm`
           : mode === 'fullexam'
             ? 'Begin Full Exam'
-            : `Begin ${questionCount}-question Session`}
+            : mode === 'subject' || mode === 'focused'
+              ? 'Begin Session'
+              : `Begin ${questionCount}-question Session`}
       </Button>
     </div>
   )

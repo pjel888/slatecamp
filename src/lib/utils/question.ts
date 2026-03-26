@@ -1,4 +1,44 @@
 /**
+ * Normalizes question options from either format:
+ * 1. Array format: [{id, letter, text}] — pass through
+ * 2. Flat object format: {a: "text", b: "text", c: "text", d: "text", correct: "c", takeaway: "..."} — transform
+ */
+const OPTION_LETTERS = ['a', 'b', 'c', 'd'] as const
+
+export interface NormalizedOption {
+  id: string
+  letter: 'A' | 'B' | 'C' | 'D'
+  text: string
+}
+
+export const normalizeOptions = (
+  options: unknown,
+): NormalizedOption[] => {
+  // Already an array — assume normalized format
+  if (Array.isArray(options)) {
+    return options.map((o, i) => ({
+      id: o.id ?? o.letter ?? OPTION_LETTERS[i],
+      letter: (o.letter ?? OPTION_LETTERS[i]?.toUpperCase() ?? 'A') as 'A' | 'B' | 'C' | 'D',
+      text: o.text ?? String(o),
+    }))
+  }
+
+  // Flat object format: {a: "text", b: "text", ...}
+  if (options && typeof options === 'object') {
+    const obj = options as Record<string, unknown>
+    return OPTION_LETTERS
+      .filter((key) => key in obj && typeof obj[key] === 'string')
+      .map((key, i) => ({
+        id: key,
+        letter: key.toUpperCase() as 'A' | 'B' | 'C' | 'D',
+        text: String(obj[key]),
+      }))
+  }
+
+  return []
+}
+
+/**
  * Resolves the correct option ID for a question.
  * Handles both the current schema (correct_option_id) and legacy field (correct_answer).
  */

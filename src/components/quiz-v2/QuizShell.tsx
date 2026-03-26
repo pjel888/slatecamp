@@ -1,18 +1,24 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useEffect, useRef, useMemo, useCallback } from 'react'
+import { useRouter } from 'next/navigation'
+import { useQuizStore } from '@/stores/useQuizStore'
 import { QuizHeader } from './QuizHeader'
 import { QuizBody } from './QuizBody'
 import { QuizFooter } from './QuizFooter'
+import { QuestionPalette } from './QuestionPalette'
+import { ExitConfirmModal } from './ExitConfirmModal'
+import { SubmitConfirmModal } from './SubmitConfirmModal'
+import { MicroBreakOverlay } from './MicroBreakOverlay'
+import { endSession as endSessionAction } from '@/lib/actions/quiz-v2'
+import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type {
   QuizSessionConfig,
   QuestionForClient,
-  QuizAnswerState,
   FeedbackData,
 } from '@/types/quiz-config'
 
-// Store will be wired here once implemented
-// import { useQuizStore } from '@/stores/useQuizStore'
+// ─── Props ────────────────────────────────────────────────────────────────────
 
 interface QuizShellProps {
   sessionId: string
@@ -20,142 +26,275 @@ interface QuizShellProps {
   questions: QuestionForClient[]
 }
 
-const makeEmptyAnswerState = (): QuizAnswerState => ({
-  selectedOptionId: null,
-  confidenceLevel: null,
-  isCorrect: null,
-  isSkipped: false,
-  isFlagged: false,
-  timeStartedMs: Date.now(),
-  timeSpentMs: 0,
-  submittedAt: null,
-})
+// ─── Component ────────────────────────────────────────────────────────────────
 
-export const QuizShell = ({ sessionId: _sessionId, config, questions }: QuizShellProps) => {
-  // ── Local state (fallback until Zustand store is wired) ──────────────────
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [answers, setAnswers] = useState<Record<string, QuizAnswerState>>(
-    () =>
-      Object.fromEntries(
-        questions.map(q => [q.question_id, makeEmptyAnswerState()]),
-      ),
-  )
-  const [feedbackMap, setFeedbackMap] = useState<Record<string, FeedbackData>>({})
-  const [paletteOpen, setPaletteOpen] = useState(false)
+export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
+  const router = useRouter()
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const initializedRef = useRef(false)
 
-  const currentQuestion = questions[currentIndex]
+  // ── Store state ───────────────────────────────────────────────────────────
+
+  const status = useQuizStore((s) => s.status)
+  const currentIndex = useQuizStore((s) => s.currentIndex)
+  const totalQuestions = useQuizStore((s) => s.totalQuestions)
+  const answers = useQuizStore((s) => s.answers)
+  const timerState = useQuizStore((s) => s.timer)
+  const feedbackState = useQuizStore((s) => s.feedback)
+  const uiState = useQuizStore((s) => s.ui)
+  const results = useQuizStore((s) => s.results)
+  const storeQuestions = useQuizStore((s) => s.questions)
+
+  // ── Store actions (stable refs) ───────────────────────────────────────────
+
+  const initSession = useQuizStore((s) => s.initSession)
+  const getCurrentQuestion = useQuizStore((s) => s.getCurrentQuestion)
+  const getAnsweredCount = useQuizStore((s) => s.getAnsweredCount)
+  const selectAnswer = useQuizStore((s) => s.selectAnswer)
+  const setConfidence = useQuizStore((s) => s.setConfidence)
+  const submitCurrentAnswer = useQuizStore((s) => s.submitCurrentAnswer)
+  const goNext = useQuizStore((s) => s.goNext)
+  const goPrevious = useQuizStore((s) => s.goPrevious)
+  const goToQuestion = useQuizStore((s) => s.goToQuestion)
+  const toggleFlag = useQuizStore((s) => s.toggleFlag)
+  const hideFeedback = useQuizStore((s) => s.hideFeedback)
+  const startTimer = useQuizStore((s) => s.startTimer)
+  const tickTimer = useQuizStore((s) => s.tickTimer)
+  const togglePalette = useQuizStore((s) => s.togglePalette)
+  const showExitModal = useQuizStore((s) => s.showExitModal)
+  const hideExitModal = useQuizStore((s) => s.hideExitModal)
+  const showSubmitModal = useQuizStore((s) => s.showSubmitModal)
+  const hideSubmitModal = useQuizStore((s) => s.hideSubmitModal)
+  const hideMicroBreak = useQuizStore((s) => s.hideMicroBreak)
+  const endSession = useQuizStore((s) => s.endSession)
+
+  // ── Initialize session on mount ───────────────────────────────────────────
+
+  useEffect(() => {
+    if (initializedRef.current) return
+    initializedRef.current = true
+
+    const storeState = useQuizStore.getState()
+
+    // If store already has this session from localStorage hydration, resume
+    if (storeState.sessionId === sessionId && storeState.questions.length > 0) {
+      // Ensure status is active (not stuck on 'intro' after refresh)
+      if (storeState.status === 'intro' || storeState.status === 'idle') {
+        useQuizStore.setState({ status: 'active' })
+      }
+      return
+    }
+
+    // Fresh initialization
+    initSession({
+      sessionId,
+      config,
+      questions,
+      totalQuestions: questions.length,
+      readinessScoreBefore: 0,
+    })
+
+    // Start timer or set active
+    if (config.timer.enabled) {
+      startTimer(config.timer.totalSeconds ? config.timer.totalSeconds * 1000 : undefined)
+    } else {
+      useQuizStore.setState({ status: 'active' })
+    }
+  }, [sessionId, config, questions, initSession, startTimer])
+
+  // ── Timer tick interval ───────────────────────────────────────────────────
+
+  useEffect(() => {
+    if (timerState.isRunning && !timerRef.current) {
+      timerRef.current = setInterval(tickTimer, 1000)
+    }
+    if (!timerState.isRunning && timerRef.current) {
+      clearInterval(timerRef.current)
+      timerRef.current = null
+    }
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+    }
+  }, [timerState.isRunning, tickTimer])
+
+  // ── Navigate to results when session ends ─────────────────────────────────
+
+  useEffect(() => {
+    if (status === 'results' && results) {
+      router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
+    }
+  }, [status, results, config.mode, sessionId, router])
+
+  // ── Derived data ──────────────────────────────────────────────────────────
+
+  const currentQuestion = getCurrentQuestion()
   const currentAnswer = currentQuestion
-    ? (answers[currentQuestion.question_id] ?? makeEmptyAnswerState())
-    : makeEmptyAnswerState()
-  const currentFeedback = currentQuestion
-    ? (feedbackMap[currentQuestion.question_id] ?? null)
-    : null
+    ? answers.get(currentQuestion.question_id)
+    : undefined
 
-  // ── Handlers ─────────────────────────────────────────────────────────────
+  const flaggedSet = useMemo(() => {
+    const set = new Set<string>()
+    for (const [qid, ans] of answers) {
+      if (ans.isFlagged) set.add(qid)
+    }
+    return set
+  }, [answers])
+
+  const feedbackData: FeedbackData | null =
+    feedbackState.visible && feedbackState.questionId
+      ? {
+          questionId: feedbackState.questionId,
+          isCorrect: feedbackState.isCorrect ?? false,
+          correctOptionId: feedbackState.correctOptionId ?? '',
+          rationale: feedbackState.rationale,
+          wikiUrl: feedbackState.wikiUrl,
+        }
+      : null
+
+  const elapsedSeconds = Math.floor(timerState.elapsedMs / 1000)
+  const remainingSeconds =
+    timerState.limitMs !== null
+      ? Math.max(0, Math.floor((timerState.limitMs - timerState.elapsedMs) / 1000))
+      : null
+
+  const hasAnswered = currentAnswer?.selectedOptionId != null
+
+  // ── Handlers ──────────────────────────────────────────────────────────────
 
   const handleSelectOption = useCallback(
     (optionId: string) => {
       if (!currentQuestion) return
-      setAnswers(prev => ({
-        ...prev,
-        [currentQuestion.question_id]: {
-          ...(prev[currentQuestion.question_id] ?? makeEmptyAnswerState()),
-          selectedOptionId: optionId,
-        },
-      }))
+      selectAnswer(currentQuestion.question_id, optionId)
     },
-    [currentQuestion],
+    [currentQuestion, selectAnswer],
   )
 
   const handleConfidenceChange = useCallback(
     (level: 1 | 2 | 3) => {
       if (!currentQuestion) return
-      setAnswers(prev => ({
-        ...prev,
-        [currentQuestion.question_id]: {
-          ...(prev[currentQuestion.question_id] ?? makeEmptyAnswerState()),
-          confidenceLevel: level,
-        },
-      }))
+      setConfidence(currentQuestion.question_id, level)
     },
-    [currentQuestion],
+    [currentQuestion, setConfidence],
   )
 
   const handleSubmit = useCallback(() => {
-    if (!currentQuestion || !currentAnswer.selectedOptionId) return
-
-    // Mark submitted timestamp
-    setAnswers(prev => ({
-      ...prev,
-      [currentQuestion.question_id]: {
-        ...(prev[currentQuestion.question_id] ?? makeEmptyAnswerState()),
-        submittedAt: new Date().toISOString(),
-        timeSpentMs: Date.now() - (prev[currentQuestion.question_id]?.timeStartedMs ?? Date.now()),
-      },
-    }))
-
-    // For deferred/none feedback timing, skip feedback and advance
-    if (config.feedback.timing !== 'immediate') {
-      handleNext()
-    }
-    // For immediate feedback: the store/server action will populate feedbackMap
-    // This will be wired via useQuizStore once available
-  }, [currentQuestion, currentAnswer, config.feedback.timing])
+    submitCurrentAnswer()
+  }, [submitCurrentAnswer])
 
   const handleNext = useCallback(() => {
-    if (currentIndex < questions.length - 1) {
-      setCurrentIndex(i => i + 1)
+    if (feedbackState.visible) {
+      hideFeedback()
     }
-  }, [currentIndex, questions.length])
-
-  const handlePrevious = useCallback(() => {
-    if (currentIndex > 0) {
-      setCurrentIndex(i => i - 1)
-    }
-  }, [currentIndex])
-
-  const handleExit = useCallback(() => {
-    // Navigation will be handled by store/router integration
-    if (typeof window !== 'undefined') {
-      window.history.back()
-    }
-  }, [])
+    goNext()
+  }, [feedbackState.visible, hideFeedback, goNext])
 
   const handleToggleFlag = useCallback(() => {
     if (!currentQuestion) return
-    setAnswers(prev => ({
-      ...prev,
-      [currentQuestion.question_id]: {
-        ...(prev[currentQuestion.question_id] ?? makeEmptyAnswerState()),
-        isFlagged: !(prev[currentQuestion.question_id]?.isFlagged ?? false),
-      },
-    }))
-  }, [currentQuestion])
+    toggleFlag(currentQuestion.question_id)
+  }, [currentQuestion, toggleFlag])
 
-  if (!currentQuestion) return null
+  const handleExitConfirm = useCallback(async () => {
+    hideExitModal()
+    try {
+      const result = await endSessionAction({
+        sessionId,
+        endReason: 'user_exit',
+      })
+      endSession(result)
+    } catch {
+      router.push('/dashboard')
+    }
+  }, [sessionId, hideExitModal, endSession, router])
 
-  const hasAnswered = currentAnswer.selectedOptionId !== null
+  const handleSubmitAll = useCallback(async () => {
+    hideSubmitModal()
+    try {
+      const result = await endSessionAction({
+        sessionId,
+        endReason: 'completed',
+      })
+      endSession(result)
+    } catch {
+      router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
+    }
+  }, [sessionId, config.mode, hideSubmitModal, endSession, router])
+
+  const handleReviewUnanswered = useCallback(() => {
+    hideSubmitModal()
+    const state = useQuizStore.getState()
+    const firstUnanswered = state.questions.findIndex((q) => {
+      const a = state.answers.get(q.question_id)
+      return !a?.selectedOptionId && !a?.isSkipped
+    })
+    if (firstUnanswered >= 0) {
+      goToQuestion(firstUnanswered)
+    }
+  }, [hideSubmitModal, goToQuestion])
+
+  const handleFooterNext = useCallback(() => {
+    const isLast = currentIndex === totalQuestions - 1
+    if (isLast) {
+      if (config.navigation.confirmBeforeSubmit) {
+        showSubmitModal()
+      } else {
+        void handleSubmitAll()
+      }
+    } else {
+      if (feedbackState.visible) {
+        hideFeedback()
+      }
+      goNext()
+    }
+  }, [
+    currentIndex,
+    totalQuestions,
+    config.navigation.confirmBeforeSubmit,
+    feedbackState.visible,
+    showSubmitModal,
+    handleSubmitAll,
+    hideFeedback,
+    goNext,
+  ])
+
+  const handlePaletteJump = useCallback(
+    (index: number) => {
+      togglePalette()
+      goToQuestion(index)
+    },
+    [togglePalette, goToQuestion],
+  )
+
+  // ── Loading state ─────────────────────────────────────────────────────────
+
+  if (!currentQuestion || status === 'idle' || status === 'loading') {
+    return <CampfireLoader />
+  }
+
+  // ── Render ────────────────────────────────────────────────────────────────
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F7FA]" aria-label="Quiz session">
+    <div className="flex flex-col min-h-screen bg-surface-focused" aria-label="Quiz session">
       <QuizHeader
         config={config}
         currentPosition={currentIndex + 1}
-        totalQuestions={questions.length}
-        isFlagged={currentAnswer.isFlagged}
-        onExit={handleExit}
+        totalQuestions={totalQuestions}
+        isFlagged={currentAnswer?.isFlagged ?? false}
+        elapsedSeconds={elapsedSeconds}
+        remainingSeconds={remainingSeconds}
+        onExit={showExitModal}
         onToggleFlag={config.navigation.bookmarkEnabled ? handleToggleFlag : undefined}
-        onOpenPalette={
-          config.navigation.questionPalette ? () => setPaletteOpen(true) : undefined
-        }
+        onOpenPalette={config.navigation.questionPalette ? togglePalette : undefined}
       />
 
       <main className="flex-1 overflow-hidden">
         <QuizBody
           question={currentQuestion}
-          selectedOptionId={currentAnswer.selectedOptionId}
-          confidenceLevel={currentAnswer.confidenceLevel}
-          feedback={currentFeedback}
+          selectedOptionId={currentAnswer?.selectedOptionId ?? null}
+          confidenceLevel={currentAnswer?.confidenceLevel ?? null}
+          feedback={feedbackData}
           config={config}
           onSelectOption={handleSelectOption}
           onConfidenceChange={handleConfidenceChange}
@@ -167,28 +306,54 @@ export const QuizShell = ({ sessionId: _sessionId, config, questions }: QuizShel
       <QuizFooter
         config={config}
         currentPosition={currentIndex + 1}
-        totalQuestions={questions.length}
+        totalQuestions={totalQuestions}
         hasAnswered={hasAnswered}
-        onPrevious={handlePrevious}
-        onNext={handleNext}
+        onPrevious={goPrevious}
+        onNext={handleFooterNext}
       />
 
-      {/* Palette placeholder — will be wired with QuestionPalette component */}
-      {paletteOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label="Question palette"
-          className="fixed inset-0 z-50 bg-black/40 flex items-center justify-end"
-          onClick={() => setPaletteOpen(false)}
-        >
-          <div
-            className="bg-white h-full w-72 shadow-lg p-6"
-            onClick={e => e.stopPropagation()}
-          >
-            <p className="text-sm text-[#4A5568]">Question palette — coming soon</p>
-          </div>
-        </div>
+      {/* Question palette — slide-in panel */}
+      {uiState.paletteOpen && (
+        <QuestionPalette
+          questions={storeQuestions}
+          answers={answers}
+          currentIndex={currentIndex}
+          flaggedSet={flaggedSet}
+          onJumpTo={handlePaletteJump}
+          onClose={togglePalette}
+        />
+      )}
+
+      {/* Exit confirmation dialog */}
+      {uiState.exitModalOpen && (
+        <ExitConfirmModal
+          answeredCount={getAnsweredCount()}
+          totalCount={totalQuestions}
+          onContinue={hideExitModal}
+          onExit={handleExitConfirm}
+        />
+      )}
+
+      {/* Submit confirmation dialog */}
+      {uiState.submitModalOpen && (
+        <SubmitConfirmModal
+          questions={storeQuestions}
+          answers={answers}
+          flaggedSet={flaggedSet}
+          currentIndex={currentIndex}
+          onReviewUnanswered={handleReviewUnanswered}
+          onSubmit={handleSubmitAll}
+          onClose={hideSubmitModal}
+        />
+      )}
+
+      {/* Micro break overlay */}
+      {uiState.microBreakVisible && (
+        <MicroBreakOverlay
+          questionsCompleted={getAnsweredCount()}
+          breakDurationSeconds={config.breaks.breakDurationSeconds}
+          onContinue={hideMicroBreak}
+        />
       )}
     </div>
   )

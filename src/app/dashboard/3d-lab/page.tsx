@@ -18,10 +18,11 @@ export default async function ThreeDLabPage({
 }: {
   searchParams: Promise<PageSearchParams>;
 }) {
-  const profile = await getAdminAwareProfile();
+  const [profile, flags] = await Promise.all([
+    getAdminAwareProfile(),
+    getFeatureFlags(),
+  ]);
   if (!profile) redirect(ROUTES.LOGIN);
-
-  const flags = await getFeatureFlags();
   const hasAccess =
     flags.bypass3dGate ||
     hasTierAccess("camp", profile.tier, profile.isAdmin, flags);

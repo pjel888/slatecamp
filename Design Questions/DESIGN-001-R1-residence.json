@@ -1,0 +1,616 @@
+{
+  "id": "DESIGN-001",
+  "title": "Proposed Architect's Residence (R-1 Single Detached)",
+  "building_type": "R-1 Single Detached Residence",
+  "difficulty": "FOUNDATIONAL",
+  "trap_count": 1,
+  "time_limit_minutes": 90,
+  "brief": "An architect is designing her own residence on a 300 sqm rectangular lot zoned R-1, located in a mature residential neighborhood. The site has southern frontage of 15m with a depth of 20m, sloping gently (2%) toward the rear. The design program comprises a 2-storey structure with living spaces (living room, dining room, kitchen), three bedrooms, two guest bathrooms, a maid's room with ensuite, and a 1-car garage. The client seeks maximum spatial efficiency while complying with all zoning, building height, and land use restrictions. The adjacent properties are all low-rise residential, and there are no utility easements affecting the site. This scenario tests comprehensive understanding of PSO, lot coverage, floor area calculation, height limitations, and setback governance.",
+  "site_data": {
+    "total_lot_area_sqm": 300,
+    "lot_shape": "rectangular",
+    "frontage_m": 15,
+    "depth_m": 20,
+    "zone": "R-1",
+    "pso_percent": 50,
+    "building_height_limit_m": 10,
+    "flar_min": 1.0,
+    "flar_max": 1.5,
+    "right_of_way_m": 10,
+    "right_of_way_direction": "frontage (south-facing)",
+    "slope_percent": 2,
+    "slope_direction": "toward right-of-way",
+    "isa_percent": 30,
+    "usa_percent": 20,
+    "adjacent_zones": {
+      "north": "R-1 Residential",
+      "south": "public_street",
+      "east": "R-1 Residential",
+      "west": "R-1 Residential"
+    },
+    "easements": "None",
+    "utilities": "standard municipal supply"
+  },
+  "program": {
+    "occupancy_type": "Residential - Single Detached",
+    "building_stories": 2,
+    "zones": [
+      {
+        "name": "Living Areas",
+        "spaces": ["Living Room", "Dining Room", "Kitchen"]
+      },
+      {
+        "name": "Sleeping Areas",
+        "spaces": ["Master Bedroom", "Bedroom 2", "Bedroom 3", "Maid's Room"]
+      },
+      {
+        "name": "Sanitary Areas",
+        "spaces": ["Master T&B", "Guest T&B", "Maid's Ensuite"]
+      },
+      {
+        "name": "Service Areas",
+        "spaces": ["1-Car Garage", "Storage", "Utility"]
+      }
+    ],
+    "total_bedrooms": 3,
+    "total_bathrooms": 3,
+    "garage_spaces": 1,
+    "client_role": "Architect (designer-owner)"
+  },
+  "code_references": [
+    "PD 1096 IRR, Rule VII, Table VII.G.1 (Zone R-1 Land Use Restrictions)",
+    "PD 1096 IRR, Rule VII, Section 7.2.3 (Lot Coverage & Floor Area Ratio)",
+    "PD 1096 IRR, Rule VIII, Section 8.1.2 (Building Height & Setback Standards)",
+    "NBC 2015, Section 4.2 (Light, Ventilation, Spatial Dimensions)",
+    "PD 1096 IRR, Rule VII, Table VII.H (Parking Requirements)"
+  ],
+  "computation_sheet": {
+    "step_1_pso_check": {
+      "description": "Permissible Site Occupancy (PSO) for R-1",
+      "tla_sqm": 300,
+      "pso_percent": 50,
+      "computed_ambf_sqm": 150,
+      "source": "PD 1096 Rule VII.G.1 — R-1 zone allows 50% PSO"
+    },
+    "step_2_setback_check": {
+      "description": "Setbacks govern if more restrictive than PSO",
+      "building_height_estimated_m": 6.5,
+      "front_setback_m": 4.5,
+      "side_setback_each_m": 2.0,
+      "rear_setback_m": 2.0,
+      "buildable_frontage_m": 11.0,
+      "buildable_depth_m": 13.5,
+      "setback_derived_ambf_sqm": 148.5,
+      "governing_ambf_sqm": 148.5,
+      "note": "Setbacks (148.5) more restrictive than PSO (150) — setbacks govern. TRAP: Students may use 150."
+    },
+    "step_3_coverage_areas": {
+      "isa_percent": 30,
+      "isa_sqm": 90,
+      "usa_percent": 20,
+      "usa_sqm": 60,
+      "tosl_sqm": 150,
+      "maca_percent": 80,
+      "maca_sqm": 240
+    },
+    "step_4_floor_area": {
+      "description": "Total Gross Floor Area (TGFA)",
+      "governing_ambf_sqm": 148.5,
+      "floors_per_brief": 2,
+      "computed_tgfa_sqm": 297,
+      "flar_computed": 0.99,
+      "flar_allowable_range": "1.0 to 1.5",
+      "note": "FLAR of 0.99 is BELOW minimum 1.0 but still acceptable; it indicates underutilization of lot. For regulatory purposes, actual TGFA is 297 sqm."
+    },
+    "step_5_height_limitation": {
+      "bhl_m": 10,
+      "storey_height_assumed_m": 3.0,
+      "max_floors_allowed": 3,
+      "floors_per_brief": 2,
+      "compliance": "✓ COMPLIANT (2 floors < 3 floors allowed)"
+    },
+    "step_6_parking": {
+      "residential_unit_count": 1,
+      "parking_per_unit": 1,
+      "total_parking_required": 1,
+      "parking_provided": 1,
+      "compliance": "✓ COMPLIANT"
+    }
+  },
+  "hidden_traps": [
+    {
+      "trap_id": 1,
+      "description": "PSO vs. Setback Governance",
+      "trap_text": "PSO calculation yields 150 sqm (300 × 50%), but setback-derived buildable area is only 148.5 sqm. Most R-1 lots are setback-governed, not PSO-governed. Students who ignore setbacks will incorrectly use 150 sqm as AMBF, leading to wrong TGFA (300 sqm instead of 297 sqm), wrong FLAR (1.0 instead of 0.99), and cascading errors.",
+      "affected_questions": [2, 3, 7, 8]
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "What is the Permissible Site Occupancy (PSO) percentage for a Single Detached Residence (R-1 zone) as prescribed by PD 1096 Rule VII?",
+      "options": [
+        "50%",
+        "65%",
+        "40%",
+        "60%"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "R-1 zone PSO is 50% per PD 1096 Rule VII, Table VII.G.1. This is a foundational code value.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "65% is the PSO for R-2 (Multi-Unit Residential) — common distractor for students who confuse zone classifications.",
+        "distractor_2": "40% is typical for lower-density zones; R-1 allows higher occupancy.",
+        "distractor_3": "60% would violate the R-1 standard; it is a plausible but incorrect value.",
+        "takeaway": "R-1 PSO = 50%; memorize by zone tier: R-1 (50%), R-2 (65%)."
+      },
+      "solution_steps": [
+        "Identify zone: R-1 Single Detached Residence",
+        "Consult PD 1096 Rule VII, Table VII.G.1",
+        "Find row for R-1",
+        "Read PSO column: 50%"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Table VII.G.1"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "Calculate the Allowable Building Footprint (AMBF) for this 300 sqm R-1 lot considering both PSO and setback constraints. The estimated building height is 6.5 m, with front setback 4.5 m, side setbacks 2.0 m each, and rear setback 2.0 m.",
+      "options": [
+        "148.5 sqm",
+        "150.0 sqm",
+        "165.0 sqm",
+        "135.0 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Setbacks are more restrictive than PSO. Buildable area = (15 − 2 − 2) × (20 − 4.5 − 2) = 11 × 13.5 = 148.5 sqm. Setbacks govern. **TRAP 1**",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "150.0 sqm is the PSO-derived AMBF (300 × 50%), but students who ignore setbacks select this. This is the primary trap.",
+        "distractor_2": "165.0 sqm results from incorrect setback arithmetic; a careless distractor.",
+        "distractor_3": "135.0 sqm may arise from misapplying USA or ISA percentages instead of setback logic.",
+        "takeaway": "Always compare PSO-derived and setback-derived limits; the MORE RESTRICTIVE governs."
+      },
+      "solution_steps": [
+        "Calculate PSO-derived AMBF: 300 × 0.50 = 150 sqm",
+        "Calculate setback-derived buildable area:",
+        "  Buildable frontage = 15 − (2 + 2) = 11 m",
+        "  Buildable depth = 20 − (4.5 + 2) = 13.5 m",
+        "  Buildable area = 11 × 13.5 = 148.5 sqm",
+        "Compare: 148.5 sqm (setback) < 150 sqm (PSO)",
+        "Select minimum: AMBF = 148.5 sqm (setbacks govern)"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VIII, Section 8.1.2 (Setback Standards); Rule VII, Section 7.2.3 (Lot Coverage)"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "question_stem": "What is the maximum Total Gross Floor Area (TGFA) permissible for this 2-storey residence?",
+      "options": [
+        "297 sqm",
+        "300 sqm",
+        "330 sqm",
+        "240 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "TGFA = Governing AMBF × Floors = 148.5 × 2 = 297 sqm. Uses the setback-governed AMBF, not the PSO value.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "300 sqm results from using PSO-derived AMBF (150 × 2) — student fell into TRAP 1 (setback trap).",
+        "distractor_2": "330 sqm is too high; may come from misapplying the FLAR max (1.5) directly to TLA (300 × 1.1).",
+        "distractor_3": "240 sqm is 80% of TLA (ISA% + USA%), confusing lot coverage with floor area.",
+        "takeaway": "TGFA depends on the governing AMBF (setback or PSO, whichever is smaller), not TLA or FLAR."
+      },
+      "solution_steps": [
+        "Confirm governing AMBF from Q2: 148.5 sqm",
+        "Confirm floor count from brief: 2 storeys",
+        "Calculate TGFA: 148.5 × 2 = 297 sqm"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.2.3 (Floor Area Ratio & Total Floor Area)"
+    },
+    {
+      "number": 4,
+      "type": "DC",
+      "question_stem": "What is the Floor Area Ratio (FLAR) for this design?",
+      "options": [
+        "0.99",
+        "1.0",
+        "1.25",
+        "1.5"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "FLAR = TGFA ÷ TLA = 297 ÷ 300 = 0.99. This is below the minimum allowable range (1.0–1.5), indicating underutilization, but it is compliant because FLAR is a ceiling, not a floor (in practice, the minimum may not be enforceable).",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "1.0 results from using the PSO-derived TGFA (150 × 2 = 300) or rounding the actual 0.99 to the minimum permitted range.",
+        "distractor_2": "1.25 results from applying FLAR midpoint calculation or misusing other ratios (e.g., MACA ÷ TLA).",
+        "distractor_3": "1.5 is the maximum allowable FLAR, not the actual FLAR for this design.",
+        "takeaway": "FLAR is computed as TGFA ÷ TLA; underutilization (FLAR < 1.0) is permissible as long as design constraints (setbacks, BHL) are met."
+      },
+      "solution_steps": [
+        "TGFA from Q3: 297 sqm",
+        "TLA: 300 sqm",
+        "FLAR = 297 ÷ 300 = 0.99"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.2.3 (Floor Area Ratio Definition)"
+    },
+    {
+      "number": 5,
+      "type": "DC",
+      "question_stem": "Calculate the Impervious Surface Area (ISA) for this 300 sqm lot, given ISA% of 30%.",
+      "options": [
+        "90 sqm",
+        "60 sqm",
+        "100 sqm",
+        "150 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "ISA = TLA × ISA% = 300 × 0.30 = 90 sqm. Impervious surfaces include building footprint, paved driveways, and hardscape.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "60 sqm is the USA (Unshaded Surface Area), not ISA; common confusion between the two.",
+        "distractor_2": "100 sqm may come from misapplying a different percentage or confusing ISA% with another zoning parameter.",
+        "distractor_3": "150 sqm is the AMBF or PSO-derived footprint, not ISA.",
+        "takeaway": "ISA% and USA% are mutually independent percentages of TLA; add them only to compute MACA."
+      },
+      "solution_steps": [
+        "ISA% from site data: 30%",
+        "TLA: 300 sqm",
+        "ISA = 300 × 0.30 = 90 sqm"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.2.2 (Impervious Surface Area & Sustainable Design)"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "What is the Maximum Area of Coverage (MACA) for this lot?",
+      "options": [
+        "240 sqm",
+        "150 sqm",
+        "300 sqm",
+        "180 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "MACA = (ISA% + USA%) × TLA = (0.30 + 0.20) × 300 = 0.50 × 300 = 150 sqm. However, MACA is also stated as a percentage: 80% of TLA for R-1. If MACA is interpreted as total lot coverage including both ISA and USA plus other allowances, it may be higher. In this context, MACA = 0.80 × 300 = 240 sqm, representing the total allowable coverage including impervious, unshaded, and landscaped surfaces.",
+        "distractor_0": "This is the correct answer (240 sqm = 80% of TLA, the standard R-1 MACA percentage).",
+        "distractor_1": "150 sqm is the sum of ISA and USA (30% + 20%), which is a subset of MACA, not the full coverage.",
+        "distractor_2": "300 sqm is 100% of the lot, which exceeds maximum coverage limits.",
+        "distractor_3": "180 sqm (60% of TLA) is too low for typical R-1 residential coverage.",
+        "takeaway": "MACA for R-1 is typically 80% of TLA; it encompasses all hardscape and built surfaces."
+      },
+      "solution_steps": [
+        "MACA percentage for R-1: 80%",
+        "TLA: 300 sqm",
+        "MACA = 300 × 0.80 = 240 sqm"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.2.2 (Maximum Area of Coverage)"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "Based on the governing AMBF and the brief stating a 2-storey structure, which of the following correctly states the Total Shaded/Landscaped Area (TOSL)?",
+      "options": [
+        "150 sqm (sum of ISA and USA)",
+        "148.5 sqm (AMBF per floor)",
+        "240 sqm (MACA)",
+        "297 sqm (TGFA)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "TOSL (Total Shaded/Landscaped Area) is the sum of hardscape and open space surfaces required. TOSL = ISA + USA = 90 + 60 = 150 sqm. This represents the designated surface treatment areas on the site.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "148.5 sqm is the AMBF (building footprint), not TOSL. TOSL is larger because it includes landscaping and unshaded open areas.",
+        "distractor_2": "240 sqm is the MACA (maximum coverage); TOSL is a subset of MACA.",
+        "distractor_3": "297 sqm is the TGFA (interior floor area), not surface treatment areas.",
+        "takeaway": "TOSL is always ISA + USA; it is a site planning metric, not a volumetric measure."
+      },
+      "solution_steps": [
+        "ISA: 90 sqm",
+        "USA: 60 sqm",
+        "TOSL = ISA + USA = 90 + 60 = 150 sqm"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.2.2 (Shaded and Landscaped Surface Areas)"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "What is the building height limit (BHL) for this R-1 residential lot, and how many storeys does it permit (assuming 3.0 m per storey)?",
+      "options": [
+        "10 m BHL, permitting up to 3 storeys",
+        "10 m BHL, permitting up to 2 storeys",
+        "12 m BHL, permitting up to 4 storeys",
+        "8 m BHL, permitting up to 2 storeys"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "BHL for R-1 is 10 m per site data and PD 1096 standards. Dividing by 3.0 m per storey: 10 ÷ 3.0 = 3.33 storeys → max 3 storeys. The brief specifies 2 storeys, which is compliant but does not max out the height limit.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "10 m BHL is correct, but limiting to 2 storeys is incorrect; 2 storeys is permitted but not the maximum.",
+        "distractor_2": "12 m BHL and 4 storeys are too high for R-1 residential zones; typical for higher-density zones.",
+        "distractor_3": "8 m BHL is too restrictive; standard R-1 BHL is 10 m.",
+        "takeaway": "R-1 BHL = 10 m; always compute max storeys as BHL ÷ 3.0 m (storey height) for design context."
+      },
+      "solution_steps": [
+        "BHL from site data: 10 m",
+        "Storey height assumption: 3.0 m per storey",
+        "Max storeys = 10 ÷ 3.0 = 3.33 → 3 storeys permissible",
+        "Brief states 2 storeys → compliant (2 < 3)"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VIII, Section 8.1.1 (Building Height Limits by Zone)"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "question_stem": "In an R-1 single detached residential lot with a 300 sqm area and 15 m southern frontage facing the public street, what is the primary constraint governing the Allowable Building Footprint (AMBF) for this design?",
+      "options": [
+        "Setback restrictions (front, side, rear)",
+        "Permissible Site Occupancy (PSO)",
+        "Floor Area Ratio (FLAR) maximum",
+        "Building Height Limit (BHL)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Setback restrictions are the primary constraint for this lot because the setback-derived buildable area (148.5 sqm) is more restrictive than the PSO-derived area (150 sqm). Setbacks directly limit the building footprint by controlling distance from lot lines.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "PSO does provide a limit (150 sqm), but in this case, setbacks are stricter, so PSO is secondary.",
+        "distractor_2": "FLAR maximum (1.5) controls total floor area, not footprint directly.",
+        "distractor_3": "BHL (10 m) controls vertical extent, not horizontal footprint.",
+        "takeaway": "Setbacks often dominate footprint control; always compare PSO and setback-derived limits."
+      },
+      "solution_steps": [
+        "Identify constraints: PSO, setbacks, FLAR, BHL",
+        "PSO-derived AMBF: 150 sqm",
+        "Setback-derived AMBF: 148.5 sqm",
+        "Setback limit is lower (stricter) → setbacks govern footprint"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VIII, Section 8.1.2 (Setback Standards & Control)"
+    },
+    {
+      "number": 10,
+      "type": "DC",
+      "question_stem": "Which of the following statements is true regarding the relationship between Permissible Site Occupancy (PSO), setback-derived AMBF, and governing AMBF for this lot?",
+      "options": [
+        "Governing AMBF = minimum(PSO-derived AMBF, setback-derived AMBF); setbacks may override PSO",
+        "Governing AMBF = maximum(PSO-derived AMBF, setback-derived AMBF); PSO always takes precedence",
+        "Governing AMBF equals PSO-derived AMBF exclusively; setbacks are independent",
+        "Governing AMBF equals setback-derived AMBF exclusively; PSO is only informational"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "The governing AMBF is the MINIMUM of the two limits. Whichever is smaller (more restrictive) controls the footprint. In this case: min(150, 148.5) = 148.5 sqm. This reflects the principle that constraints stack; the strictest one wins.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "Taking the maximum would allow overbuilding; this is incorrect.",
+        "distractor_2": "PSO and setbacks are not independent; the more restrictive one governs.",
+        "distractor_3": "Both PSO and setbacks are enforceable; neither is purely informational.",
+        "takeaway": "Governing limit = minimum of all applicable constraints; use the smallest permissible area."
+      },
+      "solution_steps": [
+        "PSO-derived AMBF: 300 × 0.50 = 150 sqm",
+        "Setback-derived AMBF: (15 − 4) × (20 − 6.5) = 11 × 13.5 = 148.5 sqm",
+        "Governing AMBF = min(150, 148.5) = 148.5 sqm"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII & VIII (Integrated Land Use & Setback Standards)"
+    },
+    {
+      "number": 11,
+      "type": "SP",
+      "question_stem": "Describe the setback requirements for a 2-storey R-1 single detached residence with an estimated building height of 6.5 m. What are the typical front, side, and rear setback values (in meters) for this zone?",
+      "options": [
+        "Front: 4.5 m, Side: 2.0 m each, Rear: 2.0 m",
+        "Front: 3.0 m, Side: 1.5 m each, Rear: 1.5 m",
+        "Front: 6.0 m, Side: 3.0 m each, Rear: 3.0 m",
+        "Front: 2.0 m, Side: 1.0 m each, Rear: 1.0 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "R-1 setback standards per PD 1096 for a 6.5 m high building: Front = 1.5 × BHL (height of building) ÷ 2 (rough rule) or a fixed 4.5 m; sides = 2.0 m each (minimum); rear = 2.0 m. These values are typical and match the site data provided.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "Smaller setbacks (3.0 m front, 1.5 m side/rear) are typical for R-2 or more urban zones, not R-1.",
+        "distractor_2": "Larger setbacks (6.0 m front, 3.0 m side/rear) are more restrictive; typical for lower-density or special zones.",
+        "distractor_3": "Minimal setbacks (2.0 m front, 1.0 m side/rear) are too small for R-1; they approach urban commercial standards.",
+        "takeaway": "R-1 setbacks are moderate: front ≈ 4–4.5 m, sides ≈ 2 m, rear ≈ 2 m."
+      },
+      "solution_steps": [
+        "Consult PD 1096 Rule VIII setback table for R-1 zone",
+        "Find row for building height ~6.5 m",
+        "Read setback columns: Front, Side, Rear",
+        "Note: Setbacks vary with height; these are standard values for this height range"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VIII, Section 8.1.2 (Setback Schedule by Zone & Building Height)"
+    },
+    {
+      "number": 12,
+      "type": "SP",
+      "question_stem": "This R-1 lot has a southern frontage of 15 m facing the public street and a depth of 20 m extending northward. Which statement correctly describes the lot orientation and its design implications?",
+      "options": [
+        "South-facing frontage allows primary living areas and glazing to face the street; depth extends toward the rear (north) for private spaces",
+        "North-facing frontage reduces solar gain; deep lot favors long east-west building orientation",
+        "East-facing frontage is optimal for morning light; 15 m depth is too shallow for residential design",
+        "West-facing frontage requires heavy shading; 20 m depth maximizes AMBF per PD 1096"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "South-facing frontage (in Northern Hemisphere design context) allows good solar exposure for public facade and living areas. The 20 m depth provides sufficient space for layered private zones (bedrooms, rear service areas) with north-facing rear boundary. This is optimal R-1 residential planning.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "North-facing is the opposite orientation; this mischaracterizes solar access.",
+        "distractor_2": "15 m is adequate frontage for R-1; east-west orientation is one option, not the only one.",
+        "distractor_3": "West-facing is only a secondary orientation on this lot; depth is not governed by FLAR alone.",
+        "takeaway": "South-facing frontage is advantageous for R-1 residential; depth determines internal zonation layers."
+      },
+      "solution_steps": [
+        "Identify frontage direction: south (facing public street, RROW)",
+        "Identify depth direction: north (toward rear lot line)",
+        "Assess solar & privacy implications: public facade (south), private zones (north)",
+        "Confirm layout strategy aligns with orientation"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VIII, Section 8.2 (Site Planning Principles); NBC 2015 Section 4.2 (Daylighting & Orientation)"
+    },
+    {
+      "number": 13,
+      "type": "ZN",
+      "question_stem": "In the proposed 2-storey residential design with 3 bedrooms, 2 guest T&B, a maid's room with ensuite, and common living areas (living room, dining, kitchen), which adjacency is MOST critical for spatial efficiency and user comfort in an R-1 residence?",
+      "options": [
+        "Kitchen and dining areas adjacent; dining adjacent to living room (open plan preferred)",
+        "Master bedroom adjacent to main T&B; guest bedrooms isolated from living areas",
+        "Maid's room positioned to minimize travel distance to kitchen and service areas",
+        "All bedrooms on one floor; all living areas and kitchen on the other floor (strict separation)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "For efficient residential planning, kitchen-dining-living adjacency is critical for functional flow, sight lines, and family interaction. Open-plan living is strongly preferred in R-1 designs, reducing wasted circulation and improving liveability.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "Master bedroom T&B adjacency is important, but separation of bedrooms from living is not a spatial efficiency goal; overlapping zones is fine.",
+        "distractor_2": "Maid's room service access is a secondary planning goal; not more critical than living-dining-kitchen.",
+        "distractor_3": "Strict separation (all bedrooms on one floor) reduces flexibility and wastes space; modern R-1 designs mix uses vertically.",
+        "takeaway": "Living-dining-kitchen adjacency is the primary spatial adjacency driver in R-1 residential design."
+      },
+      "solution_steps": [
+        "List functional zones: living, dining, kitchen (wet), bedrooms (private), T&B",
+        "Identify high-traffic connections: kitchen → dining, dining → living, living → circulation",
+        "Prioritize adjacencies: frequent connections > occasional connections",
+        "Open-plan living area is most efficient for R-1"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.3.2 (Residential Zone Programming); NBC 2015 Section 4.2 (Spatial Requirements)"
+    },
+    {
+      "number": 14,
+      "type": "ZN",
+      "question_stem": "A 2-storey R-1 residence has a total gross floor area of ~297 sqm. If the ground floor accommodates a 1-car garage (12 sqm), living-dining-kitchen open area (40 sqm), and half of the T&B areas (8 sqm), approximately how much area remains for ground floor support spaces (entry, circulation, storage)?",
+      "options": [
+        "~30 sqm (assuming GFA ÷ 2 = 148.5 sqm per storey)",
+        "~50 sqm (assuming larger ground floor allocation)",
+        "~15 sqm (insufficient for comfortable circulation)",
+        "~65 sqm (including all bedroom areas on ground floor)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Per-storey allocation: 297 ÷ 2 = 148.5 sqm per storey. Ground floor: 12 (garage) + 40 (living-dining-kitchen) + 8 (T&B) = 60 sqm. Remaining = 148.5 − 60 = 88.5 sqm, of which ~30 sqm is typical for entry, stairs, corridors, and storage. This is a reasonable allocation for a 2-storey residence.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "50 sqm is plausible but underestimates; residual may be larger if bedrooms are on ground floor.",
+        "distractor_2": "15 sqm is too tight; standard residential circulation requires 20–40 sqm per storey.",
+        "distractor_3": "65 sqm assumes all bedrooms ground floor; unlikely given maid's room and guest bedrooms should be on upper storey.",
+        "takeaway": "Allocate 20–40 sqm per storey for circulation, stairs, entry, and storage in R-1 residences."
+      },
+      "solution_steps": [
+        "TGFA: 297 sqm",
+        "Per storey: 297 ÷ 2 = 148.5 sqm",
+        "Ground floor assigned: 12 + 40 + 8 = 60 sqm",
+        "Remaining for circulation/storage: 148.5 − 60 = 88.5 sqm",
+        "Typical allocation: 20–40 sqm circulation, 30–50 sqm bedrooms/additional spaces"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.3.2 (Residential Space Allocation); NBC 2015 Section 4.2.3 (Circulation & Dimensions)"
+    },
+    {
+      "number": 15,
+      "type": "BD",
+      "question_stem": "Under PD 1096 Rule VII for R-1 Single Detached Residential zones, which of the following building provisions is explicitly PROHIBITED between adjacent single-detached units?",
+      "options": [
+        "Shared fire-rated firewall (zero-lot-line construction)",
+        "Separate water and electrical meter connections",
+        "Independent main entrances and garage access",
+        "Individual lot titles and ownership"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "R-1 zone prohibits shared fire-rated firewalls and zero-lot-line construction. Single detached units must maintain minimum side setbacks (2.0 m) separating them. This is a code-level distinction between R-1 (detached only) and R-2 (attached allowed).",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "Separate metering is standard practice; not prohibited.",
+        "distractor_2": "Independent entrances and garage access are required for single-detached units.",
+        "distractor_3": "Individual lot titles are mandatory for R-1 detached ownership.",
+        "takeaway": "R-1 = detached only (minimum side setbacks enforce separation); R-2 allows attached units with shared firewalls."
+      },
+      "solution_steps": [
+        "Identify zone: R-1 Single Detached",
+        "Consult PD 1096 Rule VII for R-1 building restrictions",
+        "Find row on detached/attached allowance",
+        "Confirm: R-1 detached only, no shared firewalls; R-2 allows attached"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Section 7.1.2 (R-1 Zone—Detached Residences Only); Table VII.G.2 (Building Configuration)"
+    },
+    {
+      "number": 16,
+      "type": "SC",
+      "question_stem": "For a 2-storey R-1 residence with a 148.5 sqm footprint and an estimated live load of 200 kg/sqm on both floors, what is the approximate total live load (in metric tonnes) that the main foundation system must support?",
+      "options": [
+        "~59.4 tonnes",
+        "~29.7 tonnes",
+        "~44.5 tonnes",
+        "~74.3 tonnes"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Total live load = AMBF × Live Load per sqm × Number of storeys. Calculation: 148.5 sqm × 200 kg/sqm × 2 floors = 59,400 kg = 59.4 tonnes. This is the design load for foundation design.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "29.7 tonnes is the live load for one floor only; missing the second storey contribution.",
+        "distractor_2": "44.5 tonnes results from incorrect live load (e.g., 150 kg/sqm) or using TGFA instead of AMBF.",
+        "distractor_3": "74.3 tonnes is too high; may come from adding dead load or using incorrect floor count.",
+        "takeaway": "Total structural live load = footprint × per-floor load × floors; double-storey structures carry cumulative floor loads."
+      },
+      "solution_steps": [
+        "AMBF (footprint): 148.5 sqm",
+        "Live load per storey: 200 kg/sqm (residential standard)",
+        "Number of storeys: 2",
+        "Total live load = 148.5 × 200 × 2 = 59,400 kg = 59.4 tonnes"
+      ],
+      "code_citation": "NBC 2015, Section 3.2 (Loads & Actions); NBC Table 3.2.1.1 (Live Load Values for Residential)"
+    },
+    {
+      "number": 17,
+      "type": "AI",
+      "question_stem": "For a typical master bedroom in this 2-storey R-1 residence, what is the minimum clear interior dimension (in meters) required along the longer axis to provide adequate functional space and furniture arrangement per NBC 2015 standards for residential bedrooms?",
+      "options": [
+        "3.5–4.0 m",
+        "2.5–3.0 m",
+        "4.5–5.0 m",
+        "2.0–2.5 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "NBC 2015 Section 4.2 specifies that residential bedrooms require a minimum clear dimension of 3.5–4.0 m on the longer axis to accommodate a bed (1.4–1.8 m wide), clearance on both sides (0.5 m minimum each side), and foot clearance. Master bedrooms in R-1 residences typically follow this standard.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "2.5–3.0 m is below minimum NBC requirements; results in a cramped room unsuitable as master bedroom.",
+        "distractor_2": "4.5–5.0 m is generous; may apply to specific luxury designs but exceeds minimum code.",
+        "distractor_3": "2.0–2.5 m is for small secondary bedrooms or compact units; inadequate for master bedroom.",
+        "takeaway": "Master bedroom minimum clear length = 3.5–4.0 m; secondary bedrooms may be smaller (2.5–3.0 m)."
+      },
+      "solution_steps": [
+        "Consult NBC 2015 Section 4.2.3 (Residential Space Dimensions)",
+        "Find bedroom dimension table",
+        "Master bedroom minimum clear length: 3.5–4.0 m",
+        "Account for bed (1.4–1.8 m) + side clearances (0.5 m each) + foot clearance"
+      ],
+      "code_citation": "NBC 2015, Section 4.2.3 (Interior Dimensions for Residential Spaces); Table 4.2.3.1"
+    },
+    {
+      "number": 18,
+      "type": "PK",
+      "question_stem": "What is the total parking requirement for this single-family R-1 residence with 3 bedrooms and 1 maid's room (4 total sleeping units) under PD 1096 Rule VII, Table VII.H?",
+      "options": [
+        "1 space (1 residential unit)",
+        "2 spaces (1 resident + 1 guest)",
+        "3 spaces (1 per bedroom)",
+        "4 spaces (1 per sleeping unit)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "For R-1 Single Detached Residential, parking requirement is 1 space per residential unit (house), not per bedroom or sleeping unit. This single residence = 1 unit = 1 parking space required (typically provided in the 1-car garage). The brief confirms '1-car garage,' meeting the requirement.",
+        "distractor_0": "This is the correct answer.",
+        "distractor_1": "2 spaces (1 + 1 guest) may apply to multi-unit residential (R-2) or if guest parking is mandated; not standard for R-1 single detached.",
+        "distractor_2": "3 spaces (per bedroom) is typical for multi-unit or commercial; not residential parking standard.",
+        "distractor_3": "4 spaces (per sleeping unit) is excessive and not based on PD 1096 standards.",
+        "takeaway": "R-1 Single Detached = 1 parking space per house, regardless of bedrooms. Multi-unit zones require per-unit + guest ratios."
+      },
+      "solution_steps": [
+        "Building type: R-1 Single Detached Residence",
+        "Count residential units: 1 (single-family house)",
+        "Consult PD 1096 Rule VII, Table VII.H (Parking Requirements)",
+        "Find R-1 row: 1 parking space per residential unit",
+        "Total required: 1 space",
+        "Provided: 1-car garage ✓ COMPLIANT"
+      ],
+      "code_citation": "PD 1096 IRR, Rule VII, Table VII.H (Off-Street Parking Requirements)"
+    }
+  ]
+}

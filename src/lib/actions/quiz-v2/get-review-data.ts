@@ -1,7 +1,8 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import type { ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
+import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
+import type { QuestionHistoryStats, ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
 
 export const getReviewData = async (
   sessionId: string,
@@ -122,15 +123,14 @@ export const getReviewData = async (
           ? 1
           : null
 
-      const options = (q.options as Array<{ id: string; letter: string; text: string }>).map(
-        (o) => ({
-          id: o.id,
-          text: o.text,
-          letter: o.letter as 'A' | 'B' | 'C' | 'D',
-          isCorrect: o.id === q.correct_option_id,
-          isUserChoice: o.id === (interaction?.selected_option_id ?? null),
-        }),
-      )
+      const normalized = normalizeOptions(q.options)
+      const options = normalized.map((o) => ({
+        id: o.id,
+        text: o.text,
+        letter: o.letter,
+        isCorrect: o.id === q.correct_option_id,
+        isUserChoice: o.id === (interaction?.selected_option_id ?? null),
+      }))
 
       return {
         position: interaction?.question_order ?? idx + 1,
@@ -143,7 +143,7 @@ export const getReviewData = async (
         isSkipped,
         isFlagged: interaction?.is_flagged ?? false,
         confidenceLevel,
-        rationale: q.rationale ?? '',
+        rationale: resolveRationaleText(q.rationale) || '',
         wikiArticleUrl: wikiMap.get(q.topic_id) ?? null,
         wrongAnswerExplanation: null, // populated from question options distractor data if available
       } satisfies ReviewQuestionData
@@ -156,10 +156,50 @@ export const getReviewData = async (
 
   const config = session.config as { mode?: string } | null
 
+  // 8. Check if user is Pro
+  const { data: profile } = await supabase
+    .from('profiles')
+    .select('subscription_tier')
+    .eq('id', user.id)
+    .single()
+
+  const isPro =
+    profile?.subscription_tier === 'pro' || profile?.subscription_tier === 'premium'
+
+  // 9. Fetch per-question history for Pro users
+  let questionHistory: Record<string, QuestionHistoryStats> | undefined
+
+  if (isPro && questionIds.length > 0) {
+    const { data: allHistory } = await supabase
+      .from('user_interactions')
+      .select('question_id, is_correct, created_at')
+      .eq('user_id', user.id)
+      .in('question_id', questionIds)
+
+    const historyMap: Record<string, QuestionHistoryStats> = {}
+    for (const row of allHistory ?? []) {
+      const stats = historyMap[row.question_id] ?? {
+        timesSeen: 0,
+        timesCorrect: 0,
+        timesWrong: 0,
+        lastSeenAt: null,
+      }
+      stats.timesSeen++
+      if (row.is_correct) stats.timesCorrect++
+      else stats.timesWrong++
+      if (!stats.lastSeenAt || row.created_at > stats.lastSeenAt) {
+        stats.lastSeenAt = row.created_at
+      }
+      historyMap[row.question_id] = stats
+    }
+    questionHistory = historyMap
+  }
+
   return {
     sessionId,
     mode: (config?.mode ?? 'camp') as ReviewDataResult['mode'],
     score: { correct, total, percent },
     questions: reviewQuestions,
+    ...(questionHistory !== undefined && { questionHistory }),
   }
 }

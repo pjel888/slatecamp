@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { getDashboardPageData } from '@/lib/actions/dashboard-page'
+import { syncDashboardNotifications } from '@/lib/actions/sync-notifications'
 import { trackServerEvent } from '@/lib/analytics-server'
 import { HeroCommandBar } from '@/components/dashboard/HeroCommandBar'
 import {
@@ -7,16 +8,14 @@ import {
   HeatmapSectionSkeleton,
 } from '@/components/dashboard/HeatmapSection'
 import { SubjectMasteryCard } from '@/components/dashboard/SubjectMasteryCard'
-import { SubjectFloorAlert } from '@/components/dashboard/SubjectFloorAlert'
 import { ImprovedActivityFeed } from '@/components/dashboard/ImprovedActivityFeed'
 import { DailyWikiCard } from '@/components/dashboard/FeatureDiscoveryRow'
-import { OnboardingStateCard } from '@/components/dashboard/OnboardingStateCard'
-import { LockedScoreWidget } from '@/components/dashboard/LockedScoreWidget'
 import { StreakRibbon } from '@/components/dashboard/StreakRibbon'
-import { SrsReviewWidget } from '@/components/dashboard/SrsReviewWidget'
-import { DashboardTrailCard, DashboardTrailPrompt } from '@/components/trails/DashboardTrailCard'
-import { TodayActionCard } from '@/components/shared/TodayActionCard'
-import { QuickStatsRow } from '@/components/shared/QuickStatsRow'
+import ResultsDayBanner from '@/app/dashboard/results-day/_components/ResultsDayBanner'
+import { ReviewCenterSyncCard } from '@/components/dashboard/ReviewCenterSyncCard'
+import { BloomCognitiveTracker } from '@/components/dashboard/BloomCognitiveTracker'
+import TransitionPrompt from '@/app/dashboard/professional/_components/TransitionPrompt'
+import { getBloomBreakdown } from '@/lib/actions/bloom-tracker'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 
 export default async function DashboardPage() {
@@ -28,59 +27,36 @@ export default async function DashboardPage() {
     days_to_exam: data.daysUntilExam ?? undefined,
   })
 
-  const showLockedScore =
-    data.isFreeUser &&
-    data.onboardingState !== 'needs_assessment' &&
-    data.onboardingState !== 'needs_score_reveal' &&
-    data.scoreUpdatesSinceReveal > 0
+  // Sync dashboard signals into the notification system (fire-and-forget)
+  void syncDashboardNotifications({
+    activeTrailDay: data.activeTrailDay,
+    srsReview: data.srsReview,
+    subjectFloorAlerts: data.subjectFloorAlerts,
+  })
+
+
+  // Bloom cognitive tracker data (only fetched if enough sessions)
+  const bloomData = data.sessionsCompleted >= 10 ? await getBloomBreakdown() : []
+
+  // Professional mode transition prompt logic
+  const showPasserTransition = data.aleResult === 'passed' && data.daysUntilExam !== null && data.daysUntilExam < -3
+  const showOptInTransition = data.aleResult === 'failed' && data.daysUntilExam !== null && data.daysUntilExam < -30
 
   return (
     <SharedPageLayout>
       <div className='flex flex-col gap-2 w-full h-full min-h-0 border-0'>
-        {/* ── Onboarding State Card (above everything) ─────── */}
-        {data.onboardingState !== 'ready' && (
-          <OnboardingStateCard
-            state={data.onboardingState}
-            trailDay={data.activeTrailDay ?? undefined}
-          />
-        )}
+        {/* ── Professional Mode Transition (passer or opt-in) ── */}
+        {showPasserTransition && <TransitionPrompt variant="passed" />}
+        {showOptInTransition && <TransitionPrompt variant="opt-in" />}
+
+        {/* ── Results Day Banner (exam_date 3-14 days ago, no result yet) ── */}
+        {data.showResultsDayBanner && <ResultsDayBanner />}
 
         {/* ── Streak Ribbon + Locked Score ────────────────── */}
-        <div className="flex items-center justify-between gap-2">
-          <StreakRibbon
-            currentStreak={data.streak.currentStreak}
-            streakStatus={data.streak.streakStatus}
-          />
-          {showLockedScore && (
-            <LockedScoreWidget updatesSinceReveal={data.scoreUpdatesSinceReveal} />
-          )}
-        </div>
-
-        {/* ── SRS Review Widget ───────────────────────────── */}
-        {data.srsReview.itemsDue > 0 && (
-          <SrsReviewWidget
-            itemsDue={data.srsReview.itemsDue}
-            subjects={data.srsReview.subjects}
-            estimatedMinutes={data.srsReview.estimatedMinutes}
-          />
-        )}
-
-        {/* ── Today's Trail Day ──────────────────────────── */}
-        {data.activeTrailDay ? (
-          <DashboardTrailCard
-            dayNumber={data.activeTrailDay.dayNumber}
-            title={data.activeTrailDay.title}
-            estimatedMinutes={data.activeTrailDay.estimatedMinutes}
-            trailSlug={data.activeTrailDay.trailSlug}
-          />
-        ) : data.onboardingState === 'ready' ? (
-          <DashboardTrailPrompt />
-        ) : null}
-
-        {/* ── Subject Floor Alert ─────────────────────────── */}
-        {data.subjectFloorAlerts.length > 0 && (
-          <SubjectFloorAlert alerts={data.subjectFloorAlerts} />
-        )}
+        <StreakRibbon
+          currentStreak={data.streak.currentStreak}
+          streakStatus={data.streak.streakStatus}
+        />
 
         {/* ── 1. Hero: Score + Greeting + Heatmap ────────── */}
         <HeroCommandBar
@@ -97,25 +73,7 @@ export default async function DashboardPage() {
           </Suspense>
         </HeroCommandBar>
 
-        {/* ── 2. Today's Action ───────────────────────────── */}
-        <TodayActionCard
-          enrolled={!!data.activeTrailDay}
-          dayNumber={data.activeTrailDay?.dayNumber}
-          topicName={data.activeTrailDay?.title}
-          estimatedMinutes={data.activeTrailDay?.estimatedMinutes}
-          ctaLabel={data.activeTrailDay ? `Continue Day ${data.activeTrailDay.dayNumber}` : 'Start Diagnostic'}
-          ctaHref={data.activeTrailDay ? `/dashboard/trails/${data.activeTrailDay.trailSlug}` : '/quiz/camp/setup'}
-        />
-
-        {/* ── 3. Quick Stats Row ──────────────────────────── */}
-        <QuickStatsRow
-          daysToExam={data.daysUntilExam ?? undefined}
-          sessionsCompleted={data.sessionsCompleted}
-          greenTopics={data.greenTopics}
-          totalTopics={data.totalTopics}
-        />
-
-        {/* ── 4. Content grid ────────────────────────────── */}
+        {/* ── Content grid ──────────────────────────────── */}
         <div className='min-h-0'>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
             <div className='lg:col-span-3 rounded-md border border-border bg-white p-2'>
@@ -141,6 +99,20 @@ export default async function DashboardPage() {
 
             <div className='h-full'>
               <SubjectMasteryCard data={data.subjectMastery} />
+            </div>
+
+            {/* ── Review Center Sync (visible when enrolled) ── */}
+            <ReviewCenterSyncCard
+              enrolledReviewCenter={data.enrolledReviewCenter}
+              subjectMastery={data.subjectMastery}
+            />
+
+            {/* ── Bloom Cognitive Tracker (after 10+ sessions) ── */}
+            <div className="lg:col-span-2">
+              <BloomCognitiveTracker
+                data={bloomData}
+                sessionsCompleted={data.sessionsCompleted}
+              />
             </div>
           </div>
         </div>

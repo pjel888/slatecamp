@@ -3,27 +3,35 @@
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { SetupFlow } from '@/components/quiz-v2/setup/SetupFlow'
-import type { QuizMode, QuizSessionConfig } from '@/types/quiz-config'
+import { CampfireLoader } from '@/components/shared/CampfireLoader'
+import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
 
 interface SetupPageClientProps {
   mode: QuizMode
+  subjects?: TaxonomySubject[]
 }
 
-export const SetupPageClient = ({ mode }: SetupPageClientProps) => {
+export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
   const router = useRouter()
   const [loading, setLoading] = useState(false)
 
+  const [error, setError] = useState<string | null>(null)
+
   const handleBegin = async (config: QuizSessionConfig) => {
     setLoading(true)
+    setError(null)
     try {
       const result = await startSession({ mode, config })
       if ('error' in result) {
+        setError(String((result as { error: unknown }).error))
         setLoading(false)
         return
       }
       router.push(`/quiz/${mode}/session/${result.sessionId}`)
-    } catch {
+    } catch (err) {
+      console.error('[quiz-setup] startSession failed:', err)
+      setError(err instanceof Error ? err.message : 'Failed to start session')
       setLoading(false)
     }
   }
@@ -33,15 +41,19 @@ export const SetupPageClient = ({ mode }: SetupPageClientProps) => {
   }
 
   if (loading) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="text-center">
-          <div className="h-8 w-8 mx-auto mb-3 rounded-full border-2 border-border-default border-t-camp-cobalt animate-spin" />
-          <p className="text-ink-secondary text-sm">Preparing your session...</p>
-        </div>
-      </div>
-    )
+    return <CampfireLoader />
   }
 
-  return <SetupFlow mode={mode} onBegin={handleBegin} onBack={handleBack} />
+  return (
+    <>
+      {error && (
+        <div className="mx-auto max-w-[560px] px-4 pt-4">
+          <div className="rounded-md border border-[#D64545]/20 bg-[#FDF0F0] px-4 py-3 text-sm text-[#D64545]">
+            {error}
+          </div>
+        </div>
+      )}
+      <SetupFlow mode={mode} subjects={subjects} onBegin={handleBegin} onBack={handleBack} />
+    </>
+  )
 }

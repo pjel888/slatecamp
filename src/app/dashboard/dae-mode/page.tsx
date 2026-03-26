@@ -1,0 +1,37 @@
+import { Suspense } from 'react'
+import { redirect } from 'next/navigation'
+import { getUser } from '@/lib/supabase/server'
+import { ROUTES } from '@/lib/constants/routes'
+import { getDAEState } from '@/lib/actions/dae-mode'
+import { DAEModeClient } from './_components/DAEModeClient'
+import { Skeleton } from '@/components/ui/skeleton'
+
+const DAEContent = async () => {
+  const {
+    data: { user },
+  } = await getUser()
+  if (!user) redirect(ROUTES.LOGIN)
+
+  const { savedContexts, userTier, dailyUsedCount } = await getDAEState()
+
+  return (
+    <DAEModeClient
+      savedContexts={savedContexts}
+      userTier={userTier}
+      dailyUsedCount={dailyUsedCount}
+    />
+  )
+}
+
+const DAEModePage = () => (
+  <Suspense fallback={<Skeleton className="h-screen w-full" />}>
+    <DAEContent />
+  </Suspense>
+)
+
+export default DAEModePage
+
+export const metadata = {
+  title: 'DAE Maintenance Mode',
+  description: 'Stay current with the codes you use every day.',
+}

@@ -4,6 +4,10 @@
 
 import { create } from 'zustand'
 import { persist, createJSONStorage, subscribeWithSelector } from 'zustand/middleware'
+import {
+  submitAnswer as submitAnswerAction,
+  endSession as endSessionAction,
+} from '@/lib/actions/quiz-v2'
 import type {
   QuizMode,
   QuizSessionConfig,
@@ -360,7 +364,7 @@ export const useQuizStore = create<QuizStore>()(
         },
 
         submitCurrentAnswer: async () => {
-          const { sessionId, questions, currentIndex, answers, config, timer } = get()
+          const { sessionId, questions, currentIndex, answers, config } = get()
           const question = questions[currentIndex]
           if (!question || !sessionId) return
 
@@ -380,17 +384,7 @@ export const useQuizStore = create<QuizStore>()(
           set({ status: 'submitting' })
 
           try {
-            // TODO: call server action — e.g. const result = await submitAnswerAction(input)
-            // Placeholder: simulate optimistic feedback path
-            const result = await Promise.resolve({
-              isCorrect: false,
-              correctOptionId: answerState.selectedOptionId,
-              rationale: null,
-              wikiArticleUrl: null,
-              answeredCount: 0,
-              correctCount: 0,
-              sessionComplete: false,
-            })
+            const result = await submitAnswerAction(input)
 
             const updatedAnswers = new Map(get().answers)
             updatedAnswers.set(question.question_id, {
@@ -416,7 +410,22 @@ export const useQuizStore = create<QuizStore>()(
             }
 
             if (result.sessionComplete) {
-              // TODO: call endSessionAction({ sessionId, endReason: 'completed' })
+              endSessionAction({ sessionId, endReason: 'completed' })
+                .then((endResult) => get().endSession(endResult))
+                .catch(() => {
+                  get().endSession({
+                    score: { correct: get().getCorrectCount(), total: get().totalQuestions, percent: Math.round((get().getCorrectCount() / Math.max(1, get().totalQuestions)) * 100) },
+                    subjectBreakdown: [],
+                    readinessScoreBefore: 0,
+                    readinessScoreAfter: 0,
+                    readinessScoreDelta: 0,
+                    growthVsPrevious: null,
+                    resultsAvailableAt: new Date().toISOString(),
+                    trailDayCompleted: false,
+                    nextTrailDay: null,
+                    missedQuestionCount: get().getUnansweredQuestions().length,
+                  })
+                })
             }
           } catch {
             // Network failure — queue for retry
@@ -560,7 +569,7 @@ export const useQuizStore = create<QuizStore>()(
         },
 
         tickTimer: () => {
-          const { timer, config } = get()
+          const { timer } = get()
           if (!timer.isRunning) return
 
           const nextElapsed = timer.elapsedMs + 1000
@@ -569,20 +578,27 @@ export const useQuizStore = create<QuizStore>()(
           if (timer.limitMs !== null && nextElapsed >= timer.limitMs) {
             set({
               timer: { ...timer, elapsedMs: timer.limitMs, isRunning: false },
+              status: 'submitting',
             })
-            // TODO: call endSessionAction({ sessionId: get().sessionId!, endReason: 'timer_expired' })
-            get().endSession({
-              score: { correct: get().getCorrectCount(), total: get().totalQuestions, percent: 0 },
-              subjectBreakdown: [],
-              readinessScoreBefore: 0,
-              readinessScoreAfter: 0,
-              readinessScoreDelta: 0,
-              growthVsPrevious: null,
-              resultsAvailableAt: new Date().toISOString(),
-              trailDayCompleted: false,
-              nextTrailDay: null,
-              missedQuestionCount: get().getUnansweredQuestions().length,
-            })
+            const sid = get().sessionId
+            if (sid) {
+              endSessionAction({ sessionId: sid, endReason: 'timer_expired' })
+                .then((endResult) => get().endSession(endResult))
+                .catch(() => {
+                  get().endSession({
+                    score: { correct: get().getCorrectCount(), total: get().totalQuestions, percent: Math.round((get().getCorrectCount() / Math.max(1, get().totalQuestions)) * 100) },
+                    subjectBreakdown: [],
+                    readinessScoreBefore: 0,
+                    readinessScoreAfter: 0,
+                    readinessScoreDelta: 0,
+                    growthVsPrevious: null,
+                    resultsAvailableAt: new Date().toISOString(),
+                    trailDayCompleted: false,
+                    nextTrailDay: null,
+                    missedQuestionCount: get().getUnansweredQuestions().length,
+                  })
+                })
+            }
             return
           }
 
@@ -661,8 +677,7 @@ export const useQuizStore = create<QuizStore>()(
 
           for (const input of pendingSubmissions) {
             try {
-              // TODO: call submitAnswerAction(input)
-              await Promise.resolve()
+              await submitAnswerAction(input)
             } catch {
               remaining.push(input)
             }

@@ -4,7 +4,7 @@ import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
 
-export async function createClient() {
+export const createClient = cache(async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as unknown as ReturnType<
       typeof createServerClient
@@ -33,7 +33,7 @@ export async function createClient() {
       },
     },
   )
-}
+})
 
 export async function hasAuthCookie() {
   const cookieStore = await cookies()

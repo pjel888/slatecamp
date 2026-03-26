@@ -5,6 +5,7 @@ import {
   Cube,
   Exam,
   Path,
+  Cards,
   ChartBar,
   GearSix,
 } from '@phosphor-icons/react/dist/ssr'
@@ -28,6 +29,7 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Practice group — tier: secondary (tools)
   { id: 'testing', href: '/dashboard/testing', label: 'Testing & Review', icon: Exam, tier: 'secondary', group: 'practice' },
   { id: 'camptrail', href: '/dashboard/camptrails', label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },
+  { id: 'flash', href: '/dashboard/flash', label: 'Flash Cards', icon: Cards, tier: 'secondary', group: 'practice' },
 
   // Data group — tier: secondary (tools)
   { id: 'analytics', href: '/dashboard/analytics', label: 'Analytics', icon: ChartBar, tier: 'secondary', group: 'data' },

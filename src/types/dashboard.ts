@@ -110,6 +110,7 @@ export interface TopicRing {
 export interface SubjectMastery {
   subject: string
   shortLabel: string
+  aleId: string | null
   mastery: number
   questionsAnswered: number
   topics: TopicRing[]
@@ -195,11 +196,17 @@ export interface DashboardPageData {
   sessionsCompleted: number
   greenTopics: number
   totalTopics: number
+
+  // Results Day + Review Center
+  aleResult: string | null
+  enrolledReviewCenter: string | null
+  showResultsDayBanner: boolean
 }
 
 // ── Subject Floor Alert ────────────────────────────────────────────────────
 export interface SubjectFloorAlert {
   subject: string
+  aleId: string | null
   mastery: number
   floorPct: number
   gap: number

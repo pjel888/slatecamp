@@ -17,6 +17,13 @@ import { Tabs as WikiTabs, Tab } from '@/components/wiki/WikiTabs'
 import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { WikiMistakeCard } from '@/components/wiki/WikiMistakeCard'
 import { WikiMistakeList } from '@/components/wiki/WikiMistakeList'
+import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
+
+/* Live preview wrappers (client) */
+const SlideToSubmitPreview = () => {
+  'use client'
+  return <SlideToSubmit onSubmit={() => alert('Submitted!')} label="Slide to submit" />
+}
 
 export const metadata = {
   title: 'Component Library — SlateCamp Developer Portal',
@@ -1093,6 +1100,36 @@ MyWidget: () => import('./my-group/MyWidget').then(m => m.MyWidget),
       description="Annotated 2D setback diagram for Philippine residential lots. Shows front, side, and rear setback zones with NBCP minimums labeled."
     >
       <CodeBlock language="mdx" code={`<PHBuildingSetbacks />`} />
+    </ComponentCard>
+
+    <SectionLabel>Quiz Engine</SectionLabel>
+
+    <ComponentCard
+      name="SlideToSubmit"
+      path="components/quiz-v2/SlideToSubmit"
+      badge={<WidgetBadge group="Quiz" />}
+      description="iPhone unlock-style slide-to-submit bar. Drag the handle right to confirm an action. Uses @use-gesture/react for drag detection. Shows inline spinner on completion. Snaps back with spring animation if released early."
+    >
+      <PreviewBox>
+        <SlideToSubmitPreview />
+      </PreviewBox>
+      <PropTable
+        props={[
+          { name: 'onSubmit', type: '() => void', required: true, description: 'Fires when the handle crosses the threshold (80% of track width).' },
+          { name: 'disabled', type: 'boolean', required: false, description: 'Hides the slider when true. Default false.' },
+          { name: 'label', type: 'string', required: false, description: 'Track label. Default "Slide to submit".' },
+        ]}
+      />
+      <CodeBlock language="tsx" code={`import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'\n\n<SlideToSubmit\n  onSubmit={() => submitAnswer()}\n  label="Slide to submit"\n/>`} />
+    </ComponentCard>
+
+    <ComponentCard
+      name="CampfireLoader"
+      path="components/shared/CampfireLoader"
+      badge={<WidgetBadge group="Shared" />}
+      description="Branded loading spinner with rotating campfire-themed messages. Messages crossfade every 2.5s. Use for full-page loading states."
+    >
+      <CodeBlock language="tsx" code={`import { CampfireLoader } from '@/components/shared/CampfireLoader'\n\n<CampfireLoader />\n<CampfireLoader staticMessage="Custom message..." />\n<CampfireLoader interval={3000} />`} />
     </ComponentCard>
   </div>
 )

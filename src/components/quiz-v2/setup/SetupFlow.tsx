@@ -6,7 +6,7 @@ import { IntroSlide1 } from './IntroSlide1'
 import { IntroSlide2 } from './IntroSlide2'
 import { IntroSlide3 } from './IntroSlide3'
 import { MODE_LABELS, MODE_PRESETS, mergeWithPreset } from '@/lib/quiz/mode-presets'
-import type { QuizMode, QuizSessionConfig } from '@/types/quiz-config'
+import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import type { AdvancedConfig } from './IntroSlide3'
 
 // ─── Slide count per mode ─────────────────────────────────────────────────────
@@ -20,19 +20,21 @@ const SLIDE_COUNT: Record<QuizMode, number> = {
   subject: 2,
   focused: 2,
   custom: 3,
+  article_review: 1,
 }
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 interface SetupFlowProps {
   mode: QuizMode
+  subjects?: TaxonomySubject[]
   onBegin: (config: QuizSessionConfig) => void
   onBack?: () => void
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-const SetupFlow = ({ mode, onBegin, onBack }: SetupFlowProps) => {
+const SetupFlow = ({ mode, subjects, onBegin, onBack }: SetupFlowProps) => {
   const slideCount = SLIDE_COUNT[mode]
   const [slideIndex, setSlideIndex] = useState(0)
   const [visible, setVisible] = useState(true)
@@ -184,6 +186,7 @@ const SetupFlow = ({ mode, onBegin, onBack }: SetupFlowProps) => {
         {slideIndex === 1 && (
           <IntroSlide2
             mode={mode}
+            subjects={subjects}
             onContinue={handleSlide2Continue}
           />
         )}

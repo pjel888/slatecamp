@@ -5,7 +5,8 @@ import { ROUTES } from '@/lib/constants/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
 
-const TestingPage = async () => {
+/** Async content — fetches data then renders */
+const TestingContent = async () => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) redirect(ROUTES.LOGIN)
@@ -18,39 +19,33 @@ const TestingPage = async () => {
     { data: profile },
     { data: weakNodes },
   ] = await Promise.all([
-    // Fetch user tier for pro badge logic
     supabase
       .from('user_subscriptions')
       .select('tier')
       .eq('user_id', user.id)
       .maybeSingle(),
-    // Fetch session history for mode stats
     supabase
       .from('quiz_sessions')
       .select('session_id, test_mode, config, status, question_ids, started_at, completed_at, current_question_index, updated_at')
       .eq('user_id', user.id)
       .order('updated_at', { ascending: false })
       .limit(200),
-    // Fetch readiness score
     supabase
       .from('user_global_stats')
       .select('global_readiness_score, last_study_date')
       .eq('user_id', user.id)
       .maybeSingle(),
-    // Fetch blindspot queues (pending)
     supabase
       .from('blindspot_queues')
       .select('queue_id, node_ids, question_count, status, pre_queue_mastery')
       .eq('user_id', user.id)
       .eq('status', 'pending')
       .limit(1),
-    // Fetch user profile for exam date
     supabase
       .from('profiles')
       .select('target_exam_date')
       .eq('id', user.id)
       .maybeSingle(),
-    // Fetch weak subject data for suggestion
     supabase
       .from('user_node_mastery')
       .select('topic_id, current_mastery_weight, taxonomy_tree!inner(name, subject_area)')
@@ -62,30 +57,34 @@ const TestingPage = async () => {
 
   const userTier = subscription?.tier ?? 'free'
 
-  // Find in-progress session
   const inProgressSession = (sessions ?? []).find(
     (s: { status: string }) => s.status === 'in_progress'
   )
 
-  // Compute completed sessions grouped by source
   const completedSessions = (sessions ?? []).filter(
     (s: { status: string }) => s.status === 'completed'
   )
 
   return (
-    <Suspense fallback={<Skeleton className="h-screen w-full" />}>
-      <ReviewHub
-        userTier={userTier}
-        readinessScore={stats?.global_readiness_score ?? 0}
-        lastStudyDate={stats?.last_study_date ?? null}
-        completedSessions={completedSessions ?? []}
-        inProgressSession={inProgressSession ?? null}
-        blindspotQueues={blindspotQueues ?? []}
-        targetExamDate={profile?.target_exam_date ?? null}
-        weakNodes={weakNodes ?? []}
-      />
-    </Suspense>
+    <ReviewHub
+      userTier={userTier}
+      readinessScore={stats?.global_readiness_score ?? 0}
+      lastStudyDate={stats?.last_study_date ?? null}
+      completedSessions={completedSessions ?? []}
+      inProgressSession={inProgressSession ?? null}
+      allSessions={sessions ?? []}
+      blindspotQueues={blindspotQueues ?? []}
+      targetExamDate={profile?.target_exam_date ?? null}
+      weakNodes={weakNodes ?? []}
+    />
   )
 }
+
+/** Page shell renders instantly; content streams via Suspense */
+const TestingPage = () => (
+  <Suspense fallback={<Skeleton className="h-screen w-full" />}>
+    <TestingContent />
+  </Suspense>
+)
 
 export default TestingPage

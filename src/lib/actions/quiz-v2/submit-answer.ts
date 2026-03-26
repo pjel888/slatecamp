@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { resolveRationaleText } from '@/lib/utils/question'
 import type { SubmitAnswerInput, SubmitAnswerResult } from '@/types/quiz-config'
 
 export const submitAnswer = async (
@@ -99,8 +100,9 @@ export const submitAnswer = async (
   const feedbackTiming = config?.feedback?.timing ?? 'immediate'
 
   // For deferred/none feedback modes, withhold rationale from this response
+  // Rationale can be a plain string or JSONB object — always resolve to string
   const rationaleForClient =
-    feedbackTiming === 'immediate' ? (question.rationale ?? null) : null
+    feedbackTiming === 'immediate' ? (resolveRationaleText(question.rationale) || null) : null
 
   // Look up wiki article url for this question's topic
   let wikiArticleUrl: string | null = null

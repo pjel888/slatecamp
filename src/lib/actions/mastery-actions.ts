@@ -15,7 +15,7 @@ export const buildSubjectMastery = (
   subjectMasteryData: any[] | null,
 ): SubjectMastery[] => {
   const taxonomyRows = (subjectAreasData ?? []) as Array<{
-    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string
+    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string; ale_id: string | null
   }>
   const masteryRows = (subjectMasteryData ?? []) as Array<{
     topic_id: string; current_mastery_weight: number; total_attempts: number
@@ -70,6 +70,7 @@ export const buildSubjectMastery = (
     return {
       subject: subject.name,
       shortLabel: shortLabel(subject.name),
+      aleId: subject.ale_id,
       mastery: avgMastery,
       questionsAnswered: allAttempts,
       topics: topicRings,
@@ -77,6 +78,123 @@ export const buildSubjectMastery = (
   })
 
   return subjectMastery
+}
+
+// ── Projected mastery for cross-referenced subjects (Laws & Codes) ────────
+// Laws & Codes has is_cross_ref_only=true and 0 leaf nodes. Its mastery is
+// projected from target nodes in other subjects via taxonomy_cross_references.
+
+export const buildProjectedLawsMastery = async (
+  supabase: SupabaseClient,
+  userId: string,
+): Promise<SubjectMastery | null> => {
+  // 1. Get Laws & Codes subject node
+  const { data: lawsSubject } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name, ale_id')
+    .eq('ale_id', 'ALE-LAWS')
+    .single()
+
+  if (!lawsSubject) return null
+
+  // 2. Get Laws subtopics (level 2)
+  const { data: lawsSubtopics } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name')
+    .eq('parent_id', lawsSubject.node_id)
+    .eq('level', 2)
+    .is('deprecated_at', null)
+    .order('name')
+
+  if (!lawsSubtopics?.length) return null
+
+  // 3. Get all cross-references from Laws subtopics
+  const lawsSubtopicIds = lawsSubtopics.map(s => s.node_id)
+  const { data: crossRefs } = await supabase
+    .from('taxonomy_cross_references')
+    .select('source_node_id, target_node_id')
+    .in('source_node_id', lawsSubtopicIds)
+
+  if (!crossRefs?.length) return null
+
+  // 4. Group target subtopic IDs by source (Laws subtopic)
+  const targetsBySource = new Map<string, string[]>()
+  for (const cr of crossRefs) {
+    const existing = targetsBySource.get(cr.source_node_id) ?? []
+    existing.push(cr.target_node_id)
+    targetsBySource.set(cr.source_node_id, existing)
+  }
+
+  // 5. Get all target subtopics' leaf children
+  const allTargetIds = [...new Set(crossRefs.map(cr => cr.target_node_id))]
+  const { data: targetLeaves } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, parent_id')
+    .in('parent_id', allTargetIds)
+    .eq('is_leaf', true)
+    .eq('is_cross_ref_only', false)
+    .is('deprecated_at', null)
+
+  if (!targetLeaves?.length) return null
+
+  // 6. Get mastery for those leaves
+  const leafIds = targetLeaves.map(l => l.node_id)
+  const { data: masteryRows } = await supabase
+    .from('user_node_mastery')
+    .select('topic_id, current_mastery_weight, total_attempts')
+    .eq('user_id', userId)
+    .in('topic_id', leafIds)
+
+  const masteryMap = new Map<string, { weight: number; attempts: number }>()
+  for (const m of (masteryRows ?? [])) {
+    masteryMap.set(m.topic_id, { weight: m.current_mastery_weight, attempts: m.total_attempts })
+  }
+
+  // 7. Build topic rings per Laws subtopic (aggregating from cross-ref targets)
+  const leavesByTargetSubtopic = new Map<string, typeof targetLeaves>()
+  for (const leaf of targetLeaves) {
+    const existing = leavesByTargetSubtopic.get(leaf.parent_id!) ?? []
+    existing.push(leaf)
+    leavesByTargetSubtopic.set(leaf.parent_id!, existing)
+  }
+
+  const topicRings: TopicRing[] = lawsSubtopics.map(lawsSubtopic => {
+    const targets = targetsBySource.get(lawsSubtopic.node_id) ?? []
+    let totalWeight = 0, totalAttempts = 0, count = 0
+
+    for (const targetId of targets) {
+      const leaves = leavesByTargetSubtopic.get(targetId) ?? []
+      for (const leaf of leaves) {
+        const m = masteryMap.get(leaf.node_id)
+        if (m) {
+          totalWeight += m.weight
+          totalAttempts += m.attempts
+          count++
+        }
+      }
+    }
+
+    return {
+      topicName: lawsSubtopic.name,
+      mastery: count > 0 ? Math.round((totalWeight / count) * 100) : 0,
+      questionsAnswered: totalAttempts,
+    }
+  })
+
+  const allAttempts = topicRings.reduce((sum, t) => sum + t.questionsAnswered, 0)
+  const answeredTopics = topicRings.filter(t => t.questionsAnswered > 0)
+  const avgMastery = answeredTopics.length > 0
+    ? Math.round(answeredTopics.reduce((sum, t) => sum + t.mastery, 0) / answeredTopics.length)
+    : 0
+
+  return {
+    subject: lawsSubject.name,
+    shortLabel: shortLabel(lawsSubject.name),
+    aleId: lawsSubject.ale_id ?? null,
+    mastery: avgMastery,
+    questionsAnswered: allAttempts,
+    topics: topicRings,
+  }
 }
 
 // ── Subject floor alerts (Task 0.3) ───────────────────────────────────────
@@ -88,6 +206,7 @@ export const buildSubjectFloorAlerts = (subjectMastery: SubjectMastery[]): Subje
     .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
     .map(s => ({
       subject: s.subject,
+      aleId: s.aleId,
       mastery: s.mastery,
       floorPct: SUBJECT_FLOOR_PCT,
       gap: SUBJECT_FLOOR_PCT - s.mastery,

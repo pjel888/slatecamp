@@ -1,0 +1,134 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+
+interface PasserFlowProps {
+  firstName: string | null
+}
+
+const SocialCard = ({ firstName }: { firstName: string | null }) => {
+  const displayName = firstName ? `Arch. ${firstName}` : 'Arch.'
+
+  return (
+    <div
+      className="relative flex flex-col items-center justify-center rounded-md p-8 text-center"
+      style={{ background: '#1B3FC4', minHeight: '200px' }}
+      aria-label="Shareable achievement card"
+    >
+      <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">
+        Architecture Licensure Exam
+      </p>
+      <p className="text-2xl font-bold text-white leading-tight">
+        {displayName}
+      </p>
+      <p className="mt-1 text-base font-semibold text-white/80">
+        ALE Passer
+      </p>
+      <div
+        className="mt-5 h-px w-16"
+        style={{ background: '#2D9F6F' }}
+        aria-hidden
+      />
+      <p className="mt-3 text-[11px] font-medium uppercase tracking-widest text-white/50">
+        SlateCamp
+      </p>
+    </div>
+  )
+}
+
+const PasserFlow = ({ firstName }: PasserFlowProps) => {
+  const [copied, setCopied] = useState(false)
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText('https://slatecamp.ph/results-day')
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // clipboard not available — silent fail
+    }
+  }
+
+  return (
+    <div className="mx-auto w-full max-w-lg space-y-4">
+      {/* Congratulations card */}
+      <div
+        className="rounded-md p-8 text-center"
+        style={{ background: '#1B3FC4' }}
+      >
+        <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-2">
+          Architecture Licensure Exam
+        </p>
+        <h1 className="text-2xl font-bold text-white leading-tight">
+          Architect{firstName ? ` ${firstName}` : ''}. You did it.
+        </h1>
+        <p className="mt-3 text-sm text-white/75 leading-relaxed max-w-sm mx-auto">
+          Your SlateCamp heatmap is now your professional reference library.
+          The building codes you studied are the building codes you&apos;ll practice with.
+        </p>
+      </div>
+
+      {/* Social share section */}
+      <div className="rounded-md border border-[#D4DAE3] bg-white p-5 space-y-4">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-[#8896A7] mb-3">
+            Share your achievement
+          </p>
+          <SocialCard firstName={firstName} />
+        </div>
+
+        <button
+          type="button"
+          onClick={handleCopyLink}
+          className="w-full rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC] hover:text-[#1B3FC4]"
+        >
+          {copied ? 'Link copied!' : 'Copy share link'}
+        </button>
+      </div>
+
+      {/* What's next */}
+      <div className="rounded-md border border-[#D4DAE3] bg-white p-5 space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#8896A7]">
+          What&apos;s next
+        </p>
+
+        <Link
+          href="/dashboard/campfire"
+          className="flex items-center justify-between rounded-sm border border-[#D4DAE3] px-4 py-3 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC]"
+        >
+          <span>Your story is someone&apos;s map — Share in Campfire</span>
+          <svg
+            className="h-4 w-4 shrink-0 text-[#8896A7]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+            aria-hidden
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+
+        <Link
+          href="/dashboard"
+          className="flex items-center justify-between rounded-sm border border-[#D4DAE3] px-4 py-3 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC]"
+        >
+          <span>Go to your dashboard</span>
+          <svg
+            className="h-4 w-4 shrink-0 text-[#8896A7]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+            aria-hidden
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
+    </div>
+  )
+}
+
+export default PasserFlow

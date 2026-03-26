@@ -5,6 +5,7 @@ import { WelcomeCard } from './WelcomeCard'
 import { SmartSuggestionCard } from './SmartSuggestionCard'
 import { InProgressBanner } from './InProgressBanner'
 import { ZoneSection } from './ZoneSection'
+import { SessionsTable } from './SessionsTable'
 import { SectionHeader } from '@/components/shared/section-header'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
 import { abandonTestingSession } from '@/lib/actions/testing'
@@ -63,6 +64,7 @@ interface ReviewHubProps {
   lastStudyDate: string | null
   completedSessions: RawSession[]
   inProgressSession: RawSession | null
+  allSessions: RawSession[]
   blindspotQueues: RawBlindspotQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
@@ -234,7 +236,7 @@ const toInProgressSessionInfo = (
     custom_session: 'Custom Session',
     storm_mode: 'Storm Mode',
     proof_simulation: 'Full Exam Simulation',
-    extended_practice: 'Extended Practice',
+    extended_practice: 'Design Endurance Training',
     assessment_quiz: 'Assessment',
     trail_quiz: 'Trail Quiz',
     blindspot_queue: 'Focus Review',
@@ -268,6 +270,7 @@ const ReviewHub = ({
   lastStudyDate,
   completedSessions,
   inProgressSession,
+  allSessions,
   blindspotQueues,
   targetExamDate,
   weakNodes,
@@ -370,6 +373,18 @@ const ReviewHub = ({
             simulationGateStatus={simulationGateStatus}
             opacity={getZoneOpacity(3, sessionCount)}
           />
+        </div>
+
+        {/* ── Session History ──────────────────────────────────── */}
+        <div className="mt-10">
+          <SectionHeader
+            eyebrow="Session History"
+            title="Your Sessions"
+            level="section"
+          />
+          <div className="mt-4">
+            <SessionsTable sessions={allSessions} />
+          </div>
         </div>
       </main>
     </div>

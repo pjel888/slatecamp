@@ -4,9 +4,15 @@ import { useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { SubmitButton } from '@/components/ui/button'
 import { StudyWindowSelector } from '@/components/settings/StudyWindowSelector'
+import { ReviewCenterStep } from './ReviewCenterStep'
+import { CoexistenceScreen } from './CoexistenceScreen'
 import type { Discipline } from '@/types/app'
 
 type ReviewerType = 'first_taker' | 'returning_reviewer' | 'undergrad' | 'dae'
+type ReviewCenterValue = 'jpt' | 'atlas_cdc' | 'other' | 'none'
+
+// Steps: 'main' → 'review_center' → 'coexistence' (only if not 'none') → submit
+type Step = 'main' | 'review_center' | 'coexistence'
 
 interface Subject {
   node_id: string
@@ -51,9 +57,15 @@ export const OnboardingForm = ({
   subjectsByDiscipline,
   onSubmit,
 }: OnboardingFormProps) => {
+  const [step, setStep] = useState<Step>('main')
   const [selectedDisciplineId, setSelectedDisciplineId] = useState<string>('')
   const [reviewerType, setReviewerType] = useState<ReviewerType>('first_taker')
   const [struggledSubjects, setStruggledSubjects] = useState<string[]>([])
+  const [reviewCenter, setReviewCenter] = useState<ReviewCenterValue>('none')
+  const [reviewCenterOther, setReviewCenterOther] = useState<string>('')
+
+  // Captured form data from the main step — held so we can submit after extra steps
+  const [pendingFormData, setPendingFormData] = useState<FormData | null>(null)
 
   const subjects = selectedDisciplineId
     ? (subjectsByDiscipline[selectedDisciplineId] ?? [])
@@ -70,8 +82,59 @@ export const OnboardingForm = ({
     )
   }
 
+  // Called when the main form's native action fires — intercept to add extra steps
+  const handleMainSubmit = (formData: FormData) => {
+    setPendingFormData(formData)
+    setStep('review_center')
+  }
+
+  const handleReviewCenterContinue = () => {
+    if (reviewCenter !== 'none') {
+      setStep('coexistence')
+    } else {
+      void doFinalSubmit()
+    }
+  }
+
+  const doFinalSubmit = async () => {
+    if (!pendingFormData) return
+    // Append the review center value before submitting
+    pendingFormData.set('enrolledReviewCenter', reviewCenter)
+    if (reviewCenter === 'other' && reviewCenterOther.trim()) {
+      pendingFormData.set('enrolledReviewCenterOther', reviewCenterOther.trim())
+    }
+    await onSubmit(pendingFormData)
+  }
+
+  // ── Coexistence screen ────────────────────────────────────────────────────
+  if (step === 'coexistence') {
+    return <CoexistenceScreen onContinue={() => { void doFinalSubmit() }} />
+  }
+
+  // ── Review center step ────────────────────────────────────────────────────
+  if (step === 'review_center') {
+    return (
+      <div className="space-y-5">
+        <ReviewCenterStep
+          value={reviewCenter}
+          otherText={reviewCenterOther}
+          onChange={setReviewCenter}
+          onOtherTextChange={setReviewCenterOther}
+        />
+        <button
+          type="button"
+          onClick={handleReviewCenterContinue}
+          className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+        >
+          Continue &rarr;
+        </button>
+      </div>
+    )
+  }
+
+  // ── Main step (original form) ─────────────────────────────────────────────
   return (
-    <form action={onSubmit} className="space-y-5">
+    <form action={handleMainSubmit} className="space-y-5">
       {/* Hidden field: struggled subjects serialised as JSON */}
       <input
         type="hidden"
@@ -287,7 +350,7 @@ export const OnboardingForm = ({
       )}
 
       <SubmitButton variant="primary" size="lg" fullWidth pendingLabel="Setting up your account...">
-        Continue to Diagnostic &rarr;
+        Continue &rarr;
       </SubmitButton>
     </form>
   )

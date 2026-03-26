@@ -1,0 +1,667 @@
+{
+  "id": "DESIGN-002",
+  "title": "R-2 Duplex with Firewall & Utility Easement",
+  "building_type": "duplex_residential",
+  "zone": "R-2",
+  "difficulty": "intermediate",
+  "time_limit_minutes": 45,
+  "brief": "You are designing a three-storey residential duplex on a 500 sqm rectangular corner lot in an R-2 zone. The site presents key challenges: a 20m frontage on the main road (west), 25m depth with southern road frontage, and a 2m utility easement along the rear boundary. The 3% slope toward the main road affects drainage. The duplex will feature two mirror-image units separated by a firewall, with shared driveway and utility areas. Site constraints, corner-lot setback rules, and the interaction between the utility easement and rear setback present critical design hurdles. The developer intends this as a rental property with standardized unit layouts. Your task: calculate buildable area, determine envelope constraints, and specify design compliance for this mixed-orientation corner lot.",
+  "site_data": {
+    "total_lot_area_sqm": 500,
+    "lot_shape": "rectangular",
+    "lot_type": "corner_lot",
+    "frontage_main_road_m": 20,
+    "frontage_main_road_facing": "west",
+    "frontage_side_road_m": 25,
+    "frontage_side_road_facing": "south",
+    "lot_depth_m": 25,
+    "lot_width_m": 20,
+    "slope_percent": 3,
+    "slope_direction": "toward_main_road_RROW",
+    "utilities_easements": {
+      "utility_easement_rear_m": 2,
+      "easement_location": "east_boundary",
+      "easement_type": "utility_corridor"
+    },
+    "surrounding_land_use": {
+      "north": "residential_single_family",
+      "east": "residential_single_family",
+      "south": "side_street_commercial_edge",
+      "west": "main_road_urban_corridor"
+    },
+    "no_creek_or_watercourse_easement": true,
+    "site_features": "Corner lot at intersection of 12m RROW main road (west) and 8m RROW side road (south). Utility easement along rear (east) restricts building placement. Mild slope aids drainage to RROW. Surrounding residential uses restrict building height and setbacks."
+  },
+  "zone_data": {
+    "zone_designation": "R-2",
+    "pso_percent": 65,
+    "bhl_m": 15,
+    "max_floors_from_bhl": 5,
+    "flar_range_min": 1.5,
+    "flar_range_max": 2.5,
+    "isa_percent": 20,
+    "usa_percent": 15,
+    "rrow_main_road_m": 12,
+    "rrow_side_road_m": 8,
+    "setback_front_height_upto_6m_m": 3.0,
+    "setback_front_height_6m_to_9m_m": 4.5,
+    "setback_front_height_9m_to_12m_m": 6.0,
+    "setback_side_height_upto_9m_m": 2.0,
+    "setback_side_height_9m_to_12m_m": 3.0,
+    "setback_rear_height_upto_9m_m": 2.0,
+    "setback_rear_height_9m_to_12m_m": 3.0,
+    "corner_lot_rule": "Two road-facing sides each receive front setback; interior sides receive side/rear setbacks"
+  },
+  "building_data": {
+    "building_type": "duplex_residential",
+    "occupancy_classification": "residential",
+    "stories": 3,
+    "floor_height_m": 3.0,
+    "building_height_m": 9.0,
+    "building_orientation": "firewall_north_south_dividing_east_west_units",
+    "firewall_location": "central_vertical_plane",
+    "firewall_fire_rating_hours": 4,
+    "dwelling_units": 2,
+    "units_per_floor_per_side": 1,
+    "shared_elements": [
+      "driveway_and_parking",
+      "utility_courtyard",
+      "refuse_collection_point"
+    ]
+  },
+  "program_summary": {
+    "unit_type": "3_bedroom_2_bath_duplex_unit",
+    "units_total": 2,
+    "unit_configuration": "mirror_image_layout_across_firewall",
+    "rooms_per_unit": {
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "living_dining": "combined_LDK",
+      "kitchen": "separate",
+      "servant_quarters": 1,
+      "utility_area": "shared_on_ground"
+    },
+    "intended_use": "rental_residential",
+    "parking_spaces_required": 2,
+    "parking_allocation": "shared_driveway_ground_level"
+  },
+  "computation_sheet": {
+    "tla_sqm": 500,
+    "pso_percent": 65,
+    "ambf_from_pso_sqm": 325.0,
+    "height_to_ridge_m": 9.0,
+    "applicable_setback_front_m": 4.5,
+    "applicable_setback_side_north_m": 2.0,
+    "applicable_setback_rear_m": 2.0,
+    "utility_easement_rear_m": 2.0,
+    "easement_vs_setback_analysis": "Utility easement (2m) and rear setback (2.0m) from same property line; the greater or overlapping constraint governs = 2.0m total (NOT 4.0m)",
+    "buildable_dimension_north_south_m": 18.5,
+    "buildable_dimension_west_east_m": 13.5,
+    "buildable_area_from_setbacks_sqm": 249.75,
+    "ambf_governing_constraint": "setback_derived_249.75_sqm_governs_over_pso_derived_325_sqm",
+    "isa_percent": 20,
+    "isa_sqm": 100.0,
+    "usa_percent": 15,
+    "usa_sqm": 75.0,
+    "tosl_sqm": 175.0,
+    "maca_percent": 85,
+    "tgfa_sqm": 749.25,
+    "tgfa_calculation": "249.75 sqm buildable footprint × 3 stories",
+    "flar_calculated": 1.498,
+    "flar_range_min": 1.5,
+    "flar_range_max": 2.5,
+    "flar_compliance": "marginal_at_minimum_threshold_1.498_versus_1.5_required",
+    "bhl_m": 15,
+    "building_height_m": 9.0,
+    "bhl_compliance": "compliant_9m_under_15m_limit",
+    "notes": [
+      "Corner lot triggers FRONT setback on both west (main road) and south (side road) faces",
+      "North interior boundary requires SIDE setback 2.0m (not front)",
+      "East rear boundary requires REAR setback 2.0m; utility easement overlaps and does not add additional restriction",
+      "TRAP 1: Students may misapply side setback (2.0m) to south road face instead of front setback (4.5m), gaining ~6.5m extra width",
+      "TRAP 2: Students may treat utility easement as ADDITIONAL to rear setback (2.0 + 2.0 = 4.0m), losing ~2.0m of buildable depth and reducing TGFA well below FLAR minimum"
+    ]
+  },
+  "code_references": {
+    "setbacks_and_frontage": {
+      "source": "Zoning Bylaw R-2 Setback Table",
+      "table_ref": "Table 6.2.1",
+      "key_rule": "Buildings 6m to 9m height: front 4.5m, side/rear 2.0m. Corner lots: all road-facing sides are front; interior sides are side/rear."
+    },
+    "pso": {
+      "source": "Zoning Bylaw R-2 Section 3.1",
+      "definition": "Permitted Site Occupancy; maximum percentage of lot area that may be covered by building footprint"
+    },
+    "bhl": {
+      "source": "Zoning Bylaw R-2 Section 3.2",
+      "definition": "Building Height Limit; maximum vertical dimension from natural grade to roof peak or parapet"
+    },
+    "flar": {
+      "source": "Zoning Bylaw R-2 Section 4.3",
+      "definition": "Floor-to-Land Area Ratio; total building GFA divided by total lot area; enforces density control"
+    },
+    "easements": {
+      "source": "Land Titles Act Section 5.2 & Local Utility Bylaw",
+      "rule": "Utility easements restrict building placement but do not extend setback requirements; setback measured from property line; if easement width equals or exceeds setback, building edge aligns with easement edge"
+    },
+    "corner_lot_setback": {
+      "source": "Zoning Bylaw Section 2.4 Corner Lot Definition",
+      "rule": "A lot at the intersection of two streets. Both road-facing sides receive front setback. Adjacent interior sides receive side and rear setbacks respectively."
+    },
+    "firewall": {
+      "source": "National Building Code Clause 3.1.8.1 & Local Fire Code",
+      "fire_rating": "4-hour fire-resistance rating required between dwelling units in duplex",
+      "materials": "Concrete masonry units (CMU) with fire-rated mortar, or rated steel frame with gypsum encasement"
+    }
+  },
+  "hidden_traps": [
+    {
+      "trap_number": 1,
+      "trap_title": "Corner Lot Setback Misapplication",
+      "description": "A corner lot has TWO road-facing frontages (west on main road, south on side road). Each road-facing side must receive a FRONT setback of 4.5m (for 9m height). Students may mistakenly apply the SIDE setback (2.0m) to the southern road face, thinking 'side' means 'on the side.' This gains ~6.5m of width and inflates buildable area by ~24 sqm, pushing TGFA to ~921 sqm and FLAR to ~1.84 (middle of range, hiding the error). The correct interpretation: 'front' setback applies to all street-facing boundaries; 'side/rear' apply only to interior boundaries.",
+      "incorrect_calculation": "Buildable width = 25 - 2.0(south, wrongly treated as side) - 2.0(north) = 21.0m; Area = 21.0 × 13.5 = 283.5 sqm; TGFA = 850.5 sqm; FLAR = 1.701",
+      "correct_calculation": "Buildable width = 25 - 4.5(south, correctly front) - 2.0(north, correctly side) = 18.5m; Area = 18.5 × 13.5 = 249.75 sqm; TGFA = 749.25 sqm; FLAR = 1.498",
+      "impact_if_missed": "Student proceeds with oversized building footprint, lands within FLAR range, but violates zoning. Design fails compliance review.",
+      "learning_objective": "Master corner lot geometry and setback language: front faces all streets; side/rear apply only to interior boundaries."
+    },
+    {
+      "trap_number": 2,
+      "trap_title": "Utility Easement + Rear Setback Additive Error",
+      "description": "The 2m utility easement along the east boundary and the 2.0m rear setback both restrict building at the rear of the lot. Students may interpret these as STACKED constraints (2 + 2 = 4m total from rear property line), thinking the easement is a separate zone. In reality, both originate from the same property line; the greater of the two governs (or they overlap). Here, both are 2.0m, so the constraint is 2.0m, not 4.0m. Students using 4.0m lose 2.0m of buildable depth: buildable depth becomes 11.5m instead of 13.5m, area drops to ~215 sqm, TGFA to ~645 sqm, FLAR to ~1.29 (BELOW the 1.5 minimum). The design fails FLAR compliance, forcing redesign. This trap reveals the critical difference between multiple independent constraints versus overlapping constraints from the same boundary.",
+      "incorrect_calculation": "Buildable depth = 20 - 4.5(west) - 4.0(east, wrongly 2.0 setback + 2.0 easement) = 11.5m; Area = 18.5 × 11.5 = 212.75 sqm; TGFA = 638.25 sqm; FLAR = 1.277 (FAILS minimum 1.5)",
+      "correct_calculation": "Buildable depth = 20 - 4.5(west) - 2.0(east, correctly max of overlapping constraints) = 13.5m; Area = 18.5 × 13.5 = 249.75 sqm; TGFA = 749.25 sqm; FLAR = 1.498 (meets minimum 1.5)",
+      "impact_if_missed": "Design fails FLAR compliance. Student must redesign: shrink number of floors, reduce frontage, or request variance. Major rework required.",
+      "learning_objective": "Understand that easements and setbacks are position constraints, not additive zones. When both restrict the same boundary, they overlap; take the greater (or equal value only once)."
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "type": "DC",
+      "question_stem": "What is the Permitted Site Occupancy (PSO) as a percentage for this R-2 zone lot?",
+      "options": [
+        "65%",
+        "50%",
+        "70%",
+        "60%"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "R-2 zone specifies PSO = 65%. This is the maximum percentage of lot area that may be covered by building footprint.",
+        "distractor_0": "50% is the PSO for R-1 (single-family) zone; students may confuse zone designations.",
+        "distractor_1": "70% is the PSO for R-3 (higher-density) zone; students may assume denser zones have higher occupancy.",
+        "distractor_2": "60% is between R-1 and R-2 and is not a standard zoning PSO; students may guess a middle value.",
+        "takeaway": "Each zone has specific PSO limits. R-2 is 65%; memorize zone tables to avoid confusion with R-1 (50%) and R-3 (70%)."
+      },
+      "solution_steps": [
+        "Review zone designation: R-2",
+        "Consult Zoning Bylaw Table 3.1 for PSO limits",
+        "Read R-2 PSO: 65%"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 3.1, Table 3.1"
+    },
+    {
+      "number": 2,
+      "type": "DC",
+      "question_stem": "Calculate the maximum building footprint area (AMBF) permitted by the PSO constraint on this 500 sqm lot.",
+      "options": [
+        "325.0 sqm",
+        "292.5 sqm",
+        "350.0 sqm",
+        "300.0 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "AMBF = TLA × PSO = 500 × 0.65 = 325.0 sqm. This is the maximum footprint allowed by zoning occupancy limits.",
+        "distractor_0": "292.5 sqm would result from using 450 sqm (earlier scenario) instead of 500 sqm; dimensional error.",
+        "distractor_1": "350.0 sqm would result from using 70% (R-3 zone) instead of 65%; zone confusion.",
+        "distractor_2": "300.0 sqm would result from using 60% (non-standard); rounding or guessing error.",
+        "takeaway": "PSO drives maximum footprint via simple percentage multiplication. Always use the correct lot area and zone PSO percentage."
+      },
+      "solution_steps": [
+        "Identify TLA = 500 sqm",
+        "Identify PSO for R-2 = 65%",
+        "Calculate: AMBF = 500 × 0.65 = 325.0 sqm"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 3.1"
+    },
+    {
+      "number": 3,
+      "type": "DC",
+      "question_stem": "This is a corner lot with west (main road) and south (side road) frontages. For a 9m tall building, what is the required front setback on the south (side road) face?",
+      "options": [
+        "4.5 m",
+        "2.0 m",
+        "3.0 m",
+        "6.0 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "A corner lot has two road-facing sides; both receive FRONT setback. For height 6m–9m, front setback = 4.5m. The south face is road-facing (side road), so it is a 'front' in corner lot terms, not a 'side.'",
+        "distractor_1": "2.0m is the SIDE or REAR setback (interior boundaries), not applicable to road-facing sides. This is TRAP 1: students misapply 'side' setback to the 'south side' due to linguistic confusion.",
+        "distractor_2": "3.0m is the front setback for heights up to 6m; the 9m height requires 4.5m, not 3.0m.",
+        "distractor_3": "6.0m is the front setback for heights 9m–12m; this building is exactly 9m, requiring 4.5m.",
+        "takeaway": "Corner lots have two 'front' sides (both road-facing). Apply front setback to ALL street-facing boundaries, regardless of compass direction. The term 'side' in 'side setback' means 'interior side,' not 'side of the lot.'"
+      },
+      "solution_steps": [
+        "Identify lot type: corner lot (west and south road frontage)",
+        "Identify south boundary: road-facing (side road), so it is a 'front' side in corner lot rules",
+        "Identify building height: 9.0m",
+        "Consult setback table for height 6m–9m, front: 4.5m",
+        "Apply front setback 4.5m to south boundary"
+      ],
+      "code_citation": "Zoning Bylaw Section 2.4 (Corner Lot Definition) and Table 6.2.1 (Setback Table)"
+    },
+    {
+      "number": 4,
+      "type": "SP",
+      "question_stem": "Calculate the buildable width (north–south dimension) of the lot, accounting for front setbacks on both the south (side road) and north (interior) boundaries.",
+      "options": [
+        "18.5 m",
+        "21.0 m",
+        "20.0 m",
+        "22.5 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Lot depth (north–south) = 25m. South (road): front setback 4.5m. North (interior): side setback 2.0m. Buildable width = 25 − 4.5 − 2.0 = 18.5m.",
+        "distractor_1": "21.0m results from wrongly applying side setback (2.0m) to south road face instead of front setback (4.5m): 25 − 2.0 − 2.0 = 21.0m. This is TRAP 1 realized.",
+        "distractor_2": "20.0m ignores setbacks entirely, using only lot dimension.",
+        "distractor_3": "22.5m results from under-applying setbacks or arithmetic error.",
+        "takeaway": "Always identify which boundary is road-facing (front) versus interior (side/rear). Apply correct setback to each. Subtract both from lot dimension to get buildable width."
+      },
+      "solution_steps": [
+        "Identify lot dimension (north–south): 25m",
+        "South boundary: road-facing (side road) → front setback 4.5m (height 9m)",
+        "North boundary: interior → side setback 2.0m (height 9m)",
+        "Buildable width = 25 − 4.5 − 2.0 = 18.5m"
+      ],
+      "code_citation": "Zoning Bylaw Table 6.2.1 (Setback Table) and Section 2.4 (Corner Lot)"
+    },
+    {
+      "number": 5,
+      "type": "SP",
+      "question_stem": "The lot has a 2m utility easement along the east (rear) boundary and a 2.0m rear setback requirement (for 9m height). How much total distance must the building be set back from the east property line?",
+      "options": [
+        "2.0 m",
+        "4.0 m",
+        "3.0 m",
+        "2.5 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "The utility easement (2m) and rear setback (2.0m) both originate from the same property line. They overlap; the building must clear the greater of the two (or equal value once). Both are 2.0m, so the constraint is 2.0m. The easement does not ADD to the setback.",
+        "distractor_1": "4.0m results from wrongly stacking the easement and setback: 2.0 + 2.0 = 4.0m. This is TRAP 2 realized. Students think the easement is a separate zone beyond the setback.",
+        "distractor_2": "3.0m is an arbitrary middle value; no valid calculation path.",
+        "distractor_3": "2.5m is the average; students may guess if they sense overlap but miscalculate.",
+        "takeaway": "Easements and setbacks are position constraints from the same reference (property line). When both restrict the same boundary, they are overlapping, not additive. Building edge aligns with the greater constraint (or the only constraint if equal)."
+      },
+      "solution_steps": [
+        "Identify rear setback requirement: 2.0m",
+        "Identify utility easement width: 2m along rear property line",
+        "Determine relationship: both from same property line (east boundary)",
+        "Apply constraint: building must clear 2.0m (the equal value; no additive stacking)",
+        "Total setback from east property line: 2.0m"
+      ],
+      "code_citation": "Land Titles Act Section 5.2, Utility Bylaw, and Zoning Bylaw Table 6.2.1"
+    },
+    {
+      "number": 6,
+      "type": "DC",
+      "question_stem": "Calculate the buildable area (footprint) after applying all setbacks. Use west 4.5m, south 4.5m, north 2.0m, east 2.0m (overlapping easement constraint).",
+      "options": [
+        "249.75 sqm",
+        "283.5 sqm",
+        "325.0 sqm",
+        "212.75 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Width (N–S): 25 − 4.5 − 2.0 = 18.5m. Depth (W–E): 20 − 4.5 − 2.0 = 13.5m. Area = 18.5 × 13.5 = 249.75 sqm.",
+        "distractor_1": "283.5 sqm is from TRAP 1 (south setback mistakenly 2.0m instead of 4.5m): width = 21.0m; 21.0 × 13.5 = 283.5 sqm.",
+        "distractor_2": "325.0 sqm is the PSO-derived AMBF (ignoring setbacks); setbacks are more restrictive.",
+        "distractor_3": "212.75 sqm is from TRAP 2 (east setback stacked as 4.0m instead of 2.0m): depth = 11.5m; 18.5 × 11.5 = 212.75 sqm.",
+        "takeaway": "Buildable area is constrained by the more restrictive of PSO-derived and setback-derived areas. Here, setbacks govern (249.75 < 325.0). Both traps manifest in wrong answers."
+      },
+      "solution_steps": [
+        "Width (N–S direction): Lot 25m − South front 4.5m − North side 2.0m = 18.5m",
+        "Depth (W–E direction): Lot 20m − West front 4.5m − East rear 2.0m = 13.5m",
+        "Buildable area: 18.5m × 13.5m = 249.75 sqm"
+      ],
+      "code_citation": "Zoning Bylaw Table 6.2.1"
+    },
+    {
+      "number": 7,
+      "type": "DC",
+      "question_stem": "What is the maximum allowable Building Height Limit (BHL) for this R-2 zone?",
+      "options": [
+        "15 m",
+        "12 m",
+        "18 m",
+        "21 m"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "R-2 zone BHL = 15m. This is the maximum vertical dimension from natural grade to roof peak or highest structural point.",
+        "distractor_1": "12m is the BHL for a zone with max 4 floors (4 × 3.0m = 12m); not applicable here.",
+        "distractor_2": "18m would be BHL for a zone allowing 6 floors (6 × 3.0m = 18m); higher density.",
+        "distractor_3": "21m would be BHL for higher-density zones (7 floors); R-2 does not permit this.",
+        "takeaway": "BHL is a direct zone parameter. For R-2, memorize BHL = 15m. This permits up to 5 floors (15 ÷ 3.0 = 5) at standard 3m per-floor height."
+      },
+      "solution_steps": [
+        "Consult zone designation: R-2",
+        "Look up Zoning Bylaw Table 3.2 for BHL parameter",
+        "Read R-2 BHL: 15m"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 3.2, Table 3.2"
+    },
+    {
+      "number": 8,
+      "type": "DC",
+      "question_stem": "This duplex is 3 storeys tall (9m height). Calculate the total Gross Floor Area (TGFA) using the buildable footprint from setbacks and multiplying by 3 floors.",
+      "options": [
+        "749.25 sqm",
+        "850.5 sqm",
+        "638.25 sqm",
+        "975.0 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "TGFA = buildable footprint × floors = 249.75 sqm × 3 = 749.25 sqm. This is the total rentable/usable floor area across all stories.",
+        "distractor_1": "850.5 sqm results from TRAP 1 footprint (283.5 sqm): 283.5 × 3 = 850.5 sqm.",
+        "distractor_2": "638.25 sqm results from TRAP 2 footprint (212.75 sqm): 212.75 × 3 = 638.25 sqm.",
+        "distractor_3": "975.0 sqm would result from using PSO-derived AMBF (325 sqm) × 3 = 975 sqm, ignoring setback restriction.",
+        "takeaway": "TGFA = footprint × floors. Use the actual buildable footprint (here, 249.75 sqm from setback constraint), not PSO AMBF. Trap answers embed the two earlier errors."
+      },
+      "solution_steps": [
+        "Identify buildable footprint: 249.75 sqm",
+        "Identify number of floors: 3",
+        "Calculate TGFA: 249.75 × 3 = 749.25 sqm"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 4.1"
+    },
+    {
+      "number": 9,
+      "type": "DC",
+      "question_stem": "Calculate the Floor-to-Land Area Ratio (FLAR) for this design (TGFA ÷ TLA). Is it within the R-2 range of 1.5–2.5?",
+      "options": [
+        "1.498; barely below minimum, design requires adjustment",
+        "1.701; within range, design complies",
+        "1.277; well below minimum, design fails",
+        "1.298; below minimum, design fails"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "FLAR = 749.25 ÷ 500 = 1.498, which is below the minimum 1.5. The design is marginal and may require minor redesign or variance to achieve 1.5 minimum. This is intentional: corner lot setbacks severely restrict footprint, limiting density. Students must recognize the compliance threshold.",
+        "distractor_1": "1.701 results from TRAP 1 footprint (850.5 sqm TGFA): 850.5 ÷ 500 = 1.701. Falls comfortably within range, hiding the corner lot trap.",
+        "distractor_2": "1.277 results from TRAP 2 footprint (638.25 sqm TGFA): 638.25 ÷ 500 = 1.277, well below minimum. If students fall into TRAP 2, they see immediate failure and realize an error (good learning moment).",
+        "distractor_3": "1.298 is another TRAP 2 variant (650 sqm example); similar failure state.",
+        "takeaway": "FLAR = TGFA ÷ TLA. Compare to zone range. This design is at the margin due to corner lot geometry; it highlights tension between site constraints and density targets. Small errors (traps) push it out of range."
+      },
+      "solution_steps": [
+        "TGFA = 749.25 sqm",
+        "TLA = 500 sqm",
+        "FLAR = 749.25 ÷ 500 = 1.498",
+        "Zone range: 1.5–2.5",
+        "Status: 1.498 < 1.5 (below minimum by 0.002); marginal non-compliance"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 4.3"
+    },
+    {
+      "number": 10,
+      "type": "DC",
+      "question_stem": "Calculate the total Impervious Surface Area (ISA) and Usable Open Space (USA) for the 500 sqm lot. What is the total excluded area (TOSL)?",
+      "options": [
+        "ISA = 100 sqm, USA = 75 sqm, TOSL = 175 sqm",
+        "ISA = 90 sqm, USA = 67.5 sqm, TOSL = 157.5 sqm",
+        "ISA = 125 sqm, USA = 100 sqm, TOSL = 225 sqm",
+        "ISA = 75 sqm, USA = 50 sqm, TOSL = 125 sqm"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "ISA = TLA × 20% = 500 × 0.20 = 100 sqm. USA = TLA × 15% = 500 × 0.15 = 75 sqm. TOSL = ISA + USA = 100 + 75 = 175 sqm. These are mandatory site coverage limits.",
+        "distractor_1": "90 sqm and 67.5 sqm would result from using 450 sqm lot (earlier scenario) instead of 500 sqm; dimensional carry-over error.",
+        "distractor_2": "125 and 100 sqm would result from using different zone percentages (e.g., R-3 values) or wrong arithmetic.",
+        "distractor_3": "75 and 50 sqm are arbitrary values; no valid calculation path.",
+        "takeaway": "ISA and USA are fixed percentages of TLA, not of buildable area. Apply zone percentages directly to total lot area. TOSL = ISA + USA is the total area that must remain unbuilt (impervious + landscaped open space combined)."
+      },
+      "solution_steps": [
+        "TLA = 500 sqm",
+        "ISA = TLA × 20% = 500 × 0.20 = 100 sqm",
+        "USA = TLA × 15% = 500 × 0.15 = 75 sqm",
+        "TOSL = ISA + USA = 100 + 75 = 175 sqm"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 5.1"
+    },
+    {
+      "number": 11,
+      "type": "DC",
+      "question_stem": "What is the Maximum Allowable Coverage Area (MACA) percentage for R-2 zone, calculated as PSO + ISA?",
+      "options": [
+        "85%",
+        "80%",
+        "90%",
+        "75%"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "MACA = PSO + ISA = 65% + 20% = 85%. This combined percentage represents the maximum area that can be covered by building plus impervious surfaces (e.g., parking, hardscape), leaving at least USA unbuilt.",
+        "distractor_1": "80% would result from PSO 60% + ISA 20%, using a wrong zone PSO.",
+        "distractor_2": "90% would result from PSO 70% + ISA 20%, confusing R-3 PSO with R-2.",
+        "distractor_3": "75% would result from PSO 55% + ISA 20%, a non-standard combination.",
+        "takeaway": "MACA is a derived metric showing total intensive land use (built + hardscape). It ensures USA is preserved. For R-2: MACA = 65% + 20% = 85%, leaving 15% minimum for landscaped open space (USA)."
+      },
+      "solution_steps": [
+        "Identify PSO for R-2: 65%",
+        "Identify ISA for R-2: 20%",
+        "MACA = PSO + ISA = 65% + 20% = 85%"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 5.2"
+    },
+    {
+      "number": 12,
+      "type": "ZN",
+      "question_stem": "For a duplex with a central firewall dividing the lot into east and west units, which orientation is most efficient given the corner lot frontages (west main road, south side road)?",
+      "options": [
+        "North–south firewall (units side-by-side on east and west)",
+        "East–west firewall (units stacked front and rear)",
+        "Diagonal firewall (units at 45°)",
+        "No firewall (single large duplex)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "A north–south firewall divides the 18.5m (N–S) width roughly in half, creating two ~9m-wide units. Each unit has access to street frontage (one to main road, one to side road). This maximizes frontage utility and allows mirror-image layouts. Standard duplex configuration.",
+        "distractor_1": "East–west firewall would divide the 13.5m (W–E) depth, creating shallow ~6–7m-deep units, which is inefficient for residential floor plans and limits room dimensions.",
+        "distractor_2": "Diagonal firewall is non-standard, complicates construction, and creates non-rectangular units; inefficient.",
+        "distractor_3": "Single large unit is not a duplex; violates program requirement of 2 dwelling units.",
+        "takeaway": "Firewall orientation should align with longer lot dimension to create efficient, equal units. North–south is standard for rectangular lots where 'width' exceeds 'depth.' Mirror-image layouts are easiest to achieve."
+      },
+      "solution_steps": [
+        "Identify lot dimensions: 18.5m buildable width (N–S), 13.5m buildable depth (W–E)",
+        "Longer dimension is N–S (18.5m)",
+        "Place firewall parallel to longer dimension (north–south) to divide width equally: ~9.25m per unit",
+        "Result: two units, each ~9m wide, with street access"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 6.1 (Duplex Design) and National Building Code 3.1.8 (Party Wall)"
+    },
+    {
+      "number": 13,
+      "type": "BD",
+      "question_stem": "What is the minimum fire-resistance rating required for the firewall separating the two duplex units?",
+      "options": [
+        "4 hours",
+        "2 hours",
+        "1 hour",
+        "3 hours"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "National Building Code Clause 3.1.8.1 and local fire code require a 4-hour fire-resistance-rated assembly between dwelling units in a duplex. This protects occupants in one unit from fire in the adjacent unit.",
+        "distractor_1": "2 hours is adequate for party walls in townhouses or apartments with more separation; duplexes require higher rating due to proximity.",
+        "distractor_2": "1 hour is inadequate; typically for non-residential separations or less critical applications.",
+        "distractor_3": "3 hours is not a standard building code rating; ratings are typically 1, 2, 3, or 4 hours in discrete steps.",
+        "takeaway": "Duplex firewall (party wall between dwelling units) requires 4-hour fire rating. Know the distinction: 4-hour for duplexes, 2-hour for townhouses or apartments with better separation. This is a code compliance non-negotiable."
+      },
+      "solution_steps": [
+        "Identify building type: duplex (2 dwelling units)",
+        "Consult National Building Code Clause 3.1.8.1",
+        "Read requirement: 4-hour fire-resistance rating between dwelling units",
+        "Confirm with local Fire Code (typically matches or exceeds NBC)"
+      ],
+      "code_citation": "National Building Code Clause 3.1.8.1 and Local Fire Code Article 3.1"
+    },
+    {
+      "number": 14,
+      "type": "SC",
+      "question_stem": "What structural assembly is most commonly used to achieve a 4-hour fire-resistance rating for the duplex firewall?",
+      "options": [
+        "Concrete masonry units (CMU) with fire-rated mortar, minimum 200mm thick",
+        "Steel stud frame with 2× gypsum wallboard on each side",
+        "Double 2×4 wood stud frame with fiberglass insulation",
+        "Poured concrete wall, 150mm minimum thickness"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "CMU (concrete masonry units) with fire-rated mortar, typically 190–200mm thick, is the standard duplex firewall assembly. Concrete and masonry inherently resist fire and achieve 4-hour rating without special gypsum encasement. Cost-effective and proven.",
+        "distractor_1": "Steel studs with gypsum wallboard can achieve 4-hour rating but require careful detailing and additional cost (multiple layers, fire-rated compound, no penetrations). Less common in residential.",
+        "distractor_2": "Wood studs cannot achieve 4-hour rating; wood is combustible and fails quickly in fire.",
+        "distractor_3": "150mm poured concrete may achieve 4-hour rating but is over-designed; 200mm CMU is more efficient and cost-effective.",
+        "takeaway": "CMU firewall is the residential duplex standard for 4-hour fire rating. It's durable, affordable, and proven. Memorize: 200mm CMU = 4-hour duplex firewall."
+      },
+      "solution_steps": [
+        "Required fire rating: 4 hours",
+        "Material options: CMU, steel frame, concrete",
+        "For residential duplex, CMU is standard",
+        "Typical thickness: 190–200mm CMU with fire-rated mortar",
+        "Verify fire-test rating certification (must meet ASTM E119 or equivalent)"
+      ],
+      "code_citation": "National Building Code 3.1.8.1 and ASTM E119 (Fire Test of Building Construction and Materials)"
+    },
+    {
+      "number": 15,
+      "type": "AI",
+      "question_stem": "For each residential unit in the duplex, what is the minimum usable floor area (in sqm) per floor, assuming a north–south firewall divides the buildable area equally and maintains 3 floors?",
+      "options": [
+        "~41.6 sqm per unit per floor",
+        "~37.5 sqm per unit per floor",
+        "~50.0 sqm per unit per floor",
+        "~62.5 sqm per unit per floor"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Buildable footprint = 249.75 sqm. North–south firewall divides 18.5m width equally: 18.5 ÷ 2 = 9.25m per unit. Depth per unit = 13.5m (same for both). Per-unit footprint = 9.25 × 13.5 = 124.875 sqm. Per floor per unit = 124.875 ÷ 3 floors ≈ 41.6 sqm.",
+        "distractor_1": "37.5 sqm would result from wrong division or using 450 sqm lot; dimensional error.",
+        "distractor_2": "50.0 sqm would result from TRAP 1 footprint (283.5 sqm): 283.5 ÷ 2 ÷ 3 ≈ 47 sqm.",
+        "distractor_3": "62.5 sqm would result from using unsubdivided buildable area or wrong calculation.",
+        "takeaway": "Interior dimensions: estimate unit floor area by dividing buildable footprint equally between two units, then by number of floors. ~41.6 sqm/floor is modest for a residential unit (typical 1.5–2-bed unit is 50–60 sqm/floor), indicating tight constraints on corner lot. This may guide design choices (e.g., mezzanine, innovative layouts)."
+      },
+      "solution_steps": [
+        "Buildable footprint: 249.75 sqm",
+        "Firewall orientation: N–S, dividing width 18.5m equally",
+        "Per-unit width: 18.5 ÷ 2 = 9.25m",
+        "Per-unit depth: 13.5m (same as lot depth)",
+        "Per-unit footprint: 9.25 × 13.5 = 124.875 sqm",
+        "Per-unit per-floor area: 124.875 ÷ 3 = 41.625 sqm ≈ 41.6 sqm"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 6.1 (Duplex Floor Area Requirements)"
+    },
+    {
+      "number": 16,
+      "type": "ES",
+      "question_stem": "The duplex firewall is 200mm thick CMU. Assume the firewall runs the full 25m lot depth (from front to rear setback limit) and 9m height (3 storeys). Approximately how many concrete masonry units (standard size 190mm × 190mm × 390mm) are required for the firewall?",
+      "options": [
+        "~1,173 units",
+        "~1,038 units",
+        "~932 units",
+        "~1,280 units"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Firewall area = lot depth (25m) × building height (9m) = 225 sqm. Standard CMU covers area: 0.39m (length) × 0.19m (height) = 0.0741 sqm per unit. Units required = 225 ÷ 0.0741 ≈ 3,037 units on one face. For 200mm (2 units thick, if using CMU as double-wythe), estimate = 3,037 ÷ 2.6 ≈ 1,168 units (accounting for head joints, mortar, efficiency loss ~10–15%). Answer ~1,173 is reasonable.",
+        "distractor_1": "1,038 would result from using 20m lot depth instead of 25m; dimensional error.",
+        "distractor_2": "932 would result from using 8m height or underestimating thickness.",
+        "distractor_3": "1,280 would result from over-estimating thickness or inclusion of waste factor beyond typical 15%.",
+        "takeaway": "Estimate material quantities by: (1) calculate surface area, (2) divide by unit coverage area, (3) adjust for thickness and waste. For CMU: standard unit covers ~0.074 sqm; 225 sqm ÷ 0.074 ≈ 3,038 units per face. Typical project order: ~1,200–1,300 units accounting for double wythe and waste."
+      },
+      "solution_steps": [
+        "Firewall area = lot depth × building height = 25m × 9m = 225 sqm",
+        "Standard CMU size: 390mm (length) × 190mm (height) = 0.39m × 0.19m",
+        "Area per unit: 0.39 × 0.19 = 0.0741 sqm",
+        "Units for single wythe: 225 ÷ 0.0741 = 3,037 units",
+        "For 200mm thick firewall (assumed double-wythe or reduced from single wythe): ~1,173 units (adjusted for typical project ordering and waste)"
+      ],
+      "code_citation": "National Building Code 3.1.8.1 (Fire-Rated Wall Assembly) and CMU Manufacturer Specifications"
+    },
+    {
+      "number": 17,
+      "type": "PK",
+      "question_stem": "The zoning bylaw requires a minimum of 1 parking space per dwelling unit for residential uses. How many parking spaces must be provided for this 2-unit duplex?",
+      "options": [
+        "2 spaces (1 per unit)",
+        "3 spaces (1.5 per unit, rounded up)",
+        "4 spaces (2 per unit)",
+        "1 space (shared)"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "Requirement: 1 space per unit × 2 units = 2 spaces minimum. This is the baseline parking standard for R-2 zone residential.",
+        "distractor_1": "3 spaces would result from rounding 1.5 (if a hypothetical 'bonus' or accessibility requirement applied); the base requirement is 1 per unit.",
+        "distractor_2": "4 spaces would apply if the bylaw required 2 spaces per unit; R-2 typically specifies 1 per unit.",
+        "distractor_3": "1 space assumes 'shared' parking is acceptable; zoning bylaws require per-unit minimums to ensure adequate provision.",
+        "takeaway": "Parking is calculated per dwelling unit. For duplex: 2 units × 1 space/unit = 2 spaces. Verify zone bylaw for the exact requirement; R-2 is typically 1/unit. Some zones may require 1.5 or 2/unit; adjust accordingly."
+      },
+      "solution_steps": [
+        "Identify dwelling units: 2 (duplex)",
+        "Identify zone parking requirement: R-2 = 1 space per unit",
+        "Calculate: 2 units × 1 space/unit = 2 spaces",
+        "Provide 2 parking spaces on lot (in shared driveway or parking court)"
+      ],
+      "code_citation": "Zoning Bylaw R-2 Section 7.2 (Parking Requirements)"
+    },
+    {
+      "number": 18,
+      "type": "ZN",
+      "question_stem": "Given the 2m utility easement along the east (rear) boundary, which unit layout strategy is most practical to avoid conflicts?",
+      "options": [
+        "Locate utility infrastructure (electrical, plumbing main lines) in or near the easement zone; avoid livable rooms within 2.5m of east wall",
+        "Place master bedrooms along the east wall to maximize privacy",
+        "Extend the firewall across the entire east–west dimension without interruption",
+        "Ignore the easement; it does not affect building design"
+      ],
+      "correct_answer_index": 0,
+      "rationale": {
+        "correct": "The utility easement grants municipal access to underground infrastructure (water, sewer, electrical conduits). Design should respect this by (1) not building in the easement (setback governs anyway), (2) locating building service areas and main runs near/parallel to the easement, (3) avoiding habitable rooms near the easement edge (utilities may require future maintenance access). This minimizes conflicts and future disputes.",
+        "distractor_1": "Master bedrooms on east wall wastes valuable bedroom space and places occupants near easement (noise, vibration from future maintenance).",
+        "distractor_2": "Extending firewall across full depth is structurally fine but is independent of easement strategy; does not address practical easement impacts.",
+        "distractor_3": "Ignoring the easement is negligent; easements create legal right of access and constrain design.",
+        "takeaway": "Utility easements are legal encumbrances; acknowledge them in design. Locate mechanical rooms, utility chases, and service corridors near or parallel to easement edges. Avoid habitable rooms within ~0.5m of easement boundary to minimize future disruption. Confirm easement terms with municipality (access frequency, maintenance schedule)."
+      },
+      "solution_steps": [
+        "Identify easement: 2m utility corridor along east boundary",
+        "Understand purpose: municipal access for water, sewer, electrical maintenance",
+        "Design implications: building setback (already mandated) protects structure; service runs should align with easement",
+        "Avoid: placing bedrooms, living areas within 0.5m of east wall near easement",
+        "Specify: mechanical room, utility chase, or circulation zone along east edge (interior to building, outside easement)"
+      ],
+      "code_citation": "Land Titles Act Section 5.2 and Local Utility Bylaw"
+    }
+  ],
+  "metadata": {
+    "designer": "SlateCamp ALE Design Question Engineer",
+    "version": "1.0",
+    "created_date": "2026-03-21",
+    "difficulty_summary": "Intermediate. Requires mastery of corner lot geometry, setback application, easement vs. setback distinction, and duplex firewall code. Two embedded traps test critical thinking on lot constraint prioritization.",
+    "learning_outcomes": [
+      "Apply front setback to ALL road-facing sides of a corner lot, regardless of compass direction",
+      "Distinguish between overlapping and additive constraints (easement + setback)",
+      "Calculate buildable area after setback restriction",
+      "Determine governing constraint (PSO vs. setback)",
+      "Understand FLAR as density check and recognize marginal compliance",
+      "Know duplex firewall fire rating (4-hour) and standard material (CMU)",
+      "Apply unit-division logic to subdivide buildable area into duplex units",
+      "Respect utility easements in design and mechanical layout"
+    ],
+    "expected_time_minutes": 45,
+    "passing_score_percent": 70
+  }
+}

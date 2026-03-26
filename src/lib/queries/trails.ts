@@ -8,6 +8,8 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { getSubjectName } from '@/types/testing'
+import { sortStepsByBloom, buildNodeBloomMap } from '@/lib/trail-sequencing'
+import type { NodeBloomData } from '@/lib/trail-sequencing'
 import type {
   CampTrail,
   TrailDay,
@@ -66,10 +68,35 @@ export const getTrailDays = async (trailId: string): Promise<TrailDay[]> => {
     console.error('[getTrailDays]', error.message, error.code)
     return []
   }
-  return (data || []).map((d: any) => ({
-    ...d,
-    steps: (d.trail_steps || []).sort((a: TrailStep, b: TrailStep) => a.step_order - b.step_order),
-  })) as TrailDay[]
+
+  // Collect all unique target_node_ids across all steps
+  const allNodeIds = [
+    ...new Set(
+      (data || []).flatMap((d: any) =>
+        (d.trail_steps || []).flatMap((s: any) => s.target_node_ids ?? []),
+      ),
+    ),
+  ]
+
+  // Batch-fetch bloom_level and difficulty for those taxonomy nodes
+  let nodeBloomMap = new Map<string, NodeBloomData>()
+  if (allNodeIds.length > 0) {
+    const { data: taxonomyRows } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id, bloom_level, difficulty')
+      .in('node_id', allNodeIds)
+    if (taxonomyRows) {
+      nodeBloomMap = buildNodeBloomMap(taxonomyRows)
+    }
+  }
+
+  return (data || []).map((d: any) => {
+    const rawSteps: TrailStep[] = (d.trail_steps || []).sort(
+      (a: TrailStep, b: TrailStep) => a.step_order - b.step_order,
+    )
+    const steps = sortStepsByBloom(rawSteps, nodeBloomMap)
+    return { ...d, steps }
+  }) as TrailDay[]
 }
 
 // ============================================================

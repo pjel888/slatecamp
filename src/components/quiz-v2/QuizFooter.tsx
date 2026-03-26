@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
-import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 import type { QuizSessionConfig } from '@/types/quiz-config'
 
 interface QuizFooterProps {
@@ -30,18 +30,23 @@ export const QuizFooter = ({
       className="flex items-center justify-between px-4 py-3 border-t border-[#D4DAE3] bg-white"
       aria-label="Quiz navigation"
     >
-      {/* Previous */}
+      {/* Previous — ghost text button */}
       <div className="w-24">
         {showBack && (
-          <Button
-            variant="secondary"
-            size="sm"
-            leftIcon={<ArrowLeft size={14} aria-hidden="true" />}
+          <button
+            type="button"
             onClick={onPrevious}
+            className={cn(
+              'inline-flex items-center gap-1 text-[13px] text-[#4A5568]',
+              'hover:text-[#1A2332] transition-colors duration-150',
+              'min-h-[44px] px-1',
+              'focus-visible:outline-none focus-visible:underline',
+            )}
             aria-label="Previous question"
           >
+            <ArrowLeft size={14} aria-hidden="true" />
             Previous
-          </Button>
+          </button>
         )}
       </div>
 
@@ -50,18 +55,26 @@ export const QuizFooter = ({
         {currentPosition} / {totalQuestions}
       </span>
 
-      {/* Next / Submit */}
+      {/* Next — ghost text button */}
       <div className="w-24 flex justify-end">
-        <Button
-          variant="primary"
-          size="sm"
-          rightIcon={!isLast ? <ArrowRight size={14} aria-hidden="true" /> : undefined}
+        <button
+          type="button"
           onClick={onNext}
           disabled={!hasAnswered}
+          className={cn(
+            'inline-flex items-center gap-1 text-[13px]',
+            'min-h-[44px] px-1',
+            'transition-colors duration-150',
+            'focus-visible:outline-none focus-visible:underline',
+            hasAnswered
+              ? 'text-[#1B3FC4] hover:text-[#1535A8]'
+              : 'text-[#D4DAE3] cursor-default',
+          )}
           aria-label={isLast ? 'Submit quiz' : 'Next question'}
         >
           {isLast ? 'Submit' : 'Next'}
-        </Button>
+          {!isLast && <ArrowRight size={14} aria-hidden="true" />}
+        </button>
       </div>
     </footer>
   )
