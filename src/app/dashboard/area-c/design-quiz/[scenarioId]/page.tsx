@@ -9,13 +9,13 @@ type PageProps = {
 
 export const generateMetadata = async ({ params }: PageProps) => {
   const { scenarioId } = await params
-  const scenario = getScenarioById(scenarioId)
+  const scenario = await getScenarioById(scenarioId)
   return { title: scenario ? `${scenario.title} — Design Quiz` : 'Design Quiz' }
 }
 
 const DesignQuizScenarioPage = async ({ params }: PageProps) => {
   const { scenarioId } = await params
-  const scenario = getScenarioById(scenarioId)
+  const scenario = await getScenarioById(scenarioId)
 
   if (!scenario) notFound()
 

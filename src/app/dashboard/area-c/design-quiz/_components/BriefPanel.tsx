@@ -24,7 +24,10 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
     bg: '#F8F7F5',
   }
 
-  const sd = scenario.site_data
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const sd = scenario.site_data as any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const prog = scenario.program as any
 
   const siteRows: { label: string; value: string }[] = [
     { label: 'Lot Area', value: `${sd.total_lot_area_sqm} sqm` },
@@ -86,16 +89,16 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
         <div className='flex flex-col gap-1'>
           <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
             <span className='text-[11px] text-[#4A5568]'>Occupancy</span>
-            <span className='text-[11px] font-medium text-[#1A2332] text-right'>{scenario.program.occupancy_type}</span>
+            <span className='text-[11px] font-medium text-[#1A2332] text-right'>{prog.occupancy_type}</span>
           </div>
           <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
             <span className='text-[11px] text-[#4A5568]'>Stories</span>
-            <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{scenario.program.building_stories}</span>
+            <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.building_stories}</span>
           </div>
         </div>
-        {scenario.program.zones.length > 0 && (
+        {prog.zones.length > 0 && (
           <div className='flex flex-col gap-1.5 pt-1'>
-            {scenario.program.zones.map((zone) => (
+            {prog.zones.map((zone) => (
               <div key={zone.name} className='flex flex-col gap-0.5'>
                 <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>{zone.name}</span>
                 <div className='flex flex-wrap gap-1'>

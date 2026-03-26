@@ -4,8 +4,8 @@ import { ScenarioList } from './_components/ScenarioList'
 
 export const metadata = { title: 'Design Quiz' }
 
-const DesignQuizPage = () => {
-  const scenarios = getScenarios()
+const DesignQuizPage = async () => {
+  const scenarios = await getScenarios()
 
   return (
     <SharedPageLayout>

@@ -1,11 +1,11 @@
-import { readFileSync, readdirSync } from 'fs'
-import { join } from 'path'
+import { createClient } from '@/lib/supabase/server'
 
 export type DesignScenarioQuestion = {
+  question_id: string
   number: number
   type: string
   question_stem: string
-  options: string[]
+  options: Array<{ index: number; text: string }> | string[]
   correct_answer_index: number
   rationale: {
     correct: string
@@ -34,47 +34,87 @@ export type DesignScenario = {
   trap_count: number
   time_limit_minutes: number
   brief: string
-  site_data: {
-    total_lot_area_sqm: number
-    lot_shape: string
-    frontage_m: number
-    depth_m: number
-    zone: string
-    pso_percent: number
-    building_height_limit_m: number
-    flar_min?: number
-    flar_max?: number
-    right_of_way_m?: number
-    right_of_way_direction?: string
-    slope_percent?: number
-    slope_direction?: string
-    isa_percent?: number
-    usa_percent?: number
-    adjacent_zones?: Record<string, string>
-    easements?: string
-    utilities?: string
-    [key: string]: unknown
-  }
-  program: {
-    occupancy_type: string
-    building_stories: number
-    zones: { name: string; spaces: string[] }[]
-    [key: string]: unknown
-  }
+  site_data: Record<string, unknown>
+  program: Record<string, unknown>
   code_references: string[]
   computation_sheet: Record<string, { description: string; [key: string]: unknown }>
   hidden_traps: HiddenTrap[]
   questions: DesignScenarioQuestion[]
 }
 
-const DESIGN_DIR = join(process.cwd(), 'Design Questions')
+/**
+ * Fetch all design scenarios from Supabase (without questions — for list page).
+ */
+export const getScenarios = async (): Promise<DesignScenario[]> => {
+  const supabase = await createClient()
 
-export const getScenarios = (): DesignScenario[] => {
-  const files = readdirSync(DESIGN_DIR).filter((f) => f.endsWith('.json'))
-  return files.map((f) => JSON.parse(readFileSync(join(DESIGN_DIR, f), 'utf-8')) as DesignScenario)
+  const { data: scenarios } = await supabase
+    .from('design_scenarios')
+    .select('*')
+    .order('scenario_id', { ascending: true })
+
+  if (!scenarios) return []
+
+  return scenarios.map((s) => ({
+    id: s.scenario_id,
+    title: s.title,
+    building_type: s.building_type,
+    difficulty: s.difficulty as DesignScenario['difficulty'],
+    trap_count: s.trap_count ?? 0,
+    time_limit_minutes: s.time_limit_minutes ?? 180,
+    brief: s.brief,
+    site_data: (s.site_data ?? {}) as Record<string, unknown>,
+    program: (s.program ?? {}) as Record<string, unknown>,
+    code_references: s.code_references ?? [],
+    computation_sheet: (s.computation_sheet ?? {}) as DesignScenario['computation_sheet'],
+    hidden_traps: (s.hidden_traps ?? []) as HiddenTrap[],
+    questions: [], // Not loaded for list page
+  }))
 }
 
-export const getScenarioById = (id: string): DesignScenario | null => {
-  const scenarios = getScenarios()
-  return scenarios.find((s) => s.id === id) ?? null
+/**
+ * Fetch a single design scenario with all its questions from Supabase.
+ */
+export const getScenarioById = async (id: string): Promise<DesignScenario | null> => {
+  const supabase = await createClient()
+
+  const { data: scenario } = await supabase
+    .from('design_scenarios')
+    .select('*')
+    .eq('scenario_id', id)
+    .maybeSingle()
+
+  if (!scenario) return null
+
+  const { data: questions } = await supabase
+    .from('design_scenario_questions')
+    .select('*')
+    .eq('scenario_id', id)
+    .order('question_number', { ascending: true })
+
+  return {
+    id: scenario.scenario_id,
+    title: scenario.title,
+    building_type: scenario.building_type,
+    difficulty: scenario.difficulty as DesignScenario['difficulty'],
+    trap_count: scenario.trap_count ?? 0,
+    time_limit_minutes: scenario.time_limit_minutes ?? 180,
+    brief: scenario.brief,
+    site_data: (scenario.site_data ?? {}) as Record<string, unknown>,
+    program: (scenario.program ?? {}) as Record<string, unknown>,
+    code_references: scenario.code_references ?? [],
+    computation_sheet: (scenario.computation_sheet ?? {}) as DesignScenario['computation_sheet'],
+    hidden_traps: (scenario.hidden_traps ?? []) as HiddenTrap[],
+    questions: (questions ?? []).map((q) => ({
+      question_id: q.question_id,
+      number: q.question_number,
+      type: q.question_type ?? 'DC',
+      question_stem: q.question_stem,
+      options: q.options as DesignScenarioQuestion['options'],
+      correct_answer_index: q.correct_answer_index,
+      rationale: (q.rationale ?? {}) as DesignScenarioQuestion['rationale'],
+      solution_steps: q.solution_steps ?? [],
+      code_citation: q.code_citation ?? '',
+    })),
+  }
 }

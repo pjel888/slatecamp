@@ -84,7 +84,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
               questionNumber={question.number}
               totalQuestions={scenario.questions.length}
               questionStem={question.question_stem}
-              options={question.options}
+              options={question.options.map((o: string | { text: string }) => typeof o === 'string' ? o : o.text)}
               selectedIndex={selectedIndex}
               onSelect={setSelectedIndex}
               onCheck={handleCheck}
