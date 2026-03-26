@@ -66,8 +66,7 @@ const ModeCard = ({
   const statsLine = buildStatsLine(stats)
   const sessionCount = stats?.sessionCount ?? 0
 
-  const isZone3 = mode.zone === 3
-  const accentColor = isZone3 ? 'var(--accent)' : 'var(--primary)'
+  const accentColor = 'var(--primary)'
   const showProBadge = mode.isPro && userTier === 'free'
   const MODE_KEY_TO_V2: Record<string, string> = {
     'focus-review': 'focused',
@@ -84,9 +83,7 @@ const ModeCard = ({
         <div
           className="flex h-7 w-7 shrink-0 items-center justify-center rounded-sm"
           style={{
-            backgroundColor: isZone3
-              ? 'rgba(232, 133, 58, 0.1)'
-              : 'rgba(27, 63, 196, 0.1)',
+            backgroundColor: 'rgba(27, 63, 196, 0.1)',
           }}
           aria-hidden="true"
         >
@@ -211,9 +208,7 @@ const ModeCard = ({
           href={href}
           className={cn(
             'inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out mt-auto',
-            isZone3
-              ? 'bg-[var(--accent)] text-white hover:opacity-90'
-              : 'bg-[var(--primary)] text-white hover:opacity-90'
+            'bg-[var(--primary)] text-white hover:opacity-90'
           )}
         >
           {mode.ctaLabel}
