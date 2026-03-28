@@ -1,7 +1,7 @@
 'use server'
 
 // wiki-actions: taxonomy tree + article data for wiki sidebar
-import { createClient } from "@/lib/supabase/server";
+import { createClient, createStaticClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 
@@ -378,7 +378,7 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
 export async function resolveArticleAndNode(
   slug: string,
 ): Promise<{ article: WikiArticle | null; node: TaxonomyNode | null }> {
-  const supabase = await createClient()
+  const supabase = await createStaticClient()
 
   // Path 1: slug matches an article slug
   const { data: article } = await supabase

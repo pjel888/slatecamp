@@ -5,6 +5,7 @@ import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
+  TooltipProvider,
 } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 import {
@@ -116,17 +117,19 @@ export const SidebarNavItem = ({
   // Tooltip only shown when collapsed and showTooltip is true
   if (showTooltip && !expanded) {
     return (
-      <Tooltip>
-        <TooltipTrigger asChild>{anchor}</TooltipTrigger>
-        <TooltipContent side="right" sideOffset={8}>
-          {label}
-          {shortcut && (
-            <span className="ml-1.5 text-gray-400 dark:text-gray-500">
-              {shortcut}
-            </span>
-          )}
-        </TooltipContent>
-      </Tooltip>
+      <TooltipProvider delay={0}>
+        <Tooltip>
+          <TooltipTrigger asChild>{anchor}</TooltipTrigger>
+          <TooltipContent side="right" sideOffset={8}>
+            {label}
+            {shortcut && (
+              <span className="ml-1.5 text-gray-400 dark:text-gray-500">
+                {shortcut}
+              </span>
+            )}
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     )
   }
 

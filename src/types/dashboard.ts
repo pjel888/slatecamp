@@ -105,6 +105,7 @@ export interface TopicRing {
   topicName: string
   mastery: number
   questionsAnswered: number
+  nodesEncountered?: number
 }
 
 export interface SubjectMastery {
@@ -113,6 +114,7 @@ export interface SubjectMastery {
   aleId: string | null
   mastery: number
   questionsAnswered: number
+  nodesEncountered?: number
   topics: TopicRing[]
 }
 

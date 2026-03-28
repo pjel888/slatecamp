@@ -48,7 +48,6 @@ export const GenerationInput = ({
 }: GenerationInputProps) => {
   const inputRef = useRef<HTMLInputElement>(null)
   const [localValue, setLocalValue] = useState('')
-  const isSubmitted = feedback !== null
 
   // ── Store bindings ─────────────────────────────────────────────────────────
   const selectAnswer = useQuizStore((s) => s.selectAnswer)
@@ -62,6 +61,11 @@ export const GenerationInput = ({
     setLocalValue(storeValue ?? '')
   }, [question.question_id])
 
+  const status = useQuizStore((s) => s.status)
+  const isChecked = feedback !== null
+  const isSubmitting = status === 'submitting'
+  const isDisabled = isChecked || isSubmitting
+
   const hasAnswered = localValue.trim().length > 0
 
   const showFeedbackPanel =
@@ -71,7 +75,7 @@ export const GenerationInput = ({
 
   const handleChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      if (isSubmitted) return
+      if (isDisabled) return
       const val = e.target.value
 
       // For short_text: cap at 100 characters
@@ -82,24 +86,24 @@ export const GenerationInput = ({
       // (reusing the existing answer state infrastructure)
       selectAnswer(question.question_id, val)
     },
-    [isSubmitted, questionType, selectAnswer, question.question_id],
+    [isDisabled, questionType, selectAnswer, question.question_id],
   )
 
   const handleClear = useCallback(() => {
-    if (isSubmitted) return
+    if (isDisabled) return
     setLocalValue('')
     selectAnswer(question.question_id, '')
     inputRef.current?.focus()
-  }, [isSubmitted, selectAnswer, question.question_id])
+  }, [isDisabled, selectAnswer, question.question_id])
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
-      if (e.key === 'Enter' && hasAnswered && !isSubmitted) {
+      if (e.key === 'Enter' && hasAnswered && !isDisabled) {
         e.preventDefault()
         onSubmit()
       }
     },
-    [hasAnswered, isSubmitted, onSubmit],
+    [hasAnswered, isDisabled, onSubmit],
   )
 
   // ── Input type ─────────────────────────────────────────────────────────────
@@ -135,7 +139,7 @@ export const GenerationInput = ({
             value={localValue}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            disabled={isSubmitted}
+            disabled={isDisabled}
             placeholder={PLACEHOLDER_MAP[questionType]}
             autoComplete="off"
             autoCorrect="off"
@@ -145,10 +149,10 @@ export const GenerationInput = ({
               'text-[#1A2332] bg-white placeholder:text-[#8896A7]',
               'transition-colors duration-150 ease-out',
               'focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/30 focus:border-[#1B3FC4]',
-              isSubmitted && feedback?.isCorrect && 'border-[#2D9F6F] bg-[#EDFAF4]',
-              isSubmitted && !feedback?.isCorrect && 'border-[#D64545] bg-[#FDF0F0]',
-              !isSubmitted && 'border-[#D4DAE3]',
-              isSubmitted && 'pointer-events-none',
+              isDisabled && feedback?.isCorrect && 'border-[#2D9F6F] bg-[#EDFAF4]',
+              isDisabled && !feedback?.isCorrect && 'border-[#D64545] bg-[#FDF0F0]',
+              !isDisabled && 'border-[#D4DAE3]',
+              isDisabled && 'pointer-events-none',
               // Large centered input for numeric/formula
               (questionType === 'numeric' || questionType === 'formula') &&
                 'text-center text-2xl font-mono tracking-wide',
@@ -170,7 +174,7 @@ export const GenerationInput = ({
           )}
 
           {/* Clear button */}
-          {localValue.length > 0 && !isSubmitted && (
+          {localValue.length > 0 && !isDisabled && (
             <button
               type="button"
               onClick={handleClear}
@@ -189,7 +193,7 @@ export const GenerationInput = ({
         </div>
 
         {/* Character count for short_text */}
-        {questionType === 'short_text' && !isSubmitted && (
+        {questionType === 'short_text' && !isDisabled && (
           <p className="text-[11px] text-[#8896A7] text-right">
             {localValue.length}/100
           </p>
@@ -197,7 +201,7 @@ export const GenerationInput = ({
       </div>
 
       {/* Confidence input — shown after typing, before submit, hidden in chill mode */}
-      {hasAnswered && !isSubmitted && config.mode !== 'chill' && (
+      {hasAnswered && !isDisabled && config.mode !== 'chill' && (
         <ConfidenceInput
           value={confidenceLevel}
           onChange={onConfidenceChange}
@@ -205,11 +209,12 @@ export const GenerationInput = ({
       )}
 
       {/* Slide-to-submit bar */}
-      {!isSubmitted && (
+      {!isChecked && (
         <SlideToSubmit
           onSubmit={onSubmit}
           label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
-          disabled={!hasAnswered}
+          disabled={!hasAnswered || isDisabled}
+          checked={isChecked}
         />
       )}
 

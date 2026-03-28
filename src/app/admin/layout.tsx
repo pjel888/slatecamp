@@ -34,8 +34,15 @@ export default async function AdminLayout({
 
   const attentionData = await getNeedsAttentionData()
 
+  // Full-bleed editor routes get no padding — the editor manages its own layout
+  const isFullBleedEditor = /^\/admin\/content\/[^/]+$/.test(pathname)
+
   return (
-    <AdminShell role={role} badgeCounts={{ pendingReviews: attentionData.pendingReviews }}>
+    <AdminShell
+      role={role}
+      badgeCounts={{ pendingReviews: attentionData.pendingReviews }}
+      noPadding={isFullBleedEditor}
+    >
       {children}
     </AdminShell>
   )

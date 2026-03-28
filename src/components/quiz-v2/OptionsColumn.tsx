@@ -63,12 +63,16 @@ export const OptionsColumn = ({
   onSubmit,
   onNext,
 }: OptionsColumnProps) => {
-  const headingId = `question-heading-${question.question_id}`
-  const hasAnswered = selectedOptionId !== null
-  const isSubmitted = feedback !== null
+  const status = useQuizStore((s) => s.status)
+  const isChecked = feedback !== null
+  const isSubmitting = status === 'submitting'
+  const isDisabled = isChecked || isSubmitting
 
   const showFeedbackPanel =
     feedback !== null && config.feedback.timing === 'immediate'
+
+  const headingId = `question-heading-${question.question_id}`
+  const hasAnswered = selectedOptionId !== null
 
   // ── Elimination state from store ─────────────────────────────────────────
   const eliminatedOptions = useQuizStore((s) => s.eliminatedOptions)
@@ -78,7 +82,7 @@ export const OptionsColumn = ({
   // Keyboard submit (Enter / Space) as accessibility fallback
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
-      if (isSubmitted || !hasAnswered) return
+      if (isDisabled || !hasAnswered) return
       if (e.key === 'Enter' || e.key === ' ') {
         const tag = (e.target as HTMLElement)?.tagName
         if (tag === 'INPUT' || tag === 'BUTTON' || tag === 'LABEL') return
@@ -86,7 +90,7 @@ export const OptionsColumn = ({
         onSubmit()
       }
     },
-    [isSubmitted, hasAnswered, onSubmit],
+    [isDisabled, hasAnswered, onSubmit],
   )
 
   useEffect(() => {
@@ -104,9 +108,9 @@ export const OptionsColumn = ({
       >
         {question.options.map((option) => {
           const state = getOptionState(option.id, selectedOptionId, feedback)
-          const isDisabled = isSubmitted
+          const isDisabledForOption = isDisabled
           const isSelected = selectedOptionId === option.id
-          const isEliminated = eliminatedIds.has(option.id) && !isSubmitted
+          const isEliminated = eliminatedIds.has(option.id) && !isChecked
 
           return (
             <div key={option.id} className="relative">
@@ -115,7 +119,7 @@ export const OptionsColumn = ({
                   'flex items-center gap-3 w-full rounded-md border px-4 py-3 min-h-[52px]',
                   'transition-colors duration-150 ease-out',
                   OPTION_STATE_CLASSES[state],
-                  isDisabled && state === 'default' && 'pointer-events-none opacity-60',
+                  isDisabledForOption && state === 'default' && 'pointer-events-none opacity-60',
                   isEliminated && !isSelected && 'opacity-50',
                 )}
               >
@@ -124,7 +128,7 @@ export const OptionsColumn = ({
                   name={`options-${question.question_id}`}
                   value={option.id}
                   checked={isSelected}
-                  disabled={isDisabled}
+                  disabled={isDisabledForOption}
                   onChange={() => onSelectOption(isSelected ? '' : option.id)}
                   className="sr-only"
                   aria-label={`Option ${option.letter}: ${option.text}${isEliminated ? ' (eliminated)' : ''}`}
@@ -158,15 +162,15 @@ export const OptionsColumn = ({
                   onClick={(e) => {
                     e.preventDefault()
                     e.stopPropagation()
-                    if (!isSubmitted) toggleEliminate(question.question_id, option.id)
+                    if (!isDisabled) toggleEliminate(question.question_id, option.id)
                   }}
-                  disabled={isSubmitted}
+                  disabled={isDisabled}
                   className={cn(
                     'flex-shrink-0 flex items-center justify-center',
                     'w-8 h-8 rounded-sm',
                     'transition-colors duration-150 ease-out',
                     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
-                    isSubmitted
+                    isDisabled
                       ? 'opacity-0 pointer-events-none'
                       : isEliminated
                         ? 'text-[#D64545] hover:text-[#D64545] hover:bg-[#D64545]/10'
@@ -188,7 +192,7 @@ export const OptionsColumn = ({
         <ConfidenceInput
           value={confidenceLevel}
           onChange={onConfidenceChange}
-          disabled={isSubmitted}
+          disabled={isDisabled}
         />
       )}
 
@@ -196,8 +200,8 @@ export const OptionsColumn = ({
       <SlideToSubmit
         onSubmit={onSubmit}
         label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
-        disabled={!hasAnswered || isSubmitted}
-        checked={isSubmitted}
+        disabled={!hasAnswered || isDisabled}
+        checked={isChecked}
       />
 
       {/* Inline feedback panel */}

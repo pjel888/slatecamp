@@ -14,6 +14,8 @@ interface PortalLayoutProps {
   backHref?: string
   backLabel?: string
   rightRail?: React.ReactNode
+  /** When true, strips padding from main content area for full-bleed editors */
+  noPadding?: boolean
   children: React.ReactNode
 }
 
@@ -28,6 +30,7 @@ const PortalLayout = ({
   backHref,
   backLabel,
   rightRail,
+  noPadding = false,
   children,
 }: PortalLayoutProps) => (
   <div className="flex flex-col min-h-screen">
@@ -54,10 +57,17 @@ const PortalLayout = ({
         accentLightColor={accentLightColor}
       />
       <div className="flex flex-1 min-w-0">
-        <main className={cn("flex-1 min-w-0 overflow-y-auto px-6 py-6 lg:px-8", rightRail && "max-w-4xl")}>
+        <main
+          className={cn(
+            'flex-1 min-w-0',
+            noPadding
+              ? 'overflow-hidden p-0'
+              : cn('overflow-y-auto px-4 py-4', rightRail && 'max-w-4xl'),
+          )}
+        >
           {children}
         </main>
-        {rightRail && (
+        {rightRail && !noPadding && (
           <aside className="w-[170px] shrink-0 sticky top-12 h-fit hidden xl:block py-5 pr-4">
             {rightRail}
           </aside>
@@ -69,3 +79,4 @@ const PortalLayout = ({
 
 export { PortalLayout }
 export type { PortalLayoutProps }
+

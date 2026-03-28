@@ -1,5 +1,5 @@
 import { unstable_cache } from 'next/cache'
-import { createClient } from '@/lib/supabase/server'
+import { createStaticClient } from '@/lib/supabase/server'
 import { resolveArticleAndNode } from './wiki-actions'
 
 // ── Global data caches (same for all users, revalidate hourly) ───────────
@@ -7,7 +7,7 @@ import { resolveArticleAndNode } from './wiki-actions'
 /** All disciplines — used in layout sidebar + discipline context. */
 export const getCachedDisciplines = unstable_cache(
   async () => {
-    const supabase = await createClient()
+    const supabase = await createStaticClient()
     const { data } = await supabase
       .from('disciplines')
       .select('discipline_id, name, acronym, created_at, updated_at')
@@ -21,7 +21,7 @@ export const getCachedDisciplines = unstable_cache(
 /** Dashboard taxonomy tree (levels 1–3, excluding cross-ref and deprecated). */
 export const getCachedTaxonomyTree = unstable_cache(
   async () => {
-    const supabase = await createClient()
+    const supabase = await createStaticClient()
     const { data } = await supabase
       .from('taxonomy_tree')
       .select('node_id, parent_id, level, name, subject_area, ale_id')
@@ -41,7 +41,7 @@ export const getCachedTaxonomyTree = unstable_cache(
 /** Wiki articles for daily rotation on dashboard. */
 export const getCachedWikiArticles = unstable_cache(
   async () => {
-    const supabase = await createClient()
+    const supabase = await createStaticClient()
     const { data } = await supabase
       .from('wiki_articles')
       .select('article_id, title, slug, content')

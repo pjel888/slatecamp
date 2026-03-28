@@ -1,6 +1,6 @@
 'use client'
 
-import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Columns, Pulse, GearSix } from '@phosphor-icons/react/dist/ssr'
+import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Pulse, GearSix } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'
@@ -60,12 +60,6 @@ const adminNavItems: NavGroup[] = [
           { label: 'All Articles', href: '/admin/articles' },
           { label: 'Create New', href: '/admin/articles/new' },
         ],
-      },
-      {
-        label: 'Content Editor',
-        href: '/admin/content',
-        icon: <Columns className="w-3.5 h-3.5" />,
-        children: [],
       },
     ],
   },
@@ -138,10 +132,11 @@ const adminNavItems: NavGroup[] = [
 interface AdminShellProps {
   role: UserRole
   badgeCounts?: { pendingReviews: number }
+  noPadding?: boolean
   children: React.ReactNode
 }
 
-const AdminShell = ({ role, badgeCounts, children }: AdminShellProps) => {
+const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShellProps) => {
   const navItemsWithBadges = adminNavItems.map((group) => ({
     ...group,
     items: group.items.map((item) => ({
@@ -159,6 +154,7 @@ const AdminShell = ({ role, badgeCounts, children }: AdminShellProps) => {
       navItems={navItemsWithBadges}
       rightContent={<AdminRoleBadge role={role} />}
       backLabel={PORTALS.admin.backLabel}
+      noPadding={noPadding}
     >
       <CommandPalette pages={adminPages} />
       {children}

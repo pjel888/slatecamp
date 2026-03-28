@@ -44,13 +44,17 @@ interface CampfireLoaderProps {
 }
 
 export const CampfireLoader = ({ staticMessage, interval = 2500 }: CampfireLoaderProps) => {
+  // Use a deterministic initial state to avoid SSR hydration mismatches
   const [message, setMessage] = useState(
-    staticMessage ?? getRandomMessage,
+    staticMessage ?? CAMPFIRE_MESSAGES[0],
   )
   const [visible, setVisible] = useState(true)
 
   useEffect(() => {
     if (staticMessage) return
+
+    // Switch to a random message on mount
+    setMessage(getRandomMessage(CAMPFIRE_MESSAGES[0]))
 
     const timer = setInterval(() => {
       setVisible(false)

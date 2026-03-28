@@ -1,8 +1,20 @@
 import { createServerClient } from '@supabase/ssr'
+import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
+
+export const createStaticClient = cache(async () => {
+  if (isDemoMode()) {
+    return createMockSupabaseClient() as any
+  }
+
+  return createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  )
+})
 
 export const createClient = cache(async () => {
   if (isDemoMode()) {

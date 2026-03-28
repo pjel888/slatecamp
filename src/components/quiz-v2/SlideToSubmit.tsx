@@ -110,7 +110,7 @@ export const SlideToSubmit = ({
       className={cn(
         'relative flex items-center w-full rounded-md overflow-hidden select-none touch-none',
         'border border-[#D4DAE3] bg-[#F8F7F5]',
-        disabled && 'opacity-40 pointer-events-none',
+        disabled && !completed && 'opacity-40 pointer-events-none',
         completed && 'border-[#1B3FC4] bg-[#EEF2FC] pointer-events-none',
       )}
       style={{ height: HANDLE_SIZE + TRACK_PADDING * 2, padding: TRACK_PADDING }}

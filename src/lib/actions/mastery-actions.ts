@@ -58,10 +58,12 @@ export const buildSubjectMastery = (
         topicName: topic.name,
         mastery: count > 0 ? Math.round((totalWeight / count) * 100) : 0,
         questionsAnswered: totalAttempts,
+        nodesEncountered: count,
       }
     })
 
     const allAttempts = topicRings.reduce((sum, t) => sum + t.questionsAnswered, 0)
+    const totalNodesEncountered = topicRings.reduce((sum, t) => sum + (t.nodesEncountered || 0), 0)
     const answeredTopics = topicRings.filter(t => t.questionsAnswered > 0)
     const avgMastery = answeredTopics.length > 0
       ? Math.round(answeredTopics.reduce((sum, t) => sum + t.mastery, 0) / answeredTopics.length)
@@ -73,6 +75,7 @@ export const buildSubjectMastery = (
       aleId: subject.ale_id,
       mastery: avgMastery,
       questionsAnswered: allAttempts,
+      nodesEncountered: totalNodesEncountered,
       topics: topicRings,
     }
   })
@@ -178,10 +181,12 @@ export const buildProjectedLawsMastery = async (
       topicName: lawsSubtopic.name,
       mastery: count > 0 ? Math.round((totalWeight / count) * 100) : 0,
       questionsAnswered: totalAttempts,
+      nodesEncountered: count,
     }
   })
 
   const allAttempts = topicRings.reduce((sum, t) => sum + t.questionsAnswered, 0)
+  const totalNodesEncountered = topicRings.reduce((sum, t) => sum + (t.nodesEncountered || 0), 0)
   const answeredTopics = topicRings.filter(t => t.questionsAnswered > 0)
   const avgMastery = answeredTopics.length > 0
     ? Math.round(answeredTopics.reduce((sum, t) => sum + t.mastery, 0) / answeredTopics.length)
@@ -193,6 +198,7 @@ export const buildProjectedLawsMastery = async (
     aleId: lawsSubject.ale_id ?? null,
     mastery: avgMastery,
     questionsAnswered: allAttempts,
+    nodesEncountered: totalNodesEncountered,
     topics: topicRings,
   }
 }

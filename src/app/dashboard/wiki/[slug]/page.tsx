@@ -18,7 +18,7 @@ import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
 import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
 import { WikiReadTracker } from '@/components/wiki/WikiReadTracker'
-import { PrequestionGate } from '@/components/wiki/PrequestionGate'
+
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -167,77 +167,37 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
               scrollContainerId="wiki-center-pane"
             />
 
-            {/* Pre-reading questions gate (IMPL_04: metacognitive priming) — skip when arriving from quiz feedback */}
-            {node?.node_id && sp?.from !== 'quiz' ? (
-              <PrequestionGate
-                topicId={node.node_id}
-                topicName={node.name ?? article.title}
-              >
-                <div className="max-w-4xl mx-auto px-8 py-8">
-                  <WrongAnswerBanner
-                    fromWrongAnswer={sp?.from === 'wrong-answer'}
-                    topicName={(sp?.topic as string) ?? null}
-                  />
+            <div className="max-w-4xl mx-auto px-8 py-8">
+              <WrongAnswerBanner
+                fromWrongAnswer={sp?.from === 'wrong-answer'}
+                topicName={(sp?.topic as string) ?? null}
+              />
 
-                  <WikiArticleHero
-                    subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
-                    difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
-                    readTime={`~${readingTime} min`}
-                    title={article.title}
-                    updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-                    aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
-                  />
+              <WikiArticleHero
+                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
+                difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
+                readTime={`~${readingTime} min`}
+                title={article.title}
+                updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+                aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
+              />
 
-                  <WikiArticle
-                    article={article}
-                    nodeId={node.node_id}
-                    nodeName={node.name}
-                    eiPrompts={eiPrompts}
-                    eiResponses={eiResponses}
-                  />
+              <WikiArticle
+                article={article}
+                nodeId={node?.node_id}
+                nodeName={node?.name}
+                eiPrompts={eiPrompts}
+                eiResponses={eiResponses}
+              />
 
-                  {teachBackCriteria && node.name && (
-                    <TeachBackPrompt
-                      topicId={node.node_id}
-                      topicName={node.name}
-                      entryPoint="wiki"
-                    />
-                  )}
-                </div>
-              </PrequestionGate>
-            ) : (
-              <div className="max-w-4xl mx-auto px-8 py-8">
-                <WrongAnswerBanner
-                  fromWrongAnswer={sp?.from === 'wrong-answer'}
-                  topicName={(sp?.topic as string) ?? null}
+              {teachBackCriteria && node?.node_id && node?.name && (
+                <TeachBackPrompt
+                  topicId={node.node_id}
+                  topicName={node.name}
+                  entryPoint="wiki"
                 />
-
-                <WikiArticleHero
-                  subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
-                  difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
-                  readTime={`~${readingTime} min`}
-                  title={article.title}
-                  updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-                  aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
-                />
-
-                <WikiArticle
-                  article={article}
-                  nodeId={node?.node_id}
-                  nodeName={node?.name}
-                  eiPrompts={eiPrompts}
-                  eiResponses={eiResponses}
-                />
-
-                {teachBackCriteria && node?.node_id && node?.name && (
-                  <TeachBackPrompt
-                    topicId={node.node_id}
-                    topicName={node.name}
-                    entryPoint="wiki"
-                  />
-                )}
-              </div>
-            )}
+              )}
+            </div>
           </div>
 
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}

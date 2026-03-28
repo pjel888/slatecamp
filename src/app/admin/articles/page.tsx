@@ -1,13 +1,19 @@
 import type { Metadata } from 'next'
-import { getArticlesWithCoverage } from '@/lib/actions/admin/wiki-queries'
-
-export const metadata: Metadata = { title: 'Articles — SlateCamp Admin' }
+import { getAdminTaxonomyTree } from '@/lib/actions/admin/wiki-queries'
 import { ArticlesClient } from './_components/ArticlesClient'
 
-const AdminArticlesPage = async () => {
-  const articles = await getArticlesWithCoverage()
+export const metadata: Metadata = { title: 'Articles — SlateCamp Admin' }
 
-  return <ArticlesClient articles={articles} />
+const AdminArticlesPage = async () => {
+  const { disciplines, treeByDiscipline, unmappedArticles } = await getAdminTaxonomyTree()
+
+  return (
+    <ArticlesClient
+      disciplines={disciplines}
+      treeByDiscipline={treeByDiscipline}
+      unmappedArticles={unmappedArticles}
+    />
+  )
 }
 
 export default AdminArticlesPage

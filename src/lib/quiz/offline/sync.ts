@@ -27,7 +27,7 @@ export const flushPendingAnswers = async (
     }
 
     try {
-      await submitFn(entry.input)
+      await submitFn(entry.input as any)
       await removePendingAnswer(entry.input.sessionId, entry.input.questionId)
       synced++
     } catch {

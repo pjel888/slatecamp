@@ -91,31 +91,32 @@ const describeArc = (
   endAngle: number,
 ): string => {
   const toRad = (deg: number) => (deg - 90) * (Math.PI / 180)
+  const rnd = (n: number) => Number(n.toFixed(3))
 
   const outerStart = {
-    x: cx + outerR * Math.cos(toRad(startAngle)),
-    y: cy + outerR * Math.sin(toRad(startAngle)),
+    x: rnd(cx + outerR * Math.cos(toRad(startAngle))),
+    y: rnd(cy + outerR * Math.sin(toRad(startAngle))),
   }
   const outerEnd = {
-    x: cx + outerR * Math.cos(toRad(endAngle)),
-    y: cy + outerR * Math.sin(toRad(endAngle)),
+    x: rnd(cx + outerR * Math.cos(toRad(endAngle))),
+    y: rnd(cy + outerR * Math.sin(toRad(endAngle))),
   }
   const innerStart = {
-    x: cx + innerR * Math.cos(toRad(endAngle)),
-    y: cy + innerR * Math.sin(toRad(endAngle)),
+    x: rnd(cx + innerR * Math.cos(toRad(endAngle))),
+    y: rnd(cy + innerR * Math.sin(toRad(endAngle))),
   }
   const innerEnd = {
-    x: cx + innerR * Math.cos(toRad(startAngle)),
-    y: cy + innerR * Math.sin(toRad(startAngle)),
+    x: rnd(cx + innerR * Math.cos(toRad(startAngle))),
+    y: rnd(cy + innerR * Math.sin(toRad(startAngle))),
   }
 
-  const largeArc = endAngle - startAngle > 180 ? 1 : 0
+  const largeArc = rnd(endAngle - startAngle) > 180 ? 1 : 0
 
   return [
     `M ${outerStart.x} ${outerStart.y}`,
-    `A ${outerR} ${outerR} 0 ${largeArc} 1 ${outerEnd.x} ${outerEnd.y}`,
+    `A ${rnd(outerR)} ${rnd(outerR)} 0 ${largeArc} 1 ${outerEnd.x} ${outerEnd.y}`,
     `L ${innerStart.x} ${innerStart.y}`,
-    `A ${innerR} ${innerR} 0 ${largeArc} 0 ${innerEnd.x} ${innerEnd.y}`,
+    `A ${rnd(innerR)} ${rnd(innerR)} 0 ${largeArc} 0 ${innerEnd.x} ${innerEnd.y}`,
     'Z',
   ].join(' ')
 }
@@ -279,7 +280,7 @@ const RadialHeatmap = ({
 
 export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
   const [animated, setAnimated] = useState(false)
-  const hasData = data.some((d) => d.questionsAnswered > 0)
+  const hasData = data.some((d) => d.questionsAnswered > 0 || (d.nodesEncountered && d.nodesEncountered > 0))
   const abovePassing = data.filter((d) => d.mastery >= 70).length
 
   useEffect(() => {

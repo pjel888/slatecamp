@@ -332,7 +332,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
         <QuizBody
           question={currentQuestion}
           selectedOptionId={currentAnswer?.selectedOptionId ?? null}
-          confidenceLevel={currentAnswer?.confidenceLevel ?? null}
+          confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
           feedback={feedbackData}
           config={config}
           onSelectOption={handleSelectOption}

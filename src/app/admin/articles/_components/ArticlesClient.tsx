@@ -1,145 +1,277 @@
 'use client'
 
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import {
+  CaretRight,
+  BookOpen,
+  Stack,
+  FileText,
+  PlusCircle,
+  WarningCircle,
+  MagnifyingGlass,
+} from '@phosphor-icons/react/dist/ssr'
 import { PageHeader } from '@/components/shared/page-header'
-import { DataTable, type Column } from '@/components/shared/data-table'
-import { StatusBadge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { cn } from '@/lib/utils'
+import type {
+  AdminArticle,
+  AdminTaxonomyNode,
+  AdminDiscipline,
+} from '@/lib/actions/admin/wiki-queries'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
 /* ------------------------------------------------------------------ */
 
-interface Article extends Record<string, unknown> {
-  article_id: string
-  title: string
-  slug: string | null
-  status: string | null
-  content: string | null
-  created_at: string
-  updated_at: string
-  word_count?: number
-  questionCount?: number
-  hasCoverage?: boolean
-}
-
 interface ArticlesClientProps {
-  articles: Article[]
+  disciplines: AdminDiscipline[]
+  treeByDiscipline: Record<string, AdminTaxonomyNode[]>
+  unmappedArticles: AdminArticle[]
 }
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
+const stripNumberPrefix = (name: string) => name.replace(/^\d{1,2}\s*[—–-]\s*/, '')
+
+const sortLabel = (node: AdminTaxonomyNode, index: number): string | null => {
+  const order = node.sort_order ?? (index + 1)
+  if (order != null) return String(order).padStart(2, '0')
+  const match = node.name.match(/^(\d{1,2})\s*[—–-]/)
+  if (match) return match[1].padStart(2, '0')
+  return null
+}
+
 const computeWordCount = (content: string | null): number =>
   content ? content.split(/\s+/).filter(Boolean).length : 0
 
-const normalizeStatus = (status: string | null): 'published' | 'draft' =>
-  status === 'published' ? 'published' : 'draft'
-
-type StatusFilter = 'all' | 'published' | 'draft' | 'review'
+/** Walk tree to collect all article_ids within a node subtree */
+const collectArticleIds = (node: AdminTaxonomyNode): string[] => {
+  const ids: string[] = (node.articles ?? []).map((a) => a.article_id)
+  for (const child of node.children ?? []) ids.push(...collectArticleIds(child))
+  return ids
+}
 
 /* ------------------------------------------------------------------ */
-/*  Columns                                                            */
+/*  Article row                                                        */
 /* ------------------------------------------------------------------ */
 
-const buildColumns = (): Column<Article>[] => [
-  {
-    key: 'title',
-    header: 'Title',
-    sortable: true,
-    render: (row) => (
-      <span className="truncate max-w-[300px] block font-medium text-foreground">
-        {row.title || '\u2014'}
+const ArticleRow = ({ article }: { article: AdminArticle }) => {
+  const router = useRouter()
+  const words = computeWordCount(article.content)
+  const status = article.status ?? 'draft'
+
+  const statusBadge = status === 'published'
+    ? <Badge variant="success" size="sm" dot>Published</Badge>
+    : status === 'review'
+      ? <Badge variant="warning" size="sm" dot>Review</Badge>
+      : <Badge variant="default" size="sm" dot>Draft</Badge>
+
+  return (
+    <div
+      className="group flex items-center gap-3 px-3 py-2.5 border-b border-border last:border-0 hover:bg-muted/40 cursor-pointer transition-colors duration-100"
+      onClick={() => router.push(`/admin/articles/${article.article_id}`)}
+    >
+      {/* Status indicator */}
+      <span
+        className={cn(
+          'mt-0.5 w-1.5 h-1.5 rounded-full shrink-0',
+          status === 'published' ? 'bg-emerald' : status === 'review' ? 'bg-amber-500' : 'bg-muted-foreground',
+        )}
+      />
+
+      {/* Title */}
+      <span className="flex-1 text-xs font-medium text-text-primary truncate min-w-0">
+        {article.title}
       </span>
-    ),
-  },
-  {
-    key: 'status',
-    header: 'Status',
-    render: (row) => (
-      <StatusBadge status={normalizeStatus(row.status)} />
-    ),
-  },
-  {
-    key: 'questionCount',
-    header: 'Questions',
-    type: 'number',
-    sortable: true,
-    render: (row) => (
-      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums">
-        {row.questionCount ?? 0}
-      </span>
-    ),
-  },
-  {
-    key: 'hasCoverage',
-    header: 'Coverage',
-    render: (row) => (
-      row.questionCount && row.questionCount > 0
-        ? <span className="text-[11px] font-medium text-emerald">Complete</span>
-        : <span className="text-[11px] font-medium text-muted-foreground">GAPS</span>
-    ),
-  },
-  {
-    key: 'word_count',
-    header: 'Words',
-    type: 'number',
-    render: (row) => (
-      <span className="font-mono tabular-nums text-right block">
-        {computeWordCount(row.content).toLocaleString()}
-      </span>
-    ),
-  },
-  {
-    key: 'updated_at',
-    header: 'Updated',
-    type: 'date',
-    sortable: true,
-  },
-  {
-    key: 'actions',
-    header: '',
-    type: 'action',
-    render: (row) => (
-      <div className="flex items-center gap-3">
+
+      {/* Meta chips — only visible on hover for clean look */}
+      <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-150 shrink-0">
+        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary tabular-nums">
+          {words.toLocaleString()} w
+        </span>
+        {article.questionCount > 0 && (
+          <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-emerald tabular-nums">
+            {article.questionCount}q
+          </span>
+        )}
+      </div>
+
+      {/* Status badge */}
+      {statusBadge}
+
+      {/* Actions */}
+      <div className="flex items-center gap-2 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
         <Link
-          href={`/admin/content/${row.article_id}`}
-          className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
+          href={`/admin/articles/${article.article_id}`}
+          className="text-[11px] text-camp-cobalt hover:text-primary-700 transition-colors duration-150 whitespace-nowrap"
           onClick={(e) => e.stopPropagation()}
         >
-          Edit with Questions &rarr;
+          Edit →
         </Link>
-        {row.slug && (
+        {article.slug && (
           <Link
-            href={`/dashboard/wiki/${row.slug}`}
+            href={`/dashboard/wiki/${article.slug}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="whitespace-nowrap text-xs text-text-tertiary hover:text-text-secondary transition-colors duration-150"
+            className="text-[11px] text-text-tertiary hover:text-text-secondary transition-colors duration-150 whitespace-nowrap"
             onClick={(e) => e.stopPropagation()}
           >
             Preview ↗
           </Link>
         )}
       </div>
-    ),
-  },
-]
-
-const columns = buildColumns()
-
-/* ------------------------------------------------------------------ */
-/*  Status filter tabs sub-component                                   */
-/* ------------------------------------------------------------------ */
-
-interface StatusTabsProps {
-  articles: Article[]
-  active: StatusFilter
-  onChange: (filter: StatusFilter) => void
+    </div>
+  )
 }
 
+/* ------------------------------------------------------------------ */
+/*  Taxonomy tree node (left panel)                                    */
+/* ------------------------------------------------------------------ */
+
+interface TreeNodeProps {
+  node: AdminTaxonomyNode
+  depth: number
+  expanded: Set<string>
+  onToggle: (id: string) => void
+  selected: string | null
+  onSelect: (id: string, name: string, node: AdminTaxonomyNode) => void
+  siblingIndex: number
+}
+
+const TreeNode = ({
+  node,
+  depth,
+  expanded,
+  onToggle,
+  selected,
+  onSelect,
+  siblingIndex,
+}: TreeNodeProps) => {
+  const hasChildren = (node.children?.length ?? 0) > 0
+  const isExpandable = hasChildren || node.level <= 2
+  const isExpanded = expanded.has(node.node_id)
+  const isSelected = selected === node.node_id
+  const indent = depth * 16
+  const label = sortLabel(node, siblingIndex)
+  const Icon = node.level <= 1 ? BookOpen : node.level === 2 ? Stack : FileText
+  const articleCount = node.article_count ?? 0
+  // Level-3 single-article nodes — clicking opens editor directly
+  const isDirectEdit = node.level >= 3 && (node.articles?.length ?? 0) === 1
+
+  return (
+    <>
+      <div
+        className={cn(
+          'group flex items-center gap-1.5 min-w-0 select-none',
+          'rounded-sm mx-1 px-1.5 py-1 transition-colors duration-100',
+          isDirectEdit ? 'cursor-pointer' : 'cursor-pointer',
+          isSelected
+            ? 'bg-primary/10 text-primary'
+            : 'hover:bg-muted text-text-secondary hover:text-text-primary',
+          node.level <= 1 && 'mt-1.5 first:mt-0',
+        )}
+        style={{ paddingLeft: `${8 + indent}px` }}
+        onClick={() => {
+          onSelect(node.node_id, node.name, node)
+          if (isExpandable && !isDirectEdit) onToggle(node.node_id)
+        }}
+      >
+        {/* Chevron */}
+        {isExpandable ? (
+          <CaretRight
+            className={cn(
+              'w-3 h-3 shrink-0 transition-transform duration-150',
+              isExpanded && 'rotate-90',
+              isSelected ? 'text-primary' : 'text-text-secondary',
+            )}
+          />
+        ) : (
+          <span className="w-3 shrink-0 flex items-center justify-center">
+            <span className={cn('w-1.5 h-1.5 rounded-full', isSelected ? 'bg-primary' : 'bg-border')} />
+          </span>
+        )}
+
+        {/* Icon */}
+        <Icon
+          className={cn(
+            'w-3.5 h-3.5 shrink-0',
+            isSelected ? 'text-primary' : 'text-text-secondary',
+          )}
+        />
+
+        {/* Name */}
+        <span
+          className={cn(
+            'flex-1 truncate min-w-0',
+            node.level <= 1 ? 'text-xs font-semibold' : 'text-xs font-medium',
+          )}
+        >
+          {stripNumberPrefix(node.name)}
+        </span>
+
+        {/* Sort label */}
+        {label && (
+          <span className="font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums shrink-0 ml-auto pl-2 text-text-secondary">
+            {label}
+          </span>
+        )}
+
+        {/* Article count */}
+        {articleCount > 0 && (
+          <span
+            className={cn(
+              'font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums shrink-0 ml-1',
+              isSelected ? 'text-primary' : 'text-text-tertiary',
+            )}
+          >
+            {articleCount}
+          </span>
+        )}
+      </div>
+
+      {/* Children */}
+      {isExpanded && hasChildren && (
+        <div
+          className="border-l border-border/60 ml-3"
+          style={{ marginLeft: `${12 + indent + 4}px` }}
+        >
+          {(node.children ?? []).map((child, i) => (
+            <TreeNode
+              key={child.node_id}
+              node={child}
+              depth={0}
+              expanded={expanded}
+              onToggle={onToggle}
+              selected={selected}
+              onSelect={onSelect}
+              siblingIndex={i}
+            />
+          ))}
+        </div>
+      )}
+    </>
+  )
+}
+
+/* ------------------------------------------------------------------ */
+/*  Right panel — article list for selected node                       */
+/* ------------------------------------------------------------------ */
+
+interface ArticlesPanelProps {
+  selectedNodeId: string | null
+  selectedNodeName: string | null
+  articles: AdminArticle[]
+  totalInTree: number
+  filter: StatusFilter
+  onFilterChange: (f: StatusFilter) => void
+}
+
+type StatusFilter = 'all' | 'published' | 'draft' | 'review'
 const STATUS_TABS: { key: StatusFilter; label: string }[] = [
   { key: 'all', label: 'All' },
   { key: 'published', label: 'Published' },
@@ -147,92 +279,357 @@ const STATUS_TABS: { key: StatusFilter; label: string }[] = [
   { key: 'review', label: 'Review' },
 ]
 
-const StatusTabs = ({ articles, active, onChange }: StatusTabsProps) => {
-  const counts: Record<StatusFilter, number> = {
-    all: articles.length,
-    published: articles.filter((a) => a.status === 'published').length,
-    draft: articles.filter((a) => !a.status || a.status === 'draft').length,
-    review: articles.filter((a) => a.status === 'review').length,
+const ArticlesPanel = ({
+  selectedNodeId,
+  selectedNodeName,
+  articles,
+  totalInTree,
+  filter,
+  onFilterChange,
+}: ArticlesPanelProps) => {
+  const router = useRouter()
+  const [search, setSearch] = useState('')
+
+  const filtered = useMemo(() => {
+    let list = articles
+    if (filter !== 'all') {
+      list = list.filter((a) => {
+        if (filter === 'published') return a.status === 'published'
+        if (filter === 'review') return a.status === 'review'
+        return !a.status || a.status === 'draft'
+      })
+    }
+    if (search.trim()) {
+      const q = search.toLowerCase()
+      list = list.filter((a) => a.title.toLowerCase().includes(q))
+    }
+    return list
+  }, [articles, filter, search])
+
+  const counts = useMemo(
+    () => ({
+      all: articles.length,
+      published: articles.filter((a) => a.status === 'published').length,
+      draft: articles.filter((a) => !a.status || a.status === 'draft').length,
+      review: articles.filter((a) => a.status === 'review').length,
+    }),
+    [articles],
+  )
+
+  if (!selectedNodeId) {
+    return (
+      <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div className="w-12 h-12 rounded-md bg-muted flex items-center justify-center mb-3">
+          <BookOpen className="w-6 h-6 text-muted-foreground" />
+        </div>
+        <p className="text-sm font-medium text-text-primary mb-1">Select a node</p>
+        <p className="text-xs text-text-tertiary max-w-xs">
+          Click any subject, subtopic, or article group in the taxonomy tree on the left to view
+          its articles here.
+        </p>
+        <p className="mt-4 font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary">
+          {totalInTree} articles total in this discipline
+        </p>
+      </div>
+    )
   }
 
   return (
-    <div className="flex items-center gap-0 border-b border-border">
-      {STATUS_TABS.map((tab) => (
-        <button
-          key={tab.key}
-          type="button"
-          onClick={() => onChange(tab.key)}
-          className={`px-4 py-2 text-xs font-medium transition-colors duration-150 border-b-2 -mb-px ${
-            active === tab.key
-              ? 'border-camp-cobalt text-camp-cobalt'
-              : 'border-transparent text-text-secondary hover:text-text-primary'
-          }`}
-        >
-          {tab.label}
-          <span
-            className={`ml-1.5 font-mono text-[11px] ${
-              active === tab.key ? 'text-camp-cobalt' : 'text-text-tertiary'
-            }`}
-          >
-            ({counts[tab.key]})
-          </span>
-        </button>
-      ))}
+    <div className="flex-1 h-full flex flex-col overflow-hidden">
+      {/* Panel header */}
+      <div className="px-4 pt-4 pb-0 shrink-0">
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <div>
+            <h2 className="text-sm font-semibold text-text-primary truncate">
+              {stripNumberPrefix(selectedNodeName ?? '')}
+            </h2>
+            <p className="text-[11px] text-text-tertiary mt-0.5">
+              {articles.length} article{articles.length !== 1 ? 's' : ''}
+            </p>
+          </div>
+          <Link href="/admin/articles/new">
+            <Button size="sm" className="shrink-0">
+              <PlusCircle className="w-3.5 h-3.5 mr-1.5" />
+              New Article
+            </Button>
+          </Link>
+        </div>
+
+        {/* Search */}
+        <div className="relative mb-3">
+          <MagnifyingGlass className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground pointer-events-none" />
+          <input
+            type="text"
+            placeholder="Search articles…"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full pl-8 pr-3 py-1.5 text-xs bg-muted border border-border rounded-sm focus:outline-none focus:ring-1 focus:ring-primary/40 placeholder:text-muted-foreground"
+          />
+        </div>
+
+        {/* Status tabs */}
+        <div className="flex border-b border-border">
+          {STATUS_TABS.map((tab) => (
+            <button
+              key={tab.key}
+              type="button"
+              onClick={() => onFilterChange(tab.key)}
+              className={cn(
+                'px-3 py-1.5 text-xs font-medium transition-colors duration-150 border-b-2 -mb-px',
+                filter === tab.key
+                  ? 'border-camp-cobalt text-camp-cobalt'
+                  : 'border-transparent text-text-secondary hover:text-text-primary',
+              )}
+            >
+              {tab.label}
+              <span
+                className={cn(
+                  'ml-1 font-[family-name:var(--font-dm-mono)] text-[11px]',
+                  filter === tab.key ? 'text-camp-cobalt' : 'text-text-tertiary',
+                )}
+              >
+                ({counts[tab.key]})
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Article list */}
+      <div className="flex-1 overflow-y-auto">
+        {filtered.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-16 text-center px-6">
+            <p className="text-sm text-text-secondary font-medium mb-1">No articles found</p>
+            <p className="text-xs text-text-tertiary">
+              {search ? 'Try a different search term' : 'No articles match this filter'}
+            </p>
+          </div>
+        ) : (
+          <div className="divide-y divide-border">
+            {filtered.map((article) => (
+              <ArticleRow key={article.article_id} article={article} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
 
 /* ------------------------------------------------------------------ */
-/*  Component                                                          */
+/*  Main component                                                     */
 /* ------------------------------------------------------------------ */
 
-export const ArticlesClient = ({ articles }: ArticlesClientProps) => {
+export const ArticlesClient = ({
+  disciplines,
+  treeByDiscipline,
+  unmappedArticles,
+}: ArticlesClientProps) => {
   const router = useRouter()
+  const [activeDisciplineId, setActiveDisciplineId] = useState<string | null>(
+    disciplines[0]?.discipline_id ?? null,
+  )
+  const [expanded, setExpanded] = useState<Set<string>>(new Set())
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null)
+  const [selectedNodeName, setSelectedNodeName] = useState<string | null>(null)
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
 
-  const handleRowClick = (row: Article) => {
-    router.push(`/admin/articles/${row.article_id}`)
-  }
+  const currentTree = activeDisciplineId ? (treeByDiscipline[activeDisciplineId] ?? []) : []
 
-  const filteredArticles = articles.filter((a) => {
-    if (statusFilter === 'all') return true
-    if (statusFilter === 'published') return a.status === 'published'
-    if (statusFilter === 'review') return a.status === 'review'
-    return !a.status || a.status === 'draft'
-  })
+  // Collect all articles under the selected node (recursively)
+  const selectedArticles = useMemo(() => {
+    if (!selectedNodeId) return []
+
+    // Special case: "unmapped" pseudo-node
+    if (selectedNodeId === '__unmapped__') return unmappedArticles
+
+    // Walk the tree to find the selected node
+    const findNode = (nodes: AdminTaxonomyNode[]): AdminTaxonomyNode | null => {
+      for (const n of nodes) {
+        if (n.node_id === selectedNodeId) return n
+        const found = findNode(n.children ?? [])
+        if (found) return found
+      }
+      return null
+    }
+    const node = findNode(currentTree)
+    if (!node) return []
+    const ids = collectArticleIds(node)
+    // Deduplicate
+    const seen = new Set<string>()
+    const result: AdminArticle[] = []
+    for (const id of ids) {
+      if (seen.has(id)) continue
+      seen.add(id)
+      const article = (node.articles ?? []).find((a) => a.article_id === id)
+        ?? findArticleById(currentTree, id)
+      if (article) result.push(article)
+    }
+    return result
+  }, [selectedNodeId, currentTree, unmappedArticles])
+
+  // Count total articles in current tree
+  const totalInTree = useMemo(() => {
+    const count = (nodes: AdminTaxonomyNode[]): number =>
+      nodes.reduce((s, n) => s + (n.articles?.length ?? 0) + count(n.children ?? []), 0)
+    return count(currentTree)
+  }, [currentTree])
+
+  const onToggle = useCallback((id: string) => {
+    setExpanded((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }, [])
+
+  const onSelect = useCallback((id: string, name: string, node?: AdminTaxonomyNode) => {
+    // Level-3 leaf with exactly 1 article → navigate straight to editor
+    if (node && node.level >= 3 && (node.articles?.length ?? 0) === 1) {
+      router.push(`/admin/articles/${node.articles![0].article_id}`)
+      return
+    }
+    setSelectedNodeId(id)
+    setSelectedNodeName(name)
+    setStatusFilter('all')
+  }, [router])
 
   return (
-    <div className="space-y-6">
-      <PageHeader
-        title="Articles"
-        subtitle="Manage knowledge base content"
-        actions={
-          <Link href="/admin/articles/new">
-            <Button size="sm">New Article</Button>
-          </Link>
-        }
-      />
-
-      <div className="space-y-0">
-        <StatusTabs
-          articles={articles}
-          active={statusFilter}
-          onChange={setStatusFilter}
+    <div className="flex flex-col gap-4">
+      {/* Top header */}
+      <div className="shrink-0">
+        <PageHeader
+          title="Articles"
+          subtitle="Manage knowledge base content"
+          actions={
+            <Link href="/admin/articles/new">
+              <Button size="sm">New Article</Button>
+            </Link>
+          }
         />
+      </div>
 
-        <DataTable
-          columns={columns}
-          data={filteredArticles}
-          keyField="article_id"
-          searchable
-          searchPlaceholder="Search articles..."
-          searchFields={['title']}
-          pageSize={50}
-          onRowClick={handleRowClick}
-          emptyMessage="No articles yet"
-          defaultSort={{ key: 'updated_at', direction: 'desc' }}
+      {/* Discipline tabs */}
+      {disciplines.length > 1 && (
+        <div className="flex gap-0 border-b border-border shrink-0 mb-0">
+          {disciplines.map((d) => (
+            <button
+              key={d.discipline_id}
+              type="button"
+              onClick={() => {
+                setActiveDisciplineId(d.discipline_id)
+                setSelectedNodeId(null)
+                setSelectedNodeName(null)
+                setExpanded(new Set())
+              }}
+              className={cn(
+                'px-4 py-2 text-xs font-medium transition-colors duration-150 border-b-2 -mb-px',
+                activeDisciplineId === d.discipline_id
+                  ? 'border-camp-cobalt text-camp-cobalt'
+                  : 'border-transparent text-text-secondary hover:text-text-primary',
+              )}
+            >
+              {d.acronym ?? d.name}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Two-panel layout */}
+      <div className="flex border border-border rounded-md overflow-hidden bg-white" style={{ height: 'calc(100vh - 12rem)' }}>
+        {/* Left: taxonomy tree */}
+        <aside className="w-72 shrink-0 border-r border-border flex flex-col bg-background h-full">
+          <div className="px-3 py-2.5 border-b border-border shrink-0 flex items-center gap-1.5">
+            <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-text-2">
+              Syllabus
+            </span>
+            <span className="ml-auto font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary tabular-nums">
+              {totalInTree} articles
+            </span>
+          </div>
+
+          <nav className="flex-1 overflow-y-auto py-1" aria-label="Taxonomy tree">
+            {currentTree.length === 0 ? (
+              <p className="text-xs text-text-tertiary text-center py-8">No taxonomy data</p>
+            ) : (
+              currentTree.map((node, i) => (
+                <TreeNode
+                  key={node.node_id}
+                  node={node}
+                  depth={0}
+                  expanded={expanded}
+                  onToggle={onToggle}
+                  selected={selectedNodeId}
+                  onSelect={(id, name, clickedNode) =>
+                    onSelect(
+                      id,
+                      node.node_id === id ? node.name : (findNodeName(node, id) ?? name),
+                      clickedNode,
+                    )
+                  }
+                  siblingIndex={i}
+                />
+              ))
+            )}
+
+            {/* Unmapped articles */}
+            {unmappedArticles.length > 0 && (
+              <div className="mt-3 border-t border-border pt-2">
+                <div
+                  className={cn(
+                    'flex items-center gap-1.5 px-2.5 py-1.5 mx-1 rounded-sm cursor-pointer transition-colors duration-100',
+                    selectedNodeId === '__unmapped__'
+                      ? 'bg-primary/10 text-primary'
+                      : 'hover:bg-muted text-amber-600',
+                  )}
+                  onClick={() => onSelect('__unmapped__', 'Unmapped Articles')}
+                >
+                  <WarningCircle className="w-3.5 h-3.5 shrink-0" />
+                  <span className="text-xs font-medium flex-1">Unmapped Articles</span>
+                  <span className="font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums">
+                    {unmappedArticles.length}
+                  </span>
+                </div>
+              </div>
+            )}
+          </nav>
+        </aside>
+
+        {/* Right: article panel */}
+        <ArticlesPanel
+          selectedNodeId={selectedNodeId}
+          selectedNodeName={selectedNodeName}
+          articles={selectedArticles}
+          totalInTree={totalInTree}
+          filter={statusFilter}
+          onFilterChange={setStatusFilter}
         />
       </div>
     </div>
   )
+}
+
+/* ------------------------------------------------------------------ */
+/*  Tree-walking helpers                                               */
+/* ------------------------------------------------------------------ */
+
+const findArticleById = (nodes: AdminTaxonomyNode[], id: string): AdminArticle | undefined => {
+  for (const n of nodes) {
+    const found = (n.articles ?? []).find((a) => a.article_id === id)
+    if (found) return found
+    const deep = findArticleById(n.children ?? [], id)
+    if (deep) return deep
+  }
+  return undefined
+}
+
+const findNodeName = (root: AdminTaxonomyNode, targetId: string): string | null => {
+  if (root.node_id === targetId) return root.name
+  for (const child of root.children ?? []) {
+    const found = findNodeName(child, targetId)
+    if (found) return found
+  }
+  return null
 }

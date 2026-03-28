@@ -5,6 +5,7 @@ import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
+  TooltipProvider,
 } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
 
@@ -118,14 +119,16 @@ export const SidebarFooter = ({
     >
       {/* Profile row — with tooltip when collapsed */}
       {!expanded ? (
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <div className="w-full">{profileRow}</div>
-          </TooltipTrigger>
-          <TooltipContent side="right" sideOffset={8}>
-            {userDisplay.name}
-          </TooltipContent>
-        </Tooltip>
+        <TooltipProvider delay={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className="w-full">{profileRow}</div>
+            </TooltipTrigger>
+            <TooltipContent side="right" sideOffset={8}>
+              {userDisplay.name}
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       ) : (
         profileRow
       )}
