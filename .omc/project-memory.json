@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774497736549,
-  "projectRoot": "D:\\SlateCamp\\slate-camp",
+  "lastScanned": 1774625494138,
+  "projectRoot": "d:\\SlateCamp\\slate-camp",
   "techStack": {
     "languages": [
       {
@@ -80,11 +80,24 @@
   },
   "customNotes": [],
   "directoryMap": {
+    "Design Questions": {
+      "path": "Design Questions",
+      "purpose": null,
+      "fileCount": 12,
+      "lastAccessed": 1774625494112,
+      "keyFiles": [
+        "DESIGN-001-R1-residence.json",
+        "DESIGN-002-R2-duplex.json",
+        "DESIGN-003-C2-office.json",
+        "DESIGN-004-GI-school.json",
+        "DESIGN-005-I1-industrial.json"
+      ]
+    },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774497736530,
+      "lastAccessed": 1774625494113,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -93,14 +106,14 @@
       "path": "prompts",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1774497736531,
+      "lastAccessed": 1774625494122,
       "keyFiles": []
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
       "fileCount": 8,
-      "lastAccessed": 1774497736536,
+      "lastAccessed": 1774625494123,
       "keyFiles": [
         "AGENTS.md",
         "file.svg",
@@ -113,7 +126,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 5,
-      "lastAccessed": 1774497736537,
+      "lastAccessed": 1774625494123,
       "keyFiles": [
         "AGENTS.md",
         "db-inspect.ts",
@@ -126,7 +139,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 1,
-      "lastAccessed": 1774497736537,
+      "lastAccessed": 1774625494123,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -135,7 +148,7 @@
       "path": "supabase",
       "purpose": null,
       "fileCount": 5,
-      "lastAccessed": 1774497736537,
+      "lastAccessed": 1774625494124,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -148,7 +161,7 @@
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1774497736538,
+      "lastAccessed": 1774625494125,
       "keyFiles": [
         "AGENTS.md",
         "error.tsx",
@@ -159,7 +172,7 @@
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 1,
-      "lastAccessed": 1774497736538,
+      "lastAccessed": 1774625494125,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -168,7 +181,7 @@
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 3,
-      "lastAccessed": 1774497736538,
+      "lastAccessed": 1774625494126,
       "keyFiles": [
         "AGENTS.md",
         "feature-flags.ts",
@@ -179,7 +192,7 @@
       "path": "src\\data",
       "purpose": "Data files",
       "fileCount": 2,
-      "lastAccessed": 1774497736538,
+      "lastAccessed": 1774625494126,
       "keyFiles": [
         "AGENTS.md",
         "mock-questions.json"
@@ -188,8 +201,8 @@
     "src\\lib": {
       "path": "src\\lib",
       "purpose": "Library code",
-      "fileCount": 11,
-      "lastAccessed": 1774497736539,
+      "fileCount": 15,
+      "lastAccessed": 1774625494126,
       "keyFiles": [
         "AGENTS.md",
         "analytics-server.ts",
@@ -199,8 +212,8 @@
     "src\\types": {
       "path": "src\\types",
       "purpose": "Type definitions",
-      "fileCount": 13,
-      "lastAccessed": 1774497736539,
+      "fileCount": 14,
+      "lastAccessed": 1774625494127,
       "keyFiles": [
         "3d-lab.ts",
         "AGENTS.md",
@@ -210,8 +223,8 @@
     "supabase\\migrations": {
       "path": "supabase\\migrations",
       "purpose": "Database migrations",
-      "fileCount": 50,
-      "lastAccessed": 1774497736539,
+      "fileCount": 57,
+      "lastAccessed": 1774625494127,
       "keyFiles": [
         "004_add_user_roles.sql",
         "005_add_wiki_content_status.sql",
@@ -219,307 +232,6 @@
       ]
     }
   },
-  "hotPaths": [
-    {
-      "path": "",
-      "accessCount": 115,
-      "lastAccessed": 1774518260897,
-      "type": "directory"
-    },
-    {
-      "path": "src",
-      "accessCount": 57,
-      "lastAccessed": 1774525714134,
-      "type": "directory"
-    },
-    {
-      "path": "src\\stores\\useQuizStore.ts",
-      "accessCount": 44,
-      "lastAccessed": 1774525318354,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\actions\\dashboard-page.ts",
-      "accessCount": 39,
-      "lastAccessed": 1774517304793,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\supabase\\server.ts",
-      "accessCount": 31,
-      "lastAccessed": 1774517368331,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\wiki\\[slug]\\page.tsx",
-      "accessCount": 20,
-      "lastAccessed": 1774525644517,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\analytics\\page.tsx",
-      "accessCount": 19,
-      "lastAccessed": 1774517823100,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\dashboard\\DashboardLayoutContent.tsx",
-      "accessCount": 15,
-      "lastAccessed": 1774512851489,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\Sidebar.tsx",
-      "accessCount": 14,
-      "lastAccessed": 1774509568564,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\shared\\DashboardHeader.tsx",
-      "accessCount": 12,
-      "lastAccessed": 1774504397701,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\testing\\page.tsx",
-      "accessCount": 12,
-      "lastAccessed": 1774517394896,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\StaminaCurve.tsx",
-      "accessCount": 9,
-      "lastAccessed": 1774517414685,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\SubjectSnapshot.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774514736129,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\ChartCoachingAnnotation.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774517415938,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\KeyValues.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774504955851,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\sidebar-constants.ts",
-      "accessCount": 6,
-      "lastAccessed": 1774509574666,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\ReadinessTrajectory.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1774517416655,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\mdx-components-shared.ts",
-      "accessCount": 5,
-      "lastAccessed": 1774498347995,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\Notifications\\notifications-header-implementation-plan.md",
-      "accessCount": 5,
-      "lastAccessed": 1774500715520,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiArticle.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774517105133,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\index.ts",
-      "accessCount": 5,
-      "lastAccessed": 1774517343002,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\PacingQuadrant.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774517415583,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\quiz\\[mode]\\session\\[sessionId]\\page.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1774517895484,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\Notifications\\notifications-ux-design.md",
-      "accessCount": 4,
-      "lastAccessed": 1774500711279,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\supabase\\bootstrap.ts",
-      "accessCount": 4,
-      "lastAccessed": 1774506123180,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\Callout.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774514685813,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiArticleHero.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774514724551,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiContentShell.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1774514772426,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\actions\\cached-queries.ts",
-      "accessCount": 4,
-      "lastAccessed": 1774517153177,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\ui\\popover.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774503362043,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774506100950,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\layout.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774512761262,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\PacingInsights.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774517416893,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\StaminaSection.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1774517438061,
-      "type": "file"
-    },
-    {
-      "path": "C:\\Users\\Philip Lewis\\.claude\\plans\\quirky-yawning-robin.md",
-      "accessCount": 2,
-      "lastAccessed": 1774499064274,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\graphics\\icons\\Icon.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774500828846,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\SidebarNavItem.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1774512686426,
-      "type": "file"
-    },
-    {
-      "path": "src\\app",
-      "accessCount": 2,
-      "lastAccessed": 1774517210590,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiCallout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498132108,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiCalloutBox.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498132141,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiArticleHeader.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498139351,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\WikiPartHeader.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498139596,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\wiki\\GenericBlock.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498139764,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\loading.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774498211517,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d\\Workspace.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774499685889,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\quiz\\layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774499902812,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\analytics\\PacingInsightsSection.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774500052602,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\sidebar\\MobileDrawer.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774500277738,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\shared\\Omnibar.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1774500756439,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\utils.ts",
-      "accessCount": 1,
-      "lastAccessed": 1774500773402,
-      "type": "file"
-    }
-  ],
+  "hotPaths": [],
   "userDirectives": []
 }
