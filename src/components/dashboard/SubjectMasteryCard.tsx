@@ -123,7 +123,7 @@ const describeArc = (
 
 // ── Radial Heatmap ───────────────────────────────────────────────────────────
 
-const RINGS = 10
+const RINGS = 20
 const GAP_DEG = 3
 const INNER_RADIUS = 16
 const OUTER_RADIUS = 88
@@ -180,7 +180,7 @@ const RadialHeatmap = ({
           >
             {Array.from({ length: RINGS }).map((_, ring) => {
               const innerR = INNER_RADIUS + ring * ringWidth
-              const outerR = innerR + ringWidth - 0.6
+              const outerR = innerR + ringWidth - 0.4
               return (
                 <path
                   key={`bg-${ring}`}
@@ -194,7 +194,7 @@ const RadialHeatmap = ({
             {Array.from({ length: RINGS }).map((_, ring) => {
               if (ring >= filledRings) return null
               const innerR = INNER_RADIUS + ring * ringWidth
-              const outerR = innerR + ringWidth - 0.6
+              const outerR = innerR + ringWidth - 0.4
               const bandPct = ((ring + 1) / RINGS) * 100
               const color = getRingColor(bandPct)
 

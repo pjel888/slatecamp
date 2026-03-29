@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { extractHeadings } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
@@ -304,13 +304,12 @@ const MDXContent = async ({
   components: ReturnType<typeof buildMdxComponents>
 }) => {
   try {
-    return (
-      <MDXRemote
-        source={source}
-        components={components}
-        options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-      />
-    )
+    const { content } = await compileMDX({
+      source,
+      components,
+      options: { mdxOptions: { remarkPlugins: [remarkGfm] } },
+    })
+    return <>{content}</>
   } catch {
     // MDX compilation failed (e.g. tags starting with numbers like <1st>, <100mm>).
     // Show the raw content as plain text so the article is still readable.

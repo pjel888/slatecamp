@@ -2,6 +2,7 @@
 
 import { useEffect, useCallback } from 'react'
 import Link from 'next/link'
+import { ArrowLeft, PencilSimple, CircleDashed, Clock, CheckCircle } from '@phosphor-icons/react/dist/ssr'
 import { useDirtyState } from './DirtyStateProvider'
 import {
   Select,
@@ -11,6 +12,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 // ─── Props ───────────────────────────────────────────────────
 
@@ -29,13 +31,25 @@ interface ContentBarProps {
 
 // ─── Helpers ─────────────────────────────────────────────────
 
-const STATUS_STYLES: Record<string, string> = {
-  draft: 'bg-warning-50 text-warning',
-  review: 'bg-warning-50 text-warning',
-  published: 'bg-success-50 text-emerald',
+const STATUS_CONFIG: Record<string, { label: string; icon: React.ReactNode; colorClass: string }> = {
+  draft: { 
+    label: 'Draft', 
+    icon: <CircleDashed className="w-3.5 h-3.5" />, 
+    colorClass: 'bg-muted text-text-secondary border border-border' 
+  },
+  review: { 
+    label: 'In Review', 
+    icon: <Clock className="w-3.5 h-3.5" />, 
+    colorClass: 'bg-warning-50 text-warning border border-warning/30' 
+  },
+  published: { 
+    label: 'Published', 
+    icon: <CheckCircle className="w-3.5 h-3.5" weight="fill" />, 
+    colorClass: 'bg-success-50 text-emerald border border-emerald/30' 
+  },
 }
 
-const Divider = () => <div className="h-4 w-px bg-border" />
+const Divider = () => <div className="h-5 w-px bg-border/60 mx-1" />
 
 const dispatchSave = () => {
   window.dispatchEvent(new CustomEvent('unified-editor:save'))
@@ -70,32 +84,38 @@ export const ContentBar = ({
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [handleKeyDown])
 
+  const currentStatus = STATUS_CONFIG[status] || STATUS_CONFIG.draft
+
   return (
     <div className="sticky top-0 z-30 flex h-16 w-full shrink-0 items-center gap-3 border-b border-border bg-white px-4">
       {/* 1. Back link */}
       <Link
         href="/admin/articles"
-        className="whitespace-nowrap text-xs text-text-secondary transition-colors duration-150 ease-out hover:text-text-primary"
+        className="flex items-center justify-center w-8 h-8 rounded-md text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors"
+        title="Back to Articles"
       >
-        &larr; Back to Articles
+        <ArrowLeft className="w-4 h-4" />
       </Link>
 
       <Divider />
 
       {/* 3. Title inline input */}
-      <input
-        type="text"
-        value={title}
-        onChange={(e) => onTitleChange(e.target.value)}
-        placeholder="Article title..."
-        className="min-w-0 flex-1 truncate border-0 bg-transparent text-sm font-semibold text-text-primary outline-none ring-0 transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:ring-1 focus:ring-camp-cobalt/30"
-      />
+      <div className="flex-1 min-w-0 pr-4 group relative flex items-center">
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => onTitleChange(e.target.value)}
+          placeholder="Untitled Article..."
+          className="w-full bg-transparent text-[17px] font-bold text-text-primary placeholder:text-text-tertiary focus:outline-none border-b border-transparent focus:border-border transition-colors truncate pb-0.5"
+        />
+        <PencilSimple className="w-4 h-4 text-text-tertiary absolute right-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+      </div>
 
       <Divider />
 
       {/* 5. ALE ID badge */}
       {aleId ? (
-        <span className="whitespace-nowrap font-mono text-[11px] text-text-tertiary">
+        <span className="whitespace-nowrap font-mono text-[11px] text-text-tertiary" title="Linked Subject Node">
           {aleId}
         </span>
       ) : (
@@ -104,61 +124,66 @@ export const ContentBar = ({
         </span>
       )}
 
+      {/* 11. Questions count */}
+      <span className="whitespace-nowrap font-[family-name:var(--font-dm-mono)] text-[11px] text-text-tertiary px-2 tabular-nums" title="Questions & Assessments">
+        {questionsCount} Qs
+      </span>
+
       <Divider />
 
       {/* 7. Status dropdown */}
       <Select value={status} onValueChange={onStatusChange}>
         <SelectTrigger
-          size="sm"
-          className={`border-0 font-medium ${STATUS_STYLES[status] ?? STATUS_STYLES.draft}`}
+          className={cn(
+            'h-8 space-x-2 px-3 text-xs font-semibold focus:ring-0 rounded-full shadow-none',
+            currentStatus.colorClass
+          )}
         >
-          <SelectValue />
+          <div className="flex items-center gap-1.5">
+            {currentStatus.icon}
+            <span>{currentStatus.label}</span>
+          </div>
         </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="draft">Draft</SelectItem>
-          <SelectItem value="review">Review</SelectItem>
-          <SelectItem value="published">Published</SelectItem>
+        <SelectContent align="end" sideOffset={4} alignItemWithTrigger={false}>
+          {Object.entries(STATUS_CONFIG).map(([key, config]) => (
+            <SelectItem key={key} value={key}>
+              <div className="flex items-center gap-2">
+                {config.icon}
+                <span>{config.label}</span>
+              </div>
+            </SelectItem>
+          ))}
         </SelectContent>
       </Select>
 
-      <Divider />
-
       {/* 9. Difficulty dropdown */}
       <Select value={difficultyLabel} onValueChange={onDifficultyLabelChange}>
-        <SelectTrigger size="sm">
+        <SelectTrigger className="h-8 w-[120px] text-xs focus:ring-0 bg-surface-light border-border">
           <SelectValue placeholder="No difficulty" />
         </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="">No difficulty</SelectItem>
+        <SelectContent align="end" sideOffset={4} alignItemWithTrigger={false}>
+          <SelectItem value="none">
+            <span className="text-text-secondary">No difficulty</span>
+          </SelectItem>
           <SelectItem value="Foundational">Foundational</SelectItem>
           <SelectItem value="Intermediate">Intermediate</SelectItem>
           <SelectItem value="Advanced">Advanced</SelectItem>
         </SelectContent>
       </Select>
 
-      <Divider />
-
-      {/* 11. Questions count */}
-      <span className="whitespace-nowrap text-xs text-text-tertiary">
-        {questionsCount} question{questionsCount !== 1 ? 's' : ''}
-      </span>
-
       {/* 12. Unsaved indicator */}
       {dirty.isAnythingDirty && (
-        <span className="flex items-center gap-1 whitespace-nowrap text-xs text-warning">
-          <span aria-hidden="true">&#9679;</span>
-          Unsaved changes
+        <span className="flex items-center shrink-0 ml-1">
+          <span className="w-2 h-2 rounded-full bg-warning animate-pulse" title="Unsaved changes" />
         </span>
       )}
 
-      {/* 13. Flexible spacer */}
-      <div className="flex-1" />
-
       {/* 14. Discard button */}
       <Button
-        variant="secondary"
+        variant="ghost"
         size="sm"
         onClick={() => window.location.reload()}
+        className="ml-2 h-8 text-xs px-3 text-text-secondary hover:text-text-primary"
       >
         Discard
       </Button>
@@ -168,9 +193,9 @@ export const ContentBar = ({
         size="sm"
         onClick={dispatchSave}
         disabled={isSaving}
-        loading={isSaving}
+        className="h-8 px-4 text-xs font-semibold shadow-sm"
       >
-        Save All
+        {isSaving ? 'Saving...' : 'Save All'}
       </Button>
     </div>
   )

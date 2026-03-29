@@ -433,11 +433,40 @@ export const ArticlesClient = ({
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null)
   const [selectedNodeName, setSelectedNodeName] = useState<string | null>(null)
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
+  const [globalSearch, setGlobalSearch] = useState('')
 
   const currentTree = activeDisciplineId ? (treeByDiscipline[activeDisciplineId] ?? []) : []
 
-  // Collect all articles under the selected node (recursively)
+  // Global pool of all articles
+  const allArticles = useMemo(() => {
+    const result: AdminArticle[] = [...unmappedArticles]
+    const seen = new Set<string>()
+    for (const a of unmappedArticles) seen.add(a.article_id)
+    
+    const collect = (nodes: AdminTaxonomyNode[]) => {
+      for (const node of nodes) {
+        for (const a of node.articles ?? []) {
+          if (!seen.has(a.article_id)) {
+            seen.add(a.article_id)
+            result.push(a)
+          }
+        }
+        collect(node.children ?? [])
+      }
+    }
+    for (const dId of Object.keys(treeByDiscipline)) {
+      collect(treeByDiscipline[dId])
+    }
+    return result
+  }, [treeByDiscipline, unmappedArticles])
+
+  // Collect articles for the right panel
   const selectedArticles = useMemo(() => {
+    if (globalSearch.trim()) {
+      const q = globalSearch.toLowerCase()
+      return allArticles.filter((a) => a.title.toLowerCase().includes(q))
+    }
+
     if (!selectedNodeId) return []
 
     // Special case: "unmapped" pseudo-node
@@ -466,7 +495,10 @@ export const ArticlesClient = ({
       if (article) result.push(article)
     }
     return result
-  }, [selectedNodeId, currentTree, unmappedArticles])
+  }, [globalSearch, selectedNodeId, currentTree, unmappedArticles, allArticles])
+
+  const effectiveNodeId = globalSearch.trim() ? '__global__' : selectedNodeId
+  const effectiveNodeName = globalSearch.trim() ? 'Search Results' : selectedNodeName
 
   // Count total articles in current tree
   const totalInTree = useMemo(() => {
@@ -503,9 +535,24 @@ export const ArticlesClient = ({
           title="Articles"
           subtitle="Manage knowledge base content"
           actions={
-            <Link href="/admin/articles/new">
-              <Button size="sm">New Article</Button>
-            </Link>
+            <div className="flex items-center gap-2">
+              <div className="relative w-64">
+                <MagnifyingGlass className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+                <input
+                  type="text"
+                  placeholder="Search globally..."
+                  value={globalSearch}
+                  onChange={(e) => setGlobalSearch(e.target.value)}
+                  className="w-full pl-8 pr-3 py-1.5 text-xs bg-white border border-border rounded-sm focus:outline-none focus:ring-1 focus:ring-primary/40 placeholder:text-muted-foreground"
+                />
+              </div>
+              <Link href="/admin/articles/new">
+                <Button size="sm">
+                  <PlusCircle className="w-3.5 h-3.5 mr-1" />
+                  New Article
+                </Button>
+              </Link>
+            </div>
           }
         />
       </div>
@@ -539,7 +586,7 @@ export const ArticlesClient = ({
       {/* Two-panel layout */}
       <div className="flex border border-border rounded-md overflow-hidden bg-white" style={{ height: 'calc(100vh - 12rem)' }}>
         {/* Left: taxonomy tree */}
-        <aside className="w-72 shrink-0 border-r border-border flex flex-col bg-background h-full">
+        <aside className="w-72 shrink-0 border-r border-border flex flex-col bg-background h-full opacity-100 transition-opacity">
           <div className="px-3 py-2.5 border-b border-border shrink-0 flex items-center gap-1.5">
             <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />
             <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-text-2">
@@ -550,7 +597,7 @@ export const ArticlesClient = ({
             </span>
           </div>
 
-          <nav className="flex-1 overflow-y-auto py-1" aria-label="Taxonomy tree">
+          <nav className={`flex-1 overflow-y-auto py-1 transition-opacity duration-200 ${globalSearch.trim() ? 'opacity-30 pointer-events-none' : 'opacity-100'}`} aria-label="Taxonomy tree">
             {currentTree.length === 0 ? (
               <p className="text-xs text-text-tertiary text-center py-8">No taxonomy data</p>
             ) : (
@@ -599,8 +646,8 @@ export const ArticlesClient = ({
 
         {/* Right: article panel */}
         <ArticlesPanel
-          selectedNodeId={selectedNodeId}
-          selectedNodeName={selectedNodeName}
+          selectedNodeId={effectiveNodeId}
+          selectedNodeName={effectiveNodeName}
           articles={selectedArticles}
           totalInTree={totalInTree}
           filter={statusFilter}
