@@ -34,6 +34,11 @@ export default async function AdminLayout({
 
   const attentionData = await getNeedsAttentionData()
 
+  // If it's the iframe preview route, render without AdminShell
+  if (pathname.startsWith('/admin/preview/')) {
+    return <>{children}</>
+  }
+
   // Full-bleed editor routes get no padding — the editor manages its own layout
   const isFullBleedEditor = /^\/admin\/content\/[^/]+$/.test(pathname)
 

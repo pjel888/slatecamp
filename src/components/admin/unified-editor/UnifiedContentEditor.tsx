@@ -226,6 +226,7 @@ const EditorInner = ({
               editorViewRef={editorViewRef}
               onHeadingsChange={setHeadings}
               articleSlug={initialArticle.slug}
+              articleId={initialArticle.article_id}
               aleTestsYou={aleTestsYou}
               onAleTestsYouChange={(v) => {
                 setAleTestsYou(v)
