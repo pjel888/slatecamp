@@ -61,12 +61,12 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     // Load wiki bookmarks as virtual notes
     getWikiBookmarks().then((bookmarks) => {
       const vNotes: NoteStub[] = bookmarks.map(b => ({
-        id: `virtual_${b.articleId}`,
+        id: `virtual_${b.article_id}`,
         title: b.title,
-        updated_at: b.createdAt,
+        updated_at: b.created_at,
         is_pinned: false,
         note_type: 'standard',
-        article_id: b.articleId,
+        article_id: b.article_id,
         tags: [],
         snippet: 'Bookmarked Wiki Article',
         is_virtual: true,

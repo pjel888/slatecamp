@@ -4,11 +4,12 @@ import {
   getArticleFull,
   getArticleTaxonomyNodes,
   getQuestionsByNodeIds,
+  getQuestionsByArticleId,
   getAllEIPromptsForArticle,
   getTaxonomyNodesInfo,
 } from '@/lib/actions/admin/content'
 import { getTaxonomyNodes } from '@/lib/actions/admin/taxonomy'
-import { UnifiedContentEditor } from '@/components/admin/unified-editor'
+import { ArticleDetailClient } from './ArticleDetailClient'
 
 import type { Metadata } from 'next'
 export const metadata: Metadata = { title: 'Edit Article — SlateCamp Admin' }
@@ -17,14 +18,6 @@ interface PageProps {
   params: Promise<{ id: string }>
 }
 
-/**
- * /admin/articles/[id] — opens the full UnifiedContentEditor.
- *
- * This is the canonical editor entry point reached by clicking any article in
- * the taxonomy tree on /admin/articles. The /admin/content/[id] route resolves
- * identically — both render the same component. We keep both routes so that
- * direct links from either path continue to work.
- */
 const EditArticleFromTreePage = async ({ params }: PageProps) => {
   const authorized = await canManageContent()
   if (!authorized) redirect('/admin')
@@ -41,15 +34,17 @@ const EditArticleFromTreePage = async ({ params }: PageProps) => {
 
   const nodeIds = taxonomyLinks.map((l) => l.node_id)
 
-  const [questions, taxonomyNodesInfo] = await Promise.all([
+  const [questions, taxonomyNodesInfo, articleQuestions] = await Promise.all([
     getQuestionsByNodeIds(nodeIds),
     getTaxonomyNodesInfo(nodeIds),
+    getQuestionsByArticleId(article.article_id),
   ])
 
   return (
-    <UnifiedContentEditor
+    <ArticleDetailClient
       article={article}
       questions={questions}
+      articleQuestions={articleQuestions}
       eiPrompts={eiPrompts}
       taxonomyNodes={allTaxonomyNodes}
       taxonomyLinks={taxonomyLinks}

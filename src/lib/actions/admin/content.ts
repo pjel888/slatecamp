@@ -226,6 +226,112 @@ export const getQuestionsByNodeIds = async (nodeIds: string[]) => {
   }))
 }
 
+/** Get questions directly linked to an article via article_id */
+export const getQuestionsByArticleId = async (articleId: string) => {
+  const supabase = await createClient()
+  const { data, error } = await supabase
+    .from('questions')
+    .select(
+      'question_id, topic_id, article_id, text, options, correct_option_id, rationale, explanation, code_citation, difficulty, difficulty_rating, discrimination_rating, prompt_image_url, model_id, is_assessment, application_context, practice_context, created_at, updated_at'
+    )
+    .eq('article_id', articleId)
+    .order('created_at', { ascending: false })
+
+  if (error) {
+    console.error('Error fetching questions by article ID:', error)
+    return []
+  }
+  return (data || []).map((q) => ({
+    ...q,
+    options: Array.isArray(q.options) ? q.options : [],
+  }))
+}
+
+interface ImportedQuestion {
+  questionStem: string
+  answerOptions: string[]
+  correctOption: string
+  rationale: string
+  extendedExplanation?: string
+  codeCitation?: string
+  difficulty: number
+  diagnosticOnly?: boolean
+  realWorldScenario?: string
+  practiceContext?: string
+  promptImageUrl?: string
+}
+
+/** Transform imported JSON question to database format */
+const transformQuestion = (
+  json: ImportedQuestion,
+  articleId: string,
+  topicId: string
+) => {
+  const optionIds = ['A', 'B', 'C', 'D']
+  const options = json.answerOptions.map((text, idx) => ({
+    id: optionIds[idx],
+    text,
+  }))
+
+  return {
+    text: json.questionStem,
+    options,
+    correct_option_id: json.correctOption,
+    rationale: json.rationale,
+    explanation: json.extendedExplanation || null,
+    code_citation: json.codeCitation || null,
+    difficulty: json.difficulty,
+    is_assessment: json.diagnosticOnly !== true,
+    application_context: json.realWorldScenario || null,
+    practice_context: json.practiceContext ? json.practiceContext.split(',').map(s => s.trim()) : [],
+    prompt_image_url: json.promptImageUrl || null,
+    article_id: articleId,
+    topic_id: topicId,
+  }
+}
+
+/** Batch import questions from JSON for a specific article */
+export const importQuestionsForArticle = async (
+  articleId: string,
+  topicId: string,
+  questionsJson: string
+) => {
+  const authorized = await canManageContent()
+  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+
+  let parsedQuestions: ImportedQuestion[]
+  try {
+    parsedQuestions = JSON.parse(questionsJson)
+  } catch {
+    return { error: new Error('Invalid JSON format'), importedCount: 0 }
+  }
+
+  if (!Array.isArray(parsedQuestions)) {
+    return { error: new Error('JSON must be an array of questions'), importedCount: 0 }
+  }
+
+  const transformedQuestions = parsedQuestions.map(q =>
+    transformQuestion(q, articleId, topicId)
+  )
+
+  const supabase = createAdminClient()
+  const { data, error } = await supabase
+    .from('questions')
+    .insert(transformedQuestions)
+    .select('question_id')
+
+  if (error) {
+    console.error('Error importing questions:', error)
+    return { error, importedCount: 0 }
+  }
+
+  revalidatePath('/admin/articles')
+  revalidatePath(`/admin/articles/${articleId}`)
+  revalidatePath('/admin/content')
+
+  return { error: null, importedCount: data?.length || 0 }
+}
+
 /** Get info for a single taxonomy node */
 export const getTaxonomyNodeInfo = async (nodeId: string) => {
   const supabase = await createClient()

@@ -13,6 +13,7 @@ import type { QuestionForClient } from '@/types/quiz-config'
 interface WikiQuizModalProps {
   nodeId: string
   topicName: string
+  articleSlug?: string
   onClose: () => void
 }
 
@@ -42,7 +43,7 @@ const GATED_DELAY_MS = 2000
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export const WikiQuizModal = ({ nodeId, topicName, onClose }: WikiQuizModalProps) => {
+export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQuizModalProps) => {
   const [status, setStatus] = useState<'loading' | 'empty' | 'question' | 'feedback' | 'results'>('loading')
   const [questions, setQuestions] = useState<QuestionForClient[]>([])
   const [sessionId, setSessionId] = useState<string | null>(null)
@@ -124,7 +125,7 @@ export const WikiQuizModal = ({ nodeId, topicName, onClose }: WikiQuizModalProps
           setStatus('empty')
           return
         }
-        const result = await getWikiQuizQuestions(nodeId)
+        const result = await getWikiQuizQuestions(nodeId, articleSlug)
         if (cancelled) return
         if (result.questions.length === 0) {
           setStatus('empty')

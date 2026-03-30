@@ -8,12 +8,14 @@ import {
   PlusCircle,
   WarningCircle,
   MagnifyingGlass,
+  Trash,
 } from '@phosphor-icons/react/dist/ssr'
 import { PageHeader } from '@/components/shared/page-header'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
+import { DeleteArticleModal } from '@/components/admin/DeleteArticleModal'
 import type {
   AdminArticle,
   AdminTaxonomyNode,
@@ -50,7 +52,12 @@ const collectArticleIds = (node: AdminTaxonomyNode): string[] => {
 /*  Article row                                                        */
 /* ------------------------------------------------------------------ */
 
-const ArticleRow = ({ article }: { article: AdminArticle }) => {
+interface ArticleRowProps {
+  article: AdminArticle
+  onDelete: (article: AdminArticle) => void
+}
+
+const ArticleRow = ({ article, onDelete }: ArticleRowProps) => {
   const router = useRouter()
   const words = computeWordCount(article.content)
   const status = article.status ?? 'draft'
@@ -114,6 +121,16 @@ const ArticleRow = ({ article }: { article: AdminArticle }) => {
             Preview ↗
           </Link>
         )}
+        <button
+          type="button"
+          className="text-[11px] text-destructive hover:text-destructive/80 transition-colors duration-150 whitespace-nowrap"
+          onClick={(e) => {
+            e.stopPropagation()
+            onDelete(article)
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   )
@@ -130,6 +147,7 @@ interface ArticlesPanelProps {
   totalInTree: number
   filter: StatusFilter
   onFilterChange: (f: StatusFilter) => void
+  onDeleteArticle: (article: AdminArticle) => void
 }
 
 type StatusFilter = 'all' | 'published' | 'draft' | 'review'
@@ -147,6 +165,7 @@ const ArticlesPanel = ({
   totalInTree,
   filter,
   onFilterChange,
+  onDeleteArticle,
 }: ArticlesPanelProps) => {
   const [search, setSearch] = useState('')
 
@@ -267,7 +286,7 @@ const ArticlesPanel = ({
         ) : (
           <div className="divide-y divide-border">
             {filtered.map((article) => (
-              <ArticleRow key={article.article_id} article={article} />
+              <ArticleRow key={article.article_id} article={article} onDelete={onDeleteArticle} />
             ))}
           </div>
         )}
@@ -293,6 +312,17 @@ export const ArticlesClient = ({
   const [selectedNodeName, setSelectedNodeName] = useState<string | null>(null)
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
   const [globalSearch, setGlobalSearch] = useState('')
+  const [deleteModalOpen, setDeleteModalOpen] = useState(false)
+  const [articleToDelete, setArticleToDelete] = useState<AdminArticle | null>(null)
+
+  const handleDeleteClick = useCallback((article: AdminArticle) => {
+    setArticleToDelete(article)
+    setDeleteModalOpen(true)
+  }, [])
+
+  const handleDeleteSuccess = useCallback(() => {
+    setArticleToDelete(null)
+  }, [])
 
   const currentTree = useMemo(() => 
     (activeDisciplineId ? (treeByDiscipline[activeDisciplineId] ?? []) : []) as unknown as TaxonomyTreeNode[]
@@ -504,8 +534,18 @@ export const ArticlesClient = ({
           totalInTree={totalInTree}
           filter={statusFilter}
           onFilterChange={setStatusFilter}
+          onDeleteArticle={handleDeleteClick}
         />
       </div>
+
+      {/* Delete confirmation modal */}
+      <DeleteArticleModal
+        open={deleteModalOpen}
+        onOpenChange={setDeleteModalOpen}
+        articleId={articleToDelete?.article_id ?? ''}
+        articleTitle={articleToDelete?.title ?? ''}
+        onSuccess={handleDeleteSuccess}
+      />
     </div>
   )
 }

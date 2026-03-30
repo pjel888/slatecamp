@@ -96,7 +96,7 @@ export const createTaxonomyNode = async (data: {
       sort_order: sortOrder,
       ale_id: parsed.data.level === 3 ? `USER-NEW-${Date.now()}` : null,
     })
-    .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
+    .select('node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
     .single()
 
   if (!error) {

@@ -44,18 +44,20 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
 
   // Map Design Scenario questions to the unified QuestionForClient type for the modal/reused components
   const unifiedQuestions: QuestionForClient[] = useMemo(() => {
-    return scenario.questions.map(q => ({
+    return scenario.questions.map((q, idx) => ({
       question_id: q.question_id,
-      text: q.question_stem,
-      options: (Array.isArray(q.options) ? q.options : []).map((o, idx) => ({
-        id: idx.toString(),
-        letter: String.fromCharCode(65 + idx),
+      position: idx + 1,
+      stem: q.question_stem,
+      image_url: null,
+      image_alt_text: null,
+      taxonomy_breadcrumb: 'Design Scenario',
+      difficulty_label: 'Medium' as const,
+      question_type: 'mcq' as const,
+      options: (Array.isArray(q.options) ? q.options : []).map((o, oIdx) => ({
+        id: oIdx.toString(),
+        letter: String.fromCharCode(65 + oIdx) as 'A' | 'B' | 'C' | 'D',
         text: typeof o === 'string' ? o : o.text
-      })),
-      topic_id: 'design-quiz',
-      difficulty: 0.5,
-      question_number: q.number,
-      question_type: 'mcq'
+      }))
     }))
   }, [scenario.questions])
 
@@ -71,10 +73,12 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
         map.set(q.question_id, {
           selectedOptionId: a.selectedIndex.toString(),
           confidenceLevel: null,
+          isCorrect: a.correct,
           isSkipped: false,
           isFlagged: false,
-          answerChanges: 0,
-          timeSpentMs: 0
+          timeStartedMs: 0,
+          timeSpentMs: 0,
+          submittedAt: null
         })
       }
     })

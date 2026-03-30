@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { getAdminTaxonomyTree } from '@/lib/actions/admin/wiki-queries'
 import { ArticlesClient } from './_components/ArticlesClient'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = { title: 'Articles — SlateCamp Admin' }
 
 const AdminArticlesPage = async () => {

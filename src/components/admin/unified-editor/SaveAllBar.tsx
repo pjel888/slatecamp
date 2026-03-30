@@ -157,6 +157,7 @@ export const SaveAllBar = ({
                 is_correct: o.id === draft.correct_option_id,
               })),
               topic_id: draft.topic_id,
+              article_id: draft.article_id,
               difficulty: draft.difficulty,
               rationale: draft.rationale || undefined,
               code_citation: draft.code_citation || undefined,

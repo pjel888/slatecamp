@@ -15,6 +15,7 @@ import type { SubmitPrequestionResult } from '@/lib/actions/wiki/submit-prequest
 interface PrequestionGateProps {
   topicId: string
   topicName: string
+  articleSlug?: string
   children: ReactNode
   onMissedQuestions?: (questionIds: string[]) => void
 }
@@ -51,6 +52,7 @@ const LETTER_CLASSES = {
 export const PrequestionGate = ({
   topicId,
   topicName,
+  articleSlug,
   children,
   onMissedQuestions,
 }: PrequestionGateProps) => {
@@ -69,7 +71,7 @@ export const PrequestionGate = ({
 
     const load = async () => {
       try {
-        const data = await getPrequestions(topicId)
+        const data = await getPrequestions(topicId, 3, articleSlug)
         if (cancelled) return
 
         if (!data || data.questions.length === 0) {

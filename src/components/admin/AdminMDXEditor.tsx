@@ -333,9 +333,8 @@ export const AdminMDXEditor = ({ article, taxonomyNodes = [] }: AdminMDXEditorPr
       setSaveMsg('Saved')
       setTimeout(() => setSaveMsg(null), 2500)
       router.refresh()
-      if (!article?.article_id && 'data' in result && result.data) {
-        router.push(`/admin/articles/${(result.data as any).article_id}`)
-      }
+      // Redirect to articles list after create
+      router.push('/admin/articles')
     }
   }
 

@@ -85,10 +85,10 @@ export const ArticlePropertiesPanel = ({
   const [collapsed, setCollapsed] = useState(false)
   const [selectedSubjectId, setSelectedSubjectId] = useState<string | null>(null)
 
-  // 1. Get all Subjects (Level 2)
+  // 1. Get all Subjects (Level 1)
   const subjects = useMemo(() => {
     return taxonomyNodes
-      .filter(n => n.level === 2)
+      .filter(n => n.level == 1)
       .sort((a, b) => a.name.localeCompare(b.name))
   }, [taxonomyNodes])
 
@@ -97,9 +97,9 @@ export const ArticlePropertiesPanel = ({
     if (nodeId && taxonomyNodes.length > 0) {
       const currentNode = taxonomyNodes.find(n => n.node_id === nodeId)
       if (currentNode) {
-        if (currentNode.level === 2) {
+        if (currentNode.level == 1) {
           setSelectedSubjectId(currentNode.node_id)
-        } else if (currentNode.level === 3 && currentNode.parent_id) {
+        } else if (currentNode.level == 2 && currentNode.parent_id) {
           setSelectedSubjectId(currentNode.parent_id)
         }
       }
@@ -110,7 +110,7 @@ export const ArticlePropertiesPanel = ({
   const subtopics = useMemo(() => {
     if (!selectedSubjectId) return []
     return taxonomyNodes
-      .filter(n => n.parent_id === selectedSubjectId && n.level === 3)
+      .filter(n => n.parent_id === selectedSubjectId && n.level == 2)
       .sort((a, b) => {
         // Enforce specific sorting
         if (a.name === 'Subject Overview & Strategy') return -1
@@ -168,12 +168,13 @@ export const ArticlePropertiesPanel = ({
               value={selectedSubjectId ?? ''}
               onValueChange={val => {
                 setSelectedSubjectId(val)
-                // If user picks a subject, we can optionally clear the subtopic or set node to subject
                 onFieldChange?.('node_id', val) 
               }}
             >
               <SelectTrigger className="w-full text-[11px] h-8">
-                <SelectValue placeholder="— Pick Subject —" />
+                <SelectValue placeholder="— Pick Subject —">
+                  {selectedSubjectId && subjects.find(s => s.node_id === selectedSubjectId)?.name}
+                </SelectValue>
               </SelectTrigger>
               <SelectContent>
                 {subjects.map(s => (
@@ -196,7 +197,9 @@ export const ArticlePropertiesPanel = ({
               onValueChange={val => onFieldChange?.('node_id', val)}
             >
               <SelectTrigger className={`w-full text-[11px] h-8 ${!nodeId && selectedSubjectId ? 'border-warning/50 bg-warning-50/10' : ''}`}>
-                <SelectValue placeholder={selectedSubjectId ? "— Pick Subtopic —" : "Select subject first"} />
+                <SelectValue placeholder={selectedSubjectId ? "— Pick Subtopic —" : "Select subject first"}>
+                  {nodeId && subtopics.find(st => st.node_id === nodeId)?.name}
+                </SelectValue>
               </SelectTrigger>
               <SelectContent>
                 {subtopics.map(st => (

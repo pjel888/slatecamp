@@ -9,6 +9,7 @@ interface CreateQuestionInput {
   text: string
   options: { text: string; is_correct: boolean }[]
   topic_id: string
+  article_id?: string
   difficulty?: number
   rationale?: string
   code_citation?: string

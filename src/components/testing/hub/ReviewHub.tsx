@@ -1,22 +1,19 @@
 'use client'
 
-import { useMemo, useState, useCallback } from 'react'
+import { useMemo } from 'react'
 import { WelcomeCard } from './WelcomeCard'
 import { SmartSuggestionCard } from './SmartSuggestionCard'
-import { InProgressBanner } from './InProgressBanner'
 import { DoseBanner } from './DoseBanner'
 import { ZoneSection } from './ZoneSection'
 import { SessionsTable } from './SessionsTable'
 import { SRSection } from './SRSection'
 import { SectionHeader } from '@/components/shared/section-header'
 import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
-import { abandonTestingSession } from '@/lib/actions/testing'
 import { getSubjectName } from '@/types/testing'
 import type {
   ModeStats,
   SmartSuggestion,
   SimulationGateStatus,
-  InProgressSessionInfo,
   ModeSource,
 } from '@/types/testing'
 import type {
@@ -35,6 +32,7 @@ interface RawSession {
     isProofSimulation?: boolean
     isEnduranceSession?: boolean
     isBlindspotSession?: boolean
+    articleSlug?: string
   } | null
   status: string
   question_ids: string[] | null
@@ -233,34 +231,6 @@ const computeSimulationGate = (readinessScore: number): SimulationGateStatus => 
   }
 }
 
-/** Convert a raw in-progress session to InProgressSessionInfo */
-const toInProgressSessionInfo = (
-  session: RawSession,
-): InProgressSessionInfo => {
-  const src = session.config?.source ?? 'camp_mode'
-  const labelMap: Record<ModeSource, string> = {
-    camp_mode: 'Camp Mode',
-    chill_mode: 'Chill Mode',
-    subject_mode: 'Subject Mode',
-    focus_review: 'Focus Review',
-    custom_session: 'Custom Session',
-    storm_mode: 'Storm Mode',
-    proof_simulation: 'Full Exam Simulation',
-    extended_practice: 'Design Endurance Training',
-    assessment_quiz: 'Assessment',
-    trail_quiz: 'Trail Quiz',
-    blindspot_queue: 'Focus Review',
-  }
-  return {
-    sessionId: session.session_id,
-    source: src as ModeSource,
-    modeLabel: labelMap[src as ModeSource] ?? 'Study Session',
-    currentIndex: session.current_question_index ?? 0,
-    totalQuestions: session.question_ids?.length ?? 0,
-    startedAt: session.started_at,
-  }
-}
-
 // ─── Progressive disclosure helpers ──────────────────────────────────────────
 
 // All zones always fully visible — no progressive disclosure opacity
@@ -303,19 +273,6 @@ const ReviewHub = ({
     [readinessScore],
   )
 
-  const inProgressInfo = useMemo(
-    () => (inProgressSession ? toInProgressSessionInfo(inProgressSession) : null),
-    [inProgressSession],
-  )
-
-  const [bannerDismissed, setBannerDismissed] = useState(false)
-
-  const handleAbandon = useCallback(async () => {
-    if (!inProgressSession) return
-    setBannerDismissed(true)
-    await abandonTestingSession(inProgressSession.session_id)
-  }, [inProgressSession])
-
   const normalizedTier = (userTier === 'free' ? 'free' : 'pro') as 'free' | 'pro'
 
   const zone1Modes = MODES_BY_ZONE[1].map((key) => MODE_DEFINITIONS[key])
@@ -324,11 +281,6 @@ const ReviewHub = ({
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--background)' }}>
-      {/* In-progress session banner */}
-      {inProgressInfo && !bannerDismissed && (
-        <InProgressBanner session={inProgressInfo} onAbandon={handleAbandon} />
-      )}
-
       <main
         className="mx-auto max-w-[960px] px-6 py-8"
         aria-label="Review and Testing hub"

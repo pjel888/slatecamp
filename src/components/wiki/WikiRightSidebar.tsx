@@ -79,7 +79,7 @@ export function WikiRightSidebar({
     <div className="space-y-0">
       {/* 1. Review CTA — always opens inline quiz modal */}
       <div className="mb-5">
-        <WikiQuizButton nodeId={nodeId ?? ''} topicName={topicName ?? 'This Topic'} />
+        <WikiQuizButton nodeId={nodeId ?? ''} topicName={topicName ?? 'This Topic'} articleSlug={articleSlug} />
       </div>
 
       {/* 1.5 Save to Notes Workspace */}

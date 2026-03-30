@@ -35,6 +35,7 @@ export interface PrequestionPayload {
 export const getPrequestions = async (
   topicId: string,
   count = 3,
+  articleSlug?: string,
 ): Promise<PrequestionPayload | null> => {
   const supabase = await createClient()
   const {
@@ -72,7 +73,11 @@ export const getPrequestions = async (
       user_id: user.id,
       test_mode: 'practice' as const,
       status: 'in_progress' as const,
-      config: { mode: 'prequestion', source: 'wiki_prequestion' },
+      config: { 
+        mode: 'prequestion', 
+        source: 'wiki_prequestion',
+        ...(articleSlug && { articleSlug }),
+      },
       question_ids: questionIds,
       started_at: new Date().toISOString(),
     })

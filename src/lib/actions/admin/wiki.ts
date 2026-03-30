@@ -125,6 +125,40 @@ export async function createWikiArticle(data: {
 
   revalidatePath('/admin/wiki');
   revalidatePath('/admin/articles');
+  revalidatePath('/dashboard/wiki');
 
   return { data: newArticle, error: null };
+}
+
+export async function deleteWikiArticle(id: string) {
+  const authorized = await canManageContent()
+  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+
+  const supabase = createAdminClient()
+
+  // Delete article-taxonomy mappings first (foreign key constraint)
+  const { error: linkError } = await supabase
+    .from('wiki_article_taxonomy')
+    .delete()
+    .eq('article_id', id)
+
+  if (linkError) {
+    throw new Error(`Failed to delete article mappings: ${linkError.message}`)
+  }
+
+  // Delete the article
+  const { error } = await supabase
+    .from('wiki_articles')
+    .delete()
+    .eq('article_id', id)
+
+  if (error) {
+    throw new Error(`Failed to delete article: ${error.message}`)
+  }
+
+  revalidatePath('/admin/wiki')
+  revalidatePath('/admin/articles')
+  revalidatePath('/dashboard/wiki')
+
+  return { error: null }
 }

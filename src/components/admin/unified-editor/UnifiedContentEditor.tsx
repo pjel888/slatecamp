@@ -23,6 +23,7 @@ import type {
 interface UnifiedContentEditorProps {
   article: ArticleData
   questions: QuestionData[]
+  articleQuestions?: QuestionData[]
   eiPrompts: EIPromptData[]
   taxonomyNodes: TaxonomyNodeInfo[]
   taxonomyLinks: TaxonomyLink[]
@@ -33,6 +34,7 @@ interface UnifiedContentEditorProps {
 const EditorInner = ({
   article: initialArticle,
   questions: initialQuestions,
+  articleQuestions: initialArticleQuestions = [],
   eiPrompts: initialEIPrompts,
   taxonomyNodes,
   taxonomyLinks,

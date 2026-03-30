@@ -2,17 +2,33 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog'
+import { abandonTestingSession } from '@/lib/actions/testing'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
+
+interface SessionConfig {
+  mode?: string
+  source?: string
+  articleSlug?: string
+}
 
 interface SessionsTableProps {
   sessions: Array<{
     session_id: string
     test_mode: string
-    config: {
-      mode?: string
-      source?: string
-    } | null
+    config: SessionConfig | null
     status: string
     question_ids: string[] | null
     started_at: string
@@ -59,6 +75,12 @@ const EXAM_MODES = new Set([
   'extended', 'extended_practice',
 ])
 
+// Reading-based modes that should redirect to source articles instead of results
+const READING_MODES = new Set([
+  'article_review',
+  'prequestion',
+])
+
 const PAGE_SIZE = 20
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -99,9 +121,30 @@ const getModeBadgeStyle = (modeKey: string): React.CSSProperties => {
 const getSessionUrl = (session: SessionsTableProps['sessions'][number]): string => {
   const modeKey = getModeKey(session)
   const slug = modeKey.replace(/_/g, '-')
+  
+  // Handle in-progress sessions - always go to quiz session
   if (session.status === 'in_progress') {
     return `/quiz/${slug}/session/${session.session_id}`
   }
+  
+  // Conditional routing for completed sessions
+  // Reading-based modes (article_review, prequestion) should redirect to source articles
+  if (READING_MODES.has(modeKey)) {
+    const articleSlug = session.config?.articleSlug
+    
+    // If article slug exists, redirect to the wiki article
+    if (articleSlug) {
+      return `/dashboard/wiki/${articleSlug}`
+    }
+    
+    // Fallback: No valid article identifier - log warning and route to results
+    // This ensures we don't have broken redirects when article slug is missing
+    console.warn(
+      `[SessionsTable] Missing articleSlug for reading session ${session.session_id} (mode: ${modeKey}). Falling back to results.`
+    )
+  }
+  
+  // Standard modes and fallback for reading modes without article slug
   return `/quiz/${slug}/session/${session.session_id}/results`
 }
 
@@ -150,9 +193,66 @@ const StatusDot = ({ status }: { status: string }) => {
   )
 }
 
-const ActionLink = ({ session }: { session: SessionsTableProps['sessions'][number] }) => {
+const ActionLink = ({ 
+  session, 
+  onAbandon 
+}: { 
+  session: SessionsTableProps['sessions'][number]
+  onAbandon: (sessionId: string) => void
+}) => {
   const url = getSessionUrl(session)
-  const label = session.status === 'in_progress' ? 'Resume' : 'Review'
+  const isInProgress = session.status === 'in_progress'
+
+  if (isInProgress) {
+    return (
+      <div className="flex items-center justify-end gap-2" onClick={(e) => e.stopPropagation()}>
+        <Link
+          href={url}
+          className="text-[12px] font-medium transition-colors duration-150"
+          style={{ color: '#1B3FC4' }}
+        >
+          Resume
+        </Link>
+        <AlertDialog>
+          <AlertDialogTrigger asChild>
+            <Button
+              variant="ghost"
+              size="xs"
+              className="rounded-sm text-[12px] font-medium h-auto py-1 px-2"
+              style={{ color: '#8896A7' }}
+            >
+              Abandon
+            </Button>
+          </AlertDialogTrigger>
+          <AlertDialogContent className="rounded-lg max-w-sm">
+            <AlertDialogHeader>
+              <AlertDialogTitle className="text-[16px] font-semibold" style={{ color: '#1A2332' }}>
+                Abandon this session?
+              </AlertDialogTitle>
+              <AlertDialogDescription
+                className="text-[14px] font-normal leading-relaxed"
+                style={{ color: '#4A5568' }}
+              >
+                Your progress on this session will be lost. Any answers you&apos;ve submitted are already saved to your mastery data.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter className="gap-2">
+              <AlertDialogCancel className="rounded-sm text-[13px]">
+                Keep going
+              </AlertDialogCancel>
+              <AlertDialogAction
+                variant="destructive"
+                className="rounded-sm bg-destructive text-white hover:bg-[#C03C3C] text-[13px]"
+                onClick={() => onAbandon(session.session_id)}
+              >
+                Yes, abandon
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      </div>
+    )
+  }
 
   return (
     <Link
@@ -161,14 +261,20 @@ const ActionLink = ({ session }: { session: SessionsTableProps['sessions'][numbe
       style={{ color: '#1B3FC4' }}
       onClick={(e) => e.stopPropagation()}
     >
-      {label} →
+      Review →
     </Link>
   )
 }
 
 // ─── Desktop table row ────────────────────────────────────────────────────────
 
-const TableRow = ({ session }: { session: SessionsTableProps['sessions'][number] }) => {
+const TableRow = ({ 
+  session, 
+  onAbandon 
+}: { 
+  session: SessionsTableProps['sessions'][number]
+  onAbandon: (sessionId: string) => void
+}) => {
   const modeKey = getModeKey(session)
   const modeLabel = getModeLabel(modeKey)
   const badgeStyle = getModeBadgeStyle(modeKey)
@@ -239,7 +345,7 @@ const TableRow = ({ session }: { session: SessionsTableProps['sessions'][number]
 
       {/* Action */}
       <td className="py-3 pl-3 pr-4 text-right">
-        <ActionLink session={session} />
+        <ActionLink session={session} onAbandon={onAbandon} />
       </td>
     </tr>
   )
@@ -247,7 +353,13 @@ const TableRow = ({ session }: { session: SessionsTableProps['sessions'][number]
 
 // ─── Mobile card ──────────────────────────────────────────────────────────────
 
-const MobileCard = ({ session }: { session: SessionsTableProps['sessions'][number] }) => {
+const MobileCard = ({ 
+  session, 
+  onAbandon 
+}: { 
+  session: SessionsTableProps['sessions'][number]
+  onAbandon: (sessionId: string) => void
+}) => {
   const modeKey = getModeKey(session)
   const modeLabel = getModeLabel(modeKey)
   const badgeStyle = getModeBadgeStyle(modeKey)
@@ -295,7 +407,7 @@ const MobileCard = ({ session }: { session: SessionsTableProps['sessions'][numbe
             </span>
           </div>
         </div>
-        <ActionLink session={session} />
+        <ActionLink session={session} onAbandon={onAbandon} />
       </div>
     </div>
   )
@@ -305,9 +417,21 @@ const MobileCard = ({ session }: { session: SessionsTableProps['sessions'][numbe
 
 const SessionsTable = ({ sessions }: SessionsTableProps) => {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const [localSessions, setLocalSessions] = useState(sessions)
+  const [abandoningId, setAbandoningId] = useState<string | null>(null)
 
-  // Sort newest first (already ordered by updated_at desc from query, but ensure it)
-  const sorted = [...sessions].sort(
+  const handleAbandon = async (sessionId: string) => {
+    setAbandoningId(sessionId)
+    await abandonTestingSession(sessionId)
+    setLocalSessions((prev) =>
+      prev.map((s) =>
+        s.session_id === sessionId ? { ...s, status: 'abandoned' as const } : s
+      )
+    )
+    setAbandoningId(null)
+  }
+
+  const sorted = [...localSessions].sort(
     (a, b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime(),
   )
 
@@ -332,11 +456,11 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
         <table className="w-full border-collapse">
           <thead>
             <tr style={{ backgroundColor: '#F8F7F5' }}>
-              {(['Mode', 'Questions', 'Score', 'Status', 'Date', ''] as const).map((col) => (
+              {(['Mode', 'Questions', 'Score', 'Status', 'Date', 'Actions'] as const).map((col) => (
                 <th
                   key={col}
                   className={`py-2.5 text-left text-[11px] font-medium uppercase tracking-wide ${
-                    col === '' ? 'pl-3 pr-4 text-right' : col === 'Mode' ? 'pl-4 pr-3' : 'px-3'
+                    col === 'Actions' ? 'pl-3 pr-4 text-right' : col === 'Mode' ? 'pl-4 pr-3' : 'px-3'
                   }`}
                   style={{ color: '#8896A7' }}
                 >
@@ -347,7 +471,7 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
           </thead>
           <tbody style={{ backgroundColor: '#FFFFFF' }}>
             {visible.map((session) => (
-              <TableRow key={session.session_id} session={session} />
+              <TableRow key={session.session_id} session={session} onAbandon={handleAbandon} />
             ))}
           </tbody>
         </table>
@@ -356,7 +480,7 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
       {/* Mobile card list */}
       <div className="flex flex-col gap-3 md:hidden">
         {visible.map((session) => (
-          <MobileCard key={session.session_id} session={session} />
+          <MobileCard key={session.session_id} session={session} onAbandon={handleAbandon} />
         ))}
       </div>
 

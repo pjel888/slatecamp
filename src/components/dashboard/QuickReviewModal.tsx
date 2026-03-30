@@ -16,6 +16,7 @@ import type { FeedbackData, QuestionForClient } from '@/types/quiz-config'
 interface QuickReviewModalProps {
   topicId: string
   topicName: string
+  articleSlug?: string
   onClose: () => void
   /** Called when no questions are available — parent can dismiss this topic from the calendar */
   onComplete: () => void
@@ -44,6 +45,7 @@ type Phase = 'loading' | 'questions' | 'summary' | 'empty'
 export const QuickReviewModal = ({
   topicId,
   topicName,
+  articleSlug,
   onClose,
   onComplete,
   onEmpty,
@@ -63,7 +65,7 @@ export const QuickReviewModal = ({
     let cancelled = false
     const load = async () => {
       try {
-        const result = await getPrequestions(topicId, 5)
+        const result = await getPrequestions(topicId, 5, articleSlug)
         if (cancelled) return
         if (!result || result.questions.length === 0) {
           setPhase('empty')

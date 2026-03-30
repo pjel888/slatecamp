@@ -12,7 +12,7 @@ import {
 } from '@/lib/actions/admin/taxonomy'
 
 interface TaxonomyNode {
-  id: string
+  node_id: string
   name: string
   level: number
   subject_area: string | null
@@ -59,7 +59,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
 
     if (!error) {
       setNodes(prev => prev.map(n =>
-        n.id === editingId ? { ...n, name: editingName.trim() } : n
+        n.node_id === editingId ? { ...n, name: editingName.trim() } : n
       ))
     }
 
@@ -108,7 +108,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
     const { error } = await deleteTaxonomyNode(nodeToDelete)
 
     if (!error) {
-      setNodes(prev => prev.filter(n => n.id !== nodeToDelete))
+      setNodes(prev => prev.filter(n => n.node_id !== nodeToDelete))
     }
 
     setNodeToDelete(null)

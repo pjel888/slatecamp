@@ -12,9 +12,10 @@ const WikiQuizModal = lazy(() =>
 interface WikiQuizButtonProps {
   nodeId: string
   topicName: string
+  articleSlug?: string
 }
 
-export const WikiQuizButton = ({ nodeId, topicName }: WikiQuizButtonProps) => {
+export const WikiQuizButton = ({ nodeId, topicName, articleSlug }: WikiQuizButtonProps) => {
   const [open, setOpen] = useState(false)
   console.log('[WikiQuizButton] nodeId:', nodeId, 'topicName:', topicName)
 
@@ -34,6 +35,7 @@ export const WikiQuizButton = ({ nodeId, topicName }: WikiQuizButtonProps) => {
           <WikiQuizModal
             nodeId={nodeId}
             topicName={topicName}
+            articleSlug={articleSlug}
             onClose={() => setOpen(false)}
           />
         </Suspense>

@@ -7,7 +7,7 @@ import {
   getAllEIPromptsForArticle,
   getTaxonomyNodesInfo,
 } from '@/lib/actions/admin/content'
-import { UnifiedContentEditor } from '@/components/admin/unified-editor'
+import { ArticleDetailClient } from '@/app/admin/articles/[id]/ArticleDetailClient'
 
 export const metadata = {
   title: 'Content Editor | SlateCamp Admin',
@@ -25,7 +25,6 @@ const UnifiedEditorPage = async ({ params }: PageProps) => {
   const article = await getArticleFull(id)
   if (!article) notFound()
 
-  // Fetch all related data in parallel
   const [taxonomyLinks, eiPrompts] = await Promise.all([
     getArticleTaxonomyNodes(article.article_id),
     getAllEIPromptsForArticle(article.article_id),
@@ -33,14 +32,13 @@ const UnifiedEditorPage = async ({ params }: PageProps) => {
 
   const nodeIds = taxonomyLinks.map((l) => l.node_id)
 
-  // Fetch questions and node info in parallel
   const [questions, taxonomyNodes] = await Promise.all([
     getQuestionsByNodeIds(nodeIds),
     getTaxonomyNodesInfo(nodeIds),
   ])
 
   return (
-    <UnifiedContentEditor
+    <ArticleDetailClient
       article={article}
       questions={questions}
       eiPrompts={eiPrompts}

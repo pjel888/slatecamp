@@ -1192,6 +1192,7 @@ export const QuestionsPanel = ({
     const newDraft: QuestionDraft = {
       _tempId: crypto.randomUUID(),
       topic_id: primaryNodeId || '',
+      article_id: articleId,
       text: '',
       options: [
         { id: 'A', text: '' },
@@ -1212,7 +1213,7 @@ export const QuestionsPanel = ({
     dirty.addNewQuestion(newDraft)
     setExpandedDraftId(newDraft._tempId)
     setExpandedId(null)
-  }, [dirty, primaryNodeId])
+  }, [dirty, primaryNodeId, articleId])
 
   // ── Accordion coordination ────────────────────────────────
   const handleToggleExpand = useCallback(

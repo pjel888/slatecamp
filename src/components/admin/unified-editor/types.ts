@@ -24,6 +24,7 @@ export interface QuestionOption {
 export interface QuestionData {
   question_id: string
   topic_id: string
+  article_id: string | null
   text: string
   options: QuestionOption[]
   correct_option_id: string
@@ -40,6 +41,10 @@ export interface QuestionData {
   practice_context: string[] | null
   created_at: string
   updated_at: string
+}
+
+export type QuestionDataWithSource = QuestionData & {
+  source: 'taxonomy' | 'article'
 }
 
 export interface EIPromptData {
@@ -77,6 +82,7 @@ export interface TaxonomyLink {
 export interface QuestionDraft {
   _tempId: string
   topic_id: string
+  article_id?: string
   text: string
   options: QuestionOption[]
   correct_option_id: string
