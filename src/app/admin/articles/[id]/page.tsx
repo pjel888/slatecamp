@@ -7,6 +7,7 @@ import {
   getAllEIPromptsForArticle,
   getTaxonomyNodesInfo,
 } from '@/lib/actions/admin/content'
+import { getTaxonomyNodes } from '@/lib/actions/admin/taxonomy'
 import { UnifiedContentEditor } from '@/components/admin/unified-editor'
 
 import type { Metadata } from 'next'
@@ -32,14 +33,15 @@ const EditArticleFromTreePage = async ({ params }: PageProps) => {
   const article = await getArticleFull(id)
   if (!article) notFound()
 
-  const [taxonomyLinks, eiPrompts] = await Promise.all([
+  const [taxonomyLinks, eiPrompts, allTaxonomyNodes] = await Promise.all([
     getArticleTaxonomyNodes(article.article_id),
     getAllEIPromptsForArticle(article.article_id),
+    getTaxonomyNodes(),
   ])
 
   const nodeIds = taxonomyLinks.map((l) => l.node_id)
 
-  const [questions, taxonomyNodes] = await Promise.all([
+  const [questions, taxonomyNodesInfo] = await Promise.all([
     getQuestionsByNodeIds(nodeIds),
     getTaxonomyNodesInfo(nodeIds),
   ])
@@ -49,7 +51,7 @@ const EditArticleFromTreePage = async ({ params }: PageProps) => {
       article={article}
       questions={questions}
       eiPrompts={eiPrompts}
-      taxonomyNodes={taxonomyNodes}
+      taxonomyNodes={allTaxonomyNodes}
       taxonomyLinks={taxonomyLinks}
     />
   )

@@ -14,17 +14,17 @@ export const WikiArticleHero = ({
     <header className={cn("not-prose flex flex-col gap-3 mb-0", isMinimal && "gap-2 mb-4")}>
       {/* Tag row */}
       <div className="flex flex-wrap items-center gap-1.5">
-        <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cobalt-light text-camp-cobalt">
+        <span className="font-[var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-cobalt-light text-camp-cobalt">
           {subject}
         </span>
         <span className={cn(
-          "font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px]",
+          "font-[var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-[3px]",
           difficultyStyle[difficulty]
         )}>
           {difficulty}
         </span>
         {!isMinimal && (
-          <span className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-muted text-ink-muted">
+          <span className="font-[var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-[3px] bg-muted text-ink-muted">
             {readTime} read
           </span>
         )}
@@ -41,7 +41,7 @@ export const WikiArticleHero = ({
       {/* Updated metadata */}
       {!isMinimal && (
         <p className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5]">
-          Updated: {updatedNote}
+          {updatedNote}
         </p>
       )}
 

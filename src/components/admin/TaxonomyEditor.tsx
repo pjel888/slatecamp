@@ -48,7 +48,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
   }
 
   const startEdit = (node: TaxonomyNode) => {
-    setEditingId(node.id)
+    setEditingId(node.node_id)
     setEditingName(node.name)
   }
 
@@ -115,13 +115,13 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
   }
 
   const renderNode = (node: TaxonomyNode, level: number = 0) => {
-    const isExpanded = expandedIds.has(node.id)
-    const isEditing = editingId === node.id
-    const children = nodes.filter(n => n.parent_id === node.id)
+    const isExpanded = expandedIds.has(node.node_id)
+    const isEditing = editingId === node.node_id
+    const children = nodes.filter(n => n.parent_id === node.node_id)
     const hasChildren = children.length > 0 || node.level < 3
 
     return (
-      <div key={node.id} className="min-w-0">
+      <div key={node.node_id} className="min-w-0">
         <div
           className={cn(
             "flex items-center gap-2 py-1.5 px-3 hover:bg-muted/50 rounded-md group",
@@ -130,7 +130,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
         >
           {hasChildren ? (
             <button
-              onClick={() => toggleExpand(node.id)}
+              onClick={() => toggleExpand(node.node_id)}
               className="p-0.5 hover:bg-muted rounded shrink-0"
             >
               {isExpanded ? (
@@ -184,7 +184,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
                 </button>
                 {node.level < 3 && (
                   <button
-                    onClick={() => setParentIdForNew(node.id)}
+                    onClick={() => setParentIdForNew(node.node_id)}
                     className="p-1 hover:bg-muted rounded text-primary"
                     title="Add Child"
                   >
@@ -192,7 +192,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
                   </button>
                 )}
                 <button
-                  onClick={() => requestDelete(node.id)}
+                  onClick={() => requestDelete(node.node_id)}
                   className="p-1 hover:bg-muted rounded text-red-600"
                   title="Delete Node"
                 >
@@ -209,7 +209,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
             {children.map(child => renderNode(child, level + 1))}
 
             {/* Inline add for this specific parent */}
-            {parentIdForNew === node.id && (
+            {parentIdForNew === node.node_id && (
               <div className={cn("py-2", level >= 0 && "ml-12")}>
                 <div className="flex items-center gap-2">
                   <input
@@ -217,7 +217,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
                     placeholder="Enter child name..."
                     onKeyDown={async (e) => {
                       if (e.key === 'Enter' && e.currentTarget.value.trim()) {
-                        await addChildNode(node.id, node.level, e.currentTarget.value.trim())
+                        await addChildNode(node.node_id, node.level, e.currentTarget.value.trim())
                       }
                       if (e.key === 'Escape') {
                         setParentIdForNew(null)
@@ -263,9 +263,9 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
           ) : (
             <div className="p-4">
               {nodes
-                .filter(n => !n.parent_id && n.id)
+                .filter(n => !n.parent_id && n.node_id)
                 .map(node => (
-                  <div key={node.id || node.name} className="group">
+                  <div key={node.node_id || node.name} className="group">
                     {renderNode(node)}
                   </div>
                 ))}

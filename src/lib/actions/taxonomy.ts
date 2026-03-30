@@ -38,7 +38,6 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
     .lte('level', 3)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
     .order('level', { ascending: true })
     .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
@@ -122,6 +121,20 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
   })
 
   // 5. Build tree
+  const sortNodes = (a: TaxonomyNode, b: TaxonomyNode) => {
+    if (a.name === 'Subject Overview & Strategy') return -1
+    if (b.name === 'Subject Overview & Strategy') return 1
+    if (a.name === 'Subject Mastery & Connections') return 1
+    if (b.name === 'Subject Mastery & Connections') return -1
+    
+    // Fallback to existing order
+    if (a.level !== b.level) return a.level - b.level
+    if (a.sort_order !== b.sort_order) {
+      return (a.sort_order ?? 999) - (b.sort_order ?? 999)
+    }
+    return a.name.localeCompare(b.name)
+  }
+
   nodes.forEach((node: any) => {
     const current = map.get(node.node_id)!
     if (node.parent_id && map.has(node.parent_id)) {
@@ -130,6 +143,16 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
       roots.push(current)
     }
   })
+
+  // Sort all levels recursively
+  const sortAllLevels = (node: TaxonomyNode) => {
+    if (node.children && node.children.length > 0) {
+      node.children.sort(sortNodes)
+      node.children.forEach(sortAllLevels)
+    }
+  }
+  roots.sort(sortNodes)
+  roots.forEach(sortAllLevels)
 
   return roots
 }

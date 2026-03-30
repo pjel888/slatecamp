@@ -31,12 +31,10 @@ interface AdminMDXEditorProps {
     updated_at: string
     ale_id?: string
   }
+  taxonomyNodes?: any[]
 }
 
-// ---------------------------------------------------------------------------
-// Snippet templates
-// ---------------------------------------------------------------------------
-
+// ... snippets code ...
 const SNIPPET_GROUPS = [
   {
     label: 'Callouts',
@@ -127,10 +125,7 @@ const SNIPPET_GROUPS = [
   },
 ]
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
+// ... helpers code ...
 const generateSlug = (title: string) =>
   title
     .toLowerCase()
@@ -151,10 +146,7 @@ const formatDate = (iso: string) => {
 const countWords = (text: string) =>
   text.split(/\s+/).filter(Boolean).length
 
-// ---------------------------------------------------------------------------
-// SnippetDropdown sub-component
-// ---------------------------------------------------------------------------
-
+// ... SnippetDropdown code ...
 interface SnippetDropdownProps {
   label: string
   items: { label: string; snippet: string }[]
@@ -210,11 +202,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
   )
 }
 
-// ---------------------------------------------------------------------------
-// Main component
-// ---------------------------------------------------------------------------
-
-export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
+export const AdminMDXEditor = ({ article, taxonomyNodes = [] }: AdminMDXEditorProps) => {
   const router = useRouter()
 
   const [title, setTitle] = useState(article?.title ?? '')
@@ -222,6 +210,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
   const [slugManuallyEdited, setSlugManuallyEdited] = useState(!!article?.slug)
   const [status, setStatus] = useState(article?.status ?? 'draft')
   const [content, setContent] = useState(article?.content ?? '')
+  const [nodeId, setNodeId] = useState<string | null>(null)
   const [isSaving, setIsSaving] = useState(false)
   const [saveMsg, setSaveMsg] = useState<string | null>(null)
   const [saveError, setSaveError] = useState<string | null>(null)
@@ -308,6 +297,7 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
       case 'aleTestsYou': setAleTestsYou(value); break
       case 'updatedNote': setUpdatedNote(value); break
       case 'reviewerComments': setReviewerComments(value); break
+      case 'node_id': setNodeId(value); break
     }
   }, [])
 
@@ -323,7 +313,13 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
     setSaveError(null)
     setSaveMsg(null)
 
-    const payload = { title, content, slug: slug || generateSlug(title), status }
+    const payload = { 
+      title, 
+      content, 
+      slug: slug || generateSlug(title), 
+      status,
+      node_id: nodeId
+    }
 
     const result = article?.article_id
       ? await updateWikiArticle(article.article_id, payload)
@@ -528,6 +524,8 @@ export const AdminMDXEditor = ({ article }: AdminMDXEditorProps) => {
           articleId={article?.article_id}
           slug={slug}
           status={status}
+          nodeId={nodeId}
+          taxonomyNodes={taxonomyNodes}
           difficultyLabel={difficultyLabel}
           aleTestsYou={aleTestsYou}
           updatedNote={updatedNote}

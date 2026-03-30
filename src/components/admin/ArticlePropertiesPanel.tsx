@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import {
   Select,
   SelectContent,
@@ -18,6 +18,8 @@ interface ArticlePropertiesPanelProps {
   articleId?: string
   slug?: string
   status?: string
+  nodeId?: string | null
+  taxonomyNodes?: any[]
   difficultyLabel?: string
   aleTestsYou?: string
   updatedNote?: string
@@ -68,6 +70,8 @@ export const ArticlePropertiesPanel = ({
   articleId,
   slug,
   status,
+  nodeId,
+  taxonomyNodes = [],
   difficultyLabel,
   aleTestsYou,
   updatedNote,
@@ -79,6 +83,43 @@ export const ArticlePropertiesPanel = ({
   onFieldChange,
 }: ArticlePropertiesPanelProps) => {
   const [collapsed, setCollapsed] = useState(false)
+  const [selectedSubjectId, setSelectedSubjectId] = useState<string | null>(null)
+
+  // 1. Get all Subjects (Level 2)
+  const subjects = useMemo(() => {
+    return taxonomyNodes
+      .filter(n => n.level === 2)
+      .sort((a, b) => a.name.localeCompare(b.name))
+  }, [taxonomyNodes])
+
+  // 2. Initialize Subject if nodeId exists
+  useEffect(() => {
+    if (nodeId && taxonomyNodes.length > 0) {
+      const currentNode = taxonomyNodes.find(n => n.node_id === nodeId)
+      if (currentNode) {
+        if (currentNode.level === 2) {
+          setSelectedSubjectId(currentNode.node_id)
+        } else if (currentNode.level === 3 && currentNode.parent_id) {
+          setSelectedSubjectId(currentNode.parent_id)
+        }
+      }
+    }
+  }, [nodeId, taxonomyNodes])
+
+  // 3. Get Subtopics for selected Subject
+  const subtopics = useMemo(() => {
+    if (!selectedSubjectId) return []
+    return taxonomyNodes
+      .filter(n => n.parent_id === selectedSubjectId && n.level === 3)
+      .sort((a, b) => {
+        // Enforce specific sorting
+        if (a.name === 'Subject Overview & Strategy') return -1
+        if (b.name === 'Subject Overview & Strategy') return 1
+        if (a.name === 'Subject Mastery & Connections') return 1
+        if (b.name === 'Subject Mastery & Connections') return -1
+        return (a.sort_order ?? 99) - (b.sort_order ?? 99) || a.name.localeCompare(b.name)
+      })
+  }, [selectedSubjectId, taxonomyNodes])
 
   if (collapsed) {
     return (
@@ -89,7 +130,6 @@ export const ArticlePropertiesPanel = ({
           title="Expand properties"
           className="rounded-sm p-1 text-text-tertiary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
-          {/* Chevron left (expand) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path d="M7.5 2.5L4.5 6l3 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -99,22 +139,105 @@ export const ArticlePropertiesPanel = ({
   }
 
   return (
-    <div className="w-[280px] shrink-0 border-l border-border overflow-y-auto bg-white flex flex-col">
+    <div className="w-[280px] shrink-0 border-l border-border overflow-y-auto bg-white flex flex-col shadow-sm">
       {/* Header */}
-      <div className="flex shrink-0 items-center justify-between border-b border-border px-4 py-2.5">
-        <Eyebrow>Properties</Eyebrow>
+      <div className="flex shrink-0 items-center justify-between border-b border-border px-4 py-2.5 bg-surface-light/50">
+        <div className="flex items-center gap-2">
+          <Eyebrow>Article Properties</Eyebrow>
+          {!nodeId && <span className="flex h-1.5 w-1.5 rounded-full bg-warning" title="Taxonomy missing" />}
+        </div>
         <button
           type="button"
           onClick={() => setCollapsed(true)}
           title="Collapse properties"
           className="rounded-sm p-1 text-text-tertiary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
-          {/* Chevron right (collapse) */}
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
             <path d="M4.5 2.5L7.5 6l-3 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
       </div>
+
+      {/* TAXONOMY — DEPENDENT DROPDOWNS */}
+      <Section label="Taxonomy Mapping">
+        <div className="space-y-3">
+          {/* Step 1: Subject */}
+          <div className="space-y-1">
+            <label className="text-[10px] text-text-tertiary uppercase font-medium">1. Select Subject</label>
+            <Select
+              value={selectedSubjectId ?? ''}
+              onValueChange={val => {
+                setSelectedSubjectId(val)
+                // If user picks a subject, we can optionally clear the subtopic or set node to subject
+                onFieldChange?.('node_id', val) 
+              }}
+            >
+              <SelectTrigger className="w-full text-[11px] h-8">
+                <SelectValue placeholder="— Pick Subject —" />
+              </SelectTrigger>
+              <SelectContent>
+                {subjects.map(s => (
+                  <SelectItem key={s.node_id} value={s.node_id} className="text-[11px]">
+                    {s.name}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {/* Step 2: Subtopic */}
+          <div className="space-y-1">
+            <label className={`text-[10px] uppercase font-medium ${!selectedSubjectId ? 'text-text-tertiary opacity-50' : 'text-text-tertiary'}`}>
+              2. Select Subtopic
+            </label>
+            <Select
+              value={nodeId && subtopics.some(s => s.node_id === nodeId) ? nodeId : ''}
+              disabled={!selectedSubjectId}
+              onValueChange={val => onFieldChange?.('node_id', val)}
+            >
+              <SelectTrigger className={`w-full text-[11px] h-8 ${!nodeId && selectedSubjectId ? 'border-warning/50 bg-warning-50/10' : ''}`}>
+                <SelectValue placeholder={selectedSubjectId ? "— Pick Subtopic —" : "Select subject first"} />
+              </SelectTrigger>
+              <SelectContent>
+                {subtopics.map(st => (
+                  <SelectItem key={st.node_id} value={st.node_id} className="text-[11px]">
+                    {st.name}
+                  </SelectItem>
+                ))}
+                {selectedSubjectId && subtopics.length === 0 && (
+                  <div className="p-2 text-[10px] text-text-tertiary italic text-center">
+                    No subtopics defined
+                  </div>
+                )}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {!nodeId && (
+            <p className="text-[10px] text-warning font-medium">Mapping is required for visibility.</p>
+          )}
+          
+          {nodeId && (
+            <div className="flex items-center justify-between border-t pt-2 mt-2">
+               <span className="text-[10px] text-success font-medium flex items-center gap-1">
+                 <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                   <path d="M2.5 6.5L4.5 8.5L9.5 3.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                 </svg>
+                 Mapped
+               </span>
+               <button
+                onClick={() => {
+                  setSelectedSubjectId(null)
+                  onFieldChange?.('node_id', '')
+                }}
+                className="text-[10px] text-text-tertiary hover:text-destructive transition-colors"
+              >
+                Reset
+              </button>
+            </div>
+          )}
+        </div>
+      </Section>
 
       {/* STATUS */}
       <Section label="Status">
@@ -122,13 +245,13 @@ export const ArticlePropertiesPanel = ({
           value={status ?? 'draft'}
           onValueChange={val => onFieldChange?.('status', val)}
         >
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full text-[11px] h-8">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="draft">Draft</SelectItem>
-            <SelectItem value="review">In Review</SelectItem>
-            <SelectItem value="published">Published</SelectItem>
+            <SelectItem value="draft" className="text-[11px]">Draft</SelectItem>
+            <SelectItem value="review" className="text-[11px]">In Review</SelectItem>
+            <SelectItem value="published" className="text-[11px]">Published</SelectItem>
           </SelectContent>
         </Select>
       </Section>
@@ -139,34 +262,16 @@ export const ArticlePropertiesPanel = ({
           value={difficultyLabel ?? ''}
           onValueChange={val => onFieldChange?.('difficultyLabel', val)}
         >
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full text-[11px] h-8">
             <SelectValue placeholder="— Select —" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="Foundational">Foundational</SelectItem>
-            <SelectItem value="Intermediate">Intermediate</SelectItem>
-            <SelectItem value="Advanced">Advanced</SelectItem>
+            <SelectItem value="Foundational" className="text-[11px]">Foundational</SelectItem>
+            <SelectItem value="Intermediate" className="text-[11px]">Intermediate</SelectItem>
+            <SelectItem value="Advanced" className="text-[11px]">Advanced</SelectItem>
           </SelectContent>
         </Select>
       </Section>
-
-      {/* TAXONOMY */}
-      {(articleId || subjectLabel) && (
-        <Section label="Taxonomy">
-          {articleId && (
-            <p
-              className="text-[11px] text-text-tertiary mb-1 truncate"
-              style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
-              title={articleId}
-            >
-              {articleId}
-            </p>
-          )}
-          {subjectLabel && (
-            <p className="text-[11px] text-text-secondary">{subjectLabel}</p>
-          )}
-        </Section>
-      )}
 
       {/* LEARNING */}
       <Section label="Learning">
@@ -214,6 +319,17 @@ export const ArticlePropertiesPanel = ({
       {/* META */}
       <Section label="Meta">
         <div className="space-y-2">
+          {articleId && (
+            <div>
+               <p
+                className="mb-0.5 text-[11px] font-medium text-text-tertiary"
+                style={{ fontFamily: 'var(--font-dm-mono), monospace' }}
+              >
+                ID
+              </p>
+              <p className="text-[11px] text-text-tertiary truncate" title={articleId}>{articleId}</p>
+            </div>
+          )}
           <div>
             <p
               className="mb-0.5 text-[11px] font-medium text-text-tertiary"

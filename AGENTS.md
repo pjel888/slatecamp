@@ -64,7 +64,7 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 - **Use `bun`** as the package manager (not npm/yarn/pnpm)
 - **Arrow functions only** -- never use `function` declarations
 - **Font:** Inter only (loaded via `next/font/google`) -- Syne for display headings, DM Mono for code/data values
-- **Minimum text size:** 11px -- never use 8px, 9px, or 10px
+- **Minimum text size:** 8px
 - **No generic gamification** -- no confetti, badges, virtual currency, or empty streaks
 - **4 portals:** Dashboard (`/dashboard`), Admin (`/admin`), CEO (`/ceo`), Developer (`/developer`)
 - **Server Components by default** -- only add `'use client'` when interactivity is needed (target <40% client ratio)

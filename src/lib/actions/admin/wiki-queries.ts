@@ -144,7 +144,6 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
     .from('taxonomy_tree')
     .select('node_id, discipline_id, parent_id, level, name, slug, ale_id, sort_order, is_leaf')
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
     .lte('level', 3)
     .order('level', { ascending: true })
     .order('sort_order', { ascending: true, nullsFirst: false })
@@ -241,6 +240,21 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
       })
     }
 
+    // 8.5 Sort children: Overview first, Mastery last
+    const sortNodes = (a: AdminTaxonomyNode, b: AdminTaxonomyNode) => {
+      if (a.name === 'Subject Overview & Strategy') return -1
+      if (b.name === 'Subject Overview & Strategy') return 1
+      if (a.name === 'Subject Mastery & Connections') return 1
+      if (b.name === 'Subject Mastery & Connections') return -1
+      
+      // Fallback to existing order (level, then sort_order, then name)
+      if (a.level !== b.level) return a.level - b.level
+      if (a.sort_order !== b.sort_order) {
+        return (a.sort_order ?? 999) - (b.sort_order ?? 999)
+      }
+      return a.name.localeCompare(b.name)
+    }
+
     // Propagate article counts and build tree
     const roots: AdminTaxonomyNode[] = []
     for (const n of discNodes) {
@@ -251,6 +265,16 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
         roots.push(treeNode)
       }
     }
+
+    // Sort all levels
+    const sortAllLevels = (node: AdminTaxonomyNode) => {
+      if (node.children && node.children.length > 0) {
+        node.children.sort(sortNodes)
+        node.children.forEach(sortAllLevels)
+      }
+    }
+    roots.sort(sortNodes)
+    roots.forEach(sortAllLevels)
 
     // Count articles recursively
     const countArticles = (node: AdminTaxonomyNode): number => {

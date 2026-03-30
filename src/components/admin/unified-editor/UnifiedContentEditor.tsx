@@ -60,6 +60,10 @@ const EditorInner = ({
     initialArticle.reviewer_comments || ''
   )
 
+  // ── Taxonomy state ───────────────────────────────────────
+  const primaryLink = taxonomyLinks.find((l) => l.is_primary)
+  const [nodeId, setNodeId] = useState<string | null>(primaryLink?.node_id || null)
+
   // ── Questions state ──────────────────────────────────────
   const [questions, setQuestions] = useState<QuestionData[]>(initialQuestions)
 
@@ -109,6 +113,14 @@ const EditorInner = ({
     [dirty]
   )
 
+  const handleNodeIdChange = useCallback(
+    (val: string | null) => {
+      setNodeId(val)
+      dirty.markArticleDirty()
+    },
+    [dirty]
+  )
+
   // ── Question update handler ──────────────────────────────
   const handleQuestionUpdate = useCallback(
     (questionId: string, data: Partial<QuestionData>) => {
@@ -146,11 +158,10 @@ const EditorInner = ({
     return () => window.removeEventListener('beforeunload', handler)
   }, [dirty.isAnythingDirty])
 
-  // ── Primary taxonomy node ────────────────────────────────
-  const primaryLink = taxonomyLinks.find((l) => l.is_primary)
-  const primaryNode = primaryLink
-    ? taxonomyNodes.find((n) => n.node_id === primaryLink.node_id)
-    : taxonomyNodes[0] || null
+  // ── Primary taxonomy node calculation ───────────────────
+  const primaryNode = nodeId 
+    ? taxonomyNodes.find(n => n.node_id === nodeId)
+    : taxonomyNodes.find(n => n.node_id === primaryLink?.node_id) || null
 
   const questionsCount =
     questions.length +
@@ -163,6 +174,7 @@ const EditorInner = ({
     title,
     content,
     status,
+    node_id: nodeId,
     difficulty_label: difficultyLabel || undefined,
     ale_tests_you: aleTestsYou || undefined,
     updated_note: updatedNote || undefined,
@@ -227,6 +239,9 @@ const EditorInner = ({
               onHeadingsChange={setHeadings}
               articleSlug={initialArticle.slug}
               articleId={initialArticle.article_id}
+              nodeId={nodeId}
+              onNodeIdChange={handleNodeIdChange}
+              taxonomyNodes={taxonomyNodes}
               aleTestsYou={aleTestsYou}
               onAleTestsYouChange={(v) => {
                 setAleTestsYou(v)
@@ -262,7 +277,7 @@ const EditorInner = ({
               taxonomyLinks={taxonomyLinks}
               headings={headings}
               articleId={initialArticle.article_id}
-              primaryNodeId={primaryNode?.node_id || null}
+              primaryNodeId={primaryNode?.node_id || nodeId || null}
               onQuestionUpdate={handleQuestionUpdate}
               onEIPromptUpdate={handleEIPromptUpdate}
             />

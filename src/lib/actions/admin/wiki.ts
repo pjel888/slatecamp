@@ -9,14 +9,26 @@ import { canManageContent } from "@/lib/admin/roles";
 const UpdateWikiArticleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(500),
   content: z.string().min(1, 'Content is required'),
+  slug: z.string().optional(),
+  status: z.string().optional(),
+  node_id: z.string().uuid('Invalid taxonomy node ID').optional().nullable(),
 })
 
 const CreateWikiArticleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(500),
   content: z.string().min(1, 'Content is required'),
+  slug: z.string().optional(),
+  status: z.string().optional(),
+  node_id: z.string().uuid('Invalid taxonomy node ID').optional().nullable(),
 })
 
-export async function updateWikiArticle(id: string, data: { title: string, content: string }) {
+export async function updateWikiArticle(id: string, data: { 
+  title: string, 
+  content: string, 
+  slug?: string, 
+  status?: string,
+  node_id?: string | null
+}) {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
 
@@ -35,10 +47,28 @@ export async function updateWikiArticle(id: string, data: { title: string, conte
     .update({
       title: data.title,
       content: data.content,
+      slug: data.slug || data.title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+      status: data.status,
       updated_at: new Date().toISOString(),
       updated_by: user?.id ?? null,
     })
     .eq('article_id', id);
+
+  if (!error && data.node_id !== undefined) {
+    // Update or insert mapping
+    if (data.node_id) {
+      // We use upsert-like logic: delete old mappings and insert new one
+      // OR just update the primary one if it exists
+      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
+      await supabase.from('wiki_article_taxonomy').insert({
+        article_id: id,
+        node_id: data.node_id,
+        is_primary: true
+      })
+    } else {
+      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
+    }
+  }
 
   if (!error) {
     revalidatePath('/admin/wiki');
@@ -49,7 +79,13 @@ export async function updateWikiArticle(id: string, data: { title: string, conte
   return { error };
 }
 
-export async function createWikiArticle(data: { title: string, content: string }) {
+export async function createWikiArticle(data: { 
+  title: string, 
+  content: string, 
+  slug?: string, 
+  status?: string,
+  node_id?: string | null
+}) {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
 
@@ -63,20 +99,32 @@ export async function createWikiArticle(data: { title: string, content: string }
 
   const supabase = createAdminClient();
 
-  const { data: newArticle, error } = await supabase
+  const slug = data.slug || data.title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  const { data: newArticle, error: articleError } = await supabase
     .from('wiki_articles')
     .insert([{
       title: data.title,
       content: data.content,
-      slug: data.title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, ''),
+      slug,
+      status: data.status || 'draft',
       created_by: user?.id ?? null,
     }])
     .select('article_id')
     .single();
 
-  if (!error) {
-    revalidatePath('/admin/wiki');
+  if (articleError) return { error: articleError };
+
+  if (data.node_id) {
+    await supabase.from('wiki_article_taxonomy').insert({
+      article_id: newArticle.article_id,
+      node_id: data.node_id,
+      is_primary: true
+    })
   }
 
-  return { data: newArticle, error };
+  revalidatePath('/admin/wiki');
+  revalidatePath('/admin/articles');
+
+  return { data: newArticle, error: null };
 }

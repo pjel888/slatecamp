@@ -11,8 +11,9 @@ export const getTaxonomyNodes = async () => {
 
   const { data, error } = await supabase
     .from('taxonomy_tree')
-    .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
+    .select('node_id, name, level, subject_area, is_leaf, parent_id, discipline_id, sort_order, ale_id')
     .order('level', { ascending: true })
+    .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
 
   if (error) {
@@ -53,6 +54,7 @@ const createNodeSchema = z.object({
   parent_id: z.string().nullable(),
   level: z.number().int().min(1).max(3),
   discipline_id: z.string().min(1),
+  sort_order: z.number().int().optional(),
 })
 
 export const createTaxonomyNode = async (data: {
@@ -60,6 +62,7 @@ export const createTaxonomyNode = async (data: {
   parent_id: string | null
   level: number
   discipline_id: string
+  sort_order?: number
 }) => {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
@@ -69,15 +72,29 @@ export const createTaxonomyNode = async (data: {
 
   const supabase = createAdminClient()
 
+  // Generate slug
+  const slug = parsed.data.name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+
+  // Default sort order
+  let sortOrder = parsed.data.sort_order ?? 10
+  if (parsed.data.name === 'Subject Overview & Strategy') sortOrder = 1
+  if (parsed.data.name === 'Subject Mastery & Connections') sortOrder = 99
+
   const { data: newNode, error } = await supabase
     .from('taxonomy_tree')
     .insert({
       discipline_id: parsed.data.discipline_id,
       name: parsed.data.name,
+      slug,
       level: parsed.data.level,
       subject_area: parsed.data.parent_id ? 'Subject' : null,
       is_leaf: parsed.data.level === 3,
       parent_id: parsed.data.parent_id,
+      sort_order: sortOrder,
+      ale_id: parsed.data.level === 3 ? `USER-NEW-${Date.now()}` : null,
     })
     .select('id:node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
     .single()

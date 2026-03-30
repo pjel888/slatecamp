@@ -284,6 +284,7 @@ export const updateArticleFull = async (
     title?: string
     content?: string
     status?: string
+    node_id?: string | null
     difficulty_label?: string
     ale_tests_you?: string
     updated_note?: string
@@ -295,20 +296,39 @@ export const updateArticleFull = async (
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
 
   const supabase = createAdminClient()
-  const { error } = await supabase
+  
+  // 1. Update wiki_articles
+  const { node_id, ...articleFields } = data
+  const { error: articleError } = await supabase
     .from('wiki_articles')
     .update({
-      ...data,
+      ...articleFields,
       updated_at: new Date().toISOString(),
     })
     .eq('article_id', id)
 
-  if (!error) {
-    revalidatePath('/admin/articles')
-    revalidatePath(`/admin/content/${id}`)
+  if (articleError) return { error: articleError }
+
+  // 2. Update taxonomy mapping if node_id provided
+  if (node_id !== undefined) {
+    if (node_id) {
+      // Delete old mapping and insert new primary mapping
+      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
+      await supabase.from('wiki_article_taxonomy').insert({
+        article_id: id,
+        node_id: node_id,
+        is_primary: true
+      })
+    } else {
+      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
+    }
   }
 
-  return { error }
+  revalidatePath('/admin/articles')
+  revalidatePath(`/admin/content/${id}`)
+  revalidatePath(`/admin/articles/${id}`)
+
+  return { error: null }
 }
 
 /** Update a single question with all editable fields */

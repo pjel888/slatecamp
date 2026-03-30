@@ -21,6 +21,9 @@ interface ArticlePanelProps {
   articleSlug: string
   /** Article ID to save the draft preview for */
   articleId: string
+  nodeId: string | null
+  onNodeIdChange: (v: string | null) => void
+  taxonomyNodes: any[]
   aleTestsYou: string
   onAleTestsYouChange: (v: string) => void
   updatedNote: string
@@ -270,6 +273,9 @@ export const ArticlePanel = ({
   onHeadingsChange,
   articleSlug,
   articleId,
+  nodeId,
+  onNodeIdChange,
+  taxonomyNodes = [],
   aleTestsYou,
   onAleTestsYouChange,
   updatedNote,
@@ -283,6 +289,7 @@ export const ArticlePanel = ({
   // ── Preview state ────────────────────────────────────────
   const [isGeneratingPreview, setIsGeneratingPreview] = useState(false)
   const [previewId, setPreviewId] = useState<string | null>(null)
+  const [taxSearch, setTaxSearch] = useState('')
 
   // ── Heading parse debounce ───────────────────────────────
   const headingDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -304,6 +311,14 @@ export const ArticlePanel = ({
     [savedContent, content]
   )
 
+  // ── Filter nodes for selector ────────────────────────────
+  const filteredNodes = useMemo(() => {
+    return taxonomyNodes
+      .filter(n => n.level >= 2)
+      .filter(n => !taxSearch || n.name.toLowerCase().includes(taxSearch.toLowerCase()))
+      .slice(0, 100)
+  }, [taxonomyNodes, taxSearch])
+
   // ── Preview generation & auto-sync ───────────────────────
   
   const refreshStudentView = useCallback(async () => {
@@ -324,7 +339,7 @@ export const ArticlePanel = ({
     } finally {
       setIsGeneratingPreview(false)
     }
-  }, [articleId, content, previewId, generateDraftPreview, updateDraftPreview])
+  }, [articleId, content, previewId])
 
   // ── Parse headings with 300ms debounce ───────────────────
   useEffect(() => {
@@ -575,6 +590,45 @@ export const ArticlePanel = ({
 
         {metadataOpen && (
           <div className="grid grid-cols-2 gap-3 border-t border-border bg-white px-3 py-3">
+            {/* Taxonomy Mapping — Full Width */}
+            <div className="col-span-2 flex flex-col gap-1 border-b border-border pb-3 mb-1">
+              <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
+                Taxonomy Mapping
+              </label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="Search subtopics..."
+                  value={taxSearch}
+                  onChange={e => setTaxSearch(e.target.value)}
+                  className="w-1/3 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:outline-none"
+                />
+                <select
+                  value={nodeId ?? ''}
+                  onChange={e => onNodeIdChange(e.target.value || null)}
+                  className="flex-1 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary focus:border-camp-cobalt focus:outline-none"
+                >
+                  <option value="">— Select Subtopic —</option>
+                  {filteredNodes.map(node => (
+                    <option key={node.node_id} value={node.node_id}>
+                      {node.name} ({node.subject_area} L{node.level})
+                    </option>
+                  ))}
+                </select>
+                {nodeId && (
+                  <button
+                    onClick={() => onNodeIdChange(null)}
+                    className="text-[10px] text-destructive hover:underline"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+              {subjectLabel && !nodeId && (
+                <p className="text-[10px] text-text-secondary italic">Current: {subjectLabel}</p>
+              )}
+            </div>
+
             {/* ale_tests_you */}
             <div className="flex flex-col gap-1">
               <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">

@@ -160,7 +160,6 @@ export async function getTaxonomyTree(
     .eq("discipline_id", disciplineId)
     .eq("is_cross_ref_only", false)
     .is("deprecated_at", null)
-    .not("ale_id", "is", null)
     .order("level", { ascending: true })
     .order("sort_order", { ascending: true, nullsFirst: false })
     .order("name", { ascending: true });
@@ -244,7 +243,6 @@ export const getLawsTaxonomyTree = async (
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', true)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
     .order('level', { ascending: true })
     .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
