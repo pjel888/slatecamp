@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774758315627,
-  "projectRoot": "c:\\Users\\Philip Lewis\\Desktop\\slatecamp",
+  "lastScanned": 1774850448893,
+  "projectRoot": "C:\\Users\\Philip Lewis\\Desktop\\slatecamp",
   "techStack": {
     "languages": [
       {
@@ -80,24 +80,11 @@
   },
   "customNotes": [],
   "directoryMap": {
-    "Design Questions": {
-      "path": "Design Questions",
-      "purpose": null,
-      "fileCount": 12,
-      "lastAccessed": 1774758315602,
-      "keyFiles": [
-        "DESIGN-001-R1-residence.json",
-        "DESIGN-002-R2-duplex.json",
-        "DESIGN-003-C2-office.json",
-        "DESIGN-004-GI-school.json",
-        "DESIGN-005-I1-industrial.json"
-      ]
-    },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774758315602,
+      "lastAccessed": 1774850448877,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -106,14 +93,14 @@
       "path": "prompts",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1774758315609,
+      "lastAccessed": 1774850448881,
       "keyFiles": []
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
       "fileCount": 8,
-      "lastAccessed": 1774758315609,
+      "lastAccessed": 1774850448882,
       "keyFiles": [
         "AGENTS.md",
         "file.svg",
@@ -125,21 +112,21 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 5,
-      "lastAccessed": 1774758315610,
+      "fileCount": 6,
+      "lastAccessed": 1774850448882,
       "keyFiles": [
         "AGENTS.md",
         "db-inspect.ts",
         "dev.js",
-        "openapi-spec.json",
-        "test-db.ts"
+        "embed-wiki.ts",
+        "openapi-spec.json"
       ]
     },
     "src": {
       "path": "src",
       "purpose": "Source code",
-      "fileCount": 1,
-      "lastAccessed": 1774758315610,
+      "fileCount": 2,
+      "lastAccessed": 1774850448882,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -147,8 +134,8 @@
     "supabase": {
       "path": "supabase",
       "purpose": null,
-      "fileCount": 5,
-      "lastAccessed": 1774758315611,
+      "fileCount": 11,
+      "lastAccessed": 1774850448882,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -161,7 +148,7 @@
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1774758315613,
+      "lastAccessed": 1774850448883,
       "keyFiles": [
         "AGENTS.md",
         "error.tsx",
@@ -172,7 +159,7 @@
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 1,
-      "lastAccessed": 1774758315613,
+      "lastAccessed": 1774850448883,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -181,7 +168,7 @@
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 3,
-      "lastAccessed": 1774758315614,
+      "lastAccessed": 1774850448884,
       "keyFiles": [
         "AGENTS.md",
         "feature-flags.ts",
@@ -192,7 +179,7 @@
       "path": "src\\data",
       "purpose": "Data files",
       "fileCount": 2,
-      "lastAccessed": 1774758315614,
+      "lastAccessed": 1774850448884,
       "keyFiles": [
         "AGENTS.md",
         "mock-questions.json"
@@ -202,33 +189,11 @@
       "path": "src\\lib",
       "purpose": "Library code",
       "fileCount": 15,
-      "lastAccessed": 1774758315615,
+      "lastAccessed": 1774850448884,
       "keyFiles": [
         "AGENTS.md",
         "analytics-server.ts",
         "analytics.ts"
-      ]
-    },
-    "src\\types": {
-      "path": "src\\types",
-      "purpose": "Type definitions",
-      "fileCount": 14,
-      "lastAccessed": 1774758315615,
-      "keyFiles": [
-        "3d-lab.ts",
-        "AGENTS.md",
-        "app.ts"
-      ]
-    },
-    "supabase\\migrations": {
-      "path": "supabase\\migrations",
-      "purpose": "Database migrations",
-      "fileCount": 57,
-      "lastAccessed": 1774758315616,
-      "keyFiles": [
-        "004_add_user_roles.sql",
-        "005_add_wiki_content_status.sql",
-        "006_add_3d_asset_status.sql"
       ]
     }
   },
