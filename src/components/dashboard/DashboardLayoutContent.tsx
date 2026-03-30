@@ -80,16 +80,8 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
         <ActiveSessionProvider>
           <NoteContextProvider>
           <SidebarProvider>
-            <div className='flex h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg'>
-              <Sidebar
-                isAdmin={isAdmin}
-                isDevMode={showDevTools}
-                userDisplay={{
-                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
-                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
-                }}
-                tier={effectiveTier}
-              />
+            <div className='flex flex-col h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg lg:flex-row'>
+              {/* Mobile top bar */}
               <MobileSidebarShell
                 userDisplay={{
                   name: user.user_metadata?.full_name ?? user.email ?? 'User',
@@ -97,7 +89,18 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 }}
                 tier={effectiveTier}
               />
-              <SidebarContent>
+              {/* Desktop layout: sidebar + content in flex row */}
+              <div className='flex flex-1 min-h-0'>
+                <Sidebar
+                  isAdmin={isAdmin}
+                  isDevMode={showDevTools}
+                  userDisplay={{
+                    name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                    avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                  }}
+                  tier={effectiveTier}
+                />
+                <SidebarContent>
                 <BreadcrumbProvider>
                   <Navbar isAdmin={isAdmin} />
                   <div>
@@ -121,6 +124,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                   </main>
                 </BreadcrumbProvider>
               </SidebarContent>
+              </div>
               {showDevTools && flags != null && (
                 <>
                   <DevToolbar

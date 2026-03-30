@@ -8,7 +8,6 @@ import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarFooter } from './SidebarFooter'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import {
-  Z_INDEX,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
   TRANSITION,
@@ -18,8 +17,8 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 import { ConfirmDialog } from '@/components/ui/dialog'
 
 // ---------------------------------------------------------------------------
-// Sidebar — unified fixed nav shell (replaces SidebarShell + SidebarRail + SidebarOverlay)
-// Spec: HTML v4 locked layout. 52px collapsed, 216px expanded, CSS transitions only.
+// Sidebar — structural nav shell for push layout
+// 52px collapsed, 256px expanded, CSS transitions only
 // ---------------------------------------------------------------------------
 
 export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps) => {
@@ -76,14 +75,6 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
     collapse()
   }, [collapse, sidebarRef])
 
-  const handleBackdropMouseDown = useCallback(
-    (e: React.MouseEvent<HTMLDivElement>) => {
-      e.preventDefault()
-      handleCollapse()
-    },
-    [handleCollapse],
-  )
-
   const handleNavMouseDown = useCallback((e: React.MouseEvent<HTMLElement>) => {
     e.stopPropagation()
   }, [])
@@ -95,19 +86,15 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
         const href = e.currentTarget.getAttribute('href') ?? '/'
         setPendingHref(href)
         setShowLeaveConfirm(true)
-        return
       }
-      // Collapse on navigate (overlay pattern)
-      if (expanded) handleCollapse()
     },
-    [activeSession, expanded, handleCollapse],
+    [activeSession],
   )
 
   const handleLeaveConfirm = useCallback(() => {
     if (pendingHref) router.push(pendingHref)
     setPendingHref(null)
-    if (expanded) handleCollapse()
-  }, [pendingHref, router, expanded, handleCollapse])
+  }, [pendingHref, router])
 
   const handleToggle = useCallback(() => {
     if (expanded) {
@@ -145,24 +132,19 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
         onConfirm={handleLeaveConfirm}
       />
 
-      {/* Sidebar nav shell */}
+      {/* Sidebar nav shell — structural flex child, displaces content */}
       <nav
         ref={sidebarRef as React.RefObject<HTMLElement>}
         aria-label="Main navigation"
         onMouseDown={handleNavMouseDown}
         style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
+          position: 'relative',
+          flexShrink: 0,
           height: '100dvh',
-          zIndex: Z_INDEX.sidebar,
           display: 'flex',
           flexDirection: 'column',
           overflow: 'hidden',
           borderRight: '1px solid var(--border)',
-          boxShadow: expanded
-            ? '0 4px 20px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.04)'
-            : 'none',
           ...sidebarStyle,
         }}
         className="hidden bg-white lg:flex lg:flex-col"
@@ -239,23 +221,6 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
           toggleRef={toggleRef}
         />
       </nav>
-
-      {/* Backdrop — sibling of nav, not child */}
-      <div
-        aria-hidden="true"
-        onMouseDown={handleBackdropMouseDown}
-        className="hidden lg:block"
-        style={{
-          position: 'fixed',
-          inset: 0,
-          zIndex: Z_INDEX.backdrop,
-          background: 'rgba(0,0,0,0.025)',
-          backdropFilter: 'blur(1px)',
-          opacity: expanded ? 1 : 0,
-          pointerEvents: expanded ? 'auto' : 'none',
-          transition: prefersReducedMotion ? undefined : 'opacity 200ms ease-out',
-        }}
-      />
     </>
   )
 }

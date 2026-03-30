@@ -109,35 +109,6 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
     return () => mq.removeEventListener('change', onChange)
   }, [])
 
-  // ---- Inert management on main content when overlay is open ----
-
-  useEffect(() => {
-    const el = contentRef.current
-    if (!el) return
-
-    if (expanded) {
-      el.setAttribute('inert', '')
-    } else {
-      el.removeAttribute('inert')
-    }
-  }, [expanded])
-
-  // ---- Click-outside to collapse ----
-
-  useEffect(() => {
-    if (!expanded) return
-
-    const onMouseDown = (e: MouseEvent) => {
-      const sidebar = sidebarRef.current
-      if (!sidebar) return
-      if (sidebar.contains(e.target as Node)) return
-      setExpanded(false)
-    }
-
-    document.addEventListener('mousedown', onMouseDown)
-    return () => document.removeEventListener('mousedown', onMouseDown)
-  }, [expanded, setExpanded])
-
   // ---- Keyboard shortcuts ----
 
   useEffect(() => {
