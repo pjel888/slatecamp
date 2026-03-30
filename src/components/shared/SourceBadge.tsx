@@ -10,10 +10,32 @@ import { ArrowSquareOut } from '@phosphor-icons/react'
 interface SourceBadgeProps {
   slug: string
   className?: string
+  onClick?: (slug: string) => void
 }
 
-export const SourceBadge = ({ slug, className }: SourceBadgeProps) => {
+export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
   const label = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+
+  if (onClick) {
+    return (
+      <button
+        type="button"
+        onClick={() => onClick(slug)}
+        className={[
+          'inline-flex items-center gap-1 px-2 py-0.5 rounded-full',
+          'bg-[#EEF2FC] text-[#1B3FC4] text-[11px] font-medium leading-tight',
+          'hover:bg-[#1B3FC4]/15 transition-colors duration-150 ease-out',
+          'no-underline text-left cursor-pointer',
+          className,
+        ]
+          .filter(Boolean)
+          .join(' ')}
+      >
+        <ArrowSquareOut size={10} weight="bold" aria-hidden="true" />
+        {label}
+      </button>
+    )
+  }
 
   return (
     <Link
@@ -65,15 +87,16 @@ export const stripSources = (text: string): string =>
 
 interface SourceBadgeRowProps {
   sources: string[]
+  onSourceClick?: (slug: string) => void
 }
 
-export const SourceBadgeRow = ({ sources }: SourceBadgeRowProps) => {
+export const SourceBadgeRow = ({ sources, onSourceClick }: SourceBadgeRowProps) => {
   if (sources.length === 0) return null
 
   return (
     <div className="flex flex-wrap gap-1.5 mt-1.5">
       {sources.map((slug) => (
-        <SourceBadge key={slug} slug={slug} />
+        <SourceBadge key={slug} slug={slug} onClick={onSourceClick} />
       ))}
     </div>
   )

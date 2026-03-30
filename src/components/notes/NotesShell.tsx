@@ -1,10 +1,11 @@
 'use client'
 
-import { useRef, useState, useCallback } from 'react'
+import { useRef, useState, useCallback, useEffect } from 'react'
 import { Notepad } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes-actions'
+import { getWikiBookmarks, removeWikiBookmark } from '@/lib/actions/wiki-bookmarks'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
@@ -16,7 +17,7 @@ const NotesEditor = dynamic(
 )
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { useNotesPanels, useNotesList, useNoteEditor } from '@/hooks/notes'
-import type { NoteStub } from '@/types/app'
+import type { NoteStub, Note } from '@/types/app'
 
 interface NotesShellProps {
   initialNotes: NoteStub[]
@@ -28,12 +29,16 @@ interface NotesShellProps {
 const applyFilter = (stubs: NoteStub[], filter: NavFilter): NoteStub[] => {
   switch (filter.type) {
     case 'pinned': return stubs.filter((n) => n.is_pinned)
+    case 'bookmarks': return stubs.filter((n) => n.is_virtual)
     case 'folder': return stubs // folder_id not in NoteStub — rely on server refetch (handled in useEffect)
     case 'source':
       return filter.source === 'wiki'
-        ? stubs.filter((n) => n.article_id)
+        ? stubs.filter((n) => n.article_id && !n.is_virtual)
         : stubs.filter((n) => n.question_id)
-    default: return stubs
+    default: 
+      // 'all' filter shows all real notes but NOT virtual bookmarks by default
+      // This matches standard "All Notes" behavior in apps like Apple Notes / Notion
+      return stubs.filter(n => !n.is_virtual)
   }
 }
 
@@ -44,10 +49,33 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   const titleInputRef = useRef<HTMLInputElement>(null)
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
   const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null)
+  const [virtualNotes, setVirtualNotes] = useState<NoteStub[]>([])
 
   // Extracted hooks
   const { navCollapsed, setNavCollapsed, listCollapsed, setListCollapsed } = useNotesPanels()
-  const { stubs, setStubs } = useNotesList(initialNotes, filter)
+  
+  // Mix initial notes with virtual bookmarks
+  const [allStubs, setAllStubs] = useState<NoteStub[]>(initialNotes)
+  
+  useEffect(() => {
+    // Load wiki bookmarks as virtual notes
+    getWikiBookmarks().then((bookmarks) => {
+      const vNotes: NoteStub[] = bookmarks.map(b => ({
+        id: `virtual_${b.articleId}`,
+        title: b.title,
+        updated_at: b.createdAt,
+        is_pinned: false,
+        note_type: 'standard',
+        article_id: b.articleId,
+        tags: [],
+        snippet: 'Bookmarked Wiki Article',
+        is_virtual: true,
+      }))
+      setVirtualNotes(vNotes)
+      setAllStubs([...initialNotes, ...vNotes])
+    })
+  }, [initialNotes])
+
   const {
     selectedId,
     setSelectedId,
@@ -59,14 +87,39 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     pendingContent,
     setPendingContent,
     selectNote,
-  } = useNoteEditor({ initialOpenNoteId, setStubs })
+  } = useNoteEditor({ 
+    initialOpenNoteId, 
+    setStubs: setAllStubs as any // Hook expects real stubs setter, we give it our mixed setter
+  })
+
+  // Override selectNote to handle virtual notes
+  const handleSelect = useCallback(async (id: string) => {
+    const virtual = virtualNotes.find(n => n.id === id)
+    if (virtual) {
+      setSelectedId(id)
+      setCurrentNote({
+        id: virtual.id,
+        user_id: userId || '',
+        title: virtual.title,
+        content: { type: 'doc', content: [{ type: 'paragraph', content: [{ type: 'text', text: 'This is a bookmarked wiki article. You can view it using the link above.' }] }] },
+        note_type: 'standard',
+        is_pinned: false,
+        tags: [],
+        article_id: virtual.article_id,
+        created_at: virtual.updated_at,
+        updated_at: virtual.updated_at,
+      } as Note)
+      return
+    }
+    selectNote(id)
+  }, [virtualNotes, selectNote, setSelectedId, setCurrentNote, userId])
 
   const handleCreate = async () => {
     const result = await createNote()
     if ('error' in result) return
     const note = await getNote(result.id)
     if (note) {
-      setStubs((prev) => [{ id: note.id, title: note.title, updated_at: note.updated_at, is_pinned: note.is_pinned, note_type: note.note_type, tags: note.tags ?? [], article_id: note.article_id, question_id: note.question_id }, ...prev])
+      setAllStubs((prev) => [{ id: note.id, title: note.title, updated_at: note.updated_at, is_pinned: note.is_pinned, note_type: note.note_type, tags: note.tags ?? [], article_id: note.article_id, question_id: note.question_id }, ...prev])
       setCurrentNote(note)
       setSelectedId(note.id)
       setPendingTitle(null)
@@ -83,18 +136,31 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   const handleDeleteConfirm = useCallback(async () => {
     if (!pendingDeleteId) return
     const id = pendingDeleteId
+    const isVirtual = id.startsWith('virtual_')
+    
     setPendingDeleteId(null)
-    setStubs((prev) => prev.filter((n) => n.id !== id))
-    if (selectedId === id) { setSelectedId(null); setCurrentNote(null) }
-    await deleteNote(id)
-  }, [pendingDeleteId, selectedId, setStubs, setSelectedId, setCurrentNote])
+    setAllStubs((prev) => prev.filter((n) => n.id !== id))
+    
+    if (selectedId === id) { 
+      setSelectedId(null)
+      setCurrentNote(null) 
+    }
+
+    if (isVirtual) {
+      const articleId = virtualNotes.find(n => n.id === id)?.article_id
+      if (articleId) await removeWikiBookmark(articleId)
+    } else {
+      await deleteNote(id)
+    }
+  }, [pendingDeleteId, selectedId, setAllStubs, setSelectedId, setCurrentNote, virtualNotes])
 
   const handlePin = async (id: string, pinned: boolean) => {
-    setStubs((prev) => prev.map((n) => n.id === id ? { ...n, is_pinned: pinned } : n))
+    if (id.startsWith('virtual_')) return // Can't pin virtual notes for now
+    setAllStubs((prev) => prev.map((n) => n.id === id ? { ...n, is_pinned: pinned } : n))
     await updateNote(id, { is_pinned: pinned })
   }
 
-  const displayed = applyFilter(stubs, filter)
+  const displayed = applyFilter(allStubs, filter)
   const anchor = currentNote ? {
     topic_id: currentNote.topic_id ?? undefined,
     article_id: currentNote.article_id ?? undefined,
@@ -127,7 +193,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
       <NotesList
         notes={displayed}
         selectedId={selectedId}
-        onSelect={selectNote}
+        onSelect={handleSelect}
         onCreate={handleCreate}
         onDelete={handleDelete}
         onPin={handlePin}
@@ -156,6 +222,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                   type="text"
                   value={pendingTitle ?? currentNote.title}
                   onChange={(e) => setPendingTitle(e.target.value)}
+                  readOnly={currentNote.id.startsWith('virtual_')}
                   placeholder="Untitled Note"
                   className="w-full border-none bg-transparent p-0 text-xl font-bold text-text-primary placeholder:text-border focus:outline-none focus:ring-0"
                 />
@@ -165,14 +232,28 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
             {/* Rich editor */}
             <div className="min-h-0 flex-1 overflow-y-auto">
               <div className="mx-auto max-w-3xl">
-                <NotesEditor
-                  content={currentNote.content}
-                  onChange={(c) => setPendingContent(c)}
-                  userId={userId}
-                  placeholder="Write... select text to highlight and format"
-                  className="min-h-full"
-                  toolbarWrapperClassName="sticky top-0 z-10"
-                />
+                {currentNote.id.startsWith('virtual_') ? (
+                  <div className="p-8 text-center bg-muted/20 rounded-md mt-10 border border-dashed border-border mx-4">
+                    <p className="text-sm text-text-secondary mb-4">
+                      This is a bookmarked wiki article. To take personal notes, create a new note and link it to this article.
+                    </p>
+                    <button 
+                      onClick={handleCreate}
+                      className="text-xs font-bold text-primary uppercase tracking-widest hover:underline"
+                    >
+                      + Create linked note
+                    </button>
+                  </div>
+                ) : (
+                  <NotesEditor
+                    content={currentNote.content}
+                    onChange={(c) => setPendingContent(c)}
+                    userId={userId}
+                    placeholder="Write... select text to highlight and format"
+                    className="min-h-full"
+                    toolbarWrapperClassName="sticky top-0 z-10"
+                  />
+                )}
               </div>
             </div>
           </div>

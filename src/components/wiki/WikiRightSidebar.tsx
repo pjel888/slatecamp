@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
 import { Brain, ThumbsUp, ThumbsDown, LinkSimple, FileText } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
@@ -14,6 +13,8 @@ import { WikiQuizButton } from './WikiQuizButton'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { WikiArticleSource } from '@/lib/actions/wiki-actions'
 import { cn } from '@/lib/utils'
+import { useToast } from '@/lib/hooks/use-toast'
+import { addWikiBookmark } from '@/lib/actions/wiki-bookmarks'
 
 interface RelatedTopic {
   slug: string
@@ -25,6 +26,8 @@ interface WikiRightSidebarProps {
   practiceLabel: string
   /** Taxonomy node ID for inline quiz modal */
   nodeId?: string
+  /** Article ID for bookmarking */
+  articleId?: string
   /** Topic name for the quiz modal header */
   topicName?: string
   relatedTopics?: RelatedTopic[]
@@ -38,6 +41,7 @@ export function WikiRightSidebar({
   practiceHref,
   practiceLabel,
   nodeId,
+  articleId,
   topicName,
   relatedTopics = [],
   headings,
@@ -47,12 +51,24 @@ export function WikiRightSidebar({
 }: WikiRightSidebarProps) {
   const [feedbackGiven, setFeedbackGiven] = React.useState<'up' | 'down' | null>(null)
   const [linkCopied, setLinkCopied] = React.useState(false)
+  const { toast } = useToast()
 
   const handleCopyLink = () => {
     const url = `${window.location.origin}${ROUTES.WIKI_PAGE(articleSlug)}`
     navigator.clipboard.writeText(url).then(() => {
       setLinkCopied(true)
       setTimeout(() => setLinkCopied(false), 2000)
+    })
+  }
+
+  const handleStudyInNotes = async () => {
+    if (articleId) {
+      await addWikiBookmark(articleId)
+    }
+    toast({
+      variant: 'primary' as any,
+      title: 'Saved this article in notes',
+      description: 'You can now access it from your Notes workspace.',
     })
   }
 
@@ -64,6 +80,19 @@ export function WikiRightSidebar({
       {/* 1. Review CTA — always opens inline quiz modal */}
       <div className="mb-5">
         <WikiQuizButton nodeId={nodeId ?? ''} topicName={topicName ?? 'This Topic'} />
+      </div>
+
+      {/* 1.5 Save to Notes Workspace */}
+      <div className="mb-5">
+        <Button 
+          variant="outline" 
+          size="sm" 
+          onClick={handleStudyInNotes}
+          className="w-full justify-start gap-2 h-9 text-[11px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-all duration-200 group border-border/60 hover:border-primary/30 cursor-pointer"
+        >
+          <FileText size={14} className="group-hover:scale-110 transition-transform" />
+          Study in Notes
+        </Button>
       </div>
 
       {/* 2. Related topics — popover to avoid layout shift */}

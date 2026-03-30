@@ -5,6 +5,7 @@ import { CheckCircle, ArrowRight, ArrowSquareOut, Lightbulb, ChatCircleDots } fr
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { MnemonicTip } from './MnemonicTip'
+import { useQuizStore } from '@/stores/useQuizStore'
 import type { FeedbackData, QuestionForClient, QuizMode } from '@/types/quiz-config'
 
 const SocraticExplorer = lazy(() =>
@@ -39,6 +40,8 @@ export const FeedbackPanel = ({
   const [remainingMs, setRemainingMs] = useState(gatedDelayMs)
   const [socraticOpen, setSocraticOpen] = useState(false)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  
+  const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
 
   const showSocraticButton =
     !feedback.isCorrect && mode != null && SOCRATIC_MODES.includes(mode)
@@ -182,15 +185,14 @@ export const FeedbackPanel = ({
 
       {/* Wiki link */}
       {feedback.wikiUrl && (
-        <a
-          href={feedback.wikiUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs text-[#1B3FC4] hover:underline"
+        <button
+          type="button"
+          onClick={() => openWikiPanel(feedback.wikiUrl!)}
+          className="inline-flex items-center gap-1 text-xs text-[#1B3FC4] hover:underline cursor-pointer"
         >
           <ArrowSquareOut size={12} aria-hidden="true" />
           Read more
-        </a>
+        </button>
       )}
 
       {/* Mnemonic tip — shown for recall questions failed 2+ times */}

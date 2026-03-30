@@ -1,64 +1,99 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { Anthropic } from "@anthropic-ai/sdk";
+import { getAIProvider } from "@/lib/ai/provider";
 import { checkRateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
   try {
-    const { message, context } = await req.json();
+    const { message, context: quizContext } = await req.json();
     const supabase = await createClient();
     
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) return new Response("Unauthorized", { status: 401 });
 
-    const rateLimit = checkRateLimit(`ai_${user.id}`)
+    const rateLimit = checkRateLimit(`ai_tutor_${user.id}`);
     if (!rateLimit.allowed) {
       return NextResponse.json(
         { error: 'Rate limit exceeded. Please wait before sending another message.' },
         { status: 429, headers: { 'Retry-After': String(rateLimit.retryAfter) } }
-      )
+      );
     }
 
-    // 1. Check tokens in user_subscriptions (v1.0 simplification)
-    const { data: sub } = await supabase
-      .from('user_subscriptions')
-      .select('tier')
-      .eq('user_id', user.id)
-      .single();
+    const ai = getAIProvider();
 
-    // Logic for token limits based on tier...
-    // For now, allow all but log usage
+    // 1. Generate embedding for the user's query
+    const queryEmbedding = await ai.generateEmbedding(message);
 
-    const anthropic = new Anthropic({
-      apiKey: process.env.ANTHROPIC_API_KEY!,
+    // 2. Search for relevant wiki articles (RAG)
+    const { data: wikiMatches, error: matchError } = await supabase.rpc('match_wiki_articles', {
+      query_embedding: queryEmbedding,
+      match_threshold: 0.5,
+      match_count: 3,
     });
 
-    const response = await anthropic.messages.create({
-      model: "claude-3-5-sonnet-20241022",
-      max_tokens: 512,
-      temperature: 0,
-      messages: [{ role: "user", content: message }],
-      system: `You are the SlateCamp AI Tutor — a direct, expert educator for professional licensure exams.
+    if (matchError) {
+      console.error("Wiki match error:", matchError);
+    }
 
-Question context:
-${JSON.stringify(context, null, 2)}
+    const contextChunks = wikiMatches?.map((m: any) => 
+      `TITLE: ${m.title}\nSLUG: ${m.slug}\nCONTENT: ${m.content}`
+    ).join("\n\n---\n\n") || "No specific wiki articles found for this query.";
 
-Respond EXACTLY in this format (no extra text):
-**Misconception:** [2-3 sentences on the most common wrong reasoning for this type of question]
-**Principle:** [2-3 sentences on the core concept being tested and why the correct answer is right]
-**Wiki Reference:** [single topic name from the discipline wiki that covers this concept]
+    // 3. PASS 1: Generator
+    const generatorPrompt = `You are the SlateCamp AI Tutor. Answer the student's question based STRICTLY on the provided context.
+If the answer is not in the context, say "I don't have enough verified information in our database to answer that specifically, but based on general principles..."
+
+Retrieved Wiki Context:
+${contextChunks}
+
+Quiz Context:
+${JSON.stringify(quizContext, null, 2)}
+
+User Question:
+${message}
 
 Rules:
-- Be direct and educational, not reassuring
-- Under 200 words total
-- No filler phrases like "Great question!" or "Don't worry"
-- If student answered correctly, the Misconception section should explain what the distractor options were testing`,
+- Append source tags in the format [Source: slug] for every factual claim.
+- Be direct, professional, and educational.
+- Under 200 words.`;
+
+    const generatedResponse = await ai.generateCompletion(generatorPrompt, {
+      temperature: 0,
+      maxTokens: 512,
     });
 
-    // 2. Log interaction in a hypothetical ai_interactions table or user_interactions
-    // (Phase 5 will formalize this)
+    // 4. PASS 2: Auditor (Double-Pass Verification)
+    const auditorPrompt = `You are a Fact Auditor for SlateCamp. Your job is to verify that the following AI-generated response is supported by the retrieved context.
 
-    return NextResponse.json({ reply: response.content[0] });
+Retrieved Context:
+${contextChunks}
+
+AI-Generated Response:
+${generatedResponse}
+
+Rules:
+- If the response makes claims NOT supported by the context, flag them.
+- If the response is largely unsupported, output "REJECTED".
+- If the response is accurate to the context, output "APPROVED: " followed by the original response.
+- Do NOT add your own information.
+
+Final Output:`;
+
+    const auditedOutput = await ai.generateCompletion(auditorPrompt, {
+      temperature: 0,
+      maxTokens: 600,
+    });
+
+    let finalReply = generatedResponse;
+    if (auditedOutput.startsWith("REJECTED")) {
+      finalReply = "I'm sorry, I couldn't find enough verified evidence in our official database to provide a precise answer. Please refer to the core principles in the Wiki.";
+    } else if (auditedOutput.startsWith("APPROVED: ")) {
+      finalReply = auditedOutput.replace("APPROVED: ", "");
+    }
+
+    // 5. Log interaction (Phase 5 placeholder)
+    
+    return NextResponse.json({ reply: finalReply });
   } catch (error) {
     console.error("AI Tutor Error:", error);
     return new Response("Internal Server Error", { status: 500 });

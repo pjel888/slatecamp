@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { UpgradeButtons } from '@/components/dashboard/upgrade/UpgradeButtons'
 
 /**
  * Paywall Full-Screen — UX Strategy Section 15
@@ -98,17 +99,8 @@ const UpgradePage = async () => {
         </div>
 
         {/* Payment CTAs — GCash FIRST (Philippines context) */}
-        <div className="mt-6 flex flex-col items-center gap-3">
-          <button
-            className="w-full max-w-sm rounded-sm bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
-          >
-            Pay with GCash
-          </button>
-          <button
-            className="w-full max-w-sm rounded-sm border border-border bg-white px-6 py-3.5 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:bg-muted"
-          >
-            Pay with Card
-          </button>
+        <div className="flex justify-center">
+          <UpgradeButtons tier="camp" />
         </div>
 
         {/* "Not yet — continue free" — ALWAYS visible, never buried */}

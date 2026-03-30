@@ -1,12 +1,13 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { SetupFlow } from '@/components/quiz-v2/setup/SetupFlow'
 import { PredictionSlider, shouldShowPrediction } from '@/components/quiz-v2/PredictionSlider'
 import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 interface SetupPageClientProps {
   mode: QuizMode
@@ -20,6 +21,11 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
   const [phase, setPhase] = useState<SetupPhase>('setup')
   const [error, setError] = useState<string | null>(null)
   const [createdSessionId, setCreatedSessionId] = useState<string | null>(null)
+
+  // Reset store on setup mount to clear any leftover state from previous sessions
+  useEffect(() => {
+    useQuizStore.getState().reset()
+  }, [])
 
   const handleBegin = async (config: QuizSessionConfig) => {
     setPhase('creating')

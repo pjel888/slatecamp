@@ -5,9 +5,19 @@ export const runtime = 'edge'
 
 export const GET = async (request: NextRequest) => {
   const { searchParams } = request.nextUrl
-  const score = searchParams.get('score') ?? '0'
-  const zone = searchParams.get('zone') ?? 'needs-review'
-  const delta = searchParams.get('delta') ?? ''
+  
+  // Sanitize searchParams — CRITICAL-003 fix
+  const rawScore = searchParams.get('score') ?? '0'
+  const rawZone = searchParams.get('zone') ?? 'needs-review'
+  const rawDelta = searchParams.get('delta') ?? ''
+
+  const scoreNum = parseInt(rawScore, 10)
+  const score = isNaN(scoreNum) ? '0' : Math.max(0, Math.min(100, scoreNum)).toString()
+
+  const allowedZones = ['strong', 'green', 'amber', 'needs-review']
+  const zone = allowedZones.includes(rawZone) ? rawZone : 'needs-review'
+
+  const delta = rawDelta.slice(0, 10).replace(/[^0-9+\-]/g, '')
 
   const zoneColor = {
     'strong': '#2D9F6F',

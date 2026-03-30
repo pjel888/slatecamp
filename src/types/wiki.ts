@@ -35,6 +35,7 @@ export interface WikiArticleHeroProps {
   title: string
   updatedNote: string
   aleTestsYou: string
+  isMinimal?: boolean
 }
 
 export type LawCalloutCode = 'nbcp' | 'bp344' | 'ra9514' | 'bp220' | 'pd957' | 'irr'

@@ -30,13 +30,13 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
   const prog = scenario.program as any
 
   const siteRows: { label: string; value: string }[] = [
-    { label: 'Lot Area', value: `${sd.total_lot_area_sqm} sqm` },
-    { label: 'Shape', value: sd.lot_shape },
-    { label: 'Frontage', value: `${sd.frontage_m} m` },
-    { label: 'Depth', value: `${sd.depth_m} m` },
-    { label: 'Zone', value: sd.zone },
-    { label: 'PSO', value: `${sd.pso_percent}%` },
-    { label: 'Bldg Height Limit', value: `${sd.building_height_limit_m} m` },
+    ...(sd.total_lot_area_sqm ? [{ label: 'Lot Area', value: `${sd.total_lot_area_sqm} sqm` }] : []),
+    ...(sd.lot_shape ? [{ label: 'Shape', value: sd.lot_shape }] : []),
+    ...(sd.frontage_m ? [{ label: 'Frontage', value: `${sd.frontage_m} m` }] : []),
+    ...(sd.depth_m ? [{ label: 'Depth', value: `${sd.depth_m} m` }] : []),
+    ...(sd.zone ? [{ label: 'Zone', value: sd.zone }] : []),
+    ...(sd.pso_percent ? [{ label: 'PSO', value: `${sd.pso_percent}%` }] : []),
+    ...(sd.building_height_limit_m ? [{ label: 'Bldg Height Limit', value: `${sd.building_height_limit_m} m` }] : []),
     ...(sd.flar_min !== undefined && sd.flar_max !== undefined
       ? [{ label: 'FLAR Range', value: `${sd.flar_min} – ${sd.flar_max}` }]
       : []),
@@ -55,7 +55,7 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
     <div className='flex flex-col gap-4'>
       {/* Title block */}
       <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
-        <div className='flex items-start justify-between gap-2'>
+        <div className='items-start justify-between gap-2 hidden sm:flex'>
           <div className='flex-1 min-w-0'>
             <p className='text-[10px] text-[#8896A7] mb-1'>{scenario.building_type}</p>
             <h2 className='text-sm font-semibold text-[#1A2332] leading-snug'>{scenario.title}</h2>
@@ -67,42 +67,70 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
             {style.label}
           </span>
         </div>
+        {/* Mobile title view */}
+        <div className='flex flex-col gap-1 sm:hidden'>
+          <div className='flex items-center justify-between'>
+            <p className='text-[10px] text-[#8896A7]'>{scenario.building_type}</p>
+            <span
+              className='shrink-0 text-[10px] font-medium px-2 py-0.5 rounded-sm'
+              style={{ color: style.color, background: style.bg }}
+            >
+              {style.label}
+            </span>
+          </div>
+          <h2 className='text-sm font-semibold text-[#1A2332] leading-snug'>{scenario.title}</h2>
+        </div>
       </div>
 
       {/* Scenario brief */}
-      <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
-        <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Scenario Brief</h3>
-        <p className='text-xs text-[#4A5568] leading-relaxed'>{scenario.brief}</p>
-      </div>
+      {scenario.brief && (
+        <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
+          <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Scenario Brief</h3>
+          <p className='text-xs text-[#4A5568] leading-relaxed'>{scenario.brief}</p>
+        </div>
+      )}
 
       {/* Site data */}
-      <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-1'>
-        <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide mb-1'>Site Data</h3>
-        {siteRows.map((row) => (
-          <SiteDataRow key={row.label} label={row.label} value={row.value} />
-        ))}
-      </div>
+      {siteRows.length > 0 && (
+        <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-1'>
+          <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide mb-1'>Site Data</h3>
+          {siteRows.map((row) => (
+            <SiteDataRow key={row.label} label={row.label} value={row.value} />
+          ))}
+        </div>
+      )}
 
       {/* Program summary */}
       <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
         <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Building Program</h3>
         <div className='flex flex-col gap-1'>
-          <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
-            <span className='text-[11px] text-[#4A5568]'>Occupancy</span>
-            <span className='text-[11px] font-medium text-[#1A2332] text-right'>{prog.occupancy_type}</span>
-          </div>
-          <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
-            <span className='text-[11px] text-[#4A5568]'>Stories</span>
-            <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.building_stories}</span>
-          </div>
+          {prog.occupancy_type && (
+            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
+              <span className='text-[11px] text-[#4A5568]'>Occupancy</span>
+              <span className='text-[11px] font-medium text-[#1A2332] text-right'>{prog.occupancy_type}</span>
+            </div>
+          )}
+          {prog.building_stories && (
+            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
+              <span className='text-[11px] text-[#4A5568]'>Stories</span>
+              <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.building_stories}</span>
+            </div>
+          )}
+          {prog.total_units && (
+            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
+              <span className='text-[11px] text-[#4A5568]'>Total Units</span>
+              <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.total_units}</span>
+            </div>
+          )}
         </div>
-        {prog.zones.length > 0 && (
+        
+        {prog.zones && prog.zones.length > 0 && (
           <div className='flex flex-col gap-1.5 pt-1'>
-            {prog.zones.map((zone) => (
+            {prog.zones.map((zone: any) => (
               <div key={zone.name} className='flex flex-col gap-0.5'>
                 <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>{zone.name}</span>
                 <div className='flex flex-wrap gap-1'>
-                  {zone.spaces.map((space) => (
+                  {zone.spaces?.map((space: string) => (
                     <span
                       key={space}
                       className='text-[10px] px-1.5 py-0.5 rounded-sm bg-[#F8F7F5] text-[#4A5568]'
@@ -115,6 +143,18 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
               </div>
             ))}
           </div>
+        )}
+
+        {/* Fallback for other program structures */}
+        {(!prog.zones || prog.zones.length === 0) && prog.ground_floor_uses && (
+           <div className='flex flex-col gap-1.5 pt-1'>
+              <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>Ground Floor Uses</span>
+              <div className='flex flex-wrap gap-1'>
+                {prog.ground_floor_uses.map((use: string) => (
+                  <span key={use} className='text-[10px] px-1.5 py-0.5 rounded-sm bg-[#F8F7F5] text-[#4A5568]' style={{ border: '1px solid #D4DAE3' }}>{use}</span>
+                ))}
+              </div>
+           </div>
         )}
       </div>
 

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRight } from '@phosphor-icons/react/dist/ssr'
+import { FileText, Folder, BookOpen, Question, PushPin, Plus, CaretLeft, CaretRight, BookmarkSimple } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { createNoteFolder } from '@/lib/actions/notes-actions'
@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 export type NavFilter =
   | { type: 'all' }
   | { type: 'pinned' }
+  | { type: 'bookmarks' }
   | { type: 'folder'; id: string; name: string }
   | { type: 'source'; source: 'wiki' | 'quiz' }
   | { type: 'topic'; id: string; name: string }
@@ -80,6 +81,10 @@ export function NotesNavigator({ folders, filter, onFilterChange, onFoldersChang
         <button onClick={() => onFilterChange({ type: 'pinned' })} className={navBtn(is({ type: 'pinned' }))} title={collapsed ? 'Pinned' : undefined}>
           <SCIcon icon={PushPin} size="sm" className="shrink-0" weight={is({ type: 'pinned' }) ? 'bold' : 'regular'} />
           {!collapsed && <span className="truncate flex-1">Pinned</span>}
+        </button>
+        <button onClick={() => onFilterChange({ type: 'bookmarks' })} className={navBtn(is({ type: 'bookmarks' }))} title={collapsed ? 'Wiki Bookmarks' : undefined}>
+          <SCIcon icon={BookmarkSimple} size="sm" className="shrink-0" weight={is({ type: 'bookmarks' }) ? 'bold' : 'regular'} />
+          {!collapsed && <span className="truncate flex-1">Wiki Bookmarks</span>}
         </button>
       </div>
 

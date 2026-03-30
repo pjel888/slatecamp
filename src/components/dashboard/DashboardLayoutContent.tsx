@@ -19,6 +19,7 @@ import { ActiveSessionProvider } from '@/lib/context/active-session-context'
 import { DisciplineProvider } from '@/lib/context/discipline-context'
 import { isDemoMode } from '@/lib/demo/config'
 import { getCachedDisciplines } from '@/lib/actions/cached-queries'
+import { Toaster } from '@/components/ui/toaster'
 import type { UserTier, UserGlobalStats, Discipline } from '@/types/app'
 
 interface DashboardLayoutContentProps {
@@ -140,6 +141,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                   />
                 </>
               )}
+              <Toaster />
             </div>
           </SidebarProvider>
           </NoteContextProvider>

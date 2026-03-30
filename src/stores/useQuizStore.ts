@@ -56,6 +56,7 @@ interface UIState {
   submitModalOpen: boolean
   microBreakVisible: boolean
   offlineBannerVisible: boolean
+  calculatingResults: boolean
 }
 
 // ---------------------------------------------------------------------------
@@ -213,6 +214,7 @@ const defaultUI = (): UIState => ({
   submitModalOpen: false,
   microBreakVisible: false,
   offlineBannerVisible: false,
+  calculatingResults: false,
 })
 
 const makeAnswerState = (now: number): QuizAnswerState => ({

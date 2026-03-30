@@ -60,19 +60,16 @@ export const QuizFooter = ({
         <button
           type="button"
           onClick={onNext}
-          disabled={!hasAnswered}
           className={cn(
             'inline-flex items-center gap-1 text-[13px]',
             'min-h-[44px] px-1',
             'transition-colors duration-150',
             'focus-visible:outline-none focus-visible:underline',
-            hasAnswered
-              ? 'text-[#1B3FC4] hover:text-[#1535A8]'
-              : 'text-[#D4DAE3] cursor-default',
+            'text-[#1B3FC4] hover:text-[#1535A8]',
           )}
-          aria-label={isLast ? 'Submit quiz' : 'Next question'}
+          aria-label={isLast ? 'See results' : 'Next question'}
         >
-          {isLast ? 'Submit' : 'Next'}
+          {isLast ? 'See results' : 'Next'}
           {!isLast && <ArrowRight size={14} aria-hidden="true" />}
         </button>
       </div>

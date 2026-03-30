@@ -253,7 +253,7 @@ export const Omnibar = ({
                   </div>
                 </motion.div>
               ) : (
-                <div className="flex-1 flex flex-col items-center justify-center text-center opacity-30 grayscale">
+                <div key="empty" className="flex-1 flex flex-col items-center justify-center text-center opacity-30 grayscale">
                   <SCIcon
                     icon={BookOpen}
                     size="2xl"

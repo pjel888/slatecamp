@@ -656,6 +656,7 @@ export interface NoteStub {
   tags: string[];
   color?: string | null;
   snippet?: string;
+  is_virtual?: boolean;
 }
 
 // =============================================

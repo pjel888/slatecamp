@@ -383,9 +383,14 @@ export const WikiQuizModal = ({ nodeId, topicName, onClose }: WikiQuizModalProps
                 })}
               </div>
 
-              {/* Slide to submit — visible when option selected, not yet submitted */}
-              {selectedOptionId && status === 'question' && (
-                <SlideToSubmit onSubmit={handleSubmit} label="Slide to submit" />
+              {/* Slide to submit — always visible when question/feedback is active */}
+              {(status === 'question' || status === 'feedback') && (
+                <SlideToSubmit 
+                  onSubmit={handleSubmit} 
+                  label="Slide to submit" 
+                  disabled={!selectedOptionId || status === 'feedback'}
+                  checked={status === 'feedback'}
+                />
               )}
 
               {/* Feedback panel */}

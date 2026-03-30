@@ -5,6 +5,7 @@ import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
 import { runPostInteractionHooks } from '@/lib/actions/mastery/post-interaction-hooks'
+import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
 import type { SubmitAnswerInput, SubmitAnswerResult, QuestionType } from '@/types/quiz-config'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
 
@@ -183,13 +184,32 @@ export const submitAnswer = async (
 
   // 10. Fire post-interaction hooks (memory strength + decay rate — non-blocking)
   const sessionConfig = session.config as { mode?: string; interleave?: boolean } | null
+
+  // SRS scheduling (only for learning modes like 'camp')
+  if (sessionConfig?.mode === 'camp' || sessionConfig?.mode === 'focused') {
+    // We don't have current avg_time_ms easily here, passing 0 as baseline
+    deriveQualityRating({
+      isCorrect,
+      timeSpentMs,
+      avgTimeMs: 0,
+      confidence: confidenceText,
+      isSuspectedLuckyGuess,
+    }).then((quality) => {
+      void updateSrsSchedule(user.id, question.topic_id!, quality)
+    })
+  }
+
   // Generation effect: correct generation answers get 1.2x EMA weight
   // for stronger memory trace (production effect from cognitive science)
-  const generationMultiplier = isGeneration && isCorrect ? 1.2 : 1.0
+  // Lucky guess: 0.5x weight to force re-testing (overrides generation multiplier)
+  let generationMultiplier = isGeneration && isCorrect ? 1.2 : 1.0
+  if (isSuspectedLuckyGuess) {
+    generationMultiplier = 0.5
+  }
 
   runPostInteractionHooks({
     userId: user.id,
-    topicId: question.topic_id,
+    topicId: question.topic_id!,
     isCorrect,
     timeSpentMs,
     avgTimeMs: 0, // first interaction has no baseline — hook handles this

@@ -9,6 +9,7 @@ import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { getSubjectName } from '@/types/testing'
 import { Button } from '@/components/ui/button'
@@ -124,33 +125,38 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
   const wikiNodeId = node?.node_id ?? undefined
   const wikiTopicName = node?.name ?? article.title
 
+  const isMinimal = sp?.minimal === 'true'
+
   return (
     <>
       {/* Zone 1: Header — full-width, sticky top, fixed height */}
-      <Suspense fallback={null}>
-        <div className="sticky top-0 z-30 border-b border-border bg-background">
-          <WikiHeader
-            nodeId={node?.node_id}
-            articleId={article.article_id}
-            articleTitle={article.title}
-            articleSlug={article.slug}
-            scrollContainerId="wiki-center-pane"
-            mobileActionsContent={
-              <WikiRightSidebar
-                practiceHref={practiceHref}
-                practiceLabel={practiceLabel}
-                nodeId={wikiNodeId}
-                topicName={wikiTopicName}
-                relatedTopics={relatedTopics}
-                headings={headings}
-                articleSlug={article.slug}
-                scrollContainerId="wiki-center-pane"
-                sources={sources}
-              />
-            }
-          />
-        </div>
-      </Suspense>
+      {!isMinimal && (
+        <Suspense fallback={null}>
+          <div className="sticky top-0 z-30 border-b border-border bg-background">
+            <WikiHeader
+              nodeId={node?.node_id}
+              articleId={article.article_id}
+              articleTitle={article.title}
+              articleSlug={article.slug}
+              scrollContainerId="wiki-center-pane"
+              mobileActionsContent={
+                <WikiRightSidebar
+                  practiceHref={practiceHref}
+                  practiceLabel={practiceLabel}
+                  nodeId={wikiNodeId}
+                  articleId={article.article_id}
+                  topicName={wikiTopicName}
+                  relatedTopics={relatedTopics}
+                  headings={headings}
+                  articleSlug={article.slug}
+                  scrollContainerId="wiki-center-pane"
+                  sources={sources}
+                />
+              }
+            />
+          </div>
+        </Suspense>
+      )}
 
       {/* Zone 3 + Zone 4 body */}
       <div className="flex flex-1 min-h-0">
@@ -167,7 +173,7 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
               scrollContainerId="wiki-center-pane"
             />
 
-            <div className="max-w-4xl mx-auto px-8 py-8">
+            <div className={cn("max-w-4xl mx-auto px-8 py-8", isMinimal && "px-4 py-4")}>
               <WrongAnswerBanner
                 fromWrongAnswer={sp?.from === 'wrong-answer'}
                 topicName={(sp?.topic as string) ?? null}
@@ -180,6 +186,7 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
                 title={article.title}
                 updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
                 aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
+                isMinimal={isMinimal}
               />
 
               <WikiArticle
@@ -201,30 +208,35 @@ export default async function WikiArticlePage({ params, searchParams }: PageProp
           </div>
 
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}
-          <div className="shrink-0 border-t border-border bg-background print:hidden">
-            <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
-              <span>&larr; Previous topic</span>
-              <span>Next topic &rarr;</span>
+          {!isMinimal && (
+            <div className="shrink-0 border-t border-border bg-background print:hidden">
+              <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
+                <span>&larr; Previous topic</span>
+                <span>Next topic &rarr;</span>
+              </div>
             </div>
-          </div>
+          )}
         </main>
 
         {/* Zone 4: Right Sidebar — sticky, strict ordering. Hidden in print. */}
-        <aside className="hidden lg:block print:!hidden w-56 shrink-0 border-l border-border/60">
-          <div className="sticky top-0 max-h-screen overflow-y-auto py-6 px-4">
-            <WikiRightSidebar
-              practiceHref={practiceHref}
-              practiceLabel={practiceLabel}
-              nodeId={wikiNodeId}
-              topicName={wikiTopicName}
-              relatedTopics={relatedTopics}
-              headings={headings}
-              articleSlug={article.slug}
-              scrollContainerId="wiki-center-pane"
-              sources={sources}
-            />
-          </div>
-        </aside>
+        {!isMinimal && (
+          <aside className="hidden lg:block print:!hidden w-56 shrink-0 border-l border-border/60">
+            <div className="sticky top-0 max-h-screen overflow-y-auto py-6 px-4">
+              <WikiRightSidebar
+                practiceHref={practiceHref}
+                practiceLabel={practiceLabel}
+                nodeId={wikiNodeId}
+                articleId={article.article_id}
+                topicName={wikiTopicName}
+                relatedTopics={relatedTopics}
+                headings={headings}
+                articleSlug={article.slug}
+                scrollContainerId="wiki-center-pane"
+                sources={sources}
+              />
+            </div>
+          </aside>
+        )}
       </div>
     </>
   )

@@ -16,6 +16,7 @@ const variantIcons = {
   error: WarningCircle,
   warning: Warning,
   info: Info,
+  primary: Info,
 } as const
 
 const variantIconColors = {
@@ -23,6 +24,7 @@ const variantIconColors = {
   error: "text-destructive",
   warning: "text-amber-500",
   info: "text-blue-500",
+  primary: "text-[#1B3FC4]",
 } as const
 
 type SemanticVariant = keyof typeof variantIcons
@@ -39,22 +41,25 @@ export const Toaster = () => {
         const variantStr = variant as string | null | undefined
         const Icon = isSemanticVariant(variantStr)
           ? variantIcons[variantStr]
-          : null
+          : Info // Fallback to Info icon for default/others
 
         return (
           <Toast key={id} variant={variant} {...props}>
-            <div className="flex gap-3 items-start">
-              {Icon && (
-                <Icon
-                  className={`h-5 w-5 mt-0.5 shrink-0 ${
-                    variantIconColors[variantStr as SemanticVariant]
-                  }`}
-                />
-              )}
+            <div className="flex gap-3 items-start pr-2">
+              <Icon
+                weight="fill"
+                className={`h-5 w-5 mt-0.5 shrink-0 ${
+                  isSemanticVariant(variantStr) 
+                    ? variantIconColors[variantStr] 
+                    : "text-zinc-400"
+                }`}
+              />
               <div className="grid gap-1">
-                {title && <ToastTitle>{title}</ToastTitle>}
+                {title && <ToastTitle className="text-[13px] font-bold leading-tight">{title}</ToastTitle>}
                 {description && (
-                  <ToastDescription>{description}</ToastDescription>
+                  <ToastDescription className="text-[12px] text-zinc-500 leading-normal">
+                    {description}
+                  </ToastDescription>
                 )}
               </div>
             </div>

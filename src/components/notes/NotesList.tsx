@@ -1,6 +1,6 @@
 'use client'
 
-import { Plus, MagnifyingGlass, Trash, PushPin, BookOpen, Question, SquaresFour, Warning, CaretLeft, CaretRight, FileText } from '@phosphor-icons/react/dist/ssr'
+import { Plus, MagnifyingGlass, Trash, PushPin, BookOpen, Question, SquaresFour, Warning, CaretLeft, CaretRight, FileText, BookmarkSimple } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { formatDistanceToNow } from 'date-fns'
 import { cn } from '@/lib/utils'
@@ -117,6 +117,7 @@ export function NotesList({
                         isSelected
                           ? 'bg-primary-50'
                           : 'hover:bg-camp-cobalt/[0.04]',
+                        note.is_virtual && !isSelected && 'bg-zinc-50/50',
                       )}
                       style={{ width: 'calc(100% - 8px)' }}
                     >
@@ -137,12 +138,15 @@ export function NotesList({
                         {note.is_pinned && (
                           <SCIcon icon={PushPin} size="xs" className="shrink-0 text-primary" />
                         )}
+                        {note.is_virtual && (
+                          <SCIcon icon={BookmarkSimple} size="xs" weight="fill" className="shrink-0 text-primary/60" />
+                        )}
                       </div>
 
                       {/* Snippet */}
-                      {note.snippet && (
-                        <span className="line-clamp-2 text-[11px] leading-relaxed text-text-secondary">
-                          {note.snippet}
+                      {(note.snippet || note.is_virtual) && (
+                        <span className="line-clamp-2 text-[11px] leading-relaxed text-text-secondary italic">
+                          {note.is_virtual ? 'Bookmarked Wiki Article' : note.snippet}
                         </span>
                       )}
 
@@ -165,8 +169,8 @@ export function NotesList({
                           </span>
                         )}
                         {note.article_id && (
-                          <span className="text-[11px] text-primary" title="From Wiki">
-                            <SCIcon icon={BookOpen} size="xs" />
+                          <span className={cn("text-[11px]", note.is_virtual ? "text-primary/60" : "text-primary")} title={note.is_virtual ? "Bookmarked" : "From Wiki"}>
+                            <SCIcon icon={note.is_virtual ? BookmarkSimple : BookOpen} size="xs" weight={note.is_virtual ? "fill" : "regular"} />
                           </span>
                         )}
                         {note.question_id && (
@@ -182,17 +186,19 @@ export function NotesList({
                       'absolute right-3 top-2.5 hidden items-center gap-0.5 group-hover:flex',
                       isSelected && 'hidden',
                     )}>
-                      <button
-                        onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
-                        className="rounded p-1 text-border hover:bg-primary-50 hover:text-primary transition-colors"
-                        title={note.is_pinned ? 'Unpin' : 'Pin'}
-                      >
-                        <SCIcon icon={PushPin} size="xs" />
-                      </button>
+                      {!note.is_virtual && (
+                        <button
+                          onClick={(e) => { e.stopPropagation(); onPin(note.id, !note.is_pinned) }}
+                          className="rounded p-1 text-border hover:bg-primary-50 hover:text-primary transition-colors"
+                          title={note.is_pinned ? 'Unpin' : 'Pin'}
+                        >
+                          <SCIcon icon={PushPin} size="xs" />
+                        </button>
+                      )}
                       <button
                         onClick={(e) => { e.stopPropagation(); onDelete(note.id) }}
                         className="rounded p-1 text-border hover:bg-destructive-50 hover:text-destructive transition-colors"
-                        title="Delete"
+                        title={note.is_virtual ? 'Remove Bookmark' : 'Delete'}
                       >
                         <SCIcon icon={Trash} size="xs" />
                       </button>

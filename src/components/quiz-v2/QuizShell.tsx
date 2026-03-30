@@ -10,8 +10,10 @@ import { QuestionPalette } from './QuestionPalette'
 import { ExitConfirmModal } from './ExitConfirmModal'
 import { SubmitConfirmModal } from './SubmitConfirmModal'
 import { MicroBreakOverlay } from './MicroBreakOverlay'
+import { CalculatingResultsOverlay } from './CalculatingResultsOverlay'
 import { TimerDisplay } from './TimerDisplay'
 import { PacingNudge } from './PacingNudge'
+import { WikiSidePanel } from '@/components/shared/WikiSidePanel'
 import { endSession as endSessionAction } from '@/lib/actions/quiz-v2'
 import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type {
@@ -46,6 +48,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const uiState = useQuizStore((s) => s.ui)
   const results = useQuizStore((s) => s.results)
   const storeQuestions = useQuizStore((s) => s.questions)
+  const storeSessionId = useQuizStore((s) => s.sessionId)
 
   // ── Store actions (stable refs) ───────────────────────────────────────────
 
@@ -125,10 +128,10 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   // ── Navigate to results when session ends ─────────────────────────────────
 
   useEffect(() => {
-    if (status === 'results' && results) {
+    if (status === 'results' && results && storeSessionId === sessionId) {
       router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
     }
-  }, [status, results, config.mode, sessionId, router])
+  }, [status, results, config.mode, sessionId, storeSessionId, router])
 
   // ── Derived data ──────────────────────────────────────────────────────────
 
@@ -224,6 +227,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
 
   const handleSubmitAll = useCallback(async () => {
     hideSubmitModal()
+    useQuizStore.setState((s) => ({ ui: { ...s.ui, calculatingResults: true } }))
     try {
       const result = await endSessionAction({
         sessionId,
@@ -250,7 +254,9 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const handleFooterNext = useCallback(() => {
     const isLast = currentIndex === totalQuestions - 1
     if (isLast) {
-      if (config.navigation.confirmBeforeSubmit) {
+      const answeredCount = getAnsweredCount()
+      // If not all answered (100% threshold), show confirmation modal
+      if (answeredCount < totalQuestions) {
         showSubmitModal()
       } else {
         void handleSubmitAll()
@@ -264,10 +270,10 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   }, [
     currentIndex,
     totalQuestions,
-    config.navigation.confirmBeforeSubmit,
-    feedbackState.visible,
+    getAnsweredCount,
     showSubmitModal,
     handleSubmitAll,
+    feedbackState.visible,
     hideFeedback,
     goNext,
   ])
@@ -401,6 +407,17 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
           questionsCompleted={getAnsweredCount()}
           breakDurationSeconds={config.breaks.breakDurationSeconds}
           onContinue={hideMicroBreak}
+        />
+      )}
+
+      {/* Calculating results overlay */}
+      {uiState.calculatingResults && <CalculatingResultsOverlay />}
+
+      {/* Wiki panel — slide-in panel for citations */}
+      {uiState.wikiPanelOpen && uiState.wikiPanelUrl && (
+        <WikiSidePanel
+          url={uiState.wikiPanelUrl}
+          onClose={useQuizStore((s) => s.closeWikiPanel)}
         />
       )}
     </div>

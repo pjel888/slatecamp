@@ -107,6 +107,7 @@ export function AITutorDrawer({
     <AnimatePresence>
       {isVisible && (
         <motion.div
+          key="aitutor-drawer"
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: 'auto', opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}

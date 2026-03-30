@@ -5,6 +5,7 @@ import { X, PaperPlaneRight, ChatCircleDots } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { SourceBadgeRow, extractSources, stripSources } from '@/components/shared/SourceBadge'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 // ---------------------------------------------------------------------------
 // Types
@@ -56,6 +57,12 @@ export const SocraticExplorer = ({
   const [isComplete, setIsComplete] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  
+  const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
+
+  const handleSourceClick = (slug: string) => {
+    openWikiPanel(`/dashboard/wiki/${slug}`)
+  }
 
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -255,7 +262,12 @@ export const SocraticExplorer = ({
                 )}
               >
                 <p className="whitespace-pre-wrap">{stripSources(msg.content)}</p>
-                {msg.sources.length > 0 && <SourceBadgeRow sources={msg.sources} />}
+                {msg.sources.length > 0 && (
+                  <SourceBadgeRow 
+                    sources={msg.sources} 
+                    onSourceClick={handleSourceClick}
+                  />
+                )}
               </div>
             </div>
           ))}

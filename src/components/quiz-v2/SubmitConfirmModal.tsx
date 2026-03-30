@@ -8,6 +8,7 @@ import {
   ArrowUUpLeft,
   PaperPlaneTilt,
   MagnifyingGlass,
+  Warning,
 } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -83,6 +84,9 @@ export const SubmitConfirmModal = ({
     (q) => answers.get(q.question_id)?.isSkipped,
   ).length
 
+  const answeredPercent = (answeredCount / questions.length) * 100
+  const isLowCompletion = answeredPercent < 50
+
   // Store previous focus, focus submit button on mount
   useEffect(() => {
     previousFocusRef.current = document.activeElement
@@ -144,15 +148,30 @@ export const SubmitConfirmModal = ({
             id="submit-confirm-title"
             className="text-sm font-semibold text-[#1A2332]"
           >
-            Ready to submit?
+            {isLowCompletion ? 'Are you sure?' : 'Ready to submit?'}
           </h2>
           <p
             id="submit-confirm-desc"
             className="text-sm text-[#4A5568]"
           >
-            Review your answers below before submitting. This action cannot be undone.
+            {isLowCompletion
+              ? `You've only answered ${Math.round(answeredPercent)}% of the questions. Review your progress before submitting.`
+              : 'Review your answers below before submitting. This action cannot be undone.'}
           </p>
         </div>
+
+        {/* Low completion warning */}
+        {isLowCompletion && (
+          <div className="flex items-start gap-2 rounded-md bg-[#FFF5F5] p-3 border border-[#FEB2B2]">
+            <Warning size={18} weight="fill" className="text-[#E53E3E] shrink-0 mt-0.5" />
+            <div className="space-y-1">
+              <p className="text-xs font-semibold text-[#C53030]">High number of unanswered questions</p>
+              <p className="text-[11px] text-[#C53030] leading-normal">
+                Submitting now will negatively impact your readiness score and statistics.
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Summary stats */}
         <div className="grid grid-cols-3 gap-2">

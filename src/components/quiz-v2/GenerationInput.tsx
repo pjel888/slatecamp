@@ -208,15 +208,13 @@ export const GenerationInput = ({
         />
       )}
 
-      {/* Slide-to-submit bar */}
-      {!isChecked && (
-        <SlideToSubmit
-          onSubmit={onSubmit}
-          label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
-          disabled={!hasAnswered || isDisabled}
-          checked={isChecked}
-        />
-      )}
+      {/* Slide-to-submit bar — always visible, disabled until answer entered or after submit */}
+      <SlideToSubmit
+        onSubmit={onSubmit}
+        label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
+        disabled={!hasAnswered || isDisabled}
+        checked={isChecked}
+      />
 
       {/* Inline feedback panel */}
       {showFeedbackPanel && selectedOptionId && (

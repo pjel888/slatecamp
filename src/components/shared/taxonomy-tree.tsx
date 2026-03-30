@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { CaretRight, FileText, BookOpen, Stack } from '@phosphor-icons/react/dist/ssr'
+import { CaretRight, FileText, BookOpen, Stack, ArrowsIn, ArrowsOut } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { SearchInput } from '@/components/ui/input'
 
@@ -258,13 +258,14 @@ const TreeBranch = React.memo(({
       {/* Node row */}
       <div
         className={cn(
-          'group flex items-center min-w-0',
+          'group flex items-center min-w-0 transition-opacity duration-150',
           node.level <= 1 && 'mt-2 first:mt-0',
           node.level === 2 && 'mt-3 first:mt-0',
+          isDimmed && 'opacity-60 grayscale-[0.3]',
         )}
         style={{ paddingLeft: `${indent}px` }}
       >
-        {/* Expand/collapse chevron (subjects + subtopics) or leaf dot (articles) */}
+        {/* Expand/collapse chevron (subjects + subtopics) or spacer */}
         {isExpandable ? (
           <button
             type="button"
@@ -272,8 +273,8 @@ const TreeBranch = React.memo(({
             onClick={handleToggle}
             className={cn(
               'flex w-5 shrink-0 items-center justify-center text-text-secondary transition-colors duration-150',
-              'hover:text-foreground',
-              node.level <= 1 ? 'h-8' : 'h-5',
+              'hover:text-foreground cursor-pointer',
+              node.level <= 1 ? 'h-8' : 'h-6',
             )}
             aria-label={isExpanded ? 'Collapse' : 'Expand'}
           >
@@ -285,14 +286,7 @@ const TreeBranch = React.memo(({
             />
           </button>
         ) : (
-          <span className={cn('flex w-5 shrink-0 items-center justify-center', node.level <= 1 ? 'h-8' : 'h-5')}>
-            <span
-              className={cn(
-                'h-1.5 w-1.5 rounded-full',
-                isActive ? 'bg-primary' : 'bg-border',
-              )}
-            />
-          </span>
+          <span className={cn('flex w-5 shrink-0 items-center justify-center', node.level <= 1 ? 'h-8' : 'h-6')} />
         )}
 
         {/* Level icon */}
@@ -310,10 +304,10 @@ const TreeBranch = React.memo(({
           className={cn(
             'flex-1 truncate transition-colors duration-150 min-w-0',
             node.level <= 1
-              ? 'text-xs font-semibold py-1.5'
+              ? 'text-[13px] font-bold py-1.5 tracking-tight'
               : isLeaf
                 ? 'text-xs font-medium py-px'
-                : 'text-xs font-semibold py-px',
+                : 'text-[12.5px] font-semibold py-px',
             isActive || isChildActive
               ? 'text-primary'
               : isDimmed
@@ -328,7 +322,7 @@ const TreeBranch = React.memo(({
         {orderLabel && (
           <span
             className={cn(
-              'ml-auto shrink-0 pl-2 font-[family-name:var(--font-dm-mono)] text-[11px] tabular-nums',
+              'ml-auto shrink-0 pl-2 font-[family-name:var(--font-dm-mono)] text-[10px] tabular-nums tracking-widest opacity-60',
               isActive || isChildActive ? 'text-primary' : 'text-text-secondary',
             )}
           >
@@ -341,63 +335,65 @@ const TreeBranch = React.memo(({
       {isExpanded && isExpandable && (
         <div
           className={cn(
-            'border-l transition-colors duration-150 space-y-2',
-            isActive || isChildActive ? 'border-primary/30' : 'border-border/60',
+            'border-l transition-colors duration-150 space-y-2 mt-2 mb-2',
+            isActive || isChildActive ? 'border-primary/40 shadow-[inset_1px_0_0_rgba(27,63,196,0.1)]' : 'border-border/60',
           )}
-          style={{ marginLeft: `${indent + 22}px` }}
+          style={{ marginLeft: `${indent + 10}px` }}
         >
-          {/* Child nodes */}
-          {visibleChildren.map((child, i) => (
-            <TreeBranch
-              key={child.node_id}
-              node={child}
-              depth={0}
-              expanded={expanded}
-              onToggle={onToggle}
-              activeSlug={activeSlug}
-              activeAncestors={activeAncestors}
-              basePath={basePath}
-              onNavigate={onNavigate}
-              showCounts={showCounts}
-              dimInactive={dimInactive}
-              matchSet={matchSet}
-              searchQuery={searchQuery}
-              siblingIndex={i}
-            />
-          ))}
+          <div style={{ marginLeft: '12px' }}>
+            {/* Child nodes */}
+            {visibleChildren.map((child, i) => (
+              <TreeBranch
+                key={child.node_id}
+                node={child}
+                depth={0}
+                expanded={expanded}
+                onToggle={onToggle}
+                activeSlug={activeSlug}
+                activeAncestors={activeAncestors}
+                basePath={basePath}
+                onNavigate={onNavigate}
+                showCounts={showCounts}
+                dimInactive={dimInactive}
+                matchSet={matchSet}
+                searchQuery={searchQuery}
+                siblingIndex={i}
+              />
+            ))}
 
-          {/* Article links */}
-          {visibleArticles.map((art) => {
-            const artHref = `${basePath}/${art.slug}`
-            const isArtActive = activeSlug === art.slug
+            {/* Article links */}
+            {visibleArticles.map((art) => {
+              const artHref = `${basePath}/${art.slug}`
+              const isArtActive = activeSlug === art.slug
 
-            return (
-              <div key={art.article_id} className="flex items-center min-w-0">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center">
-                  <FileText
+              return (
+                <div key={art.article_id} className="flex items-center min-w-0 py-0.5">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center">
+                    <span
+                      className={cn(
+                        'h-1 w-1 rounded-full transition-colors duration-150',
+                        isArtActive ? 'bg-primary' : 'bg-border-default',
+                      )}
+                    />
+                  </span>
+                  <Link
+                    href={artHref}
+                    onClick={(e) => handleClick(e, artHref)}
                     className={cn(
-                      'h-3 w-3 transition-colors duration-150',
-                      isArtActive ? 'text-primary' : 'text-text-secondary',
+                      'flex-1 truncate py-0.5 text-xs transition-colors duration-150 min-w-0',
+                      isArtActive
+                        ? 'text-primary font-bold'
+                        : isDimmed
+                          ? 'text-muted-foreground'
+                          : 'text-text-secondary hover:text-primary',
                     )}
-                  />
-                </span>
-                <Link
-                  href={artHref}
-                  onClick={(e) => handleClick(e, artHref)}
-                  className={cn(
-                    'flex-1 truncate py-0.5 text-xs font-medium transition-colors duration-150 min-w-0',
-                    isArtActive
-                      ? 'text-primary font-medium'
-                      : isDimmed
-                        ? 'text-muted-foreground'
-                        : 'text-text-secondary hover:text-primary',
-                  )}
-                >
-                  <HighlightMatch text={art.title} query={searchQuery} />
-                </Link>
-              </div>
-            )
-          })}
+                  >
+                    <HighlightMatch text={art.title} query={searchQuery} />
+                  </Link>
+                </div>
+              )
+            })}
+          </div>
         </div>
       )}
     </>
@@ -434,6 +430,24 @@ const TaxonomyTree = ({
 
   const totalNodes = React.useMemo(() => countNodes(nodes), [nodes])
   const shouldShowSearch = showSearch ?? totalNodes > 10
+
+  const handleExpandAll = React.useCallback(() => {
+    const allIds = new Set<string>()
+    const walk = (list: TaxonomyTreeNode[]) => {
+      for (const n of list) {
+        if (!n.is_leaf && (n.children?.length || n.articles?.length)) {
+          allIds.add(n.node_id)
+        }
+        if (n.children?.length) walk(n.children)
+      }
+    }
+    walk(nodes)
+    setExpanded(allIds)
+  }, [nodes])
+
+  const handleCollapseAll = React.useCallback(() => {
+    setExpanded(new Set())
+  }, [])
 
   const matchSet = React.useMemo(
     () => filterNodes(nodes, deferredQuery),
@@ -488,21 +502,40 @@ const TaxonomyTree = ({
   return (
     <div className={cn(
       'group/tree flex flex-col',
-      'opacity-75 hover:opacity-100 transition-opacity duration-200 ease-out',
-      'motion-reduce:transition-none motion-reduce:opacity-100',
+      'transition-opacity duration-200 ease-out',
       className,
     )}>
-      {shouldShowSearch && (
-        <div className="border-b border-border p-1 pb-2">
+      <div className="flex flex-col gap-1.5 p-2 pb-3 border-b border-border/60">
+        {shouldShowSearch && (
           <SearchInput
             onChange={setSearchQuery}
-            placeholder="Filter topics..."
+            placeholder="Filter syllabus..."
             size="sm"
             debounceMs={250}
             loading={isSearchPending}
+            className="bg-muted/30 border-none shadow-none focus-visible:ring-1 focus-visible:ring-primary/20"
           />
+        )}
+        
+        <div className="flex items-center justify-end px-1 mt-0.5">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleExpandAll}
+              className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer"
+              title="Expand All"
+            >
+              <ArrowsOut size={13} weight="bold" />
+            </button>
+            <button
+              onClick={handleCollapseAll}
+              className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer"
+              title="Collapse All"
+            >
+              <ArrowsIn size={13} weight="bold" />
+            </button>
+          </div>
         </div>
-      )}
+      </div>
 
       {/* Screen reader announcement for search results */}
       <div aria-live="polite" aria-atomic="true" className="sr-only">
@@ -524,7 +557,7 @@ const TaxonomyTree = ({
           </p>
         </div>
       ) : (
-        <nav className="overflow-y-auto p-1 space-y-2" aria-label="Taxonomy navigation">
+        <nav className="overflow-y-auto p-1 py-3 space-y-0.5" aria-label="Taxonomy navigation">
           {visibleRoots.map((node, i) => (
             <TreeBranch
               key={node.node_id}

@@ -218,9 +218,9 @@ export async function recordMastery(
   else if (test_mode === 'chill') alpha = 0.1
   else if (test_mode === 'blindspot') alpha = 0.3
 
-  // 4. Lucky guess: 0.3× weight instead of full contribution
+  // 4. Lucky guess: 0.5× weight instead of full contribution
   // Wrong answers always get full weight (wrong answers should fully penalize)
-  const baseWeight = suspected_guess ? 0.3 : 1.0
+  const baseWeight = suspected_guess ? 0.5 : 1.0
   const answerValue = is_correct ? 1.0 : 0.0
 
   const prevMastery = current?.current_mastery_weight ?? 0.0
