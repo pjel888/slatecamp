@@ -7,6 +7,7 @@ import { EditorView } from '@codemirror/view'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import type { ParsedHeading } from './types'
+import { generateDraftPreview, updateDraftPreview } from '@/lib/actions/preview-actions'
 
 // ─── Props ────────────────────────────────────────────────────
 
@@ -304,7 +305,6 @@ export const ArticlePanel = ({
   )
 
   // ── Preview generation & auto-sync ───────────────────────
-  const { generateDraftPreview, updateDraftPreview } = require('@/lib/actions/preview-actions') // Imported here to avoid issues with client components if not needed directly
   
   const refreshStudentView = useCallback(async () => {
     try {
