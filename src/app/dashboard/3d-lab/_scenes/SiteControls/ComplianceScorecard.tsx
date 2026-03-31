@@ -1,58 +1,61 @@
 'use client'
 
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
-import { SITE_CONTROL_CITATIONS } from '../../_constants/siteControls'
 
 /**
  * Pass/fail compliance readout for PD 1096 site development controls.
- * Enhanced with floorHeight check, TGFA/BHL metrics, and severity-aware violations.
+ * 5 items per the spec, with correct IRR citations from Rule VII/VIII.
  */
 export function ComplianceScorecard() {
   const computed = useSiteControlsStore((s) => s.computed)
   const floorHeight = useSiteControlsStore((s) => s.inputs.floorHeight)
-  const { compliance, violations, ambf, tosl, tla, isa, usa, maca, pso, tgfa, bhl, setbacks, zoningData } = computed
+  const {
+    compliance, violations, ambf, tosl, tla, isa, usa, maca, pso, tgfa, bhl,
+    setbacks, zoningData, lotCoverageMax, isaPercent, usaPercent,
+  } = computed
 
   const checks = [
     {
       label: `AMBF ${ambf.toFixed(1)} sqm`,
       pass: compliance.ambfOk,
-      citation: SITE_CONTROL_CITATIONS.ambf,
+      citation: 'Rule VIII, Sec. 803, Table VIII.1',
       detail: compliance.ambfOk
-        ? `Within ${(zoningData.maxPSO * 100).toFixed(0)}% PSO limit`
-        : `Exceeds max ${(zoningData.maxPSO * tla).toFixed(1)} sqm`,
+        ? `Within ${(lotCoverageMax * 100).toFixed(0)}% PSO limit (max ${(lotCoverageMax * tla).toFixed(1)} sqm)`
+        : `Exceeds max ${(lotCoverageMax * tla).toFixed(1)} sqm`,
     },
     {
       label: `TOSL ${tosl.toFixed(1)} sqm`,
       pass: compliance.toslOk,
-      citation: SITE_CONTROL_CITATIONS.tosl,
+      citation: 'Rule VIII, Sec. 803, Table VIII.1 (note d)',
       detail: compliance.toslOk
-        ? `Open space meets minimum`
-        : `Below minimum required`,
+        ? `Open space meets ${((1 - lotCoverageMax) * 100).toFixed(0)}% minimum`
+        : `Below minimum ${((1 - lotCoverageMax) * tla).toFixed(1)} sqm`,
     },
     {
-      label: `TLA identity`,
+      label: 'TLA identity',
       pass: compliance.identityOk,
-      citation: 'AMBF + TOSL = TLA',
-      detail: `${ambf.toFixed(1)} + ${tosl.toFixed(1)} = ${tla.toFixed(1)}`,
+      citation: 'Rule VIII, Sec. 803 (AMBF + ISA + USA = TLA)',
+      detail: `${ambf.toFixed(1)} + ${isa.toFixed(1)} + ${usa.toFixed(1)} = ${(ambf + isa + usa).toFixed(1)} (TLA: ${tla.toFixed(1)})`,
     },
     {
       label: `Front setback ${setbacks.front.toFixed(1)}m`,
       pass: compliance.setbacksOk,
-      citation: SITE_CONTROL_CITATIONS.setbacks,
-      detail: compliance.setbacksOk ? 'Meets requirement' : 'Buildable area = 0',
+      citation: 'Rule VII, Sec. 704 + Rule VIII, Sec. 804',
+      detail: compliance.setbacksOk
+        ? `Buildable: ${computed.buildableWidth.toFixed(1)}m x ${computed.buildableDepth.toFixed(1)}m`
+        : 'Setbacks consume entire lot - no buildable area',
     },
     {
       label: `Floor height ${floorHeight.toFixed(1)}m`,
       pass: compliance.floorHeightOk,
-      citation: 'PD 1096 IRR Rule VIII §808',
-      detail: compliance.floorHeightOk ? 'Meets 2.7m minimum' : 'Below 2.7m habitable minimum',
+      citation: 'Rule VIII, Sec. 805',
+      detail: compliance.floorHeightOk ? 'Meets 2.7m habitable minimum' : 'Below 2.7m habitable minimum',
     },
   ]
 
   const passCount = checks.filter((c) => c.pass).length
   const allPass = passCount === checks.length
 
-  // Separate violations by severity
   const errors = violations.filter((v) => v.severity === 'error')
   const warnings = violations.filter((v) => v.severity === 'warning')
 
@@ -97,15 +100,21 @@ export function ComplianceScorecard() {
         ))}
       </div>
 
-      {/* Summary metrics */}
+      {/* Live computed values - all 7 metrics from the spec */}
       <div className="border-t border-[#D4DAE3] pt-2">
+        <p className="mb-1.5 text-[9px] font-medium uppercase tracking-wider text-[#8896A7]">
+          Computed Values
+        </p>
         <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-          <MetricRow label="PSO" value={`${(pso * 100).toFixed(1)}%`} />
+          <MetricRow label="TLA" value={`${tla.toFixed(1)} sqm`} />
+          <MetricRow label="AMBF" value={`${ambf.toFixed(1)} sqm`} />
+          <MetricRow label="PSO" value={`${(pso * 100).toFixed(1)}%`} sub="ratio" />
+          <MetricRow label="TOSL" value={`${tosl.toFixed(1)} sqm`} />
+          <MetricRow label="ISA" value={`${isa.toFixed(1)} sqm`} sub={`${(isaPercent * 100).toFixed(0)}% table`} />
+          <MetricRow label="USA" value={`${usa.toFixed(1)} sqm`} sub={`${(usaPercent * 100).toFixed(0)}% table`} />
+          <MetricRow label="MACA" value={`${maca.toFixed(1)} sqm`} sub="AMBF+ISA" />
           <MetricRow label="TGFA" value={`${tgfa.toFixed(1)} sqm`} />
           <MetricRow label="BHL" value={`${bhl.toFixed(1)} m`} />
-          <MetricRow label="ISA" value={`${isa.toFixed(1)} sqm`} />
-          <MetricRow label="USA" value={`${usa.toFixed(1)} sqm`} />
-          <MetricRow label="MACA" value={`${maca.toFixed(1)} sqm`} />
         </div>
       </div>
 
@@ -134,10 +143,13 @@ export function ComplianceScorecard() {
   )
 }
 
-function MetricRow({ label, value }: { label: string; value: string }) {
+function MetricRow({ label, value, sub }: { label: string; value: string; sub?: string }) {
   return (
     <div className="flex items-baseline justify-between">
-      <span className="text-[10px] text-[#8896A7]">{label}</span>
+      <div>
+        <span className="text-[10px] text-[#8896A7]">{label}</span>
+        {sub && <span className="ml-1 text-[8px] text-[#8896A7]/50">{sub}</span>}
+      </div>
       <span className="font-mono text-[11px] font-medium text-[#1A2332]">{value}</span>
     </div>
   )

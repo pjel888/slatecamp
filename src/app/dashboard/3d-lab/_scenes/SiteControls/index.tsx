@@ -20,45 +20,48 @@ const ZONING_OPTIONS = Object.entries(SITE_CONTROL_TABLE).map(([key, val]) => ({
 function ZoneInfoPanel() {
   const activeZone = useSiteControlsStore((s) => s.activeZone)
   const computed = useSiteControlsStore((s) => s.computed)
+  const inputs = useSiteControlsStore((s) => s.inputs)
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
 
   if (!activeZone) return null
+
+  const psoLabel = `PSO: ${(computed.pso * 100).toFixed(1)}% (${computed.ambf_by_setbacks <= computed.ambf_by_pso ? 'setback-limited' : 'zoning-capped'})`
 
   const zones = {
     tla: {
       label: 'TLA',
       fullName: 'Total Lot Area',
-      value: `${computed.tla.toFixed(1)} sqm`,
-      description: 'The complete ground area inside your property boundaries. Starting point for every development control calculation.',
-      citation: 'PD 1096 IRR Rule VIII, Sec. 803',
+      value: `${computed.tla.toFixed(1)} sqm = ${computed.tla > 0 ? `${Math.sqrt(computed.tla) > 0 ? computed.tla.toFixed(1) : '0'} sqm` : '0 sqm'}`,
+      description: `Total Lot Area: ${computed.tla.toFixed(1)} sqm (${inputs.lotWidth}m x ${inputs.lotDepth}m). Starting point for every development control calculation.`,
+      citation: 'Rule VIII, Sec. 803',
     },
     ambf: {
       label: 'AMBF',
       fullName: 'Allowable Maximum Building Footprint',
-      value: `${computed.ambf.toFixed(1)} sqm`,
-      description: 'Maximum footprint your building may occupy. Constrained by BOTH setbacks and your zoning class max lot coverage — whichever is smaller wins.',
-      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+      value: `${computed.ambf.toFixed(1)} sqm (${psoLabel})`,
+      description: `Building Footprint: ${computed.ambf.toFixed(1)} sqm. The binding constraint is the lesser of setback-limited (${computed.ambf_by_setbacks.toFixed(1)} sqm) or zoning-capped (${computed.ambf_by_pso.toFixed(1)} sqm). ${computed.ambf_by_setbacks <= computed.ambf_by_pso ? 'Setbacks bind here.' : 'Zoning cap binds here — the "aha" moment.'}`,
+      citation: 'Rule VIII, Sec. 803, Table VIII.1',
     },
     setbacks: {
       label: 'SETBACKS',
       fullName: 'Required Setbacks',
-      value: `Front: ${computed.setbacks.front}m | Side: ${computed.setbacks.left}m | Rear: ${computed.setbacks.rear}m`,
-      description: 'Minimum distances from your building to each lot line, determined by zoning class and road right-of-way width.',
-      citation: 'PD 1096 IRR Rule VII, Sec. 704 + Rule VIII, Sec. 804',
+      value: `Front: ${computed.setbacks.front}m | Sides: ${computed.setbacks.left}m | Rear: ${computed.setbacks.rear}m`,
+      description: 'Minimum distances from building to lot lines, per zoning class and RROW width. Setbacks create the buildable envelope inside the lot.',
+      citation: 'Rule VII, Sec. 704 + Rule VIII, Sec. 804',
     },
     isa: {
       label: 'ISA',
       fullName: 'Impervious Surface Area',
-      value: `${computed.isa.toFixed(1)} sqm`,
-      description: 'Paved open space — driveways, terraces, walkways. Calculated as a direct percentage of TLA.',
-      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+      value: `${computed.isa.toFixed(1)} sqm (${(computed.isaPercent * 100).toFixed(0)}% table ref)`,
+      description: `Paved open space — driveways, terraces, walkways. Redistributed within TOSL (${computed.tosl.toFixed(1)} sqm) proportionally from ${(computed.isaPercent * 100).toFixed(0)}% table value to maintain AMBF + ISA + USA = TLA.`,
+      citation: 'Rule VIII, Sec. 803, Table VIII.1',
     },
     usa: {
       label: 'USA',
       fullName: 'Unpaved Surface Area',
-      value: `${computed.usa.toFixed(1)} sqm`,
-      description: 'Landscaped open space — soil, planting strips, lawns. Required for stormwater absorption.',
-      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+      value: `${computed.usa.toFixed(1)} sqm (${(computed.usaPercent * 100).toFixed(0)}% table ref)`,
+      description: `Landscaped open space — soil, planting strips, lawns. Redistributed within TOSL proportionally from ${(computed.usaPercent * 100).toFixed(0)}% table value. Required for stormwater absorption and air circulation.`,
+      citation: 'Rule VIII, Sec. 803, Table VIII.1',
     },
     violation: {
       label: 'VIOLATION',
