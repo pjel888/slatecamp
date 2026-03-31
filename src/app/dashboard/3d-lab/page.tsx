@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/constants/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
@@ -6,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import { SCIcon } from "@/components/graphics/icons/Icon";
-import { ModuleGallery } from "./_components/ModuleGallery";
+import { LabBrowser } from "./_components/Library/LabBrowser";
 import { ModuleViewer } from "./_components/ModuleViewer";
 
 export const metadata = { title: "3D Lab" };
@@ -48,11 +49,13 @@ export default async function ThreeDLabPage({
   const params = await searchParams;
   const modelId = params.model;
 
-  // No model param → show gallery
+  // No model param → show category browser (drill-down navigation)
   if (!modelId) {
     return (
       <div className="h-full">
-        <ModuleGallery basePath={ROUTES.THREE_D_LAB} />
+        <Suspense>
+          <LabBrowser basePath={ROUTES.THREE_D_LAB} />
+        </Suspense>
       </div>
     );
   }

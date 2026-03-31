@@ -1,6 +1,6 @@
 'use client'
 
-import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Pulse, GearSix } from '@phosphor-icons/react/dist/ssr'
+import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Pulse, GearSix, TreeStructure } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'
@@ -19,6 +19,7 @@ const adminPages = [
   { title: 'Taxonomy Editor', href: '/admin/taxonomy', group: 'Structure' },
   { title: 'Coverage Map', href: '/admin/taxonomy/coverage', group: 'Structure' },
   { title: '3D Assets', href: '/admin/assets', group: 'Structure' },
+  { title: '3D Models Registry', href: '/admin/3d-models', group: 'Structure' },
   { title: 'Review Queue', href: '/admin/reviews', group: 'Quality' },
   { title: 'Publishing Pipeline', href: '/admin/pipeline', group: 'Quality' },
   { title: 'Content Search', href: '/admin/search', group: 'Quality' },
@@ -79,6 +80,14 @@ const adminNavItems: NavGroup[] = [
         label: '3D Assets',
         href: '/admin/assets',
         icon: <Cube className="w-3.5 h-3.5" />,
+      },
+      {
+        label: '3D Models Registry',
+        href: '/admin/3d-models',
+        icon: <TreeStructure className="w-3.5 h-3.5" />,
+        children: [
+          { label: 'All Models', href: '/admin/3d-models' },
+        ],
       },
     ],
   },

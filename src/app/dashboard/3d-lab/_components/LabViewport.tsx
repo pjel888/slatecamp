@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import type { Model3D, ModelParameter, SpatialHotspot } from '@/components/3d/Workspace'
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { getModuleById } from '../_config/moduleRegistry'
+import { getModuleById } from '../_config/registry'
 import type {
   TemplateType,
   ParametricSceneConfig,

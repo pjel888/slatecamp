@@ -9,7 +9,7 @@ import { useLabStore } from '@/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
 import type { ModuleConfig } from '@/types/3d-lab'
 import { LabViewport } from './LabViewport'
-import { getModuleById } from '../_config/moduleRegistry'
+import { getModuleById } from '../_config/registry'
 
 interface ModuleViewerProps {
   modelId: string

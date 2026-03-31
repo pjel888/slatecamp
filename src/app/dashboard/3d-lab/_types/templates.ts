@@ -3,6 +3,7 @@
 // All type definitions for the 3D Lab module system. No runtime code.
 
 import type { Vector3Tuple } from 'three'
+import type { CategoryKey, LaunchPhase } from '../_config/taxonomy'
 
 // ─── Template Types ──────────────────────────────────────────────────────────
 
@@ -337,6 +338,10 @@ export interface ModuleRegistryEntry {
   title: string
   templateType: TemplateType
   subject: string
+  /** New 18-category taxonomy key */
+  categoryId?: CategoryKey
+  /** Phased release: 1 = High-Impact, 2 = Technical, 3 = Specialist */
+  launchPhase?: LaunchPhase
   /** Regulatory code reference */
   codeRef?: string
   /** Priority ranking (1 = highest) */

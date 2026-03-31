@@ -1,0 +1,103 @@
+// src/app/dashboard/3d-lab/_config/modules/trap-seal-depth.ts
+import type { CutawaySectionConfig } from '../../../_types/templates'
+
+export const trapSealDepthConfig: CutawaySectionConfig = {
+  id: 'trap-seal-depth',
+  title: 'Trap Seal Depth',
+  description:
+    'Plumbing trap cross-section showing water seal depth 51–102mm per NPCP — prevents sewer gas entry while allowing drainage.',
+  subject: 'npcp',
+  cutAxis: 'y',
+  camera: { position: [2.5, 2, 3], fov: 40 },
+  layers: [
+    {
+      id: 'fixture-outlet',
+      label: 'Fixture Outlet',
+      material: 'Lavatory / Sink Drain',
+      description: 'Drain outlet of plumbing fixture — connects to trap inlet arm.',
+      depth: 0,
+      geometry: { id: 'geo-fix', type: 'cylinder', args: [0.025, 0.025, 0.3, 12], position: [0, 1.5, 0], color: '#94a3b8' },
+    },
+    {
+      id: 'trap-inlet',
+      label: 'Trap Inlet Arm',
+      material: 'PVC Pipe',
+      description: 'Horizontal inlet arm of P-trap — water flows from fixture down into trap.',
+      depth: 0.15,
+      geometry: { id: 'geo-tinlet', type: 'cylinder', args: [0.025, 0.025, 0.4, 12], position: [-0.2, 1.2, 0], rotation: [0, 0, Math.PI / 2], color: '#64748b' },
+    },
+    {
+      id: 'trap-crown',
+      label: 'Trap Crown Weir',
+      material: 'PVC',
+      description: 'Crown weir — highest point of water in the trap outlet. Water level held at crown establishes the effective seal depth.',
+      codeCitation: 'NPCP §1002.3',
+      depth: 0.3,
+      geometry: { id: 'geo-crown', type: 'sphere', args: [0.04, 8, 8], position: [0.2, 0.85, 0], color: '#1B3FC4' },
+    },
+    {
+      id: 'water-seal',
+      label: 'Water Seal (51–102mm)',
+      material: 'Water Column',
+      description: 'Water seal depth — measured from dip (lowest point) to crown weir (top of water in outlet). Must be 51–102mm. Prevents sewer gas, pests, and odors.',
+      codeCitation: 'NPCP §1002.3 — 51mm min, 102mm max',
+      depth: 0.5,
+      geometry: { id: 'geo-seal', type: 'cylinder', args: [0.024, 0.024, 0.08, 12], position: [0, 0.72, 0], color: '#bfdbfe', opacity: 0.9, transparent: true },
+    },
+    {
+      id: 'trap-dip',
+      label: 'Trap Dip (Lowest Point)',
+      material: 'PVC Bend',
+      description: 'Dip — lowest point of the trap U-bend. Below this, the water column maintains the seal. Sewer gas cannot pass upward through the water.',
+      codeCitation: 'NPCP §1002.3',
+      depth: 0.65,
+      geometry: { id: 'geo-dip', type: 'ring', args: [0.02, 0.04, 12], position: [0, 0.66, 0], rotation: [Math.PI / 2, 0, 0], color: '#374151' },
+    },
+    {
+      id: 'outlet-arm',
+      label: 'Trap Outlet Arm',
+      material: 'PVC to Drain',
+      description: 'Outlet arm of P-trap — connects to branch drain. Configured to retain water seal at all drain conditions.',
+      depth: 0.8,
+      geometry: { id: 'geo-tout', type: 'cylinder', args: [0.025, 0.025, 0.5, 12], position: [0.25, 1.0, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#64748b' },
+    },
+    {
+      id: 'vent-connection',
+      label: 'Vent Connection (Crown Vent)',
+      material: 'PVC Vent',
+      description: 'Vent connected above trap crown weir — prevents positive or negative pressure fluctuations that would siphon or push water out of seal.',
+      codeCitation: 'NPCP §906.1',
+      depth: 0.95,
+      geometry: { id: 'geo-vent', type: 'cylinder', args: [0.0125, 0.0125, 0.6, 8], position: [0.2, 1.3, 0], color: '#2D9F6F' },
+    },
+  ],
+  annotations: [
+    {
+      id: 'ann-depth',
+      label: 'Seal: 51mm min, 102mm max',
+      description: 'Minimum 51mm (2") seal depth prevents sewer gas entry under normal pressure fluctuations. Maximum 102mm (4") prevents stagnant water and self-siphonage risk.',
+      codeCitation: 'NPCP §1002.3',
+      position: () => [1.0, 0.75, 0.4],
+    },
+    {
+      id: 'ann-siphon',
+      label: 'Vent Prevents Siphonage',
+      description: 'Without venting, negative pressure in drain can siphon trap water — removing the seal. Proper vent pipe maintains atmospheric pressure in the trap outlet arm.',
+      codeCitation: 'NPCP §906.1',
+      position: () => [1.0, 1.5, 0.4],
+    },
+    {
+      id: 'ann-gas',
+      label: 'Trap Blocks Sewer Gas',
+      description: 'Sewer gas (methane, hydrogen sulfide) cannot pass upward through standing water column. Even 51mm depth sufficient to block gases under normal conditions.',
+      codeCitation: 'NPCP §1002',
+      position: () => [-1.0, 0.5, 0.4],
+    },
+  ],
+  presets: [
+    { label: 'Full Trap', values: { cutPosition: 1.0 } },
+    { label: 'Seal Detail', values: { cutPosition: 0.8 } },
+    { label: 'Dip Level', values: { cutPosition: 0.66 } },
+    { label: 'Vent Connection', values: { cutPosition: 1.3 } },
+  ],
+}
