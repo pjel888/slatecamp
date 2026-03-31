@@ -33,10 +33,8 @@ export const compileMdxPreview = async (source: string) => {
 export const getContentEditorIndexData = async () => {
   const supabase = await createClient()
 
-  // Parallel: articles, taxonomy nodes, article-taxonomy links, question counts
+  // Parallel: articles, taxonomy nodes, article-taxonomy links, questions for search
   const [articlesRes, nodesRes, linksRes, questionsRes] = await Promise.all([
-    // content is fetched only to compute word_count below; .limit(500) caps payload size.
-    // TODO: replace with a DB view/function returning char_length(content) to avoid fetching full text.
     supabase
       .from('wiki_articles')
       .select('article_id, title, slug, status, content, difficulty_label, created_at, updated_at')
@@ -52,13 +50,20 @@ export const getContentEditorIndexData = async () => {
       .select('article_id, node_id, is_primary'),
     supabase
       .from('questions')
-      .select('topic_id'),
+      .select('question_id, topic_id, text'),
   ])
 
   const articles = articlesRes.data || []
   const nodes = nodesRes.data || []
   const links = linksRes.data || []
   const questions = questionsRes.data || []
+
+  // Build searchable questions
+  const searchableQuestions = questions.map(q => ({
+    id: q.question_id,
+    topic_id: q.topic_id,
+    text: q.text
+  }))
 
   // Build question counts per node
   const questionCounts = new Map<string, number>()
@@ -138,6 +143,7 @@ export const getContentEditorIndexData = async () => {
       ...a,
       word_count: a.content ? a.content.split(/\s+/).filter(Boolean).length : 0,
       question_count: qCount,
+      prompt_count: promptCounts.get(a.article_id) || 0,
       node_ids: nodeIds,
       primary_ale_id: primaryNode?.ale_id || null,
       primary_node_name: primaryNode?.name || null,
@@ -151,6 +157,7 @@ export const getContentEditorIndexData = async () => {
 
   return {
     articles: enrichedArticles,
+    searchableQuestions,
     taxonomyTree,
     stats: {
       totalArticles: articles.length,
@@ -328,9 +335,9 @@ export const importQuestionsForArticle = async (
     return { error, importedCount: 0 }
   }
 
-  revalidatePath('/admin/articles')
-  revalidatePath(`/admin/articles/${articleId}`)
-  revalidatePath('/admin/content')
+  revalidatePath('/admin/knowledge')
+  revalidatePath(`/admin/knowledge/${articleId}`)
+  revalidatePath('/admin/knowledge/questions')
 
   return { error: null, importedCount: data?.length || 0 }
 }
@@ -433,9 +440,9 @@ export const updateArticleFull = async (
     }
   }
 
-  revalidatePath('/admin/articles')
-  revalidatePath(`/admin/content/${id}`)
-  revalidatePath(`/admin/articles/${id}`)
+  revalidatePath('/admin/knowledge')
+  revalidatePath(`/admin/knowledge/${id}`)
+  revalidatePath('/admin/knowledge/questions')
 
   return { error: null }
 }
@@ -470,8 +477,8 @@ export const updateQuestion = async (
     .eq('question_id', questionId)
 
   if (!error) {
-    revalidatePath('/admin/questions')
-    revalidatePath('/admin/content')
+    revalidatePath('/admin/knowledge/questions')
+    revalidatePath('/admin/knowledge')
   }
 
   return { error }

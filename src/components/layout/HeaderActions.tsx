@@ -51,7 +51,7 @@ export const HeaderActions = ({ userId }: HeaderActionsProps) => {
               className={iconButtonClass}
               aria-label="Search (Ctrl+K)"
             >
-              <SCIcon icon={MagnifyingGlass} size="md" />
+              <SCIcon icon={MagnifyingGlass} size="base" />
             </button>
           </TooltipTrigger>
           <TooltipContent side="bottom" className="bg-foreground text-white font-medium text-xs">
@@ -67,7 +67,7 @@ export const HeaderActions = ({ userId }: HeaderActionsProps) => {
               className={iconButtonClass}
               aria-label="Quick note (Ctrl+Shift+N)"
             >
-              <SCIcon icon={NotePencil} size="md" />
+              <SCIcon icon={NotePencil} size="base" />
             </button>
           </TooltipTrigger>
           <TooltipContent side="bottom" className="bg-foreground text-white font-medium text-xs">

@@ -111,7 +111,7 @@ export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
         aria-label={`${article.title} — ${columnKey}`}
       >
         <Link
-          href={`/admin/articles/${article.article_id}`}
+          href={`/admin/knowledge/${article.article_id}`}
           className="block"
           tabIndex={isPending ? -1 : undefined}
         >

@@ -1,68 +1,63 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-03-31 -->
 
 # admin
 
 ## Purpose
 
-Admin control room for content and system management. Gated by role check (`canReviewContent()`). Admins create/edit/delete questions, wiki articles, manage taxonomy, review content submissions, audit logs, and manage 3D assets. Public landing page at `/admin` accepts Google OAuth. Protected routes redirect unauthorized users to `/dashboard`.
+Admin control room for content and system management. Gated by role check (`canReviewContent()`). Admins manage the entire knowledge lifecycle: creating/editing/deleting wiki articles and questions, managing taxonomy, reviewing content submissions, and auditing system activity.
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
-| `page.tsx` | Admin landing page. Public, unauthenticated. Google OAuth sign-in button. No layout applied (public landing bypass in layout.tsx). |
-| `layout.tsx` | Admin layout wrapper. Protects all routes except `/admin` root. Checks `canReviewContent()`, redirects non-admins to dashboard. Renders sidebar nav, admin header with back/logout links, main content area. |
-| `error.tsx` | Admin route error boundary. |
+| `page.tsx` | Admin landing page. Public, unauthenticated. Google OAuth sign-in button. |
+| `layout.tsx` | Admin layout wrapper. Protects all routes except `/admin` root. Checks `canReviewContent()`. Renders the `AdminShell` with sidebar nav. |
+| `_components/AdminShell.tsx` | Centralized sidebar navigation and layout shell for all admin portals. |
 
-## Subdirectories
+## Subdirectories (Knowledge Hub)
 
 | Directory | Purpose |
 |-----------|---------|
-| `dashboard/` | Admin dashboard homepage. Stats cards (question count, wiki count, 3D asset count). Quick management grid (new question, new article, manage taxonomy, audit logs). |
-| `questions/` | Question bank CRUD. List view with filtering/search, create new, edit `[id]`, bulk import. |
-| `wiki/` | Wiki article CRUD. Article list, create new, edit `[id]`. Full text editor for markdown content. |
-| `taxonomy/` | Taxonomy tree management. View/edit taxonomy nodes, discipline structure, level hierarchy. |
-| `reviews/` | Content review queue. User submissions pending admin review. (Currently placeholder: "No pending reviews.") |
-| `audit/` | Audit logs viewer. System events, user actions, admin changes. Time-indexed, filterable. |
-| `assets/` | 3D asset management. Upload, catalog, preview 3D models used in 3D Lab. |
+| `knowledge/` | **The Unified Knowledge Base.** Central hub for all content management. Consolidates legacy "Articles" and "Questions" silos. |
+| `knowledge/[id]/` | **Unified Content Editor.** Integrated split-pane MDX editor for wiki articles, showing linked questions and metadata side-by-side. |
+| `knowledge/questions/` | **Question Bank.** Unified view of the assessment bank, utilizing the same taxonomy-driven browser as the main knowledge hub. |
+| `knowledge/questions/[id]/` | **Context-Aware Question Editor.** Moderation interface for questions that automatically loads the linked source article in a reference pane. |
+| `knowledge/new/` | Creation flow for new wiki articles. |
+| `knowledge/questions/new/` | Creation flow for new questions, pre-loading article context if a topic is provided. |
+
+## Subdirectories (Management)
+
+| Directory | Purpose |
+|-----------|---------|
+| `dashboard/` | High-level overview. Stats (questions, wiki, coverage gaps), quick actions, and recent activity feed. |
+| `taxonomy/` | Global taxonomy management. View/edit the discipline tree structure and ALE IDs. |
+| `reviews/` | SME Review Queue. Content submitted for approval, deep-linked to unified editors. |
+| `audit/` | Audit Log. Deep-linked history of every change made to the knowledge base. |
+| `assets/` | 3D Asset Management. Catalog and preview models used in the 3D Lab scenes. |
 
 ## For AI Agents
 
 ### Working In This Directory
 
-- Admin routes are **Server Components by default** with inline async/await.
-- The **layout.tsx enforces a public bypass**: `/admin` root page returns `<>{children}</>` without auth check (allows OAuth landing page).
-- All other routes check `canReviewContent()` and redirect non-admins to `/dashboard`.
-- Data is fetched server-side using `@/lib/actions/admin/*` Server Actions.
-- The sidebar layout is controlled by layout.tsx and AdminNav component (not by each page).
+- **Unified Architecture**: Do NOT use legacy `/admin/articles` or `/admin/questions` for new features. Use `/admin/knowledge`.
+- **Taxonomy First**: All content (articles and questions) is filtered via the global taxonomy tree.
+- **Context-Awareness**: When editing a question, always provide the source article context. When editing an article, show the linked questions.
+- **Data Revalidation**: Always call `revalidatePath('/admin/knowledge')` after any mutation to ensure cache consistency.
 
 ### Common Patterns
 
-- **Public landing:** `/admin` page is unauthenticated, uses Google OAuth, then redirects to `/admin/dashboard`.
-- **Protected routes:** Use Server Action queries from `@/lib/actions/admin/` (e.g., `getAdminStats()`, `getQuestions()`, `getArticles()`).
-- **Auth check:** Layout checks `canReviewContent()` once; child pages assume auth is valid.
-- **Sidebar nav:** Centralized in `AdminNav` component; update there for new routes.
-- **UI:** Cards use border + bg-white, no shadows at rest. Icons from `@phosphor-icons/react`. Consistent with Campfire design tokens.
-- **Forms:** Question/wiki/taxonomy forms are client-side (marked with `'use client'`) for interactivity.
+- **Deep Linking**: Audit logs and Review items must link to `/admin/knowledge/[id]` or `/admin/knowledge/questions/[id]`.
+- **Hybrid Search**: The Knowledge Browser search filters both articles and questions simultaneously.
+- **Safety Net**: Use the "Unassigned" filter in the knowledge hub to find content not yet mapped to the taxonomy.
 
 ## Dependencies
 
 ### Internal
 
-- `@/lib/supabase/server` — `createClient()`, `getUser()` for auth.
-- `@/lib/admin/roles` — `canReviewContent()` for authorization check.
-- `@/lib/actions/admin/dashboard` — `getAdminStats()`.
-- `@/lib/actions/admin/question-queries` — `getQuestions()`.
-- `@/lib/actions/admin/wiki-queries` — `getArticles()`.
-- `@/components/admin/AdminNav` — Sidebar navigation.
-- `@/components/admin/QuestionList` — Question list and bulk actions.
-- `@/components/admin/WikiArticleList` — Wiki article list and bulk actions.
-- `@/components/auth/SignInWithGoogleButton` — OAuth button for landing page.
-- `@/components/auth/SignOutButton` — Logout button in header.
-- `@/lib/constants/routes` — ROUTES constant for redirects.
-- `next/navigation` — `redirect()`.
-- `next/headers` — `headers()` for x-pathname.
-- `@phosphor-icons/react` — Icon library (Question, FileText, Cube, etc.).
+- `@/lib/admin/roles` — `canReviewContent()` for authorization.
+- `@/lib/actions/admin/content` — Primary server actions for the unified Knowledge Base.
+- `@/components/admin/unified-editor/` — The core component library for the split-pane editing experience.
+- `@/app/admin/knowledge/questions/_components/QuestionsTableClient` — The unified question listing component.
 
-<!-- MANUAL: Admin OAuth redirect target is /admin/dashboard. Update ROUTES.ADMIN_DASHBOARD if URL structure changes. -->
+<!-- MANUAL: All legacy routes (/admin/articles, /admin/content, /admin/questions) now redirect to /admin/knowledge. -->

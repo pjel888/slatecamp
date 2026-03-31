@@ -177,7 +177,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
                 {/* Group label (expanded) → thin divider (collapsed), skip divider for first group */}
                 <div className="h-5 flex items-center">
                   {expanded ? (
-                    <span className="px-2 text-[8px] font-bold tracking-wider text-text-tertiary uppercase select-none">
+                    <span className="px-2 text-[11px] font-bold tracking-wider text-text-tertiary uppercase select-none">
                       {group.label}
                     </span>
                   ) : groupIdx > 0 ? (

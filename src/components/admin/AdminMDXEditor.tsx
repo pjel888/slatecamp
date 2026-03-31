@@ -350,7 +350,7 @@ export const AdminMDXEditor = ({ article, taxonomyNodes = [] }: AdminMDXEditorPr
       {/* ------------------------------------------------------------------ */}
       <div className="flex shrink-0 items-center gap-4 border-b border-border bg-white px-4 py-2.5">
         <Link
-          href="/admin/articles"
+          href="/admin/knowledge"
           className="shrink-0 rounded-sm px-2 py-1 text-xs text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150"
         >
           &larr; Articles

@@ -28,6 +28,7 @@ import { ComparisonTable } from './ComparisonTable'
 import { SubjectSnapshot } from './SubjectSnapshot'
 import { LawCallout } from './LawCallout'
 import { RevealBlock } from './RevealBlock'
+import { WikiReference } from './WikiReference'
 import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
@@ -123,6 +124,9 @@ const baseMdxComponents = {
 
   // Active recall — blur-to-reveal content block
   RevealBlock,
+
+  // Wiki-to-wiki reference with hover summary and click-to-peek drawer
+  WikiReference,
 }
 
 /**

@@ -81,48 +81,76 @@ export const getContentBySubject = async (): Promise<SubjectContentCount[]> => {
 
   const supabase = await createClient()
 
-  // Fetch level-1 taxonomy nodes (subjects)
-  const { data: subjects } = await supabase
+  // 1. Fetch all non-deprecated taxonomy nodes to build the hierarchy map
+  const { data: allNodes, error: nodesError } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id')
-    .eq('level', 1)
+    .select('node_id, parent_id, level, name, ale_id')
     .is('deprecated_at', null)
-    .order('name', { ascending: true })
 
-  if (!subjects || subjects.length === 0) return []
+  if (nodesError || !allNodes) return []
 
-  const subjectIds = subjects.map((s) => s.node_id)
+  // 2. Identify subjects (level 1) and build child-to-subject mapping
+  const subjects = allNodes
+    .filter((n) => n.level === 1)
+    .sort((a, b) => a.name.localeCompare(b.name))
+  
+  const nodeMap = new Map<string, typeof allNodes[number]>(allNodes.map((n) => [n.node_id, n]))
+  const subjectMap = new Map<string, string>() // node_id -> level_1_subject_id
 
-  // Batch fetch question counts and article counts in two parallel queries
+  // Helper to find the level 1 ancestor
+  const getSubjectAncestor = (nodeId: string): string | null => {
+    let current = nodeMap.get(nodeId)
+    while (current && current.level > 1 && current.parent_id) {
+      current = nodeMap.get(current.parent_id)
+    }
+    return current && current.level === 1 ? current.node_id : null
+  }
+
+  allNodes.forEach((node) => {
+    const ancestorId = getSubjectAncestor(node.node_id)
+    if (ancestorId) {
+      subjectMap.set(node.node_id, ancestorId)
+    }
+  })
+
+  // 3. Fetch all question topic_ids and article node_ids
   const [questionsRes, articlesRes] = await Promise.all([
-    supabase
-      .from('questions')
-      .select('topic_id')
-      .in('topic_id', subjectIds),
-    supabase
-      .from('wiki_article_taxonomy')
-      .select('node_id')
-      .in('node_id', subjectIds),
+    supabase.from('questions').select('topic_id'),
+    supabase.from('wiki_article_taxonomy').select('node_id, article_id'),
   ])
 
-  // Build count maps from the batched results
-  const questionCountMap = new Map<string, number>()
-  for (const q of questionsRes.data ?? []) {
-    questionCountMap.set(q.topic_id, (questionCountMap.get(q.topic_id) ?? 0) + 1)
-  }
+  const questionTopicIds = questionsRes.data || []
+  const articleMappings = articlesRes.data || []
 
-  const articleCountMap = new Map<string, number>()
-  for (const a of articlesRes.data ?? []) {
-    articleCountMap.set(a.node_id, (articleCountMap.get(a.node_id) ?? 0) + 1)
-  }
+  // 4. Aggregate counts
+  const counts = new Map<string, { q: number; a: Set<string> }>()
+  subjects.forEach((s) => counts.set(s.node_id, { q: 0, a: new Set() }))
 
-  return subjects.map((subject) => ({
-    node_id: subject.node_id,
-    name: subject.name,
-    ale_id: subject.ale_id,
-    questionCount: questionCountMap.get(subject.node_id) ?? 0,
-    articleCount: articleCountMap.get(subject.node_id) ?? 0,
-  }))
+  questionTopicIds.forEach((q) => {
+    const subjectId = subjectMap.get(q.topic_id)
+    if (subjectId && counts.has(subjectId)) {
+      counts.get(subjectId)!.q++
+    }
+  })
+
+  articleMappings.forEach((am) => {
+    const subjectId = subjectMap.get(am.node_id)
+    if (subjectId && counts.has(subjectId)) {
+      counts.get(subjectId)!.a.add(am.article_id)
+    }
+  })
+
+  // 5. Format results
+  return subjects.map((s) => {
+    const c = counts.get(s.node_id) || { q: 0, a: new Set() }
+    return {
+      node_id: s.node_id,
+      name: s.name,
+      ale_id: s.ale_id,
+      questionCount: c.q,
+      articleCount: c.a.size,
+    }
+  })
 }
 
 export interface NeedsAttentionData {

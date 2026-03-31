@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useEffect } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
@@ -11,10 +11,10 @@ import { QuestionQuickPreview } from '@/components/admin/QuestionQuickPreview'
 import { BulkActionBar } from '@/components/admin/BulkActionBar'
 import { bulkDeleteQuestions } from '@/lib/actions/admin/bulk'
 import { cn } from '@/lib/utils'
+import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 
-import type { Question, ArticleGroup, QuestionTreeNode } from '@/lib/actions/admin/question-queries'
+import type { Question, ArticleGroup } from '@/lib/actions/admin/question-queries'
 import { getQuestionsByTopicIds } from '@/lib/actions/admin/question-queries'
-import { QuestionTreeNav } from './QuestionTreeNav'
 
 /* ------------------------------------------------------------------ */
 /*  Props                                                              */
@@ -26,7 +26,9 @@ interface QuestionsTableClientProps {
   totalCount: number
   page: number
   pageSize: number
-  taxonomyTree: QuestionTreeNode[]
+  taxonomyTree: TaxonomyTreeNode[]
+  /** If provided, the table will filter by this node and hide its own internal tree nav */
+  externalSelectedNodeId?: string | null
 }
 
 /* ------------------------------------------------------------------ */
@@ -111,7 +113,7 @@ const QuestionRow = ({
           />
           {question.topic_id && (
             <Link
-              href={`/admin/content?topic=${question.topic_id}`}
+              href={`/admin/knowledge?topic=${question.topic_id}&view=articles`}
               className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
               onClick={(e) => e.stopPropagation()}
               title="Open content editor to view this question in article context"
@@ -270,38 +272,28 @@ const ArticleAccordionGroup = ({
 /* ------------------------------------------------------------------ */
 
 /** Collect all node IDs in a subtree (inclusive) */
-const collectNodeIds = (node: QuestionTreeNode): Set<string> => {
-  const ids = new Set<string>([node.nodeId])
-  for (const child of node.children) {
-    for (const id of collectNodeIds(child)) {
-      ids.add(id)
+const collectAllNodeIds = (node: TaxonomyTreeNode): Set<string> => {
+  const ids = new Set<string>([node.node_id])
+  if (node.children) {
+    for (const child of node.children) {
+      for (const id of collectAllNodeIds(child)) {
+        ids.add(id)
+      }
     }
   }
   return ids
 }
 
 /** Find a node by ID in the tree */
-const findNode = (nodes: QuestionTreeNode[], nodeId: string): QuestionTreeNode | null => {
+const findTaxonomyNode = (nodes: TaxonomyTreeNode[], nodeId: string): TaxonomyTreeNode | null => {
   for (const node of nodes) {
-    if (node.nodeId === nodeId) return node
-    const found = findNode(node.children, nodeId)
-    if (found) return found
-  }
-  return null
-}
-
-/** Collect all article IDs under a taxonomy subtree */
-const collectArticleIds = (node: QuestionTreeNode): Set<string> => {
-  const ids = new Set<string>()
-  for (const a of node.articles) {
-    ids.add(a.articleId)
-  }
-  for (const child of node.children) {
-    for (const id of collectArticleIds(child)) {
-      ids.add(id)
+    if (node.node_id === nodeId) return node
+    if (node.children) {
+      const found = findTaxonomyNode(node.children, nodeId)
+      if (found) return found
     }
   }
-  return ids
+  return null
 }
 
 export const QuestionsTableClient = ({
@@ -311,13 +303,17 @@ export const QuestionsTableClient = ({
   page,
   pageSize,
   taxonomyTree,
+  externalSelectedNodeId,
 }: QuestionsTableClientProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set())
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null)
+  const [internalSelectedNodeId, setInternalSelectedNodeId] = useState<string | null>(null)
   const [nodeGroups, setNodeGroups] = useState<ArticleGroup[] | null>(null)
   const [nodeLoading, setNodeLoading] = useState(false)
+  
+  const activeNodeId = externalSelectedNodeId !== undefined ? externalSelectedNodeId : internalSelectedNodeId
+
   const [expandedArticles, setExpandedArticles] = useState<Set<string>>(() => {
     if (articleGroups.length > 0) {
       return new Set([articleGroups[0].articleId ?? '__unassigned__'])
@@ -330,7 +326,7 @@ export const QuestionsTableClient = ({
   const navigateTo = (p: number) => {
     const params = new URLSearchParams(searchParams.toString())
     params.set('page', String(p))
-    router.push(`/admin/questions?${params.toString()}`)
+    router.push(`/admin/knowledge/questions?${params.toString()}`)
   }
 
   const handleToggleExpand = useCallback((articleId: string | null) => {
@@ -374,7 +370,7 @@ export const QuestionsTableClient = ({
 
   const handleNavigate = useCallback(
     (questionId: string) => {
-      router.push(`/admin/questions/${questionId}`)
+      router.push(`/admin/knowledge/questions/${questionId}`)
     },
     [router],
   )
@@ -388,13 +384,18 @@ export const QuestionsTableClient = ({
     setSelectedKeys(new Set())
   }
 
-  // When a tree node is selected, fetch questions for that subtree on-demand
   const handleNodeSelect = useCallback(async (nodeId: string | null) => {
-    setSelectedNodeId(nodeId)
+    if (externalSelectedNodeId === undefined) {
+      setInternalSelectedNodeId(nodeId)
+    }
 
     if (nodeId === null) {
-      // "All Questions" — use the pre-fetched paginated data
       setNodeGroups(null)
+      return
+    }
+
+    if (nodeId === 'unassigned') {
+      setNodeGroups([])
       return
     }
 
@@ -403,45 +404,39 @@ export const QuestionsTableClient = ({
       let topicIds: string[] = []
 
       if (nodeId.startsWith('article:')) {
-        // Selected an article — find topic IDs that map to it
-        const articleId = nodeId.replace('article:', '')
-        // Collect all leaf topic IDs from the tree that have this article
-        const collectTopicsForArticle = (nodes: QuestionTreeNode[]): string[] => {
-          const result: string[] = []
-          for (const node of nodes) {
-            for (const a of node.articles) {
-              if (a.articleId === articleId) result.push(node.nodeId)
-            }
-            result.push(...collectTopicsForArticle(node.children))
-          }
-          return result
-        }
-        topicIds = collectTopicsForArticle(taxonomyTree)
+        topicIds = [nodeId.replace('article:', '')]
       } else {
-        // Selected a taxonomy node — collect all topic IDs in the subtree
-        const node = findNode(taxonomyTree, nodeId)
+        const node = findTaxonomyNode(taxonomyTree, nodeId)
         if (node) {
-          topicIds = [...collectNodeIds(node)]
+          topicIds = [...collectAllNodeIds(node)]
         }
       }
 
-      const { data } = await getQuestionsByTopicIds(topicIds)
-      setNodeGroups(data)
-      // Auto-expand all groups when loaded
-      setExpandedArticles(new Set(data.map(g => g.articleId ?? '__unassigned__')))
+      if (topicIds.length > 0) {
+        const { data } = await getQuestionsByTopicIds(topicIds)
+        setNodeGroups(data)
+        setExpandedArticles(new Set(data.map(g => g.articleId ?? '__unassigned__')))
+      } else {
+        setNodeGroups([])
+      }
     } catch {
       setNodeGroups([])
     } finally {
       setNodeLoading(false)
     }
-  }, [taxonomyTree])
+  }, [taxonomyTree, externalSelectedNodeId])
 
-  // Only show questions when a tree node is selected — no random default page
-  const displayGroups = nodeGroups !== null ? nodeGroups : []
-  const showEmptyPrompt = selectedNodeId === null && nodeGroups === null
+  useEffect(() => {
+    if (externalSelectedNodeId !== undefined) {
+      handleNodeSelect(externalSelectedNodeId)
+    }
+  }, [externalSelectedNodeId, handleNodeSelect])
+
+  const displayGroups = nodeGroups !== null ? nodeGroups : (questions.length > 0 ? articleGroups : [])
+  const showEmptyPrompt = activeNodeId === null && nodeGroups === null && questions.length === 0
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 h-full flex flex-col">
       {/* Bulk action bar */}
       {selectedKeys.size > 0 && (
         <BulkActionBar
@@ -451,14 +446,28 @@ export const QuestionsTableClient = ({
         />
       )}
 
-      {/* Two-panel layout: tree nav + accordion */}
-      <div className="flex border border-border rounded-md overflow-hidden bg-white" style={{ minHeight: '500px' }}>
-        {/* Left panel: taxonomy tree */}
-        <QuestionTreeNav
-          tree={taxonomyTree}
-          selectedNodeId={selectedNodeId}
-          onSelectNode={handleNodeSelect}
-        />
+      {/* Two-panel layout */}
+      <div className={cn(
+        "flex border border-border rounded-md overflow-hidden bg-white flex-1",
+        externalSelectedNodeId !== undefined ? "border-none" : ""
+      )}>
+        {/* Left panel: unified taxonomy tree (only if not external) */}
+        {externalSelectedNodeId === undefined && (
+          <div className="w-[300px] shrink-0 border-r border-border overflow-hidden flex flex-col">
+            <TaxonomyTree
+              nodes={taxonomyTree}
+              onSelect={(id) => handleNodeSelect(id)}
+              activeNodeId={activeNodeId}
+              showCounts={true}
+              basePath="/admin/knowledge/questions"
+              rootAction={{
+                label: 'All Questions',
+                onClick: () => handleNodeSelect(null),
+                isActive: activeNodeId === null
+              }}
+            />
+          </div>
+        )}
 
         {/* Right panel: accordion groups */}
         <div className="flex-1 overflow-y-auto">
@@ -503,8 +512,8 @@ export const QuestionsTableClient = ({
       </div>
 
       {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="flex items-center justify-between px-1">
+      {externalSelectedNodeId === undefined && totalPages > 1 && (
+        <div className="flex items-center justify-between px-1 shrink-0 py-2">
           <p className="text-sm text-[#8896A7]">
             Page {page} of {totalPages.toLocaleString()} &mdash; {totalCount.toLocaleString()} total questions
           </p>

@@ -29,8 +29,8 @@ export async function deleteQuestions(ids: string[]) {
     .in('question_id', ids);
 
   if (!error) {
-    revalidatePath('/admin/questions');
-    revalidatePath('/admin/content');
+    revalidatePath('/admin/knowledge/questions');
+    revalidatePath('/admin/knowledge');
   }
 
   return { error };
@@ -60,8 +60,8 @@ export async function createQuestion(data: CreateQuestionInput) {
     .insert([{ ...data, created_by: user?.id ?? null }]);
 
   if (!error) {
-    revalidatePath('/admin/questions');
-    revalidatePath('/admin/content');
+    revalidatePath('/admin/knowledge/questions');
+    revalidatePath('/admin/knowledge');
   }
 
   return { error };
@@ -92,8 +92,8 @@ export const updateQuestion = async (id: string, data: CreateQuestionInput) => {
     .eq('question_id', id);
 
   if (!error) {
-    revalidatePath('/admin/questions');
-    revalidatePath('/admin/content');
+    revalidatePath('/admin/knowledge/questions');
+    revalidatePath('/admin/knowledge');
   }
 
   return { error };
@@ -111,8 +111,8 @@ export const deleteQuestion = async (id: string) => {
     .eq('question_id', id);
 
   if (!error) {
-    revalidatePath('/admin/questions');
-    revalidatePath('/admin/content');
+    revalidatePath('/admin/knowledge/questions');
+    revalidatePath('/admin/knowledge');
   }
 
   return { error };

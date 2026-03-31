@@ -35,7 +35,7 @@ export function LogoutButton() {
       onClick={handleClick}
       className="w-full sm:w-auto"
     >
-      <SCIcon icon={SignOut} size="sm" className="mr-2" />
+      <SCIcon icon={SignOut} size="base" className="mr-2" />
       Log out
     </Button>
   )

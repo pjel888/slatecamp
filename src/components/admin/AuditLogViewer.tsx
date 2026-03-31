@@ -152,6 +152,24 @@ export function AuditLogViewer() {
                               Changed fields: {(log.metadata.changed_fields as string[]).join(', ')}
                             </p>
                           )}
+                          <div className="mt-4">
+                            {log.table_name === 'questions' && log.event_type !== 'DELETE' && (
+                              <a
+                                href={`/admin/knowledge/questions/${log.record_id}`}
+                                className="text-xs text-camp-cobalt hover:underline font-medium"
+                              >
+                                View Question in Context &rarr;
+                              </a>
+                            )}
+                            {log.table_name === 'wiki_articles' && log.event_type !== 'DELETE' && (
+                              <a
+                                href={`/admin/knowledge/${log.record_id}`}
+                                className="text-xs text-camp-cobalt hover:underline font-medium"
+                              >
+                                View Article in Editor &rarr;
+                              </a>
+                            )}
+                          </div>
                         </div>
                       </td>
                     </tr>

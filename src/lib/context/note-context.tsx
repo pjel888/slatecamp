@@ -11,6 +11,7 @@ export interface NoteAnchor {
   article_title?: string
   session_id?: string
   source_url?: string
+  initialText?: string
 }
 
 interface NoteContextValue {

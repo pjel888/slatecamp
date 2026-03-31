@@ -1,10 +1,13 @@
 'use client'
 
+import { useMemo } from 'react'
 import { Edges, Line } from '@react-three/drei'
-import * as THREE from 'three'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 
-/** TLA base ground plane — warm stone-travertine per UX Plan §01. */
+/**
+ * TLA ground plane at Y=0.000 with dark edges and dashed lot boundary.
+ * Y-stratification: this is the base layer — all other planes sit above it.
+ */
 export function LotPlane() {
   const lotWidth = useSiteControlsStore((s) => s.inputs.lotWidth)
   const lotDepth = useSiteControlsStore((s) => s.inputs.lotDepth)
@@ -12,20 +15,22 @@ export function LotPlane() {
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
 
   const isActive = activeZone === 'tla'
-  const dimmed = activeZone !== null && !isActive
 
-  // Lot boundary corners at y=0.01
-  const y = 0.01
-  const boundaryPoints: [number, number, number][] = [
-    [0, y, 0],
-    [lotWidth, y, 0],
-    [lotWidth, y, lotDepth],
-    [0, y, lotDepth],
-    [0, y, 0],
-  ]
+  // Dashed perimeter line (clockwise)
+  const boundaryPoints = useMemo(
+    (): [number, number, number][] => [
+      [0, 0.001, 0],
+      [lotWidth, 0.001, 0],
+      [lotWidth, 0.001, lotDepth],
+      [0, 0.001, lotDepth],
+      [0, 0.001, 0],
+    ],
+    [lotWidth, lotDepth],
+  )
 
   return (
     <group>
+      {/* TLA ground — warm stone, matte */}
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
         position={[lotWidth / 2, 0, lotDepth / 2]}
@@ -36,25 +41,18 @@ export function LotPlane() {
         }}
       >
         <planeGeometry args={[lotWidth, lotDepth]} />
-        <meshStandardMaterial
-          color={isActive ? '#1B3FC4' : dimmed ? '#D0D0D0' : '#D4CFC4'}
-          side={THREE.DoubleSide}
-          roughness={0.92}
-          metalness={0.0}
-          transparent={dimmed}
-          opacity={dimmed ? 0.4 : 1.0}
-        />
-        <Edges threshold={15} color="#3A3A3A" lineWidth={1} scale={1.001} />
+        <meshStandardMaterial color="#D4CFC4" roughness={0.92} metalness={0.0} />
+        <Edges threshold={15} color="#3A3A3A" lineWidth={1.0} scale={1.002} />
       </mesh>
 
-      {/* Dashed lot boundary — site boundary green */}
+      {/* Dashed lot boundary */}
       <Line
         points={boundaryPoints}
         color="#BFC5B5"
         lineWidth={1.5}
         dashed
-        dashSize={0.5}
-        gapSize={0.3}
+        dashSize={0.3}
+        gapSize={0.15}
       />
     </group>
   )

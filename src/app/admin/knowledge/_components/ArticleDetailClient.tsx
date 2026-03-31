@@ -77,7 +77,7 @@ export const ArticleDetailClient = ({
         onOpenChange={setDeleteModalOpen}
         articleId={article.article_id}
         articleTitle={article.title}
-        redirectTo="/admin/articles"
+        redirectTo="/admin/knowledge"
       />
     </>
   )

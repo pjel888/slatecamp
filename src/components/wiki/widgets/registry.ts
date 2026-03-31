@@ -73,6 +73,10 @@ export const widgetRegistry: Record<string, WidgetLoader> = {
       (m) => m.SpatialQualityDrill,
     ),
 
+  // -- 3D Lab Integration -----------------------------------------------
+  Lab3DWidget: () =>
+    import('./Lab3DWidget').then((m) => m.default),
+
   // -- Interactive Illustrations ------------------------------------------
   PHBuildingSetbacks: () =>
     import('../../interactive-illustrations/2D/SetbackIllustration').then(

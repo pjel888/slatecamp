@@ -1,156 +1,89 @@
 'use client'
 
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
+import { SITE_CONTROL_CITATIONS } from '../../_constants/siteControls'
+
+interface ScorecardItem {
+  label: string
+  pass: boolean
+  value: string
+  citation: string
+}
 
 /**
- * Pass/fail compliance readout for PD 1096 site development controls.
- * 5 items per the spec, with correct IRR citations from Rule VII/VIII.
+ * 5-item compliance scorecard with pass/fail indicators and IRR citations.
+ * Checks: AMBF, TOSL, identity (AMBF+ISA+USA=TLA), front setback, side/rear setbacks.
  */
 export function ComplianceScorecard() {
   const computed = useSiteControlsStore((s) => s.computed)
-  const floorHeight = useSiteControlsStore((s) => s.inputs.floorHeight)
-  const {
-    compliance, violations, ambf, tosl, tla, isa, usa, maca, pso, tgfa, bhl,
-    setbacks, zoningData, lotCoverageMax, isaPercent, usaPercent,
-  } = computed
+  const { compliance, ambf, ambf_by_pso, tosl, tla, isa, usa, setbacks, lotCoverageMax } = computed
 
-  const checks = [
+  const minTosl = (1 - lotCoverageMax) * tla
+
+  const items: ScorecardItem[] = [
     {
-      label: `AMBF ${ambf.toFixed(1)} sqm`,
+      label: 'AMBF compliance',
       pass: compliance.ambfOk,
-      citation: 'Rule VIII, Sec. 803, Table VIII.1',
-      detail: compliance.ambfOk
-        ? `Within ${(lotCoverageMax * 100).toFixed(0)}% PSO limit (max ${(lotCoverageMax * tla).toFixed(1)} sqm)`
-        : `Exceeds max ${(lotCoverageMax * tla).toFixed(1)} sqm`,
+      value: `${ambf.toFixed(1)} <= ${ambf_by_pso.toFixed(1)} sqm`,
+      citation: SITE_CONTROL_CITATIONS.ambf,
     },
     {
-      label: `TOSL ${tosl.toFixed(1)} sqm`,
+      label: 'TOSL compliance',
       pass: compliance.toslOk,
-      citation: 'Rule VIII, Sec. 803, Table VIII.1 (note d)',
-      detail: compliance.toslOk
-        ? `Open space meets ${((1 - lotCoverageMax) * 100).toFixed(0)}% minimum`
-        : `Below minimum ${((1 - lotCoverageMax) * tla).toFixed(1)} sqm`,
+      value: `${tosl.toFixed(1)} >= ${minTosl.toFixed(1)} sqm`,
+      citation: SITE_CONTROL_CITATIONS.tosl,
     },
     {
-      label: 'TLA identity',
+      label: 'Identity (AMBF+ISA+USA=TLA)',
       pass: compliance.identityOk,
-      citation: 'Rule VIII, Sec. 803 (AMBF + ISA + USA = TLA)',
-      detail: `${ambf.toFixed(1)} + ${isa.toFixed(1)} + ${usa.toFixed(1)} = ${(ambf + isa + usa).toFixed(1)} (TLA: ${tla.toFixed(1)})`,
+      value: `${(ambf + isa + usa).toFixed(1)} = ${tla.toFixed(1)}`,
+      citation: SITE_CONTROL_CITATIONS.tla,
     },
     {
-      label: `Front setback ${setbacks.front.toFixed(1)}m`,
+      label: 'Front setback',
       pass: compliance.setbacksOk,
-      citation: 'Rule VII, Sec. 704 + Rule VIII, Sec. 804',
-      detail: compliance.setbacksOk
-        ? `Buildable: ${computed.buildableWidth.toFixed(1)}m x ${computed.buildableDepth.toFixed(1)}m`
-        : 'Setbacks consume entire lot - no buildable area',
+      value: `${setbacks.front.toFixed(1)}m provided`,
+      citation: SITE_CONTROL_CITATIONS.setbacks,
     },
     {
-      label: `Floor height ${floorHeight.toFixed(1)}m`,
-      pass: compliance.floorHeightOk,
-      citation: 'Rule VIII, Sec. 805',
-      detail: compliance.floorHeightOk ? 'Meets 2.7m habitable minimum' : 'Below 2.7m habitable minimum',
+      label: 'Side/Rear setbacks',
+      pass: compliance.setbacksOk,
+      value: `S: ${setbacks.left.toFixed(1)}m / R: ${setbacks.rear.toFixed(1)}m`,
+      citation: SITE_CONTROL_CITATIONS.setbacks,
     },
   ]
 
-  const passCount = checks.filter((c) => c.pass).length
-  const allPass = passCount === checks.length
-
-  const errors = violations.filter((v) => v.severity === 'error')
-  const warnings = violations.filter((v) => v.severity === 'warning')
+  const passCount = items.filter((i) => i.pass).length
+  const allPass = passCount === items.length
 
   return (
-    <div className="space-y-3">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <span className="text-[9px] font-medium uppercase tracking-wider text-[#8896A7]">
-          Compliance Check
+    <div>
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+          Compliance
         </span>
-        <span
-          className={`font-mono text-xs font-semibold ${
-            allPass ? 'text-[#2D9F6F]' : 'text-[#8896A7]'
-          }`}
-        >
-          {allPass ? 'All requirements met' : `${passCount}/${checks.length} met`}
+        <span className={`text-xs font-medium ${allPass ? 'text-[#2D9F6F]' : 'text-[#D64545]'}`}>
+          {allPass ? 'All requirements met' : `${passCount}/${items.length} met`}
         </span>
       </div>
 
-      {/* Check items */}
       <div className="space-y-1.5">
-        {checks.map((check) => (
-          <div key={check.label} className="flex items-start gap-2">
-            <span
-              className={`mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full ${
-                check.pass ? 'bg-[#2D9F6F]' : 'bg-[#D64545]'
-              }`}
-            />
+        {items.map((item) => (
+          <div
+            key={item.label}
+            className="flex items-start gap-2 rounded-sm border border-[#D4DAE3] px-2.5 py-2"
+          >
+            <span className={`mt-0.5 text-xs leading-none ${item.pass ? 'text-[#2D9F6F]' : 'text-[#D64545]'}`}>
+              {item.pass ? '\u25CF' : '\u25CB'}
+            </span>
             <div className="min-w-0 flex-1">
-              <div className="flex items-baseline justify-between gap-1">
-                <span className="text-xs font-medium text-[#1A2332]">
-                  {check.label}
-                </span>
-                <span className={`text-[10px] font-medium ${check.pass ? 'text-[#2D9F6F]' : 'text-[#D64545]'}`}>
-                  {check.pass ? 'PASS' : 'FAIL'}
-                </span>
-              </div>
-              <p className="text-[10px] text-[#4A5568]">{check.detail}</p>
-              <p className="font-mono text-[9px] text-[#8896A7]/60">{check.citation}</p>
+              <p className="text-xs font-medium text-[#1A2332]">{item.label}</p>
+              <p className="font-mono text-[10px] text-[#4A5568]">{item.value}</p>
+              <p className="font-mono text-[9px] text-[#8896A7]">{item.citation}</p>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Live computed values - all 7 metrics from the spec */}
-      <div className="border-t border-[#D4DAE3] pt-2">
-        <p className="mb-1.5 text-[9px] font-medium uppercase tracking-wider text-[#8896A7]">
-          Computed Values
-        </p>
-        <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-          <MetricRow label="TLA" value={`${tla.toFixed(1)} sqm`} />
-          <MetricRow label="AMBF" value={`${ambf.toFixed(1)} sqm`} />
-          <MetricRow label="PSO" value={`${(pso * 100).toFixed(1)}%`} sub="ratio" />
-          <MetricRow label="TOSL" value={`${tosl.toFixed(1)} sqm`} />
-          <MetricRow label="ISA" value={`${isa.toFixed(1)} sqm`} sub={`${(isaPercent * 100).toFixed(0)}% table`} />
-          <MetricRow label="USA" value={`${usa.toFixed(1)} sqm`} sub={`${(usaPercent * 100).toFixed(0)}% table`} />
-          <MetricRow label="MACA" value={`${maca.toFixed(1)} sqm`} sub="AMBF+ISA" />
-          <MetricRow label="TGFA" value={`${tgfa.toFixed(1)} sqm`} />
-          <MetricRow label="BHL" value={`${bhl.toFixed(1)} m`} />
-        </div>
-      </div>
-
-      {/* Error violations */}
-      {errors.length > 0 && (
-        <div className="space-y-1 rounded-md bg-[#FDF0F0] p-2">
-          {errors.map((v, i) => (
-            <p key={i} className="text-[10px] text-[#D64545]">
-              {v.message}
-            </p>
-          ))}
-        </div>
-      )}
-
-      {/* Warning violations */}
-      {warnings.length > 0 && (
-        <div className="space-y-1 rounded-md bg-[#FEF8ED] p-2">
-          {warnings.map((v, i) => (
-            <p key={i} className="text-[10px] text-[#D4951A]">
-              {v.message}
-            </p>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-function MetricRow({ label, value, sub }: { label: string; value: string; sub?: string }) {
-  return (
-    <div className="flex items-baseline justify-between">
-      <div>
-        <span className="text-[10px] text-[#8896A7]">{label}</span>
-        {sub && <span className="ml-1 text-[8px] text-[#8896A7]/50">{sub}</span>}
-      </div>
-      <span className="font-mono text-[11px] font-medium text-[#1A2332]">{value}</span>
     </div>
   )
 }

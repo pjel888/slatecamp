@@ -358,12 +358,12 @@ function DataTable<T extends Record<string, unknown>>({
                         <span className="inline-flex">
                           {sortState?.key === column.key ? (
                             sortState.direction === 'asc' ? (
-                              <ArrowUp size={14} />
+                              <ArrowUp size={16} className="w-4 h-4" />
                             ) : (
-                              <ArrowDown size={14} />
+                              <ArrowDown size={16} className="w-4 h-4" />
                             )
                           ) : (
-                            <ArrowsDownUp size={14} className="opacity-40" />
+                            <ArrowsDownUp size={16} className="w-4 h-4 opacity-40" />
                           )}
                         </span>
                       )}

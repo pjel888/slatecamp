@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
+import { cn } from '@/lib/utils'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
@@ -28,25 +29,25 @@ const quickActions = [
     icon: <Plus size={16} className="text-muted-foreground" />,
     title: 'Create Question',
     subtitle: 'Add a new question to the bank',
-    href: '/admin/questions/new',
+    href: '/admin/knowledge/questions/new',
   },
   {
     icon: <FileText size={16} className="text-muted-foreground" />,
     title: 'Create Article',
     subtitle: 'Write a new wiki article',
-    href: '/admin/articles/new',
+    href: '/admin/knowledge/new',
   },
   {
     icon: <SquaresFour size={16} className="text-muted-foreground" />,
-    title: 'Content Editor',
+    title: 'Knowledge Browser',
     subtitle: 'Manage existing content',
-    href: '/admin/content',
+    href: '/admin/knowledge',
   },
   {
     icon: <UploadSimple size={16} className="text-muted-foreground" />,
-    title: 'Import Questions',
+    title: 'Import Content',
     subtitle: 'Bulk import from spreadsheet',
-    href: '/admin/questions/import',
+    href: '/admin/knowledge/import',
   },
   {
     icon: <ClipboardText size={16} className="text-muted-foreground" />,
@@ -124,18 +125,18 @@ const AdminDashboardPage = async () => {
           eyebrow="Total Questions"
           value={data.questions.toLocaleString()}
           color="text-primary"
-          href="/admin/questions"
+          href="/admin/knowledge/questions"
         />
         <StatCard
           eyebrow="Total Articles"
           value={data.wikiTotal.toLocaleString()}
-          href="/admin/articles"
+          href="/admin/knowledge"
         />
         <StatCard
           eyebrow="Published"
           value={data.publishedArticles.toLocaleString()}
           color="text-emerald-600"
-          href="/admin/articles"
+          href="/admin/knowledge"
         />
         <StatCard
           eyebrow="Draft"
@@ -147,39 +148,72 @@ const AdminDashboardPage = async () => {
       {/* Section 4: Content by Subject */}
       {subjectCounts.length > 0 && (
         <Card size="md">
-          <div className="flex items-center justify-between mb-4">
-            <Eyebrow>Content by Subject</Eyebrow>
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <Eyebrow>Content by Subject</Eyebrow>
+              <p className="text-xs text-muted-foreground mt-1">Resource distribution across the syllabus</p>
+            </div>
+            <div className="flex items-center gap-4 text-[10px] uppercase tracking-wider font-bold text-text-tertiary">
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-primary/60" />
+                <span>Questions</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-muted-foreground/30" />
+                <span>Articles</span>
+              </div>
+            </div>
           </div>
-          <div className="space-y-2.5">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {subjectCounts.map((subject) => {
-              const pct = Math.round((subject.questionCount / maxQuestions) * 100)
+              const qPct = Math.round((subject.questionCount / maxQuestions) * 100)
+              const aPct = Math.min(100, Math.round((subject.articleCount / 20) * 100)) // Arbitrary 20 as "full" for articles for scale
+              
+              // Color mapping based on subject code
+              const colorClass = 
+                subject.ale_id?.includes('PRAC') ? 'bg-emerald-500' :
+                subject.ale_id?.includes('HIST') ? 'bg-amber-500' :
+                subject.ale_id?.includes('THEO') ? 'bg-sky-500' :
+                subject.ale_id?.includes('PLAN') ? 'bg-indigo-500' :
+                subject.ale_id?.includes('STRC') ? 'bg-rose-500' :
+                subject.ale_id?.includes('MATL') ? 'bg-violet-500' :
+                subject.ale_id?.includes('DSGN') ? 'bg-cyan-500' :
+                subject.ale_id?.includes('UTIL') ? 'bg-orange-500' :
+                'bg-primary'
+
               return (
-                <div key={subject.node_id} className="flex items-center gap-3">
-                  <div className="w-32 shrink-0">
-                    <span className="text-xs font-medium text-foreground truncate block" title={subject.name}>
-                      {subject.name}
-                    </span>
-                    {subject.ale_id && (
-                      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
-                        {subject.ale_id}
-                      </span>
-                    )}
+                <div key={subject.node_id} className="space-y-2">
+                  <div className="flex items-end justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="text-[11px] font-bold text-text-tertiary uppercase tracking-tight truncate">
+                        {subject.ale_id || 'Subject'}
+                      </p>
+                      <p className="text-xs font-semibold text-foreground truncate" title={subject.name}>
+                        {subject.name}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-3 shrink-0">
+                      <div className="text-right">
+                        <span className="block text-xs font-bold text-foreground tabular-nums">
+                          {subject.questionCount}
+                        </span>
+                        <span className="block text-[9px] text-muted-foreground uppercase font-bold tracking-tighter">Items</span>
+                      </div>
+                      <div className="text-right">
+                        <span className="block text-xs font-bold text-text-secondary tabular-nums">
+                          {subject.articleCount}
+                        </span>
+                        <span className="block text-[9px] text-muted-foreground uppercase font-bold tracking-tighter">Wiki</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                  
+                  <div className="relative h-1.5 w-full bg-muted rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-primary/60 rounded-full transition-all duration-150"
-                      style={{ width: `${pct}%` }}
+                      className={cn("absolute inset-y-0 left-0 rounded-full transition-all duration-500 ease-out", colorClass)}
+                      style={{ width: `${qPct}%`, opacity: 0.7 }}
                     />
-                  </div>
-                  <div className="flex items-center gap-2 shrink-0 text-right">
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground tabular-nums w-8 text-right">
-                      {subject.questionCount}
-                    </span>
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">q</span>
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground tabular-nums w-6 text-right">
-                      {subject.articleCount}
-                    </span>
-                    <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">a</span>
                   </div>
                 </div>
               )

@@ -44,7 +44,7 @@ export const NotificationBell = ({ userId }: NotificationBellProps) => {
           className="relative flex items-center justify-center w-9 h-9 rounded-sm hover:bg-muted transition-colors duration-150 cursor-pointer"
           aria-label={`Notifications${unreadCount > 0 ? ` (${unreadCount} unread)` : ''}`}
         >
-          <SCIcon icon={Bell} size="md" />
+          <SCIcon icon={Bell} size="base" />
           {unreadCount > 0 && (
             <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 flex items-center justify-center rounded-full bg-[#1B3FC4] text-white text-[10px] font-semibold leading-none">
               {displayCount}

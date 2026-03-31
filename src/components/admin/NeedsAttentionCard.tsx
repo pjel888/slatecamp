@@ -45,7 +45,7 @@ const NeedsAttentionCard = ({ pendingReviews, missingRationale }: NeedsAttention
               </span>
               <span className="text-xs text-muted-foreground flex-1">questions missing rationale</span>
               <Link
-                href="/admin/questions?filter=missing_rationale"
+                href="/admin/knowledge/questions?filter=missing_rationale"
                 className="inline-flex items-center gap-0.5 text-[11px] font-medium text-amber-700 hover:text-amber-900 transition-colors duration-150 shrink-0"
               >
                 View

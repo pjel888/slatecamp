@@ -3,12 +3,14 @@
 import * as React from 'react'
 import { HighlighterCircle, Copy, NotePencil } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { useNoteContext } from '@/lib/context/note-context'
 
 /**
  * Text-selection popover that appears when the user highlights text
  * in the wiki article. Offers: Highlight, Copy, Add to Notes.
  */
 export function WikiTextSelection() {
+  const { anchor, openDrawer } = useNoteContext()
   const [position, setPosition] = React.useState<{ x: number; y: number } | null>(null)
   const [selectedText, setSelectedText] = React.useState('')
   const popoverRef = React.useRef<HTMLDivElement>(null)
@@ -71,7 +73,10 @@ export function WikiTextSelection() {
   }
 
   const handleAddToNotes = () => {
-    // Placeholder — future: open note capture with selected text
+    openDrawer({
+      ...anchor,
+      initialText: selectedText
+    })
     setPosition(null)
     window.getSelection()?.removeAllRanges()
   }

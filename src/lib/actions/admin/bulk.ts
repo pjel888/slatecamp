@@ -33,7 +33,7 @@ export const bulkDeleteArticles = async (ids: string[]) => {
 
   if (error) return { error: error.message }
 
-  revalidatePath('/admin/articles')
+  revalidatePath('/admin/knowledge')
   revalidatePath('/admin/wiki')
   return { error: null, deleted: ids.length }
 }

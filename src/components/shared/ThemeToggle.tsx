@@ -15,8 +15,8 @@ export function ThemeToggle() {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="h-9 w-9"
     >
-      <SCIcon icon={Sun} size="sm" className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <SCIcon icon={Moon} size="sm" className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <SCIcon icon={Sun} size="base" className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <SCIcon icon={Moon} size="base" className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   );

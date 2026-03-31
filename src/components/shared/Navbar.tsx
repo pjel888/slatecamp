@@ -63,7 +63,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
           <SheetTrigger
             render={<Button variant='ghost' size='icon' className='h-9 w-9' />}
           >
-            <SCIcon icon={List} size='md' />
+            <SCIcon icon={List} size='base' />
           </SheetTrigger>
           <SheetContent side='right' className='w-[280px] p-0'>
             <SheetTitle className='sr-only'>Navigation</SheetTitle>
@@ -82,7 +82,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                     }`}
                   >
-                    <SCIcon icon={Icon} size='sm' />
+                    <SCIcon icon={Icon} size='base' />
                     {label}
                   </Link>
                 )
@@ -99,7 +99,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                     }`}
                   >
-                    <SCIcon icon={ShieldCheck} size='sm' />
+                    <SCIcon icon={ShieldCheck} size='base' />
                     Dev Settings
                   </Link>
                 </>

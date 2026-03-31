@@ -22,9 +22,9 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
     {/* Logo icon container: 40x64px — matches dashboard header height for visual continuity */}
     <div className="flex h-16 w-10 shrink-0 items-center justify-center">
       <BookOpen
-        size={17}
+        size={16}
         weight="fill"
-        className="text-camp-cobalt dark:text-[#4F6AE8]"
+        className="w-4 h-4 text-camp-cobalt dark:text-[#4F6AE8]"
       />
     </div>
 

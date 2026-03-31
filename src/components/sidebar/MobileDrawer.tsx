@@ -76,11 +76,10 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
         ],
       )}
     >
-      {/* Icon — 18x18px (slightly larger than desktop 16px for touch) */}
       <Icon
-        size={18}
+        size={16}
         weight="regular"
-        className="shrink-0 transition-opacity duration-[120ms]"
+        className="w-4 h-4 shrink-0 transition-opacity duration-[120ms]"
         style={{ opacity: isActive || tier === 'default' ? 1.0 : tierOpacity }}
       />
 

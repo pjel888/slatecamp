@@ -2,7 +2,9 @@
 
 import * as React from 'react'
 import Link from 'next/link'
-import { CaretRight, FileText, BookOpen, Stack, ArrowsIn, ArrowsOut } from '@phosphor-icons/react/dist/ssr'
+import { CaretRight, FileText, BookOpen, Stack, ArrowsIn, ArrowsOut, ListBullets, Question } from '@phosphor-icons/react/dist/ssr'
+import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { SearchInput } from '@/components/ui/input'
 
@@ -22,7 +24,7 @@ interface TaxonomyTreeNode {
   children?: TaxonomyTreeNode[]
   article_count?: number
   question_count?: number
-  articles?: Array<{ article_id: string; title: string; slug: string }>
+  articles?: Array<{ article_id: string; title: string; slug: string; question_count?: number }>
 }
 
 interface TaxonomyTreeProps {
@@ -45,8 +47,15 @@ interface TaxonomyTreeProps {
   showSearch?: boolean
   /** Dim non-active items when an article is active */
   dimInactive?: boolean
-  /** Right-aligned content renderer for rows */
+  /** Right-aligned content renderer for rows. If provided, replaces default counts. */
   renderRight?: (node: TaxonomyTreeNode, index?: number) => React.ReactNode
+  /** Special "Root" action (e.g. "All Questions") */
+  rootAction?: {
+    label: string
+    icon?: PhosphorIcon
+    onClick: () => void
+    isActive?: boolean
+  }
   className?: string
 }
 
@@ -206,6 +215,7 @@ interface TreeRowProps {
   onToggle?: () => void
   orderLabel?: string | null
   rawNode?: TaxonomyTreeNode // Optional, used for onSelect
+  isArticle?: boolean
 }
 
 const TreeRow = React.memo(({
@@ -221,23 +231,24 @@ const TreeRow = React.memo(({
   onToggle,
   orderLabel,
   rawNode,
+  isArticle = false,
 }: TreeRowProps) => {
-  const { onNavigate, onSelect, searchQuery, renderRight } = useTaxonomyTree()
+  const { onNavigate, onSelect, searchQuery, renderRight, showCounts } = useTaxonomyTree()
   
   const handleClick = (e: React.MouseEvent) => {
-    // Admin selection mode — pass all nodes through; admin handler discriminates by level
+    // Branch A: structural node click in Admin/Filter mode
     if (onSelect && rawNode) {
       e.preventDefault()
       onSelect(id, label, rawNode)
       return
     }
-    // Branch A: structural node (subject / subtopic) — toggle only, no navigation
+    // Branch B: structural node click in Navigation mode
     if (isExpandable) {
       e.preventDefault()
       onToggle?.()
       return
     }
-    // Branch B: leaf/article node — trigger navigation
+    // Branch C: leaf/article node — trigger navigation
     if (onNavigate) {
       e.preventDefault()
       onNavigate(href)
@@ -251,7 +262,7 @@ const TreeRow = React.memo(({
   }
 
   // Level-based icon: level 1=BookOpen, level 2=Stack, level 3+=FileText
-  const LevelIcon = level <= 1 ? BookOpen : level === 2 ? Stack : FileText
+  const LevelIcon = isArticle ? FileText : level <= 1 ? BookOpen : level === 2 ? Stack : FileText
 
   const InnerContent = (
     <>
@@ -278,7 +289,7 @@ const TreeRow = React.memo(({
         </button>
       ) : (
         <span className={cn('flex w-5 shrink-0 items-center justify-center', level <= 1 ? 'h-8' : 'h-6')}>
-          {!isExpandable && level >= 3 && (
+          {!isExpandable && level >= 3 && !isArticle && (
              <span className={cn(
                'w-1.5 h-1.5 rounded-full transition-colors duration-200',
                isActive ? 'bg-primary' : 'bg-border group-hover/tree:bg-text-tertiary'
@@ -313,18 +324,30 @@ const TreeRow = React.memo(({
       </span>
 
       {/* Right-aligned custom content or sort order */}
-      {renderRight && rawNode ? (
-        renderRight(rawNode)
-      ) : orderLabel ? (
-        <span
-          className={cn(
-            'ml-auto shrink-0 pl-2 font-[family-name:var(--font-dm-mono)] text-[10px] tabular-nums tracking-widest transition-colors duration-200',
-            isActive || isChildActive ? 'text-primary opacity-60' : 'text-text-tertiary opacity-40 group-hover/tree:opacity-60 group-hover/tree:text-text-secondary',
-          )}
-        >
-          {orderLabel}
-        </span>
-      ) : null}
+      <div className="ml-auto flex items-center gap-1.5 pl-2">
+        {renderRight && rawNode ? (
+          renderRight(rawNode)
+        ) : showCounts && rawNode ? (
+          <>
+            {rawNode.question_count !== undefined && rawNode.question_count > 0 && (
+              <span className="flex items-center gap-0.5 text-[10px] px-1.5 py-0.5 rounded-md bg-zinc-100 text-zinc-500 font-medium">
+                <Question size={10} weight="bold" />
+                {rawNode.question_count}
+              </span>
+            )}
+            {orderLabel && (
+              <span
+                className={cn(
+                  'font-[family-name:var(--font-dm-mono)] text-[10px] tabular-nums tracking-widest transition-colors duration-200',
+                  isActive || isChildActive ? 'text-primary opacity-60' : 'text-text-tertiary opacity-40 group-hover/tree:opacity-60 group-hover/tree:text-text-secondary',
+                )}
+              >
+                {orderLabel}
+              </span>
+            )}
+          </>
+        ) : null}
+      </div>
     </>
   )
 
@@ -338,18 +361,8 @@ const TreeRow = React.memo(({
     !isActive && !isChildActive && 'opacity-75 grayscale-[0.4] group-hover/tree:opacity-100 group-hover/tree:grayscale-0',
   )
 
-  if (onSelect) {
-    return (
-      <div className={rowClasses} onClick={handleClick}>
-        {InnerContent}
-      </div>
-    )
-  }
-
-  // Structural nodes (subjects/subtopics) must never render as <Link>.
-  // Even with e.preventDefault(), Next.js registers the interaction and
-  // fires the router loading indicator. A plain <div> prevents this entirely.
-  if (isExpandable) {
+  // Use <div> for everything when onSelect is provided or for structural nodes
+  if (onSelect || isExpandable) {
     return (
       <div className={rowClasses} onClick={handleClick}>
         {InnerContent}
@@ -471,7 +484,14 @@ const TreeBranch = React.memo(({
                 isActive={activeSlug === art.slug || activeNodeId === art.article_id}
                 isDimmed={dimInactive && (!!activeSlug || !!activeNodeId) && activeSlug !== art.slug && activeNodeId !== art.article_id}
                 isChildActive={false}
-                level={3} // Articles linked to level 2 nodes should look like level 3 nodes
+                level={3} 
+                isArticle={true}
+                rawNode={{ 
+                  node_id: `article:${art.article_id}`, 
+                  name: art.title, 
+                  level: 3, 
+                  question_count: art.question_count 
+                } as any}
               />
             ))}
           </div>
@@ -498,6 +518,7 @@ const TaxonomyTree = ({
   showSearch,
   dimInactive = false,
   renderRight,
+  rootAction,
   className,
 }: TaxonomyTreeProps) => {
   const [expanded, setExpanded] = React.useState<Set<string>>(() => {
@@ -614,10 +635,10 @@ const TaxonomyTree = ({
           <div className="flex items-center justify-end px-1 mt-0.5">
             <div className="flex items-center gap-2">
               <button onClick={handleExpandAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Expand All">
-                <ArrowsOut size={13} weight="bold" />
+                <ArrowsOut size={16} weight="bold" className="w-4 h-4" />
               </button>
               <button onClick={handleCollapseAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Collapse All">
-                <ArrowsIn size={13} weight="bold" />
+                <ArrowsIn size={16} weight="bold" className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -633,6 +654,24 @@ const TaxonomyTree = ({
           </div>
         ) : (
           <nav className="overflow-y-auto p-1 py-3 space-y-0.5" aria-label="Taxonomy navigation">
+            {rootAction && (
+              <button
+                type="button"
+                onClick={rootAction.onClick}
+                className={cn(
+                  'w-full flex items-center gap-1.5 px-3 py-1.5 text-sm cursor-pointer transition-colors duration-150 rounded-sm mb-2',
+                  'hover:bg-muted/60',
+                  rootAction.isActive && 'bg-primary/10 text-primary',
+                )}
+              >
+                {rootAction.icon ? (
+                  <SCIcon icon={rootAction.icon} size="base" className="flex-shrink-0" />
+                ) : (
+                  <ListBullets size={16} className="w-4 h-4 flex-shrink-0" />
+                )}
+                <span className="font-medium">{rootAction.label}</span>
+              </button>
+            )}
             {visibleRoots.map((node, i) => (
               <TreeBranch key={node.node_id} node={node} siblingIndex={i} />
             ))}

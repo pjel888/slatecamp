@@ -73,7 +73,7 @@ export async function updateWikiArticle(id: string, data: {
   if (!error) {
     revalidatePath('/admin/wiki');
     revalidatePath(`/admin/wiki/${id}`);
-    revalidatePath('/admin/articles');
+    revalidatePath('/admin/knowledge');
   }
 
   return { error };

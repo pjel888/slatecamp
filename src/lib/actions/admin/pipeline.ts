@@ -31,6 +31,6 @@ export const updateArticleStatus = async (
   if (error) throw new Error(`Failed to update status: ${error.message}`)
 
   revalidatePath('/admin/pipeline')
-  revalidatePath('/admin/articles')
+  revalidatePath('/admin/knowledge')
   revalidatePath('/admin/reviews')
 }

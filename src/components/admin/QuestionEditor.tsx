@@ -105,7 +105,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
         {/* Header */}
         <div className="flex items-center justify-between">
           <Link
-            href="/admin/questions"
+            href="/admin/knowledge/questions"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
           >
             <SCIcon icon={ArrowLeft} size="sm" />
@@ -222,7 +222,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
         {/* Save Button */}
         <div className="flex gap-3">
           <Link
-            href="/admin/questions"
+            href="/admin/knowledge/questions"
             className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md border border-input hover:bg-muted"
           >
             <SCIcon icon={XCircle} size="sm" />

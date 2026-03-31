@@ -104,7 +104,7 @@ export const ContentSearchClient = () => {
     questions.map((q) => (
       <Link
         key={q.question_id}
-        href={`/admin/questions/${q.question_id}`}
+        href={`/admin/knowledge/questions/${q.question_id}`}
         className="flex items-start gap-3 rounded-md border border-border p-3 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
       >
         <Badge variant="primary" size="xs" className="mt-0.5 shrink-0">

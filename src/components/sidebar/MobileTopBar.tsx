@@ -34,7 +34,7 @@ export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
         className="flex items-center justify-center rounded-md text-text-secondary transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-400 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt"
         style={{ width: 34, height: 34 }}
       >
-        <List size={17} weight="regular" />
+        <List size={16} weight="regular" className="w-4 h-4" />
       </button>
 
       {/* Wordmark logo */}

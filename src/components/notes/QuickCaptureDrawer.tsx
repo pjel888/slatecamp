@@ -91,7 +91,14 @@ export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
     setNoteId(null)
     noteIdRef.current = null
     setTitle('')
-    setContent(EMPTY_DOC)
+    
+    // If we have initialText from the anchor (e.g. from wiki highlight), 
+    // seed the editor with a paragraph block.
+    const initialContent = anchor.initialText 
+      ? { type: 'doc', content: [{ type: 'paragraph', content: [{ type: 'text', text: anchor.initialText }] }] }
+      : EMPTY_DOC
+    
+    setContent(initialContent)
     setNoteType(hasQuestionContext ? 'gap_analysis' : 'quick_capture')
     setSaveState('idle')
     setSaveError(null)

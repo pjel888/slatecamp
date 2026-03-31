@@ -40,7 +40,7 @@ export default async function AdminLayout({
   }
 
   // Full-bleed editor routes get no padding — the editor manages its own layout
-  const isFullBleedEditor = /^\/admin\/content\/[^/]+$/.test(pathname)
+  const isFullBleedEditor = /^\/admin\/knowledge(\/questions)?\/[^/]+$/.test(pathname)
 
   return (
     <AdminShell

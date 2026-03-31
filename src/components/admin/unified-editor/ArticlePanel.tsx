@@ -694,6 +694,33 @@ export const ArticlePanel = ({
                 placeholder="Notes from review..."
               />
             </div>
+            {/* 3D Assets & Experience Bridge */}
+            <div className="col-span-2 flex items-center justify-between border-t border-border mt-2 pt-3">
+              <div className="flex flex-col gap-1">
+                <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
+                  Interactive Experience
+                </label>
+                <div className="flex items-center gap-2">
+                  <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary-50">
+                    <svg className="h-3 w-3 text-camp-cobalt" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M21 16.5c0 .38-.21.71-.53.88l-7.97 4.44c-.31.17-.69.17-1 0l-7.97-4.44c-.32-.17-.53-.5-.53-.88v-9c0-.38.21-.71.53-.88l7.97-4.44c.31-.17.69-.17 1 0l7.97 4.44c.32.17.53.5.53.88v9z" />
+                    </svg>
+                  </div>
+                  <span className="text-xs font-medium text-text-primary">
+                    {nodeId ? '3D Models available for this topic' : 'No 3D topic assigned'}
+                  </span>
+                </div>
+              </div>
+              {nodeId && (
+                <a
+                  href={`/admin/3d-models?topic=${nodeId}`}
+                  target="_blank"
+                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-tight text-camp-cobalt transition-colors duration-150 hover:bg-primary-50"
+                >
+                  Manage 3D Registry &rarr;
+                </a>
+              )}
+            </div>
           </div>
         )}
       </div>

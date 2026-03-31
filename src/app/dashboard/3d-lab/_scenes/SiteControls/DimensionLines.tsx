@@ -1,79 +1,119 @@
 'use client'
 
-import { Line, Html } from '@react-three/drei'
+import { Line, Text } from '@react-three/drei'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 
+function DimLine({
+  start,
+  end,
+  label,
+}: {
+  start: [number, number, number]
+  end: [number, number, number]
+  label: string
+}) {
+  const mid: [number, number, number] = [
+    (start[0] + end[0]) / 2,
+    Math.max(start[1], end[1]) + 0.4,
+    (start[2] + end[2]) / 2,
+  ]
+
+  return (
+    <group>
+      {/* Main line */}
+      <Line points={[start, end]} color="#1B3FC4" lineWidth={1.5} />
+
+      {/* Start tick */}
+      <Line
+        points={[
+          [start[0], start[1] - 0.15, start[2]],
+          [start[0], start[1] + 0.25, start[2]],
+        ]}
+        color="#1B3FC4"
+        lineWidth={1.5}
+      />
+
+      {/* End tick */}
+      <Line
+        points={[
+          [end[0], end[1] - 0.15, end[2]],
+          [end[0], end[1] + 0.25, end[2]],
+        ]}
+        color="#1B3FC4"
+        lineWidth={1.5}
+      />
+
+      {/* Label */}
+      <Text
+        position={mid}
+        fontSize={0.35}
+        color="#1B3FC4"
+        anchorX="center"
+        anchorY="bottom"
+      >
+        {label}
+      </Text>
+    </group>
+  )
+}
+
 /**
- * Dimension annotation lines and labels.
- * Uses Html instead of Text/Billboard to avoid worker init errors.
+ * Dimension annotations using drei Line + Text.
+ * Only visible when showDimensions is toggled on.
+ * Shows: lot width/depth, front setback, buildable width/depth.
  */
 export function DimensionLines() {
   const showDimensions = useSiteControlsStore((s) => s.showDimensions)
   const lotWidth = useSiteControlsStore((s) => s.inputs.lotWidth)
   const lotDepth = useSiteControlsStore((s) => s.inputs.lotDepth)
-  const buildingHeight = useSiteControlsStore((s) => s.computed.buildingHeight)
-  const buildableWidth = useSiteControlsStore((s) => s.computed.buildableWidth)
-  const buildableDepth = useSiteControlsStore((s) => s.computed.buildableDepth)
-  const setbacks = useSiteControlsStore((s) => s.computed.setbacks)
+  const computed = useSiteControlsStore((s) => s.computed)
 
   if (!showDimensions) return null
 
-  const lineColor = '#4A5568'
-  const offset = 1.5
-
-  const labelStyle = { color: '#4A5568', fontSize: 11, fontWeight: 600, fontFamily: 'monospace', whiteSpace: 'nowrap' as const }
-  const blueLabelStyle = { ...labelStyle, color: '#1B3FC4' }
+  const { setbacks, buildableWidth, buildableDepth } = computed
+  const y = 0.02
 
   return (
     <group>
-      {/* Lot Width */}
-      <Line points={[[0, 0.05, -offset], [lotWidth, 0.05, -offset]]} color={lineColor} lineWidth={1.5} />
-      <Html position={[lotWidth / 2, 0.05, -offset - 0.5]} center distanceFactor={12}>
-        <div style={labelStyle}>{lotWidth.toFixed(1)}m</div>
-      </Html>
+      {/* Lot width — along front edge, offset in front */}
+      <DimLine
+        start={[0, y, -1.5]}
+        end={[lotWidth, y, -1.5]}
+        label={`${lotWidth.toFixed(1)}m`}
+      />
 
-      {/* Lot Depth */}
-      <Line points={[[-offset, 0.05, 0], [-offset, 0.05, lotDepth]]} color={lineColor} lineWidth={1.5} />
-      <Html position={[-offset - 0.5, 0.05, lotDepth / 2]} center distanceFactor={12}>
-        <div style={labelStyle}>{lotDepth.toFixed(1)}m</div>
-      </Html>
+      {/* Lot depth — along left edge, offset to the left */}
+      <DimLine
+        start={[-1.5, y, 0]}
+        end={[-1.5, y, lotDepth]}
+        label={`${lotDepth.toFixed(1)}m`}
+      />
 
-      {/* Buildable Width */}
-      {buildableWidth > 0 && buildableDepth > 0 && (
-        <>
-          <Line
-            points={[
-              [setbacks.left, buildingHeight + 0.2, setbacks.front + buildableDepth / 2],
-              [setbacks.left + buildableWidth, buildingHeight + 0.2, setbacks.front + buildableDepth / 2],
-            ]}
-            color="#1B3FC4"
-            lineWidth={1.5}
-          />
-          <Html
-            position={[setbacks.left + buildableWidth / 2, buildingHeight + 0.7, setbacks.front + buildableDepth / 2]}
-            center
-            distanceFactor={12}
-          >
-            <div style={blueLabelStyle}>{buildableWidth.toFixed(1)}m</div>
-          </Html>
+      {/* Front setback — right edge, from 0 to setback depth */}
+      {setbacks.front > 0 && (
+        <DimLine
+          start={[lotWidth + 1, y, 0]}
+          end={[lotWidth + 1, y, setbacks.front]}
+          label={`${setbacks.front.toFixed(1)}m`}
+        />
+      )}
 
-          {/* Buildable Depth */}
-          <Line
-            points={[
-              [setbacks.left + buildableWidth / 2, buildingHeight + 0.2, setbacks.front],
-              [setbacks.left + buildableWidth / 2, buildingHeight + 0.2, setbacks.front + buildableDepth],
-            ]}
-            color="#1B3FC4"
-            lineWidth={1.5}
-          />
-          <Html
-            position={[setbacks.left + buildableWidth + 1.0, buildingHeight + 0.7, setbacks.front + buildableDepth / 2]}
-            center
-            distanceFactor={12}
-          >
-            <div style={blueLabelStyle}>{buildableDepth.toFixed(1)}m</div>
-          </Html>
-        </>
+      {/* Buildable width — along rear, between setback lines */}
+      {buildableWidth > 0 && (
+        <DimLine
+          start={[setbacks.left, y, lotDepth + 1]}
+          end={[lotWidth - setbacks.right, y, lotDepth + 1]}
+          label={`${buildableWidth.toFixed(1)}m`}
+        />
+      )}
+
+      {/* Buildable depth — far right, between setback lines */}
+      {buildableDepth > 0 && (
+        <DimLine
+          start={[lotWidth + 2.5, y, setbacks.front]}
+          end={[lotWidth + 2.5, y, lotDepth - setbacks.rear]}
+          label={`${buildableDepth.toFixed(1)}m`}
+        />
       )}
     </group>
   )

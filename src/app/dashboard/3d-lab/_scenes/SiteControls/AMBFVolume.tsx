@@ -1,152 +1,66 @@
 'use client'
 
-import { useMemo, useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
-import { Line } from '@react-three/drei'
-import * as THREE from 'three'
-import { ArchMass } from '../../_components/ArchMass'
+import { useMemo } from 'react'
+import { Edges, Outlines } from '@react-three/drei'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 
-// Color targets
-const COLOR_COBALT = new THREE.Color('#1B3FC4')
-const COLOR_VIOLATION = new THREE.Color('#D64545')
-const COLOR_WARNING = new THREE.Color('#D4951A')
-const COLOR_MONOCHROME = new THREE.Color('#B0B0B0')
-
 /**
- * Building footprint extruded box with real-time violation feedback.
- *
- * When the building exceeds AMBF/PSO limits, the mesh lerps to red.
- * When floor height is below minimum, lerps to amber.
- * Monochrome when another zone is selected; cobalt blue when this zone is active.
+ * Building footprint extruded box at Y=(height/2)+0.015.
+ * Cobalt when compliant, red when violating. Dark edges always; outline on active.
+ * When zoning-capped (AMBF < buildable area), building scales proportionally.
  */
 export function AMBFVolume() {
-  const buildableWidth = useSiteControlsStore((s) => s.computed.buildableWidth)
-  const buildableDepth = useSiteControlsStore((s) => s.computed.buildableDepth)
-  const setbacks = useSiteControlsStore((s) => s.computed.setbacks)
-  const buildingHeight = useSiteControlsStore((s) => s.computed.buildingHeight)
-  const numFloors = useSiteControlsStore((s) => s.inputs.numFloors)
-  const floorHeight = useSiteControlsStore((s) => s.inputs.floorHeight)
+  const computed = useSiteControlsStore((s) => s.computed)
   const activeZone = useSiteControlsStore((s) => s.activeZone)
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
-  const tourStep = useSiteControlsStore((s) => s.tourStep)
-  const violations = useSiteControlsStore((s) => s.computed.violations)
-  const compliance = useSiteControlsStore((s) => s.computed.compliance)
 
-  const materialRef = useRef<THREE.MeshStandardMaterial>(null)
-  const pulseRef = useRef(0)
-
-  // Determine violation state
-  const ambfViolations = violations.filter((v) => v.field === 'ambf')
-  const floorViolation = violations.find((v) => v.field === 'floorHeight')
-  const hasError = ambfViolations.length > 0
-  const hasWarning = !!floorViolation && !hasError
-  const hasAnyViolation = hasError || hasWarning
-
+  const { ambf, buildableWidth, buildableDepth, setbacks, buildingHeight, compliance } = computed
   const isActive = activeZone === 'ambf'
-  const dimmed = activeZone !== null && !isActive
+  const isViolating = !compliance.ambfOk
 
-  // Target color based on zone selection and violation state
-  const targetColor = isActive
-    ? COLOR_COBALT
-    : dimmed
-      ? COLOR_MONOCHROME
-      : hasError
-        ? COLOR_VIOLATION
-        : hasWarning
-          ? COLOR_WARNING
-          : COLOR_COBALT
-
-  // Animate color lerp + violation pulse (only when no zone is selected)
-  useFrame((_, delta) => {
-    if (!materialRef.current) return
-
-    // Lerp material color toward target
-    materialRef.current.color.lerp(targetColor, delta * 4)
-
-    // Pulse emissive on violation only when no zone is actively selected
-    if (hasAnyViolation && activeZone === null) {
-      pulseRef.current += delta * 3
-      const pulse = (Math.sin(pulseRef.current) + 1) * 0.5 // 0-1
-      materialRef.current.emissive.copy(hasError ? COLOR_VIOLATION : COLOR_WARNING)
-      materialRef.current.emissiveIntensity = pulse * 0.3
-    } else {
-      materialRef.current.emissiveIntensity = 0
-      pulseRef.current = 0
+  // When zoning-capped, scale building proportionally within buildable area
+  const dims = useMemo(() => {
+    if (buildableWidth <= 0 || buildableDepth <= 0 || ambf <= 0) {
+      return { w: 0, h: 0, d: 0 }
     }
-  })
-
-  if (buildableWidth <= 0 || buildableDepth <= 0) return null
-
-  const isSlab = tourStep === 2
-  const effectiveHeight = isSlab ? 0.3 : buildingHeight
-
-  const px = setbacks.left + buildableWidth / 2
-  const py = effectiveHeight / 2
-  const pz = setbacks.front + buildableDepth / 2
-
-  // Floor division lines
-  const floorLines = useMemo(() => {
-    if (isSlab) return []
-    const lines: Array<{ key: string; points: [number, number, number][] }> = []
-    const x0 = setbacks.left
-    const x1 = setbacks.left + buildableWidth
-    const z0 = setbacks.front
-    const z1 = setbacks.front + buildableDepth
-
-    for (let i = 1; i < numFloors; i++) {
-      const y = floorHeight * i
-      lines.push({
-        key: `floor-${i}`,
-        points: [
-          [x0, y, z0], [x1, y, z0], [x1, y, z1], [x0, y, z1], [x0, y, z0],
-        ],
-      })
+    const maxFromSetbacks = buildableWidth * buildableDepth
+    if (ambf >= maxFromSetbacks) {
+      return { w: buildableWidth, h: buildingHeight, d: buildableDepth }
     }
-    return lines
-  }, [isSlab, numFloors, floorHeight, buildableWidth, buildableDepth, setbacks])
+    // Zoning caps AMBF — the "aha" moment. Scale proportionally.
+    const scale = Math.sqrt(ambf / maxFromSetbacks)
+    return { w: buildableWidth * scale, h: buildingHeight, d: buildableDepth * scale }
+  }, [ambf, buildableWidth, buildableDepth, buildingHeight])
+
+  if (dims.w <= 0 || dims.d <= 0) return null
+
+  // Center within buildable area
+  const cx = setbacks.left + buildableWidth / 2
+  const cz = setbacks.front + buildableDepth / 2
+  const cy = dims.h / 2 + 0.015
+
+  const color = isViolating ? '#E63329' : '#1B3FC4'
 
   return (
-    <group>
-      {/* Building volume with animated material */}
-      <mesh
-        position={[px, py, pz]}
-        castShadow
-        receiveShadow
-        onClick={(e) => {
-          e.stopPropagation()
-          setActiveZone(isActive ? null : 'ambf')
-        }}
-        onPointerOver={(e) => {
-          e.stopPropagation()
-          document.body.style.cursor = 'pointer'
-        }}
-        onPointerOut={() => {
-          document.body.style.cursor = 'auto'
-        }}
-      >
-        <boxGeometry args={[buildableWidth, effectiveHeight, buildableDepth]} />
-        <meshStandardMaterial
-          ref={materialRef}
-          color={isActive ? '#1B3FC4' : dimmed ? '#B0B0B0' : hasError ? '#D64545' : hasWarning ? '#D4951A' : '#1B3FC4'}
-          roughness={0.4}
-          metalness={0.0}
-          transparent={dimmed}
-          opacity={dimmed ? 0.25 : 1.0}
-        />
-      </mesh>
-
-      {/* Floor division lines */}
-      {floorLines.map((fl) => (
-        <Line
-          key={fl.key}
-          points={fl.points}
-          color={dimmed ? '#B0B0B0' : hasError ? '#D64545' : '#1B3FC4'}
-          lineWidth={0.5}
-          transparent
-          opacity={dimmed ? 0.15 : 0.45}
-        />
-      ))}
-    </group>
+    <mesh
+      position={[cx, cy, cz]}
+      castShadow
+      receiveShadow
+      onClick={(e) => {
+        e.stopPropagation()
+        setActiveZone(isActive ? null : 'ambf')
+      }}
+    >
+      <boxGeometry args={[dims.w, dims.h, dims.d]} />
+      <meshStandardMaterial
+        color={color}
+        roughness={isActive ? 0.35 : 0.4}
+        metalness={0.0}
+        emissive={isViolating ? '#E63329' : '#000000'}
+        emissiveIntensity={isViolating ? 0.2 : 0.0}
+      />
+      <Edges threshold={15} color="#3A3A3A" lineWidth={1.0} scale={1.002} />
+      {isActive && <Outlines thickness={0.02} color="#4A6FE8" screenspace={false} />}
+    </mesh>
   )
 }

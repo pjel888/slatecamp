@@ -51,7 +51,7 @@ const PortalTopbar = ({
         href={backHref}
         className="flex items-center gap-1 text-[11px] text-white/45 hover:text-white transition-colors duration-150"
       >
-        <ArrowLeft size={12} />
+        <ArrowLeft size={16} className="w-4 h-4" />
         {backLabel}
       </Link>
     )}

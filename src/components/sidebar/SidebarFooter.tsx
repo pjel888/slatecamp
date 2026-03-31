@@ -149,10 +149,10 @@ export const SidebarFooter = ({
         {/* Toggle icon container: 40x30px */}
         <div className="flex h-[30px] w-10 shrink-0 items-center justify-center">
           <CaretDoubleRight
-            size={14}
+            size={16}
             weight="regular"
             className={cn(
-              'text-gray-400 shrink-0',
+              'w-4 h-4 text-gray-400 shrink-0',
               'transition-transform duration-[180ms] ease-out',
               expanded && 'rotate-180',
             )}

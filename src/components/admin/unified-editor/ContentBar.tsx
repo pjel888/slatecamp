@@ -90,7 +90,7 @@ export const ContentBar = ({
     <div className="sticky top-0 z-30 flex h-16 w-full shrink-0 items-center gap-3 border-b border-border bg-white px-4">
       {/* 1. Back link */}
       <Link
-        href="/admin/articles"
+        href="/admin/knowledge"
         className="flex items-center justify-center w-8 h-8 rounded-md text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors"
         title="Back to Articles"
       >

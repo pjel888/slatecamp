@@ -17,7 +17,6 @@ interface WikiQuizButtonProps {
 
 export const WikiQuizButton = ({ nodeId, topicName, articleSlug }: WikiQuizButtonProps) => {
   const [open, setOpen] = useState(false)
-  console.log('[WikiQuizButton] nodeId:', nodeId, 'topicName:', topicName)
 
   return (
     <>

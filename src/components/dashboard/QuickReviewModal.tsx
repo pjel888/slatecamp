@@ -96,9 +96,7 @@ export const QuickReviewModal = ({
 
   const handleSubmit = useCallback(
     async () => {
-      console.log('[QuickReview] handleSubmit called', { selectedId, feedback: !!feedback, submitting, currentQuestion: !!currentQuestion })
       if (!selectedId || feedback || submitting || !currentQuestion) return
-      console.log('[QuickReview] submitting answer...')
       setSubmitting(true)
 
       try {
@@ -118,9 +116,6 @@ export const QuickReviewModal = ({
           rationale: result.rationale,
         }
         setAnswers((prev) => [...prev, record])
-        console.log('[QuickReview] submitPrequestion result:', JSON.stringify(result, null, 2))
-        console.log('[QuickReview] currentQuestion options:', JSON.stringify(currentQuestion.options, null, 2))
-        console.log('[QuickReview] correctOptionId:', result.correctOptionId, 'selectedId:', selectedId)
 
         const feedbackData: FeedbackData = {
           questionId: currentQuestion.questionId,
@@ -130,7 +125,6 @@ export const QuickReviewModal = ({
           wikiUrl: null,
           errorDiagnostic: null,
         }
-        console.log('[QuickReview] feedbackData:', JSON.stringify(feedbackData, null, 2))
         setFeedback(feedbackData)
       } catch (err) {
         console.error('[QuickReview] submitPrequestion ERROR:', err)
@@ -344,7 +338,7 @@ export const QuickReviewModal = ({
             disabled={feedback !== null}
           />
           <SlideToSubmit
-            onSubmit={() => { console.log('[QuickReview] SlideToSubmit onSubmit fired'); void handleSubmit() }}
+            onSubmit={() => { void handleSubmit() }}
             label="Slide to submit"
             disabled={!selectedId || submitting || feedback !== null}
             checked={feedback !== null}

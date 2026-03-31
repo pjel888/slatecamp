@@ -96,7 +96,7 @@ const BloomBarRow = ({
             {accuracy}%
           </span>
           <span
-            className="font-mono text-[8px] tabular-nums"
+            className="font-mono text-[11px] tabular-nums"
             style={{ color: '#8896A7' }}
           >
             {attempts} attempts

@@ -53,7 +53,7 @@ const MobileNav = ({
         className="lg:hidden flex items-center justify-center w-8 h-8 rounded-sm text-white/60 hover:text-white hover:bg-white/10 transition-colors duration-150"
         aria-label="Open navigation menu"
       >
-        <SCIcon icon={List} size="sm" />
+        <SCIcon icon={List} size="base" />
       </SheetTrigger>
       <SheetContent side="left" className="w-[260px] p-0">
         <SheetHeader className="px-4 py-3 border-b border-border">

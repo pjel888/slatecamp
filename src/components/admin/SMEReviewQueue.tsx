@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -171,6 +172,16 @@ export const SMEReviewQueue = () => {
                     </div>
 
                     <div className="flex gap-2 shrink-0">
+                      <Link
+                        href={item.type === 'wiki' ? `/admin/knowledge/${item.id}` : `/admin/knowledge/questions/${item.id}`}
+                      >
+                        <Button
+                          variant="outline"
+                          size="sm"
+                        >
+                          Edit & Review
+                        </Button>
+                      </Link>
                       <Button
                         variant="success"
                         size="sm"
