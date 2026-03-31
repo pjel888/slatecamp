@@ -1,11 +1,13 @@
+import { cache } from 'react';
 import { createClient } from "@/lib/supabase/server";
 
 export type UserRole = 'super_admin' | 'content_admin' | 'sme_reviewer';
 
 /**
- * Get the user's role from the database
+ * Get the user's role from the database.
+ * Wrapped with React cache() to deduplicate calls within a single RSC render pass.
  */
-export async function getUserRole(): Promise<UserRole | null> {
+export const getUserRole = cache(async function getUserRole(): Promise<UserRole | null> {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -29,7 +31,7 @@ export async function getUserRole(): Promise<UserRole | null> {
   }
 
   return null;
-}
+});
 
 /**
  * Check if user is an admin (super_admin or content_admin)
@@ -72,9 +74,10 @@ export async function canManageUsers(): Promise<boolean> {
 }
 
 /**
- * Get all roles for a user
+ * Get all roles for a user.
+ * Wrapped with React cache() to deduplicate calls within a single RSC render pass.
  */
-export async function getUserRoles(): Promise<UserRole[]> {
+export const getUserRoles = cache(async function getUserRoles(): Promise<UserRole[]> {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -86,4 +89,4 @@ export async function getUserRoles(): Promise<UserRole[]> {
     .eq('user_id', user.id);
 
   return (roles?.map(r => r.role as UserRole)) || [];
-}
+});

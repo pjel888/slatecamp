@@ -95,7 +95,7 @@ export interface AdminArticle {
   title: string
   slug: string | null
   status: string | null
-  content: string | null
+  word_count: number
   created_at: string
   updated_at: string
   questionCount: number
@@ -149,10 +149,11 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
     .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
 
-  // 3. Fetch all wiki articles
+  // 3. Fetch all wiki articles — content excluded (tree view only needs metadata).
+  // .limit(500) caps visibility at 500 articles; increase if the corpus grows beyond that.
   const { data: articles } = await supabase
     .from('wiki_articles')
-    .select('article_id, title, slug, status, content, created_at, updated_at')
+    .select('article_id, title, slug, status, created_at, updated_at')
     .order('title', { ascending: true })
     .limit(500)
 
@@ -210,6 +211,7 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
     if (!article) continue
     const adminArticle: AdminArticle = {
       ...article,
+      word_count: 0,
       questionCount: articleQuestionCount.get(article.article_id) ?? 0,
     }
     if (!nodeArticleMap.has(m.node_id)) nodeArticleMap.set(m.node_id, [])
@@ -291,7 +293,7 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
   // 9. Collect unmapped articles
   const unmappedArticles: AdminArticle[] = articles
     .filter((a) => !mappedArticleIds.has(a.article_id))
-    .map((a) => ({ ...a, questionCount: 0 }))
+    .map((a) => ({ ...a, word_count: 0, questionCount: 0 }))
 
   return {
     disciplines: (disciplines ?? []) as AdminDiscipline[],

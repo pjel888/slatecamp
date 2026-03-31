@@ -27,6 +27,11 @@ const ClassicalOrders = dynamic(
   { ssr: false },
 )
 
+const SiteControls = dynamic(
+  () => import('../_scenes/SiteControls'),
+  { ssr: false, loading: () => <LoadingSpinner /> },
+)
+
 // ─── Template Components (dynamic, SSR disabled) ──────────────────────────
 
 const ParametricScene = dynamic(
@@ -165,6 +170,9 @@ export function LabViewport({
   // Legacy hardcoded scenes — must remain for backwards compatibility
   if (modelId === 'far-calculator') return <FARPlayground />
   if (modelId === 'classical-orders') return <ClassicalOrders />
+
+  // Bespoke scenes — custom Canvas + own store (exceed template capabilities)
+  if (modelId === 'site-development-controls') return <SiteControls />
 
   // Template-driven modules: any module registered in MODULE_REGISTRY with a
   // matching config file under _config/modules/ is loaded dynamically.

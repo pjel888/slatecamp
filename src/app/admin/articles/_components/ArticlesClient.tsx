@@ -38,9 +38,6 @@ interface ArticlesClientProps {
 
 const stripNumberPrefix = (name: string) => name.replace(/^\d{1,2}\s*[—–-]\s*/, '')
 
-const computeWordCount = (content: string | null): number =>
-  content ? content.split(/\s+/).filter(Boolean).length : 0
-
 /** Walk tree to collect all article_ids within a node subtree */
 const collectArticleIds = (node: AdminTaxonomyNode): string[] => {
   const ids: string[] = (node.articles ?? []).map((a) => a.article_id)
@@ -59,7 +56,7 @@ interface ArticleRowProps {
 
 const ArticleRow = ({ article, onDelete }: ArticleRowProps) => {
   const router = useRouter()
-  const words = computeWordCount(article.content)
+  const words = article.word_count
   const status = article.status ?? 'draft'
 
   const statusBadge = status === 'published'

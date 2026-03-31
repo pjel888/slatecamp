@@ -35,10 +35,13 @@ export const getContentEditorIndexData = async () => {
 
   // Parallel: articles, taxonomy nodes, article-taxonomy links, question counts
   const [articlesRes, nodesRes, linksRes, questionsRes] = await Promise.all([
+    // content is fetched only to compute word_count below; .limit(500) caps payload size.
+    // TODO: replace with a DB view/function returning char_length(content) to avoid fetching full text.
     supabase
       .from('wiki_articles')
       .select('article_id, title, slug, status, content, difficulty_label, created_at, updated_at')
-      .order('updated_at', { ascending: false }),
+      .order('updated_at', { ascending: false })
+      .limit(500),
     supabase
       .from('taxonomy_tree')
       .select('node_id, name, ale_id, level, parent_id, subject_area, is_leaf')

@@ -31,14 +31,11 @@ export const QuestionQuickPreview = ({
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger>
-        <button
-          type="button"
-          onClick={(e) => e.stopPropagation()}
-          className="whitespace-nowrap text-xs text-text-secondary hover:text-camp-cobalt border border-border rounded-sm px-2 py-0.5 transition-colors duration-150 hover:border-camp-cobalt bg-white"
-        >
-          Preview
-        </button>
+      <PopoverTrigger
+        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+        className="whitespace-nowrap text-xs text-text-secondary hover:text-camp-cobalt border border-border rounded-sm px-2 py-0.5 transition-colors duration-150 hover:border-camp-cobalt bg-white cursor-pointer"
+      >
+        Preview
       </PopoverTrigger>
       <PopoverContent
         side="left"

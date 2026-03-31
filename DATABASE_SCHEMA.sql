@@ -284,8 +284,12 @@ CREATE TABLE wiki_article_sources (
 CREATE TABLE wiki_article_taxonomy (
   article_id                               UUID NOT NULL,
   node_id                                  UUID NOT NULL,
-  is_primary                               BOOLEAN DEFAULT FALSE
+  is_primary                               BOOLEAN DEFAULT FALSE,
+  sort_order                               SMALLINT NOT NULL DEFAULT 0  -- 1-based reading order within the subtopic
 );
+
+CREATE INDEX IF NOT EXISTS idx_wiki_article_taxonomy_sort
+  ON wiki_article_taxonomy (node_id, sort_order);
 
 -- ─── Table: wiki_bookmarks ──────────────────────────────────────────────
 CREATE TABLE wiki_bookmarks (

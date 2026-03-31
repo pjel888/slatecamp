@@ -64,26 +64,22 @@ export function WikiHeaderClient({
           {breadcrumbs.length > 0 && (
             <nav aria-label="Breadcrumb" className="hidden sm:flex items-center gap-1 min-w-0 overflow-hidden">
               <ol className="flex items-center gap-1 min-w-0">
-                {breadcrumbs.map((crumb, i) => {
-                  const isLast = i === breadcrumbs.length - 1
-                  return (
-                    <li key={crumb.node_id} className="flex items-center gap-1 min-w-0">
-                      <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
-                      {isLast ? (
-                        <span className="text-xs font-medium text-zinc-700 truncate max-w-[180px]">
-                          {crumb.name}
-                        </span>
-                      ) : (
-                        <Link
-                          href={crumb.slug ? ROUTES.WIKI_PAGE(crumb.slug) : ROUTES.WIKI}
-                          className="text-xs text-zinc-400 hover:text-zinc-600 transition-colors truncate max-w-[140px]"
-                        >
-                          {crumb.name}
-                        </Link>
-                      )}
-                    </li>
-                  )
-                })}
+                {breadcrumbs.map((crumb) => (
+                  <li key={crumb.node_id} className="flex items-center gap-1 min-w-0">
+                    <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
+                    <span className="text-xs text-zinc-400 truncate max-w-[140px]">
+                      {crumb.name}
+                    </span>
+                  </li>
+                ))}
+                {articleTitle && (
+                  <li className="flex items-center gap-1 min-w-0">
+                    <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
+                    <span className="text-xs font-medium text-zinc-700 truncate max-w-[180px]">
+                      {articleTitle}
+                    </span>
+                  </li>
+                )}
               </ol>
             </nav>
           )}

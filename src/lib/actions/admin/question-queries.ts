@@ -2,24 +2,322 @@
 
 import { createClient } from '@/lib/supabase/server'
 
-export const getQuestions = async () => {
+export interface Question {
+  question_id: string
+  text: string
+  topic_id: string
+  difficulty: number | null
+  rationale: string | null
+  options: unknown[] | null
+  code_citation: string | null
+  created_at: string
+  updated_at: string
+}
+
+export const getQuestions = async (
+  page = 1,
+  pageSize = 50,
+): Promise<{ data: Question[]; totalCount: number }> => {
   const supabase = await createClient()
 
-  const { data, error } = await supabase
+  const from = (page - 1) * pageSize
+  const to = page * pageSize - 1
+
+  const { data, error, count } = await supabase
     .from('questions')
-    .select('question_id, text, topic_id, difficulty, options, rationale, code_citation, created_at, updated_at')
+    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at', {
+      count: 'exact',
+      head: false,
+    })
     .order('created_at', { ascending: false })
+    .range(from, to)
+    .limit(pageSize)
 
   if (error) {
     console.error('Error fetching questions:', error)
+    return { data: [], totalCount: 0 }
+  }
+
+  return { data: data ?? [], totalCount: count ?? 0 }
+}
+
+export interface ArticleGroup {
+  articleId: string | null
+  articleTitle: string
+  articleStatus: string
+  questions: Question[]
+  questionCount: number
+}
+
+export const getQuestionsGroupedByArticle = async (
+  page = 1,
+  pageSize = 50,
+): Promise<{ data: ArticleGroup[]; totalCount: number }> => {
+  const supabase = await createClient()
+
+  const from = (page - 1) * pageSize
+  const to = page * pageSize - 1
+
+  // Step 1: Fetch paginated questions
+  const { data: questions, error: qError, count } = await supabase
+    .from('questions')
+    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at', {
+      count: 'exact',
+      head: false,
+    })
+    .order('created_at', { ascending: false })
+    .range(from, to)
+    .limit(pageSize)
+
+  if (qError || !questions) {
+    console.error('Error fetching questions:', qError)
+    return { data: [], totalCount: 0 }
+  }
+
+  // Step 2: Collect unique topic_ids and resolve them to articles
+  const topicIds = [...new Set(questions.map((q) => q.topic_id).filter(Boolean))]
+
+  // Map: topic_id -> { article_id, title, status }
+  const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
+
+  if (topicIds.length > 0) {
+    // Join taxonomy_tree -> wiki_article_taxonomy -> wiki_articles
+    const { data: mappings, error: mError } = await supabase
+      .from('wiki_article_taxonomy')
+      .select('node_id, article_id, wiki_articles!inner(article_id, title, status)')
+      .in('node_id', topicIds)
+
+    if (!mError && mappings) {
+      for (const m of mappings) {
+        const article = m.wiki_articles as unknown as { article_id: string; title: string; status: string }
+        if (article) {
+          topicToArticle.set(m.node_id, {
+            articleId: article.article_id,
+            articleTitle: article.title,
+            articleStatus: article.status ?? 'draft',
+          })
+        }
+      }
+    }
+  }
+
+  // Step 3: Group questions by article
+  const groupMap = new Map<string, ArticleGroup>()
+  const unassignedKey = '__unassigned__'
+
+  for (const q of questions) {
+    const mapping = q.topic_id ? topicToArticle.get(q.topic_id) : undefined
+
+    const key = mapping ? mapping.articleId : unassignedKey
+    const existing = groupMap.get(key)
+
+    if (existing) {
+      existing.questions.push(q)
+      existing.questionCount = existing.questions.length
+    } else {
+      groupMap.set(key, {
+        articleId: mapping ? mapping.articleId : null,
+        articleTitle: mapping ? mapping.articleTitle : 'Unassigned',
+        articleStatus: mapping ? mapping.articleStatus : 'none',
+        questions: [q],
+        questionCount: 1,
+      })
+    }
+  }
+
+  // Step 4: Sort groups — articles with names first, unassigned last
+  const groups = [...groupMap.values()].sort((a, b) => {
+    if (a.articleId === null) return 1
+    if (b.articleId === null) return -1
+    return a.articleTitle.localeCompare(b.articleTitle)
+  })
+
+  return { data: groups, totalCount: count ?? 0 }
+}
+
+/**
+ * Fetch questions for specific topic IDs (used when a tree node is selected).
+ * Returns grouped by article, no pagination — loads all questions under the node.
+ */
+export const getQuestionsByTopicIds = async (
+  topicIds: string[],
+): Promise<{ data: ArticleGroup[] }> => {
+  if (topicIds.length === 0) return { data: [] }
+  const supabase = await createClient()
+
+  // Fetch questions matching these topic IDs
+  const { data: questions, error: qError } = await supabase
+    .from('questions')
+    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at')
+    .in('topic_id', topicIds)
+    .order('created_at', { ascending: false })
+    .limit(500)
+
+  if (qError || !questions) return { data: [] }
+
+  // Resolve articles for these topics
+  const uniqueTopics = [...new Set(questions.map(q => q.topic_id).filter(Boolean))]
+  const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
+
+  if (uniqueTopics.length > 0) {
+    const { data: mappings } = await supabase
+      .from('wiki_article_taxonomy')
+      .select('node_id, article_id, wiki_articles!inner(article_id, title, status)')
+      .in('node_id', uniqueTopics)
+
+    if (mappings) {
+      for (const m of mappings) {
+        const article = m.wiki_articles as unknown as { article_id: string; title: string; status: string }
+        if (article) {
+          topicToArticle.set(m.node_id, {
+            articleId: article.article_id,
+            articleTitle: article.title,
+            articleStatus: article.status ?? 'draft',
+          })
+        }
+      }
+    }
+  }
+
+  // Group by article
+  const groupMap = new Map<string, ArticleGroup>()
+  for (const q of questions) {
+    const mapping = q.topic_id ? topicToArticle.get(q.topic_id) : undefined
+    const key = mapping ? mapping.articleId : '__unassigned__'
+    const existing = groupMap.get(key)
+    if (existing) {
+      existing.questions.push(q)
+      existing.questionCount = existing.questions.length
+    } else {
+      groupMap.set(key, {
+        articleId: mapping?.articleId ?? null,
+        articleTitle: mapping?.articleTitle ?? 'Unassigned',
+        articleStatus: mapping?.articleStatus ?? 'none',
+        questions: [q],
+        questionCount: 1,
+      })
+    }
+  }
+
+  const groups = [...groupMap.values()].sort((a, b) => {
+    if (a.articleId === null) return 1
+    if (b.articleId === null) return -1
+    return a.articleTitle.localeCompare(b.articleTitle)
+  })
+
+  return { data: groups }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Taxonomy Tree for Questions Nav                                    */
+/* ------------------------------------------------------------------ */
+
+export interface QuestionTreeArticle {
+  articleId: string
+  title: string
+  status: string
+  questionCount: number
+}
+
+export interface QuestionTreeNode {
+  nodeId: string
+  name: string
+  level: number
+  parentId: string | null
+  questionCount: number
+  children: QuestionTreeNode[]
+  articles: QuestionTreeArticle[]
+}
+
+export const getQuestionsTaxonomyTree = async (): Promise<QuestionTreeNode[]> => {
+  const supabase = await createClient()
+
+  // 1. Fetch all taxonomy nodes
+  const { data: nodes, error: nodesError } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name, level, parent_id, is_leaf, sort_order')
+    .order('sort_order', { ascending: true, nullsFirst: false })
+    .order('name', { ascending: true })
+
+  if (nodesError || !nodes) {
+    console.error('Error fetching taxonomy nodes:', nodesError)
     return []
   }
 
-  // Ensure options is always an array to prevent {} errors in rendering
-  return (data || []).map(q => ({
-    ...q,
-    options: Array.isArray(q.options) ? q.options : [],
-  }))
+  // 2. Count questions per topic_id
+  const { data: qCounts, error: qcError } = await supabase
+    .from('questions')
+    .select('topic_id')
+
+  const questionCountByTopic = new Map<string, number>()
+  if (!qcError && qCounts) {
+    for (const row of qCounts) {
+      if (row.topic_id) {
+        questionCountByTopic.set(row.topic_id, (questionCountByTopic.get(row.topic_id) ?? 0) + 1)
+      }
+    }
+  }
+
+  // 3. Fetch article mappings: wiki_article_taxonomy joined with wiki_articles
+  const { data: articleMappings, error: amError } = await supabase
+    .from('wiki_article_taxonomy')
+    .select('node_id, article_id, wiki_articles!inner(article_id, title, status)')
+
+  const articlesByNodeId = new Map<string, QuestionTreeArticle[]>()
+  if (!amError && articleMappings) {
+    for (const m of articleMappings) {
+      const article = m.wiki_articles as unknown as { article_id: string; title: string; status: string }
+      if (article) {
+        const existing = articlesByNodeId.get(m.node_id) ?? []
+        existing.push({
+          articleId: article.article_id,
+          title: article.title,
+          status: article.status ?? 'draft',
+          questionCount: questionCountByTopic.get(m.node_id) ?? 0,
+        })
+        articlesByNodeId.set(m.node_id, existing)
+      }
+    }
+  }
+
+  // 4. Build flat map of tree nodes
+  const nodeMap = new Map<string, QuestionTreeNode>()
+  for (const n of nodes) {
+    nodeMap.set(n.node_id, {
+      nodeId: n.node_id,
+      name: n.name,
+      level: n.level,
+      parentId: n.parent_id,
+      questionCount: questionCountByTopic.get(n.node_id) ?? 0,
+      children: [],
+      articles: articlesByNodeId.get(n.node_id) ?? [],
+    })
+  }
+
+  // 5. Nest children under parents
+  const roots: QuestionTreeNode[] = []
+  for (const node of nodeMap.values()) {
+    if (node.parentId && nodeMap.has(node.parentId)) {
+      nodeMap.get(node.parentId)!.children.push(node)
+    } else {
+      roots.push(node)
+    }
+  }
+
+  // 6. Bubble up question counts
+  const bubbleUp = (node: QuestionTreeNode): number => {
+    let childSum = 0
+    for (const child of node.children) {
+      childSum += bubbleUp(child)
+    }
+    node.questionCount = node.questionCount + childSum
+    return node.questionCount
+  }
+  for (const root of roots) {
+    bubbleUp(root)
+  }
+
+  return roots
 }
 
 export const getQuestionsForAnalytics = async () => {

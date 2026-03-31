@@ -1,9 +1,11 @@
 'use client'
 
+import Link from 'next/link'
 import {
   Buildings, Wheelchair, FireSimple, Car, HardHat,
   Drop, Lightning, Fan, Elevator, Crane, Cube,
   Bank, Church, MapTrifold, Briefcase, Calculator, Lock,
+  ArrowRight, Star,
 } from '@phosphor-icons/react/dist/ssr'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { ASSET_TAXONOMY, ALE_SUBJECTS, PHASE_LABELS, type CategoryKey } from '../../_config/taxonomy'
@@ -113,6 +115,59 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
   )
 }
 
+// ─── Featured Module Banner ───────────────────────────────────────────────────
+
+function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
+  const href = basePath
+    ? `${basePath}?model=site-development-controls`
+    : '/dashboard/3d-lab?model=site-development-controls'
+
+  return (
+    <Link href={href} className="group block mb-6">
+      <div className="relative overflow-hidden rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-5 py-4 transition-all duration-150 ease-out hover:border-[#1B3FC4]/40 hover:shadow-sm">
+        {/* Background accent */}
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-[#1B3FC4]/5 to-transparent" />
+
+        <div className="relative flex items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            {/* Icon */}
+            <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#1B3FC4]">
+              <MapTrifold size={18} weight="duotone" color="white" />
+            </div>
+
+            <div>
+              {/* Badge row */}
+              <div className="mb-1 flex items-center gap-2">
+                <span className="inline-flex items-center gap-1 rounded-md bg-[#1B3FC4] px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+                  <Star size={9} weight="fill" />
+                  New
+                </span>
+                <span className="text-[10px] font-medium text-[#1B3FC4]">PD 1096 Rules VII &amp; VIII</span>
+              </div>
+
+              {/* Title */}
+              <h3 className="text-sm font-semibold text-[#1A2332] group-hover:text-[#1B3FC4] transition-colors duration-150">
+                Site Development Controls
+              </h3>
+
+              {/* Metrics row */}
+              <p className="mt-0.5 text-[11px] text-[#4A5568]">
+                Interactive 3D lot model &middot; TLA · AMBF · PSO · ISA · USA · TOSL · MACA
+              </p>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="flex shrink-0 items-center gap-1 text-[11px] font-medium text-[#1B3FC4]">
+            Launch
+            <ArrowRight size={12} weight="bold" className="transition-transform duration-150 group-hover:translate-x-0.5" />
+          </div>
+        </div>
+      </div>
+    </Link>
+  )
+}
+
 // ─── Category Grid ────────────────────────────────────────────────────────────
 
 export function CategoryGrid({ onCategorySelect, moduleCounts = {} }: CategoryGridProps) {
@@ -128,6 +183,9 @@ export function CategoryGrid({ onCategorySelect, moduleCounts = {} }: CategoryGr
           {phase1Count} categories available now &middot; {allCategories.length} total
         </p>
       </div>
+
+      {/* Hero: Featured module */}
+      <FeaturedModuleBanner />
 
       {/* ALE Subject Groups */}
       <div className="space-y-8">

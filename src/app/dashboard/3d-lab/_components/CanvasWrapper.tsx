@@ -2,10 +2,12 @@
 
 import { memo, type ReactNode, Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, ContactShadows } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useInvalidateOnChange } from '../_hooks/useInvalidateOnChange'
+import { SceneBase } from './SceneBase'
+import { StudioLighting } from './StudioLighting'
 
 interface CanvasWrapperProps {
   children: ReactNode
@@ -44,10 +46,10 @@ export const CanvasWrapper = memo(function CanvasWrapper({
   const [canvasReady, setCanvasReady] = useState(false)
 
   return (
-    <div className="relative h-full w-full bg-[var(--color-cream)] overflow-hidden">
+    <div className="relative h-full w-full overflow-hidden">
       {/* Loading overlay — removed once Canvas WebGL context is created */}
       {!canvasReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-zinc-50/50 z-10">
+        <div className="absolute inset-0 flex items-center justify-center bg-[#EEF2FA]/80 z-10">
           <div className="flex flex-col items-center gap-3">
             <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-zinc-300" />
             <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">
@@ -61,13 +63,18 @@ export const CanvasWrapper = memo(function CanvasWrapper({
         frameloop="demand"
         dpr={[1, 1.5]}
         camera={{ position: cameraPosition, fov: cameraFov }}
-        shadows={false}
+        shadows
         style={{ position: 'absolute', inset: 0 }}
         onCreated={() => setCanvasReady(true)}
       >
         <InvalidateRegistrar />
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[10, 10, 5]} intensity={1.2} />
+
+        {/* Architectural studio lighting rig (UX Plan §02) */}
+        <StudioLighting />
+
+        {/* Sky + ground + fog + contact shadows (UX Plan §01) */}
+        <SceneBase showGround={showGround} />
+
         <OrbitControls
           makeDefault
           minPolarAngle={minPolarAngle}
@@ -75,15 +82,6 @@ export const CanvasWrapper = memo(function CanvasWrapper({
           minDistance={minDistance}
           maxDistance={maxDistance}
         />
-        {showGround && (
-          <ContactShadows
-            position={[0, -0.01, 0]}
-            opacity={0.25}
-            scale={20}
-            blur={2}
-            far={5}
-          />
-        )}
         <Suspense fallback={null}>{children}</Suspense>
       </Canvas>
     </div>

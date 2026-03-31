@@ -1,116 +1,117 @@
 'use client'
 
-import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useState, useCallback, useMemo } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
 import Link from 'next/link'
-import { DataTable, type Column } from '@/components/shared/data-table'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { Badge } from '@/components/ui/badge'
 import { DifficultyBar } from '@/components/ui/difficulty-bar'
 import { QuestionQualityBadges } from '@/components/admin/QuestionQualityBadges'
 import { QuestionQuickPreview } from '@/components/admin/QuestionQuickPreview'
 import { BulkActionBar } from '@/components/admin/BulkActionBar'
 import { bulkDeleteQuestions } from '@/lib/actions/admin/bulk'
+import { cn } from '@/lib/utils'
 
-interface Question extends Record<string, unknown> {
-  question_id: string
-  text: string
-  topic_id: string
-  difficulty: number | null
-  rationale: string | null
-  code_citation: string | null
-  created_at: string
-  updated_at: string
-  options: unknown[]
+import type { Question, ArticleGroup, QuestionTreeNode } from '@/lib/actions/admin/question-queries'
+import { getQuestionsByTopicIds } from '@/lib/actions/admin/question-queries'
+import { QuestionTreeNav } from './QuestionTreeNav'
+
+/* ------------------------------------------------------------------ */
+/*  Props                                                              */
+/* ------------------------------------------------------------------ */
+
+interface QuestionsTableClientProps {
+  questions: Question[]
+  articleGroups: ArticleGroup[]
+  totalCount: number
+  page: number
+  pageSize: number
+  taxonomyTree: QuestionTreeNode[]
 }
 
+/* ------------------------------------------------------------------ */
+/*  QuestionRow                                                        */
+/* ------------------------------------------------------------------ */
 
-type Row = Record<string, unknown>
+const QuestionRow = ({
+  question,
+  isSelected,
+  onToggleSelect,
+  onNavigate,
+}: {
+  question: Question
+  isSelected: boolean
+  onToggleSelect: (id: string) => void
+  onNavigate: (id: string) => void
+}) => {
+  const opts = question.options as string[] | { text: string; is_correct?: boolean }[]
 
-const asQ = (row: Row) => row as unknown as Question
-
-const columns: Column<Row>[] = [
-  {
-    key: 'text',
-    header: 'Stem',
-    sortable: true,
-    render: (row) => (
-      <span className="block max-w-[400px] truncate text-sm text-foreground">
-        {asQ(row).text || '\u2014'}
-      </span>
-    ),
-  },
-  {
-    key: 'topic_id',
-    header: 'Topic',
-    render: (row) => {
-      const q = asQ(row)
-      return q.topic_id ? (
-        <Badge variant="primary" size="xs" pill>
-          {q.topic_id.slice(0, 8)}
-        </Badge>
-      ) : (
-        <span className="text-muted-foreground">{'\u2014'}</span>
-      )
-    },
-  },
-  {
-    key: 'difficulty',
-    header: 'Difficulty',
-    sortable: true,
-    render: (row) => <DifficultyBar value={asQ(row).difficulty} size="sm" />,
-  },
-  {
-    key: 'quality',
-    header: 'Quality',
-    render: (row) => {
-      const q = asQ(row)
-      return (
-        <QuestionQualityBadges
-          hasRationale={Boolean(q.rationale)}
-          hasCitation={Boolean(q.code_citation)}
+  return (
+    <tr
+      className={cn(
+        'bg-card border-b border-border transition-colors duration-150',
+        'hover:bg-muted/50',
+        isSelected && 'bg-primary/5',
+        'cursor-pointer',
+      )}
+      onClick={(e) => {
+        const target = e.target as HTMLElement
+        if (
+          target.closest('[data-slot="checkbox"]') ||
+          target.closest('button') ||
+          target.closest('a') ||
+          target.closest('input')
+        ) {
+          return
+        }
+        onNavigate(question.question_id)
+      }}
+    >
+      <td className="px-4 py-3 w-10">
+        <input
+          type="checkbox"
+          checked={isSelected}
+          onChange={() => onToggleSelect(question.question_id)}
+          className="h-4 w-4 rounded border-border"
+          aria-label={`Select question ${question.question_id}`}
+          onClick={(e) => e.stopPropagation()}
         />
-      )
-    },
-  },
-  {
-    key: 'code_citation',
-    header: 'Citation',
-    render: (row) => {
-      const q = asQ(row)
-      return q.code_citation ? (
-        <span className="text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground">
-          {q.code_citation}
+      </td>
+      <td className="px-4 py-3 text-sm">
+        <span className="block max-w-[400px] truncate text-sm text-foreground">
+          {question.text || '\u2014'}
         </span>
-      ) : (
-        <span className="text-muted-foreground">{'\u2014'}</span>
-      )
-    },
-  },
-  {
-    key: 'updated_at',
-    header: 'Updated',
-    type: 'date',
-    sortable: true,
-  },
-  {
-    key: 'actions',
-    header: '',
-    type: 'action',
-    render: (row) => {
-      const q = asQ(row)
-      const opts = q.options as string[] | { text: string; is_correct?: boolean }[]
-      return (
-        <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
+      </td>
+      <td className="px-4 py-3 text-sm">
+        <DifficultyBar value={question.difficulty} size="sm" />
+      </td>
+      <td className="px-4 py-3 text-sm">
+        <QuestionQualityBadges
+          hasRationale={Boolean(question.rationale)}
+          hasCitation={Boolean(question.code_citation)}
+        />
+      </td>
+      <td className="px-4 py-3 text-sm">
+        {question.code_citation ? (
+          <span className="text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground">
+            {question.code_citation}
+          </span>
+        ) : (
+          <span className="text-muted-foreground">{'\u2014'}</span>
+        )}
+      </td>
+      <td className="px-4 py-3 text-sm text-right">
+        <div className="flex items-center gap-2 justify-end" onClick={(e) => e.stopPropagation()}>
           <QuestionQuickPreview
-            stem={q.text}
+            stem={question.text}
             options={opts && opts.length > 0 ? opts : ['', '', '', '']}
             correctAnswer={0}
-            rationale={q.rationale}
-            codeCitation={q.code_citation}
+            rationale={question.rationale}
+            codeCitation={question.code_citation}
           />
-          {q.topic_id && (
+          {question.topic_id && (
             <Link
-              href={`/admin/content?topic=${q.topic_id}`}
+              href={`/admin/content?topic=${question.topic_id}`}
               className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
               onClick={(e) => e.stopPropagation()}
               title="Open content editor to view this question in article context"
@@ -119,49 +120,412 @@ const columns: Column<Row>[] = [
             </Link>
           )}
         </div>
-      )
-    },
-  },
-]
-
-interface QuestionsTableClientProps {
-  questions: Question[]
+      </td>
+    </tr>
+  )
 }
 
-export const QuestionsTableClient = ({ questions }: QuestionsTableClientProps) => {
-  const router = useRouter()
-  const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set())
+/* ------------------------------------------------------------------ */
+/*  ArticleAccordionGroup                                              */
+/* ------------------------------------------------------------------ */
 
-  const handleBulkDelete = async () => {
-    const result = await bulkDeleteQuestions([...selectedKeys])
-    if (result.error) throw new Error(result.error)
-    setSelectedKeys(new Set())
+const statusVariantMap: Record<string, 'success' | 'warning' | 'secondary'> = {
+  published: 'success',
+  draft: 'warning',
+  review: 'secondary',
+}
+
+const ArticleAccordionGroup = ({
+  group,
+  isExpanded,
+  onToggleExpand,
+  selectedKeys,
+  onToggleSelect,
+  onToggleGroupSelect,
+  onNavigate,
+}: {
+  group: ArticleGroup
+  isExpanded: boolean
+  onToggleExpand: () => void
+  selectedKeys: Set<string>
+  onToggleSelect: (id: string) => void
+  onToggleGroupSelect: (ids: string[], select: boolean) => void
+  onNavigate: (id: string) => void
+}) => {
+  const groupQuestionIds = useMemo(
+    () => group.questions.map((q) => q.question_id),
+    [group.questions],
+  )
+
+  const allSelected = groupQuestionIds.length > 0 && groupQuestionIds.every((id) => selectedKeys.has(id))
+  const someSelected = groupQuestionIds.some((id) => selectedKeys.has(id))
+
+  const handleToggleGroupSelect = () => {
+    onToggleGroupSelect(groupQuestionIds, !allSelected)
   }
 
   return (
-    <DataTable
-      columns={columns}
-      data={questions as unknown as Row[]}
-      keyField="question_id"
-      searchable
-      searchPlaceholder="Search question stems..."
-      searchFields={['text', 'code_citation']}
-      pageSize={50}
-      onRowClick={(row) => {
-        const id = asQ(row).question_id
-        router.push(`/admin/questions/${id}`)
-      }}
-      emptyMessage="No questions found"
-      selectable
-      selectedKeys={selectedKeys}
-      onSelectionChange={setSelectedKeys}
-      bulkActions={
+    <div className="border border-border rounded-md overflow-hidden">
+      {/* Accordion header */}
+      <button
+        type="button"
+        onClick={onToggleExpand}
+        className={cn(
+          'w-full flex items-center gap-3 px-4 py-3 text-left transition-colors duration-150',
+          'hover:bg-muted/50',
+          isExpanded ? 'bg-muted/30' : 'bg-card',
+        )}
+        aria-expanded={isExpanded}
+      >
+        <CaretRight
+          size={16}
+          className={cn(
+            'text-muted-foreground transition-transform duration-150 flex-shrink-0',
+            isExpanded && 'rotate-90',
+          )}
+        />
+
+        <span className="flex-1 min-w-0 flex items-center gap-2">
+          <span className="text-sm font-medium text-foreground truncate">
+            {group.articleTitle}
+          </span>
+
+          {group.articleStatus !== 'none' && (
+            <Badge
+              variant={statusVariantMap[group.articleStatus] ?? 'secondary'}
+              size="xs"
+              pill
+            >
+              {group.articleStatus}
+            </Badge>
+          )}
+        </span>
+
+        <Badge variant="primary" size="xs" pill>
+          {group.questionCount} {group.questionCount === 1 ? 'question' : 'questions'}
+        </Badge>
+      </button>
+
+      {/* Expanded content */}
+      {isExpanded && (
+        <div className="border-t border-border">
+          {group.questions.length === 0 ? (
+            <div className="px-4 py-6 text-center text-sm text-muted-foreground">
+              No questions in this article
+            </div>
+          ) : (
+            <table className="w-full">
+              <thead className="bg-muted/20">
+                <tr>
+                  <th className="px-4 py-2 w-10" scope="col">
+                    <input
+                      type="checkbox"
+                      checked={allSelected}
+                      ref={(el) => {
+                        if (el) el.indeterminate = someSelected && !allSelected
+                      }}
+                      onChange={handleToggleGroupSelect}
+                      className="h-4 w-4 rounded border-border"
+                      aria-label={`Select all questions in ${group.articleTitle}`}
+                    />
+                  </th>
+                  <th className="px-4 py-2 text-left text-xs font-medium text-muted-foreground uppercase tracking-wide" scope="col">
+                    Stem
+                  </th>
+                  <th className="px-4 py-2 text-left text-xs font-medium text-muted-foreground uppercase tracking-wide" scope="col">
+                    Difficulty
+                  </th>
+                  <th className="px-4 py-2 text-left text-xs font-medium text-muted-foreground uppercase tracking-wide" scope="col">
+                    Quality
+                  </th>
+                  <th className="px-4 py-2 text-left text-xs font-medium text-muted-foreground uppercase tracking-wide" scope="col">
+                    Citation
+                  </th>
+                  <th className="px-4 py-2 text-right text-xs font-medium text-muted-foreground uppercase tracking-wide" scope="col">
+                    {/* Actions */}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {group.questions.map((question) => (
+                  <QuestionRow
+                    key={question.question_id}
+                    question={question}
+                    isSelected={selectedKeys.has(question.question_id)}
+                    onToggleSelect={onToggleSelect}
+                    onNavigate={onNavigate}
+                  />
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* ------------------------------------------------------------------ */
+/*  Main Component                                                     */
+/* ------------------------------------------------------------------ */
+
+/** Collect all node IDs in a subtree (inclusive) */
+const collectNodeIds = (node: QuestionTreeNode): Set<string> => {
+  const ids = new Set<string>([node.nodeId])
+  for (const child of node.children) {
+    for (const id of collectNodeIds(child)) {
+      ids.add(id)
+    }
+  }
+  return ids
+}
+
+/** Find a node by ID in the tree */
+const findNode = (nodes: QuestionTreeNode[], nodeId: string): QuestionTreeNode | null => {
+  for (const node of nodes) {
+    if (node.nodeId === nodeId) return node
+    const found = findNode(node.children, nodeId)
+    if (found) return found
+  }
+  return null
+}
+
+/** Collect all article IDs under a taxonomy subtree */
+const collectArticleIds = (node: QuestionTreeNode): Set<string> => {
+  const ids = new Set<string>()
+  for (const a of node.articles) {
+    ids.add(a.articleId)
+  }
+  for (const child of node.children) {
+    for (const id of collectArticleIds(child)) {
+      ids.add(id)
+    }
+  }
+  return ids
+}
+
+export const QuestionsTableClient = ({
+  questions,
+  articleGroups,
+  totalCount,
+  page,
+  pageSize,
+  taxonomyTree,
+}: QuestionsTableClientProps) => {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const [selectedKeys, setSelectedKeys] = useState<Set<string>>(new Set())
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null)
+  const [nodeGroups, setNodeGroups] = useState<ArticleGroup[] | null>(null)
+  const [nodeLoading, setNodeLoading] = useState(false)
+  const [expandedArticles, setExpandedArticles] = useState<Set<string>>(() => {
+    if (articleGroups.length > 0) {
+      return new Set([articleGroups[0].articleId ?? '__unassigned__'])
+    }
+    return new Set()
+  })
+
+  const totalPages = Math.ceil(totalCount / pageSize)
+
+  const navigateTo = (p: number) => {
+    const params = new URLSearchParams(searchParams.toString())
+    params.set('page', String(p))
+    router.push(`/admin/questions?${params.toString()}`)
+  }
+
+  const handleToggleExpand = useCallback((articleId: string | null) => {
+    const key = articleId ?? '__unassigned__'
+    setExpandedArticles((prev) => {
+      const next = new Set(prev)
+      if (next.has(key)) {
+        next.delete(key)
+      } else {
+        next.add(key)
+      }
+      return next
+    })
+  }, [])
+
+  const handleToggleSelect = useCallback((questionId: string) => {
+    setSelectedKeys((prev) => {
+      const next = new Set(prev)
+      if (next.has(questionId)) {
+        next.delete(questionId)
+      } else {
+        next.add(questionId)
+      }
+      return next
+    })
+  }, [])
+
+  const handleToggleGroupSelect = useCallback((ids: string[], select: boolean) => {
+    setSelectedKeys((prev) => {
+      const next = new Set(prev)
+      for (const id of ids) {
+        if (select) {
+          next.add(id)
+        } else {
+          next.delete(id)
+        }
+      }
+      return next
+    })
+  }, [])
+
+  const handleNavigate = useCallback(
+    (questionId: string) => {
+      router.push(`/admin/questions/${questionId}`)
+    },
+    [router],
+  )
+
+  const handleBulkDelete = async () => {
+    const idsToDelete = [...selectedKeys]
+    const result = await bulkDeleteQuestions(idsToDelete)
+    if (result.error) {
+      throw new Error(result.error)
+    }
+    setSelectedKeys(new Set())
+  }
+
+  // When a tree node is selected, fetch questions for that subtree on-demand
+  const handleNodeSelect = useCallback(async (nodeId: string | null) => {
+    setSelectedNodeId(nodeId)
+
+    if (nodeId === null) {
+      // "All Questions" — use the pre-fetched paginated data
+      setNodeGroups(null)
+      return
+    }
+
+    setNodeLoading(true)
+    try {
+      let topicIds: string[] = []
+
+      if (nodeId.startsWith('article:')) {
+        // Selected an article — find topic IDs that map to it
+        const articleId = nodeId.replace('article:', '')
+        // Collect all leaf topic IDs from the tree that have this article
+        const collectTopicsForArticle = (nodes: QuestionTreeNode[]): string[] => {
+          const result: string[] = []
+          for (const node of nodes) {
+            for (const a of node.articles) {
+              if (a.articleId === articleId) result.push(node.nodeId)
+            }
+            result.push(...collectTopicsForArticle(node.children))
+          }
+          return result
+        }
+        topicIds = collectTopicsForArticle(taxonomyTree)
+      } else {
+        // Selected a taxonomy node — collect all topic IDs in the subtree
+        const node = findNode(taxonomyTree, nodeId)
+        if (node) {
+          topicIds = [...collectNodeIds(node)]
+        }
+      }
+
+      const { data } = await getQuestionsByTopicIds(topicIds)
+      setNodeGroups(data)
+      // Auto-expand all groups when loaded
+      setExpandedArticles(new Set(data.map(g => g.articleId ?? '__unassigned__')))
+    } catch {
+      setNodeGroups([])
+    } finally {
+      setNodeLoading(false)
+    }
+  }, [taxonomyTree])
+
+  // Only show questions when a tree node is selected — no random default page
+  const displayGroups = nodeGroups !== null ? nodeGroups : []
+  const showEmptyPrompt = selectedNodeId === null && nodeGroups === null
+
+  return (
+    <div className="space-y-4">
+      {/* Bulk action bar */}
+      {selectedKeys.size > 0 && (
         <BulkActionBar
           selectedCount={selectedKeys.size}
           onDelete={handleBulkDelete}
           entityName="questions"
         />
-      }
-    />
+      )}
+
+      {/* Two-panel layout: tree nav + accordion */}
+      <div className="flex border border-border rounded-md overflow-hidden bg-white" style={{ minHeight: '500px' }}>
+        {/* Left panel: taxonomy tree */}
+        <QuestionTreeNav
+          tree={taxonomyTree}
+          selectedNodeId={selectedNodeId}
+          onSelectNode={handleNodeSelect}
+        />
+
+        {/* Right panel: accordion groups */}
+        <div className="flex-1 overflow-y-auto">
+          {showEmptyPrompt ? (
+            <div className="flex h-full items-center justify-center p-8">
+              <div className="text-center">
+                <CaretRight size={32} weight="duotone" className="mx-auto mb-3 text-[#D4DAE3]" />
+                <p className="text-sm font-medium text-[#1A2332]">Select a subject or article</p>
+                <p className="mt-1 text-[11px] text-[#8896A7]">
+                  Browse the taxonomy tree on the left to view questions by topic
+                </p>
+              </div>
+            </div>
+          ) : nodeLoading ? (
+            <div className="flex h-full items-center justify-center p-8">
+              <p className="text-sm text-[#8896A7]">Loading questions...</p>
+            </div>
+          ) : displayGroups.length === 0 ? (
+            <div className="flex h-full items-center justify-center p-8">
+              <p className="text-sm text-[#8896A7]">No questions found for the selected topic</p>
+            </div>
+          ) : (
+            <div className="space-y-2 p-3">
+              {displayGroups.map((group) => {
+                const key = group.articleId ?? '__unassigned__'
+                return (
+                  <ArticleAccordionGroup
+                    key={key}
+                    group={group}
+                    isExpanded={expandedArticles.has(key)}
+                    onToggleExpand={() => handleToggleExpand(group.articleId)}
+                    selectedKeys={selectedKeys}
+                    onToggleSelect={handleToggleSelect}
+                    onToggleGroupSelect={handleToggleGroupSelect}
+                    onNavigate={handleNavigate}
+                  />
+                )
+              })}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between px-1">
+          <p className="text-sm text-[#8896A7]">
+            Page {page} of {totalPages.toLocaleString()} &mdash; {totalCount.toLocaleString()} total questions
+          </p>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => navigateTo(page - 1)}
+              disabled={page <= 1}
+              className="rounded-sm border border-[#D4DAE3] px-3 py-1.5 text-sm text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => navigateTo(page + 1)}
+              disabled={page >= totalPages}
+              className="rounded-sm border border-[#D4DAE3] px-3 py-1.5 text-sm text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   )
 }

@@ -11,6 +11,7 @@ export const getPipelineArticles = async () => {
     .from('wiki_articles')
     .select('article_id, title, slug, status, updated_at, created_at')
     .order('updated_at', { ascending: false })
+    .limit(500)
   return data || []
 }
 

@@ -198,8 +198,9 @@ export async function getTaxonomyTree(
         withRetry(() =>
           supabase
             .from("wiki_article_taxonomy")
-            .select("node_id, wiki_articles(article_id, slug, title)")
-            .in("node_id", chunk),
+            .select("node_id, sort_order, wiki_articles(article_id, slug, title)")
+            .in("node_id", chunk)
+            .order("sort_order", { ascending: true }),
         ),
       ),
     );
@@ -273,8 +274,9 @@ export const getLawsTaxonomyTree = async (
         withRetry(() =>
           supabase
             .from('wiki_article_taxonomy')
-            .select('node_id, wiki_articles(article_id, slug, title)')
-            .in('node_id', chunk),
+            .select('node_id, sort_order, wiki_articles(article_id, slug, title)')
+            .in('node_id', chunk)
+            .order('sort_order', { ascending: true }),
         ),
       ),
     )

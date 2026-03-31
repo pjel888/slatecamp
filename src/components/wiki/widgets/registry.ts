@@ -24,8 +24,8 @@ type WidgetLoader = () => Promise<ComponentType<any>>
  */
 export const widgetRegistry: Record<string, WidgetLoader> = {
   // -- BP 344: Accessibility Standards ------------------------------------
-  ComparisonTable: () =>
-    import('./bp344/ComparisonTable').then((m) => m.ComparisonTable),
+  AccessibilityChangesTable: () =>
+    import('./bp344/ComparisonTable').then((m) => m.AccessibilityChangesTable),
   DoorConfigurator: () =>
     import('./bp344/DoorConfigurator').then((m) => m.DoorConfigurator),
   CorridorVisualizer: () =>

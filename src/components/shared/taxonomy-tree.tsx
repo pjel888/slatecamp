@@ -225,11 +225,19 @@ const TreeRow = React.memo(({
   const { onNavigate, onSelect, searchQuery, renderRight } = useTaxonomyTree()
   
   const handleClick = (e: React.MouseEvent) => {
+    // Admin selection mode — pass all nodes through; admin handler discriminates by level
     if (onSelect && rawNode) {
       e.preventDefault()
       onSelect(id, label, rawNode)
       return
     }
+    // Branch A: structural node (subject / subtopic) — toggle only, no navigation
+    if (isExpandable) {
+      e.preventDefault()
+      onToggle?.()
+      return
+    }
+    // Branch B: leaf/article node — trigger navigation
     if (onNavigate) {
       e.preventDefault()
       onNavigate(href)
@@ -331,6 +339,17 @@ const TreeRow = React.memo(({
   )
 
   if (onSelect) {
+    return (
+      <div className={rowClasses} onClick={handleClick}>
+        {InnerContent}
+      </div>
+    )
+  }
+
+  // Structural nodes (subjects/subtopics) must never render as <Link>.
+  // Even with e.preventDefault(), Next.js registers the interaction and
+  // fires the router loading indicator. A plain <div> prevents this entirely.
+  if (isExpandable) {
     return (
       <div className={rowClasses} onClick={handleClick}>
         {InnerContent}

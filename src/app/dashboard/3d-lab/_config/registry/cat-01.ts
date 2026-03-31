@@ -24,6 +24,7 @@ import { openSpaceRequirementsConfig } from '../modules/01-building-code/open-sp
 import { rampGradientBuildingConfig } from '../modules/01-building-code/ramp-gradient-building'
 import { roomSizeMinimumsConfig } from '../modules/01-building-code/room-size-minimums'
 import { skylightRequirementsConfig } from '../modules/01-building-code/skylight-requirements'
+import { siteDevelopmentControlsConfig } from '../modules/01-building-code/site-development-controls'
 import { ventShaftDimensionsConfig } from '../modules/01-building-code/vent-shaft-dimensions'
 
 export const cat01Modules: ModuleRegistryEntry[] = [
@@ -246,6 +247,16 @@ export const cat01Modules: ModuleRegistryEntry[] = [
     launchPhase: 1,
     status: 'ready' as const,
     description: skylightRequirementsConfig.description,
+  },
+  {
+    id: siteDevelopmentControlsConfig.id,
+    title: siteDevelopmentControlsConfig.title,
+    templateType: 'parametric' as const,
+    subject: siteDevelopmentControlsConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 1,
+    status: 'ready' as const,
+    description: siteDevelopmentControlsConfig.description,
   },
   {
     id: ventShaftDimensionsConfig.id,
