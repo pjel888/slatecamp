@@ -16,11 +16,9 @@ export function SetbackZones() {
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
 
   const isActive = activeZone === 'setbacks'
-  const baseOpacity = isActive ? 0.30 : 0.12
   const dimmed = activeZone !== null && !isActive
-  const opacity = dimmed ? 0.05 : baseOpacity
-
-  const color = '#F5A623' // amber per UX Plan §03
+  const color = isActive ? '#1B3FC4' : dimmed ? '#B0B0B0' : '#F5A623'
+  const opacity = isActive ? 0.35 : dimmed ? 0.05 : 0.12
   const y = 0.005
 
   const zones: Array<{
@@ -104,7 +102,7 @@ export function SetbackZones() {
       {bx1 > bx0 && bz1 > bz0 && (
         <Line
           points={envelopePoints}
-          color="#F5A623"
+          color={color}
           lineWidth={1.5}
           dashed
           dashSize={0.3}

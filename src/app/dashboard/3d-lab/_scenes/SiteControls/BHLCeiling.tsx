@@ -1,11 +1,10 @@
 'use client'
 
-import { Line, Html } from '@react-three/drei'
+import { Line } from '@react-three/drei'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 
 /**
  * Dashed horizontal plane at the Building Height Limit.
- * Uses Html instead of Text/Billboard to avoid worker init errors.
  */
 export function BHLCeiling() {
   const bhl = useSiteControlsStore((s) => s.computed.bhl)
@@ -36,12 +35,6 @@ export function BHLCeiling() {
       <Line points={ceilingPoints} color="#D64545" lineWidth={1.5} dashed dashSize={0.4} gapSize={0.3} />
       <Line points={crossA} color="#D64545" lineWidth={0.5} dashed dashSize={0.6} gapSize={0.4} transparent opacity={0.3} />
       <Line points={crossB} color="#D64545" lineWidth={0.5} dashed dashSize={0.6} gapSize={0.4} transparent opacity={0.3} />
-
-      <Html position={[x1 + 0.8, y, (z0 + z1) / 2]} center distanceFactor={12}>
-        <div style={{ color: '#D64545', fontSize: 11, fontWeight: 600, fontFamily: 'monospace', whiteSpace: 'nowrap' }}>
-          BHL: {bhl.toFixed(1)}m
-        </div>
-      </Html>
     </group>
   )
 }

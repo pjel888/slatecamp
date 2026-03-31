@@ -37,7 +37,7 @@ export function LotPlane() {
       >
         <planeGeometry args={[lotWidth, lotDepth]} />
         <meshStandardMaterial
-          color="#D4CFC4"
+          color={isActive ? '#1B3FC4' : dimmed ? '#D0D0D0' : '#D4CFC4'}
           side={THREE.DoubleSide}
           roughness={0.92}
           metalness={0.0}

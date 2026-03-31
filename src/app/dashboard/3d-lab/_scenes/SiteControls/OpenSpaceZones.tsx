@@ -17,19 +17,24 @@ export function OpenSpaceZones() {
   const buildableDepth = useSiteControlsStore((s) => s.computed.buildableDepth)
   const activeZone = useSiteControlsStore((s) => s.activeZone)
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
+  const toslOk = useSiteControlsStore((s) => s.computed.compliance.toslOk)
+
+  // When TOSL is violated, open space zones flash red (only when no zone selected)
+  const violationColor = !toslOk && activeZone === null ? '#D64545' : null
 
   const y = 0.01
 
   // ISA (paved open space) — front setback area + side strips in front zone
   const isaActive = activeZone === 'isa'
   const isaDimmed = activeZone !== null && !isaActive
-  const isaOpacity = isaDimmed ? 0.25 : 0.85
+  const isaColor = isaActive ? '#1B3FC4' : isaDimmed ? '#C0C0C0' : (violationColor ?? '#C4BAA5')
+  const isaOpacity = isaActive ? 0.85 : isaDimmed ? 0.15 : 0.85
 
   // USA (unpaved/landscaped) — rear setback area + side strips in rear zone
-  // Green at 20% opacity per UX Plan §03
   const usaActive = activeZone === 'usa'
   const usaDimmed = activeZone !== null && !usaActive
-  const usaOpacity = usaDimmed ? 0.10 : 0.20
+  const usaColor = usaActive ? '#1B3FC4' : usaDimmed ? '#C0C0C0' : (violationColor ?? '#2ECC71')
+  const usaOpacity = usaActive ? 0.20 : usaDimmed ? 0.08 : 0.20
 
   // ISA zone: front strip (full lot width × front setback depth)
   const isaFrontW = lotWidth
@@ -59,7 +64,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[isaFrontW, isaFrontD]} />
           <meshStandardMaterial
-            color="#C4BAA5"
+            color={isaColor}
             side={THREE.DoubleSide}
             transparent
             opacity={isaOpacity}
@@ -80,7 +85,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[setbacks.left, sideStripDepth]} />
           <meshStandardMaterial
-            color="#C4BAA5"
+            color={isaColor}
             side={THREE.DoubleSide}
             transparent
             opacity={isaOpacity}
@@ -101,7 +106,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[usaRearW, usaRearD]} />
           <meshStandardMaterial
-            color="#2ECC71"
+            color={usaColor}
             side={THREE.DoubleSide}
             transparent
             opacity={usaOpacity}
@@ -122,7 +127,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[setbacks.right, sideStripDepth]} />
           <meshStandardMaterial
-            color="#2ECC71"
+            color={usaColor}
             side={THREE.DoubleSide}
             transparent
             opacity={usaOpacity}

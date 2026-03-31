@@ -15,6 +15,84 @@ const ZONING_OPTIONS = Object.entries(SITE_CONTROL_TABLE).map(([key, val]) => ({
   label: val.label,
 }))
 
+// ─── Zone Info Panel ────────────────────────────────────────────────────────
+
+function ZoneInfoPanel() {
+  const activeZone = useSiteControlsStore((s) => s.activeZone)
+  const computed = useSiteControlsStore((s) => s.computed)
+  const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
+
+  if (!activeZone) return null
+
+  const zones = {
+    tla: {
+      label: 'TLA',
+      fullName: 'Total Lot Area',
+      value: `${computed.tla.toFixed(1)} sqm`,
+      description: 'The complete ground area inside your property boundaries. Starting point for every development control calculation.',
+      citation: 'PD 1096 IRR Rule VIII, Sec. 803',
+    },
+    ambf: {
+      label: 'AMBF',
+      fullName: 'Allowable Maximum Building Footprint',
+      value: `${computed.ambf.toFixed(1)} sqm`,
+      description: 'Maximum footprint your building may occupy. Constrained by BOTH setbacks and your zoning class max lot coverage — whichever is smaller wins.',
+      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+    },
+    setbacks: {
+      label: 'SETBACKS',
+      fullName: 'Required Setbacks',
+      value: `Front: ${computed.setbacks.front}m | Side: ${computed.setbacks.left}m | Rear: ${computed.setbacks.rear}m`,
+      description: 'Minimum distances from your building to each lot line, determined by zoning class and road right-of-way width.',
+      citation: 'PD 1096 IRR Rule VII, Sec. 704 + Rule VIII, Sec. 804',
+    },
+    isa: {
+      label: 'ISA',
+      fullName: 'Impervious Surface Area',
+      value: `${computed.isa.toFixed(1)} sqm`,
+      description: 'Paved open space — driveways, terraces, walkways. Calculated as a direct percentage of TLA.',
+      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+    },
+    usa: {
+      label: 'USA',
+      fullName: 'Unpaved Surface Area',
+      value: `${computed.usa.toFixed(1)} sqm`,
+      description: 'Landscaped open space — soil, planting strips, lawns. Required for stormwater absorption.',
+      citation: 'PD 1096 IRR Rule VIII, Sec. 803, Table VIII.1',
+    },
+    violation: {
+      label: 'VIOLATION',
+      fullName: 'Code Violation',
+      value: computed.violations.length > 0 ? computed.violations[0].message : '',
+      description: computed.violations.map((v: { message: string }) => v.message).join(' '),
+      citation: computed.violations.length > 0 ? computed.violations[0].codeCitation : '',
+    },
+  }
+
+  const zone = zones[activeZone as keyof typeof zones]
+  if (!zone) return null
+
+  return (
+    <div className="rounded-md border border-[#1B3FC4] bg-[#EEF2FC] p-3">
+      <div className="flex items-center justify-between mb-1">
+        <span className="text-[10px] font-medium uppercase tracking-wider text-[#1B3FC4]">
+          {zone.label}
+        </span>
+        <button
+          onClick={() => setActiveZone(null)}
+          className="text-[10px] text-[#8896A7] hover:text-[#1A2332] transition-colors duration-150"
+        >
+          Deselect
+        </button>
+      </div>
+      <p className="text-sm font-medium text-[#1A2332] mb-1">{zone.fullName}</p>
+      <p className="font-mono text-lg font-semibold text-[#1B3FC4] mb-2">{zone.value}</p>
+      <p className="text-xs text-[#4A5568] leading-relaxed mb-2">{zone.description}</p>
+      <p className="font-mono text-[10px] text-[#8896A7]">{zone.citation}</p>
+    </div>
+  )
+}
+
 // ─── Computed HUD ────────────────────────────────────────────────────────────
 
 function ComputedHUD() {
@@ -231,6 +309,9 @@ function ControlsPanel() {
           Reset
         </button>
       </div>
+
+      {/* Zone Info Panel — visible when a zone is selected */}
+      <ZoneInfoPanel />
 
       <hr className="border-[#D4DAE3]" />
 
