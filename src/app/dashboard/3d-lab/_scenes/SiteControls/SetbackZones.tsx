@@ -1,11 +1,12 @@
 'use client'
 
 import * as THREE from 'three'
+import { Line } from '@react-three/drei'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 
 /**
  * Four flat planes representing required setback margins.
- * Red tint at low opacity; highlights when activeZone === 'setbacks'.
+ * Amber wireframe per UX Plan §03 (was red).
  */
 export function SetbackZones() {
   const lotWidth = useSiteControlsStore((s) => s.inputs.lotWidth)
@@ -15,12 +16,12 @@ export function SetbackZones() {
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
 
   const isActive = activeZone === 'setbacks'
-  const baseOpacity = isActive ? 0.25 : 0.10
+  const baseOpacity = isActive ? 0.30 : 0.12
   const dimmed = activeZone !== null && !isActive
   const opacity = dimmed ? 0.05 : baseOpacity
 
-  const color = '#D64545'
-  const y = 0.005 // Slight elevation to prevent z-fighting with LotPlane
+  const color = '#F5A623' // amber per UX Plan §03
+  const y = 0.005
 
   const zones: Array<{
     key: string
@@ -29,7 +30,6 @@ export function SetbackZones() {
     px: number
     pz: number
   }> = [
-    // Front setback — full lot width, setback depth
     {
       key: 'front',
       width: lotWidth,
@@ -37,7 +37,6 @@ export function SetbackZones() {
       px: lotWidth / 2,
       pz: setbacks.front / 2,
     },
-    // Rear setback
     {
       key: 'rear',
       width: lotWidth,
@@ -45,7 +44,6 @@ export function SetbackZones() {
       px: lotWidth / 2,
       pz: lotDepth - setbacks.rear / 2,
     },
-    // Left setback — between front and rear setbacks
     {
       key: 'left',
       width: setbacks.left,
@@ -53,7 +51,6 @@ export function SetbackZones() {
       px: setbacks.left / 2,
       pz: setbacks.front + (lotDepth - setbacks.front - setbacks.rear) / 2,
     },
-    // Right setback
     {
       key: 'right',
       width: setbacks.right,
@@ -61,6 +58,20 @@ export function SetbackZones() {
       px: lotWidth - setbacks.right / 2,
       pz: setbacks.front + (lotDepth - setbacks.front - setbacks.rear) / 2,
     },
+  ]
+
+  // Dashed outline around the buildable envelope (inside all setbacks)
+  const bx0 = setbacks.left
+  const bx1 = lotWidth - setbacks.right
+  const bz0 = setbacks.front
+  const bz1 = lotDepth - setbacks.rear
+  const by = 0.008
+  const envelopePoints: [number, number, number][] = [
+    [bx0, by, bz0],
+    [bx1, by, bz0],
+    [bx1, by, bz1],
+    [bx0, by, bz1],
+    [bx0, by, bz0],
   ]
 
   return (
@@ -88,6 +99,18 @@ export function SetbackZones() {
           </mesh>
         )
       })}
+
+      {/* Dashed buildable envelope outline */}
+      {bx1 > bx0 && bz1 > bz0 && (
+        <Line
+          points={envelopePoints}
+          color="#F5A623"
+          lineWidth={1.5}
+          dashed
+          dashSize={0.3}
+          gapSize={0.2}
+        />
+      )}
     </group>
   )
 }

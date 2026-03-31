@@ -3,9 +3,10 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
+import * as THREE from 'three'
 import { useSiteControlsStore } from '../../_stores/siteControlsStore'
 import { useInvalidateOnStoreChange } from './useInvalidateOnStoreChange'
-import { SceneBase } from '../../_components/SceneBase'
+import { SceneBase, SKY_COLOR } from '../../_components/SceneBase'
 import { StudioLighting } from '../../_components/StudioLighting'
 import { LotPlane } from './LotPlane'
 import { SetbackZones } from './SetbackZones'
@@ -15,14 +16,13 @@ import { OpenSpaceZones } from './OpenSpaceZones'
 import { ContextBuildings } from './ContextBuildings'
 import { ZoneHotspots } from './ZoneHotspots'
 import { DimensionLines } from './DimensionLines'
+import { InCanvasQuiz } from './InCanvasQuiz'
 
-/** Registers the invalidate bridge inside the Canvas tree. */
 function StoreInvalidateBridge() {
   useInvalidateOnStoreChange()
   return null
 }
 
-/** Deselects active zone when clicking empty canvas space. */
 function CanvasMissHandler() {
   const setActiveZone = useSiteControlsStore((s) => s.setActiveZone)
   return (
@@ -37,17 +37,8 @@ function CanvasMissHandler() {
   )
 }
 
-/** Scene content — visibility gated by tourStep. */
 function SceneContent() {
   const tourStep = useSiteControlsStore((s) => s.tourStep)
-
-  // tourStep visibility gates per spec:
-  // 0: only LotPlane
-  // 1: LotPlane + SetbackZones
-  // 2: LotPlane + SetbackZones + AMBFVolume (flat slab)
-  // 3: LotPlane + SetbackZones + AMBFVolume (full height) + BHLCeiling
-  // 4: all above + OpenSpaceZones + ContextBuildings
-  // 5 or null: everything
 
   const showSetbacks = tourStep === null || tourStep >= 1
   const showAMBF = tourStep === null || tourStep >= 2
@@ -58,7 +49,7 @@ function SceneContent() {
   return (
     <>
       <StoreInvalidateBridge />
-      <SceneBase shadowScale={30} />
+      <SceneBase />
       <StudioLighting />
 
       <LotPlane />
@@ -69,6 +60,7 @@ function SceneContent() {
       {showContext && <ContextBuildings />}
       <ZoneHotspots />
       <DimensionLines />
+      <InCanvasQuiz />
       <CanvasMissHandler />
     </>
   )
@@ -78,34 +70,38 @@ export function SiteControlsCanvas() {
   const lotWidth = useSiteControlsStore((s) => s.inputs.lotWidth)
   const lotDepth = useSiteControlsStore((s) => s.inputs.lotDepth)
 
-  // Center camera target on lot
   const cx = lotWidth / 2
   const cz = lotDepth / 2
 
   return (
-    <Canvas
-      camera={{ position: [8, 8, 8], fov: 35 }}
-      shadows
-      frameloop="demand"
-      dpr={[1, 1.5]}
-      gl={{ antialias: true, alpha: false }}
-      onPointerMissed={() => {
-        useSiteControlsStore.getState().setActiveZone(null)
-      }}
-    >
-      <Suspense fallback={null}>
-        <SceneContent />
-
-        {/* Controls */}
-        <OrbitControls
-          makeDefault
-          target={[cx, 0, cz]}
-          minDistance={3}
-          maxDistance={25}
-          maxPolarAngle={Math.PI / 2}
-          enablePan={false}
-        />
-      </Suspense>
-    </Canvas>
+    <div className="h-full w-full" style={{ backgroundColor: SKY_COLOR }}>
+      <Canvas
+        camera={{ position: [cx + 15, 12, cz + 18], fov: 35 }}
+        shadows
+        frameloop="demand"
+        dpr={[1, 1.5]}
+        gl={{ antialias: true, alpha: false }}
+        onCreated={(state) => {
+          state.gl.setClearColor(new THREE.Color(SKY_COLOR), 1)
+          state.gl.toneMapping = THREE.ACESFilmicToneMapping
+          state.gl.outputColorSpace = THREE.SRGBColorSpace
+        }}
+        onPointerMissed={() => {
+          useSiteControlsStore.getState().setActiveZone(null)
+        }}
+      >
+        <Suspense fallback={null}>
+          <SceneContent />
+          <OrbitControls
+            makeDefault
+            target={[cx, 0, cz]}
+            minDistance={3}
+            maxDistance={25}
+            maxPolarAngle={Math.PI / 2}
+            enablePan={false}
+          />
+        </Suspense>
+      </Canvas>
+    </div>
   )
 }

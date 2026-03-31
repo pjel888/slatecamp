@@ -29,6 +29,7 @@ export default function NBCPEnvelope() {
     <div className="relative h-full w-full">
       <Canvas
         frameloop="demand"
+        dpr={[1, 1.5]}
         shadows
         camera={{ position: cameraPosition, fov: 40 }}
       >

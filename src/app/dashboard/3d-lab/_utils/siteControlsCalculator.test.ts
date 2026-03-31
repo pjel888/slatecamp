@@ -14,7 +14,8 @@ function calc(overrides: Partial<SiteControlInputs> = {}) {
     lotDepth: 20,
     zoningClass: ZoningClass.R1,
     rrowWidth: 10,
-    buildingHeight: 6,
+    numFloors: 2,
+    floorHeight: 3.0,
     ...overrides,
   })
 }

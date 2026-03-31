@@ -26,9 +26,10 @@ export function OpenSpaceZones() {
   const isaOpacity = isaDimmed ? 0.25 : 0.85
 
   // USA (unpaved/landscaped) — rear setback area + side strips in rear zone
+  // Green at 20% opacity per UX Plan §03
   const usaActive = activeZone === 'usa'
   const usaDimmed = activeZone !== null && !usaActive
-  const usaOpacity = usaDimmed ? 0.25 : 0.85
+  const usaOpacity = usaDimmed ? 0.10 : 0.20
 
   // ISA zone: front strip (full lot width × front setback depth)
   const isaFrontW = lotWidth
@@ -100,7 +101,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[usaRearW, usaRearD]} />
           <meshStandardMaterial
-            color="#7B9E6A"
+            color="#2ECC71"
             side={THREE.DoubleSide}
             transparent
             opacity={usaOpacity}
@@ -121,7 +122,7 @@ export function OpenSpaceZones() {
         >
           <planeGeometry args={[setbacks.right, sideStripDepth]} />
           <meshStandardMaterial
-            color="#7B9E6A"
+            color="#2ECC71"
             side={THREE.DoubleSide}
             transparent
             opacity={usaOpacity}

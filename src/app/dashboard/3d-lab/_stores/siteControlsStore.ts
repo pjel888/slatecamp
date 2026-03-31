@@ -50,7 +50,7 @@ export const SITE_CONTROL_PRESETS: SiteControlPreset[] = [
 
 // ─── Active Zone Type ────────────────────────────────────────────────────────
 
-export type ActiveZone = 'ambf' | 'isa' | 'usa' | 'setbacks' | 'tla' | null
+export type ActiveZone = 'ambf' | 'isa' | 'usa' | 'setbacks' | 'tla' | 'violation' | null
 export type ViewMode = 'perspective' | 'top'
 
 /** Tour steps 0-5 per UX Plan §05. null = sandbox (free mode). */

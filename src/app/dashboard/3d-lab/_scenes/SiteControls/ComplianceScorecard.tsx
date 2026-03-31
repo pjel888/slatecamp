@@ -5,12 +5,12 @@ import { SITE_CONTROL_CITATIONS } from '../../_constants/siteControls'
 
 /**
  * Pass/fail compliance readout for PD 1096 site development controls.
- * Reads from the store's computed compliance and violations fields.
- * This is a 2D React component, not a 3D component.
+ * Enhanced with floorHeight check, TGFA/BHL metrics, and severity-aware violations.
  */
 export function ComplianceScorecard() {
   const computed = useSiteControlsStore((s) => s.computed)
-  const { compliance, violations, ambf, tosl, tla, isa, usa, maca, pso, setbacks, zoningData } = computed
+  const floorHeight = useSiteControlsStore((s) => s.inputs.floorHeight)
+  const { compliance, violations, ambf, tosl, tla, isa, usa, maca, pso, tgfa, bhl, setbacks, zoningData } = computed
 
   const checks = [
     {
@@ -41,21 +41,31 @@ export function ComplianceScorecard() {
       citation: SITE_CONTROL_CITATIONS.setbacks,
       detail: compliance.setbacksOk ? 'Meets requirement' : 'Buildable area = 0',
     },
+    {
+      label: `Floor height ${floorHeight.toFixed(1)}m`,
+      pass: compliance.floorHeightOk,
+      citation: 'PD 1096 IRR Rule VIII §808',
+      detail: compliance.floorHeightOk ? 'Meets 2.7m minimum' : 'Below 2.7m habitable minimum',
+    },
   ]
 
   const passCount = checks.filter((c) => c.pass).length
   const allPass = passCount === checks.length
 
+  // Separate violations by severity
+  const errors = violations.filter((v) => v.severity === 'error')
+  const warnings = violations.filter((v) => v.severity === 'warning')
+
   return (
     <div className="space-y-3">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <span className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">
+        <span className="text-[9px] font-medium uppercase tracking-wider text-[#8896A7]">
           Compliance Check
         </span>
         <span
           className={`font-mono text-xs font-semibold ${
-            allPass ? 'text-emerald-600' : 'text-muted-foreground'
+            allPass ? 'text-[#2D9F6F]' : 'text-[#8896A7]'
           }`}
         >
           {allPass ? 'All requirements met' : `${passCount}/${checks.length} met`}
@@ -68,40 +78,53 @@ export function ComplianceScorecard() {
           <div key={check.label} className="flex items-start gap-2">
             <span
               className={`mt-0.5 h-2.5 w-2.5 shrink-0 rounded-full ${
-                check.pass ? 'bg-emerald-500' : 'bg-red-400'
+                check.pass ? 'bg-[#2D9F6F]' : 'bg-[#D64545]'
               }`}
             />
             <div className="min-w-0 flex-1">
               <div className="flex items-baseline justify-between gap-1">
-                <span className="text-xs font-medium text-foreground">
+                <span className="text-xs font-medium text-[#1A2332]">
                   {check.label}
                 </span>
-                <span className={`text-[10px] font-medium ${check.pass ? 'text-emerald-600' : 'text-red-500'}`}>
+                <span className={`text-[10px] font-medium ${check.pass ? 'text-[#2D9F6F]' : 'text-[#D64545]'}`}>
                   {check.pass ? 'PASS' : 'FAIL'}
                 </span>
               </div>
-              <p className="text-[10px] text-muted-foreground">{check.detail}</p>
-              <p className="font-mono text-[9px] text-muted-foreground/60">{check.citation}</p>
+              <p className="text-[10px] text-[#4A5568]">{check.detail}</p>
+              <p className="font-mono text-[9px] text-[#8896A7]/60">{check.citation}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Summary metrics */}
-      <div className="border-t pt-2">
+      <div className="border-t border-[#D4DAE3] pt-2">
         <div className="grid grid-cols-2 gap-x-4 gap-y-1">
           <MetricRow label="PSO" value={`${(pso * 100).toFixed(1)}%`} />
+          <MetricRow label="TGFA" value={`${tgfa.toFixed(1)} sqm`} />
+          <MetricRow label="BHL" value={`${bhl.toFixed(1)} m`} />
           <MetricRow label="ISA" value={`${isa.toFixed(1)} sqm`} />
           <MetricRow label="USA" value={`${usa.toFixed(1)} sqm`} />
           <MetricRow label="MACA" value={`${maca.toFixed(1)} sqm`} />
         </div>
       </div>
 
-      {/* Violation messages */}
-      {violations.length > 0 && (
-        <div className="space-y-1 rounded-md bg-red-50 p-2">
-          {violations.map((v, i) => (
-            <p key={i} className="text-[10px] text-red-700">
+      {/* Error violations */}
+      {errors.length > 0 && (
+        <div className="space-y-1 rounded-md bg-[#FDF0F0] p-2">
+          {errors.map((v, i) => (
+            <p key={i} className="text-[10px] text-[#D64545]">
+              {v.message}
+            </p>
+          ))}
+        </div>
+      )}
+
+      {/* Warning violations */}
+      {warnings.length > 0 && (
+        <div className="space-y-1 rounded-md bg-[#FEF8ED] p-2">
+          {warnings.map((v, i) => (
+            <p key={i} className="text-[10px] text-[#D4951A]">
               {v.message}
             </p>
           ))}
@@ -114,8 +137,8 @@ export function ComplianceScorecard() {
 function MetricRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-baseline justify-between">
-      <span className="text-[10px] text-muted-foreground">{label}</span>
-      <span className="font-mono text-[11px] font-medium text-foreground">{value}</span>
+      <span className="text-[10px] text-[#8896A7]">{label}</span>
+      <span className="font-mono text-[11px] font-medium text-[#1A2332]">{value}</span>
     </div>
   )
 }

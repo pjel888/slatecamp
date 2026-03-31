@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react'
 import { Edges, Outlines } from '@react-three/drei'
-import type { MeshProps } from '@react-three/fiber'
+import type { ThreeEvent } from '@react-three/fiber'
 
 // ─── Constants (from UX Plan §02) ────────────────────────────────────────────
 
@@ -22,7 +22,13 @@ const OUTLINE_COLOR = '#4A6FE8'
 
 // ─── ArchMass ────────────────────────────────────────────────────────────────
 
-interface ArchMassProps extends Omit<MeshProps, 'children'> {
+interface ArchMassProps {
+  position?: [number, number, number]
+  rotation?: [number, number, number]
+  scale?: number | [number, number, number]
+  onClick?: (e: ThreeEvent<MouseEvent>) => void
+  onPointerOver?: (e: ThreeEvent<PointerEvent>) => void
+  onPointerOut?: (e: ThreeEvent<PointerEvent>) => void
   /** Material color. Defaults to ghost white for context buildings. */
   color?: string
   /** Whether this is the active/proposed element (cobalt + outlines). */
@@ -52,6 +58,12 @@ interface ArchMassProps extends Omit<MeshProps, 'children'> {
  * - **Default**: custom color with edges
  */
 export function ArchMass({
+  position,
+  rotation,
+  scale,
+  onClick,
+  onPointerOver,
+  onPointerOut,
   color,
   isActive = false,
   isContext = false,
@@ -59,16 +71,20 @@ export function ArchMass({
   opacity = 1,
   showOutline = false,
   children,
-  ...meshProps
 }: ArchMassProps) {
   const effectiveColor = isActive ? ACTIVE_COLOR : (color ?? CONTEXT_COLOR)
   const effectiveRoughness = roughness ?? (isActive ? 0.4 : 0.85)
 
   return (
     <mesh
+      position={position}
+      rotation={rotation}
+      scale={scale}
+      onClick={onClick}
+      onPointerOver={onPointerOver}
+      onPointerOut={onPointerOut}
       castShadow={!isContext}
       receiveShadow
-      {...meshProps}
     >
       {children}
       <meshStandardMaterial
