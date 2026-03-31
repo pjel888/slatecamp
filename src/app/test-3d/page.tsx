@@ -1,7 +1,7 @@
 'use client'
 import dynamic from 'next/dynamic'
 const SiteControls = dynamic(
-  () => import('../dashboard/3d-lab/_scenes/SiteControls'),
+  () => import('@/components/3d-lab/DevControlsModule'),
   { ssr: false, loading: () => <div style={{ padding: 40 }}>Loading...</div> },
 )
 export default function Test3D() {

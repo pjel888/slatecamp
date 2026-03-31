@@ -157,7 +157,13 @@
       "Bash(/tmp/MODULES_REPORT.md:*)",
       "Bash(dir \"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\slatecamp\\\\src\\\\app\\\\dashboard\\\\3d-lab\\\\_config\\\\modules\" /b /a-d)",
       "Bash(bun -e \":*)",
-      "Bash(bunx bun:*)"
+      "Bash(bunx bun:*)",
+      "Bash(npx bun:*)",
+      "Bash(rm -rf src/app/dashboard/3d-lab/_scenes/SiteControls/)",
+      "Bash(rm -f src/app/dashboard/3d-lab/_stores/siteControlsStore.ts)",
+      "Bash(rm -f src/app/dashboard/3d-lab/_utils/siteControlsCalculator.ts)",
+      "Bash(rm -f src/app/dashboard/3d-lab/_utils/siteControlsCalculator.test.ts)",
+      "Bash(rm -f src/app/dashboard/3d-lab/_constants/siteControls.ts)"
     ]
   }
 }

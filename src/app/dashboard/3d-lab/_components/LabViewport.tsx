@@ -28,7 +28,7 @@ const ClassicalOrders = dynamic(
 )
 
 const SiteControls = dynamic(
-  () => import('../_scenes/SiteControls'),
+  () => import('@/components/3d-lab/DevControlsModule'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
