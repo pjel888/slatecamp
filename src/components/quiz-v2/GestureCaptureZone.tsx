@@ -92,6 +92,7 @@ export const GestureCaptureZone = ({ children }: GestureCaptureZoneProps) => {
   return (
     <div
       ref={zoneRef}
+      className="touch-none select-none"
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
