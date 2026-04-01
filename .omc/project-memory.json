@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1774937482579,
+  "lastScanned": 1775030341741,
   "projectRoot": "C:\\Users\\Philip Lewis\\Desktop\\slatecamp",
   "techStack": {
     "languages": [
@@ -84,30 +84,27 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1774937482556,
+      "lastAccessed": 1775030341704,
       "keyFiles": [
         "AGENTS.md"
       ]
     },
-    "Missing Articles": {
-      "path": "Missing Articles",
-      "purpose": null,
-      "fileCount": 0,
-      "lastAccessed": 1774937482565,
-      "keyFiles": []
-    },
     "prompts": {
       "path": "prompts",
       "purpose": null,
-      "fileCount": 0,
-      "lastAccessed": 1774937482565,
-      "keyFiles": []
+      "fileCount": 3,
+      "lastAccessed": 1775030341704,
+      "keyFiles": [
+        "SlateCamp_3D_Lab_Implementation_Prompt.md",
+        "SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.html",
+        "SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.md"
+      ]
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
       "fileCount": 8,
-      "lastAccessed": 1774937482565,
+      "lastAccessed": 1775030341724,
       "keyFiles": [
         "AGENTS.md",
         "file.svg",
@@ -119,34 +116,21 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 20,
-      "lastAccessed": 1774937482566,
+      "fileCount": 23,
+      "lastAccessed": 1775030341724,
       "keyFiles": [
         "AGENTS.md",
+        "check-counts.ts",
         "db-inspect.ts",
         "dev.js",
-        "embed-wiki.ts",
-        "enrich-spp-docs.ts"
-      ]
-    },
-    "SPP Docs": {
-      "path": "SPP Docs",
-      "purpose": null,
-      "fileCount": 22,
-      "lastAccessed": 1774937482566,
-      "keyFiles": [
-        "SPP Doc 201 - Pre-Design Services.md",
-        "SPP Doc 201 - Pre-Design Services_questions.json",
-        "SPP Doc 202 - Regular Design Services.md",
-        "SPP Doc 202 - Regular Design Services_questions.json",
-        "SPP Doc 203 - Specialized Architectural Services.md"
+        "embed-wiki.ts"
       ]
     },
     "src": {
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1774937482567,
+      "lastAccessed": 1775030341725,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -155,7 +139,7 @@
       "path": "supabase",
       "purpose": null,
       "fileCount": 11,
-      "lastAccessed": 1774937482567,
+      "lastAccessed": 1775030341725,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -168,7 +152,7 @@
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1774937482569,
+      "lastAccessed": 1775030341726,
       "keyFiles": [
         "AGENTS.md",
         "error.tsx",
@@ -179,7 +163,7 @@
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 1,
-      "lastAccessed": 1774937482569,
+      "lastAccessed": 1775030341726,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -188,7 +172,7 @@
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 3,
-      "lastAccessed": 1774937482569,
+      "lastAccessed": 1775030341726,
       "keyFiles": [
         "AGENTS.md",
         "feature-flags.ts",
@@ -198,18 +182,19 @@
     "src\\data": {
       "path": "src\\data",
       "purpose": "Data files",
-      "fileCount": 2,
-      "lastAccessed": 1774937482570,
+      "fileCount": 3,
+      "lastAccessed": 1775030341727,
       "keyFiles": [
         "AGENTS.md",
-        "mock-questions.json"
+        "mock-questions.json",
+        "sample-lots.ts"
       ]
     },
     "src\\lib": {
       "path": "src\\lib",
       "purpose": "Library code",
       "fileCount": 15,
-      "lastAccessed": 1774937482570,
+      "lastAccessed": 1775030341727,
       "keyFiles": [
         "AGENTS.md",
         "analytics-server.ts",
@@ -219,303 +204,303 @@
   },
   "hotPaths": [
     {
-      "path": "src\\app\\dashboard\\3d-lab\\page.tsx",
-      "accessCount": 9,
-      "lastAccessed": 1774979531601,
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\DevControlsLabV2.tsx",
+      "accessCount": 30,
+      "lastAccessed": 1775037701332,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-01.ts",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\KpiBar.tsx",
       "accessCount": 8,
-      "lastAccessed": 1774942258627,
+      "lastAccessed": 1775034448967,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\Library\\CategoryGrid.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1774941527723,
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\DevControlsCanvas.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1775035467177,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_types\\templates.ts",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViewportWrapper.tsx",
       "accessCount": 6,
-      "lastAccessed": 1774979326549,
+      "lastAccessed": 1775035497853,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\PanelCollapseHandle.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1775037212063,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\InputPanel.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1775037687949,
+      "type": "file"
+    },
+    {
+      "path": "prompts\\SlateCamp_3D_Lab_Implementation_Prompt.md",
+      "accessCount": 5,
+      "lastAccessed": 1775030399415,
+      "type": "file"
+    },
+    {
+      "path": "prompts\\SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.md",
+      "accessCount": 5,
+      "lastAccessed": 1775030400496,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ui\\tabs.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1775032342210,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\pd1096\\types.ts",
+      "accessCount": 5,
+      "lastAccessed": 1775034101572,
       "type": "directory"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Stages and Platforms_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\hooks\\usePanelState.ts",
       "accessCount": 5,
-      "lastAccessed": 1774937992410,
+      "lastAccessed": 1775035200533,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Storage of X-Ray Films_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LayersOverlay.tsx",
       "accessCount": 4,
-      "lastAccessed": 1774938005220,
+      "lastAccessed": 1775034067364,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\BP 344 Elevator Dimensions_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\hooks\\useKeyboardShortcuts.ts",
       "accessCount": 4,
-      "lastAccessed": 1774938331026,
+      "lastAccessed": 1775034475958,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\BP 344 vs PD 1096 Conflicts_questions.json",
-      "accessCount": 4,
-      "lastAccessed": 1774938471577,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Case Study Hospital Mall School_questions.json",
-      "accessCount": 4,
-      "lastAccessed": 1774938592268,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Building Permit Process_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\index.tsx",
       "accessCount": 3,
-      "lastAccessed": 1774937578918,
+      "lastAccessed": 1775032197985,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Anthropometrics & Human Dimensions\\Standard Human Body Dimensions_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViewportToolbar.tsx",
       "accessCount": 3,
-      "lastAccessed": 1774937701695,
+      "lastAccessed": 1775032630610,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Vertical Openings and Floor Roof Construction_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard",
       "accessCount": 3,
-      "lastAccessed": 1774938021415,
-      "type": "file"
+      "lastAccessed": 1775034102332,
+      "type": "directory"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Sheet Metal and Spray Booths_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\tabs\\SettingsTab.tsx",
       "accessCount": 3,
-      "lastAccessed": 1774938048968,
+      "lastAccessed": 1775034166269,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Chimneys and Fireplaces_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\FlarPanel.tsx",
       "accessCount": 3,
-      "lastAccessed": 1774938117400,
+      "lastAccessed": 1775037075045,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\BP 344 Tactile and Visual Alarms_questions.json",
-      "accessCount": 3,
-      "lastAccessed": 1774938877920,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Fire Extinguishing Systems_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\stores\\useDevControlsStore.ts",
       "accessCount": 2,
-      "lastAccessed": 1774937555169,
+      "lastAccessed": 1775030957444,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Fire Resistive Construction Ratings_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CameraPresetBar.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937632054,
+      "lastAccessed": 1775030958350,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Ceiling Heights and Room Sizes_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\DevControlsDashboard.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937726228,
+      "lastAccessed": 1775030969507,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Fire Zones and Existing Buildings_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\BottomSheet.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937729262,
+      "lastAccessed": 1775032767934,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Certificate of Occupancy_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\layers\\RROWIndicator.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937810958,
+      "lastAccessed": 1775033834201,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Glass and Glazing Area Limits_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule",
       "accessCount": 2,
-      "lastAccessed": 1774937812139,
-      "type": "file"
+      "lastAccessed": 1775034382358,
+      "type": "directory"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\PD 1096 Rule XII Egress and Corridors_questions.json",
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\LabViewport.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937840782,
-      "type": "file"
+      "lastAccessed": 1775035530260,
+      "type": "directory"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Change of Use and Occupancy_questions.json",
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\ModuleViewer.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937892331,
-      "type": "file"
+      "lastAccessed": 1775035684401,
+      "type": "directory"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Lathing and Plastering_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LotInputPanel.tsx",
       "accessCount": 2,
-      "lastAccessed": 1774937893408,
+      "lastAccessed": 1775037074102,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Pedestrian Protection During Construction_questions.json",
-      "accessCount": 2,
-      "lastAccessed": 1774937921990,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\PD 1096 Rule VIII Setbacks and Easements_questions.json",
+      "path": "prompts\\SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.html",
       "accessCount": 1,
-      "lastAccessed": 1774937489272,
+      "lastAccessed": 1775030385731,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Philippine Architecture\\Modern Filipino Identity_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LayerToggles.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937516455,
+      "lastAccessed": 1775030958701,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Architecture of Africa, Australia & the Americas\\North American Indigenous Architecture_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\StatusBar.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937518143,
+      "lastAccessed": 1775032141894,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Wheelchair Maneuvering and Parking_questions.json",
+      "path": "src\\components\\ui\\slider.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937543742,
+      "lastAccessed": 1775032241216,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Global Modernism & Contemporary\\Post-Modernism_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CollapsibleSection.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937543774,
+      "lastAccessed": 1775032260857,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Anthropometrics & Human Dimensions\\Residential Clearances_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\UnifiedSlider.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937552097,
+      "lastAccessed": 1775032273822,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Site Exterior Circulation_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\PresetSelector.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937554673,
+      "lastAccessed": 1775032281677,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Fixtures and Small Items in Common Areas_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ComplianceSummary.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937558190,
+      "lastAccessed": 1775032379163,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Site Planning Considerations and Environmental Factors\\Microclimate Analysis_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CompactScorecardGrid.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937558539,
+      "lastAccessed": 1775032380196,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\National Building Code Application (PD 1096)\\Vent Shafts and Ventilation_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\OutputPanel.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937566825,
+      "lastAccessed": 1775032405652,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Global Modernism & Contemporary\\The Bauhaus and International Style_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\KpiChip.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937614472,
+      "lastAccessed": 1775032481602,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Architecture of Africa, Australia & the Americas\\Pre-Columbian Mesoamerica_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViolationBanner.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937616094,
+      "lastAccessed": 1775032509941,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Wheelchair Maneuvering and Parking Slots_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\MobileSheetContent.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937618617,
+      "lastAccessed": 1775032689198,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Philippine Architecture\\Pre-Colonial Vernacular_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\UrbanGrid.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937635194,
+      "lastAccessed": 1775033792409,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Architecture of Africa, Australia & the Americas\\African Vernacular Earth Architecture_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\ContextBuildings.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937642486,
+      "lastAccessed": 1775033793260,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Site Planning Considerations and Environmental Factors\\Topography and Slope Analysis_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas",
       "accessCount": 1,
-      "lastAccessed": 1774937660531,
+      "lastAccessed": 1775033801856,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\constants.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775033803426,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Interior Doors and Hardware_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\GroundPlane.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937662314,
+      "lastAccessed": 1775033863109,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Site Planning Accessible Routes vs Open Space_questions.json",
+      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\SetbackInfoPanel.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937668115,
+      "lastAccessed": 1775034231834,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Widths & Slopes_questions.json",
+      "path": "src\\app\\dashboard\\3d-lab",
       "accessCount": 1,
-      "lastAccessed": 1774937707528,
+      "lastAccessed": 1775035507472,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775035693903,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Law QA Deck RA 7277 9442 10754_questions.json",
+      "path": "src\\app\\dashboard\\3d-lab\\layout.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937756771,
+      "lastAccessed": 1775035694969,
       "type": "file"
     },
     {
-      "path": "Missing Articles\\Philippine Architecture\\Spanish Colonial Bahay na Bato_questions.json",
+      "path": "src\\app\\dashboard\\layout.tsx",
       "accessCount": 1,
-      "lastAccessed": 1774937758612,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Stairs Handrails Guardrails_questions.json",
-      "accessCount": 1,
-      "lastAccessed": 1774937767707,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Legal Liability and Enforcement Workflow_questions.json",
-      "accessCount": 1,
-      "lastAccessed": 1774937859759,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\Accessibility Standards (BP 344 - RA 9442)\\Top 50 Traps 2024 IRR_questions.json",
-      "accessCount": 1,
-      "lastAccessed": 1774937864126,
-      "type": "file"
-    },
-    {
-      "path": "Missing Articles\\Philippine Architecture\\Spanish Colonial Laws of the Indies_questions.json",
-      "accessCount": 1,
-      "lastAccessed": 1774937871978,
+      "lastAccessed": 1775035703286,
       "type": "file"
     }
   ],
