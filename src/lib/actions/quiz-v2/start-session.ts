@@ -5,7 +5,6 @@ import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { normalizeOptions } from '@/lib/utils/question'
 import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selection'
 import { randomBytes } from 'crypto'
-import { issueNonceBatch } from '@/lib/cage/nonceService'
 import type {
   StartSessionInput,
   StartSessionResult,
@@ -259,6 +258,7 @@ export const startSession = async (
     let ilSessionKey: string | null = null
     try {
       const ilQuestionIds = ilClientQuestions.map((q) => q.question_id)
+      const { issueNonceBatch } = await import('@/lib/cage/nonceService')
       const ilNonceMap = await issueNonceBatch(ilSession.session_id, ilQuestionIds, user.id)
       ilNonces = Object.fromEntries(ilNonceMap)
       ilSessionKey = randomBytes(32).toString('hex')
@@ -417,6 +417,7 @@ export const startSession = async (
   let sessionKey: string | null = null
   try {
     const questionIds = clientQuestions.map((q) => q.question_id)
+    const { issueNonceBatch } = await import('@/lib/cage/nonceService')
     const nonceMap = await issueNonceBatch(session.session_id, questionIds, user.id)
     nonces = Object.fromEntries(nonceMap)
     sessionKey = randomBytes(32).toString('hex')
