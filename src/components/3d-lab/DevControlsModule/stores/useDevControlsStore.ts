@@ -150,6 +150,7 @@ interface DevControlsStore {
   activeHotspot: string | null
   highlightedMetric: string | null
   showDimensions: boolean
+  xrayMode: boolean         // transparent building for see-through to setback volumes
   isDraggingZone: boolean  // locks camera when dragging ISA/USA
   dpr: number
 
@@ -176,6 +177,7 @@ interface DevControlsStore {
   setActiveHotspot: (id: string | null) => void
   setHighlightedMetric: (metric: string | null) => void
   setShowDimensions: (v: boolean) => void
+  setXrayMode: (v: boolean) => void
   setIsDraggingZone: (v: boolean) => void
   setDpr: (dpr: number) => void
   setInvalidateFn: (fn: (() => void) | null) => void
@@ -226,6 +228,7 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   activeHotspot: null,
   highlightedMetric: null,
   showDimensions: false,
+  xrayMode: false,
   isDraggingZone: false,
   dpr: 1.5,
 
@@ -350,6 +353,11 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
 
   setShowDimensions: (v) => {
     set({ showDimensions: v })
+    get().invalidateFn?.()
+  },
+
+  setXrayMode: (v) => {
+    set({ xrayMode: v })
     get().invalidateFn?.()
   },
 

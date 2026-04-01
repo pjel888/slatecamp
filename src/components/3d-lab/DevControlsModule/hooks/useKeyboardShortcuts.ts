@@ -23,6 +23,8 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
   const toggleLayer = useDevControlsStore((s) => s.toggleLayer)
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const setShowDimensions = useDevControlsStore((s) => s.setShowDimensions)
+  const xrayMode = useDevControlsStore((s) => s.xrayMode)
+  const setXrayMode = useDevControlsStore((s) => s.setXrayMode)
 
   const cycleIso = useCallback(() => {
     const idx = ISO_CYCLE.indexOf(cameraPreset)
@@ -80,6 +82,11 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
         case 'G':
           e.preventDefault()
           toggleLayer('rrow')
+          break
+        case 'x':
+        case 'X':
+          e.preventDefault()
+          setXrayMode(!xrayMode)
           break
         case 'l':
         case 'L':

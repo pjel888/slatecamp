@@ -12,11 +12,12 @@ import { LayersOverlay } from './LayersOverlay'
 export function ViewportToolbar() {
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const setShowDimensions = useDevControlsStore((s) => s.setShowDimensions)
+  const xrayMode = useDevControlsStore((s) => s.xrayMode)
+  const setXrayMode = useDevControlsStore((s) => s.setXrayMode)
   const visibleLayers = useDevControlsStore((s) => s.visibleLayers)
   const toggleLayer = useDevControlsStore((s) => s.toggleLayer)
 
   const [layersOpen, setLayersOpen] = useState(false)
-  const [xrayActive, setXrayActive] = useState(false)
 
   // Listen for keyboard shortcut event from useKeyboardShortcuts
   const handleToggleLayers = useCallback(() => setLayersOpen((v) => !v), [])
@@ -29,12 +30,7 @@ export function ViewportToolbar() {
 
   const handleGridToggle = () => toggleLayer('rrow')
   const handleDimsToggle = () => setShowDimensions(!showDimensions)
-  const handleXrayToggle = () => {
-    // X-ray mode: toggle opacity of building layers for see-through
-    setXrayActive(!xrayActive)
-    // This toggles the 'ambf' layer as a proxy for x-ray mode
-    // Future: implement actual material opacity in canvas
-  }
+  const handleXrayToggle = () => setXrayMode(!xrayMode)
   const handleScreenshot = () => {
     const canvas = document.querySelector('canvas')
     if (!canvas) return
@@ -75,7 +71,7 @@ export function ViewportToolbar() {
           icon={<Eye size={14} />}
           label="X-ray"
           shortcut="X"
-          active={xrayActive}
+          active={xrayMode}
           onClick={handleXrayToggle}
         />
         <ToolbarButton

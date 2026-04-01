@@ -27,6 +27,10 @@ export function DevControlsLayers() {
   const floorH = useDevControlsStore((s) => s.building.floorHeight)
   const maxFloors = useDevControlsStore((s) => s.result.maxCompliantFloors)
   const layers = useDevControlsStore((s) => s.visibleLayers)
+  const xray = useDevControlsStore((s) => s.xrayMode)
+
+  // X-ray multiplier: reduces opacity of solid elements to see through them
+  const xMul = xray ? 0.25 : 1.0
 
   // ── Derived dimensions ────────────────────────────────────────────
   const bW = Math.max(0.1, lotW - sbL - sbRt)  // buildable width
@@ -95,12 +99,12 @@ export function DevControlsLayers() {
               const fn = i + 1
               const y = GEOMETRY_Y.BUILDING_BASE + i * floorH + 0.075
               let color: string = COLOR.BUILDING
-              let opacity: number = OPACITY.FLOOR_SLAB
+              let opacity: number = OPACITY.FLOOR_SLAB * xMul
               // Priority: lot encroachment (worst) > BHL > setback > FLAR > normal
-              if (lotEncroach) { color = '#991b1b'; opacity = 0.75 }         // dark red — beyond lot
-              else if (fn > bhlStoreys) { color = '#D64545'; opacity = 0.55 } // red — above BHL
-              else if (setbackEncroach || isAmbfViolation) { color = '#D64545'; opacity = 0.65 } // red — setback/AMBF
-              else if (fn > maxFloors) { color = '#D4951A'; opacity = 0.60 }  // amber — FLAR
+              if (lotEncroach) { color = '#991b1b'; opacity = 0.75 * xMul }         // dark red — beyond lot
+              else if (fn > bhlStoreys) { color = '#D64545'; opacity = 0.55 * xMul } // red — above BHL
+              else if (setbackEncroach || isAmbfViolation) { color = '#D64545'; opacity = 0.65 * xMul } // red — setback/AMBF
+              else if (fn > maxFloors) { color = '#D4951A'; opacity = 0.60 * xMul }  // amber — FLAR
               return (
                 <mesh key={fn} position={[sbL + fpW / 2, y, sbF + fpD / 2]}>
                   <boxGeometry args={[fpW, 0.15, fpD]} />
