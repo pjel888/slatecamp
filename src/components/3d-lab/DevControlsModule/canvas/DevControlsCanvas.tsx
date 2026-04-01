@@ -7,7 +7,7 @@
 
 import { Suspense, useCallback, useEffect } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
-import { OrbitControls, PerformanceMonitor, PerspectiveCamera } from '@react-three/drei'
+import { OrbitControls, PerformanceMonitor, PerspectiveCamera, OrthographicCamera } from '@react-three/drei'
 import * as THREE from 'three'
 import { useDevControlsStore } from '../stores/useDevControlsStore'
 import { useSelectionStore } from '../stores/useSelectionStore'
@@ -18,7 +18,7 @@ import { resetCursor } from './cursor'
 
 // Scene layers
 import { LotGround } from './layers/LotGround'
-import { PolygonDevControls } from './layers/PolygonDevControls'
+import { DevControlsLayers } from './layers/DevControlsLayers'
 import { RROWIndicator } from './layers/RROWIndicator'
 import { FirewallMarkers } from './layers/FirewallMarkers'
 
@@ -40,8 +40,8 @@ function CameraControls({ target }: { target: [number, number, number] }) {
       enablePan={true}
       minPolarAngle={0.1}
       maxPolarAngle={Math.PI / 2 - 0.05}
-      minDistance={5}
-      maxDistance={80}
+      minDistance={1}
+      maxDistance={500}
       enableDamping={false}
     />
   )
@@ -67,20 +67,42 @@ function SceneContent() {
   const visibleLayers = useDevControlsStore((s) => s.visibleLayers)
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const cameraPreset = useDevControlsStore((s) => s.cameraPreset)
-  const preset = CAMERA_PRESETS[cameraPreset] ?? CAMERA_PRESETS.orbit
+  const lotW = useDevControlsStore((s) => s.lot.width)
+  const lotD = useDevControlsStore((s) => s.lot.depth)
+  const preset = CAMERA_PRESETS[cameraPreset] ?? CAMERA_PRESETS.perspective
+  const isOrtho = preset.isOrtho === true
+
+  // Auto-frame orthographic zoom: fit the lot bounding box with padding
+  // zoom = viewport / scene_size — higher zoom = closer. We use the larger lot dimension.
+  const orthoZoom = Math.max(lotW, lotD, 10) * 1.4
+
   return (
     <>
       <SceneSetup />
       <InvalidateBridge />
       <SceneLighting />
 
-      <PerspectiveCamera
-        makeDefault
-        position={preset.position}
-        fov={preset.fov}
-        near={0.1}
-        far={500}
-      />
+      {/* Perspective camera — default for free orbit */}
+      {!isOrtho && (
+        <PerspectiveCamera
+          makeDefault
+          position={preset.position}
+          fov={preset.fov}
+          near={0.1}
+          far={500}
+        />
+      )}
+
+      {/* Orthographic camera — for isometric/plan views, auto-framed to lot */}
+      {isOrtho && (
+        <OrthographicCamera
+          makeDefault
+          position={preset.position}
+          zoom={Math.max(8, 800 / orthoZoom)}
+          near={-500}
+          far={500}
+        />
+      )}
 
       <CameraControls target={preset.target} />
 
@@ -91,8 +113,8 @@ function SceneContent() {
       {/* Lot ground — handles both modes internally */}
       <LotGround />
 
-      {/* Development controls — unified for both rectangle and surveyor modes */}
-      <PolygonDevControls />
+      {/* Development control layers — rectangular lot */}
+      <DevControlsLayers />
 
       {/* Context overlays — shared by both modes */}
       {visibleLayers.has('rrow') && <RROWIndicator />}
@@ -128,7 +150,6 @@ export function DevControlsCanvas() {
         toneMapping: THREE.ACESFilmicToneMapping,
         outputColorSpace: THREE.SRGBColorSpace,
       }}
-      shadows
       style={{ background: SCENE.SKY_COLOR }}
       onPointerMissed={handlePointerMissed}
     >

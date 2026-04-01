@@ -82,6 +82,47 @@ export const PRESETS: DevControlsPreset[] = [
   },
 ]
 
+// ─── Violation Presets (Educational — deliberate code violations) ────────────
+
+export const VIOLATION_PRESETS: DevControlsPreset[] = [
+  {
+    label: 'Lot Encroachment',
+    description: 'Building extends beyond lot boundary — property line violation',
+    lot: { width: 15, depth: 12 },
+    zoning: { zoneClass: 'R-1', firewallActive: false, firewallSides: [] },
+    // Footprint 14×11 + front setback 4.5m = extends past 12m depth
+    building: { proposedFootprintWidth: 14, proposedFootprintDepth: 11, proposedStoreys: 2, floorHeight: 3.0 },
+    rrow: { width: 10 },
+  },
+  {
+    label: 'BHL Violation',
+    description: 'FLAR allows the GFA but building exceeds BHL — height cap breach',
+    lot: { width: 30, depth: 30 },
+    zoning: { zoneClass: 'R-2-basic', firewallActive: false, firewallSides: [] },
+    // R-2 Basic BHL = 3 storeys, but proposing 6 storeys with small footprint
+    building: { proposedFootprintWidth: 10, proposedFootprintDepth: 10, proposedStoreys: 6, floorHeight: 3.0 },
+    rrow: { width: 10 },
+  },
+  {
+    label: 'Setback Breach',
+    description: 'Footprint fills entire buildable area and overflows into setbacks',
+    lot: { width: 10, depth: 12 },
+    zoning: { zoneClass: 'R-1', firewallActive: false, firewallSides: [] },
+    // R-1 setbacks: F=4.5, S=2.0, R=2.0 → buildable = 6×5.5 = 33sqm, proposing 8×10
+    building: { proposedFootprintWidth: 8, proposedFootprintDepth: 10, proposedStoreys: 2, floorHeight: 3.0 },
+    rrow: { width: 10 },
+  },
+  {
+    label: 'TGFA Overbuilt',
+    description: 'Total floor area exceeds FLAR limit — too many floors for the lot',
+    lot: { width: 20, depth: 15 },
+    zoning: { zoneClass: 'R-1', firewallActive: false, firewallSides: [] },
+    // R-1 TGFA ≈ 675sqm, proposing 12×8×8floors = 768sqm
+    building: { proposedFootprintWidth: 12, proposedFootprintDepth: 8, proposedStoreys: 8, floorHeight: 3.0 },
+    rrow: { width: 10 },
+  },
+]
+
 // ─── Store Interface ────────────────────────────────────────────────────────
 
 interface DevControlsStore {

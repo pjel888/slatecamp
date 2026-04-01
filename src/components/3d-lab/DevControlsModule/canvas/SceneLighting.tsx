@@ -15,16 +15,6 @@ export function SceneLighting() {
         position={[8, 10, 4]}
         intensity={1.2}
         color="#FFF5E6"
-        castShadow
-        shadow-mapSize-width={1024}
-        shadow-mapSize-height={1024}
-        shadow-camera-near={0.5}
-        shadow-camera-far={60}
-        shadow-camera-left={-30}
-        shadow-camera-right={30}
-        shadow-camera-top={30}
-        shadow-camera-bottom={-30}
-        shadow-bias={-0.001}
       />
 
       {/* Fill light — cool, opposite side, softens shadows */}

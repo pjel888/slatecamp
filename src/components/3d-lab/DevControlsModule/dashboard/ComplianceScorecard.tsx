@@ -11,10 +11,20 @@ export function ComplianceScorecard() {
   const buildableW = useDevControlsStore((s) => s.result.buildableWidth)
   const buildableD = useDevControlsStore((s) => s.result.buildableDepth)
 
-  // Check if the proposed footprint visually overflows the setback boundaries
+  const lotW = useDevControlsStore((s) => s.lot.width)
+  const lotD = useDevControlsStore((s) => s.lot.depth)
+  const sbF = useDevControlsStore((s) => s.result.setbacks.effective.front)
+  const sbL = useDevControlsStore((s) => s.result.setbacks.effective.left)
+
+  // Setback encroachment — footprint exceeds buildable area within setbacks
   const setbackOverflowW = fpW > buildableW
   const setbackOverflowD = fpD > buildableD
   const hasSetbackOverflow = setbackOverflowW || setbackOverflowD
+
+  // Lot boundary encroachment — footprint + setback origin exceeds lot boundary
+  const lotOverflowW = sbL + fpW > lotW
+  const lotOverflowD = sbF + fpD > lotD
+  const hasLotOverflow = lotOverflowW || lotOverflowD
 
   // FLAR/TGFA violation — proposed GFA exceeds allowable
   const proposedGFA = useDevControlsStore((s) => s.result.proposedGFA)
@@ -79,6 +89,22 @@ export function ComplianceScorecard() {
           </div>
         ))}
       </div>
+
+      {/* Lot Boundary Encroachment — critical violation */}
+      {hasLotOverflow && (
+        <div className="mt-2 rounded-sm border border-[#991b1b]/30 bg-[#fef2f2] p-2">
+          <div className="flex items-center gap-1.5 mb-1">
+            <div className="h-2 w-2 rounded-full bg-[#991b1b]" />
+            <span className="text-[10px] font-medium text-[#991b1b]">LOT BOUNDARY ENCROACHMENT</span>
+          </div>
+          <p className="text-[9px] text-[#4A5568] leading-relaxed">
+            Building footprint ({fpW.toFixed(1)}m × {fpD.toFixed(1)}m) extends beyond the lot boundary ({lotW.toFixed(1)}m × {lotD.toFixed(1)}m).
+            {lotOverflowW && ` Width exceeds lot by ${(sbL + fpW - lotW).toFixed(1)}m.`}
+            {lotOverflowD && ` Depth exceeds lot by ${(sbF + fpD - lotD).toFixed(1)}m.`}
+          </p>
+          <p className="mt-1 font-mono text-[8px] text-[#8896A7]">PD 1096 — Building must be contained within property lines</p>
+        </div>
+      )}
 
       {/* Setback Non-Compliant warning — shown when footprint overflows setback boundaries */}
       {hasSetbackOverflow && (

@@ -18,7 +18,7 @@ export type LotType = 'interior' | 'corner' | 'through' | 'corner-through'
 
 export type LabMode = 'sandbox' | 'exam'
 
-export type CameraPreset = 'orbit' | 'top' | 'front' | 'isometric'
+export type CameraPreset = 'perspective' | 'top' | 'front' | 'iso-ne' | 'iso-nw' | 'iso-se' | 'iso-sw' | 'orbit'
 
 export type LayerKey =
   | 'setbacks' | 'ambf' | 'pso' | 'bhl' | 'flar'

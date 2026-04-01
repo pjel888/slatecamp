@@ -58,11 +58,14 @@ function DimensionsIcon() {
   )
 }
 
-const CAMERA_OPTIONS: { value: CameraPreset; label: string; icon: () => React.ReactNode }[] = [
-  { value: 'orbit', label: 'Orbit', icon: OrbitIcon },
-  { value: 'top', label: 'Plan', icon: PlanIcon },
-  { value: 'front', label: 'Front', icon: FrontIcon },
-  { value: 'isometric', label: 'Iso', icon: IsoIcon },
+const CAMERA_OPTIONS: { value: CameraPreset; label: string; icon: () => React.ReactNode; group?: string }[] = [
+  { value: 'perspective', label: '3D', icon: OrbitIcon, group: 'main' },
+  { value: 'top', label: 'Plan', icon: PlanIcon, group: 'main' },
+  { value: 'front', label: 'Front', icon: FrontIcon, group: 'main' },
+  { value: 'iso-ne', label: 'NE', icon: IsoIcon, group: 'iso' },
+  { value: 'iso-nw', label: 'NW', icon: IsoIcon, group: 'iso' },
+  { value: 'iso-se', label: 'SE', icon: IsoIcon, group: 'iso' },
+  { value: 'iso-sw', label: 'SW', icon: IsoIcon, group: 'iso' },
 ]
 
 // ─── Floating Camera Bar (positioned over 3D viewport) ─────────────────────
@@ -76,28 +79,36 @@ export function FloatingCameraBar() {
 
   return (
     <div className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2">
-      <div className="flex items-center gap-1 rounded-md border border-white/20 bg-[#1A2332]/40 px-1.5 py-1.5 backdrop-blur-xl shadow-lg">
-        {CAMERA_OPTIONS.map((opt) => {
+      <div className="flex items-center gap-0.5 rounded-md border border-white/20 bg-[#1A2332]/40 px-1.5 py-1.5 backdrop-blur-xl shadow-lg">
+        {/* Main views */}
+        {CAMERA_OPTIONS.filter(o => o.group === 'main').map((opt) => {
           const Icon = opt.icon
           const active = current === opt.value
           return (
-            <button
-              key={opt.value}
-              onClick={() => setCameraPreset(opt.value)}
-              title={opt.label}
-              className={`flex items-center gap-1.5 rounded-sm px-2.5 py-1.5 text-[10px] font-medium transition-all duration-150 ${
-                active
-                  ? 'bg-white/20 text-white'
-                  : 'text-white/60 hover:bg-white/10 hover:text-white/90'
-              }`}
-            >
-              <Icon />
-              <span className="hidden sm:inline">{opt.label}</span>
+            <button key={opt.value} onClick={() => setCameraPreset(opt.value)} title={opt.label}
+              className={`flex items-center gap-1 rounded-sm px-2 py-1.5 text-[10px] font-medium transition-all duration-150 ${
+                active ? 'bg-white/20 text-white' : 'text-white/60 hover:bg-white/10 hover:text-white/90'
+              }`}>
+              <Icon /><span className="hidden sm:inline">{opt.label}</span>
             </button>
           )
         })}
 
-        {/* Divider */}
+        <div className="mx-0.5 h-5 w-px bg-white/15" />
+
+        {/* Isometric corners */}
+        {CAMERA_OPTIONS.filter(o => o.group === 'iso').map((opt) => {
+          const active = current === opt.value
+          return (
+            <button key={opt.value} onClick={() => setCameraPreset(opt.value)} title={`Isometric ${opt.label}`}
+              className={`rounded-sm px-1.5 py-1.5 text-[9px] font-mono font-medium transition-all duration-150 ${
+                active ? 'bg-white/20 text-white' : 'text-white/60 hover:bg-white/10 hover:text-white/90'
+              }`}>
+              {opt.label}
+            </button>
+          )
+        })}
+
         <div className="mx-0.5 h-5 w-px bg-white/15" />
 
         {/* Dimensions toggle */}

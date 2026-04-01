@@ -31,11 +31,11 @@ export type GeometryYKey = keyof typeof GEOMETRY_Y
 
 export const COLOR = {
   // Ground & context
-  GROUND:          '#E8E4DB',   // Raw earth / terrain base
+  GROUND:          '#f1f5f9',   // Raw earth / terrain — Tailwind slate-100
   ROAD:            '#6B7280',   // Road surface
   ROAD_MARKING:    '#FFFFFF',   // Lane markings
   SIDEWALK:        '#D4D0C8',   // Pedestrian pavement
-  LOT_SURFACE:     '#C8C0A8',   // Lot ground fill (warm sand)
+  LOT_SURFACE:     '#cbd5e1',   // Lot ground fill — Tailwind slate-300 (light grey, visible against white bg)
 
   // Zones
   AMBF_BINDING:    '#1B3FC4',   // Buildable footprint — Camp Cobalt
@@ -44,8 +44,8 @@ export const COLOR = {
   SETBACK:         '#E74C3C',   // Setback exclusion (used with low opacity)
   ISA:             '#F5A623',   // Impervious hardscape — amber
   USA:             '#4A7C59',   // Permeable softscape — trail-green
-  TOSL:            '#88A898',   // Total open space composite
-  BUILDING:        '#B8B4A8',   // Extruded floors — concrete
+  TOSL:            '#86efac',   // Total open space — Tailwind green-300 (visible against gray lot)
+  BUILDING:        '#a1a1aa',   // Extruded floors — Tailwind zinc-400 (medium concrete gray)
 
   // State
   SELECTION:       '#1B3FC4',   // Selected mesh — Camp Cobalt
@@ -68,7 +68,7 @@ export const OPACITY = {
   SETBACK_ZONE:    0.15,    // 15% — red tint
   ISA_ZONE:        0.25,    // 25% — amber fill
   USA_ZONE:        0.25,    // 25% — trail-green fill
-  TOSL_OVERLAY:    0.12,    // 12% — composite overlay
+  TOSL_OVERLAY:    0.25,    // 25% — clearly visible green overlay
   AMBF_GHOST:      0.10,    // 10% — non-binding candidates
   AMBF_BINDING:    0.18,    // 18% — binding envelope
   FLOOR_SLAB:      0.85,    // 85% — building floors
@@ -85,26 +85,54 @@ export interface CameraPresetConfig {
 }
 
 export const CAMERA_PRESETS: Record<string, CameraPresetConfig> = {
+  // Default perspective
+  perspective: {
+    position: [18, 14, 20],
+    target: [10, 0, 7.5],
+    fov: 42,
+  },
   orbit: {
     position: [18, 14, 20],
     target: [10, 0, 7.5],
     fov: 42,
   },
+  // Elevation views
   top: {
-    position: [10, 40, 7.5],
+    position: [10, 50, 7.5],
     target: [10, 0, 7.5],
     fov: 42,
     isOrtho: true,
   },
   front: {
-    position: [10, 8, 30],
+    position: [10, 8, 40],
     target: [10, 4, 7.5],
     fov: 42,
+    isOrtho: true,
   },
-  isometric: {
-    position: [25, 18, 25],
+  // 4-corner isometric views (orthographic, 45° azimuth from each corner)
+  'iso-ne': {
+    position: [35, 25, 30],
     target: [10, 0, 7.5],
     fov: 35,
+    isOrtho: true,
+  },
+  'iso-nw': {
+    position: [-15, 25, 30],
+    target: [10, 0, 7.5],
+    fov: 35,
+    isOrtho: true,
+  },
+  'iso-se': {
+    position: [35, 25, -15],
+    target: [10, 0, 7.5],
+    fov: 35,
+    isOrtho: true,
+  },
+  'iso-sw': {
+    position: [-15, 25, -15],
+    target: [10, 0, 7.5],
+    fov: 35,
+    isOrtho: true,
   },
 } as const
 

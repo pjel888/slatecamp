@@ -1,6 +1,6 @@
 'use client'
 
-import { useDevControlsStore, PRESETS } from '../stores/useDevControlsStore'
+import { useDevControlsStore, PRESETS, VIOLATION_PRESETS } from '../stores/useDevControlsStore'
 
 export function PresetSelector() {
   const applyPreset = useDevControlsStore((s) => s.applyPreset)
@@ -8,6 +8,7 @@ export function PresetSelector() {
 
   return (
     <div>
+      {/* Compliant presets */}
       <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
         Presets
       </label>
@@ -28,6 +29,23 @@ export function PresetSelector() {
         >
           Reset
         </button>
+      </div>
+
+      {/* Violation presets — educational case studies */}
+      <label className="mt-3 mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#D64545]">
+        Violation Case Studies
+      </label>
+      <div className="flex flex-wrap gap-1.5">
+        {VIOLATION_PRESETS.map((p) => (
+          <button
+            key={p.label}
+            onClick={() => applyPreset(p)}
+            title={p.description}
+            className="rounded-sm border border-[#D64545]/30 px-2 py-1 text-[10px] font-medium text-[#D64545] transition-colors duration-150 hover:bg-[#FDF0F0] hover:border-[#D64545]"
+          >
+            {p.label}
+          </button>
+        ))}
       </div>
     </div>
   )
