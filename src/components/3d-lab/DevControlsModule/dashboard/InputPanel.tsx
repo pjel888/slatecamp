@@ -55,24 +55,26 @@ export function InputPanel({ activeTab, onTabChange }: InputPanelProps) {
       </TabsList>
 
       {/* ─── Tab 1: Lot — Dual Column ─── */}
+      {/* Order: Zoning (governs Table VIII.1) → Lot Parameters → Presets (shortcuts last) */}
       <TabsContent value="lot" className="flex-1 overflow-y-auto p-3">
-        {/* Presets span full width */}
-        <PresetSelector />
-        <hr className="my-3 border-border" />
-
         {/* Two-column grid: controls left, info right */}
         <div className="grid grid-cols-2 gap-4">
-          {/* Left: Lot sliders */}
-          <div className="space-y-4">
-            <LotControls />
+          {/* Left: Zoning first (dependency-first), then lot sliders */}
+          <div className="space-y-5">
             <ZoneSelector />
+            <LotControls />
           </div>
-          {/* Right: Lot summary + zoning table */}
+          {/* Right: Zone table first (matches zoning), then lot summary */}
           <div className="space-y-4">
-            <LotSummary />
             <ZoneTableRef />
+            <LotSummary />
           </div>
         </div>
+
+        <hr className="my-3 border-border" />
+
+        {/* Presets below primary controls — power-user shortcuts last */}
+        <PresetSelector />
       </TabsContent>
 
       {/* ─── Tab 2: Building — Dual Column ─── */}

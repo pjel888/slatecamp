@@ -39,6 +39,9 @@ export function ZoneSelector() {
           <option key={opt.value} value={opt.value}>{opt.label}</option>
         ))}
       </select>
+      <p className="mt-1 text-[10px] text-muted-foreground">
+        Sets Table VIII.1 development controls
+      </p>
     </div>
   )
 }
