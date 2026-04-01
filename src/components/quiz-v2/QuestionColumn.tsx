@@ -1,16 +1,23 @@
 'use client'
 
-import type { QuestionForClient } from '@/types/quiz-config'
+import type { QuestionForClient, QuizMode } from '@/types/quiz-config'
+import { HintButton } from './HintButton'
+
+const FORMATIVE_MODES = new Set<QuizMode>(['camp', 'chill', 'subject', 'focused'])
 
 interface QuestionColumnProps {
   question: QuestionForClient
+  mode?: QuizMode
 }
 
 export const QuestionColumn = ({
   question,
+  mode,
 }: QuestionColumnProps) => {
   const headingId = `question-heading-${question.question_id}`
   const stemId = `question-stem-${question.question_id}`
+
+  const isFormative = mode != null && FORMATIVE_MODES.has(mode)
 
   return (
     <section aria-label="Question" aria-describedby={stemId}>
@@ -47,6 +54,14 @@ export const QuestionColumn = ({
       >
         {question.stem}
       </p>
+
+      {/* Hint — formative modes only, when hint_text is present */}
+      {question.hint_text && (
+        <HintButton
+          hintText={question.hint_text}
+          isFormative={isFormative}
+        />
+      )}
 
       {/* Optional image */}
       {question.image_url && (

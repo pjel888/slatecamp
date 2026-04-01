@@ -15,11 +15,11 @@ import type { AdvancedConfig } from './IntroSlide3'
 // ─── Slide count per mode ─────────────────────────────────────────────────────
 
 const SLIDE_COUNT: Record<QuizMode, number> = {
-  camp: 1,
-  chill: 1,
-  storm: 1,
+  camp: 2,
+  chill: 2,
+  storm: 2,
   fullexam: 1,
-  extended: 1,
+  extended: 2,
   subject: 2,
   focused: 2,
   custom: 3,

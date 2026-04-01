@@ -12,6 +12,8 @@ interface TimerDisplayProps {
   totalTimeMs: number | null
   elapsedMs: number
   onTimeUp?: () => void
+  /** Visual variant: 'numeric' (default) or 'bar' (adds depleting bar below numeric) */
+  variant?: 'numeric' | 'bar'
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -34,6 +36,7 @@ const TimerDisplay = ({
   totalTimeMs,
   elapsedMs,
   onTimeUp,
+  variant = 'numeric',
 }: TimerDisplayProps) => {
   const firedRef = useRef(false)
 
@@ -90,22 +93,56 @@ const TimerDisplay = ({
     ? `Time remaining: ${formatTime(displayMs)}`
     : `Time elapsed: ${formatTime(displayMs)}`
 
+  // Bar color: Camp Cobalt >25%, Amber ≤25%, Warm Red ≤10%
+  const getBarColor = (): string => {
+    if (fractionRemaining <= 0.10) return '#D64545'
+    if (fractionRemaining <= 0.25) return '#D4951A'
+    return '#1B3FC4'
+  }
+
+  const barColor = getBarColor()
+  const percentRemaining = Math.max(0, Math.min(100, fractionRemaining * 100))
+  const prefersReducedMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
   return (
-    <div
-      className={cn(
-        'flex items-center gap-1 tabular-nums font-medium shrink-0 transition-colors duration-150',
-        isProminent ? 'text-sm' : 'text-xs',
+    <div className="flex flex-col w-full gap-1">
+      <div
+        className={cn(
+          'flex items-center gap-1 tabular-nums font-medium shrink-0 transition-colors duration-150',
+          isProminent ? 'text-sm' : 'text-xs',
+        )}
+        style={{ color }}
+        aria-label={ariaLabel}
+        role="timer"
+      >
+        <Timer
+          size={isProminent ? 16 : 14}
+          weight={isProminent ? 'bold' : 'regular'}
+          aria-hidden="true"
+        />
+        <span>{formatTime(displayMs)}</span>
+      </div>
+      {variant === 'bar' && totalTimeMs !== null && totalTimeMs > 0 && (
+        <div
+          className="w-full h-1 rounded-full bg-[#D4DAE3] overflow-hidden"
+          role="progressbar"
+          aria-valuenow={Math.round(percentRemaining)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={ariaLabel}
+        >
+          <div
+            className="h-full rounded-full"
+            style={{
+              width: `${percentRemaining}%`,
+              backgroundColor: barColor,
+              transition: prefersReducedMotion ? undefined : 'width 1s linear',
+            }}
+          />
+        </div>
       )}
-      style={{ color }}
-      aria-label={ariaLabel}
-      role="timer"
-    >
-      <Timer
-        size={isProminent ? 16 : 14}
-        weight={isProminent ? 'bold' : 'regular'}
-        aria-hidden="true"
-      />
-      <span>{formatTime(displayMs)}</span>
     </div>
   )
 }

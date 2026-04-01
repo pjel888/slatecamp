@@ -3,6 +3,8 @@
 import { useEffect, useRef, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useReducedMotion } from '@/hooks/useReducedMotion'
+import { cn } from '@/lib/utils'
 import { QuizHeader } from './QuizHeader'
 import { QuizBody } from './QuizBody'
 import { QuizFooter } from './QuizFooter'
@@ -15,7 +17,7 @@ import { TimerDisplay } from './TimerDisplay'
 import { PacingNudge } from './PacingNudge'
 import { WikiSidePanel } from '@/components/shared/WikiSidePanel'
 import { endSession as endSessionAction } from '@/lib/actions/quiz-v2'
-import { CampfireLoader } from '@/components/shared/CampfireLoader'
+import { QuestionSkeleton } from './QuestionSkeleton'
 import type {
   QuizSessionConfig,
   QuestionForClient,
@@ -36,6 +38,8 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const router = useRouter()
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const initializedRef = useRef(false)
+  const directionRef = useRef<'forward' | 'backward'>('forward')
+  const reducedMotion = useReducedMotion()
 
   // ── Store state ───────────────────────────────────────────────────────────
 
@@ -201,6 +205,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   }, [submitCurrentAnswer])
 
   const handleNext = useCallback(() => {
+    directionRef.current = 'forward'
     if (feedbackState.visible) {
       hideFeedback()
     }
@@ -262,6 +267,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
         void handleSubmitAll()
       }
     } else {
+      directionRef.current = 'forward'
       if (feedbackState.visible) {
         hideFeedback()
       }
@@ -277,6 +283,11 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
     hideFeedback,
     goNext,
   ])
+
+  const handlePrevious = useCallback(() => {
+    directionRef.current = 'backward'
+    goPrevious()
+  }, [goPrevious])
 
   const handlePacingAutoAdvance = useCallback(() => {
     if (!currentQuestion) return
@@ -306,7 +317,16 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   // ── Loading state ─────────────────────────────────────────────────────────
 
   if (!currentQuestion || status === 'idle' || status === 'loading') {
-    return <CampfireLoader />
+    return (
+      <div className="flex flex-col min-h-screen bg-surface-focused">
+        <div className="flex items-center gap-3 px-4 py-2.5 border-b border-[#D4DAE3] bg-white">
+          <div className="flex-1 h-1.5 rounded-full bg-[#D4DAE3]" />
+        </div>
+        <main className="flex-1">
+          <QuestionSkeleton />
+        </main>
+      </div>
+    )
   }
 
   // ── Render ────────────────────────────────────────────────────────────────
@@ -335,17 +355,26 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
       />
 
       <main className="flex-1 overflow-hidden relative">
-        <QuizBody
-          question={currentQuestion}
-          selectedOptionId={currentAnswer?.selectedOptionId ?? null}
-          confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
-          feedback={feedbackData}
-          config={config}
-          onSelectOption={handleSelectOption}
-          onConfidenceChange={handleConfidenceChange}
-          onSubmit={handleSubmit}
-          onNext={handleNext}
-        />
+        <div
+          key={currentQuestion.question_id}
+          className={cn(
+            !reducedMotion && 'animate-in fade-in duration-200 ease-out',
+            !reducedMotion && directionRef.current === 'forward' && 'slide-in-from-right-2',
+            !reducedMotion && directionRef.current === 'backward' && 'slide-in-from-left-2',
+          )}
+        >
+          <QuizBody
+            question={currentQuestion}
+            selectedOptionId={currentAnswer?.selectedOptionId ?? null}
+            confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
+            feedback={feedbackData}
+            config={config}
+            onSelectOption={handleSelectOption}
+            onConfidenceChange={handleConfidenceChange}
+            onSubmit={handleSubmit}
+            onNext={handleNext}
+          />
+        </div>
         {/* Pacing nudge for pressure level 2+ */}
         {pressureLevel >= 2 && currentQuestion && (
           <PacingNudge
@@ -362,7 +391,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
         currentPosition={currentIndex + 1}
         totalQuestions={totalQuestions}
         hasAnswered={hasAnswered}
-        onPrevious={goPrevious}
+        onPrevious={handlePrevious}
         onNext={handleFooterNext}
       />
 

@@ -51,6 +51,10 @@ export type AleFrequency =
   | 'low'
   | 'emerging'
 
+export type QuestionStatus = 'idle' | 'selected' | 'submitted' | 'feedback' | 'reviewed'
+
+export type TimerColorState = 'normal' | 'warning' | 'critical'
+
 export type DistractorType =
   | 'common-misconception'
   | 'adjacent-value'
@@ -151,6 +155,7 @@ export interface QuestionForClient {
   is_interleaved?: boolean  // true when question comes from a sibling topic
   question_type: QuestionType  // generation effect: mcq (default) or generation types
   unit?: string | null         // unit label for numeric/formula inputs (e.g. "psi", "ft")
+  hint_text?: string | null    // Progressive hint for formative quizzes
   options: Array<{
     id: string
     letter: 'A' | 'B' | 'C' | 'D'
@@ -170,6 +175,8 @@ export interface QuizAnswerState {
   timeStartedMs: number
   timeSpentMs: number
   submittedAt: string | null
+  /** Deterministic per-question state machine: idle → selected → submitted → feedback → reviewed */
+  questionStatus: QuestionStatus
 }
 
 // ─── Server Action types ─────────────────────────────────────────────────────

@@ -18,6 +18,10 @@ interface CrammingNudgeProps {
  */
 export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
   const [dismissed, setDismissed] = useState(false)
+  const prefersReducedMotion =
+    typeof window !== 'undefined'
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false
 
   const handleDismiss = useCallback(() => {
     setDismissed(true)
@@ -29,7 +33,7 @@ export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
     <div
       className={cn(
         'flex items-start gap-2 rounded-md border border-[#D4951A]/20 bg-[#FEF8ED] px-3 py-2',
-        'animate-in fade-in slide-in-from-top-1 duration-200',
+        !prefersReducedMotion && 'animate-in fade-in slide-in-from-top-1 duration-200',
         className,
       )}
       role="status"

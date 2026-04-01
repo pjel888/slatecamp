@@ -4,6 +4,7 @@ import { useRef, useState, useCallback, useEffect } from 'react'
 import { useDrag } from '@use-gesture/react'
 import { ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
+import { hapticSelect } from '@/lib/quiz/haptics'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -54,7 +55,7 @@ export const SlideToSubmit = ({
   const handleComplete = useCallback(() => {
     if (completed) return
     setCompleted(true)
-    navigator.vibrate?.(15)
+    hapticSelect()
     setTimeout(onSubmit, 200)
   }, [completed, onSubmit])
 
@@ -71,7 +72,7 @@ export const SlideToSubmit = ({
         setOffset(clamped)
 
         if (clamped / maxOffset >= THRESHOLD_PERCENT) {
-          navigator.vibrate?.(10)
+          hapticSelect()
         }
       } else {
         setIsDragging(false)

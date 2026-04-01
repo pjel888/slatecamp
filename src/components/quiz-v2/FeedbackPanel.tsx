@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useRef, lazy, Suspense } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { CheckCircle, ArrowRight, ArrowSquareOut, Lightbulb, ChatCircleDots } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -14,6 +14,12 @@ const SocraticExplorer = lazy(() =>
 
 /** Modes that enable Socratic exploration (learning modes, not timed/exam modes) */
 const SOCRATIC_MODES: QuizMode[] = ['camp', 'focused', 'subject', 'chill']
+
+const ERROR_HEADING_MAP: Record<string, string> = {
+  lack_knowledge: "Here's what to know",
+  careless: 'Watch closely',
+  lack_time: 'You needed more time',
+}
 
 interface FeedbackPanelProps {
   feedback: FeedbackData
@@ -36,12 +42,13 @@ export const FeedbackPanel = ({
   mode,
   failCount = 0,
 }: FeedbackPanelProps) => {
-  const [nextReady, setNextReady] = useState(gatedDelayMs === 0)
-  const [remainingMs, setRemainingMs] = useState(gatedDelayMs)
   const [socraticOpen, setSocraticOpen] = useState(false)
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
-  
+
   const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
+  const feedbackGateActive = useQuizStore((s) => s.feedback.feedbackGateActive)
+  const feedbackGateRemainingMs = useQuizStore((s) => s.feedback.feedbackGateRemainingMs)
+  const startFeedbackGate = useQuizStore((s) => s.startFeedbackGate)
+  const tickFeedbackGate = useQuizStore((s) => s.tickFeedbackGate)
 
   const showSocraticButton =
     !feedback.isCorrect && mode != null && SOCRATIC_MODES.includes(mode)
@@ -50,27 +57,21 @@ export const FeedbackPanel = ({
     !feedback.isCorrect && failCount >= 2 && feedback.rationale != null
 
   useEffect(() => {
-    const isImmediate = gatedDelayMs === 0
-    setNextReady(isImmediate)
-    setRemainingMs(isImmediate ? 0 : gatedDelayMs)
-
-    if (!isImmediate) {
-      const startTime = Date.now()
-      intervalRef.current = setInterval(() => {
-        const elapsed = Date.now() - startTime
-        const left = Math.max(0, gatedDelayMs - elapsed)
-        setRemainingMs(left)
-        if (left <= 0) {
-          setNextReady(true)
-          if (intervalRef.current) clearInterval(intervalRef.current)
-        }
-      }, 50)
-    }
-
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current)
+    if (gatedDelayMs > 0) {
+      startFeedbackGate(gatedDelayMs)
     }
   }, [gatedDelayMs, feedback.questionId])
+
+  useEffect(() => {
+    if (!feedbackGateActive) return
+    const id = setInterval(() => {
+      tickFeedbackGate()
+    }, 100)
+    return () => clearInterval(id)
+  }, [feedbackGateActive])
+
+  const nextReady = !feedbackGateActive || gatedDelayMs === 0
+  const remainingMs = feedbackGateRemainingMs
 
   const selectedOption = question.options.find((o) => o.id === selectedOptionId)
   const correctOption = question.options.find((o) => o.id === feedback.correctOptionId)
@@ -118,9 +119,11 @@ export const FeedbackPanel = ({
         >
           {feedback.isCorrect
             ? 'Correct'
-            : isGeneration && feedback.closeness != null && feedback.closeness > 0.8
-              ? 'Very close'
-              : 'Not quite'}
+            : feedback.errorDiagnostic?.category && ERROR_HEADING_MAP[feedback.errorDiagnostic.category]
+              ? ERROR_HEADING_MAP[feedback.errorDiagnostic.category]
+              : isGeneration && feedback.closeness != null && feedback.closeness > 0.8
+                ? 'Very close'
+                : 'Not quite'}
         </span>
       </div>
 

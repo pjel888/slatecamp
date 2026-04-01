@@ -45,6 +45,7 @@ export const QuizBody = ({
       <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-[#D4DAE3] overflow-y-auto">
         <QuestionColumn
           question={question}
+          mode={config.mode}
         />
       </div>
 

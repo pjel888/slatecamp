@@ -1,10 +1,11 @@
 'use client'
 
-import { X, BookmarkSimple, SquaresFour, Timer } from '@phosphor-icons/react'
+import { X, BookmarkSimple, SquaresFour, Timer, Fire } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { QuizMode, QuizSessionConfig } from '@/types/quiz-config'
 import { MODE_LABELS } from '@/lib/quiz/mode-presets'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 interface QuizHeaderProps {
   config: QuizSessionConfig
@@ -30,6 +31,12 @@ const formatTime = (seconds: number): string => {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
 }
 
+const TIMER_COLOR_CLASSES: Record<string, string> = {
+  normal: 'text-[#4A5568]',
+  warning: 'text-[#D4951A]',
+  critical: 'text-[#D64545]',
+}
+
 export const QuizHeader = ({
   config,
   currentPosition,
@@ -42,8 +49,15 @@ export const QuizHeader = ({
   onOpenPalette,
   timerSlot,
 }: QuizHeaderProps) => {
+  const timerColorState = useQuizStore((s) => s.timer.colorState)
+  const streakCount = useQuizStore((s) => s.streakCount)
+  const streakBroken = useQuizStore((s) => s.streakBroken)
+  const clearStreakBroken = useQuizStore((s) => s.clearStreakBroken)
+
   const progressPercent =
     totalQuestions > 0 ? Math.round((currentPosition / totalQuestions) * 100) : 0
+
+  const halfwayReached = currentPosition === Math.ceil(totalQuestions / 2)
 
   const showTimer =
     config.timer.visible &&
@@ -52,14 +66,6 @@ export const QuizHeader = ({
 
   const displaySeconds =
     config.timer.mode === 'countdown' ? (remainingSeconds ?? 0) : (elapsedSeconds ?? 0)
-
-  const isWarning =
-    config.timer.mode === 'countdown' &&
-    remainingSeconds !== null &&
-    remainingSeconds !== undefined &&
-    config.timer.totalSeconds !== null &&
-    config.timer.totalSeconds > 0 &&
-    remainingSeconds / config.timer.totalSeconds <= 0.1
 
   return (
     <header
@@ -88,7 +94,10 @@ export const QuizHeader = ({
           className="flex-1 h-1.5 rounded-full bg-[#D4DAE3] overflow-hidden"
         >
           <div
-            className="h-full rounded-full bg-[#1B3FC4] transition-[width] duration-300 ease-out"
+            className={cn(
+              'h-full rounded-full bg-[#1B3FC4] transition-[width] duration-300 ease-out',
+              halfwayReached && 'animate-pulse-once',
+            )}
             style={{ width: `${progressPercent}%` }}
             aria-hidden="true"
           />
@@ -103,6 +112,21 @@ export const QuizHeader = ({
         {MODE_LABELS[config.mode]}
       </span>
 
+      {/* Streak counter */}
+      {streakCount > 0 && (
+        <div
+          className={cn(
+            'flex items-center gap-0.5 text-xs font-semibold tabular-nums shrink-0',
+            streakBroken && 'animate-shake',
+          )}
+          aria-label={`Current streak: ${streakCount} correct answers`}
+          onAnimationEnd={streakBroken ? clearStreakBroken : undefined}
+        >
+          <Fire size={14} weight="fill" className="text-[#E8853A]" aria-hidden="true" />
+          <span className="text-[#E8853A]">{streakCount}</span>
+        </div>
+      )}
+
       {/* Timer — pressure-aware slot takes priority, then default */}
       {timerSlot ? (
         timerSlot
@@ -110,7 +134,7 @@ export const QuizHeader = ({
         <div
           className={cn(
             'flex items-center gap-1 text-xs tabular-nums font-medium shrink-0',
-            isWarning ? 'text-[#D64545]' : 'text-[#4A5568]',
+            TIMER_COLOR_CLASSES[timerColorState],
           )}
           aria-label={
             config.timer.mode === 'countdown'

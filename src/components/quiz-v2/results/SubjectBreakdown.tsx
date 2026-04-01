@@ -1,18 +1,10 @@
-import { cn } from '@/lib/utils'
+import { getSubjectColor } from '@/lib/constants/subject-colors'
 import type { EndSessionResult } from '@/types/quiz-config'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 interface SubjectBreakdownProps {
   breakdown: EndSessionResult['subjectBreakdown']
-}
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-const getBarColor = (percent: number): string => {
-  if (percent >= 70) return 'bg-[#2D9F6F]'
-  if (percent >= 50) return 'bg-[#D4951A]'
-  return 'bg-[#D4DAE3]'
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -28,30 +20,48 @@ export const SubjectBreakdown = ({ breakdown }: SubjectBreakdownProps) => {
       </p>
 
       <div className="bg-white rounded-md border border-[#D4DAE3] divide-y divide-[#D4DAE3]">
-        {sorted.map((subject) => (
-          <div key={subject.disciplineId} className="px-4 py-3">
-            <div className="flex items-center justify-between mb-1.5">
-              <span className="text-sm text-[#1A2332] font-medium leading-snug">
-                {subject.disciplineName}
-              </span>
-              <span className="text-xs text-[#4A5568] tabular-nums ml-3 shrink-0">
-                {subject.correct}/{subject.total}
-              </span>
-            </div>
-
-            {/* Bar track */}
+        {sorted.map((subject) => {
+          const colors = getSubjectColor(subject.disciplineId)
+          return (
             <div
-              className="h-1.5 w-full bg-[#F8F7F5] rounded-sm overflow-hidden"
-              role="presentation"
-              aria-label={`${subject.disciplineName}: ${subject.percent}%`}
+              key={subject.disciplineId}
+              className="flex px-4 py-3"
             >
+              {/* Subject accent left border dot */}
               <div
-                className={cn('h-full rounded-sm transition-none', getBarColor(subject.percent))}
-                style={{ width: `${subject.percent}%` }}
+                className="w-0.5 rounded-full shrink-0 mr-3 self-stretch"
+                style={{ backgroundColor: colors.border }}
+                aria-hidden="true"
               />
+
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between mb-1.5">
+                  <span
+                    className="text-sm font-medium leading-snug"
+                    style={{ color: colors.text }}
+                  >
+                    {subject.disciplineName}
+                  </span>
+                  <span className="text-xs text-[#4A5568] tabular-nums ml-3 shrink-0">
+                    {subject.correct}/{subject.total}
+                  </span>
+                </div>
+
+                {/* Bar track */}
+                <div
+                  className="h-1.5 w-full bg-[#F8F7F5] rounded-sm overflow-hidden"
+                  role="presentation"
+                  aria-label={`${subject.disciplineName}: ${subject.percent}%`}
+                >
+                  <div
+                    className="h-full rounded-sm transition-none"
+                    style={{ width: `${subject.percent}%`, backgroundColor: colors.border }}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </div>
   )

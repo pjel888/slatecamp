@@ -95,6 +95,11 @@ export const QuestionPalette = ({
   onJumpTo,
   onClose,
 }: QuestionPaletteProps) => {
+  const prefersReducedMotion =
+    typeof window !== 'undefined'
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false
+
   const [filter, setFilter] = useState<PaletteFilter>('all')
   const [focusedIndex, setFocusedIndex] = useState(0)
   const panelRef = useRef<HTMLDivElement>(null)
@@ -197,7 +202,7 @@ export const QuestionPalette = ({
         className={cn(
           'absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-lg',
           'flex flex-col',
-          'animate-in slide-in-from-right duration-150 ease-out',
+          !prefersReducedMotion && 'animate-in slide-in-from-right duration-150 ease-out',
         )}
         onClick={(e) => e.stopPropagation()}
         onKeyDown={handleKeyDown}

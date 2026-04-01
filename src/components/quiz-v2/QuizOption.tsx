@@ -2,6 +2,7 @@
 
 import { Backspace } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
+import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 export type OptionState = 'default' | 'selected' | 'correct' | 'incorrect'
 
@@ -42,6 +43,7 @@ export const QuizOption = ({
   onToggleEliminate,
   name,
 }: QuizOptionProps) => {
+  const reducedMotion = useReducedMotion()
   const isSelected = state === 'selected' || (state === 'incorrect' && isEliminated) // simplified logic check
 
   return (
@@ -49,7 +51,7 @@ export const QuizOption = ({
       <label
         className={cn(
           'flex items-center gap-3 w-full rounded-md border px-4 py-3 min-h-[52px]',
-          'transition-all duration-150 ease-out',
+          !reducedMotion && 'transition-all duration-150 ease-out',
           STATE_CLASSES[state],
           isDisabled && state === 'default' && 'pointer-events-none opacity-60',
           isEliminated && state === 'default' && 'opacity-50',

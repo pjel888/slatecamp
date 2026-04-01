@@ -14,6 +14,8 @@ import type {
   QuestionForClient,
   QuestionType,
   QuizAnswerState,
+  QuestionStatus,
+  TimerColorState,
   StartSessionResult,
   SubmitAnswerInput,
   EndSessionResult,
@@ -31,6 +33,8 @@ interface TimerState {
   elapsedMs: number
   limitMs: number | null
   isRunning: boolean
+  /** Multi-threshold color state: normal → warning (≤50%) → critical (≤20%) */
+  colorState: TimerColorState
 }
 
 interface FeedbackState {
@@ -46,6 +50,15 @@ interface FeedbackState {
   closeness: number | undefined
   correctAnswer: string | undefined
   questionType: QuestionType | undefined
+  /** Store-level feedback gate — prevents rushing past explanations */
+  feedbackGateActive: boolean
+  feedbackGateRemainingMs: number
+}
+
+interface SettingsState {
+  hapticEnabled: boolean
+  /** Initialized from prefers-reduced-motion, user-overridable */
+  reducedMotion: boolean
 }
 
 interface UIState {
@@ -89,6 +102,14 @@ interface QuizStore {
 
   // UI STATE
   ui: UIState
+
+  // STREAK STATE
+  streakCount: number
+  /** Transient flag — triggers shake animation in QuizHeader, cleared after animation */
+  streakBroken: boolean
+
+  // SETTINGS STATE (persisted)
+  settings: SettingsState
 
   // OFFLINE QUEUE
   pendingSubmissions: SubmitAnswerInput[]
@@ -149,6 +170,26 @@ interface QuizStore {
   enableNextButton: () => void
 
   // -------------------------------------------------------------------------
+  // FEEDBACK GATE ACTIONS
+  // -------------------------------------------------------------------------
+
+  startFeedbackGate: (durationMs: number) => void
+  tickFeedbackGate: () => void
+  clearFeedbackGate: () => void
+
+  // -------------------------------------------------------------------------
+  // STREAK ACTIONS
+  // -------------------------------------------------------------------------
+
+  clearStreakBroken: () => void
+
+  // -------------------------------------------------------------------------
+  // SETTINGS ACTIONS
+  // -------------------------------------------------------------------------
+
+  updateSettings: (partial: Partial<SettingsState>) => void
+
+  // -------------------------------------------------------------------------
   // TIMER ACTIONS
   // -------------------------------------------------------------------------
 
@@ -190,6 +231,7 @@ const defaultTimer = (): TimerState => ({
   elapsedMs: 0,
   limitMs: null,
   isRunning: false,
+  colorState: 'normal',
 })
 
 const defaultFeedback = (): FeedbackState => ({
@@ -204,6 +246,15 @@ const defaultFeedback = (): FeedbackState => ({
   closeness: undefined,
   correctAnswer: undefined,
   questionType: undefined,
+  feedbackGateActive: false,
+  feedbackGateRemainingMs: 0,
+})
+
+const defaultSettings = (): SettingsState => ({
+  hapticEnabled: true,
+  reducedMotion: typeof window !== 'undefined'
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false,
 })
 
 const defaultUI = (): UIState => ({
@@ -226,6 +277,7 @@ const makeAnswerState = (now: number): QuizAnswerState => ({
   timeStartedMs: now,
   timeSpentMs: 0,
   submittedAt: null,
+  questionStatus: 'idle',
 })
 
 // ---------------------------------------------------------------------------
@@ -252,6 +304,10 @@ export const useQuizStore = create<QuizStore>()(
         timer: defaultTimer(),
         feedback: defaultFeedback(),
         ui: defaultUI(),
+
+        streakCount: 0,
+        streakBroken: false,
+        settings: defaultSettings(),
 
         pendingSubmissions: [],
         results: null,
@@ -355,6 +411,9 @@ export const useQuizStore = create<QuizStore>()(
             timer: defaultTimer(),
             feedback: defaultFeedback(),
             ui: defaultUI(),
+            streakCount: 0,
+            streakBroken: false,
+            // settings intentionally NOT reset — persisted across sessions
             pendingSubmissions: [],
             results: null,
           }),
@@ -366,7 +425,11 @@ export const useQuizStore = create<QuizStore>()(
           const prev = answers.get(questionId)
           if (!prev) return
           const next = new Map(answers)
-          next.set(questionId, { ...prev, selectedOptionId: optionId })
+          next.set(questionId, {
+            ...prev,
+            selectedOptionId: optionId,
+            questionStatus: prev.questionStatus === 'idle' ? 'selected' : prev.questionStatus,
+          })
           set({ answers: next })
         },
 
@@ -417,11 +480,22 @@ export const useQuizStore = create<QuizStore>()(
               isCorrect: result.isCorrect,
               timeSpentMs,
               submittedAt: new Date().toISOString(),
+              questionStatus: config?.feedback.timing === 'immediate' ? 'feedback' : 'reviewed',
             })
+
+            // Streak logic: increment on correct (non-lucky-guess), reset on incorrect
+            const prevStreak = get().streakCount
+            const isLuckyGuess = result.errorDiagnostic?.category === 'lucky_guess'
+            const streakUpdate = result.isCorrect && !isLuckyGuess
+              ? { streakCount: prevStreak + 1, streakBroken: false }
+              : !result.isCorrect
+                ? { streakCount: 0, streakBroken: false } // reset both — counter hidden when 0
+                : {} // lucky guess correct — no streak change
 
             set({
               answers: updatedAnswers,
               status: config?.feedback.timing === 'immediate' ? 'feedback' : 'active',
+              ...streakUpdate,
             })
 
             if (config?.feedback.timing === 'immediate') {
@@ -572,14 +646,25 @@ export const useQuizStore = create<QuizStore>()(
               closeness: data.closeness,
               correctAnswer: data.correctAnswer,
               questionType: data.questionType,
+              feedbackGateActive: false,
+              feedbackGateRemainingMs: 0,
             },
           }),
 
-        hideFeedback: () =>
-          set({
-            status: 'active',
-            feedback: defaultFeedback(),
-          }),
+        hideFeedback: () => {
+          // Set the current question's status to 'reviewed' before clearing feedback
+          const { feedback, answers } = get()
+          if (feedback.questionId) {
+            const prev = answers.get(feedback.questionId)
+            if (prev) {
+              const next = new Map(answers)
+              next.set(feedback.questionId, { ...prev, questionStatus: 'reviewed' })
+              set({ status: 'active', feedback: defaultFeedback(), answers: next })
+              return
+            }
+          }
+          set({ status: 'active', feedback: defaultFeedback() })
+        },
 
         enableNextButton: () =>
           set((state) => ({
@@ -597,6 +682,7 @@ export const useQuizStore = create<QuizStore>()(
               elapsedMs: 0,
               limitMs: limitMs ?? get().timer.limitMs,
               isRunning: true,
+              colorState: 'normal',
             },
             status: 'active',
           })
@@ -627,7 +713,7 @@ export const useQuizStore = create<QuizStore>()(
           // Check countdown expiry
           if (timer.limitMs !== null && nextElapsed >= timer.limitMs) {
             set({
-              timer: { ...timer, elapsedMs: timer.limitMs, isRunning: false },
+              timer: { ...timer, elapsedMs: timer.limitMs, isRunning: false, colorState: 'critical' },
               status: 'submitting',
             })
             const sid = get().sessionId
@@ -652,7 +738,18 @@ export const useQuizStore = create<QuizStore>()(
             return
           }
 
-          set({ timer: { ...timer, elapsedMs: nextElapsed } })
+          // Compute multi-threshold color state (blueprint: warning ≤50%, critical ≤20%)
+          let colorState: TimerColorState = 'normal'
+          if (timer.limitMs !== null && timer.limitMs > 0) {
+            const percentRemaining = (timer.limitMs - nextElapsed) / timer.limitMs
+            if (percentRemaining <= 0.20) {
+              colorState = 'critical'
+            } else if (percentRemaining <= 0.50) {
+              colorState = 'warning'
+            }
+          }
+
+          set({ timer: { ...timer, elapsedMs: nextElapsed, colorState } })
         },
 
         // ── UI actions ────────────────────────────────────────────────────────
@@ -705,6 +802,58 @@ export const useQuizStore = create<QuizStore>()(
           get().goToQuestion(currentIndex)
         },
 
+        // ── Feedback gate actions ─────────────────────────────────────────────
+
+        startFeedbackGate: (durationMs) =>
+          set((state) => ({
+            feedback: {
+              ...state.feedback,
+              feedbackGateActive: true,
+              feedbackGateRemainingMs: durationMs,
+              nextButtonEnabled: false,
+            },
+          })),
+
+        tickFeedbackGate: () => {
+          const { feedback } = get()
+          if (!feedback.feedbackGateActive) return
+          const nextRemaining = Math.max(0, feedback.feedbackGateRemainingMs - 100)
+          if (nextRemaining <= 0) {
+            set((state) => ({
+              feedback: {
+                ...state.feedback,
+                feedbackGateActive: false,
+                feedbackGateRemainingMs: 0,
+                nextButtonEnabled: true,
+              },
+            }))
+          } else {
+            set((state) => ({
+              feedback: { ...state.feedback, feedbackGateRemainingMs: nextRemaining },
+            }))
+          }
+        },
+
+        clearFeedbackGate: () =>
+          set((state) => ({
+            feedback: {
+              ...state.feedback,
+              feedbackGateActive: false,
+              feedbackGateRemainingMs: 0,
+            },
+          })),
+
+        // ── Streak actions ───────────────────────────────────────────────────
+
+        clearStreakBroken: () => set({ streakBroken: false }),
+
+        // ── Settings actions ─────────────────────────────────────────────────
+
+        updateSettings: (partial) =>
+          set((state) => ({
+            settings: { ...state.settings, ...partial },
+          })),
+
         // ── Results / offline actions ─────────────────────────────────────────
 
         endSession: (result) =>
@@ -755,6 +904,8 @@ export const useQuizStore = create<QuizStore>()(
           answers: Array.from(state.answers.entries()),
           timer: state.timer,
           pendingSubmissions: state.pendingSubmissions,
+          settings: state.settings,
+          streakCount: state.streakCount,
         }),
         // Re-hydrate answers from entries array back to Map
         merge: (persisted, current) => {
@@ -763,7 +914,10 @@ export const useQuizStore = create<QuizStore>()(
           return {
             ...current,
             ...(p as Partial<QuizStore>),
-            answers: rawAnswers ? new Map(rawAnswers) : new Map(),
+            // Patch hydrated answers: ensure questionStatus exists (migration for pre-existing sessions)
+            answers: rawAnswers
+              ? new Map(rawAnswers.map(([k, v]) => [k, { ...v, questionStatus: v.questionStatus ?? 'idle' }]))
+              : new Map(),
           }
         },
       },

@@ -9,7 +9,7 @@ const VALID_MODES: QuizMode[] = [
 ]
 
 // Modes that need the topic picker (slide 2)
-const TOPIC_PICKER_MODES: QuizMode[] = ['subject', 'focused', 'custom']
+const TOPIC_PICKER_MODES: QuizMode[] = ['camp', 'chill', 'subject', 'focused', 'custom', 'storm', 'extended']
 
 interface SetupPageProps {
   params: Promise<{ mode: string }>

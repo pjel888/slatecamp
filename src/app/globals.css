@@ -60,6 +60,18 @@
   --color-primary-800: var(--primary-800);
   --color-primary-900: var(--primary-900);
 
+  /* ── Quiz semantic state utilities ── */
+  --color-state-correct: var(--color-state-correct);
+  --color-state-correct-bg: var(--color-state-correct-bg);
+  --color-state-incorrect: var(--color-state-incorrect);
+  --color-state-incorrect-bg: var(--color-state-incorrect-bg);
+  --color-state-active: var(--color-state-active);
+  --color-state-active-bg: var(--color-state-active-bg);
+  --color-state-review: var(--color-state-review);
+  --color-state-review-bg: var(--color-state-review-bg);
+  --color-state-unanswered: var(--color-state-unanswered);
+  --color-state-unanswered-bg: var(--color-state-unanswered-bg);
+
   --color-success: var(--success);
   --color-success-50: var(--success-50);
   --color-success-100: var(--success-100);
@@ -296,6 +308,18 @@
   --amber: #D4951A;              /* = --warning */
   --surface-card: #FFFFFF;       /* = --card */
   --surface-light: #F8F7F5;      /* warm white page bg */
+
+  /* Campfire — Quiz semantic state tokens (H6 reconciliation: brand values, not blueprint generic) */
+  --color-state-correct:     #2D9F6F;   /* Emerald — success/correct answer */
+  --color-state-correct-bg:  #EDFAF4;   /* Emerald 50 — correct answer card bg */
+  --color-state-incorrect:   #D64545;   /* Warm Red — incorrect answer */
+  --color-state-incorrect-bg:#FDF0F0;   /* Destructive 50 — incorrect card bg */
+  --color-state-active:      #1B3FC4;   /* Camp Cobalt — selected/active */
+  --color-state-active-bg:   #EEF2FC;   /* Camp Cobalt 50 — selected card bg */
+  --color-state-review:      #D4951A;   /* Amber — flagged for review */
+  --color-state-review-bg:   #FEF8ED;   /* Warning 50 — flagged card bg */
+  --color-state-unanswered:  #8896A7;   /* Ink Tertiary — neutral/untouched */
+  --color-state-unanswered-bg:#F8F7F5;  /* Surface Light — neutral card bg */
 
   /* Campfire — Card surfaces */
   --card-bg: #ffffff;
@@ -696,6 +720,18 @@ a[data-pending] {
 }
 .animate-in.shake {
   animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.animate-shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes pulse-once {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+.animate-pulse-once {
+  animation: pulse-once 0.6s ease-in-out 1;
 }
 
 @keyframes pulse-glow {

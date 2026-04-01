@@ -78,7 +78,8 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
           isFlagged: false,
           timeStartedMs: 0,
           timeSpentMs: 0,
-          submittedAt: null
+          submittedAt: null,
+          questionStatus: a.correct !== null ? 'reviewed' : 'idle',
         })
       }
     })
