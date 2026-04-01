@@ -15,6 +15,7 @@ import { FlarPanel } from './FlarPanel'
 import { BhlPanel } from './BhlPanel'
 import { FirewallPanel } from './FirewallPanel'
 import { ProposedBuildingPanel } from './ProposedBuildingPanel'
+import { SetbackInfoPanel } from './SetbackInfoPanel'
 import { SettingsTab } from './tabs/SettingsTab'
 import type { InputTab } from '../hooks/usePanelState'
 
@@ -63,6 +64,7 @@ export function InputPanel({ activeTab, onTabChange }: InputPanelProps) {
           <BhlPanel />
           <hr className="border-border" />
           <ProposedBuildingPanel />
+          <SetbackInfoPanel />
           <FirewallPanel />
         </div>
       </TabsContent>

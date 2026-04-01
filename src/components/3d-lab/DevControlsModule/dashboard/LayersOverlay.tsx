@@ -1,12 +1,13 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { Pin, PinOff } from 'lucide-react'
 import { useDevControlsStore } from '../stores/useDevControlsStore'
 import type { LayerKey } from '@/lib/pd1096/types'
 
 // ─── Layers Overlay ────────────────────────────────────────────────────────
 // Floating panel below the viewport toolbar with layer toggle checkboxes.
-// Closes on click outside. Glass-morphism background.
+// Pin icon keeps the panel open (disables click-outside close).
 
 const LAYER_OPTIONS: { key: LayerKey; label: string; color: string }[] = [
   { key: 'setbacks', label: 'Setback Zones', color: '#E74C3C' },
@@ -16,7 +17,6 @@ const LAYER_OPTIONS: { key: LayerKey; label: string; color: string }[] = [
   { key: 'bhl', label: 'BHL Ceiling', color: '#E8853A' },
   { key: 'flar', label: 'FLAR Ceiling', color: '#2D9F6F' },
   { key: 'rrow', label: 'Road & Grid', color: '#6B7280' },
-  // Context buildings removed — road-only context now
   { key: 'firewall', label: 'Firewall Markers', color: '#FF6B35' },
 ]
 
@@ -28,15 +28,17 @@ export function LayersOverlay({ onClose }: LayersOverlayProps) {
   const visibleLayers = useDevControlsStore((s) => s.visibleLayers)
   const toggleLayer = useDevControlsStore((s) => s.toggleLayer)
   const ref = useRef<HTMLDivElement>(null)
+  const [pinned, setPinned] = useState(false)
 
-  // Close on click outside
+  // Close on click outside — only when not pinned
   useEffect(() => {
+    if (pinned) return
+
     function handleClick(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         onClose()
       }
     }
-    // Delay to prevent immediate close from the toggle click
     const timer = setTimeout(() => {
       document.addEventListener('mousedown', handleClick)
     }, 0)
@@ -44,7 +46,7 @@ export function LayersOverlay({ onClose }: LayersOverlayProps) {
       clearTimeout(timer)
       document.removeEventListener('mousedown', handleClick)
     }
-  }, [onClose])
+  }, [onClose, pinned])
 
   const handleShowAll = () => {
     LAYER_OPTIONS.forEach((opt) => {
@@ -62,9 +64,24 @@ export function LayersOverlay({ onClose }: LayersOverlayProps) {
       ref={ref}
       className="mt-2 w-[220px] animate-in fade-in zoom-in-95 rounded-lg border border-border bg-popover p-3 shadow-lg"
     >
-      <p className="mb-2 font-mono text-[9px] font-medium uppercase tracking-widest text-muted-foreground">
-        Layers
-      </p>
+      {/* Header with pin toggle */}
+      <div className="mb-2 flex items-center justify-between">
+        <span className="font-mono text-[9px] font-medium uppercase tracking-widest text-muted-foreground">
+          Layers
+        </span>
+        <button
+          onClick={() => setPinned(!pinned)}
+          aria-label={pinned ? 'Unpin layers panel' : 'Pin layers panel'}
+          title={pinned ? 'Unpin (click outside to close)' : 'Pin open'}
+          className={`flex size-6 items-center justify-center rounded-sm transition-colors duration-150 ${
+            pinned
+              ? 'bg-primary/10 text-primary'
+              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+          }`}
+        >
+          {pinned ? <Pin size={12} /> : <PinOff size={12} />}
+        </button>
+      </div>
 
       <div className="space-y-1">
         {LAYER_OPTIONS.map((opt) => {
