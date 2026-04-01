@@ -14,7 +14,9 @@ interface PanelState {
   activeTab: InputTab
 }
 
-const STORAGE_KEY = 'slatecamp-3dlab-panels'
+// Version key — bump to invalidate stale localStorage (e.g. after layout fixes)
+const STORAGE_VERSION = 2
+const STORAGE_KEY = `slatecamp-3dlab-panels-v${STORAGE_VERSION}`
 
 const DEFAULT_STATE: PanelState = {
   leftCollapsed: false,

@@ -106,7 +106,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                   <div>
                     <DashboardHeader userId={user.id} />
                   </div>
-                  <main className='flex-1 min-h-0 overflow-y-auto bg-page-bg'>
+                  <main className='flex-1 min-h-0 min-w-0 overflow-y-auto bg-page-bg'>
                     <Suspense fallback={
                       <div className="flex flex-col gap-3 p-2 animate-in fade-in-0 duration-100">
                         <div className="h-7 w-48 rounded bg-border-default/40 animate-pulse" />

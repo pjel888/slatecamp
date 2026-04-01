@@ -1,8 +1,10 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useCallback } from 'react'
 import { useDevControlsStore } from '../stores/useDevControlsStore'
 import type { CameraPreset } from '@/lib/pd1096/types'
+
+const ISO_CYCLE: CameraPreset[] = ['iso-ne', 'iso-nw', 'iso-se', 'iso-sw']
 
 // ─── Keyboard Shortcuts Hook ───────────────────────────────────────────────
 // Registers all 3D Lab keyboard shortcuts.
@@ -16,10 +18,17 @@ interface KeyboardShortcutActions {
 }
 
 export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
+  const cameraPreset = useDevControlsStore((s) => s.cameraPreset)
   const setCameraPreset = useDevControlsStore((s) => s.setCameraPreset)
   const toggleLayer = useDevControlsStore((s) => s.toggleLayer)
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const setShowDimensions = useDevControlsStore((s) => s.setShowDimensions)
+
+  const cycleIso = useCallback(() => {
+    const idx = ISO_CYCLE.indexOf(cameraPreset)
+    const next = idx >= 0 ? ISO_CYCLE[(idx + 1) % ISO_CYCLE.length] : ISO_CYCLE[0]
+    setCameraPreset(next)
+  }, [cameraPreset, setCameraPreset])
 
   useEffect(() => {
     function handler(e: KeyboardEvent) {
@@ -60,7 +69,7 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
           break
         case '4':
           e.preventDefault()
-          setCameraPreset('iso-ne')
+          cycleIso()
           break
         case 'd':
         case 'D':

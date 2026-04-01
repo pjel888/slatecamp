@@ -1,21 +1,29 @@
 'use client'
 
-// ─── Input Panel (Left Panel — Tabbed) ─────────────────────────────────────
-// Replaces the single-scroll LeftToolbar with 3 organized tabs:
-//   Tab 1 (Lot): Presets + Lot Dimensions + Zoning Classification
-//   Tab 2 (Building): FLAR + BHL + Proposed Building + Firewall
-//   Tab 3 (Settings): Display toggles, export
+// ─── Input Panel (Left Panel — Tabbed, Dual-Column) ────────────────────────
+// Two-column grid layout per tab:
+//   Left column: interactive controls (sliders, dropdowns, toggles)
+//   Right column: information readouts (metrics, tables, summaries)
+// Settings tab remains single-column.
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Ruler, Building2, Settings } from 'lucide-react'
+
+// Split components — controls (left) and info (right)
+import { LotControls } from './splits/LotControls'
+import { LotSummary } from './splits/LotSummary'
+import { ZoneSelector } from './splits/ZoneSelector'
+import { ZoneTableRef } from './splits/ZoneTableRef'
+import { FlarControls } from './splits/FlarControls'
+import { FlarInfo } from './splits/FlarInfo'
+import { BhlControls } from './splits/BhlControls'
+import { BhlInfo } from './splits/BhlInfo'
+
+// Full-width components (not split)
 import { PresetSelector } from './PresetSelector'
-import { LotInputPanel } from './LotInputPanel'
-import { ZoningInputPanel } from './ZoningInputPanel'
-import { FlarPanel } from './FlarPanel'
-import { BhlPanel } from './BhlPanel'
-import { FirewallPanel } from './FirewallPanel'
 import { ProposedBuildingPanel } from './ProposedBuildingPanel'
 import { SetbackInfoPanel } from './SetbackInfoPanel'
+import { FirewallPanel } from './FirewallPanel'
 import { SettingsTab } from './tabs/SettingsTab'
 import type { InputTab } from '../hooks/usePanelState'
 
@@ -46,30 +54,58 @@ export function InputPanel({ activeTab, onTabChange }: InputPanelProps) {
         </TabsTrigger>
       </TabsList>
 
-      {/* Tab 1: Lot — Site Parameters */}
+      {/* ─── Tab 1: Lot — Dual Column ─── */}
       <TabsContent value="lot" className="flex-1 overflow-y-auto p-3">
-        <div className="space-y-4">
-          <PresetSelector />
-          <hr className="border-border" />
-          <LotInputPanel />
-          <ZoningInputPanel />
+        {/* Presets span full width */}
+        <PresetSelector />
+        <hr className="my-3 border-border" />
+
+        {/* Two-column grid: controls left, info right */}
+        <div className="grid grid-cols-2 gap-4">
+          {/* Left: Lot sliders */}
+          <div className="space-y-4">
+            <LotControls />
+            <ZoneSelector />
+          </div>
+          {/* Right: Lot summary + zoning table */}
+          <div className="space-y-4">
+            <LotSummary />
+            <ZoneTableRef />
+          </div>
         </div>
       </TabsContent>
 
-      {/* Tab 2: Building — Proposed Building & Code Limits */}
+      {/* ─── Tab 2: Building — Dual Column ─── */}
       <TabsContent value="building" className="flex-1 overflow-y-auto p-3">
-        <div className="space-y-4">
-          <FlarPanel />
-          <hr className="border-border" />
-          <BhlPanel />
-          <hr className="border-border" />
-          <ProposedBuildingPanel />
-          <SetbackInfoPanel />
-          <FirewallPanel />
+        <div className="grid grid-cols-2 gap-4">
+          {/* Left: FLAR + BHL sliders */}
+          <div className="space-y-4">
+            <FlarControls />
+            <hr className="border-border" />
+            <BhlControls />
+          </div>
+          {/* Right: FLAR + BHL metrics */}
+          <div className="space-y-4">
+            <FlarInfo />
+            <BhlInfo />
+          </div>
+        </div>
+
+        <hr className="my-3 border-border" />
+
+        {/* Building dimensions + setbacks — dual column */}
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-4">
+            <ProposedBuildingPanel />
+            <FirewallPanel />
+          </div>
+          <div>
+            <SetbackInfoPanel />
+          </div>
         </div>
       </TabsContent>
 
-      {/* Tab 3: Settings */}
+      {/* ─── Tab 3: Settings — Single Column ─── */}
       <TabsContent value="settings" className="flex-1 overflow-y-auto p-3">
         <SettingsTab />
       </TabsContent>
