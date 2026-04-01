@@ -90,34 +90,57 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
 
   // ── STEP 11: GFA (Gross Floor Area) ───────────────────────────────
   const flarData = lookupFLAR(zoning.zoneClass)
-  const flar = flarData.mid
+  // Use flarOverride as-is when provided (allows experimentation beyond zone range)
+  const flar = input.flarOverride !== undefined
+    ? Math.max(0.01, input.flarOverride)
+    : flarData.mid
   const gfa = tla * flar
 
-  // ── STEP 12: TGFA (Total Gross Floor Area) ────────────────────────
-  const tgfaMultiplier = lookupTGFAMultiplier(zoning.zoneClass)
-  const tgfa = gfa * tgfaMultiplier
-
-  // ── STEP 13: BHL (Building Height Limit) ──────────────────────────
-  // Governing BHL = min(zoning BHL, RROW-based BHL)
+  // ── STEP 12: BHL (Building Height Limit) ──────────────────────────
+  // BHL must be computed BEFORE TGFA because it feeds into BHL-based TGFA.
+  // Governing BHL = min(zoning BHL, RROW-based BHL), or custom override.
   const zoningBhlStoreys = table.bhlStoreys
   const rrowBhlStoreys = lookupRrowBhl(rrow.width)
-  const governingBhlStoreys = Math.min(zoningBhlStoreys, rrowBhlStoreys)
-  const bhlSource: 'zoning' | 'rrow' = zoningBhlStoreys <= rrowBhlStoreys ? 'zoning' : 'rrow'
+  const computedBhlStoreys = Math.min(zoningBhlStoreys, rrowBhlStoreys)
+
+  const hasCustomBhl = input.bhlOverrideStoreys !== undefined && input.bhlOverrideStoreys > 0
+  const governingBhlStoreys = hasCustomBhl ? input.bhlOverrideStoreys! : computedBhlStoreys
+  const bhlSource: 'zoning' | 'rrow' | 'custom' = hasCustomBhl ? 'custom'
+    : zoningBhlStoreys <= rrowBhlStoreys ? 'zoning' : 'rrow'
   const bhlMeters = governingBhlStoreys * building.floorHeight
 
-  // ── STEP 14: AMVB (Allowable Maximum Volume of Building) ──────────
-  // AMVB_initial = AMBF × BHL_meters
+  // ── STEP 13: AMVB (Allowable Maximum Volume of Building) ──────────
+  // AMVB = AMBF × BHL — the absolute 3D boundary per NBCP.
   const amvbInitial = ambf * bhlMeters
   // ⚠️ AUDIT FLAG: Angular plane volume reduction not fully specified.
-  // tan(θ) = H / (S + ½ × RROW) — θ varies by zone and RROW width.
-  // Only one reference value available: Com-3 / 14m RROW → θ ≈ 69.5°.
-  // AMVB_final is set to AMVB_initial until full coefficient table is verified.
   const amvbFinal = amvbInitial
+
+  // ── STEP 14: Dual-Method TGFA (Most Restrictive Governs) ─────────
+  // Method 1: FLAR-based — TGFA = GFA × multiplier (Table VII.G.1)
+  const tgfaMultiplier = lookupTGFAMultiplier(zoning.zoneClass)
+  const tgfaByFlar = gfa * tgfaMultiplier
+
+  // Method 2: BHL-based — TGFA = BHL (storeys) × AMBF (Table VII.1)
+  // This is the floor area that fits within the AMVB envelope.
+  const tgfaByBhl = governingBhlStoreys * ambf
+
+  // The NBCP mandates: adopt the LOWER (more restrictive) result.
+  // "The Allowable Maximum TGFA should not exceed the AMVB."
+  const tgfa = Math.min(tgfaByFlar, tgfaByBhl)
+  const tgfaSource: 'flar' | 'bhl' = tgfaByFlar <= tgfaByBhl ? 'flar' : 'bhl'
 
   // ── Proposed building metrics ─────────────────────────────────────
   const proposedFootprint = building.proposedFootprintWidth * building.proposedFootprintDepth
   const proposedGFA = proposedFootprint * building.proposedStoreys
   const proposedHeight = building.proposedStoreys * building.floorHeight
+
+  // ── Max compliant floors — capped by BOTH TGFA and BHL ───────────
+  // TGFA cap: how many floors fit within the governing TGFA
+  const maxFloorsByTgfa = proposedFootprint > 0
+    ? Math.floor(tgfa / proposedFootprint)
+    : 0
+  // BHL cap: can't exceed the governing BHL storeys
+  const maxCompliantFloors = Math.min(maxFloorsByTgfa, governingBhlStoreys)
 
   // ── STEP 15: Compliance checks ────────────────────────────────────
   const psoActual = tla > 0 ? ambf / tla : 0
@@ -165,6 +188,16 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
       excess: Math.max(0, proposedGFA - tgfa),
     },
     {
+      id: 'amvb',
+      label: 'Building Volume (AMVB)',
+      required: amvbFinal,
+      actual: proposedFootprint * proposedHeight,
+      unit: 'cu.m',
+      compliant: (proposedFootprint * proposedHeight) <= amvbFinal + FLOAT_TOLERANCE,
+      codeReference: CITATIONS.amvb,
+      excess: Math.max(0, (proposedFootprint * proposedHeight) - amvbFinal),
+    },
+    {
       id: 'floorHeight',
       label: 'Floor-to-Floor Height',
       required: 2.70,
@@ -195,9 +228,13 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
     usa,
     maca,
     gfa,
+    tgfaByFlar,
+    tgfaByBhl,
     tgfa,
+    tgfaSource,
     flar,
     proposedGFA,
+    maxCompliantFloors,
     bhlMeters,
     bhlStoreys: governingBhlStoreys,
     bhlSource,

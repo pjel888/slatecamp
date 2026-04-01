@@ -24,6 +24,9 @@ export function AMBFFootprintLayer() {
     opacity: 0.20,
     side: THREE.DoubleSide,
     depthWrite: false,
+    polygonOffset: true,
+    polygonOffsetFactor: -5,
+    polygonOffsetUnits: -5,
   }), [])
 
   if (buildableW <= 0 || buildableD <= 0) return null

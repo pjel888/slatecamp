@@ -34,12 +34,17 @@ export function SetbackZones() {
     })
   }
 
+  // polygonOffset pushes setback fragments behind in depth buffer,
+  // preventing z-fighting with the lot surface at Y=0.100 vs Y=0.101.
   const material = useMemo(() => new THREE.MeshStandardMaterial({
     color: COLOR.SETBACK,
     transparent: true,
     opacity: OPACITY.SETBACK_ZONE,
     side: THREE.DoubleSide,
     depthWrite: false,
+    polygonOffset: true,
+    polygonOffsetFactor: -1,
+    polygonOffsetUnits: -1,
   }), [])
 
   const y = GEOMETRY_Y.SETBACK_ZONE

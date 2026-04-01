@@ -6,8 +6,9 @@ import * as THREE from 'three'
 import { useDevControlsStore } from '../../stores/useDevControlsStore'
 import { GEOMETRY_Y, COLOR, OPACITY } from '../constants'
 
-// Buildable envelope — 3D volume showing the binding AMBF × BHL.
-// Solid cobalt box with white edges. Transparent to see internal layers.
+// AMBF Envelope — transparent cobalt 3D box showing the binding AMBF volume.
+// This is the allowable building footprint extruded to BHL height.
+// Toggled by the 'ambf' layer key.
 
 export function BuildableEnvelope() {
   const setbacks = useDevControlsStore((s) => s.result.setbacks.effective)

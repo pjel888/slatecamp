@@ -3,8 +3,11 @@
 // Computes minimum setbacks per PD 1096 IRR:
 //   Table VIII.2 — Residential zones
 //   Table VIII.3 — Commercial/Industrial zones (RROW-based)
-//   Section 804.6 — Incremental setback (+0.30m per storey above 2, cap 14)
 //   Section 704.4c — Firewall adjacency (zeroes affected side)
+//
+// NOTE: §804.6 incremental setback (+0.30m/storey) has been removed from
+// the base computation. It may be reintroduced as a dedicated stepped-massing
+// feature in a future module.
 
 import type { ZoneClass, ZoningParams, BuildingParams, PerSideSetbacks, SetbackResult } from './types'
 import type { RROWParams } from './types'
@@ -43,49 +46,33 @@ function getBaseSetbacks(
   return { front: c.front, side: c.side, rear: c.rear, note: rrowNote }
 }
 
-// ─── Incremental setback — §804.6 ──────────────────────────────────────────
-// +0.30m per storey above 2, capped at storey 14.
-// Applied to side and rear setbacks only (front is not incremented).
-
-function computeIncrement(proposedStoreys: number): number {
-  const cappedStoreys = Math.min(proposedStoreys, 14)
-  return 0.30 * Math.max(0, cappedStoreys - 2)
-}
-
 // ─── Main computation ───────────────────────────────────────────────────────
 
 export function computeSetbacks(
   zoning: ZoningParams,
-  building: BuildingParams,
+  _building: BuildingParams, // retained for signature compatibility; not used
   rrow: RROWParams,
 ): SetbackResult {
   const { zoneClass, firewallActive, firewallSides } = zoning
 
-  // Step 1: Base setbacks from table lookup
+  // Step 1: Base setbacks from table lookup — static per zone/RROW
   const base = getBaseSetbacks(zoneClass, rrow.width)
 
-  // Step 2: Incremental adjustment per §804.6
-  const increment = computeIncrement(building.proposedStoreys)
-
-  // Step 3: Build effective setbacks (base + increment for side/rear)
+  // Step 2: Effective = base (no incremental adjustment)
   const effective: PerSideSetbacks = {
     front: base.front,
-    rear: base.rear + increment,
-    left: base.side + increment,
-    right: base.side + increment,
+    rear: base.rear,
+    left: base.side,
+    right: base.side,
   }
 
-  // Step 4: Firewall adjacency — zero setback on firewalled sides (§704.4c)
+  // Step 3: Firewall adjacency — zero setback on firewalled sides (§704.4c)
   let note = base.note
   if (firewallActive && firewallSides.length > 0) {
     for (const side of firewallSides) {
       effective[side] = 0
     }
     note += ` | Firewall active on ${firewallSides.join(', ')} — setback = 0`
-  }
-
-  if (increment > 0) {
-    note += ` | §804.6 increment +${increment.toFixed(2)}m (${Math.min(building.proposedStoreys, 14)} storeys)`
   }
 
   return {
@@ -95,7 +82,7 @@ export function computeSetbacks(
       left: base.side,
       right: base.side,
     },
-    incremental: increment,
+    incremental: 0, // incremental removed — always 0
     effective,
     note,
   }

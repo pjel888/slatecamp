@@ -5,6 +5,26 @@ import { useDevControlsStore } from '../stores/useDevControlsStore'
 export function ComplianceScorecard() {
   const checks = useDevControlsStore((s) => s.result.checks)
   const overallCompliant = useDevControlsStore((s) => s.result.overallCompliant)
+  const fpW = useDevControlsStore((s) => s.building.proposedFootprintWidth)
+  const fpD = useDevControlsStore((s) => s.building.proposedFootprintDepth)
+  const setbacks = useDevControlsStore((s) => s.result.setbacks.effective)
+  const lotW = useDevControlsStore((s) => s.lot.width)
+  const lotD = useDevControlsStore((s) => s.lot.depth)
+
+  // Check if the proposed footprint visually overflows the setback boundaries
+  const buildableW = lotW - setbacks.left - setbacks.right
+  const buildableD = lotD - setbacks.front - setbacks.rear
+  const setbackOverflowW = fpW > buildableW
+  const setbackOverflowD = fpD > buildableD
+  const hasSetbackOverflow = setbackOverflowW || setbackOverflowD
+
+  // FLAR/TGFA violation — proposed GFA exceeds allowable
+  const proposedGFA = useDevControlsStore((s) => s.result.proposedGFA)
+  const tgfa = useDevControlsStore((s) => s.result.tgfa)
+  const flar = useDevControlsStore((s) => s.result.flar)
+  const maxFloors = useDevControlsStore((s) => s.result.maxCompliantFloors)
+  const proposedFloors = useDevControlsStore((s) => s.building.proposedStoreys)
+  const hasFlarViolation = proposedGFA > tgfa + 0.01
 
   return (
     <div>
@@ -61,6 +81,37 @@ export function ComplianceScorecard() {
           </div>
         ))}
       </div>
+
+      {/* Setback Non-Compliant warning — shown when footprint overflows setback boundaries */}
+      {hasSetbackOverflow && (
+        <div className="mt-2 rounded-sm border border-[#D4951A]/30 bg-[#FEF8ED] p-2">
+          <div className="flex items-center gap-1.5 mb-1">
+            <div className="h-2 w-2 rounded-full bg-[#D4951A]" />
+            <span className="text-[10px] font-medium text-[#D4951A]">SETBACK NON-COMPLIANT</span>
+          </div>
+          <p className="text-[9px] text-[#4A5568] leading-relaxed">
+            Proposed footprint ({fpW.toFixed(1)}m × {fpD.toFixed(1)}m) exceeds the setback-limited buildable area ({buildableW.toFixed(1)}m × {buildableD.toFixed(1)}m).
+            {setbackOverflowW && ` Width exceeds by ${(fpW - buildableW).toFixed(1)}m.`}
+            {setbackOverflowD && ` Depth exceeds by ${(fpD - buildableD).toFixed(1)}m.`}
+          </p>
+          <p className="mt-1 font-mono text-[8px] text-[#8896A7]">PD 1096 IRR Rule VIII, Sec. 804 — Minimum Setback Requirements</p>
+        </div>
+      )}
+
+      {/* FLAR Limit Exceeded warning */}
+      {hasFlarViolation && (
+        <div className="mt-2 rounded-sm border border-[#D4951A]/30 bg-[#FEF8ED] p-2">
+          <div className="flex items-center gap-1.5 mb-1">
+            <div className="h-2 w-2 rounded-full bg-[#D4951A]" />
+            <span className="text-[10px] font-medium text-[#D4951A]">FLAR LIMIT EXCEEDED</span>
+          </div>
+          <p className="text-[9px] text-[#4A5568] leading-relaxed">
+            Proposed GFA ({proposedGFA.toFixed(0)} sqm) exceeds the allowable TGFA ({tgfa.toFixed(0)} sqm) at FLAR {flar.toFixed(2)}.
+            Maximum compliant floors: {maxFloors}F. Currently proposing {proposedFloors}F — reduce by {proposedFloors - maxFloors} floor{proposedFloors - maxFloors !== 1 ? 's' : ''}.
+          </p>
+          <p className="mt-1 font-mono text-[8px] text-[#8896A7]">PD 1096 IRR Rule VII, Sec. 705, Table VII.G.1</p>
+        </div>
+      )}
     </div>
   )
 }

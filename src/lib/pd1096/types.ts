@@ -21,7 +21,7 @@ export type LabMode = 'sandbox' | 'exam'
 export type CameraPreset = 'orbit' | 'top' | 'front' | 'isometric'
 
 export type LayerKey =
-  | 'setbacks' | 'ambf' | 'pso' | 'bhl'
+  | 'setbacks' | 'ambf' | 'pso' | 'bhl' | 'flar'
   | 'floors' | 'isa' | 'usa' | 'tosl'
   | 'building' | 'rrow' | 'firewall'
 
@@ -57,6 +57,8 @@ export interface DevControlsInput {
   zoning: ZoningParams
   building: BuildingParams
   rrow: RROWParams
+  flarOverride?: number   // Optional user-adjusted FLAR within zone's allowed range
+  bhlOverrideStoreys?: number  // Optional custom BHL (local ordinance override)
 }
 
 // ─── OUTPUT TYPES ───────────────────────────────────────────────────────────
@@ -108,14 +110,18 @@ export interface DevControlsResult {
 
   // ─── Floor Area ─────────────────────────────────────────────────────
   gfa: number             // sqm — Gross Floor Area (FLAR × TLA)
-  tgfa: number            // sqm — Total Gross Floor Area (GFA × multiplier)
+  tgfaByFlar: number      // sqm — FLAR-based TGFA (GFA × multiplier)
+  tgfaByBhl: number       // sqm — BHL-based TGFA (BHL storeys × AMBF)
+  tgfa: number            // sqm — governing TGFA = min(tgfaByFlar, tgfaByBhl)
+  tgfaSource: 'flar' | 'bhl'  // which method is more restrictive
   flar: number            // ratio used (midpoint of range)
   proposedGFA: number     // sqm — proposed footprint × floors
+  maxCompliantFloors: number  // max floors before TGFA or BHL violation
 
   // ─── Volumetric ─────────────────────────────────────────────────────
   bhlMeters: number       // meters — governing Building Height Limit
   bhlStoreys: number      // storeys — governing BHL
-  bhlSource: 'zoning' | 'rrow'
+  bhlSource: 'zoning' | 'rrow' | 'custom'
   proposedHeight: number  // meters — proposedStoreys × floorHeight
   amvbInitial: number     // cubic meters — AMBF × BHL
   amvbFinal: number       // cubic meters — after angular plane ⚠️ AUDIT FLAG

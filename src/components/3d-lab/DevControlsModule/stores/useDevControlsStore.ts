@@ -26,6 +26,7 @@ const DEFAULT_BUILDING: BuildingParams = {
   floorHeight: 3.0,
 }
 const DEFAULT_RROW: RROWParams = { width: 10 }
+const DEFAULT_FLAR_OVERRIDE: number | undefined = undefined // use zone midpoint by default
 
 // ─── Presets ────────────────────────────────────────────────────────────────
 
@@ -89,6 +90,8 @@ interface DevControlsStore {
   zoning: ZoningParams
   building: BuildingParams
   rrow: RROWParams
+  flarOverride: number | undefined
+  bhlOverride: number | undefined  // custom BHL storeys (local ordinance)
 
   // ─ Computed Output (recomputed atomically on every input mutation)
   result: DevControlsResult
@@ -96,12 +99,17 @@ interface DevControlsStore {
   // ─ Mode
   labMode: LabMode
 
+  // ─ ISA/USA spatial placement (user-draggable + resizable)
+  isaPlacement: { x: number; z: number; w: number; d: number }
+  usaPlacement: { x: number; z: number; w: number; d: number }
+
   // ─ 3D Scene UI State
   cameraPreset: CameraPreset
   visibleLayers: Set<LayerKey>
   activeHotspot: string | null
   highlightedMetric: string | null
   showDimensions: boolean
+  isDraggingZone: boolean  // locks camera when dragging ISA/USA
   dpr: number
 
   // ─ R3F bridge
@@ -116,6 +124,8 @@ interface DevControlsStore {
   setFirewall: (active: boolean, sides: FirewallSide[]) => void
   setBuilding: (patch: Partial<BuildingParams>) => void
   setRrowWidth: (w: number) => void
+  setFlarOverride: (flar: number | undefined) => void
+  setBhlOverride: (storeys: number | undefined) => void
   applyPreset: (preset: DevControlsPreset) => void
   reset: () => void
 
@@ -125,8 +135,12 @@ interface DevControlsStore {
   setActiveHotspot: (id: string | null) => void
   setHighlightedMetric: (metric: string | null) => void
   setShowDimensions: (v: boolean) => void
+  setIsDraggingZone: (v: boolean) => void
   setDpr: (dpr: number) => void
   setInvalidateFn: (fn: (() => void) | null) => void
+
+  setIsaPlacement: (patch: Partial<{ x: number; z: number; w: number; d: number }>) => void
+  setUsaPlacement: (patch: Partial<{ x: number; z: number; w: number; d: number }>) => void
 
   setTourStep: (step: number | null) => void
   nextTourStep: () => void
@@ -135,13 +149,13 @@ interface DevControlsStore {
 
 // ─── Initial computation ────────────────────────────────────────────────────
 
-function computeResult(lot: LotParams, zoning: ZoningParams, building: BuildingParams, rrow: RROWParams): DevControlsResult {
-  return computeDevControls({ lot, zoning, building, rrow })
+function computeResult(lot: LotParams, zoning: ZoningParams, building: BuildingParams, rrow: RROWParams, flarOverride?: number, bhlOverride?: number): DevControlsResult {
+  return computeDevControls({ lot, zoning, building, rrow, flarOverride, bhlOverrideStoreys: bhlOverride })
 }
 
-const initialResult = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW)
+const initialResult = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW, DEFAULT_FLAR_OVERRIDE)
 
-const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'floors', 'isa', 'usa', 'tosl', 'building', 'rrow']
+const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floors', 'isa', 'usa', 'tosl', 'building', 'rrow']
 
 // ─── Store ──────────────────────────────────────────────────────────────────
 
@@ -151,6 +165,8 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   zoning: DEFAULT_ZONING,
   building: DEFAULT_BUILDING,
   rrow: DEFAULT_RROW,
+  flarOverride: DEFAULT_FLAR_OVERRIDE,
+  bhlOverride: undefined,
 
   // ─ Computed
   result: initialResult,
@@ -158,12 +174,17 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   // ─ Mode
   labMode: 'sandbox',
 
+  // ─ ISA/USA placement (default: auto-positioned from setbacks)
+  isaPlacement: { x: 0, z: 0, w: 5, d: 5 },
+  usaPlacement: { x: 0, z: 10, w: 5, d: 5 },
+
   // ─ UI
   cameraPreset: 'orbit',
   visibleLayers: new Set<LayerKey>(ALL_LAYERS),
   activeHotspot: null,
   highlightedMetric: null,
   showDimensions: false,
+  isDraggingZone: false,
   dpr: 1.5,
 
   // ─ R3F bridge
@@ -177,23 +198,33 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   setLot: (patch) => {
     const s = get()
     const lot = { ...s.lot, ...patch }
-    const result = computeResult(lot, s.zoning, s.building, s.rrow)
-    set({ lot, result })
+    const result = computeResult(lot, s.zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride)
+    // Auto-reposition ISA/USA to fit within new lot dimensions
+    const isaW = Math.min(Math.sqrt(result.isa) * 1.5, lot.width)
+    const isaD = result.isa / Math.max(isaW, 0.1)
+    const usaW = Math.min(Math.sqrt(result.usa) * 1.5, lot.width)
+    const usaD = result.usa / Math.max(usaW, 0.1)
+    set({
+      lot, result,
+      isaPlacement: { x: 0, z: 0, w: isaW, d: Math.min(isaD, lot.depth) },
+      usaPlacement: { x: 0, z: lot.depth - Math.min(usaD, lot.depth), w: usaW, d: Math.min(usaD, lot.depth) },
+    })
     s.invalidateFn?.()
   },
 
   setZoneClass: (zc) => {
     const s = get()
     const zoning = { ...s.zoning, zoneClass: zc }
-    const result = computeResult(s.lot, zoning, s.building, s.rrow)
-    set({ zoning, result })
+    // Reset overrides when zone changes
+    const result = computeResult(s.lot, zoning, s.building, s.rrow, undefined, undefined)
+    set({ zoning, result, flarOverride: undefined, bhlOverride: undefined })
     s.invalidateFn?.()
   },
 
   setFirewall: (active, sides) => {
     const s = get()
     const zoning = { ...s.zoning, firewallActive: active, firewallSides: sides }
-    const result = computeResult(s.lot, zoning, s.building, s.rrow)
+    const result = computeResult(s.lot, zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride)
     set({ zoning, result })
     s.invalidateFn?.()
   },
@@ -201,7 +232,7 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   setBuilding: (patch) => {
     const s = get()
     const building = { ...s.building, ...patch }
-    const result = computeResult(s.lot, s.zoning, building, s.rrow)
+    const result = computeResult(s.lot, s.zoning, building, s.rrow, s.flarOverride, s.bhlOverride)
     set({ building, result })
     s.invalidateFn?.()
   },
@@ -209,8 +240,22 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   setRrowWidth: (w) => {
     const s = get()
     const rrow = { width: w }
-    const result = computeResult(s.lot, s.zoning, s.building, rrow)
+    const result = computeResult(s.lot, s.zoning, s.building, rrow, s.flarOverride, s.bhlOverride)
     set({ rrow, result })
+    s.invalidateFn?.()
+  },
+
+  setFlarOverride: (flar) => {
+    const s = get()
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, flar, s.bhlOverride)
+    set({ flarOverride: flar, result })
+    s.invalidateFn?.()
+  },
+
+  setBhlOverride: (storeys) => {
+    const s = get()
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, s.flarOverride, storeys)
+    set({ bhlOverride: storeys, result })
     s.invalidateFn?.()
   },
 
@@ -220,17 +265,17 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
     const zoning = { ...DEFAULT_ZONING, ...preset.zoning }
     const building = { ...DEFAULT_BUILDING, ...preset.building }
     const rrow = { ...DEFAULT_RROW, ...preset.rrow }
-    const result = computeResult(lot, zoning, building, rrow)
-    set({ lot, zoning, building, rrow, result, activeHotspot: null, highlightedMetric: null })
+    const result = computeResult(lot, zoning, building, rrow, undefined, undefined)
+    set({ lot, zoning, building, rrow, flarOverride: undefined, bhlOverride: undefined, result, activeHotspot: null, highlightedMetric: null })
     s.invalidateFn?.()
   },
 
   reset: () => {
     const s = get()
-    const result = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW)
+    const result = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW, DEFAULT_FLAR_OVERRIDE, undefined)
     set({
       lot: DEFAULT_LOT, zoning: DEFAULT_ZONING, building: DEFAULT_BUILDING, rrow: DEFAULT_RROW,
-      result, activeHotspot: null, highlightedMetric: null, tourStep: 0,
+      flarOverride: DEFAULT_FLAR_OVERRIDE, bhlOverride: undefined, result, activeHotspot: null, highlightedMetric: null, tourStep: 0,
     })
     s.invalidateFn?.()
   },
@@ -266,9 +311,47 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
     get().invalidateFn?.()
   },
 
+  setIsDraggingZone: (v) => set({ isDraggingZone: v }),
+
   setDpr: (dpr) => set({ dpr }),
 
   setInvalidateFn: (fn) => set({ invalidateFn: fn }),
+
+  setIsaPlacement: (patch) => {
+    const s = get()
+    const lot = s.lot
+    const maxArea = s.result.isa
+    const next = { ...s.isaPlacement, ...patch }
+    // Clamp dimensions so area never exceeds ISA limit
+    if (next.w * next.d > maxArea) {
+      next.d = maxArea / Math.max(next.w, 0.1)
+    }
+    // Clamp position to lot boundaries
+    next.x = Math.max(0, Math.min(next.x, lot.width - next.w))
+    next.z = Math.max(0, Math.min(next.z, lot.depth - next.d))
+    next.w = Math.min(next.w, lot.width)
+    next.d = Math.min(next.d, lot.depth)
+    set({ isaPlacement: next })
+    s.invalidateFn?.()
+  },
+
+  setUsaPlacement: (patch) => {
+    const s = get()
+    const lot = s.lot
+    const maxArea = s.result.usa
+    const next = { ...s.usaPlacement, ...patch }
+    // Clamp dimensions so area never exceeds USA limit
+    if (next.w * next.d > maxArea) {
+      next.d = maxArea / Math.max(next.w, 0.1)
+    }
+    // Clamp position to lot boundaries
+    next.x = Math.max(0, Math.min(next.x, lot.width - next.w))
+    next.z = Math.max(0, Math.min(next.z, lot.depth - next.d))
+    next.w = Math.min(next.w, lot.width)
+    next.d = Math.min(next.d, lot.depth)
+    set({ usaPlacement: next })
+    s.invalidateFn?.()
+  },
 
   setTourStep: (step) => {
     set({ tourStep: step })

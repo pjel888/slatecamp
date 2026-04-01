@@ -20,7 +20,9 @@ export function ViolationOverlay() {
   const meshRef = useRef<THREE.Mesh>(null)
   const materialRef = useRef<THREE.ShaderMaterial>(null)
 
-  const setbacks = useDevControlsStore((s) => s.result.setbacks.effective)
+  // Use base setbacks (not effective) — violation overlay tracks the building
+  // footprint which is positioned at base setbacks, not the incremental ones
+  const setbacks = useDevControlsStore((s) => s.result.setbacks.base)
   const fpW = useDevControlsStore((s) => s.building.proposedFootprintWidth)
   const fpD = useDevControlsStore((s) => s.building.proposedFootprintDepth)
   const buildableW = useDevControlsStore((s) => s.result.buildableWidth)

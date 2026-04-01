@@ -11,18 +11,24 @@ const ZONE_OPTIONS = getAllZoneClasses().map((zc) => ({
 
 export function ZoningInputPanel() {
   const zoneClass = useDevControlsStore((s) => s.zoning.zoneClass)
-  const firewallActive = useDevControlsStore((s) => s.zoning.firewallActive)
+  const flarOverride = useDevControlsStore((s) => s.flarOverride)
   const setZoneClass = useDevControlsStore((s) => s.setZoneClass)
-  const setFirewall = useDevControlsStore((s) => s.setFirewall)
 
   const entry = getZoningEntry(zoneClass)
-  const canFirewall = entry.firewallAllowed.length > 0
+  const isCustomized = flarOverride !== undefined
 
   return (
     <div>
-      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
-        Zoning Classification
-      </label>
+      <div className="mb-1.5 flex items-center justify-between">
+        <label className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+          Zoning Classification
+        </label>
+        {isCustomized && (
+          <span className="rounded-sm bg-[#D4951A]/10 px-1.5 py-0.5 text-[8px] font-medium text-[#D4951A]">
+            CUSTOM FLAR
+          </span>
+        )}
+      </div>
       <select
         value={zoneClass}
         onChange={(e) => setZoneClass(e.target.value as ZoneClass)}
@@ -51,22 +57,16 @@ export function ZoningInputPanel() {
           <span className="text-[#8896A7]">BHL</span>
           <span className="font-mono text-[#1A2332]">{entry.bhlStoreys}F / {entry.bhlMeters}m</span>
           <span className="text-[#8896A7]">FLAR</span>
-          <span className="font-mono text-[#1A2332]">{entry.flarMin}–{entry.flarMax}</span>
+          <span className="font-mono text-[#1A2332]">
+            {isCustomized
+              ? <><span className="text-[#D4951A]">{flarOverride!.toFixed(2)}</span> <span className="text-[#8896A7]">({entry.flarMin}–{entry.flarMax})</span></>
+              : `${entry.flarMin}–${entry.flarMax}`
+            }
+          </span>
         </div>
       </div>
 
-      {/* Firewall toggle */}
-      {canFirewall && (
-        <label className="mt-2 flex items-center gap-2 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={firewallActive}
-            onChange={(e) => setFirewall(e.target.checked, e.target.checked ? ['left'] : [])}
-            className="h-3.5 w-3.5 rounded-sm border-[#D4DAE3] accent-[#1B3FC4]"
-          />
-          <span className="text-[10px] text-[#4A5568]">Firewall active (§704.4c)</span>
-        </label>
-      )}
+      {/* Firewall controls moved to dedicated FirewallPanel */}
     </div>
   )
 }

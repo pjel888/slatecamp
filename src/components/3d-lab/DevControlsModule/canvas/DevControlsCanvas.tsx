@@ -14,6 +14,7 @@ import { useSelectionStore } from '../stores/useSelectionStore'
 import { SceneLighting } from './SceneLighting'
 import { InvalidateBridge } from './InvalidateBridge'
 import { CAMERA_PRESETS, SCENE } from './constants'
+import { resetCursor } from './cursor'
 
 // Scene layers
 import { LotGround } from './layers/LotGround'
@@ -24,6 +25,8 @@ import { TOSLOverlayLayer } from './layers/TOSLOverlayLayer'
 import { AMBFFootprintLayer } from './layers/AMBFFootprintLayer'
 import { BuildableEnvelope } from './layers/BuildableEnvelope'
 import { AMBFGhostCandidates } from './layers/AMBFGhostCandidates'
+import { BHLCeiling } from './layers/BHLCeiling'
+import { FLARCeiling } from './layers/FLARCeiling'
 import { FloorSlabs } from './layers/FloorSlabs'
 import { RROWIndicator } from './layers/RROWIndicator'
 import { FirewallMarkers } from './layers/FirewallMarkers'
@@ -31,11 +34,29 @@ import { ViolationOverlay } from './layers/ViolationOverlay'
 
 // Annotations
 import { DimensionLines } from './annotations/DimensionLines'
-import { ZoneHotspots } from './annotations/ZoneHotspots'
+// ZoneHotspots removed — info displayed in right panel instead
 
 // Context
 import { UrbanGrid } from './context/UrbanGrid'
 import { ContextBuildings } from './context/ContextBuildings'
+
+// ─── Camera Controls (disabled during ISA/USA drag) ─────────────────────────
+
+function CameraControls({ target }: { target: [number, number, number] }) {
+  const isDragging = useDevControlsStore((s) => s.isDraggingZone)
+  return (
+    <OrbitControls
+      target={target}
+      enabled={!isDragging}
+      enablePan={true}
+      minPolarAngle={0.1}
+      maxPolarAngle={Math.PI / 2 - 0.05}
+      minDistance={5}
+      maxDistance={80}
+      enableDamping={false}
+    />
+  )
+}
 
 // ─── Scene Background + Initial Invalidate ──────────────────────────────────
 
@@ -45,8 +66,8 @@ function SceneSetup() {
     const bgColor = new THREE.Color(SCENE.SKY_COLOR)
     scene.background = bgColor
     gl.setClearColor(bgColor, 1)
-    // Trigger initial render for demand-mode canvas
     invalidate()
+    return () => resetCursor() // clean up cursor on unmount
   }, [scene, gl, invalidate])
   return null
 }
@@ -73,15 +94,7 @@ function SceneContent() {
         far={500}
       />
 
-      <OrbitControls
-        target={preset.target}
-        enablePan={true}
-        minPolarAngle={0.1}
-        maxPolarAngle={Math.PI / 2 - 0.05}
-        minDistance={5}
-        maxDistance={80}
-        enableDamping={false}
-      />
+      <CameraControls target={preset.target} />
 
       {/* Context layers — togglable */}
       {visibleLayers.has('rrow') && <UrbanGrid />}
@@ -98,6 +111,8 @@ function SceneContent() {
       {/* Building layers */}
       {visibleLayers.has('ambf') && <BuildableEnvelope />}
       {visibleLayers.has('ambf') && <AMBFGhostCandidates />}
+      {visibleLayers.has('bhl') && <BHLCeiling />}
+      {visibleLayers.has('flar') && <FLARCeiling />}
       {visibleLayers.has('floors') && <FloorSlabs />}
       {visibleLayers.has('rrow') && <RROWIndicator />}
       {visibleLayers.has('firewall') && <FirewallMarkers />}
@@ -107,7 +122,6 @@ function SceneContent() {
 
       {/* Annotations */}
       {showDimensions && <DimensionLines />}
-      <ZoneHotspots />
     </>
   )
 }

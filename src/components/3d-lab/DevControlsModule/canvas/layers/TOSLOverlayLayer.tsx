@@ -22,6 +22,9 @@ export function TOSLOverlayLayer() {
     transparent: true,
     opacity: OPACITY.TOSL_OVERLAY,
     side: THREE.DoubleSide,
+    polygonOffset: true,
+    polygonOffsetFactor: -4,
+    polygonOffsetUnits: -4,
     depthWrite: false,
   }), [])
 

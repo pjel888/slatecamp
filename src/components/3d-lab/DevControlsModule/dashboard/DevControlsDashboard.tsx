@@ -13,6 +13,9 @@ import { ClosureEquationStrip } from './ClosureEquationStrip'
 import { ComplianceScorecard } from './ComplianceScorecard'
 import { ZoneLegend } from './ZoneLegend'
 import { LayerToggles } from './LayerToggles'
+import { FlarPanel } from './FlarPanel'
+import { BhlPanel } from './BhlPanel'
+import { FirewallPanel } from './FirewallPanel'
 
 // ─── Selected Object Detail ─────────────────────────────────────────────────
 
@@ -51,7 +54,7 @@ function SelectionDetail() {
 
 // ─── Computed HUD ───────────────────────────────────────────────────────────
 
-function ComputedHUD() {
+export function ComputedHUD() {
   const r = useDevControlsStore((s) => s.result)
 
   const metrics = [
@@ -77,18 +80,35 @@ function ComputedHUD() {
   )
 }
 
-// ─── Desktop Sidebar ────────────────────────────────────────────────────────
+// ─── Left Toolbar (Input Configuration) ─────────────────────────────────────
+// Houses: Presets, Lot Parameters, Zoning Classification, Proposed Building
+// These are the "input" controls — what the student configures before analysis.
 
-export function DesktopSidebar() {
+export function LeftToolbar() {
   return (
     <div className="flex h-full flex-col gap-4 overflow-y-auto p-4">
       <PresetSelector />
-      <CameraPresetBar />
-      <LayerToggles />
       <hr className="border-[#D4DAE3]" />
       <LotInputPanel />
       <ZoningInputPanel />
+      <FlarPanel />
+      <BhlPanel />
+      <FirewallPanel />
+      <hr className="border-[#D4DAE3]" />
       <ProposedBuildingPanel />
+    </div>
+  )
+}
+
+// ─── Right Toolbar (Output & Analysis) ──────────────────────────────────────
+// Houses: Camera/Layer controls, Selection Detail, Computed HUD, AMBF 3-Way,
+// Closure Equation, Compliance Scorecard, Zone Legend, Code Reference.
+// These are the "output" panels — what the student reads after configuring inputs.
+
+export function RightToolbar() {
+  return (
+    <div className="flex h-full flex-col gap-4 overflow-y-auto p-4">
+      <LayerToggles />
       <hr className="border-[#D4DAE3]" />
       <SelectionDetail />
       <ComputedHUD />
@@ -97,6 +117,7 @@ export function DesktopSidebar() {
       <ClosureEquationStrip />
       <hr className="border-[#D4DAE3]" />
       <ComplianceScorecard />
+      <ZoneLegend />
       {/* Code reference footer */}
       <div className="mt-auto border-t border-[#D4DAE3] pt-3">
         <p className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">Code Reference</p>
@@ -108,6 +129,7 @@ export function DesktopSidebar() {
 }
 
 // ─── Mobile Bottom Sheet ────────────────────────────────────────────────────
+// On mobile, both toolbars collapse into a single swipeable sheet.
 
 export function MobileBottomSheet() {
   const [expanded, setExpanded] = useState(false)
@@ -143,11 +165,14 @@ export function MobileBottomSheet() {
       </div>
       {expanded && (
         <div className="max-h-[50vh] overflow-y-auto px-4 pb-4 space-y-4">
+          {/* Inputs */}
           <PresetSelector />
-          <CameraPresetBar />
           <LotInputPanel />
           <ZoningInputPanel />
           <ProposedBuildingPanel />
+          <hr className="border-[#D4DAE3]" />
+          {/* Outputs */}
+          <CameraPresetBar />
           <AMBFThreeWayPanel />
           <ClosureEquationStrip />
           <ComplianceScorecard />

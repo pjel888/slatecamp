@@ -124,8 +124,8 @@ describe('R-2-basic with Firewall', () => {
     expect(result.ambfCandidates.byPSO).toBeCloseTo(96, 1)
   })
 
-  test('incremental setback for 3 storeys = +0.30m', () => {
-    expect(result.setbacks.incremental).toBeCloseTo(0.30, 2)
+  test('no incremental setback (removed from base module)', () => {
+    expect(result.setbacks.incremental).toBe(0)
   })
 
   test('closure identity holds', () => {
@@ -147,10 +147,9 @@ describe('Com-1 Commercial', () => {
   })
 
   test('commercial setback from RROW 15m: front=5, side=3, rear=3', () => {
-    // storeys=4 → increment = 0.30 * (4-2) = 0.60
     expect(result.setbacks.base.front).toBe(5)
-    expect(result.setbacks.base.left).toBe(3) // was: side=3 → stored as left/right
-    expect(result.setbacks.incremental).toBeCloseTo(0.60, 2)
+    expect(result.setbacks.base.left).toBe(3)
+    expect(result.setbacks.incremental).toBe(0) // incremental removed
   })
 
   test('PSO no firewall = 65% → AMBF_PSO = 780 sqm', () => {
@@ -235,15 +234,18 @@ describe('BHL Violation', () => {
 
 // ─── Incremental Setback Cap at 14 Storeys ──────────────────────────────────
 
-describe('Incremental Setback Cap', () => {
+describe('Incremental Setback Removed', () => {
   const input = makeInput({
     zoneClass: 'Com-3', storeys: 20, rrowWidth: 30,
     lotWidth: 100, lotDepth: 100,
   })
   const result = computeDevControls(input)
 
-  test('increment capped at 14 storeys: 0.30 × (14-2) = 3.60m', () => {
-    expect(result.setbacks.incremental).toBeCloseTo(3.60, 2)
+  test('no incremental setback regardless of storey count', () => {
+    expect(result.setbacks.incremental).toBe(0)
+    // Effective equals base — no height-dependent adjustment
+    expect(result.setbacks.effective.left).toBe(result.setbacks.base.left)
+    expect(result.setbacks.effective.rear).toBe(result.setbacks.base.rear)
   })
 })
 

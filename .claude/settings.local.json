@@ -163,7 +163,9 @@
       "Bash(rm -f src/app/dashboard/3d-lab/_stores/siteControlsStore.ts)",
       "Bash(rm -f src/app/dashboard/3d-lab/_utils/siteControlsCalculator.ts)",
       "Bash(rm -f src/app/dashboard/3d-lab/_utils/siteControlsCalculator.test.ts)",
-      "Bash(rm -f src/app/dashboard/3d-lab/_constants/siteControls.ts)"
+      "Bash(rm -f src/app/dashboard/3d-lab/_constants/siteControls.ts)",
+      "Bash(npx bun -e \":*)",
+      "Bash(npx bun run -e \":*)"
     ]
   }
 }
