@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd \\\"C:/Users/Philip Lewis/Desktop/slatecamp\\\" && npx tsc --noEmit --pretty 2>&1 | grep \\\"DevControlsModule\\\\|pd1096\\\" && npx bun test src/lib/pd1096/ 2>&1\",\"timeout\":120000,\"description\":...",
-  "error": "Exit code 1",
-  "timestamp": "2026-04-01T04:57:42.439Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"C:\\\\Users\\\\Philip Lewis\\\\.claude\\\\projects\\\\C--Users-Philip-Lewis-Desktop-slatecamp\\\\ee771517-6bae-4e9b-9cb9-68debe531338\\\\tool-results\\\\bl6hx2ct1.txt\",\"offset\":1,\"limit\":50}",
+  "error": "File content (21235 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-04-01T06:12:14.755Z",
   "retry_count": 1
 }

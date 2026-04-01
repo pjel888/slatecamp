@@ -6,8 +6,6 @@ import type { LayerKey } from '@/lib/pd1096/types'
 const LAYER_OPTIONS: { key: LayerKey; label: string; color: string }[] = [
   { key: 'setbacks', label: 'Setback Zones', color: '#E74C3C' },
   { key: 'ambf', label: 'AMBF Envelope', color: '#1B3FC4' },
-  { key: 'isa', label: 'ISA (Impervious)', color: '#F5A623' },
-  { key: 'usa', label: 'USA (Unpaved)', color: '#4A7C59' },
   { key: 'tosl', label: 'TOSL Overlay', color: '#88A898' },
   { key: 'floors', label: 'Floor Slabs', color: '#B8B4A8' },
   { key: 'bhl', label: 'BHL Ceiling', color: '#E8853A' },

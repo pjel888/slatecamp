@@ -18,23 +18,12 @@ import { resetCursor } from './cursor'
 
 // Scene layers
 import { LotGround } from './layers/LotGround'
-import { SetbackZones } from './layers/SetbackZones'
-import { ISALayer } from './layers/ISALayer'
-import { USALayer } from './layers/USALayer'
-import { TOSLOverlayLayer } from './layers/TOSLOverlayLayer'
-import { AMBFFootprintLayer } from './layers/AMBFFootprintLayer'
-import { BuildableEnvelope } from './layers/BuildableEnvelope'
-import { AMBFGhostCandidates } from './layers/AMBFGhostCandidates'
-import { BHLCeiling } from './layers/BHLCeiling'
-import { FLARCeiling } from './layers/FLARCeiling'
-import { FloorSlabs } from './layers/FloorSlabs'
+import { PolygonDevControls } from './layers/PolygonDevControls'
 import { RROWIndicator } from './layers/RROWIndicator'
 import { FirewallMarkers } from './layers/FirewallMarkers'
-import { ViolationOverlay } from './layers/ViolationOverlay'
 
 // Annotations
 import { DimensionLines } from './annotations/DimensionLines'
-// ZoneHotspots removed — info displayed in right panel instead
 
 // Context
 import { UrbanGrid } from './context/UrbanGrid'
@@ -79,7 +68,6 @@ function SceneContent() {
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const cameraPreset = useDevControlsStore((s) => s.cameraPreset)
   const preset = CAMERA_PRESETS[cameraPreset] ?? CAMERA_PRESETS.orbit
-
   return (
     <>
       <SceneSetup />
@@ -100,25 +88,15 @@ function SceneContent() {
       {visibleLayers.has('rrow') && <UrbanGrid />}
       {visibleLayers.has('building') && <ContextBuildings />}
 
-      {/* Ground & zone layers — togglable */}
+      {/* Lot ground — handles both modes internally */}
       <LotGround />
-      {visibleLayers.has('setbacks') && <SetbackZones />}
-      {visibleLayers.has('isa') && <ISALayer />}
-      {visibleLayers.has('usa') && <USALayer />}
-      {visibleLayers.has('tosl') && <TOSLOverlayLayer />}
-      {visibleLayers.has('ambf') && <AMBFFootprintLayer />}
 
-      {/* Building layers */}
-      {visibleLayers.has('ambf') && <BuildableEnvelope />}
-      {visibleLayers.has('ambf') && <AMBFGhostCandidates />}
-      {visibleLayers.has('bhl') && <BHLCeiling />}
-      {visibleLayers.has('flar') && <FLARCeiling />}
-      {visibleLayers.has('floors') && <FloorSlabs />}
+      {/* Development controls — unified for both rectangle and surveyor modes */}
+      <PolygonDevControls />
+
+      {/* Context overlays — shared by both modes */}
       {visibleLayers.has('rrow') && <RROWIndicator />}
       {visibleLayers.has('firewall') && <FirewallMarkers />}
-
-      {/* Violation overlay */}
-      <ViolationOverlay />
 
       {/* Annotations */}
       {showDimensions && <DimensionLines />}

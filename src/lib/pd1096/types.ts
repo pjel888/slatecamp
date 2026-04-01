@@ -30,9 +30,12 @@ export type FirewallSide = 'front' | 'rear' | 'left' | 'right'
 // ─── INPUT TYPES ────────────────────────────────────────────────────────────
 
 export interface LotParams {
-  width: number           // meters
-  depth: number           // meters
+  width: number           // meters (bounding box width for polygon lots)
+  depth: number           // meters (bounding box depth for polygon lots)
   type: LotType
+  area?: number           // sqm — if provided, overrides width×depth for TLA
+  polygonVertices?: Array<{ x: number; z: number }>  // for polygon lot rendering
+  polygonEdgeTags?: Array<'front' | 'rear' | 'left_side' | 'right_side'>  // per-edge boundary tags
 }
 
 export interface ZoningParams {

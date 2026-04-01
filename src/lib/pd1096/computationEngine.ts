@@ -13,6 +13,8 @@ import type {
   AMBFCandidates,
 } from './types'
 import { computeSetbacks } from './computeSetbacks'
+import { computeSetbackInsetPolygon } from '@/lib/lot-geometry/inset'
+import { buildRectangularPolygon } from '@/lib/lot-geometry/polygon'
 import {
   getZoningEntry,
   lookupPSO,
@@ -30,19 +32,89 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
   const table = getZoningEntry(zoning.zoneClass)
 
   // ── STEP 0: TLA (Total Lot Area) ───────────────────────────────────
-  const tla = lot.width * lot.depth
+  // Use explicit area if provided (polygon lots), otherwise width × depth
+  const tla = lot.area ?? (lot.width * lot.depth)
 
   // ── STEP 1–2: Setbacks (base + incremental §804.6 + firewall) ─────
   const setbacks = computeSetbacks(zoning, building, rrow)
 
   // ── STEP 3: Buildable envelope after setbacks ─────────────────────
-  const buildableWidth = Math.max(0, lot.width - setbacks.effective.left - setbacks.effective.right)
-  const buildableDepth = Math.max(0, lot.depth - setbacks.effective.front - setbacks.effective.rear)
+  // For polygon lots: compute inset polygon area via per-edge offset.
+  // For rectangular lots: simple width/depth subtraction (unchanged).
+  let buildableWidth: number
+  let buildableDepth: number
+  let ambfBySetbacks: number
+
+  if (lot.polygonVertices && lot.polygonVertices.length >= 3) {
+    // Polygon lot: inset each edge by its boundary-tagged setback amount
+    const lotPoly = buildRectangularPolygon(lot.width, lot.depth) // fallback structure
+    // Build a proper polygon with edges for inset computation
+    const polyWithEdges = (() => {
+      const verts = lot.polygonVertices
+      const N = verts.length
+      // Assign boundary tags from lot.polygonEdgeTags if available,
+      // otherwise default to 'front' (uses front setback — most conservative)
+      const edgeTags = lot.polygonEdgeTags
+      const edges = verts.map((v, i) => {
+        const next = verts[(i + 1) % N]
+        const dx = next.x - v.x
+        const dz = next.z - v.z
+        const len = Math.sqrt(dx * dx + dz * dz)
+        const tag = edgeTags?.[i] ?? 'front'
+        return {
+          from: v, to: next,
+          segmentId: `edge-${i}`,
+          boundaryTag: tag as 'front' | 'rear' | 'left_side' | 'right_side',
+          length: len,
+          normalOutward: len > 0 ? { x: dz / len, z: -dx / len } : { x: 0, z: 0 },
+        }
+      })
+      // Check winding: if area is negative (CW), flip normals
+      let signedArea = 0
+      for (let i = 0; i < N; i++) {
+        const j = (i + 1) % N
+        signedArea += verts[i].x * verts[j].z - verts[j].x * verts[i].z
+      }
+      if (signedArea < 0) {
+        edges.forEach(e => { e.normalOutward.x *= -1; e.normalOutward.z *= -1 })
+      }
+      const xs = verts.map(v => v.x)
+      const zs = verts.map(v => v.z)
+      return {
+        vertices: verts, edges, area: tla, perimeter: 0,
+        centroid: { x: 0, z: 0 },
+        closure: { isClosed: true, closureErrorMeters: 0, closureErrorRatio: 0, perimeterMeters: 0 },
+        boundingBox: { minX: Math.min(...xs), maxX: Math.max(...xs), minZ: Math.min(...zs), maxZ: Math.max(...zs), width: lot.width, depth: lot.depth },
+      }
+    })()
+
+    const inset = computeSetbackInsetPolygon(polyWithEdges, {
+      front: setbacks.effective.front,
+      rear: setbacks.effective.rear,
+      left: setbacks.effective.left,
+      right: setbacks.effective.right,
+    })
+    ambfBySetbacks = inset.area
+    // Use bounding box of inset polygon for compatibility
+    if (inset.vertices.length > 0) {
+      const ixs = inset.vertices.map(v => v.x)
+      const izs = inset.vertices.map(v => v.z)
+      buildableWidth = Math.max(...ixs) - Math.min(...ixs)
+      buildableDepth = Math.max(...izs) - Math.min(...izs)
+    } else {
+      buildableWidth = 0
+      buildableDepth = 0
+    }
+  } else {
+    // Rectangular lot: simple subtraction (existing behavior)
+    buildableWidth = Math.max(0, lot.width - setbacks.effective.left - setbacks.effective.right)
+    buildableDepth = Math.max(0, lot.depth - setbacks.effective.front - setbacks.effective.rear)
+    ambfBySetbacks = buildableWidth * buildableDepth
+  }
 
   // ── STEP 4: AMBF candidates ───────────────────────────────────────
   // Three-way check per §704.4 (pedagogically shows all three;
   // binding computation is two-way min since TOSL reduces to PSO)
-  const ambfBySetbacks = buildableWidth * buildableDepth
 
   const psoDecimal = lookupPSO(zoning.zoneClass, zoning.firewallActive)
   // R-1: PSO path not applicable — setback always governs
@@ -166,6 +238,26 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
       compliant: (tla - proposedFootprint) >= tosl - FLOAT_TOLERANCE,
       codeReference: CITATIONS.tosl,
       shortfall: Math.max(0, tosl - (tla - proposedFootprint)),
+    },
+    {
+      id: 'isa',
+      label: 'Impervious Surface Area (ISA)',
+      required: table.isaPercent * tla,
+      actual: isa,
+      unit: 'sqm',
+      compliant: isa <= table.isaPercent * tla + FLOAT_TOLERANCE,
+      codeReference: CITATIONS.isa,
+      excess: Math.max(0, isa - table.isaPercent * tla),
+    },
+    {
+      id: 'usa',
+      label: 'Unpaved Surface Area (USA)',
+      required: table.usaPercent * tla,
+      actual: usa,
+      unit: 'sqm',
+      compliant: usa >= table.usaPercent * tla - FLOAT_TOLERANCE,
+      codeReference: CITATIONS.usa,
+      shortfall: Math.max(0, table.usaPercent * tla - usa),
     },
     {
       id: 'bhl',

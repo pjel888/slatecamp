@@ -292,3 +292,45 @@ describe('TGFA Violation', () => {
     expect(check?.compliant).toBe(false)
   })
 })
+
+// ─── Polygon Lot (lot.area override) ────────────────────────────────────────
+
+describe('Polygon Lot with area override', () => {
+  test('uses lot.area for TLA instead of width×depth', () => {
+    const input = makeInput({ lotWidth: 20, lotDepth: 15 })
+    // Override area to 500 sqm (different from 20×15=300)
+    input.lot.area = 500
+    const result = computeDevControls(input)
+    expect(result.tla).toBe(500)
+  })
+
+  test('closure identity holds with polygon area', () => {
+    const input = makeInput({ lotWidth: 25, lotDepth: 20 })
+    input.lot.area = 400 // irregular lot area
+    const result = computeDevControls(input)
+    expect(result.closureIdentityValid).toBe(true)
+    expect(Math.abs(result.tla - (result.ambf + result.isa + result.usa))).toBeLessThan(0.01)
+  })
+
+  test('polygon vertices trigger polygon inset for AMBF', () => {
+    const input = makeInput({ lotWidth: 20, lotDepth: 15 })
+    input.lot.area = 300
+    input.lot.polygonVertices = [
+      { x: 0, z: 0 }, { x: 20, z: 0 }, { x: 20, z: 15 }, { x: 0, z: 15 },
+    ]
+    const result = computeDevControls(input)
+    // Should use polygon inset area (same as rectangular for a rectangle)
+    expect(result.tla).toBe(300)
+    expect(result.ambf).toBeGreaterThan(0)
+    expect(result.closureIdentityValid).toBe(true)
+  })
+
+  test('FLAR override works with polygon lots', () => {
+    const input = makeInput({ lotWidth: 30, lotDepth: 30, zoneClass: 'Com-1' })
+    input.lot.area = 900
+    input.flarOverride = 5.0
+    const result = computeDevControls(input)
+    expect(result.flar).toBe(5.0)
+    expect(result.gfa).toBe(4500) // 900 × 5.0
+  })
+})

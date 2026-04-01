@@ -1,6 +1,10 @@
 'use client'
 
 import { useDevControlsStore } from '../stores/useDevControlsStore'
+import { useLotStore } from '../stores/useLotStore'
+import { LotModeToggle } from './LotModeToggle'
+import { SurveyorLotInputs } from './SurveyorLotInputs'
+import { LotSummaryFooter } from './LotSummaryFooter'
 
 // ─── Reusable Slider ────────────────────────────────────────────────────────
 
@@ -31,9 +35,29 @@ function Slider({
 
 export { Slider }
 
-export function LotInputPanel() {
+// ─── Basic Lot Inputs (rectangle mode) ──────────────────────────────────────
+
+function BasicLotInputs() {
   const lot = useDevControlsStore((s) => s.lot)
   const setLot = useDevControlsStore((s) => s.setLot)
+
+  return (
+    <div>
+      <p className="text-[9px] font-medium uppercase tracking-widest text-[#8896A7] mb-2">Lot Dimensions</p>
+      <div className="space-y-3">
+        <Slider label="Width (frontage)" value={lot.width} min={5} max={100} step={0.5} unit="m"
+          onChange={(v) => setLot({ width: v })} />
+        <Slider label="Depth" value={lot.depth} min={5} max={100} step={0.5} unit="m"
+          onChange={(v) => setLot({ depth: v })} />
+      </div>
+    </div>
+  )
+}
+
+// ─── Lot Input Panel (unified) ──────────────────────────────────────────────
+
+export function LotInputPanel() {
+  const mode = useLotStore((s) => s.mode)
   const rrowWidth = useDevControlsStore((s) => s.rrow.width)
   const setRrowWidth = useDevControlsStore((s) => s.setRrowWidth)
 
@@ -42,13 +66,24 @@ export function LotInputPanel() {
       <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
         Lot Parameters
       </label>
-      <div className="space-y-3">
-        <Slider label="Lot Width" value={lot.width} min={5} max={100} step={0.5} unit="m"
-          onChange={(v) => setLot({ width: v })} />
-        <Slider label="Lot Depth" value={lot.depth} min={5} max={100} step={0.5} unit="m"
-          onChange={(v) => setLot({ depth: v })} />
+
+      {/* Mode toggle */}
+      <div className="mb-3">
+        <LotModeToggle />
+      </div>
+
+      {/* Mode-specific inputs */}
+      {mode === 'rectangle' ? <BasicLotInputs /> : <SurveyorLotInputs />}
+
+      {/* RROW — shared by both modes */}
+      <div className="mt-3">
         <Slider label="RROW Width" value={rrowWidth} min={6} max={40} step={1} unit="m"
           onChange={setRrowWidth} />
+      </div>
+
+      {/* Summary footer — shared by both modes */}
+      <div className="mt-3 border-t border-dashed border-[#D4DAE3] pt-2">
+        <LotSummaryFooter />
       </div>
     </div>
   )

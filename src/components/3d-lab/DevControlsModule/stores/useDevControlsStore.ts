@@ -155,7 +155,8 @@ function computeResult(lot: LotParams, zoning: ZoningParams, building: BuildingP
 
 const initialResult = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW, DEFAULT_FLAR_OVERRIDE)
 
-const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floors', 'isa', 'usa', 'tosl', 'building', 'rrow']
+// Default visible layers — ISA/USA removed (purely computational now), context off
+const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floors', 'tosl']
 
 // ─── Store ──────────────────────────────────────────────────────────────────
 

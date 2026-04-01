@@ -7,13 +7,11 @@ export function ComplianceScorecard() {
   const overallCompliant = useDevControlsStore((s) => s.result.overallCompliant)
   const fpW = useDevControlsStore((s) => s.building.proposedFootprintWidth)
   const fpD = useDevControlsStore((s) => s.building.proposedFootprintDepth)
-  const setbacks = useDevControlsStore((s) => s.result.setbacks.effective)
-  const lotW = useDevControlsStore((s) => s.lot.width)
-  const lotD = useDevControlsStore((s) => s.lot.depth)
+  // Use computed buildable dimensions (works for both rectangular and polygon lots)
+  const buildableW = useDevControlsStore((s) => s.result.buildableWidth)
+  const buildableD = useDevControlsStore((s) => s.result.buildableDepth)
 
   // Check if the proposed footprint visually overflows the setback boundaries
-  const buildableW = lotW - setbacks.left - setbacks.right
-  const buildableD = lotD - setbacks.front - setbacks.rear
   const setbackOverflowW = fpW > buildableW
   const setbackOverflowD = fpD > buildableD
   const hasSetbackOverflow = setbackOverflowW || setbackOverflowD
