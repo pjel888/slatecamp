@@ -29,8 +29,8 @@ export function DevControlsLayers() {
   const layers = useDevControlsStore((s) => s.visibleLayers)
   const xray = useDevControlsStore((s) => s.xrayMode)
 
-  // X-ray multiplier: reduces opacity of solid elements to see through them
-  const xMul = xray ? 0.25 : 1.0
+  // X-ray: when OFF, floor slabs are fully opaque (solid building).
+  // When ON, floor slabs become transparent and edges are drawn for wireframe effect.
 
   // ── Derived dimensions ────────────────────────────────────────────
   const bW = Math.max(0.1, lotW - sbL - sbRt)  // buildable width
@@ -99,16 +99,26 @@ export function DevControlsLayers() {
               const fn = i + 1
               const y = GEOMETRY_Y.BUILDING_BASE + i * floorH + 0.075
               let color: string = COLOR.BUILDING
-              let opacity: number = OPACITY.FLOOR_SLAB * xMul
               // Priority: lot encroachment (worst) > BHL > setback > FLAR > normal
-              if (lotEncroach) { color = '#991b1b'; opacity = 0.75 * xMul }         // dark red — beyond lot
-              else if (fn > bhlStoreys) { color = '#D64545'; opacity = 0.55 * xMul } // red — above BHL
-              else if (setbackEncroach || isAmbfViolation) { color = '#D64545'; opacity = 0.65 * xMul } // red — setback/AMBF
-              else if (fn > maxFloors) { color = '#D4951A'; opacity = 0.60 * xMul }  // amber — FLAR
+              if (lotEncroach) { color = '#991b1b' }
+              else if (fn > bhlStoreys) { color = '#D64545' }
+              else if (setbackEncroach || isAmbfViolation) { color = '#D64545' }
+              else if (fn > maxFloors) { color = '#D4951A' }
+
+              // X-ray OFF = solid opaque floors. X-ray ON = transparent + edge wireframes.
+              const slabOpacity = xray ? 0.15 : 1.0
               return (
                 <mesh key={fn} position={[sbL + fpW / 2, y, sbF + fpD / 2]}>
                   <boxGeometry args={[fpW, 0.15, fpD]} />
-                  <meshStandardMaterial color={color} transparent opacity={opacity} roughness={0.8} metalness={0.05} />
+                  <meshStandardMaterial
+                    color={color}
+                    transparent={xray}
+                    opacity={slabOpacity}
+                    roughness={0.8}
+                    metalness={0.05}
+                    depthWrite={!xray}
+                  />
+                  {xray && <Edges color={color} threshold={15} />}
                 </mesh>
               )
             })}
