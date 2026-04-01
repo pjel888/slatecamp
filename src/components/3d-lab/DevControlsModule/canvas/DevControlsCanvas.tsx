@@ -25,9 +25,7 @@ import { FirewallMarkers } from './layers/FirewallMarkers'
 // Annotations
 import { DimensionLines } from './annotations/DimensionLines'
 
-// Context
-import { UrbanGrid } from './context/UrbanGrid'
-import { ContextBuildings } from './context/ContextBuildings'
+// Context meshes removed — road-only context via RROWIndicator
 
 // ─── Camera Controls (disabled during ISA/USA drag) ─────────────────────────
 
@@ -106,9 +104,7 @@ function SceneContent() {
 
       <CameraControls target={preset.target} />
 
-      {/* Context layers — togglable */}
-      {visibleLayers.has('rrow') && <UrbanGrid />}
-      {visibleLayers.has('building') && <ContextBuildings />}
+      {/* Context meshes removed — road rendered via RROWIndicator below */}
 
       {/* Lot ground — handles both modes internally */}
       <LotGround />

@@ -7,8 +7,7 @@ import type { LayerKey } from '@/lib/pd1096/types'
 // Display toggles, export options. Lightweight — mostly view settings.
 
 const DISPLAY_TOGGLES: { key: LayerKey; label: string }[] = [
-  { key: 'rrow', label: 'Ground plane & road grid' },
-  { key: 'building', label: 'Context buildings' },
+  { key: 'rrow', label: 'Road & ground grid' },
 ]
 
 export function SettingsTab() {

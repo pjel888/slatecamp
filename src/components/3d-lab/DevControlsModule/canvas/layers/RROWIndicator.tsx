@@ -6,42 +6,47 @@ import * as THREE from 'three'
 import { useDevControlsStore } from '../../stores/useDevControlsStore'
 import { GEOMETRY_Y, COLOR } from '../constants'
 
-// RROW indicator — road surface in front of the lot with width marker.
-// Positioned along Z < 0 (in front of the lot front boundary).
+// ─── RROW Indicator — Dynamic Road Mesh ────────────────────────────────────
+// Road surface anchored to the lot's front edge (Z = 0).
+// Length = lot width (frontage). No overhang beyond lot boundary endpoints.
+// Width (depth) = rrowWidth, extending in -Z direction from the front edge.
+// Centerline and dimension label included.
 
 export function RROWIndicator() {
   const lotW = useDevControlsStore((s) => s.lot.width)
   const rrowWidth = useDevControlsStore((s) => s.rrow.width)
 
-  // Road extends from Z = -rrowWidth to Z = 0 (front of lot)
-  const roadW = lotW + 8 // extend beyond lot edges
+  // Road geometry: anchored to lot front edge
+  // X: centered on lot width (lotW / 2)
+  // Z: extends from 0 to -rrowWidth, center at -rrowWidth / 2
+  // Length (X-axis) = lotW — exactly matches frontage, no overhang
   const roadX = lotW / 2
   const roadZ = -rrowWidth / 2
 
-  // Centerline of road
+  // Centerline: runs along the road center, matching lot width exactly
   const centerlinePoints = useMemo(() => [
-    new THREE.Vector3(-4, GEOMETRY_Y.ROAD_MARKING, -rrowWidth / 2),
-    new THREE.Vector3(lotW + 4, GEOMETRY_Y.ROAD_MARKING, -rrowWidth / 2),
+    new THREE.Vector3(0, GEOMETRY_Y.ROAD_MARKING, -rrowWidth / 2),
+    new THREE.Vector3(lotW, GEOMETRY_Y.ROAD_MARKING, -rrowWidth / 2),
   ], [lotW, rrowWidth])
 
-  // RROW dimension line
+  // RROW dimension line: vertical marker at left edge showing road width
   const rrowDimPoints = useMemo(() => [
-    new THREE.Vector3(-2, GEOMETRY_Y.ROAD + 0.02, 0),
-    new THREE.Vector3(-2, GEOMETRY_Y.ROAD + 0.02, -rrowWidth),
+    new THREE.Vector3(-1.5, GEOMETRY_Y.ROAD + 0.02, 0),
+    new THREE.Vector3(-1.5, GEOMETRY_Y.ROAD + 0.02, -rrowWidth),
   ], [rrowWidth])
 
   return (
     <group>
-      {/* Road surface */}
+      {/* Road surface — length = lotW (frontage), width = rrowWidth */}
       <mesh
         position={[roadX, GEOMETRY_Y.ROAD, roadZ]}
         rotation={[-Math.PI / 2, 0, 0]}
       >
-        <planeGeometry args={[roadW, rrowWidth]} />
+        <planeGeometry args={[lotW, rrowWidth]} />
         <meshStandardMaterial color={COLOR.ROAD} roughness={0.95} metalness={0} />
       </mesh>
 
-      {/* Road centerline (dashed) */}
+      {/* Road centerline (dashed) — matches frontage length */}
       <Line
         points={centerlinePoints}
         color={COLOR.ROAD_MARKING}
@@ -58,12 +63,12 @@ export function RROWIndicator() {
         lineWidth={1}
       />
 
-      {/* RROW label — DOM overlay, not 3D text */}
+      {/* RROW label */}
       <Html
-        position={[-3, GEOMETRY_Y.ROAD + 0.5, -rrowWidth / 2]}
+        position={[-2.5, GEOMETRY_Y.ROAD + 0.5, -rrowWidth / 2]}
         style={{ pointerEvents: 'none' }}
       >
-        <div className="rounded-sm bg-[#1A2332]/80 px-1.5 py-0.5 text-[10px] font-mono text-white whitespace-nowrap">
+        <div className="rounded-sm bg-[#1A2332]/80 px-1.5 py-0.5 font-mono text-[10px] text-white whitespace-nowrap">
           RROW {rrowWidth}m
         </div>
       </Html>
