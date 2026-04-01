@@ -8,9 +8,6 @@ import {
 } from '@/lib/actions/notification-triggers'
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
-import { createAdminClient } from '@/lib/supabase/admin'
-import { generateSessionSummary, generateCoachObservation } from '@/lib/adaptive/generateCoachObservation'
-import type { CognitiveStateIndicators, ConfidenceClassification } from '@/types/patent'
 import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
 
 export const endSession = async (
@@ -254,49 +251,48 @@ export const endSession = async (
     }
   }
 
-  // Patent: Generate session behavioral summary + coach observation (fire-and-forget)
+  // Patent: Session behavioral summary — dynamic import to avoid crashing module
   if (finalStatus === 'completed') {
-    const adminClient = createAdminClient()
-    ;(async () => {
-      try {
-        // Fetch cognitive state indicators for all questions in this session
-        const { data: indicators } = await adminClient
-          .from('cognitive_state_indicators')
-          .select('interaction_id, decision_confidence, hesitancy_index, cognitive_load_proxy, anomalous_behavior_likelihood, identity_consistency_score')
-          .in(
-            'interaction_id',
-            interactions?.map((i: { interaction_id: string }) => i.interaction_id) ?? [],
-          )
+    const interactionIds = interactions?.map((i: { interaction_id: string }) => i.interaction_id) ?? []
+    if (interactionIds.length > 0) {
+      ;(async () => {
+        try {
+          const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
+          const { generateSessionSummary } = await import('@/lib/adaptive/generateCoachObservation')
+          const admin = getAdmin()
 
-        if (indicators && indicators.length > 0) {
-          // Build items for session summary
-          const summaryItems = indicators.map((ind) => ({
-            questionId: ind.interaction_id,
-            indicators: {
-              decisionConfidence: ind.decision_confidence as ConfidenceClassification,
-              hesitancyIndex: ind.hesitancy_index,
-              cognitiveLoadProxy: ind.cognitive_load_proxy,
-              anomalousBehaviorLikelihood: ind.anomalous_behavior_likelihood,
-              identityConsistencyScore: ind.identity_consistency_score,
-            } satisfies CognitiveStateIndicators,
-          }))
+          const { data: indicators } = await admin
+            .from('cognitive_state_indicators')
+            .select('interaction_id, decision_confidence, hesitancy_index, cognitive_load_proxy, anomalous_behavior_likelihood, identity_consistency_score')
+            .in('interaction_id', interactionIds)
 
-          const summary = generateSessionSummary(summaryItems)
+          if (indicators && indicators.length > 0) {
+            const summaryItems = indicators.map((ind: Record<string, unknown>) => ({
+              questionId: ind.interaction_id as string,
+              indicators: {
+                decisionConfidence: ind.decision_confidence as 'high' | 'moderate' | 'low' | 'guessing',
+                hesitancyIndex: ind.hesitancy_index as number,
+                cognitiveLoadProxy: ind.cognitive_load_proxy as number,
+                anomalousBehaviorLikelihood: ind.anomalous_behavior_likelihood as number,
+                identityConsistencyScore: ind.identity_consistency_score as number | null,
+              },
+            }))
 
-          // Store session behavioral summary
-          await adminClient.from('session_behavioral_summaries').insert({
-            session_id: sessionId,
-            user_id: user.id,
-            item_confidence_levels: summary.itemConfidenceLevels,
-            session_consistency_score: summary.sessionConsistencyScore,
-            session_engagement_score: summary.sessionEngagementScore,
-            integrity_flag_counts: summary.integrityFlags,
-          })
+            const summary = generateSessionSummary(summaryItems)
+            await admin.from('session_behavioral_summaries').insert({
+              session_id: sessionId,
+              user_id: user.id,
+              item_confidence_levels: summary.itemConfidenceLevels,
+              session_consistency_score: summary.sessionConsistencyScore,
+              session_engagement_score: summary.sessionEngagementScore,
+              integrity_flag_counts: summary.integrityFlags,
+            })
+          }
+        } catch {
+          // Fire-and-forget — never affects results
         }
-      } catch {
-        // Non-fatal — behavioral summary is fire-and-forget
-      }
-    })()
+      })()
+    }
   }
 
   return {
