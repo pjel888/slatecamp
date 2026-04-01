@@ -43,17 +43,26 @@ export function PresetSelector() {
         defaultOpen={false}
         persistKey="presets"
         badge={
-          <button
+          <span
+            role="button"
+            tabIndex={0}
             onClick={(e) => {
               e.stopPropagation()
               handleReset()
             }}
-            className="flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-[9px] font-medium text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground"
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                e.stopPropagation()
+                handleReset()
+              }
+            }}
+            className="flex items-center gap-1 rounded-sm px-1.5 py-0.5 text-[9px] font-medium text-muted-foreground transition-colors duration-150 hover:bg-muted hover:text-foreground cursor-pointer"
             title="Reset to defaults"
           >
             <RotateCcw size={10} />
             Reset
-          </button>
+          </span>
         }
       >
         <div className="flex flex-wrap gap-1.5">
