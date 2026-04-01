@@ -7,6 +7,7 @@ import { useQuizStore } from '@/stores/useQuizStore'
 import { ConfidenceInput } from './ConfidenceInput'
 import { FeedbackPanel } from './FeedbackPanel'
 import { SlideToSubmit } from './SlideToSubmit'
+import { GestureCaptureZone } from './GestureCaptureZone'
 import type { QuestionForClient, FeedbackData, QuizSessionConfig } from '@/types/quiz-config'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -208,13 +209,15 @@ export const GenerationInput = ({
         />
       )}
 
-      {/* Slide-to-submit bar — always visible, disabled until answer entered or after submit */}
-      <SlideToSubmit
-        onSubmit={onSubmit}
-        label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
-        disabled={!hasAnswered || isDisabled}
-        checked={isChecked}
-      />
+      {/* Slide-to-submit bar — wrapped with signal capture zone (Patent Claims 1(a-b), 6) */}
+      <GestureCaptureZone>
+        <SlideToSubmit
+          onSubmit={onSubmit}
+          label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
+          disabled={!hasAnswered || isDisabled}
+          checked={isChecked}
+        />
+      </GestureCaptureZone>
 
       {/* Inline feedback panel */}
       {showFeedbackPanel && selectedOptionId && (

@@ -4,10 +4,8 @@ import { useEffect, useRef, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
-// Patent signal capture hooks — available but not yet wired to avoid pointer event conflicts
-// TODO: Wire via targeted SlideToSubmit wrapper component instead of global <main> handlers
-// import { useGestureSignalCapture } from '@/hooks/useGestureSignalCapture'
-// import { useDeviceSensors } from '@/hooks/useDeviceSensors'
+// Patent signal capture: wired via GestureCaptureZone wrapper around SlideToSubmit
+// in OptionsColumn.tsx and GenerationInput.tsx (not here — avoids global pointer conflicts)
 import { cn } from '@/lib/utils'
 import { QuizHeader } from './QuizHeader'
 import { QuizBody } from './QuizBody'
@@ -44,9 +42,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const initializedRef = useRef(false)
   const directionRef = useRef<'forward' | 'backward'>('forward')
   const reducedMotion = useReducedMotion()
-  // Patent signal capture — hooks available, wiring deferred to avoid pointer conflicts
-  // const gestureCapture = useGestureSignalCapture()
-  // const sensors = useDeviceSensors()
+  // Patent signal capture: handled by GestureCaptureZone in OptionsColumn/GenerationInput
 
   // ── Store state ───────────────────────────────────────────────────────────
 
@@ -83,7 +79,6 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const hideSubmitModal = useQuizStore((s) => s.hideSubmitModal)
   const hideMicroBreak = useQuizStore((s) => s.hideMicroBreak)
   const endSession = useQuizStore((s) => s.endSession)
-  const setSensorsAvailable = useQuizStore((s) => s.setSensorsAvailable)
 
   // ── Initialize session on mount ───────────────────────────────────────────
 
@@ -145,8 +140,6 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
     }
   }, [status, results, config.mode, sessionId, storeSessionId, router])
 
-  // ── Patent sensor availability — deferred until signal capture wiring is resolved
-  // useEffect(() => { setSensorsAvailable(sensors.sensorsAvailable) }, [setSensorsAvailable])
 
   // ── Derived data ──────────────────────────────────────────────────────────
 
