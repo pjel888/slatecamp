@@ -2,6 +2,8 @@
 
 import { useDevControlsStore } from '../../stores/useDevControlsStore'
 import { lookupFLAR } from '@/lib/pd1096/zoningTables'
+import { Info } from 'lucide-react'
+import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'
 
 // ─── FLAR Controls (Left Column) ───────────────────────────────────────────
 // Slider + zone range indicator + reset button. Metrics grid is in FlarInfo.
@@ -23,9 +25,27 @@ export function FlarControls() {
 
   return (
     <div>
-      <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-        Floor Area Ratio
-      </label>
+      <div className="mb-2 flex items-center gap-1.5">
+        <label className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+          Floor Area Ratio
+        </label>
+        <Popover>
+          <PopoverTrigger>
+            <Info size={12} className="text-muted-foreground/50 transition-colors hover:text-muted-foreground" />
+          </PopoverTrigger>
+          <PopoverContent side="top" className="max-w-[280px]">
+            <PopoverHeader>
+              <PopoverTitle>Floor Area Ratio (FLAR)</PopoverTitle>
+              <PopoverDescription>
+                The ratio of a building's total gross floor area to the total lot area.
+                FLAR determines the maximum allowable construction area — a higher FLAR
+                allows more floor area relative to the lot size. Governed by PD 1096 IRR
+                Rule VII, Sec. 705 and Table VII.G.1.
+              </PopoverDescription>
+            </PopoverHeader>
+          </PopoverContent>
+        </Popover>
+      </div>
       <div className="mb-1 flex items-baseline justify-between">
         <label className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">FLAR</label>
         <span className={`font-mono text-xs font-medium ${isOutOfRange ? 'text-amber-600' : 'text-foreground'}`}>
