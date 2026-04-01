@@ -1,9 +1,6 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import { createAdminClient } from '@/lib/supabase/admin'
-import { extractFeatures } from '@/lib/signals/extractFeatures'
-import { classifyBehavioralState } from '@/lib/inference/classifyConfidence'
 import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
@@ -112,13 +109,6 @@ export const submitAnswer = async (
         question_order: questionOrder,
         interaction_timestamp: new Date().toISOString(),
         updated_at: new Date().toISOString(),
-        // Patent columns — only include when patent data is present to avoid
-        // breaking the UPSERT if columns haven't propagated to all environments
-        ...(input.cageTrustLevel != null && {
-          integrity_status: 'pending',
-          cage_trust_level: input.cageTrustLevel,
-          gesture_duration_ms: input.gestureDurationMs ?? null,
-        }),
       },
       { onConflict: 'user_id,session_id,question_id' },
     )
@@ -231,102 +221,93 @@ export const submitAnswer = async (
     // Swallow — hooks are fire-and-forget
   })
 
-  // Patent: Async storage of signal trace + CAGE token (fire-and-forget)
+  // Patent: Async storage + analysis — all dynamic imports to avoid crashing module at load time
+  // Entire block is fire-and-forget — never blocks the submission response
   if (interactionId && (input.signalTrace?.length || input.cageToken)) {
-    const adminClient = createAdminClient()
-    const patentOps: PromiseLike<unknown>[] = []
+    ;(async () => {
+      try {
+        const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
+        const admin = getAdmin()
 
-    // Store signal trace in interaction_signal_traces (trade secret table)
-    if (input.signalTrace && input.signalTrace.length > 0) {
-      const firstEvent = input.signalTrace[0]
-      const lastEvent = input.signalTrace[input.signalTrace.length - 1]
-      const durationMs = Math.round(lastEvent.timestamp - firstEvent.timestamp)
-      patentOps.push(
-        adminClient.from('interaction_signal_traces').insert({
-          interaction_id: interactionId,
-          events: input.signalTrace,
-          event_count: input.signalTrace.length,
-          duration_ms: durationMs,
-          capture_rate_hz: durationMs > 0 ? input.signalTrace.length / (durationMs / 1000) : 0,
-          device_sensors_available: input.sensorsAvailable ?? false,
-        }).then(),
-      )
-    }
-
-    // Store CAGE binding token in cage_binding_tokens (highest security table)
-    if (input.cageToken) {
-      patentOps.push(
-        adminClient.from('cage_binding_tokens').insert({
-          interaction_id: interactionId,
-          session_id: input.sessionId,
-          question_id: input.questionId,
-          response_hash: input.cageToken.responseHash,
-          behavioral_attestation: input.cageToken.behavioralAttestation,
-          nonce: input.cageToken.nonce,
-          sequence_number: input.cageToken.sequenceNumber,
-          signature: input.cageToken.signature,
-          previous_token_hash: input.cageToken.previousTokenHash,
-          trust_level: input.cageTrustLevel ?? 'absent',
-        }).then(),
-      )
-    }
-
-    Promise.all(patentOps)
-      .then(async () => {
-        // After traces are stored, run feature extraction + inference
-        if (input.signalTrace && input.signalTrace.length >= 5) {
-          try {
-            const features = extractFeatures(input.signalTrace, {
-              timeOnTaskMs: input.timeSpentMs,
-              answerChangeCount: 0, // TODO: track answer changes in store
-              itemDifficulty: question.difficulty ?? 0.5,
-            })
-
-            // Store feature vector
-            await adminClient.from('behavioral_features').insert({
-              interaction_id: interactionId,
-              interaction_path_metric: features.interactionPathMetric,
-              temporal_metric: features.temporalMetric,
-              velocity_mean: features.velocityProfile.mean,
-              velocity_max: features.velocityProfile.max,
-              velocity_std_dev: features.velocityProfile.stdDev,
-              is_deliberate: features.velocityProfile.isDeliberate,
-              path_deviation: features.pathDeviation,
-              dwell_times: features.dwellTimes,
-              reversal_count: features.reversalCount,
-              pressure_mean: features.pressureProfile.mean,
-              pressure_variance: features.pressureProfile.variance,
-              jerk_metric: features.jerkMetric,
-              micropatterns: features.micropatterns,
-              assessment_context: features.assessmentContext,
-            })
-
-            // Run inference
-            const indicators = classifyBehavioralState(features)
-
-            // Store cognitive state indicators
-            await adminClient.from('cognitive_state_indicators').insert({
-              interaction_id: interactionId,
-              decision_confidence: indicators.decisionConfidence,
-              hesitancy_index: indicators.hesitancyIndex,
-              cognitive_load_proxy: indicators.cognitiveLoadProxy,
-              anomalous_behavior_likelihood: indicators.anomalousBehaviorLikelihood,
-              identity_consistency_score: indicators.identityConsistencyScore,
-            })
-
-            // Update integrity status based on inference
-            const integrityStatus = indicators.anomalousBehaviorLikelihood > 0.7 ? 'flagged' : 'verified'
-            await adminClient.from('user_interactions')
-              .update({ integrity_status: integrityStatus })
-              .eq('interaction_id', interactionId)
-          } catch {
-            // Feature extraction / inference failure is non-fatal
-          }
+        // Store signal trace
+        if (input.signalTrace && input.signalTrace.length > 0) {
+          const first = input.signalTrace[0]
+          const last = input.signalTrace[input.signalTrace.length - 1]
+          const dur = Math.round(last.timestamp - first.timestamp)
+          await admin.from('interaction_signal_traces').insert({
+            interaction_id: interactionId,
+            events: input.signalTrace,
+            event_count: input.signalTrace.length,
+            duration_ms: dur,
+            capture_rate_hz: dur > 0 ? input.signalTrace.length / (dur / 1000) : 0,
+            device_sensors_available: input.sensorsAvailable ?? false,
+          })
         }
-      })
-      .catch(() => {
-        // Swallow — patent processing is fire-and-forget
-      })
+
+        // Store CAGE token
+        if (input.cageToken) {
+          await admin.from('cage_binding_tokens').insert({
+            interaction_id: interactionId,
+            session_id: input.sessionId,
+            question_id: input.questionId,
+            response_hash: input.cageToken.responseHash,
+            behavioral_attestation: input.cageToken.behavioralAttestation,
+            nonce: input.cageToken.nonce,
+            sequence_number: input.cageToken.sequenceNumber,
+            signature: input.cageToken.signature,
+            previous_token_hash: input.cageToken.previousTokenHash,
+            trust_level: input.cageTrustLevel ?? 'absent',
+          })
+        }
+
+        // Feature extraction + inference (only with sufficient signal data)
+        if (input.signalTrace && input.signalTrace.length >= 5) {
+          const { extractFeatures: extract } = await import('@/lib/signals/extractFeatures')
+          const { classifyBehavioralState: classify } = await import('@/lib/inference/classifyConfidence')
+
+          const features = extract(input.signalTrace, {
+            timeOnTaskMs: input.timeSpentMs,
+            answerChangeCount: 0,
+            itemDifficulty: question.difficulty ?? 0.5,
+          })
+
+          await admin.from('behavioral_features').insert({
+            interaction_id: interactionId,
+            interaction_path_metric: features.interactionPathMetric,
+            temporal_metric: features.temporalMetric,
+            velocity_mean: features.velocityProfile.mean,
+            velocity_max: features.velocityProfile.max,
+            velocity_std_dev: features.velocityProfile.stdDev,
+            is_deliberate: features.velocityProfile.isDeliberate,
+            path_deviation: features.pathDeviation,
+            dwell_times: features.dwellTimes,
+            reversal_count: features.reversalCount,
+            pressure_mean: features.pressureProfile.mean,
+            pressure_variance: features.pressureProfile.variance,
+            jerk_metric: features.jerkMetric,
+            micropatterns: features.micropatterns,
+            assessment_context: features.assessmentContext,
+          })
+
+          const indicators = classify(features)
+          await admin.from('cognitive_state_indicators').insert({
+            interaction_id: interactionId,
+            decision_confidence: indicators.decisionConfidence,
+            hesitancy_index: indicators.hesitancyIndex,
+            cognitive_load_proxy: indicators.cognitiveLoadProxy,
+            anomalous_behavior_likelihood: indicators.anomalousBehaviorLikelihood,
+            identity_consistency_score: indicators.identityConsistencyScore,
+          })
+
+          const status = indicators.anomalousBehaviorLikelihood > 0.7 ? 'flagged' : 'verified'
+          await admin.from('user_interactions')
+            .update({ integrity_status: status })
+            .eq('interaction_id', interactionId)
+        }
+      } catch {
+        // Entire patent block is fire-and-forget — never affects submission
+      }
+    })()
   }
 
   return {
