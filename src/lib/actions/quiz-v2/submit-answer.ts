@@ -112,9 +112,13 @@ export const submitAnswer = async (
         question_order: questionOrder,
         interaction_timestamp: new Date().toISOString(),
         updated_at: new Date().toISOString(),
-        integrity_status: 'pending',
-        cage_trust_level: input.cageTrustLevel ?? 'absent',
-        gesture_duration_ms: input.gestureDurationMs ?? null,
+        // Patent columns — only include when patent data is present to avoid
+        // breaking the UPSERT if columns haven't propagated to all environments
+        ...(input.cageTrustLevel != null && {
+          integrity_status: 'pending',
+          cage_trust_level: input.cageTrustLevel,
+          gesture_duration_ms: input.gestureDurationMs ?? null,
+        }),
       },
       { onConflict: 'user_id,session_id,question_id' },
     )
