@@ -4,8 +4,10 @@ import { useEffect, useRef, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
-import { useGestureSignalCapture } from '@/hooks/useGestureSignalCapture'
-import { useDeviceSensors } from '@/hooks/useDeviceSensors'
+// Patent signal capture hooks — available but not yet wired to avoid pointer event conflicts
+// TODO: Wire via targeted SlideToSubmit wrapper component instead of global <main> handlers
+// import { useGestureSignalCapture } from '@/hooks/useGestureSignalCapture'
+// import { useDeviceSensors } from '@/hooks/useDeviceSensors'
 import { cn } from '@/lib/utils'
 import { QuizHeader } from './QuizHeader'
 import { QuizBody } from './QuizBody'
@@ -42,8 +44,9 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const initializedRef = useRef(false)
   const directionRef = useRef<'forward' | 'backward'>('forward')
   const reducedMotion = useReducedMotion()
-  const gestureCapture = useGestureSignalCapture()
-  const sensors = useDeviceSensors()
+  // Patent signal capture — hooks available, wiring deferred to avoid pointer conflicts
+  // const gestureCapture = useGestureSignalCapture()
+  // const sensors = useDeviceSensors()
 
   // ── Store state ───────────────────────────────────────────────────────────
 
@@ -80,7 +83,6 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   const hideSubmitModal = useQuizStore((s) => s.hideSubmitModal)
   const hideMicroBreak = useQuizStore((s) => s.hideMicroBreak)
   const endSession = useQuizStore((s) => s.endSession)
-  const setSignalBuffer = useQuizStore((s) => s.setSignalBuffer)
   const setSensorsAvailable = useQuizStore((s) => s.setSensorsAvailable)
 
   // ── Initialize session on mount ───────────────────────────────────────────
@@ -143,22 +145,8 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
     }
   }, [status, results, config.mode, sessionId, storeSessionId, router])
 
-  // ── Sync sensor availability to store on mount ────────────────────────────
-
-  useEffect(() => {
-    setSensorsAvailable(sensors.sensorsAvailable)
-  // sensors.sensorsAvailable is derived from a ref; only run on mount
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [setSensorsAvailable])
-
-  // ── Start sensor capture and reset gesture buffer on each new question ────
-
-  useEffect(() => {
-    sensors.startCapture()
-    gestureCapture.resetBuffer()
-  // currentIndex change drives this; stable hook refs don't need listing
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentIndex])
+  // ── Patent sensor availability — deferred until signal capture wiring is resolved
+  // useEffect(() => { setSensorsAvailable(sensors.sensorsAvailable) }, [setSensorsAvailable])
 
   // ── Derived data ──────────────────────────────────────────────────────────
 
@@ -224,26 +212,8 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
   )
 
   const handleSubmit = useCallback(() => {
-    // Capture signal buffer and store it before submitCurrentAnswer reads it
-    const signals = gestureCapture.getSignalBuffer()
-
-    // Enrich with latest sensor reading
-    const sensorReading = sensors.getLatestReading()
-    if (sensorReading.accelerometer || sensorReading.gyroscope) {
-      signals.forEach(event => {
-        if (!event.accelerometer && sensorReading.accelerometer) {
-          event.accelerometer = sensorReading.accelerometer
-        }
-        if (!event.gyroscope && sensorReading.gyroscope) {
-          event.gyroscope = sensorReading.gyroscope
-        }
-      })
-    }
-
-    setSignalBuffer(signals)
-    sensors.stopCapture()
     submitCurrentAnswer()
-  }, [submitCurrentAnswer, gestureCapture, sensors, setSignalBuffer])
+  }, [submitCurrentAnswer])
 
   const handleNext = useCallback(() => {
     directionRef.current = 'forward'
@@ -395,12 +365,7 @@ export const QuizShell = ({ sessionId, config, questions }: QuizShellProps) => {
         }
       />
 
-      <main
-        className="flex-1 overflow-hidden relative"
-        onPointerDown={gestureCapture.handlePointerDown}
-        onPointerMove={gestureCapture.handlePointerMove}
-        onPointerUp={gestureCapture.handlePointerUp}
-      >
+      <main className="flex-1 overflow-hidden relative">
         <div
           key={currentQuestion.question_id}
           className={cn(
