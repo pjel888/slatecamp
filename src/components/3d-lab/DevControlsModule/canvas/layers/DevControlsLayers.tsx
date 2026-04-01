@@ -108,7 +108,7 @@ export function DevControlsLayers() {
               // X-ray OFF = solid opaque. X-ray ON = see-through + wireframe edges.
               // Key includes xray state to force material remount (Three.js can't
               // toggle `transparent` dynamically without recompiling the shader).
-              const slabOpacity = xray ? 0.12 : 0.95
+              const slabOpacity = xray ? 0.35 : 0.95
               return (
                 <mesh key={`${fn}-${xray}`} position={[sbL + fpW / 2, y, sbF + fpD / 2]}>
                   <boxGeometry args={[fpW, 0.15, fpD]} />
