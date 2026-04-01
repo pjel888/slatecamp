@@ -2,6 +2,8 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { extractFeatures } from '@/lib/signals/extractFeatures'
+import { classifyBehavioralState } from '@/lib/inference/classifyConfidence'
 import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
@@ -265,9 +267,62 @@ export const submitAnswer = async (
       )
     }
 
-    Promise.all(patentOps).catch(() => {
-      // Swallow — patent trace storage is fire-and-forget
-    })
+    Promise.all(patentOps)
+      .then(async () => {
+        // After traces are stored, run feature extraction + inference
+        if (input.signalTrace && input.signalTrace.length >= 5) {
+          try {
+            const features = extractFeatures(input.signalTrace, {
+              timeOnTaskMs: input.timeSpentMs,
+              answerChangeCount: 0, // TODO: track answer changes in store
+              itemDifficulty: question.difficulty ?? 0.5,
+            })
+
+            // Store feature vector
+            await adminClient.from('behavioral_features').insert({
+              interaction_id: interactionId,
+              interaction_path_metric: features.interactionPathMetric,
+              temporal_metric: features.temporalMetric,
+              velocity_mean: features.velocityProfile.mean,
+              velocity_max: features.velocityProfile.max,
+              velocity_std_dev: features.velocityProfile.stdDev,
+              is_deliberate: features.velocityProfile.isDeliberate,
+              path_deviation: features.pathDeviation,
+              dwell_times: features.dwellTimes,
+              reversal_count: features.reversalCount,
+              pressure_mean: features.pressureProfile.mean,
+              pressure_variance: features.pressureProfile.variance,
+              jerk_metric: features.jerkMetric,
+              micropatterns: features.micropatterns,
+              assessment_context: features.assessmentContext,
+            })
+
+            // Run inference
+            const indicators = classifyBehavioralState(features)
+
+            // Store cognitive state indicators
+            await adminClient.from('cognitive_state_indicators').insert({
+              interaction_id: interactionId,
+              decision_confidence: indicators.decisionConfidence,
+              hesitancy_index: indicators.hesitancyIndex,
+              cognitive_load_proxy: indicators.cognitiveLoadProxy,
+              anomalous_behavior_likelihood: indicators.anomalousBehaviorLikelihood,
+              identity_consistency_score: indicators.identityConsistencyScore,
+            })
+
+            // Update integrity status based on inference
+            const integrityStatus = indicators.anomalousBehaviorLikelihood > 0.7 ? 'flagged' : 'verified'
+            await adminClient.from('user_interactions')
+              .update({ integrity_status: integrityStatus })
+              .eq('interaction_id', interactionId)
+          } catch {
+            // Feature extraction / inference failure is non-fatal
+          }
+        }
+      })
+      .catch(() => {
+        // Swallow — patent processing is fire-and-forget
+      })
   }
 
   return {

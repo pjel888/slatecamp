@@ -4,6 +4,8 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { normalizeOptions } from '@/lib/utils/question'
 import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selection'
+import { randomBytes } from 'crypto'
+import { issueNonceBatch } from '@/lib/cage/nonceService'
 import type {
   StartSessionInput,
   StartSessionResult,
@@ -252,12 +254,26 @@ export const startSession = async (
         ),
     )
 
+    // Patent: Issue CAGE nonces + session key for interleaved path
+    let ilNonces: Record<string, { nonce: string; expiresAt: string }> = {}
+    let ilSessionKey: string | null = null
+    try {
+      const ilQuestionIds = ilClientQuestions.map((q) => q.question_id)
+      const ilNonceMap = await issueNonceBatch(ilSession.session_id, ilQuestionIds, user.id)
+      ilNonces = Object.fromEntries(ilNonceMap)
+      ilSessionKey = randomBytes(32).toString('hex')
+    } catch {
+      // Non-fatal — CAGE degrades gracefully
+    }
+
     return {
       sessionId: ilSession.session_id,
       config: mergedConfig,
       questions: ilClientQuestions,
       totalQuestions: ilClientQuestions.length,
       readinessScoreBefore,
+      nonces: ilNonces,
+      sessionKey: ilSessionKey,
     }
   }
 
@@ -396,11 +412,25 @@ export const startSession = async (
       ),
   )
 
+  // Patent: Issue CAGE nonces + generate session HMAC key (fire-and-forget on failure)
+  let nonces: Record<string, { nonce: string; expiresAt: string }> = {}
+  let sessionKey: string | null = null
+  try {
+    const questionIds = clientQuestions.map((q) => q.question_id)
+    const nonceMap = await issueNonceBatch(session.session_id, questionIds, user.id)
+    nonces = Object.fromEntries(nonceMap)
+    sessionKey = randomBytes(32).toString('hex')
+  } catch {
+    // Nonce issuance failure is non-fatal — CAGE degrades gracefully (Q1 decision)
+  }
+
   return {
     sessionId: session.session_id,
     config: mergedConfig,
     questions: clientQuestions,
     totalQuestions: clientQuestions.length,
     readinessScoreBefore,
+    nonces,
+    sessionKey,
   }
 }

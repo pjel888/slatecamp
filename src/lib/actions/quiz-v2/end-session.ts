@@ -8,6 +8,9 @@ import {
 } from '@/lib/actions/notification-triggers'
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { generateSessionSummary, generateCoachObservation } from '@/lib/adaptive/generateCoachObservation'
+import type { CognitiveStateIndicators, ConfidenceClassification } from '@/types/patent'
 import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
 
 export const endSession = async (
@@ -40,7 +43,7 @@ export const endSession = async (
   // 2. Count answered and correct from user_interactions
   const { data: interactions, error: interactionsError } = await supabase
     .from('user_interactions')
-    .select('question_id, is_correct, topic_id, time_spent_ms')
+    .select('interaction_id, question_id, is_correct, topic_id, time_spent_ms')
     .eq('session_id', sessionId)
     .eq('user_id', user.id)
 
@@ -249,6 +252,51 @@ export const endSession = async (
       // Recommendations are non-critical; proceed without them
       recommendations = []
     }
+  }
+
+  // Patent: Generate session behavioral summary + coach observation (fire-and-forget)
+  if (finalStatus === 'completed') {
+    const adminClient = createAdminClient()
+    ;(async () => {
+      try {
+        // Fetch cognitive state indicators for all questions in this session
+        const { data: indicators } = await adminClient
+          .from('cognitive_state_indicators')
+          .select('interaction_id, decision_confidence, hesitancy_index, cognitive_load_proxy, anomalous_behavior_likelihood, identity_consistency_score')
+          .in(
+            'interaction_id',
+            interactions?.map((i: { interaction_id: string }) => i.interaction_id) ?? [],
+          )
+
+        if (indicators && indicators.length > 0) {
+          // Build items for session summary
+          const summaryItems = indicators.map((ind) => ({
+            questionId: ind.interaction_id,
+            indicators: {
+              decisionConfidence: ind.decision_confidence as ConfidenceClassification,
+              hesitancyIndex: ind.hesitancy_index,
+              cognitiveLoadProxy: ind.cognitive_load_proxy,
+              anomalousBehaviorLikelihood: ind.anomalous_behavior_likelihood,
+              identityConsistencyScore: ind.identity_consistency_score,
+            } satisfies CognitiveStateIndicators,
+          }))
+
+          const summary = generateSessionSummary(summaryItems)
+
+          // Store session behavioral summary
+          await adminClient.from('session_behavioral_summaries').insert({
+            session_id: sessionId,
+            user_id: user.id,
+            item_confidence_levels: summary.itemConfidenceLevels,
+            session_consistency_score: summary.sessionConsistencyScore,
+            session_engagement_score: summary.sessionEngagementScore,
+            integrity_flag_counts: summary.integrityFlags,
+          })
+        }
+      } catch {
+        // Non-fatal — behavioral summary is fire-and-forget
+      }
+    })()
   }
 
   return {
