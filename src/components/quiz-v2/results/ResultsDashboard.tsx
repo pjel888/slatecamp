@@ -10,6 +10,7 @@ import { ResultsWithPostdiction } from './ResultsWithPostdiction'
 import { PredictionComparison } from './PredictionComparison'
 import { FeedForwardCards } from './FeedForwardCards'
 import { SimulationDebrief } from './SimulationDebrief'
+import { CoachObservationCard } from './CoachObservationCard'
 import type {
   EndSessionResult,
   QuizSessionConfig,
@@ -143,6 +144,9 @@ const ResultsDashboard = ({
             </div>
           )}
         </section>
+
+        {/* ── Coach behavioral observation — populated when behavioral data is available */}
+        <CoachObservationCard observation={null} />
 
         {/* ── Section 2: Self-Assessment Accuracy ────────────────────────────── */}
         {hasPrediction && (

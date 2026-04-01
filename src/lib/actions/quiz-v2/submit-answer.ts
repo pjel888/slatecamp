@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
@@ -109,6 +110,9 @@ export const submitAnswer = async (
         question_order: questionOrder,
         interaction_timestamp: new Date().toISOString(),
         updated_at: new Date().toISOString(),
+        integrity_status: 'pending',
+        cage_trust_level: input.cageTrustLevel ?? 'absent',
+        gesture_duration_ms: input.gestureDurationMs ?? null,
       },
       { onConflict: 'user_id,session_id,question_id' },
     )
@@ -220,6 +224,51 @@ export const submitAnswer = async (
   }).catch(() => {
     // Swallow — hooks are fire-and-forget
   })
+
+  // Patent: Async storage of signal trace + CAGE token (fire-and-forget)
+  if (interactionId && (input.signalTrace?.length || input.cageToken)) {
+    const adminClient = createAdminClient()
+    const patentOps: PromiseLike<unknown>[] = []
+
+    // Store signal trace in interaction_signal_traces (trade secret table)
+    if (input.signalTrace && input.signalTrace.length > 0) {
+      const firstEvent = input.signalTrace[0]
+      const lastEvent = input.signalTrace[input.signalTrace.length - 1]
+      const durationMs = Math.round(lastEvent.timestamp - firstEvent.timestamp)
+      patentOps.push(
+        adminClient.from('interaction_signal_traces').insert({
+          interaction_id: interactionId,
+          events: input.signalTrace,
+          event_count: input.signalTrace.length,
+          duration_ms: durationMs,
+          capture_rate_hz: durationMs > 0 ? input.signalTrace.length / (durationMs / 1000) : 0,
+          device_sensors_available: input.sensorsAvailable ?? false,
+        }).then(),
+      )
+    }
+
+    // Store CAGE binding token in cage_binding_tokens (highest security table)
+    if (input.cageToken) {
+      patentOps.push(
+        adminClient.from('cage_binding_tokens').insert({
+          interaction_id: interactionId,
+          session_id: input.sessionId,
+          question_id: input.questionId,
+          response_hash: input.cageToken.responseHash,
+          behavioral_attestation: input.cageToken.behavioralAttestation,
+          nonce: input.cageToken.nonce,
+          sequence_number: input.cageToken.sequenceNumber,
+          signature: input.cageToken.signature,
+          previous_token_hash: input.cageToken.previousTokenHash,
+          trust_level: input.cageTrustLevel ?? 'absent',
+        }).then(),
+      )
+    }
+
+    Promise.all(patentOps).catch(() => {
+      // Swallow — patent trace storage is fire-and-forget
+    })
+  }
 
   return {
     isCorrect,

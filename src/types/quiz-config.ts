@@ -193,6 +193,10 @@ export interface StartSessionResult {
   questions: QuestionForClient[]
   totalQuestions: number
   readinessScoreBefore: number
+  /** Pre-fetched CAGE nonces — one per question (Patent Claim 21) */
+  nonces?: Record<string, { nonce: string; expiresAt: string }>
+  /** Session-derived HMAC signing key for CAGE tokens (hex) */
+  sessionKey?: string
 }
 
 export interface SubmitAnswerInput {
@@ -202,6 +206,16 @@ export interface SubmitAnswerInput {
   /** Continuous 0–1 confidence score */
   confidenceLevel?: number
   timeSpentMs: number
+  /** Patent extension: CAGE binding token (Claims 3, 20, 21) */
+  cageToken?: import('@/types/patent').CAGEBindingToken | null
+  /** Patent extension: trust level if CAGE generation failed */
+  cageTrustLevel?: import('@/types/patent').CAGETrustLevel
+  /** Patent extension: raw gesture signal events (Claims 1(b), 6, 7) */
+  signalTrace?: import('@/types/patent').GestureSignalEvent[]
+  /** Patent extension: gesture duration in ms */
+  gestureDurationMs?: number
+  /** Patent extension: whether device sensors were available */
+  sensorsAvailable?: boolean
 }
 
 export interface SubmitAnswerResult {

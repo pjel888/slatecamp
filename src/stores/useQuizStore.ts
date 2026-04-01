@@ -22,6 +22,8 @@ import type {
   FeedbackData,
   ErrorDiagnostic,
 } from '@/types/quiz-config'
+import type { GestureSignalEvent, CAGEBindingToken } from '@/types/patent'
+import { generateBindingTokenSafe } from '@/lib/cage/generateBindingToken'
 
 // ---------------------------------------------------------------------------
 // Sub-state shapes
@@ -111,6 +113,20 @@ interface QuizStore {
   // SETTINGS STATE (persisted)
   settings: SettingsState
 
+  // CAGE / PATENT STATE (not persisted — regenerated each session)
+  /** Pre-fetched nonces per question (from startSession) */
+  nonces: Record<string, { nonce: string; expiresAt: string }>
+  /** Session-derived HMAC key for CAGE token signing */
+  sessionKey: string | null
+  /** Monotonic CAGE sequence counter */
+  cageSequenceNumber: number
+  /** Hash of the previous CAGE token (chain link — Claim 20) */
+  previousCageTokenHash: string | null
+  /** Transient signal buffer — set by QuizShell, consumed by submitCurrentAnswer */
+  pendingSignalBuffer: GestureSignalEvent[]
+  /** Whether device sensors are available */
+  deviceSensorsAvailable: boolean
+
   // OFFLINE QUEUE
   pendingSubmissions: SubmitAnswerInput[]
 
@@ -168,6 +184,13 @@ interface QuizStore {
   showFeedback: (data: FeedbackData) => void
   hideFeedback: () => void
   enableNextButton: () => void
+
+  // -------------------------------------------------------------------------
+  // PATENT SIGNAL ACTIONS
+  // -------------------------------------------------------------------------
+
+  setSignalBuffer: (events: GestureSignalEvent[]) => void
+  setSensorsAvailable: (available: boolean) => void
 
   // -------------------------------------------------------------------------
   // FEEDBACK GATE ACTIONS
@@ -309,6 +332,13 @@ export const useQuizStore = create<QuizStore>()(
         streakBroken: false,
         settings: defaultSettings(),
 
+        nonces: {},
+        sessionKey: null,
+        cageSequenceNumber: 0,
+        previousCageTokenHash: null,
+        pendingSignalBuffer: [],
+        deviceSensorsAvailable: false,
+
         pendingSubmissions: [],
         results: null,
 
@@ -392,6 +422,12 @@ export const useQuizStore = create<QuizStore>()(
             timer: { ...defaultTimer(), limitMs },
             feedback: defaultFeedback(),
             ui: defaultUI(),
+            // Patent: store pre-fetched nonces and session key
+            nonces: result.nonces ?? {},
+            sessionKey: result.sessionKey ?? null,
+            cageSequenceNumber: 0,
+            previousCageTokenHash: null,
+            pendingSignalBuffer: [],
             pendingSubmissions: [],
             results: null,
           })
@@ -414,6 +450,12 @@ export const useQuizStore = create<QuizStore>()(
             streakCount: 0,
             streakBroken: false,
             // settings intentionally NOT reset — persisted across sessions
+            nonces: {},
+            sessionKey: null,
+            cageSequenceNumber: 0,
+            previousCageTokenHash: null,
+            pendingSignalBuffer: [],
+            deviceSensorsAvailable: false,
             pendingSubmissions: [],
             results: null,
           }),
@@ -452,7 +494,9 @@ export const useQuizStore = create<QuizStore>()(
         },
 
         submitCurrentAnswer: async () => {
-          const { sessionId, questions, currentIndex, answers, config } = get()
+          const { sessionId, questions, currentIndex, answers, config,
+            nonces, sessionKey, cageSequenceNumber, previousCageTokenHash,
+            pendingSignalBuffer, deviceSensorsAvailable } = get()
           const question = questions[currentIndex]
           if (!question || !sessionId) return
 
@@ -461,15 +505,45 @@ export const useQuizStore = create<QuizStore>()(
 
           const timeSpentMs = Date.now() - answerState.timeStartedMs
 
+          // Patent: Generate CAGE binding token (Claims 3, 20, 21)
+          const questionNonce = nonces[question.question_id]
+          const cageResult = await generateBindingTokenSafe(
+            { questionId: question.question_id, selectedOptionId: answerState.selectedOptionId },
+            pendingSignalBuffer,
+            questionNonce?.nonce ?? null,
+            cageSequenceNumber,
+            sessionKey,
+            previousCageTokenHash,
+          )
+
+          // Update CAGE chain state
+          const nextCageState = cageResult.token
+            ? {
+                cageSequenceNumber: cageSequenceNumber + 1,
+                previousCageTokenHash: cageResult.token.signature,
+              }
+            : { cageSequenceNumber: cageSequenceNumber + 1 }
+
+          // Compute gesture duration from signal buffer
+          const gestureDurationMs = pendingSignalBuffer.length >= 2
+            ? pendingSignalBuffer[pendingSignalBuffer.length - 1].timestamp - pendingSignalBuffer[0].timestamp
+            : 0
+
           const input: SubmitAnswerInput = {
             sessionId,
             questionId: question.question_id,
             selectedOptionId: answerState.selectedOptionId,
             confidenceLevel: answerState.confidenceLevel ?? undefined,
             timeSpentMs,
+            // Patent extension fields
+            cageToken: cageResult.token,
+            cageTrustLevel: cageResult.trustLevel,
+            signalTrace: pendingSignalBuffer.length > 0 ? pendingSignalBuffer : undefined,
+            gestureDurationMs: gestureDurationMs > 0 ? gestureDurationMs : undefined,
+            sensorsAvailable: deviceSensorsAvailable,
           }
 
-          set({ status: 'submitting' })
+          set({ status: 'submitting', pendingSignalBuffer: [], ...nextCageState })
 
           try {
             const result = await submitAnswerAction(input)
@@ -801,6 +875,11 @@ export const useQuizStore = create<QuizStore>()(
           }))
           get().goToQuestion(currentIndex)
         },
+
+        // ── Patent signal actions ─────────────────────────────────────────────
+
+        setSignalBuffer: (events) => set({ pendingSignalBuffer: events }),
+        setSensorsAvailable: (available) => set({ deviceSensorsAvailable: available }),
 
         // ── Feedback gate actions ─────────────────────────────────────────────
 
