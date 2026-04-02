@@ -166,7 +166,10 @@
       "Bash(rm -f src/app/dashboard/3d-lab/_constants/siteControls.ts)",
       "Bash(npx bun -e \":*)",
       "Bash(npx bun run -e \":*)",
-      "mcp__27da826c-ca74-4d7f-b4d9-7645c5641d6d__get_advisors"
+      "mcp__27da826c-ca74-4d7f-b4d9-7645c5641d6d__get_advisors",
+      "Bash(bun scripts/normalize-distractors.ts --dry-run --limit 10)",
+      "Bash(bun scripts/normalize-distractors.ts --limit 25)",
+      "Bash(bun add:*)"
     ]
   }
 }
