@@ -117,7 +117,7 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
 
 // ─── Featured Module Banner ───────────────────────────────────────────────────
 
-function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
+export function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
   const href = basePath
     ? `${basePath}?model=site-development-controls`
     : '/dashboard/3d-lab?model=site-development-controls'

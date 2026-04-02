@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useMemo } from 'react'
-import { CaretRight, Cube } from '@phosphor-icons/react/dist/ssr'
+import { CaretRight, Cube, Eye } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import type { RegistryTree, ModelNode } from '../_lib/model-registry-data'
+import { DASHBOARD_VISIBLE_IDS } from '@/app/dashboard/3d-lab/_config/dashboard-visibility'
 
 /* ------------------------------------------------------------------ */
 /*  Template type badge colors                                         */
@@ -203,6 +204,15 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
                                 >
                                   {mod.title}
                                 </span>
+                                {DASHBOARD_VISIBLE_IDS.has(mod.id) && (
+                                  <span title="Visible on dashboard">
+                                    <Eye
+                                      size={12}
+                                      weight="duotone"
+                                      className="shrink-0 text-[#2D9F6F]"
+                                    />
+                                  </span>
+                                )}
                                 <span
                                   className={cn(
                                     'shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium',

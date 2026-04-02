@@ -1,8 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Cube, CaretRight, Info } from '@phosphor-icons/react/dist/ssr'
+import { Cube, CaretRight, Info, Eye, EyeSlash } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
+import { DASHBOARD_VISIBLE_IDS } from '@/app/dashboard/3d-lab/_config/dashboard-visibility'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -297,6 +298,21 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
         </div>
         {description && (
           <p className="mt-1.5 text-sm leading-relaxed text-[#4A5568]">{description}</p>
+        )}
+      </div>
+
+      {/* Dashboard visibility */}
+      <div className="mb-4">
+        {DASHBOARD_VISIBLE_IDS.has(modelId) ? (
+          <div className="inline-flex items-center gap-1.5 rounded-md bg-[#2D9F6F]/10 px-2.5 py-1 text-[12px] font-medium text-[#2D9F6F]">
+            <Eye size={14} weight="duotone" />
+            Visible on dashboard
+          </div>
+        ) : (
+          <div className="inline-flex items-center gap-1.5 rounded-md bg-zinc-100 px-2.5 py-1 text-[12px] font-medium text-[#8896A7]">
+            <EyeSlash size={14} weight="duotone" />
+            Hidden from dashboard
+          </div>
         )}
       </div>
 
