@@ -1,11 +1,12 @@
 // src/app/dashboard/3d-lab/_templates/ParametricScene.tsx
-// Cleaned up: all chrome (top bar, badges, banners, violation bar) removed.
-// ModuleViewer provides the shell. This component renders ONLY the 3D canvas + control panel.
+// Uses LabPanelLayout for consistent grid + collapse handles (matches Site Dev).
 'use client'
 
 import { useMemo } from 'react'
 import { CanvasWrapper } from '../_components/CanvasWrapper'
 import { GenericControlPanel } from '../_components/GenericControlPanel'
+import { ComplianceReportPanel } from '../_components/ComplianceReportPanel'
+import { LabPanelLayout } from '../_components/LabPanelLayout'
 import { ParametricSceneRenderer } from './ParametricSceneRenderer'
 import { createModuleStore } from '../_stores/createModuleStore'
 import type { ParametricSceneConfig } from '../_types/templates'
@@ -29,29 +30,57 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
   const cameraPos = config.camera?.position ?? [3, 3, 3]
   const cameraFov = config.camera?.fov ?? 45
 
-  return (
-    <div className="relative h-full w-full">
-      {/* 3D Canvas — offset left to make room for the 240px control panel */}
-      <div className="absolute inset-0 left-[240px] max-sm:left-0 max-sm:bottom-[50vh]">
-        <CanvasWrapper
-          cameraPosition={cameraPos}
-          cameraFov={cameraFov}
-          minDistance={1}
-          maxDistance={25}
-        >
-          <ParametricSceneRenderer config={config} useStore={useStore} />
-        </CanvasWrapper>
-      </div>
+  // Auto-detect multi-law modules for compliance panel
+  const hasCompliancePanel = useMemo(() => {
+    if (!config.violations || config.violations.length === 0) return false
+    const prefixes = new Set(
+      config.violations.map((v) => v.id.split('-')[0])
+    )
+    prefixes.delete('conflict')
+    return prefixes.size > 1
+  }, [config.violations])
 
-      {/* Control Panel — flush left drawer with violations + context scenario */}
-      <GenericControlPanel
-        title={config.title}
-        parameters={config.parameters}
-        presets={config.presets}
-        useStore={useStore}
-        contextScenario={config.contextScenario}
+  const leftPanel = (
+    <GenericControlPanel
+      embedded
+      title={config.title}
+      parameters={config.parameters}
+      presets={config.presets}
+      useStore={useStore}
+      contextScenario={config.contextScenario}
+      violations={config.violations}
+    />
+  )
+
+  const rightPanel =
+    hasCompliancePanel && config.violations ? (
+      <ComplianceReportPanel
+        embedded
         violations={config.violations}
+        useStore={useStore}
       />
-    </div>
+    ) : undefined
+
+  return (
+    <LabPanelLayout
+      leftPanel={leftPanel}
+      leftWidth={240}
+      rightPanel={rightPanel}
+      rightWidth={280}
+    >
+      <CanvasWrapper
+        cameraPosition={cameraPos}
+        cameraFov={cameraFov}
+        minDistance={1}
+        maxDistance={25}
+        showGround={false}
+      >
+        <ParametricSceneRenderer
+          config={config}
+          useStore={useStore}
+          hideOverlays={hasCompliancePanel}
+        />
+      </CanvasWrapper>
+    </LabPanelLayout>
   )
 }

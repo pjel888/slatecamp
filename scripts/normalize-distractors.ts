@@ -41,7 +41,7 @@ const DRY_RUN = process.argv.includes("--dry-run");
 const LIMIT = process.argv.includes("--limit")
   ? parseInt(process.argv[process.argv.indexOf("--limit") + 1])
   : Infinity;
-const BATCH_SIZE = 25;
+const BATCH_SIZE = 5;
 const RETRY_LIMIT = 3;
 const DELAY_BETWEEN_BATCHES_MS = 1500;
 
@@ -393,8 +393,8 @@ async function callLLM(
   const payload = JSON.stringify(questions, null, 2);
 
   const response = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
-    max_tokens: 16000,
+    model: "gpt-4o",
+    max_tokens: 12000,
     temperature: 0,
     messages: [
       { role: "system", content: SYSTEM_PROMPT },
@@ -402,7 +402,10 @@ async function callLLM(
     ],
   });
 
-  const rawText = response.choices[0]?.message?.content ?? "";
+  let rawText = response.choices[0]?.message?.content ?? "";
+
+  // Strip markdown code fences if present (GPT-4o wraps JSON in ```json ... ```)
+  rawText = rawText.replace(/^```(?:json)?\s*\n?/i, "").replace(/\n?```\s*$/i, "").trim();
 
   let parsed: NormalizedQuestion[];
   try {

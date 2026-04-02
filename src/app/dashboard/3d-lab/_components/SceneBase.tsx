@@ -6,10 +6,10 @@ import * as THREE from 'three'
 
 // ─── Scene Constants (from UX Plan §01) ──────────────────────────────────────
 
-/** Cool blue-white sky — canvas clear color + fog target */
-export const SKY_COLOR = '#EEF2FA'
-/** Warm stone-travertine ground plane */
-export const GROUND_COLOR = '#D4CFC4'
+/** Sky / canvas clear color — matches Site Development Controls */
+export const SKY_COLOR = '#F2F0EB'
+/** Ground plane — matches Site Development Controls (slate-100) */
+export const GROUND_COLOR = '#f1f5f9'
 
 // ─── Sky + Tone Mapping + Fog (must attach to scene, not group) ──────────────
 

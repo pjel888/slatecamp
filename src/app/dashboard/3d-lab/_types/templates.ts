@@ -13,6 +13,8 @@ export type TemplateType =
   | 'floorplan'
   | 'cutaway'
   | 'animated'
+  | 'calculator'
+  | 'wall-configurator'
 
 // ─── Parameter Definitions ───────────────────────────────────────────────────
 
@@ -320,6 +322,38 @@ export interface AnimatedSequenceConfig {
   hasChallengeMode?: boolean
 }
 
+// ─── Calculator Config ──────────────────────────────────────────────────────
+
+export type CalculatorToolType = 'flooring' | 'paint' | 'drywall' | 'chb'
+
+export interface CalculatorConfig {
+  id: string
+  title: string
+  description: string
+  subject: string
+  /** Which calculator tool this config drives */
+  toolType: CalculatorToolType
+  /** Orthographic camera — calculators use orthographic for accurate proportions */
+  camera?: {
+    position: Vector3Tuple
+    zoom?: number
+    near?: number
+    far?: number
+  }
+  /** Scale factor */
+  scale?: number
+  /** Sponsor data — prefills defaults, shown in sponsor card */
+  sponsorData?: {
+    name: string
+    logoUrl?: string
+    presets?: Record<string, number | string>
+  }
+  // ── Research-Driven Additions ──────────────────────────────
+  contextScenario?: string
+  aleQuestionCount?: number
+  aleQuestionType?: string
+}
+
 // ─── Discriminated Union ─────────────────────────────────────────────────────
 
 export type ModuleConfig =
@@ -328,6 +362,8 @@ export type ModuleConfig =
   | ({ templateType: 'floorplan' } & FloorPlanConfig)
   | ({ templateType: 'cutaway' } & CutawaySectionConfig)
   | ({ templateType: 'animated' } & AnimatedSequenceConfig)
+  | ({ templateType: 'calculator' } & CalculatorConfig)
+  | ({ templateType: 'wall-configurator' } & ParametricSceneConfig)
 
 // ─── Module Registry Entry ───────────────────────────────────────────────────
 

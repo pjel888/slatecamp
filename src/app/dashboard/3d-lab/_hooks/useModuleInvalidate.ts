@@ -1,17 +1,14 @@
-// src/app/dashboard/3d-lab/_hooks/useModuleInvalidate.ts
-import { useEffect } from 'react'
-import { useThree } from '@react-three/fiber'
+import { useRegisterInvalidate } from '@/components/r3f/useRegisterInvalidate'
 import type { ModuleStoreState } from '../_stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 
+/**
+ * Registers R3F invalidate() into a module-specific store.
+ * Call inside a Canvas child component.
+ */
 export function useModuleInvalidate(
   useStore: UseBoundStore<StoreApi<ModuleStoreState>>
 ) {
-  const { invalidate } = useThree()
   const setInvalidateFn = useStore((s) => s.setInvalidateFn)
-
-  useEffect(() => {
-    setInvalidateFn(invalidate)
-    return () => setInvalidateFn(null)
-  }, [invalidate, setInvalidateFn])
+  useRegisterInvalidate(setInvalidateFn)
 }

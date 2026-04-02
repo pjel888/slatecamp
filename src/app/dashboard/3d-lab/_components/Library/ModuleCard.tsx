@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Cube, Stack, MapTrifold, Scissors, Play } from '@phosphor-icons/react/dist/ssr'
+import { Cube, Stack, MapTrifold, Scissors, Play, Calculator, Wall } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import type { ModuleRegistryEntry, TemplateType } from '../../_types/templates'
@@ -14,6 +14,8 @@ const TEMPLATE_META: Record<TemplateType, { label: string; icon: PhosphorIcon; c
   floorplan:  { label: 'Floor Plan', icon: MapTrifold,  className: 'bg-emerald-500/10 text-emerald-600' },
   cutaway:    { label: 'Cutaway',    icon: Scissors,    className: 'bg-amber-500/10 text-amber-600' },
   animated:   { label: 'Animated',   icon: Play,        className: 'bg-rose-500/10 text-rose-600' },
+  calculator:          { label: 'Calculator',        icon: Calculator, className: 'bg-camp-orange/10 text-camp-orange' },
+  'wall-configurator': { label: 'Wall Configurator', icon: Wall,       className: 'bg-primary/10 text-primary' },
 }
 
 // ─── Module Card ─────────────────────────────────────────────────────────────

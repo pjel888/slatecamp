@@ -3,8 +3,7 @@
 import { memo, type ReactNode, Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
+import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
 import { useInvalidateOnChange } from '../_hooks/useInvalidateOnChange'
 import { SceneBase } from './SceneBase'
 import { StudioLighting } from './StudioLighting'
@@ -18,6 +17,22 @@ interface CanvasWrapperProps {
   showGround?: boolean
   minDistance?: number
   maxDistance?: number
+  /** Use orthographic camera instead of perspective */
+  orthographic?: boolean
+  /** Orthographic zoom level (only used when orthographic=true) */
+  cameraZoom?: number
+  /** Disable tone mapping — use for diagrammatic flat-shaded scenes */
+  flat?: boolean
+  /** Skip StudioLighting — use when providing custom lighting as children */
+  disableLighting?: boolean
+  /** Skip SceneBase (ground, fog, tone mapping) — use for custom scene setup */
+  disableSceneBase?: boolean
+  /** Disable shadow casting on Canvas */
+  disableShadows?: boolean
+  /** Canvas clear color override */
+  clearColor?: string
+  /** WebGL config overrides */
+  glConfig?: Record<string, unknown>
 }
 
 /** Renders inside Canvas — registers the R3F invalidate fn into Zustand */
@@ -42,45 +57,58 @@ export const CanvasWrapper = memo(function CanvasWrapper({
   showGround = true,
   minDistance = 3,
   maxDistance = Infinity,
+  orthographic = false,
+  cameraZoom = 80,
+  flat = false,
+  disableLighting = false,
+  disableSceneBase = false,
+  disableShadows = false,
+  clearColor,
+  glConfig,
 }: CanvasWrapperProps) {
   const [canvasReady, setCanvasReady] = useState(false)
 
   return (
     <div className="relative h-full w-full overflow-hidden">
       {/* Loading overlay — removed once Canvas WebGL context is created */}
-      {!canvasReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#EEF2FA]/80 z-10">
-          <div className="flex flex-col items-center gap-3">
-            <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-zinc-300" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">
-              Loading Scene...
-            </span>
-          </div>
-        </div>
-      )}
+      <CanvasLoadingOverlay visible={!canvasReady} />
 
       <Canvas
         frameloop="demand"
         dpr={[1, 1.5]}
-        camera={{ position: cameraPosition, fov: cameraFov }}
-        shadows
+        camera={
+          orthographic
+            ? { position: cameraPosition, zoom: cameraZoom, near: 0.1, far: 100 }
+            : { position: cameraPosition, fov: cameraFov }
+        }
+        orthographic={orthographic}
+        flat={flat}
+        shadows={!disableShadows}
+        gl={glConfig}
         style={{ position: 'absolute', inset: 0 }}
-        onCreated={() => setCanvasReady(true)}
+        onCreated={(state) => {
+          if (clearColor) {
+            state.gl.setClearColor(clearColor)
+          }
+          setCanvasReady(true)
+        }}
       >
         <InvalidateRegistrar />
 
         {/* Architectural studio lighting rig (UX Plan §02) */}
-        <StudioLighting />
+        {!disableLighting && <StudioLighting />}
 
         {/* Sky + ground + fog + contact shadows (UX Plan §01) */}
-        <SceneBase showGround={showGround} />
+        {!disableSceneBase && <SceneBase showGround={showGround} />}
 
         <OrbitControls
           makeDefault
           minPolarAngle={minPolarAngle}
           maxPolarAngle={maxPolarAngle}
-          minDistance={minDistance}
-          maxDistance={maxDistance}
+          {...(orthographic
+            ? { minZoom: 30, maxZoom: 200, enableDamping: true, dampingFactor: 0.1 }
+            : { minDistance, maxDistance }
+          )}
         />
         <Suspense fallback={null}>{children}</Suspense>
       </Canvas>

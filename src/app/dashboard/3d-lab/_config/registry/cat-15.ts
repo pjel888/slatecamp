@@ -4,6 +4,10 @@
 import type { ModuleRegistryEntry } from '../../_types/templates'
 import { earthworkVolumeConfig } from '../modules/15-estimating/earthwork-volume'
 import { quantityTakeoffRoomConfig } from '../modules/15-estimating/quantity-takeoff-room'
+import { calculatorFlooringConfig } from '../modules/15-estimating/calculator-flooring'
+import { calculatorPaintConfig } from '../modules/15-estimating/calculator-paint'
+import { calculatorDrywallConfig } from '../modules/15-estimating/calculator-drywall'
+import { calculatorCHBConfig } from '../modules/15-estimating/calculator-chb'
 
 export const cat15Modules: ModuleRegistryEntry[] = [
   {
@@ -25,5 +29,45 @@ export const cat15Modules: ModuleRegistryEntry[] = [
     launchPhase: 3,
     status: 'ready' as const,
     description: quantityTakeoffRoomConfig.description,
+  },
+  {
+    id: calculatorFlooringConfig.id,
+    title: calculatorFlooringConfig.title,
+    templateType: 'calculator' as const,
+    subject: calculatorFlooringConfig.subject,
+    categoryId: 'ESTIMATING',
+    launchPhase: 1,
+    status: 'built' as const,
+    description: calculatorFlooringConfig.description,
+  },
+  {
+    id: calculatorPaintConfig.id,
+    title: calculatorPaintConfig.title,
+    templateType: 'calculator' as const,
+    subject: calculatorPaintConfig.subject,
+    categoryId: 'ESTIMATING',
+    launchPhase: 1,
+    status: 'built' as const,
+    description: calculatorPaintConfig.description,
+  },
+  {
+    id: calculatorDrywallConfig.id,
+    title: calculatorDrywallConfig.title,
+    templateType: 'calculator' as const,
+    subject: calculatorDrywallConfig.subject,
+    categoryId: 'ESTIMATING',
+    launchPhase: 1,
+    status: 'built' as const,
+    description: calculatorDrywallConfig.description,
+  },
+  {
+    id: calculatorCHBConfig.id,
+    title: calculatorCHBConfig.title,
+    templateType: 'calculator' as const,
+    subject: calculatorCHBConfig.subject,
+    categoryId: 'ESTIMATING',
+    launchPhase: 2,
+    status: 'built' as const,
+    description: calculatorCHBConfig.description,
   },
 ]

@@ -285,6 +285,8 @@ interface GenericControlPanelProps {
     message: string
     severity: string
   }>
+  /** When true, renders without absolute positioning (for use inside LabPanelLayout) */
+  embedded?: boolean
 }
 
 export const GenericControlPanel = memo(function GenericControlPanel({
@@ -295,6 +297,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   className,
   contextScenario,
   violations,
+  embedded = false,
 }: GenericControlPanelProps) {
   const params = useStore((s) => s.params)
   const setParam = useStore((s) => s.setParam)
@@ -358,11 +361,13 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   return (
     <div
       className={cn(
-        // Flush left drawer per implementation plan §6.1
-        'absolute left-0 top-0 bottom-0 z-10 w-[240px] overflow-y-auto',
-        'bg-white border-r border-border',
-        // Mobile: bottom sheet
-        'max-sm:left-0 max-sm:right-0 max-sm:top-auto max-sm:bottom-0 max-sm:w-full max-sm:max-h-[50vh] max-sm:rounded-t-lg max-sm:border-r-0 max-sm:border-t max-sm:shadow-lg',
+        embedded
+          ? 'h-full overflow-y-auto'
+          : cn(
+              'absolute left-0 top-0 bottom-0 z-10 w-[240px] overflow-y-auto',
+              'bg-white border-r border-border',
+              'max-sm:left-0 max-sm:right-0 max-sm:top-auto max-sm:bottom-0 max-sm:w-full max-sm:max-h-[50vh] max-sm:rounded-t-lg max-sm:border-r-0 max-sm:border-t max-sm:shadow-lg'
+            ),
         className
       )}
       role="complementary"

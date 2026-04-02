@@ -11,4 +11,6 @@
 export const DASHBOARD_VISIBLE_IDS: ReadonlySet<string> = new Set([
   'site-development-controls',
   'stairway-configurator',
+  'calculator-flooring',
+  'unified-wall-configurator',
 ])

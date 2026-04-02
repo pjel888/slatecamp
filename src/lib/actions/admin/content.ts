@@ -126,6 +126,9 @@ export const getContentEditorIndexData = async () => {
 
   const taxonomyTree = buildTree(null)
 
+  // Prompt counts placeholder (no data source yet)
+  const promptCounts = new Map<string, number>()
+
   // Enrich articles with their node info and question counts
   const enrichedArticles = articles.map((a) => {
     const nodeIds = articleNodeMap.get(a.article_id) || []

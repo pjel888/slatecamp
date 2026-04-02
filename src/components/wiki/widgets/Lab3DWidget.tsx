@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import dynamic from 'next/dynamic'
-import { CircleNotch, Expand, Cube } from '@phosphor-icons/react/dist/ssr'
+import { CircleNotch, ArrowsOut, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -144,7 +144,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
               className="bg-zinc-900/80 border-zinc-700 text-zinc-300 hover:text-white"
               onClick={() => window.open(`/dashboard/3d-lab?node=${moduleId}`, '_blank')}
             >
-              <Expand size={12} className="mr-1.5" />
+              <ArrowsOut size={12} className="mr-1.5" />
               Full Lab
             </Button>
           </div>

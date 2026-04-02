@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775030341741,
+  "lastScanned": 1775120022494,
   "projectRoot": "C:\\Users\\Philip Lewis\\Desktop\\slatecamp",
   "techStack": {
     "languages": [
@@ -83,28 +83,25 @@
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
-      "fileCount": 1,
-      "lastAccessed": 1775030341704,
+      "fileCount": 2,
+      "lastAccessed": 1775120022474,
       "keyFiles": [
-        "AGENTS.md"
+        "AGENTS.md",
+        "QUIZ-TESTING-AUDIT.md"
       ]
     },
     "prompts": {
       "path": "prompts",
       "purpose": null,
-      "fileCount": 3,
-      "lastAccessed": 1775030341704,
-      "keyFiles": [
-        "SlateCamp_3D_Lab_Implementation_Prompt.md",
-        "SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.html",
-        "SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.md"
-      ]
+      "fileCount": 0,
+      "lastAccessed": 1775120022475,
+      "keyFiles": []
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
       "fileCount": 8,
-      "lastAccessed": 1775030341724,
+      "lastAccessed": 1775120022480,
       "keyFiles": [
         "AGENTS.md",
         "file.svg",
@@ -116,8 +113,8 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 23,
-      "lastAccessed": 1775030341724,
+      "fileCount": 25,
+      "lastAccessed": 1775120022481,
       "keyFiles": [
         "AGENTS.md",
         "check-counts.ts",
@@ -130,7 +127,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1775030341725,
+      "lastAccessed": 1775120022481,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -139,7 +136,7 @@
       "path": "supabase",
       "purpose": null,
       "fileCount": 11,
-      "lastAccessed": 1775030341725,
+      "lastAccessed": 1775120022481,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -152,7 +149,7 @@
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 8,
-      "lastAccessed": 1775030341726,
+      "lastAccessed": 1775120022482,
       "keyFiles": [
         "AGENTS.md",
         "error.tsx",
@@ -163,7 +160,7 @@
       "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 1,
-      "lastAccessed": 1775030341726,
+      "lastAccessed": 1775120022482,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -172,7 +169,7 @@
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 3,
-      "lastAccessed": 1775030341726,
+      "lastAccessed": 1775120022482,
       "keyFiles": [
         "AGENTS.md",
         "feature-flags.ts",
@@ -183,7 +180,7 @@
       "path": "src\\data",
       "purpose": "Data files",
       "fileCount": 3,
-      "lastAccessed": 1775030341727,
+      "lastAccessed": 1775120022483,
       "keyFiles": [
         "AGENTS.md",
         "mock-questions.json",
@@ -194,7 +191,7 @@
       "path": "src\\lib",
       "purpose": "Library code",
       "fileCount": 15,
-      "lastAccessed": 1775030341727,
+      "lastAccessed": 1775120022483,
       "keyFiles": [
         "AGENTS.md",
         "analytics-server.ts",
@@ -204,303 +201,303 @@
   },
   "hotPaths": [
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\DevControlsLabV2.tsx",
-      "accessCount": 30,
-      "lastAccessed": 1775037701332,
+      "path": "src\\features\\wall-configurator\\types\\wall.types.ts",
+      "accessCount": 12,
+      "lastAccessed": 1775129314721,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\stores\\useDevControlsStore.ts",
-      "accessCount": 13,
-      "lastAccessed": 1775042940319,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\PresetSelector.tsx",
-      "accessCount": 11,
-      "lastAccessed": 1775050281936,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\hooks\\useKeyboardShortcuts.ts",
-      "accessCount": 10,
-      "lastAccessed": 1775043105582,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\InputPanel.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\unified-wall-configurator.ts",
       "accessCount": 9,
-      "lastAccessed": 1775040949316,
+      "lastAccessed": 1775129286595,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\KpiBar.tsx",
+      "path": "src\\features\\wall-configurator\\store\\layer-defaults.ts",
+      "accessCount": 9,
+      "lastAccessed": 1775129314937,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\WallConfigurator.tsx",
       "accessCount": 8,
-      "lastAccessed": 1775034448967,
+      "lastAccessed": 1775128692278,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\DevControlsCanvas.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_types\\templates.ts",
       "accessCount": 8,
-      "lastAccessed": 1775035467177,
+      "lastAccessed": 1775129287264,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViewportToolbar.tsx",
-      "accessCount": 8,
-      "lastAccessed": 1775043047611,
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step1CoreSelect.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1775128584406,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViewportWrapper.tsx",
+      "path": "src\\features\\wall-configurator\\hooks\\useWallComputation.ts",
+      "accessCount": 7,
+      "lastAccessed": 1775128615729,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\store\\useWallConfigStore.ts",
+      "accessCount": 7,
+      "lastAccessed": 1775128678406,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\engine\\constants.ts",
+      "accessCount": 7,
+      "lastAccessed": 1775129131400,
+      "type": "file"
+    },
+    {
+      "path": "prompts\\Consolidated Walls\\ux-ui-strategy-wall-configurator.html",
       "accessCount": 6,
-      "lastAccessed": 1775035497853,
+      "lastAccessed": 1775128057551,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\PanelCollapseHandle.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-10.ts",
       "accessCount": 6,
-      "lastAccessed": 1775037212063,
+      "lastAccessed": 1775129149466,
       "type": "file"
     },
     {
-      "path": "prompts\\SlateCamp_3D_Lab_Implementation_Prompt.md",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\dashboard-visibility.ts",
+      "accessCount": 6,
+      "lastAccessed": 1775131642872,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step5Treatment.tsx",
       "accessCount": 5,
-      "lastAccessed": 1775030399415,
+      "lastAccessed": 1775128604966,
       "type": "file"
     },
     {
-      "path": "prompts\\SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.md",
+      "path": "src\\features\\wall-configurator\\components\\AreaSummaryBar.tsx",
       "accessCount": 5,
-      "lastAccessed": 1775030400496,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\ui\\tabs.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1775032342210,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\pd1096\\types.ts",
-      "accessCount": 5,
-      "lastAccessed": 1775034101572,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\hooks\\usePanelState.ts",
-      "accessCount": 5,
-      "lastAccessed": 1775035200533,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LayersOverlay.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1775042839860,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\index.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1775096397427,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard",
-      "accessCount": 3,
-      "lastAccessed": 1775034102332,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\tabs\\SettingsTab.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775034166269,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\FlarPanel.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775037075045,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\layers\\RROWIndicator.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775042825126,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule",
-      "accessCount": 3,
-      "lastAccessed": 1775042832747,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CameraPresetBar.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775030958350,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\DevControlsDashboard.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775030969507,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\BottomSheet.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775032767934,
+      "lastAccessed": 1775128692843,
       "type": "file"
     },
     {
       "path": "src\\app\\dashboard\\3d-lab\\_components\\LabViewport.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1775129163621,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step2Geometry.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775128198267,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step4Sides.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775128211169,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step6Finish.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775128261910,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step7BOM.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775128333112,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\engine\\plaster.engine.ts",
+      "accessCount": 3,
+      "lastAccessed": 1775128619457,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_templates\\ParametricSceneRenderer.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775129327968,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_templates\\ParametricScene.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775129328056,
+      "type": "file"
+    },
+    {
+      "path": "prompts\\Consolidated Walls\\unified-wall-configurator-implementation-plan.md",
       "accessCount": 2,
-      "lastAccessed": 1775035530260,
-      "type": "directory"
+      "lastAccessed": 1775120107039,
+      "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\ModuleViewer.tsx",
+      "path": "src\\features\\wall-configurator\\components\\StepIndicator.tsx",
       "accessCount": 2,
-      "lastAccessed": 1775035684401,
-      "type": "directory"
+      "lastAccessed": 1775120598818,
+      "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LotInputPanel.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\index.ts",
       "accessCount": 2,
-      "lastAccessed": 1775037074102,
+      "lastAccessed": 1775120645033,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\constants.ts",
+      "path": "src\\features\\wall-configurator\\engine\\geometry.engine.ts",
       "accessCount": 2,
-      "lastAccessed": 1775042835768,
+      "lastAccessed": 1775127761663,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CollapsibleSection.tsx",
+      "path": "src\\features\\wall-configurator\\engine\\chb.engine.ts",
       "accessCount": 2,
-      "lastAccessed": 1775050270469,
+      "lastAccessed": 1775127761738,
       "type": "file"
     },
     {
-      "path": "prompts\\SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.html",
-      "accessCount": 1,
-      "lastAccessed": 1775030385731,
+      "path": "src\\features\\wall-configurator\\engine\\drywall.engine.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775127762128,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\LayerToggles.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775030958701,
+      "path": "src\\features\\wall-configurator\\engine\\paint.engine.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775127762493,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\StatusBar.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032141894,
+      "path": "prompts\\Consolidated Walls\\unified-wall-configurator.md",
+      "accessCount": 2,
+      "lastAccessed": 1775128595638,
       "type": "file"
     },
     {
-      "path": "src\\components\\ui\\slider.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032241216,
+      "path": "src\\features\\wall-configurator\\engine\\index.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775128607136,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\UnifiedSlider.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032273822,
+      "path": "prompts\\Consolidated Walls\\ux-ui-strategy-wall-configurator.md",
+      "accessCount": 2,
+      "lastAccessed": 1775128620231,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ComplianceSummary.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032379163,
+      "path": "src\\app\\dashboard\\3d-lab\\_stores\\createModuleStore.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775129036334,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\CompactScorecardGrid.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032380196,
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\LabPanelLayout.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775129293244,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\OutputPanel.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032405652,
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\GeometryMesh.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775129293537,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\KpiChip.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032481602,
+      "path": "src\\app\\dashboard\\3d-lab\\wall-configurator\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775129304437,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\ViolationBanner.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775032509941,
+      "path": "src\\app\\dashboard\\3d-lab\\_hooks\\useModuleInvalidate.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775129310535,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\MobileSheetContent.tsx",
+      "path": "prompts\\Consolidated Walls\\Unified Wall Configurator Logic.md",
       "accessCount": 1,
-      "lastAccessed": 1775032689198,
+      "lastAccessed": 1775120095920,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\UrbanGrid.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-15.ts",
       "accessCount": 1,
-      "lastAccessed": 1775033792409,
+      "lastAccessed": 1775120136610,
       "type": "file"
     },
     {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\ContextBuildings.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_components\\GenericControlPanel.tsx",
       "accessCount": 1,
-      "lastAccessed": 1775033793260,
+      "lastAccessed": 1775120141388,
       "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas",
-      "accessCount": 1,
-      "lastAccessed": 1775033801856,
-      "type": "directory"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\canvas\\context\\GroundPlane.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775033863109,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\3d-lab\\DevControlsModule\\dashboard\\SetbackInfoPanel.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775034231834,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab",
-      "accessCount": 1,
-      "lastAccessed": 1775035507472,
-      "type": "directory"
     },
     {
       "path": "src\\app\\dashboard\\3d-lab\\page.tsx",
       "accessCount": 1,
-      "lastAccessed": 1775035693903,
+      "lastAccessed": 1775120145280,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\layout.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\taxonomy.ts",
       "accessCount": 1,
-      "lastAccessed": 1775035694969,
+      "lastAccessed": 1775120162535,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\layout.tsx",
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-01.ts",
       "accessCount": 1,
-      "lastAccessed": 1775035703286,
+      "lastAccessed": 1775120169123,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\bond-pattern-comparison.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120179938,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\09-construction\\foundation-types.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120180173,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\engine\\packaging.engine.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120414516,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\wall-configurator\\components\\steps\\Step3Openings.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775120645845,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\concrete-aggregate-visualizer.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120653404,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\concrete-mix-proportions.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120660017,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\08-vertical\\stairway-configurator.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775120669510,
       "type": "file"
     }
   ],

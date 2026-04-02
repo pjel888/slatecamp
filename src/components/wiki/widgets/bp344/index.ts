@@ -1,4 +1,4 @@
-export { ComparisonTable } from './ComparisonTable'
+export { AccessibilityChangesTable as ComparisonTable } from './ComparisonTable'
 export { DoorConfigurator } from './DoorConfigurator'
 export { CorridorVisualizer } from './CorridorVisualizer'
 export { CubicleChecker } from './CubicleChecker'

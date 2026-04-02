@@ -14,6 +14,7 @@ import { standardMaterialSheetsConfig } from '../modules/10-materials/standard-m
 import { steelSectionsCatalogConfig } from '../modules/10-materials/steel-sections-catalog'
 import { wallSectionAssemblyConfig } from '../modules/10-materials/wall-section-assembly'
 import { wallTypesComparisonConfig } from '../modules/10-materials/wall-types-comparison'
+import { unifiedWallConfiguratorConfig } from '../modules/10-materials/unified-wall-configurator'
 import { waterproofingSystemsConfig } from '../modules/10-materials/waterproofing-systems'
 
 export const cat10Modules: ModuleRegistryEntry[] = [
@@ -146,5 +147,15 @@ export const cat10Modules: ModuleRegistryEntry[] = [
     launchPhase: 2,
     status: 'ready' as const,
     description: waterproofingSystemsConfig.description,
+  },
+  {
+    id: unifiedWallConfiguratorConfig.id,
+    title: unifiedWallConfiguratorConfig.title,
+    templateType: 'wall-configurator' as const,
+    subject: unifiedWallConfiguratorConfig.subject,
+    categoryId: 'MATERIALS',
+    launchPhase: 1,
+    status: 'ready' as const,
+    description: unifiedWallConfiguratorConfig.description,
   },
 ]

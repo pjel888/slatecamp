@@ -52,16 +52,14 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
       <Tooltip.Provider delayDuration={400}>
         <Tooltip.Root onOpenChange={(open) => open && fetchSummary()}>
           <Tooltip.Trigger asChild>
-            <SheetTrigger asChild>
-              <button
-                className={cn(
-                  'inline-flex items-center gap-0.5 font-medium text-camp-cobalt hover:underline decoration-camp-cobalt/30 underline-offset-2 transition-all',
-                  className
-                )}
-              >
-                {children}
-                <SCIcon icon={FileText} size="xs" className="opacity-40 group-hover:opacity-100" />
-              </button>
+            <SheetTrigger
+              className={cn(
+                'inline-flex items-center gap-0.5 font-medium text-camp-cobalt hover:underline decoration-camp-cobalt/30 underline-offset-2 transition-all',
+                className
+              )}
+            >
+              {children}
+              <SCIcon icon={FileText} size="xs" className="opacity-40 group-hover:opacity-100" />
             </SheetTrigger>
           </Tooltip.Trigger>
           

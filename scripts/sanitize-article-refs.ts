@@ -129,6 +129,16 @@ function safeParseRationale(
   return null;
 }
 
+// ─── Row types for Supabase queries ─────────────────────────────────────────────
+
+interface QuestionRow {
+  question_id: string
+  text: string
+  options: unknown
+  rationale: unknown
+  explanation: string
+}
+
 // ─── Phase 1: Pre-flight Audit ──────────────────────────────────────────────────
 
 async function preflight(): Promise<{
@@ -140,7 +150,7 @@ async function preflight(): Promise<{
 }> {
   log("1", "Running pre-flight audit...");
 
-  const allRows = await fetchAll("questions", "question_id, text, options, rationale, explanation");
+  const allRows = await fetchAll<QuestionRow>("questions", "question_id, text, options, rationale, explanation");
   const totalQuestions = allRows.length;
 
   // Tier 1: Garbage template questions
@@ -225,7 +235,7 @@ async function preflight(): Promise<{
 async function backupAffected() {
   log("2", "Backing up affected questions...");
 
-  const allData = await fetchAll("questions", "*");
+  const allData = await fetchAll<QuestionRow>("questions", "*");
 
   const rationalePattern =
     /^The article (states|explains|mentions|describes|notes|highlights|discusses|emphasizes|indicates|specifies|provides|outlines|covers|identifies|recommends|suggests|details|clarifies|establishes|shows|presents|illustrates|confirms|demonstrates|documents|examines|focuses)/i;
@@ -267,7 +277,7 @@ async function tier1Delete() {
   log("3", "Tier 1: Identifying garbage template questions...");
 
   // First, find the IDs
-  const allQ = await fetchAll("questions", "question_id, text, options");
+  const allQ = await fetchAll<QuestionRow>("questions", "question_id, text, options");
 
   const garbageIds = allQ
     .filter(
@@ -334,7 +344,7 @@ async function tier1Delete() {
 async function tier2LLMRewrite() {
   log("4", "Tier 2: Fetching questions with article refs in text...");
 
-  const allQ = await fetchAll("questions", "question_id, text, options");
+  const allQ = await fetchAll<QuestionRow>("questions", "question_id, text, options");
 
   const legalPattern =
     /article \d|article [IVXLC]+|Civil Code|PD \d|RA \d|PEC Article|Code of Ethical|Water Code|Electrical Code|Fire Code|Building Code/i;
@@ -455,7 +465,7 @@ Rules:
 async function tier3RationaleRegex() {
   log("5", "Tier 3: Fixing rationale JSONB 'correct' field...");
 
-  const allQ = await fetchAll("questions", "question_id, rationale");
+  const allQ = await fetchAll<QuestionRow>("questions", "question_id, rationale");
 
   const verbPattern =
     /^The article (states|explains|mentions|describes|notes|highlights|discusses|emphasizes|indicates|specifies|provides|outlines|covers|identifies|recommends|suggests|details|clarifies|establishes|shows|presents|illustrates|confirms|demonstrates|documents|examines|focuses|contextualizes|differentiates|distinguishes|elaborates|summarizes|warns|gives|makes|maps|names|offers|organizes|pairs|places|ranks|recognizes|sets|traces|uses|breaks|categorizes|refers|reveals)(\s+that|\s*:\s*['"]?|\s+)/i;
@@ -535,7 +545,7 @@ async function tier4ExplanationRegex() {
   const explanationPattern =
     /The article (states|explains|mentions|describes|notes|discusses|highlights|emphasizes|indicates|specifies|provides|outlines|covers|identifies)[:\s]+['"]?/gi;
 
-  const allExpl = await fetchAll("questions", "question_id, explanation");
+  const allExpl = await fetchAll<QuestionRow>("questions", "question_id, explanation");
 
   const affected = allExpl.filter(
     (q) => q.explanation && explanationPattern.test(q.explanation)
@@ -592,7 +602,7 @@ async function tier4ExplanationRegex() {
 async function postflight() {
   log("7", "Running post-flight verification...");
 
-  const allRows = await fetchAll("questions", "question_id, text, options, rationale, explanation");
+  const allRows = await fetchAll<QuestionRow>("questions", "question_id, text, options, rationale, explanation");
 
   // Re-check all patterns
   const garbageCount = allRows.filter(

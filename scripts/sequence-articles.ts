@@ -243,7 +243,7 @@ async function main() {
     article_id: string
     node_id: string
     sort_order: number
-    wiki_articles: { article_id: string; title: string } | null
+    wiki_articles: { article_id: string; title: string } | { article_id: string; title: string }[] | null
   }> = []
 
   for (let i = 0; i < nodeIds.length; i += CHUNK_SIZE) {
@@ -270,11 +270,16 @@ async function main() {
       skippedOrphans++
       continue
     }
+    const wa = Array.isArray(m.wiki_articles) ? m.wiki_articles[0] : m.wiki_articles
+    if (!wa) {
+      skippedOrphans++
+      continue
+    }
     flatMappings.push({
       article_id: m.article_id,
       node_id: m.node_id,
       sort_order: m.sort_order ?? 0,
-      title: m.wiki_articles.title,
+      title: wa.title,
     })
   }
   if (skippedOrphans > 0) {

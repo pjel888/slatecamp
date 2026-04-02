@@ -77,7 +77,7 @@ export const RecallDrillPreview = () => (
 )
 
 const ComparisonTableInner = dynamic(
-  () => import('@/components/wiki/widgets/bp344/ComparisonTable').then((m) => m.ComparisonTable),
+  () => import('@/components/wiki/widgets/bp344/ComparisonTable').then((m) => m.AccessibilityChangesTable),
   { ssr: false },
 )
 
