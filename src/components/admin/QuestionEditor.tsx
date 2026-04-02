@@ -15,8 +15,8 @@ interface QuestionEditorProps {
     id: string
     text: string
     topic_id: string
-    options: string[]
-    correct_option_id: number
+    options: string[] | { text: string; is_correct?: boolean }[]
+    correct_option_id: number | string
     rationale: string | null
     difficulty: number
     code_citation?: string | null
@@ -28,9 +28,28 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
 
   const [text, setText] = useState(question?.text || '')
   const [topicId, setTopicId] = useState(question?.topic_id || '')
-  const [options, setOptions] = useState<string[]>(question?.options || ['', '', '', ''])
-  const [correctAnswer, setCorrectAnswer] = useState(question?.correct_option_id ?? 0)
-  const [rationale, setRationale] = useState(question?.rationale || '')
+  
+  // Normalize options to string[]
+  const [options, setOptions] = useState<string[]>(() => {
+    if (!question?.options) return ['', '', '', '']
+    return question.options.map(opt => typeof opt === 'string' ? opt : opt.text)
+  })
+
+  // Normalize correct_option_id to number
+  const [correctAnswer, setCorrectAnswer] = useState(() => {
+    if (typeof question?.correct_option_id === 'string') {
+      const idx = ['A', 'B', 'C', 'D'].indexOf(question.correct_option_id)
+      return idx >= 0 ? idx : 0
+    }
+    return question?.correct_option_id ?? 0
+  })
+
+  const [rationale, setRationale] = useState(() => {
+    if (typeof question?.rationale === 'object' && question.rationale !== null) {
+      return (question.rationale as any).text || JSON.stringify(question.rationale)
+    }
+    return question?.rationale || ''
+  })
   const codeCitation = question?.code_citation ?? undefined
   const [difficulty, setDifficulty] = useState(question?.difficulty || 3)
   const [isSaving, setIsSaving] = useState(false)

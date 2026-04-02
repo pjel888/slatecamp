@@ -205,7 +205,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
   const Icon = config.icon!
 
   return (
-    <span
+    <div
       className={cn(
         'not-prose block my-6 rounded-md border px-4 py-3',
         showDismiss && 'relative',
@@ -228,21 +228,21 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
           <X className="h-3.5 w-3.5" />
         </button>
       )}
-      <span className="flex items-center gap-2 mb-1.5">
+      <div className="flex items-center gap-2 mb-1.5">
         <Icon size={16} weight="bold" className={config.iconColor} />
         <span className={cn('text-xs font-semibold uppercase tracking-wider', config.labelColor)}>
           {title || config.label}
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className={cn(
           'block text-sm text-foreground/80 leading-relaxed [&>p]:m-0 [&>p+p]:mt-2 [&>ol]:m-0 [&>ol]:pl-4 [&>ul]:m-0 [&>ul]:pl-4 [&_strong]:font-semibold [&_strong]:text-foreground',
           config.italic && 'italic [&_strong]:not-italic',
         )}
       >
         {children}
-      </span>
-    </span>
+      </div>
+    </div>
   )
 }
 

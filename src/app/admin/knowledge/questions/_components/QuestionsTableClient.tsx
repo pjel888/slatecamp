@@ -29,6 +29,8 @@ interface QuestionsTableClientProps {
   taxonomyTree: TaxonomyTreeNode[]
   /** If provided, the table will filter by this node and hide its own internal tree nav */
   externalSelectedNodeId?: string | null
+  /** If provided, the table will filter by this search query */
+  externalSearchQuery?: string
 }
 
 /* ------------------------------------------------------------------ */
@@ -304,6 +306,7 @@ export const QuestionsTableClient = ({
   pageSize,
   taxonomyTree,
   externalSelectedNodeId,
+  externalSearchQuery,
 }: QuestionsTableClientProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -311,8 +314,19 @@ export const QuestionsTableClient = ({
   const [internalSelectedNodeId, setInternalSelectedNodeId] = useState<string | null>(null)
   const [nodeGroups, setNodeGroups] = useState<ArticleGroup[] | null>(null)
   const [nodeLoading, setNodeLoading] = useState(false)
+  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(externalSearchQuery)
   
   const activeNodeId = externalSelectedNodeId !== undefined ? externalSelectedNodeId : internalSelectedNodeId
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSearchQuery(externalSearchQuery)
+    }, 300)
+
+    return () => {
+      clearTimeout(handler)
+    }
+  }, [externalSearchQuery])
 
   const [expandedArticles, setExpandedArticles] = useState<Set<string>>(() => {
     if (articleGroups.length > 0) {
@@ -389,12 +403,12 @@ export const QuestionsTableClient = ({
       setInternalSelectedNodeId(nodeId)
     }
 
-    if (nodeId === null) {
+    if (nodeId === null && !debouncedSearchQuery) {
       setNodeGroups(null)
       return
     }
 
-    if (nodeId === 'unassigned') {
+    if (nodeId === 'unassigned' && !debouncedSearchQuery) {
       setNodeGroups([])
       return
     }
@@ -403,37 +417,31 @@ export const QuestionsTableClient = ({
     try {
       let topicIds: string[] = []
 
-      if (nodeId.startsWith('article:')) {
+      if (nodeId && nodeId.startsWith('article:')) {
         topicIds = [nodeId.replace('article:', '')]
-      } else {
+      } else if (nodeId) {
         const node = findTaxonomyNode(taxonomyTree, nodeId)
         if (node) {
           topicIds = [...collectAllNodeIds(node)]
         }
       }
 
-      if (topicIds.length > 0) {
-        const { data } = await getQuestionsByTopicIds(topicIds)
-        setNodeGroups(data)
-        setExpandedArticles(new Set(data.map(g => g.articleId ?? '__unassigned__')))
-      } else {
-        setNodeGroups([])
-      }
+      const { data } = await getQuestionsByTopicIds(topicIds, debouncedSearchQuery)
+      setNodeGroups(data)
+      setExpandedArticles(new Set(data.map(g => g.articleId ?? '__unassigned__')))
     } catch {
       setNodeGroups([])
     } finally {
       setNodeLoading(false)
     }
-  }, [taxonomyTree, externalSelectedNodeId])
+  }, [taxonomyTree, externalSelectedNodeId, debouncedSearchQuery])
 
   useEffect(() => {
-    if (externalSelectedNodeId !== undefined) {
-      handleNodeSelect(externalSelectedNodeId)
-    }
-  }, [externalSelectedNodeId, handleNodeSelect])
+    handleNodeSelect(activeNodeId)
+  }, [activeNodeId, debouncedSearchQuery, handleNodeSelect])
 
   const displayGroups = nodeGroups !== null ? nodeGroups : (questions.length > 0 ? articleGroups : [])
-  const showEmptyPrompt = activeNodeId === null && nodeGroups === null && questions.length === 0
+  const showEmptyPrompt = activeNodeId === null && nodeGroups === null && questions.length === 0 && !debouncedSearchQuery
 
   return (
     <div className="space-y-4 h-full flex flex-col">

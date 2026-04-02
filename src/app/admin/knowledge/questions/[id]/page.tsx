@@ -4,13 +4,46 @@ import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
 import {
   getArticleFull,
-  getArticleTaxonomyNodes,
 } from '@/lib/actions/admin/content'
+import { getQuestion } from '@/lib/actions/admin/question-queries'
 import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
+import { compileMDX } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
+import { Note, Warn, Tip, Example, Callout } from '@/components/wiki/WikiCallout'
 
 interface PageProps {
   params: Promise<{ id: string }>
+}
+
+const mdxComponents = {
+  Note,
+  Warn,
+  Warning: Warn,
+  Tip,
+  Example,
+  Callout,
+  h2: (props: any) => <h2 className="text-xl font-bold mt-6 mb-3 text-foreground" {...props} />,
+  h3: (props: any) => <h3 className="text-lg font-bold mt-4 mb-2 text-foreground" {...props} />,
+  p: (props: any) => <p className="text-sm leading-relaxed mb-4 text-text-secondary" {...props} />,
+  ul: (props: any) => <ul className="list-disc pl-5 mb-4 space-y-1 text-sm text-text-secondary" {...props} />,
+  ol: (props: any) => <ol className="list-decimal pl-5 mb-4 space-y-1 text-sm text-text-secondary" {...props} />,
+  li: (props: any) => <li className="mb-1" {...props} />,
+  code: (props: any) => <code className="bg-muted px-1.5 py-0.5 rounded font-mono text-[13px]" {...props} />,
+}
+
+const ArticlePreview = async ({ content }: { content: string }) => {
+  try {
+    const { content: mdxContent } = await compileMDX({
+      source: content,
+      components: mdxComponents,
+      options: { mdxOptions: { remarkPlugins: [remarkGfm] } },
+    })
+    return <div className="wiki-prose">{mdxContent}</div>
+  } catch (err) {
+    console.error('MDX Compilation Error:', err)
+    return <div className="whitespace-pre-wrap text-sm font-sans">{content}</div>
+  }
 }
 
 const QuestionDetailPage = async ({ params }: PageProps) => {
@@ -18,16 +51,12 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
   if (!authorized) redirect('/admin')
 
   const { id } = await params
+  
+  // Fetch question with normalization helper
+  const question = await getQuestion(id)
+  if (!question) notFound()
+
   const supabase = await createClient()
-
-  // Fetch question
-  const { data: question, error } = await supabase
-    .from('questions')
-    .select('*')
-    .eq('question_id', id)
-    .single()
-
-  if (error || !question) notFound()
 
   // Find linked article via topic_id
   let article = null
@@ -51,9 +80,9 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
         <div className="mb-6">
           <Eyebrow>Question Moderation</Eyebrow>
           <h1 className="text-2xl font-bold text-foreground mt-1">Edit Question</h1>
-          <p className="text-sm text-muted-foreground mt-1 font-mono">{question.question_id}</p>
+          <p className="text-sm text-muted-foreground mt-1 font-mono">{question.id}</p>
         </div>
-        <QuestionEditor question={question} />
+        <QuestionEditor question={question as any} />
       </div>
 
       {/* Right: Article Context (40%) - Sticky Reference Pane */}
@@ -64,10 +93,9 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
         {article ? (
           <div className="space-y-4">
             <Card className="p-4">
-              <h2 className="text-lg font-bold text-foreground">{article.title}</h2>
-              <div className="prose prose-sm max-w-none mt-4 text-text-secondary">
-                {/* Simplified preview of article content */}
-                <div dangerouslySetInnerHTML={{ __html: article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '') }} />
+              <h2 className="text-lg font-bold text-foreground mb-4">{article.title}</h2>
+              <div className="prose prose-sm max-w-none text-text-secondary">
+                <ArticlePreview content={article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '')} />
               </div>
             </Card>
             <div className="flex justify-end">

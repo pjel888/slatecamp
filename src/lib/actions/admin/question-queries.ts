@@ -38,7 +38,14 @@ export const getQuestions = async (
     return { data: [], totalCount: 0 }
   }
 
-  return { data: data ?? [], totalCount: count ?? 0 }
+  const normalizedData = (data ?? []).map(q => ({
+    ...q,
+    rationale: typeof q.rationale === 'object' && q.rationale !== null 
+      ? (q.rationale as any).text || JSON.stringify(q.rationale)
+      : q.rationale || ''
+  }))
+
+  return { data: normalizedData, totalCount: count ?? 0 }
 }
 
 export interface ArticleGroup {
@@ -141,22 +148,39 @@ export const getQuestionsGroupedByArticle = async (
  */
 export const getQuestionsByTopicIds = async (
   topicIds: string[],
+  searchQuery?: string
 ): Promise<{ data: ArticleGroup[] }> => {
-  if (topicIds.length === 0) return { data: [] }
+  if (topicIds.length === 0 && !searchQuery) return { data: [] }
   const supabase = await createClient()
 
-  // Fetch questions matching these topic IDs
-  const { data: questions, error: qError } = await supabase
+  // Build query
+  let query = supabase
     .from('questions')
     .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at')
-    .in('topic_id', topicIds)
+
+  if (topicIds.length > 0) {
+    query = query.in('topic_id', topicIds)
+  }
+
+  if (searchQuery) {
+    query = query.ilike('text', `%${searchQuery}%`)
+  }
+
+  const { data: questions, error: qError } = await query
     .order('created_at', { ascending: false })
     .limit(500)
 
   if (qError || !questions) return { data: [] }
 
+  const normalizedQuestions = questions.map(q => ({
+    ...q,
+    rationale: typeof q.rationale === 'object' && q.rationale !== null 
+      ? (q.rationale as any).text || JSON.stringify(q.rationale)
+      : q.rationale || ''
+  }))
+
   // Resolve articles for these topics
-  const uniqueTopics = [...new Set(questions.map(q => q.topic_id).filter(Boolean))]
+  const uniqueTopics = [...new Set(normalizedQuestions.map(q => q.topic_id).filter(Boolean))]
   const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
 
   if (uniqueTopics.length > 0) {
@@ -181,7 +205,7 @@ export const getQuestionsByTopicIds = async (
 
   // Group by article
   const groupMap = new Map<string, ArticleGroup>()
-  for (const q of questions) {
+  for (const q of normalizedQuestions) {
     const mapping = q.topic_id ? topicToArticle.get(q.topic_id) : undefined
     const key = mapping ? mapping.articleId : '__unassigned__'
     const existing = groupMap.get(key)
@@ -351,6 +375,9 @@ export const getQuestion = async (id: string) => {
   // Parse correct_option_id back to number for editor
   return {
     ...data,
-    correct_option_id: parseInt(data.correct_option_id as string) || 0
+    correct_option_id: parseInt(data.correct_option_id as string) || 0,
+    rationale: typeof data.rationale === 'object' && data.rationale !== null 
+      ? (data.rationale as any).text || JSON.stringify(data.rationale)
+      : data.rationale || ''
   }
 }

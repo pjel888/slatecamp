@@ -1,7 +1,7 @@
 # SLATECAMP FULL CODEBASE AUDIT
 
 **Generated:** 2026-03-24
-**Codebase:** SlateCamp (project-cerebro) v0.1.0
+**Codebase:** SlateCamp (slatecamp) v0.1.0
 **Methodology:** 7 parallel research agents, each covering 2-3 sections
 
 ---
@@ -10,7 +10,7 @@
 
 ### Identity
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams
-- **Internal codename:** project-cerebro
+- **Internal codename:** slatecamp
 - **Version:** 0.1.0
 - **Aesthetic:** Campfire — warm, inviting, research-backed, commercially viable
 - **Voice:** "Confident Companion" — warm, supportive, growth-framed

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useCallback, useEffect } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question, Stack } from '@phosphor-icons/react/dist/ssr'
@@ -341,19 +341,17 @@ export const ContentEditorIndex = ({
             </button>
           </div>
 
-          {/* Search (only for articles mode) */}
-          {viewMode === 'articles' && (
-            <div className="relative flex-1 max-w-md">
-              <MagnifyingGlass className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search articles..."
-                className="h-8 w-full rounded-sm border border-border bg-white pl-8 pr-3 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150"
-              />
-            </div>
-          )}
+          {/* Search */}
+          <div className="relative flex-1 max-w-md">
+            <MagnifyingGlass className="absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-text-tertiary" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={viewMode === 'articles' ? "Search articles..." : "Search questions..."}
+              className="h-8 w-full rounded-sm border border-border bg-white pl-8 pr-3 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150"
+            />
+          </div>
 
           {/* Status filter pills (Articles only) */}
           {viewMode === 'articles' && (
@@ -597,6 +595,7 @@ export const ContentEditorIndex = ({
               pageSize={50}
               taxonomyTree={taxonomyTree as any}
               externalSelectedNodeId={selectedNodeId}
+              externalSearchQuery={searchQuery}
             />
           </div>
         )}
