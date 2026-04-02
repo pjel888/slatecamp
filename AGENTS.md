@@ -1,4 +1,4 @@
-<!-- Generated: 2026-03-24 | Updated: 2026-03-29 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # SlateCamp
 
@@ -32,7 +32,7 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 | Directory | Purpose |
 |-----------|---------|
 | `src/` | All application source code (see `src/AGENTS.md`) |
-| `supabase/` | Database migrations (38) and seed SQL scripts (see `supabase/AGENTS.md`) |
+| `supabase/` | Database migrations (60) and seed SQL scripts (see `supabase/AGENTS.md`) |
 | `scripts/` | Dev tooling -- custom dev server, DB inspection, seeding (see `scripts/AGENTS.md`) |
 | `public/` | Static assets -- icons, OG images, widget modules (see `public/AGENTS.md`) |
 | `prompts/` | Archived PRDs, specs, and implementation guides (reference only) |
@@ -43,14 +43,14 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 
 | Metric | Value |
 |--------|-------|
-| Total .tsx files | ~692 |
-| Pages (App Router) | 105 across 4 portals |
-| Server action files | 56 (in `src/lib/actions/`) |
+| Total .tsx files | ~1044 |
+| Pages (App Router) | 137 across 4 portals |
+| Server action files | 116 (in `src/lib/actions/`) |
 | Zustand stores | 5 (in `src/stores/`) |
 | React Contexts | 10 |
 | Database tables | 51 (50 with RLS) |
 | RLS policies | 89+ |
-| Database migrations | 38 |
+| Database migrations | 60 |
 | Production dependencies | 56 |
 | Dev dependencies | 8 |
 | Env variables | 19 (6 `NEXT_PUBLIC_*`, 11 server-only, 2 config) |

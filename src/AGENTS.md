@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # src
 
@@ -87,7 +87,7 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
 
 | Directory | Purpose |
 |-----------|---------|
-| `actions/` | 44 server actions for mutations: quizzes, notes, admin, payments, wiki, analytics |
+| `actions/` | 116 server actions for mutations: quizzes, notes, admin, payments, wiki, analytics, mastery, quiz-v2, daily-dose, progress-reports |
 | `supabase/` | Supabase client initialization and type definitions |
 | `srs/` | Spaced Repetition System implementation (scheduling, intervals) |
 | `ai/` | AI Contextual Tutor integration (Temperature 0.0, cite-verified responses) |
@@ -169,6 +169,14 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
 | File | Purpose |
 |------|---------|
 | `site.ts` | Site metadata, feature flags, environment config |
+
+### features/ — Feature Modules (Vertical Slice Architecture)
+
+| Directory | Purpose |
+|-----------|---------|
+| `wall-configurator/` | 7-step wall construction configurator with CHB, drywall, plaster, paint, tile engines. Self-contained: components/, engine/, hooks/, store/, types/, __tests__/ |
+
+**Pattern:** Each feature is fully self-contained with its own components, business logic, state, and types. Use `@/` imports only for shared utilities.
 
 ### data/ — Static Data and Seeds
 

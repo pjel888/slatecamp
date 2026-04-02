@@ -1,5 +1,5 @@
 <!-- Parent: ../../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # app
 
@@ -33,6 +33,9 @@ This directory implements the Campfire design system and enforces strict pedagog
 | `dashboard` | Student portal -- authenticated routes with sidebar navigation: wiki, review, notes, 3d-lab, analytics, testing, settings |
 | `developer` | Developer portal -- internal docs, API reference, architecture guides, design system catalog, dev tools |
 | `pricing` | Pricing page (marketing) |
+| `calculators` | Construction calculators: CHB, drywall, flooring, paint estimators |
+| `quiz` | Quiz routes: dynamic [mode]/session/[sessionId] with results and review pages |
+| `test-3d` | 3D rendering test page |
 | `tools` | Standalone utilities: floor-tiles-calculator, lot-plotter, wall-paint-calculator |
 | `try` | Try/demo page (public preview) |
 

@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # lib
 
@@ -26,7 +26,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 
 | Directory | Purpose |
 |-----------|---------|
-| `actions/` | **Server Actions only.** 42 root files + admin/ (12 files), ceo/ (3 files), dev/ (2 files) handling ALL data mutations. Never access DB from components; always route through actions. |
+| `actions/` | **Server Actions only.** 116 files across root + admin/ (13 files), ceo/ (4 files), dev/ (2 files), analytics/ (5 files), mastery/ (5 files), quiz-v2/ (18 files), daily-dose/ (2 files), progress-report/ (2 files), wiki/ (2 files), ai/ (1 file) handling ALL data mutations. Never access DB from components; always route through actions. |
 | `admin/` | Admin-specific logic: role checks, permission gates, admin profile retrieval, feature flags. |
 | `ai/` | AI contextual tutor integration (Anthropic API). Temperature 0.0. Mandatory citation badges. Prompts and provider abstraction. |
 | `audio/` | Audio playback utilities for feedback sounds and ambient cues. |
@@ -54,6 +54,12 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 | `utils/` | General utilities: text processing, constants, helper functions, wiki utilities. |
 | `validations/` | Zod validation schemas: request body validation, form input schemas. |
 | `wiki/` | Wiki article lifecycle: CRUD with SME review workflow (draft -> review -> approved -> published). |
+| `quiz/` | Quiz engine logic (19 files): question selection algorithms, session management, mode orchestration, offline support. |
+| `pd1096/` | PD 1096 (Philippine Building Code) calculation logic (6 files): setback computation, building height, lot occupancy, FLAR. |
+| `lot-geometry/` | Lot geometry calculations (5 files): site planning, setback visualization, area computation. |
+| `cage/` | CAGE content assessment framework (5 files): question quality, content grading, assessment metrics. |
+| `inference/` | Statistical inference (3 files): learning analytics, pattern detection, predictive modeling. |
+| `adaptive/` | Adaptive learning algorithms (1 file): difficulty adjustment, personalized sequencing. |
 | `workflow/` | Workflow and pipeline logic: content orchestration, async processing. |
 | `__tests__/` | Unit tests and integration tests. |
 

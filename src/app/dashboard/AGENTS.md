@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # dashboard
 
@@ -23,6 +23,7 @@ Main authenticated app area. Protected by Supabase Auth. Renders the study inter
 |-----------|---------|
 | `3d-lab/` | Spatial visualization lab using React Three Fiber + Three.js. Module gallery, scene rendering, hotspot annotations, exploded assemblies, floor plan walkthroughs, cutaway sections. Client-heavy with LabViewport, Canvas wrapper. |
 | `analytics/` | Data analytics and reporting dashboard. User performance trends, session analysis. |
+| `area-c/` | Design quiz area with interactive components for architecture design challenges. |
 | `assessment/` | Entry point to quiz modes. Routes to Camp, Storm, Chill, or Blindspot protocols. |
 | `camptrails/` | Trail management UI. View active trails, historical trail data, progress tracking. |
 | `developer/` | Internal developer tools (admin-only). Console, database inspector, logs, test data seeding, design system reference, documentation. |
@@ -33,6 +34,7 @@ Main authenticated app area. Protected by Supabase Auth. Renders the study inter
 | `review/` | Camp mode dashboard and review interface. CampDashboard component, custom layout. |
 | `score-reveal/` | Readiness Score reveal flow. Post-initial assessment, shows user their computed score. |
 | `settings/` | User account settings: discipline selection, theme preferences, logout. |
+| `testing/` | Testing engine hub: session setup, active session, debrief. Supports 7 modes (Camp, Storm, Chill, Custom, Focus Review, Simulation, Subject). Dynamic routes: session/[sessionId], simulation/[sessionId]. |
 | `trails/` | Trail list and detail views. View active study trail, day-by-day breakdown at `trails/[slug]/` and `trails/[slug]/today/`. |
 | `upgrade/` | Tier upgrade / payment entry point. Prompts free users to upgrade to Pro. |
 | `welcome-pro/` | Welcome screen for new Pro subscribers. |

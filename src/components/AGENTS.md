@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # components
 
@@ -32,6 +32,11 @@ All components are server-first (default `'use client'` only where interactivity
 | `notes/` | Note-taking (9 files) | TipTap editor, note shell, navigator, quick capture, templates |
 | `portal/` | Portal shell (9 files) | Shared layout for admin/CEO/developer portals: topbar, sidebar, command palette, code blocks |
 | `quiz/` | Quiz primitives (17 files) | Question rendering, answer input, rationale drawers, timer, confidence toggle, save indicator |
+| `quiz-v2/` | Next-gen quiz engine (32 files, results/ + setup/) | Config-driven QuizShell, setup wizard, results dashboard, score bands, mode-specific behaviors |
+| `notifications/` | Notification system (6 files) | Toast notifications, notification center, real-time alerts |
+| `r3f/` | React Three Fiber scenes (4 files) | 3D scene components, camera rigs, lighting setups |
+| `score/` | Score display (2 files) | Readiness Score visualization, score badges |
+| `session/` | Session management (1 file) | Active session UI state |
 | `settings/` | User settings (1 file) | Account/preference configuration |
 | `shared/` | Reusable utilities (31 files) | ThemeProvider, data-table, section-header, stat-card, taxonomy-picker, breadcrumb, empty-state, score-display |
 | `sidebar/` | Sidebar navigation (13 files) | Unified v2 sidebar (52px/216px), mobile drawer, provider, constants |

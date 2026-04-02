@@ -171,7 +171,15 @@
       "Bash(bun scripts/normalize-distractors.ts --limit 25)",
       "Bash(bun add:*)",
       "Bash(bun scripts/normalize-distractors.ts --limit 10)",
-      "Bash(bun scripts/normalize-distractors.ts)"
+      "Bash(bun scripts/normalize-distractors.ts)",
+      "WebFetch(domain:philconprices.com)",
+      "WebFetch(domain:pinoybuilders.ph)",
+      "WebFetch(domain:www.foi.gov.ph)",
+      "WebFetch(domain:toolsph.com)",
+      "mcp__plugin_oh-my-claudecode_t__state_write",
+      "Bash(sort find:*)",
+      "Bash(while read:*)",
+      "Bash(do basename:*)"
     ]
   }
 }

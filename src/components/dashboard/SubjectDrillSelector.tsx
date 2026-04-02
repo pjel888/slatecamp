@@ -1,12 +1,10 @@
 'use client'
 
-import React, { useState, useEffect, useMemo } from 'react'
+import React from 'react'
 import {
-  BookOpen,
   CaretRight,
   CaretDown,
   Target,
-  Brain,
   Lightning,
   Warning,
   Clock,
@@ -23,7 +21,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog'
 import { Skeleton } from '@/components/ui/skeleton'
-import { getTaxonomyTree } from '@/lib/actions/taxonomy'
+import { useSubjectTree } from './useSubjectTree'
 import type { TaxonomyNode } from '@/types/app'
 import { cn } from '@/lib/utils'
 import { formatDistanceToNow } from 'date-fns'
@@ -46,43 +44,17 @@ export function SubjectDrillSelector({
   disciplineId,
   onStart,
 }: SubjectDrillSelectorProps) {
-  const [tree, setTree] = useState<TaxonomyNode[]>([])
-  const [loading, setLoading] = useState(false)
-  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set())
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null)
-  const [questionCount, setQuestionCount] = useState(10)
-
-  useEffect(() => {
-    if (open && tree.length === 0) {
-      setLoading(true)
-      getTaxonomyTree(disciplineId)
-        .then((nodes) =>
-          setTree(nodes as unknown as import('@/types/app').TaxonomyNode[]),
-        )
-        .finally(() => setLoading(false))
-    }
-  }, [open, disciplineId, tree.length])
-
-  const selectedNode = useMemo(() => {
-    const findNode = (nodes: TaxonomyNode[]): TaxonomyNode | null => {
-      for (const node of nodes) {
-        if (node.node_id === selectedNodeId) return node
-        if (node.children) {
-          const found = findNode(node.children)
-          if (found) return found
-        }
-      }
-      return null
-    }
-    return findNode(tree)
-  }, [tree, selectedNodeId])
-
-  const toggleExpand = (id: string) => {
-    const next = new Set(expandedNodes)
-    if (next.has(id)) next.delete(id)
-    else next.add(id)
-    setExpandedNodes(next)
-  }
+  const {
+    tree,
+    loading,
+    expandedNodes,
+    selectedNodeId,
+    questionCount,
+    selectedNode,
+    toggleExpand,
+    setSelectedNodeId,
+    setQuestionCount,
+  } = useSubjectTree({ disciplineId })
 
   const getMasteryColor = (mastery?: number) => {
     if (mastery === undefined) return 'bg-zinc-200'

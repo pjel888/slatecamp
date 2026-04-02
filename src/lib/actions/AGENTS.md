@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
 
 # actions
 
@@ -55,9 +55,16 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 
 | Directory | Purpose |
 |-----------|---------|
-| **admin/** | Admin-only mutations: 12 files for questions, wiki, taxonomy, assets, bulk ops, roles, pipeline, coverage, content, dashboard. See `admin/AGENTS.md`. |
-| **ceo/** | CEO portal mutations: 3 files for financial entries, team management, investor export. See `ceo/AGENTS.md`. |
+| **admin/** | Admin-only mutations: 13 files for questions, wiki, taxonomy, assets, bulk ops, roles, pipeline, coverage, content, dashboard. See `admin/AGENTS.md`. |
+| **analytics/** | Analytics data aggregation and reporting: 5 files for performance tracking, session analytics, user behavior metrics. |
+| **ai/** | AI tutor server actions: prompt dispatch, citation-verified responses. |
+| **ceo/** | CEO portal mutations: 4 files for financial entries, team management, investor export. See `ceo/AGENTS.md`. |
+| **daily-dose/** | Daily practice dose: 2 files for daily question selection and completion tracking. |
 | **dev/** | Development/test utilities: test data generation, database viewer tools. |
+| **mastery/** | Mastery calculations: 5 files for IRT theta updates, subject mastery aggregation, taxonomy node scoring. |
+| **progress-report/** | Progress reporting: 2 files for periodic progress summary generation and delivery. |
+| **quiz-v2/** | V2 quiz engine actions: 18 files for config-driven session creation, question fetching, answer processing, results computation, mode-specific behaviors. |
+| **wiki/** | Wiki content actions: 2 files for article queries, bookmark management. |
 
 ## For AI Agents
 
