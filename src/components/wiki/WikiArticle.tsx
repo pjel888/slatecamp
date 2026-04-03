@@ -29,6 +29,8 @@ import { SubjectSnapshot } from './SubjectSnapshot'
 import { LawCallout } from './LawCallout'
 import { RevealBlock } from './RevealBlock'
 import { WikiReference } from './WikiReference'
+import { Mermaid } from './Mermaid'
+import { WikiCodeBlock } from './WikiCodeBlock'
 import { resolveWidgets } from './widgets/registry'
 
 interface WikiArticleProps {
@@ -76,12 +78,7 @@ const baseMdxComponents = {
   ),
 
   // Code blocks — horizontal scroll, styled container
-  pre: (props: React.HTMLAttributes<HTMLPreElement>) => (
-    <pre
-      className="not-prose my-6 overflow-x-auto rounded-md bg-zinc-950 text-zinc-100 p-4 text-[13px] leading-relaxed font-mono border border-zinc-800"
-      {...props}
-    />
-  ),
+  pre: WikiCodeBlock,
   code: (props: React.HTMLAttributes<HTMLElement>) => {
     return <code {...props} />
   },
@@ -127,6 +124,9 @@ const baseMdxComponents = {
 
   // Wiki-to-wiki reference with hover summary and click-to-peek drawer
   WikiReference,
+
+  // Mermaid diagram support
+  Mermaid,
 }
 
 /**
