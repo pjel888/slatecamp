@@ -26,8 +26,6 @@ export const Mermaid = ({ chart }: MermaidProps) => {
       theme: isDark ? 'dark' : 'default',
       securityLevel: 'loose',
       fontFamily: 'var(--font-inter)',
-      // Higher quality rendering
-      useMaxWidth: true,
     })
 
     const renderChart = async () => {

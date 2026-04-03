@@ -1,0 +1,46 @@
+'use client'
+
+import { Card } from "@/components/ui/card"
+import { Skeleton } from "@/components/ui/skeleton"
+
+export const ReviewCalendarSkeleton = () => {
+  return (
+    <div className="rounded-md border border-[#D4DAE3] bg-white p-2 animate-pulse">
+      {/* Header */}
+      <div className="flex items-center justify-between mb-1.5">
+        <div className="flex items-center gap-1.5">
+          <Skeleton className="h-4 w-4 bg-gray-200 dark:bg-gray-800" />
+          <Skeleton className="h-3.5 w-24 bg-gray-200 dark:bg-gray-800" />
+        </div>
+        <Skeleton className="h-3 w-32 bg-gray-200 dark:bg-gray-800" />
+      </div>
+
+      {/* 7-day grid */}
+      <div className="grid grid-cols-7 gap-1">
+        {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <div
+            key={i}
+            className="flex flex-col gap-1 rounded-md border border-[#D4DAE3] bg-white p-1.5 min-w-0"
+          >
+            <div className="flex items-center justify-between">
+              <Skeleton className="h-2.5 w-8 bg-gray-200 dark:bg-gray-800" />
+            </div>
+            <div className="flex flex-col gap-0.5 mt-1">
+              <Skeleton className="h-4 w-full bg-gray-200 dark:bg-gray-800 rounded-sm" />
+              <Skeleton className="h-4 w-3/4 bg-gray-200 dark:bg-gray-800 rounded-sm" />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Footer */}
+      <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-[#D4DAE3]">
+        <div className="flex items-center gap-1">
+          <Skeleton className="h-3 w-3 bg-gray-200 dark:bg-gray-800 rounded-full" />
+          <Skeleton className="h-2.5 w-48 bg-gray-200 dark:bg-gray-800" />
+        </div>
+        <Skeleton className="h-3 w-16 bg-gray-200 dark:bg-gray-800" />
+      </div>
+    </div>
+  )
+}

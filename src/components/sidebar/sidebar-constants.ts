@@ -24,10 +24,33 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   { id: 'notes', href: '/dashboard/notes', label: 'Notes', icon: FileText, tier: 'default', group: 'learn', shortcut: '⌘3' },
 
   // Explore group — tier: default (interactive tools)
-  { id: '3d-lab', href: '/dashboard/3d-lab', label: '3D Lab', icon: Cube, tier: 'default', group: 'explore', shortcut: '⌘4' },
+  {
+    id: '3d-lab',
+    href: '/dashboard/3d-lab',
+    label: '3D Lab',
+    icon: Cube,
+    tier: 'default',
+    group: 'explore',
+    shortcut: '⌘4',
+    children: [
+      { id: '3d-site', label: 'Site Development', href: '/dashboard/3d-lab?model=nbcp-envelope' },
+      { id: '3d-stairs', label: 'Stairs', href: '/dashboard/3d-lab?model=stairway-configurator' },
+      { id: '3d-wall', label: 'Unified Wall', href: '/dashboard/3d-lab/wall-configurator' },
+    ],
+  },
 
   // Practice group — tier: secondary (tools)
-  { id: 'testing', href: '/dashboard/testing', label: 'Testing & Review', icon: Exam, tier: 'secondary', group: 'practice' },
+  {
+    id: 'testing',
+    href: '/dashboard/testing',
+    label: 'Testing & Review',
+    icon: Exam,
+    tier: 'secondary',
+    group: 'practice',
+    children: [
+      { id: 'test-sessions', label: 'Sessions', href: '/dashboard/testing' },
+    ],
+  },
   { id: 'camptrail', href: '/dashboard/camptrails', label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },
   { id: 'flash', href: '/dashboard/flash', label: 'Flash Cards', icon: Cards, tier: 'secondary', group: 'practice' },
 

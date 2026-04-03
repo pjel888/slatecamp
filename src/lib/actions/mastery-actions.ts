@@ -1,4 +1,6 @@
 
+import { createClient, getUser } from '@/lib/supabase/server'
+import { getCachedTaxonomyTree } from './cached-queries'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   FocusAreaItem,
@@ -79,6 +81,30 @@ export const buildSubjectMastery = (
       topics: topicRings,
     }
   })
+
+  return subjectMastery
+}
+
+/**
+ * Server action to fetch subject mastery data for the current user.
+ */
+export const getSubjectMasteryData = async () => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const [subjectAreasResult, subjectMasteryResult] = await Promise.all([
+    getCachedTaxonomyTree(),
+    supabase
+      .from('user_node_mastery')
+      .select('topic_id, current_mastery_weight, total_attempts')
+      .eq('user_id', user.id),
+  ])
+
+  const subjectMastery = buildSubjectMastery(subjectAreasResult, subjectMasteryResult.data)
+  
+  const projectedLaws = await buildProjectedLawsMastery(supabase, user.id)
+  if (projectedLaws) subjectMastery.push(projectedLaws)
 
   return subjectMastery
 }

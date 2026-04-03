@@ -95,6 +95,7 @@ export interface SidebarNavItemConfig {
   tier: IconTier
   group?: string
   shortcut?: string
+  children?: { id: string; label: string; href: string }[]
 }
 
 export interface SidebarNavGroupConfig {

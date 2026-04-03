@@ -1,84 +1,58 @@
 import { Suspense } from 'react'
-import { getDashboardPageData } from '@/lib/actions/dashboard-page'
-import { syncDashboardNotifications } from '@/lib/actions/sync-notifications'
-import { trackServerEvent } from '@/lib/analytics-server'
-import { HeroCommandBar } from '@/components/dashboard/HeroCommandBar'
+import { HeroCommandBarSkeleton } from '@/components/dashboard/HeroCommandBar'
+import { HeroCommandBarServer } from '@/components/dashboard/HeroCommandBarServer'
 import {
   HeatmapSection,
   HeatmapSectionSkeleton,
 } from '@/components/dashboard/HeatmapSection'
-import { SubjectMasteryCard } from '@/components/dashboard/SubjectMasteryCard'
-import { ImprovedActivityFeed } from '@/components/dashboard/ImprovedActivityFeed'
-import { DailyWikiCard } from '@/components/dashboard/FeatureDiscoveryRow'
-import { StreakRibbon } from '@/components/dashboard/StreakRibbon'
-import ResultsDayBanner from '@/app/dashboard/results-day/_components/ResultsDayBanner'
-import { ReviewCenterSyncCard } from '@/components/dashboard/ReviewCenterSyncCard'
-import { BloomCognitiveTracker } from '@/components/dashboard/BloomCognitiveTracker'
-import { ReviewCalendar } from '@/components/dashboard/ReviewCalendar'
+import { SubjectMasterySkeleton } from '@/components/dashboard/SubjectMasterySkeleton'
+import { SubjectMasteryServer } from '@/components/dashboard/SubjectMasteryServer'
+import { ImprovedActivityFeedSkeleton } from '@/components/dashboard/ImprovedActivityFeed'
+import { ActivityFeedServer } from '@/components/dashboard/ActivityFeedServer'
+import { FeatureDiscoverySkeleton } from '@/components/dashboard/FeatureDiscoveryRow'
+import { DailyWikiServer } from '@/components/dashboard/DailyWikiServer'
+import { StreakRibbonSkeleton } from '@/components/dashboard/StreakRibbonSkeleton'
+import { StreakRibbonServer } from '@/components/dashboard/StreakRibbonServer'
+import { ReviewCenterSyncServer } from '@/components/dashboard/ReviewCenterSyncServer'
+import { BloomTrackerSkeleton } from '@/components/dashboard/BloomTrackerSkeleton'
+import { BloomTrackerServer } from '@/components/dashboard/BloomTrackerServer'
+import { ReviewCalendarSkeleton } from '@/components/dashboard/ReviewCalendarSkeleton'
+import { ReviewCalendarServer } from '@/components/dashboard/ReviewCalendarServer'
 import { DailyDoseCard } from '@/components/dashboard/DailyDoseCard'
-import TransitionPrompt from '@/app/dashboard/professional/_components/TransitionPrompt'
-import { getBloomBreakdown } from '@/lib/actions/bloom-tracker'
-import { getReviewCalendarData } from '@/lib/actions/analytics/get-review-calendar'
+import { ResultsDayBannerServer } from '@/components/dashboard/ResultsDayBannerServer'
+import { TransitionPromptServer } from '@/components/dashboard/TransitionPromptServer'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { DashboardAnalyticsSync } from '@/components/dashboard/DashboardAnalyticsSync'
 
 export default async function DashboardPage() {
-  const data = await getDashboardPageData()
-
-  void trackServerEvent('app_opened', {
-    days_since_last_visit: 0,
-    current_score: data.readinessScore || undefined,
-    days_to_exam: data.daysUntilExam ?? undefined,
-  })
-
-  // Sync dashboard signals into the notification system (fire-and-forget)
-  void syncDashboardNotifications({
-    activeTrailDay: data.activeTrailDay,
-    srsReview: data.srsReview,
-    subjectFloorAlerts: data.subjectFloorAlerts,
-  })
-
-
-  // Bloom cognitive tracker data (only fetched if enough sessions)
-  // Review calendar data (personalized forgetting curves)
-  const [bloomData, reviewCalendarData] = await Promise.all([
-    data.sessionsCompleted >= 10 ? getBloomBreakdown() : Promise.resolve([]),
-    getReviewCalendarData(),
-  ])
-
-  // Professional mode transition prompt logic
-  const showPasserTransition = data.aleResult === 'passed' && data.daysUntilExam !== null && data.daysUntilExam < -3
-  const showOptInTransition = data.aleResult === 'failed' && data.daysUntilExam !== null && data.daysUntilExam < -30
-
   return (
     <SharedPageLayout>
+      <DashboardAnalyticsSync />
+      
       <div className='flex flex-col gap-2 w-full h-full min-h-0 border-0'>
         {/* ── Professional Mode Transition (passer or opt-in) ── */}
-        {showPasserTransition && <TransitionPrompt variant="passed" />}
-        {showOptInTransition && <TransitionPrompt variant="opt-in" />}
+        <Suspense fallback={null}>
+          <TransitionPromptServer />
+        </Suspense>
 
         {/* ── Results Day Banner (exam_date 3-14 days ago, no result yet) ── */}
-        {data.showResultsDayBanner && <ResultsDayBanner />}
+        <Suspense fallback={null}>
+          <ResultsDayBannerServer />
+        </Suspense>
 
         {/* ── Streak Ribbon + Locked Score ────────────────── */}
-        <StreakRibbon
-          currentStreak={data.streak.currentStreak}
-          streakStatus={data.streak.streakStatus}
-        />
+        <Suspense fallback={<StreakRibbonSkeleton />}>
+          <StreakRibbonServer />
+        </Suspense>
 
         {/* ── 1. Hero: Score + Greeting + Heatmap ────────── */}
-        <HeroCommandBar
-          userName={data.userName}
-          readinessScore={data.readinessScore}
-          previousScore={data.previousScore}
-          daysUntilExam={data.daysUntilExam}
-          heroStats={data.heroStats}
-          syllabusCoveragePercent={data.syllabusCoveragePercent}
-          readinessMeta={data.readinessMeta}
-        >
-          <Suspense fallback={<HeatmapSectionSkeleton />}>
-            <HeatmapSection />
-          </Suspense>
-        </HeroCommandBar>
+        <Suspense fallback={<HeroCommandBarSkeleton />}>
+          <HeroCommandBarServer>
+            <Suspense fallback={<HeatmapSectionSkeleton />}>
+              <HeatmapSection />
+            </Suspense>
+          </HeroCommandBarServer>
+        </Suspense>
 
         {/* ── Daily Dose — adaptive study plan ─────────── */}
         <Suspense fallback={null}>
@@ -90,36 +64,39 @@ export default async function DashboardPage() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
             {/* ── Review Calendar (7-day forward view) ── */}
             <div className='lg:col-span-3'>
-              <ReviewCalendar data={reviewCalendarData} />
+              <Suspense fallback={<ReviewCalendarSkeleton />}>
+                <ReviewCalendarServer />
+              </Suspense>
             </div>
 
             <div className='h-full lg:row-span-2'>
-              <ImprovedActivityFeed sessions={data.recentSessions} />
+              <Suspense fallback={<ImprovedActivityFeedSkeleton />}>
+                <ActivityFeedServer />
+              </Suspense>
             </div>
 
             <div className='h-full'>
-              <DailyWikiCard
-                article={data.dailyArticle}
-                notes={data.recentNotes}
-              />
+              <Suspense fallback={<FeatureDiscoverySkeleton />}>
+                <DailyWikiServer />
+              </Suspense>
             </div>
 
             <div className='h-full'>
-              <SubjectMasteryCard data={data.subjectMastery} />
+              <Suspense fallback={<SubjectMasterySkeleton />}>
+                <SubjectMasteryServer />
+              </Suspense>
             </div>
 
             {/* ── Review Center Sync (visible when enrolled) ── */}
-            <ReviewCenterSyncCard
-              enrolledReviewCenter={data.enrolledReviewCenter}
-              subjectMastery={data.subjectMastery}
-            />
+            <Suspense fallback={null}>
+              <ReviewCenterSyncServer />
+            </Suspense>
 
             {/* ── Bloom Cognitive Tracker (after 10+ sessions) ── */}
             <div className="lg:col-span-2">
-              <BloomCognitiveTracker
-                data={bloomData}
-                sessionsCompleted={data.sessionsCompleted}
-              />
+              <Suspense fallback={<BloomTrackerSkeleton />}>
+                <BloomTrackerServer />
+              </Suspense>
             </div>
           </div>
         </div>
@@ -127,3 +104,5 @@ export default async function DashboardPage() {
     </SharedPageLayout>
   )
 }
+
+

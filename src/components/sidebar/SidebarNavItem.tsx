@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname, useSearchParams } from 'next/navigation'
 import {
   Tooltip,
   TooltipTrigger,
@@ -28,9 +29,28 @@ export const SidebarNavItem = ({
   showTooltip,
   onNavigate,
 }: SidebarNavItemProps) => {
-  const { icon: Icon, label, href, tier, shortcut } = item
+  const { icon: Icon, label, href, tier, shortcut, children } = item
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   const tierOpacity = ICON_TIER_OPACITY[tier]
+
+  const isChildActive = (childHref: string) => {
+    if (childHref.includes('?')) {
+      const [path, query] = childHref.split('?')
+      const params = new URLSearchParams(query)
+      const isPathMatch = pathname === path
+      // Check if all params in childHref match current searchParams
+      let allParamsMatch = true
+      params.forEach((value, key) => {
+        if (searchParams.get(key) !== value) {
+          allParamsMatch = false
+        }
+      })
+      return isPathMatch && allParamsMatch
+    }
+    return pathname === childHref
+  }
 
   const anchor = (
     <Link
@@ -114,24 +134,49 @@ export const SidebarNavItem = ({
     </Link>
   )
 
-  // Tooltip only shown when collapsed and showTooltip is true
-  if (showTooltip && !expanded) {
-    return (
-      <TooltipProvider delay={0}>
-        <Tooltip>
-          <TooltipTrigger asChild>{anchor}</TooltipTrigger>
-          <TooltipContent side="right" sideOffset={8}>
-            {label}
-            {shortcut && (
-              <span className="ml-1.5 text-gray-400 dark:text-gray-500">
-                {shortcut}
-              </span>
-            )}
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-    )
-  }
+  return (
+    <div className="flex flex-col w-full">
+      {showTooltip && !expanded ? (
+        <TooltipProvider delay={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>{anchor}</TooltipTrigger>
+            <TooltipContent side="right" sideOffset={8}>
+              {label}
+              {shortcut && (
+                <span className="ml-1.5 text-gray-400 dark:text-gray-500">
+                  {shortcut}
+                </span>
+              )}
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      ) : (
+        anchor
+      )}
 
-  return anchor
+      {/* Children nodes - only visible when sidebar is expanded */}
+      {expanded && children && children.length > 0 && (
+        <div className="mt-1 flex flex-col gap-0.5 ml-[19px] pl-4 border-l border-border/60">
+          {children.map((child) => {
+            const active = isChildActive(child.href)
+            return (
+              <Link
+                key={child.id}
+                href={child.href}
+                onClick={onNavigate}
+                className={cn(
+                  'flex h-7 items-center rounded-md px-2 text-[11.5px] transition-colors duration-100',
+                  active
+                    ? 'bg-primary-50/50 dark:bg-primary-900/10 text-primary dark:text-primary-400 font-medium'
+                    : 'text-text-tertiary hover:bg-gray-100 dark:hover:bg-gray-800/50 hover:text-text-primary'
+                )}
+              >
+                {child.label}
+              </Link>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
 }

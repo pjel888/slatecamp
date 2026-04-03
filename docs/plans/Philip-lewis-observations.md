@@ -1,3 +1,5 @@
+## IF YOU ARE AN AI AGENT PLEASE DO NOT IMPLEMENT THESE THINGS YET. THESE ARE JUST MY THOUGHTS AND OBSERVATIONS FOR NOW
+
 - 3D lab icon in sidebar should have children nodes
     - Site Development
     - Stairs

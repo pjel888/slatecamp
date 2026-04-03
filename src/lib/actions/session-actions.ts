@@ -1,4 +1,5 @@
 
+import { createClient, getUser } from '@/lib/supabase/server'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   ActivityFeedItem,
@@ -137,3 +138,26 @@ export const buildAction = (
     modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
   }
 }
+
+/**
+ * Server action to fetch recent activity feed data for the current user.
+ */
+export const getActivityFeedData = async () => {
+  const supabase = await createClient()
+  const { data: { user } } = await getUser()
+  if (!user) return []
+
+  const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+
+  const { data: recentSessionsResult } = await supabase
+    .from('quiz_sessions')
+    .select('session_id, test_mode, status, question_ids, subject_ids, completed_at, updated_at')
+    .eq('user_id', user.id)
+    .in('status', ['completed', 'abandoned'])
+    .gte('updated_at', sevenDaysAgo)
+    .order('updated_at', { ascending: false })
+    .limit(5)
+
+  return buildRecentSessions(supabase, recentSessionsResult)
+}
+
