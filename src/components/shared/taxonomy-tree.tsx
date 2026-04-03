@@ -288,14 +288,7 @@ const TreeRow = React.memo(({
           />
         </button>
       ) : (
-        <span className={cn('flex w-5 shrink-0 items-center justify-center', level <= 1 ? 'h-8' : 'h-6')}>
-          {!isExpandable && level >= 3 && !isArticle && (
-             <span className={cn(
-               'w-1.5 h-1.5 rounded-full transition-colors duration-200',
-               isActive ? 'bg-primary' : 'bg-border group-hover/tree:bg-text-tertiary'
-             )} />
-          )}
-        </span>
+        <span className={cn('flex w-5 shrink-0 items-center justify-center', level <= 1 ? 'h-8' : 'h-6')} />
       )}
 
       {/* Level icon */}

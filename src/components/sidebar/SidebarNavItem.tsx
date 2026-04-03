@@ -97,7 +97,7 @@ export const SidebarNavItem = ({
       </span>
 
       {/* Keyboard badge — only when expanded and shortcut exists */}
-      {expanded && shortcut && (
+      {/* {expanded && shortcut && (
         <span
           className={cn(
             'ml-auto mr-1 font-mono text-[11px] font-medium',
@@ -110,7 +110,7 @@ export const SidebarNavItem = ({
         >
           {shortcut}
         </span>
-      )}
+      )} */}
     </Link>
   )
 

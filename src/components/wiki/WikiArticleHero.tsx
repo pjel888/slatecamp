@@ -45,6 +45,9 @@ export const WikiArticleHero = ({
         </p>
       )}
 
+      {/* Hero divider — separates hero from article content */}
+      <div className={cn("border-t border-[#E0DED8] mt-7 dark:border-[#3A3835]", isMinimal && "mt-2")} />
+
       {/* ALE orientation banner — NOT a callout */}
       {!isMinimal && (
         <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-[#1B3FC410]">
@@ -57,8 +60,7 @@ export const WikiArticleHero = ({
         </div>
       )}
 
-      {/* Hero divider — separates hero from article content */}
-      <div className={cn("border-t border-[#E0DED8] mt-7 dark:border-[#3A3835]", isMinimal && "mt-2")} />
+
     </header>
   )
 }

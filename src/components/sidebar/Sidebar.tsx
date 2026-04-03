@@ -107,12 +107,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
   // Inline style: expand/collapse width transition
   const sidebarStyle: React.CSSProperties = prefersReducedMotion
     ? {
-        width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
-      }
+      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
+    }
     : {
-        width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
-        transition: `width ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
-      }
+      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
+      transition: `width ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
+    }
 
   // data-collapsing overrides transition inline — handled via DOM ref in handleCollapse
   // CSS in global styles picks up [data-collapsing] to use collapse easing
@@ -177,7 +177,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
                 {/* Group label (expanded) → thin divider (collapsed), skip divider for first group */}
                 <div className="h-5 flex items-center">
                   {expanded ? (
-                    <span className="px-2 text-[11px] font-bold tracking-wider text-text-tertiary uppercase select-none">
+                    <span className="px-2 text-[8px] font-bold tracking-wider text-text-tertiary uppercase select-none">
                       {group.label}
                     </span>
                   ) : groupIdx > 0 ? (
