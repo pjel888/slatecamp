@@ -56,7 +56,7 @@ export async function MarketingNav({
           ) : (
             <Link href='/' className='inline-flex items-center'>
               <SlateCampLogo
-                size='xl'
+                size='lg'
                 variant={isDark ? 'inverted' : 'landing'}
               />
             </Link>

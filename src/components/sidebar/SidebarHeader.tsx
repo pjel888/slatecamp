@@ -31,13 +31,13 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
     <div
       className={cn(
         'whitespace-nowrap overflow-hidden',
-        'text-[16px] font-semibold tracking-[-0.3px] leading-none font-[family-name:var(--font-sora)]',
+        'text-[14px] font-semibold tracking-[-0.3px] leading-none font-[family-name:var(--font-sora)]',
         'transition-opacity duration-[180ms] ease-out',
         expanded ? 'opacity-100' : 'opacity-0 w-0 ml-0',
-        expanded && '',
+        expanded && 'ml-2.5',
       )}
     >
-      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp</span>
+      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp 🇵🇭</span>
     </div>
   </div>
 )
