@@ -270,7 +270,7 @@ CHB and paint keywords have the highest organic volume because these are the cal
 
 3. **Data compounds over time.** Every calculation trains the system on Filipino construction patterns — preferred tile sizes, typical room dimensions, common paint systems. This data becomes the foundation for smarter defaults, better recommendations, and market intelligence products.
 
-4. **ALE exam integration is unique.** No other estimation tool connects to board exam preparation. The "learn this for the exam AND use it at work" positioning is something only SlateCamp can do.
+4. **ALE exam integration is unique.** No other estimation tool connects to Licensure Exam preparation. The "learn this for the exam AND use it at work" positioning is something only SlateCamp can do.
 
 5. **Network effects through sponsors.** Each sponsor co-markets the calculator to their own audience (architects, contractors, homeowners), driving traffic that benefits all other calculators in the suite. More tools = more sponsors = more traffic = more tools.
 
@@ -303,3 +303,4 @@ When evaluating any Calculator Suite feature or business decision, apply these f
 ---
 
 *This document governs all business and revenue decisions for the 3D Calculator Suite. Features that don't map to a revenue stream should be deprioritized. Features that map to multiple revenue streams should be built first.*
+

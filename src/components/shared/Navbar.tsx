@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
 import {
   Sheet,
   SheetContent,
@@ -26,7 +27,6 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/constants/routes'
-import { siteConfig } from '@/lib/constants/site'
 
 const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: SquaresFour },
@@ -52,9 +52,9 @@ export function Navbar({ isAdmin }: NavbarProps) {
     <header className='flex h-12 items-center justify-between border-b border-border/40 bg-background/80 px-4 backdrop-blur-xl lg:hidden'>
       <Link
         href={ROUTES.DASHBOARD}
-        className='text-lg font-semibold tracking-tight text-foreground'
+        className='transition-colors duration-150 hover:opacity-80'
       >
-        {siteConfig.name}
+        <SlateCampLogo size="md" />
       </Link>
 
       <div className='flex items-center gap-2'>
@@ -76,11 +76,10 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <Link
                     key={href}
                     href={href}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${
-                      isActive
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${isActive
                         ? 'bg-secondary font-medium text-foreground'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
-                    }`}
+                      }`}
                   >
                     <SCIcon icon={Icon} size='base' />
                     {label}
@@ -93,11 +92,10 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <div className='my-2 border-t border-border' />
                   <Link
                     href={ROUTES.SETTINGS_DEVELOPER}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${
-                      pathname === ROUTES.SETTINGS_DEVELOPER
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${pathname === ROUTES.SETTINGS_DEVELOPER
                         ? 'bg-warning/10 font-medium text-warning'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
-                    }`}
+                      }`}
                   >
                     <SCIcon icon={ShieldCheck} size='base' />
                     Dev Settings

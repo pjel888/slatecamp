@@ -328,7 +328,7 @@ export const BentoFeatureGrid = () => (
               The Engine
             </span>
             <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight tracking-tight text-white'>
-              AI-Adaptive
+              Personalized
               <br />
               Learning
             </h3>

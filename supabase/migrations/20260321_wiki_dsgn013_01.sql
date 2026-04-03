@@ -42,7 +42,7 @@ BEGIN
     (v_article_id, 'Henry Dreyfuss', 'The Measure of Man and Woman (1993 revised edition) — humanscale anthropometric data with male/female percentile breakdowns', NULL, 'reference_standard', 3),
     (v_article_id, 'Edward T. Hall', 'The Hidden Dimension (1966) — defines the four proxemic distance zones (intimate, personal, social, public) and their architectural implications', NULL, 'reference_standard', 4),
     (v_article_id, 'BP 344 — 2024 Revised IRR', 'Accessible reach ranges (§4.2), counter heights (§5.1), clear floor space, knee clearance, and corridor widths for wheelchair users', NULL, 'implementing_rules', 5),
-    (v_article_id, 'ALE Standard Dimensions', 'Board exam standard body measurements and design values as applied in ALE design scenarios', NULL, 'prc_syllabus', 6);
+    (v_article_id, 'ALE Standard Dimensions', 'Licensure Exam standard body measurements and design values as applied in ALE design scenarios', NULL, 'prc_syllabus', 6);
 
   -- ── EI Prompt ─────────────────────────────────────────────────
   INSERT INTO public.wiki_ei_prompts (
@@ -71,3 +71,4 @@ BEGIN
   );
 
 END $$;
+

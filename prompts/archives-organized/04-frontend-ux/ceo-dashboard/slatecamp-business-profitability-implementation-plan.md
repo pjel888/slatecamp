@@ -402,7 +402,7 @@ Post-exam:   Celebrate passers, outreach retakers, collect testimonials
 
 | Asset | Commercial Potential | Revenue Stream |
 |---|---|---|
-| Readiness Score Algorithm | License to other EdTech for different board exams | API-as-a-Service |
+| Readiness Score Algorithm | License to other EdTech for different Licensure Exams | API-as-a-Service |
 | Adaptive Testing Engine | White-label to review centers, corporate training | White-Label Licensing |
 | ALE Taxonomy Map | License to publishers, UAP, CHED | Data/Content Licensing |
 | 3D Lab WebGL Modules | License to architecture schools as curriculum tool | Standalone Product |
@@ -668,3 +668,4 @@ Before any major product or business decision:
 ---
 
 > **This document is the strategic backbone behind every number on the CEO Dashboard. Every metric displayed, every chart rendered, and every empty state message should trace back to a section in this plan. If a feature on `/ceo` can't be justified by this document, it doesn't belong there.**
+

@@ -1,7 +1,7 @@
 'use client'
 
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
+import { SlateCampLogomark } from '@/components/graphics/logos/SlateCampLogomark'
 
 // ---------------------------------------------------------------------------
 // SidebarHeader — HTML v4 anatomy
@@ -15,16 +15,15 @@ interface SidebarHeaderProps {
 export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
   <div
     className={cn(
-      'flex h-16 shrink-0 items-center px-[6px]',
+      'flex h-16 shrink-0 items-center px-[3px]',
       'border-b border-gray-200 dark:border-gray-800',
     )}
   >
     {/* Logo icon container: 40x64px — matches dashboard header height for visual continuity */}
-    <div className="flex h-16 w-10 shrink-0 items-center justify-center">
-      <BookOpen
-        size={16}
-        weight="fill"
-        className="w-4 h-4 text-camp-cobalt dark:text-[#4F6AE8]"
+    <div className="flex h-16 w-12 shrink-0 items-center justify-center">
+      <SlateCampLogomark
+        size={32}
+        className="text-camp-cobalt dark:text-[#4F6AE8]"
       />
     </div>
 
@@ -32,13 +31,13 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
     <div
       className={cn(
         'whitespace-nowrap overflow-hidden',
-        'text-[13px] font-extrabold tracking-[-0.3px] leading-none font-sans',
+        'text-[16px] font-semibold tracking-[-0.3px] leading-none font-[family-name:var(--font-sora)]',
         'transition-opacity duration-[180ms] ease-out',
-        expanded ? 'opacity-100' : 'opacity-0 w-0',
+        expanded ? 'opacity-100' : 'opacity-0 w-0 ml-0',
+        expanded && '',
       )}
     >
-      <span className="text-gray-900 dark:text-gray-200">Slate</span>
-      <span className="text-camp-cobalt dark:text-[#4F6AE8]">Camp</span>
+      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp</span>
     </div>
   </div>
 )

@@ -45,7 +45,7 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     id: 'camp',
     tierName: 'Camp',
     subtitle: 'The "ALE Season Pass"',
-    targetAudience: 'Active Board Exam Reviewees',
+    targetAudience: 'Active ALE Reviewees',
     price: '₱499',
     priceSubtext: '/ month',
     hook: 'Everything you need to pass the ALE.',

@@ -158,7 +158,7 @@ Each feature PRD covers: objective, UX/UI specs, educational design, software ar
 
 - **Readiness Score™:** EMA-weighted, IRT-adjusted composite score across all taxonomy nodes
 - **Taxonomy Heatmap™:** Color-coded mastery map (Green ≥85%, Amber 60–84%, Red <60%, Grey = unexplored)
-- **Pacing Gauge:** Average time per item vs. board exam pace
+- **Pacing Gauge:** Average time per item vs. Licensure Exam pace
 - **Endurance Curve:** Accuracy-over-time plot revealing cognitive fatigue point
 - **Node Inspector:** Click any heatmap node → historical accuracy, attempt count, "Fix It" one-click targeted quiz
 
@@ -168,3 +168,4 @@ Each feature PRD covers: objective, UX/UI specs, educational design, software ar
 - `readiness-score-update` server action
 - `mastery-actions` for EMA recalculation
 - `user_global_stats` and `readiness_score_snapshots` tables for aggregated analytics
+

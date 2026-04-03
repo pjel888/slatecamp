@@ -7,7 +7,7 @@
 
 ## IDENTITY
 
-**SlateCamp** is a board exam preparation platform for Philippine licensure exams. The design language communicates: precision, confidence, and warmth. It borrows from editorial design (bold typography, asymmetric layouts), data dashboards (clean grids, honest numbers), and architectural drawing (structured, spatial, geometric).
+**SlateCamp** is a Licensure Exam preparation platform for Philippine licensure exams. The design language communicates: precision, confidence, and warmth. It borrows from editorial design (bold typography, asymmetric layouts), data dashboards (clean grids, honest numbers), and architectural drawing (structured, spatial, geometric).
 
 The visual personality is: **"A well-designed textbook that feels alive."** Academic seriousness meets modern editorial energy. Never corporate. Never gamified. Never generic SaaS.
 
@@ -489,3 +489,4 @@ The landing page IS the design direction. The dashboard and all internal pages m
 ---
 
 *This document is the single source of truth for all SlateCamp visual decisions. When in doubt, reference the landing page — it is the gold standard.*
+

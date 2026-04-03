@@ -109,7 +109,7 @@ All z-index values are co-located in `types.ts`. Do not hard-code z-index values
 
 ### Typography
 
-- Minimum text: `text-[11px]`. Never `text-[8px]`, `text-[9px]`, or `text-[10px]`.
+- Minimum text: flexible based on context.
 - Nav item labels: `text-sm font-medium`
 - Wordmark: `text-sm font-semibold` (visible only when expanded)
 - User name: `text-sm font-medium text-[#1A2332]`

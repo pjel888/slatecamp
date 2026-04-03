@@ -54,7 +54,7 @@ Firewall adjacency allows zero side/rear setbacks for qualifying occupancies —
 
 Two operational modes govern all interaction states. These are not UI tabs — they are **root-level app states** that reconfigure every surface.
 
-| Dimension | **Sandbox / Lab Mode** | **Mock Board Exam Mode** |
+| Dimension | **Sandbox / Lab Mode** | **Mock Licensure Exam Mode** |
 |---|---|---|
 | **Purpose** | Spatial understanding, parametric exploration | ALE-calibrated performance testing |
 | **Input access** | All parameters exposed | Given (locked), derived (hidden until revealed) |
@@ -196,7 +196,7 @@ In the 3D canvas, this panel's state drives:
 
 ---
 
-## 2.5 — Mock Board Exam Mode Flow
+## 2.5 — Mock Licensure Exam Mode Flow
 
 ```
 ENTER EXAM MODE

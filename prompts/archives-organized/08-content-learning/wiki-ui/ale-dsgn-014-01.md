@@ -1,4 +1,4 @@
-You are about to spend three to six months preparing for the ALE. Before you open a single code book, understand this: one subject carries more weight than any other, occupies an entire exam day by itself, and has ended more board exam attempts than all the others combined.
+You are about to spend three to six months preparing for the ALE. Before you open a single code book, understand this: one subject carries more weight than any other, occupies an entire exam day by itself, and has ended more Licensure Exam attempts than all the others combined.
 
 This is that subject.
 
@@ -213,3 +213,4 @@ The subtopics are sequenced to build from foundation to execution. This subtopic
 | 15    | Subject Mastery and Connections      | Key values, common mistakes, practice questions        |
 
 Read them in order on the first pass. After that, use the code subtopics as reference libraries you return to when practicing design scenarios.
+

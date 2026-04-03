@@ -83,7 +83,7 @@ export function WikiRightSidebar({
       </div>
 
       {/* 1.5 Save to Notes Workspace */}
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <Button 
           variant="outline" 
           size="sm" 
@@ -93,7 +93,7 @@ export function WikiRightSidebar({
           <FileText size={14} className="group-hover:scale-110 transition-transform" />
           Study in Notes
         </Button>
-      </div>
+      </div> */}
 
       {/* 2. Related topics — popover to avoid layout shift */}
       <WikiRelatedPopover topics={cappedRelated} />

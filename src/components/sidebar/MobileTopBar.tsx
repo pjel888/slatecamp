@@ -2,6 +2,7 @@
 
 import { List } from '@phosphor-icons/react/dist/ssr'
 import { Z_INDEX } from './types'
+import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
 
 // ---------------------------------------------------------------------------
 // MobileTopBar — fixed 42px bar visible only below lg breakpoint
@@ -38,13 +39,7 @@ export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
       </button>
 
       {/* Wordmark logo */}
-      <div
-        className="font-extrabold text-[13px] select-none"
-        style={{ letterSpacing: '-0.3px', lineHeight: 1 }}
-      >
-        <span className="text-text-primary dark:text-white">Slate</span>
-        <span className="text-camp-cobalt">Camp</span>
-      </div>
+      <SlateCampLogo size="sm" className="ml-1" />
     </div>
   )
 }

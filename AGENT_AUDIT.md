@@ -6752,7 +6752,7 @@ Implementation: `lib/readiness-score.ts`
 
 ## Purpose
 
-Root Next.js App Router directory for SlateCamp -- a cognitive-first, AI-adaptive board exam prep platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
+Root Next.js App Router directory for SlateCamp -- a cognitive-first, Personalized Licensure Exam prep platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
 
 This directory implements the Campfire design system and enforces strict pedagogical constraints: no generic gamification, zero temperature AI tutor, Item Response Theory (IRT) mastery calculations, and growth-framed voice throughout.
 
@@ -11943,7 +11943,7 @@ AI tutor and mnemonic generation server actions. Provides context-aware AI compl
 3. **Demo mode fallback** — check `isDemoMode()` before calling AI provider; return static demo mnemonic if in demo.
 4. **Max tokens limiting** — set `maxTokens: 80` to keep mnemonics short (< 20 words).
 5. **Error graceful** — if AI provider fails, return a helpful text string (e.g., "Try creating your own acronym...") rather than throwing.
-6. **Cultural context** — for Filipino board exams, weave in local references: foods (adobo, lumpia), landmarks (Intramuros, Pagsanjan Falls), Tagalog wordplay, common phrases.
+6. **Cultural context** — for Filipino Licensure Exams, weave in local references: foods (adobo, lumpia), landmarks (Intramuros, Pagsanjan Falls), Tagalog wordplay, common phrases.
 
 ### Common Patterns
 
@@ -11958,7 +11958,7 @@ const DEMO_MNEMONICS: Record<string, string> = {
   default: 'Think "BAHAY" — B for Beam depth, A for Area load, H for Height limit...',
 }
 
-const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture board exam students.
+const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture Licensure Exam students.
 
 TASK: Create ONE memorable mnemonic device for the given fact/concept.
 
@@ -16298,4 +16298,5 @@ psql supabase_url -c "SELECT table_name, COUNT(*) FROM pg_policies GROUP BY tabl
 
 
 ---
+
 

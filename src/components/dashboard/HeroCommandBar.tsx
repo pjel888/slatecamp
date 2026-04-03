@@ -185,7 +185,7 @@ export function HeroCommandBar({
           </TooltipTrigger>
           <TooltipContent side='bottom'>
             Your Readiness Score is a real-time calculation of how prepared you
-            are for the board exam, based on your quiz accuracy across all ALE
+            are for the Licensure Exam, based on your quiz accuracy across all ALE
             topics.
           </TooltipContent>
         </Tooltip>
@@ -328,3 +328,4 @@ export function HeroCommandBarSkeleton() {
     </div>
   )
 }
+

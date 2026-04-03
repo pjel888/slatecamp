@@ -3,7 +3,7 @@
 **Last Updated:** March 2026  
 **Classification:** Internal · Product Architect Reference  
 **Tagline:** Know you'll win.  
-**Governing Question:** *Does this make a student more likely to win their board exam?*
+**Governing Question:** *Does this make a student more likely to win their Licensure Exam?*
 
 ---
 
@@ -32,7 +32,7 @@ SlateCamp is a unified, discipline-agnostic study engine for Philippine professi
 
 **It is not a quiz app. It is not a content library. It is not an LMS.**
 
-It is the infrastructure the board exam process should have always had — a single, closed-loop ecosystem where every interaction feeds a global mastery engine, every wrong answer is an asset, and the Readiness Score is the most honest signal a student has ever had about where they actually stand.
+It is the infrastructure the Licensure Exam process should have always had — a single, closed-loop ecosystem where every interaction feeds a global mastery engine, every wrong answer is an asset, and the Readiness Score is the most honest signal a student has ever had about where they actually stand.
 
 ### The Core Loop
 
@@ -74,7 +74,7 @@ SlateCamp serves the full architecture education-to-licensure pipeline. There is
 - **Pricing target:** Student plan (lower price point or free with daily cap)
 
 ### User Type B — The ALE Reviewee (Primary Market)
-- **Stage:** Post-graduation, actively reviewing for the board exam
+- **Stage:** Post-graduation, actively reviewing for the Licensure Exam
 - **Primary use:** Camp Trails, full mock exams, Proof Simulation, Blindspot Protocol remediation
 - **Behavior:** 80% quizzing, 20% Wiki/3D Lab remediation
 - **Value:** Paying customer, testimonial generator, word-of-mouth engine
@@ -986,7 +986,7 @@ CREATE TABLE public.topic_teach_back_criteria (
 );
 ```
 
-**Marketing moment:** First Philippine board exam review platform that teaches you how to teach what you know. A 60-second screen recording — student types an explanation, AI surfaces a gap they didn't know they had, student revises — is a demo video that writes itself.
+**Marketing moment:** First Philippine Licensure Exam review platform that teaches you how to teach what you know. A 60-second screen recording — student types an explanation, AI surfaces a gap they didn't know they had, student revises — is a demo video that writes itself.
 
 ---
 
@@ -1227,3 +1227,4 @@ All UI strings, error messages, onboarding copy, and system-generated feedback m
 *SlateCamp Product Architecture Document v2.0*  
 *Internal · Product Architect Reference · © 2025 SlateCamp*  
 *Maintained by: Claude (Product Architect) + Philip (Founder)*
+

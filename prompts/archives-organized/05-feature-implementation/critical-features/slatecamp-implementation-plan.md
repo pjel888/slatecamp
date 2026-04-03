@@ -1256,7 +1256,7 @@ Pod creation: available to Pro subscribers only
 
 6. **Privacy by default.** No user's individual score or performance data should be visible to other users without explicit opt-in. Pod score views show deltas, not absolute scores. School heatmaps are aggregate-only.
 
-7. **The governing question for every feature:** "Does this make a student more likely to win their board exam?" If the answer isn't clearly yes, don't build it.
+7. **The governing question for every feature:** "Does this make a student more likely to win their Licensure Exam?" If the answer isn't clearly yes, don't build it.
 
 ---
 
@@ -1314,3 +1314,4 @@ CRON_SECRET=              # for securing cron endpoints
 *SlateCamp Implementation Plan — March 2026 — For Claude Code*  
 *Source: Feature Research Report (cross-document analysis of 4 SlateCamp documents)*  
 *Stack: Next.js 15 App Router · Supabase · Tailwind CSS · shadcn/ui · Zustand*
+

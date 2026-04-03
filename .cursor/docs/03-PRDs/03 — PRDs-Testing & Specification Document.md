@@ -289,7 +289,7 @@ This is the configuration screen that appears after selecting any mode (Camp, St
 - The visual design shifts noticeably — darker background tint, more clinical typography
 - Persistent countdown timer at the top (large, always visible) — counts down from total exam time
 - Question counter: `Q 14 / 100`
-- Per-question pacing indicator: small gauge showing if the student is ahead/behind board exam pace
+- Per-question pacing indicator: small gauge showing if the student is ahead/behind Licensure Exam pace
 - The Arsenal (toolbar):
   - Strike-through tool (same as Camp)
   - Flag for Review (same as Camp)
@@ -305,7 +305,7 @@ This is the configuration screen that appears after selecting any mode (Camp, St
 **Step 5: Tab-switching behavior.**
 
 - If student switches tabs or minimizes browser: timer continues. No pause. A subtle alert on return: *"The clock didn't stop. (X) seconds passed."*
-- This is intentional. Board exams don't pause.
+- This is intentional. Licensure Exams don't pause.
 
 **Step 6: Student navigates between questions.**
 
@@ -567,7 +567,7 @@ Colors on the heatmap shift: green nodes become greener if accuracy improved, re
 The auto-generated targeted quiz from red nodes appears as the primary post-session action: *"Your weakest node from this session: Fire Exit Clearances (43%). Fix it now →"*
 
 **Step 8:** Pacing Metric updates.
-Average time per item is updated and compared to the board exam pace standard: *"Your average pace: 2.4 min/question. Target: 2.0 min/question. You have 47 days to close this gap."*
+Average time per item is updated and compared to the Licensure Exam pace standard: *"Your average pace: 2.4 min/question. Target: 2.0 min/question. You have 47 days to close this gap."*
 
 ---
 
@@ -640,3 +640,4 @@ Previous component names (`QuizRenderer.tsx`, `TestingHub.tsx`) are retired — 
 ---
 
 > **The short version of this entire document:** Camp Mode teaches. Chill Mode exposes. Storm Mode tests. Proof Simulation™ certifies. And the Lucky Guess Detector™ makes sure none of them let the student lie to themselves.
+

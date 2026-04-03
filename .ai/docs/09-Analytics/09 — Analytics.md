@@ -15,7 +15,7 @@ The product analytics engine, scoring methodology, mastery visualization, and me
 
 Most study platforms track *activity* — quizzes taken, articles read, hours logged. Activity metrics are vanity metrics. A student who completes 500 practice questions but gets 45% correct on Structural Design is not "active." That student is failing in slow motion and doesn't know it.
 
-SlateCamp tracks **competence.** Every interaction — every answered question, every flagged item, every second of hesitation — feeds a scoring engine that maintains a real-time, per-topic mastery profile against the complete board exam syllabus. The output is a single, defensible number: the **Readiness Score.**
+SlateCamp tracks **competence.** Every interaction — every answered question, every flagged item, every second of hesitation — feeds a scoring engine that maintains a real-time, per-topic mastery profile against the complete Licensure Exam syllabus. The output is a single, defensible number: the **Readiness Score.**
 
 The Readiness Score does three things no competitor does:
 
@@ -137,7 +137,7 @@ Click any node on the heatmap to open the **Node Inspector** — a side panel co
 
 - **Historical accuracy graph** — time-series line chart (Recharts) showing score trajectory over weeks
 - **Attempt count** — total questions attempted on this node
-- **Average time per item** — compared against the board exam's expected pace
+- **Average time per item** — compared against the Licensure Exam's expected pace
 - **Last encountered date** — how recently this node was tested (staleness indicator)
 - **"Fix It" button** — one-click auto-generates a targeted quiz pulling exclusively from this node's question bank
 
@@ -162,7 +162,7 @@ When a user's heatmap contains 3+ red nodes, the dashboard surfaces a **Blindspo
 
 - Recency of last attempt (stale nodes rank higher)
 - Severity of deficit (lower mastery weight ranks higher)
-- Exam frequency (topics that appear more often on historical board exams rank higher)
+- Exam frequency (topics that appear more often on historical Licensure Exams rank higher)
 
 The Blindspot Queue is not a suggestion. It is the mathematically optimal study order for maximum score improvement per hour invested.
 
@@ -173,7 +173,7 @@ The Blindspot Queue is not a suggestion. It is the mathematically optimal study 
 
 ### The Endurance Cycle
 
-Board exams are not 10-question quizzes. The ALE is a 6-hour endurance test across multiple subjects. Performance degradation over time — answering accurately at item 20 but guessing wildly at item 180 — is a failure mode that short quizzes never expose.
+Licensure Exams are not 10-question quizzes. The ALE is a 6-hour endurance test across multiple subjects. Performance degradation over time — answering accurately at item 20 but guessing wildly at item 180 — is a failure mode that short quizzes never expose.
 
 The Endurance Cycle tracks **accuracy decay over session length:**
 
@@ -185,7 +185,7 @@ The Endurance Cycle tracks **accuracy decay over session length:**
 
 - A post-session insight card: *"Your accuracy dropped 18% after item 40. Your current endurance ceiling is approximately 40 items before fatigue degrades performance."*
 - A recommended session length based on their personal decay curve
-- A pacing gauge showing average time per item compared against the board exam's expected pace (total exam time ÷ total items)
+- A pacing gauge showing average time per item compared against the Licensure Exam's expected pace (total exam time ÷ total items)
 
 **What this changes:**
 
@@ -198,7 +198,7 @@ The Readiness Score measures competence under normal conditions. The Proof Simul
 **How it works:**
 
 - Unlocked when a student's **Readiness Score ≥ 65%** (minimum viable mastery). If below 65%, the button is grayed out with: *"Unlock Full Exam Simulation when your Readiness Score reaches 65%. Currently: [X]%."*
-- Simulates a full-length board exam section: 100+ items, strict countdown, no rationale access, no "Flag for Review" rescue
+- Simulates a full-length Licensure Exam section: 100+ items, strict countdown, no rationale access, no "Flag for Review" rescue
 - After submission, the system generates a **Proof Score** — the Readiness Score recalculated using only Proof Simulation data
 - The delta between the student's normal Readiness Score and their Proof Score reveals the **pressure gap** — the difference between what they know and what they can perform under stress
 
@@ -216,7 +216,7 @@ The Proof Simulation is the final gate. A student who passes it has not just stu
 
 ## Pacing Intelligence
 
-The board exam does not grade on accuracy alone. A student who answers 120 items correctly but leaves 80 blank scores lower than a student who answers all 200 items at 65% accuracy. Pacing is a survival skill.
+The Licensure Exam does not grade on accuracy alone. A student who answers 120 items correctly but leaves 80 blank scores lower than a student who answers all 200 items at 65% accuracy. Pacing is a survival skill.
 
 ### The Pacing Gauge
 
@@ -251,7 +251,7 @@ The Readiness Score is a B2C product. The **Cohort Dashboard** is how that same 
 
 University deans and department heads (Persona C from 01-Discovery) do not care about individual student heatmaps. They care about two things:
 
-1. What percentage of my graduating batch will pass the board exam?
+1. What percentage of my graduating batch will pass the Licensure Exam?
 2. Which subject areas are dragging the cohort down — and can I intervene before the exam?
 
 ### Cohort Dashboard Features
@@ -340,12 +340,12 @@ These metrics prove the platform works — that it teaches, not just tests. They
 | --- | --- | --- | --- |
 | **Node Reclassification Rate** | % of users who move a node from Red → Amber or Amber → Green within 30 days | ≥ 40% | Proves the intervention mechanics (Blindspot Protocol, spaced repetition) drive actual mastery improvement, not just activity |
 | **Readiness Score Trajectory** | Average score increase from Week 1 to Week 12 of active use | +25 points | The core value proposition visualized as a growth curve. This chart goes in the pitch deck. |
-| **Proof Simulation Pass Rate** | % of students who score ≥ 75% on Proof Simulation (approximating board passing threshold) | ≥ 70% of Insurance-tier users | The closest proxy to actual board exam passing rate before real outcome data is available |
+| **Proof Simulation Pass Rate** | % of students who score ≥ 75% on Proof Simulation (approximating board passing threshold) | ≥ 70% of Insurance-tier users | The closest proxy to actual Licensure Exam passing rate before real outcome data is available |
 | **Endurance Ceiling Growth** | Average item count before accuracy decay exceeds 15%, tracked over time | Increasing by ≥ 10 items per month | Proves the platform builds exam stamina, not just knowledge |
-| **Pacing Convergence** | % of users whose average time per item converges toward board exam pace over 8 weeks | ≥ 60% | Students are not just getting smarter — they are getting faster |
+| **Pacing Convergence** | % of users whose average time per item converges toward Licensure Exam pace over 8 weeks | ≥ 60% | Students are not just getting smarter — they are getting faster |
 | **AI Tutor Hallucination Rate** | % of AI responses flagged as inaccurate by users or Auditor LLM | < 0.5% | Trust metric for the RAG pipeline. Above 1% erodes confidence in the entire platform. |
 | **Taxonomy Coverage** | % of syllabus nodes with both Wiki content and quiz questions | ≥ 90% | Content completeness. Gaps in coverage are gaps in the student's preparation. |
-| **Board Exam Correlation** (post-launch) | Pearson correlation between Readiness Score and actual board exam percentile | ≥ 0.7 | The ultimate validation. If the Readiness Score predicts outcomes, the product thesis is proven. |
+| **Licensure Exam Correlation** (post-launch) | Pearson correlation between Readiness Score and actual Licensure Exam percentile | ≥ 0.7 | The ultimate validation. If the Readiness Score predicts outcomes, the product thesis is proven. |
 
 ### Retention
 
@@ -410,7 +410,7 @@ Per-feature metrics that feed into product decisions and 08-Feedback's triage pi
 | **Daily** | Engineering | DAU, quiz completions, error rates, auto-save recovery rate, P0 bug count | Automated dashboard (Recharts internal view) |
 | **Weekly** | Product team | WAL, conversion funnel, feature adoption rates, feedback triage summary, NPS snapshot | Monday standup + shared Notion page |
 | **Monthly** | Founder | MRR, churn, educational efficacy metrics, Node Reclassification Rate, Proof Simulation pass rate, SME review queue health | Structured review with trend analysis |
-| **Quarterly** | Board / Investors | LTV/CAC, cohort retention curves, Readiness Score trajectory, Board Exam Correlation (when available), horizontal expansion readiness | Investor update with visualizations |
+| **Quarterly** | Board / Investors | LTV/CAC, cohort retention curves, Readiness Score trajectory, Licensure Exam Correlation (when available), horizontal expansion readiness | Investor update with visualizations |
 
 ---
 

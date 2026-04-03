@@ -611,7 +611,7 @@ const DesignSystemPage = () => {
               level="page"
               eyebrow="COURSE OVERVIEW"
               title="Architecture Licensure"
-              subtitle="Your study dashboard for the ALE board exam."
+              subtitle="Your study dashboard for the ALE Licensure Exam."
               action={<Button size="sm">Start Review</Button>}
             />
             <div className="border-t border-border pt-6">
@@ -1303,7 +1303,7 @@ const DesignSystemPage = () => {
                 </DialogDescription>
               </DialogHeader>
               <div className="space-y-3 py-2">
-                <Input placeholder="Plan name" defaultValue="ALE Board Exam Prep" />
+                <Input placeholder="Plan name" defaultValue="ALE Licensure Exam Prep" />
                 <Input placeholder="Target date" defaultValue="2026-06-15" />
               </div>
             </DialogContent>
@@ -2015,7 +2015,7 @@ const DesignSystemPage = () => {
           <p className="text-xs font-medium text-muted-foreground">Eyebrow Variants (mono label, no icon)</p>
           <div className="space-y-2">
             <Callout variant="most-tested">
-              Fire resistance ratings of structural elements appear in nearly every board exam cycle. Focus on the 1-hour, 2-hour, and 4-hour rating thresholds.
+              Fire resistance ratings of structural elements appear in nearly every Licensure Exam cycle. Focus on the 1-hour, 2-hour, and 4-hour rating thresholds.
             </Callout>
             <Callout variant="ale-watch">
               The ALE has recently shifted emphasis toward accessibility provisions under BP 344. Expect 2-3 questions on ramp slopes and accessible toilet dimensions.
@@ -2280,3 +2280,4 @@ const DesignSystemPage = () => {
 }
 
 export default DesignSystemPage
+

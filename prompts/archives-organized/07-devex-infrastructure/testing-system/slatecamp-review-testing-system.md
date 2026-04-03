@@ -902,7 +902,7 @@ ALTER TABLE public.user_global_stats
 
 Every decision about the testing system — what to show, what to hide, when to give feedback, how to structure a session — is evaluated by one question:
 
-**"Does this make a student more likely to pass their board exam?"**
+**"Does this make a student more likely to pass their Licensure Exam?"**
 
 Applied to specific decisions:
 - Why no time-per-question display during sessions: Monitoring anxiety reduces performance. Not showing it → more likely to pass.
@@ -916,3 +916,4 @@ Applied to specific decisions:
 *SlateCamp — Review & Testing System · Comprehensive Product & Data Document*  
 *Version 1.0 · March 2026 · Internal · Engineering + Product Reference*  
 *Based on: DATABASE_SCHEMA.sql (production) · Product Architecture v2.1 · DB Audit v3 · UX Research sessions*
+

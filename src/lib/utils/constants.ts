@@ -40,9 +40,9 @@ export const PROFESSIONS: {
     label: "Engineering",
     icon: "hard-hat",
     exams: [
-      { value: "CE Board", label: "Civil Engineering Board Exam (PH)" },
-      { value: "ME Board", label: "Mechanical Engineering Board Exam (PH)" },
-      { value: "EE Board", label: "Electrical Engineering Board Exam (PH)" },
+      { value: "CE Board", label: "Civil Engineering Licensure Exam (PH)" },
+      { value: "ME Board", label: "Mechanical Engineering Licensure Exam (PH)" },
+      { value: "EE Board", label: "Electrical Engineering Licensure Exam (PH)" },
     ],
   },
 ];
@@ -59,3 +59,4 @@ export const TIER_PRICES = {
   insurance: { amount: 999, currency: "PHP", label: "₱999/mo" },
   institutional: { amount: 1499, currency: "PHP", label: "₱1499/mo" },
 } as const;
+

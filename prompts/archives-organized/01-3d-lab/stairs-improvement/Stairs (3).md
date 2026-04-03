@@ -52,7 +52,7 @@ Typical consolidated figures (verify against your latest review material):
 - Maximum riser (NBCP baseline): **200 mm**. [fr.scribd](https://fr.scribd.com/document/657405626/PD1096-BP344-RA9514)
 - Minimum tread (NBCP baseline): **200 mm**. [scribd](https://www.scribd.com/document/559529819/Pd-1096-Guidelines-Table)
 
-These tables are what many reviewers and board exam references use when cross‑checking compliance across PD 1096, BP 344, and the Fire Code. [fr.scribd](https://fr.scribd.com/document/657405626/PD1096-BP344-RA9514)
+These tables are what many reviewers and Licensure Exam references use when cross‑checking compliance across PD 1096, BP 344, and the Fire Code. [fr.scribd](https://fr.scribd.com/document/657405626/PD1096-BP344-RA9514)
 
 ## Quick comparison table
 

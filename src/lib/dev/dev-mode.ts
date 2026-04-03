@@ -17,7 +17,6 @@ export interface TierCapabilities {
   srsAccess: boolean;
   threeDLabAccess: boolean;
   aiTutorAccess: boolean;
-  aiAdaptiveAccess: boolean;
   customBanksAccess: boolean;
 }
 
@@ -57,7 +56,6 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     srsAccess: false,
     threeDLabAccess: false,
     aiTutorAccess: false,
-    aiAdaptiveAccess: false,
     customBanksAccess: false,
   },
   camp: {
@@ -67,7 +65,6 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     srsAccess: true,
     threeDLabAccess: true,
     aiTutorAccess: false,
-    aiAdaptiveAccess: false,
     customBanksAccess: true,
   },
   insurance: {
@@ -77,7 +74,6 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     srsAccess: true,
     threeDLabAccess: true,
     aiTutorAccess: true,
-    aiAdaptiveAccess: true,
     customBanksAccess: true,
   },
   institutional: {
@@ -87,7 +83,6 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     srsAccess: true,
     threeDLabAccess: true,
     aiTutorAccess: true,
-    aiAdaptiveAccess: true,
     customBanksAccess: true,
   },
 };
@@ -149,12 +144,6 @@ export function getConnectionState(): DevConnectionState {
 
 /**
  * Resolve the effective tier given the dev mode config.
- *
- * Priority:
- * 1. If devConfig.simulatedTier is set → use it (regardless of connection state)
- * 2. If admin with no simulation → "institutional"
- * 3. If local mode with no simulation → "institutional" (full access for local dev)
- * 4. Otherwise → actual DB tier
  */
 export function resolveEffectiveTier(
   dbTier: UserTier,
@@ -162,22 +151,14 @@ export function resolveEffectiveTier(
   connectionState: DevConnectionState,
   devConfig: DevModeConfig
 ): UserTier {
-  // Explicit simulation always wins
   if (devConfig.simulatedTier) return devConfig.simulatedTier;
-
-  // Admin defaults to institutional
   if (isAdmin) return "institutional";
-
-  // Local mode defaults to institutional (so devs get full access unless they simulate)
   if (connectionState === "local") return "institutional";
-
-  // Normal connected user — use DB tier
   return dbTier;
 }
 
 /**
  * Check if a feature requiring a minimum tier is accessible.
- * Accounts for individual gate bypasses.
  */
 export function checkTierAccess(
   requiredTier: UserTier,
@@ -185,15 +166,12 @@ export function checkTierAccess(
   devConfig: DevModeConfig,
   gate?: "bypass3dGate" | "bypassAiGate" | "bypassSrsGate"
 ): boolean {
-  // Individual gate bypass overrides tier check
   if (gate && devConfig[gate]) return true;
-
   return TIER_RANK[effectiveTier] >= TIER_RANK[requiredTier];
 }
 
 /**
  * Get the full resolved capabilities for a given effective tier + dev config.
- * Merges base tier capabilities with any gate overrides.
  */
 export function resolveCapabilities(
   effectiveTier: UserTier,
@@ -201,11 +179,9 @@ export function resolveCapabilities(
 ): TierCapabilities {
   const base = { ...TIER_CAPABILITIES[effectiveTier] };
 
-  // Apply gate overrides
   if (devConfig.bypass3dGate) base.threeDLabAccess = true;
   if (devConfig.bypassAiGate) {
     base.aiTutorAccess = true;
-    base.aiAdaptiveAccess = true;
   }
   if (devConfig.bypassSrsGate) base.srsAccess = true;
 
@@ -214,7 +190,6 @@ export function resolveCapabilities(
 
 /**
  * Build a summary label for the current dev mode state.
- * e.g. "Local / Free", "Connected / Camp", "Connected / Institutional (admin)"
  */
 export function getDevModeLabel(
   connectionState: DevConnectionState,

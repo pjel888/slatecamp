@@ -15,7 +15,7 @@ Every piece of copy, every ad, every onboarding screen, every push notification 
 
 </aside>
 
-The board exam review industry sells hope. Hope that you studied the right chapters. Hope that your highlighter hit the right paragraphs. Hope that the 500 blurry PDFs from three different review centers somehow covered everything.
+The Licensure Exam review industry sells hope. Hope that you studied the right chapters. Hope that your highlighter hit the right paragraphs. Hope that the 500 blurry PDFs from three different review centers somehow covered everything.
 
 SlateCamp does not sell hope. SlateCamp sells **proof.**
 
@@ -48,7 +48,7 @@ Every ad, landing page, and email maps to the left column. We name the pain. The
 
 **Headline:** Know you'll win.
 
-**Sub-headline:** Stop hoping you studied the right things. SlateCamp measures your exact readiness against the entire board exam syllabus — so you walk into the testing center with proof, not prayers.
+**Sub-headline:** Stop hoping you studied the right things. SlateCamp measures your exact readiness against the entire Licensure Exam syllabus — so you walk into the testing center with proof, not prayers.
 
 **Primary CTA:** Start your diagnostic — free.
 
@@ -65,7 +65,7 @@ This is the hook. It speaks to the anxiety that keeps reviewees awake at 2 AM. I
 
 **Layer 2 — The Mechanism (Logical)**
 
-> SlateCamp maps the entire board exam syllabus, measures your mastery of every topic, and shows you — in real time — exactly where your blind spots are. You study what matters. You skip what you have already mastered.
+> SlateCamp maps the entire Licensure Exam syllabus, measures your mastery of every topic, and shows you — in real time — exactly where your blind spots are. You study what matters. You skip what you have already mastered.
 > 
 
 This is the bridge. It answers "How?" with enough specificity to be credible, without drowning in technical details.
@@ -109,7 +109,7 @@ This is the close. It converts skeptics by showing the rigor behind the claim.
 ### Segment B: The Undergraduate (Pipeline)
 
 - **Profile:** 18–22, 3rd–5th year architecture student
-- **Behavior:** Struggles with spatial concepts. Uses YouTube to supplement lectures. Has not yet confronted board exam anxiety but senses it approaching.
+- **Behavior:** Struggles with spatial concepts. Uses YouTube to supplement lectures. Has not yet confronted Licensure Exam anxiety but senses it approaching.
 - **Core Fear:** "I cannot visualize what my professors are explaining."
 
 **Message to this segment:**
@@ -173,11 +173,11 @@ Every acquisition channel is designed to do one thing: deliver the "Aha" moment 
 
 ### Channel 2: Topnotcher SME Halo Effect
 
-Filipino board exam culture worships topnotchers. A Top 1 passer carries more credibility than any ad campaign.
+Filipino Licensure Exam culture worships topnotchers. A Top 1 passer carries more credibility than any ad campaign.
 
 - Hire recent Top 1–10 ALE passers as Subject Matter Experts
 - Feature them in content: *"The Building Technology module was written by the 2024 ALE Top 3. You are studying their framework."*
-- Run paid ads with their faces and board exam ranks
+- Run paid ads with their faces and Licensure Exam ranks
 - Let them host live "AMA" review sessions on the SlateCamp Discord
 
 **Why this works:** Borrowed authority. The topnotcher is the proof that the content works. Students do not need to trust the brand — they trust the person who already passed.
@@ -194,7 +194,7 @@ Filipino board exam culture worships topnotchers. A Top 1 passer carries more cr
 
 ### Channel 4: SEO Syllabus Content
 
-- Publish free, search-optimized pages for long-tail board exam queries
+- Publish free, search-optimized pages for long-tail Licensure Exam queries
 - Examples: "PD 1096 Floor Area Ratio formula," "ALE Building Technology coverage," "minimum ceiling height Philippines"
 - Each page provides a clear, correct answer — then funnels the user into the SlateCamp app
 
@@ -225,7 +225,7 @@ Acquisition without activation is wasted spend. Every new user must reach the "A
 | Day 0 | Post-diagnostic | "Your Readiness Score is [X]%. Here are your 3 weakest topics. Start here." |
 | Day 1 | Push notification | "You left 4 topics unexplored yesterday. 15 minutes closes the gap on [Topic]." |
 | Day 3 | Email | "Your Readiness Score moved from [X]% to [Y]%. Here is what changed." (Include heatmap delta screenshot.) |
-| Day 5 | Push notification | "You are averaging [Z] seconds per question. The board exam requires 90 seconds. Try a speed drill." |
+| Day 5 | Push notification | "You are averaging [Z] seconds per question. The Licensure Exam requires 90 seconds. Try a speed drill." |
 | Day 7 | Email | "Week 1 report: [N] questions answered, [N] topics explored, Readiness Score at [X]%. You have [N] red nodes remaining." |
 
 Every message references concrete data. No generic motivational copy. No "Keep going, you've got this." The platform speaks in numbers.
@@ -319,7 +319,7 @@ Every claim SlateCamp makes must be backed by verifiable evidence. We do not ask
 
 - **Readiness Score** — a real-time, algorithmically weighted probability of passing based on every interaction. Uses Exponential Moving Average so it reflects current ability, not historical averages.
 - **Taxonomy Heatmap** — a visual diagnostic covering every node in the master syllabus. Green, yellow, red, grey. No ambiguity.
-- **Pacing Metric** — tracks time-per-item against board exam requirements. Warns users before it is too late.
+- **Pacing Metric** — tracks time-per-item against Licensure Exam requirements. Warns users before it is too late.
 - **Lucky Guess Detector** — flags suspiciously fast correct answers and withholds full mastery credit. The score cannot be gamed.
 
 ### External Proof (Social & Institutional)
@@ -347,7 +347,7 @@ The brand earns trust by refusing to manufacture excitement. The product generat
 
 ### Above the Fold
 
-- **Eyebrow:** BOARD EXAM PREP
+- **Eyebrow:** Licensure Exam PREP
 - **H1:** Know you'll win.
 - **H2:** Stop hoping you studied the right things. Cut your review time in half, eliminate blind spots, and walk into the testing center with mathematical proof that you are ready.
 - **Primary CTA:** Start your diagnostic — free.
@@ -366,7 +366,7 @@ The brand earns trust by refusing to manufacture excitement. The product generat
 
 ### Section 2: The Solution (No Feature Names)
 
-- **"See everything you need to study."** — The entire board exam syllabus, structured and verified by topnotcher SMEs.
+- **"See everything you need to study."** — The entire Licensure Exam syllabus, structured and verified by topnotcher SMEs.
 - **"Know exactly where you are weak."** — A visual heatmap of your mastery across every topic. Red means danger. Green means mastered.
 - **"Watch yourself get ready."** — A Readiness Score that updates after every session. It reflects your ability right now — not your score from three months ago.
 
@@ -512,7 +512,7 @@ The SlateCamp marketing engine does not sell features. It does not sell motivati
 
 It sells **proof.**
 
-The entire go-to-market strategy is built on a single, defensible thesis: traditional board exam review is chaotic guessing, and SlateCamp replaces it with mathematical certainty.
+The entire go-to-market strategy is built on a single, defensible thesis: traditional Licensure Exam review is chaotic guessing, and SlateCamp replaces it with mathematical certainty.
 
 Every channel — from a 15-second TikTok to a university dean pitch — delivers the same message in the appropriate register. Every notification references the user's own data. Every paywall screen shows them exactly what they stand to lose by stopping.
 

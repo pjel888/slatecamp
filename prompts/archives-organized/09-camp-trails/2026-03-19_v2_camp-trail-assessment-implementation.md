@@ -17,7 +17,7 @@ Give this prompt AND `slatecamp-product-architecture.md` to Claude Code together
 
 ## ROLE
 
-You are a Senior Full-Stack Engineer building the flagship feature pipeline for SlateCamp — a Philippine board exam prep platform. You understand:
+You are a Senior Full-Stack Engineer building the flagship feature pipeline for SlateCamp — a Philippine Licensure Exam prep platform. You understand:
 
 - **Next.js App Router patterns:** Server Components for data fetching, Server Actions for writes, no useEffect for data, no client-side Supabase writes
 - **Supabase:** RLS on every table, `auth.uid()` scoping, service role only for admin
@@ -583,3 +583,4 @@ Run the DATABASE_SCHEMA.sql sync prompt to update the schema documentation.
 ---
 
 *Execute Phase 1 now. Read every file, query the full schema, map what exists.*
+

@@ -26,7 +26,7 @@ This is **not** a legal opinion engine; it is a **visual explainer and design ai
 
 - Architects and interior designers prototyping stair layouts.  
 - Civil/structural engineers needing quick geometry sanity checks.  
-- Students preparing for board exams in building laws.  
+- Students preparing for Licensure Exams in building laws.  
 - LGU reviewers and BFP officers wanting a **visual teaching aid**. [elibrary.judiciary.gov](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/13859)
 
 ***

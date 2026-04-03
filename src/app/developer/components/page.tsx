@@ -428,7 +428,7 @@ const MdxComponentsTab = () => (
         <Note>This is the default note callout — blue info style.</Note>
         <Warn title="Important">Check minimum egress width before sizing corridors.</Warn>
         <Tip>Mnemonics work best when tied to a physical memory anchor.</Tip>
-        <Callout variant="most-tested">Section 501 appears on 60% of board exams.</Callout>
+        <Callout variant="most-tested">Section 501 appears on 60% of Licensure Exams.</Callout>
       </PreviewBox>
       <CodeBlock
         language="mdx"
@@ -438,7 +438,7 @@ const MdxComponentsTab = () => (
 
 <Tip>Mnemonics work best when tied to a physical memory anchor.</Tip>
 
-<Callout variant="most-tested">Section 501 appears on 60% of board exams.</Callout>
+<Callout variant="most-tested">Section 501 appears on 60% of Licensure Exams.</Callout>
 
 <Callout variant="ale-watch">This provision changed in the 2023 IRR revision.</Callout>`}
       />
@@ -470,7 +470,7 @@ const MdxComponentsTab = () => (
     <ComponentCard
       name="ExamTip"
       badge={<MdxBadge />}
-      description="High-priority exam callout with a target icon. Use for single-sentence board exam focus points."
+      description="High-priority exam callout with a target icon. Use for single-sentence Licensure Exam focus points."
     >
       <CodeBlock
         language="mdx"
@@ -1171,3 +1171,4 @@ export default function ComponentLibraryPage() {
     </div>
   )
 }
+

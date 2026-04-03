@@ -22,7 +22,7 @@ AI tutor and mnemonic generation server actions. Provides context-aware AI compl
 3. **Demo mode fallback** — check `isDemoMode()` before calling AI provider; return static demo mnemonic if in demo.
 4. **Max tokens limiting** — set `maxTokens: 80` to keep mnemonics short (< 20 words).
 5. **Error graceful** — if AI provider fails, return a helpful text string (e.g., "Try creating your own acronym...") rather than throwing.
-6. **Cultural context** — for Filipino board exams, weave in local references: foods (adobo, lumpia), landmarks (Intramuros, Pagsanjan Falls), Tagalog wordplay, common phrases.
+6. **Cultural context** — for Filipino Licensure Exams, weave in local references: foods (adobo, lumpia), landmarks (Intramuros, Pagsanjan Falls), Tagalog wordplay, common phrases.
 
 ### Common Patterns
 
@@ -37,7 +37,7 @@ const DEMO_MNEMONICS: Record<string, string> = {
   default: 'Think "BAHAY" — B for Beam depth, A for Area load, H for Height limit...',
 }
 
-const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture board exam students.
+const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture Licensure Exam students.
 
 TASK: Create ONE memorable mnemonic device for the given fact/concept.
 
@@ -85,3 +85,4 @@ export const generateMnemonic = async (
 ### External
 
 - AI provider SDK (OpenAI, Anthropic, or Vercel AI SDK depending on implementation)
+

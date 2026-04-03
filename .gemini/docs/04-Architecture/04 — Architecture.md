@@ -40,7 +40,7 @@ SlateCamp uses **Supabase** as the unified backend:
 | Table | Purpose |
 |---|---|
 | `profiles` | User profiles (PK: `id` → auth.users), reviewer_type, account_mode, ale_result |
-| `disciplines` | Board exam types (Architecture/ALE), passing thresholds |
+| `disciplines` | Licensure Exam types (Architecture/ALE), passing thresholds |
 | `taxonomy_tree` | Hierarchical subject taxonomy (subjects > topics > subtopics), bloom_level, difficulty, exam_frequency |
 
 #### Quiz Engine
@@ -1268,7 +1268,7 @@ The old direct `topic_id` FK on `wiki_articles` has been replaced by the `wiki_a
 The `test_mode` enum has expanded from 2 to 4 modes:
 
 - **`camp`** — standard practice with immediate feedback
-- **`storm`** — timed, no-feedback mock board exam (The Pressure Gap)
+- **`storm`** — timed, no-feedback mock Licensure Exam (The Pressure Gap)
 - **`chill`** — relaxed, untimed review mode
 - **`mock`** — full-length simulated exam
 

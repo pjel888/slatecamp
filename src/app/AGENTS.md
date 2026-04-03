@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Root Next.js App Router directory for SlateCamp -- a cognitive-first, AI-adaptive board exam prep platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
+Root Next.js App Router directory for SlateCamp -- a cognitive-first, personalized ALE review platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
 
 This directory implements the Campfire design system and enforces strict pedagogical constraints: no generic gamification, zero temperature AI tutor, Item Response Theory (IRT) mastery calculations, and growth-framed voice throughout.
 
@@ -77,7 +77,7 @@ This directory implements the Campfire design system and enforces strict pedagog
 - Border radius: `rounded-sm` (6px) for buttons/inputs, `rounded-md` (8px) for cards, `rounded-lg` (12px) for modals -- never `rounded-xl`/`rounded-2xl`/`rounded-3xl`
 - Shadows: `shadow-sm` on hover, `shadow-md` for dropdowns, `shadow-lg` for modals -- never `shadow-xl`/`shadow-2xl` on non-modal elements
 - Transitions max 300ms, default `duration-150 ease-out` -- never `bounce`/`spring` easing (except framer-motion structural animations)
-- Minimum text size `text-[11px]` -- never use `text-[8px]`/`text-[9px]`/`text-[10px]`
+- Minimum text size: flexible based on context (e.g. 8px for metadata, 13px for body).
 - Monospace only on code snippets, data values, and Readiness Score number -- never on labels/categories/metadata
 
 **Voice & Messaging:**
@@ -178,3 +178,4 @@ Each portal (Admin, CEO, Developer) uses `PortalLayout` from `@/components/porta
 ## MANUAL
 
 <!-- MANUAL: -->
+

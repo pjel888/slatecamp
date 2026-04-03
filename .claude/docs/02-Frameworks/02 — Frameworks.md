@@ -14,7 +14,7 @@ Business model, pricing logic, and go-to-market strategy frameworks for SlateCam
 | **Revenue Streams** | Freemium → Camp tier (monthly) → Insurance tier (6-month lump). B2B institutional licensing. |
 | **Key Resources** | Master Syllabus Taxonomy, SME-authored content, 3D parametric models, adaptive algorithm |
 | **Key Activities** | Content authoring & verification, 3D model creation, algorithm tuning, community building |
-| **Key Partners** | Board exam topnotchers (SMEs), universities, PRC-adjacent organizations, review centers |
+| **Key Partners** | Licensure Exam topnotchers (SMEs), universities, PRC-adjacent organizations, review centers |
 | **Cost Structure** | Engineering team, SME compensation, Supabase/infra, 3D asset production, marketing spend |
 | **Competitive Moat** | Integrated loop (Wiki + Quiz + 3D + AI + Notes + Analytics). Taxonomy-first architecture. Network effects from community. |
 
@@ -86,3 +86,4 @@ Filipino students are price-sensitive but will spend irrationally (often using p
 - **Paywall friction** after 20 daily questions
 - **"Insurance" framing** — position as exam insurance, not a subscription
 - **Parent-targeted messaging** — "A fraction of review center fees"
+

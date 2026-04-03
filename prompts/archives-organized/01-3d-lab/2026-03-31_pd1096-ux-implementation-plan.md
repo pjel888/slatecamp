@@ -48,7 +48,7 @@ These five anchors are the primary retrieval targets. Every information design d
 3. **Application questions:** A designer proposes X. Does it violate Rule VII or VIII?
 4. **Design problem (Area C):** The lot data is given. Compute your buildable envelope before drawing a single line.
 
-The Area C connection is not incidental — it is the most important exam payoff. A student who internalizes this module's compute-before-design habit directly transfers it to Day 2 of the board exam.
+The Area C connection is not incidental — it is the most important exam payoff. A student who internalizes this module's compute-before-design habit directly transfers it to Day 2 of the Licensure Exam.
 
 ### Module Success Criteria
 
@@ -971,7 +971,7 @@ When Design Challenge Mode is active, the module receives a lightweight framing 
 
 ## Section 8: The Topnotcher's Lens
 
-### Why This Module Directly Impacts Board Exam Performance
+### Why This Module Directly Impacts Licensure Exam Performance
 
 The ALE is not asking students to understand development controls in the abstract. It is asking them to compute them quickly, correctly, under pressure, for a lot they've never seen before.
 
@@ -1257,3 +1257,4 @@ Review this dashboard 2 weeks post-launch. Any metric in red flag territory trig
 *This UX implementation plan is the governing document for all user experience decisions on the PD 1096 Rules VII & VIII Site Development Controls module. Engineering specs govern HOW it is built. This document governs WHAT the student experiences. Both must be true before this module reaches a student.*
 
 *Code citation verification required before public ship. All content reviewed against: slatecamp-ux-designer · slatecamp-ux-researcher · slatecamp-3d-interaction-designer · slatecamp-3d-information-designer · slatecamp-performance-gamification · arch-education-research · ale-topnotcher-strategy · ph-arch-construction-law*
+

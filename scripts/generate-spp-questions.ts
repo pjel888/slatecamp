@@ -2570,14 +2570,14 @@ const spp209Questions: Question[] = [
       "Visa, work permit, and insurance",
       "TSP (Temporary/Special Permit), DoLE certification, and collaboration with local RLA",
       "IAPOA membership, PRC registration, and UAP endorsement",
-      "Board exam waiver, SEC registration, and DTI permit",
+      "Licensure Exam waiver, SEC registration, and DTI permit",
     ],
     "b",
     {
       a: "Visa and insurance are general requirements, not the SPP 209 three-condition framework.",
       b: "Correct. Foreign consultants must satisfy three conditions: (1) TSP from PRC, (2) DoLE certification, and (3) collaboration with a local RLA — the same framework as the general foreign architect requirements.",
       c: "IAPOA membership and UAP endorsement are not the statutory requirements for foreign consultants.",
-      d: "Board exam waiver is not part of the framework. Foreign consultants do not take the Philippine board exam.",
+      d: "Licensure Exam waiver is not part of the framework. Foreign consultants do not take the Philippine Licensure Exam.",
       correct:
         "Foreign consultants must satisfy three conditions under SPP 209: (1) obtain a Temporary/Special Permit from PRC, (2) secure DoLE work certification, and (3) collaborate with a local Registered Licensed Architect. This framework mirrors the general foreign architect requirements.",
       takeaway:
@@ -2773,3 +2773,4 @@ async function main() {
 }
 
 main().catch(console.error);
+

@@ -181,6 +181,13 @@
   /* Camp Standard — Font families */
   --font-display: 'Syne', sans-serif;
   --font-dm-mono: 'DM Mono', monospace;
+  --font-sora: 'Sora', sans-serif;
+}
+
+@layer utilities {
+  .logo-sora {
+    font-family: var(--font-sora), 'Sora', sans-serif;
+  }
 }
 
 :root {

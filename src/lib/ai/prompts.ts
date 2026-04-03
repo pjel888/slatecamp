@@ -5,7 +5,7 @@ export function questionGenerationPrompt(
   count: number,
   difficulty: string
 ): string {
-  return `You are an expert exam question writer for ${profession} board exams, specifically the ${examTarget}.
+  return `You are an expert exam question writer for ${profession} Licensure Exams, specifically the ${examTarget}.
 
 Given the following study material excerpt:
 ---
@@ -45,7 +45,7 @@ export function socraticTutorSystemPrompt(
   ragContext: string,
   weakDomains: string[]
 ): string {
-  return `You are a Socratic tutor for ${profession} board exam preparation. The student is studying for ${examTarget}.
+  return `You are a Socratic tutor for ${profession} Licensure Exam preparation. The student is studying for ${examTarget}.
 
 RULES:
 1. NEVER give the answer directly.
@@ -64,3 +64,4 @@ CONTEXT:
 - Relevant study material: ${ragContext}
 - Their weak domains: ${weakDomains.join(", ")}`;
 }
+

@@ -232,7 +232,7 @@ The `session_trail_credits` table handles attribution. One quiz session generate
 
 ## Gamification Constraints
 
-Camp Trail must pass the same test every feature passes: *Does this make a student more likely to pass their board exam?*
+Camp Trail must pass the same test every feature passes: *Does this make a student more likely to pass their Licensure Exam?*
 
 **Permitted:**
 - Day completion acknowledgment with actual mastery change data ("Your structural mastery moved from 48% to 61%")
@@ -360,10 +360,11 @@ They should not:
 - Have completed the trail but still have large grey areas on their heatmap
 - Feel that the trail was a checkbox exercise
 
-The governing question is always: *does this make a student more likely to pass their board exam?* Camp Trail's answer is only yes if it drives genuine mastery, not just activity completion.
+The governing question is always: *does this make a student more likely to pass their Licensure Exam?* Camp Trail's answer is only yes if it drives genuine mastery, not just activity completion.
 
 ---
 
 *Camp Trail Product Intent Document · v1.0 · March 2026*  
 *SlateCamp Internal · Product Architect*  
 *Source references: Product Architecture Map v2.1, Camp Trail Feature Spec, 3D Visual Learning Research, Taxonomy v5.0, Feature Research Report, UX Research Deep-Dive, DB Architect Conversations*
+

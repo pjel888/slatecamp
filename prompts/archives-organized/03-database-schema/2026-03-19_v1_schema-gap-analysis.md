@@ -2,7 +2,7 @@
 **Prepared by:** Database Architect  
 **Date:** 2026-03-19  
 **Sources:** UX Research & Strategic Implementation Plan v1.0 · Implementation Prompt v1.0 · DATABASE_SCHEMA.sql (live, 2026-03-19)  
-**Governing Question:** Does this make a student more likely to win their board exam?
+**Governing Question:** Does this make a student more likely to win their Licensure Exam?
 
 ---
 
@@ -786,3 +786,4 @@ Contents:
 *SlateCamp Database Architecture — Internal Reference*  
 *Maintained by: DB Architect + Philip (Founder)*  
 *Based on: UX Research & Strategic Implementation Plan v1.0 · DB Audit v3 · DATABASE_SCHEMA.sql 2026-03-19*
+

@@ -16,7 +16,7 @@
   { value: "Day 2", label: "Full Exam Day" }
 ]} />
 
-You are about to spend three to six months preparing for the ALE. Before you open a single code book, understand this: one subject carries more weight than any other, occupies an entire exam day by itself, and has ended more board exam attempts than all the others combined.
+You are about to spend three to six months preparing for the ALE. Before you open a single code book, understand this: one subject carries more weight than any other, occupies an entire exam day by itself, and has ended more Licensure Exam attempts than all the others combined.
 
 This is that subject.
 
@@ -290,3 +290,4 @@ These are NOT in the MDX content. They are handled by the page layout and WikiAr
 | `updated_note` | Gray text: "Updated March 21, 2026" |
 | `ale_tests_you` | Blue banner: "THE ALE TESTS YOU TO: Identify key concepts..." |
 | `sources` (proposed) | JSON array feeding the sidebar popover |
+

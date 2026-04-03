@@ -48,7 +48,7 @@ export async function POST(request: Request) {
   }
 
   const systemPrompts: Record<StudyAgentAction, string> = {
-    summarize: `You are a Study Tutor for architecture board exam preparation. The user has pasted messy lecture or reading notes.
+    summarize: `You are a Study Tutor for architecture Licensure Exam preparation. The user has pasted messy lecture or reading notes.
 
 TASK: "Summarize & Atomicize"
 - Turn the note into clear, scannable bullet points.
@@ -57,7 +57,7 @@ TASK: "Summarize & Atomicize"
 - Preserve important dimensions, rule numbers, and definitions.
 - Output valid markdown. Do not add a title; start with the first bullet.`,
 
-    flashcards: `You are a Study Tutor for architecture board exam preparation. The user has pasted note content.
+    flashcards: `You are a Study Tutor for architecture Licensure Exam preparation. The user has pasted note content.
 
 TASK: "Generate Flashcards"
 - Scan the note and suggest exactly 5 active-recall questions that would make good flashcards for the Assessment/quiz module.
@@ -68,7 +68,7 @@ TASK: "Generate Flashcards"
 2. [Question two]
 ...`,
 
-    code_check: `You are a Study Tutor for architecture board exam preparation. The user may have written about building codes, rules, or dimensions (e.g. PD 1096, Rule 7, Rule 8, ceiling heights, occupancy).
+    code_check: `You are a Study Tutor for architecture Licensure Exam preparation. The user may have written about building codes, rules, or dimensions (e.g. PD 1096, Rule 7, Rule 8, ceiling heights, occupancy).
 
 TASK: "Code Check"
 - If the note mentions specific dimensions, rule numbers, or code concepts: briefly flag whether they match common reference values (e.g. 2.40m habitable ceiling, 2.10m non-habitable; Rule 7 occupancy groups A–J) and suggest verifying against the official Wiki or NBCP.
@@ -94,3 +94,4 @@ TASK: "Code Check"
     )
   }
 }
+

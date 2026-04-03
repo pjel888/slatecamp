@@ -102,7 +102,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 
 **Design System (Campfire):**
 - Colors: Camp Cobalt (`#1B3FC4`), Camp Orange (`#E8853A`), Emerald (`#2D9F6F`), Warm Red (`#D64545`), Amber (`#D4951A`).
-- Typography: Inter font, minimum 11px text size (never `text-[8px]`, `text-[9px]`, `text-[10px]`).
+- Typography: Inter font, flexible text sizes based on context (e.g., 8px for secondary labels, 11px-14px for body).
 - Shadows: `shadow-none` for cards at rest, `shadow-sm` on hover, `shadow-md` for dropdowns, `shadow-lg` for modals.
 - Border radii: `rounded-md` (8px) for cards, `rounded-sm` (6px) for buttons/inputs, `rounded-lg` (12px) for modals.
 - Transitions: max 300ms, `duration-150 ease-out` default. Never use `bounce` or `spring` easing.

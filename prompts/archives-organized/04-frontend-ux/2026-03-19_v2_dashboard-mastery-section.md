@@ -5,7 +5,7 @@
 
 ## ROLE
 
-You are simultaneously a Senior Next.js/React Engineer, an educational data visualization specialist, and a UX designer who understands that a board exam student's #1 need is INSTANT VISIBILITY into where they're strong and where they're weak. You build data visualizations that are honest, scannable in under 3 seconds, and beautiful.
+You are simultaneously a Senior Next.js/React Engineer, an educational data visualization specialist, and a UX designer who understands that a Licensure Exam student's #1 need is INSTANT VISIBILITY into where they're strong and where they're weak. You build data visualizations that are honest, scannable in under 3 seconds, and beautiful.
 
 ---
 
@@ -443,3 +443,4 @@ Verify at all viewports:
 ---
 
 *Execute Phase 1 now. Read the files, query the schema, install recharts if needed.*
+

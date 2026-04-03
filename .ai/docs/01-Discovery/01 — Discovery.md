@@ -37,12 +37,12 @@ Architecture is the ideal first market because:
 
 | **Profession** | **Exam** | **Est. Annual Examinees** | **Complexity** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Civil Engineering | CE Board Exam | ~20,000+ | High (Math-heavy, structural) | Strong overlap with ALE syllabus; natural second market |
+| Civil Engineering | CE Licensure Exam | ~20,000+ | High (Math-heavy, structural) | Strong overlap with ALE syllabus; natural second market |
 | Nursing | NLE | ~60,000+ | Medium (Content volume) | Largest volume PRC exam in PH; massive B2C TAM |
-| Accountancy | CPA Board Exam | ~15,000+ | High (Computation-heavy) | High-income earners; strong willingness to pay |
+| Accountancy | CPA Licensure Exam | ~15,000+ | High (Computation-heavy) | High-income earners; strong willingness to pay |
 | Medicine | Physician Licensure Exam | ~5,000+ | Very High | Premium pricing possible; high emotional stakes |
 | Law | Bar Exam | ~7,000+ | Very High (Essay + MCQ) | Distinct format; longer runway but massive prestige signal |
-| Electronics Engineering | ECE Board Exam | ~12,000+ | Medium-High | Strong student community online |
+| Electronics Engineering | ECE Licensure Exam | ~12,000+ | Medium-High | Strong student community online |
 
 ### Phase 3 Long-Term Expansion
 
@@ -142,7 +142,7 @@ Architecture is the ideal first market because:
 
 - Filipino students spend **₱15,000–₱40,000+** per review season on centers, materials, and transportation
 - The "PDF hoarding" culture proves desperate demand for structured content
-- Board exam topnotchers have massive social media followings (100K+), proving the market worships expertise
+- Licensure Exam topnotchers have massive social media followings (100K+), proving the market worships expertise
 - No existing digital platform owns the "licensure exam OS" category in the Philippines
 - Architecture is the ideal wedge: spatial complexity stress-tests the platform; text-heavy exams (Law, CPA, Nursing) become a content and taxonomy exercise after the engine is proven
 - The PRC administers 43+ exams — each one is an addressable expansion market with minimal platform re-engineering
@@ -166,7 +166,7 @@ SlateCamp is not just a study app — it is a **proprietary system** built on a 
 
 | **IP Asset** | **What It Is** | **Protection Type** | **Priority** |
 | --- | --- | --- | --- |
-| **Readiness Score™** | Composite predictive algorithm combining Exponential Moving Average (EMA), Item Response Theory (IRT) difficulty weighting, and a Lucky Guess Detector™ to produce a single board exam pass probability score | Patent + Trade Secret | 🔴 P0 — Immediate |
+| **Readiness Score™** | Composite predictive algorithm combining Exponential Moving Average (EMA), Item Response Theory (IRT) difficulty weighting, and a Lucky Guess Detector™ to produce a single Licensure Exam pass probability score | Patent + Trade Secret | 🔴 P0 — Immediate |
 | **Lucky Guess Detector™** | Time-difficulty correlation system that withholds mastery credit for suspiciously fast correct answers and silently re-tests the topic — preventing false confidence | Patent | 🔴 P0 — Immediate |
 | **Double-Pass Auditor LLM** | Two-LLM verification pipeline where a secondary Auditor LLM fact-checks the primary AI's responses against a closed-loop vector database before delivery — the Zero-Hallucination Mandate | Patent + Trade Secret | 🔴 P0 — Immediate |
 | **Blindspot Protocol™** | Nightly automated scan of the Taxonomy Heatmap that generates targeted quiz queues from the student's weakest nodes — the system hunts what the student avoids. UI label: **Focus Review** | Patent + Trademark | 🔴 P0 — Immediate |
@@ -202,3 +202,4 @@ The IP above was designed around the **Architecture Licensure Exam** but is **pr
 - [ ]  What is the regulatory pathway for formally partnering with PRC or accredited schools?
 - [ ]  Is there a B2B appetite among nursing schools similar to architecture schools?
 - [ ]  What does the NCLEX/USMLE prep market look like in the Philippines? Is there a gap?
+

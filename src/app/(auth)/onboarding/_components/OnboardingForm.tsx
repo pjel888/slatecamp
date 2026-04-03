@@ -33,7 +33,7 @@ const REVIEWER_OPTIONS: {
   {
     value: 'first_taker',
     label: 'Preparing for the ALE',
-    subLabel: 'First time taking the board exam',
+    subLabel: 'First time taking the Licensure Exam',
   },
   {
     value: 'returning_reviewer',
@@ -355,3 +355,4 @@ export const OnboardingForm = ({
     </form>
   )
 }
+

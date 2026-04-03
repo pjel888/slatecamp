@@ -8,10 +8,10 @@
 *This section is required context for Claude Code. Read it entirely before touching any file.*
 
 ### Product Identity
-SlateCamp is the unified, AI-adaptive board exam review platform for Philippine professional licensure, currently focused on the Architecture Licensure Examination (ALE). It is not a quiz app — it is the infrastructure the board exam process should have always had: a taxonomy-mapped knowledge graph, an adaptive testing engine, a 3D spatial learning lab, a personal notes workspace, and a real-time readiness scoring system.
+SlateCamp is the unified, Personalized Licensure Exam review platform for Philippine professional licensure, currently focused on the Architecture Licensure Examination (ALE). It is not a quiz app — it is the infrastructure the Licensure Exam process should have always had: a taxonomy-mapped knowledge graph, an adaptive testing engine, a 3D spatial learning lab, a personal notes workspace, and a real-time readiness scoring system.
 
 **Tagline:** "Know you'll win."
-**Governing question for every decision:** *Does this make a student more likely to pass their board exam?*
+**Governing question for every decision:** *Does this make a student more likely to pass their Licensure Exam?*
 
 ### Tech Stack (exact versions)
 ```
@@ -929,3 +929,4 @@ For Phase 4.2 (cron optimization) specifically:
 
 *Implementation plan version 1.0 · SlateCamp · 2026-03-19*
 *DO NOT implement more than one phase per session. Run the build after every phase.*
+

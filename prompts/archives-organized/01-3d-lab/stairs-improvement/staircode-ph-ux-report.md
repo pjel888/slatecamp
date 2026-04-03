@@ -47,7 +47,7 @@ No legal values are invented or extrapolated. All dimensional metrics used in UX
 - **Session behavior:** Returns to the tool per project, not daily. Needs fast setup via scenario presets. Exports a PDF or screenshot for her permit folder.
 - **3D expectation:** Uses 3D for communication with client/drafter, not for self-learning. Wants to orbit and annotate.
 
-#### Persona B — The ALE Board Exam Candidate (Secondary)
+#### Persona B — The ALE Licensure Exam Candidate (Secondary)
 - **Name archetype:** Arch student Rico, 24, 5th-year BS Architecture, review mode
 - **Primary job:** Understand *why* BP 220 and PD 1096 have different riser requirements; visualize what a 250mm riser actually looks like vs. 200mm
 - **Mental model:** Encounters codes as exam items, not practice constraints; doesn't yet have intuition for what 750mm feels like in space
@@ -551,3 +551,4 @@ Two disclaimer tiers are always present:
 ---
 
 *Report prepared for SlateCamp — StairCode PH module. All legal metrics sourced from the five provided research documents. Final section numbers (IRR clause references) must be verified against the official DPWH, DHSUD, and BFP PDF sources before production deployment.*
+

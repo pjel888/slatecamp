@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { LoginForm } from './login-form'
-import { siteConfig } from '@/lib/constants/site'
+import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
 
 export const metadata = { title: 'Log In' }
 
@@ -8,12 +8,12 @@ export default function LoginPage() {
   return (
     <div className='flex min-h-screen flex-col items-center justify-center bg-gray-50 px-6 py-12'>
       <div className='w-full max-w-[380px] space-y-8'>
-        <div className='text-center'>
+        <div className='flex flex-col items-center text-center'>
           <Link
             href='/'
-            className='text-lg font-semibold tracking-tight text-zinc-900 transition-colors duration-150 hover:opacity-80'
+            className='transition-colors duration-150 hover:opacity-80'
           >
-            {siteConfig.name}
+            <SlateCampLogo size="lg" />
           </Link>
           <h1 className='mt-6 text-xl font-semibold leading-tight tracking-tight text-zinc-900'>
             Log in

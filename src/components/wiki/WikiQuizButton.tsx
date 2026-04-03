@@ -22,7 +22,7 @@ export const WikiQuizButton = ({ nodeId, topicName, articleSlug }: WikiQuizButto
     <>
       <Button
         size="sm"
-        className="w-full font-bold rounded-sm shadow-sm active:scale-[0.98]"
+        className="w-full font-bold rounded-sm shadow-sm active:scale-[0.98] "
         onClick={() => setOpen(true)}
       >
         <SCIcon icon={Brain} size="sm" className="mr-2" />

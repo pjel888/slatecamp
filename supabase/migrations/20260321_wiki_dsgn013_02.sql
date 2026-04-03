@@ -41,7 +41,7 @@ BEGIN
     (v_article_id, 'Ernst Neufert', 'Architects'' Data, 4th Edition — clearance dimensions for residential, office, and dining spaces', NULL, 'reference_standard', 2),
     (v_article_id, 'PD 1096 — 2004 Revised IRR', '§805 ceiling heights, §806 minimum room sizes, §1207 corridor and passage widths', NULL, 'implementing_rules', 3),
     (v_article_id, 'BP 344 — 2024 Revised IRR', 'Accessible clearances, turning radii, knee clearances, and corridor minimums', NULL, 'implementing_rules', 4),
-    (v_article_id, 'ALE Standard Dimensions', 'Board exam standard values for bed sizes, dining tables, and workstation areas as used in ALE design scenarios', NULL, 'prc_syllabus', 5);
+    (v_article_id, 'ALE Standard Dimensions', 'Licensure Exam standard values for bed sizes, dining tables, and workstation areas as used in ALE design scenarios', NULL, 'prc_syllabus', 5);
 
   -- ── EI Prompt ─────────────────────────────────────────────────
   INSERT INTO public.wiki_ei_prompts (
@@ -70,3 +70,4 @@ BEGIN
   );
 
 END $$;
+

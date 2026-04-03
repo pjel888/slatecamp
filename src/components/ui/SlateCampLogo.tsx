@@ -1,13 +1,15 @@
 import { cn } from '@/lib/utils'
+import { SlateCampLogomark } from '@/components/graphics/logos/SlateCampLogomark'
 
 type LogoSize = 'sm' | 'md' | 'lg' | 'xl'
 
-type LogoVariant = 'default' | 'monochrome' | 'inverted'
+type LogoVariant = 'default' | 'monochrome' | 'inverted' | 'landing'
 
 export interface LogoProps {
   className?: string
   size?: LogoSize
   variant?: LogoVariant
+  showText?: boolean
 }
 
 const SIZE_CLASSES: Record<LogoSize, string> = {
@@ -17,38 +19,65 @@ const SIZE_CLASSES: Record<LogoSize, string> = {
   xl: 'text-[20px]',
 }
 
+const ICON_SIZES: Record<LogoSize, number> = {
+  sm: 16,
+  md: 20,
+  lg: 24,
+  xl: 32,
+}
+
 export const SlateCampLogo = ({
   className,
   size = 'md',
   variant = 'default',
+  showText = true,
 }: LogoProps) => {
   const sizeClass = SIZE_CLASSES[size]
+  const iconSize = ICON_SIZES[size]
 
-  const isDefault = variant === 'default'
   const isInverted = variant === 'inverted'
+  const isLanding = variant === 'landing'
 
-  const slateClass = cn(
-    isInverted ? 'text-white' : 'text-text-primary',
-  )
-
-  const campClass = cn(
-    isDefault || isInverted
-      ? isInverted
-        ? 'text-white'
-        : 'text-accent-blue-hover'
-      : 'text-text-primary',
-  )
+  // User requested: pure cobalt blue (#012dcc)
+  const COBALT_HEX = '#012dcc'
+  
+  // Apply direct style if not inverted to ensure the specific hex is used
+  const logoStyle = !isInverted ? { color: COBALT_HEX } : {}
+  const logoColorClass = isInverted ? 'text-white' : ''
 
   return (
-    <span
-      className={cn(
-        'inline-flex items-baseline gap-[2px] font-semibold tracking-tight leading-none',
-        sizeClass,
-        className,
+    <div className={cn('inline-flex items-center gap-2', className)} style={logoStyle}>
+      <SlateCampLogomark
+        size={iconSize}
+        className={logoColorClass}
+      />
+      
+      {isLanding && (
+        <span 
+          className={cn("h-4 w-px mx-1.5 opacity-20", isInverted ? "bg-white" : "")} 
+          style={!isInverted ? { backgroundColor: COBALT_HEX } : {}}
+          aria-hidden='true' 
+        />
       )}
-    >
-      <span className={slateClass}>Slate</span>
-      <span className={campClass}>Camp</span>
-    </span>
+
+      {showText && (
+        <span
+          className={cn(
+            'inline-flex items-baseline gap-[1px] font-semibold tracking-tight leading-none logo-sora',
+            sizeClass,
+            logoColorClass
+          )}
+        >
+          {isLanding ? (
+            <span>SlateCamp 🇵🇭</span>
+          ) : (
+            <>
+              <span>Slate</span>
+              <span>Camp</span>
+            </>
+          )}
+        </span>
+      )}
+    </div>
   )
 }

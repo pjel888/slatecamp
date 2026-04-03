@@ -1199,7 +1199,7 @@ export async function submitExamAnswer(payload: ExamAnswerPayload) {
 
 ## 6.2 Dual-Mode Architecture
 
-| Dimension | Sandbox / Lab Mode | Mock Board Exam Mode |
+| Dimension | Sandbox / Lab Mode | Mock Licensure Exam Mode |
 |---|---|---|
 | Purpose | Spatial understanding, parametric exploration | ALE-calibrated performance testing |
 | Input access | All parameters exposed | Given (locked), derived (hidden until revealed) |
@@ -1402,3 +1402,4 @@ ABSOLUTE BOUNDARY VERIFICATION
 
 *SlateCamp — 3D Development Controls Lab: Master Implementation Plan*
 *All computation functions derived exclusively from PD 1096 2004 Revised IRR (DPWH, April 2005). No dimensional values, zoning coefficients, or legal formulas have been assumed from sources outside the provided documents. All rendering logic is strictly decoupled from the computation engine. The angular plane production gate must be cleared by a licensed architect before AMVB scoring is enabled.*
+

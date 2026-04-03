@@ -13,7 +13,7 @@
 
 The Testing & Review system is not a quiz engine. It is a **mastery measurement instrument** that happens to feel like studying. Every interaction a student makes — every answer, every hesitation, every answer change, every second of rationale reading — is captured, weighted, and fed into the EMA that drives the Readiness Score and Heatmap. The UX exists to make this data collection feel like learning, not surveillance.
 
-The governing constraint from our existing principles: every design decision is evaluated by one test — **"Does this make a student more likely to pass their board exam?"** Not "is this engaging." Not "is this delightful." Specifically: does this design choice increase pass probability? This test resolves almost every UX ambiguity in this document.
+The governing constraint from our existing principles: every design decision is evaluated by one test — **"Does this make a student more likely to pass their Licensure Exam?"** Not "is this engaging." Not "is this delightful." Specifically: does this design choice increase pass probability? This test resolves almost every UX ambiguity in this document.
 
 ---
 
@@ -39,7 +39,7 @@ Before designing a single screen, five other fields have already solved versions
 
 ---
 
-#### 2. Medical Board Examination Interface Psychology (NBME USMLE UX Research)
+#### 2. Medical Licensure Examination Interface Psychology (NBME USMLE UX Research)
 
 **The problem they solved:** How do you design a high-stakes testing interface that does not introduce performance variance from the interface itself?
 
@@ -1087,3 +1087,4 @@ The 35-item Assessment Quiz is not a mode on the Review Hub — it is surfaced o
 *SlateCamp — Testing & Review System UX Research & Implementation Plan*
 *Version 1.0 · March 2026*
 *Source references: Review & Testing System Product Document v1.0, Design System (Cobalt #1B3FC4), UX Research Deep-Dive, 3D Visual Learning Research, DB Schema Reference, Camp Trail UX Plan, Gamification Research*
+

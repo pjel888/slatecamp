@@ -56,12 +56,12 @@ export const HeroSection = ({
             <div className='landing-reveal flex items-center gap-3'>
               <div
                 className='flex flex-col gap-1 text-primary'
-                aria-label='Board exam preparation platform.'
+                aria-label='Professional ALE review platform.'
               >
                 <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-3 w-3' />
                   <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-camp-cobalt'>
-                    Board exam preparation platform.
+                    Professional ALE review platform.
                   </span>
                 </div>
               </div>

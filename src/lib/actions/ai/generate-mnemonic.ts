@@ -13,7 +13,7 @@ const DEMO_MNEMONICS: Record<string, string> = {
     'Think "BAHAY" — B for Beam depth, A for Area load, H for Height limit, A for Allowable stress, Y for Yield strength.',
 }
 
-const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture board exam students.
+const SYSTEM_PROMPT = `You are a mnemonic generator for Filipino architecture Licensure Exam students.
 
 TASK: Create ONE memorable mnemonic device for the given fact/concept.
 
@@ -49,3 +49,4 @@ export const generateMnemonic = async (
     return 'Try creating your own acronym from the key terms — it sticks better when you make it yourself.'
   }
 }
+

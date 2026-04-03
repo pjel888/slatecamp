@@ -40,7 +40,7 @@ export const ConfidenceCheckScreen = ({
         </p>
 
         {/* Prompt */}
-        <h2 className="text-base font-semibold text-text-primary text-center">
+        <h2 className="text-base font-semibold text-text-[8px]rimary text-center">
           How confident are you in these subjects right now?
         </h2>
 
@@ -51,7 +51,7 @@ export const ConfidenceCheckScreen = ({
               key={subject}
               className="flex items-center justify-between bg-white border border-border rounded-md px-4 py-3"
             >
-              <span className="text-sm font-medium text-text-primary truncate mr-4">
+              <span className="text-sm font-medium text-text-[8px]rimary truncate mr-4">
                 {subject}
               </span>
               <div className="flex items-center gap-1.5 shrink-0">
@@ -63,7 +63,7 @@ export const ConfidenceCheckScreen = ({
                       type="button"
                       onClick={() => handleSelect(subject, value)}
                       className={cn(
-                        'px-3 py-1 rounded-sm text-xs font-medium transition-colors duration-150',
+                        'px-3 py-1 rounded-sm text-[8px]s font-medium transition-colors duration-150',
                         isSelected
                           ? 'bg-camp-cobalt text-white'
                           : 'bg-muted text-[#555555] hover:bg-border-design',
@@ -92,7 +92,7 @@ export const ConfidenceCheckScreen = ({
             onClick={() => onSubmit(ratings)}
             disabled={!allRated}
             className={cn(
-              'h-10 px-6 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
+              'h-10 px-6 rounded-sm font-bold text-[8px]s uppercase tracking-[0.15em] transition-all',
               allRated
                 ? 'bg-camp-cobalt text-white hover:bg-primary-700'
                 : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',

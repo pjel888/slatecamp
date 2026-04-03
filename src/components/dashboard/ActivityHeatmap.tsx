@@ -20,7 +20,7 @@ const HEADER_H = MONTH_ROW_H + HEADER_GAP // 16 px
 const MOCK_SIGNUP = new Date('2026-01-18T12:00:00')
 const MOCK_SIGNUP_YEAR = 2026
 const CURRENT_YEAR = new Date().getFullYear()
-// Mock exam: 3-day board exam in late June 2026
+// Mock exam: 3-day Licensure Exam in late June 2026
 const MOCK_EXAM_DATES: string[] = ['2026-06-26', '2026-06-27', '2026-06-28']
 
 // ─── Derived layout (from measured container width) ───────────────────────────
@@ -158,7 +158,7 @@ interface ActivityHeatmapProps {
   /**
    * ISO date strings (YYYY-MM-DD) for exam days.
    * These cells render in orange-red regardless of activity level.
-   * Can span multiple days (e.g. a 3-day board exam).
+   * Can span multiple days (e.g. a 3-day Licensure Exam).
    */
   examDates?: string[]
 }
@@ -260,3 +260,4 @@ export function ActivityHeatmap({
     </div>
   )
 }
+

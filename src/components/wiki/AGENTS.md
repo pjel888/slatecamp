@@ -171,7 +171,7 @@ The wiki is a **structured knowledge base** designed for reference and deep lear
 
 ### Typography
 
-- Minimum text: 11px. NEVER 8/9/10px.
+- Minimum text: flexible based on context. 13px/14px for body text, 8px/9px for secondary metadata.
 - Monospace ONLY on code, formulas, specifications. NOT on labels.
 - Inter via next/font/google.
 - Code blocks: light background, line numbers optional, syntax highlighting.

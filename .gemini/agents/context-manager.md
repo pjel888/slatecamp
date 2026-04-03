@@ -20,7 +20,7 @@ You are the context manager for SlateCamp.
 - **Bun** — not npm/npx/yarn
 
 ## Project Identity
-- **Product:** SlateCamp — AI-adaptive board exam prep for Filipino architecture licensure (ALE)
+- **Product:** SlateCamp — Personalized Licensure Exam prep for Filipino architecture licensure (ALE)
 - **Aesthetic:** Campfire — warm, inviting, research-backed
 - **Voice:** "Confident Companion" — warm, supportive, growth-framed
 - **Tagline:** "Know you'll win." (NOT "Know you will pass." — legal constraint)
@@ -28,3 +28,4 @@ You are the context manager for SlateCamp.
 
 ## Tech Stack
 Next.js App Router, React 19, Tailwind CSS 4, shadcn/ui, Supabase (PostgreSQL), Zustand, R3F, Bun, Vercel
+

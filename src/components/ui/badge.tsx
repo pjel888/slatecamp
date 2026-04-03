@@ -15,7 +15,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default: 'bg-muted text-muted-foreground border-transparent',
-        primary: 'bg-primary/10 text-primary border-transparent',
+        primary: 'bg-primary/10 text-[8px]rimary border-transparent',
         success:
           'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-400 dark:border-emerald-500/30',
         warning:
@@ -24,7 +24,7 @@ const badgeVariants = cva(
           'bg-red-50 text-red-700 border-red-200 dark:bg-red-500/15 dark:text-red-400 dark:border-red-500/30',
         info: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-500/15 dark:text-blue-400 dark:border-blue-500/30',
         purple:
-          'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-500/15 dark:text-purple-400 dark:border-purple-500/30',
+          'bg-purple-50 text-[8px]urple-700 border-purple-200 dark:bg-purple-500/15 dark:text-[8px]urple-400 dark:border-purple-500/30',
         orange:
           'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-500/15 dark:text-orange-400 dark:border-orange-500/30',
         outline: 'bg-transparent text-foreground border-border',
@@ -33,12 +33,12 @@ const badgeVariants = cva(
         destructive:
           'bg-destructive/10 text-destructive border-transparent dark:bg-destructive/20',
         ghost: 'bg-transparent text-muted-foreground border-transparent hover:bg-muted',
-        link: 'bg-transparent text-primary border-transparent underline-offset-4 hover:underline',
+        link: 'bg-transparent text-[8px]rimary border-transparent underline-offset-4 hover:underline',
       },
       size: {
         xs: 'px-1.5 py-0.5 text-[11px] font-mono uppercase tracking-widest [&>svg]:size-2.5',
         sm: 'px-2 py-0.5 text-[11px] font-medium [&>svg]:size-3',
-        md: 'px-2.5 py-1 text-xs font-medium [&>svg]:size-3.5',
+        md: 'px-2.5 py-1 text-[8px]s font-medium [&>svg]:size-3.5',
         lg: 'px-3 py-1 text-sm font-medium [&>svg]:size-3.5',
       },
     },

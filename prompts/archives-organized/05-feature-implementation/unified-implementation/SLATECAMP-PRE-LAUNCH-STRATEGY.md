@@ -655,9 +655,9 @@ Day 7:    END-TO-END TEST: Signup → Diagnostic → Score → Trail → Pay →
 
 | Channel | Budget | Targeting | Creative |
 |---------|--------|-----------|----------|
-| Meta (FB/IG) | ₱500–₱1,000/day (70% FB, 30% IG) | Architecture students, 20–30, Filipino. Interest: "Architecture", "UAP", "PRC", "Board exam" | Video preferred. Authentic student content > polished ads. "Still guessing if you're ready? Stop." |
+| Meta (FB/IG) | ₱500–₱1,000/day (70% FB, 30% IG) | Architecture students, 20–30, Filipino. Interest: "Architecture", "UAP", "PRC", "Licensure Exam" | Video preferred. Authentic student content > polished ads. "Still guessing if you're ready? Stop." |
 | TikTok | Organic first, then Spark Ads | Architecture student creators | "My daily ALE study routine", "Watch my Readiness Score go from 34 to 78" |
-| Google Search | ₱200–₱500/day | "ALE reviewer Philippines", "architecture board exam reviewer" | Highest intent. Landing page: "Prepare for the [Month] ALE" |
+| Google Search | ₱200–₱500/day | "ALE reviewer Philippines", "architecture Licensure Exam reviewer" | Highest intent. Landing page: "Prepare for the [Month] ALE" |
 
 ### 8.5 Exam Calendar Alignment
 
@@ -716,7 +716,7 @@ Post-exam:              Celebrate passers (UGC goldmine)
 
 **Google Search:**
 - Lead with intent. These users are actively searching for a solution.
-- Headline: "ALE Board Exam Reviewer | Data-Driven Prep by an Architect"
+- Headline: "ALE Licensure Exam Reviewer | Data-Driven Prep by an Architect"
 - Description: "Free diagnostic. See your Readiness Score in 20 minutes. 7 testing modes. Built by an architect who passed."
 - Landing page URL: exam-specific, e.g. `/ale-review-[month]-2026`
 
@@ -903,3 +903,4 @@ After the sprint: SlateCamp is revenue-capable, security-hardened, and activatio
 ---
 
 *Strategy generated 2026-03-25 by the SlateCamp Pre-Launch War Council. Every finding references specific files, tables, and data points from the Global Codebase Audit Report dated 2026-03-25. Financial projections grounded in SlateCamp skill-documented unit economics (₱399 ARPU, 77% GM, 8% churn, ₱250 blended CAC). All recommendations aligned against the Five Moats framework (Domain, Data, Content, Community, Institutional).*
+

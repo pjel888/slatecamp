@@ -113,4 +113,5 @@ Use the final phase to practice integration scenarios — the type of multi-syst
 
 **Ignoring the communication and intelligent building subtopics.** These are growing in exam prominence. If you skip them entirely, you forfeit points on what are often straightforward, conceptual questions.
 
-<Note>Building Utilities is a subject where practice questions are particularly valuable. The scenarios are specific enough that reading theory alone does not build the problem-solving fluency the exam requires. Seek out past ALE questions, review board examination materials, and work through as many scenario-based utility problems as you can find.</Note>
+<Note>Building Utilities is a subject where practice questions are particularly valuable. The scenarios are specific enough that reading theory alone does not build the problem-solving fluency the exam requires. Seek out past ALE questions, review Licensure Examination materials, and work through as many scenario-based utility problems as you can find.</Note>
+

@@ -1,8 +1,14 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Syne, DM_Mono } from 'next/font/google'
+import { Inter, Syne, DM_Mono, Sora } from 'next/font/google'
 import { siteConfig } from '@/lib/constants/site'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-sora',
+  display: 'swap',
+})
 const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '700', '800'],
@@ -28,11 +34,11 @@ const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — AI-Adaptive Board Exam Prep`,
+    default: `${siteConfig.name} — Personalized ALE Review`,
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    'A cognitive-first test prep platform that adapts to you. Active recall, spaced repetition, and AI-powered study tools for board exam success.',
+    'A cognitive-first review platform built for the ALE. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
   ),
@@ -55,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${syne.variable} ${dmMono.variable} font-sans antialiased`}
+        className={`${inter.variable} ${sora.variable} ${syne.variable} ${dmMono.variable} font-sans antialiased`}
       >
         <ThemeProvider>
           <NoiseFilter />

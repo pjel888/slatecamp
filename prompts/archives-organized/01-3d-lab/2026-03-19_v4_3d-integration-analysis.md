@@ -180,7 +180,7 @@ These are new requirements the research introduces that are not currently in the
 
 After completing the sandbox or challenge mode, a direct link surfaces to a Camp Mode session filtered to that exact topic.
 
-**Research basis:** Transfer of learning — learning is most effective when training conditions match test conditions. ALE candidates are entirely exam-motivated. Content without a visible connection to the board exam reads as "interesting enrichment," not "study material." Explicit exam relevance framing changes how students allocate study time.
+**Research basis:** Transfer of learning — learning is most effective when training conditions match test conditions. ALE candidates are entirely exam-motivated. Content without a visible connection to the Licensure Exam reads as "interesting enrichment," not "study material." Explicit exam relevance framing changes how students allocate study time.
 
 **Build implication:** Two additions needed:
 1. Module metadata: `ale_question_count INTEGER` (estimated questions per sitting)
@@ -473,7 +473,7 @@ Given the research's impact classification and the current schema state:
 
 Every module, interaction decision, and UX pattern must pass:
 
-> "Does this make a student more likely to win their board exam?"
+> "Does this make a student more likely to win their Licensure Exam?"
 
 The research provides the answer framework:
 
@@ -497,3 +497,4 @@ The research provides the answer framework:
 *3D Visual Learning Research Integration Analysis · March 2026 · SlateCamp Internal*  
 *Research source: UX Research Brief — 3D & Visual Learning (March 2026)*  
 *Architecture reference: Product Architecture v2.1*
+
