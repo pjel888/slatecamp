@@ -5,6 +5,15 @@
             "type": "remote",
             "url": "https://mcp.supabase.com/mcp?project_ref=hrpdwqurngnyajuhbkdg",
             "enabled": true
+        },
+        "figma": {
+            "type": "remote",
+            "url": "https://mcp.figma.com/mcp",
+            "enabled": true,
+            "oauth": false,
+            "headers": {
+                "Authorization": "Bearer figd_hhkkzDrMCLDfKCggNpzbj9ZK8GcSHGm0iS4jrmeY"
+            }
         }
     },
     "mode": {
