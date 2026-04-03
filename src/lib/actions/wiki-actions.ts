@@ -6,6 +6,49 @@ import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 
 /**
+ * Perform a pure Postgres Full-Text Search on wiki articles.
+ * High performance, zero cost, supports stemming and relevance ranking.
+ */
+export async function searchWikiArticles(query: string): Promise<any[]> {
+  if (!query || query.trim().length < 2) return [];
+
+  const supabase = await createClient();
+  
+  // Try the optimized RPC first
+  const { data, error } = await supabase.rpc('search_wiki_articles_pure', {
+    query_text: query.trim(),
+    match_count: 10
+  });
+
+  if (error) {
+    console.error("[searchWikiArticles] RPC Error:", error.message);
+    
+    // Fallback to simpler keyword search if RPC is missing or fails
+    const { data: fallback, error: fallbackError } = await supabase
+      .from('wiki_articles')
+      .select('article_id, title, slug, content')
+      .or(`title.ilike.%${query}%,content.ilike.%${query}%`)
+      .eq('status', 'published')
+      .limit(8);
+    
+    if (fallbackError) {
+      console.error("[searchWikiArticles] Fallback Error:", fallbackError.message);
+      return [];
+    }
+
+    return (fallback ?? []).map(a => ({
+      article_id: a.article_id,
+      title: a.title,
+      slug: a.slug,
+      snippet: (a.content || '').slice(0, 160).replace(/[#*]/g, '') + '...',
+      rank: 0
+    }));
+  }
+
+  return data ?? [];
+}
+
+/**
  * Retry a Supabase query on transient gateway errors (502/503/504).
  * Supabase sits behind Cloudflare which returns HTML error pages on
  * gateway failures; the client surfaces the HTML as `error.message`.

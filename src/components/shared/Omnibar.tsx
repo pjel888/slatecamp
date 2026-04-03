@@ -11,15 +11,16 @@ import {
   ArrowRight,
 } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { createClient } from '@/lib/supabase/client'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FloatingPanel } from '@/components/shared/floating-panel'
+import { searchWikiArticles } from '@/lib/actions/wiki-actions'
 
 interface SearchResult {
   article_id: string
   title: string
   slug: string
-  content: string
+  snippet: string
+  rank?: number
 }
 
 export const Omnibar = ({
@@ -35,7 +36,6 @@ export const Omnibar = ({
   const [isSearching, setIsSearching] = useState(false)
   const [selectedResult, setSelectedResult] = useState<SearchResult | null>(null)
   const router = useRouter()
-  const supabase = useMemo(() => createClient(), [])
 
   // Load history from localStorage
   useEffect(() => {
@@ -43,7 +43,7 @@ export const Omnibar = ({
     if (saved) setHistory(JSON.parse(saved))
   }, [])
 
-  // Search logic (Full-text)
+  // Hybrid Search logic (FTS + Semantic)
   useEffect(() => {
     if (query.length < 2) {
       setResults([])
@@ -52,21 +52,20 @@ export const Omnibar = ({
     }
 
     setIsSearching(true)
-    setResults([])
 
     const timer = setTimeout(async () => {
-      const { data } = await supabase
-        .from('wiki_articles')
-        .select('article_id, title, slug, content')
-        .or(`title.ilike.%${query}%,content.ilike.%${query}%`)
-        .limit(5)
-
-      if (data) setResults(data as SearchResult[])
-      setIsSearching(false)
-    }, 300)
+      try {
+        const data = await searchWikiArticles(query)
+        if (data) setResults(data as SearchResult[])
+      } catch (err) {
+        console.error("Search failed:", err)
+      } finally {
+        setIsSearching(false)
+      }
+    }, 400) // Slightly longer debounce for hybrid search
 
     return () => clearTimeout(timer)
-  }, [query, supabase])
+  }, [query])
 
   const handleSelect = (item: SearchResult) => {
     const newHistory = [
@@ -244,9 +243,10 @@ export const Omnibar = ({
                   <h3 className="text-lg font-bold text-foreground leading-tight">
                     {selectedResult.title}
                   </h3>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed line-clamp-[10]">
-                    {selectedResult.content.replace(/[#*]/g, '')}
-                  </p>
+                  <div 
+                    className="text-[13px] text-muted-foreground leading-relaxed line-clamp-[12] [&_mark]:bg-primary/20 [&_mark]:text-primary [&_mark]:font-medium [&_mark]:rounded-sm"
+                    dangerouslySetInnerHTML={{ __html: selectedResult.snippet }}
+                  />
                   <div className="pt-2 flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-wider group cursor-pointer">
                     Read full article{' '}
                     <ArrowRight className="h-3 w-3 transition-transform duration-150 group-hover:translate-x-1 shrink-0" />
@@ -295,9 +295,10 @@ const ResultItem = ({
       <span className="text-sm font-semibold text-foreground truncate">
         {item.title}
       </span>
-      <span className="text-[11px] text-muted-foreground truncate tracking-tight">
-        Wiki &bull; {item.slug}
-      </span>
+      <div 
+        className="text-[11px] text-muted-foreground truncate tracking-tight [&_mark]:bg-primary/10 [&_mark]:text-primary [&_mark]:font-semibold"
+        dangerouslySetInnerHTML={{ __html: item.snippet.replace(/<[^>]*>?/gm, (match) => match === '<mark>' || match === '</mark>' ? match : '') }}
+      />
     </div>
     <ArrowRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-150 ml-auto shrink-0" />
   </Command.Item>
