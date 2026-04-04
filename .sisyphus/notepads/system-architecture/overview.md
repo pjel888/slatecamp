@@ -9,7 +9,7 @@ SlateCamp leverages Next.js 16 App Router to strictly isolate contexts:
 
 1. **Dashboard Portal (`/dashboard`)**: The primary B2C/B2B2C student experience. Contains the Wiki, Analytics, 3D Lab, Camp Trails, and the Testing Hub (with 7 modes including Simulation, Endurance, and Camp).
 2. **Admin Portal (`/admin`)**: The internal CMS for content generation. Includes unified article/question editors, taxonomy managers, and the SME (Subject Matter Expert) Review Queue.
-3. **CEO Portal (`/ceo`)**: High-level business observability. Tracks financials (MRR/ARR via Stripe/PayRex), cohort retention, and churn predictions.
+3. **CEO Portal (`/ceo`)**: High-level business observability. Tracks financials (MRR/ARR via LemonSqueezy/PayRex), cohort retention, and churn predictions.
 4. **Developer Portal (`/developer`)**: Internal catalog for design system tokens, feature flag management, and API documentation.
 
 ## The Pedagogical Engine

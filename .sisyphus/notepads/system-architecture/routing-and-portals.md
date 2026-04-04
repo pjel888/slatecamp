@@ -25,7 +25,7 @@ The internal content management and operations portal.
 The business operations and observability dashboard.
 - **Audience:** Executives, Founders.
 - **Key Features:**
-  - Revenue tracking (Stripe / PayRex integrations).
+  - Revenue tracking (LemonSqueezy / PayRex integrations).
   - Cohort retention and churn risk tables.
   - Global user sign-up velocity.
 
