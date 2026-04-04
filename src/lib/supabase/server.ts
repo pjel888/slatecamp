@@ -1,6 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { createClient as createSupabaseClient } from '@supabase/supabase-js'
-import { cookies } from 'next/headers'
+import { cookies, headers } from 'next/headers'
 import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
@@ -53,7 +53,6 @@ export async function hasAuthCookie() {
 
   return all.some((cookie) => {
     const name = cookie.name.toLowerCase()
-    // Look specifically for the auth token, ignoring meta cookies like code-verifier
     return (
       (name.startsWith('sb-') && name.includes('-auth-token')) ||
       name.startsWith('supabase-auth-token')
@@ -71,12 +70,14 @@ export const getUserIfPresent = cache(async () => {
   }
 
   // Strategy A: Local ID Impersonation (Development Only)
-  // If DEV_FORCE_USER_ID is set in .env.local, we trust it if no session exists.
   if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_USER_ID) {
-    const hasCookie = await hasAuthCookie()
-    if (!hasCookie) {
-      // Return a minimal user object with the forced ID
-      // Most components only need user.id
+    const headersList = await headers()
+    const host = headersList.get('host') || ''
+    const isLocal = host.includes('localhost') || host.includes('127.0.0.1')
+
+    if (isLocal) {
+      // We always return the forced user object in local dev
+      // This ensures components that call getUser() get a valid object immediately.
       return {
         data: { 
           user: { 
@@ -91,25 +92,8 @@ export const getUserIfPresent = cache(async () => {
     }
   }
 
-  const hasCookie = await hasAuthCookie()
-
-  if (!hasCookie) {
-    return {
-      data: { user: null },
-      error: null,
-    } as Awaited<ReturnType<ReturnType<typeof createServerClient>['auth']['getUser']>>
-  }
-
   const supabase = await createClient()
-  const result = await supabase.auth.getUser()
-  if (result.data.user) return result
-
-  const { data: { session } } = await supabase.auth.getSession()
-  if (session?.user) {
-    return { data: { user: session.user }, error: null }
-  }
-
-  return result
+  return await supabase.auth.getUser()
 })
 
 export const getUser = cache(async () => {

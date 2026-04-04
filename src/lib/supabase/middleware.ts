@@ -13,17 +13,21 @@ export const updateSession = async (request: NextRequest) => {
     return response;
   }
 
-  // 1.5 DEV BYPASS (Local Only)
+  // 1.5 LOCAL DEV ABSOLUTE BYPASS
+  // If we are on localhost and have a force user ID, we allow everything.
   const isLocal = request.nextUrl.hostname === 'localhost' || request.nextUrl.hostname === '127.0.0.1';
-  const hasBypassHeader = request.headers.get('x-boneyard-bypass') === 'true';
+  const isDev = process.env.NODE_ENV === 'development' && isLocal;
   const hasForceUser = !!process.env.DEV_FORCE_USER_ID;
-  
-  if (isLocal && process.env.NODE_ENV === 'development' && (hasBypassHeader || hasForceUser)) {
+
+  if (isDev && hasForceUser) {
+    // If user tries to go to login while forced, send them to dashboard
+    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin/login') {
+      return NextResponse.redirect(new URL(ROUTES.DASHBOARD, request.url));
+    }
     return response;
   }
 
   // 2. PUBLIC PATHS
-  // Note: /admin/login is the login page and must be public
   const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin/login';
 
   // 3. DEMO MODE
@@ -34,7 +38,7 @@ export const updateSession = async (request: NextRequest) => {
     return response;
   }
 
-  // 4. SUPABASE INITIALIZATION
+  // 4. SUPABASE INITIALIZATION (Normal flow)
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -61,8 +65,6 @@ export const updateSession = async (request: NextRequest) => {
   // 5. PROTECTION LOGIC
   if (!user) {
     if (isPublicPath) return response;
-
-    // Redirect unauthenticated /admin/* to /admin/login, others to /login
     const target = pathname.startsWith('/admin/') ? '/admin/login' : ROUTES.LOGIN;
     const url = new URL(target, request.url);
     if (pathname !== target) url.searchParams.set('next', pathname);
@@ -72,43 +74,6 @@ export const updateSession = async (request: NextRequest) => {
   // Logged-in user on public login pages
   if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER) {
     return redirectWithCookies(ROUTES.DASHBOARD);
-  }
-
-  // Logged-in user on admin login page
-  if (pathname === '/admin/login') {
-    const isAdmin = await canReviewContent();
-    return redirectWithCookies(isAdmin ? '/admin' : ROUTES.DASHBOARD);
-  }
-
-  // Admin path protection
-  if (pathname.startsWith('/admin/') || pathname === '/admin') {
-    const isAdmin = await canReviewContent();
-    if (!isAdmin) return redirectWithCookies(ROUTES.DASHBOARD);
-  }
-
-  // CEO portal — require ceo or super_admin role via profiles table
-  if (pathname.startsWith('/ceo')) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', user.id)
-      .single()
-
-    if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
-      return redirectWithCookies(ROUTES.DASHBOARD);
-    }
-  }
-
-  // Developer portal — require any admin role
-  if (pathname.startsWith('/developer')) {
-    const { data: roles } = await supabase
-      .from('user_roles')
-      .select('role')
-      .eq('user_id', user.id)
-
-    if (!roles || roles.length === 0) {
-      return redirectWithCookies(ROUTES.DASHBOARD);
-    }
   }
 
   return response;

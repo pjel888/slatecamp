@@ -258,7 +258,7 @@ class MockStorageBucket {
   upload(_path: string, _file: unknown) {
     return Promise.resolve({ data: { path: _path }, error: null });
   }
-  download(_path: string) {
+  border(_path: string) {
     return Promise.resolve({ data: null, error: { message: "Demo mode: no real files" } });
   }
   getPublicUrl(path: string) {
