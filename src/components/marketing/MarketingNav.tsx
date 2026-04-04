@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ROUTES } from '@/lib/constants/routes'
 import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
 import { cn } from '@/lib/utils'
-import { hasAuthCookie } from '@/lib/supabase/server'
+import { getUserIfPresent } from '@/lib/supabase/server'
 
 const NAV_LINKS = [
   { href: ROUTES.TOOLS, label: 'Tools' },
@@ -20,7 +20,8 @@ export async function MarketingNav({
   logoScrollsToTop?: boolean
   variant?: 'light' | 'dark'
 }) {
-  const hasSession = await hasAuthCookie()
+  const { data: { user } } = await getUserIfPresent()
+  const isLoggedIn = !!user
   const isDark = variant === 'dark'
 
   const linkClass = (href: string) =>
@@ -96,7 +97,7 @@ export async function MarketingNav({
         </nav>
 
         <div className='flex items-center gap-2'>
-          {hasSession ? (
+          {isLoggedIn ? (
             <Link
               href={ROUTES.DASHBOARD}
               className={cn(
@@ -139,4 +140,3 @@ export async function MarketingNav({
     </header>
   )
 }
-

@@ -1,4 +1,4 @@
-import { hasAuthCookie } from '@/lib/supabase/server'
+import { getUserIfPresent } from '@/lib/supabase/server'
 import { HeroSection } from '@/components/marketing/HeroSection'
 import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
@@ -17,8 +17,8 @@ import { Starburst } from '@/components/marketing/LandingPrimitives'
 import { ROUTES } from '@/lib/constants'
 
 export async function LandingPageContent() {
-  const hasSessionCookie = await hasAuthCookie()
-  const isLoggedIn = hasSessionCookie
+  const { data: { user } } = await getUserIfPresent()
+  const isLoggedIn = !!user
 
   const ctaHref = isLoggedIn ? ROUTES.DASHBOARD : ROUTES.REGISTER
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Get Your Free Readiness Score'
