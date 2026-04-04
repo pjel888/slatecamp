@@ -122,7 +122,8 @@ bun run build         # Full production build
 ## Project Guidance & Conventions
 
 - **System prompt & design system**: See `CLAUDE.md` for the Campfire design system, voice guide, and absolute constraints
-- **Architecture audit**: See `GLOBAL-CODEBASE-AUDIT-REPORT.md` for the full codebase audit with remediation roadmap
+- **Architecture & Ecosystem Audit**: See `.sisyphus/notepads/system-architecture/` for the definitive breakdown of the 4-portal structure, state management, and data models.
+- **Local Dev & Crawler Strategy**: See `docs/proposals/DEV-MODE-CRAWLER-AUTH-STRATEGY.md` for instructions on using `DEV_FORCE_USER_ID` to seamlessly authenticate solo founders and headless crawler agents locally.
 - **Database schema**: See `DATABASE_SCHEMA.sql` before any DB work — never hallucinate tables or foreign keys
 - **Agent configuration**: See `AGENTS.md` for AI agent working conventions
 

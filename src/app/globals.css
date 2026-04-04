@@ -9,6 +9,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --tracking-tight: 0;
+  --tracking-tighter: 0;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -43,11 +46,16 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-xs: 0.125rem;   /* 2px — micro elements, badges */
-  --radius-sm: 0.25rem;    /* 4px — buttons, inputs, standard */
-  --radius-md: 0.375rem;   /* 6px — cards */
-  --radius-lg: 0.5rem;     /* 8px — modals, dialogs */
-  --radius-xl: 0.5rem;     /* cap at 8px — no larger */
+  --radius-xs: 0.125rem;
+  /* 2px — micro elements, badges */
+  --radius-sm: 0.25rem;
+  /* 4px — buttons, inputs, standard */
+  --radius-md: 0.375rem;
+  /* 6px — cards */
+  --radius-lg: 0.5rem;
+  /* 8px — modals, dialogs */
+  --radius-xl: 0.5rem;
+  /* cap at 8px — no larger */
 
   /* ── Shade scale utilities ── */
   --color-primary-50: var(--primary-50);
@@ -148,14 +156,14 @@
   --color-border-warm: var(--border-warm);
 
   /* Camp Standard — Bold Color Tokens */
-  --color-camp-black:  #111111;
+  --color-camp-black: #111111;
   --color-camp-cobalt: #1B3FC4;
-  --color-camp-red:    #E63329;
-  --color-camp-green:  #1B7A3C;
-  --color-camp-amber:  #F5A623;
-  --color-camp-cream:  #FFFFFF;
-  --color-page-bg:     #FFFFFF;
-  --color-ink:         #18181B;
+  --color-camp-red: #E63329;
+  --color-camp-green: #1B7A3C;
+  --color-camp-amber: #F5A623;
+  --color-camp-cream: #FFFFFF;
+  --color-page-bg: #FFFFFF;
+  --color-ink: #18181B;
   --color-border-design: #E5E7EB;
 
   /* Wiki article design tokens */
@@ -171,12 +179,12 @@
   --color-ink-muted: #737370;
 
   /* Camp Standard — Dashboard card colors */
-  --color-card-article:        #eca83b;
+  --color-card-article: #eca83b;
   --color-card-article-border: #d4922e;
-  --color-card-notes:          #45885c;
-  --color-card-notes-border:   #3a7450;
-  --color-card-lab:            #428894;
-  --color-card-lab-border:     #377380;
+  --color-card-notes: #45885c;
+  --color-card-notes-border: #3a7450;
+  --color-card-lab: #428894;
+  --color-card-lab-border: #377380;
 
   /* Camp Standard — Font families */
   --font-display: 'Boldonse', sans-serif;
@@ -191,46 +199,65 @@
   .logo-sora {
     font-family: var(--font-sora), 'Sora', sans-serif;
   }
+
   .font-syne {
     font-family: var(--font-syne), 'Syne', sans-serif;
   }
+
   .font-boldonse {
     font-family: var(--font-boldonse), 'Boldonse', sans-serif;
   }
 }
 
 :root {
-  --background: #FFFFFF;       /* Page bg */
-  --foreground: #1A2332;        /* Ink Primary */
-  --card: #ffffff;              /* Surface Card (unchanged) */
+  --background: #FFFFFF;
+  /* Page bg */
+  --foreground: #1A2332;
+  /* Ink Primary */
+  --card: #ffffff;
+  /* Surface Card (unchanged) */
   --card-foreground: #1A2332;
   --popover: #ffffff;
   --popover-foreground: #1A2332;
-  --primary: #1B3FC4;           /* Camp Cobalt */
+  --primary: #1B3FC4;
+  /* Camp Cobalt */
   --primary-foreground: #ffffff;
-  --secondary: #F5F5F5;         /* Neutral gray */
+  --secondary: #F5F5F5;
+  /* Neutral gray */
   --secondary-foreground: #1A2332;
-  --muted: #F5F5F5;             /* Neutral gray */
-  --muted-foreground: #8896A7;  /* Ink Tertiary */
+  --muted: #F5F5F5;
+  /* Neutral gray */
+  --muted-foreground: #8896A7;
+  /* Ink Tertiary */
   --accent: #F5F5F5;
   --accent-foreground: #1A2332;
-  --destructive: #D64545;       /* Warm Red */
-  --border: #D4DAE3;            /* Border Default */
+  --destructive: #D64545;
+  /* Warm Red */
+  --border: #D4DAE3;
+  /* Border Default */
   --input: #D4DAE3;
-  --ring: #1B3FC4;              /* Camp Cobalt */
-  --radius: 0.5rem;             /* 8px — card radius */
+  --ring: #1B3FC4;
+  /* Camp Cobalt */
+  --radius: 0.5rem;
+  /* 8px — card radius */
 
-  --chart-1: #1B3FC4;           /* Camp Cobalt */
-  --chart-2: #2D9F6F;           /* Emerald */
-  --chart-3: #E8853A;           /* Camp Orange */
-  --chart-4: #D4951A;           /* Amber */
-  --chart-5: #D64545;           /* Warm Red */
+  --chart-1: #1B3FC4;
+  /* Camp Cobalt */
+  --chart-2: #2D9F6F;
+  /* Emerald */
+  --chart-3: #E8853A;
+  /* Camp Orange */
+  --chart-4: #D4951A;
+  /* Amber */
+  --chart-5: #D64545;
+  /* Warm Red */
 
   --sidebar: #ffffff;
   --sidebar-foreground: #1A2332;
   --sidebar-primary: #1B3FC4;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #EEF2FC;    /* Camp Cobalt 50 */
+  --sidebar-accent: #EEF2FC;
+  /* Camp Cobalt 50 */
   --sidebar-accent-foreground: #1A2332;
   --sidebar-border: #D4DAE3;
   --sidebar-ring: #1B3FC4;
@@ -294,7 +321,7 @@
   --border-light: #D4DAE3;
 
   /* Campfire — Text hierarchy */
-  --text-primary: #1A2332;
+  --text-primary: #343638ff;
   --text-secondary: #4A5568;
   --text-tertiary: #8896A7;
   --text-quaternary: #8896A7;
@@ -313,36 +340,55 @@
   --emerald: #2D9F6F;
   --emerald-50: #EDFAF4;
   --slate-blue-50: #EEF2FC;
-  --surface-focused: #F5F7FA;    /* Testing interface bg */
+  --surface-focused: #F5F7FA;
+  /* Testing interface bg */
   --border-warm: rgba(232, 133, 58, 0.15);
 
   /* Campfire — Semantic aliases (canonical names) */
-  --ink-primary: #1A2332;        /* = --text-primary */
-  --ink-secondary: #4A5568;      /* = --text-secondary */
-  --ink-tertiary: #8896A7;       /* = --text-tertiary */
-  --border-default: #D4DAE3;     /* = --border */
-  --amber: #D4951A;              /* = --warning */
-  --surface-card: #FFFFFF;       /* = --card */
-  --surface-light: #F8F7F5;      /* warm white page bg */
+  --ink-primary: #1A2332;
+  /* = --text-primary */
+  --ink-secondary: #4A5568;
+  /* = --text-secondary */
+  --ink-tertiary: #8896A7;
+  /* = --text-tertiary */
+  --border-default: #D4DAE3;
+  /* = --border */
+  --amber: #D4951A;
+  /* = --warning */
+  --surface-card: #FFFFFF;
+  /* = --card */
+  --surface-light: #F8F7F5;
+  /* warm white page bg */
 
   /* Campfire — Quiz semantic state tokens (H6 reconciliation: brand values, not blueprint generic) */
-  --color-state-correct:     #2D9F6F;   /* Emerald — success/correct answer */
-  --color-state-correct-bg:  #EDFAF4;   /* Emerald 50 — correct answer card bg */
-  --color-state-incorrect:   #D64545;   /* Warm Red — incorrect answer */
-  --color-state-incorrect-bg:#FDF0F0;   /* Destructive 50 — incorrect card bg */
-  --color-state-active:      #1B3FC4;   /* Camp Cobalt — selected/active */
-  --color-state-active-bg:   #EEF2FC;   /* Camp Cobalt 50 — selected card bg */
-  --color-state-review:      #D4951A;   /* Amber — flagged for review */
-  --color-state-review-bg:   #FEF8ED;   /* Warning 50 — flagged card bg */
-  --color-state-unanswered:  #8896A7;   /* Ink Tertiary — neutral/untouched */
-  --color-state-unanswered-bg:#F8F7F5;  /* Surface Light — neutral card bg */
+  --color-state-correct: #2D9F6F;
+  /* Emerald — success/correct answer */
+  --color-state-correct-bg: #EDFAF4;
+  /* Emerald 50 — correct answer card bg */
+  --color-state-incorrect: #D64545;
+  /* Warm Red — incorrect answer */
+  --color-state-incorrect-bg: #FDF0F0;
+  /* Destructive 50 — incorrect card bg */
+  --color-state-active: #1B3FC4;
+  /* Camp Cobalt — selected/active */
+  --color-state-active-bg: #EEF2FC;
+  /* Camp Cobalt 50 — selected card bg */
+  --color-state-review: #D4951A;
+  /* Amber — flagged for review */
+  --color-state-review-bg: #FEF8ED;
+  /* Warning 50 — flagged card bg */
+  --color-state-unanswered: #8896A7;
+  /* Ink Tertiary — neutral/untouched */
+  --color-state-unanswered-bg: #F8F7F5;
+  /* Surface Light — neutral card bg */
 
   /* Campfire — Card surfaces */
   --card-bg: #ffffff;
   --card-border-color: #D4DAE3;
   --card-shadow: none;
   --card-shadow-hover: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --card-radius: 8px;            /* rounded-md for cards */
+  --card-radius: 8px;
+  /* rounded-md for cards */
 
   /* Campfire — Quiz states */
   --quiz-correct-bg: #EDFAF4;
@@ -372,18 +418,18 @@
   --confidence-unsure: #FEF8ED;
 
   /* Camp Standard — Bold Color System */
-  --camp-black:  #111111;
+  --camp-black: #111111;
   --camp-cobalt: #1B3FC4;
   --camp-cobalt-light: #2A5BD7;
-  --camp-red:    #E63329;
-  --camp-green:  #1B7A3C;
-  --camp-amber:  #F5A623;
-  --camp-cream:  #FFFFFF;
-  --page-bg:     #FFFFFF;
-  --ink:         #18181B;
+  --camp-red: #E63329;
+  --camp-green: #1B7A3C;
+  --camp-amber: #F5A623;
+  --camp-cream: #FFFFFF;
+  --page-bg: #FFFFFF;
+  --ink: #18181B;
   --border-design: #E5E7EB;
-  --text-2:      #6B6B6B;
-  --text-3:      #9CA3AF;
+  --text-2: #6B6B6B;
+  --text-3: #9CA3AF;
 }
 
 .dark {
@@ -393,7 +439,8 @@
   --card-foreground: #E8ECF1;
   --popover: #1C2433;
   --popover-foreground: #E8ECF1;
-  --primary: #5B7FE0;  /* Camp Cobalt lightened */
+  --primary: #5B7FE0;
+  /* Camp Cobalt lightened */
   --primary-foreground: #ffffff;
   --secondary: #1C2433;
   --secondary-foreground: #E8ECF1;
@@ -539,12 +586,16 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html, body {
+
+  html,
+  body {
     @apply h-full;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
     scrollbar-gutter: stable;
@@ -555,6 +606,7 @@
   .text-balance {
     text-wrap: balance;
   }
+
   /* Numeric data — always Atkinson, always tabular */
   .num {
     font-family: 'Atkinson Hyperlegible', var(--font-sans, sans-serif) !important;
@@ -586,39 +638,55 @@ time,
   mix-blend-mode: overlay;
 }
 
-.noise-light::after { opacity: 0.035; }
-.noise::after       { opacity: 0.055; }
-.noise-heavy::after { opacity: 0.09;  }
+.noise-light::after {
+  opacity: 0.035;
+}
+
+.noise::after {
+  opacity: 0.055;
+}
+
+.noise-heavy::after {
+  opacity: 0.09;
+}
 
 /* ── Global sleek scrollbar ─────────────────────────────────── */
 * {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
+
 *:hover {
   scrollbar-color: rgba(136, 150, 167, 0.35) transparent;
 }
+
 *::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
+
 *::-webkit-scrollbar-track {
   background: transparent;
 }
+
 *::-webkit-scrollbar-thumb {
   background: transparent;
   border-radius: 3px;
   transition: background 150ms ease-out;
 }
+
 *:hover::-webkit-scrollbar-thumb {
   background: rgba(136, 150, 167, 0.35);
 }
+
 *::-webkit-scrollbar-thumb:hover {
   background: rgba(136, 150, 167, 0.55);
 }
+
 *::-webkit-scrollbar-thumb:active {
   background: rgba(136, 150, 167, 0.7);
 }
+
 *::-webkit-scrollbar-corner {
   background: transparent;
 }
@@ -628,17 +696,21 @@ time,
   scrollbar-width: thin;
   scrollbar-color: #D4DAE3 transparent;
 }
+
 .scrollbar-thin::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb {
   background: #D4DAE3;
   border-radius: 2px;
 }
+
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background: #8896A7;
 }
@@ -648,21 +720,26 @@ time,
   scrollbar-width: thin;
   scrollbar-color: #B0C4DE transparent;
 }
+
 .activity-heatmap-scroll::-webkit-scrollbar {
   height: 6px;
 }
+
 .activity-heatmap-scroll::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 3px;
 }
+
 .activity-heatmap-scroll::-webkit-scrollbar-thumb {
   background: #B0C4DE;
   border-radius: 3px;
   transition: background 0.15s ease;
 }
+
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:hover {
   background: #7B9AEA;
 }
+
 .activity-heatmap-scroll::-webkit-scrollbar-thumb:active {
   background: #1B3FC4;
 }
@@ -672,23 +749,28 @@ time,
   scrollbar-width: thin;
   scrollbar-color: #D4DAE3 transparent;
 }
+
 .wiki-sidebar-scroll::-webkit-scrollbar {
   width: 5px;
 }
+
 .wiki-sidebar-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .wiki-sidebar-scroll::-webkit-scrollbar-thumb {
   background: #D4DAE3;
   border-radius: 3px;
   transition: background 0.15s ease;
 }
+
 .wiki-sidebar-scroll::-webkit-scrollbar-thumb:hover {
   background: #8896A7;
 }
 
 /* ── Accessibility: 44px minimum touch targets on coarse-pointer devices ── */
 @media (pointer: coarse) {
+
   button,
   [role="button"],
   a[href] {
@@ -716,10 +798,12 @@ a[data-pending] {
 
 /* Micro-animations */
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -727,6 +811,7 @@ a[data-pending] {
   90% {
     transform: translateX(-3px);
   }
+
   20%,
   40%,
   60%,
@@ -734,32 +819,45 @@ a[data-pending] {
     transform: translateX(3px);
   }
 }
+
 .animate-in.shake {
   animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
+
 .animate-shake {
   animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
 @keyframes pulse-once {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 .animate-pulse-once {
   animation: pulse-once 0.6s ease-in-out 1;
 }
 
 @keyframes pulse-glow {
+
   0%,
   100% {
     box-shadow: 0 0 0 0 #2D9F6F;
   }
+
   50% {
-    box-shadow: 0 0 16px 4px
-      color-mix(in srgb, #2D9F6F 25%, transparent);
+    box-shadow: 0 0 16px 4px color-mix(in srgb, #2D9F6F 25%, transparent);
   }
 }
+
 .pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
 }
@@ -770,6 +868,7 @@ a[data-pending] {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -784,54 +883,86 @@ a[data-pending] {
 .landing-delay-1 {
   animation-delay: 80ms;
 }
+
 .landing-delay-2 {
   animation-delay: 160ms;
 }
+
 .landing-delay-3 {
   animation-delay: 240ms;
 }
+
 .landing-delay-4 {
   animation-delay: 320ms;
 }
+
 .landing-delay-5 {
   animation-delay: 400ms;
 }
+
 .landing-delay-6 {
   animation-delay: 480ms;
 }
 
 /* ── App Drawer animations ── */
 @keyframes drawer-fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
+
 @keyframes drawer-slide-in-right {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
+
 @keyframes drawer-slide-in-left {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(0); }
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
+
 @keyframes drawer-slide-in-bottom {
-  from { transform: translateY(100%); }
-  to   { transform: translateY(0); }
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
   animation: drawer-fade-in 200ms ease-out both;
 }
+
 .animate-slide-in-right {
   animation: drawer-slide-in-right 250ms ease-out both;
 }
+
 .animate-slide-in-left {
   animation: drawer-slide-in-left 250ms ease-out both;
 }
+
 .animate-slide-in-bottom {
   animation: drawer-slide-in-bottom 250ms ease-out both;
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .animate-fade-in,
   .animate-slide-in-right,
   .animate-slide-in-left,
@@ -853,6 +984,7 @@ a[data-pending] {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -871,6 +1003,7 @@ a[data-pending] {
   .marquee-track {
     animation-play-state: paused;
   }
+
   .landing-orb {
     animation: none;
   }
@@ -878,13 +1011,16 @@ a[data-pending] {
 
 /* Landing page — subtle gradient orb drift */
 @keyframes orb-drift {
+
   0%,
   100% {
     transform: translate(0, 0) scale(1);
   }
+
   33% {
     transform: translate(2%, -1%) scale(1.02);
   }
+
   66% {
     transform: translate(-1%, 1.5%) scale(0.98);
   }
@@ -900,6 +1036,7 @@ a[data-pending] {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -920,6 +1057,7 @@ a[data-pending] {
     background-color: rgba(27, 63, 196, 0.1);
     box-shadow: 0 0 0 8px rgba(27, 63, 196, 0.1);
   }
+
   100% {
     background-color: transparent;
     box-shadow: 0 0 0 0 rgba(27, 63, 196, 0);
@@ -938,13 +1076,26 @@ a[data-pending] {
   line-height: 1.7;
   color: #3D3D3A;
 }
+
 .wiki-prose p {
   margin-bottom: 1rem;
   max-width: 65ch;
 }
-.wiki-prose p:last-child { margin-bottom: 0; }
-.wiki-prose strong { font-weight: 600; color: #1A1A1A; }
-.wiki-prose em { font-style: italic; color: #3D3D3A; }
+
+.wiki-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.wiki-prose strong {
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.wiki-prose em {
+  font-style: italic;
+  color: #3D3D3A;
+}
+
 .wiki-prose code {
   font-family: 'DM Mono', monospace;
   font-size: 12px;
@@ -953,15 +1104,16 @@ a[data-pending] {
   padding: 1px 5px;
   border-radius: 3px;
 }
+
 .wiki-prose h2 {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 700;
   font-size: 22px;
-  letter-spacing: -0.01em;
   color: #1A1A1A;
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 .wiki-prose h3 {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 600;
@@ -970,6 +1122,7 @@ a[data-pending] {
   margin-top: 28px;
   margin-bottom: 0.75rem;
 }
+
 /* Section dividers — markdown --- renders as <hr> */
 .wiki-prose hr {
   border: none;
@@ -978,13 +1131,28 @@ a[data-pending] {
 }
 
 /* Wiki prose dark mode */
-.dark .wiki-prose { color: #C8C6C0; }
-.dark .wiki-prose strong { color: #E2E0D8; }
-.dark .wiki-prose em { color: #C8C6C0; }
+.dark .wiki-prose {
+  color: #C8C6C0;
+}
+
+.dark .wiki-prose strong {
+  color: #E2E0D8;
+}
+
+.dark .wiki-prose em {
+  color: #C8C6C0;
+}
+
 .dark .wiki-prose code {
   background: rgba(242, 240, 235, 0.1);
   color: #7BA7F5;
 }
+
 .dark .wiki-prose h2,
-.dark .wiki-prose h3 { color: #E2E0D8; }
-.dark .wiki-prose hr { border-top-color: #3A3835; }
+.dark .wiki-prose h3 {
+  color: #E2E0D8;
+}
+
+.dark .wiki-prose hr {
+  border-top-color: #3A3835;
+}

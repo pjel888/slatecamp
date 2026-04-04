@@ -19,6 +19,15 @@ export interface ImpersonationPreset {
 
 export const IMPERSONATION_PRESETS: ImpersonationPreset[] = [
   {
+    id: 'ale_reviewer',
+    label: 'ALE Reviewer',
+    description: 'Primary target: Board exam candidate using Camp tier',
+    role: 'user',
+    tier: 'camp',
+    userType: 'regular',
+    orgId: null,
+  },
+  {
     id: 'arch_student',
     label: 'Architecture Student',
     description: 'B2C free-tier individual learner',

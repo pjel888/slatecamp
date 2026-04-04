@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import { annotate } from 'rough-notation'
 
 const H1_CLASS =
-  'landing-reveal landing-delay-1 font-syne text-[clamp(3rem,8vw,5.8rem)] font-extrabold leading-[0.92] tracking-[-0.03em] text-zinc-900'
+  'landing-reveal landing-delay-1 font-syne text-[clamp(3rem,8vw,5.8rem)] font-extrabold leading-[0.92] text-zinc-900'
 
 export const HeroHeadline = () => {
   const knowRef = useRef<HTMLSpanElement>(null)

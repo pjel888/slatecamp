@@ -146,7 +146,7 @@ export const BentoFeatureGrid = () => (
                 </span>
                 <Starburst className='h-3 w-3 text-camp-black' />
               </div>
-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#111]'>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-[#111]'>
                 Active Recall,
                 <br />
                 Zero Pressure
@@ -171,7 +171,7 @@ export const BentoFeatureGrid = () => (
         {/* STAT: 1 in 3 — Camp Cream (no noise) */}
         <div className='landing-reveal landing-delay-2 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
           <Starburst className='h-3 w-3 text-camp-amber' />
-          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] tracking-[-0.05em] text-camp-red'>
+          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] text-camp-red'>
             1 in 3
           </div>
           <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-[#555]'>
@@ -193,7 +193,7 @@ export const BentoFeatureGrid = () => (
                 </span>
                 <CircleArrow variant='dark' />
               </div>
-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white'>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-white'>
                 Your Readiness,
                 <br />
                 Quantified
@@ -304,7 +304,7 @@ export const BentoFeatureGrid = () => (
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#aaa]'>
               [ Bounded Intelligence ]
             </span>
-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] tracking-[-0.02em] text-[#111]'>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-[#111]'>
               AI That Cites
               <br />
               Its Sources

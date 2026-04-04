@@ -31,7 +31,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
     <div
       className={cn(
         'whitespace-nowrap overflow-hidden',
-        'text-[14px] font-semibold tracking-[-0.3px] leading-none font-[family-name:var(--font-sora)]',
+        'text-[14px] font-semibold leading-none font-[family-name:var(--font-sora)]',
         'transition-opacity duration-[180ms] ease-out',
         expanded ? 'opacity-100' : 'opacity-0 w-0 ml-0',
         expanded && 'ml-2.5',

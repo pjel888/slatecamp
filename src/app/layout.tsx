@@ -39,6 +39,7 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import { DemoShell } from '@/components/dev/demo-shell'
 import { NavigationProgress } from '@/components/shared/NavigationProgress'
 import { NoiseFilter } from '@/components/graphics/ui/NoiseFilter'
+import { DevModeOverlay } from '@/components/dev/dev-mode-overlay'
 import './globals.css'
 
 const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -75,6 +76,7 @@ export default function RootLayout({
         className={`${atkinson.variable} ${sora.variable} ${boldonse.variable} ${syne.variable} ${dmMono.variable} font-sans antialiased`}
       >
         <ThemeProvider>
+          {process.env.NODE_ENV === 'development' && <DevModeOverlay />}
           <NoiseFilter />
           <NavigationProgress />
           <TooltipProvider>

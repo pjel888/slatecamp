@@ -13,6 +13,12 @@ export const getUserRole = cache(async function getUserRole(): Promise<UserRole 
 
   if (!user) return null;
 
+  // Dev Mode Bypass: If impersonating via DEV_FORCE_USER_ID, grant super_admin locally 
+  // so DevToolbar admin features work unconditionally for the solo founder.
+  if (process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID) {
+    return 'super_admin';
+  }
+
   // Check database roles first
   const { data: dbRole } = await supabase
     .from('user_roles')
@@ -82,6 +88,11 @@ export const getUserRoles = cache(async function getUserRoles(): Promise<UserRol
   const { data: { user } } = await supabase.auth.getUser();
 
   if (!user) return [];
+
+  // Dev Mode Bypass
+  if (process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID) {
+    return ['super_admin'];
+  }
 
   const { data: roles } = await supabase
     .from('user_roles')

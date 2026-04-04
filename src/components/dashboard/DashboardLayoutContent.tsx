@@ -56,15 +56,14 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
 
-  const isAdmin =
-    user.app_metadata?.role === 'admin' ||
-    user.email?.endsWith('@slatecamp.com') ||
-    user.email === 'philipjonlewis@gmail.com'
-  const showDevTools = isDemo || isAdmin
+  // Uses roles.ts which respects the dev bypass
+  const { isAdmin } = await import('@/lib/admin/roles');
+  const userIsAdmin = await isAdmin();
+  const showDevTools = isDemo || userIsAdmin
 
   const flags = showDevTools ? await getFeatureFlags() : null
   const effectiveTier = flags
-    ? getEffectiveTier(currentTier, true, flags)
+    ? getEffectiveTier(currentTier, userIsAdmin, flags)
     : currentTier
 
   return (
@@ -92,7 +91,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
               {/* Desktop layout: sidebar + content in flex row */}
               <div className='flex flex-1 min-h-0'>
                 <Sidebar
-                  isAdmin={isAdmin}
+                  isAdmin={userIsAdmin}
                   isDevMode={showDevTools}
                   userDisplay={{
                     name: user.user_metadata?.full_name ?? user.email ?? 'User',
@@ -102,7 +101,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 />
                 <SidebarContent>
                 <BreadcrumbProvider>
-                  <Navbar isAdmin={isAdmin} />
+                  <Navbar isAdmin={userIsAdmin} />
                   <div>
                     <DashboardHeader userId={user.id} />
                   </div>

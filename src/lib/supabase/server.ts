@@ -10,9 +10,12 @@ export const createStaticClient = cache(async () => {
     return createMockSupabaseClient() as any
   }
 
+  const isDevBypass = process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID
+  const key = isDevBypass ? process.env.SUPABASE_SERVICE_ROLE_KEY! : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+
   return createSupabaseClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    key,
   )
 })
 
@@ -24,10 +27,12 @@ export const createClient = cache(async () => {
   }
 
   const cookieStore = await cookies()
+  const isDevBypass = process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID
+  const key = isDevBypass ? (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!) : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
   return createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    key,
     {
       cookies: {
         getAll() {
@@ -76,17 +81,23 @@ export const getUserIfPresent = cache(async () => {
     const isLocal = host.includes('localhost') || host.includes('127.0.0.1')
 
     if (isLocal) {
-      // We always return the forced user object in local dev
-      // This ensures components that call getUser() get a valid object immediately.
+      // Fetch the real user using the service role key so that metadata (avatar, name) is present
+      const adminClient = createSupabaseClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      )
+      
+      const { data: adminData } = await adminClient.auth.admin.getUserById(process.env.DEV_FORCE_USER_ID)
+      
+      const userObj = adminData?.user || {
+        id: process.env.DEV_FORCE_USER_ID,
+        aud: 'authenticated',
+        app_metadata: {},
+        user_metadata: {}
+      }
+
       return {
-        data: { 
-          user: { 
-            id: process.env.DEV_FORCE_USER_ID,
-            aud: 'authenticated',
-            app_metadata: {},
-            user_metadata: {}
-          } as any 
-        },
+        data: { user: userObj as any },
         error: null,
       }
     }
