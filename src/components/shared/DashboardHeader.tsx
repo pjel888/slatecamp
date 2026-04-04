@@ -19,7 +19,7 @@ export const DashboardHeader = ({ userId }: DashboardHeaderProps) => {
 
   return (
     <header className='flex items-center justify-between border-b border-border bg-white h-16 px-4'>
-      <h1 className='font-display text-md font-semibold text-text-primary'>
+      <h1 className='font-display text-xl font-bold text-text-primary'>
         {title}
       </h1>
       <HeaderActions userId={userId} />
