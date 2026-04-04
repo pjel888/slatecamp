@@ -70,6 +70,27 @@ export const getUserIfPresent = cache(async () => {
     }
   }
 
+  // Strategy A: Local ID Impersonation (Development Only)
+  // If DEV_FORCE_USER_ID is set in .env.local, we trust it if no session exists.
+  if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_USER_ID) {
+    const hasCookie = await hasAuthCookie()
+    if (!hasCookie) {
+      // Return a minimal user object with the forced ID
+      // Most components only need user.id
+      return {
+        data: { 
+          user: { 
+            id: process.env.DEV_FORCE_USER_ID,
+            aud: 'authenticated',
+            app_metadata: {},
+            user_metadata: {}
+          } as any 
+        },
+        error: null,
+      }
+    }
+  }
+
   const hasCookie = await hasAuthCookie()
 
   if (!hasCookie) {

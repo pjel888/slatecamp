@@ -13,6 +13,15 @@ export const updateSession = async (request: NextRequest) => {
     return response;
   }
 
+  // 1.5 DEV BYPASS (Local Only)
+  const isLocal = request.nextUrl.hostname === 'localhost' || request.nextUrl.hostname === '127.0.0.1';
+  const hasBypassHeader = request.headers.get('x-boneyard-bypass') === 'true';
+  const hasForceUser = !!process.env.DEV_FORCE_USER_ID;
+  
+  if (isLocal && process.env.NODE_ENV === 'development' && (hasBypassHeader || hasForceUser)) {
+    return response;
+  }
+
   // 2. PUBLIC PATHS
   // Note: /admin/login is the login page and must be public
   const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin/login';
