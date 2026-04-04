@@ -76,7 +76,8 @@ export const getUserIfPresent = cache(async () => {
 
   // Strategy A: Local ID Impersonation (Development Only)
   if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_USER_ID) {
-    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(process.env.DEV_FORCE_USER_ID)
+    const rawId = process.env.DEV_FORCE_USER_ID.trim()
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(rawId)
     
     if (isUuid) {
       const headersList = await headers()
@@ -90,10 +91,10 @@ export const getUserIfPresent = cache(async () => {
           process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
         )
         
-        const { data: adminData } = await adminClient.auth.admin.getUserById(process.env.DEV_FORCE_USER_ID)
+        const { data: adminData } = await adminClient.auth.admin.getUserById(rawId)
         
         const userObj = adminData?.user || {
-          id: process.env.DEV_FORCE_USER_ID,
+          id: rawId,
           aud: 'authenticated',
           app_metadata: {},
           user_metadata: {}
@@ -105,7 +106,7 @@ export const getUserIfPresent = cache(async () => {
         }
       }
     } else {
-      console.warn(`DEV_FORCE_USER_ID is set but is not a valid UUID: ${process.env.DEV_FORCE_USER_ID}`)
+      console.warn(`DEV_FORCE_USER_ID is set but is not a valid UUID: "${process.env.DEV_FORCE_USER_ID}"`)
     }
   }
 
