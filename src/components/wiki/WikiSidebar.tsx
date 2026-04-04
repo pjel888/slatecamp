@@ -3,9 +3,9 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { BookOpen, Scales } from '@phosphor-icons/react/dist/ssr'
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
+import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { cn } from '@/lib/utils'
 import { useWikiNavigation } from '@/components/wiki/WikiNavigationContext'
@@ -71,7 +71,6 @@ interface WikiSidebarProps {
   disciplineName: string
   collapsed?: boolean
   initialNodes?: TaxonomyNode[]
-  initialLawsNodes?: TaxonomyNode[]
 }
 
 export const WikiSidebar = ({
@@ -79,36 +78,29 @@ export const WikiSidebar = ({
   disciplineName,
   collapsed,
   initialNodes,
-  initialLawsNodes,
 }: WikiSidebarProps) => {
   const pathname = usePathname()
   const { navigate } = useWikiNavigation()
   const [nodes, setNodes] = React.useState<TaxonomyNode[]>(initialNodes ?? [])
-  const [lawsNodes, setLawsNodes] = React.useState<TaxonomyNode[]>(initialLawsNodes ?? [])
   const [loading, setLoading] = React.useState(!initialNodes?.length)
 
   // Fetch taxonomy data ONLY when discipline changes
   React.useEffect(() => {
-    if (initialNodes?.length || initialLawsNodes?.length) {
+    if (initialNodes?.length) {
       setLoading(false)
       return
     }
     if (disciplineId) {
       setLoading(true)
-      Promise.all([
-        getTaxonomyTree(disciplineId),
-        getLawsTaxonomyTree(disciplineId),
-      ]).then(([data, laws]) => {
+      getTaxonomyTree(disciplineId).then((data) => {
         setNodes(data)
-        setLawsNodes(laws)
         setLoading(false)
       })
     }
-  }, [disciplineId, initialNodes, initialLawsNodes])
+  }, [disciplineId, initialNodes])
 
-  // Build nested trees
+  // Build nested tree
   const syllabusTree = React.useMemo(() => buildNestedTree(nodes), [nodes])
-  const lawsTree = React.useMemo(() => buildNestedTree(lawsNodes), [lawsNodes])
 
   // Extract active slug from pathname
   const activeSlug = React.useMemo(() => {
@@ -178,26 +170,6 @@ export const WikiSidebar = ({
             showSearch
             dimInactive={hasArticleOpen}
             className="flex-1 min-h-0"
-          />
-        </div>
-      )}
-
-      {/* Laws & Codes section */}
-      {lawsTree.length > 0 && (
-        <div className="flex flex-col shrink-0 border-t border-border">
-          <div className="px-3 pt-3 pb-1.5 flex items-center gap-1.5">
-            <SCIcon icon={Scales} size="xs" className="text-muted-foreground" />
-            <Eyebrow>Laws &amp; Codes</Eyebrow>
-          </div>
-          <TaxonomyTree
-            nodes={lawsTree}
-            activeSlug={activeSlug}
-            basePath="/dashboard/wiki"
-            onNavigate={handleNavigate}
-            showCounts
-            showSearch={false}
-            dimInactive={hasArticleOpen}
-            className="max-h-64 overflow-y-auto"
           />
         </div>
       )}

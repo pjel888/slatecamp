@@ -1,4 +1,4 @@
-import { getTaxonomyTree, getLawsTaxonomyTree } from '@/lib/actions/wiki-actions'
+import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
 import { WikiSidebar } from '@/components/wiki/WikiSidebar'
 
 /**
@@ -14,17 +14,13 @@ export const WikiSidebarLoader = async ({
   disciplineId: string
   disciplineName: string
 }) => {
-  const [nodes, lawsNodes] = await Promise.all([
-    getTaxonomyTree(disciplineId),
-    getLawsTaxonomyTree(disciplineId),
-  ])
+  const nodes = await getTaxonomyTree(disciplineId)
 
   return (
     <WikiSidebar
       disciplineId={disciplineId}
       disciplineName={disciplineName}
       initialNodes={nodes}
-      initialLawsNodes={lawsNodes}
     />
   )
 }
