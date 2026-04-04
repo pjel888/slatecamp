@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "type-check": "tsc --noEmit",
-    "db:seed": "bun scripts/seed.ts"
+    "db:seed": "bun scripts/seed.ts",
+    "bones:build": "boneyard-js build http://localhost:3000/dashboard --out ./src/bones"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",
@@ -44,6 +45,7 @@
     "@tiptap/suggestion": "^3.20.4",
     "@uiw/react-codemirror": "^4.25.9",
     "@use-gesture/react": "^10.3.1",
+    "boneyard-js": "^1.6.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
