@@ -28,7 +28,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
       {tier.originalPrice && (
         <s className='block text-[13px] text-muted-foreground'>{tier.originalPrice}</s>
       )}
-      <span className='text-[40px] font-semibold leading-none tracking-tight text-foreground'>
+      <span className='text-[40px] font-semibold leading-none text-foreground'>
         {tier.price}
       </span>
       {tier.priceSubtext && (

@@ -149,7 +149,7 @@ export const AnalyticsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
           Stop guessing. Your Readiness Score
           <br />
           tells you exactly where you stand.
@@ -186,3 +186,5 @@ export const AnalyticsSection = () => (
     </ScrollReveal>
   </FeatureSectionLayout>
 )
+
+

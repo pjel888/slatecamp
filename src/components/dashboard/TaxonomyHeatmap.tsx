@@ -65,7 +65,7 @@ export const TaxonomyHeatmap = ({
     <Card className='border-0 bg-white shadow-none'>
       <CardHeader className='flex flex-row items-start justify-between gap-4 pb-2'>
         <div>
-          <CardTitle className='text-sm font-medium tracking-tight text-text-secondary'>
+          <CardTitle className='text-sm font-medium text-text-secondary'>
             Global Taxonomy Heatmap
           </CardTitle>
           <p className='mt-1 text-xs text-text-tertiary'>
@@ -98,7 +98,7 @@ export const TaxonomyHeatmap = ({
         {clusters.map((cluster) => (
           <div key={cluster.id} className='space-y-2 rounded-md bg-muted p-3'>
             <div className='flex items-baseline justify-between gap-2'>
-              <p className='text-xs font-medium tracking-tight text-text-primary'>
+              <p className='text-xs font-medium text-text-primary'>
                 {cluster.title}
               </p>
             </div>

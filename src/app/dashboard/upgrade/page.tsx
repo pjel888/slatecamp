@@ -42,8 +42,8 @@ const UpgradePage = async () => {
   return (
     <SharedPageLayout>
       <div className="mx-auto w-full max-w-xl px-4 py-8">
-        {/* Headline — Syne 800, 36px */}
-        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight tracking-tight text-foreground">
+        {/* Headline — Boldonse 400, 36px */}
+        <h1 className="font-[family-name:var(--font-boldonse)] text-[36px] font-extrabold leading-tight text-foreground">
           Know you&apos;ll win.
         </h1>
 

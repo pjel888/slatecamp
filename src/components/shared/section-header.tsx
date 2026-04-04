@@ -16,7 +16,7 @@ const levelStyles = {
     eyebrow:
       "font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground",
     title:
-      "font-[family-name:var(--font-display)] font-extrabold text-xl tracking-tight",
+      "font-[family-name:var(--font-display)] font-extrabold text-xl",
     subtitle: "text-sm text-muted-foreground",
   },
   section: {

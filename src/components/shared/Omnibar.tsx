@@ -296,7 +296,7 @@ const ResultItem = ({
         {item.title}
       </span>
       <div 
-        className="text-[11px] text-muted-foreground truncate tracking-tight [&_mark]:bg-primary/10 [&_mark]:text-primary [&_mark]:font-semibold"
+        className="text-[11px] text-muted-foreground truncate [&_mark]:bg-primary/10 [&_mark]:text-primary [&_mark]:font-semibold"
         dangerouslySetInnerHTML={{ __html: item.snippet.replace(/<[^>]*>?/gm, (match) => match === '<mark>' || match === '</mark>' ? match : '') }}
       />
     </div>

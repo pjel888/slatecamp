@@ -84,7 +84,7 @@ const articleRendererData: ComponentData = {
 <ArticleRenderer content={articleContent} />`,
   preview: (
     <div className="w-full max-w-md space-y-4 text-foreground">
-      <h2 className="font-[family-name:var(--font-display)] font-bold text-[15px] tracking-tight">
+      <h2 className="font-[family-name:var(--font-display)] font-bold text-[15px]">
         Section 401: Corridor Width Standards
       </h2>
       <p className="text-[13px] leading-relaxed text-muted-foreground">
@@ -93,7 +93,7 @@ const articleRendererData: ComponentData = {
         floor area served. Corridors shall provide unobstructed egress width as
         specified in Table 401.1.
       </p>
-      <h3 className="font-[family-name:var(--font-display)] font-bold text-[13px] tracking-tight">
+      <h3 className="font-[family-name:var(--font-display)] font-bold text-[13px]">
         401.2 Width Calculations
       </h3>
       <p className="text-[13px] leading-relaxed text-muted-foreground">

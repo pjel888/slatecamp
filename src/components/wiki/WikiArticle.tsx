@@ -11,7 +11,7 @@ import { WikiTextSelection } from './WikiTextSelection'
 import { resolveWidgets } from './widgets/registry'
 
 // --- COMPONENTS FOR MDX ---
-import { Note, Warn, Tip, Example, Callout } from './WikiCallout'
+import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent } from './WikiCallout'
 import { WikiCalloutBox } from './WikiCalloutBox'
 import { WikiExamTable } from './WikiExamTable'
 import { WikiArticleHero } from './WikiArticleHero'
@@ -33,6 +33,7 @@ import { RevealBlock } from './RevealBlock'
 import { WikiReference } from './WikiReference'
 import { Mermaid } from './Mermaid'
 import { WikiPre } from './WikiPre'
+import { GenericBlock, SPP206RefServices, SPP207RefServices } from './GenericBlock'
 
 interface WikiArticleProps {
   article: WikiArticleType
@@ -132,6 +133,9 @@ const WIKI_COMPONENTS = {
   Example,
   Callout,
   ExamTip,
+  AlertBox,
+  CalloutBox,
+  AuthorityContent,
   ComparisonTable,
   SubjectSnapshot,
   WikiCalloutBox,
@@ -158,6 +162,26 @@ const WIKI_COMPONENTS = {
   Mermaid,
   EIPrompt: EIPromptComponent,
   EIBlock: WikiEIBlock,
+  // Generic passthrough for AI-hallucinated or legacy component names
+  ConflictMatrix: GenericBlock,
+  EthicalFramework: GenericBlock,
+  RegulationFramework: GenericBlock,
+  WikiExactTable: GenericBlock,
+  InfoBox: GenericBlock,
+  Alert: AlertBox,
+  QuestionBank: GenericBlock,
+  ComparisonChart: GenericBlock,
+  TechnicalBox: GenericBlock,
+  DataQualitySpec: GenericBlock,
+  DataTable: GenericBlock,
+  ComplianceChecklist: GenericBlock,
+  SensorTable: GenericBlock,
+  BEMSFunctionality: GenericBlock,
+  EnergyDashboard: GenericBlock,
+  PriceBreakdown: GenericBlock,
+  // No-op stubs
+  SPP206RefServices,
+  SPP207RefServices,
 }
 
 const injectEIPrompts = (content: string, prompts: EIPromptType[]): string => {

@@ -43,7 +43,7 @@ export default function ContactPage() {
             <p className="mb-4 text-[13px] font-medium uppercase tracking-widest text-primary">
               Contact
             </p>
-            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
+            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] text-foreground">
               We&apos;re here to help.
             </h1>
             <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-text-secondary">
@@ -139,7 +139,7 @@ export default function ContactPage() {
           <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
             <Question size={20} weight="duotone" />
           </div>
-          <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold tracking-tight text-foreground">
+          <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-foreground">
             Frequently asked questions
           </h2>
           <p className="mt-3 max-w-[480px] text-[15px] leading-relaxed text-text-secondary">

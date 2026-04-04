@@ -58,7 +58,7 @@ export function QuestionStem({ text, imageUrl, className }: QuestionStemProps) {
       )}
 
       <p
-        className="text-[16px] font-normal text-text-primary leading-[1.7] tracking-tight max-w-[65ch] selection:bg-primary-50 selection:text-primary-700"
+        className="text-[16px] font-normal text-text-primary leading-[1.7] max-w-[65ch] selection:bg-primary-50 selection:text-primary-700"
       >
         {text}
       </p>

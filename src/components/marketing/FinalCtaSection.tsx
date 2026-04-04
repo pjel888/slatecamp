@@ -14,7 +14,7 @@ export const FinalCtaSection = ({
     <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-md bg-camp-black px-8 py-20 text-center text-white noise'>
       <div className='relative z-10'>
         <ScrollReveal y={20} duration={0.4} delay={0}>
-          <h2 className='font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3.5vw,2.5rem)] font-extrabold tracking-tight text-white'>
+          <h2 className='font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3.5vw,2.5rem)] font-extrabold text-white'>
             The exam doesn&apos;t wait for you to feel ready.
           </h2>
         </ScrollReveal>
@@ -37,3 +37,5 @@ export const FinalCtaSection = ({
     </div>
   </section>
 )
+
+

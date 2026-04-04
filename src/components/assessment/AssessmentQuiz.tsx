@@ -233,7 +233,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
       {/* Top bar */}
       <header className="shrink-0 bg-white border-b border-border px-5 py-3.5">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
-          <span className="text-text-primary text-sm font-semibold tracking-tight">
+          <span className="text-text-primary text-sm font-semibold">
             Assessment
           </span>
           <span className="text-text-secondary text-sm tabular-nums">

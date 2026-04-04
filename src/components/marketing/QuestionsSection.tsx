@@ -91,7 +91,7 @@ export const QuestionsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
           2,400+ questions built for
           <br />
           the ALE. Every single one.
@@ -144,3 +144,5 @@ export const QuestionsSection = () => (
     </ScrollReveal>
   </FeatureSectionLayout>
 )
+
+

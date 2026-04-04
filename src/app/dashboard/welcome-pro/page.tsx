@@ -67,7 +67,7 @@ const WelcomeProPage = async () => {
     >
       <div className="mx-auto w-full max-w-lg text-center">
         {/* Welcome headline */}
-        <h1 className="font-[family-name:var(--font-syne)] text-[36px] font-extrabold leading-tight text-foreground">
+        <h1 className="font-[family-name:var(--font-boldonse)] text-[36px] font-extrabold leading-tight text-foreground">
           Welcome to Camp, {firstName}.
         </h1>
 
@@ -77,7 +77,7 @@ const WelcomeProPage = async () => {
             Your Readiness Score
           </p>
           <p
-            className="mt-2 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-none tabular-nums"
+            className="mt-2 font-[family-name:var(--font-boldonse)] text-[72px] font-extrabold leading-none tabular-nums"
             style={{ color: scoreColor }}
           >
             {score}%

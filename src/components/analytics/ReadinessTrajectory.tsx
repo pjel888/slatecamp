@@ -35,7 +35,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
             </CardTitle>
             <div className="flex items-baseline gap-1.5 mt-0.5">
               <span className={cn(
-                'text-xl font-extrabold tracking-tight tabular-nums',
+                'text-xl font-extrabold tabular-nums',
                 getScoreColor(clamped).text
               )}>
                 {clamped}%

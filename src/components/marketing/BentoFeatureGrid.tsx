@@ -92,7 +92,7 @@ const ReadinessRingSvg = ({ size = 82 }: { size?: number }) => (
       strokeLinecap='round' transform='rotate(-90 50 50)'
     />
     <text x='50' y='47' textAnchor='middle' fill='white' fontSize='22' fontWeight='700'
-      style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
+      style={{ fontFamily: 'var(--font-syne, Boldonse, sans-serif)' }}>
       78
     </text>
     <text x='50' y='62' textAnchor='middle' fill='rgba(255,255,255,0.3)' fontSize='6.5'
@@ -254,7 +254,7 @@ export const BentoFeatureGrid = () => (
         <div className='landing-reveal landing-delay-5 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
-              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight tracking-tight text-[#111]'>
+              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight text-[#111]'>
                 3D Lab
               </h3>
               <Starburst className='h-3 w-3 text-camp-amber' />
@@ -327,7 +327,7 @@ export const BentoFeatureGrid = () => (
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-camp-amber'>
               The Engine
             </span>
-            <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight tracking-tight text-white'>
+            <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight text-white'>
               Personalized
               <br />
               Learning
@@ -357,3 +357,5 @@ export const BentoFeatureGrid = () => (
     </div>
   </section>
 )
+
+

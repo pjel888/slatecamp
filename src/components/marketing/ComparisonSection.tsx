@@ -62,7 +62,7 @@ export const ComparisonSection = () => (
 
         <h2
           id='comparison-heading'
-          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold tracking-tight text-ink'
+          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold text-ink'
         >
           The old way. The better way.
         </h2>
@@ -163,3 +163,5 @@ export const ComparisonSection = () => (
     </div>
   </section>
 )
+
+

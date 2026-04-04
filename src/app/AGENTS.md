@@ -13,7 +13,7 @@ This directory implements the Campfire design system and enforces strict pedagog
 
 | File | Description |
 |------|-------------|
-| `layout.tsx` | Root layout: fonts (Inter, Syne, DM Mono, Geist), theme provider, tooltip provider, demo shell, navigation progress bar, toaster, noise filter |
+| `layout.tsx` | Root layout: fonts (Inter, Boldonse, DM Mono, Geist), theme provider, tooltip provider, demo shell, navigation progress bar, toaster, noise filter |
 | `page.tsx` | Landing page (marketing site) -- force-dynamic, SEO metadata, Readiness Score messaging |
 | `error.tsx` | Global error boundary -- catches unhandled errors across all routes |
 | `not-found.tsx` | 404 page |
@@ -59,10 +59,10 @@ This directory implements the Campfire design system and enforces strict pedagog
 - Root viewport uses light theme color `#FFFFFF` / dark `#000000`
 
 **Font Loading:**
-- **Inter** (main body text, default) -- loaded via `next/font/google` in root layout with `variable: --font-inter`
-- **Syne** (headings, bold accents) -- weights 400/700/800 in `variable: --font-syne`
+- **Atkinson Hyperlegible** (main body text, default) -- loaded via `next/font/google` in root layout with `variable: --font-atkinson`
+- **Boldonse** (headings, bold accents) -- weight 400 in `variable: --font-boldonse`
 - **DM Mono** (code, data values, Readiness Score number) -- weights 400/500 in `variable: --font-dm-mono`
-- **Geist Sans** (fallback via `GeistSans` from 'geist/font/sans') -- included in layout but Inter is primary
+- **Geist Sans** (fallback via `GeistSans` from 'geist/font/sans') -- included in layout but Atkinson is primary
 - All fonts load with `display: 'swap'` (progressive text rendering)
 
 **Component Patterns:**

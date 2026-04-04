@@ -1140,7 +1140,7 @@ export default function ComponentLibraryPage() {
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
           Engineering Reference
         </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
+        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
           Component Library
         </h1>
         <p className="text-[13px] text-muted-foreground leading-relaxed max-w-xl mt-1">

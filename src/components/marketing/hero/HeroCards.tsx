@@ -166,7 +166,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
         </span>
       </div>
 
-      <h3 className='text-base font-semibold tracking-tight text-ink'>
+      <h3 className='text-base font-semibold text-ink'>
         {isHovered ? "This is what's possible" : "Are you sure you'll pass?"}
       </h3>
 

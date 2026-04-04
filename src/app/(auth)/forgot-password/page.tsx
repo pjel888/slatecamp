@@ -44,11 +44,11 @@ export default function ForgotPasswordPage() {
         <div className="text-center">
           <Link
             href={ROUTES.HOME}
-            className="text-lg font-semibold tracking-tight text-zinc-900"
+            className="text-lg font-semibold text-zinc-900"
           >
             {siteConfig.name}
           </Link>
-          <h1 className="mt-6 text-xl font-semibold tracking-tight text-zinc-900">
+          <h1 className="mt-6 text-xl font-semibold text-zinc-900">
             Reset your password
           </h1>
           <p className="mt-2 text-sm text-zinc-500">

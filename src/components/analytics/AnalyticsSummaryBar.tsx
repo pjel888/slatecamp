@@ -11,7 +11,7 @@ function Metric({ label, value, unit, accent }: { label: string; value: string |
         <span className={cn('text-xl font-extrabold leading-none tabular-nums', accent ? 'text-primary' : 'text-text-primary')}>
           {value}
         </span>
-        <span className="text-[11px] font-medium text-zinc-500 uppercase tracking-tight">{unit}</span>
+        <span className="text-[11px] font-medium text-zinc-500 uppercase">{unit}</span>
       </div>
     </div>
   )

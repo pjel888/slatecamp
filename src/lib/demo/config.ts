@@ -15,9 +15,8 @@ export function isDemoMode(): boolean {
   // 2. Default to demo mode if ANY essential keys are missing
   const hasUrl = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
   const hasKey = !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const hasServiceKey = !!process.env.SUPABASE_SERVICE_ROLE_KEY;
   
-  return false;
+  return !hasUrl || !hasKey;
 }
 
 export const DEMO_USER = {

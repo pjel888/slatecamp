@@ -54,3 +54,4 @@ export const MarketingFooter = ({
     </footer>
   )
 }
+

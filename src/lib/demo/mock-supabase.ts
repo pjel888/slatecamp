@@ -97,6 +97,7 @@ class MockQueryBuilder {
   lte(col: string, val: unknown) { this.filters.push({ col, op: "lte", val }); return this; }
   gt(col: string, val: unknown) { this.filters.push({ col, op: "gt", val }); return this; }
   gte(col: string, val: unknown) { this.filters.push({ col, op: "gte", val }); return this; }
+  is(col: string, val: unknown) { this.filters.push({ col, op: "is", val }); return this; }
   not(col: string, op: string, val: unknown) { this.filters.push({ col, op: `not.${op}`, val }); return this; }
   or(filter: string) { this.orFilter = filter; return this; }
 

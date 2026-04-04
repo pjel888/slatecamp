@@ -14,7 +14,7 @@ export function WikiArticleHeader({
 }: WikiArticleHeaderProps) {
   return (
     <header className="mb-8">
-      <h1 className="text-xl font-bold tracking-tight text-foreground mb-3">
+      <h1 className="text-xl font-bold text-foreground mb-3">
         {title}
       </h1>
       <div className="flex items-center gap-2 text-xs text-muted-foreground">

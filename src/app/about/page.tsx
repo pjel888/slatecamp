@@ -41,7 +41,7 @@ export default function AboutPage() {
             <p className="mb-4 text-[13px] font-medium uppercase tracking-widest text-primary">
               About SlateCamp
             </p>
-            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] tracking-tight text-foreground">
+            <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-semibold leading-[1.1] text-foreground">
               Built by an architect,
               <br />
               for architects.
@@ -60,7 +60,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-[1200px] px-6 py-20">
             <div className="grid gap-12 sm:grid-cols-2 sm:gap-20">
               <div>
-                <h2 className="text-[22px] font-semibold tracking-tight text-foreground">
+                <h2 className="text-[22px] font-semibold text-foreground">
                   The ALE struggle is real
                 </h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
@@ -78,7 +78,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div>
-                <h2 className="text-[22px] font-semibold tracking-tight text-foreground">
+                <h2 className="text-[22px] font-semibold text-foreground">
                   The mission
                 </h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
@@ -103,7 +103,7 @@ export default function AboutPage() {
           <p className="mb-3 text-[13px] font-medium uppercase tracking-widest text-primary">
             The technology
           </p>
-          <h2 className="max-w-[520px] text-[clamp(1.5rem,3vw,2rem)] font-semibold tracking-tight text-foreground">
+          <h2 className="max-w-[520px] text-[clamp(1.5rem,3vw,2rem)] font-semibold text-foreground">
             Why it works differently
           </h2>
           <p className="mt-4 max-w-[560px] text-[15px] leading-relaxed text-text-secondary">
@@ -134,7 +134,7 @@ export default function AboutPage() {
         {/* ── CTA ── */}
         <section className="border-t border-zinc-200 bg-primary">
           <div className="mx-auto max-w-[1200px] px-6 py-20 text-center">
-            <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold tracking-tight text-white">
+            <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-white">
               Ready to find out where you actually stand?
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/70">

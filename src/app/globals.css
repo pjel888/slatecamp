@@ -11,7 +11,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'SF Mono', 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
 
   --color-sidebar-ring: var(--sidebar-ring);
@@ -179,14 +179,23 @@
   --color-card-lab-border:     #377380;
 
   /* Camp Standard — Font families */
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Boldonse', sans-serif;
   --font-dm-mono: 'DM Mono', monospace;
   --font-sora: 'Sora', sans-serif;
+  --font-boldonse: 'Boldonse', sans-serif;
+  --font-syne: 'Syne', sans-serif;
+  --font-atkinson: 'Atkinson Hyperlegible', sans-serif;
 }
 
 @layer utilities {
   .logo-sora {
     font-family: var(--font-sora), 'Sora', sans-serif;
+  }
+  .font-syne {
+    font-family: var(--font-syne), 'Syne', sans-serif;
+  }
+  .font-boldonse {
+    font-family: var(--font-boldonse), 'Boldonse', sans-serif;
   }
 }
 
@@ -546,9 +555,9 @@
   .text-balance {
     text-wrap: balance;
   }
-  /* Numeric data — always Inter, always tabular */
+  /* Numeric data — always Atkinson, always tabular */
   .num {
-    font-family: 'Inter', var(--font-sans, sans-serif) !important;
+    font-family: 'Atkinson Hyperlegible', var(--font-sans, sans-serif) !important;
     font-variant-numeric: tabular-nums;
   }
 }
@@ -924,7 +933,7 @@ a[data-pending] {
 
 /* ─── Wiki Article Prose ─── */
 .wiki-prose {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 15px;
   line-height: 1.7;
   color: #3D3D3A;
@@ -945,7 +954,7 @@ a[data-pending] {
   border-radius: 3px;
 }
 .wiki-prose h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: -0.01em;
@@ -954,7 +963,7 @@ a[data-pending] {
   margin-bottom: 1rem;
 }
 .wiki-prose h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #1A1A1A;

@@ -115,7 +115,7 @@ export const PreAssessmentTeaser = () => {
           <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[2.5px] text-text-tertiary">
             Sample complete
           </p>
-          <p className="mt-4 font-[family-name:var(--font-syne)] text-3xl font-bold text-text-primary">
+          <p className="mt-4 font-[family-name:var(--font-boldonse)] text-3xl font-bold text-text-primary">
             {correctCount} of {SAMPLE_QUESTIONS.length} correct
           </p>
           <p className="mt-3 text-sm text-text-secondary max-w-xs mx-auto">
@@ -230,3 +230,4 @@ export const PreAssessmentTeaser = () => {
     </div>
   )
 }
+

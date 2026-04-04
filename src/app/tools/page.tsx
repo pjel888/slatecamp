@@ -53,7 +53,7 @@ export default function ToolsHubPage() {
         <div className='mx-auto max-w-[1200px]'>
           {/* Hero */}
           <div className='mb-12 max-w-2xl'>
-            <h1 className='font-display text-[clamp(2rem,5vw,3rem)] font-semibold tracking-tight text-foreground'>
+            <h1 className='font-display text-[clamp(2rem,5vw,3rem)] font-semibold text-foreground'>
               Free Architecture Tools
             </h1>
             <p className='mt-4 text-[17px] text-muted-foreground leading-relaxed'>

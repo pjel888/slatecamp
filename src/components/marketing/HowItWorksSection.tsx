@@ -43,12 +43,12 @@ export const HowItWorksSection = () => (
         {STEPS.map(({ num, title, desc }) => (
           <StaggerItem key={num}>
             <span
-              className="font-mono text-[56px] font-bold leading-none tracking-tighter text-border-design"
+              className="font-mono text-[56px] font-bold leading-none text-border-design"
               aria-hidden="true"
             >
               {num}
             </span>
-            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold tracking-tight text-ink">
+            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold text-ink">
               {title}
             </h3>
             <p className="mt-3 text-[14px] leading-relaxed text-text-2">
@@ -60,3 +60,5 @@ export const HowItWorksSection = () => (
     </div>
   </section>
 )
+
+

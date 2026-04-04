@@ -36,7 +36,7 @@ export default function AdminLandingPage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-surface-light px-6">
       <div className="w-full max-w-[400px] space-y-8">
         <div className="text-center">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-text-primary">
+          <Link href="/" className="text-xl font-bold text-text-primary">
             SLATECAMP <span className="text-text-tertiary">ADMIN</span>
           </Link>
           <h1 className="mt-6 text-xl font-semibold text-text-primary">Staff Portal</h1>

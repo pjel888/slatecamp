@@ -10,7 +10,8 @@ import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import { Note, Warn, Tip, Example, Callout } from '@/components/wiki/WikiCallout'
+import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent } from '@/components/wiki/WikiCallout'
+import { GenericBlock, SPP206RefServices, SPP207RefServices } from '@/components/wiki/GenericBlock'
 
 interface PageProps {
   params: Promise<{ id: string }>
@@ -23,6 +24,9 @@ const mdxComponents = {
   Tip,
   Example,
   Callout,
+  AlertBox,
+  CalloutBox,
+  AuthorityContent,
   h2: (props: any) => <h2 className="text-xl font-bold mt-6 mb-3 text-foreground" {...props} />,
   h3: (props: any) => <h3 className="text-lg font-bold mt-4 mb-2 text-foreground" {...props} />,
   p: (props: any) => <p className="text-sm leading-relaxed mb-4 text-text-secondary" {...props} />,
@@ -30,6 +34,26 @@ const mdxComponents = {
   ol: (props: any) => <ol className="list-decimal pl-5 mb-4 space-y-1 text-sm text-text-secondary" {...props} />,
   li: (props: any) => <li className="mb-1" {...props} />,
   code: (props: any) => <code className="bg-muted px-1.5 py-0.5 rounded font-mono text-[13px]" {...props} />,
+  // Generic passthrough for AI-hallucinated component names
+  ConflictMatrix: GenericBlock,
+  EthicalFramework: GenericBlock,
+  RegulationFramework: GenericBlock,
+  WikiExactTable: GenericBlock,
+  InfoBox: GenericBlock,
+  Alert: AlertBox,
+  QuestionBank: GenericBlock,
+  ComparisonChart: GenericBlock,
+  TechnicalBox: GenericBlock,
+  DataQualitySpec: GenericBlock,
+  DataTable: GenericBlock,
+  ComplianceChecklist: GenericBlock,
+  SensorTable: GenericBlock,
+  BEMSFunctionality: GenericBlock,
+  EnergyDashboard: GenericBlock,
+  PriceBreakdown: GenericBlock,
+  // No-op stubs
+  SPP206RefServices,
+  SPP207RefServices,
 }
 
 const ArticlePreview = async ({ content }: { content: string }) => {

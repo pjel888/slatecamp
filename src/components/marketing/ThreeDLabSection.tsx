@@ -139,7 +139,7 @@ export const ThreeDLabSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-white sm:text-[34px]'>
           Some things you can&apos;t learn
           <br />
           from a textbook.
@@ -189,3 +189,5 @@ export const ThreeDLabSection = () => (
     </ScrollReveal>
   </FeatureSectionLayout>
 )
+
+

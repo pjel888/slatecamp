@@ -15,7 +15,7 @@ export default function LoginPage() {
           >
             <SlateCampLogo size="lg" />
           </Link>
-          <h1 className='mt-6 text-xl font-semibold leading-tight tracking-tight text-zinc-900'>
+          <h1 className='mt-6 text-xl font-semibold leading-tight text-zinc-900'>
             Log in
           </h1>
           <p className='mt-2 text-sm leading-relaxed text-zinc-500'>

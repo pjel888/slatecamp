@@ -150,7 +150,7 @@ function HotspotMarkers({ hotspots, onSelect }: { hotspots: SpatialHotspot[], on
             <meshStandardMaterial color="#3D5A9C" emissive="#3D5A9C" emissiveIntensity={2} />
             <Html distanceFactor={10}>
               <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-md border border-border shadow-sm whitespace-nowrap pointer-events-none">
-                <span className="text-[11px] font-bold uppercase tracking-tight text-foreground">{h.title}</span>
+                <span className="text-[11px] font-bold uppercase text-foreground">{h.title}</span>
               </div>
             </Html>
           </mesh>
@@ -316,7 +316,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
       {/* Sidebar Navigation */}
       <aside className="w-72 border-r border-border bg-white flex flex-col overflow-y-auto">
         <div className="p-6 border-b border-muted">
-          <h2 className="text-lg font-bold text-foreground tracking-tight flex items-center gap-2">
+          <h2 className="text-lg font-bold text-foreground flex items-center gap-2">
             <SCIcon icon={Cube} size="md" className="text-primary" />
             3D Assets
           </h2>

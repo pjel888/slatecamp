@@ -15,7 +15,7 @@ export default function WikiPage() {
 
         {/* Text Content */}
         <div className='space-y-3'>
-          <h1 className='font-display text-2xl font-extrabold tracking-tight text-text-primary'>
+          <h1 className='font-display text-2xl font-extrabold text-text-primary'>
             Knowledge Wiki
           </h1>
           <p className='text-zinc-500 text-sm leading-relaxed'>

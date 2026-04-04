@@ -65,7 +65,7 @@ export const WikiSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] tracking-tight text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
           Every code provision, every principle.
           <br />
           Organized like an encyclopedia.
@@ -115,3 +115,5 @@ export const WikiSection = () => (
     </ScrollReveal>
   </FeatureSectionLayout>
 )
+
+

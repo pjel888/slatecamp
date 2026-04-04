@@ -28,10 +28,11 @@ export const AnimatedScore = ({ target, color }: AnimatedScoreProps) => {
 
   return (
     <span
-      className="font-[family-name:var(--font-syne)] font-extrabold text-[80px] leading-none tracking-tight tabular-nums"
+      className="font-[family-name:var(--font-boldonse)] font-extrabold text-[80px] leading-none tabular-nums"
       style={{ color }}
     >
       {display}%
     </span>
   )
 }
+

@@ -202,7 +202,7 @@ export function HeroCommandBar({
             <p className='font-dm-mono text-white/50 text-[11px] font-medium uppercase tracking-[0.2em]'>
               {greeting}
             </p>
-            <h1 className='font-syne text-white text-xl font-extrabold tracking-tight'>
+            <h1 className='font-boldonse text-white text-xl font-extrabold'>
               {userName.charAt(0).toUpperCase() + userName.slice(1)}.
             </h1>
             {daysUntilExam != null && (

@@ -221,7 +221,7 @@ export default function ArchitecturePage() {
       {/* Header */}
       <div>
         <SectionLabel>Documentation</SectionLabel>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground tracking-tight">
+        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
           Architecture Overview
         </h1>
         <p className="text-sm text-muted-foreground mt-1">

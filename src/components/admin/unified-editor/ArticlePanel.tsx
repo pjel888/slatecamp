@@ -715,7 +715,7 @@ export const ArticlePanel = ({
                 <a
                   href={`/admin/3d-models?topic=${nodeId}`}
                   target="_blank"
-                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-tight text-camp-cobalt transition-colors duration-150 hover:bg-primary-50"
+                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[10px] font-bold uppercase text-camp-cobalt transition-colors duration-150 hover:bg-primary-50"
                 >
                   Manage 3D Registry &rarr;
                 </a>

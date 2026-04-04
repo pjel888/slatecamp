@@ -63,7 +63,7 @@ export const SlateCampLogo = ({
       {showText && (
         <span
           className={cn(
-            'inline-flex items-baseline gap-[1px] font-semibold tracking-tight leading-none logo-sora',
+            'inline-flex items-baseline gap-[1px] font-semibold leading-none logo-sora',
             sizeClass,
             logoColorClass
           )}

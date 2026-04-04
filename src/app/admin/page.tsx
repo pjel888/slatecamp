@@ -186,7 +186,7 @@ const AdminDashboardPage = async () => {
                 <div key={subject.node_id} className="space-y-2">
                   <div className="flex items-end justify-between gap-2">
                     <div className="min-w-0">
-                      <p className="text-[11px] font-bold text-text-tertiary uppercase tracking-tight truncate">
+                      <p className="text-[11px] font-bold text-text-tertiary uppercase truncate">
                         {subject.ale_id || 'Subject'}
                       </p>
                       <p className="text-xs font-semibold text-foreground truncate" title={subject.name}>
@@ -198,13 +198,13 @@ const AdminDashboardPage = async () => {
                         <span className="block text-xs font-bold text-foreground tabular-nums">
                           {subject.questionCount}
                         </span>
-                        <span className="block text-[9px] text-muted-foreground uppercase font-bold tracking-tighter">Items</span>
+                        <span className="block text-[9px] text-muted-foreground uppercase font-bold">Items</span>
                       </div>
                       <div className="text-right">
                         <span className="block text-xs font-bold text-text-secondary tabular-nums">
                           {subject.articleCount}
                         </span>
-                        <span className="block text-[9px] text-muted-foreground uppercase font-bold tracking-tighter">Wiki</span>
+                        <span className="block text-[9px] text-muted-foreground uppercase font-bold">Wiki</span>
                       </div>
                     </div>
                   </div>

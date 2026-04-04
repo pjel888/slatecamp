@@ -334,12 +334,12 @@ const DesignSystemPage = () => {
       <Section
         eyebrow="FOUNDATIONS"
         title="Typography"
-        subtitle="Inter (body), DM Mono (data/labels), Syne (display headings). Minimum text size: 11px."
+        subtitle="Inter (body), DM Mono (data/labels), Boldonse (display headings). Minimum text size: 11px."
       >
         <Card variant="default" size="md">
           <CardContent className="space-y-3">
-            <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold tracking-tight text-foreground">
-              Display Heading (Syne, 24px extrabold)
+            <p className="font-[family-name:var(--font-display)] text-2xl font-extrabold text-foreground">
+              Display Heading (Boldonse, 24px 400)
             </p>
             <p className="text-xl font-bold text-foreground">
               Heading XL (Inter, 20px bold)

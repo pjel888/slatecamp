@@ -11,11 +11,11 @@ export default function RegisterPage() {
         <div className='text-center'>
           <Link
             href='/'
-            className='text-lg font-semibold tracking-tight text-zinc-900 transition-colors duration-150 hover:opacity-80'
+            className='text-lg font-semibold text-zinc-900 transition-colors duration-150 hover:opacity-80'
           >
             {siteConfig.name}
           </Link>
-          <h1 className='mt-6 text-xl font-semibold leading-tight tracking-tight text-zinc-900'>
+          <h1 className='mt-6 text-xl font-semibold leading-tight text-zinc-900'>
             Continue to see your score
           </h1>
           <p className='mt-2 text-sm leading-relaxed text-zinc-500'>

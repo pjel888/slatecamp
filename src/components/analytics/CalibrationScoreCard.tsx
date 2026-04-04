@@ -83,7 +83,7 @@ export const CalibrationScoreCard = ({ data }: Props) => {
           Calibration Score
         </CardTitle>
         <div className="flex items-baseline gap-2 mt-0.5">
-          <span className="text-xl font-extrabold tracking-tight tabular-nums text-primary">
+          <span className="text-xl font-extrabold tabular-nums text-primary">
             {clampedScore}
           </span>
           <span className="text-xs text-muted-foreground">/100</span>

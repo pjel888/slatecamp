@@ -31,7 +31,7 @@ export const PricingContent = () => {
     <div className="mx-auto max-w-[1200px]">
       <div className="text-center">
         <h1
-          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold tracking-tight text-zinc-900"
+          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-zinc-900"
         >
           Simple, transparent pricing
         </h1>

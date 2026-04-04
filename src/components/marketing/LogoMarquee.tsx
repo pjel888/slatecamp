@@ -1,7 +1,7 @@
 const PARTNERS = [
   // --- Original Suppliers & Firms ---
   { name: 'BOYSEN', className: 'tracking-[0.25em] text-[13px] font-bold' },
-  { name: 'Holcim', className: 'tracking-tight text-[18px] font-semibold' },
+  { name: 'Holcim', className: 'text-[18px] font-semibold' },
   { name: 'NELTEX', className: 'tracking-[0.15em] text-[14px] font-bold' },
   { name: 'AIDEA', className: 'tracking-[0.2em] text-[15px] font-semibold' },
   {
@@ -12,15 +12,15 @@ const PARTNERS = [
   // --- Added Architectural Suppliers ---
   {
     name: 'WILCON DEPOT',
-    className: 'tracking-tighter text-[16px] font-black',
+    className: 'text-[16px] font-black',
   }, // Heavy, thick block letters
   {
     name: 'DAVIES',
-    className: 'tracking-tight text-[17px] font-extrabold',
+    className: 'text-[17px] font-extrabold',
   }, // Bold, imposing sans-serif
   {
     name: 'HardieFlex',
-    className: 'tracking-tighter text-[16px] font-bold italic',
+    className: 'text-[16px] font-bold italic',
   }, // Slanted, tight corporate logo feel
   {
     name: 'PALAFOX',
@@ -34,11 +34,11 @@ const PARTNERS = [
   }, // Classic, traditional serif for UST
   {
     name: 'NATIONAL UNIVERSITY',
-    className: 'tracking-tighter text-[15px] font-black uppercase',
+    className: 'text-[15px] font-black uppercase',
   }, // Athletic, bold block lettering for NU
   {
     name: 'MAPÚA UNIVERSITY',
-    className: 'tracking-tight text-[15px] font-bold uppercase',
+    className: 'text-[15px] font-bold uppercase',
   }, // Strong, technical, engineering-focused weight
   {
     name: 'UP Diliman',

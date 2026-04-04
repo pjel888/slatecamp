@@ -58,7 +58,7 @@ export const StudioHub = ({ userName }: StudioHubProps) => {
     <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto py-6 px-4">
       {/* Header */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-xl font-semibold text-[#1A2332] tracking-tight">
+        <h1 className="text-xl font-semibold text-[#1A2332]">
           Studio Mode
         </h1>
         <p className="text-sm text-[#4A5568]">

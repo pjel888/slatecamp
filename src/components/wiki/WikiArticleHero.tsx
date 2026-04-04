@@ -30,7 +30,7 @@ export const WikiArticleHero = ({
         )}
       </div>
 
-      {/* Title — Syne 800 weight, only element using font-display */}
+      {/* Title — Boldonse 400 weight, only element using font-display */}
       <h1 className={cn(
         "font-[var(--font-display)] font-extrabold text-2xl sm:text-[30px] text-wiki-ink leading-tight dark:text-[#E2E0D8]",
         isMinimal && "text-[8px] sm:text-[8px]"
