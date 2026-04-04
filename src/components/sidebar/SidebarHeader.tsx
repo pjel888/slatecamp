@@ -37,7 +37,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
         expanded && 'ml-2.5',
       )}
     >
-      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp 🇵🇭</span>
+      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp</span>
     </div>
   </div>
 )
