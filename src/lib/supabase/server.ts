@@ -76,30 +76,36 @@ export const getUserIfPresent = cache(async () => {
 
   // Strategy A: Local ID Impersonation (Development Only)
   if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_USER_ID) {
-    const headersList = await headers()
-    const host = headersList.get('host') || ''
-    const isLocal = host.includes('localhost') || host.includes('127.0.0.1')
+    const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(process.env.DEV_FORCE_USER_ID)
+    
+    if (isUuid) {
+      const headersList = await headers()
+      const host = headersList.get('host') || ''
+      const isLocal = host.includes('localhost') || host.includes('127.0.0.1')
 
-    if (isLocal) {
-      // Fetch the real user using the service role key so that metadata (avatar, name) is present
-      const adminClient = createSupabaseClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-      )
-      
-      const { data: adminData } = await adminClient.auth.admin.getUserById(process.env.DEV_FORCE_USER_ID)
-      
-      const userObj = adminData?.user || {
-        id: process.env.DEV_FORCE_USER_ID,
-        aud: 'authenticated',
-        app_metadata: {},
-        user_metadata: {}
-      }
+      if (isLocal) {
+        // Fetch the real user using the service role key so that metadata (avatar, name) is present
+        const adminClient = createSupabaseClient(
+          process.env.NEXT_PUBLIC_SUPABASE_URL!,
+          process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+        )
+        
+        const { data: adminData } = await adminClient.auth.admin.getUserById(process.env.DEV_FORCE_USER_ID)
+        
+        const userObj = adminData?.user || {
+          id: process.env.DEV_FORCE_USER_ID,
+          aud: 'authenticated',
+          app_metadata: {},
+          user_metadata: {}
+        }
 
-      return {
-        data: { user: userObj as any },
-        error: null,
+        return {
+          data: { user: userObj as any },
+          error: null,
+        }
       }
+    } else {
+      console.warn(`DEV_FORCE_USER_ID is set but is not a valid UUID: ${process.env.DEV_FORCE_USER_ID}`)
     }
   }
 

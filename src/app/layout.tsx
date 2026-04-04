@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Atkinson_Hyperlegible, Boldonse, Syne, DM_Mono, Sora } from 'next/font/google'
+import { Atkinson_Hyperlegible, Inter, Syne, DM_Mono, Sora } from 'next/font/google'
 import { siteConfig } from '@/lib/constants/site'
 
 const atkinson = Atkinson_Hyperlegible({
@@ -20,7 +20,7 @@ const sora = Sora({
   variable: '--font-sora',
   display: 'swap',
 })
-const boldonse = Boldonse({
+const boldonse = Inter({
   subsets: ['latin'],
   weight: '400',
   display: 'swap',
