@@ -14,7 +14,6 @@ import {
   CommandItem,
 } from '@/components/ui/command'
 import { Badge } from '@/components/ui/badge'
-import { getAllComponents, DOMAIN_LABELS } from '@/lib/developer/componentRegistry'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -34,10 +33,7 @@ interface RecentPage {
 interface SearchableItem {
   name: string
   description: string
-  domain: string
-  tags: string[]
   path: string
-  type: 'component' | 'page'
   group: string
 }
 
@@ -105,34 +101,13 @@ const useRecentPages = (
   return { getRecent }
 }
 
-/* ------------------------------------------------------------------ */
-/*  Build search items from registry + pages                           */
-/* ------------------------------------------------------------------ */
-
 const buildSearchItems = (pages: CommandPaletteProps['pages']): SearchableItem[] => {
-  const components = getAllComponents()
-
-  const componentItems: SearchableItem[] = components.map((c) => ({
-    name: c.title,
-    description: c.description,
-    domain: c.domain,
-    tags: c.tags ?? [],
-    path: `/developer/design-system/${c.domain}/${c.slug}`,
-    type: 'component' as const,
-    group: DOMAIN_LABELS[c.domain] ?? c.domain,
-  }))
-
-  const pageItems: SearchableItem[] = pages.map((p) => ({
+  return pages.map((p) => ({
     name: p.title,
     description: p.keywords ?? '',
-    domain: p.group.toLowerCase(),
-    tags: p.keywords?.split(' ') ?? [],
     path: p.href,
-    type: 'page' as const,
     group: p.group,
   }))
-
-  return [...componentItems, ...pageItems]
 }
 
 /* ------------------------------------------------------------------ */

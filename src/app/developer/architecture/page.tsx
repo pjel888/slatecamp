@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { CodeBlock } from '@/components/portal/CodeBlock'
+import { CodeBlock } from '@/components/shared/CodeBlock'
 
 export const metadata = {
   title: 'Architecture — SlateCamp Developer Portal',

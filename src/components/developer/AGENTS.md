@@ -34,7 +34,7 @@ None. All developer components are flat in `src/components/developer/`.
 
 3. **Portal shell.** The developer portal uses `PortalLayout` from `@/components/portal` in its layout.tsx. These components render inside that shell.
 
-4. **Portal imports.** ComponentPageLayout imports CopyButton and CodeBlock from `@/components/portal` and PropTable from `@/app/developer/_components/PropTable`. Check these paths before modifying.
+4. **Shared documentation primitives.** ComponentPageLayout imports CopyButton from `@/components/portal`, CodeBlock from `@/components/shared/CodeBlock`, and PropTable from `@/components/developer/PropTable`. Check these paths before modifying.
 
 5. **Status computation.** StatusBanner uses a `computeWorstStatus()` function to derive overall system health from individual service statuses. The priority order is: outage > degraded > operational.
 
@@ -48,9 +48,9 @@ None. All developer components are flat in `src/components/developer/`.
 |--------|---------|
 | `@/types/developer` | PropsTableEntry, ServiceStatus types |
 | `@/lib/developer/componentRegistry` | Component metadata and domain labels |
-| `@/components/portal` | CopyButton, CodeBlock shared portal components |
-| `@/app/developer/_components/PropTable` | Props table renderer |
-| `@/app/developer/_components/CodeBlock` | Code snippet renderer |
+| `@/components/portal` | CopyButton for import-path actions |
+| `@/components/shared/CodeBlock` | Shared code snippet renderer |
+| `@/components/developer/PropTable` | Props table renderer |
 | `@/components/ui/badge` | Badge for status and domain indicators |
 | `@/lib/utils` | cn() for class merging |
 

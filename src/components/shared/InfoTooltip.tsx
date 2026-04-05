@@ -1,4 +1,4 @@
-import { StandardInfoPopover } from "./StandardInfoPopover";
+import { Info } from '@phosphor-icons/react'
 
 interface InfoTooltipProps {
   /** Tooltip content (plain text or JSX). Uses same card UI as SRS/Quiz mode info. */
@@ -25,12 +25,8 @@ export function InfoTooltip({
   className,
 }: InfoTooltipProps) {
   return (
-    <StandardInfoPopover
-      content={content}
-      title={title}
-      side={side}
-      align={align}
-      className={className}
-    />
+    <span className={className} title={title ? title : "Info"}>
+      <Info size={16} />
+    </span>
   );
 }

@@ -54,9 +54,19 @@ interface RingProps {
   showPercentSign: boolean
   animate: boolean
   colors: ReturnType<typeof getScoreColor>
+  trackClassName?: string
+  valueClassName?: string
 }
 
-const Ring = ({ value, size, showPercentSign, animate, colors }: RingProps) => {
+const Ring = ({
+  value,
+  size,
+  showPercentSign,
+  animate,
+  colors,
+  trackClassName,
+  valueClassName,
+}: RingProps) => {
   const [mounted, setMounted] = React.useState(!animate)
   const radius = 16
   const circumference = 2 * Math.PI * radius
@@ -81,7 +91,7 @@ const Ring = ({ value, size, showPercentSign, animate, colors }: RingProps) => {
           cy="18"
           r={radius}
           fill="none"
-          className="stroke-muted"
+          className={cn('stroke-muted', trackClassName)}
           strokeWidth="3.5"
         />
         {/* Foreground ring */}
@@ -106,7 +116,8 @@ const Ring = ({ value, size, showPercentSign, animate, colors }: RingProps) => {
         className={cn(
           'absolute inset-0 flex items-center justify-center font-mono tabular-nums font-semibold',
           fontSizeClasses[size],
-          colors.text
+          colors.text,
+          valueClassName
         )}
       >
         {value}
@@ -154,14 +165,16 @@ interface PillProps {
   value: number
   showPercentSign: boolean
   colors: ReturnType<typeof getScoreColor>
+  valueClassName?: string
 }
 
-const Pill = ({ value, showPercentSign, colors }: PillProps) => (
+const Pill = ({ value, showPercentSign, colors, valueClassName }: PillProps) => (
   <span
     data-slot="score-pill"
     className={cn(
       'inline-flex items-center px-2 py-0.5 rounded-full font-mono text-xs tabular-nums font-medium',
-      colors.text
+      colors.text,
+      valueClassName
     )}
   >
     {value}
@@ -175,15 +188,23 @@ interface NumberProps {
   size: 'sm' | 'md' | 'lg' | 'xl'
   showPercentSign: boolean
   colors: ReturnType<typeof getScoreColor>
+  valueClassName?: string
 }
 
-const NumberDisplay = ({ value, size, showPercentSign, colors }: NumberProps) => (
+const NumberDisplay = ({
+  value,
+  size,
+  showPercentSign,
+  colors,
+  valueClassName,
+}: NumberProps) => (
   <span
     data-slot="score-number"
     className={cn(
       'font-mono tabular-nums font-bold',
       fontSizeClasses[size],
-      colors.text
+      colors.text,
+      valueClassName
     )}
   >
     {value}
@@ -199,6 +220,8 @@ interface ScoreDisplayProps {
   label?: string // "Readiness Score", "Mastery", etc.
   showPercentSign?: boolean // default true
   animate?: boolean // default true
+  ringTrackClassName?: string
+  valueClassName?: string
   className?: string
 }
 
@@ -209,6 +232,8 @@ const ScoreDisplay = ({
   label,
   showPercentSign = true,
   animate = true,
+  ringTrackClassName,
+  valueClassName,
   className,
 }: ScoreDisplayProps) => {
   const clamped = Math.max(0, Math.min(100, Math.round(value)))
@@ -230,13 +255,20 @@ const ScoreDisplay = ({
           showPercentSign={showPercentSign}
           animate={animate}
           colors={colors}
+          trackClassName={ringTrackClassName}
+          valueClassName={valueClassName}
         />
       )}
       {variant === 'bar' && (
         <Bar value={clamped} size={size} animate={animate} colors={colors} />
       )}
       {variant === 'pill' && (
-        <Pill value={clamped} showPercentSign={showPercentSign} colors={colors} />
+        <Pill
+          value={clamped}
+          showPercentSign={showPercentSign}
+          colors={colors}
+          valueClassName={valueClassName}
+        />
       )}
       {variant === 'number' && (
         <NumberDisplay
@@ -244,6 +276,7 @@ const ScoreDisplay = ({
           size={size}
           showPercentSign={showPercentSign}
           colors={colors}
+          valueClassName={valueClassName}
         />
       )}
       {label && (

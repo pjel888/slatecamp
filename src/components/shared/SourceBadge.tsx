@@ -1,7 +1,10 @@
 'use client'
 
+import * as React from 'react'
 import Link from 'next/link'
 import { ArrowSquareOut } from '@phosphor-icons/react'
+import { Badge } from '@/components/ui/badge'
+import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------
 // Parses [Source: wiki_slug] tokens from AI text and renders clickable badges
@@ -16,23 +19,26 @@ interface SourceBadgeProps {
 export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
   const label = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 
+  const badge = (
+    <Badge
+      variant="primary"
+      size="xs"
+      shape="pill"
+      className={cn('font-medium normal-case tracking-normal', className)}
+      icon={<ArrowSquareOut size={10} weight="bold" aria-hidden="true" />}
+    >
+      {label}
+    </Badge>
+  )
+
   if (onClick) {
     return (
       <button
         type="button"
         onClick={() => onClick(slug)}
-        className={[
-          'inline-flex items-center gap-1 px-2 py-0.5 rounded-full',
-          'bg-primary-50 text-primary text-[11px] font-medium leading-tight',
-          'hover:bg-primary/15 transition-colors duration-150 ease-out',
-          'no-underline text-left cursor-pointer',
-          className,
-        ]
-          .filter(Boolean)
-          .join(' ')}
+        className="transition-opacity hover:opacity-80 no-underline text-left cursor-pointer"
       >
-        <ArrowSquareOut size={10} weight="bold" aria-hidden="true" />
-        {label}
+        {badge}
       </button>
     )
   }
@@ -40,18 +46,9 @@ export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
   return (
     <Link
       href={`/dashboard/wiki/${slug}`}
-      className={[
-        'inline-flex items-center gap-1 px-2 py-0.5 rounded-full',
-        'bg-primary-50 text-primary text-[11px] font-medium leading-tight',
-        'hover:bg-primary/15 transition-colors duration-150 ease-out',
-        'no-underline',
-        className,
-      ]
-        .filter(Boolean)
-        .join(' ')}
+      className="transition-opacity hover:opacity-80 no-underline"
     >
-      <ArrowSquareOut size={10} weight="bold" aria-hidden="true" />
-      {label}
+      {badge}
     </Link>
   )
 }

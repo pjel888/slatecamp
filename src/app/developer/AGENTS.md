@@ -21,7 +21,7 @@ Internal Developer Portal for the SlateCamp engineering team. Provides documenta
 
 | Directory | Purpose |
 |-----------|---------|
-| `_components/` | 11 shared components: CodeBlock, ComponentShowcase (84K), CopyButton, DevBadge, DevPortalSearch, DevPortalShell, DevPortalSidebar, EndpointCard, PropTable, TableOfContents |
+| `_components/` | 10 shared components: ComponentShowcase (84K), CopyButton, DevBadge, DevPortalSearch, DevPortalShell, DevPortalSidebar, EndpointCard, PropTable, TableOfContents |
 | `api-reference/` | API reference page -- documents all API endpoints with request/response schemas |
 | `architecture/` | Architecture overview page -- system diagrams, data flow, component relationships |
 | `components/` | Component documentation page (49K) -- full inventory of all platform components |

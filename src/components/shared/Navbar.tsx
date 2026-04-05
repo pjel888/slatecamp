@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
+import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
 import {
   Sheet,
   SheetContent,

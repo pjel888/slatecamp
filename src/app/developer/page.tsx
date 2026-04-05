@@ -2,9 +2,10 @@ import { Card } from '@/components/ui/card'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import { Database, Flask, Palette, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
+import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
-import { getAllComponents } from '@/lib/developer/componentRegistry'
+
+import { createClient } from '@/lib/supabase/server'
 
 export const metadata = {
   title: 'Developer Portal — SlateCamp',
@@ -13,11 +14,11 @@ export const metadata = {
 
 const sectionCards = [
   {
-    title: 'Design System',
-    description: 'Domain-organized component catalog with live previews, props tables, and copyable code.',
-    icon: Palette,
-    href: '/developer/design-system',
-    badge: `${getAllComponents().length} Components`,
+    title: 'API Reference',
+    description: 'Server actions, internal endpoints, payload contracts, and integration notes.',
+    icon: BookOpen,
+    href: '/developer/api-reference',
+    badge: 'Reference',
     badgeVariant: 'default' as const,
   },
   {
@@ -52,15 +53,6 @@ const quickActions = [
   { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: Flask },
 ]
 
-const stats = [
-  { eyebrow: 'Tables', value: 50 },
-  { eyebrow: 'API Routes', value: 11 },
-  { eyebrow: 'Actions', value: '50+' },
-  { eyebrow: 'Components', value: 247 },
-  { eyebrow: 'RLS Policies', value: 89 },
-  { eyebrow: 'LOC', value: '26K' },
-]
-
 const techStack = [
   { layer: 'Framework', pkg: 'next', version: '16.1.6' },
   { layer: 'Runtime', pkg: 'react / react-dom', version: '19.2.4' },
@@ -88,7 +80,30 @@ const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name:
   )
 }
 
-const DeveloperPortalPage = () => {
+const DeveloperPortalPage = async () => {
+  const supabase = await createClient()
+
+  const [
+    { count: usersCount },
+    { count: articlesCount },
+    { count: questionsCount },
+    { count: sessionsCount },
+  ] = await Promise.all([
+    supabase.from('profiles').select('*', { count: 'exact', head: true }),
+    supabase.from('wiki_articles').select('*', { count: 'exact', head: true }),
+    supabase.from('questions').select('*', { count: 'exact', head: true }),
+    supabase.from('quiz_sessions').select('*', { count: 'exact', head: true }),
+  ])
+
+  const stats = [
+    { eyebrow: 'Users', value: usersCount ?? 0 },
+    { eyebrow: 'Articles', value: articlesCount ?? 0 },
+    { eyebrow: 'Questions', value: questionsCount ?? 0 },
+    { eyebrow: 'Sessions', value: sessionsCount ?? 0 },
+    { eyebrow: 'Stories', value: '71+' },
+    { eyebrow: 'LOC', value: '26K' },
+  ]
+
   return (
     <div className="max-w-5xl space-y-8">
       {/* Hero */}

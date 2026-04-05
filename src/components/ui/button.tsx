@@ -7,6 +7,7 @@ import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
+import { Spinner } from '@/components/ui/spinner'
 
 const PENDING_CLASSES =
   'cursor-not-allowed opacity-70 transition-[opacity] duration-150 ease-in-out'
@@ -58,12 +59,12 @@ const buttonVariants = cva(
         default: "h-9 gap-1.5 px-4 py-2 text-sm [&_svg:not([class*='size-'])]:size-4",
         lg: "h-10 gap-1.5 px-6 py-2.5 text-sm [&_svg:not([class*='size-'])]:size-4",
         xl: "h-12 gap-2 px-8 py-3 text-base [&_svg:not([class*='size-'])]:size-5",
-        icon: 'size-8',
+        icon: "size-8 [&_svg:not([class*='size-'])]:size-4",
         'icon-xs':
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-sm [&_svg:not([class*='size-'])]:size-3",
         'icon-sm':
-          'size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-sm',
-        'icon-lg': 'size-9',
+          "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-sm [&_svg:not([class*='size-'])]:size-3.5",
+        'icon-lg': "size-9 [&_svg:not([class*='size-'])]:size-4",
       },
     },
     defaultVariants: {
@@ -71,34 +72,6 @@ const buttonVariants = cva(
       size: 'default',
     },
   },
-)
-
-/* ------------------------------------------------------------------ */
-/* Spinner (inline SVG, used when loading=true)                       */
-/* ------------------------------------------------------------------ */
-
-const Spinner = ({ className }: { className?: string }) => (
-  <svg
-    className={cn('animate-spin', className)}
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <circle
-      className="opacity-25"
-      cx="12"
-      cy="12"
-      r="10"
-      stroke="currentColor"
-      strokeWidth="4"
-    />
-    <path
-      className="opacity-75"
-      fill="currentColor"
-      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-    />
-  </svg>
 )
 
 /* ------------------------------------------------------------------ */

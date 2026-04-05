@@ -5,8 +5,8 @@ import { StatusKPICard } from '@/components/developer/StatusKPICard'
 import { UptimeBar } from '@/components/developer/UptimeBar'
 import { StatusBadge } from '@/components/developer/StatusBadge'
 import { Card } from '@/components/ui/card'
-import { getDatabaseStatus, getInfrastructureStatus } from '@/lib/mocks/status'
 import type { ServiceStatus } from '@/types/developer'
+import { createClient } from '@/lib/supabase/server'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -39,31 +39,33 @@ const services: Array<{ key: string; label: string; href: string }> = [
 /* ------------------------------------------------------------------ */
 
 const StatusOverviewPage = async () => {
-  const [db, infra] = await Promise.all([getDatabaseStatus(), getInfrastructureStatus()])
+  // Fetch real status from Supabase
+  const supabaseStatusRes = await fetch('https://status.supabase.com/api/v2/summary.json', { next: { revalidate: 60 } }).catch(() => null)
+  const supabaseStatus = supabaseStatusRes?.ok ? await supabaseStatusRes.json() : null
 
-  /* Compute service statuses */
-  const connectionRatio = db.connections.active / db.connections.max
-  const dbStatus: ServiceStatus = connectionRatio > 0.8 ? 'degraded' : 'operational'
+  const getComponentStatus = (name: string): ServiceStatus => {
+    const comp = supabaseStatus?.components?.find((c: any) => c.name === name)
+    if (!comp) return 'operational'
+    if (comp.status === 'operational') return 'operational'
+    if (comp.status === 'major_outage' || comp.status === 'partial_outage') return 'outage'
+    return 'degraded'
+  }
 
-  const operationalEdge = infra.edgeFunctions.filter((f) => f.status === 'operational').length
-  const totalEdge = infra.edgeFunctions.length
-  const edgeStatus: ServiceStatus =
-    infra.edgeFunctions.some((f) => f.status === 'outage')
-      ? 'outage'
-      : infra.edgeFunctions.some((f) => f.status === 'degraded')
-        ? 'degraded'
-        : 'operational'
+  const dbStatus = getComponentStatus('Database')
+  const apiStatus = getComponentStatus('API Gateway')
+  const authStatus = getComponentStatus('Auth')
+  const edgeStatus = getComponentStatus('Edge Functions')
 
-  const apiStatus: ServiceStatus =
-    infra.apiLatency.p50 > 200 ? 'degraded' : 'operational'
-
-  const deployStatus: ServiceStatus =
-    infra.deployment.status === 'failed' ? 'outage' : 'operational'
+  // Ping API for real latency
+  const startPing = performance.now()
+  const supabase = await createClient()
+  await supabase.from('profiles').select('id').limit(1).catch(() => null)
+  const latency = Math.round(performance.now() - startPing)
 
   const bannerStatuses = [
     { service: 'Database', status: dbStatus },
     { service: 'API', status: apiStatus },
-    { service: 'Auth', status: 'operational' as ServiceStatus },
+    { service: 'Auth', status: authStatus },
     { service: 'Edge Functions', status: edgeStatus },
   ]
 
@@ -98,25 +100,25 @@ const StatusOverviewPage = async () => {
       {/* KPI Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatusKPICard
-          label="Connections"
-          value={`${db.connections.active}/${db.connections.max}`}
+          label="Database Status"
+          value={dbStatus === 'operational' ? 'Healthy' : 'Issues'}
           status={dbStatus}
         />
         <StatusKPICard
-          label="API p50 Latency"
-          value={infra.apiLatency.p50}
+          label="API Ping Latency"
+          value={latency}
           unit="ms"
-          status={apiStatus}
+          status={latency > 500 ? 'degraded' : 'operational'}
         />
         <StatusKPICard
           label="Edge Functions"
-          value={`${operationalEdge}/${totalEdge}`}
+          value={edgeStatus === 'operational' ? 'Healthy' : 'Issues'}
           status={edgeStatus}
         />
         <StatusKPICard
-          label="Last Deploy"
-          value={infra.deployment.status === 'success' ? 'Success' : 'Failed'}
-          status={deployStatus}
+          label="Global API Gateway"
+          value={apiStatus === 'operational' ? 'Healthy' : 'Issues'}
+          status={apiStatus}
         />
       </div>
 

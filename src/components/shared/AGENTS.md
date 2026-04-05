@@ -41,6 +41,10 @@ Cross-cutting reusable components used throughout the app: theme provider, navig
 | `floating-panel.tsx` | Floating panel for contextual content. `'use client'` |
 | `question-card.tsx` | Question display card for lists and previews. |
 | `question-dot-navigator.tsx` | Dot-based question navigator for quiz progress. `'use client'` |
+| `difficulty-bar.tsx` | Visual difficulty indicator bar (1-5 scale). |
+| `event-badge.tsx` | Event/activity type badge. |
+| `mode-button.tsx` | Test mode selection button. |
+| `student-view-watermark.tsx` | Watermark overlay for student preview mode. |
 
 ## Subdirectories
 

@@ -43,14 +43,9 @@ shadcn/ui primitive components with Campfire design system tokens applied via Ta
 | `toaster.tsx` | Toast container: renders all active toasts. |
 | `accordion.tsx` | Accordion component. |
 | `close-button.tsx` | Reusable close button with X icon. |
-| `difficulty-bar.tsx` | Visual difficulty indicator bar (1-5 scale). |
-| `event-badge.tsx` | Event/activity type badge. |
 | `eyebrow.tsx` | Eyebrow text component (small uppercase label above titles). |
 | `form-field.tsx` | Form field wrapper with label, input, error message. |
-| `mode-button.tsx` | Test mode selection button. |
-| `student-view-watermark.tsx` | Watermark overlay for student preview mode. |
 | `toolbar.tsx` | Generic toolbar component. |
-| `SlateCampLogo.tsx` | SlateCamp logo SVG. Sized via className. |
 
 ## Subdirectories
 

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
-import { CodeBlock } from './CodeBlock'
+import { CodeBlock } from '@/components/shared/CodeBlock'
 
 const methodStyles: Record<string, { variant: 'success' | 'primary' | 'warning' | 'danger' | 'purple'; label: string }> = {
   GET: { variant: 'success', label: 'GET' },

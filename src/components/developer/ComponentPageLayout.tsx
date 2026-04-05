@@ -5,8 +5,8 @@ import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
 import { CopyButton } from '@/components/portal'
 import { PreviewArea } from './PreviewArea'
-import { CodeBlock } from '@/app/developer/_components/CodeBlock'
-import { PropTable } from '@/app/developer/_components/PropTable'
+import { CodeBlock } from '@/components/shared/CodeBlock'
+import { PropTable } from '@/components/developer/PropTable'
 import type { PropsTableEntry } from '@/types/developer'
 
 /* ------------------------------------------------------------------ */
