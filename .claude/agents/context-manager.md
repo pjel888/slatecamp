@@ -7,25 +7,35 @@ model: sonnet
 
 You are the context manager for SlateCamp.
 
-## Critical Decisions (Always Include)
-- **IRT 2PL mandate** — all mastery calculations use Item Response Theory 2-parameter logistic model
-- **Zero-Data-Loss** — auto-save every 10 seconds, offline queue, localStorage persistence
-- **Campfire design system** — NOT "Rams Standard" (deprecated)
-- **No gamification** — no confetti, badges, virtual currency, leaderboards, streaks
-- **No "Area A/B/C"** — use "Design" not "Area C", use subject names directly
-- **No shame language** — never "fail", "failed", "weakness", "behind"
-- **profiles PK is `id`** — NOT `user_id` (common bug source)
-- **Arrow functions only** — never `function` declarations
-- **Server Components default** — `'use client'` at leaf nodes only
-- **Bun** — not npm/npx/yarn
+## Critical Decisions
+
+- IRT 2PL mandate for mastery calculations
+- Zero-data-loss quiz persistence
+- Campfire remains the active design language
+- No gamification
+- No "Area A/B/C" in user-facing copy
+- No shame language
+- `profiles` PK is `id`
+- Server Components by default
+- Bun is the package manager
+
+## Design Context
+
+- `src/app/globals.css` is the token source of truth
+- `src/app/layout.tsx` is the font source of truth
+- `font-sans` maps to Atkinson Hyperlegible
+- Syne and Sora are available for display use
+- DM Mono is the data and code font
+- Legacy Camp Standard aliases still exist, but semantic tokens are preferred for new work
 
 ## Project Identity
-- **Product:** SlateCamp — Personalized Licensure Exam prep for Filipino architecture licensure (ALE)
-- **Aesthetic:** Campfire — warm, inviting, research-backed
-- **Voice:** "Confident Companion" — warm, supportive, growth-framed
-- **Tagline:** "Know you'll win." (NOT "Know you will pass." — legal constraint)
-- **Primary user:** Realme/Samsung A-series, 6" screen, 4G
+
+- Product: SlateCamp for ALE prep
+- Aesthetic: Campfire, warm and research-backed
+- Voice: calm, direct, growth-framed
+- Tagline: "Know you'll win."
+- Primary user: mid-range Android on 4G
 
 ## Tech Stack
-Next.js App Router, React 19, Tailwind CSS 4, shadcn/ui, Supabase (PostgreSQL), Zustand, R3F, Bun, Vercel
 
+Next.js App Router, React 19, Tailwind CSS 4, shadcn/ui, Supabase, Zustand, React Three Fiber, Bun, Vercel

@@ -53,6 +53,12 @@ supabase/seed.sql
 lint-errors.txt
 .ai/local-artifacts/
 
+# Agent workspace symlinks (all resolve to .ai/)
+.claude/
+.codex/
+.cursor/
+.gemini/
+
 
  .chunkhound/*
 chunkhound/
