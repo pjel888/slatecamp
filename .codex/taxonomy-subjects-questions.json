@@ -1,0 +1,171 @@
+{
+  "generatedAt": "2026-03-26",
+  "summary": {
+    "totalSubjects": 9,
+    "totalSubtopics": 105,
+    "totalQuestions": 4847,
+    "totalProjectedQuestions": 1372,
+    "subtopicsWithoutQuestions": 24,
+    "note": "subtopicsWithoutQuestions excludes 8 Laws subtopics (projected only) and counts Subject Overview/Mastery meta-nodes (18) plus content gaps (6). History has duplicate subtopic pairs from taxonomy restructuring."
+  },
+  "subjects": [
+    {
+      "name": "Architectural Design and Site Planning",
+      "totalQuestions": 440,
+      "subtopics": [
+        { "name": "Accessibility Standards (BP 344 / RA 9442)", "questionCount": 0 },
+        { "name": "Anthropometrics & Human Dimensions", "questionCount": 0 },
+        { "name": "Commercial, Business & Mixed-Use Design", "questionCount": 50 },
+        { "name": "Design Process & Methodology", "questionCount": 70 },
+        { "name": "Environmental Design", "questionCount": 40 },
+        { "name": "Fire Safety, Egress, and Life Safety Systems", "questionCount": 30 },
+        { "name": "Graphic Presentation and Architectural Drawings", "questionCount": 50 },
+        { "name": "Industrial, Transportation & Facilities Design", "questionCount": 10 },
+        { "name": "Institutional & Public Design", "questionCount": 90 },
+        { "name": "National Building Code Application (PD 1096)", "questionCount": 0 },
+        { "name": "Parking Design and Vehicular Circulation", "questionCount": 30 },
+        { "name": "Residential Design", "questionCount": 20 },
+        { "name": "Site Planning & Analysis", "questionCount": 50 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 }
+      ]
+    },
+    {
+      "name": "Building Materials and Construction Methods",
+      "totalQuestions": 480,
+      "subtopics": [
+        { "name": "Architectural Specifications & Documentation", "questionCount": 40 },
+        { "name": "Construction Systems & Methods", "questionCount": 50 },
+        { "name": "Estimating, Quantities & Material Computation", "questionCount": 80 },
+        { "name": "Hardware, Joints & Fasteners", "questionCount": 50 },
+        { "name": "Interior Finishes", "questionCount": 60 },
+        { "name": "Masonry and Concrete", "questionCount": 40 },
+        { "name": "Metals, Glass & Glazing", "questionCount": 30 },
+        { "name": "Roofing, Waterproofing & Insulation", "questionCount": 50 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 },
+        { "name": "Sustainable & Green Materials", "questionCount": 50 },
+        { "name": "Wood & Timber Products", "questionCount": 30 }
+      ]
+    },
+    {
+      "name": "Building Utilities / MEPF",
+      "totalQuestions": 601,
+      "subtopics": [
+        { "name": "Acoustics and Illumination", "questionCount": 75 },
+        { "name": "Building Utilities Integration & Design Standards", "questionCount": 60 },
+        { "name": "Communication Systems", "questionCount": 45 },
+        { "name": "Disaster Prevention, Protection & Security Systems", "questionCount": 86 },
+        { "name": "Electrical and Power Systems", "questionCount": 105 },
+        { "name": "High-Tech and Intelligent Building Systems", "questionCount": 45 },
+        { "name": "Mechanical Systems", "questionCount": 105 },
+        { "name": "Sanitary and Plumbing Systems", "questionCount": 80 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 }
+      ]
+    },
+    {
+      "name": "History of Architecture",
+      "totalQuestions": 609,
+      "subtopics": [
+        { "name": "African Architecture", "questionCount": 21 },
+        { "name": "Architecture of Africa, Australia & the Americas", "questionCount": 0, "note": "New subtopic — umbrella node from taxonomy restructuring" },
+        { "name": "Asian & Pacific Architecture", "questionCount": 66, "note": "Duplicate node exists with 0 questions" },
+        { "name": "Australian and New Zealand Architecture", "questionCount": 33 },
+        { "name": "Global Modernism & Contemporary", "questionCount": 0, "note": "New subtopic — umbrella node from taxonomy restructuring" },
+        { "name": "Islamic Architecture", "questionCount": 67 },
+        { "name": "Latin American Architecture", "questionCount": 21 },
+        { "name": "Medieval to Baroque", "questionCount": 67 },
+        { "name": "Modern & Contemporary Architecture", "questionCount": 164 },
+        { "name": "Philippine Architecture", "questionCount": 0, "note": "Duplicate node exists — both have 0 questions" },
+        { "name": "Pre-Columbian and Indigenous American Architecture", "questionCount": 36 },
+        { "name": "Pre-Historic & Ancient", "questionCount": 78 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 },
+        { "name": "United States Architecture", "questionCount": 56 }
+      ]
+    },
+    {
+      "name": "Philippine Laws & Codes for Architectural Practice",
+      "note": "Cross-reference subject — questions projected from other subjects via taxonomy_cross_references",
+      "totalQuestions": 1372,
+      "subtopics": [
+        { "name": "Allied Professions & Regulatory Framework", "questionCount": 340, "projectedFrom": ["PPJ > Practice Forms, CPD, Government & Emerging Requirements", "PPJ > Professional Ethics & Code of Conduct"] },
+        { "name": "Building Standards & Development Controls (PD 1096 NBCP)", "questionCount": 30, "projectedFrom": ["DSGN > National Building Code Application (PD 1096)", "DSGN > Fire Safety, Egress, and Life Safety Systems"] },
+        { "name": "Civil/Labor/Administrative Laws & Contracts", "questionCount": 220, "projectedFrom": ["PPJ > Contracts, Bonds & Construction Administration"] },
+        { "name": "Environmental & Disaster Management Laws", "questionCount": 156, "projectedFrom": ["MEPF > Disaster Prevention, Protection & Security Systems", "PLAN > Planning Agencies, Governance & Philippine Planning Law"] },
+        { "name": "Heritage, Utilities & Cross-Border Professional Practice", "questionCount": 270, "projectedFrom": ["PPJ > Practice Forms, CPD, Government & Emerging Requirements", "MEPF > Building Utilities Integration & Design Standards"] },
+        { "name": "Housing & Land Development Laws (BP 220, PD 957)", "questionCount": 70, "projectedFrom": ["PLAN > Housing and Human Settlements Planning"] },
+        { "name": "Professional Regulation Laws (RA 9266 & Related)", "questionCount": 170, "projectedFrom": ["PPJ > RA 9266 — The Architecture Act, Registration & Liability"] },
+        { "name": "Safety, Fire, Environmental & Disaster Laws (RA 9514, BP 344, Environmental Laws)", "questionCount": 116, "projectedFrom": ["DSGN > Fire Safety, Egress, and Life Safety Systems", "MEPF > Disaster Prevention, Protection & Security Systems", "DSGN > Accessibility Standards (BP 344 / RA 9442)"] }
+      ]
+    },
+    {
+      "name": "Planning, Housing & Urban Design",
+      "totalQuestions": 420,
+      "subtopics": [
+        { "name": "General Principles and History of Planning", "questionCount": 40 },
+        { "name": "Housing and Human Settlements Planning", "questionCount": 70 },
+        { "name": "Innovation Layer — 21st Century Planning", "questionCount": 50 },
+        { "name": "Landscape Architecture and Ecology", "questionCount": 60 },
+        { "name": "Planning Agencies, Governance & Philippine Planning Law", "questionCount": 70 },
+        { "name": "Site Planning and Environmental Analysis", "questionCount": 70 },
+        { "name": "Site Planning Considerations and Environmental Factors", "questionCount": 0, "note": "New subtopic — may overlap with Site Planning and Environmental Analysis" },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 },
+        { "name": "Urban and Regional Planning", "questionCount": 60 }
+      ]
+    },
+    {
+      "name": "Professional Practice & Jurisprudence",
+      "totalQuestions": 1120,
+      "subtopics": [
+        { "name": "Architectural Services & Project Delivery", "questionCount": 260 },
+        { "name": "Compensation, Fees & Payment Methods", "questionCount": 130 },
+        { "name": "Contracts, Bonds & Construction Administration", "questionCount": 220 },
+        { "name": "Practice Forms, CPD, Government & Emerging Requirements", "questionCount": 210 },
+        { "name": "Professional Ethics & Code of Conduct", "questionCount": 130 },
+        { "name": "RA 9266 — The Architecture Act, Registration & Liability", "questionCount": 170 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 }
+      ]
+    },
+    {
+      "name": "Structural Conceptualization",
+      "totalQuestions": 460,
+      "subtopics": [
+        { "name": "Composite Structures and Special Structural Systems", "questionCount": 20 },
+        { "name": "Deep Foundations & Geotechnical Fundamentals", "questionCount": 30 },
+        { "name": "Foundation Systems and Site Conditions", "questionCount": 60 },
+        { "name": "Lateral Force Systems and Seismic Design", "questionCount": 30 },
+        { "name": "Loads and Load Combinations", "questionCount": 50 },
+        { "name": "Masonry Systems & Design", "questionCount": 20 },
+        { "name": "Mechanics of Materials and Statics", "questionCount": 60 },
+        { "name": "Reading Structural Drawings and NSCP Application", "questionCount": 30 },
+        { "name": "Reinforced Concrete Conceptualization", "questionCount": 60 },
+        { "name": "Steel Conceptualization", "questionCount": 40 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 },
+        { "name": "Timber Conceptualization", "questionCount": 50 },
+        { "name": "Wind Load Design & Classification", "questionCount": 10 }
+      ]
+    },
+    {
+      "name": "Theory of Architecture",
+      "totalQuestions": 717,
+      "subtopics": [
+        { "name": "Architectural Movements and Contemporary Discourse", "questionCount": 80 },
+        { "name": "Architectural Philosophies and Theories of the Masters", "questionCount": 92 },
+        { "name": "Design Perception — Anthropometrics, Proxemics & Kinesthetics", "questionCount": 117 },
+        { "name": "Elements of Architecture and Principles of Design", "questionCount": 122 },
+        { "name": "Innovation — Emerging Theories and the Filipino Architect's Identity", "questionCount": 40 },
+        { "name": "Pritzker Architecture Prize", "questionCount": 10 },
+        { "name": "Space Planning Theory and Architectural Programming", "questionCount": 49 },
+        { "name": "Subject Mastery & Connections", "questionCount": 0 },
+        { "name": "Subject Overview & Strategy", "questionCount": 0 },
+        { "name": "The Nature of Architecture", "questionCount": 106 },
+        { "name": "Tropical Architecture and Climate-Responsive Design", "questionCount": 101 }
+      ]
+    }
+  ]
+}
