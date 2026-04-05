@@ -4,16 +4,16 @@
 
 ## Purpose
 
-SlateCamp is a high-performance, discipline-agnostic study engine for professional licensure exams. Built with Next.js 16.1.6 (App Router), React 19, Supabase (PostgreSQL), and Three.js for 3D spatial learning. The "Campfire" design system provides a warm, research-backed aesthetic. All mastery calculations use the IRT 2-parameter logistic model. The platform serves 4 portals: Dashboard (student-facing), Admin (content management), CEO (business analytics), and Developer (internal docs and tooling).
+SlateCamp is a high-performance ALE prep platform for the Philippine Architecture Licensure Exam. Built with Next.js 16.1.6 (App Router), React 19, Supabase (PostgreSQL), and Three.js for 3D spatial learning. The "Campfire" design system provides a warm, research-backed aesthetic. All mastery calculations use the IRT 2-parameter logistic model. The platform serves 4 portals: Dashboard (student-facing), Admin (content management), CEO (business analytics), and Developer (internal docs and tooling).
 
-For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`.
+For a comprehensive architecture overview, see `.ai/GLOBAL-CODEBASE-AUDIT-REPORT.md`.
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
 | `CLAUDE.md` | Core system prompt -- design system tokens, voice guide, absolute constraints, tech stack |
-| `GLOBAL-CODEBASE-AUDIT-REPORT.md` | Full codebase audit report with architecture, route map, component inventory |
+| `.ai/GLOBAL-CODEBASE-AUDIT-REPORT.md` | Full codebase audit report with architecture, route map, component inventory |
 | `DATABASE_SCHEMA.sql` | Authoritative relational schema -- consult before any DB work |
 | `package.json` | Dependencies and scripts (bun as package manager) |
 | `next.config.ts` | Next.js config -- Turbopack, server actions (4MB limit), image remotes |
@@ -25,7 +25,7 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 | `eslint.config.mjs` | ESLint flat config |
 | `globals.css` | Tailwind v4 CSS-first theme with Campfire design tokens |
 | `bun.lock` | Bun lockfile -- never edit manually |
-| `UI-CONSOLIDATION-IMPLEMENTATION-PLAN.md` | Active UI consolidation plan |
+| `docs/architecture/SLATECAMP-ARCHITECTURE.md` | Architecture snapshot and supporting technical reference |
 
 ## Subdirectories
 
@@ -36,7 +36,8 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 | `scripts/` | Dev tooling -- custom dev server, DB inspection, seeding (see `scripts/AGENTS.md`) |
 | `public/` | Static assets -- icons, OG images, widget modules (see `public/AGENTS.md`) |
 | `prompts/` | Archived PRDs, specs, and implementation guides (reference only) |
-| `docs/` | Planning documents and specs |
+| `docs/` | Canonical human-readable documentation, architecture notes, and content-support assets |
+| `.ai/` | Agent-only docs, generated audits, archives, worktrees, and workflow residue |
 | `.claude/` | Agent definitions, skills, and documentation for AI-assisted development |
 
 ## Codebase Stats

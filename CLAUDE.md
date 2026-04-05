@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Code and executable config are the source of truth in this repository. If `docs/`, `.sisyphus/`, README, or AGENTS files disagree with the live code, follow the code.
+Code and executable config are the source of truth in this repository. If `docs/`, README, or AGENTS files disagree with the live code, follow the code.
 
 This file reflects the repository state validated on 2026-04-05.
 

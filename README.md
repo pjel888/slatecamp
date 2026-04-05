@@ -82,7 +82,7 @@ src/
 scripts/        Local tooling and data scripts
 supabase/       Migrations and SQL assets
 docs/           Planning and content-support docs
-.sisyphus/      Internal audit and plan artifacts
+.ai/            Agent-only context, archives, generated audits, and workflow residue
 .storybook/     Storybook configuration
 ```
 
@@ -109,4 +109,5 @@ docs/           Planning and content-support docs
 
 - Read `CLAUDE.md` for the current code-backed repo guidance
 - Read `AGENTS.md` and the nearest nested `AGENTS.md` before making scoped changes
+- Use `docs/` for canonical human-readable documentation and `.ai/` for agent/archive material
 - Treat code and executable config as the source of truth when docs drift
