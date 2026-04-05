@@ -17,7 +17,7 @@ export function AMBFThreeWayPanel() {
 
   return (
     <div>
-      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         AMBF Three-Way Check
       </label>
       <div className="space-y-1">
@@ -26,29 +26,29 @@ export function AMBFThreeWayPanel() {
             key={row.label}
             className={`flex items-center justify-between rounded-sm border px-2 py-1.5 ${
               row.binding
-                ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                : 'border-[#D4DAE3] bg-white'
+                ? 'border-primary bg-primary-50'
+                : 'border-border bg-white'
             }`}
           >
             <div>
-              <span className={`text-[10px] font-medium ${row.binding ? 'text-[#1B3FC4]' : 'text-[#4A5568]'}`}>
+              <span className={`text-[10px] font-medium ${row.binding ? 'text-primary' : 'text-text-secondary'}`}>
                 {row.label}
               </span>
               {row.binding && (
-                <span className="ml-1.5 rounded-sm bg-[#1B3FC4] px-1 py-0.5 text-[8px] font-medium text-white">
+                <span className="ml-1.5 rounded-sm bg-primary px-1 py-0.5 text-[8px] font-medium text-white">
                   BINDING
                 </span>
               )}
-              <p className="font-mono text-[9px] text-[#8896A7]">{row.citation}</p>
+              <p className="font-mono text-[9px] text-muted-foreground">{row.citation}</p>
             </div>
-            <span className={`font-mono text-sm font-medium ${row.binding ? 'text-[#1B3FC4]' : 'text-[#1A2332]'}`}>
+            <span className={`font-mono text-sm font-medium ${row.binding ? 'text-primary' : 'text-foreground'}`}>
               {row.value === Infinity ? 'N/A' : `${row.value.toFixed(1)}`}
-              <span className="ml-0.5 text-[9px] font-normal text-[#8896A7]">sqm</span>
+              <span className="ml-0.5 text-[9px] font-normal text-muted-foreground">sqm</span>
             </span>
           </div>
         ))}
       </div>
-      <p className="mt-1 font-mono text-[9px] text-[#8896A7]">
+      <p className="mt-1 font-mono text-[9px] text-muted-foreground">
         AMBF = min(setback, PSO) = {candidates.binding.toFixed(1)} sqm ({((candidates.binding / tla) * 100).toFixed(1)}% of TLA)
       </p>
     </div>

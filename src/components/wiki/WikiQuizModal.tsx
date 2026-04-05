@@ -21,20 +21,20 @@ interface WikiQuizModalProps {
 
 const OPTION_STATE_CLASSES: Record<string, string> = {
   default:
-    'bg-white border-[#D4DAE3] text-[#1A2332] hover:border-[#1B3FC4]/40 hover:shadow-sm cursor-pointer',
+    'bg-white border-border text-foreground hover:border-primary/40 hover:shadow-sm cursor-pointer',
   selected:
-    'bg-[#EEF2FC] border-[#1B3FC4] text-[#1A2332] cursor-pointer',
+    'bg-primary-50 border-primary text-foreground cursor-pointer',
   correct:
-    'bg-[#EDFAF4] border-[#2D9F6F] text-[#1A2332] cursor-default',
+    'bg-success-50 border-success text-foreground cursor-default',
   incorrect:
-    'bg-[#FEF8ED] border-[#D4951A] text-[#1A2332] cursor-default',
+    'bg-warning-50 border-warning text-foreground cursor-default',
 }
 
 const LETTER_STATE_CLASSES: Record<string, string> = {
-  default: 'bg-[#F8F7F5] text-[#4A5568]',
-  selected: 'bg-[#1B3FC4] text-white',
-  correct: 'bg-[#2D9F6F] text-white',
-  incorrect: 'bg-[#D4951A] text-white',
+  default: 'bg-surface-light text-text-secondary',
+  selected: 'bg-primary text-white',
+  correct: 'bg-success text-white',
+  incorrect: 'bg-warning text-white',
 }
 
 // ─── Gated delay for wiki review (shorter than full quiz) ────────────────────
@@ -240,9 +240,9 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
   const scorePercent = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0
 
   const getScoreLabel = (): { text: string; color: string } => {
-    if (scorePercent >= 70) return { text: 'Passing', color: 'text-[#2D9F6F]' }
-    if (scorePercent >= 50) return { text: 'Building', color: 'text-[#1A2332]' }
-    return { text: 'Needs review', color: 'text-[#1A2332]' }
+    if (scorePercent >= 70) return { text: 'Passing', color: 'text-success' }
+    if (scorePercent >= 50) return { text: 'Building', color: 'text-foreground' }
+    return { text: 'Needs review', color: 'text-foreground' }
   }
 
   // ── Render ───────────────────────────────────────────────────────────────
@@ -266,23 +266,23 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
         )}
       >
         {/* ── Header ──────────────────────────────────────────────────── */}
-        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-[#D4DAE3] bg-white px-5 py-3.5 rounded-t-lg">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-white px-5 py-3.5 rounded-t-lg">
           <div className="flex items-center gap-3">
             <button
               ref={closeButtonRef}
               type="button"
               onClick={onClose}
-              className="flex h-8 w-8 items-center justify-center rounded-sm text-[#8896A7] hover:text-[#1A2332] hover:bg-[#F8F7F5] transition-colors duration-150"
+              className="flex h-8 w-8 items-center justify-center rounded-sm text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors duration-150"
               aria-label="Close quiz"
             >
               <X size={18} weight="bold" aria-hidden="true" />
             </button>
-            <h2 className="text-sm font-semibold text-[#1A2332] truncate max-w-[320px]">
+            <h2 className="text-sm font-semibold text-foreground truncate max-w-[320px]">
               {status === 'results' ? 'Quick Review Complete' : `Quick Review — ${topicName}`}
             </h2>
           </div>
           {status !== 'results' && status !== 'loading' && (
-            <span className="text-xs font-medium text-[#8896A7] tabular-nums">
+            <span className="text-xs font-medium text-muted-foreground tabular-nums">
               {currentIndex + 1} of {totalQuestions}
             </span>
           )}
@@ -293,19 +293,19 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
           {/* Loading state */}
           {status === 'loading' && (
             <div className="flex flex-col items-center justify-center gap-3 py-12">
-              <span className="h-5 w-5 rounded-full border-2 border-[#1B3FC4]/20 border-t-[#1B3FC4] animate-spin" />
-              <span className="text-sm text-[#4A5568]">Loading questions...</span>
+              <span className="h-5 w-5 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
+              <span className="text-sm text-text-secondary">Loading questions...</span>
             </div>
           )}
 
           {/* Empty state — no questions available */}
           {status === 'empty' && (
             <div className="flex flex-col items-center justify-center gap-3 py-12 text-center">
-              <span className="text-sm text-[#4A5568]">No review questions available for this topic yet.</span>
+              <span className="text-sm text-text-secondary">No review questions available for this topic yet.</span>
               <button
                 type="button"
                 onClick={onClose}
-                className="text-[13px] text-[#1B3FC4] hover:underline mt-1"
+                className="text-[13px] text-primary hover:underline mt-1"
               >
                 Close
               </button>
@@ -324,11 +324,11 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                       'h-1.5 w-1.5 rounded-full transition-colors duration-150',
                       i < currentIndex
                         ? answers[i]?.isCorrect
-                          ? 'bg-[#2D9F6F]'
-                          : 'bg-[#D4951A]'
+                          ? 'bg-success'
+                          : 'bg-warning'
                         : i === currentIndex
-                          ? 'bg-[#1B3FC4]'
-                          : 'bg-[#D4DAE3]',
+                          ? 'bg-primary'
+                          : 'bg-border',
                     )}
                     aria-hidden="true"
                   />
@@ -336,7 +336,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
               </div>
 
               {/* Question stem */}
-              <p className="text-sm font-medium text-[#1A2332] leading-relaxed">
+              <p className="text-sm font-medium text-foreground leading-relaxed">
                 {currentQuestion.stem}
               </p>
 
@@ -403,20 +403,20 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                   className={cn(
                     'rounded-md border p-4 space-y-3 animate-in fade-in slide-in-from-bottom-1 duration-150',
                     answers[currentIndex].isCorrect
-                      ? 'bg-[#EDFAF4] border-[#2D9F6F]/20'
-                      : 'bg-[#FEF8ED] border-[#D4951A]/20',
+                      ? 'bg-success-50 border-success/20'
+                      : 'bg-warning-50 border-warning/20',
                   )}
                 >
                   <div className="flex items-center gap-2">
                     {answers[currentIndex].isCorrect ? (
-                      <CheckCircle size={18} weight="fill" className="text-[#2D9F6F] shrink-0" aria-hidden="true" />
+                      <CheckCircle size={18} weight="fill" className="text-success shrink-0" aria-hidden="true" />
                     ) : (
-                      <ArrowRight size={18} weight="bold" className="text-[#D4951A] shrink-0" aria-hidden="true" />
+                      <ArrowRight size={18} weight="bold" className="text-warning shrink-0" aria-hidden="true" />
                     )}
                     <span
                       className={cn(
                         'text-sm font-semibold',
-                        answers[currentIndex].isCorrect ? 'text-[#2D9F6F]' : 'text-[#D4951A]',
+                        answers[currentIndex].isCorrect ? 'text-success' : 'text-warning',
                       )}
                     >
                       {answers[currentIndex].isCorrect ? 'Correct — nice work' : 'Not quite'}
@@ -424,7 +424,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                   </div>
 
                   {answers[currentIndex].rationale && (
-                    <p className="text-sm text-[#4A5568] leading-relaxed">
+                    <p className="text-sm text-text-secondary leading-relaxed">
                       {answers[currentIndex].rationale}
                     </p>
                   )}
@@ -433,12 +433,12 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                   <div className="space-y-2 pt-1">
                     {!nextReady && (
                       <div className="space-y-1.5">
-                        <p className="text-[11px] text-[#8896A7]">
+                        <p className="text-[11px] text-muted-foreground">
                           Review the explanation — next in {countdownSeconds}s
                         </p>
-                        <div className="h-1 rounded-full bg-[#D4DAE3] overflow-hidden">
+                        <div className="h-1 rounded-full bg-border overflow-hidden">
                           <div
-                            className="h-full rounded-full bg-[#1B3FC4]/40 transition-none"
+                            className="h-full rounded-full bg-primary/40 transition-none"
                             style={{ width: `${countdownProgress * 100}%` }}
                           />
                         </div>
@@ -452,8 +452,8 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                         'inline-flex items-center gap-1.5 rounded-sm px-3 py-2 text-sm font-medium',
                         'transition-all duration-150 min-h-[44px]',
                         nextReady
-                          ? 'bg-[#1B3FC4] text-white hover:bg-[#1535A8]'
-                          : 'bg-[#1B3FC4]/50 text-white/70 cursor-not-allowed',
+                          ? 'bg-primary text-white hover:bg-primary-700'
+                          : 'bg-primary/50 text-white/70 cursor-not-allowed',
                       )}
                     >
                       {currentIndex === totalQuestions - 1 ? 'See results' : 'Next question'}
@@ -470,7 +470,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
             <div className="flex flex-col items-center gap-5 py-6">
               {/* Score fraction */}
               <div className="text-center space-y-1">
-                <p className="text-3xl font-bold text-[#1A2332] tabular-nums">
+                <p className="text-3xl font-bold text-foreground tabular-nums">
                   {correctCount} / {totalQuestions}
                 </p>
                 <p className={cn('text-base font-semibold', getScoreLabel().color)}>
@@ -485,7 +485,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                     key={i}
                     className={cn(
                       'h-3 w-3 rounded-full',
-                      answer.isCorrect ? 'bg-[#2D9F6F]' : 'bg-[#D4951A]',
+                      answer.isCorrect ? 'bg-success' : 'bg-warning',
                     )}
                     aria-label={`Question ${i + 1}: ${answer.isCorrect ? 'correct' : 'incorrect'}`}
                   />
@@ -493,7 +493,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
               </div>
 
               {/* Mastery note */}
-              <p className="text-xs text-[#8896A7] text-center">
+              <p className="text-xs text-muted-foreground text-center">
                 This review lightly updates your mastery.
               </p>
 
@@ -503,7 +503,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
                 onClick={onClose}
                 className={cn(
                   'rounded-sm px-6 py-2.5 text-sm font-medium min-h-[44px]',
-                  'bg-[#1B3FC4] text-white hover:bg-[#1535A8]',
+                  'bg-primary text-white hover:bg-primary-700',
                   'transition-colors duration-150',
                 )}
               >

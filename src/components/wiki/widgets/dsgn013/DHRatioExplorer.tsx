@@ -65,13 +65,13 @@ export const DHRatioExplorer = () => {
   const active = RATIOS[activeIdx]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
-      <div className="px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · D/H Ratio and Spatial Enclosure
         </div>
-        <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
+        <div className="text-xs text-ink-muted mt-0.5 dark:text-wiki-muted">
           Tap a ratio to see how distance-to-height affects spatial perception
         </div>
       </div>
@@ -123,12 +123,12 @@ export const DHRatioExplorer = () => {
                   />
                 </svg>
                 <div className={`font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.06em] transition-colors duration-150 ${
-                  isActive ? 'text-camp-cobalt' : 'text-[#A8A8A5]'
+                  isActive ? 'text-camp-cobalt' : 'text-wiki-muted'
                 }`}>
                   {r.ratio}
                 </div>
                 <div className={`text-[11px] font-medium mt-0.5 transition-colors duration-150 ${
-                  isActive ? 'text-wiki-ink dark:text-[#E2E0D8]' : 'text-[#A8A8A5]'
+                  isActive ? 'text-wiki-ink dark:text-wiki-invert-heading' : 'text-wiki-muted'
                 }`}>
                   {r.label}
                 </div>
@@ -139,18 +139,18 @@ export const DHRatioExplorer = () => {
       </div>
 
       {/* Info panel */}
-      <div className="px-5 py-4 border-t border-[#ECEAE4] dark:border-[#3A3835]">
+      <div className="px-5 py-4 border-t border-wiki-divider dark:border-wiki-invert-divider">
         <div className="flex items-center gap-2 mb-2">
           <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: active.color }} />
-          <span className="font-semibold text-sm text-wiki-ink dark:text-[#E2E0D8]">
+          <span className="font-semibold text-sm text-wiki-ink dark:text-wiki-invert-heading">
             {active.ratio} — {active.label}
           </span>
         </div>
-        <p className="text-[13px] text-[#3D3D3A] leading-relaxed mb-2 dark:text-[#C8C6C0]">
+        <p className="text-[13px] text-wiki-body leading-relaxed mb-2 dark:text-wiki-invert-body">
           {active.feeling}
         </p>
-        <div className="text-[12px] text-ink-muted dark:text-[#A8A8A5]">
-          <strong className="text-wiki-ink dark:text-[#E2E0D8]">Examples:</strong> {active.examples}
+        <div className="text-[12px] text-ink-muted dark:text-wiki-muted">
+          <strong className="text-wiki-ink dark:text-wiki-invert-heading">Examples:</strong> {active.examples}
         </div>
       </div>
     </div>

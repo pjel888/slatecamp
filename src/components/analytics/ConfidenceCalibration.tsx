@@ -26,7 +26,7 @@ export const ConfidenceCalibration = ({ data }: Props) => {
   const insight = getInsight(data)
 
   return (
-    <Card className="border-[#D4DAE3] bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Confidence Calibration"
         description="How well your self-rated confidence matches your actual accuracy. Taller blue bar vs orange bar means overconfidence."
@@ -97,7 +97,7 @@ export const ConfidenceCalibration = ({ data }: Props) => {
               </ResponsiveContainer>
             </div>
             {insight && (
-              <p className="text-[11px] text-[#4A5568] mt-1 leading-snug">
+              <p className="text-[11px] text-text-secondary mt-1 leading-snug">
                 {insight}
               </p>
             )}

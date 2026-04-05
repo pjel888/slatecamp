@@ -207,24 +207,24 @@ export const SocraticExplorer = ({
         aria-modal="true"
         className={cn(
           'fixed right-0 top-0 bottom-0 z-50 w-full max-w-md',
-          'bg-white border-l border-[#D4DAE3] shadow-lg',
+          'bg-white border-l border-border shadow-lg',
           'flex flex-col',
           'animate-in slide-in-from-right duration-200 ease-out',
         )}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-[#D4DAE3] shrink-0">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
           <div className="flex items-center gap-2">
-            <ChatCircleDots size={18} weight="fill" className="text-[#1B3FC4]" aria-hidden="true" />
+            <ChatCircleDots size={18} weight="fill" className="text-primary" aria-hidden="true" />
             <div>
-              <h2 className="text-sm font-semibold text-[#1A2332]">Explore This</h2>
+              <h2 className="text-sm font-semibold text-foreground">Explore This</h2>
               {turnNumber > 0 && !isComplete && (
-                <p className="text-[11px] text-[#8896A7]">
+                <p className="text-[11px] text-muted-foreground">
                   Turn {turnNumber} of {MAX_TURNS}
                 </p>
               )}
               {isComplete && (
-                <p className="text-[11px] text-[#2D9F6F] font-medium">Exploration complete</p>
+                <p className="text-[11px] text-success font-medium">Exploration complete</p>
               )}
             </div>
           </div>
@@ -233,9 +233,9 @@ export const SocraticExplorer = ({
             onClick={onClose}
             className={cn(
               'flex items-center justify-center w-8 h-8 rounded-sm',
-              'text-[#8896A7] hover:text-[#1A2332] hover:bg-[#F8F7F5]',
+              'text-muted-foreground hover:text-foreground hover:bg-surface-light',
               'transition-colors duration-150 ease-out',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
             )}
             aria-label="Close exploration panel"
           >
@@ -257,8 +257,8 @@ export const SocraticExplorer = ({
                 className={cn(
                   'max-w-[85%] rounded-md px-3 py-2 text-sm leading-relaxed',
                   msg.role === 'user'
-                    ? 'bg-[#EEF2FC] text-[#1A2332]'
-                    : 'bg-[#F8F7F5] text-[#1A2332]',
+                    ? 'bg-primary-50 text-foreground'
+                    : 'bg-surface-light text-foreground',
                 )}
               >
                 <p className="whitespace-pre-wrap">{stripSources(msg.content)}</p>
@@ -275,11 +275,11 @@ export const SocraticExplorer = ({
           {/* Loading indicator */}
           {loading && (
             <div className="flex justify-start">
-              <div className="bg-[#F8F7F5] rounded-md px-3 py-2 flex items-center gap-1.5">
+              <div className="bg-surface-light rounded-md px-3 py-2 flex items-center gap-1.5">
                 <div className="flex gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#8896A7] animate-pulse" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#8896A7] animate-pulse [animation-delay:150ms]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#8896A7] animate-pulse [animation-delay:300ms]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse [animation-delay:150ms]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse [animation-delay:300ms]" />
                 </div>
               </div>
             </div>
@@ -288,7 +288,7 @@ export const SocraticExplorer = ({
           {/* Suggested prompts — shown when no user messages yet and not loading */}
           {messages.length === 1 && !loading && !isComplete && (
             <div className="space-y-1.5 pt-1">
-              <p className="text-[11px] text-[#8896A7]">Try asking:</p>
+              <p className="text-[11px] text-muted-foreground">Try asking:</p>
               {SUGGESTED_PROMPTS.map((prompt) => (
                 <button
                   key={prompt}
@@ -296,10 +296,10 @@ export const SocraticExplorer = ({
                   onClick={() => handleSuggestedPrompt(prompt)}
                   className={cn(
                     'block w-full text-left text-xs px-3 py-2 rounded-md',
-                    'border border-[#D4DAE3] text-[#4A5568]',
-                    'hover:border-[#1B3FC4]/40 hover:text-[#1A2332] hover:bg-[#EEF2FC]/50',
+                    'border border-border text-text-secondary',
+                    'hover:border-primary/40 hover:text-foreground hover:bg-primary-50/50',
                     'transition-all duration-150 ease-out',
-                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                   )}
                 >
                   {prompt}
@@ -322,7 +322,7 @@ export const SocraticExplorer = ({
         {!isComplete && (
           <form
             onSubmit={handleSubmit}
-            className="shrink-0 border-t border-[#D4DAE3] px-4 py-3 flex gap-2"
+            className="shrink-0 border-t border-border px-4 py-3 flex gap-2"
           >
             <input
               ref={inputRef}
@@ -332,10 +332,10 @@ export const SocraticExplorer = ({
               placeholder="Type your response..."
               disabled={loading}
               className={cn(
-                'flex-1 h-9 px-3 rounded-sm border border-[#D4DAE3] bg-white',
-                'text-sm text-[#1A2332] placeholder:text-[#8896A7]',
+                'flex-1 h-9 px-3 rounded-sm border border-border bg-white',
+                'text-sm text-foreground placeholder:text-muted-foreground',
                 'transition-colors duration-150 ease-out',
-                'focus:outline-none focus:border-[#1B3FC4] focus:ring-2 focus:ring-[#1B3FC4]/20',
+                'focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20',
                 'disabled:opacity-50',
               )}
               aria-label="Your response"

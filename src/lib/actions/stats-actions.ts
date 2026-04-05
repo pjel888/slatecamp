@@ -1,8 +1,14 @@
-
+import { unstable_cache } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { getWeekBoundary } from './dashboard-helpers'
-import { buildSyllabusCoverage } from './mastery-actions'
-import { getCachedWikiArticles } from './cached-queries'
+import { transformSyllabusCoverage } from './mastery-actions'
+import { getCachedTaxonomyTreeByDiscipline, getCachedWikiArticles } from './cached-queries'
+import {
+  getDashboardTag,
+  getReadinessScoreTag,
+  getUserMasteryTag,
+  getUserStatsTag,
+} from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   HeroMicroStat,
@@ -14,7 +20,6 @@ import type {
 // ── Week interaction stats ──────────────────────────────────────────────────
 
 interface WeekInteractionRow {
-  interaction_id: string
   topic_id: string | null
   interaction_timestamp: string
 }
@@ -125,13 +130,22 @@ export const getStreakData = async () => {
   const { data: { user } } = await getUser()
   if (!user) return { currentStreak: 0, longestStreak: 0, streakStatus: 'broken' as const }
 
-  const { data: globalStats } = await supabase
-    .from('user_global_stats')
-    .select('global_current_streak, global_longest_streak, last_study_date')
-    .eq('user_id', user.id)
-    .maybeSingle()
+  return unstable_cache(
+    async () => {
+      const { data: globalStats } = await supabase
+        .from('user_global_stats')
+        .select('global_current_streak, global_longest_streak, last_study_date')
+        .eq('user_id', user.id)
+        .maybeSingle()
 
-  return buildStreakData(globalStats)
+      return buildStreakData(globalStats)
+    },
+    ['streak-data', user.id],
+    {
+      revalidate: false,
+      tags: [getDashboardTag(user.id), getUserStatsTag(user.id)],
+    },
+  )()
 }
 
 /**
@@ -142,78 +156,99 @@ export const getHeroData = async () => {
   const { data: { user } } = await getUser()
   if (!user) return null
 
-  const thisWeek = getWeekBoundary(0)
-  const lastWeek = getWeekBoundary(1)
+  return unstable_cache(
+    async () => {
+      const thisWeek = getWeekBoundary(0)
+      const lastWeek = getWeekBoundary(1)
 
-  const [
-    globalStatsResult,
-    snapshotsResult,
-    thisWeekInteractionsResult,
-    lastWeekInteractionsResult,
-    masteryCountResult,
-  ] = await Promise.all([
-    supabase
-      .from('user_global_stats')
-      .select('global_readiness_score, target_exam_date, current_discipline_id, last_study_date, readiness_sub_scores')
-      .eq('user_id', user.id)
-      .maybeSingle(),
-    supabase
-      .from('readiness_score_snapshots')
-      .select('score')
-      .eq('user_id', user.id)
-      .order('computed_at', { ascending: false })
-      .limit(2),
-    supabase
-      .from('user_interactions')
-      .select('interaction_id, topic_id, interaction_timestamp')
-      .eq('user_id', user.id)
-      .gte('interaction_timestamp', thisWeek.start)
-      .lt('interaction_timestamp', thisWeek.end),
-    supabase
-      .from('user_interactions')
-      .select('interaction_id, topic_id, interaction_timestamp')
-      .eq('user_id', user.id)
-      .gte('interaction_timestamp', lastWeek.start)
-      .lt('interaction_timestamp', lastWeek.end),
-    supabase
-      .from('user_node_mastery')
-      .select('current_mastery_weight')
-      .eq('user_id', user.id),
-  ])
+      const [
+        globalStatsResult,
+        snapshotsResult,
+        thisWeekInteractionsResult,
+        lastWeekInteractionsResult,
+        masteryCountResult,
+      ] = await Promise.all([
+        supabase
+          .from('user_global_stats')
+          .select('global_readiness_score, target_exam_date, current_discipline_id, last_study_date, readiness_sub_scores')
+          .eq('user_id', user.id)
+          .maybeSingle(),
+        supabase
+          .from('readiness_score_snapshots')
+          .select('score')
+          .eq('user_id', user.id)
+          .order('computed_at', { ascending: false })
+          .limit(2),
+        supabase
+          .from('user_interactions')
+          .select('topic_id, interaction_timestamp')
+          .eq('user_id', user.id)
+          .gte('interaction_timestamp', thisWeek.start)
+          .lt('interaction_timestamp', thisWeek.end),
+        supabase
+          .from('user_interactions')
+          .select('topic_id, interaction_timestamp')
+          .eq('user_id', user.id)
+          .gte('interaction_timestamp', lastWeek.start)
+          .lt('interaction_timestamp', lastWeek.end),
+        supabase
+          .from('user_node_mastery')
+          .select('current_mastery_weight')
+          .eq('user_id', user.id),
+      ])
 
-  const globalStats = globalStatsResult.data
-  const readinessScore = Math.round(globalStats?.global_readiness_score ?? 0)
-  const snapshots = snapshotsResult.data as Array<{ score: number }> | null
-  const previousScore = snapshots && snapshots.length >= 2 ? Math.round(snapshots[1].score) : null
+      const globalStats = globalStatsResult.data
+      const readinessScore = Math.round(globalStats?.global_readiness_score ?? 0)
+      const snapshots = snapshotsResult.data as Array<{ score: number }> | null
+      const previousScore = snapshots && snapshots.length >= 2 ? Math.round(snapshots[1].score) : null
 
-  const examDateRaw = globalStats?.target_exam_date ?? null
-  let daysUntilExam: number | null = null
-  if (examDateRaw) {
-    const diff = new Date(examDateRaw).getTime() - Date.now()
-    if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
-  }
+      const examDateRaw = globalStats?.target_exam_date ?? null
+      let daysUntilExam: number | null = null
+      if (examDateRaw) {
+        const diff = new Date(examDateRaw).getTime() - Date.now()
+        if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
+      }
 
-  const thisWeekCounts = computeWeekCounts((thisWeekInteractionsResult.data ?? []) as any)
-  const lastWeekCounts = computeWeekCounts((lastWeekInteractionsResult.data ?? []) as any)
+      const thisWeekCounts = computeWeekCounts((thisWeekInteractionsResult.data ?? []) as WeekInteractionRow[])
+      const lastWeekCounts = computeWeekCounts((lastWeekInteractionsResult.data ?? []) as WeekInteractionRow[])
+      const disciplineRows =
+        globalStats?.current_discipline_id
+          ? await getCachedTaxonomyTreeByDiscipline(globalStats.current_discipline_id)
+          : []
 
-  const heroStats = buildHeroStats(thisWeekCounts, lastWeekCounts)
-  const readinessMeta = buildReadinessMeta(globalStats)
-  const syllabusCoveragePercent = await buildSyllabusCoverage(supabase, globalStats?.current_discipline_id, masteryCountResult.data)
+      const heroStats = buildHeroStats(thisWeekCounts, lastWeekCounts)
+      const readinessMeta = buildReadinessMeta(globalStats)
+      const syllabusCoveragePercent = transformSyllabusCoverage(
+        disciplineRows.filter((row) => row.is_leaf).length,
+        masteryCountResult.data,
+      )
 
-  const firstName =
-    user?.user_metadata?.full_name?.split(' ')[0] ??
-    user?.email?.split('@')[0] ??
-    'there'
+      const firstName =
+        user?.user_metadata?.full_name?.split(' ')[0] ??
+        user?.email?.split('@')[0] ??
+        'there'
 
-  return {
-    userName: firstName,
-    readinessScore,
-    previousScore,
-    daysUntilExam,
-    heroStats,
-    syllabusCoveragePercent,
-    readinessMeta,
-  }
+      return {
+        userName: firstName,
+        readinessScore,
+        previousScore,
+        daysUntilExam,
+        heroStats,
+        syllabusCoveragePercent,
+        readinessMeta,
+      }
+    },
+    ['hero-data', user.id],
+    {
+      revalidate: false,
+      tags: [
+        getDashboardTag(user.id),
+        getUserStatsTag(user.id),
+        getUserMasteryTag(user.id),
+        getReadinessScoreTag(user.id),
+      ],
+    },
+  )()
 }
 
 /**
@@ -242,18 +277,9 @@ export const getDailyWikiData = async () => {
 
 // ── SRS review data ─────────────────────────────────────────────────────────
 
-export const buildSrsReview = async (
-  supabase: SupabaseClient,
-  userId: string,
-): Promise<{ itemsDue: number; subjects: string[]; estimatedMinutes: number }> => {
-  const now = new Date().toISOString()
-  const { data: srsItems } = await supabase
-    .from('user_node_mastery')
-    .select('topic_id, taxonomy_tree(subject_area)')
-    .eq('user_id', userId)
-    .lte('next_review_at', now)
-    .gt('total_attempts', 0)
-
+export const transformSrsReview = (
+  srsItems: any[] | null,
+): { itemsDue: number; subjects: string[]; estimatedMinutes: number } => {
   const srsSubjects = new Set<string>()
   for (const item of (srsItems ?? [])) {
     const sa = (item.taxonomy_tree as any)?.subject_area
@@ -270,25 +296,22 @@ export const buildSrsReview = async (
 // ── Daily wiki article (deterministic rotation by day of year) ──────────────
 
 export const buildDailyArticle = (wikiArticlesData: any[] | null): DailyWikiArticle | null => {
-  const wikiArticles = (wikiArticlesData ?? []) as Array<{ article_id: string; title: string; slug: string; content: string }>
+  const wikiArticles = (wikiArticlesData ?? []) as Array<{
+    article_id: string
+    title: string
+    slug: string
+    excerpt: string
+  }>
   if (wikiArticles.length === 0) return null
 
   const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (24 * 60 * 60 * 1000))
   const idx = dayOfYear % wikiArticles.length
   const article = wikiArticles[idx]
-  // Extract first ~150 chars as excerpt (strip markdown)
-  const plainText = article.content
-    .replace(/#{1,6}\s+/g, '')
-    .replace(/\*\*/g, '')
-    .replace(/\*/g, '')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-    .replace(/\n+/g, ' ')
-    .trim()
   return {
     articleId: article.article_id,
     title: article.title,
     slug: article.slug,
-    excerpt: plainText.length > 150 ? plainText.slice(0, 147) + '...' : plainText,
+    excerpt: article.excerpt,
   }
 }
 

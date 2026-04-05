@@ -79,7 +79,7 @@ export function FloatingCameraBar() {
 
   return (
     <div className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2">
-      <div className="flex items-center gap-0.5 rounded-md border border-white/20 bg-[#1A2332]/40 px-1.5 py-1.5 backdrop-blur-xl shadow-lg">
+      <div className="flex items-center gap-0.5 rounded-md border border-white/20 bg-foreground/40 px-1.5 py-1.5 backdrop-blur-xl shadow-lg">
         {/* Main views */}
         {CAMERA_OPTIONS.filter(o => o.group === 'main').map((opt) => {
           const Icon = opt.icon
@@ -145,8 +145,8 @@ export function CameraPresetBar() {
           onClick={() => setCameraPreset(opt.value)}
           className={`flex-1 rounded-sm border px-2 py-1.5 text-[10px] font-medium transition-colors duration-150 ${
             current === opt.value
-              ? 'border-[#1B3FC4] bg-[#EEF2FC] text-[#1B3FC4]'
-              : 'border-[#D4DAE3] text-[#1A2332] hover:bg-[#EEF2FC]'
+              ? 'border-primary bg-primary-50 text-primary'
+              : 'border-border text-foreground hover:bg-primary-50'
           }`}
         >
           {opt.label}
@@ -156,8 +156,8 @@ export function CameraPresetBar() {
         onClick={() => setShowDimensions(!showDimensions)}
         className={`rounded-sm border px-2 py-1.5 text-[10px] font-medium transition-colors duration-150 ${
           showDimensions
-            ? 'border-[#1B3FC4] bg-[#EEF2FC] text-[#1B3FC4]'
-            : 'border-[#D4DAE3] text-[#1A2332] hover:bg-[#EEF2FC]'
+            ? 'border-primary bg-primary-50 text-primary'
+            : 'border-border text-foreground hover:bg-primary-50'
         }`}
       >
         Dims

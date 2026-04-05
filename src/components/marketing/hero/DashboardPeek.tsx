@@ -1,5 +1,5 @@
 export const DashboardPeek = () => (
-  <div className='relative mx-auto w-full max-w-[900px] pt-2 landing-reveal landing-delay-2'>
+  <div className='relative mx-auto w-full max-w-[900px] pt-2 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200'>
     <div className='relative h-[140px] overflow-hidden rounded-t-[10px] border border-b-0 border-border-design bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]'>
       {/* Fake window chrome */}
       <div className='flex items-center gap-1.5 border-b border-border-design bg-muted px-4 py-2.5'>

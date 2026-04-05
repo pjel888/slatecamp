@@ -73,10 +73,10 @@ interface ToggleRowProps {
 }
 
 const ToggleRow = ({ label, description, checked, onChange }: ToggleRowProps) => (
-  <div className="flex items-center justify-between gap-4 py-3 border-b border-[#D4DAE3] last:border-0">
+  <div className="flex items-center justify-between gap-4 py-3 border-b border-border last:border-0">
     <div className="min-w-0">
-      <p className="text-[13px] font-medium text-[#1A2332]">{label}</p>
-      {description && <p className="text-[12px] text-[#8896A7] mt-0.5">{description}</p>}
+      <p className="text-[13px] font-medium text-foreground">{label}</p>
+      {description && <p className="text-[12px] text-muted-foreground mt-0.5">{description}</p>}
     </div>
     <button
       type="button"
@@ -87,8 +87,8 @@ const ToggleRow = ({ label, description, checked, onChange }: ToggleRowProps) =>
       className={cn(
         'relative inline-flex h-5 w-9 shrink-0 items-center rounded-full',
         'border-2 border-transparent transition-colors duration-150 ease-out',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30 focus-visible:ring-offset-2',
-        checked ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
+        checked ? 'bg-primary' : 'bg-border',
       )}
     >
       <span
@@ -109,7 +109,7 @@ interface SegmentProps {
 }
 
 const SegmentedControl = ({ value, options, onChange }: SegmentProps) => (
-  <div className="flex rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] p-0.5 gap-0.5" role="group">
+  <div className="flex rounded-sm border border-border bg-surface-light p-0.5 gap-0.5" role="group">
     {options.map((opt) => (
       <button
         key={opt.value}
@@ -118,10 +118,10 @@ const SegmentedControl = ({ value, options, onChange }: SegmentProps) => (
         aria-pressed={value === opt.value}
         className={cn(
           'flex-1 px-3 py-1.5 text-[12px] font-medium rounded-[3px] transition-all duration-150 ease-out',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
           value === opt.value
-            ? 'bg-white text-[#1B3FC4] shadow-sm'
-            : 'text-[#4A5568] hover:text-[#1A2332]',
+            ? 'bg-white text-primary shadow-sm'
+            : 'text-text-secondary hover:text-foreground',
         )}
       >
         {opt.label}
@@ -194,15 +194,15 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
     <div className="space-y-5">
       {/* Header */}
       <div>
-        <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7] mb-1">
+        <p className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground mb-1">
           Step 3 — Advanced Config
         </p>
-        <h2 className="text-[17px] font-semibold text-[#1A2332]">Customise your session</h2>
+        <h2 className="text-[17px] font-semibold text-foreground">Customise your session</h2>
       </div>
 
       {/* Preset shortcuts */}
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-wide text-[#8896A7] mb-2">
+        <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground mb-2">
           Quick presets
         </p>
         <div className="flex flex-wrap gap-2">
@@ -219,10 +219,10 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
               onClick={() => applyPreset(key)}
               className={cn(
                 'px-3 py-1.5 rounded-sm text-[12px] font-medium border transition-all duration-150 ease-out',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                 activePreset === key
-                  ? 'bg-[#EEF2FC] border-[#1B3FC4] text-[#1B3FC4]'
-                  : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40',
+                  ? 'bg-primary-50 border-primary text-primary'
+                  : 'bg-white border-border text-text-secondary hover:border-primary/40',
               )}
               aria-pressed={activePreset === key}
             >
@@ -233,7 +233,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
       </div>
 
       {/* Toggle rows */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white px-4">
+      <div className="rounded-md border border-border bg-white px-4">
         <ToggleRow
           label="Timer"
           description={config.timer.enabled ? 'Countdown enabled' : 'No timer'}
@@ -265,7 +265,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
 
       {/* Feedback timing */}
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-wide text-[#8896A7] mb-2">
+        <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground mb-2">
           Feedback timing
         </p>
         <SegmentedControl
@@ -280,7 +280,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
 
       {/* Difficulty */}
       <div>
-        <p className="text-[11px] font-medium uppercase tracking-wide text-[#8896A7] mb-2">
+        <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground mb-2">
           Difficulty
         </p>
         <div className="flex flex-wrap gap-2" role="group" aria-label="Difficulty">
@@ -294,10 +294,10 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
                 aria-pressed={isSelected}
                 className={cn(
                   'px-3 py-1.5 rounded-sm text-[12px] font-medium border transition-all duration-150 ease-out',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                   isSelected
-                    ? 'bg-[#1B3FC4] text-white border-[#1B3FC4]'
-                    : 'bg-white text-[#4A5568] border-[#D4DAE3] hover:border-[#1B3FC4]/40',
+                    ? 'bg-primary text-white border-primary'
+                    : 'bg-white text-text-secondary border-border hover:border-primary/40',
                 )}
               >
                 {pill.label}
@@ -310,7 +310,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
       {/* Save as preset (future hook) */}
       <button
         type="button"
-        className="text-[12px] text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
+        className="text-[12px] text-primary hover:text-primary-700 transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
         aria-label="Save current configuration as a preset (coming soon)"
         disabled
       >

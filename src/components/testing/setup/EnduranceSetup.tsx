@@ -24,17 +24,17 @@ const EnduranceSetup = ({ previousSessions }: EnduranceSetupProps) => {
     <div className="max-w-[600px] mx-auto px-4 py-8">
       <Link
         href={ROUTES.TESTING}
-        className="inline-flex items-center text-[14px] text-[#4A5568] hover:text-[#1B3FC4] transition-colors duration-150 ease-out mb-8"
+        className="inline-flex items-center text-[14px] text-text-secondary hover:text-primary transition-colors duration-150 ease-out mb-8"
       >
         ← Back to Review
       </Link>
 
       <div className="mb-8">
-        <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7] mb-1">
+        <p className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground mb-1">
           Exam Readiness
         </p>
-        <h1 className="text-[24px] font-semibold text-[#1A2332] mb-2">Design Endurance Training</h1>
-        <p className="text-[15px] text-[#4A5568] leading-relaxed">
+        <h1 className="text-[24px] font-semibold text-foreground mb-2">Design Endurance Training</h1>
+        <p className="text-[15px] text-text-secondary leading-relaxed">
           Design is 40% of the ALE — and it&apos;s 3+ hours of scenario-based computation under pressure.
           Each scenario gives you a building brief with site data, then walks you through development
           controls calculations with hidden traps that mirror the real exam.
@@ -43,11 +43,11 @@ const EnduranceSetup = ({ previousSessions }: EnduranceSetupProps) => {
 
       <div className="space-y-6">
         {completedCount > 0 && (
-          <div className="rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-4 py-4">
-            <p className="text-[13px] font-medium text-[#4A5568] mb-1">
+          <div className="rounded-md border border-primary/20 bg-primary-50 px-4 py-4">
+            <p className="text-[13px] font-medium text-text-secondary mb-1">
               Progress
             </p>
-            <p className="text-[14px] text-[#1A2332]">
+            <p className="text-[14px] text-foreground">
               You&apos;ve completed{' '}
               <span className="font-medium">{completedCount} scenario sessions</span>.
               Each one builds your computation speed and trap awareness.
@@ -55,12 +55,12 @@ const EnduranceSetup = ({ previousSessions }: EnduranceSetupProps) => {
           </div>
         )}
 
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-4">
-          <p className="text-[14px] text-[#4A5568] leading-relaxed mb-3">
+        <div className="rounded-md border border-border bg-surface-light px-4 py-4">
+          <p className="text-[14px] text-text-secondary leading-relaxed mb-3">
             12 design scenarios available — from single-family residence (foundational)
             to mixed-use high-rise (advanced). Each includes:
           </p>
-          <ul className="text-[13px] text-[#4A5568] space-y-1.5 ml-4 list-disc">
+          <ul className="text-[13px] text-text-secondary space-y-1.5 ml-4 list-disc">
             <li>Full building brief with site data and program</li>
             <li>Step-by-step computation questions (PSO, AMBF, TGFA, FLAR, etc.)</li>
             <li>Hidden traps that cascade across questions — just like the real ALE</li>

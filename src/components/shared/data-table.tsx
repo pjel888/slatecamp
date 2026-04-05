@@ -8,6 +8,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { SearchInput } from '@/components/ui/input'
 import { TableRowSkeleton } from '@/components/ui/skeleton'
 import { EmptyState } from '@/components/shared/empty-state'
+import { Button } from '@/components/ui/button'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -388,11 +389,17 @@ function DataTable<T extends Record<string, unknown>>({
               <tr>
                 <td colSpan={columns.length + (selectable ? 1 : 0)}>
                   <EmptyState
-                    message={emptyMessage}
+                    title={emptyMessage}
                     action={
-                      emptyAction
-                        ? { label: emptyAction.label, onClick: emptyAction.onClick }
-                        : undefined
+                      emptyAction ? (
+                        <Button
+                          variant="secondary"
+                          size="sm"
+                          onClick={emptyAction.onClick}
+                        >
+                          {emptyAction.label}
+                        </Button>
+                      ) : undefined
                     }
                   />
                 </td>

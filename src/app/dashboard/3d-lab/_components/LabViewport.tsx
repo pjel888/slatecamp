@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
+import { useLabStore } from '@/stores/useLabStore'
 import type { Model3D, ModelParameter, SpatialHotspot } from '@/components/3d/Workspace'
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -222,6 +223,14 @@ export function LabViewport({
   hotspots,
   userTier,
 }: LabViewportProps) {
+  // ─── Cleanup session state on unmount ──────────────────────────────────────
+  useEffect(() => {
+    return () => {
+      // Flush large Sets/Maps from the global store when leaving the Lab
+      useLabStore.getState().resetSession()
+    }
+  }, [])
+
   // Legacy hardcoded scenes — must remain for backwards compatibility
   if (modelId === 'far-calculator') return <FARPlayground />
   if (modelId === 'classical-orders') return <ClassicalOrders />

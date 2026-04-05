@@ -45,8 +45,8 @@ export const SRSpacingTimeline = ({
                 className={cn(
                   'h-[2px] w-6',
                   isCompleted || isCurrent
-                    ? 'bg-[#2D9F6F]'
-                    : 'bg-[#D4DAE3]',
+                    ? 'bg-success'
+                    : 'bg-border',
                 )}
               />
             )}
@@ -56,9 +56,9 @@ export const SRSpacingTimeline = ({
               <div
                 className={cn(
                   'flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium transition-colors duration-150',
-                  isCompleted && 'bg-[#2D9F6F] text-white',
-                  isCurrent && 'bg-[#1B3FC4] text-white',
-                  isUpcoming && 'border border-[#D4DAE3] bg-white text-[#8896A7]',
+                  isCompleted && 'bg-success text-white',
+                  isCurrent && 'bg-primary text-white',
+                  isUpcoming && 'border border-border bg-white text-muted-foreground',
                 )}
               >
                 {isCompleted ? (
@@ -76,9 +76,9 @@ export const SRSpacingTimeline = ({
               <span
                 className={cn(
                   'mt-1 text-[10px] tabular-nums',
-                  isCompleted && 'font-medium text-[#2D9F6F]',
-                  isCurrent && 'font-medium text-[#1B3FC4]',
-                  isUpcoming && 'text-[#8896A7]',
+                  isCompleted && 'font-medium text-success',
+                  isCurrent && 'font-medium text-primary',
+                  isUpcoming && 'text-muted-foreground',
                 )}
               >
                 {interval.label}
@@ -93,7 +93,7 @@ export const SRSpacingTimeline = ({
         <div
           className={cn(
             'h-[2px] w-6',
-            isDurable ? 'bg-[#2D9F6F]' : 'bg-[#D4DAE3]',
+            isDurable ? 'bg-success' : 'bg-border',
           )}
         />
         <div className="flex flex-col items-center">
@@ -101,8 +101,8 @@ export const SRSpacingTimeline = ({
             className={cn(
               'flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium transition-colors duration-150',
               isDurable
-                ? 'bg-[#2D9F6F] text-white'
-                : 'border border-[#D4DAE3] bg-white text-[#8896A7]',
+                ? 'bg-success text-white'
+                : 'border border-border bg-white text-muted-foreground',
             )}
           >
             {isDurable ? (
@@ -120,7 +120,7 @@ export const SRSpacingTimeline = ({
           <span
             className={cn(
               'mt-1 text-[10px]',
-              isDurable ? 'font-medium text-[#2D9F6F]' : 'text-[#8896A7]',
+              isDurable ? 'font-medium text-success' : 'text-muted-foreground',
             )}
           >
             Durable

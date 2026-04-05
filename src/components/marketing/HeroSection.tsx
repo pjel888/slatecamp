@@ -53,7 +53,7 @@ export const HeroSection = ({
         {/* Left: Giant headline */}
         <div className='md:col-span-7 h-full flex flex-col justify-start '>
           <div className='mt-26'>
-            <div className='landing-reveal flex items-center gap-3'>
+            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-3'>
               <div
                 className='flex flex-col gap-1 text-primary'
                 aria-label='Professional ALE review platform.'
@@ -71,21 +71,21 @@ export const HeroSection = ({
           </div>
 
           <div className=' flex h-full flex-col justify-start pt-8'>
-            <div className='landing-reveal landing-delay-4 flex flex-col items-end justify-end gap-3'>
+            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 flex flex-col items-end justify-end gap-3'>
               <Link
                 href={ctaHref}
                 className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
               >
                 {ctaLabel} <SCIcon icon={CaretRight} size='md' />
               </Link>
-              <p className='landing-reveal landing-delay-5 flex justify-start text-[11px] font-semibold text-text-2'>
+              <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 flex justify-start text-[11px] font-semibold text-text-2'>
                 Free to start &middot; No credit card required
               </p>
             </div>
           </div>
 
           {/* Stats Bar */}
-          <div className='landing-reveal landing-delay-6 mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-border-design pt-3'>
+          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-border-design pt-3'>
             {STATS.map((stat) => (
               <span
                 key={stat}

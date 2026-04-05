@@ -15,11 +15,11 @@ export const SubjectBreakdown = ({ breakdown }: SubjectBreakdownProps) => {
 
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">
         By Subject
       </p>
 
-      <div className="bg-white rounded-md border border-[#D4DAE3] divide-y divide-[#D4DAE3]">
+      <div className="bg-white rounded-md border border-border divide-y divide-border">
         {sorted.map((subject) => {
           const colors = getSubjectColor(subject.disciplineId)
           return (
@@ -42,14 +42,14 @@ export const SubjectBreakdown = ({ breakdown }: SubjectBreakdownProps) => {
                   >
                     {subject.disciplineName}
                   </span>
-                  <span className="text-xs text-[#4A5568] tabular-nums ml-3 shrink-0">
+                  <span className="text-xs text-text-secondary tabular-nums ml-3 shrink-0">
                     {subject.correct}/{subject.total}
                   </span>
                 </div>
 
                 {/* Bar track */}
                 <div
-                  className="h-1.5 w-full bg-[#F8F7F5] rounded-sm overflow-hidden"
+                  className="h-1.5 w-full bg-surface-light rounded-sm overflow-hidden"
                   role="presentation"
                   aria-label={`${subject.disciplineName}: ${subject.percent}%`}
                 >

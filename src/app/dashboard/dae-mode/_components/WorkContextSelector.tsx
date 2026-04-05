@@ -91,7 +91,7 @@ const WorkContextSelector = ({
               onClick={() => toggle(value)}
               className={[
                 'w-full text-left px-4 py-3 rounded-md border transition-colors duration-150 ease-out',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-1',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                 isSelected
                   ? 'border-[#1B3FC4] bg-[#EEF2FC]'
                   : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/40',
@@ -151,10 +151,10 @@ const WorkContextSelector = ({
         disabled={selected.length === 0 || loading}
         className={[
           'w-full rounded-sm px-4 py-2.5 text-[14px] font-medium transition-colors duration-150 ease-out',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-1',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
           selected.length === 0 || loading
             ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
-            : 'bg-[#1B3FC4] text-white hover:bg-[#1535A8]',
+            : 'bg-[#1B3FC4] text-white hover:bg-primary-700',
         ].join(' ')}
       >
         {loading ? 'Starting session…' : `Start ${selected.length > 0 ? '10' : ''}-Question Session →`}

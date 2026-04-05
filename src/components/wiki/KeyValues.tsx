@@ -13,7 +13,7 @@ export const KeyValues = ({ items }: { items: KeyValueItem[] | string }) => {
       {parsed.map((item, i) => (
         <div
           key={i}
-          className="bg-white border border-[#E0DED8] rounded-[10px] px-4 py-4 text-center dark:bg-wiki-ink dark:border-[#3A3835]"
+          className="bg-white border border-wiki-border rounded-[10px] px-4 py-4 text-center dark:bg-wiki-ink dark:border-wiki-invert-divider"
         >
           <div className={`font-sans text-camp-cobalt leading-tight mb-1 ${
             item.value.length > 30
@@ -24,7 +24,7 @@ export const KeyValues = ({ items }: { items: KeyValueItem[] | string }) => {
           }`}>
             {item.value}
           </div>
-          <div className="font-[var(--font-dm-mono)] text-[11px] text-ink-muted uppercase tracking-[0.06em] dark:text-[#A8A8A5]">
+          <div className="font-[var(--font-dm-mono)] text-[11px] text-ink-muted uppercase tracking-[0.06em] dark:text-wiki-muted">
             {item.label}
           </div>
         </div>

@@ -1,8 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import {
-  BookmarkSimple,
   MagnifyingGlass,
   Plus,
   ArrowRight,
@@ -15,7 +14,6 @@ import {
   FileText,
   ChartBar,
   Clock,
-  TrendUp,
   BookOpen,
   Crosshair,
   Database,
@@ -28,14 +26,12 @@ import {
   ListBullets,
   House,
   Palette,
-  DotsSixVertical,
   User,
 } from '@phosphor-icons/react/dist/ssr'
 
 import { Button } from '@/components/ui/button'
 import { CloseButton } from '@/components/ui/close-button'
 import { Badge } from '@/components/ui/badge'
-import { LegalCitationBadge } from '@/components/shared/legal-citation-badge'
 import {
   Card,
   CardHeader,
@@ -79,7 +75,7 @@ import { toast } from '@/lib/hooks/use-toast'
 import { ProgressBar } from '@/components/ui/progress-bar'
 import { FormField } from '@/components/ui/form-field'
 import { ModeButton } from '@/components/ui/mode-button'
-import { IconButton } from '@/components/ui/icon-button'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { Toolbar, ToolbarGroup, ToolbarDivider } from '@/components/ui/toolbar'
 import { ActionCard } from '@/components/shared/action-card'
 import { QuestionDotNavigator } from '@/components/shared/question-dot-navigator'
@@ -96,6 +92,7 @@ import {
   ContentSidebarSources,
   ContentSidebarPopover,
 } from '@/components/shared/content-sidebar'
+import { LegalCitationBadge } from '@/components/shared/legal-citation-badge'
 import { Callout, Note, Warn, Tip, Example, CalloutBox } from '@/components/wiki/Callout'
 import { Accordion, AccordionItem } from '@/components/wiki/Accordion'
 
@@ -117,6 +114,39 @@ const sampleTableData = [
   { id: '4', title: 'Building Permits Process', topic: 'PD 1096', difficulty: 'Easy', status: 'Published', updated: '2026-03-12' },
   { id: '5', title: 'Zoning Regulations', topic: 'BP 220', difficulty: 'Medium', status: 'Draft', updated: '2026-03-10' },
 ]
+
+const iconActionSizeMap = {
+  sm: 'icon-sm',
+  md: 'icon',
+  lg: 'icon-lg',
+} as const
+
+interface IconActionProps {
+  icon: ReactNode
+  label: string
+  variant?: 'ghost' | 'outline' | 'subtle'
+  size?: keyof typeof iconActionSizeMap
+}
+
+const IconAction = ({
+  icon,
+  label,
+  variant = 'ghost',
+  size = 'md',
+}: IconActionProps) => (
+  <Tooltip>
+    <TooltipTrigger asChild>
+      <Button
+        variant={variant}
+        size={iconActionSizeMap[size]}
+        aria-label={label}
+      >
+        {icon}
+      </Button>
+    </TooltipTrigger>
+    <TooltipContent>{label}</TooltipContent>
+  </Tooltip>
+)
 
 const sampleTaxonomyNodes = [
   {
@@ -925,15 +955,19 @@ const DesignSystemPage = () => {
           <Card variant="default" size="md">
             <EmptyState
               icon={<FileText className="h-5 w-5" />}
-              message="No articles yet"
+              title="No articles yet"
               description="Start building your knowledge base by creating your first wiki article."
-              action={{ label: 'Create Article', onClick: () => {} }}
+              action={
+                <Button variant="secondary" size="sm">
+                  Create Article
+                </Button>
+              }
             />
           </Card>
           <Card variant="default" size="md">
             <EmptyState
               icon={<ChartBar className="h-5 w-5" />}
-              message="No study data available"
+              title="No study data available"
               description="Complete a practice session to see your performance analytics here."
             />
           </Card>
@@ -1493,20 +1527,20 @@ const DesignSystemPage = () => {
       </Section>
 
       {/* ============================================================ */}
-      {/*  25. Icon Button                                              */}
+      {/*  25. Icon Action Composition                                  */}
       {/* ============================================================ */}
       <Section
         eyebrow="ACTIONS"
-        title="Icon Button"
-        subtitle="Compact icon-only buttons with optional tooltips. Three variants across three sizes."
+        title="Icon Action Composition"
+        subtitle="Icon-only actions composed from Button and Tooltip. Three variants across three sizes."
       >
         {/* Ghost */}
         <div className="space-y-3">
           <p className="text-xs font-medium text-muted-foreground">Ghost Variant</p>
           <div className="flex items-center gap-2">
-            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="sm" />
-            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="md" />
-            <IconButton icon={<GearSix />} tooltip="Settings" variant="ghost" size="lg" />
+            <IconAction icon={<GearSix />} label="Settings" variant="ghost" size="sm" />
+            <IconAction icon={<GearSix />} label="Settings" variant="ghost" size="md" />
+            <IconAction icon={<GearSix />} label="Settings" variant="ghost" size="lg" />
           </div>
         </div>
 
@@ -1514,9 +1548,9 @@ const DesignSystemPage = () => {
         <div className="space-y-3">
           <p className="text-xs font-medium text-muted-foreground">Outline Variant</p>
           <div className="flex items-center gap-2">
-            <IconButton icon={<BookOpen />} tooltip="Study Guide" variant="outline" size="sm" />
-            <IconButton icon={<BookOpen />} tooltip="Study Guide" variant="outline" size="md" />
-            <IconButton icon={<BookOpen />} tooltip="Study Guide" variant="outline" size="lg" />
+            <IconAction icon={<BookOpen />} label="Study Guide" variant="outline" size="sm" />
+            <IconAction icon={<BookOpen />} label="Study Guide" variant="outline" size="md" />
+            <IconAction icon={<BookOpen />} label="Study Guide" variant="outline" size="lg" />
           </div>
         </div>
 
@@ -1524,9 +1558,9 @@ const DesignSystemPage = () => {
         <div className="space-y-3">
           <p className="text-xs font-medium text-muted-foreground">Subtle Variant</p>
           <div className="flex items-center gap-2">
-            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="sm" />
-            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="md" />
-            <IconButton icon={<Crosshair />} tooltip="Focus Mode" variant="subtle" size="lg" />
+            <IconAction icon={<Crosshair />} label="Focus Mode" variant="subtle" size="sm" />
+            <IconAction icon={<Crosshair />} label="Focus Mode" variant="subtle" size="md" />
+            <IconAction icon={<Crosshair />} label="Focus Mode" variant="subtle" size="lg" />
           </div>
         </div>
       </Section>
@@ -1543,19 +1577,19 @@ const DesignSystemPage = () => {
           <CardContent>
             <Toolbar>
               <ToolbarGroup>
-                <IconButton icon={<TextB />} tooltip="Bold" variant="ghost" size="sm" />
-                <IconButton icon={<TextItalic />} tooltip="Italic" variant="ghost" size="sm" />
-                <IconButton icon={<TextUnderline />} tooltip="Underline" variant="ghost" size="sm" />
+                <IconAction icon={<TextB />} label="Bold" variant="ghost" size="sm" />
+                <IconAction icon={<TextItalic />} label="Italic" variant="ghost" size="sm" />
+                <IconAction icon={<TextUnderline />} label="Underline" variant="ghost" size="sm" />
               </ToolbarGroup>
               <ToolbarDivider />
               <ToolbarGroup>
-                <IconButton icon={<TextAlignLeft />} tooltip="Align Left" variant="ghost" size="sm" />
-                <IconButton icon={<TextAlignCenter />} tooltip="Align Center" variant="ghost" size="sm" />
+                <IconAction icon={<TextAlignLeft />} label="Align Left" variant="ghost" size="sm" />
+                <IconAction icon={<TextAlignCenter />} label="Align Center" variant="ghost" size="sm" />
               </ToolbarGroup>
               <ToolbarDivider />
               <ToolbarGroup>
-                <IconButton icon={<ListBullets />} tooltip="Bullet List" variant="ghost" size="sm" />
-                <IconButton icon={<BookOpen />} tooltip="Insert Citation" variant="ghost" size="sm" />
+                <IconAction icon={<ListBullets />} label="Bullet List" variant="ghost" size="sm" />
+                <IconAction icon={<BookOpen />} label="Insert Citation" variant="ghost" size="sm" />
               </ToolbarGroup>
             </Toolbar>
           </CardContent>

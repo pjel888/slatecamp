@@ -507,7 +507,7 @@ const QuestionCardExpanded = ({
         <button
           type="button"
           onClick={onDelete}
-          className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-[#b33a3a]"
+          className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-destructive/90"
         >
           Delete question
         </button>
@@ -608,7 +608,7 @@ const DraftQuestionCard = ({
           <button
             type="button"
             onClick={onRemove}
-            className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-[#b33a3a]"
+            className="text-xs text-destructive transition-colors duration-150 ease-out hover:text-destructive/90"
           >
             Discard
           </button>
@@ -941,7 +941,7 @@ const QuestionCard = ({
             onClick={() => setShowCampPreview((v) => !v)}
             className={`rounded-sm border px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 ease-out ${
               showCampPreview
-                ? 'border-warning bg-[#FFF8EB] text-warning'
+                ? 'border-warning bg-warning-50 text-warning'
                 : 'border-border bg-white text-text-secondary hover:border-text-tertiary hover:text-text-primary'
             }`}
             title="Toggle Camp Mode preview"

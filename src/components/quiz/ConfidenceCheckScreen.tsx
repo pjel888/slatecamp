@@ -40,7 +40,7 @@ export const ConfidenceCheckScreen = ({
         </p>
 
         {/* Prompt */}
-        <h2 className="text-base font-semibold text-text-[8px]rimary text-center">
+        <h2 className="text-base font-semibold text-primary text-center">
           How confident are you in these subjects right now?
         </h2>
 
@@ -51,7 +51,7 @@ export const ConfidenceCheckScreen = ({
               key={subject}
               className="flex items-center justify-between bg-white border border-border rounded-md px-4 py-3"
             >
-              <span className="text-sm font-medium text-text-[8px]rimary truncate mr-4">
+              <span className="text-sm font-medium text-primary truncate mr-4">
                 {subject}
               </span>
               <div className="flex items-center gap-1.5 shrink-0">
@@ -66,7 +66,7 @@ export const ConfidenceCheckScreen = ({
                         'px-3 py-1 rounded-sm text-[8px]s font-medium transition-colors duration-150',
                         isSelected
                           ? 'bg-camp-cobalt text-white'
-                          : 'bg-muted text-[#555555] hover:bg-border-design',
+                          : 'bg-muted text-text-secondary hover:bg-border-design',
                       )}
                     >
                       {label}

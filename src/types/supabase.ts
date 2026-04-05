@@ -3432,6 +3432,13 @@ export type Database = {
         }
         Returns: string
       }
+      get_quiz_session_interaction_stats: {
+        Args: { p_session_id: string; p_user_id: string }
+        Returns: {
+          answered_count: number
+          correct_count: number
+        }[]
+      }
       get_review_deck: {
         Args: { p_limit?: number; p_user_id: string }
         Returns: {

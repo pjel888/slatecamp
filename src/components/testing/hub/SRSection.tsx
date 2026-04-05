@@ -32,24 +32,24 @@ const DueCycleRow = ({ cycle }: { cycle: SRDueCycle }) => {
   }, [cycle.next_retest_at])
 
   return (
-    <div className="flex items-center justify-between rounded-md border border-[#D4DAE3] bg-white px-3 py-2.5">
+    <div className="flex items-center justify-between rounded-md border border-border bg-white px-3 py-2.5">
       <div className="flex items-center gap-3">
-        <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-[#EEF2FC]">
-          <ArrowClockwise size={16} weight="bold" className="text-[#1B3FC4]" />
+        <div className="flex h-8 w-8 items-center justify-center rounded-sm bg-primary-50">
+          <ArrowClockwise size={16} weight="bold" className="text-primary" />
         </div>
         <div>
-          <p className="text-sm font-medium text-[#1A2332]">{cycle.topic_name}</p>
+          <p className="text-sm font-medium text-foreground">{cycle.topic_name}</p>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-[#4A5568]">
+            <span className="text-xs text-text-secondary">
               Spacing level {cycle.spacing_level}/4
             </span>
-            <span className="text-xs text-[#D4951A]">{dueLabel}</span>
+            <span className="text-xs text-warning">{dueLabel}</span>
           </div>
         </div>
       </div>
       <a
         href="/quiz/focused/setup"
-        className="inline-flex items-center gap-1 rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+        className="inline-flex items-center gap-1 rounded-sm bg-primary px-3 py-1.5 text-xs font-medium text-white transition-colors duration-150 hover:bg-primary-700"
       >
         Re-test
         <ArrowRight size={12} weight="bold" />
@@ -62,7 +62,7 @@ const ActiveCycleRow = ({ cycle }: { cycle: SRActiveCycle }) => {
   const isLearning = cycle.status === 'active' || cycle.status === 'reset'
 
   return (
-    <div className="flex items-center justify-between rounded-md border border-[#D4DAE3] bg-white px-3 py-2.5">
+    <div className="flex items-center justify-between rounded-md border border-border bg-white px-3 py-2.5">
       <div className="flex items-center gap-3">
         {isLearning ? (
           <SRProgressRing count={cycle.consecutive_correct} target={3} size={36} />
@@ -72,13 +72,13 @@ const ActiveCycleRow = ({ cycle }: { cycle: SRActiveCycle }) => {
           </div>
         )}
         <div>
-          <p className="text-sm font-medium text-[#1A2332]">{cycle.topic_name}</p>
-          <span className="text-xs text-[#4A5568]">
+          <p className="text-sm font-medium text-foreground">{cycle.topic_name}</p>
+          <span className="text-xs text-text-secondary">
             {isLearning
               ? `${cycle.consecutive_correct}/3 consecutive correct`
               : `Spacing — re-test in ${cycle.current_spacing_interval ?? '?'}d`}
             {cycle.total_resets > 0 && (
-              <span className="ml-1 text-[#8896A7]">
+              <span className="ml-1 text-muted-foreground">
                 ({cycle.total_resets} reset{cycle.total_resets !== 1 ? 's' : ''})
               </span>
             )}
@@ -101,7 +101,7 @@ const ProgressSummaryBar = ({ progress }: { progress: SRProgressSummary }) => {
   return (
     <div className="space-y-1.5">
       {/* Bar */}
-      <div className="flex h-2 overflow-hidden rounded-full bg-[#F8F7F5]">
+      <div className="flex h-2 overflow-hidden rounded-full bg-surface-light">
         {segments.map((seg) => (
           <div
             key={seg.label}
@@ -116,7 +116,7 @@ const ProgressSummaryBar = ({ progress }: { progress: SRProgressSummary }) => {
       {/* Legend */}
       <div className="flex items-center gap-3">
         {segments.map((seg) => (
-          <span key={seg.label} className="flex items-center gap-1 text-[10px] text-[#4A5568]">
+          <span key={seg.label} className="flex items-center gap-1 text-[10px] text-text-secondary">
             <span
               className="inline-block h-2 w-2 rounded-full"
               style={{ backgroundColor: seg.color }}
@@ -158,7 +158,7 @@ export const SRSection = ({
         action={
           <a
             href="/quiz/focused/setup"
-            className="inline-flex items-center gap-1 rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-xs font-medium text-[#1A2332] transition-colors duration-150 hover:bg-[#F8F7F5]"
+            className="inline-flex items-center gap-1 rounded-sm border border-border bg-white px-3 py-1.5 text-xs font-medium text-foreground transition-colors duration-150 hover:bg-surface-light"
           >
             <Target size={14} weight="bold" />
             Start SR Session
@@ -172,7 +172,7 @@ export const SRSection = ({
       {/* Due re-tests — highest priority */}
       {hasDue && (
         <div className="space-y-2">
-          <p className="text-xs font-medium uppercase tracking-wider text-[#D4951A]">
+          <p className="text-xs font-medium uppercase tracking-wider text-warning">
             Re-tests due
           </p>
           {dueCycles.map((cycle) => (
@@ -185,7 +185,7 @@ export const SRSection = ({
       {hasActive && (
         <div className="space-y-2">
           {hasDue && (
-            <p className="text-xs font-medium uppercase tracking-wider text-[#8896A7]">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
               In progress
             </p>
           )}
@@ -193,7 +193,7 @@ export const SRSection = ({
             <ActiveCycleRow key={cycle.id} cycle={cycle} />
           ))}
           {activeCycles.length > 5 && (
-            <p className="text-xs text-[#8896A7]">
+            <p className="text-xs text-muted-foreground">
               +{activeCycles.length - 5} more topic{activeCycles.length - 5 !== 1 ? 's' : ''}
             </p>
           )}
@@ -202,16 +202,16 @@ export const SRSection = ({
 
       {/* Empty state */}
       {!hasAnyCycles && !hasDue && (
-        <div className="rounded-md border border-dashed border-[#D4DAE3] bg-white px-4 py-6 text-center">
-          <p className="text-sm text-[#4A5568]">
+        <div className="rounded-md border border-dashed border-border bg-white px-4 py-6 text-center">
+          <p className="text-sm text-text-secondary">
             No topics in your relearning queue yet.
           </p>
-          <p className="mt-1 text-xs text-[#8896A7]">
+          <p className="mt-1 text-xs text-muted-foreground">
             Start a Focus Review session to begin mastering individual topics.
           </p>
           <a
             href="/quiz/focused/setup"
-            className="mt-3 inline-flex items-center rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+            className="mt-3 inline-flex items-center rounded-sm bg-primary px-3 py-1.5 text-xs font-medium text-white transition-colors duration-150 hover:bg-primary-700"
           >
             Start Focus Review
           </a>

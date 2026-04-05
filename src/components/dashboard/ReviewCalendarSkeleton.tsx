@@ -5,7 +5,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 
 export const ReviewCalendarSkeleton = () => {
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white p-2 animate-pulse">
+    <div className="rounded-md border border-border bg-white p-2 animate-pulse">
       {/* Header */}
       <div className="flex items-center justify-between mb-1.5">
         <div className="flex items-center gap-1.5">
@@ -20,7 +20,7 @@ export const ReviewCalendarSkeleton = () => {
         {[1, 2, 3, 4, 5, 6, 7].map((i) => (
           <div
             key={i}
-            className="flex flex-col gap-1 rounded-md border border-[#D4DAE3] bg-white p-1.5 min-w-0"
+            className="flex flex-col gap-1 rounded-md border border-border bg-white p-1.5 min-w-0"
           >
             <div className="flex items-center justify-between">
               <Skeleton className="h-2.5 w-8 bg-gray-200 dark:bg-gray-800" />
@@ -34,7 +34,7 @@ export const ReviewCalendarSkeleton = () => {
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-[#D4DAE3]">
+      <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-border">
         <div className="flex items-center gap-1">
           <Skeleton className="h-3 w-3 bg-gray-200 dark:bg-gray-800 rounded-full" />
           <Skeleton className="h-2.5 w-48 bg-gray-200 dark:bg-gray-800" />

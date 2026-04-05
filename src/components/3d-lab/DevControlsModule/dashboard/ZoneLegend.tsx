@@ -20,7 +20,7 @@ const LEGEND_ITEMS = [
 export function ZoneLegend() {
   return (
     <div>
-      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         Zone Legend
       </label>
       <div className="grid grid-cols-2 gap-x-3 gap-y-1">
@@ -34,7 +34,7 @@ export function ZoneLegend() {
                 borderColor: item.dashed ? item.color : undefined,
               }}
             />
-            <span className="text-[9px] text-[#4A5568] leading-tight">{item.label}</span>
+            <span className="text-[9px] text-text-secondary leading-tight">{item.label}</span>
           </div>
         ))}
       </div>

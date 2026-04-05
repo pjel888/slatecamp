@@ -11,11 +11,11 @@ interface Props {
 }
 
 const INTENSITY_CLASSES: Record<0 | 1 | 2 | 3 | 4, string> = {
-  0: 'bg-[#F5F7FA] border border-[#D4DAE3]',
-  1: 'bg-[#EEF2FC]',
-  2: 'bg-[#1B3FC4]/30',
-  3: 'bg-[#1B3FC4]/60',
-  4: 'bg-[#1B3FC4]',
+  0: 'bg-surface-focused border border-border',
+  1: 'bg-primary-50',
+  2: 'bg-primary/30',
+  3: 'bg-primary/60',
+  4: 'bg-primary',
 }
 
 const DAY_LABELS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
@@ -30,7 +30,7 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
   const totalQuestions = data.reduce((acc, d) => acc + d.count, 0)
 
   return (
-    <Card className="border-[#D4DAE3] bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Study Activity — This Month"
         description="Each cell is one calendar day. Darker blue means more questions answered that day."
@@ -41,10 +41,10 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
             Study Activity — {monthLabel}
           </CardTitle>
           {activeDays > 0 && (
-            <span className="text-[11px] text-[#4A5568]">
-              <span className="font-mono font-semibold text-[#1A2332]">{activeDays}</span> active days
+            <span className="text-[11px] text-text-secondary">
+              <span className="font-mono font-semibold text-foreground">{activeDays}</span> active days
               {' · '}
-              <span className="font-mono font-semibold text-[#1A2332]">{totalQuestions}</span> questions
+              <span className="font-mono font-semibold text-foreground">{totalQuestions}</span> questions
             </span>
           )}
         </div>
@@ -61,7 +61,7 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
             {/* Day-of-week header */}
             <div className="grid grid-cols-7 gap-1 mb-1">
               {DAY_LABELS.map(d => (
-                <div key={d} className="text-[10px] font-medium text-[#8896A7] text-center">
+                <div key={d} className="text-[10px] font-medium text-muted-foreground text-center">
                   {d}
                 </div>
               ))}
@@ -86,7 +86,7 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
                   >
                     <span className={cn(
                       'text-[9px] font-medium select-none',
-                      day.intensity >= 3 ? 'text-white' : 'text-[#4A5568]',
+                      day.intensity >= 3 ? 'text-white' : 'text-text-secondary',
                     )}>
                       {dayNum}
                     </span>
@@ -96,14 +96,14 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
             </div>
             {/* Legend */}
             <div className="flex items-center gap-1.5 mt-2 justify-end">
-              <span className="text-[10px] text-[#8896A7]">Less</span>
+              <span className="text-[10px] text-muted-foreground">Less</span>
               {([0, 1, 2, 3, 4] as const).map(i => (
                 <div
                   key={i}
                   className={cn('w-3 h-3 rounded-sm', INTENSITY_CLASSES[i])}
                 />
               ))}
-              <span className="text-[10px] text-[#8896A7]">More</span>
+              <span className="text-[10px] text-muted-foreground">More</span>
             </div>
           </div>
         )}

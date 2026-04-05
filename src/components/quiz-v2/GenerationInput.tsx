@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useCallback, useEffect } from 'react'
+import { useState, useRef, useCallback, useEffect, memo } from 'react'
 import { X } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { useQuizStore } from '@/stores/useQuizStore'
@@ -9,6 +9,7 @@ import { FeedbackPanel } from './FeedbackPanel'
 import { SlideToSubmit } from './SlideToSubmit'
 import { GestureCaptureZone } from './GestureCaptureZone'
 import type { QuestionForClient, FeedbackData, QuizSessionConfig } from '@/types/quiz-config'
+import type { GestureSignalEvent } from '@/types/patent'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -21,7 +22,7 @@ interface GenerationInputProps {
   confidenceLevel: 1 | 2 | 3 | null
   feedback: FeedbackData | null
   config: QuizSessionConfig
-  onSubmit: () => void
+  onSubmit: (signalTrace?: GestureSignalEvent[]) => void
   onConfidenceChange: (level: 1 | 2 | 3) => void
   onNext: () => void
 }
@@ -36,7 +37,7 @@ const PLACEHOLDER_MAP: Record<GenerationQuestionType, string> = {
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
-export const GenerationInput = ({
+export const GenerationInput = memo(({
   question,
   questionType,
   unit,
@@ -48,17 +49,18 @@ export const GenerationInput = ({
   onNext,
 }: GenerationInputProps) => {
   const inputRef = useRef<HTMLInputElement>(null)
+  const signalTraceRef = useRef<GestureSignalEvent[]>([])
   const [localValue, setLocalValue] = useState('')
 
   // ── Store bindings ─────────────────────────────────────────────────────────
   const selectAnswer = useQuizStore((s) => s.selectAnswer)
   const selectedOptionId = useQuizStore(
-    (s) => s.answers.get(question.question_id)?.selectedOptionId ?? null,
+    (s) => s.answers[question.question_id]?.selectedOptionId ?? null,
   )
 
   // Sync local state from store on question change
   useEffect(() => {
-    const storeValue = useQuizStore.getState().answers.get(question.question_id)?.selectedOptionId
+    const storeValue = useQuizStore.getState().answers[question.question_id]?.selectedOptionId
     setLocalValue(storeValue ?? '')
   }, [question.question_id])
 
@@ -107,6 +109,15 @@ export const GenerationInput = ({
     [hasAnswered, isDisabled, onSubmit],
   )
 
+  const handleGestureBuffer = useCallback((buffer: GestureSignalEvent[]) => {
+    signalTraceRef.current = buffer
+  }, [])
+
+  const handleInternalSubmit = useCallback(() => {
+    onSubmit(signalTraceRef.current)
+    signalTraceRef.current = [] // Clear after submission
+  }, [onSubmit])
+
   // ── Input type ─────────────────────────────────────────────────────────────
 
   const inputType = questionType === 'short_text' ? 'text' : 'text'
@@ -126,7 +137,7 @@ export const GenerationInput = ({
       <div className="space-y-2">
         <label
           htmlFor={`gen-input-${question.question_id}`}
-          className="text-xs font-medium text-[#4A5568]"
+          className="text-xs font-medium text-text-secondary"
         >
           Your answer
         </label>
@@ -147,12 +158,12 @@ export const GenerationInput = ({
             spellCheck={false}
             className={cn(
               'w-full rounded-md border px-4 py-3 text-base',
-              'text-[#1A2332] bg-white placeholder:text-[#8896A7]',
+              'text-foreground bg-white placeholder:text-muted-foreground',
               'transition-colors duration-150 ease-out',
-              'focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/30 focus:border-[#1B3FC4]',
-              isDisabled && feedback?.isCorrect && 'border-[#2D9F6F] bg-[#EDFAF4]',
-              isDisabled && !feedback?.isCorrect && 'border-[#D64545] bg-[#FDF0F0]',
-              !isDisabled && 'border-[#D4DAE3]',
+              'focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary',
+              isDisabled && feedback?.isCorrect && 'border-success bg-success-50',
+              isDisabled && !feedback?.isCorrect && 'border-destructive bg-destructive-50',
+              !isDisabled && 'border-border',
               isDisabled && 'pointer-events-none',
               // Large centered input for numeric/formula
               (questionType === 'numeric' || questionType === 'formula') &&
@@ -167,7 +178,7 @@ export const GenerationInput = ({
               id={`gen-unit-${question.question_id}`}
               className={cn(
                 'absolute right-10 top-1/2 -translate-y-1/2',
-                'text-sm text-[#8896A7] pointer-events-none',
+                'text-sm text-muted-foreground pointer-events-none',
               )}
             >
               {unit}
@@ -182,9 +193,9 @@ export const GenerationInput = ({
               className={cn(
                 'absolute right-3 top-1/2 -translate-y-1/2',
                 'flex items-center justify-center w-6 h-6 rounded-sm',
-                'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F8F7F5]',
+                'text-muted-foreground hover:text-text-secondary hover:bg-surface-light',
                 'transition-colors duration-150 ease-out',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
               )}
               aria-label="Clear answer"
             >
@@ -195,7 +206,7 @@ export const GenerationInput = ({
 
         {/* Character count for short_text */}
         {questionType === 'short_text' && !isDisabled && (
-          <p className="text-[11px] text-[#8896A7] text-right">
+          <p className="text-[11px] text-muted-foreground text-right">
             {localValue.length}/100
           </p>
         )}
@@ -210,9 +221,9 @@ export const GenerationInput = ({
       )}
 
       {/* Slide-to-submit bar — wrapped with signal capture zone (Patent Claims 1(a-b), 6) */}
-      <GestureCaptureZone>
+      <GestureCaptureZone onBufferReady={handleGestureBuffer}>
         <SlideToSubmit
-          onSubmit={onSubmit}
+          onSubmit={handleInternalSubmit}
           label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
           disabled={!hasAnswered || isDisabled}
           checked={isChecked}
@@ -231,4 +242,6 @@ export const GenerationInput = ({
       )}
     </div>
   )
-}
+})
+
+GenerationInput.displayName = 'GenerationInput'

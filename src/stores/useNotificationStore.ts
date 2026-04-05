@@ -13,13 +13,11 @@ interface NotificationStore {
   recentNotifications: Notification[]
   isPopoverOpen: boolean
   isLoading: boolean
-  _cleanup: (() => void) | null
   setPopoverOpen: (open: boolean) => void
   fetchUnreadCount: () => Promise<void>
   fetchRecent: () => Promise<void>
   markAsRead: (id: string) => Promise<void>
   markAllAsRead: () => Promise<void>
-  startRealtime: (userId: string) => () => void
 }
 
 export const useNotificationStore = create<NotificationStore>((set, get) => ({
@@ -27,7 +25,6 @@ export const useNotificationStore = create<NotificationStore>((set, get) => ({
   recentNotifications: [],
   isPopoverOpen: false,
   isLoading: false,
-  _cleanup: null,
 
   setPopoverOpen: (open) => {
     set({ isPopoverOpen: open })
@@ -67,44 +64,5 @@ export const useNotificationStore = create<NotificationStore>((set, get) => ({
     }))
     const result = await markAllNotificationsAsRead()
     if (result.error) get().fetchRecent()
-  },
-
-  startRealtime: (userId: string) => {
-    // Clean up any existing subscription
-    const existing = get()._cleanup
-    if (existing) existing()
-
-    // Initial fetch
-    get().fetchUnreadCount()
-
-    // Subscribe to new notifications via Supabase Realtime
-    const supabase = createClient()
-    const channel = supabase
-      .channel(`notifications:${userId}`)
-      .on(
-        'postgres_changes',
-        {
-          event: 'INSERT',
-          schema: 'public',
-          table: 'notifications',
-          filter: `user_id=eq.${userId}`,
-        },
-        (payload) => {
-          const newNotification = payload.new as Notification
-          set((s) => ({
-            unreadCount: s.unreadCount + 1,
-            recentNotifications: [newNotification, ...s.recentNotifications].slice(0, 5),
-          }))
-        }
-      )
-      .subscribe()
-
-    const cleanup = () => {
-      supabase.removeChannel(channel)
-      set({ _cleanup: null })
-    }
-
-    set({ _cleanup: cleanup })
-    return cleanup
   },
 }))

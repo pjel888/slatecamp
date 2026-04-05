@@ -39,12 +39,12 @@ export const ConfidenceInput = ({
       )}
     >
       <div className="flex items-center justify-between">
-        <span className="text-[11px] text-[#8896A7]">
+        <span className="text-[11px] text-muted-foreground">
           <span className="font-semibold">Optional</span>
           {' · '}
           How sure are you of your answer?
         </span>
-        <span className="text-[11px] text-[#8896A7] tabular-nums">
+        <span className="text-[11px] text-muted-foreground tabular-nums">
           {label} ({percentage}%)
         </span>
       </div>
@@ -85,8 +85,8 @@ export const ConfidenceInput = ({
 
         {/* Fixed labels under slider */}
         <div className="flex justify-between">
-          <span className="text-[10px] text-[#8896A7]">Guessing</span>
-          <span className="text-[10px] text-[#8896A7]">Confident</span>
+          <span className="text-[10px] text-muted-foreground">Guessing</span>
+          <span className="text-[10px] text-muted-foreground">Confident</span>
         </div>
       </div>
     </div>

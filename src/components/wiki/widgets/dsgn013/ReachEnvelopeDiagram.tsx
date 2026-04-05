@@ -42,16 +42,16 @@ export const ReachEnvelopeDiagram = () => {
   ]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
-      <div className="px-5 py-3.5 bg-muted border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="px-5 py-3.5 bg-muted border-b border-wiki-border dark:bg-wiki-surface-dark dark:border-wiki-invert-divider">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Reach Envelope Zones
         </div>
       </div>
 
       {/* Posture tabs */}
-      <div className="flex border-b border-[#E0DED8] dark:border-[#3A3835]">
+      <div className="flex border-b border-wiki-border dark:border-wiki-invert-divider">
         {buttons.map((b) => (
           <button
             key={b.key}
@@ -60,7 +60,7 @@ export const ReachEnvelopeDiagram = () => {
             className={`flex-1 py-2.5 text-[12px] font-[var(--font-dm-mono)] font-medium transition-all duration-150 border-b-2 -mb-px ${
               posture === b.key
                 ? 'text-camp-cobalt border-camp-cobalt bg-white dark:bg-wiki-ink'
-                : 'text-ink-muted border-transparent hover:text-wiki-ink dark:text-[#A8A8A5]'
+                : 'text-ink-muted border-transparent hover:text-wiki-ink dark:text-wiki-muted'
             }`}
           >
             {b.label}
@@ -77,8 +77,8 @@ export const ReachEnvelopeDiagram = () => {
             { label: 'Lowest reach', max: d.low.min, comfortable: null },
             { label: 'Side reach', max: d.side.max, comfortable: d.side.comfortable },
           ].map((zone) => (
-            <div key={zone.label} className="bg-muted rounded-lg p-3 dark:bg-[#252420]">
-              <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-2">
+            <div key={zone.label} className="bg-muted rounded-lg p-3 dark:bg-wiki-surface-dark">
+              <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-wiki-muted mb-2">
                 {zone.label}
               </div>
               <div className="font-[var(--font-dm-mono)] text-sm font-medium text-camp-cobalt mb-0.5">
@@ -94,7 +94,7 @@ export const ReachEnvelopeDiagram = () => {
         </div>
 
         {/* Notes */}
-        <div className="bg-cobalt-light rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-camp-cobalt/10 dark:text-[#C8C6C0]">
+        <div className="bg-cobalt-light rounded-lg p-3.5 text-[13px] text-wiki-body leading-relaxed dark:bg-camp-cobalt/10 dark:text-wiki-invert-body">
           <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-camp-cobalt mb-1.5 font-medium">
             {d.label} — Design Notes
           </div>

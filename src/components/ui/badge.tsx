@@ -15,7 +15,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default: 'bg-muted text-muted-foreground border-transparent',
-        primary: 'bg-primary/10 text-[8px]rimary border-transparent',
+        primary: 'bg-primary/10 text-primary border-transparent',
         success:
           'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-500/15 dark:text-emerald-400 dark:border-emerald-500/30',
         warning:
@@ -24,7 +24,7 @@ const badgeVariants = cva(
           'bg-red-50 text-red-700 border-red-200 dark:bg-red-500/15 dark:text-red-400 dark:border-red-500/30',
         info: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-500/15 dark:text-blue-400 dark:border-blue-500/30',
         purple:
-          'bg-purple-50 text-[8px]urple-700 border-purple-200 dark:bg-purple-500/15 dark:text-[8px]urple-400 dark:border-purple-500/30',
+          'bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-500/15 dark:text-purple-400 dark:border-purple-500/30',
         orange:
           'bg-orange-50 text-orange-700 border-orange-200 dark:bg-orange-500/15 dark:text-orange-400 dark:border-orange-500/30',
         outline: 'bg-transparent text-foreground border-border',
@@ -33,18 +33,28 @@ const badgeVariants = cva(
         destructive:
           'bg-destructive/10 text-destructive border-transparent dark:bg-destructive/20',
         ghost: 'bg-transparent text-muted-foreground border-transparent hover:bg-muted',
-        link: 'bg-transparent text-[8px]rimary border-transparent underline-offset-4 hover:underline',
+        link: 'bg-transparent text-primary border-transparent underline-offset-4 hover:underline',
       },
       size: {
         xs: 'px-1.5 py-0.5 text-[11px] font-mono uppercase tracking-widest [&>svg]:size-2.5',
         sm: 'px-2 py-0.5 text-[11px] font-medium [&>svg]:size-3',
-        md: 'px-2.5 py-1 text-[8px]s font-medium [&>svg]:size-3.5',
+        md: 'px-2.5 py-1 text-xs font-medium [&>svg]:size-3.5',
         lg: 'px-3 py-1 text-sm font-medium [&>svg]:size-3.5',
+      },
+      shape: {
+        default: 'rounded',
+        pill: 'rounded-full',
+      },
+      decoration: {
+        none: '',
+        dot: '',
       },
     },
     defaultVariants: {
       variant: 'default',
       size: 'sm',
+      shape: 'default',
+      decoration: 'none',
     },
   },
 )
@@ -56,8 +66,6 @@ const badgeVariants = cva(
 interface BadgeProps
   extends React.HTMLAttributes<HTMLSpanElement>,
     VariantProps<typeof badgeVariants> {
-  pill?: boolean
-  dot?: boolean
   icon?: React.ReactNode
   dismissible?: boolean
   onDismiss?: () => void
@@ -69,8 +77,8 @@ const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
       className,
       variant = 'default',
       size = 'sm',
-      pill = false,
-      dot = false,
+      shape = 'default',
+      decoration = 'none',
       icon,
       dismissible = false,
       onDismiss,
@@ -78,39 +86,48 @@ const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
       ...props
     },
     ref,
-  ) => (
-    <span
-      ref={ref}
-      data-slot="badge"
-      className={cn(
-        badgeVariants({ variant, size }),
-        pill ? 'rounded-full' : 'rounded',
-        className,
-      )}
-      {...props}
-    >
-      {dot && (
-        <span className="h-1 w-1 shrink-0 rounded-full bg-current" />
-      )}
-      {icon}
-      {children}
-      {dismissible && (
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation()
-            onDismiss?.()
-          }}
-          className="ml-0.5 -mr-0.5 inline-flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full opacity-60 transition-opacity hover:opacity-100"
-          aria-label="Dismiss"
-        >
-          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M1.5 1.5L6.5 6.5M6.5 1.5L1.5 6.5" />
-          </svg>
-        </button>
-      )}
-    </span>
-  ),
+  ) => {
+    return (
+      <span
+        ref={ref}
+        data-slot="badge"
+        className={cn(
+          badgeVariants({
+            variant,
+            size,
+            shape,
+            decoration,
+          }),
+          className,
+        )}
+        {...props}
+      >
+        {decoration === 'dot' && (
+          <span
+            data-slot="badge-dot"
+            className="h-1 w-1 shrink-0 rounded-full bg-current"
+          />
+        )}
+        {icon}
+        {children}
+        {dismissible && (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation()
+              onDismiss?.()
+            }}
+            className="ml-0.5 -mr-0.5 inline-flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full opacity-60 transition-opacity hover:opacity-100"
+            aria-label="Dismiss"
+          >
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M1.5 1.5L6.5 6.5M6.5 1.5L1.5 6.5" />
+            </svg>
+          </button>
+        )}
+      </span>
+    )
+  },
 )
 Badge.displayName = 'Badge'
 
@@ -118,15 +135,22 @@ Badge.displayName = 'Badge'
 /*  Semantic Presets                                                    */
 /* ------------------------------------------------------------------ */
 
-const StatusBadge = ({ status }: { status: 'published' | 'draft' | 'archived' | 'active' }) => {
+export type BadgeStatus = 'published' | 'draft' | 'archived' | 'active' | 'review'
+
+const StatusBadge = ({ status }: { status: BadgeStatus }) => {
   const config = {
     published: { variant: 'success' as const, label: 'Published' },
     draft: { variant: 'warning' as const, label: 'Draft' },
     archived: { variant: 'default' as const, label: 'Archived' },
     active: { variant: 'primary' as const, label: 'Active' },
+    review: { variant: 'info' as const, label: 'Review' },
   }
   const { variant, label } = config[status]
-  return <Badge variant={variant} size="sm" dot>{label}</Badge>
+  return (
+    <Badge variant={variant} size="sm" decoration="dot">
+      {label}
+    </Badge>
+  )
 }
 
 const VerificationBadge = ({ status, count }: { status: 'clean' | 'has_issues' | 'unverified'; count?: number }) => {
@@ -157,7 +181,7 @@ const SessionModeBadge = ({ mode }: { mode: 'camp' | 'storm' | 'blindspot' | 'pr
     proof: { variant: 'orange' as const, label: 'PROOF', icon: <Trophy /> },
   }
   const { variant, label, icon } = config[mode]
-  return <Badge variant={variant} size="xs" icon={icon} pill>{label}</Badge>
+  return <Badge variant={variant} size="xs" icon={icon} shape="pill">{label}</Badge>
 }
 
 const MasteryBadge = ({ tier }: { tier: 'building' | 'developing' | 'proficient' | 'mastered' }) => {
@@ -168,7 +192,11 @@ const MasteryBadge = ({ tier }: { tier: 'building' | 'developing' | 'proficient'
     mastered: { variant: 'success' as const, label: 'Mastered' },
   }
   const { variant, label } = config[tier]
-  return <Badge variant={variant} size="sm" dot>{label}</Badge>
+  return (
+    <Badge variant={variant} size="sm" decoration="dot">
+      {label}
+    </Badge>
+  )
 }
 
 export {

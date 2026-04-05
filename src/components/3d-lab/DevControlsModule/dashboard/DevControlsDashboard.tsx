@@ -26,28 +26,28 @@ function SelectionDetail() {
   if (!data) return null
 
   return (
-    <div className="rounded-md border border-[#1B3FC4] bg-[#EEF2FC] p-3">
+    <div className="rounded-md border border-primary bg-primary-50 p-3">
       <div className="flex items-center justify-between mb-1">
-        <span className="text-[10px] font-medium uppercase tracking-wider text-[#1B3FC4]">
+        <span className="text-[10px] font-medium uppercase tracking-wider text-primary">
           {data.layerType.toUpperCase()}
         </span>
         <button
           onClick={clearSelection}
-          className="text-[10px] text-[#8896A7] hover:text-[#1A2332] transition-colors duration-150"
+          className="text-[10px] text-muted-foreground hover:text-foreground transition-colors duration-150"
         >
           Deselect
         </button>
       </div>
-      <p className="text-sm font-medium text-[#1A2332] mb-1">{data.displayName}</p>
+      <p className="text-sm font-medium text-foreground mb-1">{data.displayName}</p>
       <div className="space-y-0.5 mb-2">
         {Object.entries(data.computedValues).map(([key, val]) => (
           <div key={key} className="flex items-baseline justify-between text-[10px]">
-            <span className="text-[#8896A7]">{key}</span>
-            <span className="font-mono text-[#1A2332]">{val}</span>
+            <span className="text-muted-foreground">{key}</span>
+            <span className="font-mono text-foreground">{val}</span>
           </div>
         ))}
       </div>
-      <p className="font-mono text-[8px] text-[#8896A7]">{data.codeReference}</p>
+      <p className="font-mono text-[8px] text-muted-foreground">{data.codeReference}</p>
     </div>
   )
 }
@@ -68,11 +68,11 @@ export function ComputedHUD() {
   return (
     <div className="flex flex-wrap gap-1.5">
       {metrics.map((m) => (
-        <div key={m.label} className="min-w-[60px] flex-1 rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-2 py-1.5">
-          <div className="text-[9px] font-medium uppercase tracking-wider text-[#8896A7]">{m.label}</div>
-          <div className="font-mono text-sm font-medium text-[#1A2332]">
+        <div key={m.label} className="min-w-[60px] flex-1 rounded-sm border border-border bg-surface-light px-2 py-1.5">
+          <div className="text-[9px] font-medium uppercase tracking-wider text-muted-foreground">{m.label}</div>
+          <div className="font-mono text-sm font-medium text-foreground">
             {m.value}
-            {m.unit && <span className="ml-0.5 text-[9px] font-normal text-[#8896A7]">{m.unit}</span>}
+            {m.unit && <span className="ml-0.5 text-[9px] font-normal text-muted-foreground">{m.unit}</span>}
           </div>
         </div>
       ))}
@@ -88,13 +88,13 @@ export function LeftToolbar() {
   return (
     <div className="flex h-full flex-col gap-4 overflow-y-auto p-4">
       <PresetSelector />
-      <hr className="border-[#D4DAE3]" />
+      <hr className="border-border" />
       <LotInputPanel />
       <ZoningInputPanel />
       <FlarPanel />
       <BhlPanel />
       <FirewallPanel />
-      <hr className="border-[#D4DAE3]" />
+      <hr className="border-border" />
       <ProposedBuildingPanel />
     </div>
   )
@@ -109,20 +109,20 @@ export function RightToolbar() {
   return (
     <div className="flex h-full flex-col gap-4 overflow-y-auto p-4">
       <LayerToggles />
-      <hr className="border-[#D4DAE3]" />
+      <hr className="border-border" />
       <SelectionDetail />
       <ComputedHUD />
-      <hr className="border-[#D4DAE3]" />
+      <hr className="border-border" />
       <AMBFThreeWayPanel />
       <ClosureEquationStrip />
-      <hr className="border-[#D4DAE3]" />
+      <hr className="border-border" />
       <ComplianceScorecard />
       <ZoneLegend />
       {/* Code reference footer */}
-      <div className="mt-auto border-t border-[#D4DAE3] pt-3">
-        <p className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">Code Reference</p>
-        <p className="mt-1 text-xs text-[#4A5568]">PD 1096 Rules VII & VIII — Site Development Controls</p>
-        <p className="mt-0.5 font-mono text-[9px] text-[#8896A7]">2004 Revised IRR (DPWH, April 2005)</p>
+      <div className="mt-auto border-t border-border pt-3">
+        <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">Code Reference</p>
+        <p className="mt-1 text-xs text-text-secondary">PD 1096 Rules VII & VIII — Site Development Controls</p>
+        <p className="mt-0.5 font-mono text-[9px] text-muted-foreground">2004 Revised IRR (DPWH, April 2005)</p>
       </div>
     </div>
   )
@@ -147,7 +147,7 @@ export function MobileBottomSheet() {
 
   return (
     <div
-      className={`fixed inset-x-0 bottom-0 z-30 rounded-t-lg border-t border-[#D4DAE3] bg-white shadow-md transition-transform duration-200 ease-out md:hidden ${
+      className={`fixed inset-x-0 bottom-0 z-30 rounded-t-lg border-t border-border bg-white shadow-md transition-transform duration-200 ease-out md:hidden ${
         expanded ? 'translate-y-0' : 'translate-y-[calc(100%-110px)]'
       }`}
       style={{ maxHeight: '70vh' }}
@@ -158,7 +158,7 @@ export function MobileBottomSheet() {
         onTouchEnd={handleTouchEnd}
         onClick={() => setExpanded(!expanded)}
       >
-        <div className="h-1 w-8 rounded-full bg-[#D4DAE3]" />
+        <div className="h-1 w-8 rounded-full bg-border" />
       </div>
       <div className="px-4 pb-2">
         <ComputedHUD />
@@ -170,7 +170,7 @@ export function MobileBottomSheet() {
           <LotInputPanel />
           <ZoningInputPanel />
           <ProposedBuildingPanel />
-          <hr className="border-[#D4DAE3]" />
+          <hr className="border-border" />
           {/* Outputs */}
           <CameraPresetBar />
           <AMBFThreeWayPanel />

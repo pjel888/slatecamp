@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import type { QuizSessionConfig } from '@/types/quiz-config'
@@ -13,7 +14,7 @@ interface QuizFooterProps {
   onNext: () => void
 }
 
-export const QuizFooter = ({
+export const QuizFooter = memo(({
   config,
   currentPosition,
   totalQuestions,
@@ -27,7 +28,7 @@ export const QuizFooter = ({
 
   return (
     <footer
-      className="flex items-center justify-between px-4 py-3 border-t border-[#D4DAE3] bg-white"
+      className="flex items-center justify-between px-4 py-3 border-t border-border bg-white"
       aria-label="Quiz navigation"
     >
       {/* Previous — ghost text button */}
@@ -37,8 +38,8 @@ export const QuizFooter = ({
             type="button"
             onClick={onPrevious}
             className={cn(
-              'inline-flex items-center gap-1 text-[13px] text-[#4A5568]',
-              'hover:text-[#1A2332] transition-colors duration-150',
+              'inline-flex items-center gap-1 text-[13px] text-text-secondary',
+              'hover:text-foreground transition-colors duration-150',
               'min-h-[44px] px-1',
               'focus-visible:outline-none focus-visible:underline',
             )}
@@ -51,7 +52,7 @@ export const QuizFooter = ({
       </div>
 
       {/* Center fraction */}
-      <span className="text-xs text-[#8896A7] tabular-nums">
+      <span className="text-xs text-muted-foreground tabular-nums">
         {currentPosition} / {totalQuestions}
       </span>
 
@@ -65,7 +66,7 @@ export const QuizFooter = ({
             'min-h-[44px] px-1',
             'transition-colors duration-150',
             'focus-visible:outline-none focus-visible:underline',
-            'text-[#1B3FC4] hover:text-[#1535A8]',
+            'text-primary hover:text-primary-700',
           )}
           aria-label={isLast ? 'See results' : 'Next question'}
         >
@@ -75,4 +76,6 @@ export const QuizFooter = ({
       </div>
     </footer>
   )
-}
+})
+
+QuizFooter.displayName = 'QuizFooter'

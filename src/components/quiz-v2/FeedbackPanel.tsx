@@ -90,8 +90,8 @@ export const FeedbackPanel = ({
       className={cn(
         'rounded-md border p-4 space-y-3 animate-in fade-in slide-in-from-bottom-1 duration-150',
         feedback.isCorrect
-          ? 'bg-[#EDFAF4] border-[#2D9F6F]/20'
-          : 'bg-[#FEF8ED] border-[#D4951A]/20',
+          ? 'bg-success-50 border-success/20'
+          : 'bg-warning-50 border-warning/20',
       )}
     >
       {/* Heading row */}
@@ -100,21 +100,21 @@ export const FeedbackPanel = ({
           <CheckCircle
             size={18}
             weight="fill"
-            className="text-[#2D9F6F] shrink-0"
+            className="text-success shrink-0"
             aria-hidden="true"
           />
         ) : (
           <ArrowRight
             size={18}
             weight="bold"
-            className="text-[#D4951A] shrink-0"
+            className="text-warning shrink-0"
             aria-hidden="true"
           />
         )}
         <span
           className={cn(
             'text-sm font-semibold',
-            feedback.isCorrect ? 'text-[#2D9F6F]' : 'text-[#D4951A]',
+            feedback.isCorrect ? 'text-success' : 'text-warning',
           )}
         >
           {feedback.isCorrect
@@ -130,14 +130,14 @@ export const FeedbackPanel = ({
       {/* Wrong-answer context — generation questions */}
       {!feedback.isCorrect && isGeneration && (
         <div className="space-y-1.5">
-          <p className="text-xs text-[#4A5568] leading-relaxed">
-            You answered <span className="font-medium font-mono text-[#1A2332]">{selectedOptionId}</span>.
+          <p className="text-xs text-text-secondary leading-relaxed">
+            You answered <span className="font-medium font-mono text-foreground">{selectedOptionId}</span>.
           </p>
           {feedback.correctAnswer && (
-            <p className="text-xs text-[#4A5568] leading-relaxed">
+            <p className="text-xs text-text-secondary leading-relaxed">
               {feedback.closeness != null && feedback.closeness > 0.8
-                ? <>The correct value is <span className="font-medium font-mono text-[#1A2332]">{feedback.correctAnswer}</span>.</>
-                : <>The correct answer is <span className="font-medium font-mono text-[#1A2332]">{feedback.correctAnswer}</span>.</>}
+                ? <>The correct value is <span className="font-medium font-mono text-foreground">{feedback.correctAnswer}</span>.</>
+                : <>The correct answer is <span className="font-medium font-mono text-foreground">{feedback.correctAnswer}</span>.</>}
             </p>
           )}
         </div>
@@ -145,22 +145,22 @@ export const FeedbackPanel = ({
 
       {/* Correct-answer context — generation questions */}
       {feedback.isCorrect && isGeneration && feedback.correctAnswer && (
-        <p className="text-xs text-[#4A5568] leading-relaxed">
-          The answer is <span className="font-medium font-mono text-[#2D9F6F]">{feedback.correctAnswer}</span>.
+        <p className="text-xs text-text-secondary leading-relaxed">
+          The answer is <span className="font-medium font-mono text-success">{feedback.correctAnswer}</span>.
         </p>
       )}
 
       {/* Wrong-answer context — MCQ questions */}
       {!feedback.isCorrect && !isGeneration && (
-        <p className="text-xs text-[#4A5568] leading-relaxed">
+        <p className="text-xs text-text-secondary leading-relaxed">
           {selectedOption && (
             <>
-              You chose <span className="font-medium text-[#1A2332]">{selectedOption.letter}. {selectedOption.text}</span>.{' '}
+              You chose <span className="font-medium text-foreground">{selectedOption.letter}. {selectedOption.text}</span>.{' '}
             </>
           )}
           {correctOption && (
             <>
-              The correct answer is <span className="font-medium text-[#1A2332]">{correctOption.letter}. {correctOption.text}</span>.
+              The correct answer is <span className="font-medium text-foreground">{correctOption.letter}. {correctOption.text}</span>.
             </>
           )}
         </p>
@@ -168,14 +168,14 @@ export const FeedbackPanel = ({
 
       {/* Error diagnostic banner — shown above rationale for wrong answers with high-confidence classification */}
       {feedback.errorDiagnostic && !feedback.isCorrect && (
-        <div className="flex items-start gap-2 rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-2">
+        <div className="flex items-start gap-2 rounded-sm border border-border bg-surface-light px-3 py-2">
           <Lightbulb
             size={14}
             weight="fill"
-            className="text-[#D4951A] shrink-0 mt-0.5"
+            className="text-warning shrink-0 mt-0.5"
             aria-hidden="true"
           />
-          <p className="text-xs text-[#4A5568] leading-relaxed">
+          <p className="text-xs text-text-secondary leading-relaxed">
             {feedback.errorDiagnostic.message}
           </p>
         </div>
@@ -183,7 +183,7 @@ export const FeedbackPanel = ({
 
       {/* Rationale */}
       {feedback.rationale && (
-        <p className="text-sm text-[#4A5568] leading-relaxed">{feedback.rationale}</p>
+        <p className="text-sm text-text-secondary leading-relaxed">{feedback.rationale}</p>
       )}
 
       {/* Wiki link */}
@@ -191,7 +191,7 @@ export const FeedbackPanel = ({
         <button
           type="button"
           onClick={() => openWikiPanel(feedback.wikiUrl!)}
-          className="inline-flex items-center gap-1 text-xs text-[#1B3FC4] hover:underline cursor-pointer"
+          className="inline-flex items-center gap-1 text-xs text-primary hover:underline cursor-pointer"
         >
           <ArrowSquareOut size={12} aria-hidden="true" />
           Read more
@@ -211,16 +211,16 @@ export const FeedbackPanel = ({
         {/* Countdown explanation + progress bar (always visible when gated) */}
         {gatedDelayMs > 0 && (
           <div className="space-y-1.5">
-            <p className="text-[11px] text-[#8896A7]">
+            <p className="text-[11px] text-muted-foreground">
               {nextReady
                 ? 'Ready — tap Next question to continue'
                 : `Review the explanation — next question in ${countdownSeconds}s`}
             </p>
-            <div className="h-1 rounded-full bg-[#D4DAE3] overflow-hidden">
+            <div className="h-1 rounded-full bg-border overflow-hidden">
               <div
                 className={cn(
                   'h-full rounded-full transition-none',
-                  nextReady ? 'bg-[#2D9F6F]' : 'bg-[#1B3FC4]/40',
+                  nextReady ? 'bg-success' : 'bg-primary/40',
                 )}
                 style={{ width: `${countdownProgress * 100}%` }}
               />
@@ -250,7 +250,7 @@ export const FeedbackPanel = ({
               variant="outline"
               size="sm"
               onClick={() => setSocraticOpen(true)}
-              className="border-[#1B3FC4]/30 text-[#1B3FC4] hover:bg-[#EEF2FC]"
+              className="border-primary/30 text-primary hover:bg-primary-50"
             >
               <ChatCircleDots size={14} weight="bold" aria-hidden="true" />
               Why was I wrong?

@@ -1,6 +1,23 @@
+'use server'
+
 import { unstable_cache } from 'next/cache'
 import { createStaticClient } from '@/lib/supabase/server'
 import { resolveArticleAndNode } from './wiki-actions'
+import { CACHE_TAGS, getTaxonomyDisciplineTag } from './cache-tags'
+
+const toExcerpt = (content: string, maxLength = 150) => {
+  const plainText = content
+    .replace(/#{1,6}\s+/g, '')
+    .replace(/\*\*/g, '')
+    .replace(/\*/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\n+/g, ' ')
+    .trim()
+
+  return plainText.length > maxLength
+    ? `${plainText.slice(0, maxLength - 3)}...`
+    : plainText
+}
 
 // ── Global data caches (same for all users, revalidate hourly) ───────────
 
@@ -35,8 +52,40 @@ export const getCachedTaxonomyTree = unstable_cache(
     return data ?? []
   },
   ['taxonomy-tree-dashboard'],
-  { revalidate: 3600 }
+  {
+    revalidate: false,
+    tags: [CACHE_TAGS.taxonomy],
+  }
 )
+
+const getCachedTaxonomyTreeByDisciplineFetcher = (disciplineId: string) =>
+  unstable_cache(
+    async () => {
+    const supabase = await createStaticClient()
+    const { data } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id, parent_id, level, name, subject_area, ale_id, is_leaf')
+      .eq('discipline_id', disciplineId)
+      .in('level', [1, 2, 3])
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null)
+      .order('subject_area')
+      .order('level')
+      .order('name')
+
+    return data ?? []
+  },
+    ['taxonomy-tree-by-discipline', disciplineId],
+    {
+      revalidate: false,
+      tags: [CACHE_TAGS.taxonomy, getTaxonomyDisciplineTag(disciplineId)],
+    },
+  )
+
+/** Dashboard taxonomy tree, scoped to the user's current discipline. */
+export const getCachedTaxonomyTreeByDiscipline = async (disciplineId: string) =>
+  getCachedTaxonomyTreeByDisciplineFetcher(disciplineId)()
 
 /** Wiki articles for daily rotation on dashboard. */
 export const getCachedWikiArticles = unstable_cache(
@@ -45,17 +94,30 @@ export const getCachedWikiArticles = unstable_cache(
     const { data } = await supabase
       .from('wiki_articles')
       .select('article_id, title, slug, content')
+      .eq('status', 'published')
       .order('created_at', { ascending: true })
       .limit(50)
-    return data ?? []
+
+    return (data ?? []).map((article) => ({
+      article_id: article.article_id,
+      title: article.title,
+      slug: article.slug,
+      excerpt: toExcerpt(article.content ?? ''),
+    }))
   },
   ['wiki-articles-rotation'],
-  { revalidate: 3600 }
+  {
+    revalidate: false,
+    tags: [CACHE_TAGS.wiki],
+  }
 )
 
 /** Wiki article + taxonomy node by slug — per-slug cache. */
 export const getCachedArticleAndNode = unstable_cache(
   async (slug: string) => resolveArticleAndNode(slug),
   ['wiki-article'],
-  { revalidate: 3600 }
+  {
+    revalidate: false,
+    tags: [CACHE_TAGS.wiki, CACHE_TAGS.taxonomy],
+  }
 )

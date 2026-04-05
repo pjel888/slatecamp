@@ -2,9 +2,9 @@ import { cn } from '@/lib/utils'
 import type { WikiArticleHeroProps } from '@/types/wiki'
 
 const difficultyStyle = {
-  Foundational: 'bg-success-50 text-[#166534]',
-  Intermediate: 'bg-signal-gold-light text-[#92400E]',
-  Advanced: 'bg-[#FFF0EF] text-[#991B1B]',
+  Foundational: 'bg-success-50 text-success-700',
+  Intermediate: 'bg-signal-gold-light text-[var(--signal-gold-deep)]',
+  Advanced: 'bg-destructive-50 text-destructive-700',
 } as const
 
 export const WikiArticleHero = ({
@@ -32,7 +32,7 @@ export const WikiArticleHero = ({
 
       {/* Title — Boldonse 400 weight, only element using font-display */}
       <h1 className={cn(
-        "font-[var(--font-display)] font-extrabold text-2xl sm:text-[30px] text-wiki-ink leading-tight dark:text-[#E2E0D8]",
+        "font-[var(--font-display)] font-extrabold text-2xl sm:text-[30px] text-wiki-ink leading-tight dark:text-wiki-invert-heading",
         isMinimal && "text-[8px] sm:text-[8px]"
       )}>
         {title}
@@ -40,21 +40,21 @@ export const WikiArticleHero = ({
 
       {/* Updated metadata */}
       {!isMinimal && (
-        <p className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5]">
+        <p className="font-[var(--font-dm-mono)] text-[11px] text-wiki-muted">
           {updatedNote}
         </p>
       )}
 
       {/* Hero divider — separates hero from article content */}
-      <div className={cn("border-t border-[#E0DED8] mt-7 dark:border-[#3A3835]", isMinimal && "mt-2")} />
+      <div className={cn("border-t border-wiki-border mt-7 dark:border-wiki-invert-divider", isMinimal && "mt-2")} />
 
       {/* ALE orientation banner — NOT a callout */}
       {!isMinimal && (
-        <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-[#1B3FC410]">
+        <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-primary/10">
           <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-camp-cobalt mb-1">
             The ALE tests you to
           </p>
-          <p className="text-sm text-[#3D3D3A] leading-relaxed dark:text-[#C8C6C0]">
+          <p className="text-sm text-wiki-body leading-relaxed dark:text-wiki-invert-body">
             {aleTestsYou}
           </p>
         </div>

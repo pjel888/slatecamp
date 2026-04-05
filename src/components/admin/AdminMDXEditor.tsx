@@ -392,8 +392,8 @@ export const AdminMDXEditor = ({ article, taxonomyNodes = [] }: AdminMDXEditorPr
           onClick={() => setStatus(s => s === 'published' ? 'draft' : 'published')}
           className={`shrink-0 rounded-sm px-2.5 py-1 font-mono text-[11px] font-medium transition-colors duration-150 ${
             status === 'published'
-              ? 'bg-success-50 text-emerald hover:bg-[#d5f5e8]'
-              : 'bg-warning-50 text-warning hover:bg-[#fdefd0]'
+              ? 'bg-success-50 text-emerald hover:bg-success-100'
+              : 'bg-warning-50 text-warning hover:bg-warning-100'
           }`}
         >
           {status === 'published' ? 'Published' : 'Draft'}

@@ -29,20 +29,20 @@ const getCalibrationLabel = (
   if (absGap <= 5) {
     return {
       text: 'Well-calibrated',
-      colorClass: 'text-[#2D9F6F]',
+      colorClass: 'text-success',
     }
   }
 
   if (gap > 0) {
     return {
       text: 'Overconfident',
-      colorClass: 'text-[#D4951A]',
+      colorClass: 'text-warning',
     }
   }
 
   return {
     text: 'Underconfident',
-    colorClass: 'text-[#1B3FC4]',
+    colorClass: 'text-primary',
   }
 }
 
@@ -64,8 +64,8 @@ const ScoreDot = ({
       aria-hidden="true"
     />
     <div className="flex items-baseline gap-1.5">
-      <span className="text-[13px] text-[#4A5568]">{label}</span>
-      <span className="text-[13px] font-semibold tabular-nums text-[#1A2332]">
+      <span className="text-[13px] text-text-secondary">{label}</span>
+      <span className="text-[13px] font-semibold tabular-nums text-foreground">
         {value}%
       </span>
     </div>
@@ -133,9 +133,9 @@ const PredictionComparison = ({
   const calibration = getCalibrationLabel(predictionGap)
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white p-5">
+    <div className="rounded-md border border-border bg-white p-5">
       {/* Header */}
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-4">
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-4">
         Self-Assessment Accuracy
       </p>
 
@@ -153,13 +153,13 @@ const PredictionComparison = ({
       </div>
 
       {/* Divider */}
-      <div className="h-px bg-[#D4DAE3] my-4" />
+      <div className="h-px bg-border my-4" />
 
       {/* Calibration gap */}
       <div className="flex items-baseline justify-between">
-        <span className="text-[13px] text-[#4A5568]">Calibration gap</span>
+        <span className="text-[13px] text-text-secondary">Calibration gap</span>
         <div className="flex items-baseline gap-2">
-          <span className="text-[13px] font-semibold tabular-nums text-[#1A2332]">
+          <span className="text-[13px] font-semibold tabular-nums text-foreground">
             {formatGap(predictionGap)}
           </span>
           <span className={cn('text-[13px] font-medium', calibration.colorClass)}>
@@ -170,7 +170,7 @@ const PredictionComparison = ({
 
       {/* Trend line */}
       {trendText && (
-        <p className="mt-3 text-[13px] text-[#2D9F6F]">{trendText}</p>
+        <p className="mt-3 text-[13px] text-success">{trendText}</p>
       )}
     </div>
   )

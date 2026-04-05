@@ -66,14 +66,14 @@ export const ProgressCard = ({ report }: Props) => {
         {/* Header */}
         <div className="flex items-center justify-between mb-3">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8896A7]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
               Monthly Progress
             </p>
-            <p className="text-xs text-[#4A5568] mt-0.5">
+            <p className="text-xs text-text-secondary mt-0.5">
               {formatPeriod(report.period.start, report.period.end)}
             </p>
           </div>
-          <span className="text-[10px] font-bold text-[#8896A7] tracking-wider uppercase">
+          <span className="text-[10px] font-bold text-muted-foreground tracking-wider uppercase">
             SlateCamp
           </span>
         </div>
@@ -81,28 +81,28 @@ export const ProgressCard = ({ report }: Props) => {
         {/* Metrics Grid */}
         <div className="grid grid-cols-2 gap-3">
           {/* Questions Answered */}
-          <div className="rounded-md bg-[#F8F7F5] px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[#8896A7]">
+          <div className="rounded-md bg-surface-light px-3 py-2.5">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
               Questions
             </p>
-            <p className="text-lg font-extrabold text-[#1A2332] tabular-nums mt-0.5">
+            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
               {report.questionsAnswered.toLocaleString()}
             </p>
           </div>
 
           {/* Readiness Score Change */}
-          <div className="rounded-md bg-[#F8F7F5] px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[#8896A7]">
+          <div className="rounded-md bg-surface-light px-3 py-2.5">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
               Readiness
             </p>
             <div className="flex items-center gap-1 mt-0.5">
               <span
                 className={`text-lg font-extrabold tabular-nums ${
                   rsDirection === 'up'
-                    ? 'text-[#2D9F6F]'
+                    ? 'text-success'
                     : rsDirection === 'down'
-                      ? 'text-[#D64545]'
-                      : 'text-[#1A2332]'
+                      ? 'text-destructive'
+                      : 'text-foreground'
                 }`}
               >
                 {rsChange > 0 ? '+' : ''}{rsChange}%
@@ -112,42 +112,42 @@ export const ProgressCard = ({ report }: Props) => {
                 size="xs"
                 className={
                   rsDirection === 'up'
-                    ? 'text-[#2D9F6F]'
+                    ? 'text-success'
                     : rsDirection === 'down'
-                      ? 'text-[#D64545]'
-                      : 'text-[#8896A7]'
+                      ? 'text-destructive'
+                      : 'text-muted-foreground'
                 }
               />
             </div>
           </div>
 
           {/* Topics Improved */}
-          <div className="rounded-md bg-[#F8F7F5] px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[#8896A7]">
+          <div className="rounded-md bg-surface-light px-3 py-2.5">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
               Topics Improved
             </p>
-            <p className="text-lg font-extrabold text-[#1A2332] tabular-nums mt-0.5">
+            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
               {report.nodesImproved}
             </p>
           </div>
 
           {/* Study Time */}
-          <div className="rounded-md bg-[#F8F7F5] px-3 py-2.5">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-[#8896A7]">
+          <div className="rounded-md bg-surface-light px-3 py-2.5">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
               Study Time
             </p>
-            <p className="text-lg font-extrabold text-[#1A2332] tabular-nums mt-0.5">
+            <p className="text-lg font-extrabold text-foreground tabular-nums mt-0.5">
               {formatMinutes(report.studyMinutes)}
             </p>
           </div>
         </div>
 
         {/* Sessions */}
-        <div className="mt-3 rounded-md bg-[#EEF2FC] px-3 py-2 flex items-center justify-between">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-[#1B3FC4]">
+        <div className="mt-3 rounded-md bg-primary-50 px-3 py-2 flex items-center justify-between">
+          <p className="text-[10px] font-bold uppercase tracking-wider text-primary">
             Sessions Completed
           </p>
-          <p className="text-sm font-extrabold text-[#1B3FC4] tabular-nums">
+          <p className="text-sm font-extrabold text-primary tabular-nums">
             {report.sessionsCompleted}
           </p>
         </div>
@@ -158,7 +158,7 @@ export const ProgressCard = ({ report }: Props) => {
         <button
           type="button"
           onClick={handleDownload}
-          className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-xs font-semibold text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5]"
+          className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-border bg-white px-3 py-1.5 text-xs font-semibold text-text-secondary transition-colors duration-150 hover:bg-surface-light"
         >
           <SCIcon icon={DownloadSimple} size="xs" />
           Copy Summary
@@ -167,7 +167,7 @@ export const ProgressCard = ({ report }: Props) => {
           <button
             type="button"
             onClick={handleShare}
-            className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-[#1B3FC4] bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8]"
+            className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-primary bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 hover:bg-primary-700"
           >
             <SCIcon icon={ShareNetwork} size="xs" />
             Share

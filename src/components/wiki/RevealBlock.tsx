@@ -106,17 +106,17 @@ export const RevealBlock = ({
   const isHidden = progress < 0.05
 
   return (
-    <div className="my-4 rounded-md border border-[#D4DAE3] bg-white overflow-hidden">
+    <div className="my-4 rounded-md border border-border bg-white overflow-hidden">
       {/* Prompt header */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-[#F8F7F5] border-b border-[#D4DAE3]">
+      <div className="flex items-center justify-between px-4 py-2.5 bg-surface-light border-b border-border">
         <div className="flex items-center gap-2">
           <EyeSlash
             size={14}
             weight="regular"
-            className="text-[#8896A7] shrink-0"
+            className="text-muted-foreground shrink-0"
             aria-hidden="true"
           />
-          <span className="text-[12px] font-medium text-[#4A5568]">
+          <span className="text-[12px] font-medium text-text-secondary">
             {prompt}
           </span>
         </div>
@@ -127,10 +127,10 @@ export const RevealBlock = ({
           className={cn(
             'inline-flex items-center gap-1 px-2 py-1 rounded-sm text-[11px] font-medium',
             'transition-colors duration-150',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
             isRevealed
-              ? 'text-[#1B3FC4] hover:bg-[#EEF2FC]'
-              : 'text-[#8896A7] hover:text-[#4A5568]',
+              ? 'text-primary hover:bg-primary-50'
+              : 'text-muted-foreground hover:text-text-secondary',
           )}
           aria-label={isRevealed ? 'Hide content' : 'Reveal content'}
         >
@@ -164,7 +164,7 @@ export const RevealBlock = ({
         {/* Overlay hint when fully hidden */}
         {isHidden && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <span className="text-[13px] text-[#8896A7] bg-white/80 px-3 py-1.5 rounded-sm">
+            <span className="text-[13px] text-muted-foreground bg-white/80 px-3 py-1.5 rounded-sm">
               {label}
             </span>
           </div>
@@ -188,13 +188,13 @@ export const RevealBlock = ({
         >
           {/* Track background */}
           <div
-            className="absolute left-0 right-0 rounded-full bg-[#D4DAE3]"
+            className="absolute left-0 right-0 rounded-full bg-border"
             style={{ height: TRACK_HEIGHT, top: (handleSize - TRACK_HEIGHT) / 2 }}
           />
 
           {/* Track fill */}
           <div
-            className="absolute left-0 rounded-full bg-[#1B3FC4]/20"
+            className="absolute left-0 rounded-full bg-primary/20"
             style={{
               height: TRACK_HEIGHT,
               top: (handleSize - TRACK_HEIGHT) / 2,
@@ -211,10 +211,10 @@ export const RevealBlock = ({
               'cursor-grab active:cursor-grabbing',
               'transition-shadow duration-150',
               'border-2 shadow-sm',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/40 focus-visible:ring-offset-2',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
               isRevealed
-                ? 'bg-[#1B3FC4] border-[#1B3FC4] text-white'
-                : 'bg-white border-[#D4DAE3] text-[#8896A7] hover:border-[#1B3FC4]/40 hover:shadow-md',
+                ? 'bg-primary border-primary text-white'
+                : 'bg-white border-border text-muted-foreground hover:border-primary/40 hover:shadow-md',
             )}
             style={{
               width: handleSize,

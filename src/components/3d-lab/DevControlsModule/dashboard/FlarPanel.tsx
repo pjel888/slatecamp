@@ -31,17 +31,17 @@ export function FlarPanel() {
 
   return (
     <div>
-      <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         Floor Area Ratios
       </label>
 
       {/* FLAR slider — always interactive */}
       <div>
         <div className="mb-1 flex items-baseline justify-between">
-          <label className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+          <label className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
             FLAR
           </label>
-          <span className={`font-mono text-xs font-medium ${isOutOfRange ? 'text-[#D4951A]' : 'text-[#1A2332]'}`}>
+          <span className={`font-mono text-xs font-medium ${isOutOfRange ? 'text-warning' : 'text-foreground'}`}>
             {currentFlar.toFixed(2)}
           </span>
         </div>
@@ -52,62 +52,62 @@ export function FlarPanel() {
           step={0.05}
           value={sliderValue}
           onChange={(e) => setFlarOverride(Number(e.target.value))}
-          className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-[#D4DAE3] accent-[#1B3FC4]"
+          className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-border accent-primary"
           aria-label="FLAR"
         />
-        <div className="mt-0.5 flex justify-between text-[8px] text-[#8896A7]">
+        <div className="mt-0.5 flex justify-between text-[8px] text-muted-foreground">
           <span>{EXPERIMENT_MIN}</span>
-          <span className="font-medium text-[#1B3FC4]">
+          <span className="font-medium text-primary">
             Zone: {flarRange.min.toFixed(2)}{flarRange.min !== flarRange.max ? `–${flarRange.max.toFixed(2)}` : ''}
           </span>
           <span>{Math.max(EXPERIMENT_MAX, flarRange.max)}</span>
         </div>
         {isOutOfRange && (
-          <p className="mt-0.5 text-[9px] text-[#D4951A]">
+          <p className="mt-0.5 text-[9px] text-warning">
             Outside zone range — experimentation mode
           </p>
         )}
       </div>
 
       {/* Computed metrics */}
-      <div className="mt-2 rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] p-2">
+      <div className="mt-2 rounded-sm border border-border bg-surface-light p-2">
         <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-[10px]">
-          <span className="text-[#8896A7]">FLAR (applied)</span>
-          <span className={`font-mono ${isOutOfRange ? 'text-[#D4951A]' : 'text-[#1A2332]'}`}>{currentFlar.toFixed(2)}</span>
+          <span className="text-muted-foreground">FLAR (applied)</span>
+          <span className={`font-mono ${isOutOfRange ? 'text-warning' : 'text-foreground'}`}>{currentFlar.toFixed(2)}</span>
 
-          <span className="text-[#8896A7]">Zone range</span>
-          <span className="font-mono text-[#8896A7]">
+          <span className="text-muted-foreground">Zone range</span>
+          <span className="font-mono text-muted-foreground">
             {flarRange.min.toFixed(2)}{flarRange.min !== flarRange.max ? ` – ${flarRange.max.toFixed(2)}` : ' (fixed)'}
           </span>
 
-          <span className="text-[#8896A7]">GFA allowable</span>
-          <span className="font-mono text-[#1A2332]">{r.gfa.toFixed(0)} sqm</span>
+          <span className="text-muted-foreground">GFA allowable</span>
+          <span className="font-mono text-foreground">{r.gfa.toFixed(0)} sqm</span>
 
-          <span className="text-[#8896A7]">TGFA (FLAR)</span>
-          <span className={`font-mono ${r.tgfaSource === 'flar' ? 'text-[#1B3FC4] font-medium' : 'text-[#8896A7]'}`}>
+          <span className="text-muted-foreground">TGFA (FLAR)</span>
+          <span className={`font-mono ${r.tgfaSource === 'flar' ? 'text-primary font-medium' : 'text-muted-foreground'}`}>
             {r.tgfaByFlar.toFixed(0)} sqm {r.tgfaSource === 'flar' && '← governs'}
           </span>
 
-          <span className="text-[#8896A7]">TGFA (BHL)</span>
-          <span className={`font-mono ${r.tgfaSource === 'bhl' ? 'text-[#1B3FC4] font-medium' : 'text-[#8896A7]'}`}>
+          <span className="text-muted-foreground">TGFA (BHL)</span>
+          <span className={`font-mono ${r.tgfaSource === 'bhl' ? 'text-primary font-medium' : 'text-muted-foreground'}`}>
             {r.tgfaByBhl.toFixed(0)} sqm {r.tgfaSource === 'bhl' && '← governs'}
           </span>
 
-          <span className="text-[#8896A7]">TGFA (governing)</span>
-          <span className="font-mono text-[#1A2332] font-medium">{r.tgfa.toFixed(0)} sqm</span>
+          <span className="text-muted-foreground">TGFA (governing)</span>
+          <span className="font-mono text-foreground font-medium">{r.tgfa.toFixed(0)} sqm</span>
 
-          <span className="text-[#8896A7]">FAR (proposed)</span>
-          <span className={`font-mono font-medium ${farCompliant ? 'text-[#2D9F6F]' : 'text-[#D64545]'}`}>
+          <span className="text-muted-foreground">FAR (proposed)</span>
+          <span className={`font-mono font-medium ${farCompliant ? 'text-success' : 'text-destructive'}`}>
             {proposedFAR.toFixed(2)}
           </span>
 
-          <span className="text-[#8896A7]">Proposed GFA</span>
-          <span className={`font-mono ${farCompliant ? 'text-[#1A2332]' : 'text-[#D64545]'}`}>
+          <span className="text-muted-foreground">Proposed GFA</span>
+          <span className={`font-mono ${farCompliant ? 'text-foreground' : 'text-destructive'}`}>
             {r.proposedGFA.toFixed(0)} sqm
           </span>
 
-          <span className="text-[#8896A7]">Max floors (TGFA)</span>
-          <span className="font-mono font-medium text-[#1B3FC4]">
+          <span className="text-muted-foreground">Max floors (TGFA)</span>
+          <span className="font-mono font-medium text-primary">
             {r.maxCompliantFloors}F
           </span>
         </div>
@@ -117,7 +117,7 @@ export function FlarPanel() {
       {flarOverride !== undefined && (
         <button
           onClick={() => setFlarOverride(undefined)}
-          className="mt-1.5 text-[9px] text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+          className="mt-1.5 text-[9px] text-primary hover:text-primary-700 transition-colors duration-150"
         >
           Reset to zone default ({flarRange.mid.toFixed(2)})
         </button>

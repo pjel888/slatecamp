@@ -209,12 +209,7 @@ export const TrailRibbon = ({
                 >
                   {/* Subtle pulse for today — CSS custom animation */}
                   {isToday && (
-                    <div
-                      className="h-full w-full"
-                      style={{
-                        animation: 'trailPulse 2s ease-in-out infinite',
-                      }}
-                    />
+                    <div className="h-full w-full motion-safe:animate-pulse motion-reduce:animate-none" />
                   )}
                 </div>
               </div>
@@ -265,12 +260,6 @@ export const TrailRibbon = ({
       )}
 
       {/* Pulse keyframe injected via style tag (scoped) */}
-      <style>{`
-        @keyframes trailPulse {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.85; }
-        }
-      `}</style>
     </div>
   )
 }

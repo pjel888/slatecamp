@@ -454,7 +454,7 @@ const TreeContent = ({
       {isEmpty ? (
         <EmptyState
           icon={<TreeStructure size={20} />}
-          message="No taxonomy data available"
+          title="No taxonomy data available"
           className="py-8"
         />
       ) : noResults ? (

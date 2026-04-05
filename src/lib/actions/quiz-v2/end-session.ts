@@ -1,5 +1,6 @@
 'use server'
 
+import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
 import {
@@ -8,6 +9,7 @@ import {
 } from '@/lib/actions/notification-triggers'
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
+import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
 import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
 
 export const endSession = async (
@@ -124,6 +126,10 @@ export const endSession = async (
     .eq('user_id', user.id)
 
   if (updateError) throw updateError
+
+  // Invalidate dashboard to reflect final results
+  revalidateDashboardCacheTags(user.id)
+  revalidatePath('/dashboard')
 
   // 8. Subject breakdown from interactions joined with taxonomy
   const topicIds = [

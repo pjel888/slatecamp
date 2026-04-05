@@ -1,9 +1,10 @@
-/* ── Campfire Graphic System v2 — Background Patterns ── */
+/* Campfire Graphic System v2 - Background Patterns */
 
-/* ── CSS Noise Overlay (for HTML elements) ── */
+/* CSS Noise Overlay (for HTML elements) */
 .noise-overlay {
   position: relative;
 }
+
 .noise-overlay::after {
   content: '';
   position: absolute;
@@ -16,29 +17,11 @@
   background-repeat: repeat;
 }
 
-/* ── Animation Keyframes ── */
-
-/* Fade up — default entrance for compositions */
-@keyframes comp-enter {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Scale in — for ring/circle compositions */
-@keyframes comp-scale {
-  from { opacity: 0; transform: scale(0.92); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-/* Strip grow — for ColorStrip segments */
-@keyframes strip-grow {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
-}
-
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }

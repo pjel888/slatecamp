@@ -174,7 +174,7 @@ export const ContentSearchClient = () => {
       {!hasSearched && !searchError && (
         <EmptyState
           icon={<MagnifyingGlass size={20} />}
-          message="Search across all content"
+          title="Search across all content"
           description="Type to search questions, articles, and taxonomy nodes."
         />
       )}
@@ -182,7 +182,7 @@ export const ContentSearchClient = () => {
       {noResults && !searchError && (
         <EmptyState
           icon={<MagnifyingGlass size={20} />}
-          message="No results found"
+          title="No results found"
           description={`No content matches "${inputValue}". Try a different search term.`}
         />
       )}

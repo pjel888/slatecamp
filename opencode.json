@@ -22,9 +22,13 @@
             "temperature": 0.1
         },
         "build": {
-            "model": "opencode/claude-sonnet-4-5",
-            "temperature": 0.3
+            "model": "opencode/gemma4",
+            "temperature": 0.1
         },
+        // "build": {
+        //     "model": "opencode/claude-sonnet-4-5",
+        //     "temperature": 0.3
+        // },
         "refactor": {
             "model": "opencode/gpt-5.1-codex",
             "temperature": 0.2

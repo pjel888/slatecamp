@@ -28,7 +28,7 @@ export const HintButton = ({ hintText, isFormative, onReveal }: HintButtonProps)
           type="button"
           onClick={handleReveal}
           className={cn(
-            'inline-flex items-center gap-1.5 text-xs text-[#4A5568] hover:text-[#1B3FC4]',
+            'inline-flex items-center gap-1.5 text-xs text-text-secondary hover:text-primary',
             'transition-colors duration-150 cursor-pointer',
           )}
           aria-expanded={revealed}
@@ -41,15 +41,15 @@ export const HintButton = ({ hintText, isFormative, onReveal }: HintButtonProps)
         <div
           id="hint-panel"
           className={cn(
-            'rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-2',
+            'rounded-sm border border-border bg-surface-light px-3 py-2',
             'motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-top-1 motion-safe:duration-150',
           )}
           role="note"
           aria-label="Question hint"
         >
           <div className="flex items-start gap-2">
-            <Lightbulb size={14} weight="fill" className="text-[#D4951A] shrink-0 mt-0.5" aria-hidden="true" />
-            <p className="text-xs text-[#4A5568] leading-relaxed">{hintText}</p>
+            <Lightbulb size={14} weight="fill" className="text-warning shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-xs text-text-secondary leading-relaxed">{hintText}</p>
           </div>
         </div>
       )}

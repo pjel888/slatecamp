@@ -11,43 +11,43 @@ const lawConfig: Record<LawCalloutCode, {
   nbcp: {
     border: 'border border-camp-cobalt/20',
     bg: 'bg-cobalt-light',
-    darkBg: 'dark:bg-[#1B3FC410]',
+    darkBg: 'dark:bg-primary/10',
     eyebrow: 'text-camp-cobalt',
     label: 'NBCP (PD 1096)',
   },
   bp344: {
     border: 'border border-emerald/20',
     bg: 'bg-success-50',
-    darkBg: 'dark:bg-[#2D9F6F10]',
+    darkBg: 'dark:bg-success/10',
     eyebrow: 'text-emerald',
     label: 'BP 344 — Accessibility',
   },
   ra9514: {
     border: 'border border-destructive/20',
     bg: 'bg-destructive-50',
-    darkBg: 'dark:bg-[#D6454510]',
+    darkBg: 'dark:bg-destructive/10',
     eyebrow: 'text-destructive',
     label: 'RA 9514 — Fire Code',
   },
   bp220: {
     border: 'border border-warning/20',
     bg: 'bg-warning-50',
-    darkBg: 'dark:bg-[#D4951A10]',
-    eyebrow: 'text-[#92400E]',
+    darkBg: 'dark:bg-warning/10',
+    eyebrow: 'text-[var(--signal-gold-deep)]',
     label: 'BP 220 — Housing',
   },
   pd957: {
     border: 'border border-text-secondary/20',
     bg: 'bg-surface-focused',
-    darkBg: 'dark:bg-[#4A556810]',
+    darkBg: 'dark:bg-text-secondary/10',
     eyebrow: 'text-text-secondary',
     label: 'PD 957 — Subdivisions',
   },
   irr: {
     border: 'border border-camp-orange/20',
-    bg: 'bg-[#FFF5ED]',
-    darkBg: 'dark:bg-[#E8853A10]',
-    eyebrow: 'text-[#C2410C]',
+    bg: 'bg-accent-50',
+    darkBg: 'dark:bg-camp-orange/10',
+    eyebrow: 'text-accent-700',
     label: 'Revised IRR',
   },
 }
@@ -75,11 +75,11 @@ export const LawCallout = ({ code, section, title, children }: LawCalloutProps) 
         {eyebrowText}
       </span>
       {title && (
-        <p className="text-sm font-semibold text-wiki-ink mb-1 dark:text-[#E2E0D8]">
+        <p className="text-sm font-semibold text-wiki-ink mb-1 dark:text-wiki-invert-heading">
           {title}
         </p>
       )}
-      <div className="text-sm text-[#3D3D3A] leading-relaxed [&_strong]:font-semibold [&_strong]:text-wiki-ink dark:text-[#C8C6C0] dark:[&_strong]:text-[#E2E0D8]">
+      <div className="text-sm text-wiki-body leading-relaxed [&_strong]:font-semibold [&_strong]:text-wiki-ink dark:text-wiki-invert-body dark:[&_strong]:text-wiki-invert-heading">
         {children}
       </div>
     </div>

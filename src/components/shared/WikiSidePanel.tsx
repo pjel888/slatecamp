@@ -30,22 +30,22 @@ export const WikiSidePanel = ({ url, onClose }: WikiSidePanelProps) => {
         aria-label="Wiki reference"
         className={cn(
           'fixed right-0 top-0 bottom-0 z-[70] w-full max-w-2xl',
-          'bg-white border-l border-[#D4DAE3] shadow-2xl',
+          'bg-white border-l border-border shadow-2xl',
           'flex flex-col',
           'animate-in slide-in-from-right duration-200 ease-out',
         )}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-[#D4DAE3] shrink-0 bg-[#F8F7F5]">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-border shrink-0 bg-surface-light">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-[#1B3FC4]" />
-            <h2 className="text-sm font-semibold text-[#1A2332]">Wiki Reference</h2>
+            <div className="w-2 h-2 rounded-full bg-primary" />
+            <h2 className="text-sm font-semibold text-foreground">Wiki Reference</h2>
           </div>
           <div className="flex items-center gap-2">
             <Link
               href={url}
               target="_blank"
-              className="p-2 text-[#8896A7] hover:text-[#1B3FC4] transition-colors"
+              className="p-2 text-muted-foreground hover:text-primary transition-colors"
               title="Open in full page"
             >
               <ArrowSquareOut size={18} />
@@ -55,7 +55,7 @@ export const WikiSidePanel = ({ url, onClose }: WikiSidePanelProps) => {
               onClick={onClose}
               className={cn(
                 'flex items-center justify-center w-8 h-8 rounded-sm',
-                'text-[#8896A7] hover:text-[#1A2332] hover:bg-[#D4DAE3]/20',
+                'text-muted-foreground hover:text-foreground hover:bg-border/20',
                 'transition-colors duration-150 ease-out',
               )}
               aria-label="Close panel"

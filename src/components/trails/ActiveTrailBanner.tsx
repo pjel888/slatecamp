@@ -22,16 +22,16 @@ export const ActiveTrailBanner = ({ enrollment }: ActiveTrailBannerProps) => {
   return (
     <Link
       href={`/dashboard/camptrails/${trail.slug}/today`}
-      className="block rounded-md border border-[#534AB7]/20 bg-white transition-all duration-150 ease-out hover:shadow-sm"
+      className="block rounded-md border border-trail-accent/20 bg-white transition-all duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 sm:p-5">
         {/* Left side */}
         <div className="flex flex-col gap-1 min-w-0">
           <div className="flex items-center gap-2">
             <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-pulse rounded-full bg-[#534AB7]" />
+              <span className="absolute inline-flex h-full w-full animate-pulse rounded-full bg-trail-accent" />
             </span>
-            <span className="font-mono text-[11px] uppercase tracking-widest text-[#534AB7]">
+            <span className="font-mono text-[11px] uppercase tracking-widest text-trail-accent">
               Active Trail
             </span>
           </div>
@@ -50,11 +50,11 @@ export const ActiveTrailBanner = ({ enrollment }: ActiveTrailBannerProps) => {
           </span>
           <div className="h-1 w-full sm:w-28 rounded-sm bg-border">
             <div
-              className="h-1 rounded-sm bg-[#534AB7] transition-all duration-150 ease-out"
+              className="h-1 rounded-sm bg-trail-accent transition-all duration-150 ease-out"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
-          <span className="inline-flex items-center gap-1.5 bg-[#534AB7] text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors duration-150 hover:bg-[#463FA0]">
+          <span className="inline-flex items-center gap-1.5 bg-trail-accent text-white rounded-md px-4 py-2 text-sm font-semibold transition-colors duration-150 hover:bg-trail-accent-hover">
             Continue Today
             <ArrowRight size={14} weight="bold" />
           </span>

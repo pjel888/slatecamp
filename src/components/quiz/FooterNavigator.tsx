@@ -81,7 +81,7 @@ export function FooterNavigator({
                     ? 'w-4 h-4 ring-2 ring-primary ring-offset-1'
                     : 'w-2.5 h-2.5',
                   dot.state === 'current' && 'bg-primary',
-                  dot.state === 'answered' && 'bg-[#5B7FE0]',
+                  dot.state === 'answered' && 'bg-primary-400',
                   dot.state === 'flagged' && 'bg-warning',
                   dot.state === 'unanswered' && 'bg-zinc-200',
                 )}

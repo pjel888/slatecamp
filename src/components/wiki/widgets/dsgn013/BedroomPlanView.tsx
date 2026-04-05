@@ -2,14 +2,14 @@
 
 export const BedroomPlanView = () => {
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 bg-muted border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+      <div className="flex items-center justify-between px-5 py-3.5 bg-muted border-b border-wiki-border dark:bg-wiki-surface-dark dark:border-wiki-invert-divider">
         <div>
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
             Plan View
           </div>
-          <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
+          <div className="text-xs text-ink-muted mt-0.5 dark:text-wiki-muted">
             Queen bed in a 3.5 m × 4.0 m bedroom with clearance zones
           </div>
         </div>

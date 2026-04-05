@@ -104,26 +104,26 @@ const IntroSlide1 = ({
           <Icon className="h-5 w-5" style={{ color: accent } as React.CSSProperties} aria-hidden="true" />
         </div>
         <div>
-          <p className="text-[11px] font-medium uppercase tracking-wide text-[#8896A7] mb-0.5">
+          <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground mb-0.5">
             {MODE_LABELS[mode]}
           </p>
-          <p className="text-[13px] text-[#4A5568]">{MODE_SUMMARY[mode]}</p>
+          <p className="text-[13px] text-text-secondary">{MODE_SUMMARY[mode]}</p>
         </div>
       </div>
 
       {/* Storm warning */}
       {mode === 'storm' && (
-        <div className="flex gap-2.5 rounded-md bg-[#FEF8ED] border border-[#D4951A]/30 px-4 py-3">
+        <div className="flex gap-2.5 rounded-md bg-warning-50 border border-warning/30 px-4 py-3">
           <Warning
-            className="h-4 w-4 shrink-0 mt-0.5 text-[#D4951A]"
+            className="h-4 w-4 shrink-0 mt-0.5 text-warning"
             aria-hidden="true"
             weight="fill"
           />
           <div>
-            <p className="text-[13px] font-medium text-[#1A2332] mb-0.5">
+            <p className="text-[13px] font-medium text-foreground mb-0.5">
               No feedback during session
             </p>
-            <p className="text-[13px] text-[#4A5568]">
+            <p className="text-[13px] text-text-secondary">
               Timer starts immediately. You will not see correct answers until the session ends.
             </p>
           </div>
@@ -132,15 +132,15 @@ const IntroSlide1 = ({
 
       {/* Full Exam briefing */}
       {mode === 'fullexam' && (
-        <div className="flex gap-2.5 rounded-md bg-[#EEF2FC] border border-[#1B3FC4]/20 px-4 py-3">
+        <div className="flex gap-2.5 rounded-md bg-primary-50 border border-primary/20 px-4 py-3">
           <Info
-            className="h-4 w-4 shrink-0 mt-0.5 text-[#1B3FC4]"
+            className="h-4 w-4 shrink-0 mt-0.5 text-primary"
             aria-hidden="true"
             weight="fill"
           />
           <div>
-            <p className="text-[13px] font-medium text-[#1A2332] mb-0.5">Exam conditions apply</p>
-            <p className="text-[13px] text-[#4A5568]">
+            <p className="text-[13px] font-medium text-foreground mb-0.5">Exam conditions apply</p>
+            <p className="text-[13px] text-text-secondary">
               200 questions · 4-hour countdown · Free navigation. Correct answers and explanations
               are available 24 hours after submission.
             </p>
@@ -151,7 +151,7 @@ const IntroSlide1 = ({
       {/* Question count stepper */}
       {!hideCountStepper && (
         <div>
-          <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7] mb-2.5">
+          <p className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground mb-2.5">
             How many questions?
           </p>
           <QuestionCountPills
@@ -166,7 +166,7 @@ const IntroSlide1 = ({
       {showInterleaveToggle && (
         <label
           htmlFor="interleave-toggle"
-          className="flex items-start gap-3 rounded-md border border-[#D4DAE3] px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:border-[#1B3FC4]/40"
+          className="flex items-start gap-3 rounded-md border border-border px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:border-primary/40"
           style={interleaveEnabled ? { borderColor: '#1B3FC4', backgroundColor: '#EEF2FC' } : undefined}
         >
           <input
@@ -190,12 +190,12 @@ const IntroSlide1 = ({
             />
           </span>
           <span>
-            <span className="text-[13px] font-medium text-[#1A2332] block">
+            <span className="text-[13px] font-medium text-foreground block">
               Shuffle in similar topics
             </span>
             <span
               id="interleave-description"
-              className="text-[12px] text-[#8896A7] block mt-0.5"
+              className="text-[12px] text-muted-foreground block mt-0.5"
             >
               Mixes in questions from similar subjects so you practice telling them apart
             </span>

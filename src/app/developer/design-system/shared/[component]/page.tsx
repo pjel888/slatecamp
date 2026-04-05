@@ -45,12 +45,14 @@ const COMPONENT_DATA: Record<string, ComponentData> = {
     propsTable: [
       { name: 'variant', type: "'default' | 'success' | 'warning' | 'danger' | 'info'", defaultValue: "'default'", required: false, description: 'Color variant indicating status or category.' },
       { name: 'size', type: "'xs' | 'sm' | 'md'", defaultValue: "'sm'", required: false, description: 'Controls padding and font size of the badge.' },
-      { name: 'pill', type: 'boolean', defaultValue: 'false', required: false, description: 'Rounds corners fully to create a pill shape.' },
+      { name: 'shape', type: "'default' | 'pill'", defaultValue: "'default'", required: false, description: 'Controls the badge corner treatment.' },
       { name: 'children', type: 'ReactNode', defaultValue: null, required: true, description: 'Badge label or content.' },
     ],
     codeSnippet: `import { Badge } from '@/components/ui/badge'
 
-<Badge variant="success" size="sm" pill>Stable</Badge>`,
+<Badge variant="success" size="sm" shape="pill">
+  Stable
+</Badge>`,
     preview: <BadgePreview />,
   },
 
@@ -112,12 +114,17 @@ const COMPONENT_DATA: Record<string, ComponentData> = {
       { name: 'description', type: 'string', defaultValue: null, required: false, description: 'Supporting text explaining why the state is empty and what to do next.' },
       { name: 'action', type: 'ReactNode', defaultValue: null, required: false, description: 'Optional call-to-action element, typically a Button.' },
     ],
-    codeSnippet: `import { EmptyState } from '@/components/shared/empty-state'
+    codeSnippet: `import { Button } from '@/components/ui/button'
+import { EmptyState } from '@/components/shared/empty-state'
 
 <EmptyState
   title="No sessions yet"
   description="Start a practice session to track your progress."
-  action={<Button>Start Session</Button>}
+  action={
+    <Button variant="secondary" size="sm">
+      Start Session
+    </Button>
+  }
 />`,
     preview: <EmptyStatePreview />,
   },

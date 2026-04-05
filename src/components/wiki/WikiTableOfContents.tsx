@@ -91,7 +91,7 @@ export function WikiTableOfContents({ headings, scrollContainerId }: WikiTableOf
                   'block w-full text-left text-xs py-1 transition-colors leading-snug rounded-sm -ml-px',
                   level === 3 ? 'pl-5' : 'pl-3',
                   isActive
-                    ? 'bg-[#EEF2FC] text-foreground font-medium'
+                    ? 'bg-primary-50 text-foreground font-medium'
                     : 'text-muted-foreground hover:text-text-secondary hover:bg-muted/40',
                 )}
               >

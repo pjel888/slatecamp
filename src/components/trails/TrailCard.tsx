@@ -17,9 +17,9 @@ const TRAIL_TYPE_LABELS: Record<CampTrail['trail_type'], string> = {
 
 const TRAIL_TYPE_STYLES: Record<CampTrail['trail_type'], string> = {
   time_gated: 'bg-primary-50 text-camp-cobalt',
-  subject_mastery: 'bg-[#EEEDFE] text-[#534AB7]',
-  code_deep_dive: 'bg-warning-50 text-[#8B6914]',
-  remediation: 'bg-[#FFF3E8] text-[#9E5B1F]',
+  subject_mastery: 'bg-trail-accent/10 text-trail-accent',
+  code_deep_dive: 'bg-warning-50 text-warning-700',
+  remediation: 'bg-accent-50 text-accent-700',
   exam_simulation: 'bg-destructive-50 text-camp-red',
 }
 
@@ -39,7 +39,7 @@ const SUBJECT_COLORS: Record<string, string> = {
 }
 
 const getSubjectColor = (subject: string): string =>
-  SUBJECT_COLORS[subject] ?? '#8896A7'
+  SUBJECT_COLORS[subject] ?? 'var(--muted-foreground)'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -86,7 +86,7 @@ const MiniPhaseMap = ({ trail, enrollment }: MiniPhaseMapProps) => {
 
         // Assign a subject color based on index cycling through subjects
         const subjectIndex = subjects.length > 0 ? i % subjects.length : 0
-        const subjectColor = subjects.length > 0 ? getSubjectColor(subjects[subjectIndex]) : '#D4DAE3'
+        const subjectColor = subjects.length > 0 ? getSubjectColor(subjects[subjectIndex]) : 'var(--border)'
 
         if (isRest) {
           return (
@@ -104,7 +104,7 @@ const MiniPhaseMap = ({ trail, enrollment }: MiniPhaseMapProps) => {
               className="aspect-square min-w-0 rounded-[3px]"
               style={{
                 backgroundColor: subjectColor,
-                boxShadow: `0 0 0 2px white, 0 0 0 3.5px #1B3FC4`,
+                boxShadow: '0 0 0 2px white, 0 0 0 3.5px var(--primary)',
               }}
             />
           )
@@ -188,9 +188,9 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
     <Link
       href={href}
       className={cn(
-        'group relative flex flex-col rounded-lg border border-border bg-white transition-all duration-150 hover:border-[#B8B4AC] hover:shadow-sm cursor-pointer',
+        'group relative flex flex-col rounded-lg border border-border bg-white transition-all duration-150 hover:border-border-warm hover:shadow-sm cursor-pointer',
         'focus-visible:ring-2 focus-visible:ring-camp-cobalt/20 focus-visible:ring-offset-2 outline-none',
-        state === 'enrolled' && 'border-[#534AB7] border-[1.5px]',
+        state === 'enrolled' && 'border-trail-accent border-[1.5px]',
         state === 'completed' && 'bg-success-50 border-emerald/30',
         state === 'locked' && 'opacity-70',
       )}
@@ -250,7 +250,7 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
         {state === 'enrolled' && (
           <div className="h-[3px] rounded-sm bg-border mb-3">
             <div
-              className="h-[3px] rounded-sm bg-[#534AB7] transition-all duration-150 ease-out"
+              className="h-[3px] rounded-sm bg-trail-accent transition-all duration-150 ease-out"
               style={{ width: `${progressPercent}%` }}
             />
           </div>

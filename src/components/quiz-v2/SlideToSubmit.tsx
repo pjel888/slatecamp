@@ -110,9 +110,9 @@ export const SlideToSubmit = ({
       ref={trackRef}
       className={cn(
         'relative flex items-center w-full rounded-md overflow-hidden select-none touch-none',
-        'border border-[#D4DAE3] bg-[#F8F7F5]',
+        'border border-border bg-surface-light',
         disabled && !completed && 'opacity-40 pointer-events-none',
-        completed && 'border-[#1B3FC4] bg-[#EEF2FC] pointer-events-none',
+        completed && 'border-primary bg-primary-50 pointer-events-none',
       )}
       style={{ height: HANDLE_SIZE + TRACK_PADDING * 2, padding: TRACK_PADDING }}
       aria-label={label}
@@ -123,7 +123,7 @@ export const SlideToSubmit = ({
     >
       {/* Track fill — Cobalt gradient following the handle */}
       <div
-        className="absolute inset-y-1 left-1 rounded-sm bg-[#1B3FC4]/10"
+        className="absolute inset-y-1 left-1 rounded-sm bg-primary/10"
         style={{
           width: `${Math.max(0, offset + HANDLE_SIZE)}px`,
           transition: isDragging ? 'none' : 'width 300ms cubic-bezier(0.34, 1.56, 0.64, 1)',
@@ -141,11 +141,11 @@ export const SlideToSubmit = ({
       >
         {completed && !checked ? (
           <span className="flex items-center gap-2">
-            <span className="h-3.5 w-3.5 rounded-full border-2 border-[#1B3FC4]/20 border-t-[#1B3FC4] animate-spin" />
+            <span className="h-3.5 w-3.5 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
             Checking your answer...
           </span>
         ) : completed && checked ? (
-          <span className="text-[#1B3FC4]">Answer checked</span>
+          <span className="text-primary">Answer checked</span>
         ) : (
           label
         )}
@@ -199,8 +199,8 @@ export const SlideToSubmit = ({
             transition: isDragging ? 'none' : 'opacity 200ms ease-out',
           }}
         >
-          <ArrowRight size={12} weight="bold" className="text-[#1B3FC4]" />
-          <ArrowRight size={12} weight="bold" className="text-[#1B3FC4] -ml-2" />
+          <ArrowRight size={12} weight="bold" className="text-primary" />
+          <ArrowRight size={12} weight="bold" className="text-primary -ml-2" />
         </div>
       )}
     </div>

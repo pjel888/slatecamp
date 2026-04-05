@@ -158,7 +158,7 @@ const buildCalibration = (
   return { subjects, overallScore }
 }
 
-// ─── fadeUp animation class ────────────────────────────────────────────────────
+// ─── staggered reveal sequencing ──────────────────────────────────────────────
 // Applied via inline style delays; uses Tailwind animate-in from tw-animate-css
 
 // ─── Component ────────────────────────────────────────────────────────────────

@@ -1,11 +1,13 @@
 'use server'
 
+import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
 import { runPostInteractionHooks } from '@/lib/actions/mastery/post-interaction-hooks'
 import { deriveQualityRating, updateSrsSchedule } from '@/lib/srs/update'
+import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
 import type { SubmitAnswerInput, SubmitAnswerResult, QuestionType } from '@/types/quiz-config'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
 
@@ -20,27 +22,29 @@ export const submitAnswer = async (
 
   const { sessionId, questionId, selectedOptionId, confidenceLevel, timeSpentMs } = input
 
-  // 1. Validate session belongs to the authenticated user and is still in progress
-  const { data: session, error: sessionError } = await supabase
-    .from('quiz_sessions')
-    .select('session_id, user_id, status, config, question_ids')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .single()
+  // 1 & 2. Parallelize session validation and question lookup
+  const [sessionRes, questionRes] = await Promise.all([
+    supabase
+      .from('quiz_sessions')
+      .select('session_id, user_id, status, config, question_ids')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id)
+      .single(),
+    supabase
+      .from('questions')
+      .select(
+        'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers',
+      )
+      .eq('question_id', questionId)
+      .single()
+  ])
 
-  if (sessionError || !session) throw new Error('Session not found')
+  const session = sessionRes.data
+  const question = questionRes.data
+
+  if (sessionRes.error || !session) throw new Error('Session not found')
   if (session.status !== 'in_progress') throw new Error('Session is not in progress')
-
-  // 2. Look up the question to determine correctness and fetch rationale
-  const { data: question, error: questionError } = await supabase
-    .from('questions')
-    .select(
-      'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers',
-    )
-    .eq('question_id', questionId)
-    .single()
-
-  if (questionError || !question) throw new Error('Question not found')
+  if (questionRes.error || !question) throw new Error('Question not found')
 
   // Cast DB row to access generation columns (may not be in generated types yet)
   const raw = question as Record<string, unknown>
@@ -119,86 +123,61 @@ export const submitAnswer = async (
 
   const interactionId = upsertedRow?.interaction_id ?? null
 
-  // 7. Read current counters from user_interactions for this session
-  const { count: answeredCount } = await supabase
-    .from('user_interactions')
-    .select('*', { count: 'exact', head: true })
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-
-  const { count: correctCount } = await supabase
-    .from('user_interactions')
-    .select('*', { count: 'exact', head: true })
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .eq('is_correct', true)
-
-  const totalQuestions = questionIds.length
-  const answered = answeredCount ?? 0
-  const correct = correctCount ?? 0
-  const sessionComplete = answered >= totalQuestions
-
   // 8. Determine feedback timing from config
   const config = session.config as { feedback?: { timing?: string } } | null
   const feedbackTiming = config?.feedback?.timing ?? 'immediate'
+  const sessionConfig = session.config as { mode?: string; interleave?: boolean } | null
 
   // For deferred/none feedback modes, withhold rationale from this response
   // Rationale can be a plain string or JSONB object — always resolve to string
   const rationaleForClient =
     feedbackTiming === 'immediate' ? (resolveRationaleText(question.rationale) || null) : null
 
-  // Look up wiki article url for this question's topic
-  let wikiArticleUrl: string | null = null
-  if (feedbackTiming === 'immediate' && question.topic_id) {
-    const { data: wikiLink } = await supabase
-      .from('wiki_article_taxonomy')
-      .select('article_id, wiki_articles(slug)')
-      .eq('node_id', question.topic_id)
-      .eq('is_primary', true)
-      .maybeSingle()
+  const sessionStatsPromise = supabase
+    .rpc('get_quiz_session_interaction_stats', {
+      p_session_id: sessionId,
+      p_user_id: user.id,
+    })
+    .single()
 
-    if (wikiLink) {
-      const slug = (wikiLink as { wiki_articles?: { slug?: string } }).wiki_articles?.slug
-      if (slug) wikiArticleUrl = `/dashboard/wiki/${slug}?from=quiz`
-    }
-  }
+  const wikiArticlePromise: Promise<string | null> =
+    feedbackTiming === 'immediate' && question.topic_id
+      ? supabase
+          .from('wiki_article_taxonomy')
+          .select('article_id, wiki_articles(slug)')
+          .eq('node_id', question.topic_id)
+          .eq('is_primary', true)
+          .maybeSingle()
+          .then(({ data: wikiLink, error }) => {
+            if (error) throw error
 
-  // 9. Classify error (non-blocking for the quiz flow — errors are caught internally)
-  let errorDiagnostic = null
-  if (!isCorrect && interactionId && feedbackTiming === 'immediate') {
-    const classification = await classifyAndStoreError(
-      interactionId,
-      questionId,
-      user.id,
-      timeSpentMs,
-      isCorrect,
-    )
-    if (classification && classification.confidence > 0.5) {
-      errorDiagnostic = {
-        category: classification.category,
-        confidence: classification.confidence,
-        message: classification.message,
-      }
-    }
-  }
+            const slug = (wikiLink as { wiki_articles?: { slug?: string } } | null)?.wiki_articles?.slug
+            return slug ? `/dashboard/wiki/${slug}?from=quiz` : null
+          })
+      : Promise.resolve(null)
 
-  // 10. Fire post-interaction hooks (memory strength + decay rate — non-blocking)
-  const sessionConfig = session.config as { mode?: string; interleave?: boolean } | null
+  const errorDiagnosticPromise: Promise<SubmitAnswerResult['errorDiagnostic']> =
+    !isCorrect && interactionId && feedbackTiming === 'immediate'
+      ? classifyAndStoreError(
+          interactionId,
+          questionId,
+          user.id,
+          timeSpentMs,
+          isCorrect,
+        ).then((classification) => {
+          if (classification && classification.confidence > 0.5) {
+            return {
+              category: classification.category,
+              confidence: classification.confidence,
+              message: classification.message,
+            }
+          }
+
+          return null
+        })
+      : Promise.resolve(null)
 
   // SRS scheduling (only for learning modes like 'camp')
-  if (sessionConfig?.mode === 'camp' || sessionConfig?.mode === 'focused') {
-    // We don't have current avg_time_ms easily here, passing 0 as baseline
-    deriveQualityRating({
-      isCorrect,
-      timeSpentMs,
-      avgTimeMs: 0,
-      confidence: confidenceText,
-      isSuspectedLuckyGuess,
-    }).then((quality) => {
-      void updateSrsSchedule(user.id, question.topic_id!, quality)
-    })
-  }
-
   // Generation effect: correct generation answers get 1.2x EMA weight
   // for stronger memory trace (production effect from cognitive science)
   // Lucky guess: 0.5x weight to force re-testing (overrides generation multiplier)
@@ -207,19 +186,61 @@ export const submitAnswer = async (
     generationMultiplier = 0.5
   }
 
-  runPostInteractionHooks({
-    userId: user.id,
-    topicId: question.topic_id!,
-    isCorrect,
-    timeSpentMs,
-    avgTimeMs: 0, // first interaction has no baseline — hook handles this
-    difficulty: question.difficulty ?? 0.5,
-    isInterleaved: sessionConfig?.interleave ?? false,
-    sessionMode: sessionConfig?.mode ?? 'camp',
-    emaWeightMultiplier: generationMultiplier,
-  }).catch(() => {
-    // Swallow — hooks are fire-and-forget
-  })
+  const postInteractionPromise = (async () => {
+    const work: Promise<unknown>[] = []
+
+    if (question.topic_id && (sessionConfig?.mode === 'camp' || sessionConfig?.mode === 'focused')) {
+      const quality = await deriveQualityRating({
+        isCorrect,
+        timeSpentMs,
+        avgTimeMs: 0,
+        confidence: confidenceText,
+        isSuspectedLuckyGuess,
+      })
+
+      work.push(updateSrsSchedule(user.id, question.topic_id, quality))
+    }
+
+    if (question.topic_id) {
+      work.push(
+        runPostInteractionHooks({
+          userId: user.id,
+          topicId: question.topic_id,
+          isCorrect,
+          timeSpentMs,
+          avgTimeMs: 0, // first interaction has no baseline — hook handles this
+          difficulty: question.difficulty ?? 0.5,
+          isInterleaved: sessionConfig?.interleave ?? false,
+          sessionMode: sessionConfig?.mode ?? 'camp',
+          emaWeightMultiplier: generationMultiplier,
+        }).catch((err) => {
+          console.error('[submitAnswer] Post-interaction hooks failed:', err)
+        }),
+      )
+    }
+
+    if (work.length > 0) {
+      await Promise.all(work)
+    }
+  })()
+
+  const { data: sessionStats, error: statsError } = await sessionStatsPromise
+
+  if (statsError) throw statsError
+
+  const answered = sessionStats?.answered_count ?? 0
+  const correct = sessionStats?.correct_count ?? 0
+  const totalQuestions = questionIds.length
+  const sessionComplete = answered >= totalQuestions
+
+  const [wikiArticleUrl, errorDiagnostic] = await Promise.all([
+    wikiArticlePromise,
+    errorDiagnosticPromise,
+    postInteractionPromise,
+  ])
+
+  revalidateDashboardCacheTags(user.id)
+  revalidatePath('/dashboard')
 
   // Patent: Async storage + analysis — all dynamic imports to avoid crashing module at load time
   // Entire block is fire-and-forget — never blocks the submission response

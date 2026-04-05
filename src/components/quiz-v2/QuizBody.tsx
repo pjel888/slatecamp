@@ -1,10 +1,12 @@
 'use client'
 
+import { memo } from 'react'
 import { QuestionColumn } from './QuestionColumn'
 import { OptionsColumn } from './OptionsColumn'
 import { GenerationInput } from './GenerationInput'
 import type { GenerationQuestionType } from './GenerationInput'
 import type { QuestionForClient, FeedbackData, QuizSessionConfig } from '@/types/quiz-config'
+import type { GestureSignalEvent } from '@/types/patent'
 
 interface QuizBodyProps {
   question: QuestionForClient
@@ -14,7 +16,7 @@ interface QuizBodyProps {
   config: QuizSessionConfig
   onSelectOption: (optionId: string) => void
   onConfidenceChange: (level: 1 | 2 | 3) => void
-  onSubmit: () => void
+  onSubmit: (signalTrace?: GestureSignalEvent[]) => void
   onNext: () => void
 }
 
@@ -22,7 +24,7 @@ interface QuizBodyProps {
 const isGenerationType = (type: string | undefined): type is GenerationQuestionType =>
   type === 'numeric' || type === 'short_text' || type === 'formula'
 
-export const QuizBody = ({
+export const QuizBody = memo(({
   question,
   selectedOptionId,
   confidenceLevel,
@@ -42,7 +44,7 @@ export const QuizBody = ({
     // >= md: 50/50 split with vertical divider
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[calc(100vh-120px)]">
       {/* Left: question */}
-      <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-[#D4DAE3] overflow-y-auto">
+      <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-border overflow-y-auto">
         <QuestionColumn
           question={question}
           mode={config.mode}
@@ -79,4 +81,6 @@ export const QuizBody = ({
       </div>
     </div>
   )
-}
+})
+
+QuizBody.displayName = 'QuizBody'

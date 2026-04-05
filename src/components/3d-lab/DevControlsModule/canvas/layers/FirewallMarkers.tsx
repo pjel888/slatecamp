@@ -37,7 +37,7 @@ function FirewallPlane({ position, size, label }: FirewallPlaneProps) {
         position={[position[0], position[1] + size[1] / 2 + 0.5, position[2]]}
         style={{ pointerEvents: 'none' }}
       >
-        <div className="rounded-sm bg-[#FF6B35]/90 px-1.5 py-0.5 text-[8px] font-mono font-medium text-white whitespace-nowrap">
+        <div className="rounded-sm bg-camp-orange/90 px-1.5 py-0.5 text-[8px] font-mono font-medium text-white whitespace-nowrap">
           FW {label}
         </div>
       </Html>

@@ -60,7 +60,7 @@ export const CampModePreview = ({
   return (
     <div className="rounded-md border border-border bg-white overflow-hidden text-sm">
       {/* STUDENT VIEW watermark */}
-      <div className="flex items-center justify-between border-b border-amber-200 bg-[#FFF8EB]">
+      <div className="flex items-center justify-between border-b border-amber-200 bg-warning-50">
         <StudentViewWatermark label="Student View — Camp Mode" />
         {isChecked && (
           <button

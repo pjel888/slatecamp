@@ -35,40 +35,40 @@ export function FirewallPanel() {
   if (!canFirewall) {
     return (
       <div>
-        <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+        <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
           Firewall (§704.4c)
         </label>
-        <p className="text-[9px] text-[#8896A7]">Not permitted for {entry.label}</p>
+        <p className="text-[9px] text-muted-foreground">Not permitted for {entry.label}</p>
       </div>
     )
   }
 
   return (
     <div>
-      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         Firewall (§704.4c)
       </label>
 
       {/* Mini lot diagram showing which sides have firewalls */}
-      <div className="relative mx-auto mb-2 h-16 w-24 rounded-sm border border-[#D4DAE3] bg-[#F8F7F5]">
+      <div className="relative mx-auto mb-2 h-16 w-24 rounded-sm border border-border bg-surface-light">
         {/* Front edge (bottom) */}
         <div className={`absolute bottom-0 left-1 right-1 h-0.5 rounded-full transition-colors duration-150 ${
-          firewallSides.includes('front') ? 'bg-[#FF6B35]' : 'bg-[#D4DAE3]'
+          firewallSides.includes('front') ? 'bg-camp-orange' : 'bg-border'
         }`} />
         {/* Rear edge (top) */}
         <div className={`absolute top-0 left-1 right-1 h-0.5 rounded-full transition-colors duration-150 ${
-          firewallSides.includes('rear') ? 'bg-[#FF6B35]' : 'bg-[#D4DAE3]'
+          firewallSides.includes('rear') ? 'bg-camp-orange' : 'bg-border'
         }`} />
         {/* Left edge */}
         <div className={`absolute left-0 top-1 bottom-1 w-0.5 rounded-full transition-colors duration-150 ${
-          firewallSides.includes('left') ? 'bg-[#FF6B35]' : 'bg-[#D4DAE3]'
+          firewallSides.includes('left') ? 'bg-camp-orange' : 'bg-border'
         }`} />
         {/* Right edge */}
         <div className={`absolute right-0 top-1 bottom-1 w-0.5 rounded-full transition-colors duration-150 ${
-          firewallSides.includes('right') ? 'bg-[#FF6B35]' : 'bg-[#D4DAE3]'
+          firewallSides.includes('right') ? 'bg-camp-orange' : 'bg-border'
         }`} />
         {/* Center label */}
-        <div className="absolute inset-0 flex items-center justify-center text-[8px] text-[#8896A7]">
+        <div className="absolute inset-0 flex items-center justify-center text-[8px] text-muted-foreground">
           LOT
         </div>
       </div>
@@ -85,10 +85,10 @@ export function FirewallPanel() {
               onClick={() => toggleSide(key)}
               className={`rounded-sm border px-2 py-1 text-[9px] font-medium transition-colors duration-150 ${
                 !isAllowed
-                  ? 'border-[#D4DAE3] bg-[#F8F7F5] text-[#D4DAE3] cursor-not-allowed'
+                  ? 'border-border bg-surface-light text-border cursor-not-allowed'
                   : isActive
-                    ? 'border-[#FF6B35] bg-[#FF6B35]/10 text-[#FF6B35]'
-                    : 'border-[#D4DAE3] text-[#4A5568] hover:border-[#FF6B35] hover:bg-[#FF6B35]/5'
+                    ? 'border-camp-orange bg-camp-orange/10 text-camp-orange'
+                    : 'border-border text-text-secondary hover:border-camp-orange hover:bg-camp-orange/5'
               }`}
             >
               {label}
@@ -99,7 +99,7 @@ export function FirewallPanel() {
 
       {/* Status */}
       {firewallActive && (
-        <p className="mt-1.5 text-[9px] text-[#FF6B35]">
+        <p className="mt-1.5 text-[9px] text-camp-orange">
           Active on {firewallSides.join(', ')} — setback zeroed on firewalled sides
         </p>
       )}

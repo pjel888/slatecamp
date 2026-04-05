@@ -82,7 +82,7 @@ export const NavigationProgress = () => {
       aria-valuemax={100}
     >
       <div
-        className="h-full bg-[#1B3FC4] transition-all duration-200 ease-out"
+        className="h-full bg-primary transition-all duration-200 ease-out"
         style={{
           width: `${progress}%`,
           opacity: visible ? 1 : 0,

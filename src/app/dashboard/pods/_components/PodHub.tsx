@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Users, Plus } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
+import { EmptyState } from '@/components/shared/empty-state'
 import { CreatePodModal } from './CreatePodModal'
 import { JoinPodForm } from './JoinPodForm'
 import type { UserPod } from '@/lib/actions/pods'
@@ -37,31 +38,6 @@ const PodCard = ({ pod }: { pod: UserPod }) => (
     </div>
     <span className="ml-3 font-mono text-xs text-[#8896A7]">{pod.invite_code}</span>
   </Link>
-)
-
-// ─── Empty State ──────────────────────────────────────────────────────────────
-
-const EmptyState = ({ isPro, onCreateClick }: { isPro: boolean; onCreateClick: () => void }) => (
-  <div className="rounded-md border border-dashed border-[#D4DAE3] px-6 py-10 text-center">
-    <Users size={28} className="mx-auto mb-3 text-[#D4DAE3]" aria-hidden="true" />
-    <p className="text-sm font-medium text-[#4A5568]">No pods yet</p>
-    <p className="mt-1 text-xs text-[#8896A7]">
-      {isPro
-        ? 'Create a pod and share the invite code with your study group.'
-        : 'Join a pod using an invite code from a Pro member.'}
-    </p>
-    {isPro && (
-      <Button
-        variant="primary"
-        size="sm"
-        onClick={onCreateClick}
-        leftIcon={<Plus size={14} aria-hidden="true" />}
-        className="mt-4"
-      >
-        Create your first pod
-      </Button>
-    )}
-  </div>
 )
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -111,7 +87,28 @@ export const PodHub = ({ pods, isPro }: PodHubProps) => {
 
         {/* Pod list */}
         {pods.length === 0 ? (
-          <EmptyState isPro={isPro} onCreateClick={() => setShowCreateModal(true)} />
+          <EmptyState
+            icon={<Users size={28} className="text-muted-foreground" aria-hidden="true" />}
+            title="No pods yet"
+            description={
+              isPro
+                ? 'Create a pod and share the invite code with your study group.'
+                : 'Join a pod using an invite code from a Pro member.'
+            }
+            action={
+              isPro && (
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={() => setShowCreateModal(true)}
+                  leftIcon={<Plus size={14} aria-hidden="true" />}
+                >
+                  Create your first pod
+                </Button>
+              )
+            }
+            className="border-dashed"
+          />
         ) : (
           <div className="space-y-2">
             {pods.map((pod) => (

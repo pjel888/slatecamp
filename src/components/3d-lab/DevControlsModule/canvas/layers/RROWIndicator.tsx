@@ -68,7 +68,7 @@ export function RROWIndicator() {
         position={[-2.5, GEOMETRY_Y.ROAD + 0.5, -rrowWidth / 2]}
         style={{ pointerEvents: 'none' }}
       >
-        <div className="rounded-sm bg-[#1A2332]/80 px-1.5 py-0.5 font-mono text-[10px] text-white whitespace-nowrap">
+        <div className="rounded-sm bg-foreground/80 px-1.5 py-0.5 font-mono text-[10px] text-white whitespace-nowrap">
           RROW {rrowWidth}m
         </div>
       </Html>

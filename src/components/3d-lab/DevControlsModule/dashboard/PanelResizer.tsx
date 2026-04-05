@@ -57,7 +57,7 @@ export function PanelResizer({ side, panelRef, minWidth = 220, maxWidth = 500 }:
   return (
     <div
       onPointerDown={onPointerDown}
-      className={`absolute top-0 bottom-0 z-20 w-1 cursor-col-resize transition-colors duration-150 hover:bg-[#1B3FC4]/20 active:bg-[#1B3FC4]/30 ${
+      className={`absolute top-0 bottom-0 z-20 w-1 cursor-col-resize transition-colors duration-150 hover:bg-primary/20 active:bg-primary/30 ${
         side === 'left' ? 'right-0' : 'left-0'
       }`}
     />

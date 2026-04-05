@@ -30,7 +30,7 @@ export const TimeSpentDistribution = ({ data }: Props) => {
   const avgLabel = formatAvg(data.avgMs)
 
   return (
-    <Card className="border-[#D4DAE3] bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Response Time Distribution"
         description="How long you spend per question, bucketed by time range."
@@ -41,8 +41,8 @@ export const TimeSpentDistribution = ({ data }: Props) => {
             Response Time Distribution
           </CardTitle>
           {avgLabel && (
-            <span className="text-[11px] text-[#4A5568]">
-              Avg: <span className="font-mono font-semibold text-[#1A2332]">{avgLabel}</span>
+            <span className="text-[11px] text-text-secondary">
+              Avg: <span className="font-mono font-semibold text-foreground">{avgLabel}</span>
             </span>
           )}
         </div>
@@ -88,7 +88,7 @@ export const TimeSpentDistribution = ({ data }: Props) => {
               </ResponsiveContainer>
             </div>
             {data.avgMs > 0 && (
-              <p className="text-[11px] text-[#4A5568] mt-1 leading-snug">
+              <p className="text-[11px] text-text-secondary mt-1 leading-snug">
                 {getInsight(data.avgMs)}
               </p>
             )}

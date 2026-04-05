@@ -39,7 +39,7 @@ export const CoexistenceScreen = ({ onContinue }: CoexistenceScreenProps) => {
       <button
         type="button"
         onClick={onContinue}
-        className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+        className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       >
         Got it. Let&apos;s see my gaps &rarr;
       </button>

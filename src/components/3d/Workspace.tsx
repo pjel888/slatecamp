@@ -196,7 +196,7 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
   return (
     <div className="h-full w-full relative group">
       {/* 3D Canvas */}
-      <div className="h-full w-full rounded-md border border-muted bg-[#FBFBFA] overflow-hidden shadow-inner">
+      <div className="h-full w-full rounded-md border border-muted bg-surface-light overflow-hidden shadow-inner">
         <Canvas shadows camera={{ position: [5, 5, 5], fov: 35 }}>
           <SceneErrorBoundary fallback={<SimpleBox xRayOpacity={xRayOpacity} />}>
             <Suspense fallback={null}>

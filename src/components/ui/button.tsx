@@ -1,7 +1,9 @@
 'use client'
 
+import * as React from 'react'
 import { useFormStatus } from 'react-dom'
 import { Button as ButtonPrimitive } from '@base-ui/react/button'
+import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
@@ -16,9 +18,9 @@ const buttonVariants = cva(
       variant: {
         // Primary (also aliased as 'default')
         primary:
-          'bg-primary text-[8px]rimary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
+          'bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
         default:
-          'bg-primary text-[8px]rimary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
+          'bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 active:scale-[0.98]',
 
         // Secondary (also aliased as 'outline')
         secondary:
@@ -30,12 +32,16 @@ const buttonVariants = cva(
         ghost:
           'bg-transparent text-foreground hover:bg-muted active:bg-muted/80 aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50',
 
+        // Subtle
+        subtle:
+          'bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground active:bg-muted/80 active:scale-[0.98]',
+
         // Destructive
         destructive:
           'bg-destructive text-destructive-foreground hover:bg-destructive/90 active:bg-destructive/80 active:scale-[0.98]',
 
         // Link
-        link: 'text-[8px]rimary underline-offset-4 hover:underline active:text-[8px]rimary/80',
+        link: 'text-primary underline-offset-4 hover:underline active:text-primary/80',
 
         // Success
         success:
@@ -47,7 +53,7 @@ const buttonVariants = cva(
       },
       size: {
         xs: "h-7 gap-1 px-2 py-1 text-[11px] [&_svg:not([class*='size-'])]:size-3",
-        sm: "h-8 gap-1 px-3 py-1.5 text-[8px]s [&_svg:not([class*='size-'])]:size-3.5",
+        sm: "h-8 gap-1 px-3 py-1.5 text-xs [&_svg:not([class*='size-'])]:size-3.5",
         md: "h-9 gap-1.5 px-4 py-2 text-sm [&_svg:not([class*='size-'])]:size-4",
         default: "h-9 gap-1.5 px-4 py-2 text-sm [&_svg:not([class*='size-'])]:size-4",
         lg: "h-10 gap-1.5 px-6 py-2.5 text-sm [&_svg:not([class*='size-'])]:size-4",
@@ -116,64 +122,80 @@ const spinnerSizeClass: Record<string, string> = {
 /* Button                                                             */
 /* ------------------------------------------------------------------ */
 
+type ButtonVariantProps = VariantProps<typeof buttonVariants>
+
 interface ButtonProps
-  extends ButtonPrimitive.Props,
-    VariantProps<typeof buttonVariants> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonVariantProps {
   leftIcon?: React.ReactNode
   rightIcon?: React.ReactNode
   loading?: boolean
   fullWidth?: boolean
+  asChild?: boolean
 }
 
-const Button = ({
-  className,
-  variant = 'default',
-  size = 'default',
-  leftIcon,
-  rightIcon,
-  loading = false,
-  fullWidth = false,
-  disabled,
-  children,
-  ...props
-}: ButtonProps) => {
-  const resolvedSize = size ?? 'default'
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      className,
+      variant = 'default',
+      size = 'default',
+      leftIcon,
+      rightIcon,
+      loading = false,
+      fullWidth = false,
+      disabled,
+      children,
+      asChild = false,
+      ...props
+    },
+    ref,
+  ) => {
+    const resolvedSize = size ?? 'default'
+    const resolvedDisabled = loading || disabled
+    const Comp = asChild ? Slot : ButtonPrimitive
 
-  return (
-    <ButtonPrimitive
-      data-slot="button"
-      suppressHydrationWarning
-      className={cn(
-        buttonVariants({ variant, size, className }),
-        loading && 'pointer-events-none opacity-70',
-        fullWidth && 'w-full',
-      )}
-      disabled={loading || disabled}
-      {...props}
-    >
-      {loading ? (
-        <Spinner className={spinnerSizeClass[resolvedSize]} />
-      ) : (
-        leftIcon
-      )}
-      {children}
-      {!loading && rightIcon}
-    </ButtonPrimitive>
-  )
-}
+    return (
+      <Comp
+        ref={ref}
+        data-slot="button"
+        suppressHydrationWarning
+        className={cn(
+          buttonVariants({ variant, size, className }),
+          loading && 'pointer-events-none opacity-70',
+          fullWidth && 'w-full',
+        )}
+        aria-disabled={resolvedDisabled ? true : undefined}
+        {...(!asChild ? { disabled: resolvedDisabled } : {})}
+        {...props}
+      >
+        {asChild ? (
+          children
+        ) : (
+          <>
+            {loading ? (
+              <Spinner className={spinnerSizeClass[resolvedSize]} />
+            ) : (
+              leftIcon
+            )}
+            {children}
+            {!loading && rightIcon}
+          </>
+        )}
+      </Comp>
+    )
+  },
+)
+Button.displayName = 'Button'
 
 /* ------------------------------------------------------------------ */
 /* PendingButton                                                      */
 /* ------------------------------------------------------------------ */
 
 interface PendingButtonProps
-  extends ButtonPrimitive.Props, VariantProps<typeof buttonVariants> {
+  extends ButtonProps {
   pending?: boolean
   pendingLabel?: React.ReactNode
-  leftIcon?: React.ReactNode
-  rightIcon?: React.ReactNode
-  loading?: boolean
-  fullWidth?: boolean
 }
 
 const PendingButton = ({

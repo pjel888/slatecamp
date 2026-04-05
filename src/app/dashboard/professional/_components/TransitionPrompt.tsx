@@ -78,7 +78,7 @@ const TransitionPrompt = ({ variant }: TransitionPromptProps) => {
             type="button"
             onClick={handleActivate}
             disabled={isLoading}
-            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-60"
+            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
           >
             {isActivating ? 'Saving…' : 'I passed — take me to Professional Mode'}
           </button>

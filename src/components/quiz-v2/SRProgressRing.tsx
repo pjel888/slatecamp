@@ -80,7 +80,7 @@ export const SRProgressRing = ({
         {showCheck ? (
           <Check
             weight="bold"
-            className="text-[#2D9F6F] transition-opacity duration-150 ease-out"
+            className="text-success transition-opacity duration-150 ease-out"
             size={size * 0.4}
           />
         ) : (

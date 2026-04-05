@@ -16,7 +16,7 @@ const DIFFICULTY_COLORS: Record<number, string> = {
   1: "text-[#2D9F6F] bg-[#EDFAF4]",
   2: "text-[#3B82C8] bg-[#EEF2FC]",
   3: "text-[#D4951A] bg-[#FEF8ED]",
-  4: "text-[#E8853A] bg-[#FEF8ED]",
+  4: "text-camp-orange bg-[#FEF8ED]",
   5: "text-[#D64545] bg-[#FDF0F0]",
 }
 

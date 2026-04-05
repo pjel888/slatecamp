@@ -115,7 +115,7 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
         'group flex flex-col rounded-md border p-4 text-left w-full',
         'bg-white transition-all duration-150 ease-out',
         'hover:-translate-y-px hover:shadow-sm',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30 focus-visible:ring-offset-2',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
       )}
       style={{ borderColor: '#D4DAE3' }}
       aria-label={`${label}. ${description}`}
@@ -138,10 +138,10 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
       </div>
 
       {/* Label */}
-      <h3 className="text-[15px] font-semibold text-[#1A2332] mb-1 leading-snug">{label}</h3>
+      <h3 className="text-[15px] font-semibold text-foreground mb-1 leading-snug">{label}</h3>
 
       {/* Description */}
-      <p className="text-[13px] text-[#4A5568] leading-relaxed mb-3">{description}</p>
+      <p className="text-[13px] text-text-secondary leading-relaxed mb-3">{description}</p>
 
       {/* CTA */}
       <span
@@ -172,7 +172,7 @@ const ModeSelector = ({ onSelect }: ModeSelectorProps) => {
           <section key={zone} aria-labelledby={`zone-${zone}-heading`}>
             <h2
               id={`zone-${zone}-heading`}
-              className="text-[11px] font-medium uppercase tracking-wide text-[#8896A7] mb-3"
+              className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground mb-3"
             >
               Zone {zone} — {ZONE_LABELS[zone]}
             </h2>

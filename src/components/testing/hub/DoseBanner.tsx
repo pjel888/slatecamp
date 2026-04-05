@@ -61,8 +61,8 @@ export const DoseBanner = ({
   if (loading) {
     return (
       <div className="mb-6 flex items-center gap-2 rounded-md border border-border bg-white p-3">
-        <SpinnerGap size={14} className="animate-spin" style={{ color: '#1B3FC4' }} />
-        <span className="text-xs" style={{ color: '#4A5568' }}>
+        <SpinnerGap size={14} className="animate-spin" style={{ color: 'var(--primary)' }} />
+        <span className="text-xs" style={{ color: 'var(--text-secondary)' }}>
           Loading your daily plan...
         </span>
       </div>
@@ -84,17 +84,17 @@ export const DoseBanner = ({
 
   return (
     <div
-      className="mb-6 flex items-center justify-between gap-3 rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-4 py-3"
+      className="mb-6 flex items-center justify-between gap-3 rounded-md border border-primary/20 bg-primary-50 px-4 py-3"
       role="region"
       aria-label="Daily study recommendation"
     >
       <div className="flex items-center gap-2.5 min-w-0">
-        <Lightning size={18} weight="fill" style={{ color: '#1B3FC4' }} className="flex-shrink-0" />
+        <Lightning size={18} weight="fill" style={{ color: 'var(--primary)' }} className="flex-shrink-0" />
         <div className="min-w-0">
-          <p className="text-sm font-medium truncate" style={{ color: '#1A2332' }}>
+          <p className="text-sm font-medium truncate" style={{ color: 'var(--foreground)' }}>
             {headline}
           </p>
-          <p className="text-xs truncate" style={{ color: '#4A5568' }}>
+          <p className="text-xs truncate" style={{ color: 'var(--text-secondary)' }}>
             {dose.rationale} &middot; ~{dose.estimatedMinutes} min
           </p>
         </div>
@@ -108,7 +108,7 @@ export const DoseBanner = ({
           'transition-colors duration-150 ease-out hover:opacity-90',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1',
         ].join(' ')}
-        style={{ backgroundColor: '#1B3FC4' }}
+        style={{ backgroundColor: 'var(--primary)' }}
       >
         Start
         <ArrowRight size={14} weight="bold" />

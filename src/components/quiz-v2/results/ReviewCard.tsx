@@ -26,27 +26,27 @@ const getOptionState = (
 }
 
 const OPTION_BG: Record<OptionState, string> = {
-  correct: 'bg-[#EEF2FC] border-[#1B3FC4]',
-  'wrong-choice': 'bg-[#FEF8ED] border-[#D4951A]',
-  default: 'bg-white border-[#D4DAE3] opacity-60',
+  correct: 'bg-primary-50 border-primary',
+  'wrong-choice': 'bg-warning-50 border-warning',
+  default: 'bg-white border-border opacity-60',
 }
 
 const LETTER_BG: Record<OptionState, string> = {
-  correct: 'bg-[#1B3FC4] text-white',
-  'wrong-choice': 'bg-[#D4951A] text-white',
-  default: 'bg-[#F8F7F5] text-[#8896A7]',
+  correct: 'bg-primary text-white',
+  'wrong-choice': 'bg-warning text-white',
+  default: 'bg-surface-light text-muted-foreground',
 }
 
 // ─── Correctness helpers ──────────────────────────────────────────────────────
 
 const getCorrectnessInfo = (question: ReviewQuestionData) => {
   if (question.isSkipped) {
-    return { icon: '\u2298', label: 'Skipped', colorClass: 'text-[#8896A7]' }
+    return { icon: '\u2298', label: 'Skipped', colorClass: 'text-muted-foreground' }
   }
   if (question.isCorrect) {
-    return { icon: '\u2713', label: 'Correct', colorClass: 'text-[#2D9F6F]' }
+    return { icon: '\u2713', label: 'Correct', colorClass: 'text-success' }
   }
-  return { icon: '\u2192', label: 'Not quite', colorClass: 'text-[#D4951A]' }
+  return { icon: '\u2192', label: 'Not quite', colorClass: 'text-warning' }
 }
 
 const getConfidenceLabel = (level: number | null): string | null => {
@@ -70,7 +70,7 @@ export const ReviewCard = ({
 
   return (
     <div
-      className="bg-white rounded-md border border-[#D4DAE3] overflow-hidden"
+      className="bg-white rounded-md border border-border overflow-hidden"
     >
       {/* ── Header (always visible, toggles expand) ─────────────────────────── */}
       <button
@@ -79,17 +79,17 @@ export const ReviewCard = ({
         aria-expanded={isExpanded}
         className={cn(
           'w-full flex items-center gap-3 px-4 py-3 text-left',
-          'hover:bg-[#F8F7F5] transition-colors duration-150 ease-out',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#1B3FC4]',
+          'hover:bg-surface-light transition-colors duration-150 ease-out',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary',
         )}
       >
         {/* Question number */}
-        <span className="text-xs font-semibold text-[#4A5568] tabular-nums shrink-0">
+        <span className="text-xs font-semibold text-text-secondary tabular-nums shrink-0">
           Q{question.position}
         </span>
 
         {/* Topic breadcrumb */}
-        <span className="text-sm text-[#1A2332] truncate flex-1 min-w-0">
+        <span className="text-sm text-foreground truncate flex-1 min-w-0">
           {question.taxonomyBreadcrumb || question.stem.slice(0, 80)}
         </span>
 
@@ -111,7 +111,7 @@ export const ReviewCard = ({
           fill="none"
           aria-hidden="true"
           className={cn(
-            'shrink-0 text-[#8896A7] transition-transform duration-150 ease-out',
+            'shrink-0 text-muted-foreground transition-transform duration-150 ease-out',
             isExpanded && 'rotate-180',
           )}
         >
@@ -127,19 +127,19 @@ export const ReviewCard = ({
 
       {/* ── Expanded body ───────────────────────────────────────────────────── */}
       {isExpanded && (
-        <div className="border-t border-[#D4DAE3]">
+        <div className="border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* ── Left column: Question stem + metadata ─────────────────────── */}
-            <div className="p-4 md:p-5 md:border-r md:border-[#D4DAE3]">
+            <div className="p-4 md:p-5 md:border-r md:border-border">
               {/* Topic breadcrumb */}
               {question.taxonomyBreadcrumb && (
-                <p className="text-xs text-[#8896A7] mb-2 leading-snug">
+                <p className="text-xs text-muted-foreground mb-2 leading-snug">
                   {question.taxonomyBreadcrumb}
                 </p>
               )}
 
               {/* Question stem */}
-              <p className="text-sm text-[#1A2332] leading-relaxed">
+              <p className="text-sm text-foreground leading-relaxed">
                 {question.stem}
               </p>
 
@@ -150,7 +150,7 @@ export const ReviewCard = ({
                   <img
                     src={question.imageUrl}
                     alt="Question illustration"
-                    className="rounded-md max-w-full h-auto border border-[#D4DAE3]"
+                    className="rounded-md max-w-full h-auto border border-border"
                   />
                 </figure>
               )}
@@ -158,7 +158,7 @@ export const ReviewCard = ({
               {/* Confidence badge */}
               {confidenceLabel && (
                 <div className="mt-3">
-                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-sm bg-[#F8F7F5] text-xs text-[#4A5568]">
+                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-sm bg-surface-light text-xs text-text-secondary">
                     Confidence: {confidenceLabel}
                   </span>
                 </div>
@@ -166,14 +166,14 @@ export const ReviewCard = ({
 
               {/* Question history (Pro) — inline rendering */}
               {historyStats && historyStats.timesSeen > 1 && (
-                <div className="mt-3 flex items-center gap-2 text-xs text-[#8896A7]">
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <span>
                     Seen {historyStats.timesSeen}&times;:
                   </span>
-                  <span className="text-[#2D9F6F] tabular-nums">
+                  <span className="text-success tabular-nums">
                     {'\u2713'}{historyStats.timesCorrect}
                   </span>
-                  <span className="text-[#4A5568] tabular-nums">
+                  <span className="text-text-secondary tabular-nums">
                     {'\u2717'}{historyStats.timesWrong}
                   </span>
                 </div>
@@ -182,7 +182,7 @@ export const ReviewCard = ({
 
             {/* ── Right column: Annotated options + rationale ────────────────── */}
             <div className="p-4 md:p-5">
-              <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
                 Answer Choices
               </p>
 
@@ -209,9 +209,9 @@ export const ReviewCard = ({
                         {option.letter}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm text-[#1A2332] leading-relaxed">{option.text}</p>
+                        <p className="text-sm text-foreground leading-relaxed">{option.text}</p>
                         {option.isCorrect && (
-                          <p className="mt-1 text-xs font-medium text-[#1B3FC4] flex items-center gap-1">
+                          <p className="mt-1 text-xs font-medium text-primary flex items-center gap-1">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                               <path d="M2 6l3 3 5-5" stroke="#1B3FC4" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
@@ -219,7 +219,7 @@ export const ReviewCard = ({
                           </p>
                         )}
                         {state === 'wrong-choice' && (
-                          <p className="mt-1 text-xs text-[#D4951A]">{'\u2190'} You chose this</p>
+                          <p className="mt-1 text-xs text-warning">{'\u2190'} You chose this</p>
                         )}
                       </div>
                     </div>
@@ -229,16 +229,16 @@ export const ReviewCard = ({
 
               {/* Rationale */}
               {question.rationale && (
-                <div className="mt-4 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-1.5">
+                <div className="mt-4 rounded-md border border-border bg-surface-light p-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1.5">
                     Explanation
                   </p>
-                  <p className="text-sm text-[#1A2332] leading-relaxed">{question.rationale}</p>
+                  <p className="text-sm text-foreground leading-relaxed">{question.rationale}</p>
 
                   {!question.isCorrect && question.wrongAnswerExplanation && (
-                    <div className="mt-2 border-t border-[#D4DAE3] pt-2">
-                      <p className="text-xs font-semibold text-[#4A5568] mb-1">Why your answer was incorrect</p>
-                      <p className="text-sm text-[#4A5568] leading-relaxed">{question.wrongAnswerExplanation}</p>
+                    <div className="mt-2 border-t border-border pt-2">
+                      <p className="text-xs font-semibold text-text-secondary mb-1">Why your answer was incorrect</p>
+                      <p className="text-sm text-text-secondary leading-relaxed">{question.wrongAnswerExplanation}</p>
                     </div>
                   )}
 
@@ -247,7 +247,7 @@ export const ReviewCard = ({
                       href={question.wikiArticleUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+                      className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-primary hover:text-primary-700 transition-colors duration-150"
                     >
                       Read reference article
                       <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

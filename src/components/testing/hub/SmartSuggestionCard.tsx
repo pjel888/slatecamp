@@ -146,7 +146,7 @@ const SmartSuggestionCard = ({ suggestion }: SmartSuggestionCardProps) => {
             className={cn(
               'inline-flex items-center justify-center rounded-sm px-3 py-2 text-[13px] font-medium transition-all duration-150 ease-out active:scale-[0.98]',
               isDestructive
-                ? 'bg-destructive text-white hover:bg-[#C03C3C]'
+                ? 'bg-destructive text-white hover:bg-destructive/90'
                 : 'bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90'
             )}
           >

@@ -85,7 +85,7 @@ const BloomBarRow = ({
   return (
     <div className="flex flex-col gap-0.5">
       <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-[#1A2332]">
+        <span className="text-xs font-medium text-foreground">
           {BLOOM_LABELS[bloom]}
         </span>
         <div className="flex items-center gap-2">
@@ -164,7 +164,7 @@ const DiagnosticBanner = ({ message }: { message: string }) => {
         borderColor: '#D4DAE3',
       }}
     >
-      <p className="text-[11px] text-[#4A5568] leading-relaxed">{message}</p>
+      <p className="text-[11px] text-text-secondary leading-relaxed">{message}</p>
     </div>
   )
 }
@@ -173,10 +173,10 @@ const DiagnosticBanner = ({ message }: { message: string }) => {
 
 const LockedState = ({ sessionsCompleted }: { sessionsCompleted: number }) => (
   <div className="flex flex-col items-center justify-center py-6 text-center gap-1">
-    <p className="text-sm font-medium text-[#1A2332]">
+    <p className="text-sm font-medium text-foreground">
       Cognitive level tracking unlocks after 10 sessions
     </p>
-    <p className="text-[11px] text-[#8896A7]">
+    <p className="text-[11px] text-muted-foreground">
       {sessionsCompleted} of {SESSIONS_THRESHOLD} sessions completed
     </p>
     <div className="mt-2 h-1.5 w-48 rounded-full overflow-hidden" style={{ backgroundColor: '#EEF2FC' }}>
@@ -196,8 +196,8 @@ const LockedState = ({ sessionsCompleted }: { sessionsCompleted: number }) => (
 
 const EmptyBloomState = () => (
   <div className="flex flex-col items-center justify-center py-6 text-center">
-    <p className="text-sm font-medium text-[#1A2332]">No data yet</p>
-    <p className="text-[11px] text-[#8896A7] mt-0.5">
+    <p className="text-sm font-medium text-foreground">No data yet</p>
+    <p className="text-[11px] text-muted-foreground mt-0.5">
       Complete a session with bloom-tagged questions to see your cognitive profile.
     </p>
   </div>
@@ -227,11 +227,11 @@ export const BloomCognitiveTracker = ({
     >
       {/* Header */}
       <div className="flex items-center justify-between mb-1">
-        <h3 className="text-[11px] font-medium uppercase tracking-[0.15em] text-[#4A5568]">
+        <h3 className="text-[11px] font-medium uppercase tracking-[0.15em] text-text-secondary">
           Cognitive Level Tracker
         </h3>
       </div>
-      <p className="text-[11px] text-[#8896A7] mb-3">
+      <p className="text-[11px] text-muted-foreground mb-3">
         Accuracy by Bloom's taxonomy level per subject
       </p>
 

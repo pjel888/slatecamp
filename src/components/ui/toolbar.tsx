@@ -1,27 +1,27 @@
 import { cn } from '@/lib/utils'
 
-interface ToolbarProps {
-  children: React.ReactNode
-  className?: string
-}
+type ToolbarProps = React.ComponentProps<'div'>
 
-interface ToolbarGroupProps {
-  children: React.ReactNode
-  className?: string
-}
+type ToolbarGroupProps = React.ComponentProps<'div'>
 
-interface ToolbarDividerProps {
-  className?: string
-}
+type ToolbarDividerProps = React.ComponentProps<'div'>
 
-export const Toolbar = ({ children, className }: ToolbarProps) => (
-  <div className={cn('flex items-center gap-1', className)}>{children}</div>
+const Toolbar = ({ className, ...props }: ToolbarProps) => (
+  <div data-slot="toolbar" className={cn('flex items-center gap-1', className)} {...props} />
 )
 
-export const ToolbarGroup = ({ children, className }: ToolbarGroupProps) => (
-  <div className={cn('flex items-center gap-0.5', className)}>{children}</div>
+const ToolbarGroup = ({ className, ...props }: ToolbarGroupProps) => (
+  <div data-slot="toolbar-group" className={cn('flex items-center gap-0.5', className)} {...props} />
 )
 
-export const ToolbarDivider = ({ className }: ToolbarDividerProps) => (
-  <div className={cn('w-px h-5 bg-border mx-1', className)} />
+const ToolbarDivider = ({ className, ...props }: ToolbarDividerProps) => (
+  <div
+    aria-hidden="true"
+    data-slot="toolbar-divider"
+    className={cn('mx-1 h-5 w-px bg-border', className)}
+    {...props}
+  />
 )
+
+export { Toolbar, ToolbarGroup, ToolbarDivider }
+export type { ToolbarProps, ToolbarGroupProps, ToolbarDividerProps }

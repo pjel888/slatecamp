@@ -55,10 +55,10 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
     return (
       <Card className="border-border bg-white p-2">
         <CardContent className="p-4 text-center">
-          <p className="text-sm font-semibold text-[#2D9F6F]">
+          <p className="text-sm font-semibold text-success">
             Thank you for reporting your exam outcome.
           </p>
-          <p className="text-xs text-[#4A5568] mt-1">
+          <p className="text-xs text-text-secondary mt-1">
             This helps us improve our readiness predictions for everyone.
           </p>
         </CardContent>
@@ -72,7 +72,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
           Report Exam Outcome
         </CardTitle>
-        <p className="text-xs text-[#4A5568] mt-0.5">
+        <p className="text-xs text-text-secondary mt-0.5">
           Help us calibrate readiness predictions by sharing your result.
         </p>
       </CardHeader>
@@ -80,7 +80,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           {/* Exam Date */}
           <div>
-            <label htmlFor="exam-date" className="block text-[11px] font-semibold text-[#4A5568] mb-1">
+            <label htmlFor="exam-date" className="block text-[11px] font-semibold text-text-secondary mb-1">
               Exam Date
             </label>
             <input
@@ -89,13 +89,13 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               value={examDate}
               onChange={(e) => setExamDate(e.target.value)}
               max={new Date().toISOString().split('T')[0]}
-              className="w-full rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-sm text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
 
           {/* Result Toggle */}
           <div>
-            <label className="block text-[11px] font-semibold text-[#4A5568] mb-1">
+            <label className="block text-[11px] font-semibold text-text-secondary mb-1">
               Result
             </label>
             <div className="flex gap-2">
@@ -104,8 +104,8 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
                 onClick={() => setResult('pass')}
                 className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
                   result === 'pass'
-                    ? 'bg-[#2D9F6F] text-white'
-                    : 'border border-[#D4DAE3] bg-white text-[#4A5568] hover:bg-[#F8F7F5]'
+                    ? 'bg-success text-white'
+                    : 'border border-border bg-white text-text-secondary hover:bg-surface-light'
                 }`}
               >
                 Passed
@@ -115,8 +115,8 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
                 onClick={() => setResult('fail')}
                 className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
                   result === 'fail'
-                    ? 'bg-[#D64545] text-white'
-                    : 'border border-[#D4DAE3] bg-white text-[#4A5568] hover:bg-[#F8F7F5]'
+                    ? 'bg-destructive text-white'
+                    : 'border border-border bg-white text-text-secondary hover:bg-surface-light'
                 }`}
               >
                 Not Yet
@@ -126,7 +126,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
 
           {/* Optional Score */}
           <div>
-            <label htmlFor="exam-score" className="block text-[11px] font-semibold text-[#4A5568] mb-1">
+            <label htmlFor="exam-score" className="block text-[11px] font-semibold text-text-secondary mb-1">
               Score (optional)
             </label>
             <input
@@ -138,12 +138,12 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               value={score}
               onChange={(e) => setScore(e.target.value)}
               placeholder="e.g. 78.5"
-              className="w-full rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
 
           {error && (
-            <p className="text-xs text-[#D64545] bg-[#FDF0F0] rounded-sm px-2 py-1">
+            <p className="text-xs text-destructive bg-destructive-50 rounded-sm px-2 py-1">
               {error}
             </p>
           )}
@@ -151,7 +151,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
           <button
             type="submit"
             disabled={isPending}
-            className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isPending ? 'Submitting...' : 'Submit Outcome'}
           </button>

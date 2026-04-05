@@ -32,7 +32,7 @@ export const NotificationItem = ({ notification, variant = 'page' }: Notificatio
       className={cn(
         'flex w-full gap-3.5 px-4 py-3.5 text-left transition-colors duration-150 cursor-pointer',
         isUnread
-          ? 'bg-[#EEF2FC]'
+          ? 'bg-primary-50'
           : 'hover:bg-muted/50',
       )}
     >

@@ -30,34 +30,34 @@ export function TourOverlay() {
 
   return (
     <div className="absolute inset-x-0 bottom-0 z-20 p-4 md:bottom-4 md:left-4 md:right-auto md:max-w-sm">
-      <div className="rounded-md border border-[#D4DAE3] bg-white p-4 shadow-md">
+      <div className="rounded-md border border-border bg-white p-4 shadow-md">
         {/* Step indicator */}
         <div className="mb-2 flex items-center gap-1.5">
           {TOUR_STEPS.map((_, i) => (
             <div
               key={i}
               className={`h-1 flex-1 rounded-full transition-colors duration-150 ${
-                i <= tourStep ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]'
+                i <= tourStep ? 'bg-primary' : 'bg-border'
               }`}
             />
           ))}
         </div>
 
         {/* Step counter */}
-        <p className="text-[10px] font-medium uppercase tracking-wider text-[#8896A7] mb-1">
+        <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground mb-1">
           Step {tourStep + 1} of {TOUR_STEPS.length}
         </p>
 
         {/* Content */}
-        <h3 className="text-sm font-semibold text-[#1A2332] mb-1">{step.title}</h3>
-        <p className="text-xs text-[#4A5568] leading-relaxed mb-3">{step.description}</p>
+        <h3 className="text-sm font-semibold text-foreground mb-1">{step.title}</h3>
+        <p className="text-xs text-text-secondary leading-relaxed mb-3">{step.description}</p>
 
         {/* Navigation */}
         <div className="flex items-center gap-2">
           {!isFirst && (
             <button
               onClick={prevTourStep}
-              className="rounded-sm border border-[#D4DAE3] px-3 py-1.5 text-[10px] font-medium text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5]"
+              className="rounded-sm border border-border px-3 py-1.5 text-[10px] font-medium text-text-secondary transition-colors duration-150 hover:bg-surface-light"
             >
               Back
             </button>
@@ -65,21 +65,21 @@ export function TourOverlay() {
           {!isLast ? (
             <button
               onClick={nextTourStep}
-              className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-[10px] font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+              className="rounded-sm bg-primary px-3 py-1.5 text-[10px] font-medium text-white transition-colors duration-150 hover:bg-primary-700"
             >
               Next
             </button>
           ) : (
             <button
               onClick={() => setTourStep(null)}
-              className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-[10px] font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+              className="rounded-sm bg-primary px-3 py-1.5 text-[10px] font-medium text-white transition-colors duration-150 hover:bg-primary-700"
             >
               Start Exploring
             </button>
           )}
           <button
             onClick={() => setTourStep(null)}
-            className="ml-auto text-[10px] text-[#8896A7] transition-colors duration-150 hover:text-[#1A2332]"
+            className="ml-auto text-[10px] text-muted-foreground transition-colors duration-150 hover:text-foreground"
           >
             Skip tour
           </button>

@@ -7,6 +7,7 @@ import {
   SectionEyebrow,
   FeaturePill,
 } from '@/components/marketing/FeatureSectionLayout'
+import { palette, cssVars } from '@/components/graphics/tokens'
 import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
@@ -22,14 +23,14 @@ const ReadinessRing = ({ value, className = '' }: { value: number; className?: s
   return (
     <div className={`relative ${className}`}>
       <svg className='-rotate-90' width={80} height={80} viewBox='0 0 80 80' aria-hidden='true'>
-        <circle cx={40} cy={40} r={radius} fill='none' stroke='#E5E7EB' strokeWidth={5} />
+        <circle cx={40} cy={40} r={radius} fill='none' stroke={palette.borderDefault} strokeWidth={5} />
         <motion.circle
           ref={ref}
           cx={40}
           cy={40}
           r={radius}
           fill='none'
-          stroke='#F5A623'
+          stroke={palette.amber}
           strokeWidth={5}
           strokeLinecap='round'
           strokeDasharray={circumference}
@@ -38,7 +39,7 @@ const ReadinessRing = ({ value, className = '' }: { value: number; className?: s
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         />
       </svg>
-      <span className='absolute inset-0 flex items-center justify-center font-mono text-[18px] font-extrabold text-[#111]'>
+      <span className='absolute inset-0 flex items-center justify-center font-mono text-[18px] font-extrabold text-camp-black'>
         {value}%
       </span>
     </div>
@@ -70,11 +71,11 @@ const AnalyticsMockup = () => (
     <div className='mb-4 flex items-center gap-4'>
       <ReadinessRing value={75} className='h-20 w-20' />
       <div>
-        <div className='text-[18px] font-extrabold text-[#111]'>Getting there</div>
+        <div className='text-[18px] font-extrabold text-camp-black'>Getting there</div>
         <div className='mt-1 text-[11px] leading-relaxed text-text-2'>
           2 subjects need targeted review before you&apos;re exam-ready.
         </div>
-        <div className='mt-2 font-mono text-[11px] text-[#888]'>↑ +8 pts this week</div>
+        <div className='mt-2 font-mono text-[11px] text-marketing-tertiary'>↑ +8 pts this week</div>
       </div>
     </div>
 
@@ -82,30 +83,30 @@ const AnalyticsMockup = () => (
     <div className='mb-4 grid grid-cols-2 gap-2'>
       {[
         { label: 'Questions', value: '847', sub: 'answered total', accent: undefined },
-        { label: 'Streak', value: '12', sub: 'days active', accent: '#F5A623' },
+        { label: 'Streak', value: '12', sub: 'days active', accent: cssVars.accent },
       ].map((stat) => (
         <div key={stat.label} className='rounded-[8px] bg-muted p-3'>
-          <div className='font-mono text-[11px] uppercase tracking-[.12em] text-[#888]'>{stat.label}</div>
-          <div className='mt-1 text-[20px] font-extrabold' style={{ color: stat.accent || '#111' }}>
+          <div className='font-mono text-[11px] uppercase tracking-[.12em] text-marketing-tertiary'>{stat.label}</div>
+          <div className='mt-1 text-[20px] font-extrabold' style={{ color: stat.accent || 'var(--foreground)' }}>
             {stat.value}
           </div>
-          <div className='text-[11px] text-[#888]'>{stat.sub}</div>
+          <div className='text-[11px] text-marketing-tertiary'>{stat.sub}</div>
         </div>
       ))}
     </div>
 
     {/* Subject bars */}
-    <div className='mb-2.5 font-mono text-[11px] uppercase tracking-[.15em] text-[#888]'>By Subject</div>
+    <div className='mb-2.5 font-mono text-[11px] uppercase tracking-[.15em] text-marketing-tertiary'>By Subject</div>
     {[
-      { name: 'Structural Design', pct: 85, color: '#1B3FC4' },
-      { name: 'Building Technology', pct: 62, color: '#F5A623' },
-      { name: 'Architectural Theory', pct: 41, color: '#E63329' },
-      { name: 'History of Arch.', pct: 73, color: '#F5A623' },
-      { name: 'Utilities (MEPFS)', pct: 88, color: '#1B3FC4' },
+      { name: 'Structural Design', pct: 85, color: palette.slateBlue },
+      { name: 'Building Technology', pct: 62, color: palette.amber },
+      { name: 'Architectural Theory', pct: 41, color: palette.warmRed },
+      { name: 'History of Arch.', pct: 73, color: palette.amber },
+      { name: 'Utilities (MEPFS)', pct: 88, color: palette.slateBlue },
     ].map((s) => (
       <div key={s.name} className='mb-2'>
         <div className='mb-1 flex justify-between font-mono text-[11px]'>
-          <span className='text-[#888]'>{s.name}</span>
+          <span className='text-marketing-tertiary'>{s.name}</span>
           <span style={{ color: s.color }}>{s.pct}%</span>
         </div>
         <div className='h-[5px] overflow-hidden rounded-full bg-border-design'>
@@ -120,15 +121,15 @@ const AnalyticsMockup = () => (
 
 const ScoreLegend = () => (
   <div className='mt-6 rounded-md border border-border-design bg-white p-4'>
-    <div className='mb-3 text-[13px] font-bold text-[#111]'>What the score actually means</div>
+    <div className='mb-3 text-[13px] font-bold text-camp-black'>What the score actually means</div>
     {[
-      { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: '#1B3FC4' },
-      { range: '60–84%', label: 'Getting there. Targeted review.', color: '#F5A623' },
-      { range: 'Below 60%', label: 'At risk. Build the foundation.', color: '#E63329' },
+      { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: palette.slateBlue },
+      { range: '60–84%', label: 'Getting there. Targeted review.', color: palette.amber },
+      { range: 'Below 60%', label: 'At risk. Build the foundation.', color: palette.warmRed },
     ].map((tier) => (
       <div key={tier.range} className='mb-2 flex items-center gap-3'>
         <div className='h-2 w-8 rounded-full' style={{ background: tier.color }} />
-        <span className='text-[12px] text-[#111]'>
+        <span className='text-[12px] text-camp-black'>
           <strong>{tier.range}</strong>{' '}
           <span className='text-text-2'>{tier.label}</span>
         </span>
@@ -149,7 +150,7 @@ export const AnalyticsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
           Stop guessing. Your Readiness Score
           <br />
           tells you exactly where you stand.

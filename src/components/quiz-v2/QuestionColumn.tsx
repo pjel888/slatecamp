@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import type { QuestionForClient, QuizMode } from '@/types/quiz-config'
 import { HintButton } from './HintButton'
 
@@ -10,7 +11,7 @@ interface QuestionColumnProps {
   mode?: QuizMode
 }
 
-export const QuestionColumn = ({
+export const QuestionColumn = memo(({
   question,
   mode,
 }: QuestionColumnProps) => {
@@ -22,7 +23,7 @@ export const QuestionColumn = ({
   return (
     <section aria-label="Question" aria-describedby={stemId}>
       {/* Topic breadcrumb */}
-      <p className="text-xs text-[#8896A7] mb-3 leading-snug">
+      <p className="text-xs text-muted-foreground mb-3 leading-snug">
         {question.taxonomy_breadcrumb}
         {question.is_interleaved && (
           <span
@@ -38,11 +39,11 @@ export const QuestionColumn = ({
       <h2
         id={headingId}
         tabIndex={-1}
-        className="text-xs font-semibold text-[#4A5568] uppercase tracking-wide mb-3"
+        className="text-xs font-semibold text-text-secondary uppercase tracking-wide mb-3"
       >
         Question {question.position}
         {' '}
-        <span className="normal-case font-normal text-[#8896A7]">
+        <span className="normal-case font-normal text-muted-foreground">
           · {question.difficulty_label}
         </span>
       </h2>
@@ -50,7 +51,7 @@ export const QuestionColumn = ({
       {/* Question stem */}
       <p
         id={stemId}
-        className="text-[#1A2332] text-base leading-relaxed"
+        className="text-foreground text-base leading-relaxed"
       >
         {question.stem}
       </p>
@@ -70,10 +71,10 @@ export const QuestionColumn = ({
           <img
             src={question.image_url}
             alt={question.image_alt_text ?? 'Question illustration'}
-            className="rounded-md max-w-full h-auto border border-[#D4DAE3]"
+            className="rounded-md max-w-full h-auto border border-border"
           />
           {question.image_alt_text && (
-            <figcaption className="mt-1.5 text-xs text-[#8896A7]">
+            <figcaption className="mt-1.5 text-xs text-muted-foreground">
               {question.image_alt_text}
             </figcaption>
           )}
@@ -82,4 +83,6 @@ export const QuestionColumn = ({
 
     </section>
   )
-}
+})
+
+QuestionColumn.displayName = 'QuestionColumn'

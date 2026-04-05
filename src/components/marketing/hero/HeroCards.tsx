@@ -71,7 +71,7 @@ const ALESubjectCoverageCard = () => {
                   subject.color,
                 )}
               />
-              <span className='truncate text-[13px] font-medium leading-tight text-[#555]'>
+              <span className='truncate text-[13px] font-medium leading-tight text-text-2'>
                 {subject.name}
               </span>
             </div>
@@ -104,7 +104,7 @@ const MockQuestionCard = () => (
           Sample Question
         </span>
       </div>
-      <span className='rounded bg-muted px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-[#888]'>
+      <span className='rounded bg-muted px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.1em] uppercase text-marketing-tertiary'>
         {MOCK_QUESTION.topic}
       </span>
     </div>
@@ -213,7 +213,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           return (
             <div key={label} className='space-y-1'>
               <div className='flex items-center justify-between text-[11px]'>
-                <span className='truncate text-[#555]'>{label}</span>
+                <span className='truncate text-text-2'>{label}</span>
                 <span
                   className={cn(
                     'font-medium',

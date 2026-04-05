@@ -78,13 +78,13 @@ export const CompExamFlow = () => {
           <button
             type="button"
             onClick={() => setStep('entry')}
-            className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+            className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Enter my comp exam scores →
           </button>
           <a
             href="/dashboard"
-            className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm text-[#8896A7] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#4A5568] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+            className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm text-[#8896A7] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#4A5568] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Skip for now
           </a>

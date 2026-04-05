@@ -1,5 +1,6 @@
 'use server'
 
+import { revalidateTag, revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 
 export const flagQuestion = async (input: {
@@ -33,6 +34,8 @@ export const flagQuestion = async (input: {
     console.warn('[quiz-v2/flagQuestion] Could not update flag:', error.message)
     return { success: false }
   }
+
+  revalidatePath('/dashboard')
 
   return { success: true }
 }

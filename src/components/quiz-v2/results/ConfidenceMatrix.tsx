@@ -67,14 +67,14 @@ const QuadrantCell = ({
         <span
           className={cn(
             'flex-shrink-0 text-xs font-medium tabular-nums px-1.5 py-0.5 rounded-sm',
-            isEmpty ? 'bg-[#F8F7F5] text-[#8896A7]' : `${config.bgColor} ${config.textColor}`,
+            isEmpty ? 'bg-surface-light text-muted-foreground' : `${config.bgColor} ${config.textColor}`,
           )}
         >
           {count}
         </span>
       </div>
 
-      <p className="text-xs text-[#4A5568] leading-relaxed mb-2">
+      <p className="text-xs text-text-secondary leading-relaxed mb-2">
         {config.description}
       </p>
 
@@ -85,14 +85,14 @@ const QuadrantCell = ({
             {topicNames.map((name) => (
               <span
                 key={name}
-                className="inline-block text-[11px] leading-tight text-[#4A5568] bg-white/80 border border-[#D4DAE3] rounded-sm px-1.5 py-0.5"
+                className="inline-block text-[11px] leading-tight text-text-secondary bg-white/80 border border-border rounded-sm px-1.5 py-0.5"
               >
                 {name}
               </span>
             ))}
           </div>
         ) : (
-          <p className="text-xs text-[#8896A7] italic">
+          <p className="text-xs text-muted-foreground italic">
             No questions in this category.
           </p>
         )}
@@ -104,7 +104,7 @@ const QuadrantCell = ({
           href={`/quiz/focused/setup?source=confidence&session=${sessionId}&mode=${mode}&filter=confident-wrong`}
           className={cn(
             'inline-flex items-center gap-1 mt-3 text-xs font-medium shrink-0',
-            'text-[#1B3FC4] hover:text-[#1535A8]',
+            'text-primary hover:text-primary-700',
             'transition-colors duration-150 ease-out',
           )}
         >
@@ -140,36 +140,36 @@ export const ConfidenceMatrix = ({
     {
       label: 'Solid Knowledge',
       description: 'You knew it and you knew you knew it.',
-      borderClass: 'border-[#2D9F6F]/30',
-      bgColor: 'bg-[#EDFAF4]',
-      textColor: 'text-[#2D9F6F]',
+      borderClass: 'border-success/30',
+      bgColor: 'bg-success-50',
+      textColor: 'text-success',
       items: matrix.confidentCorrect,
       linkable: false,
     },
     {
       label: 'Overconfident',
       description: 'These topics need attention — you thought you knew them but the data says otherwise.',
-      borderClass: 'border-[#D64545]/30',
-      bgColor: 'bg-[#FDF0F0]',
-      textColor: 'text-[#D64545]',
+      borderClass: 'border-destructive/30',
+      bgColor: 'bg-destructive-50',
+      textColor: 'text-destructive',
       items: matrix.confidentWrong,
       linkable: true,
     },
     {
       label: 'Underconfident',
       description: 'You got it right but didn\'t trust yourself.',
-      borderClass: 'border-[#D4951A]/30',
-      bgColor: 'bg-[#FEF8ED]',
-      textColor: 'text-[#D4951A]',
+      borderClass: 'border-warning/30',
+      bgColor: 'bg-warning-50',
+      textColor: 'text-warning',
       items: matrix.guessingCorrect,
       linkable: false,
     },
     {
       label: 'Known Gap',
       description: 'Honest self-assessment. These are areas to revisit.',
-      borderClass: 'border-[#D4DAE3]',
-      bgColor: 'bg-[#F8F7F5]',
-      textColor: 'text-[#4A5568]',
+      borderClass: 'border-border',
+      bgColor: 'bg-surface-light',
+      textColor: 'text-text-secondary',
       items: matrix.guessingWrong,
       linkable: false,
     },
@@ -184,13 +184,13 @@ export const ConfidenceMatrix = ({
     <section aria-label="Confidence diagnostic matrix">
       {/* Header + mobile toggle */}
       <div className="flex items-center justify-between mb-3">
-        <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7]">
+        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           Confidence Diagnostic
         </p>
         <button
           type="button"
           onClick={() => setExpanded((prev) => !prev)}
-          className="md:hidden flex items-center gap-1 text-xs text-[#1B3FC4] font-medium"
+          className="md:hidden flex items-center gap-1 text-xs text-primary font-medium"
           aria-expanded={expanded}
           aria-controls="confidence-matrix-grid"
         >
@@ -205,8 +205,8 @@ export const ConfidenceMatrix = ({
 
       {/* Summary banner for mobile (always visible) */}
       {hasDangerItems && !expanded && (
-        <div className="md:hidden bg-[#FDF0F0] border border-[#D64545]/20 rounded-md p-3 mb-3">
-          <p className="text-xs text-[#D64545] font-medium">
+        <div className="md:hidden bg-destructive-50 border border-destructive/20 rounded-md p-3 mb-3">
+          <p className="text-xs text-destructive font-medium">
             {summaryCount} question{summaryCount !== 1 ? 's' : ''} answered confidently but incorrectly.
           </p>
         </div>
@@ -239,10 +239,10 @@ export const ConfidenceMatrix = ({
           )}
         >
           {matrix.partlyCorrect.length > 0 && (
-            <div className="rounded-md border border-[#D4DAE3] bg-white p-3">
-              <p className="text-xs font-medium text-[#4A5568] mb-1">
+            <div className="rounded-md border border-border bg-white p-3">
+              <p className="text-xs font-medium text-text-secondary mb-1">
                 Partly Sure + Correct
-                <span className="ml-1 tabular-nums text-[#8896A7]">
+                <span className="ml-1 tabular-nums text-muted-foreground">
                   ({matrix.partlyCorrect.length})
                 </span>
               </p>
@@ -250,7 +250,7 @@ export const ConfidenceMatrix = ({
                 {getUniqueTopicNames(matrix.partlyCorrect).map((name) => (
                   <span
                     key={name}
-                    className="inline-block text-[11px] leading-tight text-[#4A5568] bg-[#F8F7F5] border border-[#D4DAE3] rounded-sm px-1.5 py-0.5"
+                    className="inline-block text-[11px] leading-tight text-text-secondary bg-surface-light border border-border rounded-sm px-1.5 py-0.5"
                   >
                     {name}
                   </span>
@@ -259,10 +259,10 @@ export const ConfidenceMatrix = ({
             </div>
           )}
           {matrix.partlyWrong.length > 0 && (
-            <div className="rounded-md border border-[#D4DAE3] bg-white p-3">
-              <p className="text-xs font-medium text-[#4A5568] mb-1">
+            <div className="rounded-md border border-border bg-white p-3">
+              <p className="text-xs font-medium text-text-secondary mb-1">
                 Partly Sure + Wrong
-                <span className="ml-1 tabular-nums text-[#8896A7]">
+                <span className="ml-1 tabular-nums text-muted-foreground">
                   ({matrix.partlyWrong.length})
                 </span>
               </p>
@@ -270,7 +270,7 @@ export const ConfidenceMatrix = ({
                 {getUniqueTopicNames(matrix.partlyWrong).map((name) => (
                   <span
                     key={name}
-                    className="inline-block text-[11px] leading-tight text-[#4A5568] bg-[#F8F7F5] border border-[#D4DAE3] rounded-sm px-1.5 py-0.5"
+                    className="inline-block text-[11px] leading-tight text-text-secondary bg-surface-light border border-border rounded-sm px-1.5 py-0.5"
                   >
                     {name}
                   </span>

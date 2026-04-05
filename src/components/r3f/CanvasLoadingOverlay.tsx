@@ -23,7 +23,7 @@ interface CanvasLoadingOverlayProps {
 export function CanvasLoadingOverlay({
   visible,
   message = 'Loading Scene...',
-  bgClassName = 'bg-[#EEF2FA]/80',
+  bgClassName = 'bg-primary-50/80',
 }: CanvasLoadingOverlayProps) {
   if (!visible) return null
 

@@ -31,12 +31,12 @@ export const CubicleChecker = () => {
   const clPx = Math.round(450 * sc), dPx = Math.round(door * sc), tsY = oy + cd + 22
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[var(--widget-border)] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Cubicle Compliance Checker (2024 IRR)</div>
       <div className="flex gap-3.5 flex-wrap mb-3">
         {([['Width (mm)', w, setW], ['Depth (mm)', d, setD], ['Door clear width (mm)', door, setDoor], ['Turning space (mm)', turn, setTurn]] as const).map(([lbl, val, set]) => (
           <div key={lbl as string}>
-            <label className="block text-[11px] font-semibold text-[#555] mb-1 uppercase">{lbl as string}</label>
+            <label className="block text-[11px] font-semibold text-text-2 mb-1 uppercase">{lbl as string}</label>
             <input
               type="number"
               value={val as number}
@@ -44,23 +44,23 @@ export const CubicleChecker = () => {
               min={500}
               max={2500}
               onChange={e => (set as (v: number) => void)(parseFloat(e.target.value) || 0)}
-              className="w-[100px] px-2 py-1.5 border-[1.5px] border-[#ccc] rounded-md text-[13px] font-dm-mono"
+              className="w-[100px] px-2 py-1.5 border-[1.5px] border-[var(--widget-input-border)] rounded-md text-[13px] font-dm-mono"
             />
           </div>
         ))}
         <div>
-          <label className="block text-[11px] font-semibold text-[#555] mb-1 uppercase">Door swing</label>
+          <label className="block text-[11px] font-semibold text-text-2 mb-1 uppercase">Door swing</label>
           <select
             value={swing}
             onChange={e => setSwing(e.target.value)}
-            className="px-2 py-1.5 border-[1.5px] border-[#ccc] rounded-md text-[13px]"
+            className="px-2 py-1.5 border-[1.5px] border-[var(--widget-input-border)] rounded-md text-[13px]"
           >
             <option value="out">Outward</option>
             <option value="in">Inward</option>
           </select>
         </div>
       </div>
-      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-camp-green text-[#0f4a24]' : 'bg-[#fdf0ef] border border-camp-red text-[#5a1a16]'}`}>
+      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[var(--widget-success-bg)] border border-camp-green text-[var(--widget-success-ink)]' : 'bg-destructive-50 border border-camp-red text-[var(--widget-danger-ink)]'}`}>
         {ok ? (
           <><strong className="text-camp-green">✓ Compliant — 2024 IRR</strong><br />{passes.join(' · ')}</>
         ) : (

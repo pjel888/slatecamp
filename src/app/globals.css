@@ -68,18 +68,6 @@
   --color-primary-800: var(--primary-800);
   --color-primary-900: var(--primary-900);
 
-  /* ── Quiz semantic state utilities ── */
-  --color-state-correct: var(--color-state-correct);
-  --color-state-correct-bg: var(--color-state-correct-bg);
-  --color-state-incorrect: var(--color-state-incorrect);
-  --color-state-incorrect-bg: var(--color-state-incorrect-bg);
-  --color-state-active: var(--color-state-active);
-  --color-state-active-bg: var(--color-state-active-bg);
-  --color-state-review: var(--color-state-review);
-  --color-state-review-bg: var(--color-state-review-bg);
-  --color-state-unanswered: var(--color-state-unanswered);
-  --color-state-unanswered-bg: var(--color-state-unanswered-bg);
-
   --color-success: var(--success);
   --color-success-50: var(--success-50);
   --color-success-100: var(--success-100);
@@ -156,35 +144,56 @@
   --color-border-warm: var(--border-warm);
 
   /* Camp Standard — Bold Color Tokens */
-  --color-camp-black: #111111;
-  --color-camp-cobalt: #1B3FC4;
-  --color-camp-red: #E63329;
-  --color-camp-green: #1B7A3C;
-  --color-camp-amber: #F5A623;
-  --color-camp-cream: #FFFFFF;
-  --color-page-bg: #FFFFFF;
-  --color-ink: #18181B;
-  --color-border-design: #E5E7EB;
+  --color-camp-black: var(--camp-black);
+  --color-camp-cobalt: var(--camp-cobalt);
+  --color-camp-cobalt-light: var(--camp-cobalt-light);
+  --color-camp-red: var(--camp-red);
+  --color-camp-green: var(--camp-green);
+  --color-camp-amber: var(--camp-amber);
+  --color-camp-cream: var(--camp-cream);
+  --color-page-bg: var(--page-bg);
+  --color-ink: var(--ink);
+  --color-border-design: var(--border-design);
 
   /* Wiki article design tokens */
-  --color-cobalt-light: #EEF3FD;
-  --color-signal-gold: #F5A623;
-  --color-signal-gold-light: #FFF8E6;
-  --color-signal-red: #E63329;
-  --color-signal-red-light: #FFF0EF;
-  --color-signal-green: #1B7A3C;
-  --color-cream: #FFFFFF;
-  --color-warm-white: #FFFFFF;
-  --color-wiki-ink: #1A1A1A;
-  --color-ink-muted: #737370;
+  --color-cobalt-light: var(--cobalt-light);
+  --color-signal-gold: var(--signal-gold);
+  --color-signal-gold-light: var(--signal-gold-light);
+  --color-signal-red: var(--signal-red);
+  --color-signal-red-light: var(--signal-red-light);
+  --color-signal-green: var(--signal-green);
+  --color-cream: var(--cream);
+  --color-warm-white: var(--warm-white);
+  --color-wiki-ink: var(--wiki-ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-wiki-body: var(--wiki-prose-body);
+  --color-wiki-divider: var(--wiki-prose-hr);
+  --color-wiki-invert-body: var(--wiki-prose-invert-body);
+  --color-wiki-invert-heading: var(--wiki-prose-invert-heading);
+  --color-wiki-invert-divider: var(--wiki-prose-invert-hr);
+  --color-wiki-border: var(--wiki-border);
+  --color-wiki-muted: var(--wiki-muted);
+  --color-wiki-surface-dark: var(--wiki-surface-dark);
+
+  /* Marketing/trails exact aliases for arbitrary-value cleanup */
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
+  --color-marketing-tertiary: var(--marketing-tertiary);
+  --color-marketing-subtle: var(--marketing-subtle);
+  --color-trail-accent: var(--trail-accent);
+  --color-trail-accent-hover: var(--trail-accent-hover);
+  --color-formula-surface: var(--formula-surface);
+  --color-formula-accent: var(--formula-accent);
+  --color-formula-highlight: var(--formula-highlight);
+  --color-signal-gold-deep: var(--signal-gold-deep);
 
   /* Camp Standard — Dashboard card colors */
-  --color-card-article: #eca83b;
-  --color-card-article-border: #d4922e;
-  --color-card-notes: #45885c;
-  --color-card-notes-border: #3a7450;
-  --color-card-lab: #428894;
-  --color-card-lab-border: #377380;
+  --color-card-article: var(--card-article);
+  --color-card-article-border: var(--card-article-border);
+  --color-card-notes: var(--card-notes);
+  --color-card-notes-border: var(--card-notes-border);
+  --color-card-lab: var(--card-lab);
+  --color-card-lab-border: var(--card-lab-border);
 
   /* Camp Standard — Font families */
   --font-display: 'Plus Jakarta Sans', sans-serif;
@@ -207,6 +216,41 @@
   .font-boldonse {
     font-family: var(--font-boldonse), 'Boldonse', sans-serif;
   }
+}
+
+@utility prose-wiki {
+  --tw-prose-body: var(--wiki-prose-body);
+  --tw-prose-headings: var(--wiki-prose-heading);
+  --tw-prose-lead: var(--wiki-prose-body);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--wiki-prose-heading);
+  --tw-prose-counters: var(--ink-muted);
+  --tw-prose-bullets: var(--border);
+  --tw-prose-hr: var(--wiki-prose-hr);
+  --tw-prose-quotes: var(--wiki-prose-heading);
+  --tw-prose-quote-borders: var(--wiki-prose-hr);
+  --tw-prose-captions: var(--ink-muted);
+  --tw-prose-code: var(--wiki-prose-code);
+  --tw-prose-pre-code: var(--foreground);
+  --tw-prose-pre-bg: var(--muted);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--wiki-prose-hr);
+  --tw-prose-invert-body: var(--wiki-prose-invert-body);
+  --tw-prose-invert-headings: var(--wiki-prose-invert-heading);
+  --tw-prose-invert-lead: var(--wiki-prose-invert-body);
+  --tw-prose-invert-links: var(--primary-50);
+  --tw-prose-invert-bold: var(--wiki-prose-invert-heading);
+  --tw-prose-invert-counters: var(--muted-foreground);
+  --tw-prose-invert-bullets: var(--sidebar-border);
+  --tw-prose-invert-hr: var(--wiki-prose-invert-hr);
+  --tw-prose-invert-quotes: var(--wiki-prose-invert-heading);
+  --tw-prose-invert-quote-borders: var(--wiki-prose-invert-hr);
+  --tw-prose-invert-captions: var(--muted-foreground);
+  --tw-prose-invert-code: var(--wiki-prose-invert-code);
+  --tw-prose-invert-pre-code: var(--foreground);
+  --tw-prose-invert-pre-bg: var(--wiki-prose-invert-code-bg);
+  --tw-prose-invert-th-borders: var(--wiki-prose-invert-hr);
+  --tw-prose-invert-td-borders: var(--wiki-prose-invert-hr);
 }
 
 :root {
@@ -360,28 +404,6 @@
   --surface-light: #F8F7F5;
   /* warm white page bg */
 
-  /* Campfire — Quiz semantic state tokens (H6 reconciliation: brand values, not blueprint generic) */
-  --color-state-correct: #2D9F6F;
-  /* Emerald — success/correct answer */
-  --color-state-correct-bg: #EDFAF4;
-  /* Emerald 50 — correct answer card bg */
-  --color-state-incorrect: #D64545;
-  /* Warm Red — incorrect answer */
-  --color-state-incorrect-bg: #FDF0F0;
-  /* Destructive 50 — incorrect card bg */
-  --color-state-active: #1B3FC4;
-  /* Camp Cobalt — selected/active */
-  --color-state-active-bg: #EEF2FC;
-  /* Camp Cobalt 50 — selected card bg */
-  --color-state-review: #D4951A;
-  /* Amber — flagged for review */
-  --color-state-review-bg: #FEF8ED;
-  /* Warning 50 — flagged card bg */
-  --color-state-unanswered: #8896A7;
-  /* Ink Tertiary — neutral/untouched */
-  --color-state-unanswered-bg: #F8F7F5;
-  /* Surface Light — neutral card bg */
-
   /* Campfire — Card surfaces */
   --card-bg: #ffffff;
   --card-border-color: #D4DAE3;
@@ -430,6 +452,59 @@
   --border-design: #E5E7EB;
   --text-2: #6B6B6B;
   --text-3: #9CA3AF;
+  --marketing-tertiary: #888888;
+  --marketing-subtle: #AAAAAA;
+  --cobalt-light: #EEF3FD;
+  --signal-gold: #F5A623;
+  --signal-gold-light: #FFF8E6;
+  --signal-red: #E63329;
+  --signal-red-light: #FFF0EF;
+  --signal-green: #1B7A3C;
+  --cream: #FFFFFF;
+  --warm-white: #FFFFFF;
+  --wiki-ink: #1A1A1A;
+  --ink-muted: #737370;
+  --wiki-border: #E0DED8;
+  --wiki-muted: #A8A8A5;
+  --wiki-surface-dark: #252420;
+  --card-article: #ECA83B;
+  --card-article-border: #D4922E;
+  --card-notes: #45885C;
+  --card-notes-border: #3A7450;
+  --card-lab: #428894;
+  --card-lab-border: #377380;
+  --wiki-prose-body: #3D3D3A;
+  --wiki-prose-heading: #1A1A1A;
+  --wiki-prose-hr: #ECEAE4;
+  --wiki-prose-code: #1B3FC4;
+  --wiki-prose-invert-body: #C8C6C0;
+  --wiki-prose-invert-heading: #E2E0D8;
+  --wiki-prose-invert-hr: #3A3835;
+  --wiki-prose-invert-code: #7BA7F5;
+  --wiki-prose-invert-code-bg: rgba(242, 240, 235, 0.1);
+  --trail-accent: #534AB7;
+  --trail-accent-hover: #463FA0;
+  --formula-surface: #1A1A2E;
+  --formula-accent: #7BA7F5;
+  --formula-highlight: #F5C842;
+  --signal-gold-deep: #D4900C;
+  --marketing-blueprint-surface: #0D1B3E;
+  --wiki-gradient-blue: #E8EEFF;
+  --signal-gold-wash: #FFF4DC;
+  --wiki-panel-dark: #1E1D1B;
+  --wiki-panel-dark-alt: #2A2825;
+  --wiki-row-light: #FAFAF8;
+  --wiki-soft-muted: #8A8A87;
+  --wiki-soft-heading: #E8E8E5;
+  --widget-border: #D0CEC7;
+  --widget-input-border: #CCCCCC;
+  --widget-text: #444444;
+  --widget-ink: #222222;
+  --widget-success-bg: #E8F5EE;
+  --widget-success-ink: #0F4A24;
+  --widget-danger-ink: #5A1A16;
+  --danger-hover: #C03C3C;
+  --destructive-strong: #B33A3A;
 }
 
 .dark {
@@ -768,17 +843,6 @@ time,
   background: #8896A7;
 }
 
-/* ── Accessibility: 44px minimum touch targets on coarse-pointer devices ── */
-@media (pointer: coarse) {
-
-  button,
-  [role="button"],
-  a[href] {
-    min-height: 44px;
-    min-width: 44px;
-  }
-}
-
 /* ── Navigation feedback: tactile press + pending dim ── */
 
 /* Tactile press on interactive elements — instant physical click feel */
@@ -846,138 +910,8 @@ a[data-pending] {
   animation: pulse-once 0.6s ease-in-out 1;
 }
 
-@keyframes pulse-glow {
-
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 #2D9F6F;
-  }
-
-  50% {
-    box-shadow: 0 0 16px 4px color-mix(in srgb, #2D9F6F 25%, transparent);
-  }
-}
-
-.pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
 
 /* Landing page — staggered entrance */
-@keyframes landing-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.landing-reveal {
-  opacity: 0;
-  animation: landing-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.landing-delay-1 {
-  animation-delay: 80ms;
-}
-
-.landing-delay-2 {
-  animation-delay: 160ms;
-}
-
-.landing-delay-3 {
-  animation-delay: 240ms;
-}
-
-.landing-delay-4 {
-  animation-delay: 320ms;
-}
-
-.landing-delay-5 {
-  animation-delay: 400ms;
-}
-
-.landing-delay-6 {
-  animation-delay: 480ms;
-}
-
-/* ── App Drawer animations ── */
-@keyframes drawer-fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes drawer-slide-in-right {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes drawer-slide-in-left {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes drawer-slide-in-bottom {
-  from {
-    transform: translateY(100%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: drawer-fade-in 200ms ease-out both;
-}
-
-.animate-slide-in-right {
-  animation: drawer-slide-in-right 250ms ease-out both;
-}
-
-.animate-slide-in-left {
-  animation: drawer-slide-in-left 250ms ease-out both;
-}
-
-.animate-slide-in-bottom {
-  animation: drawer-slide-in-bottom 250ms ease-out both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .animate-fade-in,
-  .animate-slide-in-right,
-  .animate-slide-in-left,
-  .animate-slide-in-bottom {
-    animation: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .landing-reveal {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-}
 
 /* Landing page — infinite marquee */
 @keyframes marquee-scroll {
@@ -1030,27 +964,6 @@ a[data-pending] {
   animation: orb-drift 20s ease-in-out infinite;
 }
 
-/* Camp Trail — staggered fadeUp entrance */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .trail-fade-up {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
-
 /* Wiki Heading Highlight */
 @keyframes highlight-pulse {
   0% {
@@ -1067,92 +980,4 @@ a[data-pending] {
 .highlight-fade {
   animation: highlight-pulse 3s ease-out forwards;
   border-radius: 4px;
-}
-
-/* ─── Wiki Article Prose ─── */
-.wiki-prose {
-  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #3D3D3A;
-}
-
-.wiki-prose p {
-  margin-bottom: 1rem;
-  max-width: 65ch;
-}
-
-.wiki-prose p:last-child {
-  margin-bottom: 0;
-}
-
-.wiki-prose strong {
-  font-weight: 600;
-  color: #1A1A1A;
-}
-
-.wiki-prose em {
-  font-style: italic;
-  color: #3D3D3A;
-}
-
-.wiki-prose code {
-  font-family: 'DM Mono', monospace;
-  font-size: 12px;
-  background: #F5F5F5;
-  color: #1B3FC4;
-  padding: 1px 5px;
-  border-radius: 3px;
-}
-
-.wiki-prose h2 {
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #1A1A1A;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.wiki-prose h3 {
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #1A1A1A;
-  margin-top: 28px;
-  margin-bottom: 0.75rem;
-}
-
-/* Section dividers — markdown --- renders as <hr> */
-.wiki-prose hr {
-  border: none;
-  border-top: 1px solid #ECEAE4;
-  margin: 40px 0 36px;
-}
-
-/* Wiki prose dark mode */
-.dark .wiki-prose {
-  color: #C8C6C0;
-}
-
-.dark .wiki-prose strong {
-  color: #E2E0D8;
-}
-
-.dark .wiki-prose em {
-  color: #C8C6C0;
-}
-
-.dark .wiki-prose code {
-  background: rgba(242, 240, 235, 0.1);
-  color: #7BA7F5;
-}
-
-.dark .wiki-prose h2,
-.dark .wiki-prose h3 {
-  color: #E2E0D8;
-}
-
-.dark .wiki-prose hr {
-  border-top-color: #3A3835;
 }

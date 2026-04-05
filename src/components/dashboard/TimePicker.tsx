@@ -77,7 +77,7 @@ export const TimePicker = ({ onSelect, isLoading = false }: TimePickerProps) => 
                 'rounded-md border p-3 text-left transition-all duration-150 ease-out',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1',
                 isSelected
-                  ? 'border-camp-cobalt bg-[#EEF2FC] ring-1 ring-camp-cobalt'
+                  ? 'border-camp-cobalt bg-primary-50 ring-1 ring-camp-cobalt'
                   : 'border-border bg-white hover:shadow-sm',
                 isLoading ? 'cursor-wait opacity-60' : 'cursor-pointer',
               ].join(' ')}

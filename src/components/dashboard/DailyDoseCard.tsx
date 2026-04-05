@@ -260,7 +260,7 @@ export const DailyDoseCard = () => {
               className={[
                 'flex items-center justify-between rounded-md border p-3 transition-all duration-150 ease-out',
                 isFirst
-                  ? 'border-camp-cobalt bg-[#EEF2FC]'
+                  ? 'border-camp-cobalt bg-primary-50'
                   : 'border-border bg-white',
               ].join(' ')}
             >

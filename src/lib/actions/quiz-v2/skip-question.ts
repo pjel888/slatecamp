@@ -1,5 +1,6 @@
 'use server'
 
+import { revalidateTag, revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 
 export const skipQuestion = async (input: {
@@ -24,6 +25,8 @@ export const skipQuestion = async (input: {
 
   if (error || !session) throw new Error('Session not found')
   if (session.status !== 'in_progress') throw new Error('Session is not in progress')
+
+  revalidatePath('/dashboard')
 
   // Intentionally does NOT insert into user_interactions.
   // Skips have zero mastery impact and are tracked only client-side.

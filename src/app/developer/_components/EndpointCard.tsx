@@ -73,7 +73,7 @@ export const EndpointCard = ({
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
           {badges?.map((b) => (
-            <Badge key={b} variant="default" size="xs" pill className="font-[family-name:var(--font-dm-mono)]">
+            <Badge key={b} variant="default" size="xs" shape="pill" className="font-[family-name:var(--font-dm-mono)]">
               {b}
             </Badge>
           ))}

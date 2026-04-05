@@ -105,7 +105,7 @@ export const ComparisonSection = () => (
                   className={`border-l border-border-design px-5 py-3.5 text-[13px] ${
                     row.highlight
                       ? 'font-medium text-camp-cobalt'
-                      : 'text-[#555]'
+                      : 'text-text-2'
                   }`}
                 >
                   {row.slatecamp}

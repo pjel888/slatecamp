@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
@@ -33,16 +34,20 @@ type CardVariantProps = VariantProps<typeof cardVariants>
 
 interface CardProps
   extends React.ComponentProps<'div'>,
-    CardVariantProps {}
+    CardVariantProps {
+  asChild?: boolean
+}
 
 function Card({
   className,
   variant,
   size,
+  asChild = false,
   ...props
 }: CardProps) {
+  const Comp = asChild ? Slot : 'div'
   return (
-    <div
+    <Comp
       data-slot="card"
       data-size={size}
       className={cn(cardVariants({ variant, size }), className)}

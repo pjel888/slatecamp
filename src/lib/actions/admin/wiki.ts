@@ -3,8 +3,9 @@
 import { z } from 'zod'
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { canManageContent } from "@/lib/admin/roles";
+import { CACHE_TAGS } from '../cache-tags'
 
 const UpdateWikiArticleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(500),
@@ -71,9 +72,11 @@ export async function updateWikiArticle(id: string, data: {
   }
 
   if (!error) {
+    revalidateTag(CACHE_TAGS.wiki, 'max')
     revalidatePath('/admin/wiki');
     revalidatePath(`/admin/wiki/${id}`);
     revalidatePath('/admin/knowledge');
+    revalidatePath('/dashboard/wiki');
   }
 
   return { error };
@@ -123,6 +126,7 @@ export async function createWikiArticle(data: {
     })
   }
 
+  revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath('/admin/wiki');
   revalidatePath('/admin/articles');
   revalidatePath('/dashboard/wiki');
@@ -156,6 +160,7 @@ export async function deleteWikiArticle(id: string) {
     throw new Error(`Failed to delete article: ${error.message}`)
   }
 
+  revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath('/admin/wiki')
   revalidatePath('/admin/articles')
   revalidatePath('/dashboard/wiki')

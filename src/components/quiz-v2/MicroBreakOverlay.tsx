@@ -113,26 +113,26 @@ export const MicroBreakOverlay = ({
       >
         {/* Icon */}
         <div
-          className="flex h-12 w-12 items-center justify-center rounded-md bg-[#EEF2FC]"
+          className="flex h-12 w-12 items-center justify-center rounded-md bg-primary-50"
           aria-hidden="true"
         >
-          <Coffee size={24} weight="regular" className="text-[#1B3FC4]" />
+          <Coffee size={24} weight="regular" className="text-primary" />
         </div>
 
         {/* Message */}
         <div className="space-y-1">
           <h2
             id="micro-break-title"
-            className="text-sm font-semibold text-[#1A2332]"
+            className="text-sm font-semibold text-foreground"
           >
             Good momentum — take a moment.
           </h2>
           <p
             id="micro-break-desc"
-            className="text-sm text-[#4A5568]"
+            className="text-sm text-text-secondary"
           >
             You've completed{' '}
-            <span className="font-medium text-[#1A2332]">
+            <span className="font-medium text-foreground">
               {questionsCompleted} question{questionsCompleted !== 1 ? 's' : ''}
             </span>
             . A brief pause helps retention.
@@ -148,18 +148,18 @@ export const MicroBreakOverlay = ({
             aria-valuemin={0}
             aria-valuemax={100}
             aria-label={`Break timer: ${secondsLeft} seconds remaining`}
-            className="h-1.5 w-full overflow-hidden rounded-sm bg-[#D4DAE3]"
+            className="h-1.5 w-full overflow-hidden rounded-sm bg-border"
           >
             <div
               className={cn(
-                'h-full bg-[#1B3FC4] rounded-sm',
+                'h-full bg-primary rounded-sm',
                 !prefersReducedMotion && 'transition-all duration-1000 ease-linear',
               )}
               style={{ width: `${progressPercent}%` }}
             />
           </div>
 
-          <p className="text-xs text-[#8896A7]" aria-live="polite" aria-atomic="true">
+          <p className="text-xs text-muted-foreground" aria-live="polite" aria-atomic="true">
             {secondsLeft > 0
               ? `Resuming in ${secondsLeft}s`
               : 'Ready when you are'}

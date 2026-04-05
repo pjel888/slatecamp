@@ -43,6 +43,9 @@ interface WikiArticleProps {
   eiResponses?: EIResponseMap
 }
 
+const WIKI_PROSE_CLASS_NAME =
+  'prose prose-wiki dark:prose-invert max-w-none font-sans text-[15px] leading-[1.7] prose-p:mb-4 prose-p:last:mb-0 prose-p:max-w-[65ch] prose-strong:font-semibold prose-em:text-inherit prose-code:rounded-[3px] prose-code:bg-muted prose-code:px-[5px] prose-code:py-px prose-code:text-[12px] prose-code:text-primary prose-code:font-[var(--font-dm-mono)] prose-code:before:content-none prose-code:after:content-none prose-code:dark:bg-[var(--wiki-prose-invert-code-bg)] prose-code:dark:text-[var(--wiki-prose-invert-code)] prose-h2:mt-0 prose-h2:mb-4 prose-h2:font-sans prose-h2:text-[22px] prose-h2:font-bold prose-h3:mt-7 prose-h3:mb-3 prose-h3:font-sans prose-h3:text-base prose-h3:font-semibold prose-hr:my-10'
+
 /** Stable component for H2 headings */
 function WikiH2(props: React.HTMLAttributes<HTMLHeadingElement>) {
   const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')
@@ -275,7 +278,7 @@ export const WikiArticle = async ({
       <Suspense fallback={null}><WikiHighlighter /></Suspense>
       <WikiTextSelection />
 
-      <div className="wiki-prose max-w-none mt-8">
+      <div className={`${WIKI_PROSE_CLASS_NAME} mt-8`}>
         {mdxContent}
       </div>
     </>

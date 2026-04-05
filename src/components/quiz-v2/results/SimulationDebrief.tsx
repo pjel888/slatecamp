@@ -106,7 +106,7 @@ const buildActionPlan = (losses: TaxonomyLoss[]): ActionItem[] =>
 // ─── Section Components ───────────────────────────────────────────────────────
 
 const SectionHeader = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+  <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">
     {children}
   </h3>
 )
@@ -116,7 +116,7 @@ const SectionHeader = ({ children }: { children: React.ReactNode }) => (
 const PointLossTable = ({ losses }: { losses: TaxonomyLoss[] }) => {
   if (losses.length === 0) {
     return (
-      <p className="text-[13px] text-[#2D9F6F] font-medium">
+      <p className="text-[13px] text-success font-medium">
         No points lost. Outstanding performance.
       </p>
     )
@@ -129,18 +129,18 @@ const PointLossTable = ({ losses }: { losses: TaxonomyLoss[] }) => {
       {losses.map((loss) => (
         <div
           key={loss.topic}
-          className="flex items-center gap-3 px-3 py-2 rounded-md bg-white border border-[#D4DAE3]"
+          className="flex items-center gap-3 px-3 py-2 rounded-md bg-white border border-border"
         >
           <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-medium text-[#1A2332] truncate">
+            <p className="text-[13px] font-medium text-foreground truncate">
               {loss.topic}
             </p>
-            <p className="text-[11px] text-[#8896A7]">
+            <p className="text-[11px] text-muted-foreground">
               {loss.pointsLost} of {loss.total} missed
             </p>
           </div>
           {/* Magnitude bar */}
-          <div className="w-24 h-2 rounded-full bg-[#F8F7F5] overflow-hidden shrink-0">
+          <div className="w-24 h-2 rounded-full bg-surface-light overflow-hidden shrink-0">
             <div
               className="h-full rounded-full transition-[width] duration-300 ease-out"
               style={{
@@ -150,7 +150,7 @@ const PointLossTable = ({ losses }: { losses: TaxonomyLoss[] }) => {
               aria-hidden="true"
             />
           </div>
-          <span className="text-[12px] font-medium tabular-nums text-[#4A5568] w-8 text-right shrink-0">
+          <span className="text-[12px] font-medium tabular-nums text-text-secondary w-8 text-right shrink-0">
             {loss.pointsLost}
           </span>
         </div>
@@ -212,13 +212,13 @@ const StaminaSection = ({ blocks }: { blocks: StaminaBlock[] }) => {
         </ResponsiveContainer>
       </div>
       {drop >= 10 && (
-        <p className="text-[12px] text-[#D4951A] mt-2 leading-snug">
+        <p className="text-[12px] text-warning mt-2 leading-snug">
           Your accuracy dropped {drop}% across the session. Shorter practice sessions
           can help build endurance gradually.
         </p>
       )}
       {drop < 5 && blocks.length >= 3 && (
-        <p className="text-[12px] text-[#2D9F6F] mt-2 leading-snug">
+        <p className="text-[12px] text-success mt-2 leading-snug">
           Strong endurance throughout the simulation. Accuracy stayed consistent.
         </p>
       )}
@@ -290,27 +290,27 @@ const PredictionComparison = ({
   const isClose = Math.abs(diff) <= 3
 
   return (
-    <div className="flex items-center gap-4 px-4 py-3 rounded-md bg-white border border-[#D4DAE3]">
+    <div className="flex items-center gap-4 px-4 py-3 rounded-md bg-white border border-border">
       <div className="flex-1">
-        <p className="text-[12px] text-[#8896A7] mb-1">Your prediction</p>
-        <p className="text-lg font-semibold tabular-nums text-[#1A2332]">{prediction}%</p>
+        <p className="text-[12px] text-muted-foreground mb-1">Your prediction</p>
+        <p className="text-lg font-semibold tabular-nums text-foreground">{prediction}%</p>
       </div>
-      <div className="w-px h-10 bg-[#D4DAE3]" aria-hidden="true" />
+      <div className="w-px h-10 bg-border" aria-hidden="true" />
       <div className="flex-1">
-        <p className="text-[12px] text-[#8896A7] mb-1">Actual score</p>
-        <p className="text-lg font-semibold tabular-nums text-[#1A2332]">{actual}%</p>
+        <p className="text-[12px] text-muted-foreground mb-1">Actual score</p>
+        <p className="text-lg font-semibold tabular-nums text-foreground">{actual}%</p>
       </div>
-      <div className="w-px h-10 bg-[#D4DAE3]" aria-hidden="true" />
+      <div className="w-px h-10 bg-border" aria-hidden="true" />
       <div className="flex-1">
-        <p className="text-[12px] text-[#8896A7] mb-1">Calibration</p>
+        <p className="text-[12px] text-muted-foreground mb-1">Calibration</p>
         <p
           className={cn(
             'text-lg font-semibold tabular-nums',
             isClose
-              ? 'text-[#2D9F6F]'
+              ? 'text-success'
               : isOver
-                ? 'text-[#1B3FC4]'
-                : 'text-[#D4951A]',
+                ? 'text-primary'
+                : 'text-warning',
           )}
         >
           {isClose
@@ -334,17 +334,17 @@ const ActionPlanSection = ({ items }: { items: ActionItem[] }) => {
       {items.map((item) => (
         <div
           key={item.rank}
-          className="flex items-start gap-3 px-3.5 py-3 rounded-md bg-white border border-[#D4DAE3]"
+          className="flex items-start gap-3 px-3.5 py-3 rounded-md bg-white border border-border"
         >
           <span
-            className="flex items-center justify-center h-6 w-6 rounded-full bg-[#EEF2FC] text-[#1B3FC4] text-[11px] font-bold shrink-0"
+            className="flex items-center justify-center h-6 w-6 rounded-full bg-primary-50 text-primary text-[11px] font-bold shrink-0"
             aria-hidden="true"
           >
             {item.rank}
           </span>
           <div>
-            <p className="text-[13px] font-medium text-[#1A2332]">{item.topic}</p>
-            <p className="text-[12px] text-[#4A5568] mt-0.5">{item.reason}</p>
+            <p className="text-[13px] font-medium text-foreground">{item.topic}</p>
+            <p className="text-[12px] text-text-secondary mt-0.5">{item.reason}</p>
           </div>
         </div>
       ))}
@@ -412,7 +412,7 @@ const SimulationDebrief = ({
         {actionPlan.length > 0 ? (
           <ActionPlanSection items={actionPlan} />
         ) : (
-          <p className="text-[13px] text-[#2D9F6F] font-medium">
+          <p className="text-[13px] text-success font-medium">
             No major areas to address. Continue with your current study plan.
           </p>
         )}

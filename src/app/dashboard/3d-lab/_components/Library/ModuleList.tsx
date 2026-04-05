@@ -76,7 +76,7 @@ export function ModuleList({ categoryKey, modules, basePath, onBack }: ModuleLis
           placeholder="Search modules by name, code reference, or template type…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full rounded-sm border border-zinc-200 bg-white py-2 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+          className="w-full rounded-sm border border-zinc-200 bg-white py-2 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
 

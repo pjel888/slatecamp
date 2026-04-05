@@ -43,21 +43,21 @@ interface ResultsDashboardProps {
 // ─── Skeleton helpers ─────────────────────────────────────────────────────────
 
 const ScoreSkeleton = () => (
-  <div className="bg-white rounded-md border border-[#D4DAE3] p-8 text-center animate-pulse">
-    <div className="h-3 w-28 bg-[#F8F7F5] rounded mx-auto" />
-    <div className="h-16 w-32 bg-[#F8F7F5] rounded mx-auto mt-4" />
-    <div className="h-4 w-20 bg-[#F8F7F5] rounded mx-auto mt-3" />
+  <div className="bg-white rounded-md border border-border p-8 text-center animate-pulse">
+    <div className="h-3 w-28 bg-surface-light rounded mx-auto" />
+    <div className="h-16 w-32 bg-surface-light rounded mx-auto mt-4" />
+    <div className="h-4 w-20 bg-surface-light rounded mx-auto mt-3" />
   </div>
 )
 
 const ChartSkeleton = () => (
-  <div className="bg-white rounded-md border border-[#D4DAE3] p-4 h-40 animate-pulse" />
+  <div className="bg-white rounded-md border border-border p-4 h-40 animate-pulse" />
 )
 
 const ReviewSkeleton = () => (
   <div className="space-y-3 animate-pulse">
     {[1, 2, 3].map((i) => (
-      <div key={i} className="bg-white rounded-md border border-[#D4DAE3] h-14" />
+      <div key={i} className="bg-white rounded-md border border-border h-14" />
     ))}
   </div>
 )
@@ -76,7 +76,7 @@ const MergedCTAs = ({
   if (isPerfect) {
     return (
       <div className="text-center">
-        <p className="text-base font-semibold text-[#2D9F6F] mb-4">
+        <p className="text-base font-semibold text-success mb-4">
           Perfect session. Every question correct.
         </p>
         <ResultsCTAs sessionId={sessionId} missedCount={0} />
@@ -204,7 +204,7 @@ const ResultsDashboard = ({
 
         {/* ── Section 6: Inline Question Review Cards ────────────────────────── */}
         <section aria-label="Question review">
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">
             Question Review
           </p>
           <Suspense fallback={<ReviewSkeleton />}>

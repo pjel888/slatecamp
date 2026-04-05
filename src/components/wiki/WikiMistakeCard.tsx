@@ -39,8 +39,8 @@ export const WikiMistakeCard = ({ number, title, wrongValue, correctValue, expla
         </div>
 
         {/* Explanation — full text, never truncated */}
-        <div className="pt-2 border-t border-[#ECEAE4] dark:border-[#3A3835]">
-          <p className="text-[13px] text-ink-muted leading-relaxed dark:text-[#A8A8A5]">
+        <div className="pt-2 border-t border-wiki-divider dark:border-wiki-invert-divider">
+          <p className="text-[13px] text-ink-muted leading-relaxed dark:text-wiki-muted">
             {explanation}
           </p>
         </div>

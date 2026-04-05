@@ -54,11 +54,11 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
 
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">
         Stamina
       </p>
 
-      <div className="bg-white rounded-md border border-[#D4DAE3] p-4">
+      <div className="bg-white rounded-md border border-border p-4">
         {/* SVG chart */}
         <div className="w-full overflow-hidden" aria-hidden="true">
           <svg
@@ -109,24 +109,24 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
         {/* X-axis labels */}
         <div className="flex justify-between mt-1 px-0.5">
           {blocks.map((b) => (
-            <span key={b.blockNumber} className="text-[10px] text-[#8896A7] tabular-nums">
+            <span key={b.blockNumber} className="text-[10px] text-muted-foreground tabular-nums">
               B{b.blockNumber}
             </span>
           ))}
         </div>
 
         {/* Range summary */}
-        <div className="flex gap-4 mt-3 text-xs text-[#4A5568]">
+        <div className="flex gap-4 mt-3 text-xs text-text-secondary">
           <span>
             High:{' '}
-            <span className="font-semibold text-[#2D9F6F] tabular-nums">{maxAccuracy}%</span>
+            <span className="font-semibold text-success tabular-nums">{maxAccuracy}%</span>
           </span>
           <span>
             Low:{' '}
             <span
               className={cn(
                 'font-semibold tabular-nums',
-                minAccuracy < 50 ? 'text-[#4A5568]' : 'text-[#D4951A]',
+                minAccuracy < 50 ? 'text-text-secondary' : 'text-warning',
               )}
             >
               {minAccuracy}%
@@ -136,7 +136,7 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
 
         {/* Fatigue annotation */}
         {annotation && (
-          <p className="mt-3 text-[13px] leading-relaxed text-[#4A5568]">{annotation}</p>
+          <p className="mt-3 text-[13px] leading-relaxed text-text-secondary">{annotation}</p>
         )}
       </div>
     </div>

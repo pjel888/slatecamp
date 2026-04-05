@@ -97,7 +97,7 @@ export const SwipeableOption = ({
     <div className="relative" ref={cardRef}>
       {/* Confirmation strip — behind the card */}
       <div
-        className="absolute inset-0 rounded-md bg-[#1B3FC4] flex items-center justify-center gap-2 text-white text-sm font-medium"
+        className="absolute inset-0 rounded-md bg-primary flex items-center justify-center gap-2 text-white text-sm font-medium"
         style={{ opacity: progress }}
         aria-hidden="true"
       >
@@ -124,7 +124,7 @@ export const SwipeableOption = ({
           <div
             className={cn(
               'absolute right-3 top-1/2 -translate-y-1/2',
-              'text-[#1B3FC4] transition-opacity duration-150',
+              'text-primary transition-opacity duration-150',
               x > 8 ? 'opacity-100' : 'opacity-40',
             )}
             style={{

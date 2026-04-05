@@ -312,9 +312,16 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         {!hasData ? (
           <EmptyState
             icon={<Crosshair size={20} />}
-            message="Your mastery shape appears here"
+            title="Your mastery shape appears here"
             description="Complete a quiz session to see how your skills map across subjects."
-            action={{ label: "Start a quiz", href: "/dashboard/testing" }}
+            action={
+              <Link
+                href="/dashboard/testing"
+                className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Start a quiz
+              </Link>
+            }
             className="flex-1"
           />
         ) : (

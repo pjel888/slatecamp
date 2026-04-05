@@ -22,7 +22,7 @@ const TodayActionCard = ({
   return (
     <div
       className={cn(
-        'bg-card rounded-md p-4 border border-[#D4951A]/20',
+        'bg-card rounded-md p-4 border border-warning/20',
       )}
     >
       {enrolled ? (

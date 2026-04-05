@@ -2,9 +2,10 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 import { canManageContent } from '@/lib/admin/roles'
 import { z } from 'zod'
+import { CACHE_TAGS } from '../cache-tags'
 
 export const getTaxonomyNodes = async () => {
   const supabase = await createClient()
@@ -43,6 +44,7 @@ export const updateTaxonomyNode = async (id: string, data: { name: string }) => 
     .eq('node_id', id)
 
   if (!error) {
+    revalidateTag(CACHE_TAGS.taxonomy, 'max')
     revalidatePath('/admin/taxonomy')
   }
 
@@ -100,6 +102,7 @@ export const createTaxonomyNode = async (data: {
     .single()
 
   if (!error) {
+    revalidateTag(CACHE_TAGS.taxonomy, 'max')
     revalidatePath('/admin/taxonomy')
   }
 
@@ -118,6 +121,7 @@ export const deleteTaxonomyNode = async (id: string) => {
     .eq('node_id', id)
 
   if (!error) {
+    revalidateTag(CACHE_TAGS.taxonomy, 'max')
     revalidatePath('/admin/taxonomy')
   }
 

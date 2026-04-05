@@ -2,10 +2,78 @@
 
 import * as React from 'react'
 import { Menu as MenuPrimitive } from '@base-ui/react/menu'
+import { cva } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
 import { CaretRight, Check } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+
+const dropdownMenuLabelVariants = cva(
+  'px-1.5 py-1 text-xs font-medium text-muted-foreground',
+  {
+    variants: {
+      inset: {
+        true: 'pl-7',
+        false: '',
+      },
+    },
+    defaultVariants: {
+      inset: false,
+    },
+  },
+)
+
+const dropdownMenuItemVariants = cva(
+  "group/dropdown-menu-item relative flex cursor-default items-center gap-1.5 rounded-sm px-1.5 py-1 text-sm outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      inset: {
+        true: 'pl-7',
+        false: '',
+      },
+      variant: {
+        default:
+          'focus:bg-accent focus:text-accent-foreground focus:**:text-accent-foreground',
+        destructive:
+          'text-destructive focus:bg-destructive/10 focus:text-destructive dark:focus:bg-destructive/20 *:[svg]:text-destructive',
+      },
+    },
+    defaultVariants: {
+      inset: false,
+      variant: 'default',
+    },
+  },
+)
+
+const dropdownMenuSubTriggerVariants = cva(
+  "flex cursor-default items-center gap-1.5 rounded-sm px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground focus:**:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      inset: {
+        true: 'pl-7',
+        false: '',
+      },
+    },
+    defaultVariants: {
+      inset: false,
+    },
+  },
+)
+
+const dropdownMenuSelectableItemVariants = cva(
+  "relative flex cursor-default items-center gap-1.5 rounded-sm py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground focus:**:text-accent-foreground data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      inset: {
+        true: 'pl-7',
+        false: '',
+      },
+    },
+    defaultVariants: {
+      inset: false,
+    },
+  },
+)
 
 function DropdownMenu({ ...props }: MenuPrimitive.Root.Props) {
   return <MenuPrimitive.Root data-slot='dropdown-menu' {...props} />
@@ -68,10 +136,7 @@ function DropdownMenuLabel({
     <MenuPrimitive.GroupLabel
       data-slot='dropdown-menu-label'
       data-inset={inset}
-      className={cn(
-        'px-1.5 py-1 text-xs font-medium text-muted-foreground data-inset:pl-7',
-        className,
-      )}
+      className={cn(dropdownMenuLabelVariants({ inset }), className)}
       {...props}
     />
   )
@@ -91,10 +156,7 @@ function DropdownMenuItem({
       data-slot='dropdown-menu-item'
       data-inset={inset}
       data-variant={variant}
-      className={cn(
-        "group/dropdown-menu-item relative flex cursor-default items-center gap-1.5 rounded-sm px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground not-data-[variant=destructive]:focus:**:text-accent-foreground data-inset:pl-7 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 data-[variant=destructive]:*:[svg]:text-destructive",
-        className,
-      )}
+      className={cn(dropdownMenuItemVariants({ inset, variant }), className)}
       {...props}
     />
   )
@@ -116,10 +178,7 @@ function DropdownMenuSubTrigger({
     <MenuPrimitive.SubmenuTrigger
       data-slot='dropdown-menu-sub-trigger'
       data-inset={inset}
-      className={cn(
-        "flex cursor-default items-center gap-1.5 rounded-sm px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground not-data-[variant=destructive]:focus:**:text-accent-foreground data-inset:pl-7 data-popup-open:bg-accent data-popup-open:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-        className,
-      )}
+      className={cn(dropdownMenuSubTriggerVariants({ inset }), className)}
       {...props}
     >
       {children}
@@ -165,10 +224,7 @@ function DropdownMenuCheckboxItem({
     <MenuPrimitive.CheckboxItem
       data-slot='dropdown-menu-checkbox-item'
       data-inset={inset}
-      className={cn(
-        "relative flex cursor-default items-center gap-1.5 rounded-sm py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground focus:**:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-        className,
-      )}
+      className={cn(dropdownMenuSelectableItemVariants({ inset }), className)}
       checked={checked}
       {...props}
     >
@@ -206,10 +262,7 @@ function DropdownMenuRadioItem({
     <MenuPrimitive.RadioItem
       data-slot='dropdown-menu-radio-item'
       data-inset={inset}
-      className={cn(
-        "relative flex cursor-default items-center gap-1.5 rounded-sm py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground focus:**:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-        className,
-      )}
+      className={cn(dropdownMenuSelectableItemVariants({ inset }), className)}
       {...props}
     >
       <span

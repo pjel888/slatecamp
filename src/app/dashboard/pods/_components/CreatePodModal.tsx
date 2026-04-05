@@ -115,7 +115,7 @@ export const CreatePodModal = ({ onClose, onCreated }: CreatePodModalProps) => {
               className={cn(
                 'w-full rounded-sm border px-3 py-2 text-sm text-[#1A2332] placeholder:text-[#8896A7]',
                 'outline-none transition-colors duration-150',
-                'focus:border-[#1B3FC4] focus:ring-1 focus:ring-[#1B3FC4]',
+                'focus:border-[#1B3FC4] focus:ring-1 focus:ring-primary',
                 error ? 'border-[#D64545]' : 'border-[#D4DAE3]',
               )}
             />

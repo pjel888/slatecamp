@@ -1,12 +1,15 @@
-import { Badge } from '@/components/ui/badge'
+import { Badge, type BadgeProps } from '@/components/ui/badge'
 import { eventBadgeVariant, eventBadgeLabel } from '@/lib/utils/audit'
 
-interface EventBadgeProps {
+interface EventBadgeProps extends Omit<BadgeProps, 'children' | 'variant'> {
   eventType: string
 }
 
-export const EventBadge = ({ eventType }: EventBadgeProps) => (
-  <Badge variant={eventBadgeVariant(eventType)} size="xs">
+const EventBadge = ({ eventType, size = 'xs', ...props }: EventBadgeProps) => (
+  <Badge variant={eventBadgeVariant(eventType)} size={size} {...props}>
     {eventBadgeLabel(eventType)}
   </Badge>
 )
+
+export { EventBadge }
+export type { EventBadgeProps }

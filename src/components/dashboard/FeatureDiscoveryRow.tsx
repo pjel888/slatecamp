@@ -179,7 +179,7 @@ export function DailyWikiCard({
 
 export function LabPreviewCard() {
   return (
-    <Card className='border-0 p-4 overflow-hidden relative bg-gradient-to-br from-camp-cobalt to-[#2A5BD7]'>
+    <Card className='border-0 p-4 overflow-hidden relative bg-gradient-to-br from-camp-cobalt to-camp-cobalt-light'>
       <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>

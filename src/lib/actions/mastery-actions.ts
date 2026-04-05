@@ -1,6 +1,8 @@
 
+import { unstable_cache } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { getCachedTaxonomyTree } from './cached-queries'
+import { getCachedTaxonomyTreeByDiscipline } from './cached-queries'
+import { getDashboardTag, getReadinessScoreTag, getUserMasteryTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   FocusAreaItem,
@@ -93,26 +95,116 @@ export const getSubjectMasteryData = async () => {
   const { data: { user } } = await getUser()
   if (!user) return []
 
-  const [subjectAreasResult, subjectMasteryResult] = await Promise.all([
-    getCachedTaxonomyTree(),
-    supabase
-      .from('user_node_mastery')
-      .select('topic_id, current_mastery_weight, total_attempts')
-      .eq('user_id', user.id),
-  ])
+  return unstable_cache(
+    async () => {
+      const [globalStatsResult, subjectMasteryResult, projectedLaws] = await Promise.all([
+        supabase
+          .from('user_global_stats')
+          .select('current_discipline_id')
+          .eq('user_id', user.id)
+          .maybeSingle(),
+        supabase
+          .from('user_node_mastery')
+          .select('topic_id, current_mastery_weight, total_attempts')
+          .eq('user_id', user.id),
+        buildProjectedLawsMastery(supabase, user.id),
+      ])
 
-  const subjectMastery = buildSubjectMastery(subjectAreasResult, subjectMasteryResult.data)
-  
-  const projectedLaws = await buildProjectedLawsMastery(supabase, user.id)
-  if (projectedLaws) subjectMastery.push(projectedLaws)
+      const subjectAreas =
+        globalStatsResult.data?.current_discipline_id
+          ? await getCachedTaxonomyTreeByDiscipline(globalStatsResult.data.current_discipline_id)
+          : []
 
+      const subjectMastery = buildSubjectMastery(subjectAreas, subjectMasteryResult.data)
+
+      if (projectedLaws) subjectMastery.push(projectedLaws)
+
+      return subjectMastery
+    },
+    ['subject-mastery', user.id],
+    {
+      revalidate: false,
+      tags: [
+        getDashboardTag(user.id),
+        getUserMasteryTag(user.id),
+        getReadinessScoreTag(user.id),
+      ],
+    },
+  )()
+}
+
+// ── Subject floor alerts (Task 0.3) ───────────────────────────────────────
+// ALE requires minimum 50% per subject. Alert when any subject is below.
+
+export const buildSubjectFloorAlerts = (subjectMastery: SubjectMastery[]): SubjectFloorAlert[] => {
+  const SUBJECT_FLOOR_PCT = 50 // from disciplines.subject_floor_pct default
   return subjectMastery
+    .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
+    .map(s => ({
+      subject: s.subject,
+      aleId: s.aleId,
+      mastery: s.mastery,
+      floorPct: SUBJECT_FLOOR_PCT,
+      gap: SUBJECT_FLOOR_PCT - s.mastery,
+    }))
+    .sort((a, b) => b.gap - a.gap)
+}
+
+// ── Focus areas ─────────────────────────────────────────────────────────────
+
+export const buildFocusAreas = (focusTopicsData: any[] | null): FocusAreaItem[] => {
+  const focusRaw = (focusTopicsData ?? []) as Array<{
+    topic_id: string
+    current_mastery_weight: number
+    taxonomy_tree: { name: string; subject_area: string } | null
+  }>
+
+  return focusRaw
+    .filter(r => r.current_mastery_weight < 0.76)
+    .slice(0, 4)
+    .map(row => ({
+      topicId: row.topic_id,
+      topicName: row.taxonomy_tree?.name ?? 'Unknown Topic',
+      masteryWeight: row.current_mastery_weight,
+      masteryLabel: getMasteryLabel(row.current_mastery_weight),
+    }))
+}
+
+// ── Syllabus coverage ───────────────────────────────────────────────────────
+
+/** Async wrapper for coverage (used by other server actions) */
+export const buildSyllabusCoverage = async (
+  supabase: SupabaseClient,
+  disciplineId: string | null | undefined,
+  masteryCountData: any[] | null,
+): Promise<number> => {
+  let totalLeaves = 0
+  if (disciplineId) {
+    const { count } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id', { count: 'exact', head: true })
+      .eq('discipline_id', disciplineId)
+      .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null)
+    totalLeaves = count ?? 0
+  }
+  return transformSyllabusCoverage(totalLeaves, masteryCountData)
+}
+
+export const transformSyllabusCoverage = (
+  totalLeaves: number,
+  masteryCountData: any[] | null,
+): number => {
+  const masteryEntries = (masteryCountData ?? []) as Array<{ current_mastery_weight: number }>
+  const topicsWithAnyProgress = masteryEntries.filter(m => m.current_mastery_weight > 0).length
+  return totalLeaves > 0 ? Math.round((topicsWithAnyProgress / totalLeaves) * 100) : 0
 }
 
 // ── Projected mastery for cross-referenced subjects (Laws & Codes) ────────
-// Laws & Codes has is_cross_ref_only=true and 0 leaf nodes. Its mastery is
-// projected from target nodes in other subjects via taxonomy_cross_references.
 
+/** Async wrapper for laws mastery (used by other server actions) */
 export const buildProjectedLawsMastery = async (
   supabase: SupabaseClient,
   userId: string,
@@ -146,15 +238,7 @@ export const buildProjectedLawsMastery = async (
 
   if (!crossRefs?.length) return null
 
-  // 4. Group target subtopic IDs by source (Laws subtopic)
-  const targetsBySource = new Map<string, string[]>()
-  for (const cr of crossRefs) {
-    const existing = targetsBySource.get(cr.source_node_id) ?? []
-    existing.push(cr.target_node_id)
-    targetsBySource.set(cr.source_node_id, existing)
-  }
-
-  // 5. Get all target subtopics' leaf children
+  // 4. Get all target subtopics' leaf children
   const allTargetIds = [...new Set(crossRefs.map(cr => cr.target_node_id))]
   const { data: targetLeaves } = await supabase
     .from('taxonomy_tree')
@@ -166,7 +250,7 @@ export const buildProjectedLawsMastery = async (
 
   if (!targetLeaves?.length) return null
 
-  // 6. Get mastery for those leaves
+  // 5. Get mastery for those leaves
   const leafIds = targetLeaves.map(l => l.node_id)
   const { data: masteryRows } = await supabase
     .from('user_node_mastery')
@@ -174,12 +258,33 @@ export const buildProjectedLawsMastery = async (
     .eq('user_id', userId)
     .in('topic_id', leafIds)
 
+  return transformProjectedLawsMastery(lawsSubject, lawsSubtopics, crossRefs, targetLeaves, masteryRows)
+}
+
+export const transformProjectedLawsMastery = (
+  lawsSubject: { node_id: string; name: string; ale_id: string | null } | null,
+  lawsSubtopics: Array<{ node_id: string; name: string }> | null,
+  crossRefs: Array<{ source_node_id: string; target_node_id: string }> | null,
+  targetLeaves: Array<{ node_id: string; parent_id: string }> | null,
+  masteryRows: Array<{ topic_id: string; current_mastery_weight: number; total_attempts: number }> | null,
+): SubjectMastery | null => {
+  if (!lawsSubject || !lawsSubtopics?.length || !crossRefs?.length || !targetLeaves?.length) return null
+
+  // 1. Mastery lookup
   const masteryMap = new Map<string, { weight: number; attempts: number }>()
   for (const m of (masteryRows ?? [])) {
     masteryMap.set(m.topic_id, { weight: m.current_mastery_weight, attempts: m.total_attempts })
   }
 
-  // 7. Build topic rings per Laws subtopic (aggregating from cross-ref targets)
+  // 2. Map targets
+  const targetsBySource = new Map<string, string[]>()
+  for (const cr of crossRefs) {
+    const existing = targetsBySource.get(cr.source_node_id) ?? []
+    existing.push(cr.target_node_id)
+    targetsBySource.set(cr.source_node_id, existing)
+  }
+
+  // 3. Map leaves
   const leavesByTargetSubtopic = new Map<string, typeof targetLeaves>()
   for (const leaf of targetLeaves) {
     const existing = leavesByTargetSubtopic.get(leaf.parent_id!) ?? []
@@ -187,6 +292,7 @@ export const buildProjectedLawsMastery = async (
     leavesByTargetSubtopic.set(leaf.parent_id!, existing)
   }
 
+  // 4. Build topic rings
   const topicRings: TopicRing[] = lawsSubtopics.map(lawsSubtopic => {
     const targets = targetsBySource.get(lawsSubtopic.node_id) ?? []
     let totalWeight = 0, totalAttempts = 0, count = 0
@@ -227,67 +333,4 @@ export const buildProjectedLawsMastery = async (
     nodesEncountered: totalNodesEncountered,
     topics: topicRings,
   }
-}
-
-// ── Subject floor alerts (Task 0.3) ───────────────────────────────────────
-// ALE requires minimum 50% per subject. Alert when any subject is below.
-
-export const buildSubjectFloorAlerts = (subjectMastery: SubjectMastery[]): SubjectFloorAlert[] => {
-  const SUBJECT_FLOOR_PCT = 50 // from disciplines.subject_floor_pct default
-  return subjectMastery
-    .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
-    .map(s => ({
-      subject: s.subject,
-      aleId: s.aleId,
-      mastery: s.mastery,
-      floorPct: SUBJECT_FLOOR_PCT,
-      gap: SUBJECT_FLOOR_PCT - s.mastery,
-    }))
-    .sort((a, b) => b.gap - a.gap)
-}
-
-// ── Focus areas ─────────────────────────────────────────────────────────────
-
-export const buildFocusAreas = (focusTopicsData: any[] | null): FocusAreaItem[] => {
-  const focusRaw = (focusTopicsData ?? []) as Array<{
-    topic_id: string
-    current_mastery_weight: number
-    last_encountered: string
-    taxonomy_tree: { name: string; subject_area: string } | null
-  }>
-
-  return focusRaw
-    .filter(r => r.current_mastery_weight < 0.76)
-    .slice(0, 4)
-    .map(row => ({
-      topicId: row.topic_id,
-      topicName: row.taxonomy_tree?.name ?? 'Unknown Topic',
-      masteryWeight: row.current_mastery_weight,
-      masteryLabel: getMasteryLabel(row.current_mastery_weight),
-    }))
-}
-
-// ── Syllabus coverage ───────────────────────────────────────────────────────
-
-export const buildSyllabusCoverage = async (
-  supabase: SupabaseClient,
-  disciplineId: string | null | undefined,
-  masteryCountData: any[] | null,
-): Promise<number> => {
-  let totalLeaves = 0
-  if (disciplineId) {
-    const { count } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id', { count: 'exact', head: true })
-      .eq('discipline_id', disciplineId)
-      .eq('is_leaf', true)
-      .eq('is_cross_ref_only', false)
-      .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
-    totalLeaves = count ?? 0
-  }
-
-  const masteryEntries = (masteryCountData ?? []) as Array<{ current_mastery_weight: number }>
-  const topicsWithAnyProgress = masteryEntries.filter(m => m.current_mastery_weight > 0).length
-  return totalLeaves > 0 ? Math.round((topicsWithAnyProgress / totalLeaves) * 100) : 0
 }

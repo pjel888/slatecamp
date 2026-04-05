@@ -81,7 +81,7 @@ const SelfAssessmentModal = ({
             type="button"
             disabled={selected === null}
             onClick={() => selected !== null && onSubmit(selected)}
-            className="flex-1 rounded-sm bg-[#1B3FC4] px-3 py-2 text-xs font-medium text-white hover:bg-[#1535A8] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 ease-out"
+            className="flex-1 rounded-sm bg-[#1B3FC4] px-3 py-2 text-xs font-medium text-white hover:bg-primary-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 ease-out"
           >
             Save & Finish
           </button>
@@ -151,7 +151,7 @@ export const DesignProblemSession = ({ problem, session }: DesignProblemSessionP
         </div>
         <a
           href="/dashboard/area-c/design-problems"
-          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-medium text-white hover:bg-[#1535A8] transition-colors duration-150 ease-out"
+          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out"
         >
           Back to Problem Library
         </a>
@@ -261,7 +261,7 @@ export const DesignProblemSession = ({ problem, session }: DesignProblemSessionP
             type="button"
             onClick={handleFinishClick}
             disabled={completing}
-            className="rounded-sm bg-[#1B3FC4] px-5 py-2.5 text-sm font-medium text-white hover:bg-[#1535A8] disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 ease-out"
+            className="rounded-sm bg-[#1B3FC4] px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors duration-150 ease-out"
           >
             {completing ? "Saving..." : "Mark as Complete"}
           </button>

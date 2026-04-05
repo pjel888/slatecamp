@@ -49,17 +49,17 @@ export const baseMdxComponents = {
     )
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    React.createElement('thead', { className: 'bg-muted dark:bg-[#252420]', ...props })
+    React.createElement('thead', { className: 'bg-muted dark:bg-wiki-surface-dark', ...props })
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('th', {
-      className: 'px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-[#A8A8A5] border-b-[1.5px] border-[#E0DED8] dark:border-[#3A3835]',
+      className: 'px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-wiki-muted border-b-[1.5px] border-wiki-border dark:border-wiki-invert-divider',
       ...props,
     })
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('td', {
-      className: 'px-3.5 py-[11px] text-sm text-[#3D3D3A] border-b border-[#ECEAE4] align-top leading-relaxed [&_strong]:text-wiki-ink [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-[#C8C6C0] dark:border-[#3A3835] dark:[&_strong]:text-[#E2E0D8]',
+      className: 'px-3.5 py-[11px] text-sm text-wiki-body border-b border-wiki-divider align-top leading-relaxed [&_strong]:text-wiki-ink [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-wiki-invert-body dark:border-wiki-invert-divider dark:[&_strong]:text-wiki-invert-heading',
       ...props,
     })
   ),

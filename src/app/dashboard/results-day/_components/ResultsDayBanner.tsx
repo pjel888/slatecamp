@@ -68,7 +68,7 @@ const ResultsDayBanner = () => {
             type="button"
             onClick={handlePassed}
             disabled={isLoading}
-            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-60"
+            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
           >
             {isPassing ? 'Saving…' : 'I Passed!'}
           </button>

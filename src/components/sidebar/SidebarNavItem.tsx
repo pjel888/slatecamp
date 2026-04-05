@@ -73,12 +73,12 @@ export const SidebarNavItem = ({
         // Active state
         isActive && [
           'bg-primary-50 dark:bg-primary-900/20',
-          'text-[8px]rimary dark:text-[8px]rimary-400',
+          'text-primary dark:text-primary-400',
           // ::before active left-border indicator
           // left:-6px bleeds into the parent px-[6px] padding zone
           'before:absolute before:left-[-6px] before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-4',
-          'before:bg-camp-cobalt dark:before:bg-[#4F6AE8]',
+          'before:bg-camp-cobalt dark:before:bg-primary-400',
           'before:rounded-r-sm',
           'before:content-[\'\']',
         ],

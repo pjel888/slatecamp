@@ -154,8 +154,8 @@ export const QuickReviewModal = ({
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30" onClick={onClose}>
         <div className="rounded-md bg-white p-6 shadow-lg" onClick={(e) => e.stopPropagation()}>
           <div className="flex items-center gap-2">
-            <span className="h-4 w-4 rounded-full border-2 border-[#1B3FC4]/20 border-t-[#1B3FC4] animate-spin" />
-            <span className="text-sm text-[#4A5568]">Loading review questions...</span>
+            <span className="h-4 w-4 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
+            <span className="text-sm text-text-secondary">Loading review questions...</span>
           </div>
         </div>
       </div>
@@ -168,13 +168,13 @@ export const QuickReviewModal = ({
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4" onClick={onClose}>
         <div
-          className="w-full max-w-sm rounded-md border border-[#D4DAE3] bg-white p-6 shadow-lg"
+          className="w-full max-w-sm rounded-md border border-border bg-white p-6 shadow-lg"
           onClick={(e) => e.stopPropagation()}
           role="dialog"
           aria-modal="true"
         >
-          <h3 className="text-sm font-semibold text-[#1A2332] mb-2">{topicName}</h3>
-          <p className="text-xs text-[#4A5568] mb-4">
+          <h3 className="text-sm font-semibold text-foreground mb-2">{topicName}</h3>
+          <p className="text-xs text-text-secondary mb-4">
             No review questions available for this topic yet. Try a Camp session instead to build your question history.
           </p>
           <button
@@ -183,7 +183,7 @@ export const QuickReviewModal = ({
               await dismissEmptyTopicAction(topicId)
               onEmpty(topicId)
             }}
-            className="w-full rounded-sm border border-[#D4DAE3] px-4 py-2 text-sm font-medium text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5]"
+            className="w-full rounded-sm border border-border px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 hover:bg-surface-light"
           >
             Close
           </button>
@@ -198,15 +198,15 @@ export const QuickReviewModal = ({
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4" onClick={onClose}>
         <div
-          className="w-full max-w-md rounded-md border border-[#D4DAE3] bg-white p-6 shadow-lg"
+          className="w-full max-w-md rounded-md border border-border bg-white p-6 shadow-lg"
           onClick={(e) => e.stopPropagation()}
           role="dialog"
           aria-modal="true"
           aria-label="Review complete"
         >
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-sm font-semibold text-[#1A2332]">Quick Review Complete</h3>
-            <button type="button" onClick={onClose} className="text-[#8896A7] hover:text-[#4A5568]">
+            <h3 className="text-sm font-semibold text-foreground">Quick Review Complete</h3>
+            <button type="button" onClick={onClose} className="text-muted-foreground hover:text-text-secondary">
               <X size={16} />
             </button>
           </div>
@@ -216,17 +216,17 @@ export const QuickReviewModal = ({
               className={cn(
                 'flex h-12 w-12 items-center justify-center rounded-md text-lg font-bold',
                 correctCount >= totalQuestions * 0.7
-                  ? 'bg-[#EDFAF4] text-[#2D9F6F]'
+                  ? 'bg-success-50 text-success'
                   : correctCount >= totalQuestions * 0.4
-                    ? 'bg-[#FEF8ED] text-[#D4951A]'
-                    : 'bg-[#FDF0F0] text-[#D64545]',
+                    ? 'bg-warning-50 text-warning'
+                    : 'bg-destructive-50 text-destructive',
               )}
             >
               {correctCount}/{totalQuestions}
             </div>
             <div>
-              <p className="text-sm font-medium text-[#1A2332]">{topicName}</p>
-              <p className="text-xs text-[#4A5568]">
+              <p className="text-sm font-medium text-foreground">{topicName}</p>
+              <p className="text-xs text-text-secondary">
                 {correctCount >= totalQuestions * 0.7
                   ? 'Looking sharp — this topic is holding well.'
                   : correctCount >= totalQuestions * 0.4
@@ -239,7 +239,7 @@ export const QuickReviewModal = ({
           <button
             type="button"
             onClick={onComplete}
-            className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#1535A8]"
+            className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-colors duration-150 hover:bg-primary-700"
           >
             Done
           </button>
@@ -255,28 +255,28 @@ export const QuickReviewModal = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4" onClick={onClose}>
       <div
-        className="w-full max-w-lg rounded-md border border-[#D4DAE3] bg-white shadow-lg"
+        className="w-full max-w-lg rounded-md border border-border bg-white shadow-lg"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-label={`Review question ${currentIndex + 1} of ${totalQuestions}`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-[#D4DAE3] px-4 py-3">
+        <div className="flex items-center justify-between border-b border-border px-4 py-3">
           <div>
-            <p className="text-xs text-[#8896A7]">{topicName}</p>
-            <p className="text-sm font-semibold text-[#1A2332]">
+            <p className="text-xs text-muted-foreground">{topicName}</p>
+            <p className="text-sm font-semibold text-foreground">
               Question {currentIndex + 1} of {totalQuestions}
             </p>
           </div>
-          <button type="button" onClick={onClose} className="text-[#8896A7] hover:text-[#4A5568]">
+          <button type="button" onClick={onClose} className="text-muted-foreground hover:text-text-secondary">
             <X size={16} />
           </button>
         </div>
 
         {/* Question stem */}
         <div className="px-4 py-4">
-          <p className="text-sm text-[#1A2332] leading-relaxed">{currentQuestion.text}</p>
+          <p className="text-sm text-foreground leading-relaxed">{currentQuestion.text}</p>
         </div>
 
         {/* Options */}
@@ -297,12 +297,12 @@ export const QuickReviewModal = ({
                   'flex items-center gap-3 w-full rounded-md border px-4 py-3 min-h-[48px] text-left',
                   'transition-colors duration-150 ease-out',
                   showFeedback && isCorrectOption
-                    ? 'bg-[#EDFAF4] border-[#2D9F6F] border-2'
+                    ? 'bg-success-50 border-success border-2'
                     : isWrongSelection
-                      ? 'bg-[#FDF0F0] border-[#D64545] border-2'
+                      ? 'bg-destructive-50 border-destructive border-2'
                       : isSelected
-                        ? 'bg-[#EEF2FC] border-[#1B3FC4]'
-                        : 'bg-white border-[#D4DAE3] hover:border-[#1B3FC4]/40',
+                        ? 'bg-primary-50 border-primary'
+                        : 'bg-white border-border hover:border-primary/40',
                   showFeedback && !isCorrectOption && !isWrongSelection && 'opacity-60',
                 )}
               >
@@ -310,12 +310,12 @@ export const QuickReviewModal = ({
                   className={cn(
                     'flex-shrink-0 w-6 h-6 rounded-sm flex items-center justify-center text-xs font-semibold',
                     showFeedback && isCorrectOption
-                      ? 'bg-[#2D9F6F] text-white'
+                      ? 'bg-success text-white'
                       : isWrongSelection
-                        ? 'bg-[#D64545] text-white'
+                        ? 'bg-destructive text-white'
                         : isSelected
-                          ? 'bg-[#1B3FC4] text-white'
-                          : 'bg-[#F8F7F5] text-[#4A5568]',
+                          ? 'bg-primary text-white'
+                          : 'bg-surface-light text-text-secondary',
                   )}
                 >
                   {showFeedback && isCorrectOption ? (
@@ -379,8 +379,8 @@ export const QuickReviewModal = ({
             className={cn(
               'inline-flex items-center gap-1 text-sm font-medium transition-colors duration-150',
               feedback
-                ? 'text-[#1B3FC4] hover:text-[#1535A8] cursor-pointer'
-                : 'text-[#D4DAE3] cursor-not-allowed',
+                ? 'text-primary hover:text-primary-700 cursor-pointer'
+                : 'text-border cursor-not-allowed',
             )}
           >
             {currentIndex + 1 >= totalQuestions ? 'See Results' : 'Next Question'}

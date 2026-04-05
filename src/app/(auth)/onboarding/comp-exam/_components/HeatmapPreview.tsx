@@ -134,13 +134,13 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
       <div className="space-y-2.5">
         <Link
           href={`${ROUTES.QUIZ_V2_SETUP('diagnostic')}?source=comp_exam`}
-          className="block w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 hover:bg-[#1535A8] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+          className="block w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Run the diagnostic quiz →
         </Link>
         <Link
           href={ROUTES.DASHBOARD}
-          className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm font-medium text-[#4A5568] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#1B3FC4] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4] focus:ring-offset-2"
+          className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm font-medium text-[#4A5568] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#1B3FC4] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Start studying now
         </Link>

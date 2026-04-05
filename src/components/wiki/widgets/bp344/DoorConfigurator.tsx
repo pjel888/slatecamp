@@ -38,13 +38,13 @@ export const DoorConfigurator = () => {
   ]
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[#d0cec7] bg-muted px-6 py-5">
+    <div className="not-prose my-5 rounded-lg border border-[var(--widget-border)] bg-muted px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Door Compliance Configurator (2024 IRR)</div>
-      <p className="text-[13px] text-[#444] mb-3.5">Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
+      <p className="text-[13px] text-[var(--widget-text)] mb-3.5">Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
       <div className="flex gap-3.5 flex-wrap mb-3.5">
         {fields.map(({ label, val, set, min, max, step }) => (
           <div key={label}>
-            <label className="block text-[11px] font-semibold text-[#555] mb-1 uppercase">{label}</label>
+            <label className="block text-[11px] font-semibold text-text-2 mb-1 uppercase">{label}</label>
             <input
               type="number"
               value={val}
@@ -52,22 +52,22 @@ export const DoorConfigurator = () => {
               max={max}
               step={step}
               onChange={e => set(parseFloat(e.target.value) || 0)}
-              className="w-[100px] px-2 py-1.5 border-[1.5px] border-[#ccc] rounded-md text-[13px] font-dm-mono"
+              className="w-[100px] px-2 py-1.5 border-[1.5px] border-[var(--widget-input-border)] rounded-md text-[13px] font-dm-mono"
             />
           </div>
         ))}
       </div>
-      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[#e8f5ee] border border-camp-green text-[#0f4a24]' : 'bg-[#fdf0ef] border border-camp-red text-[#5a1a16]'}`}>
+      <div className={`rounded-md p-3 px-3.5 text-[12px] leading-[1.8] mb-3 ${ok ? 'bg-[var(--widget-success-bg)] border border-camp-green text-[var(--widget-success-ink)]' : 'bg-destructive-50 border border-camp-red text-[var(--widget-danger-ink)]'}`}>
         {ok ? (
           <>
             <strong className="text-camp-green">✓ All parameters compliant</strong> — meets 2024 BP 344 IRR.
-            <br /><span className="text-[#555]">{passes.join(' · ')}</span>
+            <br /><span className="text-text-2">{passes.join(' · ')}</span>
           </>
         ) : (
           <>
             <strong className="text-camp-red">✗ Non-compliant:</strong><br />
             {issues.map((x, i) => <span key={i}>• {x}<br /></span>)}
-            {passes.length > 0 && <span className="text-[#555] text-[11px]">Passing: {passes.join(' · ')}</span>}
+            {passes.length > 0 && <span className="text-text-2 text-[11px]">Passing: {passes.join(' · ')}</span>}
           </>
         )}
       </div>

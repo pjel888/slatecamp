@@ -39,12 +39,12 @@ export const BodyDimensionDrill = () => {
   }
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
-      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-signal-gold-light to-[#FFF4DC] border-b border-[#E0DED8] dark:from-warning/10 dark:to-warning/5 dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-signal-gold-light to-[var(--signal-gold-wash)] border-b border-wiki-border dark:from-warning/10 dark:to-warning/5 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-warning flex items-center justify-center text-white text-sm">
           🧠
         </div>
-        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-[#D4900C]">
+        <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-signal-gold-deep">
           Retrieval Practice — Body Dimensions
         </div>
       </div>
@@ -56,11 +56,11 @@ export const BodyDimensionDrill = () => {
           className={`w-full rounded-[10px] p-7 min-h-[120px] flex flex-col items-center justify-center transition-colors duration-150 cursor-pointer select-none ${
             revealed
               ? 'bg-cobalt-light dark:bg-camp-cobalt/10'
-              : 'bg-muted hover:bg-cobalt-light dark:bg-[#252420] dark:hover:bg-camp-cobalt/10'
+              : 'bg-muted hover:bg-cobalt-light dark:bg-wiki-surface-dark dark:hover:bg-camp-cobalt/10'
           }`}
         >
           <div className={`font-semibold transition-all duration-150 ${
-            revealed ? 'text-[13px] text-ink-muted dark:text-[#A8A8A5]' : 'text-base text-wiki-ink dark:text-[#E2E0D8]'
+            revealed ? 'text-[13px] text-ink-muted dark:text-wiki-muted' : 'text-base text-wiki-ink dark:text-wiki-invert-heading'
           }`}>
             {item.q}
           </div>
@@ -70,16 +70,16 @@ export const BodyDimensionDrill = () => {
             </div>
           )}
           {!revealed && (
-            <div className="text-xs text-[#A8A8A5] mt-2 dark:text-ink-muted">Tap to reveal</div>
+            <div className="text-xs text-wiki-muted mt-2 dark:text-ink-muted">Tap to reveal</div>
           )}
         </button>
 
         <div className="flex items-center justify-between mt-4">
-          <button type="button" onClick={prev} className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]">
+          <button type="button" onClick={prev} className="px-4 py-2 border border-wiki-border rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-muted">
             ← Previous
           </button>
-          <span className="font-[var(--font-dm-mono)] text-xs text-[#A8A8A5]">{idx + 1} / {ITEMS.length}</span>
-          <button type="button" onClick={next} className="px-4 py-2 border border-[#E0DED8] rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#A8A8A5]">
+          <span className="font-[var(--font-dm-mono)] text-xs text-wiki-muted">{idx + 1} / {ITEMS.length}</span>
+          <button type="button" onClick={next} className="px-4 py-2 border border-wiki-border rounded-lg bg-white text-[13px] font-medium text-ink-muted transition-all duration-150 hover:border-camp-cobalt hover:text-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-muted">
             Next →
           </button>
         </div>

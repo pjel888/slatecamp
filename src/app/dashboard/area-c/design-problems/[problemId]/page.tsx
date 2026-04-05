@@ -44,7 +44,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
           </div>
           <Link
             href="/dashboard/area-c/design-problems"
-            className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-medium text-white hover:bg-[#1535A8] transition-colors duration-150 ease-out"
+            className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out"
           >
             Back to Problem Library
           </Link>

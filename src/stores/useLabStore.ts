@@ -33,8 +33,6 @@ interface LabState {
   // View state
   crossSectionEnabled: boolean
   explodedViewEnabled: boolean
-  labelsVisible: boolean
-  cameraIsOrbiting: boolean
   quizModeActive: boolean
 
   // Quiz results
@@ -51,8 +49,6 @@ interface LabState {
   setComplianceState: (state: ComplianceState) => void
   toggleCrossSection: () => void
   toggleExplodedView: () => void
-  toggleLabels: () => void
-  setCameraOrbiting: (orbiting: boolean) => void
   enterQuizMode: () => void
   exitQuizMode: () => void
   addQuizResult: (result: QuizResult) => void
@@ -84,8 +80,6 @@ export const useLabStore = create<LabState>((set, get) => ({
   // View state
   crossSectionEnabled: false,
   explodedViewEnabled: false,
-  labelsVisible: true,
-  cameraIsOrbiting: false,
   quizModeActive: false,
 
   // Quiz results
@@ -146,18 +140,11 @@ export const useLabStore = create<LabState>((set, get) => ({
   toggleExplodedView: () =>
     set((state) => ({ explodedViewEnabled: !state.explodedViewEnabled })),
 
-  toggleLabels: () =>
-    set((state) => ({ labelsVisible: !state.labelsVisible })),
-
-  setCameraOrbiting: (orbiting) =>
-    set({ cameraIsOrbiting: orbiting }),
-
   enterQuizMode: () =>
     set({
       quizModeActive: true,
       panelMode: 'quiz',
       activeHotspotId: null,
-      labelsVisible: false,
       quizResults: [],
     }),
 
@@ -165,7 +152,6 @@ export const useLabStore = create<LabState>((set, get) => ({
     set({
       quizModeActive: false,
       panelMode: 'none',
-      labelsVisible: true,
     }),
 
   addQuizResult: (result) =>
@@ -181,8 +167,7 @@ export const useLabStore = create<LabState>((set, get) => ({
       }
     }),
 
-  resetCamera: () =>
-    set({ cameraIsOrbiting: false }),
+  resetCamera: () => {},
 
   resetSession: () =>
     set({
@@ -200,8 +185,6 @@ export const useLabStore = create<LabState>((set, get) => ({
       complianceState: 'compliant',
       crossSectionEnabled: false,
       explodedViewEnabled: false,
-      labelsVisible: true,
-      cameraIsOrbiting: false,
       quizModeActive: false,
       quizResults: [],
     }),

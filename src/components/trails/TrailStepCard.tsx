@@ -123,9 +123,9 @@ const TrailStepCard = ({
 
       {/* 6. Computation-heavy badge */}
       {step.is_computation_heavy && (
-        <div className="mt-2 inline-flex items-center gap-1 rounded-sm bg-[#F5F7FA] px-1.5 py-0.5">
-          <Timer size={10} className="text-[#8896A7] shrink-0" />
-          <span className="text-[9px] font-mono text-[#8896A7] leading-none">
+        <div className="mt-2 inline-flex items-center gap-1 rounded-sm bg-surface-focused px-1.5 py-0.5">
+          <Timer size={10} className="text-muted-foreground shrink-0" />
+          <span className="text-[9px] font-mono text-muted-foreground leading-none">
             Computation session
           </span>
         </div>

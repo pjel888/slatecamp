@@ -10,5 +10,6 @@ export type { ConfidenceMatrixResult, ConfidenceMatrixItem } from './get-confide
 export { savePrediction } from './save-prediction'
 export { savePostdiction } from './save-postdiction'
 export { getPredictionHistory } from './get-prediction-history'
+export { getSessionQuestions } from './get-session-questions'
 export { checkGenerationAnswer } from './check-generation-answer'
 export type { CheckGenerationResult } from './check-generation-answer'

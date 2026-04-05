@@ -24,7 +24,7 @@ const variantIconColors = {
   error: "text-destructive",
   warning: "text-amber-500",
   info: "text-blue-500",
-  primary: "text-[#1B3FC4]",
+  primary: "text-primary",
 } as const
 
 type SemanticVariant = keyof typeof variantIcons

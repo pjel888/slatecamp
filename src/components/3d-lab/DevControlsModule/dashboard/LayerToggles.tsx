@@ -21,7 +21,7 @@ export function LayerToggles() {
 
   return (
     <div>
-      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-1.5 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         Layer Visibility
       </label>
       <div className="grid grid-cols-2 gap-1">
@@ -33,8 +33,8 @@ export function LayerToggles() {
               onClick={() => toggleLayer(opt.key)}
               className={`flex items-center gap-1.5 rounded-sm border px-2 py-1 text-[9px] font-medium transition-colors duration-150 ${
                 active
-                  ? 'border-[#D4DAE3] bg-white text-[#1A2332]'
-                  : 'border-[#D4DAE3] bg-[#F8F7F5] text-[#8896A7] line-through'
+                  ? 'border-border bg-white text-foreground'
+                  : 'border-border bg-surface-light text-muted-foreground line-through'
               }`}
             >
               <div

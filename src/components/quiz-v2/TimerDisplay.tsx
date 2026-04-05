@@ -1,16 +1,15 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { Timer } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import type { PressureLevel } from '@/types/quiz-config'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 interface TimerDisplayProps {
   pressureLevel: PressureLevel
-  totalTimeMs: number | null
-  elapsedMs: number
   onTimeUp?: () => void
   /** Visual variant: 'numeric' (default) or 'bar' (adds depleting bar below numeric) */
   variant?: 'numeric' | 'bar'
@@ -33,12 +32,14 @@ const formatTime = (ms: number): string => {
 
 const TimerDisplay = ({
   pressureLevel,
-  totalTimeMs,
-  elapsedMs,
   onTimeUp,
   variant = 'numeric',
 }: TimerDisplayProps) => {
   const firedRef = useRef(false)
+
+  // Subscriptions to high-frequency state (isolates re-renders here)
+  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
+  const totalTimeMs = useQuizStore((s) => s.timer.limitMs)
 
   // Level 0: renders nothing
   if (pressureLevel === 0) return null
@@ -126,7 +127,7 @@ const TimerDisplay = ({
       </div>
       {variant === 'bar' && totalTimeMs !== null && totalTimeMs > 0 && (
         <div
-          className="w-full h-1 rounded-full bg-[#D4DAE3] overflow-hidden"
+          className="w-full h-1 rounded-full bg-border overflow-hidden"
           role="progressbar"
           aria-valuenow={Math.round(percentRemaining)}
           aria-valuemin={0}

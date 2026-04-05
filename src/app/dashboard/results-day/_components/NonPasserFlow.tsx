@@ -73,7 +73,7 @@ const NonPasserFlow = ({ readinessScore, topSubjects }: NonPasserFlowProps) => {
       <div className="rounded-md border border-[#D4DAE3] bg-white p-5">
         <Link
           href="/dashboard"
-          className="flex w-full items-center justify-between rounded-sm bg-[#1B3FC4] px-4 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="flex w-full items-center justify-between rounded-sm bg-[#1B3FC4] px-4 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
         >
           Start Planning for Next Cycle
           <svg

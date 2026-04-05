@@ -17,9 +17,9 @@ interface TrailDayCardProps {
 
 const STATUS_BORDER: Record<TrailDayCardProps['status'], string> = {
   available: '',
-  completed: 'border border-[#2D9F6F]/20 bg-[#EDFAF4]',
+  completed: 'border border-success/20 bg-success-50',
   locked: '',
-  current: 'border border-[#D4951A]/20 bg-[#FEF8ED]',
+  current: 'border border-warning/20 bg-warning-50',
 }
 
 export const TrailDayCard = ({

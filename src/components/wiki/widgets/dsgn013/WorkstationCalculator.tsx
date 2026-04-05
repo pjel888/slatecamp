@@ -25,9 +25,9 @@ export const WorkstationCalculator = () => {
   const perFloor = Math.round(gfa / Math.max(floors, 1))
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
-      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
+      <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-camp-cobalt flex items-center justify-center text-white text-sm">
           🧮
         </div>
@@ -35,7 +35,7 @@ export const WorkstationCalculator = () => {
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
             Interactive Calculator
           </div>
-          <div className="text-[13px] text-[#3D3D3A] mt-0.5 dark:text-[#C8C6C0]">
+          <div className="text-[13px] text-wiki-body mt-0.5 dark:text-wiki-invert-body">
             Office Floor Area from Employee Count
           </div>
         </div>
@@ -55,7 +55,7 @@ export const WorkstationCalculator = () => {
               min={1}
               max={1000}
               onChange={(e) => setEmployees(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-wiki-border rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
             />
           </div>
 
@@ -67,7 +67,7 @@ export const WorkstationCalculator = () => {
             <select
               value={density}
               onChange={(e) => setDensity(parseFloat(e.target.value))}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-wiki-border rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
             >
               {DENSITY_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -85,7 +85,7 @@ export const WorkstationCalculator = () => {
             <select
               value={multiplier}
               onChange={(e) => setMultiplier(parseFloat(e.target.value))}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-wiki-border rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
             >
               {MULTIPLIER_OPTIONS.map((opt) => (
                 <option key={opt.value} value={opt.value}>
@@ -106,13 +106,13 @@ export const WorkstationCalculator = () => {
               min={1}
               max={50}
               onChange={(e) => setFloors(parseInt(e.target.value) || 1)}
-              className="w-full px-3 py-2 border-[1.5px] border-[#E0DED8] rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-[#252420] dark:border-[#3A3835] dark:text-[#E2E0D8]"
+              className="w-full px-3 py-2 border-[1.5px] border-wiki-border rounded-lg font-sans text-sm text-wiki-ink bg-white outline-none transition-colors duration-150 focus:border-camp-cobalt dark:bg-wiki-surface-dark dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
             />
           </div>
         </div>
 
         {/* Result */}
-        <div className="p-4 bg-muted rounded-[10px] mt-3 dark:bg-[#252420]">
+        <div className="p-4 bg-muted rounded-[10px] mt-3 dark:bg-wiki-surface-dark">
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-camp-cobalt mb-1.5">
             Required Gross Floor Area
           </div>
@@ -122,7 +122,7 @@ export const WorkstationCalculator = () => {
             </span>
             <span className="text-sm text-ink-muted ml-1">sq m</span>
           </div>
-          <div className="text-xs text-ink-muted mt-2 leading-relaxed dark:text-[#A8A8A5]">
+          <div className="text-xs text-ink-muted mt-2 leading-relaxed dark:text-wiki-muted">
             NFA = {employees} × {density.toFixed(2)} = {Math.round(nfa)} sq m · GFA = {Math.round(nfa)} × {multiplier.toFixed(2)} = {gfa} sq m · Per floor: {perFloor.toLocaleString()} sq m
           </div>
         </div>

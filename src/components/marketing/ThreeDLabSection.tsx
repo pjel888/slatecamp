@@ -4,13 +4,17 @@ import {
   SectionEyebrow,
   FeaturePill,
 } from '@/components/marketing/FeatureSectionLayout'
+import { palette, cssVars } from '@/components/graphics/tokens'
 import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 /* ── 3D viewer mockup ── */
 
 const ThreeDMockup = () => (
-  <div className='relative overflow-hidden rounded-md bg-[#0D1B3E]'>
+  <div
+    className='relative overflow-hidden rounded-md'
+    style={{ backgroundColor: 'var(--marketing-blueprint-surface)' }}
+  >
     <div className='relative z-10'>
       {/* Header */}
       <div className='flex items-center justify-between border-b border-white/10 px-4 py-3'>
@@ -71,27 +75,27 @@ const ThreeDMockup = () => (
 
           {/* Building footprint — hatch + blue fill */}
           <rect x='36' y='40' width='250' height='88' fill='url(#bpHatch)' />
-          <rect x='36' y='40' width='250' height='88' fill='rgba(74,120,255,0.11)' stroke='#7EB3FF' strokeWidth='1.5' />
+          <rect x='36' y='40' width='250' height='88' fill='rgba(74,120,255,0.11)' stroke={palette.slateBlue50} strokeWidth='1.5' />
 
           {/* Building label */}
           <text x='161' y='82' textAnchor='middle' fill='rgba(150,200,255,0.38)' fontSize='9' fontFamily='monospace'>BUILDING</text>
           <text x='161' y='94' textAnchor='middle' fill='rgba(150,200,255,0.2)' fontSize='7' fontFamily='monospace'>FOOTPRINT</text>
 
           {/* Dim: Front setback — vertical, centered at x=158, y=18→40 */}
-          <line x1='158' y1='18' x2='158' y2='40' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='155' y1='21' x2='158' y2='18' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='161' y1='21' x2='158' y2='18' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='155' y1='37' x2='158' y2='40' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='161' y1='37' x2='158' y2='40' stroke='#F5A623' strokeWidth='0.75' />
-          <text x='163' y='32' fill='#F5A623' fontSize='8' fontFamily='monospace'>3.0m</text>
+          <line x1='158' y1='18' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='155' y1='21' x2='158' y2='18' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='161' y1='21' x2='158' y2='18' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='155' y1='37' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='161' y1='37' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+          <text x='163' y='32' fill={palette.amber} fontSize='8' fontFamily='monospace'>3.0m</text>
 
           {/* Dim: Corner setback — horizontal, at y=80, x=18→36, label rotated */}
-          <line x1='18' y1='80' x2='36' y2='80' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='21' y1='77' x2='18' y2='80' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='21' y1='83' x2='18' y2='80' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='33' y1='77' x2='36' y2='80' stroke='#F5A623' strokeWidth='0.75' />
-          <line x1='33' y1='83' x2='36' y2='80' stroke='#F5A623' strokeWidth='0.75' />
-          <text x='27' y='80' textAnchor='middle' fill='#F5A623' fontSize='7' fontFamily='monospace' transform='rotate(-90 27 80)'>2.0m</text>
+          <line x1='18' y1='80' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='21' y1='77' x2='18' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='21' y1='83' x2='18' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='33' y1='77' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+          <line x1='33' y1='83' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+          <text x='27' y='80' textAnchor='middle' fill={palette.amber} fontSize='7' fontFamily='monospace' transform='rotate(-90 27 80)'>2.0m</text>
 
           {/* Corner lot marker — amber triangle at street intersection */}
           <polygon points='18,18 32,18 18,32' fill='rgba(245,166,35,0.22)' stroke='rgba(245,166,35,0.38)' strokeWidth='0.5' />
@@ -109,7 +113,7 @@ const ThreeDMockup = () => (
       {/* Footer: Blueprint legend */}
       <div className='flex items-center gap-5 border-t border-white/10 px-4 py-2.5'>
         <div className='flex items-center gap-1.5'>
-          <div className='h-2.5 w-4 rounded-[2px] border border-[#7EB3FF] bg-[rgba(74,120,255,0.11)]' />
+          <div className='h-2.5 w-4 rounded-[2px] border border-primary-50 bg-primary/10' />
           <span className='font-mono text-[11px] text-white/30'>Building</span>
         </div>
         <div className='flex items-center gap-1.5'>
@@ -170,13 +174,13 @@ export const ThreeDLabSection = () => (
           <FeatureCheckItem
             title='Learn by seeing, not just reading'
             description='Structural systems, building assemblies, and spatial relationships — explored in three dimensions, not described in two.'
-            accentColor='#F5A623'
+            accentColor={cssVars.accent}
             textDark
           />
           <FeatureCheckItem
             title='Connected to what you&apos;re studying'
             description='3D models link directly to your notes and quiz content, so context is never more than a click away.'
-            accentColor='#F5A623'
+            accentColor={cssVars.accent}
             textDark
           />
         </div>

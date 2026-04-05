@@ -11,9 +11,9 @@ interface Props {
 }
 
 const getMasteryColor = (pct: number) => {
-  if (pct >= 70) return { text: 'text-[#2D9F6F]', bg: 'bg-[#EDFAF4]' }
-  if (pct >= 40) return { text: 'text-[#D4951A]', bg: 'bg-[#FEF8ED]' }
-  return { text: 'text-[#D64545]', bg: 'bg-[#FDF0F0]' }
+  if (pct >= 70) return { text: 'text-success', bg: 'bg-success-50' }
+  if (pct >= 40) return { text: 'text-warning', bg: 'bg-warning-50' }
+  return { text: 'text-destructive', bg: 'bg-destructive-50' }
 }
 
 const formatDate = (iso: string | null) => {
@@ -22,7 +22,7 @@ const formatDate = (iso: string | null) => {
 }
 
 export const WeakestTopics = ({ data }: Props) => (
-  <Card className="border-[#D4DAE3] bg-white rounded-md shadow-none p-2 relative">
+  <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
     <RichInfoPopover
       title="Topics to Focus On"
       description="Your 10 lowest-mastery topics with at least 3 attempts. Sorted by mastery score ascending."
@@ -46,13 +46,13 @@ export const WeakestTopics = ({ data }: Props) => (
             return (
               <div
                 key={item.topicId}
-                className="flex items-center justify-between gap-2 py-1.5 border-b border-[#D4DAE3] last:border-0"
+                className="flex items-center justify-between gap-2 py-1.5 border-b border-border last:border-0"
               >
                 <div className="flex-1 min-w-0">
-                  <p className="text-[12px] font-medium text-[#1A2332] truncate leading-tight">
+                  <p className="text-[12px] font-medium text-foreground truncate leading-tight">
                     {item.topic}
                   </p>
-                  <p className="text-[11px] text-[#8896A7] mt-0.5">
+                  <p className="text-[11px] text-muted-foreground mt-0.5">
                     <span className="font-mono">{item.attempts}</span> attempts
                     {' · '}last seen {formatDate(item.lastEncountered)}
                   </p>
@@ -66,7 +66,7 @@ export const WeakestTopics = ({ data }: Props) => (
                   </span>
                   <Link
                     href="/dashboard/testing"
-                    className="text-[11px] font-semibold text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+                    className="text-[11px] font-semibold text-primary hover:text-primary-700 transition-colors duration-150"
                   >
                     Practice
                   </Link>

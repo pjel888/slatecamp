@@ -17,6 +17,9 @@ interface PageProps {
   params: Promise<{ id: string }>
 }
 
+const WIKI_PROSE_CLASS_NAME =
+  'prose prose-wiki dark:prose-invert max-w-none font-sans text-[15px] leading-[1.7] prose-p:mb-4 prose-p:last:mb-0 prose-p:max-w-[65ch] prose-strong:font-semibold prose-em:text-inherit prose-code:rounded-[3px] prose-code:bg-muted prose-code:px-[5px] prose-code:py-px prose-code:text-[12px] prose-code:text-primary prose-code:font-[var(--font-dm-mono)] prose-code:before:content-none prose-code:after:content-none prose-code:dark:bg-[var(--wiki-prose-invert-code-bg)] prose-code:dark:text-[var(--wiki-prose-invert-code)] prose-h2:mt-0 prose-h2:mb-4 prose-h2:font-sans prose-h2:text-[22px] prose-h2:font-bold prose-h3:mt-7 prose-h3:mb-3 prose-h3:font-sans prose-h3:text-base prose-h3:font-semibold prose-hr:my-10'
+
 const mdxComponents = {
   Note,
   Warn,
@@ -57,17 +60,21 @@ const mdxComponents = {
 }
 
 const ArticlePreview = async ({ content }: { content: string }) => {
+  let mdxContent: React.ReactNode
+
   try {
-    const { content: mdxContent } = await compileMDX({
+    const { content: compiledContent } = await compileMDX({
       source: content,
       components: mdxComponents,
       options: { mdxOptions: { remarkPlugins: [remarkGfm] } },
     })
-    return <div className="wiki-prose">{mdxContent}</div>
+    mdxContent = compiledContent
   } catch (err) {
     console.error('MDX Compilation Error:', err)
     return <div className="whitespace-pre-wrap text-sm font-sans">{content}</div>
   }
+
+  return <div className={WIKI_PROSE_CLASS_NAME}>{mdxContent}</div>
 }
 
 const QuestionDetailPage = async ({ params }: PageProps) => {
@@ -118,9 +125,7 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
           <div className="space-y-4">
             <Card className="p-4">
               <h2 className="text-lg font-bold text-foreground mb-4">{article.title}</h2>
-              <div className="prose prose-sm max-w-none text-text-secondary">
-                <ArticlePreview content={article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '')} />
-              </div>
+              <ArticlePreview content={article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '')} />
             </Card>
             <div className="flex justify-end">
               <a 

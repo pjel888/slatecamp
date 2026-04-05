@@ -65,17 +65,17 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
   return (
     <div className="space-y-5">
       {/* Header */}
-      <div className="flex gap-2.5 rounded-md bg-[#EEF2FC] border border-[#1B3FC4]/20 px-4 py-3">
+      <div className="flex gap-2.5 rounded-md bg-primary-50 border border-primary/20 px-4 py-3">
         <Info
-          className="h-4 w-4 shrink-0 mt-0.5 text-[#1B3FC4]"
+          className="h-4 w-4 shrink-0 mt-0.5 text-primary"
           aria-hidden="true"
           weight="fill"
         />
         <div>
-          <p className="text-[13px] font-medium text-[#1A2332] mb-0.5">
+          <p className="text-[13px] font-medium text-foreground mb-0.5">
             Before you begin
           </p>
-          <p className="text-[13px] text-[#4A5568]">
+          <p className="text-[13px] text-text-secondary">
             This is a full exam simulation under real conditions. Take a moment
             to confirm you are ready.
           </p>
@@ -98,8 +98,8 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
                 className={cn(
                   'w-full flex items-start gap-3 px-3.5 py-3 rounded-md border text-left transition-colors duration-150 ease-out',
                   isChecked
-                    ? 'border-[#2D9F6F]/30 bg-[#EDFAF4]'
-                    : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/30',
+                    ? 'border-success/30 bg-success-50'
+                    : 'border-border bg-white hover:border-primary/30',
                 )}
               >
                 {/* Checkbox icon */}
@@ -108,13 +108,13 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
                     <CheckSquare
                       size={18}
                       weight="fill"
-                      className="text-[#2D9F6F]"
+                      className="text-success"
                     />
                   ) : (
                     <Square
                       size={18}
                       weight="regular"
-                      className="text-[#8896A7]"
+                      className="text-muted-foreground"
                     />
                   )}
                 </span>
@@ -124,12 +124,12 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
                   <p
                     className={cn(
                       'text-[13px] font-medium leading-snug',
-                      isChecked ? 'text-[#1A2332]' : 'text-[#4A5568]',
+                      isChecked ? 'text-foreground' : 'text-text-secondary',
                     )}
                   >
                     {item.label}
                   </p>
-                  <p className="text-[11px] text-[#8896A7] leading-snug mt-0.5">
+                  <p className="text-[11px] text-muted-foreground leading-snug mt-0.5">
                     {item.detail}
                   </p>
                 </div>
@@ -141,7 +141,7 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
 
       {/* Progress hint */}
       {!allChecked && (
-        <p className="text-[11px] text-[#8896A7] text-center">
+        <p className="text-[11px] text-muted-foreground text-center">
           {checked.size} of {CHECKLIST_ITEMS.length} confirmed
         </p>
       )}

@@ -35,14 +35,12 @@ const fillVariants = cva('h-full rounded-full', {
   },
 })
 
-interface ProgressBarProps {
+type ProgressBarProps = Omit<React.ComponentProps<'div'>, 'children'> &
+  Pick<VariantProps<typeof trackVariants>, 'size'> &
+  Pick<VariantProps<typeof fillVariants>, 'variant' | 'animate'> & {
   value: number
-  variant?: 'primary' | 'success' | 'warning' | 'danger' | 'neutral'
-  size?: 'sm' | 'md' | 'lg'
   label?: string
   showPercentage?: boolean
-  animate?: boolean
-  className?: string
 }
 
 const ProgressBar = ({
@@ -53,6 +51,7 @@ const ProgressBar = ({
   showPercentage = false,
   animate = true,
   className,
+  ...props
 }: ProgressBarProps) => {
   const clampedValue = Math.max(0, Math.min(100, value))
 
@@ -60,6 +59,7 @@ const ProgressBar = ({
     <div
       data-slot="progress-bar"
       className={cn('w-full', className)}
+      {...props}
       role="progressbar"
       aria-valuenow={clampedValue}
       aria-valuemin={0}

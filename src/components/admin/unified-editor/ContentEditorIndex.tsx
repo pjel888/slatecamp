@@ -5,8 +5,7 @@ import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question, Stack } from '@phosphor-icons/react/dist/ssr'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
-import { Badge } from '@/components/ui/badge'
-import { StatusBadge } from '@/components/ui/status-badge'
+import { Badge, StatusBadge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
@@ -380,7 +379,7 @@ export const ContentEditorIndex = ({
           {/* Active filter indicator */}
           {selectedNodeName && (
             <div className="flex items-center gap-1.5 mr-2">
-              <Badge variant="primary" size="sm" pill>
+              <Badge variant="primary" size="sm" shape="pill">
                 {selectedNodeName}
               </Badge>
               <button
@@ -456,26 +455,31 @@ export const ContentEditorIndex = ({
                   {articles.length === 0 ? (
                     <EmptyState
                       icon={<FileText size={20} />}
-                      message="No articles yet"
+                      title="No articles yet"
                       description="Create your first article to start building content and questions together."
-                      action={{
-                        label: '+ Create Article',
-                        href: '/admin/knowledge/new',
-                      }}
+                      action={
+                        <Button asChild variant="primary">
+                          <Link href="/admin/knowledge/new">+ Create Article</Link>
+                        </Button>
+                      }
                     />
                   ) : (
                     <EmptyState
                       icon={<MagnifyingGlass size={20} />}
-                      message="No matching content"
+                      title="No matching content"
                       description="Try adjusting your search or filter criteria."
-                      action={{
-                        label: 'Clear filters',
-                        onClick: () => {
-                          setSearchQuery('')
-                          setStatusFilter('all')
-                          handleSetSelectedNodeId(null)
-                        },
-                      }}
+                      action={
+                        <Button
+                          variant="secondary"
+                          onClick={() => {
+                            setSearchQuery('')
+                            setStatusFilter('all')
+                            handleSetSelectedNodeId(null)
+                          }}
+                        >
+                          Clear filters
+                        </Button>
+                      }
                     />
                   )}
                 </div>

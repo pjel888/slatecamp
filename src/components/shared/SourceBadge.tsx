@@ -23,8 +23,8 @@ export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
         onClick={() => onClick(slug)}
         className={[
           'inline-flex items-center gap-1 px-2 py-0.5 rounded-full',
-          'bg-[#EEF2FC] text-[#1B3FC4] text-[11px] font-medium leading-tight',
-          'hover:bg-[#1B3FC4]/15 transition-colors duration-150 ease-out',
+          'bg-primary-50 text-primary text-[11px] font-medium leading-tight',
+          'hover:bg-primary/15 transition-colors duration-150 ease-out',
           'no-underline text-left cursor-pointer',
           className,
         ]
@@ -42,8 +42,8 @@ export const SourceBadge = ({ slug, className, onClick }: SourceBadgeProps) => {
       href={`/dashboard/wiki/${slug}`}
       className={[
         'inline-flex items-center gap-1 px-2 py-0.5 rounded-full',
-        'bg-[#EEF2FC] text-[#1B3FC4] text-[11px] font-medium leading-tight',
-        'hover:bg-[#1B3FC4]/15 transition-colors duration-150 ease-out',
+        'bg-primary-50 text-primary text-[11px] font-medium leading-tight',
+        'hover:bg-primary/15 transition-colors duration-150 ease-out',
         'no-underline',
         className,
       ]

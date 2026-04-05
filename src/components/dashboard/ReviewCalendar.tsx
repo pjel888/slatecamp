@@ -20,19 +20,19 @@ const URGENCY_STYLES: Record<
   { bg: string; text: string; border: string }
 > = {
   overdue: {
-    bg: 'bg-[#FDF0F0]',
-    text: 'text-[#D64545]',
-    border: 'border-[#D64545]/20',
+    bg: 'bg-destructive-50',
+    text: 'text-destructive',
+    border: 'border-destructive/20',
   },
   due_today: {
-    bg: 'bg-[#FEF8ED]',
-    text: 'text-[#D4951A]',
-    border: 'border-[#D4951A]/20',
+    bg: 'bg-warning-50',
+    text: 'text-warning',
+    border: 'border-warning/20',
   },
   upcoming: {
-    bg: 'bg-[#F5F7FA]',
-    text: 'text-[#4A5568]',
-    border: 'border-[#D4DAE3]',
+    bg: 'bg-surface-focused',
+    text: 'text-text-secondary',
+    border: 'border-border',
   },
 }
 
@@ -87,21 +87,21 @@ const DayColumn = ({
       className={cn(
         'flex flex-col gap-1 rounded-md border p-1.5 min-w-0',
         isToday
-          ? 'border-[#1B3FC4]/30 bg-[#EEF2FC]'
-          : 'border-[#D4DAE3] bg-white',
+          ? 'border-primary/30 bg-primary-50'
+          : 'border-border bg-white',
       )}
     >
       <div className="flex items-center justify-between">
         <span
           className={cn(
             'text-[11px] font-semibold',
-            isToday ? 'text-[#1B3FC4]' : 'text-[#4A5568]',
+            isToday ? 'text-primary' : 'text-text-secondary',
           )}
         >
           {day.label}
         </span>
         {hasTopics && (
-          <span className="text-[10px] text-[#8896A7] tabular-nums">
+          <span className="text-[10px] text-muted-foreground tabular-nums">
             {day.topics.length}
           </span>
         )}
@@ -117,13 +117,13 @@ const DayColumn = ({
             />
           ))}
           {overflow > 0 && (
-            <span className="text-[10px] text-[#8896A7] pl-0.5">
+            <span className="text-[10px] text-muted-foreground pl-0.5">
               +{overflow} more
             </span>
           )}
         </div>
       ) : (
-        <span className="text-[10px] text-[#8896A7] italic">Clear</span>
+        <span className="text-[10px] text-muted-foreground italic">Clear</span>
       )}
     </div>
   )
@@ -142,37 +142,37 @@ const SummaryHeader = ({
     parts.push({
       count: summary.overdueCount,
       label: 'overdue',
-      color: 'text-[#D64545]',
+      color: 'text-destructive',
     })
   }
   if (summary.dueTodayCount > 0) {
     parts.push({
       count: summary.dueTodayCount,
       label: 'due today',
-      color: 'text-[#D4951A]',
+      color: 'text-warning',
     })
   }
   if (summary.upcomingCount > 0) {
     parts.push({
       count: summary.upcomingCount,
       label: 'upcoming',
-      color: 'text-[#4A5568]',
+      color: 'text-text-secondary',
     })
   }
 
   if (parts.length === 0) {
     return (
-      <p className="text-xs text-[#8896A7]">
+      <p className="text-xs text-muted-foreground">
         All topics are in good shape. Keep it up.
       </p>
     )
   }
 
   return (
-    <p className="text-xs text-[#4A5568]">
+    <p className="text-xs text-text-secondary">
       {parts.map((part, i) => (
         <span key={part.label}>
-          {i > 0 && <span className="text-[#8896A7]"> &middot; </span>}
+          {i > 0 && <span className="text-muted-foreground"> &middot; </span>}
           <span className={cn('font-semibold tabular-nums', part.color)}>
             {part.count}
           </span>{' '}
@@ -237,12 +237,12 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
     filteredDays.every((d) => d.topics.length === 0)
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white p-2">
+    <div className="rounded-md border border-border bg-white p-2">
       {/* Header */}
       <div className="flex items-center justify-between mb-1.5">
         <div className="flex items-center gap-1.5">
-          <SCIcon icon={CalendarBlank} size="xs" className="text-[#1B3FC4]" />
-          <h3 className="text-xs font-semibold text-[#1A2332]">
+          <SCIcon icon={CalendarBlank} size="xs" className="text-primary" />
+          <h3 className="text-xs font-semibold text-foreground">
             Review Schedule
           </h3>
         </div>
@@ -251,13 +251,13 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
 
       {isEmpty ? (
         <div className="flex flex-col items-center justify-center py-6 text-center">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDFAF4] text-[#2D9F6F]">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-success-50 text-success">
             <SCIcon icon={CalendarBlank} size="sm" />
           </div>
-          <p className="mt-2 text-sm font-medium text-[#1A2332]">
+          <p className="mt-2 text-sm font-medium text-foreground">
             Nothing due this week
           </p>
-          <p className="mt-0.5 text-xs text-[#8896A7]">
+          <p className="mt-0.5 text-xs text-muted-foreground">
             Complete a few sessions to build your review schedule.
           </p>
         </div>
@@ -265,14 +265,14 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
         <>
           {/* Overdue alert */}
           {filteredOverdue.length > 0 && (
-            <div className="flex items-start gap-1.5 rounded-md bg-[#FDF0F0] border border-[#D64545]/15 px-2 py-1.5 mb-1.5">
+            <div className="flex items-start gap-1.5 rounded-md bg-destructive-50 border border-destructive/15 px-2 py-1.5 mb-1.5">
               <SCIcon
                 icon={Warning}
                 size="xs"
-                className="text-[#D64545] mt-0.5 shrink-0"
+                className="text-destructive mt-0.5 shrink-0"
               />
               <div className="min-w-0">
-                <p className="text-[11px] font-medium text-[#D64545]">
+                <p className="text-[11px] font-medium text-destructive">
                   {filteredOverdue.length} topic{filteredOverdue.length !== 1 ? 's' : ''} need
                   review — recall has dropped below 50%
                 </p>
@@ -285,7 +285,7 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
                     />
                   ))}
                   {filteredOverdue.length > 5 && (
-                    <span className="text-[10px] text-[#D64545]/70 self-center">
+                    <span className="text-[10px] text-destructive/70 self-center">
                       +{filteredOverdue.length - 5} more
                     </span>
                   )}
@@ -307,15 +307,15 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
           </div>
 
           {/* Footer */}
-          <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-[#D4DAE3]">
-            <div className="flex items-center gap-1 text-[10px] text-[#8896A7]">
+          <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-border">
+            <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
               <SCIcon icon={Clock} size="xs" />
               <span>Based on your personal forgetting curves</span>
             </div>
             <button
               type="button"
               onClick={() => router.push('/dashboard/testing')}
-              className="flex items-center gap-0.5 text-[11px] font-medium text-[#1B3FC4] transition-colors duration-150 hover:text-[#1535A8]"
+              className="flex items-center gap-0.5 text-[11px] font-medium text-primary transition-colors duration-150 hover:text-primary-700"
             >
               Review all
               <SCIcon icon={ArrowRight} size="xs" />

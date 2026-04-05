@@ -20,7 +20,7 @@ export const SRCriterionCard = ({
 }: SRCriterionCardProps) => (
   <div
     className={cn(
-      'rounded-md border border-[#2D9F6F]/20 bg-[#EDFAF4] p-5',
+      'rounded-md border border-success/20 bg-success-50 p-5',
       className,
     )}
     role="status"
@@ -30,15 +30,15 @@ export const SRCriterionCard = ({
       <CheckCircle
         weight="fill"
         size={24}
-        className="mt-0.5 shrink-0 text-[#2D9F6F]"
+        className="mt-0.5 shrink-0 text-success"
       />
       <div className="flex-1 space-y-3">
         <div>
-          <h3 className="font-medium text-sm text-[#1A2332]">
+          <h3 className="font-medium text-sm text-foreground">
             You&apos;ve reached criterion
             {topicName ? ` for ${topicName}` : ''}
           </h3>
-          <p className="mt-1 text-xs text-[#4A5568]">
+          <p className="mt-1 text-xs text-text-secondary">
             We&apos;ll re-test you tomorrow to make sure it sticks. Each
             successful re-test extends the interval until the knowledge is
             durable.
@@ -47,7 +47,7 @@ export const SRCriterionCard = ({
 
         {/* Spacing timeline preview */}
         <div className="pt-1">
-          <p className="mb-2 text-[11px] font-medium uppercase tracking-widest text-[#4A5568]">
+          <p className="mb-2 text-[11px] font-medium uppercase tracking-widest text-text-secondary">
             Re-test schedule
           </p>
           <SRSpacingTimeline currentLevel={0} />
@@ -59,7 +59,7 @@ export const SRCriterionCard = ({
             <Button
               size="sm"
               onClick={onContinue}
-              className="rounded-sm bg-[#1B3FC4] text-white hover:bg-[#1535A8]"
+              className="rounded-sm bg-primary text-white hover:bg-primary-700"
             >
               Continue
             </Button>
@@ -69,7 +69,7 @@ export const SRCriterionCard = ({
               size="sm"
               variant="ghost"
               onClick={onBackToHub}
-              className="rounded-sm text-[#4A5568]"
+              className="rounded-sm text-text-secondary"
             >
               Back to Testing Hub
             </Button>

@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { X, BookmarkSimple, SquaresFour, Timer, Fire } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import type { QuizMode, QuizSessionConfig } from '@/types/quiz-config'
+import type { QuizSessionConfig, TimerMode } from '@/types/quiz-config'
 import { MODE_LABELS } from '@/lib/quiz/mode-presets'
 import { useQuizStore } from '@/stores/useQuizStore'
 
@@ -12,8 +13,6 @@ interface QuizHeaderProps {
   currentPosition: number
   totalQuestions: number
   isFlagged?: boolean
-  elapsedSeconds?: number
-  remainingSeconds?: number | null
   onExit: () => void
   onToggleFlag?: () => void
   onOpenPalette?: () => void
@@ -32,24 +31,53 @@ const formatTime = (seconds: number): string => {
 }
 
 const TIMER_COLOR_CLASSES: Record<string, string> = {
-  normal: 'text-[#4A5568]',
-  warning: 'text-[#D4951A]',
-  critical: 'text-[#D64545]',
+  normal: 'text-text-secondary',
+  warning: 'text-warning',
+  critical: 'text-destructive',
 }
 
-export const QuizHeader = ({
+/** Standalone timer component to isolate 1Hz re-renders from the Header */
+const DefaultTimer = ({ mode }: { mode: TimerMode }) => {
+  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
+  const limitMs = useQuizStore((s) => s.timer.limitMs)
+  const colorState = useQuizStore((s) => s.timer.colorState)
+
+  if (mode === 'hidden') return null
+
+  const elapsedSeconds = Math.floor(elapsedMs / 1000)
+  const remainingSeconds =
+    limitMs !== null ? Math.max(0, Math.floor((limitMs - elapsedMs) / 1000)) : 0
+
+  const displaySeconds = mode === 'countdown' ? remainingSeconds : elapsedSeconds
+
+  return (
+    <div
+      className={cn(
+        'flex items-center gap-1 text-xs tabular-nums font-medium shrink-0',
+        TIMER_COLOR_CLASSES[colorState],
+      )}
+      aria-label={
+        mode === 'countdown'
+          ? `Time remaining: ${formatTime(displaySeconds)}`
+          : `Time elapsed: ${formatTime(displaySeconds)}`
+      }
+    >
+      <Timer size={14} aria-hidden="true" />
+      {formatTime(displaySeconds)}
+    </div>
+  )
+}
+
+export const QuizHeader = memo(({
   config,
   currentPosition,
   totalQuestions,
   isFlagged = false,
-  elapsedSeconds,
-  remainingSeconds,
   onExit,
   onToggleFlag,
   onOpenPalette,
   timerSlot,
 }: QuizHeaderProps) => {
-  const timerColorState = useQuizStore((s) => s.timer.colorState)
   const streakCount = useQuizStore((s) => s.streakCount)
   const streakBroken = useQuizStore((s) => s.streakBroken)
   const clearStreakBroken = useQuizStore((s) => s.clearStreakBroken)
@@ -64,12 +92,9 @@ export const QuizHeader = ({
     config.timer.enabled &&
     (config.mode === 'storm' || config.mode === 'fullexam' || config.mode === 'extended')
 
-  const displaySeconds =
-    config.timer.mode === 'countdown' ? (remainingSeconds ?? 0) : (elapsedSeconds ?? 0)
-
   return (
     <header
-      className="flex items-center gap-3 px-4 py-2.5 border-b border-[#D4DAE3] bg-white"
+      className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-white"
       aria-label="Quiz header"
     >
       {/* Exit */}
@@ -91,24 +116,24 @@ export const QuizHeader = ({
           aria-valuenow={currentPosition}
           aria-valuemin={0}
           aria-valuemax={totalQuestions}
-          className="flex-1 h-1.5 rounded-full bg-[#D4DAE3] overflow-hidden"
+          className="flex-1 h-1.5 rounded-full bg-border overflow-hidden"
         >
           <div
             className={cn(
-              'h-full rounded-full bg-[#1B3FC4] transition-[width] duration-300 ease-out',
+              'h-full rounded-full bg-primary transition-[width] duration-300 ease-out',
               halfwayReached && 'animate-pulse-once',
             )}
             style={{ width: `${progressPercent}%` }}
             aria-hidden="true"
           />
         </div>
-        <span className="text-xs text-[#8896A7] tabular-nums shrink-0">
+        <span className="text-xs text-muted-foreground tabular-nums shrink-0">
           {currentPosition}/{totalQuestions}
         </span>
       </div>
 
       {/* Mode badge */}
-      <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-[#1B3FC4] text-[11px] font-medium shrink-0">
+      <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-sm bg-primary-50 text-primary text-[11px] font-medium shrink-0">
         {MODE_LABELS[config.mode]}
       </span>
 
@@ -122,8 +147,8 @@ export const QuizHeader = ({
           aria-label={`Current streak: ${streakCount} correct answers`}
           onAnimationEnd={streakBroken ? clearStreakBroken : undefined}
         >
-          <Fire size={14} weight="fill" className="text-[#E8853A]" aria-hidden="true" />
-          <span className="text-[#E8853A]">{streakCount}</span>
+          <Fire size={14} weight="fill" className="text-camp-orange" aria-hidden="true" />
+          <span className="text-camp-orange">{streakCount}</span>
         </div>
       )}
 
@@ -131,20 +156,7 @@ export const QuizHeader = ({
       {timerSlot ? (
         timerSlot
       ) : showTimer ? (
-        <div
-          className={cn(
-            'flex items-center gap-1 text-xs tabular-nums font-medium shrink-0',
-            TIMER_COLOR_CLASSES[timerColorState],
-          )}
-          aria-label={
-            config.timer.mode === 'countdown'
-              ? `Time remaining: ${formatTime(displaySeconds)}`
-              : `Time elapsed: ${formatTime(displaySeconds)}`
-          }
-        >
-          <Timer size={14} aria-hidden="true" />
-          {formatTime(displaySeconds)}
-        </div>
+        <DefaultTimer mode={config.timer.mode} />
       ) : null}
 
       {/* Bookmark */}
@@ -160,7 +172,7 @@ export const QuizHeader = ({
           <BookmarkSimple
             size={16}
             weight={isFlagged ? 'fill' : 'regular'}
-            className={isFlagged ? 'text-[#1B3FC4]' : undefined}
+            className={isFlagged ? 'text-primary' : undefined}
             aria-hidden="true"
           />
         </Button>
@@ -180,4 +192,6 @@ export const QuizHeader = ({
       )}
     </header>
   )
-}
+})
+
+QuizHeader.displayName = 'QuizHeader'

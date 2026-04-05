@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import { annotate } from 'rough-notation'
 
 const H1_CLASS =
-  'landing-reveal landing-delay-1 font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.92] text-zinc-900'
+  'motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.92] text-zinc-900'
 
 export const HeroHeadline = () => {
   const knowRef = useRef<HTMLSpanElement>(null)
@@ -66,7 +66,7 @@ export const HeroHeadline = () => {
       <div className='pt-2'>
         <p
           ref={taglineRef}
-          className='landing-reveal landing-delay-2 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
+          className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
         >
           One readiness engine for the ALE — adaptive quizzing, syllabus-mapped
           content, and a score that never lies.

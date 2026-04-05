@@ -48,22 +48,22 @@ const PostdictionPrompt = ({
       <div className="w-full max-w-md space-y-6">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-lg font-semibold text-[#1A2332]">
+          <h2 className="text-lg font-semibold text-foreground">
             Before you see your score — how do you think you did?
           </h2>
-          <p className="mt-1 text-[13px] text-[#4A5568]">
+          <p className="mt-1 text-[13px] text-text-secondary">
             Estimating your performance builds self-assessment skills over time.
           </p>
         </div>
 
         {/* Slider card */}
-        <div className="rounded-md border border-[#D4DAE3] bg-white p-6">
+        <div className="rounded-md border border-border bg-white p-6">
           {/* Current value display */}
           <div className="text-center mb-5">
-            <span className="text-[40px] font-bold leading-none tabular-nums text-[#1A2332]">
+            <span className="text-[40px] font-bold leading-none tabular-nums text-foreground">
               {value}
             </span>
-            <span className="text-[24px] font-semibold text-[#4A5568]">%</span>
+            <span className="text-[24px] font-semibold text-text-secondary">%</span>
           </div>
 
           {/* Slider */}
@@ -79,7 +79,7 @@ const PostdictionPrompt = ({
               aria-valuemin={0}
               aria-valuemax={100}
               aria-valuenow={value}
-              className="w-full h-2 rounded-full appearance-none cursor-pointer bg-[#D4DAE3] accent-[#1B3FC4] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/20 focus-visible:ring-offset-2"
+              className="w-full h-2 rounded-full appearance-none cursor-pointer bg-border accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:ring-offset-2"
               style={{
                 background: `linear-gradient(to right, #1B3FC4 0%, #1B3FC4 ${value}%, #D4DAE3 ${value}%, #D4DAE3 100%)`,
               }}
@@ -90,7 +90,7 @@ const PostdictionPrompt = ({
               {MARKERS.map((mark) => (
                 <span
                   key={mark}
-                  className="text-[11px] tabular-nums text-[#8896A7]"
+                  className="text-[11px] tabular-nums text-muted-foreground"
                 >
                   {mark}%
                 </span>
@@ -117,7 +117,7 @@ const PostdictionPrompt = ({
             type="button"
             onClick={handleSkip}
             disabled={isPending}
-            className="block w-full text-center text-[13px] text-[#4A5568] hover:text-[#1B3FC4] transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:underline disabled:opacity-50"
+            className="block w-full text-center text-[13px] text-text-secondary hover:text-primary transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:underline disabled:opacity-50"
           >
             Skip
           </button>

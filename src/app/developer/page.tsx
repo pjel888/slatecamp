@@ -114,7 +114,7 @@ const DeveloperPortalPage = () => {
                   <card.icon className="w-4 h-4 text-primary" />
                   <span className="text-[13px] font-semibold text-foreground">{card.title}</span>
                 </div>
-                <Badge variant={card.badgeVariant} size="xs" pill>
+                <Badge variant={card.badgeVariant} size="xs" shape="pill">
                   {card.badge}
                 </Badge>
               </div>
@@ -232,7 +232,7 @@ const DeveloperPortalPage = () => {
                             : 'default'
                       }
                       size="xs"
-                      pill
+                      shape="pill"
                     >
                       {entry.badge}
                     </Badge>

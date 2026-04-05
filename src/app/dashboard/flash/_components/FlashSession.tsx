@@ -105,7 +105,7 @@ export const FlashSession = ({ category, cards }: FlashSessionProps) => {
           <button
             type='button'
             onClick={handleRestart}
-            className='flex-1 min-h-[44px] rounded-sm bg-[#1B3FC4] text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3FC4]'
+            className='flex-1 min-h-[44px] rounded-sm bg-[#1B3FC4] text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3FC4]'
           >
             Study again
           </button>

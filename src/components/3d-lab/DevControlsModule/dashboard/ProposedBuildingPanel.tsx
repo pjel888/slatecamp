@@ -10,7 +10,7 @@ export function ProposedBuildingPanel() {
 
   return (
     <div>
-      <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-[#8896A7]">
+      <label className="mb-2 block text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
         Proposed Building
       </label>
       <div className="space-y-3">

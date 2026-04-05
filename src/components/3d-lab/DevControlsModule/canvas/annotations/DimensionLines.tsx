@@ -32,7 +32,7 @@ function DimLine({ start, end, label, offset = [0, 0.5, 0] }: DimLineProps) {
     <group>
       <Line points={points} color="#4A5568" lineWidth={1} dashed dashSize={0.2} gapSize={0.15} />
       <Html position={mid} style={{ pointerEvents: 'none' }}>
-        <div className="rounded-sm bg-white/90 px-1 py-0.5 text-[9px] font-mono text-[#1A2332] shadow-sm whitespace-nowrap border border-[#D4DAE3]">
+        <div className="rounded-sm bg-white/90 px-1 py-0.5 text-[9px] font-mono text-foreground shadow-sm whitespace-nowrap border border-border">
           {label}
         </div>
       </Html>

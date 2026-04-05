@@ -110,16 +110,17 @@ const AppDrawer = ({
 
   // Slide animation classes
   const slideOpenClass = cn(
-    side === 'right' && 'animate-slide-in-right',
-    side === 'left' && 'animate-slide-in-left',
-    side === 'bottom' && 'animate-slide-in-bottom',
+    'animate-in duration-250 ease-out',
+    side === 'right' && 'slide-in-from-right',
+    side === 'left' && 'slide-in-from-left',
+    side === 'bottom' && 'slide-in-from-bottom',
   )
 
   return createPortal(
     <div data-slot="app-drawer" aria-modal="true" role="dialog" aria-label={title}>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm animate-fade-in"
+        className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm animate-in fade-in duration-200 ease-out"
         onClick={onClose}
         aria-hidden="true"
       />

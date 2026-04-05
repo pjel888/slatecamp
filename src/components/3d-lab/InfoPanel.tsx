@@ -66,6 +66,7 @@ export const InfoPanel = ({
           ref={panelRef}
           role="region"
           aria-label="Information panel"
+          className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-150 motion-reduce:animate-none"
           style={{
             position: 'absolute',
             bottom: 0,
@@ -79,7 +80,6 @@ export const InfoPanel = ({
             boxShadow: '0 -4px 24px rgba(0,0,0,0.12)',
             padding: '20px 16px 32px',
             pointerEvents: 'auto',
-            animation: 'panel-fade-in 150ms ease-out both',
           }}
         >
           <PanelContent
@@ -89,7 +89,6 @@ export const InfoPanel = ({
             onClose={onClose}
           />
         </div>
-        <style>{PANEL_ANIMATION}</style>
       </div>
     )
   }
@@ -111,28 +110,25 @@ export const InfoPanel = ({
     boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
     padding: '14px',
     zIndex: 200,
-    animation: 'panel-fade-in 150ms ease-out both',
     overflowY: 'auto',
     maxHeight: 'calc(100vh - 80px)',
   }
 
   return (
-    <>
-      <style>{PANEL_ANIMATION}</style>
-      <div
-        ref={panelRef}
-        role="region"
-        aria-label="Information panel"
-        style={panelStyle}
-      >
-        <PanelContent
-          hotspot={hotspot}
-          isExamCritical={isExamCritical}
-          onPracticeClick={onPracticeClick}
-          onClose={onClose}
-        />
-      </div>
-    </>
+    <div
+      ref={panelRef}
+      role="region"
+      aria-label="Information panel"
+      className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-150 motion-reduce:animate-none"
+      style={panelStyle}
+    >
+      <PanelContent
+        hotspot={hotspot}
+        isExamCritical={isExamCritical}
+        onPracticeClick={onPracticeClick}
+        onClose={onClose}
+      />
+    </div>
   )
 }
 
@@ -289,13 +285,3 @@ const PanelContent = ({
     </button>
   </div>
 )
-
-const PANEL_ANIMATION = `
-@keyframes panel-fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .panel-fade-in { animation: none !important; }
-}
-`

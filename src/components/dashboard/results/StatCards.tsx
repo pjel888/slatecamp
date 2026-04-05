@@ -6,10 +6,11 @@ import {
   TrendUp,
   TrendDown,
 } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
+import { StatCard } from '@/components/shared/stat-card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { cn } from '@/lib/utils'
 import type { DebriefData } from '@/lib/actions/debrief'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface StatCardsProps {
   sessionDurationMs?: number
@@ -33,57 +34,50 @@ export const StatCards = ({ sessionDurationMs, total, debrief }: StatCardsProps)
   return (
     <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mb-10'>
       {/* Duration */}
-      <div className='bg-white p-4 rounded-md border border-border text-center'>
-        <SCIcon icon={Clock} size='sm' className='text-text-tertiary mx-auto mb-1.5' />
-        <div className='text-lg font-extrabold text-text-primary'>
-          {sessionDurationMs ? formatDuration(sessionDurationMs) : '—'}
-        </div>
-        <Eyebrow>Duration</Eyebrow>
-      </div>
+      <StatCard
+        eyebrow="Duration"
+        value={sessionDurationMs ? formatDuration(sessionDurationMs) : '—'}
+        className='text-center'
+      />
 
       {/* Avg time per Q */}
-      <div className='bg-white p-4 rounded-md border border-border text-center'>
-        <SCIcon icon={Timer} size='sm' className='text-text-tertiary mx-auto mb-1.5' />
-        <div className='text-lg font-extrabold text-text-primary'>
-          {debrief && debrief.avgTimeMs > 0 ? `${Math.round(debrief.avgTimeMs / 1000)}s` : sessionDurationMs && total > 0 ? `${Math.round(sessionDurationMs / total / 1000)}s` : '—'}
-        </div>
-        <Eyebrow>Avg / Question</Eyebrow>
-      </div>
+      <StatCard
+        eyebrow="Avg / Question"
+        value={debrief && debrief.avgTimeMs > 0 ? `${Math.round(debrief.avgTimeMs / 1000)}s` : sessionDurationMs && total > 0 ? `${Math.round(sessionDurationMs / total / 1000)}s` : '—'}
+        className='text-center'
+      />
 
       {/* Readiness delta */}
-      <div className='bg-white p-4 rounded-md border border-border text-center'>
-        <SCIcon icon={ChartBar} size='sm' className='text-text-tertiary mx-auto mb-1.5' />
-        {debrief ? (
-          <>
-            <div className='text-lg font-extrabold text-text-primary'>
-              {Math.round(debrief.readinessBefore)}% → {Math.round(debrief.readinessAfter)}%
-            </div>
-            <Eyebrow className={cn(
-              readinessDelta !== null && readinessDelta > 0 ? 'text-emerald' : readinessDelta !== null && readinessDelta < 0 ? 'text-destructive' : 'text-text-tertiary',
-            )}>
-              {readinessDelta !== null && readinessDelta > 0 ? '+' : ''}{readinessDelta ?? 0} Readiness
-            </Eyebrow>
-          </>
-        ) : (
-          <>
-            <div className='text-lg font-extrabold text-emerald'>Updated</div>
-            <Eyebrow>Readiness</Eyebrow>
-          </>
-        )}
-      </div>
+      <StatCard
+        eyebrow="Readiness"
+        value={`${Math.round(debrief?.readinessBefore ?? 0)}% → ${Math.round(debrief?.readinessAfter ?? 0)}%`}
+        trend={{
+          direction: readinessDelta !== null && readinessDelta > 0 ? 'up' : readinessDelta !== null && readinessDelta < 0 ? 'down' : 'flat',
+          label: `${readinessDelta !== null && readinessDelta > 0 ? '+' : ''}${readinessDelta ?? 0} Readiness`,
+        }}
+        color={
+          readinessDelta !== null && readinessDelta > 0
+            ? 'text-emerald-600'
+            : readinessDelta !== null && readinessDelta < 0
+              ? 'text-destructive'
+              : 'text-muted-foreground'
+        }
+        className='text-center'
+      />
 
       {/* Answer changes */}
-      <div className='bg-white p-4 rounded-md border border-border text-center'>
-        <SCIcon icon={Swap} size='sm' className='text-text-tertiary mx-auto mb-1.5' />
-        <div className='text-lg font-extrabold text-text-primary'>
-          {debrief ? debrief.answerChangeCount : '—'}
-        </div>
-        <Eyebrow>
-          {debrief && debrief.answerChangeCount > 0
+      <StatCard
+        eyebrow="Answer Changes"
+        value={debrief ? debrief.answerChangeCount : '—'}
+        trend={{
+          direction: debrief && debrief.answerChangeCount > 0 ? 'up' : 'flat',
+          label: debrief && debrief.answerChangeCount > 0
             ? `${debrief.answerChangesCorrect} turned correct`
-            : 'Answer Changes'}
-        </Eyebrow>
-      </div>
+            : 'Answer Changes',
+        }}
+        color={debrief && debrief.answerChangeCount > 0 ? 'text-emerald-600' : 'text-muted-foreground'}
+        className='text-center'
+      />
     </div>
   )
 }

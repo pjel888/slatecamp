@@ -29,7 +29,7 @@ export const WikiItemRenderer = ({ items, aleId, threeDLabLinked }: WikiItemRend
         <div className="mb-5">
           <Link
             href={`/dashboard/3d-lab?node=${aleId}`}
-            className="inline-flex items-center gap-2 bg-[#1B3FC4] hover:bg-[#1535A8] text-white text-sm font-semibold px-4 py-2 rounded-sm transition-colors duration-150 ease-out"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2 rounded-sm transition-colors duration-150 ease-out"
           >
             See this in the 3D Lab
             <span aria-hidden="true">→</span>
@@ -48,15 +48,15 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
   switch (item.type) {
     case 'heading':
       return (
-        <h2 className="font-semibold text-lg text-[#1B3FC4] border-b border-[#D4DAE3] pb-2 mb-3 mt-5 first:mt-0">
+        <h2 className="font-semibold text-lg text-primary border-b border-border pb-2 mb-3 mt-5 first:mt-0">
           {item.text}
         </h2>
       )
 
     case 'fact':
       return (
-        <p className="text-sm text-[#1A2332] leading-relaxed">
-          <span className="mr-2 text-[#1B3FC4] select-none" aria-hidden="true">•</span>
+        <p className="text-sm text-foreground leading-relaxed">
+          <span className="mr-2 text-primary select-none" aria-hidden="true">•</span>
           {item.text}
         </p>
       )
@@ -68,7 +68,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
         const term = item.text.slice(0, dashIndex)
         const body = item.text.slice(dashIndex + 3)
         return (
-          <p className="text-sm text-[#1A2332] leading-relaxed">
+          <p className="text-sm text-foreground leading-relaxed">
             <strong className="font-semibold">{term}</strong>
             {' — '}
             {body}
@@ -76,7 +76,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
         )
       }
       return (
-        <p className="text-sm text-[#1A2332] leading-relaxed">
+        <p className="text-sm text-foreground leading-relaxed">
           {item.text}
         </p>
       )
@@ -84,37 +84,37 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
 
     case 'formula':
       return (
-        <div className="font-mono bg-[#F8F7F5] p-3 rounded-md border border-[#D4DAE3] text-sm text-[#1A2332] leading-relaxed overflow-x-auto">
+        <div className="font-mono bg-surface-light p-3 rounded-md border border-border text-sm text-foreground leading-relaxed overflow-x-auto">
           {item.text}
         </div>
       )
 
     case 'code_provision':
       return (
-        <div className="border border-[#1B3FC4]/20 bg-[#EEF2FC] rounded-md p-3">
+        <div className="border border-primary/20 bg-primary-50 rounded-md p-3">
           {item.source_ref && (
-            <span className="font-mono text-[9px] uppercase tracking-wider text-[#1B3FC4] block mb-1">
+            <span className="font-mono text-[9px] uppercase tracking-wider text-primary block mb-1">
               {item.source_ref}
             </span>
           )}
-          <p className="text-sm text-[#1A2332] leading-relaxed">{item.text}</p>
+          <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
         </div>
       )
 
     case 'detail':
       return (
-        <p className="pl-4 text-xs text-[#4A5568] leading-relaxed">
+        <p className="pl-4 text-xs text-text-secondary leading-relaxed">
           {item.text}
         </p>
       )
 
     case 'exam_tip':
       return (
-        <div className="border border-[#D4951A]/20 bg-[#FEF8ED] rounded-md p-3">
-          <span className="font-mono text-[9px] uppercase tracking-wider text-[#D4951A] block mb-1">
+        <div className="border border-warning/20 bg-warning-50 rounded-md p-3">
+          <span className="font-mono text-[9px] uppercase tracking-wider text-warning block mb-1">
             Exam Tip
           </span>
-          <p className="text-sm text-[#1A2332] leading-relaxed">{item.text}</p>
+          <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
         </div>
       )
 
@@ -128,7 +128,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
           <div>
             <Link
               href={`/dashboard/wiki/${slug}`}
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-[#1B3FC4] bg-[#EEF2FC] hover:bg-[#1B3FC4] hover:text-white px-2.5 py-1 rounded-sm transition-colors duration-150 ease-out"
+              className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary-50 hover:bg-primary hover:text-white px-2.5 py-1 rounded-sm transition-colors duration-150 ease-out"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
       }
       return (
         <div>
-          <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#4A5568] bg-[#F8F7F5] px-2.5 py-1 rounded-sm border border-[#D4DAE3]">
+          <span className="inline-flex items-center gap-1.5 text-xs font-medium text-text-secondary bg-surface-light px-2.5 py-1 rounded-sm border border-border">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
@@ -176,7 +176,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
 
     case 'warning':
       return (
-        <div className="bg-[#D64545] text-white p-4 rounded-md">
+        <div className="bg-destructive text-white p-4 rounded-md">
           <span className="font-mono text-[9px] uppercase tracking-wider block mb-1 opacity-90">
             ⚠ Warning
           </span>
@@ -187,7 +187,7 @@ const WikiItemRow = ({ item }: { item: WikiItem }) => {
     default:
       // Graceful fallback for unknown types
       return (
-        <p className="text-sm text-[#1A2332] leading-relaxed">
+        <p className="text-sm text-foreground leading-relaxed">
           {item.text}
         </p>
       )

@@ -32,19 +32,19 @@ type GatePhase = 'loading' | 'questions' | 'summary' | 'article'
 
 const OPTION_CLASSES = {
   default:
-    'bg-white border-[#D4DAE3] text-[#1A2332] hover:border-[#1B3FC4]/40 hover:shadow-sm cursor-pointer',
-  selected: 'bg-[#EEF2FC] border-[#1B3FC4] text-[#1A2332] cursor-pointer',
+    'bg-white border-border text-foreground hover:border-primary/40 hover:shadow-sm cursor-pointer',
+  selected: 'bg-primary-50 border-primary text-foreground cursor-pointer',
   correct:
-    'bg-[#EDFAF4] border-[#2D9F6F] text-[#1A2332] cursor-default',
+    'bg-success-50 border-success text-foreground cursor-default',
   incorrect:
-    'bg-[#FDF0F0] border-[#D64545] text-[#1A2332] cursor-default',
+    'bg-destructive-50 border-destructive text-foreground cursor-default',
 } as const
 
 const LETTER_CLASSES = {
-  default: 'bg-[#F8F7F5] text-[#4A5568]',
-  selected: 'bg-[#1B3FC4] text-white',
-  correct: 'bg-[#2D9F6F] text-white',
-  incorrect: 'bg-[#D64545] text-white',
+  default: 'bg-surface-light text-text-secondary',
+  selected: 'bg-primary text-white',
+  correct: 'bg-success text-white',
+  incorrect: 'bg-destructive text-white',
 } as const
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -180,7 +180,7 @@ export const PrequestionGate = ({
   if (phase === 'loading') {
     return (
       <div className="flex items-center justify-center py-20">
-        <div className="h-5 w-5 animate-spin rounded-full border-2 border-[#1B3FC4] border-t-transparent" />
+        <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
       </div>
     )
   }
@@ -207,21 +207,21 @@ export const PrequestionGate = ({
         >
           <h2
             id="prequestion-summary-heading"
-            className="text-lg font-bold text-[#1A2332]"
+            className="text-lg font-bold text-foreground"
           >
             Quick check complete
           </h2>
 
           {/* Score */}
           <div className="mt-4 flex items-baseline gap-1.5">
-            <span className="font-mono text-2xl font-bold text-[#1A2332]">
+            <span className="font-mono text-2xl font-bold text-foreground">
               {correctCount}/{totalQuestions}
             </span>
-            <span className="text-sm text-[#4A5568]">correct</span>
+            <span className="text-sm text-text-secondary">correct</span>
           </div>
 
           {/* Guidance message */}
-          <p className="mt-3 text-sm leading-relaxed text-[#4A5568]">
+          <p className="mt-3 text-sm leading-relaxed text-text-secondary">
             {missedCount > 0
               ? `Keep an eye out for the ${missedCount === 1 ? 'concept' : `${missedCount} concepts`} you missed as you read.`
               : 'Great recall — you already have a solid foundation on this topic.'}
@@ -239,7 +239,7 @@ export const PrequestionGate = ({
                   return (
                     <li
                       key={a.questionId}
-                      className="rounded-md border border-[#D4951A]/30 bg-[#FEF8ED] px-3 py-2 text-xs leading-relaxed text-[#4A5568]"
+                      className="rounded-md border border-warning/30 bg-warning-50 px-3 py-2 text-xs leading-relaxed text-text-secondary"
                     >
                       {a.result.rationale ||
                         (q ? q.text.slice(0, 100) : 'Missed concept')}
@@ -255,10 +255,10 @@ export const PrequestionGate = ({
             onClick={handleStartReading}
             className={cn(
               'mt-6 w-full rounded-sm px-6 py-2.5',
-              'bg-[#1B3FC4] text-sm font-semibold text-white',
+              'bg-primary text-sm font-semibold text-white',
               'transition-colors duration-150 ease-out',
-              'hover:bg-[#1535A8]',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/40 focus-visible:ring-offset-2',
+              'hover:bg-primary-700',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
             )}
           >
             Start Reading
@@ -297,13 +297,13 @@ export const PrequestionGate = ({
         aria-modal="true"
       >
         {/* Header */}
-        <div className="shrink-0 border-b border-[#D4DAE3] px-5 py-4">
-          <p className="text-xs font-medium text-[#4A5568]">
+        <div className="shrink-0 border-b border-border px-5 py-4">
+          <p className="text-xs font-medium text-text-secondary">
             Question {currentIndex + 1} of {totalQuestions}
           </p>
           <h2
             id="prequestion-heading"
-            className="mt-1 text-sm font-semibold text-[#1A2332]"
+            className="mt-1 text-sm font-semibold text-foreground"
           >
             Quick check — what do you already know about {topicName}?
           </h2>
@@ -312,7 +312,7 @@ export const PrequestionGate = ({
         {/* Body — scrollable on mobile */}
         <div className="flex-1 overflow-y-auto px-5 py-5">
           {/* Question stem */}
-          <p className="text-sm leading-relaxed text-[#1A2332]">
+          <p className="text-sm leading-relaxed text-foreground">
             {currentQuestion.text}
           </p>
 
@@ -373,8 +373,8 @@ export const PrequestionGate = ({
                 'mt-4 rounded-md border px-4 py-3',
                 'transition-opacity duration-200 ease-out',
                 feedback.isCorrect
-                  ? 'border-[#2D9F6F] bg-[#EDFAF4]'
-                  : 'border-[#D64545] bg-[#FDF0F0]',
+                  ? 'border-success bg-success-50'
+                  : 'border-destructive bg-destructive-50',
               )}
               role="status"
               aria-live="polite"
@@ -382,13 +382,13 @@ export const PrequestionGate = ({
               <p
                 className={cn(
                   'text-xs font-semibold',
-                  feedback.isCorrect ? 'text-[#2D9F6F]' : 'text-[#D64545]',
+                  feedback.isCorrect ? 'text-success' : 'text-destructive',
                 )}
               >
                 {feedback.isCorrect ? 'Correct' : 'Not quite'}
               </p>
               {feedback.rationale && (
-                <p className="mt-1 text-xs leading-relaxed text-[#4A5568]">
+                <p className="mt-1 text-xs leading-relaxed text-text-secondary">
                   {feedback.rationale}
                 </p>
               )}
@@ -397,11 +397,11 @@ export const PrequestionGate = ({
         </div>
 
         {/* Footer */}
-        <div className="shrink-0 border-t border-[#D4DAE3] px-5 py-4 flex items-center justify-between">
+        <div className="shrink-0 border-t border-border px-5 py-4 flex items-center justify-between">
           <button
             type="button"
             onClick={handleStartReading}
-            className="text-xs text-[#4A5568] underline decoration-[#4A5568]/40 underline-offset-2 hover:text-[#1A2332] transition-colors duration-150"
+            className="text-xs text-text-secondary underline decoration-text-secondary/40 underline-offset-2 hover:text-foreground transition-colors duration-150"
           >
             Skip to article
           </button>
@@ -412,10 +412,10 @@ export const PrequestionGate = ({
               onClick={handleNext}
               className={cn(
                 'rounded-sm px-5 py-2',
-                'bg-[#1B3FC4] text-sm font-semibold text-white',
+                'bg-primary text-sm font-semibold text-white',
                 'transition-colors duration-150 ease-out',
-                'hover:bg-[#1535A8]',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/40 focus-visible:ring-offset-2',
+                'hover:bg-primary-700',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
               )}
             >
               {currentIndex + 1 < totalQuestions ? 'Next' : 'See Results'}

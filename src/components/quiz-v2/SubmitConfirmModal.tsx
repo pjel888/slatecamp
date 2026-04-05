@@ -13,12 +13,13 @@ import {
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface SubmitConfirmModalProps {
   questions: QuestionForClient[]
-  answers: Map<string, QuizAnswerState>
+  answers: Record<string, QuizAnswerState>
   flaggedSet: Set<string>
   currentIndex: number
   onReviewUnanswered: () => void
@@ -32,10 +33,10 @@ type MiniCellState = 'answered' | 'flagged' | 'skipped' | 'unanswered'
 
 const getMiniCellState = (
   question: QuestionForClient,
-  answers: Map<string, QuizAnswerState>,
+  answers: Record<string, QuizAnswerState>,
   flaggedSet: Set<string>,
 ): MiniCellState => {
-  const answer = answers.get(question.question_id)
+  const answer = answers[question.question_id]
   if (flaggedSet.has(question.question_id)) return 'flagged'
   if (answer?.isSkipped) return 'skipped'
   if (answer?.selectedOptionId) return 'answered'
@@ -43,10 +44,10 @@ const getMiniCellState = (
 }
 
 const miniCellStyles: Record<MiniCellState, string> = {
-  answered: 'bg-[#1B3FC4] border-[#1B3FC4] text-white',
-  flagged: 'bg-[#E8853A] border-[#E8853A] text-white',
-  skipped: 'border-dashed border-[#8896A7] text-[#8896A7] bg-white',
-  unanswered: 'border-[#D4DAE3] text-[#8896A7] bg-white',
+  answered: 'bg-primary border-primary text-white',
+  flagged: 'bg-camp-orange border-camp-orange text-white',
+  skipped: 'border-dashed border-muted-foreground text-muted-foreground bg-white',
+  unanswered: 'border-border text-muted-foreground bg-white',
 }
 
 const MiniCellIcon = ({ state }: { state: MiniCellState }) => {
@@ -73,15 +74,15 @@ export const SubmitConfirmModal = ({
 
   // Counts
   const answeredCount = questions.filter(
-    (q) => answers.get(q.question_id)?.selectedOptionId,
+    (q) => answers[q.question_id]?.selectedOptionId,
   ).length
   const unansweredCount = questions.filter((q) => {
-    const a = answers.get(q.question_id)
+    const a = answers[q.question_id]
     return !a?.selectedOptionId && !a?.isSkipped
   }).length
   const flaggedCount = flaggedSet.size
   const skippedCount = questions.filter(
-    (q) => answers.get(q.question_id)?.isSkipped,
+    (q) => answers[q.question_id]?.isSkipped,
   ).length
 
   const answeredPercent = (answeredCount / questions.length) * 100
@@ -146,13 +147,13 @@ export const SubmitConfirmModal = ({
         <div className="space-y-1">
           <h2
             id="submit-confirm-title"
-            className="text-sm font-semibold text-[#1A2332]"
+            className="text-sm font-semibold text-foreground"
           >
             {isLowCompletion ? 'Are you sure?' : 'Ready to submit?'}
           </h2>
           <p
             id="submit-confirm-desc"
-            className="text-sm text-[#4A5568]"
+            className="text-sm text-text-secondary"
           >
             {isLowCompletion
               ? `You've only answered ${Math.round(answeredPercent)}% of the questions. Review your progress before submitting.`
@@ -162,11 +163,11 @@ export const SubmitConfirmModal = ({
 
         {/* Low completion warning */}
         {isLowCompletion && (
-          <div className="flex items-start gap-2 rounded-md bg-[#FFF5F5] p-3 border border-[#FEB2B2]">
-            <Warning size={18} weight="fill" className="text-[#E53E3E] shrink-0 mt-0.5" />
+          <div className="flex items-start gap-2 rounded-md bg-destructive-50 p-3 border border-destructive-300">
+            <Warning size={18} weight="fill" className="text-destructive shrink-0 mt-0.5" />
             <div className="space-y-1">
-              <p className="text-xs font-semibold text-[#C53030]">High number of unanswered questions</p>
-              <p className="text-[11px] text-[#C53030] leading-normal">
+              <p className="text-xs font-semibold text-destructive-600">High number of unanswered questions</p>
+              <p className="text-[11px] text-destructive-600 leading-normal">
                 Submitting now will negatively impact your readiness score and statistics.
               </p>
             </div>
@@ -178,26 +179,26 @@ export const SubmitConfirmModal = ({
           <StatCell
             value={answeredCount}
             label="Answered"
-            valueColor="text-[#1B3FC4]"
-            icon={<CheckCircle size={14} weight="fill" className="text-[#1B3FC4]" aria-hidden="true" />}
+            valueColor="text-primary"
+            icon={<CheckCircle size={14} weight="fill" className="text-primary" aria-hidden="true" />}
           />
           <StatCell
             value={unansweredCount}
             label="Unanswered"
-            valueColor={unansweredCount > 0 ? 'text-[#D4951A]' : 'text-[#8896A7]'}
-            icon={<Circle size={14} weight="regular" className={unansweredCount > 0 ? 'text-[#D4951A]' : 'text-[#8896A7]'} aria-hidden="true" />}
+            valueColor={unansweredCount > 0 ? 'text-warning' : 'text-muted-foreground'}
+            icon={<Circle size={14} weight="regular" className={unansweredCount > 0 ? 'text-warning' : 'text-muted-foreground'} aria-hidden="true" />}
           />
           <StatCell
             value={flaggedCount}
             label="Flagged"
-            valueColor={flaggedCount > 0 ? 'text-[#E8853A]' : 'text-[#8896A7]'}
-            icon={<Flag size={14} weight="fill" className={flaggedCount > 0 ? 'text-[#E8853A]' : 'text-[#8896A7]'} aria-hidden="true" />}
+            valueColor={flaggedCount > 0 ? 'text-camp-orange' : 'text-muted-foreground'}
+            icon={<Flag size={14} weight="fill" className={flaggedCount > 0 ? 'text-camp-orange' : 'text-muted-foreground'} aria-hidden="true" />}
           />
         </div>
 
         {/* Mini question grid */}
         <div className="space-y-2">
-          <p className="text-xs font-medium text-[#4A5568]">All questions</p>
+          <p className="text-xs font-medium text-text-secondary">All questions</p>
           <div
             role="grid"
             aria-label="Question status overview"
@@ -217,7 +218,7 @@ export const SubmitConfirmModal = ({
                     className={cn(
                       'relative flex h-7 w-7 items-center justify-center rounded-sm border text-[10px] font-medium',
                       miniCellStyles[state],
-                      isCurrent && 'ring-2 ring-[#1B3FC4] ring-offset-1',
+                      isCurrent && 'ring-2 ring-primary ring-offset-1',
                     )}
                   >
                     {idx + 1}
@@ -230,7 +231,7 @@ export const SubmitConfirmModal = ({
 
           {/* Mini legend */}
           {skippedCount > 0 && (
-            <p className="text-[10px] text-[#8896A7]">
+            <p className="text-[10px] text-muted-foreground">
               {skippedCount} question{skippedCount !== 1 ? 's' : ''} skipped —{' '}
               skipped questions will be counted as unanswered.
             </p>
@@ -291,11 +292,11 @@ const StatCell = ({
   valueColor: string
   icon: React.ReactNode
 }) => (
-  <div className="flex flex-col items-center gap-1 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] py-3">
+  <div className="flex flex-col items-center gap-1 rounded-md border border-border bg-surface-light py-3">
     <div className="flex items-center gap-1">
       {icon}
       <span className={cn('text-lg font-semibold', valueColor)}>{value}</span>
     </div>
-    <span className="text-[10px] text-[#4A5568]">{label}</span>
+    <span className="text-[10px] text-text-secondary">{label}</span>
   </div>
 )

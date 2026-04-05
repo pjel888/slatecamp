@@ -163,7 +163,7 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
           </h2>
         </div>
 
-        <ul className="divide-y divide-[#D4DAE3]">
+        <ul className="divide-y divide-border">
           {pod.members.map((member) => {
             const isCreator = member.user_id === pod.created_by
             const isCurrentUser = member.user_id === currentUserId

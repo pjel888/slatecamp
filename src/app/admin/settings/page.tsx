@@ -53,7 +53,7 @@ const AdminSettingsPage = async () => {
         {adminUsers.length === 0 ? (
           <EmptyState
             icon={<Users size={20} />}
-            message="No admin roles assigned"
+            title="No admin roles assigned"
             description="Use the form below to assign a role to a user."
           />
         ) : (

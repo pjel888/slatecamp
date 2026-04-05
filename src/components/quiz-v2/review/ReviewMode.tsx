@@ -31,12 +31,12 @@ const PaletteItem = ({ question, isCurrent, onClick }: PaletteItemProps) => (
     aria-current={isCurrent ? 'true' : undefined}
     className={cn(
       'w-8 h-8 rounded-sm text-xs font-semibold transition-colors duration-150 ease-out',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-1',
-      isCurrent && 'ring-2 ring-[#1B3FC4] ring-offset-1',
-      question.isFlagged && !isCurrent && 'bg-[#FEF8ED] text-[#D4951A] border border-[#D4951A]/40',
-      !question.isCorrect && !question.isFlagged && !isCurrent && 'bg-[#FDF0F0] text-[#4A5568]',
-      question.isCorrect && !isCurrent && 'bg-[#EDFAF4] text-[#2D9F6F]',
-      isCurrent && 'bg-[#1B3FC4] text-white',
+      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
+      isCurrent && 'ring-2 ring-primary ring-offset-1',
+      question.isFlagged && !isCurrent && 'bg-warning-50 text-warning border border-warning/40',
+      !question.isCorrect && !question.isFlagged && !isCurrent && 'bg-destructive-50 text-text-secondary',
+      question.isCorrect && !isCurrent && 'bg-success-50 text-success',
+      isCurrent && 'bg-primary text-white',
     )}
   >
     {question.position}
@@ -50,17 +50,17 @@ interface RationalePanelProps {
 }
 
 const RationalePanel = ({ question }: RationalePanelProps) => (
-  <div className="mt-4 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4">
-    <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-2">
+  <div className="mt-4 rounded-md border border-border bg-surface-light p-4">
+    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
       Explanation
     </p>
-    <p className="text-sm text-[#1A2332] leading-relaxed">{question.rationale}</p>
+    <p className="text-sm text-foreground leading-relaxed">{question.rationale}</p>
 
     {/* Wrong-answer-specific explanation */}
     {!question.isCorrect && question.wrongAnswerExplanation && (
-      <div className="mt-3 border-t border-[#D4DAE3] pt-3">
-        <p className="text-xs font-semibold text-[#4A5568] mb-1">Why your answer was incorrect</p>
-        <p className="text-sm text-[#4A5568] leading-relaxed">
+      <div className="mt-3 border-t border-border pt-3">
+        <p className="text-xs font-semibold text-text-secondary mb-1">Why your answer was incorrect</p>
+        <p className="text-sm text-text-secondary leading-relaxed">
           {question.wrongAnswerExplanation}
         </p>
       </div>
@@ -72,7 +72,7 @@ const RationalePanel = ({ question }: RationalePanelProps) => (
         href={question.wikiArticleUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150"
+        className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-primary hover:text-primary-700 transition-colors duration-150"
       >
         Read reference article
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
@@ -150,11 +150,11 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
   if (!current || !questionForColumn) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
-        <p className="text-[#4A5568] text-sm">No questions match this filter.</p>
+        <p className="text-text-secondary text-sm">No questions match this filter.</p>
         <button
           type="button"
           onClick={() => handleFilterChange('all')}
-          className="text-[#1B3FC4] text-sm font-medium hover:underline"
+          className="text-primary text-sm font-medium hover:underline"
         >
           Show all questions
         </button>
@@ -165,13 +165,13 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
   const userWasWrong = !current.isCorrect && !current.isSkipped
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F7FA]">
+    <div className="flex flex-col min-h-screen bg-surface-focused">
       {/* ── Header bar ───────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-10 bg-white border-b border-[#D4DAE3] px-4 py-3 flex items-center justify-between gap-4">
+      <header className="sticky top-0 z-10 bg-white border-b border-border px-4 py-3 flex items-center justify-between gap-4">
         <button
           type="button"
           onClick={() => router.back()}
-          className="flex items-center gap-1.5 text-sm text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150"
+          className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-foreground transition-colors duration-150"
           aria-label="Back to results"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -190,7 +190,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
         <div
           role="tablist"
           aria-label="Filter questions"
-          className="flex gap-1 bg-[#F8F7F5] rounded-sm p-0.5"
+          className="flex gap-1 bg-surface-light rounded-sm p-0.5"
         >
           {FILTER_OPTIONS.map((opt) => (
             <button
@@ -202,8 +202,8 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
               className={cn(
                 'px-3 py-1 rounded-sm text-xs font-medium transition-colors duration-150 ease-out',
                 filter === opt.value
-                  ? 'bg-white text-[#1B3FC4] shadow-sm'
-                  : 'text-[#4A5568] hover:text-[#1A2332]',
+                  ? 'bg-white text-primary shadow-sm'
+                  : 'text-text-secondary hover:text-foreground',
               )}
             >
               {opt.label}
@@ -212,13 +212,13 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
         </div>
 
         {/* Question count */}
-        <p className="text-xs text-[#8896A7] tabular-nums shrink-0">
+        <p className="text-xs text-muted-foreground tabular-nums shrink-0">
           {currentIndex + 1} / {filtered.length}
         </p>
       </header>
 
       {/* ── Question palette strip ───────────────────────────────────────────── */}
-      <div className="bg-white border-b border-[#D4DAE3] px-4 py-2.5">
+      <div className="bg-white border-b border-border px-4 py-2.5">
         <div className="flex flex-wrap gap-1.5" role="list" aria-label="Question palette">
           {filtered.map((q, i) => (
             <PaletteItem
@@ -234,7 +234,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
       {/* ── Two-column body ──────────────────────────────────────────────────── */}
       <div className="flex-1 grid grid-cols-1 md:grid-cols-2">
         {/* Left: question (read-only) */}
-        <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-[#D4DAE3] overflow-y-auto">
+        <div className="p-4 md:p-6 lg:p-8 md:border-r md:border-border overflow-y-auto">
           <QuestionColumn
             question={questionForColumn}
           />
@@ -245,7 +245,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
 
         {/* Right: annotated options */}
         <div className="p-4 md:p-6 lg:p-8 overflow-y-auto">
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-3">
             Answer Choices
           </p>
           <div
@@ -265,18 +265,18 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
       </div>
 
       {/* ── Navigation footer ────────────────────────────────────────────────── */}
-      <footer className="sticky bottom-0 bg-white border-t border-[#D4DAE3] px-4 py-3 flex items-center justify-between gap-4">
+      <footer className="sticky bottom-0 bg-white border-t border-border px-4 py-3 flex items-center justify-between gap-4">
         <button
           type="button"
           onClick={handlePrev}
           disabled={currentIndex === 0}
           className={cn(
             'flex items-center gap-1.5 px-4 py-2 rounded-sm text-sm font-medium',
-            'border border-[#D4DAE3] transition-colors duration-150 ease-out',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2',
+            'border border-border transition-colors duration-150 ease-out',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
             currentIndex === 0
-              ? 'opacity-40 cursor-not-allowed text-[#8896A7]'
-              : 'text-[#4A5568] hover:border-[#1B3FC4]/40 hover:text-[#1A2332]',
+              ? 'opacity-40 cursor-not-allowed text-muted-foreground'
+              : 'text-text-secondary hover:border-primary/40 hover:text-foreground',
           )}
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -296,10 +296,10 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
           className={cn(
             'px-3 py-1 rounded-sm text-xs font-semibold',
             current.isSkipped
-              ? 'bg-[#F8F7F5] text-[#8896A7]'
+              ? 'bg-surface-light text-muted-foreground'
               : current.isCorrect
-                ? 'bg-[#EDFAF4] text-[#2D9F6F]'
-                : 'bg-[#F8F7F5] text-[#4A5568]',
+                ? 'bg-success-50 text-success'
+                : 'bg-surface-light text-text-secondary',
           )}
         >
           {current.isSkipped ? 'Skipped' : current.isCorrect ? 'Correct' : 'Incorrect'}
@@ -311,11 +311,11 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
           disabled={currentIndex === filtered.length - 1}
           className={cn(
             'flex items-center gap-1.5 px-4 py-2 rounded-sm text-sm font-medium',
-            'border border-[#D4DAE3] transition-colors duration-150 ease-out',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2',
+            'border border-border transition-colors duration-150 ease-out',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
             currentIndex === filtered.length - 1
-              ? 'opacity-40 cursor-not-allowed text-[#8896A7]'
-              : 'text-[#4A5568] hover:border-[#1B3FC4]/40 hover:text-[#1A2332]',
+              ? 'opacity-40 cursor-not-allowed text-muted-foreground'
+              : 'text-text-secondary hover:border-primary/40 hover:text-foreground',
           )}
         >
           Next

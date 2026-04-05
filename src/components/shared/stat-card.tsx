@@ -2,15 +2,15 @@ import * as React from 'react'
 import Link from 'next/link'
 import { TrendUp, TrendDown, Minus } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
+import { Card, type CardProps } from '@/components/ui/card'
 
-interface StatCardProps {
-  eyebrow: string
-  value: number | string
-  trend?: { direction: 'up' | 'down' | 'flat'; label: string }
-  color?: string // Tailwind text color class for the number
+interface StatCardProps extends Omit<CardProps, 'content'> {
+  eyebrow?: React.ReactNode
+  value?: React.ReactNode
+  trend?: { direction: 'up' | 'down' | 'flat'; label: React.ReactNode }
+  color?: string // Tailwind text color class for the value
   href?: string // Make card clickable
-  subtitle?: string
-  className?: string
+  subtitle?: React.ReactNode
 }
 
 const trendConfig = {
@@ -28,6 +28,10 @@ const trendConfig = {
   },
 } as const
 
+/**
+ * StatCard component built on top of the UI Card primitive.
+ * Supports polymorphic slots for eyebrow, value, trend, and subtitle.
+ */
 const StatCard = ({
   eyebrow,
   value,
@@ -36,26 +40,34 @@ const StatCard = ({
   href,
   subtitle,
   className,
+  variant = 'default',
+  size = 'md',
+  children,
+  ...props
 }: StatCardProps) => {
   const TrendIcon = trend ? trendConfig[trend.direction].icon : null
 
   const content = (
     <>
-      <span
-        data-slot="stat-eyebrow"
-        className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground"
-      >
-        {eyebrow}
-      </span>
-      <span
-        data-slot="stat-value"
-        className={cn(
-          'font-mono text-2xl font-bold tabular-nums mt-1',
-          color ?? 'text-foreground'
-        )}
-      >
-        {value}
-      </span>
+      {eyebrow && (
+        <span
+          data-slot="stat-eyebrow"
+          className="font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground"
+        >
+          {eyebrow}
+        </span>
+      )}
+      {value !== undefined && (
+        <span
+          data-slot="stat-value"
+          className={cn(
+            'font-mono text-2xl font-bold tabular-nums mt-1',
+            color ?? 'text-foreground'
+          )}
+        >
+          {value}
+        </span>
+      )}
       {trend && TrendIcon && (
         <span
           data-slot="stat-trend"
@@ -76,29 +88,56 @@ const StatCard = ({
           {subtitle}
         </span>
       )}
+      {children}
     </>
-  )
-
-  const containerClasses = cn(
-    'rounded-md border border-border bg-card p-4 flex flex-col',
-    href && 'hover:border-primary/30 hover:shadow-sm transition-all cursor-pointer',
-    className
   )
 
   if (href) {
     return (
-      <Link href={href} data-slot="stat-card" className={containerClasses}>
-        {content}
+      <Link href={href} passHref legacyBehavior>
+        <Card
+          asChild
+          variant="interactive"
+          size={size}
+          className={className}
+          {...props}
+        >
+          <a data-slot="stat-card">
+            {content}
+          </a>
+        </Card>
       </Link>
     )
   }
 
   return (
-    <div data-slot="stat-card" className={containerClasses}>
+    <Card
+      variant={variant}
+      size={size}
+      className={className}
+      {...props}
+    >
       {content}
-    </div>
+    </Card>
   )
 }
+
+/**
+ * Export sub-components for compound pattern if needed.
+ */
+export const StatCardEyebrow = ({ className, ...props }: React.ComponentProps<'span'>) => (
+  <span
+    className={cn("font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground", className)}
+    {...props}
+  />
+)
+
+export const StatCardValue = ({ className, ...props }: React.ComponentProps<'span'>) => (
+  <span
+    className={cn("font-mono text-2xl font-bold tabular-nums mt-1 text-foreground", className)}
+    {...props}
+  />
+)
 
 export { StatCard }
 export type { StatCardProps }

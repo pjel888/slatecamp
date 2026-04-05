@@ -110,7 +110,7 @@ export const ScenarioResults = ({ scenario, answers }: ScenarioResultsProps) => 
       <div className='flex justify-end'>
         <Link
           href='/dashboard/area-c/design-quiz'
-          className='rounded-sm bg-[#1B3FC4] px-5 py-2 text-xs font-medium text-white hover:bg-[#1535A8] transition-colors duration-150 ease-out'
+          className='rounded-sm bg-[#1B3FC4] px-5 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out'
         >
           Try Another Scenario →
         </Link>

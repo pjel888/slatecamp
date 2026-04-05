@@ -587,7 +587,7 @@ export function BOMPanel() {
           </div>
         ) : (
           <>
-            <div className="divide-y divide-[#D4DAE3]">
+            <div className="divide-y divide-border">
               {bomRows.map((row, i) => {
                 // Section header row
                 if (row.layerCode === 'LABOR_HEADER') {

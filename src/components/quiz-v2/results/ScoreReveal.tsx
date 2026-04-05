@@ -77,34 +77,34 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
 
   if (phase === 'loading') {
     return (
-      <div className="bg-white rounded-md border border-[#D4DAE3] p-8 text-center">
+      <div className="bg-white rounded-md border border-border p-8 text-center">
         <div className="flex items-center justify-center gap-2">
-          <div className="h-4 w-4 rounded-full border-2 border-[#D4DAE3] border-t-[#1B3FC4] animate-spin" />
-          <p className="text-sm text-[#8896A7]">Calculating results...</p>
+          <div className="h-4 w-4 rounded-full border-2 border-border border-t-primary animate-spin" />
+          <p className="text-sm text-muted-foreground">Calculating results...</p>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="bg-white rounded-md border border-[#D4DAE3] p-8 text-center">
+    <div className="bg-white rounded-md border border-border p-8 text-center">
       {/* Eyebrow */}
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7]">
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
         Session Complete
       </p>
 
       {/* Animated score */}
       <p
-        className="mt-4 text-[64px] font-bold leading-none tabular-nums text-[#1A2332]"
+        className="mt-4 text-[64px] font-bold leading-none tabular-nums text-foreground"
         aria-live="polite"
         aria-label={`${percent}%`}
       >
         {displayed}
-        <span className="text-[40px] font-semibold text-[#4A5568]">%</span>
+        <span className="text-[40px] font-semibold text-text-secondary">%</span>
       </p>
 
       {/* Fraction */}
-      <p className="mt-1 text-sm text-[#8896A7]">
+      <p className="mt-1 text-sm text-muted-foreground">
         {correct} of {total} correct
       </p>
 
@@ -123,7 +123,7 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
         <p
           className={cn(
             'mt-2 text-sm font-medium',
-            isPositiveDelta ? 'text-[#2D9F6F]' : 'text-[#4A5568]',
+            isPositiveDelta ? 'text-success' : 'text-text-secondary',
           )}
         >
           {isPositiveDelta ? '▲' : '▼'}{' '}

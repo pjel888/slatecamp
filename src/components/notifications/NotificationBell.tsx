@@ -11,6 +11,8 @@ import { useNotificationStore } from '@/stores/useNotificationStore'
 import { NotificationItem } from '@/components/notifications/NotificationItem'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import Link from 'next/link'
+import { createClient } from '@/lib/supabase/client'
+import type { Notification } from '@/types/notifications'
 
 interface NotificationBellProps {
   userId?: string
@@ -24,14 +26,41 @@ export const NotificationBell = ({ userId }: NotificationBellProps) => {
     isLoading,
     setPopoverOpen,
     markAllAsRead,
-    startRealtime,
+    fetchUnreadCount,
   } = useNotificationStore()
 
   useEffect(() => {
     if (!userId) return
-    const cleanup = startRealtime(userId)
-    return cleanup
-  }, [userId, startRealtime])
+
+    // Initial fetch
+    fetchUnreadCount()
+
+    // Subscribe to new notifications via Supabase Realtime
+    const supabase = createClient()
+    const channel = supabase
+      .channel(`notifications:${userId}`)
+      .on(
+        'postgres_changes',
+        {
+          event: 'INSERT',
+          schema: 'public',
+          table: 'notifications',
+          filter: `user_id=eq.${userId}`,
+        },
+        (payload) => {
+          const newNotification = payload.new as Notification
+          useNotificationStore.setState((s) => ({
+            unreadCount: s.unreadCount + 1,
+            recentNotifications: [newNotification, ...s.recentNotifications].slice(0, 5),
+          }))
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
+  }, [userId, fetchUnreadCount])
 
   const displayCount = unreadCount > 9 ? '9+' : unreadCount
 
@@ -46,7 +75,7 @@ export const NotificationBell = ({ userId }: NotificationBellProps) => {
         >
           <SCIcon icon={Bell} size="base" />
           {unreadCount > 0 && (
-            <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 flex items-center justify-center rounded-full bg-[#1B3FC4] text-white text-[10px] font-semibold leading-none">
+            <span className="absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 flex items-center justify-center rounded-full bg-primary text-white text-[10px] font-semibold leading-none">
               {displayCount}
             </span>
           )}

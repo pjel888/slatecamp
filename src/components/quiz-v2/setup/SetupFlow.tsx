@@ -181,7 +181,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
         <button
           type="button"
           onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-[13px] text-[#4A5568] hover:text-[#1B3FC4] transition-colors duration-150 ease-out mb-6 focus-visible:outline-none focus-visible:underline"
+          className="inline-flex items-center gap-1.5 text-[13px] text-text-secondary hover:text-primary transition-colors duration-150 ease-out mb-6 focus-visible:outline-none focus-visible:underline"
           aria-label="Go back"
         >
           <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
@@ -191,7 +191,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
 
       {/* Mode heading */}
       <div className="mb-6">
-        <h1 className="text-[22px] font-semibold text-[#1A2332]">{MODE_LABELS[mode]}</h1>
+        <h1 className="text-[22px] font-semibold text-foreground">{MODE_LABELS[mode]}</h1>
         {slideCount > 1 && (
           <div className="flex items-center gap-1.5 mt-2" aria-label={`Step ${slideIndex + 1} of ${slideCount}`}>
             {Array.from({ length: slideCount }).map((_, i) => (

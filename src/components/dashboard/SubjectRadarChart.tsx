@@ -10,6 +10,7 @@ import {
   Tooltip,
 } from 'recharts'
 import { ChartBar } from '@phosphor-icons/react/dist/ssr'
+import Link from 'next/link'
 import { EmptyState } from '@/components/shared/empty-state'
 import type { SubjectMastery } from '@/types/dashboard'
 
@@ -58,9 +59,16 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
         {!hasData ? (
           <EmptyState
             icon={<ChartBar size={20} />}
-            message="Mastery data builds as you practice"
+            title="Mastery data builds as you practice"
             description="Complete a quiz session and your subject coverage will appear here."
-            action={{ label: "Start a quiz", href: "/dashboard/testing" }}
+            action={
+              <Link
+                href="/dashboard/testing"
+                className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                Start a quiz
+              </Link>
+            }
           />
         ) : (
           <div className="w-full h-[260px]">

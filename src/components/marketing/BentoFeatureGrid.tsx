@@ -63,7 +63,7 @@ const MasteryBars = () => (
                 ? 'bg-emerald'
                 : s.tone === 'warn'
                   ? 'bg-warning'
-                  : 'bg-[#e2e2e6]'
+                  : 'bg-border'
             }`}
             style={{ width: `${s.pct}%` }}
           />
@@ -137,7 +137,7 @@ export const BentoFeatureGrid = () => (
       <div className='grid grid-cols-1 gap-[10px] md:grid-cols-3 md:grid-rows-2'>
 
         {/* REVIEW MODE — Camp Amber + light noise */}
-        <div className='landing-reveal landing-delay-1 relative overflow-hidden rounded-md bg-camp-amber p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 relative overflow-hidden rounded-md bg-camp-amber p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <div className='flex items-center justify-between'>
@@ -146,7 +146,7 @@ export const BentoFeatureGrid = () => (
                 </span>
                 <Starburst className='h-3 w-3 text-camp-black' />
               </div>
-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-[#111]'>
+              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-camp-black'>
                 Active Recall,
                 <br />
                 Zero Pressure
@@ -169,22 +169,22 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* STAT: 1 in 3 — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-2 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
           <Starburst className='h-3 w-3 text-camp-amber' />
           <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] text-camp-red'>
             1 in 3
           </div>
-          <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-[#555]'>
+          <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-text-2'>
             ALE examinees don&apos;t pass in a given sitting. Most didn&apos;t know
             they were at risk.
           </p>
-          <p className='mt-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-[#aaa]'>
+          <p className='mt-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-marketing-subtle'>
             Source: PRC official results, 2024–2025
           </p>
         </div>
 
         {/* ANALYTICS — Camp Cobalt + heavy noise */}
-        <div className='landing-reveal landing-delay-3 relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-300 relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <div className='flex items-center justify-between'>
@@ -226,7 +226,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* QUOTE — Camp Red + noise */}
-        <div className='landing-reveal landing-delay-4 relative overflow-hidden rounded-md bg-camp-red p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 relative overflow-hidden rounded-md bg-camp-red p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
           <div className='relative z-10 flex h-full flex-col justify-between'>
             <div>
               <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/45'>
@@ -251,20 +251,20 @@ export const BentoFeatureGrid = () => (
       <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
 
         {/* 3D LAB — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-5 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
-              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight text-[#111]'>
+              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight text-camp-black'>
                 3D Lab
               </h3>
               <Starburst className='h-3 w-3 text-camp-amber' />
             </div>
-            <p className='mt-7 text-[13px] italic leading-[1.4] text-[#555]'>
+            <p className='mt-7 text-[13px] italic leading-[1.4] text-text-2'>
               Visual learning,
               <br />
               built different.
             </p>
-            <p className='mt-2 text-[12px] leading-[1.5] text-[#888]'>
+            <p className='mt-2 text-[12px] leading-[1.5] text-marketing-tertiary'>
               WebGL-powered models. Drag FAR — model responds in real time.
             </p>
             <div className='mt-3.5 flex items-center justify-between'>
@@ -275,7 +275,7 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* SESSIONS — Camp Green + noise */}
-        <div className='landing-reveal landing-delay-5 relative overflow-hidden rounded-md bg-camp-green p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 relative overflow-hidden rounded-md bg-camp-green p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <div className='flex items-center justify-between'>
               <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/40'>
@@ -299,17 +299,17 @@ export const BentoFeatureGrid = () => (
         </div>
 
         {/* AI — Camp Cream (no noise) */}
-        <div className='landing-reveal landing-delay-6 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
-            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-[#aaa]'>
+            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-marketing-subtle'>
               [ Bounded Intelligence ]
             </span>
-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-[#111]'>
+            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-camp-black'>
               AI That Cites
               <br />
               Its Sources
             </h3>
-            <p className='mt-2 text-[13px] leading-relaxed text-[#555]'>
+            <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
               Tethered to our verified database. Temperature 0.0. Every response
               links to its exact source.
             </p>
@@ -321,7 +321,7 @@ export const BentoFeatureGrid = () => (
       </div>
 
       {/* ── Full-width Engine card — Camp Cobalt + noise ── */}
-      <div className='landing-reveal mt-[10px] relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise md:p-8'>
+      <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 mt-[10px] relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise md:p-8'>
         <div className='relative z-10 grid grid-cols-1 items-center gap-7 md:grid-cols-2'>
           <div>
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-camp-amber'>

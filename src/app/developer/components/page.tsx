@@ -251,8 +251,8 @@ const UIPrimitivesTab = () => (
         props={[
           { name: 'variant', type: "'default' | 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'purple' | 'orange' | 'outline' | 'secondary'", default: "'default'" },
           { name: 'size', type: "'xs' | 'sm' | 'md' | 'lg'", default: "'sm'" },
-          { name: 'pill', type: 'boolean', default: 'false', description: 'Fully rounded (rounded-full)' },
-          { name: 'dot', type: 'boolean', default: 'false', description: 'Renders a small color dot before text' },
+          { name: 'shape', type: "'default' | 'pill'", default: "'default'", description: 'Corner radius treatment for the badge container' },
+          { name: 'decoration', type: "'none' | 'dot'", default: "'none'", description: 'Optional leading dot decoration' },
           { name: 'icon', type: 'React.ReactNode', default: '—' },
           { name: 'dismissible', type: 'boolean', default: 'false' },
           { name: 'onDismiss', type: '() => void', default: '—' },
@@ -262,8 +262,8 @@ const UIPrimitivesTab = () => (
         language="tsx"
         code={`import { Badge, StatusBadge, DifficultyBadge, SessionModeBadge, MasteryBadge, VerificationBadge } from '@/components/ui/badge'
 
-<Badge variant="success" size="sm" dot>Published</Badge>
-<Badge variant="primary" pill size="xs">New</Badge>
+<Badge variant="success" size="sm" decoration="dot">Published</Badge>
+<Badge variant="primary" shape="pill" size="xs">New</Badge>
 <StatusBadge status="published" />
 <DifficultyBadge level="intermediate" />
 <SessionModeBadge mode="camp" />
@@ -392,7 +392,7 @@ const UIPrimitivesTab = () => (
       <SimpleRow name="Textarea" path="src/components/ui/textarea.tsx" description="Multi-line text input. Matches Input sizing tokens. Supports auto-resize variant." />
       <SimpleRow name="Toast / Toaster" path="src/components/ui/toast.tsx" description="Notification toasts. Import useToast hook from @/lib/hooks/use-toast. Toast displays; Toaster is the global renderer." />
       <SimpleRow name="CloseButton" path="src/components/ui/close-button.tsx" description="Semantic close/dismiss button. Pre-styled ghost icon button with X icon and sr-only label." />
-      <SimpleRow name="IconButton" path="src/components/ui/icon-button.tsx" description="Button variant for icon-only actions. Enforces accessible aria-label prop at the type level." />
+      <SimpleRow name="Button + Tooltip" path="src/components/ui/button.tsx" description="Compose icon-only actions with Button size='icon-*' and wrap with Tooltip where needed." />
       <SimpleRow name="ModeButton" path="src/components/ui/mode-button.tsx" description="Study mode selector button (Camp, Storm, Proof, etc.). Renders mode icon + label in a selectable tile format." />
       <SimpleRow name="FormField" path="src/components/ui/form-field.tsx" description="Label + input + error message layout wrapper. Passes aria-describedby and aria-invalid to child input automatically." />
       <SimpleRow name="InputGroup" path="src/components/ui/input-group.tsx" description="Compound input with leading/trailing addons (icons, text, buttons). Manages border-radius merging." />

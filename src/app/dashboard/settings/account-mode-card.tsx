@@ -41,7 +41,7 @@ export const AccountModeCard = ({ currentMode }: AccountModeCardProps) => {
       </div>
 
       {/* Modes */}
-      <div className="divide-y divide-[#D4DAE3]">
+      <div className="divide-y divide-border">
         {(['review_mode', 'professional_mode'] as AccountMode[]).map((mode) => {
           const isActive = currentMode === mode
           return (
@@ -79,7 +79,7 @@ export const AccountModeCard = ({ currentMode }: AccountModeCardProps) => {
           type="button"
           onClick={handleSwitch}
           disabled={isSwitching}
-          className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:opacity-60"
+          className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
         >
           {isSwitching
             ? 'Switching…'

@@ -23,7 +23,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
     <div className="flex h-16 w-12 shrink-0 items-center justify-center">
       <SlateCampLogomark
         size={32}
-        className="text-camp-cobalt dark:text-[#4F6AE8]"
+        className="text-camp-cobalt dark:text-primary"
       />
     </div>
 
@@ -37,7 +37,7 @@ export const SidebarHeader = ({ expanded }: SidebarHeaderProps) => (
         expanded && 'ml-2.5',
       )}
     >
-      <span className="text-camp-cobalt dark:text-[#4F6AE8]">SlateCamp</span>
+      <span className="text-camp-cobalt dark:text-primary">SlateCamp</span>
     </div>
   </div>
 )

@@ -17,7 +17,7 @@ const AdminRoleBadge = ({ role }: AdminRoleBadgeProps) => {
     <Badge
       variant={config.variant}
       size="xs"
-      pill
+      shape="pill"
       className="font-[family-name:var(--font-dm-mono)]"
     >
       {config.label}

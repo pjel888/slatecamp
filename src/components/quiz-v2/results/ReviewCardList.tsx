@@ -64,11 +64,11 @@ export const ReviewCardList = ({
       <div className="mt-4 flex flex-col gap-3" role="list" aria-label="Question review cards">
         {filtered.length === 0 ? (
           <div className="text-center py-8">
-            <p className="text-sm text-[#4A5568]">No questions match this filter.</p>
+            <p className="text-sm text-text-secondary">No questions match this filter.</p>
             <button
               type="button"
               onClick={() => setActiveFilter('all')}
-              className="mt-2 text-sm font-medium text-[#1B3FC4] hover:underline"
+              className="mt-2 text-sm font-medium text-primary hover:underline"
             >
               Show all questions
             </button>

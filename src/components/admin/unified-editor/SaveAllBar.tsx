@@ -453,7 +453,7 @@ export const SaveAllBar = ({
             <button
               type="button"
               onClick={handleConflictSaveAnyway}
-              className="rounded-sm bg-destructive px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[#b33a3a]"
+              className="rounded-sm bg-destructive px-3 py-1 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-[var(--destructive-strong)]"
             >
               Save anyway
             </button>

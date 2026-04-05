@@ -46,7 +46,7 @@ export const ErrorPatternCard = ({ data }: Props) => {
         </CardHeader>
         <CardContent className="p-2 pt-0">
           <div className="h-[120px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-[#4A5568]">
+            <p className="text-xs text-center leading-snug max-w-[200px] text-text-secondary">
               Complete a few practice sessions to see your error pattern breakdown.
             </p>
           </div>
@@ -98,7 +98,7 @@ export const ErrorPatternCard = ({ data }: Props) => {
                     className="inline-block w-2 h-2 rounded-full shrink-0"
                     style={{ backgroundColor: CATEGORY_COLORS[category] ?? '#D4DAE3' }}
                   />
-                  <span className="text-[10px] text-[#4A5568]">
+                  <span className="text-[10px] text-text-secondary">
                     {CATEGORY_LABELS[category] ?? category} {pct}%
                   </span>
                 </div>
@@ -110,17 +110,17 @@ export const ErrorPatternCard = ({ data }: Props) => {
         {/* Frequently confused topics */}
         {conceptConfusionTopics.length > 0 && (
           <div className="space-y-1">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-[#8896A7]">
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
               Topics that need attention
             </p>
             <ul className="space-y-0.5">
               {conceptConfusionTopics.map((topic) => (
                 <li
                   key={topic.topicId}
-                  className="flex items-center justify-between text-xs text-[#4A5568]"
+                  className="flex items-center justify-between text-xs text-text-secondary"
                 >
                   <span className="truncate mr-2">{topic.topicName}</span>
-                  <span className="shrink-0 text-[10px] text-[#8896A7]">
+                  <span className="shrink-0 text-[10px] text-muted-foreground">
                     {topic.errorCount} {topic.errorCount === 1 ? 'time' : 'times'}
                   </span>
                 </li>

@@ -45,14 +45,14 @@ export const BodyDimensionExplorer = () => {
   const active = dims[activeIdx]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[#E8EEFF] border-b border-[#E0DED8] dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-[#3A3835]">
+      <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div>
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
             Interactive · Anthropometric Data Explorer
           </div>
-          <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
+          <div className="text-xs text-ink-muted mt-0.5 dark:text-wiki-muted">
             Tap a dimension to see percentile values and design implications
           </div>
         </div>
@@ -63,7 +63,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'male'
                 ? 'bg-camp-cobalt text-white'
-                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-[#252420]'
+                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-wiki-surface-dark'
             }`}
           >
             Male
@@ -74,7 +74,7 @@ export const BodyDimensionExplorer = () => {
             className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-all duration-150 font-[var(--font-dm-mono)] uppercase tracking-[0.06em] ${
               sex === 'female'
                 ? 'bg-camp-cobalt text-white'
-                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-[#252420]'
+                : 'bg-muted text-ink-muted hover:text-camp-cobalt dark:bg-wiki-surface-dark'
             }`}
           >
             Female
@@ -84,22 +84,22 @@ export const BodyDimensionExplorer = () => {
 
       <div className="flex flex-col sm:flex-row">
         {/* Dimension list */}
-        <div className="flex-1 border-r border-[#ECEAE4] dark:border-[#3A3835]">
+        <div className="flex-1 border-r border-wiki-divider dark:border-wiki-invert-divider">
           {dims.map((d, i) => (
             <button
               key={d.id}
               type="button"
               onClick={() => setActiveIdx(i)}
-              className={`w-full text-left px-5 py-2.5 border-b border-[#ECEAE4] transition-all duration-150 dark:border-[#3A3835] ${
+              className={`w-full text-left px-5 py-2.5 border-b border-wiki-divider transition-all duration-150 dark:border-wiki-invert-divider ${
                 i === activeIdx
                   ? 'bg-cobalt-light border-l-2 border-l-camp-cobalt dark:bg-camp-cobalt/10'
-                  : 'hover:bg-muted border-l-2 border-l-transparent dark:hover:bg-[#252420]'
+                  : 'hover:bg-muted border-l-2 border-l-transparent dark:hover:bg-wiki-surface-dark'
               }`}
             >
-              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-camp-cobalt' : 'text-wiki-ink dark:text-[#E2E0D8]'}`}>
+              <div className={`text-[13px] font-medium ${i === activeIdx ? 'text-camp-cobalt' : 'text-wiki-ink dark:text-wiki-invert-heading'}`}>
                 {d.label}
               </div>
-              <div className="font-[var(--font-dm-mono)] text-[11px] text-[#A8A8A5] mt-0.5">
+              <div className="font-[var(--font-dm-mono)] text-[11px] text-wiki-muted mt-0.5">
                 {d.p5} – {d.p95} mm
               </div>
             </button>
@@ -108,7 +108,7 @@ export const BodyDimensionExplorer = () => {
 
         {/* Detail panel */}
         <div className="w-full sm:w-[320px] p-5">
-          <div className="text-[15px] font-semibold text-wiki-ink mb-3 dark:text-[#E2E0D8]">
+          <div className="text-[15px] font-semibold text-wiki-ink mb-3 dark:text-wiki-invert-heading">
             {active.label}
           </div>
 
@@ -119,20 +119,20 @@ export const BodyDimensionExplorer = () => {
               { label: '50th %ile', val: active.p50, desc: 'Average' },
               { label: '95th %ile', val: active.p95, desc: 'Large' },
             ].map((p) => (
-              <div key={p.label} className="bg-muted rounded-lg p-3 text-center dark:bg-[#252420]">
-                <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-[#A8A8A5] mb-1">
+              <div key={p.label} className="bg-muted rounded-lg p-3 text-center dark:bg-wiki-surface-dark">
+                <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.08em] text-wiki-muted mb-1">
                   {p.label}
                 </div>
                 <div className="font-[var(--font-dm-mono)] text-lg font-medium text-camp-cobalt">
                   {p.val}
                 </div>
-                <div className="text-[11px] text-[#A8A8A5] mt-0.5">mm</div>
+                <div className="text-[11px] text-wiki-muted mt-0.5">mm</div>
               </div>
             ))}
           </div>
 
           {/* Design note */}
-          <div className="bg-cobalt-light rounded-lg p-3.5 text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-camp-cobalt/10 dark:text-[#C8C6C0]">
+          <div className="bg-cobalt-light rounded-lg p-3.5 text-[13px] text-wiki-body leading-relaxed dark:bg-camp-cobalt/10 dark:text-wiki-invert-body">
             <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-camp-cobalt mb-1.5 font-medium">
               Design implication
             </div>

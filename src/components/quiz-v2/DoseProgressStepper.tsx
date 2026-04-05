@@ -45,14 +45,14 @@ const TransitionCard = ({
       role="status"
       aria-live="polite"
     >
-      <CheckCircle size={32} weight="fill" style={{ color: '#2D9F6F' }} className="mx-auto" />
-      <p className="mt-3 text-sm font-medium" style={{ color: '#1A2332' }}>
+      <CheckCircle size={32} weight="fill" style={{ color: 'var(--success)' }} className="mx-auto" />
+      <p className="mt-3 text-sm font-medium" style={{ color: 'var(--foreground)' }}>
         Activity complete
       </p>
-      <p className="mt-1 text-xs" style={{ color: '#4A5568' }}>
+      <p className="mt-1 text-xs" style={{ color: 'var(--text-secondary)' }}>
         Up next: {label} ({nextIndex + 1} of {total}) &middot; ~{nextActivity.minutes} min
       </p>
-      <p className="mt-1 text-xs" style={{ color: '#8896A7' }}>
+      <p className="mt-1 text-xs" style={{ color: 'var(--muted-foreground)' }}>
         {nextActivity.reason}
       </p>
       <Link
@@ -64,7 +64,7 @@ const TransitionCard = ({
           'transition-colors duration-150 ease-out hover:opacity-90',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1',
         ].join(' ')}
-        style={{ backgroundColor: '#1B3FC4' }}
+        style={{ backgroundColor: 'var(--primary)' }}
       >
         Continue
         <ArrowRight size={14} weight="bold" />
@@ -126,13 +126,13 @@ export const DoseProgressStepper = ({
                     ? 'text-white'
                     : isCurrent
                       ? 'text-white'
-                      : 'border border-border text-[#8896A7]',
+                      : 'border border-border text-muted-foreground',
                 ].join(' ')}
                 style={{
                   backgroundColor: isCompleted
-                    ? '#2D9F6F' // Emerald
+                    ? 'var(--success)' // Emerald
                     : isCurrent
-                      ? '#1B3FC4' // Cobalt
+                      ? 'var(--primary)' // Cobalt
                       : 'transparent',
                 }}
                 aria-hidden="true"
@@ -147,10 +147,10 @@ export const DoseProgressStepper = ({
                 className="text-[10px] font-medium whitespace-nowrap"
                 style={{
                   color: isCompleted
-                    ? '#2D9F6F'
+                    ? 'var(--success)'
                     : isCurrent
-                      ? '#1B3FC4'
-                      : '#8896A7',
+                      ? 'var(--primary)'
+                      : 'var(--muted-foreground)',
                 }}
               >
                 {label}
@@ -162,7 +162,7 @@ export const DoseProgressStepper = ({
               <div
                 className="h-px w-6 sm:w-10"
                 style={{
-                  backgroundColor: i < currentIndex ? '#2D9F6F' : '#D4DAE3',
+                  backgroundColor: i < currentIndex ? 'var(--success)' : 'var(--border)',
                 }}
                 aria-hidden="true"
               />

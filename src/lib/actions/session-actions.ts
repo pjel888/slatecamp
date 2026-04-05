@@ -1,5 +1,6 @@
-
+import { unstable_cache } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
+import { getDashboardTag, getUserSessionsTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   ActivityFeedItem,
@@ -27,53 +28,33 @@ export const buildInProgressSession = (inProgressData: any | null): InProgressSe
 
 // ── Recent sessions with subject lookup ─────────────────────────────────────
 
-export const buildRecentSessions = async (
-  supabase: SupabaseClient,
+export const transformRecentSessions = (
   recentSessionsData: any[] | null,
-): Promise<ActivityFeedItem[]> => {
+  subjectNamesData: any[] | null,
+  interactionStatsData: any[] | null,
+): ActivityFeedItem[] => {
   const recentRaw = (recentSessionsData ?? []) as Array<{
     session_id: string
     test_mode: string
     status: string
     question_ids: string[]
     subject_ids: string[]
-    completed_at: string | null
     updated_at: string
   }>
 
-  // Get subject names for session subject_ids
-  const allSubjectIds = [...new Set(recentRaw.flatMap(r => r.subject_ids ?? []))]
-  let subjectNameMap = new Map<string, string>()
-  if (allSubjectIds.length > 0) {
-    const { data: subjects } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, name')
-      .in('node_id', allSubjectIds)
-    if (subjects) {
-      subjectNameMap = new Map(subjects.map((s: { node_id: string; name: string }) => [s.node_id, s.name]))
+  const subjectNameMap = new Map((subjectNamesData ?? []).map((s: any) => [s.node_id, s.name]))
+
+  const sessionScoreMap = new Map<string, number>()
+  if (interactionStatsData) {
+    const grouped = new Map<string, { correct: number; total: number }>()
+    for (const i of interactionStatsData as Array<{ session_id: string; is_correct: boolean }>) {
+      const g = grouped.get(i.session_id) ?? { correct: 0, total: 0 }
+      g.total++
+      if (i.is_correct) g.correct++
+      grouped.set(i.session_id, g)
     }
-  }
-
-  // Get scores for recent sessions from user_interactions
-  const sessionIds = recentRaw.map(r => r.session_id)
-  let sessionScoreMap = new Map<string, number>()
-  if (sessionIds.length > 0) {
-    const { data: interactions } = await supabase
-      .from('user_interactions')
-      .select('session_id, is_correct')
-      .in('session_id', sessionIds)
-
-    if (interactions) {
-      const grouped = new Map<string, { correct: number; total: number }>()
-      for (const i of interactions as Array<{ session_id: string; is_correct: boolean }>) {
-        const g = grouped.get(i.session_id) ?? { correct: 0, total: 0 }
-        g.total++
-        if (i.is_correct) g.correct++
-        grouped.set(i.session_id, g)
-      }
-      for (const [sid, g] of grouped) {
-        sessionScoreMap.set(sid, g.total > 0 ? Math.round((g.correct / g.total) * 100) : 0)
-      }
+    for (const [sid, g] of grouped) {
+      sessionScoreMap.set(sid, g.total > 0 ? Math.round((g.correct / g.total) * 100) : 0)
     }
   }
 
@@ -92,6 +73,16 @@ export const buildRecentSessions = async (
       updatedAt: row.updated_at,
     }
   })
+}
+
+interface SubjectNameRow {
+  node_id: string
+  name: string
+}
+
+interface InteractionStatRow {
+  session_id: string
+  is_correct: boolean
 }
 
 // ── Action builder ──────────────────────────────────────────────────────────
@@ -147,17 +138,64 @@ export const getActivityFeedData = async () => {
   const { data: { user } } = await getUser()
   if (!user) return []
 
-  const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+  return unstable_cache(
+    async () => {
+      const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
 
-  const { data: recentSessionsResult } = await supabase
-    .from('quiz_sessions')
-    .select('session_id, test_mode, status, question_ids, subject_ids, completed_at, updated_at')
-    .eq('user_id', user.id)
-    .in('status', ['completed', 'abandoned'])
-    .gte('updated_at', sevenDaysAgo)
-    .order('updated_at', { ascending: false })
-    .limit(5)
+      const { data: recentSessionsResult } = await supabase
+        .from('quiz_sessions')
+        .select('session_id, test_mode, status, question_ids, subject_ids, updated_at')
+        .eq('user_id', user.id)
+        .in('status', ['completed', 'abandoned'])
+        .gte('updated_at', sevenDaysAgo)
+        .order('updated_at', { ascending: false })
+        .limit(5)
 
-  return buildRecentSessions(supabase, recentSessionsResult)
+      return buildRecentSessions(supabase, recentSessionsResult)
+    },
+    ['activity-feed', user.id],
+    {
+      revalidate: false,
+      tags: [getDashboardTag(user.id), getUserSessionsTag(user.id)],
+    },
+  )()
 }
 
+/** Async wrapper for recent sessions (used by other server actions) */
+export const buildRecentSessions = async (
+  supabase: SupabaseClient,
+  recentSessionsData: any[] | null,
+): Promise<ActivityFeedItem[]> => {
+  const recentRaw = (recentSessionsData ?? []) as Array<{
+    session_id: string
+    test_mode: string
+    status: string
+    question_ids: string[]
+    subject_ids: string[]
+    updated_at: string
+  }>
+
+  // Get subject names for session subject_ids
+  const allSubjectIds = [...new Set(recentRaw.flatMap(r => r.subject_ids ?? []))]
+  const sessionIds = recentRaw.map(r => r.session_id)
+  const [subjectNamesResponse, interactionStatsResponse] = await Promise.all([
+    allSubjectIds.length > 0
+      ? supabase
+          .from('taxonomy_tree')
+          .select('node_id, name')
+          .in('node_id', allSubjectIds)
+      : Promise.resolve({ data: [] as SubjectNameRow[] }),
+    sessionIds.length > 0
+      ? supabase
+          .from('user_interactions')
+          .select('session_id, is_correct')
+          .in('session_id', sessionIds)
+      : Promise.resolve({ data: [] as InteractionStatRow[] }),
+  ])
+
+  return transformRecentSessions(
+    recentSessionsData,
+    subjectNamesResponse.data ?? [],
+    interactionStatsResponse.data ?? [],
+  )
+}

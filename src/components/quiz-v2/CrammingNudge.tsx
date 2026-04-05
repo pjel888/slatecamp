@@ -32,7 +32,7 @@ export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
   return (
     <div
       className={cn(
-        'flex items-start gap-2 rounded-md border border-[#D4951A]/20 bg-[#FEF8ED] px-3 py-2',
+        'flex items-start gap-2 rounded-md border border-warning/20 bg-warning-50 px-3 py-2',
         !prefersReducedMotion && 'animate-in fade-in slide-in-from-top-1 duration-200',
         className,
       )}
@@ -42,14 +42,14 @@ export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
       <SCIcon
         icon={Info}
         size="sm"
-        className="text-[#D4951A] mt-0.5 shrink-0"
+        className="text-warning mt-0.5 shrink-0"
       />
 
       <div className="flex-1 min-w-0">
-        <p className="text-xs font-medium text-[#D4951A] leading-snug">
+        <p className="text-xs font-medium text-warning leading-snug">
           Spacing suggestion
         </p>
-        <p className="text-xs text-[#4A5568] mt-0.5 leading-snug">
+        <p className="text-xs text-text-secondary mt-0.5 leading-snug">
           {message}
         </p>
       </div>
@@ -59,10 +59,10 @@ export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
         onClick={handleDismiss}
         className={cn(
           'inline-flex items-center gap-1 rounded-sm px-2 py-1',
-          'text-[11px] font-medium text-[#D4951A]',
-          'border border-[#D4951A]/25 bg-white/60',
+          'text-[11px] font-medium text-warning',
+          'border border-warning/25 bg-white/60',
           'transition-all duration-150 ease-out',
-          'hover:bg-white hover:border-[#D4951A]/40',
+          'hover:bg-white hover:border-warning/40',
           'shrink-0',
         )}
       >

@@ -109,13 +109,13 @@ const getModeLabel = (modeKey: string): string => {
 
 const getModeBadgeStyle = (modeKey: string): React.CSSProperties => {
   if (EXAM_MODES.has(modeKey)) {
-    return { backgroundColor: '#FEF0E4', color: '#C4621A' }
+    return { backgroundColor: 'var(--warning-50)', color: 'var(--camp-orange-hover)' }
   }
   if (LEARNING_MODES.has(modeKey)) {
-    return { backgroundColor: '#EEF2FC', color: '#1B3FC4' }
+    return { backgroundColor: 'var(--primary-50)', color: 'var(--primary)' }
   }
   // custom / unknown
-  return { backgroundColor: '#F1F3F5', color: '#4A5568' }
+  return { backgroundColor: 'var(--muted)', color: 'var(--text-secondary)' }
 }
 
 const getSessionUrl = (session: SessionsTableProps['sessions'][number]): string => {
@@ -153,10 +153,10 @@ const getScoreDisplay = (session: SessionsTableProps['sessions'][number]): {
   color: string
 } => {
   if (session.status === 'in_progress') {
-    return { label: 'In progress', color: '#1B3FC4' }
+    return { label: 'In progress', color: 'var(--primary)' }
   }
   // No score data available in the raw sessions shape — show em dash
-  return { label: '—', color: '#8896A7' }
+  return { label: '—', color: 'var(--muted-foreground)' }
 }
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -164,17 +164,17 @@ const getScoreDisplay = (session: SessionsTableProps['sessions'][number]): {
 const StatusDot = ({ status }: { status: string }) => {
   const dotStyle: React.CSSProperties =
     status === 'in_progress'
-      ? { backgroundColor: '#1B3FC4' }
+      ? { backgroundColor: 'var(--primary)' }
       : status === 'completed'
-        ? { backgroundColor: '#2D9F6F' }
-        : { backgroundColor: '#8896A7' }
+        ? { backgroundColor: 'var(--success)' }
+        : { backgroundColor: 'var(--muted-foreground)' }
 
   const textStyle: React.CSSProperties =
     status === 'in_progress'
-      ? { color: '#1B3FC4' }
+      ? { color: 'var(--primary)' }
       : status === 'completed'
-        ? { color: '#2D9F6F' }
-        : { color: '#8896A7' }
+        ? { color: 'var(--success)' }
+        : { color: 'var(--muted-foreground)' }
 
   const label =
     status === 'in_progress' ? 'In progress' : status === 'completed' ? 'Completed' : 'Abandoned'
@@ -209,7 +209,7 @@ const ActionLink = ({
         <Link
           href={url}
           className="text-[12px] font-medium transition-colors duration-150"
-          style={{ color: '#1B3FC4' }}
+          style={{ color: 'var(--primary)' }}
         >
           Resume
         </Link>
@@ -219,19 +219,19 @@ const ActionLink = ({
               variant="ghost"
               size="xs"
               className="rounded-sm text-[12px] font-medium h-auto py-1 px-2"
-              style={{ color: '#8896A7' }}
+              style={{ color: 'var(--muted-foreground)' }}
             >
               Abandon
             </Button>
           </AlertDialogTrigger>
           <AlertDialogContent className="rounded-lg max-w-sm">
             <AlertDialogHeader>
-              <AlertDialogTitle className="text-[16px] font-semibold" style={{ color: '#1A2332' }}>
+              <AlertDialogTitle className="text-[16px] font-semibold" style={{ color: 'var(--foreground)' }}>
                 Abandon this session?
               </AlertDialogTitle>
               <AlertDialogDescription
                 className="text-[14px] font-normal leading-relaxed"
-                style={{ color: '#4A5568' }}
+                style={{ color: 'var(--text-secondary)' }}
               >
                 Your progress on this session will be lost. Any answers you&apos;ve submitted are already saved to your mastery data.
               </AlertDialogDescription>
@@ -242,7 +242,7 @@ const ActionLink = ({
               </AlertDialogCancel>
               <AlertDialogAction
                 variant="destructive"
-                className="rounded-sm bg-destructive text-white hover:bg-[#C03C3C] text-[13px]"
+                className="rounded-sm bg-destructive text-white hover:bg-destructive/90 text-[13px]"
                 onClick={() => onAbandon(session.session_id)}
               >
                 Yes, abandon
@@ -258,7 +258,7 @@ const ActionLink = ({
     <Link
       href={url}
       className="text-[12px] font-medium transition-colors duration-150"
-      style={{ color: '#1B3FC4' }}
+      style={{ color: 'var(--primary)' }}
       onClick={(e) => e.stopPropagation()}
     >
       Review →
@@ -294,7 +294,7 @@ const TableRow = ({
   return (
     <tr
       className="group cursor-pointer border-b transition-colors duration-150"
-      style={{ borderColor: 'rgba(212, 218, 227, 0.5)' }}
+      style={{ borderColor: 'color-mix(in srgb, var(--border) 50%, transparent)' }}
       onClick={() => { window.location.href = url }}
     >
       {/* Mode */}
@@ -308,7 +308,7 @@ const TableRow = ({
       </td>
 
       {/* Questions */}
-      <td className="px-3 py-3 text-[13px]" style={{ color: '#1A2332' }}>
+      <td className="px-3 py-3 text-[13px]" style={{ color: 'var(--foreground)' }}>
         <span className="font-[family-name:var(--font-dm-mono)]">
           {answered}/{total}
         </span>
@@ -319,7 +319,7 @@ const TableRow = ({
         {session.status === 'in_progress' ? (
           <span
             className="inline-flex items-center px-2 py-0.5 rounded-sm text-[11px] font-medium"
-            style={{ backgroundColor: '#EEF2FC', color: '#1B3FC4' }}
+            style={{ backgroundColor: 'var(--primary-50)', color: 'var(--primary)' }}
           >
             In progress
           </span>
@@ -334,7 +334,7 @@ const TableRow = ({
       </td>
 
       {/* Date */}
-      <td className="px-3 py-3 text-[12px]" style={{ color: '#8896A7' }}>
+      <td className="px-3 py-3 text-[12px]" style={{ color: 'var(--muted-foreground)' }}>
         <span
           className="font-[family-name:var(--font-dm-mono)]"
           title={fullDate}
@@ -377,8 +377,8 @@ const MobileCard = ({
     <div
       className="rounded-md border p-4 cursor-pointer transition-colors duration-150"
       style={{
-        backgroundColor: '#FFFFFF',
-        borderColor: '#D4DAE3',
+        backgroundColor: 'var(--surface-card)',
+        borderColor: 'var(--border)',
       }}
       onClick={() => { window.location.href = url }}
     >
@@ -393,7 +393,7 @@ const MobileCard = ({
             </span>
             <StatusDot status={session.status} />
           </div>
-          <div className="flex items-center gap-3 text-[12px]" style={{ color: '#4A5568' }}>
+          <div className="flex items-center gap-3 text-[12px]" style={{ color: 'var(--text-secondary)' }}>
             <span>
               <span className="font-[family-name:var(--font-dm-mono)]">{answered}/{total}</span>
               {' '}questions
@@ -401,7 +401,7 @@ const MobileCard = ({
             <span
               className="font-[family-name:var(--font-dm-mono)]"
               title={fullDate}
-              style={{ color: '#8896A7' }}
+              style={{ color: 'var(--muted-foreground)' }}
             >
               {getRelativeTime(dateStr)}
             </span>
@@ -442,7 +442,7 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
     return (
       <div
         className="rounded-md border py-12 text-center text-[13px]"
-        style={{ borderColor: '#D4DAE3', color: '#8896A7', backgroundColor: '#F8F7F5' }}
+        style={{ borderColor: 'var(--border)', color: 'var(--muted-foreground)', backgroundColor: 'var(--surface-light)' }}
       >
         No sessions yet. Start your first quiz above.
       </div>
@@ -452,24 +452,24 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
   return (
     <div>
       {/* Desktop table */}
-      <div className="hidden md:block overflow-hidden rounded-md border" style={{ borderColor: '#D4DAE3' }}>
+      <div className="hidden md:block overflow-hidden rounded-md border" style={{ borderColor: 'var(--border)' }}>
         <table className="w-full border-collapse">
           <thead>
-            <tr style={{ backgroundColor: '#F8F7F5' }}>
+            <tr style={{ backgroundColor: 'var(--surface-light)' }}>
               {(['Mode', 'Questions', 'Score', 'Status', 'Date', 'Actions'] as const).map((col) => (
                 <th
                   key={col}
                   className={`py-2.5 text-left text-[11px] font-medium uppercase tracking-wide ${
                     col === 'Actions' ? 'pl-3 pr-4 text-right' : col === 'Mode' ? 'pl-4 pr-3' : 'px-3'
                   }`}
-                  style={{ color: '#8896A7' }}
+                  style={{ color: 'var(--muted-foreground)' }}
                 >
                   {col}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody style={{ backgroundColor: '#FFFFFF' }}>
+          <tbody style={{ backgroundColor: 'var(--surface-card)' }}>
             {visible.map((session) => (
               <TableRow key={session.session_id} session={session} onAbandon={handleAbandon} />
             ))}
@@ -491,9 +491,9 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
             type="button"
             className="px-4 py-2 rounded-sm text-[13px] font-medium border transition-colors duration-150"
             style={{
-              borderColor: '#D4DAE3',
-              color: '#4A5568',
-              backgroundColor: '#FFFFFF',
+              borderColor: 'var(--border)',
+              color: 'var(--text-secondary)',
+              backgroundColor: 'var(--surface-card)',
             }}
             onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
           >

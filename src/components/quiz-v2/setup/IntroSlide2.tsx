@@ -22,10 +22,10 @@ const masteryPct = (w: number | null): number => (w === null ? 0 : Math.round(w 
 const Skeleton = () => (
   <div className="space-y-2" aria-busy="true" aria-label="Loading topics">
     {[1, 2, 3, 4].map((i) => (
-      <div key={i} className="rounded-md border border-[#D4DAE3] bg-white p-4 animate-pulse">
+      <div key={i} className="rounded-md border border-border bg-white p-4 animate-pulse">
         <div className="flex items-center gap-3">
-          <div className="h-4 w-4 rounded-[3px] bg-[#D4DAE3]" />
-          <div className="flex-1 h-3 rounded bg-[#D4DAE3]" style={{ width: `${40 + i * 12}%` }} />
+          <div className="h-4 w-4 rounded-[3px] bg-border" />
+          <div className="flex-1 h-3 rounded bg-border" style={{ width: `${40 + i * 12}%` }} />
         </div>
       </div>
     ))}
@@ -57,9 +57,9 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
   const pct = masteryPct(subject.masteryWeight)
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white overflow-hidden">
+    <div className="rounded-md border border-border bg-white overflow-hidden">
       {/* Subject header */}
-      <div className="flex items-center gap-3 px-4 py-3 bg-[#F8F7F5]">
+      <div className="flex items-center gap-3 px-4 py-3 bg-surface-light">
         {/* Checkbox */}
         <button
           type="button"
@@ -70,10 +70,10 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
           className={cn(
             'h-4 w-4 shrink-0 rounded-[3px] border transition-colors duration-150',
             allSelected
-              ? 'bg-[#1B3FC4] border-[#1B3FC4]'
+              ? 'bg-primary border-primary'
               : someSelected
-                ? 'bg-[#EEF2FC] border-[#1B3FC4]'
-                : 'bg-white border-[#D4DAE3] hover:border-[#1B3FC4]/50',
+                ? 'bg-primary-50 border-primary'
+                : 'bg-white border-border hover:border-primary/50',
           )}
         >
           {allSelected && (
@@ -97,11 +97,11 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
           aria-controls={`subject-topics-${subject.nodeId}`}
           disabled={subject.subtopics.length === 0}
         >
-          <span className="text-[13px] font-medium text-[#1A2332] truncate">{subject.name}</span>
+          <span className="text-[13px] font-medium text-foreground truncate">{subject.name}</span>
 
           {/* Mastery bar + pct */}
           <span className="ml-auto flex items-center gap-2 shrink-0">
-            <span className="w-16 h-1 rounded-full bg-[#D4DAE3] overflow-hidden" aria-hidden="true">
+            <span className="w-16 h-1 rounded-full bg-border overflow-hidden" aria-hidden="true">
               <span
                 className="h-full rounded-full block transition-all duration-150"
                 style={{ width: `${pct}%`, backgroundColor: color }}
@@ -116,8 +116,8 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
             </span>
             {subject.subtopics.length > 0 && (
               expanded
-                ? <CaretUp className="h-3.5 w-3.5 text-[#8896A7] shrink-0" aria-hidden="true" />
-                : <CaretDown className="h-3.5 w-3.5 text-[#8896A7] shrink-0" aria-hidden="true" />
+                ? <CaretUp className="h-3.5 w-3.5 text-muted-foreground shrink-0" aria-hidden="true" />
+                : <CaretDown className="h-3.5 w-3.5 text-muted-foreground shrink-0" aria-hidden="true" />
             )}
           </span>
         </button>
@@ -138,16 +138,16 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
                 className={cn(
                   'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm text-[12px] font-medium',
                   'border transition-all duration-150 ease-out',
-                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30 focus-visible:ring-offset-1',
+                  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-1',
                   isSelected
-                    ? 'bg-[#EEF2FC] border-[#1B3FC4] text-[#1B3FC4]'
-                    : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]/40',
+                    ? 'bg-primary-50 border-primary text-primary'
+                    : 'bg-white border-border text-text-secondary hover:border-primary/40',
                 )}
               >
                 {sub.name}
                 {isWeak && (
                   <span
-                    className="inline-block w-1.5 h-1.5 rounded-full bg-[#D4951A] shrink-0"
+                    className="inline-block w-1.5 h-1.5 rounded-full bg-warning shrink-0"
                     title="Developing skill"
                     aria-label="developing skill"
                   />
@@ -254,12 +254,12 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
     <div className="space-y-4">
       {/* Header */}
       <div>
-        <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7] mb-1">
+        <p className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground mb-1">
           Step 2 — Topics
         </p>
-        <h2 className="text-[17px] font-semibold text-[#1A2332]">Choose your topics</h2>
+        <h2 className="text-[17px] font-semibold text-foreground">Choose your topics</h2>
         {mode === 'focused' && (
-          <p className="text-[13px] text-[#D4951A] mt-1">
+          <p className="text-[13px] text-warning mt-1">
             Developing skills pre-selected based on your history.
           </p>
         )}
@@ -268,7 +268,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
       {/* Search */}
       <div className="relative">
         <MagnifyingGlass
-          className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-[#8896A7]"
+          className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground"
           aria-hidden="true"
         />
         <input
@@ -276,7 +276,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
           placeholder="Search topics…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full rounded-sm border border-[#D4DAE3] bg-white pl-8 pr-3 py-2 text-[13px] text-[#1A2332] placeholder:text-[#8896A7] focus:outline-none focus:ring-2 focus:ring-[#1B3FC4]/20 focus:border-[#1B3FC4]/50 transition-colors duration-150"
+          className="w-full rounded-sm border border-border bg-white pl-8 pr-3 py-2 text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-colors duration-150"
           aria-label="Search topics"
         />
       </div>
@@ -290,12 +290,12 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
           <button
             type="button"
             onClick={toggleAll}
-            className="text-[12px] font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
+            className="text-[12px] font-medium text-primary hover:text-primary-700 transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
             aria-label={allSelected ? 'Deselect all topics' : 'Select all topics'}
           >
             {allSelected ? 'Deselect all' : 'Select all'}
           </button>
-          <span className="text-[12px] text-[#8896A7]">
+          <span className="text-[12px] text-muted-foreground">
             {selected.size} of {allLeafIds.length} subtopics selected
           </span>
         </div>
@@ -315,7 +315,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
             />
           ))}
           {filteredSubjects.length === 0 && (
-            <p className="text-[13px] text-[#8896A7] text-center py-6">
+            <p className="text-[13px] text-muted-foreground text-center py-6">
               No topics match your search.
             </p>
           )}

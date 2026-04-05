@@ -8,7 +8,7 @@ const SkeletonLine = ({ width, className }: { width: string; className?: string 
   return (
     <div
       className={cn(
-        'h-4 rounded-sm bg-[#D4DAE3]/50',
+        'h-4 rounded-sm bg-border/50',
         !reducedMotion && 'animate-pulse',
         className,
       )}
@@ -22,12 +22,12 @@ const SkeletonOption = () => {
   return (
     <div
       className={cn(
-        'flex items-center gap-3 rounded-md border border-[#D4DAE3]/30 px-4 py-3 min-h-[52px]',
+        'flex items-center gap-3 rounded-md border border-border/30 px-4 py-3 min-h-[52px]',
         !reducedMotion && 'animate-pulse',
       )}
     >
-      <div className="w-6 h-6 rounded-sm bg-[#D4DAE3]/40 shrink-0" />
-      <div className="flex-1 h-4 rounded-sm bg-[#D4DAE3]/40" />
+      <div className="w-6 h-6 rounded-sm bg-border/40 shrink-0" />
+      <div className="flex-1 h-4 rounded-sm bg-border/40" />
     </div>
   )
 }
@@ -52,7 +52,7 @@ export const QuestionSkeleton = () => {
       </div>
 
       {/* Slide-to-submit skeleton */}
-      <div className={cn('h-[52px] rounded-md bg-[#D4DAE3]/30', !reducedMotion && 'animate-pulse')} />
+      <div className={cn('h-[52px] rounded-md bg-border/30', !reducedMotion && 'animate-pulse')} />
     </div>
   )
 }

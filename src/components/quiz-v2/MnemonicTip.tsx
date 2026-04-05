@@ -56,7 +56,7 @@ export const MnemonicTip = ({ factToRemember, topicName, className }: MnemonicTi
   return (
     <div
       className={cn(
-        'rounded-md border border-[#D4951A]/20 bg-[#FEF8ED] overflow-hidden',
+        'rounded-md border border-warning/20 bg-warning-50 overflow-hidden',
         className,
       )}
     >
@@ -67,23 +67,23 @@ export const MnemonicTip = ({ factToRemember, topicName, className }: MnemonicTi
         className={cn(
           'flex items-center gap-2 w-full px-3 py-2 text-left',
           'transition-colors duration-150 ease-out',
-          'hover:bg-[#D4951A]/5',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4951A]/30 focus-visible:ring-inset',
+          'hover:bg-warning/5',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warning/30 focus-visible:ring-inset',
         )}
         aria-expanded={expanded}
       >
         <Lightbulb
           size={14}
           weight="fill"
-          className="text-[#D4951A] shrink-0"
+          className="text-warning shrink-0"
           aria-hidden="true"
         />
-        <span className="text-xs font-semibold text-[#D4951A] flex-1">Memory Trick</span>
+        <span className="text-xs font-semibold text-warning flex-1">Memory Trick</span>
         <CaretDown
           size={12}
           weight="bold"
           className={cn(
-            'text-[#D4951A]/60 transition-transform duration-150',
+            'text-warning/60 transition-transform duration-150',
             expanded && 'rotate-180',
           )}
           aria-hidden="true"
@@ -95,18 +95,18 @@ export const MnemonicTip = ({ factToRemember, topicName, className }: MnemonicTi
         <div className="px-3 pb-3 pt-0 space-y-2 animate-in fade-in slide-in-from-top-1 duration-150">
           {loading ? (
             <div className="flex items-center gap-2 py-1">
-              <div className="w-3 h-3 rounded-full border-2 border-[#D4951A]/30 border-t-[#D4951A] animate-spin" />
-              <span className="text-xs text-[#4A5568]">Generating mnemonic...</span>
+              <div className="w-3 h-3 rounded-full border-2 border-warning/30 border-t-warning animate-spin" />
+              <span className="text-xs text-text-secondary">Generating mnemonic...</span>
             </div>
           ) : (
             <>
-              <p className="text-sm text-[#1A2332] leading-relaxed">{mnemonic}</p>
+              <p className="text-sm text-foreground leading-relaxed">{mnemonic}</p>
               <Button
                 variant="ghost"
                 size="xs"
                 onClick={handleSave}
                 disabled={saved}
-                className="text-[#D4951A] hover:text-[#D4951A] hover:bg-[#D4951A]/10"
+                className="text-warning hover:text-warning hover:bg-warning/10"
               >
                 <FloppyDisk size={12} weight="bold" aria-hidden="true" />
                 {saved ? 'Copied' : 'Save to Notes'}

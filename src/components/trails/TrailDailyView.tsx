@@ -138,7 +138,7 @@ export const TrailDailyView = ({
             <button
               type="button"
               onClick={() => router.push(`/dashboard/camptrails/${trail.slug}/today`)}
-              className="text-xs font-medium text-warning hover:text-[#9A6510] transition-colors duration-150"
+              className="text-xs font-medium text-warning hover:text-warning-700 transition-colors duration-150"
             >
               Continue with Day {enrollment.current_day}
             </button>

@@ -198,14 +198,14 @@ const ArticleAccordionGroup = ({
             <Badge
               variant={statusVariantMap[group.articleStatus] ?? 'secondary'}
               size="xs"
-              pill
+              shape="pill"
             >
               {group.articleStatus}
             </Badge>
           )}
         </span>
 
-        <Badge variant="primary" size="xs" pill>
+        <Badge variant="primary" size="xs" shape="pill">
           {group.questionCount} {group.questionCount === 1 ? 'question' : 'questions'}
         </Badge>
       </button>

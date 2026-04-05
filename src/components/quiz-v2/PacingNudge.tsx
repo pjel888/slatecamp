@@ -1,31 +1,38 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, memo } from 'react'
 import { ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { getMedianTimeForDifficulty, type PressureLevel } from '@/lib/quiz/pressure-config'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 interface PacingNudgeProps {
   pressureLevel: PressureLevel
   difficultyLabel: string
-  questionTimeMs: number
+  questionId: string
   onAutoAdvance?: () => void
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-const PacingNudge = ({
+const PacingNudge = memo(({
   pressureLevel,
   difficultyLabel,
-  questionTimeMs,
+  questionId,
   onAutoAdvance,
 }: PacingNudgeProps) => {
   const [visible, setVisible] = useState(false)
   const [autoAdvancing, setAutoAdvancing] = useState(false)
   const autoAdvanceFired = useRef(false)
-  const prevQuestionTimeRef = useRef(questionTimeMs)
+
+  // Subscriptions
+  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
+  const timeStartedMs = useQuizStore((s) => s.answers[questionId]?.timeStartedMs ?? 0)
+
+  const questionTimeMs = timeStartedMs > 0 ? Date.now() - timeStartedMs : 0
+  const prevQuestionIdRef = useRef(questionId)
 
   // Only active at pressure level 2+
   const isActive = pressureLevel >= 2
@@ -33,15 +40,15 @@ const PacingNudge = ({
   const softThreshold = medianMs * 2
   const hardThreshold = medianMs * 3
 
-  // Reset state when question changes (detected by questionTimeMs resetting)
+  // Reset state when question changes
   useEffect(() => {
-    if (questionTimeMs < prevQuestionTimeRef.current) {
+    if (questionId !== prevQuestionIdRef.current) {
       setVisible(false)
       setAutoAdvancing(false)
       autoAdvanceFired.current = false
+      prevQuestionIdRef.current = questionId
     }
-    prevQuestionTimeRef.current = questionTimeMs
-  }, [questionTimeMs])
+  }, [questionId])
 
   // Show nudge when time exceeds 2x median
   useEffect(() => {
@@ -87,8 +94,8 @@ const PacingNudge = ({
         'rounded-md border shadow-md',
         'transition-all duration-300 ease-out',
         autoAdvancing
-          ? 'border-[#D64545]/30 bg-[#FDF0F0]'
-          : 'border-[#D4951A]/30 bg-[#FEF8ED]',
+          ? 'border-destructive/30 bg-destructive-50'
+          : 'border-warning/30 bg-warning-50',
         visible
           ? 'opacity-100 translate-y-0'
           : 'opacity-0 translate-y-2 pointer-events-none',
@@ -97,17 +104,17 @@ const PacingNudge = ({
       <ArrowRight
         size={16}
         weight="bold"
-        className={autoAdvancing ? 'text-[#D64545] shrink-0' : 'text-[#D4951A] shrink-0'}
+        className={autoAdvancing ? 'text-destructive shrink-0' : 'text-warning shrink-0'}
         aria-hidden="true"
       />
-      <p className="text-[13px] text-[#1A2332] leading-snug">
+      <p className="text-[13px] text-foreground leading-snug">
         {autoAdvancing
           ? 'Moving to next question...'
           : 'Consider moving on and returning later.'}
       </p>
     </div>
   )
-}
+})
 
 PacingNudge.displayName = 'PacingNudge'
 

@@ -22,15 +22,15 @@ const getOptionState = (
 }
 
 const CONTAINER_CLASSES: Record<OptionState, string> = {
-  correct: 'bg-[#EDFAF4] border-[#2D9F6F]',
-  'wrong-choice': 'bg-[#FDF0F0] border-[#D64545]/40',
-  default: 'bg-white border-[#D4DAE3] opacity-60',
+  correct: 'bg-success-50 border-success',
+  'wrong-choice': 'bg-destructive-50 border-destructive/40',
+  default: 'bg-white border-border opacity-60',
 }
 
 const LETTER_CLASSES: Record<OptionState, string> = {
-  correct: 'bg-[#2D9F6F] text-white',
-  'wrong-choice': 'bg-[#D4DAE3] text-[#4A5568]',
-  default: 'bg-[#F8F7F5] text-[#8896A7]',
+  correct: 'bg-success text-white',
+  'wrong-choice': 'bg-border text-text-secondary',
+  default: 'bg-surface-light text-muted-foreground',
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -60,11 +60,11 @@ export const AnnotatedOption = ({ option, userWasWrong }: AnnotatedOptionProps) 
 
       {/* Text + annotation */}
       <div className="flex-1 min-w-0">
-        <p className="text-sm text-[#1A2332] leading-relaxed">{option.text}</p>
+        <p className="text-sm text-foreground leading-relaxed">{option.text}</p>
 
         {/* Correct answer marker */}
         {option.isCorrect && (
-          <p className="mt-1 text-xs font-medium text-[#2D9F6F] flex items-center gap-1">
+          <p className="mt-1 text-xs font-medium text-success flex items-center gap-1">
             <svg
               width="12"
               height="12"
@@ -86,7 +86,7 @@ export const AnnotatedOption = ({ option, userWasWrong }: AnnotatedOptionProps) 
 
         {/* "You chose" marker for wrong choice */}
         {state === 'wrong-choice' && (
-          <p className="mt-1 text-xs text-[#4A5568]">← You chose this</p>
+          <p className="mt-1 text-xs text-text-secondary">← You chose this</p>
         )}
       </div>
     </div>

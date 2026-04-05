@@ -19,14 +19,14 @@ const ICON_MAP: Record<NotificationType, {
   unreadBg: string
   unreadStroke: string
 }> = {
-  score_change:    { icon: TrendUp,     unreadBg: 'bg-blue-50',   unreadStroke: 'text-[#1B3FC4]' },
-  trail_ready:     { icon: BookOpen,    unreadBg: 'bg-green-50',  unreadStroke: 'text-[#1B7A3C]' },
-  blindspot:       { icon: Warning,     unreadBg: 'bg-orange-50', unreadStroke: 'text-[#E8853A]' },
-  zone_transition: { icon: Star,        unreadBg: 'bg-blue-50',   unreadStroke: 'text-[#1B3FC4]' },
-  proof_unlocked:  { icon: Shield,      unreadBg: 'bg-blue-50',   unreadStroke: 'text-[#1B3FC4]' },
-  campfire_story:  { icon: ChatCircle,  unreadBg: 'bg-purple-50', unreadStroke: 'text-[#534AB7]' },
-  campfire_reply:  { icon: ChatCircle,  unreadBg: 'bg-purple-50', unreadStroke: 'text-[#534AB7]' },
-  content_update:  { icon: Monitor,     unreadBg: 'bg-blue-50',   unreadStroke: 'text-[#1B3FC4]' },
+  score_change:    { icon: TrendUp,     unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
+  trail_ready:     { icon: BookOpen,    unreadBg: 'bg-success-50',      unreadStroke: 'text-success-700' },
+  blindspot:       { icon: Warning,     unreadBg: 'bg-warning-50',      unreadStroke: 'text-camp-orange' },
+  zone_transition: { icon: Star,        unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
+  proof_unlocked:  { icon: Shield,      unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
+  campfire_story:  { icon: ChatCircle,  unreadBg: 'bg-trail-accent/10', unreadStroke: 'text-trail-accent' },
+  campfire_reply:  { icon: ChatCircle,  unreadBg: 'bg-trail-accent/10', unreadStroke: 'text-trail-accent' },
+  content_update:  { icon: Monitor,     unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
   weekly_digest:   { icon: Calendar,    unreadBg: 'bg-muted',     unreadStroke: 'text-muted-foreground' },
   coaching_tip:    { icon: Lightbulb,   unreadBg: 'bg-muted',     unreadStroke: 'text-muted-foreground' },
   billing:         { icon: CreditCard,  unreadBg: 'bg-muted',     unreadStroke: 'text-muted-foreground' },

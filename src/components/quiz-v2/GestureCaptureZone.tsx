@@ -1,7 +1,6 @@
 'use client'
 
 import { useCallback, useRef } from 'react'
-import { useQuizStore } from '@/stores/useQuizStore'
 import type { GestureSignalEvent } from '@/types/patent'
 
 /**
@@ -11,9 +10,8 @@ import type { GestureSignalEvent } from '@/types/patent'
  * not the entire quiz body. This avoids interfering with answer option
  * clicks, scrolling, or other pointer interactions.
  *
- * On pointerUp, the captured signal buffer is flushed to the Zustand
- * store so that submitCurrentAnswer (which fires ~200ms later via
- * SlideToSubmit's handleComplete timeout) can read it.
+ * On pointerUp, the captured signal buffer is passed to onBufferReady
+ * so that the parent can include it in the submission.
  *
  * Patent Claims 1(a-b), 6, 14: Instrumented interaction region with
  * high-frequency signal capture.
@@ -23,14 +21,13 @@ const MAX_BUFFER = 500
 
 interface GestureCaptureZoneProps {
   children: React.ReactNode
+  onBufferReady: (buffer: GestureSignalEvent[]) => void
 }
 
-export const GestureCaptureZone = ({ children }: GestureCaptureZoneProps) => {
+export const GestureCaptureZone = ({ children, onBufferReady }: GestureCaptureZoneProps) => {
   const bufferRef = useRef<GestureSignalEvent[]>([])
   const capturingRef = useRef(false)
   const zoneRef = useRef<HTMLDivElement>(null)
-
-  const setSignalBuffer = useQuizStore((s) => s.setSignalBuffer)
 
   const captureEvent = useCallback(
     (e: React.PointerEvent, type: GestureSignalEvent['type']) => {
@@ -80,13 +77,12 @@ export const GestureCaptureZone = ({ children }: GestureCaptureZoneProps) => {
       captureEvent(e, 'end')
       capturingRef.current = false
 
-      // Flush buffer to store immediately — submitCurrentAnswer reads it
-      // ~200ms later via SlideToSubmit's handleComplete timeout
+      // Pass buffer to parent immediately
       if (bufferRef.current.length > 0) {
-        setSignalBuffer([...bufferRef.current])
+        onBufferReady([...bufferRef.current])
       }
     },
-    [captureEvent, setSignalBuffer],
+    [captureEvent, onBufferReady],
   )
 
   return (

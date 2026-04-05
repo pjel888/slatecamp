@@ -154,7 +154,7 @@ export const DevPortalShell = ({ env, children }: DevPortalShellProps) => (
       <Badge
         variant={envBadgeVariant[env]}
         size="xs"
-        pill
+        shape="pill"
         className="font-[family-name:var(--font-dm-mono)]"
       >
         {env}

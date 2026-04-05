@@ -65,7 +65,7 @@ export const ComponentPageLayout = ({
           <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
             {title}
           </h1>
-          <Badge variant={STATUS_VARIANT[status]} size="xs" pill>
+          <Badge variant={STATUS_VARIANT[status]} size="xs" shape="pill">
             {status}
           </Badge>
         </div>

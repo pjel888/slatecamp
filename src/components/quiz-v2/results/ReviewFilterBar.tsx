@@ -59,7 +59,7 @@ export const ReviewFilterBar = ({
       ref={barRef}
       className={cn(
         'sticky top-0 z-10 bg-white/95 backdrop-blur-sm px-4 py-3 -mx-4 transition-shadow duration-150 ease-out',
-        isStuck && 'shadow-sm border-b border-[#D4DAE3]',
+        isStuck && 'shadow-sm border-b border-border',
       )}
       role="toolbar"
       aria-label="Filter questions"
@@ -79,10 +79,10 @@ export const ReviewFilterBar = ({
               className={cn(
                 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm text-xs font-medium',
                 'transition-colors duration-150 ease-out',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-1',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                 isActive
-                  ? 'bg-[#1B3FC4] text-white'
-                  : 'bg-[#F8F7F5] text-[#4A5568] hover:bg-[#EEF2FC] hover:text-[#1B3FC4]',
+                  ? 'bg-primary text-white'
+                  : 'bg-surface-light text-text-secondary hover:bg-primary-50 hover:text-primary',
               )}
             >
               {f.label}
@@ -91,7 +91,7 @@ export const ReviewFilterBar = ({
                   'tabular-nums text-[10px] px-1 py-0.5 rounded-sm min-w-[18px] text-center',
                   isActive
                     ? 'bg-white/20 text-white'
-                    : 'bg-[#D4DAE3]/50 text-[#4A5568]',
+                    : 'bg-border/50 text-text-secondary',
                 )}
               >
                 {f.count}

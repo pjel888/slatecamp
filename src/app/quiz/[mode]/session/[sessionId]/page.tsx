@@ -13,60 +13,48 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
   const { mode, sessionId } = await params
   const supabase = await createClient()
 
-  const { data: { user } } = await supabase.auth.getUser()
+  // Parallelize auth and session check
+  const [{ data: { user } }, sessionResponse] = await Promise.all([
+    supabase.auth.getUser(),
+    supabase
+      .from('quiz_sessions')
+      .select('session_id, user_id, config, question_ids')
+      .eq('session_id', sessionId)
+      .single()
+  ])
+
   if (!user) notFound()
+  const session = sessionResponse.data
 
-  // Fetch session — only the columns we need (not select('*'))
-  const { data: session } = await supabase
-    .from('quiz_sessions')
-    .select('session_id, user_id, config, question_ids')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .single()
+  // Verify session belongs to user
+  if (!session || session.user_id !== user.id) notFound()
 
-  if (!session) notFound()
-
-  // Fetch questions for this session — only client-safe columns (no correct_option_id, rationale)
-  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
+  // PRUNED HYDRATION STRATEGY:
+  // Fetch only the first batch (lookahead) server-side to minimize payload.
+  // The client will fetch the remainder in the background.
   const questionIds: string[] = session.question_ids ?? []
-  const BATCH_SIZE = 80
-  const questionBatches = []
-  for (let i = 0; i < questionIds.length; i += BATCH_SIZE) {
-    questionBatches.push(questionIds.slice(i, i + BATCH_SIZE))
-  }
+  const INITIAL_BATCH_SIZE = 10
+  const initialBatchIds = questionIds.slice(0, INITIAL_BATCH_SIZE)
 
-  const allQuestions: Array<{
-    question_id: string
-    text: string
-    options: unknown
-    prompt_image_url: string | null
-    difficulty: number
-    topic_id: string
-  }> = []
-
-  for (const batch of questionBatches) {
-    const { data } = await supabase
-      .from('questions')
-      .select('question_id, text, options, prompt_image_url, difficulty, topic_id')
-      .in('question_id', batch)
-
-    if (data) allQuestions.push(...data)
-  }
+  const { data: initialQuestions } = await supabase
+    .from('questions')
+    .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type, metadata')
+    .in('question_id', initialBatchIds)
 
   // Build config from session data or use mode preset
   const config: QuizSessionConfig = (session.config as QuizSessionConfig) ??
     MODE_PRESETS[mode as QuizMode] ??
     MODE_PRESETS.camp
 
-  // Preserve session question order — map by ID then reorder
-  const questionMap = new Map(allQuestions.map((q) => [q.question_id, q]))
-  const orderedQuestions = questionIds
+  // Preserve session question order for the initial batch
+  const questionMap = new Map((initialQuestions ?? []).map((q) => [q.question_id, q]))
+  const orderedInitial = initialBatchIds
     .map((id) => questionMap.get(id))
     .filter((q): q is NonNullable<typeof q> => q != null)
 
-  // Strip questions for client (remove correct answers)
-  const clientQuestions = orderedQuestions.map((q, i) =>
-    stripQuestionForClient(q, i + 1),
+  // Strip questions for client
+  const initialClientQuestions = orderedInitial.map((q, i) =>
+    stripQuestionForClient(q as any, i + 1),
   )
 
   // Dynamic import for client shell
@@ -76,7 +64,8 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
     <QuizShell
       sessionId={sessionId}
       config={config}
-      questions={clientQuestions}
+      questions={initialClientQuestions}
+      allQuestionIds={questionIds}
     />
   )
 }

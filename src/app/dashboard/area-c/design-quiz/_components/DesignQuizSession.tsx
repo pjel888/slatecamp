@@ -8,7 +8,7 @@ import { SolutionReveal } from './SolutionReveal'
 import { ScenarioResults } from './ScenarioResults'
 import { CalculatingResultsOverlay } from '@/components/quiz-v2/CalculatingResultsOverlay'
 import { SubmitConfirmModal } from '@/components/quiz-v2/SubmitConfirmModal'
-import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
+import type { QuestionForClient, QuizAnswerState, QuestionStatus } from '@/types/quiz-config'
 
 type AnswerRecord = {
   questionNumber: number
@@ -32,7 +32,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
   const [checked, setChecked] = useState(false)
   const [answers, setAnswers] = useState<AnswerRecord[]>([])
-  const [eliminatedOptions, setEliminatedOptions] = useState<Map<string, Set<string>>>(new Map())
+  const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, string[]>>({})
   const [finished, setFinished] = useState(false)
   const [isCalculating, setIsCalculating] = useState(false)
   const [submitModalOpen, setSubmitModalOpen] = useState(false)
@@ -66,11 +66,11 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
 
   // Map internal answers to the unified QuizAnswerState for the modal
   const unifiedAnswers = useMemo(() => {
-    const map = new Map<string, QuizAnswerState>()
+    const record: Record<string, QuizAnswerState> = {}
     answers.forEach(a => {
       const q = scenario.questions.find(sq => sq.number === a.questionNumber)
       if (q) {
-        map.set(q.question_id, {
+        record[q.question_id] = {
           selectedOptionId: a.selectedIndex.toString(),
           confidenceLevel: null,
           isCorrect: a.correct,
@@ -79,11 +79,11 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
           timeStartedMs: 0,
           timeSpentMs: 0,
           submittedAt: null,
-          questionStatus: a.correct !== null ? 'reviewed' : 'idle',
-        })
+          questionStatus: (a.correct !== null ? 'reviewed' : 'idle') as QuestionStatus,
+        }
       }
     })
-    return map
+    return record
   }, [answers, scenario.questions])
 
   const handleCheck = useCallback(() => {
@@ -171,12 +171,11 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
 
   const toggleEliminate = useCallback((questionId: string, optionId: string) => {
     setEliminatedOptions(prev => {
-      const next = new Map(prev)
-      const set = new Set(next.get(questionId) || [])
-      if (set.has(optionId)) set.delete(optionId)
-      else set.add(optionId)
-      next.set(questionId, set)
-      return next
+      const current = prev[questionId] ?? []
+      const next = current.includes(optionId)
+        ? current.filter(id => id !== optionId)
+        : [...current, optionId]
+      return { ...prev, [questionId]: next }
     })
   }, [])
 
@@ -215,7 +214,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
               questionStem={question.question_stem}
               options={currentUnifiedQuestion.options.map(o => o.text)}
               selectedIndex={selectedIndex}
-              eliminatedIds={eliminatedOptions.get(question.question_id) || new Set()}
+              eliminatedIds={new Set(eliminatedOptions[question.question_id] || [])}
               onSelect={setSelectedIndex}
               onCheck={handleCheck}
               onNext={handleNext}

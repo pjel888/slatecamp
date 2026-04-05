@@ -46,7 +46,7 @@ export const SwipeTooltip = ({ targetRef, onDismiss }: SwipeTooltipProps) => {
       aria-live="polite"
     >
       <div
-        className="bg-[#1B3FC4] text-white text-xs font-normal rounded-sm px-3 py-1.5 whitespace-nowrap shadow-md"
+        className="bg-primary text-white text-xs font-normal rounded-sm px-3 py-1.5 whitespace-nowrap shadow-md"
         style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
       >
         Swipe right to submit or tap Check Answer below

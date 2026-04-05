@@ -17,8 +17,8 @@ export const PreviewArea = ({ children, className }: PreviewAreaProps) => {
       className={cn(
         'relative border border-border rounded-md min-h-[180px] flex items-center justify-content-center p-8',
         isDark
-          ? 'bg-[#1a1a2e] [background-image:radial-gradient(circle,rgba(255,255,255,0.06)_1px,transparent_1px)]'
-          : 'bg-card [background-image:radial-gradient(circle,#e0ded8_1px,transparent_1px)]',
+          ? 'bg-formula-surface [background-image:radial-gradient(circle,rgba(255,255,255,0.06)_1px,transparent_1px)]'
+          : 'bg-card [background-image:radial-gradient(circle,var(--border-warm)_1px,transparent_1px)]',
         '[background-size:20px_20px]',
         className,
       )}

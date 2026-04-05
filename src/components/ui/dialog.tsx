@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { Dialog as DialogPrimitive } from "@base-ui/react/dialog"
+import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -40,15 +41,29 @@ function DialogOverlay({
   )
 }
 
-const dialogSizeMap = {
-  sm: 'sm:max-w-sm',
-  md: 'sm:max-w-md',
-  lg: 'sm:max-w-lg',
-  xl: 'sm:max-w-xl',
-  full: 'sm:max-w-3xl',
-} as const
+const dialogContentVariants = cva(
+  "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-xl border border-border bg-card p-4 text-sm shadow-lg duration-100 outline-none data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+  {
+    variants: {
+      size: {
+        sm: "sm:max-w-sm",
+        md: "sm:max-w-md",
+        lg: "sm:max-w-lg",
+        xl: "sm:max-w-xl",
+        full: "sm:max-w-3xl",
+      },
+    },
+    defaultVariants: {
+      size: "md",
+    },
+  }
+)
 
-type DialogSize = keyof typeof dialogSizeMap
+type DialogSize = NonNullable<VariantProps<typeof dialogContentVariants>["size"]>
+type DialogContentProps = DialogPrimitive.Popup.Props &
+  VariantProps<typeof dialogContentVariants> & {
+    showCloseButton?: boolean
+  }
 
 function DialogContent({
   className,
@@ -56,20 +71,13 @@ function DialogContent({
   showCloseButton = true,
   size = 'md',
   ...props
-}: DialogPrimitive.Popup.Props & {
-  showCloseButton?: boolean
-  size?: DialogSize
-}) {
+}: DialogContentProps) {
   return (
     <DialogPortal>
       <DialogOverlay />
       <DialogPrimitive.Popup
         data-slot="dialog-content"
-        className={cn(
-          "fixed top-1/2 left-1/2 z-50 grid w-full max-w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 gap-4 rounded-xl border border-border bg-card p-4 text-sm shadow-lg duration-100 outline-none data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
-          dialogSizeMap[size],
-          className
-        )}
+        className={cn(dialogContentVariants({ size }), className)}
         {...props}
       >
         {children}
@@ -239,4 +247,4 @@ export {
   ConfirmDialog,
 }
 
-export type { DialogSize, ConfirmDialogProps }
+export type { DialogSize, DialogContentProps, ConfirmDialogProps }

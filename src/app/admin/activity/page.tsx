@@ -102,7 +102,7 @@ const AdminActivityPage = async () => {
       <Card>
         {entries.length === 0 ? (
           <EmptyState
-            message="No activity yet"
+            title="No activity yet"
             description="Content changes will appear here as they happen."
           />
         ) : (

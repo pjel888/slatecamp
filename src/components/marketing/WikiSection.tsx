@@ -14,14 +14,14 @@ const WikiMockup = () => (
     {/* Header */}
     <div className='flex items-center gap-2.5 border-b border-border-design px-4 py-3'>
       <div className='h-2 w-2 rounded-full bg-camp-green' />
-      <span className='text-[13px] font-bold text-[#111]'>
+      <span className='text-[13px] font-bold text-camp-black'>
         Building Technology — Firewall Requirements
       </span>
     </div>
 
     {/* Table of contents */}
     <div className='border-b border-border-design bg-muted px-4 py-3'>
-      <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-[#888]'>On this page</div>
+      <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-marketing-tertiary'>On this page</div>
       {['Definition & Purpose', 'Height Requirements', 'Construction Standards', 'Common Exam Questions'].map(
         (item) => (
           <div
@@ -36,13 +36,13 @@ const WikiMockup = () => (
 
     {/* Article body */}
     <div className='px-4 py-4'>
-      <h3 className='mb-2 text-[14px] font-bold text-[#111]'>Height Requirements</h3>
+      <h3 className='mb-2 text-[14px] font-bold text-camp-black'>Height Requirements</h3>
       <p className='mb-3 text-[11px] leading-relaxed text-text-2'>
         A firewall must extend at least 0.50m above the highest point of the roof it protects.
         For buildings with combustible roofs, the firewall must project at least 0.60m above
         the roofline on both sides.
       </p>
-      <div className='mb-3 rounded-[6px] bg-[#111] px-3 py-2 font-mono text-[11px] text-[#4ade80]'>
+      <div className='mb-3 rounded-[6px] bg-camp-black px-3 py-2 font-mono text-[11px] text-success-400'>
         PD 1096 § 1207 — Firewall Construction
       </div>
       <div className='flex flex-wrap items-center gap-1.5'>
@@ -65,7 +65,7 @@ export const WikiSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
           Every code provision, every principle.
           <br />
           Organized like an encyclopedia.
@@ -98,12 +98,12 @@ export const WikiSection = () => (
           <FeatureCheckItem
             title='Linked directly to quiz questions'
             description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
-            accentColor='#111111'
+            accentColor='var(--foreground)'
           />
           <FeatureCheckItem
             title='Your notes, your workspace'
             description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
-            accentColor='#111111'
+            accentColor='var(--foreground)'
           />
         </div>
       </StaggerItem>

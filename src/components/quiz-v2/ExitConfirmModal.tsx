@@ -87,33 +87,33 @@ export const ExitConfirmModal = ({
         <div className="mb-4 space-y-1">
           <h2
             id="exit-confirm-title"
-            className="text-sm font-semibold text-[#1A2332]"
+            className="text-sm font-semibold text-foreground"
           >
             Leave this session?
           </h2>
           <p
             id="exit-confirm-desc"
-            className="text-sm text-[#4A5568]"
+            className="text-sm text-text-secondary"
           >
             Your progress will be saved, but this session will end.
           </p>
         </div>
 
         {/* Progress summary */}
-        <div className="mb-5 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-4 py-3">
+        <div className="mb-5 rounded-md border border-border bg-surface-light px-4 py-3">
           <div className="flex items-center justify-between text-xs">
-            <span className="text-[#4A5568]">Answered</span>
-            <span className="font-semibold text-[#1A2332]">
+            <span className="text-text-secondary">Answered</span>
+            <span className="font-semibold text-foreground">
               {answeredCount} / {totalCount}
             </span>
           </div>
           {unansweredCount > 0 && (
             <div className="mt-1.5 flex items-center justify-between text-xs">
-              <span className="text-[#4A5568]">Not yet answered</span>
+              <span className="text-text-secondary">Not yet answered</span>
               <span
                 className={cn(
                   'font-semibold',
-                  unansweredCount > 0 ? 'text-[#D4951A]' : 'text-[#1A2332]',
+                  unansweredCount > 0 ? 'text-warning' : 'text-foreground',
                 )}
               >
                 {unansweredCount}

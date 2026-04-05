@@ -200,7 +200,7 @@ const ModeCard = ({
       {/* CTA button — always visible, only this is clickable */}
       {isLocked ? (
         <span
-          className="inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium mt-auto bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-sm w-full px-3 py-2 text-[13px] font-medium mt-auto bg-border text-muted-foreground cursor-not-allowed"
         >
           Unlock at {lockProgress?.requiredReadiness ?? 65}% Readiness
         </span>

@@ -1,22 +1,15 @@
 import { cn } from '@/lib/utils'
+import { cva } from 'class-variance-authority'
 import { SlateCampLogomark } from '@/components/graphics/logos/SlateCampLogomark'
 
 type LogoSize = 'sm' | 'md' | 'lg' | 'xl'
 
 type LogoVariant = 'default' | 'monochrome' | 'inverted' | 'landing'
 
-export interface LogoProps {
-  className?: string
+export interface LogoProps extends Omit<React.ComponentProps<'div'>, 'children'> {
   size?: LogoSize
   variant?: LogoVariant
   showText?: boolean
-}
-
-const SIZE_CLASSES: Record<LogoSize, string> = {
-  sm: 'text-[13px]',
-  md: 'text-[15px]',
-  lg: 'text-[17px]',
-  xl: 'text-[20px]',
 }
 
 const ICON_SIZES: Record<LogoSize, number> = {
@@ -26,13 +19,38 @@ const ICON_SIZES: Record<LogoSize, number> = {
   xl: 32,
 }
 
+const logoTextVariants = cva(
+  'inline-flex items-baseline gap-[1px] font-semibold leading-none logo-sora',
+  {
+    variants: {
+      size: {
+        sm: 'text-[13px]',
+        md: 'text-[15px]',
+        lg: 'text-[17px]',
+        xl: 'text-[20px]',
+      },
+      variant: {
+        default: '',
+        monochrome: '',
+        inverted: 'text-white',
+        landing: '',
+      },
+    },
+    defaultVariants: {
+      size: 'md',
+      variant: 'default',
+    },
+  },
+)
+
 export const SlateCampLogo = ({
   className,
   size = 'md',
   variant = 'default',
   showText = true,
+  style,
+  ...props
 }: LogoProps) => {
-  const sizeClass = SIZE_CLASSES[size]
   const iconSize = ICON_SIZES[size]
 
   const isInverted = variant === 'inverted'
@@ -43,10 +61,11 @@ export const SlateCampLogo = ({
   
   // Apply direct style if not inverted to ensure the specific hex is used
   const logoStyle = !isInverted ? { color: COBALT_HEX } : {}
+  const mergedStyle = { ...style, ...logoStyle }
   const logoColorClass = isInverted ? 'text-white' : ''
 
   return (
-    <div className={cn('inline-flex items-center gap-2', className)} style={logoStyle}>
+    <div className={cn('inline-flex items-center gap-2', className)} style={mergedStyle} {...props}>
       <SlateCampLogomark
         size={iconSize}
         className={logoColorClass}
@@ -63,8 +82,7 @@ export const SlateCampLogo = ({
       {showText && (
         <span
           className={cn(
-            'inline-flex items-baseline gap-[1px] font-semibold leading-none logo-sora',
-            sizeClass,
+            logoTextVariants({ size, variant }),
             logoColorClass
           )}
         >

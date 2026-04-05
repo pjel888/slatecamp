@@ -29,7 +29,7 @@ const WidgetCard = ({ c }: { c: ComponentMeta }) => (
       <span className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-150">
         {c.title}
       </span>
-      <Badge variant={STATUS_VARIANT[c.status]} size="xs" pill>
+      <Badge variant={STATUS_VARIANT[c.status]} size="xs" shape="pill">
         {c.status}
       </Badge>
     </div>

@@ -1,3 +1,4 @@
+import { cssVars } from '@/components/graphics/tokens'
 import { Starburst } from '@/components/marketing/LandingPrimitives'
 
 /* ── Shared split layout for feature sections ── */
@@ -18,7 +19,7 @@ export const FeatureSectionLayout = ({
       dark
         ? 'bg-camp-black border-white/10'
         : amber
-          ? 'bg-camp-amber border-[#D4851A]/40'
+          ? 'bg-camp-amber border-warning/40'
           : 'border-border-design bg-muted'
     }`}
   >
@@ -37,7 +38,7 @@ export const FeatureSectionLayout = ({
 export const FeatureCheckItem = ({
   title,
   description,
-  accentColor = '#1B3FC4',
+  accentColor = cssVars.primary,
   textDark = false,
 }: {
   title: string
@@ -48,12 +49,12 @@ export const FeatureCheckItem = ({
   <div className='flex items-start gap-3'>
     <div
       className='flex h-7 w-7 shrink-0 items-center justify-center rounded-[6px] text-[11px] font-bold'
-      style={{ background: accentColor, color: accentColor === '#F5A623' ? '#111' : '#fff' }}
+      style={{ background: accentColor, color: accentColor === cssVars.accent ? 'var(--foreground)' : 'white' }}
     >
       ✓
     </div>
     <div>
-      <div className={`text-[13px] font-bold ${textDark ? 'text-white' : 'text-[#111]'}`}>
+      <div className={`text-[13px] font-bold ${textDark ? 'text-white' : 'text-camp-black'}`}>
         {title}
       </div>
       <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/50' : 'text-text-2'}`}>
@@ -98,11 +99,11 @@ export const FeaturePill = ({
 }) => {
   const styles = {
     cobalt: 'border-camp-cobalt/25 bg-camp-cobalt/8 text-camp-cobalt',
-    amber: 'border-camp-amber/25 bg-camp-amber/10 text-[#9A6B15]',
+    amber: 'border-camp-amber/25 bg-camp-amber/10 text-warning-700',
     green: 'border-camp-green/25 bg-camp-green/8 text-camp-green',
     'muted-light': 'border-border-design text-text-2',
     'muted-dark': 'border-white/15 text-white/50',
-    'on-amber': 'border-black/20 bg-black/[0.08] text-[#111]',
+    'on-amber': 'border-black/20 bg-black/[0.08] text-camp-black',
   }
 
   return (

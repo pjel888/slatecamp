@@ -40,7 +40,7 @@ const PressureLevelSelector = ({
 
   return (
     <div className="space-y-2.5">
-      <p className="text-[12px] font-medium uppercase tracking-wide text-[#8896A7]">
+      <p className="text-[12px] font-medium uppercase tracking-wide text-muted-foreground">
         Pressure Level
       </p>
 
@@ -63,10 +63,10 @@ const PressureLevelSelector = ({
               className={cn(
                 'flex-1 flex flex-col items-center gap-1.5 px-2 py-3 rounded-md border transition-colors duration-150 ease-out text-center',
                 isSelected && isUnlocked
-                  ? 'border-[#1B3FC4] bg-[#EEF2FC]'
+                  ? 'border-primary bg-primary-50'
                   : isUnlocked
-                    ? 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/40 cursor-pointer'
-                    : 'border-[#D4DAE3] bg-[#F8F7F5] cursor-not-allowed opacity-60',
+                    ? 'border-border bg-white hover:border-primary/40 cursor-pointer'
+                    : 'border-border bg-surface-light cursor-not-allowed opacity-60',
               )}
             >
               {/* Level number pip */}
@@ -74,10 +74,10 @@ const PressureLevelSelector = ({
                 className={cn(
                   'flex items-center justify-center h-6 w-6 rounded-full text-[11px] font-semibold',
                   isSelected && isUnlocked
-                    ? 'bg-[#1B3FC4] text-white'
+                    ? 'bg-primary text-white'
                     : isUnlocked
-                      ? 'bg-[#D4DAE3] text-[#4A5568]'
-                      : 'bg-[#D4DAE3] text-[#8896A7]',
+                      ? 'bg-border text-text-secondary'
+                      : 'bg-border text-muted-foreground',
                 )}
                 aria-hidden="true"
               >
@@ -88,15 +88,15 @@ const PressureLevelSelector = ({
               <span
                 className={cn(
                   'text-[12px] font-medium leading-tight',
-                  isSelected && isUnlocked ? 'text-[#1B3FC4]' : 'text-[#1A2332]',
-                  !isUnlocked && 'text-[#8896A7]',
+                  isSelected && isUnlocked ? 'text-primary' : 'text-foreground',
+                  !isUnlocked && 'text-muted-foreground',
                 )}
               >
                 {config.name}
               </span>
 
               {/* Description or unlock hint */}
-              <span className="text-[11px] leading-snug text-[#8896A7]">
+              <span className="text-[11px] leading-snug text-muted-foreground">
                 {isUnlocked
                   ? config.description
                   : `Unlock at ${UNLOCK_THRESHOLDS[level]}% Readiness`}
@@ -107,8 +107,8 @@ const PressureLevelSelector = ({
       </div>
 
       {/* Current readiness context */}
-      <p className="text-[11px] text-[#8896A7]">
-        Your Readiness Score: <span className="font-medium text-[#4A5568]">{currentRS}%</span>
+      <p className="text-[11px] text-muted-foreground">
+        Your Readiness Score: <span className="font-medium text-text-secondary">{currentRS}%</span>
       </p>
     </div>
   )

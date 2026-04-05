@@ -1,6 +1,7 @@
 'use client'
 
 import { Backspace } from '@phosphor-icons/react'
+import { cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
@@ -18,19 +19,81 @@ interface QuizOptionProps {
   name: string
 }
 
-const STATE_CLASSES: Record<OptionState, string> = {
-  default: 'bg-white border-[#D4DAE3] text-[#1A2332] hover:border-[#1B3FC4]/40 hover:shadow-sm cursor-pointer',
-  selected: 'bg-[#EEF2FC] border-[#1B3FC4] text-[#1A2332] cursor-pointer',
-  correct: 'bg-[#EDFAF4] border-[#2D9F6F] text-[#1A2332] cursor-default',
-  incorrect: 'bg-[#FDF0F0] border-[#D64545] text-[#1A2332] cursor-default',
-}
+const optionVariants = cva(
+  'flex min-h-[52px] w-full items-center gap-3 rounded-md border px-4 py-3 touch-manipulation',
+  {
+    variants: {
+      state: {
+        default: 'cursor-pointer border-border bg-white text-foreground hover:border-primary/40 hover:shadow-sm',
+        selected: 'cursor-pointer border-primary bg-primary-50 text-foreground',
+        correct: 'cursor-default border-success bg-success-50 text-foreground',
+        incorrect: 'cursor-default border-destructive bg-destructive-50 text-foreground',
+      },
+      motion: {
+        true: 'transition-[border-color,background-color,color,box-shadow,opacity] duration-150 ease-out',
+        false: '',
+      },
+      subdued: {
+        true: 'pointer-events-none opacity-60',
+        false: '',
+      },
+      eliminated: {
+        true: 'opacity-50',
+        false: '',
+      },
+    },
+  },
+)
 
-const LETTER_CLASSES: Record<OptionState, string> = {
-  default: 'bg-[#F8F7F5] text-[#4A5568]',
-  selected: 'bg-[#1B3FC4] text-white',
-  correct: 'bg-[#2D9F6F] text-white',
-  incorrect: 'bg-[#D64545] text-white',
-}
+const letterVariants = cva(
+  'flex h-6 w-6 shrink-0 items-center justify-center rounded-sm text-xs font-semibold',
+  {
+    variants: {
+      state: {
+        default: 'bg-surface-light text-text-secondary',
+        selected: 'bg-primary text-primary-foreground',
+        correct: 'bg-success text-white',
+        incorrect: 'bg-destructive text-white',
+      },
+      motion: {
+        true: 'transition-colors duration-150 ease-out',
+        false: '',
+      },
+      eliminated: {
+        true: 'bg-border text-muted-foreground',
+        false: '',
+      },
+    },
+    compoundVariants: [
+      {
+        state: 'default',
+        eliminated: true,
+        className: 'bg-border text-muted-foreground',
+      },
+    ],
+  },
+)
+
+const eliminateButtonVariants = cva(
+  'flex h-11 w-11 shrink-0 items-center justify-center rounded-sm touch-manipulation focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
+  {
+    variants: {
+      state: {
+        default:
+          'text-muted-foreground hover:bg-surface-light hover:text-text-secondary lg:opacity-0 lg:group-hover:opacity-100',
+        eliminated: 'bg-destructive/5 text-destructive hover:bg-destructive/10',
+      },
+      motion: {
+        true: 'transition-[background-color,color,opacity] duration-150 ease-out',
+        false: '',
+      },
+      hidden: {
+        true: 'pointer-events-none opacity-0',
+        false: '',
+      },
+    },
+  },
+)
 
 export const QuizOption = ({
   id,
@@ -44,17 +107,20 @@ export const QuizOption = ({
   name,
 }: QuizOptionProps) => {
   const reducedMotion = useReducedMotion()
-  const isSelected = state === 'selected' || (state === 'incorrect' && isEliminated) // simplified logic check
+  const isDefaultState = state === 'default'
+  const showEliminatedStyling = isEliminated && isDefaultState
+  const isSubdued = isDisabled && isDefaultState
 
   return (
     <div className="relative group">
       <label
         className={cn(
-          'flex items-center gap-3 w-full rounded-md border px-4 py-3 min-h-[52px]',
-          !reducedMotion && 'transition-all duration-150 ease-out',
-          STATE_CLASSES[state],
-          isDisabled && state === 'default' && 'pointer-events-none opacity-60',
-          isEliminated && state === 'default' && 'opacity-50',
+          optionVariants({
+            state,
+            motion: !reducedMotion,
+            subdued: isSubdued,
+            eliminated: showEliminatedStyling,
+          }),
         )}
       >
         <input
@@ -71,11 +137,11 @@ export const QuizOption = ({
         {/* Letter badge */}
         <span
           className={cn(
-            'flex-shrink-0 w-6 h-6 rounded-sm flex items-center justify-center',
-            'text-xs font-semibold transition-colors duration-150',
-            isEliminated && state === 'default'
-              ? 'bg-[#D4DAE3] text-[#8896A7]'
-              : LETTER_CLASSES[state],
+            letterVariants({
+              state,
+              motion: !reducedMotion,
+              eliminated: showEliminatedStyling,
+            }),
           )}
           aria-hidden="true"
         >
@@ -85,8 +151,8 @@ export const QuizOption = ({
         {/* Option text */}
         <span
           className={cn(
-            'text-sm leading-relaxed flex-1',
-            isEliminated && state === 'default' && 'line-through decoration-[#8896A7]/60',
+            'flex-1 text-sm leading-relaxed',
+            showEliminatedStyling && 'line-through decoration-muted-foreground/60',
           )}
         >
           {text}
@@ -102,20 +168,16 @@ export const QuizOption = ({
           }}
           disabled={isDisabled}
           className={cn(
-            'flex-shrink-0 flex items-center justify-center',
-            'w-8 h-8 rounded-sm',
-            'transition-colors duration-150 ease-out',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4]/30',
-            isDisabled
-              ? 'opacity-0 pointer-events-none'
-              : isEliminated
-                ? 'text-[#D64545] bg-[#D64545]/5 hover:bg-[#D64545]/10'
-                : 'text-[#8896A7] hover:text-[#4A5568] hover:bg-[#F8F7F5] lg:opacity-0 lg:group-hover:opacity-100',
+            eliminateButtonVariants({
+              state: isEliminated ? 'eliminated' : 'default',
+              motion: !reducedMotion,
+              hidden: isDisabled,
+            }),
           )}
           aria-label={isEliminated ? `Restore option ${letter}` : `Eliminate option ${letter}`}
           aria-pressed={isEliminated}
         >
-          <Backspace size={14} weight={isEliminated ? "fill" : "regular"} aria-hidden="true" />
+          <Backspace size={14} weight={isEliminated ? 'fill' : 'regular'} aria-hidden="true" />
         </button>
       </label>
     </div>

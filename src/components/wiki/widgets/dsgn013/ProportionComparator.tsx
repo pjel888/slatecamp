@@ -55,12 +55,12 @@ export const ProportionComparator = () => {
   const [activeIdx, setActiveIdx] = useState(2) // Golden ratio as default
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-[#E0DED8] overflow-hidden bg-white dark:bg-wiki-ink dark:border-[#3A3835]">
-      <div className="px-5 py-3.5 bg-muted border-b border-[#E0DED8] dark:bg-[#252420] dark:border-[#3A3835]">
+    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+      <div className="px-5 py-3.5 bg-muted border-b border-wiki-border dark:bg-wiki-surface-dark dark:border-wiki-invert-divider">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Room Proportion Comparator
         </div>
-        <div className="text-xs text-ink-muted mt-0.5 dark:text-[#A8A8A5]">
+        <div className="text-xs text-ink-muted mt-0.5 dark:text-wiki-muted">
           Tap a proportion to see its spatial quality and design implications
         </div>
       </div>
@@ -104,11 +104,11 @@ export const ProportionComparator = () => {
                 </text>
               </svg>
               <div className={`font-[var(--font-dm-mono)] text-[11px] mt-2 uppercase tracking-[0.06em] transition-colors duration-150 ${
-                isActive ? 'text-camp-cobalt font-medium' : 'text-[#A8A8A5]'
+                isActive ? 'text-camp-cobalt font-medium' : 'text-wiki-muted'
               }`}>
                 {p.label}
               </div>
-              <div className={`text-[11px] mt-0.5 ${isActive ? 'text-wiki-ink font-medium dark:text-[#E2E0D8]' : 'text-[#A8A8A5]'}`}>
+              <div className={`text-[11px] mt-0.5 ${isActive ? 'text-wiki-ink font-medium dark:text-wiki-invert-heading' : 'text-wiki-muted'}`}>
                 {p.quality}
               </div>
             </button>
@@ -117,15 +117,15 @@ export const ProportionComparator = () => {
       </div>
 
       {/* Info */}
-      <div className="px-5 py-4 border-t border-[#ECEAE4] dark:border-[#3A3835]">
-        <div className="font-semibold text-sm text-wiki-ink mb-1.5 dark:text-[#E2E0D8]">
+      <div className="px-5 py-4 border-t border-wiki-divider dark:border-wiki-invert-divider">
+        <div className="font-semibold text-sm text-wiki-ink mb-1.5 dark:text-wiki-invert-heading">
           {PROPORTIONS[activeIdx].ratio} — {PROPORTIONS[activeIdx].label}
         </div>
-        <p className="text-[13px] text-[#3D3D3A] leading-relaxed mb-2 dark:text-[#C8C6C0]">
+        <p className="text-[13px] text-wiki-body leading-relaxed mb-2 dark:text-wiki-invert-body">
           {PROPORTIONS[activeIdx].description}
         </p>
-        <div className="text-[12px] text-ink-muted dark:text-[#A8A8A5]">
-          <strong className="text-wiki-ink dark:text-[#E2E0D8]">Common uses:</strong> {PROPORTIONS[activeIdx].examples}
+        <div className="text-[12px] text-ink-muted dark:text-wiki-muted">
+          <strong className="text-wiki-ink dark:text-wiki-invert-heading">Common uses:</strong> {PROPORTIONS[activeIdx].examples}
         </div>
       </div>
     </div>

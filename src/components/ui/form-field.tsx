@@ -1,13 +1,11 @@
 import { cn } from '@/lib/utils'
 
-interface FormFieldProps {
-  label: string
+interface FormFieldProps extends React.ComponentProps<'div'> {
+  label: React.ReactNode
   htmlFor?: string
   required?: boolean
-  error?: string
-  hint?: string
-  children: React.ReactNode
-  className?: string
+  error?: React.ReactNode
+  hint?: React.ReactNode
 }
 
 const FormField = ({
@@ -18,14 +16,17 @@ const FormField = ({
   hint,
   children,
   className,
+  ...props
 }: FormFieldProps) => {
   return (
     <div
       data-slot="form-field"
+      data-invalid={error ? true : undefined}
       className={cn('space-y-1.5', className)}
-      {...(error ? { 'data-invalid': true } : {})}
+      {...props}
     >
       <label
+        data-slot="form-field-label"
         htmlFor={htmlFor}
         className="text-xs font-medium text-foreground"
       >
@@ -34,12 +35,12 @@ const FormField = ({
       </label>
       {children}
       {error && (
-        <p className="text-[11px] text-destructive" role="alert">
+        <p data-slot="form-field-error" className="text-[11px] text-destructive" role="alert">
           {error}
         </p>
       )}
       {hint && !error && (
-        <p className="text-[11px] text-muted-foreground">{hint}</p>
+        <p data-slot="form-field-hint" className="text-[11px] text-muted-foreground">{hint}</p>
       )}
     </div>
   )

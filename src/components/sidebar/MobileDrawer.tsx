@@ -70,7 +70,7 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
           // Left-edge active indicator — bleeds into px-2.5 (10px) padding zone
           'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-[18px]',
-          'before:bg-camp-cobalt dark:before:bg-[#4F6AE8]',
+          'before:bg-camp-cobalt dark:before:bg-primary-400',
           'before:rounded-r-sm',
           "before:content-['']",
         ],

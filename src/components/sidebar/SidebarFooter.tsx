@@ -57,7 +57,7 @@ export const SidebarFooter = ({
             'h-[22px] w-[22px] rounded-full overflow-hidden',
             'flex items-center justify-center shrink-0',
             !userDisplay.avatarUrl &&
-              'bg-gradient-to-br from-camp-cobalt to-[#6366F1]',
+              'bg-gradient-to-br from-camp-cobalt to-primary-400',
           )}
         >
           {userDisplay.avatarUrl ? (
@@ -94,7 +94,7 @@ export const SidebarFooter = ({
                 'ml-1.5 inline-flex items-center',
                 'font-mono text-[7.5px] uppercase tracking-[0.04em]',
                 'bg-camp-cobalt/[0.07] text-camp-cobalt',
-                'dark:bg-[#4F6AE8]/10 dark:text-[#4F6AE8]',
+                'dark:bg-primary-400/10 dark:text-primary',
                 'rounded-[2px] px-1',
               )}
             >

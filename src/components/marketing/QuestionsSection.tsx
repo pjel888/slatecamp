@@ -30,7 +30,7 @@ const QuizMockup = () => (
 
     {/* Question body */}
     <div className='p-4'>
-      <p className='mb-3 text-[13px] font-semibold leading-snug text-[#111]'>
+      <p className='mb-3 text-[13px] font-semibold leading-snug text-camp-black'>
         Under PD 1096, what is the minimum ceiling height for habitable rooms
         on the ground floor of a residential building?
       </p>
@@ -46,10 +46,10 @@ const QuizMockup = () => (
           key={opt.label}
           className={`mb-1.5 flex items-center gap-2.5 rounded-[6px] border-[1.5px] px-3 py-2 text-[12px] ${
             opt.state === 'correct'
-              ? 'border-camp-green bg-[#f0fdf4] text-camp-green'
+              ? 'border-camp-green bg-success-50 text-camp-green'
               : opt.state === 'selected'
                 ? 'border-camp-cobalt bg-primary-50 text-camp-cobalt'
-                : 'border-border-design text-[#555]'
+                : 'border-border-design text-text-2'
           }`}
         >
           <div
@@ -67,7 +67,7 @@ const QuizMockup = () => (
         <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-camp-cobalt'>
           Explanation
         </div>
-        <p className='text-[11px] leading-relaxed text-[#555]'>
+        <p className='text-[11px] leading-relaxed text-text-2'>
           Section 808 of PD 1096 specifies that habitable rooms must have a minimum
           ceiling height of 2.70m on the ground floor, and 2.40m on floors above.
           This is a commonly tested provision.
@@ -91,7 +91,7 @@ export const QuestionsSection = () => (
       </StaggerItem>
 
       <StaggerItem>
-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-[#111] sm:text-[34px]'>
+        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
           2,400+ questions built for
           <br />
           the ALE. Every single one.

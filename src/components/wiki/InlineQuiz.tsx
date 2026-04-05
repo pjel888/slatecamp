@@ -40,7 +40,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
 
       {/* Body */}
       <div className="p-5 bg-white dark:bg-wiki-ink">
-        <p className="text-sm font-semibold text-wiki-ink mb-3.5 leading-relaxed dark:text-[#E2E0D8]">
+        <p className="text-sm font-semibold text-wiki-ink mb-3.5 leading-relaxed dark:text-wiki-invert-heading">
           {question}
         </p>
 
@@ -49,18 +49,18 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
             const isSelected = i === selectedIndex
             const isCorrectOption = opt.is_correct
 
-            let containerStyle = 'border-[#E0DED8] hover:border-camp-cobalt hover:bg-cobalt-light cursor-pointer'
-            let letterStyle = 'border-[#E0DED8] text-[#3D3D3A]'
+            let containerStyle = 'border-wiki-border hover:border-camp-cobalt hover:bg-cobalt-light cursor-pointer'
+            let letterStyle = 'border-wiki-border text-wiki-body'
 
             if (isAnswered) {
               if (isCorrectOption) {
                 containerStyle = 'border-camp-green bg-success-50'
                 letterStyle = 'bg-camp-green text-white border-camp-green'
               } else if (isSelected && !isCorrectOption) {
-                containerStyle = 'border-camp-red bg-[#FFF0EF]'
+                containerStyle = 'border-camp-red bg-destructive-50'
                 letterStyle = 'bg-camp-red text-white border-camp-red'
               } else {
-                containerStyle = 'border-[#E0DED8] opacity-50'
+                containerStyle = 'border-wiki-border opacity-50'
               }
             }
 
@@ -70,7 +70,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
                 type="button"
                 onClick={() => handleSelect(i)}
                 disabled={isAnswered}
-                className={`flex items-start gap-2.5 px-3.5 py-2.5 border rounded-lg transition-all duration-150 text-left text-[13px] text-[#3D3D3A] dark:text-[#C8C6C0] ${containerStyle}`}
+                className={`flex items-start gap-2.5 px-3.5 py-2.5 border rounded-lg transition-all duration-150 text-left text-[13px] text-wiki-body dark:text-wiki-invert-body ${containerStyle}`}
               >
                 <span
                   className={`w-[22px] h-[22px] rounded-full border-[1.5px] flex items-center justify-center text-[11px] font-semibold shrink-0 mt-px font-[var(--font-dm-mono)] transition-all duration-150 ${letterStyle}`}
@@ -85,7 +85,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
 
         {/* Rationale */}
         {isAnswered && (
-          <div className="mt-3.5 p-3.5 bg-success-50 rounded-lg text-[13px] text-[#3D3D3A] leading-relaxed dark:bg-[#1B7A3C10] dark:text-[#C8C6C0]">
+          <div className="mt-3.5 p-3.5 bg-success-50 rounded-lg text-[13px] text-wiki-body leading-relaxed dark:bg-camp-green/10 dark:text-wiki-invert-body">
             <span className="font-semibold text-camp-green">Correct: {LETTERS[options.findIndex(o => o.is_correct)]}.</span>{' '}
             {rationale}
           </div>

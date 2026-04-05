@@ -9,7 +9,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
   if (alerts.length === 0) return null
 
   return (
-    <div className="rounded-md bg-[#E63329] shadow-none">
+    <div className="rounded-md bg-camp-red shadow-none">
       {alerts.map((alert, index) => (
         <div key={alert.subject}>
           {index > 0 && (
@@ -25,7 +25,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
             </p>
             <Link
               href={`/dashboard/testing?subject=${alert.aleId ?? ''}`}
-              className="mt-2 inline-block rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+              className="mt-2 inline-block rounded-sm bg-primary px-3 py-1.5 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             >
               Study {alert.subject} Now →
             </Link>

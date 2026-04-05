@@ -37,7 +37,7 @@ const AdminTaxonomyCoveragePage = async () => {
         />
         <EmptyState
           icon={<GridFour size={20} />}
-          message="No taxonomy data found"
+          title="No taxonomy data found"
           description="Add taxonomy nodes to see coverage analysis here."
         />
       </div>

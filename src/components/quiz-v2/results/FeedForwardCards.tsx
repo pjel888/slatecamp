@@ -30,26 +30,26 @@ const CARD_CONFIG: Record<
   quiz: {
     icon: Lightning,
     ctaLabel: 'Start 10-Question Session',
-    accentClass: 'text-[#1B3FC4]',
-    iconBgClass: 'bg-[#EEF2FC]',
+    accentClass: 'text-primary',
+    iconBgClass: 'bg-primary-50',
   },
   wiki: {
     icon: BookOpen,
     ctaLabel: 'Open Article',
-    accentClass: 'text-[#1B3FC4]',
-    iconBgClass: 'bg-[#EEF2FC]',
+    accentClass: 'text-primary',
+    iconBgClass: 'bg-primary-50',
   },
   review: {
     icon: ArrowsClockwise,
     ctaLabel: 'Start Review',
-    accentClass: 'text-[#D4951A]',
-    iconBgClass: 'bg-[#FEF8ED]',
+    accentClass: 'text-warning',
+    iconBgClass: 'bg-warning-50',
   },
   rest: {
     icon: Coffee,
     ctaLabel: 'Take a Break',
-    accentClass: 'text-[#4A5568]',
-    iconBgClass: 'bg-[#F8F7F5]',
+    accentClass: 'text-text-secondary',
+    iconBgClass: 'bg-surface-light',
   },
 }
 
@@ -63,7 +63,7 @@ const FeedForwardCard = ({ rec }: { rec: Recommendation }) => {
   const cardContent = (
     <div
       className={cn(
-        'flex flex-col gap-3 rounded-md border border-[#D4DAE3] bg-white p-4 h-full',
+        'flex flex-col gap-3 rounded-md border border-border bg-white p-4 h-full',
         'transition-shadow duration-150 ease-out',
         !isRest && 'hover:shadow-sm',
       )}
@@ -80,10 +80,10 @@ const FeedForwardCard = ({ rec }: { rec: Recommendation }) => {
 
       {/* Text — flex-1 fills available space so CTA is always pinned to bottom */}
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-semibold text-[#1A2332] leading-snug line-clamp-2">
+        <p className="text-sm font-semibold text-foreground leading-snug line-clamp-2">
           {rec.title}
         </p>
-        <p className="mt-1 text-xs text-[#4A5568] leading-relaxed line-clamp-2">
+        <p className="mt-1 text-xs text-text-secondary leading-relaxed line-clamp-2">
           {rec.description}
         </p>
       </div>
@@ -92,7 +92,7 @@ const FeedForwardCard = ({ rec }: { rec: Recommendation }) => {
       <span
         className={cn(
           'inline-flex items-center text-xs font-semibold shrink-0 mt-auto',
-          isRest ? 'text-[#8896A7]' : config.accentClass,
+          isRest ? 'text-muted-foreground' : config.accentClass,
         )}
       >
         {config.ctaLabel}
@@ -108,7 +108,7 @@ const FeedForwardCard = ({ rec }: { rec: Recommendation }) => {
   return (
     <Link
       href={rec.action.href}
-      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-2 rounded-md"
+      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
     >
       {cardContent}
     </Link>
@@ -122,7 +122,7 @@ export const FeedForwardCards = ({ recommendations }: FeedForwardCardsProps) => 
 
   return (
     <div className="space-y-3">
-      <p className="text-xs font-semibold uppercase tracking-wide text-[#8896A7]">
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
         Suggested Next Steps
       </p>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">

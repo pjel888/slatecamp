@@ -11,6 +11,7 @@ import {
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
+import { useQuizStore } from '@/stores/useQuizStore'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -18,7 +19,7 @@ type PaletteFilter = 'all' | 'unanswered' | 'flagged'
 
 interface QuestionPaletteProps {
   questions: QuestionForClient[]
-  answers: Map<string, QuizAnswerState>
+  answers: Record<string, QuizAnswerState>
   currentIndex: number
   flaggedSet: Set<string>
   onJumpTo: (index: number) => void
@@ -31,13 +32,13 @@ type CellState = 'unanswered' | 'answered' | 'flagged' | 'current' | 'skipped'
 
 const getCellState = (
   question: QuestionForClient,
-  answers: Map<string, QuizAnswerState>,
+  answers: Record<string, QuizAnswerState>,
   flaggedSet: Set<string>,
   currentIndex: number,
   questionIndex: number,
 ): CellState => {
   if (questionIndex === currentIndex) return 'current'
-  const answer = answers.get(question.question_id)
+  const answer = answers[question.question_id]
   if (flaggedSet.has(question.question_id)) return 'flagged'
   if (answer?.isSkipped) return 'skipped'
   if (answer?.selectedOptionId) return 'answered'
@@ -48,15 +49,15 @@ const getCellState = (
 
 const cellStyles: Record<CellState, string> = {
   unanswered:
-    'bg-white border-2 border-[#D4DAE3] text-[#8896A7]',
+    'bg-white border-2 border-border text-muted-foreground',
   answered:
-    'bg-[#1B3FC4] border-2 border-[#1B3FC4] text-white',
+    'bg-primary border-2 border-primary text-white',
   flagged:
-    'bg-[#E8853A] border-2 border-[#E8853A] text-white',
+    'bg-camp-orange border-2 border-camp-orange text-white',
   current:
-    'bg-white border-2 border-[#1B3FC4] text-[#1B3FC4] ring-2 ring-[#1B3FC4] ring-offset-1 font-bold',
+    'bg-white border-2 border-primary text-primary ring-2 ring-primary ring-offset-1 font-bold',
   skipped:
-    'bg-white border-2 border-dashed border-[#8896A7] text-[#8896A7]',
+    'bg-white border-2 border-dashed border-muted-foreground text-muted-foreground',
 }
 
 // ─── CellIcon — ensures color is always paired with shape/icon ───────────────
@@ -178,11 +179,11 @@ export const QuestionPalette = ({
   )
 
   const answeredCount = questions.filter(
-    (q) => answers.get(q.question_id)?.selectedOptionId,
+    (q) => answers[q.question_id]?.selectedOptionId,
   ).length
   const flaggedCount = flaggedSet.size
   const unansweredCount = questions.filter((q) => {
-    const a = answers.get(q.question_id)
+    const a = answers[q.question_id]
     return !a?.selectedOptionId && !a?.isSkipped
   }).length
 
@@ -208,12 +209,12 @@ export const QuestionPalette = ({
         onKeyDown={handleKeyDown}
       >
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-[#D4DAE3] px-4 py-3">
+        <div className="flex items-center justify-between border-b border-border px-4 py-3">
           <div>
-            <h2 className="text-sm font-semibold text-[#1A2332]">
+            <h2 className="text-sm font-semibold text-foreground">
               Question Palette
             </h2>
-            <p className="text-xs text-[#4A5568]">
+            <p className="text-xs text-text-secondary">
               {answeredCount} of {questions.length} answered
             </p>
           </div>
@@ -229,7 +230,7 @@ export const QuestionPalette = ({
         </div>
 
         {/* Filter pills */}
-        <div className="flex gap-2 border-b border-[#D4DAE3] px-4 py-2">
+        <div className="flex gap-2 border-b border-border px-4 py-2">
           {(['all', 'unanswered', 'flagged'] as PaletteFilter[]).map((f) => {
             const count =
               f === 'all'
@@ -245,8 +246,8 @@ export const QuestionPalette = ({
                 className={cn(
                   'rounded-sm px-2 py-1 text-xs font-medium transition-colors duration-150',
                   filter === f
-                    ? 'bg-[#EEF2FC] text-[#1B3FC4]'
-                    : 'text-[#4A5568] hover:bg-[#F8F7F5]',
+                    ? 'bg-primary-50 text-primary'
+                    : 'text-text-secondary hover:bg-surface-light',
                 )}
                 aria-pressed={filter === f}
               >
@@ -254,7 +255,7 @@ export const QuestionPalette = ({
                 <span
                   className={cn(
                     'ml-1 rounded-sm px-1 py-0.5 text-[10px]',
-                    filter === f ? 'bg-[#1B3FC4] text-white' : 'bg-[#D4DAE3] text-[#4A5568]',
+                    filter === f ? 'bg-primary text-white' : 'bg-border text-text-secondary',
                   )}
                 >
                   {count}
@@ -265,11 +266,11 @@ export const QuestionPalette = ({
         </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap gap-x-3 gap-y-1 border-b border-[#D4DAE3] px-4 py-2">
-          <LegendItem color="bg-[#1B3FC4]" label="Answered" icon={<CheckCircle size={8} weight="fill" aria-hidden="true" />} />
-          <LegendItem color="bg-[#E8853A]" label="Flagged" icon={<Flag size={8} weight="fill" aria-hidden="true" />} />
-          <LegendItem color="bg-white border border-[#D4DAE3]" label="Unanswered" icon={<Circle size={8} weight="regular" aria-hidden="true" />} />
-          <LegendItem color="bg-white border border-dashed border-[#8896A7]" label="Skipped" icon={<ArrowUUpLeft size={8} weight="regular" aria-hidden="true" />} />
+        <div className="flex flex-wrap gap-x-3 gap-y-1 border-b border-border px-4 py-2">
+          <LegendItem color="bg-primary" label="Answered" icon={<CheckCircle size={8} weight="fill" aria-hidden="true" />} />
+          <LegendItem color="bg-camp-orange" label="Flagged" icon={<Flag size={8} weight="fill" aria-hidden="true" />} />
+          <LegendItem color="bg-white border border-border" label="Unanswered" icon={<Circle size={8} weight="regular" aria-hidden="true" />} />
+          <LegendItem color="bg-white border border-dashed border-muted-foreground" label="Skipped" icon={<ArrowUUpLeft size={8} weight="regular" aria-hidden="true" />} />
         </div>
 
         {/* Grid */}
@@ -277,7 +278,7 @@ export const QuestionPalette = ({
           className="flex-1 overflow-y-auto p-4"
         >
           {visibleQuestions.length === 0 ? (
-            <p className="text-center text-sm text-[#8896A7] py-8">
+            <p className="text-center text-sm text-muted-foreground py-8">
               No questions match this filter.
             </p>
           ) : (
@@ -310,7 +311,7 @@ export const QuestionPalette = ({
                         'transition-all duration-150',
                         // 36px desktop, 44px mobile touch target via padding
                         'h-9 w-9 min-h-[44px] min-w-[44px] sm:min-h-[36px] sm:min-w-[36px] sm:h-9 sm:w-9',
-                        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3FC4] focus-visible:ring-offset-1',
+                        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                         'hover:opacity-80',
                         cellStyles[state],
                       )}
@@ -347,6 +348,6 @@ const LegendItem = ({
     >
       {icon}
     </span>
-    <span className="text-[10px] text-[#4A5568]">{label}</span>
+    <span className="text-[10px] text-text-secondary">{label}</span>
   </div>
 )
