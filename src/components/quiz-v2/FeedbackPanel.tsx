@@ -1,18 +1,23 @@
 'use client'
 
-import { useEffect, useState, lazy, Suspense } from 'react'
-import { CheckCircle, ArrowRight, ArrowSquareOut, Lightbulb, ChatCircleDots } from '@phosphor-icons/react'
+import { lazy, Suspense, useEffect, useState } from 'react'
+import {
+  ArrowRight,
+  ArrowSquareOut,
+  ChatCircleDots,
+  CheckCircle,
+  Lightbulb,
+} from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import { MnemonicTip } from './MnemonicTip'
 import { useQuizStore } from '@/stores/useQuizStore'
 import type { FeedbackData, QuestionForClient, QuizMode } from '@/types/quiz-config'
+import { MnemonicTip } from './MnemonicTip'
 
 const SocraticExplorer = lazy(() =>
   import('./SocraticExplorer').then((m) => ({ default: m.SocraticExplorer })),
 )
 
-/** Modes that enable Socratic exploration (learning modes, not timed/exam modes) */
 const SOCRATIC_MODES: QuizMode[] = ['camp', 'focused', 'subject', 'chill']
 
 const ERROR_HEADING_MAP: Record<string, string> = {
@@ -27,9 +32,7 @@ interface FeedbackPanelProps {
   selectedOptionId: string
   gatedDelayMs: number
   onNext: () => void
-  /** Current quiz mode — controls whether Socratic exploration is available */
   mode?: QuizMode | null
-  /** Number of times the student has failed this question (for mnemonic trigger) */
   failCount?: number
 }
 
@@ -49,36 +52,37 @@ export const FeedbackPanel = ({
   const feedbackGateRemainingMs = useQuizStore((s) => s.feedback.feedbackGateRemainingMs)
   const startFeedbackGate = useQuizStore((s) => s.startFeedbackGate)
   const tickFeedbackGate = useQuizStore((s) => s.tickFeedbackGate)
+  const currentIndex = useQuizStore((s) => s.currentIndex)
+  const totalQuestions = useQuizStore((s) => s.totalQuestions)
 
   const showSocraticButton =
     !feedback.isCorrect && mode != null && SOCRATIC_MODES.includes(mode)
-
   const showMnemonic =
     !feedback.isCorrect && failCount >= 2 && feedback.rationale != null
+  const isLastQuestion = totalQuestions > 0 && currentIndex === totalQuestions - 1
+  const nextActionLabel = isLastQuestion ? 'See results' : 'Next question'
 
   useEffect(() => {
     if (gatedDelayMs > 0) {
       startFeedbackGate(gatedDelayMs)
     }
-  }, [gatedDelayMs, feedback.questionId])
+  }, [gatedDelayMs, feedback.questionId, startFeedbackGate])
 
   useEffect(() => {
     if (!feedbackGateActive) return
-    const id = setInterval(() => {
+
+    const intervalId = setInterval(() => {
       tickFeedbackGate()
     }, 100)
-    return () => clearInterval(id)
-  }, [feedbackGateActive])
+
+    return () => clearInterval(intervalId)
+  }, [feedbackGateActive, tickFeedbackGate])
 
   const nextReady = !feedbackGateActive || gatedDelayMs === 0
   const remainingMs = feedbackGateRemainingMs
-
-  const selectedOption = question.options.find((o) => o.id === selectedOptionId)
-  const correctOption = question.options.find((o) => o.id === feedback.correctOptionId)
-
-  // Generation effect: detect non-MCQ question types
+  const selectedOption = question.options.find((option) => option.id === selectedOptionId)
+  const correctOption = question.options.find((option) => option.id === feedback.correctOptionId)
   const isGeneration = feedback.questionType != null && feedback.questionType !== 'mcq'
-
   const countdownSeconds = Math.ceil(remainingMs / 1000)
   const countdownProgress = gatedDelayMs > 0 ? 1 - remainingMs / gatedDelayMs : 1
 
@@ -88,26 +92,23 @@ export const FeedbackPanel = ({
       aria-live="polite"
       aria-atomic="true"
       className={cn(
-        'rounded-md border p-4 space-y-3 animate-in fade-in slide-in-from-bottom-1 duration-150',
-        feedback.isCorrect
-          ? 'bg-success-50 border-success/20'
-          : 'bg-warning-50 border-warning/20',
+        'animate-in slide-in-from-bottom-1 space-y-3 rounded-md border p-4 fade-in duration-150',
+        feedback.isCorrect ? 'border-success/20 bg-success-50' : 'border-warning/20 bg-warning-50',
       )}
     >
-      {/* Heading row */}
       <div className="flex items-center gap-2">
         {feedback.isCorrect ? (
           <CheckCircle
             size={18}
             weight="fill"
-            className="text-success shrink-0"
+            className="shrink-0 text-success"
             aria-hidden="true"
           />
         ) : (
           <ArrowRight
             size={18}
             weight="bold"
-            className="text-warning shrink-0"
+            className="shrink-0 text-warning"
             aria-hidden="true"
           />
         )}
@@ -127,78 +128,94 @@ export const FeedbackPanel = ({
         </span>
       </div>
 
-      {/* Wrong-answer context — generation questions */}
       {!feedback.isCorrect && isGeneration && (
         <div className="space-y-1.5">
-          <p className="text-xs text-text-secondary leading-relaxed">
-            You answered <span className="font-medium font-mono text-foreground">{selectedOptionId}</span>.
+          <p className="text-xs leading-relaxed text-text-secondary">
+            You answered{' '}
+            <span className="font-mono font-medium text-foreground">{selectedOptionId}</span>.
           </p>
           {feedback.correctAnswer && (
-            <p className="text-xs text-text-secondary leading-relaxed">
-              {feedback.closeness != null && feedback.closeness > 0.8
-                ? <>The correct value is <span className="font-medium font-mono text-foreground">{feedback.correctAnswer}</span>.</>
-                : <>The correct answer is <span className="font-medium font-mono text-foreground">{feedback.correctAnswer}</span>.</>}
+            <p className="text-xs leading-relaxed text-text-secondary">
+              {feedback.closeness != null && feedback.closeness > 0.8 ? (
+                <>
+                  The correct value is{' '}
+                  <span className="font-mono font-medium text-foreground">
+                    {feedback.correctAnswer}
+                  </span>
+                  .
+                </>
+              ) : (
+                <>
+                  The correct answer is{' '}
+                  <span className="font-mono font-medium text-foreground">
+                    {feedback.correctAnswer}
+                  </span>
+                  .
+                </>
+              )}
             </p>
           )}
         </div>
       )}
 
-      {/* Correct-answer context — generation questions */}
       {feedback.isCorrect && isGeneration && feedback.correctAnswer && (
-        <p className="text-xs text-text-secondary leading-relaxed">
-          The answer is <span className="font-medium font-mono text-success">{feedback.correctAnswer}</span>.
+        <p className="text-xs leading-relaxed text-text-secondary">
+          The answer is <span className="font-mono font-medium text-success">{feedback.correctAnswer}</span>.
         </p>
       )}
 
-      {/* Wrong-answer context — MCQ questions */}
       {!feedback.isCorrect && !isGeneration && (
-        <p className="text-xs text-text-secondary leading-relaxed">
+        <p className="text-xs leading-relaxed text-text-secondary">
           {selectedOption && (
             <>
-              You chose <span className="font-medium text-foreground">{selectedOption.letter}. {selectedOption.text}</span>.{' '}
+              You chose{' '}
+              <span className="font-medium text-foreground">
+                {selectedOption.letter}. {selectedOption.text}
+              </span>
+              .{' '}
             </>
           )}
           {correctOption && (
             <>
-              The correct answer is <span className="font-medium text-foreground">{correctOption.letter}. {correctOption.text}</span>.
+              The correct answer is{' '}
+              <span className="font-medium text-foreground">
+                {correctOption.letter}. {correctOption.text}
+              </span>
+              .
             </>
           )}
         </p>
       )}
 
-      {/* Error diagnostic banner — shown above rationale for wrong answers with high-confidence classification */}
       {feedback.errorDiagnostic && !feedback.isCorrect && (
         <div className="flex items-start gap-2 rounded-sm border border-border bg-surface-light px-3 py-2">
           <Lightbulb
             size={14}
             weight="fill"
-            className="text-warning shrink-0 mt-0.5"
+            className="mt-0.5 shrink-0 text-warning"
             aria-hidden="true"
           />
-          <p className="text-xs text-text-secondary leading-relaxed">
+          <p className="text-xs leading-relaxed text-text-secondary">
             {feedback.errorDiagnostic.message}
           </p>
         </div>
       )}
 
-      {/* Rationale */}
       {feedback.rationale && (
-        <p className="text-sm text-text-secondary leading-relaxed">{feedback.rationale}</p>
+        <p className="text-sm leading-relaxed text-text-secondary">{feedback.rationale}</p>
       )}
 
-      {/* Wiki link */}
       {feedback.wikiUrl && (
         <button
           type="button"
           onClick={() => openWikiPanel(feedback.wikiUrl!)}
-          className="inline-flex items-center gap-1 text-xs text-primary hover:underline cursor-pointer"
+          className="inline-flex cursor-pointer items-center gap-1 text-xs text-primary hover:underline"
         >
           <ArrowSquareOut size={12} aria-hidden="true" />
           Read more
         </button>
       )}
 
-      {/* Mnemonic tip — shown for recall questions failed 2+ times */}
       {showMnemonic && (
         <MnemonicTip
           factToRemember={feedback.rationale ?? ''}
@@ -206,17 +223,15 @@ export const FeedbackPanel = ({
         />
       )}
 
-      {/* Gated next button + Socratic exploration */}
-      <div className="pt-1 space-y-2">
-        {/* Countdown explanation + progress bar (always visible when gated) */}
+      <div className="space-y-2 pt-1">
         {gatedDelayMs > 0 && (
           <div className="space-y-1.5">
             <p className="text-[11px] text-muted-foreground">
               {nextReady
-                ? 'Ready — tap Next question to continue'
-                : `Review the explanation — next question in ${countdownSeconds}s`}
+                ? `Ready - tap ${nextActionLabel} to continue`
+                : `Review the explanation - ${nextActionLabel.toLowerCase()} in ${countdownSeconds}s`}
             </p>
-            <div className="h-1 rounded-full bg-border overflow-hidden">
+            <div className="h-1 overflow-hidden rounded-full bg-border">
               <div
                 className={cn(
                   'h-full rounded-full transition-none',
@@ -229,7 +244,6 @@ export const FeedbackPanel = ({
         )}
 
         <div className="flex items-center gap-2">
-          {/* Next button — always visible, disabled until countdown finishes */}
           <Button
             variant="primary"
             size="sm"
@@ -238,13 +252,12 @@ export const FeedbackPanel = ({
             aria-disabled={!nextReady}
             className={cn(
               'transition-all duration-200',
-              !nextReady && 'opacity-50 cursor-not-allowed',
+              !nextReady && 'cursor-not-allowed opacity-50',
             )}
           >
-            Next question
+            {nextActionLabel}
           </Button>
 
-          {/* Socratic exploration trigger — only for wrong answers in learning modes */}
           {showSocraticButton && (
             <Button
               variant="outline"
@@ -259,16 +272,15 @@ export const FeedbackPanel = ({
         </div>
       </div>
 
-      {/* Socratic Explorer slide-over */}
       {socraticOpen && (
         <Suspense fallback={null}>
           <SocraticExplorer
             questionText={question.stem}
             selectedAnswer={
-              question.options.find((o) => o.id === selectedOptionId)?.text ?? ''
+              question.options.find((option) => option.id === selectedOptionId)?.text ?? ''
             }
             correctAnswer={
-              question.options.find((o) => o.id === feedback.correctOptionId)?.text ?? ''
+              question.options.find((option) => option.id === feedback.correctOptionId)?.text ?? ''
             }
             topicName={question.taxonomy_breadcrumb}
             topicId={question.question_id}

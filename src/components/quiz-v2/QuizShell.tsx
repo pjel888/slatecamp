@@ -328,10 +328,16 @@ export const QuizShell = ({
   const handleNext = useCallback(() => {
     directionRef.current = 'forward'
     if (feedbackVisible) {
+      if (currentIndex === totalQuestions - 1) {
+        useQuizStore.setState((state) => ({
+          ui: { ...state.ui, calculatingResults: true },
+        }))
+      }
       hideFeedback()
     }
+    if (currentIndex === totalQuestions - 1) return
     goNext()
-  }, [feedbackVisible, hideFeedback, goNext])
+  }, [feedbackVisible, currentIndex, totalQuestions, hideFeedback, goNext])
 
   const handleToggleFlag = useCallback(() => {
     if (!currentQuestion) return

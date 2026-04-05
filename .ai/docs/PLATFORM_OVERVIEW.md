@@ -1,5 +1,7 @@
 # Technical & Business Audit: SlateCamp
 
+> Live note as of 2026-04-05: use `src/app/globals.css` and `src/app/layout.tsx` for current design-system and typography decisions. This audit remains useful, but some counts and implementation details are older than the live code.
+
 **Date:** March 26, 2026
 **Status:** **[UPDATED — reflects current codebase state]**
 
@@ -17,22 +19,22 @@
 
 ## 2. Tech Stack
 
-| Layer | Technologies |
-|---|---|
-| **Framework** | Next.js App Router, React 19 (Server Components, Server Actions) |
-| **Styling** | Tailwind CSS 4, shadcn/ui, Phosphor Icons |
-| **Database** | Supabase (PostgreSQL 17, ap-northeast-1) with RLS, pgvector, Realtime |
-| **Authentication** | Supabase Auth with SSR (`@supabase/ssr`) |
-| **3D Rendering** | Three.js, @react-three/fiber, @react-three/drei |
-| **Editor** | Tiptap (notes), MDX (wiki) |
-| **Charts** | Recharts |
-| **AI** | Anthropic SDK (Claude), RAG pipeline |
-| **Payments** | Stripe (global) + PayRex (Philippines) |
-| **Validation** | Zod |
-| **State** | Zustand (quiz, lab, notifications) |
-| **Package Manager** | Bun (`bun.lock`) |
-| **Deployment** | Vercel |
-| **Design System** | Campfire |
+| Layer               | Technologies                                                          |
+| ------------------- | --------------------------------------------------------------------- |
+| **Framework**       | Next.js App Router, React 19 (Server Components, Server Actions)      |
+| **Styling**         | Tailwind CSS 4, shadcn/ui, Phosphor Icons                             |
+| **Database**        | Supabase (PostgreSQL 17, ap-northeast-1) with RLS, pgvector, Realtime |
+| **Authentication**  | Supabase Auth with SSR (`@supabase/ssr`)                              |
+| **3D Rendering**    | Three.js, @react-three/fiber, @react-three/drei                       |
+| **Editor**          | Tiptap (notes), MDX (wiki)                                            |
+| **Charts**          | Recharts                                                              |
+| **AI**              | Anthropic SDK (Claude), RAG pipeline                                  |
+| **Payments**        | Stripe (global) + PayRex (Philippines)                                |
+| **Validation**      | Zod                                                                   |
+| **State**           | Zustand (quiz, lab, notifications)                                    |
+| **Package Manager** | Bun (`bun.lock`)                                                      |
+| **Deployment**      | Vercel                                                                |
+| **Design System**   | Campfire                                                              |
 
 ---
 
@@ -42,17 +44,17 @@
 
 The primary product surface. Config-driven via `QuizSessionConfig` JSONB — a single `QuizShell` component handles all 9 modes:
 
-| Mode | Questions | Feedback | Purpose |
-|---|---|---|---|
-| Camp | 20 | Immediate | Guided daily study |
-| Chill | 10 | Immediate, skip-friendly | Low-pressure practice |
-| Subject | 15 | Immediate, adaptive | Single-subject deep dive |
-| Focused | 15 | Immediate | Weakest areas (data-driven) |
-| Custom | User picks | User picks | Full control |
-| Storm | 50 | Deferred (60min timed) | Exam simulation |
-| Full Exam | 200 | 24hr delayed (4hr timed) | ALE simulation |
-| Extended | 100 | Immediate | Stamina training |
-| Article Review | 5 | Immediate | Wiki-integrated |
+| Mode           | Questions  | Feedback                 | Purpose                     |
+| -------------- | ---------- | ------------------------ | --------------------------- |
+| Camp           | 20         | Immediate                | Guided daily study          |
+| Chill          | 10         | Immediate, skip-friendly | Low-pressure practice       |
+| Subject        | 15         | Immediate, adaptive      | Single-subject deep dive    |
+| Focused        | 15         | Immediate                | Weakest areas (data-driven) |
+| Custom         | User picks | User picks               | Full control                |
+| Storm          | 50         | Deferred (60min timed)   | Exam simulation             |
+| Full Exam      | 200        | 24hr delayed (4hr timed) | ALE simulation              |
+| Extended       | 100        | Immediate                | Stamina training            |
+| Article Review | 5          | Immediate                | Wiki-integrated             |
 
 **Key components:** `QuizShell`, `OptionsColumn`, `FeedbackPanel`, `QuizFooter`, `SetupFlow`, `ResultsDashboard`, `ReviewCardList`
 
@@ -108,40 +110,48 @@ Trail types: time-gated, subject mastery, code deep-dive, remediation, exam simu
 ## 4. Proprietary IP & Algorithms
 
 ### I. IRT 2PL Model (`src/lib/srs/irt.ts`)
+
 Selects questions at the optimal challenge point (P ≈ 0.75). Updates user theta via Newton-Raphson step. **Status: Implemented and live.**
 
 ### II. SM-2 with Response-Time Weighting (`src/lib/srs/sm2.ts`)
+
 Quality calculation based on correctness, latency, and confidence. Adjusts ease factor and review intervals. **Status: Implemented and live.**
 
 ### III. Readiness Score Engine (`src/lib/readiness-score.ts`)
+
 6-vector anti-inflation composite. PRC area-weighted (30/30/40). **Status: Implemented and live.**
 
 ### IV. Metacognitive Calibration System (NEW — 16 features implemented)
 
 **Confidence & Calibration:**
+
 - [x] Confidence-weighted scoring — 3-level input (Guessing/Partly sure/Confident) on every question
 - [x] Brier-based Calibration Score — 30-day rolling snapshot stored in `calibration_snapshots`
 - [x] Calibration Curve visualization — Recharts diagonal reference line, overconfidence/underconfidence fills
 - [x] 2x2 Diagnostic Matrix — Confident+Wrong quadrant drives priority review
 
 **Self-Assessment Training:**
+
 - [x] Pre-session Prediction Slider — "How do you think you'll do?" before Storm/FullExam
 - [x] Post-session Postdiction — "How do you think you did?" before score reveal
 - [x] Prediction vs Actual comparison card with trend tracking
 
 **Learning Engine:**
+
 - [x] Successive Relearning — 3 consecutive correct → spaced retests (1d/3d/7d/14d) → "durable"
 - [x] Interleaved Topic Mixing — 70/30 primary/sibling questions, gated at 60% mastery
 - [x] Generation Questions — numeric, short_text, formula with fuzzy answer matching (1.2x EMA weight)
 - [x] Progressive Pressure Ladder — 4 levels (Learning → Exam), unlocked by readiness score
 
 **Feedback Intelligence:**
+
 - [x] Wrong Answer Taxonomy — 6 error categories classified per interaction
 - [x] Feed-Forward Recommendation Engine — 3 post-session action cards
 - [x] Socratic AI Error Exploration — 5-turn Socratic chat + AI-generated mnemonics
 - [x] Pre-Questions Before Wiki — 3-5 MCQs before reading (g=1.25 effect size)
 
 **Retention & Scheduling:**
+
 - [x] Personalized Forgetting Rates — ACT-R decay model per user-topic
 - [x] Storage/Retrieval Strength — Bjork's Theory of Disuse (2-dimension memory model)
 - [x] Review Calendar — 7-day forward view with overdue/due/upcoming topics
@@ -149,12 +159,14 @@ Quality calculation based on correctness, latency, and confidence. Adjusts ease 
 - [x] Adaptive Daily Dose — one-tap personalized study session from 6 signal sources
 
 **Visualizations & Reporting:**
+
 - [x] 7 new analytics charts: Forgetting Curves, Stamina Heatmap, Difficulty/Mastery Scatter, Study Velocity, Pacing/Accuracy, Exam Countdown, Calibration Curve
 - [x] Monthly Progress Report — shareable card with Web Share API
 - [x] Simulation Trajectory — line chart tracking full-exam performance over time
 - [x] Exam Outcome Self-Reporting — for future pass-rate correlation
 
 ### V. Pending IP Features
+
 - [ ] Lucky Guess Detector (time-threshold penalty on suspiciously fast correct answers)
 - [ ] Double-Pass LLM Verification (generator + auditor for zero-hallucination AI tutor)
 - [ ] 3D Bounds Breaking (visual code violation feedback with Warm Red material)
@@ -163,19 +175,32 @@ Quality calculation based on correctness, latency, and confidence. Adjusts ease 
 
 ## 5. Design System: Campfire
 
-Warm, inviting, research-backed. Light mode primary. Inter typeface. Camp Cobalt `#1B3FC4` primary accent.
+Campfire is still the active design language, but the live implementation is broader than the older docs suggested.
 
-| Token | Hex | Usage |
-|---|---|---|
-| Camp Cobalt | `#1B3FC4` | Primary actions, nav, links |
-| Emerald | `#2D9F6F` | Success, correct |
-| Warm Red | `#D64545` | Error, critical |
-| Amber | `#D4951A` | Warning |
-| Surface Light | `#F8F7F5` | Page background (warm white) |
-| Ink Primary | `#1A2332` | Main text |
+- Light mode is primary, with dark mode supported through `next-themes`
+- `font-sans` maps to Atkinson Hyperlegible, not an Inter-only stack
+- Syne and Sora are available for display treatments, and DM Mono is the data/code font
+- New work should prefer semantic Tailwind tokens such as `bg-primary`, `text-foreground`, and `border-border`
+- `globals.css` still exposes legacy Camp Standard aliases for compatibility with older surfaces
 
-- Cards: `rounded-md shadow-none`, Buttons: `rounded-sm`, Modals: `rounded-lg`
-- Transitions: max 300ms. No gamification. No shame language.
+| Role          | Token                     | Value     | Usage                         |
+| ------------- | ------------------------- | --------- | ----------------------------- |
+| Primary       | `--primary`               | `#1B3FC4` | Primary actions, nav, links   |
+| Primary tint  | `--primary-50`            | `#EEF2FC` | Soft emphasis backgrounds     |
+| Primary hover | `--primary-700`           | `#1535A8` | Hover and pressed states      |
+| Success       | `--success` / `--emerald` | `#2D9F6F` | Correct and mastered states   |
+| Warning       | `--warning` / `--amber`   | `#D4951A` | Caution and developing states |
+| Destructive   | `--destructive`           | `#D64545` | Error and critical states     |
+| Accent        | `--camp-orange`           | `#E8853A` | Warm accent, used sparingly   |
+| Foreground    | `--foreground`            | `#1A2332` | Main text                     |
+| Border        | `--border`                | `#D4DAE3` | Default border color          |
+| Warm surface  | `--surface-light`         | `#F8F7F5` | Common Campfire page surface  |
+| Focus surface | `--surface-focused`       | `#F5F7FA` | Quiz shell background         |
+
+- Buttons and inputs typically use `rounded-sm`, cards `rounded-md`, dialogs `rounded-lg`
+- Live radius scale is capped at 8px in `globals.css`
+- Standard transitions stay under 300ms, with 100/150/200ms utilities defined today
+- No gamification. No shame language.
 
 ---
 

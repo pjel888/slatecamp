@@ -42,11 +42,11 @@ Here's what I know:
 
 IP/trademark names are used in internal docs and legal filings. Student-facing UI must use these labels:
 
-| IP Name | UI Label |
-|---|---|
-| Blindspot Protocol™ | Focus Review |
-| Endurance Cycle™ | Extended Practice |
-| Proof Simulation™ | Full Exam Simulation |
+| IP Name             | UI Label             |
+| ------------------- | -------------------- |
+| Blindspot Protocol™ | Focus Review         |
+| Endurance Cycle™    | Extended Practice    |
+| Proof Simulation™   | Full Exam Simulation |
 
 Never display the IP/trademark names in the student-facing UI.
 
@@ -85,7 +85,7 @@ To legally protect SlateCamp's IP and fulfill its core marketing promises ("Zero
   - Fetch the latest simulation attempt.
   - Compare `simulation_completed_at + 24 hours` against `Date.now()`.
   - If within 24 hours, render a locked state: "Simulation Score: [X]. Detailed breakdown available in [Countdown Timer]." Do not render the taxonomy diagnostic breakdown link until the timer hits zero.
-- **Gate condition:** Full Exam Simulation is only unlocked when the student's **Readiness Score ≥ 65%**. Below that, the button is grayed out with: *"Unlock Full Exam Simulation when your Readiness Score reaches 65%."*
+- **Gate condition:** Full Exam Simulation is only unlocked when the student's **Readiness Score ≥ 65%**. Below that, the button is grayed out with: _"Unlock Full Exam Simulation when your Readiness Score reaches 65%."_
 
 **5. Nightly Focus Review Scan (Medium Priority)**
 
@@ -94,9 +94,9 @@ To legally protect SlateCamp's IP and fulfill its core marketing promises ("Zero
 - **Execution:** For each active user, generates a JSON array of the top 3 weakest `topic_id`s and inserts it into a queue table as the Focus Review queue for the next day.
 - **UI label:** This is displayed to students as **"Focus Review"** — never "Blindspot Protocol" in the student UI.
 
-### **Campfire Design Constraints**
+### **SlateCamp Design Constraints**
 
-All new UI must adhere to the Campfire design system (see `05 — Design.md`):
+All new UI must adhere to the SlateCamp design system (see `SlateCamp Design System.md`):
 
 - **Primary color:** Camp Cobalt `#1B3FC4` (`--camp-cobalt`)
 - **Success:** Emerald `#2D9F6F` (`--emerald`)
