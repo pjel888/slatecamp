@@ -100,6 +100,14 @@ bun test
 - `tsconfig.json` currently sets `"strict": false`, `"noImplicitAny": false`, and `"strictNullChecks": false`.
 - Do not document or assume strict-mode rules unless the codebase is changed first.
 
+## Documentation Structure
+
+- **Source of truth:** Code and executable config. If docs disagree with live code, follow the code.
+- **Agent documentation:** `.ai/docs/` contains 42 structured documents organized by category (00-meta through 05-reference, plus portal docs).
+- **Key index:** `.ai/docs/00-meta/001-index.md` lists all active, pending, and legacy documents.
+- **Legacy content:** Archived/deprecated files are moved to `.ai/docs/archive/legacy/` rather than deleted.
+- **`prompts/`** is archived — old PRDs and implementation guides are in `.ai/docs/archive/legacy/prompts-archived/`.
+
 - The repo does not consistently follow an arrow-functions-only style.
 - Both arrow functions and `function` declarations are used across `src/` and `scripts/`.
 

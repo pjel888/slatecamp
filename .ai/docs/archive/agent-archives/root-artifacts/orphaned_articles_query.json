@@ -1,0 +1,8 @@
+{
+  "purpose": "Identify wiki_articles that have zero accessible questions (neither direct nor via child taxonomy nodes), enabling downstream batch question generation",
+  "target_tables": ["wiki_articles", "wiki_article_taxonomy", "taxonomy_tree", "questions"],
+  "relationship": "articles → wiki_article_taxonomy → taxonomy_tree ← questions (via topic_id). Quiz pools from the article's node AND its immediate children.",
+  "query": "SELECT wa.article_id, wa.slug, wa.title, wa.status FROM wiki_articles wa JOIN wiki_article_taxonomy wat ON wat.article_id = wa.article_id WHERE (SELECT COUNT(*) FROM questions q WHERE q.topic_id = wat.node_id) = 0 AND (SELECT COUNT(*) FROM questions q JOIN taxonomy_tree child ON child.node_id = q.topic_id WHERE child.parent_id = wat.node_id) = 0 ORDER BY wa.title ASC;",
+  "result_count": 89,
+  "note": "Original naive LEFT JOIN on questions.article_id was incorrect — that column is rarely populated. Questions are linked to articles via taxonomy nodes (questions.topic_id → taxonomy_tree). This query checks both the article's direct node and its child nodes."
+}

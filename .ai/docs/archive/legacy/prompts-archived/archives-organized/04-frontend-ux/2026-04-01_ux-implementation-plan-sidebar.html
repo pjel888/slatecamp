@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp — Left Sidebar Controls Redesign Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cobalt: #1B3FC4;
+    --cobalt-light: #EEF1FB;
+    --signal-gold: #F5A623;
+    --signal-red: #E63329;
+    --signal-green: #1B7A3C;
+    --camp-orange: #E8853A;
+    --cream: #F2F0EB;
+    --warm-white: #F8F7F5;
+    --charcoal: #1A1A2E;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+    --amber-50: #FFFBEB;
+    --amber-100: #FEF3C7;
+    --amber-500: #F59E0B;
+    --amber-600: #D97706;
+    --red-50: #FEF2F2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  .page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  /* Header */
+  .doc-header {
+    margin-bottom: 48px;
+  }
+
+  .doc-header .badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    background: var(--cobalt-light);
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .doc-header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--charcoal);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .doc-header .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 600px;
+  }
+
+  .doc-header .meta-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* Section styling */
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--charcoal);
+  }
+
+  .section h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 32px;
+    color: var(--charcoal);
+  }
+
+  .section p {
+    font-size: 15px;
+    color: #374151;
+    max-width: 720px;
+    margin-bottom: 16px;
+  }
+
+  /* Cards */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+
+  .card-header {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  /* Problem cards */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .problem-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--signal-red);
+    border-radius: 0 12px 12px 0;
+    padding: 20px;
+  }
+
+  .problem-card .problem-id {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--signal-red);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .problem-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .problem-card p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 0;
+  }
+
+  /* Solution cards */
+  .solution-card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--signal-green);
+    border-radius: 0 12px 12px 0;
+    padding: 20px;
+  }
+
+  .solution-card .solution-id {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--signal-green);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .solution-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .solution-card p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 0;
+  }
+
+  /* Before/After comparison */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 24px 0;
+  }
+
+  .comparison-col h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .comparison-col.before h4 { color: var(--muted); }
+  .comparison-col.after h4 { color: var(--cobalt); }
+
+  /* Wireframe mockups */
+  .wireframe {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    overflow: hidden;
+  }
+
+  .wireframe .wf-section {
+    border: 1px dashed #D1D5DB;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .wireframe .wf-section:last-child {
+    margin-bottom: 0;
+  }
+
+  .wireframe .wf-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .wireframe .wf-dropdown {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    background: #F9FAFB;
+    color: var(--charcoal);
+  }
+
+  .wireframe .wf-slider-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  .wireframe .wf-slider-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .wireframe .wf-slider-value {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--cobalt);
+  }
+
+  .wireframe .wf-slider-track {
+    height: 4px;
+    background: #E5E7EB;
+    border-radius: 2px;
+    margin: 4px 0 8px 0;
+    position: relative;
+  }
+
+  .wireframe .wf-slider-fill {
+    height: 4px;
+    background: var(--cobalt);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .wireframe .wf-slider-thumb {
+    width: 12px;
+    height: 12px;
+    background: var(--cobalt);
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+  }
+
+  .wireframe .wf-chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .wireframe .wf-chip {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: var(--charcoal);
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .wireframe .wf-chip.active {
+    background: var(--cobalt);
+    color: #FFFFFF;
+    border-color: var(--cobalt);
+  }
+
+  .wireframe .wf-collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-bottom: 8px;
+  }
+
+  .wireframe .wf-collapsible-header .wf-chevron {
+    color: var(--muted);
+    font-size: 10px;
+  }
+
+  .wireframe .wf-reset {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--muted);
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 2px 6px;
+  }
+
+  .wireframe .wf-violation-card {
+    border-left: 2px solid var(--amber-500);
+    background: var(--amber-50);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 6px;
+  }
+
+  .wireframe .wf-violation-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .wireframe .wf-violation-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--amber-600);
+    margin-bottom: 2px;
+  }
+
+  .wireframe .wf-violation-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  .wireframe .wf-helper-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* Before wireframe — old buttons */
+  .wireframe .wf-old-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .wireframe .wf-old-pill {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: var(--charcoal);
+    background: #FFFFFF;
+  }
+
+  .wireframe .wf-old-pill.red {
+    border-color: var(--signal-red);
+    color: var(--signal-red);
+  }
+
+  /* Hierarchy diagram */
+  .hierarchy-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 400px;
+    margin: 24px 0;
+  }
+
+  .hierarchy-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    position: relative;
+  }
+
+  .hierarchy-item:first-child {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .hierarchy-item:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+
+  .hierarchy-item + .hierarchy-item {
+    border-top: none;
+  }
+
+  .hierarchy-number {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--cobalt);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .hierarchy-text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .hierarchy-text small {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .hierarchy-item.secondary .hierarchy-number {
+    background: var(--muted);
+  }
+
+  /* Checklist */
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #F3F4F6;
+  }
+
+  .checklist li:last-child {
+    border-bottom: none;
+  }
+
+  .checklist .check-box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* Phase labels */
+  .phase-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .phase-badge.p1 { background: #DCFCE7; color: #166534; }
+  .phase-badge.p2 { background: #DBEAFE; color: #1E40AF; }
+  .phase-badge.p3 { background: var(--amber-100); color: #92400E; }
+  .phase-badge.p4 { background: #F3E8FF; color: #6B21A8; }
+
+  /* Heuristics table */
+  .h-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 16px 0;
+  }
+
+  .h-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 12px;
+    background: #F9FAFB;
+    border-bottom: 2px solid var(--border);
+    color: var(--muted);
+  }
+
+  .h-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #F3F4F6;
+    vertical-align: top;
+  }
+
+  .severity-high {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--signal-red);
+    font-weight: 500;
+  }
+
+  .severity-med {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--camp-orange);
+    font-weight: 500;
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 48px 0;
+  }
+
+  /* Arrow between wireframes */
+  .arrow-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    color: var(--cobalt);
+    font-size: 24px;
+  }
+
+  /* Annotation callout */
+  .callout {
+    background: var(--cobalt-light);
+    border-left: 3px solid var(--cobalt);
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: var(--charcoal);
+  }
+
+  .callout strong {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--cobalt);
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+    .problem-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page-container">
+
+  <!-- HEADER -->
+  <div class="doc-header">
+    <div class="badge">UX Implementation Plan</div>
+    <h1>Left Sidebar Controls Redesign</h1>
+    <p class="subtitle">PD 1096 Rules VII & VIII — Site Development Controls 3D Interactive Visualization Module</p>
+    <div class="meta-row">
+      <span>April 2026</span>
+      <span>·</span>
+      <span>3D Lab — Controls Column</span>
+      <span>·</span>
+      <span>Dual-Column Layout Preserved</span>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PROBLEM AUDIT -->
+  <div class="section">
+    <div class="section-number">Section 01</div>
+    <h2>Current State Audit</h2>
+    <p>Three UX problems were identified in the controls column of the newly split dual-column sidebar. The information column (right) is unaffected.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-id">Problem 01 — High</div>
+        <h4>Inverted Data Entry Sequence</h4>
+        <p>Zoning Classification sits below Lot Parameters. The zoning governs Table VIII.1 values (PSO, ISA, USA, TOSL, BHL, FLAR). Users manipulate sliders before setting the constraint that defines what those sliders mean.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-id">Problem 02 — High</div>
+        <h4>Preset & Violation Visual Clutter</h4>
+        <p>10 equally-weighted pill buttons across two sections create a "wall of options." Presets (configuration loaders) and Violations (educational scenarios) look identical except for border color — no semantic differentiation.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-id">Problem 03 — Medium</div>
+        <h4>No Progressive Disclosure</h4>
+        <p>All controls are visible simultaneously on load. Novice users (Anxious First-Taker persona) see preset shortcuts before they understand the primary controls. No distinction between novice path and expert path.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: HEURISTIC VIOLATIONS -->
+  <div class="section">
+    <div class="section-number">Section 02</div>
+    <h2>Heuristic Violations</h2>
+
+    <table class="h-table">
+      <thead>
+        <tr>
+          <th>Heuristic</th>
+          <th>Violation</th>
+          <th>Severity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Match between system and real world (Nielsen #2)</td>
+          <td>Zoning should precede parameters — mirrors real architectural workflow</td>
+          <td><span class="severity-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td>Recognition over recall (Nielsen #6)</td>
+          <td>Preset buttons have no preview of what they configure</td>
+          <td><span class="severity-med">MED</span></td>
+        </tr>
+        <tr>
+          <td>Aesthetic and minimalist design (Nielsen #8)</td>
+          <td>10 buttons of equal visual weight creates cognitive noise</td>
+          <td><span class="severity-high">HIGH</span></td>
+        </tr>
+        <tr>
+          <td>Consistency and standards (Nielsen #4)</td>
+          <td>Presets and Violations share layout pattern but serve different purposes</td>
+          <td><span class="severity-med">MED</span></td>
+        </tr>
+        <tr>
+          <td>Flexibility and efficiency (Nielsen #7)</td>
+          <td>No separation between novice path (controls) and expert path (presets)</td>
+          <td><span class="severity-med">MED</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 3: NEW HIERARCHY -->
+  <div class="section">
+    <div class="section-number">Section 03</div>
+    <h2>Proposed Information Architecture</h2>
+    <p>Reorder follows the principle of <strong>dependency-first, shortcuts-second</strong>. The governing constraint (zoning) comes first, primary manipulation controls second, and power-user shortcuts last behind collapsible sections.</p>
+
+    <div class="hierarchy-flow">
+      <div class="hierarchy-item">
+        <div class="hierarchy-number">1</div>
+        <div class="hierarchy-text">
+          Zoning Classification
+          <small>Context setter — governs Table VIII.1 values</small>
+        </div>
+      </div>
+      <div class="hierarchy-item">
+        <div class="hierarchy-number">2</div>
+        <div class="hierarchy-text">
+          Lot Parameters
+          <small>Primary controls — width, depth, RROW sliders</small>
+        </div>
+      </div>
+      <div class="hierarchy-item secondary">
+        <div class="hierarchy-number">3</div>
+        <div class="hierarchy-text">
+          Presets
+          <small>Collapsible — compact chips for quick configuration loading</small>
+        </div>
+      </div>
+      <div class="hierarchy-item secondary">
+        <div class="hierarchy-number">4</div>
+        <div class="hierarchy-text">
+          Violation Case Studies
+          <small>Collapsible — amber scenario cards with descriptions</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Constraint preserved:</strong> The dual-column layout (controls left, information right) is unchanged. Only the internal ordering and component design within the controls column is modified.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 4: BEFORE/AFTER WIREFRAMES -->
+  <div class="section">
+    <div class="section-number">Section 04</div>
+    <h2>Before / After — Controls Column</h2>
+
+    <div class="comparison">
+      <!-- BEFORE -->
+      <div class="comparison-col before">
+        <h4>Current State</h4>
+        <div class="wireframe">
+          <!-- Presets -->
+          <div class="wf-section">
+            <div class="wf-label">Presets</div>
+            <div class="wf-old-pills">
+              <div class="wf-old-pill">R-1 Subdivision (300 sqm)</div>
+              <div class="wf-old-pill">R-2 Rowhouse</div>
+              <div class="wf-old-pill">C-1 Commercial</div>
+              <div class="wf-old-pill">Narrow Lot (Violation)</div>
+              <div class="wf-old-pill">Max Height Test</div>
+              <div class="wf-old-pill" style="color:var(--muted); border-style:dashed;">Reset</div>
+            </div>
+          </div>
+
+          <!-- Violations -->
+          <div class="wf-section">
+            <div class="wf-label" style="color: var(--signal-red);">Violation Case Studies</div>
+            <div class="wf-old-pills">
+              <div class="wf-old-pill red">Lot Encroachment</div>
+              <div class="wf-old-pill red">BHL Violation</div>
+              <div class="wf-old-pill red">Setback Breach</div>
+              <div class="wf-old-pill red">TGFA Overbuilt</div>
+            </div>
+          </div>
+
+          <!-- Lot Parameters -->
+          <div class="wf-section">
+            <div class="wf-label">Lot Parameters</div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">Lot Width</span>
+              <span class="wf-slider-value">20.0 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:50%"></div><div class="wf-slider-thumb" style="left:calc(50% - 6px)"></div></div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">Lot Depth</span>
+              <span class="wf-slider-value">15.0 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:35%"></div><div class="wf-slider-thumb" style="left:calc(35% - 6px)"></div></div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">RROW Width</span>
+              <span class="wf-slider-value">10 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:40%"></div><div class="wf-slider-thumb" style="left:calc(40% - 6px)"></div></div>
+          </div>
+
+          <!-- Zoning -->
+          <div class="wf-section" style="border-color: var(--signal-red); border-style: dashed;">
+            <div class="wf-label">Zoning Classification <span style="color:var(--signal-red); font-size:10px;">← BURIED</span></div>
+            <select class="wf-dropdown">
+              <option>R-1 Low-Density Residential</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFTER -->
+      <div class="comparison-col after">
+        <h4>Proposed Redesign</h4>
+        <div class="wireframe">
+          <!-- Zoning — NOW FIRST -->
+          <div class="wf-section" style="border-color: var(--cobalt); border-style: solid; background: var(--cobalt-light);">
+            <div class="wf-label" style="color: var(--cobalt);">Zoning Classification</div>
+            <select class="wf-dropdown" style="border-color: var(--cobalt);">
+              <option>R-1 Low-Density Residential</option>
+            </select>
+            <div class="wf-helper-text">Sets Table VIII.1 development controls</div>
+          </div>
+
+          <!-- Lot Parameters — SECOND -->
+          <div class="wf-section">
+            <div class="wf-label">Lot Parameters</div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">Lot Width</span>
+              <span class="wf-slider-value">20.0 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:50%"></div><div class="wf-slider-thumb" style="left:calc(50% - 6px)"></div></div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">Lot Depth</span>
+              <span class="wf-slider-value">15.0 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:35%"></div><div class="wf-slider-thumb" style="left:calc(35% - 6px)"></div></div>
+            <div class="wf-slider-row">
+              <span class="wf-slider-name">RROW Width</span>
+              <span class="wf-slider-value">10 m</span>
+            </div>
+            <div class="wf-slider-track"><div class="wf-slider-fill" style="width:40%"></div><div class="wf-slider-thumb" style="left:calc(40% - 6px)"></div></div>
+          </div>
+
+          <!-- Presets — COLLAPSIBLE CHIPS -->
+          <div class="wf-section" style="background: #FAFAFA;">
+            <div class="wf-collapsible-header">
+              <div class="wf-label" style="margin-bottom:0;">▾ Presets</div>
+              <button class="wf-reset">Reset</button>
+            </div>
+            <div class="wf-chip-grid">
+              <div class="wf-chip active">R-1 Sub</div>
+              <div class="wf-chip">R-2 Row</div>
+              <div class="wf-chip">C-1 Comm</div>
+              <div class="wf-chip">Narrow Lot</div>
+              <div class="wf-chip">Max Height</div>
+            </div>
+          </div>
+
+          <!-- Violations — AMBER SCENARIO CARDS -->
+          <div class="wf-section" style="background: #FAFAFA;">
+            <div class="wf-collapsible-header">
+              <div class="wf-label" style="margin-bottom:0; color: var(--amber-600);">▾ ⚠ Violation Case Studies</div>
+            </div>
+            <div class="wf-violation-card">
+              <div class="wf-violation-title">⚠ Lot Encroachment</div>
+              <div class="wf-violation-desc">Building extends past setback line</div>
+            </div>
+            <div class="wf-violation-card">
+              <div class="wf-violation-title">⚠ BHL Violation</div>
+              <div class="wf-violation-desc">Exceeds max building height limit</div>
+            </div>
+            <div class="wf-violation-card">
+              <div class="wf-violation-title">⚠ Setback Breach</div>
+              <div class="wf-violation-desc">Footprint violates required setback</div>
+            </div>
+            <div class="wf-violation-card">
+              <div class="wf-violation-title">⚠ TGFA Overbuilt</div>
+              <div class="wf-violation-desc">Total GFA exceeds FLAR allowance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 5: DESIGN DECISIONS -->
+  <div class="section">
+    <div class="section-number">Section 05</div>
+    <h2>Design Decisions & Rationale</h2>
+
+    <h3>5.1 — Zoning at Top</h3>
+    <div class="solution-card">
+      <div class="solution-id">Decision</div>
+      <h4>Move Zoning Classification to first position</h4>
+      <p>In PD 1096, zoning classification is the governing constraint. It determines which Table VIII.1 row applies — setting PSO, ISA, USA, TOSL, BHL, and FLAR values. Placing it first mirrors the real architectural workflow: classify the lot, then set dimensions, then evaluate compliance. This matches Nielsen Heuristic #2 (match between system and real world).</p>
+    </div>
+
+    <h3>5.2 — Presets as Compact Chips</h3>
+    <div class="solution-card">
+      <div class="solution-id">Decision</div>
+      <h4>Replace scattered pill buttons with compact mono-spaced chips in a collapsible section</h4>
+      <p>Presets are power-user shortcuts, not primary controls. The current layout gives them top-level visual weight. Compact chips reduce vertical space by ~60%. Collapsing by default removes them from the novice path. Monospaced typography signals "code/configuration" — appropriate for loading predefined lot scenarios. The Reset button moves to the section header, reducing chip count from 6 to 5.</p>
+    </div>
+
+    <h3>5.3 — Violations as Amber Scenario Cards</h3>
+    <div class="solution-card">
+      <div class="solution-id">Decision</div>
+      <h4>Replace red-bordered pills with amber-toned cards that include micro-descriptions</h4>
+      <p>Red borders signaled "error" — wrong semantics for educational scenarios. Amber (the SlateCamp signal for in-progress / attention-needed) correctly frames these as "learning opportunities." Adding one-line descriptions helps the Anxious First-Taker persona understand what each violation demonstrates before clicking, reducing cognitive load. The border-left accent pattern matches the SlateCamp card system.</p>
+    </div>
+
+    <h3>5.4 — Progressive Disclosure via Collapsibles</h3>
+    <div class="solution-card">
+      <div class="solution-id">Decision</div>
+      <h4>Wrap Presets and Violations in Shadcn <code>&lt;Collapsible&gt;</code> components</h4>
+      <p>Novice users see: Zoning → Lot Parameters. That's it. Two clear sections, no confusion. Expert users expand Presets and/or Violations when ready. This follows Mayer's Coherence Principle (don't show information that isn't needed for the current learning task) and Nielsen Heuristic #7 (flexibility and efficiency of use).</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 6: IMPLEMENTATION PHASES -->
+  <div class="section">
+    <div class="section-number">Section 06</div>
+    <h2>Implementation Phases</h2>
+
+    <div class="card">
+      <div class="phase-badge p1">Phase 1 — Reorder</div>
+      <ul class="checklist">
+        <li><div class="check-box"></div> Move <code>&lt;ZoningClassification /&gt;</code> above <code>&lt;LotParameters /&gt;</code> in the controls column render tree</li>
+        <li><div class="check-box"></div> Add helper text: "Sets Table VIII.1 development controls" below dropdown</li>
+        <li><div class="check-box"></div> Verify Table VIII.1 Reference card in info column updates on zoning change</li>
+        <li><div class="check-box"></div> Test mobile stacking (single column at &lt; 768px)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="phase-badge p2">Phase 2 — Presets Redesign</div>
+      <ul class="checklist">
+        <li><div class="check-box"></div> Convert pill buttons to compact chips: <code>h-8 px-3 rounded-md border font-mono text-xs</code></li>
+        <li><div class="check-box"></div> Wrap in <code>&lt;Collapsible&gt;</code> from Shadcn/Radix</li>
+        <li><div class="check-box"></div> Move Reset to section header row (ghost button)</li>
+        <li><div class="check-box"></div> Add active state: <code>bg-primary text-primary-foreground border-primary</code></li>
+        <li><div class="check-box"></div> Persist collapse state in <code>localStorage</code></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="phase-badge p3">Phase 3 — Violations Redesign</div>
+      <ul class="checklist">
+        <li><div class="check-box"></div> Convert red pills to amber-toned mini cards with <code>border-l-2 border-l-amber-500</code></li>
+        <li><div class="check-box"></div> Wrap in <code>&lt;Collapsible&gt;</code> component</li>
+        <li><div class="check-box"></div> Write one-line descriptions for each violation scenario</li>
+        <li><div class="check-box"></div> Add active state: <code>border-l-amber-600 bg-amber-100/70</code></li>
+        <li><div class="check-box"></div> Verify violation scenarios trigger the correct compliance overlay in the 3D canvas</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="phase-badge p4">Phase 4 — Polish & Accessibility</div>
+      <ul class="checklist">
+        <li><div class="check-box"></div> Audit spacing: 24px section gaps (<code>space-y-6</code>), 16px card padding</li>
+        <li><div class="check-box"></div> Verify monospaced typography on all section labels and numeric values</li>
+        <li><div class="check-box"></div> Check 44px minimum touch targets for all interactive elements</li>
+        <li><div class="check-box"></div> Test contrast ratios: 4.5:1 body text, 3:1 UI components</li>
+        <li><div class="check-box"></div> Run VoiceOver + TalkBack — verify focus order follows visual order</li>
+        <li><div class="check-box"></div> Add <code>aria-expanded</code> to collapsible headers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 7: SPACING/TYPOGRAPHY SPEC -->
+  <div class="section">
+    <div class="section-number">Section 07</div>
+    <h2>Spacing & Typography Spec</h2>
+
+    <table class="h-table">
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Token</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Section labels</td>
+          <td><code>font-mono text-[11px] tracking-[0.1em] uppercase text-muted-foreground</code></td>
+          <td>DM Mono, 11px, 0.1em tracking</td>
+        </tr>
+        <tr>
+          <td>Slider parameter names</td>
+          <td><code>text-sm font-medium</code></td>
+          <td>Inter, 14px, 500 weight</td>
+        </tr>
+        <tr>
+          <td>Slider numeric values</td>
+          <td><code>font-mono text-sm</code></td>
+          <td>DM Mono, 14px — monospace for alignment</td>
+        </tr>
+        <tr>
+          <td>Preset chips</td>
+          <td><code>font-mono text-xs</code></td>
+          <td>DM Mono, 12px — code-like feel</td>
+        </tr>
+        <tr>
+          <td>Violation card title</td>
+          <td><code>text-xs font-medium text-amber-600</code></td>
+          <td>Inter, 12px, 500 weight, amber</td>
+        </tr>
+        <tr>
+          <td>Violation card description</td>
+          <td><code>text-[10px] text-muted-foreground leading-tight</code></td>
+          <td>Inter, 10px, muted</td>
+        </tr>
+        <tr>
+          <td>Section gap</td>
+          <td><code>space-y-6</code></td>
+          <td>24px vertical gap between sections</td>
+        </tr>
+        <tr>
+          <td>Column padding</td>
+          <td><code>p-4</code></td>
+          <td>16px all sides</td>
+        </tr>
+        <tr>
+          <td>Controls column border</td>
+          <td><code>border-r border-border</code></td>
+          <td>1px right border separating columns</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 8: CONSTRAINT NOTES -->
+  <div class="section">
+    <div class="section-number">Section 08</div>
+    <h2>Constraints & Boundaries</h2>
+
+    <div class="callout">
+      <strong>Preserved:</strong> The dual-column layout (controls left, information readouts right) is strictly preserved. No merging back to a single column. The information column (Lot Summary + Table VIII.1 Reference) is unchanged.
+    </div>
+
+    <div class="callout">
+      <strong>Preserved:</strong> All Zustand store bindings and state logic remain unchanged. This redesign modifies visual presentation and render order only — no functional changes to <code>setLotWidth</code>, <code>setZoning</code>, <code>loadPreset</code>, or <code>loadViolation</code>.
+    </div>
+
+    <div class="callout">
+      <strong>Preserved:</strong> On-demand rendering (<code>frameloop="demand"</code>) and <code>invalidate()</code> patterns are unaffected. The sidebar restructuring is a DOM-only change with no 3D pipeline impact.
+    </div>
+
+    <div class="callout">
+      <strong>R3F constraint:</strong> No text rendering inside the 3D canvas. All labels, descriptions, and violation card copy remain in the 2D DOM sidebar panel.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

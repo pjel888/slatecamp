@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp — 3D & Visual Learning UX Research Brief</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --cobalt: #1B3FC4;
+    --cobalt-light: #EBF0FC;
+    --gold: #F5A623;
+    --gold-light: #FEF5E4;
+    --red: #E63329;
+    --red-light: #FDECEA;
+    --green: #1B7A3C;
+    --green-light: #E6F4EC;
+    --orange: #E8853A;
+    --orange-light: #FDF0E6;
+    --cream: #F2F0EB;
+    --warm-white: #F8F7F5;
+    --ink: #1A1A2E;
+    --ink-60: rgba(26,26,46,0.6);
+    --ink-30: rgba(26,26,46,0.3);
+    --border: #E2DDD8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    padding: 72px 80px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(245,166,35,0.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .hero-eye {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.06;
+    color: #fff;
+    letter-spacing: -2px;
+    max-width: 680px;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    max-width: 580px;
+    line-height: 1.7;
+  }
+
+  /* WRAPPER */
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 48px;
+  }
+
+  /* SECTION HEADERS */
+  .sec-eye {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--cobalt);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .sec-h {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: var(--ink);
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+
+  .sec-intro {
+    font-size: 15px;
+    color: var(--ink-60);
+    max-width: 680px;
+    line-height: 1.75;
+    margin-bottom: 40px;
+    border-left: 3px solid var(--border);
+    padding-left: 20px;
+  }
+
+  /* DIVIDER */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 56px 0;
+  }
+
+  /* CALLOUTS */
+  .callout {
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+
+  .callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .callout-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .callout-blue { background: var(--cobalt-light); border-left: 3px solid var(--cobalt); }
+  .callout-blue .callout-label { color: var(--cobalt); }
+  .callout-blue .callout-text { color: #0D1F4E; }
+
+  .callout-gold { background: var(--gold-light); border-left: 3px solid var(--gold); }
+  .callout-gold .callout-label { color: #9A6510; }
+  .callout-gold .callout-text { color: #5A3A08; }
+
+  .callout-green { background: var(--green-light); border-left: 3px solid var(--green); }
+  .callout-green .callout-label { color: var(--green); }
+  .callout-green .callout-text { color: #0A3B1E; }
+
+  .callout-red { background: var(--red-light); border-left: 3px solid var(--red); }
+  .callout-red .callout-label { color: var(--red); }
+  .callout-red .callout-text { color: #5A0E08; }
+
+  /* INSIGHT CARDS */
+  .insight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  .insight-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    position: relative;
+  }
+
+  .insight-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    border-radius: 14px 14px 0 0;
+    background: var(--cobalt);
+  }
+
+  .insight-num {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: var(--cobalt);
+    opacity: 0.15;
+    position: absolute;
+    top: 16px; right: 20px;
+    line-height: 1;
+  }
+
+  .insight-icon {
+    font-size: 26px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .insight-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .insight-body {
+    font-size: 13.5px;
+    color: var(--ink-60);
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+
+  .insight-research {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--cobalt);
+    background: var(--cobalt-light);
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .insight-apply {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+
+  .apply-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+  }
+
+  .apply-text {
+    font-size: 12.5px;
+    color: var(--green);
+    line-height: 1.55;
+  }
+
+  /* MODULE CARDS */
+  .module-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .module-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .module-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .module-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .tag-spatial { background: rgba(27,63,196,0.3); color: #9EC4FF; }
+  .tag-code { background: rgba(245,166,35,0.3); color: #FFD880; }
+  .tag-memory { background: rgba(27,122,60,0.3); color: #7FD8A0; }
+  .tag-identity { background: rgba(232,133,58,0.3); color: #FFBE90; }
+
+  .module-body {
+    padding: 24px 28px;
+  }
+
+  .module-why {
+    font-size: 14px;
+    color: var(--ink-60);
+    margin-bottom: 16px;
+    line-height: 1.65;
+  }
+
+  .module-interactions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mi-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  .mi-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-weight: 500;
+  }
+
+  .mi-guided { background: var(--cobalt-light); color: var(--cobalt); }
+  .mi-faded { background: var(--gold-light); color: #9A6510; }
+  .mi-sandbox { background: var(--green-light); color: var(--green); }
+  .mi-quiz { background: var(--orange-light); color: #9A5018; }
+
+  .mi-text { color: var(--ink-60); line-height: 1.55; }
+
+  /* UX PRINCIPLE CARDS */
+  .principle-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  .principle {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .p-num {
+    width: 48px;
+    height: 48px;
+    background: var(--ink);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .p-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .p-why {
+    font-size: 13.5px;
+    color: var(--ink-60);
+    line-height: 1.65;
+    margin-bottom: 10px;
+  }
+
+  .p-how {
+    font-size: 13px;
+    color: var(--cobalt);
+    background: var(--cobalt-light);
+    padding: 10px 14px;
+    border-radius: 8px;
+    line-height: 1.55;
+  }
+
+  .p-research {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--ink-30);
+    margin-top: 8px;
+  }
+
+  /* H TAGS */
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink);
+    margin: 40px 0 16px;
+    letter-spacing: -0.5px;
+  }
+
+  h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--ink);
+    margin: 28px 0 10px;
+  }
+
+  p {
+    color: var(--ink-60);
+    margin-bottom: 16px;
+    line-height: 1.75;
+    max-width: 700px;
+  }
+
+  strong { color: var(--ink); }
+
+  /* COMPARISON TABLE */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 24px 0;
+    font-size: 13px;
+  }
+
+  .compare-table th {
+    background: var(--ink);
+    color: rgba(255,255,255,0.6);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 14px 20px;
+    text-align: left;
+  }
+
+  .compare-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.55;
+    vertical-align: top;
+  }
+
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:nth-child(even) td { background: var(--cream); }
+
+  .td-code {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--cobalt);
+    font-weight: 500;
+  }
+
+  /* QUOTE */
+  .pull-quote {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink);
+    border-left: 4px solid var(--gold);
+    padding: 4px 0 4px 24px;
+    line-height: 1.45;
+    margin: 36px 0;
+    max-width: 640px;
+  }
+
+  /* THE BIG FRAMEWORK */
+  .framework {
+    background: var(--ink);
+    border-radius: 16px;
+    padding: 40px;
+    margin: 36px 0;
+    color: #fff;
+  }
+
+  .fw-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+
+  .fw-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 28px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.5px;
+  }
+
+  .fw-phases {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .fw-phase {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+  }
+
+  .fw-phase:first-child { border-radius: 10px 0 0 10px; }
+  .fw-phase:last-child { border-radius: 0 10px 10px 0; }
+
+  .fw-phase-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .fw-phase-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .fw-phase-what {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.55;
+  }
+
+  .fw-phase-example {
+    margin-top: 12px;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.5;
+  }
+
+  /* TOPIC-TO-VISUAL MAP */
+  .topic-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 80px;
+    gap: 16px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    align-items: center;
+    background: #fff;
+  }
+
+  .topic-row.header {
+    background: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .topic-name { font-weight: 600; color: var(--ink); }
+  .topic-visual { color: var(--ink-60); }
+
+  .vis-impact {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+  }
+
+  .vi-high { background: var(--green-light); color: var(--green); }
+  .vi-med { background: var(--gold-light); color: #9A6510; }
+  .vi-low { background: var(--cream); color: var(--ink-30); }
+
+  /* STICKY NOTE STYLE TIPS */
+  .tips-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .tip-card {
+    background: var(--gold-light);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .tip-card:nth-child(2) { background: var(--cobalt-light); }
+  .tip-card:nth-child(3) { background: var(--green-light); }
+
+  .tip-icon { font-size: 22px; margin-bottom: 8px; display: block; }
+
+  .tip-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: var(--ink);
+  }
+
+  .tip-body {
+    font-size: 12.5px;
+    line-height: 1.55;
+    color: var(--ink-60);
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eye">SlateCamp · UX Research Brief · Visual & 3D Learning</div>
+  <div class="hero-title">How Architecture Students Actually Learn Spatially — and What That Means for the 3D Lab</div>
+  <div class="hero-sub">Research-backed insights on visual cognition, spatial learning, building code comprehension, and how to make the 3D Lab the most effective part of SlateCamp's pedagogical system.</div>
+</section>
+
+<div class="wrap">
+
+  <!-- THE CORE PROBLEM -->
+  <div class="sec-eye">The Problem</div>
+  <div class="sec-h">Architecture is inherently spatial. The ALE tests it abstractly. That gap is where students fail.</div>
+  <div class="sec-intro">ALE candidates spend 90% of their review time reading flat text: reviewer PDFs, photocopied notes, printed codes. But the exam tests spatial understanding — setbacks, stair dimensions, ramp slopes, structural bays, travel distances. You cannot fully understand the National Building Code by reading it. You need to see it.</div>
+
+  <div class="callout callout-gold">
+    <div class="callout-label">Key Research Finding</div>
+    <div class="callout-text"><strong>ALE topnotchers consistently cite this:</strong> "The trend of questions is more analytical and technical, rather than just purely objective. You have to answer it as an architect and think like one." (Fritz Sendrijas, ALE June 2023 Topnotcher #1, Ateneo de Davao). They drew diagrams. They mapped processes. They visualized the code. SlateCamp's 3D Lab gives every student that visual thinking tool — not just topnotchers who naturally think that way.</div>
+  </div>
+
+  <p>Spatial ability — the capacity to mentally visualize, rotate, and reason about 3D objects — is a strong predictor of performance in architecture and engineering education (Porat & Ceobanu, 2024). Students with higher spatial ability perform significantly better on ALE-adjacent tasks: reading floor plans, understanding structural systems, applying code setback rules.</p>
+
+  <p>The critical insight: <strong>spatial ability is trainable.</strong> The research literature is clear that structured 3D practice — interactive models, cutaway sections, parametric manipulation — measurably improves spatial reasoning. This isn't just about "making learning fun." It's about building a cognitive skill the ALE actually tests.</p>
+
+  <div class="pull-quote">"The 3D Lab isn't supplementary. For subjects like Building Codes and Structural Systems, it is the most direct path to understanding that transfers to the exam."</div>
+
+  <!-- SECTION 1: THE SCIENCE -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 01 · The Science</div>
+  <div class="sec-h">Research Foundations for 3D Visual Learning in Architecture</div>
+  <div class="sec-intro">What the research says — translated directly into product decisions for the 3D Lab.</div>
+
+  <div class="insight-grid">
+    <div class="insight-card">
+      <div class="insight-num">01</div>
+      <span class="insight-icon">🧠</span>
+      <div class="insight-title">Dual-Channel Processing (Mayer, 2001)</div>
+      <div class="insight-body">The brain processes visual and verbal information through separate cognitive channels. When a student both sees a 3D model AND reads the code citation simultaneously, both channels are engaged — retention is significantly higher than reading alone. This is why the 3D Lab's hotspot system (visual + text) is pedagogically correct: it's not decoration, it's dual-coding in action.</div>
+      <div class="insight-research">Cognitive Theory of Multimedia Learning · Effect size d=0.60–0.90</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">Every hotspot must show both the 3D visual context AND the exact code text simultaneously. Never just one or the other. The split view (model left, code right) is the optimal layout for code comprehension.</div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-num">02</div>
+      <span class="insight-icon">⚗️</span>
+      <div class="insight-title">Worked Example Effect (Sweller, 1988)</div>
+      <div class="insight-body">Novice learners learn faster from studying a complete worked example than from solving problems independently. However, as expertise develops, this reverses — experts learn better from problems than from examples (Expertise Reversal Effect). Architecture students early in their review = novices for most code topics. They need to see the correct application first.</div>
+      <div class="insight-research">Cognitive Load Theory · Sweller · Effect size d=0.57</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">This validates the 3-phase progression already planned: Guided Tour (expert shows) → Faded Example (student fills one parameter) → Full Sandbox (student configures from brief). The sequence matches the learning curve perfectly.</div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-num">03</div>
+      <span class="insight-icon">🔄</span>
+      <div class="insight-title">Spatial Training Transfers to Exams</div>
+      <div class="insight-body">2024 studies on architecture and engineering students found that structured spatial training programs — combining 3D models, interactive manipulation, and mental rotation exercises — significantly improved domain-specific spatial ability. The key finding: improvement was largest when training used domain-specific materials (building elements, floor plans) rather than abstract shapes. ALE-specific 3D models will transfer more than generic spatial training.</div>
+      <div class="insight-research">Porat & Ceobanu, Educ. Sci. 2024 · Domain-specific training outperforms generic</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">Every model must use real Philippine building elements at real code dimensions. A stairway at exactly 180mm risers / 280mm treads (PD 1096) — not a "generic stairway." This specificity is what makes the spatial training transfer directly to exam questions.</div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-num">04</div>
+      <span class="insight-icon">📐</span>
+      <div class="insight-title">Contiguity Principle — Proximity of Visual + Text</div>
+      <div class="insight-body">Mayer's contiguity principle: people learn better when corresponding words and pictures are presented simultaneously, adjacent to each other — not separated across screens. When the code citation and the model are on different screens (or require scrolling to see both), the cognitive load of maintaining both in working memory increases dramatically, reducing comprehension.</div>
+      <div class="insight-research">Mayer, 2009 · Spatial & Temporal Contiguity · Reduces extraneous cognitive load</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">Code citations must appear as inline overlays or split-panel — never on a separate page. On mobile: code text appears below the model in the same scroll view. On desktop: side-by-side panel. The student's eye should never have to leave the model to read the relevant code.</div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-num">05</div>
+      <span class="insight-icon">⚡</span>
+      <div class="insight-title">Signaling Principle — Guide Attention Deliberately</div>
+      <div class="insight-body">Adding visual cues (arrows, highlights, outlines) that direct attention to the critical element in a complex visual significantly reduces cognitive load and improves comprehension (Mayer & Fiorella, 2014). In a complex 3D model, students' attention can scatter. A red highlight on the relevant dimension guides working memory to what matters — exactly like a professor pointing at the board.</div>
+      <div class="insight-research">Signaling principle · Mayer & Fiorella · Reduces split-attention effect</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">During guided tours, auto-highlight the dimension being explained: an animated arrow pointing to the riser height, a pulsing outline on the accessible door width. Never leave the student scanning a complex model to "find the relevant part." Direct them.</div>
+      </div>
+    </div>
+
+    <div class="insight-card">
+      <div class="insight-num">06</div>
+      <span class="insight-icon">🎮</span>
+      <div class="insight-title">Active Manipulation Beats Passive Viewing</div>
+      <div class="insight-body">Students who actively manipulate 3D models (rotate, adjust parameters, trigger states) show significantly better spatial understanding and retention than students who watch an instructor manipulate the same model. The act of controlling the model creates a stronger mental representation. This is why the parametric sandbox is pedagogically superior to a video walkthrough of the same content.</div>
+      <div class="insight-research">Petersen, Petkakis & Makransky, 2022 · Immersion + interactivity drive VR learning</div>
+      <div class="insight-apply">
+        <div class="apply-label">→ SlateCamp 3D Lab Application</div>
+        <div class="apply-text">The guided tour is for orientation only (Phase 1 of learning). The real learning happens in the faded example and sandbox phases. Design the UX so students feel compelled to touch the sliders — lower the friction to interaction, don't make the model feel "hands off."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: THE ALE SPATIAL PROBLEM MAP -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 02 · ALE-Specific Research</div>
+  <div class="sec-h">Which ALE Topics Most Need Visual Learning — and Why</div>
+  <div class="sec-intro">Not all ALE topics benefit equally from 3D visualization. This map prioritizes the 3D Lab modules by their visual learning impact — meaning: how much does seeing it in 3D unlock understanding that text alone cannot provide?</div>
+
+  <div class="topic-row header">
+    <div>ALE Topic / Code</div>
+    <div>Why Spatial Learning Matters Here</div>
+    <div>Visual Impact</div>
+  </div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:0 0 12px 12px;overflow:hidden;margin-bottom:32px;">
+    <div class="topic-row">
+      <div><div class="topic-name">PD 1096 — Stairway Dimensions</div><div class="td-code">Riser, tread, headroom, handrail height</div></div>
+      <div class="topic-visual">Students memorize numbers (180mm riser, 280mm tread) without understanding what they look like at scale. An ALE question about non-compliant stairs is incomprehensible if you've never seen a compliant one. A 3D stairway you can adjust makes the code physical.</div>
+      <td><div class="vis-impact vi-high">CRITICAL</div></td>
+    </div>
+    <div class="topic-row" style="background:var(--cream);">
+      <div><div class="topic-name">RA 9514 — Fire Code Travel Distance</div><div class="td-code">Exit travel distance, corridor widths, occupancy loads</div></div>
+      <div class="topic-visual">"45-meter travel distance" is abstract text until you see it drawn on a floor plan. A 3D floor plan where red zones appear when the travel distance exceeds the code limit makes the rule spatial and memorable — not a number to memorize.</div>
+      <td><div class="vis-impact vi-high">CRITICAL</div></td>
+    </div>
+    <div class="topic-row">
+      <div><div class="topic-name">BP 344 — Accessibility Law</div><div class="td-code">Ramp slopes, door widths, toilet clearances, parking bays</div></div>
+      <div class="topic-visual">Dimensionally dense. Multiple rules interact spatially: the slope of a ramp, its landing length, the clear width. A 3D accessible toilet with adjustable dimensions — turn it red when non-compliant — encodes these rules as spatial constraints, not a list of numbers.</div>
+      <td><div class="vis-impact vi-high">CRITICAL</div></td>
+    </div>
+    <div class="topic-row" style="background:var(--cream);">
+      <div><div class="topic-name">PD 1096 — Setbacks & Site Coverage</div><div class="td-code">AMBF, PSO, TGFA, setback lines</div></div>
+      <div class="topic-visual">This is pure site geometry. Students struggle with AMBF calculations because they can't visualize how setback lines, lot coverage, and building footprint interact. A parametric site model where adjusting lot size or building placement recalculates AMBF in real time makes this computational.</div>
+      <td><div class="vis-impact vi-high">CRITICAL</div></td>
+    </div>
+    <div class="topic-row">
+      <div><div class="topic-name">NSCP 2015 — Structural Bays</div><div class="td-code">Beam/column relationships, span ratios, reinforcement</div></div>
+      <div class="topic-visual">Structural framing is inherently 3D. Reading about beam-column connections in text produces minimal understanding. A structural bay model where you can see the frame, apply loads, and watch the member selection change based on spans is worth 50 pages of reviewer notes.</div>
+      <td><div class="vis-impact vi-high">HIGH</div></td>
+    </div>
+    <div class="topic-row" style="background:var(--cream);">
+      <div><div class="topic-name">History — Classical Orders</div><div class="td-code">Doric, Ionic, Corinthian, Tuscan, Composite</div></div>
+      <div class="topic-visual">Students confuse orders because they're memorizing names-to-descriptions. Side-by-side 3D columns with labeled components (entasis, fluting, capital type, proportion) makes the differences visually obvious — and memorable in a way text descriptions never are.</div>
+      <td><div class="vis-impact vi-high">HIGH</div></td>
+    </div>
+    <div class="topic-row">
+      <div><div class="topic-name">Building Utilities — MEPFS Systems</div><div class="td-code">Plumbing stacks, electrical routing, fire suppression</div></div>
+      <div class="topic-visual">MEP systems are invisible in buildings — hidden in walls and ceilings. Students read about them without ever seeing how they're spatially organized within a building. A cutaway 3D building revealing the MEP layers makes these abstract systems concrete.</div>
+      <td><div class="vis-impact vi-high">HIGH</div></td>
+    </div>
+    <div class="topic-row" style="background:var(--cream);">
+      <div><div class="topic-name">PD 957 / BP 220 — Subdivision Planning</div><div class="td-code">Road widths, open space ratios, lot dimensions</div></div>
+      <div class="topic-visual">Subdivision standards involve area calculations and spatial relationships that benefit from a site-level visualization. Less urgent than individual building codes, but parametric site planning tools have high comprehension payoff.</div>
+      <td><div class="vis-impact vi-med">MEDIUM</div></td>
+    </div>
+    <div class="topic-row">
+      <div><div class="topic-name">Professional Practice — Fee Structures</div><div class="td-code">SPP Documents, percentage fees, project stages</div></div>
+      <div class="topic-visual">Primarily text-based knowledge. Tables and diagrams in the Wiki are more appropriate than 3D models. Visual learning impact for this topic is low — use 2D infographics in the Wiki instead of 3D resources.</div>
+      <td><div class="vis-impact vi-low">LOW</div></td>
+    </div>
+  </div>
+
+  <div class="callout callout-green">
+    <div class="callout-label">Prioritization Principle</div>
+    <div class="callout-text">Build 3D modules for topics where the spatial relationship IS the learning objective (setbacks, stair geometry, travel distances, structural bays, MEP routing). Don't build 3D models for topics that are fundamentally text-based (fees, ethics, legislation). The question to ask for each module: <strong>"Can a student understand this without seeing it?"</strong> If yes → Wiki is sufficient. If no → 3D Lab is necessary.</div>
+  </div>
+
+  <!-- SECTION 3: THE UX FRAMEWORK -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 03 · UX Framework</div>
+  <div class="sec-h">The 3-Phase Learning Model for Every 3D Module</div>
+  <div class="sec-intro">Based on Cognitive Load Theory's Worked Example Effect and the Expertise Reversal principle. Every module in the 3D Lab should follow this three-phase arc — not necessarily in one session, but across a student's progression from first encounter to mastery.</div>
+
+  <div class="framework">
+    <div class="fw-title">The SlateCamp 3D Learning Arc</div>
+    <div class="fw-sub">Cognitive Load Theory Applied to Architecture Code Learning</div>
+    <div class="fw-phases">
+      <div class="fw-phase">
+        <div class="fw-phase-num">Phase 01 · Novice</div>
+        <div class="fw-phase-name">Guided Tour</div>
+        <div class="fw-phase-what">Expert walks through the complete compliant example. Student watches and reads. No decisions required. Goal: build initial mental schema with minimum cognitive overload.</div>
+        <div class="fw-phase-example">Example: Stairway module — tour shows each dimension labeled, explains why each rule exists. Student never touches a slider.</div>
+      </div>
+      <div class="fw-phase">
+        <div class="fw-phase-num">Phase 02 · Developing</div>
+        <div class="fw-phase-name">Faded Example</div>
+        <div class="fw-phase-what">Model is pre-configured with one parameter left blank. Student must supply the missing value. System provides feedback. Goal: retrieve and apply knowledge with minimal decision load.</div>
+        <div class="fw-phase-example">Example: "Set the correct riser height for this stairway. Hint: check PD 1096 Rule 7." Student sets slider → model shows compliant or non-compliant state.</div>
+      </div>
+      <div class="fw-phase">
+        <div class="fw-phase-num">Phase 03 · Proficient</div>
+        <div class="fw-phase-name">Full Sandbox</div>
+        <div class="fw-phase-what">Student receives a building brief ("Design a fire exit stairway for a 6-story commercial building"). All parameters open. Model responds in real time. Goal: transfer learning to novel application.</div>
+        <div class="fw-phase-example">Example: "Configure a compliant stairway for this occupancy type." Model turns red on violations with specific code citations. Student adjusts until compliant.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout callout-blue">
+    <div class="callout-label">Why This Sequence Matters</div>
+    <div class="callout-text">The ALE doesn't ask students to recite the riser height. It asks: <em>"Which of these stairway configurations complies with PD 1096?"</em> That requires the ability to evaluate a configuration against code — a higher-order spatial skill. The full sandbox phase is what trains this. Students who only do Phase 1 (read the Wiki) or Phase 2 (flashcard the numbers) will recognize the correct answer but can't derive it. Phase 3 is where exam-level performance is built.</div>
+  </div>
+
+  <!-- SECTION 4: 10 UX PRINCIPLES -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 04 · UX Design Principles</div>
+  <div class="sec-h">10 UX Principles for the 3D Lab Interface</div>
+  <div class="sec-intro">Each principle is grounded in cognitive science and tested against the ALE candidate's specific context: mobile-first Filipino architecture student, often on 4G, potentially doing this at night, under moderate time pressure.</div>
+
+  <div class="principle-list">
+
+    <div class="principle">
+      <div class="p-num">1</div>
+      <div>
+        <div class="p-title">One Concept Per Session — Never Let the Model Get Complex Before the Concept is Understood</div>
+        <div class="p-why">Cognitive load research is clear: when a model shows too many elements simultaneously, working memory overloads and comprehension drops. The BP 344 toilet model should focus on ONE clearance dimension per session — not all six simultaneously. Reveal complexity progressively.</div>
+        <div class="p-how">UX pattern: "Focus Mode" toggle that highlights one dimension at a time, greying out the rest. Guided tour always starts in Focus Mode. Student can unlock "Full View" after completing the guided tour.</div>
+        <div class="p-research">Split-attention effect · Cognitive Load Theory · Mayer's Segmenting Principle</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">2</div>
+      <div>
+        <div class="p-title">Code Violations Must Be Visually Unmistakable — Red Is Not Enough</div>
+        <div class="p-why">Color cannot be the only violation indicator (accessibility, colorblindness). But more importantly, the violation state should feel viscerally wrong — not just "red model." The building should look wrong — cramped, blocked, dangerous — so the student develops intuition, not just memorization.</div>
+        <div class="p-how">When a dimension is non-compliant: (1) model element turns Signal Red, (2) a dimension callout appears with the current value vs the required value, (3) a brief text explains the consequence: "At 150mm, this riser is non-compliant. A person cannot climb this comfortably and safely." Make the violation feel real, not just flagged.</div>
+        <div class="p-research">Embodied cognition research — physical consequences increase code retention vs abstract rules</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">3</div>
+      <div>
+        <div class="p-title">Real Dimensions at Real Scale — Always</div>
+        <div class="p-why">A stairway rendered at 50% scale provides no spatial intuition about whether the dimensions are appropriate. The moment the student adjusts a slider, the model must respond at life-scale. 1 meter in the model = 1 meter in the physical world. This is what builds spatial calibration — the ability to "feel" whether a dimension is right.</div>
+        <div class="p-how">All models render with a scale reference (a silhouette of a standing person at 1.7m). When a door width is set to 700mm, the person silhouette barely fits — the visual makes the code rationale self-evident. This is what no PDF or flashcard can replicate.</div>
+        <div class="p-research">Scale cognition research — spatial learning requires metric calibration, not just dimensional recall</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">4</div>
+      <div>
+        <div class="p-title">Connect Every Model to a Specific Past ALE Question Type</div>
+        <div class="p-why">ALE candidates are exam-motivated. They need to see the direct connection between the 3D model and the question format on the actual Licensure Exam. "This is how ALE Question Type 3 on Building Technology looks in 3D" is more motivating than "explore this model."</div>
+        <div class="p-how">Each module card in the 3D Lab shows: "This module covers: X questions per ALE sitting, typically appearing as [question type]." After the sandbox phase, show a Camp Mode quiz session filtered to that exact topic — immediately connecting the 3D understanding to the question format. The sequence: See it in 3D → Answer questions about it.</div>
+        <div class="p-research">Transfer of learning — learning is most effective when training conditions match test conditions</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">5</div>
+      <div>
+        <div class="p-title">Let Students Break the Building — Then Teach Them Why</div>
+        <div class="p-why">Students learn better from making and correcting errors than from observing correct examples alone (Error-based learning, Metcalfe, 2017). The parametric sandbox's violation feedback system is most effective when students actively make wrong configurations and then see why they're wrong — not just configure correct ones.</div>
+        <div class="p-how">In sandbox mode: add a "Challenge Mode" button that presents the student with a deliberately non-compliant building and asks them to identify all violations. "Find 3 code violations in this stairway." This turns the model into an active diagnostic tool — the same cognitive skill the ALE tests in its analytical questions.</div>
+        <div class="p-research">Error-based learning · Metcalfe, 2017 · Desirable difficulty principle</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">6</div>
+      <div>
+        <div class="p-title">The Hotspot Question Must Come Before the Answer — Always</div>
+        <div class="p-why">The testing effect applies to 3D learning: being asked a question before revealing the answer produces deeper encoding than reading the answer first. In-canvas quizzing (hotspot-based questions) should appear before the dimension label reveals — not after. "What should the riser height be here?" → student guesses → correct value appears with code citation.</div>
+        <div class="p-how">Hotspot interaction sequence: (1) Hotspot pulsates on a dimension point. (2) Student taps. (3) Question appears: "What is the minimum required handrail height?" (4) Student selects from options OR enters a value. (5) Correct value appears with code citation. Never show the label first then ask the question — that's passive reading, not retrieval.</div>
+        <div class="p-research">Testing Effect · Roediger & Karpicke, 2006 · Retrieval strengthens memory better than re-reading</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">7</div>
+      <div>
+        <div class="p-title">Mobile-First With Intentional Rotation — Desktop Is Secondary</div>
+        <div class="p-why">SlateCamp's primary user is on a mid-range Android phone. 3D WebGL on mobile is technically possible with React Three Fiber, but requires intentional UX choices to feel good rather than janky. The biggest risk: students trying to manipulate a 3D model on a small screen feel frustrated rather than engaged.</div>
+        <div class="p-how">Specific mobile UX decisions: (1) Default to a fixed, flat "exploded diagram" view on mobile — not a full 3D orbit. (2) Offer a "3D View" button that enables full orbit only when the student explicitly wants it. (3) Sliders for parametric controls (not drag-on-model — too imprecise on small screens). (4) Orientation lock prompt: "Rotate your phone for the best view" for models that genuinely benefit from landscape.</div>
+        <div class="p-research">Philippine device context: median device is Realme/Samsung A-series, 6" screen, 4G — performance optimization is a UX decision, not just technical</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">8</div>
+      <div>
+        <div class="p-title">Context Narration — Give the Model a Story, Not Just Dimensions</div>
+        <div class="p-why">Numbers without context are forgotten. Numbers embedded in a story (a building type, a client scenario, a real Philippine project) are remembered. "This is a typical residential stairway in a PD 957 socialized housing project" creates a richer encoding than "stairway with compliant dimensions."</div>
+        <div class="p-how">Each module opens with a 2-sentence scenario: "You're reviewing plans for a 4-story commercial building in Quezon City. The building inspector has flagged the fire exit stairway. Here's what they found." This converts an abstract code exercise into a professional practice scenario — closer to how the ALE's hardest analytical questions are framed.</div>
+        <div class="p-research">Context-dependent memory · Tulving, 1983 · Narrative encoding improves recall vs isolated fact learning</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">9</div>
+      <div>
+        <div class="p-title">The Classical Orders Module Deserves Special Treatment — Visual Identity, Not Just Dimensions</div>
+        <div class="p-why">ALE History questions on Classical Orders aren't testing dimension recall — they're testing visual identification. "Which order is shown in this photograph?" Questions show images and students must identify the column type by visual characteristics. A 3D model approach must prioritize visual distinctiveness training — not parametric exploration.</div>
+        <div class="p-how">Special interaction pattern for History modules: (1) Side-by-side comparison of all 5 orders simultaneously. (2) "Spot the Order" quiz: show a single column, student identifies it. (3) Highlight the distinctive feature when wrong: "The capital gives it away — look at the volutes." (4) Progressive elimination: show increasingly similar pairs (Doric vs Tuscan, Ionic vs Corinthian) to sharpen discrimination.</div>
+        <div class="p-research">Discrimination learning · Signal detection theory · Visual similarity increases error rates without explicit comparison training</div>
+      </div>
+    </div>
+
+    <div class="principle">
+      <div class="p-num">10</div>
+      <div>
+        <div class="p-title">Track 3D Lab Engagement in the Mastery Engine — Not Separately</div>
+        <div class="p-why">If 3D Lab interactions don't feed the Heatmap and Readiness Score, students will perceive it as optional "enrichment" rather than core study. The moment the Heatmap shows a node moving from grey to amber after a 3D Lab session, the module becomes part of the core study loop — not an optional extra.</div>
+        <div class="p-how">Every completed 3D Lab module + hotspot quiz should write to user_interactions and update user_node_mastery for the relevant topic_id. In-canvas questions should count toward the question bank — same mastery weight as Camp Mode questions, potentially with a small visual-learning bonus weight (students who see the concept in 3D AND answer questions correctly have demonstrated deeper understanding).</div>
+        <div class="p-research">Attribution theory — students invest more in activities they see affecting their outcomes. Heatmap change is the visible payoff.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 5: SPECIFIC UX PATTERNS -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 05 · Module-Level UX Patterns</div>
+  <div class="sec-h">Specific Interaction Design for Priority Modules</div>
+  <div class="sec-intro">Concrete UX recommendations for the top 5 priority 3D Lab modules. These go beyond general principles into specific interaction decisions.</div>
+
+  <div class="module-card">
+    <div class="module-header">
+      <div class="module-name">PD 1096 — Stairway Configurator</div>
+      <span class="module-tag tag-code">Code Compliance</span>
+    </div>
+    <div class="module-body">
+      <div class="module-why">The most common Building Technology question type. Students memorize "180mm riser, 280mm tread" without understanding why — and without being able to evaluate non-compliant configurations. This module must build evaluation ability, not just recall.</div>
+      <div class="module-interactions">
+        <div class="mi-row">
+          <span class="mi-type mi-guided">GUIDED</span>
+          <div class="mi-text">Narrated fly-through of a compliant stairway. Animated labels appear sequentially: riser height → tread depth → clear width → headroom clearance → handrail height. Person silhouette walks up the stairs at the end. Code section cited for each dimension.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-faded">FADED</span>
+          <div class="mi-text">"This stairway has 3 compliant dimensions and 1 non-compliant. Find it." Sliders locked except for the non-compliant one. Student adjusts until compliant. Model changes color from partial red to full green.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-sandbox">SANDBOX</span>
+          <div class="mi-text">"Design a fire exit stairway for a 6-story assembly occupancy building." All sliders open. Occupancy type selector affects required clear width. Model shows real-time compliance status. "Export Configuration" button for notes.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-quiz">IN-CANVAS</span>
+          <div class="mi-text">3 hotspot questions on the compliant model: "What would happen if the riser was increased to 250mm?" (multiple choice). "What code section governs handrail height?" "At what riser height does this stairway become non-compliant for residential use?"</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-header">
+      <div class="module-name">RA 9514 — Fire Code: Travel Distance Floor Plan</div>
+      <span class="module-tag tag-code">Code Compliance</span>
+    </div>
+    <div class="module-body">
+      <div class="module-why">Travel distance is a 2.5D problem — it's a floor plan calculation with spatial consequences. Students fail this because they try to memorize maximum distances as isolated numbers, not as spatial constraints on a real floor plan.</div>
+      <div class="module-interactions">
+        <div class="mi-row">
+          <span class="mi-type mi-guided">GUIDED</span>
+          <div class="mi-text">Interactive floor plan (top-down view). A red "danger zone" radius emanates from the furthest occupied point. As the guide narrates, a path animates from the farthest point to the nearest exit. Distance counter shows current vs maximum. When non-compliant, the floor plan turns amber-to-red progressively.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-faded">FADED</span>
+          <div class="mi-text">"Place the exit door so that all occupied areas are within the travel distance limit." Student drags an exit door icon. Red zones disappear as the exit approaches compliance. "You're at 43m. Maximum is 45m." Success when all areas are compliant.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-sandbox">SANDBOX</span>
+          <div class="mi-text">"This floor plan has been flagged by the Fire Marshal. Identify all travel distance violations and correct them by repositioning exits." Challenge Mode for advanced students.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-header">
+      <div class="module-name">BP 344 — Accessible Toilet + Ramp Configuration</div>
+      <span class="module-tag tag-spatial">Spatial Reasoning</span>
+    </div>
+    <div class="module-body">
+      <div class="module-why">BP 344's 2024 Revised IRR is one of the most dimension-dense codes in the ALE. Multiple clearances must coexist in one small space. Students fail these questions because they've never spatially resolved how all the dimensions fit together.</div>
+      <div class="module-interactions">
+        <div class="mi-row">
+          <span class="mi-type mi-guided">GUIDED</span>
+          <div class="mi-text">Top-down floor plan of a compliant accessible toilet. Sequential reveal: first, the 1.5m × 1.5m turning circle. Then, door swing clearance. Then, grab bar positions. Then, water closet centerline. A wheelchair icon navigates the space, showing whether each maneuver is achievable.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-faded">FADED</span>
+          <div class="mi-text">"The toilet is correctly positioned. Where does the grab bar go?" Drag-and-drop grab bar placement. Tolerance: ±50mm from correct position registers as correct. Incorrect placement shows the violation: "Grab bar must be 300mm from WC centerline — you placed it at 450mm."</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-sandbox">SANDBOX</span>
+          <div class="mi-text">Ramp configurator: input slope percentage → model shows if gradient complies. Input landing length, width, handrail heights. Full ramp assembly renders at the set dimensions with compliance status visible.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-header">
+      <div class="module-name">History — Classical Orders Comparison</div>
+      <span class="module-tag tag-identity">Visual Identity</span>
+    </div>
+    <div class="module-body">
+      <div class="module-why">Unlike code modules, this is purely visual identification training. Students confuse Doric and Tuscan, Ionic and Corinthian, because they've never seen them side by side with their distinguishing features annotated. The interaction pattern is fundamentally different from code compliance modules.</div>
+      <div class="module-interactions">
+        <div class="mi-row">
+          <span class="mi-type mi-guided">GUIDED</span>
+          <div class="mi-text">Five columns in a row. Scroll left-right to compare. Each order highlighted in sequence with its 3 identifying characteristics animated: "Doric: no base, plain capital, triglyphs in frieze." The animation highlights each feature as it's named. Subtle color coding per order (not code-compliance red/green — purely aesthetic differentiation).</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-quiz">IN-CANVAS</span>
+          <div class="mi-text">"Identify This Order" challenge — show a single column, student identifies it. Progressive difficulty: easy (very different orders), medium (Doric vs Tuscan), hard (blurred photo of real building column). Immediate feedback shows the distinguishing feature they should have looked at.</div>
+        </div>
+        <div class="mi-row">
+          <span class="mi-type mi-faded">FADED</span>
+          <div class="mi-text">"Match the description to the order." Drag descriptions ("has scroll-like volutes on the capital") to the correct column. This builds verbal-to-visual and visual-to-verbal encoding simultaneously.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: WHAT NOT TO DO -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 06 · Anti-Patterns</div>
+  <div class="sec-h">Visual Learning UX Anti-Patterns to Avoid</div>
+  <div class="sec-intro">Research-backed patterns that look good but harm learning. Specific to the 3D Lab context.</div>
+
+  <div class="callout callout-red">
+    <div class="callout-label">❌ Anti-Pattern 1 — Too Much at Once (Split-Attention Effect)</div>
+    <div class="callout-text"><strong>What it looks like:</strong> A structural bay model showing beams, columns, slabs, reinforcement details, connection types, and load paths simultaneously — all labeled, all visible.<br><strong>Why it harms learning:</strong> Working memory overloads. The student looks at a complex model and understands nothing — their cognitive resources are spent just parsing the visual, not learning the content.<br><strong>Fix:</strong> Progressive disclosure. Start with the skeleton frame only. Add one layer at a time. Let the student control the reveal. A "show layers" toggle is better than showing everything at once.</div>
+  </div>
+
+  <div class="callout callout-red">
+    <div class="callout-label">❌ Anti-Pattern 2 — Beautiful But Uninteractive</div>
+    <div class="callout-text"><strong>What it looks like:</strong> A photorealistic 3D render of a stairway that the student can orbit and zoom — but not modify.<br><strong>Why it harms learning:</strong> Passive viewing of a 3D model produces little more retention than looking at a photograph. The learning comes from manipulation. A less-detailed model you can adjust is worth more than a photorealistic one you can only look at.<br><strong>Fix:</strong> Prioritize interaction over visual fidelity. A simple parametric model with working sliders is more educationally valuable than a photo-realistic model with no controls.</div>
+  </div>
+
+  <div class="callout callout-red">
+    <div class="callout-label">❌ Anti-Pattern 3 — Model With No Exam Connection</div>
+    <div class="callout-text"><strong>What it looks like:</strong> A beautiful 3D model of a traditional Filipino bahay kubo — architecturally interesting, but with no direct connection to any ALE question type.<br><strong>Why it harms learning:</strong> Students are motivated by exam relevance. Content that doesn't connect to a specific ALE question type reads as "interesting" but not as "study material." ALE candidates will not use content that doesn't directly serve their goal.<br><strong>Fix:</strong> Every module must display "X ALE questions per sitting typically test this content" — and must link directly to Camp Mode quiz questions on the same topic.</div>
+  </div>
+
+  <div class="callout callout-red">
+    <div class="callout-label">❌ Anti-Pattern 4 — Labels That Replace Learning (Redundancy Effect)</div>
+    <div class="callout-text"><strong>What it looks like:</strong> A model where every single dimension is permanently labeled with its value.<br><strong>Why it harms learning:</strong> The Redundancy Effect (Cognitive Load Theory) — when the labels provide all the answers, the student never has to retrieve the information themselves. The model becomes a reference, not a learning tool. Passive answer-display adds to cognitive load without adding to learning.<br><strong>Fix:</strong> In guided mode, labels appear sequentially — not all at once. In quiz/sandbox mode, labels are hidden until the student has answered a question about that dimension. The model earns its labels through student engagement.</div>
+  </div>
+
+  <!-- SECTION 7: PHILIPPINE-SPECIFIC -->
+  <hr class="divider">
+
+  <div class="sec-eye">Section 07 · Philippine ALE Context</div>
+  <div class="sec-h">3D Lab Specifically for the Philippine ALE — What's Unique</div>
+  <div class="sec-intro">The 3D Lab isn't for generic architecture education. It's specifically for passing the PRC Architecture Licensure Examination in the Philippines. That context creates specific requirements.</div>
+
+  <div class="tips-row">
+    <div class="tip-card">
+      <span class="tip-icon">🇵🇭</span>
+      <div class="tip-title">Philippine Codes Only</div>
+      <div class="tip-body">Every dimension in the 3D Lab must reference a Philippine code specifically. Never use ANSI/ISO standards as default — only PD 1096, RA 9514, BP 344, NSCP 2015, PEC, National Plumbing Code. Foreign code references confuse students who then apply wrong values on the exam.</div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-icon">🏗️</span>
+      <div class="tip-title">Tropical Context Models</div>
+      <div class="tip-body">Philippine architecture has specific considerations: ventilation (ASHRAE vs PD 1096 natural ventilation requirements), typhoon-resistant design, hot-humid climate considerations. The 3D Lab should include models showing Philippine climate-responsive design — not just temperate-climate defaults.</div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-icon">📐</span>
+      <div class="tip-title">AMBF / PSO / TGFA Visualization</div>
+      <div class="tip-body">Filipino architecture students consistently struggle with PSO, AMBF, and TGFA calculations — these are uniquely Philippine metrics. A parametric site model where students practice these calculations with immediate visual feedback would fill a gap no existing ALE reviewer product currently addresses.</div>
+    </div>
+  </div>
+
+  <div class="callout callout-blue">
+    <div class="callout-label">Unique SlateCamp Opportunity</div>
+    <div class="callout-text">No existing Philippine ALE prep platform offers interactive 3D visual learning. Arkitekto (the closest competitor) uses quizzes and spaced repetition — no visual learning layer. <strong>The 3D Lab is SlateCamp's most defensible competitive advantage and its most direct contribution to actual exam performance for Building Technology and Code subjects.</strong> The 186 modules planned cover content that is effectively impossible to understand through text alone. Build the top 10 first. Launch them. Track which modules correlate most strongly with improved Heatmap node states. Let the data tell you which to build next.</div>
+  </div>
+
+  <!-- QUICK REFERENCE SUMMARY -->
+  <hr class="divider">
+
+  <div class="sec-eye">Summary</div>
+  <div class="sec-h">The 7 Things to Build Right in the 3D Lab</div>
+
+  <div class="compare-table" style="margin-top:24px;">
+    <table style="width:100%;">
+      <thead>
+        <tr>
+          <th style="width:30%">Design Decision</th>
+          <th>What to Build</th>
+          <th style="width:20%">Research Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Phase Structure</td>
+          <td>Every module has 3 phases: Guided Tour → Faded Example → Full Sandbox. Not optional — this is the learning progression.</td>
+          <td class="td-code">Worked Example Effect · Expertise Reversal</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Dual Coding</td>
+          <td>Code text always adjacent to model — never on a separate screen. Split-panel desktop, stacked mobile.</td>
+          <td class="td-code">Dual-Channel Theory · Contiguity Principle</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Human Scale Reference</td>
+          <td>Every model includes a person silhouette at 1.7m. Every dimension a human interacts with is calibrated to human scale.</td>
+          <td class="td-code">Embodied cognition · Scale calibration research</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Hotspot Questions First</td>
+          <td>Hotspot tapped → question appears → student answers → correct value revealed. Never reveal then ask.</td>
+          <td class="td-code">Testing Effect · Roediger & Karpicke</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Progressive Disclosure</td>
+          <td>Models start simple, add complexity layer by layer. Student controls the reveal. Never show everything at once.</td>
+          <td class="td-code">Cognitive Load Theory · Segmenting Principle</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Exam Connection Explicit</td>
+          <td>Every module shows "X ALE questions per sitting" + direct link to Camp Mode questions on this topic.</td>
+          <td class="td-code">Transfer of learning · Contextual specificity</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:var(--ink);">Heatmap Integration</td>
+          <td>3D Lab interactions write to user_node_mastery. The Heatmap changes after a 3D session. The module is core study, not supplementary.</td>
+          <td class="td-code">Attribution theory · Progress motivation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background:var(--ink);padding:40px 80px;color:rgba(255,255,255,0.35);font-size:13px;">
+  <div style="font-family:'Syne',sans-serif;font-weight:700;font-size:18px;color:#fff;margin-bottom:6px;">SlateCamp</div>
+  <div>3D & Visual Learning UX Research Brief · March 2026 · Internal</div>
+  <div style="margin-top:6px;font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,0.2);">Based on: Cognitive Load Theory (Sweller) · Multimedia Learning (Mayer) · Spatial Ability Research (Porat & Ceobanu, 2024) · PH ALE Topnotcher Research · Philippine Building Code Analysis</div>
+</div>
+
+</body>
+</html>
+

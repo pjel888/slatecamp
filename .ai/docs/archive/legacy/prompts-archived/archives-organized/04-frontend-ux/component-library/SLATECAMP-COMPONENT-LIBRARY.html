@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp — Component Library Visual Reference</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════
+   SlateCamp Component Library — Visual Reference Guide
+   Design Language: Claude × GitHub × Supabase × Apple HIG
+   Colors: SlateCamp brand palette
+   Purpose: Machine-readable + human-readable spec for Claude Code
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Brand Colors ─── */
+  --primary: #1B3FC4;
+  --primary-light: #EEF2FC;
+  --primary-hover: #163399;
+  --primary-active: #122B80;
+
+  --green: #1B7A3C;
+  --green-light: #EAF3DE;
+  --green-dark: #155F2E;
+
+  --red: #E63329;
+  --red-light: #FEF2F2;
+  --red-dark: #B91C1C;
+
+  --amber: #F5A623;
+  --amber-light: #FFF8EB;
+
+  --orange: #E8853A;
+  --purple: #534AB7;
+  --purple-light: #F3F0FF;
+
+  /* ─── Neutrals ─── */
+  --bg: #F8F7F5;
+  --bg-card: #FFFFFF;
+  --bg-muted: #F2F0EB;
+  --bg-hover: #ECEAE4;
+  --border: #E0DED8;
+  --border-light: #ECEAE4;
+  --text: #1A1A1A;
+  --text-secondary: #6B6B68;
+  --text-muted: #9B9B97;
+  --text-inverse: #FFFFFF;
+  --navy: #0F1F5C;
+
+  /* ─── Spacing (4px grid) ─── */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
+
+  /* ─── Radii ─── */
+  --r-sm: 4px; --r-md: 6px; --r-lg: 8px; --r-xl: 12px; --r-full: 9999px;
+
+  /* ─── Shadows ─── */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-lg: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-focus: 0 0 0 3px rgba(27,63,196,0.15);
+  --shadow-focus-red: 0 0 0 3px rgba(230,51,41,0.15);
+
+  /* ─── Transitions ─── */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 150ms;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Layout ─── */
+.shell { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: 220px;
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  padding: var(--sp-4) 0;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebar-brand {
+  padding: 0 var(--sp-4) var(--sp-4);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: var(--sp-3);
+}
+
+.sidebar-brand h1 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.sidebar-brand .version {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: rgba(255,255,255,0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 2px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px var(--sp-4);
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: all var(--duration) var(--ease);
+}
+
+.sidebar a:hover { color: #fff; background: rgba(255,255,255,0.05); }
+.sidebar a.active { color: #fff; background: rgba(255,255,255,0.08); border-right: 2px solid var(--primary); }
+
+.sidebar .nav-group {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.25);
+  padding: var(--sp-4) var(--sp-4) var(--sp-1);
+}
+
+.main {
+  margin-left: 220px;
+  flex: 1;
+  padding: var(--sp-6) var(--sp-8);
+  max-width: 1100px;
+}
+
+/* ─── Section ─── */
+.section {
+  margin-bottom: var(--sp-10);
+  scroll-margin-top: var(--sp-4);
+}
+
+.section-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.section-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: var(--sp-4);
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* ─── Subsection ─── */
+.sub {
+  margin-bottom: var(--sp-6);
+}
+
+.sub-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--sp-2);
+  padding-bottom: var(--sp-1);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* ─── Specimen Row ─── */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  align-items: center;
+  margin-bottom: var(--sp-3);
+}
+
+.row-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+  width: 80px;
+  flex-shrink: 0;
+}
+
+/* ─── Specimen Card ─── */
+.specimen {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+
+.specimen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-3);
+}
+
+.specimen-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.specimen-code {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+  background: var(--bg-muted);
+  padding: 2px 6px;
+  border-radius: var(--r-sm);
+}
+
+/* ─── Color Swatch ─── */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: var(--sp-2);
+}
+
+.swatch {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.swatch-color {
+  height: 48px;
+}
+
+.swatch-info {
+  padding: 6px 8px;
+  background: var(--bg-card);
+}
+
+.swatch-name {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.swatch-hex {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--text-muted);
+}
+
+/* ─── Typography ─── */
+.type-specimen {
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-4);
+}
+
+.type-specimen:last-child { border-bottom: none; }
+
+.type-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--text-muted);
+  width: 140px;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+
+/* ═══════════════════════════════════════════════════════
+   COMPONENT STYLES — These are the actual components
+   ═══════════════════════════════════════════════════════ */
+
+/* ─── Buttons ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: var(--r-md);
+  outline: none;
+}
+
+.btn:focus-visible { box-shadow: var(--shadow-focus); }
+.btn:active { transform: scale(0.98); }
+.btn:disabled, .btn.disabled { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+
+/* Variants */
+.btn-primary { background: var(--primary); color: var(--text-inverse); }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-primary:active { background: var(--primary-active); }
+
+.btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn-secondary:hover { background: var(--bg-muted); }
+
+.btn-ghost { background: transparent; color: var(--text-secondary); }
+.btn-ghost:hover { background: var(--bg-muted); color: var(--text); }
+
+.btn-destructive { background: var(--red); color: var(--text-inverse); }
+.btn-destructive:hover { background: var(--red-dark); }
+
+.btn-success { background: var(--green); color: var(--text-inverse); }
+.btn-success:hover { background: var(--green-dark); }
+
+.btn-link { background: transparent; color: var(--primary); padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+.btn-link:hover { text-decoration-color: var(--primary); }
+
+/* Sizes */
+.btn-xs { height: 26px; padding: 0 8px; font-size: 11px; border-radius: var(--r-sm); }
+.btn-sm { height: 30px; padding: 0 10px; font-size: 12px; }
+.btn-md { height: 34px; padding: 0 14px; font-size: 13px; }
+.btn-lg { height: 38px; padding: 0 18px; font-size: 13px; }
+
+/* Loading */
+.btn-loading { pointer-events: none; }
+.btn-loading .spinner {
+  width: 14px; height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── Close Button ─── */
+.close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+  border-radius: var(--r-md);
+  outline: none;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.close-btn:focus-visible { box-shadow: var(--shadow-focus); }
+
+.close-ghost { background: transparent; }
+.close-ghost:hover { background: var(--bg-muted); color: var(--text); }
+
+.close-subtle { background: var(--bg-muted); }
+.close-subtle:hover { background: var(--bg-hover); color: var(--text); }
+
+.close-destructive { background: var(--red-light); color: var(--red); }
+.close-destructive:hover { background: #FEE2E2; }
+
+.close-sm { width: 24px; height: 24px; }
+.close-md { width: 30px; height: 30px; }
+.close-lg { width: 36px; height: 36px; }
+
+.close-btn svg { flex-shrink: 0; }
+
+/* ─── Badges / Pills ─── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  border-radius: var(--r-sm);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.badge-xs { padding: 2px 6px; font-size: 9px; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em; }
+.badge-sm { padding: 2px 7px; font-size: 10px; }
+.badge-md { padding: 4px 8px; font-size: 11px; }
+.badge-lg { padding: 4px 10px; font-size: 12px; }
+
+.badge-pill { border-radius: var(--r-full); }
+
+.badge-default { background: var(--bg-muted); color: var(--text-secondary); }
+.badge-primary { background: var(--primary-light); color: var(--primary); }
+.badge-success { background: var(--green-light); color: var(--green); border: 1px solid #C6DBAD; }
+.badge-warning { background: var(--amber-light); color: #92600A; border: 1px solid #FDE68A; }
+.badge-danger { background: var(--red-light); color: var(--red); border: 1px solid #FECACA; }
+.badge-info { background: #EFF6FF; color: #1E40AF; border: 1px solid #BFDBFE; }
+.badge-purple { background: var(--purple-light); color: var(--purple); border: 1px solid #DDD6FE; }
+.badge-orange { background: #FFF7ED; color: #C2410C; border: 1px solid #FED7AA; }
+.badge-outline { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
+
+.badge-dot::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.badge-success.badge-dot::before { background: var(--green); }
+.badge-warning.badge-dot::before { background: var(--amber); }
+.badge-danger.badge-dot::before { background: var(--red); }
+
+/* ─── Cards ─── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  transition: all var(--duration) var(--ease);
+}
+
+.card-sm { padding: var(--sp-3); border-radius: var(--r-lg); }
+.card-md { padding: var(--sp-4); }
+.card-lg { padding: var(--sp-6); }
+
+.card-interactive { cursor: pointer; }
+.card-interactive:hover { border-color: rgba(27,63,196,0.3); box-shadow: var(--shadow-sm); }
+
+.card-selected { border-color: var(--primary); background: rgba(27,63,196,0.02); }
+
+.card-accent-blue { border-left: 3px solid var(--primary); border-radius: 0 var(--r-xl) var(--r-xl) 0; }
+.card-accent-green { border-left: 3px solid var(--green); border-radius: 0 var(--r-xl) var(--r-xl) 0; }
+.card-accent-red { border-left: 3px solid var(--red); border-radius: 0 var(--r-xl) var(--r-xl) 0; }
+.card-accent-amber { border-left: 3px solid var(--amber); border-radius: 0 var(--r-xl) var(--r-xl) 0; }
+.card-accent-purple { border-left: 3px solid var(--purple); border-radius: 0 var(--r-xl) var(--r-xl) 0; }
+
+.card-feature-navy { background: var(--navy); color: #fff; border-color: transparent; }
+.card-feature-primary { background: var(--primary); color: #fff; border-color: transparent; }
+.card-feature-cream { background: var(--bg-muted); border-color: transparent; }
+
+/* Card Header */
+.card-header { margin-bottom: var(--sp-3); }
+.card-eyebrow { font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 2px; }
+.card-title { font-size: 13px; font-weight: 500; color: var(--text); }
+.card-subtitle { font-size: 11px; color: var(--text-secondary); margin-top: 1px; }
+
+/* ─── Form Inputs ─── */
+.input-group { margin-bottom: var(--sp-3); }
+
+.input-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  transition: all var(--duration) var(--ease);
+  outline: none;
+}
+
+.input:hover { border-color: #C0BEB8; }
+.input:focus { border-color: var(--primary); box-shadow: var(--shadow-focus); }
+.input:disabled { opacity: 0.45; cursor: not-allowed; background: var(--bg-muted); }
+.input.input-error { border-color: var(--red); box-shadow: var(--shadow-focus-red); }
+.input.input-success { border-color: var(--green); }
+
+.input-sm { height: 30px; font-size: 12px; padding: 0 8px; }
+.input-md { height: 34px; font-size: 13px; padding: 0 10px; }
+.input-lg { height: 38px; font-size: 13px; padding: 0 12px; }
+
+.input-hint { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+.input-error-msg { font-size: 11px; color: var(--red); margin-top: 3px; }
+
+textarea.input { min-height: 72px; padding: 8px 10px; resize: vertical; }
+
+/* Search input */
+.search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-wrap svg { position: absolute; left: 10px; color: var(--text-muted); pointer-events: none; }
+.search-wrap .input { padding-left: 32px; }
+.search-kbd {
+  position: absolute;
+  right: 8px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--text-muted);
+  background: var(--bg-muted);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+/* ─── Checkbox & Radio ─── */
+.check-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.check-box, .radio-box {
+  width: 16px; height: 16px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration) var(--ease);
+  flex-shrink: 0;
+}
+
+.check-box { border-radius: 3px; }
+.radio-box { border-radius: 50%; }
+
+.check-box.checked, .radio-box.checked {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.check-box.checked svg { color: #fff; }
+.radio-box.checked::after { content: ''; width: 6px; height: 6px; background: #fff; border-radius: 50%; }
+
+/* ─── Toggle ─── */
+.toggle {
+  width: 36px; height: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background var(--duration) var(--ease);
+  border: none;
+}
+
+.toggle-off { background: var(--bg-hover); }
+.toggle-on { background: var(--primary); }
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: transform var(--duration) var(--ease);
+}
+
+.toggle-off::after { left: 2px; }
+.toggle-on::after { left: 2px; transform: translateX(16px); }
+
+/* ─── Tabs ─── */
+.tabs { display: flex; border-bottom: 1px solid var(--border); gap: 0; }
+
+.tab {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all var(--duration) var(--ease);
+  margin-bottom: -1px;
+}
+
+.tab:hover { color: var(--text); }
+.tab.tab-active { color: var(--primary); font-weight: 500; border-bottom-color: var(--primary); }
+
+/* Pill tabs */
+.tabs-pill { border-bottom: none; background: var(--bg-muted); border-radius: var(--r-lg); padding: 3px; gap: 2px; display: inline-flex; }
+.tab-pill {
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--r-md);
+  transition: all var(--duration) var(--ease);
+}
+.tab-pill:hover { color: var(--text); }
+.tab-pill.tab-active { background: var(--bg-card); color: var(--text); box-shadow: var(--shadow-sm); }
+
+/* ─── Tooltips ─── */
+.tooltip-demo { position: relative; display: inline-block; }
+.tooltip-bubble {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg-card);
+  padding: 4px 10px;
+  border-radius: var(--r-md);
+  font-size: 11px;
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+}
+.tooltip-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--text);
+}
+
+/* ─── Toast ─── */
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-3);
+  box-shadow: var(--shadow-lg);
+  max-width: 360px;
+  font-size: 12px;
+}
+
+.toast-success { border-left: 3px solid var(--green); }
+.toast-error { border-left: 3px solid var(--red); }
+.toast-warning { border-left: 3px solid var(--amber); }
+.toast-info { border-left: 3px solid var(--primary); }
+
+.toast-icon { flex-shrink: 0; width: 16px; height: 16px; margin-top: 1px; }
+.toast-content { flex: 1; }
+.toast-title { font-weight: 600; font-size: 12px; color: var(--text); margin-bottom: 1px; }
+.toast-desc { font-size: 11px; color: var(--text-secondary); line-height: 1.4; }
+
+/* ─── Score Display ─── */
+.score-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-ring svg { transform: rotate(-90deg); }
+.score-ring circle { fill: none; stroke-linecap: round; transition: stroke-dashoffset 1s var(--ease); }
+.score-ring .track { stroke: var(--bg-muted); }
+.score-ring .fill-green { stroke: var(--green); }
+.score-ring .fill-neutral { stroke: var(--text-secondary); }
+
+.score-value {
+  position: absolute;
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.score-bar-wrap { width: 100%; }
+.score-bar-track { width: 100%; background: var(--bg-muted); border-radius: var(--r-full); overflow: hidden; }
+.score-bar-fill { height: 100%; border-radius: var(--r-full); transition: width 0.6s var(--ease); }
+.score-bar-fill.fill-green { background: var(--green); }
+.score-bar-fill.fill-neutral { background: var(--text-muted); }
+
+.score-pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+}
+
+.score-pill.fill-green { background: var(--green-light); color: var(--green); }
+.score-pill.fill-neutral { background: var(--bg-muted); color: var(--text-secondary); }
+
+/* ─── Question Card ─── */
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+  font-size: 12px;
+}
+
+.choice:hover { border-color: rgba(27,63,196,0.25); background: rgba(27,63,196,0.02); }
+.choice-selected { border-color: var(--primary); background: var(--primary-light); }
+.choice-correct { border-color: var(--green); background: var(--green-light); }
+.choice-incorrect { border-color: var(--red); background: var(--red-light); }
+.choice-dimmed { opacity: 0.5; pointer-events: none; }
+
+.choice-letter {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--bg-muted);
+  color: var(--text-secondary);
+}
+
+.choice-selected .choice-letter { background: var(--primary); color: #fff; }
+.choice-correct .choice-letter { background: var(--green); color: #fff; }
+.choice-incorrect .choice-letter { background: var(--red); color: #fff; }
+
+/* ─── Legal Citation ─── */
+.law-cite {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: var(--r-sm);
+  display: inline-flex;
+  align-items: center;
+}
+
+.law-nbcp { background: #EFF6FF; color: #1E40AF; }
+.law-ra9514 { background: var(--red-light); color: var(--red-dark); }
+.law-bp344 { background: var(--purple-light); color: var(--purple); }
+.law-ra9266 { background: var(--green-light); color: var(--green); }
+.law-nscp { background: var(--amber-light); color: #92600A; }
+.law-bp220 { background: #ECFEFF; color: #155E75; }
+.law-pd957 { background: #FFF7ED; color: #C2410C; }
+
+/* ─── Stat Card ─── */
+.stat-number {
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── Table ─── */
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1.5px solid var(--border);
+  background: var(--bg);
+}
+.data-table td {
+  font-size: 12px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text);
+}
+.data-table tr:hover td { background: rgba(0,0,0,0.015); }
+
+/* ─── Empty State ─── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sp-8) var(--sp-4);
+  text-align: center;
+}
+
+.empty-icon {
+  width: 32px; height: 32px;
+  background: var(--bg-muted);
+  border-radius: var(--r-lg);
+  margin-bottom: var(--sp-3);
+}
+
+.empty-msg { font-size: 13px; color: var(--text-secondary); margin-bottom: var(--sp-1); }
+.empty-hint { font-size: 11px; color: var(--text-muted); margin-bottom: var(--sp-3); }
+
+/* ─── Skeleton ─── */
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-muted) 25%, var(--bg-hover) 50%, var(--bg-muted) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--r-sm);
+}
+
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* ─── Breadcrumb ─── */
+.breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.breadcrumb-item { color: var(--text-muted); text-decoration: none; }
+.breadcrumb-item:hover { color: var(--text); }
+.breadcrumb-sep { color: var(--border); font-size: 10px; }
+.breadcrumb-current { color: var(--text); font-weight: 500; }
+
+/* ─── Spacing & Layout Helpers ─── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--sp-3); }
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: var(--sp-3); }
+.flex-center { display: flex; align-items: center; }
+.gap-1 { gap: var(--sp-1); }
+.gap-2 { gap: var(--sp-2); }
+.gap-3 { gap: var(--sp-3); }
+.mt-2 { margin-top: var(--sp-2); }
+.mt-3 { margin-top: var(--sp-3); }
+.mb-2 { margin-bottom: var(--sp-2); }
+.mb-3 { margin-bottom: var(--sp-3); }
+
+/* ─── Divider ─── */
+.divider { height: 1px; background: var(--border-light); margin: var(--sp-4) 0; }
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+<!-- ═══ SIDEBAR ═══ -->
+<nav class="sidebar">
+  <div class="sidebar-brand">
+    <h1>SlateCamp</h1>
+    <div class="version">Component Library v1.0</div>
+  </div>
+
+  <div class="nav-group">Foundation</div>
+  <a href="#colors">Colors</a>
+  <a href="#typography">Typography</a>
+  <a href="#spacing">Spacing & Grid</a>
+
+  <div class="nav-group">Primitives</div>
+  <a href="#buttons">Buttons</a>
+  <a href="#close-button">Close Button</a>
+  <a href="#badges">Badges & Pills</a>
+  <a href="#cards">Cards</a>
+  <a href="#inputs">Form Inputs</a>
+  <a href="#checkboxes">Checkbox & Radio</a>
+  <a href="#toggles">Toggle Switch</a>
+  <a href="#tabs">Tabs</a>
+  <a href="#tooltips">Tooltips</a>
+
+  <div class="nav-group">Feedback</div>
+  <a href="#toasts">Toasts</a>
+  <a href="#empty-states">Empty States</a>
+  <a href="#skeletons">Skeletons</a>
+
+  <div class="nav-group">Data</div>
+  <a href="#tables">Data Table</a>
+  <a href="#breadcrumbs">Breadcrumbs</a>
+  <a href="#search">Search Input</a>
+
+  <div class="nav-group">Domain</div>
+  <a href="#scores">Score Display</a>
+  <a href="#questions">Question Card</a>
+  <a href="#law-citations">Legal Citations</a>
+  <a href="#stat-cards">Stat Cards</a>
+  <a href="#section-headers">Section Headers</a>
+  <a href="#taxonomy-picker">Taxonomy Picker</a>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+<!-- ─────────────────────── COLORS ─────────────────────── -->
+<section id="colors" class="section">
+  <div class="section-eyebrow">Foundation</div>
+  <h2 class="section-title">Color Palette</h2>
+  <p class="section-desc">SlateCamp's palette is functional, not decorative. Every color earns its place with a specific semantic meaning. Red is never used for low scores — only for system errors.</p>
+
+  <div class="sub">
+    <div class="sub-label">Brand & Signal</div>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#1B3FC4"></div><div class="swatch-info"><div class="swatch-name">Primary (Cobalt)</div><div class="swatch-hex">#1B3FC4</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1B7A3C"></div><div class="swatch-info"><div class="swatch-name">Signal Green</div><div class="swatch-hex">#1B7A3C — passing, success</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E63329"></div><div class="swatch-info"><div class="swatch-name">Signal Red</div><div class="swatch-hex">#E63329 — errors only</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F5A623"></div><div class="swatch-info"><div class="swatch-name">Signal Gold</div><div class="swatch-hex">#F5A623 — warnings, in-progress</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E8853A"></div><div class="swatch-info"><div class="swatch-name">Camp Orange</div><div class="swatch-hex">#E8853A — primary CTA accent</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#534AB7"></div><div class="swatch-info"><div class="swatch-name">Trail Purple</div><div class="swatch-hex">#534AB7 — progression</div></div></div>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">Neutrals & Surfaces</div>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#F8F7F5"></div><div class="swatch-info"><div class="swatch-name">Background</div><div class="swatch-hex">#F8F7F5</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#FFFFFF; border-bottom:1px solid #E0DED8"></div><div class="swatch-info"><div class="swatch-name">Card / Surface</div><div class="swatch-hex">#FFFFFF</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F2F0EB"></div><div class="swatch-info"><div class="swatch-name">Muted / Cream</div><div class="swatch-hex">#F2F0EB</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E0DED8"></div><div class="swatch-info"><div class="swatch-name">Border</div><div class="swatch-hex">#E0DED8</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#0F1F5C"></div><div class="swatch-info"><div class="swatch-name">Navy (Admin)</div><div class="swatch-hex">#0F1F5C</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1A1A1A"></div><div class="swatch-info"><div class="swatch-name">Text Primary</div><div class="swatch-hex">#1A1A1A</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TYPOGRAPHY ─────────────────────── -->
+<section id="typography" class="section">
+  <div class="section-eyebrow">Foundation</div>
+  <h2 class="section-title">Typography</h2>
+  <p class="section-desc">Three fonts with strict roles. Syne for headings, DM Mono for labels and numbers, Inter for everything else. Never mix roles.</p>
+
+  <div class="specimen">
+    <div class="type-specimen">
+      <div class="type-meta">Syne 800<br>Page heading</div>
+      <div style="font-family:'Syne',sans-serif; font-weight:800; font-size:17px; letter-spacing:-0.02em;">Readiness Score — Area C</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">Syne 700<br>Section heading</div>
+      <div style="font-family:'Syne',sans-serif; font-weight:700; font-size:14px;">Professional Practice</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">DM Mono 500 9px<br>Eyebrow / label</div>
+      <div style="font-family:'DM Mono',monospace; font-weight:500; font-size:9px; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-muted);">Subject mastery</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">DM Mono 500 11px<br>Code / ale_id</div>
+      <div style="font-family:'DM Mono',monospace; font-weight:500; font-size:11px; color:var(--primary);">ALE-DSGN-008-03</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">DM Mono 500 24px<br>Stat number</div>
+      <div style="font-family:'DM Mono',monospace; font-weight:500; font-size:24px; font-variant-numeric:tabular-nums;">4,218</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">Inter 500 13px<br>Card title</div>
+      <div style="font-weight:500; font-size:13px;">Building Materials & Construction</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">Inter 400 13px<br>Body text</div>
+      <div style="font-size:13px; color:var(--text); max-width:400px; line-height:1.6;">The PRBoA is composed of a Chairperson and four members, for a total of five, appointed by the President of the Philippines.</div>
+    </div>
+    <div class="type-specimen">
+      <div class="type-meta">Inter 400 11px<br>Helper / muted</div>
+      <div style="font-size:11px; color:var(--text-muted);">Last updated 2 hours ago · 2,840 words</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── BUTTONS ─────────────────────── -->
+<section id="buttons" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Buttons</h2>
+  <p class="section-desc">6 variants × 4 sizes. Every button has hover, focus-visible, active, and disabled states. Primary is limited to one per view.</p>
+
+  <div class="sub">
+    <div class="sub-label">Variants (size: md)</div>
+    <div class="row">
+      <button class="btn btn-primary btn-md">Primary</button>
+      <button class="btn btn-secondary btn-md">Secondary</button>
+      <button class="btn btn-ghost btn-md">Ghost</button>
+      <button class="btn btn-destructive btn-md">Destructive</button>
+      <button class="btn btn-success btn-md">Success</button>
+      <button class="btn btn-link btn-md">Link</button>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">Sizes</div>
+    <div class="row">
+      <button class="btn btn-primary btn-xs">Extra Small</button>
+      <button class="btn btn-primary btn-sm">Small</button>
+      <button class="btn btn-primary btn-md">Medium</button>
+      <button class="btn btn-primary btn-lg">Large</button>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">States</div>
+    <div class="row">
+      <button class="btn btn-primary btn-md">Default</button>
+      <button class="btn btn-primary btn-md" style="background:var(--primary-hover)">Hover</button>
+      <button class="btn btn-primary btn-md" style="background:var(--primary-active); transform:scale(0.98)">Active</button>
+      <button class="btn btn-primary btn-md disabled">Disabled</button>
+      <button class="btn btn-primary btn-md btn-loading"><span class="spinner"></span> Saving...</button>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">With Icons</div>
+    <div class="row">
+      <button class="btn btn-primary btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> New Article</button>
+      <button class="btn btn-secondary btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg> Edit</button>
+      <button class="btn btn-ghost btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3,6 5,6 21,6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Delete</button>
+      <button class="btn btn-destructive btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Report Issue</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── CLOSE BUTTON ─────────────────────── -->
+<section id="close-button" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Close / Dismiss Button</h2>
+  <p class="section-desc">One component for every dismiss action. Ghost for modals/panels, Subtle for cards/banners, Destructive for warning contexts.</p>
+
+  <div class="sub">
+    <div class="sub-label">Variants × Sizes</div>
+    <div class="row gap-3">
+      <div>
+        <div style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">Ghost</div>
+        <div class="row gap-2">
+          <button class="close-btn close-ghost close-sm" aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-ghost close-md" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-ghost close-lg" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">Subtle</div>
+        <div class="row gap-2">
+          <button class="close-btn close-subtle close-sm" aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-subtle close-md" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-subtle close-lg" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">Destructive</div>
+        <div class="row gap-2">
+          <button class="close-btn close-destructive close-sm" aria-label="Close"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-destructive close-md" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+          <button class="close-btn close-destructive close-lg" aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── BADGES ─────────────────────── -->
+<section id="badges" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Badges & Pills</h2>
+  <p class="section-desc">9 color variants × 4 sizes. Used for status, difficulty, session modes, mastery tiers, and inline labels. Dot variant adds a colored circle indicator.</p>
+
+  <div class="sub">
+    <div class="sub-label">Color Variants (size: sm)</div>
+    <div class="row">
+      <span class="badge badge-sm badge-default">Default</span>
+      <span class="badge badge-sm badge-primary">Primary</span>
+      <span class="badge badge-sm badge-success">Success</span>
+      <span class="badge badge-sm badge-warning">Warning</span>
+      <span class="badge badge-sm badge-danger">Danger</span>
+      <span class="badge badge-sm badge-info">Info</span>
+      <span class="badge badge-sm badge-purple">Purple</span>
+      <span class="badge badge-sm badge-orange">Orange</span>
+      <span class="badge badge-sm badge-outline">Outline</span>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">Sizes</div>
+    <div class="row">
+      <span class="badge badge-xs badge-primary">XS Label</span>
+      <span class="badge badge-sm badge-primary">SM Badge</span>
+      <span class="badge badge-md badge-primary">MD Badge</span>
+      <span class="badge badge-lg badge-primary">LG Badge</span>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">Pill Shape</div>
+    <div class="row">
+      <span class="badge badge-sm badge-pill badge-success">Published</span>
+      <span class="badge badge-sm badge-pill badge-warning">Draft</span>
+      <span class="badge badge-sm badge-pill badge-danger">3 issues</span>
+      <span class="badge badge-sm badge-pill badge-default">Unverified</span>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">With Dot Indicator</div>
+    <div class="row">
+      <span class="badge badge-sm badge-success badge-dot">Clean</span>
+      <span class="badge badge-sm badge-warning badge-dot">In Progress</span>
+      <span class="badge badge-sm badge-danger badge-dot">Critical</span>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="sub-label">Semantic Presets</div>
+    <div class="row"><span style="font-size:10px; color:var(--text-muted); width:70px;">Status:</span>
+      <span class="badge badge-xs badge-success">PUBLISHED</span>
+      <span class="badge badge-xs badge-warning">DRAFT</span>
+      <span class="badge badge-xs badge-default">ARCHIVED</span>
+    </div>
+    <div class="row"><span style="font-size:10px; color:var(--text-muted); width:70px;">Difficulty:</span>
+      <span class="badge badge-xs badge-info">FOUNDATIONAL</span>
+      <span class="badge badge-xs badge-warning">INTERMEDIATE</span>
+      <span class="badge badge-xs badge-orange">ADVANCED</span>
+    </div>
+    <div class="row"><span style="font-size:10px; color:var(--text-muted); width:70px;">Session:</span>
+      <span class="badge badge-xs badge-primary">CAMP</span>
+      <span class="badge badge-xs badge-warning">STORM</span>
+      <span class="badge badge-xs badge-danger">BLINDSPOT</span>
+      <span class="badge badge-xs badge-purple">PROOF</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── CARDS ─────────────────────── -->
+<section id="cards" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Cards</h2>
+  <p class="section-desc">6 variants. Default for containers, Interactive for clickable items, Accent for action cards (left border color), Feature for discovery row items.</p>
+
+  <div class="grid-2">
+    <div class="card card-md">
+      <div class="card-header">
+        <div class="card-eyebrow">Default Card</div>
+        <div class="card-title">Standard content container</div>
+        <div class="card-subtitle">Used for most content blocks</div>
+      </div>
+      <div style="font-size:12px; color:var(--text-secondary);">Card body content goes here. This is the base card — white bg, border, rounded-xl, p-4.</div>
+    </div>
+
+    <div class="card card-md card-interactive">
+      <div class="card-header">
+        <div class="card-eyebrow">Interactive Card</div>
+        <div class="card-title">Clickable — hover for blue border</div>
+        <div class="card-subtitle">Articles, questions, navigation items</div>
+      </div>
+      <div style="font-size:12px; color:var(--text-secondary);">Hover me to see the interaction. Border transitions to primary/30, subtle shadow appears.</div>
+    </div>
+
+    <div class="card card-md card-accent-blue">
+      <div class="card-header">
+        <div class="card-eyebrow">Accent — Blue</div>
+        <div class="card-title">Primary action or info card</div>
+      </div>
+      <div style="font-size:12px; color:var(--text-secondary);">3px left border in accent color. Use for action cards, issue summaries, important info.</div>
+    </div>
+
+    <div class="card card-md card-accent-red">
+      <div class="card-header">
+        <div class="card-eyebrow">Accent — Red</div>
+        <div class="card-title">Critical issue card</div>
+      </div>
+      <div style="font-size:12px; color:var(--text-secondary);">Red accent for critical severity issues. Functional only — never for scores.</div>
+    </div>
+
+    <div class="card card-md card-feature-navy">
+      <div style="font-family:'DM Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.12em; color:rgba(255,255,255,0.5); margin-bottom:2px;">Feature Card</div>
+      <div style="font-size:13px; font-weight:500; color:#fff;">Wiki Articles</div>
+      <div style="font-size:11px; color:rgba(255,255,255,0.6); margin-top:2px;">Browse the knowledge base</div>
+    </div>
+
+    <div class="card card-md card-feature-cream">
+      <div style="font-family:'DM Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-muted); margin-bottom:2px;">Feature Card</div>
+      <div style="font-size:13px; font-weight:500;">Notes</div>
+      <div style="font-size:11px; color:var(--text-secondary); margin-top:2px;">Your personal study notes</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── FORM INPUTS ─────────────────────── -->
+<section id="inputs" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Form Inputs</h2>
+  <p class="section-desc">3 sizes. States: default, hover (darken border), focus (blue border + ring), disabled (dimmed), error (red border + ring), success (green border).</p>
+
+  <div class="grid-3">
+    <div class="input-group">
+      <label class="input-label">Default</label>
+      <input type="text" class="input input-md" placeholder="Enter title...">
+    </div>
+    <div class="input-group">
+      <label class="input-label">Focused</label>
+      <input type="text" class="input input-md" value="Roman Architecture" style="border-color:var(--primary); box-shadow:var(--shadow-focus);">
+    </div>
+    <div class="input-group">
+      <label class="input-label">Error</label>
+      <input type="text" class="input input-md input-error" value="Invalid slug!">
+      <div class="input-error-msg">Slug must be lowercase with hyphens only</div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="input-group">
+      <label class="input-label">Disabled</label>
+      <input type="text" class="input input-md" value="Read only" disabled>
+    </div>
+    <div class="input-group">
+      <label class="input-label">Success</label>
+      <input type="text" class="input input-md input-success" value="ale-hist-001-06">
+    </div>
+    <div class="input-group">
+      <label class="input-label">Small</label>
+      <input type="text" class="input input-sm" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="sub mt-3">
+    <div class="sub-label">Textarea</div>
+    <textarea class="input input-md" placeholder="Enter rationale..." style="min-height:64px; padding:8px 10px;">The Colosseum features the Roman system of superimposed orders on its four-story exterior.</textarea>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── CHECKBOXES & RADIO ─────────────────────── -->
+<section id="checkboxes" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Checkbox & Radio</h2>
+
+  <div class="grid-2">
+    <div class="sub">
+      <div class="sub-label">Checkbox</div>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <label class="check-wrap"><span class="check-box"><svg width="0" height="0"></svg></span> Unchecked</label>
+        <label class="check-wrap"><span class="check-box checked"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20,6 9,17 4,12"/></svg></span> Checked</label>
+        <label class="check-wrap" style="opacity:0.45"><span class="check-box"></span> Disabled</label>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="sub-label">Radio</div>
+      <div style="display:flex; flex-direction:column; gap:8px;">
+        <label class="check-wrap"><span class="radio-box"></span> Option A</label>
+        <label class="check-wrap"><span class="radio-box checked"></span> Option B (selected)</label>
+        <label class="check-wrap" style="opacity:0.45"><span class="radio-box"></span> Disabled</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TOGGLES ─────────────────────── -->
+<section id="toggles" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Toggle Switch</h2>
+
+  <div class="row gap-3">
+    <div class="flex-center gap-2"><button class="toggle toggle-off"></button> <span style="font-size:12px;">Off</span></div>
+    <div class="flex-center gap-2"><button class="toggle toggle-on"></button> <span style="font-size:12px;">On</span></div>
+    <div class="flex-center gap-2" style="opacity:0.45"><button class="toggle toggle-off"></button> <span style="font-size:12px;">Disabled</span></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TABS ─────────────────────── -->
+<section id="tabs" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Tabs</h2>
+
+  <div class="sub">
+    <div class="sub-label">Underline (page-level)</div>
+    <div class="tabs">
+      <button class="tab tab-active">Taxonomy</button>
+      <button class="tab">Articles</button>
+      <button class="tab">Questions</button>
+      <button class="tab">Assets</button>
+    </div>
+  </div>
+
+  <div class="sub mt-3">
+    <div class="sub-label">Pill (in-card filtering)</div>
+    <div class="tabs-pill">
+      <button class="tab-pill tab-active">All</button>
+      <button class="tab-pill">Flagged</button>
+      <button class="tab-pill">Clean</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TOOLTIPS ─────────────────────── -->
+<section id="tooltips" class="section">
+  <div class="section-eyebrow">Primitives</div>
+  <h2 class="section-title">Tooltips</h2>
+  <p class="section-desc">Required on every icon-only button and non-obvious metric. Dark bg, white text, 300ms delay.</p>
+
+  <div class="row gap-3" style="padding-top:40px;">
+    <div class="tooltip-demo">
+      <button class="btn btn-ghost btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+      <div class="tooltip-bubble">Edit article</div>
+    </div>
+    <div class="tooltip-demo">
+      <button class="btn btn-ghost btn-sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></button>
+      <div class="tooltip-bubble">Coverage: questions answered / total</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TOASTS ─────────────────────── -->
+<section id="toasts" class="section">
+  <div class="section-eyebrow">Feedback</div>
+  <h2 class="section-title">Toasts</h2>
+
+  <div style="display:flex; flex-direction:column; gap:8px; max-width:360px;">
+    <div class="toast toast-success">
+      <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="#1B7A3C" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="16,8 10.5,14 8,11.5"/></svg>
+      <div class="toast-content"><div class="toast-title">Article saved</div><div class="toast-desc">Roman Architecture updated successfully.</div></div>
+    </div>
+    <div class="toast toast-error">
+      <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="#E63329" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <div class="toast-content"><div class="toast-title">Save failed</div><div class="toast-desc">Network error. Check your connection and try again.</div></div>
+    </div>
+    <div class="toast toast-warning">
+      <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="#92600A" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <div class="toast-content"><div class="toast-title">Unsaved changes</div><div class="toast-desc">You have unsaved changes that will be lost.</div></div>
+    </div>
+    <div class="toast toast-info">
+      <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="#1E40AF" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div class="toast-content"><div class="toast-title">Tip</div><div class="toast-desc">Press ⌘S to save, ⌘K to search components.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── EMPTY STATES ─────────────────────── -->
+<section id="empty-states" class="section">
+  <div class="section-eyebrow">Feedback</div>
+  <h2 class="section-title">Empty States</h2>
+
+  <div class="card card-md">
+    <div class="empty-state">
+      <div class="empty-icon"></div>
+      <div class="empty-msg">No sessions yet this week.</div>
+      <div class="empty-hint">Start your first quiz to see your activity here.</div>
+      <button class="btn btn-primary btn-sm">Start Quiz →</button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── SKELETONS ─────────────────────── -->
+<section id="skeletons" class="section">
+  <div class="section-eyebrow">Feedback</div>
+  <h2 class="section-title">Loading Skeletons</h2>
+
+  <div class="card card-md" style="max-width:300px;">
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <div class="skeleton" style="height:10px; width:60px;"></div>
+      <div class="skeleton" style="height:14px; width:180px;"></div>
+      <div class="skeleton" style="height:10px; width:120px;"></div>
+      <div style="margin-top:8px;">
+        <div class="skeleton" style="height:6px; width:100%; border-radius:3px;"></div>
+      </div>
+      <div style="display:flex; gap:6px; margin-top:4px;">
+        <div class="skeleton" style="height:20px; width:60px; border-radius:9999px;"></div>
+        <div class="skeleton" style="height:20px; width:80px; border-radius:9999px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── DATA TABLE ─────────────────────── -->
+<section id="tables" class="section">
+  <div class="section-eyebrow">Data</div>
+  <h2 class="section-title">Data Table</h2>
+  <p class="section-desc">Sortable headers, hover rows, monospace for IDs and numbers. Used in admin for articles, questions, audit log.</p>
+
+  <div class="card card-md" style="padding:0; overflow:hidden;">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th style="width:130px;">ALE ID ↕</th>
+          <th>Title</th>
+          <th style="width:80px;">Status</th>
+          <th style="width:70px;">Words</th>
+          <th style="width:100px;">Updated</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--primary);">ALE-HIST-001-06</span></td>
+          <td>Roman Architecture: Engineering an Empire</td>
+          <td><span class="badge badge-xs badge-pill badge-success">Published</span></td>
+          <td style="font-family:'DM Mono',monospace; font-size:11px; text-align:right;">2,840</td>
+          <td style="font-size:11px; color:var(--text-muted);">2 hours ago</td>
+        </tr>
+        <tr>
+          <td><span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--primary);">ALE-HIST-001-04</span></td>
+          <td>Persian Architecture</td>
+          <td><span class="badge badge-xs badge-pill badge-warning">Draft</span></td>
+          <td style="font-family:'DM Mono',monospace; font-size:11px; text-align:right;">1,200</td>
+          <td style="font-size:11px; color:var(--text-muted);">5 days ago</td>
+        </tr>
+        <tr>
+          <td><span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--primary);">ALE-PRAC-001-01</span></td>
+          <td>PRBoA Composition & Powers</td>
+          <td><span class="badge badge-xs badge-pill badge-success">Published</span></td>
+          <td style="font-family:'DM Mono',monospace; font-size:11px; text-align:right;">1,800</td>
+          <td style="font-size:11px; color:var(--text-muted);">3 days ago</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── SEARCH ─────────────────────── -->
+<section id="search" class="section">
+  <div class="section-eyebrow">Data</div>
+  <h2 class="section-title">Search Input</h2>
+
+  <div style="max-width:320px;">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="input input-md" placeholder="Search articles..." value="">
+      <span class="search-kbd">⌘K</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── BREADCRUMBS ─────────────────────── -->
+<section id="breadcrumbs" class="section">
+  <div class="section-eyebrow">Data</div>
+  <h2 class="section-title">Breadcrumbs</h2>
+
+  <div class="breadcrumb">
+    <a href="#" class="breadcrumb-item">Wiki</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="#" class="breadcrumb-item">History of Architecture</a>
+    <span class="breadcrumb-sep">/</span>
+    <a href="#" class="breadcrumb-item">Pre-Historic & Ancient</a>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-current">Roman Architecture</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── SCORE DISPLAY ─────────────────────── -->
+<section id="scores" class="section">
+  <div class="section-eyebrow">Domain — Exam Review</div>
+  <h2 class="section-title">Score / Percentage Display</h2>
+  <p class="section-desc">≥70% = green, 40-69% = neutral, &lt;40% = neutral + "Needs review". Never red for low scores.</p>
+
+  <div class="grid-4">
+    <div style="text-align:center;">
+      <div class="score-ring" style="width:72px; height:72px;">
+        <svg width="72" height="72"><circle class="track" cx="36" cy="36" r="30" stroke-width="5"/><circle class="fill-green" cx="36" cy="36" r="30" stroke-width="5" stroke-dasharray="188.5" stroke-dashoffset="37.7"/></svg>
+        <span class="score-value" style="font-size:16px;">80%</span>
+      </div>
+      <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">Passing</div>
+    </div>
+    <div style="text-align:center;">
+      <div class="score-ring" style="width:72px; height:72px;">
+        <svg width="72" height="72"><circle class="track" cx="36" cy="36" r="30" stroke-width="5"/><circle class="fill-neutral" cx="36" cy="36" r="30" stroke-width="5" stroke-dasharray="188.5" stroke-dashoffset="94.25"/></svg>
+        <span class="score-value" style="font-size:16px;">50%</span>
+      </div>
+      <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">Neutral</div>
+    </div>
+    <div style="text-align:center;">
+      <div class="score-ring" style="width:72px; height:72px;">
+        <svg width="72" height="72"><circle class="track" cx="36" cy="36" r="30" stroke-width="5"/><circle class="fill-neutral" cx="36" cy="36" r="30" stroke-width="5" stroke-dasharray="188.5" stroke-dashoffset="150.8"/></svg>
+        <span class="score-value" style="font-size:14px; color:var(--text-muted);">20%</span>
+      </div>
+      <div style="font-size:10px; color:var(--text-muted); margin-top:4px;">Needs review</div>
+    </div>
+    <div>
+      <div style="font-size:10px; color:var(--text-muted); margin-bottom:6px;">Pills</div>
+      <div style="display:flex; flex-direction:column; gap:4px;">
+        <span class="score-pill fill-green" style="display:inline-block; width:fit-content;">78%</span>
+        <span class="score-pill fill-neutral" style="display:inline-block; width:fit-content;">55%</span>
+        <span class="score-pill fill-neutral" style="display:inline-block; width:fit-content; color:var(--text-muted);">28%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub mt-3">
+    <div class="sub-label">Progress Bars</div>
+    <div style="display:flex; flex-direction:column; gap:8px; max-width:400px;">
+      <div><div style="font-size:10px; color:var(--text-muted); margin-bottom:3px;">82% — Professional Practice</div><div class="score-bar-track" style="height:6px;"><div class="score-bar-fill fill-green" style="width:82%;"></div></div></div>
+      <div><div style="font-size:10px; color:var(--text-muted); margin-bottom:3px;">55% — Structural Design</div><div class="score-bar-track" style="height:6px;"><div class="score-bar-fill fill-neutral" style="width:55%;"></div></div></div>
+      <div><div style="font-size:10px; color:var(--text-muted); margin-bottom:3px;">28% — Architectural Design</div><div class="score-bar-track" style="height:6px;"><div class="score-bar-fill fill-neutral" style="width:28%;"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── QUESTION CARD ─────────────────────── -->
+<section id="questions" class="section">
+  <div class="section-eyebrow">Domain — Exam Review</div>
+  <h2 class="section-title">Question Card</h2>
+  <p class="section-desc">4 states: unanswered (neutral), selected (blue), correct (green + others dimmed), incorrect (red + correct highlighted green).</p>
+
+  <div class="grid-2">
+    <div class="card card-md">
+      <div style="font-size:10px; color:var(--text-muted); margin-bottom:8px;">Unanswered — hover to select</div>
+      <p style="font-size:12px; font-weight:500; margin-bottom:10px;">Which Roman structure featured the system of superimposed orders?</p>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div class="choice"><span class="choice-letter">A</span> Pantheon</div>
+        <div class="choice" style="border-color:rgba(27,63,196,0.25); background:rgba(27,63,196,0.02);"><span class="choice-letter">B</span> Colosseum</div>
+        <div class="choice"><span class="choice-letter">C</span> Basilica of Maxentius</div>
+        <div class="choice"><span class="choice-letter">D</span> Forum of Trajan</div>
+      </div>
+    </div>
+
+    <div class="card card-md">
+      <div style="font-size:10px; color:var(--text-muted); margin-bottom:8px;">Selected (pre-submit)</div>
+      <p style="font-size:12px; font-weight:500; margin-bottom:10px;">Which Roman structure featured the system of superimposed orders?</p>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div class="choice"><span class="choice-letter">A</span> Pantheon</div>
+        <div class="choice choice-selected"><span class="choice-letter">B</span> Colosseum</div>
+        <div class="choice"><span class="choice-letter">C</span> Basilica of Maxentius</div>
+        <div class="choice"><span class="choice-letter">D</span> Forum of Trajan</div>
+      </div>
+    </div>
+
+    <div class="card card-md">
+      <div style="font-size:10px; color:var(--green); margin-bottom:8px;">✓ Correct</div>
+      <p style="font-size:12px; font-weight:500; margin-bottom:10px;">Which Roman structure featured the system of superimposed orders?</p>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div class="choice choice-dimmed"><span class="choice-letter">A</span> Pantheon</div>
+        <div class="choice choice-correct"><span class="choice-letter">B</span> Colosseum</div>
+        <div class="choice choice-dimmed"><span class="choice-letter">C</span> Basilica of Maxentius</div>
+        <div class="choice choice-dimmed"><span class="choice-letter">D</span> Forum of Trajan</div>
+      </div>
+    </div>
+
+    <div class="card card-md">
+      <div style="font-size:10px; color:var(--red); margin-bottom:8px;">✗ Incorrect</div>
+      <p style="font-size:12px; font-weight:500; margin-bottom:10px;">Which Roman structure featured the system of superimposed orders?</p>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div class="choice choice-incorrect"><span class="choice-letter">A</span> Pantheon</div>
+        <div class="choice choice-correct"><span class="choice-letter">B</span> Colosseum</div>
+        <div class="choice choice-dimmed"><span class="choice-letter">C</span> Basilica of Maxentius</div>
+        <div class="choice choice-dimmed"><span class="choice-letter">D</span> Forum of Trajan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── LEGAL CITATIONS ─────────────────────── -->
+<section id="law-citations" class="section">
+  <div class="section-eyebrow">Domain — Philippine Law</div>
+  <h2 class="section-title">Legal Citation Badges</h2>
+  <p class="section-desc">Color-coded by law for instant recognition. Used inline in articles, questions, and rationales.</p>
+
+  <div class="row gap-2">
+    <span class="law-cite law-nbcp">PD 1096</span>
+    <span class="law-cite law-ra9514">RA 9514</span>
+    <span class="law-cite law-bp344">BP 344</span>
+    <span class="law-cite law-ra9266">RA 9266</span>
+    <span class="law-cite law-nscp">NSCP</span>
+    <span class="law-cite law-bp220">BP 220</span>
+    <span class="law-cite law-pd957">PD 957</span>
+  </div>
+
+  <div class="mt-3" style="font-size:12px; color:var(--text-secondary); line-height:1.7; max-width:500px;">
+    Example in context: The minimum corridor width per <span class="law-cite law-nbcp">PD 1096</span> Section 1207 is 1.10m for residential and 1.50m for commercial occupancies, while <span class="law-cite law-bp344">BP 344</span> requires 1.20m minimum for accessible routes.
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── STAT CARDS ─────────────────────── -->
+<section id="stat-cards" class="section">
+  <div class="section-eyebrow">Domain — Dashboard</div>
+  <h2 class="section-title">Stat Cards</h2>
+
+  <div class="grid-4">
+    <div class="card card-md">
+      <div class="card-eyebrow">Total Questions</div>
+      <div class="stat-number" style="font-size:24px; color:var(--primary); margin-top:4px;">4,218</div>
+    </div>
+    <div class="card card-md">
+      <div class="card-eyebrow">Published Articles</div>
+      <div class="stat-number" style="font-size:24px; color:var(--green); margin-top:4px;">487</div>
+    </div>
+    <div class="card card-md">
+      <div class="card-eyebrow">Draft Articles</div>
+      <div class="stat-number" style="font-size:24px; color:var(--amber); margin-top:4px;">56</div>
+    </div>
+    <div class="card card-md">
+      <div class="card-eyebrow">Taxonomy Nodes</div>
+      <div class="stat-number" style="font-size:24px; margin-top:4px;">1,342</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── SECTION HEADERS ─────────────────────── -->
+<section id="section-headers" class="section">
+  <div class="section-eyebrow">Domain — Layout</div>
+  <h2 class="section-title">Section Headers</h2>
+  <p class="section-desc">Three levels: page (Syne heading), section (Inter medium), card (Inter small). Every header has the DM Mono eyebrow pattern.</p>
+
+  <div class="card card-md" style="margin-bottom:12px;">
+    <div style="font-family:'DM Mono',monospace; font-size:9px; font-weight:500; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-muted); margin-bottom:2px;">Level: Page</div>
+    <div style="font-family:'Syne',sans-serif; font-weight:800; font-size:17px; letter-spacing:-0.02em;">Architectural Design</div>
+    <div style="font-size:12px; color:var(--text-secondary); margin-top:2px;">88 articles · 680 questions · 40% of ALE</div>
+  </div>
+
+  <div class="card card-md" style="margin-bottom:12px;">
+    <div style="font-family:'DM Mono',monospace; font-size:9px; font-weight:500; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-muted); margin-bottom:2px;">Level: Section</div>
+    <div style="font-weight:500; font-size:14px;">Your progress by subject area</div>
+    <div style="font-size:11px; color:var(--text-secondary); margin-top:1px;">Hover a bar to start a targeted session</div>
+  </div>
+
+  <div class="card card-md">
+    <div style="font-family:'DM Mono',monospace; font-size:9px; font-weight:500; text-transform:uppercase; letter-spacing:0.12em; color:var(--text-muted); margin-bottom:2px;">Level: Card</div>
+    <div style="font-weight:500; font-size:13px;">Recent Activity</div>
+    <div style="font-size:11px; color:var(--text-secondary); margin-top:1px;">Last 20 changes to content</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─────────────────────── TAXONOMY PICKER ─────────────────────── -->
+<section id="taxonomy-picker" class="section">
+  <div class="section-eyebrow">Domain — Navigation</div>
+  <h2 class="section-title">Taxonomy Picker (3-Level Tree)</h2>
+  <p class="section-desc">One component, three variants: dropdown (forms), sidebar (wiki), inline (admin). Supports search, expand/collapse, single/multi select.</p>
+
+  <div class="card card-md" style="max-width:340px;">
+    <div class="search-wrap" style="margin-bottom:8px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="input input-sm" placeholder="Filter nodes..." style="padding-left:30px;">
+    </div>
+
+    <!-- L0: Subject -->
+    <div style="margin-bottom:2px;">
+      <div style="display:flex; align-items:center; gap:6px; padding:5px 6px; border-radius:var(--r-md); cursor:pointer; background:var(--bg-muted);">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+        <span style="font-size:12px; font-weight:500;">History of Architecture</span>
+        <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--text-muted); margin-left:auto;">55a · 420q</span>
+      </div>
+
+      <!-- L1: Subtopic -->
+      <div style="margin-left:16px; margin-top:2px;">
+        <div style="display:flex; align-items:center; gap:6px; padding:4px 6px; border-radius:var(--r-md); cursor:pointer;" onmouseover="this.style.background='var(--bg-muted)'" onmouseout="this.style.background='transparent'">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg>
+          <span style="font-size:12px;">Pre-Historic & Ancient</span>
+          <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--text-muted); margin-left:auto;">7a</span>
+        </div>
+
+        <!-- L2: Leaf nodes -->
+        <div style="margin-left:16px; margin-top:1px;">
+          <div style="display:flex; align-items:center; gap:6px; padding:3px 6px; border-radius:var(--r-md); cursor:pointer;" onmouseover="this.style.background='var(--bg-muted)'" onmouseout="this.style.background='transparent'">
+            <span style="width:6px; height:6px; background:var(--border); border-radius:50%; flex-shrink:0;"></span>
+            <span style="font-size:11px;">Megalithic Architecture</span>
+            <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--text-muted); margin-left:auto;">001-01</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; padding:3px 6px; border-radius:var(--r-md); cursor:pointer;" onmouseover="this.style.background='var(--bg-muted)'" onmouseout="this.style.background='transparent'">
+            <span style="width:6px; height:6px; background:var(--border); border-radius:50%; flex-shrink:0;"></span>
+            <span style="font-size:11px;">Mesopotamian Architecture</span>
+            <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--text-muted); margin-left:auto;">001-02</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px; padding:3px 6px; border-radius:var(--r-md); background:var(--primary-light); cursor:pointer;">
+            <span style="width:6px; height:6px; background:var(--primary); border-radius:50%; flex-shrink:0;"></span>
+            <span style="font-size:11px; font-weight:500; color:var(--primary);">Roman Architecture</span>
+            <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--primary); margin-left:auto;">001-06</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- L1: Collapsed -->
+      <div style="margin-left:16px; margin-top:2px;">
+        <div style="display:flex; align-items:center; gap:6px; padding:4px 6px; border-radius:var(--r-md); cursor:pointer;" onmouseover="this.style.background='var(--bg-muted)'" onmouseout="this.style.background='transparent'">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2"><polyline points="9,6 15,12 9,18"/></svg>
+          <span style="font-size:12px;">Medieval Architecture</span>
+          <span style="font-family:'DM Mono',monospace; font-size:9px; color:var(--text-muted); margin-left:auto;">6a</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="height:80px;"></div>
+
+</main>
+</div>
+
+</body>
+</html>

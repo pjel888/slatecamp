@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp 3D Lab — UX/UI Research & Implementation Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cobalt: #1B3FC4;
+    --cobalt-light: #E8EDFA;
+    --signal-red: #E63329;
+    --signal-red-light: #FEF2F2;
+    --signal-green: #1B7A3C;
+    --signal-green-light: #F0FDF4;
+    --signal-gold: #F5A623;
+    --signal-gold-light: #FFFBEB;
+    --camp-orange: #E8853A;
+    --cream: #F2F0EB;
+    --warm-white: #F8F7F5;
+    --charcoal: #1A1A2E;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+    --bg: #FAFAF9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--charcoal);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* Cover Page */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    background: linear-gradient(135deg, #0F1F5C 0%, #1B3FC4 50%, #2B4FD4 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(245,166,35,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(27,63,196,0.3) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .cover-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+  }
+  .cover h1 span {
+    color: var(--signal-gold);
+  }
+  .cover-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 560px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    position: relative;
+    z-index: 1;
+  }
+  .cover-meta span { margin-right: 32px; }
+
+  /* Main Content */
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 40px;
+  }
+
+  /* Section Headers */
+  .part-header {
+    margin: 80px 0 40px;
+    padding: 32px 0;
+    border-top: 3px solid var(--cobalt);
+  }
+  .part-header .part-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 8px;
+  }
+  .part-header h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--charcoal);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 32px 0 12px;
+  }
+
+  p { margin-bottom: 16px; }
+  
+  strong { font-weight: 600; color: var(--charcoal); }
+
+  /* Executive Summary */
+  .exec-summary {
+    background: var(--cobalt-light);
+    border-left: 4px solid var(--cobalt);
+    padding: 24px 28px;
+    border-radius: 0 8px 8px 0;
+    margin: 32px 0;
+  }
+  .exec-summary p {
+    margin-bottom: 0;
+    color: #1E3A5F;
+  }
+
+  /* Problem Cards */
+  .problem-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .problem-card.violation {
+    border-left: 4px solid var(--signal-red);
+  }
+  .problem-card.success {
+    border-left: 4px solid var(--signal-green);
+  }
+  .problem-card .problem-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--signal-red);
+    margin-bottom: 4px;
+  }
+  .problem-card.success .problem-number { color: var(--signal-green); }
+  .problem-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .problem-card p { 
+    font-size: 14px; 
+    color: #4B5563;
+    margin-bottom: 8px;
+  }
+  .problem-card .diagnosis {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: #F9FAFB;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: #374151;
+    margin-top: 12px;
+  }
+
+  /* Code Blocks */
+  pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    background: #1A1A2E;
+    color: #E5E7EB;
+    padding: 20px 24px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 16px 0;
+  }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    background: #F3F4F6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--cobalt);
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 13px;
+  }
+  thead { background: #F9FAFB; }
+  th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 10px 16px;
+    border-bottom: 2px solid var(--border);
+    font-weight: 600;
+  }
+  td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:hover { background: #FAFAFA; }
+
+  /* Pattern Cards */
+  .pattern-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .pattern-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .pattern-card .pattern-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 4px;
+  }
+  .pattern-card h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .pattern-card p {
+    font-size: 13px;
+    color: #6B7280;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+  /* Layout Diagrams */
+  .diagram {
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 24px 0;
+    text-align: center;
+  }
+  .diagram-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  /* Phase Cards */
+  .phase-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 24px 0;
+    overflow: hidden;
+  }
+  .phase-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    background: #FAFAFA;
+  }
+  .phase-header .phase-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cobalt);
+    margin-right: 12px;
+  }
+  .phase-header h5 {
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+  }
+  .phase-header .effort {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: var(--cobalt-light);
+    color: var(--cobalt);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .phase-header .timeline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    margin-left: 12px;
+  }
+  .phase-body { padding: 20px 24px; }
+  .phase-goal {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  /* Metric Cards */
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .metric-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .metric-card .metric-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .metric-card .metric-value {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--charcoal);
+  }
+  .metric-card .metric-target {
+    font-size: 12px;
+    color: var(--signal-green);
+    margin-top: 4px;
+  }
+  .metric-card .metric-current {
+    font-size: 11px;
+    color: var(--signal-red);
+    margin-top: 2px;
+  }
+
+  /* Checklist */
+  .checklist {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+  }
+  .checklist h5 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 12px;
+  }
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 6px 0;
+    font-size: 13px;
+    color: #4B5563;
+  }
+  .checklist-item::before {
+    content: '☐';
+    margin-right: 10px;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  /* Keyboard shortcuts */
+  kbd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    background: #F3F4F6;
+    border: 1px solid var(--border);
+    border-bottom: 2px solid #D1D5DB;
+    border-radius: 4px;
+    padding: 2px 6px;
+    color: var(--charcoal);
+  }
+
+  /* Info boxes */
+  .info-box {
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .info-box.blue {
+    background: var(--cobalt-light);
+    border-left: 4px solid var(--cobalt);
+  }
+  .info-box.amber {
+    background: var(--signal-gold-light);
+    border-left: 4px solid var(--signal-gold);
+  }
+  .info-box.green {
+    background: var(--signal-green-light);
+    border-left: 4px solid var(--signal-green);
+  }
+  .info-box.red {
+    background: var(--signal-red-light);
+    border-left: 4px solid var(--signal-red);
+  }
+
+  /* TOC */
+  .toc {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 32px 0;
+  }
+  .toc h3 {
+    margin-top: 0;
+    border: none;
+    padding: 0;
+  }
+  .toc-section {
+    margin: 16px 0 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--cobalt);
+    font-weight: 600;
+  }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc-counter;
+  }
+  .toc li {
+    counter-increment: toc-counter;
+    padding: 4px 0;
+    font-size: 14px;
+    color: #4B5563;
+  }
+  .toc li::before {
+    content: counter(toc-counter) ". ";
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+
+  /* Total bar */
+  .total-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cobalt);
+    color: white;
+    padding: 20px 28px;
+    border-radius: 12px;
+    margin: 24px 0;
+  }
+  .total-bar .total-label {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .total-bar .total-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 48px 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+  }
+  .footer p {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cover { padding: 40px; }
+    .cover h1 { font-size: 36px; }
+    .content { padding: 32px 20px; }
+    .pattern-grid { grid-template-columns: 1fr; }
+    .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media print {
+    .cover { min-height: auto; padding: 40px; page-break-after: always; }
+    .part-header { page-break-before: always; }
+    pre { white-space: pre-wrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="cover-badge">SlateCamp · 3D Lab · Design Document</div>
+  <h1>UX/UI Research &<br><span>Implementation Plan</span></h1>
+  <p class="cover-subtitle">A comprehensive redesign plan for the 3D Development Controls Lab, grounded in industry-standard 3D software patterns and SlateCamp's Rams Standard design system.</p>
+  <div class="cover-meta">
+    <span>Version 2.0</span>
+    <span>April 2026</span>
+    <span>~158 Engineering Hours</span>
+    <span>7-Week Timeline</span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <div class="toc-section">Part I — UX Research & Audit</div>
+    <ol>
+      <li>Current State Audit</li>
+      <li>Industry Research — 3D Software UI Patterns</li>
+      <li>Figma UI3 Lessons Applied</li>
+    </ol>
+    <div class="toc-section">Part II — Proposed UX Architecture</div>
+    <ol start="4">
+      <li>New Layout Architecture</li>
+      <li>Input Panel Redesign (Left Panel)</li>
+      <li>Output Panel Redesign (Right Panel)</li>
+      <li>Viewport Enhancements</li>
+      <li>Mobile Adaptation</li>
+    </ol>
+    <div class="toc-section">Part III — UI Component Specifications</div>
+    <ol start="9">
+      <li>Component Design Standards</li>
+      <li>Interaction Patterns</li>
+    </ol>
+    <div class="toc-section">Part IV — Implementation Plan</div>
+    <ol start="11">
+      <li>Phased Implementation (6 phases)</li>
+      <li>Total Effort Estimate</li>
+      <li>Design Tokens</li>
+      <li>Success Metrics</li>
+      <li>Design Review Checklist</li>
+    </ol>
+  </div>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <div class="exec-summary">
+    <p><strong>Executive Summary:</strong> The current 3D Lab interface is functional but suffers from six systemic UX problems: information overload from unstructured side panels, no clear visual hierarchy between input controls and output metrics, missing viewport toolbars, inconsistent information density, no progressive disclosure, and a compliance scorecard that competes with the 3D viewport for attention. This document provides a research-backed redesign plan grounded in Blender, SketchUp, Figma, AutoCAD, and Cinema 4D UI patterns, combined with dashboard information architecture best practices.</p>
+  </div>
+
+  <!-- PART I -->
+  <div class="part-header">
+    <div class="part-label">Part I</div>
+    <h2>UX Research & Audit</h2>
+  </div>
+
+  <h3>1. Current State Audit</h3>
+
+  <h4>1.1 Current Layout Analysis</h4>
+  <p>The current 3D Lab uses a three-column layout with approximately 25% / 50% / 25% width distribution. The left panel contains inputs (lot parameters, zoning, FLAR, BHL, proposed building). The right panel contains outputs (layer visibility, KPI metrics, AMBF check, area closure, compliance scorecard, code reference).</p>
+
+  <div class="diagram">
+    <div class="diagram-label">Current Layout</div>
+    <pre><code>┌──────────────────────────────────────────────────────────────────┐
+│  ← Back          Site Development Controls        0 of 0 hotspots│
+├────────────┬─────────────────────────────┬───────────────────────┤
+│            │                             │                       │
+│  LEFT      │                             │  RIGHT                │
+│  PANEL     │     3D VIEWPORT             │  PANEL                │
+│  (inputs)  │                             │  (outputs)            │
+│  19+ items │     ~50% width              │  13+ items            │
+│  scrollable│                             │  scrollable           │
+│  ~25% w    │                             │  ~25% w               │
+│            │                             │                       │
+├────────────┴─────────────────────────────┴───────────────────────┤
+│  [Orbit] [Plan] [Front] [Iso] [Dims]  ← viewport mode bar       │
+└──────────────────────────────────────────────────────────────────┘</code></pre>
+  </div>
+
+  <h4>1.2 Identified UX Problems</h4>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 1</div>
+    <h5>Information Overload — Left Panel</h5>
+    <p>The left panel contains <strong>19+ discrete controls and data sections</strong> in a single scrollable column: Presets (5 buttons), Lot Parameters (3 sliders), Lot Summary, Zoning Classification, Table VIII.1 Reference (6 rows), Floor Area Ratios (slider + 8 computed values), Building Height Limit (slider + 3 computed values), Firewall toggle, and Proposed Building (3 sliders).</p>
+    <div class="diagnosis">Diagnosis: Approximately 3-4 screens of scrolling on 1080p. Users scroll past controls they've already set to reach controls they need. No grouping hierarchy. Violates Mayer's Coherence Principle and the Rams Standard.</div>
+  </div>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 2</div>
+    <h5>Information Overload — Right Panel</h5>
+    <p>The right panel contains <strong>13+ output sections</strong> with no collapsible sections: Layer Visibility (8 toggles), TLA/AMBF/PSO/TOSL summary, BHL display, AMBF Three-Way Check (3 rows), Area Closure Identity, Compliance Scorecard (8+ items), Zone Legend, and Code Reference.</p>
+    <div class="diagnosis">Diagnosis: Every piece of information is presented simultaneously at equal visual weight. The Compliance Scorecard alone is 400+ words of text competing with the 3D viewport.</div>
+  </div>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 3</div>
+    <h5>Missing Viewport Toolbar</h5>
+    <p>Industry-standard 3D applications universally provide viewport-attached toolbars for view manipulation, display modes, and measurement. The current Lab only has 5 view preset buttons at the bottom. Missing: zoom controls, display mode toggles, measurement tool, screenshot, fullscreen, grid toggle, axis gizmo.</p>
+    <div class="diagnosis">Diagnosis: Critical viewport controls are either absent or buried in the panel scrolls. Breaks the universal pattern of "viewport controls attached to viewport."</div>
+  </div>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 4</div>
+    <h5>Layer Visibility Is Misplaced</h5>
+    <p>Layer toggles are at the top of the right panel — above metrics. In industry tools, layer controls are part of the <strong>viewport</strong> as overlay panels, not grouped with output data. They are <em>view controls</em>, not <em>data displays</em>.</p>
+  </div>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 5</div>
+    <h5>No Progressive Disclosure</h5>
+    <p>All information is visible simultaneously. No collapsible sections, no step-by-step guided mode, no tab-based organization, no summary vs. detail toggle. This contradicts our own Information Design Guide which mandates 4-layer progressive disclosure.</p>
+  </div>
+
+  <div class="problem-card violation">
+    <div class="problem-number">Problem 6</div>
+    <h5>Compliance Scorecard Competes with Viewport</h5>
+    <p>The scorecard occupies ~40% of the right panel's vertical space with 8+ pass/fail checks and code references. Red "FAIL" badges pull attention <strong>away from the 3D viewport</strong> where the student should be learning spatial relationships.</p>
+  </div>
+
+  <h4>1.3 What's Working Well</h4>
+
+  <div class="problem-card success">
+    <div class="problem-number">Strengths</div>
+    <h5>Solid Foundations to Build On</h5>
+    <p>Color coding for pass/fail is clear and consistent. The AMBF Three-Way Check visualization is unique and pedagogically effective. Area Closure Identity stacked bar is an excellent spatial representation. Preset buttons provide quick scenario loading. The FLAR slider with zone range indicator is well-designed. BHL slider with computed vs. custom indicator works. Violation warnings in red text provide clear feedback.</p>
+  </div>
+
+  <!-- INDUSTRY RESEARCH -->
+  <h3>2. Industry Research — 3D Software UI Patterns</h3>
+  
+  <p>After benchmarking Blender, Cinema 4D, 3DS Max, Maya, SketchUp, OnShape, Fusion 360, and Figma, seven universal patterns emerge:</p>
+
+  <div class="pattern-grid">
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 1</div>
+      <h5>Viewport Gets Maximum Space</h5>
+      <p>In every benchmarked app, the 3D viewport occupies 60-75% of total screen area. Side panels are narrow (200-300px) and collapsible. Our current viewport is only ~50%.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 2</div>
+      <h5>Left = Inputs, Right = Outputs</h5>
+      <p>Universal: left side contains active tools/inputs, right side contains passive properties/outputs. Our layout aligns but needs better internal organization.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 3</div>
+      <h5>Viewport-Attached Controls</h5>
+      <p>View manipulation is always attached to or overlaid on the viewport — never in a separate panel. Includes view presets, display modes, zoom, axis gizmos, grid toggles.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 4</div>
+      <h5>Collapsible Sections with Icons</h5>
+      <p>Properties panels in Blender, C4D, OnShape use icon-labeled collapsible sections. Each section has a small icon + label header. Users expand only what they need.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 5</div>
+      <h5>Tab-Based Panel Organization</h5>
+      <p>When a panel has too many sections, industry tools use tabs at the panel top. Blender uses icon tabs. C4D uses text tabs. Prevents the "infinite scroll" problem.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 6</div>
+      <h5>Status Bar for Live Metrics</h5>
+      <p>A persistent status bar at the viewport bottom shows real-time metrics: cursor position, selected element properties. Ideal for our TLA/AMBF/PSO/TOSL live summary.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Pattern 7</div>
+      <h5>Floating Overlays for Context</h5>
+      <p>Modern tools use floating overlays for contextual info — layer controls, measurements, quick-reference data. Can be opened/closed without affecting main layout.</p>
+    </div>
+    <div class="pattern-card">
+      <div class="pattern-num">Figma UI3 Lesson</div>
+      <h5>Fixed Panels + Minimize UI</h5>
+      <p>Figma learned floating panels slow power users down. Fixed but collapsible panels with a Minimize UI toggle gives the best of both worlds.</p>
+    </div>
+  </div>
+
+  <!-- PART II -->
+  <div class="part-header">
+    <div class="part-label">Part II</div>
+    <h2>Proposed UX Architecture</h2>
+  </div>
+
+  <h3>4. New Layout Architecture</h3>
+
+  <div class="diagram">
+    <div class="diagram-label">Proposed Desktop Layout (≥1280px)</div>
+    <pre><code>┌──────────────────────────────────────────────────────────────────────┐
+│  ← Back   Site Development Controls   [LAB|EXAM]   [?] [⚙] [🔲]    │
+├──────────┬──────────────────────────────────────────────┬────────────┤
+│          │ ┌──────────────────────────────────────────┐ │            │
+│  INPUT   │ │  VIEWPORT TOOLBAR (floating top-left)    │ │  OUTPUT    │
+│  PANEL   │ │  [Grid] [Dims] [X-ray] [Layers▾] [📷]   │ │  PANEL     │
+│          │ │                                          │ │            │
+│  240px   │ │                                          │ │  280px     │
+│  fixed   │ │          3D VIEWPORT                     │ │  fixed     │
+│  collaps │ │          (maximized ~60-65%)             │ │  collaps   │
+│          │ │                                          │ │            │
+│  TABBED: │ │                         ┌─────────┐      │ │  PRIORITY: │
+│  📐 Lot  │ │                         │  AXIS   │      │ │  1.Status  │
+│  🏗 Build │ │                         │  GIZMO  │      │ │  2.AMBF    │
+│  ⚙ Settng│ │                         └─────────┘      │ │  3.Area    │
+│          │ ├──────────────────────────────────────────┤ │  4.Detail  │
+│          │ │  KPI BAR: TLA 300 │ AMBF 136 │ PSO 45.3%│ │  5.CodeRef │
+│          │ │  [Orbit] [Plan] [Front] [Iso] [Fullscr]  │ │            │
+│          │ └──────────────────────────────────────────┘ │            │
+├──────────┴──────────────────────────────────────────────┴────────────┤
+│  STATUS: R-1 Low-Density Residential · FLAR 2.20 · BHL 5F/15m       │
+└──────────────────────────────────────────────────────────────────────┘</code></pre>
+  </div>
+
+  <h4>Key Architectural Changes</h4>
+  <table>
+    <thead>
+      <tr><th>Change</th><th>Before</th><th>After</th><th>Rationale</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Viewport width</td><td>~50%</td><td>~60-65%</td><td>Industry standard; model is the primary learning object</td></tr>
+      <tr><td>Panel width</td><td>~25% each</td><td>240px / 280px fixed</td><td>Prevents panels from stealing viewport space</td></tr>
+      <tr><td>Panel collapse</td><td>Not possible</td><td>Toggle buttons</td><td>Fullscreen viewport exploration</td></tr>
+      <tr><td>KPI bar</td><td>In right panel</td><td>Viewport-attached bottom</td><td>Always visible, never scrolled past</td></tr>
+      <tr><td>Layer controls</td><td>Top of right panel</td><td>Viewport overlay dropdown</td><td>They're view controls, not data</td></tr>
+      <tr><td>Status bar</td><td>None</td><td>Bottom of screen</td><td>Persistent context (zone, FLAR, BHL)</td></tr>
+      <tr><td>Viewport toolbar</td><td>Bottom bar only</td><td>Floating top-left + bottom</td><td>Industry-standard viewport controls</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Input Panel Redesign (Left Panel)</h3>
+
+  <h4>Tab-Based Organization</h4>
+  <p>Replace the single scrollable column with <strong>3 tabs</strong>: 📐 Lot (Site Parameters), 🏗 Building (Proposed Building & Code Limits), and ⚙ Settings (View & Export). Each tab contains no more than 8 visible controls without scrolling.</p>
+
+  <div class="info-box blue">
+    <strong>Design Rationale:</strong> Tab-based organization reduces the perceived complexity from 19+ sections to ~6 visible sections per tab. It mirrors Blender's Properties panel approach — icon tabs that switch between contextual toolsets. Students only see what's relevant to their current task.
+  </div>
+
+  <h4>Collapsible Detail Sections</h4>
+  <p>Within each tab, detail sections (FLAR Details, BHL Details) are <strong>collapsed by default</strong> with a chevron toggle. Primary information (slider + current value) is always visible; secondary computations (zone range, GFA allowable, TGFA comparison) are one click away.</p>
+
+  <h3>6. Output Panel Redesign (Right Panel)</h3>
+
+  <h4>Information Hierarchy (Priority Order)</h4>
+  <table>
+    <thead>
+      <tr><th>Priority</th><th>Section</th><th>Default State</th><th>Rationale</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Compliance Status</td><td>Always visible</td><td>The "score" — overall pass/fail summary</td></tr>
+      <tr><td>2</td><td>AMBF Three-Way Check</td><td>Expanded</td><td>Core pedagogical tool — binding constraint</td></tr>
+      <tr><td>3</td><td>Area Closure Identity</td><td>Expanded</td><td>Spatial verification — stacked bar</td></tr>
+      <tr><td>4</td><td>Detailed Scorecard</td><td>Collapsed</td><td>Detail on demand — 8+ items</td></tr>
+      <tr><td>5</td><td>Code Reference</td><td>Collapsed</td><td>Reference material — only when needed</td></tr>
+    </tbody>
+  </table>
+
+  <div class="info-box amber">
+    <strong>Key Change:</strong> The Compliance Scorecard transforms from a full-detail list (always visible) to a <strong>summary badge + compact grid</strong> (always visible) with expandable detail. Students get the gestalt at a glance — "5 of 8 pass, 3 violations" — and drill down only when needed.
+  </div>
+
+  <h3>7. Viewport Enhancements</h3>
+
+  <h4>7.1 Viewport Toolbar (Floating, Top-Left)</h4>
+  <p>A floating toolbar with 6 icon buttons: Grid toggle, Dimension labels, X-ray mode, Layers dropdown, Screenshot, and Fullscreen. Positioned <code>absolute top-4 left-4</code> with glass-morphism background (<code>bg-black/60 backdrop-blur-sm</code>).</p>
+
+  <h4>7.2 KPI Bar (Viewport-Attached Bottom)</h4>
+  <p>The 5 key metrics (TLA, AMBF, PSO, TOSL, BHL) are always visible at the bottom of the viewport, above the view mode buttons. These are the "vital signs" — they must never be scrolled past.</p>
+
+  <h4>7.3 Axis Gizmo</h4>
+  <p>A 3D axis orientation gizmo in the top-right corner using drei's <code>GizmoHelper</code>. Click on axis face to snap to orthographic view. Provides spatial orientation feedback critical for learning setback relationships.</p>
+
+  <h4>7.4 Layer Controls Overlay</h4>
+  <p>Layer visibility toggles move from the right panel to a floating overlay triggered by the Layers button in the viewport toolbar. Anchored below the toolbar, glass-morphism background, closes on click outside. Includes "Show All" / "Hide All" quick actions.</p>
+
+  <h3>8. Mobile Adaptation</h3>
+
+  <div class="diagram">
+    <div class="diagram-label">Mobile Layout (&lt; 768px)</div>
+    <pre><code>┌──────────────────────────┐
+│  ← Back    Dev Controls  │
+├──────────────────────────┤
+│                          │
+│    3D VIEWPORT           │
+│    (full width, 60vh)    │
+│                          │
+│  ┌────────────────────┐  │
+│  │ KPI: TLA AMBF PSO  │  │
+│  │ [Orbit][Plan][Iso]  │  │
+│  └────────────────────┘  │
+├──────────────────────────┤
+│  ┌────────────────────┐  │
+│  │ BOTTOM SHEET        │  │
+│  │ ═══ Drag handle     │  │
+│  │                     │  │
+│  │ [📐 Lot] [🏗 Build] │  │
+│  │ [📊 Results] [⚙]   │  │
+│  │                     │  │
+│  │ (scrollable content)│  │
+│  └────────────────────┘  │
+└──────────────────────────┘</code></pre>
+  </div>
+
+  <p>All controls and outputs collapse into a draggable bottom sheet with 4 tabs. Three snap points: peek (KPI bar visible), half (tabs + compact content), full (scrollable detail). Viewport always visible at minimum 40vh.</p>
+
+  <!-- PART III -->
+  <div class="part-header">
+    <div class="part-label">Part III</div>
+    <h2>UI Component Specifications</h2>
+  </div>
+
+  <h3>9. Component Design Standards</h3>
+
+  <h4>Section Header Component</h4>
+  <p>Chevron (12px, rotates 90° on collapse) + Title (<code>font-mono text-[9px] uppercase tracking-widest</code>) + Optional badge (right-aligned, status colors). Divider 1px below. Collapse animation via <code>max-height</code> transition at 200ms.</p>
+
+  <h4>KPI Card Component</h4>
+  <p>Compact metric chip: 56px min-width, 48px height. Label in <code>font-mono text-[8px] uppercase</code>, value in <code>font-mono text-lg font-bold tabular-nums</code>. Transparent background on KPI bar, <code>bg-muted/50</code> in panels. Red text when violating.</p>
+
+  <h4>Pass/Fail Badge</h4>
+  <p>Subtle tint backgrounds — never solid fills. PASS: <code>bg-green-50 text-green-800 border-green-200</code>. FAIL: <code>bg-red-50 text-red-800 border-red-200</code>. Mono font, 9px, 4px radius.</p>
+
+  <h4>Violation Banner</h4>
+  <p>Viewport overlay, bottom-left above KPI bar. <code>bg-red-50/90 backdrop-blur-sm border border-red-200</code>. Solid red circle icon. Never auto-dismisses — stays until violation is resolved.</p>
+
+  <h4>Unified Slider Standard</h4>
+  <p>Every slider follows: Label (mono, uppercase, 9px) + Value (mono, bold, red if violating) on the same row, slider track below (4px, cobalt fill), optional context line underneath for violation warnings or zone references. Thumb: 16px circle, white fill, cobalt border.</p>
+
+  <h3>10. Interaction Patterns</h3>
+
+  <table>
+    <thead>
+      <tr><th>Interaction</th><th>Behavior</th><th>Duration</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Panel collapse</td><td>Width animates to 0px, viewport expands</td><td>200ms ease-out</td></tr>
+      <tr><td>Section collapse</td><td>max-height transition, chevron rotation</td><td>200ms ease-out</td></tr>
+      <tr><td>Slider drag</td><td>Real-time value + 3D update on rAF</td><td>Continuous</td></tr>
+      <tr><td>Layer toggle</td><td>Geometry opacity fades in/out</td><td>200ms</td></tr>
+      <tr><td>View preset</td><td>Camera lerps to target position</td><td>500ms easeInOut</td></tr>
+      <tr><td>Minimize UI</td><td>Both panels collapse simultaneously</td><td>200ms</td></tr>
+    </tbody>
+  </table>
+
+  <!-- PART IV -->
+  <div class="part-header">
+    <div class="part-label">Part IV</div>
+    <h2>Implementation Plan</h2>
+  </div>
+
+  <h3>11. Phased Implementation</h3>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 1</span>
+      <h5>Structure & Layout</h5>
+      <span class="effort">19h</span>
+      <span class="timeline">Week 1-2</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">New three-column layout with correct proportions and panel collapse.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Implement new panel width constraints (240px / 280px)</td><td>P0</td><td>2h</td></tr>
+          <tr><td>Add panel collapse toggles (left/right)</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Add Minimize UI mode (Tab/Ctrl+M)</td><td>P1</td><td>2h</td></tr>
+          <tr><td>Viewport from ~50% to ~60-65% width</td><td>P0</td><td>1h</td></tr>
+          <tr><td>Viewport wrapper for toolbar/overlay positioning</td><td>P0</td><td>2h</td></tr>
+          <tr><td>Tab system for left panel (Lot/Building/Settings)</td><td>P0</td><td>6h</td></tr>
+          <tr><td>Status bar component at bottom</td><td>P1</td><td>2h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 2</span>
+      <h5>Input Panel Reorganization</h5>
+      <span class="effort">30h</span>
+      <span class="timeline">Week 2-3</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">Tab-based left panel with collapsible sections and unified slider design.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Refactor left panel into 3 tabs</td><td>P0</td><td>8h</td></tr>
+          <tr><td>Move Lot Parameters to Tab 1</td><td>P0</td><td>2h</td></tr>
+          <tr><td>Move FLAR/BHL/Building to Tab 2</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Create Settings tab</td><td>P1</td><td>3h</td></tr>
+          <tr><td>Collapsible detail sections</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Unify slider component design</td><td>P1</td><td>4h</td></tr>
+          <tr><td>Violation state for sliders</td><td>P1</td><td>3h</td></tr>
+          <tr><td>Persist collapse/tab state</td><td>P2</td><td>2h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 3</span>
+      <h5>Output Panel Redesign</h5>
+      <span class="effort">20h</span>
+      <span class="timeline">Week 3-4</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">Priority-ordered right panel with summary-first compliance scorecard.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Redesign Compliance Status as summary badge</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Create compact scorecard grid (✓/✗)</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Make Detailed Scorecard collapsible</td><td>P0</td><td>3h</td></tr>
+          <tr><td>Collapsible sections for all groups</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Red left-border on violation state</td><td>P1</td><td>1h</td></tr>
+          <tr><td>Collapse Code Reference section</td><td>P1</td><td>2h</td></tr>
+          <tr><td>Remove Layer Visibility from panel</td><td>P0</td><td>2h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 4</span>
+      <h5>Viewport Enhancements</h5>
+      <span class="effort">37h</span>
+      <span class="timeline">Week 4-5</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">Viewport toolbar, KPI bar, axis gizmo, and layer overlay.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Viewport toolbar component (floating top-left)</td><td>P0</td><td>6h</td></tr>
+          <tr><td>Grid toggle, Dims toggle, X-ray mode</td><td>P1-P2</td><td>8h</td></tr>
+          <tr><td>Layers dropdown overlay</td><td>P0</td><td>6h</td></tr>
+          <tr><td>Screenshot + Fullscreen buttons</td><td>P1-P2</td><td>5h</td></tr>
+          <tr><td>KPI bar (TLA/AMBF/PSO/TOSL/BHL)</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Merge KPI bar with view mode bar</td><td>P0</td><td>3h</td></tr>
+          <tr><td>GizmoHelper axis indicator</td><td>P1</td><td>2h</td></tr>
+          <tr><td>Violation banners as viewport overlay</td><td>P1</td><td>3h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 5</span>
+      <h5>Mobile Adaptation</h5>
+      <span class="effort">26h</span>
+      <span class="timeline">Week 5-6</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">Responsive bottom sheet with tab navigation for mobile.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Bottom sheet component (draggable, 3 snap points)</td><td>P0</td><td>8h</td></tr>
+          <tr><td>4-tab navigation in bottom sheet</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Results panel content → Results tab</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Responsive viewport height (40vh min)</td><td>P0</td><td>2h</td></tr>
+          <tr><td>Touch-optimized sliders</td><td>P1</td><td>4h</td></tr>
+          <tr><td>Test on Samsung Galaxy A54</td><td>P0</td><td>4h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="phase-card">
+    <div class="phase-header">
+      <span class="phase-num">Phase 6</span>
+      <h5>Polish & Performance</h5>
+      <span class="effort">26h</span>
+      <span class="timeline">Week 6-7</span>
+    </div>
+    <div class="phase-body">
+      <p class="phase-goal">Animations, transitions, performance optimization, accessibility.</p>
+      <table>
+        <thead><tr><th>Task</th><th>Priority</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>All collapse/transition animations</td><td>P1</td><td>8h</td></tr>
+          <tr><td>ARIA labels on all interactive elements</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Keyboard navigation (Tab order, shortcuts)</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Color contrast audit (WCAG 2.1 AA)</td><td>P0</td><td>2h</td></tr>
+          <tr><td>Performance profiling (30fps mobile target)</td><td>P0</td><td>4h</td></tr>
+          <tr><td>Dark mode verification</td><td>P1</td><td>4h</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>12. Total Effort Estimate</h3>
+
+  <div class="total-bar">
+    <span class="total-label">Total Engineering Effort</span>
+    <span class="total-value">158 hours · 7 weeks</span>
+  </div>
+
+  <h3>14. Success Metrics</h3>
+
+  <div class="metric-grid">
+    <div class="metric-card">
+      <div class="metric-label">Viewport Area</div>
+      <div class="metric-value">≥60%</div>
+      <div class="metric-current">Current: ~50%</div>
+      <div class="metric-target">Target: 60-65%</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Right Panel Sections</div>
+      <div class="metric-value">≤5</div>
+      <div class="metric-current">Current: 13+</div>
+      <div class="metric-target">Target: 5 groups</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Controls Per Tab</div>
+      <div class="metric-value">≤8</div>
+      <div class="metric-current">Current: 19+</div>
+      <div class="metric-target">Target: 6-8 per tab</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Mobile FPS</div>
+      <div class="metric-value">≥30</div>
+      <div class="metric-current">Current: untested</div>
+      <div class="metric-target">Target: 30fps+</div>
+    </div>
+  </div>
+
+  <h3>15. Design Review Checklist</h3>
+
+  <div class="checklist">
+    <h5>Layout</h5>
+    <div class="checklist-item">Viewport occupies ≥60% of screen width on desktop</div>
+    <div class="checklist-item">Panels are 240px (left) and 280px (right)</div>
+    <div class="checklist-item">Both panels collapse individually and together</div>
+    <div class="checklist-item">KPI bar is always visible regardless of panel scroll</div>
+  </div>
+
+  <div class="checklist">
+    <h5>Information Hierarchy</h5>
+    <div class="checklist-item">No more than 8 items visible per tab without scrolling</div>
+    <div class="checklist-item">Compliance summary is a single badge/number at top</div>
+    <div class="checklist-item">Detail sections are collapsed by default</div>
+    <div class="checklist-item">Layer controls are in viewport overlay, not data panel</div>
+  </div>
+
+  <div class="checklist">
+    <h5>Interaction</h5>
+    <div class="checklist-item">All animations are 200ms or less (except camera: 500ms)</div>
+    <div class="checklist-item">Sliders show violation state in real-time</div>
+    <div class="checklist-item">Collapse states persist across sessions</div>
+    <div class="checklist-item">Keyboard shortcuts work (<kbd>Tab</kbd>, <kbd>[</kbd>, <kbd>]</kbd>, <kbd>Ctrl+M</kbd>)</div>
+  </div>
+
+  <div class="checklist">
+    <h5>Accessibility</h5>
+    <div class="checklist-item">All interactive elements have ARIA labels</div>
+    <div class="checklist-item">Tab order is logical (left → viewport → right)</div>
+    <div class="checklist-item">Color is never the only indicator</div>
+    <div class="checklist-item">Touch targets are ≥44px on mobile</div>
+  </div>
+
+  <div class="checklist">
+    <h5>Performance & Brand</h5>
+    <div class="checklist-item">≥30fps on Samsung Galaxy A54 (reference device)</div>
+    <div class="checklist-item">Panel collapse doesn't trigger 3D re-render</div>
+    <div class="checklist-item">Uses SlateCamp Design System tokens</div>
+    <div class="checklist-item">Rams Standard: every element earns its place</div>
+    <div class="checklist-item">Coach Interface: honest, calm, purposeful</div>
+  </div>
+
+  <!-- KEYBOARD SHORTCUTS -->
+  <h3>Appendix A: Keyboard Shortcuts</h3>
+  <table>
+    <thead><tr><th>Shortcut</th><th>Action</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Tab</kbd> / <kbd>Ctrl+M</kbd></td><td>Toggle all panels (Minimize UI)</td></tr>
+      <tr><td><kbd>[</kbd></td><td>Toggle left panel</td></tr>
+      <tr><td><kbd>]</kbd></td><td>Toggle right panel</td></tr>
+      <tr><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></td><td>Orbit / Plan / Front / Isometric</td></tr>
+      <tr><td><kbd>D</kbd></td><td>Toggle dimension labels</td></tr>
+      <tr><td><kbd>G</kbd></td><td>Toggle grid</td></tr>
+      <tr><td><kbd>X</kbd></td><td>Toggle X-ray mode</td></tr>
+      <tr><td><kbd>L</kbd></td><td>Open layers overlay</td></tr>
+      <tr><td><kbd>F</kbd></td><td>Fullscreen viewport</td></tr>
+      <tr><td><kbd>P</kbd></td><td>Screenshot</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Appendix B: References</h3>
+  <p><strong>Industry Benchmarks:</strong> Blender 4.x, Cinema 4D, SketchUp, OnShape, Fusion 360, Figma UI3, 3DS Max, Maya.</p>
+  <p><strong>UX Research:</strong> Creative Navy's "CAD Software UX Design Patterns & Benchmarking" (2023); Hank Grebe's "Viewport Module" UX case study; Mayer's Multimedia Learning Principles; Figma Blog's "Our Approach to Designing UI3" (2024); Dashboard design patterns from Muzli, Eleken, UXPin.</p>
+  <p><strong>SlateCamp Internal:</strong> Design System v1 (Rams Standard), 3D Interaction Design Guide, 3D Visual Rendering Guide, 3D Information Design Guide, PD 1096 UX Implementation Plan, Lot Plotting UX/UI Guide.</p>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>SlateCamp 3D Lab — UX/UI Research & Implementation Plan · v2.0 · April 2026</p>
+  <p style="margin-top: 4px; font-size: 11px;">Prepared by SlateCamp UX Design + 3D Lab Engineering</p>
+</div>
+
+</body>
+</html>

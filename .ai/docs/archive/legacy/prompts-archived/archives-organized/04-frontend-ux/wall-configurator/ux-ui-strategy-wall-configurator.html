@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UX/UI Strategy: Unified Wall Configurator</title>
+<style>
+  :root {
+    --primary: #1B3FC4;
+    --primary-light: #e8edfb;
+    --signal-gold: #F5A623;
+    --signal-green: #1B7A3C;
+    --signal-green-light: #e6f4ec;
+    --camp-orange: #E8853A;
+    --camp-orange-light: #fdf0e6;
+    --trail-purple: #534AB7;
+    --trail-purple-light: #edecf8;
+    --cream: #F2F0EB;
+    --warm-white: #F8F7F5;
+    --border: #E5E2DC;
+    --muted: #8B8680;
+    --foreground: #1A1A2E;
+    --muted-fg: #6B6560;
+    --red-light: #fdf2f2;
+    --mono: 'DM Mono', 'Courier New', monospace;
+    --sans: 'Inter', system-ui, sans-serif;
+    --display: 'Syne', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--foreground);
+    line-height: 1.6;
+  }
+
+  /* ── PAGE LAYOUT ─────────────────────────────────────────────────── */
+  .page-header {
+    background: var(--primary);
+    color: white;
+    padding: 40px 48px;
+    border-bottom: 3px solid #0f2a8a;
+  }
+
+  .page-header .eyebrow {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 8px;
+  }
+
+  .page-header h1 {
+    font-family: var(--display);
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .page-header .subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .toc-bar {
+    background: var(--foreground);
+    padding: 12px 48px;
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+  }
+
+  .toc-bar a {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+
+  .toc-bar a:hover { color: white; }
+
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 48px 48px 80px;
+  }
+
+  /* ── SECTION STRUCTURE ──────────────────────────────────────────── */
+  .section {
+    margin-bottom: 64px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    background: var(--primary);
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: var(--display);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--foreground);
+  }
+
+  .subsection {
+    margin-bottom: 40px;
+  }
+
+  .subsection-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 10px;
+  }
+
+  p, li {
+    font-size: 14px;
+    color: var(--foreground);
+    line-height: 1.65;
+  }
+
+  ul { padding-left: 18px; margin-top: 8px; }
+  ul li { margin-bottom: 6px; }
+
+  /* ── TABLES ─────────────────────────────────────────────────────── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 16px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .data-table thead tr {
+    background: var(--foreground);
+  }
+
+  .data-table thead th {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.7);
+    padding: 10px 14px;
+    text-align: left;
+  }
+
+  .data-table tbody tr:nth-child(even) { background: #fafaf9; }
+  .data-table tbody tr:hover { background: var(--primary-light); }
+
+  .data-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--foreground);
+    vertical-align: top;
+  }
+
+  .data-table tbody td:first-child {
+    font-weight: 500;
+  }
+
+  .data-table tbody tr:last-child td { border-bottom: none; }
+
+  /* ── CALLOUT BOXES ──────────────────────────────────────────────── */
+  .callout {
+    border-left: 3px solid;
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .callout.blue {
+    border-color: var(--primary);
+    background: var(--primary-light);
+    color: var(--primary);
+  }
+
+  .callout.orange {
+    border-color: var(--camp-orange);
+    background: var(--camp-orange-light);
+    color: #7a3c0a;
+  }
+
+  .callout.green {
+    border-color: var(--signal-green);
+    background: var(--signal-green-light);
+    color: var(--signal-green);
+  }
+
+  .callout strong {
+    font-weight: 600;
+  }
+
+  /* ── WIREFRAME COMPONENTS ───────────────────────────────────────── */
+  .wf-container {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .wf-titlebar {
+    background: #f0f0f0;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wf-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .wf-dot.red { background: #ff5f57; }
+  .wf-dot.yellow { background: #febc2e; }
+  .wf-dot.green { background: #28c840; }
+
+  .wf-titlebar span {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--muted);
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .area-bar {
+    background: var(--foreground);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-family: var(--mono);
+  }
+
+  .area-bar-item {
+    flex: 1;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    padding: 0 16px;
+  }
+
+  .area-bar-item:first-child { padding-left: 0; }
+  .area-bar-item:last-child { border-right: none; }
+
+  .area-bar-label {
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 3px;
+  }
+
+  .area-bar-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .area-bar-value.net { color: var(--signal-gold); }
+
+  .wf-body { padding: 0; }
+
+  /* Step panels */
+  .step-panel {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .step-panel-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    cursor: pointer;
+    gap: 12px;
+  }
+
+  .step-panel-header.active {
+    background: var(--primary-light);
+  }
+
+  .step-num-badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: var(--border);
+    color: var(--muted);
+  }
+
+  .step-num-badge.active {
+    background: var(--primary);
+    color: white;
+  }
+
+  .step-num-badge.complete {
+    background: var(--signal-green);
+    color: white;
+  }
+
+  .step-label {
+    font-size: 13px;
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .step-summary {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  .step-edit-link {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .step-panel-body {
+    padding: 16px 20px 20px;
+    background: white;
+  }
+
+  /* Core type cards */
+  .core-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .core-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .core-card:hover { border-color: var(--primary); }
+
+  .core-card.selected {
+    border-color: var(--primary);
+    border-left-width: 3px;
+    background: var(--primary-light);
+  }
+
+  .core-card-eyebrow {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .core-card-title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--foreground);
+  }
+
+  .core-card.selected .core-card-title { color: var(--primary); }
+
+  .sequence-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sequence-list li {
+    font-size: 11px;
+    color: var(--muted-fg);
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .sequence-list li::before {
+    content: counter(seq-counter);
+    counter-increment: seq-counter;
+    position: absolute;
+    left: 0;
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .sequence-list { counter-reset: seq-counter; }
+
+  /* Geometry inputs */
+  .input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .input-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  .input-mock {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--foreground);
+    width: 110px;
+    background: white;
+  }
+
+  .input-mock.computed {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  /* Openings table */
+  .openings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .openings-table th {
+    font-family: var(--mono);
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    padding: 6px 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .openings-table td {
+    padding: 8px;
+    border-bottom: 1px solid #f0efed;
+    vertical-align: middle;
+  }
+
+  .openings-table .area-cell {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 500;
+  }
+
+  .input-mini {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-family: var(--mono);
+    font-size: 12px;
+    width: 72px;
+    background: white;
+  }
+
+  .remove-btn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .remove-btn:hover { color: #E63329; background: #fdf2f2; }
+
+  .add-btn {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    background: var(--primary-light);
+    border: 1px dashed var(--primary);
+    border-radius: 6px;
+    padding: 7px 14px;
+    cursor: pointer;
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  /* Sides toggle */
+  .sides-toggle {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+    margin-top: 8px;
+  }
+
+  .toggle-opt {
+    padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+    color: var(--muted);
+    border: none;
+  }
+
+  .toggle-opt.active {
+    background: var(--primary);
+    color: white;
+  }
+
+  .sides-note {
+    font-size: 12px;
+    color: var(--muted-fg);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* Layer stack */
+  .layer-stack { margin-top: 8px; }
+
+  .layer-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 6px;
+  }
+
+  .layer-card.disabled { opacity: 0.45; }
+
+  .layer-toggle {
+    width: 32px;
+    height: 18px;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s;
+  }
+
+  .layer-toggle.on { background: var(--primary); }
+  .layer-toggle.off { background: var(--border); }
+
+  .layer-toggle::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    transition: left 0.15s;
+  }
+
+  .layer-toggle.on::after { left: 16px; }
+  .layer-toggle.off::after { left: 2px; }
+
+  .layer-info { flex: 1; }
+
+  .layer-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--foreground);
+    margin-bottom: 2px;
+  }
+
+  .layer-spec {
+    font-size: 11px;
+    color: var(--muted-fg);
+  }
+
+  .layer-basis-badge {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background: var(--cream);
+    color: var(--muted-fg);
+    white-space: nowrap;
+  }
+
+  .layer-waste {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .layer-waste label {
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .waste-input {
+    font-family: var(--mono);
+    font-size: 12px;
+    width: 44px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 3px 6px;
+    text-align: right;
+    background: white;
+  }
+
+  /* ── BOM TABLE ──────────────────────────────────────────────────── */
+  .bom-area-card {
+    background: var(--foreground);
+    color: white;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+
+  .bom-area-title {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 12px;
+  }
+
+  .bom-area-rows { display: flex; flex-direction: column; gap: 6px; }
+
+  .bom-area-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .bom-area-row .label { color: rgba(255,255,255,0.65); }
+
+  .bom-area-row .value {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .bom-area-row .value.gold { color: var(--signal-gold); }
+  .bom-area-row.divider { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 8px; margin-top: 2px; }
+
+  .bom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .bom-table thead tr { background: var(--foreground); }
+
+  .bom-table thead th {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 14px;
+    text-align: right;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .bom-table thead th:first-child,
+  .bom-table thead th:nth-child(2) { text-align: left; }
+
+  .bom-table thead th.primary-col { color: white; }
+
+  .bom-table tbody tr:nth-child(even) { background: #fafaf9; }
+
+  .bom-table tbody td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--border);
+    text-align: right;
+  }
+
+  .bom-table tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .bom-table tbody td:nth-child(2) {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .bom-table tbody td.theory,
+  .bom-table tbody td.waste {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted-fg);
+  }
+
+  .bom-table tbody td.procurement {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .bom-table tbody tr:last-child td { border-bottom: none; }
+
+  .bom-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+
+  .btn-secondary {
+    background: white;
+    color: var(--foreground);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+
+  .assumptions-block {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .assumptions-title {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .assumptions-block p {
+    font-size: 11px;
+    color: var(--muted-fg);
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
+
+  .assumptions-block .disclaimer {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+
+  /* ── FLOW DIAGRAM ───────────────────────────────────────────────── */
+  .flow-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 20px 0;
+  }
+
+  .flow-step {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .flow-connector-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  .flow-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    flex-shrink: 0;
+    background: var(--primary);
+    color: white;
+    z-index: 1;
+  }
+
+  .flow-line {
+    width: 2px;
+    background: var(--border);
+    flex: 1;
+    min-height: 20px;
+  }
+
+  .flow-content {
+    flex: 1;
+    padding: 4px 0 20px 12px;
+  }
+
+  .flow-step-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--foreground);
+    margin-bottom: 4px;
+  }
+
+  .flow-step-desc {
+    font-size: 12px;
+    color: var(--muted-fg);
+    line-height: 1.5;
+  }
+
+  .flow-step-note {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: var(--mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--camp-orange-light);
+    color: var(--camp-orange);
+  }
+
+  /* ── PERSONA CARD ───────────────────────────────────────────────── */
+  .persona-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 10px 10px 0;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+
+  .persona-name {
+    font-family: var(--display);
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+
+  .persona-role {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .persona-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .persona-field-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .persona-field-value {
+    font-size: 12px;
+    color: var(--foreground);
+    line-height: 1.5;
+  }
+
+  /* ── USABILITY CARDS ────────────────────────────────────────────── */
+  .scenario-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .scenario-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--foreground);
+  }
+
+  .scenario-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--signal-gold);
+    background: rgba(245,166,35,0.12);
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .scenario-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .scenario-body { padding: 18px; }
+
+  .scenario-task {
+    background: var(--primary-light);
+    border-left: 3px solid var(--primary);
+    padding: 12px 14px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-style: italic;
+    color: var(--primary);
+  }
+
+  .scenario-section-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .criteria-list { list-style: none; padding: 0; }
+
+  .criteria-list li {
+    padding: 5px 0 5px 20px;
+    position: relative;
+    font-size: 12px;
+    color: var(--foreground);
+    border-bottom: 1px solid #f0efed;
+    line-height: 1.5;
+  }
+
+  .criteria-list li:last-child { border-bottom: none; }
+
+  .criteria-list li.pass::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--signal-green);
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .criteria-list li.fail::before {
+    content: '⚠';
+    position: absolute;
+    left: 0;
+    color: var(--camp-orange);
+    font-size: 11px;
+  }
+
+  /* ── THRESHOLD TABLE ────────────────────────────────────────────── */
+  .threshold-row td:last-child {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  /* ── RESPONSIVE ─────────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .main { padding: 24px 20px 60px; }
+    .page-header { padding: 28px 20px; }
+    .toc-bar { padding: 10px 20px; }
+    .core-cards { grid-template-columns: 1fr; }
+    .persona-grid { grid-template-columns: 1fr; }
+    .area-bar { flex-wrap: wrap; gap: 8px; }
+    .area-bar-item { flex: unset; border: none; padding: 0; }
+    .input-row { flex-direction: column; }
+  }
+
+  @media print {
+    .page-header, .toc-bar, .bom-actions { display: none; }
+    .wf-titlebar { display: none; }
+    .main { padding: 0; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <p class="eyebrow">SlateCamp · Construction Estimator · UX/UI Strategy Document</p>
+  <h1>Unified Wall Configurator</h1>
+  <p class="subtitle">UX Research, Information Architecture, and Component Design Brief — v1.0</p>
+</header>
+
+<!-- TABLE OF CONTENTS -->
+<nav class="toc-bar">
+  <a href="#s1">1. User Research</a>
+  <a href="#s2">2. IA & User Flow</a>
+  <a href="#s3">3. Layer Component Strategy</a>
+  <a href="#s4">4. BOM Results UI</a>
+  <a href="#s5">5. Usability Testing</a>
+</nav>
+
+<main class="main">
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 1: User Research & Cognitive Context               -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="s1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="section-title">User Research & Cognitive Context</h2>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Primary Persona</p>
+      <div class="persona-card">
+        <div class="persona-name">Estimator / Junior QS</div>
+        <div class="persona-role">Philippine Construction Project · On-site or Office</div>
+        <div class="persona-grid">
+          <div>
+            <div class="persona-field-label">Device context</div>
+            <div class="persona-field-value">Desktop or tablet. Mid-range hardware, intermittent internet.</div>
+          </div>
+          <div>
+            <div class="persona-field-label">Task context</div>
+            <div class="persona-field-value">Material takeoff for a wall scope before issuing a purchase request.</div>
+          </div>
+          <div>
+            <div class="persona-field-label">Time pressure</div>
+            <div class="persona-field-value">Estimating is a supporting task. Needs answers in minutes, not a learning curve.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Pain Points: Disjointed vs. Unified</p>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Pain Point</th>
+            <th>Current State (Separate Calculators)</th>
+            <th>Unified Resolution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Double-entry of geometry</td>
+            <td>L × H entered separately in CHB, paint, and plaster tools</td>
+            <td>One geometry block drives all downstream layers</td>
+          </tr>
+          <tr>
+            <td>Lost opening deduction</td>
+            <td>User manually subtracts door/window area — error-prone</td>
+            <td>Opening deduction computed once, applied to all finish layers</td>
+          </tr>
+          <tr>
+            <td>Side ambiguity</td>
+            <td>Paint calculator has no side context; user guesses whether to double</td>
+            <td>Explicit 1/2-sides toggle with live area preview drives all side-dependent layers</td>
+          </tr>
+          <tr>
+            <td>Inconsistent waste factors</td>
+            <td>User applies different or no waste to each material</td>
+            <td>Sensible defaults per material; editable without being hidden</td>
+          </tr>
+          <tr>
+            <td>No procurement output</td>
+            <td>Outputs raw liters or kg with no packaging rounding</td>
+            <td>Three-tier output: theoretical → adjusted → commercial procurement</td>
+          </tr>
+          <tr>
+            <td>Mental re-entry fatigue</td>
+            <td>Switching tools loses context; user re-reads spec sheets each time</td>
+            <td>Full sequence visible in one scrollable layer stack</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Cognitive Load Reduction Priorities</p>
+      <div class="callout blue">
+        <strong>Priority 1 — Sequence is not negotiable.</strong> The 7-step flow maps to the physical construction sequence: core → openings → sides → treatment → finish → output. Users who understand construction will recognize this immediately. Do not reorder steps.
+      </div>
+      <div class="callout orange">
+        <strong>Priority 2 — Gross vs. net must be made visible.</strong> The single highest risk of error is applying finish to gross area when openings exist. Both numbers must appear simultaneously in a persistent summary bar, explicitly labelled throughout.
+      </div>
+      <div class="callout green">
+        <strong>Priority 3 — Results must be self-explanatory.</strong> The BOM must be readable by a foreman with no software training. Labels use trade language: "CHB pcs", "40-kg bags", "16 L pails" — not variable names or codes.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 2: IA & User Flow                                  -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="s2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="section-title">Information Architecture & User Flow</h2>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Screen Model</p>
+      <p style="margin-bottom: 16px;">The configurator operates as a <strong>single-page progressive form</strong> — no full page navigations. Steps are accordion panels: completed steps collapse to a summary chip (editable on click). The persistent area bar is always in viewport.</p>
+
+      <div class="flow-diagram">
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">1</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Select Core Type</div>
+            <div class="flow-step-desc">CHB · Drywall · Existing Finished Wall. Choice seeds the default layer stack. Finishing sequence preview shown on each card.</div>
+            <span class="flow-step-note">Required — unlocks Step 2</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">2</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Enter Wall Geometry</div>
+            <div class="flow-step-desc">Length (m) · Height (m) · Wall count. Gross area computed and displayed live in area bar.</div>
+            <span class="flow-step-note">Required — unlocks Steps 3 and 4</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">3</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Enter Openings</div>
+            <div class="flow-step-desc">Dynamic row list: label · width · height · qty per opening. Opening area deducted live. Net area updates in persistent bar.</div>
+            <span class="flow-step-note">Optional — can skip; defaults to 0 deductions</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">4</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Choose Sides</div>
+            <div class="flow-step-desc">Segmented control: [1 Side] or [Both Sides]. Finish area = net area × sides, shown live in bar. Explanation sentence updates in real time.</div>
+            <span class="flow-step-note">Required — unlocks Step 5</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">5</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Select Treatment Layers</div>
+            <div class="flow-step-desc">Layer cards seeded from core type. Each: toggle ON/OFF + wastage % input. CHB: plaster, skim. Drywall: board, tape, compound. Existing: skim.</div>
+            <span class="flow-step-note">Optional — sensible defaults active</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">6</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">Select Finish Layers</div>
+            <div class="flow-step-desc">Primer toggle + coat count. Topcoat toggle + coat count stepper + coverage rate (default 7 sqm/L). BOM preview auto-updates as values change.</div>
+            <span class="flow-step-note">Optional — sensible defaults active</span>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-connector-col">
+            <div class="flow-circle">7</div>
+          </div>
+          <div class="flow-content">
+            <div class="flow-step-title">View Bill of Materials</div>
+            <div class="flow-step-desc">Three-tier table + area summary card + assumptions footer. Always auto-updates when any earlier step changes. Print and export actions.</div>
+            <span class="flow-step-note">Always available once Step 2 is complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Collapsed Step Chip Pattern</p>
+      <div class="callout blue">
+        Once a step is completed, it collapses to a one-line summary chip showing its key values. Example: <br><br>
+        <code style="font-family:var(--mono); font-size:11px;">✓ Step 2 — Geometry &nbsp;&nbsp; 5.0 m × 3.0 m × 2 walls = 30.00 sqm &nbsp;&nbsp; [Edit]</code><br>
+        <code style="font-family:var(--mono); font-size:11px;">✓ Step 3 — Openings &nbsp;&nbsp; 2 doors + 1 window = 4.41 sqm deducted &nbsp;&nbsp; [Edit]</code><br><br>
+        Clicking "Edit" re-expands the panel inline. No navigation away from page.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 3: Layer Component Strategy Wireframe              -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="s3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="section-title">UI Component Strategy: Additive Layers & Geometry</h2>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Annotated Configurator Wireframe (CHB · 1 Side)</p>
+
+      <div class="wf-container">
+        <div class="wf-titlebar">
+          <div class="wf-dot red"></div>
+          <div class="wf-dot yellow"></div>
+          <div class="wf-dot green"></div>
+          <span>Wall Configurator — Desktop Wireframe</span>
+        </div>
+
+        <!-- Persistent Area Bar -->
+        <div class="area-bar">
+          <div class="area-bar-item">
+            <div class="area-bar-label">Gross Area</div>
+            <div class="area-bar-value">30.00 sqm</div>
+          </div>
+          <div class="area-bar-item">
+            <div class="area-bar-label">Openings</div>
+            <div class="area-bar-value">−4.41 sqm</div>
+          </div>
+          <div class="area-bar-item">
+            <div class="area-bar-label">Net Area</div>
+            <div class="area-bar-value net">25.59 sqm</div>
+          </div>
+          <div class="area-bar-item">
+            <div class="area-bar-label">Finish Area (1 side)</div>
+            <div class="area-bar-value net">25.59 sqm</div>
+          </div>
+        </div>
+
+        <div class="wf-body">
+
+          <!-- Step 1 — Core Type (active) -->
+          <div class="step-panel">
+            <div class="step-panel-header active">
+              <div class="step-num-badge active">1</div>
+              <div class="step-label">Select Core Type</div>
+            </div>
+            <div class="step-panel-body">
+              <div class="core-cards">
+                <div class="core-card selected">
+                  <div class="core-card-eyebrow">Core Type</div>
+                  <div class="core-card-title">CHB (Masonry)</div>
+                  <ol class="sequence-list">
+                    <li>CHB core wall</li>
+                    <li>Cement-sand plaster</li>
+                    <li>Skim/putty (optional)</li>
+                    <li>Primer / sealer</li>
+                    <li>Topcoat paint</li>
+                  </ol>
+                </div>
+                <div class="core-card">
+                  <div class="core-card-eyebrow">Core Type</div>
+                  <div class="core-card-title">Drywall (Board & Joint)</div>
+                  <ol class="sequence-list">
+                    <li>Gypsum board on frame</li>
+                    <li>Mesh joint tape</li>
+                    <li>Joint compound</li>
+                    <li>Primer</li>
+                    <li>Water-based topcoat</li>
+                  </ol>
+                </div>
+                <div class="core-card">
+                  <div class="core-card-eyebrow">Core Type</div>
+                  <div class="core-card-title">Existing Finished Wall</div>
+                  <ol class="sequence-list">
+                    <li>Skim / putty (optional)</li>
+                    <li>Primer / sealer</li>
+                    <li>Topcoat paint</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 — Geometry (complete) -->
+          <div class="step-panel">
+            <div class="step-panel-header">
+              <div class="step-num-badge complete">✓</div>
+              <div class="step-label">Wall Geometry</div>
+              <div class="step-summary">5.0 m × 3.0 m × 2 walls = 30.00 sqm</div>
+              <a href="#" class="step-edit-link">Edit</a>
+            </div>
+          </div>
+
+          <!-- Step 3 — Openings (complete) -->
+          <div class="step-panel">
+            <div class="step-panel-header">
+              <div class="step-num-badge complete">✓</div>
+              <div class="step-label">Openings</div>
+              <div class="step-summary">2 doors + 1 window → −4.41 sqm</div>
+              <a href="#" class="step-edit-link">Edit</a>
+            </div>
+          </div>
+
+          <!-- Step 4 — Sides (complete) -->
+          <div class="step-panel">
+            <div class="step-panel-header">
+              <div class="step-num-badge complete">✓</div>
+              <div class="step-label">Treatment Sides</div>
+              <div class="step-summary">1 side → 25.59 sqm finish area</div>
+              <a href="#" class="step-edit-link">Edit</a>
+            </div>
+          </div>
+
+          <!-- Step 5 — Layers (active) -->
+          <div class="step-panel">
+            <div class="step-panel-header active">
+              <div class="step-num-badge active">5</div>
+              <div class="step-label">Treatment Layers</div>
+            </div>
+            <div class="step-panel-body">
+              <div class="layer-stack">
+
+                <div class="layer-card">
+                  <div class="layer-toggle on"></div>
+                  <div class="layer-info">
+                    <div class="layer-name">CHB Core Units</div>
+                    <div class="layer-spec">0.40 m × 0.20 m face · 12.5 pcs/sqm</div>
+                  </div>
+                  <div class="layer-basis-badge">PIECE</div>
+                  <div class="layer-waste">
+                    <label>Waste</label>
+                    <input class="waste-input" value="5%" readonly>
+                  </div>
+                </div>
+
+                <div class="layer-card">
+                  <div class="layer-toggle on"></div>
+                  <div class="layer-info">
+                    <div class="layer-name">Cement-Sand Plaster (Palitada)</div>
+                    <div class="layer-spec">Mix 1:2 · Thickness 12.7 mm · Dry-volume factor 1.33</div>
+                  </div>
+                  <div class="layer-basis-badge">AREA / SIDE</div>
+                  <div class="layer-waste">
+                    <label>Waste</label>
+                    <input class="waste-input" value="5%" readonly>
+                  </div>
+                </div>
+
+                <div class="layer-card disabled">
+                  <div class="layer-toggle off"></div>
+                  <div class="layer-info">
+                    <div class="layer-name">Skim / Putty Coat</div>
+                    <div class="layer-spec">Surface correction only · optional</div>
+                  </div>
+                  <div class="layer-basis-badge">AREA / SIDE</div>
+                  <div class="layer-waste">
+                    <label>Waste</label>
+                    <input class="waste-input" value="10%" readonly>
+                  </div>
+                </div>
+
+                <div class="layer-card">
+                  <div class="layer-toggle on"></div>
+                  <div class="layer-info">
+                    <div class="layer-name">Primer (1 coat)</div>
+                    <div class="layer-spec">Coverage 7 sqm/L</div>
+                  </div>
+                  <div class="layer-basis-badge">AREA / SIDE</div>
+                  <div class="layer-waste">
+                    <label>Waste</label>
+                    <input class="waste-input" value="10%" readonly>
+                  </div>
+                </div>
+
+                <div class="layer-card">
+                  <div class="layer-toggle on"></div>
+                  <div class="layer-info">
+                    <div class="layer-name">Topcoat Paint (2 coats)</div>
+                    <div class="layer-spec">Coverage 7 sqm/L · coats: 2</div>
+                  </div>
+                  <div class="layer-basis-badge">AREA / SIDE</div>
+                  <div class="layer-waste">
+                    <label>Waste</label>
+                    <input class="waste-input" value="10%" readonly>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 7 preview locked -->
+          <div class="step-panel">
+            <div class="step-panel-header">
+              <div class="step-num-badge" style="background: var(--border);">7</div>
+              <div class="step-label" style="color: var(--muted);">Bill of Materials</div>
+              <div class="step-summary">Auto-updates as configuration changes</div>
+            </div>
+          </div>
+
+        </div><!-- /wf-body -->
+      </div><!-- /wf-container -->
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Geometry Step Detail</p>
+      <div class="wf-container">
+        <div class="wf-titlebar">
+          <div class="wf-dot red"></div><div class="wf-dot yellow"></div><div class="wf-dot green"></div>
+          <span>Step 2 — Wall Geometry (Expanded)</span>
+        </div>
+        <div class="wf-body" style="padding: 20px;">
+          <div class="input-row">
+            <div class="input-group">
+              <div class="input-label">Length (m)</div>
+              <div class="input-mock">5.0</div>
+            </div>
+            <div class="input-group">
+              <div class="input-label">Height (m)</div>
+              <div class="input-mock">3.0</div>
+            </div>
+            <div class="input-group">
+              <div class="input-label">Wall Count</div>
+              <div class="input-mock">2</div>
+            </div>
+            <div class="input-group">
+              <div class="input-label">Gross Area</div>
+              <div class="input-mock computed">30.00 sqm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Openings Step Detail</p>
+      <div class="wf-container">
+        <div class="wf-titlebar">
+          <div class="wf-dot red"></div><div class="wf-dot yellow"></div><div class="wf-dot green"></div>
+          <span>Step 3 — Openings (Expanded)</span>
+        </div>
+        <div class="wf-body" style="padding: 20px;">
+          <table class="openings-table">
+            <thead>
+              <tr>
+                <th>Label</th>
+                <th>Width (m)</th>
+                <th>Height (m)</th>
+                <th>Qty</th>
+                <th>Area</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Door A</td>
+                <td><input class="input-mini" value="0.90" readonly></td>
+                <td><input class="input-mini" value="2.10" readonly></td>
+                <td><input class="input-mini" value="2" readonly style="width:52px;"></td>
+                <td class="area-cell">3.78 sqm</td>
+                <td><button class="remove-btn">✕</button></td>
+              </tr>
+              <tr>
+                <td>Window 1</td>
+                <td><input class="input-mini" value="1.20" readonly></td>
+                <td><input class="input-mini" value="1.20" readonly></td>
+                <td><input class="input-mini" value="1" readonly style="width:52px;"></td>
+                <td class="area-cell">1.44 sqm</td>
+                <td><button class="remove-btn">✕</button></td>
+              </tr>
+              <tr style="background: var(--primary-light);">
+                <td colspan="4" style="font-weight:600; color: var(--primary); font-size:12px;">Total opening deduction</td>
+                <td class="area-cell" style="font-weight:700; font-size:14px;">−5.22 sqm</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="margin-top: 12px;">
+            <div class="add-btn">+ Add Opening</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Sides Toggle with Contextual Note</p>
+      <div class="wf-container">
+        <div class="wf-titlebar">
+          <div class="wf-dot red"></div><div class="wf-dot yellow"></div><div class="wf-dot green"></div>
+          <span>Step 4 — Treatment Sides</span>
+        </div>
+        <div class="wf-body" style="padding: 20px;">
+          <div class="sides-toggle">
+            <button class="toggle-opt active">1 Side</button>
+            <button class="toggle-opt">Both Sides</button>
+          </div>
+          <p class="sides-note">Plaster, primer, and paint quantities apply to <strong>1 face (24.78 sqm)</strong>. Select "Both Sides" to double finish area quantities.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Layer Stack — Design Rules</p>
+      <table class="data-table">
+        <thead>
+          <tr><th>Rule</th><th>Specification</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Layer ordering is fixed</td>
+            <td>CHB → Plaster → Skim → Primer → Topcoat. Order communicates construction dependency. Designer must not allow reordering.</td>
+          </tr>
+          <tr>
+            <td>Disabled layers stay visible</td>
+            <td>OFF layers remain in the DOM at reduced opacity. They are not removed. Allows user to opt back in without confusion.</td>
+          </tr>
+          <tr>
+            <td>Basis badge required on every row</td>
+            <td>"AREA / SIDE", "PIECE", "PANEL / SIDE", or "LINEAR". DM Mono uppercase 8px. Explains the calculation basis to the estimator.</td>
+          </tr>
+          <tr>
+            <td>Wastage is always editable</td>
+            <td>Never hidden behind an "advanced" toggle. Estimators adjust waste based on site conditions. 5%/10% defaults are starting points, not locked values.</td>
+          </tr>
+          <tr>
+            <td>Topcoat coat count stepper</td>
+            <td>Inline [−] N [+] control. Min 1, no max. Updates BOM immediately on change.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 4: BOM Results Visualization                       -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="s4">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="section-title">Bill of Materials: Results Visualization</h2>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Three-Tier Output Logic</p>
+      <table class="data-table">
+        <thead>
+          <tr><th>Tier</th><th>Column Label</th><th>Purpose</th><th>User Action</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1. Theoretical</td>
+            <td>Formula Qty</td>
+            <td>Raw formula output at 0% waste — reference only</td>
+            <td>None — not for ordering</td>
+          </tr>
+          <tr>
+            <td>2. Adjusted</td>
+            <td>+ Wastage</td>
+            <td>Formula × (1 + waste factor) — engineering estimate</td>
+            <td>Cross-check against experience</td>
+          </tr>
+          <tr>
+            <td>3. Procurement</td>
+            <td>ORDER QTY ▲</td>
+            <td>Adjusted qty rounded to commercial package sizes</td>
+            <td><strong>This is what to write on the purchase request</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout orange" style="margin-top: 16px;">
+        <strong>The ORDER QTY column is primary.</strong> It must be the rightmost, largest, and most visually prominent. Theoretical is reference data — present but subdued. The column header carries a ▲ marker to signal primacy.
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Full BOM Wireframe</p>
+
+      <div class="wf-container">
+        <div class="wf-titlebar">
+          <div class="wf-dot red"></div><div class="wf-dot yellow"></div><div class="wf-dot green"></div>
+          <span>Step 7 — Bill of Materials</span>
+        </div>
+        <div class="wf-body" style="padding: 20px;">
+
+          <!-- Area Summary Card -->
+          <div class="bom-area-card">
+            <div class="bom-area-title">Area Breakdown</div>
+            <div class="bom-area-rows">
+              <div class="bom-area-row">
+                <span class="label">Gross wall area &nbsp; 5.0 m × 3.0 m × 2 walls</span>
+                <span class="value">30.00 sqm</span>
+              </div>
+              <div class="bom-area-row">
+                <span class="label">Opening deductions &nbsp; 2 doors + 1 window</span>
+                <span class="value" style="color: #F5A623;">−5.22 sqm</span>
+              </div>
+              <div class="bom-area-row divider">
+                <span class="label">Net wall area</span>
+                <span class="value gold">24.78 sqm</span>
+              </div>
+              <div class="bom-area-row">
+                <span class="label">Finish area (1 side)</span>
+                <span class="value gold">24.78 sqm</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOM Table -->
+          <table class="bom-table">
+            <thead>
+              <tr>
+                <th style="text-align:left;">Material</th>
+                <th style="text-align:left;">Unit</th>
+                <th>Formula Qty</th>
+                <th>+ Wastage</th>
+                <th class="primary-col">ORDER QTY ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CHB Units</td>
+                <td>pcs</td>
+                <td class="theory">309.8</td>
+                <td class="waste">325.2</td>
+                <td class="procurement">326 pcs</td>
+              </tr>
+              <tr>
+                <td>Cement — Plaster</td>
+                <td>40-kg bag</td>
+                <td class="theory">4.96 bags</td>
+                <td class="waste">5.21 bags</td>
+                <td class="procurement">6 bags</td>
+              </tr>
+              <tr>
+                <td>Sand — Plaster</td>
+                <td>m³</td>
+                <td class="theory">0.280 m³</td>
+                <td class="waste">0.294 m³</td>
+                <td class="procurement">0.30 m³</td>
+              </tr>
+              <tr>
+                <td>Primer</td>
+                <td>L</td>
+                <td class="theory">3.54 L</td>
+                <td class="waste">3.90 L</td>
+                <td class="procurement">1 × 4 L can</td>
+              </tr>
+              <tr>
+                <td>Topcoat Paint</td>
+                <td>L</td>
+                <td class="theory">7.08 L</td>
+                <td class="waste">7.79 L</td>
+                <td class="procurement">1 × 16 L pail</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Actions -->
+          <div class="bom-actions">
+            <button class="btn-primary">Print BOM</button>
+            <button class="btn-secondary">Copy as Text</button>
+            <button class="btn-secondary">Reset Configurator</button>
+          </div>
+
+          <!-- Assumptions Footer -->
+          <div class="assumptions-block">
+            <div class="assumptions-title">Engineering Constants Used</div>
+            <p>CHB face size: 0.40 m × 0.20 m (12.5 pcs/sqm before waste)</p>
+            <p>Plaster thickness: 12.7 mm (1/2 inch minimum per spec)</p>
+            <p>Plaster mix: 1 cement : 2 sand by volume</p>
+            <p>Dry-volume factor: 1.33 · Cement bag: 40 kg at 1,440 kg/m³</p>
+            <p>Paint coverage: 7 sqm/L/coat · Wastage: CHB 5% · Plaster 5% · Paint 10%</p>
+            <p class="disclaimer">Quantities are estimates for procurement planning. Verify with licensed estimator before issuing purchase order.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">BOM Column Design Rules</p>
+      <table class="data-table">
+        <thead><tr><th>Column</th><th>Typography</th><th>Color</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Material</td>
+            <td>Inter Medium 13px</td>
+            <td>Foreground (full opacity)</td>
+            <td>Trade-language material name — no variable codes</td>
+          </tr>
+          <tr>
+            <td>Unit</td>
+            <td>DM Mono 11px</td>
+            <td>Muted (low emphasis)</td>
+            <td>"pcs", "40-kg bag", "L", "m³" — always human-readable</td>
+          </tr>
+          <tr>
+            <td>Formula Qty</td>
+            <td>DM Mono 12px</td>
+            <td>Muted foreground</td>
+            <td>Theoretical output. Reference only. Never for ordering.</td>
+          </tr>
+          <tr>
+            <td>+ Wastage</td>
+            <td>DM Mono 12px</td>
+            <td>Muted foreground</td>
+            <td>Adjusted by waste factor. Cross-check value.</td>
+          </tr>
+          <tr>
+            <td>ORDER QTY ▲</td>
+            <td>DM Mono Medium 13px</td>
+            <td>Primary (Cobalt Blue) — full emphasis</td>
+            <td>Commercial package units. What to write on purchase request.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 5: Usability Testing Protocol                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="section" id="s5">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2 class="section-title">Usability Testing Protocol</h2>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Test Setup</p>
+      <table class="data-table">
+        <thead><tr><th>Parameter</th><th>Specification</th></tr></thead>
+        <tbody>
+          <tr><td>Participants</td><td>5 minimum per round. Site estimators, junior engineers, or draftspeople with material takeoff exposure. Philippine construction context preferred.</td></tr>
+          <tr><td>Format</td><td>Moderated task-based session, 30–45 minutes. Remote acceptable (screen share + video).</td></tr>
+          <tr><td>Device</td><td>Desktop or tablet (priority hardware). One mobile session to flag breakpoints.</td></tr>
+          <tr><td>Prototype fidelity</td><td>Medium-fidelity interactive. All three BOM tiers must show functional values — not placeholder data.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Three Test Scenarios</p>
+
+      <!-- Scenario 1 -->
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">Scenario 1</div>
+          <div class="scenario-title">Opening Deduction Awareness</div>
+        </div>
+        <div class="scenario-body">
+          <p style="font-size:12px; color: var(--muted); margin-bottom: 8px;">Objective: Validate users understand gross vs. net area and that opening deductions happen automatically.</p>
+          <div class="scenario-task">
+            "You are estimating materials for a CHB partition wall: 4 meters long, 3 meters high, with one door (0.90 m × 2.10 m) and one window (1.20 m × 1.20 m). Set this up in the configurator and identify the area that will be used to calculate plaster quantities."
+          </div>
+
+          <div class="scenario-section-label">Success Criteria (✓)</div>
+          <ul class="criteria-list">
+            <li class="pass">User enters wall geometry in Step 2 without manually pre-subtracting opening area.</li>
+            <li class="pass">User adds openings in Step 3 and observes net area update in persistent summary bar.</li>
+            <li class="pass">When asked "What area is used for plaster?" user answers with net area (not gross).</li>
+          </ul>
+
+          <div class="scenario-section-label">Failure Signals (⚠)</div>
+          <ul class="criteria-list">
+            <li class="fail">User attempts to pre-subtract openings from the length/height input before entry.</li>
+            <li class="fail">User cannot locate the net area value after completing Step 3.</li>
+            <li class="fail">User believes gross area is used for plaster once openings are entered.</li>
+          </ul>
+
+          <div class="scenario-section-label">Probe Question</div>
+          <p style="font-size: 12px; color: var(--foreground); font-style: italic;">"Where in the screen would you look to confirm how much area the plaster calculation is based on?"</p>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">Scenario 2</div>
+          <div class="scenario-title">Side Selection Ambiguity</div>
+        </div>
+        <div class="scenario-body">
+          <p style="font-size:12px; color: var(--muted); margin-bottom: 8px;">Objective: Validate users understand the 1-side / 2-sides distinction and can correctly apply it without guidance.</p>
+          <div class="scenario-task">
+            "You're finishing both faces of a drywall partition between two offices — gypsum boards on both sides, with primer and paint on both sides. Configure this correctly in the configurator."
+          </div>
+
+          <div class="scenario-section-label">Success Criteria (✓)</div>
+          <ul class="criteria-list">
+            <li class="pass">User selects "Both Sides" in Step 4 without prompting.</li>
+            <li class="pass">User can read the updated finish area from the persistent bar (net area × 2).</li>
+            <li class="pass">User can articulate why board count and paint quantities are roughly double the one-side scenario.</li>
+          </ul>
+
+          <div class="scenario-section-label">Failure Signals (⚠)</div>
+          <ul class="criteria-list">
+            <li class="fail">User selects "1 Side" and does not notice or question the output.</li>
+            <li class="fail">User selects "Both Sides" but cannot find where the doubled finish area is shown.</li>
+            <li class="fail">User doubles the wall count input instead of using the sides toggle.</li>
+          </ul>
+
+          <div class="scenario-section-label">Probe Question</div>
+          <p style="font-size: 12px; color: var(--foreground); font-style: italic;">"If you had set this to one side instead, what quantity would change in the bill of materials — and by how much?"</p>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">Scenario 3</div>
+          <div class="scenario-title">Procurement Tier Interpretation</div>
+        </div>
+        <div class="scenario-body">
+          <p style="font-size:12px; color: var(--muted); margin-bottom: 8px;">Objective: Validate that the three-tier BOM is correctly interpreted — specifically that ORDER QTY, not formula or wastage, is what the user takes to a supplier.</p>
+          <div class="scenario-task">
+            "You've completed the configuration. Your site foreman is calling you right now asking: 'How many bags of cement do I need to order for plastering?' Look at the results and give them a number."
+          </div>
+
+          <div class="scenario-section-label">Success Criteria (✓)</div>
+          <ul class="criteria-list">
+            <li class="pass">User reads from the "ORDER QTY" column — not Formula Qty or +Wastage.</li>
+            <li class="pass">User reads the rounded, whole-unit value (e.g., "6 bags"), not a decimal.</li>
+            <li class="pass">User does not perform any additional mental arithmetic to arrive at the answer.</li>
+          </ul>
+
+          <div class="scenario-section-label">Failure Signals (⚠)</div>
+          <ul class="criteria-list">
+            <li class="fail">User reads the decimal adjusted quantity and rounds manually ("about 5 and a half").</li>
+            <li class="fail">User reads the theoretical (no-waste) quantity.</li>
+            <li class="fail">User cannot identify which of the three columns to use without asking the facilitator.</li>
+          </ul>
+
+          <div class="scenario-section-label">Probe Question</div>
+          <p style="font-size: 12px; color: var(--foreground); font-style: italic;">"There are three numbers for cement in this table. Can you tell me in your own words what each one means, and which one you'd actually use?"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <p class="subsection-title">Pass/Fail Thresholds for Design Release</p>
+      <table class="data-table">
+        <thead>
+          <tr><th>Criterion</th><th>Threshold</th></tr>
+        </thead>
+        <tbody class="threshold-row">
+          <tr>
+            <td>Scenario 1 — Net area identified correctly without prompting</td>
+            <td>≥ 4 of 5 participants (80%)</td>
+          </tr>
+          <tr>
+            <td>Scenario 2 — Both sides applied correctly without guidance</td>
+            <td>≥ 4 of 5 participants (80%)</td>
+          </tr>
+          <tr>
+            <td>Scenario 3 — ORDER QTY column used for purchase request</td>
+            <td>5 of 5 participants (100%)</td>
+          </tr>
+          <tr>
+            <td>Zero participants believe finish applies to gross area when openings are present</td>
+            <td>0 failures tolerated</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout orange" style="margin-top: 16px;">
+        If any threshold is not met, the failing component is redesigned and re-tested before the feature is released. No exceptions.
+      </div>
+    </div>
+
+  </section>
+
+</main>
+</body>
+</html>

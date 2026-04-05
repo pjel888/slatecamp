@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlateCamp — Unified Quiz Engine UX/UI Specification</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   SLATECAMP DESIGN TOKENS
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  --cobalt: #1B3FC4;
+  --cobalt-light: #E8EDFA;
+  --cobalt-dark: #0F1F5C;
+  --signal-gold: #F5A623;
+  --signal-green: #1B7A3C;
+  --signal-green-bg: #E8F5ED;
+  --signal-red: #E63329;
+  --camp-orange: #E8853A;
+  --trail-purple: #534AB7;
+  --trail-purple-light: #EDEAFC;
+  --cream: #F2F0EB;
+  --warm-white: #F8F7F5;
+  --charcoal: #1A1A2E;
+  --text-primary: #1A1A2E;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  --border: #E5E7EB;
+  --border-light: #F3F4F6;
+  --bg-page: #FAFAF8;
+  --bg-card: #FFFFFF;
+  --amber-bg: #FEF9E7;
+  --amber-text: #92400E;
+  --blue-bg: #EFF6FF;
+  --blue-text: #1E40AF;
+  --green-bg: #F0FDF4;
+  --green-text: #166534;
+  --purple-bg: #F5F3FF;
+  --purple-text: #5B21B6;
+  --orange-bg: #FFF7ED;
+  --orange-text: #9A3412;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.12);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL RESET & BASE
+   ═══════════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--cobalt); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ═══════════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════ */
+.font-display { font-family: 'Syne', sans-serif; }
+.font-mono { font-family: 'DM Mono', monospace; }
+
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+.eyebrow-blue { color: var(--cobalt); }
+.eyebrow-purple { color: var(--trail-purple); }
+.eyebrow-orange { color: var(--camp-orange); }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.2; }
+h1 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 2.25rem; }
+h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.75rem; }
+h3 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.35rem; }
+h4 { font-weight: 600; font-size: 1.1rem; }
+h5 { font-weight: 600; font-size: 0.95rem; }
+
+.text-sm { font-size: 0.875rem; }
+.text-xs { font-size: 0.75rem; }
+.text-muted { color: var(--text-secondary); }
+
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT
+   ═══════════════════════════════════════════════════════════════ */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.section {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.section:last-child { border-bottom: none; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; }
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.4rem; }
+  .page-container { padding: 0 16px; }
+  .section { padding: 40px 0; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO HEADER
+   ═══════════════════════════════════════════════════════════════ */
+.hero {
+  background: var(--cobalt-dark);
+  color: white;
+  padding: 80px 24px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(27,63,196,0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero .eyebrow { color: rgba(255,255,255,0.5); margin-bottom: 12px; }
+.hero h1 { font-size: 2.75rem; max-width: 700px; margin-bottom: 16px; }
+.hero p { color: rgba(255,255,255,0.7); max-width: 600px; font-size: 1.05rem; line-height: 1.7; }
+.hero-meta {
+  display: flex; gap: 32px; margin-top: 32px;
+  font-family: 'DM Mono', monospace; font-size: 11px;
+  color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SIDEBAR NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+.doc-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.sidebar {
+  position: sticky;
+  top: 24px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  padding: 24px 0;
+}
+.sidebar-section { margin-bottom: 24px; }
+.sidebar-section-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+.sidebar a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+  border-left: 2px solid transparent;
+}
+.sidebar a:hover {
+  color: var(--text-primary);
+  background: var(--cream);
+  text-decoration: none;
+}
+.sidebar a.active {
+  color: var(--cobalt);
+  background: var(--cobalt-light);
+  border-left-color: var(--cobalt);
+  font-weight: 500;
+}
+.sidebar a.indent { padding-left: 28px; font-size: 12px; }
+
+@media (max-width: 960px) {
+  .doc-layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CARDS & COMPONENTS
+   ═══════════════════════════════════════════════════════════════ */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.card-accent {
+  border-left: 3px solid var(--cobalt);
+}
+.card-accent-orange { border-left-color: var(--camp-orange); }
+.card-accent-purple { border-left-color: var(--trail-purple); }
+.card-accent-green { border-left-color: var(--signal-green); }
+
+.card-dark {
+  background: var(--cobalt-dark);
+  border-color: rgba(255,255,255,0.08);
+  color: white;
+}
+.card-dark .text-muted { color: rgba(255,255,255,0.5); }
+
+.principle-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.principle-card::before {
+  content: attr(data-number);
+  position: absolute;
+  top: -8px;
+  right: 12px;
+  font-family: 'Syne', sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  color: rgba(27,63,196,0.05);
+  line-height: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BADGES & PILLS
+   ═══════════════════════════════════════════════════════════════ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.badge-blue { background: var(--blue-bg); color: var(--blue-text); }
+.badge-amber { background: var(--amber-bg); color: var(--amber-text); }
+.badge-green { background: var(--green-bg); color: var(--green-text); }
+.badge-purple { background: var(--purple-bg); color: var(--purple-text); }
+.badge-orange { background: var(--orange-bg); color: var(--orange-text); }
+.badge-dark { background: var(--cobalt-dark); color: white; }
+
+/* ═══════════════════════════════════════════════════════════════
+   FLOW DIAGRAMS
+   ═══════════════════════════════════════════════════════════════ */
+.flow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.flow-step {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+  position: relative;
+}
+.flow-step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flow-step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+.flow-step-number.blue { background: var(--cobalt); color: white; }
+.flow-step-number.amber { background: var(--signal-gold); color: white; }
+.flow-step-number.green { background: var(--signal-green); color: white; }
+.flow-step-number.purple { background: var(--trail-purple); color: white; }
+.flow-step-number.orange { background: var(--camp-orange); color: white; }
+.flow-step-number.gray { background: var(--border); color: var(--text-secondary); }
+
+.flow-step-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  min-height: 20px;
+}
+.flow-step-content {
+  padding-bottom: 32px;
+}
+.flow-step:last-child .flow-step-content { padding-bottom: 0; }
+.flow-step:last-child .flow-step-line { display: none; }
+
+.flow-step-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+.flow-step-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Sub-details within a flow step */
+.flow-detail-box {
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-top: 12px;
+  font-size: 13px;
+}
+.flow-detail-box h5 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.flow-detail-box ul {
+  list-style: none;
+  padding: 0;
+}
+.flow-detail-box li {
+  padding: 4px 0;
+  padding-left: 16px;
+  position: relative;
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.flow-detail-box li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   WIREFRAME MOCKUPS
+   ═══════════════════════════════════════════════════════════════ */
+.wireframe {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  font-size: 12px;
+}
+.wireframe-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wireframe-body {
+  padding: 24px;
+}
+.wireframe-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.wireframe-placeholder {
+  background: var(--border-light);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+.wireframe-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: default;
+}
+.wireframe-btn-primary {
+  background: var(--cobalt);
+  color: white;
+}
+.wireframe-btn-secondary {
+  background: white;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+.wireframe-btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+.wireframe-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 10px;
+  cursor: default;
+  transition: all 0.15s;
+}
+.wireframe-option:hover {
+  border-color: var(--cobalt);
+  background: var(--cobalt-light);
+}
+.wireframe-option.selected {
+  border-color: var(--cobalt);
+  background: var(--cobalt-light);
+}
+.wireframe-option .radio {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wireframe-option.selected .radio {
+  border-color: var(--cobalt);
+}
+.wireframe-option.selected .radio::after {
+  content: '';
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--cobalt);
+}
+.wireframe-option .letter {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  width: 20px;
+  text-align: center;
+}
+.wireframe-option .option-text {
+  font-size: 13px;
+  flex: 1;
+}
+.wireframe-progress-bar {
+  height: 4px;
+  background: var(--border-light);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.wireframe-progress-fill {
+  height: 100%;
+  background: var(--cobalt);
+  border-radius: 2px;
+  transition: width 0.3s;
+}
+.wireframe-nav-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  background: white;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONFIG TABLE
+   ═══════════════════════════════════════════════════════════════ */
+.config-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12.5px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.config-table thead {
+  background: var(--cream);
+}
+.config-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+.config-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-light);
+  vertical-align: top;
+}
+.config-table tr:last-child td { border-bottom: none; }
+.config-table .feature-name { font-weight: 500; white-space: nowrap; }
+
+.check { color: var(--signal-green); }
+.cross { color: var(--text-muted); }
+.configurable { color: var(--trail-purple); font-weight: 500; }
+
+/* ═══════════════════════════════════════════════════════════════
+   DECISION TREE
+   ═══════════════════════════════════════════════════════════════ */
+.decision-node {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+}
+.decision-node.question {
+  border-color: var(--cobalt);
+  border-width: 2px;
+}
+.decision-node.answer {
+  background: var(--cobalt-light);
+  border-color: var(--cobalt);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SEPARATOR & UTILITY
+   ═══════════════════════════════════════════════════════════════ */
+.section-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 48px 0;
+}
+.spacer-sm { height: 16px; }
+.spacer-md { height: 24px; }
+.spacer-lg { height: 40px; }
+.spacer-xl { height: 64px; }
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+.gap-24 { gap: 24px; }
+.gap-32 { gap: 32px; }
+.flex-1 { flex: 1; }
+.w-full { width: 100%; }
+
+.highlight-box {
+  background: var(--cobalt-light);
+  border-left: 3px solid var(--cobalt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 16px 20px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.highlight-box strong { color: var(--cobalt); }
+
+.warning-box {
+  background: var(--amber-bg);
+  border-left: 3px solid var(--signal-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 16px 20px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.success-box {
+  background: var(--green-bg);
+  border-left: 3px solid var(--signal-green);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 16px 20px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Tabs */
+.tab-container { border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+.tab-list { display: flex; gap: 0; overflow-x: auto; }
+.tab-btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.tab-btn:hover { color: var(--text-primary); }
+.tab-btn.active {
+  color: var(--cobalt);
+  border-bottom-color: var(--cobalt);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* Accordion */
+.accordion-item { border: 1px solid var(--border); border-radius: var(--radius-md); margin-bottom: 8px; overflow: hidden; }
+.accordion-trigger {
+  width: 100%; padding: 14px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: white; border: none; cursor: pointer;
+  font-size: 14px; font-weight: 500; text-align: left;
+}
+.accordion-trigger:hover { background: var(--cream); }
+.accordion-trigger .arrow { transition: transform 0.2s; font-size: 12px; color: var(--text-muted); }
+.accordion-item.open .accordion-trigger .arrow { transform: rotate(90deg); }
+.accordion-content { display: none; padding: 0 20px 20px; font-size: 13px; line-height: 1.7; color: var(--text-secondary); }
+.accordion-item.open .accordion-content { display: block; }
+
+/* Mode comparison grid */
+.mode-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  position: relative;
+  transition: all 0.15s;
+}
+.mode-card:hover {
+  border-color: var(--cobalt);
+  box-shadow: var(--shadow-md);
+}
+.mode-card-icon {
+  width: 36px; height: 36px;
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Print styles */
+@media print {
+  .sidebar { display: none; }
+  .doc-layout { grid-template-columns: 1fr; }
+  .hero { background: white; color: black; }
+  .section { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="page-container">
+    <p class="eyebrow">SlateCamp · Product Specification</p>
+    <h1>Unified Quiz Engine<br>UX/UI Specification</h1>
+    <p>One shell. Eight modes. Every button, every slide, every path — documented. This is the complete UX blueprint for SlateCamp's exam preparation engine.</p>
+    <div class="hero-meta">
+      <span>Version 1.0</span>
+      <span>March 2026</span>
+      <span>8 Exam Modes</span>
+      <span>Status: Design Spec</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-container">
+  <div class="doc-layout">
+
+    <!-- ══════════════════════════════════════════════════════════
+         SIDEBAR NAVIGATION
+         ══════════════════════════════════════════════════════════ -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Foundation</div>
+        <a href="#core-argument">The Core Argument</a>
+        <a href="#architecture" class="indent">Unified Architecture</a>
+        <a href="#config-object" class="indent">Config Object</a>
+        <a href="#mode-matrix">Mode Comparison Matrix</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Universal Flow</div>
+        <a href="#universal-entry">Entry Point</a>
+        <a href="#universal-setup">Session Setup Slides</a>
+        <a href="#universal-quiz">Active Quiz Shell</a>
+        <a href="#universal-submit">Submission Flow</a>
+        <a href="#universal-results">Results Dashboard</a>
+        <a href="#universal-review">Review Flow</a>
+        <a href="#universal-exit">Exit Patterns</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Per-Mode Flows</div>
+        <a href="#mode-camp">Camp Mode</a>
+        <a href="#mode-chill">Chill Mode</a>
+        <a href="#mode-subject">Subject Mode</a>
+        <a href="#mode-focused">Focused Review</a>
+        <a href="#mode-custom">Custom Session</a>
+        <a href="#mode-storm">Storm Mode</a>
+        <a href="#mode-fullexam">Full Exam Sim</a>
+        <a href="#mode-extended">Extended Practice</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Components</div>
+        <a href="#comp-question">Question Screen</a>
+        <a href="#comp-feedback">Feedback Panel</a>
+        <a href="#comp-palette">Question Palette</a>
+        <a href="#comp-timer">Timer Variants</a>
+        <a href="#comp-progress">Progress Indicators</a>
+        <a href="#comp-bottombar">Bottom Navigation</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Specs</div>
+        <a href="#accessibility">Accessibility</a>
+        <a href="#mobile">Mobile Specs</a>
+        <a href="#animations">Motion & Animation</a>
+        <a href="#error-states">Error & Edge States</a>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════════════
+         MAIN CONTENT
+         ══════════════════════════════════════════════════════════ -->
+    <main>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 1: THE CORE ARGUMENT
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="core-argument">
+        <p class="eyebrow eyebrow-blue">Section 01</p>
+        <h2>The Core Argument: One Shell, Many Modes</h2>
+        <div class="spacer-md"></div>
+
+        <div class="highlight-box" style="margin-bottom: 24px;">
+          <strong>The problem today:</strong> SlateCamp has 8 exam modes with fragmented UIs. Subject Mode looks different from Camp Mode. Storm Mode has a different layout from Full Exam Simulation. There is no architectural reason for this — it creates maintenance debt, cognitive friction, and brand inconsistency.
+        </div>
+
+        <p style="font-size: 14px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 24px;">
+          The evidence is overwhelming: AMBOSS, UWorld, and every successful exam prep platform uses <strong>one quiz shell</strong> that adapts behavior through configuration flags — not separate interfaces. The difference between "study mode" and "exam simulation" is not layout. It is: (1) when feedback appears, (2) whether the timer is visible, (3) what navigation is permitted, and (4) what happens after submission. Those are boolean flags in a config object, not separate codebases.
+        </p>
+
+        <div id="architecture" class="spacer-md"></div>
+
+        <h3>The Unified Architecture</h3>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 20px;">Every exam mode passes through the same three-phase pipeline. The config object controls behavior at each phase.</p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <div class="card card-accent" style="flex: 1; min-width: 200px;">
+            <p class="eyebrow">Phase 1</p>
+            <h4 style="margin: 8px 0 4px;">Session Setup</h4>
+            <p class="text-sm text-muted">1–3 slides depending on mode. Collects user preferences, loads config, and initializes the session.</p>
+          </div>
+          <div class="card card-accent-purple" style="flex: 1; min-width: 200px;">
+            <p class="eyebrow eyebrow-purple">Phase 2</p>
+            <h4 style="margin: 8px 0 4px;">Active Quiz Shell</h4>
+            <p class="text-sm text-muted">Identical layout for ALL modes. Config flags toggle timer, feedback, navigation, and palette.</p>
+          </div>
+          <div class="card card-accent-green" style="flex: 1; min-width: 200px;">
+            <p class="eyebrow" style="color: var(--signal-green);">Phase 3</p>
+            <h4 style="margin: 8px 0 4px;">Results + Review</h4>
+            <p class="text-sm text-muted">Score reveal, performance breakdown, question-by-question review. Same shell, different depth of data.</p>
+          </div>
+        </div>
+
+        <div class="spacer-lg"></div>
+
+        <!-- IMMUTABLE LAW: TWO-COLUMN LAYOUT -->
+        <div style="background: var(--cobalt-dark); color: white; border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -20px; right: 20px; font-family: 'Syne', sans-serif; font-size: 120px; font-weight: 800; color: rgba(255,255,255,0.04); line-height: 1;">§0</div>
+          <p class="font-mono" style="font-size: 9px; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.4); margin-bottom: 8px;">Immutable Layout Law</p>
+          <h3 style="color: white; margin-bottom: 12px;">Two-Column Question Screen — Always</h3>
+          <p style="font-size: 14px; line-height: 1.8; color: rgba(255,255,255,0.7); margin-bottom: 16px;">
+            On desktop and tablet (≥768px), the active quiz screen is <strong style="color: white;">always a two-column layout</strong>: question stem on the left, answer options on the right. This is non-negotiable. The layout never shifts, never stacks, never rearranges between questions or between modes. A student answering question 1 sees the same spatial layout as question 200.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+            <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius-md); padding: 16px;">
+              <p class="font-mono" style="font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Left Column (50%)</p>
+              <p style="font-size: 13px; color: rgba(255,255,255,0.8);">Question number + stem, images/diagrams (if any), topic breadcrumb, confidence rating (learning modes)</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius-md); padding: 16px;">
+              <p class="font-mono" style="font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Right Column (50%)</p>
+              <p style="font-size: 13px; color: rgba(255,255,255,0.8);">Answer options (A–D), submit/next button, feedback panel (slides in below options after submission in immediate mode)</p>
+            </div>
+          </div>
+          <p style="font-size: 13px; color: rgba(255,255,255,0.5);">
+            <strong style="color: rgba(255,255,255,0.7);">Mobile only (&lt;768px):</strong> Stacks vertically — question on top, options below. This is the ONLY exception.
+          </p>
+          <p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 8px;">
+            <strong style="color: rgba(255,255,255,0.7);">Why:</strong> Layout shifts during high-focus activity destroy flow state. The brain builds spatial memory of "where to read" and "where to answer." Breaking that contract forces re-orientation on every question — extraneous cognitive load we refuse to impose.
+          </p>
+        </div>
+
+        <div id="config-object" class="spacer-lg"></div>
+
+        <h3>The Config Object</h3>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">Every mode is defined by this single configuration object. The quiz shell reads it and adapts. No conditional UI branches — only config-driven rendering.</p>
+
+        <div class="card" style="background: var(--cobalt-dark); color: rgba(255,255,255,0.85); font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.8; overflow-x: auto;">
+<pre style="white-space: pre; padding: 8px;">
+interface QuizSessionConfig {
+  mode: 'camp' | 'chill' | 'subject' | 'focused' | 'custom' | 'storm' | 'fullexam' | 'extended';
+
+  // Setup phase
+  setup: {
+    slides: SetupSlide[];         // Which setup screens to show
+    defaultQuestionCount: number;  // Pre-filled count
+    allowCountChange: boolean;     // Can user change count?
+    showSubjectPicker: boolean;    // Show subject/topic filter?
+    showDifficultyPicker: boolean; // Show difficulty selector?
+    showReadinessPrompt: boolean;  // Show "How are you feeling?" slide?
+  };
+
+  // Timer
+  timer: {
+    enabled: boolean;
+    visible: boolean;              // Timer exists but may be hidden
+    mode: 'countdown' | 'countup' | 'bar' | 'hidden';
+    totalSeconds: number | null;
+    perQuestion: boolean;          // Per-question vs per-session
+    pausable: boolean;
+    warningThresholds: number[];   // [0.75, 0.90, 0.95]
+  };
+
+  // Feedback
+  feedback: {
+    timing: 'immediate' | 'deferred' | 'none';
+    showExplanation: boolean;
+    showCorrectAnswer: boolean;
+    showConfidenceRating: boolean;
+    gatedProgression: boolean;     // Delay Next button 3s after feedback
+    explanationDepth: 'brief' | 'full' | 'with-wiki-link';
+  };
+
+  // Navigation
+  navigation: {
+    model: 'linear' | 'free' | 'linear-with-skip';
+    backAllowed: boolean;
+    questionPalette: boolean;
+    bookmarkEnabled: boolean;
+    skipEnabled: boolean;
+    confirmBeforeSubmit: boolean;
+  };
+
+  // Difficulty
+  difficulty: {
+    mode: 'static' | 'adaptive' | 'user-selected';
+    targetAccuracy: number;        // 0.85 for adaptive
+    initialLevel: 'easy' | 'medium' | 'hard' | 'mixed';
+  };
+
+  // Post-quiz
+  results: {
+    showImmediately: boolean;      // vs delayed (Full Exam Sim)
+    delayHours: number;            // 0 for immediate, 24 for full exam
+    showPercentile: boolean;
+    showSubjectBreakdown: boolean;
+    showGrowthDelta: boolean;
+    showReviewCTA: boolean;
+  };
+}
+</pre>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 2: MODE COMPARISON MATRIX
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="mode-matrix">
+        <p class="eyebrow eyebrow-blue">Section 02</p>
+        <h2>Mode Comparison Matrix</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 20px;">Every behavioral difference between the 8 modes, at a glance. Every row is a config flag — not a separate UI component.</p>
+
+        <div style="overflow-x: auto;">
+          <table class="config-table">
+            <thead>
+              <tr>
+                <th style="min-width: 150px;">Behavior</th>
+                <th>Camp</th>
+                <th>Chill</th>
+                <th>Subject</th>
+                <th>Focused</th>
+                <th>Custom</th>
+                <th>Storm</th>
+                <th>Full Exam</th>
+                <th>Extended</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Default Q count</td>
+                <td>20</td>
+                <td>10</td>
+                <td>25</td>
+                <td>15</td>
+                <td class="configurable">User</td>
+                <td>50</td>
+                <td>200</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Timer visible</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="configurable">User</td>
+                <td>Bar only</td>
+                <td class="check">✓ Countdown</td>
+                <td>Countup</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Feedback timing</td>
+                <td>Immediate</td>
+                <td>Immediate</td>
+                <td>Immediate</td>
+                <td>Immediate</td>
+                <td class="configurable">User</td>
+                <td>Deferred</td>
+                <td>Deferred</td>
+                <td>Immediate</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Explanations</td>
+                <td class="check">✓ Full + Wiki</td>
+                <td class="check">✓ Full</td>
+                <td class="check">✓ Full + Wiki</td>
+                <td class="check">✓ Full + Wiki</td>
+                <td class="configurable">User</td>
+                <td class="cross">✕ until end</td>
+                <td class="cross">✕ until end</td>
+                <td class="check">✓ Brief</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Navigation model</td>
+                <td>Linear</td>
+                <td>Free</td>
+                <td>Linear</td>
+                <td>Linear</td>
+                <td class="configurable">User</td>
+                <td>Free</td>
+                <td>Free</td>
+                <td>Linear + Skip</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Back allowed</td>
+                <td class="cross">✕</td>
+                <td class="check">✓</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="configurable">User</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Question palette</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="configurable">User</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Bookmark/Flag</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="configurable">User</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Skip allowed</td>
+                <td class="cross">✕</td>
+                <td class="check">✓</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="configurable">User</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Difficulty</td>
+                <td>Adaptive</td>
+                <td>Mixed</td>
+                <td>Adaptive</td>
+                <td>Adaptive</td>
+                <td class="configurable">User</td>
+                <td>Exam-weighted</td>
+                <td>Exam-weighted</td>
+                <td>Mixed</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Confidence rating</td>
+                <td class="check">✓</td>
+                <td class="cross">✕</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+                <td class="configurable">User</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Results delay</td>
+                <td>Instant</td>
+                <td>Instant</td>
+                <td>Instant</td>
+                <td>Instant</td>
+                <td>Instant</td>
+                <td>Instant</td>
+                <td>24 hours</td>
+                <td>Instant</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Micro-break prompts</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td>Every 25 Qs</td>
+                <td>Every 50 Qs</td>
+                <td>Every 30 Qs</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Setup slides</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 3: UNIVERSAL ENTRY POINT
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-entry">
+        <p class="eyebrow eyebrow-blue">Section 03</p>
+        <h2>Universal Flow: Entry Point</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">Every quiz session in SlateCamp starts from one of these entry points. Regardless of origin, the flow converges to the same Session Setup pipeline.</p>
+
+        <h4 style="margin-bottom: 16px;">Entry Points → Session Setup</h4>
+
+        <div class="flow-container">
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E1</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Dashboard "Start Session" Button</div>
+              <div class="flow-step-desc">The primary CTA on the home dashboard. Shows today's Camp Trail day or the user's last active mode. Tapping goes directly to the mode's Session Setup Slide 1.</div>
+              <div class="flow-detail-box">
+                <h5>Button states</h5>
+                <ul>
+                  <li>Camp Trail enrolled: "Start Day 14 — Structural Systems" → opens Camp Mode setup</li>
+                  <li>No trail enrolled: "Start a Quiz Session" → opens Mode Selector</li>
+                  <li>Session in progress: "Resume Session (Q 12/20)" → opens Active Quiz at last question</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E2</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Heatmap Node Tap → "Practice This Topic"</div>
+              <div class="flow-step-desc">User taps a topic node on the Taxonomy Heatmap. Bottom sheet appears with topic name, mastery status, and "Practice This" CTA. Tapping CTA pre-configures Subject Mode or Focused Review with that topic pre-selected.</div>
+              <div class="flow-detail-box">
+                <h5>Behavior</h5>
+                <ul>
+                  <li>Red/Amber node → Opens Focused Review with topic pre-filled</li>
+                  <li>Green node → Opens Subject Mode for maintenance practice</li>
+                  <li>Grey (unexplored) node → Opens Subject Mode with "Start exploring" framing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E3</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Camp Trail Day Card</div>
+              <div class="flow-step-desc">Each day on the Camp Trail has a card with the session configuration. Tapping "Start Day" opens Camp Mode with that day's config pre-loaded (topic, question count, difficulty — all set by the trail algorithm).</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E4</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Mode Selector (Direct Launch)</div>
+              <div class="flow-step-desc">Accessible from the bottom-right FAB button (➕) or from the dashboard quick-actions row. Presents all 8 modes in a grid. This is the universal fallback entry point.</div>
+              <div class="flow-detail-box">
+                <h5>Mode selector layout</h5>
+                <ul>
+                  <li>2-column grid on mobile, 4-column on desktop</li>
+                  <li>Each mode card shows: icon, name, 1-line description, badge (Learning/Exam/Custom)</li>
+                  <li>Cards are grouped: "Learning Modes" (Camp, Chill, Subject, Focused) and "Exam Modes" (Storm, Full Exam, Extended) and "Your Way" (Custom)</li>
+                  <li>Tapping a card opens that mode's Session Setup Slide 1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E5</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Post-Quiz Review → "Practice These Again"</div>
+              <div class="flow-step-desc">After completing a quiz review, the results dashboard offers a CTA to re-practice missed questions. This auto-creates a Focused Review session with only the missed questions loaded.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">E6</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Push Notification / Deep Link</div>
+              <div class="flow-step-desc">Re-engagement notifications like "Your Camp Trail day is ready" or "You have 5 flagged questions to review" deep-link directly to the appropriate session setup.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 4: SESSION SETUP SLIDES
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-setup">
+        <p class="eyebrow eyebrow-purple">Section 04</p>
+        <h2>Universal Flow: Session Setup Slides</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">After entry, every mode passes through 1–3 setup slides. The slides are modular — the config object determines which ones appear and in what order. Each slide is a full-screen overlay with a single purpose.</p>
+
+        <div class="warning-box" style="margin-bottom: 24px;">
+          <strong>Design rule:</strong> Each setup slide has exactly ONE question and ONE primary action. No slide asks two things. No slide requires scrolling. Setup should feel effortless — if it takes more than 10 seconds per slide, the slide has too many options.
+        </div>
+
+        <!-- SLIDE 1 -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="flex items-center gap-12" style="margin-bottom: 16px;">
+            <span class="badge badge-blue">Setup Slide 1</span>
+            <span class="text-sm" style="font-weight: 600;">Session Confirmation</span>
+            <span class="badge badge-purple" style="margin-left: auto;">All Modes</span>
+          </div>
+          <p class="text-sm text-muted" style="margin-bottom: 16px;">Shows the user what they're about to do and lets them confirm or adjust the question count. This is the ONLY slide that appears in every single mode.</p>
+
+          <div class="wireframe" style="max-width: 400px;">
+            <div class="wireframe-header">
+              <span style="font-size: 13px; font-weight: 500;">← Back</span>
+              <span class="font-mono" style="font-size: 10px; color: var(--text-muted);">CAMP MODE</span>
+            </div>
+            <div class="wireframe-body" style="text-align: center; padding: 40px 24px;">
+              <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--cobalt-light); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🏕</div>
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 8px;">Today's Session</p>
+              <h4 style="margin-bottom: 4px;">Structural Systems</h4>
+              <p class="text-sm text-muted" style="margin-bottom: 24px;">20 questions · Adaptive difficulty · Instant feedback</p>
+
+              <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 32px;">
+                <button class="wireframe-btn wireframe-btn-secondary" style="width: 40px; height: 40px; padding: 0; border-radius: 50%; font-size: 18px;">−</button>
+                <span style="font-family: 'DM Mono', monospace; font-size: 28px; font-weight: 500; min-width: 48px; text-align: center;">20</span>
+                <button class="wireframe-btn wireframe-btn-secondary" style="width: 40px; height: 40px; padding: 0; border-radius: 50%; font-size: 18px;">+</button>
+              </div>
+              <p class="text-xs text-muted" style="margin-bottom: 24px;">Estimated: ~15 min</p>
+
+              <button class="wireframe-btn wireframe-btn-primary" style="width: 100%; padding: 14px;">Begin Session →</button>
+              <div class="spacer-sm"></div>
+              <button class="wireframe-btn wireframe-btn-ghost" style="font-size: 12px;">Change mode</button>
+            </div>
+          </div>
+
+          <div class="flow-detail-box" style="margin-top: 16px;">
+            <h5>Slide 1 — Element Inventory</h5>
+            <ul>
+              <li><strong>Back button (top-left):</strong> Returns to previous screen (Mode Selector or Dashboard). Never "Close" — always "Back" for clear mental model.</li>
+              <li><strong>Mode badge (top-right):</strong> DM Mono, 9px, uppercase. Shows current mode name for orientation.</li>
+              <li><strong>Mode icon:</strong> 48×48px, rounded-xl, brand-colored background. Unique per mode (Camp=🏕, Storm=⚡, etc).</li>
+              <li><strong>Session title:</strong> Topic name for Subject/Focused, "Camp Day 14" for Camp, "Practice Session" for Chill, etc.</li>
+              <li><strong>Session summary line:</strong> "[count] questions · [difficulty] · [feedback type]" — all derived from config.</li>
+              <li><strong>Question count stepper:</strong> ± buttons with numeric display. Step: 5 for learning modes, 10 for exam modes. Min: 5. Max: varies by mode. Hidden if mode locks count (Full Exam = always 200).</li>
+              <li><strong>Time estimate:</strong> Calculated at 45 seconds/question for learning modes, 72 seconds for exam modes.</li>
+              <li><strong>"Begin Session" CTA:</strong> Primary button, full-width, Cobalt Blue. 48px height. 200ms delay before enabling after page load.</li>
+              <li><strong>"Change mode" link:</strong> Ghost button, returns to Mode Selector.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="flex items-center gap-12" style="margin-bottom: 16px;">
+            <span class="badge badge-amber">Setup Slide 2</span>
+            <span class="text-sm" style="font-weight: 600;">Subject / Topic Picker</span>
+            <span class="badge badge-purple">Subject · Focused · Custom</span>
+          </div>
+          <p class="text-sm text-muted" style="margin-bottom: 16px;">Only shown when the mode allows topic selection. Presents the 6 ALE subjects with their current mastery indicators. User picks one or more subjects. Tapping a subject expands to show specific topics.</p>
+
+          <div class="wireframe" style="max-width: 400px;">
+            <div class="wireframe-header">
+              <span style="font-size: 13px; font-weight: 500;">← Back</span>
+              <span class="font-mono" style="font-size: 10px; color: var(--text-muted);">STEP 2 OF 2</span>
+            </div>
+            <div class="wireframe-body">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 8px;">Choose your focus</p>
+              <h4 style="margin-bottom: 16px;">Which subjects?</h4>
+
+              <div class="wireframe-option selected">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--signal-gold); flex-shrink: 0;"></div>
+                <span class="option-text" style="font-weight: 500;">Structural Design</span>
+                <span class="font-mono text-xs text-muted">48%</span>
+                <span style="font-size: 11px; color: var(--cobalt);">▾</span>
+              </div>
+              <div style="padding-left: 32px; margin-top: -4px; margin-bottom: 12px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                  <span style="padding: 4px 10px; background: var(--cobalt-light); border-radius: 20px; font-size: 11px; color: var(--cobalt);">Foundations ✓</span>
+                  <span style="padding: 4px 10px; background: var(--cream); border-radius: 20px; font-size: 11px; color: var(--text-secondary);">Beam Design</span>
+                  <span style="padding: 4px 10px; background: var(--cobalt-light); border-radius: 20px; font-size: 11px; color: var(--cobalt);">Columns ✓</span>
+                  <span style="padding: 4px 10px; background: var(--cream); border-radius: 20px; font-size: 11px; color: var(--text-secondary);">Slabs</span>
+                </div>
+              </div>
+
+              <div class="wireframe-option">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--signal-green); flex-shrink: 0;"></div>
+                <span class="option-text">Building Laws</span>
+                <span class="font-mono text-xs text-muted">72%</span>
+                <span style="font-size: 11px; color: var(--text-muted);">▸</span>
+              </div>
+
+              <div class="wireframe-option">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: #E63329; flex-shrink: 0;"></div>
+                <span class="option-text">Utilities</span>
+                <span class="font-mono text-xs text-muted">31%</span>
+                <span style="font-size: 11px; color: var(--text-muted);">▸</span>
+              </div>
+
+              <div class="wireframe-option">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--border); flex-shrink: 0;"></div>
+                <span class="option-text text-muted">History of Architecture</span>
+                <span class="font-mono text-xs text-muted">—</span>
+                <span style="font-size: 11px; color: var(--text-muted);">▸</span>
+              </div>
+
+              <div class="spacer-md"></div>
+              <button class="wireframe-btn wireframe-btn-primary" style="width: 100%; padding: 14px;">Continue with 2 subjects →</button>
+            </div>
+          </div>
+
+          <div class="flow-detail-box" style="margin-top: 16px;">
+            <h5>Slide 2 — Element Inventory</h5>
+            <ul>
+              <li><strong>Subject rows:</strong> Each row shows mastery dot (color-coded), subject name, mastery %, and expand chevron.</li>
+              <li><strong>Mastery dots:</strong> 8px circle. Red (&lt;40%), Amber (40–69%), Green (≥70%), Grey (unexplored). Never rely on color alone — screen readers announce "Structural Design, 48 percent, amber zone."</li>
+              <li><strong>Topic chips (expanded):</strong> Pill-shaped toggles. Selected = Cobalt Light bg + Cobalt text + checkmark. Unselected = Cream bg + secondary text.</li>
+              <li><strong>Multi-select behavior:</strong> In Custom mode, user can select multiple subjects and topics. In Subject/Focused, user selects exactly one subject.</li>
+              <li><strong>Smart default:</strong> For Focused Review, the weakest topic is pre-selected. User can change but the default nudges toward their blindspot.</li>
+              <li><strong>CTA text:</strong> Dynamic — "Continue with 2 subjects →" or "Continue with Foundations →" depending on selection.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="card" style="margin-bottom: 24px;">
+          <div class="flex items-center gap-12" style="margin-bottom: 16px;">
+            <span class="badge badge-orange">Setup Slide 3</span>
+            <span class="text-sm" style="font-weight: 600;">Advanced Configuration</span>
+            <span class="badge badge-purple">Custom Only</span>
+          </div>
+          <p class="text-sm text-muted" style="margin-bottom: 16px;">Only shown in Custom Session mode. Gives the user full control over every config flag. This is the "power user" slide — it must feel advanced but not overwhelming.</p>
+
+          <div class="wireframe" style="max-width: 400px;">
+            <div class="wireframe-header">
+              <span style="font-size: 13px; font-weight: 500;">← Back</span>
+              <span class="font-mono" style="font-size: 10px; color: var(--text-muted);">STEP 3 OF 3</span>
+            </div>
+            <div class="wireframe-body">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 8px;">Configure session</p>
+              <h4 style="margin-bottom: 20px;">Your settings</h4>
+
+              <!-- Toggle rows -->
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <p style="font-size: 13px; font-weight: 500;">Instant feedback</p>
+                    <p class="text-xs text-muted">See explanations after each question</p>
+                  </div>
+                  <div style="width: 44px; height: 24px; background: var(--cobalt); border-radius: 12px; position: relative;">
+                    <div style="width: 20px; height: 20px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <p style="font-size: 13px; font-weight: 500;">Timer</p>
+                    <p class="text-xs text-muted">Show countdown timer</p>
+                  </div>
+                  <div style="width: 44px; height: 24px; background: var(--border); border-radius: 12px; position: relative;">
+                    <div style="width: 20px; height: 20px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <p style="font-size: 13px; font-weight: 500;">Free navigation</p>
+                    <p class="text-xs text-muted">Go back to previous questions</p>
+                  </div>
+                  <div style="width: 44px; height: 24px; background: var(--border); border-radius: 12px; position: relative;">
+                    <div style="width: 20px; height: 20px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <p style="font-size: 13px; font-weight: 500;">Question palette</p>
+                    <p class="text-xs text-muted">Jump to any question</p>
+                  </div>
+                  <div style="width: 44px; height: 24px; background: var(--border); border-radius: 12px; position: relative;">
+                    <div style="width: 20px; height: 20px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <p style="font-size: 13px; font-weight: 500; margin-bottom: 8px;">Difficulty</p>
+                  <div style="display: flex; gap: 8px;">
+                    <span style="padding: 6px 14px; background: var(--cobalt-light); color: var(--cobalt); border-radius: 6px; font-size: 12px; font-weight: 500;">Mixed</span>
+                    <span style="padding: 6px 14px; background: var(--cream); color: var(--text-secondary); border-radius: 6px; font-size: 12px;">Easy</span>
+                    <span style="padding: 6px 14px; background: var(--cream); color: var(--text-secondary); border-radius: 6px; font-size: 12px;">Medium</span>
+                    <span style="padding: 6px 14px; background: var(--cream); color: var(--text-secondary); border-radius: 6px; font-size: 12px;">Hard</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spacer-lg"></div>
+              <button class="wireframe-btn wireframe-btn-primary" style="width: 100%; padding: 14px;">Begin Custom Session →</button>
+            </div>
+          </div>
+
+          <div class="flow-detail-box" style="margin-top: 16px;">
+            <h5>Slide 3 — Element Inventory</h5>
+            <ul>
+              <li><strong>Toggle switches:</strong> 44×24px. Active = Cobalt fill, knob right. Inactive = Border color fill, knob left. 44px width ensures thumb-friendly tap target.</li>
+              <li><strong>Each toggle has:</strong> Label (13px, 500 weight) + description (12px, muted). Both are tappable to toggle.</li>
+              <li><strong>Difficulty selector:</strong> Horizontal pill group. Single-select. "Mixed" is default. Selected = Cobalt Light bg. Unselected = Cream bg.</li>
+              <li><strong>Preset shortcuts (below toggles):</strong> "Use Storm Mode settings" / "Use Camp Mode settings" — ghost buttons that auto-fill all toggles to match a preset. Saves power users time.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 5: THE ACTIVE QUIZ SHELL
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-quiz">
+        <p class="eyebrow eyebrow-purple">Section 05</p>
+        <h2>Universal Flow: The Active Quiz Shell</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 12px;">This is the ONE screen that every mode shares. The layout is identical across all 8 modes. Only the behavior flags change what's visible.</p>
+
+        <div style="background: var(--cobalt-dark); color: white; border-radius: var(--radius-md); padding: 14px 20px; margin-bottom: 24px; font-size: 13px;">
+          <strong>⚠ Immutable rule:</strong> Desktop/tablet is ALWAYS two columns — question left, options right. The layout never shifts. Ever.
+        </div>
+
+        <div id="comp-question"></div>
+
+        <h3 style="margin-bottom: 16px;">Question Screen Anatomy — Desktop (Two-Column)</h3>
+
+        <!-- ═══ DESKTOP TWO-COLUMN WIREFRAME ═══ -->
+        <div class="wireframe" style="margin-bottom: 12px;">
+          <!-- TOP BAR -->
+          <div class="wireframe-header">
+            <div class="flex items-center gap-16">
+              <span style="font-size: 13px; cursor: pointer; color: var(--text-muted);">✕ Exit</span>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; max-width: 300px;">
+                <div class="wireframe-progress-bar" style="flex: 1;">
+                  <div class="wireframe-progress-fill" style="width: 40%;"></div>
+                </div>
+                <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">8 / 20</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-16">
+              <span class="badge badge-blue" style="font-size: 8px;">CAMP MODE</span>
+              <span class="font-mono" style="font-size: 11px; color: var(--text-muted);" title="Timer — hidden in learning modes, visible in exam modes">14:32</span>
+              <span style="font-size: 14px; cursor: pointer; color: var(--text-muted);" title="Bookmark/Flag">⚑</span>
+              <span style="font-size: 14px; cursor: pointer; color: var(--text-muted);" title="Question Palette">▦</span>
+            </div>
+          </div>
+
+          <!-- TWO-COLUMN BODY -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; min-height: 420px;">
+
+            <!-- ═══ LEFT COLUMN: QUESTION ═══ -->
+            <div style="padding: 32px; border-right: 1px solid var(--border); display: flex; flex-direction: column;">
+              <!-- Topic breadcrumb -->
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Structural Design › Foundations › Shallow Foundations</p>
+
+              <!-- Question number + stem -->
+              <div style="flex: 1;">
+                <p style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--cobalt); font-weight: 500; margin-bottom: 8px;">Question 8</p>
+                <p style="font-size: 15px; line-height: 1.8; font-weight: 400;">
+                  According to the National Building Code of the Philippines (PD 1096), what is the minimum clear ceiling height for habitable rooms in residential buildings?
+                </p>
+              </div>
+
+              <!-- Image/diagram area (when applicable) -->
+              <div style="background: var(--cream); border: 1px dashed var(--border); border-radius: var(--radius-md); padding: 24px; text-align: center; margin-top: 20px; color: var(--text-muted); font-size: 11px;">
+                📐 Image / Diagram area (when question includes visual reference)<br>
+                <span style="font-size: 10px;">Click to zoom · Max-height 280px</span>
+              </div>
+
+              <!-- Confidence rating (learning modes only) -->
+              <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+                <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">How confident are you?</p>
+                <div style="display: flex; gap: 8px;">
+                  <span style="padding: 6px 14px; background: var(--cream); border-radius: 20px; font-size: 11px; color: var(--text-secondary); cursor: pointer;">Guessing</span>
+                  <span style="padding: 6px 14px; background: var(--cobalt-light); border-radius: 20px; font-size: 11px; color: var(--cobalt); font-weight: 500; cursor: pointer;">Somewhat sure</span>
+                  <span style="padding: 6px 14px; background: var(--cream); border-radius: 20px; font-size: 11px; color: var(--text-secondary); cursor: pointer;">Very sure</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ═══ RIGHT COLUMN: OPTIONS + ACTIONS ═══ -->
+            <div style="padding: 32px; display: flex; flex-direction: column;">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Select your answer</p>
+
+              <!-- Answer options -->
+              <div style="flex: 1;">
+                <div class="wireframe-option">
+                  <div class="radio"></div>
+                  <span class="letter">A</span>
+                  <span class="option-text">2.10 meters</span>
+                </div>
+                <div class="wireframe-option selected">
+                  <div class="radio"></div>
+                  <span class="letter">B</span>
+                  <span class="option-text">2.40 meters</span>
+                </div>
+                <div class="wireframe-option">
+                  <div class="radio"></div>
+                  <span class="letter">C</span>
+                  <span class="option-text">2.70 meters</span>
+                </div>
+                <div class="wireframe-option">
+                  <div class="radio"></div>
+                  <span class="letter">D</span>
+                  <span class="option-text">3.00 meters</span>
+                </div>
+              </div>
+
+              <!-- Submit / navigation area -->
+              <div style="padding-top: 20px; border-top: 1px solid var(--border-light); display: flex; align-items: center; justify-content: space-between;">
+                <button class="wireframe-btn wireframe-btn-ghost" style="font-size: 12px;">← Previous</button>
+                <button class="wireframe-btn wireframe-btn-primary" style="padding: 12px 32px;">Submit Answer</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTTOM BAR (mobile-style persistent, also shown on desktop at bottom) -->
+          <div class="wireframe-nav-bottom">
+            <button class="wireframe-btn wireframe-btn-ghost" style="font-size: 12px;">← Previous</button>
+            <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">Q 8 of 20</span>
+            <button class="wireframe-btn wireframe-btn-primary">Submit Answer</button>
+          </div>
+        </div>
+
+        <p class="text-xs text-muted" style="margin-bottom: 24px; text-align: center;">↑ Desktop wireframe — two-column layout is IMMUTABLE above 768px breakpoint</p>
+
+        <!-- ═══ MOBILE STACKED WIREFRAME ═══ -->
+        <h3 style="margin-bottom: 16px;">Question Screen Anatomy — Mobile (Stacked)</h3>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">Below 768px: columns stack vertically. Question on top, options below. This is the ONLY layout variant.</p>
+
+        <div class="wireframe" style="max-width: 375px; margin-bottom: 12px;">
+          <div class="wireframe-header" style="padding: 10px 16px;">
+            <div class="flex items-center gap-12">
+              <span style="font-size: 12px; cursor: pointer; color: var(--text-muted);">✕</span>
+              <div class="wireframe-progress-bar" style="width: 120px;">
+                <div class="wireframe-progress-fill" style="width: 40%;"></div>
+              </div>
+              <span class="font-mono" style="font-size: 10px; color: var(--text-muted);">8/20</span>
+            </div>
+            <div class="flex items-center gap-12">
+              <span style="font-size: 12px; color: var(--text-muted);">⚑</span>
+            </div>
+          </div>
+          <div style="padding: 20px 16px;">
+            <!-- Question (top) -->
+            <p class="font-mono" style="font-size: 8px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">Structural Design › Foundations</p>
+            <p style="font-size: 14px; line-height: 1.7; margin-bottom: 20px;">According to the National Building Code of the Philippines (PD 1096), what is the minimum clear ceiling height for habitable rooms in residential buildings?</p>
+
+            <!-- Options (below) -->
+            <div class="wireframe-option" style="padding: 12px;">
+              <div class="radio" style="width: 16px; height: 16px;"></div>
+              <span class="letter" style="font-size: 10px;">A</span>
+              <span class="option-text" style="font-size: 13px;">2.10 meters</span>
+            </div>
+            <div class="wireframe-option selected" style="padding: 12px;">
+              <div class="radio" style="width: 16px; height: 16px;"></div>
+              <span class="letter" style="font-size: 10px;">B</span>
+              <span class="option-text" style="font-size: 13px;">2.40 meters</span>
+            </div>
+            <div class="wireframe-option" style="padding: 12px;">
+              <div class="radio" style="width: 16px; height: 16px;"></div>
+              <span class="letter" style="font-size: 10px;">C</span>
+              <span class="option-text" style="font-size: 13px;">2.70 meters</span>
+            </div>
+            <div class="wireframe-option" style="padding: 12px;">
+              <div class="radio" style="width: 16px; height: 16px;"></div>
+              <span class="letter" style="font-size: 10px;">D</span>
+              <span class="option-text" style="font-size: 13px;">3.00 meters</span>
+            </div>
+          </div>
+          <!-- Sticky bottom bar -->
+          <div class="wireframe-nav-bottom" style="padding: 10px 16px;">
+            <button class="wireframe-btn wireframe-btn-ghost" style="font-size: 11px;">←</button>
+            <span class="font-mono" style="font-size: 10px; color: var(--text-muted);">Q 8/20</span>
+            <button class="wireframe-btn wireframe-btn-primary" style="font-size: 12px; padding: 10px 20px;">Submit</button>
+          </div>
+        </div>
+        <p class="text-xs text-muted" style="margin-bottom: 32px; text-align: center;">↑ Mobile wireframe — stacked vertically, only below 768px</p>
+
+        <!-- ELEMENT INVENTORY -->
+        <div class="flow-detail-box" style="margin-bottom: 24px;">
+          <h5>Question Screen — Complete Element Inventory (Two-Column Desktop)</h5>
+          <ul>
+            <li><strong>Top bar (full-width, above both columns):</strong> Exit button (✕ Exit), progress bar (4px, Cobalt fill), fraction indicator (DM Mono 11px), mode badge (DM Mono 8px uppercase), timer (per config), bookmark toggle (⚑), palette trigger (▦). Height: 48px.</li>
+            <li><strong>Column split:</strong> CSS Grid — <code>grid-template-columns: 1fr 1fr</code>. Vertical divider: 1px solid border between columns. Both columns independently scrollable if content overflows.</li>
+            <li><strong>LEFT COLUMN contents (top to bottom):</strong></li>
+            <li style="padding-left: 32px;">Topic breadcrumb — DM Mono, 9px, uppercase, muted. Shows taxonomy path: "Structural Design › Foundations › Shallow Foundations"</li>
+            <li style="padding-left: 32px;">Question number — DM Mono, 11px, Cobalt, 500 weight. "Question 8"</li>
+            <li style="padding-left: 32px;">Question stem — Inter, 15px, 400 weight, line-height 1.8. Full column width with 32px padding.</li>
+            <li style="padding-left: 32px;">Image/diagram (conditional) — If question has visual: rendered below stem, max-height 280px, border-radius 10px, click-to-zoom overlay. If no image: area collapses, no placeholder shown.</li>
+            <li style="padding-left: 32px;">Confidence rating (conditional) — Below image or stem. Only if config.feedback.showConfidenceRating === true. Horizontal pills: Guessing / Somewhat sure / Very sure. Separated from stem by 1px border-top.</li>
+            <li><strong>RIGHT COLUMN contents (top to bottom):</strong></li>
+            <li style="padding-left: 32px;">"Select your answer" label — DM Mono, 9px, uppercase, muted.</li>
+            <li style="padding-left: 32px;">Answer options A–D — Stacked vertically. Each row: 48px min-height, full column width, entire row clickable. Radio + letter (DM Mono 11px) + text (Inter 13px). Selected: Cobalt Light bg + Cobalt border. 10px gap between rows.</li>
+            <li style="padding-left: 32px;">Submit/Next button — Below options, separated by 1px border-top + 20px padding. Cobalt primary, 44px height, right-aligned. Disabled (grey) until answer selected.</li>
+            <li style="padding-left: 32px;">Previous button — Left-aligned ghost button, same row as Submit. Hidden if backAllowed === false.</li>
+            <li><strong>Bottom bar (full-width, below both columns):</strong> Redundant navigation for quick access: ← Previous | Q 8 of 20 | Submit →. On mobile this is the ONLY navigation (sticky bottom). On desktop it's secondary — primary actions are within the right column.</li>
+            <li><strong>Column padding:</strong> 32px all sides for desktop. 20px for tablet. On mobile (stacked): 16px horizontal.</li>
+          </ul>
+        </div>
+
+        <!-- ═══ TWO-COLUMN WITH FEEDBACK ═══ -->
+        <div id="comp-feedback"></div>
+        <h3 style="margin-bottom: 16px;">Feedback Panel — Two-Column (Immediate Mode)</h3>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">After submission in immediate feedback modes, the feedback panel appears <strong>in the right column, below the answer options</strong>. The left column (question) remains untouched — the student can reference the question while reading the explanation. The layout does NOT shift.</p>
+
+        <div class="wireframe" style="margin-bottom: 12px;">
+          <!-- TWO-COLUMN WITH FEEDBACK -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; min-height: 480px;">
+
+            <!-- LEFT COLUMN: QUESTION (unchanged after submission) -->
+            <div style="padding: 32px; border-right: 1px solid var(--border); display: flex; flex-direction: column;">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Structural Design › Foundations</p>
+              <p style="font-family: 'DM Mono', monospace; font-size: 11px; color: var(--cobalt); font-weight: 500; margin-bottom: 8px;">Question 8</p>
+              <p style="font-size: 15px; line-height: 1.8;">
+                According to the National Building Code of the Philippines (PD 1096), what is the minimum clear ceiling height for habitable rooms in residential buildings?
+              </p>
+              <div style="flex: 1;"></div>
+              <!-- Confidence shown as "locked in" after submission -->
+              <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border-light);">
+                <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;">Your confidence</p>
+                <span style="padding: 4px 12px; background: var(--cobalt-light); border-radius: 20px; font-size: 11px; color: var(--cobalt); font-weight: 500;">Somewhat sure</span>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: OPTIONS (now annotated) + FEEDBACK PANEL -->
+            <div style="padding: 32px; display: flex; flex-direction: column; overflow-y: auto;">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Your answer</p>
+
+              <!-- Options now show correct/incorrect annotations -->
+              <div class="wireframe-option" style="opacity: 0.5;">
+                <div class="radio"></div>
+                <span class="letter">A</span>
+                <span class="option-text">2.10 meters</span>
+              </div>
+              <div class="wireframe-option" style="border-color: var(--signal-gold); background: var(--amber-bg);">
+                <div class="radio" style="border-color: var(--signal-gold);"></div>
+                <span class="letter" style="color: var(--amber-text);">B</span>
+                <span class="option-text" style="color: var(--amber-text);">2.40 meters</span>
+                <span style="font-size: 11px; color: var(--amber-text);">← You chose</span>
+              </div>
+              <div class="wireframe-option" style="border-color: var(--cobalt); background: var(--cobalt-light);">
+                <div class="radio" style="border-color: var(--cobalt);">
+                  <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--cobalt);"></div>
+                </div>
+                <span class="letter" style="color: var(--cobalt);">C</span>
+                <span class="option-text" style="color: var(--cobalt); font-weight: 500;">2.70 meters</span>
+                <span style="font-size: 11px; color: var(--cobalt);">✓ Correct</span>
+              </div>
+              <div class="wireframe-option" style="opacity: 0.5;">
+                <div class="radio"></div>
+                <span class="letter">D</span>
+                <span class="option-text">3.00 meters</span>
+              </div>
+
+              <!-- Feedback rationale panel (slides in below options) -->
+              <div style="background: var(--amber-bg); border-radius: var(--radius-md); padding: 20px; margin-top: 16px;">
+                <div class="flex items-center gap-8" style="margin-bottom: 10px;">
+                  <span style="font-size: 16px;">→</span>
+                  <span style="font-weight: 600; font-size: 13px; color: var(--amber-text);">Not quite — let's look at this</span>
+                </div>
+                <p style="font-size: 12.5px; line-height: 1.7; color: var(--text-secondary);">
+                  <strong>You chose 2.40m</strong> — this is actually the minimum for <em>non-habitable</em> rooms (storage, utility). The exam frequently tests this distinction. Habitable rooms require 2.70 meters per PD 1096 Section 805.
+                </p>
+                <div style="margin-top: 12px;">
+                  <a style="font-size: 11px; color: var(--cobalt);">📖 PD 1096 Rule VII in Wiki →</a>
+                </div>
+              </div>
+
+              <!-- Next button (appears after feedback, gated 3s delay) -->
+              <div style="padding-top: 16px; display: flex; justify-content: flex-end;">
+                <button class="wireframe-btn wireframe-btn-primary" style="padding: 12px 32px;">Next Question →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-muted" style="margin-bottom: 24px; text-align: center;">↑ After submission — feedback appears in the RIGHT column. Left column (question) stays put. Zero layout shift.</p>
+
+        <!-- ═══ CORRECT ANSWER FEEDBACK VARIANT ═══ -->
+        <h4 style="margin-bottom: 12px;">Correct Answer Feedback (Right Column)</h4>
+        <div class="wireframe" style="max-width: 500px; margin-bottom: 24px;">
+          <div style="padding: 24px;">
+            <!-- Options annotated for correct -->
+            <div class="wireframe-option" style="border-color: var(--cobalt); background: var(--cobalt-light);">
+              <div class="radio" style="border-color: var(--cobalt);">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: var(--cobalt);"></div>
+              </div>
+              <span class="letter" style="color: var(--cobalt);">C</span>
+              <span class="option-text" style="color: var(--cobalt); font-weight: 500;">2.70 meters</span>
+              <span style="font-size: 11px; color: var(--cobalt);">✓ Correct</span>
+            </div>
+
+            <!-- Feedback rationale -->
+            <div style="background: var(--cobalt-light); border-radius: var(--radius-md); padding: 20px; margin-top: 16px;">
+              <div class="flex items-center gap-8" style="margin-bottom: 10px;">
+                <span style="font-size: 16px;">✓</span>
+                <span style="font-weight: 600; font-size: 13px; color: var(--cobalt);">Correct — nice work</span>
+              </div>
+              <p style="font-size: 12.5px; line-height: 1.7; color: var(--text-secondary);">
+                The minimum ceiling height for habitable rooms is 2.70 meters as per PD 1096, Rule VII, Section 805. Non-habitable rooms like storage and utility areas require a minimum of 2.40 meters.
+              </p>
+              <div style="margin-top: 12px;">
+                <a style="font-size: 11px; color: var(--cobalt);">📖 Read more in SlateCamp Wiki →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="margin-bottom: 32px;">
+          <strong>No-Red design in action:</strong> Wrong answers use <strong>amber/warm tones</strong> (#FEF9E7 background, #92400E text), never red. The icon is a directional arrow (→) pointing toward the correct answer, not an X mark. The heading says "Not quite — let's look at this" — growth mindset language. The rationale addresses the specific wrong answer: "You chose X — this is actually..." to correct the exact mental model error. Correct answers use <strong>Cobalt Blue</strong> — consistent with the brand, not green.
+        </div>
+
+        <!-- ═══ TWO-COLUMN WITH DEFERRED FEEDBACK (EXAM MODES) ═══ -->
+        <h3 style="margin-bottom: 16px;">Deferred Feedback — Two-Column (Exam Modes)</h3>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">In Storm and Full Exam Simulation, no feedback appears in the right column. After selecting an answer, a brief toast confirms recording and the right column resets for the next question. The two-column layout remains identical.</p>
+
+        <div class="wireframe" style="max-width: 500px; margin-bottom: 12px;">
+          <div style="padding: 32px; text-align: center;">
+            <div style="display: inline-flex; align-items: center; gap: 8px; background: var(--cream); padding: 10px 20px; border-radius: 24px;">
+              <span style="color: var(--cobalt); font-size: 14px;">✓</span>
+              <span style="font-size: 13px; font-weight: 500;">Answer recorded</span>
+            </div>
+            <p class="text-xs text-muted" style="margin-top: 8px;">Auto-advances in 1.5 seconds</p>
+          </div>
+        </div>
+        <p class="text-xs text-muted" style="margin-bottom: 32px; text-align: center;">↑ Toast appears centered in the right column, then auto-dismisses. Left column loads next question simultaneously.</p>
+
+        <!-- TWO-COLUMN SPEC TABLE -->
+        <h3 style="margin-bottom: 16px;">Two-Column Layout Specifications</h3>
+        <div style="overflow-x: auto;">
+          <table class="config-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Desktop (≥1024px)</th>
+                <th>Tablet (768–1023px)</th>
+                <th>Mobile (&lt;768px)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Layout</td>
+                <td>Two columns, 50/50</td>
+                <td>Two columns, 50/50</td>
+                <td>Single column, stacked</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Column divider</td>
+                <td>1px solid var(--border)</td>
+                <td>1px solid var(--border)</td>
+                <td>None (16px gap)</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Column padding</td>
+                <td>32px all sides</td>
+                <td>24px all sides</td>
+                <td>16px horizontal, 20px vertical</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Question stem font</td>
+                <td>15px / line-height 1.8</td>
+                <td>14px / line-height 1.7</td>
+                <td>14px / line-height 1.7</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Option row height</td>
+                <td>48px min</td>
+                <td>48px min</td>
+                <td>52px min (larger touch target)</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Submit button position</td>
+                <td>Right column, bottom-right</td>
+                <td>Right column, bottom-right</td>
+                <td>Sticky bottom bar</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Feedback panel position</td>
+                <td>Right column, below options</td>
+                <td>Right column, below options</td>
+                <td>Below options (scrollable)</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Column scroll</td>
+                <td>Each column scrolls independently</td>
+                <td>Each column scrolls independently</td>
+                <td>Single page scroll</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Image/diagram</td>
+                <td>Left column, below stem</td>
+                <td>Left column, below stem</td>
+                <td>Above question stem</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Navigation buttons</td>
+                <td>Within right column + bottom bar</td>
+                <td>Within right column + bottom bar</td>
+                <td>Sticky bottom bar only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 6: SUBMISSION FLOW
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-submit">
+        <p class="eyebrow eyebrow-purple">Section 06</p>
+        <h2>Universal Flow: Submission</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">What happens when the user reaches the last question or manually ends the session.</p>
+
+        <div class="flow-container">
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">S1</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Last Question Answered</div>
+              <div class="flow-step-desc">After answering the final question, the "Next" button text changes to "Finish Session →" (learning modes) or "Submit Exam →" (exam modes). Visual treatment: orange accent on the button to signal finality.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number amber">S2</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Pre-Submission Review Screen (Exam Modes Only)</div>
+              <div class="flow-step-desc">For Storm, Full Exam, and Extended: a full-screen summary appears showing all questions in a grid. Each cell shows answered/unanswered/flagged status. User can tap any cell to jump back to that question.</div>
+              <div class="flow-detail-box">
+                <h5>Pre-submission screen elements</h5>
+                <ul>
+                  <li>"Review Your Answers" heading (H2, Syne 800)</li>
+                  <li>Summary stats: "48 answered · 2 unanswered · 3 flagged" (DM Mono, 11px)</li>
+                  <li>Question grid: 10 columns, cells are 36×36px with number. Colors: Cobalt (answered), Grey border (unanswered), Orange (flagged)</li>
+                  <li>"Show unanswered only" / "Show flagged only" filter pills</li>
+                  <li>Tapping a cell jumps back to that question — user can change their answer, then return here</li>
+                  <li>"Submit Exam" primary CTA + "Keep Reviewing" secondary</li>
+                  <li>For Full Exam Sim: "⚠ Once submitted, you cannot change answers. Your results will be available in 24 hours." warning in amber box</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number green">S3</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Submission Confirmation Modal</div>
+              <div class="flow-step-desc">A centered modal asks for final confirmation. Learning modes: "End this session? Your progress is saved." with "End Session" + "Keep Going" buttons. Exam modes: "Submit your exam? This cannot be undone." with "Submit Exam" (destructive style, but amber not red) + "Go Back" buttons.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number green">S4</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Processing Animation (500–800ms)</div>
+              <div class="flow-step-desc">Full-screen overlay with the SlateCamp logo mark + "Calculating your results..." text. This is an emotional buffer — it separates the stress of answering from the score reveal. Not a loading spinner — a deliberate breath.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number green">S5</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">→ Results Dashboard (or Delayed Confirmation)</div>
+              <div class="flow-step-desc">For all modes except Full Exam Sim: proceeds directly to the Results Dashboard. For Full Exam Sim: shows "Your exam has been submitted. Results will be available in 24 hours. We'll send a push notification." with a CTA to return to the dashboard.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 7: RESULTS DASHBOARD
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-results">
+        <p class="eyebrow" style="color: var(--signal-green);">Section 07</p>
+        <h2>Universal Flow: Results Dashboard</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">The score reveal is the most emotionally charged screen in the product. It must transform anxiety into direction.</p>
+
+        <div class="wireframe" style="max-width: 500px; margin-bottom: 24px;">
+          <div class="wireframe-header">
+            <span style="font-size: 13px; font-weight: 500;">Session Complete</span>
+            <span style="font-size: 13px; cursor: pointer;">✕</span>
+          </div>
+          <div class="wireframe-body" style="text-align: center; padding: 32px 24px;">
+            <!-- Score headline -->
+            <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 12px;">Your Score</p>
+            <div style="font-family: 'DM Mono', monospace; font-size: 56px; font-weight: 500; color: var(--cobalt); margin-bottom: 4px;">
+              17<span style="font-size: 28px; color: var(--text-muted);">/20</span>
+            </div>
+            <p style="font-size: 14px; font-weight: 500; color: var(--signal-green); margin-bottom: 4px;">85% — Passing</p>
+            <p class="text-xs text-muted" style="margin-bottom: 24px;">▲ +8% from your last session on this topic</p>
+
+            <!-- Subject breakdown -->
+            <div style="text-align: left; padding: 16px; background: var(--cream); border-radius: var(--radius-md); margin-bottom: 20px;">
+              <p class="font-mono" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px;">Performance Breakdown</p>
+
+              <div style="margin-bottom: 12px;">
+                <div class="flex justify-between items-center" style="margin-bottom: 4px;">
+                  <span class="text-sm">Structural Systems</span>
+                  <span class="font-mono text-xs">8/10</span>
+                </div>
+                <div class="wireframe-progress-bar"><div class="wireframe-progress-fill" style="width: 80%;"></div></div>
+              </div>
+
+              <div style="margin-bottom: 12px;">
+                <div class="flex justify-between items-center" style="margin-bottom: 4px;">
+                  <span class="text-sm">Building Laws</span>
+                  <span class="font-mono text-xs">5/6</span>
+                </div>
+                <div class="wireframe-progress-bar"><div class="wireframe-progress-fill" style="width: 83%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center" style="margin-bottom: 4px;">
+                  <span class="text-sm">Utilities</span>
+                  <span class="font-mono text-xs">4/4</span>
+                </div>
+                <div class="wireframe-progress-bar"><div class="wireframe-progress-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+
+            <!-- Readiness score impact -->
+            <div style="text-align: left; padding: 16px; background: var(--cobalt-light); border-radius: var(--radius-md); margin-bottom: 24px;">
+              <div class="flex items-center gap-8">
+                <span class="font-mono" style="font-size: 28px; font-weight: 500; color: var(--cobalt);">72</span>
+                <div>
+                  <p class="font-mono" style="font-size: 9px; color: var(--cobalt); text-transform: uppercase; letter-spacing: 0.1em;">Readiness Score</p>
+                  <p class="text-xs text-muted">▲ +2 from this session</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <button class="wireframe-btn wireframe-btn-primary" style="width: 100%; padding: 14px; margin-bottom: 8px;">Review Your Answers</button>
+            <button class="wireframe-btn wireframe-btn-secondary" style="width: 100%; padding: 12px; margin-bottom: 8px;">Practice Missed Questions (3)</button>
+            <button class="wireframe-btn wireframe-btn-ghost" style="width: 100%; padding: 10px;">Back to Dashboard</button>
+          </div>
+        </div>
+
+        <div class="flow-detail-box">
+          <h5>Results Dashboard — Complete Element Inventory</h5>
+          <ul>
+            <li><strong>Score number:</strong> DM Mono, 56px, Cobalt. Count-up animation from 0 over 1.5 seconds. Fraction format "17/20" with denominator at 28px, muted.</li>
+            <li><strong>Pass/fail line:</strong> 14px, 500 weight. ≥70% = Green text "Passing". 40–69% = neutral (charcoal) "Building". &lt;40% = neutral "Needs review". NEVER red text.</li>
+            <li><strong>Growth delta:</strong> "▲ +8% from your last session on this topic" — only shown if historical data exists. Green arrow for improvement. Neutral for same. No downward red arrows — use "–3% — let's focus here" in neutral tone.</li>
+            <li><strong>Subject breakdown:</strong> Cream background card. Each subject: name + fraction + progress bar. Sorted by performance (worst first = blindspot-first).</li>
+            <li><strong>Readiness Score impact:</strong> Cobalt Light card. Shows current score + delta from this session. This connects the individual session to the larger mastery arc.</li>
+            <li><strong>Primary CTA:</strong> "Review Your Answers" — this is the most important action. Full-width, Cobalt.</li>
+            <li><strong>Secondary CTA:</strong> "Practice Missed Questions (3)" — auto-generates a Focused Review with only missed Qs. Shows count in parentheses.</li>
+            <li><strong>Tertiary:</strong> "Back to Dashboard" — ghost link.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 8: REVIEW FLOW
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-review">
+        <p class="eyebrow" style="color: var(--signal-green);">Section 08</p>
+        <h2>Universal Flow: Question-by-Question Review</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">Accessed from the Results Dashboard "Review Your Answers" CTA. Uses the same quiz shell but in read-only review mode with all feedback visible.</p>
+
+        <div class="flow-container">
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">R1</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Review Shell Loads</div>
+              <div class="flow-step-desc">Same two-column quiz shell, but in read-only review mode with a "REVIEW" badge in the header. Left column shows the question. Right column shows all options annotated with correct/incorrect markers plus the full rationale — all visible simultaneously. All questions accessible via free navigation. No timer. No submit button.</div>
+              <div class="flow-detail-box">
+                <h5>Review mode UI differences (still two-column)</h5>
+                <ul>
+                  <li>Header badge: "REVIEW" in DM Mono uppercase, amber background</li>
+                  <li>LEFT COLUMN: Question stem + image (if any) + "Your confidence: Somewhat sure" locked state</li>
+                  <li>RIGHT COLUMN: Options annotated (✓ Correct on right answer, → You chose on wrong answer) + full rationale panel always expanded + Wiki link</li>
+                  <li>Question palette: always visible, showing correct (blue fill) / incorrect (amber fill) / skipped (grey outline)</li>
+                  <li>Filter pills below palette: "All" | "Incorrect only" | "Flagged" | "Low confidence"</li>
+                  <li>Bottom bar: ← Previous | Q 8/20 | Next → (no submit, just navigation)</li>
+                  <li>Two-column layout MAINTAINED — question stays left, review content stays right</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number blue">R2</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">User Navigates Through Questions</div>
+              <div class="flow-step-desc">User can go forward, backward, or jump via palette. Most users go to incorrect questions first (the filter helps). Each question is a complete learning card: stem + options with annotations + explanation + wiki link.</div>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <div class="flow-step-indicator">
+              <div class="flow-step-number green">R3</div>
+              <div class="flow-step-line"></div>
+            </div>
+            <div class="flow-step-content">
+              <div class="flow-step-title">Exit Review</div>
+              <div class="flow-step-desc">User taps ✕ in the header or reaches the last question and taps "Finish Review." Returns to the Results Dashboard. From there: "Practice Missed Questions" or "Back to Dashboard."</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 9: EXIT PATTERNS
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="universal-exit">
+        <p class="eyebrow eyebrow-blue">Section 09</p>
+        <h2>Universal Flow: Exit Patterns</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 24px;">How does a user leave a quiz session? Every exit path must be deliberate — no accidental data loss.</p>
+
+        <div class="grid-2" style="margin-bottom: 24px;">
+          <div class="card">
+            <h5 style="margin-bottom: 8px;">Mid-Session Exit (Learning Modes)</h5>
+            <p class="text-sm text-muted" style="margin-bottom: 12px;">User taps ✕ in the header during a Camp, Chill, Subject, Focused, or Extended session.</p>
+            <div style="font-size: 13px; line-height: 1.8;">
+              <strong>1.</strong> Confirmation modal appears: "End this session?"<br>
+              <strong>2.</strong> Body text: "You've answered 12 of 20 questions. Your progress is saved — you can pick up where you left off."<br>
+              <strong>3.</strong> Actions: <span style="color: var(--cobalt); font-weight: 500;">"End & See Results"</span> (primary) + <span style="color: var(--text-muted);">"Keep Going"</span> (ghost)<br>
+              <strong>4.</strong> If "End & See Results": shows Results Dashboard for the 12 answered questions<br>
+              <strong>5.</strong> Session state saved to server — user can resume if they return within 24 hours
+            </div>
+          </div>
+
+          <div class="card">
+            <h5 style="margin-bottom: 8px;">Mid-Session Exit (Exam Modes)</h5>
+            <p class="text-sm text-muted" style="margin-bottom: 12px;">User taps ✕ in the header during a Storm, Full Exam, or timed Custom session.</p>
+            <div style="font-size: 13px; line-height: 1.8;">
+              <strong>1.</strong> Confirmation modal appears: "Leave this exam?"<br>
+              <strong>2.</strong> Body text: "Leaving will pause your timer. You can resume within 30 minutes — after that, the session auto-submits."<br>
+              <strong>3.</strong> Actions: <span style="color: var(--camp-orange); font-weight: 500;">"Pause & Leave"</span> (secondary amber) + <span style="color: var(--cobalt); font-weight: 500;">"Continue Exam"</span> (primary)<br>
+              <strong>4.</strong> Note: "Continue Exam" is the primary CTA — we nudge the user to stay, not quit<br>
+              <strong>5.</strong> Auto-submit after 30min timeout with push notification: "Your exam was auto-submitted."
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 24px;">
+          <h5 style="margin-bottom: 8px;">Session Resume Flow</h5>
+          <p class="text-sm text-muted" style="margin-bottom: 12px;">When a user returns to SlateCamp with an incomplete session:</p>
+          <div style="font-size: 13px; line-height: 1.8;">
+            <strong>Dashboard banner:</strong> "You have an unfinished session" card appears at the top of the dashboard.<br>
+            <strong>Banner content:</strong> Mode badge + "Structural Systems · 12/20 answered · Started 2 hours ago"<br>
+            <strong>Banner CTAs:</strong> <span style="color: var(--cobalt); font-weight: 500;">"Resume"</span> (primary) + <span style="color: var(--text-muted);">"Discard"</span> (ghost, with confirmation modal)<br>
+            <strong>Resume behavior:</strong> Opens quiz shell at question 13 (the next unanswered). Timer resumes from where it paused (exam modes).<br>
+            <strong>Expiry:</strong> Learning mode sessions expire after 24 hours. Exam mode sessions expire after 30 minutes. After expiry: auto-submit with available answers.
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 10: PER-MODE DETAILED FLOWS
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="mode-camp">
+        <p class="eyebrow eyebrow-blue">Section 10</p>
+        <h2>Per-Mode Detailed Flows</h2>
+        <div class="spacer-sm"></div>
+        <p class="text-sm text-muted" style="margin-bottom: 32px;">Every mode documented step by step — from tap to completion. Each flow uses the universal shell with its specific config flags.</p>
+
+        <!-- ═══ CAMP MODE ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--cobalt);">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-blue">🏕 Camp Mode</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">The guided learning path. Instant feedback, full explanations, no pressure.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Daily structured learning via the Camp Trail. Optimized for schema building and long-term retention.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number blue">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User taps "Start Day 14" on Dashboard or Camp Trail</div>
+                <div class="flow-step-desc">The Camp Trail algorithm has pre-configured today's session: topic, question count, and difficulty. User does NOT choose these — the trail chooses for them.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number blue">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Session Confirmation</div>
+                <div class="flow-step-desc">Shows: "Day 14 — Structural Systems · 20 questions · ~15 min." Question count is adjustable (±5 range) but defaults are trail-optimized. CTA: "Begin Session →"</div>
+                <div class="flow-detail-box">
+                  <h5>Camp-specific slide 1 details</h5>
+                  <ul>
+                    <li>Trail day number prominent ("Day 14" in H3)</li>
+                    <li>Topic pre-filled from trail algorithm — not user-selectable</li>
+                    <li>Count adjustable: default 20, range 10–30, step 5</li>
+                    <li>"Change mode" link at bottom for users who want a different experience</li>
+                    <li>No Slide 2 or Slide 3 — goes directly to quiz shell</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Linear, Immediate Feedback)</div>
+                <div class="flow-step-desc">User sees question → selects answer → optionally rates confidence → taps "Submit Answer" → feedback panel slides up with rationale + wiki link → taps "Next Question →" → next question loads.</div>
+                <div class="flow-detail-box">
+                  <h5>Camp Mode quiz behavior</h5>
+                  <ul>
+                    <li>Timer: HIDDEN. No timer element rendered.</li>
+                    <li>Feedback: IMMEDIATE. Panel appears after each submission.</li>
+                    <li>Explanations: FULL with Wiki link.</li>
+                    <li>Navigation: LINEAR. No back button. No palette. No skip.</li>
+                    <li>Confidence rating: VISIBLE. "Guessing / Somewhat sure / Very sure" pills.</li>
+                    <li>Difficulty: ADAPTIVE. Targets 85% accuracy. If user gets 5 correct in a row, difficulty increases. If user gets 3 wrong in 5, difficulty decreases.</li>
+                    <li>Bookmark: NOT AVAILABLE (linear mode doesn't need it).</li>
+                    <li>Next button: GATED. Appears 3 seconds after feedback panel, fades in. No visible countdown — button simply materializes. This forces the user to read the rationale for at least 3 seconds.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Last Question → "Finish Session →"</div>
+                <div class="flow-step-desc">After the final question's feedback, button text changes to "Finish Session →". No pre-submission review (not needed — user already saw all feedback).</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Processing → Results Dashboard</div>
+                <div class="flow-step-desc">500ms processing animation → Results Dashboard with score, breakdown, Readiness Score delta, and "Day 14 Complete ✓" marker. Camp Trail automatically unlocks Day 15.</div>
+                <div class="flow-detail-box">
+                  <h5>Camp-specific results additions</h5>
+                  <ul>
+                    <li>"Day 14 Complete" badge with trail progress bar showing day position</li>
+                    <li>"Day 15 Unlocked: Building Laws — Accessibility (BP 344)" preview card</li>
+                    <li>Primary CTA: "Review Your Answers"</li>
+                    <li>Secondary: "Start Day 15 →" (if user has momentum)</li>
+                    <li>Tertiary: "Back to Trail"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ CHILL MODE ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--signal-green);" id="mode-chill">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-green">😌 Chill Mode</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">Browse at your own pace. Skip freely. Low stakes.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Casual exploration when the user doesn't want structure. Good for first-time users exploring the question bank.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User selects Chill Mode from Mode Selector</div>
+                <div class="flow-step-desc">Chill Mode card shows: "Browse questions at your own pace. Skip any you want."</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Minimal Confirmation</div>
+                <div class="flow-step-desc">"Chill Mode · 10 questions · Mixed topics · Instant feedback." Count adjustable (5–50, step 5). No topic picker. No Slide 2 or 3. CTA: "Let's Go →"</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Free Nav, Immediate Feedback)</div>
+                <div class="flow-step-desc">Same shell but with maximum freedom: skip button, back button, and free navigation. No confidence rating (low stakes). Feedback is immediate but brief (no wiki link — keeps it casual).</div>
+                <div class="flow-detail-box">
+                  <h5>Chill Mode quiz behavior</h5>
+                  <ul>
+                    <li>Timer: HIDDEN.</li>
+                    <li>Feedback: IMMEDIATE. Brief explanations (40–60 words).</li>
+                    <li>Navigation: FREE. Back allowed. Skip allowed via "Skip →" ghost button.</li>
+                    <li>Question palette: NOT SHOWN (session is short, not needed).</li>
+                    <li>Confidence rating: NOT SHOWN.</li>
+                    <li>Difficulty: MIXED (no adaptive — random sampling).</li>
+                    <li>Next button: NOT GATED. Appears immediately after feedback. User can skip through quickly.</li>
+                    <li>Bottom bar: "← Back" | "Q 5/10" | "Skip →" (ghost) or "Next →" (primary, after answer)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Finish → Light Results</div>
+                <div class="flow-step-desc">Lighter results screen: score fraction, no subject breakdown (topics were random), no Readiness Score impact (Chill doesn't affect mastery metrics — it's casual). CTA: "Try another round" + "Back to Dashboard."</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ SUBJECT MODE ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--trail-purple);" id="mode-subject">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-purple">📚 Subject Mode</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">Deep-dive into one ALE subject. Adaptive difficulty.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Focused mastery building on a specific discipline. Questions are matched to the user's current level and adapt in real-time.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Entry: Mode Selector OR Heatmap node tap</div>
+                <div class="flow-step-desc">If from Heatmap: subject is pre-selected. If from Mode Selector: proceeds to Slide 2 for subject selection.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Session Confirmation with count</div>
+                <div class="flow-step-desc">"Subject Mode · [Subject Name] · 25 questions · Adaptive." Count adjustable (10–50, step 5). Estimated time shown.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 2: Subject & Topic Picker</div>
+                <div class="flow-step-desc">Only shown if subject wasn't pre-selected. User picks ONE subject (single-select). Can optionally drill into specific topics within that subject. Mastery indicators shown for each.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Linear, Immediate, Adaptive)</div>
+                <div class="flow-step-desc">Identical to Camp Mode behavior but with adaptive difficulty engine active. Questions get harder as user demonstrates mastery, easier when struggling. Targets 85% accuracy.</div>
+                <div class="flow-detail-box">
+                  <h5>Subject Mode specific behaviors</h5>
+                  <ul>
+                    <li>All Camp Mode behaviors apply (linear, immediate, confidence, gated next)</li>
+                    <li>Difficulty: ADAPTIVE in real-time. Visual indicator: subtle difficulty badge on question stem ("Easy" / "Medium" / "Hard" in DM Mono 9px, muted)</li>
+                    <li>Topic tags visible on each question: "Foundations > Shallow Foundations" breadcrumb in DM Mono 9px</li>
+                    <li>Wiki links in feedback are subject-specific and deep-linked to the exact taxonomy node</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Results → Full subject breakdown + mastery delta</div>
+                <div class="flow-step-desc">Results Dashboard with topic-level breakdown (since all questions are from one subject). Readiness Score impacted. Heatmap node colors update.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ FOCUSED REVIEW ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--camp-orange);" id="mode-focused">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-orange">🎯 Focused Review</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">Target your weak spots. Questions from your blindspots.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Remediation. Pulls questions specifically from topics where the user has demonstrated weakness. The "Blindspot Protocol" mode.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number orange">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Entry: Heatmap red/amber node OR "Practice Missed Questions" from Results</div>
+                <div class="flow-step-desc">Most common entry is post-quiz "Practice Missed Questions (3)" CTA, which pre-loads the exact missed questions. Second most common: tapping a red node on the Heatmap.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number orange">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Confirmation with blindspot context</div>
+                <div class="flow-step-desc">"Focused Review · Foundations (Structural Design) · 15 questions · Your weakest topics." Shows which specific topics will be covered. Count adjustable (5–25, step 5).</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number orange">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 2: Topic Picker (pre-filled with weak topics)</div>
+                <div class="flow-step-desc">Like Subject Mode Slide 2 but the weakest topics are PRE-SELECTED. User can add or remove topics. Default selection is the "Blindspot Protocol" algorithm output.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Linear, Immediate, Adaptive, Wiki-deep)</div>
+                <div class="flow-step-desc">Same as Subject Mode but with longer explanations. Feedback includes "Why this is tricky" sections and related question patterns. Designed for deep understanding, not speed.</div>
+                <div class="flow-detail-box">
+                  <h5>Focused Review specific behaviors</h5>
+                  <ul>
+                    <li>All Subject Mode behaviors apply</li>
+                    <li>Explanations: FULL + "Why this is tricky" callout + "Related pattern" note</li>
+                    <li>Difficulty: ADAPTIVE but starting lower than Subject Mode (user is in remediation — start easier, build up)</li>
+                    <li>Gated next: 4-second delay (longer than Camp's 3s) to ensure deeper reading</li>
+                    <li>After each wrong answer: "This concept appears ~3 times per exam" — helps user prioritize</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Results → Blindspot progress emphasis</div>
+                <div class="flow-step-desc">Results Dashboard highlights blindspot closure: "You moved 2 topics from Red → Amber." Readiness Score impacted. Heatmap nodes update. CTA: "Continue targeting blindspots" for another Focused Review round.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ CUSTOM SESSION ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--trail-purple);" id="mode-custom">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-purple">⚙ Custom Session</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">Full control. Pick everything yourself.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Power users who want exact control over topics, difficulty, feedback style, timer, and navigation. The "build your own exam" mode.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User selects Custom Session from Mode Selector</div>
+                <div class="flow-step-desc">Card shows: "Full control. Pick topics, difficulty, question count, and feedback style."</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Session Confirmation + Count</div>
+                <div class="flow-step-desc">Shows current config summary. Count fully adjustable (5–200, step 5). "Customize →" prominent link.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 2: Subject & Topic Picker (Multi-select)</div>
+                <div class="flow-step-desc">Unlike Subject Mode (single-select), Custom allows MULTIPLE subjects and topics. All are deselected by default. User builds their own question pool.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 3: Advanced Configuration</div>
+                <div class="flow-step-desc">Toggle switches for: Instant feedback (on/off), Timer (on/off + duration if on), Free navigation (on/off), Question palette (on/off). Difficulty selector (Easy/Medium/Hard/Mixed). Preset shortcuts to copy Storm or Camp settings.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (User-configured behavior)</div>
+                <div class="flow-step-desc">Shell renders based on user's exact configuration. Every flag comes from what they set in Slide 3. The shell code doesn't know it's "Custom" — it just reads the config object.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">6</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Results → Standard dashboard</div>
+                <div class="flow-step-desc">Full Results Dashboard with all breakdowns. Readiness Score impacted. "Save this configuration" option to re-use the same custom setup later.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ STORM MODE ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--cobalt-dark);" id="mode-storm">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-dark">⚡ Storm Mode</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">Exam conditions. No feedback until done. Timer runs as a bar.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Simulated exam pressure. Tests retrieval under time constraint without the full 200-question commitment. The "scrimmage" before the "game."</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number gray">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User selects Storm Mode</div>
+                <div class="flow-step-desc">Card shows: "Exam conditions. 50 questions. Timer runs as a bar, not a countdown." The bar-not-countdown distinction is a key anxiety reducer.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number gray">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Session Confirmation</div>
+                <div class="flow-step-desc">"Storm Mode · 50 questions · Mixed topics · ~60 min." Count adjustable (25–100, step 25). One readiness prompt: "This simulates real exam conditions. No feedback during the exam. Ready?" CTA: "Start Storm →"</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number gray">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Free Nav, Deferred Feedback, Timer Bar)</div>
+                <div class="flow-step-desc">The exam simulation experience. User answers questions freely, can jump around, bookmark, and skip. No feedback shown. Timer runs as a progress bar (not a countdown number).</div>
+                <div class="flow-detail-box">
+                  <h5>Storm Mode quiz behavior</h5>
+                  <ul>
+                    <li>Timer: VISIBLE as progress bar. 4px bar at top of screen, fills from left to right. Color: Cobalt (normal) → Amber (75% elapsed) → stays Amber (no red). Time remaining visible on hover/tap of bar, not persistent.</li>
+                    <li>Feedback: DEFERRED. Only "Answer recorded ✓" toast after each submission.</li>
+                    <li>Navigation: FREE. Back allowed. Skip allowed. Question palette available.</li>
+                    <li>Bookmark/Flag: AVAILABLE. Essential for exam strategy.</li>
+                    <li>Difficulty: EXAM-WEIGHTED. Mirrors actual ALE difficulty distribution.</li>
+                    <li>Answer elimination: Strikethrough available — user can tap and hold an option to strike it out (mimics exam strategy).</li>
+                    <li>Confidence rating: NOT SHOWN.</li>
+                    <li>Micro-break prompt: At question 25, a subtle card slides up: "Halfway there. Take a breath." Auto-dismisses in 5 seconds or on tap.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number amber">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Pre-Submission Review Screen</div>
+                <div class="flow-step-desc">Shows question grid with answered/unanswered/flagged status. User can jump back to any question. "Submit Storm →" + "Keep Reviewing" CTAs.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Results → Full dashboard with "now review everything"</div>
+                <div class="flow-step-desc">Score + breakdown + Readiness Score delta. Emphasis on "Review Your Answers" CTA — this is where the actual learning happens (retrieval practice was during the exam, correction happens in review).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ FULL EXAM SIMULATION ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--signal-gold);" id="mode-fullexam">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-amber">📝 Full Exam Simulation</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">200 questions. Real exam conditions. Score delivered in 24 hours.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: The ultimate test. Mirrors the actual ALE as closely as possible. The 24-hour delay simulates waiting for real exam results. This is the "Proof Simulation" — the final confidence check.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number amber">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User selects Full Exam Simulation</div>
+                <div class="flow-step-desc">Card shows: "200 questions. Real exam conditions. Your score is delivered 24 hours later." This mode appears with a subtle glow/emphasis — it's the capstone experience.</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number amber">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Commitment Confirmation</div>
+                <div class="flow-step-desc">More serious tone: "This is your Proof Simulation — 200 questions under real ALE conditions. Set aside 4–5 hours. No feedback during the exam. Your score arrives in 24 hours." Count is FIXED at 200 — no stepper. CTA: "I'm ready. Begin exam." Secondary: "Not today — go back."</div>
+                <div class="flow-detail-box">
+                  <h5>Full Exam-specific setup details</h5>
+                  <ul>
+                    <li>No count adjustment — always 200</li>
+                    <li>No topic selection — exam covers all subjects in ALE-weighted distribution</li>
+                    <li>Environmental check: "Make sure you have: quiet space, 4–5 hours, charged device, water"</li>
+                    <li>Lock screen warning: "Leaving the app will pause your timer. You have 30 minutes to return."</li>
+                    <li>CTA uses camp-orange to signal high importance: "I'm Ready"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number gray">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Full exam behavior)</div>
+                <div class="flow-step-desc">Same as Storm Mode but with 200 questions, a real countdown timer, and micro-break prompts every 50 questions. Question palette is essential for navigating 200 questions.</div>
+                <div class="flow-detail-box">
+                  <h5>Full Exam quiz behavior</h5>
+                  <ul>
+                    <li>Timer: VISIBLE as countdown. "3:42:15 remaining" in DM Mono 11px, top-right. Color: Cobalt (normal) → Amber (&lt;30 min) → stays Amber (&lt;5 min, blinks gently). NEVER red.</li>
+                    <li>Feedback: NONE. No toast, no indication of correctness. Just advances to next question.</li>
+                    <li>Navigation: FREE with full palette (essential for 200 Qs).</li>
+                    <li>Micro-break prompts: At Q50, Q100, Q150: "You've completed [X] questions. Stand and stretch for 30 seconds." with a 30-second countdown and "Continue" button.</li>
+                    <li>Answer elimination: Strikethrough available.</li>
+                    <li>Bookmark/Flag: Available and heavily used (students flag uncertain answers for review before submission).</li>
+                    <li>Auto-save: Every answer is saved to server in real-time. If connection drops, user sees "Offline — answers saved locally" banner.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number amber">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Pre-Submission Review Screen (Critical)</div>
+                <div class="flow-step-desc">Same as Storm's pre-submission but scaled for 200 questions. Grid shows 20 columns × 10 rows. Prominent warning: "Once submitted, this cannot be undone. Your results will be delivered in 24 hours."</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">5</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Post-Submission Confirmation (NOT Results)</div>
+                <div class="flow-step-desc">Full-screen: "Your Proof Simulation has been submitted. ✓" Below: "Your results will be delivered in 24 hours. We'll send a notification." Emotional care: "Take a breath. You just sat through 200 questions. That takes real endurance — well done." CTA: "Back to Dashboard"</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">6</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">24 Hours Later → Score Notification + Results</div>
+                <div class="flow-step-desc">Push notification: "Your Proof Simulation results are ready." Deep-links to a dedicated Results Dashboard with the full 200-question breakdown, subject scores, predicted ALE performance range, and the full question-by-question review.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ EXTENDED PRACTICE ═══ -->
+        <div class="card" style="margin-bottom: 32px; border-left: 3px solid var(--cobalt);" id="mode-extended">
+          <div class="flex items-center gap-12" style="margin-bottom: 4px;">
+            <span class="badge badge-blue">🏋 Extended Practice</span>
+          </div>
+          <p class="text-sm" style="font-weight: 600; margin-bottom: 4px;">100+ questions. Build cognitive stamina.</p>
+          <p class="text-xs text-muted" style="margin-bottom: 20px;">Purpose: Endurance training. The ALE is a marathon, not a sprint. This mode builds the stamina to maintain focus over 100+ questions with instant feedback so the user learns while training endurance.</p>
+
+          <div class="flow-container">
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number blue">1</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">User selects Extended Practice</div>
+                <div class="flow-step-desc">Card shows: "100+ questions. Build the cognitive stamina needed for the full-length exam."</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number blue">2</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Setup Slide 1: Confirmation</div>
+                <div class="flow-step-desc">"Extended Practice · 100 questions · Mixed topics · ~90 min." Count adjustable (50–200, step 25). Time estimate shown. CTA: "Begin Practice →"</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number purple">3</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Active Quiz Shell (Linear-with-Skip, Immediate, Timer Countup)</div>
+                <div class="flow-step-desc">Combines learning (instant feedback) with endurance (high volume). Skip is allowed to maintain momentum. Timer counts UP (tracks how long, doesn't pressure).</div>
+                <div class="flow-detail-box">
+                  <h5>Extended Practice quiz behavior</h5>
+                  <ul>
+                    <li>Timer: COUNTUP. Shows elapsed time "47:22 elapsed" in DM Mono 11px, muted. No pressure — just awareness.</li>
+                    <li>Feedback: IMMEDIATE but BRIEF (40–60 words, no wiki link — keeps momentum).</li>
+                    <li>Navigation: LINEAR WITH SKIP. Can skip forward but cannot go back. Skip button appears as ghost "Skip →".</li>
+                    <li>Question palette: VISIBLE (needed for 100+ questions). Shows answered/skipped/current.</li>
+                    <li>Bookmark/Flag: AVAILABLE.</li>
+                    <li>Micro-break prompts: Every 30 questions. "30 down, 70 to go. Quick stretch?" with 30-second rest timer + "Continue" button.</li>
+                    <li>Milestone celebrations: At Q25, Q50, Q75, Q100 — brief "Quarter done! 💪" / "Halfway! 🏔" badges that fade in and auto-dismiss. Subtle, not gamification debris.</li>
+                    <li>Gated next: 2-second delay (shorter than Camp — prioritizes momentum over deep reading).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-step-indicator"><div class="flow-step-number green">4</div><div class="flow-step-line"></div></div>
+              <div class="flow-step-content">
+                <div class="flow-step-title">Results → Stamina metrics + standard breakdown</div>
+                <div class="flow-step-desc">Standard Results Dashboard PLUS: "Session duration: 1h 32m" and "Accuracy over time" chart showing performance in 25-question blocks (did accuracy drop in the final quarter? That's a stamina signal). Readiness Score impacted.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 11: COMPONENT SPECIFICATIONS
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="comp-palette">
+        <p class="eyebrow eyebrow-blue">Section 11</p>
+        <h2>Component Specifications</h2>
+        <div class="spacer-md"></div>
+
+        <!-- QUESTION PALETTE -->
+        <h3 style="margin-bottom: 16px;">Question Palette</h3>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">Available in Storm, Full Exam, Extended, and Custom (if enabled). Allows jumping to any question. Desktop: right sidebar (260px, collapsible). Mobile: bottom sheet triggered from center of bottom nav bar.</p>
+
+        <div class="wireframe" style="max-width: 280px; margin-bottom: 24px;">
+          <div class="wireframe-header">
+            <span style="font-size: 13px; font-weight: 500;">Questions</span>
+            <span class="font-mono text-xs text-muted">32/50 answered</span>
+          </div>
+          <div class="wireframe-body">
+            <div style="display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap;">
+              <span style="padding: 3px 8px; background: var(--cobalt-light); border-radius: 4px; font-size: 10px; color: var(--cobalt); font-weight: 500;">All</span>
+              <span style="padding: 3px 8px; background: transparent; border-radius: 4px; font-size: 10px; color: var(--text-muted);">Unanswered (18)</span>
+              <span style="padding: 3px 8px; background: transparent; border-radius: 4px; font-size: 10px; color: var(--text-muted);">Flagged (3)</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px;">
+              <!-- Row 1: answered -->
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">1</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">2</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">3</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">4</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">5</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--signal-gold); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">6</div>
+              <div style="width: 100%; aspect-ratio: 1; background: var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 9px; font-family: 'DM Mono';">7</div>
+              <div style="width: 100%; aspect-ratio: 1; border: 2px solid var(--cobalt); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--cobalt); font-size: 9px; font-family: 'DM Mono'; font-weight: 700;">8</div>
+              <div style="width: 100%; aspect-ratio: 1; border: 1.5px solid var(--border); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 9px; font-family: 'DM Mono';">9</div>
+              <div style="width: 100%; aspect-ratio: 1; border: 1.5px solid var(--border); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 9px; font-family: 'DM Mono';">10</div>
+            </div>
+            <div class="spacer-sm"></div>
+            <div style="display: flex; gap: 12px; font-size: 10px; color: var(--text-muted);">
+              <span><span style="display: inline-block; width: 8px; height: 8px; background: var(--cobalt); border-radius: 2px; margin-right: 4px;"></span>Answered</span>
+              <span><span style="display: inline-block; width: 8px; height: 8px; border: 1.5px solid var(--border); border-radius: 2px; margin-right: 4px;"></span>Open</span>
+              <span><span style="display: inline-block; width: 8px; height: 8px; background: var(--signal-gold); border-radius: 2px; margin-right: 4px;"></span>Flagged</span>
+              <span><span style="display: inline-block; width: 8px; height: 8px; border: 2px solid var(--cobalt); border-radius: 2px; margin-right: 4px;"></span>Current</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TIMER VARIANTS -->
+        <div id="comp-timer" class="spacer-lg"></div>
+        <h3 style="margin-bottom: 16px;">Timer Variants</h3>
+        <div class="grid-3" style="margin-bottom: 24px;">
+          <div class="card">
+            <p class="eyebrow" style="margin-bottom: 8px;">Hidden Timer</p>
+            <p class="text-sm" style="font-weight: 500; margin-bottom: 4px;">Camp, Chill, Subject, Focused</p>
+            <p class="text-xs text-muted">No timer element rendered. Session is unpressured. Elapsed time tracked internally for analytics but never shown to user.</p>
+          </div>
+          <div class="card">
+            <p class="eyebrow" style="margin-bottom: 8px;">Progress Bar Timer</p>
+            <p class="text-sm" style="font-weight: 500; margin-bottom: 4px;">Storm Mode</p>
+            <p class="text-xs text-muted">4px bar at top of screen. Fills left→right. Cobalt normally, Amber at 75%. Time visible on tap/hover only. Reduces countdown anxiety while maintaining time awareness.</p>
+            <div style="margin-top: 8px;">
+              <div class="wireframe-progress-bar" style="height: 4px;">
+                <div class="wireframe-progress-fill" style="width: 65%; background: var(--cobalt);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <p class="eyebrow" style="margin-bottom: 8px;">Countdown Timer</p>
+            <p class="text-sm" style="font-weight: 500; margin-bottom: 4px;">Full Exam Simulation</p>
+            <p class="text-xs text-muted">DM Mono 11px, top-right. "3:42:15 remaining." Cobalt text normally, Amber under 30 min. Gentle blink under 5 min. NEVER red.</p>
+            <div style="margin-top: 8px; text-align: right;">
+              <span class="font-mono" style="font-size: 12px; color: var(--cobalt);">3:42:15</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROGRESS INDICATORS -->
+        <div id="comp-progress" class="spacer-md"></div>
+        <h3 style="margin-bottom: 16px;">Progress Indicators</h3>
+        <p class="text-sm text-muted" style="margin-bottom: 16px;">Every quiz session has a progress bar (4px, top of content area) and a fraction indicator. These are universal. The only variation is the fraction format.</p>
+        <div class="flow-detail-box" style="margin-bottom: 24px;">
+          <h5>Progress element specifications</h5>
+          <ul>
+            <li><strong>Progress bar:</strong> 4px height. Cobalt fill on light grey track. Ease-out animation on fill changes. Positioned below the top header bar.</li>
+            <li><strong>Fraction indicator:</strong> DM Mono, 11px, muted. Format: "Q 8 / 20" (learning) or "8 / 200" (exam). Positioned center of bottom nav bar.</li>
+            <li><strong>Percentage (exam modes only):</strong> Shown alongside fraction: "8 / 50 (16%)" — helps users pace themselves in long sessions.</li>
+          </ul>
+        </div>
+
+        <!-- BOTTOM NAVIGATION BAR -->
+        <div id="comp-bottombar" class="spacer-md"></div>
+        <h3 style="margin-bottom: 16px;">Bottom Navigation Bar</h3>
+        <div class="wireframe" style="max-width: 500px; margin-bottom: 24px;">
+          <div style="padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; background: white;">
+            <button class="wireframe-btn wireframe-btn-ghost" style="min-width: 90px; font-size: 12px;">← Previous</button>
+            <div style="text-align: center;">
+              <span class="font-mono" style="font-size: 11px; color: var(--text-muted);">Q 8 / 20</span>
+            </div>
+            <button class="wireframe-btn wireframe-btn-primary" style="min-width: 120px;">Next →</button>
+          </div>
+        </div>
+        <div class="flow-detail-box">
+          <h5>Bottom bar — Conditional rendering</h5>
+          <ul>
+            <li><strong>Previous button:</strong> Hidden if config.navigation.backAllowed === false OR if on question 1</li>
+            <li><strong>Center area:</strong> Fraction indicator. In palette-enabled modes, tapping this opens the question palette bottom sheet (mobile).</li>
+            <li><strong>Primary button:</strong> "Submit Answer" (before answering) → "Next Question →" (after feedback, learning modes) OR auto-advances (exam modes). On last question: "Finish Session →" (learning) / "Review & Submit →" (exam).</li>
+            <li><strong>Skip button:</strong> In modes with skip enabled, a "Skip →" ghost button appears INSTEAD of "Next" when no answer is selected.</li>
+            <li><strong>Mobile specs:</strong> 56px height + safe area inset padding. White background. Top border 1px solid var(--border). Button heights 44px. Primary button min-width 120px.</li>
+            <li><strong>Desktop:</strong> Fixed to bottom of content area (not viewport). Max-width matches content (680px), centered.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 12: ACCESSIBILITY
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="accessibility">
+        <p class="eyebrow eyebrow-blue">Section 12</p>
+        <h2>Accessibility Requirements</h2>
+        <div class="spacer-md"></div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Semantic Structure</h5>
+            <div style="font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
+              Each question uses <code>&lt;fieldset&gt;</code> + <code>&lt;legend&gt;</code> wrapping the question stem and radio inputs. Question stem uses <code>&lt;h2&gt;</code> for screen reader navigation. Answer options use native <code>&lt;input type="radio"&gt;</code> within a radio group — arrow keys navigate between options. Focus management: on question change, focus moves programmatically to the question heading.
+            </div>
+          </div>
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Color & Contrast</h5>
+            <div style="font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
+              WCAG 2.1 AA minimum. All body text: 4.5:1 contrast. Large text and UI components: 3:1. Charcoal (#1A1A2E) on white = 15.4:1. Color is NEVER the sole indicator — all feedback uses icon + text + color. Palette cells use shape + number + color. Focus indicators: 2px solid outline, 3:1 contrast against adjacent colors.
+            </div>
+          </div>
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Touch Targets</h5>
+            <div style="font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
+              44×44px minimum for all interactive elements (WCAG 2.1 AA). Answer option rows: full-width × 48px minimum. Buttons: 48px height minimum on mobile. Palette cells: 36px desktop, 44px mobile. Spacing between adjacent tap targets: minimum 8px.
+            </div>
+          </div>
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Timer Accessibility</h5>
+            <div style="font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
+              Timer warnings use <code>aria-live="assertive"</code> with <code>role="alert"</code> ONLY for critical thresholds (5 min, 1 min). Routine timer updates: <code>aria-live="off"</code>. Keyboard shortcut <code>T</code> announces time remaining via screen reader. Progress bar timer: <code>role="progressbar"</code> with <code>aria-valuenow</code> and <code>aria-valuemax</code>.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 13: MOBILE SPECIFICATIONS
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="mobile">
+        <p class="eyebrow eyebrow-blue">Section 13</p>
+        <h2>Mobile-First Specifications</h2>
+        <div class="spacer-md"></div>
+
+        <div class="highlight-box" style="margin-bottom: 24px;">
+          <strong>Device context:</strong> Median SlateCamp user is on a mid-range Android (Realme, Samsung A series), 6–6.5" display, 4G connection. 75% of quiz sessions happen on mobile. Quiz UI MUST be designed mobile-first.
+        </div>
+
+        <div class="flow-detail-box">
+          <h5>Mobile layout specifications</h5>
+          <ul>
+            <li><strong>Horizontal margin:</strong> 16px both sides. Total content width: screen width − 32px.</li>
+            <li><strong>Question stem:</strong> 14–15px. Full width. Line-height 1.7.</li>
+            <li><strong>Answer options:</strong> Full width. 48–56px row height. 12px gap between options. Entire row is tap target.</li>
+            <li><strong>Bottom nav bar:</strong> 56px + safe area inset. Sticky to viewport bottom. White bg, 1px top border.</li>
+            <li><strong>Question palette:</strong> Bottom sheet. Half-height initial, swipe-up for full. Overlay with backdrop dim (rgba(0,0,0,0.3)). Close on swipe-down or backdrop tap.</li>
+            <li><strong>Feedback panel:</strong> Slides up from below options. Max-height 50vh. Scrollable if content exceeds. Rounded top corners (16px).</li>
+            <li><strong>Thumb zones:</strong> Primary actions (Submit, Next) in bottom 40% of screen. Timer/exit in top zone (intentional friction for accidental taps). Answer options in natural center-to-bottom zone.</li>
+            <li><strong>Landscape orientation:</strong> Supported but not optimized. Quiz shell adapts but doesn't rearrange. Most users stay portrait.</li>
+            <li><strong>Offline handling:</strong> Answers cached locally in IndexedDB. "Offline" banner appears at top (amber bg, 10px font). Auto-syncs when connection returns. No data loss.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 14: ANIMATIONS
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="animations">
+        <p class="eyebrow eyebrow-blue">Section 14</p>
+        <h2>Motion & Animation Specs</h2>
+        <div class="spacer-md"></div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Permitted Animations</h5>
+            <div style="font-size: 13px; line-height: 2; color: var(--text-secondary);">
+              • Feedback panel slide-up: 250ms ease-out<br>
+              • Next button fade-in (gated): 200ms ease-in after delay<br>
+              • Progress bar fill: 300ms ease-out<br>
+              • Score count-up on Results: 1.5s ease-out<br>
+              • Toast appear/dismiss: 150ms fade<br>
+              • Question transition: 150ms opacity crossfade<br>
+              • Palette bottom sheet: 250ms slide-up<br>
+              • Processing animation: gentle pulse on logo mark<br>
+              • Micro-break card slide: 300ms ease-out from bottom
+            </div>
+          </div>
+          <div class="card">
+            <h5 style="margin-bottom: 12px;">Forbidden Animations</h5>
+            <div style="font-size: 13px; line-height: 2; color: var(--text-secondary);">
+              • Confetti or celebration particles<br>
+              • Shake animation on wrong answers<br>
+              • Red flash or screen color overlay<br>
+              • Bouncing or elastic button animations<br>
+              • Background color transitions<br>
+              • Sound effects<br>
+              • XP/point accumulation animations<br>
+              • Streaks, combos, or chain indicators<br>
+              • Any animation &gt; 500ms that blocks interaction
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           SECTION 15: ERROR & EDGE STATES
+           ───────────────────────────────────────────────────── -->
+      <section class="section" id="error-states">
+        <p class="eyebrow eyebrow-blue">Section 15</p>
+        <h2>Error & Edge States</h2>
+        <div class="spacer-md"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="card">
+            <h5>Connection lost mid-quiz</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">Amber banner at top: "You're offline. Answers are being saved locally." Quiz continues normally. When connection returns: banner changes to "Back online. Syncing..." then auto-dismisses. No data loss.</p>
+          </div>
+          <div class="card">
+            <h5>App backgrounded during exam</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">Learning modes: session pauses indefinitely. Exam modes: timer pauses for 30 minutes max. After 30min: auto-submit with answered questions. Push notification: "Your exam was auto-submitted."</p>
+          </div>
+          <div class="card">
+            <h5>Question fails to load</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">Skeleton loader for 3 seconds. If still failing: "This question couldn't load. Skip to the next one?" with "Skip" primary and "Try Again" secondary. Question marked as unanswered, not counted against score.</p>
+          </div>
+          <div class="card">
+            <h5>No questions available for selected topic</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">On Setup Slide 2: topic chip is disabled (greyed out) with tooltip: "No questions available yet." If ALL topics in a subject are empty: subject row shows "Coming soon" badge.</p>
+          </div>
+          <div class="card">
+            <h5>User tries to submit without answering</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">Submit button is disabled (grey) until an option is selected. In exam modes with skip: "Skip →" ghost button is always available. No modal or alert needed — the disabled state is sufficient.</p>
+          </div>
+          <div class="card">
+            <h5>Battery low during exam</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">At &lt;15% battery: subtle amber pill appears: "Low battery. Your progress is auto-saved." No action required — just reassurance that nothing will be lost.</p>
+          </div>
+          <div class="card">
+            <h5>Timer expires during exam</h5>
+            <p class="text-sm text-muted" style="margin-top: 4px;">At 0:00: auto-submit all answered questions. Full-screen: "Time's up! Your exam has been submitted with [X] of [Y] questions answered." → Routes to Results (or 24-hour confirmation for Full Exam).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─────────────────────────────────────────────────────
+           APPENDIX
+           ───────────────────────────────────────────────────── -->
+      <section class="section" style="border-bottom: none;">
+        <p class="eyebrow eyebrow-blue">Appendix</p>
+        <h2>Quick Reference: Mode → Setup Slide Count</h2>
+        <div class="spacer-md"></div>
+
+        <div style="overflow-x: auto;">
+          <table class="config-table">
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>Slide 1 (Confirm)</th>
+                <th>Slide 2 (Topics)</th>
+                <th>Slide 3 (Config)</th>
+                <th>Total Slides</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="feature-name">🏕 Camp Mode</td><td class="check">✓</td><td class="cross">✕ (Trail sets topic)</td><td class="cross">✕</td><td>1</td></tr>
+              <tr><td class="feature-name">😌 Chill Mode</td><td class="check">✓</td><td class="cross">✕ (Random topics)</td><td class="cross">✕</td><td>1</td></tr>
+              <tr><td class="feature-name">📚 Subject Mode</td><td class="check">✓</td><td class="check">✓</td><td class="cross">✕</td><td>2</td></tr>
+              <tr><td class="feature-name">🎯 Focused Review</td><td class="check">✓</td><td class="check">✓ (Pre-filled)</td><td class="cross">✕</td><td>2</td></tr>
+              <tr><td class="feature-name">⚙ Custom Session</td><td class="check">✓</td><td class="check">✓ (Multi-select)</td><td class="check">✓</td><td>3</td></tr>
+              <tr><td class="feature-name">⚡ Storm Mode</td><td class="check">✓</td><td class="cross">✕ (All subjects)</td><td class="cross">✕</td><td>1</td></tr>
+              <tr><td class="feature-name">📝 Full Exam Sim</td><td class="check">✓ (Enhanced)</td><td class="cross">✕ (All subjects)</td><td class="cross">✕</td><td>1</td></tr>
+              <tr><td class="feature-name">🏋 Extended Practice</td><td class="check">✓</td><td class="cross">✕ (Mixed)</td><td class="cross">✕</td><td>1</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spacer-xl"></div>
+
+        <div class="card card-dark" style="text-align: center; padding: 48px;">
+          <p class="eyebrow" style="color: rgba(255,255,255,0.4); margin-bottom: 12px;">SlateCamp Quiz Engine</p>
+          <h3 style="color: white; margin-bottom: 8px;">One Shell. Eight Modes. Zero Compromise.</h3>
+          <p style="color: rgba(255,255,255,0.5); font-size: 13px;">This specification defines the complete UX architecture for the unified quiz engine. Every button, every slide, every path — documented.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════
+     INTERACTIVE SCRIPTS
+     ════════════════════════════════════════════════════════════ -->
+<script>
+// Accordion toggles
+document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const item = trigger.parentElement;
+    item.classList.toggle('open');
+  });
+});
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const container = btn.closest('.tab-container') || btn.parentElement.parentElement;
+    const targetPanel = btn.dataset.tab;
+    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const panels = container.parentElement.querySelectorAll('.tab-panel');
+    panels.forEach(p => {
+      p.classList.remove('active');
+      if (p.id === targetPanel) p.classList.add('active');
+    });
+  });
+});
+
+// Sidebar active state on scroll
+const sections = document.querySelectorAll('section[id]');
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+function updateActiveLink() {
+  let current = '';
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 100) {
+      current = section.getAttribute('id');
+    }
+  });
+  // Also check div IDs within sections
+  document.querySelectorAll('div[id]').forEach(div => {
+    const rect = div.getBoundingClientRect();
+    if (rect.top <= 100 && rect.top > -200) {
+      current = div.getAttribute('id');
+    }
+  });
+
+  sidebarLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', updateActiveLink, { passive: true });
+updateActiveLink();
+</script>
+
+</body>
+</html>

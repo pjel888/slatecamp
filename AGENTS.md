@@ -6,7 +6,7 @@
 
 SlateCamp is a high-performance ALE prep platform for the Philippine Architecture Licensure Exam. Built with Next.js 16.1.6 (App Router), React 19, Supabase (PostgreSQL), and Three.js for 3D spatial learning. The "Campfire" design system provides a warm, research-backed aesthetic. All mastery calculations use the IRT 2-parameter logistic model. The platform serves 4 portals: Dashboard (student-facing), Admin (content management), CEO (business analytics), and Developer (internal docs and tooling).
 
-For a comprehensive architecture overview, see `.ai/GLOBAL-CODEBASE-AUDIT-REPORT.md`.
+For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (lists all 42 docs) and `.ai/docs/02-architecture/001-system-architecture.md`.
 
 ## Key Files
 
@@ -35,9 +35,9 @@ For a comprehensive architecture overview, see `.ai/GLOBAL-CODEBASE-AUDIT-REPORT
 | `supabase/` | Database migrations (60) and seed SQL scripts (see `supabase/AGENTS.md`) |
 | `scripts/` | Dev tooling -- custom dev server, DB inspection, seeding (see `scripts/AGENTS.md`) |
 | `public/` | Static assets -- icons, OG images, widget modules (see `public/AGENTS.md`) |
-| `prompts/` | Archived PRDs, specs, and implementation guides (reference only) |
+| `prompts/` | Archived — moved to `.ai/docs/archive/legacy/prompts-archived/` |
 | `docs/` | Canonical human-readable documentation, architecture notes, and content-support assets |
-| `.ai/` | Agent-only docs, generated audits, archives, worktrees, and workflow residue |
+| `.ai/` | Agent-only docs, generated audits, archives, and workflow residue (see `.ai/docs/00-meta/001-index.md`) |
 | `.claude/` | Agent definitions, skills, and documentation for AI-assisted development |
 
 ## Codebase Stats
