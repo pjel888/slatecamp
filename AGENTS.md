@@ -18,7 +18,7 @@ For a comprehensive architecture overview, see `GLOBAL-CODEBASE-AUDIT-REPORT.md`
 | `package.json` | Dependencies and scripts (bun as package manager) |
 | `next.config.ts` | Next.js config -- Turbopack, server actions (4MB limit), image remotes |
 | `middleware.ts` | Supabase auth session refresh + pathname header injection |
-| `tailwind.config.ts` | Tailwind v4 CSS-first config with typography plugin |
+| `src/app/globals.css` | Tailwind v4 CSS-first theme, tokens, and plugin loading entrypoint |
 | `vercel.json` | Cron jobs: blindspot-scan (daily 4pm UTC), compute-signals (daily 4:30pm UTC) |
 | `components.json` | shadcn/ui configuration |
 | `tsconfig.json` | TypeScript config with `@/` path alias to `src/` |

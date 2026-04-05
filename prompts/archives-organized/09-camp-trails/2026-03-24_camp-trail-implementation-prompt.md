@@ -39,7 +39,7 @@ STEP 5: Inspect existing query patterns
   → GOAL: Match existing query/server-action patterns exactly
 
 STEP 6: Inspect the Tailwind config
-  → Run: cat tailwind.config.ts
+  → Run: cat src/app/globals.css
   → GOAL: Know what custom colors, fonts, and tokens exist
 
 STEP 7: Inspect the design system / developer dashboard
@@ -57,7 +57,7 @@ STEP 8: Check existing Supabase schema
 
 ### 0.2 — Design System Token Verification
 
-Before using any color, font, or spacing value, verify it exists in `tailwind.config.ts`. The Camp Trail uses these specific tokens:
+Before using any color, font, or spacing value, verify it exists in `src/app/globals.css`. The Camp Trail uses these specific tokens:
 
 | Token | Hex | Tailwind Class | Purpose |
 |---|---|---|---|
@@ -75,7 +75,7 @@ Before using any color, font, or spacing value, verify it exists in `tailwind.co
 - `DM Mono` → monospace labels, metadata (font-mono class)
 - `Inter` → body text (font-sans class)
 
-**If any token is missing from tailwind.config.ts, ADD it before using it. Then document what you added.**
+**If any token is missing from `src/app/globals.css`, ADD it before using it. Then document what you added.**
 
 ### 0.3 — Existing Component Audit
 
@@ -1123,7 +1123,7 @@ If the project has a design system page, component registry, or developer dashbo
 If any of these colors were missing during pre-flight check, add them now:
 
 ```javascript
-// tailwind.config.ts — extend colors
+// src/app/globals.css — extend colors
 colors: {
   // ... existing colors
   trail: {

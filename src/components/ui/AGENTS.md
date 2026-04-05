@@ -47,9 +47,7 @@ shadcn/ui primitive components with Campfire design system tokens applied via Ta
 | `event-badge.tsx` | Event/activity type badge. |
 | `eyebrow.tsx` | Eyebrow text component (small uppercase label above titles). |
 | `form-field.tsx` | Form field wrapper with label, input, error message. |
-| `icon-button.tsx` | Icon-only button variant. |
 | `mode-button.tsx` | Test mode selection button. |
-| `status-badge.tsx` | Status indicator badge with semantic colors. |
 | `student-view-watermark.tsx` | Watermark overlay for student preview mode. |
 | `toolbar.tsx` | Generic toolbar component. |
 | `SlateCampLogo.tsx` | SlateCamp logo SVG. Sized via className. |
@@ -64,7 +62,7 @@ None. All UI primitives are flat in `src/components/ui/`.
 
 1. **Do not modify these files unless updating design tokens.** These are foundational primitives. If a new variant is needed, discuss with design first and add via CVA (button.tsx pattern).
 
-2. **CSS variable mapping.** All colors (text, background, border) map to Tailwind CSS v4 variables defined in tailwind.config.ts. Example: `bg-primary` maps to `var(--color-primary)`. Do NOT hardcode hex values in new primitives.
+2. **CSS variable mapping.** All colors (text, background, border) map to Tailwind CSS v4 variables defined in `src/app/globals.css`. Example: `bg-primary` maps to `var(--color-primary)`. Do NOT hardcode hex values in new primitives.
 
 3. **Accessibility mandatory.**
    - All interactive elements must be keyboard-accessible (tab, arrow keys, Enter, Escape).

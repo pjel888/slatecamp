@@ -59,7 +59,7 @@ ls -la package-lock.json yarn.lock pnpm-lock.yaml bun.lockb 2>/dev/null
 cat tsconfig.json
 
 # 9. Tailwind config
-cat tailwind.config.ts 2>/dev/null || cat tailwind.config.js 2>/dev/null
+sed -n "1,160p" src/app/globals.css
 
 # 10. Next.js config
 cat next.config.ts 2>/dev/null || cat next.config.js 2>/dev/null || cat next.config.mjs 2>/dev/null

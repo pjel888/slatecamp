@@ -1,45 +1,93 @@
-# SlateCamp Quiz & Testing Feature — End-to-End Audit
+# SlateCamp Quiz & Testing Feature — Comprehensive Audit
 
-> **Date:** 2026-04-01
-> **Scope:** Complete user journey, UI component map, state management, server actions, and database mutations for the quizzing/testing module.
+> **Date:** 2026-04-04
+> **Scope:** Complete audit of testing/quiz feature — routes, components, state, server actions, and data flows
+> **Status:** Consolidated from quiz-testing-audit.md + testing-audit.md
 
 ---
 
 ## Table of Contents
 
-1. [Quiz Modes Overview](#1-quiz-modes-overview)
-2. [UX & Frontend Event Flow](#2-ux--frontend-event-flow)
-   - [Phase 1: Mode Selection](#phase-1-mode-selection-dashboard)
-   - [Phase 2: Session Setup](#phase-2-session-setup)
-   - [Phase 3: Active Quiz](#phase-3-active-quiz-session)
-   - [Phase 4: Results & Review](#phase-4-results--review)
-3. [State Management (Zustand Store)](#3-state-management-zustand-store)
-4. [Backend & Database Audit](#4-backend--database-audit)
-   - [Session Start](#41-session-start)
-   - [Answer Submission](#42-answer-submission)
-   - [Session End](#43-session-end)
-   - [Background Processing](#44-background-processing)
-5. [Database Tables Reference](#5-database-tables-reference)
-6. [Complete Data Flow Diagram](#6-complete-data-flow-diagram)
-7. [Key Files Index](#7-key-files-index)
+1. [Route Architecture](#1-route-architecture)
+2. [Quiz Modes](#2-quiz-modes)
+3. [UX Journey](#3-ux-journey)
+4. [Component Inventory](#4-component-inventory)
+5. [State Management](#5-state-management)
+6. [Server Actions](#6-server-actions)
+7. [Database Tables](#7-database-tables)
+8. [Data Flow Diagrams](#8-data-flow-diagrams)
+9. [Happy Paths](#9-happy-paths)
+10. [Edge Cases](#10-edge-cases)
+11. [Issues Found](#11-issues-found)
+12. [Recommendations](#12-recommendations)
 
 ---
 
-## 1. Quiz Modes Overview
+## 1. Route Architecture
 
-SlateCamp supports **8 quiz modes** organized into 3 learning zones, plus an inline article review mode. Each mode is defined in `src/lib/constants/testing-modes.ts` with its own preset configuration in `src/lib/quiz/mode-presets.ts`.
+### Dual Routing Systems (Technical Debt)
 
-| Zone | Mode | Default Qs | Timer | Feedback | Key Trait |
-|------|------|-----------|-------|----------|-----------|
-| **Zone 1 — Foundations** | Camp | 20 | None | Immediate | Guided study, adaptive difficulty |
-| | Chill | 10 | None | Immediate | Relaxed browsing, skip allowed |
-| **Zone 2 — Deliberate Practice** | Subject | 20 | None | Immediate | Single-subject deep dive |
-| | Focus Review | 20 | None | Immediate | Targets weak/flagged topics |
-| | Custom | User-set | User-set | User-set | Full control over all parameters |
-| **Zone 3 — Exam Readiness** | Storm | 50 | 60 sec/Q | Deferred | Exam conditions, timed |
-| | Full Exam Simulation | 200 | 4 hours | Delayed 24h | Simulates real licensure exam |
-| | Design Endurance Training | 100 | 2 hours | Deferred | Extended stamina building |
-| **Inline** | Article Review | Varies | None | Immediate | Embedded in wiki articles |
+SlateCamp operates **two parallel routing systems**:
+
+| System | Routes | Purpose |
+|--------|--------|---------|
+| **Quiz V2 Engine** | `/quiz/[mode]/...` | Unified session engine - setup, session, results |
+| **Legacy Hub** | `/dashboard/testing/...` | Testing hub, legacy setup pages, debrief |
+
+```
+/quiz/ (V2 Engine)
+├── [mode]/
+│   ├── setup/
+│   │   ├── page.tsx         — Unified setup for all modes
+│   │   ├── client.tsx       — SetupPageClient (multi-step UI)
+│   │   └── loading.tsx
+│   └── session/[sessionId]/
+│       ├── page.tsx         — QuizShell session
+│       ├── loading.tsx
+│       ├── results/
+│       │   ├── page.tsx     — ResultsDashboard
+│       │   └── loading.tsx
+│       └── review/
+│           ├── page.tsx     — Per-question review
+│           └── loading.tsx
+├── layout.tsx
+├── loading.tsx
+└── page.tsx                  — Redirects to /dashboard
+
+/dashboard/testing/ (Legacy Hub)
+├── page.tsx                  — ReviewHub (hub)
+├── layout.tsx
+├── loading.tsx
+├── camp/setup/               — CampSetup (legacy)
+├── chill/setup/               — ChillSetup (legacy)
+├── storm/setup/              — StormSetup (legacy)
+├── focus-review/setup/       — FocusReviewSetup (legacy)
+├── custom/setup/             — CustomSetup (legacy)
+├── subject/setup/            — SubjectSetup (legacy)
+├── endurance/setup/           — EnduranceSetup (legacy)
+├── session/[sessionId]/
+│   ├── page.tsx              — Redirects to /quiz/v2
+│   └── debrief/
+│       └── page.tsx          — DebriefLayout (legacy)
+└── simulation/
+    ├── briefing/page.tsx     — SimulationBriefing
+    └── [sessionId]/results/  — Cold-delivery results (24h)
+```
+
+### Valid Quiz Modes
+
+| Mode Key | Route Parameter | Zone | Label |
+|----------|----------------|------|-------|
+| `camp` | `camp` | 1 | Camp Mode |
+| `chill` | `chill` | 1 | Chill Mode |
+| `subject` | `subject` | 2 | Subject Mode |
+| `focus-review` | `focused` | 2 | Focus Review |
+| `custom` | `custom` | 2 | Custom Session |
+| `storm` | `storm` | 3 | Storm Mode |
+| `simulation` | `fullexam` | 3 | Full Exam Simulation |
+| `endurance` | `extended` | 3 | Design Endurance Training |
+
+> **Note:** Mode keys don't match route params exactly (e.g., `focus-review` → `focused`, `simulation` → `fullexam`, `endurance` → `extended`)
 
 ---
 
@@ -697,3 +745,155 @@ USER JOURNEY                          DATABASE MUTATIONS
 | `src/lib/constants/testing-modes.ts` | 8 mode definitions with metadata |
 | `src/lib/quiz/mode-presets.ts` | Default config per mode |
 | `src/types/quiz-config.ts` | All TypeScript types for quiz system |
+## 8. Happy Paths (Testing Feature)
+
+| # | Path | Flow | Expected Outcome |
+|---|------|------|-----------------|
+| 1 | First-time Camp session | Hub → Camp ModeCard → Setup → Start → 10 questions → Results | Score + readiness delta |
+| 2 | Storm timed practice | Hub → Storm ModeCard → Setup → Start → Timer expires → Results | Score without feedback |
+| 3 | Focus Review | Hub → SmartSuggestion → 12q from weak nodes → Results | Targeted remediation |
+| 4 | Full Exam Simulation | Hub → Simulation (gated ≥65) → Briefing → 200q → Wait 24h → Results | Cold-delivered results |
+| 5 | Review past session | Hub → SessionsTable → Click row → Debrief | Full breakdown + review |
+
+## 9. Edge Cases (Testing Feature)
+
+| Case | Behavior |
+|------|----------|
+| Readiness < 65 + click Simulation | Server redirect back to hub |
+| No questions match filter | Empty state in setup |
+| Session interrupted (browser close) | Auto-save every 10s + localStorage backup |
+| 200-question fullexam | Batched in chunks of 80 |
+| Mode not in valid list | 404 page |
+| Timer expires (Storm) | Auto-submit, advance next |
+| All questions skipped (Chill) | Allow end, count incomplete |
+| Network loss | Offline banner, localStorage persists |
+| Pro feature for free user | Paywall prompt |
+| Zero mastery data | "Complete more questions first" message |
+
+## 10. Component Inventory (Quiz Engine — 59 components verified)
+
+### Quiz Shell
+| Component | File |
+|-----------|------|
+| QuizShell | quiz-v2/QuizShell.tsx |
+| QuizHeader | quiz-v2/QuizHeader.tsx |
+| QuizBody | quiz-v2/QuizBody.tsx |
+| QuizFooter | quiz-v2/QuizFooter.tsx |
+| QuizOption | quiz-v2/QuizOption.tsx |
+| OptionsColumn | quiz-v2/OptionsColumn.tsx |
+| QuestionColumn | quiz-v2/QuestionColumn.tsx |
+| SlideToSubmit | quiz-v2/SlideToSubmit.tsx |
+| FeedbackPanel | quiz-v2/FeedbackPanel.tsx |
+| QuestionPalette | quiz-v2/QuestionPalette.tsx |
+| ExitConfirmModal | quiz-v2/ExitConfirmModal.tsx |
+| SubmitConfirmModal | quiz-v2/SubmitConfirmModal.tsx |
+| MicroBreakOverlay | quiz-v2/MicroBreakOverlay.tsx |
+| TimerDisplay | quiz-v2/TimerDisplay.tsx |
+| ConfidenceInput | quiz-v2/ConfidenceInput.tsx |
+
+### Setup
+| Component | File |
+|-----------|------|
+| SetupFlow | quiz-v2/setup/SetupFlow.tsx |
+| ModeSelector | quiz-v2/setup/ModeSelector.tsx |
+| QuestionCountPills | quiz-v2/setup/QuestionCountPills.tsx |
+| PressureLevelSelector | quiz-v2/setup/PressureLevelSelector.tsx |
+| IntroSlide1-3 | quiz-v2/setup/IntroSlide*.tsx |
+| SimulationChecklist | quiz-v2/setup/SimulationChecklist.tsx |
+
+### Results
+| Component | File |
+|-----------|------|
+| ResultsDashboard | quiz-v2/results/ResultsDashboard.tsx |
+| ScoreReveal | quiz-v2/results/ScoreReveal.tsx |
+| SubjectBreakdown | quiz-v2/results/SubjectBreakdown.tsx |
+| ReviewCardList | quiz-v2/results/ReviewCardList.tsx |
+| ConfidenceMatrix | quiz-v2/results/ConfidenceMatrix.tsx |
+| StaminaChart | quiz-v2/results/StaminaChart.tsx |
+| ReadinessImpact | quiz-v2/results/ReadinessImpact.tsx |
+| PredictionComparison | quiz-v2/results/PredictionComparison.tsx |
+| SimulationDebrief | quiz-v2/results/SimulationDebrief.tsx |
+| FeedForwardCards | quiz-v2/results/FeedForwardCards.tsx |
+
+### Review & SRS
+| Component | File |
+|-----------|------|
+| ReviewMode | quiz-v2/review/ReviewMode.tsx |
+| QuestionHistory | quiz-v2/review/QuestionHistory.tsx |
+| SRSpacingTimeline | quiz-v2/SRSpacingTimeline.tsx |
+| SRProgressRing | quiz-v2/SRProgressRing.tsx |
+
+### State
+| File | Lines |
+|------|-------|
+| useQuizStore.ts | 1005 |
+
+## 11. Server Actions (19 total verified)
+
+| Action | File |
+|--------|------|
+| start-session | quiz-v2/start-session.ts |
+| submit-answer | quiz-v2/submit-answer.ts |
+| end-session | quiz-v2/end-session.ts |
+| flag-question | quiz-v2/flag-question.ts |
+| save-prediction | quiz-v2/save-prediction.ts |
+| save-postdiction | quiz-v2/save-postdiction.ts |
+| successive-relearning | quiz-v2/successive-relearning.ts |
+| sr-post-submit | quiz-v2/sr-post-submit.ts |
+| pause-resume | quiz-v2/pause-resume.ts |
+| skip-question | quiz-v2/skip-question.ts |
+| generate-recommendations | quiz-v2/generate-recommendations.ts |
+| get-confidence-matrix | quiz-v2/get-confidence-matrix.ts |
+| get-prediction-history | quiz-v2/get-prediction-history.ts |
+| get-review-data | quiz-v2/get-review-data.ts |
+| post-session-hooks | quiz-v2/post-session-hooks.ts |
+| classify-and-store-error | quiz-v2/classify-and-store-error.ts |
+| check-generation-answer | quiz-v2/check-generation-answer.ts |
+| readiness-score-update | lib/actions/readiness-score-update.ts |
+
+## 12. Issues Found
+
+### High Priority
+1. **Dual routing**: Legacy `/dashboard/testing/*/setup` + new `/quiz/[mode]/setup` both active
+2. **Dual debrief**: DebriefLayout vs ResultsDashboard both running
+
+### Medium Priority
+3. **Endurance routes outside quiz**: Routes to `/dashboard/area-c/design-quiz`
+4. **No unified question fetching**: Different logic per mode
+5. **Pro gating inconsistent**: Some in component, some in server action
+6. **MODE_DEFINITIONS mismatch**: 8 defined, audit listed 9
+
+### Low Priority
+7. **SessionShell dead code**: Legacy, replaced by QuizShell
+8. **Offline support partial**: localStorage exists, no explicit indicator
+
+## 13. Recommendations
+
+### High Priority
+1. Deprecate `/dashboard/testing/*/setup`, make `/quiz/[mode]/setup` canonical
+2. Deprecate DebriefLayout, migrate to ResultsDashboard
+3. Fix MODE_DEFINITIONS count
+
+### Medium Priority
+4. Move Pro checks to server action layer
+5. Move endurance to `/quiz/endurance/*`
+6. Make timer reusable across modes
+
+### Low Priority
+7. Remove dead code (SessionShell + 14 legacy components)
+8. Add explicit offline indicator
+9. Apply 2s feedback gate consistently
+
+## 14. Verification (2026-04-04)
+
+| Metric | Value |
+|--------|-------|
+| Quiz routes | 13 files |
+| Quiz-v2 components | 59 |
+| Quiz-v2 server actions | 18 + 1 |
+| useQuizStore | 1005 lines |
+| Mode definitions | 8 |
+
+---
+
+*End — Sections 8-14 added via codebase research*

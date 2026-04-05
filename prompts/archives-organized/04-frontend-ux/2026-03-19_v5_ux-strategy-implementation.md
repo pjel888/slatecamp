@@ -90,7 +90,7 @@ find src/components -name "*.tsx" | sort | head -30
 find src/app -name "layout.tsx" | sort
 
 # 9. Design system tokens / tailwind config
-cat tailwind.config.ts | head -50
+sed -n "1,120p" src/app/globals.css
 find src/ -name "globals.css" -o -name "design-tokens*" | head -3
 
 # 10. Auth middleware / route protection

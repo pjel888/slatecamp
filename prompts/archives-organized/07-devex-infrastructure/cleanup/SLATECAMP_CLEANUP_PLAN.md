@@ -929,7 +929,7 @@ Keep `QuizRenderer.tsx` as the orchestrating parent.
 This is a week-long migration, not a session task. The 1,030 Tailwind color violations (`text-zinc-*`, `bg-white`, `text-gray-*`) represent an incomplete migration from default Tailwind to the SlateCamp design tokens.
 
 **Approach:**
-1. First confirm your current design token system in `tailwind.config.ts` — what tokens exist?
+1. First confirm your current design token system in `src/app/globals.css` — what tokens exist?
 2. Create a mapping: `bg-white` → `bg-surface-card`, `text-zinc-500` → `text-muted-foreground`, etc.
 3. Migrate one component directory at a time, verifying visually after each
 4. Start with the most visible components (dashboard cards, quiz interface) rather than admin or marketing

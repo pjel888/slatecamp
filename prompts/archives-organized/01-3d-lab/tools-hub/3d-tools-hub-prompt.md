@@ -15,7 +15,7 @@ Before writing a single line of code, you MUST:
 
 1. **Explore the existing repo structure** — Run `find` or `ls` on the project root to understand the routing paradigm (App Router vs Pages Router), existing component patterns, Tailwind config, and folder conventions. Match them exactly.
 2. **Read the existing landing page code** — Find the current public-facing pages and understand how they're structured, what layout components they use, what nav/footer components exist. The new tools hub must feel like a native extension of the existing site, not a bolted-on addition.
-3. **Check `tailwind.config.ts`** — Identify existing design tokens (colors, fonts, spacing) and use them. Never hardcode hex values that already exist as tokens.
+3. **Check `src/app/globals.css`** — Identify existing design tokens (colors, fonts, spacing) and use them. Never hardcode hex values that already exist as tokens.
 4. **Check `package.json`** — See what UI libraries are already installed (Shadcn, Framer Motion, etc.) and use them rather than adding new dependencies.
 
 ## What We're Building (Scope)

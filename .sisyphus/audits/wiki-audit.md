@@ -1,8 +1,8 @@
-# /dashboard/wiki — Complete Route Audit
+# Route Audit: /dashboard/wiki
 
 > **Last updated:** 2026-04-02
 > **Status:** Comprehensive audit — all UX paths, components, data flows, issues mapped.
-> **Related:** `docs/plans/design-system-cleanup.md`, `docs/audits/testing-route-audit.md`
+> **Related:** `.sisyphus/plans/design-system-cleanup.md`, `.sisyphus/audits/testing-route-audit.md`
 
 ---
 

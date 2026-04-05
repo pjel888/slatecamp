@@ -710,7 +710,7 @@ This is one of the only permitted uses of the sub-11px font size — it's non-es
 ### New Tailwind Utilities Needed
 
 ```typescript
-// tailwind.config.ts — additions to theme.extend
+// src/app/globals.css — additions to theme.extend
 
 {
   width: {
@@ -756,7 +756,7 @@ Create `sidebar-constants.ts` and `types/sidebar.ts`. Define the navigation item
 
 ### Step 2: Tailwind Config Update (5 min)
 
-Add the sidebar-specific spacing, width, and z-index tokens to `tailwind.config.ts`.
+Add the sidebar-specific spacing, width, and z-index tokens to `src/app/globals.css`.
 
 **Verification:** `npx tailwind --help` runs without config errors.
 

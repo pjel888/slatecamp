@@ -321,7 +321,7 @@ This generates "Uses" and "Used By" sections on each component page automaticall
 
 ### Near-term priorities (build next)
 
-**Design token visualization**: Create a dedicated "Foundations" section rendering color palette swatches, typography scale samples, spacing rulers, border radii, and shadows—all parsed directly from `tailwind.config.ts` as the single source of truth. Add a simple Theme Playground page with CSS variable toggles that live-update component previews. Feasibility: **Easy-Medium**. Priority: **Nice-to-have**.
+**Design token visualization**: Create a dedicated "Foundations" section rendering color palette swatches, typography scale samples, spacing rulers, border radii, and shadows—all parsed directly from `src/app/globals.css` as the single source of truth. Add a simple Theme Playground page with CSS variable toggles that live-update component previews. Feasibility: **Easy-Medium**. Priority: **Nice-to-have**.
 
 **Usage analytics with react-scanner**: A free, open-source tool that statically analyzes the React/TypeScript codebase using AST parsing, outputting JSON with component instance counts, prop usage distributions, and file locations. Run `npx react-scanner` in CI to generate usage reports. Display results on a dashboard page in the developer hub. Feasibility: **Easy**. Priority: **Nice-to-have**.
 

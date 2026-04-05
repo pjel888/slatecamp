@@ -143,7 +143,7 @@ Common ones to look for: Supabase, Stripe, PostHog, Anthropic, Vercel, email pro
 
 Summarize the contents of:
 - next.config.js/ts/mjs
-- tailwind.config.ts
+- src/app/globals.css
 - tsconfig.json (notable settings only)
 - .eslintrc / eslint.config
 - vercel.json
