@@ -1,43 +1,36 @@
 # Routing and Portals
 
-**Date:** 2026-04-04
+**Date:** 2026-04-05
 
-SlateCamp utilizes Next.js App Router to serve a unified monolithic codebase that behaves like four distinct applications.
+SlateCamp uses Next.js App Router with product surfaces split across four primary portal roots.
 
-## 1. Dashboard (`/dashboard`)
-The core learning environment.
-- **Audience:** Students and Learners (B2C, B2B2C, B2B).
-- **Key Layouts:**
-  - `Testing Hub` (`/dashboard/testing`): Acts as the launchpad for 7 different quiz session configurations (Camp, Storm, Endurance, Simulation, etc.).
-  - `Wiki Browser` (`/dashboard/wiki`): Content rendering layer for structured MDX.
-  - `Analytics` (`/dashboard/analytics`): Deep statistical breakdown of user mastery via 8 distinct chart boundary regions.
-  - `3D Lab` (`/dashboard/3d-lab`): Parametric spatial environment for visualizing structural systems.
+## Dashboard
 
-## 2. Admin (`/admin`)
-The internal content management and operations portal.
-- **Audience:** Content Admins, Super Admins, SME Reviewers.
-- **Key Features:**
-  - **Taxonomy Manager:** Draggable tree editor to curate the taxonomy hierarchy.
-  - **Unified Editor:** Side-by-side editing of `wiki_articles` and their associated `questions`.
-  - **SME Review Queue:** Content lifecycle pipeline for routing new questions to Subject Matter Experts for validation.
+- Path root: `/dashboard`
+- Current route count: 44 `page.tsx` files under `src/app/dashboard`
+- Major areas: analytics, wiki, testing, notes, camp trails, settings, notifications, 3D lab
 
-## 3. CEO (`/ceo`)
-The business operations and observability dashboard.
-- **Audience:** Executives, Founders.
-- **Key Features:**
-  - Revenue tracking (LemonSqueezy / PayRex integrations).
-  - Cohort retention and churn risk tables.
-  - Global user sign-up velocity.
+## Admin
 
-## 4. Developer (`/developer`)
-Internal documentation and tooling reference.
-- **Audience:** Developers and Autonomous Crawler Agents.
-- **Key Features:**
-  - API reference for the Next.js Route Handlers.
-  - Design system token catalog (Campfire Theme).
-  - Architecture specifications.
+- Path root: `/admin`
+- Current route count: 33 `page.tsx` files under `src/app/admin`
+- Major areas: knowledge/content, taxonomy, reviews, assets, pipeline, settings
 
-## Global Middlewares
-Routing between these portals is protected by `middleware.ts`.
-- The middleware actively intercepts requests to enforce authentication checks.
-- If `process.env.DEV_FORCE_USER_ID` is set during local development, the middleware safely short-circuits to allow immediate access to the requested portal.
+## CEO
+
+- Path root: `/ceo`
+- Source location: `src/app/(protected)/ceo`
+- Current route count: 4 `page.tsx` files
+- Major areas: overview, financials, insights, team
+
+## Developer
+
+- Path root: `/developer`
+- Current route count: 11 `page.tsx` files under `src/app/developer`
+- Major areas: API reference, architecture, design system, prompts, status/tooling
+
+## Middleware Notes
+
+- Root [`middleware.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/middleware.ts) does not contain a direct `DEV_FORCE_USER_ID` bypass branch.
+- Auth/session handling is delegated to [`src/lib/supabase/middleware.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/supabase/middleware.ts).
+- The middleware also forwards the current pathname through the `x-pathname` header for layout-level route awareness.

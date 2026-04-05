@@ -1,8 +1,8 @@
 # Decisions
 
-## 2026-04-02 Architectural Decisions (Performance Audit)
-- **Componentization Strategy:** Abstract duplicated UI patterns into focused hooks and reusable UI components. 
-  - *Decision:* Introduced `useSubjectTree.ts` to consolidate taxonomy tree state previously duplicated across `SubjectDrillSelector` and `SubjectPracticeSelector`.
-  - *Decision:* Extracted `QuadrantOverlay.tsx` to serve as the unified label overlay for all scatter charts (MemoryStrength, PacingAccuracy, DifficultyMasteryScatter), reducing triple maintenance burden.
-- **Design System Adherence:** Replace manual re-implementations of visual metrics with standard components.
-  - *Decision:* Mandate the use of `<ScoreDisplay>` for readiness rings, eliminating the custom stroke math and typography previously duplicated inside `HeroCommandBar`.
+## 2026-04-05 Reconciliation Decisions
+
+- Keep [`QuadrantOverlay.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/analytics/QuadrantOverlay.tsx) as the shared quadrant-label primitive for the active analytics scatter charts.
+- Treat the `HeroCommandBar` readiness ring migration as resolved because [`HeroCommandBar.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/dashboard/HeroCommandBar.tsx) already renders [`ScoreDisplay`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/shared/score-display.tsx).
+- Remove `useSubjectTree.ts` instead of relocating it. The selector components that motivated that hook are no longer present, so keeping the helper would preserve dead code rather than shared infrastructure.
+- Preserve the original audit as history, but treat the refreshed plan and notepads as the current truth for this audit scope.

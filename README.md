@@ -1,130 +1,112 @@
 # SlateCamp
 
-A high-performance, discipline-agnostic study engine for professional licensure exams. SlateCamp delivers signal-rich practice, IRT-based adaptive mastery tracking, and a warm "Campfire" design system — no generic gamification, no badges, no confetti.
+SlateCamp is an ALE prep platform built for the Philippine Architecture Licensure Exam. The live product combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling, and interactive 3D learning modules under a shared Next.js codebase.
 
-## Overview
+## Product Surface
 
-SlateCamp is built around a **4-portal architecture**:
+- Dashboard: student-facing study experience under `/dashboard`
+- Admin: content, taxonomy, review, and publishing workflows under `/admin`
+- CEO: internal business reporting under `/ceo`
+- Developer: internal engineering docs and tools under `/developer`
 
-| Portal | Route | Purpose |
-|--------|-------|---------|
-| **Dashboard** | `/dashboard` | Student-facing learning experience — wiki, testing (7 modes), analytics, notes, 3D Lab, Camp Trails |
-| **Admin** | `/admin` | Content management — articles, questions, taxonomy, publishing pipeline, SME review |
-| **CEO** | `/ceo` | Business analytics — MRR/ARR, financials, behavioral insights, team management |
-| **Developer** | `/developer` | Internal docs — design system catalog, API reference, architecture docs, dev tools |
+## Stack
 
-### Core Principles
+- Next.js 16.1.6 App Router
+- React 19.2.4
+- TypeScript 5.9.3
+- Tailwind CSS 4
+- Supabase SSR and PostgreSQL
+- Zustand for shared client state
+- Storybook 8 with Vite
+- React Three Fiber and Three.js for 3D modules
 
-- **Pedagogy-first**: IRT 2-parameter logistic model for all mastery calculations, SM-2 spaced repetition, anti-inflation readiness scoring
-- **No gamification**: Progression mapped to Readiness Score, Taxonomy Heatmap, and Pacing Gauge
-- **Campfire aesthetic**: Warm, research-backed design system with Camp Cobalt, Camp Orange, Emerald, and Surface Light tokens
-- **Reliability**: Persistent state with 10-second autosave, localStorage fallback, and offline reconnection queue
+## Local Development
 
-## Tech Stack
-
-| Layer | Technology | Version |
-|-------|-----------|---------|
-| Framework | Next.js (App Router) | 16.1.6 |
-| UI | React + React DOM | 19.2.4 |
-| Language | TypeScript | 5.9.3 |
-| Styling | Tailwind CSS 4 (CSS-first) | 4.2.2 |
-| UI Primitives | shadcn/ui + @base-ui/react | 4.1.0 / 0.9.5 |
-| State | Zustand | 5.0.12 |
-| Database | Supabase (PostgreSQL) | 2.100.0 |
-| Auth | Supabase SSR | 0.9.0 |
-| 3D/Spatial | React Three Fiber + Three.js | R3F 9.5.0 / Three 0.183.2 |
-| Animation | Framer Motion | 12.38.0 |
-| Rich Text | TipTap (13 extensions) | 3.20.4 |
-| Charts | Recharts | 3.8.0 |
-| AI Tutor | Anthropic SDK | 0.78.0 |
-| Payments | Stripe + PayRex | 20.4.1 / 1.7.3 |
-| Icons | Lucide + Phosphor | 0.577.0 / 2.1.10 |
-| Package Manager | Bun | — |
-| Deployment | Vercel | 2 cron jobs |
-
-## Getting Started
-
-1. **Install dependencies**
-
-   ```bash
-   bun install
-   ```
-
-2. **Set up environment variables**
-
-   ```bash
-   cp .env.example .env.local
-   ```
-
-   Fill in the 19 required env vars (6 `NEXT_PUBLIC_*`, 11 server-only secrets, 2 config flags). See `.env.example` for documentation.
-
-3. **Run the development server**
-
-   ```bash
-   bun dev
-   ```
-
-4. Open `http://localhost:3000` in your browser.
-
-## Project Structure
-
-```
-├── src/                    # All application source code
-│   ├── app/                # Next.js App Router pages (105 pages across 4 portals)
-│   ├── components/         # React components (~692 .tsx files)
-│   ├── lib/                # Server actions (56 files), queries, utilities, SRS/IRT engine
-│   ├── stores/             # Zustand stores (5 stores)
-│   ├── hooks/              # Custom React hooks
-│   └── types/              # TypeScript type definitions
-├── supabase/               # Database migrations (38) and seed SQL scripts
-├── scripts/                # Dev tooling — custom dev server, DB inspection, seeding
-├── public/                 # Static assets — icons, OG images, widget modules
-├── prompts/                # Archived PRDs, specs, and implementation guides
-└── docs/                   # Planning documents and specs
-```
-
-## Key Features
-
-### Learning Engine
-- **7 Testing Modes**: Camp (untimed, immediate feedback), Storm (timed, deferred), Chill (relaxed, skip-friendly), Focus Review (weakest nodes), Custom, Simulation (full exam), Endurance
-- **IRT 2PL Adaptive Mastery**: `P(θ) = 1 / (1 + exp(-a * (θ - b)))` — Newton-Raphson theta updates
-- **Anti-Inflation Readiness Score**: 6-vector system with streak diminishing returns, difficulty ceiling, grey penalty, Bloom ceiling, depth weight, recency decay
-- **SM-2 Spaced Repetition**: Quality derivation from correctness, time, confidence, and lucky-guess signals
-- **Blindspot Queue**: Targets 3 weakest nodes + unexplored grey nodes (28 unit tests)
-
-### Content System
-- **Wiki Browser**: Taxonomy-mapped articles with embedded interactive widgets, citations, and 3D models
-- **3D Lab**: React Three Fiber spatial learning with `frameloop="demand"` zero-waste GPU rendering
-- **Camp Trails**: Structured daily study prescriptions
-- **AI Tutor**: Anthropic-powered contextual explanations (Temperature 0.0, citation-required)
-
-### Admin & Analytics
-- **Full CMS**: Article/question CRUD, taxonomy editor, coverage map, unified content editor, publishing pipeline
-- **CEO Dashboard**: MRR/ARR tracking, P&L, runway, cohort analysis, churn prediction
-- **Analytics**: 8 visualization types with exemplary Suspense architecture (8 independent boundaries)
-- **SME Review Queue**: Subject matter expert content review workflow
-
-## Database
-
-- **51 tables** with Row Level Security (50/51 with RLS)
-- **89+ RLS policies**
-- **38 migrations**
-- Authoritative schema documented in `DATABASE_SCHEMA.sql`
-
-## Verification Commands
+Install dependencies:
 
 ```bash
-bun run lint          # ESLint checks
-bun run type-check    # TypeScript strict mode
-bun run build         # Full production build
+bun install
 ```
 
-## Project Guidance & Conventions
+Create and maintain your own `.env.local`. This repository does not currently include a committed `.env.example`.
 
-- **System prompt & design system**: See `CLAUDE.md` for the Campfire design system, voice guide, and absolute constraints
-- **Architecture & Ecosystem Audit**: See `.sisyphus/notepads/system-architecture/` for the definitive breakdown of the 4-portal structure, state management, and data models.
-- **Local Dev & Crawler Strategy**: See `docs/proposals/DEV-MODE-CRAWLER-AUTH-STRATEGY.md` for instructions on using `DEV_FORCE_USER_ID` to seamlessly authenticate solo founders and headless crawler agents locally.
-- **Database schema**: See `DATABASE_SCHEMA.sql` before any DB work — never hallucinate tables or foreign keys
-- **Agent configuration**: See `AGENTS.md` for AI agent working conventions
+Start the app:
 
-Anyone contributing to SlateCamp should read `CLAUDE.md` first to understand the intent behind the implementation details.
+```bash
+bun run dev
+```
+
+Notes:
+
+- `bun run dev` executes `scripts/dev.js`
+- On Windows, the dev launcher uses `next dev --webpack`
+- On non-Windows platforms, the dev launcher uses `next dev --turbopack`
+
+Other available scripts:
+
+```bash
+bun run dev:turbo
+bun run dev:webpack
+bun run storybook
+bun run build-storybook
+bun run db:seed
+```
+
+## Validation Commands
+
+```bash
+bun run lint
+bun run type-check
+bun test
+bun run build
+```
+
+Current validation status from 2026-04-05:
+
+- `bun run lint`: completes with warnings
+- `bun run type-check`: passes
+- `bun test`: runs but currently has a failing assertion in `src/lib/quiz/mode-presets.test.ts`
+- `bun run build`: currently fails after compile/type-check with missing `.next/required-server-files.json`
+
+## Repository Structure
+
+```text
+src/
+  app/          Next.js routes, layouts, loading states, API routes
+  components/   Shared UI, portal shells, stories, and feature-facing components
+  features/     Larger vertical feature modules such as 3D Lab
+  hooks/        Shared React hooks
+  lib/          Server actions, queries, Supabase helpers, constants, domain logic
+  stores/       Zustand stores
+  types/        Shared TypeScript types
+scripts/        Local tooling and data scripts
+supabase/       Migrations and SQL assets
+docs/           Planning and content-support docs
+.sisyphus/      Internal audit and plan artifacts
+.storybook/     Storybook configuration
+```
+
+## Architecture Notes
+
+- `src/lib/actions` is the mutation layer and uses Server Actions
+- `src/lib/queries` contains read-oriented async modules for server components
+- `src/lib/supabase/server.ts` is the main server-side Supabase entry point
+- Styling is driven from `src/app/globals.css` with Tailwind CSS 4 semantic tokens
+- Shared client state is handled with Zustand in `src/stores`
+- The codebase currently uses both arrow functions and `function` declarations
+- TypeScript is not in strict mode in the current `tsconfig.json`
+
+## Domain Highlights
+
+- Readiness scoring lives in `src/lib/readiness-score.ts`
+- SRS and IRT logic live in `src/lib/srs`
+- Quiz engine logic lives in `src/lib/quiz` and `src/lib/actions/quiz-v2`
+- 3D learning modules live across `src/features/3d-lab` and `src/app/dashboard/3d-lab`
+- Calculators live under `src/app/calculators`
+- Wiki rendering and interaction code lives under `src/components/wiki` and related actions
+
+## Contributor Guidance
+
+- Read `CLAUDE.md` for the current code-backed repo guidance
+- Read `AGENTS.md` and the nearest nested `AGENTS.md` before making scoped changes
+- Treat code and executable config as the source of truth when docs drift

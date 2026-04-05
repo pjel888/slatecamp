@@ -1,14 +1,9 @@
 # Learnings
 
-## 2026-04-02 Refactoring Implementation
-- Created `useSubjectTree.ts` hook: encapsulates taxonomy tree state (tree, loading, expandedNodes, selectedNodeId, questionCount, selectedNode, toggleExpand, setSelectedNodeId, setQuestionCount)
-- Refactored `SubjectDrillSelector.tsx` to use the shared hook (reduced LOC by ~60 lines)
-- Simplified `SubjectPracticeSelector.tsx` to re-export SubjectDrillSelector (was verbatim duplicate)
-- Created `QuadrantOverlay.tsx` component: reusable quadrant label overlay for scatter charts
-- ScoreDisplay adoption for HeroCommandBar: HeroCommandBar's ReadinessRing uses hardcoded hex colors for dark backgrounds (different from ScoreDisplay's CSS variable approach for light themes)
+## 2026-04-05 Current-State Learnings
 
-## 2026-04-02 Context survey baseline
-- Dashboard hot spots are dominated by four large client components (QuickReviewModal 360 LOC, SubjectMasteryCard 356 LOC, the twin SubjectDrill/SubjectPractice selectors 335 LOC each) that embed data fetching, dialog state, and bespoke SVG logic inside a single file.
-- Testing area has two huge orchestrators: SessionShell at 610 LOC (auto-save, timer, mode delegation, analytics) and SessionsTable at 464 LOC (mode mapping + confirmation flow). ReviewHub (338 LOC) and DebriefLayout (324 LOC) act as composite routers for the hub/debrief experience.
-- Analytics client charts (MemoryStrengthQuadrant 291 LOC, TimelineHeatmap 267 LOC, PacingAccuracy 205 LOC, DifficultyMasteryScatter 202 LOC) share nearly identical quadrant overlays and coaching logic but live as separate bespoke implementations.
-- Shared primitives (SectionHeader, Eyebrow, ScoreDisplay, StatCard, ConfirmDialog, DataTable) already standardize typography, score coloring, and confirmation flows. Many dashboard/testing surfaces still duplicate these styles (e.g., `tracking-widest` buttons in ResultsActions, custom readiness rings in HeroCommandBar) instead of reusing the shared exports.
+- The original performance audit contained real findings, but later repo changes removed part of the audited surface area. Reconciliation was needed more than new refactoring.
+- [`QuadrantOverlay.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/analytics/QuadrantOverlay.tsx) is no longer just a planned extraction. It is already wired into the active analytics scatter charts.
+- [`HeroCommandBar.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/dashboard/HeroCommandBar.tsx) no longer carries a custom readiness ring implementation. It now delegates to [`ScoreDisplay`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/shared/score-display.tsx).
+- The subject-selector work described in the original audit is historical only. The current repo does not contain `SubjectDrillSelector.tsx` or `SubjectPracticeSelector.tsx`, so the leftover `useSubjectTree.ts` helper had become dead code.
+- For this audit, the main risk was stale documentation claiming work was pending or implemented in ways that no longer matched the source tree.

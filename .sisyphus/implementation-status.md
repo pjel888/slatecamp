@@ -1,3 +1,5 @@
+> OBSOLETE as of 2026-04-05. This file contains pre-reconciliation performance and inventory notes that no longer match the current source tree.
+
 # SlateCamp Master Implementation Plan
 
 > **Status:** Implementation Roadmap  

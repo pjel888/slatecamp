@@ -1,16 +1,13 @@
 # Problems
 
-The performance audit identified several systemic architectural and implementation problems:
+## Resolved During Reconciliation
 
-## 1. Tightly Coupled Orchestrator Components
-- **`testing/session/SessionShell.tsx` (610 LOC):** Mixes Next.js router side effects, analytics trackers, quiz timers, localStorage persistence, and mode-specific rendering into a single massive file, making it impossible to reuse timers or save logic elsewhere.
-- **`testing/hub/ReviewHub.tsx` & `testing/hub/SessionsTable.tsx`:** Both components fetch and hydrate raw DB rows, compute stats, and render UI simultaneously. Every render recomputes analytics and pagination state instead of delegating to dedicated hooks or reusable tables.
+- Historical selector findings were stale. The codebase no longer contains `SubjectDrillSelector.tsx` or `SubjectPracticeSelector.tsx`, so the old duplication issue is not an active problem in the current tree.
+- The leftover [`useSubjectTree.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/dashboard/useSubjectTree.ts) helper had zero consumers and was removed.
+- Multiple planning documents still described `QuadrantOverlay` as "not integrated" even though it is now used by the live analytics charts.
+- Multiple planning documents still described `HeroCommandBar` as using a custom ring even though it now uses [`ScoreDisplay`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/shared/score-display.tsx).
 
-## 2. Inefficient Rendering & Memory Allocations
-- **`analytics/TimelineHeatmap.tsx`:** Recomputes `visibleWeeks`, clones every row, and rebuilds the `cells` array on *every render* (lines 110-140). For data sets with 50+ weeks, this multiplies into thousands of new objects allocated per prop change, causing noticeable UI stutter.
-- **`testing/hub/SessionsTable.tsx`:** Manually filters, sorts, paginates, and renders rows, bypassing the optimized, virtualized pagination already provided by `shared/data-table.tsx`. This results in duplicate query loops and non-virtualized DOM updates for users with large session histories.
+## Residual Opportunities Outside This Reconciliation Pass
 
-## 3. Duplicated UI Blocks & Shared Primitive Bypass
-- **Component Duplication:** `dashboard/SubjectPracticeSelector.tsx` is a verbatim copy of `SubjectDrillSelector` and still exports `SubjectDrillSelector` (lines 31-78), so bug fixes never reach the “practice” dialog.
-- **Analytics Quadrants:** MemoryStrength, PacingAccuracy, and DifficultyMasteryScatter each reproduce identical quadrant overlays and tooltips (e.g., MemoryStrength lines 135-179, PacingAccuracy lines 142-167), creating triple maintenance burden.
-- **Bypassing Design System:** Several dashboard and testing surfaces duplicate styles and logic instead of reusing the established shared primitives (`SectionHeader`, `Eyebrow`, `ScoreDisplay`, `StatCard`, `ConfirmDialog`, `DataTable`). For example, `ResultsActions` duplicates button typography (`tracking-widest` styles) manually, and `dashboard/HeroCommandBar.tsx` reimplements a readiness ring (lines 60-170) instead of using `<ScoreDisplay>`, duplicating stroke math and typography (only 5 `ScoreDisplay` imports exist vs 90 manual `tabular-nums` spans).
+- [`SessionsTable.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/testing/hub/SessionsTable.tsx) still owns its own filtering and pagination logic instead of using the shared data-table abstraction.
+- [`TimelineHeatmap.tsx`](C:/Users/Philip Lewis/Desktop/slatecamp/src/components/analytics/TimelineHeatmap.tsx) remains a candidate for targeted render optimization if it becomes a measured hotspot.

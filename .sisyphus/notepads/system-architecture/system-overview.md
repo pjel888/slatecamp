@@ -1,27 +1,34 @@
 # System Overview
 
-**Date:** 2026-04-04
+**Date:** 2026-04-05
 **App:** SlateCamp
-**Description:** A high-performance, discipline-agnostic study engine tailored for professional licensure exams. It avoids superficial gamification in favor of pedagogical rigor (IRT and Spaced Repetition) and a distinct "Campfire" aesthetic.
 
-## 4-Portal Architecture
-SlateCamp leverages Next.js 16 App Router to strictly isolate contexts:
+SlateCamp is a Next.js App Router application for professional licensure exam prep. The codebase is split across four product portals, uses Supabase for persistence/auth, and centers its pedagogy on IRT-based mastery with spaced repetition.
 
-1. **Dashboard Portal (`/dashboard`)**: The primary B2C/B2B2C student experience. Contains the Wiki, Analytics, 3D Lab, Camp Trails, and the Testing Hub (with 7 modes including Simulation, Endurance, and Camp).
-2. **Admin Portal (`/admin`)**: The internal CMS for content generation. Includes unified article/question editors, taxonomy managers, and the SME (Subject Matter Expert) Review Queue.
-3. **CEO Portal (`/ceo`)**: High-level business observability. Tracks financials (MRR/ARR via LemonSqueezy/PayRex), cohort retention, and churn predictions.
-4. **Developer Portal (`/developer`)**: Internal catalog for design system tokens, feature flag management, and API documentation.
+## Current Snapshot
 
-## The Pedagogical Engine
-Located in `src/lib/srs/` and `src/lib/actions/testing.ts`.
-- **IRT (Item Response Theory) 2PL Model:** Uses Newton-Raphson updates to adjust `theta` (student ability) against item difficulty and discrimination.
-- **Anti-Inflation Readiness Score:** A composite 6-vector score factoring in streak decay, gray-node penalties, and Bloom's taxonomy ceilings.
-- **Spaced Repetition (SM-2):** Adapts intervals based on correctness, time-to-answer, and user-reported confidence.
-- **Blindspot Queue:** An algorithm that prioritizes the weakest taxonomy nodes and actively hunts for "gray" (untested) areas of the syllabus.
+- `src/app/` currently contains 117 `page.tsx` route entries.
+- `src/lib/actions/` currently contains 118 TypeScript files, including tests and submodules.
+- `src/stores/` currently contains 5 Zustand stores.
+- `supabase/migrations/` currently contains 64 migration files.
+- `DATABASE_SCHEMA.sql` currently contains 72 `CREATE TABLE` definitions.
 
-## Core Tech Stack
-- **Framework:** Next.js 16.1.6 (App Router, Server Actions, RSC)
-- **UI & Styling:** React 19, Tailwind CSS 4, shadcn/ui, Framer Motion
-- **Spatial Learning:** React Three Fiber + Three.js (`frameloop="demand"`)
-- **Backend & Auth:** Supabase (PostgreSQL, SSR Auth, RLS)
-- **AI Tutor:** Anthropic SDK (Temperature 0.0, strictly cited Socratic tutoring)
+## Product Portals
+
+1. Dashboard: student-facing study experience under `/dashboard`
+2. Admin: content and taxonomy operations under `/admin`
+3. CEO: business reporting under `/ceo` via `src/app/(protected)/ceo`
+4. Developer: internal documentation and tooling under `/developer`
+
+## Pedagogical Engine
+
+- IRT 2PL logic lives in [`src/lib/srs/irt.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/srs/irt.ts).
+- SM-2 interval scheduling lives in [`src/lib/srs/sm2.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/srs/sm2.ts).
+- SRS update orchestration lives in [`src/lib/srs/update.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/srs/update.ts).
+- Readiness scoring lives in [`src/lib/readiness-score.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/readiness-score.ts).
+- Active quiz session actions are organized under [`src/lib/actions/quiz-v2/`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/actions/quiz-v2), not `src/lib/actions/testing.ts`.
+
+## Request and Auth Flow
+
+- Root [`middleware.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/middleware.ts) adds an `x-pathname` request header and delegates auth/session refresh to [`src/lib/supabase/middleware.ts`](C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/supabase/middleware.ts).
+- Development bypass behavior is implemented in the Supabase server/middleware helpers, not as a short-circuit inside the root middleware file.

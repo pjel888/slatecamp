@@ -1,3 +1,5 @@
+> OBSOLETE as of 2026-04-05. Superseded by `.sisyphus/notepads/system-architecture/` and `.sisyphus/plans/system-architecture-plan.md`.
+
 # SlateCamp Master Architecture
 
 > **Status:** Single Source of Truth  

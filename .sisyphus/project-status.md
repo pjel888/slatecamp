@@ -1,3 +1,5 @@
+> OBSOLETE as of 2026-04-05. Superseded by `.sisyphus/plan-reconciliation-checklist.md`, `.sisyphus/plans/performance-audit-plan.md`, and `.sisyphus/notepads/system-architecture/`.
+
 # SlateCamp Master Status
 
 > **Status:** Project Status & Conflict Resolution  
