@@ -1,5 +1,5 @@
 import { notFound, redirect } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import { startSession } from '@/lib/actions/quiz-v2'
 import type { QuizMode, TaxonomySubject, TaxonomySubtopic } from '@/types/quiz-config'
 import { SetupPageClient } from './client'
@@ -29,7 +29,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
   // ── "Practice Missed Questions" shortcut — skip setup entirely ──────────
   if (source === 'missed' && prevSessionId) {
     const supabase = await createClient()
-    const { data: { user } } = await supabase.auth.getUser()
+    const { data: { user } } = await getUser()
 
     if (user) {
       // Get missed question IDs from the previous session
@@ -98,7 +98,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
   }
 
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
 
   // Fetch all level=1 subject nodes (children of discipline root)
   const { data: subjectNodes } = await supabase

@@ -100,13 +100,13 @@ function AccordionStep({
   const isFuture = !isActive && !isCompleted
 
   return (
-    <div className={`border-b border-[#D4DAE3] last:border-b-0`}>
+    <div className={`border-b border-border last:border-b-0`}>
       {/* Header */}
       <div
         className={[
           'flex items-center gap-3 px-4 py-3',
-          isActive ? 'bg-[#EEF2FC]' : 'bg-white',
-          isCompleted ? 'cursor-pointer hover:bg-[#F8F7F5]' : 'cursor-default',
+          isActive ? 'bg-primary-50' : 'bg-white',
+          isCompleted ? 'cursor-pointer hover:bg-surface-light' : 'cursor-default',
         ].join(' ')}
         onClick={() => isCompleted && onEdit(stepNum)}
         role={isCompleted ? 'button' : undefined}
@@ -117,10 +117,10 @@ function AccordionStep({
           className={[
             'flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-semibold',
             isCompleted
-              ? 'bg-[#2D9F6F] text-white'
+              ? 'bg-success text-white'
               : isActive
-              ? 'bg-[#1B3FC4] text-white'
-              : 'bg-[#D4DAE3] text-[#8896A7]',
+              ? 'bg-primary text-white'
+              : 'bg-border text-text-tertiary',
           ].join(' ')}
         >
           {isCompleted ? '✓' : displayIndex}
@@ -130,7 +130,7 @@ function AccordionStep({
         <span
           className={[
             'text-[13px] font-medium',
-            isFuture ? 'text-[#8896A7]' : 'text-[#1A2332]',
+            isFuture ? 'text-text-tertiary' : 'text-text-primary',
           ].join(' ')}
         >
           {STEP_LABELS[stepNum]}
@@ -139,12 +139,12 @@ function AccordionStep({
         {/* Summary + Edit (completed only) */}
         {isCompleted && (
           <span className="ml-auto flex items-center gap-3">
-            <span className="font-mono text-[10px] text-[#8896A7]">
+            <span className="font-mono text-[10px] text-text-tertiary">
               <StepSummary stepNum={stepNum} />
             </span>
             <button
               type="button"
-              className="font-mono text-[9px] uppercase tracking-wide text-[#1B3FC4] hover:underline"
+              className="font-mono text-[9px] uppercase tracking-wide text-primary hover:underline"
               onClick={(e) => {
                 e.stopPropagation()
                 onEdit(stepNum)
@@ -193,11 +193,11 @@ export function WallConfigurator() {
         }
       `}</style>
 
-      <div id="wall-configurator-root" className="flex min-h-screen flex-col bg-[#F8F7F5]">
+      <div id="wall-configurator-root" className="flex min-h-screen flex-col bg-surface-light">
         {/* Header */}
-        <header className="border-b border-[#D4DAE3] bg-white px-4 py-3 print:hidden">
-          <h1 className="text-lg font-semibold text-[#1A2332]">Wall Configurator</h1>
-          <p className="mt-0.5 text-sm text-[#4A5568]">
+        <header className="border-b border-border bg-white px-4 py-3 print:hidden">
+          <h1 className="text-lg font-semibold text-text-primary">Wall Configurator</h1>
+          <p className="mt-0.5 text-sm text-text-secondary">
             Unified CHB, drywall &amp; paint estimator
           </p>
         </header>
@@ -209,7 +209,7 @@ export function WallConfigurator() {
 
         {/* Accordion */}
         <main className="mx-auto w-full max-w-2xl flex-1 px-0 pb-12 sm:px-4">
-          <div className="overflow-hidden rounded-md border border-[#D4DAE3] bg-white sm:mt-4">
+          <div className="overflow-hidden rounded-md border border-border bg-white sm:mt-4">
             {STEP_SEQUENCE.map((stepNum, idx) => (
               <AccordionStep
                 key={stepNum}

@@ -24,6 +24,8 @@ interface OptionsColumnProps {
   onNext: () => void
 }
 
+const EMPTY_ELIMINATED_IDS: string[] = []
+
 const getOptionState = (
   optionId: string,
   selectedOptionId: string | null,
@@ -62,7 +64,7 @@ export const OptionsColumn = memo(({
   const hasAnswered = selectedOptionId !== null
 
   // ── Elimination state from store (Granular selector) ─────────────────────
-  const eliminatedIds = useQuizStore((s) => s.eliminatedOptions[question.question_id] ?? [])
+  const eliminatedIds = useQuizStore((s) => s.eliminatedOptions[question.question_id] ?? EMPTY_ELIMINATED_IDS)
   const toggleEliminate = useQuizStore((s) => s.toggleEliminate)
 
   // Keyboard submit (Enter / Space) as accessibility fallback

@@ -6,7 +6,7 @@ import { CircleNotch, ArrowsOut, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { getModuleById } from '@/app/dashboard/3d-lab/_config/registry'
+import { getModuleById } from '@/features/3d-lab/config/registry'
 import type { 
   TemplateType, 
   ParametricSceneConfig, 
@@ -14,7 +14,7 @@ import type {
   FloorPlanConfig, 
   CutawaySectionConfig, 
   AnimatedSequenceConfig 
-} from '@/app/dashboard/3d-lab/_types/templates'
+} from '@/features/3d-lab/types/templates'
 
 // ─── Loading Spinner ───────────────────────────────────────────────────────
 

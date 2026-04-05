@@ -2,8 +2,8 @@
 'use client'
 
 import { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment } from '@react-three/drei'
+import { OrbitControls, Environment, PerspectiveCamera } from '@react-three/drei'
+import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
 import { NBCPScene } from './NBCPScene'
 import { NBCPControlPanel } from './NBCPControlPanel'
 import { NBCPTelemetry } from './NBCPTelemetry'
@@ -27,13 +27,9 @@ export default function NBCPEnvelope() {
 
   return (
     <div className="relative h-full w-full">
-      <Canvas
-        frameloop="demand"
-        dpr={[1, 1.5]}
-        shadows
-        camera={{ position: cameraPosition, fov: 40 }}
-      >
+      <CanvasWrapper>
         <Suspense fallback={null}>
+          <PerspectiveCamera makeDefault position={cameraPosition} fov={40} />
           <Environment preset="city" />
           <ambientLight intensity={0.6} />
           <directionalLight
@@ -50,7 +46,7 @@ export default function NBCPEnvelope() {
           />
           <NBCPScene />
         </Suspense>
-      </Canvas>
+      </CanvasWrapper>
       <NBCPControlPanel />
       <NBCPTelemetry />
     </div>

@@ -7,6 +7,7 @@ import {
   CartesianGrid, Tooltip, ReferenceLine, ReferenceArea, Cell,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { QuadrantOverlay } from './QuadrantOverlay'
 import { PACING_TARGET_MS, PASSING_ACCURACY } from '@/lib/constants/analytics'
 import type { PacingAccuracyPoint } from '@/lib/actions/analytics/chart-data'
 
@@ -67,7 +68,7 @@ const buildCoaching = (data: PacingAccuracyPoint[]): { text: string; variant: 'w
 
   if (optimal.length >= data.length * 0.6) {
     return {
-      text: `Most sessions land in the optimal zone — fast and accurate. Strong exam-day pace.`,
+      text: `Most sessions land in the optimal zone â€” fast and accurate. Strong exam-day pace.`,
       variant: 'success',
     }
   }
@@ -138,33 +139,21 @@ export const PacingAccuracy = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-0 px-1 pb-2">
         <div className="relative">
-          {/* Zone labels */}
-          <div className="absolute inset-0 pointer-events-none z-10 flex">
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-start pl-8 pt-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#2D9F6F' }}>
-                  Optimal
-                </span>
-              </div>
-              <div className="flex-1 flex items-end justify-start pl-8 pb-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4951A' }}>
-                  Rushing
-                </span>
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-end pr-4 pt-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#1B3FC4' }}>
-                  Careful
-                </span>
-              </div>
-              <div className="flex-1 flex items-end justify-end pr-4 pb-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D64545' }}>
-                  Struggling
-                </span>
-              </div>
-            </div>
-          </div>
+          <QuadrantOverlay
+            labels={{
+              topLeft: 'Optimal',
+              topRight: 'Careful',
+              bottomLeft: 'Rushing',
+              bottomRight: 'Struggling',
+            }}
+            colors={{
+              topLeft: '#2D9F6F',
+              topRight: '#1B3FC4',
+              bottomLeft: '#D4951A',
+              bottomRight: '#D64545',
+            }}
+            className="[&_span]:text-[10px]"
+          />
 
           <div className="h-[260px]">
             <ResponsiveContainer width="100%" height="100%">

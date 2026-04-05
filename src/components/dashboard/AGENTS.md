@@ -23,7 +23,6 @@ Core dashboard component library for the SlateCamp learning engine. Renders the 
 | `ModeCard.tsx` | Visual card for a test mode (Camp/Storm/Chill/etc.) with rules and CTA. `'use client'` |
 | `ModeIntroScreen.tsx` | Intro modal for new session mode explaining rules. `'use client'` |
 | `TestingHub.tsx` | Landing page for quiz subsystem. Session discovery, recent activity, mode selector. `'use client'` |
-| `SubjectDrillSelector.tsx` | Drill-down UI: discipline to subject to topic to question count + mode. `'use client'` |
 | `SubjectMasteryCard.tsx` | Per-subject readiness score in card form. `'use client'` |
 | `SubjectRadarChart.tsx` | Radar chart of mastery across dimensions. `'use client'` |
 | `SubjectFloorAlert.tsx` | Alert banner if user falls below minimum mastery. `'use client'` |

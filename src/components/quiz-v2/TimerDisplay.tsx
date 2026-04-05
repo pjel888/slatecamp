@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useRef, useMemo } from 'react'
+import { useEffect, useRef } from 'react'
 import { Timer } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import type { PressureLevel } from '@/types/quiz-config'
-import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -38,8 +38,8 @@ const TimerDisplay = ({
   const firedRef = useRef(false)
 
   // Subscriptions to high-frequency state (isolates re-renders here)
-  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
-  const totalTimeMs = useQuizStore((s) => s.timer.limitMs)
+  const elapsedMs = useQuizTimerStore((s) => s.elapsedMs)
+  const totalTimeMs = useQuizTimerStore((s) => s.limitMs)
 
   // Level 0: renders nothing
   if (pressureLevel === 0) return null

@@ -8,6 +8,7 @@ import { CampfireLoader } from '@/components/shared/CampfireLoader'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
 interface SetupPageClientProps {
   mode: QuizMode
@@ -25,6 +26,7 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
   // Reset store on setup mount to clear any leftover state from previous sessions
   useEffect(() => {
     useQuizStore.getState().reset()
+    useQuizTimerStore.getState().resetTimer()
   }, [])
 
   const handleBegin = async (config: QuizSessionConfig) => {

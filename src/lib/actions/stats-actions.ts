@@ -1,5 +1,5 @@
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { getWeekBoundary } from './dashboard-helpers'
 import { transformSyllabusCoverage } from './mastery-actions'
 import { getCachedTaxonomyTreeByDiscipline, getCachedWikiArticles } from './cached-queries'
@@ -126,12 +126,12 @@ export const buildStreakData = (
 }
 
 export const getStreakData = async () => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return { currentStreak: 0, longestStreak: 0, streakStatus: 'broken' as const }
 
   return unstable_cache(
     async () => {
+      const supabase = await createServiceClient()
       const { data: globalStats } = await supabase
         .from('user_global_stats')
         .select('global_current_streak, global_longest_streak, last_study_date')
@@ -152,12 +152,12 @@ export const getStreakData = async () => {
  * Server action to fetch hero data for the current user.
  */
 export const getHeroData = async () => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return null
 
   return unstable_cache(
     async () => {
+      const supabase = await createServiceClient()
       const thisWeek = getWeekBoundary(0)
       const lastWeek = getWeekBoundary(1)
 
@@ -255,10 +255,10 @@ export const getHeroData = async () => {
  * Server action to fetch daily wiki and recent notes data for the current user.
  */
 export const getDailyWikiData = async () => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return { dailyArticle: null, recentNotes: [] }
 
+  const supabase = await createServiceClient()
   const [notesResult, wikiArticlesResult] = await Promise.all([
     supabase
       .from('notes')

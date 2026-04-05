@@ -69,21 +69,21 @@ export const CubicleChecker = () => {
       </div>
       <svg width="100%" viewBox="0 0 420 280" className="max-w-[420px] block" role="img" aria-labelledby="cubicle-viz-title">
         <title id="cubicle-viz-title">Cubicle layout visualization — {ok ? 'compliant' : 'non-compliant'} with 2024 IRR standards</title>
-        <rect x={ox} y={oy} width={mPx} height={mPx} fill="none" stroke="#1B3FC4" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.35" />
-        <text x={ox + mPx + 3} y={oy + mPx / 2} fontSize="7" fill="#1B3FC4" opacity="0.5" dominantBaseline="central">1800mm min</text>
-        <rect x={ox} y={oy} width={cw} height={cd} fill={wOk && dOk ? 'rgba(27,122,60,0.07)' : 'rgba(230,51,41,0.07)'} stroke={wOk && dOk ? '#1B7A3C' : '#E63329'} strokeWidth="1.5" rx="2" />
-        <ellipse cx={wcX} cy={wcY} rx="14" ry="18" fill="#fff" stroke="#aaa" strokeWidth="1" />
-        <text x={wcX} y={wcY} fontSize="7" fill="#888" textAnchor="middle" dominantBaseline="central">WC</text>
-        <line x1={ox} y1={wcY} x2={ox + clPx} y2={wcY} stroke="#E8853A" strokeWidth="0.8" strokeDasharray="2 2" />
-        <text x={ox + clPx / 2} y={wcY - 6} fontSize="7" fill="#E8853A" textAnchor="middle">450mm CL</text>
-        <line x1={ox} y1={oy + cd} x2={ox + dPx} y2={oy + cd} stroke={swOk ? '#E8853A' : '#E63329'} strokeWidth="2.5" />
-        <text x={ox + dPx / 2} y={oy + cd + 11} fontSize="7" fill={swOk ? '#E8853A' : '#E63329'} textAnchor="middle">{door}mm ({swOk ? '→ out ✓' : '← IN ✗'})</text>
-        <line x1={ox} y1={oy - 8} x2={ox + cw} y2={oy - 8} stroke={wOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
-        <text x={ox + cw / 2} y={oy - 13} fontSize="9" fill={wOk ? '#1B7A3C' : '#E63329'} textAnchor="middle">{w}mm {wOk ? '✓' : '✗'}</text>
-        <line x1={ox + cw + 8} y1={oy} x2={ox + cw + 8} y2={oy + cd} stroke={dOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" />
-        <text x={ox + cw + 12} y={oy + cd / 2} fontSize="9" fill={dOk ? '#1B7A3C' : '#E63329'} dominantBaseline="central">{d}mm {dOk ? '✓' : '✗'}</text>
-        <rect x={ox} y={tsY} width={tw} height={Math.round(tw * 0.4)} fill={tOk ? 'rgba(27,122,60,0.08)' : 'rgba(230,51,41,0.08)'} stroke={tOk ? '#1B7A3C' : '#E63329'} strokeWidth="1" strokeDasharray="3 2" rx="2" />
-        <text x={ox + tw / 2} y={tsY + Math.round(tw * 0.2)} fontSize="7" fill={tOk ? '#1B7A3C' : '#E63329'} textAnchor="middle" dominantBaseline="central">Turning: {turn}mm {tOk ? '✓' : '✗ min 1800'}</text>
+        <rect x={ox} y={oy} width={mPx} height={mPx} fill="none" stroke="var(--primary)" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.35" />
+        <text x={ox + mPx + 3} y={oy + mPx / 2} fontSize="7" fill="var(--primary)" opacity="0.5" dominantBaseline="central">1800mm min</text>
+        <rect x={ox} y={oy} width={cw} height={cd} fill={wOk && dOk ? 'var(--success-50)' : 'var(--destructive-50)'} stroke={wOk && dOk ? 'var(--success)' : 'var(--destructive)'} strokeWidth="1.5" rx="2" />
+        <ellipse cx={wcX} cy={wcY} rx="14" ry="18" fill="var(--background)" stroke="var(--border)" strokeWidth="1" />
+        <text x={wcX} y={wcY} fontSize="7" fill="var(--text-tertiary)" textAnchor="middle" dominantBaseline="central">WC</text>
+        <line x1={ox} y1={wcY} x2={ox + clPx} y2={wcY} stroke="var(--camp-orange)" strokeWidth="0.8" strokeDasharray="2 2" />
+        <text x={ox + clPx / 2} y={wcY - 6} fontSize="7" fill="var(--camp-orange)" textAnchor="middle">450mm CL</text>
+        <line x1={ox} y1={oy + cd} x2={ox + dPx} y2={oy + cd} stroke={swOk ? 'var(--camp-orange)' : 'var(--destructive)'} strokeWidth="2.5" />
+        <text x={ox + dPx / 2} y={oy + cd + 11} fontSize="7" fill={swOk ? 'var(--camp-orange)' : 'var(--destructive)'} textAnchor="middle">{door}mm ({swOk ? '→ out ✓' : '← IN ✗'})</text>
+        <line x1={ox} y1={oy - 8} x2={ox + cw} y2={oy - 8} stroke={wOk ? 'var(--success)' : 'var(--destructive)'} strokeWidth="1" />
+        <text x={ox + cw / 2} y={oy - 13} fontSize="9" fill={wOk ? 'var(--success)' : 'var(--destructive)'} textAnchor="middle">{w}mm {wOk ? '✓' : '✗'}</text>
+        <line x1={ox + cw + 8} y1={oy} x2={ox + cw + 8} y2={oy + cd} stroke={dOk ? 'var(--success)' : 'var(--destructive)'} strokeWidth="1" />
+        <text x={ox + cw + 12} y={oy + cd / 2} fontSize="9" fill={dOk ? 'var(--success)' : 'var(--destructive)'} dominantBaseline="central">{d}mm {dOk ? '✓' : '✗'}</text>
+        <rect x={ox} y={tsY} width={tw} height={Math.round(tw * 0.4)} fill={tOk ? 'var(--success-50)' : 'var(--destructive-50)'} stroke={tOk ? 'var(--success)' : 'var(--destructive)'} strokeWidth="1" strokeDasharray="3 2" rx="2" />
+        <text x={ox + tw / 2} y={tsY + Math.round(tw * 0.2)} fontSize="7" fill={tOk ? 'var(--success)' : 'var(--destructive)'} textAnchor="middle" dominantBaseline="central">Turning: {turn}mm {tOk ? '✓' : '✗ min 1800'}</text>
       </svg>
     </div>
   )

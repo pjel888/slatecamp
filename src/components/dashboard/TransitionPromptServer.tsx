@@ -1,5 +1,5 @@
 import { createClient, getUser } from "@/lib/supabase/server";
-import TransitionPrompt from "@/app/dashboard/professional/_components/TransitionPrompt";
+import TransitionPrompt from "@/components/dashboard/TransitionPrompt";
 
 export const TransitionPromptServer = async () => {
   const supabase = await createClient();

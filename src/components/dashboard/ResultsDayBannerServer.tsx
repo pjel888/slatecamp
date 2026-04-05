@@ -1,5 +1,5 @@
 import { createClient, getUser } from "@/lib/supabase/server";
-import ResultsDayBanner from "@/app/dashboard/results-day/_components/ResultsDayBanner";
+import ResultsDayBanner from "@/components/dashboard/ResultsDayBanner";
 
 export const ResultsDayBannerServer = async () => {
   const supabase = await createClient();

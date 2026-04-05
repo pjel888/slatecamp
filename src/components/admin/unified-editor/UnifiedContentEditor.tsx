@@ -160,6 +160,16 @@ const EditorInner = ({
     return () => window.removeEventListener('beforeunload', handler)
   }, [dirty.isAnythingDirty])
 
+  // ── Autosave (10-second interval) ────────────────────────
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (dirty.isAnythingDirty && !isSaving) {
+        window.dispatchEvent(new CustomEvent('unified-editor:save'))
+      }
+    }, 10000)
+    return () => clearInterval(interval)
+  }, [dirty.isAnythingDirty, isSaving])
+
   // ── Primary taxonomy node calculation ───────────────────
   const primaryNode = nodeId 
     ? taxonomyNodes.find(n => n.node_id === nodeId)

@@ -2,7 +2,6 @@
 
 import { createClient, getUser } from '@/lib/supabase/server';
 import type { TestMode } from '@/types/app';
-import { createQuizSession } from './quiz';
 
 export interface DailyMission {
   id: string;

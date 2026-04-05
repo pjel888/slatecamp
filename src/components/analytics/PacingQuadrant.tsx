@@ -7,6 +7,7 @@ import {
   CartesianGrid, Tooltip, ReferenceLine, ReferenceArea, Cell,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { QuadrantOverlay } from './QuadrantOverlay'
 import type { PacingQuadrantPoint } from '@/lib/actions/analytics'
 
 interface Props {
@@ -42,7 +43,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   return (
     <div className="rounded-md bg-white p-2 text-xs" style={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}>
       <p className="font-bold mb-1" style={{ color: '#1A2332' }}>{d.subject}</p>
-      <p style={{ color: '#4A5568' }}>{secs}s avg · {d.accuracy}% accuracy · {d.questionCount}Q</p>
+      <p style={{ color: '#4A5568' }}>{secs}s avg Â· {d.accuracy}% accuracy Â· {d.questionCount}Q</p>
     </div>
   )
 }
@@ -61,7 +62,7 @@ function buildCoaching(data: PacingQuadrantPoint[], targetMs: number, passing: n
   const overthinking = data.filter(d => getQuadrant(d, targetMs, passing) === 'overthinking')
   if (rushing.length > 0) {
     const names = rushing.map(d => d.subject.split(' ').slice(-1)[0]).join(', ')
-    return `You answer ${names} faster than other subjects — and score lower. Try slowing down: spend 30 more seconds per question.`
+    return `You answer ${names} faster than other subjects â€” and score lower. Try slowing down: spend 30 more seconds per question.`
   }
   if (overthinking.length > 0) {
     const names = overthinking.map(d => d.subject.split(' ').slice(-1)[0]).join(', ')
@@ -99,24 +100,20 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
       <CardContent className="p-0 px-1 pb-2">
         {/* Quadrant labels */}
         <div className="relative">
-          <div className="absolute inset-0 pointer-events-none z-10 flex">
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-start pl-8 pt-1">
-                <span className="text-[11px] font-bold text-emerald uppercase tracking-wider">✓ Mastered</span>
-              </div>
-              <div className="flex-1 flex items-end justify-start pl-8 pb-1">
-                <span className="text-[11px] font-bold text-warning uppercase tracking-wider">Rushing</span>
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-end pr-4 pt-1">
-                <span className="text-[11px] font-bold text-primary uppercase tracking-wider">Careful</span>
-              </div>
-              <div className="flex-1 flex items-end justify-end pr-4 pb-1">
-                <span className="text-[11px] font-bold text-destructive uppercase tracking-wider">Overthinking</span>
-              </div>
-            </div>
-          </div>
+          <QuadrantOverlay
+            labels={{
+              topLeft: '✓ Mastered',
+              topRight: 'Careful',
+              bottomLeft: 'Rushing',
+              bottomRight: 'Overthinking',
+            }}
+            colors={{
+              topLeft: '#2D9F6F',
+              topRight: '#1B3FC4',
+              bottomLeft: '#D4951A',
+              bottomRight: '#D64545',
+            }}
+          />
           <div className="h-[280px]">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 20, left: 0, bottom: 30 }}>

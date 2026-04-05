@@ -4,6 +4,7 @@
 import { createClient, createStaticClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
+import { getCachedTaxonomyTreeByDiscipline } from "./cached-queries";
 
 /**
  * Perform a pure Postgres Full-Text Search on wiki articles.
@@ -443,25 +444,85 @@ export interface BreadcrumbItem {
  * Build the breadcrumb trail from a taxonomy node up to the root.
  * Returns an array ordered root-first → current-node-last.
  *
- * Fetches only the ancestor chain (3-4 rows) instead of the entire discipline
- * tree (500+ rows).
+ * This version uses the cached taxonomy tree to avoid sequential roundtrips.
  */
-export async function getBreadcrumbTrail(nodeId: string): Promise<BreadcrumbItem[]> {
+export async function getBreadcrumbTrail(nodeId: string, disciplineId?: string): Promise<BreadcrumbItem[]> {
   const supabase = await createClient()
+  let finalDisciplineId = disciplineId
+
+  // 1. If disciplineId is not provided, fetch it from the node first
+  if (!finalDisciplineId) {
+    const { data: node } = await supabase
+      .from('taxonomy_tree')
+      .select('discipline_id')
+      .eq('node_id', nodeId)
+      .single()
+    finalDisciplineId = node?.discipline_id
+  }
+
+  if (!finalDisciplineId) return []
+
+  // 2. Fetch the entire discipline tree (cached)
+  const tree = await getCachedTaxonomyTreeByDiscipline(finalDisciplineId) as TaxonomyNode[]
   const trail: BreadcrumbItem[] = []
+  
+  // 3. Build the trail in-memory
+  const nodeMap = new Map(tree.map(n => [n.node_id, n]))
   let currentId: string | null = nodeId
 
   while (currentId) {
-    const { data: node } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, parent_id, name, slug, level')
-      .eq('node_id', currentId)
-      .single()
-
+    const node = nodeMap.get(currentId)
     if (!node) break
-    trail.unshift({ name: node.name, slug: node.slug, node_id: node.node_id, level: node.level })
+    
+    trail.unshift({ 
+      name: node.name, 
+      slug: (node as any).slug ?? null, 
+      node_id: node.node_id, 
+      level: node.level 
+    })
+    
     currentId = node.parent_id
   }
 
   return trail
 }
+
+/**
+ * Fetch sibling taxonomy nodes for a given node, ordered by sort_order.
+ * Used for "Previous" and "Next" article navigation.
+ */
+export async function getArticleSiblings(nodeId: string): Promise<{ prev: TaxonomyNode | null; next: TaxonomyNode | null }> {
+  const supabase = await createClient()
+
+  // 1. Get current node to find parent and sort_order
+  const { data: currentNode, error: currentError } = await supabase
+    .from('taxonomy_tree')
+    .select('parent_id, sort_order, discipline_id, level')
+    .eq('node_id', nodeId)
+    .single()
+
+  if (currentError || !currentNode) return { prev: null, next: null }
+
+  // 2. Fetch all siblings in the same discipline and level with the same parent
+  const { data: siblings, error: siblingsError } = await supabase
+    .from('taxonomy_tree')
+    .select('*')
+    .eq('parent_id', currentNode.parent_id)
+    .eq('discipline_id', currentNode.discipline_id)
+    .eq('level', currentNode.level)
+    .is('deprecated_at', null)
+    .order('sort_order', { ascending: true, nullsFirst: false })
+    .order('name', { ascending: true })
+
+  if (siblingsError || !siblings || siblings.length <= 1) return { prev: null, next: null }
+
+  // 3. Find current index and pick neighbors
+  const currentIndex = siblings.findIndex(s => s.node_id === nodeId)
+  if (currentIndex === -1) return { prev: null, next: null }
+
+  return {
+    prev: (siblings[currentIndex - 1] as unknown as TaxonomyNode) ?? null,
+    next: (siblings[currentIndex + 1] as unknown as TaxonomyNode) ?? null,
+  }
+}
+

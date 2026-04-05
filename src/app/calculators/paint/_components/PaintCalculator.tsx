@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import type { CalculatorConfig } from '@/app/dashboard/3d-lab/_types/templates'
+import type { CalculatorConfig } from '@/features/3d-lab/types/templates'
 
 const CalculatorTemplate = dynamic(
   () => import('@/app/dashboard/3d-lab/_templates/CalculatorTemplate'),

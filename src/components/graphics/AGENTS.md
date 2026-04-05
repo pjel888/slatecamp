@@ -17,6 +17,7 @@ Campfire Graphic System v2 -- design tokens, icon system, CSS patterns, and SVG 
 | `icons/Icon.tsx` | SCIcon component: standardized Phosphor icon wrapper. Maps size names (xs/sm/md/lg/xl/2xl) to pixel values (14/18/20/24/32/48). Supports weight, color, className, and ariaLabel. `'use client'` |
 | `icons/iconMap.ts` | Registry mapping string icon names to Phosphor icon components. Used for dynamic icon resolution. |
 | `icons/index.ts` | Barrel exports for icon system. |
+| `logos/SlateCampLogo.tsx` | SlateCamp logo SVG. Sized via className. |
 | `ui/NoiseFilter.tsx` | SVG noise filter component for textured backgrounds. Reusable in any SVG context. |
 
 ## Subdirectories
@@ -24,6 +25,7 @@ Campfire Graphic System v2 -- design tokens, icon system, CSS patterns, and SVG 
 | Directory | Purpose | File Count |
 |-----------|---------|------------|
 | `icons/` | SCIcon wrapper and icon name-to-component mapping | 3 files |
+| `logos/` | Logo SVG components (SlateCampLogo, SlateCampLogomark) | 2 files |
 | `ui/` | SVG utility components (NoiseFilter) | 1 file |
 
 ## For AI Agents

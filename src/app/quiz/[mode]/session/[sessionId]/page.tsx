@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
-import type { QuizMode, QuizSessionConfig } from '@/types/quiz-config'
+import { createClient, getUser } from '@/lib/supabase/server'
+import type { QuizAnswerState, QuizMode, QuizSessionConfig } from '@/types/quiz-config'
 import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { stripQuestionForClient } from '@/lib/quiz/question-selection'
 
@@ -15,10 +15,10 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
 
   // Parallelize auth and session check
   const [{ data: { user } }, sessionResponse] = await Promise.all([
-    supabase.auth.getUser(),
+    getUser(),
     supabase
       .from('quiz_sessions')
-      .select('session_id, user_id, config, question_ids')
+      .select('session_id, user_id, config, question_ids, current_question_index')
       .eq('session_id', sessionId)
       .single()
   ])
@@ -33,13 +33,28 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
   // Fetch only the first batch (lookahead) server-side to minimize payload.
   // The client will fetch the remainder in the background.
   const questionIds: string[] = session.question_ids ?? []
-  const INITIAL_BATCH_SIZE = 10
-  const initialBatchIds = questionIds.slice(0, INITIAL_BATCH_SIZE)
+  const resumeIndex = Math.min(
+    Math.max(session.current_question_index ?? 0, 0),
+    Math.max(questionIds.length - 1, 0),
+  )
+  const INITIAL_LOOKAHEAD = 10
+  const initialLoadCount = Math.min(
+    questionIds.length,
+    Math.max(INITIAL_LOOKAHEAD, resumeIndex + INITIAL_LOOKAHEAD),
+  )
+  const initialBatchIds = questionIds.slice(0, initialLoadCount)
 
-  const { data: initialQuestions } = await supabase
-    .from('questions')
-    .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type, metadata')
-    .in('question_id', initialBatchIds)
+  const [{ data: initialQuestions }, { data: interactions }] = await Promise.all([
+    supabase
+      .from('questions')
+      .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type')
+      .in('question_id', initialBatchIds),
+    supabase
+      .from('user_interactions')
+      .select('question_id, selected_option_id, is_correct, time_spent_ms, confidence_score, interaction_timestamp, is_flagged')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id),
+  ])
 
   // Build config from session data or use mode preset
   const config: QuizSessionConfig = (session.config as QuizSessionConfig) ??
@@ -57,6 +72,23 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
     stripQuestionForClient(q as any, i + 1),
   )
 
+  const restoredAnswers = Object.fromEntries(
+    (interactions ?? []).map((interaction) => [
+      interaction.question_id,
+      {
+        selectedOptionId: interaction.selected_option_id,
+        confidenceLevel: interaction.confidence_score ?? null,
+        isCorrect: interaction.is_correct,
+        isSkipped: false,
+        isFlagged: interaction.is_flagged ?? false,
+        timeStartedMs: 0,
+        timeSpentMs: interaction.time_spent_ms ?? 0,
+        submittedAt: interaction.interaction_timestamp,
+        questionStatus: 'reviewed',
+      } satisfies Partial<QuizAnswerState>,
+    ]),
+  )
+
   // Dynamic import for client shell
   const { QuizShell } = await import('@/components/quiz-v2/QuizShell')
 
@@ -66,6 +98,9 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
       config={config}
       questions={initialClientQuestions}
       allQuestionIds={questionIds}
+      totalQuestionCount={questionIds.length}
+      initialCurrentIndex={resumeIndex}
+      restoredAnswers={restoredAnswers}
     />
   )
 }

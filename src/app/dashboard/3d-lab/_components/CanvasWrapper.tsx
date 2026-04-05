@@ -1,12 +1,10 @@
 'use client'
 
-import { memo, type ReactNode, Suspense, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { memo, type ReactNode, Suspense, useState, useEffect } from 'react'
+import { useThree } from '@react-three/fiber'
 import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
 import { useInvalidateOnChange } from '../_hooks/useInvalidateOnChange'
-import { SceneBase } from './SceneBase'
-import { StudioLighting } from './StudioLighting'
+import { SceneTunnel } from './GlobalCanvasPortal'
 
 interface CanvasWrapperProps {
   children: ReactNode
@@ -43,10 +41,8 @@ function InvalidateRegistrar() {
 
 /**
  * Shared Canvas wrapper for all new 3D Lab scenes.
- * Uses frameloop="demand" + Zustand invalidate bridge for zero-waste rendering.
- *
- * Loading overlay is shown only until the Canvas WebGL context is created,
- * then hidden. Without this gate the spinner would overlay the scene permanently.
+ * Portals content into a persistent Global Canvas via SceneTunnel.
+ * Prevents WebGL context proliferation (UX Plan §01, Audit 2026).
  */
 export const CanvasWrapper = memo(function CanvasWrapper({
   children,
@@ -66,52 +62,34 @@ export const CanvasWrapper = memo(function CanvasWrapper({
   clearColor,
   glConfig,
 }: CanvasWrapperProps) {
-  const [canvasReady, setCanvasReady] = useState(false)
+  // Use a local state for when the scene is "mounted" into the global canvas
+  const [ready, setReady] = useState(false)
+  useEffect(() => {
+    setReady(true)
+    return () => setReady(false)
+  }, [])
 
   return (
-    <div className="relative h-full w-full overflow-hidden">
-      {/* Loading overlay — removed once Canvas WebGL context is created */}
-      <CanvasLoadingOverlay visible={!canvasReady} />
+    <div className="relative h-full w-full overflow-hidden pointer-events-none">
+      {/* Loading overlay */}
+      <CanvasLoadingOverlay visible={!ready} />
 
-      <Canvas
-        frameloop="demand"
-        dpr={[1, 1.5]}
-        camera={
-          orthographic
-            ? { position: cameraPosition, zoom: cameraZoom, near: 0.1, far: 100 }
-            : { position: cameraPosition, fov: cameraFov }
-        }
-        orthographic={orthographic}
-        flat={flat}
-        shadows={!disableShadows}
-        gl={glConfig}
-        style={{ position: 'absolute', inset: 0 }}
-        onCreated={(state) => {
-          if (clearColor) {
-            state.gl.setClearColor(clearColor)
-          }
-          setCanvasReady(true)
-        }}
-      >
+      {/* 
+         Content is portaled into the persistent Global Canvas.
+         This prevents WebGL context re-initialization on navigation.
+      */}
+      <SceneTunnel.In>
         <InvalidateRegistrar />
-
-        {/* Architectural studio lighting rig (UX Plan §02) */}
-        {!disableLighting && <StudioLighting />}
-
-        {/* Sky + ground + fog + contact shadows (UX Plan §01) */}
-        {!disableSceneBase && <SceneBase showGround={showGround} />}
-
-        <OrbitControls
-          makeDefault
-          minPolarAngle={minPolarAngle}
-          maxPolarAngle={maxPolarAngle}
-          {...(orthographic
-            ? { minZoom: 30, maxZoom: 200, enableDamping: true, dampingFactor: 0.1 }
-            : { minDistance, maxDistance }
-          )}
-        />
-        <Suspense fallback={null}>{children}</Suspense>
-      </Canvas>
+        
+        {/*
+           Scene-specific lighting / base logic could go here if needed,
+           but ideally layout handles common defaults.
+        */}
+        
+        <Suspense fallback={null}>
+          {children}
+        </Suspense>
+      </SceneTunnel.In>
     </div>
   )
 })

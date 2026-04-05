@@ -54,17 +54,22 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
 
   const saveEdit = async () => {
     if (!editingId || !editingName.trim()) return
+    const targetId = editingId
+    const newName = editingName.trim()
+    const oldNodes = [...nodes]
 
-    const { error } = await updateTaxonomyNode(editingId, { name: editingName.trim() })
-
-    if (!error) {
-      setNodes(prev => prev.map(n =>
-        n.node_id === editingId ? { ...n, name: editingName.trim() } : n
-      ))
-    }
-
+    // Optimistic update
+    setNodes(prev => prev.map(n =>
+      n.node_id === targetId ? { ...n, name: newName } : n
+    ))
     setEditingId(null)
     setEditingName('')
+
+    const { error } = await updateTaxonomyNode(targetId, { name: newName })
+
+    if (error) {
+      setNodes(oldNodes) // Rollback
+    }
   }
 
   const addRootNode = async () => {
@@ -104,14 +109,19 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
 
   const confirmDelete = async () => {
     if (!nodeToDelete) return
+    const targetId = nodeToDelete
+    const oldNodes = [...nodes]
 
-    const { error } = await deleteTaxonomyNode(nodeToDelete)
-
-    if (!error) {
-      setNodes(prev => prev.filter(n => n.node_id !== nodeToDelete))
-    }
-
+    // Optimistic delete
+    setNodes(prev => prev.filter(n => n.node_id !== targetId))
     setNodeToDelete(null)
+    setShowDeleteDialog(false)
+
+    const { error } = await deleteTaxonomyNode(targetId)
+
+    if (error) {
+      setNodes(oldNodes) // Rollback
+    }
   }
 
   const renderNode = (node: TaxonomyNode, level: number = 0) => {

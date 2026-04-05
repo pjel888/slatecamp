@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { MagnifyingGlass, NotePencil } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Omnibar } from '@/components/shared/Omnibar'
 import { QuickCaptureDrawer } from '@/components/notes/QuickCaptureDrawer'
 import { NotificationBell } from '@/components/notifications/NotificationBell'
@@ -12,13 +11,7 @@ import {
   TooltipTrigger,
   TooltipContent,
 } from '@/components/ui/tooltip'
-import { cn } from '@/lib/utils'
-
-const iconButtonClass = cn(
-  'flex items-center justify-center w-9 h-9 rounded-sm',
-  'text-muted-foreground hover:bg-muted hover:text-foreground',
-  'transition-colors duration-150',
-)
+import { Button } from '@/components/ui/button'
 
 interface HeaderActionsProps {
   userId?: string
@@ -46,15 +39,17 @@ export const HeaderActions = ({ userId }: HeaderActionsProps) => {
         {/* Search trigger — Omnibar handles its own Ctrl+K */}
         <Tooltip>
           <TooltipTrigger asChild>
-            <button
+            <Button
+              variant="ghost"
+              size="icon-lg"
               onClick={() => setOmnibarOpen(true)}
-              className={iconButtonClass}
+              className="text-muted-foreground hover:text-foreground"
               aria-label="Search (Ctrl+K)"
             >
-              <SCIcon icon={MagnifyingGlass} size="base" />
-            </button>
+              <MagnifyingGlass aria-hidden="true" />
+            </Button>
           </TooltipTrigger>
-          <TooltipContent side="bottom" className="bg-foreground text-white font-medium text-xs">
+          <TooltipContent side="bottom">
             Search
           </TooltipContent>
         </Tooltip>
@@ -62,15 +57,17 @@ export const HeaderActions = ({ userId }: HeaderActionsProps) => {
         {/* Quick note trigger */}
         <Tooltip>
           <TooltipTrigger asChild>
-            <button
+            <Button
+              variant="ghost"
+              size="icon-lg"
               onClick={() => openDrawer()}
-              className={iconButtonClass}
+              className="text-muted-foreground hover:text-foreground"
               aria-label="Quick note (Ctrl+Shift+N)"
             >
-              <SCIcon icon={NotePencil} size="base" />
-            </button>
+              <NotePencil aria-hidden="true" />
+            </Button>
           </TooltipTrigger>
-          <TooltipContent side="bottom" className="bg-foreground text-white font-medium text-xs">
+          <TooltipContent side="bottom">
             Quick Note
           </TooltipContent>
         </Tooltip>

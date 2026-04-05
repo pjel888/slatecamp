@@ -8,7 +8,6 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import Link from 'next/link'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
-import { QuestionPreviewPanel } from './QuestionPreviewPanel'
 
 interface QuestionEditorProps {
   question?: {
@@ -276,18 +275,6 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
             </DialogFooter>
           </DialogContent>
         </Dialog>
-      </div>
-
-      {/* RIGHT: Preview panel */}
-      <div className="w-1/2">
-        <QuestionPreviewPanel
-          stem={text}
-          options={options}
-          correctAnswer={correctAnswer}
-          rationale={rationale}
-          codeCitation={codeCitation}
-          difficulty={difficulty}
-        />
       </div>
     </div>
   )

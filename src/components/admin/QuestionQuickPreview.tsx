@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { CampModePreview } from './preview/CampModePreview'
 import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover'
 
 interface QuestionQuickPreviewProps {
@@ -57,13 +56,7 @@ export const QuestionQuickPreview = ({
           </button>
         </div>
         <div className="p-3">
-          <CampModePreview
-            stem={stem}
-            options={normalizedOptions}
-            correctAnswer={safeCorrectIndex}
-            rationale={rationale ?? ''}
-            codeCitation={codeCitation ?? undefined}
-          />
+          <div className="text-sm text-text-tertiary">Preview unavailable (Pass 1 cleanup)</div>
         </div>
       </PopoverContent>
     </Popover>

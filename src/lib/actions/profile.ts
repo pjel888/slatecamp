@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
+import { revalidateDashboardCacheTags } from './cache-tags'
 
 export type StudyWindow = 'morning' | 'evening' | 'both' | 'any'
 
@@ -127,6 +128,7 @@ export const uploadAvatar = async (formData: FormData) => {
 
     if (updateError) throw updateError
 
+    revalidateDashboardCacheTags(user.id)
     revalidatePath('/dashboard/settings')
     return { success: true, avatarUrl: publicUrl }
   } catch (err) {
@@ -134,3 +136,4 @@ export const uploadAvatar = async (formData: FormData) => {
     return { error: 'Failed to upload avatar.' }
   }
 }
+

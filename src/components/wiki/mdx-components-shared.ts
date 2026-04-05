@@ -1,26 +1,12 @@
 import React from 'react'
-import { Note, Warn, Tip, Example, Callout } from './WikiCallout'
-import { WikiCalloutBox } from './WikiCalloutBox'
-import { WikiExamTable } from './WikiExamTable'
-import { WikiArticleHero } from './WikiArticleHero'
-import { WikiPartHeader } from './WikiPartHeader'
-import { WikiChangedPill } from './WikiChangedPill'
-import { WikiMistakeCard } from './WikiMistakeCard'
-import { WikiMistakeList } from './WikiMistakeList'
-import { ElaborativeInterrogation } from './ElaborativeInterrogation'
-import { KeyValues } from './KeyValues'
-import { FormulaBlock } from './FormulaBlock'
-import { InlineQuiz } from './InlineQuiz'
-import { Tabs, Tab } from './WikiTabs'
-import { Accordion, AccordionItem } from './WikiAccordion'
-import { LawCallout } from './LawCallout'
-import { ExamTip } from './ExamTip'
-import { AlertBox } from './AlertBox'
-import { ComparisonTable } from './ComparisonTable'
-import { SubjectSnapshot } from './SubjectSnapshot'
-import { ProcessFlow } from './ProcessFlow'
-import { AuthorityContent } from './AuthorityContent'
-import { GenericBlock, SPP206RefServices, SPP207RefServices } from './GenericBlock'
+import {
+  Note, Warn, Tip, Example, Callout, AlertBox, AuthorityContent,
+  WikiCalloutBox, WikiExamTable, WikiArticleHero, WikiPartHeader,
+  WikiChangedPill, WikiMistakeCard, WikiMistakeList, ElaborativeInterrogation,
+  KeyValues, FormulaBlock, InlineQuiz, Tabs, Tab, Accordion, AccordionItem,
+  LawCallout, ExamTip, ComparisonTable, SubjectSnapshot, ProcessFlow,
+  GenericBlock, SPP206RefServices, SPP207RefServices
+} from '@/components/wiki'
 
 /** Derive a URL-safe anchor slug from heading text. */
 const toHeadingId = (children: React.ReactNode): string | undefined =>

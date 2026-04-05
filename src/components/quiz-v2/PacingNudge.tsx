@@ -5,6 +5,7 @@ import { ArrowRight } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { getMedianTimeForDifficulty, type PressureLevel } from '@/lib/quiz/pressure-config'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -28,7 +29,7 @@ const PacingNudge = memo(({
   const autoAdvanceFired = useRef(false)
 
   // Subscriptions
-  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
+  const elapsedMs = useQuizTimerStore((s) => s.elapsedMs)
   const timeStartedMs = useQuizStore((s) => s.answers[questionId]?.timeStartedMs ?? 0)
 
   const questionTimeMs = timeStartedMs > 0 ? Date.now() - timeStartedMs : 0

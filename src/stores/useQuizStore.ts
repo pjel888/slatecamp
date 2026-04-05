@@ -14,27 +14,16 @@ import type {
   QuestionType,
   QuizAnswerState,
   QuestionStatus,
-  TimerColorState,
   StartSessionResult,
   SubmitAnswerInput,
   EndSessionResult,
   FeedbackData,
   ErrorDiagnostic,
-  PressureLevel,
 } from '@/types/quiz-config'
 import type { GestureSignalEvent } from '@/types/patent'
 import { generateBindingTokenSafe } from '@/lib/cage/generateBindingToken'
 
 // ─── Slice Types ────────────────────────────────────────────────────────────
-
-interface TimerState {
-  startedAt: number | null
-  pausedAt: number | null
-  elapsedMs: number
-  limitMs: number | null
-  isRunning: boolean
-  colorState: TimerColorState
-}
 
 interface FeedbackState {
   visible: boolean
@@ -66,6 +55,7 @@ interface UIState {
   microBreakVisible: boolean
   offlineBannerVisible: boolean
   calculatingResults: boolean
+  saveStatus: 'idle' | 'saving' | 'saved' | 'error' | 'offline'
 }
 
 // ─── Slice Interfaces ───────────────────────────────────────────────────────
@@ -79,6 +69,8 @@ interface SessionSlice {
   currentIndex: number
   totalQuestions: number
   answers: Record<string, QuizAnswerState>
+  answersVersion: number
+  flaggedSet: Set<string>
   eliminatedOptions: Record<string, string[]>
   results: EndSessionResult | null
   pendingSubmissions: SubmitAnswerInput[]
@@ -92,7 +84,13 @@ interface SessionSlice {
   deviceSensorsAvailable: boolean
 
   // Actions
-  initSession: (result: StartSessionResult) => void
+  initSession: (
+    result: StartSessionResult & {
+      allQuestionIds?: string[]
+      initialCurrentIndex?: number
+      restoredAnswers?: Record<string, Partial<QuizAnswerState>>
+    },
+  ) => void
   reset: () => void
   selectAnswer: (questionId: string, optionId: string) => void
   deselectAnswer: (questionId: string) => void
@@ -110,14 +108,7 @@ interface SessionSlice {
   setSensorsAvailable: (available: boolean) => void
   setHasHydrated: (hydrated: boolean) => void
   addQuestions: (newQuestions: QuestionForClient[]) => void
-}
-
-interface TimerSlice {
-  timer: TimerState
-  startTimer: (limitMs?: number) => void
-  pauseTimer: () => void
-  resumeTimer: () => void
-  tickTimer: () => void
+  rebuildDerivedState: () => void
 }
 
 interface UISlice {
@@ -160,18 +151,9 @@ interface SettingsSlice {
   updateSettings: (partial: Partial<SettingsState>) => void
 }
 
-type QuizStore = SessionSlice & TimerSlice & UISlice & StatsSlice & SettingsSlice
+type QuizStore = SessionSlice & UISlice & StatsSlice & SettingsSlice
 
 // ─── Default States ─────────────────────────────────────────────────────────
-
-const defaultTimer = (): TimerState => ({
-  startedAt: null,
-  pausedAt: null,
-  elapsedMs: 0,
-  limitMs: null,
-  isRunning: false,
-  colorState: 'normal',
-})
 
 const defaultFeedback = (): FeedbackState => ({
   visible: false,
@@ -198,6 +180,7 @@ const defaultUI = (): UIState => ({
   microBreakVisible: false,
   offlineBannerVisible: false,
   calculatingResults: false,
+  saveStatus: 'idle',
 })
 
 const defaultSettings = (): SettingsState => ({
@@ -221,6 +204,27 @@ const makeAnswerState = (now: number): QuizAnswerState => ({
   questionStatus: 'idle',
 })
 
+const buildFlaggedSet = (answers: Record<string, QuizAnswerState>) => {
+  const set = new Set<string>()
+  for (const [qid, ans] of Object.entries(answers)) {
+    if (ans.isFlagged) set.add(qid)
+  }
+  return set
+}
+
+const updateAnswerEntry = (
+  answers: Record<string, QuizAnswerState>,
+  questionId: string,
+  updater: (prev: QuizAnswerState) => QuizAnswerState,
+) => {
+  const prev = answers[questionId]
+  if (!prev) return false
+  const next = updater(prev)
+  if (next === prev) return false
+  answers[questionId] = next
+  return true
+}
+
 // ─── Slices ─────────────────────────────────────────────────────────────────
 
 const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelector", never], ["zustand/persist", unknown]], [], SessionSlice> = (set, get) => ({
@@ -232,6 +236,8 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   currentIndex: 0,
   totalQuestions: 0,
   answers: {},
+  answersVersion: 0,
+  flaggedSet: new Set(),
   eliminatedOptions: {},
   results: null,
   pendingSubmissions: [],
@@ -245,12 +251,20 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   initSession: (result) => {
     const now = Date.now()
     const answers: Record<string, QuizAnswerState> = {}
-    for (const q of result.questions) {
-      answers[q.question_id] = makeAnswerState(now)
+    const questionIds = result.allQuestionIds ?? result.questions.map((question) => question.question_id)
+
+    for (const questionId of questionIds) {
+      const restored = result.restoredAnswers?.[questionId]
+      answers[questionId] = {
+        ...makeAnswerState(now),
+        ...restored,
+        timeStartedMs:
+          restored?.submittedAt == null &&
+          (result.initialCurrentIndex ?? 0) === questionIds.indexOf(questionId)
+            ? now
+            : 0,
+      }
     }
-    const limitMs = result.config.timer.enabled && result.config.timer.totalSeconds
-      ? result.config.timer.totalSeconds * 1000
-      : null
 
     set({
       sessionId: result.sessionId,
@@ -258,11 +272,15 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       status: 'intro',
       mode: result.config.mode,
       questions: result.questions,
-      currentIndex: 0,
+      currentIndex: Math.min(
+        result.initialCurrentIndex ?? 0,
+        Math.max((result.totalQuestions ?? result.questions.length) - 1, 0),
+      ),
       totalQuestions: result.totalQuestions,
       answers,
+      answersVersion: Object.keys(answers).length,
+      flaggedSet: buildFlaggedSet(answers),
       eliminatedOptions: {},
-      timer: { ...defaultTimer(), limitMs },
       feedback: defaultFeedback(),
       ui: defaultUI(),
       nonces: result.nonces ?? {},
@@ -283,8 +301,9 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
     currentIndex: 0,
     totalQuestions: 0,
     answers: {},
+    answersVersion: 0,
+    flaggedSet: new Set(),
     eliminatedOptions: {},
-    timer: defaultTimer(),
     feedback: defaultFeedback(),
     ui: defaultUI(),
     streakCount: 0,
@@ -299,42 +318,45 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   }),
 
   selectAnswer: (questionId, optionId) => {
-    const { answers } = get()
-    const prev = answers[questionId]
-    if (!prev) return
-    set({
-      answers: {
-        ...answers,
-        [questionId]: {
-          ...prev,
-          selectedOptionId: optionId,
-          questionStatus: prev.questionStatus === 'idle' ? 'selected' : prev.questionStatus,
-        },
-      },
+    set((state) => {
+      const didUpdate = updateAnswerEntry(state.answers, questionId, (prev) => ({
+        ...prev,
+        selectedOptionId: optionId,
+        questionStatus: prev.questionStatus === 'idle' ? 'selected' : prev.questionStatus,
+      }))
+      if (!didUpdate) return {}
+      return {
+        answers: state.answers,
+        answersVersion: state.answersVersion + 1,
+      }
     })
   },
 
   deselectAnswer: (questionId) => {
-    const { answers } = get()
-    const prev = answers[questionId]
-    if (!prev) return
-    set({
-      answers: {
-        ...answers,
-        [questionId]: { ...prev, selectedOptionId: null },
-      },
+    set((state) => {
+      const didUpdate = updateAnswerEntry(state.answers, questionId, (prev) => ({
+        ...prev,
+        selectedOptionId: null,
+      }))
+      if (!didUpdate) return {}
+      return {
+        answers: state.answers,
+        answersVersion: state.answersVersion + 1,
+      }
     })
   },
 
   setConfidence: (questionId, level) => {
-    const { answers } = get()
-    const prev = answers[questionId]
-    if (!prev) return
-    set({
-      answers: {
-        ...answers,
-        [questionId]: { ...prev, confidenceLevel: level },
-      },
+    set((state) => {
+      const didUpdate = updateAnswerEntry(state.answers, questionId, (prev) => ({
+        ...prev,
+        confidenceLevel: level,
+      }))
+      if (!didUpdate) return {}
+      return {
+        answers: state.answers,
+        answersVersion: state.answersVersion + 1,
+      }
     })
   },
 
@@ -382,25 +404,11 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       sensorsAvailable: deviceSensorsAvailable,
     }
 
-    set({ status: 'submitting', ...nextCageState })
+    set({ status: 'submitting', ...nextCageState, ui: { ...get().ui, saveStatus: 'saving' } })
 
     try {
       const result = await submitAnswerAction(input)
-      const { answers: currentAnswers } = get()
-      const currentAnswerState = currentAnswers[question.question_id]
-
-      if (!currentAnswerState) return
-
-      const updatedAnswers = {
-        ...currentAnswers,
-        [question.question_id]: {
-          ...currentAnswerState,
-          isCorrect: result.isCorrect,
-          timeSpentMs,
-          submittedAt: new Date().toISOString(),
-          questionStatus: (config?.feedback.timing === 'immediate' ? 'feedback' : 'reviewed') as QuestionStatus,
-        },
-      }
+      set({ ui: { ...get().ui, saveStatus: 'saved' } })
 
       const prevStreak = get().streakCount
       const isLuckyGuess = result.errorDiagnostic?.category === 'lucky_guess'
@@ -410,10 +418,21 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
           ? { streakCount: 0, streakBroken: false }
           : {}
 
-      set({
-        answers: updatedAnswers,
-        status: config?.feedback.timing === 'immediate' ? 'feedback' : 'active',
-        ...streakUpdate,
+      set((state) => {
+        const didUpdate = updateAnswerEntry(state.answers, question.question_id, (prev) => ({
+          ...prev,
+          isCorrect: result.isCorrect,
+          timeSpentMs,
+          submittedAt: new Date().toISOString(),
+          questionStatus: (config?.feedback.timing === 'immediate' ? 'feedback' : 'reviewed') as QuestionStatus,
+        }))
+        if (!didUpdate) return {}
+        return {
+          answers: state.answers,
+          answersVersion: state.answersVersion + 1,
+          status: config?.feedback.timing === 'immediate' ? 'feedback' : 'active',
+          ...streakUpdate,
+        }
       })
 
       if (config?.feedback.timing === 'immediate') {
@@ -450,25 +469,25 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       }
     } catch {
       get().queueOfflineSubmission(input)
-      set({ status: 'active', ui: { ...get().ui, offlineBannerVisible: true } })
+      set({ status: 'active', ui: { ...get().ui, offlineBannerVisible: true, saveStatus: 'offline' } })
     }
   },
 
   skipCurrentQuestion: () => {
-    const { questions, currentIndex, answers } = get()
+    const { questions, currentIndex } = get()
     const question = questions[currentIndex]
     if (!question) return
-    const prev = answers[question.question_id]
-    if (!prev) return
-    set({
-      answers: {
-        ...answers,
-        [question.question_id]: {
-          ...prev,
-          isSkipped: true,
-          timeSpentMs: Date.now() - prev.timeStartedMs,
-        },
-      },
+    set((state) => {
+      const didUpdate = updateAnswerEntry(state.answers, question.question_id, (prev) => ({
+        ...prev,
+        isSkipped: true,
+        timeSpentMs: Date.now() - prev.timeStartedMs,
+      }))
+      if (!didUpdate) return {}
+      return {
+        answers: state.answers,
+        answersVersion: state.answersVersion + 1,
+      }
     })
     get().goNext()
   },
@@ -488,32 +507,42 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   },
 
   toggleFlag: (questionId) => {
-    const { answers } = get()
-    const prev = answers[questionId]
-    if (!prev) return
-    set({
-      answers: {
-        ...answers,
-        [questionId]: { ...prev, isFlagged: !prev.isFlagged },
-      },
+    set((state) => {
+      const prev = state.answers[questionId]
+      if (!prev) return {}
+      const nextFlagged = !prev.isFlagged
+      const nextSet = new Set(state.flaggedSet)
+      if (nextFlagged) nextSet.add(questionId)
+      else nextSet.delete(questionId)
+      state.answers[questionId] = { ...prev, isFlagged: nextFlagged }
+      return {
+        answers: state.answers,
+        answersVersion: state.answersVersion + 1,
+        flaggedSet: nextSet,
+      }
     })
   },
 
   goToQuestion: (index) => {
-    const { totalQuestions, questions, answers } = get()
+    const { totalQuestions, questions } = get()
     if (index < 0 || index >= totalQuestions) return
     const now = Date.now()
     const question = questions[index]
-    const answerState = answers[question.question_id]
+    const answerState = get().answers[question.question_id]
 
     if (answerState && answerState.submittedAt === null && !answerState.isSkipped) {
-      set({
-        currentIndex: index,
-        status: 'active',
-        answers: {
-          ...answers,
-          [question.question_id]: { ...answerState, timeStartedMs: now },
-        },
+      set((state) => {
+        const didUpdate = updateAnswerEntry(state.answers, question.question_id, (prev) => ({
+          ...prev,
+          timeStartedMs: now,
+        }))
+        return {
+          currentIndex: index,
+          status: 'active',
+          ...(didUpdate
+            ? { answers: state.answers, answersVersion: state.answersVersion + 1 }
+            : {}),
+        }
       })
     } else {
       set({ currentIndex: index, status: 'active' })
@@ -540,7 +569,6 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   endSession: (result) => set({
     status: 'results',
     results: result,
-    timer: { ...get().timer, isRunning: false },
   }),
 
   queueOfflineSubmission: (input) => set((state) => ({
@@ -565,78 +593,32 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   addQuestions: (newQuestions) => {
     const { questions, answers } = get()
     const now = Date.now()
-    const nextAnswers = { ...answers }
+    const nextAnswers = answers
     const nextQuestions = [...questions]
+    let addedCount = 0
 
     for (const q of newQuestions) {
       if (!nextAnswers[q.question_id]) {
         nextAnswers[q.question_id] = makeAnswerState(now)
         nextQuestions.push(q)
+        addedCount += 1
       }
     }
 
-    set({ questions: nextQuestions, answers: nextAnswers })
+    if (addedCount === 0) return
+    set((state) => ({
+      questions: nextQuestions,
+      answers: state.answers,
+      answersVersion: state.answersVersion + addedCount,
+      totalQuestions: Math.max(state.totalQuestions, nextQuestions.length),
+    }))
   },
-})
 
-const createTimerSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelector", never], ["zustand/persist", unknown]], [], TimerSlice> = (set, get) => ({
-  timer: defaultTimer(),
-  startTimer: (limitMs) => {
-    const now = Date.now()
+  rebuildDerivedState: () => {
+    const { answers } = get()
     set({
-      timer: {
-        startedAt: now,
-        pausedAt: null,
-        elapsedMs: 0,
-        limitMs: limitMs ?? get().timer.limitMs,
-        isRunning: true,
-        colorState: 'normal',
-      },
-      status: 'active',
+      flaggedSet: buildFlaggedSet(answers),
     })
-  },
-  pauseTimer: () => {
-    const { timer } = get()
-    if (!timer.isRunning) return
-    set({ timer: { ...timer, isRunning: false, pausedAt: Date.now() } })
-  },
-  resumeTimer: () => {
-    const { timer } = get()
-    if (timer.isRunning || timer.pausedAt === null) return
-    set({ timer: { ...timer, isRunning: true, pausedAt: null } })
-  },
-  tickTimer: () => {
-    const { timer, sessionId } = get()
-    if (!timer.isRunning) return
-    const nextElapsed = timer.elapsedMs + 1000
-
-    if (timer.limitMs !== null && nextElapsed >= timer.limitMs) {
-      set({
-        timer: { ...timer, elapsedMs: timer.limitMs, isRunning: false, colorState: 'critical' },
-        status: 'submitting',
-      })
-      if (sessionId) {
-        endSessionAction({ sessionId, endReason: 'timer_expired' })
-          .then((endResult) => get().endSession(endResult))
-          .catch(() => {
-            get().endSession({
-              score: { correct: get().getCorrectCount(), total: get().totalQuestions, percent: Math.round((get().getCorrectCount() / Math.max(1, get().totalQuestions)) * 100) },
-              subjectBreakdown: [], readinessScoreBefore: 0, readinessScoreAfter: 0, readinessScoreDelta: 0,
-              growthVsPrevious: null, resultsAvailableAt: new Date().toISOString(),
-              trailDayCompleted: false, nextTrailDay: null, missedQuestionCount: get().getUnansweredQuestions().length,
-            })
-          })
-      }
-      return
-    }
-
-    let colorState: TimerColorState = 'normal'
-    if (timer.limitMs !== null && timer.limitMs > 0) {
-      const percentRemaining = (timer.limitMs - nextElapsed) / timer.limitMs
-      if (percentRemaining <= 0.20) colorState = 'critical'
-      else if (percentRemaining <= 0.50) colorState = 'warning'
-    }
-    set({ timer: { ...timer, elapsedMs: nextElapsed, colorState } })
   },
 })
 
@@ -673,20 +655,22 @@ const createUISlice: StateCreator<QuizStore, [["zustand/subscribeWithSelector", 
     },
   }),
   hideFeedback: () => {
-    const { feedback, answers } = get()
+    const { feedback } = get()
     if (feedback.questionId) {
-      const prev = answers[feedback.questionId]
-      if (prev) {
-        set({
+      set((state) => {
+        const didUpdate = updateAnswerEntry(state.answers, feedback.questionId!, (prev) => ({
+          ...prev,
+          questionStatus: 'reviewed',
+        }))
+        if (!didUpdate) return { status: 'active', feedback: defaultFeedback() }
+        return {
           status: 'active',
           feedback: defaultFeedback(),
-          answers: {
-            ...answers,
-            [feedback.questionId]: { ...prev, questionStatus: 'reviewed' },
-          },
-        })
-        return
-      }
+          answers: state.answers,
+          answersVersion: state.answersVersion + 1,
+        }
+      })
+      return
     }
     set({ status: 'active', feedback: defaultFeedback() })
   },
@@ -741,15 +725,11 @@ const createStatsSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelector
     })
   },
   getFlaggedQuestions: () => {
-    const { questions, answers } = get()
-    return questions.filter((q) => answers[q.question_id]?.isFlagged === true)
+    const { questions, flaggedSet } = get()
+    return questions.filter((q) => flaggedSet.has(q.question_id))
   },
   getFlaggedSet: () => {
-    const set = new Set<string>()
-    for (const [qid, ans] of Object.entries(get().answers)) {
-      if (ans.isFlagged) set.add(qid)
-    }
-    return set
+    return get().flaggedSet
   },
   getFeedbackData: () => {
     const { feedback } = get()
@@ -786,7 +766,6 @@ export const useQuizStore = create<QuizStore>()(
     persist(
       (...a) => ({
         ...createSessionSlice(...a),
-        ...createTimerSlice(...a),
         ...createUISlice(...a),
         ...createStatsSlice(...a),
         ...createSettingsSlice(...a),
@@ -803,16 +782,21 @@ export const useQuizStore = create<QuizStore>()(
           currentIndex: state.currentIndex,
           totalQuestions: state.totalQuestions,
           answers: state.answers,
-          timer: state.timer,
           pendingSubmissions: state.pendingSubmissions,
           settings: state.settings,
           streakCount: state.streakCount,
         }),
         merge: (persisted, current) => {
           const p = persisted as Record<string, unknown>
-          return {
+          const merged = {
             ...current,
             ...(p as Partial<QuizStore>),
+          }
+          const mergedAnswers = merged.answers ?? {}
+          return {
+            ...merged,
+            answersVersion: Object.keys(mergedAnswers).length,
+            flaggedSet: buildFlaggedSet(mergedAnswers),
           }
         },
         onRehydrateStorage: () => (state) => {

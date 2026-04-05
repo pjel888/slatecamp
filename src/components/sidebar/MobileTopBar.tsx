@@ -2,7 +2,7 @@
 
 import { List } from '@phosphor-icons/react/dist/ssr'
 import { Z_INDEX } from './types'
-import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
+import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
 
 // ---------------------------------------------------------------------------
 // MobileTopBar — fixed 42px bar visible only below lg breakpoint

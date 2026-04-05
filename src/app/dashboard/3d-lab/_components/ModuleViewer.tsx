@@ -2,14 +2,14 @@
 
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
-import { LabTopBar } from '@/components/3d-lab/LabTopBar'
-import { OnboardingFlow } from '@/components/3d-lab/OnboardingFlow'
-import { ModuleContextCard } from '@/components/3d-lab/ModuleContextCard'
+import { LabTopBar } from '@/features/3d-lab/components/LabTopBar'
+import { OnboardingFlow } from '@/features/3d-lab/components/OnboardingFlow'
+import { ModuleContextCard } from '@/features/3d-lab/components/ModuleContextCard'
 import { useLabStore } from '@/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
 import type { ModuleConfig } from '@/types/3d-lab'
-import { LabViewport } from './LabViewport'
-import { getModuleById } from '../_config/registry'
+import { LabViewport } from '@/features/3d-lab/components/LabViewport'
+import { getModuleById } from '@/features/3d-lab/config/registry'
 
 interface ModuleViewerProps {
   modelId: string

@@ -11,7 +11,9 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 
 | File | Description |
 |------|-------------|
-| **quiz.ts** | Quiz session creation, retrieval, answer submission, SRS updates, readiness recomputation |
+| **quiz-v2/start-session.ts** | V2 quiz session creation and route handoff |
+| **quiz-v2/submit-answer.ts** | V2 answer submission, scoring, and post-submit hooks |
+| **quiz-v2/end-session.ts** | V2 session completion and final result persistence |
 | **assessment.ts** | Assessment completion checks, result retrieval, subject score breakdown |
 | **analytics.ts** | Server-side event tracking, analytics data aggregation |
 | **daily-mission.ts** | Daily mission generation, completion tracking, rewards |
@@ -22,7 +24,6 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 | **mastery-actions.ts** | Mastery-related mutations |
 | **debrief.ts** | Quiz debrief/summary data after session completion |
 | **readiness-score-update.ts** | Readiness score calculation and persistence |
-| **readiness.ts** | Readiness data queries for dashboard display |
 | **heatmap.ts** | Taxonomy heatmap/performance distribution data |
 | **notes-actions.ts** | User note CRUD operations |
 | **feature-flags.ts** | Feature flag checks and overrides |
@@ -30,7 +31,6 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 | **lab.ts** | 3D lab interaction and state |
 | **ei-prompts.ts** | Educational instant (AI tutor) prompt management |
 | **email-preferences.ts** | Email subscription/notification preferences |
-| **onboarding.ts** | User onboarding flow and profile setup |
 | **profile.ts** | User profile reads and updates |
 | **session-actions.ts** | Session lifecycle: create, pause, resume, complete |
 | **session-discovery.ts** | Session discovery and filtering for review hub |
@@ -43,7 +43,7 @@ Data mutation layer for SlateCamp. All CRUD operations on user data, quizzes, qu
 | **streak.ts** | Study streak tracking and persistence |
 | **taxonomy.ts** | Taxonomy tree queries for quiz and navigation |
 | **teach-back.ts** | Teach-back prompt generation and validation |
-| **testing.ts** | Test mode session configuration (Camp, Storm, Chill) |
+| **sessions.ts** | Session history queries and dashboard/session-hub lookups |
 | **trails.ts** | Learning trail mutations: enroll, pause, abandon, complete |
 | **user-stats.ts** | User global stats computation and caching |
 | **wiki.ts** | Wiki article queries for student-facing views |

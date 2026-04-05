@@ -14,6 +14,7 @@ export type ModeSource =
   | 'assessment_quiz'
   | 'trail_quiz'
   | 'blindspot_queue'
+  | 'article_review'
 
 /** User-facing mode key used in routes and UI logic */
 export type UIMode =
@@ -25,6 +26,7 @@ export type UIMode =
   | 'storm'
   | 'simulation'
   | 'endurance'
+  | 'article-review'
 
 // ─── Mode Metadata ────────────────────────────────────────────────────────────
 

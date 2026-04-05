@@ -1,4 +1,4 @@
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 import { getFeatureFlags, getEffectiveTier, getConnectionState } from "./feature-flags";
 import { getUserRole } from "@/lib/admin/roles";
 import type { UserTier } from "@/types/app";
@@ -30,12 +30,13 @@ export interface AdminAwareProfile {
  * Use this instead of raw profile queries wherever tier gating is needed.
  */
 export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> {
-  const supabase = await createClient();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = await getUser();
 
   if (!user) return null;
+
+  const supabase = await createClient();
 
   // Fetch new data structures in parallel
   const [subResult, statsResult] = await Promise.all([

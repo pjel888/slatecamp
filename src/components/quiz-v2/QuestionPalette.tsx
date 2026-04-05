@@ -11,7 +11,6 @@ import {
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
-import { useQuizStore } from '@/stores/useQuizStore'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 

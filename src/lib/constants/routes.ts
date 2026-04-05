@@ -20,13 +20,12 @@ export const ROUTES = {
   REVIEW: "/dashboard/testing",
   // Testing & Review Hub (entry point — keep as-is)
   TESTING: "/dashboard/testing",
-  // v1 legacy routes — do not use for new links
-  TESTING_SETUP: (mode: string) => `/dashboard/testing/${mode}/setup`,
-  // TESTING_SESSION now routes through v2 shell (v1 page kept but no longer linked)
+  // v1 legacy routes — deprecated, now redirecting to v2
+  TESTING_SETUP: (mode: string) => `/quiz/${mode}/setup`,
   TESTING_SESSION: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}`,
-  TESTING_DEBRIEF: (sessionId: string) => `/dashboard/testing/session/${sessionId}/debrief`,
-  TESTING_SIM_BRIEFING: "/dashboard/testing/simulation/briefing",
-  TESTING_SIM_RESULTS: (sessionId: string) => `/dashboard/testing/simulation/${sessionId}/results`,
+  TESTING_DEBRIEF: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}/results`,
+  TESTING_SIM_BRIEFING: "/quiz/fullexam/setup",
+  TESTING_SIM_RESULTS: (sessionId: string) => `/quiz/fullexam/session/${sessionId}/results`,
   // Quiz Engine v2 (unified shell) — use these for all new setup/session links
   QUIZ_V2_SETUP: (mode: string) => `/quiz/${mode}/setup`,
   QUIZ_V2_SESSION: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}`,
@@ -50,7 +49,6 @@ export const ROUTES = {
   DEVELOPER_DOCS: "/developer/architecture",
   DEVELOPER_DB: "/developer/tools/db",
   DEVELOPER_LOGS: "/developer/tools/logs",
-  DEVELOPER_DESIGN_SYSTEM: "/developer/design-system",
   DEVELOPER_API_REFERENCE: "/developer/api-reference",
   DEVELOPER_COMPONENTS: "/developer/components",
   DEVELOPER_TOOLS: "/developer/tools",
@@ -70,6 +68,7 @@ export const PUBLIC_PATHS: string[] = [
   ROUTES.FORGOT_PASSWORD,
   "/auth/callback",
   "/try",
+  "/test-3d",
   "/tools",
   "/tools/floor-tiles-calculator",
   "/tools/wall-paint-calculator",

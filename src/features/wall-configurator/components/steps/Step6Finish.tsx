@@ -16,7 +16,7 @@ function TogglePill({
       aria-checked={enabled}
       onClick={onToggle}
       className={`relative w-8 h-[18px] rounded-full cursor-pointer transition-colors duration-150 flex-shrink-0 ${
-        enabled ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]'
+        enabled ? 'bg-primary' : 'bg-border'
       }`}
     >
       <span
@@ -53,8 +53,8 @@ export function Step6Finish() {
   return (
     <div className="flex flex-col gap-4 p-4">
       <div>
-        <h2 className="text-sm font-semibold text-[#1A2332]">Finish layers</h2>
-        <p className="mt-0.5 text-xs text-[#4A5568]">
+        <h2 className="text-sm font-semibold text-text-primary">Finish layers</h2>
+        <p className="mt-0.5 text-xs text-text-secondary">
           Configure primer and topcoat. Coverage rate is shared across both layers.
         </p>
       </div>
@@ -63,7 +63,7 @@ export function Step6Finish() {
         {/* Primer card */}
         {primerLayer && (
           <div
-            className={`flex items-center gap-3 px-3.5 py-[11px] border border-[#D4DAE3] rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
+            className={`flex items-center gap-3 px-3.5 py-[11px] border border-border rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
               !primerLayer.enabled ? 'opacity-45' : ''
             }`}
           >
@@ -73,16 +73,16 @@ export function Step6Finish() {
             />
 
             <div className="flex-1 min-w-0">
-              <div className="text-[13px] font-medium text-[#1A2332]">Primer (1 coat)</div>
-              <div className="text-[11px] text-[#4A5568]">Coverage {paintCoverage} sqm/L</div>
+              <div className="text-[13px] font-medium text-text-primary">Primer (1 coat)</div>
+              <div className="text-[11px] text-text-secondary">Coverage {paintCoverage} sqm/L</div>
             </div>
 
-            <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-[#4A5568] whitespace-nowrap">
+            <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-text-secondary whitespace-nowrap">
               AREA / SIDE
             </span>
 
             <div className="flex items-center gap-1.5 shrink-0">
-              <label className="font-mono text-[9px] uppercase text-[#8896A7]">Waste</label>
+              <label className="font-mono text-[9px] uppercase text-text-tertiary">Waste</label>
               <input
                 type="text"
                 value={`${primerWaste}%`}
@@ -93,7 +93,7 @@ export function Step6Finish() {
                     setLayerWaste('PRIMER', v / 100)
                   }
                 }}
-                className="font-mono text-[12px] w-11 border border-[#D4DAE3] rounded px-1.5 py-[3px] text-right bg-white focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+                className="font-mono text-[12px] w-11 border border-border rounded px-1.5 py-[3px] text-right bg-white focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
           </div>
@@ -102,7 +102,7 @@ export function Step6Finish() {
         {/* Topcoat card */}
         {topcoatLayer && (
           <div
-            className={`flex items-center gap-3 px-3.5 py-[11px] border border-[#D4DAE3] rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
+            className={`flex items-center gap-3 px-3.5 py-[11px] border border-border rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
               !topcoatLayer.enabled ? 'opacity-45' : ''
             }`}
           >
@@ -112,18 +112,18 @@ export function Step6Finish() {
             />
 
             <div className="flex-1 min-w-0">
-              <div className="text-[13px] font-medium text-[#1A2332]">
+              <div className="text-[13px] font-medium text-text-primary">
                 Topcoat Paint ({topcoatCoats} coats)
               </div>
-              <div className="text-[11px] text-[#4A5568]">Coverage {paintCoverage} sqm/L</div>
+              <div className="text-[11px] text-text-secondary">Coverage {paintCoverage} sqm/L</div>
             </div>
 
-            <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-[#4A5568] whitespace-nowrap">
+            <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-text-secondary whitespace-nowrap">
               AREA / SIDE
             </span>
 
             <div className="flex items-center gap-1.5 shrink-0">
-              <label className="font-mono text-[9px] uppercase text-[#8896A7]">Waste</label>
+              <label className="font-mono text-[9px] uppercase text-text-tertiary">Waste</label>
               <input
                 type="text"
                 value={`${topcoatWaste}%`}
@@ -134,7 +134,7 @@ export function Step6Finish() {
                     setLayerWaste('TOPCOAT', v / 100)
                   }
                 }}
-                className="font-mono text-[12px] w-11 border border-[#D4DAE3] rounded px-1.5 py-[3px] text-right bg-white focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+                className="font-mono text-[12px] w-11 border border-border rounded px-1.5 py-[3px] text-right bg-white focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
           </div>
@@ -143,25 +143,25 @@ export function Step6Finish() {
         {/* Topcoat coat count stepper */}
         {topcoatLayer && (
           <div className="flex items-center gap-2 px-1 mb-1.5">
-            <span className="font-mono text-[9px] uppercase text-[#8896A7]">Coats</span>
+            <span className="font-mono text-[9px] uppercase text-text-tertiary">Coats</span>
             <div className="flex items-center gap-2">
               <button
                 type="button"
                 onClick={() => handleCoats(-1)}
                 disabled={topcoatCoats <= 1}
-                className="w-6 h-6 flex items-center justify-center rounded-sm border border-[#D4DAE3] bg-white text-[#4A5568] text-sm transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+                className="w-6 h-6 flex items-center justify-center rounded-sm border border-border bg-white text-text-secondary text-sm transition-colors duration-150 hover:bg-surface-light disabled:cursor-not-allowed disabled:opacity-40"
                 aria-label="Decrease coat count"
               >
                 −
               </button>
-              <span className="font-mono text-[12px] text-[#1A2332] w-4 text-center">
+              <span className="font-mono text-[12px] text-text-primary w-4 text-center">
                 {topcoatCoats}
               </span>
               <button
                 type="button"
                 onClick={() => handleCoats(1)}
                 disabled={topcoatCoats >= 4}
-                className="w-6 h-6 flex items-center justify-center rounded-sm border border-[#D4DAE3] bg-white text-[#4A5568] text-sm transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+                className="w-6 h-6 flex items-center justify-center rounded-sm border border-border bg-white text-text-secondary text-sm transition-colors duration-150 hover:bg-surface-light disabled:cursor-not-allowed disabled:opacity-40"
                 aria-label="Increase coat count"
               >
                 +
@@ -172,7 +172,7 @@ export function Step6Finish() {
 
         {/* Shared coverage rate input */}
         <div className="flex items-center gap-2 px-1 mt-3">
-          <label className="font-mono text-[9px] uppercase text-[#8896A7]">Coverage rate</label>
+          <label className="font-mono text-[9px] uppercase text-text-tertiary">Coverage rate</label>
           <input
             type="number"
             min={1}
@@ -183,24 +183,24 @@ export function Step6Finish() {
               const v = parseFloat(e.target.value)
               if (!isNaN(v) && v > 0) setPaintCoverage(v)
             }}
-            className="font-mono text-[12px] w-14 border border-[#D4DAE3] rounded px-1.5 py-[3px] bg-white focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+            className="font-mono text-[12px] w-14 border border-border rounded px-1.5 py-[3px] bg-white focus:outline-none focus:ring-1 focus:ring-primary"
           />
-          <span className="font-mono text-[9px] uppercase text-[#8896A7]">sqm/L/coat</span>
+          <span className="font-mono text-[9px] uppercase text-text-tertiary">sqm/L/coat</span>
         </div>
       </div>
 
-      <div className="flex justify-between border-t border-[#D4DAE3] pt-4">
+      <div className="flex justify-between border-t border-border pt-4">
         <button
           type="button"
           onClick={prevStep}
-          className="rounded-sm border border-[#D4DAE3] bg-white px-4 py-2 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+          className="rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Back
         </button>
         <button
           type="button"
           onClick={nextStep}
-          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-600"
         >
           View Results
         </button>

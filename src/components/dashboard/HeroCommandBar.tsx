@@ -1,12 +1,13 @@
 'use client'
 
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, type ReactNode } from 'react'
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
+import { ScoreDisplay } from '@/components/shared/score-display'
 import { getReadinessLabel } from '@/lib/constants/readiness'
 import { trackEvent } from '@/lib/analytics'
 import type { HeroMicroStat } from '@/types/dashboard'
@@ -14,67 +15,15 @@ import type { HeroMicroStat } from '@/types/dashboard'
 // ── Readiness ring SVG ──────────────────────────────────────────────────────
 
 function ReadinessRing({ score }: { score: number }) {
-  const [display, setDisplay] = useState(0)
-  const size = 120
-  const stroke = 8
-  const radius = (size - stroke) / 2
-  const circumference = 2 * Math.PI * radius
-  const offset = circumference * (1 - display / 100)
-
-  const color = score >= 70 ? '#2D9F6F' : score >= 40 ? '#D4951A' : '#D64545'
-
-  useEffect(() => {
-    const prefersReduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches
-    if (prefersReduced) {
-      setDisplay(score)
-      return
-    }
-
-    const duration = 1000
-    const start = performance.now()
-    let raf: number
-    const tick = (now: number) => {
-      const elapsed = now - start
-      const progress = Math.min(elapsed / duration, 1)
-      const eased = 1 - Math.pow(1 - progress, 3)
-      setDisplay(Math.round(eased * score))
-      if (progress < 1) raf = requestAnimationFrame(tick)
-    }
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [score])
-
   return (
-    <div className='relative inline-flex items-center justify-center'>
-      <svg width={size} height={size} aria-hidden='true'>
-        <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          fill='none'
-          stroke='rgba(255,255,255,0.15)'
-          strokeWidth={stroke}
-        />
-        <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          fill='none'
-          stroke={color}
-          strokeWidth={stroke}
-          strokeLinecap='round'
-          strokeDasharray={circumference}
-          strokeDashoffset={offset}
-          transform={`rotate(-90 ${size / 2} ${size / 2})`}
-          style={{ transition: 'stroke-dashoffset 200ms ease-out' }}
-        />
-      </svg>
-      <span className='absolute text-3xl font-extrabold font-mono text-white tabular-nums'>
-        {display}
-      </span>
-    </div>
+    <ScoreDisplay
+      value={score}
+      variant='ring'
+      size='xl'
+      showPercentSign={false}
+      ringTrackClassName='stroke-white/15'
+      valueClassName='text-3xl font-extrabold text-white'
+    />
   )
 }
 
@@ -328,4 +277,3 @@ export function HeroCommandBarSkeleton() {
     </div>
   )
 }
-

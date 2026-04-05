@@ -1,8 +1,16 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
+import { revalidateDashboardCacheTags } from './cache-tags'
+import { updateMasteryStats } from './mastery/update-mastery-stats'
 import type { AssessmentSubjectScore } from '@/types/app'
+
+import { getAssessmentClientQuestions as getQuestions } from './assessment/get-questions'
+
+export const getAssessmentClientQuestions = async (questionIds: string[]) => {
+  return getQuestions(questionIds)
+}
 
 /**
  * Check if the current user has already completed the assessment.
@@ -19,6 +27,89 @@ export const hasCompletedAssessment = async (): Promise<boolean> => {
     .single()
 
   return !!data?.assessment_completed_at
+}
+
+/**
+ * Creates a new quiz session for the assessment diagnostic.
+ */
+export const createAssessmentSession = async (params: {
+  disciplineId: string
+  questionIds: string[]
+}) => {
+  const { data: { user } } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  const supabase = await createServiceClient()
+
+  const { data: session, error } = await supabase
+    .from('quiz_sessions')
+    .insert({
+      user_id: user.id,
+      discipline_id: params.disciplineId,
+      test_mode: 'camp',
+      config: {
+        isAssessment: true,
+        showTimer: false,
+        showFeedback: false,
+      },
+      question_ids: params.questionIds,
+      subject_ids: [],
+      status: 'in_progress',
+      current_question_index: 0,
+      started_at: new Date().toISOString(),
+    })
+    .select('session_id')
+    .single()
+
+  if (error) throw error
+  return session
+}
+
+/**
+ * Saves a single interaction during the assessment.
+ * Updates both the interaction log and the mastery statistics.
+ */
+export const saveAssessmentInteraction = async (params: {
+  sessionId: string
+  questionId: string
+  topicId: string
+  selectedOptionId: string | null
+  isCorrect: boolean
+}) => {
+  const { data: { user } } = await getUser()
+  if (!user) throw new Error('Unauthorized')
+
+  const supabase = await createServiceClient()
+
+  // 1. Log interaction
+  const { error } = await supabase.from('user_interactions').upsert(
+    {
+      session_id: params.sessionId,
+      user_id: user.id,
+      question_id: params.questionId,
+      topic_id: params.topicId,
+      selected_option_id: params.selectedOptionId,
+      is_correct: params.isCorrect,
+      time_spent_ms: 0,
+      interaction_timestamp: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: 'user_id,session_id,question_id' }
+  )
+
+  if (error) throw error
+
+  // 2. Update mastery stats (non-blocking)
+  void updateMasteryStats({
+    userId: user.id,
+    topicId: params.topicId,
+    questionId: params.questionId,
+    isCorrect: params.isCorrect,
+    timeSpentMs: 0,
+    testMode: 'camp',
+  })
+
+  return { success: true }
 }
 
 /**
@@ -236,6 +327,8 @@ export const completeAssessment = async (sessionId: string): Promise<{
     ),
     computed_at: new Date().toISOString(),
   })
+
+  revalidateDashboardCacheTags(user.id)
 
   // Funnel event: assessment completed
   void trackServerEvent('assessment_completed', { score: overallScore })

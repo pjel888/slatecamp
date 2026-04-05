@@ -171,15 +171,14 @@ export const getReviewData = async (
 
   const config = session.config as { mode?: string } | null
 
-  // 8. Check if user is Pro
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('subscription_tier')
-    .eq('id', user.id)
-    .single()
+  // 8. Check if user is Pro (Audit §13.4)
+  const { data: sub } = await supabase
+    .from('user_subscriptions')
+    .select('tier, status')
+    .eq('user_id', user.id)
+    .maybeSingle()
 
-  const isPro =
-    profile?.subscription_tier === 'pro' || profile?.subscription_tier === 'premium'
+  const isPro = sub?.tier !== 'free' && sub?.status === 'active'
 
   // 9. Fetch per-question history for Pro users
   // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)

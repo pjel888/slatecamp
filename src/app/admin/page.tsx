@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { ActionCard } from '@/components/shared/action-card'
 import { Card } from '@/components/ui/card'
-import { EventBadge } from '@/components/ui/event-badge'
+import { EventBadge } from '@/components/shared/event-badge'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { NeedsAttentionCard } from '@/components/admin/NeedsAttentionCard'
 

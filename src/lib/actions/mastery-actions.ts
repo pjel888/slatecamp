@@ -1,6 +1,6 @@
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { getCachedTaxonomyTreeByDiscipline } from './cached-queries'
 import { getDashboardTag, getReadinessScoreTag, getUserMasteryTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
@@ -91,12 +91,12 @@ export const buildSubjectMastery = (
  * Server action to fetch subject mastery data for the current user.
  */
 export const getSubjectMasteryData = async () => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return []
 
   return unstable_cache(
     async () => {
+      const supabase = await createServiceClient()
       const [globalStatsResult, subjectMasteryResult, projectedLaws] = await Promise.all([
         supabase
           .from('user_global_stats')

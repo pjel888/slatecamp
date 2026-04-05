@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { LoginForm } from './login-form'
-import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
+import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
 
 export const metadata = { title: 'Log In' }
 

@@ -11,7 +11,6 @@ import {
   SpinnerGap,
 } from '@phosphor-icons/react'
 import { Card } from '@/components/ui/card'
-import { TimePicker } from './TimePicker'
 import { getTodayDose, startDoseActivity, regenerateDose } from '@/lib/actions/daily-dose/actions'
 import type { StoredDose } from '@/lib/actions/daily-dose/actions'
 import type { DoseActivity } from '@/lib/actions/daily-dose/generate'
@@ -212,7 +211,7 @@ export const DailyDoseCard = () => {
   if (showTimePicker || !dose) {
     return (
       <Card className="border border-border bg-white p-4">
-        <TimePicker onSelect={handleTimeSelect} isLoading={isPending} />
+        <div className="text-sm text-text-tertiary">Time picker unavailable (Pass 1 cleanup)</div>
       </Card>
     )
   }

@@ -1,6 +1,5 @@
 'use client'
 
-import { useCallback, useEffect, useRef } from 'react'
 import {
   Flag,
   CheckCircle,
@@ -12,10 +11,14 @@ import {
 } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
 import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
-import { useQuizStore } from '@/stores/useQuizStore'
-
-// ─── Types ───────────────────────────────────────────────────────────────────
 
 interface SubmitConfirmModalProps {
   questions: QuestionForClient[]
@@ -28,8 +31,6 @@ interface SubmitConfirmModalProps {
 }
 
 type MiniCellState = 'answered' | 'flagged' | 'skipped' | 'unanswered'
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
 
 const getMiniCellState = (
   question: QuestionForClient,
@@ -51,13 +52,20 @@ const miniCellStyles: Record<MiniCellState, string> = {
 }
 
 const MiniCellIcon = ({ state }: { state: MiniCellState }) => {
-  if (state === 'answered') return <CheckCircle size={8} weight="fill" aria-hidden="true" className="absolute bottom-0 right-0" />
-  if (state === 'flagged') return <Flag size={8} weight="fill" aria-hidden="true" className="absolute bottom-0 right-0" />
-  if (state === 'skipped') return <ArrowUUpLeft size={8} weight="regular" aria-hidden="true" className="absolute bottom-0 right-0" />
+  if (state === 'answered') {
+    return <CheckCircle size={8} weight="fill" aria-hidden="true" className="absolute bottom-0 right-0" />
+  }
+
+  if (state === 'flagged') {
+    return <Flag size={8} weight="fill" aria-hidden="true" className="absolute bottom-0 right-0" />
+  }
+
+  if (state === 'skipped') {
+    return <ArrowUUpLeft size={8} weight="regular" aria-hidden="true" className="absolute bottom-0 right-0" />
+  }
+
   return <Circle size={8} weight="regular" aria-hidden="true" className="absolute bottom-0 right-0" />
 }
-
-// ─── Component ───────────────────────────────────────────────────────────────
 
 export const SubmitConfirmModal = ({
   questions,
@@ -68,113 +76,60 @@ export const SubmitConfirmModal = ({
   onSubmit,
   onClose,
 }: SubmitConfirmModalProps) => {
-  const submitButtonRef = useRef<HTMLButtonElement>(null)
-  const dialogRef = useRef<HTMLDivElement>(null)
-  const previousFocusRef = useRef<Element | null>(null)
-
-  // Counts
   const answeredCount = questions.filter(
-    (q) => answers[q.question_id]?.selectedOptionId,
+    (question) => answers[question.question_id]?.selectedOptionId,
   ).length
-  const unansweredCount = questions.filter((q) => {
-    const a = answers[q.question_id]
-    return !a?.selectedOptionId && !a?.isSkipped
+  const unansweredCount = questions.filter((question) => {
+    const answer = answers[question.question_id]
+    return !answer?.selectedOptionId && !answer?.isSkipped
   }).length
   const flaggedCount = flaggedSet.size
   const skippedCount = questions.filter(
-    (q) => answers[q.question_id]?.isSkipped,
+    (question) => answers[question.question_id]?.isSkipped,
   ).length
 
   const answeredPercent = (answeredCount / questions.length) * 100
   const isLowCompletion = answeredPercent < 50
 
-  // Store previous focus, focus submit button on mount
-  useEffect(() => {
-    previousFocusRef.current = document.activeElement
-    submitButtonRef.current?.focus()
-
-    return () => {
-      if (
-        previousFocusRef.current &&
-        'focus' in previousFocusRef.current
-      ) {
-        (previousFocusRef.current as HTMLElement).focus()
-      }
-    }
-  }, [])
-
-  // Focus trap
-  useEffect(() => {
-    const dialog = dialogRef.current
-    if (!dialog) return
-
-    const handleFocusTrap = (e: FocusEvent) => {
-      if (!dialog.contains(e.target as Node)) {
-        submitButtonRef.current?.focus()
-      }
-    }
-
-    document.addEventListener('focusin', handleFocusTrap)
-    return () => document.removeEventListener('focusin', handleFocusTrap)
-  }, [])
-
-  // Escape dismisses
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.preventDefault()
-        onClose()
-      }
-    },
-    [onClose],
-  )
-
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[2px]"
-      aria-hidden="false"
+    <Dialog
+      open
+      onOpenChange={(open) => {
+        if (!open) {
+          onClose()
+        }
+      }}
     >
-      <div
-        ref={dialogRef}
-        role="alertdialog"
-        aria-modal="true"
-        aria-labelledby="submit-confirm-title"
-        aria-describedby="submit-confirm-desc"
-        className="flex w-full max-w-md flex-col gap-4 rounded-lg bg-white p-6 shadow-lg"
-        onKeyDown={handleKeyDown}
+      <DialogContent
+        size="md"
+        showCloseButton={false}
+        className="gap-4 rounded-lg bg-white p-6"
       >
-        {/* Header */}
-        <div className="space-y-1">
-          <h2
-            id="submit-confirm-title"
-            className="text-sm font-semibold text-foreground"
-          >
+        <DialogHeader className="space-y-1">
+          <DialogTitle className="text-sm font-semibold text-foreground">
             {isLowCompletion ? 'Are you sure?' : 'Ready to submit?'}
-          </h2>
-          <p
-            id="submit-confirm-desc"
-            className="text-sm text-text-secondary"
-          >
+          </DialogTitle>
+          <DialogDescription className="text-sm text-text-secondary">
             {isLowCompletion
               ? `You've only answered ${Math.round(answeredPercent)}% of the questions. Review your progress before submitting.`
               : 'Review your answers below before submitting. This action cannot be undone.'}
-          </p>
-        </div>
+          </DialogDescription>
+        </DialogHeader>
 
-        {/* Low completion warning */}
         {isLowCompletion && (
-          <div className="flex items-start gap-2 rounded-md bg-destructive-50 p-3 border border-destructive-300">
-            <Warning size={18} weight="fill" className="text-destructive shrink-0 mt-0.5" />
+          <div className="flex items-start gap-2 rounded-md border border-destructive-300 bg-destructive-50 p-3">
+            <Warning size={18} weight="fill" className="mt-0.5 shrink-0 text-destructive" />
             <div className="space-y-1">
-              <p className="text-xs font-semibold text-destructive-600">High number of unanswered questions</p>
-              <p className="text-[11px] text-destructive-600 leading-normal">
+              <p className="text-xs font-semibold text-destructive-600">
+                High number of unanswered questions
+              </p>
+              <p className="text-[11px] leading-normal text-destructive-600">
                 Submitting now will negatively impact your readiness score and statistics.
               </p>
             </div>
           </div>
         )}
 
-        {/* Summary stats */}
         <div className="grid grid-cols-3 gap-2">
           <StatCell
             value={answeredCount}
@@ -186,17 +141,30 @@ export const SubmitConfirmModal = ({
             value={unansweredCount}
             label="Unanswered"
             valueColor={unansweredCount > 0 ? 'text-warning' : 'text-muted-foreground'}
-            icon={<Circle size={14} weight="regular" className={unansweredCount > 0 ? 'text-warning' : 'text-muted-foreground'} aria-hidden="true" />}
+            icon={
+              <Circle
+                size={14}
+                weight="regular"
+                className={unansweredCount > 0 ? 'text-warning' : 'text-muted-foreground'}
+                aria-hidden="true"
+              />
+            }
           />
           <StatCell
             value={flaggedCount}
             label="Flagged"
             valueColor={flaggedCount > 0 ? 'text-camp-orange' : 'text-muted-foreground'}
-            icon={<Flag size={14} weight="fill" className={flaggedCount > 0 ? 'text-camp-orange' : 'text-muted-foreground'} aria-hidden="true" />}
+            icon={
+              <Flag
+                size={14}
+                weight="fill"
+                className={flaggedCount > 0 ? 'text-camp-orange' : 'text-muted-foreground'}
+                aria-hidden="true"
+              />
+            }
           />
         </div>
 
-        {/* Mini question grid */}
         <div className="space-y-2">
           <p className="text-xs font-medium text-text-secondary">All questions</p>
           <div
@@ -206,22 +174,22 @@ export const SubmitConfirmModal = ({
             className="grid gap-1"
             style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(28px, 1fr))' }}
           >
-            {questions.map((q, idx) => {
-              const state = getMiniCellState(q, answers, flaggedSet)
-              const isCurrent = idx === currentIndex
+            {questions.map((question, index) => {
+              const state = getMiniCellState(question, answers, flaggedSet)
+              const isCurrent = index === currentIndex
 
               return (
-                <div key={q.question_id} role="row">
+                <div key={question.question_id} role="row">
                   <div
                     role="gridcell"
-                    aria-label={`Question ${idx + 1}: ${state}${isCurrent ? ', current' : ''}`}
+                    aria-label={`Question ${index + 1}: ${state}${isCurrent ? ', current' : ''}`}
                     className={cn(
                       'relative flex h-7 w-7 items-center justify-center rounded-sm border text-[10px] font-medium',
                       miniCellStyles[state],
                       isCurrent && 'ring-2 ring-primary ring-offset-1',
                     )}
                   >
-                    {idx + 1}
+                    {index + 1}
                     <MiniCellIcon state={state} />
                   </div>
                 </div>
@@ -229,18 +197,15 @@ export const SubmitConfirmModal = ({
             })}
           </div>
 
-          {/* Mini legend */}
           {skippedCount > 0 && (
             <p className="text-[10px] text-muted-foreground">
-              {skippedCount} question{skippedCount !== 1 ? 's' : ''} skipped —{' '}
+              {skippedCount} question{skippedCount !== 1 ? 's' : ''} skipped{' '}
               skipped questions will be counted as unanswered.
             </p>
           )}
         </div>
 
-        {/* Actions */}
         <div className="flex flex-col gap-2 pt-1 sm:flex-row sm:justify-between">
-          {/* Review unanswered — only shown when there are unanswered questions */}
           {unansweredCount > 0 ? (
             <Button
               variant="secondary"
@@ -262,24 +227,21 @@ export const SubmitConfirmModal = ({
             </Button>
           )}
 
-          {/* Submit */}
           <Button
-            ref={submitButtonRef}
             variant="primary"
             size="md"
             onClick={onSubmit}
             leftIcon={<PaperPlaneTilt size={16} aria-hidden="true" />}
             className="order-1 sm:order-2"
+            autoFocus
           >
             Submit exam
           </Button>
         </div>
-      </div>
-    </div>
+      </DialogContent>
+    </Dialog>
   )
 }
-
-// ─── StatCell ────────────────────────────────────────────────────────────────
 
 const StatCell = ({
   value,

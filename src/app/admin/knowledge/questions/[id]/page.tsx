@@ -10,15 +10,14 @@ import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent } from '@/components/wiki/WikiCallout'
-import { GenericBlock, SPP206RefServices, SPP207RefServices } from '@/components/wiki/GenericBlock'
+import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent, GenericBlock, SPP206RefServices, SPP207RefServices } from '@/components/wiki'
 
 interface PageProps {
   params: Promise<{ id: string }>
 }
 
 const WIKI_PROSE_CLASS_NAME =
-  'prose prose-wiki dark:prose-invert max-w-none font-sans text-[15px] leading-[1.7] prose-p:mb-4 prose-p:last:mb-0 prose-p:max-w-[65ch] prose-strong:font-semibold prose-em:text-inherit prose-code:rounded-[3px] prose-code:bg-muted prose-code:px-[5px] prose-code:py-px prose-code:text-[12px] prose-code:text-primary prose-code:font-[var(--font-dm-mono)] prose-code:before:content-none prose-code:after:content-none prose-code:dark:bg-[var(--wiki-prose-invert-code-bg)] prose-code:dark:text-[var(--wiki-prose-invert-code)] prose-h2:mt-0 prose-h2:mb-4 prose-h2:font-sans prose-h2:text-[22px] prose-h2:font-bold prose-h3:mt-7 prose-h3:mb-3 prose-h3:font-sans prose-h3:text-base prose-h3:font-semibold prose-hr:my-10'
+  'prose prose-wiki dark:prose-invert'
 
 const mdxComponents = {
   Note,

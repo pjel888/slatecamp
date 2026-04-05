@@ -137,6 +137,23 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     ctaLabel: 'Start Design Training',
     ctaVariant: 'orange',
   },
+  'article-review': {
+    key: 'article-review',
+    source: 'article_review',
+    dbTestMode: 'camp',
+    label: 'Article Review',
+    character: 'Quick Check',
+    description:
+      '5 quick questions to verify your understanding after reading an article.',
+    zone: 1,
+    icon: 'book',
+    isPro: false,
+    defaultQuestionCount: 5,
+    hasFeedbackDuring: true,
+    hasTimer: false,
+    ctaLabel: 'Start Review',
+    ctaVariant: 'cobalt',
+  },
 } as const
 
 export const ZONE_LABELS = {
@@ -146,7 +163,7 @@ export const ZONE_LABELS = {
 } as const
 
 export const MODES_BY_ZONE = {
-  1: ['camp', 'chill'] as const,
+  1: ['camp', 'chill', 'article-review'] as const,
   2: ['subject', 'focus-review', 'custom'] as const,
   3: ['storm', 'simulation', 'endurance'] as const,
 } as const

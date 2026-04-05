@@ -14,7 +14,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
-import { abandonTestingSession } from '@/lib/actions/testing'
+import { abandonSession as abandonSessionAction } from '@/lib/actions/quiz-v2'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -120,32 +120,41 @@ const getModeBadgeStyle = (modeKey: string): React.CSSProperties => {
 
 const getSessionUrl = (session: SessionsTableProps['sessions'][number]): string => {
   const modeKey = getModeKey(session)
-  const slug = modeKey.replace(/_/g, '-')
+  
+  // V2 Engine mapping
+  const MODE_KEY_TO_V2: Record<string, string> = {
+    'focus-review': 'focused',
+    focus_review: 'focused',
+    blindspot_queue: 'focused',
+    simulation: 'fullexam',
+    full_exam: 'fullexam',
+    proof_simulation: 'fullexam',
+    endurance: 'extended',
+    extended_practice: 'extended',
+    assessment_quiz: 'camp',
+    trail_quiz: 'camp',
+    camp_mode: 'camp',
+    chill_mode: 'chill',
+    subject_mode: 'subject',
+    custom_session: 'custom',
+    storm_mode: 'storm',
+  }
+
+  const v2Mode = MODE_KEY_TO_V2[modeKey] ?? modeKey.replace(/_/g, '-')
   
   // Handle in-progress sessions - always go to quiz session
   if (session.status === 'in_progress') {
-    return `/quiz/${slug}/session/${session.session_id}`
+    return `/quiz/${v2Mode}/session/${session.session_id}`
   }
   
-  // Conditional routing for completed sessions
   // Reading-based modes (article_review, prequestion) should redirect to source articles
   if (READING_MODES.has(modeKey)) {
     const articleSlug = session.config?.articleSlug
-    
-    // If article slug exists, redirect to the wiki article
-    if (articleSlug) {
-      return `/dashboard/wiki/${articleSlug}`
-    }
-    
-    // Fallback: No valid article identifier - log warning and route to results
-    // This ensures we don't have broken redirects when article slug is missing
-    console.warn(
-      `[SessionsTable] Missing articleSlug for reading session ${session.session_id} (mode: ${modeKey}). Falling back to results.`
-    )
+    if (articleSlug) return `/dashboard/wiki/${articleSlug}`
   }
   
-  // Standard modes and fallback for reading modes without article slug
-  return `/quiz/${slug}/session/${session.session_id}/results`
+  // Standard modes and fallback
+  return `/quiz/${v2Mode}/session/${session.session_id}/results`
 }
 
 const getScoreDisplay = (session: SessionsTableProps['sessions'][number]): {
@@ -422,7 +431,7 @@ const SessionsTable = ({ sessions }: SessionsTableProps) => {
 
   const handleAbandon = async (sessionId: string) => {
     setAbandoningId(sessionId)
-    await abandonTestingSession(sessionId)
+    await abandonSessionAction(sessionId)
     setLocalSessions((prev) =>
       prev.map((s) =>
         s.session_id === sessionId ? { ...s, status: 'abandoned' as const } : s

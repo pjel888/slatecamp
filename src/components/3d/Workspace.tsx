@@ -2,9 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState, Suspense, Component, type ReactNode } from 'react'
 import dynamic from 'next/dynamic'
-import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Html, Float, ContactShadows, Environment } from '@react-three/drei'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { OrbitControls, Html, Float, ContactShadows, Environment, PerspectiveCamera, useGLTF } from '@react-three/drei'
 import type { Group } from 'three'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -14,7 +12,8 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { LabViewport } from '@/app/dashboard/3d-lab/_components/LabViewport'
+import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { LabViewport } from '@/features/3d-lab/components/LabViewport'
 
 
 /* ── Types ── */
@@ -89,45 +88,38 @@ function SimpleBox({ xRayOpacity }: { xRayOpacity: number }) {
   )
 }
 
+import { disposeObject } from '@/lib/three-utils'
+
+// Configure DRACO and KTX2 decoders for compressed GLB models
+useGLTF.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/')
+
 /**
  * Renders a GLTF model with dynamic material control for X-Ray.
- * Loads with GLTFLoader so fetch failures (e.g. CORS, 404) show the fallback
- * instead of throwing and logging to console.
+ * Uses useGLTF (Drei) for managed caching and disposal.
  */
 function DynamicModel({ url, xRayOpacity }: { url: string; xRayOpacity: number }) {
-  const [scene, setScene] = useState<Group | null>(null)
-  const [loadFailed, setLoadFailed] = useState(false)
-
-  useEffect(() => {
-    setScene(null)
-    setLoadFailed(false)
-    const loader = new GLTFLoader()
-    loader.load(
-      url,
-      (gltf) => setScene(gltf.scene),
-      undefined,
-      () => setLoadFailed(true)
-    )
-  }, [url])
+  const { scene } = useGLTF(url)
 
   useEffect(() => {
     if (!scene) return
-    scene.traverse((child: unknown) => {
-      const mesh = child as { isMesh?: boolean; material?: { transparent: boolean; opacity: number }; name?: string }
-      if (mesh.isMesh && mesh.material) {
-        mesh.material.transparent = true
-        const name = (mesh.name ?? '').toLowerCase()
+    scene.traverse((child: any) => {
+      if (child.isMesh && child.material) {
+        child.material.transparent = true
+        const name = (child.name ?? '').toLowerCase()
         if (name.includes('envelope') || name.includes('finish')) {
-          mesh.material.opacity = xRayOpacity
+          child.material.opacity = xRayOpacity
         } else {
-          mesh.material.opacity = 1.0
+          child.material.opacity = 1.0
         }
       }
     })
   }, [scene, xRayOpacity])
 
-  if (loadFailed) return <SimpleBox xRayOpacity={xRayOpacity} />
-  if (!scene) return null
+  // Explicit disposal cleanup on unmount/url change to prevent VRAM leaks
+  useEffect(() => {
+    return () => disposeObject(scene)
+  }, [scene])
+
   return <primitive object={scene} scale={1.5} position={[0, -1, 0]} castShadow receiveShadow />
 }
 
@@ -197,9 +189,10 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
     <div className="h-full w-full relative group">
       {/* 3D Canvas */}
       <div className="h-full w-full rounded-md border border-muted bg-surface-light overflow-hidden shadow-inner">
-        <Canvas shadows camera={{ position: [5, 5, 5], fov: 35 }}>
+        <CanvasWrapper>
           <SceneErrorBoundary fallback={<SimpleBox xRayOpacity={xRayOpacity} />}>
             <Suspense fallback={null}>
+              <PerspectiveCamera makeDefault position={[5, 5, 5]} fov={35} />
               <Environment preset="city" />
               <ambientLight intensity={0.5} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
@@ -211,7 +204,7 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
               <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 1.75} />
             </Suspense>
           </SceneErrorBoundary>
-        </Canvas>
+        </CanvasWrapper>
       </div>
 
       {/* X-Ray Controls (Bottom Center) */}

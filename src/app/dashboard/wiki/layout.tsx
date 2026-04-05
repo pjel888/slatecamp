@@ -1,4 +1,4 @@
-import { WikiLayoutContent } from '@/components/wiki/WikiLayoutContent'
+import { WikiLayoutContent } from '@/components/wiki/navigation/WikiLayoutContent'
 import React, { Suspense } from 'react'
 import WikiLoading from './loading'
 

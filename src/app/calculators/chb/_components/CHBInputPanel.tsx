@@ -1,97 +1,17 @@
 'use client'
 
 import { useCHBStore } from '@/app/calculators/_stores/chbStore'
+import {
+  CheckboxField,
+  FieldLabel,
+  NumberInput,
+  PresetButton,
+  SectionLabel,
+  Separator,
+} from '@/components/calculators/InputPrimitives'
 
 // ─── Shared Helpers ─────────────────────────────────────────────────────────
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="font-mono text-[9px] font-medium uppercase tracking-widest text-muted-foreground">
-      {children}
-    </p>
-  )
-}
-
-function Separator() {
-  return <hr className="my-3 border-border" />
-}
-
-function FieldLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <label className="block text-xs font-medium text-foreground">
-      {children}
-    </label>
-  )
-}
-
-function NumberInput({
-  value,
-  onChange,
-  min = 0,
-  step = 1,
-}: {
-  value: number
-  onChange: (v: number) => void
-  min?: number
-  step?: number
-}) {
-  return (
-    <input
-      type="number"
-      value={value}
-      min={min}
-      step={step}
-      onChange={(e) => onChange(Number(e.target.value))}
-      className="mt-1 w-full rounded-sm border border-border bg-background px-2 py-1.5 font-mono text-xs text-foreground outline-none transition-colors duration-150 focus:border-primary"
-    />
-  )
-}
-
-function PresetButton({
-  label,
-  active,
-  onClick,
-}: {
-  label: string
-  active: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`rounded-sm border px-2.5 py-1 font-mono text-[10px] transition-colors duration-150 ${
-        active
-          ? 'border-primary bg-primary text-primary-foreground'
-          : 'border-border text-muted-foreground hover:bg-muted'
-      }`}
-    >
-      {label}
-    </button>
-  )
-}
-
-function ToggleSwitch({
-  label,
-  checked,
-  onChange,
-}: {
-  label: string
-  checked: boolean
-  onChange: (v: boolean) => void
-}) {
-  return (
-    <div className="flex items-center gap-2">
-      <input
-        type="checkbox"
-        checked={checked}
-        onChange={(e) => onChange(e.target.checked)}
-        className="h-3.5 w-3.5 rounded-sm border-border accent-primary"
-      />
-      <span className="text-xs text-foreground">{label}</span>
-    </div>
-  )
-}
 
 // ─── CHB Size Presets ───────────────────────────────────────────────────────
 
@@ -199,7 +119,7 @@ export function CHBInputPanel() {
       <Separator />
       <SectionLabel>Reinforcement</SectionLabel>
 
-      <ToggleSwitch
+      <CheckboxField
         label="Include vertical rebar"
         checked={includeVerticalRebar}
         onChange={(v) => setInput('includeVerticalRebar', v)}
@@ -234,7 +154,7 @@ export function CHBInputPanel() {
         </>
       )}
 
-      <ToggleSwitch
+      <CheckboxField
         label="Include horizontal rebar"
         checked={includeHorizontalRebar}
         onChange={(v) => setInput('includeHorizontalRebar', v)}

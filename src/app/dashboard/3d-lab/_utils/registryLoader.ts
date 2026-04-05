@@ -28,7 +28,7 @@ export async function getRegistryByCategory(
   }
 
   try {
-    const registry = await import(`../_config/registry/cat-${cat.id}.ts`)
+    const registry = await import(`../../../../features/3d-lab/config/registry/cat-${cat.id}.ts`)
     const entries: ModuleRegistryEntry[] = registry.default ?? registry.modules ?? []
     registryCache.set(cacheKey, entries)
     return entries

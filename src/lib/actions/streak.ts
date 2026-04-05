@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { revalidateDashboardCacheTags } from './cache-tags'
 
 const toUtcDateString = (date: Date): string =>
   date.toISOString().slice(0, 10)
@@ -134,6 +135,8 @@ export const updateStreak = async (userId: string): Promise<void> => {
       })
     }
   }
+
+  revalidateDashboardCacheTags(userId)
 }
 
 export type StreakStatus = 'active' | 'at_risk' | 'broken'

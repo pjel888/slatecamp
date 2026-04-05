@@ -6,12 +6,11 @@ import { cn } from '@/lib/utils'
 import { getCorrectOptionId } from '@/lib/utils/question'
 import type { Question, Choice } from '@/types/app'
 import {
-  getSessionQuestions,
-  createQuizSession,
-  saveInteraction,
-  updateQuizSession,
-} from '@/lib/actions/quiz'
-import { completeAssessment } from '@/lib/actions/assessment'
+  createAssessmentSession,
+  saveAssessmentInteraction,
+  completeAssessment,
+  getAssessmentClientQuestions,
+} from '@/lib/actions/assessment'
 import { trackDiagnosticCompleted } from '@/lib/analytics/events'
 import { Skeleton } from '@/components/ui/skeleton'
 
@@ -46,23 +45,17 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
     const init = async () => {
       try {
         const [fetchedQuestions, session] = await Promise.all([
-          getSessionQuestions(questionIds),
-          createQuizSession({
-            discipline_id: disciplineId,
-            test_mode: 'camp',
-            question_ids: questionIds,
-            config: {
-              isAssessment: true,
-              showTimer: false,
-              showFeedback: false,
-            },
+          getAssessmentClientQuestions(questionIds),
+          createAssessmentSession({
+            disciplineId,
+            questionIds,
           }),
         ])
 
         if (cancelled) return
 
         sessionIdRef.current = session.session_id
-        setQuestions(fetchedQuestions)
+        setQuestions(fetchedQuestions as unknown as Question[])
         setLoading(false)
         questionStartRef.current = Date.now()
       } catch (err) {
@@ -130,22 +123,18 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
         const correctId = getCorrectOptionId(q)
         const isCorrect = selected === correctId
 
-        return saveInteraction({
-          session_id: sessionId,
-          question_id: q.question_id,
-          topic_id: q.topic_id,
-          selected_option_id: selected,
-          is_correct: isCorrect,
-          time_spent_ms: 0, // Assessment does not track per-question time
+        return saveAssessmentInteraction({
+          sessionId,
+          questionId: q.question_id,
+          topicId: q.topic_id,
+          selectedOptionId: selected,
+          isCorrect,
         })
       })
 
       await Promise.all(interactions)
 
-      // Mark session completed
-      await updateQuizSession(sessionId, { status: 'completed' })
-
-      // Complete assessment scoring
+      // Complete assessment scoring (handles marking session status internally)
       await completeAssessment(sessionId)
 
       // Track diagnostic completion
@@ -195,7 +184,7 @@ export const AssessmentQuiz = ({ questionIds, disciplineId }: AssessmentQuizProp
   if (error) {
     return (
       <div className="min-h-screen bg-surface-focused flex items-center justify-center px-6">
-        <div className="bg-white rounded-md p-6 max-w-sm w-full text-center space-y-4">
+        <div className="bg-white rounded-md p-6 max-sm w-full text-center space-y-4">
           <p className="text-destructive text-sm font-medium">{error}</p>
           <button
             onClick={() => router.push('/dashboard')}

@@ -4,6 +4,7 @@ import { useEffect, useRef, useMemo, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 import { cn } from '@/lib/utils'
 import { QuizHeader } from './QuizHeader'
@@ -12,13 +13,13 @@ import { QuizFooter } from './QuizFooter'
 import { TimerDisplay } from './TimerDisplay'
 import { TimerTicker } from './TimerTicker'
 import { PacingNudge } from './PacingNudge'
-import { endSession as endSessionAction, getSessionQuestions } from '@/lib/actions/quiz-v2'
+import { endSession as endSessionAction, getSessionQuestions, updateSessionProgress } from '@/lib/actions/quiz-v2'
 import { QuestionSkeleton } from './QuestionSkeleton'
 import type { GestureSignalEvent } from '@/types/patent'
 import type {
+  QuizAnswerState,
   QuizSessionConfig,
   QuestionForClient,
-  FeedbackData,
 } from '@/types/quiz-config'
 
 // ─── Dynamic Imports (Boundary Realignment) ──────────────────────────────────
@@ -37,6 +38,14 @@ interface QuizShellProps {
   config: QuizSessionConfig
   questions: QuestionForClient[]
   allQuestionIds: string[]
+  totalQuestionCount?: number
+  initialCurrentIndex?: number
+  restoredAnswers?: Record<string, Partial<QuizAnswerState>>
+}
+
+const useAnswersSnapshot = () => {
+  const answersVersion = useQuizStore((s) => s.answersVersion)
+  return useMemo(() => useQuizStore.getState().answers, [answersVersion])
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -47,14 +56,8 @@ const WrappedQuestionPalette = ({
 }: { 
   questions: QuestionForClient[], currentIndex: number, onJumpTo: (idx: number) => void, onClose: () => void 
 }) => {
-  const answers = useQuizStore(s => s.answers)
-  const flaggedSet = useMemo(() => {
-    const set = new Set<string>()
-    for (const [qid, ans] of Object.entries(answers)) {
-      if (ans.isFlagged) set.add(qid)
-    }
-    return set
-  }, [answers])
+  const answers = useAnswersSnapshot()
+  const flaggedSet = useQuizStore((s) => s.flaggedSet)
   return (
     <QuestionPalette
       questions={questions}
@@ -73,14 +76,8 @@ const WrappedSubmitModal = ({
 }: {
   questions: QuestionForClient[], currentIndex: number, onReviewUnanswered: () => void, onSubmit: () => void, onClose: () => void
 }) => {
-  const answers = useQuizStore(s => s.answers)
-  const flaggedSet = useMemo(() => {
-    const set = new Set<string>()
-    for (const [qid, ans] of Object.entries(answers)) {
-      if (ans.isFlagged) set.add(qid)
-    }
-    return set
-  }, [answers])
+  const answers = useAnswersSnapshot()
+  const flaggedSet = useQuizStore((s) => s.flaggedSet)
   return (
     <SubmitConfirmModal
       questions={questions}
@@ -94,7 +91,15 @@ const WrappedSubmitModal = ({
   )
 }
 
-export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: QuizShellProps) => {
+export const QuizShell = ({
+  sessionId,
+  config,
+  questions,
+  allQuestionIds,
+  totalQuestionCount,
+  initialCurrentIndex = 0,
+  restoredAnswers,
+}: QuizShellProps) => {
   const router = useRouter()
   const initializedRef = useRef(false)
   const directionRef = useRef<'forward' | 'backward'>('forward')
@@ -150,9 +155,6 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
     return q ? s.answers[q.question_id]?.isFlagged : false
   })
 
-  // Select only what's needed from timer
-  const timerIsRunning = useQuizStore((s) => s.timer.isRunning)
-
   // Granular feedback state
   const feedbackVisible = useQuizStore((s) => s.feedback.visible)
   const feedbackQuestionId = useQuizStore((s) => s.feedback.questionId)
@@ -186,17 +188,16 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
   const initSession = useQuizStore((s) => s.initSession)
   const getCurrentQuestion = useQuizStore((s) => s.getCurrentQuestion)
   const getAnsweredCount = useQuizStore((s) => s.getAnsweredCount)
-  const getFlaggedSet = useQuizStore((s) => s.getFlaggedSet)
   const getFeedbackData = useQuizStore((s) => s.getFeedbackData)
   const selectAnswer = useQuizStore((s) => s.selectAnswer)
   const setConfidence = useQuizStore((s) => s.setConfidence)
   const submitCurrentAnswer = useQuizStore((s) => s.submitCurrentAnswer)
+  const skipCurrentQuestion = useQuizStore((s) => s.skipCurrentQuestion)
   const goNext = useQuizStore((s) => s.goNext)
   const goPrevious = useQuizStore((s) => s.goPrevious)
   const goToQuestion = useQuizStore((s) => s.goToQuestion)
   const toggleFlag = useQuizStore((s) => s.toggleFlag)
   const hideFeedback = useQuizStore((s) => s.hideFeedback)
-  const startTimer = useQuizStore((s) => s.startTimer)
   const togglePalette = useQuizStore((s) => s.togglePalette)
   const showExitModal = useQuizStore((s) => s.showExitModal)
   const hideExitModal = useQuizStore((s) => s.hideExitModal)
@@ -204,6 +205,11 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
   const hideSubmitModal = useQuizStore((s) => s.hideSubmitModal)
   const hideMicroBreak = useQuizStore((s) => s.hideMicroBreak)
   const endSession = useQuizStore((s) => s.endSession)
+
+  const startTimer = useQuizTimerStore((s) => s.startTimer)
+  const stopTimer = useQuizTimerStore((s) => s.stopTimer)
+  const resetTimer = useQuizTimerStore((s) => s.resetTimer)
+  const closeWikiPanel = useQuizStore((s) => s.closeWikiPanel)
 
   // ── Sync browser settings post-mount ─────────────────────────────────────
 
@@ -230,12 +236,18 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
         sessionId,
         config,
         questions,
-        totalQuestions: questions.length,
+        totalQuestions: totalQuestionCount ?? allQuestionIds.length,
         readinessScoreBefore: 0,
+        allQuestionIds,
+        initialCurrentIndex,
+        restoredAnswers,
       })
 
       if (config.timer.enabled) {
-        startTimer(config.timer.totalSeconds ? config.timer.totalSeconds * 1000 : undefined)
+        startTimer({
+          limitMs: config.timer.totalSeconds ? config.timer.totalSeconds * 1000 : undefined,
+          sessionId,
+        })
       } else {
         useQuizStore.setState({ status: 'active' })
       }
@@ -248,17 +260,37 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
       const state = useQuizStore.getState()
       if (state.status === 'results' || state.status === 'idle') {
         reset()
+        resetTimer()
       }
     }
-  }, [sessionId, config, questions, initSession, startTimer, reset])
+  }, [
+    sessionId,
+    config,
+    questions,
+    allQuestionIds,
+    totalQuestionCount,
+    initialCurrentIndex,
+    restoredAnswers,
+    initSession,
+    startTimer,
+    reset,
+    resetTimer,
+  ])
+
+  useEffect(() => {
+    if (!_hasHydrated || !sessionId || status === 'results') return
+
+    void updateSessionProgress(sessionId, currentIndex).catch(() => {})
+  }, [_hasHydrated, sessionId, currentIndex, status])
 
   // ── Navigate to results when session ends ─────────────────────────────────
 
   useEffect(() => {
     if (status === 'results' && results && storeSessionId === sessionId) {
+      stopTimer()
       router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
     }
-  }, [status, results, config.mode, sessionId, storeSessionId, router])
+  }, [status, results, config.mode, sessionId, storeSessionId, router, stopTimer])
 
 
   // ── Derived data ──────────────────────────────────────────────────────────
@@ -313,11 +345,14 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
         sessionId,
         endReason: 'user_exit',
       })
+      stopTimer()
       endSession(result)
     } catch {
+      reset()
+      resetTimer()
       router.push('/dashboard')
     }
-  }, [sessionId, hideExitModal, endSession, router])
+  }, [sessionId, hideExitModal, endSession, router, reset, resetTimer, stopTimer])
 
   const handleSubmitAll = useCallback(async () => {
     hideSubmitModal()
@@ -382,18 +417,11 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
     const state = useQuizStore.getState()
     const ans = state.answers[currentQuestion.question_id]
     if (ans && !ans.submittedAt && !ans.isSkipped) {
-      const next = {
-        ...state.answers,
-        [currentQuestion.question_id]: {
-          ...ans,
-          isSkipped: true,
-          timeSpentMs: Date.now() - ans.timeStartedMs,
-        },
-      }
-      useQuizStore.setState({ answers: next })
+      skipCurrentQuestion()
+      return
     }
     goNext()
-  }, [currentQuestion, goNext])
+  }, [currentQuestion, goNext, skipCurrentQuestion])
 
   const handlePaletteJump = useCallback(
     (index: number) => {
@@ -530,7 +558,7 @@ export const QuizShell = ({ sessionId, config, questions, allQuestionIds }: Quiz
       {wikiPanelOpen && wikiPanelUrl && (
         <WikiSidePanel
           url={wikiPanelUrl}
-          onClose={useQuizStore((s) => s.closeWikiPanel)}
+          onClose={closeWikiPanel}
         />
       )}
     </div>

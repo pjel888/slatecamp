@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
 import { Eyebrow } from '@/components/ui/eyebrow'
-import { QuestionsTableClient } from '@/app/admin/knowledge/questions/_components/QuestionsTableClient'
+import { QuestionsTableClient } from '@/components/admin/QuestionsTableClient'
 
 // ─── Types ───────────────────────────────────────────────────
 

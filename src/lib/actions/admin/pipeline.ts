@@ -9,7 +9,7 @@ export const getPipelineArticles = async () => {
   const supabase = await createClient()
   const { data } = await supabase
     .from('wiki_articles')
-    .select('article_id, title, slug, status, updated_at, created_at')
+    .select('article_id, title, slug, status, updated_at, created_at, reviewed_by, subject_label')
     .order('updated_at', { ascending: false })
     .limit(500)
   return data || []

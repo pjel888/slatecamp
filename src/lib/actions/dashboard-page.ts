@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { unstable_cache } from 'next/cache'
 import type { DashboardPageData } from '@/types/dashboard'
 import { MODE_TOOLTIPS, getWeekBoundary } from './dashboard-helpers'
@@ -52,7 +52,7 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
 }
 
 const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
-  const supabase = await createClient()
+  const supabase = await createServiceClient()
 
   const firstName =
     user?.user_metadata?.full_name?.split(' ')[0] ??

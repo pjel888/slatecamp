@@ -29,7 +29,7 @@ function TogglePill({
       disabled={disabled}
       className={`relative w-8 h-[18px] rounded-full transition-colors duration-150 flex-shrink-0 ${
         disabled ? 'cursor-default' : 'cursor-pointer'
-      } ${enabled ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]'}`}
+      } ${enabled ? 'bg-primary' : 'bg-border'}`}
     >
       <span
         className={`absolute top-[2px] w-3.5 h-3.5 rounded-full bg-white transition-[left] duration-150 ${
@@ -42,7 +42,7 @@ function TogglePill({
 
 function BasisBadge({ basis }: { basis: string }) {
   return (
-    <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-[#4A5568] whitespace-nowrap">
+    <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-text-secondary whitespace-nowrap">
       {BASIS_LABEL[basis] ?? basis.toUpperCase()}
     </span>
   )
@@ -61,7 +61,7 @@ function LayerCard({ layer, alwaysOn, specLine, onToggle, onWasteChange }: Layer
 
   return (
     <div
-      className={`flex items-center gap-3 px-3.5 py-[11px] border border-[#D4DAE3] rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
+      className={`flex items-center gap-3 px-3.5 py-[11px] border border-border rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
         !layer.enabled && !alwaysOn ? 'opacity-45' : ''
       }`}
     >
@@ -72,14 +72,14 @@ function LayerCard({ layer, alwaysOn, specLine, onToggle, onWasteChange }: Layer
       />
 
       <div className="flex-1 min-w-0">
-        <div className="text-[13px] font-medium text-[#1A2332]">{layer.label}</div>
-        <div className="text-[11px] text-[#4A5568]">{specLine}</div>
+        <div className="text-[13px] font-medium text-text-primary">{layer.label}</div>
+        <div className="text-[11px] text-text-secondary">{specLine}</div>
       </div>
 
       <BasisBadge basis={layer.basis} />
 
       <div className="flex items-center gap-1.5 shrink-0">
-        <label className="font-mono text-[9px] uppercase text-[#8896A7]">Waste</label>
+        <label className="font-mono text-[9px] uppercase text-text-tertiary">Waste</label>
         <input
           type="text"
           value={`${wastePercent}%`}
@@ -91,7 +91,7 @@ function LayerCard({ layer, alwaysOn, specLine, onToggle, onWasteChange }: Layer
               onWasteChange?.(v / 100)
             }
           }}
-          className="font-mono text-[12px] w-11 border border-[#D4DAE3] rounded px-1.5 py-[3px] text-right bg-white disabled:cursor-default disabled:opacity-50 focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+          className="font-mono text-[12px] w-11 border border-border rounded px-1.5 py-[3px] text-right bg-white disabled:cursor-default disabled:opacity-50 focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
     </div>
@@ -125,9 +125,10 @@ export function Step5Treatment() {
 
   return (
     <div className="flex flex-col gap-4 p-4">
+      {/* Structural & Element Refinements from Audit */}
       <div>
-        <h2 className="text-sm font-semibold text-[#1A2332]">Treatment layers</h2>
-        <p className="mt-0.5 text-xs text-[#4A5568]">
+        <h2 className="text-sm font-semibold text-text-primary">Treatment layers</h2>
+        <p className="mt-0.5 text-xs text-text-secondary">
           Toggle the layers applicable to this wall. Order reflects construction sequence.
         </p>
       </div>
@@ -190,7 +191,7 @@ export function Step5Treatment() {
             )}
             {getLayer('JOINT_COMPOUND') && (
               <div className="flex items-center gap-2 px-1 mb-1.5">
-                <span className="font-mono text-[11px] text-[#4A5568]">Seam length:</span>
+                <span className="font-mono text-[11px] text-text-secondary">Seam length:</span>
                 <input
                   type="number"
                   min={0}
@@ -199,10 +200,10 @@ export function Step5Treatment() {
                   onChange={(e) => setSeamInput(e.target.value)}
                   onBlur={handleSeamBlur}
                   placeholder="auto"
-                  className="font-mono text-[11px] w-16 border border-[#D4DAE3] rounded px-1.5 py-[3px] bg-white placeholder:text-[#8896A7] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-white placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
-                <span className="font-mono text-[11px] text-[#4A5568]">lm</span>
-                <span className="font-mono text-[11px] text-[#8896A7]">(leave blank for auto-estimate)</span>
+                <span className="font-mono text-[11px] text-text-secondary">lm</span>
+                <span className="font-mono text-[11px] text-text-tertiary">(leave blank for auto-estimate)</span>
               </div>
             )}
           </>
@@ -265,7 +266,7 @@ export function Step5Treatment() {
             )}
             {getLayer('JOINT_COMPOUND') && (
               <div className="flex items-center gap-2 px-1 mb-1.5">
-                <span className="font-mono text-[11px] text-[#4A5568]">Seam length:</span>
+                <span className="font-mono text-[11px] text-text-secondary">Seam length:</span>
                 <input
                   type="number"
                   min={0}
@@ -274,10 +275,10 @@ export function Step5Treatment() {
                   onChange={(e) => setSeamInput(e.target.value)}
                   onBlur={handleSeamBlur}
                   placeholder="auto"
-                  className="font-mono text-[11px] w-16 border border-[#D4DAE3] rounded px-1.5 py-[3px] bg-white placeholder:text-[#8896A7] focus:outline-none focus:ring-1 focus:ring-[#1B3FC4]"
+                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-white placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
-                <span className="font-mono text-[11px] text-[#4A5568]">lm</span>
-                <span className="font-mono text-[11px] text-[#8896A7]">(leave blank for auto-estimate)</span>
+                <span className="font-mono text-[11px] text-text-secondary">lm</span>
+                <span className="font-mono text-[11px] text-text-tertiary">(leave blank for auto-estimate)</span>
               </div>
             )}
             {getLayer('SKIM_COAT') && (
@@ -363,18 +364,18 @@ export function Step5Treatment() {
         )}
       </div>
 
-      <div className="flex justify-between border-t border-[#D4DAE3] pt-4">
+      <div className="flex justify-between border-t border-border pt-4">
         <button
           type="button"
           onClick={prevStep}
-          className="rounded-sm border border-[#D4DAE3] bg-white px-4 py-2 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+          className="rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Back
         </button>
         <button
           type="button"
           onClick={nextStep}
-          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-600"
         >
           Continue
         </button>

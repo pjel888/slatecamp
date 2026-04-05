@@ -1,12 +1,13 @@
 'use client'
 
 import { memo } from 'react'
-import { X, BookmarkSimple, SquaresFour, Timer, Fire } from '@phosphor-icons/react'
+import { X, BookmarkSimple, SquaresFour, Timer, Fire, CloudCheck, CloudArrowUp, CloudSlash, WarningCircle } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { QuizSessionConfig, TimerMode } from '@/types/quiz-config'
 import { MODE_LABELS } from '@/lib/quiz/mode-presets'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
 interface QuizHeaderProps {
   config: QuizSessionConfig
@@ -38,9 +39,9 @@ const TIMER_COLOR_CLASSES: Record<string, string> = {
 
 /** Standalone timer component to isolate 1Hz re-renders from the Header */
 const DefaultTimer = ({ mode }: { mode: TimerMode }) => {
-  const elapsedMs = useQuizStore((s) => s.timer.elapsedMs)
-  const limitMs = useQuizStore((s) => s.timer.limitMs)
-  const colorState = useQuizStore((s) => s.timer.colorState)
+  const elapsedMs = useQuizTimerStore((s) => s.elapsedMs)
+  const limitMs = useQuizTimerStore((s) => s.limitMs)
+  const colorState = useQuizTimerStore((s) => s.colorState)
 
   if (mode === 'hidden') return null
 
@@ -64,6 +65,33 @@ const DefaultTimer = ({ mode }: { mode: TimerMode }) => {
     >
       <Timer size={14} aria-hidden="true" />
       {formatTime(displaySeconds)}
+    </div>
+  )
+}
+
+const SyncStatus = () => {
+  const status = useQuizStore((s) => s.ui.saveStatus)
+  
+  if (status === 'idle') return null
+
+  const icons = {
+    saving: <CloudArrowUp size={14} className="text-primary animate-pulse" />,
+    saved: <CloudCheck size={14} className="text-emerald-600" />,
+    offline: <CloudSlash size={14} className="text-amber-600" />,
+    error: <WarningCircle size={14} className="text-destructive" />,
+  }
+
+  const labels = {
+    saving: 'Syncing',
+    saved: 'Saved',
+    offline: 'Offline',
+    error: 'Error',
+  }
+
+  return (
+    <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground tabular-nums">
+      {icons[status as keyof typeof icons]}
+      <span className="hidden lg:inline">{labels[status as keyof typeof labels]}</span>
     </div>
   )
 }
@@ -130,6 +158,11 @@ export const QuizHeader = memo(({
         <span className="text-xs text-muted-foreground tabular-nums shrink-0">
           {currentPosition}/{totalQuestions}
         </span>
+      </div>
+
+      {/* Sync Status (Middle) */}
+      <div className="hidden md:flex justify-center flex-1">
+        <SyncStatus />
       </div>
 
       {/* Mode badge */}

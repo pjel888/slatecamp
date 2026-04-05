@@ -2,6 +2,7 @@
 
 import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
+import { revalidateDashboardCacheTags } from './cache-tags'
 import type { Note, NoteStub } from '@/types/app'
 
 function snippetFromContent(content: Record<string, unknown>, maxLen = 80): string {
@@ -122,6 +123,7 @@ export async function createNote(
     .single()
 
   if (error) return { error: error.message }
+  revalidateDashboardCacheTags(user.id)
   revalidatePath('/dashboard/notes')
   return { id: data.note_id }
 }
@@ -166,6 +168,7 @@ export async function updateNote(
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }
+  revalidateDashboardCacheTags(user.id)
   revalidatePath('/dashboard/notes')
   return {}
 }
@@ -182,6 +185,8 @@ export async function deleteNote(id: string): Promise<{ error?: string }> {
     .eq('user_id', user.id)
 
   if (error) return { error: error.message }
+  revalidateDashboardCacheTags(user.id)
   revalidatePath('/dashboard/notes')
   return {}
 }
+

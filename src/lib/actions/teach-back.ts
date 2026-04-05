@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { revalidateDashboardCacheTags } from './cache-tags'
 
 export interface TeachBackCriteria {
   criteria_id: string
@@ -107,6 +108,8 @@ export const submitTeachBack = async (params: {
     .eq('user_id', user.id)
     .eq('topic_id', params.topicId)
 
+  revalidateDashboardCacheTags(user.id)
+
   return {
     submission: submission as TeachBackSubmission,
     evaluation,
@@ -134,6 +137,9 @@ export const submitRevision = async (
     .eq('user_id', user.id)
 
   if (error) throw error
+
+  revalidateDashboardCacheTags(user.id)
+
   return { success: true }
 }
 

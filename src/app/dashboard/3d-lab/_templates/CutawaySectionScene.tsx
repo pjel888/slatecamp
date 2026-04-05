@@ -64,7 +64,6 @@ function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
       const next = THREE.MathUtils.lerp(current, targetOpacity, 0.15)
       if (Math.abs(next - current) > 0.001) {
         matRef.current.opacity = next
-        matRef.current.needsUpdate = true
         invalidate()
       }
     }

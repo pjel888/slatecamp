@@ -7,8 +7,6 @@ import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { ApproveDialog } from '@/components/admin/ApproveDialog'
-import { RequestChangesDialog } from '@/components/admin/RequestChangesDialog'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import {
   Select,
@@ -207,28 +205,6 @@ export const SMEReviewQueue = () => {
           </div>
         )}
       </div>
-
-      {/* Approve dialog */}
-      {dialog.type === 'approve' && dialog.item && (
-        <ApproveDialog
-          open
-          onOpenChange={(open) => { if (!open) closeDialog() }}
-          articleId={dialog.item.id}
-          articleTitle={dialog.item.title}
-          onSuccess={() => handleItemRemoved(dialog.item!.id)}
-        />
-      )}
-
-      {/* Request changes dialog */}
-      {dialog.type === 'changes' && dialog.item && (
-        <RequestChangesDialog
-          open
-          onOpenChange={(open) => { if (!open) closeDialog() }}
-          articleId={dialog.item.id}
-          articleTitle={dialog.item.title}
-          onSuccess={() => handleItemRemoved(dialog.item!.id)}
-        />
-      )}
     </>
   )
 }

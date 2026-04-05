@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -12,6 +12,9 @@ const SCALE = 0.08
 const FLOOR_HEIGHT_M = 3
 const LOT_Y = 0.005  // half-thickness of lot plate
 const MAX_ZONE_FAR = 4.0
+
+// Helpers for instancing to avoid per-frame allocations
+const tempObject = new THREE.Object3D()
 
 /** Lerp a value toward target. Returns true when settled (within epsilon). */
 function lerp(current: number, target: number, factor: number, epsilon = 0.001): [number, boolean] {
@@ -49,8 +52,7 @@ function computeScene(lotArea: number, far: number, bhl: number, setbackFront: n
 
 /**
  * The FAR Calculator scene — all R3F geometry.
- * Must be used inside a Canvas (via FARPlayground wrapper).
- * Uses frameloop="demand" + lerp animation, consistent with NBCPScene.
+ * Optimized with InstancedMesh for floor plates, property lines, and setbacks.
  */
 export function FARScene() {
   useInvalidateOnChange()
@@ -58,31 +60,25 @@ export function FARScene() {
 
   const buildingRef = useRef<THREE.Mesh>(null)
   const buildingMatRef = useRef<THREE.MeshStandardMaterial>(null)
+  const instancedRef = useRef<THREE.InstancedMesh>(null)
+  const propLinesRef = useRef<THREE.InstancedMesh>(null)
+  const setbacksRef = useRef<THREE.InstancedMesh>(null)
+  
+  // Pre-allocated refs for performance
+  const targetRef = useRef({ w: 0.001, h: 0.001, isViolation: false })
   const animRef = useRef({ w: 0.001, h: 0.001 })
 
-  useFrame(() => {
-    const { lotArea, far, bhl, setbackFront, setbackSide } = useLabStore.getState()
-    const s = computeScene(lotArea, far, bhl, setbackFront, setbackSide)
-    const targetW = Math.max(0.001, toU(s.footprintSideM))
-    const targetH = Math.max(0.001, toU(s.buildingHeightM))
+  // Subscribe to store changes once on mount
+  useEffect(() => {
+    return useLabStore.subscribe((state) => {
+      const s = computeScene(state.lotArea, state.far, state.bhl, state.setbackFront, state.setbackSide)
+      targetRef.current.w = Math.max(0.001, toU(s.footprintSideM))
+      targetRef.current.h = Math.max(0.001, toU(s.buildingHeightM))
+      targetRef.current.isViolation = s.isViolation
+    })
+  }, [])
 
-    const LERP_FACTOR = 0.12
-    const [nw, wSettled] = lerp(animRef.current.w, targetW, LERP_FACTOR)
-    const [nh, hSettled] = lerp(animRef.current.h, targetH, LERP_FACTOR)
-    animRef.current = { w: nw, h: nh }
-
-    if (buildingRef.current) {
-      buildingRef.current.scale.set(nw, nh, nw)
-      buildingRef.current.position.y = LOT_Y * 2 + nh / 2
-    }
-    if (buildingMatRef.current) {
-      buildingMatRef.current.color.set(s.isViolation ? '#D64545' : '#1B3FC4')
-    }
-
-    if (!wSettled || !hSettled) invalidate()
-  })
-
-  // Static values for geometry layout
+  // Static values for geometry layout (non-animated)
   const { lotArea, far, bhl, setbackFront, setbackSide } = useLabStore()
   const s = computeScene(lotArea, far, bhl, setbackFront, setbackSide)
 
@@ -92,6 +88,91 @@ export function FARScene() {
   const sideSbU  = toU(setbackSide)
   const bhlColor = s.isBHLViolation ? '#D64545' : '#2D9F6F'
 
+  // Update instance matrices for floor plates, property lines, and setbacks
+  useLayoutEffect(() => {
+    if (!instancedRef.current || !propLinesRef.current || !setbacksRef.current) return
+    
+    // 1. Floor plates
+    const bw = toU(s.footprintSideM)
+    const count = Math.max(0, s.floors - 1)
+    for (let i = 0; i < count; i++) {
+      const floorY = LOT_Y * 2 + toU((i + 1) * FLOOR_HEIGHT_M)
+      tempObject.position.set(0, floorY, 0)
+      tempObject.scale.set(bw, 1, bw)
+      tempObject.updateMatrix()
+      instancedRef.current.setMatrixAt(i, tempObject.matrix)
+    }
+    instancedRef.current.count = count
+    instancedRef.current.instanceMatrix.needsUpdate = true
+
+    // 2. Property boundary lines (4 segments)
+    const lu = toU(s.lotSideM)
+    // FB segments
+    for (let i = 0; i < 2; i++) {
+      const dir = i === 0 ? 1 : -1
+      tempObject.position.set(0, 0.003, dir * lu / 2)
+      tempObject.scale.set(lu, 0.006, 0.008)
+      tempObject.updateMatrix()
+      propLinesRef.current.setMatrixAt(i, tempObject.matrix)
+    }
+    // LR segments
+    for (let i = 0; i < 2; i++) {
+      const dir = i === 0 ? 1 : -1
+      tempObject.position.set(dir * lu / 2, 0.003, 0)
+      tempObject.scale.set(0.008, 0.006, lu)
+      tempObject.updateMatrix()
+      propLinesRef.current.setMatrixAt(i + 2, tempObject.matrix)
+    }
+    propLinesRef.current.instanceMatrix.needsUpdate = true
+
+    // 3. Setback zones (4 segments: Front, Rear, Left, Right)
+    let setbackIdx = 0
+    // Front/Rear
+    if (frontSbU > 0) {
+      for (let i = 0; i < 2; i++) {
+        const dir = i === 0 ? 1 : -1
+        tempObject.position.set(0, LOT_Y, dir * (lu / 2 - frontSbU / 2))
+        tempObject.scale.set(lu, 1, frontSbU)
+        tempObject.updateMatrix()
+        setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+      }
+    }
+    // Left/Right
+    if (sideSbU > 0) {
+      for (let i = 0; i < 2; i++) {
+        const dir = i === 0 ? 1 : -1
+        tempObject.position.set(dir * (lu / 2 - sideSbU / 2), LOT_Y, 0)
+        tempObject.scale.set(sideSbU, 1, lu)
+        tempObject.updateMatrix()
+        setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+      }
+    }
+    setbacksRef.current.count = setbackIdx
+    setbacksRef.current.instanceMatrix.needsUpdate = true
+  }, [s.floors, s.footprintSideM, s.lotSideM, frontSbU, sideSbU])
+
+  useFrame(() => {
+    const target = targetRef.current
+    const LERP_FACTOR = 0.12
+    
+    const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
+    const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
+
+    // Mutate existing ref directly to avoid GC pressure
+    animRef.current.w = nw
+    animRef.current.h = nh
+
+    if (buildingRef.current) {
+      buildingRef.current.scale.set(nw, nh, nw)
+      buildingRef.current.position.y = LOT_Y * 2 + nh / 2
+    }
+    if (buildingMatRef.current) {
+      buildingMatRef.current.color.set(target.isViolation ? '#D64545' : '#1B3FC4')
+    }
+
+    if (!wSettled || !hSettled) invalidate()
+  })
+
   return (
     <group>
       {/* ── Lot plate ──────────────────────────────────────────────────── */}
@@ -100,49 +181,17 @@ export function FARScene() {
         <meshStandardMaterial color="#e5e7eb" />
       </mesh>
 
-      {/* Property boundary lines */}
-      {([1, -1] as const).map(dir => (
-        <mesh key={`prop-fb-${dir}`} position={[0, 0.003, dir * lotU / 2]}>
-          <boxGeometry args={[lotU, 0.006, 0.008]} />
-          <meshStandardMaterial color="#374151" />
-        </mesh>
-      ))}
-      {([1, -1] as const).map(dir => (
-        <mesh key={`prop-lr-${dir}`} position={[dir * lotU / 2, 0.003, 0]}>
-          <boxGeometry args={[0.008, 0.006, lotU]} />
-          <meshStandardMaterial color="#374151" />
-        </mesh>
-      ))}
+      {/* Property boundary lines (Optimized via InstancedMesh) */}
+      <instancedMesh ref={propLinesRef} args={[null, null, 4]}>
+        <boxGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial color="#374151" />
+      </instancedMesh>
 
-      {/* ── Setback zones (ground planes, light blue) ───────────────────── */}
-      {/* Front setback */}
-      {frontSbU > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, LOT_Y, lotU / 2 - frontSbU / 2]}>
-          <planeGeometry args={[lotU, frontSbU]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Rear setback */}
-      {frontSbU > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, LOT_Y, -(lotU / 2 - frontSbU / 2)]}>
-          <planeGeometry args={[lotU, frontSbU]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Left setback */}
-      {sideSbU > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-(lotU / 2 - sideSbU / 2), LOT_Y, 0]}>
-          <planeGeometry args={[sideSbU, lotU]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Right setback */}
-      {sideSbU > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[(lotU / 2 - sideSbU / 2), LOT_Y, 0]}>
-          <planeGeometry args={[sideSbU, lotU]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
+      {/* Setback zones (Optimized via InstancedMesh) */}
+      <instancedMesh ref={setbacksRef} args={[null, null, 4]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[1, 1]} />
+        <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
+      </instancedMesh>
 
       {/* Setback labels */}
       {frontSbU > 0 && (
@@ -173,17 +222,11 @@ export function FARScene() {
         />
       </mesh>
 
-      {/* Floor plate lines */}
-      {Array.from({ length: s.floors - 1 }, (_, i) => {
-        const floorY = LOT_Y * 2 + toU((i + 1) * FLOOR_HEIGHT_M)
-        const bw = toU(s.footprintSideM)
-        return (
-          <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
-            <boxGeometry args={[bw, 0.005, bw]} />
-            <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
-          </mesh>
-        )
-      })}
+      {/* Floor plate lines (Optimized via InstancedMesh) */}
+      <instancedMesh ref={instancedRef} args={[null, null, 100]} frustumCulled={false}>
+        <boxGeometry args={[1, 0.005, 1]} />
+        <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
+      </instancedMesh>
 
       {/* ── 3D-anchored labels ──────────────────────────────────────────── */}
       {/* Height label — right face */}

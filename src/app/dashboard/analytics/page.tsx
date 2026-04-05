@@ -2,7 +2,6 @@
 // layout.tsx provides SharedPageLayout — do NOT re-wrap here.
 import { Suspense } from 'react'
 import { ChartSkeleton } from '@/components/analytics/ChartSkeleton'
-import { SummarySection } from '@/components/analytics/SummarySection'
 import { ReadinessSection } from '@/components/analytics/ReadinessSection'
 import { ExamCountdownSection } from '@/components/analytics/ExamCountdownSection'
 import { PacingQuadrantSection } from '@/components/analytics/PacingQuadrantSection'
@@ -30,11 +29,6 @@ import { ExamOutcomeSection } from '@/components/analytics/ExamOutcomeSection'
 export default function AnalyticsPage() {
   return (
     <div className="flex flex-col gap-2">
-      {/* Summary Metrics Bar */}
-      <Suspense fallback={<ChartSkeleton height="h-[64px]" />}>
-        <SummarySection />
-      </Suspense>
-
       {/* Top Row: Readiness Score + Exam Countdown */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <Suspense fallback={<ChartSkeleton height="h-[220px]" />}>

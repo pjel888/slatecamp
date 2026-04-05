@@ -8,6 +8,7 @@ import {
   CartesianGrid, Tooltip, ReferenceArea, ReferenceLine, Cell,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { QuadrantOverlay } from './QuadrantOverlay'
 import type { DifficultyMasteryPoint } from '@/lib/actions/analytics/chart-data'
 
 interface Props {
@@ -82,14 +83,14 @@ const buildCoaching = (data: DifficultyMasteryPoint[]): { text: string; variant:
   if (priorityTargets.length > 0) {
     const names = priorityTargets.slice(0, 2).map(d => d.topicName.split(' ').slice(-2).join(' ')).join(', ')
     return {
-      text: `${names} ${priorityTargets.length === 1 ? 'is a' : 'are'} priority target${priorityTargets.length === 1 ? '' : 's'} — hard content with low mastery. Focus here for the biggest score gain.`,
+      text: `${names} ${priorityTargets.length === 1 ? 'is a' : 'are'} priority target${priorityTargets.length === 1 ? '' : 's'} â€” hard content with low mastery. Focus here for the biggest score gain.`,
       variant: 'warning',
     }
   }
 
   if (quickFixes.length > 0) {
     return {
-      text: `${quickFixes.length} topic${quickFixes.length === 1 ? '' : 's'} with easy questions but low mastery — quick sessions could raise your score.`,
+      text: `${quickFixes.length} topic${quickFixes.length === 1 ? '' : 's'} with easy questions but low mastery â€” quick sessions could raise your score.`,
       variant: 'insight',
     }
   }
@@ -97,7 +98,7 @@ const buildCoaching = (data: DifficultyMasteryPoint[]): { text: string; variant:
   const strengths = data.filter(d => d.avgDifficulty >= DIFFICULTY_MID && d.masteryPct >= MASTERY_MID)
   if (strengths.length >= data.length * 0.5) {
     return {
-      text: `Strong performance on hard content — over half your topics are in the "strengths" zone.`,
+      text: `Strong performance on hard content â€” over half your topics are in the "strengths" zone.`,
       variant: 'success',
     }
   }
@@ -144,33 +145,21 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-0 px-1 pb-2">
         <div className="relative">
-          {/* Quadrant labels */}
-          <div className="absolute inset-0 pointer-events-none z-10 flex">
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-start pl-8 pt-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#8896A7' }}>
-                  Move on
-                </span>
-              </div>
-              <div className="flex-1 flex items-end justify-start pl-8 pb-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D4951A' }}>
-                  Quick fixes
-                </span>
-              </div>
-            </div>
-            <div className="flex-1 flex flex-col">
-              <div className="flex-1 flex items-start justify-end pr-4 pt-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#2D9F6F' }}>
-                  Your strengths
-                </span>
-              </div>
-              <div className="flex-1 flex items-end justify-end pr-4 pb-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#D64545' }}>
-                  Priority targets
-                </span>
-              </div>
-            </div>
-          </div>
+          <QuadrantOverlay
+            labels={{
+              topLeft: 'Move on',
+              topRight: 'Your strengths',
+              bottomLeft: 'Quick fixes',
+              bottomRight: 'Priority targets',
+            }}
+            colors={{
+              topLeft: '#8896A7',
+              topRight: '#2D9F6F',
+              bottomLeft: '#D4951A',
+              bottomRight: '#D64545',
+            }}
+            className="[&_span]:text-[10px]"
+          />
 
           <div className="h-[280px]">
             <ResponsiveContainer width="100%" height="100%">

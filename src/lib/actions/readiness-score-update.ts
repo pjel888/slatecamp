@@ -29,45 +29,44 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
 
   const disciplineId = statsData.current_discipline_id
 
-  // 2. Get total active leaf node count for this discipline
-  const { count: totalLeafCount } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id', { count: 'exact', head: true })
-    .eq('discipline_id', disciplineId)
-    .eq('is_leaf', true)
-    .eq('is_cross_ref_only', false)
-    .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+  // 2, 3, 4. Fetch tree data in parallel
+  const [totalLeafCountRes, subjectsRes, treeNodesRes] = await Promise.all([
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id', { count: 'exact', head: true })
+      .eq('discipline_id', disciplineId)
+      .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null),
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, ale_id, name, prc_area, area_weight_pct, subject_weight_within_area_pct')
+      .eq('discipline_id', disciplineId)
+      .eq('level', 1)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null),
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, parent_id, level')
+      .eq('discipline_id', disciplineId)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('ale_id', 'is', null),
+  ])
 
-  if (!totalLeafCount) return
+  const totalLeafCount = totalLeafCountRes.count
+  const subjects = subjectsRes.data
+  const allTreeNodes = (treeNodesRes.data ?? []) as Array<{
+    node_id: string; parent_id: string | null; level: number
+  }>
 
-  // 3. Get all subjects for this discipline (Level 1 nodes)
-  const { data: subjects } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id, ale_id, name, prc_area, area_weight_pct, subject_weight_within_area_pct')
-    .eq('discipline_id', disciplineId)
-    .eq('level', 1)
-    .eq('is_cross_ref_only', false)
-    .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
-
-  if (!subjects?.length) return
-
-  // 4. Get per-subject leaf node counts (for grey node calculation per subject)
-  const { data: leafNodesPerSubject } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id, parent_id, level')
-    .eq('discipline_id', disciplineId)
-    .eq('is_cross_ref_only', false)
-    .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+  if (!totalLeafCount || !subjects?.length) return
 
   // Build a map: node_id → Level 1 ancestor
   const nodeParentMap = new Map<string, string | null>()
   const nodeToSubject = new Map<string, string>()
-  const allTreeNodes = (leafNodesPerSubject ?? []) as Array<{
-    node_id: string; parent_id: string | null; level: number
-  }>
 
   for (const n of allTreeNodes) {
     nodeParentMap.set(n.node_id, n.parent_id)

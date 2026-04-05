@@ -7,7 +7,7 @@
 'use client'
 
 import { useState, type ReactNode } from 'react'
-import { PanelCollapseHandle } from './PanelCollapseHandle'
+import { PanelCollapseHandle } from '@/components/shared/PanelCollapseHandle'
 
 interface LabPanelLayoutProps {
   /** Left panel content (controls, inputs) */

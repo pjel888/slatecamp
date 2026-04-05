@@ -1,6 +1,7 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { MODE_DEFINITIONS } from '@/lib/constants/testing-modes'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { normalizeOptions } from '@/lib/utils/question'
 import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selection'
@@ -10,6 +11,18 @@ import type {
   StartSessionResult,
   QuestionForClient,
 } from '@/types/quiz-config'
+
+const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
+  camp: 'camp',
+  chill: 'chill',
+  subject: 'practice',
+  focused: 'blindspot',
+  custom: 'custom',
+  storm: 'storm',
+  fullexam: 'proof_sim',
+  extended: 'endurance',
+  article_review: 'practice',
+}
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
@@ -53,13 +66,31 @@ const toClientQuestion = (
 export const startSession = async (
   input: StartSessionInput,
 ): Promise<StartSessionResult> => {
-  const supabase = await createClient()
+  const dbTestMode = DB_TEST_MODE_BY_APP_MODE[input.mode]
   const {
     data: { user },
   } = await getUser()
   if (!user) {
     console.error('[startSession] No authenticated user')
     throw new Error('Unauthorized')
+  }
+
+  // Use Service Client to avoid cookies() inside potential cached paths
+  const supabase = await createServiceClient()
+
+  // 0. Pro-tier gating (Audit §13.4)
+  const modeDef = MODE_DEFINITIONS[input.mode]
+  if (modeDef?.isPro) {
+    const { data: sub } = await supabase
+      .from('user_subscriptions')
+      .select('tier, status')
+      .eq('user_id', user.id)
+      .maybeSingle()
+
+    const isPro = sub?.tier !== 'free' && sub?.status === 'active'
+    if (!isPro) {
+      throw new Error(`The ${modeDef.label} mode requires a Pro subscription.`)
+    }
   }
 
   console.log('[startSession] Starting for user:', user.id, 'mode:', input.mode)
@@ -100,16 +131,10 @@ export const startSession = async (
   )
 
   // Determine topic_ids to filter by
-  // NOTE: Supabase .in() has a ~50-UUID practical limit before hitting header overflow.
-  // For large sets (Camp/Storm/FullExam with no specific topics), skip the topic filter
-  // and query all questions — the shuffle + cap will handle diversity.
   let topicIds: string[] = []
   let filterByDisciplineId: string | null = null
 
   if (topics.length > 0) {
-    // User picked topics from the picker — these may be subject-level (level 1)
-    // or subtopic-level (level 2+). Questions are tagged at leaf level,
-    // so expand any non-leaf selections to their leaf children.
     const { data: selectedNodes } = await supabase
       .from('taxonomy_tree')
       .select('node_id, is_leaf')
@@ -124,7 +149,6 @@ export const startSession = async (
       .map((n: { node_id: string }) => n.node_id)
 
     if (parentIds.length > 0) {
-      // Expand parent nodes to their leaf children
       const { data: childLeaves } = await supabase
         .from('taxonomy_tree')
         .select('node_id')
@@ -136,10 +160,6 @@ export const startSession = async (
       leafIds.push(...(childLeaves ?? []).map((n: { node_id: string }) => n.node_id))
     }
 
-    // Resolve cross-references: for any selected parent that maps to content
-    // in other subjects (e.g. Laws & Codes → PPJ, DSGN, MEPF), pull in those
-    // target subtopics' leaf children too. This works for pure cross-ref
-    // selections AND mixed selections (Laws + regular subtopics together).
     if (parentIds.length > 0) {
       const { data: crossRefs } = await supabase
         .from('taxonomy_cross_references')
@@ -156,7 +176,6 @@ export const startSession = async (
           .eq('is_cross_ref_only', false)
           .is('deprecated_at', null)
 
-        // Deduplicate — a leaf may already be in the set from direct expansion
         const existingSet = new Set(leafIds)
         for (const n of (crossRefLeaves ?? [])) {
           if (!existingSet.has(n.node_id)) leafIds.push(n.node_id)
@@ -166,14 +185,10 @@ export const startSession = async (
 
     topicIds = leafIds.length > 0 ? leafIds : topics
   } else if (disciplines.length > 0 && disciplines.length <= 3) {
-    // Filter by discipline_id on questions table via taxonomy join
-    // Don't expand to leaf nodes — use discipline filter instead
     filterByDisciplineId = disciplines[0]
   } else if (disciplineId) {
-    // Fall back to user's active discipline — filter at discipline level, not leaf level
     filterByDisciplineId = disciplineId
   }
-  // If none of the above: query ALL questions (Camp default behavior)
 
   // 4. Build difficulty filter
   let difficultyRange: { min: number; max: number } | null = null
@@ -182,8 +197,6 @@ export const startSession = async (
   else if (initialDifficulty === 'hard') difficultyRange = { min: 0.7, max: 1 }
 
   // ── 4b. Interleaved selection path ─────────────────────────────────────────
-  // When interleave is enabled and we have resolved topic IDs, use the
-  // interleaved selection algorithm instead of the standard question fetch.
   const useInterleaving = mergedConfig.interleave === true && topicIds.length > 0
 
   if (useInterleaving) {
@@ -199,9 +212,12 @@ export const startSession = async (
       difficultyRange,
     })
 
+    if (interleavedQuestions.length === 0) {
+      throw new Error('No interleaved questions found for the selected topics. Try widening your selection.')
+    }
+
     const interleavedIds = interleavedQuestions.map((q) => q.question_id)
 
-    // Fetch taxonomy breadcrumbs for interleaved questions
     const ilUniqueTids = [...new Set(interleavedQuestions.map((q) => q.topic_id))]
     const TAXONOMY_BATCH = 80
     const ilTaxMap = new Map<string, string>()
@@ -218,17 +234,17 @@ export const startSession = async (
       }
     }
 
-    // Create session row
     const { data: ilSession, error: ilSessionError } = await supabase
       .from('quiz_sessions')
       .insert({
         user_id: user.id,
         discipline_id: disciplineId,
-        test_mode: 'camp',
+        test_mode: dbTestMode,
         status: 'in_progress',
         config: mergedConfig,
         question_ids: interleavedIds,
         subject_ids: ilUniqueTids,
+        current_question_index: 0,
         started_at: new Date().toISOString(),
       })
       .select('session_id')
@@ -253,7 +269,6 @@ export const startSession = async (
         ),
     )
 
-    // Patent: Issue CAGE nonces + session key for interleaved path
     let ilNonces: Record<string, { nonce: string; expiresAt: string }> = {}
     let ilSessionKey: string | null = null
     try {
@@ -262,9 +277,7 @@ export const startSession = async (
       const ilNonceMap = await issueNonceBatch(ilSession.session_id, ilQuestionIds, user.id)
       ilNonces = Object.fromEntries(ilNonceMap)
       ilSessionKey = randomBytes(32).toString('hex')
-    } catch {
-      // Non-fatal — CAGE degrades gracefully
-    }
+    } catch { }
 
     return {
       sessionId: ilSession.session_id,
@@ -285,17 +298,11 @@ export const startSession = async (
     .select(
       'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type',
     )
-    .limit(questionCount * 3) // fetch extras to allow exclusion filtering
+    .limit(questionCount * 3)
 
   if (topicIds.length > 0 && topicIds.length <= 100) {
-    // Safe for .in() URL param (under ~16KB header limit)
     questionQuery = questionQuery.in('topic_id', topicIds)
   } else if (filterByDisciplineId) {
-    // Large discipline-level filter — fetching all leaf node IDs then using .in()
-    // overflows Supabase's 16KB header limit (~200+ UUIDs).
-    // Instead: fetch leaf node IDs for JS-side filtering AFTER the query.
-    // The question query runs without a topic filter (fetches extras), then we
-    // filter to only questions belonging to this discipline's leaf nodes.
     const { data: leafNodes } = await supabase
       .from('taxonomy_tree')
       .select('node_id')
@@ -304,11 +311,8 @@ export const startSession = async (
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
 
-    // Store for post-query JS filtering instead of .in() URL param
     topicIds = (leafNodes ?? []).map((n: { node_id: string }) => n.node_id)
-    // DON'T add .in() to the query — filter in step 6 below
   }
-  // else: no filter — query all questions (Camp/mixed mode default)
 
   if (difficultyRange) {
     questionQuery = questionQuery
@@ -317,12 +321,9 @@ export const startSession = async (
   }
 
   const { data: rawQuestions, error: qError } = await questionQuery
-
   if (qError) throw qError
 
   // 6. Exclude recently seen, shuffle, cap at questionCount
-  // If topicIds were set but NOT passed to .in() (discipline-level filter to avoid
-  // header overflow), filter in JS now.
   const topicIdSet = topicIds.length > 100 ? new Set(topicIds) : null
   const allQuestions = topicIdSet
     ? (rawQuestions ?? []).filter((q: { topic_id: string }) => topicIdSet.has(q.topic_id))
@@ -332,7 +333,6 @@ export const startSession = async (
   const fresh = allQuestions.filter(
     (q: { question_id: string }) => !recentSet.has(q.question_id),
   )
-  // If not enough fresh questions, backfill from seen pool
   const pool =
     fresh.length >= questionCount
       ? fresh
@@ -350,12 +350,22 @@ export const startSession = async (
   }
 
   const selectedQuestions = pool.slice(0, questionCount)
+
+  // VALIDATION: Ensure we actually found questions
+  if (selectedQuestions.length === 0) {
+    console.error('[startSession] No questions found for selection:', {
+      mode: input.mode,
+      topicCount: topicIds.length,
+      disciplineId: filterByDisciplineId
+    })
+    throw new Error('No questions found for the selected topics or discipline. Please try a different selection.')
+  }
+
   const questionIds = selectedQuestions.map(
     (q: { question_id: string }) => q.question_id,
   )
 
   // 7. Fetch taxonomy breadcrumbs for selected topics
-  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
   const uniqueTopicIds = [...new Set(selectedQuestions.map((q: { topic_id: string }) => q.topic_id))]
   const TAXONOMY_BATCH = 80
   const taxonomyMap = new Map<string, string>()
@@ -378,11 +388,12 @@ export const startSession = async (
     .insert({
       user_id: user.id,
       discipline_id: disciplineId,
-      test_mode: 'camp', // DB enum — v2 mode stored in config JSONB
+      test_mode: dbTestMode,
       status: 'in_progress',
       config: mergedConfig,
       question_ids: questionIds,
       subject_ids: uniqueTopicIds,
+      current_question_index: 0,
       started_at: new Date().toISOString(),
     })
     .select('session_id')
@@ -395,35 +406,24 @@ export const startSession = async (
 
   console.log('[startSession] Session created:', session.session_id, 'with', selectedQuestions.length, 'questions')
 
-  // 9. Shape questions for client (strip correct_option_id, rationale, wrong_answer_rationales)
+  // 9. Shape questions for client
   const clientQuestions: QuestionForClient[] = selectedQuestions.map(
-    (q: {
-      question_id: string
-      text: string
-      options: Array<{ id: string; letter: string; text: string }>
-      prompt_image_url: string | null
-      difficulty: number
-      topic_id: string
-      question_type?: string
-    }, idx: number) =>
+    (q: any, idx: number) =>
       toClientQuestion(
         { ...q, breadcrumb: taxonomyMap.get(q.topic_id) ?? '' },
         idx + 1,
       ),
   )
 
-  // Patent: Issue CAGE nonces + generate session HMAC key (fire-and-forget on failure)
   let nonces: Record<string, { nonce: string; expiresAt: string }> = {}
   let sessionKey: string | null = null
   try {
-    const questionIds = clientQuestions.map((q) => q.question_id)
+    const qIds = clientQuestions.map((q) => q.question_id)
     const { issueNonceBatch } = await import('@/lib/cage/nonceService')
-    const nonceMap = await issueNonceBatch(session.session_id, questionIds, user.id)
+    const nonceMap = await issueNonceBatch(session.session_id, qIds, user.id)
     nonces = Object.fromEntries(nonceMap)
     sessionKey = randomBytes(32).toString('hex')
-  } catch {
-    // Nonce issuance failure is non-fatal — CAGE degrades gracefully (Q1 decision)
-  }
+  } catch { }
 
   return {
     sessionId: session.session_id,

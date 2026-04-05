@@ -112,6 +112,7 @@ export const submitPrequestion = async (
   await runPostInteractionHooks({
     userId: user.id,
     topicId: question.topic_id,
+    questionId: questionId,
     isCorrect,
     timeSpentMs,
     avgTimeMs: prevAvgTime,

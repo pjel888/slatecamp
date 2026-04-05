@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { revalidateDashboardCacheTags } from './cache-tags'
 
 export interface WikiBookmarkRow {
   article_id: string
@@ -57,6 +58,7 @@ export async function addWikiBookmark(articleId: string): Promise<boolean> {
     console.error('[Wiki] addWikiBookmark failed:', error.message)
     return false
   }
+  revalidateDashboardCacheTags(user.id)
   return true
 }
 
@@ -78,5 +80,7 @@ export async function removeWikiBookmark(articleId: string): Promise<boolean> {
     console.error('[Wiki] removeWikiBookmark failed:', error.message)
     return false
   }
+  revalidateDashboardCacheTags(user.id)
   return true
 }
+

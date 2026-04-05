@@ -3,10 +3,10 @@
 // Transforms the 3D Lab module registry into a hierarchical tree for the admin
 // dashboard. Pure data aggregation — no React, no side effects.
 
-import { ALL_MODULES } from '@/app/dashboard/3d-lab/_config/registry/index'
-import { ASSET_TAXONOMY, ALE_SUBJECTS } from '@/app/dashboard/3d-lab/_config/taxonomy'
-import type { CategoryKey } from '@/app/dashboard/3d-lab/_config/taxonomy'
-import type { ModuleConfig } from '@/app/dashboard/3d-lab/_types/templates'
+import { ALL_MODULES } from '@/features/3d-lab/config/registry'
+import { ASSET_TAXONOMY, ALE_SUBJECTS } from '@/features/3d-lab/config/taxonomy'
+import type { CategoryKey } from '@/features/3d-lab/config/taxonomy'
+import type { ModuleConfig } from '@/features/3d-lab/types/templates'
 
 // ─── Hierarchical Tree Types ─────────────────────────────────────────────────
 

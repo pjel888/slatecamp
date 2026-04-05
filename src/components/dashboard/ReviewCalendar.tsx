@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation'
 import { CalendarBlank, Warning, Clock, ArrowRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import { QuickReviewModal } from './QuickReviewModal'
 import type {
   ReviewCalendarData,
   ReviewCalendarDay,
@@ -324,16 +323,7 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
         </>
       )}
 
-      {/* Quick review modal — inline quiz without leaving the dashboard */}
-      {reviewModal && (
-        <QuickReviewModal
-          topicId={reviewModal.topicId}
-          topicName={reviewModal.topicName}
-          onClose={handleModalClose}
-          onComplete={handleModalComplete}
-          onEmpty={handleModalEmpty}
-        />
-      )}
+      {/* Quick review modal removed (Pass 1 cleanup) */}
     </div>
   )
 }

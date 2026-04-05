@@ -1,7 +1,7 @@
 // src/app/dashboard/3d-lab/_scenes/NBCPEnvelope/NBCPScene.tsx
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -13,6 +13,9 @@ import { LotType } from '../../_constants/nbcp'
 // 1 Three.js unit = 20m
 const SCALE = 0.05
 const LOT_Y = 0.005  // half-thickness of lot plate
+
+// Helpers for instancing to avoid per-frame allocations
+const tempObject = new THREE.Object3D()
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -38,30 +41,124 @@ export function NBCPScene() {
   useNBCPInvalidateOnChange()
   const { invalidate } = useThree()
 
-  // Lerp targets — read directly from store (not subscribed)
+  // Lerp targets — updated via store subscription to avoid getState() in useFrame
   const buildingRef = useRef<THREE.Mesh>(null)
   const buildingMatRef = useRef<THREE.MeshStandardMaterial>(null)
+  const instancedRef = useRef<THREE.InstancedMesh>(null)
+  const propLinesRef = useRef<THREE.InstancedMesh>(null)
+  const setbacksRef = useRef<THREE.InstancedMesh>(null)
 
-  // Current animated values stored in refs (not React state — no re-render)
+  // Pre-allocated refs for performance
+  const targetRef = useRef({ w: 0.001, d: 0.001, h: 0.001, hasViolations: false })
   const animRef = useRef({ w: 0.001, d: 0.001, h: 0.001 })
 
-  useFrame(() => {
-    const { computed, inputs } = useNBCPStore.getState()
-    const target = {
-      w: Math.max(0.001, toU(computed.buildableWidth)),
-      d: Math.max(0.001, toU(computed.buildableDepth)),
-      h: Math.max(0.001, toU(computed.displayHeight)),
+  // Subscribe to store changes once on mount
+  useEffect(() => {
+    return useNBCPStore.subscribe((state) => {
+      targetRef.current.w = Math.max(0.001, toU(state.computed.buildableWidth))
+      targetRef.current.d = Math.max(0.001, toU(state.computed.buildableDepth))
+      targetRef.current.h = Math.max(0.001, toU(state.computed.displayHeight))
+      targetRef.current.hasViolations = state.computed.violations.length > 0
+    })
+  }, [])
+
+  // Static values (don't need animation)
+  const { computed, inputs } = useNBCPStore()
+  const {
+    tla, bhl_effective, bhl_meters, bhl_source,
+    setbacks,
+    displayStoreys, displayHeight,
+    ambf, flar, violations,
+  } = computed
+
+  // Update instance matrices for floor plates, property lines, and setbacks
+  useLayoutEffect(() => {
+    if (!instancedRef.current || !propLinesRef.current || !setbacksRef.current) return
+    
+    // 1. Floor plates
+    const bw = toU(computed.buildableWidth)
+    const bd = toU(computed.buildableDepth)
+    const count = Math.max(0, displayStoreys - 1)
+    for (let i = 0; i < count; i++) {
+      const floorY = LOT_Y * 2 + toU((i + 1) * inputs.floorHeight)
+      tempObject.position.set(0, floorY, 0)
+      tempObject.scale.set(bw, 1, bd)
+      tempObject.updateMatrix()
+      instancedRef.current.setMatrixAt(i, tempObject.matrix)
     }
+    instancedRef.current.count = count
+    instancedRef.current.instanceMatrix.needsUpdate = true
 
+    // 2. Property boundary lines
+    const lotWu = toU(inputs.lotWidth)
+    const lotDu = toU(inputs.lotDepth)
+    // FB segments
+    for (let i = 0; i < 2; i++) {
+      const dir = i === 0 ? 1 : -1
+      tempObject.position.set(0, 0.003, dir * lotDu / 2)
+      tempObject.scale.set(lotWu, 0.006, 0.008)
+      tempObject.updateMatrix()
+      propLinesRef.current.setMatrixAt(i, tempObject.matrix)
+    }
+    // LR segments
+    for (let i = 0; i < 2; i++) {
+      const dir = i === 0 ? 1 : -1
+      tempObject.position.set(dir * lotWu / 2, 0.003, 0)
+      tempObject.scale.set(0.008, 0.006, lotDu)
+      tempObject.updateMatrix()
+      propLinesRef.current.setMatrixAt(i + 2, tempObject.matrix)
+    }
+    propLinesRef.current.instanceMatrix.needsUpdate = true
+
+    // 3. Setback zones (4 segments: Front, Rear, Left, Right)
+    const frontSbU = toU(setbacks.front)
+    const rearSbU  = toU(setbacks.rear)
+    const leftSbU  = toU(setbacks.left)
+    const rightSbU = toU(setbacks.right)
+    
+    let setbackIdx = 0
+    if (frontSbU > 0) {
+      tempObject.position.set(0, LOT_Y, lotDu / 2 - frontSbU / 2)
+      tempObject.scale.set(lotWu, 1, frontSbU)
+      tempObject.updateMatrix()
+      setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+    }
+    if (rearSbU > 0) {
+      tempObject.position.set(0, LOT_Y, -(lotDu / 2 - rearSbU / 2))
+      tempObject.scale.set(lotWu, 1, rearSbU)
+      tempObject.updateMatrix()
+      setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+    }
+    if (leftSbU > 0) {
+      tempObject.position.set(-(lotWu / 2 - leftSbU / 2), LOT_Y, 0)
+      tempObject.scale.set(leftSbU, 1, lotDu)
+      tempObject.updateMatrix()
+      setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+    }
+    if (rightSbU > 0) {
+      tempObject.position.set((lotWu / 2 - rightSbU / 2), LOT_Y, 0)
+      tempObject.scale.set(rightSbU, 1, lotDu)
+      tempObject.updateMatrix()
+      setbacksRef.current.setMatrixAt(setbackIdx++, tempObject.matrix)
+    }
+    setbacksRef.current.count = setbackIdx
+    setbacksRef.current.instanceMatrix.needsUpdate = true
+  }, [displayStoreys, computed.buildableWidth, computed.buildableDepth, inputs.lotWidth, inputs.lotDepth, setbacks])
+
+  useFrame(() => {
+    const target = targetRef.current
     const LERP_FACTOR = 0.12  // ~400ms to settle at 60fps
-    let anyMoving = false
-
+    
     const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
     const [nd, dSettled] = lerp(animRef.current.d, target.d, LERP_FACTOR)
     const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
 
-    animRef.current = { w: nw, d: nd, h: nh }
-    anyMoving = !wSettled || !dSettled || !hSettled
+    // Mutate existing ref directly to avoid GC pressure
+    animRef.current.w = nw
+    animRef.current.d = nd
+    animRef.current.h = nh
+
+    const anyMoving = !wSettled || !dSettled || !hSettled
 
     if (buildingRef.current) {
       buildingRef.current.scale.set(nw, nh, nd)
@@ -70,21 +167,12 @@ export function NBCPScene() {
 
     // Building color: blue = compliant, red = BHL violated
     if (buildingMatRef.current) {
-      const color = computed.violations.length > 0 ? '#D64545' : '#1B3FC4'
+      const color = target.hasViolations ? '#D64545' : '#1B3FC4'
       buildingMatRef.current.color.set(color)
     }
 
     if (anyMoving) invalidate()  // self-schedule next frame while animating
   })
-
-  // Static values (don't need animation)
-  const { computed, inputs } = useNBCPStore()
-  const {
-    tla, bhl_effective, bhl_meters, bhl_source,
-    ambf, setbacks,
-    displayStoreys, displayHeight,
-    flar, violations,
-  } = computed
 
   const lotWu = toU(inputs.lotWidth)
   const lotDu = toU(inputs.lotDepth)
@@ -105,11 +193,6 @@ export function NBCPScene() {
   const rrowWu = toU(inputs.rrowWidth)
   const showRearRrow = inputs.lotType === LotType.THROUGH
 
-  // Neighboring lots/buildings — depends on lot type
-  // INSIDE: neighbors left + right
-  // CORNER: neighbor right only (left = secondary road)
-  // THROUGH: neighbors left + right (like inside, roads front + rear)
-  // END: neighbor left only (right = secondary road)
   const neighborH = toU(Math.max(bhl_meters * 0.7, inputs.floorHeight * 2))
   const showLeftNeighbor  = inputs.lotType === LotType.INSIDE || inputs.lotType === LotType.THROUGH || inputs.lotType === LotType.END
   const showRightNeighbor = inputs.lotType === LotType.INSIDE || inputs.lotType === LotType.THROUGH || inputs.lotType === LotType.CORNER
@@ -119,7 +202,6 @@ export function NBCPScene() {
   return (
     <group>
       {/* ── RROW plane(s) ──────────────────────────────────────────────── */}
-      {/* Front RROW */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, lotDu / 2 + rrowWu / 2]}>
         <planeGeometry args={[lotWu + rrowWu, rrowWu]} />
         <meshStandardMaterial color="#d1d5db" />
@@ -130,7 +212,6 @@ export function NBCPScene() {
         </div>
       </Html>
 
-      {/* Rear RROW (Through lots only) */}
       {showRearRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, -(lotDu / 2 + rrowWu / 2)]}>
           <planeGeometry args={[lotWu + rrowWu, rrowWu]} />
@@ -138,7 +219,6 @@ export function NBCPScene() {
         </mesh>
       )}
 
-      {/* Secondary RROW — left side (Corner lot) */}
       {showLeftRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-(lotWu / 2 + rrowWu / 2), 0, 0]}>
           <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
@@ -146,7 +226,6 @@ export function NBCPScene() {
         </mesh>
       )}
 
-      {/* Secondary RROW — right side (End lot) */}
       {showRightRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[(lotWu / 2 + rrowWu / 2), 0, 0]}>
           <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
@@ -157,12 +236,10 @@ export function NBCPScene() {
       {/* ── Neighboring lots ────────────────────────────────────────────── */}
       {showLeftNeighbor && (
         <group position={[-lotWu, 0, 0]}>
-          {/* lot plate */}
           <mesh rotation={[-Math.PI / 2, 0, 0]}>
             <planeGeometry args={[lotWu, lotDu]} />
             <meshStandardMaterial color="#f3f4f6" />
           </mesh>
-          {/* building */}
           <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
             <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
             <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
@@ -171,12 +248,10 @@ export function NBCPScene() {
       )}
       {showRightNeighbor && (
         <group position={[lotWu, 0, 0]}>
-          {/* lot plate */}
           <mesh rotation={[-Math.PI / 2, 0, 0]}>
             <planeGeometry args={[lotWu, lotDu]} />
             <meshStandardMaterial color="#f3f4f6" />
           </mesh>
-          {/* building */}
           <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
             <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
             <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
@@ -190,53 +265,18 @@ export function NBCPScene() {
         <meshStandardMaterial color="#e5e7eb" />
       </mesh>
 
-      {/* Property lines (thin box strips) */}
-      {/* Front/rear */}
-      {([1, -1] as const).map(dir => (
-        <mesh key={`prop-fb-${dir}`} position={[0, 0.003, dir * lotDu / 2]}>
-          <boxGeometry args={[lotWu, 0.006, 0.008]} />
-          <meshStandardMaterial color="#374151" />
-        </mesh>
-      ))}
-      {/* Left/right */}
-      {([1, -1] as const).map(dir => (
-        <mesh key={`prop-lr-${dir}`} position={[dir * lotWu / 2, 0.003, 0]}>
-          <boxGeometry args={[0.008, 0.006, lotDu]} />
-          <meshStandardMaterial color="#374151" />
-        </mesh>
-      ))}
+      {/* Property lines (Optimized via InstancedMesh) */}
+      <instancedMesh ref={propLinesRef} args={[null, null, 4]}>
+        <boxGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial color="#374151" />
+      </instancedMesh>
 
-      {/* ── Setback zones (ground planes, light blue) ───────────────────── */}
-      {/* Front setback */}
-      {frontSbDepth > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, LOT_Y, lotDu / 2 - frontSbDepth / 2]}>
-          <planeGeometry args={[lotWu, frontSbDepth]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Rear setback */}
-      {rearSbDepth > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, LOT_Y, -(lotDu / 2 - rearSbDepth / 2)]}>
-          <planeGeometry args={[lotWu, rearSbDepth]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Left setback */}
-      {leftSbWidth > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0]}>
-          <planeGeometry args={[leftSbWidth, lotDu]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
-      {/* Right setback */}
-      {rightSbWidth > 0 && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[(lotWu / 2 - rightSbWidth / 2), LOT_Y, 0]}>
-          <planeGeometry args={[rightSbWidth, lotDu]} />
-          <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
-        </mesh>
-      )}
+      {/* Setback zones (Optimized via InstancedMesh) */}
+      <instancedMesh ref={setbacksRef} args={[null, null, 4]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[1, 1]} />
+        <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
+      </instancedMesh>
 
-      {/* Setback labels */}
       {frontSbDepth > 0 && (
         <Html position={[0, LOT_Y, lotDu / 2 - frontSbDepth / 2]} distanceFactor={df} occlude={false}>
           <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
@@ -267,7 +307,6 @@ export function NBCPScene() {
       )}
 
       {/* ── Building envelope ───────────────────────────────────────────── */}
-      {/* Unit cube — scaled by useFrame via animRef */}
       <mesh ref={buildingRef} castShadow>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
@@ -280,21 +319,13 @@ export function NBCPScene() {
         />
       </mesh>
 
-      {/* Floor plate lines */}
-      {Array.from({ length: displayStoreys - 1 }, (_, i) => {
-        const floorY = LOT_Y * 2 + toU((i + 1) * inputs.floorHeight)
-        const bw = toU(computed.buildableWidth)
-        const bd = toU(computed.buildableDepth)
-        return (
-          <mesh key={`floor-${i}`} position={[0, floorY, 0]}>
-            <boxGeometry args={[bw, 0.005, bd]} />
-            <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
-          </mesh>
-        )
-      })}
+      {/* Floor plate lines (Optimized via InstancedMesh) */}
+      <instancedMesh ref={instancedRef} args={[null, null, 100]} frustumCulled={false}>
+        <boxGeometry args={[1, 0.005, 1]} />
+        <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
+      </instancedMesh>
 
       {/* ── 3D-anchored labels ──────────────────────────────────────────── */}
-      {/* Height label — right face */}
       <Html
         position={[toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(displayHeight) / 2, 0]}
         distanceFactor={df} occlude={false}
@@ -306,7 +337,6 @@ export function NBCPScene() {
         </div>
       </Html>
 
-      {/* AMBF label — top face */}
       <Html
         position={[0, LOT_Y * 2 + toU(displayHeight) + 0.06, 0]}
         distanceFactor={df} occlude={false}
@@ -338,8 +368,6 @@ export function NBCPScene() {
           </span>
         </div>
       </Html>
-
-      {/* Violations shown in telemetry panel — building turns red as spatial cue */}
     </group>
   )
 }

@@ -1,7 +1,9 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { unstable_cache } from 'next/cache'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { generateProgressReport, type ProgressReport } from './generate'
+import { getDashboardCacheTags } from '../cache-tags'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -29,25 +31,44 @@ export const getMonthlyReport = async (): Promise<ProgressReport | null> => {
   const start = new Date(now.getFullYear(), now.getMonth(), 1)
   const end = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59)
 
-  return generateProgressReport(
-    user.id,
-    start.toISOString(),
-    end.toISOString(),
-  )
+  return unstable_cache(
+    async () => generateProgressReport(
+      user.id,
+      start.toISOString(),
+      end.toISOString(),
+    ),
+    [`monthly-report-${user.id}-${start.toISOString()}`],
+    {
+      revalidate: 3600,
+      tags: getDashboardCacheTags(user.id),
+    }
+  )()
 }
 
 // ── Simulation Trajectory ────────────────────────────────────────────────────
 
 export const getSimulationTrajectory = async (): Promise<SimulationPoint[]> => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return []
+
+  return unstable_cache(
+    async () => fetchSimulationTrajectory(user.id),
+    [`simulation-trajectory-${user.id}`],
+    {
+      revalidate: 3600,
+      tags: getDashboardCacheTags(user.id),
+    }
+  )()
+}
+
+const fetchSimulationTrajectory = async (userId: string): Promise<SimulationPoint[]> => {
+  const supabase = await createServiceClient()
 
   // Fetch completed storm / proof_sim sessions with 50+ questions
   const { data: sessions } = await supabase
     .from('quiz_sessions')
     .select('session_id, completed_at, test_mode, question_ids')
-    .eq('user_id', user.id)
+    .eq('user_id', userId)
     .eq('status', 'completed')
     .in('test_mode', ['storm', 'proof_sim'])
     .order('completed_at', { ascending: true })

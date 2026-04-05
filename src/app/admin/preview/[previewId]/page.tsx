@@ -5,16 +5,11 @@ import { cookies } from 'next/headers'
 
 import { getArticleSources } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
-import { getArticleHeadings, WikiArticle } from '@/components/wiki/WikiArticle'
+import { getArticleHeadings, WikiArticle, WikiHeader, WikiArticleHero, WikiRightSidebar, TeachBackPrompt } from '@/components/wiki'
 import { getSubjectName } from '@/types/testing'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
-
-import { WikiHeader } from '@/components/wiki/WikiHeader'
-import { WikiArticleHero } from '@/components/wiki/WikiArticleHero'
-import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
-import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'

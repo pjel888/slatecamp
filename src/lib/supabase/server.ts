@@ -19,6 +19,17 @@ export const createStaticClient = cache(async () => {
   )
 })
 
+export const createServiceClient = cache(async () => {
+  if (isDemoMode()) {
+    return createMockSupabaseClient() as any
+  }
+
+  return createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  )
+})
+
 export const createClient = cache(async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as unknown as ReturnType<

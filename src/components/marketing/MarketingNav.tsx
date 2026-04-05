@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { ROUTES } from '@/lib/constants/routes'
-import { SlateCampLogo } from '@/components/ui/SlateCampLogo'
+import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
 import { cn } from '@/lib/utils'
 import { getUserIfPresent } from '@/lib/supabase/server'
 

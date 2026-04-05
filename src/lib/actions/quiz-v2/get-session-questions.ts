@@ -12,7 +12,6 @@ interface SessionQuestionRow {
   difficulty: number | null
   topic_id: string | null
   question_type: string | null
-  metadata: Record<string, unknown> | null
 }
 
 /**
@@ -45,7 +44,7 @@ export const getSessionQuestions = async (
   // Fetch batch
   const { data: questions, error } = await supabase
     .from('questions')
-    .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type, metadata')
+    .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type')
     .in('question_id', questionIds)
 
   if (error || !questions) return []

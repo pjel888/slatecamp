@@ -3,8 +3,7 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { useDirtyState } from './DirtyStateProvider'
-import { CampModePreview } from '@/components/admin/preview/CampModePreview'
-import { DifficultyBar } from '@/components/ui/difficulty-bar'
+import { DifficultyBar } from '@/components/shared/difficulty-bar'
 import { Checkbox } from '@/components/ui/checkbox'
 import type {
   QuestionData,
@@ -969,16 +968,7 @@ const QuestionCard = ({
       {/* ── Camp Mode Preview (inline toggle) ─────────────── */}
       {showCampPreview && (
         <div className="border-t border-border px-3 pb-3 pt-3">
-          <CampModePreview
-            stem={question.text}
-            options={question.options.map((o) => o.text)}
-            correctAnswer={question.options.findIndex(
-              (o) => o.id === question.correct_option_id
-            )}
-            rationale={question.rationale || ''}
-            codeCitation={question.code_citation || undefined}
-            difficulty={question.difficulty ?? undefined}
-          />
+          <div className="text-sm text-text-tertiary">Preview unavailable (Pass 1 cleanup)</div>
         </div>
       )}
     </div>

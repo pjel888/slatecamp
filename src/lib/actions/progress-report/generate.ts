@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createServiceClient } from '@/lib/supabase/server'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -22,43 +22,38 @@ export const generateProgressReport = async (
   periodStart: string,
   periodEnd: string,
 ): Promise<ProgressReport> => {
-  const supabase = await createClient()
+  const supabase = await createServiceClient()
 
-  // 1. Questions answered in period
-  const { count: questionsAnswered } = await supabase
-    .from('user_interactions')
-    .select('interaction_id', { count: 'exact', head: true })
-    .eq('user_id', userId)
-    .gte('interaction_timestamp', periodStart)
-    .lte('interaction_timestamp', periodEnd)
-
-  // 2. Sessions completed in period
-  const { count: sessionsCompleted } = await supabase
-    .from('quiz_sessions')
-    .select('session_id', { count: 'exact', head: true })
-    .eq('user_id', userId)
-    .eq('status', 'completed')
-    .gte('completed_at', periodStart)
-    .lte('completed_at', periodEnd)
-
-  // 3. Total study time (sum time_spent_ms from interactions)
-  const { data: timeData } = await supabase
-    .from('user_interactions')
-    .select('time_spent_ms')
-    .eq('user_id', userId)
-    .gte('interaction_timestamp', periodStart)
-    .lte('interaction_timestamp', periodEnd)
-    .gt('time_spent_ms', 0)
-    .lt('time_spent_ms', 300_000)
-
-  const totalMs = (timeData || []).reduce(
-    (acc: number, row: { time_spent_ms: number | null }) => acc + (row.time_spent_ms ?? 0),
-    0,
-  )
-  const studyMinutes = Math.round(totalMs / 60_000)
-
-  // 4. Readiness score change — compare snapshots at period boundaries
-  const [startSnapshot, endSnapshot] = await Promise.all([
+  // 1. Fetch independent global stats and period topic IDs in parallel
+  const [
+    questionsAnsweredRes,
+    sessionsCompletedRes,
+    timeDataRes,
+    startSnapshot,
+    endSnapshot,
+    periodTopicsRes,
+  ] = await Promise.all([
+    supabase
+      .from('user_interactions')
+      .select('interaction_id', { count: 'exact', head: true })
+      .eq('user_id', userId)
+      .gte('interaction_timestamp', periodStart)
+      .lte('interaction_timestamp', periodEnd),
+    supabase
+      .from('quiz_sessions')
+      .select('session_id', { count: 'exact', head: true })
+      .eq('user_id', userId)
+      .eq('status', 'completed')
+      .gte('completed_at', periodStart)
+      .lte('completed_at', periodEnd),
+    supabase
+      .from('user_interactions')
+      .select('time_spent_ms')
+      .eq('user_id', userId)
+      .gte('interaction_timestamp', periodStart)
+      .lte('interaction_timestamp', periodEnd)
+      .gt('time_spent_ms', 0)
+      .lt('time_spent_ms', 300_000),
     supabase
       .from('readiness_score_snapshots')
       .select('score')
@@ -75,73 +70,82 @@ export const generateProgressReport = async (
       .order('computed_at', { ascending: false })
       .limit(1)
       .maybeSingle(),
+    supabase
+      .from('user_interactions')
+      .select('topic_id')
+      .eq('user_id', userId)
+      .gte('interaction_timestamp', periodStart)
+      .lte('interaction_timestamp', periodEnd)
+      .not('topic_id', 'is', null),
   ])
+
+  const questionsAnswered = questionsAnsweredRes.count ?? 0
+  const sessionsCompleted = sessionsCompletedRes.count ?? 0
+  
+  const totalMs = (timeDataRes.data || []).reduce(
+    (acc: number, row: { time_spent_ms: number | null }) => acc + (row.time_spent_ms ?? 0),
+    0,
+  )
+  const studyMinutes = Math.round(totalMs / 60_000)
 
   const scoreStart = (startSnapshot.data?.score as number) ?? 0
   const scoreEnd = (endSnapshot.data?.score as number) ?? 0
   const readinessScoreChange = Math.round(scoreEnd - scoreStart)
 
-  // 5. Node mastery changes — get topics interacted with in period, compare mastery
-  const { data: periodTopics } = await supabase
-    .from('user_interactions')
-    .select('topic_id')
-    .eq('user_id', userId)
-    .gte('interaction_timestamp', periodStart)
-    .lte('interaction_timestamp', periodEnd)
-    .not('topic_id', 'is', null)
-
-  const topicIds = [...new Set((periodTopics || []).map((r: { topic_id: string | null }) => r.topic_id).filter(Boolean))] as string[]
+  const topicIds = [...new Set((periodTopicsRes.data || []).map((r: { topic_id: string | null }) => r.topic_id).filter(Boolean))] as string[]
 
   let nodesImproved = 0
   let weakestNodes: ProgressReport['weakestNodes'] = []
   let strongestImprovement: ProgressReport['strongestImprovement'] = []
 
   if (topicIds.length > 0) {
-    // Current mastery for these topics
-    const { data: masteryData } = await supabase
-      .from('user_node_mastery')
-      .select('topic_id, current_mastery_weight')
-      .eq('user_id', userId)
-      .in('topic_id', topicIds)
+    // 2. Fetch topic-specific data in parallel, scoped to the identified topicIds
+    const [
+      masteryData,
+      topicNames,
+      periodAccuracy,
+      priorAccuracy,
+    ] = await Promise.all([
+      supabase
+        .from('user_node_mastery')
+        .select('topic_id, current_mastery_weight')
+        .eq('user_id', userId)
+        .in('topic_id', topicIds),
+      supabase
+        .from('taxonomy_tree')
+        .select('node_id, name')
+        .in('node_id', topicIds),
+      supabase
+        .from('user_interactions')
+        .select('topic_id, is_correct')
+        .eq('user_id', userId)
+        .gte('interaction_timestamp', periodStart)
+        .lte('interaction_timestamp', periodEnd)
+        .in('topic_id', topicIds),
+      supabase
+        .from('user_interactions')
+        .select('topic_id, is_correct')
+        .eq('user_id', userId)
+        .lt('interaction_timestamp', periodStart)
+        .in('topic_id', topicIds),
+    ])
 
-    // Get topic names
-    const { data: topicNames } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, name')
-      .in('node_id', topicIds)
-
-    const nameMap = new Map<string, string>((topicNames || []).map((t: { node_id: string; name: string }) => [t.node_id, t.name]))
+    const nameMap = new Map<string, string>((topicNames.data || []).map((t: { node_id: string; name: string }) => [t.node_id, t.name]))
     const masteryMap = new Map<string, number>(
-      (masteryData || []).map((m: { topic_id: string; current_mastery_weight: number }) => [m.topic_id, m.current_mastery_weight]),
+      (masteryData.data || []).map((m: { topic_id: string; current_mastery_weight: number }) => [m.topic_id, m.current_mastery_weight]),
     )
-
-    // Calculate per-topic accuracy in period vs before period to estimate improvement
-    const { data: periodAccuracy } = await supabase
-      .from('user_interactions')
-      .select('topic_id, is_correct')
-      .eq('user_id', userId)
-      .gte('interaction_timestamp', periodStart)
-      .lte('interaction_timestamp', periodEnd)
-      .not('topic_id', 'is', null)
-
-    const { data: priorAccuracy } = await supabase
-      .from('user_interactions')
-      .select('topic_id, is_correct')
-      .eq('user_id', userId)
-      .lt('interaction_timestamp', periodStart)
-      .not('topic_id', 'is', null)
 
     const accIn = new Map<string, { correct: number; total: number }>()
     const accBefore = new Map<string, { correct: number; total: number }>()
 
-    for (const row of (periodAccuracy || []) as { topic_id: string; is_correct: boolean }[]) {
+    for (const row of (periodAccuracy.data || []) as { topic_id: string; is_correct: boolean }[]) {
       const entry = accIn.get(row.topic_id) ?? { correct: 0, total: 0 }
       entry.total++
       if (row.is_correct) entry.correct++
       accIn.set(row.topic_id, entry)
     }
 
-    for (const row of (priorAccuracy || []) as { topic_id: string; is_correct: boolean }[]) {
+    for (const row of (priorAccuracy.data || []) as { topic_id: string; is_correct: boolean }[]) {
       const entry = accBefore.get(row.topic_id) ?? { correct: 0, total: 0 }
       entry.total++
       if (row.is_correct) entry.correct++
@@ -186,8 +190,8 @@ export const generateProgressReport = async (
 
   return {
     period: { start: periodStart, end: periodEnd },
-    questionsAnswered: questionsAnswered ?? 0,
-    sessionsCompleted: sessionsCompleted ?? 0,
+    questionsAnswered,
+    sessionsCompleted,
     studyMinutes,
     nodesImproved,
     readinessScoreChange,

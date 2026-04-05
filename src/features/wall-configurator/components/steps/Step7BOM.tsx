@@ -47,7 +47,7 @@ export function Step7BOM() {
   return (
     <div id="bom-content" className="flex flex-col p-4">
       {/* Dark Area Breakdown Card */}
-      <div className="bg-[#1A2332] rounded-[10px] p-4 text-white mb-4">
+      <div className="bg-ink-primary rounded-[10px] p-4 text-white mb-4">
         <p className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-white/50 mb-3">
           Area Breakdown
         </p>
@@ -68,7 +68,7 @@ export function Step7BOM() {
           <span className="text-white/65">Opening deductions</span>
           <div className="flex items-center gap-3">
             <span className="font-mono text-[11px] text-white/40">{openingLabel}</span>
-            <span className="font-mono text-[13px] font-medium text-[#F5A623] tabular-nums">
+            <span className="font-mono text-[13px] font-medium text-warning tabular-nums">
               −{fmt2(areaState.openingAreaSqm)} sqm
             </span>
           </div>
@@ -78,7 +78,7 @@ export function Step7BOM() {
         <div className="border-t border-white/10 pt-2 mt-0.5">
           <div className="flex justify-between items-center text-[13px] mb-1.5">
             <span className="text-white/65">Net wall area</span>
-            <span className="font-mono text-[13px] font-medium text-[#F5A623] tabular-nums">
+            <span className="font-mono text-[13px] font-medium text-warning tabular-nums">
               {fmt2(areaState.netAreaSqm)} sqm
             </span>
           </div>
@@ -88,7 +88,7 @@ export function Step7BOM() {
             <span className="text-white/65">
               Finish area{sides === 2 ? ' (×2 sides)' : ''}
             </span>
-            <span className="font-mono text-[13px] font-medium text-[#F5A623] tabular-nums">
+            <span className="font-mono text-[13px] font-medium text-warning tabular-nums">
               {fmt2(areaState.finishAreaSqm)} sqm
             </span>
           </div>
@@ -96,10 +96,10 @@ export function Step7BOM() {
       </div>
 
       {/* BOM Table */}
-      <div className="border border-[#D4DAE3] rounded-[10px] overflow-hidden">
+      <div className="border border-border rounded-[10px] overflow-hidden">
         <table className="w-full">
           <thead>
-            <tr className="bg-[#1A2332]">
+            <tr className="bg-ink-primary">
               <th className="font-mono text-[8px] font-medium uppercase tracking-[0.1em] text-white/50 px-3.5 py-2.5 text-left">
                 Material
               </th>
@@ -122,7 +122,7 @@ export function Step7BOM() {
               <tr>
                 <td
                   colSpan={5}
-                  className="px-3.5 py-6 text-center text-xs text-[#8896A7]"
+                  className="px-3.5 py-6 text-center text-xs text-text-tertiary"
                 >
                   No layers enabled. Go back and enable at least one layer.
                 </td>
@@ -131,21 +131,21 @@ export function Step7BOM() {
             {rows.map((row, idx) => (
               <tr
                 key={row.layerCode}
-                className={idx % 2 === 1 ? 'bg-[#fafaf9]' : 'bg-white'}
+                className={idx % 2 === 1 ? 'bg-row-light' : 'bg-white'}
               >
-                <td className="px-3.5 py-[11px] text-left font-medium text-[13px] text-[#1A2332]">
+                <td className="px-3.5 py-[11px] text-left font-medium text-[13px] text-text-primary">
                   {row.label}
                 </td>
-                <td className="px-3.5 py-[11px] text-left font-mono text-[11px] text-[#8896A7]">
+                <td className="px-3.5 py-[11px] text-left font-mono text-[11px] text-text-tertiary">
                   {row.unit}
                 </td>
-                <td className="px-3.5 py-[11px] text-right font-mono text-[12px] text-[#4A5568] tabular-nums">
+                <td className="px-3.5 py-[11px] text-right font-mono text-[12px] text-text-secondary tabular-nums">
                   {row.theoreticalQty.toFixed(2)}
                 </td>
-                <td className="px-3.5 py-[11px] text-right font-mono text-[12px] text-[#4A5568] tabular-nums">
+                <td className="px-3.5 py-[11px] text-right font-mono text-[12px] text-text-secondary tabular-nums">
                   {row.adjustedQty.toFixed(2)}
                 </td>
-                <td className="px-3.5 py-[11px] text-right font-mono text-[13px] font-semibold text-[#1B3FC4] tabular-nums">
+                <td className="px-3.5 py-[11px] text-right font-mono text-[13px] font-semibold text-primary tabular-nums">
                   {row.packagingNote}
                 </td>
               </tr>
@@ -159,21 +159,21 @@ export function Step7BOM() {
         <button
           type="button"
           onClick={() => window.print()}
-          className="bg-[#1B3FC4] text-white border-none rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-[#1535A8]"
+          className="bg-primary text-white border-none rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-primary-600"
         >
           Print BOM
         </button>
         <button
           type="button"
           onClick={handleCopyAsText}
-          className="bg-white text-[#1A2332] border border-[#D4DAE3] rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+          className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Copy as Text
         </button>
         <button
           type="button"
           onClick={reset}
-          className="bg-white text-[#1A2332] border border-[#D4DAE3] rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+          className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Reset
         </button>
@@ -181,7 +181,7 @@ export function Step7BOM() {
           <button
             type="button"
             onClick={prevStep}
-            className="bg-white text-[#1A2332] border border-[#D4DAE3] rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-[#F8F7F5]"
+            className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
           >
             Back to Edit
           </button>
@@ -189,16 +189,16 @@ export function Step7BOM() {
       </div>
 
       {/* Assumptions Block */}
-      <div className="bg-[#F2F0EB] border border-[#D4DAE3] rounded-lg p-4 mt-4">
-        <p className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-[#8896A7] mb-2.5">
+      <div className="bg-[#F2F0EB] border border-border rounded-lg p-4 mt-4">
+        <p className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-text-tertiary mb-2.5">
           Engineering Constants Used
         </p>
         {ENGINEERING_CONSTANTS.map((line) => (
-          <p key={line} className="text-[11px] text-[#4A5568] mb-[3px] leading-relaxed">
+          <p key={line} className="text-[11px] text-text-secondary mb-[3px] leading-relaxed">
             {line}
           </p>
         ))}
-        <p className="mt-2.5 text-[11px] text-[#8896A7] italic border-t border-[#D4DAE3] pt-2.5">
+        <p className="mt-2.5 text-[11px] text-text-tertiary italic border-t border-border pt-2.5">
           Quantities are estimates for procurement planning. Verify with a licensed estimator before issuing a purchase order.
         </p>
       </div>

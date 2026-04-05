@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { useQuizStore } from '@/stores/useQuizStore'
+import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
 /**
  * Isolated component to handle the 1Hz timer tick pulse.
@@ -12,8 +12,8 @@ export const TimerTicker = () => {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   
   // Select only the stable action and the running state
-  const tickTimer = useQuizStore((s) => s.tickTimer)
-  const isRunning = useQuizStore((s) => s.timer.isRunning)
+  const tickTimer = useQuizTimerStore((s) => s.tickTimer)
+  const isRunning = useQuizTimerStore((s) => s.isRunning)
 
   useEffect(() => {
     if (isRunning && !timerRef.current) {

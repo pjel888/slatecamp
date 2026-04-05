@@ -4,7 +4,7 @@ import { isAdmin } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { redirect } from 'next/navigation'
 import { Card } from '@/components/ui/card'
-import { EventBadge } from '@/components/ui/event-badge'
+import { EventBadge } from '@/components/shared/event-badge'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EmptyState } from '@/components/shared/empty-state'
 

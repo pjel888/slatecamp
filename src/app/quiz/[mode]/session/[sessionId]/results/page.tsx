@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import type { QuizSessionConfig, EndSessionResult, StaminaBlock, Recommendation } from '@/types/quiz-config'
 import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { analyzeStamina } from '@/lib/quiz/stamina-analysis'
@@ -18,7 +18,7 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
   const { mode, sessionId } = await params
   const supabase = await createClient()
 
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) notFound()
 
   const { data: session } = await supabase

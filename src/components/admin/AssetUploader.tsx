@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useCallback } from 'react'
-import { UploadSimple, File, XCircle, CheckCircle, CircleNotch, Warning } from '@phosphor-icons/react/dist/ssr'
+import { useState, useCallback, useEffect } from 'react'
+import { UploadSimple, File, XCircle, CheckCircle, Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { uploadAssetFile, createAsset } from '@/lib/actions/admin/assets'
@@ -35,8 +35,20 @@ export const AssetUploader = () => {
   })
   const [name, setName] = useState('')
   const [isUploading, setIsUploading] = useState(false)
+  const [uploadProgress, setUploadProgress] = useState(0)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
+
+  // Simulated progress
+  useEffect(() => {
+    let interval: NodeJS.Timeout
+    if (isUploading && uploadProgress < 90) {
+      interval = setInterval(() => {
+        setUploadProgress(prev => Math.min(prev + Math.random() * 10, 90))
+      }, 500)
+    }
+    return () => clearInterval(interval)
+  }, [isUploading, uploadProgress])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
@@ -46,6 +58,7 @@ export const AssetUploader = () => {
       setName(droppedFile.name.replace(/\.(glb|gltf)$/, ''))
       setError(null)
       setSuccess(false)
+      setUploadProgress(0)
     }
   }, [])
 
@@ -56,6 +69,7 @@ export const AssetUploader = () => {
       setName(selectedFile.name.replace(/\.(glb|gltf)$/, ''))
       setError(null)
       setSuccess(false)
+      setUploadProgress(0)
     }
   }, [])
 
@@ -66,6 +80,7 @@ export const AssetUploader = () => {
     }
 
     setIsUploading(true)
+    setUploadProgress(0)
     setError(null)
 
     try {
@@ -84,12 +99,20 @@ export const AssetUploader = () => {
 
       if (dbError) throw new Error(dbError.message)
 
+      setUploadProgress(100)
       setSuccess(true)
-      setFile(null)
-      setName('')
-      setMetadata({ system: '', layer: '', discipline: '', tags: [] })
+      
+      // Delay reset slightly so user sees 100%
+      setTimeout(() => {
+        setFile(null)
+        setName('')
+        setMetadata({ system: '', layer: '', discipline: '', tags: [] })
+        setUploadProgress(0)
+      }, 1000)
+
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Upload failed')
+      setUploadProgress(0)
     } finally {
       setIsUploading(false)
     }
@@ -120,6 +143,7 @@ export const AssetUploader = () => {
             <button
               onClick={() => { setFile(null); setSuccess(false) }}
               className="ml-4 p-1 hover:bg-muted rounded"
+              disabled={isUploading}
             >
               <SCIcon icon={XCircle} size="sm" />
             </button>
@@ -161,6 +185,7 @@ export const AssetUploader = () => {
               onChange={(e) => setName(e.target.value)}
               className="w-full px-3 py-2 rounded-md border border-input bg-background"
               placeholder="Enter asset name..."
+              disabled={isUploading}
             />
           </div>
 
@@ -170,6 +195,7 @@ export const AssetUploader = () => {
               <Select
                 value={metadata.system}
                 onValueChange={(val) => setMetadata(m => ({ ...m, system: val }))}
+                disabled={isUploading}
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select system..." />
@@ -187,6 +213,7 @@ export const AssetUploader = () => {
               <Select
                 value={metadata.layer}
                 onValueChange={(val) => setMetadata(m => ({ ...m, layer: val }))}
+                disabled={isUploading}
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select layer..." />
@@ -205,6 +232,7 @@ export const AssetUploader = () => {
             <Select
               value={metadata.discipline}
               onValueChange={(val) => setMetadata(m => ({ ...m, discipline: val }))}
+              disabled={isUploading}
             >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select discipline..." />
@@ -233,16 +261,26 @@ export const AssetUploader = () => {
             </div>
           )}
 
-          {/* Upload Button */}
-          <Button
-            onClick={handleUpload}
-            disabled={isUploading}
-            fullWidth
-            loading={isUploading}
-            leftIcon={<SCIcon icon={UploadSimple} size="sm" />}
-          >
-            {isUploading ? 'Uploading...' : 'Upload Asset'}
-          </Button>
+          {/* Upload Button & Progress */}
+          <div className="space-y-2">
+            <Button
+              onClick={handleUpload}
+              disabled={isUploading}
+              fullWidth
+              loading={isUploading}
+              leftIcon={<SCIcon icon={UploadSimple} size="sm" />}
+            >
+              {isUploading ? `Uploading... ${Math.round(uploadProgress)}%` : 'Upload Asset'}
+            </Button>
+            {isUploading && (
+              <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-primary transition-all duration-300 ease-out"
+                  style={{ width: `${uploadProgress}%` }}
+                />
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>

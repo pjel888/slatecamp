@@ -1,7 +1,7 @@
 'use client'
 
 import { useWallLabStore, CORE_THICKNESS_OPTIONS } from '../../../_stores/useWallLabStore'
-import { ToggleSwitch } from '../ToggleSwitch'
+import { Switch } from '@/components/ui/switch'
 import type { CoreType } from '@/features/wall-configurator/types/wall.types'
 
 const CORE_OPTIONS: Array<{ value: CoreType; label: string }> = [
@@ -62,9 +62,10 @@ export function CoreTypeStep() {
       {showMoistureToggle && (
         <label className="flex items-center justify-between gap-2 py-1.5 cursor-pointer">
           <span className="text-[12px] text-[#1A2332]">Moisture resistant</span>
-          <ToggleSwitch
+          <Switch
+            size="sm"
             checked={coreMoistureResistant}
-            onChange={setCoreMoistureResistant}
+            onCheckedChange={setCoreMoistureResistant}
           />
         </label>
       )}

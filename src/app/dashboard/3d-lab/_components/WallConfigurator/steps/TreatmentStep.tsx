@@ -2,7 +2,7 @@
 
 import { useWallLabStore } from '../../../_stores/useWallLabStore'
 import { MASONRY_CORE_TYPES } from '@/features/wall-configurator/store/layer-defaults'
-import { ToggleSwitch } from '../ToggleSwitch'
+import { Switch } from '@/components/ui/switch'
 
 const TREATMENT_LAYER_CODES = new Set(['PLASTER', 'SKIM_COAT', 'LASON'])
 
@@ -64,9 +64,10 @@ export function TreatmentStep() {
                   </span>
                 </div>
                 <div className="shrink-0">
-                  <ToggleSwitch
+                  <Switch
+                    size="sm"
                     checked={layer.enabled}
-                    onChange={(v) => toggleLayer(layer.code, v)}
+                    onCheckedChange={(v) => toggleLayer(layer.code, v)}
                   />
                 </div>
               </label>
@@ -88,9 +89,10 @@ export function TreatmentStep() {
               </span>
             </div>
             <div className="shrink-0">
-              <ToggleSwitch
+              <Switch
+                size="sm"
                 checked={lason.enabled}
-                onChange={(v) => setLason({ ...lason, enabled: v })}
+                onCheckedChange={(v) => setLason({ ...lason, enabled: v })}
               />
             </div>
           </label>
@@ -133,4 +135,3 @@ const LAYER_DESCRIPTIONS: Record<string, string> = {
   SKIM_COAT: 'Thin putty coat for smooth surface',
   LASON: 'Concrete neutralizer treatment',
 }
-

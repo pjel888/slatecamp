@@ -1,7 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { resolveRationaleText } from '@/lib/utils/question'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { classifyAndStoreError } from './classify-and-store-error'
@@ -11,14 +11,64 @@ import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
 import type { SubmitAnswerInput, SubmitAnswerResult, QuestionType } from '@/types/quiz-config'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
 
+const getSessionInteractionStats = async (
+  supabase: Awaited<ReturnType<typeof createServiceClient>>,
+  sessionId: string,
+  userId: string,
+) => {
+  const rpcResult = await supabase
+    .rpc('get_quiz_session_interaction_stats', {
+      p_session_id: sessionId,
+      p_user_id: userId,
+    })
+    .single()
+
+  if (!rpcResult.error) {
+    return {
+      answered_count: rpcResult.data?.answered_count ?? 0,
+      correct_count: rpcResult.data?.correct_count ?? 0,
+    }
+  }
+
+  const { data: interactions, error: fallbackError } = await supabase
+    .from('user_interactions')
+    .select('is_correct')
+    .eq('session_id', sessionId)
+    .eq('user_id', userId)
+
+  if (fallbackError) throw fallbackError
+
+  if (rpcResult.error.code === 'PGRST202') {
+    console.warn(
+      '[submitAnswer] Falling back to direct session stats query because get_quiz_session_interaction_stats is unavailable.',
+    )
+  } else {
+    console.warn(
+      '[submitAnswer] Falling back to direct session stats query after RPC failure:',
+      rpcResult.error,
+    )
+  }
+
+  const answeredCount = interactions?.length ?? 0
+  const correctCount =
+    interactions?.filter((interaction: { is_correct: boolean }) => interaction.is_correct).length ?? 0
+
+  return {
+    answered_count: answeredCount,
+    correct_count: correctCount,
+  }
+}
+
 export const submitAnswer = async (
   input: SubmitAnswerInput,
 ): Promise<SubmitAnswerResult> => {
-  const supabase = await createClient()
   const {
     data: { user },
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
+
+  // Use Service Client to avoid cookies() inside potential cached paths
+  const supabase = await createServiceClient()
 
   const { sessionId, questionId, selectedOptionId, confidenceLevel, timeSpentMs } = input
 
@@ -133,12 +183,11 @@ export const submitAnswer = async (
   const rationaleForClient =
     feedbackTiming === 'immediate' ? (resolveRationaleText(question.rationale) || null) : null
 
-  const sessionStatsPromise = supabase
-    .rpc('get_quiz_session_interaction_stats', {
-      p_session_id: sessionId,
-      p_user_id: user.id,
-    })
-    .single()
+  const sessionStatsPromise = getSessionInteractionStats(
+    supabase,
+    sessionId,
+    user.id,
+  )
 
   const wikiArticlePromise: Promise<string | null> =
     feedbackTiming === 'immediate' && question.topic_id
@@ -206,6 +255,7 @@ export const submitAnswer = async (
         runPostInteractionHooks({
           userId: user.id,
           topicId: question.topic_id,
+          questionId: question.question_id,
           isCorrect,
           timeSpentMs,
           avgTimeMs: 0, // first interaction has no baseline — hook handles this
@@ -213,6 +263,7 @@ export const submitAnswer = async (
           isInterleaved: sessionConfig?.interleave ?? false,
           sessionMode: sessionConfig?.mode ?? 'camp',
           emaWeightMultiplier: generationMultiplier,
+          isSuspectedLuckyGuess,
         }).catch((err) => {
           console.error('[submitAnswer] Post-interaction hooks failed:', err)
         }),
@@ -224,9 +275,7 @@ export const submitAnswer = async (
     }
   })()
 
-  const { data: sessionStats, error: statsError } = await sessionStatsPromise
-
-  if (statsError) throw statsError
+  const sessionStats = await sessionStatsPromise
 
   const answered = sessionStats?.answered_count ?? 0
   const correct = sessionStats?.correct_count ?? 0

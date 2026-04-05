@@ -1,11 +1,4 @@
-import { getArticleSources } from '@/lib/actions/wiki-actions'
-import { getCachedArticleAndNode } from '@/lib/actions/cached-queries'
-import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
-import { WikiArticle, getArticleHeadings } from '@/components/wiki/WikiArticle'
-import { WikiItemRenderer } from '@/components/wiki/WikiItemRenderer'
-import { WikiArticleHero } from '@/components/wiki/WikiArticleHero'
-import { WikiHeader } from '@/components/wiki/WikiHeader'
-import { WikiRightSidebar } from '@/components/wiki/WikiRightSidebar'
+import { WikiArticle, getArticleHeadings, WikiItemRenderer, WikiArticleHero, WikiHeader, WikiRightSidebar, TeachBackPrompt, WrongAnswerBanner, WikiReadTracker } from '@/components/wiki'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
@@ -16,10 +9,10 @@ import { Button } from '@/components/ui/button'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
-import { TeachBackPrompt } from '@/components/wiki/TeachBackPrompt'
-import { WrongAnswerBanner } from '@/components/wiki/WrongAnswerBanner'
-import { WikiReadTracker } from '@/components/wiki/WikiReadTracker'
-
+import { ROUTES } from '@/lib/constants/routes'
+import { getArticleSources, getArticleSiblings } from '@/lib/actions/wiki-actions'
+import { getCachedArticleAndNode } from '@/lib/actions/cached-queries'
+import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -27,217 +20,180 @@ const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' |
   return 'Advanced'
 }
 
-interface PageProps {
+interface WikiArticlePageProps {
   params: Promise<{ slug: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+  searchParams: Promise<{ 
+    minimal?: string
+    from?: string
+    topic?: string
+  }>
 }
 
-/** Fetch sibling articles under the same parent taxonomy node. */
-async function getRelatedTopics(node: TaxonomyNode | null): Promise<{ slug: string; title: string }[]> {
-  if (!node?.parent_id) return []
-  const supabase = await createClient()
-  const { data: siblings } = await supabase
-    .from('taxonomy_tree')
-    .select('slug, name')
-    .eq('parent_id', node.parent_id)
-    .neq('node_id', node.node_id)
-    .not('slug', 'is', null)
-    .limit(3)
-  return siblings?.map((s: any) => ({ slug: s.slug, title: s.name })) ?? []
-}
+/**
+ * Single Wiki Article Page (Async Server Component)
+ */
+export default async function WikiArticlePage(props: WikiArticlePageProps) {
+  const { slug } = await props.params
+  const searchParams = await props.searchParams
+  const isMinimal = searchParams.minimal === 'true'
+  const fromWrongAnswer = searchParams.from === 'wrong-answer'
+  const sourceTopicId = searchParams.topic
 
-export default async function WikiArticlePage({ params, searchParams }: PageProps) {
-  const [{ slug }, sp] = await Promise.all([params, searchParams])
-
-  // Cached article + node lookup (revalidates hourly)
+  // 1. Fetch main article & node data (cached)
   const { article, node } = await getCachedArticleAndNode(slug)
 
-  // Taxonomy-only fallback: node exists but no published article
-  if (!article && node) {
-    const wikiItems: { type: string; text: string; source_ref?: string }[] = Array.isArray((node as any).wiki_items) ? (node as any).wiki_items : []
-    const threeDLabLinked: boolean = (node as any).three_d_lab_linked === true
-
-    return (
-      <>
-        <Suspense fallback={null}>
-          <div className="sticky top-0 z-30 border-b border-border bg-background">
-            <WikiHeader nodeId={node.node_id} />
-          </div>
-        </Suspense>
-
-        <div className="flex-1 overflow-y-auto">
-          <div className="max-w-4xl mx-auto px-8 py-8">
-            <h1 className="text-xl font-bold text-foreground mb-1">
-              {node.name}
-            </h1>
-            {node.ale_id && (
-              <p className="font-mono text-[11px] text-muted-foreground mb-6">
-                {node.ale_id}
-                {(node as any).exam_frequency && <span className="ml-3">Exam frequency: {(node as any).exam_frequency}</span>}
-                {(node as any).bloom_level && <span className="ml-3">Bloom: {(node as any).bloom_level}</span>}
-              </p>
-            )}
-
-            {wikiItems.length > 0 ? (
-              <WikiItemRenderer
-                items={wikiItems}
-                aleId={node.ale_id}
-                threeDLabLinked={threeDLabLinked}
-              />
-            ) : (
-              <p className="text-text-secondary leading-relaxed">
-                Content for this topic is being developed. Check back soon.
-              </p>
-            )}
-
-            <div className="mt-8 pt-6 border-t border-border">
-              <Link href={`/quiz/subject/setup`}>
-                <Button className="font-bold rounded-sm px-8">
-                  Practice this Topic
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </>
-    )
-  }
-
   if (!article) {
-    notFound()
+    return notFound()
   }
-
-  // Extract data for all zones
-  const headings = getArticleHeadings(article)
-  const readingTime = estimateReadingTime(article.content || '')
 
   // ALL secondary data in parallel — no more sequential waterfall
-  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics] = await Promise.all([
+  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics, siblings] = await Promise.all([
     getEIPromptsForArticle(article.article_id),
     getUserEIResponsesForArticle(article.article_id),
     getArticleSources(article.article_id),
     node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
     getRelatedTopics(node),
+    node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
   ])
 
   const practiceHref = '/quiz/camp/setup'
   const practiceLabel = 'Practice this Article'
   const wikiNodeId = node?.node_id ?? undefined
-  const wikiTopicName = node?.name ?? article.title
+  const wikiNodeName = node?.name ?? undefined
 
-  const isMinimal = sp?.minimal === 'true'
+  // Extract data for all zones
+  const headings = getArticleHeadings(article)
+  const readingTime = estimateReadingTime(article.content || '')
+
+  const sidebarContent = (
+    <WikiRightSidebar
+      practiceHref={practiceHref}
+      practiceLabel={practiceLabel}
+      nodeId={wikiNodeId}
+      articleId={article.article_id}
+      topicName={wikiNodeName}
+      relatedTopics={relatedTopics}
+      headings={headings}
+      articleSlug={article.slug}
+      scrollContainerId="wiki-center-pane"
+      sources={sources}
+    />
+  )
 
   return (
     <>
-      {/* Zone 1: Header — full-width, sticky top, fixed height */}
-      {!isMinimal && (
-        <Suspense fallback={null}>
-          <div className="sticky top-0 z-30 border-b border-border bg-background">
-            <WikiHeader
-              nodeId={node?.node_id}
-              articleId={article.article_id}
-              articleTitle={article.title}
-              articleSlug={article.slug}
-              scrollContainerId="wiki-center-pane"
-              mobileActionsContent={
-                <WikiRightSidebar
-                  practiceHref={practiceHref}
-                  practiceLabel={practiceLabel}
-                  nodeId={wikiNodeId}
-                  articleId={article.article_id}
-                  topicName={wikiTopicName}
-                  relatedTopics={relatedTopics}
-                  headings={headings}
-                  articleSlug={article.slug}
-                  scrollContainerId="wiki-center-pane"
-                  sources={sources}
-                />
-              }
-            />
-          </div>
-        </Suspense>
-      )}
+      <WikiHeader
+        nodeId={wikiNodeId}
+        articleId={article.article_id}
+        articleTitle={article.title}
+        articleSlug={article.slug}
+        scrollContainerId="wiki-center-pane"
+        mobileActionsContent={sidebarContent}
+      />
 
-      {/* Zone 3 + Zone 4 body */}
-      <div className="flex flex-1 min-h-0">
-        {/* Zone 3: Center Pane — flex column: scrollable article + sticky footer */}
-        <main className="flex-1 min-w-0 flex flex-col h-full">
-          {/* Scrollable article area */}
-          <div
-            id="wiki-center-pane"
-            className="flex-1 overflow-y-auto"
-          >
-            {/* Read tracking — records open, tracks scroll depth + time spent */}
-            <WikiReadTracker
-              articleId={article.article_id}
-              scrollContainerId="wiki-center-pane"
-            />
-
-            <div className={cn("max-w-4xl mx-auto px-8 py-8", isMinimal && "px-4 py-4")}>
-              <WrongAnswerBanner
-                fromWrongAnswer={sp?.from === 'wrong-answer'}
-                topicName={(sp?.topic as string) ?? null}
-              />
+      <div className="flex flex-1 min-h-0 relative">
+        <main
+          id="wiki-center-pane"
+          className={cn(
+            'flex-1 min-w-0 overflow-y-auto scroll-smooth bg-background flex flex-col',
+            !isMinimal && 'selection:bg-primary/10 selection:text-primary'
+          )}
+        >
+          <div className="flex-1">
+            <div className={cn(
+              'max-w-4xl mx-auto px-8 py-12',
+              isMinimal && 'px-4 py-6 max-w-none'
+            )}>
+              {fromWrongAnswer && (
+                <div className="mb-8">
+                  <WrongAnswerBanner fromWrongAnswer={true} topicName={sourceTopicId || wikiNodeName || null} />
+                </div>
+              )}
 
               <WikiArticleHero
-                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
-                difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
-                readTime={`~${readingTime} min`}
                 title={article.title}
-                updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-                aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
-                isMinimal={isMinimal}
+                subject={getSubjectName(node?.subject_area) || 'General Knowledge'}
+                difficulty={mapDifficulty(node?.level)}
+                readTime={`${readingTime} min`}
+                updatedNote={article.updated_at ? `Updated ${new Date(article.updated_at).toLocaleDateString()}` : undefined}
+                aleTestsYou="demonstrate comprehensive understanding of this architectural principle and apply it correctly in professional practice."
               />
 
               <WikiArticle
                 article={article}
-                nodeId={node?.node_id}
-                nodeName={node?.name}
+                nodeId={wikiNodeId}
+                nodeName={wikiNodeName}
                 eiPrompts={eiPrompts}
                 eiResponses={eiResponses}
               />
 
-              {teachBackCriteria && node?.node_id && node?.name && (
-                <TeachBackPrompt
-                  topicId={node.node_id}
-                  topicName={node.name}
-                  entryPoint="wiki"
-                />
+              {teachBackCriteria && (
+                <div className="mt-16 pt-16 border-t border-wiki-border">
+                  <TeachBackPrompt
+                    topicId={wikiNodeId!}
+                    topicName={wikiNodeName!}
+                    entryPoint="wiki"
+                  />
+                </div>
               )}
+
             </div>
           </div>
+
+          <WikiReadTracker
+            articleId={article.article_id}
+            scrollContainerId="wiki-center-pane"
+          />
 
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}
           {!isMinimal && (
             <div className="shrink-0 border-t border-border bg-background print:hidden">
               <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
-                <span>&larr; Previous topic</span>
-                <span>Next topic &rarr;</span>
+                {siblings.prev ? (
+                  <Link 
+                    href={ROUTES.WIKI_PAGE(siblings.prev.slug || '')} 
+                    className="flex items-center gap-1 hover:text-primary transition-colors"
+                  >
+                    &larr; {siblings.prev.name}
+                  </Link>
+                ) : <span />}
+                
+                {siblings.next ? (
+                  <Link 
+                    href={ROUTES.WIKI_PAGE(siblings.next.slug || '')} 
+                    className="flex items-center gap-1 hover:text-primary transition-colors text-right"
+                  >
+                    {siblings.next.name} &rarr;
+                  </Link>
+                ) : <span />}
               </div>
             </div>
           )}
         </main>
 
-        {/* Zone 4: Right Sidebar — sticky, strict ordering. Hidden in print. */}
         {!isMinimal && (
-          <aside className="hidden lg:block print:!hidden w-56 shrink-0 border-l border-border/60">
-            <div className="sticky top-0 max-h-screen overflow-y-auto py-6 px-4">
-              <WikiRightSidebar
-                practiceHref={practiceHref}
-                practiceLabel={practiceLabel}
-                nodeId={wikiNodeId}
-                articleId={article.article_id}
-                topicName={wikiTopicName}
-                relatedTopics={relatedTopics}
-                headings={headings}
-                articleSlug={article.slug}
-                scrollContainerId="wiki-center-pane"
-                sources={sources}
-              />
+          <aside className="hidden xl:block w-[280px] shrink-0 border-l border-border bg-background overflow-y-auto">
+            <div className="p-6 sticky top-0">
+              {sidebarContent}
             </div>
           </aside>
         )}
       </div>
     </>
   )
+}
+
+/** Fetch siblings or related topics helper */
+async function getRelatedTopics(node: any) {
+  if (!node?.parent_id) return []
+  const supabase = await createClient()
+  const { data } = await supabase
+    .from('taxonomy_tree')
+    .select('name, slug')
+    .eq('parent_id', node.parent_id)
+    .neq('node_id', node.node_id)
+    .is('deprecated_at', null)
+    .limit(3)
+
+  return (data || []).map(d => ({ title: d.name, slug: d.slug || '' }))
 }

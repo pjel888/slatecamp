@@ -1,5 +1,5 @@
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { getDashboardTag, getUserSessionsTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
@@ -134,12 +134,12 @@ export const buildAction = (
  * Server action to fetch recent activity feed data for the current user.
  */
 export const getActivityFeedData = async () => {
-  const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return []
 
   return unstable_cache(
     async () => {
+      const supabase = await createServiceClient()
       const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
 
       const { data: recentSessionsResult } = await supabase
