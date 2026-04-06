@@ -46,6 +46,8 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
   const unifiedQuestions: QuestionForClient[] = useMemo(() => {
     return scenario.questions.map((q, idx) => ({
       question_id: q.question_id,
+      topic_id: '', // Placeholder for scenario questions
+      difficulty: 0.5, // Placeholder for scenario questions
       position: idx + 1,
       stem: q.question_stem,
       image_url: null,

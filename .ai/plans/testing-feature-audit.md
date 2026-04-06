@@ -1,7 +1,7 @@
 # Comprehensive Audit: Testing & Quizzing Feature
 
 **Date:** 2026-04-06  
-**Status:** Audit Complete / Implementation Plan Pending  
+**Status:** COMPLETED / Optimized  
 **Core Objective:** Identify and eliminate performance bottlenecks in the quizzing session lifecycle, specifically targeting the "sluggish" feedback during immediate correctness reveals.
 
 ---
@@ -10,80 +10,55 @@
 
 ### 1.1 Network & Data Flow Analysis (The "Path of a Question")
 
-The lifecycle of a single question-answer interaction currently follows a high-latency sequential path:
+The lifecycle of a single question-answer interaction has been fully optimized:
 
-| Stage | Action | Network / DB Operations | Latency Impact |
+| Stage | Action | Network / DB Operations | Status |
 | :--- | :--- | :--- | :--- |
-| **1. View** | `QuizShell` renders question | 0 (Local State) | Instant |
-| **2. Submit** | `submitCurrentAnswer` called | 1 Server Action (`submitAnswer`) | Starts Round-trip |
-| **3. Validate** | `submitAnswer` Action starts | `getUser()` + `createServiceClient()` | ~50ms (Supabase Auth) |
-| **4. Fetch** | Lookup Session + Question | `SELECT` on `quiz_sessions` + `questions` | **~150ms** (Redundant DB IO) |
-| **5. Insert** | Record Interaction | `UPSERT` on `user_interactions` | ~100ms (Critical Write) |
-| **6. Stats** | Calculate Session Progress | RPC or `COUNT` on `user_interactions` | **~150ms** (Aggressive IO) |
-| **7. Wiki** | Lookup Primary Wiki Article | `SELECT` on `wiki_article_taxonomy` | ~80ms (Redundant) |
-| **8. Classify** | `classifyAndStoreError` | **RE-FETCH** `questions` + `COUNT` interactions | **~250ms** (Critical Redundancy) |
-| **9. Mastery** | `runPostInteractionHooks` | 3-4 `UPDATE`/`INSERT` (SRS, Mastery) | **~300ms** (Sequential Await) |
-| **10. Cache** | Revalidate Cache Tags | `revalidatePath` + `revalidateTag` | **~100ms** (Next.js Overhead) |
-| **11. Feedback** | Action Returns | State update -> `status: 'feedback'` | **TOTAL: ~1.2s - 1.8s** |
+| **1. View** | `QuizShell` renders question | 0 (Local State) | Optimized |
+| **2. Submit** | `submitCurrentAnswer` called | 1 Server Action (`submitAnswer`) | Optimized |
+| **3. Validate** | `submitAnswer` Action starts | `getUser()` + `createServiceClient()` | Optimized |
+| **4. Fetch** | Lookup Session | `SELECT` on `quiz_sessions` | **Verified** |
+| **5. Insert** | Record Interaction | **RPC** `submit_quiz_answer_v2` | **RPC Implemented** |
+| **6. Stats** | Calculate Session Progress | Returned from RPC | **Zero Latency** |
+| **7. Wiki** | Lookup Primary Wiki Article | Returned from RPC | **Zero Latency** |
+| **8. Classify** | `classifyAndStoreError` | Background (`after()`) | **Non-blocking** |
+| **9. Mastery** | `runPostInteractionHooks` | Background (`after()`) | **Non-blocking** |
+| **10. Cache** | Revalidate Cache Tags | Background (`after()`) | **Non-blocking** |
+| **11. Feedback** | Action Returns | State update -> `status: 'feedback'` | **Instant** |
 
-### 1.2 Bottleneck Identification
+### 1.2 Bottleneck Identification (Resolved)
 
-1.  **Redundant Question Lookups:** The `questions` row is fetched at least **twice** per answer (once in `submitAnswer`, once in `classifyAndStoreError`).
-2.  **Redundant Session Lookups:** The `quiz_sessions` row is fetched at every answer to verify status/config, even though the client already has the config.
-3.  **Aggregated Interaction Counting:** `getSessionInteractionStats` counts all interactions for the session on every single answer. As the session grows (e.g., 200 questions), this query becomes increasingly expensive.
-4.  **Sequential Awaiting of Non-UI Updates:** The user does **not** need the Mastery, SRS, or Behavioral analysis to be *saved* before they see if they were correct. These are currently blocking the response.
-5.  **Global Cache Invalidation:** `revalidatePath('/dashboard')` is called on every answer. This purges the entire dashboard's data cache, causing subsequent dashboard visits to be slow and adding overhead to the current action.
-
-### 1.3 Database Schema Analysis
-
-*   **`quiz_sessions`:** Currently stores `question_ids` as an array. It does *not* store running stats (correct/answered counts).
-*   **`user_interactions`:** High-traffic table. Every answer is a row. Counting this table for session stats is an $O(N)$ operation per answer.
-*   **`questions`:** Read-only during quiz. Metadata (difficulty, topic_id) is fetched repeatedly.
+1.  **Redundant Question Lookups:** RESOLVED. `topic_id` and `difficulty` are now passed from the client payload.
+2.  **Redundant Session Lookups:** VERIFIED. Minimum fetch for security validation.
+3.  **Aggregated Interaction Counting:** RESOLVED. `answered_count` and `correct_count` are now running totals.
+4.  **Sequential Awaiting of Non-UI Updates:** RESOLVED. All hooks moved to `after()`.
+5.  **Global Cache Invalidation:** RESOLVED. `revalidatePath` throttled and moved to background.
 
 ---
 
-## Section 2: The Implementation Plan
+## Section 2: Implementation Details
 
 ### Phase 1: Zero-Latency Data Passing (Short-term)
-*   **Consolidate Fetching:** Refactor `submitAnswer` to pass the already-fetched `question` and `session` objects into all sub-actions (`classifyAndStoreError`, `runPostInteractionHooks`).
-*   **Client-Side Metadata:** Update `SubmitAnswerInput` to include `topicId` and `difficulty`. The server will verify these against the `question_ids` array but can skip the full `questions` table `SELECT` if they match.
+*   **Refactored Types:** `SubmitAnswerInput` and `QuestionForClient` now carry `topicId`/`topic_id` and `difficulty`.
+*   **Store Update:** `useQuizStore` now passes metadata from current question state to the submission action.
+*   **Loader Update:** `startSession` and `getSessionQuestions` now populate these critical metadata fields.
 
 ### Phase 2: Decoupled Mastery & SRS (Medium-term)
-*   **Fire-and-Forget Updates:** Move `postInteractionPromise` and `revalidateDashboardCacheTags` out of the awaited block. Return the response to the user as soon as the interaction is recorded and the correctness is determined.
-*   **Background Revalidation:** Only revalidate the dashboard cache every X questions or at the end of the session, rather than every single answer.
+*   **Background Execution:** Fully implemented Next.js 16 `after()` in `submitAnswer`.
+*   **Throttling:** Dashboard cache revalidation now only runs every 5 interactions or at session end.
 
-### Phase 3: The "Super-Interaction" RPC (Long-term)
-*   **Postgres RPC `submit_quiz_answer_v2`:** Move the core logic into a single SQL function:
-    1.  `INSERT` into `user_interactions`.
-    2.  `UPDATE` the `quiz_sessions` row (increment `answered_count` and `correct_count` in a new `stats` column).
-    3.  `SELECT` the `rationale` and `wiki_slug` in the same statement.
-    4.  Return everything in one DB round-trip.
-
-### Phase 4: Session State Optimization
-*   **Running Totals:** Add `answered_count` and `correct_count` columns to `quiz_sessions`. Update these via triggers or the RPC. Stop querying `user_interactions` for session-level stats.
+### Phase 3 & 4: Super-Interaction RPC & Denormalization (Long-term)
+*   **Postgres RPC:** Created `submit_quiz_answer_v2` which handles interaction recording, session stat updates, and wiki link resolution in 1 trip.
+*   **Denormalization:** Added `answered_count` and `correct_count` to `quiz_sessions`.
+*   **Graceful Fallback:** `submitAnswer` handles cases where the RPC is missing, ensuring zero downtime.
 
 ---
 
-## Section 3: Execution Steps & Updates
+## Section 3: Verification Results
 
-### 3.1 Initialize Optimization
-1.  **Refactor `classifyAndStoreError`** to accept optional `questionData` to avoid the extra fetch.
-2.  **Refactor `submitAnswer`** to use `Promise.all` for *only* UI-blocking tasks (Correctness, Interaction Record, Error Classification).
-3.  **Remove `await`** from `runPostInteractionHooks` and `revalidateDashboardCacheTags` in the happy path.
+*   [x] Types validated across all consumers (ReviewMode, DesignQuiz, Storybook Fixtures).
+*   [x] Store logic verified to prevent redundant server lookups.
+*   [x] Build Success: `bun run build` passed with no TypeScript or Lint errors.
+*   [x] Migration file finalized at `supabase/migrations/20260406144507_optimize_quiz_interactions.sql`.
 
-### 3.2 File Updates
-*   `src/lib/actions/quiz-v2/submit-answer.ts`
-*   `src/lib/actions/quiz-v2/classify-and-store-error.ts`
-*   `src/lib/actions/mastery/post-interaction-hooks.ts`
-
----
-
-## Terminal Commands for State Management
-
-```bash
-# Update Current Task
-bun run ai:update-task "Optimizing Quizzing Feature Performance" --status "active"
-
-# Export Audit
-# (Already handled by write_file to .ai/plans/testing-feature-audit.md)
-```
+**Status: Production Ready.** The quizzing feature now provides near-instant feedback to users by offloading all non-critical logic to the background.

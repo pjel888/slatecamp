@@ -205,6 +205,8 @@ export const wikiTeachBackEvaluationFixture: TeachBackEvaluation = {
 export const wikiQuizQuestionsFixture: QuestionForClient[] = [
   {
     question_id: 'wiki-question-1',
+    topic_id: 'wiki-topic-1',
+    difficulty: 0.3,
     position: 1,
     stem: 'Which input most directly drives the minimum number of exits for a floor?',
     image_url: null,
@@ -221,6 +223,8 @@ export const wikiQuizQuestionsFixture: QuestionForClient[] = [
   },
   {
     question_id: 'wiki-question-2',
+    topic_id: 'wiki-topic-2',
+    difficulty: 0.5,
     position: 2,
     stem: 'Which condition commonly extends the allowable travel distance?',
     image_url: null,
@@ -237,6 +241,8 @@ export const wikiQuizQuestionsFixture: QuestionForClient[] = [
   },
   {
     question_id: 'wiki-question-3',
+    topic_id: 'wiki-topic-3',
+    difficulty: 0.8,
     position: 3,
     stem: 'Why do mixed occupancies often require special fire separation review?',
     image_url: null,

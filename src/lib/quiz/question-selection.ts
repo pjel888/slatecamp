@@ -94,16 +94,18 @@ export const stripQuestionForClient = (question: {
   topic_id?: string
   question_type?: string
   metadata?: Record<string, unknown> | null
-}, position: number) => ({
+}, position: number): any => ({
   question_id: question.question_id,
+  topic_id: question.topic_id ?? '',
+  difficulty: question.difficulty ?? 0.5,
   position,
   stem: question.text,
   image_url: question.prompt_image_url ?? null,
   image_alt_text: null,
   taxonomy_breadcrumb: '',
-  difficulty_label: difficultyToBand(question.difficulty ?? 3) === 'easy'
+  difficulty_label: (question.difficulty ?? 0.5) < 0.4
     ? 'Easy' as const
-    : difficultyToBand(question.difficulty ?? 3) === 'medium'
+    : (question.difficulty ?? 0.5) < 0.7
       ? 'Medium' as const
       : 'Hard' as const,
   question_type: (question.question_type ?? 'mcq') as 'mcq' | 'numeric' | 'short_text' | 'formula',

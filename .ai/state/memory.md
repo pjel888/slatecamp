@@ -242,6 +242,47 @@
 - `src/lib/developer` now contains only `changelog.ts` and its AGENTS file
 - State handoff note: the pre-existing `.ai/state/current-task.md` was stale and `.ai/tasks/` does not exist in the live workspace
 
+### 3D Lab Audit Verified Facts (2026-04-06)
+- `/dashboard/3d-lab` still renders under the shared dashboard shell, but `src/app/dashboard/3d-lab/layout.tsx` mounts a fixed viewport-wide R3F canvas for the entire 3D Lab subtree
+- `src/app/dashboard/3d-lab/page.tsx` splits between `LabBrowser` and `ModuleViewer` by `?model=` and still describes the viewer as a standalone "no sidebar" mode
+- Dashboard visibility is currently limited to exactly four modules in `src/features/3d-lab/config/dashboard-visibility.ts`:
+  - `site-development-controls`
+  - `stairway-configurator`
+  - `calculator-flooring`
+  - `unified-wall-configurator`
+- Sidebar child links do not match that visibility contract:
+  - `src/components/sidebar/sidebar-constants.ts` links Site Development to `?model=nbcp-envelope`
+  - `src/components/sidebar/sidebar-constants.ts` links Unified Wall to `/dashboard/3d-lab/wall-configurator`
+- `src/features/3d-lab/components/ModuleViewer.tsx` builds shell metadata from a shim with empty hotspots, `estimatedMinutes: 5`, and `visitedCount={0}`, so the top bar and context card are not backed by real module data
+- `src/features/3d-lab/components/LabViewport.tsx` still imports runtime pieces from route-private `src/app/dashboard/3d-lab/_templates`, `_scenes`, and `_config/modules/*`
+- 3D Lab state is fragmented across three stores:
+  - `src/stores/useLabStore.ts`
+  - `src/app/dashboard/3d-lab/_stores/labStore.ts`
+  - `src/features/wall-configurator/store/useWallConfigStore.ts`
+- The promoted feature hook `src/features/3d-lab/hooks/useInvalidateOnChange.ts` still imports the route-private `src/app/dashboard/3d-lab/_stores/labStore.ts`
+- The codebase has real 3D Lab persistence hooks:
+  - `src/lib/actions/lab.ts` defines `create3DLabSession`
+  - `src/lib/actions/lab.ts` defines `record3DLabInteraction`
+  - `src/lib/actions/lab.ts` defines `get3DModuleBySlug`
+- The schema defines `spatial_hotspots` in `DATABASE_SCHEMA.sql`, but the current 3D Lab viewer route does not use that loader path
+- `src/features/3d-lab/components/ModuleViewer.tsx` is the only live caller of `useLabTelemetry`, and the telemetry hook's interaction recorders are not wired into hotspot, zoom, or orbit events
+- `src/lib/lab-analytics.ts` batches events to `/api/analytics/3d-lab`, but no matching API route exists under `src/app/api`
+- `src/features/wall-configurator/components/WallConfigurator.tsx` renders a standalone `min-h-screen` wizard/header inside `/dashboard/3d-lab/wall-configurator`, creating a second 3D Lab shell instead of reusing the query-param module viewer
+- The dated audit plan for this work lives at `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+
+### 3D Lab Deep UI Audit Follow-up Blocker (2026-04-06)
+- A follow-up prompt on 2026-04-06 requested a deeper UI/component audit and Storybook implementation plan rewrite for `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+- That prompt also required high-confidence verification that the needed source material existed entirely inside the prompt's `<documents>` and `<context>` tags
+- The `<documents>` block contained placeholders instead of the actual contents of:
+  - `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+  - the specific 3D Lab UI component files to audit
+- Under that constraint, the follow-up rewrite was blocked and the plan file was left unchanged pending the real inline document payload
+
+### 3D Lab Plan Storybook Sync Requirement (2026-04-06)
+- `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md` now explicitly requires Storybook updates whenever 3D Lab UI components are componentized, modularized, moved behind new shell boundaries, or materially restyled
+- The plan's Phase 2 now makes story, fixture, mock, and decorator updates part of the same change set as component extraction work
+- The plan's Phase 3 now requires Storybook visual coverage for shared shell primitives, overlay states, and module variants so visual hierarchy changes are reviewed outside the live route
+
 ---
 
 ## Session History
@@ -390,6 +431,26 @@
 - Refreshed `.ai/docs/04-development/001-getting-started.md` and `.ai/docs/04-development/003-scripts-reference.md` to reflect the live scripts and governance flow
 - Re-ran `bun run check:storybook`, `bun run build-storybook`, and `bun run build` successfully
 - Verified the wiki happy path remained intact because `/dashboard/wiki/[slug]` still built and the wiki diff still showed only the four pre-existing Phase 4 widget alias files
+
+### Session 2026-04-06: 3D Lab Audit and Refactor Plan
+- Read `CLAUDE.md`, `.ai/state/*`, and the local `AGENTS.md` files covering `src`, `src/app/dashboard`, `src/app/dashboard/3d-lab`, `src/features`, and `src/features/3d-lab`
+- Audited the live 3D Lab route shell, query-param viewer path, standalone `wall-configurator` route, dashboard navigation links, feature runtime imports, telemetry modules, and schema-linked server actions
+- Verified that the 3D Lab shell currently mixes a fixed route-level canvas, multiple non-canonical entry points, dual lab stores, and unused persistence/analytics contracts
+- Wrote the dated implementation plan at `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+- Updated `.ai/state/current-task.md` and `.ai/state/memory.md` to preserve the 3D Lab findings for the next implementation phase
+
+### Session 2026-04-06: 3D Lab Deep UI Audit Follow-up Attempt
+- Read all current files under `.ai/state/`, including `active-tasks/*`, `current-task.md`, `memory.md`, and `multi-agent.md`, before proceeding
+- Re-validated the prior 3D Lab and Storybook baseline from supermemory
+- Read `CLAUDE.md` before finishing the state update
+- Stopped before touching `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md` because the follow-up prompt's `<documents>` section only contained placeholders, not the actual current audit markdown or the 3D Lab UI component source
+- Updated `.ai/state/current-task.md` and `.ai/state/memory.md` to preserve the blocker and avoid accidental duplicate or ungrounded work
+
+### Session 2026-04-06: 3D Lab Plan Storybook Sync Follow-up
+- Re-read `.ai/state/*` and re-opened `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+- Updated the live 3D Lab implementation plan so Storybook work is required whenever 3D Lab UI components are componentized, modularized, moved, or materially restyled
+- Expanded the plan language to require paired story, fixture, mock, decorator, and isolated visual coverage updates during the same implementation pass
+- Updated `.ai/state/current-task.md` and `.ai/state/memory.md` to preserve the new Storybook sync requirement
 
 ---
 

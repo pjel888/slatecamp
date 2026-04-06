@@ -59,16 +59,16 @@ export const getReviewData = async (
     const { data, error: batchError } = await supabase
       .from('questions')
       .select(
-        'question_id, text, options, correct_option_id, rationale, prompt_image_url, topic_id',
+        'question_id, text, options, correct_option_id, rationale, prompt_image_url, topic_id, difficulty',
       )
       .in('question_id', batch)
 
     if (batchError) throw batchError
-    if (data) allQuestions.push(...(data as typeof allQuestions))
+    if (data) allQuestions.push(...(data as any[]))
   }
 
   // 4. Fetch taxonomy breadcrumbs — batch to avoid header overflow on fullexam
-  const topicIds = [...new Set(allQuestions.map((q: { topic_id: string }) => q.topic_id))]
+  const topicIds = [...new Set(allQuestions.map((q: any) => q.topic_id))]
 
   const taxonomyMap = new Map<string, string>()
   const wikiMap = new Map<string, string | null>()
@@ -105,11 +105,12 @@ export const getReviewData = async (
     rationale: string | null
     prompt_image_url: string | null
     topic_id: string
+    difficulty: number
   }
 
   // 6. Build questionMap for ordered access
   const questionDataMap = new Map<string, QuestionRow>(
-    (allQuestions as QuestionRow[]).map((q) => [q.question_id, q]),
+    (allQuestions as any[]).map((q) => [q.question_id, q as QuestionRow]),
   )
 
   // 7. Shape ReviewQuestionData in session order
@@ -150,6 +151,8 @@ export const getReviewData = async (
       return {
         position: interaction?.question_order ?? idx + 1,
         questionId: qid,
+        topicId: q.topic_id,
+        difficulty: q.difficulty ?? 0.5,
         stem: q.text,
         imageUrl: q.prompt_image_url,
         taxonomyBreadcrumb: taxonomyMap.get(q.topic_id) ?? '',

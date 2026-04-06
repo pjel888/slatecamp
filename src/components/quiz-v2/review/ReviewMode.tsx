@@ -126,12 +126,14 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
   const questionForColumn = current
     ? {
         question_id: current.questionId,
+        topic_id: current.topicId,
+        difficulty: current.difficulty,
         position: current.position,
         stem: current.stem,
         image_url: current.imageUrl,
         image_alt_text: null,
         taxonomy_breadcrumb: current.taxonomyBreadcrumb,
-        difficulty_label: 'Medium' as const,
+        difficulty_label: (current.difficulty < 0.4) ? 'Easy' as const : (current.difficulty < 0.7) ? 'Medium' as const : 'Hard' as const,
         question_type: 'mcq' as const,
         options: current.options.map((o) => ({
           id: o.id,

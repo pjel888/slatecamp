@@ -49,6 +49,8 @@ const toClientQuestion = (
   position: number,
 ): QuestionForClient => ({
   question_id: q.question_id,
+  topic_id: q.topic_id,
+  difficulty: q.difficulty,
   position,
   stem: q.text,
   image_url: q.prompt_image_url,

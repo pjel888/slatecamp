@@ -395,6 +395,8 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       sessionId,
       questionId: question.question_id,
       selectedOptionId: answerState.selectedOptionId,
+      topicId: (question as any).topic_id, // Pass pre-fetched metadata
+      difficulty: (question as any).difficulty, // Pass pre-fetched metadata
       confidenceLevel: answerState.confidenceLevel ?? undefined,
       timeSpentMs,
       cageToken: cageResult.token,

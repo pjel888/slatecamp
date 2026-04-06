@@ -18,23 +18,26 @@ export const classifyAndStoreError = async (
   userId: string,
   timeSpentMs: number,
   isCorrect: boolean,
+  questionData?: { difficulty: number; topic_id: string | null },
 ): Promise<ErrorClassification | null> => {
   if (isCorrect) return null
 
   try {
     const supabase = await createClient()
-    const { data: { user } } = await getUser()
-    if (!user || user.id !== userId) return null
 
-    // 1. Get the question's difficulty for median-time lookup
-    const { data: question } = await supabase
-      .from('questions')
-      .select('difficulty, topic_id')
-      .eq('question_id', questionId)
-      .single()
+    // 1. Use pre-fetched data if available, otherwise fetch
+    let difficulty = questionData?.difficulty
+    let topicId = questionData?.topic_id
 
-    const difficulty = question?.difficulty ?? 0.5
-    const topicId = question?.topic_id ?? null
+    if (difficulty === undefined || topicId === undefined) {
+      const { data: question } = await supabase
+        .from('questions')
+        .select('difficulty, topic_id')
+        .eq('question_id', questionId)
+        .single()
+      difficulty = question?.difficulty ?? 0.5
+      topicId = question?.topic_id ?? null
+    }
 
     // 2. Get median time for this difficulty band
     const medianTimeMs = await getMedianTimeForDifficulty(difficulty)

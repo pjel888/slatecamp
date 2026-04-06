@@ -146,6 +146,8 @@ export type QuestionType = 'mcq' | 'numeric' | 'short_text' | 'formula'
 
 export interface QuestionForClient {
   question_id: string
+  topic_id: string
+  difficulty: number
   position: number
   stem: string
   image_url: string | null
@@ -203,6 +205,9 @@ export interface SubmitAnswerInput {
   sessionId: string
   questionId: string
   selectedOptionId: string
+  /** Pre-fetched metadata to avoid server-side re-fetching (Phase 1 Optimization) */
+  topicId?: string
+  difficulty?: number
   /** Continuous 0–1 confidence score */
   confidenceLevel?: number
   timeSpentMs: number
@@ -278,6 +283,8 @@ export interface EndSessionResult {
 export interface ReviewQuestionData {
   position: number
   questionId: string
+  topicId: string
+  difficulty: number
   stem: string
   imageUrl: string | null
   taxonomyBreadcrumb: string
