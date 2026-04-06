@@ -1,6 +1,5 @@
 import { Suspense } from "react";
-import { LabBrowser } from "@/app/dashboard/3d-lab/_components/Library/LabBrowser";
-import { ModuleViewer } from "@/app/dashboard/3d-lab/_components/ModuleViewer";
+import { LabBrowser, ModuleViewer } from "@/features/3d-lab/components";
 
 type PageSearchParams = { model?: string };
 

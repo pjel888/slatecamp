@@ -1,57 +1,71 @@
-import { getTableInfo } from '@/lib/actions/dev/db-viewer'
+import { Database } from '@phosphor-icons/react/dist/ssr'
+
+import { DataTable, type Column } from '@/components/shared/data-table'
+import { EmptyState } from '@/components/shared/empty-state'
+import { SectionHeader } from '@/components/shared/section-header'
+import { getTableInfo, type TableInfo } from '@/lib/actions/dev/db-viewer'
+
+type DatabaseTableRow = Record<string, unknown> & TableInfo & {
+  rls_status: string
+}
 
 export default async function DatabaseViewerPage() {
   const tables = await getTableInfo()
 
-  return (
-    <div className="space-y-6 max-w-4xl">
-      <div>
-        <h1 className="text-lg font-bold text-foreground">Database Browser</h1>
-        <p className="text-sm text-muted-foreground mt-1">
-          Read-only view of database tables, row counts, and RLS status.
-        </p>
-      </div>
+  const rows: DatabaseTableRow[] = tables.map((table) => ({
+    ...table,
+    rls_status: table.rls_enabled ? 'Enabled' : 'Disabled',
+  }))
 
-      <div className="overflow-hidden rounded-lg border border-border">
-        <table className="w-full text-left">
-          <thead>
-            <tr className="border-b border-border bg-muted">
-              <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                Table
-              </th>
-              <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground text-right">
-                Rows
-              </th>
-              <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground text-center">
-                RLS
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {tables.map((t) => (
-              <tr
-                key={t.table_name}
-                className="border-b border-border last:border-0 hover:bg-muted/50 transition-colors"
-              >
-                <td className="px-4 py-2 text-xs font-mono text-foreground">
-                  {t.table_name}
-                </td>
-                <td className="px-4 py-2 text-xs font-mono text-muted-foreground text-right">
-                  {t.row_count.toLocaleString()}
-                </td>
-                <td className="px-4 py-2 text-center">
-                  <span
-                    className={`inline-flex h-2 w-2 rounded-full ${
-                      t.rls_enabled ? 'bg-emerald-500' : 'bg-red-500'
-                    }`}
-                    title={t.rls_enabled ? 'RLS enabled' : 'RLS disabled'}
-                  />
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+  const columns: Column<DatabaseTableRow>[] = [
+    {
+      key: 'table_name',
+      header: 'Table',
+      type: 'text',
+      sortable: true,
+      className: 'font-mono text-foreground',
+    },
+    {
+      key: 'row_count',
+      header: 'Rows',
+      type: 'number',
+      sortable: true,
+    },
+    {
+      key: 'rls_status',
+      header: 'RLS',
+      type: 'text',
+      sortable: true,
+    },
+  ]
+
+  return (
+    <div className="max-w-4xl space-y-6">
+      <SectionHeader
+        eyebrow="Engineering"
+        title="Database Browser"
+        subtitle="Read-only view of database tables, row counts, and row-level security coverage."
+        level="page"
+        className="max-w-xl"
+      />
+
+      {rows.length === 0 ? (
+        <EmptyState
+          icon={<Database className="h-5 w-5" />}
+          title="No tables are available to inspect."
+          description="The developer RPC did not return any table metadata for this environment."
+        />
+      ) : (
+        <DataTable
+          columns={columns}
+          data={rows}
+          keyField="table_name"
+          searchable
+          searchPlaceholder="Search tables"
+          searchFields={['table_name', 'rls_status']}
+          defaultSort={{ key: 'row_count', direction: 'desc' }}
+        />
+      )}
     </div>
   )
 }

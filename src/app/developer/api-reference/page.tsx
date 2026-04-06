@@ -1,4 +1,5 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { SectionHeader } from '@/components/shared/section-header'
 import { EndpointCard } from '../_components/EndpointCard'
 
 export const metadata = {
@@ -549,19 +550,13 @@ const actionGroups: ActionGroup[] = [
 export default function ApiReferencePage() {
   return (
     <div className="max-w-5xl space-y-6">
-      {/* Header */}
-      <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
-          Documentation
-        </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          API Reference
-        </h1>
-        <p className="text-[13px] text-muted-foreground leading-relaxed max-w-xl mt-1">
-          Route handlers, server actions, and webhook contracts for the SlateCamp platform.
-          Expand any endpoint to view request schemas, response shapes, and curl examples.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Documentation"
+        title="API Reference"
+        subtitle="Route handlers, server actions, and webhook contracts for the SlateCamp platform. Expand any endpoint to view request schemas, response shapes, and curl examples."
+        level="page"
+        className="max-w-xl"
+      />
 
       {/* Tabs */}
       <Tabs defaultValue="routes">

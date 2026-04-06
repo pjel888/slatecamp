@@ -1,22 +1,9 @@
 import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
 import { StatusBadge } from '@/components/developer/StatusBadge'
 import { Card } from '@/components/ui/card'
+import { SectionHeader } from '@/components/shared/section-header'
+import { formatRelativeTime } from '@/lib/utils/format-time'
 import { getDatabaseStatus } from '@/lib/mocks/status'
-
-/* ------------------------------------------------------------------ */
-/*  Helpers                                                            */
-/* ------------------------------------------------------------------ */
-
-const timeAgo = (timestamp: string): string => {
-  const seconds = Math.floor((Date.now() - new Date(timestamp).getTime()) / 1000)
-  if (seconds < 60) return `${seconds}s ago`
-  const minutes = Math.floor(seconds / 60)
-  if (minutes < 60) return `${minutes}m ago`
-  const hours = Math.floor(minutes / 60)
-  if (hours < 24) return `${hours}h ago`
-  const days = Math.floor(hours / 24)
-  return `${days}d ago`
-}
 
 const migrationStatusMap = {
   applied: 'operational',
@@ -40,15 +27,13 @@ const DatabaseStatusPage = async () => {
     <div className="max-w-5xl space-y-8">
       <Breadcrumbs />
 
-      {/* Header */}
-      <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
-          Database
-        </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          Database Status
-        </h1>
-      </div>
+      <SectionHeader
+        eyebrow="Database"
+        title="Database Status"
+        subtitle="Connection pool usage, table growth, and migration health for the shared datastore."
+        level="page"
+        className="max-w-xl"
+      />
 
       {/* Connection Pool */}
       <div>
@@ -148,7 +133,7 @@ const DatabaseStatusPage = async () => {
                   {migration.name}
                 </span>
                 <span className="text-[11px] text-muted-foreground">
-                  {timeAgo(migration.timestamp)}
+                  {formatRelativeTime(migration.timestamp)}
                 </span>
               </div>
               <StatusBadge

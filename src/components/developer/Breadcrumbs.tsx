@@ -1,12 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { DOMAIN_LABELS } from '@/lib/developer/componentRegistry'
 
-/* ------------------------------------------------------------------ */
-/*  Segment → human-readable label mapping                             */
-/* ------------------------------------------------------------------ */
+import { Breadcrumb } from '@/components/shared/breadcrumb'
 
 const SEGMENT_LABELS: Record<string, string> = {
   developer: 'Developer Portal',
@@ -20,55 +16,39 @@ const SEGMENT_LABELS: Record<string, string> = {
   status: 'Status',
   database: 'Database',
   infrastructure: 'Infrastructure',
+  architecture: 'Architecture',
+  'api-reference': 'API Reference',
+  tools: 'Dev Tools',
+  console: 'Console',
+  logs: 'Audit Logs',
+  'test-data': 'Test Data',
 }
 
-/** Convert a kebab-case slug to PascalCase (e.g. "wiki-card" → "WikiCard") */
 const toPascalCase = (slug: string) =>
   slug
     .split('-')
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join('')
 
-const labelFor = (segment: string): string =>
-  SEGMENT_LABELS[segment] ?? toPascalCase(segment)
-
-/* ------------------------------------------------------------------ */
-/*  Breadcrumbs                                                        */
-/* ------------------------------------------------------------------ */
+const labelFor = (segment: string) => SEGMENT_LABELS[segment] ?? toPascalCase(segment)
 
 export const Breadcrumbs = () => {
   const pathname = usePathname()
   const segments = pathname.split('/').filter(Boolean)
 
-  if (segments.length <= 1) return null
+  if (segments.length <= 1) {
+    return null
+  }
 
-  const crumbs = segments.map((seg, i) => ({
-    label: labelFor(seg),
-    href: '/' + segments.slice(0, i + 1).join('/'),
-    isLast: i === segments.length - 1,
+  const crumbs = segments.map((segment, index) => ({
+    label: labelFor(segment),
+    href:
+      index === segments.length - 1
+        ? undefined
+        : `/${segments.slice(0, index + 1).join('/')}`,
   }))
 
   return (
-    <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 flex-wrap mb-3">
-      {crumbs.map((crumb, i) => (
-        <span key={crumb.href} className="flex items-center gap-1.5">
-          {i > 0 && (
-            <span className="text-[11px] text-border select-none">/</span>
-          )}
-          {crumb.isLast ? (
-            <span className="text-[11px] font-medium text-foreground">
-              {crumb.label}
-            </span>
-          ) : (
-            <Link
-              href={crumb.href}
-              className="text-[11px] text-muted-foreground hover:text-foreground transition-colors duration-150"
-            >
-              {crumb.label}
-            </Link>
-          )}
-        </span>
-      ))}
-    </nav>
+    <Breadcrumb items={crumbs} separator="slash" className="mb-3 text-[11px]" />
   )
 }

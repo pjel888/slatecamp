@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Cube, CaretRight, Info, Eye, EyeSlash } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
-import { DASHBOARD_VISIBLE_IDS } from '@/app/dashboard/3d-lab/_config/dashboard-visibility'
+import { DASHBOARD_VISIBLE_IDS } from '@/features/3d-lab/config/dashboard-visibility'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */

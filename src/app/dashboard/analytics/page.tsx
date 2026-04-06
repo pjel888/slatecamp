@@ -26,6 +26,8 @@ import { ProgressCardSection } from '@/components/analytics/ProgressCardSection'
 import { SimulationTrajectorySection } from '@/components/analytics/SimulationTrajectorySection'
 import { ExamOutcomeSection } from '@/components/analytics/ExamOutcomeSection'
 
+export const dynamic = 'force-dynamic'
+
 export default function AnalyticsPage() {
   return (
     <div className="flex flex-col gap-2">

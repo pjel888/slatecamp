@@ -3,7 +3,7 @@ import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
 import { StatusBanner } from '@/components/developer/StatusBanner'
 import { StatusKPICard } from '@/components/developer/StatusKPICard'
 import { UptimeBar } from '@/components/developer/UptimeBar'
-import { StatusBadge } from '@/components/developer/StatusBadge'
+import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
 import type { ServiceStatus } from '@/types/developer'
 import { createClient } from '@/lib/supabase/server'
@@ -81,18 +81,13 @@ const StatusOverviewPage = async () => {
     <div className="max-w-5xl space-y-8">
       <Breadcrumbs />
 
-      {/* Header */}
-      <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
-          System Health
-        </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          Status Dashboard
-        </h1>
-        <p className="text-[13px] text-muted-foreground leading-relaxed max-w-xl mt-1">
-          Real-time health metrics for the SlateCamp infrastructure.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="System Health"
+        title="Status Dashboard"
+        subtitle="Real-time health metrics for the SlateCamp infrastructure."
+        level="page"
+        className="max-w-xl"
+      />
 
       {/* Banner */}
       <StatusBanner statuses={bannerStatuses} />

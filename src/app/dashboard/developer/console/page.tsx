@@ -1,33 +1,6 @@
-import { createClient, getUser } from '@/lib/supabase/server'
-import { ConsoleClient } from './console-client'
+import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/constants/routes'
 
 export default async function DeveloperConsolePage() {
-  const supabase = await createClient()
-
-  // Fetch user and feature flags in parallel — flags don't depend on user.id
-  const [{ data: { user } }, { data: dbFlagRows }] = await Promise.all([
-    getUser(),
-    supabase
-      .from('feature_flags')
-      .select('key, enabled'),
-  ])
-
-  const dbFlags: Record<string, boolean> = {}
-  for (const row of dbFlagRows ?? []) {
-    dbFlags[row.key] = row.enabled
-  }
-
-  return (
-    <ConsoleClient
-      systemInfo={{
-        env: process.env.NODE_ENV ?? 'development',
-        nextVersion: '15',
-        userId: user?.id ?? '',
-        userEmail: user?.email ?? '',
-        userRole: user?.app_metadata?.role ?? 'user',
-        connectionState: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'connected' : 'local',
-      }}
-      dbFlags={dbFlags}
-    />
-  )
+  redirect(ROUTES.DEVELOPER_CONSOLE)
 }

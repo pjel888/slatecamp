@@ -1,29 +1,34 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { CampfireLoader } from './CampfireLoader'
 
 const meta = {
   title: 'Shared/CampfireLoader',
+  component: CampfireLoader,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/shared/CampfireLoader',
       },
     },
   },
-} satisfies Meta
+} satisfies Meta<typeof CampfireLoader>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Overview: Story = {
-  render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">CampfireLoader</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/shared/CampfireLoader</code>.
-      </p>
-    </div>
-  ),
+export const StaticMessage: Story = {
+  args: {
+    staticMessage: 'Preparing the article workspace...',
+    className: 'min-h-[220px] w-[360px]',
+  },
+}
+
+export const RotatingMessages: Story = {
+  args: {
+    className: 'min-h-[220px] w-[360px]',
+    interval: 1200,
+  },
 }

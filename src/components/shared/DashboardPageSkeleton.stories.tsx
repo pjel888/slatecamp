@@ -1,29 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { DashboardPageSkeleton } from './DashboardPageSkeleton'
 
 const meta = {
   title: 'Shared/DashboardPageSkeleton',
+  component: DashboardPageSkeleton,
   tags: ['autodocs'],
   parameters: {
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/shared/DashboardPageSkeleton',
       },
     },
   },
-} satisfies Meta
+} satisfies Meta<typeof DashboardPageSkeleton>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Overview: Story = {
-  render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">DashboardPageSkeleton</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/shared/DashboardPageSkeleton</code>.
-      </p>
-    </div>
-  ),
-}
+export const Overview: Story = {}

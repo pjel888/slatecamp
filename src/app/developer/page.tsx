@@ -1,9 +1,11 @@
-import { Card } from '@/components/ui/card'
+import Link from 'next/link'
+import { ActionCard } from '@/components/shared/action-card'
+import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
-import Link from 'next/link'
 import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
+import { Card } from '@/components/ui/card'
 
 import { createClient } from '@/lib/supabase/server'
 
@@ -89,10 +91,10 @@ const DeveloperPortalPage = async () => {
     { count: questionsCount },
     { count: sessionsCount },
   ] = await Promise.all([
-    supabase.from('profiles').select('*', { count: 'exact', head: true }),
-    supabase.from('wiki_articles').select('*', { count: 'exact', head: true }),
-    supabase.from('questions').select('*', { count: 'exact', head: true }),
-    supabase.from('quiz_sessions').select('*', { count: 'exact', head: true }),
+    supabase.from('profiles').select('id', { count: 'exact', head: true }),
+    supabase.from('wiki_articles').select('id', { count: 'exact', head: true }),
+    supabase.from('questions').select('id', { count: 'exact', head: true }),
+    supabase.from('quiz_sessions').select('id', { count: 'exact', head: true }),
   ])
 
   const stats = [
@@ -106,36 +108,29 @@ const DeveloperPortalPage = async () => {
 
   return (
     <div className="max-w-5xl space-y-8">
-      {/* Hero */}
-      <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
-          Internal Docs & Tools
-        </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          Developer Portal
-        </h1>
-        <p className="text-[13px] text-muted-foreground leading-relaxed max-w-xl mt-1">
-          Documentation, API reference, architecture guides, and engineering tools for the SlateCamp platform.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Internal Docs & Tools"
+        title="Developer Portal"
+        subtitle="Documentation, API reference, architecture guides, and engineering tools for the SlateCamp platform."
+        level="page"
+        className="max-w-xl"
+      />
 
       {/* Section Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {sectionCards.map((card) => (
-          <Link key={card.href} href={card.href}>
-            <Card variant="interactive" size="sm" className="h-full">
-              <div className="flex items-center justify-between mb-1.5">
-                <div className="flex items-center gap-2">
-                  <card.icon className="w-4 h-4 text-primary" />
-                  <span className="text-[13px] font-semibold text-foreground">{card.title}</span>
-                </div>
-                <Badge variant={card.badgeVariant} size="xs" shape="pill">
-                  {card.badge}
-                </Badge>
-              </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">{card.description}</p>
-            </Card>
-          </Link>
+          <ActionCard
+            key={card.href}
+            href={card.href}
+            title={card.title}
+            description={card.description}
+            icon={<card.icon className="h-4 w-4 text-primary" />}
+            badge={
+              <Badge variant={card.badgeVariant} size="xs" shape="pill">
+                {card.badge}
+              </Badge>
+            }
+          />
         ))}
       </div>
 

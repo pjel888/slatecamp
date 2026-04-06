@@ -4,141 +4,91 @@
 
 ## Overview
 
-Internal Developer Portal for the SlateCamp engineering team. Provides documentation, API reference, architecture guides, a live design system catalog, system status monitoring, and developer tools.
+The Developer Portal is the internal destination for operational docs, architecture guides, API reference material, status dashboards, and engineering tools.
 
-**Route:** `/developer`
-**Access:** Authenticated user OR `ALLOW_DEV_PORTAL_BYPASS` env var
-**Source:** `src/app/developer/AGENTS.md`
+- Route: `/developer`
+- Access: authenticated user or `ALLOW_DEV_PORTAL_BYPASS=true`
+- Source: `src/app/developer/AGENTS.md`
 
-## Page Count
+Reusable component documentation does not live here. The canonical reusable component docs surface is Storybook.
 
-21 pages across api-reference, architecture, components, design-system, status, and tools directories.
+## Live Route Surface
+
+The current `src/app/developer` tree contains `11` `page.tsx` routes across:
+
+- `/developer`
+- `/developer/api-reference`
+- `/developer/architecture`
+- `/developer/status`
+- `/developer/status/database`
+- `/developer/status/infrastructure`
+- `/developer/tools`
+- `/developer/tools/console`
+- `/developer/tools/db`
+- `/developer/tools/logs`
+- `/developer/tools/test-data`
+
+The `src/app/developer/components/` directory is only legacy empty route residue and should not be revived as a second component-library destination.
+
+## Portal Ownership
+
+- Storybook owns reusable component docs.
+- `/developer` owns operational docs, architecture guides, and API reference pages.
+- System status and developer tooling stay in `/developer`.
 
 ## Portal Shell
 
-Uses `DevPortalShell` which wraps `PortalLayout` with developer-specific branding:
-- Environment badge (development / staging / production)
-- Navigation from `@/config/portals`
-- Monospace styling for data values
+`src/app/developer/layout.tsx` wraps the route tree in `DevPortalShell`, which in turn uses the shared `PortalLayout` pattern with developer-specific branding and navigation.
 
-**Source:** `src/app/developer/layout.tsx`, `src/components/portal/`, `src/config/portals.ts`
+## Home Page
 
-## Access Control
+`src/app/developer/page.tsx` is the landing page for:
 
-```typescript
-// src/app/developer/layout.tsx
-// Authentication check or ALLOW_DEV_PORTAL_BYPASS env var
-// Environment detection: development / staging / production
-```
+- API reference access
+- system status entry points
+- developer tool entry points
+- platform metrics
+- recent changelog visibility
 
-**Source:** `src/app/developer/layout.tsx`
+It now reuses shared primitives such as `SectionHeader`, `ActionCard`, `StatCard`, `Badge`, and `Card`.
 
-## Portal Home (`/developer`)
+## Status Surface
 
-Landing page with:
-- Section cards: Design System, System Status, Dev Tools
-- System health status dots
-- Platform metrics: 50 tables, 11 API routes, 247 components, 89 RLS policies
-- Tech stack table
-- Recent changelog
+`/developer/status` and its child routes provide operational visibility for:
 
-**Source:** `src/app/developer/page.tsx`
+- database health
+- infrastructure health
+- top-level status summaries
 
-## Design System Catalog
+The database and infrastructure routes now reuse shared `DataTable` and `EmptyState` primitives rather than duplicated developer-only wrappers.
 
-Live component previews organized by domain:
+## Tools Surface
 
-| Category | Route | Components |
-|----------|-------|------------|
-| content-blocks | `/developer/design-system/content-blocks/[component]` | Article layouts, callouts, tables |
-| questions | `/developer/design-system/questions/[component]` | Quiz question components |
-| shared | `/developer/design-system/shared/[component]` | Buttons, inputs, cards |
-| testing-path | `/developer/design-system/testing-path/[component]` | Mode selection, session UI |
-| widgets | `/developer/design-system/widgets/[component]` | Special widgets |
-| wiki | `/developer/design-system/wiki/[component]` | Wiki-specific components |
+`/developer/tools` and its child routes provide engineering workflows for:
 
-Preview data from `_previews.tsx` or `_widget-previews.tsx` files in each category directory.
+- console access
+- database inspection
+- logs
+- test data generation
 
-**Source:** `src/app/developer/design-system/`, `src/app/developer/_components/`
+## Supporting Modules
 
-## Component Registry
+Key internal dependencies for the portal include:
 
-`@/lib/developer/componentRegistry` exports `getAllComponents()` for catalog data:
-- Component count
-- Metadata per component
-- Preview configurations
+- `@/components/portal`
+- `@/components/shared/action-card`
+- `@/components/shared/data-table`
+- `@/components/shared/empty-state`
+- `@/components/shared/section-header`
+- `@/lib/constants/routes`
+- `@/lib/developer/changelog`
 
-**Source:** `src/lib/developer/componentRegistry.ts`
+## Governance Notes
 
-## Changelog
-
-`@/lib/developer/changelog` exports `CHANGELOG` array for recent changes display.
-
-**Source:** `src/lib/developer/changelog.ts`
-
-## API Reference
-
-`/developer/api-reference/` — Documents all API endpoints with:
-- Request/response schemas
-- Authentication requirements
-- Example payloads
-
-**Source:** `src/app/developer/api-reference/`
-
-## Architecture Docs
-
-`/developer/architecture/` — System diagrams, data flow, component relationships.
-
-**Source:** `src/app/developer/architecture/`
-
-## System Status
-
-| Route | Purpose |
-|-------|---------|
-| `/developer/status` | Overview with health indicators |
-| `/developer/status/database` | Database health and metrics |
-| `/developer/status/infrastructure` | Infrastructure monitoring |
-
-**Source:** `src/app/developer/status/`
-
-## Dev Tools
-
-| Route | Tool |
-|-------|------|
-| `/developer/tools` | Hub page |
-| `/developer/tools/console` | Interactive console (client-side execution) |
-| `/developer/tools/db` | Database inspection |
-| `/developer/tools/logs` | Log viewer |
-| `/developer/tools/test-data` | Test data generation |
-
-**Source:** `src/app/developer/tools/`
-
-## Large Files
-
-| File | Size | Purpose |
-|------|------|---------|
-| `ComponentShowcase.tsx` | 84K | Full component library preview |
-| `components/page.tsx` | 49K | Component documentation page |
-
-These are intentionally large as they document the entire component library.
-
-**Source:** `src/app/developer/_components/ComponentShowcase.tsx`
-
-## Shared Components
-
-| Component | Purpose |
-|-----------|---------|
-| `CopyButton` | Copy-to-clipboard button |
-| `DevBadge` | Environment/version badge |
-| `DevPortalSearch` | Search across docs |
-| `DevPortalShell` | Portal layout wrapper |
-| `DevPortalSidebar` | Navigation sidebar |
-| `EndpointCard` | API endpoint display |
-| `PropTable` | Component props documentation |
-| `TableOfContents` | Page navigation |
-
-**Source:** `src/app/developer/_components/` (10 files)
+- Do not add new reusable component docs under `/developer`.
+- If a change is about component API documentation, add or update Storybook instead.
+- If a change is about architecture, operations, status, or API contracts, keep it under `/developer`.
 
 ---
 
-*Developer portal: 2026-04-06*
+*Developer portal ownership reference: 2026-04-06*

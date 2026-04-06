@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import { SCIcon } from "@/components/graphics/icons/Icon";
-import { LabBrowser } from "./_components/Library/LabBrowser";
-import { ModuleViewer } from "./_components/ModuleViewer";
+import { LabBrowser, ModuleViewer } from "@/features/3d-lab/components";
 
 export const metadata = { title: "3D Lab" };
 

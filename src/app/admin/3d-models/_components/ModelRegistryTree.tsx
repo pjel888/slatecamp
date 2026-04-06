@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import { CaretRight, Cube, Eye } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import type { RegistryTree, ModelNode } from '../_lib/model-registry-data'
-import { DASHBOARD_VISIBLE_IDS } from '@/app/dashboard/3d-lab/_config/dashboard-visibility'
+import { DASHBOARD_VISIBLE_IDS } from '@/features/3d-lab/config/dashboard-visibility'
 
 /* ------------------------------------------------------------------ */
 /*  Template type badge colors                                         */

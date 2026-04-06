@@ -1,29 +1,44 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { NoteContextProvider } from '@/lib/context/note-context'
+import { DashboardHeader } from './DashboardHeader'
 
 const meta = {
   title: 'Shared/DashboardHeader',
+  component: DashboardHeader,
   tags: ['autodocs'],
+  decorators: [
+    (Story) => (
+      <NoteContextProvider>
+        <Story />
+      </NoteContextProvider>
+    ),
+  ],
   parameters: {
-    layout: 'centered',
+    layout: 'fullscreen',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/shared/DashboardHeader',
       },
     },
   },
-} satisfies Meta
+} satisfies Meta<typeof DashboardHeader>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Overview: Story = {
-  render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">DashboardHeader</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/shared/DashboardHeader</code>.
-      </p>
-    </div>
-  ),
+export const WikiRoute: Story = {
+  parameters: {
+    appShell: {
+      pathname: '/dashboard/wiki',
+    },
+  },
+}
+
+export const AnalyticsRoute: Story = {
+  parameters: {
+    appShell: {
+      pathname: '/dashboard/analytics',
+    },
+  },
 }

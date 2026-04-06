@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { SectionHeader } from '@/components/shared/section-header'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/shared/CodeBlock'
 
@@ -218,16 +219,13 @@ const TableHeader = ({ cols }: { cols: string[] }) => (
 export default function ArchitecturePage() {
   return (
     <div className="max-w-5xl space-y-6">
-      {/* Header */}
-      <div>
-        <SectionLabel>Documentation</SectionLabel>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          Architecture Overview
-        </h1>
-        <p className="text-sm text-muted-foreground mt-1">
-          Tech stack, database schema, authentication model, data flow, and deployment configuration.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Documentation"
+        title="Architecture Overview"
+        subtitle="Tech stack, database schema, authentication model, data flow, and deployment configuration."
+        level="page"
+        className="max-w-xl"
+      />
 
       {/* Tabs */}
       <Tabs defaultValue="tech-stack">

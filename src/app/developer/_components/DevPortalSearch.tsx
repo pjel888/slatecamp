@@ -8,7 +8,6 @@ const STATIC_PAGES: { title: string; href: string; group: string; keywords: stri
   { title: 'Overview', href: '/developer', group: 'Portal', keywords: 'home portal dashboard' },
   { title: 'API Reference', href: '/developer/api-reference', group: 'Portal', keywords: 'endpoints routes actions webhooks' },
   { title: 'Architecture', href: '/developer/architecture', group: 'Portal', keywords: 'schema database auth deployment' },
-  { title: 'Component Library', href: '/developer/components', group: 'Portal', keywords: 'ui primitives mdx widgets' },
   { title: 'Status Overview', href: '/developer/status', group: 'Status', keywords: 'health uptime services operational' },
   { title: 'Database Status', href: '/developer/status/database', group: 'Status', keywords: 'postgres connections migrations rls' },
   { title: 'Infrastructure Status', href: '/developer/status/infrastructure', group: 'Status', keywords: 'latency edge deployment api' },

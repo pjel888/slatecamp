@@ -1,3 +1,8 @@
+import { Scroll } from '@phosphor-icons/react/dist/ssr'
+
+import { DataTable, type Column } from '@/components/shared/data-table'
+import { EmptyState } from '@/components/shared/empty-state'
+import { SectionHeader } from '@/components/shared/section-header'
 import { createClient } from '@/lib/supabase/server'
 
 interface AuditLog {
@@ -8,10 +13,14 @@ interface AuditLog {
   created_at: string
 }
 
+interface AuditLogRow extends Record<string, unknown>, AuditLog {
+  user_label: string
+  details_summary: string
+}
+
 export default async function LogsPage() {
   const supabase = await createClient()
 
-  // Attempt to read audit_logs — table may not exist yet
   const { data: logs, error } = await supabase
     .from('audit_logs')
     .select('id, user_id, action, details, created_at')
@@ -19,68 +28,74 @@ export default async function LogsPage() {
     .limit(50)
 
   const entries = (error ? [] : (logs as AuditLog[])) ?? []
+  const rows: AuditLogRow[] = entries.map((log) => ({
+    ...log,
+    user_label: `${log.user_id.slice(0, 8)}...`,
+    details_summary: log.details ? JSON.stringify(log.details) : '-',
+  }))
+
+  const columns: Column<AuditLogRow>[] = [
+    {
+      key: 'created_at',
+      header: 'Time',
+      type: 'date',
+      sortable: true,
+      className: 'font-mono text-muted-foreground',
+    },
+    {
+      key: 'action',
+      header: 'Action',
+      type: 'text',
+      sortable: true,
+      className: 'font-medium text-foreground',
+    },
+    {
+      key: 'user_label',
+      header: 'User',
+      type: 'text',
+      className: 'font-mono text-muted-foreground',
+    },
+    {
+      key: 'details_summary',
+      header: 'Details',
+      type: 'text',
+      className: 'font-mono text-muted-foreground',
+    },
+  ]
 
   return (
-    <div className="space-y-6 max-w-4xl">
-      <div>
-        <h1 className="text-lg font-bold text-foreground">Audit Logs</h1>
-        <p className="text-sm text-muted-foreground mt-1">
-          Recent audit log entries from the system.
-        </p>
-      </div>
+    <div className="max-w-4xl space-y-6">
+      <SectionHeader
+        eyebrow="Engineering"
+        title="Audit Logs"
+        subtitle="Recent CREATE, UPDATE, and DELETE events emitted by internal platform tooling."
+        level="page"
+        className="max-w-xl"
+      />
 
-      {error && (
-        <div className="rounded-lg border border-amber-500/20 bg-amber-500/10 px-4 py-3 text-xs text-amber-600">
-          audit_logs table not available: {error.message}
-        </div>
-      )}
-
-      {entries.length === 0 && !error ? (
-        <div className="rounded-lg border border-border bg-muted px-4 py-8 text-center text-sm text-muted-foreground">
-          No audit log entries found.
-        </div>
+      {error ? (
+        <EmptyState
+          icon={<Scroll className="h-5 w-5" />}
+          title="Audit logs are unavailable in this environment."
+          description={`The audit_logs query failed: ${error.message}`}
+        />
+      ) : rows.length === 0 ? (
+        <EmptyState
+          icon={<Scroll className="h-5 w-5" />}
+          title="No audit log entries have been recorded yet."
+          description="Generate an admin mutation or background task event to populate this table."
+        />
       ) : (
-        <div className="overflow-hidden rounded-lg border border-border">
-          <table className="w-full text-left">
-            <thead>
-              <tr className="border-b border-border bg-muted">
-                <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                  Time
-                </th>
-                <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                  Action
-                </th>
-                <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                  User
-                </th>
-                <th className="px-4 py-2.5 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                  Details
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {entries.map((log) => (
-                <tr
-                  key={log.id}
-                  className="border-b border-border last:border-0 hover:bg-muted/50 transition-colors"
-                >
-                  <td className="px-4 py-2 text-[11px] font-mono text-muted-foreground whitespace-nowrap">
-                    {new Date(log.created_at).toLocaleString()}
-                  </td>
-                  <td className="px-4 py-2 text-xs font-medium text-foreground">
-                    {log.action}
-                  </td>
-                  <td className="px-4 py-2 text-[11px] font-mono text-muted-foreground">
-                    {log.user_id.slice(0, 8)}...
-                  </td>
-                  <td className="px-4 py-2 text-[11px] font-mono text-muted-foreground max-w-[200px] truncate">
-                    {log.details ? JSON.stringify(log.details) : '—'}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <DataTable
+          columns={columns}
+          data={rows}
+          keyField="id"
+          searchable
+          searchPlaceholder="Search audit logs"
+          searchFields={['action', 'user_id', 'details_summary']}
+          defaultSort={{ key: 'created_at', direction: 'desc' }}
+          pageSize={10}
+        />
       )}
     </div>
   )

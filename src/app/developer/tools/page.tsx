@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import { Monitor, Database, FileText, Flask } from '@phosphor-icons/react/dist/ssr'
-import { Card } from '@/components/ui/card'
+import { ActionCard } from '@/components/shared/action-card'
+import { SectionHeader } from '@/components/shared/section-header'
 import { ROUTES } from '@/lib/constants/routes'
 
 export const metadata = {
@@ -38,29 +38,23 @@ const tools = [
 export default function DevToolsPage() {
   return (
     <div className="max-w-4xl space-y-6">
-      <div>
-        <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-0.5">
-          Engineering
-        </p>
-        <h1 className="font-[family-name:var(--font-display)] font-extrabold text-xl text-foreground">
-          Dev Tools
-        </h1>
-        <p className="text-[13px] text-muted-foreground leading-relaxed max-w-xl mt-1">
-          Internal tools for debugging, testing, and inspecting the SlateCamp platform.
-        </p>
-      </div>
+      <SectionHeader
+        eyebrow="Engineering"
+        title="Dev Tools"
+        subtitle="Internal tools for debugging, testing, and inspecting the SlateCamp platform."
+        level="page"
+        className="max-w-xl"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {tools.map((tool) => (
-          <Link key={tool.href} href={tool.href}>
-            <Card variant="interactive" size="sm" className="h-full">
-              <div className="flex items-center gap-2 mb-1.5">
-                <tool.icon className="w-4 h-4 text-primary" />
-                <span className="text-[13px] font-semibold text-foreground">{tool.title}</span>
-              </div>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">{tool.description}</p>
-            </Card>
-          </Link>
+          <ActionCard
+            key={tool.href}
+            href={tool.href}
+            title={tool.title}
+            description={tool.description}
+            icon={<tool.icon className="h-4 w-4 text-primary" />}
+          />
         ))}
       </div>
     </div>

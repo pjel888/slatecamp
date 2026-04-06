@@ -1,5 +1,5 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-03-24 | Updated: 2026-04-06 -->
 
 # shared
 
@@ -32,7 +32,6 @@ Cross-cutting reusable components used throughout the app: theme provider, navig
 | `taxonomy-tree.tsx` | Taxonomy tree rendering component. `'use client'` |
 | `legal-citation-badge.tsx` | Citation badge linking to legal/code references. `'use client'` |
 | `breadcrumb.tsx` | Breadcrumb navigation component. |
-| `page-header.tsx` | Alternative page header component. |
 | `sidebar-nav.tsx` | Sidebar navigation for settings/sub-pages. `'use client'` |
 | `content-sidebar.tsx` | Content area sidebar for secondary navigation. `'use client'` |
 | `action-card.tsx` | Action card with title, description, and CTA button. |
@@ -62,7 +61,7 @@ None. All shared components are flat in `src/components/shared/`.
 
 4. **DataTable reuse.** The `data-table.tsx` component is a generic table used by CEO TeamTable, admin audit logs, and other tabular views. Define columns via `Column<T>[]` interface. Supports sorting, search, pagination, and row selection.
 
-5. **SectionHeader levels.** Use `level="page"` for top-level page headers, `level="section"` for content sections, `level="card"` for card-internal headers. Each level has appropriate typography sizing.
+5. **SectionHeader levels.** Use `level="page"` for top-level page headers, `level="section"` for content sections, `level="card"` for card-internal headers. Each level has appropriate typography sizing. Do not reintroduce a parallel shared page-header primitive.
 
 6. **Score display.** `score-display.tsx` exports `getScoreColorHex()` which is the canonical source for readiness score color thresholds. It is re-exported by `@/components/graphics/tokens.ts` for graphic contexts.
 

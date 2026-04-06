@@ -1,29 +1,59 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { ArrowRight, FloppyDisk, Trash } from '@phosphor-icons/react/dist/ssr'
+import { Button } from './button'
 
 const meta = {
-  title: 'UI/button',
+  title: 'UI/Button',
+  component: Button,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/ui/button',
       },
     },
   },
-} satisfies Meta
+  args: {
+    children: 'Save changes',
+    variant: 'default',
+    size: 'default',
+  },
+} satisfies Meta<typeof Button>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Overview: Story = {
+export const Primary: Story = {}
+
+export const WithIcons: Story = {
+  args: {
+    children: 'Save article',
+    leftIcon: <FloppyDisk />,
+    rightIcon: <ArrowRight />,
+  },
+}
+
+export const Loading: Story = {
+  args: {
+    children: 'Publishing',
+    loading: true,
+  },
+}
+
+export const Variants: Story = {
   render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">button</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/ui/button</code>.
-      </p>
+    <div className="flex flex-wrap gap-3">
+      <Button>Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="ghost">Ghost</Button>
+      <Button variant="subtle">Subtle</Button>
+      <Button variant="success">Success</Button>
+      <Button variant="destructive" leftIcon={<Trash />}>
+        Delete
+      </Button>
+      <Button variant="link">View reference</Button>
     </div>
   ),
 }

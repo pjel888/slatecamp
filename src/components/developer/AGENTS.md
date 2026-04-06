@@ -1,44 +1,35 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 -->
+<!-- Generated: 2026-03-25 | Updated: 2026-04-06 -->
 
 # developer
 
 ## Purpose
 
-UI components for the SlateCamp Developer Portal -- an internal documentation and design system reference hub. Provides component page layouts (preview + props table + code), system status monitoring, breadcrumb navigation, and KPI displays. Uses the PortalLayout shell from `@/components/portal`.
+UI components for the SlateCamp Developer Portal. This folder now holds only the live status and breadcrumb primitives that still power `/developer/status*` and related developer pages.
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
-| `ComponentPageLayout.tsx` | Main layout for individual component documentation pages. Three-tab interface: Preview, Props (table), Code (snippet). Shows title, description, domain badge, status badge, import path, file path. `'use client'` |
-| `PreviewArea.tsx` | Sandboxed preview container for rendering component demos with consistent padding and background. |
-| `DocSection.tsx` | Reusable documentation section with title and content area. Used for grouping related docs. |
-| `Breadcrumbs.tsx` | Breadcrumb navigation trail for developer portal pages. |
-| `StatusBanner.tsx` | Full-width system health banner. Computes worst-case status from array of service statuses (operational/degraded/outage). Color-coded: green/amber/red. Server component. |
-| `StatusBadge.tsx` | Individual service status indicator badge with color and icon. |
-| `StatusKPICard.tsx` | Key performance indicator card for system metrics (uptime, response time, error rate). |
-| `UptimeBar.tsx` | Visual uptime history bar showing operational periods vs. incidents over time. |
+| `Breadcrumbs.tsx` | Breadcrumb navigation trail for developer portal pages |
+| `StatusBanner.tsx` | Full-width system health banner that computes worst-case status from service states |
+| `StatusBadge.tsx` | Individual service status indicator badge with color and icon |
+| `StatusKPICard.tsx` | Key performance indicator card for system metrics |
+| `UptimeBar.tsx` | Visual uptime history bar showing operational periods vs. incidents over time |
 
 ## Subdirectories
 
-None. All developer components are flat in `src/components/developer/`.
+None. All live developer components are flat in `src/components/developer/`.
 
 ## For AI Agents
 
 ### Working In This Directory
 
-1. **Developer types from `@/types/developer`.** Types like `PropsTableEntry`, `ServiceStatus` are defined in `@/types/developer`. Do NOT duplicate.
-
-2. **Component registry.** ComponentPageLayout works with the component registry from `@/lib/developer/componentRegistry` for metadata (domain labels, component listings, status).
-
-3. **Portal shell.** The developer portal uses `PortalLayout` from `@/components/portal` in its layout.tsx. These components render inside that shell.
-
-4. **Shared documentation primitives.** ComponentPageLayout imports CopyButton from `@/components/portal`, CodeBlock from `@/components/shared/CodeBlock`, and PropTable from `@/components/developer/PropTable`. Check these paths before modifying.
-
-5. **Status computation.** StatusBanner uses a `computeWorstStatus()` function to derive overall system health from individual service statuses. The priority order is: outage > degraded > operational.
-
-6. **Lucide icons.** Developer portal components use Lucide icons (Check, AlertTriangle, X) rather than Phosphor.
+1. **Developer types from `@/types/developer`.** Types like `ServiceStatus` live there. Do not duplicate them locally.
+2. **Portal shell.** These components render inside the Developer Portal’s `PortalLayout`.
+3. **Breadcrumb labels stay local.** `Breadcrumbs.tsx` owns its segment-to-label mapping, but it should render through the shared `@/components/shared/breadcrumb` primitive instead of maintaining parallel markup.
+4. **Status computation.** `StatusBanner` derives overall health using the priority order `outage > degraded > operational`.
+5. **Status icon family.** Keep the status primitives consistent with their current icon set instead of mixing in a second icon language ad hoc.
 
 ## Dependencies
 
@@ -46,19 +37,15 @@ None. All developer components are flat in `src/components/developer/`.
 
 | Module | Purpose |
 |--------|---------|
-| `@/types/developer` | PropsTableEntry, ServiceStatus types |
-| `@/lib/developer/componentRegistry` | Component metadata and domain labels |
-| `@/components/portal` | CopyButton for import-path actions |
-| `@/components/shared/CodeBlock` | Shared code snippet renderer |
-| `@/components/developer/PropTable` | Props table renderer |
-| `@/components/ui/badge` | Badge for status and domain indicators |
-| `@/lib/utils` | cn() for class merging |
+| `@/types/developer` | Developer status types |
+| `@/components/ui/badge` | Badge for status display |
+| `@/lib/utils` | `cn()` for class merging |
 
 ### External
 
 | Package | Usage | Version |
 |---------|-------|---------|
-| **react** | Hooks: useState | ^19.2.4 |
-| **lucide-react** | Icons: Check, AlertTriangle, X | ^0.577.0 |
+| **react** | Hooks where needed | ^19.2.4 |
+| **lucide-react** | Status icons | ^0.577.0 |
 
 <!-- MANUAL: -->

@@ -1,29 +1,50 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { Button } from '@/components/ui/button'
+import { SectionHeader } from './section-header'
 
 const meta = {
-  title: 'Shared/section-header',
+  title: 'Shared/SectionHeader',
+  component: SectionHeader,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/shared/section-header',
       },
     },
   },
-} satisfies Meta
+  args: {
+    title: 'Storybook overhaul',
+    subtitle: 'Replace stale scaffolds with real component documentation.',
+  },
+} satisfies Meta<typeof SectionHeader>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Overview: Story = {
-  render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">section-header</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/shared/section-header</code>.
-      </p>
-    </div>
-  ),
+export const PageLevel: Story = {
+  args: {
+    eyebrow: 'Developer portal',
+    level: 'page',
+    action: <Button size="sm">Open tracker</Button>,
+  },
+}
+
+export const SectionLevel: Story = {
+  args: {
+    eyebrow: 'Phase 3',
+    level: 'section',
+    action: <Button variant="secondary" size="sm">View stories</Button>,
+  },
+}
+
+export const CardLevel: Story = {
+  args: {
+    eyebrow: 'Queue',
+    title: 'Articles needing review',
+    subtitle: 'Sorted by freshness and source completeness.',
+    level: 'card',
+  },
 }

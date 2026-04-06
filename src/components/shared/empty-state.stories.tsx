@@ -1,29 +1,39 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+import { Button } from '@/components/ui/button'
+import { EmptyState } from './empty-state'
 
 const meta = {
-  title: 'Shared/empty-state',
+  title: 'Shared/EmptyState',
+  component: EmptyState,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: $importPath',
+        component: 'Source: @/components/shared/empty-state',
       },
     },
   },
-} satisfies Meta
+} satisfies Meta<typeof EmptyState>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
 export const Overview: Story = {
-  render: () => (
-    <div className="max-w-md rounded-md border border-border bg-card p-4 text-sm text-foreground shadow-sm">
-      <p className="font-semibold">empty-state</p>
-      <p className="mt-1 text-muted-foreground">
-        Story scaffold for <code>@/components/shared/empty-state</code>.
-      </p>
-    </div>
-  ),
+  args: {
+    icon: <MagnifyingGlass size={20} />,
+    title: 'No wiki results yet',
+    description: 'Try a shorter query or widen the subject scope before creating a new article.',
+  },
+}
+
+export const WithAction: Story = {
+  args: {
+    icon: <MagnifyingGlass size={20} />,
+    title: 'No matching citations',
+    description: 'This article still needs at least one published source before it can move to review.',
+    action: <Button size="sm">Add source</Button>,
+  },
 }

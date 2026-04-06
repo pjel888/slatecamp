@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { Stack, GridFour, Monitor, Database, FileText, Flask, SquaresFour, Code, Wrench } from '@phosphor-icons/react/dist/ssr'
+import { Stack, Monitor, Database, FileText, Flask, SquaresFour, Code, Wrench } from '@phosphor-icons/react/dist/ssr'
 import { SidebarNavGroup, SidebarNavItem } from '@/components/shared/sidebar-nav'
 
 const navSections = [
@@ -16,7 +16,6 @@ const navSections = [
     items: [
       { href: '/developer/api-reference', label: 'API Reference', icon: <Code className="w-4 h-4" /> },
       { href: '/developer/architecture', label: 'Architecture', icon: <Stack className="w-4 h-4" /> },
-      { href: '/developer/components', label: 'Component Library', icon: <GridFour className="w-4 h-4" /> },
     ],
   },
   {

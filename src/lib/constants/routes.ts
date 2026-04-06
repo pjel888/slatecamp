@@ -50,7 +50,6 @@ export const ROUTES = {
   DEVELOPER_DB: "/developer/tools/db",
   DEVELOPER_LOGS: "/developer/tools/logs",
   DEVELOPER_API_REFERENCE: "/developer/api-reference",
-  DEVELOPER_COMPONENTS: "/developer/components",
   DEVELOPER_TOOLS: "/developer/tools",
   CODE_UPDATES: "/dashboard/code-updates",
   PODS: "/dashboard/pods",

@@ -1,18 +1,17 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Generated: 2026-04-02 | Updated: 2026-04-06 -->
 
 # developer
 
 ## Purpose
 
-The `developer` directory contains utilities for the developer portal: changelog tracking and component registry indexing. Used to expose internal system state (deployed versions, component library status) to the admin/developer dashboard.
+The `developer` directory contains lightweight utilities for the developer portal. At the moment that primarily means changelog data used by the internal portal.
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
-| `changelog.ts` | Changelog parser and version tracker: reads deployment history, formats release notes |
-| `componentRegistry.ts` | Component registry indexer: lists all shadcn/ui and custom components, their props, usage examples |
+| `changelog.ts` | Changelog parser and version tracker: reads deployment history and formats release notes |
 
 ## For AI Agents
 
@@ -23,50 +22,31 @@ The `developer` directory contains utilities for the developer portal: changelog
 - Exports: `getChangelog()`, `getVersions()`, `getReleaseNotes(version)`.
 - Format: semantic versioning (major.minor.patch).
 - Categories: Features, Fixes, Breaking Changes, Deprecated.
-- Used in developer portal: "What's new" section, version history, rollback info.
+- Used in developer portal: recent changes, version history, rollback info.
 
-**Component Registry:**
-- Scans `src/components/` and `src/components/ui/` for component files.
-- Extracts: component name, prop types (from TypeScript), default props, docstrings.
-- Exports: `listComponents()`, `getComponentDocs(name)`, `getComponentUsage(name)`.
-- Used in developer portal: component browser, prop documentation, copy-paste examples.
+## Common Patterns
 
-### Common Patterns
-
-**Getting Changelog:**
+**Getting changelog data:**
 ```typescript
 import { getChangelog, getVersions } from '@/lib/developer'
 
-const versions = getVersions() // ['1.0.0', '0.9.2', '0.9.1', ...]
+const versions = getVersions()
 const latest = versions[0]
 const notes = getChangelog(latest)
-// { version, date, features: [], fixes: [], breaking: [] }
-```
-
-**Component Registry:**
-```typescript
-import { listComponents, getComponentDocs } from '@/lib/developer'
-
-const components = listComponents()
-// ['Button', 'Input', 'Modal', 'Tabs', ...]
-
-const buttonDocs = getComponentDocs('Button')
-// { name, description, props: { label: string, onClick: () => void }, examples: [...] }
 ```
 
 ## Dependencies
 
 ### Internal
 
-- **File system:** Read `CHANGELOG.md` or scan component directory.
-- **TypeScript:** Parse prop types from component files.
+- **File system:** Read `CHANGELOG.md` when regenerating release data.
 
 ### External
 
-- **None.** Pure utility functions for documentation extraction.
+- **None.** Pure utility functions for developer-facing metadata.
 
 ---
 
-**Last Updated:** 2026-04-02
+**Last Updated:** 2026-04-06
 
 **For questions about the developer portal, consult `.claude/agents/` in the repository root.**
