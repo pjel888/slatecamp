@@ -1,0 +1,144 @@
+import { describe, expect, test } from 'bun:test'
+
+import {
+  fetchQuestionsForClient,
+  toClientQuestion,
+  toDifficultyLabel,
+} from '@/lib/quiz/to-client-question'
+
+describe('toDifficultyLabel', () => {
+  test('maps difficulty bands consistently', () => {
+    expect(toDifficultyLabel(0.1)).toBe('Easy')
+    expect(toDifficultyLabel(0.4)).toBe('Medium')
+    expect(toDifficultyLabel(0.69)).toBe('Medium')
+    expect(toDifficultyLabel(0.7)).toBe('Hard')
+  })
+})
+
+describe('toClientQuestion', () => {
+  test('maps metadata and normalizes options for client payloads', () => {
+    const question = toClientQuestion(
+      {
+        question_id: 'q-1',
+        topic_id: 'topic-1',
+        text: 'What is the answer?',
+        options: {
+          a: 'Alpha',
+          b: 'Beta',
+          c: 'Gamma',
+        },
+        prompt_image_url: 'https://example.com/image.png',
+        difficulty: 0.65,
+        question_type: 'numeric',
+        metadata: {
+          unit: 'sqm',
+          hint: 'Think about the footprint.',
+          image_alt_text: 'A plan view of the site.',
+        },
+        breadcrumb: 'Area C > Site Planning',
+        is_interleaved: true,
+      },
+      7,
+    )
+
+    expect(question).toEqual({
+      question_id: 'q-1',
+      topic_id: 'topic-1',
+      difficulty: 0.65,
+      position: 7,
+      stem: 'What is the answer?',
+      image_url: 'https://example.com/image.png',
+      image_alt_text: 'A plan view of the site.',
+      taxonomy_breadcrumb: 'Area C > Site Planning',
+      difficulty_label: 'Medium',
+      is_interleaved: true,
+      question_type: 'numeric',
+      unit: 'sqm',
+      hint_text: 'Think about the footprint.',
+      options: [
+        { id: 'a', letter: 'A', text: 'Alpha' },
+        { id: 'b', letter: 'B', text: 'Beta' },
+        { id: 'c', letter: 'C', text: 'Gamma' },
+      ],
+    })
+  })
+})
+
+describe('fetchQuestionsForClient', () => {
+  test('preserves session order and computes positions from the requested offset', async () => {
+    const supabase = {
+      from: (table: string) => ({
+        select: () => ({
+          in: async (_column: string, values: string[]) => {
+            if (table === 'questions') {
+              const rows = [
+                {
+                  question_id: 'q-3',
+                  topic_id: 'topic-b',
+                  text: 'Third question',
+                  options: [{ id: 'b', letter: 'B', text: 'Option B' }],
+                  difficulty: 0.9,
+                  prompt_image_url: null,
+                  question_type: 'mcq',
+                  metadata: { hint_text: 'Check the code clause.' },
+                },
+                {
+                  question_id: 'q-2',
+                  topic_id: 'topic-a',
+                  text: 'Second question',
+                  options: [{ id: 'a', letter: 'A', text: 'Option A' }],
+                  difficulty: 0.2,
+                  prompt_image_url: null,
+                  question_type: 'mcq',
+                  metadata: { unit: 'mm' },
+                },
+              ]
+
+              return {
+                data: rows.filter((row) => values.includes(row.question_id)),
+                error: null,
+              }
+            }
+
+            if (table === 'taxonomy_tree') {
+              return {
+                data: [
+                  {
+                    node_id: 'topic-a',
+                    name: 'Accessibility',
+                    subject_area: 'Area B',
+                  },
+                  {
+                    node_id: 'topic-b',
+                    name: 'Fire Safety',
+                    subject_area: 'Area B',
+                  },
+                ].filter((row) => values.includes(row.node_id)),
+                error: null,
+              }
+            }
+
+            return {
+              data: [],
+              error: null,
+            }
+          },
+        }),
+      }),
+    }
+
+    const questions = await fetchQuestionsForClient({
+      supabase,
+      questionIds: ['q-2', 'q-3'],
+      offset: 4,
+    })
+
+    expect(questions).toHaveLength(2)
+    expect(questions.map((question) => question.question_id)).toEqual(['q-2', 'q-3'])
+    expect(questions.map((question) => question.position)).toEqual([5, 6])
+    expect(questions.map((question) => question.taxonomy_breadcrumb)).toEqual([
+      'Area B > Accessibility',
+      'Area B > Fire Safety',
+    ])
+  })
+})

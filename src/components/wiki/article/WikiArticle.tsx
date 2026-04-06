@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import { extractHeadings } from '@/lib/wiki-markdown'
+import { extractHeadings, sanitizeMDX } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { EIPrompt as EIPromptType, EIResponseMap } from '@/lib/actions/ei-prompts'
@@ -238,9 +238,10 @@ export const WikiArticle = async ({
     .replace(/<!--[\s\S]*?-->/g, '')
   
   const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const sanitizedContent = sanitizeMDX(processedContent)
 
   // Resolve dynamic widgets
-  const widgets = await resolveWidgets(processedContent)
+  const widgets = await resolveWidgets(sanitizedContent)
 
   const components = { ...WIKI_COMPONENTS, ...widgets }
   const scope = {
@@ -252,7 +253,7 @@ export const WikiArticle = async ({
   let mdxContent = null
   try {
     const { content: compiled } = await compileMDX({
-      source: processedContent,
+      source: sanitizedContent,
       components,
       options: { 
         mdxOptions: { remarkPlugins: [remarkGfm] },
@@ -262,7 +263,7 @@ export const WikiArticle = async ({
     mdxContent = compiled
   } catch (err: any) {
     console.error('[MDX ERROR]', err.message)
-    mdxContent = <pre className="p-4 bg-amber-50 text-amber-800 rounded-md overflow-auto">{processedContent}</pre>
+    mdxContent = <pre className="p-4 bg-amber-50 text-amber-800 rounded-md overflow-auto">{sanitizedContent}</pre>
   }
 
   return (

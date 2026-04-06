@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import { SCIcon } from "@/components/graphics/icons/Icon";
-import { LabBrowser, ModuleViewer } from "@/features/3d-lab/components";
+import { LabBrowser, LabBrowserShell } from "@/features/3d-lab/components";
 
 export const metadata = { title: "3D Lab" };
 
@@ -18,51 +18,50 @@ export default async function ThreeDLabPage({
 }: {
   searchParams: Promise<PageSearchParams>;
 }) {
+  const params = await searchParams;
+  const modelId = params.model;
+
+  // Legacy Redirect: ?model= → /[moduleId]
+  if (modelId) {
+    redirect(`${ROUTES.THREE_D_LAB}/${modelId}`);
+  }
+
   const [profile, flags] = await Promise.all([
     getAdminAwareProfile(),
     getFeatureFlags(),
   ]);
+  
   if (!profile) redirect(ROUTES.LOGIN);
+  
   const hasAccess =
     flags.bypass3dGate ||
     hasTierAccess("camp", profile.tier, profile.isAdmin, flags);
 
   if (!hasAccess) {
     return (
-      <div className="flex flex-col items-center justify-center py-24 text-center">
-        <SCIcon icon={Lock} size="2xl" className="text-muted-foreground" />
-        <h1 className="mt-4 text-xl font-semibold text-foreground">
-          3D Interactive Lab
-        </h1>
-        <p className="mt-2 max-w-md text-sm text-muted-foreground">
-          Explore building components, structural systems, and design concepts
-          in three dimensions. Available for Camp, Insurance, and Institutional subscribers.
-        </p>
-        <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
-          <Button>Upgrade to Camp</Button>
-        </Link>
-      </div>
+      <LabBrowserShell>
+        <div className="flex flex-col items-center justify-center py-24 text-center">
+          <SCIcon icon={Lock} size="2xl" className="text-muted-foreground" />
+          <h1 className="mt-4 text-xl font-semibold text-foreground">
+            3D Interactive Lab
+          </h1>
+          <p className="mt-2 max-w-md text-sm text-muted-foreground">
+            Explore building components, structural systems, and design concepts
+            in three dimensions. Available for Camp, Insurance, and Institutional subscribers.
+          </p>
+          <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
+            <Button>Upgrade to Camp</Button>
+          </Link>
+        </div>
+      </LabBrowserShell>
     );
   }
 
-  const params = await searchParams;
-  const modelId = params.model;
-
-  // No model param → show category browser (drill-down navigation)
-  if (!modelId) {
-    return (
-      <div className="h-full">
-        <Suspense>
-          <LabBrowser basePath={ROUTES.THREE_D_LAB} />
-        </Suspense>
-      </div>
-    );
-  }
-
-  // Model param present → full-screen viewer with back button (no sidebar)
   return (
-    <div className="h-full">
-      <ModuleViewer modelId={modelId} basePath={ROUTES.THREE_D_LAB} />
-    </div>
+    <LabBrowserShell>
+      <Suspense>
+        <LabBrowser basePath={ROUTES.THREE_D_LAB} />
+      </Suspense>
+    </LabBrowserShell>
   );
 }

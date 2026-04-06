@@ -13,8 +13,6 @@ import { Eyebrow } from '@/components/ui/eyebrow'
 import { TaxonomyTree } from '@/components/shared/taxonomy-tree'
 import type { TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 
-import { WikiFullSearch } from './WikiFullSearch'
-
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
@@ -124,12 +122,12 @@ export const WikiSidebar = ({
         <div className="bg-muted p-3 rounded-md inline-block mb-3">
           <SCIcon icon={BookOpen} size="lg" className="text-muted-foreground" />
         </div>
-        <p className="text-xs font-bold text-foreground mb-1">No Discipline</p>
+        <p className="text-xs font-semibold text-foreground mb-1">No Discipline</p>
         <p className="text-[11px] text-muted-foreground leading-relaxed mb-3">
           Select your exam type in Settings to view the syllabus.
         </p>
         <Link href="/dashboard/settings">
-          <button className="text-[11px] font-bold text-primary hover:text-primary/80 uppercase tracking-wider cursor-pointer">
+          <button className="text-[11px] font-semibold text-primary hover:text-primary/80 uppercase tracking-wider cursor-pointer">
             Go to Settings
           </button>
         </Link>
@@ -156,7 +154,6 @@ export const WikiSidebar = ({
 
   return (
     <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
-      <WikiFullSearch />
       
       {/* Syllabus section */}
       {syllabusTree.length > 0 && (

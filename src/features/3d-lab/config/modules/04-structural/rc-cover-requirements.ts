@@ -1,0 +1,106 @@
+// src/app/dashboard/3d-lab/_config/modules/rc-cover-requirements.ts
+import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
+
+export const rcCoverRequirementsConfig: CutawaySectionConfig = {
+  id: 'rc-cover-requirements',
+  title: 'RC Cover Requirements',
+  description:
+    'Reinforced concrete cover cutaway — beam, column, slab sections showing minimum cover depths: 75mm earth, 50mm weather, 40mm beams, 20mm slabs per NSCP.',
+  subject: 'nscp',
+  cutAxis: 'y',
+  camera: { position: [4, 3, 4], fov: 42 },
+  layers: [
+    {
+      id: 'column-section',
+      label: 'Column Cross-Section',
+      material: 'RC Column',
+      description: 'Column section — concrete cover over main bars. Min 40mm for columns exposed to weather, 50mm if concrete placed against earth.',
+      codeCitation: 'NSCP Section 407.8',
+      depth: 0,
+      geometry: { id: 'geo-col', type: 'box', args: [0.4, 2.5, 0.4], position: [-1.5, 1.25, 0], color: '#b0b0b0' },
+    },
+    {
+      id: 'column-bars',
+      label: 'Column Main Bars',
+      material: 'Deformed Steel Bars',
+      description: 'Column longitudinal bars — cover measured from outside face of column to outside of stirrup (lateral tie), not to main bar.',
+      depth: 0.15,
+      geometry: { id: 'geo-cbar', type: 'cylinder', args: [0.016, 0.016, 2.5, 8], position: [-1.34, 1.25, -0.14], color: '#374151' },
+    },
+    {
+      id: 'beam-section',
+      label: 'Beam Cross-Section',
+      material: 'RC Beam',
+      description: 'Beam section — min 40mm clear cover to stirrups for beams not exposed to weather. 50mm if exposed to weather.',
+      codeCitation: 'NSCP Section 407.8.1',
+      depth: 0.3,
+      geometry: { id: 'geo-beam', type: 'box', args: [0.35, 0.5, 0.25], position: [0, 0.25, 0], color: '#b0b0b0' },
+    },
+    {
+      id: 'beam-bars',
+      label: 'Beam Main Bars (40mm cover)',
+      material: 'Deformed Steel Bars',
+      description: 'Beam bottom bars — 40mm minimum cover from face to outside of stirrup for interior beams. Protects reinforcement from fire and corrosion.',
+      codeCitation: 'NSCP Section 407.8.1 — 40mm',
+      depth: 0.45,
+      geometry: { id: 'geo-bbar', type: 'cylinder', args: [0.02, 0.02, 0.25, 8], position: [0, 0.066, 0], rotation: [Math.PI / 2, 0, 0], color: '#374151' },
+    },
+    {
+      id: 'slab-section',
+      label: 'Slab Section',
+      material: 'RC Slab 150mm',
+      description: 'Slab cross-section — minimum 20mm cover for slabs not exposed to weather. 40mm if exposed.',
+      codeCitation: 'NSCP Section 407.8.1 — 20mm',
+      depth: 0.6,
+      geometry: { id: 'geo-slab', type: 'box', args: [3.0, 0.15, 0.25], position: [0, 1.675, 0], color: '#b0b0b0' },
+    },
+    {
+      id: 'slab-bars',
+      label: 'Slab Bars (20mm cover)',
+      material: 'Deformed Steel Bars',
+      description: 'Slab main bars — 20mm minimum cover. Shallower cover accepted because slabs not typically subject to direct weathering or ground contact.',
+      codeCitation: 'NSCP Section 407.8.1 — 20mm',
+      depth: 0.75,
+      geometry: { id: 'geo-slbar', type: 'cylinder', args: [0.01, 0.01, 3.0, 8], position: [0, 1.62, 0], rotation: [0, 0, Math.PI / 2], color: '#374151' },
+    },
+    {
+      id: 'earth-contact',
+      label: 'Earth-Contact Cover (75mm)',
+      material: 'RC Footing / Wall',
+      description: 'For concrete placed permanently against earth (footings, grade beams) — minimum 75mm cover. Prevents corrosion from soil moisture and salts.',
+      codeCitation: 'NSCP Section 407.8.1 — 75mm',
+      depth: 0.9,
+      geometry: { id: 'geo-earth', type: 'box', args: [2.0, 0.5, 0.25], position: [0.5, -0.25, 0], color: '#9ca3af' },
+    },
+  ],
+  annotations: [
+    {
+      id: 'ann-earth',
+      label: '75mm — Cast Against Earth',
+      description: 'Concrete permanently cast against and exposed to earth: minimum 75mm clear cover. Applies to footings, grade beams, basement walls.',
+      codeCitation: 'NSCP Section 407.8.1',
+      position: () => [2.0, -0.2, 0.3],
+    },
+    {
+      id: 'ann-weather',
+      label: '50mm — Exposed to Weather',
+      description: 'RC exposed to weather: min 50mm cover for #16mm bars and larger; 40mm for #12mm and smaller.',
+      codeCitation: 'NSCP Section 407.8.1',
+      position: () => [-2.5, 1.5, 0.3],
+    },
+    {
+      id: 'ann-interior',
+      label: '20–40mm — Sheltered Surfaces',
+      description: 'Slabs not exposed to weather: 20mm min. Beams and columns not exposed to weather: 40mm min.',
+      codeCitation: 'NSCP Section 407.8.1',
+      position: () => [-2.5, 0.5, 0.3],
+    },
+  ],
+  presets: [
+    { label: 'All Members', values: { cutPosition: 1.0 } },
+    { label: 'Column', values: { cutPosition: 1.0 } },
+    { label: 'Beam', values: { cutPosition: 0.3 } },
+    { label: 'Slab', values: { cutPosition: 1.7 } },
+  ],
+}
+

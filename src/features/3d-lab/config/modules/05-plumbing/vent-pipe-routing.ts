@@ -1,0 +1,105 @@
+// src/app/dashboard/3d-lab/_config/modules/vent-pipe-routing.ts
+import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
+
+export const ventPipeRoutingConfig: CutawaySectionConfig = {
+  id: 'vent-pipe-routing',
+  title: 'Vent Pipe Routing',
+  description:
+    'NPCP vent pipe routing — individual vents, stack vents, vent diameter rules (≥ half drain diameter), and roof termination requirements.',
+  subject: 'npcp',
+  cutAxis: 'y',
+  camera: { position: [4, 3.5, 4], fov: 42 },
+  layers: [
+    {
+      id: 'soil-stack',
+      label: 'Soil/Waste Stack (100mm)',
+      material: 'PVC 100mm',
+      description: 'Vertical soil stack receiving waste from all floors. Vent stack must be at least 50mm (half of 100mm drain).',
+      codeCitation: 'NPCP §906',
+      depth: 0,
+      geometry: { id: 'geo-ss', type: 'cylinder', args: [0.05, 0.05, 4.5, 12], position: [-1.0, 2.25, 0], color: '#374151' },
+    },
+    {
+      id: 'individual-vent',
+      label: 'Individual Vent (32mm)',
+      material: 'PVC 32mm',
+      description: 'Individual vent for lavatory (32mm drain) — vent must be ≥ half drain diameter: 32mm drain → 16mm min vent (use 25mm standard).',
+      codeCitation: 'NPCP §906.2 — vent ≥ ½ drain dia.',
+      depth: 0.2,
+      geometry: { id: 'geo-indv', type: 'cylinder', args: [0.016, 0.016, 1.0, 8], position: [0.5, 2.5, 0], color: '#2D9F6F' },
+    },
+    {
+      id: 'branch-drain-vent',
+      label: 'Branch Drain (75mm)',
+      material: 'PVC 75mm',
+      description: 'Branch drain — 75mm at 2% slope. Vent must be ≥38mm (half of 75mm).',
+      depth: 0.35,
+      geometry: { id: 'geo-bd', type: 'cylinder', args: [0.0375, 0.0375, 1.5, 12], position: [0, 1.5, 0], rotation: [0, 0, Math.PI / 2 + 0.02], color: '#D64545' },
+    },
+    {
+      id: 'vent-stack',
+      label: 'Vent Stack (50mm)',
+      material: 'PVC 50mm',
+      description: 'Vent stack serving full drainage system — 50mm diameter (≥ half of 100mm stack). Runs vertically separate from or alongside soil stack.',
+      codeCitation: 'NPCP §906.3 — Vent stack sizing',
+      depth: 0.5,
+      geometry: { id: 'geo-vs', type: 'cylinder', args: [0.025, 0.025, 4.5, 8], position: [0, 2.25, 0], color: '#2D9F6F' },
+    },
+    {
+      id: 'roof-penetration',
+      label: 'Roof Penetration & Flashing',
+      material: 'Lead / EPDM Flashing',
+      description: 'Vent pipe penetrates roof — requires lead or EPDM waterproof flashing sleeve. Vent terminates min 150mm above roof.',
+      codeCitation: 'NPCP §908.5',
+      depth: 0.65,
+      geometry: { id: 'geo-rpene', type: 'box', args: [0.2, 0.1, 0.2], position: [0, 4.6, 0], color: '#374151' },
+    },
+    {
+      id: 'roof-termination',
+      label: 'Roof Termination (150mm min above roof)',
+      material: 'PVC with Insect Screen',
+      description: 'Vent terminates minimum 150mm above roof surface. Install insect screen if required. Must be 3m from any window, door, or air intake opening.',
+      codeCitation: 'NPCP §908 — 150mm min above roof',
+      depth: 0.8,
+      geometry: { id: 'geo-rterm', type: 'cylinder', args: [0.025, 0.025, 0.2, 8], position: [0, 4.8, 0], color: '#2D9F6F' },
+    },
+    {
+      id: 'roof-slab',
+      label: 'Roof Slab',
+      material: 'RC Roof Slab',
+      description: 'Flat RC roof — vent pipe passes through with proper flashing to maintain waterproof integrity.',
+      depth: 0.9,
+      geometry: { id: 'geo-rslab', type: 'box', args: [4, 0.15, 0.8], position: [0, 4.525, 0], color: '#b0b0b0' },
+    },
+  ],
+  annotations: [
+    {
+      id: 'ann-rule',
+      label: 'Vent ≥ Half Drain Diameter',
+      description: 'NPCP rule: vent pipe diameter must be at least half the diameter of the drain pipe it serves. Min 25mm vent for any trap. 100mm stack → 50mm min vent.',
+      codeCitation: 'NPCP §906.2',
+      position: () => [1.5, 2.5, 0.5],
+    },
+    {
+      id: 'ann-roof',
+      label: 'Terminate 150mm above roof',
+      description: 'Vent termination must be at least 150mm above roof. Location must be 3m from any window, door, or ventilating air intake to prevent re-entry of sewer gases.',
+      codeCitation: 'NPCP §908',
+      position: () => [1.0, 5.0, 0.5],
+    },
+    {
+      id: 'ann-purpose',
+      label: 'Purpose: Maintain Trap Seals',
+      description: 'Vents maintain atmospheric pressure in drain system — preventing siphonage (negative pressure) or blowout (positive pressure) of trap water seals.',
+      codeCitation: 'NPCP §901',
+      position: () => [-2.0, 2.5, 0.5],
+    },
+  ],
+  presets: [
+    { label: 'Full System', values: { cutPosition: 3.0 } },
+    { label: 'Branch Level', values: { cutPosition: 1.5 } },
+    { label: 'Stack Level', values: { cutPosition: 2.5 } },
+    { label: 'Roof Termination', values: { cutPosition: 4.7 } },
+  ],
+}
+

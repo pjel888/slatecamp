@@ -304,10 +304,10 @@ const TreeRow = React.memo(({
         className={cn(
           'flex-1 truncate transition-colors duration-200 min-w-0',
           level <= 1
-            ? 'text-[13px] font-bold py-1.5'
+            ? 'text-[13px] font-semibold py-1.5'
             : level >= 3
-              ? 'text-xs font-medium py-px'
-              : 'text-[12.5px] font-semibold py-px',
+              ? 'text-xs font-normal py-px'
+              : 'text-[12.5px] font-medium py-px',
           isActive || isChildActive
             ? 'text-primary'
             : 'text-text-tertiary group-hover/tree:text-text-secondary group-hover:text-primary',

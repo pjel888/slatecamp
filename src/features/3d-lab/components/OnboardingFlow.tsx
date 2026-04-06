@@ -1,7 +1,9 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { HandGrabbing, Crosshair, ClipboardText } from '@phosphor-icons/react/dist/ssr'
+import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 interface OnboardingFlowProps {
   onComplete: () => void
@@ -22,6 +24,10 @@ const STEPS = [
   },
 ]
 
+/**
+ * OnboardingFlow — Refactored to use Tailwind and semantic tokens.
+ * Displays orientation steps for new 3D Lab users.
+ */
 export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   const [step, setStep] = useState(0)
   const [visible, setVisible] = useState(false)
@@ -36,44 +42,38 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
     }
   }, [])
 
-  if (!show) return null
-
-  const handleComplete = () => {
+  const handleComplete = useCallback(() => {
     localStorage.setItem('3dlab_onboarded', 'true')
     setVisible(false)
     setTimeout(onComplete, 200)
-  }
+  }, [onComplete])
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (step < STEPS.length - 1) {
       setStep((s) => s + 1)
     } else {
       handleComplete()
     }
-  }
+  }, [step, handleComplete])
 
-  const handleSkip = () => {
+  const handleSkip = useCallback(() => {
     handleComplete()
-  }
+  }, [handleComplete])
+
+  if (!show) return null
 
   const { Icon, instruction } = STEPS[step]
   const isLast = step === STEPS.length - 1
 
   return (
-    <>
-      <style>{ONBOARDING_STYLES}</style>
-
+    <div className="contents">
       {/* Backdrop */}
       <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          backgroundColor: 'rgba(0,0,0,0.50)',
-          zIndex: 300,
-          opacity: visible ? 1 : 0,
-          transition: 'opacity 200ms ease-out',
-          pointerEvents: visible ? 'auto' : 'none',
-        }}
+        className={cn(
+          "fixed inset-0 bg-black/50 z-[300] transition-opacity duration-200",
+          visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+        onClick={handleSkip}
       />
 
       {/* Card — centered on desktop, bottom sheet on mobile */}
@@ -81,148 +81,55 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         role="dialog"
         aria-modal="true"
         aria-label="3D Lab orientation"
-        style={{
-          position: 'fixed',
-          zIndex: 301,
-          opacity: visible ? 1 : 0,
-          transition: 'opacity 200ms ease-out',
-          // Desktop: centered
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: 'min(calc(100vw - 32px), 384px)',
-          backgroundColor: '#FFFFFF',
-          borderRadius: '12px',
-          boxShadow: '0 8px 32px rgba(0,0,0,0.18)',
-          padding: '24px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '20px',
-        }}
-        className="onboarding-card"
+        className={cn(
+          "fixed z-[301] bg-white p-6 flex flex-col gap-5 transition-opacity duration-200 shadow-2xl",
+          "sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-96 sm:rounded-xl",
+          "bottom-0 left-0 right-0 rounded-t-xl sm:bottom-auto",
+          visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
       >
         {/* Icon + instruction */}
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '16px',
-            paddingTop: '8px',
-            paddingBottom: '8px',
-          }}
-        >
-          <Icon size={48} color="#1B3FC4" weight="duotone" />
-          <p
-            style={{
-              fontFamily: 'Inter, system-ui, sans-serif',
-              fontSize: '13px',
-              fontWeight: 500,
-              color: '#1A2332',
-              margin: 0,
-              lineHeight: 1.5,
-              textAlign: 'center',
-            }}
-          >
+        <div className="flex flex-col items-center gap-6 py-2">
+          <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center border-4 border-white shadow-sm">
+            <Icon size={44} className="text-primary" weight="duotone" />
+          </div>
+          <p className="text-[15px] font-medium text-foreground text-center leading-[1.5] tracking-tight px-2">
             {instruction}
           </p>
         </div>
 
         {/* Step dots */}
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '6px',
-          }}
-        >
+        <div className="flex justify-center gap-2">
           {STEPS.map((_, i) => (
             <div
               key={i}
-              style={{
-                width: '6px',
-                height: '6px',
-                borderRadius: '50%',
-                backgroundColor: i === step ? '#1B3FC4' : '#D4DAE3',
-                transition: 'background-color 150ms ease-out',
-              }}
+              className={cn(
+                "w-1.5 h-1.5 rounded-full transition-all duration-200",
+                i === step ? "bg-primary w-4" : "bg-border-default opacity-40"
+              )}
             />
           ))}
         </div>
 
         {/* Next button */}
-        <button
-          onClick={handleNext}
-          style={{
-            width: '100%',
-            backgroundColor: '#1B3FC4',
-            color: '#FFFFFF',
-            border: 'none',
-            borderRadius: '6px',
-            padding: '10px 16px',
-            fontFamily: 'Inter, system-ui, sans-serif',
-            fontSize: '13px',
-            fontWeight: 500,
-            cursor: 'pointer',
-            transition: 'background-color 150ms ease-out',
-          }}
-          onMouseEnter={(e) => {
-            ;(e.currentTarget as HTMLButtonElement).style.backgroundColor = '#1535A8'
-          }}
-          onMouseLeave={(e) => {
-            ;(e.currentTarget as HTMLButtonElement).style.backgroundColor = '#1B3FC4'
-          }}
-        >
-          {isLast ? 'Start exploring →' : 'Next'}
-        </button>
+        <div className="flex flex-col gap-3">
+          <Button 
+            onClick={handleNext} 
+            className="w-full font-mono text-[11px] font-bold uppercase tracking-widest"
+            size="lg"
+          >
+            {isLast ? 'Start exploring' : 'Next'}
+          </Button>
 
-        {/* Skip link */}
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          {/* Skip link */}
           <button
             onClick={handleSkip}
-            style={{
-              background: 'transparent',
-              border: 'none',
-              cursor: 'pointer',
-              fontFamily: '"DM Mono", monospace',
-              fontSize: '10px',
-              color: '#8896A7',
-              textDecoration: 'none',
-              padding: '2px 4px',
-              transition: 'text-decoration 150ms ease-out',
-            }}
-            onMouseEnter={(e) => {
-              ;(e.currentTarget as HTMLButtonElement).style.textDecoration = 'underline'
-            }}
-            onMouseLeave={(e) => {
-              ;(e.currentTarget as HTMLButtonElement).style.textDecoration = 'none'
-            }}
+            className="bg-transparent border-0 cursor-pointer font-mono text-[10px] font-bold uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors p-1"
           >
-            Skip
+            Skip Orientation
           </button>
         </div>
       </div>
-    </>
+    </div>
   )
 }
-
-const ONBOARDING_STYLES = `
-@media (max-width: 639px) {
-  .onboarding-card {
-    top: auto !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    transform: none !important;
-    width: 100% !important;
-    border-radius: 12px 12px 0 0 !important;
-    padding: 24px 16px 32px !important;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .onboarding-card,
-  .onboarding-card + * {
-    transition: none !important;
-  }
-}
-`

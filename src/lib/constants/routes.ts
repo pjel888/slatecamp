@@ -39,6 +39,7 @@ export const ROUTES = {
   NOTES: "/dashboard/notes",
   LIBRARY: "/dashboard/library",
   THREE_D_LAB: "/dashboard/3d-lab",
+  THREE_D_LAB_MODULE: (moduleId: string) => `/dashboard/3d-lab/${moduleId}`,
   TOOLS: "/tools",
   TOOLS_FLOOR_TILES: "/tools/floor-tiles-calculator",
   TOOLS_WALL_PAINT: "/tools/wall-paint-calculator",

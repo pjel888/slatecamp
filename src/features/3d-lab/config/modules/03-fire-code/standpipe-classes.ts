@@ -1,0 +1,106 @@
+// src/app/dashboard/3d-lab/_config/modules/standpipe-classes.ts
+import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
+
+export const standpipeClassesConfig: CutawaySectionConfig = {
+  id: 'standpipe-classes',
+  title: 'Standpipe Classes',
+  description:
+    'Cross-section comparing Class I (2½" FD use), Class II (1½" occupant), and Class III (combined) standpipe systems per RA 9514.',
+  subject: 'ra-9514',
+  cutAxis: 'y',
+  camera: { position: [4.5, 3, 4.5], fov: 42 },
+  layers: [
+    {
+      id: 'base-slab',
+      label: 'Floor Slab Reference',
+      material: 'RC Slab',
+      description: 'Floor level reference for standpipe connection heights.',
+      depth: 0,
+      geometry: { id: 'geo-slab', type: 'box', args: [5, 0.15, 0.8], position: [0, 0.075, 0], color: '#b0b0b0' },
+    },
+    {
+      id: 'class1-riser',
+      label: 'Class I Riser (65mm / 2½")',
+      material: 'Schedule 40 Steel 65mm',
+      description: 'Class I standpipe: 65mm (2½") outlets for fire department use only. Located in stairwells. Required for buildings >15m.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.1',
+      depth: 0.2,
+      geometry: { id: 'geo-c1', type: 'cylinder', args: [0.0325, 0.0325, 4.0, 12], position: [-1.5, 2.15, 0], color: '#D64545' },
+    },
+    {
+      id: 'class1-outlet',
+      label: 'Class I Outlet (2½" FDC)',
+      material: '65mm Hose Valve',
+      description: 'Class I 65mm (2½") fire department hose connection — requires SCBA-equipped firefighters. Located at each floor stairwell.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.1',
+      depth: 0.3,
+      geometry: { id: 'geo-c1out', type: 'cylinder', args: [0.03, 0.03, 0.15, 12], position: [-1.2, 1.2, 0], rotation: [0, 0, Math.PI / 2], color: '#b91c1c' },
+    },
+    {
+      id: 'class2-riser',
+      label: 'Class II Riser (40mm / 1½")',
+      material: 'Schedule 40 Steel 40mm',
+      description: 'Class II standpipe: 40mm (1½") outlets for trained occupant use. Includes hose, nozzle, and cabinet.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
+      depth: 0.5,
+      geometry: { id: 'geo-c2', type: 'cylinder', args: [0.02, 0.02, 4.0, 12], position: [0, 2.15, 0], color: '#1B3FC4' },
+    },
+    {
+      id: 'class2-cabinet',
+      label: 'Class II Hose Cabinet',
+      material: 'Steel Recessed Cabinet',
+      description: 'Class II hose cabinet with 1½" hose, nozzle, and shutoff valve. For occupant first aid firefighting.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
+      depth: 0.6,
+      geometry: { id: 'geo-c2cab', type: 'box', args: [0.6, 0.5, 0.15], position: [0.3, 1.3, 0], color: '#1535A8' },
+    },
+    {
+      id: 'class3-riser',
+      label: 'Class III Riser (Combined)',
+      material: 'Schedule 40 Steel 100mm',
+      description: 'Class III: combines Class I (2½") and Class II (1½") outlets on same riser. Most comprehensive system.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.3',
+      depth: 0.75,
+      geometry: { id: 'geo-c3', type: 'cylinder', args: [0.05, 0.05, 4.0, 12], position: [1.5, 2.15, 0], color: '#7c3aed' },
+    },
+    {
+      id: 'fdc',
+      label: 'Fire Dept. Connection (Siamese)',
+      material: 'Bronze Siamese FDC',
+      description: 'Siamese fire department connection at exterior — allows fire truck to boost pressure in standpipe system.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.4',
+      depth: 0.9,
+      geometry: { id: 'geo-fdc', type: 'box', args: [0.25, 0.2, 0.15], position: [0, 0.25, 0.3], color: '#78350f' },
+    },
+  ],
+  annotations: [
+    {
+      id: 'ann-class1',
+      label: 'Class I: FD Use (2½")',
+      description: 'Class I: 65mm (2½") hose connections for use by firefighters with full protective equipment. Located in stairwells at each floor.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.1',
+      position: () => [-2.5, 3.0, 0.5],
+    },
+    {
+      id: 'ann-class2',
+      label: 'Class II: Occupant Use (1½")',
+      description: 'Class II: 40mm (1½") hose, nozzle, cabinet for trained building occupants. First aid firefighting before FD arrival.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.2',
+      position: () => [-0.5, 3.5, 0.5],
+    },
+    {
+      id: 'ann-class3',
+      label: 'Class III: Both (≥15m buildings)',
+      description: 'Class III combines both outlet sizes on one riser. Required for buildings 15m or more in height.',
+      codeCitation: 'RA 9514 IRR Rule 10 §10.4.3',
+      position: () => [2.5, 3.0, 0.5],
+    },
+  ],
+  presets: [
+    { label: 'All Classes', values: { cutPosition: 2.5 } },
+    { label: 'Class I Only', values: { cutPosition: 1.5 } },
+    { label: 'Class II Only', values: { cutPosition: 1.5 } },
+    { label: 'FDC Level', values: { cutPosition: 0.3 } },
+  ],
+}
+

@@ -35,7 +35,7 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
     navigation: {
       model: 'linear',
-      backAllowed: true,
+      backAllowed: false,
       questionPalette: false,
       bookmarkEnabled: false,
       skipEnabled: false,

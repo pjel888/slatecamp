@@ -3,6 +3,8 @@
 import { useEffect, useRef } from 'react'
 import { CloseButton } from '@/components/ui/close-button'
 import type { HotspotData } from '@/types/3d-lab'
+import { LabMetaPanel } from './shell/LabMetaPanel'
+import { cn } from '@/lib/utils'
 
 interface InfoPanelProps {
   hotspot: HotspotData
@@ -11,6 +13,10 @@ interface InfoPanelProps {
   viewportWidth: number
 }
 
+/**
+ * InfoPanel — Refactored to use LabMetaPanel and Tailwind.
+ * Displays detailed information and practice CTA for a selected hotspot.
+ */
 export const InfoPanel = ({
   hotspot,
   onPracticeClick,
@@ -42,45 +48,22 @@ export const InfoPanel = ({
 
   const isExamCritical = hotspot.type === 'exam-critical'
 
-  // MOBILE: bottom-sheet
   if (isMobile) {
     return (
-      <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          zIndex: 200,
-          pointerEvents: 'none',
-        }}
-      >
+      <div className="fixed inset-0 z-[200] pointer-events-none">
         {/* Backdrop */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            pointerEvents: 'auto',
-          }}
-          onClick={onClose}
+        <div 
+          className="absolute inset-0 pointer-events-auto bg-black/20 animate-in fade-in duration-150" 
+          onClick={onClose} 
         />
         <div
           ref={panelRef}
           role="region"
           aria-label="Information panel"
-          className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-150 motion-reduce:animate-none"
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            maxHeight: '60vh',
-            overflowY: 'auto',
-            backgroundColor: '#FFFFFF',
-            borderTop: '0.5px solid var(--border)',
-            borderRadius: '12px 12px 0 0',
-            boxShadow: '0 -4px 24px rgba(0,0,0,0.12)',
-            padding: '20px 16px 32px',
-            pointerEvents: 'auto',
-          }}
+          className={cn(
+            "absolute bottom-0 left-0 right-0 max-h-[60vh] overflow-y-auto bg-white rounded-t-xl shadow-2xl pointer-events-auto",
+            "animate-in slide-in-from-bottom duration-200"
+          )}
         >
           <PanelContent
             hotspot={hotspot}
@@ -93,41 +76,23 @@ export const InfoPanel = ({
     )
   }
 
-  // DESKTOP: floating panel, opens left if hotspot is in right half
-  // We use a fixed-position panel; actual hotspot pixel position isn't available
-  // here, so we use viewportWidth halving as a heuristic. The parent should pass
-  // a more precise x position if available — for now we default to right-side open.
-  const openLeft = false // parent can override by passing hotspot screen position
-  const panelStyle: React.CSSProperties = {
-    position: 'fixed',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    ...(openLeft ? { right: '16px' } : { left: '16px' }),
-    width: '240px',
-    backgroundColor: '#FFFFFF',
-    border: '0.5px solid var(--border)',
-    borderRadius: '12px',
-    boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
-    padding: '14px',
-    zIndex: 200,
-    overflowY: 'auto',
-    maxHeight: 'calc(100vh - 80px)',
-  }
-
   return (
     <div
       ref={panelRef}
       role="region"
       aria-label="Information panel"
-      className="motion-safe:animate-in motion-safe:fade-in motion-safe:duration-150 motion-reduce:animate-none"
-      style={panelStyle}
+      className={cn(
+        "fixed top-1/2 -translate-y-1/2 left-4 z-[200] w-[320px] animate-in fade-in slide-in-from-left-4 duration-150",
+      )}
     >
-      <PanelContent
-        hotspot={hotspot}
-        isExamCritical={isExamCritical}
-        onPracticeClick={onPracticeClick}
-        onClose={onClose}
-      />
+      <LabMetaPanel title={isExamCritical ? 'Exam Content' : hotspot.eyebrow}>
+        <PanelContent
+          hotspot={hotspot}
+          isExamCritical={isExamCritical}
+          onPracticeClick={onPracticeClick}
+          onClose={onClose}
+        />
+      </LabMetaPanel>
     </div>
   )
 }
@@ -147,98 +112,39 @@ const PanelContent = ({
   onPracticeClick,
   onClose,
 }: PanelContentProps) => (
-  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-    {/* Close button */}
-    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-      <CloseButton onClick={onClose} aria-label="Close panel" size="sm" />
+  <div className="flex flex-col gap-4">
+    {/* Header with close button */}
+    <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-col gap-1">
+        {isExamCritical && (
+          <span className="font-mono text-[9px] font-black uppercase tracking-[0.15em] text-destructive">
+            ALE Watch · High Priority
+          </span>
+        )}
+        <h2 className="text-[15px] font-semibold text-foreground leading-tight tracking-tight">
+          {hotspot.title}
+        </h2>
+      </div>
+      <CloseButton onClick={onClose} aria-label="Close panel" size="sm" className="-mt-1 -mr-1" />
     </div>
 
-    {/* Eyebrow */}
-    <p
-      style={{
-        fontFamily: '"DM Mono", monospace',
-        fontSize: '9px',
-        textTransform: 'uppercase',
-        letterSpacing: '0.06em',
-        color: isExamCritical ? '#F5A623' : 'var(--muted-foreground)',
-        margin: 0,
-        lineHeight: 1.4,
-      }}
-    >
-      {isExamCritical ? 'Most-tested · ALE Watch' : hotspot.eyebrow}
-    </p>
-
-    {/* Title */}
-    <h2
-      style={{
-        fontFamily: 'Inter, system-ui, sans-serif',
-        fontSize: '13px',
-        fontWeight: 600,
-        color: 'var(--foreground)',
-        margin: 0,
-        lineHeight: 1.4,
-      }}
-    >
-      {hotspot.title}
-    </h2>
-
     {/* Body */}
-    <p
-      style={{
-        fontFamily: 'Inter, system-ui, sans-serif',
-        fontSize: '12px',
-        color: 'var(--muted-foreground)',
-        margin: 0,
-        lineHeight: 1.5,
-      }}
-    >
+    <p className="text-[13px] text-text-secondary leading-[1.6] font-sans">
       {hotspot.body}
     </p>
 
     {/* Values table */}
     {hotspot.values.length > 0 && (
-      <div
-        style={{
-          borderTop: '0.5px solid var(--border)',
-          borderBottom: '0.5px solid var(--border)',
-          paddingTop: '8px',
-          paddingBottom: '8px',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '4px',
-        }}
-      >
+      <div className="border-y border-border-default/20 py-3 flex flex-col gap-2">
         {hotspot.values.map((row, i) => (
-          <div
-            key={i}
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'baseline',
-              gap: '8px',
-            }}
-          >
-            <span
-              style={{
-                fontFamily: 'Inter, system-ui, sans-serif',
-                fontSize: '11px',
-                color: 'var(--muted-foreground)',
-                flexShrink: 0,
-              }}
-            >
+          <div key={i} className="flex justify-between items-baseline gap-2">
+            <span className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider flex-shrink-0">
               {row.label}
             </span>
-            <span
-              style={{
-                fontFamily: '"DM Mono", monospace',
-                fontSize: '12px',
-                fontWeight: 500,
-                color: 'var(--foreground)',
-                textDecoration: row.isOld ? 'line-through' : 'none',
-                opacity: row.isOld ? 0.5 : 1,
-                textAlign: 'right',
-              }}
-            >
+            <span className={cn(
+              "font-mono text-[13px] font-bold text-foreground text-right tabular-nums",
+              row.isOld && "line-through opacity-40"
+            )}>
               {row.value}
             </span>
           </div>
@@ -246,42 +152,20 @@ const PanelContent = ({
       </div>
     )}
 
-    {/* Source */}
-    <p
-      style={{
-        fontFamily: '"DM Mono", monospace',
-        fontSize: '10px',
-        color: 'var(--muted-foreground)',
-        margin: 0,
-        lineHeight: 1.4,
-      }}
-    >
-      {hotspot.source}
-    </p>
+    {/* Source & CTA */}
+    <div className="flex flex-col gap-4">
+      {hotspot.source && (
+        <p className="font-mono text-[10px] font-bold text-muted-foreground uppercase tracking-widest opacity-60">
+          Source: {hotspot.source}
+        </p>
+      )}
 
-    {/* Practice CTA */}
-    <button
-      onClick={onPracticeClick}
-      style={{
-        background: 'transparent',
-        border: 'none',
-        cursor: 'pointer',
-        padding: 0,
-        fontFamily: '"DM Mono", monospace',
-        fontSize: '11px',
-        color: 'var(--primary)',
-        textAlign: 'left',
-        textDecoration: 'none',
-        transition: 'text-decoration 150ms ease-out',
-      }}
-      onMouseEnter={(e) => {
-        ;(e.currentTarget as HTMLButtonElement).style.textDecoration = 'underline'
-      }}
-      onMouseLeave={(e) => {
-        ;(e.currentTarget as HTMLButtonElement).style.textDecoration = 'none'
-      }}
-    >
-      Practice a question on this →
-    </button>
+      <button
+        onClick={onPracticeClick}
+        className="w-full flex items-center justify-center gap-2 bg-primary/5 hover:bg-primary/10 text-primary border border-primary/20 rounded-md py-2.5 px-4 font-mono text-[11px] font-bold uppercase tracking-wider transition-all duration-150"
+      >
+        Practice a question →
+      </button>
+    </div>
   </div>
 )

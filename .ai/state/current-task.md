@@ -1,35 +1,39 @@
 # Current Task
 
 **Last Updated:** 2026-04-06  
-**Task ID:** testing-feature-audit  
+**Task ID:** testing-feature-remediation  
 **Status:** completed
 
 ---
 
-## Active Task: Testing Feature Performance Audit & Optimization
+## Active Task: Testing Feature Remediation (Workstreams A-J)
 
-**Completed Phase:** Phase 1 & 2 - Optimization Implementation  
-**Context:** User reported sluggishness in correctness feedback. Audit identified 10+ DB round-trips per answer.
+**Objective:** Execute the remediation plan to fix security, data-contract, and verification gaps in the quiz engine.
 
-### Completed Work
-- [x] Comprehensive technical audit of `submitAnswer` lifecycle
-- [x] Identification of redundant DB fetches in `classifyAndStoreError`
-- [x] Identification of blocking sequential awaits for non-UI updates (SRS, Mastery)
-- [x] Creation of implementation plan in `.ai/plans/testing-feature-audit.md`
-- [x] Refactored `classifyAndStoreError` to accept `questionData`
-- [x] Refactored `submitAnswer` to use `submit_quiz_answer_v2` RPC with legacy fallback
-- [x] Implemented Next.js `after()` API to move non-critical hooks and cache revalidation to background
-- [x] Created SQL migration `20260406144507_optimize_quiz_interactions.sql` for denormalized stats and RPC
+### Workstreams
+- [x] **Workstream A**: Harden Session Question Loading (Security)
+  - Replaced client-trusted question IDs with server-derived slicing in `getSessionQuestions`.
+  - Verified with `src/lib/actions/quiz-v2/get-session-questions.test.ts`.
+- [x] **Workstream B**: Single-Owner/Ordered Session Finalization
+  - Centralized session finalization in `submitAnswer` for the last question.
+  - Ensured background work is awaited before finalization to preserve ordering.
+- [x] **Workstream C**: `endSession` Idempotency
+  - Added terminal status guards in `endSession` to prevent redundant computations and notifications.
+- [x] **Workstream D**: Backfill Denormalized Counters
+  - Created migration `supabase/migrations/20260406170000_backfill_quiz_session_counters.sql` with verification query.
+- [x] **Workstream E**: RPC Fallback Alignment
+  - Updated `submitAnswer` fallback path to return `wikiSlug` and update session counters correctly.
+- [x] **Workstream F**: Restore/Align Immediate Diagnostics
+  - Unified `ErrorCategory` types and improved `classifyError` to return consistent diagnostic messages.
+- [x] **Workstream G**: Unified Question Payload Contract
+  - Centralized question mapping in `src/lib/quiz/to-client-question.ts`.
+- [x] **Workstream H**: Real Quiz-v2 Test Coverage
+  - Added `submit-answer.test.ts` and verified `get-session-questions.test.ts` and `to-client-question.test.ts`.
+- [x] **Workstream I**: Input Validation & Contract Cleanup
+  - Implemented Zod schema validation across all quiz-v2 server actions.
+- [x] **Workstream J**: Documentation & Verification Discipline
+  - Updated `src/lib/actions/quiz-v2/AGENTS.md` with the new hardened architecture patterns.
+  - Verified with `bun test`, `bun run lint`, `bun run type-check`, and `bun run build`.
 
-### Verified Facts
-- `submitAnswer` now returns in ~2-3 DB round-trips (including Auth) instead of 10+
-- Mastery, SRS, and behavioral capture are now processed in the background via `after()`
-- Dashboard cache revalidation is now throttled to every 5 questions or session end
-- The backend supports a high-performance single-round-trip RPC `submit_quiz_answer_v2`
-
-### Next Action
-Monitor performance in production. The SQL migration must be manually applied if not already handled by a database administrator.
-
----
-
-*This file represents the active task in focus. Update status after each completed phase.*
+### Final Status
+All workstreams implemented and verified. Build passed. The quiz-v2 engine is now secure, consistent, and rigorously tested.

@@ -10,6 +10,7 @@ import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
+import { sanitizeMDX } from '@/lib/wiki-markdown'
 import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent, GenericBlock, SPP206RefServices, SPP207RefServices } from '@/components/wiki'
 
 interface PageProps {
@@ -62,8 +63,9 @@ const ArticlePreview = async ({ content }: { content: string }) => {
   let mdxContent: React.ReactNode
 
   try {
+    const sanitized = sanitizeMDX(content)
     const { content: compiledContent } = await compileMDX({
-      source: content,
+      source: sanitized,
       components: mdxComponents,
       options: { mdxOptions: { remarkPlugins: [remarkGfm] } },
     })

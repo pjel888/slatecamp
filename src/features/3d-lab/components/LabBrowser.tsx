@@ -67,17 +67,17 @@ export function LabBrowser({ basePath }: { basePath: string }) {
 
   if (dashboardModules) {
     return (
-      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
+      <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <div className="mb-6">
-          <h1 className="text-lg font-semibold text-[#1A2332]">3D Interactive Lab</h1>
-          <p className="mt-1 text-[11px] text-[#8896A7]">
+        <div className="mb-8">
+          <h1 className="text-xl font-bold text-foreground tracking-tight">3D Interactive Lab</h1>
+          <p className="mt-1.5 font-mono text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
             {dashboardModules.length} interactive modules available
           </p>
         </div>
 
         {/* Module cards */}
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
           {dashboardModules.map((m) => (
             <ModuleCard key={m.id} module={m} basePath={basePath} />
           ))}

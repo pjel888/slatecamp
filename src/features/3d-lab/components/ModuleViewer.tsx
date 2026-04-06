@@ -2,81 +2,126 @@
 
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
-import { LabTopBar } from '@/features/3d-lab/components/LabTopBar'
-import { OnboardingFlow } from '@/features/3d-lab/components/OnboardingFlow'
-import { ModuleContextCard } from '@/features/3d-lab/components/ModuleContextCard'
-import { useLabStore } from '@/stores/useLabStore'
+import { 
+  LabTopBar, 
+  OnboardingFlow, 
+  ModuleContextCard, 
+  LabViewport,
+  LabModuleShell,
+  LabViewportFrame
+} from '@/features/3d-lab/components'
+import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
 import type { ModuleConfig } from '@/types/3d-lab'
-import { LabViewport } from '@/features/3d-lab/components/LabViewport'
-import { getModuleById } from '@/features/3d-lab/config/registry'
+import { getModuleById, ALL_MODULES } from '@/features/3d-lab/config/registry'
+import { ASSET_TAXONOMY } from '@/features/3d-lab/config/taxonomy'
+import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
+import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface ModuleViewerProps {
   modelId: string
   basePath: string
 }
 
+// ─── Module Config Loader (shared with LabViewport logic) ──────────────────
+
+const CAT_ID_MAP: Record<string, string> = {}
+for (const [key, meta] of Object.entries(ASSET_TAXONOMY)) {
+  CAT_ID_MAP[key] = meta.id
+}
+
+const DIR_NAMES: Record<string, string> = {
+  '01': '01-building-code',
+  '02': '02-accessibility',
+  '03': '03-fire-code',
+  '04': '04-structural',
+  '05': '05-plumbing',
+  '06': '06-electrical',
+  '07': '07-mechanical',
+  '08': '08-vertical',
+  '09': '09-construction',
+  '10': '10-materials',
+  '11': '11-arch-history',
+  '12': '12-ph-heritage',
+  '13': '13-planning',
+  '14': '14-prof-practice',
+  '15': '15-estimating',
+  '16': '16-site-dev',
+}
+
+const MODULE_PATHS: Record<string, string> = {}
+for (const mod of ALL_MODULES) {
+  if (mod.categoryId) {
+    const catId = CAT_ID_MAP[mod.categoryId]
+    const dir = catId ? DIR_NAMES[catId] : undefined
+    if (dir) {
+      MODULE_PATHS[mod.id] = `${dir}/${mod.id}`
+    }
+  }
+}
+
+const loadModuleConfig = (moduleId: string): Promise<any> => {
+  const path = MODULE_PATHS[moduleId] ?? moduleId
+  return import(`@/features/3d-lab/config/modules/${path}` as any).then(
+    (mod: Record<string, unknown>) => Object.values(mod)[0],
+  )
+}
+
 /**
- * 3D Lab module viewer — new visual shell wrapping existing template renderers.
- *
- * What this provides (non-conflicting):
- *   - LabTopBar: 36px dark navy bar (in document flow, above canvas)
- *   - OnboardingFlow: modal overlay on first-ever visit
- *   - ModuleContextCard: auto-dismiss card on first visit per module
- *
- * What the TEMPLATES provide (their own UI):
- *   - GenericControlPanel / ControlPanel (parameter sliders)
- *   - ViolationBar / compliance indicators
- *   - Context scenario text (inside control panel)
- *   - Any template-specific overlays (cut depth, etc.)
- *
- * This separation prevents overlay conflicts. Templates own their canvas-level UI.
+ * 3D Lab module viewer — Phase 2: Real Data Binding.
+ * Loads the actual module config and passes it down to the viewport and shell.
  */
 export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const router = useRouter()
   const entry = getModuleById(modelId)
-  const title = entry?.title ?? modelId.replace(/-/g, ' ')
-  const codeRef = entry?.codeRef ?? ''
+  
+  const [config, setConfig] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   const resetSession = useLabStore((s) => s.resetSession)
 
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [showContextCard, setShowContextCard] = useState(false)
 
-  // Build shim for ModuleContextCard
-  const moduleConfigShim: ModuleConfig = useMemo(() => ({
-    slug: modelId,
-    title,
-    codeReference: codeRef,
-    subject: entry?.subject ?? '',
-    learningObjective: entry?.description ?? '',
-    estimatedMinutes: 5,
-    modelUrl: '',
-    modelSizeMB: 0,
-    defaultCameraPosition: [4, 3, 4],
-    defaultCameraTarget: [0, 0, 0],
-    hotspots: [],
-    questions: [],
-    supportsCrossSection: false,
-    supportsExplodedView: false,
-    preTrainingTips: [],
-    presetViews: {},
-  }), [modelId, title, codeRef, entry])
-
   // Telemetry
   useLabTelemetry({ moduleSlug: modelId })
 
-  // Init
+  // Load config and init session
   useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    setError(null)
+
     resetSession()
-    if (typeof window !== 'undefined') {
-      if (!localStorage.getItem('3dlab_onboarded')) {
-        setShowOnboarding(true)
-      } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
-        setShowContextCard(true)
-      }
+
+    loadModuleConfig(modelId)
+      .then((cfg) => {
+        if (!cancelled) {
+          setConfig(cfg)
+          setLoading(false)
+          
+          // Show onboarding/context card after load
+          if (typeof window !== 'undefined') {
+            if (!localStorage.getItem('3dlab_onboarded')) {
+              setShowOnboarding(true)
+            } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
+              setShowContextCard(true)
+            }
+          }
+        }
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          setError(String(err))
+          setLoading(false)
+        }
+      })
+
+    return () => { 
+      cancelled = true
+      resetSession() 
     }
-    return () => { resetSession() }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [modelId])
 
@@ -93,37 +138,110 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     setShowContextCard(false)
   }, [])
 
-  return (
-    <div className="flex flex-col h-full w-full">
-      {/* LabTopBar — in document flow, no overlap possible */}
-      <LabTopBar
-        title={title}
-        codeReference={codeRef}
-        visitedCount={0}
-        totalCount={entry?.aleQuestionCount ?? 0}
-        onBack={handleBack}
-      />
+  // Build metadata for the shell
+  const title = config?.title ?? entry?.title ?? modelId.replace(/-/g, ' ')
+  const codeRef = config?.codeReference ?? entry?.codeRef ?? ''
+  const description = config?.description ?? entry?.description ?? ''
+  const subject = config?.subject ?? entry?.subject ?? ''
+  
+  const hotspotCount = config?.hotspots?.length ?? 0
+  const totalALEQuestions = entry?.aleQuestionCount ?? 0
 
-      {/* Canvas area — template fills this entirely and owns all its overlays */}
-      <div className="flex-1 relative overflow-hidden bg-[var(--color-cream)]">
-        <LabViewport
-          modelId={modelId}
-          model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
-          parameters={[]}
-          hotspots={[]}
-          userTier="camp"
-        />
+  // Construct a consistent ModuleConfig object for the context card
+  const moduleMetadata: ModuleConfig = useMemo(() => ({
+    slug: modelId,
+    title,
+    codeReference: codeRef,
+    subject,
+    learningObjective: description,
+    estimatedMinutes: config?.estimatedMinutes ?? 5,
+    modelUrl: config?.modelUrl ?? '',
+    modelSizeMB: config?.modelSizeMB ?? 0,
+    defaultCameraPosition: config?.camera?.position ?? [4, 3, 4],
+    defaultCameraTarget: config?.camera?.target ?? [0, 0, 0],
+    hotspots: config?.hotspots ?? [],
+    questions: config?.questions ?? [],
+    supportsCrossSection: config?.supportsCrossSection ?? false,
+    supportsExplodedView: config?.supportsExplodedView ?? false,
+    preTrainingTips: config?.preTrainingTips ?? [],
+    presetViews: config?.presetViews ?? {},
+  }), [modelId, title, codeRef, description, subject, config])
 
-        {/* ModuleContextCard — top-left, auto-dismiss 6s, doesn't conflict with template UIs */}
-        {showContextCard && !showOnboarding && (
-          <ModuleContextCard config={moduleConfigShim} onDismiss={handleContextDismiss} />
-        )}
+  if (loading) {
+    return (
+      <div className="flex h-full w-full items-center justify-center bg-[#F8F7F5]">
+        <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-muted-foreground" />
+        <span className="ml-2 text-[11px] text-muted-foreground uppercase tracking-widest font-black">
+          Loading Module...
+        </span>
       </div>
+    )
+  }
 
-      {/* OnboardingFlow — full-screen modal, above everything */}
-      {showOnboarding && (
-        <OnboardingFlow onComplete={handleOnboardingComplete} />
+  if (error) {
+    return (
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#F8F7F5] gap-4">
+        <p className="text-sm text-red-500 font-medium">Failed to load module: {modelId}</p>
+        <button onClick={handleBack} className="text-xs text-primary hover:underline">
+          Return to Lab Browser
+        </button>
+      </div>
+    )
+  }
+
+  const isBespoke = modelId === 'site-development-controls'
+
+  return (
+    <LabModuleShell
+      topBar={
+        <LabTopBar
+          title={title}
+          codeReference={codeRef}
+          visitedCount={0}
+          totalCount={totalALEQuestions}
+          onBack={handleBack}
+        />
+      }
+    >
+      {isBespoke ? (
+        <div className="h-full w-full relative">
+          <LabViewport
+            modelId={modelId}
+            model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+            parameters={[]}
+            hotspots={[]}
+            userTier="camp"
+            preLoadedConfig={config}
+          />
+          {showContextCard && !showOnboarding && (
+            <div className="z-30 pointer-events-auto">
+              <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+            </div>
+          )}
+        </div>
+      ) : (
+        <LabViewportFrame>
+          <LabViewport
+            modelId={modelId}
+            model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+            parameters={[]}
+            hotspots={[]}
+            userTier="camp"
+            preLoadedConfig={config}
+          />
+          {showContextCard && !showOnboarding && (
+            <div className="z-30 pointer-events-auto">
+              <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+            </div>
+          )}
+        </LabViewportFrame>
       )}
-    </div>
+
+      {showOnboarding && (
+        <div className="z-50 pointer-events-auto">
+          <OnboardingFlow onComplete={handleOnboardingComplete} />
+        </div>
+      )}
+    </LabModuleShell>
   )
 }

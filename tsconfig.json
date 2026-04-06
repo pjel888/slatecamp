@@ -21,7 +21,46 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/app/dashboard/3d-lab/_components/*": [
+        "./src/features/3d-lab/components/*",
+        "./src/features/3d-lab/components/templates/*",
+        "./src/features/3d-lab/components/rendering/*",
+        "./src/features/3d-lab/components/shell/*"
+      ],
+      "@/app/dashboard/3d-lab/_config/dashboard-visibility": [
+        "./src/features/3d-lab/config/dashboard-visibility"
+      ],
+      "@/app/dashboard/3d-lab/_config/modules/*": [
+        "./src/features/3d-lab/config/modules/*"
+      ],
+      "@/app/dashboard/3d-lab/_config/registry/*": [
+        "./src/features/3d-lab/config/registry/*"
+      ],
+      "@/app/dashboard/3d-lab/_config/taxonomy": [
+        "./src/features/3d-lab/config/taxonomy"
+      ],
+      "@/app/dashboard/3d-lab/_constants/*": [
+        "./src/features/3d-lab/constants/*"
+      ],
+      "@/app/dashboard/3d-lab/_hooks/*": [
+        "./src/features/3d-lab/hooks/*"
+      ],
+      "@/app/dashboard/3d-lab/_scenes/*": [
+        "./src/features/3d-lab/scenes/*"
+      ],
+      "@/app/dashboard/3d-lab/_stores/*": [
+        "./src/features/3d-lab/_stores/*"
+      ],
+      "@/app/dashboard/3d-lab/_templates/*": [
+        "./src/features/3d-lab/templates/*"
+      ],
+      "@/app/dashboard/3d-lab/_types/*": [
+        "./src/features/3d-lab/_types/*"
+      ],
+      "@/app/dashboard/3d-lab/_utils/*": [
+        "./src/features/3d-lab/utils/*"
+      ]
     }
   },
   "include": [

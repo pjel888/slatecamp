@@ -14,6 +14,7 @@ interface RawQuestion {
   options: unknown
   difficulty: number
   prompt_image_url: string | null
+  question_type?: string
 }
 
 interface InterleavedQuestion extends RawQuestion {
@@ -187,7 +188,7 @@ const fetchQuestions = async (
     let query = supabase
       .from('questions')
       .select(
-        'question_id, topic_id, text, options, difficulty, prompt_image_url',
+        'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type',
       )
       .in('topic_id', batch)
       .limit(limit)

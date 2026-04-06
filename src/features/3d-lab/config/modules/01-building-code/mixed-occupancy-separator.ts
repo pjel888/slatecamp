@@ -1,0 +1,96 @@
+// src/app/dashboard/3d-lab/_config/modules/mixed-occupancy-separator.ts
+import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
+
+export const mixedOccupancySeparatorConfig: CutawaySectionConfig = {
+  id: 'mixed-occupancy-separator',
+  title: 'Mixed Occupancy Separator',
+  description:
+    'Fire-rated occupancy separation wall between different building uses (e.g., commercial below, residential above) per PD 1096. Rating depends on occupancy group combination.',
+  subject: 'pd-1096',
+  cutAxis: 'y',
+  camera: { position: [4, 3, 3.5], fov: 42 },
+  layers: [
+    {
+      id: 'commercial-zone',
+      label: 'Commercial Occupancy (Group B)',
+      material: 'Retail / Office Space',
+      description: 'Group B occupancy — commercial/retail on ground floor. Higher hazard classification drives the separation rating.',
+      codeCitation: 'PD 1096 Rule VII §702',
+      depth: 0,
+      geometry: { id: 'geo-comm', type: 'box', args: [4, 3.0, 1.0], position: [0, 1.5, 0], color: '#fef3c7', opacity: 0.4, transparent: true },
+    },
+    {
+      id: 'separator-slab',
+      label: 'Fire-Rated Separator Slab',
+      material: 'RC Slab 200mm (2-hour)',
+      description: '200mm RC floor/ceiling assembly providing 2-hour fire-resistance separation between Group B (commercial) and Group A (residential) occupancies.',
+      codeCitation: 'PD 1096 Rule VII §708',
+      depth: 0.2,
+      geometry: { id: 'geo-sep', type: 'box', args: [4, 0.2, 1.0], position: [0, 3.1, 0], color: '#b0b0b0' },
+    },
+    {
+      id: 'fire-rated-ceiling',
+      label: 'Fire-Rated Ceiling Assembly',
+      material: 'Type X Gypsum Board 2-layers',
+      description: 'Two-layer 16mm Type X gypsum board ceiling on metal furring — contributes to 2-hour floor-ceiling assembly rating.',
+      depth: 0.4,
+      geometry: { id: 'geo-ceil', type: 'box', args: [4, 0.04, 1.0], position: [0, 2.94, 0], color: '#f1f5f9' },
+    },
+    {
+      id: 'residential-zone',
+      label: 'Residential Occupancy (Group A)',
+      material: 'Dwelling Units',
+      description: 'Group A occupancy — residential units above commercial. Requires fire-rated separation from Group B below.',
+      depth: 0.6,
+      geometry: { id: 'geo-res', type: 'box', args: [4, 2.5, 1.0], position: [0, 4.55, 0], color: '#dcfce7', opacity: 0.4, transparent: true },
+    },
+    {
+      id: 'separator-wall',
+      label: 'Vertical Occupancy Separation Wall',
+      material: 'RC / CMU 2-hour',
+      description: 'Vertical fire-rated separation wall between mixed-use areas side-by-side. Rating matches floor separation.',
+      codeCitation: 'PD 1096 Rule VII §708',
+      depth: 0.7,
+      geometry: { id: 'geo-sepwall', type: 'box', args: [0.2, 5.8, 1.0], position: [1.9, 2.9, 0], color: '#9ca3af' },
+    },
+    {
+      id: 'fire-door',
+      label: 'Fire-Rated Door (1-hr)',
+      material: 'Steel Fire Door with Closer',
+      description: 'Minimum 1-hour rated fire door in any opening through occupancy separation wall. Self-closing, positive-latching.',
+      codeCitation: 'PD 1096 Rule VII §710',
+      depth: 0.85,
+      geometry: { id: 'geo-fdoor', type: 'box', args: [0.04, 2.1, 0.9], position: [1.88, 4.65, 0], color: '#78716c' },
+    },
+  ],
+  annotations: [
+    {
+      id: 'ann-rating',
+      label: 'Separation Rating by Group',
+      description: 'Separation rating depends on occupancy groups: B/A separation = 2-hour minimum. Higher hazard groups (F, H) require higher ratings.',
+      codeCitation: 'PD 1096 Rule VII §708, Table VII.1',
+      position: () => [-2.5, 3.1, 0.6],
+    },
+    {
+      id: 'ann-door',
+      label: 'Fire Door in Separation',
+      description: 'Any opening in occupancy separation must be protected with rated fire door assembly matching separation rating. Self-closing hardware required.',
+      codeCitation: 'PD 1096 Rule VII §710',
+      position: () => [2.5, 4.5, 0.5],
+    },
+    {
+      id: 'ann-cont',
+      label: 'Continuous Separation',
+      description: 'Fire-rated separation must be continuous from floor to underside of floor/roof above — no gaps at junctions with other elements.',
+      codeCitation: 'PD 1096 Rule VII §708',
+      position: () => [-2.5, 1.5, 0.6],
+    },
+  ],
+  presets: [
+    { label: 'Full Section', values: { cutPosition: 3.0 } },
+    { label: 'Commercial Level', values: { cutPosition: 1.5 } },
+    { label: 'Separation Zone', values: { cutPosition: 3.1 } },
+    { label: 'Residential Level', values: { cutPosition: 4.5 } },
+  ],
+}
+

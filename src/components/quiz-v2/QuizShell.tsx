@@ -125,9 +125,12 @@ export const QuizShell = ({
     const BATCH_SIZE = 50
     const fetchRemaining = async () => {
       for (let i = 0; i < remainingIds.length; i += BATCH_SIZE) {
-        const batchIds = remainingIds.slice(i, i + BATCH_SIZE)
         try {
-          const batchData = await getSessionQuestions(sessionId, batchIds, questions.length + i)
+          const batchData = await getSessionQuestions({
+            sessionId,
+            offset: questions.length + i,
+            limit: Math.min(BATCH_SIZE, remainingIds.length - i),
+          })
           addQuestions(batchData)
         } catch (err) {
           console.error('Failed to fetch background questions:', err)
@@ -327,17 +330,26 @@ export const QuizShell = ({
 
   const handleNext = useCallback(() => {
     directionRef.current = 'forward'
+    const isLastQuestion = currentIndex === totalQuestions - 1
+
     if (feedbackVisible) {
-      if (currentIndex === totalQuestions - 1) {
+      if (isLastQuestion) {
         useQuizStore.setState((state) => ({
           ui: { ...state.ui, calculatingResults: true },
         }))
       }
       hideFeedback()
     }
-    if (currentIndex === totalQuestions - 1) return
+
+    if (isLastQuestion) {
+      if (results && storeSessionId === sessionId) {
+        endSession(results)
+      }
+      return
+    }
+
     goNext()
-  }, [feedbackVisible, currentIndex, totalQuestions, hideFeedback, goNext])
+  }, [feedbackVisible, currentIndex, totalQuestions, hideFeedback, goNext, results, storeSessionId, sessionId, endSession])
 
   const handleToggleFlag = useCallback(() => {
     if (!currentQuestion) return

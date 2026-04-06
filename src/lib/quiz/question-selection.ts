@@ -1,7 +1,7 @@
 // ─── Question Selection Algorithm (Doc 3 §7) ────────────────────────────────
 // Selects questions based on mode config: topics, difficulty, freshness
 
-import { normalizeOptions } from '@/lib/utils/question'
+import { toClientQuestion, type QuestionForClientRow } from '@/lib/quiz/to-client-question'
 import type { QuizSessionConfig, QuizMode } from '@/types/quiz-config'
 
 interface SelectionParams {
@@ -95,20 +95,5 @@ export const stripQuestionForClient = (question: {
   question_type?: string
   metadata?: Record<string, unknown> | null
 }, position: number): any => ({
-  question_id: question.question_id,
-  topic_id: question.topic_id ?? '',
-  difficulty: question.difficulty ?? 0.5,
-  position,
-  stem: question.text,
-  image_url: question.prompt_image_url ?? null,
-  image_alt_text: null,
-  taxonomy_breadcrumb: '',
-  difficulty_label: (question.difficulty ?? 0.5) < 0.4
-    ? 'Easy' as const
-    : (question.difficulty ?? 0.5) < 0.7
-      ? 'Medium' as const
-      : 'Hard' as const,
-  question_type: (question.question_type ?? 'mcq') as 'mcq' | 'numeric' | 'short_text' | 'formula',
-  unit: (question.metadata as Record<string, unknown> | null)?.unit as string | null ?? null,
-  options: normalizeOptions(question.options),
+  ...toClientQuestion(question as QuestionForClientRow, position),
 })

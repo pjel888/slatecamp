@@ -3,10 +3,7 @@
 
 import { create, StateCreator } from 'zustand'
 import { persist, createJSONStorage, subscribeWithSelector } from 'zustand/middleware'
-import {
-  submitAnswer as submitAnswerAction,
-  endSession as endSessionAction,
-} from '@/lib/actions/quiz-v2'
+import { submitAnswer as submitAnswerAction } from '@/lib/actions/quiz-v2'
 import type {
   QuizMode,
   QuizSessionConfig,
@@ -63,7 +60,7 @@ interface UIState {
 interface SessionSlice {
   sessionId: string | null
   config: QuizSessionConfig | null
-  status: 'idle' | 'loading' | 'intro' | 'active' | 'feedback' | 'submitting' | 'results' | 'review'
+  status: 'idle' | 'loading' | 'intro' | 'active' | 'feedback' | 'submitting' | 'finalizing' | 'results' | 'review'
   mode: QuizMode | null
   questions: QuestionForClient[]
   currentIndex: number
@@ -452,22 +449,34 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       }
 
       if (result.sessionComplete) {
-        endSessionAction({ sessionId, endReason: 'completed' })
-          .then((endResult) => get().endSession(endResult))
-          .catch(() => {
-            get().endSession({
-              score: { correct: get().getCorrectCount(), total: get().totalQuestions, percent: Math.round((get().getCorrectCount() / Math.max(1, get().totalQuestions)) * 100) },
-              subjectBreakdown: [],
-              readinessScoreBefore: 0,
-              readinessScoreAfter: 0,
-              readinessScoreDelta: 0,
-              growthVsPrevious: null,
-              resultsAvailableAt: new Date().toISOString(),
-              trailDayCompleted: false,
-              nextTrailDay: null,
-              missedQuestionCount: get().getUnansweredQuestions().length,
-            })
+        const finalResult = result.finalResult ?? {
+          score: {
+            correct: get().getCorrectCount(),
+            total: get().totalQuestions,
+            percent: Math.round(
+              (get().getCorrectCount() / Math.max(1, get().totalQuestions)) * 100,
+            ),
+          },
+          subjectBreakdown: [],
+          readinessScoreBefore: 0,
+          readinessScoreAfter: 0,
+          readinessScoreDelta: 0,
+          growthVsPrevious: null,
+          resultsAvailableAt: new Date().toISOString(),
+          trailDayCompleted: false,
+          nextTrailDay: null,
+          missedQuestionCount: get().getUnansweredQuestions().length,
+        }
+
+        if (config?.feedback.timing === 'immediate') {
+          set({
+            status: 'feedback',
+            results: finalResult,
           })
+        } else {
+          set({ status: 'finalizing' })
+          get().endSession(finalResult)
+        }
       }
     } catch {
       get().queueOfflineSubmission(input)

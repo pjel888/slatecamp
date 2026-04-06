@@ -11,7 +11,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useQuizStore } from '@/stores/useQuizStore'
-import type { FeedbackData, QuestionForClient, QuizMode } from '@/types/quiz-config'
+import type { ErrorCategory, FeedbackData, QuestionForClient, QuizMode } from '@/types/quiz-config'
 import { MnemonicTip } from './MnemonicTip'
 
 const SocraticExplorer = lazy(() =>
@@ -20,10 +20,13 @@ const SocraticExplorer = lazy(() =>
 
 const SOCRATIC_MODES: QuizMode[] = ['camp', 'focused', 'subject', 'chill']
 
-const ERROR_HEADING_MAP: Record<string, string> = {
-  lack_knowledge: "Here's what to know",
-  careless: 'Watch closely',
-  lack_time: 'You needed more time',
+const ERROR_HEADING_MAP: Record<Exclude<ErrorCategory, 'lucky_guess'>, string> = {
+  knowledge_gap: "Here's what to know",
+  random_guess: 'Slow down',
+  misremembered_fact: 'You were close',
+  computation_error: 'Check the steps',
+  concept_confusion: 'Untangle the concept',
+  misread_question: 'Read the cue words closely',
 }
 
 interface FeedbackPanelProps {

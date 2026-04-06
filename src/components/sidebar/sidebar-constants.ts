@@ -33,9 +33,9 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
     group: 'explore',
     shortcut: '⌘4',
     children: [
-      { id: '3d-site', label: 'Site Development', href: '/dashboard/3d-lab?model=nbcp-envelope' },
-      { id: '3d-stairs', label: 'Stairs', href: '/dashboard/3d-lab?model=stairway-configurator' },
-      { id: '3d-wall', label: 'Unified Wall', href: '/dashboard/3d-lab/wall-configurator' },
+      { id: '3d-site', label: 'Site Development', href: '/dashboard/3d-lab/site-development-controls' },
+      { id: '3d-stairs', label: 'Stairs', href: '/dashboard/3d-lab/stairway-configurator' },
+      { id: '3d-wall', label: 'Unified Wall', href: '/dashboard/3d-lab/unified-wall-configurator' },
     ],
   },
 

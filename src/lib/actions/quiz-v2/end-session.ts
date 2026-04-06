@@ -1,7 +1,6 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
 import { recomputeAndSaveReadinessScore } from '@/lib/actions/readiness-score-update'
 import {
   triggerScoreChangeNotification,
@@ -10,296 +9,279 @@ import {
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
 import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
-import type { EndSessionInput, EndSessionResult } from '@/types/quiz-config'
+import { endSessionInputSchema } from './schemas'
+import {
+  getOwnedSessionOrThrow,
+  isTerminalSessionStatus,
+} from './session-helpers'
+import { createClient, getUser } from '@/lib/supabase/server'
+import type { EndSessionInput, EndSessionResult, QuizSessionConfig } from '@/types/quiz-config'
 
-export const endSession = async (
-  input: EndSessionInput,
-): Promise<EndSessionResult> => {
-  const supabase = await createClient()
-  const {
-    data: { user },
-  } = await getUser()
-  if (!user) throw new Error('Unauthorized')
+interface SessionRow {
+  session_id: string
+  user_id: string
+  status: string
+  config: QuizSessionConfig | null
+  question_ids: string[] | null
+  started_at: string | null
+  completed_at: string | null
+  session_discovery: Record<string, unknown> | null
+}
 
-  const { sessionId, endReason } = input
+interface InteractionRow {
+  interaction_id: string
+  question_id: string
+  is_correct: boolean
+  topic_id: string | null
+  time_spent_ms: number | null
+}
 
-  // 1. Fetch session to validate ownership and gather metadata
-  const { data: session, error: sessionError } = await supabase
-    .from('quiz_sessions')
-    .select(
-      'session_id, user_id, status, config, question_ids, started_at',
-    )
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .single()
+const shouldRunCompletionHooks = (status: string) =>
+  status === 'completed' || status === 'auto_submitted'
 
-  if (sessionError || !session) throw new Error('Session not found')
+const getStoredFinalization = (session: SessionRow) => {
+  const payload = session.session_discovery?._finalization
+  if (!payload || typeof payload !== 'object') return null
 
-  const now = new Date()
-  const startedAt = session.started_at ? new Date(session.started_at) : now
-  const _timeElapsedSeconds = Math.round((now.getTime() - startedAt.getTime()) / 1000)
-
-  // 2. Count answered and correct from user_interactions
-  const { data: interactions, error: interactionsError } = await supabase
-    .from('user_interactions')
-    .select('interaction_id, question_id, is_correct, topic_id, time_spent_ms')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-
-  if (interactionsError) throw interactionsError
-
-  const allInteractions = interactions ?? []
-  const totalAnswered = allInteractions.length
-  const totalCorrect = allInteractions.filter(
-    (i: { is_correct: boolean }) => i.is_correct,
-  ).length
-  const totalQuestions = (session.question_ids as string[] ?? []).length
-  const scorePercent =
-    totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0
-
-  // 3. Determine final status
-  const finalStatus =
-    endReason === 'completed' || endReason === 'timer_expired' || endReason === 'auto_submitted'
-      ? 'completed'
-      : 'abandoned'
-
-  // 4. Get readiness score BEFORE recomputing (from user_global_stats)
-  const { data: preStats } = await supabase
-    .from('user_global_stats')
-    .select('global_readiness_score')
-    .eq('user_id', user.id)
-    .single()
-
-  const readinessScoreBefore = preStats?.global_readiness_score ?? 0
-
-  await recomputeAndSaveReadinessScore(user.id)
-
-  // 5. Read UPDATED readiness score
-  const { data: updatedStats } = await supabase
-    .from('user_global_stats')
-    .select('global_readiness_score')
-    .eq('user_id', user.id)
-    .single()
-
-  const readinessScoreAfter = updatedStats?.global_readiness_score ?? readinessScoreBefore
-  const readinessScoreDelta = readinessScoreAfter - readinessScoreBefore
-
-  // Fire-and-forget notification triggers (non-blocking)
-  if (finalStatus === 'completed') {
-    // Derive a representative topic name from the first answered topic
-    const firstTopicId = allInteractions[0]?.topic_id ?? null
-    let sessionTopicName = 'your session'
-    if (firstTopicId) {
-      const { data: topicNode } = await supabase
-        .from('taxonomy_tree')
-        .select('name')
-        .eq('node_id', firstTopicId)
-        .maybeSingle()
-      if (topicNode?.name) sessionTopicName = topicNode.name
-    }
-    void triggerScoreChangeNotification(user.id, readinessScoreBefore, readinessScoreAfter, sessionTopicName)
-    void triggerZoneTransitionNotification(user.id, readinessScoreBefore, readinessScoreAfter)
+  const data = payload as Record<string, unknown>
+  return {
+    readinessScoreBefore:
+      typeof data.readinessScoreBefore === 'number' ? data.readinessScoreBefore : null,
+    readinessScoreAfter:
+      typeof data.readinessScoreAfter === 'number' ? data.readinessScoreAfter : null,
   }
+}
 
-  // 5b. Fire-and-forget post-session hooks (calibration snapshot, etc.)
-  if (finalStatus === 'completed') {
-    void runPostSessionHooks(user.id)
-  }
-
-  // 6. Determine results_available_at
-  const config = session.config as { mode?: string; results?: { delayHours?: number } } | null
+const buildResultsAvailableAt = (
+  session: SessionRow,
+  referenceTime: Date,
+) => {
+  const config = session.config ?? null
   const delayHours = config?.results?.delayHours ?? 0
-  const resultsAvailableAt =
-    delayHours > 0
-      ? new Date(now.getTime() + delayHours * 60 * 60 * 1000).toISOString()
-      : now.toISOString()
 
-  // 7. Update quiz_sessions
-  const { error: updateError } = await supabase
-    .from('quiz_sessions')
-    .update({
-      status: finalStatus,
-      completed_at: now.toISOString(),
-      updated_at: now.toISOString(),
-    })
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
+  return delayHours > 0
+    ? new Date(referenceTime.getTime() + delayHours * 60 * 60 * 1000).toISOString()
+    : referenceTime.toISOString()
+}
 
-  if (updateError) throw updateError
-
-  // Invalidate dashboard to reflect final results
-  revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard')
-
-  // 8. Subject breakdown from interactions joined with taxonomy
+const buildSubjectBreakdown = async (
+  supabase: any,
+  interactions: InteractionRow[],
+): Promise<EndSessionResult['subjectBreakdown']> => {
   const topicIds = [
     ...new Set(
-      allInteractions
-        .map((i: { topic_id: string | null }) => i.topic_id)
-        .filter((id): id is string => !!id),
+      interactions
+        .map((interaction) => interaction.topic_id)
+        .filter((topicId): topicId is string => topicId != null),
     ),
   ]
 
-  const subjectBreakdown: EndSessionResult['subjectBreakdown'] = []
+  if (topicIds.length === 0) {
+    return []
+  }
 
-  if (topicIds.length > 0) {
-    // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
-    const BATCH_SIZE = 80
-    const allTaxonomyNodes: Array<{ node_id: string; name: string; subject_area: string; discipline_id: string }> = []
-    for (let i = 0; i < topicIds.length; i += BATCH_SIZE) {
-      const batch = topicIds.slice(i, i + BATCH_SIZE)
-      const { data } = await supabase
-        .from('taxonomy_tree')
-        .select('node_id, name, subject_area, discipline_id')
-        .in('node_id', batch)
-      if (data) allTaxonomyNodes.push(...(data as typeof allTaxonomyNodes))
-    }
-    // Group by subject_area
-    const subjectMap = new Map<
-      string,
-      { disciplineId: string; name: string; correct: number; total: number }
-    >()
+  const taxonomyNodes: Array<{
+    node_id: string
+    subject_area: string
+    discipline_id: string
+  }> = []
 
-    for (const interaction of allInteractions) {
-      const node = allTaxonomyNodes.find(
-        (n) => n.node_id === interaction.topic_id,
-      )
+  for (let index = 0; index < topicIds.length; index += 80) {
+    const batch = topicIds.slice(index, index + 80)
+    const { data } = await supabase
+      .from('taxonomy_tree')
+      .select('node_id, subject_area, discipline_id')
+      .in('node_id', batch)
 
-      if (!node) continue
+    taxonomyNodes.push(...((data ?? []) as typeof taxonomyNodes))
+  }
 
-      const key = node.subject_area
-      const existing = subjectMap.get(key)
-      if (existing) {
-        existing.total += 1
-        if (interaction.is_correct) existing.correct += 1
-      } else {
-        subjectMap.set(key, {
-          disciplineId: node.discipline_id,
-          name: node.subject_area,
-          correct: interaction.is_correct ? 1 : 0,
-          total: 1,
-        })
-      }
-    }
+  const taxonomyMap = new Map(
+    taxonomyNodes.map((node) => [node.node_id, node]),
+  )
+  const subjectMap = new Map<
+    string,
+    { disciplineId: string; disciplineName: string; correct: number; total: number }
+  >()
 
-    for (const [disciplineId, data] of subjectMap.entries()) {
-      subjectBreakdown.push({
-        disciplineId: data.disciplineId,
-        disciplineName: data.name,
-        correct: data.correct,
-        total: data.total,
-        percent: data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0,
+  for (const interaction of interactions) {
+    const node = interaction.topic_id ? taxonomyMap.get(interaction.topic_id) : null
+    if (!node) continue
+
+    const key = node.subject_area
+    const current = subjectMap.get(key)
+    if (current) {
+      current.total += 1
+      if (interaction.is_correct) current.correct += 1
+    } else {
+      subjectMap.set(key, {
+        disciplineId: node.discipline_id,
+        disciplineName: node.subject_area,
+        correct: interaction.is_correct ? 1 : 0,
+        total: 1,
       })
     }
   }
 
-  // 9. Check trail day completion
-  const isTrailSession = (config as { setup?: { isTrailSession?: boolean } } | null)?.setup?.isTrailSession ?? false
-  const trailDayId = (config as { setup?: { trailDayId?: string | null } } | null)?.setup?.trailDayId ?? null
-  let trailDayCompleted = false
-  let nextTrailDay: { id: string; title: string; topic: string } | null = null
+  return [...subjectMap.values()].map((subject) => ({
+    disciplineId: subject.disciplineId,
+    disciplineName: subject.disciplineName,
+    correct: subject.correct,
+    total: subject.total,
+    percent: subject.total > 0 ? Math.round((subject.correct / subject.total) * 100) : 0,
+  }))
+}
 
-  if (isTrailSession && trailDayId && finalStatus === 'completed') {
-    trailDayCompleted = true
+const buildTrailProgress = async (
+  supabase: any,
+  session: SessionRow,
+  finalStatus: string,
+) => {
+  const config = session.config ?? null
+  const isTrailSession = config?.setup?.isTrailSession ?? false
+  const trailDayId = config?.setup?.trailDayId ?? null
 
-    // Look up next trail step via trail_steps -> trail_days -> trail_id chain
-    const { data: currentStep } = await supabase
-      .from('trail_steps')
-      .select('step_id, step_order, day_id, trail_days!inner(trail_id)')
-      .eq('step_id', trailDayId)
+  if (!isTrailSession || !trailDayId || !shouldRunCompletionHooks(finalStatus)) {
+    return {
+      trailDayCompleted: false,
+      nextTrailDay: null,
+    }
+  }
+
+  const { data: currentStep } = await supabase
+    .from('trail_steps')
+    .select('step_id, step_order, day_id, trail_days!inner(trail_id)')
+    .eq('step_id', trailDayId)
+    .maybeSingle()
+
+  if (!currentStep) {
+    return {
+      trailDayCompleted: true,
+      nextTrailDay: null,
+    }
+  }
+
+  const { data: nextStep } = await supabase
+    .from('trail_steps')
+    .select('step_id, title, target_node_ids')
+    .eq('day_id', currentStep.day_id)
+    .eq('step_order', currentStep.step_order + 1)
+    .maybeSingle()
+
+  if (!nextStep) {
+    return {
+      trailDayCompleted: true,
+      nextTrailDay: null,
+    }
+  }
+
+  const nodeIds: string[] = nextStep.target_node_ids ?? []
+  let topicName = ''
+
+  if (nodeIds.length > 0) {
+    const { data: node } = await supabase
+      .from('taxonomy_tree')
+      .select('name')
+      .eq('node_id', nodeIds[0])
       .maybeSingle()
 
-    if (currentStep) {
-      const trailId = (currentStep as { trail_days?: { trail_id?: string } }).trail_days?.trail_id
-
-      if (trailId) {
-        // Find next step in same trail (via trail_days)
-        const { data: nextStep } = await supabase
-          .from('trail_steps')
-          .select('step_id, title, target_node_ids')
-          .eq('day_id', currentStep.day_id)
-          .eq('step_order', (currentStep as { step_order: number }).step_order + 1)
-          .maybeSingle()
-
-        if (nextStep) {
-          // Resolve first target node name for display
-          const nodeIds: string[] = (nextStep as { target_node_ids?: string[] }).target_node_ids ?? []
-          let topicName = ''
-          if (nodeIds.length > 0) {
-            const { data: node } = await supabase
-              .from('taxonomy_tree')
-              .select('name')
-              .eq('node_id', nodeIds[0])
-              .maybeSingle()
-            topicName = node?.name ?? ''
-          }
-
-          nextTrailDay = {
-            id: nextStep.step_id,
-            title: nextStep.title,
-            topic: topicName,
-          }
-        }
-      }
-    }
+    topicName = node?.name ?? ''
   }
 
-  const missedQuestionCount = totalQuestions - totalAnswered
+  return {
+    trailDayCompleted: true,
+    nextTrailDay: {
+      id: nextStep.step_id,
+      title: nextStep.title,
+      topic: topicName,
+    },
+  }
+}
 
-  // Generate feed-forward recommendations (non-blocking — fall back to empty)
-  let recommendations: EndSessionResult['recommendations'] = []
-  if (finalStatus === 'completed') {
+const writeBehavioralSummary = async (
+  sessionId: string,
+  userId: string,
+  interactions: InteractionRow[],
+) => {
+  const interactionIds = interactions.map((interaction) => interaction.interaction_id)
+  if (interactionIds.length === 0) return
+
+  ;(async () => {
     try {
-      recommendations = await generateRecommendations(user.id, sessionId, 3)
+      const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
+      const { generateSessionSummary } = await import('@/lib/adaptive/generateCoachObservation')
+      const admin = getAdmin()
+
+      const { data: indicators } = await admin
+        .from('cognitive_state_indicators')
+        .select('interaction_id, decision_confidence, hesitancy_index, cognitive_load_proxy, anomalous_behavior_likelihood, identity_consistency_score')
+        .in('interaction_id', interactionIds)
+
+      if (!indicators || indicators.length === 0) return
+
+      const summary = generateSessionSummary(
+        indicators.map((indicator: Record<string, unknown>) => ({
+          questionId: indicator.interaction_id as string,
+          indicators: {
+            decisionConfidence: indicator.decision_confidence as 'high' | 'moderate' | 'low' | 'guessing',
+            hesitancyIndex: indicator.hesitancy_index as number,
+            cognitiveLoadProxy: indicator.cognitive_load_proxy as number,
+            anomalousBehaviorLikelihood: indicator.anomalous_behavior_likelihood as number,
+            identityConsistencyScore: indicator.identity_consistency_score as number | null,
+          },
+        })),
+      )
+
+      await admin.from('session_behavioral_summaries').insert({
+        session_id: sessionId,
+        user_id: userId,
+        item_confidence_levels: summary.itemConfidenceLevels,
+        session_consistency_score: summary.sessionConsistencyScore,
+        session_engagement_score: summary.sessionEngagementScore,
+        integrity_flag_counts: summary.integrityFlags,
+      })
     } catch {
-      // Recommendations are non-critical; proceed without them
-      recommendations = []
+      // Never block results on behavioral summarization.
     }
+  })()
+}
+
+const buildEndSessionResult = async ({
+  supabase,
+  session,
+  userId,
+  interactions,
+  readinessScoreBefore,
+  readinessScoreAfter,
+  finalStatus,
+}: {
+  supabase: any
+  session: SessionRow
+  userId: string
+  interactions: InteractionRow[]
+  readinessScoreBefore: number
+  readinessScoreAfter: number
+  finalStatus: string
+}): Promise<EndSessionResult> => {
+  const totalQuestions = (session.question_ids ?? []).length
+  const totalAnswered = interactions.length
+  const totalCorrect = interactions.filter((interaction) => interaction.is_correct).length
+  const scorePercent =
+    totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0
+
+  const [subjectBreakdown, trailProgress, recommendations] = await Promise.all([
+    buildSubjectBreakdown(supabase, interactions),
+    buildTrailProgress(supabase, session, finalStatus),
+    shouldRunCompletionHooks(finalStatus)
+      ? generateRecommendations(userId, session.session_id, 3).catch(() => [])
+      : Promise.resolve([]),
+  ])
+
+  if (shouldRunCompletionHooks(finalStatus)) {
+    void writeBehavioralSummary(session.session_id, userId, interactions)
   }
 
-  // Patent: Session behavioral summary — dynamic import to avoid crashing module
-  if (finalStatus === 'completed') {
-    const interactionIds = interactions?.map((i: { interaction_id: string }) => i.interaction_id) ?? []
-    if (interactionIds.length > 0) {
-      ;(async () => {
-        try {
-          const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
-          const { generateSessionSummary } = await import('@/lib/adaptive/generateCoachObservation')
-          const admin = getAdmin()
-
-          const { data: indicators } = await admin
-            .from('cognitive_state_indicators')
-            .select('interaction_id, decision_confidence, hesitancy_index, cognitive_load_proxy, anomalous_behavior_likelihood, identity_consistency_score')
-            .in('interaction_id', interactionIds)
-
-          if (indicators && indicators.length > 0) {
-            const summaryItems = indicators.map((ind: Record<string, unknown>) => ({
-              questionId: ind.interaction_id as string,
-              indicators: {
-                decisionConfidence: ind.decision_confidence as 'high' | 'moderate' | 'low' | 'guessing',
-                hesitancyIndex: ind.hesitancy_index as number,
-                cognitiveLoadProxy: ind.cognitive_load_proxy as number,
-                anomalousBehaviorLikelihood: ind.anomalous_behavior_likelihood as number,
-                identityConsistencyScore: ind.identity_consistency_score as number | null,
-              },
-            }))
-
-            const summary = generateSessionSummary(summaryItems)
-            await admin.from('session_behavioral_summaries').insert({
-              session_id: sessionId,
-              user_id: user.id,
-              item_confidence_levels: summary.itemConfidenceLevels,
-              session_consistency_score: summary.sessionConsistencyScore,
-              session_engagement_score: summary.sessionEngagementScore,
-              integrity_flag_counts: summary.integrityFlags,
-            })
-          }
-        } catch {
-          // Fire-and-forget — never affects results
-        }
-      })()
-    }
-  }
+  const referenceTime = session.completed_at ? new Date(session.completed_at) : new Date()
 
   return {
     score: {
@@ -310,12 +292,166 @@ export const endSession = async (
     subjectBreakdown,
     readinessScoreBefore,
     readinessScoreAfter,
-    readinessScoreDelta,
-    growthVsPrevious: null, // computed separately via snapshots if needed
-    resultsAvailableAt,
-    trailDayCompleted,
-    nextTrailDay,
-    missedQuestionCount,
+    readinessScoreDelta: readinessScoreAfter - readinessScoreBefore,
+    growthVsPrevious: null,
+    resultsAvailableAt: buildResultsAvailableAt(session, referenceTime),
+    trailDayCompleted: trailProgress.trailDayCompleted,
+    nextTrailDay: trailProgress.nextTrailDay,
+    missedQuestionCount: totalQuestions - totalAnswered,
     recommendations,
+  }
+}
+
+export const endSession = async (
+  input: EndSessionInput,
+): Promise<EndSessionResult> => {
+  try {
+    const parsedInput = endSessionInputSchema.parse(input)
+    const supabase = await createClient()
+    const {
+      data: { user },
+    } = await getUser()
+
+    if (!user) throw new Error('Unauthorized')
+
+    const session = await getOwnedSessionOrThrow<SessionRow>(
+      supabase,
+      user.id,
+      parsedInput.sessionId,
+      'session_id, user_id, status, config, question_ids, started_at, completed_at, session_discovery',
+    )
+
+    const { data: interactions, error: interactionsError } = await supabase
+      .from('user_interactions')
+      .select('interaction_id, question_id, is_correct, topic_id, time_spent_ms')
+      .eq('session_id', parsedInput.sessionId)
+      .eq('user_id', user.id)
+
+    if (interactionsError) throw interactionsError
+
+    const allInteractions = (interactions ?? []) as InteractionRow[]
+    const storedFinalization = getStoredFinalization(session)
+
+    if (isTerminalSessionStatus(session.status as any)) {
+      const { data: stats } = await supabase
+        .from('user_global_stats')
+        .select('global_readiness_score')
+        .eq('user_id', user.id)
+        .single()
+
+      const readinessScoreAfter = storedFinalization?.readinessScoreAfter ??
+        stats?.global_readiness_score ??
+        0
+      const readinessScoreBefore = storedFinalization?.readinessScoreBefore ??
+        readinessScoreAfter
+
+      return await buildEndSessionResult({
+        supabase,
+        session,
+        userId: user.id,
+        interactions: allInteractions,
+        readinessScoreBefore,
+        readinessScoreAfter,
+        finalStatus: session.status,
+      })
+    }
+
+    const finalStatus =
+      parsedInput.endReason === 'user_exit'
+        ? 'abandoned'
+        : parsedInput.endReason === 'auto_submitted'
+          ? 'auto_submitted'
+          : 'completed'
+
+    const { data: preStats } = await supabase
+      .from('user_global_stats')
+      .select('global_readiness_score')
+      .eq('user_id', user.id)
+      .single()
+
+    const readinessScoreBefore = preStats?.global_readiness_score ?? 0
+    await recomputeAndSaveReadinessScore(user.id)
+
+    const { data: updatedStats } = await supabase
+      .from('user_global_stats')
+      .select('global_readiness_score')
+      .eq('user_id', user.id)
+      .single()
+
+    const readinessScoreAfter =
+      updatedStats?.global_readiness_score ?? readinessScoreBefore
+
+    if (shouldRunCompletionHooks(finalStatus)) {
+      const firstTopicId = allInteractions[0]?.topic_id ?? null
+      let sessionTopicName = 'your session'
+
+      if (firstTopicId) {
+        const { data: topicNode } = await supabase
+          .from('taxonomy_tree')
+          .select('name')
+          .eq('node_id', firstTopicId)
+          .maybeSingle()
+
+        if (topicNode?.name) sessionTopicName = topicNode.name
+      }
+
+      void triggerScoreChangeNotification(
+        user.id,
+        readinessScoreBefore,
+        readinessScoreAfter,
+        sessionTopicName,
+      )
+      void triggerZoneTransitionNotification(
+        user.id,
+        readinessScoreBefore,
+        readinessScoreAfter,
+      )
+      void runPostSessionHooks(user.id)
+    }
+
+    const nowIso = new Date().toISOString()
+    const sessionDiscovery = {
+      ...(session.session_discovery ?? {}),
+      _finalization: {
+        readinessScoreBefore,
+        readinessScoreAfter,
+      },
+    }
+
+    const { error: updateError } = await supabase
+      .from('quiz_sessions')
+      .update({
+        status: finalStatus,
+        completed_at: nowIso,
+        updated_at: nowIso,
+        session_discovery: sessionDiscovery,
+      })
+      .eq('session_id', parsedInput.sessionId)
+      .eq('user_id', user.id)
+
+    if (updateError) throw updateError
+
+    const updatedSession: SessionRow = {
+      ...session,
+      status: finalStatus,
+      completed_at: nowIso,
+      session_discovery: sessionDiscovery,
+    }
+
+    revalidateDashboardCacheTags(user.id)
+    revalidatePath('/dashboard')
+
+    return await buildEndSessionResult({
+      supabase,
+      session: updatedSession,
+      userId: user.id,
+      interactions: allInteractions,
+      readinessScoreBefore,
+      readinessScoreAfter,
+      finalStatus,
+    })
+  } catch (error) {
+    console.error('[quiz-v2/end-session] Failed:', error)
+    throw error
   }
 }

@@ -242,33 +242,18 @@
 - `src/lib/developer` now contains only `changelog.ts` and its AGENTS file
 - State handoff note: the pre-existing `.ai/state/current-task.md` was stale and `.ai/tasks/` does not exist in the live workspace
 
-### 3D Lab Audit Verified Facts (2026-04-06)
-- `/dashboard/3d-lab` still renders under the shared dashboard shell, but `src/app/dashboard/3d-lab/layout.tsx` mounts a fixed viewport-wide R3F canvas for the entire 3D Lab subtree
-- `src/app/dashboard/3d-lab/page.tsx` splits between `LabBrowser` and `ModuleViewer` by `?model=` and still describes the viewer as a standalone "no sidebar" mode
-- Dashboard visibility is currently limited to exactly four modules in `src/features/3d-lab/config/dashboard-visibility.ts`:
-  - `site-development-controls`
-  - `stairway-configurator`
-  - `calculator-flooring`
-  - `unified-wall-configurator`
-- Sidebar child links do not match that visibility contract:
-  - `src/components/sidebar/sidebar-constants.ts` links Site Development to `?model=nbcp-envelope`
-  - `src/components/sidebar/sidebar-constants.ts` links Unified Wall to `/dashboard/3d-lab/wall-configurator`
-- `src/features/3d-lab/components/ModuleViewer.tsx` builds shell metadata from a shim with empty hotspots, `estimatedMinutes: 5`, and `visitedCount={0}`, so the top bar and context card are not backed by real module data
-- `src/features/3d-lab/components/LabViewport.tsx` still imports runtime pieces from route-private `src/app/dashboard/3d-lab/_templates`, `_scenes`, and `_config/modules/*`
-- 3D Lab state is fragmented across three stores:
-  - `src/stores/useLabStore.ts`
-  - `src/app/dashboard/3d-lab/_stores/labStore.ts`
-  - `src/features/wall-configurator/store/useWallConfigStore.ts`
-- The promoted feature hook `src/features/3d-lab/hooks/useInvalidateOnChange.ts` still imports the route-private `src/app/dashboard/3d-lab/_stores/labStore.ts`
-- The codebase has real 3D Lab persistence hooks:
-  - `src/lib/actions/lab.ts` defines `create3DLabSession`
-  - `src/lib/actions/lab.ts` defines `record3DLabInteraction`
-  - `src/lib/actions/lab.ts` defines `get3DModuleBySlug`
-- The schema defines `spatial_hotspots` in `DATABASE_SCHEMA.sql`, but the current 3D Lab viewer route does not use that loader path
-- `src/features/3d-lab/components/ModuleViewer.tsx` is the only live caller of `useLabTelemetry`, and the telemetry hook's interaction recorders are not wired into hotspot, zoom, or orbit events
-- `src/lib/lab-analytics.ts` batches events to `/api/analytics/3d-lab`, but no matching API route exists under `src/app/api`
-- `src/features/wall-configurator/components/WallConfigurator.tsx` renders a standalone `min-h-screen` wizard/header inside `/dashboard/3d-lab/wall-configurator`, creating a second 3D Lab shell instead of reusing the query-param module viewer
-- The dated audit plan for this work lives at `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
+### 3D Lab Implementation Completion (2026-04-06)
+- **Visual Hierarchy Standardized**:
+  - Entire 3D Lab feature refactored to use Campfire semantic tokens (`primary`, `camp-black`, `text-secondary`, etc.).
+  - Unified type scale: `font-mono 9px` for eyebrows, `13px-16px` for titles, `12px` for body copy.
+  - Consistent overlay treatment: `bg-white/95 backdrop-blur-md shadow-xl border-border-default/50`.
+- **Component Evolution**:
+  - `LabTopBar` refactored for professional "dark mode" HUD feel.
+  - `OnboardingFlow` refined with responsive behavior (centered desktop, mobile bottom-sheet).
+  - `ModuleCard` and `CategoryCard` normalized with standard radii, spacing, and hover shadows.
+- **Plan Execution Status**: 
+  - All three phases of `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md` are functionally complete.
+  - Containerization debt is fully resolved; `src/app/dashboard/3d-lab/` is now a clean route shell.
 
 ### 3D Lab Deep UI Audit Follow-up Blocker (2026-04-06)
 - A follow-up prompt on 2026-04-06 requested a deeper UI/component audit and Storybook implementation plan rewrite for `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md`
@@ -282,6 +267,17 @@
 - `.ai/plans/2026-04-06-3d-lab-audit-and-implementation.md` now explicitly requires Storybook updates whenever 3D Lab UI components are componentized, modularized, moved behind new shell boundaries, or materially restyled
 - The plan's Phase 2 now makes story, fixture, mock, and decorator updates part of the same change set as component extraction work
 - The plan's Phase 3 now requires Storybook visual coverage for shared shell primitives, overlay states, and module variants so visual hierarchy changes are reviewed outside the live route
+
+### Quiz-v2 Testing Feature Remediation Verified Facts (2026-04-06)
+- **Hardened loading:** `getSessionQuestions` now derives question slices server-side from `sessionId`, `offset`, and `limit`, preventing arbitrary question payload requests.
+- **Single-Owner Finalization:** `submitAnswer` now triggers session completion internally on the last question, awaiting post-submit work to ensure ordered execution.
+- **Idempotent Finalization:** `endSession` includes terminal status guards to prevent redundant score recomputations and notifications.
+- **RPC Fallback Alignment:** `submitAnswer` legacy fallback path now returns `wikiSlug` and correctly updates `quiz_sessions` counters (`answered_count`, `correct_count`).
+- **Unified Question Contract:** All question payload paths use the centralized `fetchQuestionsForClient` mapper in `@/lib/quiz/to-client-question`.
+- **Validation:** All quiz-v2 server actions now utilize strict Zod input validation (`schemas.ts`).
+- **Test Coverage:** Added comprehensive tests for `submitAnswer` (`submit-answer.test.ts`) covering success, fallback, and completion paths.
+- **3D-Lab Fix:** Confirmed 3D-lab module resolution issues were resolved by the feature refactor (`src/features/3d-lab/utils/`).
+- **Verification:** `bun test`, `bun run lint`, `bun run type-check`, and `bun run build` all passed on 2026-04-06.
 
 ---
 
@@ -416,7 +412,7 @@
   - `LabBrowser.stories.tsx`
   - `ModuleCard.stories.tsx`
 - Increased the live story inventory from `60` to `63` story files/scenes while keeping the placeholder backlog at `0`
-- Re-ran `bun run check:storybook-placeholders`, `bun run build-storybook`, and `bun run build` successfully
+- Re-ran `bun run check:storybook-placeholders`, `bun run build-storybook`, and `bun run build} successfully
 - Verified the wiki happy path remained intact because `/dashboard/wiki/[slug]` still built and the wiki diff still showed only the four pre-existing Phase 4 widget alias files
 
 ### Session 2026-04-06: Storybook Overhaul Phase 6
@@ -451,6 +447,18 @@
 - Updated the live 3D Lab implementation plan so Storybook work is required whenever 3D Lab UI components are componentized, modularized, moved, or materially restyled
 - Expanded the plan language to require paired story, fixture, mock, decorator, and isolated visual coverage updates during the same implementation pass
 - Updated `.ai/state/current-task.md` and `.ai/state/memory.md` to preserve the new Storybook sync requirement
+
+### Session 2026-04-06: Quiz-v2 Testing Feature Remediation
+- Read `.ai/state/*` and `.ai/plans/2026-04-06-testing-feature-remediation-plan.md`
+- Verified implementation of server-derived slicing in `getSessionQuestions`
+- Verified single-owner finalization logic in `submit-answer.ts`
+- Verified idempotency guards in `end-session.ts`
+- Verified RPC fallback alignment and unified question payload contract
+- Added `src/lib/actions/quiz-v2/submit-answer.test.ts` with valid UUID mocks
+- Ran full verification suite: `bun test`, `bun run lint`, `bun run type-check`, and `bun run build`
+- All verification steps passed successfully
+- Updated `src/lib/actions/quiz-v2/AGENTS.md` to document the hardened architecture
+- Finalized `.ai/state/current-task.md` and `.ai/state/memory.md`
 
 ---
 

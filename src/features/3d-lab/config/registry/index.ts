@@ -75,3 +75,4 @@ export function getModulesByTemplate(templateType: TemplateType): ModuleRegistry
 export function getModulesByPhase(phase: 1 | 2 | 3): ModuleRegistryEntry[] {
   return ALL_MODULES.filter((m) => m.launchPhase === phase)
 }
+

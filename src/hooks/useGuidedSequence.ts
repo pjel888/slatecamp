@@ -4,7 +4,7 @@
 // Manages step-by-step hotspot sequencing during guided exploration mode.
 
 import { useMemo } from 'react'
-import { useLabStore } from '@/stores/useLabStore'
+import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 import type { HotspotData } from '@/types/3d-lab'
 
 interface UseGuidedSequenceConfig {

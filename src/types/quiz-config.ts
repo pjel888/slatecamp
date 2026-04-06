@@ -67,6 +67,15 @@ export type ScoreBand =
   | 'building'
   | 'needs-review'
 
+export type ErrorCategory =
+  | 'concept_confusion'
+  | 'misremembered_fact'
+  | 'computation_error'
+  | 'misread_question'
+  | 'random_guess'
+  | 'knowledge_gap'
+  | 'lucky_guess'
+
 // ─── The Config Object (JSONB stored on quiz_sessions.config) ────────────────
 
 export interface QuizSessionConfig {
@@ -232,6 +241,7 @@ export interface SubmitAnswerResult {
   correctCount: number
   sessionComplete: boolean
   errorDiagnostic: ErrorDiagnostic | null
+  finalResult?: EndSessionResult | null
   // Generation effect fields (only present for non-MCQ)
   closeness?: number           // 0–1 how close the answer was
   correctAnswer?: string       // display-ready correct answer string
@@ -343,7 +353,7 @@ export interface TaxonomySubtopic {
 // ─── Error Diagnostic (from error classifier) ───────────────────────────────
 
 export interface ErrorDiagnostic {
-  category: string
+  category: ErrorCategory
   confidence: number
   message: string
 }

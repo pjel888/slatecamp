@@ -1,60 +1,47 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
-import { stripQuestionForClient } from '@/lib/quiz/question-selection'
+import { getOwnedSessionOrThrow } from '@/lib/actions/quiz-v2/session-helpers'
+import { sessionQuestionSliceInputSchema, type SessionQuestionSliceInput } from '@/lib/actions/quiz-v2/schemas'
+import { fetchQuestionsForClient } from '@/lib/quiz/to-client-question'
 import type { QuestionForClient } from '@/types/quiz-config'
 
-interface SessionQuestionRow {
-  question_id: string
-  text: string
-  options: unknown
-  prompt_image_url: string | null
-  difficulty: number | null
-  topic_id: string | null
-  question_type: string | null
+interface SessionQuestionIdsRow {
+  question_ids: string[] | null
 }
 
-/**
- * Fetches specific questions for a quiz session.
- * Used for background hydration of large question sets.
- */
 export const getSessionQuestions = async (
-  sessionId: string,
-  questionIds: string[],
-  offset: number = 0,
+  input: SessionQuestionSliceInput,
 ): Promise<QuestionForClient[]> => {
-  const supabase = await createClient()
-  const {
-    data: { user },
-  } = await getUser()
-  if (!user) throw new Error('Unauthorized')
+  try {
+    const parsedInput = sessionQuestionSliceInputSchema.parse(input)
+    const supabase = await createClient()
+    const {
+      data: { user },
+    } = await getUser()
 
-  if (questionIds.length === 0) return []
+    if (!user) throw new Error('Unauthorized')
 
-  // Verify session ownership
-  const { data: session } = await supabase
-    .from('quiz_sessions')
-    .select('session_id')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .single()
+    const session = await getOwnedSessionOrThrow<SessionQuestionIdsRow>(
+      supabase,
+      user.id,
+      parsedInput.sessionId,
+      'question_ids',
+    )
 
-  if (!session) throw new Error('Session not found')
+    const questionIds = session.question_ids ?? []
+    const slice = questionIds.slice(
+      parsedInput.offset,
+      parsedInput.offset + parsedInput.limit,
+    )
 
-  // Fetch batch
-  const { data: questions, error } = await supabase
-    .from('questions')
-    .select('question_id, text, options, prompt_image_url, difficulty, topic_id, question_type')
-    .in('question_id', questionIds)
-
-  if (error || !questions) return []
-
-  // Reorder to match input IDs and strip for client
-  const typedQuestions = questions as SessionQuestionRow[]
-  const questionMap = new Map(typedQuestions.map((question) => [question.question_id, question]))
-  const ordered = questionIds
-    .map((id) => questionMap.get(id))
-    .filter((question): question is SessionQuestionRow => question != null)
-
-  return ordered.map((question, i) => stripQuestionForClient(question, offset + i + 1))
+    return await fetchQuestionsForClient({
+      supabase,
+      questionIds: slice,
+      offset: parsedInput.offset,
+    })
+  } catch (error) {
+    console.error('[quiz-v2/get-session-questions] Failed:', error)
+    throw error
+  }
 }

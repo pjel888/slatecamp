@@ -46,6 +46,29 @@ export function estimateReadingTime(markdown: string): number {
   return Math.max(1, Math.round(words / 200))
 }
 
+/**
+ * Sanitize MDX content to avoid common parsing errors from raw database content.
+ * Fixes "Unexpected character \" in attribute name" errors by removing backslashes 
+ * incorrectly used for line continuation or quote escaping inside JSX tags.
+ */
+export function sanitizeMDX(content: string): string {
+  if (!content) return ''
+  
+  return content
+    // 1. Fix literal \" used inside JSX tags (MDX doesn't support backslash escaping in attributes)
+    // This replaces attr=\"value\" with attr="value"
+    .replace(/(<[A-Z][a-zA-Z0-9]*\s+[^>]*?=\s*)\\"/g, '$1"')
+    .replace(/(\s*=\s*"[^"]*)\\"/g, '$1"')
+    
+    // 2. Remove backslashes used for line continuation inside JSX tags
+    // e.g. <Component \ /> or <Component attr="val" \ next="val" />
+    .replace(/(<[A-Z][a-zA-Z0-9]*\s+[^>]*?)\s*\\\s*(\/?>|[a-zA-Z])/g, '$1 $2')
+    
+    // 3. Escape raw "<" characters that look like tags but aren't (e.g. "a < b")
+    // MDX 2 is sensitive to < followed by a letter/number without a space.
+    .replace(/<([0-9=])/g, '&lt;$1')
+}
+
 // --- Markdown ↔ HTML (Tiptap) ---
 
 /** Convert markdown to HTML for Tiptap. */

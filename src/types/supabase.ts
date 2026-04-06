@@ -1356,8 +1356,10 @@ export type Database = {
       quiz_sessions: {
         Row: {
           accuracy_by_block: Json | null
+          answered_count: number
           completed_at: string | null
           config: Json
+          correct_count: number
           current_question_index: number
           discipline_id: string | null
           is_endurance_session: boolean | null
@@ -1376,8 +1378,10 @@ export type Database = {
         }
         Insert: {
           accuracy_by_block?: Json | null
+          answered_count?: number
           completed_at?: string | null
           config?: Json
+          correct_count?: number
           current_question_index?: number
           discipline_id?: string | null
           is_endurance_session?: boolean | null
@@ -1396,8 +1400,10 @@ export type Database = {
         }
         Update: {
           accuracy_by_block?: Json | null
+          answered_count?: number
           completed_at?: string | null
           config?: Json
+          correct_count?: number
           current_question_index?: number
           discipline_id?: string | null
           is_endurance_session?: boolean | null

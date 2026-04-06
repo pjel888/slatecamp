@@ -41,52 +41,59 @@ export function ModuleList({ categoryKey, modules, basePath, onBack }: ModuleLis
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
       {/* Breadcrumb */}
-      <nav className="mb-4 flex items-center gap-1.5 text-[11px] text-[#8896A7]">
+      <nav className="mb-6 flex items-center gap-1.5 font-mono text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
         <button
           onClick={onBack}
-          className="flex items-center gap-1 rounded-sm px-1.5 py-0.5 transition-colors duration-150 ease-out hover:bg-zinc-100 hover:text-[#1A2332]"
+          className="flex items-center gap-1.5 rounded-sm px-1.5 py-0.5 transition-colors duration-150 ease-out hover:bg-muted hover:text-foreground"
         >
           <ArrowLeft size={12} weight="bold" />
           3D Lab
         </button>
-        <CaretRight size={10} />
-        <span className="font-medium text-[#1A2332]">{categoryLabel}</span>
+        <CaretRight size={10} className="opacity-40" />
+        <span className="text-foreground">{categoryLabel}</span>
       </nav>
 
       {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-lg font-semibold text-[#1A2332]">{categoryLabel}</h1>
+      <div className="mb-8">
+        <h1 className="text-xl font-bold text-foreground tracking-tight">{categoryLabel}</h1>
         {category?.description && (
-          <p className="mt-1 text-[11px] text-[#4A5568]">{category.description}</p>
+          <p className="mt-1.5 text-[13px] text-text-secondary leading-relaxed max-w-2xl">{category.description}</p>
         )}
-        <p className="mt-1 text-[11px] text-[#8896A7]">
-          {availableCount} available &middot; {modules.length} total
-        </p>
+        <div className="mt-4 flex items-center gap-2">
+          <span className="rounded-full bg-emerald/10 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-emerald border border-emerald/10">
+            {availableCount} Available
+          </span>
+          <span className="rounded-full bg-muted/30 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-muted-foreground border border-border-default/20">
+            {modules.length} Total Modules
+          </span>
+        </div>
       </div>
 
       {/* Search */}
-      <div className="relative mb-6">
+      <div className="relative mb-8">
         <SCIcon
           icon={MagnifyingGlass}
           size="sm"
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+          className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground"
         />
         <input
           type="text"
           placeholder="Search modules by name, code reference, or template type…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full rounded-sm border border-zinc-200 bg-white py-2 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full rounded-lg border border-border-default/60 bg-white py-2.5 pl-10 pr-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/5 transition-all duration-200"
         />
       </div>
 
       {/* Module Grid */}
       {filtered.length === 0 ? (
-        <p className="py-12 text-center text-sm text-[#8896A7]">
-          {search ? 'No modules match your search.' : 'No modules in this category yet.'}
-        </p>
+        <div className="py-24 text-center">
+          <p className="text-[13px] text-muted-foreground">
+            {search ? 'No modules match your search.' : 'No modules in this category yet.'}
+          </p>
+        </div>
       ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filtered.map((m) => (
             <ModuleCard key={m.id} module={m} basePath={basePath} />
           ))}

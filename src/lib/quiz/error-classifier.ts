@@ -1,25 +1,14 @@
-// ─── Wrong Answer Taxonomy: Error Classifier ─────────────────────────────────
-// Classifies incorrect answers into pedagogical categories based on
-// behavioral signals (time, history, attempts). No shame language.
+import type { ErrorCategory, ErrorDiagnostic } from '@/types/quiz-config'
 
-export type ErrorCategory =
-  | 'concept_confusion'
-  | 'misremembered_fact'
-  | 'computation_error'
-  | 'misread_question'
-  | 'random_guess'
-  | 'knowledge_gap'
+export type ErrorClassification = ErrorDiagnostic
+export type { ErrorCategory }
 
-export interface ErrorClassification {
-  category: ErrorCategory
-  confidence: number // 0–1
-  message: string // Student-facing coaching message (growth-framed)
+export const LUCKY_GUESS_DIAGNOSTIC: ErrorClassification = {
+  category: 'lucky_guess',
+  confidence: 0.8,
+  message: 'You got this right very quickly. Review the rationale once so the answer sticks.',
 }
 
-/**
- * Classify a wrong answer into a pedagogical error category.
- * Returns null for correct answers — there's no error to classify.
- */
 export const classifyError = (
   timeSpentMs: number,
   medianTimeMs: number,
@@ -29,8 +18,6 @@ export const classifyError = (
 ): ErrorClassification | null => {
   if (isCorrect) return null
 
-  // Guard against division by zero — treat 0 median as "no data" and
-  // fall through to the knowledge_gap default.
   if (medianTimeMs <= 0) {
     return {
       category: 'knowledge_gap',
@@ -41,7 +28,6 @@ export const classifyError = (
 
   const timeRatio = timeSpentMs / medianTimeMs
 
-  // Very fast answer → likely random guess
   if (timeRatio < 0.4) {
     return {
       category: 'random_guess',
@@ -50,7 +36,6 @@ export const classifyError = (
     }
   }
 
-  // No prior history + slow → knowledge gap
   if (!hasHistory && timeRatio > 1.2) {
     return {
       category: 'knowledge_gap',
@@ -59,7 +44,6 @@ export const classifyError = (
     }
   }
 
-  // Has history + normal-to-moderate time → misremembered fact
   if (hasHistory && timeRatio >= 0.4 && timeRatio <= 1.5) {
     return {
       category: 'misremembered_fact',
@@ -68,7 +52,6 @@ export const classifyError = (
     }
   }
 
-  // Very slow → computation / process error
   if (timeRatio > 2.0) {
     return {
       category: 'computation_error',
@@ -77,7 +60,6 @@ export const classifyError = (
     }
   }
 
-  // Default fallback
   return {
     category: 'knowledge_gap',
     confidence: 0.3,

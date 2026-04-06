@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import type { ParametricControl, ComplianceState } from '@/types/3d-lab'
-import { useLabStore } from '@/stores/useLabStore'
+import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 
 export const useComplianceCheck = (controls: ParametricControl[]) => {
   const parametricValues = useLabStore((s) => s.parametricValues)

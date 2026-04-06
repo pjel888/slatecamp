@@ -2,15 +2,22 @@
 
 import { useEffect, useRef, useState } from 'react'
 import type { ModuleConfig } from '@/types/3d-lab'
+import { LabMetaPanel } from './shell/LabMetaPanel'
+import { cn } from '@/lib/utils'
 
 interface ModuleContextCardProps {
   config: ModuleConfig
   onDismiss: () => void
+  className?: string
 }
 
 const AUTO_DISMISS_MS = 6000
 
-export const ModuleContextCard = ({ config, onDismiss }: ModuleContextCardProps) => {
+/**
+ * ModuleContextCard — Refactored to use LabMetaPanel and semantic tokens.
+ * Displays brief module metadata on first visit.
+ */
+export const ModuleContextCard = ({ config, onDismiss, className }: ModuleContextCardProps) => {
   const [visible, setVisible] = useState(false)
   const [show, setShow] = useState(false)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -64,101 +71,54 @@ export const ModuleContextCard = ({ config, onDismiss }: ModuleContextCardProps)
 
   return (
     <div
-      style={{
-        position: 'fixed',
-        top: '52px', // 36px top bar + 16px gap
-        left: '16px',
-        zIndex: 250,
-        maxWidth: '280px',
-        backgroundColor: '#FFFFFF',
-        border: '0.5px solid #D4DAE3',
-        borderRadius: '8px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-        padding: '12px',
-        overflow: 'hidden',
-        opacity: visible ? 1 : 0,
-        transition: 'opacity 150ms ease-out',
-        pointerEvents: visible ? 'auto' : 'none',
-      }}
+      className={cn(
+        "fixed top-12 left-4 z-[250] w-[300px] transition-opacity duration-150",
+        visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
+        className
+      )}
     >
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-        {/* Module code reference */}
-        <p
-          style={{
-            fontFamily: '"DM Mono", monospace',
-            fontSize: '9px',
-            textTransform: 'uppercase',
-            letterSpacing: '0.06em',
-            color: '#8896A7',
-            margin: 0,
-            lineHeight: 1.4,
-          }}
-        >
-          {config.codeReference}
-        </p>
+      <LabMetaPanel className="relative">
+        <div className="flex flex-col gap-1.5">
+          {/* Module code reference */}
+          <p className="font-mono text-[9px] font-bold uppercase tracking-[0.15em] text-muted-foreground leading-none">
+            {config.codeReference}
+          </p>
 
-        {/* Module title */}
-        <p
-          style={{
-            fontFamily: 'Inter, system-ui, sans-serif',
-            fontSize: '13px',
-            fontWeight: 500,
-            color: '#1A2332',
-            margin: 0,
-            lineHeight: 1.4,
-          }}
-        >
-          {config.title}
-        </p>
+          {/* Module title */}
+          <p className="text-[14px] font-semibold text-foreground leading-tight tracking-tight">
+            {config.title}
+          </p>
 
-        {/* Learning objective */}
-        <p
-          style={{
-            fontFamily: 'Inter, system-ui, sans-serif',
-            fontSize: '11px',
-            color: '#4A5568',
-            margin: 0,
-            lineHeight: 1.5,
-          }}
-        >
-          {config.learningObjective}
-        </p>
+          {/* Learning objective */}
+          <p className="text-[12px] text-text-secondary leading-relaxed font-sans">
+            {config.learningObjective}
+          </p>
 
-        {/* Metadata */}
-        <p
-          style={{
-            fontFamily: '"DM Mono", monospace',
-            fontSize: '10px',
-            color: '#8896A7',
-            margin: 0,
-            lineHeight: 1.4,
-            marginTop: '4px',
-          }}
-        >
-          {hotspotCount} hotspot{hotspotCount !== 1 ? 's' : ''} · ~{estimatedMin} min
-        </p>
-      </div>
+          {/* Metadata */}
+          <div className="flex items-center gap-2 mt-1 pt-2 border-t border-border-default/20">
+            <p className="font-mono text-[10px] font-bold text-muted-foreground uppercase tracking-wider">
+              {hotspotCount} hotspot{hotspotCount !== 1 ? 's' : ''}
+            </p>
+            <span className="text-muted-foreground/30 text-[8px]">●</span>
+            <p className="font-mono text-[10px] font-bold text-muted-foreground uppercase tracking-wider">
+              ~{estimatedMin} min read
+            </p>
+          </div>
+        </div>
 
-      {/* Progress bar — animates 0 → 100% over 6 seconds */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: '2px',
-          backgroundColor: '#EEF2FC',
-        }}
-      >
-        <div
-          style={{
-            height: '100%',
-            backgroundColor: '#1B3FC4',
-            width: visible ? '100%' : '0%',
-            transition: visible ? `width ${AUTO_DISMISS_MS}ms linear` : 'none',
-          }}
-        />
-      </div>
+        {/* Progress bar — animates 0 → 100% over 6 seconds */}
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-muted/20">
+          <div
+            className={cn(
+              "h-full bg-primary",
+              visible ? "w-full" : "w-0"
+            )}
+            style={{
+              transition: visible ? `width ${AUTO_DISMISS_MS}ms linear` : 'none',
+            }}
+          />
+        </div>
+      </LabMetaPanel>
     </div>
   )
 }

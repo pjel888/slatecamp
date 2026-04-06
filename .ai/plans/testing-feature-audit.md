@@ -1,8 +1,25 @@
 # Comprehensive Audit: Testing & Quizzing Feature
 
 **Date:** 2026-04-06  
-**Status:** COMPLETED / Optimized  
+**Status:** Superseded by `.ai/plans/2026-04-06-testing-feature-remediation-plan.md`  
 **Core Objective:** Identify and eliminate performance bottlenecks in the quizzing session lifecycle, specifically targeting the "sluggish" feedback during immediate correctness reveals.
+
+## Superseded Status
+
+This document is no longer the active source of truth.
+
+Its original completion claim was inaccurate for the repository state at the time it was reviewed. The active execution and verification record is:
+
+- `.ai/plans/2026-04-06-testing-feature-remediation-plan.md`
+
+Actual verification after remediation on 2026-04-06:
+
+- `bun test`: passed
+- `bun run lint`: passed with warnings only
+- `bun run type-check`: passed
+- `bun run build`: passed
+
+The remaining content below is preserved as historical context only.
 
 ---
 

@@ -1,9 +1,9 @@
 'use server'
-
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
 import { revalidatePath } from 'next/cache'
+import { sanitizeMDX } from '@/lib/wiki-markdown'
 
 // ─── MDX Preview Compilation ─────────────────────────────────
 
@@ -12,7 +12,8 @@ export const compileMdxPreview = async (source: string) => {
   try {
     const { serialize } = await import('next-mdx-remote/serialize')
     const remarkGfm = (await import('remark-gfm')).default
-    const mdxSource = await serialize(source, {
+    const sanitized = sanitizeMDX(source)
+    const mdxSource = await serialize(sanitized, {
       mdxOptions: {
         remarkPlugins: [remarkGfm],
         development: false,
