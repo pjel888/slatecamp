@@ -4,9 +4,8 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
-import { MODE_DEFINITIONS, MODES_BY_ZONE } from '@/lib/constants/testing-modes'
 import { SessionsTable } from './SessionsTable'
-import { ModeCard } from './ModeCard'
+import { HeroConfigurator } from './HeroConfigurator'
 import type {
   ModeStats,
   ModeSource,
@@ -263,14 +262,14 @@ const ReviewHub = ({
           focusQueue.question_count > 0
             ? `${focusQueue.question_count} queued questions across ${focusQueue.node_ids.length} weak areas.`
             : `${focusQueue.node_ids.length} weak areas are waiting for a targeted session.`,
-        href: '/quiz/focused/setup',
-        ctaLabel: 'Start Focus Review',
+        href: '#hero-configurator',
+        ctaLabel: 'Target Weak Areas',
       })
     } else if (weakTopicsPreview.length > 0) {
       signals.push({
         title: 'Weak areas are visible',
         description: `Lowest-confidence topics: ${weakTopicsPreview.join(', ')}.`,
-        href: '/quiz/focused/setup',
+        href: '#hero-configurator',
         ctaLabel: 'Target weak areas',
       })
     }
@@ -279,7 +278,7 @@ const ReviewHub = ({
       signals.push({
         title: 'Successive Relearning is due',
         description: `${srDueCycles.length} due cycle${srDueCycles.length === 1 ? '' : 's'} need reinforcement right now.`,
-        href: '/quiz/camp/setup',
+        href: '#hero-configurator',
         ctaLabel: 'Do a quick session',
       })
     }
@@ -291,17 +290,13 @@ const ReviewHub = ({
           daysUntilExam === 0
             ? 'Your exam is today. Choose the mode that best matches your confidence window.'
             : `${daysUntilExam} day${daysUntilExam === 1 ? '' : 's'} until your target exam date.`,
-        href: simulationGateStatus.isUnlocked ? '/quiz/fullexam/setup' : '/quiz/storm/setup',
-        ctaLabel: simulationGateStatus.isUnlocked ? 'Run a simulation' : 'Build exam pacing',
+        href: '#hero-configurator',
+        ctaLabel: 'Configure session',
       })
     }
 
     return signals.slice(0, 3)
   }, [daysUntilExam, focusQueue, simulationGateStatus.isUnlocked, srDueCycles.length, weakTopicsPreview])
-
-  const zone1Modes = MODES_BY_ZONE[1].map((key) => MODE_DEFINITIONS[key])
-  const zone2Modes = MODES_BY_ZONE[2].map((key) => MODE_DEFINITIONS[key])
-  const zone3Modes = MODES_BY_ZONE[3].map((key) => MODE_DEFINITIONS[key])
 
   return (
     <div className="w-full" style={{ backgroundColor: 'var(--background)' }}>
@@ -313,7 +308,7 @@ const ReviewHub = ({
           <SectionHeader
             eyebrow="Review & Testing"
             title="Build Mastery. Earn your Score."
-            subtitle="Choose a session mode that fits your goal today. Every answer feeds your Readiness Score."
+            subtitle="Configure a dynamic session that fits your goal today. Every answer feeds your Readiness Score."
             level="page"
           />
         </header>
@@ -376,11 +371,11 @@ const ReviewHub = ({
                 title={inProgressSession ? 'Resume your live session' : 'Choose today’s launch point'}
                 subtitle={
                   inProgressSession
-                    ? `${MODE_DEFINITIONS[getModeKey(inProgressSession)]?.label ?? 'Session'} · question ${Math.min(
+                    ? `Session · question ${Math.min(
                         (inProgressSession.current_question_index ?? 0) + 1,
                         Math.max(1, inProgressSession.question_ids?.length ?? 1),
                       )} of ${inProgressSession.question_ids?.length ?? 0}`
-                    : 'Pick the mode that matches your cognitive goal right now.'
+                    : 'Use the intelligent configurator to launch your targeted session.'
                 }
                 level="section"
               />
@@ -400,20 +395,26 @@ const ReviewHub = ({
                 </div>
               ) : (
                 <div className="mt-4 grid gap-3">
-                  <Link
-                    href="/quiz/camp/setup"
+                  <a
+                    href="#hero-configurator"
                     className="inline-flex items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
                   >
-                    Start Camp Mode
-                  </Link>
-                  <Link
-                    href={simulationGateStatus.isUnlocked ? '/quiz/fullexam/setup' : '/quiz/storm/setup'}
-                    className="inline-flex items-center justify-center rounded-sm border border-border bg-white px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
-                  >
-                    {simulationGateStatus.isUnlocked ? 'Begin Full Exam Simulation' : 'Build exam pacing'}
-                  </Link>
+                    Configure Session
+                  </a>
                 </div>
               )}
+            </div>
+          </section>
+
+          <section id="hero-configurator">
+            <SectionHeader
+              eyebrow="Dynamic Engine"
+              title="Intelligent Configurator"
+              subtitle="Drag subjects to the canvas and slide to start. Our engine routes the perfect mix of unseen, remediation, and reinforcement questions."
+              level="section"
+            />
+            <div className="mt-4">
+              <HeroConfigurator />
             </div>
           </section>
 
@@ -429,12 +430,12 @@ const ReviewHub = ({
                   <div key={signal.title} className="rounded-md border border-border bg-white p-4">
                     <h3 className="text-sm font-semibold text-foreground">{signal.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-text-secondary">{signal.description}</p>
-                    <Link
+                    <a
                       href={signal.href}
                       className="mt-4 inline-flex items-center text-sm font-medium text-primary transition-colors duration-150 hover:text-primary-700"
                     >
                       {signal.ctaLabel}
-                    </Link>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -443,60 +444,51 @@ const ReviewHub = ({
 
           <section>
             <SectionHeader
-              eyebrow="Zone 01"
-              title="Foundations"
-              subtitle="Low-friction modes for recall, confidence building, and quick daily reps."
-              level="section"
-            />
-            <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {zone1Modes.map((mode) => (
-                <ModeCard
-                  key={mode.key}
-                  mode={mode}
-                  stats={modeStats[mode.key] ?? null}
-                  userTier={normalizedTier}
-                />
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <SectionHeader
-              eyebrow="Zone 02"
-              title="Deliberate Practice"
-              subtitle="Target subjects and weaknesses once your daily foundation work is underway."
-              level="section"
-            />
-            <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {zone2Modes.map((mode) => (
-                <ModeCard
-                  key={mode.key}
-                  mode={mode}
-                  stats={modeStats[mode.key] ?? null}
-                  userTier={normalizedTier}
-                />
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <SectionHeader
-              eyebrow="Zone 03"
-              title="Exam Readiness"
+              eyebrow="Exam Readiness"
+              title="Specialized Simulations"
               subtitle="Timed pressure, long-form endurance, and the full exam simulation."
               level="section"
             />
-            <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {zone3Modes.map((mode) => (
-                <ModeCard
-                  key={mode.key}
-                  mode={mode}
-                  stats={modeStats[mode.key] ?? null}
-                  isLocked={mode.key === 'simulation' && !simulationGateStatus.isUnlocked}
-                  lockProgress={mode.key === 'simulation' ? simulationGateStatus : null}
-                  userTier={normalizedTier}
-                />
-              ))}
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <div className="flex flex-col justify-between rounded-md border border-border bg-white p-5">
+                <div>
+                  <h3 className="text-lg font-bold text-foreground">Full Exam Simulation</h3>
+                  <p className="mt-2 text-sm text-text-secondary">
+                    Strict 4-hour countdown, 200 questions. Proctored UI with no immediate feedback. Results delayed by 24 hours.
+                  </p>
+                </div>
+                <div className="mt-6">
+                  {simulationGateStatus.isUnlocked ? (
+                    <Link
+                      href="/quiz/fullexam/setup"
+                      className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
+                    >
+                      Start Simulation
+                    </Link>
+                  ) : (
+                    <div className="inline-flex w-full items-center justify-center rounded-sm bg-muted px-4 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed">
+                      Locked (Requires {simulationGateStatus.requiredReadiness} Readiness)
+                    </div>
+                  )}
+                </div>
+              </div>
+              
+              <div className="flex flex-col justify-between rounded-md border border-border bg-white p-5">
+                <div>
+                  <h3 className="text-lg font-bold text-foreground">Design Endurance</h3>
+                  <p className="mt-2 text-sm text-text-secondary">
+                    Long-form extended practice. Tracks your stamina and accuracy over time to prepare you for grueling exam sessions.
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <Link
+                    href="/quiz/extended/setup"
+                    className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-white px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
+                  >
+                    Start Endurance Training
+                  </Link>
+                </div>
+              </div>
             </div>
           </section>
 

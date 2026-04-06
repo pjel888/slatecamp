@@ -4,6 +4,7 @@ import { randomBytes } from 'crypto'
 import { MODE_DEFINITIONS } from '@/lib/constants/testing-modes'
 import { startSessionInputSchema } from '@/lib/actions/quiz-v2/schemas'
 import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selection'
+import { selectQuestionsWithRouting } from '@/lib/quiz/intelligent-routing'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
@@ -72,7 +73,9 @@ export const startSession = async (
         .maybeSingle()
 
       const isPro = subscription?.tier !== 'free' && subscription?.status === 'active'
-      if (!isPro) {
+      const isDevBypass = process.env.NODE_ENV === 'development'
+      
+      if (!isPro && !isDevBypass) {
         throw new Error(`The ${modeDef.label} mode requires a Pro subscription.`)
       }
     }
@@ -122,45 +125,65 @@ export const startSession = async (
         .filter((node: { is_leaf: boolean }) => node.is_leaf)
         .map((node: { node_id: string }) => node.node_id)
 
-      const parentIds = (selectedNodes ?? [])
+      let parentIds = (selectedNodes ?? [])
         .filter((node: { is_leaf: boolean }) => !node.is_leaf)
         .map((node: { node_id: string }) => node.node_id)
 
-      if (parentIds.length > 0) {
-        const { data: childLeaves } = await supabase
+      // Traverse down the tree to find all leaf nodes.
+      // Since our taxonomy is typically max 3-4 levels, a loop is safe.
+      let depth = 0
+      while (parentIds.length > 0 && depth < 3) {
+        const { data: children } = await supabase
           .from('taxonomy_tree')
-          .select('node_id')
+          .select('node_id, is_leaf')
           .in('parent_id', parentIds)
-          .eq('is_leaf', true)
           .eq('is_cross_ref_only', false)
           .is('deprecated_at', null)
 
-        leafIds.push(...(childLeaves ?? []).map((node: { node_id: string }) => node.node_id))
+        const childLeaves = (children ?? []).filter(c => c.is_leaf).map(c => c.node_id)
+        const childParents = (children ?? []).filter(c => !c.is_leaf).map(c => c.node_id)
+
+        leafIds.push(...childLeaves)
+        parentIds = childParents
+        depth++
       }
 
-      if (parentIds.length > 0) {
+      // Handle Cross-References
+      const crossRefSourceIds = (selectedNodes ?? [])
+        .filter((node: { is_leaf: boolean }) => !node.is_leaf)
+        .map((node: { node_id: string }) => node.node_id)
+
+      if (crossRefSourceIds.length > 0) {
         const { data: crossRefs } = await supabase
           .from('taxonomy_cross_references')
           .select('target_node_id')
-          .in('source_node_id', parentIds)
+          .in('source_node_id', crossRefSourceIds)
 
         if (crossRefs && crossRefs.length > 0) {
           const targetIds = crossRefs.map(
             (crossRef: { target_node_id: string }) => crossRef.target_node_id,
           )
-          const { data: crossRefLeaves } = await supabase
-            .from('taxonomy_tree')
-            .select('node_id')
-            .in('parent_id', targetIds)
-            .eq('is_leaf', true)
-            .eq('is_cross_ref_only', false)
-            .is('deprecated_at', null)
+          
+          let crParentIds = targetIds
+          let crDepth = 0
+          while (crParentIds.length > 0 && crDepth < 3) {
+            const { data: crChildren } = await supabase
+              .from('taxonomy_tree')
+              .select('node_id, is_leaf')
+              .in('parent_id', crParentIds)
+              .eq('is_cross_ref_only', false)
+              .is('deprecated_at', null)
 
-          const existingLeafIds = new Set(leafIds)
-          for (const node of crossRefLeaves ?? []) {
-            if (!existingLeafIds.has(node.node_id)) {
-              leafIds.push(node.node_id)
-            }
+            const crLeaves = (crChildren ?? []).filter(c => c.is_leaf).map(c => c.node_id)
+            const crParents = (crChildren ?? []).filter(c => !c.is_leaf).map(c => c.node_id)
+
+            const existingLeafIds = new Set(leafIds)
+            crLeaves.forEach(id => {
+              if (!existingLeafIds.has(id)) leafIds.push(id)
+            })
+
+            crParentIds = crParents
+            crDepth++
           }
         }
       }
@@ -177,75 +200,7 @@ export const startSession = async (
     else if (initialDifficulty === 'medium') difficultyRange = { min: 0.4, max: 0.7 }
     else if (initialDifficulty === 'hard') difficultyRange = { min: 0.7, max: 1 }
 
-    if (mergedConfig.interleave === true && topicIds.length > 0) {
-      const interleavedQuestions = await selectQuestionsWithInterleaving({
-        primaryTopicIds: topicIds,
-        totalCount: questionCount,
-        interleaveRatio: mergedConfig.interleave_ratio ?? 0.3,
-        excludeQuestionIds: recentQuestionIds,
-        difficultyRange,
-      })
-
-      if (interleavedQuestions.length === 0) {
-        throw new Error(
-          'No interleaved questions found for the selected topics. Try widening your selection.',
-        )
-      }
-
-      const questionIds = interleavedQuestions.map((question) => question.question_id)
-      const uniqueTopicIds = [
-        ...new Set(interleavedQuestions.map((question) => question.topic_id)),
-      ] as string[]
-      const taxonomyMap = await buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds)
-
-      const { data: session, error: sessionError } = await supabase
-        .from('quiz_sessions')
-        .insert({
-          user_id: user.id,
-          discipline_id: disciplineId,
-          test_mode: dbTestMode,
-          status: 'in_progress',
-          config: mergedConfig,
-          question_ids: questionIds,
-          subject_ids: uniqueTopicIds,
-          current_question_index: 0,
-          started_at: new Date().toISOString(),
-        })
-        .select('session_id')
-        .single()
-
-      if (sessionError || !session) {
-        throw sessionError ?? new Error('Failed to create session')
-      }
-
-      const clientQuestions: QuestionForClient[] = interleavedQuestions.map((question, index) =>
-        toClientQuestion(
-          {
-            ...question,
-            breadcrumb: taxonomyMap.get(question.topic_id) ?? '',
-            is_interleaved: question.is_interleaved,
-          },
-          index + 1,
-        ),
-      )
-
-      const { nonces, sessionKey } = await issueSessionSecurity(
-        session.session_id,
-        clientQuestions.map((question) => question.question_id),
-        user.id,
-      )
-
-      return {
-        sessionId: session.session_id,
-        config: mergedConfig,
-        questions: clientQuestions,
-        totalQuestions: clientQuestions.length,
-        readinessScoreBefore,
-        nonces,
-        sessionKey,
-      }
-    }
-
+    // Resolve discipline to leaf topics if no specific topics selected
     if (filterByDisciplineId && topicIds.length === 0) {
       const { data: leafNodes } = await supabase
         .from('taxonomy_tree')
@@ -258,72 +213,40 @@ export const startSession = async (
       topicIds = (leafNodes ?? []).map((node: { node_id: string }) => node.node_id)
     }
 
-    const performQuery = async (withDifficulty: boolean) => {
-      let query = supabase
-        .from('questions')
-        .select(
-          'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, metadata',
-        )
-        .limit(questionCount * 10)
-
-      if (topicIds.length > 0) {
-        query = query.in('topic_id', topicIds)
-      }
-
-      if (withDifficulty && difficultyRange) {
-        query = query
-          .gte('difficulty', difficultyRange.min)
-          .lt('difficulty', difficultyRange.max)
-      }
-
-      return await query
+    if (topicIds.length === 0) {
+      throw new Error('No topics selected or found for the current discipline.')
     }
 
-    let { data: rawQuestions, error: rawQuestionsError } = await performQuery(true)
-    if (rawQuestionsError) throw rawQuestionsError
+    // Question Selection (Intelligent Routing vs Interleaving)
+    let selectedQuestions: any[] = []
 
-    if ((!rawQuestions || rawQuestions.length === 0) && difficultyRange) {
-      const fallback = await performQuery(false)
-      if (fallback.error) throw fallback.error
-      rawQuestions = fallback.data
+    if (mergedConfig.interleave === true) {
+      selectedQuestions = await selectQuestionsWithInterleaving({
+        primaryTopicIds: topicIds,
+        totalCount: questionCount,
+        interleaveRatio: mergedConfig.interleave_ratio ?? 0.3,
+        excludeQuestionIds: recentQuestionIds,
+        difficultyRange,
+      })
+    } else {
+      // DEFAULT: Intelligent Routing (60/30/10)
+      selectedQuestions = await selectQuestionsWithRouting({
+        supabase,
+        userId: user.id,
+        topicIds,
+        questionCount,
+        difficultyRange,
+      })
     }
 
-    const allQuestions = rawQuestions ?? []
-    const recentSet = new Set(recentQuestionIds)
-    const freshQuestions = allQuestions.filter(
-      (question: { question_id: string }) => !recentSet.has(question.question_id),
-    )
-
-    const pool =
-      freshQuestions.length >= questionCount
-        ? freshQuestions
-        : [
-            ...freshQuestions,
-            ...allQuestions
-              .filter((question: { question_id: string }) => recentSet.has(question.question_id))
-              .slice(0, Math.max(0, questionCount - freshQuestions.length)),
-          ]
-
-    for (let index = pool.length - 1; index > 0; index -= 1) {
-      const swapIndex = Math.floor(Math.random() * (index + 1))
-      ;[pool[index], pool[swapIndex]] = [pool[swapIndex], pool[index]]
-    }
-
-    const selectedQuestions = pool.slice(0, questionCount)
     if (selectedQuestions.length === 0) {
       throw new Error(
-        difficultyRange
-          ? 'No questions found for the selected topics or discipline. Try choosing a different difficulty level.'
-          : 'No questions found for the selected topics or discipline. Try selecting more topics.',
+        'No questions found. Try widening your selection or changing difficulty.'
       )
     }
 
-    const questionIds = selectedQuestions.map(
-      (question: { question_id: string }) => question.question_id,
-    )
-    const uniqueTopicIds = [
-      ...new Set(selectedQuestions.map((question: { topic_id: string }) => question.topic_id)),
-    ] as string[]
+    const questionIds = selectedQuestions.map((q) => q.question_id)
+    const uniqueTopicIds = [...new Set(selectedQuestions.map((q) => q.topic_id))] as string[]
     const taxonomyMap = await buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds)
 
     const { data: session, error: sessionError } = await supabase
@@ -346,11 +269,12 @@ export const startSession = async (
       throw sessionError ?? new Error('Failed to create session')
     }
 
-    const clientQuestions: QuestionForClient[] = selectedQuestions.map((question: any, index) =>
+    const clientQuestions: QuestionForClient[] = selectedQuestions.map((question, index) =>
       toClientQuestion(
         {
           ...question,
           breadcrumb: taxonomyMap.get(question.topic_id) ?? '',
+          is_interleaved: (question as any).is_interleaved ?? false,
         },
         index + 1,
       ),

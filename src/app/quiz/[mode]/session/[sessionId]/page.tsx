@@ -71,19 +71,29 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
     ]),
   )
 
-  const { QuizShell } = await import('@/components/quiz-v2/QuizShell')
+  // Dynamic Shell Routing (Phase 3 Consolidation)
+  const shellProps = {
+    sessionId,
+    config,
+    questions: initialQuestions,
+    allQuestionIds: questionIds,
+    totalQuestionCount: questionIds.length,
+    initialCurrentIndex: resumeIndex,
+    restoredAnswers,
+  }
 
-  return (
-    <QuizShell
-      sessionId={sessionId}
-      config={config}
-      questions={initialQuestions}
-      allQuestionIds={questionIds}
-      totalQuestionCount={questionIds.length}
-      initialCurrentIndex={resumeIndex}
-      restoredAnswers={restoredAnswers}
-    />
-  )
+  if (mode === 'fullexam') {
+    const { SimulationShell } = await import('@/components/quiz-v2/SimulationShell')
+    return <SimulationShell {...shellProps} />
+  }
+
+  if (mode === 'extended') {
+    const { EnduranceShell } = await import('@/components/quiz-v2/EnduranceShell')
+    return <EnduranceShell {...shellProps} />
+  }
+
+  const { StandardQuizShell } = await import('@/components/quiz-v2/StandardQuizShell')
+  return <StandardQuizShell {...shellProps} />
 }
 
 export default QuizSessionPage

@@ -168,6 +168,19 @@
   - `/dashboard/wiki/[slug]` remained present in the successful build output
   - `git diff --name-only -- src/app/dashboard/wiki src/components/wiki` returned only the four `*Practice` alias files listed above
 
+### Testing & Quizzing Suite Audit & Consolidation (Pivoted 2026-04-06)
+- **Architecture Pivot:** Moving from discrete static modes to a unified **"Hero Configurator"** on `/dashboard/testing`.
+- **UI Design:** Tactical configurator using drag-and-drop for subject selection, integrated sliders for question count/timer, and a high-intent **"Slide to Start"** CTA.
+- **Backend Algorithm:** Replacing randomization with a **60/30/10 Intelligent Routing** algorithm:
+  - 60% Unseen questions (discovery).
+  - 30% Remediation questions (incorrectly answered).
+  - 10% Spaced Repetition (mastered, 14+ days since last seen).
+- **Database Optimization (Real-time Pivot):** Adopted an event-driven approach with a `user_question_states` table maintained by **PostgreSQL Triggers**.
+  - Replaces Materialized Views to avoid stale data between sessions.
+  - Automatically tracks correctness, attempt count, and **time spent per question** (stamina metrics).
+- **Specialization Preservation:** `SimulationShell` (for Full Exam) and `EnduranceShell` (for Design Training) remain as functional overrides to the generalized engine.
+- **Analytics & IP:** Patent-backed CAGE tokens and gesture signal tracing (Claim 1b, 6, 7, 20) are preserved within the unified `StandardQuizShell`.
+
 ### Storybook Runtime Foundation Verified Facts
 - Story discovery now targets only:
   - `src/components/**/*.stories.*`
@@ -460,6 +473,51 @@
 - Updated `src/lib/actions/quiz-v2/AGENTS.md` to document the hardened architecture
 - Finalized `.ai/state/current-task.md` and `.ai/state/memory.md`
 
+### Session 2026-04-07: Testing Feature UI Audit & Remediation
+- Read all current files under `.ai/state/`, including `current-task.md`, `memory.md`, `multi-agent.md`, and active tasks.
+- Task initially blocked due to missing inline payloads in the prompt's `<documents>` block. User overrode the block and requested a full codebase search.
+- Successfully searched the codebase and found the requested components (`SlideToStart`, `SlideToSubmit`, `HeroConfigurator`, and `ReviewHub`).
+- **Aggressive Deprecation**: Stripped all legacy testing mode UI logic (Zone 1, Zone 2, Zone 3) from `ReviewHub.tsx`.
+- **Component Deduplication**: Deleted the redundant `SlideToStart` component and its stories. Refactored `HeroConfigurator.tsx` to use the battle-tested `SlideToSubmit` component instead.
+- **Component Deduplication (Global Sliders)**: Extracted the `UnifiedSlider.tsx` component—which implements the official SlateCamp Design System v1 slider spec—from its obscure location in `src/features/3d-lab/DevControlsModule/dashboard/` to the global `src/components/ui/` library. Exported it via `components/ui/index.ts`.
+- **Refactoring**: Replaced the custom inline HTML and generic Shadcn `Slider` primitives inside `HeroConfigurator.tsx` with the newly global `<UnifiedSlider />` for configuring the Question Count and Timer.
+- **Error Resolution**: Fixed missing TypeScript interface properties (`disciplines`, `difficultyMode`, `timer` modes, `results` display flags) for the `startSession` function config in `HeroConfigurator.tsx`.
+- **Backend Refactoring**: Fixed an invalid Supabase SDK nested `.in()` query syntax in `intelligent-routing.ts` by splitting queries to pre-fetch interacting IDs before routing.
+- **Validation**: Re-ran the TypeScript compiler and `bun run build`. Confirmed successful optimized production build. Updated `.ai/state/current-task.md`.
+
+### New Architectural Directives (Testing & Auth)
+- **Zero-Tolerance for Fatal Auth Action Errors:** Server actions (like `startSession`) must NEVER throw native `Error` objects for tier validation. Doing so crashes the Next.js router. Actions must return a structured response (e.g., `{ error: 'requires_pro_tier' }`) that UI components can catch to render graceful paywalls.
+- **Global Subscription Context (No Prop-Drilling):** User tier data must be fetched and cached via a centralized `SubscriptionProvider` (React Context) at the root layout. Passing `userTier` down via component props from the server to deep client files like `ReviewHub.tsx` is strictly forbidden.
+- **Zustand Hydration Safeguards:** Client components reading from `localStorage` persisted stores (like `useQuizStore`) MUST gate their renders behind `_hasHydrated` booleans. Rendering default state on the server and flipping to persisted state on the client without a fallback (e.g., `<CampfireLoader />`) causes severe hydration vulnerabilities.
+- **Timer Render Isolation:** The `useQuizTimerStore` ticks every 1000ms. Any component subscribing to it must use strictly scoped selectors (e.g., `useShallow((s) => s.elapsedMs)`) to prevent full-tree re-render cascades in the `StandardQuizShell`.
+
+### New Architectural Directives (Full-Stack Optimization & Resilience)
+- **Supabase Query Optimization:** Never execute looping N+1 queries inside Server Actions (e.g., chunked `for` loops in `.in()` statements). Always execute a single batch query or a relational `.select('*, relations(*)')`. Do not select massive JSON objects (`rationale`, `options`) if the logic only requires simple ID validations.
+- **UX Resilience & Network Drops:** All client-side interaction triggers that initiate Server Actions must catch failures and trigger a Toast or modal boundary. Relying purely on Next.js Server Component page loads (`router.push()`) without client-side error handling leaves the UI dead if the network drops mid-fetch.
+- **Strict Tier-Gating Abstraction:** The Edge middleware (`middleware.ts`) may bypass auth checks for performance, but Server Actions must NEVER throw hard `Error` instances upon tier rejection. They must return typed `{ success: false, error: 'requires_pro_tier' }` responses. The React tree MUST implement a unified `<SubscriptionProvider>` Context at the root layout to avoid prop-drilling `userTier` across dozens of pages.
+
+---
+
+### Session 2026-04-07: PROJECT PANOPTICON V7 — Ultrawork Complete
+
+- **Completed 3-pass exhaustive audit** of entire SlateCamp codebase via parallel background agents
+- **Generated 11 audit files** in `.ai/plans/` covering: auth/gating, state management, testing/quiz, database layer, dashboard portal, admin portal, API routes, shared components, developer/CEO portals
+- **Created MASTER-INDEX.md** as central navigation hub for all audit artifacts
+- **Pass 1 (Discovery):** Documented every route, component, data fetch, state hook, UX path
+- **Pass 2 (Synthesis):** Identified cross-domain patterns (client-side auth, N+1 queries, throw Error anti-pattern)
+- **Pass 3 (Omniscience):** Documented exact DB column names, API payloads, UI state machines
+- **5 CRITICAL findings:** Client-side session spoofing, API route authorization gaps, throw Error tier gating, N+1 taxonomy, timer hydration bug
+- **Audit files located:** `.ai/plans/audit-*.md`
+
+### Top 3 Global Design Patterns SlateCamp MUST Adopt
+
+1. **Server-Side Authorization Only** — Never read auth/tier from localStorage. All portal layouts must be Server Components. Client receives only verified user context from server.
+
+2. **Typed Result Objects for Server Actions** — Replace all `throw new Error()` with typed `{ success: false, error: 'CODE' }` responses. Client components render paywalls, not error crashes.
+
+3. **SQL-Based Computation** — Move complex filtering/exclusion to PostgreSQL CTEs and RPC functions. Never transmit thousands of IDs to client for exclusion.
+
 ---
 
 *Add verified facts here. Every entry must be traceable to a source file.*
+$memoryContent

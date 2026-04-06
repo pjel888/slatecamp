@@ -156,3 +156,40 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
 
   return roots
 }
+
+/**
+ * Fetches the top-level subjects (Level 1) for the user's current discipline.
+ * Used by the Hero Configurator on the Testing Hub.
+ */
+export async function getCoreSubjects() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
+  if (!user) return []
+
+  // 1. Get current discipline
+  const { data: stats } = await supabase
+    .from('user_global_stats')
+    .select('current_discipline_id')
+    .eq('user_id', user.id)
+    .single()
+
+  if (!stats?.current_discipline_id) return []
+
+  // 2. Fetch Level 1 nodes for this discipline
+  const { data: subjects, error } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name, subject_area, sort_order')
+    .eq('discipline_id', stats.current_discipline_id)
+    .eq('level', 1)
+    .is('deprecated_at', null)
+    .order('sort_order', { ascending: true })
+    .order('name', { ascending: true })
+
+  if (error) {
+    console.error('[getCoreSubjects] error:', error)
+    return []
+  }
+
+  return subjects ?? []
+}
