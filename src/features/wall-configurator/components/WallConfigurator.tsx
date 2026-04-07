@@ -195,7 +195,7 @@ export function WallConfigurator() {
 
       <div id="wall-configurator-root" className="flex min-h-screen flex-col bg-surface-light">
         {/* Header */}
-        <header className="border-b border-border bg-white px-4 py-3 print:hidden">
+        <header className="border-b border-border bg-card px-4 py-3 print:hidden">
           <h1 className="text-lg font-semibold text-text-primary">Wall Configurator</h1>
           <p className="mt-0.5 text-sm text-text-secondary">
             Unified CHB, drywall &amp; paint estimator
@@ -209,7 +209,7 @@ export function WallConfigurator() {
 
         {/* Accordion */}
         <main className="mx-auto w-full max-w-2xl flex-1 px-0 pb-12 sm:px-4">
-          <div className="overflow-hidden rounded-md border border-border bg-white sm:mt-4">
+          <div className="overflow-hidden rounded-md border border-border bg-card sm:mt-4">
             {STEP_SEQUENCE.map((stepNum, idx) => (
               <AccordionStep
                 key={stepNum}

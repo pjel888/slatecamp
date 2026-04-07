@@ -173,38 +173,38 @@ const StaminaSection = ({ blocks }: { blocks: StaminaBlock[] }) => {
       <div className="h-[180px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={blocks} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-            <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+            <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" />
             <XAxis
               dataKey="blockNumber"
               axisLine={false}
               tickLine={false}
-              tick={{ fill: '#4A5568', fontSize: 11 }}
-              label={{ value: 'Question Block', position: 'insideBottom', offset: -2, fontSize: 10, fill: '#8896A7' }}
+              tick={{ fill: 'var(--text-secondary)', fontSize: 11 }}
+              label={{ value: 'Question Block', position: 'insideBottom', offset: -2, fontSize: 10, fill: 'var(--muted-foreground)' }}
             />
             <YAxis
               domain={[0, 100]}
               tickFormatter={(v) => `${v}%`}
               axisLine={false}
               tickLine={false}
-              tick={{ fill: '#4A5568', fontSize: 11 }}
+              tick={{ fill: 'var(--text-secondary)', fontSize: 11 }}
               ticks={[0, 50, 75, 100]}
             />
             <Tooltip
               formatter={(v: number) => [`${v}%`, 'Accuracy']}
               contentStyle={{
                 borderRadius: '8px',
-                border: '1px solid #D4DAE3',
+                border: '1px solid var(--border)',
                 boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                 fontSize: '12px',
               }}
             />
-            <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
+            <ReferenceLine y={75} stroke="var(--success)" strokeDasharray="4 4" strokeWidth={1} />
             <Line
               type="monotone"
               dataKey="accuracy"
-              stroke="#1B3FC4"
+              stroke="var(--primary)"
               strokeWidth={1.5}
-              dot={{ r: 3, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1.5 }}
+              dot={{ r: 3, fill: 'var(--primary)', stroke: 'white', strokeWidth: 1.5 }}
               activeDot={{ r: 4 }}
               animationDuration={1200}
             />
@@ -235,12 +235,12 @@ const TimeAllocationChart = ({ data }: { data: TimeAllocationEntry[] }) => {
     <div className="h-[180px]">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data.slice(0, 8)} margin={{ top: 5, right: 10, left: -10, bottom: 5 }}>
-          <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" vertical={false} />
+          <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
           <XAxis
             dataKey="section"
             axisLine={false}
             tickLine={false}
-            tick={{ fill: '#4A5568', fontSize: 10 }}
+            tick={{ fill: 'var(--text-secondary)', fontSize: 10 }}
             interval={0}
             angle={-20}
             textAnchor="end"
@@ -249,14 +249,14 @@ const TimeAllocationChart = ({ data }: { data: TimeAllocationEntry[] }) => {
           <YAxis
             axisLine={false}
             tickLine={false}
-            tick={{ fill: '#4A5568', fontSize: 11 }}
-            label={{ value: 'Questions', angle: -90, position: 'insideLeft', fontSize: 10, fill: '#8896A7' }}
+            tick={{ fill: 'var(--text-secondary)', fontSize: 11 }}
+            label={{ value: 'Questions', angle: -90, position: 'insideLeft', fontSize: 10, fill: 'var(--muted-foreground)' }}
           />
           <Tooltip
             formatter={(v: number) => [`${v} questions`, 'Topic']}
             contentStyle={{
               borderRadius: '8px',
-              border: '1px solid #D4DAE3',
+              border: '1px solid var(--border)',
               boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
               fontSize: '12px',
             }}
@@ -265,7 +265,7 @@ const TimeAllocationChart = ({ data }: { data: TimeAllocationEntry[] }) => {
             {data.slice(0, 8).map((_, index) => (
               <Cell
                 key={`cell-${index}`}
-                fill={index === 0 ? '#1B3FC4' : '#1B3FC4'}
+                fill="var(--primary)"
                 fillOpacity={1 - index * 0.08}
               />
             ))}
@@ -290,7 +290,7 @@ const PredictionComparison = ({
   const isClose = Math.abs(diff) <= 3
 
   return (
-    <div className="flex items-center gap-4 px-4 py-3 rounded-md bg-white border border-border">
+    <div className="flex items-center gap-4 px-4 py-3 rounded-md bg-card border border-border">
       <div className="flex-1">
         <p className="text-[12px] text-muted-foreground mb-1">Your prediction</p>
         <p className="text-lg font-semibold tabular-nums text-foreground">{prediction}%</p>
@@ -334,7 +334,7 @@ const ActionPlanSection = ({ items }: { items: ActionItem[] }) => {
       {items.map((item) => (
         <div
           key={item.rank}
-          className="flex items-start gap-3 px-3.5 py-3 rounded-md bg-white border border-border"
+          className="flex items-start gap-3 px-3.5 py-3 rounded-md bg-card border border-border"
         >
           <span
             className="flex items-center justify-center h-6 w-6 rounded-full bg-primary-50 text-primary text-[11px] font-bold shrink-0"

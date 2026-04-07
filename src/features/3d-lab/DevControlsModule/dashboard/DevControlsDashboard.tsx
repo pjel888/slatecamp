@@ -147,7 +147,7 @@ export function MobileBottomSheet() {
 
   return (
     <div
-      className={`fixed inset-x-0 bottom-0 z-30 rounded-t-lg border-t border-border bg-white shadow-md transition-transform duration-200 ease-out md:hidden ${
+      className={`fixed inset-x-0 bottom-0 z-30 rounded-t-lg border-t border-border bg-card shadow-md transition-transform duration-200 ease-out md:hidden ${
         expanded ? 'translate-y-0' : 'translate-y-[calc(100%-110px)]'
       }`}
       style={{ maxHeight: '70vh' }}

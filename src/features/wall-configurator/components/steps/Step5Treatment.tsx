@@ -61,7 +61,7 @@ function LayerCard({ layer, alwaysOn, specLine, onToggle, onWasteChange }: Layer
 
   return (
     <div
-      className={`flex items-center gap-3 px-3.5 py-[11px] border border-border rounded-lg bg-white mb-1.5 transition-opacity duration-150 ${
+      className={`flex items-center gap-3 px-3.5 py-[11px] border border-border rounded-lg bg-card mb-1.5 transition-opacity duration-150 ${
         !layer.enabled && !alwaysOn ? 'opacity-45' : ''
       }`}
     >
@@ -91,7 +91,7 @@ function LayerCard({ layer, alwaysOn, specLine, onToggle, onWasteChange }: Layer
               onWasteChange?.(v / 100)
             }
           }}
-          className="font-mono text-[12px] w-11 border border-border rounded px-1.5 py-[3px] text-right bg-white disabled:cursor-default disabled:opacity-50 focus:outline-none focus:ring-1 focus:ring-primary"
+          className="font-mono text-[12px] w-11 border border-border rounded px-1.5 py-[3px] text-right bg-card disabled:cursor-default disabled:opacity-50 focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
     </div>
@@ -200,7 +200,7 @@ export function Step5Treatment() {
                   onChange={(e) => setSeamInput(e.target.value)}
                   onBlur={handleSeamBlur}
                   placeholder="auto"
-                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-white placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
+                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-card placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
                 <span className="font-mono text-[11px] text-text-secondary">lm</span>
                 <span className="font-mono text-[11px] text-text-tertiary">(leave blank for auto-estimate)</span>
@@ -275,7 +275,7 @@ export function Step5Treatment() {
                   onChange={(e) => setSeamInput(e.target.value)}
                   onBlur={handleSeamBlur}
                   placeholder="auto"
-                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-white placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
+                  className="font-mono text-[11px] w-16 border border-border rounded px-1.5 py-[3px] bg-card placeholder:text-text-tertiary focus:outline-none focus:ring-1 focus:ring-primary"
                 />
                 <span className="font-mono text-[11px] text-text-secondary">lm</span>
                 <span className="font-mono text-[11px] text-text-tertiary">(leave blank for auto-estimate)</span>
@@ -368,7 +368,7 @@ export function Step5Treatment() {
         <button
           type="button"
           onClick={prevStep}
-          className="rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
+          className="rounded-sm border border-border bg-card px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Back
         </button>

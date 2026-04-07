@@ -27,7 +27,7 @@ export function AMBFThreeWayPanel() {
             className={`flex items-center justify-between rounded-sm border px-2 py-1.5 ${
               row.binding
                 ? 'border-primary bg-primary-50'
-                : 'border-border bg-white'
+                : 'border-border bg-card'
             }`}
           >
             <div>

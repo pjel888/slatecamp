@@ -368,7 +368,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
       aria-label="Parameter controls"
     >
       {/* Header */}
-      <div className="sticky top-0 bg-white border-b border-border px-4 py-3 z-10">
+      <div className="sticky top-0 bg-card border-b border-border px-4 py-3 z-10">
         <span
           className="text-muted-foreground uppercase"
           style={{ fontFamily: MONO_FONT, fontSize: 11, letterSpacing: '0.1em' }}

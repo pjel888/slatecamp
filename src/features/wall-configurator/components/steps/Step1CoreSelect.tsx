@@ -84,7 +84,7 @@ export function Step1CoreSelect() {
                 'cursor-pointer rounded-[10px] p-3 text-left transition-colors duration-150 ease-out',
                 isSelected
                   ? 'border-l-[3px] border-l-[#1B3FC4] bg-[#EEF2FC]'
-                  : 'border border-[#D4DAE3] hover:border-[#1B3FC4]',
+                  : 'border border-border hover:border-primary',
               ].join(' ')}
             >
               <p className="font-mono text-[8px] font-medium uppercase tracking-[0.12em] text-[#8896A7]">
@@ -113,7 +113,7 @@ export function Step1CoreSelect() {
         })}
       </div>
 
-      <div className="flex justify-end border-t border-[#D4DAE3] pt-4">
+      <div className="flex justify-end border-t border-border pt-4">
         <button
           type="button"
           onClick={handleNext}

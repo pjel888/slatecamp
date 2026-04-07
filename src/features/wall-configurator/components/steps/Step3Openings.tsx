@@ -142,7 +142,7 @@ export function Step3Openings() {
       <button
         type="button"
         onClick={handleAdd}
-        className="w-full rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
+        className="w-full rounded-sm border border-border bg-card px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
       >
         + Add Opening
       </button>
@@ -151,7 +151,7 @@ export function Step3Openings() {
         <button
           type="button"
           onClick={prevStep}
-          className="rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
+          className="rounded-sm border border-border bg-card px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Back
         </button>
@@ -159,7 +159,7 @@ export function Step3Openings() {
           <button
             type="button"
             onClick={nextStep}
-            className="rounded-sm border border-border bg-white px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
+            className="rounded-sm border border-border bg-card px-4 py-2 text-sm font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light"
           >
             Skip
           </button>

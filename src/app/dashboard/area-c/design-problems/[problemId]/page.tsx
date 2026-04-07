@@ -32,19 +32,19 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
     return (
       <div className="flex flex-col gap-6">
         <BackLink />
-        <div className="rounded-md border border-[#D4DAE3] bg-card p-8 flex flex-col items-center gap-4 text-center">
-          <div className="w-10 h-10 rounded-full bg-[#F8F7F5] border border-[#D4DAE3] flex items-center justify-center">
-            <Lock size={18} className="text-[#8896A7]" />
+        <div className="rounded-md border border-border bg-card p-8 flex flex-col items-center gap-4 text-center">
+          <div className="w-10 h-10 rounded-full bg-background border border-border flex items-center justify-center">
+            <Lock size={18} className="text-muted-foreground" />
           </div>
           <div>
-            <h2 className="text-base font-semibold text-[#1A2332]">{problem.title}</h2>
-            <p className="text-sm text-[#4A5568] mt-1">
+            <h2 className="text-base font-semibold text-foreground">{problem.title}</h2>
+            <p className="text-sm text-muted-foreground mt-1">
               This problem is locked. Complete a Level 1 and Level 2 problem first.
             </p>
           </div>
           <Link
             href="/dashboard/area-c/design-problems"
-            className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out"
+            className="rounded-sm bg-primary px-4 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out"
           >
             Back to Problem Library
           </Link>
@@ -59,8 +59,8 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
     const result = await startDesignSession(problemId)
     if (result.error || !result.session_id) {
       return (
-        <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
-          <p className="text-sm text-[#D64545]">Unable to start session. Please try again.</p>
+        <div className="rounded-md border border-border bg-card px-4 py-8 text-center">
+          <p className="text-sm text-destructive">Unable to start session. Please try again.</p>
         </div>
       )
     }

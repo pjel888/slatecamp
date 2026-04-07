@@ -30,7 +30,7 @@ export function TourOverlay() {
 
   return (
     <div className="absolute inset-x-0 bottom-0 z-20 p-4 md:bottom-4 md:left-4 md:right-auto md:max-w-sm">
-      <div className="rounded-md border border-border bg-white p-4 shadow-md">
+      <div className="rounded-md border border-border bg-card p-4 shadow-md">
         {/* Step indicator */}
         <div className="mb-2 flex items-center gap-1.5">
           {TOUR_STEPS.map((_, i) => (

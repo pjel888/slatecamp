@@ -204,7 +204,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
       />
 
       {/* Pane 3: Editor */}
-      <main className="relative flex flex-1 flex-col overflow-hidden bg-white">
+      <main className="relative flex flex-1 flex-col overflow-hidden bg-card">
         {currentNote ? (
           <div className="flex h-full flex-col">
             {/* Editor header */}
