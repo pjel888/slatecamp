@@ -51,7 +51,7 @@ function Textarea({
         <p
           className={cn(
             'mt-1 text-right text-xs text-muted-foreground',
-            maxLength - charCount <= 20 && maxLength - charCount > 0 && 'text-amber-500',
+            maxLength - charCount <= 20 && maxLength - charCount > 0 && 'text-warning',
             maxLength - charCount <= 0 && 'text-destructive',
           )}
         >

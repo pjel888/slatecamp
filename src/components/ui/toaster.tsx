@@ -20,10 +20,10 @@ const variantIcons = {
 } as const
 
 const variantIconColors = {
-  success: "text-emerald-500",
+  success: "text-success",
   error: "text-destructive",
-  warning: "text-amber-500",
-  info: "text-blue-500",
+  warning: "text-warning",
+  info: "text-primary",
   primary: "text-primary",
 } as const
 
@@ -51,13 +51,13 @@ export const Toaster = () => {
                 className={`h-5 w-5 mt-0.5 shrink-0 ${
                   isSemanticVariant(variantStr) 
                     ? variantIconColors[variantStr] 
-                    : "text-zinc-400"
+                    : "text-muted-foreground"
                 }`}
               />
               <div className="grid gap-1">
                 {title && <ToastTitle className="text-[13px] font-bold leading-tight">{title}</ToastTitle>}
                 {description && (
-                  <ToastDescription className="text-[12px] text-zinc-500 leading-normal">
+                  <ToastDescription className="text-[12px] text-muted-foreground leading-normal">
                     {description}
                   </ToastDescription>
                 )}
