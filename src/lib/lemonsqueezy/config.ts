@@ -1,13 +1,15 @@
-import { LemonSqueezy } from "@lemonsqueezy/lemonsqueezy.js";
+// import { LemonSqueezy } from "@lemonsqueezy/lemonsqueezy.js";
 
-let _lemonsqueezy: any = null; // Typing based on @lemonsqueezy/lemonsqueezy.js if available
+// SDK not installed - stub for build compatibility
+let _lemonsqueezy: any = null;
 
-export function getLemonSqueezy() {
-  if (!_lemonsqueezy) {
-    // Note: Initialization varies for LemonSqueezy SDK
-    _lemonsqueezy = new LemonSqueezy(process.env.LEMONSQUEEZY_API_KEY!);
-  }
-  return _lemonsqueezy;
+/**
+ * @deprecated Payments disabled - returns null
+ * Re-enable by: installing package, setting env vars, removing this stub
+ */
+export const getLemonSqueezy = (): null => {
+  console.warn('[PAYMENTS] LemonSqueezy is disabled - getLemonSqueezy() called');
+  return null;
 }
 
 export const LEMONSQUEEZY_PLANS = {

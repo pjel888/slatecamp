@@ -3,8 +3,17 @@ import { headers } from "next/headers";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getPayRex } from "@/lib/payrex/config";
 import { tierFromAmount } from "@/lib/payments/provider";
+import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
 
 export async function POST(request: Request) {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    console.log('[WEBHOOK] PayRex webhook received but payments disabled');
+    return NextResponse.json({
+      received: true,
+      status: 'disabled',
+      timestamp: new Date().toISOString(),
+    });
+  }
   const body = await request.text();
   const headersList = await headers();
   const signature = headersList.get("payrex-signature");
@@ -14,6 +23,9 @@ export async function POST(request: Request) {
   }
 
   const payrex = getPayRex();
+  if (!payrex) {
+    return NextResponse.json({ error: "PayRex not configured" }, { status: 503 });
+  }
 
   let event;
   try {

@@ -1,11 +1,19 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
-import LemonSqueezy from "lemonsqueezy";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getLemonSqueezy } from "@/lib/lemonsqueezy/config";
+import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
 import type { UserTier } from "@/types/app";
 
 export async function POST(request: Request) {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    console.log('[WEBHOOK] LemonSqueezy webhook received but payments disabled');
+    return NextResponse.json({
+      received: true,
+      status: 'disabled',
+      timestamp: new Date().toISOString(),
+    });
+  }
   const body = await request.text();
   const headersList = await headers();
   const sig = headersList.get("x-signature");
@@ -14,10 +22,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "No signature" }, { status: 400 });
   }
 
-  let event: LemonSqueezy.Event;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let event: any;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ls = getLemonSqueezy() as any;
+  if (!ls) {
+    return NextResponse.json({ error: "LemonSqueezy not configured" }, { status: 503 });
+  }
 
   try {
-    event = getLemonSqueezy().webhooks.constructEvent(
+    event = ls.webhooks.constructEvent(
       body,
       sig,
       process.env.LEMONSQUEEZY_WEBHOOK_SECRET!
@@ -46,7 +61,7 @@ export async function POST(request: Request) {
 
   switch (event.type) {
     case "checkout.session.completed": {
-      const session = event.data.object as LemonSqueezy.Checkout.Session;
+      const session = event.data.object as any;
       const customerId = session.customer as string;
       const subscriptionId = session.subscription as string;
 
@@ -83,7 +98,7 @@ export async function POST(request: Request) {
     }
 
     case "customer.subscription.deleted": {
-      const subscription = event.data.object as LemonSqueezy.Subscription;
+      const subscription = event.data.object as any;
       await supabase
         .from("user_subscriptions")
         .update({

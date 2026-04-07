@@ -2,6 +2,7 @@
 
 import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import type { UserTier } from '@/types/app'
 
 /**
@@ -15,6 +16,8 @@ import type { UserTier } from '@/types/app'
  *   if (tier === 'pro') { ... }
  */
 export const getUserTier = cache(async (): Promise<UserTier> => {
+  if (!FEATURE_PAYMENTS_ENABLED) return 'free'
+
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 

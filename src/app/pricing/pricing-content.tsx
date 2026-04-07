@@ -1,10 +1,13 @@
 'use client'
 
 import { useEffect } from 'react'
+import Link from 'next/link'
 import { Instrument_Serif } from 'next/font/google'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { Button } from '@/components/ui/button'
 import { trackEvent } from '@/lib/analytics'
 import { PricingCard } from '@/components/marketing/PricingCard'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import {
   INDIVIDUAL_TIERS,
   EDUCATIONAL_TIERS,
@@ -26,6 +29,22 @@ const TABS = [
 
 export const PricingContent = () => {
   useEffect(() => { trackEvent({ event_name: 'upgrade_page_viewed' }) }, [])
+
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    return (
+      <div className="mx-auto max-w-[1200px] text-center py-20">
+        <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-foreground">
+          Free Access
+        </h1>
+        <p className="mx-auto mt-4 max-w-md text-base text-muted-foreground">
+          All features are currently available for free. Start studying now.
+        </p>
+        <Button asChild className="mt-8">
+          <Link href="/dashboard">Go to Dashboard</Link>
+        </Button>
+      </div>
+    )
+  }
 
   return (
     <div className="mx-auto max-w-[1200px]">

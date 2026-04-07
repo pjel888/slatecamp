@@ -1,9 +1,16 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { createCheckout } from "@/lib/payments/provider";
+import { createCheckout, isPaymentEnabled } from "@/lib/payments/provider";
 import { isDemoMode } from "@/lib/demo/config";
 
 export async function POST(request: Request) {
+  if (!isPaymentEnabled()) {
+    return NextResponse.json({
+      error: "Payments are currently disabled",
+      code: "PAYMENTS_DISABLED",
+    }, { status: 503 });
+  }
+
   if (isDemoMode()) {
     const origin = request.headers.get("origin") ?? "http://localhost:3000";
     return NextResponse.json({

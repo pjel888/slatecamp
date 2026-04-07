@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import type { UserTier } from '@/types/app'
 
 export type FeatureKey =
@@ -41,6 +42,10 @@ const PAID_TIERS: UserTier[] = ['pro', 'prime', 'institutional', 'enterprise']
  *   if (!access.allowed) return { error: 'Upgrade to Camp to unlock this feature' }
  */
 export const checkFeatureAccess = async (featureKey: FeatureKey): Promise<AccessResult> => {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    return { allowed: true, userTier: 'free', requiredTier: [] }
+  }
+
   const supabase = await createClient()
   const { data: { user } } = await getUser()
 
@@ -94,6 +99,8 @@ export const canAccess = async (featureKey: FeatureKey): Promise<boolean> => {
  * Get the user's current subscription tier. Reusable utility.
  */
 export const getUserTier = async (): Promise<UserTier> => {
+  if (!FEATURE_PAYMENTS_ENABLED) return 'free'
+
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) return 'free'
@@ -112,6 +119,8 @@ export const getUserTier = async (): Promise<UserTier> => {
  * Check if user is on a paid tier (pro, prime, institutional, enterprise).
  */
 export const isPaidUser = async (): Promise<boolean> => {
+  if (!FEATURE_PAYMENTS_ENABLED) return false
+
   const tier = await getUserTier()
   return PAID_TIERS.includes(tier)
 }

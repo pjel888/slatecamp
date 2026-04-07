@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import type { UserTier } from '@/types/app'
 
 const FREE_DAILY_CAP = 20
@@ -18,6 +19,10 @@ interface DailyCapResult {
  * Call BEFORE creating a quiz session for free users.
  */
 export const checkDailyCap = async (userId: string): Promise<DailyCapResult> => {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    return { allowed: true, remaining: 999999, cap: 999999, resetsAt: '' }
+  }
+
   const supabase = await createClient()
 
   // Check if user is on a paid tier

@@ -85,6 +85,15 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     aiTutorAccess: true,
     customBanksAccess: true,
   },
+  enterprise: {
+    questionsPerDay: Infinity,
+    aiTokens: Infinity,
+    savedConfigs: Infinity,
+    srsAccess: true,
+    threeDLabAccess: true,
+    aiTutorAccess: true,
+    customBanksAccess: true,
+  },
 };
 
 // ---------------------------------------------------------------------------

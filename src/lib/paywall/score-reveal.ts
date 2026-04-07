@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 
 /**
  * Check if the free user has already seen the score reveal.
@@ -11,6 +12,10 @@ export const checkScoreRevealAccess = async (userId: string): Promise<{
   canView: boolean
   shownAt: Date | null
 }> => {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    return { canView: true, shownAt: null }
+  }
+
   const supabase = await createClient()
 
   // Check subscription

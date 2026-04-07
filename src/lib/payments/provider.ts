@@ -1,4 +1,5 @@
 import type { UserTier } from "@/types/app";
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags';
 
 export type PaymentProvider = "lemonsqueezy" | "payrex";
 
@@ -22,9 +23,21 @@ export function getPaymentProvider(): PaymentProvider {
   return "payrex";
 }
 
+/**
+ * Check if payment features are available
+ */
+export const isPaymentEnabled = (): boolean => {
+  return FEATURE_PAYMENTS_ENABLED;
+}
+
 export async function createCheckout(
   params: CreateCheckoutParams
 ): Promise<CheckoutResult> {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    console.log('[PAYMENTS] createCheckout called but payments are disabled');
+    return { url: null, id: 'payments-disabled', provider: 'payrex' };
+  }
+
   const provider = getPaymentProvider();
 
   if (provider === "lemonsqueezy") {
@@ -37,10 +50,14 @@ async function createLemonSqueezyCheckout(
   params: CreateCheckoutParams
 ): Promise<CheckoutResult> {
   const { getLemonSqueezy, LEMONSQUEEZY_PLANS } = await import("@/lib/lemonsqueezy/config");
-  const ls = getLemonSqueezy();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ls = getLemonSqueezy() as any;
+  if (!ls) {
+    throw new Error('[PAYMENTS] LemonSqueezy SDK not available');
+  }
 
   const plan = LEMONSQUEEZY_PLANS[params.tier];
-  
+
   // Note: LemonSqueezy checkout creation differs from LemonSqueezy
   // This is a placeholder for actual LS checkout implementation
   const checkout = await ls.createCheckout({
@@ -62,6 +79,9 @@ async function createPayRexCheckout(
 ): Promise<CheckoutResult> {
   const { getPayRex, PAYREX_PLANS } = await import("@/lib/payrex/config");
   const payrex = getPayRex();
+  if (!payrex) {
+    throw new Error('[PAYMENTS] PayRex SDK not available');
+  }
 
   const plan = PAYREX_PLANS[params.tier];
   const paymentIntent = await payrex.paymentIntents.create({

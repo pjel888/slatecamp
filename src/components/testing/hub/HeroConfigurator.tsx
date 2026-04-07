@@ -107,7 +107,8 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
       })
 
       if (!result.success) {
-        console.error('Failed to start session:', result.message)
+        const err = result as { message?: string; error?: string }
+        console.error('Failed to start session:', err.message ?? err.error)
         setIsLoading(false)
         return
       }

@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { UpgradeButtons } from '@/components/dashboard/upgrade/UpgradeButtons'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 
 /**
  * Paywall Full-Screen — UX Strategy Section 15
@@ -23,6 +25,10 @@ const FEATURE_COMPARISON = [
 ]
 
 const UpgradePage = async () => {
+  if (!FEATURE_PAYMENTS_ENABLED) {
+    redirect('/dashboard')
+  }
+
   const { data: { user } } = await getUser()
 
   if (user) {
