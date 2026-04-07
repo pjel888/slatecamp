@@ -7,8 +7,9 @@ import { useQuizStore } from '@/stores/useQuizStore'
 interface QuizTimerState {
   sessionId: string | null
   startedAt: number | null
+  endedAt: number | null       // Absolute timestamp when timer should expire
   pausedAt: number | null
-  elapsedMs: number
+  elapsedMs: number            // Kept for count-up (endurance) mode
   limitMs: number | null
   isRunning: boolean
   colorState: TimerColorState
@@ -26,6 +27,7 @@ const defaultTimer = (): Omit<
 > => ({
   sessionId: null,
   startedAt: null,
+  endedAt: null,
   pausedAt: null,
   elapsedMs: 0,
   limitMs: null,
@@ -72,12 +74,14 @@ export const useQuizTimerStore = create<QuizTimerState>()(
         ...defaultTimer(),
         startTimer: ({ limitMs, sessionId }) => {
           const now = Date.now()
+          const effectiveLimitMs = limitMs ?? get().limitMs
           set({
             sessionId: sessionId ?? get().sessionId,
             startedAt: now,
+            endedAt: effectiveLimitMs ? now + effectiveLimitMs : null,
             pausedAt: null,
             elapsedMs: 0,
-            limitMs: limitMs ?? get().limitMs,
+            limitMs: effectiveLimitMs,
             isRunning: true,
             colorState: 'normal',
           })
@@ -89,9 +93,15 @@ export const useQuizTimerStore = create<QuizTimerState>()(
           set({ isRunning: false, pausedAt: Date.now() })
         },
         resumeTimer: () => {
-          const { isRunning, pausedAt } = get()
+          const { isRunning, pausedAt, endedAt } = get()
           if (isRunning || pausedAt === null) return
-          set({ isRunning: true, pausedAt: null })
+          // Shift endedAt forward by the pause duration
+          const pauseDuration = Date.now() - pausedAt
+          set({
+            isRunning: true,
+            pausedAt: null,
+            endedAt: endedAt ? endedAt + pauseDuration : null,
+          })
         },
         stopTimer: () => {
           const { isRunning } = get()
@@ -102,23 +112,35 @@ export const useQuizTimerStore = create<QuizTimerState>()(
           set(defaultTimer())
         },
         tickTimer: () => {
-          const { isRunning, elapsedMs, limitMs, sessionId } = get()
-          if (!isRunning) return
-          const nextElapsed = elapsedMs + 1000
+          const { isRunning, endedAt, startedAt, sessionId } = get()
 
-          if (limitMs !== null && nextElapsed >= limitMs) {
-            set({ elapsedMs: limitMs, isRunning: false, colorState: 'critical' })
-            if (sessionId) void handleTimerExpiry(sessionId)
+          // Guard: don't tick if not running or no session
+          if (!isRunning || sessionId === null) return
+
+          const now = Date.now()
+
+          // Countdown mode (has endedAt)
+          if (endedAt !== null) {
+            const remaining = Math.max(0, endedAt - now)
+
+            if (remaining <= 0) {
+              set({ isRunning: false, colorState: 'critical', elapsedMs: get().limitMs ?? 0 })
+              void handleTimerExpiry(sessionId)
+              return
+            }
+
+            const totalMs = get().limitMs ?? 1
+            const percentRemaining = remaining / totalMs
+            let colorState: TimerColorState = 'normal'
+            if (percentRemaining <= 0.20) colorState = 'critical'
+            else if (percentRemaining <= 0.50) colorState = 'warning'
+
+            set({ elapsedMs: now - (startedAt ?? now), colorState })
             return
           }
 
-          let colorState: TimerColorState = 'normal'
-          if (limitMs !== null && limitMs > 0) {
-            const percentRemaining = (limitMs - nextElapsed) / limitMs
-            if (percentRemaining <= 0.20) colorState = 'critical'
-            else if (percentRemaining <= 0.50) colorState = 'warning'
-          }
-          set({ elapsedMs: nextElapsed, colorState })
+          // Count-up mode (endurance — no limit)
+          set({ elapsedMs: now - (startedAt ?? now) })
         },
       }),
       {
@@ -127,6 +149,7 @@ export const useQuizTimerStore = create<QuizTimerState>()(
         partialize: (state) => ({
           sessionId: state.sessionId,
           startedAt: state.startedAt,
+          endedAt: state.endedAt,
           pausedAt: state.pausedAt,
           elapsedMs: state.elapsedMs,
           limitMs: state.limitMs,

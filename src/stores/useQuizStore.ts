@@ -358,6 +358,9 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
   },
 
   submitCurrentAnswer: async (signalTrace) => {
+    // Guard: prevent double-submit while a submission is in flight
+    if (get().status === 'submitting') return
+
     const { sessionId, questions, currentIndex, answers, config,
       nonces, sessionKey, cageSequenceNumber, previousCageTokenHash,
       deviceSensorsAvailable } = get()

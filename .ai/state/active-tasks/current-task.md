@@ -1,21 +1,21 @@
 # Current Task Status
 
-**Domain:** API Routes
-**Status:** Task complete for API Routes. Artifacts archived.
+**Domain:** State Management
+**Status:** Task complete for State Management. Artifacts archived.
 **Completed:** 2026-04-07
 
 ## Changes Made
-1. Created `src/lib/api/require-admin.ts` — reusable admin authorization guard for route handlers
-2. Created `supabase/migrations/20260407_webhook_idempotency.sql` — processed_webhook_events table
-3. Added idempotency check + tracking to `src/app/api/webhooks/lemonsqueezy/route.ts`
-4. Added idempotency check + tracking to `src/app/api/webhooks/payrex/route.ts`
+1. Rewrote `useQuizTimerStore.ts` — timestamp-based timer using `endedAt` instead of `elapsedMs` increment
+   - Prevents users from gaining extra time by refreshing the page
+   - Pause/resume correctly shifts `endedAt` by pause duration
+   - Count-up mode (endurance) still uses elapsed calculation from `startedAt`
+2. Added double-submit guard to `useQuizStore.ts` `submitCurrentAnswer` — checks `status === 'submitting'`
 
-## Skipped
-- Steps 2-3: Tier-based rate limiting/quotas — user_subscriptions table doesn't exist
-- Step 6: Optimistic locking — no PATCH routes identified
-- Step 7: Cron auth — already implemented (CRON_SECRET verification)
-- Steps 8-9: AI retry logic, schema validation — speculative/lower priority
+## Already Done (from prior domains)
+- Dev-store production guard (auth-and-gating)
+- Tier context useCallback/useMemo (auth-and-gating)
+- Active session context already uses useCallback
 
 ---
 
-NEXT ACTION: Read NIGHTWATCH_QUEUE.md and execute the next pending implementation plan (state-management).
+NEXT ACTION: Read NIGHTWATCH_QUEUE.md and execute the next pending implementation plan (shared-components).

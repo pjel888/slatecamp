@@ -7,32 +7,25 @@
 ### ARCHIVED (Code Executed + Verified)
 
 - [ARCHIVED] - audit-database-layer.md → implementation-database-layer.md
-  - Unique constraints migration created
-  - Query optimization migration (partial indexes, RPCs, view) created
-  - intelligent-routing.ts rewritten to use server-side RPC
-  - Steps 2,3,7 were already implemented in codebase (skipped)
-  - Step 8 (full RLS audit) deferred — too large/risky for single pass
+  - Unique constraints migration, query optimization RPCs, intelligent-routing.ts rewrite
 
 - [ARCHIVED] - audit-auth-and-gating.md → implementation-auth-and-gating.md
-  - StartSessionResult refactored to typed union (success/error) — no more thrown errors
-  - Middleware admin role gating wired (defense-in-depth alongside layout.tsx)
-  - TierProvider hasAccess stabilized with useCallback/useMemo
-  - Dev-store production guard added (no-op storage in production)
-  - Steps 5,6,8,9 skipped (already working, low-value re-export, or out-of-scope)
+  - Typed session results, middleware role gating, useCallback tier context, dev-store guard
 
 - [ARCHIVED] - audit-api-routes.md → implementation-api-routes.md
-  - Created requireAdmin() helper for route handlers (src/lib/api/require-admin.ts)
-  - Created webhook idempotency migration (processed_webhook_events table)
-  - Added idempotency checks to LemonSqueezy and PayRex webhook handlers
-  - Steps 2,3 skipped (user_subscriptions table doesn't exist for tier quotas)
-  - Steps 6,8,9 skipped (speculative optimistic locking, retry logic, validation)
-  - Step 7 already implemented (both cron routes have CRON_SECRET verification)
+  - requireAdmin() helper, webhook idempotency table + checks on both webhooks
+
+- [ARCHIVED] - audit-state-management.md → implementation-state-management.md
+  - Timer rewritten to timestamp-based (prevents refresh cheating via endedAt)
+  - Double-submit guard added (checks status === 'submitting' before re-entry)
+  - Steps 4,5 already done in auth-and-gating domain
+  - Step 6 already optimized (active-session-context uses useCallback)
+  - Steps 3,7,8 skipped (heartbeat sync, provider shell, cross-tab — lower priority)
 
 ---
 
 ### PENDING (Awaiting Code Execution)
 
-- [PENDING] - audit-state-management.md → implementation-state-management.md
 - [PENDING] - audit-shared-components.md → implementation-shared-components.md
 - [PENDING] - audit-dashboard-portal.md → implementation-dashboard-portal.md
 - [PENDING] - audit-admin-portal.md → implementation-admin-portal.md
@@ -43,7 +36,5 @@
 
 ### Notes
 
-- Implementation blueprints generated as: `implementation-[domain-name].md`
-- Each blueprint contains micro-granular execution steps for coding agents
-- Queue re-labeled from COMPLETED to PENDING — "completed" meant plan generation, not code execution
 - Archive location: `.ai/archive/nightwatch/`
+- Many blueprint steps were already implemented or unnecessary — pre-flight verification prevents wasted work
