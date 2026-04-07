@@ -198,27 +198,81 @@
   },
   "hotPaths": [
     {
-      "path": "supabase\\migrations",
-      "accessCount": 11,
-      "lastAccessed": 1775528746467,
+      "path": "",
+      "accessCount": 44,
+      "lastAccessed": 1775534335838,
       "type": "directory"
     },
     {
-      "path": "src\\lib\\actions\\quiz-v2\\start-session.ts",
-      "accessCount": 8,
-      "lastAccessed": 1775529139503,
+      "path": "src",
+      "accessCount": 20,
+      "lastAccessed": 1775534953537,
+      "type": "directory"
+    },
+    {
+      "path": "supabase\\migrations",
+      "accessCount": 12,
+      "lastAccessed": 1775530862947,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\api\\webhooks\\lemonsqueezy\\route.ts",
+      "accessCount": 11,
+      "lastAccessed": 1775532522632,
       "type": "file"
     },
     {
-      "path": "",
-      "accessCount": 5,
-      "lastAccessed": 1775529003561,
-      "type": "directory"
+      "path": ".ai\\plans\\NIGHTWATCH_QUEUE.md",
+      "accessCount": 10,
+      "lastAccessed": 1775532219821,
+      "type": "file"
     },
     {
-      "path": ".ai\\plans\\NIGHTWATCH_QUEUE.md",
-      "accessCount": 4,
-      "lastAccessed": 1775529396775,
+      "path": "src\\stores\\useQuizStore.ts",
+      "accessCount": 9,
+      "lastAccessed": 1775529877052,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\actions\\quiz-v2\\start-session.ts",
+      "accessCount": 9,
+      "lastAccessed": 1775531693478,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\api\\webhooks\\payrex\\route.ts",
+      "accessCount": 9,
+      "lastAccessed": 1775532528683,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\actions\\quiz-v2\\submit-answer.ts",
+      "accessCount": 6,
+      "lastAccessed": 1775530614663,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\context\\tier-context.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1775531847368,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\state\\memory.md",
+      "accessCount": 6,
+      "lastAccessed": 1775535377201,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\state\\active-tasks\\current-task.md",
+      "accessCount": 5,
+      "lastAccessed": 1775530248019,
+      "type": "file"
+    },
+    {
+      "path": "src\\stores\\dev-store.ts",
+      "accessCount": 5,
+      "lastAccessed": 1775531913712,
       "type": "file"
     },
     {
@@ -237,24 +291,6 @@
       "path": "src\\lib\\supabase\\middleware.ts",
       "accessCount": 3,
       "lastAccessed": 1775529208929,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\context\\tier-context.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775529235650,
-      "type": "file"
-    },
-    {
-      "path": "src",
-      "accessCount": 3,
-      "lastAccessed": 1775529284135,
-      "type": "directory"
-    },
-    {
-      "path": "src\\stores\\useQuizStore.ts",
-      "accessCount": 3,
-      "lastAccessed": 1775529337452,
       "type": "file"
     },
     {
@@ -282,12 +318,6 @@
       "type": "file"
     },
     {
-      "path": "src\\stores\\dev-store.ts",
-      "accessCount": 2,
-      "lastAccessed": 1775529244539,
-      "type": "file"
-    },
-    {
       "path": "src\\components\\quiz-v2\\EnduranceShell.tsx",
       "accessCount": 2,
       "lastAccessed": 1775529276072,
@@ -306,15 +336,45 @@
       "type": "file"
     },
     {
-      "path": ".ai\\state\\active-tasks\\current-task.md",
+      "path": ".ai\\plans\\implementation-api-routes.md",
       "accessCount": 2,
-      "lastAccessed": 1775529405276,
+      "lastAccessed": 1775529532317,
       "type": "file"
     },
     {
-      "path": ".ai\\state\\memory.md",
-      "accessCount": 1,
-      "lastAccessed": 1775528501937,
+      "path": ".ai\\plans\\implementation-state-management.md",
+      "accessCount": 2,
+      "lastAccessed": 1775529754250,
+      "type": "file"
+    },
+    {
+      "path": "src\\stores\\useQuizTimerStore.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775529835192,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\plans\\implementation-shared-components.md",
+      "accessCount": 2,
+      "lastAccessed": 1775529966980,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\api\\webhooks",
+      "accessCount": 2,
+      "lastAccessed": 1775530666662,
+      "type": "directory"
+    },
+    {
+      "path": "supabase",
+      "accessCount": 2,
+      "lastAccessed": 1775530890812,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\api\\cron\\blindspot-scan\\route.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775531703199,
       "type": "file"
     },
     {
@@ -330,12 +390,6 @@
       "type": "file"
     },
     {
-      "path": "src\\lib\\actions\\quiz-v2\\submit-answer.ts",
-      "accessCount": 1,
-      "lastAccessed": 1775528532306,
-      "type": "file"
-    },
-    {
       "path": "supabase\\migrations\\004_add_user_roles.sql",
       "accessCount": 1,
       "lastAccessed": 1775528605822,
@@ -346,12 +400,6 @@
       "accessCount": 1,
       "lastAccessed": 1775528645312,
       "type": "file"
-    },
-    {
-      "path": "supabase",
-      "accessCount": 1,
-      "lastAccessed": 1775528645547,
-      "type": "directory"
     },
     {
       "path": "supabase\\migrations\\20260406144507_optimize_quiz_interactions.sql",
@@ -390,12 +438,6 @@
       "type": "file"
     },
     {
-      "path": "src\\app\\api\\webhooks",
-      "accessCount": 1,
-      "lastAccessed": 1775529044793,
-      "type": "directory"
-    },
-    {
       "path": "src\\app\\quiz\\[mode]\\setup\\page.tsx",
       "accessCount": 1,
       "lastAccessed": 1775529148428,
@@ -411,6 +453,48 @@
       "path": "src\\stores",
       "accessCount": 1,
       "lastAccessed": 1775529309044,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\api\\ai\\generate-questions\\route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775529551287,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\rate-limit.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775529552244,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\api\\cron\\compute-signals\\route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775529575806,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\api\\require-admin.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775529619346,
+      "type": "file"
+    },
+    {
+      "path": "supabase\\migrations\\20260407_webhook_idempotency.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775529629101,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\context\\active-session-context.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775529779097,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ui\\sheet.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775529980890,
       "type": "directory"
     }
   ],

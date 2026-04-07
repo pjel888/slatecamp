@@ -8,7 +8,7 @@
 ## 1. OPERATING CONTEXT & IDENTITY
 
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams.
-- **Aesthetic:** Campfire — warm, inviting, research-backed, commercially viable. Clean and functional with subtle warmth.
+- **Aesthetic:** Slatecamp — warm, inviting, research-backed, commercially viable. Clean and functional with subtle warmth.
 - **Voice:** The "Confident Companion" — warm, supportive, growth-framed. No toxic positivity. No catastrophizing. No militaristic or adversarial language.
 
 ## 2. STRICT EXECUTION PROTOCOL
@@ -38,7 +38,7 @@ Before generating any code or architecture, you MUST execute the following seque
 - **Package Management:** Bun.
 - **Font:** Inter (loaded via next/font/google).
 
-## 5. CAMPFIRE DESIGN SYSTEM
+## 5. Slatecamp design system
 
 ### Color Palette
 
@@ -122,3 +122,4 @@ Before adding any engagement feature, it must pass ALL three:
 - **Specific CTAs:** "Start 10-Question Review" not "Begin Assessment"
 - **Welcoming empty states:** Never accusatory ("You haven't done anything yet")
 - **Time-aware greetings:** Warm, contextual ("Good evening — ready for a quick session?")
+

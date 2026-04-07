@@ -45,7 +45,7 @@ Plan: `2026-04-06-storybook-overhaul-plan.md`
 - `src/components/shared/action-card.stories.tsx`
 - `src/components/shared/app-drawer.stories.tsx`
 - `src/components/shared/breadcrumb.stories.tsx`
-- `src/components/shared/CampfireLoader.stories.tsx`
+- `src/components/shared/SlatecampLoader.stories.tsx`
 - `src/components/shared/content-sidebar.stories.tsx`
 - `src/components/shared/DashboardHeader.stories.tsx`
 - `src/components/shared/DashboardPageSkeleton.stories.tsx`
@@ -203,7 +203,7 @@ Plan: `2026-04-06-storybook-overhaul-plan.md`
 
 - `src/components/shared/action-card.stories.tsx`
 - `src/components/shared/breadcrumb.stories.tsx`
-- `src/components/shared/CampfireLoader.stories.tsx`
+- `src/components/shared/SlatecampLoader.stories.tsx`
 - `src/components/shared/DashboardHeader.stories.tsx`
 - `src/components/shared/DashboardPageSkeleton.stories.tsx`
 - `src/components/shared/data-table.stories.tsx`
@@ -464,3 +464,4 @@ Plan: `2026-04-06-storybook-overhaul-plan.md`
   - Storybook's upstream `eval` and chunk-size warnings
   - Vite browser `crypto` externalization warnings
   - the dynamic-import-vars warning caused by `Lab3DWidget` loading `@/app/dashboard/3d-lab/_config/modules/${moduleId}`
+

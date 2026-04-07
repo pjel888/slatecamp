@@ -701,7 +701,7 @@ The overhaul should enforce the following rules:
    - `action-card`
    - `DashboardHeader`
    - `CodeBlock`
-   - `CampfireLoader`
+   - `SlatecampLoader`
    - `question-card`
 4. Do not preserve Storybook coverage for dormant shared primitives that lose the canonical decision in Phase 2.5.
 5. Preserve and improve the 9 non-scaffold stories rather than rewriting them blindly.
@@ -844,3 +844,4 @@ The Storybook overhaul is complete when all of the following are true:
 - The wiki article system has its own detailed Storybook section.
 - Route-private `_components` are documented only after extraction to public ownership.
 - Storybook is the single source of truth for reusable component documentation.
+

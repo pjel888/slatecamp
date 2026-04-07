@@ -548,6 +548,33 @@
 - **14 files updated**: All `/dashboard/testing` references replaced with `/dashboard/drills`
 - **Files created**: `src/app/dashboard/drills/{layout,page,loading}.tsx`, `src/app/dashboard/drills/sessions/{page,loading}.tsx`
 
+### Wiki Route Performance Audit (2026-04-07)
+- **Audit completed**: Comprehensive performance analysis of `/dashboard/wiki/*` routes
+- **Bottlenecks identified**:
+  - Sequential article resolution (2-4 DB roundtrips per load)
+  - Client component heavy architecture (430+ use client directives)
+  - No code splitting for 17 interactive widgets
+  - Missing database indexes on wiki_articles and wiki_article_taxonomy
+  - Permanent cache without TTL (revalidate: false)
+- **Plan saved**: `.ai/plans/wiki_route_audit_plan.md`
+- **5-phase optimization strategy**:
+  1. Database & Caching (RPC + indexes + ISR)
+  2. Component Architecture (RSC + Suspense + lazy loading)
+  3. Bundle Optimization (dynamic widget imports)
+  4. Query Optimization (recursive CTE + memoization)
+  5. Observability & Testing
+
+### Session 2026-04-07: Payment Gateway Decoupling Plan
+
+- **Build failure identified:** Missing npm package `@lemonsqueezy/lemonsqueezy.js` causes build to fail
+- **Environment state:** Both `PAYREX_SECRET_KEY` and `LEMONSQUEEZY_API_KEY` are empty in `.env.local`
+- **Integration audit completed:** Found 6 payment-related files across lemonsqueezy, payrex, payments, webhooks, and pricing
+- **Plan created:** `.ai/plans/payment_decoupling_plan.md` with 7-step implementation strategy
+- **Strategy:** Use feature flag `FEATURE_PAYMENTS_ENABLED` to conditionally enable/disable payment integrations
+- **Files to modify:** 7 files prioritized by P0/P1/P2
+- **Re-enablement path documented:** Clear steps to reverse changes when payments are ready
+- **Next action:** Execute plan to fix build and enable "Free Mode" operation
+
 ---
 
 *Add verified facts here. Every entry must be traceable to a source file.*

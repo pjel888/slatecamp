@@ -29,7 +29,7 @@ The plan should stay active because these gaps are still visible in the live rep
   - `src/features/3d-lab/stores/useWallLabStore.ts`
   - `src/features/wall-configurator/store/useWallConfigStore.ts`
 - `src/app/dashboard/3d-lab/AGENTS.md` is stale and still describes the old query-param-only route model and old `_components/_config/_templates` structure.
-- UI-facing 3D Lab shell/browser/wall-configurator components still contain large amounts of hardcoded visual styling instead of Campfire tokens.
+- UI-facing 3D Lab shell/browser/wall-configurator components still contain large amounts of hardcoded visual styling instead of Slatecamp tokens.
 
 ## Remaining Workstreams
 
@@ -278,3 +278,4 @@ Manual checks:
 ## Maintenance Note
 
 This file was trimmed on 2026-04-06 to remove already completed routing/layout work and preserve only the remaining implementation backlog.
+

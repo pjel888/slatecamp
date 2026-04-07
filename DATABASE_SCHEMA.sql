@@ -1,6 +1,6 @@
 -- ============================================================================
--- SlateCamp Database Schema — Generated 2026-03-26
--- 72 tables · 1 view(s) · Supabase (PostgreSQL 17)
+-- SlateCamp Database Schema — Updated 2026-04-07
+-- 86 tables · 2 view(s) · 39 functions · Supabase (PostgreSQL 17)
 -- ============================================================================
 
 -- ============================================================================
@@ -1194,11 +1194,48 @@ CREATE TABLE campfire_testimonials (
 );
 
 -- ============================================================================
--- 13. Views
+-- 13. Webhook & Idempotency
 -- ============================================================================
 
--- ─── Table: v_current_gate ──────────────────────────────────────────────
--- (Represented as a view in the database)
+-- ─── Table: processed_webhook_events ────────────────────────────────────
+CREATE TABLE processed_webhook_events (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  provider                                 TEXT NOT NULL,
+  event_id                                 TEXT NOT NULL,
+  event_type                               TEXT,
+  processed_at                             TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ============================================================================
+-- 14. Question State Tracking
+-- ============================================================================
+
+-- ─── Table: user_question_states ────────────────────────────────────────
+CREATE TABLE user_question_states (
+  user_id                                  UUID NOT NULL,
+  question_id                              UUID NOT NULL,
+  last_seen_at                             TIMESTAMPTZ NOT NULL DEFAULT now(),
+  last_is_correct                          BOOLEAN NOT NULL,
+  total_attempts                           INTEGER NOT NULL DEFAULT 1,
+  total_time_ms                            INTEGER NOT NULL DEFAULT 0,
+  avg_time_ms                              INTEGER NOT NULL DEFAULT 0
+);
+
+-- ============================================================================
+-- 15. Wiki Performance Indexes (2026-04-07)
+-- ============================================================================
+
+-- Composite indexes on wiki_article_taxonomy for resolveArticleAndNode RPC
+CREATE INDEX idx_wiki_article_taxonomy_node_primary
+  ON wiki_article_taxonomy(node_id, is_primary);
+CREATE INDEX idx_wiki_article_taxonomy_article_primary
+  ON wiki_article_taxonomy(article_id, is_primary);
+
+-- ============================================================================
+-- 16. Views
+-- ============================================================================
+
+-- ─── View: v_current_gate ───────────────────────────────────────────────
 -- Columns:
 --   id UUID
 --   gate_number SMALLINT
@@ -1208,4 +1245,102 @@ CREATE TABLE campfire_testimonials (
 --   created_by UUID
 --   created_at TIMESTAMPTZ
 
+-- ─── View: user_capabilities ────────────────────────────────────────────
+CREATE OR REPLACE VIEW user_capabilities AS
+SELECT
+  p.id AS user_id,
+  au.email,
+  COALESCE(us.tier::text, 'free') AS subscription_tier,
+  COALESCE(us.status::text, 'active') AS subscription_status,
+  ur.role AS user_role
+FROM profiles p
+JOIN auth.users au ON p.id = au.id
+LEFT JOIN user_subscriptions us ON p.id = us.user_id
+LEFT JOIN user_roles ur ON p.id = ur.user_id;
 
+-- ============================================================================
+-- 17. Functions (Wiki Performance — 2026-04-07)
+-- ============================================================================
+
+-- ─── Function: get_article_with_node ────────────────────────────────────
+-- Single-roundtrip article + taxonomy node resolution by slug.
+-- Replaces 2-4 sequential queries in resolveArticleAndNode.
+-- Path 1: slug matches wiki_articles → resolve node via junction
+-- Path 2: slug matches taxonomy_tree → resolve article via junction
+-- Returns: jsonb { article, node }
+CREATE OR REPLACE FUNCTION get_article_with_node(p_slug text)
+RETURNS jsonb
+LANGUAGE plpgsql
+STABLE
+SECURITY DEFINER
+AS $$
+DECLARE
+  v_article jsonb;
+  v_node jsonb;
+  v_article_id uuid;
+  v_node_id uuid;
+BEGIN
+  SELECT jsonb_build_object(
+    'article_id', wa.article_id, 'slug', wa.slug, 'title', wa.title,
+    'content', wa.content, 'created_at', wa.created_at, 'updated_at', wa.updated_at,
+    'ale_tests_you', wa.ale_tests_you, 'updated_note', wa.updated_note,
+    'subject_label', wa.subject_label, 'difficulty_label', wa.difficulty_label,
+    'status', wa.status
+  ), wa.article_id INTO v_article, v_article_id
+  FROM wiki_articles wa WHERE wa.slug = p_slug AND wa.status = 'published' LIMIT 1;
+
+  IF v_article IS NOT NULL THEN
+    SELECT wat.node_id INTO v_node_id FROM wiki_article_taxonomy wat
+      WHERE wat.article_id = v_article_id AND wat.is_primary = true LIMIT 1;
+    IF v_node_id IS NULL THEN
+      SELECT wat.node_id INTO v_node_id FROM wiki_article_taxonomy wat
+        WHERE wat.article_id = v_article_id LIMIT 1;
+    END IF;
+    IF v_node_id IS NOT NULL THEN
+      SELECT jsonb_build_object(
+        'node_id', tt.node_id, 'discipline_id', tt.discipline_id,
+        'parent_id', tt.parent_id, 'level', tt.level, 'name', tt.name,
+        'subject_area', tt.subject_area, 'is_leaf', tt.is_leaf, 'slug', tt.slug,
+        'sort_order', tt.sort_order, 'ale_id', tt.ale_id, 'description', tt.description,
+        'exam_frequency', tt.exam_frequency, 'bloom_level', tt.bloom_level,
+        'difficulty', tt.difficulty, 'prc_area', tt.prc_area
+      ) INTO v_node FROM taxonomy_tree tt WHERE tt.node_id = v_node_id;
+    END IF;
+    RETURN jsonb_build_object('article', v_article, 'node', v_node);
+  END IF;
+
+  SELECT jsonb_build_object(
+    'node_id', tt.node_id, 'discipline_id', tt.discipline_id,
+    'parent_id', tt.parent_id, 'level', tt.level, 'name', tt.name,
+    'subject_area', tt.subject_area, 'is_leaf', tt.is_leaf, 'slug', tt.slug,
+    'sort_order', tt.sort_order, 'ale_id', tt.ale_id, 'description', tt.description,
+    'exam_frequency', tt.exam_frequency, 'bloom_level', tt.bloom_level,
+    'difficulty', tt.difficulty, 'prc_area', tt.prc_area
+  ), tt.node_id INTO v_node, v_node_id
+  FROM taxonomy_tree tt WHERE tt.slug = p_slug LIMIT 1;
+
+  IF v_node IS NULL THEN
+    RETURN jsonb_build_object('article', null, 'node', null);
+  END IF;
+
+  SELECT wat.article_id INTO v_article_id FROM wiki_article_taxonomy wat
+    WHERE wat.node_id = v_node_id AND wat.is_primary = true LIMIT 1;
+  IF v_article_id IS NULL THEN
+    SELECT wat.article_id INTO v_article_id FROM wiki_article_taxonomy wat
+      WHERE wat.node_id = v_node_id LIMIT 1;
+  END IF;
+
+  IF v_article_id IS NOT NULL THEN
+    SELECT jsonb_build_object(
+      'article_id', wa.article_id, 'slug', wa.slug, 'title', wa.title,
+      'content', wa.content, 'created_at', wa.created_at, 'updated_at', wa.updated_at,
+      'ale_tests_you', wa.ale_tests_you, 'updated_note', wa.updated_note,
+      'subject_label', wa.subject_label, 'difficulty_label', wa.difficulty_label,
+      'status', wa.status
+    ) INTO v_article FROM wiki_articles wa
+    WHERE wa.article_id = v_article_id AND wa.status = 'published';
+  END IF;
+
+  RETURN jsonb_build_object('article', v_article, 'node', v_node);
+END;
+$$;
