@@ -26,26 +26,32 @@ export const baseMdxComponents = {
     React.createElement('h3', { id: toHeadingId(props.children), ...props })
   ),
 
-  // Tables — prototype wiki-table styling
+  // Tables — Flowbite-aligned wiki-table styling
   table: (props: React.HTMLAttributes<HTMLTableElement>) => (
     React.createElement(
       'div',
-      { className: 'not-prose my-4 overflow-x-auto' },
+      { className: 'not-prose my-4 overflow-x-auto rounded-md border border-border' },
       React.createElement('table', { className: 'w-full border-collapse text-sm', ...props }),
     )
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    React.createElement('thead', { className: 'bg-muted dark:bg-wiki-surface-dark', ...props })
+    React.createElement('thead', { className: 'bg-primary-50 sticky top-0 z-10 dark:bg-primary/10', ...props })
   ),
   th: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('th', {
-      className: 'px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-wiki-muted border-b-[1.5px] border-wiki-border dark:border-wiki-invert-divider',
+      className: 'px-3.5 py-2.5 text-left font-[var(--font-dm-mono)] text-[10px] font-medium uppercase tracking-[0.08em] text-primary-700 border-b border-border dark:text-primary-300 dark:border-border',
+      ...props,
+    })
+  ),
+  tr: (props: React.HTMLAttributes<HTMLTableRowElement>) => (
+    React.createElement('tr', {
+      className: 'even:bg-muted/30 hover:bg-primary-50/50 transition-colors duration-100 dark:even:bg-muted/10 dark:hover:bg-primary/5',
       ...props,
     })
   ),
   td: (props: React.HTMLAttributes<HTMLTableCellElement>) => (
     React.createElement('td', {
-      className: 'px-3.5 py-[11px] text-sm text-wiki-body border-b border-wiki-divider align-top leading-relaxed [&_strong]:text-wiki-ink [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-wiki-invert-body dark:border-wiki-invert-divider dark:[&_strong]:text-wiki-invert-heading',
+      className: 'px-3.5 py-[11px] text-sm text-foreground border-b border-border align-top leading-relaxed [&_strong]:text-foreground [&_strong]:font-semibold last:[&:where(tr:last-child_td)]:border-b-0 dark:text-foreground',
       ...props,
     })
   ),

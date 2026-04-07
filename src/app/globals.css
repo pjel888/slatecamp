@@ -302,15 +302,27 @@
   }
 
   & :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    @apply mt-0 mb-4 font-sans text-[22px] font-bold;
+    @apply first:mt-0 mt-10 mb-4 font-sans text-[22px] font-bold tracking-tight;
   }
 
   & :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    @apply mt-7 mb-3 font-sans text-base font-semibold;
+    @apply mt-8 mb-3 font-sans text-lg font-semibold;
+  }
+
+  & :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply mt-6 mb-2 font-sans text-[15px] font-semibold text-foreground/80;
+  }
+
+  & :where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply border-l-[3px] border-primary/20 pl-4 italic text-foreground/70;
+  }
+
+  & :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply mb-1.5 leading-relaxed;
   }
 
   & :where(hr):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    @apply my-10;
+    @apply my-12 border-border;
   }
 }
 
