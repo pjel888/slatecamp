@@ -81,7 +81,7 @@ const ToggleGroup = ({
           className={`px-2 py-0.5 text-[11px] font-medium transition-colors duration-150 ease-out first:rounded-l-sm last:rounded-r-sm ${
             value === opt.value
               ? 'bg-primary-50 text-camp-cobalt'
-              : 'bg-white text-text-tertiary hover:text-text-secondary'
+              : 'bg-card text-text-tertiary hover:text-text-secondary'
           }`}
         >
           {opt.label}

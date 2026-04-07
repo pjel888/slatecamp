@@ -131,7 +131,7 @@ export function Step7BOM() {
             {rows.map((row, idx) => (
               <tr
                 key={row.layerCode}
-                className={idx % 2 === 1 ? 'bg-row-light' : 'bg-white'}
+                className={idx % 2 === 1 ? 'bg-row-light' : 'bg-card'}
               >
                 <td className="px-3.5 py-[11px] text-left font-medium text-[13px] text-text-primary">
                   {row.label}
@@ -166,14 +166,14 @@ export function Step7BOM() {
         <button
           type="button"
           onClick={handleCopyAsText}
-          className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
+          className="bg-card text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Copy as Text
         </button>
         <button
           type="button"
           onClick={reset}
-          className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
+          className="bg-card text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
         >
           Reset
         </button>
@@ -181,7 +181,7 @@ export function Step7BOM() {
           <button
             type="button"
             onClick={prevStep}
-            className="bg-white text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
+            className="bg-card text-text-primary border border-border rounded-lg px-[18px] py-[9px] font-mono text-[10px] font-medium uppercase tracking-[0.08em] transition-colors duration-150 ease-out hover:bg-surface-light"
           >
             Back to Edit
           </button>

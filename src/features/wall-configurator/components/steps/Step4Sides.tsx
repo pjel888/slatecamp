@@ -35,7 +35,7 @@ export function Step4Sides() {
                 'px-5 py-2 text-[13px] font-medium cursor-pointer transition-colors duration-150 ease-out',
                 isActive
                   ? 'bg-primary text-white'
-                  : 'bg-white text-text-tertiary hover:bg-surface-light',
+                  : 'bg-card text-text-tertiary hover:bg-surface-light',
               ].join(' ')}
             >
               {value === 1 ? '1 Side' : 'Both Sides'}

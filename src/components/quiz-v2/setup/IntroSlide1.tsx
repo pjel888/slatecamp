@@ -212,7 +212,7 @@ const IntroSlide1 = ({
         className="rounded-sm"
         style={
           isZone3(mode)
-            ? ({ '--tw-bg-opacity': 1, backgroundColor: '#E8853A' } as React.CSSProperties)
+            ? ({ backgroundColor: 'var(--camp-orange)' } as React.CSSProperties)
             : undefined
         }
       >

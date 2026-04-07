@@ -222,7 +222,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                 activePreset === key
                   ? 'bg-primary-50 border-primary text-primary'
-                  : 'bg-white border-border text-text-secondary hover:border-primary/40',
+                  : 'bg-card border-border text-text-secondary hover:border-primary/40',
               )}
               aria-pressed={activePreset === key}
             >
@@ -233,7 +233,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
       </div>
 
       {/* Toggle rows */}
-      <div className="rounded-md border border-border bg-white px-4">
+      <div className="rounded-md border border-border bg-card px-4">
         <ToggleRow
           label="Timer"
           description={config.timer.enabled ? 'Countdown enabled' : 'No timer'}
@@ -297,7 +297,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                   isSelected
                     ? 'bg-primary text-white border-primary'
-                    : 'bg-white text-text-secondary border-border hover:border-primary/40',
+                    : 'bg-card text-text-secondary border-border hover:border-primary/40',
                 )}
               >
                 {pill.label}

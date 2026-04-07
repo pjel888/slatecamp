@@ -25,8 +25,8 @@ function Section({ title, children, defaultOpen = true }: {
         onClick={() => setOpen(o => !o)}
         className="flex items-center gap-1 w-full text-left mb-2"
       >
-        {open ? <SCIcon icon={CaretDown} size="xs" className="text-zinc-400" /> : <SCIcon icon={CaretRight} size="xs" className="text-zinc-400" />}
-        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">{title}</span>
+        {open ? <SCIcon icon={CaretDown} size="xs" className="text-muted-foreground" /> : <SCIcon icon={CaretRight} size="xs" className="text-muted-foreground" />}
+        <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">{title}</span>
       </button>
       {open && <div className="space-y-3">{children}</div>}
     </div>
@@ -40,8 +40,8 @@ function SliderRow({ label, value, min, max, step, unit, decimals = 0, onChange 
   return (
     <div className="space-y-1">
       <div className="flex items-center justify-between">
-        <label className="text-[11px] font-medium text-zinc-600">{label}</label>
-        <span className="text-[11px] font-bold text-zinc-900 tabular-nums">
+        <label className="text-[11px] font-medium text-foreground">{label}</label>
+        <span className="text-[11px] font-bold text-foreground tabular-nums">
           {value.toFixed(decimals)} {unit}
         </span>
       </div>
@@ -61,11 +61,11 @@ function SelectRow({ label, value, options, onChange }: {
 }) {
   return (
     <div className="flex items-center justify-between gap-2">
-      <label className="text-[11px] font-medium text-zinc-600 shrink-0">{label}</label>
+      <label className="text-[11px] font-medium text-foreground shrink-0">{label}</label>
       <select
         value={value}
         onChange={e => onChange(e.target.value)}
-        className="text-[11px] font-medium text-zinc-900 border border-border rounded px-1.5 py-0.5 bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary min-w-0"
+        className="text-[11px] font-medium text-foreground border border-border rounded px-1.5 py-0.5 bg-card cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary min-w-0"
       >
         {options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
       </select>
@@ -78,7 +78,7 @@ function ToggleRow({ label, value, disabled, tooltip, onChange }: {
 }) {
   return (
     <div className="flex items-center justify-between">
-      <label className={cn('text-[11px] font-medium', disabled ? 'text-zinc-300' : 'text-zinc-600')}>
+      <label className={cn('text-[11px] font-medium', disabled ? 'text-muted-foreground/30' : 'text-foreground')}>
         {label}
       </label>
       <button
@@ -87,8 +87,8 @@ function ToggleRow({ label, value, disabled, tooltip, onChange }: {
         onClick={() => onChange(!value)}
         className={cn(
           'w-8 h-4 rounded-full transition-colors relative',
-          disabled ? 'opacity-40 cursor-not-allowed bg-zinc-200' :
-            value ? 'bg-primary cursor-pointer' : 'bg-zinc-200 cursor-pointer'
+          disabled ? 'opacity-40 cursor-not-allowed bg-muted' :
+            value ? 'bg-primary cursor-pointer' : 'bg-muted cursor-pointer'
         )}
       >
         <span className={cn(
@@ -129,11 +129,11 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
 
       {/* Header */}
       <div className="flex items-center justify-between">
-        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+        <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
           NBCP Parameters
         </span>
-        <Button variant="ghost" size="icon" className="h-6 w-6 rounded-sm hover:bg-zinc-100" onClick={reset}>
-          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
+        <Button variant="ghost" size="icon" className="h-6 w-6 rounded-sm hover:bg-muted" onClick={reset}>
+          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-muted-foreground" />
         </Button>
       </div>
 
@@ -168,16 +168,16 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
 
       {/* Building */}
       <Section title="Building">
-        <div className="text-[11px] text-zinc-400 italic mb-1">
+        <div className="text-[11px] text-muted-foreground italic mb-1">
           Floor height is a design assumption, not a code requirement
         </div>
         <SliderRow label="Floor Height" value={inputs.floorHeight} min={2.7} max={4.0} step={0.1} unit="m" decimals={1}
           onChange={v => setInputs({ floorHeight: v })} />
-        <div className="text-[11px] font-mono text-zinc-500 bg-zinc-50 rounded px-2 py-1">
+        <div className="text-[11px] font-mono text-text-secondary bg-muted rounded px-2 py-1">
           {bhlDisplay}
         </div>
         <div className="pt-1 border-t border-border">
-          <div className="text-[11px] text-zinc-400 italic mb-1">
+          <div className="text-[11px] text-muted-foreground italic mb-1">
             Floors override — drag above BHL to show violation
           </div>
           <SliderRow

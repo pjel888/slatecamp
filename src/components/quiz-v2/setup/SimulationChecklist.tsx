@@ -99,7 +99,7 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
                   'w-full flex items-start gap-3 px-3.5 py-3 rounded-md border text-left transition-colors duration-150 ease-out',
                   isChecked
                     ? 'border-success/30 bg-success-50'
-                    : 'border-border bg-white hover:border-primary/30',
+                    : 'border-border bg-card hover:border-primary/30',
                 )}
               >
                 {/* Checkbox icon */}

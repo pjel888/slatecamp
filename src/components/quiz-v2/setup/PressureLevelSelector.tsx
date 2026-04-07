@@ -65,7 +65,7 @@ const PressureLevelSelector = ({
                 isSelected && isUnlocked
                   ? 'border-primary bg-primary-50'
                   : isUnlocked
-                    ? 'border-border bg-white hover:border-primary/40 cursor-pointer'
+                    ? 'border-border bg-card hover:border-primary/40 cursor-pointer'
                     : 'border-border bg-surface-light cursor-not-allowed opacity-60',
               )}
             >

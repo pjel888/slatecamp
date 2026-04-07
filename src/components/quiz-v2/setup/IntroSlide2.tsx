@@ -22,7 +22,7 @@ const masteryPct = (w: number | null): number => (w === null ? 0 : Math.round(w 
 const Skeleton = () => (
   <div className="space-y-2" aria-busy="true" aria-label="Loading topics">
     {[1, 2, 3, 4].map((i) => (
-      <div key={i} className="rounded-md border border-border bg-white p-4 animate-pulse">
+      <div key={i} className="rounded-md border border-border bg-card p-4 animate-pulse">
         <div className="flex items-center gap-3">
           <div className="h-4 w-4 rounded-[3px] bg-border" />
           <div className="flex-1 h-3 rounded bg-border" style={{ width: `${40 + i * 12}%` }} />
@@ -57,7 +57,7 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
   const pct = masteryPct(subject.masteryWeight)
 
   return (
-    <div className="rounded-md border border-border bg-white overflow-hidden">
+    <div className="rounded-md border border-border bg-card overflow-hidden">
       {/* Subject header */}
       <div className="flex items-center gap-3 px-4 py-3 bg-surface-light">
         {/* Checkbox */}
@@ -73,7 +73,7 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
               ? 'bg-primary border-primary'
               : someSelected
                 ? 'bg-primary-50 border-primary'
-                : 'bg-white border-border hover:border-primary/50',
+                : 'bg-card border-border hover:border-primary/50',
           )}
         >
           {allSelected && (
@@ -141,7 +141,7 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-1',
                   isSelected
                     ? 'bg-primary-50 border-primary text-primary'
-                    : 'bg-white border-border text-text-secondary hover:border-primary/40',
+                    : 'bg-card border-border text-text-secondary hover:border-primary/40',
                 )}
               >
                 {sub.name}
@@ -276,7 +276,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
           placeholder="Search topics…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full rounded-sm border border-border bg-white pl-8 pr-3 py-2 text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-colors duration-150"
+          className="w-full rounded-sm border border-border bg-card pl-8 pr-3 py-2 text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-colors duration-150"
           aria-label="Search topics"
         />
       </div>

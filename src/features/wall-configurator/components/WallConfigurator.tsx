@@ -105,7 +105,7 @@ function AccordionStep({
       <div
         className={[
           'flex items-center gap-3 px-4 py-3',
-          isActive ? 'bg-primary-50' : 'bg-white',
+          isActive ? 'bg-primary-50' : 'bg-card',
           isCompleted ? 'cursor-pointer hover:bg-surface-light' : 'cursor-default',
         ].join(' ')}
         onClick={() => isCompleted && onEdit(stepNum)}
@@ -158,7 +158,7 @@ function AccordionStep({
 
       {/* Body — only rendered when active */}
       {isActive && (
-        <div className="bg-white p-4">
+        <div className="bg-card p-4">
           <StepContent stepNum={stepNum} />
         </div>
       )}

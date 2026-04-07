@@ -113,7 +113,7 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
       onClick={() => onSelect(mode)}
       className={cn(
         'group flex flex-col rounded-md border p-4 text-left w-full',
-        'bg-white transition-all duration-150 ease-out',
+        'bg-card transition-all duration-150 ease-out',
         'hover:-translate-y-px hover:shadow-sm',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
       )}

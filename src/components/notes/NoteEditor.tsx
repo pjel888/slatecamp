@@ -110,7 +110,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           >
             <SCIcon icon={TextStrikethrough} size="sm" />
           </button>
-          <div className="mx-1 h-4 w-[1px] bg-zinc-200" />
+          <div className="mx-1 h-4 w-[1px] bg-border" />
           <button
             onClick={() => editor.chain().focus().toggleBulletList().run()}
             className={cn(

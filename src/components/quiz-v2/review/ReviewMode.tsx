@@ -169,7 +169,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
   return (
     <div className="flex flex-col min-h-screen bg-surface-focused">
       {/* ── Header bar ───────────────────────────────────────────────────────── */}
-      <header className="sticky top-0 z-10 bg-white border-b border-border px-4 py-3 flex items-center justify-between gap-4">
+      <header className="sticky top-0 z-10 bg-card border-b border-border px-4 py-3 flex items-center justify-between gap-4">
         <button
           type="button"
           onClick={() => router.back()}
@@ -220,7 +220,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
       </header>
 
       {/* ── Question palette strip ───────────────────────────────────────────── */}
-      <div className="bg-white border-b border-border px-4 py-2.5">
+      <div className="bg-card border-b border-border px-4 py-2.5">
         <div className="flex flex-wrap gap-1.5" role="list" aria-label="Question palette">
           {filtered.map((q, i) => (
             <PaletteItem
@@ -267,7 +267,7 @@ export const ReviewMode = ({ data }: ReviewModeProps) => {
       </div>
 
       {/* ── Navigation footer ────────────────────────────────────────────────── */}
-      <footer className="sticky bottom-0 bg-white border-t border-border px-4 py-3 flex items-center justify-between gap-4">
+      <footer className="sticky bottom-0 bg-card border-t border-border px-4 py-3 flex items-center justify-between gap-4">
         <button
           type="button"
           onClick={handlePrev}

@@ -32,7 +32,7 @@ const QuestionCountPills = ({
             'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
             isSelected
               ? 'bg-primary text-white border-primary'
-              : 'bg-white text-text-secondary border-border hover:border-primary/40 hover:text-primary',
+              : 'bg-card text-text-secondary border-border hover:border-primary/40 hover:text-primary',
           )}
         >
           {count}

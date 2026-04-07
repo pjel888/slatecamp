@@ -19,7 +19,7 @@ export const SubjectBreakdown = ({ breakdown }: SubjectBreakdownProps) => {
         By Subject
       </p>
 
-      <div className="bg-white rounded-md border border-border divide-y divide-border">
+      <div className="bg-card rounded-md border border-border divide-y divide-border">
         {sorted.map((subject) => {
           const colors = getSubjectColor(subject.disciplineId)
           return (

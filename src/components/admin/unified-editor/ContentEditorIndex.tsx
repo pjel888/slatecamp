@@ -319,7 +319,7 @@ export const ContentEditorIndex = ({
                 'flex items-center gap-1.5 px-3 py-1 text-[11px] font-medium transition-colors duration-150 rounded-l-sm',
                 viewMode === 'articles'
                   ? 'bg-camp-cobalt text-white'
-                  : 'bg-white text-text-secondary hover:bg-surface-light'
+                  : 'bg-card text-text-secondary hover:bg-surface-light'
               )}
             >
               <FileText size={14} />
@@ -332,7 +332,7 @@ export const ContentEditorIndex = ({
                 'flex items-center gap-1.5 px-3 py-1 text-[11px] font-medium transition-colors duration-150 rounded-r-sm',
                 viewMode === 'questions'
                   ? 'bg-camp-cobalt text-white'
-                  : 'bg-white text-text-secondary hover:bg-surface-light'
+                  : 'bg-card text-text-secondary hover:bg-surface-light'
               )}
             >
               <Question size={14} />
@@ -364,7 +364,7 @@ export const ContentEditorIndex = ({
                     'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 first:rounded-l-sm last:rounded-r-sm',
                     statusFilter === opt.value
                       ? 'bg-camp-cobalt text-white'
-                      : 'bg-white text-text-secondary hover:bg-surface-light hover:text-text-primary'
+                      : 'bg-card text-text-secondary hover:bg-surface-light hover:text-text-primary'
                   )}
                 >
                   {opt.label}
@@ -564,7 +564,7 @@ export const ContentEditorIndex = ({
                         <Link
                           key={q.id}
                           href={`/admin/knowledge/questions/${q.id}`}
-                          className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-white bg-surface-light/30"
+                          className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-card bg-surface-light/30"
                         >
                           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-amber-50">
                             <Question size={16} className="text-amber-600" />

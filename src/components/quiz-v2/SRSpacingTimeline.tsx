@@ -58,7 +58,7 @@ export const SRSpacingTimeline = ({
                   'flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium transition-colors duration-150',
                   isCompleted && 'bg-success text-white',
                   isCurrent && 'bg-primary text-white',
-                  isUpcoming && 'border border-border bg-white text-muted-foreground',
+                  isUpcoming && 'border border-border bg-card text-muted-foreground',
                 )}
               >
                 {isCompleted ? (
@@ -102,7 +102,7 @@ export const SRSpacingTimeline = ({
               'flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-medium transition-colors duration-150',
               isDurable
                 ? 'bg-success text-white'
-                : 'border border-border bg-white text-muted-foreground',
+                : 'border border-border bg-card text-muted-foreground',
             )}
           >
             {isDurable ? (
