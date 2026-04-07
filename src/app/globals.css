@@ -203,6 +203,24 @@
   --font-syne: 'Syne', sans-serif;
   --font-atkinson: 'Atkinson Hyperlegible', sans-serif;
 
+  /* Slatecamp — Spacing scale (Flowbite-aligned, 4px grid) */
+  --spacing-section: 1.5rem;
+  /* 24px — section padding */
+  --spacing-card: 1rem;
+  /* 16px — card internal padding */
+  --spacing-card-lg: 1.5rem;
+  /* 24px — large card padding */
+  --spacing-form-gap: 1rem;
+  /* 16px — gap between form fields */
+  --spacing-inline: 0.5rem;
+  /* 8px — inline element gap */
+
+  /* Slatecamp — Surface hierarchy */
+  --color-canvas: var(--canvas);
+
+  /* Slatecamp — Elevation (shadow-card: subtle resting shadow for cards on bg-canvas) */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+
   /* Slatecamp — Gradient & Pattern Utilities */
   --background-image-grad-warm: var(--grad-warm-surface);
   --background-image-grad-cool: var(--grad-cool-surface);
@@ -441,6 +459,9 @@
   /* Testing interface bg */
   --border-warm: rgba(232, 133, 58, 0.15);
 
+  /* Slatecamp — Surface hierarchy (canvas = page bg for card separation) */
+  --canvas: #F5F5F5;
+
   /* Slatecamp — Semantic aliases (canonical names) */
   --ink-primary: #1A2332;
   /* = --text-primary */
@@ -674,6 +695,9 @@
   --slate-blue-50: rgba(27, 63, 196, 0.15);
   --surface-focused: #1C2433;
   --border-warm: rgba(232, 133, 58, 0.2);
+
+  /* Slatecamp — Surface hierarchy (dark) */
+  --canvas: #0F1318;
 
   /* Slatecamp — Semantic aliases (dark) */
   --ink-primary: #E8ECF1;
