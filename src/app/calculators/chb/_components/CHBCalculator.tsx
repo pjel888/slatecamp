@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic'
 import type { CalculatorConfig } from '@/features/3d-lab/types/templates'
 
 const CalculatorTemplate = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/CalculatorTemplate'),
+  () => import('@/features/3d-lab/templates/CalculatorTemplate'),
   { ssr: false }
 )
 

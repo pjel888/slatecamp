@@ -32,27 +32,27 @@ function LoadingSpinner() {
 // ─── Template Components (dynamic, SSR disabled) ──────────────────────────
 
 const ParametricScene = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/ParametricScene'),
+  () => import('@/features/3d-lab/templates/ParametricScene'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
 const ExplodedAssembly = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/ExplodedAssembly'),
+  () => import('@/features/3d-lab/templates/ExplodedAssembly'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
 const FloorPlanWalkthrough = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/FloorPlanWalkthrough'),
+  () => import('@/features/3d-lab/templates/FloorPlanWalkthrough'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
 const CutawaySection = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/CutawaySection'),
+  () => import('@/features/3d-lab/templates/CutawaySection'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
 const AnimatedSequence = dynamic(
-  () => import('@/app/dashboard/3d-lab/_templates/AnimatedSequence'),
+  () => import('@/features/3d-lab/templates/AnimatedSequence'),
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
