@@ -44,7 +44,7 @@ const StorybookProviders = ({
       {appShell.withNoiseFilter ? <NoiseFilter /> : null}
       <NoteContextProvider>
         <TooltipProvider>
-          <div className="min-h-screen bg-background font-sans text-foreground">
+          <div className="min-h-screen bg-canvas font-sans text-foreground">
             {children}
           </div>
           {appShell.withToaster ? <Toaster /> : null}
