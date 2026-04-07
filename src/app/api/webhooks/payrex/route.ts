@@ -47,9 +47,9 @@ export async function POST(request: Request) {
     const userId = metadata.user_id;
     const amountCents = paymentIntent.amount as number;
 
-    const VALID_TIERS = ['free', 'camp', 'insurance', 'institutional'] as const
+    const VALID_TIERS = ['free', 'pro', 'prime', 'institutional', 'enterprise'] as const
     const rawTier = metadata.tier ?? tierFromAmount(amountCents)
-    const tier = VALID_TIERS.includes(rawTier as any) ? rawTier : 'camp';
+    const tier = VALID_TIERS.includes(rawTier as any) ? rawTier : 'pro';
 
     if (userId) {
       await supabase

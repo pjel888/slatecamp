@@ -5,10 +5,10 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
 interface UpgradeButtonsProps {
-  tier?: 'camp' | 'insurance' | 'institutional'
+  tier?: 'pro' | 'prime' | 'institutional'
 }
 
-export const UpgradeButtons = ({ tier = 'camp' }: UpgradeButtonsProps) => {
+export const UpgradeButtons = ({ tier = 'pro' }: UpgradeButtonsProps) => {
   const [loading, setLoading] = useState<string | null>(null)
   const router = useRouter()
 

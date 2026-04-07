@@ -100,7 +100,7 @@ const UpgradePage = async () => {
 
         {/* Payment CTAs — GCash FIRST (Philippines context) */}
         <div className="flex justify-center">
-          <UpgradeButtons tier="camp" />
+          <UpgradeButtons tier="pro" />
         </div>
 
         {/* "Not yet — continue free" — ALWAYS visible, never buried */}

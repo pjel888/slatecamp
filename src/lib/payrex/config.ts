@@ -16,15 +16,15 @@ export const PAYREX_PAYMENT_METHODS = ["card", "gcash", "maya", "qrph"] as const
 export type PayRexPaymentMethod = (typeof PAYREX_PAYMENT_METHODS)[number];
 
 export const PAYREX_PLANS = {
-  camp: {
+  pro: {
     amount: 49900,
     currency: "PHP" as const,
-    description: `${siteConfig.name} Camp — Monthly Subscription`,
+    description: `${siteConfig.name} Pro — Monthly Subscription`,
   },
-  insurance: {
+  prime: {
     amount: 149900,
     currency: "PHP" as const,
-    description: `${siteConfig.name} Insurance — Monthly Subscription`,
+    description: `${siteConfig.name} Prime — Monthly Subscription`,
   },
   institutional: {
     amount: 499900,

@@ -19,7 +19,7 @@ const paymentEndpoints = [
     badges: ['Zod'],
     requestSchema: `// Body
 {
-  tier: "camp" | "storm" | "chill"   // "free" returns 400
+  tier: "pro" | "prime" | "institutional"   // "free" returns 400
 }`,
     responseExample: `// 200 OK — LemonSqueezy
 {
@@ -37,7 +37,7 @@ const paymentEndpoints = [
     curlExample: `curl -X POST https://slatecamp.com/api/payments/checkout \\
   -H "Content-Type: application/json" \\
   -H "Cookie: <session>" \\
-  -d '{"tier":"camp"}'`,
+  -d '{"tier":"pro"}'`,
   },
 ]
 

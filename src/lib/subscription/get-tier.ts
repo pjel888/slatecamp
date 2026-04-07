@@ -12,7 +12,7 @@ import type { UserTier } from '@/types/app'
  *
  * Usage:
  *   const tier = await getUserTier()
- *   if (tier === 'camp') { ... }
+ *   if (tier === 'pro') { ... }
  */
 export const getUserTier = cache(async (): Promise<UserTier> => {
   const supabase = await createClient()
@@ -58,9 +58,10 @@ export const getUserSubscription = cache(async () => {
  */
 const TIER_RANK: Record<UserTier, number> = {
   free: 0,
-  camp: 1,
-  insurance: 2,
+  pro: 1,
+  prime: 2,
   institutional: 3,
+  enterprise: 4,
 }
 
 export const hasMinTier = async (requiredTier: UserTier): Promise<boolean> => {

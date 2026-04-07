@@ -58,7 +58,7 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     aiTutorAccess: false,
     customBanksAccess: false,
   },
-  camp: {
+  pro: {
     questionsPerDay: Infinity,
     aiTokens: 1000,
     savedConfigs: 10,
@@ -67,7 +67,7 @@ export const TIER_CAPABILITIES: Record<UserTier, TierCapabilities> = {
     aiTutorAccess: false,
     customBanksAccess: true,
   },
-  insurance: {
+  prime: {
     questionsPerDay: Infinity,
     aiTokens: 10000,
     savedConfigs: 100,
@@ -129,7 +129,7 @@ export const CONNECTION_BEHAVIORS: Record<DevConnectionState, ConnectionBehavior
 // Tier Rank (for comparison)
 // ---------------------------------------------------------------------------
 
-const TIER_RANK: Record<UserTier, number> = { free: 0, camp: 1, insurance: 2, institutional: 3 };
+const TIER_RANK: Record<UserTier, number> = { free: 0, pro: 1, prime: 2, institutional: 3, enterprise: 4 };
 
 // ---------------------------------------------------------------------------
 // Resolution Functions

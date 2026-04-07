@@ -36,9 +36,10 @@ interface DevToolbarProps {
 
 const TIER_CONFIG: Record<UserTier, { label: string; color: string }> = {
   free: { label: 'Free', color: 'bg-zinc-500' },
-  camp: { label: 'Camp', color: 'bg-blue-500' },
-  insurance: { label: 'Insurance', color: 'bg-indigo-500' },
+  pro: { label: 'Pro', color: 'bg-blue-500' },
+  prime: { label: 'Prime', color: 'bg-indigo-500' },
   institutional: { label: 'Institutional', color: 'bg-amber-500' },
+  enterprise: { label: 'Enterprise', color: 'bg-purple-500' },
 }
 
 const CONN_CONFIG: Record<
@@ -233,7 +234,7 @@ export function DevToolbar({
             </span>
             <div className='mt-1.5 grid grid-cols-2 gap-1'>
               {(
-                ['free', 'camp', 'insurance', 'institutional'] as UserTier[]
+                ['free', 'pro', 'prime', 'institutional'] as UserTier[]
               ).map((tier) => {
                 const cfg = TIER_CONFIG[tier]
                 const isActive = effectiveTier === tier

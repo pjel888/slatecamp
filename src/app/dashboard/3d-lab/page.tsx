@@ -35,7 +35,7 @@ export default async function ThreeDLabPage({
   
   const hasAccess =
     flags.bypass3dGate ||
-    hasTierAccess("camp", profile.tier, profile.isAdmin, flags);
+    hasTierAccess("pro", profile.tier, profile.isAdmin, flags);
 
   if (!hasAccess) {
     return (

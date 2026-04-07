@@ -42,8 +42,8 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     ctaHref: '/register',
   },
   {
-    id: 'camp',
-    tierName: 'Camp',
+    id: 'pro',
+    tierName: 'Pro',
     subtitle: 'The "ALE Season Pass"',
     targetAudience: 'Active ALE Reviewees',
     price: '₱499',
@@ -56,25 +56,25 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
       'Personal Notes Workspace',
     ],
     highlighted: true,
-    ctaLabel: 'Join the Camp',
+    ctaLabel: 'Go Pro',
     ctaHref: '/register',
   },
   {
-    id: 'insurance',
-    tierName: 'Insurance',
+    id: 'prime',
+    tierName: 'Prime',
     subtitle: 'The "Readiness Guarantee"',
     targetAudience: 'Serious Reviewees',
     price: '₱999',
     priceSubtext: '/ month',
     hook: 'Data-driven certainty for your licensure.',
     features: [
-      'Everything in Camp',
+      'Everything in Pro',
       'F-01 Readiness Score — pass-probability gauge',
       'Storm Mode — timed high-pressure exams',
       'AI Tutor (Basic) — 10k monthly tokens',
     ],
     highlighted: false,
-    ctaLabel: 'Get Insured',
+    ctaLabel: 'Go Prime',
     ctaHref: '/register',
   },
   {
@@ -86,7 +86,7 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     priceSubtext: '/ month',
     hook: 'Your pocket reference for professional practice.',
     features: [
-      'Everything in Insurance',
+      'Everything in Prime',
       'Unlimited AI Tutor — ask complex code & spec questions',
       'Advanced Spatial Tools — 3D setback calculators',
     ],
@@ -100,8 +100,8 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
 
 export const EDUCATIONAL_TIERS: PricingTier[] = [
   {
-    id: 'edu-camp',
-    tierName: 'Educational — Camp',
+    id: 'edu-pro',
+    tierName: 'Educational — Pro',
     subtitle: 'The "Cohort License"',
     targetAudience: 'Universities & review center cohorts',
     price: '₱1,440',
@@ -109,7 +109,7 @@ export const EDUCATIONAL_TIERS: PricingTier[] = [
     priceSubtext: '/ seat / cycle (Min. 50 seats)',
     hook: "Upgrade your cohort's passing rate.",
     features: [
-      'Full Camp access for all enrolled students',
+      'Full Pro access for all enrolled students',
       'Instructor Dashboard — view aggregate batch weak points to adjust live lectures',
     ],
     highlighted: false,
@@ -139,8 +139,8 @@ export const EDUCATIONAL_TIERS: PricingTier[] = [
 
 export const ENTERPRISE_TIERS: PricingTier[] = [
   {
-    id: 'enterprise-camp',
-    tierName: 'Enterprise — Camp',
+    id: 'enterprise-pro',
+    tierName: 'Enterprise — Pro',
     subtitle: 'The "Brand Sponsor"',
     targetAudience: 'Construction material suppliers (Boysen, Holcim, etc.)',
     price: 'Custom',
@@ -163,7 +163,7 @@ export const ENTERPRISE_TIERS: PricingTier[] = [
     priceSubtext: 'Annual Contract',
     hook: 'Direct access to the top 1% of architectural talent.',
     features: [
-      'Everything in Enterprise — Camp',
+      'Everything in Enterprise — Pro',
       'Recruitment Pipeline — opt-in access to contact top-scoring users for job offers',
       'Corporate Training Mode — internal code-compliance & specification tooling',
     ],

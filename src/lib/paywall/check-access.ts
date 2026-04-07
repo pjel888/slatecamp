@@ -24,7 +24,7 @@ interface AccessResult {
 }
 
 /** Tiers that count as "paid" (non-free). */
-const PAID_TIERS: UserTier[] = ['camp', 'insurance', 'institutional']
+const PAID_TIERS: UserTier[] = ['pro', 'prime', 'institutional']
 
 /**
  * Check if the current user has access to a gated feature.
@@ -76,7 +76,7 @@ export const checkFeatureAccess = async (featureKey: FeatureKey): Promise<Access
 
   return {
     allowed,
-    reason: allowed ? undefined : 'Upgrade to Camp to unlock this feature',
+    reason: allowed ? undefined : 'Upgrade to Pro to unlock this feature',
     userTier,
     requiredTier,
   }
@@ -109,7 +109,7 @@ export const getUserTier = async (): Promise<UserTier> => {
 }
 
 /**
- * Check if user is on a paid tier (camp, insurance, institutional).
+ * Check if user is on a paid tier (pro, prime, institutional, enterprise).
  */
 export const isPaidUser = async (): Promise<boolean> => {
   const tier = await getUserTier()

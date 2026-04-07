@@ -5,7 +5,7 @@ export type PaymentProvider = "lemonsqueezy" | "payrex";
 export interface CreateCheckoutParams {
   userId: string;
   email: string;
-  tier: "camp" | "insurance" | "institutional";
+  tier: "pro" | "prime" | "institutional";
   successUrl: string;
   cancelUrl: string;
 }
@@ -87,7 +87,7 @@ async function createPayRexCheckout(
 
 export function tierFromAmount(amountCents: number): UserTier {
   if (amountCents >= 499900) return "institutional";
-  if (amountCents >= 149900) return "insurance";
-  if (amountCents >= 49900) return "camp";
+  if (amountCents >= 149900) return "prime";
+  if (amountCents >= 49900) return "pro";
   return "free";
 }

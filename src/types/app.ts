@@ -1,4 +1,4 @@
-export type UserTier = "free" | "camp" | "insurance" | "institutional";
+export type UserTier = "free" | "pro" | "prime" | "institutional" | "enterprise";
 export type QuestionType = "mcq" | "true_false" | "identification" | "essay" | "matching" | "sequence" | "sequencing";
 export type DifficultyLevel = "easy" | "medium" | "hard" | "expert";
 export type ContentStatus = "draft" | "published" | "archived" | "flagged";

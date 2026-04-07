@@ -22,11 +22,12 @@ interface TierContextValue {
   hasAccess: (requiredTier: UserTier) => boolean;
 }
 
-const TIER_RANK: Record<UserTier, number> = { 
-  free: 0, 
-  camp: 1, 
-  insurance: 2, 
-  institutional: 3 
+const TIER_RANK: Record<UserTier, number> = {
+  free: 0,
+  pro: 1,
+  prime: 2,
+  institutional: 3,
+  enterprise: 4,
 };
 
 const TierContext = createContext<TierContextValue>({

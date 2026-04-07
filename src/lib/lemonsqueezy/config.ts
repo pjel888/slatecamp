@@ -11,15 +11,15 @@ export function getLemonSqueezy() {
 }
 
 export const LEMONSQUEEZY_PLANS = {
-  camp: {
-    variantId: process.env.LEMONSQUEEZY_CAMP_VARIANT_ID ?? "",
-    name: "Camp",
+  pro: {
+    variantId: process.env.LEMONSQUEEZY_PRO_VARIANT_ID ?? "",
+    name: "Pro",
     amount: 499,
     currency: "php",
   },
-  insurance: {
-    variantId: process.env.LEMONSQUEEZY_INSURANCE_VARIANT_ID ?? "",
-    name: "Insurance",
+  prime: {
+    variantId: process.env.LEMONSQUEEZY_PRIME_VARIANT_ID ?? "",
+    name: "Prime",
     amount: 1499,
     currency: "php",
   },

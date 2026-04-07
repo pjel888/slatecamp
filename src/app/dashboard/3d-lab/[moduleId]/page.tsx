@@ -36,7 +36,7 @@ export default async function LabModulePage({
   
   const hasAccess =
     flags.bypass3dGate ||
-    hasTierAccess("camp", profile.tier, profile.isAdmin, flags);
+    hasTierAccess("pro", profile.tier, profile.isAdmin, flags);
 
   if (!hasAccess) {
     redirect(ROUTES.THREE_D_LAB);
