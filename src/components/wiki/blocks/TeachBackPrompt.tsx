@@ -113,7 +113,7 @@ export const TeachBackPrompt = ({
                   'h-9 px-5 rounded-sm font-bold text-xs uppercase tracking-[0.15em] transition-all',
                   wordCount >= 20
                     ? 'bg-camp-cobalt text-white hover:bg-primary-700'
-                    : 'bg-zinc-100 text-zinc-400 cursor-not-allowed',
+                    : 'bg-muted text-muted-foreground cursor-not-allowed',
                 )}
               >
                 Submit

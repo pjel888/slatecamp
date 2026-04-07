@@ -54,7 +54,7 @@ export const CatchUpView = ({
               return (
                 <div
                   key={day.day_id}
-                  className="flex items-start gap-3 rounded-md border border-border bg-white p-3"
+                  className="flex items-start gap-3 rounded-md border border-border bg-card p-3"
                 >
                   {/* Subject color indicator */}
                   <div

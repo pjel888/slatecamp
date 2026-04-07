@@ -85,7 +85,7 @@ const QuadrantCell = ({
             {topicNames.map((name) => (
               <span
                 key={name}
-                className="inline-block text-[11px] leading-tight text-text-secondary bg-white/80 border border-border rounded-sm px-1.5 py-0.5"
+                className="inline-block text-[11px] leading-tight text-text-secondary bg-card/80 border border-border rounded-sm px-1.5 py-0.5"
               >
                 {name}
               </span>
@@ -239,7 +239,7 @@ export const ConfidenceMatrix = ({
           )}
         >
           {matrix.partlyCorrect.length > 0 && (
-            <div className="rounded-md border border-border bg-white p-3">
+            <div className="rounded-md border border-border bg-card p-3">
               <p className="text-xs font-medium text-text-secondary mb-1">
                 Partly Sure + Correct
                 <span className="ml-1 tabular-nums text-muted-foreground">
@@ -259,7 +259,7 @@ export const ConfidenceMatrix = ({
             </div>
           )}
           {matrix.partlyWrong.length > 0 && (
-            <div className="rounded-md border border-border bg-white p-3">
+            <div className="rounded-md border border-border bg-card p-3">
               <p className="text-xs font-medium text-text-secondary mb-1">
                 Partly Sure + Wrong
                 <span className="ml-1 tabular-nums text-muted-foreground">

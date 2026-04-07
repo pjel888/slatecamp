@@ -218,7 +218,7 @@ export const EnduranceShell = ({
       {/* Stamina Dashboard / Overlay */}
       {staminaMetrics.blocks.length > 0 && (
         <div className="absolute right-4 top-20 z-20 flex flex-col items-end gap-2 pointer-events-none opacity-60 hover:opacity-100 transition-opacity">
-          <div className="bg-white/80 backdrop-blur-sm border border-border rounded-lg p-2 shadow-sm text-[10px] font-mono">
+          <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-2 shadow-sm text-[10px] font-mono">
             <span className="text-muted-foreground mr-2">STAMINA:</span>
             <span className={cn(
               "font-bold",

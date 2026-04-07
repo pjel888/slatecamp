@@ -21,11 +21,11 @@ export const PostModuleCTA = ({
     : 0
 
   return (
-    <div className="p-4 bg-white border-t border-zinc-200">
-      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-zinc-400 mb-2">
+    <div className="p-4 bg-card border-t border-border">
+      <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-muted-foreground mb-2">
         Module Complete
       </p>
-      <p className="text-[13px] text-zinc-600 mb-3">
+      <p className="text-[13px] text-text-secondary mb-3">
         {questionsAnswered > 0
           ? `${questionsCorrect}/${questionsAnswered} in-canvas questions correct (${accuracy}%).`
           : 'Exploration complete.'

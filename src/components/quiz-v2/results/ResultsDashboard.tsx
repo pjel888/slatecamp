@@ -43,7 +43,7 @@ interface ResultsDashboardProps {
 // ─── Skeleton helpers ─────────────────────────────────────────────────────────
 
 const ScoreSkeleton = () => (
-  <div className="bg-white rounded-md border border-border p-8 text-center animate-pulse">
+  <div className="bg-card rounded-md border border-border p-8 text-center animate-pulse">
     <div className="h-3 w-28 bg-surface-light rounded mx-auto" />
     <div className="h-16 w-32 bg-surface-light rounded mx-auto mt-4" />
     <div className="h-4 w-20 bg-surface-light rounded mx-auto mt-3" />
@@ -51,13 +51,13 @@ const ScoreSkeleton = () => (
 )
 
 const ChartSkeleton = () => (
-  <div className="bg-white rounded-md border border-border p-4 h-40 animate-pulse" />
+  <div className="bg-card rounded-md border border-border p-4 h-40 animate-pulse" />
 )
 
 const ReviewSkeleton = () => (
   <div className="space-y-3 animate-pulse">
     {[1, 2, 3].map((i) => (
-      <div key={i} className="bg-white rounded-md border border-border h-14" />
+      <div key={i} className="bg-card rounded-md border border-border h-14" />
     ))}
   </div>
 )

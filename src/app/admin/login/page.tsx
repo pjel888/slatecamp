@@ -43,7 +43,7 @@ export default function AdminLandingPage() {
           <p className="mt-2 text-sm text-text-secondary">Authorized personnel only.</p>
         </div>
 
-        <div className="rounded-md border border-border bg-white p-8 shadow-sm">
+        <div className="rounded-md border border-border bg-card p-8 shadow-sm">
           <SignInWithGoogleButton
             onClick={handleAdminLogin}
             disabled={loading}

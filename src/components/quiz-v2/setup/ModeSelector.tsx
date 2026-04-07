@@ -91,10 +91,10 @@ const MODES: ModeEntry[] = [
 // ─── Zone accent colours ──────────────────────────────────────────────────────
 
 const zoneAccent = (zone: Zone) =>
-  zone === 3 ? '#E8853A' : '#1B3FC4'
+  zone === 3 ? 'var(--camp-orange)' : 'var(--primary)'
 
 const zoneIconBg = (zone: Zone) =>
-  zone === 3 ? 'rgba(232,133,58,0.10)' : 'rgba(27,63,196,0.10)'
+  zone === 3 ? 'color-mix(in srgb, var(--camp-orange) 10%, transparent)' : 'var(--primary-50)'
 
 // ─── Single mode card ─────────────────────────────────────────────────────────
 
@@ -117,7 +117,7 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
         'hover:-translate-y-px hover:shadow-sm',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-2',
       )}
-      style={{ borderColor: '#D4DAE3' }}
+      style={{ borderColor: 'var(--border)' }}
       aria-label={`${label}. ${description}`}
     >
       {/* Icon + zone badge */}
@@ -131,7 +131,7 @@ const ModeCardItem = ({ entry, onSelect }: ModeCardItemProps) => {
         </div>
         <span
           className="text-[11px] font-medium uppercase tracking-wide"
-          style={{ color: '#8896A7' }}
+          style={{ color: 'var(--muted-foreground)' }}
         >
           Zone {zone} · {ZONE_LABELS[zone]}
         </span>

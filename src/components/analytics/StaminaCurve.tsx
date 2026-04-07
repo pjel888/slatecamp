@@ -34,7 +34,7 @@ function buildCoaching(data: StaminaBucket[]): { text: string; variant: 'warning
 export function StaminaCurve({ data }: Props) {
   const coaching = buildCoaching(data)
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover title="Cognitive Stamina" description="Accuracy by question position. A declining curve indicates cognitive fatigue in longer sessions." />
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">

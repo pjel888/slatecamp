@@ -40,20 +40,20 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
 
   return (
     <div className="p-4 space-y-3">
-      <p className="text-[13px] font-medium text-zinc-900 leading-relaxed">{questionText}</p>
+      <p className="text-[13px] font-medium text-foreground leading-relaxed">{questionText}</p>
 
       <div className="space-y-2">
         {options.map((opt) => {
-          let classes = 'bg-zinc-50 hover:bg-zinc-100 border-zinc-200'
+          let classes = 'bg-muted hover:bg-muted/80 border-border'
           if (revealed && opt.id === correctOptionId) classes = 'bg-emerald-50 border-emerald'
           if (revealed && opt.id === selected && opt.id !== correctOptionId) classes = 'bg-red-50 border-destructive'
-          if (!revealed && opt.id === selected) classes = 'bg-primary-50 border-camp-cobalt'
+          if (!revealed && opt.id === selected) classes = 'bg-primary-50 border-primary'
 
           return (
             <button
               key={opt.id}
               onClick={() => handleSelect(opt.id)}
-              className={`w-full text-left px-3 py-2.5 rounded-sm border text-[13px] text-zinc-700 transition-colors duration-150 ${classes}`}
+              className={`w-full text-left px-3 py-2.5 rounded-sm border text-[13px] text-foreground transition-colors duration-150 ${classes}`}
             >
               {opt.text}
             </button>
@@ -71,13 +71,13 @@ export const HotspotQuestion = ({ questionText, options, correctOptionId, codeCi
       )}
 
       {revealed && (
-        <div className="mt-3 p-3 bg-zinc-50 rounded-sm border border-zinc-200">
-          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-camp-cobalt mb-1">
+        <div className="mt-3 p-3 bg-muted rounded-sm border border-border">
+          <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.15em] text-primary mb-1">
             Code Reference
           </p>
-          <p className="text-[12px] text-zinc-600 leading-relaxed">{codeCitation}</p>
+          <p className="text-[12px] text-foreground leading-relaxed">{codeCitation}</p>
           {consequenceText && (
-            <p className="text-[12px] text-zinc-500 mt-1.5 italic">{consequenceText}</p>
+            <p className="text-[12px] text-text-secondary mt-1.5 italic">{consequenceText}</p>
           )}
         </div>
       )}

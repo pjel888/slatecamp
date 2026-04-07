@@ -22,7 +22,7 @@ const formatDate = (iso: string | null) => {
 }
 
 export const WeakestTopics = ({ data }: Props) => (
-  <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+  <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
     <RichInfoPopover
       title="Topics to Focus On"
       description="Your 10 lowest-mastery topics with at least 3 attempts. Sorted by mastery score ascending."

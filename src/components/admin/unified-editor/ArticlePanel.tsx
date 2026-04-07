@@ -155,7 +155,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light hover:text-text-primary"
+        className="flex items-center gap-1 rounded-sm border border-border bg-card px-2.5 py-1 text-xs font-medium text-text-secondary transition-colors duration-150 ease-out hover:bg-surface-light hover:text-text-primary"
       >
         {label}
         <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" className="opacity-50">
@@ -163,7 +163,7 @@ const SnippetDropdown = ({ label, items, onInsert }: SnippetDropdownProps) => {
         </svg>
       </button>
       {open && (
-        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-border bg-white shadow-md">
+        <div className="absolute left-0 top-full z-50 mt-1 min-w-[160px] rounded-md border border-border bg-card shadow-md">
           {items.map((item) => (
             <button
               key={item.label}
@@ -406,7 +406,7 @@ export const ArticlePanel = ({
         {/* ── Editor Tab ─────────────────────────────────── */}
         <TabsContent value="editor" className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {/* Snippet Toolbar */}
-          <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-border bg-white px-3 py-2">
+          <div className="flex shrink-0 flex-wrap items-center gap-2 border-b border-border bg-card px-3 py-2">
             <Eyebrow className="mr-1">Insert</Eyebrow>
             {SNIPPET_GROUPS.map((group) => (
               <SnippetDropdown
@@ -419,7 +419,7 @@ export const ArticlePanel = ({
           </div>
 
           {/* CodeMirror */}
-          <div className="min-h-0 flex-1 overflow-auto bg-white">
+          <div className="min-h-0 flex-1 overflow-auto bg-card">
             <CodeMirror
               value={content}
               onChange={onContentChange}
@@ -470,7 +470,7 @@ export const ArticlePanel = ({
                   type="button"
                   onClick={refreshStudentView}
                   disabled={isGeneratingPreview}
-                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150 disabled:opacity-50"
+                  className="rounded-sm border border-border bg-card px-2.5 py-1 text-[11px] font-medium text-text-secondary hover:bg-surface-light hover:text-text-primary transition-colors duration-150 disabled:opacity-50"
                 >
                   {isGeneratingPreview ? 'Generating...' : 'Refresh Preview'}
                 </button>
@@ -479,7 +479,7 @@ export const ArticlePanel = ({
                     href={`/admin/preview/${previewId}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-sm border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-camp-cobalt hover:bg-primary-50 transition-colors duration-150"
+                    className="rounded-sm border border-border bg-card px-2.5 py-1 text-[11px] font-medium text-camp-cobalt hover:bg-primary-50 transition-colors duration-150"
                   >
                     Open in new tab
                   </a>
@@ -488,7 +488,7 @@ export const ArticlePanel = ({
               
               {/* Iframe */}
               {isGeneratingPreview && !previewId ? (
-                <div className="flex flex-1 items-center justify-center bg-white">
+                <div className="flex flex-1 items-center justify-center bg-card">
                   <div className="flex items-center gap-2 text-sm text-text-secondary">
                     <svg className="h-4 w-4 animate-spin text-camp-cobalt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -502,11 +502,11 @@ export const ArticlePanel = ({
                   key={previewTimestamp}
                   id="wiki-preview-iframe"
                   src={`/admin/preview/${previewId}`}
-                  className="flex-1 w-full border-0 bg-white"
+                  className="flex-1 w-full border-0 bg-card"
                   title="Article preview — student view"
                 />
               ) : (
-                <div className="flex flex-1 items-center justify-center bg-white text-sm text-text-secondary">
+                <div className="flex flex-1 items-center justify-center bg-card text-sm text-text-secondary">
                   Failed to load preview. Try refreshing.
                 </div>
               )}
@@ -528,7 +528,7 @@ export const ArticlePanel = ({
 
         {/* ── Diff Tab ───────────────────────────────────── */}
         <TabsContent value="diff" className="min-h-0 flex-1 overflow-hidden">
-          <div className="h-full overflow-y-auto bg-white p-4">
+          <div className="h-full overflow-y-auto bg-card p-4">
           {diffCount === 0 ? (
             <p className="text-sm italic text-text-tertiary">
               No changes from saved version.
@@ -589,7 +589,7 @@ export const ArticlePanel = ({
         </button>
 
         {metadataOpen && (
-          <div className="grid grid-cols-2 gap-3 border-t border-border bg-white px-3 py-3">
+          <div className="grid grid-cols-2 gap-3 border-t border-border bg-card px-3 py-3">
             {/* Taxonomy Mapping — Full Width */}
             <div className="col-span-2 flex flex-col gap-1 border-b border-border pb-3 mb-1">
               <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
@@ -601,12 +601,12 @@ export const ArticlePanel = ({
                   placeholder="Search subtopics..."
                   value={taxSearch}
                   onChange={e => setTaxSearch(e.target.value)}
-                  className="w-1/3 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:outline-none"
+                  className="w-1/3 rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:outline-none"
                 />
                 <select
                   value={nodeId ?? ''}
                   onChange={e => onNodeIdChange(e.target.value || null)}
-                  className="flex-1 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary focus:border-camp-cobalt focus:outline-none"
+                  className="flex-1 rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary focus:border-camp-cobalt focus:outline-none"
                 >
                   <option value="">— Select Subtopic —</option>
                   {filteredNodes.map(node => (
@@ -638,7 +638,7 @@ export const ArticlePanel = ({
                 type="text"
                 value={aleTestsYou}
                 onChange={(e) => onAleTestsYouChange(e.target.value)}
-                className="rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
+                className="rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
                 placeholder="Key topics tested..."
               />
             </div>
@@ -652,7 +652,7 @@ export const ArticlePanel = ({
                 type="text"
                 value={updatedNote}
                 onChange={(e) => onUpdatedNoteChange(e.target.value)}
-                className="rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
+                className="rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
                 placeholder="Summary of changes..."
               />
             </div>
@@ -666,7 +666,7 @@ export const ArticlePanel = ({
                 type="text"
                 value={subjectLabel}
                 onChange={(e) => onSubjectLabelChange(e.target.value)}
-                className="rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
+                className="rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
                 placeholder="e.g. Real Property"
               />
             </div>
@@ -690,7 +690,7 @@ export const ArticlePanel = ({
                 value={reviewerComments}
                 onChange={(e) => onReviewerCommentsChange(e.target.value)}
                 rows={3}
-                className="rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
+                className="rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
                 placeholder="Notes from review..."
               />
             </div>
@@ -715,7 +715,7 @@ export const ArticlePanel = ({
                 <a
                   href={`/admin/3d-models?topic=${nodeId}`}
                   target="_blank"
-                  className="rounded-sm border border-border bg-white px-2.5 py-1 text-[10px] font-bold uppercase text-camp-cobalt transition-colors duration-150 hover:bg-primary-50"
+                  className="rounded-sm border border-border bg-card px-2.5 py-1 text-[10px] font-bold uppercase text-camp-cobalt transition-colors duration-150 hover:bg-primary-50"
                 >
                   Manage 3D Registry &rarr;
                 </a>

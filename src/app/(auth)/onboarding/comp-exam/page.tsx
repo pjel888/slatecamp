@@ -13,19 +13,19 @@ export default async function CompExamOnboardingPage() {
   if (!user) redirect(ROUTES.LOGIN)
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center px-6 bg-[#F8F7F5]">
+    <div className="flex min-h-screen flex-col items-center justify-center px-6 bg-background">
       <div className="w-full max-w-md space-y-6">
         {/* Progress indicator */}
-        <p className="text-center text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+        <p className="text-center text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
           Optional · Comp Exam Bridge
         </p>
 
-        <div className="rounded-md border border-[#D4DAE3] bg-white p-6">
+        <div className="rounded-md border border-border bg-card p-6">
           <CompExamFlow />
         </div>
 
         {/* Trust line */}
-        <p className="text-center text-xs text-[#8896A7]">
+        <p className="text-center text-xs text-muted-foreground">
           Your scores are only used to personalise your study map. They&apos;re never shared.
         </p>
       </div>

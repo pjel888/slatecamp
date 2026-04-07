@@ -60,7 +60,7 @@ export const CrammingNudge = ({ message, className }: CrammingNudgeProps) => {
         className={cn(
           'inline-flex items-center gap-1 rounded-sm px-2 py-1',
           'text-[11px] font-medium text-warning',
-          'border border-warning/25 bg-white/60',
+          'border border-warning/25 bg-card/60',
           'transition-all duration-150 ease-out',
           'hover:bg-white hover:border-warning/40',
           'shrink-0',

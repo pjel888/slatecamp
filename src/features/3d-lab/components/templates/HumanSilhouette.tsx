@@ -23,7 +23,7 @@ export const HumanSilhouette = ({ position = [0, 0, 0], opacity = 0.5 }: HumanSi
       {/* Scale label — 1.7m */}
       <Html position={[0.25, 0.85, 0]} distanceFactor={8} occlude={false}>
         <div style={{ pointerEvents: 'none' }} className="whitespace-nowrap">
-          <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-zinc-400 bg-white/80 backdrop-blur-sm px-1 py-0.5 rounded">
+          <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground bg-card/80 backdrop-blur-sm px-1 py-0.5 rounded">
             1.7m
           </span>
         </div>

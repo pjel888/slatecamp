@@ -32,7 +32,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
     return (
       <div className="flex flex-col gap-6">
         <BackLink />
-        <div className="rounded-md border border-[#D4DAE3] bg-white p-8 flex flex-col items-center gap-4 text-center">
+        <div className="rounded-md border border-[#D4DAE3] bg-card p-8 flex flex-col items-center gap-4 text-center">
           <div className="w-10 h-10 rounded-full bg-[#F8F7F5] border border-[#D4DAE3] flex items-center justify-center">
             <Lock size={18} className="text-[#8896A7]" />
           </div>
@@ -59,7 +59,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
     const result = await startDesignSession(problemId)
     if (result.error || !result.session_id) {
       return (
-        <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-8 text-center">
+        <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
           <p className="text-sm text-[#D64545]">Unable to start session. Please try again.</p>
         </div>
       )
@@ -71,7 +71,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
 
   if (!session) {
     return (
-      <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-8 text-center">
+      <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
         <p className="text-sm text-[#D64545]">Session could not be loaded. Please try again.</p>
       </div>
     )

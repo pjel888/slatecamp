@@ -81,10 +81,10 @@ const TimerDisplay = ({
   // Level 1 (count-up): always neutral (#4A5568)
   // Level 2/3 (countdown): Amber at <=25%, Warm Red at <=10%
   const getColor = (): string => {
-    if (!isCountdown) return '#4A5568'
-    if (fractionRemaining <= 0.10) return '#D64545'
-    if (fractionRemaining <= 0.25) return '#D4951A'
-    return '#4A5568'
+    if (!isCountdown) return 'var(--muted-foreground)'
+    if (fractionRemaining <= 0.10) return 'var(--destructive)'
+    if (fractionRemaining <= 0.25) return 'var(--warning)'
+    return 'var(--muted-foreground)'
   }
 
   const color = getColor()
@@ -96,9 +96,9 @@ const TimerDisplay = ({
 
   // Bar color: Camp Cobalt >25%, Amber ≤25%, Warm Red ≤10%
   const getBarColor = (): string => {
-    if (fractionRemaining <= 0.10) return '#D64545'
-    if (fractionRemaining <= 0.25) return '#D4951A'
-    return '#1B3FC4'
+    if (fractionRemaining <= 0.10) return 'var(--destructive)'
+    if (fractionRemaining <= 0.25) return 'var(--warning)'
+    return 'var(--primary)'
   }
 
   const barColor = getBarColor()

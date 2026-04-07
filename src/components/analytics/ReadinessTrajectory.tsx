@@ -25,7 +25,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
   const delta = previousScore ? Math.abs(Math.round(currentScore - previousScore)) : 0
 
   return (
-    <Card className="border-border bg-white p-2 relative">
+    <Card className="border-border bg-card p-2 relative">
       <RichInfoPopover title="Readiness Trajectory" description="Your composite readiness score over time. The green line is the passing threshold." />
       <CardHeader className="p-2 pt-1">
         <div className="flex items-start justify-between">
@@ -43,8 +43,8 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
               <div
                 className={cn(
                   'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[11px] font-bold uppercase',
-                  trend === 'up' && 'bg-green-50 text-green-700',
-                  trend === 'down' && 'bg-red-50 text-red-700',
+                  trend === 'up' && 'bg-success/10 text-success',
+                  trend === 'down' && 'bg-destructive/10 text-destructive',
                   trend === 'flat' && 'bg-primary/10',
                 )}
                 style={trend === 'flat' ? { color: 'var(--muted-foreground)' } : undefined}
@@ -56,7 +56,7 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-1 text-[11px] font-bold text-green-600 uppercase tracking-wider">
+          <div className="flex items-center gap-1 text-[11px] font-bold text-success uppercase tracking-wider">
             <SCIcon icon={Target} size='xs' /> Target: 75%
           </div>
         </div>

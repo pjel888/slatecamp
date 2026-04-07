@@ -18,7 +18,7 @@ export default function WikiPage() {
           <h1 className='font-display text-2xl font-extrabold text-text-primary'>
             Knowledge Wiki
           </h1>
-          <p className='text-zinc-500 text-sm leading-relaxed'>
+          <p className='text-muted-foreground text-sm leading-relaxed'>
             Access the authoritative guide for the Architecture Licensure Exam.
             Select a topic from the taxonomy tree on the left to begin your study.
           </p>
@@ -26,26 +26,26 @@ export default function WikiPage() {
 
         {/* Feature Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-left'>
-          <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
+          <div className='p-4 bg-card rounded-md border border-border shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-warning-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={MagnifyingGlass} size="sm" className='text-warning' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Syllabus Mapped</h3>
-            <p className='text-xs text-zinc-500 leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
+            <p className='text-xs text-muted-foreground leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
           </div>
 
-          <div className='p-4 bg-white rounded-md border border-zinc-100 shadow-sm space-y-2'>
+          <div className='p-4 bg-card rounded-md border border-border shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-primary-50 rounded-md flex items-center justify-center'>
               <SCIcon icon={Sparkle} size="sm" className='text-primary' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Interactive Content</h3>
-            <p className='text-xs text-zinc-500 leading-relaxed'>Complex codes come alive with 2D illustrations and 3D spatial lab models.</p>
+            <p className='text-xs text-muted-foreground leading-relaxed'>Complex codes come alive with 2D illustrations and 3D spatial lab models.</p>
           </div>
         </div>
 
         {/* Footer Hint */}
-        <div className='pt-8 border-t border-zinc-100'>
-          <p className='text-sm text-zinc-400'>
+        <div className='pt-8 border-t border-border'>
+          <p className='text-sm text-muted-foreground'>
             Tip: Use the sidebar to expand categories and find specific articles.
           </p>
         </div>

@@ -62,7 +62,7 @@ export const Mermaid = ({ chart }: MermaidProps) => {
   }
 
   return (
-    <div className="not-prose my-8 flex justify-center w-full overflow-x-auto bg-white/50 dark:bg-zinc-900/30 rounded-lg p-6 border border-border/40">
+    <div className="not-prose my-8 flex justify-center w-full overflow-x-auto bg-card/50 dark:bg-foreground/5 rounded-lg p-6 border border-border/40">
       <div 
         ref={ref} 
         className="mermaid w-full max-w-4xl"

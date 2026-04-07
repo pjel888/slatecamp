@@ -20,7 +20,7 @@ interface ModelConfigDetailProps {
 /* ------------------------------------------------------------------ */
 
 const TEMPLATE_BADGE_STYLES: Record<string, string> = {
-  parametric: 'bg-[#1B3FC4]/10 text-[#1B3FC4]',
+  parametric: 'bg-primary/10 text-primary',
   exploded: 'bg-purple-500/10 text-purple-600',
   floorplan: 'bg-emerald-500/10 text-emerald-600',
   cutaway: 'bg-amber-500/10 text-amber-600',
@@ -28,9 +28,9 @@ const TEMPLATE_BADGE_STYLES: Record<string, string> = {
 }
 
 const STATUS_BADGE_STYLES: Record<string, string> = {
-  built: 'bg-emerald-500/10 text-[#2D9F6F]',
-  ready: 'bg-[#1B3FC4]/10 text-[#1B3FC4]',
-  planned: 'bg-amber-500/10 text-[#D4951A]',
+  built: 'bg-emerald-500/10 text-success',
+  ready: 'bg-primary/10 text-primary',
+  planned: 'bg-amber-500/10 text-warning',
 }
 
 /* ------------------------------------------------------------------ */
@@ -68,20 +68,20 @@ function getTableColumns(arr: Record<string, unknown>[]): string[] {
 
 /** Format a cell value for table display */
 function formatCellValue(value: unknown): React.ReactNode {
-  if (value === null || value === undefined) return <span className="text-[#8896A7]">--</span>
-  if (typeof value === 'function') return <code className="rounded-sm bg-zinc-100 px-1.5 py-0.5 text-xs text-[#4A5568]">[Function]</code>
-  if (typeof value === 'boolean') return <span className={value ? 'text-[#2D9F6F]' : 'text-[#8896A7]'}>{String(value)}</span>
-  if (typeof value === 'number') return <span className="tabular-nums text-[#1A2332]">{value}</span>
+  if (value === null || value === undefined) return <span className="text-muted-foreground">--</span>
+  if (typeof value === 'function') return <code className="rounded-sm bg-muted px-1.5 py-0.5 text-xs text-muted-foreground">[Function]</code>
+  if (typeof value === 'boolean') return <span className={value ? 'text-success' : 'text-muted-foreground'}>{String(value)}</span>
+  if (typeof value === 'number') return <span className="tabular-nums text-foreground">{value}</span>
   if (typeof value === 'string') return value
   if (Array.isArray(value)) {
-    if (value.length === 0) return <span className="text-[#8896A7]">[]</span>
+    if (value.length === 0) return <span className="text-muted-foreground">[]</span>
     if (value.every((v) => typeof v === 'string' || typeof v === 'number')) {
-      return <span className="text-[#4A5568]">{value.join(', ')}</span>
+      return <span className="text-muted-foreground">{value.join(', ')}</span>
     }
-    return <code className="rounded-sm bg-zinc-100 px-1.5 py-0.5 text-xs text-[#4A5568]">[{value.length} items]</code>
+    return <code className="rounded-sm bg-muted px-1.5 py-0.5 text-xs text-muted-foreground">[{value.length} items]</code>
   }
   if (isRecord(value)) {
-    return <code className="rounded-sm bg-zinc-100 px-1.5 py-0.5 text-xs text-[#4A5568]">[Object]</code>
+    return <code className="rounded-sm bg-muted px-1.5 py-0.5 text-xs text-muted-foreground">[Object]</code>
   }
   return String(value)
 }
@@ -99,28 +99,28 @@ function CollapsibleSection({ title, count, children, defaultOpen = false }: {
   const [open, setOpen] = useState(defaultOpen)
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white">
+    <div className="rounded-md border border-border bg-card">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center gap-2 px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-zinc-50"
+        className="flex w-full items-center gap-2 px-4 py-3 text-left transition-colors duration-150 ease-out hover:bg-muted"
       >
         <CaretRight
           size={14}
           weight="bold"
           className={cn(
-            'shrink-0 text-[#8896A7] transition-transform duration-150',
+            'shrink-0 text-muted-foreground transition-transform duration-150',
             open && 'rotate-90'
           )}
         />
-        <span className="flex-1 text-sm font-semibold capitalize text-[#1A2332]">{title}</span>
+        <span className="flex-1 text-sm font-semibold capitalize text-foreground">{title}</span>
         {count !== undefined && (
-          <span className="rounded-full bg-[#F8F7F5] px-2 py-0.5 text-[11px] tabular-nums text-[#8896A7]">
+          <span className="rounded-full bg-background px-2 py-0.5 text-[11px] tabular-nums text-muted-foreground">
             {count}
           </span>
         )}
       </button>
       {open && (
-        <div className="border-t border-[#D4DAE3] px-4 py-3">
+        <div className="border-t border-border px-4 py-3">
           {children}
         </div>
       )}
@@ -139,9 +139,9 @@ function DataTable({ rows }: { rows: Record<string, unknown>[] }) {
     <div className="overflow-x-auto">
       <table className="w-full text-left text-sm">
         <thead>
-          <tr className="border-b border-[#D4DAE3]">
+          <tr className="border-b border-border">
             {columns.map((col) => (
-              <th key={col} className="px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-[#8896A7]">
+              <th key={col} className="px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                 {col}
               </th>
             ))}
@@ -149,9 +149,9 @@ function DataTable({ rows }: { rows: Record<string, unknown>[] }) {
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className="border-b border-[#D4DAE3] last:border-b-0">
+            <tr key={i} className="border-b border-border last:border-b-0">
               {columns.map((col) => (
-                <td key={col} className="px-3 py-2 text-[13px] text-[#4A5568]">
+                <td key={col} className="px-3 py-2 text-[13px] text-muted-foreground">
                   {formatCellValue(row[col])}
                 </td>
               ))}
@@ -169,11 +169,11 @@ function DataTable({ rows }: { rows: Record<string, unknown>[] }) {
 
 function NestedObjectView({ data, depth = 0 }: { data: Record<string, unknown>; depth?: number }) {
   return (
-    <div className={cn('space-y-1', depth > 0 && 'border-l-2 border-[#D4DAE3] pl-3')}>
+    <div className={cn('space-y-1', depth > 0 && 'border-l-2 border-border pl-3')}>
       {Object.entries(data).map(([key, value]) => (
         <div key={key} className="flex gap-2 text-[13px]">
-          <span className="shrink-0 font-medium text-[#8896A7]">{key}:</span>
-          <span className="text-[#4A5568]">
+          <span className="shrink-0 font-medium text-muted-foreground">{key}:</span>
+          <span className="text-muted-foreground">
             {isRecord(value) ? (
               <NestedObjectView data={value} depth={depth + 1} />
             ) : (
@@ -198,7 +198,7 @@ function renderSectionContent(value: unknown): React.ReactNode {
     return (
       <div className="space-y-1">
         {value.map((item, i) => (
-          <div key={i} className="text-[13px] text-[#4A5568]">{formatCellValue(item)}</div>
+          <div key={i} className="text-[13px] text-muted-foreground">{formatCellValue(item)}</div>
         ))}
       </div>
     )
@@ -206,7 +206,7 @@ function renderSectionContent(value: unknown): React.ReactNode {
   if (isRecord(value)) {
     return <NestedObjectView data={value} />
   }
-  return <div className="text-[13px] text-[#4A5568]">{formatCellValue(value)}</div>
+  return <div className="text-[13px] text-muted-foreground">{formatCellValue(value)}</div>
 }
 
 /* ------------------------------------------------------------------ */
@@ -218,8 +218,8 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
   if (!modelId) {
     return (
       <div className="flex h-full min-h-[400px] flex-col items-center justify-center gap-3 p-8">
-        <Cube size={48} weight="duotone" className="text-[#D4DAE3]" />
-        <p className="text-sm text-[#8896A7]">Select a model from the tree to view its configuration</p>
+        <Cube size={48} weight="duotone" className="text-border" />
+        <p className="text-sm text-muted-foreground">Select a model from the tree to view its configuration</p>
       </div>
     )
   }
@@ -229,11 +229,11 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
     return (
       <div className="p-6">
         <div className="space-y-4">
-          <div className="h-6 w-64 animate-pulse rounded-sm bg-[#D4DAE3]" />
-          <div className="h-4 w-96 animate-pulse rounded-sm bg-[#D4DAE3]/60" />
+          <div className="h-6 w-64 animate-pulse rounded-sm bg-border" />
+          <div className="h-4 w-96 animate-pulse rounded-sm bg-border/60" />
           <div className="mt-6 grid grid-cols-2 gap-3">
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="h-12 animate-pulse rounded-md bg-[#D4DAE3]/40" />
+              <div key={i} className="h-12 animate-pulse rounded-md bg-border/40" />
             ))}
           </div>
         </div>
@@ -245,8 +245,8 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
   if (!config) {
     return (
       <div className="flex h-full min-h-[400px] flex-col items-center justify-center gap-3 p-8">
-        <Info size={48} weight="duotone" className="text-[#D4DAE3]" />
-        <p className="text-sm text-[#8896A7]">No configuration found for this model.</p>
+        <Info size={48} weight="duotone" className="text-border" />
+        <p className="text-sm text-muted-foreground">No configuration found for this model.</p>
       </div>
     )
   }
@@ -276,12 +276,12 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-start gap-3">
-          <h2 className="text-lg font-semibold text-[#1A2332]">{title}</h2>
+          <h2 className="text-lg font-semibold text-foreground">{title}</h2>
           <div className="flex items-center gap-2">
             {templateType && (
               <span className={cn(
                 'rounded-sm px-2 py-0.5 text-[11px] font-medium',
-                TEMPLATE_BADGE_STYLES[templateType] ?? 'bg-zinc-100 text-zinc-500'
+                TEMPLATE_BADGE_STYLES[templateType] ?? 'bg-muted text-muted-foreground'
               )}>
                 {templateType}
               </span>
@@ -289,7 +289,7 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
             {status && (
               <span className={cn(
                 'rounded-sm px-2 py-0.5 text-[11px] font-medium',
-                STATUS_BADGE_STYLES[status] ?? 'bg-zinc-100 text-zinc-500'
+                STATUS_BADGE_STYLES[status] ?? 'bg-muted text-muted-foreground'
               )}>
                 {status}
               </span>
@@ -297,19 +297,19 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
           </div>
         </div>
         {description && (
-          <p className="mt-1.5 text-sm leading-relaxed text-[#4A5568]">{description}</p>
+          <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{description}</p>
         )}
       </div>
 
       {/* Dashboard visibility */}
       <div className="mb-4">
         {DASHBOARD_VISIBLE_IDS.has(modelId) ? (
-          <div className="inline-flex items-center gap-1.5 rounded-md bg-[#2D9F6F]/10 px-2.5 py-1 text-[12px] font-medium text-[#2D9F6F]">
+          <div className="inline-flex items-center gap-1.5 rounded-md bg-success/10 px-2.5 py-1 text-[12px] font-medium text-success">
             <Eye size={14} weight="duotone" />
             Visible on dashboard
           </div>
         ) : (
-          <div className="inline-flex items-center gap-1.5 rounded-md bg-zinc-100 px-2.5 py-1 text-[12px] font-medium text-[#8896A7]">
+          <div className="inline-flex items-center gap-1.5 rounded-md bg-muted px-2.5 py-1 text-[12px] font-medium text-muted-foreground">
             <EyeSlash size={14} weight="duotone" />
             Hidden from dashboard
           </div>
@@ -320,9 +320,9 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
       {infoEntries.length > 0 && (
         <div className="mb-6 grid grid-cols-2 gap-3">
           {infoEntries.map(([key, value]) => (
-            <div key={key} className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-2">
-              <div className="text-[11px] font-semibold uppercase tracking-wider text-[#8896A7]">{key}</div>
-              <div className="mt-0.5 text-sm text-[#1A2332]">{formatCellValue(value)}</div>
+            <div key={key} className="rounded-md border border-border bg-background px-3 py-2">
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">{key}</div>
+              <div className="mt-0.5 text-sm text-foreground">{formatCellValue(value)}</div>
             </div>
           ))}
         </div>
@@ -330,12 +330,12 @@ export function ModelConfigDetail({ modelId, config, loading }: ModelConfigDetai
 
       {/* Other scalar fields */}
       {otherEntries.length > 0 && (
-        <div className="mb-6 rounded-md border border-[#D4DAE3] bg-white px-4 py-3">
+        <div className="mb-6 rounded-md border border-border bg-card px-4 py-3">
           <div className="space-y-2">
             {otherEntries.map(([key, value]) => (
               <div key={key} className="flex items-start gap-3 text-[13px]">
-                <span className="w-32 shrink-0 font-medium text-[#8896A7]">{key}</span>
-                <span className="text-[#4A5568]">
+                <span className="w-32 shrink-0 font-medium text-muted-foreground">{key}</span>
+                <span className="text-muted-foreground">
                   {isRecord(value) ? (
                     <NestedObjectView data={value} />
                   ) : (

@@ -9,11 +9,11 @@ export const StreakRibbonSkeleton = () => {
         {[...Array(7)].map((_, i) => (
           <div
             key={i}
-            className="h-2 w-2 rounded-full bg-gray-200 dark:bg-gray-800"
+            className="h-2 w-2 rounded-full bg-muted"
           />
         ))}
       </div>
-      <div className="h-3 w-24 bg-gray-200 dark:bg-gray-800 rounded-md" />
+      <div className="h-3 w-24 bg-muted rounded-md" />
     </div>
   )
 }

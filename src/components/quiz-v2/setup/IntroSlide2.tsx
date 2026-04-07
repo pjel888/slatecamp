@@ -9,10 +9,10 @@ import type { QuizMode, TaxonomySubject, TaxonomySubtopic } from '@/types/quiz-c
 // ─── Mastery helpers ──────────────────────────────────────────────────────────
 
 const masteryColor = (w: number | null): string => {
-  if (w === null) return '#8896A7'
-  if (w >= 0.7) return '#2D9F6F'
-  if (w >= 0.4) return '#D4951A'
-  return '#8896A7'
+  if (w === null) return 'var(--muted-foreground)'
+  if (w >= 0.7) return 'var(--success)'
+  if (w >= 0.4) return 'var(--warning)'
+  return 'var(--muted-foreground)'
 }
 
 const masteryPct = (w: number | null): number => (w === null ? 0 : Math.round(w * 100))
@@ -83,7 +83,7 @@ const SubjectRow = ({ subject, selected, onToggleTopic, onToggleSubject, default
           )}
           {!allSelected && someSelected && (
             <svg viewBox="0 0 12 12" className="w-full h-full p-[2px]" aria-hidden="true">
-              <line x1="2" y1="6" x2="10" y2="6" stroke="#1B3FC4" strokeWidth="1.8" strokeLinecap="round" />
+              <line x1="2" y1="6" x2="10" y2="6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
             </svg>
           )}
         </button>

@@ -22,7 +22,7 @@ export const ActiveTrailBanner = ({ enrollment }: ActiveTrailBannerProps) => {
   return (
     <Link
       href={`/dashboard/camptrails/${trail.slug}/today`}
-      className="block rounded-md border border-trail-accent/20 bg-white transition-all duration-150 ease-out hover:shadow-sm"
+      className="block rounded-md border border-trail-accent/20 bg-card transition-all duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 sm:p-5">
         {/* Left side */}

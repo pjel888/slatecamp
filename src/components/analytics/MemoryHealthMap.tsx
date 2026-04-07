@@ -21,16 +21,16 @@ export function MemoryHealthMap({ data }: Props) {
   const needsAttention = sorted.filter(d => d.status === 'critical' || d.status === 'fading').length
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover title="Memory Health" description="Estimated retention for topics you've studied, based on time since last review. Uses exponential decay (half-life ≈ 14 days)." />
       <CardHeader className="p-2 pt-1">
-        <CardTitle className="text-[11px] font-bold tracking-wider text-zinc-500 uppercase">
+        <CardTitle className="text-[11px] font-bold tracking-wider text-muted-foreground uppercase">
           Memory Health
         </CardTitle>
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {sorted.length === 0 ? (
-          <p className="text-xs text-zinc-400 leading-snug">Start quizzing to track which topics need review.</p>
+          <p className="text-xs text-muted-foreground leading-snug">Start quizzing to track which topics need review.</p>
         ) : (
           <>
             <div className="flex flex-wrap gap-1">

@@ -81,7 +81,7 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
         ].join(' ')}
       >
         {/* Visual line */}
-        <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-zinc-200 group-hover:w-[3px] group-hover:bg-camp-cobalt transition-all duration-150" />
+        <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-border group-hover:w-[3px] group-hover:bg-camp-cobalt transition-all duration-150" />
         {/* Grip dots */}
         {!isCollapsed && (
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none">
@@ -98,7 +98,7 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
         onClick={() => setIsCollapsed(p => !p)}
         aria-expanded={!isCollapsed}
         aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-        className="shrink-0 border-r border-zinc-200 bg-zinc-50/50 px-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 transition-colors z-10"
+        className="shrink-0 border-r border-border bg-zinc-50/50 px-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 transition-colors z-10"
       >
         <SCIcon icon={SidebarSimple} size="sm" />
       </button>

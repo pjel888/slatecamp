@@ -28,7 +28,7 @@ const getOptionState = (
 const OPTION_BG: Record<OptionState, string> = {
   correct: 'bg-primary-50 border-primary',
   'wrong-choice': 'bg-warning-50 border-warning',
-  default: 'bg-white border-border opacity-60',
+  default: 'bg-card border-border opacity-60',
 }
 
 const LETTER_BG: Record<OptionState, string> = {
@@ -70,7 +70,7 @@ export const ReviewCard = ({
 
   return (
     <div
-      className="bg-white rounded-md border border-border overflow-hidden"
+      className="bg-card rounded-md border border-border overflow-hidden"
     >
       {/* ── Header (always visible, toggles expand) ─────────────────────────── */}
       <button
@@ -213,7 +213,7 @@ export const ReviewCard = ({
                         {option.isCorrect && (
                           <p className="mt-1 text-xs font-medium text-primary flex items-center gap-1">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                              <path d="M2 6l3 3 5-5" stroke="#1B3FC4" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             Correct answer
                           </p>

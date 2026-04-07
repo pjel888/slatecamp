@@ -25,7 +25,7 @@ export const ReviewCenterSyncCard = ({
   const prioritySubject = sorted[0]?.subject ?? null
 
   return (
-    <div className="rounded-md border border-border bg-white p-4 space-y-2">
+    <div className="rounded-md border border-border bg-card p-4 space-y-2">
       <div className="flex items-center gap-2">
         <div
           className="flex h-6 w-6 shrink-0 items-center justify-center rounded-sm"

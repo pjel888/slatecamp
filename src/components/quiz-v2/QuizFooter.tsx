@@ -28,7 +28,7 @@ export const QuizFooter = memo(({
 
   return (
     <footer
-      className="flex items-center justify-between px-4 py-3 border-t border-border bg-white"
+      className="flex items-center justify-between px-4 py-3 border-t border-border bg-card"
       aria-label="Quiz navigation"
     >
       {/* Previous — ghost text button */}

@@ -114,7 +114,7 @@ const AdminActivityPage = async () => {
               >
                 {/* Avatar */}
                 <div
-                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#FEF2F2] font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold text-[#B91C1C]"
+                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-destructive/10 font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold text-destructive-700"
                   aria-hidden="true"
                 >
                   {getInitials(log.actor_id)}

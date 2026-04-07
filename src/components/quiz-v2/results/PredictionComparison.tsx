@@ -133,7 +133,7 @@ const PredictionComparison = ({
   const calibration = getCalibrationLabel(predictionGap)
 
   return (
-    <div className="rounded-md border border-border bg-white p-5">
+    <div className="rounded-md border border-border bg-card p-5">
       {/* Header */}
       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-4">
         Self-Assessment Accuracy
@@ -141,15 +141,15 @@ const PredictionComparison = ({
 
       {/* Score dots */}
       <div className="space-y-2.5 mb-4">
-        <ScoreDot label="Predicted" value={predictionScore} color="#1B3FC4" />
+        <ScoreDot label="Predicted" value={predictionScore} color="var(--primary)" />
         {postdictionScore !== null && (
           <ScoreDot
             label="Estimated after"
             value={postdictionScore}
-            color="#4A5568"
+            color="var(--muted-foreground)"
           />
         )}
-        <ScoreDot label="Actual" value={actualScore} color="#2D9F6F" />
+        <ScoreDot label="Actual" value={actualScore} color="var(--success)" />
       </div>
 
       {/* Divider */}

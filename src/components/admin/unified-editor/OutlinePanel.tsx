@@ -102,7 +102,7 @@ export const OutlinePanel = ({
   }, [eiPrompts])
 
   return (
-    <div className="sticky top-0 flex w-[200px] shrink-0 flex-col overflow-y-auto border-r border-border bg-white xl:w-[200px]">
+    <div className="sticky top-0 flex w-[200px] shrink-0 flex-col overflow-y-auto border-r border-border bg-card xl:w-[200px]">
       {/* Header */}
       <div className="px-3 pb-2 pt-4">
         <Eyebrow>Outline</Eyebrow>

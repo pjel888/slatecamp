@@ -2,7 +2,7 @@ const Loading = () => {
   return (
     <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden bg-surface-light">
       {/* Content bar skeleton */}
-      <div className="flex shrink-0 items-center gap-4 border-b border-border bg-white px-4 py-3">
+      <div className="flex shrink-0 items-center gap-4 border-b border-border bg-card px-4 py-3">
         <div className="h-4 w-20 animate-pulse rounded bg-border" />
         <div className="h-4 w-px bg-border" />
         <div className="h-4 w-48 animate-pulse rounded bg-border" />
@@ -60,7 +60,7 @@ const Loading = () => {
             {Array.from({ length: 5 }).map((_, i) => (
               <div
                 key={i}
-                className="h-16 animate-pulse rounded-md border border-border bg-white"
+                className="h-16 animate-pulse rounded-md border border-border bg-card"
               />
             ))}
           </div>

@@ -30,7 +30,7 @@ export const TimeSpentDistribution = ({ data }: Props) => {
   const avgLabel = formatAvg(data.avgMs)
 
   return (
-    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Response Time Distribution"
         description="How long you spend per question, bucketed by time range."

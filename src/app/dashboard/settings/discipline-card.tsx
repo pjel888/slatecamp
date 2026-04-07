@@ -22,8 +22,8 @@ export function DisciplineCard() {
   }
 
   return (
-    <Card className='border-zinc-200 shadow-sm overflow-hidden'>
-      <CardHeader className='bg-zinc-50/50 border-b border-zinc-100'>
+    <Card className='border-border shadow-sm overflow-hidden'>
+      <CardHeader className='bg-muted/50 border-b border-border'>
         <div className='flex items-center gap-3'>
           <div className='bg-primary-50 p-2 rounded-md'>
             <SCIcon icon={GraduationCap} size="md" className='text-primary' />
@@ -37,35 +37,35 @@ export function DisciplineCard() {
         </div>
       </CardHeader>
       <CardContent className='p-0'>
-        <div className='divide-y divide-zinc-100'>
+        <div className='divide-y divide-border'>
           {allDisciplines.map((discipline) => {
             const isActive = activeDiscipline?.discipline_id === discipline.discipline_id
-            
+
             return (
               <button
                 key={discipline.discipline_id}
                 onClick={() => handleSwitch(discipline.discipline_id)}
                 disabled={isSwitching}
                 className={cn(
-                  'w-full flex items-center justify-between p-4 text-left transition-all hover:bg-zinc-50 disabled:opacity-50',
+                  'w-full flex items-center justify-between p-4 text-left transition-all hover:bg-muted disabled:opacity-50',
                   isActive && 'bg-primary-50/30'
                 )}
               >
                 <div className='flex items-center gap-4'>
                   <div className={cn(
                     'w-10 h-10 rounded-md flex items-center justify-center border',
-                    isActive ? 'bg-primary border-primary' : 'bg-white border-zinc-200'
+                    isActive ? 'bg-primary border-primary' : 'bg-card border-border'
                   )}>
                     <span className={cn(
                       'text-xs font-black uppercase',
-                      isActive ? 'text-white' : 'text-zinc-400'
+                      isActive ? 'text-white' : 'text-muted-foreground'
                     )}>
                       {discipline.acronym}
                     </span>
                   </div>
                   <div>
-                    <p className='text-sm font-bold text-zinc-900'>{discipline.name}</p>
-                    <p className='text-[11px] text-zinc-500 uppercase tracking-wider font-medium'>
+                    <p className='text-sm font-bold text-foreground'>{discipline.name}</p>
+                    <p className='text-[11px] text-muted-foreground uppercase tracking-wider font-medium'>
                       Official PRC Syllabus • 2026 Edition
                     </p>
                   </div>

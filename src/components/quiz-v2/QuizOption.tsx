@@ -24,7 +24,7 @@ const optionVariants = cva(
   {
     variants: {
       state: {
-        default: 'cursor-pointer border-border bg-white text-foreground hover:border-primary/40 hover:shadow-sm',
+        default: 'cursor-pointer border-border bg-card text-foreground hover:border-primary/40 hover:shadow-sm',
         selected: 'cursor-pointer border-primary bg-primary-50 text-foreground',
         correct: 'cursor-default border-success bg-success-50 text-foreground',
         incorrect: 'cursor-default border-destructive bg-destructive-50 text-foreground',

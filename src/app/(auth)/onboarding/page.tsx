@@ -164,7 +164,7 @@ export default async function OnboardingPage() {
           Step 1 of 3 before your score is ready
         </p>
 
-        <div className="rounded-md border border-border bg-white p-6 space-y-6">
+        <div className="rounded-md border border-border bg-card p-6 space-y-6">
           <div className="text-center">
             <h1 className="text-xl font-bold text-foreground">
               Let&apos;s set up your study path

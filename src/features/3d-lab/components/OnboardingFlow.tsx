@@ -82,7 +82,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         aria-modal="true"
         aria-label="3D Lab orientation"
         className={cn(
-          "fixed z-[301] bg-white p-6 flex flex-col gap-5 transition-opacity duration-200 shadow-2xl",
+          "fixed z-[301] bg-card p-6 flex flex-col gap-5 transition-opacity duration-200 shadow-2xl",
           "sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-96 sm:rounded-xl",
           "bottom-0 left-0 right-0 rounded-t-xl sm:bottom-auto",
           visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"

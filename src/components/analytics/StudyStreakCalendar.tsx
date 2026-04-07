@@ -30,7 +30,7 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
   const totalQuestions = data.reduce((acc, d) => acc + d.count, 0)
 
   return (
-    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Study Activity — This Month"
         description="Each cell is one calendar day. Darker blue means more questions answered that day."

@@ -41,7 +41,7 @@ const AreaCPage = () => (
           <Link
             key={href}
             href={href}
-            className='group flex items-start gap-4 rounded-md border bg-white p-4 transition-shadow duration-150 hover:shadow-sm'
+            className='group flex items-start gap-4 rounded-md border bg-card p-4 transition-shadow duration-150 hover:shadow-sm'
             style={{ borderColor: '#D4DAE3' }}
           >
             <div

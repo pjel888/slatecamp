@@ -215,7 +215,7 @@ const ComplianceIndicator = ({
 }) => {
   if (violations.length === 0) {
     return (
-      <div className="rounded-md p-3 bg-emerald-50 border border-emerald/20">
+      <div className="rounded-md p-3 bg-success/5 border border-success/20">
         <div className="flex items-center gap-2">
           <SCIcon icon={CheckCircle} size="xs" className="text-emerald" />
           <span
@@ -359,7 +359,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
           ? 'h-full overflow-y-auto'
           : cn(
               'absolute left-0 top-0 bottom-0 z-10 w-[240px] overflow-y-auto',
-              'bg-white border-r border-border',
+              'bg-card border-r border-border',
               'max-sm:left-0 max-sm:right-0 max-sm:top-auto max-sm:bottom-0 max-sm:w-full max-sm:max-h-[50vh] max-sm:rounded-t-lg max-sm:border-r-0 max-sm:border-t max-sm:shadow-lg'
             ),
         className

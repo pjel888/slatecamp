@@ -62,7 +62,7 @@ export const TaxonomyHeatmap = ({
   const showDelta = deltaPeriod !== 'off'
 
   return (
-    <Card className='border-0 bg-white shadow-none'>
+    <Card className='border-0 bg-card shadow-none'>
       <CardHeader className='flex flex-row items-start justify-between gap-4 pb-2'>
         <div>
           <CardTitle className='text-sm font-medium text-text-secondary'>

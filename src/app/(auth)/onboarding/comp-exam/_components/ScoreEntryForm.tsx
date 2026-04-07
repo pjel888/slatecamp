@@ -19,10 +19,10 @@ const ALE_SUBJECTS: { key: AleSubjectKey; label: string }[] = [
 
 const getTierColor = (score: string): string => {
   const n = Number(score)
-  if (!score || isNaN(n)) return 'bg-[#D4DAE3]'
-  if (n < 50) return 'bg-[#D64545]'
-  if (n < 70) return 'bg-[#D4951A]'
-  return 'bg-[#2D9F6F]'
+  if (!score || isNaN(n)) return 'bg-border'
+  if (n < 50) return 'bg-destructive'
+  if (n < 70) return 'bg-warning'
+  return 'bg-success'
 }
 
 const getTierLabel = (score: string): string => {
@@ -99,7 +99,7 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
               {/* Label */}
               <label
                 htmlFor={`score-${key}`}
-                className="flex-1 text-sm text-[#1A2332] leading-tight"
+                className="flex-1 text-sm text-foreground leading-tight"
               >
                 {label}
               </label>
@@ -116,14 +116,14 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
                     value={val}
                     onChange={e => handleChange(key, e.target.value)}
                     placeholder="—"
-                    className="w-16 rounded-sm border border-[#D4DAE3] bg-white px-2.5 py-1.5 text-right text-sm text-[#1A2332] placeholder:text-[#8896A7] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-primary [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                    className="w-16 rounded-sm border border-border bg-card px-2.5 py-1.5 text-right text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
                     aria-label={`${label} score`}
                   />
-                  <span className="ml-1 text-sm text-[#4A5568]">%</span>
+                  <span className="ml-1 text-sm text-muted-foreground">%</span>
                 </div>
 
                 {/* Tier label */}
-                <span className="w-20 text-[11px] text-[#4A5568] text-right hidden sm:block">
+                <span className="w-20 text-[11px] text-muted-foreground text-right hidden sm:block">
                   {tierLabel}
                 </span>
               </div>
@@ -134,29 +134,29 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
 
       {/* Progress note */}
       {filledCount > 0 && filledCount < ALE_SUBJECTS.length && (
-        <p className="text-xs text-[#4A5568]">
+        <p className="text-xs text-muted-foreground">
           {filledCount} of {ALE_SUBJECTS.length} subjects entered
         </p>
       )}
 
       {/* Exam date — optional */}
-      <div className="border-t border-[#D4DAE3] pt-4">
-        <label htmlFor="comp-exam-date" className="block text-sm font-medium text-[#1A2332] mb-1.5">
+      <div className="border-t border-border pt-4">
+        <label htmlFor="comp-exam-date" className="block text-sm font-medium text-foreground mb-1.5">
           When did you take the comp exam?{' '}
-          <span className="font-normal text-[#8896A7]">(optional)</span>
+          <span className="font-normal text-muted-foreground">(optional)</span>
         </label>
         <input
           id="comp-exam-date"
           type="date"
           value={examDate}
           onChange={e => setExamDate(e.target.value)}
-          className="w-full rounded-sm border border-[#D4DAE3] bg-white px-3 py-2 text-sm text-[#1A2332] focus:border-[#1B3FC4] focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full rounded-sm border border-border bg-card px-3 py-2 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
 
       {/* Error */}
       {error && (
-        <p className="rounded-sm border border-[#D64545] bg-[#FDF0F0] px-3 py-2 text-sm text-[#D64545]">
+        <p className="rounded-sm border border-destructive bg-destructive/10 px-3 py-2 text-sm text-destructive">
           {error}
         </p>
       )}
@@ -165,7 +165,7 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? 'Mapping your scores…' : 'Map my scores →'}
       </button>

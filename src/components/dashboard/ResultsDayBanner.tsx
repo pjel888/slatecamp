@@ -76,7 +76,7 @@ const ResultsDayBanner = () => {
             type="button"
             onClick={handleNextCycle}
             disabled={isLoading}
-            className="rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-xs font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:text-[#1B3FC4] disabled:opacity-60"
+            className="rounded-sm border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors duration-150 ease-out hover:border-primary hover:text-primary disabled:opacity-60"
           >
             {isReviewing ? 'Saving…' : "I'll review again next cycle"}
           </button>

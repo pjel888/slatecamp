@@ -106,7 +106,7 @@ export const RevealBlock = ({
   const isHidden = progress < 0.05
 
   return (
-    <div className="my-4 rounded-md border border-border bg-white overflow-hidden">
+    <div className="my-4 rounded-md border border-border bg-card overflow-hidden">
       {/* Prompt header */}
       <div className="flex items-center justify-between px-4 py-2.5 bg-surface-light border-b border-border">
         <div className="flex items-center gap-2">
@@ -164,7 +164,7 @@ export const RevealBlock = ({
         {/* Overlay hint when fully hidden */}
         {isHidden && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <span className="text-[13px] text-muted-foreground bg-white/80 px-3 py-1.5 rounded-sm">
+            <span className="text-[13px] text-muted-foreground bg-card/80 px-3 py-1.5 rounded-sm">
               {label}
             </span>
           </div>
@@ -214,7 +214,7 @@ export const RevealBlock = ({
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
               isRevealed
                 ? 'bg-primary border-primary text-white'
-                : 'bg-white border-border text-muted-foreground hover:border-primary/40 hover:shadow-md',
+                : 'bg-card border-border text-muted-foreground hover:border-primary/40 hover:shadow-md',
             )}
             style={{
               width: handleSize,

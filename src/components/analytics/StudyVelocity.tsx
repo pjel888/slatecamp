@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   if (!active || !payload?.length) return null
   return (
     <div
-      className="rounded-md bg-white p-2 text-xs"
+      className="rounded-md bg-card p-2 text-xs"
       style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
       <p className="font-bold mb-0.5" style={{ color: '#1A2332' }}>Week of {label}</p>
@@ -74,7 +74,7 @@ export const StudyVelocity = ({ data }: Props) => {
   })
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Study Velocity"
         description="Topics mastered per week (crossed 70% mastery threshold). The trend line shows your 3-week rolling average."

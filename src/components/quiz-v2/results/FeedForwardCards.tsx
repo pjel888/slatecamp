@@ -63,7 +63,7 @@ const FeedForwardCard = ({ rec }: { rec: Recommendation }) => {
   const cardContent = (
     <div
       className={cn(
-        'flex flex-col gap-3 rounded-md border border-border bg-white p-4 h-full',
+        'flex flex-col gap-3 rounded-md border border-border bg-card p-4 h-full',
         'transition-shadow duration-150 ease-out',
         !isRest && 'hover:shadow-sm',
       )}

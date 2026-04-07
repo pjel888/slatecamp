@@ -38,7 +38,7 @@ export const ExitConfirmModal = ({
       <DialogContent
         size="sm"
         showCloseButton={false}
-        className="gap-0 rounded-lg bg-white p-6"
+        className="gap-0 rounded-lg bg-card p-6"
       >
         <DialogHeader className="mb-4 space-y-1">
           <DialogTitle className="text-sm font-semibold text-foreground">

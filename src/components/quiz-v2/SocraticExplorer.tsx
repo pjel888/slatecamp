@@ -207,7 +207,7 @@ export const SocraticExplorer = ({
         aria-modal="true"
         className={cn(
           'fixed right-0 top-0 bottom-0 z-50 w-full max-w-md',
-          'bg-white border-l border-border shadow-lg',
+          'bg-card border-l border-border shadow-lg',
           'flex flex-col',
           'animate-in slide-in-from-right duration-200 ease-out',
         )}
@@ -332,7 +332,7 @@ export const SocraticExplorer = ({
               placeholder="Type your response..."
               disabled={loading}
               className={cn(
-                'flex-1 h-9 px-3 rounded-sm border border-border bg-white',
+                'flex-1 h-9 px-3 rounded-sm border border-border bg-card',
                 'text-sm text-foreground placeholder:text-muted-foreground',
                 'transition-colors duration-150 ease-out',
                 'focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20',

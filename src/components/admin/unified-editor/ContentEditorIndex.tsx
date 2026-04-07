@@ -215,7 +215,7 @@ export const ContentEditorIndex = ({
     <div className="flex h-[calc(100vh-8rem)] overflow-hidden">
       {/* ── Left: Taxonomy Sidebar ────────────────────────────── */}
       {!sidebarCollapsed && (
-        <div className="flex w-[280px] shrink-0 flex-col border-r border-border bg-white">
+        <div className="flex w-[280px] shrink-0 flex-col border-r border-border bg-card">
           {/* Sidebar header */}
           <div className="flex items-center justify-between border-b border-border px-4 py-3">
             <div className="flex items-center gap-2">
@@ -299,7 +299,7 @@ export const ContentEditorIndex = ({
       {/* ── Right: Content List ───────────────────────────────── */}
       <div className="flex flex-1 flex-col overflow-hidden">
         {/* Top bar: Search + Filters + View Toggle */}
-        <div className="flex shrink-0 items-center gap-3 border-b border-border bg-white px-5 py-3">
+        <div className="flex shrink-0 items-center gap-3 border-b border-border bg-card px-5 py-3">
           {/* Sidebar toggle */}
           <button
             type="button"
@@ -348,7 +348,7 @@ export const ContentEditorIndex = ({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={viewMode === 'articles' ? "Search articles..." : "Search questions..."}
-              className="h-8 w-full rounded-sm border border-border bg-white pl-8 pr-3 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150"
+              className="h-8 w-full rounded-sm border border-border bg-card pl-8 pr-3 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150"
             />
           </div>
 

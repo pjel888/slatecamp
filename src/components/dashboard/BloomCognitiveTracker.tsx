@@ -222,7 +222,7 @@ export const BloomCognitiveTracker = ({
 
   return (
     <div
-      className="rounded-md bg-white p-3 flex flex-col"
+      className="rounded-md bg-card p-3 flex flex-col"
       style={{ boxShadow: 'none' }}
     >
       {/* Header */}

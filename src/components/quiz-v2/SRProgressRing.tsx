@@ -57,7 +57,7 @@ export const SRProgressRing = ({
           cy={center}
           r={radius}
           fill="none"
-          stroke="#D4DAE3"
+          stroke="var(--border)"
           strokeWidth={strokeWidth}
         />
         {/* Progress arc */}
@@ -66,7 +66,7 @@ export const SRProgressRing = ({
           cy={center}
           r={radius}
           fill="none"
-          stroke={isMet ? '#2D9F6F' : '#1B3FC4'}
+          stroke={isMet ? 'var(--success)' : 'var(--primary)'}
           strokeWidth={strokeWidth}
           strokeLinecap="round"
           strokeDasharray={circumference}
@@ -88,7 +88,7 @@ export const SRProgressRing = ({
             className="font-medium tabular-nums"
             style={{
               fontSize: size * 0.28,
-              color: isMet ? '#2D9F6F' : '#1A2332',
+              color: isMet ? 'var(--success)' : 'var(--foreground)',
             }}
           >
             {count}/{target}

@@ -57,7 +57,7 @@ const PostdictionPrompt = ({
         </div>
 
         {/* Slider card */}
-        <div className="rounded-md border border-border bg-white p-6">
+        <div className="rounded-md border border-border bg-card p-6">
           {/* Current value display */}
           <div className="text-center mb-5">
             <span className="text-[40px] font-bold leading-none tabular-nums text-foreground">
@@ -81,7 +81,7 @@ const PostdictionPrompt = ({
               aria-valuenow={value}
               className="w-full h-2 rounded-full appearance-none cursor-pointer bg-border accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:ring-offset-2"
               style={{
-                background: `linear-gradient(to right, #1B3FC4 0%, #1B3FC4 ${value}%, #D4DAE3 ${value}%, #D4DAE3 100%)`,
+                background: `linear-gradient(to right, var(--primary) 0%, var(--primary) ${value}%, var(--border) ${value}%, var(--border) 100%)`,
               }}
             />
 

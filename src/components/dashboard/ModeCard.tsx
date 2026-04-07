@@ -55,7 +55,7 @@ export function ModeCard({
   return (
     <div
       className={cn(
-        'group relative bg-white border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 flex flex-col h-full',
+        'group relative bg-card border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 flex flex-col h-full',
         disabled && 'opacity-60 grayscale pointer-events-none',
         muted && 'opacity-70',
       )}
@@ -102,7 +102,7 @@ export function ModeCard({
           className={cn(
             'w-full font-semibold transition-all',
             hasActiveSession
-              ? 'bg-zinc-100 text-zinc-900 hover:bg-zinc-200'
+              ? 'bg-muted text-foreground hover:bg-muted/80'
               : 'bg-primary text-white hover:bg-primary-700',
           )}
         >

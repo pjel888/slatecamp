@@ -17,7 +17,7 @@ interface LabMetaPanelProps {
 export const LabMetaPanel = ({ children, title, className = '' }: LabMetaPanelProps) => {
   return (
     <Card className={cn(
-      "bg-white/95 backdrop-blur-md border-border-default/50 shadow-xl pointer-events-auto overflow-hidden rounded-lg",
+      "bg-card/95 backdrop-blur-md border-border-default/50 shadow-xl pointer-events-auto overflow-hidden rounded-lg",
       className
     )}>
       {title && (

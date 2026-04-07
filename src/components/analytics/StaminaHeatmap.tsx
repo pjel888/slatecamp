@@ -39,7 +39,7 @@ export const StaminaHeatmap = ({ data }: Props) => {
   const gridWidth = data.maxQuestions * (CELL_SIZE + CELL_GAP)
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Session Stamina Heatmap"
         description="Each row is a session (most recent on top). Green = correct, red = incorrect, gray = skipped. Patterns reveal fatigue points."

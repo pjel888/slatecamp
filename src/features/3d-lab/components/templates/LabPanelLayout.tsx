@@ -51,7 +51,7 @@ export function LabPanelLayout({
     >
       {/* ── Left Panel ──────────────────────────────────────────────────── */}
       <div
-        className="overflow-y-auto overflow-x-hidden bg-white border-r border-border max-md:hidden"
+        className="overflow-y-auto overflow-x-hidden bg-card border-r border-border max-md:hidden"
         style={{ display: leftCollapsed ? 'none' : undefined }}
       >
         {leftPanel}
@@ -83,7 +83,7 @@ export function LabPanelLayout({
             />
           </div>
           <div
-            className="overflow-y-auto overflow-x-hidden bg-white border-l border-border max-md:hidden"
+            className="overflow-y-auto overflow-x-hidden bg-card border-l border-border max-md:hidden"
             style={{ display: rightCollapsed ? 'none' : undefined }}
           >
             {rightPanel}

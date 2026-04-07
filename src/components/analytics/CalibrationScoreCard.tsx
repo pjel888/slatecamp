@@ -45,7 +45,7 @@ const buildCoachingMessage = (
 export const CalibrationScoreCard = ({ data }: Props) => {
   if (!data) {
     return (
-      <Card className="border-border bg-white rounded-md shadow-none p-2 relative h-full min-h-[280px] flex flex-col">
+      <Card className="border-border bg-card rounded-md shadow-none p-2 relative h-full min-h-[280px] flex flex-col">
         <RichInfoPopover
           title="Calibration Score"
           description="Measures how well your confidence matches your actual accuracy using the Brier Score. A score of 100 means perfect calibration."
@@ -73,7 +73,7 @@ export const CalibrationScoreCard = ({ data }: Props) => {
   const clampedScore = Math.max(0, Math.min(100, data.score))
 
   return (
-    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Calibration Score"
         description="Measures how well your confidence matches your actual accuracy using the Brier Score. The dashed diagonal is perfect calibration. Blue dots show your actual accuracy at each confidence level."

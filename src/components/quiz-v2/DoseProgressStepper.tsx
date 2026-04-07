@@ -41,7 +41,7 @@ const TransitionCard = ({
 
   return (
     <div
-      className="mx-auto max-w-md rounded-md border border-border bg-white p-6 text-center shadow-sm"
+      className="mx-auto max-w-md rounded-md border border-border bg-card p-6 text-center shadow-sm"
       role="status"
       aria-live="polite"
     >

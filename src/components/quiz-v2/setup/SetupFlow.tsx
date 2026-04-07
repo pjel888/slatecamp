@@ -200,7 +200,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
                 className="h-1 rounded-full transition-all duration-150 ease-out"
                 style={{
                   width: i === slideIndex ? '20px' : '6px',
-                  backgroundColor: i === slideIndex ? '#1B3FC4' : '#D4DAE3',
+                  backgroundColor: i === slideIndex ? 'var(--primary)' : 'var(--border)',
                 }}
                 aria-hidden="true"
               />

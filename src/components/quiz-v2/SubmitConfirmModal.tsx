@@ -47,8 +47,8 @@ const getMiniCellState = (
 const miniCellStyles: Record<MiniCellState, string> = {
   answered: 'bg-primary border-primary text-white',
   flagged: 'bg-camp-orange border-camp-orange text-white',
-  skipped: 'border-dashed border-muted-foreground text-muted-foreground bg-white',
-  unanswered: 'border-border text-muted-foreground bg-white',
+  skipped: 'border-dashed border-muted-foreground text-muted-foreground bg-card',
+  unanswered: 'border-border text-muted-foreground bg-card',
 }
 
 const MiniCellIcon = ({ state }: { state: MiniCellState }) => {
@@ -103,7 +103,7 @@ export const SubmitConfirmModal = ({
       <DialogContent
         size="md"
         showCloseButton={false}
-        className="gap-4 rounded-lg bg-white p-6"
+        className="gap-4 rounded-lg bg-card p-6"
       >
         <DialogHeader className="space-y-1">
           <DialogTitle className="text-sm font-semibold text-foreground">

@@ -143,7 +143,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
   const gridW = visibleWeeks.length * (CELL_W + COL_GAP) - COL_GAP
 
   return (
-    <Card className="border-border bg-white p-3 relative">
+    <Card className="border-border bg-card p-3 relative">
       <RichInfoPopover
         title="Study Timeline"
         description="Each row is a subject. Each column is a week. Darker cells = more questions answered. Hover for accuracy breakdown."
@@ -170,7 +170,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
                 'px-2.5 py-1 text-[11px] font-medium transition-colors duration-150',
                 range === opt.value
                   ? 'bg-camp-cobalt text-white'
-                  : 'bg-white text-ink-secondary hover:bg-primary-50',
+                  : 'bg-card text-ink-secondary hover:bg-primary-50',
               )}
             >
               {opt.label}

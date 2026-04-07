@@ -71,7 +71,7 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
     <div
       onClick={handleClick}
       className={cn(
-        'relative rounded-lg border border-border-default/60 bg-white p-5 transition-all duration-200 ease-out',
+        'relative rounded-lg border border-border-default/60 bg-card p-5 transition-all duration-200 ease-out',
         isLocked
           ? 'cursor-default opacity-70'
           : 'cursor-pointer hover:border-primary/30 hover:shadow-md',
@@ -109,8 +109,8 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
 
       {/* Locked overlay for phase 2 & 3 */}
       {isLocked && (
-        <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-white/60 backdrop-blur-[1px]">
-          <div className="flex items-center gap-1.5 rounded-full bg-white border border-border-default shadow-sm px-3 py-1.5">
+        <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-card/60 backdrop-blur-[1px]">
+          <div className="flex items-center gap-1.5 rounded-full bg-card border border-border-default shadow-sm px-3 py-1.5">
             <Lock size={12} weight="bold" className="text-muted-foreground" />
             <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Coming Soon</span>
           </div>

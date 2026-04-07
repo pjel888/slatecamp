@@ -27,8 +27,7 @@ export const QuestionColumn = memo(({
         {question.taxonomy_breadcrumb}
         {question.is_interleaved && (
           <span
-            className="ml-1.5 inline-flex items-center rounded-sm px-1.5 py-0.5 text-[11px] font-medium"
-            style={{ color: '#8896A7', backgroundColor: 'rgba(136,150,167,0.10)' }}
+            className="ml-1.5 inline-flex items-center rounded-sm px-1.5 py-0.5 text-[11px] font-medium text-muted-foreground bg-muted/10"
           >
             related topic
           </span>

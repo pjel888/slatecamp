@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   const day = payload[0]?.payload?.daysSince
   return (
     <div
-      className="rounded-md bg-white p-2 text-xs"
+      className="rounded-md bg-card p-2 text-xs"
       style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
       <p className="font-bold mb-1" style={{ color: '#1A2332' }}>Day {day}</p>
@@ -73,7 +73,7 @@ export const ForgettingCurves = ({ data }: Props) => {
   })
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Memory Decay Curves"
         description="Estimated recall percentage over time per topic. The dashed line at 70% marks the optimal review threshold. Topics crossing it sooner need earlier review."

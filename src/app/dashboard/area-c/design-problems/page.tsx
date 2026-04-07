@@ -9,7 +9,7 @@ const DesignProblemsContent = async () => {
 
   if (error) {
     return (
-      <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-8 text-center">
+      <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
         <p className="text-sm text-[#D64545]">Unable to load problems. Please try again.</p>
       </div>
     )
@@ -39,7 +39,7 @@ const DesignProblemsContent = async () => {
 
       {/* Progress summary */}
       {completedProblemIds.length > 0 && (
-        <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-3 flex items-center gap-3">
+        <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-3 flex items-center gap-3">
           <div className="flex-1">
             <div className="flex items-center justify-between mb-1.5">
               <span className="text-xs text-[#4A5568]">

@@ -158,7 +158,7 @@ export const GenerationInput = memo(({
             spellCheck={false}
             className={cn(
               'w-full rounded-md border px-4 py-3 text-base',
-              'text-foreground bg-white placeholder:text-muted-foreground',
+              'text-foreground bg-card placeholder:text-muted-foreground',
               'transition-colors duration-150 ease-out',
               'focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary',
               isDisabled && feedback?.isCorrect && 'border-success bg-success-50',

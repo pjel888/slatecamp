@@ -85,8 +85,8 @@ const IntroSlide1 = ({
   onInterleaveChange,
 }: IntroSlide1Props) => {
   const Icon = MODE_ICONS[mode]
-  const accent = isZone3(mode) ? '#E8853A' : '#1B3FC4'
-  const iconBg = isZone3(mode) ? 'rgba(232,133,58,0.10)' : 'rgba(27,63,196,0.10)'
+  const accent = isZone3(mode) ? 'var(--camp-orange)' : 'var(--primary)'
+  const iconBg = isZone3(mode) ? 'color-mix(in srgb, var(--camp-orange) 10%, transparent)' : 'var(--primary-50)'
   const countOptions = getCountOptions(mode)
 
   // Only hide count stepper for Full Exam (fixed at 200)
@@ -167,7 +167,7 @@ const IntroSlide1 = ({
         <label
           htmlFor="interleave-toggle"
           className="flex items-start gap-3 rounded-md border border-border px-4 py-3 cursor-pointer transition-colors duration-150 ease-out hover:border-primary/40"
-          style={interleaveEnabled ? { borderColor: '#1B3FC4', backgroundColor: '#EEF2FC' } : undefined}
+          style={interleaveEnabled ? { borderColor: 'var(--primary)', backgroundColor: 'var(--primary-50)' } : undefined}
         >
           <input
             id="interleave-toggle"
@@ -181,7 +181,7 @@ const IntroSlide1 = ({
           {/* Custom toggle track */}
           <span
             className="relative mt-0.5 flex h-5 w-9 shrink-0 rounded-full transition-colors duration-150 ease-out"
-            style={{ backgroundColor: interleaveEnabled ? '#1B3FC4' : '#D4DAE3' }}
+            style={{ backgroundColor: interleaveEnabled ? 'var(--primary)' : 'var(--border)' }}
             aria-hidden="true"
           >
             <span

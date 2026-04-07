@@ -41,7 +41,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   const d = payload[0].payload
   const secs = Math.round(d.avgTimeMs / 1000)
   return (
-    <div className="rounded-md bg-white p-2 text-xs" style={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}>
+    <div className="rounded-md bg-card p-2 text-xs" style={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}>
       <p className="font-bold mb-1" style={{ color: '#1A2332' }}>{d.subject}</p>
       <p style={{ color: '#4A5568' }}>{secs}s avg Â· {d.accuracy}% accuracy Â· {d.questionCount}Q</p>
     </div>
@@ -74,7 +74,7 @@ function buildCoaching(data: PacingQuadrantPoint[], targetMs: number, passing: n
 export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
   if (data.length === 0) {
     return (
-      <Card className="border-border bg-white p-2 relative h-full min-h-[320px] flex flex-col">
+      <Card className="border-border bg-card p-2 relative h-full min-h-[320px] flex flex-col">
         <RichInfoPopover title="Pacing vs. Accuracy" description="Reveals whether you're rushing, overthinking, or mastering material across subjects." />
         <CardHeader className="p-2 pt-1">
           <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">Pacing vs. Accuracy</CardTitle>
@@ -92,7 +92,7 @@ export function PacingQuadrant({ data, targetTimeMs, passingAccuracy }: Props) {
   const coaching = buildCoaching(data, targetTimeMs, passingAccuracy)
 
   return (
-    <Card className="border-border bg-white p-2 relative">
+    <Card className="border-border bg-card p-2 relative">
       <RichInfoPopover title="Pacing vs. Accuracy" description="Each dot is a subject. Fast + accurate = Mastered. Fast + inaccurate = Rushing. Slow + accurate = Careful. Slow + inaccurate = Overthinking." />
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">Pacing vs. Accuracy</CardTitle>

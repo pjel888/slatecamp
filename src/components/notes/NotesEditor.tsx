@@ -253,7 +253,7 @@ export function NotesEditor({
               className={cn(
                 'h-5 w-5 rounded-full border-2 transition-transform hover:scale-110',
                 editor.isActive('highlight', { color: colour })
-                  ? 'border-zinc-500'
+                  ? 'border-muted-foreground'
                   : 'border-transparent',
               )}
               style={{ backgroundColor: colour }}
@@ -267,7 +267,7 @@ export function NotesEditor({
         <div
           className={cn(
             'flex shrink-0 flex-wrap items-center gap-0.5 border-b border-border/60 px-3 py-2',
-            'bg-muted dark:bg-zinc-800/90',
+            'bg-muted dark:bg-muted',
             toolbarWrapperClassName,
           )}
         >

@@ -28,7 +28,7 @@ interface ImprovedActivityFeedProps {
 
 export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
   return (
-    <Card className='p-3 bg-white h-full w-full border-0 flex flex-col min-h-0 overflow-hidden'>
+    <Card className='p-3 bg-card h-full w-full border-0 flex flex-col min-h-0 overflow-hidden'>
       <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>

@@ -79,7 +79,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
         <ActiveSessionProvider>
           <NoteContextProvider>
           <SidebarProvider>
-            <div className='flex flex-col h-screen overflow-hidden text-gray-900 font-sans selection:bg-gray-200 bg-page-bg lg:flex-row'>
+            <div className='flex flex-col h-screen overflow-hidden text-foreground font-sans selection:bg-muted bg-page-bg lg:flex-row'>
               {/* Mobile top bar */}
               <MobileSidebarShell
                 userDisplay={{

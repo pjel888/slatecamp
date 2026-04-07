@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload }: any) => {
     const item = payload[0].payload as SubjectMastery
     return (
       <div
-        className="rounded-md bg-white px-3 py-2"
+        className="rounded-md bg-card px-3 py-2"
         style={{ border: '1px solid #E5E7EB', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
       >
         <p className="text-xs font-semibold" style={{ color: '#1A2332' }}>
@@ -45,7 +45,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
   const hasData = data.some(d => d.questionsAnswered > 0)
 
   return (
-    <div className="flex flex-col bg-white border border-border-design rounded-md overflow-hidden h-full">
+    <div className="flex flex-col bg-card border border-border-design rounded-md overflow-hidden h-full">
       <div className="px-4 py-3 border-b border-border-design">
         <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.15em] text-text-2">
           Subject Mastery

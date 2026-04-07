@@ -41,7 +41,7 @@ interface NotificationIconProps {
 export const NotificationIcon = ({ type, isUnread }: NotificationIconProps) => {
   const config = ICON_MAP[type]
   return (
-    <div className={`flex-shrink-0 w-9 h-9 rounded-[10px] flex items-center justify-center ${
+    <div className={`flex-shrink-0 w-9 h-9 rounded-md flex items-center justify-center ${
       isUnread ? config.unreadBg : 'bg-muted'
     }`}>
       <SCIcon

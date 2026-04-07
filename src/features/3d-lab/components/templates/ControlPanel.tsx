@@ -48,22 +48,22 @@ export const ControlPanel = memo(function ControlPanel({
     <div
       className={cn(
         'absolute bottom-4 left-4 z-10 w-72',
-        'bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3',
+        'bg-card/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3',
         className
       )}
     >
       <div className="flex items-center justify-between mb-3">
-        <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+        <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
           {title}
         </span>
         <Button
           variant="ghost"
           size="icon"
-          className="h-6 w-6 rounded-sm hover:bg-zinc-100"
+          className="h-6 w-6 rounded-sm hover:bg-muted"
           onClick={resetParametric}
           title="Reset to defaults"
         >
-          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-zinc-400" />
+          <SCIcon icon={ArrowCounterClockwise} size="xs" className="text-muted-foreground" />
         </Button>
       </div>
 
@@ -78,10 +78,10 @@ export const ControlPanel = memo(function ControlPanel({
           return (
             <div key={ctrl.key} className="space-y-1.5">
               <div className="flex items-center justify-between">
-                <label className="text-[11px] font-medium text-zinc-600">
+                <label className="text-[11px] font-medium text-foreground">
                   {ctrl.label}
                 </label>
-                <span className="text-[11px] font-bold text-zinc-900 tabular-nums">
+                <span className="text-[11px] font-bold text-foreground tabular-nums">
                   {displayVal} {ctrl.unit}
                 </span>
               </div>

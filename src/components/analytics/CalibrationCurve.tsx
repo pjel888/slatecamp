@@ -38,7 +38,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   const d = payload[0].payload
   return (
     <div
-      className="rounded-md bg-white p-2 text-xs"
+      className="rounded-md bg-card p-2 text-xs"
       style={{
         borderRadius: '8px',
         border: '1px solid #D4DAE3',

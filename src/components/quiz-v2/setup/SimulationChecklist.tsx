@@ -154,7 +154,7 @@ const SimulationChecklist = ({ onReady }: SimulationChecklistProps) => {
         disabled={!allChecked}
         onClick={onReady}
         className="rounded-sm"
-        style={{ backgroundColor: '#E8853A' } as React.CSSProperties}
+        style={{ backgroundColor: 'var(--camp-orange)' } as React.CSSProperties}
       >
         Start Simulation
       </Button>

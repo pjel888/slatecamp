@@ -36,7 +36,7 @@ export const SimulationTrajectory = ({ data }: Props) => {
   const coaching = buildCoaching(data)
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Simulation Trajectory"
         description="Your score trend across full-length simulations (50+ questions). The green dashed line marks the estimated passing threshold."

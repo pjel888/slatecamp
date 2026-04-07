@@ -168,7 +168,7 @@ export const DailyDoseCard = () => {
 
   if (loading) {
     return (
-      <Card className="border border-border bg-white p-4">
+      <Card className="border border-border bg-card p-4">
         <div className="flex items-center gap-2">
           <SpinnerGap size={16} className="animate-spin" style={{ color: '#1B3FC4' }} />
           <span className="text-sm" style={{ color: '#4A5568' }}>
@@ -190,7 +190,7 @@ export const DailyDoseCard = () => {
       : dose.estimatedMinutes
 
     return (
-      <Card className="border border-border bg-white p-4">
+      <Card className="border border-border bg-card p-4">
         <div className="flex items-center gap-2">
           <CheckCircle size={20} weight="fill" style={{ color: '#2D9F6F' }} />
           <div>
@@ -210,7 +210,7 @@ export const DailyDoseCard = () => {
 
   if (showTimePicker || !dose) {
     return (
-      <Card className="border border-border bg-white p-4">
+      <Card className="border border-border bg-card p-4">
         <div className="text-sm text-text-tertiary">Time picker unavailable (Pass 1 cleanup)</div>
       </Card>
     )
@@ -260,7 +260,7 @@ export const DailyDoseCard = () => {
                 'flex items-center justify-between rounded-md border p-3 transition-all duration-150 ease-out',
                 isFirst
                   ? 'border-camp-cobalt bg-primary-50'
-                  : 'border-border bg-white',
+                  : 'border-border bg-card',
               ].join(' ')}
             >
               <div className="flex items-center gap-2.5 min-w-0">

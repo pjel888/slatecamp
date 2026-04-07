@@ -61,7 +61,7 @@ export const InfoPanel = ({
           role="region"
           aria-label="Information panel"
           className={cn(
-            "absolute bottom-0 left-0 right-0 max-h-[60vh] overflow-y-auto bg-white rounded-t-xl shadow-2xl pointer-events-auto",
+            "absolute bottom-0 left-0 right-0 max-h-[60vh] overflow-y-auto bg-card rounded-t-xl shadow-2xl pointer-events-auto",
             "animate-in slide-in-from-bottom duration-200"
           )}
         >

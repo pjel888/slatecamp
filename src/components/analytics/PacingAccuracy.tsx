@@ -48,7 +48,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   const d = payload[0].payload
   return (
     <div
-      className="rounded-md bg-white p-2 text-xs"
+      className="rounded-md bg-card p-2 text-xs"
       style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
       <p className="font-bold mb-0.5 capitalize" style={{ color: '#1A2332' }}>{d.mode} session</p>
@@ -105,7 +105,7 @@ export const PacingAccuracy = ({ data }: Props) => {
 
   if (data.length === 0) {
     return (
-      <Card className="border-border bg-white p-2 relative h-full">
+      <Card className="border-border bg-card p-2 relative h-full">
         <RichInfoPopover
           title="Session Pacing vs. Accuracy"
           description="Each dot is one session. The optimal zone is top-left (fast + accurate)."
@@ -127,7 +127,7 @@ export const PacingAccuracy = ({ data }: Props) => {
   const maxSeconds = Math.max(...data.map(d => d.avgSeconds), TARGET_SECONDS) + 30
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Session Pacing vs. Accuracy"
         description="Each dot is one session, colored by mode. Vertical line = ALE target pace (120s). Horizontal line = 75% passing threshold. Top-left = optimal."

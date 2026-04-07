@@ -61,7 +61,7 @@ export const ProgressCard = ({ report }: Props) => {
   const rsDirection = rsChange > 0 ? 'up' : rsChange < 0 ? 'down' : 'flat'
 
   return (
-    <Card className="border-border bg-white p-0 relative overflow-hidden">
+    <Card className="border-border bg-card p-0 relative overflow-hidden">
       <div className="p-4">
         {/* Header */}
         <div className="flex items-center justify-between mb-3">
@@ -158,7 +158,7 @@ export const ProgressCard = ({ report }: Props) => {
         <button
           type="button"
           onClick={handleDownload}
-          className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-border bg-white px-3 py-1.5 text-xs font-semibold text-text-secondary transition-colors duration-150 hover:bg-surface-light"
+          className="flex-1 flex items-center justify-center gap-1.5 rounded-sm border border-border bg-card px-3 py-1.5 text-xs font-semibold text-text-secondary transition-colors duration-150 hover:bg-surface-light"
         >
           <SCIcon icon={DownloadSimple} size="xs" />
           Copy Summary

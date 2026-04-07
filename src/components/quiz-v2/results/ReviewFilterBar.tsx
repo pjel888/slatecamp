@@ -58,7 +58,7 @@ export const ReviewFilterBar = ({
     <div
       ref={barRef}
       className={cn(
-        'sticky top-0 z-10 bg-white/95 backdrop-blur-sm px-4 py-3 -mx-4 transition-shadow duration-150 ease-out',
+        'sticky top-0 z-10 bg-card/95 backdrop-blur-sm px-4 py-3 -mx-4 transition-shadow duration-150 ease-out',
         isStuck && 'shadow-sm border-b border-border',
       )}
       role="toolbar"

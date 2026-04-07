@@ -48,15 +48,15 @@ const getCellState = (
 
 const cellStyles: Record<CellState, string> = {
   unanswered:
-    'bg-white border-2 border-border text-muted-foreground',
+    'bg-card border-2 border-border text-muted-foreground',
   answered:
     'bg-primary border-2 border-primary text-white',
   flagged:
     'bg-camp-orange border-2 border-camp-orange text-white',
   current:
-    'bg-white border-2 border-primary text-primary ring-2 ring-primary ring-offset-1 font-bold',
+    'bg-card border-2 border-primary text-primary ring-2 ring-primary ring-offset-1 font-bold',
   skipped:
-    'bg-white border-2 border-dashed border-muted-foreground text-muted-foreground',
+    'bg-card border-2 border-dashed border-muted-foreground text-muted-foreground',
 }
 
 // ─── CellIcon — ensures color is always paired with shape/icon ───────────────
@@ -200,7 +200,7 @@ export const QuestionPalette = ({
         aria-modal="true"
         aria-label="Question palette"
         className={cn(
-          'absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-lg',
+          'absolute right-0 top-0 h-full w-full max-w-sm bg-card shadow-lg',
           'flex flex-col',
           !prefersReducedMotion && 'animate-in slide-in-from-right duration-150 ease-out',
         )}
@@ -268,8 +268,8 @@ export const QuestionPalette = ({
         <div className="flex flex-wrap gap-x-3 gap-y-1 border-b border-border px-4 py-2">
           <LegendItem color="bg-primary" label="Answered" icon={<CheckCircle size={8} weight="fill" aria-hidden="true" />} />
           <LegendItem color="bg-camp-orange" label="Flagged" icon={<Flag size={8} weight="fill" aria-hidden="true" />} />
-          <LegendItem color="bg-white border border-border" label="Unanswered" icon={<Circle size={8} weight="regular" aria-hidden="true" />} />
-          <LegendItem color="bg-white border border-dashed border-muted-foreground" label="Skipped" icon={<ArrowUUpLeft size={8} weight="regular" aria-hidden="true" />} />
+          <LegendItem color="bg-card border border-border" label="Unanswered" icon={<Circle size={8} weight="regular" aria-hidden="true" />} />
+          <LegendItem color="bg-card border border-dashed border-muted-foreground" label="Skipped" icon={<ArrowUUpLeft size={8} weight="regular" aria-hidden="true" />} />
         </div>
 
         {/* Grid */}

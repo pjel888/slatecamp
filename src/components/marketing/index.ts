@@ -1,4 +1,5 @@
 export * from './AnalyticsSection'
+export * from './FaqSection'
 export * from './BentoFeatureGrid'
 export * from './ComparisonSection'
 export * from './FeatureSectionLayout'

@@ -227,7 +227,7 @@ function LawCard({ group }: { group: LawGroup }) {
   const allPass = activeCount === 0
 
   return (
-    <div className="rounded-md border border-border overflow-hidden bg-white">
+    <div className="rounded-md border border-border overflow-hidden bg-card">
       {/* Header */}
       <div className="flex items-center gap-2 px-3 py-2.5">
         <div
@@ -413,7 +413,7 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
           ? 'h-full overflow-y-auto'
           : cn(
               'absolute right-0 top-0 bottom-0 z-10 w-[280px] overflow-y-auto',
-              'bg-white border-l border-border',
+              'bg-card border-l border-border',
               'max-md:hidden'
             )
       )}
@@ -421,7 +421,7 @@ export const ComplianceReportPanel = memo(function ComplianceReportPanel({
       aria-label="Compliance report"
     >
       {/* Header */}
-      <div className="sticky top-0 bg-white border-b border-border px-4 py-3 z-10">
+      <div className="sticky top-0 bg-card border-b border-border px-4 py-3 z-10">
         <div className="flex items-center justify-between">
           <span
             className="text-muted-foreground uppercase"

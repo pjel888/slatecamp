@@ -40,7 +40,7 @@ export function NotesList({
 
   return (
     <div className={cn(
-      'flex h-full shrink-0 flex-col border-r border-border bg-white transition-all duration-200 ease-out',
+      'flex h-full shrink-0 flex-col border-r border-border bg-card transition-all duration-200 ease-out',
       collapsed ? 'w-12' : 'w-[268px]',
     )}>
       {/* Collapse toggle — identical to NotesNavigator */}
@@ -92,7 +92,7 @@ export function NotesList({
                 placeholder="Search notes..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full rounded-md bg-muted py-1.5 pl-8 pr-3 text-xs text-text-primary border border-border placeholder:text-text-tertiary focus:bg-white focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt transition-all duration-150"
+                className="w-full rounded-md bg-muted py-1.5 pl-8 pr-3 text-xs text-text-primary border border-border placeholder:text-text-tertiary focus:bg-card focus:outline-none focus:ring-2 focus:ring-camp-cobalt/20 focus:border-camp-cobalt transition-all duration-150"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ export function NotesList({
                         isSelected
                           ? 'bg-primary-50'
                           : 'hover:bg-camp-cobalt/[0.04]',
-                        note.is_virtual && !isSelected && 'bg-zinc-50/50',
+                        note.is_virtual && !isSelected && 'bg-muted/50',
                       )}
                       style={{ width: 'calc(100% - 8px)' }}
                     >

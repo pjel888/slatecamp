@@ -19,7 +19,7 @@ export const CoachObservationCard = ({ observation }: CoachObservationCardProps)
   if (!observation || observation.signalStrength === 'insufficient') return null
 
   return (
-    <div className="rounded-md border border-border bg-white p-5 space-y-4">
+    <div className="rounded-md border border-border bg-card p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center gap-2">
         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-primary-50">

@@ -81,7 +81,7 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
             <path
               d={path}
               fill="none"
-              stroke="#1B3FC4"
+              stroke="var(--primary)"
               strokeWidth={2.5}
               strokeLinejoin="round"
               strokeLinecap="round"

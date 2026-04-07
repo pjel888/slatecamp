@@ -143,7 +143,7 @@ const PromptCard = ({
           <button
             type="button"
             onClick={() => onUndoDelete(prompt.prompt_id)}
-            className="rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-secondary transition-colors duration-150 ease-out hover:border-text-tertiary hover:text-text-primary"
+            className="rounded-sm border border-border bg-card px-2.5 py-1 text-xs text-text-secondary transition-colors duration-150 ease-out hover:border-text-tertiary hover:text-text-primary"
           >
             Undo
           </button>
@@ -153,7 +153,7 @@ const PromptCard = ({
   }
 
   return (
-    <div className="rounded-md border border-border bg-white transition-shadow duration-150 ease-out hover:shadow-sm">
+    <div className="rounded-md border border-border bg-card transition-shadow duration-150 ease-out hover:shadow-sm">
       {/* Collapsed header */}
       <button
         type="button"
@@ -240,7 +240,7 @@ const PromptCard = ({
               }
               onBlur={(e) => validateHeading(e.target.value)}
               placeholder="e.g. Key Innovations"
-              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
             {headingValidation.status === 'found' && (
               <p className="mt-1 flex items-center gap-1 text-[11px] text-emerald">
@@ -290,7 +290,7 @@ const PromptCard = ({
               }
               rows={3}
               placeholder="The question shown to students..."
-              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
 
@@ -306,7 +306,7 @@ const PromptCard = ({
               }
               rows={3}
               placeholder="The answer revealed after student responds..."
-              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
 
@@ -346,7 +346,7 @@ const PromptCard = ({
                       value={opt.text}
                       onChange={(e) => handleOptionTextChange(i, e.target.value)}
                       placeholder={`Option ${i + 1}`}
-                      className="min-w-0 flex-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+                      className="min-w-0 flex-1 rounded-sm border border-border bg-card px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
                     />
                     <button
                       type="button"
@@ -383,7 +383,7 @@ const PromptCard = ({
                 onChange={(e) =>
                   onUpdate(prompt.prompt_id, { status: e.target.value })
                 }
-                className="cursor-pointer rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+                className="cursor-pointer rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
               >
                 <option value="draft">Draft</option>
                 <option value="review">Review</option>
@@ -428,7 +428,7 @@ const PromptCard = ({
                   })
                 }
                 min={0}
-                className="w-16 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+                className="w-16 rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
               />
             </div>
           </div>
@@ -538,7 +538,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             onBlur={(e) => validateHeading(e.target.value)}
             placeholder="e.g. Key Innovations"
-            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+            className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
           {headingValidation.status === 'found' && (
             <p className="mt-1 flex items-center gap-1 text-[11px] text-emerald">
@@ -583,7 +583,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             rows={3}
             placeholder="The question shown to students..."
-            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+            className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
         </div>
 
@@ -599,7 +599,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             }
             rows={3}
             placeholder="The answer revealed after student responds..."
-            className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+            className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
           />
         </div>
 
@@ -639,7 +639,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                     value={opt.text}
                     onChange={(e) => handleOptionTextChange(i, e.target.value)}
                     placeholder={`Option ${i + 1}`}
-                    className="min-w-0 flex-1 rounded-sm border border-border bg-white px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+                    className="min-w-0 flex-1 rounded-sm border border-border bg-card px-2.5 py-1 text-xs text-text-primary outline-none transition-colors duration-150 ease-out placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
                   />
                   <button
                     type="button"
@@ -675,7 +675,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
               onChange={(e) =>
                 onUpdate(draft._tempId, { status: e.target.value })
               }
-              className="cursor-pointer rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+              className="cursor-pointer rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             >
               <option value="draft">Draft</option>
               <option value="review">Review</option>
@@ -716,7 +716,7 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
                 })
               }
               min={0}
-              className="w-16 rounded-sm border border-border bg-white px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
+              className="w-16 rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
             />
           </div>
         </div>

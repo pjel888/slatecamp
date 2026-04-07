@@ -62,7 +62,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   const d = payload[0].payload
   return (
     <div
-      className="rounded-md bg-white p-2 text-xs"
+      className="rounded-md bg-card p-2 text-xs"
       style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
       <p className="font-bold mb-1" style={{ color: '#1A2332' }}>{d.topicName}</p>
@@ -111,7 +111,7 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
 
   if (data.length === 0) {
     return (
-      <Card className="border-border bg-white p-2 relative h-full">
+      <Card className="border-border bg-card p-2 relative h-full">
         <RichInfoPopover
           title="Difficulty vs. Mastery"
           description="Maps each topic by question difficulty and your mastery level. Identifies priority targets and quick wins."
@@ -133,7 +133,7 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
   const maxDifficulty = Math.min(1, Math.max(...data.map(d => d.avgDifficulty), 0.6) + 0.1)
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Difficulty vs. Mastery"
         description="Each dot is a topic. Top-right = hard + mastered (strengths). Bottom-right = hard + weak (priority targets). Bottom-left = easy + weak (quick fixes)."

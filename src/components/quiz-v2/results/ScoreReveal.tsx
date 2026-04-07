@@ -77,7 +77,7 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
 
   if (phase === 'loading') {
     return (
-      <div className="bg-white rounded-md border border-border p-8 text-center">
+      <div className="bg-card rounded-md border border-border p-8 text-center">
         <div className="flex items-center justify-center gap-2">
           <div className="h-4 w-4 rounded-full border-2 border-border border-t-primary animate-spin" />
           <p className="text-sm text-muted-foreground">Calculating results...</p>
@@ -87,7 +87,7 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
   }
 
   return (
-    <div className="bg-white rounded-md border border-border p-8 text-center">
+    <div className="bg-card rounded-md border border-border p-8 text-center">
       {/* Eyebrow */}
       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
         Session Complete

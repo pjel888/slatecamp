@@ -57,7 +57,7 @@ const TrailStepCard = ({
     ? 'border-emerald bg-success-50'
     : step.is_optional
       ? 'border-dashed border-border opacity-75'
-      : 'border-border bg-white'
+      : 'border-border bg-card'
 
   const handleCTA = () => {
     if (isCompleted || isPending) return

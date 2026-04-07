@@ -41,19 +41,19 @@ export const CompExamFlow = () => {
     return (
       <div className="space-y-6">
         <div className="text-center space-y-2">
-          <p className="text-[11px] uppercase tracking-[1.5px] text-[#8896A7]">
+          <p className="text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
             Comp Exam Bridge
           </p>
-          <h1 className="text-xl font-bold text-[#1A2332]">
+          <h1 className="text-xl font-bold text-foreground">
             Your school just told you a number.
           </h1>
-          <p className="text-base text-[#4A5568]">
+          <p className="text-base text-muted-foreground">
             Let&apos;s make it useful.
           </p>
         </div>
 
-        <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-4 space-y-3">
-          <p className="text-sm text-[#1A2332]">
+        <div className="rounded-md border border-border bg-card px-4 py-4 space-y-3">
+          <p className="text-sm text-foreground">
             Enter your comp exam scores by subject. We&apos;ll instantly map them to your heatmap — so you know exactly where to start.
           </p>
           <ul className="space-y-1.5">
@@ -62,10 +62,10 @@ export const CompExamFlow = () => {
               'No manual setup — we seed your heatmap automatically',
               'The diagnostic quiz refines it further',
             ].map(item => (
-              <li key={item} className="flex items-start gap-2 text-sm text-[#4A5568]">
-                <span className="mt-0.5 h-4 w-4 shrink-0 flex items-center justify-center rounded-full bg-[#EEF2FC] text-[#1B3FC4]" aria-hidden="true">
+              <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                <span className="mt-0.5 h-4 w-4 shrink-0 flex items-center justify-center rounded-full bg-primary-50 text-primary" aria-hidden="true">
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 4L3 6L7 2" stroke="#1B3FC4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M1 4L3 6L7 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 {item}
@@ -78,13 +78,13 @@ export const CompExamFlow = () => {
           <button
             type="button"
             onClick={() => setStep('entry')}
-            className="w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Enter my comp exam scores →
           </button>
           <a
             href="/dashboard"
-            className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm text-[#8896A7] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#4A5568] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            className="block w-full rounded-sm border border-border bg-card px-4 py-2.5 text-center text-sm text-muted-foreground transition-colors duration-150 hover:border-primary hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Skip for now
           </a>
@@ -102,7 +102,7 @@ export const CompExamFlow = () => {
           <button
             type="button"
             onClick={() => setStep('intro')}
-            className="mb-3 flex items-center gap-1 text-xs text-[#8896A7] hover:text-[#4A5568] transition-colors duration-150"
+            className="mb-3 flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors duration-150"
             aria-label="Back to introduction"
           >
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -111,14 +111,14 @@ export const CompExamFlow = () => {
             Back
           </button>
 
-          <h2 className="text-lg font-bold text-[#1A2332]">Enter your scores</h2>
-          <p className="mt-0.5 text-sm text-[#4A5568]">
+          <h2 className="text-lg font-bold text-foreground">Enter your scores</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">
             Enter the percentage score for each subject as shown on your comp exam results.
           </p>
         </div>
 
         {serverError && (
-          <p className="rounded-sm border border-[#D64545] bg-[#FDF0F0] px-3 py-2 text-sm text-[#D64545]">
+          <p className="rounded-sm border border-destructive bg-destructive/10 px-3 py-2 text-sm text-destructive">
             {serverError}
           </p>
         )}

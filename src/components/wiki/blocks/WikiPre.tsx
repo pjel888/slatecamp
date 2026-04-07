@@ -27,7 +27,7 @@ export const WikiPre = (props: any) => {
 
   return (
     <pre
-      className="not-prose my-6 overflow-x-auto rounded-md bg-zinc-950 text-zinc-100 p-4 text-[13px] leading-relaxed font-mono border border-zinc-800"
+      className="not-prose my-6 overflow-x-auto rounded-md bg-foreground text-background p-4 text-[13px] leading-relaxed font-mono border border-border"
       {...props}
     />
   )

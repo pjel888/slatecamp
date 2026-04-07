@@ -129,7 +129,7 @@ const PointLossTable = ({ losses }: { losses: TaxonomyLoss[] }) => {
       {losses.map((loss) => (
         <div
           key={loss.topic}
-          className="flex items-center gap-3 px-3 py-2 rounded-md bg-white border border-border"
+          className="flex items-center gap-3 px-3 py-2 rounded-md bg-card border border-border"
         >
           <div className="flex-1 min-w-0">
             <p className="text-[13px] font-medium text-foreground truncate">
@@ -145,7 +145,7 @@ const PointLossTable = ({ losses }: { losses: TaxonomyLoss[] }) => {
               className="h-full rounded-full transition-[width] duration-300 ease-out"
               style={{
                 width: `${maxLost > 0 ? (loss.pointsLost / maxLost) * 100 : 0}%`,
-                backgroundColor: loss.percent >= 50 ? '#D64545' : '#D4951A',
+                backgroundColor: loss.percent >= 50 ? 'var(--destructive)' : 'var(--warning)',
               }}
               aria-hidden="true"
             />

@@ -32,7 +32,7 @@ type GatePhase = 'loading' | 'questions' | 'summary' | 'article'
 
 const OPTION_CLASSES = {
   default:
-    'bg-white border-border text-foreground hover:border-primary/40 hover:shadow-sm cursor-pointer',
+    'bg-card border-border text-foreground hover:border-primary/40 hover:shadow-sm cursor-pointer',
   selected: 'bg-primary-50 border-primary text-foreground cursor-pointer',
   correct:
     'bg-success-50 border-success text-foreground cursor-default',
@@ -198,7 +198,7 @@ export const PrequestionGate = ({
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
         <div
           className={cn(
-            'mx-4 w-full max-w-lg rounded-lg bg-white p-6 shadow-lg',
+            'mx-4 w-full max-w-lg rounded-lg bg-card p-6 shadow-lg',
             'sm:mx-auto',
           )}
           role="dialog"
@@ -290,7 +290,7 @@ export const PrequestionGate = ({
         className={cn(
           // Mobile: full-screen card. Desktop: centered constrained card.
           'flex flex-col',
-          'mx-0 h-full w-full bg-white sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg sm:shadow-lg',
+          'mx-0 h-full w-full bg-card sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg sm:shadow-lg',
         )}
         role="dialog"
         aria-labelledby="prequestion-heading"

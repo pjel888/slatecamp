@@ -47,23 +47,23 @@ export const HotspotAnnotation = memo(function HotspotAnnotation({
         {isActive ? (
           <div
             style={{ pointerEvents: 'auto' }}
-            className="w-56 bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 -translate-x-1/2"
+            className="w-56 bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 -translate-x-1/2"
           >
             <div className="flex items-start justify-between gap-2 mb-1.5">
               <div className="flex items-center gap-1.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
-                <span className="text-[11px] font-bold text-zinc-900 leading-snug">
+                <span className="text-[11px] font-bold text-foreground leading-snug">
                   {hotspot.title}
                 </span>
               </div>
               <button
                 onClick={onDeactivate}
-                className="shrink-0 rounded-sm p-0.5 hover:bg-zinc-100 transition-colors"
+                className="shrink-0 rounded-sm p-0.5 hover:bg-muted transition-colors"
               >
-                <SCIcon icon={X} size="xs" className="text-zinc-400" />
+                <SCIcon icon={X} size="xs" className="text-muted-foreground" />
               </button>
             </div>
-            <p className="text-[11px] text-zinc-500 leading-relaxed mb-2">
+            <p className="text-[11px] text-text-secondary leading-relaxed mb-2">
               {hotspot.description}
             </p>
             {hotspot.wikiSlug && (

@@ -11,16 +11,16 @@ import {
 } from '@/lib/area-c-calculations'
 
 // ─── Token constants ────────────────────────────────────────────────────────
-const COBALT = '#1B3FC4'
-const EMERALD = '#2D9F6F'
-const WARM_RED = '#D64545'
-const EMERALD_50 = '#EDFAF4'
-const RED_50 = '#FDF0F0'
-const SURFACE_LIGHT = '#F8F7F5'
-const INK_PRIMARY = '#1A2332'
-const INK_SECONDARY = '#4A5568'
-const INK_TERTIARY = '#8896A7'
-const BORDER = '#D4DAE3'
+const COBALT = 'var(--primary)'
+const EMERALD = 'var(--success)'
+const WARM_RED = 'var(--destructive)'
+const EMERALD_50 = 'var(--success-50)'
+const RED_50 = 'var(--destructive-50)'
+const SURFACE_LIGHT = 'var(--background)'
+const INK_PRIMARY = 'var(--foreground)'
+const INK_SECONDARY = 'var(--text-secondary, var(--muted-foreground))'
+const INK_TERTIARY = 'var(--muted-foreground)'
+const BORDER = 'var(--border)'
 
 // ─── Sub-components ─────────────────────────────────────────────────────────
 
@@ -70,7 +70,7 @@ const LabeledInput = ({
       max={max}
       step={step}
       onChange={(e) => onChange(e.target.value)}
-      className='h-9 w-full px-3 text-sm bg-white focus:outline-none focus:ring-2 transition-shadow duration-150'
+      className='h-9 w-full px-3 text-sm bg-card focus:outline-none focus:ring-2 transition-shadow duration-150'
       style={{
         border: `1px solid ${BORDER}`,
         borderRadius: 6,
@@ -104,7 +104,7 @@ const SelectInput = ({ label, id, value, onChange, options }: SelectInputProps) 
       id={id}
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className='h-9 w-full px-3 text-sm bg-white focus:outline-none transition-shadow duration-150 appearance-none'
+      className='h-9 w-full px-3 text-sm bg-card focus:outline-none transition-shadow duration-150 appearance-none'
       style={{
         border: `1px solid ${BORDER}`,
         borderRadius: 6,
@@ -161,7 +161,7 @@ const ResultCard = ({ label, value, unit, codeRef, status = 'neutral' }: ResultC
     status === 'warn' ? WARM_RED :
     INK_PRIMARY
 
-  const bg = status === 'ok' ? EMERALD_50 : status === 'warn' ? RED_50 : 'white'
+  const bg = status === 'ok' ? EMERALD_50 : status === 'warn' ? RED_50 : 'var(--card)'
 
   return (
     <div

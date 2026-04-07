@@ -14,7 +14,7 @@ export const WikiMistakeCard = ({ number, title, wrongValue, correctValue, expla
       </div>
 
       {/* Body — stacked layout for full-length text */}
-      <div className="p-4 bg-white space-y-3 dark:bg-wiki-ink">
+      <div className="p-4 bg-card space-y-3 dark:bg-wiki-ink">
         {/* Wrong / Correct side-by-side on wide, stacked on narrow */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {/* Wrong value */}

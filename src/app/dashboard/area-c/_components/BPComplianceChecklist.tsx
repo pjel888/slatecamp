@@ -36,24 +36,24 @@ export const BPComplianceChecklist = ({ sessionId, initialCompletion }: BPCompli
   }
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-3">
+    <div className="rounded-md border border-border bg-card p-4 flex flex-col gap-3">
       {/* Header */}
       <div className="flex items-center justify-between gap-2">
         <div>
-          <h3 className="text-sm font-semibold text-[#1A2332]">BP 344 Compliance</h3>
-          <p className="text-xs text-[#8896A7] mt-0.5">Accessibility requirements checklist</p>
+          <h3 className="text-sm font-semibold text-foreground">BP 344 Compliance</h3>
+          <p className="text-xs text-muted-foreground mt-0.5">Accessibility requirements checklist</p>
         </div>
         <div className="text-right">
-          <span className="text-sm font-semibold text-[#1B3FC4]">{completedCount}</span>
-          <span className="text-xs text-[#8896A7]">/{totalCount}</span>
-          {saving && <p className="text-[10px] text-[#8896A7] mt-0.5">Saving...</p>}
+          <span className="text-sm font-semibold text-primary">{completedCount}</span>
+          <span className="text-xs text-muted-foreground">/{totalCount}</span>
+          {saving && <p className="text-[10px] text-muted-foreground mt-0.5">Saving...</p>}
         </div>
       </div>
 
       {/* Progress bar */}
-      <div className="h-1.5 rounded-full bg-[#D4DAE3] overflow-hidden">
+      <div className="h-1.5 rounded-full bg-border overflow-hidden">
         <div
-          className="h-full rounded-full bg-[#1B3FC4] transition-all duration-150 ease-out"
+          className="h-full rounded-full bg-primary transition-all duration-150 ease-out"
           style={{ width: `${(completedCount / totalCount) * 100}%` }}
         />
       </div>
@@ -67,15 +67,15 @@ export const BPComplianceChecklist = ({ sessionId, initialCompletion }: BPCompli
               <button
                 type="button"
                 onClick={() => handleToggle(item.id)}
-                className="w-full flex items-start gap-2.5 text-left py-1.5 px-0 rounded-sm hover:bg-[#F8F7F5] transition-colors duration-150 ease-out group"
+                className="w-full flex items-start gap-2.5 text-left py-1.5 px-0 rounded-sm hover:bg-background transition-colors duration-150 ease-out group"
               >
-                <span className={`shrink-0 mt-0.5 ${isChecked ? "text-[#2D9F6F]" : "text-[#8896A7]"}`}>
+                <span className={`shrink-0 mt-0.5 ${isChecked ? "text-success" : "text-muted-foreground"}`}>
                   {isChecked
                     ? <CheckSquare size={16} weight="fill" />
                     : <Square size={16} />
                   }
                 </span>
-                <span className={`text-xs leading-relaxed ${isChecked ? "text-[#4A5568] line-through" : "text-[#1A2332]"}`}>
+                <span className={`text-xs leading-relaxed ${isChecked ? "text-muted-foreground line-through" : "text-foreground"}`}>
                   {item.label}
                 </span>
               </button>
@@ -85,8 +85,8 @@ export const BPComplianceChecklist = ({ sessionId, initialCompletion }: BPCompli
       </ul>
 
       {completedCount === totalCount && (
-        <div className="rounded-sm bg-[#EDFAF4] border border-[#2D9F6F]/20 px-3 py-2">
-          <p className="text-xs text-[#2D9F6F] font-medium">All BP 344 requirements addressed</p>
+        <div className="rounded-sm bg-primary-50 border border-success/20 px-3 py-2">
+          <p className="text-xs text-success font-medium">All BP 344 requirements addressed</p>
         </div>
       )}
     </div>

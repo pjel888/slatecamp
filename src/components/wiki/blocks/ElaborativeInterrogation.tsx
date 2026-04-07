@@ -115,7 +115,7 @@ export const ElaborativeInterrogation = ({
     : 'Write your thinking before seeing the explanation'
 
   return (
-    <div className="not-prose my-7 border border-wiki-border rounded-xl overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-7 border border-wiki-border rounded-xl overflow-hidden bg-card dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
       <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-primary/15 dark:to-primary/10 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-camp-cobalt flex items-center justify-center text-white text-sm">

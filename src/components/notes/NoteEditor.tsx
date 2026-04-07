@@ -30,13 +30,13 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
       Typography,
       Placeholder.configure({
         placeholder: 'Start typing...',
-        emptyEditorClass: 'is-editor-empty before:content-[attr(data-placeholder)] before:text-zinc-400 before:float-left before:pointer-events-none',
+        emptyEditorClass: 'is-editor-empty before:content-[attr(data-placeholder)] before:text-muted-foreground before:float-left before:pointer-events-none',
       }),
     ],
     content: note.content,
     editorProps: {
       attributes: {
-        class: 'prose prose-zinc prose-sm sm:prose-base max-w-none focus:outline-none min-h-[calc(100vh-160px)] px-8 py-6 font-serif leading-relaxed text-zinc-800',
+        class: 'prose prose-zinc prose-sm sm:prose-base max-w-none focus:outline-none min-h-[calc(100vh-160px)] px-8 py-6 font-serif leading-relaxed text-foreground',
       },
     },
     onUpdate: ({ editor }) => {
@@ -75,19 +75,19 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
   if (!editorReady || !editor) return null; // Ensure editor is ready before rendering
 
   return (
-    <div className="relative flex flex-1 flex-col bg-white">
+    <div className="relative flex flex-1 flex-col bg-card">
       {/* Floating Status Indicator */}
-      <div className="absolute top-4 right-6 text-[11px] font-medium text-zinc-400">
+      <div className="absolute top-4 right-6 text-[11px] font-medium text-muted-foreground">
         {isSaving ? 'Saving...' : 'Saved'}
       </div>
 
       {/* Toolbar for formatting */}
-      <div className="flex items-center gap-1 border-b border-zinc-200 px-4 py-2">
+      <div className="flex items-center gap-1 border-b border-border px-4 py-2">
         <button
             onClick={() => editor.chain().focus().toggleBold().run()}
             className={cn(
-              "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
-              editor.isActive('bold') && "bg-zinc-100 text-zinc-900"
+              "rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground",
+              editor.isActive('bold') && "bg-muted text-foreground"
             )}
           >
             <SCIcon icon={TextB} size="sm" />
@@ -95,8 +95,8 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           <button
             onClick={() => editor.chain().focus().toggleItalic().run()}
             className={cn(
-              "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
-              editor.isActive('italic') && "bg-zinc-100 text-zinc-900"
+              "rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground",
+              editor.isActive('italic') && "bg-muted text-foreground"
             )}
           >
             <SCIcon icon={TextItalic} size="sm" />
@@ -104,8 +104,8 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           <button
             onClick={() => editor.chain().focus().toggleStrike().run()}
             className={cn(
-              "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
-              editor.isActive('strike') && "bg-zinc-100 text-zinc-900"
+              "rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground",
+              editor.isActive('strike') && "bg-muted text-foreground"
             )}
           >
             <SCIcon icon={TextStrikethrough} size="sm" />
@@ -114,8 +114,8 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           <button
             onClick={() => editor.chain().focus().toggleBulletList().run()}
             className={cn(
-              "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
-              editor.isActive('bulletList') && "bg-zinc-100 text-zinc-900"
+              "rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground",
+              editor.isActive('bulletList') && "bg-muted text-foreground"
             )}
           >
             <SCIcon icon={ListIcon} size="sm" />
@@ -123,8 +123,8 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
           <button
             onClick={() => editor.chain().focus().toggleOrderedList().run()}
             className={cn(
-              "rounded p-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900",
-              editor.isActive('orderedList') && "bg-zinc-100 text-zinc-900"
+              "rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground",
+              editor.isActive('orderedList') && "bg-muted text-foreground"
             )}
           >
             <SCIcon icon={ListNumbers} size="sm" />
@@ -134,7 +134,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
       {/* Main Editor Area */}
       <div className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-2xl pt-16 pb-16">
-          <div className="mb-8 px-8 text-[11px] text-zinc-400 text-center">
+          <div className="mb-8 px-8 text-[11px] text-muted-foreground text-center">
             {new Date(note.updated_at).toLocaleString([], { 
               weekday: 'long', 
               year: 'numeric', 

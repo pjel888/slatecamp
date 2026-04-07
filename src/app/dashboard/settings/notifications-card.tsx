@@ -47,8 +47,8 @@ export const NotificationsCard = ({
   }
 
   return (
-    <Card className='border-zinc-200 shadow-sm overflow-hidden'>
-      <CardHeader className='bg-zinc-50/50 border-b border-zinc-100'>
+    <Card className='border-border shadow-sm overflow-hidden'>
+      <CardHeader className='bg-muted/50 border-b border-border'>
         <div className='flex items-center gap-3'>
           <div className='bg-primary/10 p-2 rounded-md'>
             <SCIcon icon={Bell} size='md' className='text-primary' />
@@ -63,7 +63,7 @@ export const NotificationsCard = ({
       </CardHeader>
 
       <CardContent className='p-0'>
-        <div className='divide-y divide-zinc-100'>
+        <div className='divide-y divide-border'>
           <div className='flex items-center justify-between px-6 py-4'>
             <div>
               <p className='text-sm font-medium text-foreground'>Email notifications</p>

@@ -122,7 +122,7 @@ const AutoTextarea = ({
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
       rows={minRows}
-      className={`w-full resize-none border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out ${className}`}
+      className={`w-full resize-none border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out ${className}`}
     />
   )
 }
@@ -300,7 +300,7 @@ const QuestionCardExpanded = ({
                     value={opt.text}
                     onChange={(e) => handleOptionTextChange(opt.id, e.target.value)}
                     placeholder={`Option ${opt.id}...`}
-                    className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+                    className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                   />
                 </div>
               ))}
@@ -361,7 +361,7 @@ const QuestionCardExpanded = ({
               value={question.code_citation || ''}
               onChange={(e) => onUpdate({ code_citation: e.target.value })}
               placeholder="BP 344 &sect;C.6.3.a"
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -380,7 +380,7 @@ const QuestionCardExpanded = ({
                 onChange={(e) =>
                   onUpdate({ difficulty: parseFloat(e.target.value) || 0 })
                 }
-                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
               />
               <DifficultyBar value={question.difficulty} />
             </div>
@@ -407,7 +407,7 @@ const QuestionCardExpanded = ({
               value={question.application_context || ''}
               onChange={(e) => onUpdate({ application_context: e.target.value })}
               placeholder="How this applies in practice..."
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -421,7 +421,7 @@ const QuestionCardExpanded = ({
               value={(question.practice_context || []).join(', ')}
               onChange={(e) => handlePracticeContextChange(e.target.value)}
               placeholder="residential, commercial, seismic"
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -435,7 +435,7 @@ const QuestionCardExpanded = ({
               value={question.prompt_image_url || ''}
               onChange={(e) => onUpdate({ prompt_image_url: e.target.value })}
               placeholder="https://..."
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
             {isValidImageUrl(question.prompt_image_url) && (
               <div className="mt-2 overflow-hidden rounded-sm border border-border">
@@ -594,7 +594,7 @@ const DraftQuestionCard = ({
   }
 
   return (
-    <div className="overflow-hidden border border-camp-cobalt rounded-md bg-white">
+    <div className="overflow-hidden border border-camp-cobalt rounded-md bg-card">
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border bg-primary-50 px-3 py-2">
         <div className="flex items-center gap-2">
@@ -659,7 +659,7 @@ const DraftQuestionCard = ({
                   value={opt.text}
                   onChange={(e) => handleOptionTextChange(opt.id, e.target.value)}
                   placeholder={`Option ${opt.id}...`}
-                  className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+                  className="min-w-0 flex-1 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                 />
               </div>
             ))}
@@ -716,7 +716,7 @@ const DraftQuestionCard = ({
               value={draft.code_citation}
               onChange={(e) => handleUpdate({ code_citation: e.target.value })}
               placeholder="BP 344 &sect;C.6.3.a"
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -734,7 +734,7 @@ const DraftQuestionCard = ({
                 onChange={(e) =>
                   handleUpdate({ difficulty: parseFloat(e.target.value) || 0 })
                 }
-                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+                className="w-24 border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
               />
               <DifficultyBar value={draft.difficulty} />
             </div>
@@ -759,7 +759,7 @@ const DraftQuestionCard = ({
               value={draft.application_context}
               onChange={(e) => handleUpdate({ application_context: e.target.value })}
               placeholder="How this applies in practice..."
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -772,7 +772,7 @@ const DraftQuestionCard = ({
               value={draft.practice_context.join(', ')}
               onChange={(e) => handlePracticeContextChange(e.target.value)}
               placeholder="residential, commercial, seismic"
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
           </div>
 
@@ -785,7 +785,7 @@ const DraftQuestionCard = ({
               value={draft.prompt_image_url}
               onChange={(e) => handleUpdate({ prompt_image_url: e.target.value })}
               placeholder="https://..."
-              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-white text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+              className="w-full border border-border rounded-sm px-2.5 py-1.5 text-sm bg-card text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
             />
             {isValidImageUrl(draft.prompt_image_url) && (
               <div className="mt-2 overflow-hidden rounded-sm border border-border">
@@ -850,7 +850,7 @@ const QuestionCard = ({
           <button
             type="button"
             onClick={onUndoDelete}
-            className="shrink-0 rounded-sm border border-destructive/30 bg-white px-2.5 py-1 text-xs font-medium text-destructive transition-colors duration-150 ease-out hover:bg-destructive-50"
+            className="shrink-0 rounded-sm border border-destructive/30 bg-card px-2.5 py-1 text-xs font-medium text-destructive transition-colors duration-150 ease-out hover:bg-destructive-50"
           >
             Undo
           </button>
@@ -863,7 +863,7 @@ const QuestionCard = ({
   if (!isExpanded) {
     return (
       <div
-        className="group cursor-pointer border border-border rounded-md bg-white transition-shadow duration-150 ease-out hover:shadow-sm"
+        className="group cursor-pointer border border-border rounded-md bg-card transition-shadow duration-150 ease-out hover:shadow-sm"
         onClick={onToggle}
         role="button"
         tabIndex={0}
@@ -922,7 +922,7 @@ const QuestionCard = ({
 
   // ── Expanded state ─────────────────────────────────────────
   return (
-    <div className="overflow-hidden border border-border rounded-md bg-white">
+    <div className="overflow-hidden border border-border rounded-md bg-card">
       {/* Collapse header */}
       <div className="flex items-center justify-between border-b border-border bg-surface-light px-3 py-2">
         <div className="flex items-center gap-2">
@@ -941,7 +941,7 @@ const QuestionCard = ({
             className={`rounded-sm border px-2.5 py-1 text-[11px] font-medium transition-colors duration-150 ease-out ${
               showCampPreview
                 ? 'border-warning bg-warning-50 text-warning'
-                : 'border-border bg-white text-text-secondary hover:border-text-tertiary hover:text-text-primary'
+                : 'border-border bg-card text-text-secondary hover:border-text-tertiary hover:text-text-primary'
             }`}
             title="Toggle Camp Mode preview"
           >
@@ -1244,7 +1244,7 @@ export const QuestionsPanel = ({
     <div className="flex h-full flex-col overflow-hidden">
       <Tabs defaultValue="questions" className="flex h-full flex-col overflow-hidden">
         {/* ── Tab bar ───────────────────────────────────────── */}
-        <div className="flex shrink-0 items-center border-b border-border bg-white px-3">
+        <div className="flex shrink-0 items-center border-b border-border bg-card px-3">
           <TabsList variant="underline" className="border-b-0">
             <TabsTrigger value="questions">
               Questions
@@ -1296,7 +1296,7 @@ export const QuestionsPanel = ({
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search question stems... (⌘K)"
-                  className="w-full border border-border rounded-sm bg-white py-1 pl-7 pr-2.5 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
+                  className="w-full border border-border rounded-sm bg-card py-1 pl-7 pr-2.5 text-sm text-text-primary placeholder:text-text-tertiary focus:border-camp-cobalt focus:ring-2 focus:ring-camp-cobalt/20 outline-none transition-colors duration-150 ease-out"
                 />
               </div>
 

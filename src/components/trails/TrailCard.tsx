@@ -188,7 +188,7 @@ export const TrailCard = ({ trail, isLocked }: TrailCardProps) => {
     <Link
       href={href}
       className={cn(
-        'group relative flex flex-col rounded-lg border border-border bg-white transition-all duration-150 hover:border-border-warm hover:shadow-sm cursor-pointer',
+        'group relative flex flex-col rounded-lg border border-border bg-card transition-all duration-150 hover:border-border-warm hover:shadow-sm cursor-pointer',
         'focus-visible:ring-2 focus-visible:ring-camp-cobalt/20 focus-visible:ring-offset-2 outline-none',
         state === 'enrolled' && 'border-trail-accent border-[1.5px]',
         state === 'completed' && 'bg-success-50 border-emerald/30',

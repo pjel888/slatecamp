@@ -76,8 +76,8 @@ const SyncStatus = () => {
 
   const icons = {
     saving: <CloudArrowUp size={14} className="text-primary animate-pulse" />,
-    saved: <CloudCheck size={14} className="text-emerald-600" />,
-    offline: <CloudSlash size={14} className="text-amber-600" />,
+    saved: <CloudCheck size={14} className="text-success" />,
+    offline: <CloudSlash size={14} className="text-warning" />,
     error: <WarningCircle size={14} className="text-destructive" />,
   }
 
@@ -122,7 +122,7 @@ export const QuizHeader = memo(({
 
   return (
     <header
-      className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-white"
+      className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-card"
       aria-label="Quiz header"
     >
       {/* Exit */}

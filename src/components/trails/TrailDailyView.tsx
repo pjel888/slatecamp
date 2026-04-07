@@ -175,7 +175,7 @@ export const TrailDailyView = ({
           return (
             <div
               key={step.step_id}
-              className={`rounded-md border bg-white p-3 transition-shadow duration-150 ease-out ${
+              className={`rounded-md border bg-card p-3 transition-shadow duration-150 ease-out ${
                 isCompleted ? 'border-border opacity-60' : 'border-border'
               }`}
             >

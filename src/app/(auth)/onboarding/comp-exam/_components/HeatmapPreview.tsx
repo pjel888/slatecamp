@@ -8,25 +8,25 @@ import type { HeatmapSeed } from '@/lib/actions/comp-exam-onboarding'
 
 const TIER_CONFIG = {
   red: {
-    bg: 'bg-[#FDF0F0]',
-    border: 'border-[#D64545]',
-    dot: 'bg-[#D64545]',
+    bg: 'bg-destructive/10',
+    border: 'border-destructive',
+    dot: 'bg-destructive',
     label: 'Needs focus',
-    labelColor: 'text-[#D64545]',
+    labelColor: 'text-destructive',
   },
   amber: {
-    bg: 'bg-[#FEF8ED]',
-    border: 'border-[#D4951A]',
-    dot: 'bg-[#D4951A]',
+    bg: 'bg-warning/10',
+    border: 'border-warning',
+    dot: 'bg-warning',
     label: 'Developing',
-    labelColor: 'text-[#D4951A]',
+    labelColor: 'text-warning',
   },
   green: {
-    bg: 'bg-[#EDFAF4]',
-    border: 'border-[#2D9F6F]',
-    dot: 'bg-[#2D9F6F]',
+    bg: 'bg-success/10',
+    border: 'border-success',
+    dot: 'bg-success',
     label: 'Strong',
-    labelColor: 'text-[#2D9F6F]',
+    labelColor: 'text-success',
   },
 }
 
@@ -53,31 +53,31 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
     <div className="space-y-6">
       {/* Headline */}
       <div className="text-center space-y-1">
-        <h2 className="text-lg font-bold text-[#1A2332]">
+        <h2 className="text-lg font-bold text-foreground">
           This is your heatmap.
         </h2>
-        <p className="text-sm text-[#4A5568]">
+        <p className="text-sm text-muted-foreground">
           It shows what your comp exam already found.
         </p>
       </div>
 
       {/* Legend */}
-      <div className="flex items-center justify-center gap-4 text-xs text-[#4A5568]">
+      <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground">
         {redCount > 0 && (
           <span className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-[#D64545]" />
+            <span className="h-2 w-2 rounded-full bg-destructive" />
             {redCount} to focus
           </span>
         )}
         {amberCount > 0 && (
           <span className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-[#D4951A]" />
+            <span className="h-2 w-2 rounded-full bg-warning" />
             {amberCount} developing
           </span>
         )}
         {greenCount > 0 && (
           <span className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-[#2D9F6F]" />
+            <span className="h-2 w-2 rounded-full bg-success" />
             {greenCount} strong
           </span>
         )}
@@ -99,18 +99,18 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-2">
                   <span className={['h-2 w-2 rounded-full shrink-0', cfg.dot].join(' ')} aria-hidden="true" />
-                  <span className="text-sm font-medium text-[#1A2332]">{seed.subjectName}</span>
+                  <span className="text-sm font-medium text-foreground">{seed.subjectName}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className={['text-xs font-medium', cfg.labelColor].join(' ')}>
                     {cfg.label}
                   </span>
-                  <span className="text-sm font-semibold text-[#1A2332]">{seed.score}%</span>
+                  <span className="text-sm font-semibold text-foreground">{seed.score}%</span>
                 </div>
               </div>
 
               {/* Progress bar */}
-              <div className="h-1.5 w-full rounded-full bg-white/60">
+              <div className="h-1.5 w-full rounded-full bg-card/60">
                 <div
                   className={['h-1.5 rounded-full transition-all duration-300', cfg.dot].join(' ')}
                   style={{ width: barWidth(seed.score) }}
@@ -123,9 +123,9 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
       </div>
 
       {/* Context copy */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-3 space-y-1">
-        <p className="text-sm text-[#1A2332] font-medium">What happens next</p>
-        <p className="text-sm text-[#4A5568]">
+      <div className="rounded-md border border-border bg-card px-4 py-3 space-y-1">
+        <p className="text-sm text-foreground font-medium">What happens next</p>
+        <p className="text-sm text-muted-foreground">
           The diagnostic quiz will make this more precise. Or start studying right now — the heatmap is already your map.
         </p>
       </div>
@@ -134,13 +134,13 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
       <div className="space-y-2.5">
         <Link
           href={`${ROUTES.QUIZ_V2_SETUP('diagnostic')}?source=comp_exam`}
-          className="block w-full rounded-sm bg-[#1B3FC4] px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="block w-full rounded-sm bg-primary px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Run the diagnostic quiz →
         </Link>
         <Link
           href={ROUTES.DASHBOARD}
-          className="block w-full rounded-sm border border-[#D4DAE3] bg-white px-4 py-2.5 text-center text-sm font-medium text-[#4A5568] transition-colors duration-150 hover:border-[#1B3FC4] hover:text-[#1B3FC4] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="block w-full rounded-sm border border-border bg-card px-4 py-2.5 text-center text-sm font-medium text-muted-foreground transition-colors duration-150 hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Start studying now
         </Link>

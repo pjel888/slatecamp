@@ -162,7 +162,7 @@ export const BaseQuizShell = ({
   if (!_hasHydrated || !currentQuestion || status === 'idle' || status === 'loading') {
     return (
       <div className="flex flex-col min-h-screen bg-surface-focused">
-        <div className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-white">
+        <div className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-card">
           <div className="flex-1 h-1.5 rounded-full bg-border" />
         </div>
         <main className="flex-1">

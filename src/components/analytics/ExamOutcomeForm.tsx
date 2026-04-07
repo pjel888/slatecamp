@@ -53,7 +53,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
 
   if (submitted) {
     return (
-      <Card className="border-border bg-white p-2">
+      <Card className="border-border bg-card p-2">
         <CardContent className="p-4 text-center">
           <p className="text-sm font-semibold text-success">
             Thank you for reporting your exam outcome.
@@ -67,7 +67,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
   }
 
   return (
-    <Card className="border-border bg-white p-2">
+    <Card className="border-border bg-card p-2">
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
           Report Exam Outcome
@@ -89,7 +89,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               value={examDate}
               onChange={(e) => setExamDate(e.target.value)}
               max={new Date().toISOString().split('T')[0]}
-              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
 
@@ -105,7 +105,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
                 className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
                   result === 'pass'
                     ? 'bg-success text-white'
-                    : 'border border-border bg-white text-text-secondary hover:bg-surface-light'
+                    : 'border border-border bg-card text-text-secondary hover:bg-surface-light'
                 }`}
               >
                 Passed
@@ -116,7 +116,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
                 className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
                   result === 'fail'
                     ? 'bg-destructive text-white'
-                    : 'border border-border bg-white text-text-secondary hover:bg-surface-light'
+                    : 'border border-border bg-card text-text-secondary hover:bg-surface-light'
                 }`}
               >
                 Not Yet
@@ -138,7 +138,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               value={score}
               onChange={(e) => setScore(e.target.value)}
               placeholder="e.g. 78.5"
-              className="w-full rounded-sm border border-border bg-white px-3 py-1.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
 

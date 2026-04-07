@@ -87,7 +87,7 @@ const DayColumn = ({
         'flex flex-col gap-1 rounded-md border p-1.5 min-w-0',
         isToday
           ? 'border-primary/30 bg-primary-50'
-          : 'border-border bg-white',
+          : 'border-border bg-card',
       )}
     >
       <div className="flex items-center justify-between">
@@ -236,7 +236,7 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
     filteredDays.every((d) => d.topics.length === 0)
 
   return (
-    <div className="rounded-md border border-border bg-white p-2">
+    <div className="rounded-md border border-border bg-card p-2">
       {/* Header */}
       <div className="flex items-center justify-between mb-1.5">
         <div className="flex items-center gap-1.5">

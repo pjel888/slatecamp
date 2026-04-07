@@ -19,7 +19,7 @@ const getBarColor = (accuracy: number) => {
 }
 
 export const AccuracyBySubject = ({ data }: Props) => (
-  <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+  <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
     <RichInfoPopover
       title="Accuracy by Subject"
       description="Your correct-answer rate grouped by subject area. Green ≥ 70%, amber 50–70%, red < 50%."

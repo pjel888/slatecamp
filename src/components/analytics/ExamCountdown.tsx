@@ -25,7 +25,7 @@ export const ExamCountdown = ({ data }: Props) => {
     : '#2D9F6F'
 
   return (
-    <Card className="border-border bg-white p-2 relative h-full">
+    <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Exam Countdown"
         description="Summary of your exam readiness: days remaining, readiness score, areas needing attention, and projected outcomes."
@@ -78,9 +78,9 @@ export const ExamCountdown = ({ data }: Props) => {
                 <div
                   className={cn(
                     'flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[10px] font-bold',
-                    data.readinessTrend === 'up' && 'bg-green-50 text-green-700',
-                    data.readinessTrend === 'down' && 'bg-red-50 text-red-700',
-                    data.readinessTrend === 'flat' && 'bg-zinc-100 text-zinc-500',
+                    data.readinessTrend === 'up' && 'bg-success/10 text-success',
+                    data.readinessTrend === 'down' && 'bg-destructive/10 text-destructive',
+                    data.readinessTrend === 'flat' && 'bg-muted text-muted-foreground',
                   )}
                 >
                   {data.readinessTrend === 'up' && <SCIcon icon={ArrowUp} size="xs" />}

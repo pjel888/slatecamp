@@ -289,7 +289,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
   }, [])
 
   return (
-    <div className='grid grid-rows-3 bg-white rounded-md overflow-hidden h-full p-2 gap-2'>
+    <div className='grid grid-rows-3 bg-card rounded-md overflow-hidden h-full p-2 gap-2'>
       {/* ── Radial heatmap section ──────────────────────────────────── */}
       <div className='rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0'>
         <div className='flex items-center gap-1.5 mb-0.5'>

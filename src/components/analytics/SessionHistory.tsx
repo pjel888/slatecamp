@@ -22,7 +22,7 @@ export const SessionHistory = ({ data }: Props) => {
   const trend = trendLabel(data.trend)
 
   return (
-    <Card className="border-border bg-white rounded-md shadow-none p-2 relative">
+    <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
       <RichInfoPopover
         title="Session Performance Over Time"
         description="Your accuracy score for each completed session, in chronological order."

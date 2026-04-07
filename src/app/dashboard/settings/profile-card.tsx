@@ -86,8 +86,8 @@ export const ProfileCard = ({
   }
 
   return (
-    <Card className='border-zinc-200 shadow-sm overflow-hidden'>
-      <CardHeader className='bg-zinc-50/50 border-b border-zinc-100'>
+    <Card className='border-border shadow-sm overflow-hidden'>
+      <CardHeader className='bg-muted/50 border-b border-border'>
         <div className='flex items-center gap-3'>
           <div className='bg-primary/10 p-2 rounded-md'>
             <SCIcon icon={User} size='md' className='text-primary' />
@@ -109,7 +109,7 @@ export const ProfileCard = ({
             onClick={() => fileInputRef.current?.click()}
             disabled={avatarLoading}
             className={cn(
-              'relative group w-16 h-16 rounded-md overflow-hidden border border-zinc-200 bg-zinc-50 flex items-center justify-center shrink-0 transition-opacity duration-150',
+              'relative group w-16 h-16 rounded-md overflow-hidden border border-border bg-muted flex items-center justify-center shrink-0 transition-opacity duration-150',
               avatarLoading && 'opacity-50 pointer-events-none'
             )}
             aria-label='Change avatar'
@@ -118,7 +118,7 @@ export const ProfileCard = ({
               // eslint-disable-next-line @next/next/no-img-element
               <img src={avatarUrl} alt='Avatar' className='w-full h-full object-cover' />
             ) : (
-              <SCIcon icon={User} size='lg' className='text-zinc-400' />
+              <SCIcon icon={User} size='lg' className='text-muted-foreground' />
             )}
             <span className='absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150'>
               <SCIcon icon={Camera} size='sm' className='text-white' />
@@ -151,7 +151,7 @@ export const ProfileCard = ({
           />
         </div>
 
-        <div className='border-t border-zinc-100' />
+        <div className='border-t border-border' />
 
         {/* Display name */}
         <form onSubmit={handleNameSave}>
@@ -173,7 +173,7 @@ export const ProfileCard = ({
           </div>
         </form>
 
-        <div className='border-t border-zinc-100' />
+        <div className='border-t border-border' />
 
         {/* Exam date */}
         <form onSubmit={handleDateSave}>

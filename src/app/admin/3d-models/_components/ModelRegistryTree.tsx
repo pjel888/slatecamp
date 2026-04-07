@@ -11,7 +11,7 @@ import { DASHBOARD_VISIBLE_IDS } from '@/features/3d-lab/config/dashboard-visibi
 /* ------------------------------------------------------------------ */
 
 const TEMPLATE_BADGE_STYLES: Record<string, string> = {
-  parametric: 'bg-[#1B3FC4]/10 text-[#1B3FC4]',
+  parametric: 'bg-primary/10 text-primary',
   exploded: 'bg-purple-500/10 text-purple-600',
   floorplan: 'bg-emerald-500/10 text-emerald-600',
   cutaway: 'bg-amber-500/10 text-amber-600',
@@ -105,7 +105,7 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
     <div className="py-1">
       {/* Match count indicator */}
       {isFiltering && (
-        <div className="px-4 py-2 text-xs text-[#8896A7]">
+        <div className="px-4 py-2 text-xs text-muted-foreground">
           {matchCount} of {totalCount} modules
         </div>
       )}
@@ -120,20 +120,20 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
             {/* Subject heading */}
             <button
               onClick={() => toggleSubject(subject.label)}
-              className="group flex w-full items-center gap-1.5 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-zinc-50"
+              className="group flex w-full items-center gap-1.5 px-3 py-2 text-left transition-colors duration-150 ease-out hover:bg-muted"
             >
               <CaretRight
                 size={12}
                 weight="bold"
                 className={cn(
-                  'shrink-0 text-[#8896A7] transition-transform duration-150',
+                  'shrink-0 text-muted-foreground transition-transform duration-150',
                   isSubjectExpanded && 'rotate-90'
                 )}
               />
-              <span className="flex-1 text-[11px] font-semibold uppercase tracking-wider text-[#8896A7]">
+              <span className="flex-1 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                 {subject.label}
               </span>
-              <span className="text-[11px] tabular-nums text-[#8896A7]">
+              <span className="text-[11px] tabular-nums text-muted-foreground">
                 {subject.totalModules}
               </span>
             </button>
@@ -151,20 +151,20 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
                       {/* Category row */}
                       <button
                         onClick={() => toggleCategory(cat.key)}
-                        className="group flex w-full items-center gap-1.5 py-1.5 pl-7 pr-3 text-left transition-colors duration-150 ease-out hover:bg-zinc-50"
+                        className="group flex w-full items-center gap-1.5 py-1.5 pl-7 pr-3 text-left transition-colors duration-150 ease-out hover:bg-muted"
                       >
                         <CaretRight
                           size={11}
                           weight="bold"
                           className={cn(
-                            'shrink-0 text-[#8896A7] transition-transform duration-150',
+                            'shrink-0 text-muted-foreground transition-transform duration-150',
                             isCatExpanded && 'rotate-90'
                           )}
                         />
-                        <span className="flex-1 truncate text-[13px] font-medium text-[#1A2332]">
+                        <span className="flex-1 truncate text-[13px] font-medium text-foreground">
                           {cat.label}
                         </span>
-                        <span className="rounded-full bg-[#F8F7F5] px-2 py-0.5 text-[11px] tabular-nums text-[#8896A7]">
+                        <span className="rounded-full bg-background px-2 py-0.5 text-[11px] tabular-nums text-muted-foreground">
                           {cat.moduleCount}
                         </span>
                       </button>
@@ -184,8 +184,8 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
                                 className={cn(
                                   'group flex w-full items-center gap-2 py-1.5 pl-12 pr-3 text-left transition-colors duration-150 ease-out',
                                   isSelected
-                                    ? 'border-l-2 border-[#1B3FC4] bg-[#EEF2FC] text-[#1B3FC4]'
-                                    : 'border-l-2 border-transparent hover:bg-zinc-50'
+                                    ? 'border-l-2 border-primary bg-primary-50 text-primary'
+                                    : 'border-l-2 border-transparent hover:bg-muted'
                                 )}
                               >
                                 <Cube
@@ -193,13 +193,13 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
                                   weight={isSelected ? 'duotone' : 'regular'}
                                   className={cn(
                                     'shrink-0',
-                                    isSelected ? 'text-[#1B3FC4]' : 'text-[#8896A7]'
+                                    isSelected ? 'text-primary' : 'text-muted-foreground'
                                   )}
                                 />
                                 <span
                                   className={cn(
                                     'flex-1 truncate text-[13px]',
-                                    isSelected ? 'font-medium text-[#1B3FC4]' : 'text-[#4A5568]'
+                                    isSelected ? 'font-medium text-primary' : 'text-muted-foreground'
                                   )}
                                 >
                                   {mod.title}
@@ -209,14 +209,14 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
                                     <Eye
                                       size={12}
                                       weight="duotone"
-                                      className="shrink-0 text-[#2D9F6F]"
+                                      className="shrink-0 text-success"
                                     />
                                   </span>
                                 )}
                                 <span
                                   className={cn(
                                     'shrink-0 rounded-sm px-1.5 py-0.5 text-[10px] font-medium',
-                                    TEMPLATE_BADGE_STYLES[mod.templateType] ?? 'bg-zinc-100 text-zinc-500'
+                                    TEMPLATE_BADGE_STYLES[mod.templateType] ?? 'bg-muted text-muted-foreground'
                                   )}
                                 >
                                   {mod.templateType}
@@ -237,7 +237,7 @@ export function ModelRegistryTree({ tree, selectedId, onSelect, searchQuery }: M
 
       {/* Empty filter state */}
       {isFiltering && matchCount === 0 && (
-        <div className="px-4 py-8 text-center text-sm text-[#8896A7]">
+        <div className="px-4 py-8 text-center text-sm text-muted-foreground">
           No modules match your search.
         </div>
       )}

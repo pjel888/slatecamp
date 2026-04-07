@@ -39,7 +39,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
       </div>
 
       {/* Body */}
-      <div className="p-5 bg-white dark:bg-wiki-ink">
+      <div className="p-5 bg-card dark:bg-wiki-ink">
         <p className="text-sm font-semibold text-wiki-ink mb-3.5 leading-relaxed dark:text-wiki-invert-heading">
           {question}
         </p>

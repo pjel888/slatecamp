@@ -22,7 +22,7 @@ export function DailyWikiCard({
   totalNoteCount,
 }: DailyWikiCardProps) {
   return (
-    <Card className='overflow-hidden relative h-full grid grid-rows-3 bg-white gap-2 p-2 border-0'>
+    <Card className='overflow-hidden relative h-full grid grid-rows-3 bg-card gap-2 p-2 border-0'>
       {/* ── 1/3: Today's Article (Camp Orange) ─────────────────────── */}
       <div className='rounded-md p-3 overflow-hidden relative flex flex-col bg-card-article border border-card-article-border min-h-0'>
         {/* Animated circles/oblongs */}
@@ -270,7 +270,7 @@ export function RecentNotesCard({
             {notes.map((note) => (
               <div
                 key={note.noteId}
-                className='bg-white rounded-sm p-2 border border-border'
+                className='bg-card rounded-sm p-2 border border-border'
               >
                 <p className='text-xs font-medium truncate text-text-primary'>
                   {note.title}
