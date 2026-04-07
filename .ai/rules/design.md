@@ -65,8 +65,9 @@ Never hardcode hex values. Always use the token → Tailwind class mapping:
 
 | Font | Purpose | Tailwind Class |
 |------|---------|---------------|
-| Inter | Body text | `font-sans` (default) |
-| Syne | Display headings | `font-display` |
+| Atkinson Hyperlegible | Body text | `font-sans` (default) |
+| Plus Jakarta Sans | Display headings | `font-display` |
+| Syne | Accent headings | `font-syne` |
 | DM Mono | Code/data values | `font-mono` |
 
 ### Font Loading

@@ -292,6 +292,45 @@
 - **3D-Lab Fix:** Confirmed 3D-lab module resolution issues were resolved by the feature refactor (`src/features/3d-lab/utils/`).
 - **Verification:** `bun test`, `bun run lint`, `bun run type-check`, and `bun run build` all passed on 2026-04-06.
 
+### Design System Migration: SlateCamp x Flowbite Pro v3.1 (2026-04-07, v3)
+- **Approach:** Adopt Flowbite Pro design patterns only — NOT installing `flowbite` or `flowbite-react` packages (zero new dependencies)
+- **Plan Location:** `.ai/plans/design_system_migration_plan.md` (v3 — MCP-augmented, block-driven, identity-locked)
+- **Companion Plans:** `.ai/plans/wiki_component_upgrade_plan.md`, `.ai/plans/identity_preservation_lock.md`
+- **Figma Source:** Flowbite Design System Pro v3.1 (`Mg57xRjiaCCLm7P6JV1sJB`)
+- **Local Reference Assets:** `flowbite/flowbite-mcp-pro-1.0.0/data/` (44 components, 13 forms, 22 app blocks, marketing/ecom/publisher blocks) + `flowbite/flowbite-react-blocks-1.8.0-beta/` (full Next.js React implementations)
+- **MCP Tooling:** Flowbite MCP Server available locally for Figma-to-code and Theme generation (optional, not required)
+- **Brand Preservation:** All SlateCamp colors, typography, and radius caps are LOCKED — no changes
+- **Radius Enforcement:** `--radius-xl` already capped at `0.5rem` (8px) in globals.css
+- **Gap Analysis:** 12 missing components (P1: Alert, Table, Pagination; P2: Breadcrumb, Stepper, BottomNav, ListGroup; P3: Drawer, Rating, SpeedDial, MegaMenu, Indicator)
+- **Form Scope:** 17 active forms across 15 files (pre-computed, bounded)
+- **Bottom Navigation:** IN SCOPE — mobile-first for mid-range Android users
+- **Git Strategy:** One feature branch per phase, discard-and-rebuild on regression
+- **6-Phase Roadmap:** (1) Alignment ref + tokens, (2) Missing primitives, (3) Navigation overhaul, (4) Form elements, (5) Feedback/data display, (6) Marketing sections (connected to GTM)
+- **Block-Driven Protocol:** Strip flowbite-react imports → Replace with SlateCamp ui/ primitives → Apply Camp Cobalt mapping → Enforce 8px radius cap → Add CVA + data-slot
+- **Key Constraint:** All new components must use CVA + data-slot + existing Radix/Base UI patterns
+
+### Identity Lock: SlideToSubmit — Immutable Brand Anchor (2026-04-07)
+- **Component:** `src/components/quiz-v2/SlideToSubmit.tsx` — EXCLUDED from all design system migration
+- **Lock Document:** `.ai/plans/identity_preservation_lock.md`
+- **Gesture Library:** `@use-gesture/react` (NOT Framer Motion)
+- **Animation:** CSS inline transitions with `cubic-bezier(0.34, 1.56, 0.64, 1)` spring overshoot — NOT Tailwind utility classes
+- **Colors:** Hardcoded hex values (`#1B3FC4`, `#8896A7`, `#D4DAE3`) — NOT token references, immune to global CSS changes
+- **Border Radius:** Track `rounded-md` (6px), Handle `rounded-sm` (4px) — migration does NOT modify these token values
+- **Usage Sites:** 7 files (OptionsColumn, GenerationInput, GestureCaptureZone, HeroConfigurator, WikiQuizModal, RevealBlock, QuestionCard)
+- **Interference Assessment:** Zero interference expected — all slider styling is inline or hardcoded
+- **Protected Files:** Also `src/lib/quiz/haptics.ts`, `src/components/quiz-v2/GestureCaptureZone.tsx`
+
+### Wiki Component Upgrade Plan (2026-04-07)
+- **Plan Location:** `.ai/plans/wiki_component_upgrade_plan.md`
+- **Scope:** Reading experience for 500+ deep-dive articles
+- **MDX Blocks Inventory:** 27 component files in `src/components/wiki/blocks/` with 12 callout variants in unified `Callout.tsx`
+- **Widget Registry:** 18 registered widgets in `src/components/wiki/widgets/registry.ts`, lazy-loaded per article
+- **MDX Component Map:** `src/components/wiki/mdx-components-shared.ts` — maps 35+ MDX tags to React components
+- **Current Table Styling:** Custom th/td classes with DM Mono headers, but missing striped rows, hover, sticky headers
+- **Current Callout System:** Unified variant-driven Callout component, already uses design tokens — refinements: bordered variant, icon size bump, action prop
+- **Prose Config:** `prose-wiki` utility in globals.css — 15px base, 1.7 line-height, 65ch max-width — refinements: h2-h4 spacing, blockquote styling
+- **3-Phase Wiki Roadmap:** (W1) Typography + tables, (W2) Callout refinement, (W3) Widget containers
+
 ---
 
 ## Session History

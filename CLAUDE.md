@@ -89,7 +89,7 @@ bun test
 ### Styling & Typography
 - Tailwind CSS-first config in `src/app/globals.css` with semantic tokens
 - Prefer semantic classes and shared primitives from `src/components/ui/*`
-- Fonts: Atkinson Hyperlegible (default), Syne, Sora, DM Mono, Inter variable
+- Fonts: Atkinson Hyperlegible (body/default), Plus Jakarta Sans (display headings), Syne (accent headings), Sora (logo), DM Mono (code/data)
 
 ### Path Alias
 - `@/*` maps to `src/*`
