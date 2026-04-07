@@ -1,29 +1,27 @@
 # Nightwatch Queue - Implementation Execution Status
 
-## Queue Status: IN PROGRESS
+## Queue Status: COMPLETE
+
+All 9 audit domains have been executed, verified, and archived.
 
 ---
 
 ### ARCHIVED (Code Executed + Verified)
 
-- [ARCHIVED] - database-layer — RPCs, unique constraints, intelligent-routing rewrite
-- [ARCHIVED] - auth-and-gating — typed session results, middleware role gating, context stabilization
-- [ARCHIVED] - api-routes — requireAdmin helper, webhook idempotency
-- [ARCHIVED] - state-management — timestamp-based timer, double-submit guard
-- [ARCHIVED] - shared-components — skeleton accessibility (aria-busy), z-index registry
-
----
-
-### PENDING (Awaiting Code Execution)
-
-- [PENDING] - audit-dashboard-portal.md → implementation-dashboard-portal.md
-- [PENDING] - audit-admin-portal.md → implementation-admin-portal.md
-- [PENDING] - audit-developer-ceo-portals.md → implementation-developer-ceo-portals.md
-- [PENDING] - audit-testing-quizzing.md → implementation-testing-quizzing.md
+1. **database-layer** — RPCs, unique constraints, intelligent-routing rewrite
+2. **auth-and-gating** — typed session results, middleware role gating, context stabilization
+3. **api-routes** — requireAdmin helper, webhook idempotency
+4. **state-management** — timestamp-based timer, double-submit guard
+5. **shared-components** — skeleton accessibility, z-index registry
+6. **dashboard-portal** — already implemented (Suspense boundaries, server components)
+7. **admin-portal** — already implemented (server auth, role checks)
+8. **developer-ceo-portals** — already implemented (role gating in layout)
+9. **testing-quizzing** — navigation guard created; overlapping items done in domains 1-4
 
 ---
 
 ### Notes
 
 - Archive location: `.ai/archive/nightwatch/`
-- Many blueprint steps were already implemented or unnecessary — pre-flight verification prevents wasted work
+- Pre-flight verification prevented significant wasted work — many blueprint steps were already implemented
+- Recurring theme: `user_subscriptions` table referenced by blueprints does not exist — tier-dependent features deferred
