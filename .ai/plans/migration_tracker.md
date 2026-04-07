@@ -545,5 +545,96 @@ Wiki phases can run independently of main phases after Phase 1 tokens land.
 
 ---
 
+---
+
+## Phase 7: App-Wide Token Enforcement
+
+**Branch:** `design-system/phase-7-enforcement`
+**Status:** NOT STARTED
+**Scope:** ~180 files with hardcoded hex/non-semantic colors
+**Depends on:** Phases 1-6 + Wiki W1-W3 complete (satisfied)
+**Discovery:** Full codebase audit 2026-04-07 found 1,448 hardcoded hex + 903 non-semantic Tailwind classes
+
+### 7A — Auth & Onboarding (HIGH — user-facing first impression)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7A.1 | Fix onboarding page — replace `bg-[#F8F7F5]`, `text-[#8896A7]`, `border-[#D4DAE3]`, `bg-white` | `onboarding/comp-exam/page.tsx` | [ ] |
+| 7A.2 | Fix CompExamFlow — 15 hardcoded hex → semantic tokens | `onboarding/comp-exam/_components/CompExamFlow.tsx` | [ ] |
+| 7A.3 | Fix HeatmapPreview — 18 hardcoded hex → semantic tokens | `onboarding/comp-exam/_components/HeatmapPreview.tsx` | [ ] |
+| 7A.4 | Fix ScoreEntryForm — 9 hardcoded hex → semantic tokens | `onboarding/comp-exam/_components/ScoreEntryForm.tsx` | [ ] |
+| 7A.5 | Fix login page — `text-zinc-900`, `text-zinc-500` → semantic | `(auth)/login/page.tsx` | [ ] |
+| 7A.6 | Fix register page — gray/zinc colors → semantic | `(auth)/register/page.tsx` | [ ] |
+| 7A.7 | Fix forgot-password page — hardcoded colors → semantic | `(auth)/forgot-password/page.tsx` | [ ] |
+
+### 7B — Analytics & Charts (HIGH — dashboard core)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7B.1 | Fix DifficultyMasteryScatter — 19 hardcoded chart colors | `analytics/DifficultyMasteryScatter.tsx` | [ ] |
+| 7B.2 | Fix TimelineHeatmap — 26+ hardcoded colors | `analytics/TimelineHeatmap.tsx` | [ ] |
+| 7B.3 | Fix StaminaHeatmap — color mappings → token props | `analytics/StaminaHeatmap.tsx` | [ ] |
+| 7B.4 | Fix SessionHistory — chart colors → semantic | `analytics/SessionHistory.tsx` | [ ] |
+| 7B.5 | Fix SubjectRadarChart — 12+ hardcoded colors | `dashboard/SubjectRadarChart.tsx` | [ ] |
+| 7B.6 | Audit remaining ~20 analytics files for hardcoded hex | `analytics/**`, `dashboard/**` | [ ] |
+
+### 7C — Quiz System (HIGH — core product)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7C.1 | Audit all 31 quiz-v2 files for hardcoded hex/inline styles | `components/quiz-v2/**` | [ ] |
+| 7C.2 | Replace inline style colors with Tailwind semantic classes | `quiz-v2/**` (excluding SlideToSubmit) | [ ] |
+| 7C.3 | Verify SlideToSubmit UNTOUCHED after quiz refactor | Identity Lock | [ ] |
+
+### 7D — Admin Interface (MEDIUM)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7D.1 | Fix ModelConfigDetail — 8 hardcoded hex | `admin/3d-models/_components/ModelConfigDetail.tsx` | [ ] |
+| 7D.2 | Fix ModelRegistryTree — 4 hardcoded hex | `admin/3d-models/_components/ModelRegistryTree.tsx` | [ ] |
+| 7D.3 | Audit remaining admin files for zinc/gray/white tokens | `admin/**` | [ ] |
+
+### 7E — Dashboard Components (MEDIUM)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7E.1 | Fix dashboard area-c components — heavy color usage | `dashboard/area-c/_components/` | [ ] |
+| 7E.2 | Audit all 47 dashboard files for non-semantic colors | `dashboard/**` | [ ] |
+| 7E.3 | Replace `bg-white` with `bg-card` across dashboard | `dashboard/**` | [ ] |
+
+### 7F — 3D Lab & Features (MEDIUM)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7F.1 | Audit 23 3D lab files — separate Canvas hex (acceptable) from Tailwind hex (fix) | `features/3d-lab/**` | [ ] |
+| 7F.2 | Fix Tailwind-class hardcoded hex in 3D lab components | `features/3d-lab/**` | [ ] |
+
+### 7G — Wiki Sidebar & Misc (LOW)
+
+| # | Task | Files | Status |
+|---|------|-------|--------|
+| 7G.1 | Fix WikiSidebarShell — `border-zinc-200` → `border-border` | `wiki/navigation/WikiSidebarShell.tsx` | [ ] |
+| 7G.2 | Fix notification loading — `rounded-[10px]` → `rounded-md` | `dashboard/notifications/loading.tsx` | [ ] |
+| 7G.3 | Fix NotificationIcon — `rounded-[10px]` → `rounded-md` | `notifications/NotificationIcon.tsx` | [ ] |
+
+### 7H — Primitive Adoption (LOW — incremental)
+
+| # | Task | Description | Status |
+|---|------|-------------|--------|
+| 7H.1 | Integrate `ui/table.tsx` into data-heavy admin views | Replace custom table markup with Table primitive | [ ] |
+| 7H.2 | Integrate `ui/pagination.tsx` into paginated lists | Replace custom pagination with Pagination primitive | [ ] |
+| 7H.3 | Integrate `ui/alert.tsx` into feedback/notification patterns | Replace ad-hoc alert divs with Alert component | [ ] |
+
+| | **Phase 7 Gates** | | |
+|---|------|-------|--------|
+| | `bun run build` passes | | [ ] |
+| | `bun run type-check` passes | | [ ] |
+| | `bun run check:storybook` passes | | [ ] |
+| | Zero `bg-white` in non-marketing tsx files | | [ ] |
+| | Zero `text-zinc-*`/`bg-zinc-*` in non-marketing tsx files | | [ ] |
+| | SlideToSubmit verified untouched | | [ ] |
+
+---
+
 *Status key: `[ ]` not started — `[~]` in progress — `[x]` done*
 *This tracker is the single source of truth. Update it as tasks complete — do not modify the source plan files.*
