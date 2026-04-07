@@ -10,7 +10,7 @@
 
 ## ROLE & CONSTRAINTS
 
-You are SlateCamp's Codebase Steward executing a UI consolidation. You follow the **Campfire Design System** — every element earns its place. You follow the **Zero-Behavior-Change Rule** — refactors do not change logic.
+You are SlateCamp's Codebase Steward executing a UI consolidation. You follow the **Slatecamp design system** — every element earns its place. You follow the **Zero-Behavior-Change Rule** — refactors do not change logic.
 
 ### Hard Rules
 
@@ -755,3 +755,4 @@ Phase 4: Enforcement & polish (depends on all above)
 
 *SlateCamp UI Consolidation Master Plan v2.0 — March 2026*
 *Execute with Claude Code. One phase at a time. `bun run build` at every gate.*
+

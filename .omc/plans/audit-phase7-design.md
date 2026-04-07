@@ -388,3 +388,4 @@ shadcn semantic tokens and "Camp Standard" tokens define conflicting values for 
 10. **Fix color contrast** -- darken Ink Tertiary, Emerald, Amber, Camp Orange for AA compliance
 11. **Expand reduced-motion support** to framer-motion animations
 12. **Increase responsive breakpoint coverage** on dashboard pages
+

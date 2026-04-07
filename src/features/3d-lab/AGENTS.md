@@ -69,7 +69,7 @@ React Three Fiber (R3F) spatial learning components for interactive 3D module ex
    - In guided mode, only show hotspots up to currentSequenceIndex + 1.
    - In free explore, show all (up to MAX_PER_CATEGORY per category).
 
-6. **No custom styling in R3F components.** Use Campfire tokens via Tailwind classes on Html overlays. Keep Three.js materials simple and purposeful.
+6. **No custom styling in R3F components.** Use Slatecamp tokens via Tailwind classes on Html overlays. Keep Three.js materials simple and purposeful.
 
 ### Common Patterns
 

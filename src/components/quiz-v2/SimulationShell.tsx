@@ -77,6 +77,7 @@ export const SimulationShell = ({
     initializedRef.current = true
 
     initSession({
+      success: true,
       sessionId,
       config,
       questions,

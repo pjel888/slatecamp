@@ -200,3 +200,4 @@ This visualization is a triple-threat asset:
 1. **Student tool:** Directly improves study decisions
 2. **Marketing:** "The only platform that measures self-awareness, not just knowledge"
 3. **Institutional:** Show deans aggregate calibration curves — overconfident cohorts are at-risk cohorts
+

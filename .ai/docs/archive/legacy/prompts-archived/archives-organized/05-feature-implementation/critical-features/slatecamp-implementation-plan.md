@@ -1315,3 +1315,4 @@ CRON_SECRET=              # for securing cron endpoints
 *Source: Feature Research Report (cross-document analysis of 4 SlateCamp documents)*  
 *Stack: Next.js 15 App Router · Supabase · Tailwind CSS · shadcn/ui · Zustand*
 
+

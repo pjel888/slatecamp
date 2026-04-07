@@ -39,7 +39,7 @@ REST-style endpoints in `src/app/api/`:
 - `/api/auth/*` — Authentication callbacks
 - `/api/ai/*` — AI tutor endpoints (embed, generate-questions, study-agent, tutor)
 - `/api/cron/*` — Scheduled job endpoints
-- `/api/payments/*` — Stripe/PayRex webhooks
+- `/api/payments/*` — LemonSqueezy/PayRex webhooks
 - `/api/admin/*` — Admin-only endpoints
 
 ### Authentication

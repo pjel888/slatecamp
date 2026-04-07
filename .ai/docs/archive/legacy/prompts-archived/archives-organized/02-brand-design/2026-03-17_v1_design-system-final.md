@@ -490,3 +490,4 @@ The landing page IS the design direction. The dashboard and all internal pages m
 
 *This document is the single source of truth for all SlateCamp visual decisions. When in doubt, reference the landing page — it is the gold standard.*
 
+

@@ -50,7 +50,7 @@ Content:
 
 - [ ] All CSS variables from `globals.css` included
 - [ ] No hardcoded hex values — all reference tokens
-- [ ] No "Campfire" branding references (migrated to "SlateCamp" / "Campfire design system")
+- [ ] No "Campfire" branding references (migrated to "SlateCamp" / "Slatecamp design system")
 - [ ] Component names verified against `src/components/ui/`
 - [ ] Typography names match font loading in `src/app/layout.tsx`
 
@@ -58,3 +58,4 @@ Content:
 
 - Design tokens are the single source of truth — extract directly from `globals.css`
 - Do NOT use values from legacy `SlateCamp Design System.md` — that file is archived
+

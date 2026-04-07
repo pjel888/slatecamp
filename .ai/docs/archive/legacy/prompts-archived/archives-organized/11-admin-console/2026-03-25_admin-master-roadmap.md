@@ -247,7 +247,7 @@ Add `slugManuallyEdited` to the dependency array at line 240.
 
 ### 1.11 — Update login page colors
 
-Replace `zinc-*` Tailwind classes with Campfire tokens (`bg-[#F8F7F5]`, semantic text colors).
+Replace `zinc-*` Tailwind classes with Slatecamp tokens (`bg-[#F8F7F5]`, semantic text colors).
 
 ### 1.12 — Remove unused WikiEditor component
 
@@ -929,3 +929,4 @@ Verify every admin page works in dark mode. Red topbar should darken appropriate
 ---
 
 *End of master roadmap. This single document replaces all 8 source documents for execution purposes.*
+

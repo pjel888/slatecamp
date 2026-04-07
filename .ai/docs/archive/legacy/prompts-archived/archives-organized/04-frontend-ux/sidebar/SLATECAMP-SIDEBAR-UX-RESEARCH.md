@@ -885,3 +885,4 @@ Introduce the three-tier visual treatment.
 *SlateCamp Sidebar UX Research & Design Document*
 *Version 1.0 · March 2026*
 *Source references: Lynch (1960), Passini (1984), Wickens et al. FAA (2003), Rosenfeld & Morville (2002), Luke Wroblewski (2011), Miller (1956), Schwartz (2004), Tversky (2003), Yates (1966 method of loci), SlateCamp ALE Candidate Research, SlateCamp Design System, SlateCamp Gamification Research, Sidebar Overhaul Plan v2*
+

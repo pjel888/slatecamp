@@ -32,7 +32,7 @@ SlateCamp is an ALE prep platform built for the Philippine Architecture Licensur
 | 3D | React Three Fiber + Three.js |
 | Package Manager | Bun |
 | CI/CD | Vercel |
-| Payments | Stripe + Payrex |
+| Payments | LemonSqueezy + Payrex |
 
 ## Key Files
 
@@ -89,3 +89,4 @@ bun run build        # Production build
 ---
 
 *This file is the authoritative product/project definition. Update this before updating any documentation.*
+

@@ -87,7 +87,7 @@ Feedback is not one-size-fits-all. The three personas from Discovery each have d
 
 - [ ]  **Full feature loop** — Wiki → Quiz → Notes capture → AI Tutor → Dashboard (end-to-end journey across all Big Six features)
 - [ ]  **Device diversity** — 3D Lab on low-end Android phones (budget devices are the norm for Filipino students), mid-range laptops, iPads
-- [ ]  **Payment flow** — Stripe (international) + PayRex (GCash, Maya, bank transfer) end-to-end completion rates
+- [ ]  **Payment flow** — LemonSqueezy (international) + PayRex (GCash, Maya, bank transfer) end-to-end completion rates
 - [ ]  **Progression mechanics** — do Blindspot Protocol (targeted weak-node quizzes) and Endurance Cycle (accuracy-over-time tracking) drive daily return?
 - [ ]  **AI Tutor accuracy** — hallucination rate, citation correctness (Source Badges must link to correct `topic_id`), Socratic mode quality during active quizzes
 - [ ]  **Cross-device sync** — notes, quiz state, and settings persist across desktop and mobile browsers
@@ -97,7 +97,7 @@ Feedback is not one-size-fits-all. The three personas from Discovery each have d
 
 | **Metric** | **Target** | **Measurement** |
 | --- | --- | --- |
-| Free-to-paid conversion | ≥ 5% | Stripe + PayRex subscription events / total signups |
+| Free-to-paid conversion | ≥ 5% | LemonSqueezy + PayRex subscription events / total signups |
 | DAU/MAU ratio | ≥ 30% | Daily Readiness Score check as proxy for daily active use |
 | AI hallucination rate | < 1% of AI interactions | `sme_review_queue` WHERE `type` = 'hallucination' / total AI queries |
 | NPS | ≥ 50 | Day 14 and Day 56 NPS surveys |
@@ -127,7 +127,7 @@ Feedback is not one-size-fits-all. The three personas from Discovery each have d
 | --- | --- | --- |
 | 7-day retention | ≥ 60% | Users who return on day 7 / users who signed up on day 0 |
 | 30-day retention | ≥ 40% | Same methodology, 30-day window |
-| Free-to-paid conversion | ≥ 8% | Stripe + PayRex events / signups (improved from beta via funnel optimization) |
+| Free-to-paid conversion | ≥ 8% | LemonSqueezy + PayRex events / signups (improved from beta via funnel optimization) |
 | P0 bugs in production | Zero for 2 consecutive weeks | `feedback_submissions` WHERE `priority` = 'P0' AND `environment` = 'production' |
 | University pilot | ≥ 1 signed agreement | B2B sales pipeline |
 | Taxonomy coverage | ≥ 90% of nodes have both Wiki + Quiz content | `taxonomy_tree` LEFT JOIN `wiki_articles`  • `questions` — flag NULL nodes |
@@ -326,7 +326,7 @@ graph TD
 
 | **Priority** | **Definition** | **Response SLA** | **Resolution SLA** | **Examples from SlateCamp Context** |
 | --- | --- | --- | --- | --- |
-| 🔴 **P0** | Data loss, scoring errors, security breach, payment failure, AI hallucination | < 2 hours | < 24 hours | Quiz state lost on crash (violates Zero-Data-Loss Mandate). EMA `calculateReadinessScore()` returns NaN. AI cites fabricated PD 1096 section. Stripe webhook fails silently. |
+| 🔴 **P0** | Data loss, scoring errors, security breach, payment failure, AI hallucination | < 2 hours | < 24 hours | Quiz state lost on crash (violates Zero-Data-Loss Mandate). EMA `calculateReadinessScore()` returns NaN. AI cites fabricated PD 1096 section. LemonSqueezy webhook fails silently. |
 | 🟠 **P1** | Feature broken for subset of users, content error, significant UX blocker, performance degradation | < 8 hours | < 48 hours | 3D Lab crashes on Intel UHD GPUs. Wiki article cites old NBC reference (pre-amendment). PayRex GCash callback fails for Maya users. LCP > 3s on mobile. |
 | 🟡 **P2** | UX friction, minor visual bug, high-upvote feature request | < 24 hours | < 1 sprint | Heatmap tooltip cut off on mobile viewport. "Flag for Review" icon too small (touch target < 44px — accessibility violation). Users want bulk-select in Syllabus Selector tree. |
 | 🟢 **P3** | Nice-to-have, cosmetic, edge case with workaround | < 48 hours | Next sprint if prioritized | Typo in rationale text. Card hover animation janky on Firefox. Feature request with < 3 upvotes. |
@@ -347,7 +347,7 @@ Every piece of feedback gets tagged on three dimensions:
 | `analytics` | Taxonomy Heatmap, Readiness Score, Pacing Gauge, Node Inspector, EMA/IRT calculations | PRD 6 |
 | `progression` | Blindspot Protocol, Endurance Cycle, Proof Simulation, spaced repetition scheduler | Cross-feature |
 | `auth` | Login, signup, onboarding flow, session management, SSR auth | Infrastructure |
-| `payments` | Stripe checkout, PayRex (GCash/Maya), tier gating, subscription management | Infrastructure |
+| `payments` | LemonSqueezy checkout, PayRex (GCash/Maya), tier gating, subscription management | Infrastructure |
 | `onboarding` | Forced diagnostic quiz, first Readiness Score, heatmap explanation, tier selection | Cross-feature |
 | `performance` | Page load times, bundle size, 3D frame rate, network latency | Non-functional |
 | `content` | Wiki article quality, question bank coverage, taxonomy completeness | Content ops |
@@ -449,7 +449,7 @@ How each major feature uses feedback signals to drive improvement — ensuring n
 | **AI Tutor** (PRD 5) | Hallucination reports, "I Don't Know" trigger rate, Socratic mode satisfaction, Source Badge click-through | Queries per user per session, citation accuracy rate, Auditor LLM reject rate, response latency | If hallucination rate > 0.5% → retune embedding pipeline + expand Auditor LLM test cases. If "I Don't Know" > 15% → content coverage gap. |
 | **Analytics** (PRD 6) | Readiness Score trust (NPS cross-reference), "Fix It" button usage, heatmap comprehension (onboarding) | Dashboard visits per day, node drill-down rate, "Fix It" quiz completion rate, score-check-without-quiz signal | If "Fix It" completion < 50% → quiz is too long or targets too many nodes. If score-check-without-quiz > 40% of visits → add contextual prompt. |
 | **Progression** | Blindspot Protocol completion rate, Endurance Cycle decay patterns, Proof Simulation avoidance | Days between Blindspot sessions, node reclassification rate (Red → Amber → Green), Proof Simulation attempt rate vs. eligibility | If Blindspot completion < 60% → queue is too long (reduce from 20 to 10 items). If Proof avoidance > 50% among eligible users → reframe as confidence builder. |
-| **Payments** | Paywall bounce rate, Churn Exit Survey, payment method failure rate | Free-to-paid conversion by trigger point, tier upgrade/downgrade rate, PayRex vs. Stripe split | If paywall bounce > 80% → test value proof before pricing. If PayRex failure > 5% → escalate to PayRex support. |
+| **Payments** | Paywall bounce rate, Churn Exit Survey, payment method failure rate | Free-to-paid conversion by trigger point, tier upgrade/downgrade rate, PayRex vs. LemonSqueezy split | If paywall bounce > 80% → test value proof before pricing. If PayRex failure > 5% → escalate to PayRex support. |
 
 ---
 

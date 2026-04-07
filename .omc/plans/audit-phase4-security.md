@@ -17,9 +17,9 @@
 | 4 | Service role key isolation | **CLEAN** | `SUPABASE_SERVICE_ROLE_KEY` only used in `src/lib/supabase/admin.ts` (server-only file, no `'use client'`). All consumers are server actions or API routes. Not in any client component. |
 | 5 | No `select('*')` queries | **NEEDS_WORK** | 24 instances of `.select('*')` across `quiz.ts`, `testing.ts`, `trails.ts`, `notes-actions.ts`, `wiki-actions.ts`, `teach-back.ts`, `user-stats.ts`, `onboarding.ts`, `taxonomy.ts`. Over-fetches columns, increases payload, leaks schema structure. |
 | 6 | All queries scoped to user_id | **CRITICAL** | `social-proof.ts` queries `user_interactions` across ALL users without auth check or user scoping (lines 14-18, 35-39). This is a cross-user data leak -- any authenticated user can aggregate other users' interaction data. `debug-taxonomy` API route has no auth check at all. |
-| 7 | Env var hygiene | **CLEAN** | `.gitignore` covers `.env`, `.env.local`, `.env.*.local`. `NEXT_PUBLIC_*` vars are only `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `APP_URL`, `DEMO_MODE`, `STRIPE_PUBLISHABLE_KEY` -- all public-safe. No secrets in `NEXT_PUBLIC_*`. |
+| 7 | Env var hygiene | **CLEAN** | `.gitignore` covers `.env`, `.env.local`, `.env.*.local`. `NEXT_PUBLIC_*` vars are only `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `APP_URL`, `DEMO_MODE`, `LEMONSQUEEZY_PUBLISHABLE_KEY` -- all public-safe. No secrets in `NEXT_PUBLIC_*`. |
 | 8 | Error handling coverage | **NEEDS_WORK** | Only 10/45 server action files have try/catch. Most actions do not catch errors, letting them propagate raw to the client. Some admin actions `throw new Error(error.message)` which leaks Supabase error details. |
-| 9 | Payment security | **CLEAN** | Stripe webhook verifies signature via `constructEvent()`. PayRex webhook verifies via `parseEvent()`. Checkout route requires auth. Tier from metadata, amounts not client-manipulable. |
+| 9 | Payment security | **CLEAN** | LemonSqueezy webhook verifies signature via `constructEvent()`. PayRex webhook verifies via `parseEvent()`. Checkout route requires auth. Tier from metadata, amounts not client-manipulable. |
 | 10 | AI/LLM security | **NEEDS_WORK** | User input injected directly into LLM prompts without sanitization (prompt injection risk). AI Tutor uses `temperature: 0` (correct). But `provider.ts` defaults to `temperature: 0.7` -- callers must remember to override. `generate-questions` uses `temperature: 0.7` and `JSON.parse(response)` without try/catch. |
 | 11 | XSS/Injection surface | **NEEDS_WORK** | 4 `dangerouslySetInnerHTML` usages in `question-card.tsx` (lines 233, 243, 409) render rationale/stem HTML WITHOUT sanitization. Only `ElaborativeInterrogation.tsx` uses DOMPurify. No `eval()` in source. No raw SQL. |
 | 12 | Security headers | **CRITICAL** | `next.config.ts` has ZERO security headers. No `X-Frame-Options`, no `Content-Security-Policy`, no `Strict-Transport-Security`, no `X-Content-Type-Options`. App is vulnerable to clickjacking and MIME sniffing. |
@@ -154,7 +154,7 @@ dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(rationale) }}
   - `src/lib/actions/onboarding.ts` (1 instance)
   - `src/lib/actions/taxonomy.ts` (1 instance)
 - **Severity:** MEDIUM
-- **Issue:** `select('*')` fetches all columns including potentially sensitive fields (stripe IDs, internal scores, admin metadata). Increases payload size and exposes schema structure.
+- **Issue:** `select('*')` fetches all columns including potentially sensitive fields (lemonsqueezy IDs, internal scores, admin metadata). Increases payload size and exposes schema structure.
 - **Fix:** Replace each `select('*')` with explicit column lists.
 
 ### MED-003: Error Messages Leak Internal Details
@@ -293,10 +293,10 @@ These three sources of role truth can diverge. A user could have a role in `user
 
 | Check | Status |
 |-------|--------|
-| Stripe webhook signature verified | YES (`constructEvent()`) |
+| LemonSqueezy webhook signature verified | YES (`constructEvent()`) |
 | PayRex webhook signature verified | YES (`parseEvent()`) |
 | Checkout requires authentication | YES |
-| Tier from webhook metadata, not client | YES (Stripe: `session.metadata?.tier`) |
+| Tier from webhook metadata, not client | YES (LemonSqueezy: `session.metadata?.tier`) |
 | PayRex amount validated server-side | PARTIAL (`tierFromAmount()` used as fallback) |
 | Subscription updates use service role | YES (`createAdminClient()`) |
 | Free tier checkout blocked | YES (line 27-29 in checkout route) |
@@ -346,7 +346,7 @@ These three sources of role truth can diverge. A user could have a role in `user
 | `src/lib/rate-limit.ts` | In-memory rate limiter (not production-ready) |
 | `src/lib/ai/provider.ts` | AI provider abstraction (OpenAI + Anthropic) |
 | `src/app/api/ai/tutor/route.ts` | AI Tutor endpoint |
-| `src/app/api/webhooks/stripe/route.ts` | Stripe webhook handler |
+| `src/app/api/webhooks/lemonsqueezy/route.ts` | LemonSqueezy webhook handler |
 | `src/app/api/webhooks/payrex/route.ts` | PayRex webhook handler |
 | `src/app/api/payments/checkout/route.ts` | Checkout session creation |
 | `src/app/api/debug-taxonomy/route.ts` | **UNAUTHENTICATED** debug endpoint |

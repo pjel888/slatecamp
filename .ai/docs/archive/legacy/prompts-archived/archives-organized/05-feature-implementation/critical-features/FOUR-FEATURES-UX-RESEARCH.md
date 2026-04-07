@@ -844,3 +844,4 @@ This order follows the **clinical briefing model**: critical abnormals first, th
 
 *SlateCamp · Four Core Features UX Research & Design*
 *March 2026 · Research basis: Filipino Architect Encyclopedia · ALE Candidate Journey Research · SlateCamp Design System v6.0 · Behavioral finance research (Kahneman, 2011) · Retrieval practice research (Roediger & Karpicke, 2006) · Choice architecture (Thaler & Sunstein, 2008)*
+

@@ -33,7 +33,7 @@ Knowledge base and reference system for SlateCamp. Renders structured article co
 | `WikiNoteAnchor.tsx` | Inline anchor for a user-created note or highlight. Shows note preview on hover. |
 | `WikiBookmarks.tsx` | List of bookmarked articles or sections. |
 | `WikiReadTracker.tsx` | Tracks user read progress per article (scroll depth, time spent). Persisted to user profile. |
-| `WikiCallout.tsx` | Semantic callout component: Note, Warn, Tip, Example. Styled with Campfire colors + icons. |
+| `WikiCallout.tsx` | Semantic callout component: Note, Warn, Tip, Example. Styled with Slatecamp colors + icons. |
 | `WikiCalloutBox.tsx` | Container for callout content. Applies border, background tint, icon. |
 | `WikiChangedPill.tsx` | Badge indicating "Updated X days ago" or "New." Content freshness indicator. `'use client'` |
 | `WikiExamTable.tsx` | Styled table for exam content (requirements matrix, comparison table). Responsive grid on mobile. `'use client'` |
@@ -153,7 +153,7 @@ The wiki is a **structured knowledge base** designed for reference and deep lear
 - `katex` -- LaTeX math rendering (FormulaBlock)
 - `recharts` (if any charts in widgets)
 
-## Campfire Design System
+## Slatecamp Design System
 
 ### Colors & Styling
 

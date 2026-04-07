@@ -1,6 +1,6 @@
 # SlateCamp Developer Hub: Comprehensive UX Research & Design Blueprint
 
-The most effective developer hubs share a surprisingly consistent DNA: **persistent sidebar navigation, ⌘K command palette search, the preview-code-props triad, and progressive disclosure** that respects how developers actually scan documentation. This research synthesizes patterns from 30+ best-in-class developer tools—Stripe, shadcn/ui, Radix, Storybook, Vercel, GitHub Primer—into an actionable blueprint for SlateCamp's internal developer hub. Every recommendation maps to SlateCamp's specific stack (Next.js 14+, TypeScript, Tailwind CSS, Shadcn UI) and solo/small-team context. The findings are organized across eight research domains, each culminating in concrete design decisions rather than abstract principles.
+The most effective developer hubs share a surprisingly consistent DNA: **persistent sidebar navigation, ⌘K command palette search, the preview-code-props triad, and progressive disclosure** that respects how developers actually scan documentation. This research synthesizes patterns from 30+ best-in-class developer tools—LemonSqueezy, shadcn/ui, Radix, Storybook, Vercel, GitHub Primer—into an actionable blueprint for SlateCamp's internal developer hub. Every recommendation maps to SlateCamp's specific stack (Next.js 14+, TypeScript, Tailwind CSS, Shadcn UI) and solo/small-team context. The findings are organized across eight research domains, each culminating in concrete design decisions rather than abstract principles.
 
 ---
 
@@ -53,7 +53,7 @@ This means SlateCamp's component pages must be designed for scanning, not readin
 
 ### Time to first copy: the north star metric
 
-**Time to First Copy (TTFC)** measures how long it takes a developer to go from discovering a component to having working code in their project. Industry benchmarks: Twilio targets "up and running in **5 minutes** or less," Stripe achieves zero clicks to first code sample (code appears on the homepage), and research shows that if a developer can't make a first successful API call in **under 10 minutes**, they look for alternatives.
+**Time to First Copy (TTFC)** measures how long it takes a developer to go from discovering a component to having working code in their project. Industry benchmarks: Twilio targets "up and running in **5 minutes** or less," LemonSqueezy achieves zero clicks to first code sample (code appears on the homepage), and research shows that if a developer can't make a first successful API call in **under 10 minutes**, they look for alternatives.
 
 Five sequential friction barriers exist between "I need a component" and "I have it working": **discovery friction** (can't find it), **comprehension friction** (found it but don't understand it), **copy friction** (understand it but can't easily get the code), **integration friction** (copied it but it doesn't work due to missing imports), and **customization friction** (works but doesn't fit the specific use case).
 
@@ -234,7 +234,7 @@ The command palette modal uses `max-w-2xl` (640px width), positioned centered at
 
 ### The winning structure: domain-primary, type-secondary hybrid
 
-After analyzing GitHub Primer's separation of public/internal components, Spotify Backstage's plugin architecture, Stripe's internal "Trailhead" system, and Shopify Polaris's flat structure, the optimal organization for SlateCamp is a **domain-primary hybrid**. The primary axis is domain sections (because SlateCamp's product is inherently domain-driven), the secondary axis is component type within each domain (for findability), and a cross-cutting System/Shared section houses primitives used everywhere.
+After analyzing GitHub Primer's separation of public/internal components, Spotify Backstage's plugin architecture, LemonSqueezy's internal "Trailhead" system, and Shopify Polaris's flat structure, the optimal organization for SlateCamp is a **domain-primary hybrid**. The primary axis is domain sections (because SlateCamp's product is inherently domain-driven), the secondary axis is component type within each domain (for findability), and a cross-cutting System/Shared section houses primitives used everywhere.
 
 This mirrors how Backstage treats each capability as a "plugin" within a unified shell—SlateCamp's Design System, Status Dashboard, and Dev Tools are three "plugins" sharing a common navigation shell, header, and search.
 

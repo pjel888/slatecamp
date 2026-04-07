@@ -70,7 +70,7 @@ SlateCamp is a cognitive-first, personalized ALE (Architectural Licensure Examin
 | 3D Engine | Three.js | 0.183.2 |
 | UI Primitives | @base-ui/react + shadcn | — |
 | Icons | lucide-react + @phosphor-icons/react | — |
-| Payments | Stripe + Payrex-node | 20.4.1 + 1.7.3 |
+| Payments | LemonSqueezy + Payrex-node | 20.4.1 + 1.7.3 |
 | Rich Text | @tiptap/* (13 extensions) | 3.20.4 |
 | AI Tutor | @anthropic-ai/sdk | 0.78.0 |
 | Animations | framer-motion | 12.38.0 |
@@ -187,3 +187,4 @@ Session refresh handled in `middleware.ts` at root.
 - `02-architecture/003-database-schema.md` — Database reference
 - `02-architecture/004-api-reference.md` — Server actions and API routes
 - `03-design/001-design-system.md` — Design tokens from globals.css
+

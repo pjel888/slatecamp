@@ -23,7 +23,7 @@ These features are too critical to rely on manual verification. A regression her
 | **IRT selection** | `selectNextQuestion()` returns question with P(correct) ≈ 0.75 | Already has tests — keep them passing. |
 | **Readiness Score computation** | Overall score + sub-scores per subject | Feature 5 depends on this. Silent failure = empty sub_scores forever (again). |
 | **RLS policies** | Each new table's policies (user can see own, cannot see others) | Security. Cannot be manually tested reliably at scale. |
-| **Payment webhooks** | Stripe webhook → subscription status update | Revenue. Silent failure = paying users don't get Pro access. |
+| **Payment webhooks** | LemonSqueezy webhook → subscription status update | Revenue. Silent failure = paying users don't get Pro access. |
 | **Auth guards** | Admin routes reject non-admin users | Security. Already has known bugs (admin routes missing auth). |
 
 **Test framework:** Use whatever is already configured (likely Vitest or Jest). If no test framework exists, install Vitest (fastest, native ESM support, works with Next.js).
@@ -384,3 +384,4 @@ Unacceptable shortcuts:
 
 *Document version: 2026-03-26*
 *Add feature-specific QA checklists as each phase begins.*
+

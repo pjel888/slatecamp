@@ -196,3 +196,4 @@ if (model) {
 - "See in 3D" card in Wiki: thumbnail of the 3D model, Camp Cobalt border, subtle hover animation
 - Compliance toggle: clean switch component in the 3D toolbar, not a jarring UI element
 - All 3D UI maintains 60fps target — quiz overlays use `<Html>` which doesn't impact WebGL render loop
+

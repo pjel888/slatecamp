@@ -2,7 +2,6 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
 import { isDemoMode } from "@/lib/demo/config";
-import { canReviewContent } from "@/lib/admin/roles";
 
 export const updateSession = async (request: NextRequest) => {
   const response = NextResponse.next({ request });
@@ -74,6 +73,21 @@ export const updateSession = async (request: NextRequest) => {
   // Logged-in user on public login pages
   if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER) {
     return redirectWithCookies(ROUTES.DASHBOARD);
+  }
+
+  // 6. ADMIN ROLE GATING (defense-in-depth — layout.tsx also checks)
+  if (pathname.startsWith('/admin/') && pathname !== '/admin/login') {
+    const { data: roleData } = await supabase
+      .from('user_roles')
+      .select('role')
+      .eq('user_id', user.id)
+      .in('role', ['super_admin', 'content_admin', 'sme_reviewer'])
+      .limit(1)
+      .maybeSingle()
+
+    if (!roleData) {
+      return redirectWithCookies(ROUTES.DASHBOARD);
+    }
   }
 
   return response;

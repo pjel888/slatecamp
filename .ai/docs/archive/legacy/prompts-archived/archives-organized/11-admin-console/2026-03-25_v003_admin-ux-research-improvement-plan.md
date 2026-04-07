@@ -129,11 +129,11 @@ Fix: Add the eyebrow label to all content cards: "ARTICLES", "QUESTIONS", "RECEN
 **V-04: Login page uses `zinc-*` instead of design tokens — LOW**
 File: `/admin` login page
 The login page uses Tailwind zinc-* classes (`bg-zinc-900`, `text-zinc-400`) instead of the Campfire token system (`bg-[#F8F7F5]`, `text-[#1A1A1A]`).
-Fix: Replace all zinc-* with Campfire tokens. The admin red (`#6B1A1A` topbar) is correct — preserve it. The form and page background should use `--sc-cream` and `--sc-warm-white`.
+Fix: Replace all zinc-* with Slatecamp tokens. The admin red (`#6B1A1A` topbar) is correct — preserve it. The form and page background should use `--sc-cream` and `--sc-warm-white`.
 
 **V-05: Hardcoded hex in AdminMDXEditor — LOW**
 File: `AdminMDXEditor.tsx`
-Uses hardcoded hex values that match Campfire tokens but should reference CSS variables.
+Uses hardcoded hex values that match Slatecamp tokens but should reference CSS variables.
 Fix: Replace hardcoded hex with `var(--sc-cobalt)`, `var(--sc-cream)`, etc.
 
 ### Component Pattern Violations
@@ -812,7 +812,7 @@ Effort: 1 day.
 **5c. Add aria-labels to all icon-only buttons.**
 **5d. Add scope="col" to all table headers.**
 **5e. Add aria-live to DataTables.**
-**5f. Fix login page zinc-* → Campfire tokens.**
+**5f. Fix login page zinc-* → Slatecamp tokens.**
 **5g. Add missing metadata to 8 pages.**
 **5h. Remove or document WikiEditor.tsx.**
 
@@ -863,7 +863,7 @@ All items ranked by ICE: (Impact × Confidence) / (11 - Ease)
 
 | # | Category | Finding | ICE | Effort |
 |---|---|---|---|---|
-| 21 | Design | Login page zinc-* → Campfire tokens | 3.6 | 1 hr |
+| 21 | Design | Login page zinc-* → Slatecamp tokens | 3.6 | 1 hr |
 | 22 | Architecture | WikiEditor.tsx unused | 2.0 | 15 min |
 | 23 | Architecture | Missing metadata on 8 pages | 2.0 | 1 hr |
 | 24 | Design | Hardcoded hex in AdminMDXEditor | 1.6 | 30 min |
@@ -925,3 +925,4 @@ Never: "No data found." Never: blank div. Always: icon + honest message + 1–2 
 *SlateCamp Admin Console UX Research & Design Improvement Plan*
 *Version 1.0 · March 2026*
 *Source references: Admin Audit V2 (2026-03-24), Admin Audit Prompt v3, Unified Content Editor UX Plan, Testing & Review UX Plan, Camp Trail UX Plan, SlateCamp Design System v6.0*
+

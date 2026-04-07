@@ -334,3 +334,4 @@ If someone showed you the landing page and the dashboard side by side, your reac
 ---
 
 *Execute Phase 1 now. Read the dashboard files and query the database.*
+

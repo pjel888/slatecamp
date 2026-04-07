@@ -106,9 +106,13 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
         }
       })
 
-      if (result.sessionId) {
-        router.push(`/quiz/custom/session/${result.sessionId}`)
+      if (!result.success) {
+        console.error('Failed to start session:', result.message)
+        setIsLoading(false)
+        return
       }
+
+      router.push(`/quiz/custom/session/${result.sessionId}`)
     } catch (error) {
       console.error('Failed to start session:', error)
       setIsLoading(false)

@@ -1359,7 +1359,7 @@ These 9 tasks have been removed from the current implementation scope. They are 
 1. Locate GCash and Card payment buttons on the upgrade page
 2. Add `onClick` handlers that call the existing checkout route at `src/app/api/payments/checkout/route.ts`
 3. GCash button → PayRex checkout flow
-4. Card button → Stripe checkout flow
+4. Card button → LemonSqueezy checkout flow
 5. Add loading state on button press (disable button, show spinner)
 6. Add error state with retry capability
 7. Success redirects to `/dashboard/welcome-pro`
@@ -1376,11 +1376,11 @@ Build billing management page showing:
 - Current plan (Free/Pro)
 - Next billing date
 - Payment method on file
-- Invoice history (from Stripe)
+- Invoice history (from LemonSqueezy)
 - Cancel subscription button (with confirmation dialog)
 - Resubscribe CTA for canceled users
 
-Use Stripe Customer Portal API if available, or custom UI from `user_subscriptions` table.
+Use LemonSqueezy Customer Portal API if available, or custom UI from `user_subscriptions` table.
 
 ### DEFERRED-3: Complete Upgrade Page (was Phase 2.4)
 **Reintegration phase:** Phase 2 (or standalone sprint)
@@ -1423,7 +1423,7 @@ Add these 3 analytics events:
 □ PaywallSheet triggers after score tap (or manual navigation)
 □ Annual price shown first
 □ GCash and Card buttons both functional
-□ ₱399 test payment via Stripe test mode succeeds
+□ ₱399 test payment via LemonSqueezy test mode succeeds
 □ Redirects to /dashboard/welcome-pro
 □ Pro features unlocked after payment
 ```
@@ -1452,13 +1452,13 @@ Add these 3 analytics events:
 □ Resubscribe CTA appears after cancellation
 ```
 
-### DEFERRED-9: CSP Stripe Domain + Payment Risk Register Items
+### DEFERRED-9: CSP LemonSqueezy Domain + Payment Risk Register Items
 **Reintegration phase:** Phase 1 (security headers)
 **Time:** 15 minutes
 
 When payment integration resumes:
-- Add `https://*.stripe.com` to CSP `connect-src` directive in `next.config.ts`
-- Re-add risk register item: "Payment integration failure on launch day" with mitigation: "Test E2E with Stripe test cards + PayRex sandbox. Manual subscription activation as backup."
+- Add `https://*.lemonsqueezy.com` to CSP `connect-src` directive in `next.config.ts`
+- Re-add risk register item: "Payment integration failure on launch day" with mitigation: "Test E2E with LemonSqueezy test cards + PayRex sandbox. Manual subscription activation as backup."
 - Re-add monitoring metric: "Free→Paid conversion | ≥ 8% | < 4% | `paywall_decision` events"
 
 ### Deferred Task Summary

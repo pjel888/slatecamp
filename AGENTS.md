@@ -60,7 +60,7 @@ For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (
 
 ### Working In This Directory
 
-- **Read `CLAUDE.md` first** -- it defines the Campfire design system, voice guide, and absolute constraints
+- **Read `CLAUDE.md` first** -- it defines the Slatecamp design system, voice guide, and absolute constraints
 - **Read `DATABASE_SCHEMA.sql`** before any database-related work -- never hallucinate tables or foreign keys
 - **Use `bun`** as the package manager (not npm/yarn/pnpm)
 - **Arrow functions only** -- never use `function` declarations
@@ -75,7 +75,7 @@ For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (
 - **All server action files must include `"use server"` directive** at the top
 - **Wrap server actions in try/catch** -- never let raw Supabase errors propagate to client
 
-### Campfire Design System (Quick Reference)
+### Slatecamp Design System (Quick Reference)
 
 | Token | Hex | Tailwind Class | Usage |
 |-------|-----|---------------|-------|
@@ -159,7 +159,7 @@ For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (
 - `zustand` 5.0.12 -- Client state management
 - `@base-ui/react` 0.9.5 + `shadcn` 4.1.0 -- UI primitives
 - `@anthropic-ai/sdk` 0.78.0 -- AI contextual tutor (Temperature 0.0, citation-required)
-- `stripe` 20.4.1 + `payrex-node` 1.7.3 -- Payment processing
+- `lemonsqueezy` 20.4.1 + `payrex-node` 1.7.3 -- Payment processing
 - `framer-motion` 12.38.0 -- Structural animations (max 300ms transitions)
 - `recharts` 3.8.0 -- Analytics charts
 - `@tiptap/*` 3.20.4 (13 extensions) -- Rich text editor for notes
@@ -167,3 +167,4 @@ For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (
 - `lucide-react` 0.577.0 + `@phosphor-icons/react` 2.1.10 -- Icon libraries
 
 <!-- MANUAL: -->
+

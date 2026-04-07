@@ -28,7 +28,7 @@ interface AnsweredQuestion {
 
 type GatePhase = 'loading' | 'questions' | 'summary' | 'article'
 
-// ─── Option state styling (mirrors Campfire design system) ───────────────────
+// ─── Option state styling (mirrors Slatecamp design system) ───────────────────
 
 const OPTION_CLASSES = {
   default:

@@ -94,7 +94,7 @@ All z-index values are co-located in `types.ts`. Do not hard-code z-index values
 - `next/navigation` -- `usePathname`, `useRouter`
 - `react` -- hooks, context
 
-## Campfire Design System
+## Slatecamp Design System
 
 ### Colors & Styling
 

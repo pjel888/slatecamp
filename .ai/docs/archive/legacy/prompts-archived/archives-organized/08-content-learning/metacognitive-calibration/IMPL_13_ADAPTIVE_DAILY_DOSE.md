@@ -186,3 +186,4 @@ Banner includes a single CTA button that launches the first activity in the dose
 - Progress through dose: horizontal stepper showing completed/remaining activities
 - Completion: "Today's dose complete. You studied [X] minutes." No over-celebration.
 - If dose already completed today: "You've finished today's recommended study. Want to do more?" with optional activities
+

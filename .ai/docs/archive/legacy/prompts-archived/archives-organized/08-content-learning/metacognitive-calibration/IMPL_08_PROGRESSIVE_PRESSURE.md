@@ -150,3 +150,4 @@ Track trajectory across simulations in the Analytics Dashboard.
 - Language: "Build up your exam readiness" not "Increase difficulty"
 - Checklist: warm, supportive tone. Not clinical or military.
 - Debrief: coaching, not judgment. "Here's what to work on" not "Here's where you failed."
+

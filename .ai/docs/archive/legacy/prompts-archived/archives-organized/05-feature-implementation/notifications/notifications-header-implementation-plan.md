@@ -1730,3 +1730,4 @@ startRealtime: () => {
 - [ ] `npm run build` → zero errors
 - [ ] `npx tsc --noEmit` → zero errors
 - [ ] No `console.log` statements (only `console.error` in catch blocks)
+

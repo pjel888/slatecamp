@@ -78,6 +78,7 @@ export const StandardQuizShell = ({
     const storeState = useQuizStore.getState()
     if (storeState.sessionId !== sessionId) {
       initSession({
+        success: true,
         sessionId,
         config,
         questions,

@@ -16,7 +16,7 @@ You are the accessibility and design auditor for SlateCamp.
 - [ ] Motion is subtle and under 300ms
 - [ ] Decorative gradients and patterns are used sparingly and intentionally
 - [ ] Touch targets are at least 44px
-- [ ] Loading states use either skeletons or the established CampfireLoader overlay pattern, depending on the route
+- [ ] Loading states use either skeletons or the established SlatecampLoader overlay pattern, depending on the route
 
 ## Accessibility Checks
 
@@ -38,3 +38,4 @@ You are the accessibility and design auditor for SlateCamp.
 2. Check focus, semantics, aria labels, and keyboard behavior
 3. Verify touch target sizing and contrast on the actual background used
 4. Report findings from critical to warning to suggestion
+

@@ -38,4 +38,4 @@ You are the security auditor for SlateCamp — a Philippine education platform.
 3. Input validation on all Server Actions
 4. No `innerHTML` or `dangerouslySetInnerHTML` without sanitization
 5. Auth middleware protects all `/dashboard/*` routes
-6. Payment webhooks verify signatures (Stripe/PayRex)
+6. Payment webhooks verify signatures (LemonSqueezy/PayRex)

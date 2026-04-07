@@ -173,7 +173,7 @@ Domain-neutral complex compositions:
 | data-table.tsx | Active | 12+ | Table primitive |
 | SourceBadge.tsx | Active | 6+ | Citation badge |
 | WikiSidePanel.tsx | Active | 2+ | Wiki sidebar |
-| CampfireLoader.tsx | Active | 8+ | Full-page loader |
+| SlatecampLoader.tsx | Active | 8+ | Full-page loader |
 | question-card.tsx | Active | 9+ | Question display |
 | content-sidebar.tsx | Active | 4+ | Content nav |
 | TodayActionCard.tsx | **DEAD** | 0 | DELETE |
@@ -462,7 +462,7 @@ All replaced by quiz-v2/:
 
 ### 6.4 Loading Spinner Gap (29 files)
 
-**Problem:** `CampfireLoader` is full-page-only. No inline spinner exists. 29 files roll their own `animate-spin` divs.
+**Problem:** `SlatecampLoader` is full-page-only. No inline spinner exists. 29 files roll their own `animate-spin` divs.
 
 **Resolution:** Add `src/components/ui/spinner.tsx`. Then migrate 29 files.
 
@@ -916,3 +916,4 @@ npx tsc --noEmit
 ---
 
 *This is the most comprehensive component organization plan for SlateCamp. Execution should proceed methodically with type-check verification after each phase.*
+

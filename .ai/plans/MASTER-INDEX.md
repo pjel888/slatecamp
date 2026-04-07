@@ -134,7 +134,7 @@ C:\Users\Philip Lewis\Desktop\slatecamp\
 
 | Document | Location | Description |
 |---------|----------|-------------|
-| `CLAUDE.md` | Root | Core system prompt, Campfire design system, constraints |
+| `CLAUDE.md` | Root | Core system prompt, Slatecamp design system, constraints |
 | `AGENTS.md` | Root | Agent instructions, codebase overview |
 | `DATABASE_SCHEMA.sql` | Root | Authoritative relational schema |
 | `src/AGENTS.md` | src/ | Source code agent instructions |
@@ -153,3 +153,4 @@ C:\Users\Philip Lewis\Desktop\slatecamp\
 ---
 
 **Next:** Read any audit file for detailed findings, or proceed to Pass 2 (Synthesis).
+

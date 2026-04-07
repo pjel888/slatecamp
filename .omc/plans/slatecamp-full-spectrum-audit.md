@@ -13,7 +13,7 @@
 ### What This Audit Will Answer
 1. **What features are missing?** Gap analysis against PRDs and market expectations
 2. **What existing features need improvement?** Completeness scoring per feature
-3. **What's the shipping quality?** Campfire design system compliance, UX polish, error/loading coverage
+3. **What's the shipping quality?** Slatecamp design system compliance, UX polish, error/loading coverage
 4. **Is the architecture sound?** Server/client boundaries, data fetching, state management
 5. **Is it secure?** RLS, auth gates, input validation, env var hygiene
 6. **Is it performant?** Bundle size, render waterfalls, R3F 60fps compliance
@@ -143,7 +143,7 @@ Top 5 Architectural Bottlenecks with exact locations.
 - **Quiz response data integrity:** Are answers, scores, and mastery calculations tamper-proof?
 - **Admin role separation:** Can non-admins access admin actions?
 - **CEO dashboard data isolation:** Financial data access control
-- **Payment webhook security:** Stripe/PayRex signature verification
+- **Payment webhook security:** LemonSqueezy/PayRex signature verification
 - **AI Tutor prompt injection:** Can users manipulate AI responses?
 - **Wiki content XSS:** User-generated or admin-generated content sanitization
 
@@ -220,7 +220,7 @@ Critical untested code paths list.
 
 ---
 
-## Phase 7: UX, UI & Campfire Design System Audit
+## Phase 7: UX, UI & Slatecamp design system Audit
 **Goal:** Visual consistency, Campfire compliance, accessibility, cognitive load.
 
 ### Data Collection
@@ -236,7 +236,7 @@ Critical untested code paths list.
 - Font usage consistency (Inter only)
 
 ### SlateCamp-Specific Campfire Compliance Checks
-- **Color tokens:** Every color must map to Campfire palette (Camp Cobalt, Camp Orange, Emerald, Warm Red, Amber, etc.)
+- **Color tokens:** Every color must map to Slatecamp palette (Camp Cobalt, Camp Orange, Emerald, Warm Red, Amber, etc.)
 - **Typography:** Minimum 11px text. No monospace on labels/categories (only code/data values/Readiness Score)
 - **Shadows:** Cards at rest = shadow-none, hover = shadow-sm. No shadow-xl/2xl on non-modals
 - **Border radii:** Cards = rounded-md, Buttons/inputs = rounded-sm, Modals = rounded-lg. No rounded-xl/2xl/3xl
@@ -304,7 +304,7 @@ Recommendations for pedagogical improvements.
 - **CEO dashboard components** — are they all wired up or partially built?
 - **Developer hub** — is it functional or placeholder?
 - **3D Lab scenes** — which are active vs experimental?
-- **Payment providers** — is PayRex active alongside Stripe or abandoned?
+- **Payment providers** — is PayRex active alongside LemonSqueezy or abandoned?
 - **Demo/mock data** — should src/lib/mocks/ exist in production?
 
 ### Output
@@ -329,7 +329,7 @@ Waste Inventory table by category with counts and impact assessment.
 - 10x user scalability assessment
 
 **Monetization Readiness:**
-- Payment system completeness (Stripe integration, subscription flows, upgrade CTAs)
+- Payment system completeness (LemonSqueezy integration, subscription flows, upgrade CTAs)
 - Paywall gates on premium features
 - Pricing page -> checkout -> access flow
 - Trial/freemium model implementation
@@ -367,7 +367,7 @@ Recommended next 3 sprints.
 6. Database & Security Audit
 7. Performance Assessment
 8. Code Quality & Type Safety
-9. Campfire Design System Compliance (SlateCamp-specific)
+9. Slatecamp design system Compliance (SlateCamp-specific)
 10. Pedagogical Engine Assessment (SlateCamp-specific)
 11. Dead Code & Waste Inventory
 12. Business & Strategic Assessment
@@ -416,3 +416,4 @@ Recommended next 3 sprints.
 - **Parallelizable:** Phases 3-6 (4 parallel), Phases 7-9 (3 parallel)
 - **Sequential:** Phases 1-2, then parallel waves, then 10-11
 - **Output:** Single comprehensive markdown report + tiered action items
+

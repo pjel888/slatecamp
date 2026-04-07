@@ -69,7 +69,7 @@ flowchart TD
     subgraph DBLayer ["Supabase & External"]
         Postgres[(PostgreSQL 50+ Tables)]
         Auth[Supabase Auth Session]
-        Stripe[Stripe / Payrex Billing]
+        LemonSqueezy[LemonSqueezy / Payrex Billing]
         Anthropic[Anthropic Claude AI Tutor]
     end
 
@@ -97,7 +97,7 @@ flowchart TD
     PedagogicalEngine --> |Calculates Mastery| Postgres
     Cron --> |run Daily compute-signals| PedagogicalEngine
     
-    AdminPortal --> |Payment triggers| Stripe
+    AdminPortal --> |Payment triggers| LemonSqueezy
     DashTesting --> |AI Contextual Tutor| Anthropic
 ```
 

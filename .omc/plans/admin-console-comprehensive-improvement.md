@@ -129,7 +129,7 @@ Add `slugManuallyEdited` to dependency array.
 
 ### 1.11 — Update login page colors
 
-Replace `zinc-*` classes with Campfire tokens (`bg-[#F8F7F5]`, `text-[#1A1A1A]`).
+Replace `zinc-*` classes with Slatecamp tokens (`bg-[#F8F7F5]`, `text-[#1A1A1A]`).
 
 ### 1.12 — Remove unused WikiEditor component
 
@@ -535,7 +535,7 @@ Every admin page has proper Next.js metadata export.
 - "Skip to main content" link
 - `aria-label` on all interactive elements
 - Color never sole indicator (always paired with text/icon)
-- All text ≥11px per Campfire design system
+- All text ≥11px per Slatecamp design system
 
 ### 9.6 — Performance
 
@@ -641,3 +641,4 @@ After Phase 9 (final):
 | `createAsset` | `src/lib/actions/admin/assets.ts` | 0 |
 | `uploadAssetFile` | `src/lib/actions/admin/assets.ts` | 0 |
 | `updateArticleReviewStatus` | `src/lib/actions/admin/wiki.ts` | 0 |
+

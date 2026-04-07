@@ -65,4 +65,4 @@ None. All trails components are flat in `src/components/trails/`.
 - React hooks - `useState`, `useTransition`
 - `recharts` - ScoreTrajectoryChart
 
-<!-- MANUAL: Ensure trail durations align with learning science research on spaced repetition intervals. Test enrollment flow end-to-end. Verify intensity color mappings match Campfire palette. -->
+<!-- MANUAL: Ensure trail durations align with learning science research on spaced repetition intervals. Test enrollment flow end-to-end. Verify intensity color mappings match Slatecamp palette. -->

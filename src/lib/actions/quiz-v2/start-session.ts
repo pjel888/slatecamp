@@ -59,7 +59,11 @@ export const startSession = async (
     } = await getUser()
 
     if (!user) {
-      throw new Error('Unauthorized')
+      return {
+        success: false,
+        error: 'UNAUTHORIZED',
+        message: 'You must be logged in to start a session.',
+      }
     }
 
     const supabase = await createServiceClient()
@@ -74,9 +78,17 @@ export const startSession = async (
 
       const isPro = subscription?.tier !== 'free' && subscription?.status === 'active'
       const isDevBypass = process.env.NODE_ENV === 'development'
-      
+
       if (!isPro && !isDevBypass) {
-        throw new Error(`The ${modeDef.label} mode requires a Pro subscription.`)
+        return {
+          success: false,
+          error: 'TIER_INSUFFICIENT',
+          errorCode: 'PRO_MODE_REQUIRED',
+          message: `The ${modeDef.label} mode requires a Pro subscription.`,
+          upgradeUrl: '/pricing',
+          currentTier: subscription?.tier || 'free',
+          requiredTier: 'camp',
+        }
       }
     }
 
@@ -240,9 +252,11 @@ export const startSession = async (
     }
 
     if (selectedQuestions.length === 0) {
-      throw new Error(
-        'No questions found. Try widening your selection or changing difficulty.'
-      )
+      return {
+        success: false as const,
+        error: 'NO_QUESTIONS' as const,
+        message: 'No questions found. Try widening your selection or changing difficulty.',
+      }
     }
 
     const questionIds = selectedQuestions.map((q) => q.question_id)
@@ -287,6 +301,7 @@ export const startSession = async (
     )
 
     return {
+      success: true as const,
       sessionId: session.session_id,
       config: mergedConfig,
       questions: clientQuestions,
@@ -297,6 +312,10 @@ export const startSession = async (
     }
   } catch (error) {
     console.error('[quiz-v2/start-session] Failed:', error)
-    throw error
+    return {
+      success: false as const,
+      error: 'UNKNOWN' as const,
+      message: error instanceof Error ? error.message : 'Failed to start session',
+    }
   }
 }

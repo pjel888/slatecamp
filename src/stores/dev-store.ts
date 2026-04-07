@@ -175,7 +175,15 @@ export const useDevStore = create<DevState>()(
     }),
     {
       name: 'cerebro-dev-store',
-      storage: createJSONStorage(() => sessionStorage),
+      storage: createJSONStorage(() =>
+        typeof window !== 'undefined' && process.env.NODE_ENV !== 'production'
+          ? sessionStorage
+          : {
+              getItem: () => null,
+              setItem: () => {},
+              removeItem: () => {},
+            },
+      ),
       partialize: (state) => ({
         isImpersonating: state.isImpersonating,
         impersonatedRole: state.impersonatedRole,

@@ -198,7 +198,8 @@ export interface StartSessionInput {
   trailDayId?: string
 }
 
-export interface StartSessionResult {
+export interface StartSessionSuccess {
+  success: true
   sessionId: string
   config: QuizSessionConfig
   questions: QuestionForClient[]
@@ -209,6 +210,18 @@ export interface StartSessionResult {
   /** Session-derived HMAC signing key for CAGE tokens (hex) */
   sessionKey?: string
 }
+
+export interface StartSessionError {
+  success: false
+  error: 'TIER_INSUFFICIENT' | 'UNAUTHORIZED' | 'NO_QUESTIONS' | 'UNKNOWN'
+  errorCode?: string
+  message: string
+  upgradeUrl?: string
+  currentTier?: string
+  requiredTier?: string
+}
+
+export type StartSessionResult = StartSessionSuccess | StartSessionError
 
 export interface SubmitAnswerInput {
   sessionId: string

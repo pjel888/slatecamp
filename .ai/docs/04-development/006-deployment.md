@@ -47,7 +47,7 @@ Configure these in Vercel dashboard → Project → Environment Variables:
 | `NEXT_PUBLIC_DEMO_MODE` | Optional | Enable demo mode |
 | `ALLOW_DEV_PORTAL_BYPASS` | Optional | Developer portal bypass |
 | `OPENAI_API_KEY` | Optional | AI tutor |
-| `STRIPE_SECRET_KEY` | Optional | Payments |
+| `LEMONSQUEEZY_API_KEY` | Optional | Payments |
 | `PAYREX_API_KEY` | Optional | Philippine payments |
 
 ---
@@ -146,3 +146,4 @@ This is a known issue with the current build pipeline. The build fails after com
 ---
 
 *Source: `vercel.json`, `CLAUDE.md`, `next.config.ts`*
+

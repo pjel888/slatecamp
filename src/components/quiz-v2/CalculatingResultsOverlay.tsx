@@ -1,6 +1,6 @@
 'use client'
 
-import { CampfireLoader } from '@/components/shared/CampfireLoader'
+import { SlatecampLoader } from '@/components/shared/SlatecampLoader'
 
 // ─── Component ───────────────────────────────────────────────────────────────
 
@@ -11,6 +11,6 @@ import { CampfireLoader } from '@/components/shared/CampfireLoader'
  */
 export const CalculatingResultsOverlay = () => {
   return (
-    <CampfireLoader isOverlay />
+    <SlatecampLoader isOverlay />
   )
 }

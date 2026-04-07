@@ -22,7 +22,7 @@ Auth:           Supabase Auth (Google OAuth primary)
 Styling:        Tailwind CSS 4.2.1 · shadcn/ui 0.9.5
 3D:             React Three Fiber 9.5.0 · @react-three/drei 10.7.7 · Three.js 0.183.2
 State:          Zustand 5.0.12 (client only) · React 19 form actions
-Payments:       Stripe 20.4.1 · PayRex (payrex-node 1.7.3)
+Payments:       LemonSqueezy 20.4.1 · PayRex (payrex-node 1.7.3)
 AI:             Anthropic Claude claude-3-5-sonnet-20241022 (@anthropic-ai/sdk 0.78.0)
 Testing:        Bun built-in test runner (bun:test) — no Jest/Vitest
 Deployment:     Vercel (Next.js + serverless cron jobs)
@@ -55,7 +55,7 @@ src/
 │   │   ├── ai/            # Claude AI tutor
 │   │   ├── cron/          # blindspot-scan, compute-signals
 │   │   ├── payments/      # checkout
-│   │   └── webhooks/      # stripe, payrex
+│   │   └── webhooks/      # lemonsqueezy, payrex
 │   └── dashboard/         # Core app
 │       ├── 3d-lab/
 │       ├── analytics/
@@ -107,13 +107,13 @@ src/
 - Comments: JSDoc above exported functions, section dividers `// ── Section ─────`
 
 ### Subscription Tiers
-- `camp` — PHP₱499/mo (Stripe) or PHP₱4,990/mo (PayRex)
-- `insurance` — PHP₱1,499/mo (Stripe) or PHP₱14,990/mo (PayRex)
-- `institutional` — PHP₱4,999/mo (Stripe) or PHP₱49,990/mo (PayRex)
+- `camp` — PHP₱499/mo (LemonSqueezy) or PHP₱4,990/mo (PayRex)
+- `insurance` — PHP₱1,499/mo (LemonSqueezy) or PHP₱14,990/mo (PayRex)
+- `institutional` — PHP₱4,999/mo (LemonSqueezy) or PHP₱49,990/mo (PayRex)
 
 ### Critical Integrations
 - **Anthropic:** `/api/ai/tutor` — Claude-3.5-sonnet, temp 0.0, max 512 tokens
-- **Stripe:** Webhooks at `/api/webhooks/stripe` — `STRIPE_WEBHOOK_SECRET` required
+- **LemonSqueezy:** Webhooks at `/api/webhooks/lemonsqueezy` — `LEMONSQUEEZY_WEBHOOK_SECRET` required
 - **PayRex:** Webhooks at `/api/webhooks/payrex` — `PAYREX_WEBHOOK_SECRET` required
 - **Cron 1:** `/api/cron/blindspot-scan` — `0 16 * * *` UTC (midnight PHT)
 - **Cron 2:** `/api/cron/compute-signals` — `30 16 * * *` UTC
@@ -133,7 +133,7 @@ src/
 | C6 | DOMPurify audit — verify all `dangerouslySetInnerHTML` | HIGH | 2 |
 | C7 | API route authorization audit | HIGH | 2 |
 | C8 | Missing rate limiting on `/api/ai/*` endpoints | CRITICAL | 3 |
-| C9 | Webhook signature verification (Stripe + PayRex) | CRITICAL | 3 |
+| C9 | Webhook signature verification (LemonSqueezy + PayRex) | CRITICAL | 3 |
 | C10 | Missing Zod input validation on server actions | HIGH | 3 |
 | C11 | `moduleRegistry.ts` — 1,741 lines loaded at runtime | MEDIUM | 4 |
 | C12 | `Promise.allSettled` without error aggregation on dashboard | MEDIUM | 4 |
@@ -339,7 +339,7 @@ find src/app/api -name "route.ts" | sort
 | Route type | Required auth |
 |---|---|
 | `/api/cron/*` | `Authorization: Bearer ${CRON_SECRET}` header check |
-| `/api/webhooks/stripe` | Stripe signature via `stripe.webhooks.constructEvent()` |
+| `/api/webhooks/lemonsqueezy` | LemonSqueezy signature via `lemonsqueezy.webhooks.constructEvent()` |
 | `/api/webhooks/payrex` | PayRex signature check |
 | `/api/ai/*` | Supabase session (user must be logged in) |
 | `/api/payments/*` | Supabase session |
@@ -352,15 +352,15 @@ if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
 }
 ```
 
-**For Stripe webhooks — verify this pattern exists:**
+**For LemonSqueezy webhooks — verify this pattern exists:**
 ```typescript
-const sig = request.headers.get('stripe-signature')
+const sig = request.headers.get('x-signature')
 const body = await request.text()
-let event: Stripe.Event
+let event: LemonSqueezy.Event
 try {
-  event = stripe.webhooks.constructEvent(body, sig!, process.env.STRIPE_WEBHOOK_SECRET!)
+  event = lemonsqueezy.webhooks.constructEvent(body, sig!, process.env.LEMONSQUEEZY_WEBHOOK_SECRET!)
 } catch (err) {
-  console.error('[WEBHOOK] Stripe signature verification failed:', err)
+  console.error('[WEBHOOK] LemonSqueezy signature verification failed:', err)
   return NextResponse.json({ error: 'Invalid signature' }, { status: 400 })
 }
 ```
@@ -871,7 +871,7 @@ Track every file touched. Fill in this table as you work.
 | 2.1 | `src/app/dashboard/3d-lab/_scenes/ClassicalOrders/ClassicalOrders.tsx` | Uncomment analytics | — |
 | 2.2 | Various wiki/quiz components | Add DOMPurify where missing | — |
 | 2.3 | `src/app/api/cron/*.ts` | Verify/add auth checks | — |
-| 2.3 | `src/app/api/webhooks/stripe/route.ts` | Verify signature verification | — |
+| 2.3 | `src/app/api/webhooks/lemonsqueezy/route.ts` | Verify signature verification | — |
 | 2.3 | `src/app/api/webhooks/payrex/route.ts` | Verify/add signature verification | — |
 | 2.4 | `src/lib/actions/quiz.ts` | Remove pre-migration fallback | — |
 | 3.1 | `src/lib/rate-limit.ts` | Create (new file) | — |
@@ -895,7 +895,7 @@ These are explicitly out of scope. Do not modify them:
 2. **`DATABASE_SCHEMA.sql`** and `supabase/migrations/`** — Database changes require separate migration PRs, not part of this plan.
 3. **Any Zustand store in `src/stores/`** — Dev-only, low priority.
 4. **`src/lib/demo/`** — Demo mode mock data, not in scope.
-5. **Payment provider logic in `src/lib/stripe/` and `src/lib/payrex/`** — Only verify the webhook handlers, don't change the provider logic.
+5. **Payment provider logic in `src/lib/lemonsqueezy/` and `src/lib/payrex/`** — Only verify the webhook handlers, don't change the provider logic.
 6. **React component UI logic** — This plan is backend/infrastructure focused. No UI changes.
 7. **`src/lib/srs/irt.ts` algorithm logic** — The IRT algorithm is correct. The in-memory sort concern (C14) is a future optimization, not this plan.
 
@@ -929,4 +929,5 @@ For Phase 4.2 (cron optimization) specifically:
 
 *Implementation plan version 1.0 · SlateCamp · 2026-03-19*
 *DO NOT implement more than one phase per session. Run the build after every phase.*
+
 

@@ -641,3 +641,4 @@ Previous component names (`QuizRenderer.tsx`, `TestingHub.tsx`) are retired — 
 
 > **The short version of this entire document:** Camp Mode teaches. Chill Mode exposes. Storm Mode tests. Proof Simulation™ certifies. And the Lucky Guess Detector™ makes sure none of them let the student lie to themselves.
 
+

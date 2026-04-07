@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1775120022494,
+  "lastScanned": 1775528094194,
   "projectRoot": "C:\\Users\\Philip Lewis\\Desktop\\slatecamp",
   "techStack": {
     "languages": [
@@ -47,22 +47,27 @@
     "lintCommand": "npm run lint",
     "devCommand": "npm run dev",
     "scripts": {
-      "dev": "node scripts/dev.js",
+      "dev": "bun run scripts/dev.js",
       "dev:turbo": "next dev --turbopack",
       "dev:webpack": "next dev --webpack",
       "build": "next build",
       "start": "next start",
-      "lint": "eslint .",
+      "check:storybook": "bun scripts/check-storybook.ts",
+      "check:storybook-placeholders": "bun run check:storybook",
+      "storybook": "bun run check:storybook && storybook dev -p 6006",
+      "build-storybook": "bun run check:storybook && storybook build",
+      "lint": "bun run check:storybook && eslint .",
       "lint:fix": "eslint . --fix",
       "type-check": "tsc --noEmit",
-      "db:seed": "bun scripts/seed.ts"
+      "db:seed": "bun scripts/seed.ts",
+      "bones:build": "boneyard-js build http://localhost:3000/dashboard --out ./src/bones"
     }
   },
   "conventions": {
     "namingStyle": null,
     "importStyle": null,
     "testPattern": null,
-    "fileOrganization": "type-based"
+    "fileOrganization": "feature-based"
   },
   "structure": {
     "isMonorepo": false,
@@ -83,25 +88,17 @@
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
-      "fileCount": 2,
-      "lastAccessed": 1775120022474,
+      "fileCount": 1,
+      "lastAccessed": 1775528094179,
       "keyFiles": [
-        "AGENTS.md",
-        "QUIZ-TESTING-AUDIT.md"
+        "README.md"
       ]
-    },
-    "prompts": {
-      "path": "prompts",
-      "purpose": null,
-      "fileCount": 0,
-      "lastAccessed": 1775120022475,
-      "keyFiles": []
     },
     "public": {
       "path": "public",
       "purpose": "Public files",
-      "fileCount": 8,
-      "lastAccessed": 1775120022480,
+      "fileCount": 9,
+      "lastAccessed": 1775528094179,
       "keyFiles": [
         "AGENTS.md",
         "file.svg",
@@ -113,21 +110,21 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 25,
-      "lastAccessed": 1775120022481,
+      "fileCount": 35,
+      "lastAccessed": 1775528094184,
       "keyFiles": [
         "AGENTS.md",
         "check-counts.ts",
-        "db-inspect.ts",
-        "dev.js",
-        "embed-wiki.ts"
+        "check-difficulty-distribution.ts",
+        "check-distribution.ts",
+        "check-orphan-questions.ts"
       ]
     },
     "src": {
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1775120022481,
+      "lastAccessed": 1775528094184,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -136,7 +133,7 @@
       "path": "supabase",
       "purpose": null,
       "fileCount": 11,
-      "lastAccessed": 1775120022481,
+      "lastAccessed": 1775528094184,
       "keyFiles": [
         "00_DROP_ALL_TABLES.sql",
         "01_RESET_AND_SEED.sql",
@@ -148,8 +145,8 @@
     "src\\app": {
       "path": "src\\app",
       "purpose": "Application code",
-      "fileCount": 8,
-      "lastAccessed": 1775120022482,
+      "fileCount": 10,
+      "lastAccessed": 1775528094185,
       "keyFiles": [
         "AGENTS.md",
         "error.tsx",
@@ -159,8 +156,8 @@
     "src\\components": {
       "path": "src\\components",
       "purpose": "UI components",
-      "fileCount": 1,
-      "lastAccessed": 1775120022482,
+      "fileCount": 2,
+      "lastAccessed": 1775528094185,
       "keyFiles": [
         "AGENTS.md"
       ]
@@ -169,7 +166,7 @@
       "path": "src\\config",
       "purpose": "Configuration files",
       "fileCount": 3,
-      "lastAccessed": 1775120022482,
+      "lastAccessed": 1775528094185,
       "keyFiles": [
         "AGENTS.md",
         "feature-flags.ts",
@@ -179,19 +176,19 @@
     "src\\data": {
       "path": "src\\data",
       "purpose": "Data files",
-      "fileCount": 3,
-      "lastAccessed": 1775120022483,
+      "fileCount": 4,
+      "lastAccessed": 1775528094186,
       "keyFiles": [
         "AGENTS.md",
         "mock-questions.json",
-        "sample-lots.ts"
+        "patch.json"
       ]
     },
     "src\\lib": {
       "path": "src\\lib",
       "purpose": "Library code",
-      "fileCount": 15,
-      "lastAccessed": 1775120022483,
+      "fileCount": 16,
+      "lastAccessed": 1775528094186,
       "keyFiles": [
         "AGENTS.md",
         "analytics-server.ts",
@@ -201,304 +198,220 @@
   },
   "hotPaths": [
     {
-      "path": "src\\features\\wall-configurator\\types\\wall.types.ts",
-      "accessCount": 12,
-      "lastAccessed": 1775129314721,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\engine\\constants.ts",
+      "path": "supabase\\migrations",
       "accessCount": 11,
-      "lastAccessed": 1775134134562,
-      "type": "file"
+      "lastAccessed": 1775528746467,
+      "type": "directory"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\unified-wall-configurator.ts",
-      "accessCount": 9,
-      "lastAccessed": 1775129286595,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\store\\layer-defaults.ts",
-      "accessCount": 9,
-      "lastAccessed": 1775129314937,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\components\\WallConfigurator.tsx",
+      "path": "src\\lib\\actions\\quiz-v2\\start-session.ts",
       "accessCount": 8,
-      "lastAccessed": 1775128692278,
+      "lastAccessed": 1775529139503,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_types\\templates.ts",
-      "accessCount": 8,
-      "lastAccessed": 1775129287264,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step1CoreSelect.tsx",
-      "accessCount": 7,
-      "lastAccessed": 1775128584406,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\hooks\\useWallComputation.ts",
-      "accessCount": 7,
-      "lastAccessed": 1775128615729,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\store\\useWallConfigStore.ts",
-      "accessCount": 7,
-      "lastAccessed": 1775128678406,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\Consolidated Walls\\ux-ui-strategy-wall-configurator.html",
-      "accessCount": 6,
-      "lastAccessed": 1775128057551,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-10.ts",
-      "accessCount": 6,
-      "lastAccessed": 1775129149466,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\dashboard-visibility.ts",
-      "accessCount": 6,
-      "lastAccessed": 1775131642872,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step5Treatment.tsx",
+      "path": "",
       "accessCount": 5,
-      "lastAccessed": 1775128604966,
-      "type": "file"
+      "lastAccessed": 1775529003561,
+      "type": "directory"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\AreaSummaryBar.tsx",
-      "accessCount": 5,
-      "lastAccessed": 1775128692843,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\LabViewport.tsx",
+      "path": ".ai\\plans\\NIGHTWATCH_QUEUE.md",
       "accessCount": 4,
-      "lastAccessed": 1775129163621,
+      "lastAccessed": 1775529396775,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step2Geometry.tsx",
+      "path": "src\\types\\quiz-config.ts",
       "accessCount": 3,
-      "lastAccessed": 1775128198267,
-      "type": "file"
+      "lastAccessed": 1775529090754,
+      "type": "directory"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step4Sides.tsx",
+      "path": "src\\components\\testing\\hub\\HeroConfigurator.tsx",
       "accessCount": 3,
-      "lastAccessed": 1775128211169,
+      "lastAccessed": 1775529169235,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step6Finish.tsx",
+      "path": "src\\lib\\supabase\\middleware.ts",
       "accessCount": 3,
-      "lastAccessed": 1775128261910,
+      "lastAccessed": 1775529208929,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step7BOM.tsx",
+      "path": "src\\lib\\context\\tier-context.tsx",
       "accessCount": 3,
-      "lastAccessed": 1775128333112,
+      "lastAccessed": 1775529235650,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\plaster.engine.ts",
+      "path": "src",
       "accessCount": 3,
-      "lastAccessed": 1775128619457,
-      "type": "file"
+      "lastAccessed": 1775529284135,
+      "type": "directory"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_templates\\ParametricSceneRenderer.tsx",
+      "path": "src\\stores\\useQuizStore.ts",
       "accessCount": 3,
-      "lastAccessed": 1775129327968,
+      "lastAccessed": 1775529337452,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_templates\\ParametricScene.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775129328056,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\LabPanelLayout.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775135166711,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\Consolidated Walls\\unified-wall-configurator-implementation-plan.md",
+      "path": "src\\lib\\quiz",
       "accessCount": 2,
-      "lastAccessed": 1775120107039,
-      "type": "file"
+      "lastAccessed": 1775528512054,
+      "type": "directory"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\StepIndicator.tsx",
+      "path": ".ai\\plans\\implementation-database-layer.md",
       "accessCount": 2,
-      "lastAccessed": 1775120598818,
+      "lastAccessed": 1775528523254,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\index.ts",
+      "path": "src\\lib",
       "accessCount": 2,
-      "lastAccessed": 1775120645033,
-      "type": "file"
+      "lastAccessed": 1775528756273,
+      "type": "directory"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\geometry.engine.ts",
+      "path": "src\\lib\\quiz\\intelligent-routing.ts",
       "accessCount": 2,
-      "lastAccessed": 1775127761663,
+      "lastAccessed": 1775528812846,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\chb.engine.ts",
+      "path": "src\\stores\\dev-store.ts",
       "accessCount": 2,
-      "lastAccessed": 1775127761738,
+      "lastAccessed": 1775529244539,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\drywall.engine.ts",
+      "path": "src\\components\\quiz-v2\\EnduranceShell.tsx",
       "accessCount": 2,
-      "lastAccessed": 1775127762128,
+      "lastAccessed": 1775529276072,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\paint.engine.ts",
+      "path": "src\\components\\quiz-v2\\SimulationShell.tsx",
       "accessCount": 2,
-      "lastAccessed": 1775127762493,
+      "lastAccessed": 1775529298902,
       "type": "file"
     },
     {
-      "path": "prompts\\Consolidated Walls\\unified-wall-configurator.md",
+      "path": "src\\components\\quiz-v2\\StandardQuizShell.tsx",
       "accessCount": 2,
-      "lastAccessed": 1775128595638,
+      "lastAccessed": 1775529300872,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\index.ts",
+      "path": ".ai\\state\\active-tasks\\current-task.md",
       "accessCount": 2,
-      "lastAccessed": 1775128607136,
+      "lastAccessed": 1775529405276,
       "type": "file"
     },
     {
-      "path": "prompts\\Consolidated Walls\\ux-ui-strategy-wall-configurator.md",
-      "accessCount": 2,
-      "lastAccessed": 1775128620231,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_stores\\createModuleStore.ts",
-      "accessCount": 2,
-      "lastAccessed": 1775129036334,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\GeometryMesh.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775129293537,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\wall-configurator\\page.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775129304437,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\dashboard\\3d-lab\\_hooks\\useModuleInvalidate.ts",
-      "accessCount": 2,
-      "lastAccessed": 1775129310535,
-      "type": "file"
-    },
-    {
-      "path": "prompts\\Consolidated Walls\\Unified Wall Configurator Logic.md",
+      "path": ".ai\\state\\memory.md",
       "accessCount": 1,
-      "lastAccessed": 1775120095920,
+      "lastAccessed": 1775528501937,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-15.ts",
+      "path": "src\\lib\\quiz\\to-client-question.ts",
       "accessCount": 1,
-      "lastAccessed": 1775120136610,
+      "lastAccessed": 1775528531214,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_components\\GenericControlPanel.tsx",
+      "path": "src\\lib\\srs\\update.ts",
       "accessCount": 1,
-      "lastAccessed": 1775120141388,
+      "lastAccessed": 1775528531690,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\page.tsx",
+      "path": "src\\lib\\actions\\quiz-v2\\submit-answer.ts",
       "accessCount": 1,
-      "lastAccessed": 1775120145280,
+      "lastAccessed": 1775528532306,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\taxonomy.ts",
+      "path": "supabase\\migrations\\004_add_user_roles.sql",
       "accessCount": 1,
-      "lastAccessed": 1775120162535,
+      "lastAccessed": 1775528605822,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\registry\\cat-01.ts",
+      "path": "supabase\\migrations\\20260406183904_add_user_question_states.sql",
       "accessCount": 1,
-      "lastAccessed": 1775120169123,
+      "lastAccessed": 1775528645312,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\bond-pattern-comparison.ts",
+      "path": "supabase",
       "accessCount": 1,
-      "lastAccessed": 1775120179938,
+      "lastAccessed": 1775528645547,
+      "type": "directory"
+    },
+    {
+      "path": "supabase\\migrations\\20260406144507_optimize_quiz_interactions.sql",
+      "accessCount": 1,
+      "lastAccessed": 1775528659829,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\09-construction\\foundation-types.ts",
+      "path": "supabase\\migrations\\20260407_unique_constraints.sql",
       "accessCount": 1,
-      "lastAccessed": 1775120180173,
+      "lastAccessed": 1775528731415,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\engine\\packaging.engine.ts",
+      "path": "supabase\\migrations\\20260407_query_optimization.sql",
       "accessCount": 1,
-      "lastAccessed": 1775120414516,
+      "lastAccessed": 1775528780268,
       "type": "file"
     },
     {
-      "path": "src\\features\\wall-configurator\\components\\steps\\Step3Openings.tsx",
+      "path": ".ai\\plans\\implementation-auth-and-gating.md",
       "accessCount": 1,
-      "lastAccessed": 1775120645845,
+      "lastAccessed": 1775528986445,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\concrete-aggregate-visualizer.ts",
+      "path": "src\\app\\admin\\layout.tsx",
       "accessCount": 1,
-      "lastAccessed": 1775120653404,
+      "lastAccessed": 1775528995975,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\10-materials\\concrete-mix-proportions.ts",
+      "path": "src\\lib\\admin\\roles.ts",
       "accessCount": 1,
-      "lastAccessed": 1775120660017,
+      "lastAccessed": 1775529003240,
       "type": "file"
     },
     {
-      "path": "src\\app\\dashboard\\3d-lab\\_config\\modules\\08-vertical\\stairway-configurator.ts",
+      "path": "src\\app\\api\\webhooks",
       "accessCount": 1,
-      "lastAccessed": 1775120669510,
+      "lastAccessed": 1775529044793,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app\\quiz\\[mode]\\setup\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775529148428,
       "type": "file"
+    },
+    {
+      "path": "src\\app\\quiz\\[mode]\\setup\\client.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775529148883,
+      "type": "file"
+    },
+    {
+      "path": "src\\stores",
+      "accessCount": 1,
+      "lastAccessed": 1775529309044,
+      "type": "directory"
     }
   ],
   "userDirectives": []

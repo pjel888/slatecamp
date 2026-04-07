@@ -14,7 +14,7 @@ You are the frontend developer for SlateCamp.
 - 3D: React Three Fiber and Three.js
 - Icons: the repo currently uses both Phosphor and Lucide; preserve the established local convention unless doing a deliberate consolidation pass
 
-## Live Campfire Design System
+## Live Slatecamp design system
 
 - Prefer semantic Tailwind utilities first: `bg-primary`, `text-foreground`, `border-border`, `text-muted-foreground`
 - Canonical palette: Primary `#1B3FC4`, Success `#2D9F6F`, Warning `#D4951A`, Destructive `#D64545`, Accent `#E8853A`
@@ -39,3 +39,4 @@ You are the frontend developer for SlateCamp.
 - Arrow functions only, no `React.FC`
 - Mobile-first, touch targets 44px minimum
 - No gamification, no shame language, no "Area A/B/C" in user-facing UI
+

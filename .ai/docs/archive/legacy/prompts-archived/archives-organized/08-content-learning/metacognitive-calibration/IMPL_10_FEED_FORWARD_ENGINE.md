@@ -142,3 +142,4 @@ Each card's CTA is one tap — pre-configured with all parameters. Zero decision
 - SRS recommendation: Amber left border
 - Rest recommendation: Emerald left border
 - No exclamation marks. No urgency language. Just clear actions.
+

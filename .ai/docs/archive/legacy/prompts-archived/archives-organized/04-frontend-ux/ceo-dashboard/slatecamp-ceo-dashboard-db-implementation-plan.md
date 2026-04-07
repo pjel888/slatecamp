@@ -56,7 +56,7 @@ These tables are **already in production** and will be queried by the CEO Dashbo
 |-------|------------------|-----------------|
 | `auth.users` | Total registered user count | `id`, `created_at` |
 | `profiles` | CEO auth gate, role assignment | `id`, `role`, `display_name` |
-| `user_subscriptions` | MRR, paying user count, ARPU, churn | `user_id`, `plan`, `status`, `amount`, `current_period_start`, `current_period_end`, `stripe_customer_id`, `created_at`, `cancelled_at` |
+| `user_subscriptions` | MRR, paying user count, ARPU, churn | `user_id`, `plan`, `status`, `amount`, `current_period_start`, `current_period_end`, `lemon_squeezy_customer_id`, `created_at`, `cancelled_at` |
 | `user_global_stats` | Engagement, churn risk, TTV, retention | `user_id`, `total_sessions`, `total_questions`, `avg_score`, `days_active`, `current_streak`, `churn_risk_score`, `score_velocity_7d`, `first_session_at`, `last_session_at`, `acquisition_source`, `converted_at` |
 | `readiness_score_snapshots` | Score trajectory, score at conversion | `user_id`, `score`, `snapshot_date` |
 | `quiz_sessions` | DAU/MAU, activation, diagnostic completion | `user_id`, `mode`, `score`, `started_at`, `completed_at` |
@@ -1212,3 +1212,4 @@ MATERIALIZED VIEWS        │
 ---
 
 > **This document is the single source of truth for all database work supporting the CEO Dashboard. Every table, view, function, policy, and index is traceable to a specific metric requirement in the source documents. No schema change for `/ceo` should happen outside this plan without updating it first.**
+

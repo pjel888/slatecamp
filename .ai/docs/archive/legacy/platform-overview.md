@@ -13,7 +13,7 @@
 
 - **Target Audience:** ALE reviewees, returning reviewers, architecture undergraduates, DAE apprentices, practicing architects.
 - **Core Value Proposition:** Transitioning study from passive memorization to active mastery through adaptive quizzing, spatial 3D visualization, and data-driven readiness scoring. "Know you'll win."
-- **Revenue Model:** Tiered subscription (Free, Camp ₱499-799/mo, Insurance ₱3,999/6mo, Institutional bulk) managed via Stripe (international) and PayRex (Philippines — GCash, Maya, bank transfers).
+- **Revenue Model:** Tiered subscription (Free, Camp ₱499-799/mo, Insurance ₱3,999/6mo, Institutional bulk) managed via LemonSqueezy (international) and PayRex (Philippines — GCash, Maya, bank transfers).
 
 ---
 
@@ -29,7 +29,7 @@
 | **Editor**          | Tiptap (notes), MDX (wiki)                                            |
 | **Charts**          | Recharts                                                              |
 | **AI**              | Anthropic SDK (Claude), RAG pipeline                                  |
-| **Payments**        | Stripe (global) + PayRex (Philippines)                                |
+| **Payments**        | LemonSqueezy (global) + PayRex (Philippines)                                |
 | **Validation**      | Zod                                                                   |
 | **State**           | Zustand (quiz, lab, notifications)                                    |
 | **Package Manager** | Bun (`bun.lock`)                                                      |
@@ -103,7 +103,7 @@ Trail types: time-gated, subject mastery, code deep-dive, remediation, exam simu
 - **CMS** — Unified content editor (articles + questions + EI prompts), taxonomy editor, pipeline management, SME review queue
 - **CEO Dashboard** — Financial (MRR, ARR, burn, runway), unit economics (CAC, LTV, churn), cohort retention, team management
 - **Developer Hub** — Component registry, design system docs, API reference, DB viewer, test data tools
-- **Payments** — Stripe + PayRex with paywall gating, daily question cap for free tier
+- **Payments** — LemonSqueezy + PayRex with paywall gating, daily question cap for free tier
 
 ---
 
@@ -225,3 +225,4 @@ All tables have RLS enabled. `profiles` PK is `id` (NOT `user_id`).
 
 **End of Audit Report.**
 _For detailed architecture, see `CURRENT_ARCHITECTURE.md`. For design tokens, see `05 — Design.md`._
+

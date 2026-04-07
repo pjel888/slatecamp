@@ -6,7 +6,7 @@
 
 ---
 
-## Campfire Design System — Absolute Rules
+## Slatecamp design system — Absolute Rules
 
 ### Color Tokens (Use Only These)
 
@@ -206,3 +206,4 @@ return <div dangerouslySetInnerHTML={{ __html: sanitized }} />
 ---
 
 *Extract tokens from `src/app/globals.css` for authoritative values. This file summarizes rules for agent reference.*
+

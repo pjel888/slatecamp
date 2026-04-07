@@ -2764,8 +2764,8 @@ export type Database = {
           payrex_reference: string | null
           readiness_score_at_conversion: number | null
           status: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id: string | null
-          stripe_subscription_id: string | null
+          lemon_squeezy_customer_id: string | null
+          lemon_squeezy_subscription_id: string | null
           subscription_id: string
           tier: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at: string | null
@@ -2785,8 +2785,8 @@ export type Database = {
           payrex_reference?: string | null
           readiness_score_at_conversion?: number | null
           status?: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id?: string | null
-          stripe_subscription_id?: string | null
+          lemon_squeezy_customer_id?: string | null
+          lemon_squeezy_subscription_id?: string | null
           subscription_id?: string
           tier?: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at?: string | null
@@ -2806,8 +2806,8 @@ export type Database = {
           payrex_reference?: string | null
           readiness_score_at_conversion?: number | null
           status?: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id?: string | null
-          stripe_subscription_id?: string | null
+          lemon_squeezy_customer_id?: string | null
+          lemon_squeezy_subscription_id?: string | null
           subscription_id?: string
           tier?: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at?: string | null

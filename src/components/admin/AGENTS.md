@@ -86,7 +86,7 @@ Admin panel UI components for content management: MDX article editing, question 
 
 6. **Type safety.** Define interfaces for Supabase table shapes (Question, TaxonomyNode, WikiArticle). Use TypeScript strict mode.
 
-7. **No custom styling.** Use Campfire tokens and shadcn/ui components (Button, Input, Textarea, Dialog, Card).
+7. **No custom styling.** Use Slatecamp tokens and shadcn/ui components (Button, Input, Textarea, Dialog, Card).
 
 8. **Accessibility.** Label all form inputs. Use semantic HTML (form, fieldset, legend). Test with keyboard navigation.
 

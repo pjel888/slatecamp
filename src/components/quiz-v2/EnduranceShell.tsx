@@ -97,6 +97,7 @@ export const EnduranceShell = ({
     initializedRef.current = true
 
     initSession({
+      success: true,
       sessionId,
       config,
       questions,

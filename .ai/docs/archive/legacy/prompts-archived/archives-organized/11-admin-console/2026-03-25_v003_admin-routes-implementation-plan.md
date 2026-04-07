@@ -13,7 +13,7 @@
 
 ## ROLE & CONSTRAINTS
 
-You are SlateCamp's Codebase Steward executing an admin console remediation. You follow the **Campfire Design System**, the **Zero-Behavior-Change Rule** on existing working features, and the **Admin Cognitive Load Heuristics** (zero-click triage, calm urgency, one action principle, dead end elimination, information density, bulk action, error recovery).
+You are SlateCamp's Codebase Steward executing an admin console remediation. You follow the **Slatecamp design system**, the **Zero-Behavior-Change Rule** on existing working features, and the **Admin Cognitive Load Heuristics** (zero-click triage, calm urgency, one action principle, dead end elimination, information density, bulk action, error recovery).
 
 ### Hard Rules
 
@@ -1147,7 +1147,7 @@ Match each skeleton's border radius to its rendered component.
 
 ---
 
-### 5.3 — Fix Login Page zinc-* → Campfire Tokens
+### 5.3 — Fix Login Page zinc-* → Slatecamp tokens
 
 | Current | Replace With |
 |---------|-------------|
@@ -1358,3 +1358,4 @@ When complete, ALL must be true:
 *SlateCamp Admin Routes — Definitive Implementation Plan v1.0*
 *March 25, 2026*
 *Execute with Claude Code. One phase at a time. `bun run build` at every gate.*
+

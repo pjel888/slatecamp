@@ -22,7 +22,7 @@ Product documentation, feature plans, and technical specifications for SlateCamp
 | File | Description |
 |------|-------------|
 | `2026-03-17-3d-lab-library.md` | 3D Lab module library expansion plan |
-| `2026-03-17-campfire-rebrand.md` | Campfire design system rebrand plan (7 phases, token map) |
+| `2026-03-17-campfire-rebrand.md` | Slatecamp design system rebrand plan (7 phases, token map) |
 | `2026-03-17-design-system-overhaul.md` | Design system overhaul and component audit |
 | `2026-03-17-module-expansion-146.md` | Module expansion to 146 learning modules |
 | `2026-03-17-nbcp-envelope-generator.md` | NBCP building envelope generator feature plan |
@@ -57,6 +57,7 @@ Product documentation, feature plans, and technical specifications for SlateCamp
 ### Internal
 
 - `.claude/docs/` -- Product Requirement Documents (PRDs) and blueprints
-- `CLAUDE.md` (root) -- Campfire design system and voice guide constraints
+- `CLAUDE.md` (root) -- Slatecamp design system and voice guide constraints
 
 <!-- MANUAL: -->
+

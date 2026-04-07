@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useCallback, useState, useEffect } from 'react'
 import { SetupFlow } from '@/components/quiz-v2/setup/SetupFlow'
 import { PredictionSlider, shouldShowPrediction } from '@/components/quiz-v2/PredictionSlider'
-import { CampfireLoader } from '@/components/shared/CampfireLoader'
+import { SlatecampLoader } from '@/components/shared/SlatecampLoader'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
 import { useQuizStore } from '@/stores/useQuizStore'
@@ -67,7 +67,7 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
   }
 
   if (phase === 'creating' || phase === 'navigating') {
-    return <CampfireLoader />
+    return <SlatecampLoader />
   }
 
   if (phase === 'prediction' && createdSessionId) {

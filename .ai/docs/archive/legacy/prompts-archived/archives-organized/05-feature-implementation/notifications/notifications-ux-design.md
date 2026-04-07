@@ -940,3 +940,4 @@ Accessible from the "Settings" button on the notifications page header.
 3. "What's one notification you wish you received that you don't?" (open-ended)
 
 **Month 2:** Analyze behavioral data against the success metrics table. Adjust notification frequency, types, and copy based on findings.
+

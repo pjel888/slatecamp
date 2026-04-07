@@ -110,7 +110,7 @@ For each external service:
 - Files that interact with it
 - Error handling approach
 
-Common ones to look for: Supabase, Stripe, PostHog, Anthropic, Vercel, email providers, file storage, CDNs.
+Common ones to look for: Supabase, LemonSqueezy, PostHog, Anthropic, Vercel, email providers, file storage, CDNs.
 
 ### SECTION 10: STYLING & DESIGN SYSTEM
 

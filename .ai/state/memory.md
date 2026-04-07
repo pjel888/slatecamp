@@ -369,7 +369,7 @@
 - Added real stories for:
   - `action-card`
   - `breadcrumb`
-  - `CampfireLoader`
+  - `SlatecampLoader`
   - `DashboardHeader`
   - `DashboardPageSkeleton`
   - `data-table`
@@ -488,7 +488,7 @@
 ### New Architectural Directives (Testing & Auth)
 - **Zero-Tolerance for Fatal Auth Action Errors:** Server actions (like `startSession`) must NEVER throw native `Error` objects for tier validation. Doing so crashes the Next.js router. Actions must return a structured response (e.g., `{ error: 'requires_pro_tier' }`) that UI components can catch to render graceful paywalls.
 - **Global Subscription Context (No Prop-Drilling):** User tier data must be fetched and cached via a centralized `SubscriptionProvider` (React Context) at the root layout. Passing `userTier` down via component props from the server to deep client files like `ReviewHub.tsx` is strictly forbidden.
-- **Zustand Hydration Safeguards:** Client components reading from `localStorage` persisted stores (like `useQuizStore`) MUST gate their renders behind `_hasHydrated` booleans. Rendering default state on the server and flipping to persisted state on the client without a fallback (e.g., `<CampfireLoader />`) causes severe hydration vulnerabilities.
+- **Zustand Hydration Safeguards:** Client components reading from `localStorage` persisted stores (like `useQuizStore`) MUST gate their renders behind `_hasHydrated` booleans. Rendering default state on the server and flipping to persisted state on the client without a fallback (e.g., `<SlatecampLoader />`) causes severe hydration vulnerabilities.
 - **Timer Render Isolation:** The `useQuizTimerStore` ticks every 1000ms. Any component subscribing to it must use strictly scoped selectors (e.g., `useShallow((s) => s.elapsedMs)`) to prevent full-tree re-render cascades in the `StandardQuizShell`.
 
 ### New Architectural Directives (Full-Stack Optimization & Resilience)
@@ -521,3 +521,4 @@
 
 *Add verified facts here. Every entry must be traceable to a source file.*
 $memoryContent
+

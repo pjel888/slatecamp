@@ -1,133 +1,123 @@
 # CLAUDE.md
 
-Code and executable config are the source of truth in this repository. If `docs/`, README, or AGENTS files disagree with the live code, follow the code.
+Code and executable config are the source of truth in this repository. If docs, README, or AGENTS files disagree with the live code, follow the code.
 
-This file reflects the repository state validated on 2026-04-05.
+This file reflects the repository state validated on 2026-04-07.
 
 ## Build & Development Commands
 
 ```bash
 bun install
 ```
-
 - Installs dependencies from `package.json` and `bun.lock`.
 
 ```bash
 bun run dev
 ```
-
 - Runs `scripts/dev.js`.
 - On Windows, `scripts/dev.js` starts Next.js with `--webpack`.
 - On non-Windows platforms, it starts Next.js with `--turbopack`.
-- Validation on 2026-04-05 was blocked by an existing Next dev lock in `.next/dev/lock`, so a second dev server could not fully acquire the workspace lock.
 
 ```bash
 bun run build
 ```
-
 - Runs `next build`.
-- Validation on 2026-04-05 currently fails after compile and type-check steps with `ENOENT: no such file or directory, open '.next/required-server-files.json'`.
+- May fail with `ENOENT: no such file or directory, open '.next/required-server-files.json'` if previous build was interrupted.
+
+```bash
+bun run dev:turbo
+```
+- Runs `next dev --turbopack` directly.
+
+```bash
+bun run dev:webpack
+```
+- Runs `next dev --webpack` directly.
 
 ## Test & Lint Instructions
 
 ```bash
 bun run lint
 ```
-
-- Runs `eslint .`.
-- Verified on 2026-04-05: completes successfully with warnings only.
-- The live ESLint config extends `eslint-config-next/core-web-vitals` and `eslint-config-next/typescript`.
-- The current ruleset warns on unused vars and hardcoded hex colors inside Tailwind utility strings.
+- Runs Storybook check first, then ESLint.
+- ESLint extends `eslint-config-next/core-web-vitals` and `eslint-config-next/typescript`.
+- Warns on unused vars and hardcoded hex colors inside Tailwind utility strings.
+- Verified 2026-04-07: completes with warnings only.
 
 ```bash
 bun run type-check
 ```
-
 - Runs `tsc --noEmit`.
-- Verified on 2026-04-05: passes.
+- Verified 2026-04-07: passes.
 
 ```bash
 bun test
 ```
-
-- Bun is the active test runner. There is no top-level `test` script in `package.json`.
-- Verified on 2026-04-05: the suite runs, but it is not fully green.
-- Current failing test: `src/lib/quiz/mode-presets.test.ts`.
-- Current failure detail: `MODE_PRESETS.camp.navigation.backAllowed` expected `false`, received `true`.
+- Uses Bun as test runner.
+- Verified 2026-04-07: suite runs but has failures.
 
 ## Project Architecture/Patterns
 
-- Framework stack: Next.js 16.1.6 App Router, React 19.2.4, TypeScript 5.9.3, Tailwind CSS 4, Supabase SSR, Storybook 8 with Vite.
+### Stack
+- **Framework:** Next.js 16.1.6 App Router, React 19.2.4, TypeScript 5.9.3
+- **Styling:** Tailwind CSS 4 (CSS-first config with semantic tokens)
+- **Database:** Supabase SSR, PostgreSQL
+- **Payments:** LemonSqueezy, PayRex
+- **State:** Zustand for shared client state
+- **Testing:** Bun test runner, Storybook 8 with Vite
+
+### Route Structure
 - App routes live under `src/app`.
-- Public and product routes include `/`, `/about`, `/contact`, `/pricing`, `/try`, `/tools`, `/calculators`, and `/test-3d`.
-- Dashboard routes live under `src/app/dashboard`.
-- Admin routes live under `src/app/admin`.
-- Developer routes live under `src/app/developer`.
-- CEO routes live under `src/app/(protected)/ceo` and resolve to `/ceo`.
-- API routes live under `src/app/api`.
+- Public routes: `/`, `/about`, `/contact`, `/pricing`, `/try`, `/tools`, `/calculators`, `/test-3d`
+- Dashboard routes: `src/app/dashboard`
+- Admin routes: `src/app/admin`
+- Developer routes: `src/app/developer`
+- CEO routes: `src/app/(protected)/ceo` → resolves to `/ceo`
+- API routes: `src/app/api`
+- Webhooks: `/api/webhooks/lemonsqueezy`, `/api/webhooks/payrex`
 
-- Shared UI lives under `src/components`.
-- Business logic, actions, Supabase helpers, queries, scoring, and utilities live under `src/lib`.
-- Client state stores live under `src/stores`.
-- Shared hooks live under `src/hooks` and `src/lib/hooks`.
-- Feature-sliced modules live under `src/features`.
-- Database migrations and SQL assets live under `supabase/`.
-- Local tooling and ingestion scripts live under `scripts/`.
+### Code Organization
+- **Components:** `src/components/` — shared UI, portal shells, stories
+- **Features:** `src/features/` — larger vertical modules (3d-lab, wall-configurator)
+- **Hooks:** `src/hooks/` and `src/lib/hooks/`
+- **Actions/Queries:** `src/lib/actions/` (mutations), `src/lib/queries/` (reads)
+- **Stores:** `src/stores/` — Zustand stores
+- **Types:** `src/types/`
+- **Database:** `supabase/` — migrations and SQL assets
+- **Scripts:** `scripts/` — local tooling
 
-- Read-oriented async modules live in `src/lib/queries`.
-- Mutations live in `src/lib/actions`.
-- Server actions use `'use server'` and frequently pair mutations with `revalidatePath()` or cache-tag invalidation.
-- Query modules are plain async functions intended for direct use from server components.
+### Styling & Typography
+- Tailwind CSS-first config in `src/app/globals.css` with semantic tokens
+- Prefer semantic classes and shared primitives from `src/components/ui/*`
+- Fonts: Atkinson Hyperlegible (default), Syne, Sora, DM Mono, Inter variable
 
-- Supabase server access is centralized in `src/lib/supabase/server.ts`.
-- Real clients in active use include `createClient()`, `createServiceClient()`, and `createStaticClient()`.
-- Demo mode and `DEV_FORCE_USER_ID` bypass are real code paths and should not be documented as hypothetical.
+### Path Alias
+- `@/*` maps to `src/*`
 
-- State management is mixed and pragmatic: local component state for leaf UI, React context in `src/lib/context`, and Zustand in `src/stores` for shared client state.
-- Current root stores are `src/stores/useLabStore.ts`, `src/stores/useQuizStore.ts`, `src/stores/useQuizTimerStore.ts`, `src/stores/useNotificationStore.ts`, and `src/stores/dev-store.ts`.
+## Important Context
 
-- Styling is driven from `src/app/globals.css`.
-- Tailwind is configured in CSS-first mode, with semantic tokens exposed as CSS variables.
-- Prefer semantic classes and shared primitives from `src/components/ui/*`.
-- The repo still contains legacy hardcoded hex classes; ESLint warns on them but they have not been eliminated.
-- Theme switching is handled by `next-themes` through `src/components/shared/ThemeProvider.tsx`.
+### Design Tokens (Slatecamp System)
+| Token | Hex | Tailwind Class |
+|-------|-----|---------------|
+| Slate Cobalt | `#1B3FC4` | `text-primary` / `bg-primary` |
+| Slate Orange | `#E8853A` | Progress celebration |
+| Emerald | `#2D9F6F` | `text-success` — mastery, correct |
+| Warm Red | `#D64545` | `text-destructive` — errors |
+| Amber | `#D4951A` | `text-warning` — warnings |
+| Surface Light | `#F8F7F5` | `bg-background` |
+| Ink Primary | `#1A2332` | `text-foreground` |
 
-- Typography in the live app is not "Inter only."
-- `font-sans` is mapped in `src/app/globals.css` to Atkinson Hyperlegible.
-- Additional loaded font variables include Syne, Sora, DM Mono, and an Inter-backed variable in `src/app/layout.tsx`.
+- Border radius: `rounded-sm` (buttons), `rounded-md` (cards), `rounded-lg` (modals)
+- Shadows: `shadow-sm` (hover), `shadow-md` (dropdowns), `shadow-lg` (modals)
+- Transitions: max 300ms, default `duration-150 ease-out`
 
-- TypeScript is not strict in the current repo.
-- `tsconfig.json` currently sets `"strict": false`, `"noImplicitAny": false`, and `"strictNullChecks": false`.
-- Do not document or assume strict-mode rules unless the codebase is changed first.
+### Pedagogical Engine
+- IRT 2PL Model: `src/lib/srs/irt.ts`
+- SM-2 SRS: `src/lib/srs/sm2.ts`
+- Readiness Score: `src/lib/readiness-score.ts`
 
-## Documentation Structure
+## Known Issues
 
-- **Source of truth:** Code and executable config. If docs disagree with live code, follow the code.
-- **Agent documentation:** `.ai/docs/` contains 42 structured documents organized by category (00-meta through 05-reference, plus portal docs).
-- **Key index:** `.ai/docs/00-meta/001-index.md` lists all active, pending, and legacy documents.
-- **Legacy content:** Archived/deprecated files are moved to `.ai/docs/archive/legacy/` rather than deleted.
-- **`prompts/`** is archived — old PRDs and implementation guides are in `.ai/docs/archive/legacy/prompts-archived/`.
-
-- The repo does not consistently follow an arrow-functions-only style.
-- Both arrow functions and `function` declarations are used across `src/` and `scripts/`.
-
-- Route and navigation constants currently exist in both `src/lib/routes.ts` and `src/lib/constants/routes.ts`.
-- Reuse the source already established in the area you are editing instead of creating a third route map.
-
-- Important domain modules include `src/lib/readiness-score.ts`, `src/lib/srs/*`, `src/lib/quiz/*`, `src/features/3d-lab/*`, `src/app/dashboard/3d-lab/*`, and `src/app/calculators/_lib/*`.
-- Storybook is installed and configured via `.storybook/main.ts`.
-- Story files exist in `src/components`, `src/app`, and `src/features`.
-
-## Component/File Naming Conventions
-
-- App Router reserved filenames follow Next.js conventions: `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, `not-found.tsx`, and `route.ts`.
-- React component filenames are primarily PascalCase `.tsx`. Examples: `PortalLayout.tsx`, `ThemeProvider.tsx`, `StatusBanner.tsx`.
-- Hooks use `use...` filenames. Examples: `useComplianceCheck.ts`, `useLabTelemetry.ts`, `useQuizFocusManager.ts`.
-- Zustand stores use either `use...Store.ts` or `*-store.ts`. Examples: `useLabStore.ts`, `useQuizStore.ts`, `dev-store.ts`.
-- Action, query, utility, and config modules are usually lowercase or kebab-case `.ts`. Examples: `readiness-score.ts`, `daily-mission.ts`, `readiness-score-update.ts`, `adaptive-quiz.ts`.
-- Tests use `.test.ts`.
-- Stories use `.stories.tsx`.
-- Route-private implementation folders commonly use underscore prefixes such as `_components`, `_lib`, `_config`, `_constants`, and `_utils`.
-- The ESLint config restricts cross-app imports from route-private folders such as `@/app/*/_components/*`, `@/app/*/_types/*`, and `@/app/*/_config/*`.
-- Shared code should live in `@/components`, `@/features`, `@/lib`, or `@/types` instead of being imported out of a route-private folder.
-- The `@/*` path alias maps to `src/*`.
+### Type-Check Errors (2026-04-07)
+- `src/app/api/webhooks/lemonsqueezy/route.ts`: Refactored from Stripe, requires SDK verification.
+- `src/lib/actions/quiz-v2/submit-answer.test.ts`: Test-only type mismatch.

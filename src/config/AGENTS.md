@@ -28,7 +28,7 @@ Application configuration and feature flag definitions. Provides portal configur
 
 - `as const satisfies Record<string, ...>` for type-safe keys on both portals and flags
 - `PortalKey` and `FeatureFlagKey` types derived from `keyof typeof` their respective const objects
-- Portal colors use hex values matching the Campfire design system
+- Portal colors use hex values matching the Slatecamp design system
 
 ## Dependencies
 

@@ -409,3 +409,4 @@ RESET role;
 
 *Document version: 2026-03-26 · Pre-implementation baseline*
 *Regenerate by running the audit queries in section 1 after any RLS changes.*
+

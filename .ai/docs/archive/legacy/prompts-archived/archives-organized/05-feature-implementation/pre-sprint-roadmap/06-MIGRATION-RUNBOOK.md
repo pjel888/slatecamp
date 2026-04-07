@@ -346,3 +346,4 @@ Some migrations must be applied in order due to FK dependencies:
 
 *Document version: 2026-03-26*
 *Update after each migration is applied — mark as APPLIED with date.*
+

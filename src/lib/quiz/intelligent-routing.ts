@@ -17,13 +17,13 @@ interface RoutingOptions {
   difficultyRange?: { min: number; max: number } | null
 }
 
-export async function selectQuestionsWithRouting({
+export const selectQuestionsWithRouting = async ({
   supabase,
   userId,
   topicIds,
   questionCount,
   difficultyRange,
-}: RoutingOptions) {
+}: RoutingOptions) => {
   // 1. Calculate Quotas
   const unseenQuota = Math.floor(questionCount * 0.6)
   const remediationQuota = Math.floor(questionCount * 0.3)
@@ -31,16 +31,21 @@ export async function selectQuestionsWithRouting({
 
   const srCutoff = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString()
 
-  // Pre-fetch state IDs to avoid passing query builders to .in()
+  // 2. Fetch Unseen Questions (60%) — server-side filtering via RPC
+  //    Avoids passing massive interacted-ID arrays through PostgREST
+  const { data: unseenQuestions } = await supabase.rpc('get_unseen_questions', {
+    p_user_id: userId,
+    p_topic_ids: topicIds,
+    p_limit: unseenQuota,
+    p_difficulty_min: difficultyRange?.min ?? null,
+    p_difficulty_max: difficultyRange?.max ?? null,
+  })
+
+  // 3. Fetch Remediation + SR state IDs (these are bounded sets, safe to pass as arrays)
   const [
-    { data: interacted },
     { data: remediationStates },
-    { data: srStates }
+    { data: srStates },
   ] = await Promise.all([
-    supabase
-      .from('user_interactions')
-      .select('question_id')
-      .eq('user_id', userId),
     supabase
       .from('user_question_states')
       .select('question_id')
@@ -51,33 +56,13 @@ export async function selectQuestionsWithRouting({
       .select('question_id')
       .eq('user_id', userId)
       .eq('last_is_correct', true)
-      .lt('last_seen_at', srCutoff)
+      .lt('last_seen_at', srCutoff),
   ])
 
-  const interactedIds = interacted?.map(i => i.question_id) || []
   const remediationIds = remediationStates?.map(i => i.question_id) || []
   const srIds = srStates?.map(i => i.question_id) || []
 
-  // 2. Fetch Unseen Questions (60%)
-  let unseenQuery = supabase
-    .from('questions')
-    .select('question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, metadata')
-    .in('topic_id', topicIds)
-    .limit(unseenQuota)
-
-  if (interactedIds.length > 0) {
-    unseenQuery = unseenQuery.not('question_id', 'in', `(${interactedIds.join(',')})`)
-  }
-
-  if (difficultyRange) {
-    unseenQuery = unseenQuery
-      .gte('difficulty', difficultyRange.min)
-      .lt('difficulty', difficultyRange.max)
-  }
-
-  const { data: unseenQuestions } = await unseenQuery
-
-  // 3. Fetch Remediation Questions (30%)
+  // 4. Fetch Remediation Questions (30%)
   let remediationQuestions: any[] = []
   if (remediationIds.length > 0) {
     let remediationQuery = supabase
@@ -97,7 +82,7 @@ export async function selectQuestionsWithRouting({
     remediationQuestions = remData || []
   }
 
-  // 4. Fetch Spaced Repetition Questions (10%)
+  // 5. Fetch Spaced Repetition Questions (10%)
   let srQuestions: any[] = []
   if (srIds.length > 0) {
     let srQuery = supabase
@@ -117,29 +102,23 @@ export async function selectQuestionsWithRouting({
     srQuestions = srData || []
   }
 
-  // 5. Consolidate Pool & Fill Gaps
+  // 6. Consolidate Pool & Fill Gaps
   let pool = [
     ...(unseenQuestions ?? []),
     ...(remediationQuestions ?? []),
     ...(srQuestions ?? []),
   ]
 
-  // If pool is short, fill with ANY unseen questions (no difficulty filter) or random from subjects
+  // If pool is short, fill with fallback questions via server-side RPC
   if (pool.length < questionCount) {
-    const existingIds = new Set(pool.map(q => q.question_id))
+    const existingIds = pool.map(q => q.question_id)
     const needed = questionCount - pool.length
 
-    let fallbackQuery = supabase
-      .from('questions')
-      .select('question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, metadata')
-      .in('topic_id', topicIds)
-      .limit(needed)
-
-    if (existingIds.size > 0) {
-      fallbackQuery = fallbackQuery.not('question_id', 'in', `(${Array.from(existingIds).join(',')})`)
-    }
-
-    const { data: fallbackQuestions } = await fallbackQuery
+    const { data: fallbackQuestions } = await supabase.rpc('get_fallback_questions', {
+      p_topic_ids: topicIds,
+      p_exclude_ids: existingIds.length > 0 ? existingIds : null,
+      p_limit: needed,
+    })
 
     if (fallbackQuestions) {
       pool.push(...fallbackQuestions)

@@ -194,7 +194,7 @@ The barrel `index.ts` carries a `@deprecated` notice. The v2 system (`quiz-v2/`)
 
 ### C4. Loading Spinner Gap (29 files)
 
-**Problem:** `CampfireLoader` is full-page-only (`fixed inset-0`). No inline spinner component exists. 29 files roll their own `animate-spin` divs.
+**Problem:** `SlatecampLoader` is full-page-only (`fixed inset-0`). No inline spinner component exists. 29 files roll their own `animate-spin` divs.
 
 **Resolution:** Add `src/components/ui/spinner.tsx` — inline spinner with `size` prop. Then migrate 29 files.
 
@@ -503,3 +503,4 @@ SlateCamp's codebase contains **590+ component files** across `src/components/`,
 - [ ] Promote `components/3d-lab/` to `features/3d-lab/`
 - [ ] Codemod pass: replace inline card divs with `<Card>` across 92 files
 - [ ] Codemod pass: replace inline eyebrow classes with `<Eyebrow>` across 102 files
+

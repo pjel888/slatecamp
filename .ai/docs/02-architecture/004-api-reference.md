@@ -109,7 +109,7 @@ export const getUserQuizSessions = async (userId: string) => {
 
 | Route | Method | Purpose |
 |-------|--------|---------|
-| `/api/webhooks/stripe` | POST | Stripe webhook handler |
+| `/api/webhooks/lemonsqueezy` | POST | LemonSqueezy webhook handler |
 | `/api/webhooks/payrex` | POST | Payrex webhook handler |
 
 ### Admin Endpoints

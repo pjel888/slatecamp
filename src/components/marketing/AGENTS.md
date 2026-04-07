@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Marketing and landing page components for SlateCamp. Contains hero sections, pricing tiers, testimonials, feature grids, and promotional sections. All components follow the Campfire design system with warm, inviting aesthetics and growth-framed messaging.
+Marketing and landing page components for SlateCamp. Contains hero sections, pricing tiers, testimonials, feature grids, and promotional sections. All components follow the Slatecamp design system with warm, inviting aesthetics and growth-framed messaging.
 
 ## Key Files
 
@@ -36,7 +36,7 @@ Marketing and landing page components for SlateCamp. Contains hero sections, pri
 
 ### Working In This Directory
 
-- **Design System**: All colors from Campfire palette (Camp Cobalt #1B3FC4, Camp Orange #E8853A, Emerald #2D9F6F, Warm Red #D64545, Amber #D4951A)
+- **Design System**: All colors from Slatecamp palette (Camp Cobalt #1B3FC4, Camp Orange #E8853A, Emerald #2D9F6F, Warm Red #D64545, Amber #D4951A)
 - **Typography**: Inter font, minimum 11px text size, never below
 - **Animations**: Use Framer Motion with max 300ms duration, default ease-out
 - **Voice**: Growth-framed messaging (not fear-based), specific CTAs, warm and supportive tone

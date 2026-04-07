@@ -80,7 +80,7 @@ The dashboard is the **hub** of SlateCamp. It must never compromise on state per
 
 **Language:** Growth-framed ("42 topics covered" not "58 remaining"). Avoid "weakness," "gap," "behind," "grind," "dominate." Use "developing skill," "area to revisit," "master," "practice session."
 
-**Campfire colors:**
+**Slatecamp colors:**
 - Readiness thresholds: red (#D64545) <40%, amber (#E8853A) <70%, green (#2D9F6F) >=70%
 - Heatmap nodes: mastered (green), familiar (amber), danger (red with pulse), unexplored (gray), thin_coverage (gray + ring)
 - Timer: primary (blue) normally, amber when <=20% remaining
@@ -118,7 +118,7 @@ The dashboard is the **hub** of SlateCamp. It must never compromise on state per
 - `next/link`, `next/image` -- Next.js primitives
 - `next/navigation` -- useRouter, usePathname for quiz flow
 
-## Campfire Design System
+## Slatecamp Design System
 
 ### Colors & Styling
 

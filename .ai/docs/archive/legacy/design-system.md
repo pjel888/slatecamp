@@ -159,3 +159,4 @@ The codebase still contains some intentional compatibility drift:
 - Multiple display fonts are loaded even though older docs described a single-font system
 
 That drift should be documented clearly rather than hidden. Future cleanups should simplify the system, but `.ai` docs should describe the live implementation first.
+

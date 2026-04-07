@@ -310,7 +310,7 @@ The following table defines how each type of code violation is visualized in the
 
 #### Combined/Conflict Overlays
 When two laws set contradictory requirements for the same dimension:
-- A **striped overlay** appears on the affected element: diagonal stripes alternating in the two conflicting laws' colors
+- A **lemonsqueezyd overlay** appears on the affected element: diagonal lemonsqueezys alternating in the two conflicting laws' colors
 - The Conflict Banner in the right panel activates
 - The 3D element tooltip shows: `CONFLICT: PD 1096 requires ≤200mm / BP 220 allows ≤250mm`
 

@@ -18,7 +18,7 @@ Analysis of three source documents (product spec, HTML prototype, implementation
 | Ink Secondary | `#4A5568` | `#4A4A4A` | Use `#4A5568` — per Campfire spec |
 | Ink Tertiary/Muted | `#8896A7` | `#8A8780` | Use `#8896A7` — per Campfire spec |
 
-**Action**: All implementation MUST use Campfire tokens from `globals.css`. Prototype colors are reference only.
+**Action**: All implementation MUST use Slatecamp tokens from `globals.css`. Prototype colors are reference only.
 
 ### 1.2 Typography Conflicts
 
@@ -661,3 +661,4 @@ Reuse from existing:
 | 6 | Extended Practice + analytics visualizations | 1 week | Phase 4 |
 
 **Key change from original plan**: Phase 4 (visualizations) moved AFTER Phase 5 (now Phase 6) because PressureGapDisplay requires simulation data. Schema migrations extracted to Phase 0 to unblock everything.
+

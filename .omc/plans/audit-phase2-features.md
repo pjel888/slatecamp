@@ -193,9 +193,9 @@
 | * | `/api/cron/blindspot-scan` | Cron: blindspot scan |
 | * | `/api/cron/compute-signals` | Cron: compute engagement signals |
 | * | `/api/debug-taxonomy` | Debug: taxonomy viewer |
-| * | `/api/payments/checkout` | Stripe/PayRex checkout |
+| * | `/api/payments/checkout` | LemonSqueezy/PayRex checkout |
 | * | `/api/webhooks/payrex` | PayRex webhook |
-| * | `/api/webhooks/stripe` | Stripe webhook |
+| * | `/api/webhooks/lemonsqueezy` | LemonSqueezy webhook |
 | * | `/auth/callback` | Supabase OAuth callback |
 
 ### 1.7 Summary Counts
@@ -558,7 +558,7 @@ Only 4 not-found files exist:
 | **Spaced Repetition** | SRS scheduling | **Implemented** | 70% | `srs-review.ts`, `SrsReviewWidget`, dashboard integration |
 | **Performance Tracking** | Historical performance | **Excellent** | 90% | Readiness score, streak, mastery weights, session history |
 | **Personalized Recommendations** | Smart suggestions | **Strong** | 80% | Trail recommendations, weak node targeting, subject suggestions |
-| **Payment/Subscription** | Seamless billing | **Partial** | 55% | Stripe + PayRex routes exist, upgrade page built, but GCash/Card buttons are non-functional (no onClick handlers) |
+| **Payment/Subscription** | Seamless billing | **Partial** | 55% | LemonSqueezy + PayRex routes exist, upgrade page built, but GCash/Card buttons are non-functional (no onClick handlers) |
 | **Onboarding** | Smooth first experience | **Strong** | 85% | 4-step funnel with try-before-signup, reviewer type detection |
 
 ### Competitive Score Summary

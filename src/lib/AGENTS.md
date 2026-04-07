@@ -32,7 +32,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 | `audio/` | Audio playback utilities for feedback sounds and ambient cues. |
 | `audit/` | Audit trail logging: action tracking, user behavior logs for compliance and debugging. |
 | `blindspot/` | Blindspot detection algorithm: identifies weak knowledge areas by analyzing question patterns and mastery data. |
-| `constants/` | Centralized constants: site config, design tokens (Campfire palette), enums, pricing, analytics event names, readiness thresholds. |
+| `constants/` | Centralized constants: site config, design tokens (Slatecamp palette), enums, pricing, analytics event names, readiness thresholds. |
 | `context/` | React Context providers: auth, user profile, feature flags, theme, modal state, demo mode. |
 | `demo/` | Demo mode utilities: mock Supabase client, config flags, fake data generation. |
 | `dev/` | Developer utilities: dev mode flags, debug helpers, test data generation. |
@@ -41,7 +41,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 | `import/` | Data import utilities: CSV parsing, question import schema, validation. |
 | `notes/` | Note system logic: image uploads, note persistence, attachments. |
 | `outcomes/` | Exam outcome predictions: scoring models, pass/fail estimation. |
-| `payments/` | Payment provider abstraction: routes checkout to Stripe or PayRex based on `PAYMENT_PROVIDER` env var. |
+| `payments/` | Payment provider abstraction: routes checkout to LemonSqueezy or PayRex based on `PAYMENT_PROVIDER` env var. |
 | `payrex/` | PayRex payment gateway config: singleton client, PHP plans (centavos), GCash/Maya/QRPH support. |
 | `paywall/` | Paywall and access control: daily cap enforcement, score reveal gates, feature paywalls. |
 | `proof-simulation/` | Full exam simulation logic: full-length test mode, timer, review rules. |
@@ -49,7 +49,7 @@ All data mutations flow exclusively through **Server Actions** in `actions/`. No
 | `signals/` | User learning signals: learning velocity, struggle indicators, mastery signals. |
 | `queries/` | Read-only query functions for server components (NOT server actions). Trail queries + ceo/ subdir for CEO portal reads. |
 | `srs/` | **Spaced Repetition System.** 7 files: IRT 2-parameter logistic model, SM2 algorithm, retention curves, review queue scheduling. Core mastery algorithm. |
-| `stripe/` | Stripe payment gateway config: singleton client, PHP plans, price IDs from env vars. |
+| `lemonsqueezy/` | LemonSqueezy payment gateway config: singleton client, PHP plans, price IDs from env vars. |
 | `supabase/` | Supabase client and utilities: browser client, server client, middleware, admin client, type definitions, error formatting. |
 | `utils/` | General utilities: text processing, constants, helper functions, wiki utilities. |
 | `validations/` | Zod validation schemas: request body validation, form input schemas. |

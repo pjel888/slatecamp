@@ -37,7 +37,7 @@ Filipino students are price-sensitive but will spend irrationally (often using p
 
 ### Payment Infrastructure
 
-- **International:** Stripe (`stripe ^20.4.1`, `@stripe/stripe-js ^8.9.0`)
+- **International:** LemonSqueezy (`lemonsqueezy ^20.4.1`, `@lemonsqueezy/lemonsqueezy-js ^8.9.0`)
 - **Philippine Local:** PayRex (`payrex-node ^1.7.3`) — supports GCash, Maya, bank transfers
 
 ---

@@ -14,7 +14,7 @@ Every feature below was **designed, discussed, or planned** across your skill fi
 
 ### 1.1 Functional Payment Buttons
 - **Source:** Audit §4, §6, §12, §13
-- **Status:** Stripe + PayRex infrastructure exists. Webhook handlers work. Checkout route exists. But the upgrade page buttons have **no onClick handlers**. Zero revenue is possible.
+- **Status:** LemonSqueezy + PayRex infrastructure exists. Webhook handlers work. Checkout route exists. But the upgrade page buttons have **no onClick handlers**. Zero revenue is possible.
 - **Effort:** ~2 hours
 - **Moat impact:** None — but nothing else matters until money flows.
 
@@ -300,3 +300,4 @@ White-label engine, Readiness Score API, study pods, platform expansion planning
 ---
 
 *Analysis generated 2026-03-26. Cross-referenced from: Global Codebase Audit Report (2026-03-25), slatecamp-competitive-moat skill, slatecamp-growth-engine skill, slatecamp-ip-commercialization skill, slatecamp-design-system-engineer skill, and 15+ past conversations covering admin console planning, developer hub implementation, UX research, content generation, and fact-checking pipelines.*
+

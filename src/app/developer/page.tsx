@@ -65,7 +65,7 @@ const techStack = [
   { layer: 'State', pkg: 'zustand', version: '5.0.12' },
   { layer: 'AI', pkg: '@anthropic-ai/sdk', version: '0.78.0' },
   { layer: '3D', pkg: 'three / @react-three/fiber', version: '0.183.2 / 9.5.0' },
-  { layer: 'Payments', pkg: 'stripe + payrex-node', version: '20.4.1 / 1.7.3' },
+  { layer: 'Payments', pkg: 'lemonsqueezy + payrex-node', version: '20.4.1 / 1.7.3' },
 ]
 
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {

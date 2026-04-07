@@ -43,11 +43,11 @@ None. All analytics components are flat in `src/components/analytics/`.
    - Use `ResponsiveContainer` to make charts responsive (width: 100%).
    - Keep chart config (colors, margins, etc.) in a const near the component.
    - Tooltip and ReferenceLine are optional but useful for context.
-   - X/YAxis: hide labels if space-constrained; use gridStroke color from Campfire palette.
+   - X/YAxis: hide labels if space-constrained; use gridStroke color from Slatecamp palette.
 
 3. **Data types.** Check `@/lib/actions/analytics` for the exact shape of `ReadinessTrajectoryPoint`, `MemoryHealthItem`, etc. Type components accordingly.
 
-4. **Color consistency.** All status colors (strong, review, fading, critical) use Campfire tokens:
+4. **Color consistency.** All status colors (strong, review, fading, critical) use Slatecamp tokens:
    - strong: Emerald (#2D9F6F) + Emerald 50 (#EDFAF4)
    - review / fading: Amber (#D4951A) + Amber 50 (#FEF8ED)
    - critical: Warm Red (#D64545) + Warm Red 50 (#FDF0F0)

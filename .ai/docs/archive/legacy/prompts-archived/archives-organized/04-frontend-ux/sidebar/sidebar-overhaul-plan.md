@@ -1079,3 +1079,4 @@ Execute all six steps now.
 | No testing checklist | 30+ checkbox items across functional, visual, responsive, a11y, and performance |
 | No animation budget or forbidden list | Specific duration/easing per animation + explicit list of what's forbidden |
 | No performance criteria | CLS=0 target, <5KB bundle, 4x CPU throttle smoothness |
+

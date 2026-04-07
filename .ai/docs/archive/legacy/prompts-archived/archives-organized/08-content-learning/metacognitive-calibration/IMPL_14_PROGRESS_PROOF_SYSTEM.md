@@ -143,3 +143,4 @@ After sufficient data:
 - No fake metrics. If the student didn't improve, say: "You maintained your score this month. Consistency matters."
 - Sharable card: branded but not obnoxious. SlateCamp logo small, student data prominent.
 - Outcome correlation: present with appropriate epistemic humility until data is robust.
+

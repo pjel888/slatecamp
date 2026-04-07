@@ -41,7 +41,7 @@ These are buried inside the dashboard and use an inconsistent auth guard (hardco
 
 ## Design Language
 
-The developer portal has a distinct personality from the student-facing app. It should feel like reading Stripe's API docs or GitHub's developer documentation — technical, precise, high-density, confident.
+The developer portal has a distinct personality from the student-facing app. It should feel like reading LemonSqueezy's API docs or GitHub's developer documentation — technical, precise, high-density, confident.
 
 ### Visual Rules
 - **Layout:** Wide content area (`max-w-6xl`), persistent left sidebar, sticky right-side TOC on long pages
@@ -208,7 +208,7 @@ This page becomes the living Storybook for SlateCamp. If the component library r
 **Page structure with sticky right-side TOC:**
 
 #### 3.1 Colors
-- Show the full Campfire palette from `globals.css` CSS variables
+- Show the full Slatecamp palette from `globals.css` CSS variables
 - For each color: swatch, hex value, CSS variable name, Tailwind class, usage description
 - Group: Brand & Signal, Neutrals & Surfaces, Semantic (quiz states, chart colors)
 
@@ -269,7 +269,7 @@ Document these endpoints:
 | Endpoint | Method | Auth |
 |----------|--------|------|
 | `/api/payments/checkout` | POST | User session |
-| `/api/webhooks/stripe` | POST | Stripe signature |
+| `/api/webhooks/lemonsqueezy` | POST | LemonSqueezy signature |
 | `/api/webhooks/payrex` | POST | PayRex signature |
 | `/api/cron/blindspot-scan` | GET | CRON_SECRET header |
 | `/api/cron/compute-signals` | GET | CRON_SECRET header |
@@ -350,7 +350,7 @@ Use collapsible sections (`<Accordion>` or `<details>`) so the page isn't overwh
 
 #### 4.3 Webhooks
 
-Document the Stripe and PayRex webhook flows:
+Document the LemonSqueezy and PayRex webhook flows:
 - What events are handled
 - What database mutations each event triggers
 - How signature verification works
@@ -646,3 +646,4 @@ The developer portal is primarily desktop (1280px+). Ensure:
 7. **Commit after each phase** with a clear message: `feat: developer portal phase N — [description]`.
 
 8. **Run `bun run build` after every phase.** This is non-negotiable.
+

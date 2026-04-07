@@ -54,7 +54,7 @@ export const COLOR = {
   VIOLATION_BASE:  '#E8E4DB',   // Violation shader base (ground)
   FIREWALL:        '#FF6B35',   // Firewall marker
 
-  // Campfire tokens
+  // Slatecamp tokens
   COBALT:          '#1B3FC4',
   COBALT_50:       '#EEF2FC',
   EMERALD:         '#2D9F6F',

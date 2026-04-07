@@ -26,11 +26,11 @@ None at root level. All functionality is in subdirectories organized by domain.
 | `cron/blindspot-scan/` | Nightly blindspot scan -- GET scans Taxonomy Heatmap for red/grey nodes, compiles 10-15 item quiz queue. Schedule: `0 16 * * *` (midnight PHT). |
 | `cron/compute-signals/` | Daily signal computation -- GET computes velocity, churn risk, and session stats for all active users. Schedule: `30 16 * * *` (00:30 PHT, after blindspot scan). |
 | `payments/` | Payment and subscription management |
-| `payments/checkout/` | Checkout session creation -- POST creates Stripe/PayRex checkout sessions. Returns checkout URL, session ID, and provider. Demo mode returns mock URL. |
+| `payments/checkout/` | Checkout session creation -- POST creates LemonSqueezy/PayRex checkout sessions. Returns checkout URL, session ID, and provider. Demo mode returns mock URL. |
 | `pdf/` | PDF document processing |
 | `pdf/process/` | PDF parsing endpoint -- reserved directory (currently empty, no route.ts). |
 | `webhooks/` | Inbound webhooks from payment providers |
-| `webhooks/stripe/` | Stripe webhook handler -- POST verifies signature via `stripe-signature` header, processes subscription events (checkout.session.completed, customer.subscription.*), updates user tier. |
+| `webhooks/lemonsqueezy/` | LemonSqueezy webhook handler -- POST verifies signature via `x-signature` header, processes subscription events (checkout.session.completed, customer.subscription.*), updates user tier. |
 | `webhooks/payrex/` | PayRex webhook handler -- POST verifies signature via `payrex-signature` header, processes subscription status updates, maps payment amount to user tier. |
 
 ## For AI Agents
@@ -69,13 +69,13 @@ None at root level. All functionality is in subdirectories organized by domain.
 - `@/lib/ai/prompts` -- `questionGenerationPrompt` and other prompt templates
 - `@/lib/demo/config` -- `isDemoMode()` to skip auth and return mock data in development
 - `@/lib/validations` -- Zod schemas for request validation (e.g., `featureFlagsSchema`)
-- `@/lib/stripe/config` -- `getStripe()` for Stripe client
+- `@/lib/lemonsqueezy/config` -- `getLemonSqueezy()` for LemonSqueezy client
 - `@/lib/payrex/config` -- `getPayRex()` for PayRex client
 
 ### External
 
 - `@anthropic-ai/sdk` -- Anthropic Claude API client for AI Tutor
-- `stripe` -- Stripe SDK for webhook signature verification and event processing
+- `lemonsqueezy` -- LemonSqueezy SDK for webhook signature verification and event processing
 - `next/server` -- `NextResponse`, `Request` type definitions
 - `next/headers` -- `headers()`, `cookies()` for request inspection
 

@@ -562,3 +562,4 @@ Acknowledge your role. Confirm you understand the strict phased protocol and the
 Then explain briefly why data-driven navigation (Phase 1) is architecturally superior to hardcoded sidebars for a multi-role platform.
 
 Then immediately execute **Phase 1 ONLY**: output the code for `src/types/layout.ts` and `src/config/navigation.ts`. Stop and wait for my approval to move to Phase 2.
+

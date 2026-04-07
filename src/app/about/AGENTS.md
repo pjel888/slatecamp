@@ -16,7 +16,7 @@ Marketing page introducing SlateCamp's mission, technology pillars, and value pr
 ### Working In This Directory
 - This is a public marketing page (no auth required)
 - Uses `MarketingNav` and `MarketingFooter` components from `@/components/marketing`
-- Follows Campfire design system (primary colors, typography, spacing)
+- Follows Slatecamp design system (primary colors, typography, spacing)
 - Hero section emphasizes founder credibility ("Built by an architect") and personal mission
 - Tech section showcases pedagogical rigor (IRT 2-parameter model, spaced repetition, anti-inflation)
 - Always link CTAs back to `/try` (free diagnostic) or `/pricing` (upgrade path)

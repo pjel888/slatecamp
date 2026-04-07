@@ -33,7 +33,7 @@ Student takes quiz → user_interactions (immutable event log)
 **Market:**
 - ~16,000–24,000 ALE candidates annually (two exam cycles per year)
 - Exam seasonality drives everything — demand spikes 3 months before each ALE date
-- Payment: Stripe (international) + Payrex (Philippines/GCash)
+- Payment: LemonSqueezy (international) + Payrex (Philippines/GCash)
 
 ---
 
@@ -63,7 +63,7 @@ If a feature doesn't answer one of these three questions, it does not belong her
 | Charts | Recharts | Wrap in `'use client'` components, pass data from Server Components |
 | State | Zustand (only if needed for cross-component client state) | |
 | Validation | Zod | All Server Action inputs validated with Zod schemas |
-| Payments | Stripe + Payrex | Subscription data in `user_subscriptions` table |
+| Payments | LemonSqueezy + Payrex | Subscription data in `user_subscriptions` table |
 
 **Hard rules:**
 - No `service_role` key in client code — server-side only
@@ -83,7 +83,7 @@ You do NOT need to create these tables. They already exist in production. Query 
 ```
 USER IDENTITY & BILLING
   auth.users → profiles (role, display_name, avatar_url)
-             → user_subscriptions (plan, status, stripe_customer_id, current_period_start, current_period_end)
+             → user_subscriptions (plan, status, lemon_squeezy_customer_id, current_period_start, current_period_end)
              → organizations → organization_members
 
 QUIZ ENGINE
@@ -121,7 +121,7 @@ CONTENT
 These tables DO need to be created. Include migrations.
 
 ```sql
--- CEO financial tracking (manual entry + Stripe webhook sync)
+-- CEO financial tracking (manual entry + LemonSqueezy webhook sync)
 CREATE TABLE public.ceo_financial_entries (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   entry_date DATE NOT NULL,
@@ -479,3 +479,4 @@ SlateCamp is a startup. Not all data will exist yet. Handle this gracefully:
 ---
 
 **Your first task:** Confirm you understand the constraints, the SlateCamp product context, and the phased approach. Then execute **Phase 1 only** — the layout, auth gate, sidebar, top bar, loading skeleton, and the two migration SQL files. Stop and wait for approval before Phase 2.
+

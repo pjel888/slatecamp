@@ -89,7 +89,7 @@ DeveloperDashboard
 │   ├── Row: Framework (Next.js 16.1.6)
 │   ├── Row: Database (Supabase PostgreSQL)
 │   ├── Row: Auth (Supabase Auth)
-│   ├── Row: Payments (Stripe + Payrex)
+│   ├── Row: Payments (LemonSqueezy + Payrex)
 │   ├── Row: AI (OpenAI GPT-4)
 │   ├── Row: 3D (React Three Fiber)
 │   ├── Row: State (Zustand)
@@ -504,7 +504,7 @@ layout.tsx → additional role check for 'admin' or 'ceo' role
 ```
 - Shows full schema including user_subscriptions
 - Shows user PII (email, metadata)
-- Shows payment amounts (stripe amounts)
+- Shows payment amounts (lemonsqueezy amounts)
 - No data masking (should mask: email domains, amounts)
 ```
 
@@ -596,7 +596,7 @@ const ceoQueryClient = new QueryClient({
 
 | Service | Used In | Data Flow |
 |---------|---------|-----------|
-| Stripe | CEO (MRR/ARR), Webhooks | Subscriptions → MRR |
+| LemonSqueezy | CEO (MRR/ARR), Webhooks | Subscriptions → MRR |
 | Payrex | CEO (MRR/ARR), Webhooks | Subscriptions → MRR |
 | Vercel Analytics | Developer (UptimeBar) | Uptime data |
 | OpenAI | CEO (N/A) | Not directly used |
@@ -817,7 +817,7 @@ interface DBQueryResult {
   // PII fields (should be masked but currently exposed):
   // - profiles.email
   // - profiles.full_name
-  // - user_subscriptions.stripe_customer_id
+  // - user_subscriptions.lemon_squeezy_customer_id
   // - Any table with phone, address, etc.
 }
 
@@ -899,3 +899,4 @@ interface UptimeData {
 
 *Pass 3: Omniscience added 2026-04-07*
 ```
+

@@ -7,9 +7,9 @@
 
 ---
 
-## Campfire Design System
+## Slatecamp design system
 
-SlateCamp uses the **Campfire design system** — a warm, research-backed aesthetic built on Tailwind CSS 4 with CSS-first configuration. All design tokens are defined as CSS custom properties in `globals.css`.
+SlateCamp uses the **Slatecamp design system** — a warm, research-backed aesthetic built on Tailwind CSS 4 with CSS-first configuration. All design tokens are defined as CSS custom properties in `globals.css`.
 
 ---
 
@@ -301,3 +301,4 @@ return <div dangerouslySetInnerHTML={{ __html: sanitized }} />
 ---
 
 *All token values extracted directly from `src/app/globals.css`. Do not use values from archived `design-system.md`.*
+

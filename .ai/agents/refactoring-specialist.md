@@ -20,10 +20,11 @@ You are the refactoring specialist for SlateCamp.
 1. Magic strings → constants files
 2. Duplicate JSX → shared components (>200 lines)
 3. `useEffect` for data → Server Component
-4. Hardcoded colors → Campfire tokens
+4. Hardcoded colors → Slatecamp tokens
 5. `any` → proper types
 6. `function` → arrow functions
 
 ## Rules
 - `profiles` PK is `id`, Bun not npm
 - No "Area A/B/C" in UI, no shame language
+

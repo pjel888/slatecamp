@@ -110,24 +110,24 @@
   --color-accent-800: var(--accent-800);
   --color-accent-900: var(--accent-900);
 
-  /* Campfire — Functional accents (Tailwind utilities) */
+  /* Slatecamp — Functional accents (Tailwind utilities) */
   --color-accent-blue: var(--accent-blue);
   --color-accent-blue-hover: var(--accent-hover);
   --color-danger: var(--destructive);
   --color-info: var(--info);
 
-  /* Campfire — Surface colors */
+  /* Slatecamp — Surface colors */
   --color-surface: var(--bg-primary);
   --color-surface-secondary: var(--bg-secondary);
   --color-surface-tertiary: var(--bg-tertiary);
 
-  /* Campfire — Text hierarchy */
+  /* Slatecamp — Text hierarchy */
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
   --color-text-quaternary: var(--text-quaternary);
 
-  /* Campfire — Quiz states */
+  /* Slatecamp — Quiz states */
   --color-quiz-correct-bg: var(--quiz-correct-bg);
   --color-quiz-correct-border: var(--quiz-correct-border);
   --color-quiz-wrong-bg: var(--quiz-wrong-bg);
@@ -135,7 +135,7 @@
   --color-quiz-selected-bg: var(--quiz-selected-bg);
   --color-quiz-selected-border: var(--quiz-selected-border);
 
-  /* Campfire — NEW semantic tokens for Tailwind */
+  /* Slatecamp — NEW semantic tokens for Tailwind */
   --color-camp-orange: var(--accent);
   --color-emerald: var(--success);
   --color-slate-blue-50: var(--primary-50);
@@ -203,7 +203,7 @@
   --font-syne: 'Syne', sans-serif;
   --font-atkinson: 'Atkinson Hyperlegible', sans-serif;
 
-  /* Campfire — Gradient & Pattern Utilities */
+  /* Slatecamp — Gradient & Pattern Utilities */
   --background-image-grad-warm: var(--grad-warm-surface);
   --background-image-grad-cool: var(--grad-cool-surface);
   --background-image-grad-slate: var(--grad-slate);
@@ -400,20 +400,20 @@
   --accent-800: #763505;
   --accent-900: #502302;
 
-  /* Campfire — Neutral palette */
+  /* Slatecamp — Neutral palette */
   --bg-primary: #FFFFFF;
   --bg-secondary: #F5F5F5;
   --bg-tertiary: #EEF2FC;
   --border-strong: #D4DAE3;
   --border-light: #D4DAE3;
 
-  /* Campfire — Text hierarchy */
+  /* Slatecamp — Text hierarchy */
   --text-primary: #343638ff;
   --text-secondary: #4A5568;
   --text-tertiary: #8896A7;
   --text-quaternary: #8896A7;
 
-  /* Campfire — Functional accents */
+  /* Slatecamp — Functional accents */
   --accent-blue: #1B3FC4;
   --accent-hover: #1535A8;
   --success: #2D9F6F;
@@ -421,7 +421,7 @@
   --warning: #D4951A;
   --info: #3B82C8;
 
-  /* Campfire — NEW tokens */
+  /* Slatecamp — NEW tokens */
   --camp-orange: #E8853A;
   --camp-orange-hover: #D4751A;
   --emerald: #2D9F6F;
@@ -431,7 +431,7 @@
   /* Testing interface bg */
   --border-warm: rgba(232, 133, 58, 0.15);
 
-  /* Campfire — Semantic aliases (canonical names) */
+  /* Slatecamp — Semantic aliases (canonical names) */
   --ink-primary: #1A2332;
   /* = --text-primary */
   --ink-secondary: #4A5568;
@@ -447,7 +447,7 @@
   --surface-light: #F8F7F5;
   /* warm white page bg */
 
-  /* Campfire — Card surfaces */
+  /* Slatecamp — Card surfaces */
   --card-bg: #ffffff;
   --card-border-color: #D4DAE3;
   --card-shadow: none;
@@ -455,7 +455,7 @@
   --card-radius: 8px;
   /* rounded-md for cards */
 
-  /* Campfire — Quiz states */
+  /* Slatecamp — Quiz states */
   --quiz-correct-bg: #EDFAF4;
   --quiz-correct-border: #2D9F6F;
   --quiz-wrong-bg: #FDF0F0;
@@ -463,12 +463,12 @@
   --quiz-selected-bg: #EEF2FC;
   --quiz-selected-border: #1B3FC4;
 
-  /* Campfire — Transitions (max 300ms) */
+  /* Slatecamp — Transitions (max 300ms) */
   --transition-fast: 100ms ease-out;
   --transition-normal: 150ms ease-out;
   --transition-slow: 200ms ease-out;
 
-  /* Campfire — Readiness Score */
+  /* Slatecamp — Readiness Score */
   --readiness-danger: #D64545;
   --readiness-warning: #D4951A;
   --readiness-good: #2D9F6F;
@@ -586,7 +586,7 @@
   --sidebar-border: #2A3444;
   --sidebar-ring: #5B7FE0;
 
-  /* Campfire — Dark mode overrides */
+  /* Slatecamp — Dark mode overrides */
   --bg-primary: #141B24;
   --bg-secondary: #1C2433;
   --bg-tertiary: #2A3444;
@@ -654,7 +654,7 @@
   --accent-800: #FDD8C0;
   --accent-900: #FEE8E0;
 
-  /* Campfire — NEW tokens (dark) */
+  /* Slatecamp — NEW tokens (dark) */
   --camp-orange: #F0A060;
   --camp-orange-hover: #E89040;
   --camp-cobalt: #5B7FE0;
@@ -665,7 +665,7 @@
   --surface-focused: #1C2433;
   --border-warm: rgba(232, 133, 58, 0.2);
 
-  /* Campfire — Semantic aliases (dark) */
+  /* Slatecamp — Semantic aliases (dark) */
   --ink-primary: #E8ECF1;
   --ink-secondary: #8896A7;
   --ink-tertiary: #6C7A8A;

@@ -370,3 +370,4 @@ Run `bun run build` one final time. Confirm zero errors, zero warnings related t
 9. **Server Components by default.** Only add `'use client'` when the component genuinely needs client interactivity (useState, onClick, etc.). Many display components (Badge, Card, SectionHeader, Skeleton) should be Server Components.
 
 10. **The taxonomy picker will take the longest.** It's used in 6+ different contexts with different configurations. Build it carefully, test each context after integration.
+

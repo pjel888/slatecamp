@@ -52,7 +52,7 @@ npm install
 # 3. Copy environment variables
 cp .env.example .env.local
 
-# 4. Fill in your local env vars (Supabase, Stripe, etc.)
+# 4. Fill in your local env vars (Supabase, LemonSqueezy, etc.)
 # See the Environment Variables section below
 
 # 5. Start the dev server
@@ -89,7 +89,7 @@ bun dev
 
 - **Always commit the lockfile** (`bun.lock`) — this ensures reproducible builds across the team
 - **Never mix package managers** — if using Bun, do not run `npm install` or `pnpm install` in the same project; it creates conflicting lockfiles
-- **Pin critical dependencies** — use exact versions for `next`, `react`, `supabase`, and `stripe` to avoid surprise breaking changes
+- **Pin critical dependencies** — use exact versions for `next`, `react`, `supabase`, and `lemonsqueezy` to avoid surprise breaking changes
 - **Audit regularly** — run `bun pm audit` or `pnpm audit` before each release
 
 ---
@@ -137,10 +137,10 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
-# ── Stripe ──
-STRIPE_SECRET_KEY=sk_test_...
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-STRIPE_WEBHOOK_SECRET=whsec_...
+# ── LemonSqueezy ──
+LEMONSQUEEZY_API_KEY=sk_test_...
+NEXT_PUBLIC_LEMONSQUEEZY_PUBLISHABLE_KEY=pk_test_...
+LEMONSQUEEZY_WEBHOOK_SECRET=whsec_...
 
 # ── PayRex (Philippine Local Payments) ──
 PAYREX_SECRET_KEY=your-payrex-key
@@ -176,8 +176,8 @@ NODE_ENV=development
 - **Payments**
   | **Package** | **Version** | **Role** |
   | ------------------- | ----------- | ------------------------------------------------------- |
-  | `stripe` | ^20.4.1 | Server-side Stripe SDK (subscriptions, webhooks) |
-  | `@stripe/stripe-js` | ^8.9.0 | Client-side Stripe Elements (checkout UI) |
+  | `lemonsqueezy` | ^20.4.1 | Server-side LemonSqueezy SDK (subscriptions, webhooks) |
+  | `@lemonsqueezy/lemonsqueezy-js` | ^8.9.0 | Client-side LemonSqueezy Elements (checkout UI) |
   | `payrex-node` | ^1.7.3 | Philippine local payments (GCash, Maya, bank transfers) |
 - **Rich Text Editor (TipTap)**
   | **Package** | **Version** | **Role** |
@@ -264,7 +264,7 @@ main (protected — always deployable)
 | `fix/`     | Bug fix                               | `fix/quiz-autosave-race-condition` |
 | `chore/`   | Maintenance, refactoring, dep updates | `chore/upgrade-supabase-sdk`       |
 | `docs/`    | Documentation only                    | `docs/api-route-readme`            |
-| `hotfix/`  | Critical production fix               | `hotfix/stripe-webhook-crash`      |
+| `hotfix/`  | Critical production fix               | `hotfix/lemonsqueezy-webhook-crash`      |
 | `test/`    | Adding or updating tests              | `test/readiness-score-unit`        |
 
 ### Commit Message Convention (Conventional Commits)
@@ -663,7 +663,7 @@ slate-camp/
 │   └── lib/                    # Utilities, helpers, configs
 │       ├── utils.ts            # cn() and general utilities
 │       ├── supabase/           # Supabase client configs
-│       ├── stripe/             # Stripe helpers
+│       ├── lemonsqueezy/             # LemonSqueezy helpers
 │       └── validations/        # Zod schemas
 ├── public/                     # Static assets
 ├── .env.example                # Template env vars
@@ -698,3 +698,4 @@ Before every PR, confirm:
 - [ ] Heavy imports are dynamically loaded (`next/dynamic` or `React.lazy`)
 - [ ] Commit messages follow Conventional Commits
 - [ ] PR description explains _what_ and _why_
+

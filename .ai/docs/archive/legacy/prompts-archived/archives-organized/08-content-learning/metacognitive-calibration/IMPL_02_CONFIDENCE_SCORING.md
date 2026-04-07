@@ -224,3 +224,4 @@ LIMIT 5;
 - **All answers had same confidence:** Matrix still renders but the empty quadrants show "None this session."
 - **Student never selects confidence (skips):** In Camp Mode, require it (submit button disabled until confidence selected). In Storm, allow null.
 - **Legacy sessions:** Sessions without confidence data don't render the matrix. No backfill needed.
+

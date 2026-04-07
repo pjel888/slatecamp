@@ -8,14 +8,14 @@
 
 ## Objective
 
-Overhaul the `/developer` portal to match the high-fidelity HTML prototype and UX research blueprint. Enforce the Campfire design system with 11px minimum text size. Verify all navigation routes map to real pages.
+Overhaul the `/developer` portal to match the high-fidelity HTML prototype and UX research blueprint. Enforce the Slatecamp design system with 11px minimum text size. Verify all navigation routes map to real pages.
 
 ---
 
 ## Constraints
 
 - **11px minimum text** — CLAUDE.md mandates `text-[11px]` as floor. All `text-[8px]`, `text-[9px]`, `text-[10px]` must become `text-[11px]`.
-- **Campfire Design System** — Colors, shadows, radii, transitions per CLAUDE.md Section 5.
+- **Slatecamp design system** — Colors, shadows, radii, transitions per CLAUDE.md Section 5.
 - **No emoji in functional UI** — Use Lucide SVG icons only.
 - **Arrow functions** — Per user feedback memory.
 - **Monospace only on data** — Never on labels, categories, or metadata text.
@@ -165,3 +165,4 @@ Overhaul the `/developer` portal to match the high-fidelity HTML prototype and U
 - [ ] Cards follow shadow/radius/transition rules from CLAUDE.md
 - [ ] `npm run build` passes with zero errors
 - [ ] All 21 component pages accessible via sidebar navigation
+

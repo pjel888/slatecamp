@@ -687,7 +687,7 @@ Issues found in the audit that must be fixed alongside the feature work:
 
 ### Login page uses Tailwind zinc classes
 **Location:** `/admin` login page
-**Fix:** Replace `zinc-*` with Campfire tokens (`bg-[#F8F7F5]`, `text-[#1A1A1A]`, etc.)
+**Fix:** Replace `zinc-*` with Slatecamp tokens (`bg-[#F8F7F5]`, `text-[#1A1A1A]`, etc.)
 
 ---
 
@@ -791,3 +791,4 @@ Every mutation routes through a server action that calls `canManageContent()` an
 *SlateCamp Admin Console UX Research & Improvement Plan*
 *Version 1.0 · March 2026*
 *Source references: Admin Console Audit V2 (2026-03-24), Unified Content Editor UX Plan, Admin Console Rebuild Plan, Admin Console Prototype, Unified Editor Prompt V2, Testing & Review System, Camp Trail UX Plan*
+

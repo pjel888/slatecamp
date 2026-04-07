@@ -52,7 +52,7 @@ These don't exist yet but are critical for the AI to do its job without guessing
 /dashboard/3d-lab         → Auth + active subscription
 /dashboard/camp-trail     → Auth + active subscription
 /dashboard/settings       → Auth required
-/api/webhooks/stripe      → Public (webhook, verified by signature)
+/api/webhooks/lemonsqueezy      → Public (webhook, verified by signature)
 /api/webhooks/payrex      → Public (webhook, verified by signature)
 /api/cron/readiness       → Protected (cron secret header)
 ```
@@ -78,8 +78,8 @@ NEXT_PUBLIC_APP_URL               → https://slatecamp.com
 
 # Secret (server-only, NEVER in NEXT_PUBLIC_*)
 SUPABASE_SERVICE_ROLE_KEY         → Bypasses RLS. Server Actions only.
-STRIPE_SECRET_KEY                 → Stripe API key
-STRIPE_WEBHOOK_SECRET             → Verifies Stripe webhook signatures
+LEMONSQUEEZY_API_KEY                 → LemonSqueezy API key
+LEMONSQUEEZY_WEBHOOK_SECRET             → Verifies LemonSqueezy webhook signatures
 PAYREX_SECRET_KEY                 → Payrex API key
 PAYREX_WEBHOOK_SECRET             → Verifies Payrex webhook signatures
 ANTHROPIC_API_KEY                 → Claude API for AI features
@@ -121,7 +121,7 @@ enrollInTrail           → Auth required + subscription. Creates enrollment rec
 completeTrailStep       → Auth required. Marks step done, credits session.
 
 # Subscription
-createCheckoutSession   → Auth required. Redirects to Stripe/Payrex.
+createCheckoutSession   → Auth required. Redirects to LemonSqueezy/Payrex.
 handleWebhook           → NO auth (public). Verified by webhook signature.
 ```
 
@@ -181,7 +181,7 @@ Staging:         staging.slatecamp.com (if exists)
 **What to include:**
 ```
 # Payments
-Stripe           → International payments. Webhook at /api/webhooks/stripe.
+LemonSqueezy           → International payments. Webhook at /api/webhooks/lemonsqueezy.
 Payrex           → Philippine payments (GCash, bank transfer). Webhook at /api/webhooks/payrex.
 
 # AI
@@ -286,3 +286,4 @@ Start this on launch day. Every production incident gets an entry:
 **Total estimated prep time: ~3.5 hours.** That investment prevents the AI from guessing at your business logic, which prevents it from producing a roadmap full of wrong fixes that break your app.
 
 The six new documents are things you'd want to have regardless of the AI audit — they're standard operational documentation for any production app. The audit just forces you to write them now instead of discovering you needed them at 2am on launch night.
+

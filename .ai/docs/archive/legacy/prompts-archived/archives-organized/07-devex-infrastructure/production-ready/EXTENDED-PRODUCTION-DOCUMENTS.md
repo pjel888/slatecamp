@@ -214,12 +214,12 @@ Tables touched: quiz_sessions, user_interactions, user_node_mastery,
   readiness_score_snapshots
 
 # Flow 3: Subscription Purchase
-Free user hits paywall → Choose plan → Redirect to Stripe/Payrex →
+Free user hits paywall → Choose plan → Redirect to LemonSqueezy/Payrex →
 Payment completes → Webhook fires → user_subscriptions updated →
 User redirected back → Pro features unlocked immediately
 
 Files involved: components/Paywall.tsx, actions/subscription.ts,
-  api/webhooks/stripe/route.ts, api/webhooks/payrex/route.ts
+  api/webhooks/lemonsqueezy/route.ts, api/webhooks/payrex/route.ts
 Tables touched: user_subscriptions
 
 # Flow 4: Subscription Expiry
@@ -267,7 +267,7 @@ These prevent "the code is correct but the product is wrong."
 NONE        → Never subscribed (new user, free tier)
 TRIALING    → On free trial (if you offer one)
 ACTIVE      → Paying, subscription current
-PAST_DUE    → Payment failed, retry in progress (Stripe handles retries)
+PAST_DUE    → Payment failed, retry in progress (LemonSqueezy handles retries)
 GRACE       → Subscription canceled/expired, within 30-day grace window
 EXPIRED     → Grace period over, full paywall enforced
 CANCELED    → User actively canceled (treat as GRACE until period ends)
@@ -295,7 +295,7 @@ CANCELED    | ∞    | All  | ∞     | All   | All    | Full (until period ends
 - Student is mid-quiz when subscription expires → Let them finish the session
 - Student on grace period tries to start quiz → Show paywall, not error
 - Webhook arrives out of order → Idempotent processing (check current state before applying)
-- Student pays via Payrex (GCash) → Webhook structure differs from Stripe
+- Student pays via Payrex (GCash) → Webhook structure differs from LemonSqueezy
 - Student downgrades mid-billing-cycle → Access continues until period ends
 ```
 
@@ -310,7 +310,7 @@ CANCELED    | ∞    | All  | ∞     | All   | All    | Full (until period ends
 # API Rate Limits
 Server Actions (authenticated):  60 requests/minute per user
 API Route Handlers:              30 requests/minute per IP
-Webhook endpoints:               100 requests/minute (Stripe/Payrex volume)
+Webhook endpoints:               100 requests/minute (LemonSqueezy/Payrex volume)
 AI features (Claude API):        10 requests/minute per user (cost control)
 
 # Quiz Engine Limits
@@ -379,9 +379,9 @@ If a feature causes production issues:
 
 **What to include:**
 ```
-# Stripe Webhooks
-Endpoint: /api/webhooks/stripe
-Verification: stripe.webhooks.constructEvent(body, sig, STRIPE_WEBHOOK_SECRET)
+# LemonSqueezy Webhooks
+Endpoint: /api/webhooks/lemonsqueezy
+Verification: lemonsqueezy.webhooks.constructEvent(body, sig, LEMONSQUEEZY_WEBHOOK_SECRET)
 
 Events we handle:
 checkout.session.completed     → Create/activate user_subscriptions row
@@ -390,9 +390,9 @@ invoice.payment_failed         → Update subscription status to PAST_DUE
 customer.subscription.updated  → Handle plan changes, cancellation scheduling
 customer.subscription.deleted  → Start grace period (set grace_started_at)
 
-Idempotency: Check stripe_subscription_id + event type before applying.
+Idempotency: Check lemon_squeezy_subscription_id + event type before applying.
              If already processed (status already matches), return 200 and do nothing.
-Retry policy: Stripe retries for up to 72 hours. Our endpoint MUST return 200
+Retry policy: LemonSqueezy retries for up to 72 hours. Our endpoint MUST return 200
               even if we've already processed the event.
 
 # Payrex Webhooks
@@ -407,7 +407,7 @@ payment.failed                 → Log, notify user via email
 - Webhook arrives before user exists in profiles → Queue and retry
 - Webhook arrives out of order (deleted before created) → Check timestamps
 - Webhook replay attack → Verify signature + check idempotency key
-- Supabase down when webhook arrives → Return 500 so Stripe retries
+- Supabase down when webhook arrives → Return 500 so LemonSqueezy retries
 ```
 
 ---
@@ -436,7 +436,7 @@ These prevent "the app is fine but we can't operate it."
 - API response time p95 > 3 seconds for 15+ minutes
 - Supabase approaching rate limits or storage limits
 - Failed quiz session save (student loses progress)
-- Stripe/Payrex webhook failure (individual, not systemic)
+- LemonSqueezy/Payrex webhook failure (individual, not systemic)
 
 ## P2 — Fix This Week (Dashboard only)
 - JS bundle size increased > 10% from last deploy
@@ -481,7 +481,7 @@ Each dashboard loads: heatmap, readiness score, recent sessions, trail progress
 Test: Are indexes sufficient? Does connection pooling hold?
 
 ## Scenario 3: Webhook Flood
-100 Stripe webhooks arrive in 60 seconds (batch renewal day)
+100 LemonSqueezy webhooks arrive in 60 seconds (batch renewal day)
 Test: Does the webhook handler process all without dropping any?
 
 # Tools
@@ -615,3 +615,4 @@ You don't need all 20 before you run the audit. Here's the order that gives the 
 12–20. Everything else. Write them in the first two weeks after launch.
 
 **Total for "must have" set: ~4 hours.** Combined with the 3.5 hours from the first checklist, you're looking at a solid day of documentation work that transforms the AI audit from "generic checklist" to "surgical production roadmap."
+

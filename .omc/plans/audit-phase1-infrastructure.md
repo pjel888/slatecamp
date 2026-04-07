@@ -23,7 +23,7 @@
 | Rich Text Editor | TipTap | 3.20.4 (13 extension packages) |
 | Charts | Recharts | 3.8.0 |
 | AI | Anthropic SDK | 0.78.0 |
-| Payments | Stripe + PayRex | Stripe 20.4.1, PayRex 1.7.3 |
+| Payments | LemonSqueezy + PayRex | LemonSqueezy 20.4.1, PayRex 1.7.3 |
 | Package Manager | Bun | bun.lock present |
 | Deployment | Vercel | vercel.json with 2 crons |
 | Bundler | Turbopack (default dev) | Built into Next.js 16 |
@@ -258,7 +258,7 @@ src/
     constants/, context/, demo/  -- Shared utilities
     import/, mocks/       -- Data import and mocks
     notes/, outcomes/, payments/  -- Feature modules
-    payrex/, paywall/, stripe/   -- Payment providers
+    payrex/, paywall/, lemonsqueezy/   -- Payment providers
     queries/              -- Database queries
     readiness/, signals/, srs/   -- Learning science (IRT, SRS)
     supabase/             -- Supabase client/server/middleware
@@ -275,8 +275,8 @@ src/
 
 | Category | Count | Variables |
 |----------|-------|-----------|
-| `NEXT_PUBLIC_*` (client-exposed) | 6 | `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `APP_URL`, `DEMO_MODE`, `ENABLE_DEMO_MODE`, `STRIPE_PUBLISHABLE_KEY` |
-| Server-only secrets | 11 | `SUPABASE_SERVICE_ROLE_KEY`, `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, `CRON_SECRET`, `ADMIN_EMAILS`, `AI_PROVIDER`, `PAYMENT_PROVIDER` |
+| `NEXT_PUBLIC_*` (client-exposed) | 6 | `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `APP_URL`, `DEMO_MODE`, `ENABLE_DEMO_MODE`, `LEMONSQUEEZY_PUBLISHABLE_KEY` |
+| Server-only secrets | 11 | `SUPABASE_SERVICE_ROLE_KEY`, `LEMONSQUEEZY_API_KEY`, `LEMONSQUEEZY_WEBHOOK_SECRET`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, `CRON_SECRET`, `ADMIN_EMAILS`, `AI_PROVIDER`, `PAYMENT_PROVIDER` |
 | Standard | 1 | `NODE_ENV` |
 | Config flags | 1 | `ALLOW_DEV_PORTAL_BYPASS` |
 | **Total unique** | **19** | |
@@ -286,19 +286,19 @@ src/
 - `.env.example` exists (good)
 - `.env.local` exists (not committed -- good, in .gitignore)
 - No sensitive keys in `NEXT_PUBLIC_*` variables (Supabase anon key is designed to be public)
-- Stripe publishable key correctly uses `NEXT_PUBLIC_` prefix
+- LemonSqueezy publishable key correctly uses `NEXT_PUBLIC_` prefix
 
 ### Files Referencing process.env
 
 29 files total. Concentrated in:
 - `src/lib/supabase/` (4 files) -- expected
 - `src/app/api/` (5 files) -- expected for route handlers
-- `src/lib/stripe/`, `src/lib/payrex/` -- payment config
+- `src/lib/lemonsqueezy/`, `src/lib/payrex/` -- payment config
 - `src/lib/ai/` -- AI provider config
 
 ### Client Exposure Risk
 
-**LOW.** Only `NEXT_PUBLIC_SUPABASE_ANON_KEY` appears in a `'use client'` file (`LogoutButton.tsx`), and Supabase anon keys are designed for client use. Stripe publishable key is also safe for client exposure by design.
+**LOW.** Only `NEXT_PUBLIC_SUPABASE_ANON_KEY` appears in a `'use client'` file (`LogoutButton.tsx`), and Supabase anon keys are designed for client use. LemonSqueezy publishable key is also safe for client exposure by design.
 
 ---
 
@@ -308,7 +308,7 @@ src/
 
 | Document | Status | Notes |
 |----------|--------|-------|
-| `README.md` | Exists (42 lines) | Outdated -- references "zinc-first neutral palette" and "Dieter Rams" aesthetic, but codebase has moved to Campfire design system |
+| `README.md` | Exists (42 lines) | Outdated -- references "zinc-first neutral palette" and "Dieter Rams" aesthetic, but codebase has moved to Slatecamp design system |
 | `CLAUDE.md` | Exists | User says outdated but it defines Campfire design tokens and voice guide. Mostly aligned with code. |
 | `.claude/docs/` | 12 files | Full PRD library (Discovery through Marketing, 10 numbered phases + Platform Overview) |
 | `.claude/agents/` | 17 agent files | Specialized agent personas (db-architect, quiz-engineer, security-auditor, etc.) |
@@ -416,3 +416,5 @@ src/
 ## 13. First Impression (CTO Gut Check)
 
 This is a solo-developer product moving at exceptional velocity (273 commits in 18 days) through an aggressive feature buildout and design system migration. The tech stack choices are modern and well-aligned (Next.js 16, React 19, Tailwind 4, Supabase), but the project carries three significant structural debts: (1) zero functional test infrastructure despite 12 orphaned test files and no test runner installed, (2) TypeScript running with all strictness flags disabled, meaning type safety is largely advisory, and (3) layout/navigation architecture still visibly unstable with the Sidebar component alone touching 34 commits. The codebase is at a critical inflection point -- it needs to shift from "ship features" to "harden foundations" before the accumulated velocity becomes accumulated fragility.
+
+

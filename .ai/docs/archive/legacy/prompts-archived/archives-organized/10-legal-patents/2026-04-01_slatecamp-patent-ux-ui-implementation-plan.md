@@ -392,7 +392,7 @@ The inference model classifies each submission gesture into four discrete levels
 The admin dashboard follows SlateCamp's design system with these additions:
 
 - **Data visualization palette:** Use the four semantic colors (Green/Amber/Red/Grey) for confidence levels. Use Slate Blue for neutral data (engagement, consistency). Never introduce new colors.
-- **Table design:** Zebra-striped rows, 48px row height, sortable columns, sticky headers. No horizontal scroll on desktop.
+- **Table design:** Zebra-lemonsqueezyd rows, 48px row height, sortable columns, sticky headers. No horizontal scroll on desktop.
 - **Export format:** PDF report with SlateCamp branding (for B2B clients) or CSV raw data (for researchers).
 - **White-label adaptation:** Logo, primary color, and header text are configurable per institutional partner. Data visualization colors remain fixed (they're part of the patented classification system).
 

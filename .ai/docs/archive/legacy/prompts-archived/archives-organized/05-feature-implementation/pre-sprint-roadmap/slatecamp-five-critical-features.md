@@ -186,7 +186,7 @@ The rationale: a returning reviewer has already experienced the ALE. They do not
 
 - Trail recommendation engine — front-loads subjects identified as gaps from the prior cycle
 - Blindspot Protocol — prioritizes previously-red nodes if prior cycle data is available
-- Campfire — grants access to the private retaker channel automatically, no opt-in
+- Slatecamp — grants access to the private retaker channel automatically, no opt-in
 - Results Day flow — different messaging when a returning reviewer passes
 - Marketing analytics — enables separate cohort analysis of retaker vs. first-timer conversion, retention, and pass rates
 
@@ -495,3 +495,4 @@ For the analytics dashboard and the Readiness Score card: same `sub_scores` JSON
 
 *SlateCamp — Five Critical Unbuilt Features · March 2026 · Internal · Product Architect*  
 *Based on: Global Codebase Audit (2026-03-25) · Product Architecture v2.1 · Session decisions*
+

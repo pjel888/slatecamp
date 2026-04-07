@@ -12,7 +12,7 @@ export const UpgradeButtons = ({ tier = 'camp' }: UpgradeButtonsProps) => {
   const [loading, setLoading] = useState<string | null>(null)
   const router = useRouter()
 
-  const handleCheckout = async (provider?: 'stripe' | 'payrex') => {
+  const handleCheckout = async (provider?: 'lemonsqueezy' | 'payrex') => {
     setLoading(provider || 'loading')
     try {
       const response = await fetch('/api/payments/checkout', {
@@ -48,11 +48,11 @@ export const UpgradeButtons = ({ tier = 'camp' }: UpgradeButtonsProps) => {
       </Button>
       <Button
         variant="outline"
-        onClick={() => handleCheckout('stripe')}
+        onClick={() => handleCheckout('lemonsqueezy')}
         disabled={loading !== null}
         className="w-full h-12 text-sm font-medium"
       >
-        {loading === 'stripe' ? 'Connecting...' : 'Pay with Card'}
+        {loading === 'lemonsqueezy' ? 'Connecting...' : 'Pay with Card'}
       </Button>
     </div>
   )

@@ -226,7 +226,7 @@ The financial tracking system must categorize every peso. These are the `categor
 - `ad_spend` — Meta, TikTok, Google ads
 - `server_costs` — Supabase, Vercel, CDN, hosting
 - `tools` — Analytics, email, CRM, design tools
-- `payment_processing` — Stripe + Payrex fees (~3% of revenue)
+- `payment_processing` — LemonSqueezy + Payrex fees (~3% of revenue)
 - `content_production` — SME fees for wiki, questions, 3D Lab
 - `legal` — IP protection, trademarks, contracts
 - `office` — Co-working or rent (if applicable)
@@ -540,7 +540,7 @@ This section maps every metric to the specific dashboard page and data source.
 |---|---|---|---|
 | Cash runway drops below 6 months | Medium | Critical | Dashboard runway warning at 6 months. Immediate cost cuts triggered. |
 | Ad spend ROI turns negative | Medium | High | Kill underperforming channels within 7 days. Return to organic-only growth. |
-| Payment provider failure (Stripe/Payrex) | Low | High | Maintain dual payment rails. |
+| Payment provider failure (LemonSqueezy/Payrex) | Low | High | Maintain dual payment rails. |
 | Exam season revenue misses projection | Medium | High | Pre-build 2-month cash reserve from prior peak. |
 
 ### 12.2 Growth Risks
@@ -668,4 +668,5 @@ Before any major product or business decision:
 ---
 
 > **This document is the strategic backbone behind every number on the CEO Dashboard. Every metric displayed, every chart rendered, and every empty state message should trace back to a section in this plan. If a feature on `/ceo` can't be justified by this document, it doesn't belong there.**
+
 

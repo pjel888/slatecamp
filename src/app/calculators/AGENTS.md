@@ -44,6 +44,6 @@ Each tool (flooring, paint, drywall, chb) follows identical pattern:
 - `@phosphor-icons/react/dist/ssr` — Icons
 - React Three Fiber, Three.js (3D scenes)
 - Zustand (state management)
-- Tailwind CSS 4 (Campfire tokens)
+- Tailwind CSS 4 (Slatecamp tokens)
 
 <!-- MANUAL: -->

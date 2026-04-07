@@ -324,13 +324,13 @@ All dashboard components are rendered with **Recharts** (`recharts ^3.8.0`), con
 
 | **Metric** | **Definition** | **Target** | **Data Source** |
 | --- | --- | --- | --- |
-| **Free-to-Paid Conversion** | % of free users who upgrade to Camp (₱499–799/mo) or Insurance (₱3,999 / 6 months) | Phase 2: ≥ 8%, Phase 3: ≥ 15% | Stripe + PayRex subscription events |
+| **Free-to-Paid Conversion** | % of free users who upgrade to Camp (₱499–799/mo) or Insurance (₱3,999 / 6 months) | Phase 2: ≥ 8%, Phase 3: ≥ 15% | LemonSqueezy + PayRex subscription events |
 | **DAU/MAU Ratio** | Daily stickiness — proportion of monthly users who return daily | ≥ 30% | Supabase auth sessions with quiz or Wiki activity |
-| **MRR** | Monthly Recurring Revenue from Camp + Insurance tiers | Monotonically increasing | Stripe dashboard + PayRex reports |
-| **Churn Rate** | % of paid subscribers who cancel per month | < 5% | Stripe `customer.subscription.deleted` events |
+| **MRR** | Monthly Recurring Revenue from Camp + Insurance tiers | Monotonically increasing | LemonSqueezy dashboard + PayRex reports |
+| **Churn Rate** | % of paid subscribers who cancel per month | < 5% | LemonSqueezy `customer.subscription.deleted` events |
 | **CAC** | Customer Acquisition Cost — total marketing spend / new paid users | < ₱500 | Ad platform spend + conversion attribution |
 | **LTV** | Lifetime Value — average total revenue per user | > 10× CAC | Cohort revenue analysis over 12-month windows |
-| **PayRex/Stripe Split** | % of payments via local methods (GCash, Maya) vs. international card | Track (no target — market intelligence) | Payment gateway logs |
+| **PayRex/LemonSqueezy Split** | % of payments via local methods (GCash, Maya) vs. international card | Track (no target — market intelligence) | Payment gateway logs |
 
 ### Educational Efficacy
 
@@ -429,3 +429,4 @@ When a student opens the Analytics Dashboard, they should see three things:
 That number is not a guess. It is not a percentage pulled from a simple quiz average. It is a composite metric built on exponential decay, difficulty weighting, and probabilistic fraud detection — the same class of statistical machinery used in psychometric testing, financial risk modeling, and clinical diagnostics.
 
 We do not sell hope. We sell measurement. And measurement, when it is rigorous enough, becomes certainty.
+

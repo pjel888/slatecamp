@@ -39,9 +39,9 @@ cat package.json | jq '.dependencies, .devDependencies'
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase | Client + Server | Public anon key — RLS enforces security |
 | `SUPABASE_SERVICE_ROLE_KEY` | Supabase | **Server-only** | 🔴 **NEVER expose in client code or Server Components** |
 | `SUPABASE_URL` | Supabase | Server-only | Server-side URL (may differ from public URL) |
-| `STRIPE_SECRET_KEY` | Stripe | Server-only | Payment processing |
-| `STRIPE_WEBHOOK_SECRET` | Stripe | Server-only | Webhook signature verification |
-| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe | Client | Public Stripe key for Checkout |
+| `LEMONSQUEEZY_API_KEY` | LemonSqueezy | Server-only | Payment processing |
+| `LEMONSQUEEZY_WEBHOOK_SECRET` | LemonSqueezy | Server-only | Webhook signature verification |
+| `NEXT_PUBLIC_LEMONSQUEEZY_PUBLISHABLE_KEY` | LemonSqueezy | Client | Public LemonSqueezy key for Checkout |
 | `PAYREX_SECRET_KEY` | PayRex | Server-only | Philippine payment gateway |
 | `PAYREX_WEBHOOK_SECRET` | PayRex | Server-only | Webhook signature verification |
 | `ANTHROPIC_API_KEY` | Anthropic Claude | Server-only | AI features (bounded RAG, citations) |
@@ -80,11 +80,11 @@ cat package.json | jq '.dependencies, .devDependencies'
 - **Type generation:** `npx supabase gen types typescript --local > src/types/database.ts`
 - **Used by:** Everything
 
-#### Stripe
+#### LemonSqueezy
 - **Purpose:** International payment processing
 - **Status:** ✅ Infrastructure working (webhook handlers, checkout route). **⚠️ UI buttons not wired**
-- **Webhook endpoint:** `/api/webhooks/stripe` (verify path)
-- **Products configured:** Verify that Pro tier product/price IDs exist in Stripe dashboard
+- **Webhook endpoint:** `/api/webhooks/lemonsqueezy` (verify path)
+- **Products configured:** Verify that Pro tier product/price IDs exist in LemonSqueezy dashboard
 - **Test mode:** Verify test mode keys are used in development
 
 #### PayRex
@@ -156,7 +156,7 @@ cat package.json | jq '.dependencies, .devDependencies'
 | `react`, `react-dom` | UI library | Core |
 | `@supabase/ssr` | Supabase server/client | Auth + DB |
 | `@supabase/supabase-js` | Supabase JS client | Auth + DB |
-| `stripe` | Stripe Node SDK | Payments |
+| `lemonsqueezy` | LemonSqueezy Node SDK | Payments |
 | `zustand` | Client state management | State |
 | `zod` | Schema validation | Validation |
 | `tailwindcss` | Styling | CSS |
@@ -222,7 +222,7 @@ cat package.json | jq '.dependencies, .devDependencies'
 |---|---|---|
 | API routes | None documented | **⚠️ Contact form needs rate limiting before Phase 1 ships** |
 | Supabase API | Default Supabase rate limits | Sufficient for current scale |
-| Stripe webhooks | Stripe handles retry logic | OK |
+| LemonSqueezy webhooks | LemonSqueezy handles retry logic | OK |
 
 **Decision needed:** Implement rate limiting via middleware (recommended: `@upstash/ratelimit` with Vercel KV) or simple in-memory throttle for the contact form. The contact form is the most immediate need.
 
@@ -268,7 +268,7 @@ cat package.json | jq '.dependencies, .devDependencies'
 - [ ] Notification email templates for Campfire activity
 
 ### Before Phase 8 (Commercialization)
-- [ ] Institutional billing model decided (invoice vs. Stripe subscription)
+- [ ] Institutional billing model decided (invoice vs. LemonSqueezy subscription)
 - [ ] White-label CSS variable strategy confirmed
 - [ ] 3D Lab standalone licensing terms finalized
 
@@ -276,3 +276,5 @@ cat package.json | jq '.dependencies, .devDependencies'
 
 *Document version: 2026-03-26 · Pre-implementation baseline*
 *Update after each service provisioning or env variable addition.*
+
+

@@ -1070,7 +1070,7 @@ user_interactions    — immutable per-answer log: correct, time_spent, flagged
 user_node_mastery    — per-user per-node: attempts, correct, EMA weight, avg_time
 readiness_score_snapshots — append-only score history
 user_global_stats    — current_discipline_id, global_readiness_score, target_exam_date
-user_subscriptions   — tier (free/pro/enterprise), status, Stripe/Payrex IDs
+user_subscriptions   — tier (free/pro/enterprise), status, LemonSqueezy/Payrex IDs
 wiki_articles        — title, slug, content (text/MDX)
 wiki_article_taxonomy — article ↔ node mapping (with is_primary flag)
 models_3d            — 3D model registry: name, slug, url, thumbnail
@@ -1126,7 +1126,7 @@ feature_flags        — platform-level feature toggles with tier/role targeting
 | Auth | Supabase Auth | JWT. All data scoped to `auth.uid()`. |
 | State Management | Zustand | Client-side state for quiz engine and 3D Lab. |
 | 3D Engine | React Three Fiber + @react-three/drei | GLTF/GLB format. Blender Python for model generation. |
-| Payments | Stripe (international) + Payrex (Philippines) | Both `stripe_customer_id` and `payrex_customer_id` on `user_subscriptions`. |
+| Payments | LemonSqueezy (international) + Payrex (Philippines) | Both `lemon_squeezy_customer_id` and `payrex_customer_id` on `user_subscriptions`. |
 | AI | Anthropic Claude API | Temperature 0.0. Bounded RAG. Mandatory citations. |
 | IDE | Cursor IDE + Claude Code | Vibe coding. CLAUDE.md and .cursorrules as persistent context. |
 
@@ -1242,4 +1242,5 @@ All UI strings, error messages, onboarding copy, and system-generated feedback m
 *SlateCamp Product Architecture Document v2.0*  
 *Internal · Product Architect Reference · © 2025 SlateCamp*  
 *Maintained by: Claude (Product Architect) + Philip (Founder)*
+
 

@@ -156,7 +156,7 @@ Architecture is the ideal first market because:
 
 SlateCamp is not just a study app — it is a **proprietary system** built on a stack of novel algorithms, methodologies, and UX patterns. The IP is the moat. Below is a summary of the key protectable assets relevant to market positioning and funding conversations.
 
-> **UI Naming Note:** Several IP assets carry trademark names used in internal/legal docs but have student-facing labels in the UI per the Campfire brand voice guide:
+> **UI Naming Note:** Several IP assets carry trademark names used in internal/legal docs but have student-facing labels in the UI per the Slatecamp brand voice guide:
 > - **Blindspot Protocol™** → displayed as **"Focus Review"** in student UI
 > - **Endurance Cycle™** → displayed as **"Extended Practice"** in student UI
 > - **Proof Simulation™** → displayed as **"Full Exam Simulation"** in student UI
@@ -202,4 +202,5 @@ The IP above was designed around the **Architecture Licensure Exam** but is **pr
 - [ ]  What is the regulatory pathway for formally partnering with PRC or accredited schools?
 - [ ]  Is there a B2B appetite among nursing schools similar to architecture schools?
 - [ ]  What does the NCLEX/USMLE prep market look like in the Philippines? Is there a gap?
+
 

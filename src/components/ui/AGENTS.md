@@ -5,7 +5,7 @@
 
 ## Purpose
 
-shadcn/ui primitive components with Campfire design system tokens applied via Tailwind CSS v4 CSS variables. Base UI layer (Button, Card, Dialog, Input, etc.) used throughout the codebase. All styled with strict design constraints: no `shadow-xl`/`shadow-2xl` (except modals), max 300ms transitions, flexible text sizes based on context, proper border radii (cards `rounded-md`, buttons `rounded-sm`, modals `rounded-lg`).
+shadcn/ui primitive components with Slatecamp design system tokens applied via Tailwind CSS v4 CSS variables. Base UI layer (Button, Card, Dialog, Input, etc.) used throughout the codebase. All styled with strict design constraints: no `shadow-xl`/`shadow-2xl` (except modals), max 300ms transitions, flexible text sizes based on context, proper border radii (cards `rounded-md`, buttons `rounded-sm`, modals `rounded-lg`).
 
 ## Key Files
 
@@ -66,7 +66,7 @@ None. All UI primitives are flat in `src/components/ui/`.
 
 4. **Transitions must respect prefers-reduced-motion.** Use Tailwind `data-[state=open]:animate-*` with conditional logic, or CSS media queries.
 
-5. **No custom Campfire logic.** These are unstyled headless components with Campfire tokens baked in. Business logic (quiz, analytics) belongs in domain-specific components (quiz/, analytics/).
+5. **No custom Slatecamp logic.** These are unstyled headless components with Slatecamp tokens baked in. Business logic (quiz, analytics) belongs in domain-specific components (quiz/, analytics/).
 
 ### Common Patterns
 

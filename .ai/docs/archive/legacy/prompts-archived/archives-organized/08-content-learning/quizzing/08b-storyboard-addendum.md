@@ -48,9 +48,9 @@ STATE 3: User swipes the selected option card to the right.
     - Below threshold: card snaps back with spring animation (200ms)
     - Above threshold: card continues sliding right, accelerating
     - As card moves right, a colored confirmation strip is revealed underneath:
-      · If correct (immediate feedback modes): Cobalt stripe with ✓ icon
-      · If incorrect: Amber stripe with → icon
-      · In deferred modes: neutral grey stripe with ✓
+      · If correct (immediate feedback modes): Cobalt lemonsqueezy with ✓ icon
+      · If incorrect: Amber lemonsqueezy with → icon
+      · In deferred modes: neutral grey lemonsqueezy with ✓
     - The card fully exits to the right (300ms ease-out)
     - Haptic feedback fires at the threshold crossing (if device supports it)
     

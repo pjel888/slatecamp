@@ -19,7 +19,7 @@ Public subscription pricing page with tabbed tiers for individuals, educational 
 - **Tab structure:** Three views — Individuals, Educational, Enterprise — each with its own pricing tier grid
 - **Pricing data source:** `@/lib/constants/pricing` exports `INDIVIDUAL_TIERS`, `EDUCATIONAL_TIERS`, `ENTERPRISE_TIERS`
 - **Analytics:** `trackEvent({ event_name: 'upgrade_page_viewed' })` fires on mount
-- **Typography:** Uses `Instrument_Serif` (italic tagline), Campfire tokens for colors
+- **Typography:** Uses `Instrument_Serif` (italic tagline), Slatecamp tokens for colors
 - **Layout:** Centered max-w-[1200px], responsive grid (1 col mobile → 3 cols on md/lg)
 - When updating tiers (price, features, limits), edit constants in `@/lib/constants/pricing`
 

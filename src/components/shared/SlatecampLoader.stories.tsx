@@ -1,19 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { CampfireLoader } from './CampfireLoader'
+import { SlatecampLoader } from './SlatecampLoader'
 
 const meta = {
-  title: 'Shared/CampfireLoader',
-  component: CampfireLoader,
+  title: 'Shared/SlatecampLoader',
+  component: SlatecampLoader,
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: @/components/shared/CampfireLoader',
+        component: 'Source: @/components/shared/SlatecampLoader',
       },
     },
   },
-} satisfies Meta<typeof CampfireLoader>
+} satisfies Meta<typeof SlatecampLoader>
 
 export default meta
 

@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 
 // ─── Branded loading messages — warm, campfire-themed ────────────────────────
 
-const CAMPFIRE_MESSAGES = [
+const SLATECAMP_MESSAGES = [
   'Setting up the campfire...',
   'Gathering your study materials...',
   'Warming up the questions...',
@@ -35,14 +35,14 @@ const CAMPFIRE_MESSAGES = [
 
 const getRandomMessage = (exclude?: string): string => {
   const pool = exclude
-    ? CAMPFIRE_MESSAGES.filter((m) => m !== exclude)
-    : CAMPFIRE_MESSAGES
+    ? SLATECAMP_MESSAGES.filter((m) => m !== exclude)
+    : SLATECAMP_MESSAGES
   return pool[Math.floor(Math.random() * pool.length)]
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-interface CampfireLoaderProps {
+interface SlatecampLoaderProps {
   /** Override the rotating messages with a static one */
   staticMessage?: string
   /** How often to rotate messages (ms). Default 2500. */
@@ -53,15 +53,15 @@ interface CampfireLoaderProps {
   isOverlay?: boolean
 }
 
-export const CampfireLoader = ({
+export const SlatecampLoader = ({
   staticMessage,
   interval = 2500,
   className,
   isOverlay = false,
-}: CampfireLoaderProps) => {
+}: SlatecampLoaderProps) => {
   // Use a deterministic initial state to avoid SSR hydration mismatches
   const [message, setMessage] = useState(
-    staticMessage ?? CAMPFIRE_MESSAGES[0],
+    staticMessage ?? SLATECAMP_MESSAGES[0],
   )
   const [visible, setVisible] = useState(true)
 
@@ -69,7 +69,7 @@ export const CampfireLoader = ({
     if (staticMessage) return
 
     // Switch to a random message on mount
-    setMessage(getRandomMessage(CAMPFIRE_MESSAGES[0]))
+    setMessage(getRandomMessage(SLATECAMP_MESSAGES[0]))
 
     const timer = setInterval(() => {
       setVisible(false)

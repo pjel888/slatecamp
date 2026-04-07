@@ -207,3 +207,4 @@ export async function getPredictionHistory(userId: string, limit = 10) {
 - Prediction gap trend per user over time (should decrease)
 - % of sessions where prediction was made vs. skipped
 - Correlation between calibration accuracy and Readiness Score
+

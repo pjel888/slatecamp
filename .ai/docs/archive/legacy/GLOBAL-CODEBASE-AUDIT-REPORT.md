@@ -49,7 +49,7 @@ The codebase demonstrates exceptional velocity and architectural ambition from a
 | Rich Text       | TipTap                       | 3.20.4 (13 extensions)   | Current                             |
 | Charts          | Recharts                     | 3.8.0                    | Current                             |
 | AI              | Anthropic SDK                | 0.78.0                   | Current                             |
-| Payments        | Stripe + PayRex              | 20.4.1 / 1.7.3           | Current but non-functional          |
+| Payments        | LemonSqueezy + PayRex              | 20.4.1 / 1.7.3           | Current but non-functional          |
 | Package Manager | Bun                          | bun.lock present         | Current                             |
 | Deployment      | Vercel                       | 2 cron jobs configured   | Current                             |
 | Icons           | Lucide + Phosphor            | 0.577.0 / 2.1.10         | Dual library -- needs consolidation |
@@ -68,7 +68,7 @@ The codebase demonstrates exceptional velocity and architectural ambition from a
 - `.env.example` exists with all variables documented
 - `.env.local` correctly gitignored
 - No secrets in `NEXT_PUBLIC_*` variables
-- Stripe publishable key correctly uses `NEXT_PUBLIC_` prefix
+- LemonSqueezy publishable key correctly uses `NEXT_PUBLIC_` prefix
 - **Assessment: CLEAN**
 
 #### Database Schema
@@ -313,7 +313,7 @@ These three sources of role truth can diverge. A user could have a role in `user
 
 | Check                                  | Status                                         |
 | -------------------------------------- | ---------------------------------------------- |
-| Stripe webhook signature verified      | YES                                            |
+| LemonSqueezy webhook signature verified      | YES                                            |
 | PayRex webhook signature verified      | YES                                            |
 | Checkout requires authentication       | YES                                            |
 | Tier from webhook metadata, not client | YES                                            |
@@ -400,7 +400,7 @@ This means null reference crashes happen at runtime, implicit `any` masks real b
 
 ---
 
-### 9. CAMPFIRE DESIGN SYSTEM COMPLIANCE
+### 9. Slatecamp design system COMPLIANCE
 
 #### Design System Health Scorecard
 
@@ -584,7 +584,7 @@ The churn hotspots (Sidebar, dashboard layout, QuizRenderer) are all in the core
 
 1. **Single developer, no tests** -- Bus factor of 1 with zero regression safety net. Every deploy is a prayer.
 2. **SRS disconnected** -- The core learning loop (spaced repetition) is broken for all new testing sessions. Users are practicing but their review schedules are not updating. This silently degrades learning outcomes.
-3. **Payment non-functional** -- Cannot generate revenue. Stripe/PayRex infrastructure exists but the upgrade page buttons have no onClick handlers.
+3. **Payment non-functional** -- Cannot generate revenue. LemonSqueezy/PayRex infrastructure exists but the upgrade page buttons have no onClick handlers.
 4. **TypeScript strict off** -- Any senior engineer joining the team will immediately flag this. It signals "move fast, break things" culture.
 
 **Engineering-weeks to remediate critical findings:**
@@ -606,7 +606,7 @@ The architecture can handle 10x users with targeted fixes. Supabase + Vercel aut
 
 | Requirement                  | Status                                                          |
 | ---------------------------- | --------------------------------------------------------------- |
-| Payment provider integration | Stripe + PayRex configured, webhook handlers working            |
+| Payment provider integration | LemonSqueezy + PayRex configured, webhook handlers working            |
 | Checkout flow                | Route exists, requires auth, blocks free tier                   |
 | Upgrade page                 | Built with feature comparison and pricing                       |
 | Payment buttons              | NON-FUNCTIONAL -- no onClick handlers                           |
@@ -829,3 +829,4 @@ Priority-ordered features needed for market competitiveness and monetization.
 ---
 
 _Report generated 2026-03-25 by Claude Opus 4.6 (1M context). All findings are evidence-based from static code analysis. File paths are absolute to `D:/SlateCamp/slate-camp/`. Every finding references a specific file, line number, or data point from the 9 phase audit reports._
+

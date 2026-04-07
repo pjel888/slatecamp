@@ -2,7 +2,7 @@
 
 **Status:** Active
 **Analysis Date:** 2026-04-06
-**Source:** `src/lib/supabase/server.ts`, `src/lib/supabase/client.ts`, `src/lib/supabase/middleware.ts`, `src/lib/stripe/config.ts`, `src/lib/payrex/config.ts`, `src/lib/ai/provider.ts`, `src/app/api/cron/*/route.ts`
+**Source:** `src/lib/supabase/server.ts`, `src/lib/supabase/client.ts`, `src/lib/supabase/middleware.ts`, `src/lib/lemonsqueezy/config.ts`, `src/lib/payrex/config.ts`, `src/lib/ai/provider.ts`, `src/app/api/cron/*/route.ts`
 
 ## Overview
 
@@ -23,7 +23,7 @@ These are exposed to the browser. Use for feature flags and non-sensitive config
 | `NEXT_PUBLIC_APP_URL` | Yes | Application URL (e.g., `http://localhost:3000`) |
 | `NEXT_PUBLIC_DEMO_MODE` | No | Set to `"true"` to enable demo mode without database |
 | `NEXT_PUBLIC_ENABLE_DEMO_MODE` | No | Alternative demo mode flag |
-| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | No | Stripe publishable key (for future Stripe.js) |
+| `NEXT_PUBLIC_LEMONSQUEEZY_PUBLISHABLE_KEY` | No | LemonSqueezy publishable key (for future LemonSqueezy.js) |
 
 **Usage locations:**
 - `src/lib/supabase/client.ts` — Browser Supabase client
@@ -52,18 +52,18 @@ These are never exposed to the browser.
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `STRIPE_SECRET_KEY` | Yes (prod) | Stripe API secret key |
-| `STRIPE_WEBHOOK_SECRET` | Yes (prod) | Stripe webhook signing secret (from `stripe listen`) |
-| `STRIPE_CAMP_PRICE_ID` | Yes (prod) | Stripe price ID for Camp subscription |
-| `STRIPE_INSURANCE_PRICE_ID` | Yes (prod) | Stripe price ID for Insurance add-on |
-| `STRIPE_INSTITUTIONAL_PRICE_ID` | Yes (prod) | Stripe price ID for Institutional tier |
+| `LEMONSQUEEZY_API_KEY` | Yes (prod) | LemonSqueezy API secret key |
+| `LEMONSQUEEZY_WEBHOOK_SECRET` | Yes (prod) | LemonSqueezy webhook signing secret (from `lemonsqueezy listen`) |
+| `LEMONSQUEEZY_CAMP_PRICE_ID` | Yes (prod) | LemonSqueezy price ID for Camp subscription |
+| `LEMONSQUEEZY_INSURANCE_PRICE_ID` | Yes (prod) | LemonSqueezy price ID for Insurance add-on |
+| `LEMONSQUEEZY_INSTITUTIONAL_PRICE_ID` | Yes (prod) | LemonSqueezy price ID for Institutional tier |
 | `PAYREX_SECRET_KEY` | Yes (prod) | PayRex API secret key |
 | `PAYREX_WEBHOOK_SECRET` | Yes (prod) | PayRex webhook signing secret |
 
 **Usage locations:**
-- `src/lib/stripe/config.ts` — Stripe client initialization
+- `src/lib/lemonsqueezy/config.ts` — LemonSqueezy client initialization
 - `src/lib/payrex/config.ts` — PayRex client initialization
-- `src/app/api/webhooks/stripe/route.ts` — Stripe webhook handler
+- `src/app/api/webhooks/lemonsqueezy/route.ts` — LemonSqueezy webhook handler
 - `src/app/api/webhooks/payrex/route.ts` — PayRex webhook handler
 
 ### AI
@@ -116,11 +116,11 @@ vercel env add SUPABASE_SERVICE_ROLE_KEY production
 # etc.
 ```
 
-### Stripe Webhook Testing (Local)
+### LemonSqueezy Webhook Testing (Local)
 
 ```bash
-stripe listen --forward-to localhost:3000/api/webhooks/stripe
-# Returns webhook secret, set as STRIPE_WEBHOOK_SECRET
+lemonsqueezy listen --forward-to localhost:3000/api/webhooks/lemonsqueezy
+# Returns webhook secret, set as LEMONSQUEEZY_WEBHOOK_SECRET
 ```
 
 ### PayRex Webhook Testing (Local)
@@ -159,3 +159,4 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=   # Leave empty or set to placeholder
 ---
 
 *Environment variables reference: 2026-04-06*
+

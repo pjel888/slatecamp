@@ -12,7 +12,7 @@
 - **Project:** SlateCamp — A high-performance, discipline-agnostic study engine for professional licensure exams
 - **Internal codename:** slatecamp
 - **Version:** 0.1.0
-- **Aesthetic:** Campfire — warm, inviting, research-backed, commercially viable
+- **Aesthetic:** Slatecamp — warm, inviting, research-backed, commercially viable
 - **Voice:** "Confident Companion" — warm, supportive, growth-framed
 
 ### Tech Stack (Exact Versions)
@@ -32,7 +32,7 @@
 | State | zustand | 5.0.12 |
 | Charts | recharts | 3.8.0 |
 | AI | @anthropic-ai/sdk | 0.78.0 |
-| Payments (Stripe) | stripe / @stripe/stripe-js | 20.4.1 / 8.11.0 |
+| Payments (LemonSqueezy) | lemonsqueezy / @lemonsqueezy/lemonsqueezy-js | 20.4.1 / 8.11.0 |
 | Payments (PayRex) | payrex-node | 1.7.3 |
 | Validation | zod | 4.3.6 |
 | Content | next-mdx-remote / @mdx-js/mdx | 6.0.0 / 3.1.1 |
@@ -204,7 +204,7 @@
 #### Subscriptions & Analytics
 | Table | PK | Key Columns | RLS |
 |-------|----|-----------|----|
-| user_subscriptions | subscription_id | user_id (UNIQUE), tier, status, stripe/payrex IDs | Own-user + admin |
+| user_subscriptions | subscription_id | user_id (UNIQUE), tier, status, lemonsqueezy/payrex IDs | Own-user + admin |
 | analytics_events | id | user_id, event_name, event_properties (JSONB) | Own-user |
 | notes | note_id | user_id, title, content (JSONB), topic_id, article_id | Own-user CRUD |
 
@@ -225,8 +225,8 @@
 
 | Route | Method | Auth | Purpose |
 |-------|--------|------|---------|
-| /api/payments/checkout | POST | User | Create Stripe/PayRex checkout session |
-| /api/webhooks/stripe | POST | Signature | Handle subscription events |
+| /api/payments/checkout | POST | User | Create LemonSqueezy/PayRex checkout session |
+| /api/webhooks/lemonsqueezy | POST | Signature | Handle subscription events |
 | /api/webhooks/payrex | POST | Signature | Handle payment events |
 | /api/cron/blindspot-scan | GET | CRON_SECRET | Generate blindspot queues for paid users |
 | /api/cron/compute-signals | GET | CRON_SECRET | Compute velocity, churn risk, signals |
@@ -360,7 +360,7 @@ All admin actions check `canManageContent()` before mutation. All use `createAdm
 | Service | Package | Purpose | Env Vars |
 |---------|---------|---------|----------|
 | Supabase | @supabase/supabase-js | Database, auth, real-time | SUPABASE_URL, ANON_KEY, SERVICE_ROLE_KEY |
-| Stripe | stripe, @stripe/stripe-js | Subscription billing | STRIPE_SECRET_KEY, WEBHOOK_SECRET |
+| LemonSqueezy | lemonsqueezy, @lemonsqueezy/lemonsqueezy-js | Subscription billing | LEMONSQUEEZY_API_KEY, WEBHOOK_SECRET |
 | PayRex | payrex-node | PH payment gateway (GCash, Maya) | PAYREX_SECRET_KEY, WEBHOOK_SECRET |
 | Anthropic | @anthropic-ai/sdk | AI tutor (Claude, temp=0) | ANTHROPIC_API_KEY |
 | MDX Stack | next-mdx-remote, @mdx-js/mdx | Wiki content rendering | None |
@@ -450,9 +450,9 @@ All admin actions check `canManageContent()` before mutation. All use `createAdm
 **Server-only:**
 - `SUPABASE_SERVICE_ROLE_KEY` — Full DB access
 - `ANTHROPIC_API_KEY` — Claude AI
-- `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`
+- `LEMONSQUEEZY_API_KEY`, `LEMONSQUEEZY_WEBHOOK_SECRET`
 - `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`
-- `PAYMENT_PROVIDER` — "stripe" or "payrex"
+- `PAYMENT_PROVIDER` — "lemonsqueezy" or "payrex"
 - `CRON_SECRET` — Cron job protection
 - `AI_PROVIDER` — "anthropic" or "openai"
 
@@ -625,7 +625,7 @@ Only 2 found (minimal debt):
 ### Security Strengths
 - Zod validation on all admin server actions
 - UUID validation on all ID parameters
-- Webhook signature verification (Stripe, PayRex)
+- Webhook signature verification (LemonSqueezy, PayRex)
 - CRON_SECRET on scheduled jobs
 - Rate limiting on all AI routes
 - RLS enabled on all user-scoped tables
@@ -717,3 +717,5 @@ Only 2 found (minimal debt):
 **Agents used:** 7 parallel research agents
 **Total tokens consumed:** ~700K across all agents
 **Total research time:** ~3 minutes wall clock (parallel execution)
+
+

@@ -71,3 +71,4 @@ All meaningful documentation changes are logged here. Format: `YYYY-MM-DD | [cha
 ---
 
 *Log every meaningful change. "Meaningful" = anything that would help a future agent understand the documentation's evolution.*
+

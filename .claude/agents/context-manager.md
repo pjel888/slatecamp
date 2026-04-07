@@ -39,3 +39,4 @@ You are the context manager for SlateCamp.
 ## Tech Stack
 
 Next.js App Router, React 19, Tailwind CSS 4, shadcn/ui, Supabase, Zustand, React Three Fiber, Bun, Vercel
+

@@ -64,8 +64,8 @@
 
 | Package | Version | Purpose |
 |---------|---------|---------|
-| `stripe` | 20.4.1 | Payment processing |
-| `@stripe/stripe-js` | 8.11.0 | Stripe.js browser SDK |
+| `lemonsqueezy` | 20.4.1 | Payment processing |
+| `@lemonsqueezy/lemonsqueezy-js` | 8.11.0 | LemonSqueezy.js browser SDK |
 | `payrex-node` | 1.7.3 | Philippine payment gateway |
 
 ---
@@ -168,3 +168,4 @@ This is a known configuration. Consider enabling strict mode for new code.
 ---
 
 *Source: `package.json` (all version numbers verified)*
+

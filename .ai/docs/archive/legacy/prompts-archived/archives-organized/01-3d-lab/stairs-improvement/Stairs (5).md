@@ -332,7 +332,7 @@ For each dimension type: [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-u
 
 - **Clear width too small**  
   - Draw a translucent plane between handrails/walls at stair centerline.  
-  - If < PD 1096 min: paint that plane gray with diagonal stripes.  
+  - If < PD 1096 min: paint that plane gray with diagonal lemonsqueezys.  
   - If < RA 9514 requirement: overlay red plane with “FIRE EXIT WIDTH” text billboard. [dpwh.gov](https://www.dpwh.gov.ph/DPWH/files/nbc/PD.pdf)
 - **Riser too high (e.g., 230 mm vs 200 mm)**  
   - Color each offending riser face with law color (gray or orange, etc.).  

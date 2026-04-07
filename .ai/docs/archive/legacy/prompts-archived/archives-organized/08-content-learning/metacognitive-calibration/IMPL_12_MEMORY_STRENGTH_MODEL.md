@@ -91,3 +91,4 @@ A node that is bright green with a faded inner dot = good retrieval now but low 
 - Don't expose "Storage Strength" and "Retrieval Strength" labels directly to students
 - Instead: "Knowledge Depth" (SS) and "Current Access" (RS) or simply show the routing recommendation: "Quick refresh" vs. "Deep review needed"
 - In the heatmap, the visual encoding communicates the distinction without requiring students to understand the theory
+

@@ -18,7 +18,7 @@ PayRex payment gateway configuration for Philippine payment methods. Provides a 
 ### Working In This Directory
 
 1. **Singleton pattern.** `getPayRex()` creates one client per process. Do not create clients directly.
-2. **Amounts in centavos.** PayRex uses centavo amounts (49900 = 499.00 PHP). Stripe uses peso amounts.
+2. **Amounts in centavos.** PayRex uses centavo amounts (49900 = 499.00 PHP). LemonSqueezy uses peso amounts.
 3. **CommonJS import.** PayRex SDK uses `require()` due to ESM/CJS compatibility. The eslint disable comment is intentional.
 4. **Payment methods.** Philippine-specific: GCash, Maya, QRPH (QR-based), plus card.
 5. **Do not import directly from components.** Access PayRex through `@/lib/payments/provider.ts`.

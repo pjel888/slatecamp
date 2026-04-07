@@ -239,9 +239,9 @@ bunx supabase stop
 
 | **Flow** | **What to Test** | **How** |
 | --- | --- | --- |
-| Stripe Webhook (Subscription) | `checkout.session.completed` → user tier upgraded in database → feature gates unlocked. | Send test webhook event → verify `user_subscriptions` table updated → verify Storm Mode accessible. |
-| Stripe Webhook (Cancellation) | `customer.subscription.deleted` → user reverts to Free tier → paid features gated. | Send cancellation webhook → verify tier downgrade → verify Storm Mode returns paywall. |
-| Stripe Webhook (Signature) | Webhook with invalid signature is rejected with 400. | Send request with tampered `stripe-signature` header → verify rejection. |
+| LemonSqueezy Webhook (Subscription) | `checkout.session.completed` → user tier upgraded in database → feature gates unlocked. | Send test webhook event → verify `user_subscriptions` table updated → verify Storm Mode accessible. |
+| LemonSqueezy Webhook (Cancellation) | `customer.subscription.deleted` → user reverts to Free tier → paid features gated. | Send cancellation webhook → verify tier downgrade → verify Storm Mode returns paywall. |
+| LemonSqueezy Webhook (Signature) | Webhook with invalid signature is rejected with 400. | Send request with tampered `x-signature` header → verify rejection. |
 | PayRex (GCash/Maya) | Payment intent created → user pays → callback received → tier activated. | Create payment → simulate success callback → verify tier activation. |
 | Tier Feature Gating | Free users: no Storm Mode, no AI Tutor, limited quiz items. Camp users: full quiz + analytics. Insurance: everything. | Authenticate as each tier → attempt to access gated endpoints → verify correct 200/403 responses. |
 
@@ -311,7 +311,7 @@ export default defineConfig({
 | **3D Lab Parametric** | Open 3D Lab → adjust FAR slider beyond legal limit → observe red geometry + code citation tooltip | Model updates in real-time. Tooltip cites exact building code section. Click opens Wiki reference. |
 | **Notes Capture Flow** | Read Wiki article → highlight text → click "Capture" → open Notes → verify note with Source Badge | Note appears with correct formatting, `topic_id` tag, and clickable Source Badge linking back to Wiki origin. |
 | **Cross-Device Sync** | Capture note on desktop viewport → switch to mobile viewport → verify note appears | Block structure intact. Source Badge functional. No data loss. |
-| **Payment Upgrade** | Free user → click Storm Mode → paywall appears → complete Stripe checkout → Storm Mode unlocked | Paywall renders with correct pricing. After payment, page reloads with Storm Mode accessible. No double-charge. |
+| **Payment Upgrade** | Free user → click Storm Mode → paywall appears → complete LemonSqueezy checkout → Storm Mode unlocked | Paywall renders with correct pricing. After payment, page reloads with Storm Mode accessible. No double-charge. |
 | **Omnibar Search** | Press Cmd+K → type partial query → select result → navigate to correct page | Results appear in <100ms. Typo tolerance works. Navigation lands on correct Wiki article or topic. |
 | **Blindspot Protocol** | Complete quiz with red nodes → dashboard shows Blindspot queue → complete queue → node reclassifies | Queue targets correct weak nodes. Post-completion, at least one node moves from Red → Amber on heatmap. |
 
@@ -384,7 +384,7 @@ These tests **must pass** before any deployment to production. Failures block th
 - [ ]  **EMA weighting correctness** — verify recent scores are weighted higher than historical scores by the correct exponential factor
 - [ ]  **AI Tutor returns ONLY sourced content** — ask about topic not in Wiki, verify "I don't know" fallback fires
 - [ ]  **Auditor LLM catches hallucination** — inject fabricated building code number, verify Auditor flags it before response delivery
-- [ ]  **Stripe webhook → tier gating** — verify free user cannot access Storm Mode; paid user can; cancelled user reverts
+- [ ]  **LemonSqueezy webhook → tier gating** — verify free user cannot access Storm Mode; paid user can; cancelled user reverts
 - [ ]  **PayRex callback → tier activation** — verify GCash/Maya payment success callback activates correct subscription tier
 - [ ]  **Heatmap boundary values** — verify 85% → Green, 84% → Yellow, 60% → Yellow, 59% → Red, 0 attempts → Grey
 
@@ -477,10 +477,10 @@ test('dashboard has no accessibility violations', async ({ page }) => {
 | SQL Injection (Supabase) | Pass `'; DROP TABLE users; --` as quiz answer → verify parameterized query rejects it | Integration |
 | IDOR (Insecure Direct Object Reference) | Modify quiz session ID in URL to another user's session → verify 403 / empty result | Integration |
 | RLS Bypass | Use `service_role` key patterns to test that anon key cannot bypass RLS policies | Integration |
-| Stripe Webhook Spoofing | Send webhook with invalid `stripe-signature` → verify 400 rejection | Integration |
+| LemonSqueezy Webhook Spoofing | Send webhook with invalid `x-signature` → verify 400 rejection | Integration |
 | Rate Limiting (Auth) | Send 20 rapid login attempts → verify rate limit kicks in after threshold | Integration |
 | Rate Limiting (AI Tutor) | Send 50 rapid AI queries → verify rate limit response after threshold | Integration |
-| Client Bundle Secrets | Build production bundle → grep for `SUPABASE_SERVICE_ROLE_KEY`, `STRIPE_SECRET_KEY` → verify zero matches | CI |
+| Client Bundle Secrets | Build production bundle → grep for `SUPABASE_SERVICE_ROLE_KEY`, `LEMONSQUEEZY_API_KEY` → verify zero matches | CI |
 | CSP Headers | Verify `Content-Security-Policy` header present on production responses and blocks inline scripts | E2E |
 
 ---

@@ -11,7 +11,7 @@ You are the DevOps engineer for SlateCamp — deployed on Vercel with Supabase b
 - **Hosting:** Vercel (Next.js optimized)
 - **Database:** Supabase PostgreSQL 17 (ap-northeast-1)
 - **Package Manager:** Bun (`bun.lock` text format)
-- **Payments:** Stripe + PayRex
+- **Payments:** LemonSqueezy + PayRex
 
 ## Deployment
 - Push to `main` → auto-deploy to Vercel

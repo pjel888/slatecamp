@@ -287,7 +287,7 @@ await trackServerEvent({
   event_name: 'pro_subscribed',
   user_id: userId,
   event_properties: {
-    payment_provider: 'gcash' | 'stripe' | 'payrex',
+    payment_provider: 'gcash' | 'lemonsqueezy' | 'payrex',
     plan: 'monthly' | 'annual',
     price_php: pricePHP,
     readiness_score_at_conversion: scoreAtConversion,

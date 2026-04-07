@@ -27,7 +27,7 @@ const techStack = [
   { component: 'State',      pkg: 'zustand',                         version: '5.0.12',             notes: '2 stores' },
   { component: 'Charts',     pkg: 'recharts',                        version: '3.8.0',              notes: '' },
   { component: 'AI',         pkg: '@anthropic-ai/sdk',               version: '0.78.0',             notes: 'Claude, temp=0' },
-  { component: 'Payments',   pkg: 'stripe + payrex-node',            version: '20.4.1 / 1.7.3',    notes: '' },
+  { component: 'Payments',   pkg: 'lemonsqueezy + payrex-node',            version: '20.4.1 / 1.7.3',    notes: '' },
   { component: 'Validation', pkg: 'zod',                             version: '4.3.6',              notes: '' },
   { component: 'Content',    pkg: 'next-mdx-remote + @mdx-js/mdx',  version: '6.0.0 / 3.1.1',     notes: '' },
 ]
@@ -81,7 +81,7 @@ const dbClusters = [
     variant: 'danger' as const,
     tables: [
       { name: 'profiles',            desc: 'full_name, discipline_id, account_mode',        access: 'Own-user' },
-      { name: 'user_subscriptions',  desc: 'tier, status, stripe IDs',                      access: 'Own-user + admin' },
+      { name: 'user_subscriptions',  desc: 'tier, status, lemonsqueezy IDs',                      access: 'Own-user + admin' },
       { name: 'organizations',       desc: 'name, type, max_seats',                         access: 'Org members' },
       { name: 'user_roles',          desc: 'role enum',                                     access: 'Admin only' },
       { name: 'audit_logs',          desc: 'actor_id, event_type, content_snapshot',        access: 'Super admin' },
@@ -139,13 +139,13 @@ const envVars = {
     'NEXT_PUBLIC_SUPABASE_URL',
     'NEXT_PUBLIC_SUPABASE_ANON_KEY',
     'NEXT_PUBLIC_APP_URL',
-    'NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY',
+    'NEXT_PUBLIC_LEMONSQUEEZY_PUBLISHABLE_KEY',
   ],
   server: [
     'SUPABASE_SERVICE_ROLE_KEY',
     'ANTHROPIC_API_KEY',
-    'STRIPE_SECRET_KEY',
-    'STRIPE_WEBHOOK_SECRET',
+    'LEMONSQUEEZY_API_KEY',
+    'LEMONSQUEEZY_WEBHOOK_SECRET',
     'PAYREX_SECRET_KEY',
   ],
 }
@@ -586,3 +586,4 @@ export default function ArchitecturePage() {
     </div>
   )
 }
+

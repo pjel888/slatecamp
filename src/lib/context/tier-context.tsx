@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, useCallback, useContext, useMemo } from "react";
 import type { UserTier } from "@/types/app";
 import type { TierCapabilities } from "@/lib/dev/dev-mode";
 import { TIER_CAPABILITIES } from "@/lib/dev/dev-mode";
@@ -62,9 +62,11 @@ export function TierProvider({
   effectiveTier,
   isDevMode,
 }: TierProviderProps) {
-  const capabilities = TIER_CAPABILITIES[effectiveTier];
-  const hasAccess = (requiredTier: UserTier) =>
-    TIER_RANK[effectiveTier] >= TIER_RANK[requiredTier];
+  const capabilities = useMemo(() => TIER_CAPABILITIES[effectiveTier], [effectiveTier]);
+  const hasAccess = useCallback(
+    (requiredTier: UserTier) => TIER_RANK[effectiveTier] >= TIER_RANK[requiredTier],
+    [effectiveTier],
+  );
 
   return (
     <TierContext.Provider

@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Campfire Graphic System v2 -- design tokens, icon system, CSS patterns, and SVG utility components for SlateCamp. Provides the canonical color palette for SVG/Canvas contexts, the SCIcon wrapper for Phosphor icons with standardized sizing, and CSS files for gradients and noise patterns.
+Slatecamp Graphic System v2 -- design tokens, icon system, CSS patterns, and SVG utility components for SlateCamp. Provides the canonical color palette for SVG/Canvas contexts, the SCIcon wrapper for Phosphor icons with standardized sizing, and CSS files for gradients and noise patterns.
 
 ## Key Files
 

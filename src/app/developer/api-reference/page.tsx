@@ -14,18 +14,18 @@ const paymentEndpoints = [
   {
     method: 'POST',
     path: '/api/payments/checkout',
-    description: 'Create a Stripe or PayRex checkout session for a paid tier.',
+    description: 'Create a LemonSqueezy or PayRex checkout session for a paid tier.',
     auth: 'User session (Supabase)',
     badges: ['Zod'],
     requestSchema: `// Body
 {
   tier: "camp" | "storm" | "chill"   // "free" returns 400
 }`,
-    responseExample: `// 200 OK — Stripe
+    responseExample: `// 200 OK — LemonSqueezy
 {
-  "url": "https://checkout.stripe.com/pay/cs_...",
+  "url": "https://checkout.lemonsqueezy.com/pay/cs_...",
   "id": "cs_live_...",
-  "provider": "stripe"
+  "provider": "lemonsqueezy"
 }
 
 // 200 OK — Demo mode
@@ -44,13 +44,13 @@ const paymentEndpoints = [
 const webhookEndpoints = [
   {
     method: 'POST',
-    path: '/api/webhooks/stripe',
-    description: 'Handle Stripe subscription lifecycle events. Verifies stripe-signature header.',
-    auth: 'Stripe webhook signature (STRIPE_WEBHOOK_SECRET)',
-    badges: ['Stripe'],
-    requestSchema: `// Stripe Event — raw body required for signature verification
+    path: '/api/webhooks/lemonsqueezy',
+    description: 'Handle LemonSqueezy subscription lifecycle events. Verifies x-signature header.',
+    auth: 'LemonSqueezy webhook signature (LEMONSQUEEZY_WEBHOOK_SECRET)',
+    badges: ['LemonSqueezy'],
+    requestSchema: `// LemonSqueezy Event — raw body required for signature verification
 // Handled events:
-//   checkout.session.completed  → upsert user_subscriptions (tier, stripe_customer_id, stripe_subscription_id, status='active')
+//   checkout.session.completed  → upsert user_subscriptions (tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status='active')
 //                                  + insert analytics_events { event_name: 'pro_subscribed' }
 //   customer.subscription.deleted → downgrade to tier='free', status='canceled'`,
     responseExample: `{ "received": true }`,
@@ -729,10 +729,10 @@ export default function ApiReferencePage() {
         {/* ── Tab 3: Webhooks ───────────────────────────────────── */}
         <TabsContent value="webhooks" className="pt-6 space-y-8">
 
-          {/* Stripe */}
+          {/* LemonSqueezy */}
           <section>
             <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Stripe — POST /api/webhooks/stripe
+              LemonSqueezy — POST /api/webhooks/lemonsqueezy
             </p>
             <div className="rounded-xs border border-border overflow-hidden">
               <table className="w-full text-left">
@@ -756,11 +756,11 @@ export default function ApiReferencePage() {
                     <td className="px-4 py-3 align-top">
                       <p className="text-[11px] text-muted-foreground leading-relaxed">
                         UPDATE <span className="font-[family-name:var(--font-dm-mono)]">user_subscriptions</span>{' '}
-                        SET tier, stripe_customer_id, stripe_subscription_id, status=&apos;active&apos; WHERE user_id = metadata.userId
+                        SET tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status=&apos;active&apos; WHERE user_id = metadata.userId
                       </p>
                       <p className="text-[11px] text-muted-foreground leading-relaxed mt-1">
                         INSERT <span className="font-[family-name:var(--font-dm-mono)]">analytics_events</span>{' '}
-                        &#123; event_name: &apos;pro_subscribed&apos;, event_properties: &#123; plan, stripe_subscription_id &#125; &#125;
+                        &#123; event_name: &apos;pro_subscribed&apos;, event_properties: &#123; plan, lemon_squeezy_subscription_id &#125; &#125;
                       </p>
                     </td>
                   </tr>
@@ -773,7 +773,7 @@ export default function ApiReferencePage() {
                     <td className="px-4 py-3 align-top">
                       <p className="text-[11px] text-muted-foreground leading-relaxed">
                         UPDATE <span className="font-[family-name:var(--font-dm-mono)]">user_subscriptions</span>{' '}
-                        SET tier=&apos;free&apos;, stripe_subscription_id=null, status=&apos;canceled&apos; WHERE stripe_subscription_id = subscription.id
+                        SET tier=&apos;free&apos;, lemon_squeezy_subscription_id=null, status=&apos;canceled&apos; WHERE lemon_squeezy_subscription_id = subscription.id
                       </p>
                     </td>
                   </tr>
@@ -787,13 +787,13 @@ export default function ApiReferencePage() {
               </p>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
                 Reads raw body text (not parsed JSON) and verifies against{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">stripe-signature</span>{' '}
+                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">x-signature</span>{' '}
                 header using{' '}
                 <span className="font-[family-name:var(--font-dm-mono)] text-foreground">
-                  stripe.webhooks.constructEvent(body, sig, STRIPE_WEBHOOK_SECRET)
+                  lemonsqueezy.webhooks.constructEvent(body, sig, LEMONSQUEEZY_WEBHOOK_SECRET)
                 </span>.
                 Returns 400 if signature is missing or invalid. Requires{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">STRIPE_WEBHOOK_SECRET</span>{' '}
+                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">LEMONSQUEEZY_WEBHOOK_SECRET</span>{' '}
                 env var.
               </p>
             </div>
@@ -868,12 +868,12 @@ export default function ApiReferencePage() {
                 <span className="font-[family-name:var(--font-dm-mono)] text-foreground">
                   {'{ "received": true }'}
                 </span>{' '}
-                with HTTP 200. Stripe and PayRex retry on non-2xx responses.
+                with HTTP 200. LemonSqueezy and PayRex retry on non-2xx responses.
               </p>
               <p>
-                Register webhook endpoints in the Stripe and PayRex dashboards pointing to the
+                Register webhook endpoints in the LemonSqueezy and PayRex dashboards pointing to the
                 production URL. Use{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">stripe listen --forward-to localhost:3000/api/webhooks/stripe</span>{' '}
+                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">lemonsqueezy listen --forward-to localhost:3000/api/webhooks/lemonsqueezy</span>{' '}
                 for local development.
               </p>
             </div>
@@ -883,3 +883,4 @@ export default function ApiReferencePage() {
     </div>
   )
 }
+

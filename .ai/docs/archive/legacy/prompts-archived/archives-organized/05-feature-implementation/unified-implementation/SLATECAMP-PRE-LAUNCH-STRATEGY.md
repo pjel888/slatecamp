@@ -29,7 +29,7 @@ These items prevent a user from completing the core loop (Diagnostic → Readine
 
 **LB-1: Payment Buttons Non-Functional (REVENUE-BLOCKING)**
 - **File:** `/dashboard/upgrade` page
-- **Problem:** GCash and Card payment buttons have no `onClick` handlers. The entire Stripe + PayRex infrastructure is built (webhook handlers working, checkout route exists at `src/app/api/payments/checkout/route.ts`, `user_subscriptions` table with RLS, tier derived from webhook metadata). The last-mile UI connection is missing.
+- **Problem:** GCash and Card payment buttons have no `onClick` handlers. The entire LemonSqueezy + PayRex infrastructure is built (webhook handlers working, checkout route exists at `src/app/api/payments/checkout/route.ts`, `user_subscriptions` table with RLS, tier derived from webhook metadata). The last-mile UI connection is missing.
 - **Fix:** Add onClick handlers that call the existing checkout route.
 - **Effort:** 2 hours
 - **Business impact:** This is the only item preventing SlateCamp from generating any revenue whatsoever.
@@ -82,7 +82,7 @@ These items prevent a user from completing the core loop (Diagnostic → Readine
 **RB-1: No Billing Settings Page**
 - **Route:** `/dashboard/settings/billing` is defined but no page exists.
 - **Problem:** Users who pay cannot manage their subscription, view invoices, or cancel. This will generate support tickets and chargebacks.
-- **Fix:** Build billing management page using Stripe Customer Portal or custom UI.
+- **Fix:** Build billing management page using LemonSqueezy Customer Portal or custom UI.
 - **Effort:** 4 hours
 
 **RB-2: Upgrade Page at 60% Completeness**
@@ -229,7 +229,7 @@ The paywall must appear at psychologically optimal moments — when anxiety is h
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Stripe integration | Configured, webhook handler working | Signature verified, tier from metadata |
+| LemonSqueezy integration | Configured, webhook handler working | Signature verified, tier from metadata |
 | PayRex integration | Configured, webhook handler working | Signature verified |
 | Checkout route | `src/app/api/payments/checkout/route.ts` exists | Requires auth, blocks free tier |
 | Payment buttons | **NON-FUNCTIONAL** — no `onClick` handlers | The critical 2-hour fix |
@@ -242,7 +242,7 @@ The paywall must appear at psychologically optimal moments — when anxiety is h
 
 **Immediate action plan:**
 1. Wire payment button `onClick` → checkout route (2 hours)
-2. Build billing settings page with Stripe Customer Portal embed (4 hours)
+2. Build billing settings page with LemonSqueezy Customer Portal embed (4 hours)
 3. Test end-to-end: signup → diagnostic → score reveal → upgrade → payment → Pro features unlock (2 hours)
 4. Total: 8 hours to revenue-capable
 
@@ -514,7 +514,7 @@ After score reveal, the student must start Camp Trail Day 1 within 60 seconds.
 | Camp Trail day started | `user_trail_progress` / `analytics_events` | LIKELY EXISTS (85% trail completeness) | VERIFY |
 | Camp Trail day completed | `trail_day_completions` | EXISTS | None |
 | Paywall viewed | `analytics_events` | UNCLEAR — `analytics_events` has RLS bug blocking anonymous inserts | FIX RLS policy |
-| Payment completed | Via Stripe/PayRex webhooks → `user_subscriptions` | EXISTS | None |
+| Payment completed | Via LemonSqueezy/PayRex webhooks → `user_subscriptions` | EXISTS | None |
 | Referral code used | NOT TRACKED | NOT BUILT | BUILD when referral system ships |
 | Share action (score, heatmap) | NOT TRACKED | NOT BUILT | BUILD when sharing ships |
 | Session abandoned | LIKELY TRACKED — quiz has auto-save + status field | VERIFY — check for 'abandoned' status tracking |
@@ -529,7 +529,7 @@ After score reveal, the student must start Camp Trail Day 1 within 60 seconds.
 | Time to first Readiness Score | YES — `profiles.created_at` → first `readiness_score_snapshots.created_at` | None |
 | CAC by channel (UTM tracking) | NO — no UTM parameter capture | BUILD — capture UTM params at signup, store in `profiles` or `analytics_events` |
 | NPS score | NO — no survey system | BUILD — in-app NPS survey |
-| Churn rate (monthly) | PARTIAL — `user_subscriptions` has status but unclear if churn timestamp tracked | VERIFY Stripe webhook captures cancellation timestamp |
+| Churn rate (monthly) | PARTIAL — `user_subscriptions` has status but unclear if churn timestamp tracked | VERIFY LemonSqueezy webhook captures cancellation timestamp |
 | DAU/MAU ratio | YES — `user_interactions` or `quiz_sessions` with date filters | None |
 | MRR (current) | YES — CEO Command Center at 90%, MRR dashboard exists | None |
 | Cohort retention table | PARTIAL — CEO Behavioral Insights at 90% with cohort analysis | VERIFY cohort query accuracy |
@@ -815,7 +815,7 @@ Post-exam:              Celebrate passers (UGC goldmine)
 | 1 | Launch delayed by accumulated technical debt (1.2% test coverage, strict mode off) | MEDIUM | HIGH | Focus the 7-day sprint on launch blockers only. Defer all Tier 2/3 debt. Ship imperfect. |
 | 2 | Low diagnostic completion rate (<50%) | MEDIUM | HIGH | Add progress bar + time estimate to diagnostic. Consider 15-question short form with option to extend. |
 | 3 | Free→Paid conversion <2% | MEDIUM | CRITICAL | Run paywall A/B tests: timing (Day 3 vs Day 5), messaging (anxiety vs value), price point (₱299 vs ₱399). If <2% after 60 days, the freemium gate needs fundamental redesign. |
-| 4 | Payment integration failure on launch day | LOW | CRITICAL | Test end-to-end checkout with real Stripe test cards + PayRex sandbox before opening doors. Have manual subscription activation as backup. |
+| 4 | Payment integration failure on launch day | LOW | CRITICAL | Test end-to-end checkout with real LemonSqueezy test cards + PayRex sandbox before opening doors. Have manual subscription activation as backup. |
 | 5 | Competitor launches during beta | LOW | MEDIUM | Accelerate community moat (Campfire) and institutional partnerships. 100 testimonials beat a competitor with 0. First-mover in ALE digital mastery is hard to displace. |
 | 6 | Missing exam season window | HIGH (if launch is delayed) | CRITICAL | ALE exam dates are fixed. If SlateCamp is not running at full speed 8 weeks before the ALE, the highest-converting period of the cycle is wasted. Work backward from the ALE date. |
 | 7 | SRS disconnection discovered by users before fix | MEDIUM (if fix delayed) | HIGH | Fix LB-2 on Day 1 of the sprint. This is a 1-hour fix with the highest learning impact. |
@@ -888,7 +888,7 @@ DAY 7 (4 hours):
     - Diagnostic flow (20 questions, score reveal)
     - Camp Trail Day 1 (session start, session complete)
     - Heatmap update verification
-    - Upgrade flow (₱399 test payment via Stripe test mode)
+    - Upgrade flow (₱399 test payment via LemonSqueezy test mode)
     - Pro feature unlock verification
     - Billing page (subscription visible, cancel works)
     - Score trajectory chart (readiness score history)
@@ -903,4 +903,5 @@ After the sprint: SlateCamp is revenue-capable, security-hardened, and activatio
 ---
 
 *Strategy generated 2026-03-25 by the SlateCamp Pre-Launch War Council. Every finding references specific files, tables, and data points from the Global Codebase Audit Report dated 2026-03-25. Financial projections grounded in SlateCamp skill-documented unit economics (₱399 ARPU, 77% GM, 8% churn, ₱250 blended CAC). All recommendations aligned against the Five Moats framework (Domain, Data, Content, Community, Institutional).*
+
 

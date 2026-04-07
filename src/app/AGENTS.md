@@ -7,7 +7,7 @@
 
 Root Next.js App Router directory for SlateCamp -- a cognitive-first, personalized ALE review platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
 
-This directory implements the Campfire design system and enforces strict pedagogical constraints: no generic gamification, zero temperature AI tutor, Item Response Theory (IRT) mastery calculations, and growth-framed voice throughout.
+This directory implements the Slatecamp design system and enforces strict pedagogical constraints: no generic gamification, zero temperature AI tutor, Item Response Theory (IRT) mastery calculations, and growth-framed voice throughout.
 
 ## Key Files
 
@@ -173,9 +173,10 @@ Each portal (Admin, CEO, Developer) uses `PortalLayout` from `@/components/porta
 - `NEXT_PUBLIC_DEMO_MODE` -- Set to enable demo shell (`isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL`)
 - `ALLOW_DEV_PORTAL_BYPASS` -- Set to `'true'` to allow unauthenticated developer portal access
 - `OPENAI_API_KEY` -- For AI endpoints (embed, tutor, question generation)
-- `STRIPE_SECRET_KEY`, `PAYREX_API_KEY` -- Payment processors
+- `LEMONSQUEEZY_API_KEY`, `PAYREX_API_KEY` -- Payment processors
 
 ## MANUAL
 
 <!-- MANUAL: -->
+
 

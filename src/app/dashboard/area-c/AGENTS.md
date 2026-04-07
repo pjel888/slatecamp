@@ -28,7 +28,7 @@ Design & Development Controls learning area for Philippine National Building Cod
 - **Two main features:** Development Controls Calculator (reference tool) and Design Quiz (scenario-based practice)
 - **Design Problems:** Time-limited problems with difficulty levels (1–5: Introductory to Expert), lock progression, completion tracking
 - **Design Quiz:** Scenario-based (multiple questions per scenario); questions build on shared brief; tied to PD 1096, BP 344, RA 9514
-- **Campfire colors:** Inline style overrides (e.g., `color: '#1A2332'`) — prefer Tailwind but legacy code uses style props
+- **Slatecamp colors:** Inline style overrides (e.g., `color: '#1A2332'`) — prefer Tailwind but legacy code uses style props
 - **Lock progression:** Problems unlock after completing prerequisite levels
 - **Difficulty dots UI:** Visual 5-dot difficulty indicator for each problem
 - Tab/layout flow: Page → Tool cards → Dynamic [problemId] or [scenarioId] page

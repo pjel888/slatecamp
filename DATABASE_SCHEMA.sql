@@ -88,8 +88,8 @@ CREATE TABLE user_subscriptions (
   status                                   SUBSCRIPTION_STATUS NOT NULL DEFAULT 'active',
   email_notifications_enabled              BOOLEAN DEFAULT TRUE,
   marketing_emails_enabled                 BOOLEAN DEFAULT FALSE,
-  stripe_customer_id                       TEXT,
-  stripe_subscription_id                   TEXT,
+  lemonsqueezy_customer_id                 TEXT,
+  lemonsqueezy_subscription_id             TEXT,
   payrex_customer_id                       TEXT,
   payrex_reference                         TEXT,
   created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
@@ -1207,4 +1207,5 @@ CREATE TABLE campfire_testimonials (
 --   notes TEXT
 --   created_by UUID
 --   created_at TIMESTAMPTZ
+
 

@@ -76,7 +76,7 @@ SlateCamp uses **Supabase PostgreSQL** with Row-Level Security (RLS) on all user
 
 | Table | Purpose |
 |-------|---------|
-| `subscriptions` | Stripe/Payrex subscriptions |
+| `subscriptions` | LemonSqueezy/Payrex subscriptions |
 | `payments` | Payment records |
 
 ---

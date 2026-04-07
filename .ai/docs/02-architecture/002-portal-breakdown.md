@@ -132,7 +132,7 @@ developer/
 ```
 
 ### Key Features
-- Design System Catalog (Campfire tokens, component inventory)
+- Design System Catalog (Slatecamp tokens, component inventory)
 - API Reference (server actions, query modules)
 - Architecture Docs
 - Developer Tools
@@ -178,3 +178,4 @@ Configurations centralized in `@/config/portals`.
 - `02-architecture/001-system-architecture.md` — Overall system architecture
 - `02-architecture/003-database-schema.md` — Database reference
 - `02-architecture/004-api-reference.md` — API routes
+

@@ -87,7 +87,7 @@ Ordered by ROI (funnel impact × implementation ease). Each item references spec
 
 **Current state:** The upgrade page at `/dashboard/upgrade` has feature comparison and pricing UI, but GCash and Card buttons have no onClick handlers (Audit §6, §12: "Payment buttons non-functional"). Revenue is literally ₱0.
 
-**Target state:** Both payment buttons call the existing checkout route at `src/app/api/payments/checkout/route.ts`. GCash button uses PayRex flow, Card button uses Stripe flow. Loading state on button press. Error state with retry. Success redirects to `/dashboard/welcome-pro`.
+**Target state:** Both payment buttons call the existing checkout route at `src/app/api/payments/checkout/route.ts`. GCash button uses PayRex flow, Card button uses LemonSqueezy flow. Loading state on button press. Error state with retry. Success redirects to `/dashboard/welcome-pro`.
 
 **Components affected:** `<PaywallSheet />` (new), existing upgrade page buttons.
 
@@ -97,7 +97,7 @@ Ordered by ROI (funnel impact × implementation ease). Each item references spec
 
 **Engineering effort:** S (2–4 hours). Infrastructure is 90% complete.
 
-**Dependencies:** None. Stripe + PayRex webhook handlers already work.
+**Dependencies:** None. LemonSqueezy + PayRex webhook handlers already work.
 
 ---
 
@@ -771,3 +771,4 @@ Filipino architecture students commonly study late at night (9 PM – 1 AM), aft
 ---
 
 *Plan generated 2026-03-25. All findings reference the GLOBAL-CODEBASE-AUDIT-REPORT.md dated 2026-03-25. File paths are relative to the SlateCamp project root. Every recommendation is grounded in SlateCamp's design system constraints, the four research-validated personas, and measurable funnel metrics.*
+

@@ -6,7 +6,7 @@
 
 ## Document Purpose
 
-This is the **single execution plan** for implementing every unimplemented feature identified in the Unimplemented Features Analysis. Payment integration (Stripe/PayRex button wiring, billing page) is **deferred** per founder directive — the revenue infrastructure exists but last-mile UI is postponed.
+This is the **single execution plan** for implementing every unimplemented feature identified in the Unimplemented Features Analysis. Payment integration (LemonSqueezy/PayRex button wiring, billing page) is **deferred** per founder directive — the revenue infrastructure exists but last-mile UI is postponed.
 
 Every feature has: what to build, why it matters, database schema, file paths, component APIs, acceptance criteria, and dependencies. Organized into 8 phases across 24 weeks.
 
@@ -1887,3 +1887,4 @@ Estimated new files per phase:
 ---
 
 *Roadmap generated 2026-03-26. Derived from the Unimplemented Features Analysis, cross-referenced with: slatecamp-competitive-moat, slatecamp-growth-engine, slatecamp-ip-commercialization, slatecamp-design-system-engineer, slatecamp-performance-gamification, slatecamp-revenue-architecture, slatecamp-db-architect skills, and the Global Codebase Audit Report (2026-03-25).*
+

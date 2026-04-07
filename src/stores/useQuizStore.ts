@@ -11,7 +11,7 @@ import type {
   QuestionType,
   QuizAnswerState,
   QuestionStatus,
-  StartSessionResult,
+  StartSessionSuccess,
   SubmitAnswerInput,
   EndSessionResult,
   FeedbackData,
@@ -82,7 +82,7 @@ interface SessionSlice {
 
   // Actions
   initSession: (
-    result: StartSessionResult & {
+    result: StartSessionSuccess & {
       allQuestionIds?: string[]
       initialCurrentIndex?: number
       restoredAnswers?: Record<string, Partial<QuizAnswerState>>

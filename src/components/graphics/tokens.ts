@@ -1,5 +1,5 @@
 /**
- * Campfire Graphic System v2 — Design Tokens
+ * Slatecamp Graphic System v2 — Design Tokens
  *
  * These tokens are used by graphic compositions and illustrations.
  * For app-wide theming, see globals.css CSS custom properties.

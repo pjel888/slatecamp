@@ -1,6 +1,6 @@
 import type { UserTier } from "@/types/app";
 
-export type PaymentProvider = "stripe" | "payrex";
+export type PaymentProvider = "lemonsqueezy" | "payrex";
 
 export interface CreateCheckoutParams {
   userId: string;
@@ -18,7 +18,7 @@ export interface CheckoutResult {
 
 export function getPaymentProvider(): PaymentProvider {
   const provider = process.env.PAYMENT_PROVIDER ?? "payrex";
-  if (provider === "stripe" && process.env.STRIPE_SECRET_KEY) return "stripe";
+  if (provider === "lemonsqueezy" && process.env.LEMONSQUEEZY_API_KEY) return "lemonsqueezy";
   return "payrex";
 }
 
@@ -27,29 +27,34 @@ export async function createCheckout(
 ): Promise<CheckoutResult> {
   const provider = getPaymentProvider();
 
-  if (provider === "stripe") {
-    return createStripeCheckout(params);
+  if (provider === "lemonsqueezy") {
+    return createLemonSqueezyCheckout(params);
   }
   return createPayRexCheckout(params);
 }
 
-async function createStripeCheckout(
+async function createLemonSqueezyCheckout(
   params: CreateCheckoutParams
 ): Promise<CheckoutResult> {
-  const { getStripe, STRIPE_PLANS } = await import("@/lib/stripe/config");
-  const stripe = getStripe();
+  const { getLemonSqueezy, LEMONSQUEEZY_PLANS } = await import("@/lib/lemonsqueezy/config");
+  const ls = getLemonSqueezy();
 
-  const plan = STRIPE_PLANS[params.tier];
-  const session = await stripe.checkout.sessions.create({
-    customer_email: params.email,
-    mode: "subscription",
-    line_items: [{ price: plan.priceId, quantity: 1 }],
-    success_url: params.successUrl,
-    cancel_url: params.cancelUrl,
-    metadata: { userId: params.userId, tier: params.tier },
+  const plan = LEMONSQUEEZY_PLANS[params.tier];
+  
+  // Note: LemonSqueezy checkout creation differs from LemonSqueezy
+  // This is a placeholder for actual LS checkout implementation
+  const checkout = await ls.createCheckout({
+    variantId: plan.variantId,
+    attributes: {
+      user_email: params.email,
+      custom_data: { userId: params.userId, tier: params.tier },
+      checkout_data: {
+        email: params.email,
+      },
+    },
   });
 
-  return { url: session.url, id: session.id, provider: "stripe" };
+  return { url: checkout.url, id: checkout.id, provider: "lemonsqueezy" };
 }
 
 async function createPayRexCheckout(

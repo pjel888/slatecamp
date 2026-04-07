@@ -51,7 +51,7 @@ Components in `src/components/` with zero imports anywhere in the codebase:
 | Package | Verdict | Notes |
 |---------|---------|-------|
 | `@radix-ui/react-visually-hidden` | **Keep** | Transitive dep of @radix-ui/react-dialog and react-toast |
-| `@stripe/stripe-js` | **Verify** | Stripe is used in src/lib/stripe/ and webhooks, but `@stripe/stripe-js` (client SDK) may not be directly imported -- check if `stripe` (server) pkg handles it |
+| `@lemonsqueezy/lemonsqueezy-js` | **Verify** | LemonSqueezy is used in src/lib/lemonsqueezy/ and webhooks, but `@lemonsqueezy/lemonsqueezy-js` (client SDK) may not be directly imported -- check if `lemonsqueezy` (server) pkg handles it |
 | `camera-controls` | **Remove** | Zero imports |
 | `isomorphic-dompurify` | **Verify** | Only `dompurify` referenced in 1 file -- may use this or the non-isomorphic version |
 | `katex` | **Remove** | Zero imports (was likely for LaTeX rendering, never implemented) |

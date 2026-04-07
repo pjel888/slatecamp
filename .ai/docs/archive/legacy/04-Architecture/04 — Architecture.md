@@ -15,7 +15,7 @@ graph TB
     B --> F["PostgreSQL + pgvector"]
     B --> G["Auth + Row-Level Security"]
     B --> H["Realtime Subscriptions"]
-    A --> I["Stripe + PayRex"]
+    A --> I["LemonSqueezy + PayRex"]
     A --> J["AI RAG Pipeline"]
     J --> F
 ```
@@ -83,7 +83,7 @@ SlateCamp uses **Supabase** as the unified backend:
 | `study_pods` / `pod_members` | Study group accountability |
 | `code_updates` | Building code changelog |
 | `oath_taking_schedules` | Oath ceremony dates |
-| `user_subscriptions` | Tier + payment tracking (Stripe/PayRex) |
+| `user_subscriptions` | Tier + payment tracking (LemonSqueezy/PayRex) |
 | `analytics_events` | Event tracking |
 | `user_computed_signals` | Pre-computed churn/velocity signals |
 | `user_endurance_profiles` | Design Endurance Training tracking |
@@ -230,7 +230,7 @@ slate-camp/
 │   │   ├── admin/                   # CMS components
 │   │   ├── ceo/                     # CEO dashboard charts
 │   │   ├── ui/                      # shadcn/ui primitives
-│   │   └── shared/                  # DashboardHeader, CampfireLoader
+│   │   └── shared/                  # DashboardHeader, SlatecampLoader
 │   │
 │   ├── lib/
 │   │   ├── readiness-score.ts       # Anti-inflation scoring (6 vectors, PRC-weighted)
@@ -310,7 +310,7 @@ Components are organized by **feature domain**, not by type:
 | `admin/` | `UnifiedContentEditor`, `TaxonomyEditor`, `QuestionEditor`, `SMEReviewQueue` |
 | `ceo/` | Financial charts, `TeamTable`, `ExportButton` |
 | `ui/` | shadcn/ui primitives (Button, Card, Dialog, Input, etc.) |
-| `shared/` | `DashboardHeader`, `CampfireLoader`, `SharedPageLayout` |
+| `shared/` | `DashboardHeader`, `SlatecampLoader`, `SharedPageLayout` |
 
 ### State Management
 
@@ -589,7 +589,7 @@ Dual payment processing for international + Philippine local coverage:
 
 | **Provider** | **Package** | **Use Case** |
 | --- | --- | --- |
-| Stripe | `stripe ^20.4.1`  • `@stripe/stripe-js ^8.9.0` | International cards, subscription management, webhook processing |
+| LemonSqueezy | `lemonsqueezy ^20.4.1`  • `@lemonsqueezy/lemonsqueezy-js ^8.9.0` | International cards, subscription management, webhook processing |
 | PayRex | `payrex-node ^1.7.3` | GCash, Maya, Philippine bank transfers, local payment methods |
 
 ---
@@ -628,7 +628,7 @@ graph LR
 
 1. **Supabase over custom backend** — Integrated auth, DB, realtime, storage, and pgvector in one service. Reduces ops overhead for a small team.
 2. **TipTap over Slate.js** — Production-ready, extensible, excellent React integration. Already supports all required block types.
-3. **Dual payments (Stripe + PayRex)** — Stripe for international; PayRex for Philippine-specific methods (GCash, Maya) which are critical for the Filipino student market.
+3. **Dual payments (LemonSqueezy + PayRex)** — LemonSqueezy for international; PayRex for Philippine-specific methods (GCash, Maya) which are critical for the Filipino student market.
 4. **pgvector over Pinecone** — Keeps vector store co-located with relational data in Supabase. Simpler architecture, fewer services to manage.
 5. **Next.js 16 with Turbopack** — Fastest dev iteration; SSG/ISR for Wiki performance; Server Components for dashboard.
 
@@ -820,7 +820,7 @@ Think of this schema as a massive, highly secure digital university. We just add
 
 ### 1. The Cashier's Office (`user_subscriptions`)
 
-Before a student walks into any building, they pass through the cashier. This table knows whether they're on the Free tier (limited access), the Camp monthly plan, the Insurance 6-month bundle, or an Institutional license. It connects to Stripe and PayRex so payments are handled by webhooks — the app never touches credit card data directly.
+Before a student walks into any building, they pass through the cashier. This table knows whether they're on the Free tier (limited access), the Camp monthly plan, the Insurance 6-month bundle, or an Institutional license. It connects to LemonSqueezy and PayRex so payments are handled by webhooks — the app never touches credit card data directly.
 
 ### 2. The Campus Directory (`disciplines`)
 
@@ -863,7 +863,7 @@ Strict database security with a cleaner architecture: content tables are readabl
 
 | **#** | **Table** | **Role** | **Scale Profile** |
 | --- | --- | --- | --- |
-| 1 | `user_subscriptions` | Paywall & Business Engine (Stripe/PayRex webhooks, tier gating) | One row per user |
+| 1 | `user_subscriptions` | Paywall & Business Engine (LemonSqueezy/PayRex webhooks, tier gating) | One row per user |
 | 2 | `disciplines` | Horizontal Scaling Layer: one row per licensure exam vertical | Tens of rows (one per exam type) |
 | 3 | `taxonomy_tree` | Master Syllabus — up to 6 levels, `is_leaf` terminal nodes, unique `slug` for URLs | Hundreds of rows per discipline |
 | 4A | `questions` | SME-Authored Question Bank with IRT difficulty, prompt images, and `correct_answer` | Thousands (grows with content) |
@@ -932,8 +932,8 @@ CREATE TABLE user_subscriptions (
     user_id                UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
     tier                   subscription_tier NOT NULL DEFAULT 'free',
     status                 subscription_status NOT NULL DEFAULT 'active',
-    stripe_customer_id     TEXT,
-    stripe_subscription_id TEXT,
+    lemon_squeezy_customer_id     TEXT,
+    lemon_squeezy_subscription_id TEXT,
     payrex_reference       TEXT,
     current_period_end     TIMESTAMPTZ,
     cancel_at_period_end   BOOLEAN NOT NULL DEFAULT false,
@@ -943,10 +943,10 @@ CREATE TABLE user_subscriptions (
 );
 
 COMMENT ON TABLE user_subscriptions IS
-    'Tracks user access tiers. Updated via Stripe/PayRex webhooks (Server Actions).';
+    'Tracks user access tiers. Updated via LemonSqueezy/PayRex webhooks (Server Actions).';
 
 CREATE INDEX idx_subs_user ON user_subscriptions(user_id);
-CREATE INDEX idx_subs_stripe ON user_subscriptions(stripe_customer_id);
+CREATE INDEX idx_subs_lemonsqueezy ON user_subscriptions(lemon_squeezy_customer_id);
 
 CREATE TRIGGER trg_user_subscriptions_updated_at
     BEFORE UPDATE ON user_subscriptions
@@ -1245,7 +1245,7 @@ CREATE POLICY "manage_own_interactions" ON user_interactions
 
 ### Subscriptions & Tier Gating
 
-The `user_subscriptions` table is the **business engine**. The `tier` enum maps directly to the pricing page: `free` → limited access, `camp` → full quizzing + analytics, `insurance` → everything including AI Tutor and Storm Mode, `institutional` → B2B university licenses. Stripe/PayRex webhooks update this table via `service_role` — users can only read their own row.
+The `user_subscriptions` table is the **business engine**. The `tier` enum maps directly to the pricing page: `free` → limited access, `camp` → full quizzing + analytics, `insurance` → everything including AI Tutor and Storm Mode, `institutional` → B2B university licenses. LemonSqueezy/PayRex webhooks update this table via `service_role` — users can only read their own row.
 
 ### Horizontal Scaling — The `disciplines` Table
 
@@ -1333,8 +1333,8 @@ erDiagram
         UUID user_id FK
         ENUM tier
         ENUM status
-        TEXT stripe_customer_id
-        TEXT stripe_subscription_id
+        TEXT lemon_squeezy_customer_id
+        TEXT lemon_squeezy_subscription_id
         TEXT payrex_reference
         TIMESTAMPTZ current_period_end
         BOOLEAN cancel_at_period_end
@@ -1433,3 +1433,5 @@ erDiagram
         TIMESTAMPTZ interaction_timestamp
     }
 ```
+
+

@@ -34,3 +34,4 @@ You are the code reviewer for SlateCamp.
 - Quiz flow remains config-driven through `QuizShell` and `QuizSessionConfig`
 - Supabase server access comes from `src/lib/supabase/server.ts`
 - UI changes do not reintroduce hardcoded hex values or old "Inter only" design assumptions
+

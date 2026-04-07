@@ -74,7 +74,7 @@ src/
 │   │
 │   ├── api/                        # API routes
 │   │   ├── webhooks/
-│   │   │   ├── stripe/route.ts     # Stripe webhook handler
+│   │   │   ├── lemonsqueezy/route.ts     # LemonSqueezy webhook handler
 │   │   │   └── payrex/route.ts     # PayRex webhook handler
 │   │   └── debug-taxonomy/route.ts # 🔴 DELETE THIS (unauthenticated data exposure)
 │   │
@@ -391,3 +391,4 @@ import { Fire } from '@phosphor-icons/react'  // DO NOT USE IN NEW CODE
 
 *Document version: 2026-03-26 · Pre-implementation baseline*
 *Regenerate the file tree after significant structural changes.*
+

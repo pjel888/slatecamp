@@ -120,3 +120,4 @@ Only stop generating a response for a requested feature when:
 ### **Output**
 
 When asked to implement a specific section of this plan, output strictly the minimal code diffs and SQL commands required. No conversational filler, no redundant code blocks. Present as a hyper-minimalist execution log.
+

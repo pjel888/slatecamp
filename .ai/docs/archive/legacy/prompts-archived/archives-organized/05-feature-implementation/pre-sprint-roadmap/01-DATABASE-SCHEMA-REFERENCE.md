@@ -57,7 +57,7 @@ TAXONOMY & CONTENT
 
 USER IDENTITY & BILLING
   auth.users → profiles
-             → user_subscriptions (Stripe + Payrex)
+             → user_subscriptions (LemonSqueezy + Payrex)
              → organizations → organization_members
 
 QUIZ ENGINE
@@ -304,14 +304,14 @@ Extended user profile. One row per `auth.users` row.
 
 #### `user_subscriptions`
 
-Payment and subscription state. Stripe + PayRex integration.
+Payment and subscription state. LemonSqueezy + PayRex integration.
 
 | Column | Type | Constraints | Notes |
 |---|---|---|---|
 | `id` | UUID | PK | |
 | `user_id` | UUID | FK → auth.users(id) | |
-| `stripe_customer_id` | TEXT | | |
-| `stripe_subscription_id` | TEXT | | |
+| `lemon_squeezy_customer_id` | TEXT | | |
+| `lemon_squeezy_subscription_id` | TEXT | | |
 | `payrex_customer_id` | TEXT | | Philippine payment gateway |
 | `payrex_subscription_id` | TEXT | | |
 | `status` | TEXT | | 'active', 'canceled', 'past_due', etc. |
@@ -773,3 +773,5 @@ These are referenced in the Product Roadmap (Migrations 039–055) and Five Crit
 
 *Document version: 2026-03-26 · Pre-implementation baseline*
 *Regenerate after every migration using the procedure in section 1.*
+
+

@@ -4,7 +4,7 @@ export const STORYBOOK_PLACEHOLDER_BASELINE = [
   'src/components/shared/action-card.stories.tsx',
   'src/components/shared/app-drawer.stories.tsx',
   'src/components/shared/breadcrumb.stories.tsx',
-  'src/components/shared/CampfireLoader.stories.tsx',
+  'src/components/shared/SlatecampLoader.stories.tsx',
   'src/components/shared/content-sidebar.stories.tsx',
   'src/components/shared/DashboardHeader.stories.tsx',
   'src/components/shared/DashboardPageSkeleton.stories.tsx',

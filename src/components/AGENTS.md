@@ -5,7 +5,7 @@
 
 ## Purpose
 
-This directory contains all React components organized by feature domain. Components follow the Campfire design system (warm, inviting, clean) using shadcn/ui + Tailwind CSS v4 CSS variables, with strict constraints on styling (shadow depth, border radius, transition duration) and no generic gamification (confetti, badges, virtual currency).
+This directory contains all React components organized by feature domain. Components follow the Slatecamp design system (warm, inviting, clean) using shadcn/ui + Tailwind CSS v4 CSS variables, with strict constraints on styling (shadow depth, border radius, transition duration) and no generic gamification (confetti, badges, virtual currency).
 
 All components are server-first (default `'use client'` only where interactivity is required) and leverage the Next.js App Router pattern.
 

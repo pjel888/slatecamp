@@ -72,3 +72,4 @@ Referenced from `src/app/globals.css` (Tailwind CSS 4 CSS variables):
 ---
 
 *Design system catalog: 2026-04-06*
+

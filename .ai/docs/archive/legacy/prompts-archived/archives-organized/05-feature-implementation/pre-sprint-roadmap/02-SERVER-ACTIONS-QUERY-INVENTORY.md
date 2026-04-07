@@ -419,3 +419,4 @@ Before starting implementation, verify these against the live codebase:
 
 *Document version: 2026-03-26 · Pre-implementation baseline*
 *Regenerate by running the grep commands in section 1 after any server action changes.*
+

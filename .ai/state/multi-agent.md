@@ -292,3 +292,4 @@ See `.ai/mcp-servers.json` for the unified MCP configuration manifest. This file
 ---
 
 *This file is the canonical multi-agent orchestration guide. Update when adding new agents or changing workflows.*
+

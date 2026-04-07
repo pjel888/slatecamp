@@ -7,7 +7,7 @@
 
 The `src/` directory contains all source code for SlateCamp — a high-performance, discipline-agnostic study engine for professional licensure exams. This directory is organized into layered domains: routing (app), UI components, business logic (lib), state management, types, and static data.
 
-**Design Philosophy:** Next.js App Router with Server Components by default. Use arrow functions exclusively. State is managed via Zustand or React Context. All code follows the Campfire design system and adheres to the core constraints in `CLAUDE.md`.
+**Design Philosophy:** Next.js App Router with Server Components by default. Use arrow functions exclusively. State is managed via Zustand or React Context. All code follows the Slatecamp design system and adheres to the core constraints in `CLAUDE.md`.
 
 ## Key Files
 
@@ -81,7 +81,7 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
 | `graphics/` | Data visualization (charts, graphs) | 2+ files |
 | `dev/` | Development-only components and helpers | 2+ files |
 
-**Convention:** All components use arrow functions and are Server Components by default. Client-side interactivity marked with `'use client'`. No generic gamification (no confetti, badges, currency). Styling via Tailwind CSS 4 with Campfire design system tokens.
+**Convention:** All components use arrow functions and are Server Components by default. Client-side interactivity marked with `'use client'`. No generic gamification (no confetti, badges, currency). Styling via Tailwind CSS 4 with Slatecamp design system tokens.
 
 ### lib/ — Business Logic and Utilities
 
@@ -117,7 +117,7 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
 | `payrex/` | PayRex integration (payment gateway) |
 | `paywall/` | Paywall and subscription enforcement |
 | `signals/` | Competence signal calculation (micro-signals) |
-| `stripe/` | Stripe integration (if applicable) |
+| `lemonsqueezy/` | LemonSqueezy integration (if applicable) |
 | `workflow/` | Workflow and automation logic |
 | `endurance/` | Extended Practice session orchestration |
 | `__tests__/` | Business logic unit tests |
@@ -196,7 +196,7 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
    - Database schema: `DATABASE_SCHEMA.sql` (project root)
    - Core constraints: `CLAUDE.md` (project root)
    - Agent rules: `.claude/agents/` (project root)
-   - Design system: Campfire tokens in `CLAUDE.md` Section 5
+   - Design system: Slatecamp tokens in `CLAUDE.md` Section 5
 
 2. **Read before writing:**
    - Examine existing code in the feature area before creating new files
@@ -248,7 +248,7 @@ The `src/` directory contains all source code for SlateCamp — a high-performan
 
 #### Modifying the Design System
 
-1. **Never hardcode colors.** Use Campfire tokens from `CLAUDE.md`
+1. **Never hardcode colors.** Use Slatecamp tokens from `CLAUDE.md`
 2. **Max transition:** 300ms, easing out by default
 3. **Shadows:** `shadow-none` (rest), `shadow-sm` (hover), `shadow-lg` (modals only)
 4. **Border radius:** `rounded-sm` (buttons), `rounded-md` (cards), `rounded-lg` (modals)
@@ -316,7 +316,7 @@ All server actions must:
 
 **Auth & Payments:**
 - `@supabase/auth-helpers-nextjs` — Next.js auth integration
-- Payrex or Stripe — Payment processing
+- Payrex or LemonSqueezy — Payment processing
 
 **Utilities:**
 - `date-fns` — Date manipulation
