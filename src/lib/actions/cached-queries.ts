@@ -2,7 +2,7 @@
 
 import { unstable_cache } from 'next/cache'
 import { createStaticClient } from '@/lib/supabase/server'
-import { resolveArticleAndNode } from './wiki-actions'
+import { resolveArticleAndNode, getTaxonomyTree } from './wiki-actions'
 import { CACHE_TAGS, getTaxonomyDisciplineTag } from './cache-tags'
 
 const toExcerpt = (content: string, maxLength = 150) => {
@@ -53,7 +53,7 @@ export const getCachedTaxonomyTree = unstable_cache(
   },
   ['taxonomy-tree-dashboard'],
   {
-    revalidate: false,
+    revalidate: 7200,
     tags: [CACHE_TAGS.taxonomy],
   }
 )
@@ -78,7 +78,7 @@ const getCachedTaxonomyTreeByDisciplineFetcher = (disciplineId: string) =>
   },
     ['taxonomy-tree-by-discipline', disciplineId],
     {
-      revalidate: false,
+      revalidate: 7200,
       tags: [CACHE_TAGS.taxonomy, getTaxonomyDisciplineTag(disciplineId)],
     },
   )
@@ -86,6 +86,20 @@ const getCachedTaxonomyTreeByDisciplineFetcher = (disciplineId: string) =>
 /** Dashboard taxonomy tree, scoped to the user's current discipline. */
 export const getCachedTaxonomyTreeByDiscipline = async (disciplineId: string) =>
   getCachedTaxonomyTreeByDisciplineFetcher(disciplineId)()
+
+/** Full taxonomy tree with article mappings — used by WikiSidebarLoader. */
+const getCachedTaxonomyTreeFullFetcher = (disciplineId: string) =>
+  unstable_cache(
+    async () => getTaxonomyTree(disciplineId),
+    ['taxonomy-tree-full', disciplineId],
+    {
+      revalidate: 7200,
+      tags: [CACHE_TAGS.taxonomy, CACHE_TAGS.wiki, getTaxonomyDisciplineTag(disciplineId)],
+    },
+  )
+
+export const getCachedTaxonomyTreeFull = async (disciplineId: string) =>
+  getCachedTaxonomyTreeFullFetcher(disciplineId)()
 
 /** Wiki articles for daily rotation on dashboard. */
 export const getCachedWikiArticles = unstable_cache(
@@ -117,7 +131,7 @@ export const getCachedArticleAndNode = unstable_cache(
   async (slug: string) => resolveArticleAndNode(slug),
   ['wiki-article'],
   {
-    revalidate: false,
+    revalidate: 3600,
     tags: [CACHE_TAGS.wiki, CACHE_TAGS.taxonomy],
   }
 )

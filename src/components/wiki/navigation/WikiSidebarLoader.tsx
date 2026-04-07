@@ -1,4 +1,4 @@
-import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
+import { getCachedTaxonomyTreeFull } from '@/lib/actions/cached-queries'
 import { WikiSidebar } from './WikiSidebar'
 
 /**
@@ -6,6 +6,9 @@ import { WikiSidebar } from './WikiSidebar'
  * Wrapped in its own Suspense boundary so the rest of the layout
  * (content area, providers) renders immediately without waiting
  * for the full taxonomy tree.
+ *
+ * Uses getCachedTaxonomyTreeFull (2h TTL + tag revalidation)
+ * instead of uncached getTaxonomyTree to eliminate redundant DB hits.
  */
 export const WikiSidebarLoader = async ({
   disciplineId,
@@ -14,7 +17,7 @@ export const WikiSidebarLoader = async ({
   disciplineId: string
   disciplineName: string
 }) => {
-  const nodes = await getTaxonomyTree(disciplineId)
+  const nodes = await getCachedTaxonomyTreeFull(disciplineId)
 
   return (
     <WikiSidebar

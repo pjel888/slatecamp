@@ -1,6 +1,7 @@
 'use server'
 
 // wiki-actions: taxonomy tree + article data for wiki sidebar
+import { cache } from 'react'
 import { createClient, createStaticClient } from "@/lib/supabase/server";
 import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
@@ -345,7 +346,26 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
 export async function resolveArticleAndNode(
   slug: string,
 ): Promise<{ article: WikiArticle | null; node: TaxonomyNode | null }> {
+  const start = performance.now()
   const supabase = await createStaticClient()
+
+  // Try single-roundtrip RPC first (replaces 2-4 sequential queries)
+  const { data: rpcResult, error: rpcError } = await supabase.rpc('get_article_with_node', { p_slug: slug })
+
+  if (!rpcError && rpcResult) {
+    const result = rpcResult as { article: WikiArticle | null; node: TaxonomyNode | null }
+    const elapsed = (performance.now() - start).toFixed(1)
+    console.log(`[resolveArticleAndNode] RPC resolved "${slug}" in ${elapsed}ms`)
+    return {
+      article: result.article ?? null,
+      node: result.node ?? null,
+    }
+  }
+
+  // Fallback: sequential queries if RPC fails (resilience)
+  if (rpcError) {
+    console.warn('[resolveArticleAndNode] RPC fallback:', rpcError.message)
+  }
 
   // Path 1: slug matches an article slug
   const { data: article } = await supabase
@@ -357,7 +377,6 @@ export async function resolveArticleAndNode(
     .maybeSingle()
 
   if (article) {
-    // Article found — resolve its taxonomy node via junction table
     const { data: junction } = await supabase
       .from('wiki_article_taxonomy')
       .select('node_id')
@@ -398,7 +417,6 @@ export async function resolveArticleAndNode(
 
   if (!directNode) return { article: null, node: null }
 
-  // Node found — resolve its primary (or any) article via junction table
   const { data: primaryJunction } = await supabase
     .from('wiki_article_taxonomy')
     .select('article_id')
@@ -427,11 +445,18 @@ export async function resolveArticleAndNode(
     .eq('status', 'published')
     .maybeSingle()
 
+  const elapsed = (performance.now() - start).toFixed(1)
+  console.log(`[resolveArticleAndNode] Fallback resolved "${slug}" in ${elapsed}ms`)
   return {
     article: nodeArticle as WikiArticle | null,
     node: directNode as TaxonomyNode,
   }
 }
+
+// Request-level memoization — deduplicates calls within a single server render pass
+export const memoizedResolveArticleAndNode = cache(resolveArticleAndNode)
+export const memoizedGetTaxonomyTree = cache(getTaxonomyTree)
+export const memoizedGetBreadcrumbTrail = cache(getBreadcrumbTrail)
 
 export interface BreadcrumbItem {
   name: string
