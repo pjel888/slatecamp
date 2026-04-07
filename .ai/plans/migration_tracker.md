@@ -178,14 +178,52 @@ The migration is complete when ALL of these are true:
 ## Phase 6: Marketing & Application Section Patterns
 **Branch:** `design-system/phase-6-sections`
 **Status:** NOT STARTED
-**Scope:** Documentation + templates + marketing page components
+**Scope:** Documentation + templates + marketing page components + admin patterns
 **Depends on:** Phases 3–5 merged
+
+### Flowbite Reference Inventory (discovered 2026-04-07)
+
+**Application UI Blocks** (22 patterns in `flowbite-react-blocks/app/application-ui/`):
+- **CRUD Layouts** (6 variants): default, expandable-rows, horizontal-cards, product-mgmt, user-mgmt → Admin question/article management
+- **Advanced Tables** (8 variants): default, comparison, expandable, sortable, products, project-mgmt, user-mgmt → Admin data views, quiz analytics
+- **Side Navigation** (13 variants): notifications, user-profile, search, user-contacts, projects-team-switch, alert-info → Dashboard sidebar, notification panel, user settings
+- **Create/Update/Read/Delete** patterns: forms, modals, drawers for full CRUD lifecycle → Admin article/question editors
+- **Table Headers/Footers**: Chrome for data tables
+- **Dropdown/Faceted Search**: Filter modals and drawers → Admin filtering
+- **Application Shells**: Dashboard layout templates
+- **Success Messages**: Post-action confirmation patterns
+
+**Publisher UI** (3 patterns in `flowbite-react-blocks/app/publisher-ui/`):
+- **Blog Templates**: Article layout reference → Wiki article layout
+- **Comments Sections**: Discussion pattern → Future article comments
+- **Related Articles**: "See also" sections → Wiki cross-references
+
+**Marketing Blocks** (28 patterns in `data/blocks/marketing/`):
+- hero, feature, pricing, FAQ, CTA, footer, testimonials, social-proof, team, portfolio, newsletter, contact-form, banners, customer-logos, event-schedule, blog-sections, cookie, popup, user-onboarding, login, register, reset-password, account-recovery, 404, 500, maintenance, content
+
+**Figma Source Nodes** (Flowbite Design System Pro v3.1 — `Mg57xRjiaCCLm7P6JV1sJB`):
+- Text Editor Layouts: `node-id=7714-5922` → Admin article/question WYSIWYG editing
+- User Settings: `node-id=2465-181398` → Dashboard settings page redesign
+- Notifications: `node-id=3429-64824` → Notification panel/dropdown
+- Data Tables: `node-id=1866-348090` → Advanced table patterns
+- CRUD Layouts: `node-id=1946-225388` → Admin list+create+edit+delete flows
+- Sidebar Layouts: `node-id=13778-78120` → Dashboard/admin sidebar redesign
 
 | # | Task | Plan Source | Status |
 |---|------|------------|--------|
+| | **6A — Marketing Pages** | | |
 | 6.1 | Document Flowbite-aligned section templates for: Hero, Feature grid, Pricing, FAQ, CTA, Footer. Sources: `data/blocks/marketing/` + `flowbite-react-blocks/app/marketing-ui/` | Migration §4 | [ ] |
 | 6.2 | Create marketing page section components for `/`, `/about`, `/pricing` pages using documented templates | Migration §4 | [ ] |
-| 6.3 | Document admin CRUD page pattern (list view + create/edit modal + detail view). Ref: `data/blocks/application/crud-layouts.md` | Migration §4 | [ ] |
+| | **6B — Admin CRUD Patterns** | | |
+| 6.3 | Document admin CRUD page pattern (list view + create/edit modal + detail view). Ref: `data/blocks/application/crud-layouts.md` + `flowbite-react-blocks/app/application-ui/crud-layouts/` (6 variants) | Migration §4 | [ ] |
+| 6.4 | Document admin article/question editor layout. Ref: Figma `node-id=7714-5922` + `flowbite-react-blocks/app/publisher-ui/blog-templates/` | Figma audit | [ ] |
+| 6.5 | Document admin data table patterns with table headers, footers, faceted search. Ref: `advanced-tables/` (8 variants) + `table-headers/` + `dropdown-filters/` + Figma `node-id=1866-348090` | Figma audit | [ ] |
+| | **6C — User Settings & Notifications** | | |
+| 6.6 | Document user settings page layout. Ref: Figma `node-id=2465-181398` + `side-navigation/user-profile/` | Figma audit | [ ] |
+| 6.7 | Document notification panel/dropdown pattern. Ref: Figma `node-id=3429-64824` + `side-navigation/notifications/` | Figma audit | [ ] |
+| | **6D — Sidebar & Shell Patterns** | | |
+| 6.8 | Document dashboard sidebar layout variants. Ref: `side-navigation/` (13 variants) + Figma `node-id=13778-78120` | Figma audit | [ ] |
+| 6.9 | Document application shell patterns. Ref: `application-shells/` + `dashboard-navbars/` + `dashboard-footers/` | Migration §4 | [ ] |
 | | **Phase 6 Gates** | | |
 | | Pattern documentation reviewed and approved | Migration §4 | [ ] |
 | | Marketing sections render in Storybook | Migration §4 | [ ] |
