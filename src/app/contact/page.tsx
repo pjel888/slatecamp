@@ -33,7 +33,7 @@ const FAQS = [
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-zinc-100">
+    <div className="min-h-screen bg-muted">
       <MarketingNav activeRoute="/contact" />
 
       <main>
@@ -54,11 +54,11 @@ export default function ContactPage() {
         </section>
 
         {/* ── Contact Cards ── */}
-        <section className="border-t border-zinc-200 bg-white">
+        <section className="border-t border-border bg-card">
           <div className="mx-auto max-w-[1200px] px-6 py-16">
             <div className="grid gap-6 sm:grid-cols-2">
               {/* Email */}
-              <div className="rounded-md border border-zinc-200 bg-zinc-50 p-8">
+              <div className="rounded-md border border-border bg-muted p-8">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
                   <EnvelopeSimple size={20} weight="duotone" />
                 </div>
@@ -71,14 +71,14 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:support@slatecamp.com"
-                  className="mt-4 inline-block text-[14px] font-medium text-primary transition-colors duration-150 hover:text-[#1535A8]"
+                  className="mt-4 inline-block text-[14px] font-medium text-primary transition-colors duration-150 hover:text-primary-700"
                 >
                   support@slatecamp.com
                 </a>
               </div>
 
               {/* Response time */}
-              <div className="rounded-md border border-zinc-200 bg-zinc-50 p-8">
+              <div className="rounded-md border border-border bg-muted p-8">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
                   <Clock size={20} weight="duotone" />
                 </div>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   Urgent issues affecting your active study session are
                   prioritised.
                 </p>
-                <p className="mt-4 text-[13px] font-medium text-[#2D9F6F]">
+                <p className="mt-4 text-[13px] font-medium text-success">
                   Usually within 24 hours
                 </p>
               </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
 
             {/* Social links */}
             <div className="mt-10">
-              <p className="mb-4 text-[13px] font-medium text-[#8896A7]">
+              <p className="mb-4 text-[13px] font-medium text-muted-foreground">
                 Follow along
               </p>
               <div className="flex items-center gap-3">
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on Instagram"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-border bg-card text-text-secondary transition-colors duration-150 hover:border-border hover:text-foreground"
                 >
                   <InstagramLogo size={18} />
                 </a>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on X / Twitter"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-border bg-card text-text-secondary transition-colors duration-150 hover:border-border hover:text-foreground"
                 >
                   <TwitterLogo size={18} />
                 </a>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="SlateCamp on LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-zinc-200 bg-white text-text-secondary transition-colors duration-150 hover:border-zinc-300 hover:text-foreground"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-sm border border-border bg-card text-text-secondary transition-colors duration-150 hover:border-border hover:text-foreground"
                 >
                   <LinkedinLogo size={18} />
                 </a>
@@ -150,7 +150,7 @@ export default function ContactPage() {
             {FAQS.map(({ q, a }) => (
               <div
                 key={q}
-                className="rounded-md border border-zinc-200 bg-white p-6 transition-shadow duration-150 hover:shadow-sm"
+                className="rounded-md border border-border bg-card p-6 transition-shadow duration-150 hover:shadow-sm"
               >
                 <p className="text-[14px] font-semibold text-foreground">{q}</p>
                 <p className="mt-2 text-[13px] leading-relaxed text-text-secondary">

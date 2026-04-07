@@ -7,7 +7,7 @@ export const metadata = { title: `Pricing — ${siteConfig.name}` };
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-zinc-100">
+    <div className="min-h-screen bg-muted">
       <MarketingNav activeRoute="/pricing" />
       <main className="px-6 pt-32 pb-24 sm:pt-40">
         <PricingContent />

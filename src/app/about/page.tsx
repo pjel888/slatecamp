@@ -31,7 +31,7 @@ const TECH_PILLARS = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-zinc-100">
+    <div className="min-h-screen bg-muted">
       <MarketingNav activeRoute="/about" />
 
       <main>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── Philip's Story ── */}
-        <section className="border-t border-zinc-200 bg-white">
+        <section className="border-t border-border bg-card">
           <div className="mx-auto max-w-[1200px] px-6 py-20">
             <div className="grid gap-12 sm:grid-cols-2 sm:gap-20">
               <div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             {TECH_PILLARS.map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
-                className="rounded-md border border-zinc-200 bg-white p-6 transition-shadow duration-150 hover:shadow-sm"
+                className="rounded-md border border-border bg-card p-6 transition-shadow duration-150 hover:shadow-sm"
               >
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-sm bg-primary-50 text-primary">
                   <Icon size={20} weight="duotone" />
@@ -132,7 +132,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="border-t border-zinc-200 bg-primary">
+        <section className="border-t border-border bg-primary">
           <div className="mx-auto max-w-[1200px] px-6 py-20 text-center">
             <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-white">
               Ready to find out where you actually stand?
@@ -143,7 +143,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/try"
-              className="mt-8 inline-flex items-center gap-2 rounded-sm bg-white px-6 py-3 text-[14px] font-medium text-primary transition-colors duration-150 hover:bg-white/90"
+              className="mt-8 inline-flex items-center gap-2 rounded-sm bg-card px-6 py-3 text-[14px] font-medium text-primary transition-colors duration-150 hover:bg-card/90"
             >
               Start your diagnostic
               <ArrowRight size={16} weight="bold" />

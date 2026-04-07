@@ -50,12 +50,12 @@ export const PricingContent = () => {
     <div className="mx-auto max-w-[1200px]">
       <div className="text-center">
         <h1
-          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-zinc-900"
+          className="text-[clamp(2rem,5vw,3.5rem)] font-semibold text-foreground"
         >
           Simple, transparent pricing
         </h1>
         <p
-          className={`${serif.className} mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-zinc-600`}
+          className={`${serif.className} mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-muted-foreground`}
         >
           Choose the plan that fits your goals.
         </p>
@@ -65,13 +65,13 @@ export const PricingContent = () => {
         <div className="flex justify-center">
           <TabsList
             variant="line"
-            className="h-auto gap-6 border-b border-zinc-200 pb-px"
+            className="h-auto gap-6 border-b border-border pb-px"
           >
             {TABS.map(({ value, label }) => (
               <TabsTrigger
                 key={value}
                 value={value}
-                className="px-1 pb-3 text-[14px] text-zinc-600 data-[state=active]:text-zinc-900"
+                className="px-1 pb-3 text-[14px] text-muted-foreground data-[state=active]:text-foreground"
               >
                 {label}
               </TabsTrigger>
@@ -81,7 +81,7 @@ export const PricingContent = () => {
 
         <TabsContent value="individuals">
           <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-zinc-600">
+            <p className="text-[13px] text-muted-foreground">
               For architecture students and active ALE reviewees.
             </p>
           </div>
@@ -95,7 +95,7 @@ export const PricingContent = () => {
         {/* VIEW 2 — Educational */}
         <TabsContent value="educational">
           <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-zinc-600">
+            <p className="text-[13px] text-muted-foreground">
               For universities and review centers. Volume pricing, instructor
               dashboards, and custom content tools.
             </p>
@@ -110,7 +110,7 @@ export const PricingContent = () => {
         {/* VIEW 3 — Enterprise */}
         <TabsContent value="enterprise">
           <div className="mt-3 mb-8 text-center">
-            <p className="text-[13px] text-zinc-600">
+            <p className="text-[13px] text-muted-foreground">
               For material suppliers and architectural firms looking to reach
               the next generation of licensed architects.
             </p>
