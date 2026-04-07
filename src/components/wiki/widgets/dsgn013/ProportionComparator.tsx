@@ -55,7 +55,7 @@ export const ProportionComparator = () => {
   const [activeIdx, setActiveIdx] = useState(2) // Golden ratio as default
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       <div className="px-5 py-3.5 bg-muted border-b border-wiki-border dark:bg-wiki-surface-dark dark:border-wiki-invert-divider">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">
           Interactive · Room Proportion Comparator

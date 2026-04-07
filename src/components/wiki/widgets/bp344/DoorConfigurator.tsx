@@ -38,7 +38,7 @@ export const DoorConfigurator = () => {
   ]
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[var(--widget-border)] bg-muted px-6 py-5">
+    <div className="not-prose my-5 rounded-md border border-border bg-card px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Door Compliance Configurator (2024 IRR)</div>
       <p className="text-[13px] text-[var(--widget-text)] mb-3.5">Enter your door parameters. All values are checked against the 2024 Revised IRR.</p>
       <div className="flex gap-3.5 flex-wrap mb-3.5">

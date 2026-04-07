@@ -45,7 +45,7 @@ export const BodyDimensionExplorer = () => {
   const active = dims[activeIdx]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div>

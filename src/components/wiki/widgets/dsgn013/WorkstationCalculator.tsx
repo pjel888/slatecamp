@@ -25,7 +25,7 @@ export const WorkstationCalculator = () => {
   const perFloor = Math.round(gfa / Math.max(floors, 1))
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       {/* Header */}
       <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-camp-cobalt flex items-center justify-center text-white text-sm">

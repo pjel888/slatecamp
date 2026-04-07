@@ -12,7 +12,7 @@ export const CorridorVisualizer = () => {
   const sX = 80, wY = 40, wH = 80, wc1X = sX + 14, wc1Y = wY + wH / 2 - 14
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[var(--widget-border)] bg-muted px-6 py-5">
+    <div className="not-prose my-5 rounded-md border border-border bg-card px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Corridor Width Visualizer (2024 IRR)</div>
       <div className="flex gap-5 mb-3 flex-wrap items-center">
         <label className="flex items-center gap-2 text-[13px] text-[var(--widget-text)] cursor-pointer">

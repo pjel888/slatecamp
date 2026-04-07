@@ -72,7 +72,7 @@ export const RecallDrill = () => {
   }
 
   return (
-    <div className="not-prose my-5 rounded-lg border border-[var(--widget-border)] bg-muted px-6 py-5">
+    <div className="not-prose my-5 rounded-md border border-border bg-card px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — Recall Practice (2024 IRR)</div>
       <p className="text-[13px] text-[var(--widget-text)] mb-3.5">Questions marked ⟳ test a value that changed in 2024 — common ALE traps. Hit <strong>Reveal</strong> then <strong>Next</strong>.</p>
       <div className="bg-white border-[1.5px] border-[var(--widget-border)] rounded-md px-4 py-4 min-h-[80px] mb-3">

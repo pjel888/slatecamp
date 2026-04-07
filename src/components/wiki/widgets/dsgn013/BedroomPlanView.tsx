@@ -2,7 +2,7 @@
 
 export const BedroomPlanView = () => {
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-3.5 bg-muted border-b border-wiki-border dark:bg-wiki-surface-dark dark:border-wiki-invert-divider">
         <div>

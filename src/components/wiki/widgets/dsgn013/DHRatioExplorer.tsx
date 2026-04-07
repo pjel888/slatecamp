@@ -65,7 +65,7 @@ export const DHRatioExplorer = () => {
   const active = RATIOS[activeIdx]
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       {/* Header */}
       <div className="px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-camp-cobalt/10 dark:to-camp-cobalt/5 dark:border-wiki-invert-divider">
         <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt">

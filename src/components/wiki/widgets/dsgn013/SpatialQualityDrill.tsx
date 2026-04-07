@@ -37,7 +37,7 @@ export const SpatialQualityDrill = () => {
   }
 
   return (
-    <div className="not-prose my-5 rounded-[10px] border border-wiki-border overflow-hidden bg-white dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-5 rounded-md border border-border overflow-hidden bg-card dark:bg-card">
       <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-signal-gold-light to-[var(--signal-gold-wash)] border-b border-wiki-border dark:from-warning/10 dark:to-warning/5 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-warning flex items-center justify-center text-white text-sm">
           🧠
