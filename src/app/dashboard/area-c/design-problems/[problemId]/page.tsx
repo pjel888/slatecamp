@@ -71,8 +71,8 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
 
   if (!session) {
     return (
-      <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
-        <p className="text-sm text-[#D64545]">Session could not be loaded. Please try again.</p>
+      <div className="rounded-md border border-border bg-card px-4 py-8 text-center">
+        <p className="text-sm text-destructive">Session could not be loaded. Please try again.</p>
       </div>
     )
   }
@@ -91,15 +91,15 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
       {/* Problem header */}
       <div className="flex flex-col gap-1">
         <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-[10px] font-medium px-2 py-0.5 rounded-sm bg-[#F8F7F5] border border-[#D4DAE3] text-[#4A5568]">
+          <span className="text-[10px] font-medium px-2 py-0.5 rounded-sm bg-background border border-border text-muted-foreground">
             {problem.building_type}
           </span>
-          <span className="text-[10px] font-medium px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-[#1B3FC4]">
+          <span className="text-[10px] font-medium px-2 py-0.5 rounded-sm bg-primary-50 text-primary">
             {difficultyLabel}
           </span>
-          <span className="text-[10px] text-[#8896A7]">Goal: {timeLabel}</span>
+          <span className="text-[10px] text-muted-foreground">Goal: {timeLabel}</span>
         </div>
-        <h1 className="text-lg font-semibold text-[#1A2332]">{problem.title}</h1>
+        <h1 className="text-lg font-semibold text-foreground">{problem.title}</h1>
       </div>
 
       <DesignProblemSession problem={problem} session={session} />
@@ -110,7 +110,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
 const BackLink = () => (
   <Link
     href="/dashboard/area-c/design-problems"
-    className="flex items-center gap-1.5 text-xs text-[#4A5568] hover:text-[#1A2332] transition-colors duration-150 ease-out w-fit"
+    className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-150 ease-out w-fit"
   >
     <ArrowLeft size={14} />
     Design Problem Library

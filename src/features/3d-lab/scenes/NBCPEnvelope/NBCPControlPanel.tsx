@@ -125,7 +125,7 @@ export const NBCPControlPanel = memo(function NBCPControlPanel() {
 
   return (
     <div className="absolute left-4 top-4 bottom-4 z-10 w-72 overflow-y-auto
-      bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-3">
+      bg-card/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-3">
 
       {/* Header */}
       <div className="flex items-center justify-between">

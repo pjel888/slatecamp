@@ -58,7 +58,7 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
         Stamina
       </p>
 
-      <div className="bg-white rounded-md border border-border p-4">
+      <div className="bg-card rounded-md border border-border p-4">
         {/* SVG chart */}
         <div className="w-full overflow-hidden" aria-hidden="true">
           <svg
@@ -73,7 +73,7 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
               y1={CHART_H - 70 * (CHART_H / 100)}
               x2={CHART_W}
               y2={CHART_H - 70 * (CHART_H / 100)}
-              stroke="#D4DAE3"
+              stroke="var(--border)"
               strokeDasharray="6 4"
               strokeWidth={1}
             />
@@ -97,7 +97,7 @@ export const StaminaChart = ({ blocks }: StaminaChartProps) => {
                   cx={x}
                   cy={y}
                   r={4}
-                  fill={isLow ? '#D4DAE3' : '#1B3FC4'}
+                  fill={isLow ? 'var(--border)' : 'var(--primary)'}
                   stroke="white"
                   strokeWidth={1.5}
                 />

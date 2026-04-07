@@ -24,7 +24,7 @@ const getOptionState = (
 const CONTAINER_CLASSES: Record<OptionState, string> = {
   correct: 'bg-success-50 border-success',
   'wrong-choice': 'bg-destructive-50 border-destructive/40',
-  default: 'bg-white border-border opacity-60',
+  default: 'bg-card border-border opacity-60',
 }
 
 const LETTER_CLASSES: Record<OptionState, string> = {
@@ -74,7 +74,7 @@ export const AnnotatedOption = ({ option, userWasWrong }: AnnotatedOptionProps) 
             >
               <path
                 d="M2 6l3 3 5-5"
-                stroke="#2D9F6F"
+                stroke="currentColor"
                 strokeWidth="1.75"
                 strokeLinecap="round"
                 strokeLinejoin="round"

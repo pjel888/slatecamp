@@ -33,7 +33,7 @@ export function LayerToggles() {
               onClick={() => toggleLayer(opt.key)}
               className={`flex items-center gap-1.5 rounded-sm border px-2 py-1 text-[9px] font-medium transition-colors duration-150 ${
                 active
-                  ? 'border-border bg-white text-foreground'
+                  ? 'border-border bg-card text-foreground'
                   : 'border-border bg-surface-light text-muted-foreground line-through'
               }`}
             >

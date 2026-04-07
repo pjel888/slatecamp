@@ -56,7 +56,7 @@ export const NBCPTelemetry = memo(function NBCPTelemetry() {
 
   return (
     <div className="absolute right-4 top-4 bottom-4 z-10 w-72 overflow-y-auto
-      bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-2">
+      bg-card/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-3 space-y-2">
 
       <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-2">
         Development Controls

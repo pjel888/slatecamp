@@ -32,7 +32,7 @@ export function ZoningInputPanel() {
       <select
         value={zoneClass}
         onChange={(e) => setZoneClass(e.target.value as ZoneClass)}
-        className="w-full rounded-sm border border-border bg-white px-2 py-1.5 text-xs text-foreground focus:border-primary focus:outline-none"
+        className="w-full rounded-sm border border-border bg-card px-2 py-1.5 text-xs text-foreground focus:border-primary focus:outline-none"
       >
         {ZONE_OPTIONS.map((opt) => (
           <option key={opt.value} value={opt.value}>{opt.label}</option>
