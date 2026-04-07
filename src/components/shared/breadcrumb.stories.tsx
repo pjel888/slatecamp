@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Breadcrumb } from './breadcrumb'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 const meta = {
   title: 'Shared/Breadcrumb',
@@ -12,7 +12,7 @@ const meta = {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Source: @/components/shared/breadcrumb',
+        component: 'Re-exported from @/components/ui/breadcrumb. See UI/Breadcrumb for full stories.',
       },
     },
   },

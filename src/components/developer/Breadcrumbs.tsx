@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 
-import { Breadcrumb } from '@/components/shared/breadcrumb'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 const SEGMENT_LABELS: Record<string, string> = {
   developer: 'Developer Portal',
