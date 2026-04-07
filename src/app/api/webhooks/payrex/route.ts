@@ -28,6 +28,19 @@ export async function POST(request: Request) {
 
   const supabase = createAdminClient();
 
+  // Idempotency: skip already-processed events
+  const eventId = String((event as any).id ?? `${event.type}-${Date.now()}`);
+  const { data: alreadyProcessed } = await supabase
+    .from('processed_webhook_events')
+    .select('id')
+    .eq('provider', 'payrex')
+    .eq('event_id', eventId)
+    .maybeSingle();
+
+  if (alreadyProcessed) {
+    return NextResponse.json({ received: true, idempotent: true });
+  }
+
   if (event.type === "payment_intent.succeeded") {
     const paymentIntent = event.data.resource as Record<string, unknown>;
     const metadata = (paymentIntent.metadata ?? {}) as Record<string, string>;
@@ -47,6 +60,13 @@ export async function POST(request: Request) {
         .eq("user_id", userId);
     }
   }
+
+  // Mark event as processed
+  await supabase.from('processed_webhook_events').insert({
+    provider: 'payrex',
+    event_id: eventId,
+    event_type: event.type,
+  });
 
   return NextResponse.json({ received: true });
 }

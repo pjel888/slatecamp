@@ -1,25 +1,21 @@
 # Current Task Status
 
-**Domain:** Auth and Gating
-**Status:** Task complete for Auth and Gating. Artifacts archived.
+**Domain:** API Routes
+**Status:** Task complete for API Routes. Artifacts archived.
 **Completed:** 2026-04-07
 
 ## Changes Made
-1. Refactored `StartSessionResult` type to discriminated union (`StartSessionSuccess | StartSessionError`)
-2. Replaced throws in `start-session.ts` with typed error returns (UNAUTHORIZED, TIER_INSUFFICIENT, NO_QUESTIONS, UNKNOWN)
-3. Updated all 3 quiz shell components to include `success: true` in `initSession()` calls
-4. Updated `useQuizStore` to use `StartSessionSuccess` type
-5. Updated `HeroConfigurator.tsx` to check `result.success` before navigating
-6. Wired admin role gating in `middleware.ts` — queries `user_roles` for `/admin/` paths
-7. Stabilized `hasAccess` with `useCallback` and `capabilities` with `useMemo` in `tier-context.tsx`
-8. Added production guard to `dev-store.ts` — no-op storage in production
+1. Created `src/lib/api/require-admin.ts` — reusable admin authorization guard for route handlers
+2. Created `supabase/migrations/20260407_webhook_idempotency.sql` — processed_webhook_events table
+3. Added idempotency check + tracking to `src/app/api/webhooks/lemonsqueezy/route.ts`
+4. Added idempotency check + tracking to `src/app/api/webhooks/payrex/route.ts`
 
 ## Skipped
-- Step 5: TierProvider already accepts server-verified props
-- Step 6: RBAC barrel — roles.ts already has all exports
-- Step 8: Payment webhook revalidation — webhook needs broader fixing first
-- Step 9: Admin layout verified — already robust
+- Steps 2-3: Tier-based rate limiting/quotas — user_subscriptions table doesn't exist
+- Step 6: Optimistic locking — no PATCH routes identified
+- Step 7: Cron auth — already implemented (CRON_SECRET verification)
+- Steps 8-9: AI retry logic, schema validation — speculative/lower priority
 
 ---
 
-NEXT ACTION: Read NIGHTWATCH_QUEUE.md and execute the next pending implementation plan (api-routes).
+NEXT ACTION: Read NIGHTWATCH_QUEUE.md and execute the next pending implementation plan (state-management).

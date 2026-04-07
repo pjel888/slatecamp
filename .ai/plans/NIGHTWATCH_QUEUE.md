@@ -20,11 +20,18 @@
   - Dev-store production guard added (no-op storage in production)
   - Steps 5,6,8,9 skipped (already working, low-value re-export, or out-of-scope)
 
+- [ARCHIVED] - audit-api-routes.md → implementation-api-routes.md
+  - Created requireAdmin() helper for route handlers (src/lib/api/require-admin.ts)
+  - Created webhook idempotency migration (processed_webhook_events table)
+  - Added idempotency checks to LemonSqueezy and PayRex webhook handlers
+  - Steps 2,3 skipped (user_subscriptions table doesn't exist for tier quotas)
+  - Steps 6,8,9 skipped (speculative optimistic locking, retry logic, validation)
+  - Step 7 already implemented (both cron routes have CRON_SECRET verification)
+
 ---
 
 ### PENDING (Awaiting Code Execution)
 
-- [PENDING] - audit-api-routes.md → implementation-api-routes.md
 - [PENDING] - audit-state-management.md → implementation-state-management.md
 - [PENDING] - audit-shared-components.md → implementation-shared-components.md
 - [PENDING] - audit-dashboard-portal.md → implementation-dashboard-portal.md

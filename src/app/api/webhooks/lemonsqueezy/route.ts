@@ -31,6 +31,19 @@ export async function POST(request: Request) {
 
   const supabase = createAdminClient();
 
+  // Idempotency: skip already-processed events
+  const eventId = String((event as any).id ?? `${event.type}-${Date.now()}`);
+  const { data: alreadyProcessed } = await supabase
+    .from('processed_webhook_events')
+    .select('id')
+    .eq('provider', 'lemonsqueezy')
+    .eq('event_id', eventId)
+    .maybeSingle();
+
+  if (alreadyProcessed) {
+    return NextResponse.json({ received: true, idempotent: true });
+  }
+
   switch (event.type) {
     case "checkout.session.completed": {
       const session = event.data.object as LemonSqueezy.Checkout.Session;
@@ -80,6 +93,13 @@ export async function POST(request: Request) {
       break;
     }
   }
+
+  // Mark event as processed
+  await supabase.from('processed_webhook_events').insert({
+    provider: 'lemonsqueezy',
+    event_id: eventId,
+    event_type: event.type,
+  });
 
   return NextResponse.json({ received: true });
 }
