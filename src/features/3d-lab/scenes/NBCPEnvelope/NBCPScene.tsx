@@ -330,8 +330,8 @@ export function NBCPScene() {
         position={[toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(displayHeight) / 2, 0]}
         distanceFactor={df} occlude={false}
       >
-        <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap">
-          <span className="text-[11px] font-bold text-zinc-700">
+        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap">
+          <span className="text-[11px] font-bold text-foreground">
             {displayHeight.toFixed(1)}m · {displayStoreys}F
           </span>
         </div>
@@ -341,9 +341,9 @@ export function NBCPScene() {
         position={[0, LOT_Y * 2 + toU(displayHeight) + 0.06, 0]}
         distanceFactor={df} occlude={false}
       >
-        <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap text-center">
-          <div className="text-[11px] font-bold text-zinc-700">AMBF: {ambf.toFixed(0)} sqm</div>
-          <div className="text-[11px] text-zinc-500">FLAR {flar.toFixed(2)}x</div>
+        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap text-center">
+          <div className="text-[11px] font-bold text-foreground">AMBF: {ambf.toFixed(0)} sqm</div>
+          <div className="text-[11px] text-text-secondary">FLAR {flar.toFixed(2)}x</div>
         </div>
       </Html>
 

@@ -41,36 +41,30 @@ const AreaCPage = () => (
           <Link
             key={href}
             href={href}
-            className='group flex items-start gap-4 rounded-md border bg-card p-4 transition-shadow duration-150 hover:shadow-sm'
-            style={{ borderColor: '#D4DAE3' }}
+            className='group flex items-start gap-4 rounded-md border border-border bg-card p-4 transition-shadow duration-150 hover:shadow-sm'
           >
-            <div
-              className='mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-sm'
-              style={{ background: '#EEF2FC' }}
-            >
-              <Icon size={18} style={{ color: '#1B3FC4' }} weight='duotone' />
+            <div className='mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-sm bg-primary-50'>
+              <Icon size={18} className='text-primary' weight='duotone' />
             </div>
 
             <div className='flex-1 min-w-0'>
               <div className='flex items-center justify-between gap-2'>
-                <span className='text-sm font-medium' style={{ color: '#1A2332' }}>
+                <span className='text-sm font-medium text-foreground'>
                   {title}
                 </span>
                 <ArrowRight
                   size={14}
-                  style={{ color: '#8896A7' }}
-                  className='shrink-0 transition-transform duration-150 group-hover:translate-x-0.5'
+                  className='text-muted-foreground shrink-0 transition-transform duration-150 group-hover:translate-x-0.5'
                 />
               </div>
-              <p className='mt-0.5 text-xs leading-relaxed' style={{ color: '#4A5568' }}>
+              <p className='mt-0.5 text-xs leading-relaxed text-muted-foreground'>
                 {description}
               </p>
               <div className='mt-2 flex flex-wrap gap-1'>
                 {tags.map((tag) => (
                   <span
                     key={tag}
-                    className='rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide'
-                    style={{ background: '#F8F7F5', color: '#8896A7', border: '1px solid #D4DAE3' }}
+                    className='rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-background text-muted-foreground border border-border'
                   >
                     {tag}
                   </span>

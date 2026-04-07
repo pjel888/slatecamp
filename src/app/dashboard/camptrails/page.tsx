@@ -29,7 +29,7 @@ const CampTrailsPage = async () => {
         {/* ─── Page Header ─── */}
         <div className="flex items-start justify-between gap-6">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-widest text-[#534AB7] mb-1.5">
+            <p className="font-mono text-[11px] uppercase tracking-widest text-primary mb-1.5">
               Structured Study
             </p>
             <h1 className="text-2xl font-bold text-text-primary mb-1">
