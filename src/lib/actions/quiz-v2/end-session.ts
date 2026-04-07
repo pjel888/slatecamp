@@ -80,21 +80,17 @@ const buildSubjectBreakdown = async (
     return []
   }
 
-  const taxonomyNodes: Array<{
+  // Single query — PostgREST handles large IN arrays natively
+  const { data } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, subject_area, discipline_id')
+    .in('node_id', topicIds)
+
+  const taxonomyNodes = (data ?? []) as Array<{
     node_id: string
     subject_area: string
     discipline_id: string
-  }> = []
-
-  for (let index = 0; index < topicIds.length; index += 80) {
-    const batch = topicIds.slice(index, index + 80)
-    const { data } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, subject_area, discipline_id')
-      .in('node_id', batch)
-
-    taxonomyNodes.push(...((data ?? []) as typeof taxonomyNodes))
-  }
+  }>
 
   const taxonomyMap = new Map(
     taxonomyNodes.map((node) => [node.node_id, node]),

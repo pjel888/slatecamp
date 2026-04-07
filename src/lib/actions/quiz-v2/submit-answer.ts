@@ -107,11 +107,17 @@ export const submitAnswer = async (
       throw new Error('Question not found in session')
     }
 
+    const config = session.config ?? null
+    const feedbackTiming = config?.feedback?.timing ?? 'immediate'
+
+    // Only fetch rationale when immediate feedback is needed — avoids large JSONB payload
+    const questionColumns = feedbackTiming === 'immediate'
+      ? 'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers'
+      : 'question_id, topic_id, correct_option_id, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers'
+
     const { data: question } = await supabase
       .from('questions')
-      .select(
-        'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers',
-      )
+      .select(questionColumns)
       .eq('question_id', parsedInput.questionId)
       .single()
 
@@ -166,8 +172,6 @@ export const submitAnswer = async (
     const speedThreshold = 3000 + difficulty * 5000
     const isSuspectedLuckyGuess = isCorrect && parsedInput.timeSpentMs < speedThreshold
 
-    const config = session.config ?? null
-    const feedbackTiming = config?.feedback?.timing ?? 'immediate'
     const questionDataForClassifier = {
       difficulty,
       topic_id: topicId ?? null,
