@@ -64,12 +64,12 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
 
       {/* Explode Slider — bottom center */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 w-full max-w-xs px-4">
-        <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2">
           <div className="flex items-center justify-between mb-1">
-            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+            <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
               Explode
             </span>
-            <span className="text-[11px] font-bold text-zinc-600 tabular-nums">
+            <span className="text-[11px] font-bold text-foreground tabular-nums">
               {Math.round(explode * 100)}%
             </span>
           </div>
@@ -80,7 +80,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             step={0.01}
             value={explode}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-camp-cobalt"
+            className="w-full h-1 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt"
           />
         </div>
       </div>
@@ -96,39 +96,39 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             transition={{ duration: 0.15, ease: 'easeOut' }}
             className="absolute top-4 right-4 z-10 w-64"
           >
-            <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
+            <div className="bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
               <div className="flex items-start justify-between gap-3 mb-2">
                 <div>
-                  <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
+                  <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground block mb-0.5">
                     Part
                   </span>
-                  <h3 className="text-sm font-bold text-zinc-900 leading-snug">
+                  <h3 className="text-sm font-bold text-foreground leading-snug">
                     {activePart.label}
                   </h3>
                 </div>
                 <button
                   onClick={handleClosePanel}
-                  className="shrink-0 rounded-sm p-1 hover:bg-zinc-100 transition-colors"
+                  className="shrink-0 rounded-sm p-1 hover:bg-muted transition-colors"
                 >
-                  <SCIcon icon={X} size="xs" className="text-zinc-400" />
+                  <SCIcon icon={X} size="xs" className="text-muted-foreground" />
                 </button>
               </div>
 
               {activePart.description && (
-                <p className="text-xs text-zinc-500 leading-relaxed mb-2">
+                <p className="text-xs text-text-secondary leading-relaxed mb-2">
                   {activePart.description}
                 </p>
               )}
 
               {activePart.codeCitation && (
-                <div className="text-[11px] text-zinc-400 mb-2">
+                <div className="text-[11px] text-muted-foreground mb-2">
                   {activePart.codeCitation}
                 </div>
               )}
 
               {/* Material & Geometry info */}
               <div className="flex flex-wrap gap-1.5">
-                <span className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[11px] font-bold text-zinc-600 uppercase tracking-wide">
+                <span className="inline-flex items-center px-1.5 py-0.5 bg-muted rounded text-[11px] font-bold text-foreground uppercase tracking-wide">
                   {activePart.geometry.type}
                 </span>
               </div>

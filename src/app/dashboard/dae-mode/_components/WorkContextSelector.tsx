@@ -72,7 +72,7 @@ const WorkContextSelector = ({
 
   return (
     <div>
-      <p className="text-[13px] text-[#4A5568] mb-1">
+      <p className="text-[13px] text-muted-foreground mb-1">
         Select up to 3
       </p>
 
@@ -93,8 +93,8 @@ const WorkContextSelector = ({
                 'w-full text-left px-4 py-3 rounded-md border transition-colors duration-150 ease-out',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                 isSelected
-                  ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                  : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/40',
+                  ? 'border-primary bg-primary-50'
+                  : 'border-border bg-card hover:border-primary/40',
                 isDisabled ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer',
               ].join(' ')}
             >
@@ -104,8 +104,8 @@ const WorkContextSelector = ({
                   className={[
                     'mt-0.5 flex-shrink-0 w-4 h-4 rounded-sm border flex items-center justify-center transition-colors duration-150',
                     isSelected
-                      ? 'bg-[#1B3FC4] border-[#1B3FC4]'
-                      : 'bg-white border-[#D4DAE3]',
+                      ? 'bg-primary border-primary'
+                      : 'bg-card border-border',
                   ].join(' ')}
                   aria-hidden="true"
                 >
@@ -132,12 +132,12 @@ const WorkContextSelector = ({
                   <p
                     className={[
                       'text-[14px] font-medium leading-snug',
-                      isSelected ? 'text-[#1B3FC4]' : 'text-[#1A2332]',
+                      isSelected ? 'text-primary' : 'text-foreground',
                     ].join(' ')}
                   >
                     {label}
                   </p>
-                  <p className="text-[12px] text-[#4A5568] mt-0.5">{description}</p>
+                  <p className="text-[12px] text-muted-foreground mt-0.5">{description}</p>
                 </div>
               </div>
             </button>
@@ -153,8 +153,8 @@ const WorkContextSelector = ({
           'w-full rounded-sm px-4 py-2.5 text-[14px] font-medium transition-colors duration-150 ease-out',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
           selected.length === 0 || loading
-            ? 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed'
-            : 'bg-[#1B3FC4] text-white hover:bg-primary-700',
+            ? 'bg-border text-muted-foreground cursor-not-allowed'
+            : 'bg-primary text-white hover:bg-primary-700',
         ].join(' ')}
       >
         {loading ? 'Starting session…' : `Start ${selected.length > 0 ? '10' : ''}-Question Session →`}

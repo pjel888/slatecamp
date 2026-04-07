@@ -161,15 +161,15 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
                 whitespace-nowrap rounded px-1.5 py-0.5 shadow-sm border
                 ${isActive
                   ? 'bg-primary-50 border-primary/40'
-                  : 'bg-white/90 backdrop-blur-sm border-zinc-200'
+                  : 'bg-card/90 backdrop-blur-sm border-border'
                 }
               `}
             >
-              <div className="text-[11px] font-bold text-zinc-700">
+              <div className="text-[11px] font-bold text-foreground">
                 {layer.label}
               </div>
               {layer.material && (
-                <div className="text-[11px] text-zinc-500">
+                <div className="text-[11px] text-text-secondary">
                   {layer.material}
                 </div>
               )}

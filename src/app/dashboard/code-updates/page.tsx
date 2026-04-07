@@ -12,8 +12,8 @@ const CodeUpdatesPage = async () => {
   return (
     <div className="max-w-2xl mx-auto px-6 py-8">
       <div className="mb-8">
-        <h1 className="text-xl font-bold text-[#1A2332] mb-1">Code Updates</h1>
-        <p className="text-sm text-[#4A5568]">
+        <h1 className="text-xl font-bold text-foreground mb-1">Code Updates</h1>
+        <p className="text-sm text-muted-foreground">
           The latest changes to building codes and regulations that may appear on your exam.
         </p>
       </div>

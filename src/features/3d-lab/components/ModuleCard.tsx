@@ -31,7 +31,7 @@ export function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; 
       className={cn(
         'group relative flex h-full flex-col rounded-lg border p-5 transition-all duration-200 ease-out',
         isBuilt
-          ? 'cursor-pointer border-border-default/60 bg-white hover:border-primary/30 hover:shadow-md'
+          ? 'cursor-pointer border-border-default/60 bg-card hover:border-primary/30 hover:shadow-md'
           : 'cursor-default border-border-default/30 bg-muted/20 opacity-60',
       )}
     >

@@ -81,9 +81,9 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
         <Html distanceFactor={8} occlude={false} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="px-1.5 py-0.5 bg-white/90 backdrop-blur-sm border border-zinc-200 rounded shadow-sm whitespace-nowrap"
+            className="px-1.5 py-0.5 bg-card/90 backdrop-blur-sm border border-border rounded shadow-sm whitespace-nowrap"
           >
-            <span className="text-[11px] font-bold text-zinc-700">
+            <span className="text-[11px] font-bold text-foreground">
               {inst.label}
             </span>
           </div>

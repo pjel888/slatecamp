@@ -14,17 +14,17 @@ export const CramCardGate = ({ totalSessions }: Props) => {
   return (
     <div className="flex flex-col gap-6 max-w-md mx-auto py-10">
       {/* Eyebrow */}
-      <p className="font-mono text-[9px] text-[#1B3FC4] tracking-widest uppercase">
+      <p className="font-mono text-[9px] text-primary tracking-widest uppercase">
         YOUR CRAM CARD
       </p>
 
       {/* Heading */}
-      <h1 className="text-xl font-semibold text-[#1A2332] leading-snug">
+      <h1 className="text-xl font-semibold text-foreground leading-snug">
         Your card isn&apos;t ready yet
       </h1>
 
       {/* Body */}
-      <p className="text-sm text-[#4A5568] leading-relaxed">
+      <p className="text-sm text-muted-foreground leading-relaxed">
         Complete 20 study sessions to unlock your Cram Card. Your card will show the numerical
         values you keep getting wrong — personalized to your gaps.
       </p>
@@ -32,14 +32,14 @@ export const CramCardGate = ({ totalSessions }: Props) => {
       {/* Progress bar */}
       <div className="flex flex-col gap-2">
         <div className="flex items-center justify-between">
-          <span className="text-xs text-[#4A5568]">Sessions completed</span>
-          <span className="font-mono text-xs text-[#1B3FC4]">
+          <span className="text-xs text-muted-foreground">Sessions completed</span>
+          <span className="font-mono text-xs text-primary">
             {totalSessions}/{SESSIONS_REQUIRED}
           </span>
         </div>
-        <div className="h-2 rounded-sm bg-[#D4DAE3] overflow-hidden">
+        <div className="h-2 rounded-sm bg-border overflow-hidden">
           <div
-            className="h-full rounded-sm bg-[#1B3FC4] transition-all duration-150 ease-out"
+            className="h-full rounded-sm bg-primary transition-all duration-150 ease-out"
             style={{ width: `${progressPct}%` }}
           />
         </div>
@@ -48,7 +48,7 @@ export const CramCardGate = ({ totalSessions }: Props) => {
       {/* CTA */}
       <Link
         href="/dashboard/drills"
-        className="inline-flex items-center gap-1 text-sm text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 ease-out"
+        className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-700 transition-colors duration-150 ease-out"
       >
         Start a session to get closer →
       </Link>

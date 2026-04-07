@@ -25,30 +25,30 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
   } = update
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white px-5 py-4 shadow-none">
+    <div className="rounded-md border border-border bg-card px-5 py-4 shadow-none">
       {/* Header row */}
       <div className="flex items-start gap-2 mb-3">
-        <span className="font-mono text-[9px] bg-[#EEF2FC] text-[#1B3FC4] px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
+        <span className="font-mono text-[9px] bg-primary-50 text-primary px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
           {code_name}
         </span>
         {is_ale_testable && (
-          <span className="font-mono text-[9px] bg-[#EDFAF4] text-[#2D9F6F] px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
+          <span className="font-mono text-[9px] bg-success-50 text-success px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
             ALE-testable
           </span>
         )}
       </div>
 
       {/* Summary */}
-      <p className="text-sm text-[#1A2332] leading-relaxed mb-3">{summary}</p>
+      <p className="text-sm text-foreground leading-relaxed mb-3">{summary}</p>
 
       {/* Value change */}
       {(previous_value || new_value) && (
-        <div className="flex flex-col gap-1 mb-3 pl-3 border border-[#D4DAE3] rounded-sm">
+        <div className="flex flex-col gap-1 mb-3 pl-3 border border-border rounded-sm">
           {previous_value && (
-            <p className="text-xs text-[#8896A7] line-through">{previous_value}</p>
+            <p className="text-xs text-muted-foreground line-through">{previous_value}</p>
           )}
           {new_value && (
-            <p className="text-xs font-semibold text-[#1A2332]">{new_value}</p>
+            <p className="text-xs font-semibold text-foreground">{new_value}</p>
           )}
         </div>
       )}
@@ -57,7 +57,7 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
       <div className="flex items-center justify-between mt-1">
         <div className="flex items-center gap-3">
           {effective_date && (
-            <span className="text-xs text-[#4A5568]">
+            <span className="text-xs text-muted-foreground">
               Effective {formatEffectiveDate(effective_date)}
             </span>
           )}
@@ -65,7 +65,7 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
         {ale_id && (
           <Link
             href={`${ROUTES.WIKI_PAGE(ale_id.toLowerCase().replace(/\s+/g, '-'))}`}
-            className="text-xs text-[#1B3FC4] hover:underline"
+            className="text-xs text-primary hover:underline"
           >
             View wiki article →
           </Link>

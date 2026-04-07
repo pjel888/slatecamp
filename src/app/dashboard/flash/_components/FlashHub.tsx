@@ -9,8 +9,8 @@ export const FlashHub = ({ categories }: FlashHubProps) => {
   return (
     <div className='flex flex-col gap-4 w-full'>
       <div className='flex flex-col gap-1'>
-        <h1 className='text-xl font-semibold text-[#1A2332]'>ALE Numbers Flash</h1>
-        <p className='text-sm text-[#4A5568]'>
+        <h1 className='text-xl font-semibold text-foreground'>ALE Numbers Flash</h1>
+        <p className='text-sm text-muted-foreground'>
           Critical code numbers for the Architect Licensure Examination. Tap a category to start.
         </p>
       </div>
@@ -20,17 +20,17 @@ export const FlashHub = ({ categories }: FlashHubProps) => {
           <Link
             key={cat.id}
             href={`/dashboard/flash/${cat.id}`}
-            className='group flex flex-col gap-1 rounded-md border border-[#D4DAE3] bg-white p-4 transition-shadow duration-150 ease-out hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3FC4]'
+            className='group flex flex-col gap-1 rounded-md border border-border bg-card p-4 transition-shadow duration-150 ease-out hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary'
           >
             <div className='flex items-center justify-between'>
-              <span className='text-sm font-semibold text-[#1A2332] group-hover:text-[#1B3FC4] transition-colors duration-150'>
+              <span className='text-sm font-semibold text-foreground group-hover:text-primary transition-colors duration-150'>
                 {cat.label}
               </span>
-              <span className='text-xs tabular-nums text-[#8896A7]'>
+              <span className='text-xs tabular-nums text-muted-foreground'>
                 {cat.cardCount} cards
               </span>
             </div>
-            <p className='text-xs text-[#4A5568]'>{cat.description}</p>
+            <p className='text-xs text-muted-foreground'>{cat.description}</p>
           </Link>
         ))}
       </div>

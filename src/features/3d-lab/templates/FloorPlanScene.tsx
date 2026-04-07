@@ -62,7 +62,7 @@ function RoomPlane({
         <Html position={[cx, 0.02, cz]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-bold text-zinc-600 whitespace-nowrap"
+            className="text-[11px] font-bold text-foreground whitespace-nowrap"
           >
             {label}
           </div>
@@ -128,7 +128,7 @@ function PathLine({
         <Html position={[mid[0], 0.05, mid[1]]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-medium text-zinc-500 whitespace-nowrap"
+            className="text-[11px] font-medium text-text-secondary whitespace-nowrap"
           >
             {label}
           </div>
@@ -194,7 +194,7 @@ function Fixture({
         <Html position={[x, 0.1, z]} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-bold text-zinc-500 whitespace-nowrap"
+            className="text-[11px] font-bold text-text-secondary whitespace-nowrap"
           >
             {label}
           </div>
@@ -371,13 +371,13 @@ export function FloorPlanScene({
           <Html key={a.id} position={pos} distanceFactor={12} occlude={false}>
             <div
               style={{ pointerEvents: 'none' }}
-              className="bg-white/90 backdrop-blur-sm border border-zinc-200 rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
+              className="bg-card/90 backdrop-blur-sm border border-border rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
             >
-              <div className="text-[11px] font-bold text-zinc-700">
+              <div className="text-[11px] font-bold text-foreground">
                 {a.label}
               </div>
               {a.codeCitation && (
-                <div className="text-[11px] text-zinc-400">
+                <div className="text-[11px] text-muted-foreground">
                   {a.codeCitation}
                 </div>
               )}

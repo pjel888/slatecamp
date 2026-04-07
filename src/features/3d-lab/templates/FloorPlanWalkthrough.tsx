@@ -51,14 +51,14 @@ function LegendOverlay() {
   ]
 
   return (
-    <div className="absolute right-4 top-4 z-10 bg-white/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 space-y-1.5">
-      <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+    <div className="absolute right-4 top-4 z-10 bg-card/90 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 space-y-1.5">
+      <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
         Legend
       </span>
       {items.map((item) => (
         <div key={item.label} className="flex items-center gap-2">
           <span className={`w-3 h-2 rounded-sm ${item.color} shrink-0`} />
-          <span className="text-[11px] font-medium text-zinc-600">
+          <span className="text-[11px] font-medium text-foreground">
             {item.label}
           </span>
         </div>

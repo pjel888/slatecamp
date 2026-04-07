@@ -73,23 +73,23 @@ export const CreatePodModal = ({ onClose, onCreated }: CreatePodModalProps) => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="create-pod-title"
-        className="w-full max-w-sm rounded-lg bg-white p-6 shadow-lg"
+        className="w-full max-w-sm rounded-lg bg-card p-6 shadow-lg"
         onKeyDown={handleKeyDown}
       >
         {/* Header */}
         <div className="mb-5 flex items-start justify-between">
           <div>
-            <h2 id="create-pod-title" className="text-sm font-semibold text-[#1A2332]">
+            <h2 id="create-pod-title" className="text-sm font-semibold text-foreground">
               Create a Study Pod
             </h2>
-            <p className="mt-0.5 text-xs text-[#4A5568]">
+            <p className="mt-0.5 text-xs text-muted-foreground">
               Up to 6 members. Share the invite code to bring teammates in.
             </p>
           </div>
           <button
             onClick={onClose}
             aria-label="Close"
-            className="ml-3 rounded-sm p-1 text-[#8896A7] transition-colors duration-150 hover:text-[#1A2332]"
+            className="ml-3 rounded-sm p-1 text-muted-foreground transition-colors duration-150 hover:text-foreground"
           >
             <X size={16} aria-hidden="true" />
           </button>
@@ -100,7 +100,7 @@ export const CreatePodModal = ({ onClose, onCreated }: CreatePodModalProps) => {
           <div>
             <label
               htmlFor="pod-name"
-              className="mb-1.5 block text-xs font-medium text-[#1A2332]"
+              className="mb-1.5 block text-xs font-medium text-foreground"
             >
               Pod name
             </label>
@@ -113,14 +113,14 @@ export const CreatePodModal = ({ onClose, onCreated }: CreatePodModalProps) => {
               placeholder="e.g. Friday Study Group"
               maxLength={60}
               className={cn(
-                'w-full rounded-sm border px-3 py-2 text-sm text-[#1A2332] placeholder:text-[#8896A7]',
+                'w-full rounded-sm border px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground',
                 'outline-none transition-colors duration-150',
-                'focus:border-[#1B3FC4] focus:ring-1 focus:ring-primary',
-                error ? 'border-[#D64545]' : 'border-[#D4DAE3]',
+                'focus:border-primary focus:ring-1 focus:ring-primary',
+                error ? 'border-destructive' : 'border-border',
               )}
             />
             {error && (
-              <p className="mt-1.5 text-xs text-[#D64545]">{error}</p>
+              <p className="mt-1.5 text-xs text-destructive">{error}</p>
             )}
           </div>
 

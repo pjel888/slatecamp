@@ -100,14 +100,14 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
 
       {/* Timeline Control Bar — bottom center */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 w-full max-w-md px-4">
-        <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2.5">
+        <div className="bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2.5">
           {/* Step label */}
           <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400">
+            <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
               Step {currentStep + 1} / {config.steps.length}
             </span>
             {step && (
-              <span className="text-[11px] font-bold text-zinc-600 truncate ml-2">
+              <span className="text-[11px] font-bold text-foreground truncate ml-2">
                 {step.label}
               </span>
             )}
@@ -121,7 +121,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
             step={1}
             value={currentStep}
             onChange={handleSliderChange}
-            className="w-full h-1 bg-zinc-200 rounded-full appearance-none cursor-pointer accent-camp-cobalt mb-2"
+            className="w-full h-1 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt mb-2"
           />
 
           {/* Controls */}
@@ -129,26 +129,26 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
             <button
               onClick={handleStepBack}
               disabled={currentStep === 0}
-              className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+              className="rounded-sm p-1.5 hover:bg-muted transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             >
-              <SCIcon icon={CaretLeft} size="sm" className="text-zinc-600" />
+              <SCIcon icon={CaretLeft} size="sm" className="text-foreground" />
             </button>
             <button
               onClick={handlePlayPause}
-              className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors"
+              className="rounded-sm p-1.5 hover:bg-muted transition-colors"
             >
               {isPlaying ? (
-                <SCIcon icon={Pause} size="sm" className="text-zinc-600" />
+                <SCIcon icon={Pause} size="sm" className="text-foreground" />
               ) : (
-                <SCIcon icon={Play} size="sm" className="text-zinc-600" />
+                <SCIcon icon={Play} size="sm" className="text-foreground" />
               )}
             </button>
             <button
               onClick={handleStepForward}
               disabled={currentStep >= maxStep}
-              className="rounded-sm p-1.5 hover:bg-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+              className="rounded-sm p-1.5 hover:bg-muted transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             >
-              <SCIcon icon={CaretRight} size="sm" className="text-zinc-600" />
+              <SCIcon icon={CaretRight} size="sm" className="text-foreground" />
             </button>
           </div>
         </div>
@@ -157,20 +157,20 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
       {/* Step Info Panel — right side */}
       {step && (
         <div className="absolute top-4 right-4 z-10 w-64">
-          <div className="bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
-            <span className="text-[11px] font-black uppercase tracking-widest text-zinc-400 block mb-0.5">
+          <div className="bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-3">
+            <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground block mb-0.5">
               Step {currentStep + 1}
             </span>
-            <h3 className="text-sm font-bold text-zinc-900 leading-snug mb-1">
+            <h3 className="text-sm font-bold text-foreground leading-snug mb-1">
               {step.label}
             </h3>
             {step.description && (
-              <p className="text-xs text-zinc-500 leading-relaxed mb-2">
+              <p className="text-xs text-text-secondary leading-relaxed mb-2">
                 {step.description}
               </p>
             )}
             {step.codeCitation && (
-              <div className="inline-flex items-center px-1.5 py-0.5 bg-zinc-100 rounded text-[11px] font-bold text-zinc-500 uppercase tracking-wide">
+              <div className="inline-flex items-center px-1.5 py-0.5 bg-muted rounded text-[11px] font-bold text-muted-foreground uppercase tracking-wide">
                 {step.codeCitation}
               </div>
             )}

@@ -75,24 +75,24 @@ const DAEModeClient = ({
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F7F5]">
+    <div className="min-h-screen bg-background">
       <div className="max-w-[560px] mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-7">
-          <h1 className="text-[22px] font-semibold text-[#1A2332]">
+          <h1 className="text-[22px] font-semibold text-foreground">
             DAE Maintenance Mode
           </h1>
-          <p className="text-[14px] text-[#4A5568] mt-1">
+          <p className="text-[14px] text-muted-foreground mt-1">
             Stay current with the codes you use every day.
           </p>
         </div>
 
         {/* Free tier usage indicator */}
         {isFree && (
-          <div className="mb-5 rounded-md border border-[#D4DAE3] bg-white px-4 py-3 flex items-center justify-between">
+          <div className="mb-5 rounded-md border border-border bg-card px-4 py-3 flex items-center justify-between">
             <div>
-              <p className="text-[13px] font-medium text-[#1A2332]">Free plan</p>
-              <p className="text-[12px] text-[#4A5568] mt-0.5">
+              <p className="text-[13px] font-medium text-foreground">Free plan</p>
+              <p className="text-[12px] text-muted-foreground mt-0.5">
                 {dailyUsedCount} of 5 questions used today
               </p>
             </div>
@@ -102,7 +102,7 @@ const DAEModeClient = ({
                   key={i}
                   className={[
                     'w-2 h-2 rounded-full',
-                    i < dailyUsedCount ? 'bg-[#1B3FC4]' : 'bg-[#D4DAE3]',
+                    i < dailyUsedCount ? 'bg-primary' : 'bg-border',
                   ].join(' ')}
                 />
               ))}
@@ -112,9 +112,9 @@ const DAEModeClient = ({
 
         {/* Daily limit reached */}
         {dailyLimitReached && (
-          <div className="mb-5 rounded-md border border-[#D4951A]/30 bg-[#FEF8ED] px-4 py-3">
-            <p className="text-[13px] font-medium text-[#D4951A]">Daily limit reached</p>
-            <p className="text-[12px] text-[#4A5568] mt-0.5">
+          <div className="mb-5 rounded-md border border-warning/30 bg-warning-50 px-4 py-3">
+            <p className="text-[13px] font-medium text-warning">Daily limit reached</p>
+            <p className="text-[12px] text-muted-foreground mt-0.5">
               Upgrade to Pro for unlimited daily practice.
             </p>
           </div>
@@ -122,14 +122,14 @@ const DAEModeClient = ({
 
         {/* Error */}
         {error && (
-          <div className="mb-5 rounded-md border border-[#D64545]/20 bg-[#FDF0F0] px-4 py-3">
-            <p className="text-[13px] text-[#D64545]">{error}</p>
+          <div className="mb-5 rounded-md border border-destructive/20 bg-destructive-50 px-4 py-3">
+            <p className="text-[13px] text-destructive">{error}</p>
           </div>
         )}
 
         {/* Context selector */}
-        <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-5">
-          <h2 className="text-[15px] font-semibold text-[#1A2332] mb-1">
+        <div className="rounded-md border border-border bg-card px-4 py-5">
+          <h2 className="text-[15px] font-semibold text-foreground mb-1">
             What are you working on this week?
           </h2>
           <WorkContextSelector
@@ -140,7 +140,7 @@ const DAEModeClient = ({
         </div>
 
         {/* Session count context */}
-        <p className="mt-4 text-[12px] text-[#8896A7] text-center">
+        <p className="mt-4 text-[12px] text-muted-foreground text-center">
           10 questions per session · Filtered to your work context
         </p>
       </div>

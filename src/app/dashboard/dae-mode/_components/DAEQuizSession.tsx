@@ -52,32 +52,32 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
   const progress = ((currentIndex + 1) / totalQuestions) * 100
 
   return (
-    <div className="min-h-screen bg-[#F5F7FA] flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-[#D4DAE3] px-4 py-3 flex items-center justify-between">
+      <header className="bg-card border-b border-border px-4 py-3 flex items-center justify-between">
         <button
           type="button"
           onClick={onExit}
-          className="inline-flex items-center gap-1.5 text-[13px] text-[#4A5568] hover:text-[#1B3FC4] transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:underline"
+          className="inline-flex items-center gap-1.5 text-[13px] text-muted-foreground hover:text-primary transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:underline"
           aria-label="Exit session"
         >
           <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
           Exit
         </button>
 
-        <span className="text-[13px] text-[#4A5568]">
+        <span className="text-[13px] text-muted-foreground">
           {currentIndex + 1} / {totalQuestions}
         </span>
 
-        <span className="text-[12px] text-[#8896A7] font-mono">
+        <span className="text-[12px] text-muted-foreground font-mono">
           DAE
         </span>
       </header>
 
       {/* Progress bar */}
-      <div className="h-1 bg-[#D4DAE3]" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemax={totalQuestions}>
+      <div className="h-1 bg-border" role="progressbar" aria-valuenow={currentIndex + 1} aria-valuemax={totalQuestions}>
         <div
-          className="h-full bg-[#1B3FC4] transition-all duration-150 ease-out"
+          className="h-full bg-primary transition-all duration-150 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
@@ -86,13 +86,13 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
       <main className="flex-1 px-4 py-6 max-w-[680px] w-full mx-auto">
         {/* Breadcrumb */}
         {question.taxonomy_breadcrumb && (
-          <p className="text-[11px] text-[#8896A7] mb-3 uppercase tracking-wide">
+          <p className="text-[11px] text-muted-foreground mb-3 uppercase tracking-wide">
             {question.taxonomy_breadcrumb}
           </p>
         )}
 
         {/* Stem */}
-        <p className="text-[16px] text-[#1A2332] leading-relaxed mb-5 font-medium">
+        <p className="text-[16px] text-foreground leading-relaxed mb-5 font-medium">
           {question.stem}
         </p>
 
@@ -114,10 +114,10 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                   isRevealed ? 'cursor-default' : 'cursor-pointer',
                   isSelected && !isRevealed
-                    ? 'border-[#1B3FC4] bg-[#EEF2FC]'
+                    ? 'border-primary bg-primary-50'
                     : !isSelected
-                    ? 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]/40'
-                    : 'border-[#D4DAE3] bg-white',
+                    ? 'border-border bg-card hover:border-primary/40'
+                    : 'border-border bg-card',
                 ].join(' ')}
               >
                 <div className="flex items-start gap-3">
@@ -125,14 +125,14 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
                     className={[
                       'flex-shrink-0 w-6 h-6 rounded-sm border text-[12px] font-medium flex items-center justify-center transition-colors duration-150',
                       isSelected && !isRevealed
-                        ? 'bg-[#1B3FC4] border-[#1B3FC4] text-white'
-                        : 'bg-white border-[#D4DAE3] text-[#4A5568]',
+                        ? 'bg-primary border-primary text-white'
+                        : 'bg-card border-border text-muted-foreground',
                     ].join(' ')}
                     aria-hidden="true"
                   >
                     {option.letter}
                   </span>
-                  <span className="text-[14px] text-[#1A2332] leading-snug pt-0.5">
+                  <span className="text-[14px] text-foreground leading-snug pt-0.5">
                     {option.text}
                   </span>
                 </div>
@@ -152,8 +152,8 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
                 'flex-1 rounded-sm px-4 py-2.5 text-[14px] font-medium transition-colors duration-150 ease-out',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1',
                 selectedOptionId
-                  ? 'bg-[#1B3FC4] text-white hover:bg-primary-700'
-                  : 'bg-[#D4DAE3] text-[#8896A7] cursor-not-allowed',
+                  ? 'bg-primary text-white hover:bg-primary-700'
+                  : 'bg-border text-muted-foreground cursor-not-allowed',
               ].join(' ')}
             >
               Check Answer
@@ -164,7 +164,7 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="rounded-sm px-4 py-2.5 text-[14px] font-medium border border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4] hover:text-[#1B3FC4] transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1"
+                  className="rounded-sm px-4 py-2.5 text-[14px] font-medium border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1"
                   aria-label="Previous question"
                 >
                   <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -173,7 +173,7 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
               <button
                 type="button"
                 onClick={handleNext}
-                className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm px-4 py-2.5 text-[14px] font-medium bg-[#1B3FC4] text-white hover:bg-primary-700 transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm px-4 py-2.5 text-[14px] font-medium bg-primary text-white hover:bg-primary-700 transition-colors duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1"
               >
                 {currentIndex < totalQuestions - 1 ? (
                   <>

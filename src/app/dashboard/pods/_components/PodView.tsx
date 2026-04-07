@@ -20,7 +20,7 @@ interface PodViewProps {
 const DeltaBadge = ({ delta }: { delta: number }) => {
   if (delta > 0) {
     return (
-      <span className="inline-flex items-center gap-0.5 rounded-sm bg-[#EDFAF4] px-1.5 py-0.5 text-xs font-medium text-[#2D9F6F]">
+      <span className="inline-flex items-center gap-0.5 rounded-sm bg-success-50 px-1.5 py-0.5 text-xs font-medium text-success">
         <TrendUp size={12} aria-hidden="true" />
         +{delta}%
       </span>
@@ -28,14 +28,14 @@ const DeltaBadge = ({ delta }: { delta: number }) => {
   }
   if (delta < 0) {
     return (
-      <span className="inline-flex items-center gap-0.5 rounded-sm bg-[#FDF0F0] px-1.5 py-0.5 text-xs font-medium text-[#D64545]">
+      <span className="inline-flex items-center gap-0.5 rounded-sm bg-destructive-50 px-1.5 py-0.5 text-xs font-medium text-destructive">
         <TrendDown size={12} aria-hidden="true" />
         {delta}%
       </span>
     )
   }
   return (
-    <span className="inline-flex items-center gap-0.5 rounded-sm bg-[#F8F7F5] px-1.5 py-0.5 text-xs font-medium text-[#8896A7]">
+    <span className="inline-flex items-center gap-0.5 rounded-sm bg-background px-1.5 py-0.5 text-xs font-medium text-muted-foreground">
       <Minus size={12} aria-hidden="true" />
       0%
     </span>
@@ -72,7 +72,7 @@ const MemberAvatar = ({
   }
 
   return (
-    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EEF2FC] text-xs font-semibold text-[#1B3FC4]">
+    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50 text-xs font-semibold text-primary">
       {initials}
     </div>
   )
@@ -109,7 +109,7 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
       {/* Back */}
       <button
         onClick={() => router.push('/dashboard/pods')}
-        className="inline-flex items-center gap-1.5 text-xs text-[#4A5568] transition-colors duration-150 hover:text-[#1A2332]"
+        className="inline-flex items-center gap-1.5 text-xs text-muted-foreground transition-colors duration-150 hover:text-foreground"
       >
         <ArrowLeft size={14} aria-hidden="true" />
         All pods
@@ -117,36 +117,36 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
 
       {/* Goal Reached Banner */}
       {pod.goal_reached && (
-        <div className="rounded-md border border-[#2D9F6F]/30 bg-[#EDFAF4] px-4 py-3">
-          <p className="text-sm font-semibold text-[#2D9F6F]">
+        <div className="rounded-md border border-success/30 bg-success-50 px-4 py-3">
+          <p className="text-sm font-semibold text-success">
             Pod Goal Reached
           </p>
-          <p className="mt-0.5 text-xs text-[#2D9F6F]/80">
+          <p className="mt-0.5 text-xs text-success/80">
             Every member has reached 70% readiness. Keep strengthening together.
           </p>
         </div>
       )}
 
       {/* Pod Header Card */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white p-4">
+      <div className="rounded-md border border-border bg-card p-4">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h1 className="text-base font-semibold text-[#1A2332]">{pod.pod_name}</h1>
-            <p className="mt-0.5 text-xs text-[#8896A7]">
+            <h1 className="text-base font-semibold text-foreground">{pod.pod_name}</h1>
+            <p className="mt-0.5 text-xs text-muted-foreground">
               {pod.member_count} of 6 members
             </p>
           </div>
 
           {/* Invite code */}
-          <div className="flex items-center gap-1.5 rounded-sm border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-1.5">
-            <span className="font-mono text-xs text-[#4A5568]">{pod.invite_code}</span>
+          <div className="flex items-center gap-1.5 rounded-sm border border-border bg-background px-3 py-1.5">
+            <span className="font-mono text-xs text-muted-foreground">{pod.invite_code}</span>
             <button
               onClick={handleCopyCode}
               aria-label="Copy invite code"
-              className="ml-1 rounded-sm p-0.5 text-[#8896A7] transition-colors duration-150 hover:text-[#1B3FC4]"
+              className="ml-1 rounded-sm p-0.5 text-muted-foreground transition-colors duration-150 hover:text-primary"
             >
               {copied ? (
-                <Check size={13} className="text-[#2D9F6F]" aria-hidden="true" />
+                <Check size={13} className="text-success" aria-hidden="true" />
               ) : (
                 <Copy size={13} aria-hidden="true" />
               )}
@@ -156,9 +156,9 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
       </div>
 
       {/* Members List */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white">
-        <div className="border-b border-[#D4DAE3] px-4 py-3">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-[#8896A7]">
+      <div className="rounded-md border border-border bg-card">
+        <div className="border-b border-border px-4 py-3">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             Members
           </h2>
         </div>
@@ -173,7 +173,7 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
                 key={member.user_id}
                 className={cn(
                   'flex items-center justify-between px-4 py-3',
-                  isCurrentUser && 'bg-[#F8F7F5]',
+                  isCurrentUser && 'bg-background',
                 )}
               >
                 <div className="flex items-center gap-3 min-w-0">
@@ -183,21 +183,21 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
                   />
                   <div className="min-w-0">
                     <div className="flex items-center gap-1.5">
-                      <span className="truncate text-sm font-medium text-[#1A2332]">
+                      <span className="truncate text-sm font-medium text-foreground">
                         {member.display_name ?? 'Member'}
                       </span>
                       {isCurrentUser && (
-                        <span className="text-[10px] text-[#8896A7]">(you)</span>
+                        <span className="text-[10px] text-muted-foreground">(you)</span>
                       )}
                       {isCreator && (
                         <Crown
                           size={12}
-                          className="text-[#D4951A]"
+                          className="text-warning"
                           aria-label="Pod creator"
                         />
                       )}
                     </div>
-                    <p className="mt-0.5 text-[11px] text-[#8896A7]">
+                    <p className="mt-0.5 text-[11px] text-muted-foreground">
                       Score change since joining
                     </p>
                   </div>
@@ -211,8 +211,8 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
       </div>
 
       {/* Leave Pod */}
-      <div className="flex items-center justify-between rounded-md border border-[#D4DAE3] bg-white px-4 py-3">
-        <p className="text-xs text-[#4A5568]">
+      <div className="flex items-center justify-between rounded-md border border-border bg-card px-4 py-3">
+        <p className="text-xs text-muted-foreground">
           You can rejoin with the same invite code.
         </p>
         <Button
@@ -221,14 +221,14 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
           onClick={handleLeave}
           disabled={isPending}
           leftIcon={<SignOut size={14} aria-hidden="true" />}
-          className="text-[#D64545] hover:text-[#D64545]"
+          className="text-destructive hover:text-destructive"
         >
           {isPending ? 'Leaving…' : 'Leave pod'}
         </Button>
       </div>
 
       {leaveError && (
-        <p className="text-xs text-[#D64545]">{leaveError}</p>
+        <p className="text-xs text-destructive">{leaveError}</p>
       )}
     </div>
   )

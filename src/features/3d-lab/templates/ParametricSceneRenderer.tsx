@@ -110,13 +110,13 @@ export function ParametricSceneRenderer({
             >
               <div
                 style={{ pointerEvents: 'none' }}
-                className="bg-white/90 backdrop-blur-sm border border-zinc-200 rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
+                className="bg-card/90 backdrop-blur-sm border border-border rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
               >
-                <div className="text-[11px] font-bold text-zinc-700">
+                <div className="text-[11px] font-bold text-foreground">
                   {a.label}
                 </div>
                 {a.codeCitation && (
-                  <div className="text-[11px] text-zinc-400">
+                  <div className="text-[11px] text-muted-foreground">
                     {a.codeCitation}
                   </div>
                 )}

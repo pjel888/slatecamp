@@ -49,7 +49,7 @@ export const CodeUpdateFeed = ({ initialUpdates, initialCursor }: CodeUpdateFeed
   if (updates.length === 0) {
     return (
       <div className="py-16 text-center">
-        <p className="text-sm text-[#4A5568]">
+        <p className="text-sm text-muted-foreground">
           No code updates yet. You&apos;ll be notified when building codes change.
         </p>
       </div>
@@ -62,7 +62,7 @@ export const CodeUpdateFeed = ({ initialUpdates, initialCursor }: CodeUpdateFeed
     <div className="space-y-8">
       {groups.map((group) => (
         <section key={group.label}>
-          <h2 className="text-xs font-semibold text-[#8896A7] uppercase tracking-wider mb-3">
+          <h2 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
             {group.label}
           </h2>
           <div className="space-y-3">
@@ -78,7 +78,7 @@ export const CodeUpdateFeed = ({ initialUpdates, initialCursor }: CodeUpdateFeed
           <button
             onClick={loadMore}
             disabled={isPending}
-            className="text-sm text-[#1B3FC4] hover:underline disabled:opacity-50 disabled:no-underline"
+            className="text-sm text-primary hover:underline disabled:opacity-50 disabled:no-underline"
           >
             {isPending ? 'Loading…' : 'Load more'}
           </button>

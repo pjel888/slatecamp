@@ -96,21 +96,21 @@ function PartMesh({ part, explodeValue, isActive, isFaded, onPartClick }: PartMe
         <Html distanceFactor={8} occlude={false} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="w-52 bg-white/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 -translate-y-full"
+            className="w-52 bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 -translate-y-full"
           >
-            <div className="text-[11px] font-black uppercase tracking-widest text-zinc-400 mb-0.5">
+            <div className="text-[11px] font-black uppercase tracking-widest text-muted-foreground mb-0.5">
               Part
             </div>
-            <h4 className="text-xs font-bold text-zinc-900 leading-snug mb-1">
+            <h4 className="text-xs font-bold text-foreground leading-snug mb-1">
               {part.label}
             </h4>
             {part.description && (
-              <p className="text-[11px] text-zinc-500 leading-relaxed mb-1.5">
+              <p className="text-[11px] text-text-secondary leading-relaxed mb-1.5">
                 {part.description}
               </p>
             )}
             {part.codeCitation && (
-              <div className="text-[11px] text-zinc-400 mb-1">
+              <div className="text-[11px] text-muted-foreground mb-1">
                 {part.codeCitation}
               </div>
             )}
@@ -156,9 +156,9 @@ function AssemblyGroup({
         <Html position={[0, -0.15, 0]} distanceFactor={8} occlude={false} center>
           <div
             style={{ pointerEvents: 'none' }}
-            className="px-2 py-0.5 bg-white/90 backdrop-blur-sm border border-zinc-200 rounded shadow-sm whitespace-nowrap"
+            className="px-2 py-0.5 bg-card/90 backdrop-blur-sm border border-border rounded shadow-sm whitespace-nowrap"
           >
-            <span className="text-[11px] font-bold text-zinc-700 uppercase tracking-wide">
+            <span className="text-[11px] font-bold text-foreground uppercase tracking-wide">
               {label}
             </span>
           </div>

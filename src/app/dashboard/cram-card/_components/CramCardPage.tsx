@@ -20,11 +20,11 @@ export const CramCardPage = ({ data }: Props) => {
     <div className="flex flex-col gap-4">
       {/* Page header */}
       <div className="flex flex-col gap-1">
-        <p className="font-mono text-[9px] text-[#1B3FC4] tracking-widest uppercase">
+        <p className="font-mono text-[9px] text-primary tracking-widest uppercase">
           YOUR CRAM CARD
         </p>
-        <h1 className="text-xl font-semibold text-[#1A2332]">Values to memorize</h1>
-        <p className="text-sm text-[#4A5568]">
+        <h1 className="text-xl font-semibold text-foreground">Values to memorize</h1>
+        <p className="text-sm text-muted-foreground">
           {entries.length === 0
             ? 'No entries yet — keep practicing to surface your weakest numerical values.'
             : `${entries.length} ${entries.length === 1 ? 'topic' : 'topics'} ranked by your accuracy, lowest first.`}

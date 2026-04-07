@@ -30,7 +30,7 @@ export const JoinPodForm = () => {
   return (
     <form onSubmit={handleSubmit} className="flex items-end gap-2">
       <div className="flex-1">
-        <label htmlFor="invite-code" className="mb-1.5 block text-xs font-medium text-[#1A2332]">
+        <label htmlFor="invite-code" className="mb-1.5 block text-xs font-medium text-foreground">
           Invite code
         </label>
         <input
@@ -40,14 +40,14 @@ export const JoinPodForm = () => {
           onChange={(e) => setCode(e.target.value.trim())}
           placeholder="e.g. a3f9d2"
           className={cn(
-            'w-full rounded-sm border px-3 py-2 text-sm font-mono text-[#1A2332] placeholder:font-sans placeholder:text-[#8896A7]',
+            'w-full rounded-sm border px-3 py-2 text-sm font-mono text-foreground placeholder:font-sans placeholder:text-muted-foreground',
             'outline-none transition-colors duration-150',
-            'focus:border-[#1B3FC4] focus:ring-1 focus:ring-primary',
-            error ? 'border-[#D64545]' : 'border-[#D4DAE3]',
+            'focus:border-primary focus:ring-1 focus:ring-primary',
+            error ? 'border-destructive' : 'border-border',
           )}
         />
         {error && (
-          <p className="mt-1.5 text-xs text-[#D64545]">{error}</p>
+          <p className="mt-1.5 text-xs text-destructive">{error}</p>
         )}
       </div>
       <Button

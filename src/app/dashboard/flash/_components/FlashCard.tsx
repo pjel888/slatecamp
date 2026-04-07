@@ -25,7 +25,7 @@ export const FlashCard = ({
   return (
     <div className='flex flex-col items-center gap-4 w-full'>
       {/* Progress */}
-      <p className='text-sm text-[#4A5568] tabular-nums'>
+      <p className='text-sm text-muted-foreground tabular-nums'>
         Card {index + 1} of {total}
       </p>
 
@@ -34,7 +34,7 @@ export const FlashCard = ({
         type='button'
         onClick={handleFlip}
         aria-label={flipped ? 'Show question' : 'Reveal answer'}
-        className='w-full max-w-xl cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3FC4]'
+        className='w-full max-w-xl cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary'
         style={{ perspective: '1000px', minHeight: '220px' }}
       >
         <div
@@ -47,33 +47,33 @@ export const FlashCard = ({
         >
           {/* Front */}
           <div
-            className='absolute inset-0 flex flex-col items-center justify-center rounded-md border border-[#D4DAE3] bg-white p-6 text-center'
+            className='absolute inset-0 flex flex-col items-center justify-center rounded-md border border-border bg-card p-6 text-center'
             style={{ backfaceVisibility: 'hidden' }}
           >
-            <span className='text-xs font-medium text-[#8896A7] uppercase tracking-wide mb-3'>
+            <span className='text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3'>
               Question
             </span>
-            <p className='text-lg font-medium text-[#1A2332] leading-snug'>
+            <p className='text-lg font-medium text-foreground leading-snug'>
               {card.front}
             </p>
-            <p className='mt-4 text-xs text-[#8896A7]'>Tap to reveal answer</p>
+            <p className='mt-4 text-xs text-muted-foreground'>Tap to reveal answer</p>
           </div>
 
           {/* Back */}
           <div
-            className='absolute inset-0 flex flex-col items-center justify-center rounded-md border border-[#D4DAE3] bg-[#EEF2FC] p-6 text-center'
+            className='absolute inset-0 flex flex-col items-center justify-center rounded-md border border-border bg-primary-50 p-6 text-center'
             style={{
               backfaceVisibility: 'hidden',
               transform: 'rotateY(180deg)',
             }}
           >
-            <span className='text-xs font-medium text-[#1B3FC4] uppercase tracking-wide mb-3'>
+            <span className='text-xs font-medium text-primary uppercase tracking-wide mb-3'>
               Answer
             </span>
-            <p className='text-2xl font-semibold text-[#1A2332] leading-snug'>
+            <p className='text-2xl font-semibold text-foreground leading-snug'>
               {card.back}
             </p>
-            <p className='mt-3 text-xs text-[#4A5568]'>{card.code_ref}</p>
+            <p className='mt-3 text-xs text-muted-foreground'>{card.code_ref}</p>
           </div>
         </div>
       </button>
@@ -87,7 +87,7 @@ export const FlashCard = ({
               setFlipped(false)
               onWrong()
             }}
-            className='flex-1 min-h-[44px] rounded-sm border border-[#D4DAE3] bg-white text-sm font-medium text-[#D64545] transition-colors duration-150 ease-out hover:bg-[#FDF0F0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D64545]'
+            className='flex-1 min-h-[44px] rounded-sm border border-border bg-card text-sm font-medium text-destructive transition-colors duration-150 ease-out hover:bg-destructive-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-destructive'
           >
             Need more review
           </button>
@@ -97,7 +97,7 @@ export const FlashCard = ({
               setFlipped(false)
               onCorrect()
             }}
-            className='flex-1 min-h-[44px] rounded-sm border border-[#D4DAE3] bg-white text-sm font-medium text-[#2D9F6F] transition-colors duration-150 ease-out hover:bg-[#EDFAF4] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2D9F6F]'
+            className='flex-1 min-h-[44px] rounded-sm border border-border bg-card text-sm font-medium text-success transition-colors duration-150 ease-out hover:bg-success-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-success'
           >
             Got it
           </button>
