@@ -137,6 +137,12 @@ const VARIANTS: Record<CalloutVariant, VariantConfig> = {
   },
 }
 
+export interface CalloutAction {
+  label: string
+  href?: string
+  onClick?: () => void
+}
+
 export interface CalloutProps {
   variant?: CalloutVariant
   /** Override the default label text */
@@ -147,6 +153,10 @@ export interface CalloutProps {
   dismissible?: boolean
   /** Callback when the dismiss button is clicked. Presence implies dismissible. */
   onDismiss?: () => void
+  /** Use left-border accent instead of full border */
+  bordered?: boolean
+  /** Optional action button at the bottom of the callout */
+  action?: CalloutAction
 }
 
 /**
@@ -158,18 +168,40 @@ export interface CalloutProps {
  * Eyebrow variants (most-tested, ale-watch, version-alert): small mono
  * eyebrow label + body layout (no icon).
  */
-export const Callout = ({ variant = 'note', title, children, className, dismissible, onDismiss }: CalloutProps) => {
+export const Callout = ({ variant = 'note', title, children, className, dismissible, onDismiss, bordered, action }: CalloutProps) => {
   const config = VARIANTS[variant]
   const showDismiss = dismissible || !!onDismiss
+
+  const actionEl = action && (
+    <div className="mt-3">
+      {action.href ? (
+        <a
+          href={action.href}
+          className={cn('inline-flex items-center text-xs font-semibold underline underline-offset-2', config.labelColor)}
+        >
+          {action.label}
+        </a>
+      ) : (
+        <button
+          type="button"
+          onClick={action.onClick}
+          className={cn('inline-flex items-center text-xs font-semibold underline underline-offset-2', config.labelColor)}
+        >
+          {action.label}
+        </button>
+      )}
+    </div>
+  )
 
   if (config.eyebrow) {
     return (
       <div
         className={cn(
-          'not-prose rounded-md border px-4 py-3 my-5',
+          'not-prose rounded-md px-4 py-3 my-5',
+          bordered ? 'border-l-[3px] bg-transparent' : 'border',
           showDismiss && 'relative',
           config.border,
-          config.bg,
+          !bordered && config.bg,
           className,
         )}
         role="note"
@@ -198,6 +230,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
         <div className="text-sm text-foreground/80 leading-relaxed [&_strong]:font-semibold [&_strong]:text-foreground">
           {children}
         </div>
+        {actionEl}
       </div>
     )
   }
@@ -207,10 +240,11 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
   return (
     <div
       className={cn(
-        'not-prose block my-6 rounded-md border px-4 py-3',
+        'not-prose block my-7 rounded-md px-4 py-3',
+        bordered ? 'border-l-[3px] bg-transparent' : 'border',
         showDismiss && 'relative',
         config.border,
-        config.bg,
+        !bordered && config.bg,
         className,
       )}
       role="note"
@@ -229,7 +263,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
         </button>
       )}
       <div className="flex items-center gap-2 mb-1.5">
-        <Icon size={16} weight="bold" className={config.iconColor} />
+        <Icon size={18} weight="bold" className={config.iconColor} />
         <span className={cn('text-xs font-semibold uppercase tracking-wider', config.labelColor)}>
           {title || config.label}
         </span>
@@ -242,6 +276,7 @@ export const Callout = ({ variant = 'note', title, children, className, dismissi
       >
         {children}
       </div>
+      {actionEl}
     </div>
   )
 }
