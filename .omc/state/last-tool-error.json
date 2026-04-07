@@ -1,7 +1,7 @@
 {
-  "tool_name": "mcp__claude_ai_Supabase__apply_migration",
-  "tool_input_preview": "{\"project_id\":\"hrpdwqurngnyajuhbkdg\",\"name\":\"wiki_junction_indexes\",\"query\":\"-- Step 1.2: Composite index for node_id + is_primary lookups\\n-- Used by resolveArticleAndNode Path 2 (wiki-actions.ts:402...",
-  "error": "{\"error\":{\"name\":\"HttpException\",\"message\":\"Failed to apply database migration: ERROR:  25001: CREATE INDEX CONCURRENTLY cannot run inside a transaction block\\n\"}}",
-  "timestamp": "2026-04-07T04:18:15.629Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"C:\\\\Users\\\\Philip Lewis\\\\Desktop\\\\slatecamp\\\\.ai\\\\state\\\\memory.md\"}",
+  "error": "File content (12393 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-04-07T04:31:09.314Z",
   "retry_count": 1
 }
