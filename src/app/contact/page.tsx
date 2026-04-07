@@ -8,6 +8,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
+import { ContactForm } from "@/components/marketing/ContactForm";
 import { siteConfig } from "@/lib/constants/site";
 
 export const metadata = { title: `Contact — ${siteConfig.name}` };
@@ -131,6 +132,19 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ── Contact Form ── */}
+        <section className="border-t border-border bg-muted">
+          <div className="mx-auto max-w-[1200px] px-6 py-20">
+            <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-foreground">
+              Send us a message
+            </h2>
+            <p className="mt-3 max-w-[480px] text-[15px] leading-relaxed text-text-secondary mb-8">
+              Have a question or suggestion? Fill out the form below and we&apos;ll get back to you.
+            </p>
+            <ContactForm />
           </div>
         </section>
 
