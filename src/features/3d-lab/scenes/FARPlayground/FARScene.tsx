@@ -196,14 +196,14 @@ export function FARScene() {
       {/* Setback labels */}
       {frontSbU > 0 && (
         <Html position={[0, LOT_Y, lotU / 2 - frontSbU / 2]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Front/Rear: {setbackFront.toFixed(1)}m
           </div>
         </Html>
       )}
       {sideSbU > 0 && (
         <Html position={[-(lotU / 2 - sideSbU / 2), LOT_Y, 0]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Side: {setbackSide.toFixed(1)}m
           </div>
         </Html>
@@ -234,8 +234,8 @@ export function FARScene() {
         position={[toU(s.footprintSideM) / 2 + 0.1, LOT_Y * 2 + toU(s.buildingHeightM) / 2, 0]}
         distanceFactor={8} occlude={false}
       >
-        <div style={{ pointerEvents: 'none' }} className="bg-white/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-zinc-200 shadow-sm whitespace-nowrap">
-          <span className="text-[11px] font-bold text-zinc-700">
+        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap">
+          <span className="text-[11px] font-bold text-foreground">
             {s.buildingHeightM.toFixed(1)}m · {s.floors}F
           </span>
         </div>
@@ -247,9 +247,9 @@ export function FARScene() {
         distanceFactor={8} occlude={false}
       >
         <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap text-center ${
-          s.isFARViolation ? 'bg-red-50 border-red-200' : 'bg-white/90 backdrop-blur-sm border-zinc-200'
+          s.isFARViolation ? 'bg-red-50 border-red-200' : 'bg-card/90 backdrop-blur-sm border-border'
         }`}>
-          <div className={`text-[11px] font-bold ${s.isFARViolation ? 'text-red-700' : 'text-zinc-700'}`}>
+          <div className={`text-[11px] font-bold ${s.isFARViolation ? 'text-red-700' : 'text-foreground'}`}>
             FAR {far.toFixed(1)}× — {s.maxFloorAreaM2.toFixed(0)} sqm GFA
           </div>
           {s.isFARViolation && (

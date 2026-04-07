@@ -38,16 +38,16 @@ export const QuestionCard = ({
   isLast,
   isFirst,
 }: QuestionCardProps) => (
-  <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-4'>
+  <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-4'>
     {/* Question header */}
     <div className='flex items-center gap-2'>
-      <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>
+      <span className='text-[10px] font-medium text-muted-foreground uppercase tracking-wide'>
         Question {questionNumber} of {totalQuestions}
       </span>
     </div>
 
     {/* Stem */}
-    <p className='text-sm text-[#1A2332] leading-relaxed'>{questionStem}</p>
+    <p className='text-sm text-foreground leading-relaxed'>{questionStem}</p>
 
     {/* Options */}
     <div className='flex flex-col gap-2'>
@@ -86,7 +86,7 @@ export const QuestionCard = ({
     </div>
 
     {/* Navigation Footer */}
-    <div className='flex items-center justify-between pt-2 border-t border-[#F8F7F5] mt-2'>
+    <div className='flex items-center justify-between pt-2 border-t border-background mt-2'>
       {/* Previous */}
       <button
         type='button'
@@ -94,7 +94,7 @@ export const QuestionCard = ({
         disabled={isFirst}
         className={cn(
           'inline-flex items-center gap-1.5 text-[11px] font-medium transition-colors',
-          isFirst ? 'text-[#D4DAE3] cursor-not-allowed' : 'text-[#4A5568] hover:text-[#1A2332]'
+          isFirst ? 'text-border cursor-not-allowed' : 'text-muted-foreground hover:text-foreground'
         )}
       >
         <ArrowLeft size={14} />
@@ -105,7 +105,7 @@ export const QuestionCard = ({
       <button
         type='button'
         onClick={onNext}
-        className='inline-flex items-center gap-1.5 text-[11px] font-medium text-[#1B3FC4] hover:text-[#1535A8] transition-colors'
+        className='inline-flex items-center gap-1.5 text-[11px] font-medium text-primary hover:text-primary-700 transition-colors'
       >
         {isLast ? 'See results' : 'Next'}
         {!isLast && <ArrowRight size={14} />}

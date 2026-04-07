@@ -9,8 +9,8 @@ const DesignProblemsContent = async () => {
 
   if (error) {
     return (
-      <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-8 text-center">
-        <p className="text-sm text-[#D64545]">Unable to load problems. Please try again.</p>
+      <div className="rounded-md border border-border bg-card px-4 py-8 text-center">
+        <p className="text-sm text-destructive">Unable to load problems. Please try again.</p>
       </div>
     )
   }
@@ -30,8 +30,8 @@ const DesignProblemsContent = async () => {
     <div className="flex flex-col gap-6">
       {/* Page header */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-lg font-semibold text-[#1A2332]">Design Problem Library</h1>
-        <p className="text-sm text-[#4A5568]">
+        <h1 className="text-lg font-semibold text-foreground">Design Problem Library</h1>
+        <p className="text-sm text-muted-foreground">
           Practice architectural design within realistic site, program, and code constraints.
           Problems progress from a single residence to a mixed-use development.
         </p>
@@ -39,19 +39,19 @@ const DesignProblemsContent = async () => {
 
       {/* Progress summary */}
       {completedProblemIds.length > 0 && (
-        <div className="rounded-md border border-[#D4DAE3] bg-card px-4 py-3 flex items-center gap-3">
+        <div className="rounded-md border border-border bg-card px-4 py-3 flex items-center gap-3">
           <div className="flex-1">
             <div className="flex items-center justify-between mb-1.5">
-              <span className="text-xs text-[#4A5568]">
+              <span className="text-xs text-muted-foreground">
                 {completedProblemIds.length} of {problems.length} problems completed
               </span>
-              <span className="text-xs font-medium text-[#1B3FC4]">
+              <span className="text-xs font-medium text-primary">
                 {Math.round((completedProblemIds.length / problems.length) * 100)}%
               </span>
             </div>
-            <div className="h-1.5 rounded-full bg-[#D4DAE3] overflow-hidden">
+            <div className="h-1.5 rounded-full bg-border overflow-hidden">
               <div
-                className="h-full rounded-full bg-[#1B3FC4] transition-all duration-150 ease-out"
+                className="h-full rounded-full bg-primary transition-all duration-150 ease-out"
                 style={{ width: `${(completedProblemIds.length / problems.length) * 100}%` }}
               />
             </div>
@@ -61,8 +61,8 @@ const DesignProblemsContent = async () => {
 
       {/* Gating notice */}
       {!gateUnlocked && problems.some((p) => p.difficulty >= 3) && (
-        <div className="rounded-sm bg-[#FEF8ED] border border-[#D4951A]/30 px-3 py-2.5">
-          <p className="text-xs text-[#D4951A]">
+        <div className="rounded-sm bg-warning-50 border border-warning/30 px-3 py-2.5">
+          <p className="text-xs text-warning">
             Complete a Level 1 and a Level 2 problem to unlock intermediate, advanced, and expert problems.
           </p>
         </div>

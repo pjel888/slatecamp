@@ -207,7 +207,7 @@ export function NBCPScene() {
         <meshStandardMaterial color="#d1d5db" />
       </mesh>
       <Html position={[0, 0, lotDu / 2 + rrowWu / 2]} distanceFactor={df} occlude={false}>
-        <div style={{ pointerEvents: 'none' }} className="bg-white/90 border border-zinc-200 rounded px-1.5 py-0.5 text-[11px] font-bold text-zinc-500 whitespace-nowrap -translate-x-1/2">
+        <div style={{ pointerEvents: 'none' }} className="bg-card/90 border border-border rounded px-1.5 py-0.5 text-[11px] font-bold text-text-secondary whitespace-nowrap -translate-x-1/2">
           RROW: {inputs.rrowWidth.toFixed(1)}m
         </div>
       </Html>
@@ -279,28 +279,28 @@ export function NBCPScene() {
 
       {frontSbDepth > 0 && (
         <Html position={[0, LOT_Y, lotDu / 2 - frontSbDepth / 2]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Front: {setbacks.front.toFixed(1)}m
           </div>
         </Html>
       )}
       {rearSbDepth > 0 && (
         <Html position={[0, LOT_Y, -(lotDu / 2 - rearSbDepth / 2)]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Rear: {setbacks.rear.toFixed(1)}m
           </div>
         </Html>
       )}
       {leftSbWidth > 0 && (
         <Html position={[-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Left: {setbacks.left.toFixed(1)}m
           </div>
         </Html>
       )}
       {rightSbWidth > 0 && (
         <Html position={[(lotWu / 2 - rightSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-white/80 border border-zinc-200 rounded px-1 py-0.5 text-[11px] font-mono text-zinc-600 -translate-x-1/2 whitespace-nowrap">
+          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
             Right: {setbacks.right.toFixed(1)}m
           </div>
         </Html>

@@ -1,9 +1,9 @@
 import type { DesignScenario } from '@/lib/design-scenarios'
 
 const DIFFICULTY_STYLES: Record<string, { label: string; color: string; bg: string }> = {
-  FOUNDATIONAL: { label: 'Foundational', color: '#2D9F6F', bg: '#EDFAF4' },
-  INTERMEDIATE: { label: 'Intermediate', color: '#D4951A', bg: '#FEF8ED' },
-  ADVANCED: { label: 'Advanced', color: '#D64545', bg: '#FDF0F0' },
+  FOUNDATIONAL: { label: 'Foundational', color: 'var(--success)', bg: 'var(--success-50)' },
+  INTERMEDIATE: { label: 'Intermediate', color: 'var(--warning)', bg: 'var(--warning-50)' },
+  ADVANCED: { label: 'Advanced', color: 'var(--destructive)', bg: 'var(--destructive-50)' },
 }
 
 type BriefPanelProps = {
@@ -11,17 +11,17 @@ type BriefPanelProps = {
 }
 
 const SiteDataRow = ({ label, value }: { label: string; value: string }) => (
-  <div className='flex justify-between items-baseline py-1.5 border-b border-[#D4DAE3]/60 last:border-0 gap-2'>
-    <span className='text-[11px] text-[#4A5568] shrink-0'>{label}</span>
-    <span className='text-[11px] font-medium text-[#1A2332] font-mono text-right'>{value}</span>
+  <div className='flex justify-between items-baseline py-1.5 border-b border-border/60 last:border-0 gap-2'>
+    <span className='text-[11px] text-muted-foreground shrink-0'>{label}</span>
+    <span className='text-[11px] font-medium text-foreground font-mono text-right'>{value}</span>
   </div>
 )
 
 export const BriefPanel = ({ scenario }: BriefPanelProps) => {
   const style = DIFFICULTY_STYLES[scenario.difficulty] ?? {
     label: scenario.difficulty,
-    color: '#4A5568',
-    bg: '#F8F7F5',
+    color: 'var(--muted-foreground)',
+    bg: 'var(--background)',
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -54,11 +54,11 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
   return (
     <div className='flex flex-col gap-4'>
       {/* Title block */}
-      <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
+      <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-2'>
         <div className='items-start justify-between gap-2 hidden sm:flex'>
           <div className='flex-1 min-w-0'>
-            <p className='text-[10px] text-[#8896A7] mb-1'>{scenario.building_type}</p>
-            <h2 className='text-sm font-semibold text-[#1A2332] leading-snug'>{scenario.title}</h2>
+            <p className='text-[10px] text-muted-foreground mb-1'>{scenario.building_type}</p>
+            <h2 className='text-sm font-semibold text-foreground leading-snug'>{scenario.title}</h2>
           </div>
           <span
             className='shrink-0 text-[10px] font-medium px-2 py-0.5 rounded-sm'
@@ -70,7 +70,7 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
         {/* Mobile title view */}
         <div className='flex flex-col gap-1 sm:hidden'>
           <div className='flex items-center justify-between'>
-            <p className='text-[10px] text-[#8896A7]'>{scenario.building_type}</p>
+            <p className='text-[10px] text-muted-foreground'>{scenario.building_type}</p>
             <span
               className='shrink-0 text-[10px] font-medium px-2 py-0.5 rounded-sm'
               style={{ color: style.color, background: style.bg }}
@@ -78,22 +78,22 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
               {style.label}
             </span>
           </div>
-          <h2 className='text-sm font-semibold text-[#1A2332] leading-snug'>{scenario.title}</h2>
+          <h2 className='text-sm font-semibold text-foreground leading-snug'>{scenario.title}</h2>
         </div>
       </div>
 
       {/* Scenario brief */}
       {scenario.brief && (
-        <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
-          <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Scenario Brief</h3>
-          <p className='text-xs text-[#4A5568] leading-relaxed'>{scenario.brief}</p>
+        <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-2'>
+          <h3 className='text-xs font-semibold text-foreground uppercase tracking-wide'>Scenario Brief</h3>
+          <p className='text-xs text-muted-foreground leading-relaxed'>{scenario.brief}</p>
         </div>
       )}
 
       {/* Site data */}
       {siteRows.length > 0 && (
-        <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-1'>
-          <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide mb-1'>Site Data</h3>
+        <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-1'>
+          <h3 className='text-xs font-semibold text-foreground uppercase tracking-wide mb-1'>Site Data</h3>
           {siteRows.map((row) => (
             <SiteDataRow key={row.label} label={row.label} value={row.value} />
           ))}
@@ -101,40 +101,39 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
       )}
 
       {/* Program summary */}
-      <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
-        <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Building Program</h3>
+      <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-2'>
+        <h3 className='text-xs font-semibold text-foreground uppercase tracking-wide'>Building Program</h3>
         <div className='flex flex-col gap-1'>
           {prog.occupancy_type && (
-            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
-              <span className='text-[11px] text-[#4A5568]'>Occupancy</span>
-              <span className='text-[11px] font-medium text-[#1A2332] text-right'>{prog.occupancy_type}</span>
+            <div className='flex justify-between items-baseline py-1 border-b border-border/60 gap-2'>
+              <span className='text-[11px] text-muted-foreground'>Occupancy</span>
+              <span className='text-[11px] font-medium text-foreground text-right'>{prog.occupancy_type}</span>
             </div>
           )}
           {prog.building_stories && (
-            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
-              <span className='text-[11px] text-[#4A5568]'>Stories</span>
-              <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.building_stories}</span>
+            <div className='flex justify-between items-baseline py-1 border-b border-border/60 gap-2'>
+              <span className='text-[11px] text-muted-foreground'>Stories</span>
+              <span className='text-[11px] font-medium text-foreground font-mono'>{prog.building_stories}</span>
             </div>
           )}
           {prog.total_units && (
-            <div className='flex justify-between items-baseline py-1 border-b border-[#D4DAE3]/60 gap-2'>
-              <span className='text-[11px] text-[#4A5568]'>Total Units</span>
-              <span className='text-[11px] font-medium text-[#1A2332] font-mono'>{prog.total_units}</span>
+            <div className='flex justify-between items-baseline py-1 border-b border-border/60 gap-2'>
+              <span className='text-[11px] text-muted-foreground'>Total Units</span>
+              <span className='text-[11px] font-medium text-foreground font-mono'>{prog.total_units}</span>
             </div>
           )}
         </div>
-        
+
         {prog.zones && prog.zones.length > 0 && (
           <div className='flex flex-col gap-1.5 pt-1'>
             {prog.zones.map((zone: any) => (
               <div key={zone.name} className='flex flex-col gap-0.5'>
-                <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>{zone.name}</span>
+                <span className='text-[10px] font-medium text-muted-foreground uppercase tracking-wide'>{zone.name}</span>
                 <div className='flex flex-wrap gap-1'>
                   {zone.spaces?.map((space: string) => (
                     <span
                       key={space}
-                      className='text-[10px] px-1.5 py-0.5 rounded-sm bg-[#F8F7F5] text-[#4A5568]'
-                      style={{ border: '1px solid #D4DAE3' }}
+                      className='text-[10px] px-1.5 py-0.5 rounded-sm bg-background text-muted-foreground border border-border'
                     >
                       {space}
                     </span>
@@ -148,10 +147,10 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
         {/* Fallback for other program structures */}
         {(!prog.zones || prog.zones.length === 0) && prog.ground_floor_uses && (
            <div className='flex flex-col gap-1.5 pt-1'>
-              <span className='text-[10px] font-medium text-[#8896A7] uppercase tracking-wide'>Ground Floor Uses</span>
+              <span className='text-[10px] font-medium text-muted-foreground uppercase tracking-wide'>Ground Floor Uses</span>
               <div className='flex flex-wrap gap-1'>
                 {prog.ground_floor_uses.map((use: string) => (
-                  <span key={use} className='text-[10px] px-1.5 py-0.5 rounded-sm bg-[#F8F7F5] text-[#4A5568]' style={{ border: '1px solid #D4DAE3' }}>{use}</span>
+                  <span key={use} className='text-[10px] px-1.5 py-0.5 rounded-sm bg-background text-muted-foreground border border-border'>{use}</span>
                 ))}
               </div>
            </div>
@@ -160,13 +159,13 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
 
       {/* Code references */}
       {scenario.code_references.length > 0 && (
-        <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2'>
-          <h3 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Code References</h3>
+        <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-2'>
+          <h3 className='text-xs font-semibold text-foreground uppercase tracking-wide'>Code References</h3>
           <div className='flex flex-wrap gap-1.5'>
             {scenario.code_references.map((ref) => (
               <span
                 key={ref}
-                className='text-[10px] font-medium px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-[#1B3FC4]'
+                className='text-[10px] font-medium px-2 py-0.5 rounded-sm bg-primary-50 text-primary'
               >
                 {ref}
               </span>

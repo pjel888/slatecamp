@@ -8,8 +8,8 @@ type ScenarioListProps = {
 export const ScenarioList = ({ scenarios }: ScenarioListProps) => {
   if (scenarios.length === 0) {
     return (
-      <div className='rounded-md border border-[#D4DAE3] bg-white px-4 py-8 text-center'>
-        <p className='text-sm text-[#8896A7]'>No scenarios available.</p>
+      <div className='rounded-md border border-border bg-card px-4 py-8 text-center'>
+        <p className='text-sm text-muted-foreground'>No scenarios available.</p>
       </div>
     )
   }

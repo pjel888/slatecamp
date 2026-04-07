@@ -33,19 +33,19 @@ export const SolutionReveal = ({
         role="status"
         className={cn(
           'rounded-md border p-4 flex flex-col gap-3',
-          isCorrect ? 'bg-[#EDFAF4] border-[#2D9F6F]/20' : 'bg-[#FEF8ED] border-[#D4951A]/20',
+          isCorrect ? 'bg-success-50 border-success/20' : 'bg-warning-50 border-warning/20',
         )}
       >
         <div className='flex items-center gap-2'>
           {isCorrect ? (
-            <CheckCircle size={18} weight="fill" className="text-[#2D9F6F]" />
+            <CheckCircle size={18} weight="fill" className="text-success" />
           ) : (
-            <ArrowRight size={18} weight="bold" className="text-[#D4951A]" />
+            <ArrowRight size={18} weight="bold" className="text-warning" />
           )}
           <span
             className={cn(
               'text-sm font-semibold',
-              isCorrect ? 'text-[#2D9F6F]' : 'text-[#D4951A]'
+              isCorrect ? 'text-success' : 'text-warning'
             )}
           >
             {isCorrect ? 'Correct' : 'To review'}
@@ -54,14 +54,14 @@ export const SolutionReveal = ({
 
         {/* Choice comparison */}
         {!isCorrect && (
-          <p className="text-xs text-[#4A5568] leading-relaxed">
-            You chose <span className="font-medium text-[#1A2332]">{String.fromCharCode(65 + selectedIndex)}. {selectedText}</span>.
-            The correct answer is <span className="font-medium text-[#1A2332]">{String.fromCharCode(65 + question.correct_answer_index)}. {correctText}</span>.
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            You chose <span className="font-medium text-foreground">{String.fromCharCode(65 + selectedIndex)}. {selectedText}</span>.
+            The correct answer is <span className="font-medium text-foreground">{String.fromCharCode(65 + question.correct_answer_index)}. {correctText}</span>.
           </p>
         )}
 
         {/* Rationale */}
-        <p className="text-sm text-[#4A5568] leading-relaxed">
+        <p className="text-sm text-muted-foreground leading-relaxed">
           {question.rationale.correct || question.rationale.takeaway}
         </p>
       </div>
@@ -72,15 +72,14 @@ export const SolutionReveal = ({
           {trapsForQuestion.map((trap) => (
             <div
               key={trap.trap_id}
-              className='flex items-start gap-2 rounded-md border border-[#D4951A]/20 px-3 py-2.5'
-              style={{ background: '#FEF8ED' }}
+              className='flex items-start gap-2 rounded-md border border-warning/20 bg-warning-50 px-3 py-2.5'
             >
-              <Warning size={14} style={{ color: '#D4951A' }} weight='fill' className='shrink-0 mt-0.5' />
+              <Warning size={14} className='text-warning shrink-0 mt-0.5' weight='fill' />
               <div className='flex flex-col gap-1'>
-                <span className='text-[10px] font-semibold text-[#D4951A] uppercase tracking-wide'>
+                <span className='text-[10px] font-semibold text-warning uppercase tracking-wide'>
                   TRAP: {trap.description}
                 </span>
-                <p className='text-xs text-[#1A2332] leading-relaxed'>{trap.trap_text}</p>
+                <p className='text-xs text-foreground leading-relaxed'>{trap.trap_text}</p>
               </div>
             </div>
           ))}
@@ -88,31 +87,31 @@ export const SolutionReveal = ({
       )}
 
       {/* Solution steps */}
-      <div className='rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-3'>
+      <div className='rounded-md border border-border bg-card p-4 flex flex-col gap-3'>
         <div className="flex items-center gap-2">
-          <Lightbulb size={14} weight="fill" className="text-[#1B3FC4]" />
-          <h4 className='text-xs font-semibold text-[#1A2332] uppercase tracking-wide'>Solution Steps</h4>
+          <Lightbulb size={14} weight="fill" className="text-primary" />
+          <h4 className='text-xs font-semibold text-foreground uppercase tracking-wide'>Solution Steps</h4>
         </div>
         <ol className='flex flex-col gap-1.5'>
           {question.solution_steps.map((step, idx) => (
             <li key={idx} className='flex items-start gap-2'>
-              <span className='shrink-0 font-mono text-[10px] font-bold text-[#8896A7] w-4 mt-0.5'>
+              <span className='shrink-0 font-mono text-[10px] font-bold text-muted-foreground w-4 mt-0.5'>
                 {idx + 1}.
               </span>
-              <span className='text-xs text-[#4A5568] leading-relaxed'>{step}</span>
+              <span className='text-xs text-muted-foreground leading-relaxed'>{step}</span>
             </li>
           ))}
         </ol>
 
         {/* Code citation */}
-        <div className='pt-2 border-t border-[#F8F7F5] flex items-center justify-between'>
-          <span className='text-[10px] font-medium px-2 py-0.5 rounded-sm bg-[#EEF2FC] text-[#1B3FC4]'>
+        <div className='pt-2 border-t border-background flex items-center justify-between'>
+          <span className='text-[10px] font-medium px-2 py-0.5 rounded-sm bg-primary-50 text-primary'>
             {question.code_citation}
           </span>
-          
+
           <button
             type="button"
-            className="inline-flex items-center gap-1 text-[10px] text-[#1B3FC4] hover:underline"
+            className="inline-flex items-center gap-1 text-[10px] text-primary hover:underline"
           >
             <ArrowSquareOut size={12} />
             Check Wiki
@@ -121,11 +120,9 @@ export const SolutionReveal = ({
       </div>
 
       {/* Takeaway callout */}
-      <div
-        className='rounded-sm px-3 py-2.5 border border-[#D4DAE3] bg-[#F8F7F5]'
-      >
-        <span className='text-[10px] font-semibold text-[#8896A7] uppercase tracking-wide'>Key Takeaway — </span>
-        <span className='text-xs text-[#1A2332] leading-relaxed'>{question.rationale.takeaway}</span>
+      <div className='rounded-sm px-3 py-2.5 border border-border bg-background'>
+        <span className='text-[10px] font-semibold text-muted-foreground uppercase tracking-wide'>Key Takeaway — </span>
+        <span className='text-xs text-foreground leading-relaxed'>{question.rationale.takeaway}</span>
       </div>
 
       {/* Next button */}
@@ -133,7 +130,7 @@ export const SolutionReveal = ({
         <button
           type='button'
           onClick={onNext}
-          className='rounded-sm bg-[#1B3FC4] px-6 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-all duration-150 ease-out shadow-sm active:scale-[0.98]'
+          className='rounded-sm bg-primary px-6 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-all duration-150 ease-out shadow-sm active:scale-[0.98]'
         >
           {isLast ? 'See Results' : 'Next Question'}
         </button>
