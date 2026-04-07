@@ -76,7 +76,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <Link
                     key={href}
                     href={href}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${isActive
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${isActive
                         ? 'bg-secondary font-medium text-foreground'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                       }`}
@@ -92,7 +92,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
                   <div className='my-2 border-t border-border' />
                   <Link
                     href={ROUTES.SETTINGS_DEVELOPER}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all ${pathname === ROUTES.SETTINGS_DEVELOPER
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${pathname === ROUTES.SETTINGS_DEVELOPER
                         ? 'bg-warning/10 font-medium text-warning'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                       }`}

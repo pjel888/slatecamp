@@ -56,7 +56,7 @@ const SidebarNavItem = ({
     href={href}
     aria-current={active ? 'page' : undefined}
     className={cn(
-      'group relative flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors duration-150 outline-none',
+      'group relative flex items-center gap-2 rounded-md px-3 py-2 text-sm transition-colors duration-150 outline-none focus-visible:ring-2 focus-visible:ring-primary/20',
       collapsed && 'justify-center px-0',
       active
         ? 'bg-primary/10 text-primary font-medium'
@@ -70,7 +70,7 @@ const SidebarNavItem = ({
     )}
 
     {icon && (
-      <span className={cn('w-4 h-4 shrink-0 [&>svg]:w-4 [&>svg]:h-4', collapsed && 'w-5 h-5 [&>svg]:w-5 [&>svg]:h-5')}>
+      <span className={cn('shrink-0 [&>svg]:w-5 [&>svg]:h-5', collapsed && '[&>svg]:w-5 [&>svg]:h-5')}>
         {icon}
       </span>
     )}

@@ -57,7 +57,7 @@ export default function DevControlsLabV2() {
         }}
       >
         {/* Col 1: Left Panel */}
-        <div className="overflow-hidden border-r border-border bg-card">
+        <div className="overflow-hidden bg-card">
           <div className="h-full" style={{ width: LEFT_WIDTH }} aria-hidden={leftCollapsed}>
             <InputPanel activeTab={activeTab} onTabChange={setActiveTab} />
           </div>
@@ -76,7 +76,7 @@ export default function DevControlsLabV2() {
         <PanelCollapseHandle side="right" collapsed={rightCollapsed} onToggle={toggleRight} />
 
         {/* Col 5: Right Panel */}
-        <div className="overflow-hidden border-l border-border bg-card">
+        <div className="overflow-hidden bg-card">
           <div className="h-full overflow-y-auto" style={{ width: RIGHT_WIDTH }} aria-hidden={rightCollapsed}>
             <OutputPanel />
           </div>

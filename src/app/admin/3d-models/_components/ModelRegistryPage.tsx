@@ -33,11 +33,11 @@ export function ModelRegistryPage() {
   return (
     <div className="flex h-[calc(100vh-64px)] flex-col">
       {/* Header */}
-      <header className="shrink-0 border-b border-[#D4DAE3] bg-white px-6 py-4">
+      <header className="shrink-0 border-b border-border bg-card px-6 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-lg font-semibold text-[#1A2332]">3D Models Registry</h1>
-            <p className="mt-0.5 text-xs text-[#4A5568]">
+            <h1 className="text-lg font-semibold text-foreground">3D Models Registry</h1>
+            <p className="mt-0.5 text-xs text-muted-foreground">
               Inspect all {tree.totalModules} registered 3D modules across {tree.totalCategories} categories
             </p>
           </div>
@@ -52,8 +52,8 @@ export function ModelRegistryPage() {
       {/* Two-column layout — fills remaining height */}
       <div className="flex flex-1 overflow-hidden">
         {/* Left panel: Tree */}
-        <div className="flex w-[340px] shrink-0 flex-col border-r border-[#D4DAE3] bg-white">
-          <div className="shrink-0 border-b border-[#D4DAE3] px-3 py-2.5">
+        <div className="flex w-[340px] shrink-0 flex-col bg-card">
+          <div className="shrink-0 border-b border-border px-3 py-2.5">
             <SearchInput
               value={searchQuery}
               onChange={setSearchQuery}
@@ -73,7 +73,7 @@ export function ModelRegistryPage() {
         </div>
 
         {/* Right panel: Detail — fills all remaining space */}
-        <div className="flex-1 overflow-y-auto bg-[#F8F7F5]">
+        <div className="flex-1 overflow-y-auto bg-background">
           <ModelConfigDetail
             modelId={selectedModelId}
             config={selectedModelConfig}
@@ -91,10 +91,10 @@ export function ModelRegistryPage() {
 
 function StatBadge({ icon, label, value }: { icon: React.ReactNode; label: string; value: number }) {
   return (
-    <div className="flex items-center gap-2 rounded-md border border-[#D4DAE3] bg-[#F8F7F5] px-3 py-1.5">
-      <span className="text-[#8896A7]">{icon}</span>
-      <span className="text-xs font-medium text-[#8896A7]">{label}</span>
-      <span className="text-sm font-semibold text-[#1A2332]">{value}</span>
+    <div className="flex items-center gap-2 rounded-md border border-border bg-muted px-3 py-1.5">
+      <span className="text-muted-foreground">{icon}</span>
+      <span className="text-xs font-medium text-muted-foreground">{label}</span>
+      <span className="text-sm font-semibold text-foreground">{value}</span>
     </div>
   )
 }

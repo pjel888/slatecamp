@@ -5,7 +5,7 @@ export default function WikiLoading() {
     <div className="flex flex-col h-full w-full overflow-hidden">
       <div className="flex flex-1 min-h-0">
         {/* Left Sidebar skeleton */}
-        <aside className="hidden md:flex w-64 shrink-0 border-r border-zinc-200 bg-background flex-col p-2 gap-1">
+        <aside className="hidden md:flex w-64 shrink-0 bg-muted/30 flex-col p-2 gap-1">
           {/* Search bar */}
           <Skeleton className="h-8 w-full rounded-sm mb-2" />
 
@@ -38,7 +38,7 @@ export default function WikiLoading() {
         {/* Center content area */}
         <main className="flex-1 min-w-0 flex flex-col h-full">
           {/* Header bar */}
-          <div className="shrink-0 border-b border-zinc-200 px-6 py-3 flex items-center gap-3">
+          <div className="shrink-0 border-b border-border px-6 py-3 flex items-center gap-3">
             <Skeleton className="h-4 w-20" />
             <Skeleton className="h-3 w-3 rounded-full" />
             <Skeleton className="h-4 w-28" />
@@ -64,7 +64,7 @@ export default function WikiLoading() {
                 <Skeleton className="h-3 w-full" />
                 <Skeleton className="h-3 w-3/4" />
               </div>
-              <Skeleton className="h-px w-full bg-zinc-100 my-2" />
+              <Skeleton className="h-px w-full bg-border my-2" />
               <Skeleton className="h-5 w-48" />
               <div className="space-y-3">
                 <Skeleton className="h-3 w-full" />
@@ -83,7 +83,7 @@ export default function WikiLoading() {
         </main>
 
         {/* Right Sidebar skeleton */}
-        <aside className="hidden lg:flex w-56 shrink-0 border-l border-zinc-100 bg-zinc-50/30 flex-col p-4 gap-4">
+        <aside className="hidden lg:flex w-56 shrink-0 bg-muted/20 flex-col p-4 gap-4">
           {/* Practice button */}
           <Skeleton className="h-9 w-full rounded-sm" />
           {/* Table of contents */}

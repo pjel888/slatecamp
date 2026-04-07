@@ -18,8 +18,8 @@ export const DashboardHeader = ({ userId }: DashboardHeaderProps) => {
   }, [pathname])
 
   return (
-    <header className='flex items-center justify-between border-b border-border bg-white h-16 px-4'>
-      <h1 className='font-display text-xl font-bold text-text-primary'>
+    <header className='flex items-center justify-between border-b border-border bg-card h-16 px-4'>
+      <h1 className='font-display text-xl font-bold text-foreground'>
         {title}
       </h1>
       <HeaderActions userId={userId} />

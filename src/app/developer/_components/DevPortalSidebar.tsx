@@ -34,7 +34,7 @@ export const DevPortalSidebar = () => {
   const pathname = usePathname()
 
   return (
-    <aside className="w-[220px] shrink-0 bg-background border-r border-border sticky top-12 h-[calc(100vh-48px)] overflow-y-auto py-3 px-2 hidden lg:block">
+    <aside className="w-[220px] shrink-0 bg-muted/40 sticky top-12 h-[calc(100vh-48px)] overflow-y-auto py-3 px-2 hidden lg:block">
       {navSections.map((section) => (
         <SidebarNavGroup key={section.label} label={section.label}>
           {section.items.map((item) => (

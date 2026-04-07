@@ -85,3 +85,55 @@ export const Variants: Story = {
     </div>
   ),
 }
+
+export const ElevatedOnCanvas: Story = {
+  name: 'Elevated (shadow-card on bg-canvas)',
+  render: () => (
+    <div className="bg-canvas p-8 rounded-lg w-[720px] max-w-full">
+      <div className="grid gap-4 md:grid-cols-2">
+        <Card variant="elevated">
+          <CardContent className="space-y-1 pt-4">
+            <CardTitle>Elevated card</CardTitle>
+            <CardDescription>
+              Shadow-only separation on canvas background. No border needed.
+            </CardDescription>
+          </CardContent>
+        </Card>
+        <Card variant="interactive-elevated" tabIndex={0}>
+          <CardContent className="space-y-1 pt-4">
+            <CardTitle>Interactive elevated</CardTitle>
+            <CardDescription>
+              Hover lifts to shadow-sm. Focus ring on tab.
+            </CardDescription>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  ),
+}
+
+export const ShadowComparison: Story = {
+  name: 'Shadow vs Border Comparison',
+  render: () => (
+    <div className="flex gap-8 items-start">
+      <div className="bg-canvas p-6 rounded-lg">
+        <p className="text-xs text-muted-foreground mb-3">On bg-canvas</p>
+        <Card variant="elevated" className="w-[240px]">
+          <CardContent className="pt-4">
+            <CardTitle>shadow-card</CardTitle>
+            <CardDescription>Subtle shadow, no border</CardDescription>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="bg-card p-6 rounded-lg border border-border">
+        <p className="text-xs text-muted-foreground mb-3">On bg-card</p>
+        <Card className="w-[240px]">
+          <CardContent className="pt-4">
+            <CardTitle>border default</CardTitle>
+            <CardDescription>Border fallback on white parent</CardDescription>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  ),
+}

@@ -87,7 +87,7 @@ function CalculatorLayout({
       {/* Three-panel grid */}
       <div className="grid flex-1 grid-cols-1 gap-0 lg:grid-cols-[320px_1fr_340px]">
         {/* Input Panel */}
-        <div className="overflow-y-auto border-b border-border bg-card p-4 lg:border-b-0 lg:border-r">
+        <div className="overflow-y-auto border-b border-border bg-card p-4 lg:border-b-0">
           {/* Mobile: collapsible accordion */}
           <div className="lg:hidden">
             <Accordion>

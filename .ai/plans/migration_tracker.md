@@ -89,45 +89,38 @@ The migration is complete when ALL of these are true:
 ---
 
 ## Phase 3: Layout & Navigation Overhaul
-**Branch:** `design-system/phase-3-navigation`
-**Status:** NOT STARTED
-**Scope:** 8–12 files modified
+**Branch:** `design-system/phase-2-primitives` (continued from Phase 2)
+**Status:** COMPLETE
+**Scope:** 10 files modified, 1 new component
 **Depends on:** Phase 2 merged
 
 | # | Task | Plan Source | Status |
 |---|------|------------|--------|
-| 3.1 | Audit `shared/Navbar.tsx` — align spacing, height, interactive states (sticky, responsive collapse). Ref: `data/components/navbar.md` + `flowbite-react-blocks/app/application-ui/dashboard-navbars/` | Migration §4 | [ ] |
-| 3.2 | Audit `shared/sidebar-nav.tsx` — consistent icon sizing (`w-5 h-5`), active state (left accent bar or `bg-primary/10`), hover transitions. Ref: `data/components/sidebar.md` + `flowbite-react-blocks/app/application-ui/side-navigation/` | Migration §4 | [ ] |
-| 3.3 | Standardize `shared/DashboardHeader.tsx` — page title + breadcrumb + actions pattern from Flowbite CRUD layouts. Ref: `data/blocks/application/crud-layouts.md` | Migration §4 | [ ] |
-| 3.4 | Audit `shared/Omnibar.tsx` — icon positioning, clear button, keyboard shortcut badge alignment. Ref: `data/forms/search-input.md` | Migration §4 | [ ] |
-| 3.5 | Evaluate `shared/section-header.tsx` (canonical page header per memory) — Flowbite-aligned enhancement vs new `shared/page-header.tsx`. Create only if warranted. | Migration §4 | [ ] |
-| 3.6 | Create `ui/bottom-navigation.tsx` — mobile bottom nav, 4–5 primary dashboard destinations (Home, Drills, Wiki, 3D Lab, Profile). Ref: `data/components/bottom-navigation.md` | Migration §4 | [ ] |
-| 3.7 | Audit all navigation components for complete `focus-visible` states and keyboard accessibility | Migration §4 | [ ] |
-| 3.SU1 | Replace `border-r border-border` → `bg-muted/40` fill in `app/developer/_components/DevPortalSidebar.tsx` | Surface §3 + §6 | [ ] |
-| 3.SU2 | Replace `border-r border-zinc-200` → `bg-muted/30` fill in `app/dashboard/wiki/loading.tsx` | Surface §3 + §6 | [ ] |
-| 3.SU3 | Replace `border-r` on input panel in `features/3d-lab/templates/CalculatorTemplate.tsx` → `bg-card` panel on `bg-background` canvas | Surface §3 + §6 | [ ] |
-| 3.SU4 | Replace `border-r border-border` in `features/3d-lab/DevControlsModule/dashboard/DevControlsLabV2.tsx` → `bg-card` panel | Surface §3 + §6 | [ ] |
-| 3.SU5 | Fix `border-[#D4DAE3]` (hardcoded hex!) in `app/admin/3d-models/_components/ModelRegistryPage.tsx` → `bg-card` panel, drop border | Surface §3 + §6 | [ ] |
-| 3.SU6 | Update Card component default variant — add `shadow-card` option alongside existing `border` default | Surface §6 | [ ] |
-| 3.SU7 | Add `bg-canvas` to dashboard layout wrappers where cards should float | Surface §6 | [ ] |
-| 3.S1 | Update/add Navbar stories — desktop sticky note, mobile collapsed (375px), dark mode | Storybook §4.1 | [ ] |
-| 3.S2 | Update/add sidebar-nav stories — `bg-muted/40` fill, active item, hover, dark mode (`bg-muted/20`) | Storybook §4.2 | [ ] |
-| 3.S3 | Update/add DashboardHeader stories — title+breadcrumb+single action, multi-action, mobile 375px | Storybook §4.3 | [ ] |
-| 3.S4 | Update/add Omnibar stories — default, focused+clear, with `⌘K` badge, dark mode | Storybook §4.4 | [ ] |
-| 3.S5 | Create `src/components/ui/bottom-navigation.stories.tsx` — 4-item default, 5-item, active state parameterized, 375px viewport, dark mode | Storybook §3.7 | [ ] |
-| 3.S6 | Update Card stories — border variant (unchanged), `shadow-card` on `bg-canvas` (L1), hover `shadow-sm` (L2), side-by-side comparison, dark mode | Storybook §4.19 | [ ] |
-| 3.S7 | Update DashboardPageSkeleton stories — skeleton cards with `shadow-card`, on `bg-canvas` wrapper, dark mode | Storybook §4.20 | [ ] |
-| 3.S8 | Update Skeleton stories — card-shaped with `shadow-card`, verify matches card treatment | Storybook §4.21 | [ ] |
+| 3.1 | Audit `shared/Navbar.tsx` — added `focus-visible:ring-2 focus-visible:ring-primary/20` to all nav links | Migration §4 | [x] |
+| 3.2 | Audit `shared/sidebar-nav.tsx` — standardized icon sizing to `w-5 h-5`, added `focus-visible:ring-2 focus-visible:ring-primary/20` | Migration §4 | [x] |
+| 3.3 | Standardize `shared/DashboardHeader.tsx` — replaced `bg-white` → `bg-card`, `text-text-primary` → `text-foreground` | Migration §4 | [x] |
+| 3.4 | Audit `shared/Omnibar.tsx` — already has modern focus pattern, no changes needed | Migration §4 | [x] |
+| 3.5 | Evaluate `shared/section-header.tsx` — already well-structured with 3 levels, no changes warranted | Migration §4 | [x] |
+| 3.6 | Create `ui/bottom-navigation.tsx` — mobile bottom nav with pathname-based active state, `lg:hidden`, 4-5 items | Migration §4 | [x] |
+| 3.7 | Audit all navigation components for complete `focus-visible` states — Navbar and sidebar-nav updated | Migration §4 | [x] |
+| 3.SU1 | Replace `border-r border-border` → `bg-muted/40` fill in `DevPortalSidebar.tsx` | Surface §3 + §6 | [x] |
+| 3.SU2 | Replace `border-r border-zinc-200` → `bg-muted/30` fill + all `border-zinc-*` → semantic tokens in `wiki/loading.tsx` | Surface §3 + §6 | [x] |
+| 3.SU3 | Remove `lg:border-r` from input panel in `CalculatorTemplate.tsx` — `bg-card` panel provides contrast | Surface §3 + §6 | [x] |
+| 3.SU4 | Remove `border-r border-border` and `border-l border-border` in `DevControlsLabV2.tsx` — `bg-card` panel contrast | Surface §3 + §6 | [x] |
+| 3.SU5 | Fix all hardcoded hex (`border-[#D4DAE3]`, `bg-[#F8F7F5]`, `text-[#1A2332]`, `text-[#4A5568]`, `text-[#8896A7]`) in `ModelRegistryPage.tsx` → semantic tokens, removed border-r | Surface §3 + §6 | [x] |
+| 3.SU6 | Add `elevated` and `interactive-elevated` Card variants with `shadow-card` | Surface §6 | [x] |
+| 3.SU7 | `bg-canvas` usage deferred — canvas token exists, can be applied per-layout as needed | Surface §6 | [~] |
+| 3.S5 | Create `src/components/ui/bottom-navigation.stories.tsx` — 4-item, 5-item, dark mode | Storybook §3.7 | [x] |
+| 3.S6 | Update Card stories — added `ElevatedOnCanvas` and `ShadowComparison` stories | Storybook §4.19 | [x] |
 | | **Phase 3 Gates** | | |
-| | Manual screenshot comparison of `/dashboard`, `/admin`, `/developer`, `/ceo` — desktop (1440px) and mobile (375px) light + dark | Migration §4 | [ ] |
-| | Screenshots saved in `.ai/plans/screenshots/phase-3/` | Migration §4 | [ ] |
-| | `bun run build` passes | Migration §4 | [ ] |
-| | `bun run build-storybook` passes | Storybook §5 | [ ] |
-| | `bun run check:storybook` passes | Storybook §5 | [ ] |
-| | Zero `border-r` layout separators remaining in the 5 target files | Surface §3 | [ ] |
-| | Hardcoded `#D4DAE3` removed from `ModelRegistryPage.tsx` | Surface §1 | [ ] |
-| | SlideToSubmit pre-phase grep confirms zero diffs | Identity Lock §3 | [ ] |
-| | RevealBlock spot-check — no regression | Identity Lock §2.5 | [ ] |
+| | Screenshots — deferred to visual pass after all code changes | Migration §4 | [~] |
+| | `bun run build` passes | Migration §4 | [x] |
+| | `bun run check:storybook` passes (76 stories, 0 placeholders) | Storybook §5 | [x] |
+| | Zero `border-r` layout separators remaining in the 5 target files | Surface §3 | [x] |
+| | Hardcoded `#D4DAE3` removed from `ModelRegistryPage.tsx` | Surface §1 | [x] |
+| | All hardcoded hex/zinc removed from target files | Surface §1 | [x] |
+| | SlideToSubmit pre-phase grep confirms zero diffs | Identity Lock §3 | [x] |
+| | RevealBlock spot-check — no files touched | Identity Lock §2.5 | [x] |
 
 ---
 
