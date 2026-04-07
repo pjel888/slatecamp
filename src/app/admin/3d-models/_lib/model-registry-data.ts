@@ -148,7 +148,7 @@ export async function getModelConfigDetail(moduleId: string): Promise<ModuleConf
 
     // Dynamic import of the module config file
     const mod = await import(
-      `@/app/dashboard/3d-lab/_config/modules/${folder}/${moduleId}`
+      `@/features/3d-lab/config/modules/${folder}/${moduleId}`
     ) as Record<string, unknown>
 
     // The export name varies per file (e.g. occupancyClassificationConfig).

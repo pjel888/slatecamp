@@ -61,7 +61,7 @@ const AnimatedSequence = dynamic(
  * Fetches the specific module configuration chunk on demand.
  */
 const loadModuleConfig = (moduleId: string): Promise<unknown> =>
-  import(`@/app/dashboard/3d-lab/_config/modules/${moduleId}`).then(
+  import(`@/features/3d-lab/config/modules/${moduleId}`).then(
     (mod: Record<string, unknown>) => Object.values(mod)[0],
   )
 
