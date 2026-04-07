@@ -14,7 +14,7 @@ export default function Loading() {
       {/* Three-column skeleton */}
       <div className="flex min-h-0 flex-1 overflow-hidden">
         {/* Outline */}
-        <div className="w-[200px] shrink-0 border-r border-border bg-white p-4">
+        <div className="w-[200px] shrink-0 bg-muted/40 p-4">
           <div className="space-y-3">
             {Array.from({ length: 6 }).map((_, i) => (
               <div
@@ -27,7 +27,7 @@ export default function Loading() {
         </div>
 
         {/* Article panel */}
-        <div className="flex w-[55%] flex-col border-r border-border">
+        <div className="flex w-[55%] flex-col">
           <div className="shrink-0 border-b border-border bg-surface-light px-4 py-2">
             <div className="flex gap-2">
               <div className="h-6 w-16 animate-pulse rounded bg-border" />

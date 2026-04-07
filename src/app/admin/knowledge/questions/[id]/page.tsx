@@ -108,7 +108,7 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
   return (
     <div className="flex h-[calc(100vh-4rem)] overflow-hidden">
       {/* Left: Question Editor (60%) */}
-      <div className="w-[60%] overflow-y-auto border-r border-border p-6 bg-white">
+      <div className="w-[60%] overflow-y-auto p-6 bg-card">
         <div className="mb-6">
           <Eyebrow>Question Moderation</Eyebrow>
           <h1 className="text-2xl font-bold text-foreground mt-1">Edit Question</h1>
