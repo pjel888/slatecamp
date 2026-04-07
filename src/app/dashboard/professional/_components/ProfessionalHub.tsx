@@ -72,20 +72,20 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
               </svg>
             </div>
-            <p className="text-sm font-semibold text-[#1A2332]">Code Update Alerts</p>
+            <p className="text-sm font-semibold text-foreground">Code Update Alerts</p>
           </div>
-          <p className="text-xs text-[#4A5568] leading-relaxed">
+          <p className="text-xs text-muted-foreground leading-relaxed">
             Get notified when the codes and standards you practiced with are updated or amended.
           </p>
-          <span className="text-xs text-[#8896A7] mt-auto">Coming soon</span>
+          <span className="text-xs text-muted-foreground mt-auto">Coming soon</span>
         </div>
 
         {/* CPD Tracker — placeholder */}
-        <div className="rounded-md border border-[#D4DAE3] bg-[#F8F7F5] p-4 flex flex-col gap-2 shadow-none opacity-60">
+        <div className="rounded-md border border-border bg-background p-4 flex flex-col gap-2 shadow-none opacity-60">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-[#EDFAF4] flex items-center justify-center shrink-0">
+            <div className="h-8 w-8 rounded-md bg-success-50 flex items-center justify-center shrink-0">
               <svg
-                className="h-4 w-4 text-[#2D9F6F]"
+                className="h-4 w-4 text-success"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -95,20 +95,20 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
             </div>
-            <p className="text-sm font-semibold text-[#1A2332]">CPD Tracker</p>
+            <p className="text-sm font-semibold text-foreground">CPD Tracker</p>
           </div>
-          <p className="text-xs text-[#4A5568] leading-relaxed">
+          <p className="text-xs text-muted-foreground leading-relaxed">
             Log and track your Continuing Professional Development units required for PRC license renewal.
           </p>
-          <span className="text-xs text-[#8896A7] mt-auto">Coming soon</span>
+          <span className="text-xs text-muted-foreground mt-auto">Coming soon</span>
         </div>
 
         {/* Campfire Community */}
-        <div className="rounded-md border border-[#D4DAE3] bg-white p-4 flex flex-col gap-2 shadow-none hover:shadow-sm transition-shadow duration-150 ease-out">
+        <div className="rounded-md border border-border bg-card p-4 flex flex-col gap-2 shadow-none hover:shadow-sm transition-shadow duration-150 ease-out">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-[#EEF2FC] flex items-center justify-center shrink-0">
+            <div className="h-8 w-8 rounded-md bg-primary-50 flex items-center justify-center shrink-0">
               <svg
-                className="h-4 w-4 text-[#1B3FC4]"
+                className="h-4 w-4 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
