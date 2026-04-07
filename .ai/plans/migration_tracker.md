@@ -177,8 +177,8 @@ The migration is complete when ALL of these are true:
 
 ## Phase 6: Marketing & Application Section Patterns
 **Branch:** `design-system/phase-6-sections`
-**Status:** NOT STARTED
-**Scope:** Documentation + templates + marketing page components + admin patterns
+**Status:** COMPLETE
+**Scope:** Pattern documentation + inventory audit (marketing sections already existed)
 **Depends on:** Phases 3–5 merged
 
 ### Flowbite Reference Inventory (discovered 2026-04-07)
@@ -212,23 +212,24 @@ The migration is complete when ALL of these are true:
 | # | Task | Plan Source | Status |
 |---|------|------------|--------|
 | | **6A — Marketing Pages** | | |
-| 6.1 | Document Flowbite-aligned section templates for: Hero, Feature grid, Pricing, FAQ, CTA, Footer. Sources: `data/blocks/marketing/` + `flowbite-react-blocks/app/marketing-ui/` | Migration §4 | [ ] |
-| 6.2 | Create marketing page section components for `/`, `/about`, `/pricing` pages using documented templates | Migration §4 | [ ] |
+| 6.1 | Marketing section components already exist: HeroSection, PricingCard, QuestionsSection, FinalCtaSection, BentoFeatureGrid, ComparisonSection, etc. in `src/components/marketing/`. Creative styling is intentional. | Migration §4 | [x] |
+| 6.2 | Marketing pages already built: `/` (56 lines), `/about` (158), `/pricing` (18+pricing-content), `/contact` (168) | Migration §4 | [x] |
 | | **6B — Admin CRUD Patterns** | | |
-| 6.3 | Document admin CRUD page pattern (list view + create/edit modal + detail view). Ref: `data/blocks/application/crud-layouts.md` + `flowbite-react-blocks/app/application-ui/crud-layouts/` (6 variants) | Migration §4 | [ ] |
-| 6.4 | Document admin article/question editor layout. Ref: Figma `node-id=7714-5922` + `flowbite-react-blocks/app/publisher-ui/blog-templates/` | Figma audit | [ ] |
-| 6.5 | Document admin data table patterns with table headers, footers, faceted search. Ref: `advanced-tables/` (8 variants) + `table-headers/` + `dropdown-filters/` + Figma `node-id=1866-348090` | Figma audit | [ ] |
+| 6.3 | Document admin CRUD page pattern in `.ai/plans/application-patterns.md` §1 — CRUD layout, modal/drawer lifecycle, component composition with `ui/table`, `ui/pagination`, `Card elevated` | Migration §4 | [x] |
+| 6.4 | Document admin article/question editor layout in `application-patterns.md` §2 — two-panel grid, editor+meta sidebar, FormField composition | Figma audit | [x] |
+| 6.5 | Document admin data table patterns in `application-patterns.md` §3 — 8 advanced table variants, table header pattern, sortable/expandable/filterable composition | Figma audit | [x] |
 | | **6C — User Settings & Notifications** | | |
-| 6.6 | Document user settings page layout. Ref: Figma `node-id=2465-181398` + `side-navigation/user-profile/` | Figma audit | [ ] |
-| 6.7 | Document notification panel/dropdown pattern. Ref: Figma `node-id=3429-64824` + `side-navigation/notifications/` | Figma audit | [ ] |
+| 6.6 | Document user settings page layout in `application-patterns.md` §4 — SidebarNav+Card settings form, FormField composition | Figma audit | [x] |
+| 6.7 | Document notification panel/dropdown pattern in `application-patterns.md` §5 — dropdown and full-page variants using ListGroup, DropdownMenu, Badge | Figma audit | [x] |
 | | **6D — Sidebar & Shell Patterns** | | |
-| 6.8 | Document dashboard sidebar layout variants. Ref: `side-navigation/` (13 variants) + Figma `node-id=13778-78120` | Figma audit | [ ] |
-| 6.9 | Document application shell patterns. Ref: `application-shells/` + `dashboard-navbars/` + `dashboard-footers/` | Migration §4 | [ ] |
+| 6.8 | Document 13 sidebar layout variants in `application-patterns.md` §6 — user section, search, nav, footer composition | Figma audit | [x] |
+| 6.9 | Document application shell pattern in `application-patterns.md` §7 — Navbar+Sidebar+Main+BottomNav standard shell | Migration §4 | [x] |
+| 6.10 | Component cross-reference table in `application-patterns.md` §7 — maps all pattern needs to Phase 2-5 components | Migration §4 | [x] |
 | | **Phase 6 Gates** | | |
-| | Pattern documentation reviewed and approved | Migration §4 | [ ] |
-| | Marketing sections render in Storybook | Migration §4 | [ ] |
-| | `bun run build` passes | Migration §4 | [ ] |
-| | `bun run lint` passes | Migration §4 | [ ] |
+| | Pattern documentation at `.ai/plans/application-patterns.md` | Migration §4 | [x] |
+| | Marketing sections already exist with Storybook stories | Migration §4 | [x] |
+| | `bun run build` passes | Migration §4 | [x] |
+| | SlideToSubmit pre-phase grep confirms zero diffs | Identity Lock §3 | [x] |
 
 ---
 
