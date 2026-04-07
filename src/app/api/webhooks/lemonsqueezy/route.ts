@@ -50,8 +50,11 @@ export async function POST(request: Request) {
       const customerId = session.customer as string;
       const subscriptionId = session.subscription as string;
 
-      const tier: UserTier =
-        (session.metadata?.tier as UserTier) ?? "camp";
+      const VALID_TIERS: UserTier[] = ['free', 'camp', 'insurance', 'institutional']
+      const rawTier = session.metadata?.tier as string | undefined
+      const tier: UserTier = VALID_TIERS.includes(rawTier as UserTier)
+        ? (rawTier as UserTier)
+        : 'camp';
 
       const userId = session.metadata?.userId || "";
 
