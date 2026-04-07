@@ -17,9 +17,11 @@ export const ROUTES = {
   SETTINGS_DEVELOPER: "/dashboard/settings/developer",
   QUIZ: "/dashboard/quiz",
   SESSIONS: "/dashboard/sessions",
-  REVIEW: "/dashboard/testing",
-  // Testing & Review Hub (entry point — keep as-is)
-  TESTING: "/dashboard/testing",
+  REVIEW: "/dashboard/drills",
+  // Drills Hub (entry point — migrated from /dashboard/testing)
+  TESTING: "/dashboard/drills",
+  DRILLS: "/dashboard/drills",
+  DRILLS_SESSIONS: "/dashboard/drills/sessions",
   // v1 legacy routes — deprecated, now redirecting to v2
   TESTING_SETUP: (mode: string) => `/quiz/${mode}/setup`,
   TESTING_SESSION: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}`,

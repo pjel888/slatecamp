@@ -57,9 +57,9 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'learn',
   },
   {
-    path: '/dashboard/testing',
-    title: 'Testing & Review',
-    sidebarLabel: 'Testing & Review',
+    path: '/dashboard/drills',
+    title: 'Drills',
+    sidebarLabel: 'Drills',
     icon: Exam,
     group: 'practice',
   },
@@ -147,7 +147,8 @@ const DEFAULT_TITLE = 'Overview'
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/quiz/', title: 'Active Session' },
   { prefix: '/dashboard/testing/session/', title: 'Active Session' },
-  { prefix: '/dashboard/testing/', title: 'Testing & Review' },
+  { prefix: '/dashboard/drills/', title: 'Drills' },
+  { prefix: '/dashboard/testing/', title: 'Drills' },
   { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
   { prefix: '/dashboard/flash/', title: 'ALE Numbers Flash' },

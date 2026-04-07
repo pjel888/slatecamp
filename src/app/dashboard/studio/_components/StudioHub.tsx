@@ -43,7 +43,7 @@ const STUDIO_CARDS: StudioCard[] = [
   {
     title: 'Practice Questions',
     description: 'Test your knowledge of codes and standards with targeted questions.',
-    href: '/dashboard/testing',
+    href: '/dashboard/drills',
     icon: Exam,
     cta: 'Test your knowledge',
   },

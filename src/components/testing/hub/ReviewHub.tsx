@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
-import { SessionsTable } from './SessionsTable'
 import { HeroConfigurator } from './HeroConfigurator'
 import type {
   ModeStats,
@@ -173,10 +172,12 @@ const buildModeStatsMap = (
   return result
 }
 
+const isDevEnvironment = process.env.NODE_ENV === 'development'
+
 const computeSimulationGate = (readinessScore: number): SimulationGateStatus => {
   const required = 65
   return {
-    isUnlocked: readinessScore >= required,
+    isUnlocked: isDevEnvironment || readinessScore >= required,
     currentReadiness: readinessScore,
     requiredReadiness: required,
     hasEnduranceCalibration: false,
@@ -301,7 +302,7 @@ const ReviewHub = ({
   return (
     <div className="w-full" style={{ backgroundColor: 'var(--background)' }}>
       <main
-        className="mx-auto max-w-[960px] px-6 py-8"
+        className="w-full px-6 py-8"
         aria-label="Review and Testing hub"
       >
         <header className="mb-8">
@@ -503,16 +504,6 @@ const ReviewHub = ({
           </div>
         </div>
 
-        <div className="mt-10">
-          <SectionHeader
-            eyebrow="Session History"
-            title="Your Sessions"
-            level="section"
-          />
-          <div className="mt-4">
-            <SessionsTable sessions={allSessions} />
-          </div>
-        </div>
       </main>
     </div>
   )

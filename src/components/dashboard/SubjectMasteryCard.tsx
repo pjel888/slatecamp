@@ -316,7 +316,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             description="Complete a quiz session to see how your skills map across subjects."
             action={
               <Link
-                href="/dashboard/testing"
+                href="/dashboard/drills"
                 className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Start a quiz

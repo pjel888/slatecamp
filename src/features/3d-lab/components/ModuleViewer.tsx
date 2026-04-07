@@ -210,7 +210,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
             model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
             parameters={[]}
             hotspots={[]}
-            userTier="camp"
+            userTier="free"
             preLoadedConfig={config}
           />
           {showContextCard && !showOnboarding && (
@@ -226,7 +226,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
             model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
             parameters={[]}
             hotspots={[]}
-            userTier="camp"
+            userTier="free"
             preLoadedConfig={config}
           />
           {showContextCard && !showOnboarding && (

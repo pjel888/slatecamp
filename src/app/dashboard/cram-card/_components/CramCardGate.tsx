@@ -47,7 +47,7 @@ export const CramCardGate = ({ totalSessions }: Props) => {
 
       {/* CTA */}
       <Link
-        href="/dashboard/testing"
+        href="/dashboard/drills"
         className="inline-flex items-center gap-1 text-sm text-[#1B3FC4] hover:text-[#1535A8] transition-colors duration-150 ease-out"
       >
         Start a session to get closer →

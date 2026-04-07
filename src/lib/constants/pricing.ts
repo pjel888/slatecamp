@@ -94,6 +94,24 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     ctaLabel: 'Go Institutional',
     ctaHref: '/register',
   },
+  {
+    id: 'enterprise',
+    tierName: 'Enterprise',
+    subtitle: 'The "Ecosystem Partner"',
+    targetAudience: 'Organizations & large teams',
+    price: 'Custom',
+    priceSubtext: 'Annual Contract',
+    hook: 'Full platform access for your organization.',
+    features: [
+      'Everything in Institutional',
+      'Dedicated account management',
+      'Custom integrations & API access',
+      'Priority support & SLA',
+    ],
+    highlighted: false,
+    ctaLabel: 'Contact Sales',
+    ctaHref: '/contact',
+  },
 ]
 
 // ─── VIEW 2: FOR STUDENTS / TEACHERS (EDUCATIONAL) ───────────────────────────

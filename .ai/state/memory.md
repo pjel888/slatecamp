@@ -517,8 +517,38 @@
 
 3. **SQL-Based Computation** — Move complex filtering/exclusion to PostgreSQL CTEs and RPC functions. Never transmit thousands of IDs to client for exclusion.
 
+### Session 2026-04-07: Subscription Tier Audit & Consolidation
+
+- **Audited database enum**: `subscription_tier` contains 6 values ('free', 'pro', 'enterprise', 'camp', 'insurance', 'institutional') - 'camp' and 'insurance' are INVALID
+- **Audited TypeScript types**: `src/types/app.ts` line 1 correctly defines 5-tier UserTier ("free" | "pro" | "prime" | "institutional" | "enterprise")
+- **Found hardcoded 'camp' bug**: Multiple components incorrectly use `userTier="camp"` - this is a TestMode, NOT a subscription tier
+- **Found PAID_TIERS issue**: `src/lib/paywall/check-access.ts` line 27 missing 'enterprise' in paid tiers array
+- **Found pricing constants issue**: `src/lib/constants/pricing.ts` missing 'enterprise' tier
+- **Found invalid tiers in dev store**: `src/stores/dev-store.ts` lines 26, 53 show 'prime' is valid in presets, but TypeScript error shows line 26 tries 'pro' and line 53 'prime'
+- **LSP confirmed bugs**: Error at `tier-context.tsx` line 27 shows 'camp' not in UserTier type - existing bug
+- **Created audit plan**: `.ai/plans/subscription-audit-plan.md` with 8 files to modify and execution roadmap
+
+### Subscription Tier Consolidation (2026-04-07)
+- **5-tier model enforced**: `free | pro | prime | institutional | enterprise` — source: `src/types/app.ts` line 1
+- **PAID_TIERS updated**: Added `'enterprise'` — source: `src/lib/paywall/check-access.ts` line 27
+- **Checkout validation updated**: All 5 tiers in z.enum — source: `src/lib/validations/index.ts` line 78
+- **Enterprise pricing tier added**: To INDIVIDUAL_TIERS array — source: `src/lib/constants/pricing.ts`
+- **Hardcoded 'camp' bugs fixed**: Replaced `userTier="camp"` with `"free"` in `src/components/3d/Workspace.tsx` line 375 and `src/features/3d-lab/components/ModuleViewer.tsx` lines 213, 229
+- **Centralized getUserTier()**: Already existed at `src/lib/subscription/get-tier.ts` with React cache() and TIER_RANK
+- **Webhooks already correct**: Both lemonsqueezy and payrex routes validate against 5-tier array
+- **DB migration written**: `supabase/migrations/20260407_tier_consolidation.sql` — recreates enum, migrates camp→free, insurance→institutional
+
+### Drills Refactor (2026-04-07)
+- **Route migrated**: `/dashboard/testing` → `/dashboard/drills` with redirect from old route
+- **Sessions extracted**: New route at `/dashboard/drills/sessions` with dedicated page
+- **Sidebar fixed**: Label changed to 'Drills', child href set to `/dashboard/drills/sessions` (fixes duplicate active state bug)
+- **Viewport fixed**: ReviewHub.tsx `mx-auto max-w-[960px]` → `w-full`
+- **Dev-mode bypass added**: `computeSimulationGate` bypasses 65-readiness gate when `NODE_ENV === 'development'`
+- **SessionsTable removed from ReviewHub**: Extracted to dedicated sessions page
+- **14 files updated**: All `/dashboard/testing` references replaced with `/dashboard/drills`
+- **Files created**: `src/app/dashboard/drills/{layout,page,loading}.tsx`, `src/app/dashboard/drills/sessions/{page,loading}.tsx`
+
 ---
 
 *Add verified facts here. Every entry must be traceable to a source file.*
-$memoryContent
 

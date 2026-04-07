@@ -75,7 +75,7 @@ export const studyAgentSchema = z.object({
 });
 
 export const checkoutSchema = z.object({
-  tier: z.enum(["pro", "prime", "institutional"]),
+  tier: z.enum(["free", "pro", "prime", "institutional", "enterprise"]),
   successUrl: z.string().url(),
   cancelUrl: z.string().url(),
 });

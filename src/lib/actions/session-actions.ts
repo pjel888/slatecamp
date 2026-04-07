@@ -99,7 +99,7 @@ export const buildAction = (
       title: `Continue ${formatModeName(mode)}`,
       subtitle: `Question ${inProgress.currentIndex + 1} of ${inProgress.totalQuestions} — pick up where you left off`,
       ctaLabel: 'Continue',
-      href: `/dashboard/testing`,
+      href: `/dashboard/drills`,
       estimatedMinutes: Math.max(1, Math.ceil(remaining * 1.2)),
       modeTooltip: MODE_TOOLTIPS[mode] ?? '',
       progress: { current: inProgress.currentIndex + 1, total: inProgress.totalQuestions },

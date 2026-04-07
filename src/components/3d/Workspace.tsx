@@ -372,7 +372,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
             model={modelData}
             parameters={[]}
             hotspots={[]}
-            userTier="camp"
+            userTier="free"
           />
         </div>
       </main>

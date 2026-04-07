@@ -24,7 +24,7 @@ interface AccessResult {
 }
 
 /** Tiers that count as "paid" (non-free). */
-const PAID_TIERS: UserTier[] = ['pro', 'prime', 'institutional']
+const PAID_TIERS: UserTier[] = ['pro', 'prime', 'institutional', 'enterprise']
 
 /**
  * Check if the current user has access to a gated feature.

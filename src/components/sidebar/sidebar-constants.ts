@@ -42,13 +42,13 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Practice group — tier: secondary (tools)
   {
     id: 'testing',
-    href: '/dashboard/testing',
-    label: 'Testing & Review',
+    href: '/dashboard/drills',
+    label: 'Drills',
     icon: Exam,
     tier: 'secondary',
     group: 'practice',
     children: [
-      { id: 'test-sessions', label: 'Sessions', href: '/dashboard/testing' },
+      { id: 'test-sessions', label: 'Sessions', href: '/dashboard/drills/sessions' },
     ],
   },
   { id: 'camptrail', href: '/dashboard/camptrails', label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },

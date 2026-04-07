@@ -24,7 +24,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
               {alert.floorPct}% in every subject to pass — regardless of your overall score.
             </p>
             <Link
-              href={`/dashboard/testing?subject=${alert.aleId ?? ''}`}
+              href={`/dashboard/drills?subject=${alert.aleId ?? ''}`}
               className="mt-2 inline-block rounded-sm bg-primary px-3 py-1.5 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             >
               Study {alert.subject} Now →
